@@ -11,15 +11,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2e5e2ee79d72d398ac72d3d087156c296aa9e7b2
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 05339a2bdc176fd44c93c744162a299809762a2e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567226"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860297"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL Kodunu Anlama
-Bir etki alanına özgü dil (DSL) çözümü okumak ve DSL içinde örneklerini güncellemek için kullanabileceğiniz bir API oluşturur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Bu API, DSL tanımını oluşturulan kodda tanımlanır. Bu konuda oluşturulan API açıklanmaktadır.
+Bir etki alanına özgü dil (DSL) çözümü okumak ve Visual Studio DSL örneklerini güncellemek için kullanabileceğiniz bir API oluşturur. Bu API, DSL tanımını oluşturulan kodda tanımlanır. Bu konuda oluşturulan API açıklanmaktadır.
 
 ## <a name="the-example-solution-component-diagrams"></a>Örnek çözüm: Bileşen diyagramları
  Bu konudaki örnekler çoğu kaynağı olan çözümü oluşturmak için gelen bir DSL oluşturma **bileşeni modelleri** çözüm şablonu. Bu, yeni bir DSL çözümü oluşturduğunuzda görüntülenen standart şablonların biridir.
@@ -32,7 +32,7 @@ Bir etki alanına özgü dil (DSL) çözümü okumak ve DSL içinde örneklerini
  ![Bileşenleri ve birbirine bağlı bağlantı noktaları](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>DSL Çözüm yapısı
- **Dsl** proje DSL'nizi için API tanımlar. **DslPackage** proje tanımlar nasıl ile tümleştirildiğini [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Modelden oluşturulan kodu da içerebilir kendi projeleriniz de ekleyebilirsiniz.
+ **Dsl** proje DSL'nizi için API tanımlar. **DslPackage** proje, Visual Studio ile nasıl tümleştiğine tanımlar. Modelden oluşturulan kodu da içerebilir kendi projeleriniz de ekleyebilirsiniz.
 
 ### <a name="the-code-directories"></a>Kodu dizinleri
  Bu projelerin her biri kodda çoğunu oluşturulduğu **Dsl\DslDefinition.dsl**. Oluşturulan kodu **oluşturulan kodu** klasör. Oluşturulan dosyanın görmek için tıklayın **[+]** oluşturma yanındaki **.tt** dosya.
@@ -53,7 +53,7 @@ Bir etki alanına özgü dil (DSL) çözümü okumak ve DSL içinde örneklerini
 
      Örneğin ayarlarsanız, **sahip özel Oluşturucu** alan sınıfının seçeneğini ve ardından Çözümü derleyin, hata iletisi görürsünüz. Bu hata iletilerinden biri çift tıkladığınızda, özel kodunuz sağlamanız açıklayan oluşturulan kod açıklamaları görürsünüz.
 
--   Uygulamanıza özgü kodu oluşturmak için kendi metin şablonlarınızı yazın. Kullanım birçok projelerinde ortak olan şablonları parçalarını paylaşmak için dosyalar içerebilir ve bu oluşturabilirsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje şablonları, kendi dosya yapısı ile başlatılır projeleri ayarlamak için.
+-   Uygulamanıza özgü kodu oluşturmak için kendi metin şablonlarınızı yazın. Kullanım birçok projelerinde ortak olan şablonları parçalarını paylaşmak için dosyalar içerebilir ve kendi dosya yapısı ile başlatılır projeler kurmak için Visual Studio Proje şablonları oluşturabilirsiniz.
 
 ## <a name="generated-files-in-dsl"></a>Dsl içinde oluşturulan dosyalar
  Aşağıdaki oluşturulan dosyalar görünür **Dsl** proje.
@@ -185,10 +185,10 @@ Bir etki alanına özgü dil (DSL) çözümü okumak ve DSL içinde örneklerini
 
  Araç kutusu öğe grubu prototipleri öğesi araçları yükleyerek ayarlar. Kullanıcı Aracı'nı çalıştırdığında bu prototipleri kopyalarını hedef öğeleri ile birleştirilir.
 
- Geçersiz kılma `CreateElementPrototype()` birkaç nesnelerin bir grup oluşturur. bir araç kutusu öğesi tanımlama. Örneğin, alt bileşenlerine sahip nesneleri temsil etmek için bir öğe tanımlayabilirsiniz. Kod değiştirdikten sonra Deneysel örneğini sıfırlama [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] araç kutusu önbelleği temizlemek için.
+ Geçersiz kılma `CreateElementPrototype()` birkaç nesnelerin bir grup oluşturur. bir araç kutusu öğesi tanımlama. Örneğin, alt bileşenlerine sahip nesneleri temsil etmek için bir öğe tanımlayabilirsiniz. Kod değiştirdikten sonra araç kutusu önbelleği temizlemek için Visual Studio'nun deneysel örneğinde sıfırlayın.
 
 ## <a name="generated-files-in-the-dslpackage-project"></a>DslPackage projesindeki oluşturulan dosyalar
- DSL modele DslPackage couples [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shell penceresini, araç kutusu ve menü komutları yönetme. Böylece herhangi birini kendi yöntemlerini geçersiz kılabilirsiniz sınıflar türetilmiş, çift çoğu.
+ DslPackage Yönetme penceresi, araç kutusu ve menü komutları, Visual Studio Kabuğu için DSL model couples. Böylece herhangi birini kendi yöntemlerini geçersiz kılabilirsiniz sınıflar türetilmiş, çift çoğu.
 
  `CommandSet.cs`
 
@@ -279,7 +279,7 @@ namespace Company.EmbedInForm
 
  `EditorFactory.cs`
 
- Başlatır `DocData` ve `DocView`. Standart karşıladığı arabirim [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] DSL paketinizi başlatıldığında bir Düzenleyicisi'ni açmak için kullanır. İçinde başvurulan `ProvideEditorFactory` Package.cs özniteliği
+ Başlatır `DocData` ve `DocView`. Visual Studio DSL paketinizi başlatıldığında bir Düzenleyicisi'ni açmak için kullandığı standart bir arabirimi karşıladığı. İçinde başvurulan `ProvideEditorFactory` Package.cs özniteliği
 
  `GeneratedVSCT.vsct`
 
@@ -335,7 +335,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  `Package.cs`
 
- Bu dosya, DSL tümleştirir nasıl tanımlar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Paket sınıfı özniteliklerinde DSL işleyici, dosya uzantısına sahip, kendi araç kutusu tanımlayın ve yeni bir pencere açmak nasıl tanımlama dosyaları olarak kaydedin. Önce Initialize() yöntemini zaman ilk DSL yüklendiği içinde bir kez çağrılır bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] örneği.
+ Bu dosya, DSL Visual Studio'ya nasıl tümleştirildiğini tanımlar. Paket sınıfı özniteliklerinde DSL işleyici, dosya uzantısına sahip, kendi araç kutusu tanımlayın ve yeni bir pencere açmak nasıl tanımlama dosyaları olarak kaydedin. Initialize() yöntemi ilk DSL bir Visual Studio örneğine yüklenen ne zaman bir kez çağrılır.
 
  `Source.extension.vsixmanifest`
 

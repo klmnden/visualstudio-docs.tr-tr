@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: bc9d9e65cc893780c6b64dfd281d8db51fb5cce9
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 09bfb2e1a17a4832f4afa4f432e4232ce6845323
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566589"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859802"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Metin Şablonları kullanarak Kod Oluşturma
 
@@ -30,7 +30,7 @@ System.Xml ad alanı bir XML belgesi yüklenirken ve bellekte serbestçe gezinme
 Bu örnek proje, şablon bir örnek XML dosyasını okur ve her düğüm türü için karşılık gelen sınıflar oluşturur. El ile yazılmış kod içinde XML dosyasına gitmek için bu sınıfları kullanabilirsiniz. Uygulamanız üzerinde aynı düğüm türleri kullanan diğer dosyaları da çalıştırabilirsiniz. Örnek XML dosyası amacı uğraşmanız uygulamanızın istediğiniz tüm düğüm türleri sağlamaktır.
 
 > [!NOTE]
-> Uygulama [XSD.exe'nin](http://go.microsoft.com/fwlink/?LinkId=178765), birlikte bulunan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], türü kesin belirlenmiş sınıf XML dosyaları oluşturabilirsiniz. Burada gösterilen şablonu, bir örnek olarak verilmiştir.
+> Uygulama [XSD.exe'nin](http://go.microsoft.com/fwlink/?LinkId=178765), Visual Studio ile dahil edildiği oluşturabileceği türü kesin belirlenmiş sınıf XML dosyaları. Burada gösterilen şablonu, bir örnek olarak verilmiştir.
 
 Örnek dosyası şu şekildedir:
 
@@ -142,7 +142,7 @@ Bir metin şablonu dosyasını ekleyin ve çıkış uzantısı kümesine *.cs*.
 
 3.  Şablon yönergesinde dosyasını değiştirmek `hostspecific` özniteliğini `true`.
 
-     Bu değişiklik, erişim elde etmek şablon kodunu etkinleştirir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Hizmetleri.
+     Bu değişiklik, şablonu kodu Visual Studio Hizmetleri'ne erişmek için etkinleştirir.
 
 4.  Çıktı yönergesinde, uzantı özniteliğine ".cs" değiştirin, böylece şablon bir C# dosyası oluşturur. Bir Visual Basic projesinde ".vb" için değiştirirsiniz.
 
@@ -272,7 +272,7 @@ Alt düğümler, öznitelikleri ve iç metin özellikleri gibi başka ayrıntıl
 
 ### <a name="access-the-visual-studio-api"></a>Visual Studio API erişimi
 
-Ayarı `hostspecific` özniteliği `<#@template#>` erişim sağlamak şablon yönergesi verir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] API. Şablon Şablon kodda bir mutlak dosya yolunu kullanarak önlemek için proje dosyalarının konumunu almak için bunu kullanabilirsiniz.
+Ayarı `hostspecific` özniteliği `<#@template#>` yönergesi Visual Studio API'sine erişim elde etmek için şablonu sağlar. Şablon Şablon kodda bir mutlak dosya yolunu kullanarak önlemek için proje dosyalarının konumunu almak için bunu kullanabilirsiniz.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
