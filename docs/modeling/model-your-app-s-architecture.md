@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0d75627eac18fa20edad222d168c858b073cecae
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8a13d617ec523a3215e28668bca179aeace656f7
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178910"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859126"
 ---
 # <a name="model-your-app39s-architecture"></a>Uygulamanızı model&#39;s mimarisi
 Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığından emin olmak için gereken, Visual Studio'da genel yapısı, açıklamasını ve yazılım sisteminin veya uygulamanın davranışını bir parçası olarak modeller oluşturabilirsiniz. Modelleri kullanarak tasarım boyunca kullanılan desenleri de tanımlayabilirsiniz. Bu modeller mevcut mimarisini anlama, değişiklikleri tartışmak ve amacınızı NET bir şekilde iletişim kurmasına yardımcı olur.
@@ -34,7 +34,7 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
 
 -   [Tasarım Düzenleri](#Patterns) ve bileşenleri tasarımları boyunca kullanılan kuralları. Bir programlama hedefini sağlamak için belirli bir yaklaşım bir deseni açıklar. Bir tasarım boyunca aynı desenleri kullanarak, takımınızın değişiklikleri yapma ve yeni yazılım geliştirme maliyetini azaltabilir.
 
-##  <a name="Structure"></a> Üst düzey tasarım
+## <a name="Structure"></a> Üst düzey tasarım
  Üst düzey tasarım ana bileşenleri sisteminizi ve tasarım hedeflere ulaşmak için birbiriyle nasıl etkileşim kurduklarını açıklar. Etkinlikler, aşağıdaki listede, üst düzey tasarım, geliştirme mutlaka belirli bir sırada ancak faydalanırsınız.
 
  Varolan kodu güncelleştirmekte olduğunuz, ana bileşenleri açıklayarak başlayabilir. Herhangi bir değişiklik kullanıcı gereksinimlerini anlamak ve eklediğinizde veya değiştirdiğinizde bileşenler arasındaki etkileşimleri emin olun. Yeni bir sistem geliştiriyorsanız ana özelliklerini Kullanıcıların ihtiyaçlarını anlayarak başlayın. Ardından etkileşim ana kullanım örnekleri için keşfetmek ve ardından bir bileşen tasarım dizileri birleştirin.
@@ -47,7 +47,7 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
 
 -   Veri modeli bileşenleri ve arabirimleri. Bileşenleri arasında geçirilen ve bileşenler içinde depolanan bilgileri tanımlamak için sınıf diyagramlarını çizebilirsiniz.
 
-##  <a name="Requirements"></a> Gereksinimleri anlama
+## <a name="Requirements"></a> Gereksinimleri anlama
  Tam bir uygulamayı üst düzey tasarımı, gereksinimler modelini veya diğer kullanıcıların ihtiyaçlarını açıklaması ile birlikte en etkili bir şekilde geliştirilmiştir. Gereksinim modelleri hakkında daha fazla bilgi için bkz: [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).
 
  Geliştirmekte olduğunuz bir bileşen daha büyük bir sistemde sistemidir, kısmını veya tamamını gereksinimlerinizi program arayüzlerinde.
@@ -66,7 +66,7 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
 
  Gereksinimler veya mimari bir model koymanız gerekir ayrıntı miktarını ölçek ve proje boyutu ve takım dağıtımı bağlıdır. Küçük bir takımda kısa bir projedeki başka bir sınıf diyagramı iş kavramlar ve bazı tasarım desenleri tasarlamaktan daha geçebilir; büyük bir projenin birden fazla bölge dağıtılmış önemli ölçüde daha fazla ayrıntı gerekir.
 
-##  <a name="BigDecisions"></a> Mimari desenleri
+## <a name="BigDecisions"></a> Mimari desenleri
  Geliştirme aşamasında bir ana teknolojileri ve tasarım bağlı olacağı öğeleri seçmeniz gerekir. Bu seçenek hale getirilmesi gereken alanları şunlardır:
 
 -   Bir veritabanı ve dosya sistemi ve bir ağ uygulaması ve bir web istemcisi arasında seçim arasında seçim yapma gibi teknoloji seçimleri temel vb. kullanın.
@@ -79,7 +79,7 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
 
  Kullanımınızı ve mimari modelini yorumlamak, yaptığınız seçimleri etkiler. XML dosyalarını temel alan bir sistemde, XPath kullanan çapraz ilişkilendirmeleri gösterebilir ancak örneğin, bir veritabanını kullanan bir sistemde, bir sınıf diyagramı ilişkilendirmeler ilişkileri ya da bir veritabanındaki yabancı anahtarlar temsil edebilir. Dağıtılmış bir sistemde iletilerin sıralı diyagramda bir kablo iletileri temsil edebilir; kendi içinde bir uygulamada, işlev çağrıları temsil edebilir.
 
-##  <a name="Patterns"></a> Tasarım desenleri
+## <a name="Patterns"></a> Tasarım desenleri
  Belirli bir yazılım, özellikle de sistemin farklı bölümlerinin yinelenen durumuyla tasarlamak nasıl bir özetini bir tasarım örüntüsüdür. Proje boyunca Tekdüzen bir yaklaşım benimseyerek, tasarım maliyetini azaltmak, kullanıcı arabiriminde tutarlılığı ve anlama ve kod değiştirme maliyetini azaltın.
 
  Gözlemci gibi bazı genel tasarım desenleri, bilinen ve yaygın olarak uygulanabilir. Ayrıca, yalnızca projeniz için geçerli olan desenleri vardır. Örneğin, web satış sistemine olacaktır kodunu çeşitli işlemleri bir müşterinin siparişine değişiklikler burada yapılır. Tüm bu işlemleri, siparişin durumunu doğru şekilde her aşamasında görüntülendiğinden emin olmak için veritabanını güncellemek için belirli bir protokol izlemelidir.

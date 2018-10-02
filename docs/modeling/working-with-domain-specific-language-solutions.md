@@ -9,33 +9,33 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f5aa524fbaa9b01200728f4031887adce6050329
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e1d485e647f6bb32ea0685ee6098ff8bec19b2a2
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965985"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858609"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Etki Alanına Özgü Dil Çözümleriyle Çalışma
-Bir etki alanına özgü dil (DSL) kullanılarak oluşturulan bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çözümü. Bu bölüm ayarlama ve çözümü özelleştirme hakkında değildir.
+Bir etki alanına özgü dil (DSL) kullanarak bir Visual Studio çözümü oluşturulur. Bu bölüm, ayarlamak ve çözümü özelleştirme hakkında yöneliktir.
 
 ## <a name="in-this-section"></a>Bu Bölümdekiler
- [Etki alanına özgü diller hakkında](../modeling/about-domain-specific-languages.md) DSL'ler geliştirmeyi ve bunların nasıl uygulanacağını anlatır.
+ [Etki alanına özgü diller hakkında](../modeling/about-domain-specific-languages.md) DSL'ler geliştirme hakkında ve bunların nasıl uygulanacağını açıklar.
 
- [Etki alanına özgü dil Araçları Genel Bakış](../modeling/overview-of-domain-specific-language-tools.md) geliştirmeye ve DSL dağıtma önemli görevleri açıklar.
+ [Etki alanına özgü dil araçlarına genel bakış](../modeling/overview-of-domain-specific-language-tools.md) yanı sıra geliştirme ve dağıtma DSL önemli görevleri açıklar.
 
- [Etki alanına özgü dil araçları kullanıcı arabirimi genel bakış](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md) DSL'ler ile ilişkili windows açıklar.
+ [Etki alanına özgü dil araçları kullanıcı arabirimine genel bakış](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md) DSL'ler ile ilişkili olan windows açıklar.
 
- [Bir etki alanına özgü dil çözüm şablonu seçme](../modeling/choosing-a-domain-specific-language-solution-template.md) DSL projenize başlamak için bir şablon seçin açıklanmaktadır.
+ [Bir etki alanına özgü dil çözümü şablonu seçme](../modeling/choosing-a-domain-specific-language-solution-template.md) DSL projenize başlamak için bir şablonun nasıl seçileceği açıklanır.
 
- [Nasıl yapılır: bir etki alanına özgü dil çözümü oluşturma](../modeling/how-to-create-a-domain-specific-language-solution.md) DSL ayarlamak için gereken adımları açıklar.
+ [Nasıl yapılır: bir etki alanına özgü dil çözümü oluşturma](../modeling/how-to-create-a-domain-specific-language-solution.md) DSL adımları açıklanmaktadır.
 
- [İle DSL tanımı diyagramı çalışma](../modeling/working-with-the-dsl-definition-diagram.md) Diyagram bölümlerini açıklamaktadır.
+ [DSL tanım diyagramı ile çalışma](../modeling/working-with-the-dsl-definition-diagram.md) diyagramın parçalarını açıklar.
 
- [Etki alanına özgü dil Gezgini ile çalışmaya](../modeling/working-with-the-domain-specific-language-explorer.md) explorer içeriğini açıklar
+ [Etki alanına özgü dil Gezgini ile çalışma](../modeling/working-with-the-domain-specific-language-explorer.md) Gezgini içeriğini açıklar.
 
- [Nasıl yapılır: bir etki alanına özgü dil Namespace değiştirmek](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md) kodu DSL Oluştur çözümünüzü başlattığınızda, sizin ayarladığınız bir ad alanı var, ancak daha sonra değiştirebilirsiniz.
+ [Nasıl yapılır: bir etki alanına özgü dil Namespace değiştirme](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md) bir DSL oluşturduğunuz kod çözümünüzü başlattığınızda, ayarladığınız bir ad alanı var, ancak daha sonra değiştirebilirsiniz.
 
- [Nasıl yapılır: etki alanına özgü dil Tasarımcısı genişletmek](../modeling/how-to-extend-the-domain-specific-language-designer.md) DSL Tasarımcısı ile menü komutlarını özelleştirebilirsiniz.
+ [Nasıl yapılır: etki alanına özgü dil tasarımcısını genişletme](../modeling/how-to-extend-the-domain-specific-language-designer.md) DSL Tasarımcısı menü komutları ile özelleştirebilirsiniz.
 
- [Tüm Şablonları dönüştürme otomatikleştirmek için nasıl](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a) tüm şablonları dönüştürme tıklatarak önlemek için bu yapının otomatik bir parçası yapabilirsiniz.
+ [Tüm Şablonları Dönüştür otomatikleştirmek için nasıl](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a) tüm Şablonları Dönüştür'ı tıklatarak önlemek için bu yapının otomatik bir parçası yapabilirsiniz.

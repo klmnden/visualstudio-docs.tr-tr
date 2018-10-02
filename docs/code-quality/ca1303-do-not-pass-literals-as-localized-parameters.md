@@ -21,12 +21,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bd26eecb1fba0aea266daf26eb071b8c29165ec
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8716a16ea3b141e7c5053e526d92531d0a77bc1e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546765"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859412"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Harfleri yerelleştirilmiş parametreler olarak göndermeyin
 
@@ -38,7 +38,7 @@ ms.locfileid: "45546765"
 |Yeni Değişiklik|Bozucu olmayan|
 
 ## <a name="cause"></a>Sebep
- Bir yöntem bir dize değişmez değer parametre olarak yapıcıya veya yönteme geçirir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sınıf kitaplığı ve dize yerelleştirilebilir olmalıdır.
+ Bir yöntem bir dize değişmez değer parametre olarak bir oluşturucu veya .NET Framework Sınıf Kitaplığı'nda yöntemi geçirir ve bu dize yerelleştirilebilir olmalıdır.
 
  Bu uyarı, bir değişmez dize değeri olarak bir parametre veya özellik geçirilir ve bir veya daha fazla aşağıdaki durumlarda true olduğunda ortaya çıkar:
 

@@ -15,21 +15,21 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: c7a8d83b36e913467f6c4c62a8452d8d5f15fe6d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3b70cdb92a6b8c4cacfddbc8e4d978845210c6ba
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977208"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859139"
 ---
-# <a name="walkthrough-create-a-custom-text-template-host"></a>İzlenecek yol: özel metin şablonu konağı oluşturma
+# <a name="walkthrough-create-a-custom-text-template-host"></a>İzlenecek yol: Özel Metin Şablonu Konağı Oluşturma
 
-A *metin şablonu**konak* sağlayan bir ortam sağlar *metin şablonu dönüştürme altyapısı* çalıştırmak için. Ana bilgisayar, motorun dosya sistemiyle etkileşimini yönetmekten sorumludur. Altyapısı veya *yönerge işlemcisi* bir dosya gerekiyor veya bir derleme bir kaynak ana bilgisayardan isteyebilir. Böylece, ana bilgisayar, istenen kaynağın yerini belirlemek amacıyla dizinlerde ve genel derleme önbelleğinde arama yapabilir. Daha fazla bilgi için bkz: [metin şablonu dönüştürme süreci](../modeling/the-text-template-transformation-process.md).
+A *metin şablonu**konak* sağlayan bir ortam sağlar *metin şablonu dönüştürme altyapısı* çalıştırmak için. Ana bilgisayar, motorun dosya sistemiyle etkileşimini yönetmekten sorumludur. Altyapı veya *yönerge işlemcisi* , gerekli bir dosya veya bir derlemenin kaynak konaktan talep edebilir. Böylece, ana bilgisayar, istenen kaynağın yerini belirlemek amacıyla dizinlerde ve genel derleme önbelleğinde arama yapabilir. Daha fazla bilgi için [metin şablonu dönüştürme süreci](../modeling/the-text-template-transformation-process.md).
 
-Özel bir sunucu kullanmak isterseniz yazabilirsiniz *metin şablonu dönüştürme* işlevinden dışında [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] veya özel araçlar işlevselliğini tümleştirmek istiyorsanız. Özel bir sunucu oluşturmak için öğesinden devralınan bir sınıf oluşturun <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Tek tek yöntemleri için belgelere bakın <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.
+Kullanmak istiyorsanız özel bir ana bilgisayar yazabilirsiniz *metin şablonu dönüştürme* Visual Studio dışında veya bu işlevi özel araçlarla tümleştirmek isterseniz işlevi. Özel bir ana bilgisayar oluşturmak için devralınan bir sınıf oluşturmanız gerekir <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Her bir yöntem için belgelere bakın <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.
 
 > [!WARNING]
-> Yazıyorsanız bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uzantısı veya paket, kendi ana bilgisayar oluşturmak yerine metin şablonu oluşturma hizmeti kullanmayı düşünün. Daha fazla bilgi için bkz: [bir VS uzantısında metin dönüştürmeyi çağırma](../modeling/invoking-text-transformation-in-a-vs-extension.md).
+> Visual Studio uzantısı veya paketi yazıyorsanız, kendi bilgisayarınızı oluşturmak yerine metin şablonu oluşturma hizmetini kullanmayı göz önünde bulundurun. Daha fazla bilgi için [bir VS uzantısında metin dönüştürmeyi çağırma](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
 Bu izlenecek yol aşağıdaki görevleri gösterir:
 
@@ -45,7 +45,7 @@ Bu kılavuzu tamamlamak için aşağıdakilere ihtiyacınız vardır:
 
 -   Visual Studio SDK
 
-## <a name="create-a-custom-text-template-host"></a>Özel metin şablonu konağı oluşturma
+## <a name="create-a-custom-text-template-host"></a>Bir özel metin şablonu konağı oluşturma
 
 Bu kılavuzda, yürütülebilir bir uygulamada, komut satırından çağrılabilen özel bir ana bilgisayar oluşturursunuz. Uygulama, metin şablonu dosyasını bağımsız değişken olarak kabul eder, şablonu okur, şablonu dönüştürmek üzere motoru çağırır ve komut satırı penceresinde meydana gelen tüm hataları görüntüler.
 
@@ -716,13 +716,13 @@ Bu kılavuzda, yürütülebilir bir uygulamada, komut satırından çağrılabil
     End Namespace
     ```
 
-4.  İçin [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] yalnızca, açık **proje** menüsüne ve ardından **CustomHost özellikleri**. İçinde **Başlangıç nesnesi** tıklatın **CustomHost.Program**.
+4.  İçin [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] yalnızca, açık **proje** menüsüne ve ardından **CustomHost özellikleri**. İçinde **Başlangıç nesnesi** listesinde **gt;customhost.program &**.
 
-5.  Üzerinde **dosya** menüsünde tıklatın **Tümünü Kaydet**.
+5.  Üzerinde **dosya** menüsünü tıklatın **Tümünü Kaydet**.
 
-6.  Üzerinde **yapı** menüsünde tıklatın **yapı çözümü**.
+6.  Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.
 
-## <a name="test-the-custom-host"></a>Özel konak test
+## <a name="test-the-custom-host"></a>Özel ana bilgisayarı sınama
 
 Özel ana bilgisayarı sınamak için, bir metin şablonu yazarsınız, ardından da özel ana bilgisayarı çalıştırırsınız, sonra da ona metin şablonunun adını geçirirsiniz ve şablonun dönüştürüldüğünü doğrularsınız.
 
@@ -788,7 +788,7 @@ Bu kılavuzda, yürütülebilir bir uygulamada, komut satırından çağrılabil
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > Adres yazmak yerine, CustomHost.exe dosyasına gözatabilirsiniz içinde **Windows Explorer** ve ardından dosyayı komut istemi penceresine sürükleyin.
+    > Adresi yazmak yerine CustomHost.exe dosyasına göz atabilir, **Windows Explorer** ve sonra da dosyayı komut istemi penceresine sürükleyebilirsiniz.
 
 3.  Bir boşluk yazın.
 
@@ -799,7 +799,7 @@ Bu kılavuzda, yürütülebilir bir uygulamada, komut satırından çağrılabil
      `C:\<YOUR PATH>TestTemplate.tt`
 
     > [!NOTE]
-    > Adres yazmak yerine, TestTemplate.tt dosyasına gözatabilirsiniz içinde **Windows Explorer** ve ardından dosyayı komut istemi penceresine sürükleyin.
+    > Adresi yazmak yerine, TestTemplate.tt dosyasına göz atabilir, **Windows Explorer** ve sonra da dosyayı komut istemi penceresine sürükleyebilirsiniz.
 
      Özel ana bilgisayar uygulaması çalışır ve metin şablonu dönüştürme işlemini tamamlar.
 
@@ -821,7 +821,7 @@ Bu kılavuzda, yürütülebilir bir uygulamada, komut satırından çağrılabil
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu kılavuzda, temel dönüştürme işlevini destekleyen bir metin şablonu dönüştürme ana bilgisayarı oluşturdunuz. Ana bilgisayarınızı, özel veya oluşturulan yönerge işlemcilerini çağıran metin şablonlarını destekleyecek şekilde genişletebilirsiniz. Daha fazla bilgi için bkz: [izlenecek yol: bir oluşturulan yönergesi işlemci bir konağa bağlanırken](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
+Bu kılavuzda, temel dönüştürme işlevini destekleyen bir metin şablonu dönüştürme ana bilgisayarı oluşturdunuz. Ana bilgisayarınızı, özel veya oluşturulan yönerge işlemcilerini çağıran metin şablonlarını destekleyecek şekilde genişletebilirsiniz. Daha fazla bilgi için [izlenecek yol: üretilen bir yönerge işlemcisine ana bilgisayar bağlama](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

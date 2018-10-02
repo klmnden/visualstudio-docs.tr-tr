@@ -12,17 +12,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dc87ba31e1f693559384977588471af753738e7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7af41e9e66c22e514961dc888a42153c078667cf
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950848"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47857787"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Visual Studio için Modelleme SDK'sı - Etki Alanına Özgü Diller
-Modelleme SDK kullanarak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], içine tümleştirebilir güçlü model tabanlı geliştirme araçlarına oluşturabilirsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aynı şekilde, bir veya daha fazla model tanımı oluşturabilir ve bir araç kümesiyle tümleştirebilirsiniz.
+Visual Studio için modelleme SDK'sını kullanarak Visual Studio ile tümleştirebileceğiniz model tabanlı güçlü geliştirme araçları oluşturabilirsiniz. Aynı şekilde, bir veya daha fazla model tanımı oluşturabilir ve bir araç kümesiyle tümleştirebilirsiniz.
 
- MSDK'nın merkezinde, iş alanınızdaki kavramları göstermek için oluşturabileceğiniz bir model tanımı bulunur. Surround grafiksel bir görünüm gibi araçları çeşitli modeliyle kod ve diğer yapıları oluşturma yeteneği komutları modeli ve kod ve diğer nesneleri ile etkileşim özelliği dönüştürme için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Modeli geliştirirken, geliştirmenizin merkezine yerleştirilen güçlü bir araç kümesi oluşturmak için onu diğer modellerle birleştirebilirsiniz.
+ MSDK'nın merkezinde, iş alanınızdaki kavramları göstermek için oluşturabileceğiniz bir model tanımı bulunur. Araçlar, bir grafiksel görünüm, kod ve diğer yapıtları, modeli dönüştürmek için komutlar oluşturulacak özelliği ve kod ve Visual Studio'daki diğer nesnelerle etkileşme yeteneği gibi çeşitli modeliyle çevreleyebilirsiniz. Modeli geliştirirken, geliştirmenizin merkezine yerleştirilen güçlü bir araç kümesi oluşturmak için onu diğer modellerle birleştirebilirsiniz.
 
  MSDK, etki alanına özgü dil (DSL) biçiminde bir modeli hızlı bir şekilde geliştirmenize olanak sağlar. Graf gösterimli bir şema veya soyut sözdizimi tanımlamak için özelleştirilmiş bir düzenleyici kullanarak başlarsanız. Bu tanımından, VMSDK şunları oluşturur:
 
@@ -42,7 +42,7 @@ Modelleme SDK kullanarak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md
 
  [İlgili blog gönderileri](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
 
- Gelişmiş teknikleri ve sorun giderme hakkında yönergeler için ziyaret [Visual Studio DSL & modelleme araçları genişletilebilirliği Forumu](http://go.microsoft.com/fwlink/?LinkID=186074).
+ Gelişmiş teknikler ve sorun giderme konusunda kılavuz bilgiler için ziyaret [Visual Studio DSL & modelleme araçları genişletilebilirliği forumunu](http://go.microsoft.com/fwlink/?LinkID=186074).
 
 ## <a name="in-this-section"></a>Bu Bölümde
  [Etki Alanına Özgü Dillerle Çalışmaya Başlama](../modeling/getting-started-with-domain-specific-languages.md)
