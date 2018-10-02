@@ -9,20 +9,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6357fbe512b9120872fc033dd93406a7ff8eb1d1
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 64400b8844481f8b34d82c430322d240c8930cd0
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567187"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859958"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Visual Studio Modelbus'ı Kullanarak Modelleri Tümleştirme
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus modellerini diğer araçlar ve modelleri arasında bağlantılar oluşturmak için bir yöntem sağlar. Örneğin, etki alanına özgü dil (DSL) modelleri ve UML modellerini bağlayabilirsiniz. DSL tümleşik bir dizi oluşturabilirsiniz.
+Visual Studio Modelbus'ı modellerini diğer araçlar ve modelleri arasında bağlantılar oluşturmak için bir yöntem sağlar. Örneğin, etki alanına özgü dil (DSL) modelleri ve UML modellerini bağlayabilirsiniz. DSL tümleşik bir dizi oluşturabilirsiniz.
 
  ModelBus benzersiz bir Modeli'ne veya bir model içinde belirli bir öğeye başvuru oluşturmanıza olanak sağlar. Bu başvuru modeli dışında Örneğin, başka bir modelinde bir öğedeki depolanabilir. Bir sonraki fırsatta, bir aracı öğeye erişmek istediğinde, Model veri yolu altyapı uygun model yüklenemiyor ve öğesini döndürür. İsterseniz, model kullanıcıya görüntüleyebilirsiniz. Dosyayı önceki konumuna erişilemiyor, ModelBus bulmak için kullanıcı sorar. Kullanıcı dosyasını bulursa, bu dosyaya yapılan tüm başvurular ModelBus düzeltir.
 
 > [!NOTE]
->  Geçerli [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uygulaması ModelBus, bağlantılı model öğeleri aynı olmalıdır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çözüm.
+>  Geçerli Visual Studio uygulamasında ModelBus, bağlantılı model öğeleri aynı Visual Studio çözümü içinde olması gerekir.
 
  Ek bilgi ve örnek kod için bkz:
 
@@ -32,10 +32,10 @@ ms.locfileid: "39567187"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-##  <a name="provide"></a> Bir DSL için erişim sağlama
- Bir model veya öğelerini ModelBus başvuruları oluşturabilmek için DSL ModelBusAdapter tanımlamanız gerekir. Bunu yapmanın en kolay yolu kullanmaktır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] DSL Tasarımcısı için komutları ekler Model veri yolu uzantısı.
+## <a name="provide"></a> Bir DSL için erişim sağlama
+ Bir model veya öğelerini ModelBus başvuruları oluşturabilmek için DSL ModelBusAdapter tanımlamanız gerekir. Bunu yapmanın en kolay yolu, Visual Studio Model veri yolu için DSL Tasarımcısı komutları ekleyen uzantısı, kullanmaktır.
 
-###  <a name="expose"></a> Model veri yolu için bir DSL tanımını ortaya çıkarmak için
+### <a name="expose"></a> Model veri yolu için bir DSL tanımını ortaya çıkarmak için
 
 1.  İndirin ve zaten yüklemiş olduğunuz sürece, Visual Studio Model veri yolu uzantıyı yükleyin. Daha fazla bilgi için [Görselleştirme ve modelleme SDK'sı](http://go.microsoft.com/fwlink/?LinkID=185579).
 
@@ -66,7 +66,7 @@ ms.locfileid: "39567187"
  Klasör `ModelBusAdapters\bin\*` tarafından oluşturulmuş derlemeler içeren `Dsl` proje ve `ModelBusAdapters` proje. Bu DSL başka bir DSL başvurmak için bu bütünleştirilmiş kodları almanız gerekir.
 
 ### <a name="making-sure-that-elements-can-be-referenced"></a>Öğeleri başvurulabilir emin olma
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus bağdaştırıcılar öğenin guid'si, varsayılan olarak tanımlamak için kullanın. Bu tanımlayıcılar, bu nedenle model dosyasında kalıcı olmasını.
+ Visual Studio Modelbus'ı bağdaştırıcıları öğenin guid'si, varsayılan olarak tanımlamak için kullanın. Bu tanımlayıcılar, bu nedenle model dosyasında kalıcı olmasını.
 
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>Bu öğe kimlikleri kalıcı emin olmak için
 
@@ -84,7 +84,7 @@ ms.locfileid: "39567187"
 
 -   Geçersiz kılma `ResolveElementReference` Model veri yolu başvurudan doğru öğesi bulunamıyor.
 
-##  <a name="editRef"></a> Bir DSL başka bir DSL erişme
+## <a name="editRef"></a> Bir DSL başka bir DSL erişme
  Bir etki alanı özelliği DSL model veri yolu başvuruları depolayabilirsiniz ve bunları kullanan özel kod yazabilirsiniz. Ayrıca kullanıcının bir model dosyası ve bir öğesiyle seçerek bir modeli bus başvurusu oluşturmasını sağlayabilirsiniz.
 
  Başka bir DSL başvurular kullanmak bir DSL etkinleştirmek için öncelikle bunu olmalısınız bir *tüketici* model veri yolu başvuruları.
@@ -140,10 +140,10 @@ ms.locfileid: "39567187"
 
 2.  Bir DSL, Deneysel modda F5 veya CTRL + F5 tuşlarına basarak çalıştırın.
 
-3.  Deneysel örneğinde hata ayıklama projede [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], her DSL örneklerini dosyaları ekleyin.
+3.  Visual Studio'nun deneysel örneğinde hata ayıklama projesinde her DSL örneklerini dosyaları ekleyin.
 
     > [!NOTE]
-    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus yalnızca aynı öğeleri modellere başvurular çözmek [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çözüm. Örneğin, dosya sisteminizi başka bir kısmında bir model dosyasına bir başvuru oluşturulamıyor.
+    > Visual Studio Modelbus'ı yalnızca öğeler aynı Visual Studio çözümünde modellere başvurular çözebilirsiniz. Örneğin, dosya sisteminizi başka bir kısmında bir model dosyasına bir başvuru oluşturulamıyor.
 
 4.  Bazı öğeleri ve bağlantılarına sunulan DSL örneğini oluşturun ve kaydedin.
 
@@ -158,12 +158,12 @@ ms.locfileid: "39567187"
 ## <a name="creating-references-in-program-code"></a>Program kodunda başvuruları oluşturma
  Bir model veya bir model içinde bir öğe için bir başvuru depolamak istediğinizde, oluşturduğunuz bir `ModelBusReference`. İki tür vardır, `ModelBusReference`: model başvuruları ve öğesi başvuruları.
 
- Model başvuru oluşturmak için model olduğu bir örneği ve dosya adı DSL AdapterManager gerekir veya [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modelin proje öğesi.
+ Bir model başvuru oluşturmak için model bir örneği ve dosya adı veya Visual Studio Proje öğesi modelinin olduğu DSL AdapterManager gerekir.
 
  Bir öğe başvurusu oluşturmak için model dosyası ve başvurmak istediğiniz öğeyi için bir bağdaştırıcı gerekir.
 
 > [!NOTE]
->  İle [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus, oluşturabileceğiniz öğelere başvurular yalnızca aynı [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çözüm.
+>  Visual Studio ModelBus ile aynı Visual Studio çözümünde başvuruları yalnızca öğeleri oluşturabilirsiniz.
 
 ### <a name="import-the-exposed-dsl-assemblies"></a>İfşa edilen DSL derlemeler Al
  Kullanan projenin proje başvurularına sunulan DSL DSL ve ModelBusAdapter derlemeleri ekleyin.
@@ -349,7 +349,7 @@ ModelBusReference elementReferenceRestored =
     modelBus.DeserializeReference(serialized, null);
 ```
 
- Bu şekilde serileştirilmiş bir MBR bağlamında bağımsızdır. Basit dosya tabanlı Model veri yolu bağdaştırıcısı kullanıyorsanız, MBR bir mutlak dosya yolunu içerir. Bu örnek model dosyaları hiçbir zaman geçmeniz durumunda yeterlidir. Ancak, model dosyaları öğeleri genellikle olacak bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje. Kullanıcılarınızın, dosya sisteminin farklı bölümlerine tüm projeye taşımak ister. Ayrıca projenin kaynak denetimi altında tutun ve farklı bilgisayarlarda açmak beklediği. Dosyaları içeren proje konumu göreli yol adları bu nedenle seri hale.
+ Bu şekilde serileştirilmiş bir MBR bağlamında bağımsızdır. Basit dosya tabanlı Model veri yolu bağdaştırıcısı kullanıyorsanız, MBR bir mutlak dosya yolunu içerir. Bu örnek model dosyaları hiçbir zaman geçmeniz durumunda yeterlidir. Ancak, model dosyaları genellikle Visual Studio projesi öğeleri olacaktır. Kullanıcılarınızın, dosya sisteminin farklı bölümlerine tüm projeye taşımak ister. Ayrıca projenin kaynak denetimi altında tutun ve farklı bilgisayarlarda açmak beklediği. Dosyaları içeren proje konumu göreli yol adları bu nedenle seri hale.
 
 ### <a name="serializing-relative-to-a-specified-file-path"></a>Belirtilen dosya yolu göreli seri hale getirme
  A `ModelBusReference` içeren bir `ReferenceContext`, hangi depolayabileceğiniz göre bunu seri hale getirilemiyor dosya yolu gibi bilgileri bir sözlük olduğu.

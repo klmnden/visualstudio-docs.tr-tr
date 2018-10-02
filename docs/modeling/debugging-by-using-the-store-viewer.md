@@ -12,18 +12,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: fd0930445ef409f27f87658a249f9c89aac22e91
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: d26c66b6bcbab2eafe2ae8b01597ef09985dcfa8
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567070"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858658"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Depo Görüntüleyiciyi Kullanarak Hata Ayıklama
 Store Görüntüleyici ile durumunu inceleyebilirsiniz bir *depolamak* tarafından kullanılan [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Store Görüntüleyici öğesi özellikleri ve öğeleri arasında bağlantılar ile birlikte, belirli bir depolama alanında bulunan tüm etki alanı model öğeleri görüntüler.
 
 ## <a name="opening-store-viewer"></a>Açılış Store Görüntüleyicisi
- Uygulamasındayken [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Deneysel burada depolama örneği model bilgileri içeren kodunuz bir kesme noktasında durdurmak, oluşturun. Ardından, aşağıdaki komutu yazarak Store Görüntüleyicisi'ni açın **hemen** penceresi:
+ Visual Studio deneysel yapı olduğunda, kodunuz bir kesme noktasında burada depolama örneği model bilgileri içeren durdurun. Ardından, aşağıdaki komutu yazarak Store Görüntüleyicisi'ni açın **hemen** penceresi:
 
 ```csharp
 Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
