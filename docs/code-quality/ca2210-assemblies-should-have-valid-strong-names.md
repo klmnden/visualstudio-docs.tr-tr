@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e087a7be95cfc6ba97d62720f2950672ca4bf199
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: bd22b0e28859ea153466b58f5f27ab458f5aa529
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545599"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858950"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Derlemelerin tanımlayıcı adı geçerli olmalıdır
 
@@ -66,9 +66,9 @@ Yüklenecek unutmayın ve gecikmeli imzalanmış bir bütünleştirilmiş kod ç
 
 Aşağıdaki yordamlardan birini kullanın:
 
-- Tarafından sağlanan Assembly Linker (Al.exe) aracını [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] SDK.
+- .NET Framework SDK'sı tarafından sağlanan Assembly Linker (Al.exe) aracını.
 
-- İçin [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] v1.0 veya v1.1, kullanın ya da <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> veya <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> özniteliği.
+- .NET Framework v1.0 veya v1.1 için kullanın <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> veya <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> özniteliği.
 
 - İçin [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], hangisini `/keyfile` veya `/keycontainer` derleyici seçeneği [/keyfile (derlemeyi imzalamak için anahtar belirtin veya anahtar çiftini)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) veya  [ /keycontainer (derlemeyi imzalamak için bir anahtar kapsayıcısı belirtin)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) c++ bağlayıcı seçeneği).
 
@@ -92,7 +92,7 @@ Aşağıdaki yordamlardan birini kullanın:
 
 ### <a name="sign-your-assembly-with-a-strong-name-outside-visual-studio"></a>Derlemenizi Visual Studio dışında bir tanımlayıcı adla imzalama
 
-Tarafından sağlanan tanımlayıcı ad Aracı (Sn.exe) kullanan [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] SDK. Daha fazla bilgi için [Sn.exe (tanımlayıcı ad aracı)](/dotnet/framework/tools/sn-exe-strong-name-tool).
+.NET Framework SDK'sı tarafından sağlanan tanımlayıcı ad Aracı (Sn.exe) kullanın. Daha fazla bilgi için [Sn.exe (tanımlayıcı ad aracı)](/dotnet/framework/tools/sn-exe-strong-name-tool).
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
 

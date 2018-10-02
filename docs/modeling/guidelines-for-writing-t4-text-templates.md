@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 08e18d654023dbf92f5c9e52fcd82f0c2ac3471c
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 45bc88be425acf8532debc47a28ee3ea20c18c71
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178468"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859633"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>T4 Metin Şablonları Yazma Yönergeleri
-Aşağıdaki genel yönergeleri program kodu veya diğer uygulama kaynakları oluşturmak istediğinizde yararlı olabilir. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Kuralları sabit değil.
+Aşağıdaki genel yönergeleri program kodu veya diğer uygulama kaynakları Visual Studio'da oluşturmak istediğinizde yararlı olabilir. Kuralları sabit değil.
 
 ## <a name="guidelines-for-design-time-t4-templates"></a>Tasarım zamanı T4 şablonları için yönergeler
- Tasarım zamanı T4 şablonu, kodda oluşturan şablonları, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projesinde tasarım zamanında. Daha fazla bilgi için [T4 metin şablonları kullanarak tasarım zamanı kodu oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+ Tasarım zamanı T4 şablonları, Visual Studio projesinde tasarım zamanında kod üreten şablonlardır. Daha fazla bilgi için [T4 metin şablonları kullanarak tasarım zamanı kodu oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
  Değişken yönlerini uygulama oluşturun.
 Kod oluşturma sırasında proje değişebilir veya uygulamanın farklı sürümleri arasında değişir uygulama yönlerini için kullanışlıdır. Oluşturulacak ne olduğunu daha kolay belirleyebilir, değişken bu görünüşler daha sabit yönleri ayırın. Örneğin, uygulamanız bir Web sitesi sağlıyorsa, başka bir sayfadan Gezinti yolları tanımlar mantıksal işlevleri sunan standart sayfa ayırın.
 
  Bir veya daha fazla kaynak modeli değişken yönlerine kodlayın.
-Bir dosya veya değişken oluşturulması gereken kod bölümlerini belirli değerlerini almak için her şablon okuyan veritabanı modelidir. Modelleri, veritabanlarını, XML dosyaları tasarım, diyagram veya etki alanına özgü diller olabilir. Genellikle, bir model birçok dosyaları oluşturmak için kullanılan bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje. Her dosyayı ayrı bir şablondan oluşturulur.
+Bir dosya veya değişken oluşturulması gereken kod bölümlerini belirli değerlerini almak için her şablon okuyan veritabanı modelidir. Modelleri, veritabanlarını, XML dosyaları tasarım, diyagram veya etki alanına özgü diller olabilir. Genellikle, bir model, çok sayıda dosya içinde bir Visual Studio projesi oluşturmak için kullanılır. Her dosyayı ayrı bir şablondan oluşturulur.
 
  Bir projede birden fazla model kullanabilirsiniz. Örneğin, web sayfalarını ve sayfa düzeni için ayrı bir model arasında gezinme için bir model tanımlayabilir.
 
@@ -122,7 +122,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 ## <a name="guidelines-for-all-t4-templates"></a>Tüm T4 şablonlarını için yönergeler
  Metin oluşturma alanından ayrı veri toplama deneyin hesaplama ve metin blokları karıştırmaktan kaçının. Her metin şablonunda, ilk kullanmak \<# kodunu engeller #> değişkenlerini ayarladıktan ve karmaşık hesaplamalar gerçekleştirmek için. İlk metin bloğundan şablonu veya ilk sonuna kadar \<#+ sınıf özelliği block #> uzun ifadeleri önlemek ve döngüler ve dallanmayı metin blokları içerdikleri yapmaktan kaçının. Bu uygulama şablonu okunması ve düzenlenmesi daha kolay hale getirir.
 
- Kullanmayın `.tt` gibi farklı dosya adı uzantısı için dahil etme dosyaları kullanın `.ttinclude` dosyaları. Kullanım `.tt` olmasını istediğiniz dosyaları işlenen olarak çalışma zamanı veya tasarım zamanı metin şablonları için yalnızca. Bazı durumlarda, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tanır `.tt` dosyaları ve işleme özelliklerini otomatik olarak ayarlar.
+ Kullanmayın `.tt` gibi farklı dosya adı uzantısı için dahil etme dosyaları kullanın `.ttinclude` dosyaları. Kullanım `.tt` olmasını istediğiniz dosyaları işlenen olarak çalışma zamanı veya tasarım zamanı metin şablonları için yalnızca. Bazı durumlarda, Visual Studio tanır `.tt` dosyaları ve işleme özelliklerini otomatik olarak ayarlar.
 
  Her şablon sabit bir prototip başlatın.
 Bir örnek oluşturur ve doğru olduğundan emin olun, istediğiniz kod veya metin yazın. Ardından uzantısı için .tt değiştirin ve içerik modeli okuyarak değiştiren kodun artımlı olarak ekleyin.

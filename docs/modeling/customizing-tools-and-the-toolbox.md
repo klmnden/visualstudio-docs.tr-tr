@@ -15,18 +15,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: cbdbfa2ffe94bf6ad287caeb5cbadb42b64c0d10
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c7c526c9e5f850ea71a1e31ea0364fcb19a2bcb5
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512476"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860452"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Araçları ve Araç Kutusunu Özelleştirme
 
 Kullanıcıların kendi modellere eklemek istediğiniz öğeleri için araç kutusu öğelerini tanımlamanız gerekir. Araçlar iki tür vardır: öğe araçları ve bağlantı araçları. Oluşturulan tasarımcıda bir kullanıcı şekil diyagrama sürüklemek öğe aracına seçebilirsiniz ve şekiller arasında bağlantılar çizmek için bir bağlantı aracını seçebilirsiniz. Genel olarak, öğe araçlarını modellerini için etki alanı sınıfların örneklerini eklemelerine olanak ve bunları etki alanı ilişki örneklerini eklemek bağlantı araçları sağlar.
 
-##  <a name="ToolboxDef"></a> Araç kutusu nasıl tanımlanır
+## <a name="ToolboxDef"></a> Araç kutusu nasıl tanımlanır
  DSL Gezgini içinde Düzenleyici düğüm ve bunun altındaki düğümleri genişletin. Genellikle bu benzer bir hiyerarşi görürsünüz:
 
 ```
@@ -77,11 +77,11 @@ DSL Gezgini bu kısmında, şunları yapabilirsiniz:
 
      **Bağlayıcı aracı:** ayarlamak **bağlantı Oluşturucu** aşağı açılan listede sunulur öğelerinden biri için aracının özelliği. Bir bağlayıcı için bir etki alanı ilişkisi eşlediğinizde bağlantı oluşturucular otomatik olarak oluşturulur. Yakın zamanda bağlayıcıyı oluşturduysanız, normalde ilişkili bağlantı oluşturucunun seçersiniz.
 
-5.  DSL test etmek için F5'e ya da CTRL + F5 tuşuna basın ve deneysel örneğinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], örnek model dosyasını açın. Yeni aracı araç kutusunda görünmesi gerekir. Yeni bir öğe oluşturur doğrulamak için diyagram üzerine sürükleyin.
+5.  DSL test etmek için F5'e ya da CTRL + F5 tuşuna basın ve bir örnek model dosyasını Visual Studio'nun deneysel örneğinde açın. Yeni aracı araç kutusunda görünmesi gerekir. Yeni bir öğe oluşturur doğrulamak için diyagram üzerine sürükleyin.
 
-     Aracı görünmüyorsa, Deneysel Durdur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Windows içinde **Başlat** menüsü çalıştırma **Microsoft Visual Studio 2010 Deneysel örneğini sıfırlama**. Üzerinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **derleme** menüsünde tıklatın **çözümü yeniden derle**. DSL yeniden sınayın.
+     Aracı görünmüyorsa, Deneysel bir Visual Studio durdurun. Windows içinde **Başlat** menüsü çalıştırma **Microsoft Visual Studio 2010 Deneysel örneğini sıfırlama**. Üzerinde **derleme** menüsünde tıklatın **çözümü yeniden derle**. DSL yeniden sınayın.
 
-##  <a name="customizing"></a> Öğe araçlarını özelleştirme
+## <a name="customizing"></a> Öğe araçlarını özelleştirme
  Varsayılan olarak, aracı belirtilen sınıf tek bir örneğini oluşturur, ancak bu iki yolla değişebilir:
 
 -   Öğe birleştirme yönergeleri Bu sınıfın yeni örneklerini kabul etmelerine izin etkinleştirme ve bunları yeni bir öğe oluşturulduğunda ek bağlantılar oluşturmak etkinleştirmek diğer sınıflarında tanımlayın. Örneğin, kullanıcının başka bir öğenin üzerine yorum bırakın izin verin ve böylece ikisi arasında bir referans bağlantı oluşturun.
@@ -92,7 +92,7 @@ DSL Gezgini bu kısmında, şunları yapabilirsiniz:
 
 -   Öğelerin gruplar oluşturabilmesi aracı özelleştirmek için kod yazın. Araç, geçersiz kılabilirsiniz ToolboxHelper.cs yöntemleri tarafından başlatılır. Daha fazla bilgi için [oluşturma grupları öğeleri aracından](#groups).
 
-##  <a name="groups"></a> Bir aracından öğelerin grupları oluşturma
+## <a name="groups"></a> Bir aracından öğelerin grupları oluşturma
  Her öğe araç oluşturması gereken öğelerin bir prototip içeriyor. Varsayılan olarak, her öğe aracı, tek bir öğe oluşturur, ancak bir aracı ile ilgili nesneler bir grup oluşturmak mümkündür. Bunu yapmak için aracı ile başlatılamıyor. bir <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> , ilgili öğeleri içerir.
 
  Aşağıdaki örnek, bir tür transistör olduğu DSL'de alınır. Her transistör üç adlandırılmış terminaller sahiptir. Öğe araç transistörler için dört model öğelerini ve üç ilişki bağlantılarını içeren bir prototip depolar. Kullanıcı araç diyagram üzerine sürüklediğinde, prototip örneği ve model köküne bağlanır.
@@ -142,7 +142,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 ```
 
-##  <a name="connections"></a> Bağlantı araçlarını özelleştirme
+## <a name="connections"></a> Bağlantı araçlarını özelleştirme
  Genellikle, yeni bir bağlayıcı sınıfı oluşturduğunuzda, bir öğe aracı oluşturun. Alternatif olarak, bir aracı ilişki türünü belirlemek için iki ucu türleri sağlayarak aşırı yüklenebilir. Örneğin, kişi yüze ilişkileri hem kişi belediye ilişkileri oluşturabilir bir bağlantı aracını tanımlayabilirsiniz.
 
  Bağlantı Araçları bağlantı oluşturucular çağırın. Bağlantı oluşturucular kullanıcılar oluşturulan tasarımcıda öğeleri nasıl bağlayabilirsiniz belirtmek için kullanın. Bağlantı oluşturucular bağlanabilir öğelerin ve bunlar arasında oluşturulan bağlantı türünü belirtin.

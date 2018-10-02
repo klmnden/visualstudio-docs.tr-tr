@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d780f8ab293a9503f3c2c8675e4de1e3584b28
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 5e2d973d1ec992002b2239383f9dbed228a0d59b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623901"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859399"
 ---
 # <a name="use-models-in-your-development-process"></a>Geliştirme sürecinizde modelleri kullanma
 
@@ -48,7 +48,7 @@ Her iki durumda da neredeyse her zaman bir model oluşturma önemli bir azalma t
 
 ## <a name="use-models-with-other-artifacts"></a>Diğer yapılar ile modelleri kullanma
 
-Bir modeli kendisini gereksinimleri belirtimi veya bir mimari değildir. Bunların bazılarını daha net bir şekilde ifade etmek için bir araç olan, ancak yazılım tasarımı sırasında gerekli tüm kavramları ifade edilebilir. Modelleri, iletişimin OneNote sayfaları veya paragrafları gibi başka bir yolla birlikte bu nedenle kullanılmalıdır, Microsoft Office belgeleri, iş öğelerini [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)], ya da proje odası duvardaki Yapışkan Notlar. Son öğe dışında tüm bu nesne türleri için model öğeleri bölümleri bağlanabilir.
+Bir modeli kendisini gereksinimleri belirtimi veya bir mimari değildir. Bunların bazılarını daha net bir şekilde ifade etmek için bir araç olan, ancak yazılım tasarımı sırasında gerekli tüm kavramları ifade edilebilir. Modeller, bu nedenle iletişimin OneNote sayfaları veya zaman paragraflar, Microsoft Office belgeleri, iş öğesi Team Foundation ya da proje odası duvardaki Yapışkan notlar gibi başka bir yolla birlikte kullanılmalıdır. Son öğe dışında tüm bu nesne türleri için model öğeleri bölümleri bağlanabilir.
 
 Normalde modelleri ile birlikte kullanılan belirtimi diğer yönleri arasında şunlar yer alır. Ölçek ve projenizin stili bağlı olarak birkaç bu görünüşler kullanın veya herhangi kullanmamak:
 
@@ -88,7 +88,7 @@ Her yineleme yaklaştığında, yinelemenin sonunda teslim edilecek nedir tanım
 
 - Her yinelemenin sonuna, ayrıntılı olarak sonraki yinelemesine geliştirilen kullanıcı hikayeleri ve gereksinimlerini tanımlamak için gereksinimler Atölyesi tutun. Kullanıcılar ve öncelikler, yanı sıra geliştiricilere ve sistem test edicilere karar verebilirsiniz iş hissedarlar davet edin. 2 haftalık yineleme gereksinimlerini tanımlamak üç saat bekleyin.
 
-- Atölyesi amacı, sonraki yineleme sonunda elde edilecek kabul herkese yöneliktir. Modelleri araçlarından birini gereksinimleri belirlemenize yardımcı olması için kullanın. Atölyesi çıktısını bir yineleme biriktirme listesi olduğu: geliştirme listesi diğer bir deyişle, görevlerinin [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] ve test paketleri [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)].
+- Atölyesi amacı, sonraki yineleme sonunda elde edilecek kabul herkese yöneliktir. Modelleri araçlarından birini gereksinimleri belirlemenize yardımcı olması için kullanın. Atölyesi çıktısını bir yineleme biriktirme listesi olduğu: Team Foundation ve test paketleri geliştirme görevleri başka bir deyişle, bir listesini [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)].
 
 - Geliştirme görevlerini tahminleri belirlemek yalnızca gereksinim duymanıza kadar tasarımı gereksinimlerini atölyeyi tartışın. Aksi takdirde, kullanıcıların doğrudan deneyebileceği sistemi davranışını tartışmaya tutun. Gereksinimler modelini mimari modelden ayrı tutun.
 
@@ -96,7 +96,7 @@ Her yineleme yaklaştığında, yinelemenin sonunda teslim edilecek nedir tanım
 
 ### <a name="link-model-to-work-items"></a>İş öğelerine bağlantı modeli
 
-Gereksinimleri Atölyesi sonra gereksinimler modelini ayrıntılarını özenli ve model geliştirme görevlerine bağlayın. İş öğelerini bağlayarak bunu yapabilirsiniz [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] modeldeki öğeleri.
+Gereksinimleri Atölyesi sonra gereksinimler modelini ayrıntılarını özenli ve model geliştirme görevlerine bağlayın. Team Foundation iş öğelerini model öğelere bağlayarak bunu yapabilirsiniz.
 
 Herhangi bir öğe iş öğelerine bağlayabilirsiniz, ancak en yararlı öğeler aşağıdaki gibidir:
 

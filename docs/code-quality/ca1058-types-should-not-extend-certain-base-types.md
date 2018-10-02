@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a18abfa94d3d53c6b96558fdf1cfc8d0c1c9cc5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 506b9b014b375b60491161c49925d49c45c79ef9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549712"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860244"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Türler belli temel türleri genişletmemelidir
 |||
@@ -51,7 +51,7 @@ ms.locfileid: "45549712"
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Kural açıklaması
- İçin [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sürüm 1 tavsiye yeni özel durumlar türetmek için <xref:System.ApplicationException>. Öneri değiştirildi ve yeni özel durumlar türetilmelidir <xref:System.Exception?displayProperty=fullName> veya içinde alt sınıflarından birini <xref:System> ad alanı.
+ .NET Framework sürüm 1 için yeni özel durumlar türetmek için önerildiği <xref:System.ApplicationException>. Öneri değiştirildi ve yeni özel durumlar türetilmelidir <xref:System.Exception?displayProperty=fullName> veya içinde alt sınıflarından birini <xref:System> ad alanı.
 
  Öğesinin oluşturmayın <xref:System.Xml.XmlDocument> , temel alınan bir nesne modeli veya veri kaynağı, bir XML görünümünü oluşturmak istiyorsanız.
 

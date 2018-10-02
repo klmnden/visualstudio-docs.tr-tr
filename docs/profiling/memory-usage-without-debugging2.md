@@ -1,7 +1,7 @@
 ---
 title: VS hata ayıklayıcı olmadan bellek kullanımını çözümleme | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 11/04/2016
+ms.date: 09/28/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6647fb758d6895db98aa6bad47295a6a4aae86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1b19b0c8371cc4f3b496255e37f06f7b1cbc1fa9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677295"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859880"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcı olmadan bellek kullanımını analiz etme
 Kullanabileceğiniz **bellek kullanımı** aşağıdakileri yapmak için hata ayıklama olmadan aracı  
@@ -30,7 +30,7 @@ Kullanabileceğiniz **bellek kullanımı** aşağıdakileri yapmak için hata ay
   
 -   Bellek sorunlarının temel nedenini bulmak için anlık görüntüleri karşılaştırın.  
   
- Bu konu açıklar nasıl bir UWP XAML uygulaması çözümlemek için bellek kullanımı aracı kullanın. JavaScript ve HTML kullanır UWP uygulamasında bellek kullanımını analiz etmek istiyorsanız, bkz: [(JavaScript) bellek kullanımını analiz etme](../profiling/javascript-memory.md).  
+ Şu anda .NET Core uygulaması için bellek kullanımını ölçmek için hata ayıklayıcısı ekli aracını kullanmanız gerekir. Diğer yönetilen ve yerel uygulamalar için veya bilginiz olmaksızın hata ayıklayıcısı ekli aracını kullanabilirsiniz. Bu konudaki ekran görüntüleri bir UWP XAML uygulaması gösterir. JavaScript ve HTML kullanır UWP uygulamasında bellek kullanımını analiz etmek istiyorsanız, bkz: [(JavaScript) bellek kullanımını analiz etme](../profiling/javascript-memory.md).
   
 ## <a name="start-a-memory-usage-diagnostic-session"></a>Bir bellek kullanımı Tanılama oturumu başlatın  
   

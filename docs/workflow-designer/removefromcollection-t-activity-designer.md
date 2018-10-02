@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53fc58e231e5ef1cbbc6106e279b4925d145dd9f
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a9bdbdd951b5d67575e9bf9283dcc054dfa25b13
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755943"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860218"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>RemoveFromCollection\<T > etkinlik Tasarımcısı
 
@@ -25,27 +25,27 @@ ms.locfileid: "36755943"
 
 ## <a name="the-removefromcollectiontactivity"></a>RemoveFromCollection\<T > etkinliği
 
-<xref:System.Activities.Statements.RemoveFromCollection%601> Etkinlik belirli bir koleksiyondaki belirli bir öğeyi kaldırır.
+<xref:System.Activities.Statements.RemoveFromCollection%601> Etkinlik belirtilen bir öğenin belirli bir koleksiyondan kaldırır.
 
 ### <a name="using-the-removefromcollectiont-activity-designer"></a>RemoveFromCollection kullanarak\<T > etkinlik Tasarımcısı
 
-Erişim **RemoveFromCollection\<T >** etkinlik Tasarımcısı'nda **koleksiyonu** kategorisini **araç**. **RemoveFromCollection\<T >** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve etkinlikleri genellikle, gibi yerleştirilir her yerde iş akışı Tasarımcısı yüzeyini açın içinde bir <xref:System.Activities.Statements.Sequence>. Bu oluşturur bir <xref:System.Activities.Statements.RemoveFromCollection%601> varsayılan etkinlik <xref:System.Activities.Activity.DisplayName%2A> RemoveFromCollection, < Int32\>. <xref:System.Activities.Activity.DisplayName%2A> Değeri üstbilgisinde düzenlenebilir **RemoveFromCollection < T\>**  etkinlik Tasarımcısı veya **DisplayName** ve özellik ızgarasının kutusu. Diğer özellikler ve özellik ızgarasının düzenlenmesi gerekir.
+Erişim **RemoveFromCollection\<T >** etkinlik Tasarımcısı'nda **koleksiyon** kategorisi **araç kutusu**. **RemoveFromCollection\<T >** etkinlik Tasarımcısı, gelen sürüklenebilir **araç kutusu** ve etkinlikleri genellikle, gibi yerleştirilir her yerde iş akışı Tasarımcısı yüzeyine açın içinde bir <xref:System.Activities.Statements.Sequence>. Bu, oluşturur bir <xref:System.Activities.Statements.RemoveFromCollection%601> etkinliği ile bir varsayılan <xref:System.Activities.Activity.DisplayName%2A> RemoveFromCollection, < Int32\>. <xref:System.Activities.Activity.DisplayName%2A> Değeri üst bilgisinde düzenlenebilir **RemoveFromCollection < T\>**  etkinlik Tasarımcısı veya **DisplayName** özellik kılavuzunda kutusu. Özellik Kılavuzu'nun diğer özellikleri düzenlenmesi gerekir.
 
 ### <a name="the-removefromcollectiont-properties"></a>RemoveFromCollection < T\> özellikleri
 
-Aşağıdaki tabloda <xref:System.Activities.Statements.RemoveFromCollection%601> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır.
+Aşağıdaki tabloda <xref:System.Activities.Statements.RemoveFromCollection%601> özellikleri ve Tasarımcısı'nda nasıl kullanıldığını açıklar:
 
 |Özellik adı|Gerekli|Kullanım|
 |-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|İsteğe bağlı kolay adını <xref:System.Activities.Statements.RemoveFromCollection%601> etkinlik. RemoveFromCollection varsayılandır < Int32\>.<br /><br /> Ancak <xref:System.Activities.Activity.DisplayName%2A> kesinlikle gerekli değil kullanmak için en iyi bir uygulamadır.|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|Doğru|Öğe eklemek için **koleksiyonu\<T >**. Bu öğe türünde *T*, türündeki *TypeArgument*. Öğeyi seçmek için bir Visual Basic ifade özellik kılavuzunda yazın.|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|Doğru|Öğesinin eklenmesi koleksiyon. Bu koleksiyonu türünde **ICollection < TypeArgument\>.** Koleksiyon belirtmek için Visual Basic ifade özellik kılavuzunda yazın.|
-|*TypeArgument*|Doğru|İçindeki öğe türü T <xref:System.Collections.Generic.ICollection%601>. Varsayılan olarak, bu *TypeArgument* türü ayarlanmış **Int32**. Türünü değiştirmek için değerini değiştirme *TypeArgument* özellik kılavuzunda açılan kutusunda.|
-|<xref:System.Activities.Activity%601.Result%2A>|False|Belirtilen öğeyi koleksiyondan kaldırıldı olup olmadığını belirten bir değer. Bir değişkende özellik kılavuzunda sonucu bağlamak için bir değişken belirtmek için şunu yazın|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|İsteğe bağlı kolay adı <xref:System.Activities.Statements.RemoveFromCollection%601> etkinlik. RemoveFromCollection varsayılandır < Int32\>.<br /><br /> Ancak <xref:System.Activities.Activity.DisplayName%2A> kati şekilde gerekli değil kullanmak için en iyi bir uygulamadır.|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|Doğru|Kaldırmak için öğeyi **koleksiyon\<T >**. Bu öğe türünde *T*, türünde *TypeArgument*. Öğesini belirtmek için bir Visual Basic ifadesinin özellik kılavuzunda yazın.|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|Doğru|Öğenin kaldırılması gerektiğini koleksiyonu. Bu koleksiyonu türünde **ICollection < TypeArgument\>.** Koleksiyon belirtmek için bir Visual Basic ifadesinin özellik kılavuzunda yazın.|
+|*TypeArgument*|Doğru|İçindeki öğe türü T <xref:System.Collections.Generic.ICollection%601>. Varsayılan olarak, bu *TypeArgument* türü ayarlandığında **Int32**. Türü değiştirmek için değerini değiştirmek *TypeArgument* birleşik giriş kutusundaki özellik kılavuzunda.|
+|<xref:System.Activities.Activity%601.Result%2A>|False|Belirtilen öğeyi koleksiyondan kaldırılıp kaldırılmadığını belirten bir değer. Sonucu bağlamak için bir değişken olarak belirtmek için bir değişken özellik kılavuzunda yazın|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Koleksiyon](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)
 - [ClearCollection\<T >](../workflow-designer/clearcollection-t-activity-designer.md)
-- [ExistsInCollection\<T >](../workflow-designer/existsincollection-t-activity-designer.md)
+- [Existsıncollection\<T >](../workflow-designer/existsincollection-t-activity-designer.md)

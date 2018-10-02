@@ -9,17 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d826787a028aba4f5397ce5577acf60f67120973
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: b69015a58b4772a13c387f67f0dc9d6a2571e1b7
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567347"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859230"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Nasıl yapılır: Modeli Güncelleştirmek için İşlemleri Kullanma
 İşlem depoya yapılan değişiklikler bir grup olarak kabul edilir emin olun. Gruplandırılmış değişiklikler kaydedilmiş veya tek bir birim olarak geri alındı.
 
- Her program kodunuza değiştirir, ekler veya Store içinde herhangi bir öğeyi siler [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Görselleştirme ve modelleme SDK'sı, bir işlem içinde bunu yapmalısınız. Etkin örneği olmalıdır <xref:Microsoft.VisualStudio.Modeling.Transaction> değişiklik gerçekleştiğinde Store ile ilişkili. Bu, tüm model öğelerini, ilişkiler, şekiller, diyagramları ve özellikleri için geçerlidir.
+ Her program kodunuza değiştirir, ekler veya Visual Studio Görselleştirme ve modelleme SDK'sı Store içindeki herhangi bir öğeyi siler. Bunu bir işlem içinde yapmalısınız. Etkin örneği olmalıdır <xref:Microsoft.VisualStudio.Modeling.Transaction> değişiklik gerçekleştiğinde Store ile ilişkili. Bu, tüm model öğelerini, ilişkiler, şekiller, diyagramları ve özellikleri için geçerlidir.
 
  İşlem mekanizması tutarsız durumları kaçınmanıza yardımcı olur. İşlem sırasında bir hata meydana gelirse, tüm değişiklikler geri alınır. Kullanıcı bir geri alma komutu gerçekleştiriyorsa, her bir son işlem tek bir adım olarak kabul edilir. Açıkça bunları ayrı işlemlerde yerleştirdiğiniz sürece kullanıcı son zamanlarda bir değişiklik bölümlerini geri alamazsınız.
 

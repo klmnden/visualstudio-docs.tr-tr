@@ -11,15 +11,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ec3cad57ad4838ee2760e32afba9cc2ccdf49f85
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 691333abbb943cb3cc9ac3b94616a9f1d0522a1f
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949139"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47857957"
 ---
 # <a name="deploying-domain-specific-language-solutions"></a>Etki Alanına Özgü Dil Çözümlerini Dağıtma
-Bir etki alanına özgü dil kendi bilgisayarınızda veya diğer bilgisayarlara yükleyebilirsiniz. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Hedef bilgisayarda yüklü olması gerekir.
+Bir etki alanına özgü dil sizin kendi bilgisayarınız veya diğer bilgisayarlara yükleyebilirsiniz. Visual Studio, hedef bilgisayarda zaten yüklü olmalıdır.
 
 -   [DSL'nin MSI ve VSIX Dağıtımı](../modeling/msi-and-vsix-deployment-of-a-dsl.md)
 

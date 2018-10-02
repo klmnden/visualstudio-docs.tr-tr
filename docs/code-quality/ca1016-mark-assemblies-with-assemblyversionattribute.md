@@ -20,12 +20,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a6ccdc84a2db30aab2352d65bd716936cb522e6
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 7fbc3fa747171892066705ddc32a114cb34e1b02
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547600"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858181"
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: Derlemeleri AssemblyVersionAttribute ile işaretleme
 
@@ -52,7 +52,7 @@ Bir derlemenin kimliğini aşağıdaki bilgilerden oluşur:
 
 - Ortak anahtarı (için kesin adlandırılmış bütünleştirilmiş kodları).
 
-[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Derlemeyi benzersiz tanımlamada ve türleri güçlü derlemelere bağlamak için sürüm numarasını kullanır. Sürüm numarası, sürüm ve yayımcı ilkesi ile birlikte kullanılır. Varsayılan olarak uygulamalar yalnızca oluşturulmuş derleme sürümlerini çalıştırır.
+.NET Framework sürüm numarasını derlemeyi benzersiz tanımlamada ve türleri güçlü derlemelere bağlamak için kullanır. Sürüm numarası, sürüm ve yayımcı ilkesi ile birlikte kullanılır. Varsayılan olarak uygulamalar yalnızca oluşturulmuş derleme sürümlerini çalıştırır.
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
  Bu kural ihlalini düzeltmek için bir sürüm numarası derlemeye kullanarak Ekle <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> özniteliği. Aşağıdaki örnekte bakın.

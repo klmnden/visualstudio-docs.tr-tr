@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: eb9fb268ec98d60dcea46a8802592261493e4b56
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ab42f0a8b3dafebaf73c116e8ce3295d99ce6fdd
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776177"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859283"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Değişiklikleri Modelin Dışına Yayan Olay İşleyicileri
 
-Görselleştirme ve modelleme SDK'sı, mağaza içi değişkenler, dosyalar, başka depolar veya diğer modeller gibi mağazası dışındaki kaynaklar değişiklikleri yaymak için depolama olay işleyicileri tanımlayabilirsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uzantıları. Tetikleyici olayın gerçekleştiği işlem sonunda Store olay işleyicisi yürütülür. Bunlar ayrıca bir geri alma veya yineleme işlemi içinde yürütülür. Bu nedenle, depolama kurallarından farklı olarak, deposu olayları deponun dışında olan değerleri güncelleştirmek için ekseriyetle faydalıdır. .NET olaylarının tersine, bir sınıfa dinlemek için depolama olay işleyicileri kaydedilir: her örneği için ayrı bir işleyici kaydetmek zorunda değildir. Değişiklikleri işlemek için farklı yöntemler arasında seçim yapma hakkında daha fazla bilgi için bkz. [yanıt verme ve değişiklikleri yayma](../modeling/responding-to-and-propagating-changes.md).
+Görselleştirme ve modelleme SDK'sı, mağaza içi değişkenler, dosyalar, diğer depoları ve diğer Visual Studio uzantıları modeller gibi mağazası dışındaki kaynaklar değişiklikleri yaymak için depolama olay işleyicileri tanımlayabilirsiniz. Tetikleyici olayın gerçekleştiği işlem sonunda Store olay işleyicisi yürütülür. Bunlar ayrıca bir geri alma veya yineleme işlemi içinde yürütülür. Bu nedenle, depolama kurallarından farklı olarak, deposu olayları deponun dışında olan değerleri güncelleştirmek için ekseriyetle faydalıdır. .NET olaylarının tersine, bir sınıfa dinlemek için depolama olay işleyicileri kaydedilir: her örneği için ayrı bir işleyici kaydetmek zorunda değildir. Değişiklikleri işlemek için farklı yöntemler arasında seçim yapma hakkında daha fazla bilgi için bkz. [yanıt verme ve değişiklikleri yayma](../modeling/responding-to-and-propagating-changes.md).
 
 Grafik yüzeyine ve diğer kullanıcı arabirimi denetimleri deposu olayları tarafından işlenebilen dış kaynaklara örnekleridir.
 

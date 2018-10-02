@@ -9,15 +9,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a0d17249ad15a8d5efd7717420a8b6a94115509f
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 6567be5a82d4b344b3850a1a66e0b5b23f1b8f9d
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566774"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859100"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Salt Okunur Kesimler Oluşturmak için Kilitleme İlkesi Tanımlama
-Olan Değiştirilemezlik API'si [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Görselleştirme ve modelleme SDK'sını okuyun ancak değiştirilmemiş kilit bölümünü veya tümünü bir etki alanına özgü dil (DSL) modeli için bir program sağlar. Bu salt okunur seçeneği, örneğin, bir kullanıcı iş arkadaşlarınızı Not ekleme ve bir DSL model gözden geçirmek isteyebilirsiniz ancak bunları özgün değiştirmesini engelleyebilirsiniz kullanılabilir.
+Visual Studio Görselleştirme ve modelleme SDK'sı Değiştirilemezlik API, böylece okunan ancak değiştirilmemiş bölümünü veya tümünü bir etki alanına özgü dil (DSL) modeli kilitlemek bir program sağlar. Bu salt okunur seçeneği, örneğin, bir kullanıcı iş arkadaşlarınızı Not ekleme ve bir DSL model gözden geçirmek isteyebilirsiniz ancak bunları özgün değiştirmesini engelleyebilirsiniz kullanılabilir.
 
  Ayrıca, bir DSL yazarı olarak tanımlayabilirsiniz bir *kilitleme ilkesi.* İzin verilen, izin verilmiyor veya zorunlu hangi kilitleri kilitleme ilkesi tanımlar. Örneğin, bir DSL yayımladığınızda, yeni komutları ile genişletmek için üçüncü taraf geliştiriciler teşvik edebilir. Ancak belirli bölümlerini model salt okunur durumunu değiştirmesini önlemek için kilitleme ilkesi kullanabilirsiniz.
 

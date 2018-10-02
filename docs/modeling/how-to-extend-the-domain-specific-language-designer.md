@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: da03087ae5f4b1e2e8044229ece5b8a6177c11ef
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6a2388619dea31696fe4416032cc12cd1fe5b372
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176082"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860374"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Nasıl yapılır: Etki Alanına Özgü Dil Tasarımcısını Genişletme
 
@@ -68,19 +68,19 @@ Uzantınızı kodunu içeren bir proje ve proje dışarı aktaran bir VSIX proje
 
 ## <a name="test-and-deployment"></a>Test ve dağıtım
 
-Bu konuda herhangi bir uzantı sınamak için derleme ve çözümü çalıştırın. Deneysel örneği [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] açılır. Bu örnekte, bir DSL çözümünü açın. DslDefinition diyagramını düzenleyin. Uzantı davranışı görülebilir.
+Bu konuda herhangi bir uzantı sınamak için derleme ve çözümü çalıştırın. Visual Studio deneysel örneği açılır. Bu örnekte, bir DSL çözümünü açın. DslDefinition diyagramını düzenleyin. Uzantı davranışı görülebilir.
 
-Uzantıları için ana dağıtmak için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ve diğer bilgisayarlar için aşağıdaki adımları izleyin:
+Uzantıları için ana Visual Studio ve diğer bilgisayarlara dağıtmak için aşağıdaki adımları izleyin:
 
 1.  VSIX projenizde depo VSIX yükleme dosyasını bulmak\\*\*\\\*.vsix
 
 2.  Bu dosyayı hedef bilgisayara kopyalayın ve ardından Windows Explorer (veya dosya Gezgini) çift tıklayın.
 
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Uzantının yüklü olduğunu doğrulamak için Uzantı Yöneticisi açılır.
+     Uzantının yüklü olduğunu doğrulamak için Visual Studio Uzantı Yöneticisi açılır.
 
 Uzantıyı kaldırmak için aşağıdaki adımları izleyin:
 
-1.  içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], **Araçları** menüsünde tıklatın **Uzantı Yöneticisi**.
+1.  Visual Studio'da üzerinde **Araçları** menüsünde tıklatın **Uzantı Yöneticisi**.
 
 2.  Uzantıyı seçin ve silin.
 

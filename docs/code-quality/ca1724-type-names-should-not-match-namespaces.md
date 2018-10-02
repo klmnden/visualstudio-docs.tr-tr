@@ -1,6 +1,6 @@
 ---
 title: 'CA1724: Tür Adları Ad Alanlarıyla Eşleşmemelidir'
-ms.date: 11/04/2016
+ms.date: 09/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c178558743ca69fb3b62eccaf8164e4b49167ad3
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: bf359ffcc098fa2b5653c28da302e2777216ea5b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547574"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860270"
 ---
-# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: Tür Adları Ad Alanlarıyla Eşleşmemelidir
+# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: Tür adları, ad alanları ile eşleşmemelidir
+
 |||
 |-|-|
 |TypeName|TypeNamesShouldNotMatchNamespaces|
@@ -32,13 +33,17 @@ ms.locfileid: "45547574"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Bir tür adıyla eşleşen bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] büyük küçük harf duyarsız bir karşılaştırma ad alanı adları.
+
+Bir tür adı, bir veya daha fazla dışarıdan görülebilen türler olan bir başvurulan ad alanı adı ile eşleşir. Ad karşılaştırma büyük/küçük harfe duyarsızdır.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Tür adları içinde tanımlı ad alanlarının adları değil eşleşmelidir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sınıf kitaplığı. Bu kuralın ihlali kitaplığın kullanılabilirliğini azaltabilir.
+
+Kullanıcı tarafından oluşturulan tür adları dışarıdan görülebilen türler sahip başvurulan ad alanlarının adlarıyla eşleşmemelidir. Bu kuralın ihlali kitaplığın kitaplığınızın azaltabilir.
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Belirleyin adı eşleşmiyor bir tür adı bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sınıf kitaplığı ad alanı.
+
+Türü olan dışarıdan görülebilen türler başvurulan bir ad alanının adı eşleşmiyorsa gibi yeniden adlandırın.
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Yeni geliştirme, hiçbir bilinen senaryolar ortaya burada bu kuraldan bir uyarıyı bastırmak gerekir. Uyarının gösterilmemesi önce kitaplığınızın kullanıcılar tarafından eşleşen adı nasıl yanıltıcı dikkatlice düşünün. Kitaplıkları sevk edilmesi için bu kuraldan bir uyarıyı bastırmak gerekebilir.
+
+Yeni geliştirme, hiçbir bilinen senaryolar ortaya burada bu kuraldan bir uyarıyı bastırmak gerekir. Uyarının gösterilmemesi önce kitaplığınızın kullanıcılar tarafından eşleşen adı nasıl yanıltıcı dikkatlice düşünün. Kitaplıkları sevk edilmesi için bu kuraldan bir uyarıyı bastırmak gerekebilir.

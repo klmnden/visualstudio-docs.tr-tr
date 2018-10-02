@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5562ed74de4dd1c7068fabef4f67fdc421ee03d6
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 22290b9a65e512ba897641b076d74927aee712c0
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381865"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860140"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Etki Alanına Özgü bir Dilde Doğrulama
 Bir etki alanına özgü dil (DSL) yazarı, kullanıcı tarafından oluşturulan model anlamlı olduğunu doğrulamak için doğrulama kısıtlamalarını tanımlayabilirsiniz. Örneğin, kullanıcılar, kişiler ve kendi üst öğelerinden ailesi ağacının çizmek DSL'nizi izin veriyorsa, alt kendi üst öğeleri sonraki Doğum tarihleri sahip olmasını sağlar bir kısıtlama yazabilirsiniz.
@@ -239,7 +239,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ## <a name="running-validation-when-a-change-occurs"></a>Bir değişiklik meydana geldiğinde çalışan doğrulama
  Model geçersiz olur, kullanıcıya hemen uyarılır emin olmak istiyorsanız, doğrulama çalıştıran bir depolama olayı tanımlayabilir. Depolama olaylar hakkında daha fazla bilgi için bkz. [olay işleyicileri yaymak değişiklikleri dışında modeli](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
- Doğrulama kodu yanı sıra, bir özel kod dosyasına ekleyin, **DslPackage** aşağıdaki örneğe benzer içeriğe sahip bir proje. Bu kod `ValidationController` belgeye eklenir. Bu denetleyici doğrulama hataları görüntüler [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hata listesi.
+ Doğrulama kodu yanı sıra, bir özel kod dosyasına ekleyin, **DslPackage** aşağıdaki örneğe benzer içeriğe sahip bir proje. Bu kod `ValidationController` belgeye eklenir. Bu denetleyici Visual Studio hata listesinde doğrulama hataları görüntüler.
 
 ```csharp
 using System;
@@ -302,7 +302,7 @@ namespace Company.FamilyTree
 
  İşleyiciler, bağlantıları veya öğeleri etkileyen geri alma veya yineleme işlemleri sonra olarak da adlandırılır.
 
-##  <a name="custom"></a> Özel doğrulama kategorileri
+## <a name="custom"></a> Özel doğrulama kategorileri
  Standart doğrulama kategoriler, menü ve açık gibi ek olarak, kendi kategorilerinizi tanımlayabilirsiniz. Bu kategorilerden bir program kodunu çağırabilirsiniz. Kullanıcı bunları doğrudan çağrılamaz.
 
  Özel kategoriler için genel kullanım modeli belirli bir Aracı'nın önkoşulları karşılayıp karşılamadığını test eden bir kategori tanımlamaktır.
@@ -330,7 +330,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");
 ```
 
-##  <a name="alternatives"></a> Doğrulama alternatifleri
+## <a name="alternatives"></a> Doğrulama alternatifleri
  Doğrulama kısıtlamaları hataları bildirin, ancak modelin değiştirmeyin. Bunun yerine, geçersiz olma modeli engellemek istiyorsanız, diğer teknikleri kullanabilirsiniz.
 
  Ancak, bu teknikler önerilmez. Geçersiz bir model nasıl karar izin vermek daha iyi.

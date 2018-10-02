@@ -9,59 +9,59 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5a48ba42982ea8f190fca2e13d714cb99cb01490
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a5aa0a07af94514f5fff5758fad12bbabc7520ff
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949465"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47857982"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>DSL Kitaplığı Kullanarak DSL'ler Arasında Sınıfları Paylaşma
-İçinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Görselleştirme ve modelleme SDK, başka bir DSL aktarabilirsiniz tamamlanmamış bir DSL tanımı oluşturabilirsiniz. Bu, ortak bölümleri benzer modellerin faktörü sağlar.
+Visual Studio Görselleştirme ve modelleme SDK'si, başka bir DSL alabilir tamamlanmamış bir DSL tanımını oluşturabilirsiniz. Bu, benzer modeller ortak bölümlerini faktörü sağlar.
 
-## <a name="creating-and-using-dsl-libraries"></a>Oluşturma ve DSL kitaplıkları kullanma
+## <a name="creating-and-using-dsl-libraries"></a>DSL kitaplığı kullanarak ve oluşturma
 
 #### <a name="to-create-a-dsl-library"></a>DSL kitaplığı oluşturmak için
 
 1.  Yeni bir DSL projesi oluşturun ve DSL kitaplığı çözüm şablonu seçin.
 
-     Tek bir DSL proje boş bir modelle oluşturulur.
+     Tek bir DSL projesi ile boş bir model oluşturulur.
 
-2.  Etki alanı sınıfları, ilişkileri, şekiller vb. ekleyebilirsiniz.
+2.  Etki alanı sınıfları, ilişkilerini, Şekil vb. ekleyebilirsiniz.
 
-     Öğeleri Kitaplığı'nda tek bir katıştırma ağaç form gerekmez.
+     Kitaplık öğelerinde, tek bir gömme ağacı oluşturmak sahip değilsiniz.
 
-     Importers kullanabileceğiniz bir ilişki tanımlamak için iki etki alanı sınıf oluşturun ve bunları arasında ilişki oluşturun.
+     Importers kullanabileceğiniz bir ilişki tanımlamak için iki alan sınıfı oluşturun ve bunlar arasında ilişki oluşturun.
 
-     Ayar göz önünde bulundurun **devralma değiştiricisi** için etki alanı sınıfların `Abstract`.
+     Ayarlamayı düşünün **devralma değiştiricisi** için etki alanı sınıflarının `Abstract`.
 
-3.  Bağlantı oluşturucular gibi DSL Explorer'da tanımlayan öğeleri ekleyebilirsiniz.
+3.  DSL Gezgini bağlantı oluşturucular gibi tanımlayan öğeler ekleyebilirsiniz.
 
 4.  Doğrulama kısıtlamaları gibi ek kod gerektiren özelleştirmeler ekleyebilirsiniz.
 
-5.  Tıklatın **tüm şablonları dönüştürme**.
+5.  Tıklayın **tüm şablonları dönüştürme**.
 
 6.  Projeyi oluşturun.
 
-7.  Kullanmak için diğer kişileri DSL dağıttığınızda, hem derlenmiş derleme (DLL) hem de dosya sağlamalıdır `DslDefinition.dsl`. Derlenmiş derleme altında bir klasör bulabilirsiniz `Dsl\bin\*`
+7.  DSL kullanılacak diğer kişiler için dağıttığınızda, hem derlemede (DLL) hem de dosyanın sağlamalıdır `DslDefinition.dsl`. Derlenmiş bütünleştirilmiş kod klasörü altında bulabilirsiniz `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>DSL kitaplığı içeri aktarmak için
 
-1.  Başka bir DSL tanımındaki içinde **DSL Explorer**DSL kök sınıfının sağ tıklayın ve ardından **ekleme yeni DslLibrary alma**.
+1.  Başka bir DSL tanımındaki içinde **DSL Gezgini**DSL kök sınıfının sağ tıklayın ve ardından **ekleme yeni DslLibrary alma**.
 
 2.  Özellikler penceresinde ayarlayın **dosya yolu** kitaplığı. Bir göreli veya mutlak bir yol kullanabilirsiniz.
 
      İçeri aktarılan kitaplık salt okunur modda DSL Gezgini'nde görünür.
 
-3.  İçeri aktarılan sınıflarını temel sınıflar olarak kullanabilirsiniz. Bir etki alanı sınıfı alma DSL oluşturun ve özellikleri penceresinde ayarlayın **temel sınıf** içeri aktarılan bir sınıfa.
+3.  İçeri aktarılan sınıflar temel sınıf olarak kullanabilirsiniz. İçeri aktarma DSL içinde alan sınıfı oluşturun ve Özellikler penceresinde ayarlayın **temel sınıf** içeri aktarılan bir sınıf.
 
-4.  Tüm Şablonları dönüştürme tıklatın.
+4.  Tüm Şablonları Dönüştür tıklayın.
 
-5.  DSL projeye DSL kitaplığı projenin oluşturduğu derleme (DLL) için bir başvuru ekleyin.
+5.  DSL kitaplığı proje tarafından oluşturulan derleme (DLL) başvuru DSL projeye ekleyin.
 
 6.  Çözümü oluşturun.
 
- DSL kitaplığı diğer kitaplıkları içeri aktarabilirsiniz. Bir kitaplık içeri aktardığınızda, içeri aktarmalar DSL Explorer'da da otomatik olarak görünür.
+ DSL kitaplığı diğer tür kitaplıklarını içeri aktarabilirsiniz. Bir kitaplığı içeri aktardığınızda, içeri aktarmalarından DSL Gezgini'nde da otomatik olarak görünür.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
