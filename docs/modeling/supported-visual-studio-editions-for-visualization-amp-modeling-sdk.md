@@ -11,40 +11,40 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 004a6b75bb66ebf3c1797abac9c1cc6f7faa6eb9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 16a00dd5c0769cb49f5281570ba11433afa56dfe
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948200"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858866"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Görselleştirme ve SDK Modelleme için Desteklenen Visual Studio Sürümleri
-Aşağıdaki ile desteklenen Visual Studio sürümlerini listeleridir [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] geliştirme ve dağıtım ortamlarda. Bu sürümleri hakkında daha fazla bilgi için bkz: Microsoft [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [Geliştirici Merkezi](http://go.microsoft.com/fwlink/?LinkId=75628).
+İle desteklenen Visual Studio sürümleri listesi aşağıda verilmiştir [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] geliştirme ve dağıtım ortamlarda. Bu sürümler hakkında daha fazla bilgi için bkz: Microsoft Visual Studio [Geliştirici Merkezi](http://go.microsoft.com/fwlink/?LinkId=75628).
 
 ## <a name="authoring-edition"></a>Geliştirme sürümü
- DSL tanımlamak için aşağıdaki bileşenler yüklü olmalıdır:
+ Bir DSL tanımlamak için aşağıdaki bileşenler yüklemiş olmanız gerekir:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
+|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
 |Visual Studio SDK|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio Görselleştirme ve modelleme SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|
+|Visual Studio Görselleştirme ve modelleme SDK'sı|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
 ## <a name="deployment-editions"></a>Dağıtım sürümleri
- [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] oluşturacağınız etki alanına özgü dil dağıtmak için aşağıdaki yapılandırmaları destekler:
+ [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] derleme etki alanına özgü diller dağıtmak için aşağıdaki yapılandırmaları destekler:
 
 -   Visual Studio Enterprise
 
 -   Visual Studio Professional
 
--   Visual Studio Kabuğu (tümleşik mod) yeniden dağıtılabilir paketi yeniden dağıtılabilir paketi
+-   Visual Studio Kabuğu (tümleşik modu) yeniden dağıtılabilir paketi yeniden dağıtılabilir paketi
 
 -   Visual Studio Kabuğu (yalıtılmış mod) yeniden dağıtılabilir paketi yeniden dağıtılabilir paketi
 
 > [!NOTE]
->  Bir kabuk ürün üzerinde çalıştırabilir ve DSL yapmak için ayarlamalısınız **desteklenen VS Edition** uzantısı bildirim alanındaki. Daha fazla bilgi için bkz: [etki alanına özgü dil çözümleri dağıtma](../modeling/deploying-domain-specific-language-solutions.md).
+>  Bir DSL Kabuk ürünü üzerinde çalıştırılan mümkün hale getirmek için ayarlamanız gerekir **desteklenen VS Edition** uzantı bildirim alanındaki. Daha fazla bilgi için [etki alanına özgü dil çözümlerini dağıtma](../modeling/deploying-domain-specific-language-solutions.md).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

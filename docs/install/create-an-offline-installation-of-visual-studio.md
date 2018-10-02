@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d700be4cec30bf27dc826b220a1e318cdcd14c99
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 2b9378f64bce3c1da95120b6456767f12b34d379
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028955"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859580"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Visual Studio 2017'in çevrimdışı yüklemesini oluşturma
 
@@ -60,6 +60,9 @@ Seçtiğiniz Visual Studio sürümünüz için Visual Studio önyükleyicisi ind
 ### <a name="step-2---create-a-local-install-cache"></a>2. adım - yerel yükleme önbelleği oluşturma
 
 Bu adımı tamamlamak için bir internet bağlantısı olması gerekir.
+
+> [!IMPORTANT]
+> Visual Studio Community 2017 yüklerseniz, yükleme 30 gün içinde etkinleştirmeniz gerekir. Bu, internet bağlantısı gerektirir.
 
 Bir komut istemi açın ve aşağıdaki örneklerde komutlardan birini kullanın. Visual Studio Community sürümünü kullanıyorsanız, burada listelenen örnekler varsayılır; komut sürümünüz için uygun şekilde ayarlayın.
 

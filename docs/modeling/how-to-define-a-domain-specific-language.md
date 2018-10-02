@@ -18,19 +18,19 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 314fe4fb88fedb1b287c41fddd9aef4a20bbd1af
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 56381b86b367d7ca93c43b2918d98eb0fdc092bb
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774938"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860491"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Nasıl yapılır: Etki Alanına Özgü bir Dili Tanımlama
 Bir etki alanına özgü dil (DSL) tanımlamak için bir şablondan bir Visual Studio çözümü oluşturun. Anahtar çözüm DslDefinition.dsl içinde depolanan DSL tanımı diyagramı parçasıdır. DSL tanımını DSL şekilleri ve sınıfları tanımlar. Sonra değiştirmek ve bu öğeleri eklemek, DSL daha ayrıntılı bir şekilde özelleştirmek için program kodu ekleyebilirsiniz.
 
 DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **DSL araçları Laboratuvar**, bu sitede bulabileceğiniz: [Visualizaton ve modelleme SDK'sı](http://go.microsoft.com/fwlink/?LinkID=186128)
 
-##  <a name="templates"></a> Bir şablon çözümü seçme
+## <a name="templates"></a> Bir şablon çözümü seçme
  Bir DSL tanımlamak için aşağıdaki bileşenler yüklemiş olmanız gerekir:
 
 |||
@@ -122,7 +122,7 @@ DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **D
 
  Silin veya diğer sınıflar gereksinimlerinize uyacak şekilde yeniden adlandırın.
 
-##  <a name="patterns"></a> Bir DSL tanımlama desenleri
+## <a name="patterns"></a> Bir DSL tanımlama desenleri
  Bir DSL ekleyerek veya aynı anda bir veya iki özellik ayarlama geliştirme öneririz. Özellik ekleme, DSL çalıştırın ve test ve ardından bir veya iki daha fazla özellik ekleyin. Tipik bir özellik, DSL'nin olabilir:
 
 -   Bir etki alanı sınıfı öğelerini model şekli Diyagram ve kullanıcıların olanak sağlayan öğe araç o sınıfı öğelerini görüntülemek için gerekli öğe bağlandığı gömme ilişkisi oluşturun.
@@ -149,7 +149,7 @@ DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **D
 > [!NOTE]
 >  "Modeli" kullanıcıların oluşturun ve genellikle bir diyagramı olarak görüntülenen DSL'nizi örneğine başvurur. DSL tanım diyagramı hem DSL'nizi kullanıldığında görüntülenen modeli diyagramları, bu konuda ele alınmıştır.
 
-##  <a name="classes"></a> Etki alanı sınıfları tanımlama
+## <a name="classes"></a> Etki alanı sınıfları tanımlama
  Etki alanı sınıfları DSL'nizi kavramlarını temsil eder. Örnekleri *model öğeleri*. Örneğin bir **MusicLibrary** DSL adlı etki alanı sınıfları olabilir **albüm** ve **şarkı**.
 
  Bir etki alanı sınıfı oluşturmak için gelen sürükleyebilirsiniz **adlı etki alanı sınıfı** aracı diyagrama ve sınıfı yeniden adlandırın.
@@ -231,7 +231,7 @@ DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **D
 
 7.  **Dosyayı kaydedin, kapatın ve yeniden açın**. Düğümleri genişlettikten sonra oluşturduğunuz tüm örnekleri Gezgini'nde görünür olmalıdır.
 
-##  <a name="shapes"></a> Şekilleri diyagram üzerinde tanımlama
+## <a name="shapes"></a> Şekilleri diyagram üzerinde tanımlama
  Diyagram üzerinde görünen öğelerin sınıfları dikdörtgenler, üç nokta veya simgeler tanımlayabilirsiniz.
 
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>Bir sınıf diyagramında şekilleri olarak görüntülenen öğelerin tanımlamak için
@@ -327,7 +327,7 @@ DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **D
 
  Bir şeklin ilk test ettikten sonra bazı özelliklerini ayarlamak ve bazı daha gelişmiş özellikler eklemek isteyebilirsiniz. Daha fazla bilgi için [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-##  <a name="references"></a> Başvuru ilişkileri tanımlama
+## <a name="references"></a> Başvuru ilişkileri tanımlama
  Tüm kaynak etki alanı sınıfı ve hiçbir hedef alan sınıfı arasındaki bir başvuru ilişkisi tanımlayabilirsiniz. Başvuru ilişkilerini satırlar şekiller arasında bağlayıcıları, bir diyagram üzerinde genellikle görüntülenir.
 
  Örneğin, müzik albümlerini ve sanatçılar, diyagramdaki şekilleri olarak görüntüleniyorsa, sanatçıların albümleri, üzerinde çalıştıkları bağlantılar ArtistsAppearedOnAlbums adlı bir ilişki tanımlayabilirsiniz. Şekil örneğe bakın.
@@ -409,7 +409,7 @@ DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **D
 
  Bir bağlayıcı ilk test ettikten sonra bazı özelliklerini ayarlamak ve bazı daha gelişmiş özellikler eklemek isteyebilirsiniz. Daha fazla bilgi için [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-##  <a name="compartments"></a> Liste içeren şekilleri tanımlama: bölme şekilleri
+## <a name="compartments"></a> Liste içeren şekilleri tanımlama: bölme şekilleri
  Bir veya daha fazla öğe listeleri içeren bir bölme şekli içeriyor. Örneğin, bir müzik kitaplığı DSL müzik Albümler temsil etmek için bölme şekilleri kullanabilirsiniz. Her albüm içinde şarkıya bir listesi bulunur.
 
  ![Bölme şekli](../modeling/media/compartmentshape.png)
@@ -537,7 +537,7 @@ DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **D
 
 7.  Bölme şekli bağlantısını ya da öğeyi seçin. Bağlantı hem de öğe ortadan kalkması gerekir.
 
-##  <a name="ports"></a> Bağlantı noktaları başka bir şekil sınırında tanımlama
+## <a name="ports"></a> Bağlantı noktaları başka bir şekil sınırında tanımlama
  Bir bağlantı noktası başka bir şekil sınırında bulunan şekildir.
 
  Bağlantı noktaları, bir sabit bağlantı noktası kullanıcı bağlayıcılar çizmek başka bir şekil sağlamak için de kullanılabilir. Bu durumda, bağlantı noktası şekli saydam hale getirebilirsiniz.
@@ -560,7 +560,7 @@ DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **D
 
  Daha fazla bilgi için [bağlantı noktası özellikleri şekiller](../modeling/properties-of-port-shapes.md).
 
-##  <a name="swimlanes"></a> Kulvarlar sahip bir DSL tanımlama
+## <a name="swimlanes"></a> Kulvarlar sahip bir DSL tanımlama
  Kulvarlar diyagramının bir yatay veya dikey bölüm var. Kulvar her model öğesine karşılık gelir. DSL tanımını bir etki alanı sınıfı Kulvar öğeleri gerektirir.
 
  Bir DSL Kulvarlar ile oluşturmak için en iyi yolu, yeni bir DSL çözümü oluşturun ve Görev akışı çözümü şablonu seçme sağlamaktır. DSL tanımındaki kulvara eşlenmiş etki alanı sınıfı aktör sınıftır. Bu ve diğer sınıflar projenizi uyacak şekilde yeniden adlandırın.
@@ -571,7 +571,7 @@ DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **D
 
  Daha fazla bilgi için [özellikleri, Kulvarlar](../modeling/properties-of-swimlanes.md).
 
-##  <a name="addTypes"></a> Özellik türleri ekleme
+## <a name="addTypes"></a> Özellik türleri ekleme
 
 ### <a name="domain-enumerations-and-literals"></a>Etki alanı sabit listeleri ve değişmez değerleri
  Bir etki alanı numaralandırmasının birkaç değişmez değerler ile bir türdür.
@@ -587,7 +587,7 @@ DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **D
 
  Bir türü eklemek için DSL Gezgini'nde modelin kökünü sağ tıklayın ve ardından **yeni dış türü Ekle**. Özellikler penceresinde adı kümesine **renk** ve ad alanına **System.Drawing**. Bu tür artık DSL Gezgini altında görünür **etki alanı türleri**. Her bir alan özelliği türünü ayarlama seçebilirsiniz.
 
-##  <a name="custom"></a> DSL özelleştirme
+## <a name="custom"></a> DSL özelleştirme
  Bu konuda açıklanan teknikleri kullanarak, hızlı bir şekilde bir DSL grafiksel gösterimi, okunabilir XML form ve kodu ve diğer yapıları üretmek için gerekli olan temel araçları oluşturabilirsiniz.
 
  DSL tanımı genişletmek için iki yöntem vardır:
@@ -607,7 +607,7 @@ DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **D
 
  Ayrıca bkz: [nasıl yapılır: bir etki alanına özgü dil Namespace değiştirme](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
-##  <a name="trouble"></a> Sorun giderme
+## <a name="trouble"></a> Sorun giderme
  Aşağıdaki tabloda çözüm önerileri ile birlikte bir DSL tasarlarken, karşılaşılan en yaygın sorunlardan bazıları listelenmektedir. Daha fazla öneri kullanılabilir [görselleştirme araçları Extensibililty Forumu](http://go.microsoft.com/fwlink/?LinkId=186074).
 
 |Sorun|Öneri|
@@ -619,7 +619,7 @@ DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **D
 |My DSL Gezgini içinde öğeleri yalnızca tür adları ile gösterilir.|Sınıfın bir etki alanı özelliği DSL tanımındaki seçin ve Özellikler penceresinde ayarlayın **öğe adı** true.|
 |My DSL her zaman XML Düzenleyicisi'nde açılır.|Dosya okunurken bir hata nedeniyle oluşabilir. Ancak, bile, bu hatayı düzelttikten sonra DSL Tasarımcısı olarak Düzenleyici açıkça sıfırlamanız gerekir.<br /><br /> Proje öğesi sağ tıklayın, **birlikte Aç** seçip _YourLanguage_**Tasarımcısı (varsayılan)**.|
 |Derleme adları değiştirdim sonra my DSL araç görünmez.|İnceleyin ve güncelleştirme **DslPackage\GeneratedCode\Package.tt** daha fazla bilgi için bkz [nasıl yapılır: bir etki alanına özgü dil Namespace değiştirme](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|
-|My DSL araç görünmez, ancak derleme adı değişmemiştir.<br /><br /> Veya, bir uzantı yüklemek için hata raporlama bir ileti kutusu görünür.|Deneysel örneğini sıfırlama ve çözümünüzü yeniden oluşturun.<br /><br /> 1.  Windows Başlat menüsü, altında **tüm programlar**, genişletin [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], ardından **Araçları**ve ardından **Microsoft Visual Studio Deneysel örneğini sıfırlama**.<br />2.  Visual Studio**derleme** menüsünü tıklatın **çözümü yeniden derle**.|
+|My DSL araç görünmez, ancak derleme adı değişmemiştir.<br /><br /> Veya, bir uzantı yüklemek için hata raporlama bir ileti kutusu görünür.|Deneysel örneğini sıfırlama ve çözümünüzü yeniden oluşturun.<br /><br /> 1.  Windows Başlat menüsü, altında **tüm programlar**, genişletin [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], ardından **Araçları**ve ardından **Microsoft Visual Studio Deneysel örneğini sıfırlama**.<br />2.  Üzerinde **derleme** menüsünde tıklatın **çözümü yeniden derle**.|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

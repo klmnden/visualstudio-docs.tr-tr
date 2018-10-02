@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1eb8492a1f4432eb54e7333eb59cd14eb06335b9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b4ab0a7cf012d2230437bceb96da80c78a4b493a
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176817"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858509"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Uygulamanızı modeller aracılığıyla oluşturma ve yapılandırma
 Oluşturma veya modelden uygulamanızın parçalarını yapılandırın.
@@ -22,7 +22,7 @@ Oluşturma veya modelden uygulamanızın parçalarını yapılandırın.
  Modeli, kodun daha doğrudan gereksinimleri temsil eder. Modelden doğrudan uygulamanın davranışını türetme tarafından değiştirilen gereksinimlerine çok daha hızlı ve göre daha güvenilir bir şekilde güncelleştirme yanıtlayabilir kodu. Bazı ilk iş türetmeyi'kurmak için gerekli olmasa da, ayırdığı bu gereksinimleri değişiklikleri bekliyorsanız ya da birkaç ürün çeşidini yapmayı planlıyorsanız döndürülür.
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Bir modelde uygulamanızın kod oluşturma
- Kod oluşturmanın en kolay yolu, metin şablonları kullanmaktır. Aynı kod oluşturabilirsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çözüm modeli tutun. Daha fazla bilgi için bkz.:
+ Kod oluşturmanın en kolay yolu, metin şablonları kullanmaktır. Kod modeli tuttuğunuz aynı Visual Studio çözümü içinde oluşturabilirsiniz. Daha fazla bilgi için bkz.:
 
 -   [T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 

@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ab671cfffdf43d9b69ecda7f06c27a0e8df6bf70
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6a238eabbcba4f28b12f899de5b2d4eae30cfef9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775919"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858775"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Nasıl yapılır: Etki Alanına Özgü Dili Yeni Sürüme Geçirme
 Tanımlamak ve etki alanına özgü dil kullanan projeler geçirebileceğiniz [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] sürümünden [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , ile dağıtılan [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
 
- Geçiş Aracı bir parçası olarak sağlanan [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]. Aracı dönüştürür [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeler ve çözümler kullanın veya DSL araçları tanımlayın.
+ Geçiş Aracı bir parçası olarak sağlanan [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]. Araç, Visual Studio projeleri ve çözümleri kullanın veya DSL araçları tanımlamak dönüştürür.
 
- Geçiş Aracı açıkça çalıştırmanız gerekir: bir çözümde açtığınızda otomatik olarak başlatılmaz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ayrıntılı yönergeler belge ve araç bu yolda bulunabilir:
+ Geçiş Aracı açıkça çalıştırmanız gerekir: Visual Studio'da bir çözümü açtığınızda otomatik olarak başlatılmaz. Ayrıntılı yönergeler belge ve araç bu yolda bulunabilir:
 
  **% Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
 ## <a name="before-you-migrate-your-dsl-projects"></a>DSL projelerinizin geçiş önce
- Geçiş Aracı değiştirir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje dosyaları (**.csproj**) ve çözüm dosyaları (**.sln**).
+ Geçiş Aracı Visual Studio proje dosyalarını değiştirir (**.csproj**) ve çözüm dosyaları (**.sln**).
 
 #### <a name="to-prepare-projects-for-migration"></a>Projeleri geçişe hazırlamak için.
 

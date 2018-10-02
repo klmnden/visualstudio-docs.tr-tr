@@ -9,15 +9,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 20c4c9e9c91fd93a190463bc35fe016be4cdf838
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6e5f72b079af3c1c82783cb5bb91e676c0f14bf6
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949494"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859295"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Bir VS Uzantısında Metin Dönüştürmeyi Çağırma
-Visual Studio uzantısı menü komutu gibi yazma varsa veya [etki alanına özgü dil](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), metin şablonları dönüştürme için metin şablonu oluşturma hizmeti kullanabilirsiniz. Alma <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> hizmet ve hangisine <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
+Bir menü komutu gibi bir Visual Studio uzantısı yazıyorsanız veya [etki alanına özgü dil](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), metin şablonlarını dönüştürmek için metin şablonu oluşturma hizmetini kullanabilirsiniz. Alma <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> hizmet ve bunu <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
 
 ## <a name="getting-the-text-templating-service"></a>Metin şablonu oluşturma hizmetini alma
 
@@ -37,11 +37,11 @@ string result = t4.ProcessTemplate(filePath, System.IO.File.ReadAllText(filePath
 ```
 
 ## <a name="passing-parameters-to-the-template"></a>Parametreleri şablona geçirme
- Parametreleri şablona geçirebilirsiniz. Şablon içinde kullanarak parametre değerleri alabilirsiniz `<#@parameter#>` yönergesi.
+ Parametreleri şablona geçirebilirsiniz. Şablon içinde parametre değerlerini kullanarak alabilirsiniz `<#@parameter#>` yönergesi.
 
- Parametre türü için, seri hale getirilebilen veya sıralanabilen bir tür kullanmalısınız. Diğer bir deyişle, türü ile bildirilmelidir <xref:System.SerializableAttribute>, veya öğesinden türetilmelidir <xref:System.MarshalByRefObject>. Bu kısıtlama gereklidir çünkü metin şablonu ayrı bir AppDomain içinde yürütülür. Tüm yerleşik türleri gibi **System.String** ve **System.Int32** olan seri hale getirilebilir.
+ Parametre türü için, seri hale getirilebilen veya sıralanabilen bir tür kullanmalısınız. Diğer bir deyişle, türü ile bildirilmelidir <xref:System.SerializableAttribute>, veya nesnesinden türetilmesi gerekir <xref:System.MarshalByRefObject>. Bu kısıtlama gereklidir çünkü metin şablonu ayrı bir AppDomain içinde yürütülür. Gibi tüm yerleşik türler **System.String** ve **System.Int32** seri hale getirilebilir.
 
- Parametre değerleri geçirmek için arama kodunu değerleri ya da koyabilirsiniz içinde `Session` sözlüğü veya <xref:System.Runtime.Remoting.Messaging.CallContext>.
+ Parametre değerlerini geçirmek için çağıran kodun değerleri koyabilir, `Session` sözlük veya <xref:System.Runtime.Remoting.Messaging.CallContext>.
 
  Aşağıdaki örnek bir kısa test şablonunu dönüştürmek için her iki yöntemi kullanmaktadır:
 
@@ -78,9 +78,9 @@ string result = t4.ProcessTemplate("",
 ```
 
 ## <a name="error-reporting-and-the-output-directive"></a>Hata Raporlama ve Çıkış Yönergesi
- İşleme sırasında ortaya herhangi bir hata görüntülenir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hata penceresi. Ayrıca, hataların uygulayan bir geri çağırma belirterek bildirilebilir <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback>.
+ İşleme sırasında ortaya çıkan hatalar, Visual Studio hata penceresinde görüntülenir. Ayrıca, hataların uygulayan geri aramayı belirterek bilgilendirilebilirsiniz <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback>.
 
- Sonuç dizesini bir dosyaya yazmak istiyorsanız, hangi dosya uzantısı bilmek isteyebilirsiniz ve kodlama belirtildi içinde `<#@output#>` şablondaki yönergesi. Bu bilgiler, geri çağırmanıza da geçirilir. Daha fazla bilgi için bkz: [T4 çıkış yönergesi](../modeling/t4-output-directive.md).
+ Sonuç dizesini bir dosyaya yazmak istiyorsanız, hangi dosya uzantısının bilmek isteyebilirsiniz ve kodlamanın belirtildiğini `<#@output#>` yönergesinde şablonda. Bu bilgiler, geri çağırmanıza da geçirilir. Daha fazla bilgi için [T4 çıkış yönergesi](../modeling/t4-output-directive.md).
 
 ```csharp
 void ProcessMyTemplate(string MyTemplateFile)
@@ -132,14 +132,14 @@ class T4Callback : ITextTemplatingCallback
 Sample text.
 ```
 
- Derleyici Uyarısı görünür [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hata penceresini ve bu da oluşturacağını yapılan bir çağrı `ErrorCallback`.
+ Derleyici Uyarısı Visual Studio hata penceresinde görünür ve bir çağrı oluşturur `ErrorCallback`.
 
 ## <a name="reference-parameters"></a>Başvuru parametreleri
- Türetilen bir parametre sınıfı kullanarak bir metin şablonuna dışı değerleri geçirebilirsiniz <xref:System.MarshalByRefObject>.
+ Türetilen bir parametre sınıfını kullanarak değerleri bir metin şablonu dışına geçirebilirsiniz <xref:System.MarshalByRefObject>.
 
 ## <a name="related-topics"></a>İlgili Konular
- Metin önceden işlenmiş metin şablonu oluşturmak için: çağrı `TransformText()` oluşturulan sınıfın yöntemi. Daha fazla bilgi için bkz: [T4 metin şablonları ile çalışma zamanı metin oluşturma](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Önceden işlenmiş metin şablonundan metin oluşturmak için: çağrı `TransformText()` oluşturulan sınıfın yöntemi. Daha fazla bilgi için [T4 metin şablonları ile çalışma süresi metni oluşturma](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Metin dışında oluşturmak için bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uzantısı: özel bir sunucu tanımlayın. Daha fazla bilgi için bkz: [özel konak kullanarak metin şablonlarını işleme](../modeling/processing-text-templates-by-using-a-custom-host.md).
+ Visual Studio uzantısı dışında metin oluşturmak için: özel bir ana bilgisayar tanımlayın. Daha fazla bilgi için [özel konak kullanarak metin şablonlarını işleme](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
  Daha sonra derlenmiş ve yürütülen kaynak kodu oluşturmak için: çağrı `t4.PreprocessTemplate()` yöntemi <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.

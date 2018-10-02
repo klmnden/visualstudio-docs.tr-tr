@@ -9,12 +9,12 @@ description: Visual Studio abonelikleri portalında kullanılabilir avantajları
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fe3bfed2c777f8c7a2bab38619696285e5c5b1f1
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 6bd5e0ac308a8644f6428deb7468e00007f7c70b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279368"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859026"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Abone portalı - kullanarak benim. <span> </span>visualstudio<span></span>.com
 
@@ -22,13 +22,13 @@ Visual Studio abonelikleri portalında [ https://my.visualstudio.com ](https://m
 
 Portalı kullanarak, aboneliğinizle ilişkili kimliği oturum gerektirir.  Bu, Microsoft hesabı (MSA) veya İşveren veya Okul gibi bir kurum tarafından sağlanmış bir e-posta adresi olabilir.  Hakkında bilgi edinin [oturum açarken](signing-in.md).
 
-Portalda altı sayfalarında düzenlenmiştir.  Her sayfa, farklı ürünleri veya hizmetleri aboneliğinize dahil olan erişim sağlar.  Altı avantajları, indirmeler, ürün anahtarları, abonelikler, destek ve Market sayfalarıdır.
+Portalda altı sayfalarında düzenlenmiştir.  Her sayfa, farklı ürünleri veya hizmetleri aboneliğinize dahil olan erişim sağlar.  Altı avantajları, indirmeler, ürün anahtarları, abonelikler, destek ve Market sayfalarıdır. 
 
 ## <a name="benefitshttpsmyvisualstudiocombenefitswtmcidomsftdocs"></a>[Avantajları](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
 Araç ve Hizmetleri aboneliğinize dahil olan "kutucukları olarak" avantajlar sayfasında görüntülenir.  Tüm avantajlar, tüm aboneliklere dahildir. Kutucuk üç kategorilerde gruplanır: araçlar, profesyonel geliştirme ve destek.  Visual Studio Dev Essentials'ı kullanıyorsanız, diğer üç kategoriden seçili avantajları içerebilir öne çıkan bir kategori başlıklı de görürsünüz.
 
 ### <a name="tools"></a>Araçlar
-Çekirdek geliştirme araçları, Visual Studio IDE, Azure DevOps Hizmetleri, hem de iş ortaklarımız tarafından sağlanan araçları gibi burada bulabilirsiniz araçları kategorisidir.  Ayrıca, Azure ve Visual Studio App Center gibi hizmetleri de görürsünüz.
+Çekirdek geliştirme araçları, Visual Studio IDE, Azure DevOps, hem de iş ortaklarımız tarafından sağlanan araçları gibi burada bulabilirsiniz araçları kategorisidir.  Ayrıca, Azure ve Visual Studio App Center gibi hizmetleri de görürsünüz.
 
 ### <a name="professional-development"></a>Profesyonel Geliştirme
 Bu kategori, Microsoft ve iş ortaklarımız, tüm geliştirme becerilerinizi geliştirin ve kod gerisinde kalın yardımcı olmak için MSDN Magazine aboneliği yanı sıra gelen çevrimiçi eğitim gibi avantajları içerir.
@@ -45,7 +45,7 @@ Aboneliği veya programı sahip bağlı olarak, güncelleştirmeleri arasında y
 Yükleme ve ürün etkinleştirme ve zaten kullanmış hangi tuşlarını görmek için anahtarlarını almak için ürün anahtarlarını sayfasını ziyaret edin.  Bile anahtarlarınızı flooring'in tümünün listesini dışarı aktarabilirsiniz.
 
 ## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmcidomsftdocs"></a>[Abonelikler](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
-Abonelik sayfasında, sahibi, abonelikler arasında geçiş yapmak, bunları yenilemeniz ve yeni aboneliklerini aktifleştirmeye abonelikleri görmek için ilgili özellikleri sağlar. Ayrıca, mevcut Visual Studio IDE, Azure DevOps Services veya Azure kaynakları ile zaten ilişkili alternatif hesap ile Microsoft Account kullanarak erişim abonelikleri ilişkilendirebilirsiniz.
+Abonelik sayfasında, sahibi, abonelikler arasında geçiş yapmak, bunları yenilemeniz ve yeni aboneliklerini aktifleştirmeye abonelikleri görmek için ilgili özellikleri sağlar. Ayrıca, mevcut Visual Studio IDE, Azure DevOps ve Azure kaynakları ile zaten ilişkili alternatif hesap ile Microsoft Account kullanarak erişim abonelikleri ilişkilendirebilirsiniz.
 
 ## <a name="support"></a>Destek
 
@@ -53,4 +53,4 @@ Avantajlar sayfasında destek kategorisinde bulunan tek avantajlarına ek olarak
 
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Market](https://marketplace.visualstudio.com/)
 
-Visual Studio bulut aboneliğini gerekiyor?  Visual Studio ürün ailesi için en güncel uzantıları indirmek istiyor?  Market uzantıları, araçları ve Azure DevOps Hizmetleri, Team Foundation Server ve Visual Studio Code'u daha da iyi hale hizmetlerini bulmalarına yardımcı olur. Bile, bir yayımcı olur ve kendi uzantılarınızı Market'te yayımlayın.
+Visual Studio bulut aboneliğini gerekiyor?  Visual Studio ürün ailesi için en güncel uzantıları indirmek istiyor?  Market uzantıları, araçları ve Azure DevOps, Team Foundation Server ve Visual Studio Code'u daha da iyi hale hizmetlerini bulmalarına yardımcı olur. Bile, bir yayımcı olur ve kendi uzantılarınızı Market'te yayımlayın.

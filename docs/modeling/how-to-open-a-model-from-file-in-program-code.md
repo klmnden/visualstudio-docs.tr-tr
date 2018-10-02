@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 03d6d4550442c81325a8e67f8d96e52e7655dc09
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0bd6c2c2ebad1526a06cccdffef38936d201fc0b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566557"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860427"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Nasıl yapılır: Program Kodunda Dosyadan Model Açma
 DSL model herhangi bir uygulama açabilirsiniz.
 
- Gelen bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uzantısı, bu amaçla Modelbus'ı kullanabilirsiniz. ModelBus bir model veya bir model öğelerini ve taşınmışsa, model bulma için standart mekanizması sağlar. Daha fazla bilgi için [Visual Studio Modelbus kullanarak modelleri tümleştirme](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+ Bir Visual Studio Uzantısında, bu amaçla Modelbus'ı kullanabilirsiniz. ModelBus bir model veya bir model öğelerini ve taşınmışsa, model bulma için standart mekanizması sağlar. Daha fazla bilgi için [Visual Studio Modelbus kullanarak modelleri tümleştirme](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
 ## <a name="target-framework"></a>Hedef Çerçeve
  Ayarlama **hedef Framework'ü** uygulama projenizin **.NET Framework 4**.
 
 #### <a name="to-set-the-target-framework"></a>Hedef Framework'ü ayarlama
 
-1.  Açık [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] DSL modeli okumak istediğiniz uygulama için proje.
+1.  Bir DSL modeli okumak istediğiniz uygulama için Visual Studio projesini açın.
 
 2.  İçinde **Çözüm Gezgini**, projeye sağ tıklayın ve ardından **özellikleri**.
 
@@ -36,7 +36,7 @@ DSL model herhangi bir uygulama açabilirsiniz.
 >  Seçtiyseniz, bunu yapmak ihtiyacınız olabilecek **.NET Framework 4** proje oluşturma iletişim kutusunda. Hedef Framework'ü olmamalıdır **.NET Framework 4 istemci profili**.
 
 ## <a name="references"></a>Referanslar
- Bu başvuruları eklemeniz gerekir, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uygulama projesi:
+ Visual Studio uygulama projenizin bu başvuruları eklemeniz gerekir:
 
 -   `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 

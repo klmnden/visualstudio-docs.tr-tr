@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3cdffcb5d71d5caac11cbbb0882b79526862bffa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 4f741b8b47b4ddf5b07cec2a612173a52bf5fbd9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279862"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859789"
 ---
 # <a name="develop-tests-from-a-model"></a>Model aracılığıyla test geliştirme
 Sisteminiz ve bileşenlerinin testleri düzenlemenize yardımcı olması için gereksinimleri ve mimari modelleri kullanabilirsiniz. Bu uygulama, kullanıcıların ve diğer proje katılımcıları için önemli olan gereksinimleri test etmek ve gereklilikler değiştiğinde testleri hızlı bir şekilde güncelleştirmenize yardımcı emin olun yardımcı olur. Kullanırsanız [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], modeller ve testler arasındaki bağlantıları da sağlayabilirsiniz.
@@ -61,7 +61,7 @@ Sisteminiz ve bileşenlerinin testleri düzenlemenize yardımcı olması için g
 
 1.  İçinde [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], bir gereksinim oluşturmanız ve bir test paketi üzerinde temel.
 
-     Bir iş öğesinde oluşturduğunuz gereksinimi olan [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Bir kullanıcı hikayesi, gereksinim veya kullanım örneği iş öğesi ile projenizin kullandığı işlem şablonuna bağlı olarak olabilir [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]. Daha fazla bilgi için [hakkında Çevik araçları ve Çevik proje yönetimi](/azure/devops/boards/backlogs/overview?view=vsts).
+     Bir iş öğesinde oluşturduğunuz gereksinimi olan [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Team Foundation ile projenizin kullandığı işlem şablonuna bağlı olarak kullanıcı hikayesi, gereksinim veya kullanım örneği iş öğesi olabilir. Daha fazla bilgi için [hakkında Çevik araçları ve Çevik proje yönetimi](/azure/devops/boards/backlogs/overview?view=vsts).
 
 2.  Modelinizde bir veya daha fazla kullanım örnekleri için gereksinim iş öğesine bağlayın.
 
@@ -130,7 +130,7 @@ Assert (countAfter == countBefore = 1);
 
  Bir test açısından bakıldığında, gereksinimler modelini testler için bir toplu olarak görülebilir. Bu nedenle, testler ve proje boyunca model arasındaki ilişkiyi sağlamak önemlidir.
 
-##  <a name="Attaching"></a> Model öğelerine test çalışmalarını ekleme
+## <a name="Attaching"></a> Model öğelerine test çalışmalarını ekleme
  Projeniz kullanıyorsa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], testleri modelinizde öğelerine bağlayabilirsiniz. Bu değişikliği gereksinimleri etkilenen testleri hızla bulmanıza olanak tanır ve bir gereksinim gerçekleşti ölçüde izlemenize yardımcı olur.
 
  Tüm öğe türleri için testleri bağlayabilirsiniz. Bazı örnekler şunlardır:
@@ -149,7 +149,7 @@ Assert (countAfter == countBefore = 1);
 
 1.  İçinde [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], bir gereksinim oluşturmanız ve bir test paketi üzerinde temel.
 
-     Bir iş öğesinde oluşturduğunuz gereksinimi olan [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Bir kullanıcı hikayesi, gereksinim veya kullanım örneği iş öğesi ile projenizin kullandığı işlem şablonuna bağlı olarak olabilir [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]. Daha fazla bilgi için [hakkında Çevik araçları ve Çevik proje yönetimi](/azure/devops/boards/backlogs/overview?view=vsts).
+     Bir iş öğesinde oluşturduğunuz gereksinimi olan [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Team Foundation ile projenizin kullandığı işlem şablonuna bağlı olarak kullanıcı hikayesi, gereksinim veya kullanım örneği iş öğesi olabilir. Daha fazla bilgi için [hakkında Çevik araçları ve Çevik proje yönetimi](/azure/devops/boards/backlogs/overview?view=vsts).
 
 2.  Bir veya daha fazla öğe modelinizdeki gereksinim iş öğesine bağlayın.
 
