@@ -1,5 +1,5 @@
 ---
-title: .NET kodlama kuralı ayarlarına için EditorConfig Visual Studio'da
+title: Kodlama kuralı ayarlarına EditorConfig için .NET
 ms.date: 06/14/2018
 ms.topic: reference
 dev_langs:
@@ -18,18 +18,20 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a9b1b03050081659cac08c1b2c92c49f2c72273d
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 1ce281a8abed11a2b7d64945d33f9a13136cad9f
+ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496057"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48244036"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Kodlama kuralı ayarlarına EditorConfig için .NET
 
 Visual Studio 2017'de tanımlayabilir ve tutarlı bir kod stili korumak, birlikte kod temeli bir [EditorConfig](../ide/create-portable-custom-editor-options.md) dosya. EditorConfig içeren birkaç temel özellikleri biçimlendirme gibi `indent_style` ve `indent_size`. Visual Studio'da .NET kodlama kuralları ayarları bir EditorConfig dosyasını kullanarak da yapılandırılabilir. EditorConfig dosyaları etkinleştirme veya devre dışı bağımsız .NET kodlama kuralları ve önem derecesi zorunlu kuralı istediğiniz ölçüde yapılandırmak için izin verin. EditorConfig temelinizde tutarlılığı zorlamak için nasıl kullanılacağı hakkında daha fazla bilgi edinmek için [oluşturma taşınabilir özel düzenleyici seçenekleri](../ide/create-portable-custom-editor-options.md).
 
-Bir örnek .editorconfig için bu belgenin sonuna bakın.
+Bu makalenin sonuna bakın bir [örnek .editorconfig dosyasındaki](#example-editorconfig-file).
+
+## <a name="convention-categories"></a>Kural kategorileri
 
 Üç desteklenen .NET kodlama kuralı kategorisi vardır:
 
@@ -130,7 +132,7 @@ Stil kurallarını Bu bölümde, hem C# ve Visual Basic için geçerlidir. Terci
 
 #### <a name="this_and_me"></a>"This." ve "Me." niteleyicileri
 
-Bu stil kuralı (kimlikleri IDE0003 ve IDE0009 kural) alanlar, özellikler, yöntemler veya olayları uygulanabilir. Değerini **true** anlamına gelir, kod simge ile başlayan tercih `this.` C# veya `Me.` Visual Basic'te. Değerini **false** anlamına gelir, kod öğesi tercih _değil_ başında için `this.` veya `Me.`.
+Bu stil kuralı (kimlikleri IDE0003 ve IDE0009 kural) alanlar, özellikler, yöntemler veya olayları için uygulanabilir. Değerini **true** anlamına gelir, kod simge ile başlayan tercih `this.` C# veya `Me.` Visual Basic'te. Değerini **false** anlamına gelir, kod öğesi tercih _değil_ başında için `this.` veya `Me.`.
 
 Kural adı, geçerli programlama dilleri ve varsayılan değerleri aşağıdaki tabloda gösterilmektedir:
 
@@ -246,7 +248,7 @@ dotnet_style_qualification_for_event = false:suggestion
 
 #### <a name="language_keywords"></a>Dil anahtar sözcükleri framework yerine tür başvurularını adlarını yazın
 
-Bu stil kuralı, yerel değişkenler, yöntem parametreleri ve sınıf üyeleri veya üye erişimi ifadeleri yazmak için ayrı bir kural olarak uygulanabilir. Değerini **true** anlamına gelir, tercih ettiğiniz dil anahtar sözcüğü (örneğin `int` veya `Integer`) tür adı yerine (örneğin `Int32`) bunları temsil etmek için bir anahtar sözcük sahip türleri. Değerini **false** anlamına gelir, tercih ettiğiniz dil anahtar sözcüğü yerine tür adı.
+Bu stil kuralı, yerel değişkenler, yöntem parametreleri ve sınıf üyeleri veya üye erişimi ifadeleri yazmak için ayrı bir kural olarak uygulanabilir. Değerini **true** anlamına gelir, tercih ettiğiniz dil anahtar sözcüğü (örneğin, `int` veya `Integer`) tür adı yerine (örneğin, `Int32`) bunları temsil etmek için bir anahtar sözcük sahip türleri. Değerini **false** anlamına gelir, tercih ettiğiniz dil anahtar sözcüğü yerine tür adı.
 
 Aşağıdaki tabloda, kuralı adları, kural kimliklerini, geçerli programlama dilleri ve varsayılan değerleri gösterir:
 
@@ -683,8 +685,8 @@ Dim anon = New With {.name = name, .age = age}
 
 **DotNet\_stili\_tercih\_otomatik\_özellikleri**
 
-- Bu kural ayarlandığında **true**, özellikleri ile özel yedekleme alanlar üzerinden otomatik özellikleri tercih et.
-- Bu kural ayarlandığında **false**, otomatik özelliklerde özel yedekleme alanlarla Özellikleri'tercih et.
+- Bu kural ayarlandığında **true**, autoproperties üzerinden özel yedekleme alanlarla özellikleri tercih et.
+- Bu kural ayarlandığında **false**, autoproperties özel yedekleme alanlarla özellikleri tercih et.
 
 Kod örnekleri:
 
@@ -1590,7 +1592,7 @@ try {
 
 **CSharp\_yeni\_satırı\_önce\_üyeleri\_içinde\_object_initializers**
 
-- Bu kural ayarlandığında **true**, üyelerinin nesne intiializers ayrı satırlarda olmasını gerektirir.
+- Bu kural ayarlandığında **true**, üyelerinin nesne başlatıcıları ayrı satırlarda olmasını gerektirir.
 - Bu kural ayarlandığında **false**, aynı satırda bulunması için nesne başlatıcıları üyeleri gerektirir.
 
 Kod örnekleri:
