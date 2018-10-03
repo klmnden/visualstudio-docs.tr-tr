@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 419c9f54d0c537d417034eb4375d6402951609bd
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: cc238b6a8ba1a190471d25952a4d7c976ca56b9f
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624403"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120361"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>5. adım: Django kullanıcıların kimlik doğrulaması
 
@@ -198,9 +198,9 @@ Aşağıdaki adımlar, kimlik doğrulaması akışı alıştırma ve söz konusu
 
 1. Tüm işiniz bittiğinde, sunucunun durdurun ve yeniden kaynak denetimi yaptığınız değişiklikleri kaydedin.
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>Soru: Amacı nedir {% crsf_token %} etiket görünür \<form\> öğeleri?
+### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Soru: Amacı nedir {% csrf_token %} etiket görünür \<form\> öğeleri?
 
-Yanıt: `{% crsf_token %}` etiketi içeren Django'nın yerleşik [siteler arası istek sahteciliği (crsf) koruma](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django belgeleri). Genellikle, POST, PUT ve DELETE isteği gibi yöntemleri bir form içeren herhangi bir öğeye bu etiketi ekleyin. Şablon işleme işlevi (`render`) sonra gerekli korumayı ekler.
+Yanıt: `{% csrf_token %}` etiketi içeren Django'nın yerleşik [siteler arası istek sahteciliği (csrf) koruma](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django belgeleri). Genellikle, POST, PUT ve DELETE isteği gibi yöntemleri bir form içeren herhangi bir öğeye bu etiketi ekleyin. Şablon işleme işlevi (`render`) sonra gerekli korumayı ekler.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

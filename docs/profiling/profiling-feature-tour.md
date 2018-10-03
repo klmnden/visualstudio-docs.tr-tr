@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aeda3752fdee6ce36094c68758d99c612c82fd76
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 907aa9eb69bbbbe23f147472995cc7a4accd3679
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320845"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860446"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Hızlı Başlangıç: Profil oluşturma araçları ilk bakış
 
@@ -119,7 +119,7 @@ Ne zaman, bir zaman dönemi grafiklerde seçip **ayrıntıları görüntüle**, 
 
 Grafikler, CPU'ya vardır veya performans sorunlarını GPU bağlı olup olmadığını belirlemek için de kullanabilirsiniz.
 
-## <a name="analyze-performance-javascript"></a>(JavaScript) performansını çözümleme
+## <a name="analyze-performance-javascript-uwp"></a>(JavaScript UWP) performansını çözümleme
 
 UWP uygulamaları için JavaScript bellek aracı ve HTML kullanıcı Arabirimi yanıt hızı Aracı'nı kullanabilirsiniz.
 
@@ -155,8 +155,8 @@ Farklı araçlar sunan Visual Studio listeleyen bir tablo işte ve farklı proje
   
 |Performans aracı|Windows Masaüstü|UWP|ASP.NET/ASP.NET çekirdek| 
 |----------------------|---------------------|-------------|-------------|  
-|[Bellek Kullanımı](../profiling/memory-usage.md)|Evet|Evet|Evet| 
 |[CPU Kullanımı](../profiling/cpu-usage.md)|Evet|Evet|Evet|
+|[Bellek Kullanımı](../profiling/memory-usage.md)|Evet|Evet|Evet| 
 |[GPU Kullanımı](../debugger/gpu-usage.md)|Evet|Evet|Yok| 
 |[Uygulama Zaman Çizelgesi](../profiling/application-timeline.md)|Evet|Evet|Yok|
 |[PerfTips](../profiling/perftips.md)|Evet|XAML, HTML için Hayır için Evet|Evet|

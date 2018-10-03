@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 169d079538852042d6add5df1a1278f90a2f84f4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 900abe516ebd07cf5a8849f269f915623500731e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549868"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859711"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: SuppressUnmanagedCodeSecurityAttribute kullanımını gözden geçir
 
@@ -40,7 +40,7 @@ ms.locfileid: "45549868"
 
  Bu öznitelik, öncelikle performansı artırmak için kullanılır; ancak, gelen performans artışı önemli güvenlik riskleri ile gelir. Öznitelik yerel yöntemlerini çağıran ortak üyelerde yerleştirirseniz, çağıranlar çağrı yığını (şu anki çağırıcı dışında) yönetilmeyen kod yönetilmeyen kod yürütme izni gerekmez. Genel üye Eylemler ve giriş işleme bağlı olarak, normalde güvenilir koda kısıtlı erişim işlevini güvenilmez arayanlara izin verebilir.
 
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Çağıranlar geçerli işlemin adres alanına doğrudan erişim kazanmasını engellemek için güvenlik denetimlerini kullanır. Bu öznitelik normal güvenlik atladığından okumak veya yazmak için işlemin belleğinin için kullanılabiliyorsa kodunuzu önemli bir tehlike doğurur. Risk kasıtlı olarak işlem bellek erişimi sağlayan yöntemler için sınırlı olduğunu unutmayın; Mevcut hiçbir senaryoda burada kötü amaçlı kod erişim herhangi bir yolla, örneğin, şaşırtıcı, hatalı biçimlendirilmiş veya geçersiz bir giriş sağlayarak elde edebilirsiniz.
+ .NET Framework Güvenlik denetimleri çağıranlar geçerli işlemin adres alanına doğrudan erişim kazanmasını engellemek için kullanır. Bu öznitelik normal güvenlik atladığından okumak veya yazmak için işlemin belleğinin için kullanılabiliyorsa kodunuzu önemli bir tehlike doğurur. Risk kasıtlı olarak işlem bellek erişimi sağlayan yöntemler için sınırlı olduğunu unutmayın; Mevcut hiçbir senaryoda burada kötü amaçlı kod erişim herhangi bir yolla, örneğin, şaşırtıcı, hatalı biçimlendirilmiş veya geçersiz bir giriş sağlayarak elde edebilirsiniz.
 
  Yerel bilgisayardan yürütme ya da aşağıdaki gruplardan birinin üyesi olduğu sürece varsayılan güvenlik ilkesini yönetilmeyen kodu bir bütünleştirilmiş kod izni vermez:
 

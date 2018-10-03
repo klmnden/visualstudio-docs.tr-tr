@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80e76fd7677eab8c56827dcdbaeaf42ee72c5c28
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 9b2710b6efcc765f98977c2730c5f729e3a8b260
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081790"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120389"
 ---
 # <a name="msbuild-reference"></a>MSBuild başvurusu
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] için derleme sistemidir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aşağıdaki bağlantılar içeren konuların müşteri adayı [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] başvuru bilgileri.  
@@ -71,25 +71,24 @@ ms.locfileid: "39081790"
  "Doğru yorumlanması için kaçış karakterleri" gerekebilir karakterleri listeler. Bir kaçış dizisi aşağıda alternatif bir yorumu olduğunu belirten bir karakter dizisi ' dir.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [MSBuild'e genel bakış ](../msbuild/msbuild.md) Introduces [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ve nasıl projeleri derlemek için kullanılacağını açıklayan konulara bağlantılar sağlar.  
+ [MSBuild'e genel bakış](../msbuild/msbuild.md)     
+ Tanıtır [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ve nasıl projeleri derlemek için kullanılacağını açıklayan konulara bağlantılar sağlar.  
   
- <xref:Microsoft.Build.Conversion>  
+ [Microsoft.Build.Conversion](https://docs.microsoft.com/dotnet/api/microsoft.build.conversion)  
  Dönüştürme ad alanı başvurusu içeriyor.  
   
- <xref:Microsoft.Build.Evaluation>  
+ [Microsoft.Build.Evaluation](https://docs.microsoft.com/dotnet/api/microsoft.build.evaluation)  
  Değerlendirme ad alanı başvurusu içeriyor.  
   
- <xref:Microsoft.Build.Execution>  
+ [Microsoft.Build.Execution](https://docs.microsoft.com/dotnet/api/microsoft.build.execution)  
  Yürütme ad alanı başvurusu içeriyor.  
   
- <xref:Microsoft.Build.Framework>  
+ [Microsoft.Build.Framework](https://docs.microsoft.com/dotnet/api/microsoft.build.framework)  
  Framework ad alanı başvurusu içeriyor.  
   
- <xref:Microsoft.Build.Logging>  
- Günlüğe kaydetme ad alanı başvurusu içeriyor.  
+ [Microsoft.Build.Logging](https://docs.microsoft.com/dotnet/api/microsoft.build.logging) günlük ad alanı başvurusu içeriyor.  
   
- <xref:Microsoft.Build.Tasks>  
+ [Microsoft.Build.Tasks](https://docs.microsoft.com/dotnet/api/microsoft.build.tasks)  
  Görevleri ad alanı başvurusu içeriyor.  
   
- <xref:Microsoft.Build.Utilities>  
- Yardımcı programları ad alanı başvurusu içeriyor.
+ [Microsoft.Build.Utilities](https://docs.microsoft.com/dotnet/api/microsoft.build.utilities) yardımcı programları ad alanı başvurusu içeriyor.
