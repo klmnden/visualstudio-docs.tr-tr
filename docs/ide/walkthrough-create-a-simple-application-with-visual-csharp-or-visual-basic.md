@@ -13,16 +13,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9757158f6711c33333959fe66ef881c6f69a67b0
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 343d8c35433fe7d6fb454de5183bcc6a914d2a5e
+ms.sourcegitcommit: b2942b8aa93bf73747790a05b67908c0b0108afe
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008453"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788025"
 ---
 # <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>İzlenecek yol: C# veya Visual Basic ile basit uygulama oluşturma
 
-Bu izlenecek yolu tamamlayarak, birçok araçları, iletişim kutuları ve Visual Studio ile uygulamalar geliştirirken kullanabileceğiniz tasarımcıları sahibi olacaksınız. Basit bir "Hello, World" uygulaması oluşturma, kullanıcı arabirimini tasarlayacak, kod ekleyin ve tümleşik geliştirme ortamında (IDE) çalışma hakkında bilgi edinirken, hatalar, hata ayıklama.
+Bu izlenecek yolu tamamlayarak, birçok araçları, iletişim kutuları ve Visual Studio ile uygulamalar geliştirirken kullanabileceğiniz tasarımcıları sahibi olacaksınız. Bir "Hello, World" uygulaması oluşturacak, kullanıcı arabirimini tasarlayacak, kod ekleyin ve tümleşik geliştirme ortamında çalışma hakkında bilgi edinirken, hatalarını ayıklama ([IDE](visual-studio-ide.md)).
 
 ## <a name="configure-the-ide"></a>IDE'yi yapılandırma
 
@@ -48,9 +48,12 @@ Visual Studio'da bir uygulama oluştururken önce bir proje ve bir çözüm olu�
 
 1. Seçin **Tamam**.
 
-HelloWPFApp projesi ve çözüm, Visual Studio oluşturur ve **Çözüm Gezgini** çeşitli dosyaları gösterir. **WPF Tasarımcısı** XAML görünümünü ve Tasarım görünümünü gösterir *MainWindow.xaml* bölünmüş görünümdeki. Daha fazla veya daha az gösterilecek bölme kaydırabilirsiniz ya da görünümün. Yalnızca bir görsel görünümünü veya yalnızca XAML görünümü görmek seçebilirsiniz. Aşağıdaki öğeler görünür **Çözüm Gezgini**:
+   HelloWPFApp projesi ve çözüm, Visual Studio oluşturur ve **Çözüm Gezgini** çeşitli dosyaları gösterir. **WPF Tasarımcısı** XAML görünümünü ve Tasarım görünümünü gösterir *MainWindow.xaml* bölünmüş görünümdeki. Daha fazla veya daha az gösterilecek bölme kaydırabilirsiniz ya da görünümün. Yalnızca bir görsel görünümünü veya yalnızca XAML görünümü görmek seçebilirsiniz. Aşağıdaki öğeler görünür **Çözüm Gezgini**:
 
-![Çözüm Gezgini ile yüklenen HelloWPFApp dosyaları](../ide/media/exploreide-hellowpfappfiles.png)
+   ![Çözüm Gezgini ile yüklenen HelloWPFApp dosyaları](../ide/media/exploreide-hellowpfappfiles.png)
+
+   > [!NOTE]
+   > XAML (Genişletilebilir uygulama biçimlendirme dili) hakkında daha fazla bilgi için bkz: [WPF için XAML genel bakış](/dotnet/framework/wpf/advanced/xaml-overview-wpf) sayfası.
 
 Projeyi oluşturduktan sonra özelleştirebilirsiniz. Kullanarak **özellikleri** penceresi (bulunan **görünümü** menüsü), görüntüleyebilir ve proje öğelerine, denetimleri ve uygulamadaki diğer öğeler için seçeneklerini değiştirin.
 
@@ -84,7 +87,7 @@ Pencereniz aşağıdaki gösterime benzemelidir:
 
 ![Greetings formdaki TextBlock denetimi](../ide/media/exploreide-greetingswithtextblockonly.png)
 
-XAML işaretlemesi aşağıdaki gibi görünmelidir:
+XAML işaretleme aşağıdaki örnekteki gibi görünmelidir:
 
 ```xaml
 <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>
@@ -130,7 +133,7 @@ Artık her bir RadioButton denetimi için görüntü metni ekleyebilirsiniz. Aş
 
 ### <a name="set-a-radio-button-to-be-checked-by-default"></a>Varsayılan olarak denetlenmesi için bir radyo düğmesi ayarlayın
 
-Bu adımda, böylece iki radyo düğmelerinden birini seçili her zaman varsayılan olarak denetlenecek HelloButton biz ayarlarsınız.
+Bu adımda, biz, böylece iki radyo düğmelerinden birini seçili her zaman varsayılan olarak denetlenecek HelloButton ayarlarsınız.
 
 XAML görünümünde HelloButton için işaretleme bulun ve ekleme bir **IsChecked** özniteliği:
 

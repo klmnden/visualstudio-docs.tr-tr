@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad0b8d2de1cad4f4575ca9ee7f35713383149314
-ms.sourcegitcommit: b45daa3c4f0820b69f9e702c8c1f352ef6856b4d
+ms.openlocfilehash: b9785d817024594e974fb6cb7eb890ce86cc7dbe
+ms.sourcegitcommit: b2942b8aa93bf73747790a05b67908c0b0108afe
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43288989"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48787986"
 ---
 # <a name="uninstall-visual-studio"></a>Visual Studio'yu kaldırma
 
@@ -28,7 +28,7 @@ Bu sayfa, Visual Studio'nun tümleşik paketimiz geliştiricileri için üretken
 
 1. Bilgisayarınızda Visual Studio yükleyicisi bulun.
 
-     Örneğin, Windows 10 Yıldönümü Güncelleştirmesi'ni çalıştıran bir bilgisayarda seçin **Başlat** ve kaydırma harfine **V**, olarak listelenen burada **Visual Studio yükleyicisi**.
+     Örneğin, Windows 10 Yıldönümü güncelleştirmesi bir bilgisayarda çalışan veya daha sonra **Başlat** ve kaydırma harfine **V**, olarak listelenen burada **Visual Studio yükleyicisi**.
 
      ![Visual Studio yükleyicisi](media/vs2017-locate-the-visual-studio-installer.PNG "Microsoft Visual Studio yükleyicisi bulunamıyor")
 

@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9167970030919073bf5a58ccf7368cff69dc896
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 1b50bdf48e80e5ed259ba61f0e104e411e76a490
+ms.sourcegitcommit: b2942b8aa93bf73747790a05b67908c0b0108afe
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612746"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788038"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısında simge (.pdb) ve kaynak dosyaları belirtme
 Ayrıca bir sembol dosyası olarak da bilinen program veritabanı (.pdb) dosyası, kaynak kodu sınıfları, yöntemleri ve diğer tanımlayıcıları projenizin derlenen yürütülebilir kullanılan kodu için içinde oluşturduğunuz eşleştirir. .Pdb dosyası, kaynak kodundaki deyimleri yürütülebilir dosyalardaki yürütme yönergeleriyle de eşleştirir. Hata ayıklayıcı iki temel bilgi parçasını belirlemek için bu bilgileri kullanır:
@@ -175,35 +175,35 @@ Bir DLL'nin dışa aktarma tablosunda hangi sembollerin kullanılabilir görmek 
 |**Her zaman otomatik olarak yükle**|Hata ayıklayıcı tarafından otomatik yüklenen dosya listesine sembol dosyası ekler.|  
   
 ###  <a name="BKMK_Set_compiler_options_for_symbol_files"></a> Sembol dosyaları için derleyici seçeneklerini ayarlama  
- VS IDE'den projenizi ne zaman ve standart **hata ayıklama** yapı yapılandırması C++ ve yönetilen derleyiciler kodunuz için uygun semboller dosyalarını oluşturun. Sembol dosyaları oluşturmak için komut satırında derleyici seçeneklerini de ayarlayabilirsiniz.  
+VS IDE'den projenizi ne zaman ve standart **hata ayıklama** yapı yapılandırması C++ ve yönetilen derleyiciler kodunuz için uygun semboller dosyalarını oluşturun. Sembol dosyaları oluşturmak için komut satırında derleyici seçeneklerini de ayarlayabilirsiniz.  
   
- **C++ seçenekleri**  
+**C++ seçenekleri**  
   
- Program veritabanı (.pdb) dosyası, hata ayıklamayı ve programınızın Hata ayıklama yapılandırmasının artımlı bağlamasına olanak tanıyan proje durum bilgilerini tutar. İle oluşturduğunuzda .pdb dosyası oluşur [/zı veya /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) (C/C++ için).  
+Program veritabanı (.pdb) dosyası, hata ayıklamayı ve programınızın Hata ayıklama yapılandırmasının artımlı bağlamasına olanak tanıyan proje durum bilgilerini tutar. İle oluşturduğunuzda .pdb dosyası oluşur [/zı veya /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) (C/C++ için).  
   
- İçinde [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], [/Fd](/cpp/build/reference/fd-program-database-file-name) seçeneği derleyici tarafından oluşturulan .pdb dosyasını adlandırır. Bir proje oluşturduğunuzda, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sihirbazları kullanarak **/Fd** seçeneği adlı bir .pdb dosyası oluşturmak için ayarlanır *proje*.pdb.  
+İçinde [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], [/Fd](/cpp/build/reference/fd-program-database-file-name) seçeneği derleyici tarafından oluşturulan .pdb dosyasını adlandırır. Bir proje oluşturduğunuzda, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sihirbazları kullanarak **/Fd** seçeneği adlı bir .pdb dosyası oluşturmak için ayarlanır *proje*.pdb.  
   
- C/C++ uygulamanızı bir derleme görevleri dosyası derleme ve belirtirseniz **/zi** veya **/zi** olmadan **/Fd**, iki .pdb dosyası ile biter:  
+C/C++ uygulamanızı bir derleme görevleri dosyası derleme ve belirtirseniz **/zi** veya **/zi** olmadan **/Fd**, iki .pdb dosyası ile biter:  
   
--   VC*x*.pdb, burada *x* Visual C++ sürümlerinden birini, örneğin vc11.pdb öğesini temsil eder. Bu dosya, tek tek OBJ dosyaları için hata ayıklama bilgilerini depolar ve proje derleme görevleri dosyası ile aynı dizinde bulunur.  
+* VC*x*.pdb, burada *x* Visual C++ sürümlerinden birini, örneğin vc11.pdb öğesini temsil eder. Bu dosya, tek tek OBJ dosyaları için hata ayıklama bilgilerini depolar ve proje derleme görevleri dosyası ile aynı dizinde bulunur.  
   
--   Project.pdb bu dosya the.exe dosyası için tüm hata ayıklama bilgilerini depolar. C/C++'ta \debug alt dizininde bulunur.  
+* Project.pdb bu dosya the.exe dosyası için tüm hata ayıklama bilgilerini depolar. C/C++'ta \debug alt dizininde bulunur.  
   
- Her OBJ dosyası oluşturduğunda, C/C++ derleyicisi hata ayıklama bilgileri VC birleştirir.*x*.pdb. Eklenen bilgiler türü bilgilerini içerir, ancak işlev tanımları gibi sembol bilgilerini içermez. Her kaynak dosyası gibi ortak başlık dosyaları gibi içerse bile bunu \<windows.h >, bir başlıklardan her OBJ dosyasında olmak yerine yalnızca bir kez saklanır.  
+Her OBJ dosyası oluşturduğunda, C/C++ derleyicisi hata ayıklama bilgileri VC birleştirir.*x*.pdb. Eklenen bilgiler türü bilgilerini içerir, ancak işlev tanımları gibi sembol bilgilerini içermez. Her kaynak dosyası gibi ortak başlık dosyaları gibi içerse bile bunu \<windows.h >, bir başlıklardan her OBJ dosyasında olmak yerine yalnızca bir kez saklanır.  
   
- Bağlayıcı, projenin EXE dosyasına ilişkin hata ayıklama bilgilerini içeren project.pdb'yi oluşturur. Project.pdb dosyası VC bulunan tür bilgilerini değil, işlev prototipleri dahil olmak üzere tam hata ayıklama bilgilerini içeren*x*.pdb. Her iki .pdb dosyası da artımlı güncelleştirmelere izin verir. Bağlayıcı ayrıca .pdb dosyasının yolunu, oluşturduğu .exe veya .dll dosyasına katıştırır.  
+Bağlayıcı, projenin EXE dosyasına ilişkin hata ayıklama bilgilerini içeren project.pdb'yi oluşturur. Project.pdb dosyası VC bulunan tür bilgilerini değil, işlev prototipleri dahil olmak üzere tam hata ayıklama bilgilerini içeren*x*.pdb. Her iki .pdb dosyası da artımlı güncelleştirmelere izin verir. Bağlayıcı ayrıca .pdb dosyasının yolunu, oluşturduğu .exe veya .dll dosyasına katıştırır.  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Hata ayıklayıcısı yolu EXE veya DLL dosyasında .pdb dosyasının project.pdb dosyasını bulmak için kullanır. Hata ayıklayıcısı .pdb dosyasını bu yerde bulunamıyor veya yol geçersizse (örneğin, proje başka bir bilgisayara taşınmışsa) hata ayıklayıcı EXE içeren yolu arar ve sembol yollarını arar **seçenekleri** iletişim kutusu (**hata ayıklama** klasöründe **sembolleri** düğümü). Hata ayıklayıcı, hata ayıklaması yapılan yürütülebilir öğeyle eşleşmeyen bir .pdb dosyası yüklemez. Hata ayıklayıcı bir .pdb dosyası bulamazsa, bir **sembol Bul** iletişim kutusu görüntülenir, burada sembol arayabilir veya arama yoluna ilave konum ekleyebilirsiniz.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Hata ayıklayıcısı yolu EXE veya DLL dosyasında .pdb dosyasının project.pdb dosyasını bulmak için kullanır. Hata ayıklayıcısı .pdb dosyasını bu yerde bulunamıyor veya yol geçersizse (örneğin, proje başka bir bilgisayara taşınmışsa) hata ayıklayıcı EXE içeren yolu arar ve sembol yollarını arar **seçenekleri** iletişim kutusu (**hata ayıklama** klasöründe **sembolleri** düğümü). Hata ayıklayıcı, hata ayıklaması yapılan yürütülebilir öğeyle eşleşmeyen bir .pdb dosyası yüklemez. Hata ayıklayıcı bir .pdb dosyası bulamazsa, bir **sembol Bul** iletişim kutusu görüntülenir, burada sembol arayabilir veya arama yoluna ilave konum ekleyebilirsiniz.  
   
- **.NET framework seçenekleri**  
+**.NET framework seçenekleri**  
   
- Program veritabanı (.pdb) dosyası, hata ayıklamayı ve programınızın hata ayıklama yapılandırmasının artımlı bağlamasına olanak tanıyan proje durum bilgilerini tutar. İle oluşturduğunuzda .pdb dosyası oluşur **/debug**. İle uygulama oluşturabilirsiniz **/Debug: Full** veya **/debug:pdbonly**. İle oluşturma **/Debug: Full** hata ayıklaması yapılabilir kod oluşturur. İle oluşturma **/debug:pdbonly** .pdb dosyaları oluşturur ancak oluşturmaz `DebuggableAttribute` JIT derleyicisine hata ayıklama bilgilerinin kullanılabilir olduğunu bildirir. Kullanım **/debug:pdbonly** hata ayıklanabilir olmasını istemediğiniz yayın yapısı için .pdb dosyaları oluşturmak istiyorsanız. Daha fazla bilgi için [/Debug (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) veya [/Debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
+Program veritabanı (.pdb) dosyası, hata ayıklamayı ve programınızın hata ayıklama yapılandırmasının artımlı bağlamasına olanak tanıyan proje durum bilgilerini tutar. İle oluşturduğunuzda .pdb dosyası oluşur **/debug**. İle uygulama oluşturabilirsiniz **/Debug: Full** veya **/debug:pdbonly**. İle oluşturma **/Debug: Full** hata ayıklaması yapılabilir kod oluşturur. İle oluşturma **/debug:pdbonly** .pdb dosyaları oluşturur ancak oluşturmaz `DebuggableAttribute` JIT derleyicisine hata ayıklama bilgilerinin kullanılabilir olduğunu bildirir. Kullanım **/debug:pdbonly** hata ayıklanabilir olmasını istemediğiniz yayın yapısı için .pdb dosyaları oluşturmak istiyorsanız. Daha fazla bilgi için [/Debug (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) veya [/Debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Hata ayıklayıcısı yolu EXE veya DLL dosyasında .pdb dosyasının project.pdb dosyasını bulmak için kullanır. Hata ayıklayıcısı .pdb dosyasını bu yerde bulunamıyor veya yol geçersizse, hata ayıklayıcı EXE içeren yolu arar ve sembol yollarını sonra belirtilen **seçenekleri** iletişim kutusu. Bu yol genellikle **hata ayıklama** klasöründe **sembolleri** düğümü. Hata ayıklayıcı, hata ayıklaması yapılan yürütülebilir dosyayla eşleşmeyen bir .pdb dosyası yüklemez. Hata ayıklayıcı bir .pdb dosyası bulamazsa, bir **sembol Bul** iletişim kutusu görüntülenir, burada sembol arayabilir veya arama yoluna ilave konum ekleyebilirsiniz.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Hata ayıklayıcısı yolu EXE veya DLL dosyasında .pdb dosyasının project.pdb dosyasını bulmak için kullanır. Hata ayıklayıcısı .pdb dosyasını bu yerde bulunamıyor veya yol geçersizse, hata ayıklayıcı EXE içeren yolu arar ve sembol yollarını sonra belirtilen **seçenekleri** iletişim kutusu. Bu yol genellikle **hata ayıklama** klasöründe **sembolleri** düğümü. Hata ayıklayıcı, hata ayıklaması yapılan yürütülebilir dosyayla eşleşmeyen bir .pdb dosyası yüklemez. Hata ayıklayıcı bir .pdb dosyası bulamazsa, bir **sembol Bul** iletişim kutusu görüntülenir, burada sembol arayabilir veya arama yoluna ilave konum ekleyebilirsiniz.  
   
- **Web uygulamaları**  
+**Web uygulamaları**  
   
- Uygulamanızın yapılandırma dosyası (Web.config) hata ayıklama moduna ayarlanmalıdır. Hata ayıklama modu ASP.NET'in dinamik olarak oluşturulan dosyalar için sembol oluşturmasına neden olur ve hata ayıklayıcının ASP.NET uygulamasına eklemesine olanak tanır. Visual Studio hata ayıklamak başlattığınızda Web proje şablonunu projenizi oluşturduysanız bu otomatik olarak ayarlar.  
+Uygulamanızın yapılandırma dosyası (Web.config) hata ayıklama moduna ayarlanmalıdır. Hata ayıklama modu ASP.NET'in dinamik olarak oluşturulan dosyalar için sembol oluşturmasına neden olur ve hata ayıklayıcının ASP.NET uygulamasına eklemesine olanak tanır. Visual Studio hata ayıklamak başlattığınızda Web proje şablonunu projenizi oluşturduysanız bu otomatik olarak ayarlar.  
   
 ##  <a name="BKMK_Find_source_files"></a> Kaynak dosyaları bulun  
   
