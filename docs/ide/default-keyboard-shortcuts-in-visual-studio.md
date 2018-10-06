@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd9f04b616ee7551f04a8c0b260eb69995943a8b
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: d95f2981d5f003792af5e6ee1fb84971142bb051
+ms.sourcegitcommit: 56f3c31f1a06f6a6d2a8793b1abfa60cdf482497
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371166"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48817366"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio'daki klavye kısayolları
 
@@ -221,7 +221,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |EditorContextMenus.CodeWindow.CodeMap.ShowItem|**CTRL +'**|
 |EditorContextMenus.CodeWindow.Execute|**Ctrl + Alt + F5**|
 |EditorContextMenus.CodeWindow.GoToView|**CTRL + M, Ctrl + G**|
-|EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**CTRL + K, Ctrl + O**|
+|EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**CTRL + K, Ctrl + O** (harf ' O')|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**CTRL + K, Ctrl + T**<br /><br /> veya<br /><br /> **CTRL + K, T**|
 
 ###  <a name="bkmk_file"></a> Dosya
@@ -232,9 +232,9 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |File.NewFile|**CTRL + N**|
 |File.NewProject|**Ctrl + Shift + N**|
 |File.NewWebSite|**Shift + Alt + N**|
-|File.OpenFile|**CTRL + O**|
-|File.OpenProject|**Ctrl + Shift + O**|
-|File.OpenWebSite|**Shift + Alt + O**|
+|File.OpenFile|**CTRL + O** (harf ' O')|
+|File.OpenProject|**Ctrl + Shift + O** (harf ' O')|
+|File.OpenWebSite|**Shift + Alt + O** (harf ' O')|
 |File.Print|**CTRL + P**|
 |File.SaveAll|**Ctrl + Shift + S**|
 |File.SaveSelectedItems|**CTRL + S**|
@@ -269,9 +269,9 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Project.AddNewItem|**Ctrl + Shift + A**|
 |Project.ClassWizard|**CTRL + SHIFT + X**|
 |Project.Override|**Ctrl + Alt + Bileşenleri**|
-|Project.Previewchanges|**Alt +; Alt + C**|
-|Project.Publishselectedfiles|**Alt +; Alt + P**|
-|Project.Replaceselectedfilesfromserver|**Alt +; Alt + R**|
+|Project.Previewchanges|**Alt +;**  ardından **Alt + C**|
+|Project.Publishselectedfiles|**Alt +;**  ardından **Alt + P**|
+|Project.Replaceselectedfilesfromserver|**Alt +;**  ardından **Alt + R**|
 
 ###  <a name="bkmk_projectContext"></a> Proje ve çözüm bağlam menüleri
 
@@ -289,39 +289,39 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Refactor.ExtractMethod|**CTRL + R, Ctrl + M**|
 |Refactor.RemoveParameters|**CTRL + R, Ctrl + V**|
 |Refactor.Rename|**CTRL + R, Ctrl + R**|
-|Refactor.ReorderParameters|**CTRL + R, Ctrl + O**|
+|Refactor.ReorderParameters|**CTRL + R, Ctrl + O** (harf ' O')|
 
 ###  <a name="bkmk_solutionexplorerGLOBAL"></a> Çözüm Gezgini
 
 |Komutlar|Klavye kısayolları|
 |--------------|------------------------|
-|SolutionExplorer.OpenFilesFilter|**CTRL + [, O**<br /><br /> veya<br /><br /> **CTRL + [, Ctrl + O**|
-|SolutionExplorer.PendingChangesFilter|**CTRL + [, P**<br /><br /> veya<br /><br /> **CTRL + [, Ctrl + P**|
-|SolutionExplorer.SyncWithActiveDocument|**CTRL + [, S**<br /><br /> veya<br /><br /> **CTRL + [, Ctrl + S**|
+|SolutionExplorer.OpenFilesFilter|**CTRL + [**, **O** (harf ' O')<br /><br /> veya<br /><br /> **CTRL + [**, **Ctrl + O** (harf ' O')|
+|SolutionExplorer.PendingChangesFilter|**CTRL + [**, **P**<br /><br /> veya<br /><br /> **CTRL + [**, **Ctrl + P**|
+|SolutionExplorer.SyncWithActiveDocument|**CTRL + [**, **S**<br /><br /> veya<br /><br /> **CTRL + [**, **Ctrl + S**|
 
 ###  <a name="bkmk_team"></a> Takım
 
 |Komutlar|Klavye kısayolları|
 |--------------|------------------------|
-|Team.Git.GoToGitBranches|**CTRL + 0, Ctrl + N**<br /><br /> veya<br /><br /> **CTRL + 0, N**|
-|Team.Git.GoToGitChanges|**CTRL + 0, Ctrl + G**<br /><br /> veya<br /><br /> **CTRL + 0, G**|
-|Team.Git.GoToGitCommits|**CTRL + 0, Ctrl + O**<br /><br /> veya<br /><br /> **CTRL + 0, O**|
+|Team.Git.GoToGitBranches|**CTRL + 0** (sıfır) **Ctrl + N**<br /><br /> veya<br /><br /> **CTRL + 0, N**|
+|Team.Git.GoToGitChanges|**CTRL + 0** (sıfır) **Ctrl + G**<br /><br /> veya<br /><br /> **CTRL + 0, G**|
+|Team.Git.GoToGitCommits|**CTRL + 0** (sıfır) **Ctrl + O** (harf ' O')<br /><br /> veya<br /><br /> **CTRL + 0, O**|
 |Team.TeamExplorerSearch|**CTRL +'**|
 
 ###  <a name="bkmk_TFcontext"></a> Team Foundation bağlam menüleri
 
 |Komutlar|Klavye kısayolları|
 |--------------|------------------------|
-|TeamFoundationContextMenus.Commands.GoToBuilds|**CTRL + 0, Ctrl + B**<br /><br /> veya<br /><br /> **CTRL + 0, B**|
-|TeamFoundationContextMenus.Commands.GoToConnect|**CTRL + 0, Ctrl + C**<br /><br /> veya<br /><br /> **CTRL + 0, C**|
-|TeamFoundationContextMenus.Commands.GoToDocuments|**CTRL + 0, Ctrl + D**<br /><br /> veya<br /><br /> **CTRL + 0, D**|
-|TeamFoundationContextMenus.Commands.GoToHome|**CTRL + 0, Ctrl + H**<br /><br /> veya<br /><br /> **CTRL + 0, H**|
-|TeamFoundationContextMenus.Commands.GoToMyWork|**CTRL + 0, Ctrl + M**<br /><br /> veya<br /><br /> **CTRL + 0, M**|
-|TeamFoundationContextMenus.Commands.GoToPendingChanges|**CTRL + 0, Ctrl + P**<br /><br /> veya<br /><br /> **CTRL + 0, P**|
-|TeamFoundationContextMenus.Commands.GoToReports|**CTRL + 0, Ctrl + R**<br /><br /> veya<br /><br /> **CTRL + 0, R**|
-|TeamFoundationContextMenus.Commands.GoToSettings|**CTRL + 0, Ctrl + S**<br /><br /> veya<br /><br /> **CTRL + 0, S**|
-|TeamFoundationContextMenus.Commands.GoToWebAccess|**CTRL + 0, Ctrl + A**<br /><br /> veya<br /><br /> **CTRL + 0, A**|
-|TeamFoundationContextMenus.Commands.GoToWorkItems|**CTRL + 0, Ctrl + W**<br /><br /> veya<br /><br /> **CTRL + 0, W**|
+|TeamFoundationContextMenus.Commands.GoToBuilds|**CTRL + 0** (sıfır) **Ctrl + B**<br /><br /> veya<br /><br /> **CTRL + 0, B**|
+|TeamFoundationContextMenus.Commands.GoToConnect|**CTRL + 0** (sıfır) **Ctrl + C**<br /><br /> veya<br /><br /> **CTRL + 0, C**|
+|TeamFoundationContextMenus.Commands.GoToDocuments|**CTRL + 0** (sıfır) **Ctrl + D**<br /><br /> veya<br /><br /> **CTRL + 0, D**|
+|TeamFoundationContextMenus.Commands.GoToHome|**CTRL + 0** (sıfır) **Ctrl + H**<br /><br /> veya<br /><br /> **CTRL + 0, H**|
+|TeamFoundationContextMenus.Commands.GoToMyWork|**CTRL + 0** (sıfır) **Ctrl + M**<br /><br /> veya<br /><br /> **CTRL + 0, M**|
+|TeamFoundationContextMenus.Commands.GoToPendingChanges|**CTRL + 0** (sıfır) **Ctrl + P**<br /><br /> veya<br /><br /> **CTRL + 0, P**|
+|TeamFoundationContextMenus.Commands.GoToReports|**CTRL + 0** (sıfır) **Ctrl + R**<br /><br /> veya<br /><br /> **CTRL + 0, R**|
+|TeamFoundationContextMenus.Commands.GoToSettings|**CTRL + 0** (sıfır) **Ctrl + S**<br /><br /> veya<br /><br /> **CTRL + 0, S**|
+|TeamFoundationContextMenus.Commands.GoToWebAccess|**CTRL + 0** (sıfır) **Ctrl + A**<br /><br /> veya<br /><br /> **CTRL + 0, A**|
+|TeamFoundationContextMenus.Commands.GoToWorkItems|**CTRL + 0** (sıfır) **Ctrl + W**<br /><br /> veya<br /><br /> **CTRL + 0, W**|
 
 ###  <a name="bkmk_test"></a> Test
 
@@ -379,7 +379,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |View.Notifications|**CTRL + W, N**<br /><br /> veya<br /><br /> **CTRL + W, Ctrl + N**|
 |View.ObjectBrowser|**Ctrl + Alt + J**|
 |View.ObjectBrowserGoToSearchCombo|**CTRL + K, Ctrl + R**|
-|View.Output|**Ctrl + Alt + O**|
+|View.Output|**Ctrl + Alt + O** (harf ' O')|
 |View.PopBrowseContex|**CTRL + SHIFT + 8**|
 |View.PropertiesWindow|**F4**|
 |View.PropertyPages|**Shift + F4**|
@@ -532,7 +532,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Graphics.MovePixelSelectionLeft|**Shift + Alt + Sol Ok**|
 |Graphics.MovePixelSelectionRight|**Shift + Alt + sağ ok**|
 |Graphics.MovePixelSelectionUp|**Shift + Alt + Yukarı Ok**|
-|Graphics.ZoomToActualSize|**Shift + Alt + 0**|
+|Graphics.ZoomToActualSize|**Shift + Alt + 0** (sıfır)|
 |Graphics.ZoomToFitInWindow|**Shift + Alt + 9**|
 |Graphics.ZoomIn|**Shift + Alt +=**|
 |Graphics.ZoomOut|**Shift + Alt +-**|
@@ -746,7 +746,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |File.Rename|**F2**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation|**Alt + Home**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent|**Alt + Aşağı Ok**|
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerPageContent|**Alt + 0**|
+|TeamFoundationContextMenus.Commands.GoToTeamExplorerPageContent|**Alt + 0** (sıfır)|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerPreviousSectionContent|**Alt + Yukarı Ok**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection1Content|**Alt + 1**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection2Content|**Alt + 2**|
@@ -785,7 +785,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Edit.CollapseAllOutlining|**CTRL + M, Ctrl + A**|
 |Edit.CollapseCurrentRegion|**CTRL + M, Ctrl + S**|
 |Edit.CollapseTag|**CTRL + M, Ctrl + T**|
-|Edit.CollapseToDefinitions|**CTRL + M, Ctrl + O**|
+|Edit.CollapseToDefinitions|**CTRL + M, Ctrl + O** (harf ' O')|
 |Edit.CommentSelection|**CTRL + K, Ctrl + C**|
 |Edit.CompleteWord|**Ctrl + Ara çubuğu**<br /><br /> veya<br /><br /> **Alt + sağ ok**|
 |Edit.CopyParameterTip|**Ctrl + Shift + Alt + C**|
@@ -1094,7 +1094,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |WorkflowDesigner.Restore|**Ctrl + E, Ctrl + R**<br /><br /> veya<br /><br /> **Ctrl + E, R**|
 |WorkflowDesigner.ShowHideArgumentDesigner|**Ctrl + E, Ctrl + A**<br /><br /> veya<br /><br /> **Ctrl + E, A**|
 |WorkflowDesigner.ShowHideImportsDesigner|**Ctrl + E, Ctrl + ı**<br /><br /> veya<br /><br /> **Ctrl + E, ı**|
-|WorkflowDesigner.ShowHideOverviewMap|**Ctrl + E, Ctrl + O**<br /><br /> veya<br /><br /> **Ctrl + E, O**|
+|WorkflowDesigner.ShowHideOverviewMap|**Ctrl + E, Ctrl + O** (harf ' O')<br /><br /> veya<br /><br /> **Ctrl + E, O**|
 |WorkflowDesigner.ShowHideVariableDesigner|**Ctrl + E, Ctrl + V**<br /><br /> veya<br /><br /> **Ctrl + E, V**|
 |WorkflowDesigner.ToggleSelection|**Ctrl + E, Ctrl + S**<br /><br /> veya<br /><br /> **Ctrl + E, S**|
 |WorkflowDesigner.ZoomIn|**CTRL + Num +**|
@@ -1104,7 +1104,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 
 |Komutlar|Klavye kısayolları|
 |--------------|------------------------|
-|Design.FitAll|**CTRL + 0**|
+|Design.FitAll|**CTRL + 0** (sıfır)|
 |Design.ShowHandles|**F9**|
 |Design.ZoomIn|**Ctrl + Alt +=**|
 |Design.ZoomOut|**Ctrl + Alt +-**|
