@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cc30f572f48622776bb1014c2a5e3c17bf8f27b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 05faacee77496f8d25ca926e4a1d441819cd9d9d
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512382"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863939"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio düzeni
 Visual Studio iletişim kutularını etkinleştirildiklerinde [yardımcı iletişim düzeni](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), bu izleme standart iletişim kutuları unthemed olduğu [Windows Masaüstü iletişim düzeni ilkeleri](/windows/desktop/uxguide/win-dialog-box). Visual Studio kullanıcı arabirimini yenilemek hareket ettikçe daha belirgin iletişim kutularının bunları olarak ürün tanımlama deneyimler oluşturur, yeni bir tasarım vardır. Bunlar [temalı iletişim düzeni](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) konulu bir görünüme sahip.  
@@ -159,5 +159,5 @@ Visual Studio iletişim kutularını etkinleştirildiklerinde [yardımcı ileti�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio için uygulama desenleri](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)   
- [Denetimler (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx)   
- [İletişim kutuları (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx)
+ [Denetimler (Windows)](/windows/desktop/uxguide/controls)   
+ [İletişim kutuları (Windows)](/windows/desktop/uxguide/win-dialog-box)

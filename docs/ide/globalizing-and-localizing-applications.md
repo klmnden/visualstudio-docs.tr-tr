@@ -17,30 +17,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9abcb55d49b84a97ad7eae241547317d74cc6f71
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 73e638b2474342987963c02f442f5d7a98a6e44e
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942474"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863602"
 ---
 # <a name="globalizing-and-localizing-applications"></a>Uygulamaları Genelleştirme ve yerelleştirme
 
-Uluslararası bir hedef kitle uygulamanıza dağıtmayı planlıyorsanız, tasarım ve geliştirme aşamaları sırasında birkaç şey aklınızda tutmanız gerekir. Bu tür planlarınız olmasa dahi çaba Önden şeyler önemli ölçüde planlarınızı gelecekte uygulamanızın sürümünü değiştirmelisiniz kolaylaştırabilir. Yerleşik Hizmetleri [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] yönetilen geliştirme ile Visual Studio kullanarak farklı yerel ayarlara uyarlayabilirsiniz tek bir uygulama geliştirmek kolaylaştırır.
+Uluslararası bir hedef kitle için uygulamanızı dağıtmayı planlıyorsanız, tasarım ve geliştirme aşamalarında birkaç şey aklınızda tutmanız gerekir. Tür planlara yoksa bile küçük bir çaba Önden şeyler önemli ölçüde planlarınızı gelecekte uygulamanızın sürümünü değiştirmelisiniz kolaylaştırabilir. Yerleşik hizmetler [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] yönetilen geliştirme ile Visual Studio kullanarak, farklı yerel ayarlara uyarlayabilirsiniz tek bir uygulama geliştirmeyi kolaylaştırır.
 
 ## <a name="resources"></a>Kaynaklar
 
- Visual Studio başından yerleşik Hizmetleri yararlanarak bir Uluslararası kitlesi kolay geliştirmeyi kolaylaştırmak için tasarlanmış [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Aşağıdaki makaleler, Visual Studio'ya yerleşik uluslararası duruma getirme özellikleri dağıtır yardımcı olur.
+ Visual Studio, yerleşik hizmetlerinin avantajlarından yararlanarak uluslararası bir hedef kitle için kolay geliştirme yapmak için baştan tasarlanmış [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Aşağıdaki makaleler, Visual Studio'da yerleşik olarak bulunan uluslararası duruma getirme özellikleri tanıtan yardımcı olur.
 
- [Uluslararası uygulamalara giriş .NET Framework'e dayalı](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Visual Studio kullanarak bir Uluslararası pazar için yazılım geliştirme ile ilgili kavramları tanıtır ve [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ [.NET Framework tabanlı Uluslararası uygulamalara giriş](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Visual Studio kullanarak bir Uluslararası pazar için yazılım geliştirme ile ilgili kavramları tanıtır ve [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
 
- [Uygulamaları yerelleştirme](../ide/localizing-applications.md) uygulamalar belirli bir kültür için özelleştirme hakkında sayfalar için bağlantılar sağlar.
+ [Uygulamaları yerelleştirme](../ide/localizing-applications.md) belirli bir kültür için uygulamaları özelleştirme hakkında sayfalara bağlantılar sağlar.
 
- [Uygulamaları Genelleştirme](../ide/globalizing-applications.md) birden çok kültürü destekleyen uygulamalar oluşturma hakkında daha fazla sayfalar için bağlantılar sağlar.
+ [Uygulamaları Genelleştirme](../ide/globalizing-applications.md) birden çok kültürde destekleyen uygulamalar oluşturma hakkındaki sayfalara bağlantılar sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [En iyi uygulamalar dünya çapında kullanılmaya hazır uygulamalar geliştirmek için](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) uluslararası bir izleyici için programlama hakkında arka plan bilgileri sağlar.
-- [Sınıf kitaplığına genel bakış](/dotnet/standard/class-library-overview) sınıflar, arabirimler ve hızlandırmak ve geliştirme sürecinin en iyi duruma getirme ve sistem işlevlere erişim sağlayan değer türleri sunar.
-- <xref:System.Globalization> Dil, ülke/bölge, takvimler kullanımda, tarihler, para birimi ve numaraları ve sıralama için biçim desenleri dizeleri için sipariş gibi kültürle ilgili bilgileri tanımlayan ve bu ad alanındaki sınıflar işaret eder.
-- <xref:System.Resources> Sınıflar ve arabirimler geliştiricilerin oluşturmasını sağlar, bu ad alanındaki çıkış noktaları depolar ve bir uygulamada kullanılan çeşitli kültüre özgü kaynakları yönetir.
+- [Dünya çapında kullanılmaya hazır uygulamalar geliştirmek için en iyi yöntemler](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps) programlama uluslararası bir hedef kitle için arka plan bilgileri sağlar.
+- [Sınıf kitaplığına genel bakış](/dotnet/standard/class-library-overview) sınıfları, arabirimleri ve geliştirme işlemini hızlandırmak ve sistem işlevlerine erişmek için bir değer türlerini tanıtır.
+- <xref:System.Globalization> Bu ad alanındaki, dil, ülke/bölge, takvimler kullanımda, tarihler, para birimi ve sayıları ve sıralama için biçim desenleri için dizeleri sıralamak gibi kültürle ilişkili bilgileri tanımlayan sınıflar işaret eder.
+- <xref:System.Resources> Sınıflar ve arabirimler geliştiricilerin oluşturmasını sağlar, bu ad alanındaki noktaları depolayın ve bir uygulamada kullanılan çeşitli kültüre özgü kaynakları yönetin.

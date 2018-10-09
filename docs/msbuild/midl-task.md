@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a60b76efc5c1c476f69a11804c74cd3341139c9c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d5c10cdf2221f329e8e0ff748c2b4fe77479b205
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080320"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863861"
 ---
 # <a name="midl-task"></a>MIDL görevi
 Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*. Daha fazla bilgi için [MIDL komut satırı başvurusu](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
@@ -245,7 +245,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
   
      Varsa `true`, uyumlu olması için giriş dosyasının biçimi gerektirir *mktyplib.exe* 2.03 sürümü.  
   
-     Daha fazla bilgi için **/mktyplib203** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference). Ayrıca bkz [ODL FILE söz dizimiyle](https://msdn.microsoft.com/library/windows/desktop/ms221683(v=vs.85).aspx) MSDN Web sitesinde.  
+     Daha fazla bilgi için **/mktyplib203** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference). Ayrıca bkz [ODL FILE söz dizimiyle](/previous-versions/windows/desktop/automat/odl-file-syntax) MSDN Web sitesinde.  
   
 -   **OutputDirectory**  
   

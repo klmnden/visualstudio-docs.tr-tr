@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8018f3f72fd774a1ac64cd1d6d968ad8be65b453
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: aee6e5656142d0597ff6101da5e2e5f690f8fcc5
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512245"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863962"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Bildirimler ve Visual Studio için ilerleme durumu
 ##  <a name="BKMK_NotificationSystems"></a> Bildirim sistemleri  
@@ -213,7 +213,7 @@ ms.locfileid: "39512245"
  Değer değiştirici (olarak da bilinen bir "ilerleme halkası") ile ilgili bağlamsal UI öncelikli olarak kullanılan bir belirsiz ilerleme göstergesidir. Bir değer değiştirici yakın bir metinsel kategorisi üst bilgisi, ileti veya denetim gibi ilgili içeriğini görüntüler.  
   
 ##### <a name="cursor-feedback"></a>İmleç geri bildirim  
- 2-7 dakika arasında sürer işlemlerinde, imleç geri bildirim sağlayın. Genellikle, bu işletim sistemi tarafından sağlanan bekleme imlecini kullanarak anlamına gelir. Yönergeler için bkz MSDN makalesi [Cursors.Wait özelliği](https://msdn.microsoft.com/en-us/library/system.windows.input.cursors.wait\(v=vs.110\).aspx).  
+ 2-7 dakika arasında sürer işlemlerinde, imleç geri bildirim sağlayın. Genellikle, bu işletim sistemi tarafından sağlanan bekleme imlecini kullanarak anlamına gelir. Yönergeler için bkz MSDN makalesi [Cursors.Wait özelliği](/dotnet/api/system.windows.input.cursors.wait).  
   
 #### <a name="progress-indicator-locations"></a>İlerleme göstergesi konumları  
   

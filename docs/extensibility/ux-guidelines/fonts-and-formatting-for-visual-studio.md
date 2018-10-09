@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bed49c87828463c16912da4d31073ba2ac32fdc
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 4b68e103edcd3162b72bc5fddd4d1401b2430df3
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511998"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48864004"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Yazı tipleri ve Visual Studio için biçimlendirme
 ##  <a name="BKMK_TheEnvironmentFont"></a> Ortam yazı tipi
@@ -466,5 +466,5 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 -   Kalın ortam yazı tipi, metin, varsayılan satır yüksekliği boşlukları ve doldurma izlemelidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MSDN: Yazı tiplerini (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742483\(v=vs.85\).aspx)   
- [MSDN: Kullanıcı arabirimi metinlerini (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742478\(v=vs.85\).aspx)
+ [MSDN: Yazı tiplerini (Windows)](/windows/desktop/uxguide/vis-fonts)   
+ [MSDN: Kullanıcı arabirimi metinlerini (Windows)](/windows/desktop/uxguide/text-ui)

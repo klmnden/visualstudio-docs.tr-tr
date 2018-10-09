@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 022eef30e7e067ca622650a2f5e702cd9a8168b9
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 92ac0daf0f1326676e37dcddd0a493c06a19df96
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443499"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863679"
 ---
 # <a name="common-quick-actions"></a>Yaygın Hızlı Eylemler
 
@@ -71,17 +71,10 @@ Bu hızlı Eylemler git birleştirme çakışması çözümlemek etkinleştirdi�
 // Before
 private void MyMethod()
 {
-<<<<<<< HEAD
-    if (true)
-    {
-
-    }
-=======
     if (false)
     {
 
     }
->>>>>>> upstream
 }
 
 // Take changes from 'HEAD'
@@ -458,7 +451,7 @@ End Select
 
 ### <a name="convert-to-interpolated-string"></a>Enterpolasyonlu dizeye Dönüştür
 
-[İlişkilendirilmiş dizeler](/dotnet/csharp/language-reference/keywords/interpolated-strings) dizeleri gömülü değişkenleri, benzer şekilde ifade etmek için kolay bir yoludur **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)** yöntemi. Bu hızlı eylem birleştirilmiş ya da kullanarak dizeleri olduğu durumları algılar **String.Format**, kullanım için bir aradeğerlendirme dizesinde değiştirir.
+[İlişkilendirilmiş dizeler](/dotnet/csharp/language-reference/keywords/interpolated-strings) dizeleri gömülü değişkenleri, benzer şekilde ifade etmek için kolay bir yoludur **[String.Format](/dotnet/api/system.string.format#overloads)** yöntemi.  Bu hızlı eylem birleştirilmiş ya da kullanarak dizeleri olduğu durumları algılar **String.Format**, kullanım için bir aradeğerlendirme dizesinde değiştirir.
 
 ```csharp
 // Before

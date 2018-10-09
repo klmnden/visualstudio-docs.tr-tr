@@ -14,16 +14,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 497aa6a85bd47813aa20bd5c2e89ca26ddffbe5a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 8a915a8acdd9918f27a8909cdff2a790e6488566
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39082162"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863913"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>İzlenecek yol: komut satırı aracılığıyla bir Visual Studio uzantısı yayımlama
 
-Bu kılavuzda komut satırını kullanarak Visual Studio Market'te Visual Studio uzantısı yayımlama gösterir. Market'te uzantınızı eklediğinizde, geliştiriciler kullanabilir **Uzantılar ve güncelleştirmeler** iletişim için yeni ve güncelleştirilmiş uzantıları var gidin.
+Bu kılavuzda komut satırını kullanarak Visual Studio Market'te Visual Studio uzantısı yayımlama gösterir. Market'te uzantınızı eklediğinizde, geliştiriciler kullanabilir [ **Uzantılar ve güncelleştirmeler** ](../ide/finding-and-using-visual-studio-extensions.md) iletişim için yeni ve güncelleştirilmiş uzantıları var gidin.
 
 VsixPublisher.exe Market'te yayımlama Visual Studio uzantıları için komut satırı aracıdır. Erişilebileceğini ${VSInstallDir}\VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe. Bu araç kullanılabilir komutlar: **yayımlama**, **createPublisher**, **deletePublisher**, **deleteExtension**,  **oturum açma**, **oturum kapatma**.
 

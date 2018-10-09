@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb2173395e3d1fd2cb825260e1895ee1fb194140
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9f93dea099d9223347c727f3e7a838fcb78d3742
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176716"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863640"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Çift yönlü dillerde uygulamalar oluşturma
 
@@ -30,9 +30,9 @@ Sağ-Arapça ve İbranice gibi sola doğru dillerde yazılan metin görüntüley
 
 ## <a name="types-of-application-that-support-bi-directional-languages"></a>Çift yönlü dil desteği uygulama türleri
 
--  Windows uygulamaları. İki yönlü metin, sağdan sola okuma düzeni ve yansıtma (windows, menüler, iletişim kutuları ve benzeri düzenini ters) için destek içeren tam çift yönlü uygulamalar oluşturabilirsiniz. Yansıtma dışında bu özellikler varsayılan olarak veya özellik ayarları olarak kullanılabilir. Yansıtma ileti kutuları gibi bazı özellikler için doğal olarak desteklenir. Ancak, diğer durumlarda kod yansıtma uygulamalıdır. Daha fazla bilgi için [Windows Forms uygulamaları için iki yönlü destek](http://msdn.microsoft.com/Library/7b622fa4-f390-4e4d-b624-83a1917cccf2).
+-  Windows uygulamaları. İki yönlü metin, sağdan sola okuma düzeni ve yansıtma (windows, menüler, iletişim kutuları ve benzeri düzenini ters) için destek içeren tam çift yönlü uygulamalar oluşturabilirsiniz. Yansıtma dışında bu özellikler varsayılan olarak veya özellik ayarları olarak kullanılabilir. Yansıtma ileti kutuları gibi bazı özellikler için doğal olarak desteklenir. Ancak, diğer durumlarda kod yansıtma uygulamalıdır. Daha fazla bilgi için [Windows Forms uygulamaları için iki yönlü destek](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
 
--  Web uygulamaları. Web Hizmetleri için destek ve alma UTF-8 ve Unicode metin gönderme, çift yönlü diller içeren uygulamalar için uygun hale getirir. Bir web uygulaması yönlü destek derecesini bağımlı kullanıcının tarayıcı yönlü özelliklere ne kadar iyi destekler, bu nedenle web istemcisi uygulamalarını tarayıcılar için kendi kullanıcı arabirimini kullanır. Visual Studio'da, Arapça veya İbranice metin, sağdan sola okuma düzeni, dosya kodlamasını ve yerel kültür ayarları için desteğe sahip uygulamalar oluşturabilirsiniz. Daha fazla bilgi için [ASP.NET web uygulamaları için çift yönlü destek](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
+-  Web uygulamaları. Web Hizmetleri için destek ve alma UTF-8 ve Unicode metin gönderme, çift yönlü diller içeren uygulamalar için uygun hale getirir. Bir web uygulaması yönlü destek derecesini bağımlı kullanıcının tarayıcı yönlü özelliklere ne kadar iyi destekler, bu nedenle web istemcisi uygulamalarını tarayıcılar için kendi kullanıcı arabirimini kullanır. Visual Studio'da, Arapça veya İbranice metin, sağdan sola okuma düzeni, dosya kodlamasını ve yerel kültür ayarları için desteğe sahip uygulamalar oluşturabilirsiniz. Daha fazla bilgi için [ASP.NET web uygulamaları için çift yönlü destek](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
 
 -  Konsol uygulamaları. Konsol uygulamaları, metin çift yönlü dil desteği içermez. Windows konsol uygulamaları ile nasıl çalıştığına ilişkin bir sonucu budur.
 
@@ -89,6 +89,6 @@ Ancak, sağdan sola okuma düzeni, Visual Studio'da her yerde desteklenmiyor. Ö
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Windows Forms uygulamaları için iki yönlü destek](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)
-- [ASP.NET web uygulamaları için çift yönlü destek](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)
+- [ASP.NET web uygulamaları için çift yönlü destek](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)
 - [Uygulamaları Genelleştirme](../ide/globalizing-applications.md)
 - [Uygulamaları yerelleştirme](../ide/localizing-applications.md)
