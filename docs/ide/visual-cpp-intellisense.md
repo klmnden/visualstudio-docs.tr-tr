@@ -1,26 +1,34 @@
 ---
 title: C++ IntelliSense
-ms.date: 09/06/2018
+ms.date: 10/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikeblome
+ms.author: mblome
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27b7912e624881e7dcd40ff2fdb9476d61d29e1c
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: ab520f7cdf512ebbfd07770d63d2ed50caee7a55
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124911"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879856"
 ---
 # <a name="visual-c-intellisense-features"></a>Visual C++ IntelliSense özellikleri
 
 IntelliSense, bir dizi özellikler, kodlamayı daha kullanışlı hale getirmek için verilen bir addır. C++ IntelliSense de tek başına dosyalar için C++ projesinin bir parçası olan dosyalar için kullanılabilir. Platformlar arası projelerinde bazı IntelliSense özellikleri kullanılabilir *.cpp* ve *.c* bir Android veya iOS bağlamında olsa bile paylaşılan kod projesinde dosyaları.
 
-IntelliSense erişmek için menü öğeleri ve aşağıdaki görüntüde gösterilen klavye kısayollarını kullanabilirsiniz:
+Bu makalede, Özellikler C++ IntelliSense genel bir bakış sağlar. Projeniz için IntelliSense ve sorunlarını gidermek nasıl nasıl yapılandırılacağı hakkında daha fazla bilgi için bkz: [bir C++ projesini yapılandırmak için IntelliSense](visual-cpp-intellisense-configuration.md).
+
+## <a name="intellisense-features-in-c"></a>C++ IntelliSense özellikleri
+
+IntelliSense, bir dizi özellikler, kodlamayı daha kullanışlı hale getirmek için verilen bir addır. Farklı kişilerin ne kullanışlı olduğu hakkında farklı fikirlerinizi görünmesi, neredeyse tüm IntelliSense özelliklerini etkinleştirilebilir veya devre dışı bırakılmış **seçenekleri** iletişim kutusunun **metin düzenleyici**  >  **C/C++** > **Gelişmiş**. **Seçenekleri** iletişim kutusu kullanılabilir **Araçları** menü çubuğundaki menü.
+
+![Araç Seçenekleri iletişim kutusu](../ide/media/sintellisensecpptoolsoptions.PNG)
+
+IntelliSense erişmek için menü öğeleri ve aşağıdaki görüntüde gösterilen klavye kısayollarını kullanabilirsiniz.
 
 ![IntelliSense menüsü](../ide/media/vs2015_cpp_intellisense_menu.png)
 
@@ -32,7 +40,7 @@ Simgelerini ve anlamlarını listesi için bkz. [sınıf görünümü ve Nesne T
 
 ![Visual C&#43; &#43; tam sözcük penceresi](../ide/media/vs2015_cpp_complete_word.png)
 
-Üye listesi çağrılır, ilk kez, yalnızca geçerli bağlam için erişilebilir olan üyeleri gösterir. Basarsanız **Ctrl**+**J** bundan sonra erişilebilirlik bağımsız olarak tüm üyeleri gösterir. Üçüncü kez çağırmak, program öğelerini çok daha geniş bir listesi gösterilir. Üye listesinde kapatabilirsiniz **seçenekleri** iletişim kutusunun **metin düzenleyici** > **C/C++** > **genel**  >  **Otomatik üyeleri Listele**.
+Üye listesi, çağırma ilk kez, yalnızca geçerli bağlam için erişilebilir olan üyeleri gösterir. Basarsanız **Ctrl**+**J** bundan sonra erişilebilirlik bağımsız olarak tüm üyeleri gösterir. Üçüncü kez çağırmak, program öğelerini çok daha geniş bir listesi gösterilir. Üye listesinde kapatabilirsiniz **seçenekleri** iletişim kutusunun **metin düzenleyici** > **C/C++** > **genel**  >  **Otomatik üyeleri Listele**.
 
 ![Visual C&#43; &#43; üye listesi](../ide/media/vs2015_cpp_list_members.png)
 
@@ -100,4 +108,5 @@ Farklı kişilerin ne kullanışlı olduğu hakkında farklı fikirlerinizi gör
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [IntelliSense kullanma](../ide/using-intellisense.md)
+- [IntelliSense Kullanma](../ide/using-intellisense.md)
+- [IntelliSense için bir C++ projesi yapılandırma](visual-cpp-intellisense-configuration.md)

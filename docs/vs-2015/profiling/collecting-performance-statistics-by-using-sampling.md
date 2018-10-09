@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a6ed7ba926869359db9c9602f316cb0fc3934d7
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ce6a9fed51e4c5dc93fca406dbb43787700d83d2
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775199"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880415"
 ---
 # <a name="collecting-performance-statistics-by-using-sampling"></a>Örnekleme Kullanarak Performans İstatistikleri Toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Varsayılan olarak, [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] profil 
 |Üzerinde **genel** sayfasında .NET bellek ayırma ve yaşam süresi verilerini toplama ekleyin ve oluşturulan profil oluşturma veri (.vsp) dosyasının adlandırma ayrıntılarını belirtin.|-   [.NET bellek ayırma ve yaşam süresi verilerini toplama](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [Nasıl yapılır: performans veri dosyası adlandırma seçeneklerini ayarlama](../profiling/how-to-set-performance-data-file-name-options.md)|  
 |Üzerinde **örnekleme** sayfasında, örnekleme hızını değiştirmek, örnekleme olay işlemci saat döngülerini başka bir işlemci performans sayacı değiştirme veya her ikisini de değiştirin...|-   [Nasıl yapılır: örnekleme olayları seçme](../profiling/how-to-choose-sampling-events.md)|  
 |Üzerinde **başlatma** sayfasında, uygulamayı başlatmak için başlangıç sipariş kod çözümünüzde birden fazla .exe projeler varsa belirtin.|-   [Katman etkileşim verileri toplama](../profiling/collecting-tier-interaction-data.md)|  
-|Üzerinde **katman etkileşim** sayfasında, theprofiling içinde toplanan verileri çalıştırmayı ADO.NET çağrı bilgilerini ekleyin.|-   [Katman etkileşim verileri toplama](../profiling/collecting-tier-interaction-data.md)|  
+|Üzerinde **katman etkileşim** sayfasında, theprofiling çalıştırın toplanan veriler ADO.NET çağrı bilgilerini ekleyin.|-   [Katman etkileşim verileri toplama](../profiling/collecting-tier-interaction-data.md)|  
 |Üzerinde **Windows olayları** sayfasında, bir veya daha fazla olay izleme için Windows (ETW) olayları, örnekleme verileri toplama belirtin.|-   [Nasıl yapılır: olay izleme için Windows (ETW) verilerini toplama](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|  
 |Üzerinde **Windows sayaçları** sayfasında işaretleri olarak profil oluşturma verilerini eklemek için bir veya daha fazla işletim sistemi performans sayaçları belirtin.|-   [Nasıl yapılır: Windows sayaç verileri toplama](../profiling/how-to-collect-windows-counter-data.md)|  
 |Üzerinde **Gelişmiş** sayfasında, uygulama modüllerinizi birden çok sürümü kullanırsanız profili .NET Framework çalışma zamanının sürümünü belirtin. Varsayılan olarak yüklenen ilk sürüm profil oluşturulan.|-   [Nasıl yapılır: .NET Framework çalışma zamanını belirtin](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|

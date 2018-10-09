@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: v-brickg
-ms.openlocfilehash: 3871ee1f31b2bc63f575e308b3b9008b3335a224
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d2f36b3b5213003e65f51f7d93a2d7d90a3ff12
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686115"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881182"
 ---
 # <a name="shared-colors"></a>Paylaşılan renkler
 Açıklamayı buraya ekleyin.  
@@ -1085,7 +1085,7 @@ Açıklamayı buraya ekleyin.
 |![Bilgi Çubuğu](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303 139_Infobar")<br /><br /> **Bilgi Çubuğu**|Kenarlık|`Environment.ToolWindowBorder`|  
   
 #### <a name="scroll-bar"></a>Kaydırma çubuğu  
- Kaydırma çubukları Visual Studio ortamı tarafından stillere ve temalı olması gerekmez. Ancak, bu bölümü Visual Studio ortamının kullanıcı Arabirimi her zaman bu tutarlı görünmesi kaydırma çubuklarında kullanılan renkleri yararlanmak istediğinize karar verin.  
+ Kaydırma çubukları Visual Studio ortamı tarafından stillere ve temalı olması gerekmez. Ancak, kullanıcı Arabirimi her zaman Visual Studio ortamının bu bölümü ile tutarlı görünmesi kaydırma çubuklarında kullanılan renkleri yararlanmak istediğinize karar verin.  
   
  ![Kaydırma çubuğu kırmızı çizgi](../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303 140_ScrollbarRedline")  
   

@@ -23,12 +23,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: db32eaaefd89bce9b3972853b7bb02a307b8df4d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c5f28f547d6d206cce7fe4face3b92d5fdf0ae4b
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631889"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880135"
 ---
 # <a name="install-visual-studio-2015"></a>Visual Studio 2015'i yükleyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -201,9 +201,9 @@ Bu sayfa yükleme ile yardımcı olacak ayrıntılı bilgiler içerir **Visual S
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Visual Studio'nun çevrimdışı yüklemesini oluşturma](../install/create-an-offline-installation-of-visual-studio.md)|Visual Studio, Internet'e bağlı olmadığınızda yüklemeyi açıklar.
-|[Visual Studio sürümlerini yan yana yükleme](../install/install-visual-studio-versions-side-by-side.md)|Bir bilgisayara Visual Studio'nun birden fazla sürümünü yükleme hakkında bilgi sağlar.|  
-|[Visual Studio'yu yüklemek için komut satırı parametrelerini kullanma](https://docs.microsoft.com/en-us/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|Visual Studio Komut İstemi'nden yüklediğinizde kullanabileceğiniz komut satırı parametrelerini listeler.|  
+|[Visual Studio’nun Çevrimdışı Yüklemesini Oluşturma](../install/create-an-offline-installation-of-visual-studio.md)|Visual Studio, Internet'e bağlı olmadığınızda yüklemeyi açıklar.
+|[Visual Studio Sürümlerini Yan Yana Yükleme](../install/install-visual-studio-versions-side-by-side.md)|Bir bilgisayara Visual Studio'nun birden fazla sürümünü yükleme hakkında bilgi sağlar.|  
+|[Komut Satırı Parametrelerini Kullanarak Visual Studio'yu Yükleme](/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|Visual Studio Komut İstemi'nden yüklediğinizde kullanabileceğiniz komut satırı parametrelerini listeler.|  
 |[Visual Studio'yu kaldırma](../install/uninstall-visual-studio.md)|Visual Studio kaldırmayı açıklar.|  
 |[Visual Studio Yönetici Kılavuzu](../install/visual-studio-administrator-guide.md)|Visual Studio için dağıtım seçenekleri hakkında bilgi sağlar.|  
 |[Visual Studio Görüntü Kitaplığı](../designers/the-visual-studio-image-library.md)|Visual Studio uygulamalarında kullanabileceğiniz grafikleri yükleme hakkında bilgi sağlar.|  

@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6c82556e649dd5538b10874ee501672fb77b4f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f380d84e5dd662008e233b7c7854d44d9b1e270
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697399"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879765"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Nasıl yapılır: Komut Satırını Kullanarak Bellek Verileri Toplamak için bir .NET Hizmetine Profil Oluşturucu Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprv
 >  Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. Windows Store apps ayrıca yeni toplama teknikleri gerektirir. Bkz: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 > [!NOTE]
->  Profil araçlarının komut satırı araçları tools\performance Tools alt dizininde içinde bulunan [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] yükleme dizini. 64 bit bilgisayarlarda araçların 64-bit hem 32 bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya ona komutun kendisine eklemeniz gerekir. Daha fazla bilgi için [komut satırı araçları yolunu belirtme](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Profil araçlarının komut satırı araçları tools\performance Tools alt dizininde içinde bulunan [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] yükleme dizini. 64 bit bilgisayarlarda araçların 64-bit hem 32 bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir. Daha fazla bilgi için [komut satırı araçları yolunu belirtme](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
  Bellek verileri toplamak için bir [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] hizmeti kullandığınız [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) hizmeti barındıran bilgisayardaki uygun ortam değişkenlerini başlatmak üzere. Bilgisayarın, profil oluşturma için yapılandırılmak üzere yeniden başlatılması gerekir.  
   
@@ -84,7 +84,7 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprv
     |Seçenek|Açıklama|  
     |------------|-----------------|  
     |[/ User](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|İşlemin sahibi olan hesabının etki alanını ve kullanıcı adını belirtir. Bu seçenek, oturum açan kullanıcının farklı bir kullanıcı olarak işlem çalışıyorsa gereklidir. İşlem sahibi, Windows Görev Yöneticisi'nin İşlemler sekmesinde kullanıcı adı sütununda listelenir.|  
-    |[/ crosssession](../profiling/crosssession.md)|Etkinleştirir işlemleri diğer oturum açılışlarında profil oluşturma. ASP.NET uygulaması başka bir oturumda çalışıyorsa bu seçenek gereklidir. Oturum kimliği oturum kimliği sütununda listelenir Windows Görev Yöneticisi'nin İşlemler sekmesinde. **/CS** için bir kısaltma olarak belirtilebilir **/crosssession**.|  
+    |[/ crosssession](../profiling/crosssession.md)|Etkinleştirir işlemleri diğer oturum açılışlarında profil oluşturma. ASP.NET uygulaması başka bir oturumda çalışıyorsa bu seçenek gereklidir. Oturum kimliği, Windows Görev Yöneticisi'nin İşlemler sekmesinde oturum kimliği sütununda listelenir. **/CS** için bir kısaltma olarak belirtilebilir **/crosssession**.|  
     |[/ User](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Hizmetin altında çalıştığı oturum açma hesabının kullanıcı adını ve isteğe bağlı etki alanını belirtir. Oturum açma hesabın, Windows Hizmet Denetimi Yöneticisi'nde hizmetin Farklı Oturum Aç sütununda listelenir.|  
     |[/ crosssession&#124;cs](../profiling/crosssession.md)|Etkinleştirir işlemleri diğer oturum açılışlarında profil oluşturma.|  
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Profil oluşturma sırasında Tahsil edilecek Windows performans sayacı belirtir.|  
@@ -137,7 +137,7 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprv
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Profil oluşturma hizmetleri](../profiling/command-line-profiling-of-services.md)   
- [.NET bellek verisi görünümleri](../profiling/dotnet-memory-data-views.md)
+ [.NET Bellek Verisi Görünümleri](../profiling/dotnet-memory-data-views.md)
 
 
 

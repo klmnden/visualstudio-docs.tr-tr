@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 26fe3a9b99e1e437fd1b9007587fac97e6ae7adf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2f3c89e0bb6539cb4fb37293fe556451042127b4
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689482"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880714"
 ---
 # <a name="command-window"></a>Komut Penceresi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [komut penceresi](https://d
  atar `varA` değişkenin değerini `varB`.  
   
 ## <a name="parameters-switches-and-values"></a>Parametreler, anahtarlar ve değerler  
- Bazı [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] komutları komutları gerekli ve isteğe bağlı bağımsız değişkenler, anahtarları ve değerleri. Belirli kurallar gibi komutları ile ilgilenirken uygulanır. Aşağıdaki terimler açıklamak için zengin bir komutun bir örneğidir.  
+ Bazı [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] komutları gerekli ve isteğe bağlı bağımsız değişkenler, anahtarları ve değerleri. Belirli kurallar gibi komutları ile ilgilenirken uygulanır. Aşağıdaki terimler açıklamak için zengin bir komutun bir örneğidir.  
   
 ```  
 Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar   

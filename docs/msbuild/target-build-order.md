@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bab71bce4ccec17f485f6aafad7389e3b981b6e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 7546c2da20c29f0140bd6b9572175ae0c2b019ad
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774951"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879375"
 ---
 # <a name="target-build-order"></a>Hedef derleme sırası
 Başka bir hedef üzerinde çıkışını bir hedef girişi bağlıysa hedefleri sıralanmış olmaları gerekmektedir. Bu öznitelikler, hedef çalıştığı sırayı belirtmek için kullanabilirsiniz:  
@@ -56,9 +56,9 @@ Başka bir hedef üzerinde çıkışını bir hedef girişi bağlıysa hedefleri
 <Project DefaultTargets="Clean;Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
 ```  
   
- Varsayılan hedefler kullanarak kılabilirsiniz **/target** anahtarını komut satısına. Aşağıdaki örnek belirten `Build` hedef çalışır ve ardından `Report` hedef çalıştırır. Bu şekilde hedefleri belirttiğinizde, tüm varsayılan hedefleri göz ardı edilir.  
+ Varsayılan hedefler kullanarak kılabilirsiniz **-hedef** anahtarını komut satısına. Aşağıdaki örnek belirten `Build` hedef çalışır ve ardından `Report` hedef çalıştırır. Bu şekilde hedefleri belirttiğinizde, tüm varsayılan hedefleri göz ardı edilir.  
   
- `msbuild /target:Build;Report`  
+ `msbuild -target:Build;Report`  
   
  Hem başlangıç hedefleri hem de varsayılan hedefler belirtilirse ve komut satırı hiçbir hedef belirtilmemişse, MSBuild hedefleri ilk önce çalışır ve ardından varsayılan hedefler çalıştırır.  
   
@@ -108,7 +108,7 @@ Başka bir hedef üzerinde çıkışını bir hedef girişi bağlıysa hedefleri
   
 1.  `InitialTargets` hedefleri çalıştırılır.  
   
-2.  Komut satırı tarafından belirtilen hedefleri **/target** anahtar çalıştırılır. Hiçbir hedef komut satırında belirtin, ardından `DefaultTargets` hedefleri çalıştırın. Ardından ikisi de mevcutsa karşılaşılan ilk hedef çalıştırılır.  
+2.  Komut satırı tarafından belirtilen hedefleri **-hedef** anahtar çalıştırılır. Hiçbir hedef komut satırında belirtin, ardından `DefaultTargets` hedefleri çalıştırın. Ardından ikisi de mevcutsa karşılaşılan ilk hedef çalıştırılır.  
   
 3.  `Condition` Özniteliği hedef değerlendirilir. Varsa `Condition` özniteliği var ve değerlendiren `false`, hedef yürütülen değildir ve yapı üzerinde başka hiçbir etkisi olmaz.
 

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea57256ab85694f69d970de476ada17ada1ee74
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 4191ed9d34c48ab0aefd1198dd868a91c19ffabc
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152493"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879999"
 ---
 # <a name="project-element-msbuild"></a>Proje öğesi (MSBuild)
 Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası.  
@@ -62,7 +62,7 @@ Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/incl
 |`InitialTargets`|İsteğe bağlı öznitelik.<br /><br /> İlk hedef veya hedefleri önce belirtilen hedefleri çalıştırılacak `DefaultTargets` özniteliği veya komut satırında. Noktalı virgülle (;) birden çok hedefi olan ayrılmış.|  
 |`Sdk`|İsteğe bağlı öznitelik. <br /><br /> Örtük oluşturmak için kullanılacak isteğe bağlı sürümü ve SDK adı .proj dosyasına eklenir deyimleri içeri aktarın. Hiçbir sürüm belirtilmezse, MSBuild varsayılan sürümü çözümlemeye çalışır.  Örneğin, `<Project Sdk="Microsoft.NET.Sdk" />` veya `<Project Sdk="My.Custom.Sdk/1.0.0" />`.|  
 |`ToolsVersion`|İsteğe bağlı öznitelik.<br /><br /> MSBuild araç takımı sürümünü $(MSBuildBinPath) ve $(MSBuildToolsPath) için değerleri belirlemek için kullanır.|  
-|`TreatAsLocalProperty`|İsteğe bağlı öznitelik.<br /><br /> Genel olarak kabul olmaz özellik adları. Bu öznitelik, bir proje veya hedefler dosyasının ve sonraki tüm içe aktarmaları ayarlanan özellik değerlerini geçersiz kılmasını belirli komut satırı özelliklerini engeller. Noktalı virgülle (;) birden çok özelliklerdir ayrılmış.<br /><br /> Normalde, genel özellikler, proje veya hedefler dosyasında ayarlanan özellik değerlerini geçersiz kılar. Özelliği içinde listelenmişse `TreatAsLocalProperty` , genel özellik değerini değil geçersiz kılma değeri'nda bu dosya ve sonraki tüm içeri aktarmaları ayarlanan özellik değerleri. Daha fazla bilgi için [nasıl yapılır: farklı seçeneklerle aynı kaynak dosyaları derleme](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Not:** genel özellikleri kullanarak bir komut isteminde ayarlama **/Property** (veya **/p**) geçin. Ayrıca ayarlamak veya birden çok proje derleme alt projeler için genel özelliklerini kullanarak değiştirmek `Properties` MSBuild görevinin özniteliği. Daha fazla bilgi için [MSBuild görevi](../msbuild/msbuild-task.md).|  
+|`TreatAsLocalProperty`|İsteğe bağlı öznitelik.<br /><br /> Genel olarak kabul olmaz özellik adları. Bu öznitelik, bir proje veya hedefler dosyasının ve sonraki tüm içe aktarmaları ayarlanan özellik değerlerini geçersiz kılmasını belirli komut satırı özelliklerini engeller. Noktalı virgülle (;) birden çok özelliklerdir ayrılmış.<br /><br /> Normalde, genel özellikler, proje veya hedefler dosyasında ayarlanan özellik değerlerini geçersiz kılar. Özelliği içinde listelenmişse `TreatAsLocalProperty` , genel özellik değerini değil geçersiz kılma değeri'nda bu dosya ve sonraki tüm içeri aktarmaları ayarlanan özellik değerleri. Daha fazla bilgi için [nasıl yapılır: farklı seçeneklerle aynı kaynak dosyaları derleme](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Not:** genel özellikleri kullanarak bir komut isteminde ayarlama **-özellik** (veya **-p**) geçin. Ayrıca ayarlamak veya birden çok proje derleme alt projeler için genel özelliklerini kullanarak değiştirmek `Properties` MSBuild görevinin özniteliği. Daha fazla bilgi için [MSBuild görevi](../msbuild/msbuild-task.md).|  
 |`Xmlns`|İsteğe bağlı öznitelik.<br /><br /> Bu seçenek belirtildiğinde, `xmlns` öznitelik değerini olmalıdır `http://schemas.microsoft.com/developer/msbuild/2003`.|  
 
 ### <a name="child-elements"></a>Alt öğeleri  
@@ -70,7 +70,7 @@ Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/incl
 |Öğe|Açıklama|  
 |-------------|-----------------|  
 |[Seçin](../msbuild/choose-element-msbuild.md)|İsteğe bağlı öğe.<br /><br /> Bir grubu seçmek için alt öğeleri değerlendirir `ItemGroup` öğelerin ve/veya `PropertyGroup` değerlendirmek için öğeleri.|  
-|[içeri aktarma](../msbuild/import-element-msbuild.md)|İsteğe bağlı öğe.<br /><br /> Başka bir proje dosyasını içeri aktarmak bir proje dosyası sağlar. Sıfır veya daha fazla olabilir `Import` proje öğeleri.|  
+|[İçeri Aktar](../msbuild/import-element-msbuild.md)|İsteğe bağlı öğe.<br /><br /> Başka bir proje dosyasını içeri aktarmak bir proje dosyası sağlar. Sıfır veya daha fazla olabilir `Import` proje öğeleri.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|İsteğe bağlı öğe.<br /><br /> Bireysel öğeleri için gruplandırma öğesi. Öğeleri kullanılarak belirtilir [öğesi](../msbuild/item-element-msbuild.md) öğesi. Sıfır veya daha fazla olabilir `ItemGroup` proje öğeleri.|  
 |[ProjectExtensions](../msbuild/projectextensions-element-msbuild.md)|İsteğe bağlı öğe.<br /><br /> Kalıcı olmayan bir şekilde sağlar[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bilgileri bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası. Sıfır veya bir olabilir `ProjectExtensions` proje öğeleri.|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|İsteğe bağlı öğe.<br /><br /> Tek tek özellikler için gruplandırma öğesi. Özellikleri kullanarak belirtilen [özelliği](../msbuild/property-element-msbuild.md) öğesi. Sıfır veya daha fazla olabilir `PropertyGroup` proje öğeleri.|

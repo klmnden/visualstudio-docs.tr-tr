@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a211048e287bd3ef3e45625022f7389e06358e32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 802627f59f54b9a4b1179ba5c643b4671f4f7ce0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685807"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48878960"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Nasıl yapılır: güncelleştirme, ekleme ve silme (O/R Tasarımcısı) gerçekleştirmek için saklı yordamlar atama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Saklı yordamlar için O/R Tasarımcısı eklenebilir ve tipik olarak yürütül
 >  [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] otomatik olarak kimlik (otomatik artış), rowguıdcol (veritabanı tarafından oluşturulan GUID) ve zaman damgası sütunları için veritabanı tarafından oluşturulan işler değerler. Veritabanı üretilmiş değerler diğer sütun türlerinde beklenmedik bir null değer neden olur. Veritabanı tarafından oluşturulan değerleri döndürülecek el ile ayarlamanız <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> için `true` ve <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> aşağıdakilerden birine: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, veya <xref:System.Data.Linq.Mapping.AutoSync>.  
   
 ## <a name="configuring-the-update-behavior-of-an-entity-class"></a>Bir varlık sınıfı güncelleştirme davranışını yapılandırma  
- Varsayılan olarak, bir veritabanı (ekleme, güncelleştirme ve silme) verilerde yapılan değişikliklerle güncelleştirmek için mantığı [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] varlık sınıfları tarafından sağlanır [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] çalışma zamanı. Varsayılan INSERT, Update, çalışma zamanı oluşturur ve Delete komutlarının temel alınmıştır şemanın tablo (sütun ve birincil anahtar bilgisi). Varsayılan davranış istenildiği gibi Güncelleştirme davranışı gerekli bir ekleme, güncelleştirme gerçekleştirmek için belirli saklı yordamlar atayarak yapılandırabilirsiniz ve silmeleri Tablonuzdaki verileri işlemek için gerekli. Varlık sınıflarınızı görünümleriyle eşleme, varsayılan davranışı gibi değil oluşturulduğunda, aynı zamanda bunu yapabilirsiniz. Son olarak, veritabanı saklı yordamlar aracılığıyla tablo erişim gerektirdiğinde güncelleştirme varsayılan davranışı geçersiz kılabilirsiniz.  
+ Varsayılan olarak, bir veritabanı (ekleme, güncelleştirme ve silme) verilerde yapılan değişikliklerle güncelleştirmek için mantığı [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] varlık sınıfları tarafından sağlanır [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] çalışma zamanı. Çalışma zamanı varsayılan tablo (sütun ve birincil anahtar bilgileri) şemaya dayalı INSERT, Update ve Delete komutlarını oluşturur. Varsayılan davranış istenildiği gibi Güncelleştirme davranışı gerekli bir ekleme, güncelleştirme gerçekleştirmek için belirli saklı yordamlar atayarak yapılandırabilirsiniz ve silmeleri Tablonuzdaki verileri işlemek için gerekli. Varlık sınıflarınızı görünümleriyle eşleme, varsayılan davranışı gibi değil oluşturulduğunda, aynı zamanda bunu yapabilirsiniz. Son olarak, veritabanı saklı yordamlar aracılığıyla tablo erişim gerektirdiğinde güncelleştirme varsayılan davranışı geçersiz kılabilirsiniz.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   

@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e812be4927ee0232d1096fa272d8ff8e7358366
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: a4077f53008691dd1fcf6ddd07f890616bc09018
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078806"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879050"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Nasıl yapılır: ilk oluşturmak için hangi hedef belirtin
-Bir veya daha fazla proje dosyasını içerebilir `Target` projenin nasıl oluşturulduğunu tanımlayan öğeler. [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) Altyapısı yapılar ilk proje dosyası içermedikçe bulur ve tüm bağımlılıkları, proje bir `DefaultTargets` öznitelik, bir `InitialTargets` özniteliği veya bir hedef belirtilen komut satırını kullanarak **/ Hedef** geçin.  
+Bir veya daha fazla proje dosyasını içerebilir `Target` projenin nasıl oluşturulduğunu tanımlayan öğeler. [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) Altyapısı yapılar ilk proje dosyası içermedikçe bulur ve tüm bağımlılıkları, proje bir `DefaultTargets` öznitelik, bir `InitialTargets` özniteliği veya bir hedef belirtilen komut satırını kullanarak **- Hedef** geçin.  
   
 ## <a name="use-the-initialtargets-attribute"></a>InitialTargets özniteliğini kullanın  
  `InitialTargets` Özniteliği `Project` öğesi belirtir önce çalıştırılacak bir hedef hedefleri komut satırında veya belirtilmese bile `DefaultTargets` özniteliği.  
@@ -58,20 +58,21 @@ Bir veya daha fazla proje dosyasını içerebilir `Target` projenin nasıl oluş
   
      `<Project DefaultTargets="Clean;Compile">`  
   
-## <a name="use-the-target-switch"></a>/ Target anahtar kullanın  
- Varsayılan hedef proje dosyasında tanımlı değil ya da varsayılan hedefleyen kullanmak istemiyorsanız, komut satırı anahtarı kullanabileceğiniz **/target** farklı bir hedef belirtmek için. Hedef veya hedefleri ile belirtilen **/target** tarafından belirtilen hedefleri yerine run anahtarı `DefaultTargets` özniteliği. Belirtilen hedef `InitialTargets` öznitelik her zaman ilk önce çalışır.  
-  
+## <a name="use-the--target-switch"></a>Kullanımı hedef anahtarı  
+ Varsayılan hedef proje dosyasında tanımlı değil ya da varsayılan hedefleyen kullanmak istemiyorsanız, komut satırı anahtarı kullanabileceğiniz **-hedef** farklı bir hedef belirtmek için. Hedef veya hedefleri ile belirtilen **-hedef** tarafından belirtilen hedefleri yerine run anahtarı `DefaultTargets` özniteliği. Belirtilen hedef `InitialTargets` öznitelik her zaman ilk önce çalışır.  
+ 
+ 
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Varsayılan hedef dışında bir hedef ilk kullanmak için  
   
--   Hedef olarak ilk kullanarak hedef belirtin **/target** komut satırı anahtarı. Örneğin:  
+-   Hedef olarak ilk kullanarak hedef belirtin **-hedef** komut satırı anahtarı. Örneğin:  
   
-     `msbuild file.proj /target:Clean`  
+     `msbuild file.proj -target:Clean`  
   
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Varsayılan hedefler dışında çeşitli hedeflere ilk kullanmak için  
   
--   Noktalı virgül veya kullanarak, virgülle ayrılmış hedefleri listesinde **/target** komut satırı anahtarı. Örneğin:  
+-   Noktalı virgül veya kullanarak, virgülle ayrılmış hedefleri listesinde **-hedef** komut satırı anahtarı. Örneğin:  
   
-     `msbuild <file name>.proj /t:Clean;Compile`  
+     `msbuild <file name>.proj -t:Clean;Compile`  
   
 ## <a name="see-also"></a>Ayrıca bkz.
   [MSBuild](../msbuild/msbuild.md)  

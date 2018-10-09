@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e862322995c7cda4a7080ee387c7a080437748
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 94fdbb5f143d1c087d97490961d230ace239f348
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178524"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880155"
 ---
 # <a name="walkthrough-use-msbuild"></a>İzlenecek yol: MSBuild kullanma
 MSBuild, Microsoft ve Visual Studio için bir yapı platformudur. Bu izlenecek yol MSBuild'ın yapı taşlarını tanıtır ve MSBuild projelerini nasıl yazacağınızı, değiştireceğinizi ve hatalarını ayıklayacağınızı gösterir. Şu konularda bilgi edineceksiniz:
@@ -116,7 +116,7 @@ MSBuild, bir yapının hedeflerini izler ve her bir hedefin birden kereden fazla
 İleti görevi Metin özniteliğinin dize değerini girdi olarak alır ve bu değeri çıktı cihazında gösterir. HelloWorld hedefi İleti görevini iki kere yürütür: ilki "Hello" iletisini ve diğeri ise "World" iletisini görüntülemek için.
 
 ## <a name="build-the-target"></a>Derleme hedefi
- Nden Msbuild'i çalıştırın **Visual Studio komut istemi** yukarıda tanımlanan HelloWorld hedefini oluşturmak için. Hedefi seçmek için /target veya /t komut satırı anahtarını kullanın.
+ Nden Msbuild'i çalıştırın **Visual Studio komut istemi** yukarıda tanımlanan HelloWorld hedefini oluşturmak için. Kullanım hedefi seçmek için hedef veya -t komut satırı anahtarı.
 
 > [!NOTE]
 >  Anılacaktır **Visual Studio komut istemi** olarak **komut penceresi** aşağıdaki bölümlerde yer.
@@ -127,10 +127,10 @@ MSBuild, bir yapının hedeflerini izler ve her bir hedefin birden kereden fazla
 
 2.  Komut penceresinde, bu durumda, proje dosyasını içeren klasöre gidin *D:\BuildApp\BuildApp*.
 
-3.  /t:HelloWorld komut anahtarı ile msbuild'i çalıştırın. Bu, HelloWorld hedefini seçer ve oluşturur:
+3.  Çalıştırma msbuild komut ile geçiş - t: HelloWorld. Bu, HelloWorld hedefini seçer ve oluşturur:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Çıktıyı inceleyin **komut penceresi**. "Hello" ve "World" satırlarını görmeniz gerekir:
@@ -200,7 +200,7 @@ $(PropertyName)
 3.  Gelen **komut penceresi**girin ve bu satırı yürütün:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Çıktıyı inceleyin. Şu iki satırı görmeniz gerekir (.NET Framework sürümünüz farklı olabilir):
@@ -231,14 +231,14 @@ $(PropertyName)
  Proje dosyalarındaki ortam değişkenlerine yapı özellikleriyle aynı şekilde başvurabilirsiniz. Örneğin, proje dosyanızda PATH ortam değişkenini kullanmak için $(Yol) işaretini kullanın. Proje, ortam değişkeniyle ile aynı ada sahip bir özellik tanımı içeriyorsa projedeki özellik, ortam değişkeninin değerini geçersiz kılar. Daha fazla bilgi için [nasıl yapılır: derlemede ortam değişkenlerini kullanma](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="set-properties-from-the-command-line"></a>Komut satırı özelliklerini ayarlama
- Özellikler, /property veya /p komut satırı anahtarı kullanılarak komut satırında tanımlanabilir. Komut satırından alınan özellik değerleri, proje dosyasında ve ortam değişkenlerinde ayarlanan özellik değerlerini geçersiz kılar.
+ Özellikleri kullanarak komut satırında tanımlanabilir özellik ya da -p komut satırı anahtarı. Komut satırından alınan özellik değerleri, proje dosyasında ve ortam değişkenlerinde ayarlanan özellik değerlerini geçersiz kılar.
 
 #### <a name="to-set-a-property-value-from-the-command-line"></a>Komut satırından bir özellik değerini ayarlamak için
 
 1.  Gelen **komut penceresi**girin ve bu satırı yürütün:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release
+    msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
     ```
 
 2.  Çıktıyı inceleyin. Şu satırı görmeniz gerekir:
@@ -267,7 +267,7 @@ MSBuild, Yapılandırma özelliğini oluşturur ve bu özelliğe "Yayın" değer
 3.  Gelen **komut penceresi**girin ve bu satırı yürütün:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Çıktıyı inceleyin. Şu satırı görmeniz gerekir:
@@ -329,7 +329,7 @@ Daha fazla bilgi için [öğeleri](../msbuild/msbuild-items.md).
 3.  Gelen **komut penceresi**girin ve bu satırı yürütün:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Çıktıyı inceleyin. Şu uzun satırı görmeniz gerekir:
@@ -361,7 +361,7 @@ Her satırda bir tane Derleme öğesi görüntülemek için taşıma dönüşler
 3.  Gelen **komut penceresi**girin ve bu satırı yürütün:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Çıktıyı inceleyin. Şu satırları görmeniz gerekir:
@@ -441,7 +441,7 @@ Dosya dışlamamak *Form1.cs*, önceki item öğesine eklendi.
 4.  Gelen **komut penceresi**girin ve bu satırı yürütün:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 5.  Çıktıyı inceleyin. Şu satırı görmeniz gerekir:
@@ -482,7 +482,7 @@ Dosya dışlamamak *Form1.cs*, önceki item öğesine eklendi.
 3.  Gelen **komut penceresi**girin ve bu satırı yürütün:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Çıktıyı inceleyin. Şu satırları görmeniz gerekir:
@@ -512,7 +512,7 @@ Dosya dışlamamak *Form1.cs*, önceki item öğesine eklendi.
 3.  Gelen **komut penceresi**girin ve bu satırı yürütün:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Çıktıyı inceleyin. Şu satırları görmeniz gerekir:
@@ -550,7 +550,7 @@ Yukarıdaki iki örneği karşılaştırarak, Derleme öğe türündeki her öğ
 3.  Gelen **komut penceresi**girin ve bu satırı yürütün:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Çıktıyı inceleyin. Şu satırı görmeniz gerekir:

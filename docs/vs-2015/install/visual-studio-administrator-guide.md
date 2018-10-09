@@ -18,17 +18,17 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e95970c19020e28c3b7592068b0ef1df7f1c56f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b8f25b995079aeedca262dedd62b2f9c880efb52
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692563"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879225"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Yönetici Kılavuzu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 için en son belgeler için bkz. [Visual Studio 2017 Yönetici Kılavuzu](https://docs.microsoft.com/en-us/visualstudio/install/visual-studio-administrator-guide).
+Visual Studio 2017 için en son belgeler için bkz. [Visual Studio 2017 Yönetici Kılavuzu](/visualstudio/install/visual-studio-administrator-guide).
 
 Her hedef bilgisayar karşıladığı sürece Visual Studio 2015 bir ağda dağıtabilirsiniz [minimum yükleme gereksinimlerini](http://www.microsoft.com/visualstudio/eng/products/2013-editions). Bir ağ paylaşımı ile/layout anahtarını yükleme dosyasını çalıştırarak oluşturabilirsiniz (üzerinde açıklandığı [bir çevrimdışı Visual Studio yüklemesi oluşturma](../install/create-an-offline-installation-of-visual-studio.md) sayfası) ve ardından yerel makinede ağ paylaşımına kopyalama. Bir ISO kullanıyorsanız ISO'yu bağlamak ve paylaşın veya ISO dosyasını bir ağ paylaşımına kopyalayın.  
   
@@ -73,8 +73,8 @@ Her hedef bilgisayar karşıladığı sürece Visual Studio 2015 bir ağda dağ�
   
 |Konu|Açıklama|  
 |-----------|-----------------|  
-|[Nasıl yapılır: Visual Studio'nun belirli bir sürüm yükleyin](../install/how-to-install-a-specific-release-of-visual-studio.md)|Geçerli sürümde olan belirli yapılandırmalar yüklemeyi açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|[Nasıl yapılır: oluşturma ve Visual Studio katılımsız yükleme çalıştırma](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Nasıl yüklendiğini açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] katılımsız modda.|  
-|[Nasıl yapılır: Visual Studio'yu dağıtırken ürün anahtarlarını otomatik olarak uygulama](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Birden çok makineye dağıtırken ürün anahtarlarını uygulama açıklar.|  
+|[Nasıl Yapılır: Visual Studio’nun Belirli Bir Sürümünü Yükleme](../install/how-to-install-a-specific-release-of-visual-studio.md)|Geçerli sürümde olan belirli yapılandırmalar yüklemeyi açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|[Nasıl Yapılır: Katılımsız Visual Studio Yüklemesi Oluşturma ve Çalıştırma](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Nasıl yüklendiğini açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] katılımsız modda.|  
+|[Nasıl Yapılır: Visual Studio’yu dağıtırken ürün anahtarlarını otomatik olarak uygulama](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Birden çok makineye dağıtırken ürün anahtarlarını uygulama açıklar.|  
 |[Yardım Görüntüleyicisi Yönetici Kılavuzu](../ide/help-viewer-administrator-guide.md)|Yerel Yardım yüklemelerini olması ya da internet erişimi olmaması ağ ortamları yönetme hakkında bilgi sağlar.|  
 |[Visual Studio'yu yükleyin](../install/install-visual-studio-2015.md)|Yönergeler ve nasıl yükleneceğini açıklayan konulara bağlantılar sağlamaktadır [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|

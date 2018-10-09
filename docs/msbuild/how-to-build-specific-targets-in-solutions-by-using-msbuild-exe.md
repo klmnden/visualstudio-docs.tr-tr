@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b735d1543c9af4fead999e3c530fad063672337e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: fb1dc2885d64999ac9f4d12568fd7da29a783d8e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080588"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880662"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Nasıl yapılır: MSBuild.exe kullanarak çözümlerde belirli hedefleri derleme
 Kullanabileceğiniz *MSBuild.exe* belirli projelerin bir çözümde belirli hedefler oluşturmak için.  
@@ -28,13 +28,13 @@ Kullanabileceğiniz *MSBuild.exe* belirli projelerin bir çözümde belirli hede
   
 1.  Komut satırında `MSBuild.exe <SolutionName>.sln`burada `<SolutionName>` yürütmek istediğiniz hedef içeren çözüm dosya adına karşılık gelir.  
   
-2. Sonra hedef belirtmek `/target:` geçiş biçiminde \<ProjectName >:\<TargetName >. Proje adı bu karakterlerden herhangi birini içeriyorsa, `%`, `$`, `@`, `;`, `.`, `(`, `)`, veya `'`, bunları değiştirin bir `_` belirtilen Hedef adı.
+2. Sonra hedef belirtmek `-target:` geçiş biçiminde \<ProjectName >:\<TargetName >. Proje adı bu karakterlerden herhangi birini içeriyorsa, `%`, `$`, `@`, `;`, `.`, `(`, `)`, veya `'`, bunları değiştirin bir `_` belirtilen Hedef adı.
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek yürütür `Rebuild` hedefinin `NotInSlnFolder` proje ve sonra yürütür `Clean` hedefinin `InSolutionFolder` bulunan proje *Yeniklasör* Çözüm klasörü.  
   
 ```cmd
-msbuild SlnFolders.sln /target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
+msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
 ```
 
 ## <a name="troubleshooting"></a>Sorun giderme

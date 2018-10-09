@@ -20,12 +20,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b80e9ce62e74cf7d164dd745120b710c096e366e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82a76cdc9da6a9d289ca325caf36f6ff2c159770
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632980"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880441"
 ---
 # <a name="supplying-xml-code-comments"></a>XML Kodu Açıklamalarını Sağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [XML kodu açıklamaların�
   
 Yorumlar kaynak kodu dosyalarında IntelliSense olarak yapabilirsiniz. Visual Basic, C# veya C++ derleyici komut satırında/doc anahtar eklediğinizde, IntelliSense belgeleri için taban olarak görev yapan bir .xml dosyası oluşturulur.  
   
- Visual Basic, görüyor kod belgeleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: XML belgeleri oluşturma](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230).  
+ Visual Basic kod belgeleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: XML belgeleri oluşturma](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230).  
   
  C# kod belgeleme hakkında daha fazla bilgi için bkz. [XML belgeleri yorumları](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb14269c933d8e8de191b8a8c52e9f41e63ca79d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d31863e3dfdf39481a6215a29f37186a2f528050
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693247"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880376"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Hangi&#39;Visual Studio 2015'te yeni s
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Visual Studio 2015, tümleşik bir geliştirici üretkenliği araçları, bulut 
  Ve — Elbette — geliştirmeleri dilleri, kitaplıklar ve araçlar için çok sayıda ile hiç olmadığı kadar daha iyi Klasik Masaüstü uygulamaları için destek.  
   
 ### <a name="cross-platform-mobile-apps-in-c-with-xamarin-for-visual-studio"></a>C# ile Visual Studio için Xamarin platformlar arası mobil uygulamalar  
- Xamarin iOS için yerel olarak bağlayan #c ve Android API'leri kod yazmanızı sağlayan Mobil bir çerçevedir. Microsoft, kendi paylaşılan kod ile tek bir çözümde, Android, iOS ve Windows Phone için geliştirin olanak tanıyan uzantı Visual Studio için Xamarin sürümü üzerinde Xamarin ile yakından kurdu. Xamarin ile bir dil ve bir kod tabanı ile platformlar arasında çok az deltaları kullanacaksınız.  Visual Studio için Xamarin, Visual Studio 2010 ve sonraki sürümlerde desteklenir. Xamarin başlangıç sürümüdür dahildir Visual Studio 2015'te. Başlamak için bkz: [Visual Studio'daki Xamarin yerel UI ile uygulamalar oluşturun](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md).  
+ Xamarin iOS için yerel olarak bağlayan #c ve Android API'leri kod yazmanızı sağlayan Mobil bir çerçevedir. Microsoft, kendi paylaşılan kod ile tek bir çözümde, Android, iOS ve Windows Phone için geliştirin olanak tanıyan uzantı Visual Studio için Xamarin sürümü üzerinde Xamarin ile yakından kurdu. Xamarin ile bir dil ve bir kod tabanı ile platformlar arasında çok az deltaları kullanacaksınız.  Visual Studio için Xamarin, Visual Studio 2010 ve sonraki sürümlerde desteklenir. Xamarin başlangıç sürümü Visual Studio 2015'te eklenmiştir. Başlamak için bkz: [Visual Studio'daki Xamarin yerel UI ile uygulamalar oluşturun](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md).  
   
 ### <a name="cross-platform-mobile-apps-in-htmljavascript-with-apache-cordova"></a>Apache Cordova ile HTML/JavaScript içinde platformlar arası mobil uygulamalar  
  Apache Cordova için Visual Studio Araçları Microsoft ve açık kaynaklı Apache Cordova topluluk arasında Kapat işbirliği sonucudur. HTML, CSS ve JavaScript (veya Typescript) kullanarak platformlar arası Mobil Geliştirme Araçları'nı etkinleştirin. Android, iOS ve Windows ile tek bir kod tabanının hedef ve JavaScript IntelliSense, DOM Gezgini, JavaScript konsolu, kesme noktaları, Gözcü, yerel öğeler, yalnızca kendi kodum ve daha da dahil olmak üzere Visual Studio IDE zenginliğine keyfini çıkarın.  Apache Cordova için Visual Studio Araçları ile uygulamalarınızı tüm platformlarda ortak bir JavaScript API'si eklentileri üzerinden yerel cihaz özelliklerine erişimine olanak sahip. Başlamak için bkz: [Apache Cordova için Visual Studio Araçları ile çalışmaya başlama](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).  
@@ -280,4 +280,4 @@ Visual Studio 2015, tümleşik bir geliştirici üretkenliği araçları, bulut 
 * [Özel pencere düzenlerini oluşturma](./misc/create-custom-window-layouts.md)   
 * [Ampullerle hızlı eylemler gerçekleştirme](./ide/perform-quick-actions-with-light-bulbs.md)   
 * [Visual Studio 2015'te uygulama yaşam döngüsü yönetimindeki yenilikler](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)
-* [Visual Studio 2017'deki yenilikler](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
+* [Visual Studio 2017'deki yenilikler](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d524626187e95a02654f00ca7cf7921fd819e7c6
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b68330e4cfb8e1d403caa1c48d26ad29aacc19f7
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081663"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880558"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Nasıl yapılır: farklı seçeneklerle aynı kaynak dosyaları derleme
 Projeleri oluşturduğunuzda, farklı bir derleme seçenekleri ile aynı bileşenleri sık derleyin. Örneğin, sembol bilgisi veya bir yayın yapısı sembol bilgisi ancak iyileştirmeler ile hata ayıklama derlemesi oluşturabilirsiniz. Veya, x86 gibi belirli bir platformda çalıştırmak için bir proje oluşturabilirsiniz veya [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. Bu durumlarda, aynı derleme seçeneklerin çoğu kalır; yalnızca birkaç seçeneği, derleme yapılandırmasını kontrol etmek için değiştirilir. İle [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], özellikleri ve koşulları farklı derleme yapılandırmalarında oluşturmak için kullanın.  
@@ -50,34 +50,34 @@ Projeleri oluşturduğunuzda, farklı bir derleme seçenekleri ile aynı bileşe
     ```  
   
 ## <a name="specify-properties-on-the-command-line"></a>Özellikleri komut satırında belirtin.  
- Birden çok yapılandırmaları kabul etmek için proje dosyanızı yazıldıktan sonra projenizi oluşturduğunuzda, bu yapılandırmaları değiştirme olanağına sahip gerekir. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] özellikleri kullanarak komut satırı belirtilmesine olanak tanıyarak bu özelliği sağlar **/Property** veya **/p** geçin.  
+ Birden çok yapılandırmaları kabul etmek için proje dosyanızı yazıldıktan sonra projenizi oluşturduğunuzda, bu yapılandırmaları değiştirme olanağına sahip gerekir. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] özellikleri kullanarak komut satırı belirtilmesine olanak tanıyarak bu özelliği sağlar **-özellik** veya **-p** geçin.  
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>Komut satırında bir proje özelliğini ayarlamak için  
   
--   Kullanım **/Property** özellik ve özellik değeri ile geçiş yapın. Örneğin:  
+-   Kullanım **-özellik** özellik ve özellik değeri ile geçiş yapın. Örneğin:  
   
     ```cmd  
-    msbuild file.proj /property:Flavor=Debug  
+    msbuild file.proj -property:Flavor=Debug  
     ```  
   
     veya  
   
     ```cmd  
-    Msbuild file.proj /p:Flavor=Debug  
+    Msbuild file.proj -p:Flavor=Debug  
     ```  
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Komut satırında birden fazla proje özelliği belirtmek için  
   
--   Kullanma **/Property** veya **/p** özellik ve özellik değerleri ile birden çok kez geçin veya kullanın **/Property** veya **/p** geçin ve birden çok özellik noktalı virgülle (;) ayırın. Örneğin:  
+-   Kullanma **-özellik** veya **-p** özellik ve özellik değerleri ile birden çok kez geçin veya kullanın **-özellik** veya **-p** geçiş ve birden çok özellik noktalı virgülle (;) ayırın. Örneğin:  
   
     ```cmd  
-    msbuild file.proj /p:Flavor=Debug;Platform=x86  
+    msbuild file.proj -p:Flavor=Debug;Platform=x86  
     ```  
   
     veya
   
     ```cmd  
-    msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
+    msbuild file.proj -p:Flavor=Debug -p:Platform=x86  
     ```  
   
  Ortam değişkenlerini de özellik olarak kabul edilir ve tarafından otomatik olarak eklenen [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Ortam değişkenlerini kullanma hakkında daha fazla bilgi için bkz. [nasıl yapılır: derlemede ortam değişkenlerini kullanma](../msbuild/how-to-use-environment-variables-in-a-build.md).  
@@ -92,13 +92,13 @@ Projeleri oluşturduğunuzda, farklı bir derleme seçenekleri ile aynı bileşe
  Bu projede hata ayıklama sürümünü oluşturmak için şunu yazın:  
   
 ```cmd  
-msbuild consolehwcs1.proj /p:flavor=debug  
+msbuild consolehwcs1.proj -p:flavor=debug  
 ```  
   
  Bu proje perakende sürümünü oluşturmak için şunu yazın:  
   
 ```cmd  
-msbuild consolehwcs1.proj /p:flavor=retail  
+msbuild consolehwcs1.proj -p:flavor=retail  
 ```  
   
 ```xml  
@@ -159,7 +159,7 @@ msbuild consolehwcs1.proj /p:flavor=retail
  Projeyi oluşturmak için aşağıdaki komutu girin:  
   
 ```cmd  
-msbuild colortest.proj /t:go /property:Color=Green  
+msbuild colortest.proj -t:go -property:Color=Green  
 ```  
   
 ```xml  

@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 418307fc1390b8a1518be621c3e903a18ef39c73
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a453f7e926175b6ebf4825d015626e0f81688f35
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695036"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879388"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Nasıl Yapılır: Kod Merkezi Birincil Kaynağı ile Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: Kod Merk
   
 5.  NET **yalnızca benim kodumu etkinleştir (sadece yönetilen)** onay kutusu.  
   
-6.  Seçin **etkinleştirme kaynak sunucusu desteğini etkinleştir**.  
+6.  Seçin **kaynak sunucusu desteğini etkinleştir**.  
   
 7.  NET **özgün sürümle kaynak dosyaların uyuşmasını gerektir**.  
   

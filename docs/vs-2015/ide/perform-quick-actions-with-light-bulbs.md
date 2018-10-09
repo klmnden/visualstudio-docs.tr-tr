@@ -14,17 +14,17 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9cd00bf08a48c1763ab72e6b30579e81e870c1a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd0c28f55be540207c7590e068c0b5f93a2abc39
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634246"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880818"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>Ampullerle hızlı eylemler gerçekleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio 2017 belgeleri](https://docs.microsoft.com/en-us/visualstudio/).  
+Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio 2017 belgeleri](/visualstudio/).  
   
 Ampuller, Visual Studio 2015'te yeni bir üretkenlik özelliğidir. Visual Studio Düzenleyicisi'nde görüntülenen ve yeniden düzenleme hataların giderilmesi de dahil olmak üzere hızlı eylemler gerçekleştirmek üzere tıklayabileceği simgeleri değildirler. Ampuller, hatanın düzeltilmesi getirin ve tek bir odak noktasına Yardım yeniden düzenleme genellikle burada yazdığınız satırına sağ.  
   

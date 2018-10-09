@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8de1d8777f7f4b232ed4dcc2dabe69e0c1712fdf
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 0da7118d1ee420e5e4a415ea8f32d9ba8f1771e6
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321248"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880103"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] Uygulamaları oluşturmaya yönelik bir platformdur. MSBuild olarak da bilinen olduğundan, bu altyapı, yapı platformunu nasıl işler ve yazılım yapıları denetleyen bir proje dosyası için bir XML Şeması sağlar. Visual Studio MSBuild kullanır, ancak Visual Studio'ya bağımlı değildir. Çağırarak *msbuild.exe* proje veya çözüm dosya düzenlemek ve Visual Studio'nun yüklü olmayan ortamlarda ürünler oluşturun.
@@ -56,7 +56,7 @@ Visual Studio IDE'de kod yazabilir buna karşın derlemeleri Msbuild'i kullanara
  Çalıştırılacak [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bir proje dosyası için bir komut isteminde geçirmek *MSBuild.exe*uygun komut satırı seçenekleriyle birlikte. Komut satırı seçenekleri özellikleri ayarlamak, belirli hedefleri yürütmenizi ve yapı işlemini denetleyen diğer seçenekleri belirlemenizi sağlar. Örneğin, dosyayı oluşturmak için aşağıdaki komut satırı sözdizimini kullanırsınız *MyProj.proj* ile `Configuration` özelliğini `Debug`.
 
 ```cmd
-MSBuild.exe MyProj.proj /property:Configuration=Debug
+MSBuild.exe MyProj.proj -property:Configuration=Debug
 ```
 
  Hakkında daha fazla bilgi için [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] komut satırı seçenekleri görmek [komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md).

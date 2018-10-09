@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: e83aec143d2b7fdb6ed7a338b6a726aa81147e7f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 95184d5f73e2ec4aaa7339da77096108abbc3bda
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280746"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880428"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 için proje geçiş ve yükseltme başvurusu
 
@@ -41,7 +41,7 @@ Mevcut bu makalede, Visual Studio 2017 geçirebileceğiniz proje türleri için 
 
 Aşağıdaki listede, önceki sürümlerde oluşturulmuş projeler için Visual Studio 2017 desteği açıklanmaktadır.
 
-Bir proje görmüyorsanız veya dosya türü listelenen Burada, olması, başvurun [bu makalede Visual Studio 2015 sürümünü](port-migrate-and-upgrade-visual-studio-projects.md) ve projenizin ayrıntılarını sağlamak için bu sayfanın altındaki "belgeleri geri bildirimde bulunun" seçeneğini kullanın. (Bir yanıt isterseniz, belge geri bildirimi kullanmak yerine "Bu sayfa faydalı anonimdir?" Denetim.)
+Bir proje görmüyorsanız veya dosya türü listelenen Burada, olması, başvurun [bu makalede Visual Studio 2015 sürümünü](https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015) ve projenizin ayrıntılarını sağlamak için bu sayfanın altındaki "belgeleri geri bildirimde bulunun" seçeneğini kullanın. (Bir yanıt isterseniz, belge geri bildirimi kullanmak yerine "Bu sayfa faydalı anonimdir?" Denetim.)
 
 | Proje Türü | Destek |
 | --- | --- |

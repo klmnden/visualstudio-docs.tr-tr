@@ -19,17 +19,17 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74302bb9aea552bfc4e8fedc93fd7aebc69fb4b2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3801fb58f09ac70c26e21304957e31f7b3ec4ddc
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687547"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881026"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>JavaScript IntelliSense için XML belge açıklamaları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio 2017 belgeleri](https://docs.microsoft.com/en-us/visualstudio/).  
+Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio 2017 belgeleri](/visualstudio/).  
   
 *XML belgeleri yorumları* olan JavaScript yorumları işlevleri, alanları ve değişkenler gibi kod öğeleri hakkında bilgi sağlamak için bir komut ekleyin. Betik işlevi başvurduğunuzda, Visual Studio'da bu metin açıklamaları IntelliSense ile görüntülenir.  
   

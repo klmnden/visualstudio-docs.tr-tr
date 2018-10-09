@@ -16,12 +16,12 @@ ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 34cf96f38d169994d85f758c9453b6ad15ad6390
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 99561ea9e1fe46f5e0f90bf994c8b9eaf4b11d32
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677642"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880538"
 ---
 # <a name="registering-an-expression-evaluator"></a>İfade Değerlendiricisi Kaydetme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

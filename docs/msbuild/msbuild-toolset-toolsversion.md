@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 061065b23aa8a2e7504b32358628ec4e0b3f4b47
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 1c94ec84d322a8947af72dbc0a4c7aac2c79ae8b
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153166"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880194"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Araç Takımı (ToolsVersion)
 MSBuild, bir uygulama oluşturmak için bir araç takımı görevleri, hedefler ve araçları kullanır. MSBuild araç takımı genellikle içerir bir *microsoft.common.tasks* dosyası bir *microsoft.common.targets* dosya ve derleyiciler gibi *csc.exe* ve  *Vbc.exe*. Çoğu araç takımları, .NET Framework'ün birden fazla sürümü ve birden fazla sistemi platformu uygulamaları derlemek için kullanılabilir. Ancak, MSBuild 2.0 araç takımı, yalnızca .NET Framework 2.0 hedeflemek için kullanılabilir.  
@@ -40,7 +40,7 @@ MSBuild, bir uygulama oluşturmak için bir araç takımı görevleri, hedefler 
   
  Olduğunda bir `ToolsVersion` değer proje dosyasında tanımlanan, MSBuild, proje için kullanılabilir araç takımı özelliklerin değerlerini belirlemek için bu değeri kullanır. Bir araç takımı özelliği `$(MSBuildToolsPath)`, .NET Framework Araçları yolunu belirtir. Yalnızca bu araç takımı özelliği (veya `$(MSBuildBinPath)`), gerekli değildir.  
   
- Visual Studio 2013'te başlayarak, MSBuild araç takımı sürümü Visual Studio sürüm numarası ile aynı olur. Varsayılan olarak bu araç, Visual Studio içinden ve proje dosyasında belirtilen araç takımının sürüm ne olursa olsun komut satırında MSBuild.  Bu davranış /ToolsVersion bayrağı kullanılarak geçersiz kılınabilir. Daha fazla bilgi için [geçersiz kılma ToolsVersion ayarlarını](../msbuild/overriding-toolsversion-settings.md).  
+ Visual Studio 2013'te başlayarak, MSBuild araç takımı sürümü Visual Studio sürüm numarası ile aynı olur. Varsayılan olarak bu araç, Visual Studio içinden ve proje dosyasında belirtilen araç takımının sürüm ne olursa olsun komut satırında MSBuild.  Bu davranış - ToolsVersion bayrağı kullanılarak geçersiz kılınabilir. Daha fazla bilgi için [geçersiz kılma ToolsVersion ayarlarını](../msbuild/overriding-toolsversion-settings.md).  
   
  Aşağıdaki örnekte, MSBuild bulur *Microsoft.CSharp.targets* kullanarak dosya `MSBuildToolsPath` ayrılmış özelliği.  
   
@@ -119,4 +119,4 @@ Alt araç takımları .NET Framework 4. 5 ' kullanılmaya başlanmıştır.
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Standart ve özel araç takımı yapılandırmaları](../msbuild/standard-and-custom-toolset-configurations.md)   
- [Çoklu sürüm desteği](../msbuild/msbuild-multitargeting-overview.md)
+ [Çoklu Sürüm Desteği](../msbuild/msbuild-multitargeting-overview.md)

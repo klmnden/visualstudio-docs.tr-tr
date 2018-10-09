@@ -18,12 +18,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: ghogen
-ms.openlocfilehash: 2f58a6b22aa2e7274c6fcf8d702d264a9a592c33
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 75c234b2a3b16d3bcbe05da9f0818c73be0412db
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280044"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880805"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017'de JavaScript
 
@@ -64,7 +64,7 @@ Tsconfig dosya için gerekli ayarları aşağıdaki gibidir:
  Proje-olmayan klasörler gibi yanı sıra çıkış konumunu `node_modules` veya `temp`, bu ayarı eklenmesi gerekir.
  - `enableAutoDiscovery`: Bu ayar, daha önce belirtildiği gibi otomatik algılama ve tanım dosyalarını indirilmesini sağlar.
  - `compileOnSave`: Bu ayar, Visual Studio'da herhangi bir kaynak dosyası kaydedildiğinde derlemeniz, derleyiciye bildirir.
- - `typeAcquisition`: Bu ayarları kümesi otomatik tür alımı davranışını denetleyen (daha ayrıntılı olarak açıklayın [Bu bölümde](https://docs.microsoft.com/en-us/visualstudio/ide/javascript-intellisense#Auto))
+ - `typeAcquisition`: Bu ayarları kümesi otomatik tür alımı davranışını denetleyen (daha ayrıntılı olarak açıklayın [Bu bölümde](/visualstudio/ide/javascript-intellisense#Auto))
 
 CommonJS modüller için JavaScript dosyalarını dönüştürmek ve bunları yerleştirmek için bir `./out` klasöründe aşağıdaki kullanabileceğinizi `tsconfig.json` dosyası:
 

@@ -14,23 +14,23 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3cb31a79af25fbe66112efd6be0aacd9b3c3820d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 95b4599c8e3b3a65bdcca4519a6beaa2e1364e96
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693735"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879337"
 ---
 # <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>Nasıl yapılır: Komut İsteminden Profil Oluşturucu Karşılaştırma Raporu Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: bir komut isteminden bir Profiler Karşılaştırma raporu oluşturma](https://docs.microsoft.com/visualstudio/profiling/how-to-create-a-profiler-comparison-report-from-a-command-prompt).  
   
-Oluşturabileceğiniz bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] profil oluşturma araçları rapor iki profil oluşturma verilerinin performans verilerini karşılaştırır (. VSP ya. VSPS) dosyaları. Rapor gösterir farklar, performans gerilemeleri ve bir profil oluşturma oturumundan diğerine oluştu geliştirmeleri gösterilmektedir. Rapordaki değerler delta veya belirttiğiniz ilk dosyanın temel bir değişiklik sunar. Bu delta temel değeri olan eski değer sonuç değeri arasındaki farkı yeni analiz belirleyerek hesaplanır. Profil Oluşturucu veri karşılaştırmalarını temel işlevler kodu, uygulama, çizgiler, yönerge işaretçileri (IP) ve türleri modüllerde alabilir.  
+Oluşturabileceğiniz bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] profil oluşturma araçları rapor iki profil oluşturma verilerinin performans verilerini karşılaştırır (. VSP ya. VSPS) dosyaları. Rapor farklar, performans gerilemeleri ve bir profil oluşturma oturumundan diğerine oluştu iyileştirmeleri gösterir. Rapordaki değerler delta veya belirttiğiniz ilk dosyanın temel bir değişiklik sunar. Bu delta temel değeri olan eski değer sonuç değeri arasındaki farkı yeni analiz belirleyerek hesaplanır. Profil Oluşturucu veri karşılaştırmalarını temel işlevler kodu, uygulama, çizgiler, yönerge işaretçileri (IP) ve türleri modüllerde alabilir.  
   
  Tanımlayıcıları karşılaştırma kategorileri ve alanların listesi için aşağıdaki komutu yazın:  
   
- **VSPerfReport/querydifftables***VspFileName1* *VspFileName2*   
+ **VSPerfReport/querydifftables***VspFileName1* *VspFileName2*  
   
  Karşılaştırma raporu oluşturmak için aşağıdaki sözdizimini kullanın:  
   

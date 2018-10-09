@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cd9884c950d7cf6adefe997cf13fdd78fa7203d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d7316c6096be59ee7781e116fa26e87623ccec27
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279407"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881104"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Android için Visual Studio öykünücüsü sistem gereksinimleri
 Android için Visual Studio öykünücü Hyper-V sanallaştırma teknolojisini Windows 8 ve sonraki sürümler için bir sanal makine olarak çalışır. Öykünücüyü çalıştırmak için bilgisayarınızda bu konuda açıklandığı gibi Hyper-V çalıştırma gereksinimlerini karşılaması gerekir.  
@@ -127,11 +127,11 @@ Android için Visual Studio öykünücü Hyper-V sanallaştırma teknolojisini W
  Öykünücü çalıştırdığınızda, zaten Hyper-V Yöneticileri grubunun bir üyesi değilseniz, (Windows Phone öykünücüsü için iletişim kutusu atıfta bulunmaktadır) bir gruba katılması istenir. Gruba katılıyor yönetici hakları gerekir.  
   
 > [!IMPORTANT]
->  Gruba katıldıktan sonra oturumunu kapatmanız veya etkili değişiklik yapmak için yeniden başlatın.  
+> Gruba katıldıktan sonra oturumunu kapatmanız veya etkili değişiklik yapmak için yeniden başlatın.  
   
  ![Birleştirme Hyper&#45;V Administrators güvenlik grubunun](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")  
   
- Kendiniz bir gruba el ile eklemek için yerel kullanıcılar ve Gruplar ek bileşenini açın. Daha fazla bilgi için [bir gruba bir kullanıcı hesabı eklemek](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7). (Windows 7 bölümüne, ayrıca Windows 8 için geçerlidir.)  
+ Kendiniz bir gruba el ile eklemek için yerel kullanıcılar ve Gruplar ek bileşenini açın.  
   
 ##  <a name="BootableVHD"></a> Önyüklenebilir bir VHD'den öykünücüyü çalıştırma desteklenmiyor  
  Önyüklenebilir bir VHD'den Windows çalışırken bir uygulamayı Android için Visual Studio öykünücü üzerinde çalıştırmayı denerseniz öykünücü genellikle başlaması birkaç dakika sürer veya başlatılamıyor. Öykünücü başlatmak başarısız olduğunda, aşağıdaki iletiyi görürsünüz: uygulama dağıtımı başarısız oldu. Lütfen yeniden deneyin.  

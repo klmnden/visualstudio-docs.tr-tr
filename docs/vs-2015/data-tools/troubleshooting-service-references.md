@@ -20,12 +20,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6d9510bf667b95dde4619f469b51041c07c0b4e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 696c6f2a0e738d965b5992e3df52a77831ab27a0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690499"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880896"
 ---
 # <a name="troubleshooting-service-references"></a>Hizmet Başvurularında Sorun Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,9 +70,9 @@ Bu konu ile çalışırken oluşabilecek genel sorunları listelemektedir [!INCL
 ## <a name="error-debugging-service-code"></a>Hata ayıklama hizmet kodu
  İstemci kodundan bir WCF hizmeti için kodun içine adımladığınızda eksik sembollere ilgili bir hata alabilirsiniz. Çözümünüzün bir parçası olan bir hizmeti taşındığında veya çözümden kaldırıldı. Bu durum oluşabilir.
 
- İlk geçerli çözümün bir parçası olan bir WCF hizmeti bir başvuru eklediğinizde, hizmet istemci projesi ve hizmet projesi arasında açık derleme bağımlılık eklenir. Bu, güncel hizmet ikili dosyaları, her zaman erişen istemci kodundan hizmet kodun içine Adımlama gibi senaryoları hata ayıklama için özellikle önemli olduğu istemci güvence altına alır.
+ İlk geçerli çözümün bir parçası olan bir WCF hizmeti bir başvuru eklediğinizde, hizmet istemci projesi ve hizmet projesi arasında açık derleme bağımlılık eklenir. Bu, istemci her zaman güncel hizmet ikili dosyaları, istemci kodundan hizmet kodun içine Adımlama gibi senaryoları hata ayıklama için özellikle önemli olduğu erişimi olduğunu garanti eder.
 
- Hizmet projeyi çözümden kaldırılırsa, bu açık derleme bağımlılık geçersiz kılınır. Visual Studio artık, hizmet projesi yapılana gerektiğinde garanti edebilir.
+ Hizmet projeyi çözümden kaldırılırsa, bu açık derleme bağımlılık geçersiz kılınır. Visual Studio artık hizmet projesi yapılana gerektiğinde garanti edebilir.
 
  Bu hatayı düzeltmek için hizmet projesi el ile yeniden oluşturmanız gerekir:
 
@@ -105,4 +105,4 @@ Bu konu ile çalışırken oluşabilecek genel sorunları listelemektedir [!INCL
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Windows Communication Foundation Hizmetleri ve Visual Studio'da WCF Veri Hizmetleri](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Visual Studio'da Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

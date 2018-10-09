@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8fc3ce425f2eaf6052d1e301d23c00d3503daec
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e0cbbcbc57d07eaf6273545f5520e461c7578977
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179989"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879091"
 ---
 # <a name="build-loggers"></a>Günlükçüleri derleme
 Günlükçüleri derleme çıkışını özelleştirebilir ve belirli bir yapı olaylarına yanıt olarak iletileri, hata veya uyarı görüntülemek bir yol sağlar. Her bir Günlükçü uygulayan bir .NET sınıfı uygulanır <xref:Microsoft.Build.Framework.ILogger> tanımlanan arabirimi *Microsoft.Build.Framework.dll* derleme.  
@@ -43,25 +43,25 @@ Günlükçüleri derleme çıkışını özelleştirebilir ve belirli bir yapı 
  [!code-csharp[msbuild_SimpleConsoleLogger#3](../msbuild/codesnippet/CSharp/build-loggers_2.cs)]  
   
 ## <a name="respond-to-logger-verbosity-values"></a>Günlükçü ayrıntı değerlerine yanıt  
- Bazı durumlarda yalnızca bilgileri, bir olay günlüğe isteyebilirsiniz MSBuild.exe **/verbosity** anahtarını belirli bir değer içeriyor. Bu örnekte, <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> olay işleyicisi, bir ileti yalnızca günlükleri <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> tarafından ayarlanan özellik **/verbosity** değiştirmek, eşittir <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed`.  
+ Bazı durumlarda yalnızca bilgileri, bir olay günlüğe isteyebilirsiniz MSBuild.exe **-ayrıntı** anahtarını belirli bir değer içeriyor. Bu örnekte, <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> olay işleyicisi, bir ileti yalnızca günlükleri <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> tarafından ayarlanan özellik **-ayrıntı** değiştirmek, eşittir <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed`.  
   
  [!code-csharp[msbuild_SimpleConsoleLogger#4](../msbuild/codesnippet/CSharp/build-loggers_3.cs)]  
   
 ## <a name="specify-a-logger"></a>Bir Günlükçü belirtin  
- Günlükçü bütünleştirilmiş kod içine derlenmiş olan bir kez söylemeniz gerekir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bu Günlükçü yapılar sırasında kullanılacak. Bu yapılır kullanarak **/logger** anahtarı ile *MSBuild.exe*. Kullanılabilir anahtarları hakkında daha fazla bilgi için *MSBuild.exe*, bkz: [komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md).  
+ Günlükçü bütünleştirilmiş kod içine derlenmiş olan bir kez söylemeniz gerekir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bu Günlükçü yapılar sırasında kullanılacak. Bu yapılır kullanarak **-Günlükçü** anahtarı ile *MSBuild.exe*. Kullanılabilir anahtarları hakkında daha fazla bilgi için *MSBuild.exe*, bkz: [komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md).  
   
- Aşağıdaki komut satırını projeyi derler *MyProject.csproj* Günlükçü sınıfı içinde uygulanan kullanır *SimpleLogger.dll*. **/Nologo** anahtar başlığını ve telif hakkı iletisini gizler ve **/noconsolelogger** anahtarı varsayılan devre dışı bırakır [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] konsol Günlükçü.  
+ Aşağıdaki komut satırını projeyi derler *MyProject.csproj* Günlükçü sınıfı içinde uygulanan kullanır *SimpleLogger.dll*. **- Nologo** anahtar başlığını ve telif hakkı iletisini gizler ve **- noconsolelogger** anahtarı varsayılan devre dışı bırakır [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] konsol Günlükçü.  
   
 ```cmd  
-MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll  
+MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll  
 ```  
   
  Aşağıdaki komut satırını, aynı Günlükçü ancak ile projeyi oluşturur bir `Verbosity` düzeyini `Detailed`.  
   
 ```cmd  
-MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed  
+MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed  
 ```  
-  
+
 ## <a name="example"></a>Örnek  
   
 ### <a name="description"></a>Açıklama  

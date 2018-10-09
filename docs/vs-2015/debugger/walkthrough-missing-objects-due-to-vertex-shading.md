@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13d0bcf02bb46de9116ab4dbd33b4a034c786252
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b180eed67b617cd7e46610b78865fe0ae088d85e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694862"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879830"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>İzlenecek Yol: Köşe Gölgeleme Nedeniyle Nesnelerin Eksikliği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir [!INCLUDE[vsprvs](../inc
     > [!TIP]
     >  Uygulamanız aynı anda hata ayıklaması yapıyorsanız bu konumda bir kesme noktası ayarlayabilirsiniz ve sonraki kare işlendiğinde ulaşılır. Ardından üyelerini inceleyebilirsiniz `m_marbleConstantBufferData` onaylamak için değerini `projection` üyesi sabit arabelleğini dolduğunda tümü sıfır olarak ayarlayın.  
   
- Burada sabit arabelleğini doldurulur konumu bulun ve değerleri değişkeninden gelen olduğunu fark sonra `m_marbleConstantBufferData`, sonraki adıma nereden bulmaktır `m_marbleConstantBufferData.projection` üye tümü sıfır olarak ayarlanır. Kullanabileceğiniz **tüm başvuruları Bul** hızla değerini değiştirir kodunu tarama `m_marbleConstantBufferData.projection`.  
+ Burada sabit arabelleğini doldurulur konum bulun ve değerleri değişkeninden geldiğini bulmak sonra `m_marbleConstantBufferData`, sonraki adıma nereden bulmaktır `m_marbleConstantBufferData.projection` üye tümü sıfır olarak ayarlanır. Kullanabileceğiniz **tüm başvuruları Bul** hızla değerini değiştirir kodunu tarama `m_marbleConstantBufferData.projection`.  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>Yansıtma üyesi, uygulamanızın kaynak kodunda belirlendiği bulmak için  
   

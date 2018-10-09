@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 109d95202d5ce67b2bdda1aab61d1b725a3ac23c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 3c8835dab5ca866762a7d2b0e6cad1d0d80726b0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080756"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879207"
 ---
 # <a name="msbuild-properties"></a>MSBuild özellikleri
 Özellikler, yapıları yapılandırmak için kullanılabilen ad-değer çiftleridir. Özellikler, değerlerin görevlere geçirilmesinde, koşulların değerlendirilmesinde ve proje dosyası boyunca başvurulacak olan değerlerin depolanmasında yararlıdır.  
@@ -84,12 +84,12 @@ $(registry:Hive\MyKey\MySubKey)
 ```  
   
 ## <a name="global-properties"></a>Genel Özellikler  
- MSBuild kullanarak komut satırındaki özellikleri ayarlamanızı sağlar **/Property** (veya **/p**) geçin. Bu genel özellik değerleri proje dosyasında ayarlanan özellik değerlerini geçersiz kılar. Bu ortam özellikleri içerir, ancak değiştirilemeyen ayrılmış özellikleri içermez.  
+ MSBuild kullanarak komut satırındaki özellikleri ayarlamanızı sağlar **-özellik** (veya **-p**) geçin. Bu genel özellik değerleri proje dosyasında ayarlanan özellik değerlerini geçersiz kılar. Bu ortam özellikleri içerir, ancak değiştirilemeyen ayrılmış özellikleri içermez.  
   
  Aşağıdaki örnek genel `Configuration` özelliğini `DEBUG` olarak ayarlar.  
   
 ```cmd  
-msbuild.exe MyProj.proj /p:Configuration=DEBUG  
+msbuild.exe MyProj.proj -p:Configuration=DEBUG  
 ```  
   
  Genel özellikler, MSBuild görevinin `Properties` özniteliğini kullanarak aynı zamanda çoklu bir proje yapısındaki alt projeler için ayarlanabilir veya değiştirilebilir. Genel özellikler de iletilir alt projeler sürece `RemoveProperties` MSBuild görevinin özniteliği değil iletmek için özelliklerin listesini belirtmek için kullanılır. Daha fazla bilgi için [MSBuild görevi](../msbuild/msbuild-task.md).

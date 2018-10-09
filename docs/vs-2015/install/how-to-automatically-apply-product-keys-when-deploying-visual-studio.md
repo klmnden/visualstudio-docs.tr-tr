@@ -14,17 +14,17 @@ caps.latest.revision: 11
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 45ed6a059c0a9cf9ae5063e538ec9b9c87698ef1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 07f09cbc2deedaeb701a52ffc09532e36e30c308
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687484"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879080"
 ---
 # <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Nasıl Yapılır: Visual Studio’yu dağıtırken ürün anahtarlarını otomatik olarak uygulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 için en son belgeler için bkz. [Visual Studio'yu dağıtırken ürün anahtarlarını otomatik olarak uygulama](https://docs.microsoft.com/en-us/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
+Visual Studio 2017 için en son belgeler için bkz. [Visual Studio'yu dağıtırken ürün anahtarlarını otomatik olarak uygulama](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
 
 Ürün anahtarınızı program aracılığıyla Visual Studio 2015'in dağıtımını otomatikleştirmek için kullanılan bir komut dosyası bir parçası olarak uygulayabilirsiniz. Ürün anahtarları bir cihazda program aracılığıyla Visual Studio'nun veya bir tamamlandıktan sonra yükleme sırasında ayarlanabilir.  
   

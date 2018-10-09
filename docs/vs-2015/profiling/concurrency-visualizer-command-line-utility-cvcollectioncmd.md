@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1925a240c011e4a9e7ede1a0aeb673b5d33c23bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dbc4f235d56554b37033703158126a003ddbca93
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627535"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880831"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Eşzamanlılık Görselleştiricisi Komut Satırı Yardımcı Programı (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [eşzamanlılık görselle�
 Eşzamanlılık görselleştiricisi komut satırı yardımcı programının (CVCollectionCmd.exe), böylece bunları Visual Studio eşzamanlılık görselleştiricisi içinde görüntüleyebilirsiniz, komut satırından izlemeleri toplamak için kullanabilirsiniz. Havuzlar, Visual Studio yüklü olmayan bilgisayarlarda kullanılabilir.  
   
 > [!NOTE]
->  Visual Studio 2013 itibariyle, Concurrency Visualizer isteğe bağlı uzantısıdır. (Daha önce Visual Studio'ya dahil.) İndirebileceğiniz [Eşzamanlılık Görselleştirici toplama araçları Visual Studio 2015 için](http://www.microsoft.com/en-in/download/details.aspx?id=49103) İndirme Merkezi'nden.  
+>  Visual Studio 2013 itibariyle, Concurrency Visualizer isteğe bağlı uzantısıdır. (Daha önce Visual Studio'ya dahil.) İndirebileceğiniz [Eşzamanlılık Görselleştirici toplama araçları Visual Studio 2015 için](http://www.microsoft.com/download/details.aspx?id=49103) İndirme Merkezi'nden.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Eşzamanlılık görselleştiricisi komut satırı yardımcı programını indirin  
- Komut satırı yardımcı programını yüklemek ve indirmek için Git [Eşzamanlılık Görselleştirici toplama araçları Visual Studio 2015 için](http://www.microsoft.com/en-in/download/details.aspx?id=49103) ve yönergeleri izleyin. Varsayılan olarak %ProgramFiles%\Microsoft eşzamanlılık görselleştiricisi koleksiyon Tools\ içinde CVCollectionCmd.exe yüklenir (% ProgramFiles (x86) %\Microsoft eşzamanlılık görselleştiricisi koleksiyon Tools\ içinde x64 bilgisayarlar).  
+ Komut satırı yardımcı programını yüklemek ve indirmek için Git [Eşzamanlılık Görselleştirici toplama araçları Visual Studio 2015 için](http://www.microsoft.com/download/details.aspx?id=49103) ve yönergeleri izleyin. Varsayılan olarak %ProgramFiles%\Microsoft eşzamanlılık görselleştiricisi koleksiyon Tools\ içinde CVCollectionCmd.exe yüklenir (% ProgramFiles (x86) %\Microsoft eşzamanlılık görselleştiricisi koleksiyon Tools\ içinde x64 bilgisayarlar).  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>CVCollectionCmd ile bir izleme toplamak  
  Uygulama ile CVCollectionCmd başlatarak veya eklemeyi, bir izleme toplayabilirsiniz. Aşağıdaki komut başvurusu seçenekleri için bkz. Örneğin  

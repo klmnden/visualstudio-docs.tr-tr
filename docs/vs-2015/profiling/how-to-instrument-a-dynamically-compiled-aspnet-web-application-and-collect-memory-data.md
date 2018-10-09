@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 37ace853b737f7e7031ac003240463d250fd49f9
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 4693b7e1b0b274c9166bfa4f8d25531433a566bb
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43231285"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879317"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Nasıl yapılır: Profil Oluşturucu Komut Satırını Kullanarak Dinamik Olarak Derlenmiş bir ASP.NET Web Uygulamasını İzleme ve Bellek Verileri Toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: Profiler
 Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ayrıntılı .NET bellek ayırma ve nesne yaşam süresi verilerini dinamik olarak derlenmiş toplamak için profil oluşturma araçları komut satırı araçlarının [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web uygulamasını izleme profili oluşturma yöntemi kullanarak.  
   
 > [!NOTE]
->  Profil araçlarının komut satırı araçları tools\performance Tools alt dizininde içinde bulunan [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] yükleme dizini. 64 bit bilgisayarlarda araçların 64-bit hem 32 bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya ona komutun kendisine eklemeniz gerekir. Daha fazla bilgi için [komut satırı araçları yolunu belirtme](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Profil araçlarının komut satırı araçları tools\performance Tools alt dizininde içinde bulunan [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] yükleme dizini. 64 bit bilgisayarlarda araçların 64-bit hem 32 bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir. Daha fazla bilgi için [komut satırı araçları yolunu belirtme](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
  Performans verileri toplamak için bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web uygulamasını etkinleştirmek için hedef uygulamanın web.config dosyasını değiştirme [VSInstr.exe](../profiling/vsinstr.md) dinamik olarak derlenmiş uygulama dosyaları araç haline getirmek için aracı. Daha sonra [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) barındıran sunucuyu yapılandırmak için aracı [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web uygulaması ve uygun ortam değişkenlerini ayarlayarak .NET bellek profili oluşturmayı etkinleştirin ve ardından bilgisayarı yeniden başlatın.  
   
@@ -79,7 +79,7 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprv
     |Seçenek|Açıklama|  
     |------------|-----------------|  
     |[/ User](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Sahibi olan hesabının isteğe bağlı etki alanı ve kullanıcı adını belirtir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] çalışan işlemi. Bu seçenek, oturum açan kullanıcının farklı bir kullanıcı olarak işlem çalışıyorsa gereklidir. Adı, Windows Görev Yöneticisi'nin İşlemler sekmesinde kullanıcı adı sütununda listelenir.|  
-    |[/ crosssession](../profiling/crosssession.md)|Etkinleştirir, diğer oturumlarda işlemleri profil oluşturma. Bu seçenek, başka bir oturumda uygulama çalışıyorsa gereklidir. Oturum kimliği oturum kimliği sütununda listelenir Windows Görev Yöneticisi'nin İşlemler sekmesinde. **/CS** için bir kısaltma olarak belirtilebilir **/crosssession**.|  
+    |[/ crosssession](../profiling/crosssession.md)|Etkinleştirir, diğer oturumlarda işlemleri profil oluşturma. Bu seçenek, başka bir oturumda uygulama çalışıyorsa gereklidir. Oturum kimliği, Windows Görev Yöneticisi'nin İşlemler sekmesinde oturum kimliği sütununda listelenir. **/CS** için bir kısaltma olarak belirtilebilir **/crosssession**.|  
     |[/globaloff](../profiling/globalon-and-globaloff.md)|Profil Oluşturucu veri koleksiyonu duraklatıldı başlatır. Kullanım [/globalon](../profiling/globalon-and-globaloff.md) profil oluşturmayı devam ettirmek için.|  
     |[/ Sayaç](../profiling/counter.md) **:** `Config`|Belirtilen sayaç işlemci performans bilgilerini toplar `Config`. Sayaç bilgileri, her profil oluşturma etkinliğinde toplanan verilere eklenir.|  
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Profil oluşturma sırasında Tahsil edilecek Windows performans sayacı belirtir.|  

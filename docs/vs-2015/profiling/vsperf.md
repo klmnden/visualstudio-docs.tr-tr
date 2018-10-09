@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e064460c0b707ba033f0f1643e2e0ad35601141
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f57318867ac758be0652d30154a30aa1d285b7c2
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695709"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879159"
 ---
 # <a name="vsperf"></a>VSPerf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Kullanım **VsPerf** komut satırı aracı:
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
- [Komut satırından profil oluşturma](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [Komut Satırından Profil Oluşturma](../profiling/using-the-profiling-tools-from-the-command-line.md)
 
 
 

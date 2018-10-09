@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 125fb107bcb40510ad8196c26c9538ef505d2093
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f9d039d6f6f5593538063e751348148786667000
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079128"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879063"
 ---
 # <a name="how-to-clean-a-build"></a>Nasıl yapılır: derlemeyi temizleme
 Derlemeyi temizleme, yalnızca proje ve bileşen dosyalarını bırakarak tüm ara ve Çıkış dosyalarını silinir. Proje ve bileşen dosyalarından yeni örneklerini Ara ve çıkış dosyalarının sonra oluşturulabilir. Kitaplığı ile sağlanan ortak görevler [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] içeren bir [Exec](../msbuild/exec-task.md) sistem komutlarını çalıştırmak için kullanabileceğiniz bir görev. Görevleri Kitaplığı hakkında daha fazla bilgi için bkz. [görev başvurusu](../msbuild/msbuild-task-reference.md).  
@@ -53,13 +53,13 @@ Derlemeyi temizleme, yalnızca proje ve bileşen dosyalarını bırakarak tüm a
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod projesini içeren yeni bir hedef örneği `Clean`, kullanan `RemoveDir` bir dizin ve tüm dosyaları ve içerdiği dizinleri silmek için görev. Ayrıca bu örnekte, `Compile` hedef derleme temizlendiğinde silinir çıktı öğeleri için ayrı bir dizin oluşturur.  
   
- `Compile` varsayılan hedef olarak tanımlanır ve farklı bir hedef veya hedefleri belirtmediğiniz sürece bu nedenle otomatik olarak kullanılır. Komut satırı anahtarını kullanmanız **/target** farklı bir hedef belirtmek için. Örneğin:  
+ `Compile` varsayılan hedef olarak tanımlanır ve farklı bir hedef veya hedefleri belirtmediğiniz sürece bu nedenle otomatik olarak kullanılır. Komut satırı anahtarını kullanmanız **-hedef** farklı bir hedef belirtmek için. Örneğin:  
   
- `msbuild <file name>.proj /target:Clean`  
+ `msbuild <file name>.proj -target:Clean`  
   
- **/Target** anahtarı kısalttık için **/t** ve birden fazla hedef belirtebilirsiniz. Örneğin, hedef kullanılacak `Clean` hedef `Compile`, türü:  
+ **-Hedef** anahtarı kısalttık için **-t** ve birden fazla hedef belirtebilirsiniz. Örneğin, hedef kullanılacak `Clean` hedef `Compile`, türü:  
   
- `msbuild <file name>.proj /t:Clean;Compile`  
+ `msbuild <file name>.proj -t:Clean;Compile`  
   
 ```xml  
 <Project DefaultTargets = "Compile"  

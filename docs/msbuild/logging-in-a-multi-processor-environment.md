@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 864b60a7f2262803e9a25b967831c35202799cd5
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 6f418c9f3823aaceb4237546cadc68ea2f2bf95e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077584"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879259"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Birden çok işlemcili ortamda oturum açma
 Birden çok işlemci kullanma yeteneğini MSBuild proje süre oluşturmanın önemli ölçüde azaltabilir, ancak ayrıca günlüğe kaydetme için karmaşıklık ekler. Bir tek işlemcili ortamda Günlükçü gelen olayları, iletileri, uyarılar ve hatalar sıralı tahmin edilebilir bir şekilde işleyebilir. Ancak, birden çok işlemcili ortamda, çeşitli kaynaklardan gelen olaylar aynı anda veya sıra dışı gelmesi. MSBuild özel "iletme günlükçüleri." oluşturmayı etkinleştirir ve birden çok işlemciye duyarlı olan yeni bir Günlükçü sağlar  
@@ -62,15 +62,15 @@ public interface IForwardingLogger: INodeLogger
  Daha fazla bilgi için [iletme günlükçüleri oluşturma](../msbuild/creating-forwarding-loggers.md).  
   
 ### <a name="attaching-a-distributed-logger"></a>Dağıtılmış bir Günlükçü ekleme  
- Bir komut satırı derleme üzerinde dağıtılmış bir Günlükçü eklemek için kullanın `/distributedlogger` (veya `/dl` kısaca) geçin. Günlükçü türlerin ve sınıfların adlarını belirtmek için biçim aynıdır olanlar için `/logger` geçiş dışında dağıtılmış bir Günlükçü iki günlük kaydı sınıfları oluşur: bir iletme Günlükçü ve merkezi bir Günlükçü. Dağıtılmış bir Günlükçü ekleme bir örneği verilmiştir:  
+ Bir komut satırı derleme üzerinde dağıtılmış bir Günlükçü eklemek için kullanın `-distributedlogger` (veya `-dl` kısaca) geçin. Günlükçü türlerin ve sınıfların adlarını belirtmek için biçim aynıdır olanlar için `-logger` geçiş dışında dağıtılmış bir Günlükçü iki günlük kaydı sınıfları oluşur: bir iletme Günlükçü ve merkezi bir Günlükçü. Dağıtılmış bir Günlükçü ekleme bir örneği verilmiştir:  
   
 ```cmd  
-msbuild.exe *.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
+msbuild.exe *.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
 Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,  
 Culture=neutral  
 ```  
   
- İki Günlükçü adlarında bir yıldız işareti (*) ayıran `/dl` geçin.  
+ İki Günlükçü adlarında bir yıldız işareti (*) ayıran `-dl` geçin.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Günlükçüleri derleme](../msbuild/build-loggers.md)   

@@ -16,12 +16,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8aaf608c4a03816fb109e65c2b8d71d06a279799
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bd5fa0fd23f2608e7cfd00896b0632cfb13fa38
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690405"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880252"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Eski Dil Hizmeti Ayrıştırıcısı ve Tarayıcısı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ namespace MyNamespace
 ## <a name="parsing-for-matching-braces"></a>Ayraç eşleştirme için ayrıştırma  
  Bu örnek, kullanıcının girdiği bir kapanış ayracı eşleşen denetim akışını gösterir. Bu işlemde renklendirme için kullanılan tarayıcı belirtecini ve Ayraç eşleştirme işlemi belirteci olup olmadığını tetikleyebilirsiniz türünü belirlemek için de kullanılır. Tetikleyici bulunursa <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> yöntemi eşleşen Ayraca bulmak için çağrılır. Son olarak, iki küme ayraçları vurgulanır.  
   
- Küme ayraçları Tetikleyicileri adlarında kullanılır ve nedenleri ayrıştırma olsa bile, bu işlem için gerçek bir küme ayraçları sınırlı değil. Eşleşen bir olacak şekilde belirtilen pair karakterlerin herhangi bir çifti desteklenir. Örnekler (ve) \< ve >, ve [ve].  
+ Küme ayraçları Tetikleyicileri adlarında kullanılır ve nedenleri ayrıştırma olsa bile, bu işlem için gerçek bir küme ayraçları sınırlı değil. Eşleşen bir çift olarak belirtilen herhangi bir çifti karakterleri desteklenir. Örnekler (ve) \< ve >, ve [ve].  
   
  Dil hizmeti eşleşen küme ayraçlarını desteklediği varsayılır.  
   

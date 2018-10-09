@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c681acc80b0646f3cb6f51435bf8358d12bf44b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3b17416902bac2bcc7ff03adc39e548e63fb229
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681400"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879369"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Seçenekler, Metin Düzenleyici, JavaScript, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Kullanım **IntelliSense** sayfasının **seçenekleri** JavaScript için Intell
   
  Belirli IntelliSense .js dosyalarının farklı JavaScript projeleri için kapsamda olduğunu belirtmek için önceden tanımlı başvuru gruplarını kullanabilirsiniz. Dört başvuru grubu mevcuttur:  
   
--   Örtük (Windows *sürüm*), için [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] JavaScript kullanan uygulamalar. Bu grupta yer alan dosyalar, Kod Düzenleyicisi'nde için için açılan her .js dosyası için kapsama [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] JavaScript kullanan uygulamalar.  
+-   Örtük (Windows *sürüm*), için [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] JavaScript kullanan uygulamalar. Bu grupta yer alan dosyalar, Kod Düzenleyicisi'nde için açılan her .js dosyası için kapsama [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] JavaScript kullanan uygulamalar.  
   
 -   Örtük (Web); HTML5 projeleri için. Bu grupta yer alan dosyalar, bu proje türleri için Kod Düzenleyicisi'nde açılan her .js dosyası için kapsama girer.  
   

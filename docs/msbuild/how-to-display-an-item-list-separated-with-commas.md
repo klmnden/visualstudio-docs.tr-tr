@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10ff36702f4fba2ed5093e866ac57a099fbbc904
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f1507a297c1baf7f410bde1c6d32e48b43a9cdc2
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081816"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880241"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Nasıl yapılır: virgülle ayrılmış bir öğe listesini görüntüleme
 Öğesi ile çalışırken listeleri [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]), bu öğe listeleri içeriğini okumak kolay bir şekilde görüntülemek bazen kullanışlıdır. Veya özel ayırıcı dize ile ayrılmış olan öğelerin listesini alan bir görev olabilir. Her iki durumda, bir öğe listesi için bir ayırıcı dize belirtebilirsiniz.  
@@ -45,7 +45,7 @@ ms.locfileid: "39081816"
      `@(TXTFile, ', ')`  
   
 ## <a name="example"></a>Örnek  
- Bu örnekte, [Exec](../msbuild/exec-task.md) görev çalıştırır dosyasında belirtilen metin dizeleri bulmak için findstr aracı *Phrases.txt*. Findstr komut içinde değişmez değer dizeleri tarafından belirtilen **/c:** geçiş, bunu öğesi ayırıcısı `/c:` bulunan öğeler arasındaki eklenen `@(Phrase)` öğe listesi.  
+ Bu örnekte, [Exec](../msbuild/exec-task.md) görev çalıştırır dosyasında belirtilen metin dizeleri bulmak için findstr aracı *Phrases.txt*. Findstr komut içinde değişmez değer dizeleri tarafından belirtilen **-c:** geçiş, bunu öğesi ayırıcısı `-c:` bulunan öğeler arasındaki eklenen `@(Phrase)` öğe listesi.  
   
  Bu örnekte, eşdeğer komut satırı komutudur:  
   
@@ -70,4 +70,4 @@ ms.locfileid: "39081816"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [MSBuild başvurusu](../msbuild/msbuild-reference.md)   
- [Öğeleri](../msbuild/msbuild-items.md)
+ [Öğeler](../msbuild/msbuild-items.md)

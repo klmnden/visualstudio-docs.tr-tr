@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5725dc2be204ae3b657a857c5a358a29b8c3709
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 583754b01f25509146bc3e3924e5132288a05285
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630804"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881143"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Bir Store uygulamasının yürütülmesini denetleme (JavaScript) Windows Store uygulamaları için Visual Studio hata ayıklama oturumunda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -301,7 +301,7 @@ Bu hızlı başlangıçta, Visual Studio hata ayıklayıcıda gitme ve bir oturu
   
     -   **Anonim işlev** satırda gösterir `module` yürütmesi askıya alındı burada işlevi. Çağrı yığınının başı budur.  
   
-4.  **İşlevlere example5_d işlevi ulaşmak için adım adım.** Seçin **içine adımla** üzerinde **hata ayıklama** menü (klavye: **F11**) example5_d işlev giriş noktası ulaşana kadar çağrılarında arama yolunda yürütülecek. Bir işlev bir işlevi çağırır, çağıran işlevin satır numarası kaydedilir ve çağrılan işlev, yığın üstüne yerleştirilen her zaman unutmayın. Çağıran işlevin satır numarası, çağıran işlevin yürütmesi askıya aldı noktasıdır. Sarı bir ok, o anda yürütülen işleve işaret eder.  
+4.  **İşlevlere example5_d işlevi ulaşmak için adım adım.** Seçin **içine adımla** üzerinde **hata ayıklama** menü (klavye: **F11**) example5_d işlev giriş noktası ulaşana kadar arama yolunda çağrılarını yürütmek için. Bir işlev bir işlevi çağırır, çağıran işlevin satır numarası kaydedilir ve çağrılan işlev, yığın üstüne yerleştirilen her zaman unutmayın. Çağıran işlevin satır numarası, çağıran işlevin yürütmesi askıya aldı noktasıdır. Sarı bir ok, o anda yürütülen işleve işaret eder.  
   
      ![Çağrı yığını penceresi](../debugger/media/dbg-jsnav-callstack-windows.png "DBG_JSNAV_CallStack_windows")  
   
@@ -316,7 +316,7 @@ Bu hızlı başlangıçta, Visual Studio hata ayıklayıcıda gitme ve bir oturu
  [Hızlı Başlangıç: Hata ayıklayıcı gezintisi (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)   
  [Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md)   
  [Tetikleme askıya alma, sürdürme ve arka plan olaylarını Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)   
- [Visual Studio'da uygulamalarının hatalarını ayıklama](../debugger/debug-store-apps-in-visual-studio.md)
+ [Visual Studio’da uygulamaların hatalarını ayıklama](../debugger/debug-store-apps-in-visual-studio.md)
 
 
 

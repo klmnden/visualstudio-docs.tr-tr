@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60e6e8a76e9ec7fc68e739e48399d76b244d5afa
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9e6dc57f81ca2fb87541f81df6a939314ad5f004
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945825"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880506"
 ---
 # <a name="common-msbuild-project-properties"></a>Yaygın MSBuild proje özellikleri
 Aşağıdaki tablo, Visual Studio proje dosyalarında tanımlı ya da dahil listeleri sık kullanılan özellikler *.targets* MSBuild'ın sağladığı dosyaları.  
@@ -48,14 +48,14 @@ Aşağıdaki tablo, Visual Studio proje dosyalarında tanımlı ya da dahil list
 |BaseOutputPath|Çıktı dosyasının temel yolunu belirtir. Bu ayarlanırsa [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] kullanacağı `OutputPath = $(BaseOutputPath)\$(Configuration)\`. Örnek sözdizimi: `<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>`|  
 |BaseIntermediateOutputPath|Tüm özel yapılandırma Ara çıktı klasörlerinin oluşturulduğu en üst düzey klasör. Varsayılan değer `obj\` şeklindedir. Aşağıdaki kod örneği verilmiştir: `<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>`|  
 |Buildınparallel|Proje başvuruları yerleşik veya paralel da temizlendiğini gösteren bir Boole değeri Multi-Proc [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] kullanılır. Varsayılan değer `true`, birden çok çekirdek veya işlemci varsa, proje sistemi paralel oluşturulacak anlamına gelir.|  
-|BuildProjectReferences|Proje başvuruları tarafından oluşturulmuş olup olmadığını belirten bir Boole değeri [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Otomatik olarak ayarlanmış `false` projenizi oluşturma, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE) `true` , aksi takdirde. `/p:BuildProjectReferences=false` Başvurulan projeler güncel olduğunu kontrol önlemek için komut satırında belirtilebilir.|  
+|BuildProjectReferences|Proje başvuruları tarafından oluşturulmuş olup olmadığını belirten bir Boole değeri [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Otomatik olarak ayarlanmış `false` projenizi oluşturma, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE) `true` , aksi takdirde. `-p:BuildProjectReferences=false` Başvurulan projeler güncel olduğunu kontrol önlemek için komut satırında belirtilebilir.|  
 |CleanFile|"Temiz önbellek." kullanılacak dosya adı Temiz önbellek, temizleme işlemi sırasında silinmek üzere oluşturulmuş dosyalar listesidir. Dosyanın, yapı işlemi tarafından ara çıkış yoluna konur.<br /><br /> Bu özellik yalnızca yol bilgisi olmayan dosya adlarını belirtir.|  
 |Kod sayfası|Derlemedeki tüm kaynak kodu dosyaları için kullanılacak kod sayfasını belirtir. Bu özellik değerine eşdeğer olan `/codepage` derleyici anahtarı.|  
 |CompilerResponseFile|Derleyici görevlerine geçirilebilen isteğe bağlı bir yanıt dosyası.|  
 |Yapılandırma|Oluşturmakta olduğunuz yapılandırma "Debug" veya "Release."|  
 |CscToolPath|Yolu *csc.exe*, [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] derleyici.|  
 |CustomBeforeMicrosoftCommonTargets|Proje dosyası veya ortak hedefler içe önce otomatik olarak içe aktarılacak hedefler dosyasının adı.|  
-|DebugSymbols|Semboller yapı tarafından oluşturulup oluşturulmadığını gösteren bir Boole değeri.<br /><br /> Ayarı **/p:DebugSymbols = false** komut satırında, program veritabanı oluşturulmasını devre dışı bırakır (*.pdb*) sembol dosyaları.|  
+|DebugSymbols|Semboller yapı tarafından oluşturulup oluşturulmadığını gösteren bir Boole değeri.<br /><br /> Ayarı **- p: DebugSymbols = false** komut satırında, program veritabanı oluşturulmasını devre dışı bırakır (*.pdb*) sembol dosyaları.|  
 |DefineConstants|Koşullu derleyici sabitlerini tanımlar. Sembol/değer çiftleri noktalı virgüllerle ayrılır ve aşağıdaki sözdizimi kullanılarak belirtilir:<br /><br /> *symbol1 = value1; symbol2 = value2*<br /><br /> Özellik `/define` derleyici anahtarı.|  
 |DefineDebug|DEBUG sabitinin tanımlanmasını isteyip istemediğinizi belirten bir Boole değeri.|  
 |DefineTrace|TRACE sabitinin tanımlanmasını isteyip istemediğinizi belirten bir Boole değeri.|  

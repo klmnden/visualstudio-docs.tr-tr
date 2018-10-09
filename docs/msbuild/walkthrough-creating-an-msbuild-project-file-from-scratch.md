@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d70460671bcea19f0a4e56de6ebdd3c7affdb670
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 1254a7c768521f4ec8b84cb0e345dbee8fb25d69
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179196"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879869"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>İzlenecek yol: sıfırdan bir MSBuild proje dosyası oluşturma
 .NET Framework'ü hedefleyen programlama dilleri, tanımlamak ve uygulama oluşturma işlemini denetlemek için MSBuild proje dosyaları kullanın. Bir MSBuild proje dosyası oluşturmak için Visual Studio kullandığınızda, uygun XML dosyasına otomatik olarak eklenir. Ancak, XML'in nasıl düzenlendiğini anlamak yararlı ve bunu bir yapıyı denetlemek üzere nasıl değiştirebilirsiniz.  
@@ -172,7 +172,7 @@ Derleme hedefindeki Görevler sırayla yürütülür. Bu durumda, Visual C# derl
   
 #### <a name="to-build-the-application"></a>Uygulamayı oluşturmak için  
   
-1.  Komut isteminde **msbuild, helloworld.csproj /t:Build**.  
+1.  Komut isteminde **msbuild, helloworld.csproj - t: derleme**.  
   
      Bu, Helloworld uygulamasını oluşturmak için Visual C# derleyicisini çağırarak Helloworld proje dosyasının derleme hedefini oluşturur.  
   
@@ -183,7 +183,7 @@ Derleme hedefindeki Görevler sırayla yürütülür. Bu durumda, Visual C# derl
 > [!NOTE]
 >  Ayrıntı düzeyini yükselterek, yapı hakkında daha fazla ayrıntı görebilirsiniz. Ayrıntı düzeyini "ayrıntılı" ayarlamak için komut isteminde bu komutu yazın:  
 >   
->  **MSBuild, helloworld.csproj /t:Build /verbosity: ayrıntılı**  
+>  **MSBuild, helloworld.csproj - t: derleme - ayrıntı: ayrıntılı**  
   
 ## <a name="add-build-properties"></a>Derleme özellikleri ekleme  
  Daha fazla denetim derleme proje dosyasına yapı özellikleri ekleyebilirsiniz. Şimdi bu özellikleri ekleyin:  
@@ -259,7 +259,7 @@ Proje dosyanız şimdi aşağıdaki kodu benzemelidir:
   
 #### <a name="to-test-the-build-properties"></a>Yapı özelliklerini test etmek için  
   
-1.  Komut isteminde **msbuild, helloworld.csproj /t:Build**.  
+1.  Komut isteminde **msbuild, helloworld.csproj - t: derleme**.  
   
      Bu oluşturur *\Bin\\*  klasörünü ve ardından oluşturmak için Visual C# derleyicisini çağırır *MSBuildSample* uygulama ve bunu koyar *\Bin\\* klasör.  
   
@@ -334,9 +334,9 @@ Proje dosyanız şimdi aşağıdaki kodu benzemelidir:
   
 #### <a name="to-test-the-build-targets"></a>Yapı hedeflerini test etmek için  
   
-1.  Komut isteminde **msbuild, helloworld.csproj /p:AssemblyName Greetings =**.  
+1.  Komut isteminde **msbuild, helloworld.csproj - p: AssemblyName = Greetings**.  
   
-     Kullanmadığınız **/t** hedefi açıkça ayarlamak için geçiş, MSBuild varsayılan derleme hedefini çalıştırır. **/P** geçiş geçersiz kılmaları `AssemblyName` özelliği ve yeni değeri verir `Greetings`. Bu neden yeni bir uygulama *Greetings.exe*oluşturulması için *\Bin\\*  klasör.  
+     Kullanmadığınız **-t** hedefi açıkça ayarlamak için geçiş, MSBuild varsayılan derleme hedefini çalıştırır. **-P** geçiş geçersiz kılmaları `AssemblyName` özelliği ve yeni değeri verir `Greetings`. Bu neden yeni bir uygulama *Greetings.exe*oluşturulması için *\Bin\\*  klasör.  
   
 2.  Doğrulamak için *\Bin\\*  klasörünü içeren her ikisi de *MSBuildSample* uygulama ve yeni *Greetings* uygulama, türü **dizini depo** .  
   
@@ -344,11 +344,11 @@ Proje dosyanız şimdi aşağıdaki kodu benzemelidir:
   
      **Hello, world!** iletisi görüntülenmelidir.  
   
-4.  Yazarak MSBuildSample uygulamasını silin **msbuild, helloworld.csproj /t: temiz**.  
+4.  Yazarak MSBuildSample uygulamasını silin **msbuild, helloworld.csproj -t: temiz**.  
   
      Bu varsayılan olan uygulamayı kaldırmak için temizleme görevini çalıştırır `AssemblyName` özellik değeri `MSBuildSample`.  
   
-5.  Yazarak Greetings uygulamasını silin **msbuild, helloworld.csproj /t: temiz /p:AssemblyName Greetings =**.  
+5.  Yazarak Greetings uygulamasını silin **msbuild, helloworld.csproj -t: - p Temizle: AssemblyName = Greetings**.  
   
      Bu uygulamanın kaldırmak için temizleme görevini çalıştırır verilen **AssemblyName** özellik değeri `Greetings`.  
   
@@ -382,11 +382,11 @@ Proje dosyanız şimdi aşağıdaki kodu benzemelidir:
     </Target>  
     ```  
   
-2.  Yapı hedefi yazarak test edin **msbuild /v:d** komut isteminde.  
+2.  Yapı hedefi yazarak test edin **msbuild - v: d** komut isteminde.  
   
      Unutmayın *helloworld.csproj* varsayılan proje dosyası olduğunu ve bu yapı varsayılan hedeftir.  
   
-     **/V:d** anahtarı derleme işleminin ayrıntılı bir açıklamasını belirtir.  
+     **- V: d** anahtar yapı işlemine yönelik ayrıntılı bir açıklamasını belirtir.  
   
      Bu satırların görüntülenmesi gerekir:  
   

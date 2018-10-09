@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbb444a8de184f47bc8c6915bbf0fafcaf6c7ca3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e0a9787e7e0a203a77e456ec61ea8a80057ce92
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696045"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879986"
 ---
 # <a name="just-my-code"></a>Yalnızca Kendi Kodum
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -195,7 +195,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [yalnızca kendi kodum](htt
 |-|-|  
 |**MyCode**|Sahibi olduğunuz ve denetlediğiniz kullanıcı kodu.|  
 |**LibraryCode**|Kullanıcı olmayan kod düzenli olarak kullandığınız kitaplıklar ve uygulamanızın doğru şekilde (örneğin WinJS veya jQuery) çalışması için kullanır.|  
-|**UnrelatedCode**|Kullanıcı olmayan kod, uygulamanızda çalışıyor olabilir, ancak sahip olmadığınız ve uygulamanızın doğru şekilde (örneğin, reklam görüntüleyen bir reklam SDK) çalışabilmesi için şirket doğrudan içermez. Windows Store projeleri, HTTP veya HTTPS URI uygulamanızdan yüklenen herhangi bir kod da UnrelatedCode kabul edilir.|  
+|**UnrelatedCode**|Yoksa uygulamanız ancak, çalışıyor olabilir, kullanıcı dışı kod sahibi ve uygulamanızın doğru şekilde (örneğin, reklam görüntüleyen bir reklam SDK) çalışabilmesi için şirket doğrudan içermez. Windows Store projeleri, HTTP veya HTTPS URI uygulamanızdan yüklenen herhangi bir kod da UnrelatedCode kabul edilir.|  
   
  JavaScript hata ayıklayıcı, aşağıdaki kod türleri otomatik olarak sınıflandırır:  
   

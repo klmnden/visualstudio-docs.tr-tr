@@ -13,12 +13,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c70cf8ae41652d0426f40d26dd5217ca4507aad8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2bf6251b8152224b521f60b0ec1694e03adeb9b1
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684536"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880486"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü Sistem Gereksinimleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,12 +135,12 @@ Android için Visual Studio öykünücü Hyper-V sanallaştırma teknolojisini W
  Öykünücü çalıştırdığınızda, zaten Hyper-V Yöneticileri grubunun bir üyesi değilseniz, (Windows Phone öykünücüsü için iletişim kutusu atıfta bulunmaktadır) bir gruba katılması istenir. Gruba katılıyor yönetici hakları gerekir.  
   
 > [!IMPORTANT]
->  Gruba katıldıktan sonra oturumunu kapatmanız veya etkili değişiklik yapmak için yeniden başlatın.  
+> Gruba katıldıktan sonra oturumunu kapatmanız veya etkili değişiklik yapmak için yeniden başlatın.  
   
  ![Birleştirme Hyper&#45;V Administrators güvenlik grubunun](../cross-platform/media/android-emu-hyperv-admin.png "Android_Emu_HyperV_Admin")  
   
- Kendiniz bir gruba el ile eklemek için yerel kullanıcılar ve Gruplar ek bileşenini açın. Daha fazla bilgi için [bir gruba bir kullanıcı hesabı eklemek](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7). (Windows 7 bölümüne, ayrıca Windows 8 için geçerlidir.)  
-  
+ Kendiniz bir gruba el ile eklemek için yerel kullanıcılar ve Gruplar ek bileşenini açın.
+ 
 ##  <a name="BootableVHD"></a> Önyüklenebilir bir VHD'den öykünücüyü çalıştırma desteklenmiyor  
  Önyüklenebilir bir VHD'den Windows çalışırken bir uygulamayı Android için Visual Studio öykünücü üzerinde çalıştırmayı denerseniz öykünücü genellikle başlaması birkaç dakika sürer veya başlatılamıyor. Öykünücü başlatmak başarısız olduğunda, aşağıdaki iletiyi görürsünüz: uygulama dağıtımı başarısız oldu. Lütfen yeniden deneyin.  
   

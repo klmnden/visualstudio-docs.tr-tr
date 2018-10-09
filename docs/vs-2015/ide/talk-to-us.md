@@ -15,12 +15,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5c85bdfd08fb3d2ad06c9dfd17b46a31fe4ed74d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c0f068a40fc4cbac2cd261fe295e6e8b0fb53b2
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692930"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48878985"
 ---
 # <a name="talk-to-us"></a>Bizimle İletişime Geçin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Belgelerimizi geliştirmek için fikirlerinizi ilgilendiğimiz. Kişisel yanıtl
  Kilitlenmeler, yavaş performans, beklenmeyen davranışı ve benzeri gibi Visual Studio kullanarak sorun çalıştırıyorsanız, Lütfen sorunu bize geri bildirim simgesine sağ tıklayarak yanındaki bildirin **hızlı başlatma**, seçerekveya **Yardım &#124; geri bildirim gönder &#124; sorun bildir** ana menüden. Daha fazla bilgi için [Visual Studio ile ilgili bir sorun bildirme](../ide/how-to-report-a-problem-with-visual-studio-2015.md).  
   
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Visual Studio özellikleri hakkında bir öneriyse yapmak istiyorum  
- Varsa bir şey daha iyi Lütfen bize biliyoruz! Seçin **bir öneride** bir özelliği önerebilir veya Visual Studio ekibine değiştirmek için. Önerinizi için otomatik olarak yayımlanacak [UserVoice](https://visualstudio.uservoice.com) nerede diğerleri oy için için.  
+ Varsa bir şey daha iyi Lütfen bize biliyoruz! Seçin **bir öneride** bir özelliği önerebilir veya Visual Studio ekibine değiştirmek için. Önerinizi için otomatik olarak yayımlanacak [UserVoice](https://visualstudio.uservoice.com) nerede diğerleri oy için.  
   
 ## <a name="rate-this-product"></a>Bu ürünü değerlendirin  
  Visual Studio'nun yayın öncesi sürümlerde bir **bu ürünü değerlendirin** çalıştırdığınız yapının kalitesi hakkında geri bildirim göndermenize olanak sağlayan bir menü öğesi. Bu ürünü yayımlanmış sürümü görmezsiniz.  
@@ -60,4 +60,4 @@ Belgelerimizi geliştirmek için fikirlerinizi ilgilendiğimiz. Kişisel yanıtl
  Sorular ve cevaplar diğer geliştiricilerle paylaşmak istiyorsanız, kullanabileceğiniz [MSDN Forumları](http://social.msdn.microsoft.com/Forums/home) veya [StackOverflow](http://stackoverflow.com/). Diğer geliştiricilerden gelen kod görüntülemek ve kendi örneklerinizi paylaşabilirsiniz [geliştirici kodu örnekleri](http://code.msdn.microsoft.com/) ve [CodePlex](http://www.codeplex.com/) Web siteleri.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio 2015 ile ilgili bir sorun bildirme](../ide/how-to-report-a-problem-with-visual-studio-2015.md)
+ [Visual Studio 2015 ile İlgili Sorun Bildirme](../ide/how-to-report-a-problem-with-visual-studio-2015.md)

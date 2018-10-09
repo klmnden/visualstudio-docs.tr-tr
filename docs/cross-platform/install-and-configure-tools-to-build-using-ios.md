@@ -12,19 +12,19 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: fe73510c645eadea99796b8b8aea5b6eec1f01c9
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: cbc9e2b0016fde990e2fbd6d79b083907ced5060
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251819"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881091"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Yükleme ve yapılandırma araçları kullanarak iOS oluşturmak için
 
 Platformlar arası Mobil Geliştirme için Visual C++, düzenleme, hata ayıklama ve iOS Simulator'a veya bir iOS cihazının iOS kod dağıtmak için kullanabilirsiniz, ancak lisans kısıtlamaları nedeniyle, kodu oluşturulmuş ve gerekir uzaktan Mac'te çalışan Yapı ve Visual Studio kullanarak iOS uygulamaları çalıştırmak için kurma ve uzak aracı yapılandırma yapmanız [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), mac'inizde Uzak Aracı tutamaçları Visual Studio'dan derleme istekleri ve uygulama, Mac veya Mac üzerinde iOS Simülatörünün bağlı bir iOS cihazında çalışır
 
 > [!NOTE]
-> Bulutta barındırılan Mac Hizmetleri yerine bir Mac kullanarak hakkında daha fazla bilgi için bkz: [bulutunuza bağlanmak için Visual Studio'yu yapılandırma barındırılan Mac](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac). Apache Cordova için Visual Studio Araçları'nı kullanarak oluşturmak için yönergeleri verilmiştir. C++ kullanarak oluşturmak için yönergeleri kullanmak için için remotebuild, vcremote değiştirin.
+> Bulutta barındırılan Mac Hizmetleri yerine bir Mac kullanarak hakkında daha fazla bilgi için bkz: [bulutunuza bağlanmak için Visual Studio'yu yapılandırma barındırılan Mac](/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac). Apache Cordova için Visual Studio Araçları'nı kullanarak oluşturmak için yönergeleri verilmiştir. C++ kullanarak oluşturmak için yönergeleri kullanmak için için remotebuild, vcremote değiştirin.
 
 İOS kullanarak geliştirmek için araçları yükledikten sonra yolları hızlı bir şekilde yapılandırın ve Visual Studio ve Mac üzerinde iOS geliştirme için Uzak aracısını güncelleştirmek bu konuya bakın
 

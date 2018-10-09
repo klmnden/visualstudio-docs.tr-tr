@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e213f6c009ff5fdd5caa48a326c18026f02ec5e6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a16bef2afa14d992300649d4ec9ffd9752def099
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775291"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880688"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>VSPerfASPNETCmd ile Hızlı Web Sitesi Profili Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [VSPerfASPNETCmd ile Hızl�
 > [!WARNING]
 >  Katman etkileşimli profil oluşturma (TIP) veri kullanarak toplanması [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], veya [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Ancak, katman etkileşimli profil oluşturma veri yalnızca görüntülenebilir [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] ve [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
 >   
->  Windows 8 veya Windows Server 2012'de ipucu verilerini toplamak için kullanmanız gerekir Araçları'nı (**/trace**) seçeneği.  
+>  Windows 8 veya Windows Server 2012'de ipucu verilerini toplamak için izlemeyi kullanma (**/trace**) seçeneği.  
   
  Veri örnekleme ile Katman etkileşim verileri toplamak için:  
   

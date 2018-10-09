@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 14949313b0e44dd7e86480177c56819d3fdb22f8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a4e3dc416a406976403dceb0568cea5b8cbfd56e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775097"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880545"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları
 
@@ -50,7 +50,7 @@ Unity için Visual Studio Araçları destekleyen sağlam [hata ayıklama](using-
 
 ### <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio için Unity için Mac araçları
 
-Mac için Visual Studio Unity projeleri de destekler. Daha fazla bilgi için [Visual Studio için Unity belgeleri Mac Araçları](https://docs.microsoft.com/en-us/visualstudio/mac/unity-tools).
+Mac için Visual Studio Unity projeleri de destekler. Daha fazla bilgi için [Visual Studio için Unity belgeleri Mac Araçları](/visualstudio/mac/unity-tools).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

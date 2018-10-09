@@ -1,20 +1,20 @@
 ---
 title: Visual Studio'da C/C++ için birim testleri yazma
-ms.date: 11/04/2017
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7838d4435c71fa332711c0ef3794c8bed556827a
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: e79b65628193c7b90a03b2e1141dfc45b6b0829f
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341378"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879232"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio'da C/C++ için birim testleri yazma
 
@@ -31,6 +31,10 @@ Visual Studio bu C++ test çerçeveleri, gereken ek hiçbir yüklemeleriyle içe
 - CTest
 
 Yüklü çerçeveleri yanı sıra, Visual Studio içinde kullanmak istediğiniz her çerçeve için kendi test bağdaştırıcısı yazabilirsiniz. Birim testleriyle bir test bağdaştırıcısı tümleştirebilirsiniz **Test Gezgini** penceresi. Çeşitli üçüncü taraf bağdaştırıcıları bulunur [Visual Studio Market](https://marketplace.visualstudio.com). Daha fazla bilgi için [üçüncü taraf birim testi çerçevelerini yükleme](install-third-party-unit-test-frameworks.md).
+
+**Visual Studio 2017 sürüm 15.7 (Professional ve Enterprise)**
+
+C++ birim testi projeleri desteği [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md).
 
 **Visual Studio 2017 sürüm 15.5**
 
@@ -80,13 +84,14 @@ TEST_CLASS ve TEST_METHOD parçası olan [Microsoft Yerel Test çerçevesi](micr
 Bir TEST_METHOD void döndürür. Bir test sonucu oluşturmak için statik yöntemleri kullanın. `Assert` gerçek sonuçlar, beklenen değer karşı test etmek için sınıf. Aşağıdaki örnekte, varsayalım `MyClass` alan bir oluşturucu sahip bir `std::string`. Oluşturucu beklendiği gibi sınıfı başlatır sınayabiliriz şu şekilde:
 
 ```cpp
-        TEST_METHOD(TestClassInit)
-        {
-            std::string name = "Bill";
-            MyClass mc(name);
-            Assert::AreEqual(name, mc.GetName());
-        }
+TEST_METHOD(TestClassInit)
+{
+    std::string name = "Bill";
+    MyClass mc(name);
+    Assert::AreEqual(name, mc.GetName());
+}
 ```
+
 Önceki örnekte, sonucunu `Assert::AreEqual` çağrı, testin başarılı veya başarısız olup olmadığını belirler. Assert sınıfı, beklenen gerçek sonuçlar karşılaştırma için birçok yöntem içerir.
 
 Ekleyebileceğiniz *nitelikler* yöntemleri test sahipleri, öncelik ve diğer bilgileri belirtmek için test etmek için. Ardından bu değerleri sıralama ve Gruplama testler için kullanabileceğiniz **Test Gezgini**. Daha fazla bilgi için [Test Gezgini ile birim testleri çalıştırma](run-unit-tests-with-test-explorer.md).
@@ -111,6 +116,22 @@ Başarısız testler için ileti nedenini tanılamaya yardımcı olan ayrıntıl
 Kullanma hakkında daha fazla bilgi için **Test Gezgini**, bkz: [Test Gezgini ile birim testleri çalıştırma](run-unit-tests-with-test-explorer.md).
 
 Birim testi için ilgili en iyi yöntemler için bkz. [birim testi temel bilgileri](unit-test-basics.md)
+
+## <a name="use-codelens"></a>CodeLens kullanın
+
+**Visual Studio 2017 sürüm 15.7 Professional ve Enterprise sürümleri yalnızca**: [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) hızlı bir şekilde kod düzenleyicisinden çıkmadan test birimi durumunu görmenizi sağlar. CodeLens, bir C++ birim testi projesi şu yollardan birinde için başlatabilirsiniz:
+
+- Düzenle ve test projenizi veya çözümünüzü oluşturun.
+- Proje veya çözümü yeniden oluşturun.
+- Öğesinden test çalıştırma **Test Gezgini** penceresi.
+
+Sonra **CodeLens** başlatıldı, gördüğünüz durumu simgeleri her bir birim testi üzerinde test edin.
+
+![C++ CodeLens simgeler](media/cpp-test-codelens-icons.png)
+
+ Daha fazla bilgi edinmek veya çalıştırmak veya birim testi hata ayıklama için simgesine tıklayın:
+
+![C++ CodeLens çalıştırma ve hata ayıklama](media/cpp-test-codelens-run-debug.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

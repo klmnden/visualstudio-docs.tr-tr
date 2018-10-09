@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f6a11de4b273b55910e03e73be79f6e3473bac5
-ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
+ms.openlocfilehash: 3d8ff33247fa6497bcf39451628b5ee503100b6c
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168376"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879843"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python desteğini yükleme
 
@@ -59,7 +59,7 @@ Hızlı bir şekilde yükleme adımlarını izleyerek sonra Python desteği test
 
     | Seçenek | Açıklama |
     | --- | --- |
-    | Python dağıtımları | İle çalışmayı planlıyorsanız Python 2, Python 3, Anaconda2 ve Anaconda3 dağıtımları 32-bit ve 64-bit türevleri herhangi bir bileşimini seçin. Her dağıtım'ın Yorumlayıcı, çalışma zamanı ve kitaplıkları içerir. Anaconda'yı özellikle çok çeşitli önceden yüklenmiş paketler içeren bir açık veri bilimi platformudur. (Ekleme veya kaldırma dağıtımları istediğiniz zaman Visual Studio Yükleyicisi için döndürebilir.)  **Not**: Visual Studio yükleyicisi dışında bir dağıtım yüklediyseniz, burada eşdeğer seçeneği denetlemek için gerek yoktur. Visual Studio, mevcut Python yüklemeleri otomatik olarak algılar. Bkz: [Python ortamları](managing-python-environments-in-visual-studio.md). |
+    | Python dağıtımları | İle çalışmayı planlıyorsanız Python 2, Python 3, Anaconda2 ve Anaconda3 dağıtımları 32-bit ve 64-bit türevleri herhangi bir bileşimini seçin. Her dağıtım'ın Yorumlayıcı, çalışma zamanı ve kitaplıkları içerir. Anaconda'yı özellikle çok çeşitli önceden yüklenmiş paketler içeren bir açık veri bilimi platformudur. (Ekleme veya kaldırma dağıtımları istediğiniz zaman Visual Studio Yükleyicisi için döndürebilir.)  **Not**: Visual Studio yükleyicisi dışında bir dağıtım yüklediyseniz, burada eşdeğer seçeneği denetlemek için gerek yoktur. Visual Studio, mevcut Python yüklemeleri otomatik olarak algılar. Bkz: [Python ortamları](managing-python-environments-in-visual-studio.md). Ayrıca, daha yeni bir Python sürümü olup olmadığını ne gösterilmemektedir Yükleyicisi'nde Visual Studio bunu algılar ve bu sürümü ayrı olarak yükleyebilirsiniz. |
     | **Cookiecutter şablonu desteği** | Şablonları keşfedin, şablon seçeneklerini giriş ve projeleri ve dosyaları oluşturma Cookiecutter grafik kullanıcı arabirimini yükler. Bkz: [Cookiecutter uzantısını kullanma](using-python-cookiecutter-templates.md). |
     | **Python web desteği** | HTML, CSS ve JavaScript desteği, Bottle, Flask ve Django çerçeveleri kullanarak projeleri şablonları yanı sıra düzenleme dahil olmak üzere web geliştirme araçları yükler. Bkz: [Python web projesi şablonları](python-web-application-project-templates.md). |
     | **Python IOT desteği** | Python kullanarak Windows IOT Core geliştirme destekler. |

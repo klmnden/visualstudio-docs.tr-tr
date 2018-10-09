@@ -35,12 +35,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c102bba09901e55e9ec6196009965b912f8be967
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d2c45ed2377b400fb00ac264aa2dcf8e5df8410
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689401"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879778"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>CRT Kitaplığını Kullanarak Bellek Sızıntılarını Bulma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -194,7 +194,7 @@ Bu durum size sızdırılan ayırma debug_new.cpp satır 20 olduğunu gösterir.
   
 2.  Uygulama kesme noktasında kesildiğinde **Watch** penceresi.  
   
-3.  İçinde **Watch** penceresinde, tür `_crtBreakAlloc` içinde içinde **adı** sütun.  
+3.  İçinde **Watch** penceresinde, tür `_crtBreakAlloc` içinde **adı** sütun.  
   
      (/MD seçeneği) CRT kitaplığının çok iş parçacıklı DLL sürümünü kullanıyorsanız, içerik işlecini dahil edin: `{,,ucrtbased.dll}_crtBreakAlloc`  
   
@@ -272,7 +272,7 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CRT hata ayıklama öbeği ayrıntıları](../debugger/crt-debug-heap-details.md)   
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
- [Yerel kodda hata ayıklama](../debugger/debugging-native-code.md)
+ [Yerel Kodda Hata Ayıklama](../debugger/debugging-native-code.md)
 
 
 

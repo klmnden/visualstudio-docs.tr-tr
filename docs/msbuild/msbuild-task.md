@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 366e73473b442ee52ceac10e1398a7bb3e2b52f4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 72a68b1e63df42a10851c292f73f9fe54aa7e3fb
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178221"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881065"
 ---
 # <a name="msbuild-task"></a>MSBuild görevi
 Yapılar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] başka projelerden [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje.  
@@ -37,7 +37,7 @@ Yapılar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuil
 |---------------|-----------------|  
 |`BuildInParallel`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, belirtilen proje `Projects` mümkünse parametresi paralel olarak oluşturulur. Varsayılan değer `false`.|  
 |`Projects`|Gerekli <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametresi.<br /><br /> Derleme için proje dosyalarını belirtir.|  
-|`Properties`|İsteğe bağlı `String` parametresi.<br /><br /> Alt projenin genel özellikler olarak uygulamak için özellik ad/değer çiftleri noktalı virgülle ayrılmış listesi. Bu parametreyi belirttiğinizde, işlevsel olarak eşdeğer olan özellikleri ayarlamak **/Property** ile oluşturduğunuzda geçiş [ *MSBuild.exe*](../msbuild/msbuild-command-line-reference.md). Örneğin:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Özellikleri aracılığıyla projenin gönderdiğinizde `Properties` parametresi [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası zaten yüklü olsa bile, projeye yeni bir örneğini oluşturur. Projeye yeni bir örneğini oluştururken [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] farklı genel özellikleri olan ve diğer proje örnekleri ile paralel oluşturulabilir farklı bir proje olarak değerlendirir. Örneğin, bir yayın yapılandırması hata ayıklama yapılandırması ile aynı anda oluşturabilirsiniz.|  
+|`Properties`|İsteğe bağlı `String` parametresi.<br /><br /> Alt projenin genel özellikler olarak uygulamak için özellik ad/değer çiftleri noktalı virgülle ayrılmış listesi. Bu parametreyi belirttiğinizde, işlevsel olarak eşdeğer olan özellikleri ayarlamak **-özellik** ile oluşturduğunuzda geçiş [ *MSBuild.exe*](../msbuild/msbuild-command-line-reference.md). Örneğin:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Özellikleri aracılığıyla projenin gönderdiğinizde `Properties` parametresi [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası zaten yüklü olsa bile, projeye yeni bir örneğini oluşturur. Projeye yeni bir örneğini oluştururken [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] farklı genel özellikleri olan ve diğer proje örnekleri ile paralel oluşturulabilir farklı bir proje olarak değerlendirir. Örneğin, bir yayın yapılandırması hata ayıklama yapılandırması ile aynı anda oluşturabilirsiniz.|  
 |`RebaseOutputs`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, oluşturulmuş projelerdeki öğelere sahip yollarına göre arama projesi olarak ayarlanmış olan göreli yolları hedef çıktı. Varsayılan değer `false`.|  
 |`RemoveProperties`|İsteğe bağlı `String` parametresi.<br /><br /> Kaldırmak için genel özellikler kümesini belirtir.|  
 |`RunEachTargetSeparately`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] görevini çağırır geçirilen listesindeki her bir hedef [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] teker teker yerine aynı anda. Bu parametre ayarını `true` önceden çağrılan hedefleri başarısız olsa bile, sonraki hedefler çağrılan garanti eder. Aksi takdirde, bir yapı hatası tüm sonraki hedefleri çağrılmasını durdurur. Varsayılan değer `false`.|  

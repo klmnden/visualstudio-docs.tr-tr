@@ -24,12 +24,12 @@ caps.latest.revision: 81
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc6cbcb4bba7e808a72ca389ab8ad9157e80375c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f658c14c75f3ec0e93ed05226a8b1192d73bf478
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692758"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880727"
 ---
 # <a name="remote-debugging"></a>Uzaktan Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Uzak Araçlar cihaz veya hata ayıklama veya, kaydetmek istediğiniz sunucu üze
 
 ### <a name="to-download-and-install-the-remote-tools"></a>Uzak araçları indirme ve yükleme için
   
-1.  (Visual Studio çalıştıran makinenin yerine) hata ayıklamak istediğiniz cihaz veya sunucu makinesi üzerinde doğru sürümünü alma uzak araçları.
+1.  Cihaz veya sunucu, hata ayıklamak istediğiniz makine (yerine Visual Studio çalıştıran makinenin), uzak Araçlar'ın doğru sürümü alın.
 
     |Sürüm|Bağlantı|Notlar|
     |-|-|-|
@@ -59,7 +59,7 @@ Uzak Araçlar cihaz veya hata ayıklama veya, kaydetmek istediğiniz sunucu üze
     > [!IMPORTANT]
     >  Visual Studio sürümünüzle eşleşen uzak Araçlar'ın en son sürümünü yüklemeniz önerilir. Eşleşmeyen sürümler önerilmez.  
     >   
-    >  Ayrıca, yüklemek istediğiniz işletim sistemi olarak aynı mimariye sahip uzak araçları yüklemeniz gerekir. Diğer bir deyişle, 32 bitlik bir uygulama üzerinde hata ayıklamak istiyorsanız bir 64-bit işletim sistemi çalıştıran bir uzak bilgisayar uzak bilgisayarda Uzak Araçlar'ın 64 bit sürümü yüklemeniz gerekir.  
+    >  Ayrıca, yüklemek istediğiniz işletim sistemi olarak aynı mimariye sahip uzak araçları yüklemeniz gerekir. Diğer bir deyişle, bir 64-bit işletim sistemi çalıştıran bir uzak bilgisayarda bir 32 bit uygulama hata ayıklamak istiyorsanız, uzak bilgisayarda Uzak Araçlar'ın 64 bit sürümü yüklemeniz gerekir.  
   
 3.  Yürütülebilir dosya indirme işlemini tamamladıktan sonra uygulamayı uzak bilgisayara yüklemek için yönergeleri izleyin. Bkz: [kurulum yönergeleri](#bkmk_setup)
 
@@ -305,8 +305,8 @@ Uzaktan hata ayıklayıcıyı bulabilirsiniz (**msvsmon.exe**) bir bilgisayarda 
  [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md)   
  [Uzaktan hata ayıklama için Windows Güvenlik duvarını yapılandırma](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [Uzaktan hata ayıklayıcı bağlantı noktası atamaları](../debugger/remote-debugger-port-assignments.md)   
- [Uzaktan hata ayıklama Uzak IIS bilgisayarında ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)  
- [Uzaktan hata ayıklama ve sorun giderme](../debugger/remote-debugging-errors-and-troubleshooting.md)
+ [Uzak IIS Bilgisayarında Uzaktan ASP.NET ile Hata Ayıklama](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)  
+ [Uzaktan Hata Ayıklama Hataları ve Sorun Giderme](../debugger/remote-debugging-errors-and-troubleshooting.md)
 
 
 

@@ -19,17 +19,17 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c779620b1c97b34714b86a65f9c9bde0479d270f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a5accfb63d33a028048c9715cfe9cdf728a5db2d
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629752"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48878843"
 ---
 # <a name="xml-documentation-comments-javascript"></a>XML Belgeleri Açıklamaları (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio 2017 belgeleri](https://docs.microsoft.com/en-us/visualstudio/).  
+Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio 2017 belgeleri](/visualstudio/).  
   
 JavaScript'te, XML etiketlerini kaynak kodundaki özel yorum dosyalarına dahil ederek kodunuz için belgeler oluşturabilirsiniz. Bu XML etiketleri IntelliSense tarafından JavaScript nesneleri hakkında bilgi sağlamak için kullanılır.  
   

@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 4456fdf61fc1ae7f3d4dc958afe3ba7cb6ff9add
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 4740ec0dea2e92737980df33051d29ff5832dab8
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496096"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880454"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü’nde Sorun Giderme
 Bu konuda, Android için Visual Studio öykünücüsü'nü kullanırken karşılaşabileceğiniz sorunları çözmenize yardımcı olacak bilgiler içerir.  
@@ -134,7 +134,7 @@ Bu konuda, Android için Visual Studio öykünücüsü'nü kullanırken karşıl
   
      ![Android&#95;AB&#95;V&#95;anahtar&#95;Man](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")  
   
-     Kuruluma yanlış ise ve Windows 10 kullanıyorsanız, deneyebilir [netcfg -d komutu kullanarak ağ aygıtlarını yeniden](http://windows.microsoft.com/en-us/windows-10/fix-network-connection-issues) (Bölüm 6).  
+     Kuruluma yanlış ise ve Windows 10 kullanıyorsanız, deneyebilir [netcfg -d komutu kullanarak ağ aygıtlarını yeniden](http://windows.microsoft.com/windows-10/fix-network-connection-issues) (Bölüm 6).  
   
 -   Bu adımlar sorunu çözmezse bkz [öykünücü başarısız (ilk kullanımda) başlatmak](#NoStart) öykünücü ile engellemesini 3 taraf yazılım hakkında bilgi için.  
   

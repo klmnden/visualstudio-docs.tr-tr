@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07936a7902e6c09070dddcb01af47079c579734e
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 83f4de3efc64d78dd561a44fabed1e16f673d736
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179235"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879134"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>MSBuild ile derleme günlükleri alın
 MSBuild ile anahtarlarını kullanarak, gözden geçirme ve yapı verileri bir veya daha fazla dosyaları kaydetmek isteyip istemediğinizi istediğiniz derleme veri miktarını belirtebilirsiniz. Yapılandırma verilerini toplamak için özel bir Günlükçü de belirtebilirsiniz. Bu konuda ele alınmamıştır MSBuild komut satırı anahtarları hakkında daha fazla bilgi için bkz. [komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md).  
@@ -35,36 +35,36 @@ MSBuild ile anahtarlarını kullanarak, gözden geçirme ve yapı verileri bir v
   
 -   Derleme özeti.  
 
-Kullanarak **/verbosity** (**/v**) geçiş, ne kadar veri çıkış günlüğünde görünür denetleyebilirsiniz. Sorun giderme için bir ayrıntı düzeyini ya da kullanmak `detailed` (`d`) veya `diagnostic` (`diag`), en çok bilgi sağlar.  
+Kullanarak **-ayrıntı** (**- v**) geçiş, ne kadar veri çıkış günlüğünde görünür denetleyebilirsiniz. Sorun giderme için bir ayrıntı düzeyini ya da kullanmak `detailed` (`d`) veya `diagnostic` (`diag`), en çok bilgi sağlar.  
 
-Ayarladığınızda yapı işleminin daha yavaş olabilir **/verbosity** için `detailed` ve ayarladığınızda bile yavaş **/verbosity** için `diagnostic`.  
+Ayarladığınızda yapı işleminin daha yavaş olabilir **-ayrıntı** için `detailed` ve ayarladığınızda bile yavaş **-ayrıntı** için `diagnostic`.  
   
 ```cmd  
-msbuild MyProject.proj /t:go /v:diag  
+msbuild MyProject.proj -t:go -v:diag  
 ```  
 
 ## <a name="save-the-build-log-to-a-file"></a>Derleme günlüğünü bir dosyaya kaydet  
- Kullanabileceğiniz **/fileLogger** (**fl**) yapılandırma verilerini bir dosyaya kaydetmek için anahtar. Aşağıdaki örnekte, yapılandırma verilerini adlı bir dosyaya kaydeder. *msbuild.log*.  
+ Kullanabileceğiniz **- fileLogger** (**fl**) yapılandırma verilerini bir dosyaya kaydetmek için anahtar. Aşağıdaki örnekte, yapılandırma verilerini adlı bir dosyaya kaydeder. *msbuild.log*.  
   
 ```cmd  
-msbuild MyProject.proj /t:go /fileLogger  
+msbuild MyProject.proj -t:go -fileLogger  
 ```  
   
- Aşağıdaki örnekte adlı günlük dosyası *MyProjectOutput.log*, ve ayrıntı düzeyini günlük çıktısını kümesine `diagnostic`. Bu iki ayar kullanarak belirttiğiniz **/filelogparameters** (`flp`) geçin.  
+ Aşağıdaki örnekte adlı günlük dosyası *MyProjectOutput.log*, ve ayrıntı düzeyini günlük çıktısını kümesine `diagnostic`. Bu iki ayar kullanarak belirttiğiniz **- filelogparameters** (`flp`) geçin.  
   
 ```cmd  
-msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diagnostic  
+msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diagnostic  
 ```  
   
  Daha fazla bilgi için [komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md).  
   
 ## <a name="save-the-log-output-to-multiple-files"></a>Günlük çıktısını birden çok dosyaya kaydet  
- Aşağıdaki örnek tüm günlüğüne kaydeder *msbuild1.log*, hataları için *JustErrors.log*ve Uyarılar için yalnızca *JustWarnings.log*. Örnek dosya numaraları üç dosyaların her biri için kullanır. Dosya numaraları hemen sonrasına belirtilen **/fl** ve **/flp** anahtarları (örneğin, `/fl1` ve `/flp1`).  
+ Aşağıdaki örnek tüm günlüğüne kaydeder *msbuild1.log*, hataları için *JustErrors.log*ve Uyarılar için yalnızca *JustWarnings.log*. Örnek dosya numaraları üç dosyaların her biri için kullanır. Dosya numaraları hemen sonrasına belirtilen **-fl** ve **- flp** anahtarları (örneğin, `-fl1` ve `-flp1`).  
   
- **/Filelogparameters** (`flp`) için her dosya adı gerekenler ve hangi her dosyasına eklenecek dosyaları 2 ve 3 belirtin geçer. Adsız şekilde 1 ' dosyası için belirtilen varsayılan adını *msbuild1.log* kullanılır.  
+ **- Filelogparameters** (`flp`) için her dosya adı gerekenler ve hangi her dosyasına eklenecek dosyaları 2 ve 3 belirtin geçer. Adsız şekilde 1 ' dosyası için belirtilen varsayılan adını *msbuild1.log* kullanılır.  
   
 ```cmd  
-msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorsonly /flp3:logfile=JustWarnings.log;warningsonly  
+msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorsonly -flp3:logfile=JustWarnings.log;warningsonly  
   
 ```  
   
@@ -72,7 +72,7 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
 
 ## <a name="save-a-binary-log"></a>İkili günlük kaydetme
 
-Sıkıştırılmış, ikili biçim kullanılarak günlüğe kaydedebilirsiniz **/binaryLogger** (**bl**) geçin. Bu günlük, derleme işleminin ayrıntılı açıklamasını içerir ve belirli günlük analizi araçları tarafından okunabilir.
+Sıkıştırılmış, ikili biçim kullanılarak günlüğe kaydedebilirsiniz **- binaryLogger** (**bl**) geçin. Bu günlük, derleme işleminin ayrıntılı açıklamasını içerir ve belirli günlük analizi araçları tarafından okunabilir.
 
 Aşağıdaki örnekte, bir ikili günlük dosyası adıyla oluşturulur *binarylogfilename*.
 
@@ -85,7 +85,7 @@ Daha fazla bilgi için [komut satırı başvurusu](../msbuild/msbuild-command-li
 ## <a name="use-a-custom-logger"></a>Özel bir Günlükçü kullanma  
  Uygulayan yönetilen bir tür geliştirerek kendi Günlükçü yazabilirsiniz <xref:Microsoft.Build.Framework.ILogger> arabirimi. Derleme hataları e-posta ile gönderin, bunları bir veritabanında oturum veya bir XML dosyasına günlüğüne için özel bir Günlükçü örneği için kullanabilirsiniz. Daha fazla bilgi için [günlükçüleri derleme](../msbuild/build-loggers.md).  
   
- MSBuild komut satırında, özel bir Günlükçü kullanarak belirttiğiniz **/logger** geçin. Ayrıca **/noconsolelogger** varsayılan konsol günlüğe devre dışı bırakma.  
+ MSBuild komut satırında, özel bir Günlükçü kullanarak belirttiğiniz **-Günlükçü** geçin. Ayrıca **- noconsolelogger** varsayılan konsol günlüğe devre dışı bırakma.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  <xref:Microsoft.Build.Framework.LoggerVerbosity>   

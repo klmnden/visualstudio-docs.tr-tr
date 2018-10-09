@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d18e84e6c3637fb5d40dfcef14e8dd6a06dc47ce
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6597bfcdcbfb5acddbbbf8804d198036c5b98c53
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179209"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880987"
 ---
 # <a name="create-forwarding-loggers"></a>İletme günlükçüleri oluşturma
 İletme günlükçüleri çok işlemcili bir sistemde projeler derlerken izlemek istediğiniz olayları seçin vererek günlük verimliliği artırın. İletme günlükçüleri etkinleştirerek merkezi Günlükçü aşırı yüklenilmesini, derleme zamanı yavaşlatmasını ve günlüğünüzün yığılmak istenmeyen olayları engelleyebilirsiniz.  
@@ -35,7 +35,7 @@ ms.locfileid: "39179209"
  Birden çok işlemcili ortamda, düzensiz alınabilmesi olay iletileri olasıdır. Bu nedenle, olay işleyicisi iletme Günlükçü kullanarak olayları Değerlendirmeli ve iletmek üzere merkezi günlükçüyü yeniden yönlendirici'ye geçirmek için hangi olayları belirlemek üzere program. Bunu gerçekleştirmek için kullanabileceğiniz <xref:Microsoft.Build.Framework.BuildEventContext> sınıfı, iletmek istediğiniz olayları tanımlamaya yardımcı olmak için her ileti için ekli olduğu ve ardından olaylara adlarını geçirin <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> sınıfı (veya bir öğesinin). Bu yöntemi kullandığınızda, diğer belirli kodlama olayları gerekli değildir.  
   
 ## <a name="specify-a-forwarding-logger"></a>Bir iletme Günlükçü belirtin  
- İletme Günlükçü derlemeye derlendikten sonra söylemelisiniz [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] yapılar sırasında kullanılacak. Bunu yapmak için `/FileLogger`, `/FileLoggerParameters`, ve `/DistributedFileLogger` ile birlikte geçer *MSBuild.exe*. `/FileLogger` Anahtar bildirir *MSBuild.exe* Günlükçü doğrudan bağlı. `/DistributedFileLogger` Anahtar, düğüm başına bir günlük dosyası olduğu anlamına gelir. Parametreleri iletme Günlükçü üzerinde ayarlamak için kullanın `/FileLoggerParameters` geçin. Bu ve diğer hakkında daha fazla bilgi için *MSBuild.exe* anahtarları bkz [komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md).  
+ İletme Günlükçü derlemeye derlendikten sonra söylemelisiniz [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] yapılar sırasında kullanılacak. Bunu yapmak için `-FileLogger`, `-FileLoggerParameters`, ve `-DistributedFileLogger` ile birlikte geçer *MSBuild.exe*. `-FileLogger` Anahtar bildirir *MSBuild.exe* Günlükçü doğrudan bağlı. `-DistributedFileLogger` Anahtar, düğüm başına bir günlük dosyası olduğu anlamına gelir. Parametreleri iletme Günlükçü üzerinde ayarlamak için kullanın `-FileLoggerParameters` geçin. Bu ve diğer hakkında daha fazla bilgi için *MSBuild.exe* anahtarları bkz [komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md).  
   
 ## <a name="multi-processor-aware-loggers"></a>Birden çok işlemciye duyarlı günlükçüler  
  Çok işlemcili bir sistemde bir proje oluşturduğunuzda, her işlemci derleme iletilerden otomatik olarak birleştirilmiş bir dizisinde, araya eklemeli değil. Bunun yerine, bir ileti önceliği kullanarak gruplandırma kurmak <xref:Microsoft.Build.Framework.BuildEventContext> her iletiye sınıfı. Birden çok işlemcili oluşturma hakkında daha fazla bilgi için bkz. [çok işlemcili ortamda oturum açma](../msbuild/logging-in-a-multi-processor-environment.md).  
