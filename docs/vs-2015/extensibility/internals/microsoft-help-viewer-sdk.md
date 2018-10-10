@@ -13,12 +13,12 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9363362f5f0c701250d10b6cb5b4226c05d6dbaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a3c89384c7c095160c5c77753b084540bed6339
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692535"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881156"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Yardım Görüntüleyicisi SDK’sı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -360,7 +360,7 @@ some F# code
 |Özellik (HTML gösterim)|Açıklama|  
 |--------------------------------------|-----------------|  
 |\< İçerik meta name="Microsoft.Help.Locale" = "[kodu dil]" / >|Bu konu için bir yerel ayar ayarlar. Bu etiket, bir konu başlığında kullanılıyorsa, yalnızca bir kez kullanılmalıdır ve diğer tüm Microsoft Help etiketleri eklenmelidir. Bu etiket kullanılmıyorsa konunun gövde metni belirtilmişse, ürün yerel ayar ile ilişkili bir sözcük ayırıcı kullanılarak dizinlenir; Aksi takdirde, en-us Sözcük bölücü kullanıldı. Bu etiket ISOC RFC 4646 için uygundur. Microsoft Help düzgün çalıştığından emin olmak için genel dil özniteliği yerine bu özelliği kullanın.|  
-|\< İçerik meta name="Microsoft.Help.TopicLocale" = "[kodu dil]" / >|Bu konu için bir yerel ayar başka yerel ayarlara de kullanıldığında ayarlar. Bu etiket bir konuda kullanılıyorsa yalnızca bir kez kullanılmalıdır. Katalog içeriği birden fazla dilde içerdiğinde, bu etiketi kullanın. Birden çok konu katalogdaki aynı Kimliğe sahip olabilir, ancak her bir benzersiz TopicLocale belirtmeniz gerekir. Yerel katalog eşleşen bir TopicLocale belirten konu konusu içindekiler tablosunda görüntülenir. Ancak, konu tüm dil sürümlerini arama sonuçları listesinde görüntülenir.|  
+|\< İçerik meta name="Microsoft.Help.TopicLocale" = "[kodu dil]" / >|Bu konu için bir yerel ayar başka yerel ayarlara de kullanıldığında ayarlar. Bu etiket bir konuda kullanılıyorsa yalnızca bir kez kullanılmalıdır. Katalog içeriği birden fazla dilde içerdiğinde, bu etiketi kullanın. Birden çok konu katalogdaki aynı Kimliğe sahip olabilir, ancak her bir benzersiz TopicLocale belirtmeniz gerekir. Yerel katalog eşleşen bir TopicLocale belirten konu içindekiler tablosunda gösterilen konudur. Ancak, konu tüm dil sürümlerini arama sonuçları listesinde görüntülenir.|  
 |\< title > [Title] \< /title >|Bu konu başlığını belirtir. Bu etiket gereklidir ve yalnızca bir kez kullanılan bir konudaki. Konu gövdesi bir başlık içermiyorsa \<div > bölümüne ve içindekiler bölümünde, bu konu başlığı görüntülenir.|  
 |\< Meta name = "Microsoft.Help.Keywords" içerik = "[aKeywordPhrase]" / >|Yardım Görüntüleyici'nin dizin bölmesinde görüntülenen bağlantı metnini belirtir. Konu bağlantısına tıklandığında görüntülenir. Bir konu için birden fazla dizin anahtar belirtebilir veya dizininde görünmesi için bu konunun bağlantılarını istemiyorsanız bu etiketini atlayabilirsiniz. Bu özellik için "K" Yardım'ın önceki sürümlerini sözcüklerden dönüştürülebilir.|  
 |\< İçerik meta name="Microsoft.Help.Id" = "[Topicıd]" / >|Bu konu tanımlayıcısı ayarlar. Bu etiket gereklidir ve yalnızca bir kez kullanılan bir konudaki. Kimliği kataloğunda aynı yerel ayara sahip konular arasında benzersiz olmalıdır. Başka bir konu başlığında, bu kimliği kullanılarak bu konuya bir bağlantı oluşturabilirsiniz|  
@@ -445,12 +445,12 @@ some F# code
 |-|-|  
 |Özelliği:|**CollapsibleArea**|  
 |Kullanım:|Daraltır içerik denetimi metni Genişlet|  
-|**Öğesi**|**Değer**|  
+|**Öğe**|**Değer**|  
 |ExpandText|Genişletin|  
 |CollapseText|Daralt|  
 |Özelliği:|**CodeSnippet**|  
 |Kullanım:|Kod parçacığı denetim metin.  Not: Alanı için kod parçacığı içerik "Bölünemez" alanı ile değiştirilir.|  
-|**Öğesi**|**Değer**|  
+|**Öğe**|**Değer**|  
 |CopyToClipboard|Panoya kopyala|  
 |ViewColorizedText|Renkli görüntüle|  
 |CombinedVBTabDisplayLanguage|Visual Basic (örnek)|  
@@ -458,7 +458,7 @@ some F# code
 |VBUsage|Kullanım|  
 |Özelliği:|**Geri bildirim, altbilgi ve logosu**|  
 |Kullanım:|Müşteri e-posta yoluyla geçerli konu hakkında geri bildirim sağlamak için bir geri bildirim denetimi sağlar.  Telif Hakkı metin içeriği.  Logo tanımı.|  
-|**Öğesi**|**Değer (Bu dizeler içerik benimseyen gereksinime uygun şekilde değiştirilebilir.)**|  
+|**Öğe**|**Değer (Bu dizeler içerik benimseyen gereksinime uygun şekilde değiştirilebilir.)**|  
 |Telif Hakkı|© 2013 Microsoft Corporation. Tüm hakları saklıdır.|  
 |SendFeedback|\<bir href = "{0}" {1}> geri bildirim gönder\</a > Bu konuda Microsoft'a.|  
 |FeedbackLink||  
@@ -467,7 +467,7 @@ some F# code
 |LogoFileNameHC|vs_logo_wh.gif|  
 |Özelliği:|**Sorumluluk reddi**|  
 |Kullanım:|Büyük/küçük harf belirli bildirimleri makine için bir dizi içerik çevrilebilir.|  
-|**Öğesi**|**Değer**|  
+|**Öğe**|**Değer**|  
 |MT_Editable|Bu makale makine çevirisi oldu. Internet bağlantısı varsa, "Bu sayfayı düzenlenebilir modda orijinal İngilizce içerikle aynı anda görüntülemek için bu konuyu çevrimiçi gör"'i seçin.|  
 |MT_NonEditable|Bu makale makine çevirisi oldu. Internet bağlantısı varsa, "Bu sayfayı düzenlenebilir modda orijinal İngilizce içerikle aynı anda görüntülemek için bu konuyu çevrimiçi gör"'i seçin.|  
 |MT_QualityEditable|Bu makalede el ile çevrilmiştir. Internet bağlantısı varsa, "Bu sayfayı düzenlenebilir modda orijinal İngilizce içerikle aynı anda görüntülemek için bu konuyu çevrimiçi gör"'i seçin.|  
@@ -476,14 +476,14 @@ some F# code
 |MT_BetaRecycledContents|Bu makalede, bir ön sürüm için el ile çevrilmiştir. Internet bağlantısı varsa, "Bu sayfayı düzenlenebilir modda orijinal İngilizce içerikle aynı anda görüntülemek için bu konuyu çevrimiçi gör"'i seçin.|  
 |Özelliği:|**LinkTable**|  
 |Kullanım:|Çevrimiçi konusuna bağlantılar için destek|  
-|**Öğesi**|**Değer**|  
+|**Öğe**|**Değer**|  
 |LinkTableTitle|Bağlantı tablosu|  
 |TopicEnuLinkText|İngilizce sürümünü görüntülemek\</a > bilgisayarınızda mevcut olan bu konu başlığının.|  
 |TopicOnlineLinkText|Bu konuda görüntülemek \<bir href = "{0}" {1}> Çevrimiçi\</a >|  
 |OnlineText|Çevrimiçi|  
 |Özelliği:|**Video ses denetimi**|  
 |Kullanım:|Öğeleri ve video içeriği için metin görüntüleme|  
-|**Öğesi**|**Değer**|  
+|**Öğe**|**Değer**|  
 |MultiMediaNotSupported|Internet Explorer 9 veya üstü yüklü olmalıdır destekleyecek şekilde {0} içeriği.|  
 |VideoText|video görüntüleme|  
 |AudioText|ses akışı|  
@@ -491,25 +491,25 @@ some F# code
 |OnlineAudioLinkText|\<p > Bu konu ile ilgili sesi dinlemek için tıklatın {0} \<bir href = "{1}" >{2}burada\</a >.\< /p >|  
 |Özelliği:|**İçerik denetimi yüklü değil**|  
 |Kullanım:|Contentnotinstalled.htm işlemek için kullanılan metin öğelerini (dize)|  
-|**Öğesi**|**Değer**|  
+|**Öğe**|**Değer**|  
 |ContentNotInstalledTitle|Bilgisayarınızda hiçbir içerik bulunamadı.|  
 |ContentNotInstalledDownloadContentText|\<p > içeriği bilgisayarınıza indirmek için \<bir href = "{0}" {1}> Yönet sekmesini tıklatın\</a >.\< /p >|  
 |ContentNotInstalledText|\<p > bilgisayarınızda hiçbir içerik yüklenir. Lütfen yerel Yardım içerik yükleme için yöneticinize başvurun. \</p >|  
 |Özelliği:|**Konu denetim bulunamadı**|  
 |Kullanım:|Topicnotfound.htm işlemek için kullanılan metin öğelerini (dize)|  
-|**Öğesi**|**Değer**|  
+|**Öğe**|**Değer**|  
 |TopicNotFoundTitle|İstenen konu bilgisayarınızda bulunamıyor.|  
 |TopicNotFoundViewOnlineText|\<p > istediğiniz konu bilgisayarınızda bulunamadı, ancak yapabilecekleriniz \<bir href = "{0}" {1}> konuyu çevrimiçi gör\</a >.\< /p >|  
 |TopicNotFoundDownloadContentText|\<p > benzer konular için Gezinti bölmesine bakın veya \<bir href = "{0}" {1}> Yönet sekmesini tıklatın\</a > bilgisayarınıza içerik indirilemedi.\< /p >|  
 |TopicNotFoundText|\<p > istediğiniz konu bilgisayarınızda bulunamadı. \</p >|  
 |Özelliği:|**Konu bozuk denetimi**|  
 |Kullanım:|Topiccorrupted.htm işlemek için kullanılan metin öğelerini (dize)|  
-|**Öğesi**|**Değer**|  
+|**Öğe**|**Değer**|  
 |TopicCorruptedTitle|İstenen konu görüntülenemiyor.|  
 |TopicCorruptedViewOnlineText|\<p > Yardım Görüntüleyiciyi istenen konuyu görüntüleyemiyor. Konunun içeriğinde veya temel bir sistem bağımlılık bir hata olabilir. \</p >|  
 |Özelliği:|**Giriş sayfası denetimi**|  
 |Kullanım:|Yardım Görüntüleyicisi üst düzey düğüm içerik görünümü destekleyen metin.|  
-|**Öğesi**|**Değer**|  
+|**Öğe**|**Değer**|  
 |HomePageTitle|Yardım Görüntüleyicisi giriş sayfası|  
 |HomePageIntroduction|\<p > Microsoft Yardım Görüntüleyici, temel bir kaynağı olan Microsoft araçları, ürünleri, teknolojileri ve hizmetleri kullanan herkes için daha fazla bilgi için Hoş Geldiniz. Nasıl yapılır ve başvuru bilgileri, örnek kod, teknik makaleler ve daha fazla bilgi için Yardım Görüntüleyici erişmenizi sağlar. İçindekilere göz atın, ihtiyacınız olan içeriği bulmak için tam metin araması kullanın veya içerikte anahtar kelime dizinini kullanarak gezinin. \</p >|  
 |HomePageContentInstallText|\<p >\<br / > kullanım \<bir href = "{0}" {1}> İçeriği Yönet\</a > sekmesini aşağıdakileri yapmak için:\<ul >\<li > bilgisayarınıza içerik ekleyin.\< /li >\<li > yerel içerik güncelleştirmelerini denetleyin.\< /li >\<li > bilgisayarınızdan içerik kaldırın.\< /li >\</ul >\</p >|  
