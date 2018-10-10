@@ -25,6 +25,7 @@
 #### [Enterprise Mobility & Security](vs-ems.md)
 #### [Windows Geliştirici Hesabı](vs-windows-dev.md)
 #### [Office 365 Geliştirici aboneliği](vs-office-dev.md)
+#### [Office 365 aboneliği](vs-office365.md)
 #### [Power BI Pro ](vs-pbi.md)
 #### [TFS için Modern Gereksinimler](vs-modernreq.md)
 #### [Azure Kullandıkça Öde](vs-azure-payg.md)
