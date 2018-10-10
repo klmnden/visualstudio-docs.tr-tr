@@ -9,12 +9,12 @@ description: Seçili Visual Studio aboneliğine dahildir Xamarin University eği
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b939aaeaa201b141e3263ddf9ae35ebc049af6f3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3e709ea6d9ad5f53725aeed0f0400b4e5d365ab0
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280356"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073538"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Xamarin University eğitimi avantajı olarak Visual Studio abonelikleri
 
@@ -76,7 +76,7 @@ Visual Studio Dev Essentials üyeleri erişim seçili ücretsiz kurslar, Konuk e
 | Visual Studio Dev Essentials | Yok  | Ücretsiz plan                                             |  Evet        |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
-<sup>1</sup>*içerir: Not for Resale (NFR), Visual Studio Endüstri ortağı (VSIP).  Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD) düşünün.   Dışlar: MCT yazılım ve Hizmetleri.*
+<sup>1</sup>*içerir: Not for Resale (NFR), Visual Studio Endüstri ortağı (VSIP).  Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Microsoft değerli Professional (MVP), bölge Yöneticisi (RD) düşünün.   Dışlar: MCT yazılım ve Hizmetleri.*
 
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.

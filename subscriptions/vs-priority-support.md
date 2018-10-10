@@ -9,12 +9,12 @@ description: Visual Studio abonelikleri dahil öncelikli destek teklifi hakkınd
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 21448d75cbdbbff5468617ebb3ffc816f672ad3e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9377302cdee771e282ab622df0b76ecf2ca3460b
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282956"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074045"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri öncelikli destek
 
@@ -121,7 +121,7 @@ Seçili Visual Studio abonelikleri olan aboneler aracılığıyla çok sayıda �
 
    - [SQL Server Bildirim Hizmetleri](http://social.msdn.microsoft.com/Forums/en-US/sqlnotificationservices/threads)
 
-   - [SQL Server Raporlama Hizmetleri](http://social.msdn.microsoft.com/Forums/en-US/sqlreportingservices/threads)
+   - [SQL Server Reporting Services](http://social.msdn.microsoft.com/Forums/en-US/sqlreportingservices/threads)
 
    - [Transact-SQL](http://social.msdn.microsoft.com/Forums/en-US/transactsql/threads)
 
@@ -238,7 +238,7 @@ Seçili Visual Studio abonelikleri olan aboneler aracılığıyla çok sayıda �
 | Visual Studio Dev Essentials | Yok  | Dahil edilen                                                            |Evet |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
-<sup>1</sup>*içerir: satılamaz (NFR), FTE, Visual Studio Endüstri ortağı (VSIP) düşünün.  Dışlar: Microsoft iş ortağı ağı (MPN), MCT yazılımı ve Hizmetleri, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD).*
+<sup>1</sup>*içerir: satılamaz (NFR), FTE, Visual Studio Endüstri ortağı (VSIP) düşünün.  Dışlar: Microsoft iş ortağı ağı (MPN), MCT yazılımı ve Hizmetleri, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Microsoft değerli Professional (MVP), bölge Yöneticisi (RD).*
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 

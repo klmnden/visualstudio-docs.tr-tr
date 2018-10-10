@@ -9,12 +9,12 @@ description: Bazı Visual Studio abonelikleri dahil Office 365 Avantajı hakkın
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f26bcc2b4e5313efcf6157d7be7cd01115594cf5
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 27be6e98bcaf030a74096a404383cbc54d64f44f
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48864008"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073915"
 ---
 # <a name="office-365-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Office 365
 
@@ -53,7 +53,7 @@ Office için uygulama geliştirmek üzere planlıyorsanız etkinleştirmek istey
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure | Yok | Yok |
 | Visual Studio Dev Essentials | Yok  | Yok |Yok |
 
-<sup>1</sup>*içerir: değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark için Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), MCT yazılımı & Hizmetleri, Imagine, Microsoft iş ortağı ağı.* 
+<sup>1</sup>*içerir: değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark için Microsoft değerli Professional (MVP), bölge Yöneticisi (RD), MCT Yazılımları ve Hizmetleri, Microsoft iş ortağı ağı düşünün.* 
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 

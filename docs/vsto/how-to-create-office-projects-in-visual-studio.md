@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f39e1a5c5271e806a8e90499e50cb9bd4705a5d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 725d902c181e6082c7f995ceec805aa05441bbaa
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677766"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074058"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Nasıl yapılır: Visual Studio'da Office projeleri oluşturma
   Kullanabileceğiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] VSTO eklentisi ve belge düzeyi özelleştirmeleri Microsoft Office uygulamaları için. Bu proje türleri hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -157,7 +157,7 @@ ms.locfileid: "35677766"
   
     -   Temel alan bir Word Şablonu proje oluşturmakta olduğunuz bir *.dotx* dosya. Böylece çalıştırın ve proje hatalarını ayıklamaya proje klasörünü güvenilir konum listesine eklemeniz gerekir.  
   
-     Belgeyi güvenilir konumlara eklemek hakkında daha fazla bilgi için Microsoft Office çevrimiçi web sitesine bakın [oluşturma, kaldırma veya değişiklik dosyalarınız için güvenilen bir konum](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
+     Belgeyi güvenilir konumlara eklemek hakkında daha fazla bilgi için Microsoft Office çevrimiçi web sitesine bakın [oluşturma, kaldırma veya değişiklik dosyalarınız için güvenilen bir konum](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md)   

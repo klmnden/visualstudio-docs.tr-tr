@@ -9,12 +9,12 @@ description: Visual Studio aboneliklerine dahil edilen Azure Danışmanı Sohbet
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 653611a2baa9211c74fa28ee90d2397c11c4bbe3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0ce99a05ae29f7533d0a0f98206263872d047d31
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278900"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074006"
 ---
 # <a name="azure-advisory-chat"></a>Azure Danışmanı Sohbeti
 
@@ -46,7 +46,7 @@ Azure Danışmanı Sohbeti kullanarak kolay bir işlemdir.
 | Visual Studio Test Professional (standart)                         | Tümü                                              | Yok                                             |  Hayır          |
 | MSDN platformları (standart)                                          | Tümü                                              |Yok                                              |  Hayır          |
 | Visual Studio Dev Essentials                                          | Yok                                              |Yok                                              |  Hayır          |
-<sup>1</sup>*içerir: değil satışıyla (NFR), Microsoft değerli ortak (MVP), bölge Yöneticisi (RD) için Visual Studio Endüstri ortağı (VSIP), BizSpark, Imagine, MCT*
+<sup>1</sup>*içerir: değil satışıyla (NFR), Microsoft değerli Professional (MVP), bölge Yöneticisi (RD) için Visual Studio Endüstri ortağı (VSIP), BizSpark, Imagine, MCT* 
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 

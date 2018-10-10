@@ -9,12 +9,12 @@ description: Beceri bana seçili Visual Studio aboneliğine dahildir Opsgility e
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscriptions
-ms.openlocfilehash: 1eb58fb8667e2eebea1108d0df2d654917ed2702
-ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
+ms.openlocfilehash: 8f62fdb14847048f212c055017b1461085e3529b
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48243919"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073720"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Yetenek bana yukarı - Opsgility eğitimi avantajı olarak Visual Studio abonelikleri tarafından desteklenir
 
@@ -45,7 +45,7 @@ Seçili Visual Studio Abonelikleri, en fazla altı ay erişimle uzman, isteğe b
 | Visual Studio Dev Essentials | Yok  | Yok | Yok  |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
-*Dışlar: Microsoft iş ortağı ağı (MPN), Microsoft değerli ortak (MVP), Microsoft eğitmen, BizSpark, Imagine, NFR, FTE sertifikalı*
+*Dışlar: Microsoft iş ortağı ağı (MPN), Microsoft değerli Professional (MVP), Microsoft eğitmen, BizSpark, Imagine, NFR, FTE sertifikalı*
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 

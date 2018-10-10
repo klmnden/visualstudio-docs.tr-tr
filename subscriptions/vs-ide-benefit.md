@@ -9,12 +9,12 @@ description: Visual Studio IDE, Visual Studio aboneliğinize dahil yükleyip ö�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f65deb92684f043597256d8e2f0664f18da9cfa1
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 775ab55066c241eb4881e19a33a8557aeada2aa4
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42623896"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073850"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>Visual Studio 2017 avantajının kullanılmasıyla
 
@@ -68,7 +68,7 @@ IDE indirmek için:
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Yok                                              |  Yok          |
 | Visual Studio Dev Essentials | Yok  | Visual Studio Community |Evet |
 
-<sup>1</sup>*içerir: satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Imagine değil için Microsoft iş ortağı (MVP), bölge Yöneticisi (RD) değerli.    Dışlar: MCT yazılım ve Hizmetleri.*
+<sup>1</sup>*içerir: satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Imagine değil için Microsoft Professional (MVP), bölge Yöneticisi (RD) değerli. .    Dışlar: MCT yazılım ve Hizmetleri.*
 
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.

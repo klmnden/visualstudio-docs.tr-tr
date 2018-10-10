@@ -9,12 +9,12 @@ description: Visual Studio abonelikleri dahil Concierge Chat Avantajı hakkında
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1163feb7b1a55a816eef3b4b5f106de01c34669a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 73201570aae74645a0116c3a34aab344c07c7837
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282528"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073694"
 ---
 # <a name="concierge-chat"></a>Concierge Sohbeti
 
@@ -49,7 +49,7 @@ Concierge Chat hizmeti aracılığıyla Yardım alma çok kolaydır.
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure | Yok | Yok |
 | Visual Studio Dev Essentials | Yok  | Yok |Yok |
 
-<sup>1</sup>*içerir: satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft eğitmen, BizSpark sertifikası.  Dışlar: FTE, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), Microsoft iş ortağı ağı (MPN) düşünün.*
+<sup>1</sup>*içerir: satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft eğitmen, BizSpark sertifikası.  Dışlar: FTE, Microsoft değerli Professional (MVP), bölge Yöneticisi (RD), Microsoft iş ortağı ağı (MPN) düşünün.*
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 

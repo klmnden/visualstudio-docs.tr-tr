@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil Azure avantajı etkinleştirme h
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b8f3542fce0d04e4e6efeba6e2558740c5f5d12f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2a59953eb3af65430492d892e58f51f2d51f63e5
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282319"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073967"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Microsoft Azure'da kullanın
 
@@ -44,7 +44,7 @@ Visual Studio abonesi olarak, Microsoft Azure, başka bir ücret ödemeden kulla
 | Visual Studio Enterprise – BizSpark                          | 150 ABD Doları aylık kredi         |   Evet                                                        |
 | Visual Studio Enterprise – MCT yazılım ve Hizmetleri           | 100 ABD Doları aylık kredi         |   Evet                                                        |
 | Visual Studio Enterprise – MCT yazılım ve geliştirici Hizmetleri | 150 ABD Doları aylık kredi         |   Evet                                                        |
-* Değil satışıyla (NFR), Microsoft değerli ortak (MVP), bölge Yöneticisi (RD) için Visual Studio Endüstri ortağı (VSIP) içerir
+* Değil satışıyla (NFR), Microsoft değerli Professional (MVP), bölge Yöneticisi (RD) için Visual Studio Endüstri ortağı (VSIP) içerir
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 

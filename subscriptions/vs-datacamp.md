@@ -9,12 +9,12 @@ description: Seçili Visual Studio abonelikleriyle dahil DataCamp eğitim abonel
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f0a6fe16edf12616dd93b394b118f40651ffb0ec
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 81dea4c5da7b6fe6b6c6cfe000ae953f98e6e83f
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282422"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073824"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>DataCamp eğitim avantajı olarak Visual Studio abonelikleri
 
@@ -80,7 +80,7 @@ Herhangi bir noktada durdurmak ve eğitim sonraki oturumunuzda sürdürün.  Yal
 
 
 
-<sup>1</sup>*içerir: satışıyla (NFR), FTE, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), Microsoft iş ortağı ağı (MPN), Visual Studio Endüstri ortağı (VSIP), Microsoft eğitmen, BizSpark, onaylanmamıştır için Imagine*
+<sup>1</sup>*içerir: satışıyla (NFR), FTE, değerli Microsoft Professional (MVP), bölge Yöneticisi (RD), Microsoft iş ortağı ağı (MPN), Visual Studio Endüstri ortağı (VSIP), Microsoft eğitmen, BizSpark, onaylanmamıştır için Imagine* 
 
 
 

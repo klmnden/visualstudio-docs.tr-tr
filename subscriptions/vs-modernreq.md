@@ -9,12 +9,12 @@ description: Seçili Visual Studio Enterprise aboneliklerine dahil olan ürünle
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5df418e14d3aa9a85ceaca341cdfeb4b203ee97c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7b2b7cd8848550efe24541a128caaf336a6458ad
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279030"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073876"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>MODERNRequirements4TFS avantaj olarak Visual Studio abonelikleri
 
@@ -94,7 +94,7 @@ Seçili Visual Studio abonelikleri MODERNRequirements SmartOffice 4TFS ve Modern
 | Visual Studio Dev Essentials | Yok  |Yok                                                          |Yok     |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
-<sup>1</sup>*içerir: satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (Kurumsal), FTE için değil.  Dışlar: Microsoft iş ortağı ağı (Professional), MCT yazılım ve geliştirici Hizmetleri, BizSpark, Imagine, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD).  MCT yazılım ve Hizmetleri.*
+<sup>1</sup>*içerir: satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (Kurumsal), FTE için değil.  Dışlar: Microsoft iş ortağı ağı (Professional), MCT yazılım ve geliştirici Hizmetleri, BizSpark, Imagine, Microsoft değerli Professional (MVP), bölge Yöneticisi (RD).  MCT yazılım ve Hizmetleri.*
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 

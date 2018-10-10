@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil olan teknik destek teklifinizden
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 072a0c7dc7679f965c84de06c969034db02766a2
-ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
+ms.openlocfilehash: 3f6474052555734a57f5478fd3bc4b711e6fce21
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44701773"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073889"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio Abonelikleri, teknik destek teklifinizden etkinleştir
 
@@ -102,6 +102,6 @@ Bu adımları tamamladıktan sonra Visual Studio abonelik avantajınız ile ili�
 | Visual Studio Dev Essentials | Yok | Yok |Yok|
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
-<sup>1</sup> *içerir: Premium düşünün. Dışlar: Satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, standart, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), MCT yazılımı ve Hizmetleri düşünün.*
+<sup>1</sup> *içerir: Premium düşünün. Dışlar: Satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Imagine Standard'a değil için Microsoft değerli Professional (MVP), bölge Yöneticisi (RD), MCT yazılım & Hizmetler.*
 
 <sup>2</sup> *içerir: standart düşünün.*

@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil Office 365 Geliştirici teklifi 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a97f32bdb2e4a2639962cb3bfc1240f27473bfd6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9c77062873704f6e92d04aa4e949f1db3c1c71f7
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283190"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073980"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio Abonelikleri, Office 365 Geliştirici aboneliği teklifi
 
@@ -56,7 +56,12 @@ Seçili Visual Studio Enterprise abonelikleri olan aboneler, Office 365 Gelişti
     > [!div class="mx-imgBorder"]
     > ![Office 365 geliştirme kod doğrulama](_img\vs-office-dev\vs-office-dev-setup.png)
 
-İşte bu kadar!  Tercihlerinize göre bilgi görüntüleyen bir sayfa görürsünüz.  Geliştirici aboneliğinize erişmek için şu adrese gidin [office.com](https://www.office.com) ve yeni oluşturduğunuz oturum kullanıcı kimliği ve parola.
+İşte bu kadar!  Tercihlerinize göre bilgi görüntüleyen bir sayfa görürsünüz.  
+
+## <a name="next-steps"></a>Sonraki adımlar
+Geliştirici aboneliğinize erişmek için şu adrese gidin [office.com](https://www.office.com) ve yeni oluşturduğunuz oturum kullanıcı kimliği ve parola.
+
+Office 365 Geliştirici aboneliği hakkında daha fazla bilgi için kullanıma [Office 365 Geliştirici programı SSS](https://docs.microsoft.com/office/developer-program/office-365-developer-program-faq). 
 
 
 ## <a name="eligibility"></a>Uygunluk
@@ -69,7 +74,7 @@ Seçili Visual Studio Enterprise abonelikleri olan aboneler, Office 365 Gelişti
 | Visual Studio Dev Essentials | Yok  | Yok |Yok |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
-<sup>1</sup>*içerir: satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, BizSpark, MCT yazılım ve geliştirici Hizmetleri, MCT yazılım ve Hizmetleri için değil.  Dışlar: Microsoft iş ortağı ağı (MPN), Imagine, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD).*
+<sup>1</sup>*içerir: satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, BizSpark, MCT yazılım ve geliştirici Hizmetleri, MCT yazılım ve Hizmetleri için değil.  Dışlar: Microsoft iş ortağı ağı (MPN), Imagine, Microsoft değerli Professional (MVP), bölge Yöneticisi (RD).*
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 

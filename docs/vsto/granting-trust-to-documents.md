@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c78db0a141d711a1a0ac3e46fa49255e754bf52d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 717bfaf8bc97c0f45a45bdc8ba686d4c1df12e49
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677898"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073447"
 ---
 # <a name="grant-trust-to-documents"></a>Belgelere güven verme
   Belge düzeyi projesi aynı uygulama düzeyi projelere güvenlik gereksinimlerine sahiptir: bir sertifika ile bildirimleri imzalama veya güven istemi tıklayarak. Ayrıca, belge veya çalışma kitabı güvenli bir konuma atanan bir dizinde yer almalıdır.  
@@ -33,7 +33,7 @@ ms.locfileid: "35677898"
 ## <a name="trusted-locations"></a>Güvenilen Konumlar  
  Uygulamalarda [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ve Office 2010 güven merkezlerini burada kullanıcılar yapılandırabilir güvenilen konumları gibi güvenlik ve gizlilik ayarları. Office çözümleri için yerel bilgisayarın güvenilir olarak kabul edilir. Ancak, daha yüksek risk nedeniyle geçici bir klasör sistemin, her kullanıcı ve Internet Explorer gibi güvenilir olmayan belirli dizinleri vardır.  
   
- Güven Merkezi hakkında daha fazla bilgi için bkz. [güvenliğini ve ilkelerini ve ayarlarını Office 2010'daki](http://go.microsoft.com/fwlink/?LinkId=89202). Oluşturma, yönetme, kaldırmak ve güvenilen klasörlerini yapılandırma hakkında daha fazla bilgi için bkz. [2007 Office sisteminde Güvenilen Konumlar ve güvenilen yayımcılar ayarlarını yapılandırma](http://go.microsoft.com/fwlink/?LinkId=89203) ve [oluşturma, kaldırma veya değiştirme bir güvenilir, dosyaları için konum](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
+ Güven Merkezi hakkında daha fazla bilgi için bkz. [güvenliğini ve ilkelerini ve ayarlarını Office 2010'daki](http://go.microsoft.com/fwlink/?LinkId=89202). Oluşturma, yönetme, kaldırmak ve güvenilen klasörlerini yapılandırma hakkında daha fazla bilgi için bkz. [2007 Office sisteminde Güvenilen Konumlar ve güvenilen yayımcılar ayarlarını yapılandırma](http://go.microsoft.com/fwlink/?LinkId=89203) ve [oluşturma, kaldırma veya değiştirme bir güvenilir, dosyaları için konum](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
 ## <a name="security-considerations-for-office-solutions"></a>Office çözümleriyle ilgili güvenlik konuları  
  Güvenilir konumlara eklemek için klasörleri düşünürken birçok güvenlik sorunları vardır:  

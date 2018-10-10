@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil MSDN Magazine aboneliği almak i
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a988c6cd546aee767c0900f2319bc456a79da266
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 65c1b2a37c11c70ab8cc8f67be21bc3ef9a35d60
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283593"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073954"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>MSDN Magazine avantaj olarak Visual Studio abonelikleri
 
@@ -59,7 +59,7 @@ Dijital sürüm, Visual Studio Dev Essentials üyeleri için kullanılabilir.
 
 <sup>1</sup>*yazdırılan sürümü: yeniden satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, Microsoft iş ortağı ağı (Kurumsal) için Imagine (Premium).*
 
-*Dijital sürüm: MCT yazılım ve Hizmetleri, Microsoft değerli ortak (Professional), bölge Yöneticisi (RD).*
+*Dijital sürüm: MCT yazılım ve Hizmetleri, değerli Microsoft uzmanı (Professional), bölge Yöneticisi (RD).*
 
 *Dışlar: (Standart), Imagine BizSpark, MCT yazılım ve geliştirici Hizmetleri*
 

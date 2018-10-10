@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil olan Pluralsight eğitim aboneli
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3b90ac75cf92ac9adfef5023b3677b8044d44350
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 515053c8266aa7cccb1afd651c2eac4da31e3e8d
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283151"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074032"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Pluralsight eğitim avantajları
 
@@ -81,7 +81,7 @@ Aşağıdaki tabloda, hangi Pluralsight abonelik avantajlarının her Visual Stu
 | Visual Studio Dev Essentials | Yok  | 3 ay |Hayır|
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                  |Yok|
 | Visual Studio Enterprise (NFR<sup>1</sup> ) | Program                                       | Yok                                  |Yok|
-<sup>1</sup>*içerir: değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), BizSpark, MCT yazılım ve geliştirici Hizmetleri, MCT yazılım ve hizmet için Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), Microsoft iş ortağı Ağı (MPN) FTE, düşünün.*
+<sup>1</sup>*içerir: değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), BizSpark, MCT yazılım ve geliştirici Hizmetleri, MCT yazılım ve hizmet için Microsoft değerli Professional (MVP), bölge Yöneticisi (RD), Microsoft iş ortağı Ağı (MPN) FTE, düşünün.* 
 
 <sup>2</sup>*Pluralsight avantajdır tek bir kullanım için ayrı ayrı bağlanır.  Abonelik teklifi kullanır, sonra sıfırlanmaz. Aşağıdaki sık sorulan soruları daha fazla ayrıntı için lütfen bkz.  Pluralsight abonelik sona erme üç çalışma alanı birinde 12 ay 50 seçili Pluralsight kurslarına erişim almak uygun olabilir.*
 

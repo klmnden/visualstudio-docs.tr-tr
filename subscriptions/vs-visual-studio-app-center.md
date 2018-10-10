@@ -9,12 +9,12 @@ description: Visual Studio abonelikleri dahil Visual Studio App Center teklifi h
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 266ce307b8ee06eed427385d67c48d4258ae2a1c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e6d8e53d01892dc22de8ce48f37f0df6a506ae3b
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283177"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073838"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio Abonelikleri, Visual Studio App Center
 
@@ -50,7 +50,7 @@ Visual Studio App Center ile kullanmaya kolayca başlayabilirsiniz.
 | Visual Studio Dev Essentials | Yok  | Dahil edilen                                                            |Evet |
 
 
-<sup>1</sup>*içerir: değil (NFR) FTE, Visual Studio Endüstri ortağı (VSIP) üzerinden satılmasına Imagine için Microsoft iş ortağı ağı (MPN), MCT yazılımı ve Hizmetleri, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Microsoft iş ortağı (MVP değerli. ), Bölge Yöneticisi (RD).*
+<sup>1</sup>*içerir: değil (NFR) FTE, Visual Studio Endüstri ortağı (VSIP) üzerinden satılmasına Imagine için Microsoft iş ortağı ağı (MPN), MCT yazılımı ve Hizmetleri, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Microsoft değerli Professional (MVP), bölge Yöneticisi (RD).* 
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 

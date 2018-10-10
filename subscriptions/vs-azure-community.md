@@ -9,12 +9,12 @@ description: Seçili Visual Studio aboneliklerine dahil edilen Azure topluluğu 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 92115e0beef07b50e2ea0783ccde6a9cc792c838
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 71082ba5cadc96af27e48fc005b69fb6434e1cfe
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283736"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073902"
 ---
 # <a name="azure-community"></a>Azure topluluğu
 
@@ -60,7 +60,7 @@ Azure topluluğu avantajı kullanılabilirliğini, aşağıda gösterildiği gib
 | Visual Studio Enterprise (aylık bulut), Visual Studio Professional (aylık bulut), NFR<sup>1</sup>                                          | Tümü                                              |Yok                                              |  Hayır          |
 | Visual Studio Dev Essentials                                        | Yok                                              |Yok                                              |  Hayır          |
 |
-<sup>1</sup>*içerir: değil satışıyla (NFR), Microsoft TZE'si, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), Visual Studio Endüstri ortağı (VSIP), BizSpark, Imagine için Microsoft Eğitmen (MCT) sertifikası*
+<sup>1</sup>*içerir: değil satışıyla (NFR), Microsoft TZE'si, değerli Microsoft Professional (MVP), bölge Yöneticisi (RD), Visual Studio Endüstri ortağı (VSIP), BizSpark, Imagine için Microsoft Eğitmen (MCT) sertifikası* 
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
