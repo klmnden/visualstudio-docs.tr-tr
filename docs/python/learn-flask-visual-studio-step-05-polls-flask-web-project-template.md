@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7f154afe78d01fb7f139308c09f669528b645859
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: f79cf8693eb33d7ad5a5d26c9f3c2ef13cc9772c
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228896"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101023"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>5. adım: yoklamalar Flask Web projesi şablonunu kullanma
 
@@ -352,11 +352,8 @@ Artık Visual Studio'da "Boş Flask Web projesi", "[/Jade] Flask Web projesi" ve
 
 Bir web uygulaması geliştirme bilgisayarınızda çalışan uygulamayı müşterileriniz için kullanılabilir hale getirme, tek bir adımdır. Sonraki adımlar, aşağıdaki görevleri şunlardır:
 
-- Web uygulamasını Azure App Service gibi bir üretim sunucusuna dağıtın. Bkz: [Azure App Service'e yayımlama](publishing-python-web-applications-to-azure-from-visual-studio.md), Flask uygulamalar için gereken belirli değişiklikleri içerir.
+- Web uygulamasını Azure App Service gibi bir üretim sunucusuna dağıtın. Bkz: [Azure App Service'e yayımlama](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 - PostgreSQL, MySQL ve SQL Server'ın (her biri Azure üzerinde barındırılabilir) gibi başka bir üretim düzeyinde veri deposunu kullanan bir depo uygulaması ekleyin. Ayrıca [Python için Azure SDK'sı](azure-sdk-for-python.md) Cosmos DB yanı sıra tablo ve BLOB'ları gibi Azure depolama hizmetleriyle çalışmaya.
 
-- Azure işlem hatları gibi bir hizmette bir sürekli tümleştirme/sürekli dağıtım işlem hattı ayarlayın. Kaynak denetimi (Azure depoları, GitHub veya başka bir yerde) ile çalışma ek olarak, Azure otomatik olarak birim testlerinizi yayın için bir önkoşul olarak çalıştırın ve ayrıca önce ek testler için bir hazırlık sunucusu dağıtmak için işlem hattı yapılandırın Test planları olabilir Üretim dağıtımı. Ayrıca, Azure DevOps Hizmetleri izleme App Insights gibi çözümleri ile tümleşir ve Çevik planlama araçları ile tüm döngüyü kapatır. Daha fazla bilgi için bkz.:
-
-  - [Azure DevOps projeleri ile Python için CI/CD işlem hattı oluşturma](/azure/devops-project/azure-devops-project-python?view=vsts)
-  - [Azure DevOps (video, 11m 21s) ile azure'da Python geliştirme](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).
+- Visual Studio Team Services (VSTS) gibi bir hizmette bir sürekli tümleştirme/sürekli dağıtım işlem hattı ayarlayın. Kaynak denetimi (VSTS, GitHub veya başka bir yerde) ile çalışma ek olarak, otomatik olarak yayın için bir önkoşul olarak birim testlerinizi çalıştırmak ve işlem hattı için dağıtmadan önce ek testler için bir hazırlık sunucusu dağıtmak için de yapılandırmanız VSTS olabilir Üretim. VSTS, ayrıca, App Insights gibi çözümlerle izleme ile tümleşir ve Çevik planlama araçları ile tüm döngüyü kapatır. Daha fazla bilgi için [Azure DevOps projesi ile CI/CD işlem hattı oluşturma için Python](/azure/devops-project/azure-devops-project-python?view=vsts).

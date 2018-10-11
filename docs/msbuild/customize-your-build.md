@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd397420652d5d70429daa7ecea35210194dd37a
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c4fa433a3eb2318c36545a285cfd57386c169eb2
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175962"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101036"
 ---
 # <a name="customize-your-build"></a>Derlemenizi özelleştirme
 
@@ -33,6 +33,11 @@ A *Directory.Build.rsp* ya da üzeri kaynak dizin dosyası projenizin komut sat�
 MSBuild 15 sürümü önce çözümünüzdeki projelerine yeni, özel bir özellik sağlamak isterseniz bu özellik bir başvuru çözümdeki her proje dosyasında el ile ekleyin gerekiyordu. Ya da özelliği tanımlamak olan bir *.props* dosya ve açıkça alma *.props* çözümdeki diğer özelliklerin yanı sıra her bir proje dosyasında.
 
 Bununla birlikte, artık yeni bir özellik tek bir adımda her proje için bir tek dosyalı çağrılan içinde tanımlayarak ekleyebilirsiniz *Directory.Build.props* kaynağınızı içeren kök klasörü içinde. MSBuild çalıştığında *Microsoft.Common.props* dizin yapınızı arar *Directory.Build.props* dosyası (ve *Microsoft.Common.targets* arar *Directory.Build.targets*). Bulursa, özelliği alır. *Directory.Build.props* özelleştirmeleri bir dizin altında projelerine sağlayan kullanıcı tanımlı bir dosya.
+
+> [!NOTE]
+> Linux tabanlı bir dosya sistemi büyük/küçük harfe duyarlıdır. Büyük/küçük harf Directory.Build.props adının tam olarak eşleşen emin olun veya derleme işlemi sırasında algılanmaz.
+>
+> Bkz: [bu GitHub sorunu](https://github.com/dotnet/core/issues/1991#issue-368441031) daha fazla bilgi için.
 
 ### <a name="directorybuildprops-example"></a>Directory.Build.props örneği
 

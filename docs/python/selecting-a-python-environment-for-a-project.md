@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 813fdbccaf7bb685f0b4bf182f0bd0aede907f83
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e738eb52ce8cb7cef4090dd9812f6c421a7d11fd
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551668"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101140"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Hangi Python ortamını bir proje için kullanılan atama
 
@@ -50,7 +50,7 @@ Bir sanal ortam belirli bir Python yorumlayıcısı eşsiz bir bileşimiyle ve d
 
 Bir sanal ortam kullanmanın bir avantajı, zaman içinde proje geliştirirken, sanal ortamı her zaman tam proje bağımlılıkları yansıtır ' dir. (Bunları projenizde veya olmanızdan bağımsız bir paylaşılan genel ortam, diğer taraftan, herhangi bir sayıda kitaplıkları içerir.) Daha sonra kolayca oluşturabilirsiniz bir *requirements.txt* dosyadan sonra bu bağımlılıkları başka bir geliştirme veya üretim bilgisayarına yeniden yüklemek için kullanılan sanal ortamı. Daha fazla bilgi için [requirements.txt ile gerekli paketleri yönetme](managing-required-packages-with-requirements-txt.md).
 
-Visual Studio'da içeren bir proje açtığınızda, bir *requirements.txt* dosya, Visual Studio otomatik olarak sanal ortam yeniden oluşturmak için seçeneği size sunar. Burada Visual Studio yüklü değil, Azure App Service gibi bilgisayarlarda kullanabilirsiniz `pip install -r requirements.txt` paketlerini geri yüklemek için (Bu işlem üzerinde açıklanmıştır [Azure App Service'te Python'u yönetme](managing-python-on-azure-app-service.md)).
+Visual Studio'da içeren bir proje açtığınızda, bir *requirements.txt* dosya, Visual Studio otomatik olarak sanal ortam yeniden oluşturmak için seçeneği size sunar. Visual Studio'nun yüklü olmayan bilgisayarlarda kullanabilirsiniz `pip install -r requirements.txt` paketlerini geri yüklemek için.
 
 Bir sanal ortam için temel yorumlayıcı sabit kodlanmış bir yol içerdiğinden ve ortam kullanarak yeniden oluşturabilirsiniz *requirements.txt*, genellikle kaynak denetiminden tüm sanal ortamın klasöre çıkarın.
 

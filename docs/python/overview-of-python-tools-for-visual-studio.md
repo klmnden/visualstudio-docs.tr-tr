@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fe19c1239c2f08417b1b7ee76cb07ae150c891d1
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: c70d13237b1d6fb3bfac130e97d3516efd306569
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029153"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101179"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python ile çalışma
 
@@ -99,7 +99,7 @@ Daha fazla bilgi için:
 
 ## <a name="full-featured-debugging"></a>Tam özellikli hata ayıklama
 
-Visual Studio'nun güçlü, güçlü bir hata ayıklayıcı biridir. Visual Studio için Python özellikle içerir Python/C++ karışık mod hata ayıklaması, Linux üzerinde uzaktan hata ayıklama, Azure içinde hata ayıklama, uzaktan hata ayıklama **etkileşimli** penceresi ve Python birim testleri hata ayıklama.
+Visual Studio'nun güçlü, güçlü bir hata ayıklayıcı biridir. Python için Python/C++ karışık hata ayıklama, uzaktan hata ayıklama içinde hata ayıklama Linux'ta mod özellikle, Visual Studio içerir **etkileşimli** penceresi ve Python birim testleri hata ayıklama.
 
 ![Bir özel durum açılan gösteren Python için Visual Studio hata ayıklayıcı](media/debugging-exception-popup.png)
 
@@ -109,7 +109,6 @@ Daha fazla bilgi için:
 - Docs: [Python hata ayıklama](debugging-python-in-visual-studio.md)
 - Docs: [Python/C++ karışık mod hata ayıklaması](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - Docs: [Linux üzerinde uzaktan hata ayıklama](debugging-python-code-on-remote-linux-machines.md)
-- Docs: [Azure'da uzaktan hata ayıklama](debugging-remote-python-code-on-azure.md)
 - Genel Visual Studio özellik belgeleri: [özelliği Visual Studio hata ayıklayıcı turu](../debugger/debugger-feature-tour.md)
 
 ## <a name="profiling-tools-with-comprehensive-reporting"></a>Kapsamlı Raporlama ile profil oluşturma araçları
@@ -136,16 +135,11 @@ Daha fazla bilgi için:
 - Docs: [birim testi için Python araçları](unit-testing-python-in-visual-studio.md)
 - Genel Visual Studio özellik belgeleri: [birim testi kod](../test/unit-test-your-code.md).
 
-## <a name="publish-to-azure-and-azure-sdk-for-python"></a>Azure ve Azure yayımlama için Python SDK'sı
+## <a name="azure-sdk-for-python"></a>Python için Azure SDK
 
-Visual Studio, web uygulamaları ve bulut Hizmetleri, Azure'da yayımlamak için tümleşik destek sağlar. Visual Studio temel içerir *web.config* öğe şablonları dinamik ve statik içerik. Python iş yükü, ayrıca Windows, Mac OS X ve Linux uygulamaları kullanan Azure hizmetlerinden basitleştiren, Python için Azure SDK'sı içerir.
+Python iş yükü, Windows, Mac OS X ve Linux uygulamaları Azure hizmetlerinden aramanın basitleştiren, Python için Azure SDK'sı içerir.
 
-![Visual Studio'da Python uygulamasını azure'a yayımlama](media/azure-publish-dialog.png)
-
-Daha fazla bilgi için:
-
-- Docs: [Azure'a yayımlama](publishing-python-web-applications-to-azure-from-visual-studio.md)
-- Docs: [Python için Azure SDK](azure-sdk-for-python.md)
+Daha fazla bilgi için [Python için Azure SDK'sı](azure-sdk-for-python.md)
 
 ## <a name="python-training-on-microsoft-virtual-academy"></a>Microsoft Virtual Academy hakkındaki Python eğitim
 

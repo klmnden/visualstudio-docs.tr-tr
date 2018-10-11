@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e847322b1bbbefec5c7013d7e90475e08f42694b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4ea90a97067e92d39772bd4257dc3abbae58d1d8
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499549"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100971"
 ---
 # <a name="django-web-project-template"></a>Django web projesi şablonu
 
@@ -56,7 +56,7 @@ Django Yönetim Konsolu çeşitli komutlara üzerinden erişilen **proje** menü
 
     ![Konsol](media/template-django-console-sync-db.png)
 
-- **Statik toplamak**: yürütür `manage.py collectstatic --noinput` tarafından belirtilen yol için tüm statik dosyaları kopyalamak için `STATIC_ROOT` içinde *settings.py*. Zaman [Azure App Service'te yayımlama](publishing-python-web-applications-to-azure-from-visual-studio.md), statik dosyalar, yayımlama işleminin bir parçası olarak otomatik olarak toplanır.
+- **Statik toplamak**: yürütür `manage.py collectstatic --noinput` tarafından belirtilen yol için tüm statik dosyaları kopyalamak için `STATIC_ROOT` içinde *settings.py*.
 
     ![Konsol](media/template-django-console-collect-static.png)
 

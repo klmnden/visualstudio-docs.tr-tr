@@ -1,7 +1,7 @@
 ---
 title: Python kodunda hata ayıklama
 description: Visual Studio'da hata ayıklama özellikleri özellikle kesme noktaları ayarlama, Adımlama, değerler geçirerek, özel durumlar arama ve etkileşimli pencerede hata ayıklama da dahil olmak üzere Python kodu için bir kılavuz.
-ms.date: 09/25/2018
+ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fa331093e6085179a20638b1314200f65deb6a61
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 52869de661d9818252b68271c089f6b04a0b9f00
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228948"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101166"
 ---
 # <a name="debug-your-python-code"></a>Python kodunuzun hatalarını ayıklama
 
@@ -25,7 +25,6 @@ Visual Studio, Python, çalışan işlemlere, ekleme dahil olmak üzere, ifadele
 Ayrıca aşağıdaki senaryoya özgü hata ayıklama makalelere bakın:
 
 - [Linux uzaktan hata ayıklama](debugging-python-code-on-remote-linux-machines.md)
-- [Azure uzaktan hata ayıklama](debugging-remote-python-code-on-azure.md)
 - [Python/C++ karışık mod hata ayıklaması](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [Karışık mod hata ayıklaması için semboller](debugging-symbols-for-mixed-mode-c-cpp-python.md)
 

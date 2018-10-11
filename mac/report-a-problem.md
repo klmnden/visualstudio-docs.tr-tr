@@ -4,18 +4,18 @@ description: Mac için Visual Studio kullanırken önerileri veya rapor sorunlar
 ms.topic: troubleshooting
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 10/11/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 98b9b2f346c169d6b992f0d65a1454e3de9e814d
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 410444e584307c468b61eb4a478fed0d8df09b2e
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624396"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101127"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Mac için Visual Studio'da bir sorun bildirme
 
-Mac için Visual Studio ile bir sorunla karşılaşırsanız, böylece biz de tanılayın ve düzeltin bunu bilmek istiyoruz. 
+Mac için Visual Studio ile ilgili bir sorun yaşarsanız, bunu bilmek istiyoruz. Sorunu bildirme işte [Geliştirici topluluğu](https://developercommunity.visualstudio.com/) böylece biz de tanılayın ve düzeltin.
 
 ## <a name="how-to-report-a-problem"></a>Bir sorun bildirme
 

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46913c1bb671c1986c4f302a84d4183fe17f5878
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9edfae9eb2109a81208cd864dd992dee565f7958
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778300"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101101"
 ---
 # <a name="remote-debugging"></a>Uzaktan Hata Ayıklama
 Farklı bir bilgisayara dağıtılan bir Visual Studio uygulamada hata ayıklaması yapabilirsiniz. Bunu yapmak için Visual Studio uzaktan hata ayıklayıcıyı kullanın.
@@ -47,47 +47,6 @@ Hemen indirin ve uzaktan hata ayıklayıcıyı yüklemek istediğiniz ve senaryo
 ## <a name="download-and-install-the-remote-tools"></a>Uzak araçları indirme ve yükleme
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-
-## <a name="unblock_msvsmon"></a> Windows Server'da uzak Araçlar'ın indirme engelini kaldırma
-
-Varsayılan güvenlik ayarlarını Internet Explorer'da Windows Server bileşenleri gibi uzak araçları indirmek zaman yapabilirsiniz.
-
-* Web siteleri açarak ve kaynağı içeren etki alanını açıkça izin verilmediği sürece web kaynaklara erişimi engeller Internet Explorer Artırılmış Güvenlik Yapılandırması etkin (diğer bir deyişle, güvenilen). Bu ayarı devre dışı olsa da, bunu İmkanları güvenlik riski oluşturur. önerilmez.
-
-* Windows Server 2016, bir varsayılan ayarı **Internet Seçenekleri** > **güvenlik** > **Internet**  >   **Özel düzey** > **indirir** ayrıca indirmeler devre dışı bırakır dosya. Doğrudan Windows Server'da uzak araçları indirmek isterseniz, dosya indirme etkinleştirmeniz gerekir.
-
-Windows Server'da araçları indirmek için aşağıdakilerden birini öneririz:
-
-* Çalışan bir Visual Studio gibi farklı bir bilgisayarda Uzak araçları indirmek ve ardından kopyalama *.exe* Windows Server'a dosya.
-
-* Uzaktan hata ayıklayıcıyı çalıştırmak [bir dosya paylaşımından](#fileshare_msvsmon) Visual Studio makinenizde.
-
-* Doğrudan Windows Server'da uzak araçları indirmek ve Güvenilen siteler eklemek için istemleri kabul edin. Bu istemleri çok neden olabilir, böylece Modern Web siteleri genellikle çok sayıda üçüncü taraf kaynakları içerir. Ayrıca, yeniden yönlendirilen bağlantıları el ile eklenmesi gerekebilir. Yükleme başlamadan önce bazı Güvenilen siteler eklemek seçebilirsiniz. Git **Internet Seçenekleri > Güvenlik > Güvenilen siteler > siteleri** ve aşağıdaki siteleri ekleyin.
-
-  * VisualStudio.microsoft.com
-  * download.VisualStudio.microsoft.com
-  * hakkında: boş
-
-  My.visualstudio.com hata ayıklayıcıyı eski sürümleri için oturum açma başarılı olduğundan emin olmak için bu ek siteleri ekleyin:
-
-  * Microsoft.com
-  * go.microsoft.com
-  * download.microsoft.com
-  * My.VisualStudio.com
-  * login.microsoftonline.com
-  * Login.live.com
-  * secure.aadcdn.microsoftonline-p.com
-  * MSFT.STS.microsoft.com
-  * auth.Gfx.MS
-  * app.vssps.visualstudio.com
-  * vlscppe.microsoft.com
-  * Query.prod.cms.RT.microsoft.com
-
-    Uzak Araçlar'ı indirirken bu etki alanları eklemek seçin ve sonra seçin, **Ekle** istendiğinde.
-
-    ![Engellenen içerik iletişim kutusu](../debugger/media/remotedbg-blocked-content.png)
-
-    Yazılımı indirdiğinizde, çeşitli web sitesi komut dosyaları ve kaynakları yüklemeye izin vermek için bazı ek istekler alın. My.VisualStudio.com üzerinde oturum açma başarılı olduğundan emin olmak için ek etki alanlarını eklemenizi öneririz.
 
 ## <a name="requirements_msvsmon"></a> Gereksinimleri
 
@@ -163,7 +122,7 @@ ASP.NET ve diğer sunucu ortamlarında hata ayıklama için uzaktan hata ayıkla
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)
-- [Uzaktan hata ayıklama için Windows Güvenlik duvarını yapılandırma](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
-- [Uzaktan hata ayıklayıcı bağlantı noktası atamaları](../debugger/remote-debugger-port-assignments.md)
+- [Windows Güvenlik Duvarı’nı Uzaktan Hata Ayıklama İçin Yapılandırma](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
+- [Uzaktan Hata Ayıklayıcı Bağlantı Noktası Atamaları](../debugger/remote-debugger-port-assignments.md)
 - [Uzaktan hata ayıklama Uzak IIS bilgisayarında ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
-- [Uzaktan hata ayıklama ve sorun giderme](../debugger/remote-debugging-errors-and-troubleshooting.md)
+- [Uzaktan Hata Ayıklama Hataları ve Sorun Giderme](../debugger/remote-debugging-errors-and-troubleshooting.md)

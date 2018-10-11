@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0db1d84c09c44cc39fe3fd614379c2381b915014
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: ad905581252bd2af7307292d617669d00320c398
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029033"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101010"
 ---
 # <a name="python-web-application-project-templates"></a>Python web uygulaması proje şablonları
 
@@ -34,7 +34,7 @@ Bir şablon kullanarak bir proje oluşturma **dosya** > **yeni** > **proje**. We
 
 Genel **Web projesi** şablon, daha önce bahsedilen yalnızca boş bir Visual Studio projesinin hiçbir kod ve Python projesi olması dışında hiçbir varsayım sağlar. İlgili Ayrıntılar için **Azure bulut hizmeti** şablonu görmek [Python için Azure bulut hizmeti projeleri](python-azure-cloud-service-project-template.md).
 
-Tüm şablonları, Bottle, Flask ve Django web çerçeveleri temel alır ve aşağıdaki bölümlerde açıklandığı gibi üç genel gruplara ayrılır. Bu şablonlardan birini tarafından oluşturulan uygulamaları çalıştırmak ve uygulamayı yerel olarak hata ayıklama için yeterli kodu içerir. Her biri de gerekli sağlar [WSGI uygulama nesnesi](http://www.python.org/dev/peps/pep-3333/) (python.org) için [Azure App Service'e dağıtma](publishing-python-web-applications-to-azure-from-visual-studio.md).
+Tüm şablonları, Bottle, Flask ve Django web çerçeveleri temel alır ve aşağıdaki bölümlerde açıklandığı gibi üç genel gruplara ayrılır. Bu şablonlardan birini tarafından oluşturulan uygulamaları çalıştırmak ve uygulamayı yerel olarak hata ayıklama için yeterli kodu içerir. Her biri de gerekli sağlar [WSGI uygulama nesnesi](http://www.python.org/dev/peps/pep-3333/) (python.org) üretim web sunucularına ile kullanmak için.
 
 ### <a name="blank-group"></a>Boş Grup
 
