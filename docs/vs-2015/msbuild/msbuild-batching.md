@@ -1,7 +1,7 @@
 ---
 title: MSBuild toplu işleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d868beddd498b112fa2f5a4de52f473c8ba3041
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 24baafbaf213e90999a5e4e0eea030f2ef608501
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692932"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304180"
 ---
 # <a name="msbuild-batching"></a>MSBuild Toplu İşleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [MSBuild toplu işleme](https://docs.microsoft.com/visualstudio/msbuild/msbuild-batching).  
-  
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] öğe listeleri farklı kategorileri veya toplu işlemi bölmek için özelliği, öğe meta verileri temel alarak ve bir hedef veya görevi, her batch ile bir kez çalıştırın.  
   
@@ -114,7 +112,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [MSBuild toplu işleme](htt
  [Itemmetadata öğesi (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [MSBuild kavramları](../msbuild/msbuild-concepts.md)   
  [MSBuild başvurusu](../msbuild/msbuild-reference.md)   
- [Gelişmiş kavramlar](../msbuild/msbuild-advanced-concepts.md)
+ [Gelişmiş Kavramlar](../msbuild/msbuild-advanced-concepts.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Sınıf diyagramları (Sınıf Tasarımcısı) ile çalışma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cf7812d7d0047b71bac846e03ec15e7b3c92869f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8bf855566c24e91137d7aaeadeb2c65843eca9e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691937"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306715"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Sınıf Diyagramları ile Çalışma (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [(Sınıf Tasarımcısı) Sınıf diyagramları ile çalışma](https://docs.microsoft.com/visualstudio/ide/working-with-class-diagrams-class-designer).  
-  
 Başkalarının yazmış (veya uzun zaman önce yazdığınız) projelerin sınıf yapısı anlamanıza yardım sınıf diyagramları. Özelleştirme, paylaşmak ve başkalarıyla proje bilgi sunmak için kullanabilirsiniz.  
   
  Proje bilgileri sunan ilk adımı, göstermek istediğiniz görüntüleyen bir sınıf diyagramı oluşturmaktır. Daha fazla bilgi için [görüntüleme türleri ve ilişkiler (Sınıf Tasarımcısı)](../ide/viewing-types-and-relationships-class-designer.md). Proje, projenin türü seçilen bir alt veya seçilen üyelerin bir alt kümesini türlerinin ayrı bir görünümünü görüntülemek için kullanılan bir proje için birden fazla sınıf diyagramları oluşturabilirsiniz.  

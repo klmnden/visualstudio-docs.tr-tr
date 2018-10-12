@@ -1,31 +1,29 @@
 ---
 title: 'İzlenecek yol: Visual C# veya Visual Basic ile basit uygulama oluşturma | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-general
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 269616a5d8725399ecc5f577bc400b75de596332
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 49c1a38130b2182b18d5355181fabbf2703140a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697188"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305558"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>İzlenecek yol: Visual C# veya Visual Basic ile Basit Uygulama Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [izlenecek yol: Visual C# veya Visual Basic ile basit uygulama oluşturma](https://docs.microsoft.com/visualstudio/ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic).  
-  
 Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kullanabileceğiniz birçok araç, iletişim kutusu ve tasarımcı hakkında bilgi sahibi olacaksınız. Tümleşik geliştirme ortamında (IDE) çalışma hakkında daha fazla bilgi edinirken, basit bir "Merhaba Dünya" stili uygulama oluşturacak, kullanıcı arabirimini tasarlayacak, kod ekleyecek ve hataları ayıklayacaksınız.  
   
  Bu konu aşağıdaki bölümleri içermektedir:  

@@ -1,7 +1,7 @@
 ---
 title: Akış etkinliği tasarımcılarını denetleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 58ddd15d37e36494fef9488638727c7bc2142aa3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e852bfa5b392c6ffa758678fa83dabd8a8c97f54
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689932"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303621"
 ---
 # <a name="control-flow-activity-designers"></a>Akış Etkinliği Tasarımcılarını denetleme
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] iş akışlarınızı oluştururken kullanabileceğiniz sistem tarafından sağlanan etkinlikler içerir. Bu bölümde, bir iş akışındaki akışını denetlemek için kullanılan sistem tarafından sağlanan etkinlikler içerir. Aşağıdaki konular bu etkinlikleri açıklar ve bunların nasıl kullanılacağı hakkında rehberlik sağlar.  
@@ -32,25 +32,25 @@ ms.locfileid: "42689932"
  [If](../workflow-designer/if-activity-designer.md)  
  Bir koşulu değerlendirir ve bu değerlendirme sonuçlarına bağlı olarak bir etkinliği yürütür.  
   
- [Paralel](../workflow-designer/parallel-activity-designer.md)  
+ [Parallel](../workflow-designer/parallel-activity-designer.md)  
  Bağımlı etkinlikler koleksiyonu aynı anda yürütür.  
   
  [ParallelForEach\<T >](../workflow-designer/parallelforeach-t-activity-designer.md)  
  Bir koleksiyonun öğeleri listeler ve bir katıştırılmış deyim koleksiyonundaki her öğe için paralel olarak yürütür.  
   
- [Çekme](../workflow-designer/pick-activity-designer.md)  
+ [Pick](../workflow-designer/pick-activity-designer.md)  
  Birçok dalı, olay tabanlı akış denetimi sağlayan bazı olaya yanıt olarak yürütür.  
   
  [PickBranch](../workflow-designer/pickbranch-activity-designer.md)  
  Yürütme içinde olası bir yolunu sağlayan bir <xref:System.Activities.Statements.Pick> etkinlik.  
   
- [Dizisi](../workflow-designer/sequence-activity-designer.md)  
+ [Sequence](../workflow-designer/sequence-activity-designer.md)  
  Sırayla yürütülen bir alt etkinlik sıralı bir koleksiyonunu içerir.  
   
  [Anahtar\<T >](http://msdn.microsoft.com/en-us/ce1aa634-c4db-4475-a1c8-a88478a57212)  
  Belirtilen ifadeyi hesaplar ve bir koleksiyon değerlendirmesinden gelen alınan değer ilişkili anahtarı eşleşen etkinlik gelen bir etkinliği yürütür.  
   
- [while](../workflow-designer/while-activity-designer.md)  
+ [While](../workflow-designer/while-activity-designer.md)  
  Kendi gövdesi için belirtilen bir koşulu değerlendirir sırada bir etkinliği yürütür **true**.  
   
 ## <a name="reference"></a>Başvuru  
@@ -83,7 +83,7 @@ ms.locfileid: "42689932"
   
  [Akış Çizelgesi](../workflow-designer/flowchart-activity-designers.md)  
   
- [Mesajlaşma](../workflow-designer/messaging-activity-designers.md)  
+ [Messaging](../workflow-designer/messaging-activity-designers.md)  
   
  [Çalışma Zamanı](../workflow-designer/runtime-activity-designers.md)  
   

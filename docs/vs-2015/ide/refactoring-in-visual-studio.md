@@ -1,7 +1,7 @@
 ---
 title: Visual Studio'da yeniden düzenleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c4af183871634a4008d48226b171383e8e87ae88
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e621d8bccdb8dceb1a6516ff0c070393962cea11
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632330"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303803"
 ---
 # <a name="refactoring-in-visual-studio"></a>Visual Studio'da yeniden düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio'da kod üretimi](https://docs.microsoft.com/visualstudio/ide/code-generation-in-visual-studio).  
-  
 Yeniden düzenleme, anlama ve genişletmek daha kolay hale getirmek için kod değiştirme, ancak davranışını değiştirmeden işlemidir. Bazı ortak *yeniden düzenlemeler* içerir:  
   
 1.  uzun işlevler küçük parçalara ayırma  
@@ -39,7 +37,7 @@ Yeniden düzenleme, anlama ve genişletmek daha kolay hale getirmek için kod de
  Yeniden düzenleme, logic yakından dili sözdizimine bağlı olmadığından, her dil hizmeti Visual Studio'da yeniden düzenleme özelliklerini sağlar. Daha fazla bilgi için şu sayfalara bakın:  
   
 ### <a name="refactoring-in-c"></a>C# yeniden düzenleme  
- [Yeniden düzenlemesi (C#)](../csharp-ide/refactoring-csharp.md)  
+ [Yeniden Düzenleme (C#)](../csharp-ide/refactoring-csharp.md)  
   
 ### <a name="refactoring-in-visual-basic"></a>Visual Basic'te yeniden düzenleme  
  [Yeniden düzenleme ve yeniden adlandırma iletişim kutusu (Visual Basic)](http://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959)  

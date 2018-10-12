@@ -1,7 +1,7 @@
 ---
 title: Performans oturumu özellikleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cc3832c0e5a1c4aed99de070b15b0b83ae1254f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b77bf4e0892b81d276836f7bad45272adf338b48
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634239"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306156"
 ---
 # <a name="performance-session-properties"></a>Performans Oturum Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [performans oturumu özellikleri](https://docs.microsoft.com/visualstudio/profiling/performance-session-properties).  
-  
 A **performans oturumu** nasıl uygulama profili oluşturulmuş belirleyen ayarları yapılandırmanızı sağlar. Ayrıca, profil oluşturma oturumu için oluşturulan raporlar depolar.  
   
  **Gereksinimler**  
@@ -47,11 +45,11 @@ A **performans oturumu** nasıl uygulama profili oluşturulmuş belirleyen ayarl
   
  Daha fazla bilgi için bkz.:  
   
- [Nasıl yapılır: Koleksiyon metotları seçme](../profiling/how-to-choose-collection-methods.md)  
+ [Nasıl Yapılır: Toplama Metotlarını Seçme](../profiling/how-to-choose-collection-methods.md)  
   
- [.NET bellek ayırma ve yaşam süresi verilerini toplama](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
+ [.NET Bellek Ayırma ve Yaşam Süresi Verilerini Toplama](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
   
- [Nasıl yapılır: performans veri dosyası adlandırma seçeneklerini ayarlama](../profiling/how-to-set-performance-data-file-name-options.md)  
+ [Nasıl Yapılır: Performans Veri Dosyası Adlandırma Seçeneklerini Ayarlama](../profiling/how-to-set-performance-data-file-name-options.md)  
   
 ## <a name="launch"></a>Başlat  
  Bu ayarlar, ikili dosyalar listesinden seçin ve ikili dosyalarının başlatma sırasını belirtmek etkinleştirin.  
@@ -86,9 +84,9 @@ A **performans oturumu** nasıl uygulama profili oluşturulmuş belirleyen ayarl
   
  Daha fazla bilgi için bkz.:  
   
- [Nasıl yapılır: Web sayfalarında JavaScript kodu profili](../profiling/how-to-profile-javascript-code-in-web-pages.md)  
+ [Nasıl Yapılır: Web Sayfalarında JavaScript Kodunun Profilini Oluşturma](../profiling/how-to-profile-javascript-code-in-web-pages.md)  
   
- [Nasıl yapılır: ön ve son izleme komutları belirtme](../profiling/how-to-specify-pre-and-post-instrument-commands.md)  
+ [Nasıl Yapılır: Ön ve Son İzleme Komutları Belirtme](../profiling/how-to-specify-pre-and-post-instrument-commands.md)  
   
 ## <a name="cpu-counters"></a>CPU sayaçları  
  Bu ayarlar yönteminin profil oluşturma Araçları'nı kullanırken CPU performans sayaçları hakkında veri toplamak etkinleştirin. Taşınabilir performans sayaçları, CPU tasarım veya üretici bağımsız olarak kullanılabilir. Platform olayı CPU tasarım ve üretici özgüdür. Yonga üzerinde performans sayaçları hakkında daha fazla bilgi için belirli bir işlemci belgelerine bakın.  
@@ -100,7 +98,7 @@ A **performans oturumu** nasıl uygulama profili oluşturulmuş belirleyen ayarl
   
  Daha fazla bilgi için bkz.:  
   
- [Nasıl yapılır: olay izleme için Windows (ETW) verilerini toplama](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)  
+ [Nasıl Yapılır: Windows İçin Olay İzleme (ETW) Verileri Toplama](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)  
   
  [VSPerfReport](../profiling/vsperfreport.md).  
   
@@ -114,14 +112,14 @@ A **performans oturumu** nasıl uygulama profili oluşturulmuş belirleyen ayarl
   
  Daha fazla bilgi için bkz.:  
   
- [Nasıl yapılır: .NET Framework çalışma zamanını belirtin](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
+ [Nasıl Yapılır: .NET Framework Çalışma Zamanını Belirtin](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
   
- [Nasıl yapılır: ek izleme seçeneklerini belirtme](../profiling/how-to-specify-additional-instrumentation-options.md)  
+ [Nasıl Yapılır: Ek İzleme Seçeneklerini Belirtme](../profiling/how-to-specify-additional-instrumentation-options.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Genel bakış](../profiling/overviews-performance-tools.md)   
  [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)   
- [Veri toplama denetimi](../profiling/controlling-data-collection.md)
+ [Veri Koleksiyonunu Denetleme](../profiling/controlling-data-collection.md)
 
 
 

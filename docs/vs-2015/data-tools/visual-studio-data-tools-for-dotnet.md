@@ -1,7 +1,7 @@
 ---
 title: .NET için Visual Studio veri araçları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 759aaa1f6860d6b8e95aeaae786532ff406acbb4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30c1a0add4dcb10b5b202b43b791c27a7c14640c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684227"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305350"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>.NET için Visual Studio veri araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,19 +51,19 @@ Visual Studio ve .NET Framework birlikte kapsamlı API ve araç veritabanlarına
   
 -   [Yeni veri kaynağı ekleme](../data-tools/add-new-data-sources.md)  
   
--   [Varlık veri modeli Visual Studio Araçları](../data-tools/entity-data-model-tools-in-visual-studio.md)  
+-   [Visual Studio'daki Varlık Veri Modeli Araçları](../data-tools/entity-data-model-tools-in-visual-studio.md)  
   
--   [Visual Studio'da veri kümesi araçları](../data-tools/dataset-tools-in-visual-studio.md)  
+-   [Visual Studio'daki veri kümesi araçları](../data-tools/dataset-tools-in-visual-studio.md)  
   
--   [LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
+-   [Visual Studio'daki LINQ to SQL Araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
   
 -   [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md)  
   
 -   [Veri erişimi hatalarında sorun giderme için ek kaynaklar](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
   
--   [Windows Communication Foundation Hizmetleri ve Visual Studio'da WCF Veri Hizmetleri](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)  
+-   [Visual Studio'da Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)  
   
--   [Veritabanlarını ve Visual Studio'daki veri katmanı uygulamaları oluşturma ve yönetme](../data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md)  
+-   [Visual Studio'da veritabanları ve veri katmanı uygulamaları oluşturma ve yönetme](../data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md)  
   
 -   [Veri erişimi hatalarında sorun giderme için ek kaynaklar](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
   

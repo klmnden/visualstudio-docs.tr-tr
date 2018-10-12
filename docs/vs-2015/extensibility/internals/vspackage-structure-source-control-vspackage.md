@@ -1,7 +1,7 @@
 ---
 title: VSPackage yapısı (kaynak denetimi VSPackage'ı) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c27eb3c0bc977f716d3437042e1e4105eb1692d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 592f24a4fc4100f7c716c7fbec0c300c0adec906
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633871"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305038"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage Yapısı (Kaynak Denetimi VSPackage’ı)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [VSPackage yapısı (kaynak denetimi VSPackage'ı)](https://docs.microsoft.com/visualstudio/extensibility/internals/vspackage-structure-source-control-vspackage).  
-  
 Kaynak denetimi paket SDK izin kendi kaynak denetimi işlevlerini ile tümleştirmek bir kaynak denetimi uygulayan bir VSPackage'ı oluşturma yönergeleri sağlar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ortam. VSPackage genellikle tarafından isteğe bağlı olarak yüklenen bir COM bileşenidir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tümleşik geliştirme ortamı (IDE), kayıt defteri girdilerini pakette tarafından tanıtılan Hizmetleri temel. Her VSPackage'ı uygulamalıdır <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. VSPackage genellikle Hizmetleri tarafından sunulan kullanıyor [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE ve bazı hizmetler kendi proffers.  
   
  VSPackage kendi menü öğeleri bildirir ve varsayılan öğe durumu .vsct dosyası aracılığıyla oluşturur. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE VSPackage yüklenene kadar bu menü öğeleri Bu durumdayken görüntüler. Sonuç olarak, VSPackage'nın uygulaması <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> etkinleştirmek ya da menü öğelerini devre dışı yöntemi çağrılır.  
@@ -83,5 +81,5 @@ Kaynak denetimi paket SDK izin kendi kaynak denetimi işlevlerini ile tümleşti
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Tasarım öğeleri](../../extensibility/internals/source-control-vspackage-design-elements.md)   
- [İlgili hizmetler ve arabirimler](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)
+ [İlgili Hizmetler ve Arabirimler](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)
 

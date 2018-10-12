@@ -1,7 +1,7 @@
 ---
 title: C++ için Visual Studio veri araçları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,18 +12,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: cecad69f6df283ed005afd00a6b9bedbd51c6cd5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a059cb5c0f295bc7f14ff8a0ce30ed21e4e70145
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692998"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306195"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>C++ için Visual Studio veri araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [C++ için Visual Studio veri Araçları](https://docs.microsoft.com/visualstudio/data-tools/visual-studio-data-tools-for-cpp).  
-  
   
 Veri kaynaklarına erişirken yerel C++ genellikle en hızlı performans sağlar. Ancak, veri Visual Studio'da C++ uygulamaları için Araçlar, .NET uygulamaları için olduğu gibi zengin değil. Örneğin, veri kaynaklarını windows sürükle ve bırak C++ tasarım yüzeyine veri kaynakları için kullanılamaz. Bir nesne ilişkisel katmanı gerekiyorsa, kendi yazmak veya bir üçüncü taraf ürün kullanım gerekecektir.  Microsoft Foundation Class kitaplığını kullanan uygulamaları bellekte veri depolamak ve kullanıcıya göstermek için belgeler ve görünümler, birlikte bazı veritabanı sınıfları kullanabilirsiniz, ancak aynı veri bağlama işlevselliği için geçerlidir. Daha fazla bilgi için [Visual C++'da veri erişimi](https://msdn.microsoft.com/library/7wtdsdkh.aspx) .  
   

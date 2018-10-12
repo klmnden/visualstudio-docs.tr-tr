@@ -1,14 +1,14 @@
 ---
 title: Kesme noktalarını kullanma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
 - vs.debug.disassembly.insert
@@ -46,18 +46,15 @@ caps.latest.revision: 63
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c111b2704401ff6f98025026fc51d19b434503f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5fcc6803144359af25d70e68a25ffe90cf7bcca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687036"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304895"
 ---
 # <a name="using-breakpoints"></a>Kesme Noktalarını Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Bu konuda en son sürümünü şu yolda bulunabilir: [kesme noktalarını kullanma](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints). 
-
 Çağrı yığınına bakın veya belki de kod değişkenleri durumunu görmek için hata ayıklayıcı yürütmesini durdurmak istediğinizde, kesme noktaları ayarlayabilirsiniz. Bunlar, bir geliştirici araç kutusundaki en önemli hata ayıklama tekniklerinden biridir.
   
 ##  <a name="BKMK_Overview"></a> Kaynak kodunda bir işlev kesme noktası ayarlama  
@@ -261,7 +258,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [kesme noktalarını kullan
  Hata ayıklayıcı bir modül için hata ayıklama bilgileri yüklemediğinde kodun bulunduğu bir kaynak dosyasında bir kesme noktası ayarlanamıyor. Belirtiler iletileri içerebilir gibi **kesme noktası ayarlanmadı**. Uyarı kesme karakteri kesme noktası konumunda görünür. Ancak, bu uyarı kesme noktaları kod yüklendiğinde gerçek kesme noktaları haline gelir. Sembolleri yükleme hakkında daha fazla bilgi için bkz. [belirtin sembol (.pdb) ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklayıcısı ile kodlarda gezinme](../debugger/navigating-through-code-with-the-debugger.md)
+ [Hata Ayıklayıcısı ile Kodlarda gezinme](../debugger/navigating-through-code-with-the-debugger.md)
 
 
 

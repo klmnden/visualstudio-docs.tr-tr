@@ -1,7 +1,7 @@
 ---
 title: İş Parçacıkları görünümü | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79c0443d17ed18573cdbe990474ee328f2d3678f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 12ab9170c0f071ba319c0560f55291f41174ddf9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697494"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306273"
 ---
 # <a name="threads-view"></a>İş Parçacıkları Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [iş parçacıkları görünümü](https://docs.microsoft.com/visualstudio/debugger/threads-view).  
-  
 İş Parçacıkları görünümü windows sisteminize ile ilişkili tüm iş parçacıkları düz bir listesi bulunmaktadır. Her iş parçacığı için modül adı ve iş parçacığı kimliği gösterilir. İşlemler dahil edilmez, ancak seçili bir iş parçacığı sahip olan işlemi kolayca bulabilirsiniz.  
   
 ## <a name="procedures"></a>Yordamlar  
@@ -57,10 +55,10 @@ Spy ++ iş parçacıkları görünümü
  [Spy++ kullanma](../debugger/using-spy-increment.md)  
  Spy ++ araç tanıtır ve nasıl kullanılacağını açıklar.  
   
- [İş parçacığı arama iletişim kutusu](../debugger/thread-search-dialog-box.md)  
+ [İş Parçacığı Arama İletişim Kutusu](../debugger/thread-search-dialog-box.md)  
  İş parçacıkları görünümünde iş parçacığı belirli düğüm bulmak için kullanılır.  
   
- [İş parçacığı Özellikleri iletişim kutusu](../debugger/message-properties-dialog-box.md)  
+ [İş Parçacığı Özellikleri İletişim Kutusu](../debugger/message-properties-dialog-box.md)  
  İş Parçacıkları görünümü veya iletileri görünümde seçili bir iş parçacığı özelliklerini görüntüler.  
   
  [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  

@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: Varolan türleri görüntüleme (Sınıf Tasarımcısı) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8a65ef57bfe044a1856a81e054f058bb89946a84
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9759425659d4a7e77672442ee37fd7649e7a6751
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695802"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305294"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Nasıl Yapılır: Varolan Türleri Görüntüleme (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: Varolan türleri görüntüleme (Sınıf Tasarımcısı)](https://docs.microsoft.com/visualstudio/ide/how-to-view-existing-types-class-designer).  
-  
 Varolan bir türünü ve üyelerini görmek için bir sınıf diyagramına şeklini ekleyin.  
   
  Yerel ve başvurulan türleri görebilirsiniz. Yerel bir tür o anda açık olan projede mevcuttur ve okunur/yazılır. Başvurulan tür başka bir projede ya da başvurulan bir derlemede bulunur ve salt okunur özelliktedir.  

@@ -1,7 +1,7 @@
 ---
 title: Kod kapsamı sorunlarını giderme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5934f1e42b9954d0d8206db90304142d77f8df78
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7df2f4c83a61c62a7774bea475d54c3deea4c47
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695351"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306058"
 ---
 # <a name="troubleshooting-code-coverage"></a>Kod Kapsamı Sorunlarını Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [kod kapsamı sorunlarını giderme](https://docs.microsoft.com/visualstudio/test/troubleshooting-code-coverage).  
-  
 Visual Studio'daki kod kapsamı analiz aracı yerel ve yönetilen (.ddl veya .exe dosyaları) derlemeler için verileri toplar. Ancak bazı durumlarda Kod Kapsamı Sonuçlar penceresi "Boş üretilen sonuçlar: ..." benzeri bir hata gösterir. Bunun olmasının çeşitli sebepleri vardır. Bu konu bu sorunların giderilmesine yardımcı olmak amacıyla hazırlanmıştır.  
   
 ## <a name="what-you-should-see"></a>Görmeniz gereken  

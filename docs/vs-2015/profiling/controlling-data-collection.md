@@ -1,7 +1,7 @@
 ---
 title: Veri toplama denetimi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6170ee5e93bcb8faeadd1d918468a44c4badb99
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7735d8b7276c62953c063d2cbda18d0dc59cc5a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631176"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306598"
 ---
 # <a name="controlling-data-collection"></a>Veri Toplama Denetimi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [veri toplamayı denetleme](https://docs.microsoft.com/visualstudio/profiling/controlling-data-collection).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profil Oluşturma Araçları, bir performans oturumu sırasında profil oluşturma verilerinin ne zaman toplanacağını kontrol etmenizi ve profillenen işlevleri belirtmenizi sağlar. Bu bölümde, veri koleksiyonunu durdurmak ve başlatmak açıklar **performans Gezgini** ve **veri koleksiyonu denetimi** windows ve kendisi için profil oluşturma verilerinin toplandığı nesnelerin nasıl.  
   
 ## <a name="common-tasks"></a>Ortak Görevler  
@@ -39,7 +37,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [veri toplamayı denetleme]
 |**Toplanan verileri sınırlamak için profil oluşturma araçları yapılandırma:** çalıştırmalarının şüpheli işlem yöntemini kullanan profil oluşturma çalışmasında toplanan verileri sınırlamak için performans oturumu yapılandırma özelliklerini kullanabilirsiniz. Belirli .dll dosyalarını, ad alanlarını, sınıfları ve işlevleri dahil edebilir veya hariç tutabilirsiniz. Ayrıca, belirttiğiniz bir boyut eşiğini karşılamayan işlevleri çıkarabilirsiniz.|-   [Nasıl yapılır: belirli DLL'ler için izleme sınırlama](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)<br />-   [Nasıl yapılır: izlemeyi belirli araçlarla sınırlama](../profiling/how-to-limit-instrumentation-to-specific-functions.md)<br />-   [Nasıl yapılır: kısa işlevleri izlemeden dahil veya hariç](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)|  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)  
+ [Performans Oturumlarını Yapılandırma](../profiling/configuring-performance-sessions.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Performans Gezgini](../profiling/performance-explorer.md)

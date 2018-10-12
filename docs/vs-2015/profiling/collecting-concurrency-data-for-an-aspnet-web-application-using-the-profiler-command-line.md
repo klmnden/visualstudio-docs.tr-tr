@@ -1,7 +1,7 @@
 ---
 title: Profiler komut satırını kullanarak bir ASP.NET Web uygulaması için eşzamanlılık verileri toplama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2543ad820515a48314aa2e68ff6fb0074d87adb7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fbc5a06e4c3697a57b0408cfe18a1b5da4eae1d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693443"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306546"
 ---
 # <a name="collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Profil Oluşturucu Komut Satırını Kullanarak bir ASP.NET Web Uygulaması için Eşzamanlılık Verileri Toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bir ASP.NET Web uygulaması kullanarak Profiler komut satırı için eşzamanlılık verileri toplama](https://docs.microsoft.com/visualstudio/profiling/collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line).  
-  
 Eşzamanlılık yöntemi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kaynak çekişmesi verisini toplamak için profil oluşturma araçları sağlar.  
   
 ## <a name="common-tasks"></a>Ortak Görevler  
@@ -38,7 +36,7 @@ Eşzamanlılık yöntemi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kaynak çe
 |Çalışan bir ASP.NET uygulamasına profil oluşturucu ekleme|-   [Nasıl yapılır: eşzamanlılık verileri toplamak için bir ASP.NET uygulamasına Profiler ekleme](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
 ## <a name="reference"></a>Başvuru  
- [Komut satırı profil araçları başvurusu](../profiling/command-line-profiling-tools-reference.md)  
+ [Komut Satırı Profil Oluşturma Araçları Başvurusu](../profiling/command-line-profiling-tools-reference.md)  
   
 ## <a name="related-tasks"></a>İlişkili görevler  
   
@@ -63,7 +61,7 @@ Eşzamanlılık yöntemi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kaynak çe
  [Eşzamanlılık görselleştiricisi](../profiling/concurrency-visualizer.md)  
   
 ## <a name="reference"></a>Başvuru  
- [Komut satırı profil araçları başvurusu](../profiling/command-line-profiling-tools-reference.md)
+ [Komut Satırı Profil Oluşturma Araçları Başvurusu](../profiling/command-line-profiling-tools-reference.md)
 
 
 

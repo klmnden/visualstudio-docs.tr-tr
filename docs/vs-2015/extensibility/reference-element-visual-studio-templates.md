@@ -1,7 +1,7 @@
 ---
 title: Başvuru öğesi (Visual Studio şablonları) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 852772ea-c324-42e9-8c8a-6d565414a109
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2fdd9b1a4b7703bbd0c4c0a5a8302e8a101b9559
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 15de6b3ef890735a83c4ca5ac84a54a71f5c247a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633010"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303941"
 ---
 # <a name="reference-element-visual-studio-templates"></a>Reference Öğesi (Visual Studio Şablonları)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Reference öğesi (Visual Studio şablonları)](https://docs.microsoft.com/visualstudio/extensibility/reference-element-visual-studio-templates).  
-  
 Öğe bir projeye eklendiğinde eklemek için derleme başvurusu belirtir.  
   
  \<VSTemplate >  

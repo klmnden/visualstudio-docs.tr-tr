@@ -1,7 +1,7 @@
 ---
 title: IDebugSymbolProvider | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: df5f095f-1dee-46f9-84cf-92417c71d5fb
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5fd48223d946cdee544de7cdb1522fed9366fc39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a87795244e23ac4319fc7ba5eb69d18b163bce0b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686604"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306728"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [IDebugSymbolProvider](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugsymbolprovider).  
-  
 Bu arabirim sembollere ve türlere, alanları olarak döndürme sağlayan bir sembol sağlayıcısını temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  

@@ -1,7 +1,7 @@
 ---
 title: Visual Studio'da (Xaml ve C#) bir hata ayıklama oturumunda gezinme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c9aed98b7f2649aa5c62e930e1833b80d58b7ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 59ff131289d5ae69cc66f3069bb7fd693e7878f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690978"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306312"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Visual Studio’da (Xaml ve C#) bir hata ayıklama oturumunda gezinme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio'da (Xaml ve C#) bir hata ayıklama oturumunda gezinme](https://docs.microsoft.com/visualstudio/debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp).  
-  
 Bu hızlı başlangıçta, Visual Studio hata ayıklama oturumları gitmek ve görüntülemek ve bir oturumda program durumunu değiştirmek gösterir.  
   
  Bu hızlı başlangıçta, Visual Studio ile hata ayıklama için yenidir ve hata ayıklama oturumu Visual Studio'da gezinme hakkında daha fazla bilgi için isteyen geliştiriciler için geliştiriciler içindir. Kendi hata ayıklama resim öğretmek değildir. Örnek kodda yöntemleri, yalnızca bu konuda açıklanan hata ayıklama yordamları göstermek için tasarlanmıştır. Uygulama veya işlev tasarımının en iyi yöntemleri dağıtıyorsunuz değil. Aslında, yöntemleri ve uygulama içinden her şeyin daha fazlasını yapmanız değil, hızlı bir şekilde keşfeder.  
@@ -222,7 +220,7 @@ Bu hızlı başlangıçta, Visual Studio hata ayıklama oturumları gitmek ve g�
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [(VB, C#, C++ ve XAML) bir hata ayıklama oturumu başlatın](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)   
  [Tetikleme askıya alma, sürdürme ve arka plan olaylarını Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)   
- [Visual Studio'da uygulamalarının hatalarını ayıklama](../debugger/debug-store-apps-in-visual-studio.md)
+ [Visual Studio’da uygulamaların hatalarını ayıklama](../debugger/debug-store-apps-in-visual-studio.md)
 
 
 

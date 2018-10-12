@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: oluşturma bir. Vsct mevcut bir dosya. Ctc dosya | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
 manager: douge
-ms.openlocfilehash: 0d267e6046539001cbe454ab69867c02f0a606ed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e159fea34dc395ce2d7bded813f2d8feaa453006
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686503"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303491"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Nasıl yapılır: oluşturma bir. Vsct mevcut bir dosya. Ctc dosyası
 Varolan komut tablosu .ctc kaynak dosyasından bir XML tabanlı .vsct dosyası oluşturabilirsiniz. Bunu yaptığınızda yeni avantajlarından yararlanabilirsiniz XML tabanlı [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] komut tablosu (VSCT) derleyici biçimi.  

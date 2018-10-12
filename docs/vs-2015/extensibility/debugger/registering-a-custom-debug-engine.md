@@ -1,7 +1,7 @@
 ---
 title: Hata ayıklama motoru özel bir kaydetme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9984cd3d-d34f-4662-9ace-31766499abf5
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9f574421d97e4f7aab34d57cfbcb9123262c8206
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 336320efce371d555854784e5fbbc60174340e03
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677446"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303504"
 ---
 # <a name="registering-a-custom-debug-engine"></a>Özel Bir Hata Ayıklama Altyapısını Kaydetme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bir özel hata ayıklama altyapısını kaydetme](https://docs.microsoft.com/visualstudio/extensibility/debugger/registering-a-custom-debug-engine).  
-  
 Hata ayıklama altyapısı gereken kendisini COM kurallarına uygun bir sınıf üreteci kaydetmek yanı sıra Visual Studio kayıt defteri alt anahtarı Visual Studio ile kaydedin.  
   
 > [!NOTE]

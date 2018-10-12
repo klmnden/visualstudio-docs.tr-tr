@@ -1,7 +1,7 @@
 ---
 title: DslDefinition.dsl dosyası | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8d6df6e4957eec471e4d0f1212493c088e19703b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bf56b06771b905ec4982f7de7f91648c2e6b3a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695794"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306130"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl Dosyası
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [DslDefinition.dsl dosyası](https://docs.microsoft.com/visualstudio/modeling/the-dsldefinition-dsl-file).  
-  
 Bu konuda Dsl projedeki DslDefinition.dsl dosyası yapısını açıklayan bir [!INCLUDE[dsl](../includes/dsl-md.md)] tanımlayan çözüm bir *etki alanına özgü dil*. DslDefinition.dsl dosyası sınıflar ve ilişkiler diyagram, şekil, bağlayıcılar, serileştirme biçimi ile birlikte bir etki alanına özgü dil açıklar ve **araç kutusu** etki alanına özgü dil ve düzenleme araçları. Bir etki alanına özgü dil çözümünde DslDefinition.dsl dosyasındaki bilgilere göre bu araçların tanımlar kod oluşturulur.  
   
  Genel olarak, kullandığınız *etki alanına özgü dil tasarımcısını* DslDefinition.dsl dosyası düzenlenecek. Ancak, ham biçimiyle XML ve DslDefinition.dsl dosyası XML düzenleyicisinde açabilirsiniz. Dosyayı içeren bilgiler ve hata ayıklama ve uzantı amacıyla nasıl düzenlendiğini anlamak yararlı bulabilirsiniz.  
