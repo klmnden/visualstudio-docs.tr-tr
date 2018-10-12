@@ -1,7 +1,7 @@
 ---
 title: Visual Studio'da verilere erişme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 452e7dbc1f151bc39791e04d708eaf1cf870b4cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eacf075a0ba8689ff0cb5ca822d5cc8ca2f7ad1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690247"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233915"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Visual Studio'da verilere erişme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio'da verilere erişme](https://docs.microsoft.com/visualstudio/data-tools/accessing-data-in-visual-studio).  
-  
   
 Visual Studio'da verilere neredeyse tüm veritabanı ürün veya hizmeti, herhangi bir biçimde, her yerden bağlanma uygulamalar oluşturabilirsiniz: yerel bir makinede, yerel alan ağı veya genel, özel veya hibrit bulut.  
   
@@ -125,7 +123,7 @@ Visual Studio'da verilere neredeyse tüm veritabanı ürün veya hizmeti, herhan
  Yükleme [Visual Studio için Python Araçları](http://microsoft.github.io/PTVS/) birlikte en sevdiğiniz Python Çerçevenizi CPython veya IronPython (.NET) uygulamaları oluşturabilir.  Visual Studio Web sitesi için Python araçları da dahil olmak üzere verilere bağlanma hakkında birkaç öğreticiler sahip [Django ve SQL veritabanı azure'da](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure), [Django ve MySQL azure'da](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) ve [Bottle ve MongoDB üzerinde Azure](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure).  
   
 ## <a name="in-this-section"></a>Bu bölümde  
- [Yükleme veritabanı sistemleri, araçları ve örnekleri](../data-tools/installing-database-systems-tools-and-samples.md)  
+ [Veritabanı sistemlerini, araçları ve örnekleri yükleme](../data-tools/installing-database-systems-tools-and-samples.md)  
  Veritabanı ürünleri ve Visual Studio uzantıları veya bunları destekleyen sürücüleri edinme ve örnek veritabanları için deneme ve öğrenme amacıyla nerede bulunacağı açıklanır.  
   
  [.NET için Visual Studio veri araçları](http://msdn.microsoft.com/en-us/6b145922-2f00-47db-befc-bf351b4809a1)  

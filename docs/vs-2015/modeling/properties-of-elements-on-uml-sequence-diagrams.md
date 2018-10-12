@@ -1,7 +1,7 @@
 ---
 title: UML öğelerin özelliklerini sıralı diyagramlar | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b1f83999f3859583c4429ff3bf19482f01d90546
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7af657496fc95b07c7149f75fa03087eb1988606
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633869"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245225"
 ---
 # <a name="properties-of-elements-on-uml-sequence-diagrams"></a>UML sıralı diyagramlarındaki öğelerin özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [UML öğelerin özelliklerini sıralı diyagramlar](https://docs.microsoft.com/visualstudio/modeling/properties-of-elements-on-uml-sequence-diagrams).  
-  
 UML sıralı diyagramı her öğe diyagram üzerindeki özellikleri vardır. Öğenin özelliklerini görmek için diyagram üzerinde veya öğeye sağ tıklayın **UML Model Gezgini** ve ardından **özellikleri**. Özellikleri görünür **özellikleri** penceresi.  
   
 > [!NOTE]
@@ -58,7 +56,7 @@ UML sıralı diyagramı her öğe diyagram üzerindeki özellikleri vardır. Ö�
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML sıralı diyagramlar: başvuru](../modeling/uml-sequence-diagrams-reference.md)   
  [UML sıralı diyagramlar: yönergeler](../modeling/uml-sequence-diagrams-guidelines.md)   
- [Denetim akışını UML sıralı diyagramlar üzerinde açıklayın](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md)
+ [Denetim akışını UML sıralı diyagramlarında parçalarla açıklama](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md)
 
 
 

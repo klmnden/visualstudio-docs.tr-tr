@@ -1,7 +1,7 @@
 ---
 title: Performans oturumuna genel bakış | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da90a5ae4e35f36306e8537ca2cd743e98ffd33f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23de3ebb79acb342f711593200795246ded97c49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690649"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242820"
 ---
 # <a name="performance-session-overview"></a>Performans Oturumuna Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [performans oturumuna genel bakış](https://docs.microsoft.com/visualstudio/profiling/performance-session-overview).  
-  
 Bu genel bakışta profil oluşturma hakkındaki temel bilgileri açıklar. Performans çalışmaya yeni başladığınız geliştiriciler görürsünüz nasıl [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] profil oluşturma araçları bunları hızlı bir şekilde üretken ve kodlarını performansını artırmaya yardımcı olabilir. Profil oluşturma deneyimli geliştiriciler, belirli bir profil oluşturma araçları özellikleri ve süreçleri hakkında genel bir bakış elde edebilirsiniz.  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profil oluşturma araçları, kaynak kodundaki performans sorunlarını belirleyin ve olası çözümleri performansını karşılaştırın yardımcı olur. Profil oluşturma araçları sihirbazları yanı sıra varsayılan ayarları, birçok performans sorununu anında Öngörüler verebilirsiniz. Profil oluşturma araçları, Seçenekler ve özellikler, profil oluşturma işlemi üzerinde tam denetim sağlar. Bu denetim, kod bölümleri, blok düzeyinde zamanlama bilgileri koleksiyonunu ve verilerinizdeki ek işlemci ve sistem performans verilerinin eklenmesi kesin hedefleme içerir.  
@@ -85,7 +83,7 @@ Bu genel bakışta profil oluşturma hakkındaki temel bilgileri açıklar. Perf
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Genel bakış](../profiling/overviews-performance-tools.md)   
- [İzlenecek yol: Performans sorunlarını tanımlama](../profiling/walkthrough-identifying-performance-problems.md)
+ [İzlenecek Yol: Performans Sorunlarını Tanımlama](../profiling/walkthrough-identifying-performance-problems.md)
 
 
 

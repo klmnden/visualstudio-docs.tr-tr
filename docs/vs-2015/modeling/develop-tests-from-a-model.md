@@ -1,7 +1,7 @@
 ---
 title: Model aracılığıyla test geliştirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d64356c9b5fe4e70c928303633a35d6cb4cc045b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc773f9b4945a16bac0a9726e0a06f94726fad96
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684433"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236762"
 ---
 # <a name="develop-tests-from-a-model"></a>Model aracılığıyla test geliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [model aracılığıyla test geliştirme](https://docs.microsoft.com/visualstudio/modeling/develop-tests-from-a-model).  
-  
 Sisteminiz ve bileşenlerinin testleri düzenlemenize yardımcı olması için gereksinimleri ve mimari modelleri kullanabilirsiniz. Bu uygulama, kullanıcıların ve diğer proje katılımcıları için önemli olan gereksinimleri test etmek ve gereklilikler değiştiğinde testleri hızlı bir şekilde güncelleştirmenize yardımcı emin olun yardımcı olur. Kullanırsanız [!INCLUDE[TCMext](../includes/tcmext-md.md)], modeller ve testler arasındaki bağlantıları da sağlayabilirsiniz.  
   
  Visual Studio'nun hangi sürümlerinin bu özellikleri desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -183,7 +181,7 @@ Assert (countAfter == countBefore = 1);
  [Uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md)   
  [Kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md)   
  [Uygulama Mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)   
- [Çözümleme ve mimarinin modelini oluşturma](../modeling/analyze-and-model-your-architecture.md)
+ [Mimariyi Çözümleme ve Mimarinin Modelini Oluşturma](../modeling/analyze-and-model-your-architecture.md)
 
 
 

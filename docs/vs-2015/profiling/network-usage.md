@@ -1,7 +1,7 @@
 ---
 title: Ağ kullanımı | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e324f81d4f7580a25f0f2b5c1850c1343a85c6ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e898620fe7b319b785e8e0d337cc04192b206bd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683753"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227753"
 ---
 # <a name="network-usage"></a>Ağ kullanımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio'da UWP uygulamalarında ağ kullanımını analiz](https://docs.microsoft.com/visualstudio/profiling/network-usage).  
-  
 Visual Studio **ağ** Tanılama aracını kullanarak gerçekleştirilen ağ işlemleri hakkındaki verileri toplar [Windows.Web.Http API](https://msdn.microsoft.com/library/windows/apps/windows.web.http.aspx). Verileri çözümleme, erişim ve kimlik doğrulaması ile ilgili sorunlar, yanlış önbellek kullanımı ve görüntü gibi sorunları çözmek ve indirme performansını yardımcı olabilir.  
   
  Ağ aracına yalnızca evrensel Windows platformu uygulamaları destekler. Diğer platformlar, şu anda desteklenmiyor.  

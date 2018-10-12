@@ -1,7 +1,7 @@
 ---
 title: Kod oluşturma ve T4 metin şablonları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e57349e8c6f969986333eb8b12a9a3cf70ba3ce6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1310d08138e4df172a5dc9f390d0407a68fe769
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627743"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229833"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Kod Oluşturma ve T4 Metin Şablonları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [kod oluşturma ve T4 metin şablonları](https://docs.microsoft.com/visualstudio/modeling/code-generation-and-t4-text-templates).  
-  
 İçinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], *T4 metin şablonu* metin blokları ve bir metin dosyası oluşturabilir Denetim mantığı bir karışımını olduğu. Denetim mantığı program kodu içinde parçalarını olarak yazılır [!INCLUDE[csprcs](../includes/csprcs-md.md)] veya [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Visual Studio 2015 güncelleştirme 2 ve sonraki sürümlerinde, C# sürüm 6.0 özellikleri T4 şablonları yönergeleri kullanabilirsiniz. Oluşturulan dosyanın metin bir Web sayfası veya kaynak dosya veya program herhangi bir dilde kaynak kodu gibi herhangi bir türde olabilir.  
   
  T4 metin şablonları iki tür vardır:  

@@ -1,7 +1,7 @@
 ---
 title: Öğeler (XElement dinamik özelliği) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 75cb7f8f6a5259151679ecee84bbeb5db336782f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b65f32cc4146f275ec77a5942bdfef3fcf493b8b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676187"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237295"
 ---
 # <a name="elements-xelement-dynamic-property"></a>Öğeler (XElement dinamik özelliği)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [öğeler (XElement dinamik özelliği)](https://docs.microsoft.com/visualstudio/designers/elements-xelement-dynamic-property).  
-  
 Geçerli öğenin belirtilen Genişletilmiş adı ile eşleşen alt öğeleri almak için kullanılan bir dizin oluşturucuyu alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -51,7 +49,7 @@ elem.Elements[{namespaceName}localName]
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XElement sınıfı dinamik özellikleri](../designers/xelement-class-dynamic-properties.md)   
  [Öğesi](../designers/element-xelement-dynamic-property.md)   
- [Alt öğeleri](../designers/descendants-xelement-dynamic-property.md)
+ [Alt Öğeler](../designers/descendants-xelement-dynamic-property.md)
 
 
 

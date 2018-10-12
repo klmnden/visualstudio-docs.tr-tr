@@ -1,7 +1,7 @@
 ---
 title: 'Hata: IA64 işlemleri için karışık mod hata ayıklaması desteklenmiyor. | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a23ea4029134d8650acf0f443ee68a3f2ad6325c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f1635b6f31685df1dd564de59a7323dc2ba215b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686284"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231172"
 ---
 # <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Hata: IA64 işlemleri için karışık mod hata ayıklaması desteklenmiyor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [hata: IA64 işlemleri için karışık mod hata ayıklaması desteklenmiyor](https://docs.microsoft.com/visualstudio/debugger/error-mixed-mode-debugging-for-ia64-processes-is-unsupported).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Hata ayıklayıcı Itanium tabanlı bir işlemde karma yerel ve yönetilen kod hata ayıklamayı desteklemiyor.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  

@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: oluşturma bir. Vsct mevcut bir dosya. Cto dosya | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 847717c9-477d-4ac9-8b2c-2da878912478
 caps.latest.revision: 11
 manager: douge
-ms.openlocfilehash: e77ebf34cd56cee80040009cff3ebb2fee9befac
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 82cf711d33b3b3ca5150378e7111a2a21c8c03cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774683"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235748"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Nasıl yapılır: oluşturma bir. Vsct mevcut bir dosya. Cto dosyası
 Var olan bir ikili .cto dosyasından bir XML tabanlı .vsct dosyası oluşturabilirsiniz. Bunun yapılması, yeni komut tablosu derleyici biçimi yararlanmak sağlar. Bu işlem, .cto dosya .ctc dosyasından derlenen bile çalışır. Düzenle ve başka bir .cto dosyasına .vsct dosyası derleme.  

@@ -1,7 +1,7 @@
 ---
 title: "Nasıl yapılır: eşzamanlılık görselleştiricisi işaretçileri SDK'sını kullanma | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a8514848bd0b3fd52e7139972547586fb5bf514
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9ef9e54f58571ca5b8e62c964a840b80b9b7f25f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693341"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251478"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Nasıl Yapılır: Eşzamanlılık Görselleştiricisi İşaretçileri SDK'yı Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: eşzamanlılık görselleştiricisi işaretçileri SDK'sını kullanma](https://docs.microsoft.com/visualstudio/profiling/how-to-use-the-concurrency-visualizer-markers-sdk).  
-  
 Bu konu, eşzamanlılık görselleştiricisi SDK'si yayılma oluşturup bayrakları, iletileri ve Uyarılar için nasıl kullanılacağını gösterir.  
   
 ### <a name="to-use-c"></a>C++ kullanmak için  

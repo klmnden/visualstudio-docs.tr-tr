@@ -1,7 +1,7 @@
 ---
 title: Visual Studio SDK başvurusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 048423c5ff981b1c3b14ccb9db1ce0ffe1076209
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: db82d0ccfbd4a82686e2b8069a26d3cdadffb73b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631220"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232069"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio SDK başvurusu](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-sdk-reference).  
-  
 Bu bölüm, Visual Studio SDK'yı kullanan geliştiriciler için Visual Studio ad alanları, ilgili ad alanları ve diğer ilgi hakkında bilgi içerir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde
@@ -244,7 +242,7 @@ Bu bölüm, Visual Studio SDK'yı kullanan geliştiriciler için Visual Studio a
  [VSCT XML Şeması Başvurusu](../extensibility/vsct-xml-schema-reference.md)  
  Visual Studio komut tablosu şema öğelerinin bir tablo ile izin verilen alt öğeler ve öznitelikler için her sağlar.  
   
- [GUID'ler ve sabitler](../extensibility/guids-and-constants-in-the-visual-studio-sdk.md)  
+ [GUID'ler ve Sabitler](../extensibility/guids-and-constants-in-the-visual-studio-sdk.md)  
  SDK boyunca kullanılan GUID'ler listesi verir.  
   
  [Yönetilen Kodda COM Sabitleri](../extensibility/com-constants-in-managed-code.md)  
@@ -253,7 +251,7 @@ Bu bölüm, Visual Studio SDK'yı kullanan geliştiriciler için Visual Studio a
  [Kaynak Denetimi Eklentileri](../extensibility/source-control-plug-ins.md)  
  Kaynak Denetimi Eklentisi API konulara bağlantılar.  
   
- [Komut satırı anahtarları](../extensibility/command-line-switches-visual-studio-sdk.md)  
+ [Komut Satırı Anahtarları](../extensibility/command-line-switches-visual-studio-sdk.md)  
  Geliştiriciler komut satırından çeşitli görevleri nasıl otomatik hale getirebilirsiniz açıklayan konulara bağlantılar.  
   
  [Hata İşleme ve Dönüş Değerleri](../extensibility/error-handling-and-return-values.md)  

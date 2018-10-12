@@ -1,7 +1,7 @@
 ---
 title: Tanımlayıcılar için ifade tamamlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 630d0f55792b06cd1c99f9c1947a5ae73bce2683
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: f0f990526bc142b9951ab095e4bbf26636c94e30
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881039"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241279"
 ---
 # <a name="statement-completion-for-identifiers"></a>Tanımlayıcılar İçin İfade Tamamlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio 2017 belgeleri](/visualstudio/).  
-  
 JavaScript için değişken bildirimlerini yazmaya açık izin vermez. Sonuç olarak, IntelliSense tamamlanma listeleri her zaman nesneler için sağlayamaz. Çeşitli durumlarda ortaya çıkabilir. Aşağıda birkaç yaygın olanlarından verilmiştir.  
   
 -   Bir parametre bildirildi ancak bunu başka bir yerde etkin belgede aşağıdaki örnekte gösterildiği gibi çağrılmadı.  

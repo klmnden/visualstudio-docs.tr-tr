@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: uygulamak yönetim geri alma | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 47b71b7e2760af18605d3ded52b68cfc38742e65
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 72355b396dc88fc02c1ccdfb4f3a2ed4afe66467
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628758"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246292"
 ---
 # <a name="how-to-implement-undo-management"></a>Nasıl yapılır: uygulamak yönetim geri alma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: geri uygulamak Yönetim](https://docs.microsoft.com/visualstudio/extensibility/how-to-implement-undo-management).  
-  
 Geri alma yönetimi için kullanılan birincil arabirimidir <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, ortamı tarafından gerçekleştirilir. Geri alma yönetimini desteklemek için ayrı geri alma birimi uygulayın (diğer bir deyişle, <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, birden çok tek tek adımları içerebilir.  
   
  Geri alma yönetim nasıl uygulayacağınıza düzenleyiciniz birden çok görünüm veya destekleyip desteklemediğini bağlı olarak değişir. Her uygulama için yordamlar aşağıdaki bölümlerde ayrıntılı şekilde verilmiştir.  
@@ -89,5 +87,5 @@ Geri alma yönetimi için kullanılan birincil arabirimidir <xref:Microsoft.Visu
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject>   
- [Nasıl yapılır: geri alma yığını Temizle](../extensibility/how-to-clear-the-undo-stack.md)
+ [Nasıl Yapılır: Geri Alma Yığınını Temizleme](../extensibility/how-to-clear-the-undo-stack.md)
 

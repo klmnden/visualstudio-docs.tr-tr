@@ -1,7 +1,7 @@
 ---
 title: Komut satırından katman etkileşim verileri ekleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce7713b39acb7736e34f6ab6017b0cd32b1e1cfa
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6b22de4b3dd94ba39015605353a71412836a9ff4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776029"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228429"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Komut satırından katman etkileşim verileri ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [komut satırından katman etkileşim verileri ekleme](https://docs.microsoft.com/visualstudio/profiling/adding-tier-interaction-data-from-the-command-line).  
-  
 Katman etkileşim profili oluşturma, zaman uyumlu yürütme sürelerini hakkında ek bilgi sağlayan [!INCLUDE[vstecado](../includes/vstecado-md.md)] içinde bir veya daha fazla veritabanı ile iletişim kuran çok katmanlı uygulamaların işlevlerini çağırır.  
   
  **Windows 8 ve Windows Server 2012**  

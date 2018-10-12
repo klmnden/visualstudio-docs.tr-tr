@@ -1,7 +1,7 @@
 ---
 title: Bir DataContext yönteminin dönüş türünün değiştirilmesi geri alınamaz | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2adc93f6426c39d26395bdeb88fb8c37112a1a98
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5a53bfc66c379be0d6d90d03314f84eef89bd98a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695205"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233824"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>Bir DataContext yöntemin dönüş türünü değiştirme işlemi geri alınamaz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bir DataContext yönteminin dönüş türünün değiştirilmesi geri alınamaz](https://docs.microsoft.com/visualstudio/data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone).  
-  
   
 Bir DataContext yönteminin dönüş türünün değiştirilmesi geri alınamaz bir işlemdir. Otomatik olarak üretilen türe geri dönmek için öğenin Sunucu Gezgini/veritabanı Gezgini O/R Tasarımcısı üzerine yeniden sürüklemeniz gerekir. Dönüş türünü değiştirmek istediğinizden emin misiniz?  
   

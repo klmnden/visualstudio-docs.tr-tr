@@ -1,7 +1,7 @@
 ---
 title: Çıkış penceresindeki tanılama iletileri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0a9e0bb4fa34133937e39b310cb05360e66a443
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 72d9da2ea3ab6cb9807fc7e0a668155d37110c3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695306"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246800"
 ---
 # <a name="diagnostic-messages-in-the-output-window"></a>Çıkış Penceresindeki Tanılama İletileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [çıkış penceresindeki tanılama iletileri](https://docs.microsoft.com/visualstudio/debugger/diagnostic-messages-in-the-output-window).  
-  
 Hata ayıklama sınıfı veya izleme sınıfını kullanarak çıkış penceresinde çalışma zamanı iletileri yazabileceğiniz bir parçası olan <xref:System.Diagnostics> sınıf kitaplığı. Programınızın hata ayıklama sürümünde yalnızca çıktısını alırsanız hata ayıklama sınıfını kullanın. Hata ayıklama ve yayın sürümleri çıktısında istiyorsanız izleme sınıfını kullanın.  
   
 ## <a name="output-methods"></a>Çıkış yöntemleri  
@@ -73,7 +71,7 @@ Hata ayıklama sınıfı veya izleme sınıfını kullanarak çıkış penceresi
  [İzleme ve İşaretleme uygulamaları](http://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)   
  [İzlemeye giriş](http://msdn.microsoft.com/en-us/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)   
  [C#, F # ve Visual Basic proje türleri](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)
+ [Yönetilen Kodda Hata Ayıklama](../debugger/debugging-managed-code.md)
 
 
 

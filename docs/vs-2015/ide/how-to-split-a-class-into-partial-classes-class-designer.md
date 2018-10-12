@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: sınıfı kısmi sınıflara (Sınıf Tasarımcısı) bölme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bbf355caf4a67e54a53f7447f813bf5870b9086
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ae389e3bfe32e2e040da5bef3f41a51ff69555d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628183"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245485"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Nasıl Yapılır: Sınıfı Kısmi Sınıflara Bölme (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: sınıfı kısmi sınıflara (Sınıf Tasarımcısı) bölme](https://docs.microsoft.com/visualstudio/ide/how-to-split-a-class-into-partial-classes-class-designer).  
-  
 Kullanarak bir sınıf veya yapı çeşitli bildirimler arasında bildirimi bölebilirsiniz `Partial` Visual Basic'teki veya `partial` anahtar sözcüğü Visual C#. İstediğiniz sayıda farklı kaynak dosyaları veya bir kaynak dosyasında istediğiniz sayıda kısmi bildirimleri kullanabilirsiniz. Ancak, tüm bildirimler aynı derleme ve aynı ad olmalıdır.  
   
  Kısmi sınıflar çeşitli durumlarda yararlı olur. Örneğin, bir sınıf içinde birden fazla dosya ayırma büyük projeleri üzerinde çalışıyorsanız, aynı anda üzerinde çalışmak birden fazla Programcı sağlar. Visual Studio oluşturan kod ile çalışırken, sınıf kaynak dosyasını yeniden oluşturmak zorunda kalmadan değiştirebilirsiniz. (Visual Studio oluşturan kod örnekleri Windows Formları ve Web hizmeti sarmalayıcı kodu içerir.) Bu nedenle, otomatik olarak oluşturulan sınıfları oluşturan Visual Studio dosyayı değiştirmek zorunda kalmadan kullanan kodu oluşturabilirsiniz.  

@@ -1,7 +1,7 @@
 ---
 title: Temel Proje sistemi oluşturma, bölüm 2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea16f64d07450eabebb0ff49f8c8ea26a0214ffa
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 1e5661b7bd11891f43427749a158f33f07444e43
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880207"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236645"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Temel Proje Sistemi Oluşturma, Bölüm 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [2. bölüm bir temel proje sistemi oluşturma](https://docs.microsoft.com/visualstudio/extensibility/creating-a-basic-project-system-part-2).  
-  
 Bu serideki ilk izlenecek [1. bölüm bir temel proje sistemi oluşturma](../extensibility/creating-a-basic-project-system-part-1.md), temel proje sistemi oluşturma işlemi gösterilmektedir. Bu izlenecek yol, Visual Studio şablonu, bir özellik sayfası ve diğer özellikleri ekleyerek üzerinde temel proje sistemi oluşturur. Bu bir başlamadan önce ilk izlenecek yolu tamamlamanız gerekir.  
   
  Bu izlenecek yol, proje dosya adı uzantısı .myproj olan bir proje türü oluşturmak öğretir. İzlenecek yolu tamamlamak için izlenecek yol, mevcut Visual C# proje sistemi çözümümüz kendi dilinize oluşturulamıyor gerekmez.  

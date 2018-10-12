@@ -1,7 +1,7 @@
 ---
 title: Varsayılan Visual Studio'daki klavye kısayollarını | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 59
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cdd1c4b29a90d10af3593d50f2578f8dbf27bf66
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: afe7f71508de6dca3d29afeead23258eccbc667b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683701"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247188"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio'daki Klavye Kısayolları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio'daki klavye kısayollarını varsayılan](https://docs.microsoft.com/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio).  
-  
 Visual Studio'da uygun klavye kısayolunu kullanarak çeşitli komutlara ve pencerelere daha kolay erişim sağlayabilirsiniz. Bu konuda, Visual Studio'yu yüklerken tercih etmiş olabileceğiniz Genel Geliştirme profiline ilişkin varsayılan kısayollar listelenmektedir. Seçtiğiniz profilden bağımsız olarak açarak bir komutun kısayolunu belirleyebilirsiniz **seçenekleri** genişletme iletişim kutusu, **ortam** düğümünü ve ardından **klavye**. Ayrıca, verilen komutlardan herhangi birine farklı bir kısayol atayarak kısayollarınızı özelleştirebilirsiniz.  
   
  Ortak klavye kısayollarının ve diğer üretkenlik bilgilerinin bir listesi için bkz. [ipuçları ve püf noktaları](../ide/tips-and-tricks-for-visual-studio.md) ve [üretkenlik ipuçları](../ide/productivity-tips-for-visual-studio.md).  

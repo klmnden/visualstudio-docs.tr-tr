@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: örnekleme olayları seçme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2e00dcc15633e9b62f5db02e321950e4f91814f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0be5c96b1ca131bee9062d4049fbea49a9aec182
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697311"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228428"
 ---
 # <a name="how-to-choose-sampling-events"></a>Nasıl Yapılır: Örnekleme Olayları Seçme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: örnekleme olayları seçin](https://docs.microsoft.com/visualstudio/profiling/how-to-choose-sampling-events).  
-  
 Varsayılan olarak, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] profil oluşturma araçları profili oluşturulmuş bir işlem tarafından kullanılan işlemci döngülerini sayısı olarak belirtilen bir aralıkta performans verilerini toplar. Varsayılan döngüsü bir aralıkta 10,000,000, yaklaşık 1 GH bilgisayarda 0,01 saniye olan sayısıdır. Bir aralıktaki döngüsü sayısını değiştirebilirsiniz ve örnek olay değiştirebilirsiniz. Aşağıdaki örnek olayları kullanılabilir:  
   
 -   Saat döngüsü - CPU bağımlı sorunları için.  
@@ -73,7 +71,7 @@ Varsayılan olarak, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] profil oluştur
  [Nasıl yapılır: Koleksiyon metotları seçme](../profiling/how-to-choose-collection-methods.md)   
  [CPU ve Windows sayaçları](../profiling/cpu-and-windows-counters.md)   
  [Örnekleme veri değerlerini anlama](../profiling/understanding-sampling-data-values.md)   
- [Komut satırından profil oluşturma](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [Komut Satırından Profil Oluşturma](../profiling/using-the-profiling-tools-from-the-command-line.md)
 
 
 

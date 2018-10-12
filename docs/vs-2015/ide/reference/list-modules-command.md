@@ -1,7 +1,7 @@
 ---
 title: Liste modülleri komutu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1593879f59642347f58d9c8229aac7d2a9d70261
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 97a269fd5ed0e30e648e2dade210ab0238c8d759
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694652"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246706"
 ---
 # <a name="list-modules-command"></a>Modülleri Listele Komutu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [modülleri Listele komutu](https://docs.microsoft.com/visualstudio/ide/reference/list-modules-command).  
-  
   
 Geçerli işlem için modülleri listeler.  
   
@@ -83,7 +81,7 @@ Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolF
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio komutları](../../ide/reference/visual-studio-commands.md)   
  [Komut penceresi](../../ide/reference/command-window.md)   
- [Nasıl yapılır: modüller penceresini kullanma](../../debugger/how-to-use-the-modules-window.md)
+ [Nasıl Yapılır: Modüller Penceresini Kullanma](../../debugger/how-to-use-the-modules-window.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: bulma ve düzenleme proje ve öğe şablonları | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 08817b551d015481000d3151fb054ee5803ee6f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e497800f209c7653c1f47904df03baf604b3b134
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632156"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229404"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Nasıl Yapılır: Proje ve Öğe Şablonlarını Bulma ve Düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: bulmak ve düzenlemek için proje ve öğe şablonları](https://docs.microsoft.com/visualstudio/ide/how-to-locate-and-organize-project-and-item-templates).  
-  
 Şablon dosyaları, Visual Studio tanır ve böylece şablonları görünür bir konumda yerleştirilmelidir **yeni proje** ve **Yeni Öğe Ekle** iletişim kutuları. Alt kategoriler, ayrıca kullanıcı arabiriminde görünmesi için şablonları için özel alt kategorileri oluşturabilirsiniz.  
   
 ## <a name="locating-templates"></a>Şablonları bulma  
@@ -87,7 +85,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: bulmak v
   
 5.  Devenv.exe ve türü içeren dizine komut isteminde bulun **devenv /installvstemplates**.  
   
-6.  Çalıştırma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]'i çalıştırın.  
   
 7.  Üzerinde **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.  
   
@@ -109,7 +107,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: bulmak v
   
 5.  Devenv.exe ve türü içeren dizine komut isteminde bulun **devenv/Setup**.  
   
-6.  Çalıştırma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]'i çalıştırın.  
   
 7.  Bir proje oluşturun veya varolan bir projeyi açın.  
   

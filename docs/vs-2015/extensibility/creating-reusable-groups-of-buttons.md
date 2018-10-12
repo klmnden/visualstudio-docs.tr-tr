@@ -1,7 +1,7 @@
 ---
 title: Yeniden kullanılabilir düğme grupları oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
 caps.latest.revision: 45
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3bf0e2f0fd80e5d6cc4dee56b5c7c87dd7cfd8e5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b248543fa68e700ab978270c5cdb7bbd908c39d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687951"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232986"
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>Yeniden Kullanılabilir Düğme Grupları Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [, yeniden kullanılabilir grupları düğmeler oluşturma](https://docs.microsoft.com/visualstudio/extensibility/creating-reusable-groups-of-buttons).  
-  
 Bir komut grubuyla, her zaman birlikte bir menü veya araç çubuğunda görünen komutlar koleksiyonudur. Herhangi bir komut grubu .vsct dosyası CommandPlacements bölümündeki farklı üst menüye atayarak yeniden kullanılabilir.  
   
  Komut grupları genellikle düğmeleri içerir, ancak bunlar diğer menü veya birleşik giriş kutuları de içerebilir.  

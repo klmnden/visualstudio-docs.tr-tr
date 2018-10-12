@@ -1,7 +1,7 @@
 ---
 title: Proje yapılandırması nesnesi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 877756c9-4261-43d9-9f32-51bf06b4219f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 06d58287168f7c44438242dc6bbad70f2b7d3f2a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 12e633b3de120d1454e715837f54d4a5222a0137
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685801"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245238"
 ---
 # <a name="project-configuration-object"></a>Proje Yapılandırması Nesnesi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [proje yapılandırması nesnesi](https://docs.microsoft.com/visualstudio/extensibility/internals/project-configuration-object).  
-  
 Proje yapılandırması nesnesi yapılandırma bilgileri için kullanıcı Arabiriminde görünen yönetir.  
   
  ![Visual Studio Proje yapılandırması](../../extensibility/internals/media/vsprojectcfg.gif "vsProjectCfg")  

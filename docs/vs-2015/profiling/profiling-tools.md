@@ -1,7 +1,7 @@
 ---
 title: Profil oluşturma araçları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8672dd6d05b3a111ad5a1460a57a47b58d1d426a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: feeab1d1f00a681ee3af40436b395d0149cc3334
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681405"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244044"
 ---
 # <a name="profiling-tools"></a>Profil Araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio'daki profil oluşturma](https://docs.microsoft.com/visualstudio/profiling/profiling-feature-tour).  
-  
 Profil oluşturma ve tanılama araçları bellek ve CPU kullanımı ve diğer uygulama düzeyi sorunları tanılamanıza yardımcı olur. Bu araçları ile hata ayıklayıcıda uygulamanızı çalıştırdığınız zaman içinde verileri (örneğin, değişken değerleri, işlev çağrıları ve olayları) birikebilir. Kodunuzun yürütülmesi sırasında farklı noktalarda, uygulamanızın durumunu görüntüleyebilirsiniz.  
   
  Özet, proje türü için hangi araçları kullanılabildiğini görmek için alt kısımdaki göz atın (örneğin, masaüstü, UWP, ASP.NET).  
@@ -93,15 +91,15 @@ Profil oluşturma ve tanılama araçları bellek ve CPU kullanımı ve diğer uy
   
 |Performans aracı|Windows Masaüstü|Windows Evrensel/Store|ASP.NET|  
 |----------------------|---------------------|------------------------------|-------------|  
-|[Bellek kullanımı](../profiling/memory-usage.md)|Evet|Evet|Yok|  
-|[CPU kullanımı](../profiling/cpu-usage.md)|Evet|Evet|Yalnızca Azure uygulama hizmeti|  
-|[GPU kullanımı](../debugger/gpu-usage.md)|Evet|Evet|Yok|  
-|[Uygulama zaman çizelgesi](../profiling/application-timeline.md)|Evet|Evet|Yok|  
+|[Bellek Kullanımı](../profiling/memory-usage.md)|Evet|Evet|Yok|  
+|[CPU Kullanımı](../profiling/cpu-usage.md)|Evet|Evet|Yalnızca Azure uygulama hizmeti|  
+|[GPU Kullanımı](../debugger/gpu-usage.md)|Evet|Evet|Yok|  
+|[Uygulama Zaman Çizelgesi](../profiling/application-timeline.md)|Evet|Evet|Yok|  
 |[PerfTips](../profiling/perftips.md)|Evet|XAML, HTML için Hayır için Evet|Yok|  
 |[Performans Gezgini](../profiling/performance-explorer.md)|Evet|Yok|Evet|  
 |[IntelliTrace](../debugger/intellitrace.md)|Yalnızca .NET Enterprise|Yalnızca .NET Enterprise|Yalnızca .NET Enterprise|  
-|[HTML kullanıcı Arabirimi yanıt hızı](../profiling/html-ui-responsiveness.md)|Yok|Evet, HTML için XAML için Hayır|Yok|  
-|[JavaScript bellek](../profiling/javascript-memory.md)|Yok|Evet, HTML için XAML için Hayır|Yok|  
+|[HTML kullanıcı arabirimi yanıt hızı](../profiling/html-ui-responsiveness.md)|Yok|Evet, HTML için XAML için Hayır|Yok|  
+|[JavaScript Belleği](../profiling/javascript-memory.md)|Yok|Evet, HTML için XAML için Hayır|Yok|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio IDE](../ide/visual-studio-ide.md)

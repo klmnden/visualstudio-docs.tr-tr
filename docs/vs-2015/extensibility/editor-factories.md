@@ -1,7 +1,7 @@
 ---
 title: Düzenleyici fabrikaları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 645dd84b7a864a160e48582b92fbc44b8708309b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 97f53e944e140948b769c351fef6c9b91f4aa008
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632881"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246915"
 ---
 # <a name="editor-factories"></a>Düzenleyici fabrikaları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Düzenleyici fabrikaları](https://docs.microsoft.com/visualstudio/extensibility/editor-factories).  
-  
 Bir düzenleyici fabrikası Düzenleyicisi nesneleri oluşturur ve bunları fiziksel bir görünüm olarak bilinen bir pencere çerçevesi koyar. Belge verileri ve düzenleyiciler ve tasarımcılar oluşturmak için gerekli olan belge görünümü nesneleri oluşturur. Bir düzenleyici fabrikası, Visual Studio çekirdek Düzenleyicisi ve herhangi bir standart düzenleyici oluşturmak için gereklidir. Özel bir düzenleyici Ayrıca isteğe bağlı olarak bir düzenleyici fabrikası ile oluşturulabilir.  
   
  Uygulayarak bir düzenleyici fabrikası oluşturma <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> arabirimi. Aşağıdaki örnek nasıl uygulanacağını göstermektedir <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> Düzenleyici fabrikası oluşturmak için:  

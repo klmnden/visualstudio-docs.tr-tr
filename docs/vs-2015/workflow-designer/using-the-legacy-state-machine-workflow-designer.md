@@ -1,7 +1,7 @@
 ---
 title: Eski Durum makinesi iş akışı Tasarımcısı'nı kullanarak | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -21,12 +21,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: aafe537adf0a48ea38cdeb84a3461fef30cb13e0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30eaf026d0558538c51b4cbda313e051348a5120
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697159"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231692"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Eski Durum Makinesi İş Akışı Tasarımcısını Kullanma
 Oluştururken yeni bir Durum makinesi iş akışı projesi [!INCLUDE[vs2010](../includes/vs2010-md.md)] ya da hedefleyen [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], ya da kullanmayı da tercih edebilirsiniz **Durum makinesi iş akışı konsol uygulaması** veya  **Durum makinesi iş akışı Kitaplığı** eski proje şablonu. Bu durum makine proje şablonlarından birini seçerseniz, durum makine Tasarımcı eski iş akışı Tasarımcısı kullanıcı arabirimi olarak sunulur. Eski Durum makinesi proje şablonları hakkında daha fazla bilgi için bkz: [nasıl yapılır: oluşturma Durum makinesi iş akışı konsol uygulamaları (eski)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) ve [nasıl yapılır: Durum makinesi iş akışı kitaplığı (eski)oluşturma](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
@@ -45,7 +45,7 @@ Oluştururken yeni bir Durum makinesi iş akışı projesi [!INCLUDE[vs2010](../
   
 |Araç adı|Etkinlik|Açıklama|  
 |------------------|--------------|-----------------|  
-|**Durum**|[Buraya StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)|Bir durum makinesindeki bir durumu temsil eder; Ek içeren **buraya StateActivity** etkinlikler. Daha fazla bilgi için [buraya StateActivity etkinliğini kullanarak](http://go.microsoft.com/fwlink?LinkID=65083).|  
+|**State**|[Buraya StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)|Bir durum makinesindeki bir durumu temsil eder; Ek içeren **buraya StateActivity** etkinlikler. Daha fazla bilgi için [buraya StateActivity etkinliğini kullanarak](http://go.microsoft.com/fwlink?LinkID=65083).|  
 |**SetState**|[SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041)|Yeni bir durum geçiş belirtir. Daha fazla bilgi için [SetStateActivity etkinliğini kullanarak](http://go.microsoft.com/fwlink?LinkID=65082).|  
 |**StateInitialization**|[StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044)|Bir durum girildiğinde yürütür; diğer etkinlikleri içerebilir. Daha fazla bilgi için [StateInitialization etkinliğini kullanarak](http://go.microsoft.com/fwlink?LinkID=65006).|  
 |**StateFinalization**|[StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043)|İçerilen etkinlikleri ayrılırken yürütür bir [buraya StateActivity](http://go.microsoft.com/fwlink?LinkID=65042) etkinlik. Daha fazla bilgi için [StateFinalizationActivity etkinliğini kullanarak](http://go.microsoft.com/fwlink?LinkID=65008).|  

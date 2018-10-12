@@ -1,7 +1,7 @@
 ---
 title: VCMessage görevi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d667c53e00e7b92d133c260b5c3cc471a64f355b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f592160aae4fc1382b36c7331175eb6ab20d3fdc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692079"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243941"
 ---
 # <a name="vcmessage-task"></a>VCMessage Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [VCMessage görevi](https://docs.microsoft.com/visualstudio/msbuild/vcmessage-task).  
-  
   
 Uyarı günlükleri ve bir yapı sırasında hata iletileri.  
   
@@ -53,7 +51,7 @@ Uyarı günlükleri ve bir yapı sırasında hata iletileri.
 |**Türü**|İsteğe bağlı **dize** parametresi.<br /><br /> Yaymak üzere ileti türünü belirtir. Seçeneklerinden birini belirtin `"Warning"` bir uyarı iletisi yaymak için veya `"Error"` bir hata iletisi yayılamıyor.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+ [Görev Başvurusu](../msbuild/msbuild-task-reference.md)
 
 
 

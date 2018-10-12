@@ -1,7 +1,7 @@
 ---
 title: KeyBinding öğesi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7dd7f56a91661850a3154ad09376340696513646
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 808897b632353e47185cdbd5606d6f2eed1361b0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687594"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231824"
 ---
 # <a name="keybinding-element"></a>KeyBinding Öğesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [KeyBinding öğesi](https://docs.microsoft.com/visualstudio/extensibility/keybinding-element).  
-  
 Komut için klavye kısayolları KeyBinding öğesi belirtir.  
   
  Komutlar tek ve çift tuş bağlamaları ilişkili olabilir. Tek bir anahtar bağlaması, CTRL + S örneğidir **Kaydet** komutu. Bir komut tetiklemek için iki ardışık tuş birleşimleri çift anahtar bağlamalarını gerektirir. CTRL + K, CTRL + K, bir yer işareti ayarlamak için bir çift anahtar bağlama örneğidir.  

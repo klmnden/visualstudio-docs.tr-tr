@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: (eski) araç kutusuna etkinlik ekleme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 0bcd5f525dfb0794f06b5210287251feb883b340
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fafcc260f451c4ead24d7a9dbb72a4db22c0b79
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686223"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249372"
 ---
 # <a name="how-to-add-activities-to-the-toolbox-legacy"></a>Nasıl yapılır: (eski) araç kutusuna etkinlik ekleme
 Eski ile bir iş akışı çözümü oluşturma sırasında [!INCLUDE[wfd1](../includes/wfd1-md.md)] hedefleyen [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], özel etkinlikler iş akışı projesine eklenebilir ve bunların tasarımcıları yerleştirilir **araç kutusu** için kolay erişim. Etkinlik doğrudan ekleyebilirsiniz **araç kutusu** bir dinamik bağlantı kitaplığı (DLL).  

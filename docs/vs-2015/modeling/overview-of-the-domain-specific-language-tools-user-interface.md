@@ -1,7 +1,7 @@
 ---
 title: Genel Bakış etki alanına özgü dil araçları kullanıcı arabirimi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,25 +16,23 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 25d8f34488c0fee954eb9ab2d372750518433f4a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d88c7ee14acc1916e56010784224f8e44b73f45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627762"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251439"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Etki Alanına Özgü Dil Araçları Kullanıcı Arabirimine Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [etki alanına özgü dil araçları kullanıcı arabirimine genel bakış](https://docs.microsoft.com/visualstudio/modeling/overview-of-the-domain-specific-language-tools-user-interface).  
-  
 İlk kez açtığınızda, bir etki alanına özgü dil Araçları (DSL araçları) çözümünde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], kullanıcı arabirimi aşağıdaki resme benzeyecektir.  
   
  ![DSL Tasarımcısı](../modeling/media/dsl-designer.png "dsl_designer")  
   
  Aşağıdaki tablo, kullanıcı Arabiriminin bölümlerini nasıl kullanılacağını açıklar.  
   
-|**Öğesi**|**Tanım**|  
+|**Öğe**|**Tanım**|  
 |-----------------|--------------------|  
 |Diyagram|Etki alanı modeli diyagramı görüntülenir.<br /><br /> Diyagramda iki kenara sahiptir. Bir yüzü Modellerinizi içinde öğelerin türlerini tanımlar. Diğer taraftan, Modellerinizi ekranda nasıl görüntüleneceğini tanımlar.|  
 |Araç Kutusu|Araçlar, etki alanı sınıfları eklemek ve Şekil diyagrama türleri için araç kutusundan sürükleyin. İlişkileri, bağlayıcılar ve Şekil eşlemeleri eklemek için Aracı'nı tıklatın ve diyagram kaynak düğümde ve hedef düğümü tıklayın.|  

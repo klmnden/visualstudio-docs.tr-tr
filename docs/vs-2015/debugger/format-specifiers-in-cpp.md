@@ -1,14 +1,14 @@
 ---
 title: Biçim belirleyiciler c++ | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -33,18 +33,16 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d495fff6848a8d62be5a4471ee6a036cf9054fff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52320637f9de3f7c96af75dae7a53a5626dfeb36
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690454"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249827"
 ---
 # <a name="format-specifiers-in-c"></a>C++ içindeki Biçim Belirticileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [C++ içindeki Biçim belirticileri](https://docs.microsoft.com/visualstudio/debugger/format-specifiers-in-cpp).  
-  
 İçinde bir değer görüntülenir biçimini değiştirebilirsiniz **Watch** penceresi biçim belirticilerini kullanma.  
   
  İçindeki Biçim belirticileri kullanabilirsiniz **hemen** penceresinde **komut** penceresinde ve hatta kaynak pencerelerinde. Bu pencereler içinde bir ifade üzerinde duraklarsanız, sonuç DataTip içinde görünür. DataTip görünen biçim belirticisini yansıtır.  
@@ -75,10 +73,10 @@ int main() {
   
 |Belirleyici|Biçimi|Özgün izleme değeri|Görüntülenen değer|  
 |---------------|------------|--------------------------|---------------------|  
-|d|ondalık tamsayı|0x00000066|102|  
+|d|Ondalık tamsayı|0x00000066|102|  
 |o|imzalanmamış sekizlik tamsayı|0x00000066|000000000146|  
-|x<br /><br /> **h**|onaltılık tamsayı|102|0xcccccccc|  
-|X<br /><br /> **H**|onaltılık tamsayı|102|0xCCCCCCCC|  
+|x<br /><br /> **h**|Onaltılık tamsayı|102|0xcccccccc|  
+|X<br /><br /> **H**|Onaltılık tamsayı|102|0xCCCCCCCC|  
 |c|tek karakter|0x0065, c|101 'e'|  
 |s|const char * dizesini|\<konumu > "hello world"|"hello world"|  
 |**sb**|const char * dizesini|\<konumu > "hello world"|Merhaba Dünya|  

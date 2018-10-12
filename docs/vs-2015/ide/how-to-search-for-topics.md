@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: Konu Arama | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c094e255a6e87c1b2d6d8036bf033874399e000
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef0cbdff47423fe1ed580f3f51ba1e6039ee3e01
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631241"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248296"
 ---
 # <a name="how-to-search-for-topics"></a>Nasıl Yapılır: Konu Arama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: Konu Arama](https://docs.microsoft.com/visualstudio/ide/how-to-search-for-topics).  
-  
 Belirli bir sözcüğün içeren tüm konuları bulmak için tam metin arama özelliğini kullanabilirsiniz. Ayrıca, iyileştirmek ve joker karakter ifadeler, mantıksal işleçler ve Gelişmiş arama işleçlerini kullanarak aramanızı özelleştirin.  
   
 ### <a name="to-open-the-search-tab"></a>Arama sekmesi açın  
@@ -53,7 +51,7 @@ Belirli bir sözcüğün içeren tüm konuları bulmak için tam metin arama öz
  [Tam metin arama ipuçları](../ide/full-text-search-tips.md)   
  [Arama ifadelerindeki mantıksal işleçler](../ide/logical-operators-in-search-expressions.md)   
  [Arama işleçlerini arama ifadelerindeki Gelişmiş](../ide/advanced-search-operators-in-search-expressions.md)   
- [Nasıl yapılır: arama sonuçlarını özelleştirme](../ide/how-to-customize-search-results.md)
+ [Nasıl Yapılır: Arama Sonuçlarını Özelleştirme](../ide/how-to-customize-search-results.md)
 
 
 

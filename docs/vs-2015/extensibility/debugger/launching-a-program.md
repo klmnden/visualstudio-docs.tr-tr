@@ -1,7 +1,7 @@
 ---
 title: Program başlatma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af5987f793e6f0164654f280f8417494066e3e5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 27b7daadd3642a4eb35d993e37b6ade3bd829972
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693904"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242557"
 ---
 # <a name="launching-a-program"></a>Program Başlatma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Program başlatma](https://docs.microsoft.com/visualstudio/extensibility/debugger/launching-a-program).  
-  
 Bir programda hata ayıklamak istediğiniz kullanıcıları, IDE'den hata ayıklayıcıyı çalıştırmak için F5 tuşuna basabilirsiniz. Bu, bir dizi nihai olarak hangi sırayla bağlı veya bağlı, programa şu şekilde bir hata ayıklama altyapısı (DE), IDE'nin bağlanırken neden olayı başlar:  
   
 1.  IDE, çözümün etkin proje hata ayıklama ayarları almak için proje paketi ilk çağırır. Ayarlar başlangıç dizinini, ortam değişkenleri, programın çalıştırılacağı bağlantı noktası ve program oluşturma işleminin belirtilmişse kullanmak için DE içerir. Bu ayarlar, hata ayıklama paketi geçirilir.  

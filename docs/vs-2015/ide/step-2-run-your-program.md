@@ -1,7 +1,7 @@
 ---
 title: '2. adım: Programınızı çalıştırma | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3312f5017344e4a4710a330750c86727d097c15c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4c8c3788a40941d2cc6fe563af8bd030b2b913d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687308"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242196"
 ---
 # <a name="step-2-run-your-program"></a>2. Adım: Programınızı Çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [2. adım: bilgisayarınızı Program Çalıştır](https://docs.microsoft.com/visualstudio/ide/step-2-run-your-program).  
-  
 Yeni bir çözüm oluşturduğunuzda, aslında çalışan bir programı yerleşik. Çok henüz — yalnızca gösteren boş bir pencere görüntüler **Form1** başlık çubuğundaki. Ancak hakkında bilgi edinmek için oluşturuyoruz, çalıştırın.  
   
  ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo")bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 1 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205209) veya [öğretici 1: Resim Görüntüleyici C# ' - oluşturma 1 video](http://go.microsoft.com/fwlink/?LinkId=205199). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.  

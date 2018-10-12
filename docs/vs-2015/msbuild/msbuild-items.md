@@ -1,7 +1,7 @@
 ---
 title: MSBuild öğeleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 522de2d2a10e58c1f7d6a42b2456c63648655a86
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d04bd43be2a4fa2a72dec687df2582ccf6201b94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687555"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229365"
 ---
 # <a name="msbuild-items"></a>MSBuild Öğeleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [MSBuild öğeleri](https://docs.microsoft.com/visualstudio/msbuild/msbuild-items).  
-  
   
 MSBuild öğeleri derleme sistemine girişleri ve genelde dosyaları temsil ederler. Öğeleri öğesi adlarına dayalı öğe türlerine gruplanır. Öğe türleri parametre olarak görevleri için kullanılabilir öğe listeleri içeren adlandırılır. Görevler, derleme işleminin adımları gerçekleştirmek için öğe değerlerini kullanın.  
   
@@ -49,7 +47,7 @@ MSBuild öğeleri derleme sistemine girişleri ve genelde dosyaları temsil eder
   
     -   [Bir proje dosyasında başvurulan öğe meta verileri](#BKMK_ReferencingItemMetadata)  
   
-    -   [Tanınmış öğe meta verisi](#BKMK_WellKnownItemMetadata)  
+    -   [Tanınmış Öğe Meta Verisi](#BKMK_WellKnownItemMetadata)  
   
     -   [Meta verileri kullanarak öğesi türlerini dönüştürme](#BKMK_Transforming)  
   

@@ -1,7 +1,7 @@
 ---
 title: ClickOnce ile COM bileşenleri dağıtma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 2ddf7e14d3a9e1ceb2e1432e70942dd455621058
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8a544f954ed80e9adb41e0730960c4947f6357a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677420"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246850"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>ClickOnce ile COM Bileşenleri Dağıtma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ClickOnce ile COM bileşenleri dağıtma](https://docs.microsoft.com/visualstudio/deployment/deploying-com-components-with-clickonce).  
-  
 Eski COM bileşenlerinin dağıtımını, geleneksel olarak zor bir görev olmuştur. Bileşenleri, genel olarak kaydedilmesi gerekir ve bu nedenle çakışan uygulamalar arasında istenmeyen yan etkilere neden olabilir. Bileşenler bir uygulama için tamamen yalıtılmış veya yan yana uyumludur. çünkü bu durum genellikle .NET Framework uygulamalarında bir sorun değildir. Visual Studio yalıtılmış COM bileşenlerini Windows XP ya da daha yüksek işletim sistemi dağıtmanıza olanak tanır.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .NET uygulamaları dağıtmak için kolay ve güvenli bir mekanizma sağlar. Ancak, uygulamalarınızı eski COM bileşenleri kullanıyorsanız, bunları dağıtmak için ek adımlar uygulamanız gerekir. Bu konuda, yalıtılmış COM bileşenlerini dağıtmak ve yerel bileşenlerin (örneğin, Visual Basic 6.0 veya Visual C++) başvuru açıklar.  

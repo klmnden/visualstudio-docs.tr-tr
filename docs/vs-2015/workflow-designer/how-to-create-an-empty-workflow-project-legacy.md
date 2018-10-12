@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: boş iş akışı projesinde (eski) oluşturma | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 2907417ff019c4f4b12d8472cf46683e27b1bda9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5a64506fd5d634b140c6e27916ea873afbef1c08
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630214"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235592"
 ---
 # <a name="how-to-create-an-empty-workflow-project-legacy"></a>Nasıl yapılır: bir boş iş akışı projesi (eski) oluşturun
 Eski kullanarak boş bir iş akışı projesi oluşturmak için bu adımları [!INCLUDE[wfd1](../includes/wfd1-md.md)] tarafından sağlanan [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugPrograms2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7fbb8fb7-db64-4546-a364-dc668430c8af
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2871a64ce618d03a96900d916a56fb0c598e47e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cbb01738876eb342fecb83f7f6d09c850ee89636
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694852"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247643"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [IEnumDebugPrograms2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugprograms2).  
-  
 Bu arabirim geçerli hata ayıklama oturumunda çalışan programlar numaralandırır.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -49,9 +47,9 @@ IEnumDebugPrograms2 : IUnknown
 |Yöntem|Açıklama|  
 |------------|-----------------|  
 |[Next](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)|Belirtilen bir sabit listesi sırası programlarında sayısını alır.|  
-|[Atla](../../../extensibility/debugger/reference/ienumdebugprograms2-skip.md)|Bir numaralandırma sıralı programlarında belirtilen sayıda atlar.|  
-|[Sıfırlama](../../../extensibility/debugger/reference/ienumdebugprograms2-reset.md)|Bir numaralandırma sıralı başlangıç durumuna sıfırlar.|  
-|[Kopya](../../../extensibility/debugger/reference/ienumdebugprograms2-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugprograms2-skip.md)|Bir numaralandırma sıralı programlarında belirtilen sayıda atlar.|  
+|[Reset](../../../extensibility/debugger/reference/ienumdebugprograms2-reset.md)|Bir numaralandırma sıralı başlangıç durumuna sıfırlar.|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugprograms2-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugprograms2-getcount.md)|Program sayısını bir numaralandırıcı alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  

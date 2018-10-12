@@ -1,7 +1,7 @@
 ---
 title: Araç kutusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 90860609f10948ab7f1cd2dd887ea06dcd48c7d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c12fe819d46eae073367d10c50deec9ee7b4c26
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677678"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241481"
 ---
 # <a name="toolbox"></a>Araç Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [araç kutusu](https://docs.microsoft.com/visualstudio/ide/reference/toolbox).  
-  
   
 **Araç kutusu** denetimler ve ekleyebileceğiniz diğer öğeler için simgeleri görüntüler [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] projeleri. Açmak için **araç kutusu**, tıklayın **araç kutusu** üzerinde **görünümü** menüsü. Pinleyebilir **araç kutusu**, ve açık sabitleme veya ayarlayın **Otomatik Gizle**.  
   

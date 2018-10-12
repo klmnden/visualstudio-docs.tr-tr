@@ -1,7 +1,7 @@
 ---
 title: Bir Visual C++ DLL Store uygulamaları için birim testi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 6396fccd3e0203e90c38936c53016810803a1975
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7da550c3091be24ba8b7be008f0695038c2b2056
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631041"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244367"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Bir Visual C++ DLL Store uygulamaları için birim testi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [birim testi Store uygulamaları için Visual C++ DLL](https://docs.microsoft.com/visualstudio/test/unit-testing-a-visual-cpp-dll-for-store-apps).  
-  
 Bu konuda, Windows Store apps RooterLib DLL gösterir için unutmayacağınız bellek sınırı teorik, hesaplama bir tahminini verilen bir sayının kare kökünü hesaplayan bir işlevi uygulayarak, bir C++ DLL için birim testleri oluşturma yöntemlerinden biri açıklanmaktadır. DLL ardından eğlenceli bir kullanıcı gösteren bir Windows Store uygulaması eklenebilir matematik ile yapılabilir şeyler.  
   
  Bu konuda birim testi geliştirmede ilk adım olarak kullanma işlemini gösterir. Bu yaklaşım önce test ettiğiniz sistemde belirli bir davranış doğrulayan bir test yöntemi yazın ve ardından testin başarılı olması kod yazacaksınız. Aşağıdaki yordamlar sırasına göre değişiklikler yaparak, bu strateji ilk Yazımdan sonra birim testleri yazma ve test etmek istediğiniz kod tersine çevirebilirsiniz.  

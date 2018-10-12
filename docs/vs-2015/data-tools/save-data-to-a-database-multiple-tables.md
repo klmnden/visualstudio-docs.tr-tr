@@ -1,7 +1,7 @@
 ---
 title: Verileri bir veritabanına (birden çok tablo) kaydetme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 944a38db4c3c92443adf8b0de1f8bc2fa494298b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0580cebe97d4646074c678296c18b4caa20ce44b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689433"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234487"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Bir veritabanına (birden çok tablo) veri kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [veritabanına (birden çok tablo) veri kaydetme](https://docs.microsoft.com/visualstudio/data-tools/save-data-to-a-database-multiple-tables).  
-  
   
 Uygulama geliştirmede en sık karşılaşılan senaryolardan biri, bir Windows uygulamasındaki bir formdaki verileri görüntülemek, verileri düzenleme ve güncelleştirilmiş veriyi veritabanına geri gönder sağlamaktır. Bu izlenecek yolda kayıtlarını düzenleyin ve değişiklikleri veritabanına geri kaydedin gösterir ve ilgili iki tablodan verileri görüntüleyen bir form oluşturur. Bu örnekte `Customers` ve `Orders` Northwind örnek veritabanındaki tablolar.  
   

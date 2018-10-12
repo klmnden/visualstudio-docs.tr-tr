@@ -1,7 +1,7 @@
 ---
 title: Sembol (.pdb) belirtin ve kaynak dosyaları Visual Studio hata ayıklayıcısı | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8674ee9c4141b9bfe8511e67c4cd6113f8f0fed5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6b988a2e3defa1a434cc825ad78e7c92dd30c382
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775447"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226986"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Visual Studio Hata Ayıklayıcısında Simge (.pdb) ve Kaynak Dosyaları Belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [hata ayıklayıcıda sembol (.pdb) ve kaynak dosyaları belirtme](https://docs.microsoft.com/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).  
-  
 Sembol dosyası olarak da bilinen program veritabanı (.pdb) dosyası sınıflar, yöntemler ve başka bir kod için kaynak dosyalarında oluşturduğunuz tanımlayıcıları projenizin derlenen yürütülebilir dosyalarında kullanılan tanımlayıcılarla eşleştirir. .Pdb dosyası, kaynak kodundaki deyimleri yürütülebilir dosyalardaki yürütme yönergeleriyle de eşleştirir. Hata ayıklayıcı iki temel bilgi parçasını belirlemek için bu bilgileri kullanır: Visual Studio IDE'sinde görüntülenen kaynak dosya ve satır numarası ile bir kesme noktası ayarladığınızda durdurulacak yürütülebilir öğenin konumu. Sembol dosyası ayrıca orijinal kaynak dosyası konumunu ve isteğe bağlı olarak, kaynak dosyasının alındığı kaynak sunucusunun konumunu içerir.  
   
  Visual Studio IDE içinde bir projede hata ayıklaması yaparken, hata ayıklayıcı kodunuz için .pdb ve kaynak dosyaları için varsayılan konum bilir. Proje çağrılarınızda Windows veya üçüncü taraf kodu olması gibi, proje kaynak kodunuz dışında kod hatası ayıklamak istiyorsanız, .pdb konumunu (ve isteğe bağlı olarak, harici kod kaynak dosyalarını) belirtmeniz gerekir ve bu dosyaların yürütülebilir yapıyla tam olarak eşleşmesi gerekir.  

@@ -1,7 +1,7 @@
 ---
 title: Dizin arama ipuçları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 592a823da1efacd2aa452d5cb470f8d4f0e52bdc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6183fbf2a7ec7c32282f4dbe6c4a497e5ba3bff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673351"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236294"
 ---
 # <a name="index-search-tips"></a>Dizin Arama İpuçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [dizin arama ipuçları](https://docs.microsoft.com/visualstudio/ide/index-search-tips).  
-  
 Anahtar sözcükleri girerek dizin bilgileri bulabilirsiniz. Bu konuda Yardım dizini kullanarak aramak için kullanışlı yöntemler önerir.  
   
 ## <a name="index-search-tips"></a>Dizin Arama İpuçları  
@@ -69,7 +67,7 @@ Anahtar sözcükleri girerek dizin bilgileri bulabilirsiniz. Bu konuda Yardım d
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Tam metin arama ipuçları](../ide/full-text-search-tips.md)   
- [Bilgi bulun](../ide/locate-information.md)
+ [Bilgilerin Konumunu Bulma](../ide/locate-information.md)
 
 
 

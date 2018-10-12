@@ -1,7 +1,7 @@
 ---
 title: Dil hizmeti ve düzenleyici uzantı noktaları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 617af81f4845eb8557db4c134101091eb0b5ae8d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 87701b2404ebb929d2a21fed6ddc22b075c1f186
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630526"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243275"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Dil Hizmeti ve Düzenleyici Uzantı Noktaları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [dil hizmeti ve düzenleyici uzantı noktaları](https://docs.microsoft.com/visualstudio/extensibility/language-service-and-editor-extension-points).  
-  
 Düzenleyici, çoğu dil hizmeti özellikleri dahil olmak üzere Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşen parçalarına genişletebilirsiniz uzantı noktaları sağlar. Ana uzantı noktası kategorileri şunlardır:  
   
 -   İçerik türleri  

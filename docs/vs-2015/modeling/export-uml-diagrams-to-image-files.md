@@ -1,7 +1,7 @@
 ---
 title: UML diyagramlarını görüntü dosyalarına aktarma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 10
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 72df20d9d696d6a7febc7931e7a1e342a07632a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93972dfda37b47c3d8b7ae25cfdf8e69578af1ed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687653"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228364"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>UML diyagramlarını görüntü dosyalarına aktarma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [dışarı UML diyagramlarını görüntü dosyalarına](https://docs.microsoft.com/visualstudio/modeling/export-uml-diagrams-to-image-files).  
-  
 Bir UML belgeden verebilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] program denetimi altında bir görüntü için. Örneğin, otomatik belge oluşturma bir parçası olarak bunu yapmak isteyebilirsiniz.  
   
  Bir belge görüntüye el ile dışarı aktarmak istiyorsanız, kopyalayın ve diğer programları Word gibi bir diyagramdaki şekilleri yapıştırın. Ayrıca, XPS biçiminde belgeleri yazdırabilirsiniz. Daha fazla bilgi için [diyagramlarını görüntü dışarı aktarma](../modeling/export-diagrams-as-images.md).  
@@ -148,7 +146,7 @@ namespace SaveToImage
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Diyagramları görüntü olarak dışarı aktarma](../modeling/export-diagrams-as-images.md)   
- [Modelleme Diyagramında Menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
+ [Modelleme diyagramında menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
 
 
 

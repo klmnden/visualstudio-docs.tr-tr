@@ -1,7 +1,7 @@
 ---
 title: Performans analiz araçlarını veri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 46
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb70fa86ac54c14d8105a0481b3a09b5aa777f39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1ca00f13a6b15d934e6be9eb1a379de04ea5fc0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688242"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229144"
 ---
 # <a name="analyzing-performance-tools-data"></a>Veri Araçları performansını analiz etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [performans araçları verilerini analiz etme](https://docs.microsoft.com/visualstudio/profiling/analyzing-performance-tools-data).  
-  
 Performans raporları [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] profil oluşturma araçları görüntüleyip uygulama performans sorunlarını analiz etmek etkinleştirin. Bu bölümde, performans verileri incelemek için kullanılabilir görünümleri ve performans raporları hakkında genel bir bakış sağlar.  
   
 ## <a name="common-tasks"></a>Ortak Görevler  
@@ -45,9 +43,9 @@ Performans raporları [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] profil oluşt
 |**Yapılandırma, sıralama ve filtreleme rapor görünümlerini:** belirtin ve bir raporda görüntülemek için Rapor satırları sıralama veri sütunları sıralama ve verileri yalnızca belirttiğiniz süre kesimi içerecek şekilde filtreleyin.|-   [Rapor görünümlerini özelleştirme performans araçları](../profiling/customizing-performance-tools-report-views.md)|  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Performans veri dosyalarını karşılaştırma](../profiling/comparing-performance-data-files.md)  
+ [Performans Veri Dosyalarını Karşılaştırma](../profiling/comparing-performance-data-files.md)  
   
- [Verileri kaydetme ve dışarı aktarma performans araçları](../profiling/saving-and-exporting-performance-tools-data.md)  
+ [Performans Araçları Verilerini Kaydetme ve Dışarı Aktarma](../profiling/saving-and-exporting-performance-tools-data.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Performans Gezgini](../profiling/performance-explorer.md)

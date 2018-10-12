@@ -1,7 +1,7 @@
 ---
 title: Performans kuralları başvurusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8f96819c5d6f8e2be1c7f92e53ebbb29d075886
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9276f567f0edf91111853e417f1f8dff1eb2a4df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687307"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227103"
 ---
 # <a name="performance-rules-reference"></a>Performans Kuralları Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [performans kuralları başvurusu](https://docs.microsoft.com/visualstudio/profiling/performance-rules-reference).  
-  
 Profil Araçları performans kurallarını, ek uyarılar ve uygulamanızın performansı hakkında bilgi sağlar. Performans kuralları profil oluşturma yürütmesine Windows ve işlemci performans sayaçları gibi kaynaklardan toplanan verileri analiz edin. Kural iletileri hata çıkış penceresinde görünür [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] tümleşik geliştirme ortamı. İletiler, aşağıdaki kural düzeylerinden birini listelenmiştir:  
   
 |||  
@@ -35,13 +33,13 @@ Profil Araçları performans kurallarını, ek uyarılar ve uygulamanızın perf
 |**Bilgi**|Bilgi iletilerini analizi bir kural koşulu, bir hata iletisi oluşturmak için eşiği ulaşmadı veya bilgi iletisi kullanışlıdır ancak bir performans sorunu yansıtmaz gösterir.|  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Kimliğe göre performans kuralları](../profiling/performance-rules-by-id.md)  
+ [Kimliğe Göre Performans Kuralları](../profiling/performance-rules-by-id.md)  
   
  Profil Araçları performans kuralları dört kategoriler halinde düzenlenmiştir:  
   
 |||  
 |-|-|  
-|[.NET framework kullanımı performans kuralları](../profiling/dotnet-framework-usage-performance-rules.md)|Yardımcı kurallar, .NET Framework verimli bir şekilde kullanın.|  
+|[.NET Framework Kullanımı Performans Kuralları](../profiling/dotnet-framework-usage-performance-rules.md)|Yardımcı kurallar, .NET Framework verimli bir şekilde kullanın.|  
 |[Bellek ve Disk Belleği Performans Kuralları](../profiling/memory-and-paging-performance-rules.md)|Yönetilen bellek ve disk belleği uygulamanızın davranışını analiz kuralları.|  
 |[Profil Araçları Kullanım Kuralları](../profiling/profiling-tools-usage-rules.md)|Yardımcı kuralları profil oluşturma araçları verimli bir şekilde kullanın.|  
 |[Kaynak İzleme Performans Kuralları](../profiling/resource-monitoring-performance-rules.md)|İşlemci ve bellek kullanımı, bir profil oluşturma hakkında bilgi iletileri çalıştırın.|

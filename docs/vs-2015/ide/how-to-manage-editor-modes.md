@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: Düzenleyici modlarını yönetme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e679c751f5d4e8aa23bb843f812476f2f9e9f5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d38812007e042d014cb0090f1334bee2cce0858
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690450"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229222"
 ---
 # <a name="how-to-manage-editor-modes"></a>Nasıl Yapılır: Düzenleyici Modlarını Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: Düzenleyici modlarını yönetme](https://docs.microsoft.com/visualstudio/ide/how-to-manage-editor-modes).  
-  
 Visual Studio Kod Düzenleyicisi çeşitli görüntüleme modlarında görüntüleyebilirsiniz.  
   
 > [!NOTE]
@@ -75,7 +73,7 @@ Visual Studio Kod Düzenleyicisi çeşitli görüntüleme modlarında görüntü
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Düzenleyiciyi özelleştirme](../ide/customizing-the-editor.md)   
  [Nasıl yapılır: pencereleri düzenleme ve yerleştirme Windows](../misc/how-to-arrange-and-dock-windows.md)   
- [Yazı tipleri ve renkler, ortam, Seçenekler iletişim kutusu](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
+ [Yazı Tipleri ve Renkler, Ortam, Seçenekler İletişim Kutusu](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
 
 
 

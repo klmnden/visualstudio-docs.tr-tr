@@ -1,7 +1,7 @@
 ---
 title: Bir Windows Evrensel uygulaması CPU kullanımını analiz etme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: f57fdf99c6ccb19c6d8add600943d799d3a28ca4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f91fa126c066d3c028cb7e634468ab8b455c8e30
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632735"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250724"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Bir Windows Evrensel uygulaması CPU kullanımını analiz etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [analiz CPU kullanımı bir evrensel Windows uygulaması ile](https://docs.microsoft.com/visualstudio/profiling/analyze-cpu-usage-in-a-windows-universal-app).  
-  
 Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Uygulamanızdaki performans sorunlarını araştırmak gerektiğinde başlatmak için iyi bir yerdir, CPU kullanma anlamaktır. **CPU kullanımı** aracı gösterir, burada CPU kodu yürütürken zaman harcadığı yerleri. Belirli senaryolara odaklanmak için CPU kullanımı ile çalıştırılabilir [XAML UI yanıtlama hızı](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480) aracı [enerji tüketimi](../profiling/analyze-energy-use-in-store-apps.md) aracı veya tanılama tek bir oturumda hem araçları.  

@@ -1,7 +1,7 @@
 ---
 title: Proje alt türleri tasarımı | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6b4d9f77f4ea1a302efb38bb75ebecd2ee54c1f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: db689d1d8fdb7d60cba232685ee0c8f22ca9cbb2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689421"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243831"
 ---
 # <a name="project-subtypes-design"></a>Proje Alt Türleri Tasarımı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [proje alt türleri tasarımı](https://docs.microsoft.com/visualstudio/extensibility/internals/project-subtypes-design).  
-  
 Proje alt türleri kılan Microsoft Build Engine (MSBuild) üzerinde temel projeleri VSPackages olanak tanır. Toplama kullanımı sayesinde uygulanan yönetilen çekirdek proje sisteminin toplu yeniden [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ancak yine de belirli bir senaryo davranışını özelleştirebilirsiniz.  
   
  Aşağıdaki konular temel tasarım ve uygulama proje alt türlerinin başlatılma vermektedir:  

@@ -1,7 +1,7 @@
 ---
 title: Yardım Görüntüleyicisi'ni sorunlarını giderme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 68946af27925347cee497c237de396d31f214e13
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29c7ee223bbfbeb2dd7b262c33d6c00ea3c41411
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691102"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245550"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Yardım Görüntüleyici'de Sorun Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Yardım Görüntüleyici sorun giderme](https://docs.microsoft.com/visualstudio/ide/troubleshooting-the-help-viewer).  
-  
 Bu konuda Yardım Görüntüleyici ile karşılaşabileceğiniz sorunlar açıklanmaktadır.  
   
 ## <a name="audio-doesnt-work"></a>Ses çalışmıyor.  

@@ -1,7 +1,7 @@
 ---
 title: Eski API'yi kullanarak çekirdek Düzenleyici örnekleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: dda23b18-96ef-43c6-b0dc-06d15cbe5cbb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aaed9c7860153beee6d02bd02242697f10647e0a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab42c05d404492883493645731094a67f5eb368b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634013"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246044"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Eski API'yi kullanarak çekirdek Düzenleyici örnekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [çekirdek düzenleyici kullanarak eski API örnekleme](https://docs.microsoft.com/visualstudio/extensibility/instantiating-the-core-editor-by-using-the-legacy-api).  
-  
 Düzenleyici metin düzenleme ekleme, silme, kopyalama ve yapıştırma gibi işlevleri sorumludur. Bu işlevler, metin renklendirme, girinti ve IntelliSense deyim tamamlama gibi dil Hizmetleri tarafından sağlanan ile birleştirir.  
   
  Üç yoldan biriyle çekirdek Düzenleyici örneği örneği oluşturabilir:  
@@ -76,5 +74,5 @@ Düzenleyici metin düzenleme ekleme, silme, kopyalama ve yapıştırma gibi iş
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çekirdek Düzenleyicisi içinde](../extensibility/inside-the-core-editor.md)   
  [Açma ve proje öğelerini kaydetme](../extensibility/internals/opening-and-saving-project-items.md)   
- [İzlenecek yol: bir çekirdek düzenleyici oluşturma ve bir düzenleyici dosya türü kaydetme](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)
+ [İzlenecek Yol: Temel Düzenleyici Oluşturma ve Düzenleyici Dosya Türü Kaydetme](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)
 

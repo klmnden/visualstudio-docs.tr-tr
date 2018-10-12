@@ -1,7 +1,7 @@
 ---
 title: 'Katman diyagramları: Başvuru | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 85024000e0cb4be7f9828052c6bc9194d498ab30
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c44ad4b225b3fd52f0e25369777b1a4f6df8c95e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697107"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248319"
 ---
 # <a name="layer-diagrams-reference"></a>Katman Diyagramları: Başvuru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bağımlılık diyagramları: başvuru](https://docs.microsoft.com/visualstudio/modeling/layer-diagrams-reference).  
-  
 Visual Studio'da kullanabileceğiniz bir *katman diyagramı* sisteminizin üst düzey, mantıksal mimarisini görselleştirmek için. Bir katman diyagramı fiziksel yapıları sisteminizde adı verilen mantıklı, soyut gruplar halinde düzenler *katmanları*. Bu katmanlar, yapıların gerçekleştirdiği temel görevleri veya sistemin ana bileşenlerini açıklar. Her katman aynı zamanda daha ayrıntılı görevleri açıklayan iç içe katmanlar içerebilir.  
   
  Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -60,7 +58,7 @@ Visual Studio'da kullanabileceğiniz bir *katman diyagramı* sisteminizin üst d
   
  Aşağıdaki tabloda, bir katman diyagramı üzerinde kullanabileceğiniz öğeleri açıklar.  
   
-|**Şekil**|**Öğesi**|**Açıklama**|  
+|**Şekil**|**Öğe**|**Açıklama**|  
 |---------------|-----------------|---------------------|  
 |1.|**Katman**|Sisteminizdeki fiziksel yapıları mantıksal grubudur. Bu yapılar ad alanları, projeler, sınıflar, yöntemler vb. olabilir.<br /><br /> Bir katmana bağlı yapıların listesini görmek için katmanın kısayol menüsünü açın ve ardından **bağlantıları görüntüle** açmak için **Katman Gezgini**.<br /><br /> Daha fazla bilgi için [Katman Gezgini](#Explorer).<br /><br /> -   **Namespace bağımlılıkları Yasak** -Bu katman ile ilişkili yapıların belirli ad alanlarına bağlı olamayacağını belirtir.<br />-   **Ad Yasak** -Bu katman ile ilişkili yapıların belirli ad alanlarına ait olmaması gerektiğini belirtir.<br />-   **Gerekli ad alanları** -Bu katman ile ilişkili yapıların belirli ad alanlarına birine ait olduğunu belirtir.|  
 |2|**Bağımlılık**|Bir katmanın işlevselliği kullanabileceğini belirtir başka bir katmanda ancak tersi doğru değildir.<br /><br /> -   **Yön** -Bağımlılık yönünü belirtir.|  
@@ -79,7 +77,7 @@ Visual Studio'da kullanabileceğiniz bir *katman diyagramı* sisteminizin üst d
   
  Katmanlar ve yapılar bağlama hakkında daha fazla bilgi için bkz:  
   
--   [Katman diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md)  
+-   [Katman Diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)  
   
 -   [Kodunuz aracılığıyla katman diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)  
   

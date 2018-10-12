@@ -1,7 +1,7 @@
 ---
 title: Özel düzenleyiciler ve tasarımcılar oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e9916d58a714580162b7295df02907eed8b65569
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1abb0905e276c2e9a2c5fc99b7d77edffedbb2d7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695814"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242601"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Özel Düzenleyiciler ve Tasarımcılar Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [oluşturma özel düzenleyiciler ve tasarımcılar](https://docs.microsoft.com/visualstudio/extensibility/creating-custom-editors-and-designers).  
-  
 Visual Studio tümleşik geliştirme ortamı (IDE), farklı türde bir düzenleyici barındırabilirsiniz:  
   
 -   Visual Studio çekirdek Düzenleyicisi  
@@ -98,7 +96,7 @@ Visual Studio tümleşik geliştirme ortamı (IDE), farklı türde bir düzenley
  Özel düzenleyicilerde belge verileri ve belge görünümleri uygulamak açıklanmaktadır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Eski arabirimleri Düzenleyicisi](../extensibility/legacy-interfaces-in-the-editor.md)  
+ [Düzenleyicideki Eski Arabirimler](../extensibility/legacy-interfaces-in-the-editor.md)  
  Çekirdek Düzenleyici yoluyla eski api'de açıklanmaktadır.  
   
  [Eski Dil Hizmeti Geliştirme](../extensibility/internals/developing-a-legacy-language-service.md)  

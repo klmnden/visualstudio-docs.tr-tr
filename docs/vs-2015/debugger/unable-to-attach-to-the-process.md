@@ -1,7 +1,7 @@
 ---
 title: İşleme iliştirilemiyor. | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41eed3132039f2622c5d46b9937893ddaafa2dbf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b8ba032d30999ec1dcf9f135aab0e2b03364aa2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630126"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246954"
 ---
 # <a name="unable-to-attach-to-the-process"></a>İşleme İliştirilemiyor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [işleme Ekle erişilemiyor](https://docs.microsoft.com/visualstudio/debugger/unable-to-attach-to-the-process).  
-  
 İşleme iliştirilemiyor. Hata ayıklayıcı bileşeni sunucuda bu makineye bağlanırken erişim aldı.  
   
  Bu hataya neden iki yaygın senaryo vardır:  
@@ -71,7 +69,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [işleme Ekle erişilemiyor
 7.  Tüm pencereleri kapatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)
+ [Hata Ayıklayıcısı Ayarları ve Hazırlığı](../debugger/debugger-settings-and-preparation.md)
 
 
 

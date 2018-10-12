@@ -1,7 +1,7 @@
 ---
 title: Modelleme Diyagramında hareket işleyicisi tanımlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 36
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8afc13a03fcff51eaad0507af753f3a434eac093
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0aa5eef915aea0eea01e9d6195228cddf8e974ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774690"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248090"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Modelleme diyagramında hareket işleyicisi tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [modelleme diyagramında hareket işleyicisi tanımlama](https://docs.microsoft.com/visualstudio/modeling/define-a-gesture-handler-on-a-modeling-diagram).  
-  
 Visual Studio'da, kullanıcı çift tıkladığında veya öğeleri bir UML diyagram üzerine sürüklediğinde gerçekleştirilen komutları tanımlayabilirsiniz. Bu uzantılar bir Visual Studio Tümleştirme Uzantısı'na paketini ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) ve diğer Visual Studio kullanıcılarına dağıtabilirsiniz.  
   
  Diyagram türü ve sürüklemek istediğiniz öğe türü için yerleşik davranış zaten yoksa ekleyin veya bu davranışı geçersiz kılmak mümkün olmayabilir.  

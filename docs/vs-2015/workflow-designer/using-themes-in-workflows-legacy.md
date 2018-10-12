@@ -1,7 +1,7 @@
 ---
 title: (Eski) iş akışlarında temaları kullanma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: c1bb0392054717844cc9f0943f57aaa33d0c887c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b69913605e57ed0ef4b4a2b025287821f679369d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690471"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233024"
 ---
 # <a name="using-themes-in-workflows-legacy"></a>İş Akışlarında Temaları Kullanma (Eski)
 Bu konuda, temalar kullanmayı açıklar [!INCLUDE[wf](../includes/wf-md.md)] eski kullanırken [!INCLUDE[wfd1](../includes/wfd1-md.md)] hedefleyen [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

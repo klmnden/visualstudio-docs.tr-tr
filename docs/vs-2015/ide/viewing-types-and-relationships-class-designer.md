@@ -1,7 +1,7 @@
 ---
 title: Türleri ve ilişkiler (Sınıf Tasarımcısı) görüntüleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dc7bf4d9f005b5514be5ec6765744b8d043a3979
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 801481c6fed2dab33774cd9895685e91e49ab361
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692485"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240766"
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>Türleri ve İlişkilendirmeleri Görüntüleme (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [görüntüleme türleri ve ilişkiler (Sınıf Tasarımcısı)](https://docs.microsoft.com/visualstudio/ide/viewing-types-and-relationships-class-designer).  
-  
 Sınıf Tasarımcısı, örneğin türleri, ayrıntılarını görüntülemek için sınıf diyagramları, bağlı üyeleri ve paylaştıkları ilişkileri kullanır. Görselleştirmeyi bu varlıkların gerçekten kod bir dinamik Görünüm ' dir. Bu tasarımcı üzerinde türlerini düzenlemek ve yansıtılan varlığın kaynak kodunda yaptığınız düzenlemeleri bakın anlamına gelir. Benzer şekilde, sınıf diyagramı varlıkları kodunda yaptığınız değişiklikler ile eşitlenmiş tutulur.  
   
 > [!NOTE]

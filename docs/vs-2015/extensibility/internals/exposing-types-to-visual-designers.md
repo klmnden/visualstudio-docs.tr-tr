@@ -1,7 +1,7 @@
 ---
 title: Türleri görsel tasarımcıların gösterme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e09161d7ea2e27fbc1f4c7bd68cc7da952d3f1d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 401ba1744ad03260140ca29d706f24d699863246
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693739"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242014"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Türleri Görsel Tasarımcıların Kullanımına Sunma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [türleri görsel tasarımcıların gösterme](https://docs.microsoft.com/visualstudio/extensibility/internals/exposing-types-to-visual-designers).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] sınıfı ve tür tanımlarını tasarım zamanında bir görsel tasarımcı görüntülemek için erişiminiz olmalıdır. Geçerli proje (başvurular ve bunların bağımlılıklarını) tam bağımlılık kümesini içeren derlemeler önceden tanımlanmış kümesinden sınıfları yüklenir. Görsel tasarımcılar için gerekli erişim sınıfları ve özel araçları tarafından oluşturulan dosyaları içinde tanımlanan türler için de olabilir.  
   
  [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] Ve [!INCLUDE[csprcs](../../includes/csprcs-md.md)] proje sistemleri üretilen sınıfları ve türleri, geçici taşınabilir erişmek için destek sağlar yürütülebilir dosyalar (geçici PEs). Böylece türleri Bu derlemelerden yüklenmedi ve tasarımcılar, kullanıma sunulan özel bir araç tarafından oluşturulan herhangi bir dosya geçici bir bütünleştirilmiş kod içine derlenmiş. Her özel aracın çıktısının ayrı bir geçici PE derlenir ve başarısı veya başarısızlığı geçici bu derleme yalnızca olup olmadığını oluşturulan dosyanın derlenebilir üzerinde bağlıdır. Bir proje, bir bütün olarak oluşturulamayabilir olsa da, tek tek geçici PEs tasarımcılar, kullanılabilir olabilir.  

@@ -1,7 +1,7 @@
 ---
 title: Diyagram üzerinde arka plan görüntüsü ayarlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ea74561974db32a831b4123578bffb755a24cbc8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fd9d5ca21dbe1b0444c650a127fc0184dfb640f1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690251"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240558"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Diyagram Üzerinde Arka Plan Görüntüsü Ayarlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [diyagram üzerinde arka plan görüntüsü ayarlama](https://docs.microsoft.com/visualstudio/modeling/setting-a-background-image-on-a-diagram).  
-  
 İçinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Görselleştirme ve modelleme SDK'sı, ayarlayabileceğiniz arka plan görüntüsü için oluşturulan bir tasarımcı özel kod kullanarak.  
   
 ## <a name="setting-the-background-image"></a>Arka plan görüntüsü ayarlama  

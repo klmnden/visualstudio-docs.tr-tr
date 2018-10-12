@@ -1,7 +1,7 @@
 ---
 title: Erişilebilirlik ipuçları ve püf noktaları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39f12a7f895d4bd1a625b22dee1fa3465a625bec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4fe4f45f6c858ede7bebc7cbbf3a5e734130000
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693649"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241026"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Erişilebilirlik İpuçları ve Püf Noktaları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [erişilebilirlik ipuçları ve püf noktaları](https://docs.microsoft.com/visualstudio/ide/reference/accessibility-tips-and-tricks).  
-  
   
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] yerleşik erişilebilirlik özelliği içerir, böylece kolayca klavyeden çalışabilir ve ekran okuyucular ya da diğer yardımcı teknoloji cihazlarını kullanın. Konu en iyi duruma getirmek için bazı öneriler içerir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] erişilebilirlik ve bunun yanı sıra bazı yararlı bir kısayol tuş birleşimleri için.  
   

@@ -1,7 +1,7 @@
 ---
 title: Yapılandırma seçeneklerini yönetme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 596c28ee-f48d-4252-a5c4-f730c43a39e6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ae7c6208c185b000646a2430864f2e021c8f74ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b114948ad662b9c027e208609dc1e48a6bec8979
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690411"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243236"
 ---
 # <a name="managing-configuration-options"></a>Yapılandırma Seçeneklerini Yönetme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yapılandırma seçeneklerini yönetme](https://docs.microsoft.com/visualstudio/extensibility/internals/managing-configuration-options).  
-  
 Yeni bir proje türü oluşturduğunuzda, projenizi ne nasıl oluşturulacak, paketlenmiş, dağıtılan ve çalışma belirlemek proje ve çözüm yapılandırma ayarları yönetmeniz gerekir. Aşağıdaki konular, proje ve çözüm yapılandırma açıklanmaktadır.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  

@@ -1,7 +1,7 @@
 ---
 title: Gecikmeli belge yüklemesi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a3469484518a4d802c8fc0de11a32533fa429d3d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 67fe53cefe3d128869d53592bf3e5c42a9d27a4e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689174"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240922"
 ---
 # <a name="delayed-document-loading"></a>Gecikmeli Belge Yüklemesi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Gecikmeli belge yüklenirken](https://docs.microsoft.com/visualstudio/extensibility/internals/delayed-document-loading).  
-  
 Bir kullanıcı bir Visual Studio çözümü yeniden açana, ilişkili belgelerin çoğu hemen yüklü değil. Belge pencere çerçevesi başlatma bekleyen durumda oluşturulur ve çalıştırılan Belge tablosu'de (RDT) (bir saplama çerçeve olarak adlandırılır) bir yer tutucu belge yerleştirilir.  
   
  Uzantınızı yüklenmeden önce öğeleri belgelerde sorgulayarak gereksiz yere yüklenmesi proje belgelerini neden olabilir. Bu, Visual Studio için genel bellek Ayak izi artırabilir.  

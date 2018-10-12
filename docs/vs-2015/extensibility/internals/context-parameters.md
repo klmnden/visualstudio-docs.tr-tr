@@ -1,7 +1,7 @@
 ---
 title: Bağlam parametreleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 1a062dcb-8a8f-40dd-bea9-3d10f9448966
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c890a1ffa91d4e6017411e99b4845304a2399279
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 663583129453fc8bd9b71c2be2337a5528f9f7d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629789"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238090"
 ---
 # <a name="context-parameters"></a>Bağlam Parametreleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bağlam parametreleri](https://docs.microsoft.com/visualstudio/extensibility/internals/context-parameters).  
-  
 İçinde [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tümleşik geliştirme ortamı (IDE), sihirbazlar ekleyebilirsiniz **yeni proje**, **Yeni Öğe Ekle**, veya **alt proje Ekle** iletişim kutuları. Eklenen sihirbazlar mevcuttur **dosya** menüsü veya bir projeye sağ tıklayarak **Çözüm Gezgini**. IDE bağlam parametreleri Sihirbazı uygulamaya geçirir. IDE Sihirbazı çağırdığında proje durumunu bağlam parametreleri tanımlayın.  
   
  Ayarlayarak sihirbazları IDE başlatıldığında <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> IDE'nin çağrıda bayrağı <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> proje için yöntemi. Ayarlandığında, proje neden `IVsExtensibility::RunWizardFile` kayıtlı sihirbaz adı veya GUID ve IDE arabimini diğer bağlam parametreleri kullanarak yürütülecek yöntemi.  

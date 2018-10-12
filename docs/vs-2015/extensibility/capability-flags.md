@@ -1,7 +1,7 @@
 ---
 title: Özellik bayrakları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 638d8975bc3bd5216fe60e0444cf864d8cf896de
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 954993a5733012b4e27ebd6f012fabcf1e3eda00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688580"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241468"
 ---
 # <a name="capability-flags"></a>Özellik Bayrakları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [özellik bayrakları](https://docs.microsoft.com/visualstudio/extensibility/capability-flags).  
-  
 SCC_CAP_*xxx* bayraklar: kaynak denetimi eklentisi yeteneklerini belirtmek için kullanılan bit bayrakları. SCC_EXCAP_*xxx* bayraklar genişletilmiş özellikler belirtin ve tam sayı değerlerine çözmek artımlı bayrakları.  
   
 |Özellik kod|Değer|Açıklama|  

@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: İmza yardımını görüntüleme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24c3eea821209485b5d57335c0c948cae92b4a20
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0642b798668e24e7ba1e6595ab3c8ea6dba6885e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686877"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247929"
 ---
 # <a name="walkthrough-displaying-signature-help"></a>İzlenecek Yol: İmza Yardımını Görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [izlenecek yol: İmza Yardımı görüntüleme](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-signature-help).  
-  
 İmza Yardımı (diğer adıyla *parametre bilgisi*) kullanıcı parametre listesi başlangıç karakteri (genellikle bir açma ayracı) yazdığında bir yöntem imzası bir araç ipucunda görüntüler. Bir parametre ve parametre ayırıcı (genellikle bir virgül) yazılı olarak araç ipucu bir sonraki parametreyi kalın olarak göstermek için güncelleştirilir. Bir dil hizmeti bağlamında imza Yardımı tanımlayabilirsiniz kendi dosya adı uzantısı ve içerik türünü tanımlayın ve bu tür için imza Yardımı'nı görüntülemek veya mevcut bir içerik türünü (örneğin, "metin") için imza Yardım görüntüleyebilirsiniz. Bu yönerge "metin" içerik türü için imza Yardımı'nı görüntülemek nasıl gösterir.  
   
  İmza Yardımı, belirli bir karakterin, örneğin, yazarak genellikle tetiklenir "(" (açılış ayracı) ve başka bir karakter yazarak kapatılır ")" (kapanış parantezi). Bir karakter yazarak tetiklenen IntelliSense özellikleri tuş vuruşları için bir komut işleyici kullanarak uygulanabilir ( <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirimi) ve uygulayan bir işleyici sağlayıcısı <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> arabirimi. İmza Yardımı'ndaki katılan imzaları listesidir, imza Yardım kaynak oluşturmak için uygulaması <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource> arabirimi ve uygulayan bir kaynak sağlayıcısı <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider> arabirimi. Sağlayıcılar Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşeni bölümleri ve kaynak ve denetleyici sınıfları dışarı aktarma ve Hizmetleri ve aracıları, örneğin, içeri aktarma sorumlu <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, metin arabelleğinde ulaşmanıza olanak sağlayan ve <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>, imza Yardım oturumu tetikler.  

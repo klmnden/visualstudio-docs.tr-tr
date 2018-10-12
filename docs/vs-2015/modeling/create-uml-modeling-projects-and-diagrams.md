@@ -1,7 +1,7 @@
 ---
 title: UML modelleme projeleri ve diyagramları oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3cf34434bb600131bdd3a5aeeee9d2d3be98c96f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69027b99d1c7db25f1d01e91d8e6d5c05141a2d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694618"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250490"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>UML modelleme projeleri ve diyagramları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [oluşturma UML modelleme projeleri ve diyagramları](https://docs.microsoft.com/visualstudio/modeling/create-uml-modeling-projects-and-diagrams).  
-  
 UML anlamanıza, tartışın ve tasarım yazılım sistemlerinin Yardım modeller. Visual Studio, UML diyagramları beş en sık kullanılan için şablonlar sağlar: etkinlik, sınıf, bileşen, dizisi ve kullanım örneği. Ayrıca, yardımcı katman diyagramları oluşturabilirsiniz sisteminizin yapısını tanımlar.  
   
  UML modelleme diyagramları ve katman diyagramları, yalnızca bir modelleme projesinin içinde bulunabilir. Her bir modelleme projesi, paylaşılan bir UML model ve birkaç UML diyagramları içerir. Her diyagram, modeli kısmi bir görünümüdür. UML modeli diyagramlarındaki tüm öğelerini içeren ve UML Model Gezgini kullanılarak görüntülenebilir. Modelleri ve diyagramları ilişkilerini hakkında daha fazla bilgi için bkz. [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md). Modelleme projeleri sürüm denetimi altında hakkında daha fazla bilgi için bkz: [sürüm denetimi altındaki modelleri ve diyagramları yönetme](../modeling/manage-models-and-diagrams-under-version-control.md) ve [modelleme çözümünüzün yapısını oluşturma](../modeling/structure-your-modeling-solution.md)  

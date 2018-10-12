@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: Eşleşen küme ayraçlarını görüntüleme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 11021dc98acfd80f1e91443cc834eb4ae0126455
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a0568060ec19fc24731850b20dc70dfa7a48231d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629181"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247838"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>İzlenecek Yol: Eşleşen Küme Ayraçlarını Görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [izlenecek yol: eşleşen küme ayraçlarını görüntüleme](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-matching-braces).  
-  
 Ayraç eşleştirme eşleştirmek istediğiniz küme ayraçları tanımlayıp giriş işaretini bir küme ayraçlarının olduğunda bir metin işaretçisi etiketi için eşleşen küme ayraçlarını ekleme gibi dil tabanlı özellikleri uygulayabilir. Küme ayraçları bir dil bağlamında tanımlayabilirsiniz kendi dosya adı uzantısı ve içerik türünü tanımlayın ve bu türe yalnızca etiketler veya mevcut bir içerik türüyle (örneğin, "metin") etiketler uygulayabilirsiniz. Aşağıdaki örneklerde, ayraç eşleştirme "metin" içerik türü etiketleri uygulamak gösterilmektedir.  
   
 ## <a name="prerequisites"></a>Önkoşullar  

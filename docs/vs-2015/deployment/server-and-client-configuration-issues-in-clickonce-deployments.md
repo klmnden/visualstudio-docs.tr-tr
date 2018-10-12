@@ -1,7 +1,7 @@
 ---
 title: Sunucu ve istemci yapılandırma sorunları ClickOnce Dağıtımları içinde | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 17ab417649818e9f56dbd1065929a6240a23d417
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 58a7c92cab0f7bbf410d28cc1bc86dd6ce4f13df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630679"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231536"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce Dağıtımlarında Sunucu ve İstemci Yapılandırma Sorunları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [sunucu ve istemci yapılandırma sorunları ClickOnce Dağıtımları içinde](https://docs.microsoft.com/visualstudio/deployment/server-and-client-configuration-issues-in-clickonce-deployments).  
-  
 Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız Windows tanımadığı bir dosya içeriyorsa, bir Microsoft Word dosyası gibi dosya aktarmak IIS reddeder ve dağıtımınızın başarılı olmaz.  
   
  Ayrıca, bazı Web sunucuları ve uygulama yazılımı gibi Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], dosyaların listesini içeren ve dosya karşıdan yükleyemiyor türleri. Örneğin, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] tüm Web.config dosyalarını indirilmesini engeller. Bu dosyalar, kullanıcı adları ve parolalar gibi hassas bilgiler içerebilir.  

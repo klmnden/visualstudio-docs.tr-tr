@@ -1,7 +1,7 @@
 ---
 title: Şablon parametreleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8eb91c5137ff405562115cbe318d6a723d369d95
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef4e1a6e3c56df744ce5375a1cb3a1dbd53a6fad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697464"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238907"
 ---
 # <a name="template-parameters"></a>Şablon Parametreleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [şablon parametreleri](https://docs.microsoft.com/visualstudio/ide/template-parameters).  
-  
 Şablon örneği başlatıldığında şablonlarınızın parametreleri kullanarak, sınıf adları ve ad alanları gibi bir şablon anahtar bölümlerini değerlerini değiştirebilirsiniz. Bu parametreler, bir kullanıcı tıkladığında, arka planda çalışan Şablon Sihirbazı tarafından değiştirilir **Tamam** içinde **yeni proje** veya **Yeni Öğe Ekle** iletişim kutuları.  
   
 ## <a name="declaring-and-enabling-template-parameters"></a>Bildirme ve şablon parametreleri etkinleştirme  
@@ -131,7 +129,7 @@ namespace $safeprojectname$
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Şablonları özelleştirme](../ide/customizing-project-and-item-templates.md)
+ [Şablonları Özelleştirme](../ide/customizing-project-and-item-templates.md)
 
 
 

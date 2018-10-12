@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 2015 Hoş Geldiniz | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: crdun
-ms.openlocfilehash: 71ef72b3374967cb977ad8891b66fd0b91732707
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1f950ffa99fa6c68d51349e2b059b3e621ed069d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693321"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231243"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015’e Hoş Geldiniz
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -105,15 +105,15 @@ Visual Studio'ya Hoş Geldiniz! Cihazlar için harika bir uygulama veya Masaüst
   
 ## <a name="in-this-section"></a>Bu bölümde  
   
--   [Visual Studio 2015'teki yenilikler](./what-s-new-in-visual-studio-2015.md)  
+-   [Visual Studio 2015’teki Yenilikler](./what-s-new-in-visual-studio-2015.md)  
   
--   [Visual Studio 2015'i yükleyin](./install/install-visual-studio-2015.md)  
+-   [Visual Studio 2015'i Yükleme](./install/install-visual-studio-2015.md)  
   
 -   [Visual Studio Projelerini Taşıma, Geçirme ve Yükseltme](./porting/porting-migrating-and-upgrading-visual-studio-projects.md)  
   
 -   [Visual Studio IDE](./ide/visual-studio-ide.md)  
   
--   [Visual Studio genişletilebilirliği](./extensibility/extensibility-in-visual-studio.md)  
+-   [Visual Studio'da Genişletilebilirlik](./extensibility/extensibility-in-visual-studio.md)  
   
 -   [Visual Studio'da verilere erişime](./data-tools/accessing-data-in-visual-studio.md)  
   

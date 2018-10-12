@@ -1,7 +1,7 @@
 ---
 title: Birlikte çalışabilirlik uyarıları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cb380cbac0e24c4c63cd5c2d6817703e89324d6c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 87cf15e3b6bbb8cda457e7c103b28f93e0672eca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688174"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235046"
 ---
 # <a name="interoperability-warnings"></a>Birlikte Çalışabilirlik Uyarıları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [birlikte çalışabilirlik uyarıları](https://docs.microsoft.com/visualstudio/code-quality/interoperability-warnings).  
-  
 Birlikte çalışabilirlik uyarıları COM istemcileri ile etkileşimi destekler.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
@@ -52,8 +50,8 @@ Birlikte çalışabilirlik uyarıları COM istemcileri ile etkileşimi destekler
 |[CA1411: COM kayıt yöntemleri görünebilir olmamalıdır](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)|System.Runtime.InteropServices.comregisterfunctionattribute özniteliğini veya System.Runtime.InteropServices.comunregisterfunctionattribute özniteliğini kullanarak işaretlenmiş bir yöntemi dışarıdan görülebilir.|  
 |[CA1412: ComSource Arabirimlerini IDispatch olarak işaretleyin](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)|System.Runtime.InteropServices.ComSourceInterfacesAttribute özniteliğini kullanarak işaretlenen bir tür ve belirtilen arabirimlerden birini ayarlamak için ComInterfaceType.InterfaceIsIDispatch özniteliğine System.Runtime.InteropServices.InterfaceTypeAttribute özniteliğini kullanarak ayarlanır.|  
 |[CA1413: COM görünebilir değer türleri içinde genel olmayan alanlardan kaçının](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)|COM-görünür değer türlerinin ortak olmayan örnek alanları COM istemcilerine görünürdür. Maruz kalmaması gereken, istenmeyen bir tasarım ya da güvenlik etkileri olan bilgi alanındaki içeriği gözden geçirin.|  
-|[CA1414: boolean P/Invoke bağımsız değişkenlerini MarshalAs ile işaretleyin](../code-quality/ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md)|Boolean veri türünün, yönetimsiz kod içinde birden fazla sunumu vardır.|  
-|[CA1415: P/Invoke'lar doğru bildirin](../code-quality/ca1415-declare-p-invokes-correctly.md)|Bu kural, hedef yöntem bildirimleri için platform çağırma arar [!INCLUDE[TLA2#tla_win32](../includes/tla2sharptla-win32-md.md)] Çakışan işaretçi sahip işlevlerin parametre yapısı ve yönetilen bir işaretçi değil bir <xref:System.Threading.NativeOverlapped?displayProperty=fullName> yapısı.|
+|[CA1414: Boolean P/Invoke bağımsız değişkenlerini MarshalAs ile işaretleyin](../code-quality/ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md)|Boolean veri türünün, yönetimsiz kod içinde birden fazla sunumu vardır.|  
+|[CA1415: P/Invoke'ları doğru bildirin](../code-quality/ca1415-declare-p-invokes-correctly.md)|Bu kural, hedef yöntem bildirimleri için platform çağırma arar [!INCLUDE[TLA2#tla_win32](../includes/tla2sharptla-win32-md.md)] Çakışan işaretçi sahip işlevlerin parametre yapısı ve yönetilen bir işaretçi değil bir <xref:System.Threading.NativeOverlapped?displayProperty=fullName> yapısı.|
 
 
 

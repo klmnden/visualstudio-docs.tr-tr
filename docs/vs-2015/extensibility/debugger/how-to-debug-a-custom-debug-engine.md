@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: bir özel hata ayıklama altyapısında hata ayıklama | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6b7ef3385d48e07e4c5fcd9619515b650ca193d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e1bd7e2c3f05fd54829d042ec15fd59b783d238
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691418"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247240"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Nasıl Yapılır: Özel Hata Ayıklama Altyapısında Hata Ayıklama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: bir özel hata ayıklama altyapısında hata ayıklama](https://docs.microsoft.com/visualstudio/extensibility/debugger/how-to-debug-a-custom-debug-engine).  
-  
 Bir proje türü, gelen hata ayıklama altyapısı (DE) başlatır. <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> yöntemi. Yani DE örneğini denetiminde başlatılır [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proje türü denetleme. Ancak, söz konusu örneğine [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] DE hata ayıklaması yapılamıyor. Aşağıda, özel DE hata ayıklama için izin vermek için adımlar yer almaktadır.  
   
 > [!NOTE]

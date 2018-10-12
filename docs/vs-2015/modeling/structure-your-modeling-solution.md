@@ -1,7 +1,7 @@
 ---
 title: Modelleme çözümünüzün yapısını | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 16
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 96f545c980cd49c6f70c45f3ee7fc80be3a25421
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4409891b7d6cbc4be5f46b598cd5910f3e0e9284
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687657"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243041"
 ---
 # <a name="structure-your-modeling-solution"></a>Modelleme çözümünüzün yapısını oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [modelleme çözümünüzün yapısını](https://docs.microsoft.com/visualstudio/modeling/structure-your-modeling-solution).  
-  
 Modelleri geliştirme projesindeki etkili bir şekilde kullanmak için ekip üyelerinin aynı anda farklı bölümlerini proje modelleri çalışabilmek için olmalıdır. Bu konuda öneren bir düzen uygulama katmanları genel bir karşılık gelen farklı parçalara bölmek için katman diyagramı.  
   
  Bir projeye başlayın ya da hızlı bir şekilde alt proje için seçtiğiniz Proje yapısı aşağıdaki proje şablonuna sahip kullanışlıdır. Bu konu, oluşturmak ve bu tür bir şablon kullanmak açıklar.  

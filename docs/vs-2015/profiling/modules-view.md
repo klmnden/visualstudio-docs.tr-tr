@@ -1,7 +1,7 @@
 ---
 title: Modüller görünümü | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: baf208e30a96efa73e0524fc10a761ac01c316e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c84b71772c42bf11b90005a6951aadbc4b222e53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630195"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239219"
 ---
 # <a name="modules-view"></a>Modüller Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [modüller görünümü](https://docs.microsoft.com/visualstudio/profiling/modules-view).  
-  
 Modüller görünümü, profil oluşturma verilerinin modülleri listeler. Her bir hiyerarşik ağaç kök düğümü modülüdür. Profili oluşturulan işlevler modülü, modül düğümünün altında listelenir. Profil oluşturma verilerinin örnekleme metodu kullanılarak tarafından toplanan, satır bilgileri işlevi düğümünün altında listelenir ve yönerge işaretçisi veri satırı düğümünün altında listelenir.  
   
  Genişlet veya daralt görüntülemek veya modül performans verileri görünümü kapatmak için modül adı.  

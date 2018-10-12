@@ -1,7 +1,7 @@
 ---
 title: C++ için Microsoft birim testi çerçevesi ile C / C++ için birim testleri yazma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d4e5da38500e5fd35fb14e1854fe1fa378a8553c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c3b24aea533083e7d9158b54e2e68b5095f06df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692931"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250542"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>C++ için Microsoft Birim Testi Çerçevesi ile C/C++ için Birim Testleri Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yazma birim testleri için Microsoft birim testi çerçevesi ile C/C++ için C++](https://docs.microsoft.com/visualstudio/test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp).  
-  
 Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri oluşturabilirsiniz. Yönetilmeyen kod, bazen yerel kod da adlandırılır.  
   
  Aşağıdaki yordam, başlamanıza yardımcı önemli bilgiler içerir. Sonraki bölümlerde ayrıntılı adımları açıklayan bir kılavuz sağlar.  

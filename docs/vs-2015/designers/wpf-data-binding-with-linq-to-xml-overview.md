@@ -1,7 +1,7 @@
 ---
 title: LINQ to XML genel bakış ile WPF verilerini bağlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 584645062920143787c599c317a9ca93dd7da2b6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 985dfb5193082f22431db3384cc6a652f36cfb2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674764"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247279"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>LINQ to XML genel bakış ile WPF verilerini bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [WPF veri bağlama ile LINQ to XML genel bakış](https://docs.microsoft.com/visualstudio/designers/wpf-data-binding-with-linq-to-xml-overview).  
-  
 Bu konu, dinamik veri bağlama özellikleri tanıtır <xref:System.Xml.Linq> ad alanı. Bu özellikler, kullanıcı arabirimi (UI) öğeleri Windows Presentation Foundation (WPF) için bir veri kaynağı olarak kullanılabilir.  
   
 ## <a name="xaml-and-linq-to-xml"></a>XAML ve LINQ to XML  

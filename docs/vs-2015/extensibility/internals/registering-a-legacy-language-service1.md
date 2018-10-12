@@ -1,7 +1,7 @@
 ---
 title: Bir eski dil hizmeti kaydetme1 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d33b08af-09e0-4c79-87b2-5536b27fbacf
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0aebd8142d5ceed2acb113dbfaec5904271d4468
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4177507e8633fa5596da07f5df349df28a66f2a0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692702"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230607"
 ---
 # <a name="registering-a-legacy-language-service"></a>Eski dil hizmeti kaydediliyor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bir eski dil hizmeti Kaydetme1](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-a-legacy-language-service1).  
-  
 Yönetilen paket çerçevesini (MPF), dil hizmeti tarafından bir VSPackage proffered (bkz [VSPackages](../../extensibility/internals/vspackages.md)) ve kayıtlı [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kayıt defteri anahtarları ve girişleri ekleyerek. Bu kayıt işlemi kısmen yükleme sırasında ve kısmen çalışma zamanı içinde yapılır.  
   
 ## <a name="register-the-language-service-by-using-attributes"></a>Dil hizmeti öznitelikleri kullanarak kaydetme  

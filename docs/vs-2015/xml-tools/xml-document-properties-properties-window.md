@@ -1,7 +1,7 @@
 ---
 title: XML belge özellikleri, Özellikler penceresinde | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7145c81a87235d37a0e4825509e7f8fb94ab0f7c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c93defe6f5c56966195f1514b5aa76464f6f3013
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691501"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236567"
 ---
 # <a name="xml-document-properties-properties-window"></a>XML Belge Özellikleri, Özellik Penceresi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [XML belge özellikleri, Özellikler penceresinde](https://docs.microsoft.com/visualstudio/xml-tools/xml-document-properties-properties-window).  
-  
   
 **Özellikleri** penceresi XML Düzenleyicisi'nde etkin belgeyi hakkında temel bilgiler sağlar. Kullanılabilir özellikler şu anda etkin olan bir XML belgesi türüne bağlı olarak değişir.  
   

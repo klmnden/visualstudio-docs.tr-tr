@@ -1,7 +1,7 @@
 ---
 title: SccRunScc işlevi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3baaf2fb58720d34dfa3dc2cac7cf3b44d7f1c7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bdeaead9d4534188b7731e9add0bde6d56ad7e7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691508"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242181"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc İşlevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [SccRunScc işlevi](https://docs.microsoft.com/visualstudio/extensibility/sccrunscc-function).  
-  
 Bu işlev, kaynak denetimi Yönetim Aracı'nı başlatır.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -79,5 +77,5 @@ SCCRTN SccRunScc(
  [Kaynak Denetimi Eklentisi API işlevleri](../extensibility/source-control-plug-in-api-functions.md)   
  [Nasıl yapılır: kaynak denetimi eklentisi yükleme](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [Özellik bayrakları](../extensibility/capability-flags.md)   
- [Sccınitialize](../extensibility/sccinitialize-function.md)
+ [SccInitialize](../extensibility/sccinitialize-function.md)
 

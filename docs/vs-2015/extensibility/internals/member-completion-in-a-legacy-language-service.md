@@ -1,7 +1,7 @@
 ---
 title: Eski dil hizmetinde üye tamamlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6c17404b115c7e8b3f8036c52e493f6932411731
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4e375cc8d314163b277cc20685ae19f134236b0a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629180"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240818"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Üye Tamamlama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [eski dil hizmetinde üye tamamlama](https://docs.microsoft.com/visualstudio/extensibility/internals/member-completion-in-a-legacy-language-service).  
-  
 IntelliSense üye tamamlama sınıf, yapı, sabit listesi veya ad alanı gibi belirli bir kapsam olası üyelerinin bir listesini görüntüleyen bir araç ipucu ' dir. Kullanıcı "this" bir nokta türleri, örneğin, C# ' ta sınıfın veya yapının geçerli kapsamda tüm üyelerin listesi kullanıcının seçim yapabileceği bir listede sunulur.  
   
  Yönetilen paket çerçevesini (MPF), araç ipucu ve araç ipucu listesinde yönetmek için destek sağlar; gereken şey işbirliği gelen listesinde görüntülenen veri sağlamak için.  

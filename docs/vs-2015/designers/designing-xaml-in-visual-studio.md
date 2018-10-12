@@ -1,7 +1,7 @@
 ---
 title: Visual Studio'da XAML tasarlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0501fa97b69bda7d032c92ade6e3f150eb106fc1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad02192ba8e66bba6bc728104b3e90f33a0a9f5c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694370"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248202"
 ---
 # <a name="designing-xaml-in-visual-studio"></a>Visual Studio'da XAML tasarlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio'da XAML tasarlama](https://docs.microsoft.com/visualstudio/designers/designing-xaml-in-visual-studio).  
-  
 Visual Studio hem de visual araçları sağlayan için ilgi çekici kullanıcı arabirimleri oluşturma ve zengin medya deneyimlerini XAML tabanlı Windows Masaüstü için Visual Studio'da ve Blend'de Web'de [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx), ve [Windows Store](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx)uygulamalar. Hem de ortak tasarım ve araç pencereleri ve bir XAML Düzenleyicisi sahip, ancak Visual Studio için Blend, animasyon ve davranışlar gibi daha gelişmiş görevler için diğer tasarım araçları sağlar.  
   
 ## <a name="choosing-the-right-tool"></a>Doğru aracı seçme  
