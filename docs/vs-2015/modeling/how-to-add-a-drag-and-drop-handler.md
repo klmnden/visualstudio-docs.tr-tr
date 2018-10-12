@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: sürükle ve bırak işleyicisi ekleme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 503231fbae306c198e7c1e728f7c2b63794289b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e163386c7f00f0646bb711617e402a1873e544e2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692612"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280533"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Nasıl yapılır: Sürükle ve Bırak İşleyicisi Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: sürükle ve bırak işleyicisi ekleme](https://docs.microsoft.com/visualstudio/modeling/how-to-add-a-drag-and-drop-handler).  
-  
 DSL'nizi için sürükle ve bırak olayları için işleyiciler ekleyebilirsiniz, böylece kullanıcılar öğeleri, diyagram üzerine diğer diyagramlara veya diğer bölümlerini sürükleyebilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Olayları gibi çift tıklamaları birbirinden ayırma için de işleyicileri ekleyebilirsiniz. Sürükle ve bırak ve çift işleyicileri olarak birlikte bilinen *hareket işleyicileri*.  
   
  Bu konuda, diğer diyagramlar üzerinde kaynaklanan sürükle ve bırak hareketlerini anlatılmaktadır. Öğesinin tanımlamanın alternatif bir tek diyagramı içinde taşıma ve kopyalama olayları için göz önünde bulundurun `ElementOperations`. Daha fazla bilgi için [kopyalama davranışını özelleştirme](../modeling/customizing-copy-behavior.md). DSL tanımını özelleştirmek mümkün olabilir.  

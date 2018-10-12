@@ -1,7 +1,7 @@
 ---
 title: Idiasymbol::get_platform | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1bc62a75919e354906cc1cc5cb865a337f3d4117
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0406d259ea3a4e1f0e4b7f015f4adcb4fa4a4e69
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684407"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265182"
 ---
 # <a name="idiasymbolgetplatform"></a>IDiaSymbol::get_platform
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Idiasymbol::get_platform](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-platform).  
-  
 Derlenecek en iyi duruma derlenen platform türünü alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -52,7 +50,7 @@ HRESULT get_platform (
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [CV_CPU_TYPE_e numaralandırması](../../debugger/debug-interface-access/cv-cpu-type-e.md)
+ [CV_CPU_TYPE_e Numaralandırması](../../debugger/debug-interface-access/cv-cpu-type-e.md)
 
 
 

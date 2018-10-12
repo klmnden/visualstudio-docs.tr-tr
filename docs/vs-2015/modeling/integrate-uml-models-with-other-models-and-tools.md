@@ -1,7 +1,7 @@
 ---
 title: UML modellerini diğer modeller ve araçlarla tümleştirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f2ebc4bc6a0ee1610079018ded21760e48336824
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b85ad2e150880042125782349120d271ff2b7d7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694983"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290296"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>UML modellerini diğer modeller ve araçlarla tümleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [tümleştirme UML modellerini diğer modeller ve araçlarla birlikte](https://docs.microsoft.com/visualstudio/modeling/integrate-uml-models-with-other-models-and-tools).  
-  
 UML modellerini diğer modeller ve etki alanına özgü diller ile tümleştirilebilir.  
   
  Çeşitli işlevleri gerçekleştirmek için uzantı kodu yazarak aşağıdaki yollarla modelleri tümleştirebilirsiniz:  
@@ -82,7 +80,7 @@ UML modellerini diğer modeller ve etki alanına özgü diller ile tümleştiril
   
  Bu kod örneği aşağıdaki teknikleri gösterir:  
   
--   [Model öğelerine başvuru dizelerini iliştirme](../modeling/attach-reference-strings-to-uml-model-elements.md)  
+-   [Model öğelerine başvuru dizeleri ekleme](../modeling/attach-reference-strings-to-uml-model-elements.md)  
   
      Örnek kod dosya yolları ve dizelerindeki öğesiyle ilişkilendirilmiş başvuru dizeleri depolar.  
   
@@ -94,9 +92,9 @@ UML modellerini diğer modeller ve etki alanına özgü diller ile tümleştiril
   
      Örnek bir diyagram üzerinde görünen yeni şekiller yanıt veren bir kural tanımlamak nasıl gösterir.  
   
--   [Modelleme Diyagramında Menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md)  
+-   [Modelleme diyagramında menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md)  
   
--   [Modelleme Diyagramında hareket işleyicisi tanımlama](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)  
+-   [Modelleme diyagramında hareket işleyicisi tanımlama](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)  
   
      Örnek üstesinden nasıl gelineceğini gösterir öğeleri, Windows Explorer (veya dosya Gezgini), Çözüm Gezgini ve diğer UML öğeleri sürüklediğiniz.  
   

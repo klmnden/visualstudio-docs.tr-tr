@@ -1,7 +1,7 @@
 ---
 title: Kaldırma ve yeniden yüklemeyi konuları iç içe projeleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 06c3427e-c874-45b1-b9af-f68610ed016c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d932096d209d8e39b5d218ceb868453fa9a8a6f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1712c05ab1bd6dbf32537d4306517ddf189b4084
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687591"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277569"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>İç İçe Projeleri Kaldırma ve Yeniden Yükleme Konusunda Dikkat Edilmesi Gerekenler
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Unloading ve iç içe projeler yeniden yükleniyor dikkate alınacak noktalar](https://docs.microsoft.com/visualstudio/extensibility/internals/considerations-for-unloading-and-reloading-nested-projects).  
-  
 İç içe proje türleri uyguladığınızda, kaldırma ve projeleri yeniden ek adımları gerçekleştirmeniz gerekir. Doğru dinleyicileri çözüm olayları bildirmek için doğru şekilde yükseltmeniz gerekir `OnBeforeUnloadProject` ve `OnAfterLoadProject` olayları.  
   
  Bir neden bu olaylar bu şekilde yükseltmeniz gerekir: kaynak kodu denetimi öğeleri sunucudan silin ve varsa bunları tekrar yeni bir şey ekleyin (SCC) istemediğiniz bir `Get` SCC işlemi. Bu durumda, yeni bir dosya SCC dışında yüklenir ve kaldırma ve bunlar farklı olması durumunda tüm dosyaları yeniden yüklemek zorunda. SCC çağrıları `ReloadItem`. Projeyi silin ve yeniden uygulayarak yeniden oluşturmak için uygulamanız bu çağrının olan `IVsFireSolutionEvents` çağrılacak `OnBeforeUnloadProject` ve `OnAfterLoadProject`. Bu uygulama gerçekleştirdiğinizde, SCC proje geçici olarak silindi ve tekrar eklenmelidir, bilgisi verilir. Bu nedenle, SCC proje gerçekten sunucudan silinir ve yeniden eklenmesi gibi proje üzerinde çalışmaz.  

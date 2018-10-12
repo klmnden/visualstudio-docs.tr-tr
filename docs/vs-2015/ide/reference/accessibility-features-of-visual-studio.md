@@ -1,7 +1,7 @@
 ---
 title: Visual Studio'nun erişilebilirlik özellikleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c43e4044b1b5a5414865e2e4458d716a3aec579e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 91daab49dae0489fa26b8c941b3983c191c59f0b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630398"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276997"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio'nun Erişilebilirlik Özellikleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio'nun erişilebilirlik özellikleri](https://docs.microsoft.com/visualstudio/ide/reference/accessibility-features-of-visual-studio).  
-  
   
 Erişilebilirlik özelliklerine ve yardımcı programları Windows ek olarak aşağıdaki özellikler Visual Studio 2013'ün daha erişilebilir engelli kişiler için hale getirir:  
   
@@ -55,7 +53,7 @@ Erişilebilirlik özelliklerine ve yardımcı programları Windows ek olarak aş
   
 -   [Erişilebilirlik İpuçları ve Püf Noktaları](../../ide/reference/accessibility-tips-and-tricks.md)  
   
--   [Nasıl yapılır: yazı tiplerini ve renkleri değiştirme](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)  
+-   [Nasıl Yapılır: Yazı Tiplerini ve Renkleri Değiştirme](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Microsoft'tan Erişilebilirlik Ürünleri ve Hizmetleri](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

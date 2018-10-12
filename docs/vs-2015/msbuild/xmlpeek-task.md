@@ -1,7 +1,7 @@
 ---
 title: XmlPeek görevi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1f85283ec6e3d9f172bc081363403863a94be89c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c6ad86c061d089b7cedaf040082fe9f51ae26120
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688387"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289776"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [XmlPeek görevi](https://docs.microsoft.com/visualstudio/msbuild/xmlpeek-task).  
-  
   
 Bir XML dosyasından XPath sorgusu tarafından belirtilen değerleri döndürür.  
   
@@ -53,7 +51,7 @@ Bir XML dosyasından XPath sorgusu tarafından belirtilen değerleri döndürür
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görevleri](../msbuild/msbuild-tasks.md)   
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+ [Görev Başvurusu](../msbuild/msbuild-task-reference.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: yerel bir tek başına bileşeni izleme ve komut satırından Profiler ile zamanlama verileri toplama | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 566bd0c6455ef00a7629be34890b5613c381d4e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 80a58cd6427f6f59629abf591141b2af036bb345
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696619"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278180"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Nasıl yapılır: Yerel bir Bağımsız Bileşeni İzleme ve Komut Satırından Profil Oluşturucu ile Zamanlama Verileri Toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: yerel bir tek başına bileşeni izleme ve komut satırından Profiler zamanlama verileri toplama](https://docs.microsoft.com/visualstudio/profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line).  
-  
 Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profil Araçları komut satırı araçlarının C++ .exe veya .dll dosyası gibi yerel bir bileşeni izleme ve ayrıntılı zamanlama verileri toplamak için.  
   
 > [!NOTE]

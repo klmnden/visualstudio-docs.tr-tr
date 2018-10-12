@@ -1,7 +1,7 @@
 ---
 title: Bir veri kümesine WPF denetimleri bağlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e04e8ec9ae181a7cb894b22efecab0ad6ba68b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b56371ed66287f4b8f8005b6e793f6311427100
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697483"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289568"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Bir veri kümesine WPF denetimleri bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bağlama WPF denetimlerini bir veri kümesine](https://docs.microsoft.com/visualstudio/data-tools/bind-wpf-controls-to-a-dataset).  
-  
   
 Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluşturacaksınız. Denetimler bir veri kümesinde kapsüllenmiş ürün kayıtları bağlıdır. Ayrıca, ürünlere göz atabilir ve ürün kayıtları için değişiklikleri kaydetmek için düğmeler ekleyeceksiniz.  
   

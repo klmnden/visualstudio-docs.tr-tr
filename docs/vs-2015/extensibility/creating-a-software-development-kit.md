@@ -1,7 +1,7 @@
 ---
 title: Bir yazılım geliştirme seti oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a1fb90707a14ff010c74cfee1f7e0dde854aa6f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 589e09f2eb6dae64a9f199b64a93238161d4731d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694522"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268358"
 ---
 # <a name="creating-a-software-development-kit"></a>Yazılık Geliştirme Seti Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yazılım geliştirme seti oluşturma](https://docs.microsoft.com/visualstudio/extensibility/creating-a-software-development-kit).  
-  
 Bir yazılım geliştirme seti (SDK), Visual Studio'da tek bir öğe olarak başvurabilirsiniz API koleksiyonudur. **Başvuru Yöneticisi** iletişim kutusu, projeye ilgili tüm SDK'ları listeler. Bir SDK için bir proje eklediğinizde, API'ler, Visual Studio'da kullanılabilir.  
   
  SDK'ları iki tür vardır:  

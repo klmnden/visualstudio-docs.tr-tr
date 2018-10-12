@@ -1,7 +1,7 @@
 ---
 title: Etki alanına özgü dil araçlarına genel bakış | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 694ebbc73b531f4fab1c8b2f9621e14f4145bd70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0c8730d2a73b5e6dd2c48138c1633e24234db29
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632543"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273266"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Etki Alanına Özgü Dil Araçlarına Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [etki alanına özgü dil araçlarına genel bakış](https://docs.microsoft.com/visualstudio/modeling/overview-of-domain-specific-language-tools).  
-  
 İçinde barındırılan etki alanına özgü dil Araçları (DSL araçları) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], let bir etki alanına özgü dil tasarlayın ve kullanıcıların diline dayalı modeller oluşturmak için gereken her şeyi oluşturur.  
   
  Aşağıdaki araçlar, DSL araçları dahil edilmiştir:  

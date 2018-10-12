@@ -1,7 +1,7 @@
 ---
 title: Visual Studio için Blend'i kullanarak kullanıcı Arabirimi oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8609163dadcfc6425874c86c4aaf49f9452401ab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 206664ef95d7eda5d906bf62599819a92fc6506f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687390"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289906"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Visual Studio için Blend’i kullanarak kullanıcı arabirimi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio için Blend'i kullanarak kullanıcı Arabirimi oluşturma](https://docs.microsoft.com/visualstudio/designers/creating-a-ui-by-using-blend-for-visual-studio).  
-  
 Visual Studio için Blend, XAML tabanlı Windows Masaüstü, web tasarlamanıza yardımcı olan [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx), ve [Windows Store](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx) uygulamalar. Visual Studio aynı temel XAML tasarım deneyimini sunar ve animasyon ve davranışlarla gibi gelişmiş görevler için görsel tasarımcılar ekler.  
   
  Visual Studio için Blend, Visual Studio'nun bir parçası dahil olduğundan, bunu indirmeniz gerekmez. Ancak sisteminizde yüklemek için Visual Studio yükleyicisi de seçmeniz gerekir.  
@@ -133,7 +131,7 @@ Visual Studio için Blend, XAML tabanlı Windows Masaüstü, web tasarlamanıza 
  [Denetimler ekleme ve bunların davranışlarını değiştirme](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)   
  [Nesnelere animasyon ekleme](../designers/animate-objects-in-xaml-designer.md)   
  [Şekiller ve yollar çizin](../designers/draw-shapes-and-paths.md)   
- [Visual Studio ve Visual Studio için Blend, XAML tasarlama](../designers/designing-xaml-in-visual-studio.md)
+ [Visual Studio ve Visual Studio İçin Blend Uygulamalarında XAML Tasarlama](../designers/designing-xaml-in-visual-studio.md)
 
 
 

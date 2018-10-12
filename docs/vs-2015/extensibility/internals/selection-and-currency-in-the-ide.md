@@ -1,7 +1,7 @@
 ---
 title: Seçim ve para birimi IDE'de | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 87796930b8b1f76e7601bfd2dbffdddcf8d32da6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fe6d5cb678cade67ef9e46e9b3c113c988bf879
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684454"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270941"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE’de Seçim ve Para Birimi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [seçim ve para birimi IDE'de](https://docs.microsoft.com/visualstudio/extensibility/internals/selection-and-currency-in-the-ide).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Tümleşik geliştirme ortamı (IDE) tutar kullanıcıların hakkında bilgi seçili nesnelerin seçimini kullanarak *bağlam*. Seçim bağlamı ile VSPackage iki yolla izleme para biriminde yer alabilir:  
   
 -   IDE VSPackages para birimi bilgilerine göre yayılıyor.  

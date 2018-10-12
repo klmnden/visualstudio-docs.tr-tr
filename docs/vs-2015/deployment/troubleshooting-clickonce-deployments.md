@@ -1,7 +1,7 @@
 ---
 title: ClickOnce dağıtım sorunlarını giderme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7ece1315bf95e5b24c0f689796752a5cde100654
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 20a162a8280854954a58fb0447957a3894325cea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693137"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284758"
 ---
 # <a name="troubleshooting-clickonce-deployments"></a>ClickOnce Dağıtım Sorunlarını Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ClickOnce dağıtım sorunlarını giderme](https://docs.microsoft.com/visualstudio/deployment/troubleshooting-clickonce-deployments).  
-  
 Bu konu ile en yaygın sorunları tanılamak ve gidermek yardımcı olur [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtımları.  
   
  Çoğu durumda bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bir kullanıcının bilgisayarına indirir ve herhangi bir sorun çalıştırın. Web sunucusu veya uygulama yapılandırma sorunlarını öngörülmeyen sorunlara neden olduğu bazı durumlar vardır, ancak.  

@@ -1,7 +1,7 @@
 ---
 title: CONTEXT_COMPARE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 701ed61c-a320-4c20-a335-0b840024abc0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c9cc410bf4e518234ddc53359033ca340908d8ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 869cc102f3c78c6ad074648d9715af124cf964e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693710"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284771"
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [CONTEXT_COMPARE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/context-compare).  
-  
 İki bellek bağlamları karşılaştırma ölçütü belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -104,5 +102,5 @@ public enum enum_CONTEXT_COMPARE {
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sabit listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Karşılaştırma](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
+ [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
 

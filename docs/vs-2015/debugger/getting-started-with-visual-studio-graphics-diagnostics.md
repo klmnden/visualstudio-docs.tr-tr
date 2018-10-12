@@ -1,7 +1,7 @@
 ---
 title: Visual Studio grafik Tanılama ile çalışmaya başlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 08cff13bedd8a53ec5172acd6866a912a38b620c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d7f16422b8282daa1f94011adf1e4a7df5cf387
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691762"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277816"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio Grafik Tanılama’ya Başlarken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio grafik Tanılama ile çalışmaya başlama](https://docs.microsoft.com/visualstudio/debugger/graphics/getting-started-with-visual-studio-graphics-diagnostics).  
-  
 Bu bölümde, grafik Tanılama'yı ilk kez kullanmak hazırlarsınız ve ardından bir Direct3D uygulamasından kareleri yakalayın ve grafik Çözümleyicisi'nde inceleyebilirsiniz.  
   
 ## <a name="requirements"></a>Gereksinimler  

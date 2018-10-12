@@ -1,7 +1,7 @@
 ---
 title: Kayıtlı IntelliTrace verilerini kullanma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 112
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95672eb37c07042cafa3c57ba267f3c7f0a03580
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c241a4ac216fa42d6a67e7e2165e2ceac195e96
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686487"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279103"
 ---
 # <a name="using-saved-intellitrace-data"></a>Kayıtlı IntelliTrace verilerini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [kayıtlı IntelliTrace verilerini kullanma](https://docs.microsoft.com/visualstudio/debugger/using-saved-intellitrace-data).  
-  
 Bir IntelliTrace günlük (.iTrace) dosyasından hata ayıklamaya başladığınızda uygulamanızda yürütmesinde belirli noktaları gidin. Bu dosya, performans olayları, özel durumlar, iş parçacıkları, test adımları, modüller ve Intellitrace'in kaydettiği uygulamanız çalışırken, diğer sistem bilgileri içerebilir.  
   
  Bilgisayarınızda yüklü olduğundan emin olun:  
@@ -45,7 +43,7 @@ Bir IntelliTrace günlük (.iTrace) dosyasından hata ayıklamaya başladığın
   
     |**Kaynak**|**Bkz:**|  
     |----------------|-------------|  
-    |Visual Studio Enterprise (ancak değil Professional veya Community sürümlerini) bir IntelliTrace oturumu|[IntelliTrace özellikleri](../debugger/intellitrace-features.md)|  
+    |Visual Studio Enterprise (ancak değil Professional veya Community sürümlerini) bir IntelliTrace oturumu|[IntelliTrace Özellikleri](../debugger/intellitrace-features.md)|  
     |Microsoft Test Yöneticisi'nde bir sınama oturumu. Bu bir .iTrace dosyası bir Team Foundation Server iş nesnesine ekler.|[El ile testlerde daha fazla tanılama verisi toplama](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
     |Microsoft Monitoring Agent, ya da tek başına veya System Center 2012 R2 Operations Manager ile ASP.NET web uygulamaları ve SharePoint uygulamaları geliştirme sırasında çalışan|-   [Dağıtımdan sonra sorunları tanılama](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager için yenilikler nelerdir?](http://technet.microsoft.com/library/dn249700.aspx)|  
   
@@ -270,7 +268,7 @@ Bir IntelliTrace günlük (.iTrace) dosyasından hata ayıklamaya başladığın
 ### <a name="where-can-i-get-more-information"></a>Daha fazla bilgiyi nereden bulabilirim?  
  [IntelliTrace tek başına toplayıcısını kullanma](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
- [IntelliTrace özellikleri](../debugger/intellitrace-features.md)  
+ [IntelliTrace Özellikleri](../debugger/intellitrace-features.md)  
   
  [El ile testlerde daha fazla tanılama verisi toplama](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)  
   

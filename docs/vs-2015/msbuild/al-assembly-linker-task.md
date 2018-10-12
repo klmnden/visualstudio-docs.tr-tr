@@ -1,7 +1,7 @@
 ---
 title: AL (derleme bağlayıcı) görevi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f30928d989ebceef0c3d786396d78f0a126dc96
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cf0f5995b9f0e2fca0d909b9d0da0dbe6b386978
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686218"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280481"
 ---
 # <a name="al-assembly-linker-task"></a>AL (Derleme Bağlayıcı) Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [AL (derleme bağlayıcı) görevi](https://docs.microsoft.com/visualstudio/msbuild/al-assembly-linker-task).  
-  
   
 AL görevi AL.exe, ile dağıtılmış bir araç sarmalar [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Bu derleme bağlayıcı aracı, bir modül olan bir veya daha fazla veya kaynak dosyalar bildiriminden bir derleme oluşturmak için kullanılır. Bu görevi doğrudan kullanmak için gerekli değildir, dolayısıyla derleyicileri ve geliştirme ortamlarını zaten bu özellikleri sağlayabilir. Assembly Linker, karma dil geliştirme üretilen gibi birden çok bileşen dosyalarından tek bir derleme oluşturmak gereken geliştiriciler için yararlıdır. Bu görev, bir tek derleme dosyasına modülleri birleştirmek değil; tek tek modüllerinin hala dağıtılmış ve doğru bir şekilde yüklemek oluşturulan derleme için kullanılabilir olmalıdır. AL.exe hakkında daha fazla bilgi için bkz. [Al.exe (Assembly Linker)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).  
   
@@ -104,7 +102,7 @@ AL görevi AL.exe, ile dağıtılmış bir araç sarmalar [!INCLUDE[winsdklong](
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
- [Görevleri](../msbuild/msbuild-tasks.md)
+ [Görevler](../msbuild/msbuild-tasks.md)
 
 
 

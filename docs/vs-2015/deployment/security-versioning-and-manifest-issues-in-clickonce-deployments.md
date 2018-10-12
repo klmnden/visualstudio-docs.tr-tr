@@ -1,7 +1,7 @@
 ---
 title: Güvenlik, sürüm ve bildirim sorunları ClickOnce Dağıtımları içinde | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 1274a636dd49a2ade1f21941d24817a0d54d49c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 77685b2eb6397d1edf9a342c25838fcefac2e619
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693303"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289230"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce Dağıtımlarında Güvenlik, Sürüm ve Bildirim Sorunları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [güvenlik, sürüm ve bildirim sorunları ClickOnce Dağıtımları içinde](https://docs.microsoft.com/visualstudio/deployment/security-versioning-and-manifest-issues-in-clickonce-deployments).  
-  
 İle ilgili sorunları birçok [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] güvenlik, uygulama sürümü ve bildirim sözdizimi ve semantiği neden olabilecek bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtımının.  
   
 ## <a name="clickonce-and-windows-vista-user-account-control"></a>ClickOnce ve Windows Vista kullanıcı hesabı denetimi  

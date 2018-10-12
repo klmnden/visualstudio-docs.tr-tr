@@ -1,7 +1,7 @@
 ---
 title: Yapıları ve sınıfları yorumlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 11
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24ed559321bb63d5f9871193f312356466756429
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f3d20769215058cca6e30955ae37ad2a78b6bc7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688287"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287462"
 ---
 # <a name="annotating-structs-and-classes"></a>Yapıları ve Sınıfları Yorumlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yorumlama yapıları ve sınıfları](https://docs.microsoft.com/visualstudio/code-quality/annotating-structs-and-classes).  
-  
 Yapı ve sınıf üyeleri okuduğunuzda gibi davranan ek açıklamalar kullanarak açıklama ekleyebilirsiniz; herhangi bir işlev çağrısı veya bir parametre veya bir sonuç değeri kapsayan yapısı gerektirir. işlev girişi/çıkışı en doğru olduğu varsayılmıştır.  
   
 ## <a name="struct-and-class-annotations"></a>Yapı ve sınıf ek açıklamaları  
@@ -91,7 +89,7 @@ Yapı ve sınıf üyeleri okuduğunuzda gibi davranan ek açıklamalar kullanara
  [Kilitlenme davranışını yorumlama](../code-quality/annotating-locking-behavior.md)   
  [Açıklamanın ne zaman ve nereye uygulanacağını belirtme](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [İç işlevleri](../code-quality/intrinsic-functions.md)   
- [En iyi yöntemler ve örnekler](../code-quality/best-practices-and-examples-sal.md)
+ [En İyi Yöntemler ve Örnekler](../code-quality/best-practices-and-examples-sal.md)
 
 
 

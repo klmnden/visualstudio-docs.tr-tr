@@ -1,7 +1,7 @@
 ---
 title: 'Hata ayıklama hazırlığı: C#, F # ve Visual Basic proje türleri | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,44 +28,42 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 70bdc94339af45295599adac8fab03fbe30a93a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54dc950c606a78f277252b30a57e5de8c796df15
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687178"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274917"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Hata Ayıklama Hazırlığı: C#, F# ve Visual Basic Proje Türleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [hata ayıklama hazırlığı: C#, F # ve Visual Basic proje türleri](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types).  
-  
 Bu bölümdeki konularda, C#, F #'ta, hata ayıklamak açıklanır ve [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] proje tarafından oluşturulan türleri [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proje şablonları.  
   
  Proje türlerine çıktılarını DLL'leri oluşturma halinde gruplandırılır Not [DLL projelerinde hata ayıklama](../debugger/debugging-dll-projects.md) paylaştıkları genel özellikleri nedeniyle.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Önerilen özellik ayarları](../debugger/managed-debugging-recommended-property-settings.md)  
+ [Önerilen Özellik Ayarları](../debugger/managed-debugging-recommended-property-settings.md)  
  Bu bölümde C#, F # ve Visual Basic projeleri için hata ayıklama ile ilgili önerilen özellik ayarları açıklanmaktadır.  
   
- [Windows Forms uygulamaları](../debugger/debugging-preparation-windows-forms-applications.md)  
+ [Windows Forms Uygulamaları](../debugger/debugging-preparation-windows-forms-applications.md)  
  Bir Windows uygulaması projesi açıklar ve hata ayıklama, varsayılan hata ayıklama yapılandırmasını değiştirme ve dışında uygulama başlatma yönergeleri sağlar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve eklemeyi.  
   
- [Konsol projeleri](../debugger/debugging-preparation-console-projects.md)  
+ [Konsol Projeleri](../debugger/debugging-preparation-console-projects.md)  
  C# hata ayıklama için ek hususlar sağlar veya [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] konsol uygulamaları. Bu komut için çıkış penceresine yazmak ve konsol penceresinde sorun giderme isteminden uygulamanızın başlangıç komut satırı bağımsız değişkenleri belirtme içerir.  
   
  [Windows Hizmetleri](../debugger/debugging-preparation-windows-services.md)  
  Bir Windows hizmeti açıklar ve hata ayıklama, Windows hizmet uygulamaları için bir bağlantı sağlar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)  
+ [Hata Ayıklayıcısı Ayarları ve Hazırlığı](../debugger/debugger-settings-and-preparation.md)  
  Ayarları ve programınızla birlikte hata ayıklamak için gerçekleştirmeniz gereken hazırlığı kapsar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] hata ayıklayıcı.  
   
- [Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)  
+ [Yönetilen Kodda Hata Ayıklama](../debugger/debugging-managed-code.md)  
  Karşılaşılan hata ayıklama ve yönetilen kodda yazılmış uygulamalar için tekniklerini ele alınmaktadır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)
+ [Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)
 
 
 

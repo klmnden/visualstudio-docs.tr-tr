@@ -1,7 +1,7 @@
 ---
 title: Kod Analizi uyarıları Checkıd tarafından yönetilen kod için | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -264,18 +264,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2401f35f950b676dd51ba24db640936e550f4d22
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d8518771d93b3bb3342aa5eedb23c03266a11052
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694510"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280273"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>CheckId Tarafından Yönetilen Kod için Kod Çözümleme Uyarıları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Checkıd tarafından yönetilen kod için kod çözümleme uyarıları](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-warnings-for-managed-code-by-checkid).  
-  
 Aşağıdaki tablo uyarının CheckId tanımlayıcısı tarafından yönetilen kodu için Kod Çözümleyicisi uyarılarını listeler.  
   
 ## <a name="warnings"></a>Uyarılar  
@@ -337,7 +335,7 @@ Aşağıdaki tablo uyarının CheckId tanımlayıcısı tarafından yönetilen k
 |CA1057|[CA1057: Dize URI aşırı yüklemeleri System.Uri aşırı yüklemelerini çağırır](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)|Bir tür sadece System.Uri parametresi ile dize parametresinin değiştirilmesiyle yöntem aşırı yüklemesini bildirir. Aşırı yüklemeler URI parametresiyle aşırı yüklenmiş olan dize parametresini alır.|  
 |CA1058|[CA1058: Türler belli temel türleri genişletmemelidir](../code-quality/ca1058-types-should-not-extend-certain-base-types.md)|Dışarıdan görünen tür belirli temel türleri genişletir. Diğer seçenekleri kullanın.|  
 |CA1059|[CA1059: Üyeler belli somut türleri göstermemelidir](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)|Somut tür tam bir uygulamaya sahiptir ve bu nedenle oluşturulabilecek bir türdür. Üye yaygın kullanımını etkinleştirmek için önerilen arabirimi kullanarak somut türünü değiştirin.|  
-|CA1060|[CA1060: Taşıma P/Invokes öğesini NativeMethods sınıfına](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|Platform Çağırma yöntemlerini System.Runtime.InteropServices.DllImportAttribute özniteliği veya Declare anahtar sözcüğü kullanılarak tanımlanan yöntemleri kullanarak işaretlenenler gibi [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], yönetilmeyen koda erişebilirsiniz. Bu yöntemler, NativeMethods, SafeNativeMethods veya UnsafeNativeMethods sınıfının üyesi olmalıdır.|  
+|CA1060|[CA1060: P/Invokes öğesini NativeMethods sınıfına taşıyın](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|Platform Çağırma yöntemlerini System.Runtime.InteropServices.DllImportAttribute özniteliği veya Declare anahtar sözcüğü kullanılarak tanımlanan yöntemleri kullanarak işaretlenenler gibi [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], yönetilmeyen koda erişebilirsiniz. Bu yöntemler, NativeMethods, SafeNativeMethods veya UnsafeNativeMethods sınıfının üyesi olmalıdır.|  
 |CA1061|[CA1061: Taban sınıf yöntemlerini gizlemeyin](../code-quality/ca1061-do-not-hide-base-class-methods.md)|Basit türdeki bir yöntem türetilmiş türdeki adlandırılmış yöntem tarafından gizlenmiştir, türetilmiş yöntemin parametre imzası yalnızca türetilmiş türleri ve karşılık gelen temel yöntemin parametre imzası daha zayıf türlerine göre farklı olduğunda temel türde bir yöntemin türetilmiş türle aynı adlı yöntem olarak gizlidir.|  
 |CA1062|[CA1062: Genel yöntemlerin bağımsız değişkenlerini doğrulayın](../code-quality/ca1062-validate-arguments-of-public-methods.md)|Dışarıdan görünen yöntemlerin null'a karşı denetlenmesi için geçirilen tüm başvuru bağımsız değişkenleri.|  
 |CA1063|[CA1063: IDisposable'ı doğru uygulayın](../code-quality/ca1063-implement-idisposable-correctly.md)|Tüm IDisposable türleri Dispose kalıbını doğru uygulamalıdır.|  
@@ -367,8 +365,8 @@ Aşağıdaki tablo uyarının CheckId tanımlayıcısı tarafından yönetilen k
 |CA1411|[CA1411: COM kayıt yöntemleri görünebilir olmamalıdır](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)|System.Runtime.InteropServices.ComRegisterFunctionAttribute özniteliğini veya System.Runtime.InteropServices.ComUnregisterFunctionAttribute özniteliğini kullanarak işaretlenmiş bir yöntemi dışarıdan görülebilir.|  
 |CA1412|[CA1412: ComSource Arabirimlerini IDispatch olarak işaretleyin](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)|System.Runtime.InteropServices.ComSourceInterfacesAttribute özniteliğini kullanarak işaretlenen bir tür ve belirtilen arabirimlerden birini ayarlamak için ComInterfaceType.InterfaceIsIDispatch özniteliğine System.Runtime.InteropServices.InterfaceTypeAttribute özniteliğini kullanarak ayarlanır.|  
 |CA1413|[CA1413: COM görünebilir değer türleri içinde genel olmayan alanlardan kaçının](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)|COM-görünür değer türlerinin ortak olmayan örnek alanları COM istemcilerine görünürdür. Maruz kalmaması gereken, istenmeyen bir tasarım ya da güvenlik etkileri olan bilgi alanındaki içeriği gözden geçirin.|  
-|CA1414|[CA1414: boolean P/Invoke bağımsız değişkenlerini MarshalAs ile işaretleyin](../code-quality/ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md)|Boolean veri türünün, yönetimsiz kod içinde birden fazla sunumu vardır.|  
-|CA1415|[CA1415: P/Invoke'lar doğru bildirin](../code-quality/ca1415-declare-p-invokes-correctly.md)|Bu kural hedefleyen çağrı yöntemi bildirimlerine bakar işletim sistemi [!INCLUDE[TLA2#tla_win32](../includes/tla2sharptla-win32-md.md)] Çakışan işaretçi sahip işlevlerin parametre yapısı ve ilgili yönetilen parametresi bir System.Threading.NativeOverlapped işaretçisi değil yapısı.|  
+|CA1414|[CA1414: Boolean P/Invoke bağımsız değişkenlerini MarshalAs ile işaretleyin](../code-quality/ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md)|Boolean veri türünün, yönetimsiz kod içinde birden fazla sunumu vardır.|  
+|CA1415|[CA1415: P/Invoke'ları doğru bildirin](../code-quality/ca1415-declare-p-invokes-correctly.md)|Bu kural hedefleyen çağrı yöntemi bildirimlerine bakar işletim sistemi [!INCLUDE[TLA2#tla_win32](../includes/tla2sharptla-win32-md.md)] Çakışan işaretçi sahip işlevlerin parametre yapısı ve ilgili yönetilen parametresi bir System.Threading.NativeOverlapped işaretçisi değil yapısı.|  
 |CA1500|[CA1500: Değişken adları alan adlarıyla eşleşmemelidir](../code-quality/ca1500-variable-names-should-not-match-field-names.md)|Bir örnek yöntemi, hatalara liderlik eden derlenen türdeki örnek alanı içinde adları uyuşan bir parametre yada yerel değişken tanımlar.|  
 |CA1501|[CA1501: Aşırı devralmadan kaçının](../code-quality/ca1501-avoid-excessive-inheritance.md)|Devralma hiyerarşisinde düzeyleri dörtten fazla olan türdür. İç içe yuvalanmış hiyerarşileri izlemek, anlamak ve muhafaza etmek zor olabilir.|  
 |CA1502|[CA1502: Aşırı karmaşıklıktan kaçının](../code-quality/ca1502-avoid-excessive-complexity.md)|Bu kural, sayılarla ve şartlı şubelerle tanımlanan, yönteme giden doğrusal bağımsız yolların sayısını ölçer.|  
@@ -516,7 +514,7 @@ Aşağıdaki tablo uyarının CheckId tanımlayıcısı tarafından yönetilen k
 |CA2241|[CA2241: Biçimlendirme yöntemlerine doğru bağımsız değişkenleri sağlayın](../code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md)|System.String.Format için geçirilen biçim, her bir nesne bağımsız değişkeninden sorumlu olan öğe biçimini içermez.|  
 |CA2242|[CA2242: NaN için doğru sınayın](../code-quality/ca2242-test-for-nan-correctly.md)|Bu ifade, değeri Single.Nan veya Double.Nan'a karşı test eder. Single.IsNan(Single) ya da Double.IsNan(Double) değerini test etmek için kullanın.|  
 |CA2243|[CA2243: Öznitelik dize harfleri doğru çözümlenmelidir](../code-quality/ca2243-attribute-string-literals-should-parse-correctly.md)|Bir öznitelik dize literal parametresi, URL, GUID ya da sürüm için doğru ayrıştırmaz.|  
-|CA5122|[CA5122 P/Invoke bildirimleri güvenli olmamalıdır kritik](../code-quality/ca5122-p-invoke-declarations-should-not-be-safe-critical.md)|Güvenlik duyarlı işlem gerçekleştirildiğinde yöntemler SecuritySafeCritical olarak işaretlenir ancak saydam mod kullanılarak da güvenli olur. Saydam kod, P/Invoke aracılığıyla yerel kodu hiçbir zaman doğrudan çağırmayabilir. Bu nedenle, P/Invoke güvenlik güvenli kritik olarak işaretleme çağırmak için saydam kodu etkinleştirmez ve güvenlik çözümlemesi için yanıltıcıdır.|
+|CA5122|[CA5122 P/Invoke bildirimleri güvenli kritik olmamalıdır](../code-quality/ca5122-p-invoke-declarations-should-not-be-safe-critical.md)|Güvenlik duyarlı işlem gerçekleştirildiğinde yöntemler SecuritySafeCritical olarak işaretlenir ancak saydam mod kullanılarak da güvenli olur. Saydam kod, P/Invoke aracılığıyla yerel kodu hiçbir zaman doğrudan çağırmayabilir. Bu nedenle, P/Invoke güvenlik güvenli kritik olarak işaretleme çağırmak için saydam kodu etkinleştirmez ve güvenlik çözümlemesi için yanıltıcıdır.|
 
 
 

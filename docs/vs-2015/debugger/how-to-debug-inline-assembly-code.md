@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: satır içi derleme kodunda hata ayıklama | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2a5ed1031a687754c85248394eb14598cbf2c54
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ed7aeb167b962b33819e3e07aca513c5b0bf832
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687810"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285356"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Nasıl Yapılır: Satır İçi Derleme Kodunda Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: satır içi derleme kodunda hata ayıklama](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-inline-assembly-code).  
-  
 [NOT]
 >  İletişim kutuları ve menü komutları gördüğünüz açıklanana Yardım'da, etkin ayarlarınıza ve sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
@@ -53,7 +51,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: satır i
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
- [Yerel kodda hata ayıklama](../debugger/debugging-native-code.md)
+ [Yerel Kodda Hata Ayıklama](../debugger/debugging-native-code.md)
 
 
 

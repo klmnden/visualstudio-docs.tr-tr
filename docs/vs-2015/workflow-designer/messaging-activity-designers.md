@@ -1,7 +1,7 @@
 ---
 title: Mesajlaşma etkinlik tasarımcıları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 6c592c748775361f3ed6a746accd0aa30dcc42af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 254b8d819da8cd1d06d21699940c3b118aa75119
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695159"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274761"
 ---
 # <a name="messaging-activity-designers"></a>Mesajlaşma Etkinlik Tasarımcıları
 Mesajlaşma etkinlik tasarımcıları oluşturmak ve göndermek ve almak Mesajlaşma etkinlikleri yapılandırmak için kullanılan [!INCLUDE[indigo1](../includes/indigo1-md.md)] iletileri içinden bir [!INCLUDE[wf](../includes/wf-md.md)] uygulama. [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] Beş Mesajlaşma etkinlikleri tanıtır ve [!INCLUDE[wfd1](../includes/wfd1-md.md)] bir iş akışı içinde Mesajlaşma yönetmenizi sağlayan iki yeni Şablon tasarımcıları sağlar. Bu bölümde yer alan ve aşağıdaki tabloda listelenen konular Kılavuzu nasıl kullanılacağı hakkında sağlamaya [!INCLUDE[wfd2](../includes/wfd2-md.md)] etkinliği ve Şablon tasarımcıları.  
@@ -27,10 +27,10 @@ Mesajlaşma etkinlik tasarımcıları oluşturmak ve göndermek ve almak Mesajla
 |İleti etkinliği|Açıklama|  
 |----------------------|-----------------|  
 |[CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)|Oluşturur ve yapılandırır bir <xref:System.ServiceModel.Activities.CorrelationScope> etkinliklerle Mesajlaşma alt örtük yönetimini sağlayan etkinlik bir <xref:System.ServiceModel.Activities.CorrelationHandle> nesne.|  
-|[Initializecorrelation](../workflow-designer/initializecorrelation-activity-designer.md)|Oluşturur ve yapılandırır bir <xref:System.ServiceModel.Activities.InitializeCorrelation> ınicializace korelace gönderme veya bir ileti almak için kullanılan etkinlik.|  
-|[Alma](../workflow-designer/receive-activity-designer.md)|Oluşturur ve yapılandırır bir <xref:System.ServiceModel.Activities.Receive> etkinliği bir hizmetten bir ileti alır.|  
+|[InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)|Oluşturur ve yapılandırır bir <xref:System.ServiceModel.Activities.InitializeCorrelation> ınicializace korelace gönderme veya bir ileti almak için kullanılan etkinlik.|  
+|[Receive](../workflow-designer/receive-activity-designer.md)|Oluşturur ve yapılandırır bir <xref:System.ServiceModel.Activities.Receive> etkinliği bir hizmetten bir ileti alır.|  
 |[ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)|Önceden yapılandırılmış bir çift oluşturur <xref:System.ServiceModel.Activities.Send> ve <xref:System.ServiceModel.Activities.ReceiveReply> içindeki etkinlikleri bir <xref:System.Activities.Statements.Sequence> etkinlik.|  
-|[Gönder](../workflow-designer/send-activity-designer.md)|Oluşturur ve yapılandırır bir <xref:System.ServiceModel.Activities.Send> etkinliği bir hizmete ileti gönderir.|  
+|[Send](../workflow-designer/send-activity-designer.md)|Oluşturur ve yapılandırır bir <xref:System.ServiceModel.Activities.Send> etkinliği bir hizmete ileti gönderir.|  
 |[SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)|Önceden yapılandırılmış bir çift oluşturur <xref:System.ServiceModel.Activities.Receive> ve <xref:System.ServiceModel.Activities.SendReply> içindeki etkinlikleri bir <xref:System.Activities.Statements.Sequence> etkinlik.|  
 |[TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)|Oluşturur ve yapılandırır bir <xref:System.ServiceModel.Activities.TransactedReceiveScope> işlemleri bir iş akışını sağlayan etkinlik.|  
   

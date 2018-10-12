@@ -1,7 +1,7 @@
 ---
 title: Evrensel Windows Platformu (UWP) uygulamaları geçirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: c9675cbb25d9f968a170484c9ec33e3af11e074d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a23cdd24ad696795127a4469c447f12e9d191930
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694581"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285954"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Uygulamaları Evrensel Windows Platformu’na (UWP) geçirme
 Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza Windows Store 8.1 uygulamaları, Windows Phone 8.1 uygulamaları ya da Visual Studio 2015 RC ile oluşturulmuş Evrensel Windows uygulamaları için gerekli el ile değişiklikleri yapın. (Windows 8.1 Evrensel uygulamasıyla bir Windows uygulaması projesi ve Windows Phone projesi varsa, her projeyi geçirmek için adımları izlemeniz gerekir.)  

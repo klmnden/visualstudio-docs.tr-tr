@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d0e337ebb97b487adfd79be43ddc1301612ba090
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 25ddfd7c0d45666c4dbbafe98c88dc8f66aac447
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496122"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284056"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Öğretici: C# ve Visual Studio'da ASP.NET Core ile çalışmaya başlama
 
@@ -131,7 +131,7 @@ Bu çözüm aşağıdaki **Razor sayfası** tasarım deseni. Farklı [Model-View
 
 1. Tarayıcı penceresi açın ve geri dönüş için Visual Studio tutun.
 
-1. Visual Studio'da **About.cshtml**. Sonra Sil _değiştirilen_ ve bunun yerine, sözcükleri ekleme _dosya ve dizin_.
+1. Visual Studio'da **About.cshtml**. Sonra Sil _ek_ ve bunun yerine, sözcükleri ekleme _dosya ve dizin_.
 
     ![About.cshtml dosyadaki metni değiştirme](../ide/media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code-changed.png)
 
@@ -197,4 +197,4 @@ Bu öğreticiyi tamamlamak Tebrikler! C#, ASP.NET Core ve Visual Studio IDE hakk
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio kullanarak web uygulamanızı Azure App Service'e yayımlama](..//deployment/quickstart-deploy-to-azure.md)
+[Visual Studio kullanarak web uygulamanızı Azure App Service'e yayımlama](../deployment/quickstart-deploy-to-azure.md)

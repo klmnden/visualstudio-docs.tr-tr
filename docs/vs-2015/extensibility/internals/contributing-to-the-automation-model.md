@@ -1,7 +1,7 @@
 ---
 title: Otomasyon modeline katkıda bulunma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 44de482d-93c8-41a4-843c-cefda995a03e
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 510faa67dc9b967e488931b149e2497bdf853d79
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 102a84781d033948490fb87e8b775f3b85ab61ba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688444"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268430"
 ---
 # <a name="contributing-to-the-automation-model"></a>Otomasyon Modeline Katkıda Bulunma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Otomasyon modeline katkıda bulunma](https://docs.microsoft.com/visualstudio/extensibility/internals/contributing-to-the-automation-model).  
-  
 Visual Studio ortamı özelleştirmek için Otomasyon arabirimlerini sunmaktadır. Otomasyon modeli, Visual Studio eklentileri ve uzantıları oluşturmak son kullanıcıların sağlayan nesne modelidir.  
   
  Ayrıca, sizin için uygun Otomasyon modeline katkıda bulunmak için bir VSPackage geliştirici olarak; Bunu yaparak, eklentiler oluşturup, VSPackage içinde kullanıldığında genellikle model tutarlı bir kullanıcı deneyimi sağlamak için VSPackage son kullanıcıları etkinleştirme [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
@@ -46,7 +44,7 @@ Visual Studio ortamı özelleştirmek için Otomasyon arabirimlerini sunmaktadı
  [Proje Modelleme](../../extensibility/internals/project-modeling.md)  
  Otomasyon için yeni proje türünüzü oluşturmak için gerekli olan standart proje nesnelerini açıklar ve proje Otomasyon aşağıdaki yol göstermektedir. Bu konu, ayrıca listelerini bildirimleri ve uygulama için sınıflar sağlar.  
   
- [Olayları ortaya çıkarma](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md)  
+ [Olayları Gösterme](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md)  
  Otomasyon modeliniz için olaylar oluşturmak için adım adım yönergeler sağlar.  
   
  [Seçenekler Sayfaları için Otomasyon Desteği](../../extensibility/internals/automation-support-for-options-pages.md)  

@@ -1,7 +1,7 @@
 ---
 title: Yönetilen kod için özel kod çözümleme iade ilkelerini uygulama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6f0fe69b8afd4a33a783126b6006cbbb5545ba3f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82f360bb9dc256fd78a8b06aca66d9e49c57ab22
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696028"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268976"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Yönetilen Kod için Özel Kod Çözümleme İade İlkelerini Uygulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [uygulama özel kod analizi iade ilkeleri için yönetilen kod](https://docs.microsoft.com/visualstudio/code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code).  
-  
 Kod Analizi iade ilkesi sürüm denetimine iade edilmeden önce bir takım projesinin üyeleri kaynak kodunu çalıştırmanız gereken kurallar kümesini belirtir. Microsoft, standart bir dizi sağlar *kural kümeleri* bu grubu Kod Analizi kuralları işlevsel alanlara. *Özel iade ilke kural kümelerinin* belirli bir takım projesi için Kod Analizi kuralları kümesi belirtin. Bir kural kümesi bir .ruleset dosyası depolanır.  
   
  İade ilkeleri takım projesi düzeyinde belirlenir ve sürüm denetimi ağacındaki bir .ruleset dosyası konumunu tarafından belirtilen. Takım ilke özel kural kümesi sürüm denetimi konumunu ilgili bir kısıtlama yoktur.  

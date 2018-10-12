@@ -1,7 +1,7 @@
 ---
 title: XAML Tasarımcısı'nda öğelerle çalışma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 917d0b66f479789b3cb727aeb822c3f2aa164cff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: affdd3283d328fbc72b186904fdfb025bbe824e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634020"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266044"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>XAML Tasarımcısı'nda öğelerle çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [XAML Tasarımcısı'nda öğelerle çalışma](https://docs.microsoft.com/visualstudio/designers/working-with-elements-in-xaml-designer).  
-  
 Öğeleri ekleyebilirsiniz; denetimler, düzenler ve şekiller — uygulamanıza XAML, kod veya XAML Tasarımcısını kullanarak. Bu konuda, Visual Studio veya Visual Studio için Blend, XAML Tasarımcısı'nda öğelerle çalışma açıklar.  
   
 ## <a name="adding-an-element-to-a-layout"></a>Bir öğe için bir düzen ekleme  
@@ -129,7 +127,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [XAML Tasarımcısı'nda ö
 -   Belge Anahattı penceresi ya da çalışma yüzeyi, öğeye sağ tıklayın, seçin **Düzen**, **sıfırlama** *PropertyName*burada *PropertyName*sıfırlamak istediğiniz özelliktir (veya tercih **Düzen**, **Tümünü Sıfırla** öğesi için düzen özelliklerini sıfırlamak için).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [XAML Tasarımcısı'nı kullanarak kullanıcı Arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+ [XAML Tasarımcısı’nı kullanarak bir kullanıcı arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
 
 
 

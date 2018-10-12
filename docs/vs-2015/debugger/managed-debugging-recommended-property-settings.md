@@ -1,7 +1,7 @@
 ---
 title: 'Yönetilen hata ayıklama: Önerilen özellik ayarları | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50fa9b61d017be3e860c10f11688bcd79f252969
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b9c5b317498d9a10c5e111b8bbd4d0a05350d73
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630403"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288606"
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>Yönetilen Hata Ayıklama: Önerilen Özellik Ayarları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yönetilen hata ayıklama: önerilen özellik ayarları](https://docs.microsoft.com/visualstudio/debugger/managed-debugging-recommended-property-settings).  
-  
 Bazı özellikler tüm yönetilen hata ayıklama senaryoları için aynı şekilde ayarlamanız gerekir.  
   
  Aşağıdaki tablolarda, önerilen özellik ayarları gösterilmiştir.  
@@ -61,7 +59,7 @@ Bazı özellikler tüm yönetilen hata ayıklama senaryoları için aynı şekil
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)   
- [C#, F # ve Visual Basic proje türleri](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
+ [C#, F# ve Visual Basic Proje Türleri](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 
 
 

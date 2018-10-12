@@ -1,7 +1,7 @@
 ---
 title: LPTEXTOUTPROC | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e8fc709353e4a2e39059cade96aa49c30fedac4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5ef5d1c5e92282de6454ca3da8c2adbb8914248
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693542"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266954"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [LPTEXTOUTPROC](https://docs.microsoft.com/visualstudio/extensibility/lptextoutproc).  
-  
 Kullanıcı bir kaynak denetim işleminde tümleşik geliştirme ortamı (IDE) içinde yürütüldüğünde, kaynak denetimi eklentisi işlemi ile ilgili durum veya hata iletilerini iletmek isteyebilirsiniz. Eklenti kendi ileti kutularını bu amaçla görüntüleyebilirsiniz. Ancak, daha fazla sorunsuz tümleştirme için eklenti dizeler ardından bunları durum bilgisini görüntüleme, kendi yerel biçiminde görüntüler IDE geçirebilirsiniz. Bu mekanizma `LPTEXTOUTPROC` işlev işaretçisi. IDE hata ve durum görüntüleme (Aşağıda daha ayrıntılı olarak açıklanmıştır) Bu işlev uygular.  
   
  IDE için kaynak denetimi eklentisi bu işlev, işlev işaretçisi olarak geçirir `lpTextOutProc` çağırırken parametre [SccOpenProject](../extensibility/sccopenproject-function.md). Örneğin, bir çağrı ortasında bir SCC işlemi sırasında [SccGet](../extensibility/sccget-function.md) çok sayıda dosya içeren, eklenti çağırabilirsiniz `LPTEXTOUTPROC` işlevi, düzenli aralıklarla görüntülemek için dizeleri geçirme. IDE bu dizeler durum çubuğunda, çıktı penceresinde ya da ayrı ileti kutusunda uygun şekilde görüntülenebilir. İsteğe bağlı olarak, IDE ile belirli iletileri görüntülemeyi mümkün olabilir bir **iptal** düğmesi. Bu işlemi iptal etmek kullanıcının sağlar ve bu bilgileri tekrar eklenti geçirme özelliği IDE sağlar.  

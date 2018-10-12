@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: Ayrıştırılmış kod penceresini kullanma | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17747cdab2987a053ef5fff2bc7b8a11867d94fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa414aacc8b7ffc39132157686abee860cac994c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694565"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287767"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>Nasıl Yapılır: Ayrıştırılmış Kod Penceresini Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio hata ayıklayıcıda ayrıştırılmış kodu görüntüleme](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-disassembly-window).  
-  
 Bu özellik yalnızca adres seviyesinde hata ayıklamayı etkinse kullanılabilir **seçenekleri** iletişim kutusu, **hata ayıklama** düğümü. Betik veya SQL hata ayıklama için kullanılabilir değil.  
   
  **Ayrıştırılmış kodu** penceresi için derleyici tarafından oluşturulan talimatlara karşılık gelen derleme kodlarını gösterir. Yönetilen kod hata ayıklaması yapıyorsanız bu derleme yönergeleri, Visual Studio derleyici tarafından oluşturulan değil Microsoft Ara dilini (MSIL) Just-ın-Time (JIT) derleyici tarafından oluşturulan yerel koda karşılık gelir.  
@@ -85,7 +83,7 @@ Bu özellik yalnızca adres seviyesinde hata ayıklamayı etkinse kullanılabili
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcıda verileri görüntüleme](../debugger/viewing-data-in-the-debugger.md)   
- [Nasıl yapılır: yazmaçlar penceresini kullanma](../debugger/how-to-use-the-registers-window.md)
+ [Nasıl Yapılır: Yazmaçlar Penceresini Kullanma](../debugger/how-to-use-the-registers-window.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: C / C++ onaylamaları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce168764f18d85cce1d373bf509f63bfb1e6923d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e19ffb9a63e0e2168dfb7acf9c5cf3661111a1d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631009"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267695"
 ---
 # <a name="cc-assertions"></a>C/C++ Onayları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [C/C++ onaylamaları](https://docs.microsoft.com/visualstudio/debugger/c-cpp-assertions).  
-  
 Bir onay deyimi programınızda herhangi bir noktada doğru olması beklenen bir koşulu belirtir. Bu koşul true değilse onaylama işlemi başarısızsa, programınızın yürütülmesini kesildiğinde ve [onaylama başarısız iletişim kutusu](../debugger/assertion-failed-dialog-box.md) görünür.  
   
  Visual C++, aşağıdaki yapılar üzerinde alan onaylama deyimleri destekler:  
@@ -356,7 +354,7 @@ _ASSERT(!myErr); // Don't do this, either!
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
  [Yerel kodda hata ayıklama](../debugger/debugging-native-code.md)   
- [Yönetilen koddaki onaylar](../debugger/assertions-in-managed-code.md)
+ [Yönetilen Koddaki Onaylamalar](../debugger/assertions-in-managed-code.md)
 
 
 

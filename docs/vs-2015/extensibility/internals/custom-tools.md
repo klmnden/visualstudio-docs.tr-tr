@@ -1,7 +1,7 @@
 ---
 title: Özel Araçlar | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72fb6f9f0ceb3b9f2ae04f39b2c37c416acf47b9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c0726457567221f5adb091d543cc17621179021
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695716"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278414"
 ---
 # <a name="custom-tools"></a>Özel Araçlar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [özel Araçlar](https://docs.microsoft.com/visualstudio/extensibility/internals/custom-tools).  
-  
 *Özel Araçlar* bir aracı bir projede bir öğe ile ilişkilendirmek ve dosyanın kaydedildiği zaman bu aracı sağlar. Bazı özel araçları, bazen olarak adlandırılan *tek dosya oluşturucular*, verilerden ve kod oluşturma çevirmenler uygulamak için sıkça kullanılır. Örneğin, tek dosya oluşturucular oluşturma [!INCLUDE[csprcs](../../includes/csprcs-md.md)] ve [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] kaynak kodunun dışında .settings ve .resx dosyaları. Oluşturulan kaynak kod .settings ve .resx dosyalarındaki verileri kesin türü belirtilmiş erişmenizi sağlar. [!INCLUDE[csprcs](../../includes/csprcs-md.md)] Ve [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] özel araçlar; proje türleri desteği [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] proje türleri yapın. Özel Araçlar kendi proje türleri de destekler.  
   
  Özel Araçlar, uygulama kayıtlı bileşenleridir `IVsSingleFileGenerator` arabirimi.  

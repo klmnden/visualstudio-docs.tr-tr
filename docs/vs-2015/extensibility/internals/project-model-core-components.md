@@ -1,7 +1,7 @@
 ---
 title: Proje modeli çekirdek bileşenleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e0fd5b5963686ac38975c62bab1d8ee93224cf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2819f32993df6215e506ae6612d2716f95780bf8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631326"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283341"
 ---
 # <a name="project-model-core-components"></a>Proje Modeli Çekirdek Bileşenleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [proje modeli çekirdek bileşenleri](https://docs.microsoft.com/visualstudio/extensibility/internals/project-model-core-components).  
-  
 Aşağıdaki tablolarda, proje modeli üzerinde genişletin. Tabloları kısa açıklamaları arabirimleri ve model ve arabirimleri ve belirli nesneleri ile ilişkili hizmetleri tanımlanan hizmetleri sunar. Ayrıca, proje oluşturma ve belirli proje türünüzü gereksinimlerine bağlı olarak bakım isteğe bağlı olan diğer arabirimleri tabloları ayrıntılarını gösterir.  
   
  Daha fazla bilgi için [destekleyen sembol tarama araçlarını](../../extensibility/internals/supporting-symbol-browsing-tools.md).  

@@ -1,7 +1,7 @@
 ---
 title: Visual Studio menü çubuğuna menü ekleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 58fc1a31-2aeb-441c-8e48-c7d5cbcfe501
 caps.latest.revision: 52
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b7b1be3a931b3ac47aa575e64795dd020af66d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d35b9247af4e1fe9c870650fc33f2071ba0999f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686980"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275242"
 ---
 # <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>Visual Studio Menü Çubuğuna Menü Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio menü çubuğuna menü ekleme](https://docs.microsoft.com/visualstudio/extensibility/adding-a-menu-to-the-visual-studio-menu-bar).  
-  
 Bu izlenecek yol, Visual Studio tümleşik geliştirme ortamı (IDE) menü çubuğuna menü ekleme işlemi gösterilmektedir. Menü kategorileri gibi IDE menü çubuğu içeren **dosya**, **Düzenle**, **görünümü**, **penceresi**, ve **yardımcı** .  
   
  Visual Studio menü çubuğunda yeni menü eklemeden önce komutlarınızı içinde varolan bir menüye yerleştirilmiş olup olmadığını göz önünde bulundurun. Komut yerleşimi hakkında daha fazla bilgi için bkz: [menüler ve komutlar için Visual Studio](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md).  

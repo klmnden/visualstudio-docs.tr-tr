@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: Oluşturma ve çalıştırma için birim testleri yönetilen kodu | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8a0bc6ab5854d0db9fc5bae7c642b804bc5af27a
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: e50cfc446bf13e93258e28877f9706a3ccd86ae7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881117"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270640"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>İzlenecek yol: Yönetilen Kod için Birim Testleri Oluşturma ve Çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [izlenecek yol: yönetilen kod için birim testleri oluşturma ve çalıştırma](https://docs.microsoft.com/visualstudio/test/walkthrough-creating-and-running-unit-tests-for-managed-code).  
-  
 Bu izlenecek yol oluşturma, çalıştırma ve yönetilen kod ve Visual Studio Test Gezgini'yle için Microsoft birim testi çerçevesini kullanarak birim testleri bir dizi özelleştirme size adım adım anlatır. Geliştirilmekte olan bir C# projesi ile başlayın, kodunu, testleri çalıştırmak ve sonuçları inceleyin testleri oluşturun. Daha sonra proje kodunu değiştirin ve testi yeniden çalıştırın.  
   
  Bu konu aşağıdaki bölümleri içermektedir:  

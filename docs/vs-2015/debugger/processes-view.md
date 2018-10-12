@@ -1,7 +1,7 @@
 ---
 title: İşlemleri görüntüle | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c83b57ade3a78a4dcc926e34547ee566326e129
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4af26930fc8c9f362d91656cec758c9d4a9c437
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690600"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288996"
 ---
 # <a name="processes-view"></a>İşlemler Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [işlemler görünümü](https://docs.microsoft.com/visualstudio/debugger/processes-view).  
-  
 İşlemler görünümü tüm etkin işlemlerin ağacının sisteminizde görüntüler. İşlem kimliği ve modül adı gösterilir. Genellikle bir çalışan programa karşılık gelen bir belirli bir sistem işlemi incelemek isterseniz işlemleri görünümünü kullanın. İşlemler modülü adlarına göre tanımlanır veya "sistem işlemleri." belirlenen  
   
  Microsoft Windows birden çok işlem destekler. Her işlem bir veya daha fazla iş parçacığı olabilir ve her bir iş parçacığı sahip olabilir veya birden çok üst düzey pencerelere ilişkili. Her üst düzey pencere windows bir dizi sahip olabilir. A + simgesi gösterir bir düzey daraltılmıştır. İşlem başına bir satır daraltılmış görünümüyle oluşur. Tıklayın + simge düzeyi'ni genişletin.  
@@ -61,10 +59,10 @@ Spy ++ işlemler görünümü
  [Spy++ kullanma](../debugger/using-spy-increment.md)  
  Spy ++ araç tanıtır ve nasıl kullanılacağını açıklar.  
   
- [İşlem arama iletişim kutusu](../debugger/process-search-dialog-box.md)  
+ [İşlem Arama İletişim Kutusu](../debugger/process-search-dialog-box.md)  
  İşlemler görünümünde belirli bir işlem düğümü bulmak için kullanılır.  
   
- [İşlem özellikleri iletişim kutusu](../debugger/process-properties-dialog-box.md)  
+ [İşlem Özellikleri İletişim Kutusu](../debugger/process-properties-dialog-box.md)  
  İşlemler görünümünde seçilen işlem özelliklerini görüntüler.  
   
  [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  

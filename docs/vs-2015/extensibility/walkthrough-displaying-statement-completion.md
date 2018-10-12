@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: Deyim tamamlamayı görüntüleme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d7cd7a1ea3ffa3fd85cbe8ed7088347298f849c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ceb59310597cd0481007ec9c08f5312a8d75090
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690478"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280589"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>İzlenecek Yol: Deyim Tamamlamayı Görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [izlenecek yol: deyim tamamlamayı görüntüleme](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-statement-completion).  
-  
 Dil tabanlı deyim tamamlama tamamlama sağlamak istediğiniz tanımlayıcıları tanımlama ve ardından tamamlama oturumu tetiklemeden uygulayabilir. Deyim tamamlama dil hizmeti bağlamında tanımlayın, kendi dosya adı uzantısı ve içerik türünü tanımlayabilir ve ardından bu tür için tamamlama görüntülemek ya da mevcut bir içerik türü için tamamlama tetikleyebilirsiniz — Örneğin, "Düz". Bu izlenecek yol, içerik türü metin dosyaları olan "Düz" içerik türü için deyim tamamlama tetikleme işlemi gösterilmektedir. Kod ve XML dosyaları dahil tüm diğer içerik türleri, üst "metin" içerik türü değil.  
   
  Deyim tamamlama, belirli karakter yazarak genellikle tetiklenir — Örneğin, "kullanma" gibi bir tanımlayıcının yazmaya tarafından. Bu genellikle bir seçim uygulamak için boşluk, sekme veya Enter tuşuna basarak kapatıldı. Tuş vuruşları için bir komut işleyici kullanarak bir karakter yazarak tetiklenen IntelliSense özelliklerini uygulayabilirsiniz ( <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirimi) ve uygulayan bir işleyici sağlayıcısı <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> arabirimi. Tamamlama katılan tanımlayıcıları listesi olan tamamlama kaynak oluşturmak için uygulaması <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> arabirimi ve bir tamamlanma kaynak sağlayıcısı ( <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> arabirimi). Bileşen parçalarına Yönetilen Genişletilebilirlik Çerçevesi (MEF) sağlayıcılarıdır. Kaynak ve denetleyici sınıfları dışarı aktarma ve Hizmetleri ve aracıları içeri aktarma için sorumlu oldukları — Örneğin, <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, metin arabelleği gezinme sağlar ve <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>, tamamlama oturumu tetikler.  

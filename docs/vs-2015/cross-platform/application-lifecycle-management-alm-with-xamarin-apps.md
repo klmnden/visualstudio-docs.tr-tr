@@ -1,7 +1,7 @@
 ---
 title: Xamarin uygulamalarıyla uygulama yaşam döngüsü yönetimi (ALM) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: b9433539d89f7b47c79461dbf0d488791ff348db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9361c60413192aa91a618ad0c6acc074f23264a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694606"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274644"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Xamarin uygulamalarıyla Uygulama Yaşam Döngüsü Yönetimi (ALM)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Xamarin uygulamalarıyla uygulama yaşam döngüsü yönetimi (ALM)](https://docs.microsoft.com/visualstudio/cross-platform/application-lifecycle-management-alm-with-xamarin-apps).  
-  
   
 Xamarin Android, iOS ve Windows C#, .NET ve Visual Studio kullanarak hedefleyen platformlar arası mobil uygulamalar oluşturmanıza olanak sağlar. Xamarin platformlarla yalnızca platforma özgü olmalarına gerek küçük bir yüzdesine arasında paylaşılan kod büyük bir kısmı sağlar. Xamarin kendisi hakkında daha fazla bilgi için bkz. [Visual Studio ve Xamarin](../cross-platform/visual-studio-and-xamarin.md).  
   
@@ -103,7 +101,7 @@ Xamarin Android, iOS ve Windows C#, .NET ve Visual Studio kullanarak hedefleyen 
   
 |Özellik|Xamarin ile desteklenen|Ek Açıklamalar|  
 |-------------|----------------------------|-------------------------|  
-|[Yönetilen kod kalitesini analiz etme](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Evet||  
+|[Yönetilen Kod Kalitesini Analiz Etme](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Evet||  
 |[Kod kopyası algılamayı kullanarak yinelenen kodları bulma](http://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Evet||  
 |[Yönetilen Kodun Ölçüm Karmaşıklığı ve Bakımı](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Evet||  
 |[Performans Gezgini](../profiling/performance-explorer.md)|Hayır|Kullanım [Xamarin Profiler](http://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/) Xamarin Studio üzerinden yerine. Xamarin Profiler şu anda önizlemededir ve henüz Windows hedefleri için çalışmaz unutmayın.|  

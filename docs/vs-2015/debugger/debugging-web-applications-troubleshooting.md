@@ -1,7 +1,7 @@
 ---
 title: 'Web uygulamalarında hata ayıklama: Sorun giderme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,29 +23,27 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e04357cfdb9c1fc19f67e56c089270ecac1091f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96e16b6b1ba1b971cdce71e9ad17b112bf1f0148
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687763"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268833"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>Web Uygulamalarında Hata Ayıklama: Sorun Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Web uygulamalarında hata ayıklama: sorun giderme](https://docs.microsoft.com/visualstudio/debugger/debugging-web-applications-troubleshooting).  
-  
 Bu bölüm, hataları çözmek için kullanılan ortak yordamları içerir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Nasıl yapılır: IIS özellik ayarlarını doğrulama](../debugger/how-to-verify-iis-property-settings.md)  
+ [Nasıl Yapılır: IIS Özellik Ayarlarını Doğrulama](../debugger/how-to-verify-iis-property-settings.md)  
  Doğru hata ayıklamayı etkinleştirmek için IIS özelliklerini ayarlama açıklanmaktadır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Web uygulamalarında hata ayıklama: Hatalar ve sorun giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [Web Uygulamalarında Hata Ayıklama: Hatalar ve Sorun Giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  Sorun giderme ve hata çözünürlüğü açıklar.  
   
- [Web uygulamalarında ve betikte hata ayıklama](../debugger/debugging-web-applications-and-script.md)  
+ [Web Uygulamalarında ve Betikte Hata Ayıklama](../debugger/debugging-web-applications-and-script.md)  
  Web uygulamaları gibi hata ayıklama genel bakış [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], XML Web Hizmetleri ve ATL Sunucusu projeleri.
 
 

@@ -1,7 +1,7 @@
 ---
 title: Proje ve çözüm dosya türleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -35,18 +35,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 748590118220c47a6d217156e1130417485aa885
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ed5ce79944077c724534dc0d9fb3ea2b037fdfe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675025"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283056"
 ---
 # <a name="project-and-solution-file-types"></a>Proje ve Çözüm Dosya Türleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [proje ve çözüm dosya türleri](https://docs.microsoft.com/visualstudio/ide/reference/project-and-solution-file-types).  
-  
   
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] birçok dosya türünü destekler. Belirli bir kurulumda, hangi dosya türlerinin desteklendiğini yüklü bileşenleri belirler. Bu konu, bazı tipik yüklemelerde desteklenen çözüm ve proje dosya türleri listelenmektedir. Diğer dosya türleri hakkında daha fazla bilgi için her türü için dosya adı uzantılarını kullanarak arama yapın.  
   
@@ -69,7 +67,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [proje ve çözüm dosya t�
  [Unicode](http://msdn.microsoft.com/library/1002004b-4113-4380-bf63-e1570934b793)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Projeler ve çözümler](../../ide/solutions-and-projects-in-visual-studio.md)
+ [Çözümler ve Projeler](../../ide/solutions-and-projects-in-visual-studio.md)
 
 
 

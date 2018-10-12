@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b68e103edcd3162b72bc5fddd4d1401b2430df3
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 9ea4b3a0ed5f041b2f09c3f3e57f334bf11777f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48864004"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273097"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Yazı tipleri ve Visual Studio için biçimlendirme
 ##  <a name="BKMK_TheEnvironmentFont"></a> Ortam yazı tipi
@@ -83,7 +83,7 @@ window.ShowModal()
   
  `ShowModal` bool döndürür? (boş değer atanabilir Boolean) ile `DialogResult`, kullanılabilen gerekirse. Dönüş değeri ile iletişim kapatılırsa true **Tamam**.  
   
- Bir iletişim kutusu değil ve barındırılan bazı WPF UI kendi görüntülemek gerekiyorsa `HwndSource`, bir açılan pencere veya Win32/WinForms ana penceresi penceresinin WPF alt penceresi gibi ayarlamanız gerekir `FontFamily` ve `FontSize` kök öğesinde WPF e öğesine. (Kabuk ana penceresinde özelliklerini ayarlar, ancak bunlar geçmiş devralınır değil bir `HWND`). Kaynakları, özellikleri, şöyle bağlanabilir sağlar:  
+ Bir iletişim kutusu değil ve barındırılan bazı WPF UI kendi görüntülemek gerekiyorsa `HwndSource`, bir açılan pencere veya Win32/WinForms üst penceresine WPF alt penceresi gibi ayarlamanız gerekir `FontFamily` ve `FontSize` kök öğesinde, bir WPF öğesi. (Kabuk ana penceresinde özelliklerini ayarlar, ancak bunlar geçmiş devralınır değil bir `HWND`). Kaynakları, özellikleri, şöyle bağlanabilir sağlar:  
   
 ```xaml
 <Setter Property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  

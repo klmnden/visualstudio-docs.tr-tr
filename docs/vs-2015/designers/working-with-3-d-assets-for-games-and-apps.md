@@ -1,7 +1,7 @@
 ---
 title: Oyunlar ve uygulamalar için 3B varlıklarla çalışma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 48082153e92a280745d649a23454f6c3870302dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bdf19958ec7b3cfe72ee00ea84e0e23724a51458
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689983"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265245"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Oyunlar ve Uygulamalar için 3B Varlıklarla Çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [oyunlar ve uygulamalar için 3B varlıklarla çalışma](https://docs.microsoft.com/visualstudio/designers/working-with-3-d-assets-for-games-and-apps).  
-  
 Bu belge [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oluşturmak veya 3B modeller, dokuları ve gölgelendiricileri DirectX tabanlı oyunlar ve uygulamalar için değiştirmek için kullanabileceğiniz araçlar.  
   
 ## <a name="directx-app-development-in-visual-studio"></a>Visual Studio'da DirectX uygulaması geliştirme  

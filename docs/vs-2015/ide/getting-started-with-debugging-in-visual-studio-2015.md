@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 2015'te hata ayıklamaya başlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ec46ba094ccafbb06ec64e181d4a64906feaa205
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 293df108dd0fc8671c1d11a2b336af32369aa9f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692572"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281456"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Visual Studio 2015'te Hata Ayıklamaya Başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio'da hata ayıklama ile çalışmaya başlama](https://docs.microsoft.com/visualstudio/ide/getting-started-with-debugging-in-visual-studio).  
-  
 Visual Studio 2015 proje derleme ve hata ayıklama araçları, güçlü tümleşik sunmaktadır. Bu konu başlığında, en temel hata ayıklama kullanıcı Arabirimi özellikleri kümesi kullanmaya başlamak nasıl öğrenin.  
   
  Not: Bu sayfanın alt kısmında daha gelişmiş özellikleri ve platform veya özelliğe özgü konulara bağlantılar vardır.  
@@ -200,7 +198,7 @@ Visual Studio 2015 proje derleme ve hata ayıklama araçları, güçlü tümleş
  [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md)   
  [Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)   
  [64 Bit uygulamalarda hata ayıklama](../debugger/debug-64-bit-applications.md)   
- [Hata ayıklayıcı temel bilgileri](../debugger/debugger-basics.md)
+ [Hata Ayıklayıcısı Temel Bilgileri](../debugger/debugger-basics.md)
 
 
 

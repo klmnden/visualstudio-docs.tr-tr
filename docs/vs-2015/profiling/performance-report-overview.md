@@ -1,7 +1,7 @@
 ---
 title: Performans raporuna genel bakış | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d80fa4902ac598440f03630cb8b0906bc13808ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8449abf6fe178225f84aa65caa4d027df5021d4f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693795"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290439"
 ---
 # <a name="performance-report-overview"></a>Performans Raporuna Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [performans raporuna genel bakış](https://docs.microsoft.com/visualstudio/profiling/performance-report-overview).  
-  
 Bir performans oturumu profil oluşturma verilerini görüntüleyebilirsiniz **performans raporu** penceresi Visual Studio Team System geliştirme sürümü tümleşik geliştirme ortamının (IDE). Profil oluşturma verilerinin .vsp .vsps dosyalarında kaydedilir. Rapor görünümü windows görüntüleme ve uygulama performans sorunlarını analiz etmenize olanak sağlar.  
   
 > [!CAUTION]

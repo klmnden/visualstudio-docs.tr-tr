@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: çağrı yığını penceresini kullanma | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75b617e9de62c20cc1e8a32cf993f5f03201f4fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0e79c491eeec373bd3753a5ea55777a079cc51ab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774909"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271667"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>Nasıl Yapılır: Çağrı Yığını Penceresini Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio hata ayıklayıcıda çağrı yığını görünümünde](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-call-stack-window).  
-  
 Kullanarak **çağrı yığını** penceresinde yığında olan işlev veya yordam çağrılarını görüntüleyebilirsiniz.  
   
  **Çağrı yığını** penceresi, her işlevin adını ve yazılmış olduğu programlama dilini görüntüler. İşlev veya yordam adına modül adı, satır numarası ve parametre adları, türleri ve değerleri gibi isteğe bağlı bilgiler eşlik edebilir. Bu isteğe bağlı bilgilerin görüntülenmesini açılıp kapatılabilir.  

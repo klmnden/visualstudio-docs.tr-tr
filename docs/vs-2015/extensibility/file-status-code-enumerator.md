@@ -1,7 +1,7 @@
 ---
 title: Dosya durumu kod numaralandırıcısı | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 5c37876b-c83c-4ca1-837b-57cd465a879a
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e41a0181c22f8b760156ec41e1e450aa0f3cf740
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 18e8b61c16b3a49d19b7571d529af633f6074d48
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682112"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268391"
 ---
 # <a name="file-status-code-enumerator"></a>Dosya Durumu Kod Numaralandırıcısı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [dosya durumu kod numaralandırıcısı](https://docs.microsoft.com/visualstudio/extensibility/file-status-code-enumerator).  
-  
 `SccStatus` Numaralandırıcı kaynak denetimi sisteminizden bir dosya durumunu belirten adlandırılmış sabit değerleri içerir. Bu sabit listesi tarafından kullanılan [Sccqueryınfo](../extensibility/sccqueryinfo-function.md) ve `POPLISTFUNC` geri çağırma işlevi (bkz [POPLISTFUNC](../extensibility/poplistfunc.md) Ayrıntılar için).  
   
 ## <a name="syntax"></a>Sözdizimi  

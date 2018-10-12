@@ -1,7 +1,7 @@
 ---
 title: Seçenekler, metin düzenleyici, JavaScript, biçimlendirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4a5a69d556beb8ebf3d3f75720614f7258b1780
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ea54b743853bba445618ad3b6e08fd9a9a54027
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681361"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271056"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Seçenekler, Metin Düzenleyici, JavaScript, Biçimlendirme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [seçenekler, metin düzenleyici, JavaScript, biçimlendirme](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-javascript-formatting).  
-  
   
 Kullanım **biçimlendirme** sayfasının **seçenekleri** Kod Düzenleyicisi'nde kod biçimlendirme seçeneklerini ayarlamak için iletişim kutusu. Menü çubuğunda, bu sayfaya erişmek için seçin **Araçları**, **seçenekleri**ve ardından **metin düzenleyici**, **JavaScript**ve **Biçimlendirme**.  
   
@@ -72,7 +70,7 @@ Kullanım **biçimlendirme** sayfasının **seçenekleri** Kod Düzenleyicisi'nd
 |**Açtıktan sonra ve boş ayraç kapatmadan önce boşluk Ekle**|Bu seçenek belirlendiğinde, parantez boş olmayan karakterler varsa Kod düzenleyicisinde bir boşluk açma parantezinden sonra ve kapatma parantezinden önce ekler.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel, ortam, Seçenekler iletişim kutusu](../../ide/reference/general-environment-options-dialog-box.md)
+ [Genel, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/general-environment-options-dialog-box.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: .NET Framework hedefleme hatalarının sorunlarını giderme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0599e6c5e117c6ba9c4f6c0de904284c487910f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: acadd858a1327380fc606bed36994ba0dda47169
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673967"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280559"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>.NET Framework Hedefleme Hatalarının Sorunlarını Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [.NET Framework hedefleme hataları giderme](https://docs.microsoft.com/visualstudio/msbuild/troubleshooting-dotnet-framework-targeting-errors).  
-  
   
 Bu konuda başvurusu nedeniyle oluşabilecek MSBuild hataları açıklanır sorunlar ve bu hataların nasıl çözebilirsiniz.  
   
@@ -68,7 +66,7 @@ Bu konuda başvurusu nedeniyle oluşabilecek MSBuild hataları açıklanır soru
  [Nasıl yapılır: .NET Framework sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
  [.NET framework istemci profili](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)   
  [Belirli bir .NET Framework sürümünü hedefleme](../ide/targeting-a-specific-dotnet-framework-version.md)   
- [Çoklu sürüm desteği](../msbuild/msbuild-multitargeting-overview.md)
+ [Çoklu Sürüm Desteği](../msbuild/msbuild-multitargeting-overview.md)
 
 
 

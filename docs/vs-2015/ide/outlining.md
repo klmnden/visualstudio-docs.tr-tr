@@ -1,7 +1,7 @@
 ---
 title: Anahat oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 939bb5ac1188a54217339c1bf3e9e3a828493d90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af7f854f6e097471cdd744537a4be4cbd1646400
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632776"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282522"
 ---
 # <a name="outlining"></a>Anahat Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [anahat](https://docs.microsoft.com/visualstudio/ide/outlining).  
-  
 Artı işareti (+) altında görünmesi bir bölge kodu daraltarak bazı kod görünümden gizlemek seçebilirsiniz. Daraltılmış bölgeye, artı işaretine tıklayarak genişletin. (Veya basabilirsiniz için CTRL + M + M bir bölge daraltmak için ve CTRL + M + M yeniden genişletin.) Ayrıca, herhangi bir satırda bölge kodu yalnızca solunda görünür anahat Kenar çubuğunda çift tıklayarak bir anahat oluşturma bölgesi daraltabilirsiniz. Daraltılmış bölgeye geldiğinizde, araç ipucu olarak daraltılmış bölgeye içeriğini görebilirsiniz.  
   
  Kenar boşlukları fare ile üzerine geldiğinizde anahat kenar bölgelerde ayrıca vurgulanır. Varsayılan renk vurgulama renk bazı yapılandırmalarda yerine soluk görünebilir. İçinde değiştirebilirsiniz **Araçlar/Seçenekler/ortam/yazı tipi ve renkler/Collapsible bölge**.  

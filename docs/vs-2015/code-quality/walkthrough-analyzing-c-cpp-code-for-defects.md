@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: Kod kusurları için C / C++ kodunu analiz etme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 37
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c944a50330f458240b3da2fea8952abb5b8f02b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5c2f6bfeabb80c03b1940ada2f57abbefb60173
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634352"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272655"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>İzlenecek yol: Kod Kusurları için C/C++ Kodunu Analiz Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [izlenecek yol: C/C++ kodunu analiz etme hataları](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-analyzing-c-cpp-code-for-defects).  
-  
 Bu yönerge, C/C++ kodu için kod analizi aracı kullanarak olası kod kusurları için C/C++ kodunu analiz etme gösterir.  
   
  Bu kılavuzda, olası kod kusurları için C/C++ kod analiz etmek için kod analizini kullanarak işlemi adım adım.  

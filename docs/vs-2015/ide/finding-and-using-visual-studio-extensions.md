@@ -1,7 +1,7 @@
 ---
 title: Bulma ve Visual Studio uzantıları kullanma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e05d9cf092d3f6cca3d7ef674c3f2bf137a0896f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b97cffd30416313ac9f46e6d0ab1bbd505fc4aed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630892"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268183"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Visual Studio Uzantıları’nı bulma ve kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bulma ve Visual Studio uzantılarını kullanarak](https://docs.microsoft.com/visualstudio/ide/finding-and-using-visual-studio-extensions).  
-  
 Visual Studio uzantıları Visual Studio içinde çalıştırın ve yeni veya geliştirilmiş Visual Studio özellikleri sağlayan kod paketlerdir. Visual Studio uzantıları hakkında daha fazla bilgi bulabilirsiniz: [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
  Kullanabileceğiniz **Uzantılar ve güncelleştirmeler** iletişim kutusunda, Web siteleri ve diğer konumlardan Visual Studio uzantılarını ve örneklerini yüklemek ve etkinleştirmek, devre dışı bırakmak, güncelleştirmek veya bunları kaldırmak için. (**Araçları / Uzantılar ve güncelleştirmeler**, veya tür **uzantıları** içinde **hızlı başlatma** pencere). İletişim kutusu, yüklü örnekler ve uzantılar için güncelleştirmeleri de gösterir. Ayrıca, Web sitelerinden uzantıları indirmesi veya diğer geliştiricilerden alın.  

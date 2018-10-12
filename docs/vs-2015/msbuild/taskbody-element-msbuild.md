@@ -1,7 +1,7 @@
 ---
 title: TaskBody öğesi (MSBuild) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83205c5ebb70da7bef370c584beda84de4854047
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0bdf658dac69c6d048e568d9854b2cd334780fbd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686081"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269341"
 ---
 # <a name="taskbody-element-msbuild"></a>TaskBody Öğesi (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [TaskBody öğesi (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/taskbody-element-msbuild).  
-  
   
 Geçirilen verileri içeren bir `UsingTask``TaskFactory`. Daha fazla bilgi için [UsingTask öğesi (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
   
@@ -87,7 +85,7 @@ Geçirilen verileri içeren bir `UsingTask``TaskFactory`. Daha fazla bilgi için
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görevleri](../msbuild/msbuild-tasks.md)   
  [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
- [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)
+ [Proje Dosyası Şema Başvurusu](../msbuild/msbuild-project-file-schema-reference.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Öğe öğesi (MSBuild) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50bcae08190d052d02ec2cf468396692163a272d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1dfec558a9958d980d25d4160c4b7f2ce269cbb5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686959"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270044"
 ---
 # <a name="item-element-msbuild"></a>Öğe Unsuru (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [öğe unsuru (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/item-element-msbuild).  
-  
   
 Kullanıcı tanımlı bir öğe ve meta verilerini içerir. Kullanılan her öğe bir [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] alt öğesi olarak proje belirtilen bir `ItemGroup` öğesi.  
   
@@ -102,7 +100,7 @@ Kullanıcı tanımlı bir öğe ve meta verilerini içerir. Kullanılan her öğ
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Öğeleri](../msbuild/msbuild-items.md)   
  [MSBuild özellikleri](msbuild-properties1.md)   
- [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)
+ [Proje Dosyası Şema Başvurusu](../msbuild/msbuild-project-file-schema-reference.md)
 
 
 

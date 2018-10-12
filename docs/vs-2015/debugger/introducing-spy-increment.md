@@ -1,7 +1,7 @@
 ---
 title: Spy ++ ile tanışın | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f219d2e15dfeef325ea6ec7be44878e674cf10e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5e420adb00bc8972aead555eb281826db689914
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634254"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276269"
 ---
 # <a name="introducing-spy"></a>Spy++'a Giriş
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [giriş Spy ++](https://docs.microsoft.com/visualstudio/debugger/introducing-spy-increment).  
-  
 Spy ++ aşağıdaki görevleri gerçekleştirmenize olanak sağlar:  
   
 -   Sistem nesneleri arasındaki ilişkileri grafik ağacını görüntüler. Bunlar [işlemleri](../debugger/processes-view.md), [iş parçacıkları](../debugger/threads-view.md), ve [windows](../debugger/windows-view.md).  

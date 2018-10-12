@@ -1,7 +1,7 @@
 ---
 title: 'CA2219: özel durum yan tümceleri içinde özel durum harekete geçirmeyin | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3f3ea7368026e2e120e877a8689319762fa2b55e
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 32633adcff35514e8a37f409524396ec2d3f921d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42900405"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277679"
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219: Özel durum yan tümceleri içinde özel durum harekete geçirmeyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA2219: özel durum yan tümceleri içinde özel durum harekete geçirmeyin](https://docs.microsoft.com/visualstudio/code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses).
-
 |||
 |-|-|
 |TypeName|DoNotRaiseExceptionsInExceptionClauses|

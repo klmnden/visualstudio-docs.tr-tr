@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugThreads2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 1854f078-3b49-42c2-b65b-33e3b506fd63
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96a86c322ed2fa1ac750171116a0a11c9b2b4d99
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aff3103d122063277b2f935d2cb6f30353434ae6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682135"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269093"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [IEnumDebugThreads2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugthreads2).  
-  
 Geçerli hata ayıklama oturumunda çalışan iş parçacıkları bu interfac numaralandırır.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -49,9 +47,9 @@ IEnumDebugThreads2 : IUnknown
 |Yöntem|Açıklama|  
 |------------|-----------------|  
 |[Next](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|Belirtilen bir numaralandırma sıralı iş parçacıklarının sayısını alır.|  
-|[Atla](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|Bir numaralandırma sıralı iş parçacıklarında belirtilen sayıda atlar.|  
-|[Sıfırlama](../../../extensibility/debugger/reference/ienumdebugthreads2-reset.md)|Bir numaralandırma sıralı başlangıç durumuna sıfırlar.|  
-|[Kopya](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|Geçerli planla aynı sıralaması durumu içeren bir numaralandırıcı oluşturur.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|Bir numaralandırma sıralı iş parçacıklarında belirtilen sayıda atlar.|  
+|[Reset](../../../extensibility/debugger/reference/ienumdebugthreads2-reset.md)|Bir numaralandırma sıralı başlangıç durumuna sıfırlar.|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|Geçerli planla aynı sıralaması durumu içeren bir numaralandırıcı oluşturur.|  
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugthreads2-getcount.md)|İş parçacığı sayısını bir numaralandırıcı alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -70,5 +68,5 @@ IEnumDebugThreads2 : IUnknown
  [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)   
  [Adım](../../../extensibility/debugger/reference/idebugprocess3-step.md)   
  [Devam et](../../../extensibility/debugger/reference/idebugprocess3-continue.md)   
- [Yürütme](../../../extensibility/debugger/reference/idebugprocess3-execute.md)
+ [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)
 

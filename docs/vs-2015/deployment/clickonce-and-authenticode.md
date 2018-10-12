@@ -1,7 +1,7 @@
 ---
 title: ClickOnce ve Authenticode | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: cf05c73ee621d9eda1619627b2d0b65611e447fd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df3d87e240476aa02f5129f2238a1df55eb3be79
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692781"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289491"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce ve Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ClickOnce ve Authenticode](https://docs.microsoft.com/visualstudio/deployment/clickonce-and-authenticode).  
-  
 Authenticode * uygulama kodu uygulama yayımcısının özgünlüğünü doğrulamak dijital sertifika ile imzalamak için endüstri standardı şifreleme kullanan bir Microsoft teknolojisidir. Uygulama dağıtımı için Authenticode kullanılarak [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Truva atı riskini azaltır. Truva atı, virüs veya kötü amaçlı bir üçüncü taraf kurulu olan güvenilir bir kaynaktan gelen yasal bir program olarak görünen diğer zararlı programı değil. İmzalama [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bir dijital sertifika ile dağıtımları derlemeleri ve dosyaları değil doğrulamak için isteğe bağlı bir adımdır.  
   
  Aşağıdaki bölümlerde Authenticode içinde kullanılan dijital sertifikalar farklı türleri açıklanmaktadır, sertifikalar kullanılarak doğrulandı nasıl sertifika yetkilileri (CA'lar), zaman damgası sertifikaları rolünü ve yöntemleri için kullanılabilir depolama sertifikalar.  

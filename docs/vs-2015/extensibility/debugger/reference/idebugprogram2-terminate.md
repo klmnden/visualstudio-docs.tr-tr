@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::Terminate | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 4d3127d3-b1e9-4b28-ac22-2f2eea255f86
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e05edc99dcb408159966f08a3d38f6663f73f290
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d7e43ba54b7efae0d66ace43821e8736663136e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690646"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286604"
 ---
 # <a name="idebugprogram2terminate"></a>IDebugProgram2::Terminate
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [IDebugProgram2::Terminate](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram2-terminate).  
-  
 Program sona erer.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -53,5 +51,5 @@ int Terminate();
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
- [sonlandırma](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)
+ [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)
 

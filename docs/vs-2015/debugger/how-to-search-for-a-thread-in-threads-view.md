@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: iş parçacıkları görünümünde iş parçacığı arama | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 071b32a6f8947289d12ad8a402a316b1d174f65f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c7801cb937f2a94df92bf8ab3052e4e0e2f734d1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687516"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277452"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>Nasıl Yapılır: İş Parçacıkları Görünümünde İş Parçacığı Arama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: iş parçacıkları görünümünde iş parçacığı arama](https://docs.microsoft.com/visualstudio/debugger/how-to-search-for-a-thread-in-threads-view).  
-  
 Belirli bir iş parçacığı iş parçacıkları görünümünde iş parçacığı kimliği veya modül dizesi arama ölçütü olarak kullanarak arayabilirsiniz. İlk arama yönünü de belirtebilirsiniz. İletişim kutusunda alanları iş parçacığı ağacında seçilen iş parçacığı öznitelikleri gösterir.  
   
 ### <a name="to-search-for-a-thread-in-threads-view"></a>İş parçacıkları görünümünde iş parçacığı aramak için  

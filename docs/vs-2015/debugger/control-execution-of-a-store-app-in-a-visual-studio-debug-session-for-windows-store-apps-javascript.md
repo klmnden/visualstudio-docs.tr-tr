@@ -1,7 +1,7 @@
 ---
 title: Windows Store uygulamalarında (JavaScript) için Visual Studio hata ayıklama oturumunda bir Store uygulamasının yürütülmesini denetleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 583754b01f25509146bc3e3924e5132288a05285
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 598785a54980c73928a8d38b73fb105bc8bbe775
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881143"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275528"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Bir Store uygulamasının yürütülmesini denetleme (JavaScript) Windows Store uygulamaları için Visual Studio hata ayıklama oturumunda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Windows Store uygulamalarında (JavaScript) için Visual Studio hata ayıklama oturumunda bir Store uygulamasının yürütülmesini denetleme](https://docs.microsoft.com/visualstudio/debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript).  
-  
 Bu hızlı başlangıçta, Visual Studio hata ayıklayıcıda gitme ve bir oturumda program durumunu görüntülemek nasıl gösterir.  
   
  Bu hızlı başlangıçta, Visual Studio ile hata ayıklama için yenidir ve hata ayıklama oturumu Visual Studio'da gezinme hakkında daha fazla bilgi için isteyen geliştiriciler için geliştiriciler içindir. Kendi hata ayıklama resim öğretmek değildir. Örnek kodda işlevleri, yalnızca bu konuda açıklanan hata ayıklama yordamları göstermek için tasarlanmıştır. Uygulama veya işlev tasarımının en iyi işlevleri dağıtıyorsunuz değil. Aslında, İşlevler ve uygulama içinden her şeyin daha fazlasını yapmanız değil, hızlı bir şekilde keşfeder.  

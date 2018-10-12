@@ -1,7 +1,7 @@
 ---
 title: Visual Studio'da verilere bağlanma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,12 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: d96b6212492a0fde5d2b15e6dec551ddc1d67e74
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd1e620fcf1365cfb02834b3aa24130d5966e2e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632838"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264998"
 ---
 # <a name="connecting-to-data-in-visual-studio"></a>Visual Studio'da Verilere Bağlanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "42632838"
  [Nasıl yapılır: bir veritabanındaki verilere bağlanma](../data-tools/how-to-connect-to-data-in-a-database.md)  
  Uygulamanızı ve kullanarak bir veritabanı arasında bir bağlantı oluşturmayı açıklar **veri kaynağı Yapılandırma Sihirbazı**.  
   
- [Nasıl yapılır: bir hizmetteki verilere bağlanma](../data-tools/how-to-connect-to-data-in-a-service.md)  
+ [Nasıl Yapılır: Bir Hizmetteki Verilere Bağlanma](../data-tools/how-to-connect-to-data-in-a-service.md)  
  Uygulamanızı kullanarak bir Web hizmeti döndürülen veriler arasında bir bağlantı oluşturmayı açıklar **veri kaynağı Yapılandırma Sihirbazı**.  
   
  [Nasıl yapılır: nesnelerdeki verilere bağlanma](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b)  

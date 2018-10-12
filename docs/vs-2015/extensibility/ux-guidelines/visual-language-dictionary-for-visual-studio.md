@@ -1,7 +1,7 @@
 ---
 title: Visual Studio için görsel dil sözlüğü | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9eee2e412024cdb9eae7669d65e2283fc24488d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 250e7c80e47b9ea53306697d57b305fdcc9c645c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690274"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267637"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Visual Studio için görsel dil sözlüğü
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio için görsel dil sözlüğü](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio).  
-  
 Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramları göstermek için ortak bir görsel dil kullanır. Yeni simgelerin tasarlarken, bu sözlük kendi görüntünüzü belirtmek istediğiniz kavramları tanımlamak için kullanın.  
   
  **Genel yönergeler**  
@@ -58,7 +56,7 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 |**Eylem** simgesi de kullanılabilir bir ek açıklama olarak belirten temel eylemi otomatik ayarları kullanılarak gerçekleştirilir.|||  
 |**Etkinlik**|![Etkinlik simgesi](../../extensibility/ux-guidelines/media/vld-c-activity.png "VLD_C_Activity")|![Kod etkinliği simgesi](../../extensibility/ux-guidelines/media/vld-c-activity-codeactivity.png "VLD_C_Activity_CodeActivity") kod etkinliği|  
 |**Aktör**|![Aktör simge](../../extensibility/ux-guidelines/media/vld-c-actor.png "VLD_C_Actor")||  
-|**Ekle**|![Simge eklemek](../../extensibility/ux-guidelines/media/vld-c-add.png "VLD_C_Add")|![Tüm sürücü testleri simge eklemek](../../extensibility/ux-guidelines/media/vld-c-add-addalldrivertests.png "VLD_C_Add_AddAllDriverTests") tüm sürücü testleri ekleme![eki Simge Ekle](../../extensibility/ux-guidelines/media/vld-c-add-addattachment.png "VLD_C_Add_AddAttachment") ek ekleyin ![Davranışı Simge Ekle](../../extensibility/ux-guidelines/media/vld-c-add-addbehavior.png "VLD_C_Add_AddBehavior") davranış ekleme|  
+|**Add**|![Simge eklemek](../../extensibility/ux-guidelines/media/vld-c-add.png "VLD_C_Add")|![Tüm sürücü testleri simge eklemek](../../extensibility/ux-guidelines/media/vld-c-add-addalldrivertests.png "VLD_C_Add_AddAllDriverTests") tüm sürücü testleri ekleme![eki Simge Ekle](../../extensibility/ux-guidelines/media/vld-c-add-addattachment.png "VLD_C_Add_AddAttachment") ek ekleyin ![Davranışı Simge Ekle](../../extensibility/ux-guidelines/media/vld-c-add-addbehavior.png "VLD_C_Add_AddBehavior") davranış ekleme|  
 |**Adresi**|![Adresi simgesine](../../extensibility/ux-guidelines/media/vld-c-address.png "VLD_C_Address")||  
 |**Uyarı**|![Uyarı simgesi](../../extensibility/ux-guidelines/media/vld-c-alert.png "VLD_C_Alert")||  
 |**Alfa kanalı**|![Alfa kanalını simgesi](../../extensibility/ux-guidelines/media/vld-c-alphachannel.png "VLD_C_AlphaChannel")||  
@@ -66,7 +64,7 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 |**Uygulama** proje|![Uygulama simgesi](../../extensibility/ux-guidelines/media/vld-c-application.png "VLD_C_Application")|![Uygulama rolü hata simgesi](../../extensibility/ux-guidelines/media/vld-c-application-applicationroleerror.png "VLD_C_Application_ApplicationRoleError") uygulama rolü hatası![C&#43; &#43; MFC projesi simgesi](../../extensibility/ux-guidelines/media/vld-c-application-cppmfcproject.png "VLD_C_Application_ CPPMFCProject") C++ MFC projesi|  
 |**Alan**|![Ağ simgesi](../../extensibility/ux-guidelines/media/vld-c-area.png "VLD_C_Area")|![Eğri alan grafiği simgesini](../../extensibility/ux-guidelines/media/vld-c-area-splineareachart.png "VLD_C_Area_SplineAreaChart") eğri alan grafiği![Yığılmış Alan serisi simge](../../extensibility/ux-guidelines/media/vld-c-area-stackedareaseries.png "VLD_C_Area_StackedAreaSeries") Yığılmış Alan serisi|  
 |**Düzenleme**|![Düzenle simgesi](../../extensibility/ux-guidelines/media/vld-c-arrange.png "VLD_C_Arrange")|![Yerleşim şekilleri simgesi](../../extensibility/ux-guidelines/media/vld-c-arrange-arrangeshapes.png "VLD_C_Arrange_ArrangeShapes") şekilleri Yerleştir![otomatik&#45;şekiller simgesi düzenleme](../../extensibility/ux-guidelines/media/vld-c-arrange-autoarrangeshapes.png "VLD_C_Arrange_AutoArrangeShapes") Şekilleri Otomatik Yerleştir|  
-|**Ata**|![Simge atama](../../extensibility/ux-guidelines/media/vld-c-assign.png "VLD_C_Assign")||  
+|**Assign**|![Simge atama](../../extensibility/ux-guidelines/media/vld-c-assign.png "VLD_C_Assign")||  
 |**İlişkilendirme**|![İlişkilendirme simgesi](../../extensibility/ux-guidelines/media/vld-c-association.png "VLD_C_Association")|![İlişkilendirme Simge Ekle](../../extensibility/ux-guidelines/media/vld-c-association-addassociation.png "VLD_C_Association_AddAssociation") ilişkilendirme ekleyin![düzenleme ilişkilendirme simgesi](../../extensibility/ux-guidelines/media/vld-c-association-editassociation.png "VLD_C_Association_EditAssociation") Düzenle ilişkilendirme|  
 |**Asimetrik**|![Asimetrik simgesi](../../extensibility/ux-guidelines/media/vld-c-asymmetric.png "VLD_C_Asymmetric")||  
 |**Asimetrik** kavramı (örneğin, açık/koyu veya sol/sağ) karşı gözünüzde bir juxtaposition tarafından temsil edilir.|||  
@@ -115,7 +113,7 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 |**Sütun**|![Sütun simgesi](../../extensibility/ux-guidelines/media/vld-c-column.png "VLD_C_Column")|![AutoSize sütun simgesi](../../extensibility/ux-guidelines/media/vld-c-column-autosizecolumn.png "VLD_C_Column_AutosizeColumn") Autosize sütun![sütun ayrıntıları simgesini](../../extensibility/ux-guidelines/media/vld-c-column-columndetails.png "VLD_C_Column_ColumnDetails") sütunayrıntıları![ Sütun hata simgesi](../../extensibility/ux-guidelines/media/vld-c-column-columnerror.png "VLD_C_Column_ColumnError") sütun hatasını|  
 |**Yorum** geri bildirim, ek açıklama|![Yorum &#40;Kabarcık&#41; simgesi](../../extensibility/ux-guidelines/media/vld-c-comment-bubble.png "VLD_C_Comment_bubble")|![Açıklama Simge Ekle](../../extensibility/ux-guidelines/media/vld-c-comment-bubble-addcomment.png "VLD_C_Comment_bubble_AddComment") açıklama ekleme![açıklama balonu simgesini](../../extensibility/ux-guidelines/media/vld-c-comment-bubble-callout.png "VLD_C_Comment_bubble_Callout") belirtme|  
 |**Açıklama (kod)**|![Yorum &#40;kod&#41;](../../extensibility/ux-guidelines/media/vld-c-comment-lines.png "VLD_C_Comment_lines")|![Açıklamayı Kaldır simgesi](../../extensibility/ux-guidelines/media/vld-c-comment-lines-uncomment.png "VLD_C_Comment_lines_Uncomment") açıklamayı Kaldır|  
-|**Karşılaştırma**|![Simge karşılaştırma](../../extensibility/ux-guidelines/media/vld-c-compare.png "VLD_C_Compare")|![Veri simgesi karşılaştırma](../../extensibility/ux-guidelines/media/vld-c-compare-comparedata.png "VLD_C_Compare_CompareData") karşılaştırma veri![karşılaştırma klasörler simgesi](../../extensibility/ux-guidelines/media/vld-c-compare-comparefolders.png "VLD_C_Compare_CompareFolders") klasörleriKarşılaştır![ Karşılaştırma performans raporları simgesi](../../extensibility/ux-guidelines/media/vld-c-compare-compareperformancereports.png "VLD_C_Compare_ComparePerformanceReports") Porovnat sestavy výkonu|  
+|**Compare**|![Simge karşılaştırma](../../extensibility/ux-guidelines/media/vld-c-compare.png "VLD_C_Compare")|![Veri simgesi karşılaştırma](../../extensibility/ux-guidelines/media/vld-c-compare-comparedata.png "VLD_C_Compare_CompareData") karşılaştırma veri![karşılaştırma klasörler simgesi](../../extensibility/ux-guidelines/media/vld-c-compare-comparefolders.png "VLD_C_Compare_CompareFolders") klasörleriKarşılaştır![ Karşılaştırma performans raporları simgesi](../../extensibility/ux-guidelines/media/vld-c-compare-compareperformancereports.png "VLD_C_Compare_ComparePerformanceReports") Porovnat sestavy výkonu|  
 |**Bileşen**|![Bileşen simgesi](../../extensibility/ux-guidelines/media/vld-c-component.png "VLD_C_Component")|![Bileşen Simge Ekle](../../extensibility/ux-guidelines/media/vld-c-component-addcomponent.png "VLD_C_Component_AddComponent") Ekle bileşen![bileşen diyagramı simgesi](../../extensibility/ux-guidelines/media/vld-c-component-componentdiagram.png "VLD_C_Component_ComponentDiagram") bileşeni Diyagram![Windows Phone RT bileşeni simge](../../extensibility/ux-guidelines/media/vld-c-component-phonewindowsrtcomponent.png "VLD_C_Component_PhoneWindowsRTComponent") Windows Phone RT bileşeni|  
 |**Bağlanma**|![Bağlantı simgesi](../../extensibility/ux-guidelines/media/vld-c-connect.png "VLD_C_Connect")|![Bağlantı simgesi Ekle](../../extensibility/ux-guidelines/media/vld-c-connect-addconnection.png "VLD_C_Connect_AddConnection") Bağlantı Ekle![Connect test planı simgesi](../../extensibility/ux-guidelines/media/vld-c-connect-connecttestplan.png "VLD_C_Connect_ConnectTestPlan") Connect test planı ![Ortam simgesi Bağlan](../../extensibility/ux-guidelines/media/vld-c-connect-connecttoenvironment.png "VLD_C_Connect_ConnectToEnvironment") Ortama bağlan|  
 |**Console**|![Konsolu simgesi](../../extensibility/ux-guidelines/media/vld-c-console.png "VLD_C_Console")|![Konsol test simgesi](../../extensibility/ux-guidelines/media/vld-c-console-consoletest.png "VLD_C_Console_ConsoleTest") konsol test|  
@@ -286,7 +284,7 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 |Kavram|Ana simgesi|Diğer örnekleri|  
 |-------------|---------------|--------------------|  
 |**Paket**|![Paket simgesi](../../extensibility/ux-guidelines/media/vld-c-package.png "VLD_C_Package")|![Bulut paketi simgesi](../../extensibility/ux-guidelines/media/vld-c-package-cloudpackage.png "VLD_C_Package_CloudPackage") bulut paketi ![Oluştur paketi simgesi](../../extensibility/ux-guidelines/media/vld-c-package-createpackage.png "VLD_C_Package_CreatePackage") paketioluştur![ Sürücü paketi şablon simgesi](../../extensibility/ux-guidelines/media/vld-c-package-driverpackagetemplate.png "VLD_C_Package_DriverPackageTemplate") sürücü paketi şablonu|  
-|**Paralel**|![Paralel simgesi](../../extensibility/ux-guidelines/media/vld-c-parallel.png "VLD_C_Parallel")|![Her simge için paralel](../../extensibility/ux-guidelines/media/vld-c-parallel-parallelforeach.png "VLD_C_Parallel_ParallelForEach") her paralel|  
+|**Parallel**|![Paralel simgesi](../../extensibility/ux-guidelines/media/vld-c-parallel.png "VLD_C_Parallel")|![Her simge için paralel](../../extensibility/ux-guidelines/media/vld-c-parallel-parallelforeach.png "VLD_C_Parallel_ParallelForEach") her paralel|  
 |**Bölüm**|![Bölüm simgesi](../../extensibility/ux-guidelines/media/vld-c-partition.png "VLD_C_Partition")|![Bölüm düzeni simgesi](../../extensibility/ux-guidelines/media/vld-c-partition-partitionscheme.png "VLD_C_Partition_PartitionScheme") bölüm düzeni ![yeni bölüm simgesi](../../extensibility/ux-guidelines/media/vld-c-partition-newpartition.png "VLD_C_Partition_NewPartition") yeni bölüm ![Bölüm işlev simgesi](../../extensibility/ux-guidelines/media/vld-c-partition-partitionfunction.png "VLD_C_Partition_PartitionFunction") bölümleme işlevi|  
 |**Bölümleri**|![Bölümleri simgesi](../../extensibility/ux-guidelines/media/vld-c-parts.png "VLD_C_Parts")|![Atanan bölümü simgesi](../../extensibility/ux-guidelines/media/vld-c-parts-assignedpart.png "VLD_C_Parts_AssignedPart") bölümü atanan ![Misassigned bölümü simgesi](../../extensibility/ux-guidelines/media/vld-c-parts-misassignedpart.png "VLD_C_Parts_MisassignedPart") Misassigned bölümü|  
 |**Performans**|![Performans simgesi](../../extensibility/ux-guidelines/media/vld-c-performance.png "VLD_C_Performance")||  

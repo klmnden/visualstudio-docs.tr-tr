@@ -1,7 +1,7 @@
 ---
 title: Yalnızca kendi kodum | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e0a9787e7e0a203a77e456ec61ea8a80057ce92
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: c97810b69ef7256379b6d14bf29ba08a9e6e0040
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879986"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273942"
 ---
 # <a name="just-my-code"></a>Yalnızca Kendi Kodum
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yalnızca kendi kodum](https://docs.microsoft.com/visualstudio/debugger/just-my-code).  
-  
 .NET Framework dillerinde kullanan geliştiriciler, çağrı yığını windows sistemi, çerçeve ve diğer kullanıcı olmayan çağrılardan adımlar ve bunları daraltır hata ayıklayıcı özelliği çağırır kodum aşinasınız. Yalnızca kendi kodum, C++ ve JavaScript diller için genişletilmiştir. Bu konu, yalnızca kendi kodum .NET Framework, yerel C++ ve JavaScript kullanarak özellikleri açıklar. projeleri.  
   
 ##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> Etkinleştirmek veya devre dışı yalnızca kendi kodum  

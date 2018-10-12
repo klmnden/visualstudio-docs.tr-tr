@@ -1,7 +1,7 @@
 ---
 title: Çok örnekli araç penceresi oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca70aa6024f083cfff7de1e2ef687371eca44c8a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb5e058924d62d4c6688c95974774579f8ae81f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686216"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286371"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Çok Örnekli Araç Penceresi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bir çok örnekli araç penceresi oluşturma](https://docs.microsoft.com/visualstudio/extensibility/creating-a-multi-instance-tool-window).  
-  
 Böylece aynı anda birden çok örneğini açılabilir bir araç penceresi programlayabilirsiniz. Varsayılan olarak, araç pencerelerini açmak yalnızca bir örneğine sahip olabilirsiniz.  
   
  Çok örnekli araç penceresi kullandığınızda, aynı zamanda bilgi birkaç ilgili kaynakları gösterebilirsiniz. Örneğin, çok satırlı yerleştirebilirsiniz <xref:System.Windows.Forms.TextBox> birkaç kod parçacıkları bir programlama oturumu sırasında aynı anda kullanılabilir olacak şekilde bir çok örnekli araç penceresinde denetim. Ayrıca örneğin yerleştirebilirsiniz bir <xref:System.Windows.Forms.DataGrid> denetimi ve bir açılan liste kutusunu çok örnekli araç penceresinde birden çok gerçek zamanlı veri kaynakları aynı anda izlenebilir.  

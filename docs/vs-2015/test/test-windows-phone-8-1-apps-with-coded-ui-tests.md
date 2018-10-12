@@ -1,7 +1,7 @@
 ---
 title: Kodlanmış UI testleriyle Windows UWP ve 8.1 Phone uygulamalarını test | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c9472346212d68b3ee682450995d55eb0a5ddd9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 604ac82fbcda190c63a15e5ba0a1800022853b07
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695736"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285941"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Kodlanmış UI Testleriyle Windows UWP ve 8.1 Phone Uygulamalarını Test Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Test Windows UWP ve 8.1 Phone uygulamalarını kodlanmış UI testleriyle](https://docs.microsoft.com/visualstudio/test/test-windows-phone-8-1-apps-with-coded-ui-tests).  
-  
 Bu kılavuz, mobil cihaz veya öykünücü üzerinde çalışan UWP uygulamaları ve XAML tabanlı Phone 8.1 uygulamaları için kullanıcı Arabirimi testleri oluşturmak için kullanın.   
   
 ## <a name="create-a-simple-windows-phone-app"></a>Basit bir Windows Phone uygulaması oluşturun  
@@ -384,7 +382,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 |Testleri çalıştırmak için hedef|Yerel veya uzak bilgisayar. Testleri çalıştırmak için otomatikleştirilmiş test çalışmasına kullandığınızda, uzak bilgisayarlara belirtilebilir. Bkz: [Microsoft Test Yöneticisi'nde bir test çalışmasını otomatikleştirme](http://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Öykünücü veya cihaz. Bkz, [s: testleri yalnızca öykünücü üzerinde yürütülebilir veya fiziksel bir cihaz ayrıca kullanabilirim?](#TestingPhoneAppsCodedUI_EmulatorDevice) bu konuda.|  
 |Komut satırından yürütmek|Ayarlar dosyası hedef belirtmek için gerekli değildir.|Runsettings dosyası hedef belirtmek için gereklidir.|  
 |Kabuk denetimleri için özel sınıflar|<xref:Microsoft.VisualStudio.TestTools.UITesting.DirectUIControls.DirectUIControl>|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|  
-|WebView denetiminde XAML uygulama|Html * kullanırsanız desteklenen özel HTML öğeleri ile etkileşim kurmak için sınıflar. Bkz: <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|Desteklenmez.|  
+|WebView denetiminde XAML uygulama|Html * kullanırsanız desteklenen özel HTML öğeleri ile etkileşim kurmak için sınıflar. Bkz. <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|Desteklenmez.|  
 |MTM'den otomatik testler yürütme|Desteklenen.|Desteklenmez.|  
 |Veri tabanlı testler|Bkz: [veri tabanlı testler](../test/creating-a-data-driven-coded-ui-test.md) dış veri kaynakları kullanarak ve veri kaynağı kullanma hakkında bilgi için bir test yönteminde öznitelik.|Verileri, bir test metodunda DataRow özniteliğini kullanarak, belirtilen içindedir. Bkz: [kullanım verilerle çalışan kodlanmış UI testleri Windows Phone uygulamalarını](#TestingPhoneAppsCodedUI_DataDriven) bu konuda.|  
   

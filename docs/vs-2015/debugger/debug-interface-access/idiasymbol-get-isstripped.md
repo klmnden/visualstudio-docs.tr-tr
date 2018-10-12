@@ -1,7 +1,7 @@
 ---
 title: Idiasymbol::get_isstripped | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 793a265ae0291403d0b0e17f676115d9baaea21f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c8069a0d8e4cee8e56c4e103fee9709684b6877
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682097"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269828"
 ---
 # <a name="idiasymbolgetisstripped"></a>IDiaSymbol::get_isStripped
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Idiasymbol::get_isstripped](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-isstripped).  
-  
 Özel sembolleri sembol dosyasından kesilmiş belirten alır bayrak.  
   
 ## <a name="syntax"></a>Sözdizimi  

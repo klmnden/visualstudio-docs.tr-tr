@@ -1,7 +1,7 @@
 ---
 title: .NET bellek ayırma görünümü | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e53fe27148901bc4af78f9b607c0e3a70ba4b91
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63b5938131713c32f410f89c80a3efefa8b6c346
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695116"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268248"
 ---
 # <a name="net-memory-allocations-view"></a>.NET Bellek Ayırma Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [.NET bellek ayırma görünümü](https://docs.microsoft.com/visualstudio/profiling/dotnet-memory-allocations-view).  
-  
 Ayırma görünümü, profil oluşturma çalışması süresince oluşturulan türlerini listeler. Her türde ayırmalar şeklinde sonuçlanan işlevi yürütme yollarını görüntüler bir çağrı ağacı kök düğümü türüdür.  
   
  Profil oluşturma çalıştırmasını içinde oluşturulan türünden nesnelerin toplam sayısı ve bu tür nesneler için ayrılmış baytların toplam sayısı, türü bir satırdaki verileri görüntüler. Dahil ve hariç olan değerler türü için her zaman aynı olur.  

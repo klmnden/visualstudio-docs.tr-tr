@@ -1,7 +1,7 @@
 ---
 title: 'ASP.NET hata ayıklama: Sistem gereksinimleri | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5386390261028fd635f93bc06d3a3fc8805ebdd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f57cdfc52079a11bfb3bd83baa2e3ff2484d368f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628557"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286487"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET Hata Ayıklama: Sistem Gereksinimleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ASP.NET hata ayıklama: sistem gereksinimleri](https://docs.microsoft.com/visualstudio/debugger/aspnet-debugging-system-requirements).  
-  
 Bu konu için yazılım ve güvenlik gereksinimlerini açıklar [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] hata ayıklama senaryoları:  
   
 -   Yerel, hata ayıklamayı [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve Web uygulaması aynı bilgisayarda çalışır. Bu senaryo iki sürümü vardır:  
@@ -60,7 +58,7 @@ Bu konu için yazılım ve güvenlik gereksinimlerini açıklar [!INCLUDE[vsteca
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ASP.NET ve AJAX uygulamalarında hata ayıklama](../debugger/debugging-aspnet-and-ajax-applications.md)   
- [Nasıl yapılır: bir kullanıcı hesabı altında çalışan işlemini çalıştırma](../debugger/how-to-run-the-worker-process-under-a-user-account.md)
+ [Nasıl Yapılır: Bir Kullanıcı Hesabı Altında Çalışan İşlemini Çalıştırma](../debugger/how-to-run-the-worker-process-under-a-user-account.md)
 
 
 

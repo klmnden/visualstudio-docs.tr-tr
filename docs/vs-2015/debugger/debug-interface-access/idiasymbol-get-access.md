@@ -1,7 +1,7 @@
 ---
 title: Idiasymbol::get_access | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02b1a67e978586f9cdf851537886e018c87b91d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96d4a3b1d3d075d3509c11c9eb4aa4682a65a75c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689751"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286643"
 ---
 # <a name="idiasymbolgetaccess"></a>IDiaSymbol::get_access
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Idiasymbol::get_access](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-access).  
-  
 Erişim değiştiricisi bir sınıf üyesinin alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -59,7 +57,7 @@ HRESULT get_access (
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [CV_access_e numaralandırması](../../debugger/debug-interface-access/cv-access-e.md)
+ [CV_access_e Numaralandırması](../../debugger/debug-interface-access/cv-access-e.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: İleti görevi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7993fe70c52cfd0694bd50d873425eda82c0a7c6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29b51a3e51610ee15bf9908e6c0465fbe1fd5cd6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633875"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285083"
 ---
 # <a name="message-task"></a>İleti Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ileti görevini](https://docs.microsoft.com/visualstudio/msbuild/message-task).  
-  
   
 Derleme sırasında bir ileti kaydeder.  
   
@@ -71,7 +69,7 @@ Derleme sırasında bir ileti kaydeder.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
- [Derleme günlükleri alma](../msbuild/obtaining-build-logs-with-msbuild.md)
+ [Derleme Günlüklerini Alma](../msbuild/obtaining-build-logs-with-msbuild.md)
 
 
 

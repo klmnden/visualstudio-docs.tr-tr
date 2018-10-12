@@ -1,7 +1,7 @@
 ---
 title: Dize Görselleştirici iletişim kutusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,23 +29,21 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a225de3374865ac319c93dcebc1f0d58a7441a34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a1c48e318d413e689483ada285937eae07ef37ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629591"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275047"
 ---
 # <a name="string-visualizer-dialog-box"></a>Dize Görselleştirici İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [dize Görselleştirici iletişim kutusu](https://docs.microsoft.com/visualstudio/debugger/string-visualizer-dialog-box).  
-  
 Bu iletişim kutusunda, Visual Studio hata ayıklayıcıyla dahil standart görselleştiriciler biridir. Normal metin yanı sıra sonuçları anlamlı bir biçimde görüntülemenize olanak tanıyan HTML ile XML dizelerinde dize Görselleştirici değerlendirebilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
- [Özel Görselleştiriciler oluşturma](../debugger/create-custom-visualizers-of-data.md)
+ [Özel Görselleştirici Oluşturma](../debugger/create-custom-visualizers-of-data.md)
 
 
 

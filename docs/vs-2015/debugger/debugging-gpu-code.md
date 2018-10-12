@@ -1,7 +1,7 @@
 ---
 title: GPU kodunda hata ayıklama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1eead3a8f706564f9f91a385086f39ca31dc706e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f0bc862e114319642ee54f8ef16824fa24065e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687231"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279272"
 ---
 # <a name="debugging-gpu-code"></a>GPU Kodunda Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [GPU kodunda hata ayıklama](https://docs.microsoft.com/visualstudio/debugger/debugging-gpu-code).  
-  
 Grafik işlemci birimi (GPU) üzerinde çalışan C++ kodu hata ayıklaması yapabilirsiniz. GPU hata ayıklama desteği Visual Studio'da yarış algılama işlemlerini başlatma ve bunları ve hata ayıklama Windows tümleştirme ekleme içerir.  
   
 ## <a name="supported-platforms"></a>Desteklenen Platformlar  
@@ -59,15 +57,15 @@ Grafik işlemci birimi (GPU) üzerinde çalışan C++ kodu hata ayıklaması yap
 ## <a name="debugging-windows"></a>Windows hata ayıklama  
  Belirli hata ayıklama pencerelerini kullanarak, inceleyin, bayrak ve GPU iş parçacıklarını Dondur. Daha fazla bilgi için bkz.:  
   
--   [Paralel Yığınlar penceresini kullanma](../debugger/using-the-parallel-stacks-window.md)  
+-   [Paralel Yığınlar Penceresini Kullanma](../debugger/using-the-parallel-stacks-window.md)  
   
--   [Görevleri penceresini kullanma](../debugger/using-the-tasks-window.md)  
+-   [Görevleri Penceresini Kullanma](../debugger/using-the-tasks-window.md)  
   
--   [Nasıl yapılır: paralel İzleme penceresini kullanma](../debugger/how-to-use-the-parallel-watch-window.md)  
+-   [Nasıl Yapılır: Paralel İzleme Penceresini Kullanma](../debugger/how-to-use-the-parallel-watch-window.md)  
   
 -   [İş parçacıklarında ve işlemlerde hata ayıklama](../debugger/debug-threads-and-processes.md) (hata ayıklama konumu araç çubuğu)  
   
--   [Nasıl yapılır: GPU iş parçacıkları penceresini kullanma](../debugger/how-to-use-the-gpu-threads-window.md)  
+-   [Nasıl Yapılır: GPU İş Parçacıkları Penceresini Kullanma](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>Veri eşitleme özel durumları  
  Hata ayıklayıcı yürütme sırasında birkaç veri eşitleme koşullar tanımlayabilirsiniz. Bir koşul algılandığında, hata ayıklayıcı kesme durumuna girer. İki seçeneğiniz vardır —**sonu** veya **devam**. Kullanarak **özel durumları** iletişim kutusu, hata ayıklayıcı Bu koşullar algılar ve ayrıca hangi koşullar Bu için keser olup olmadığını yapılandırabilirsiniz. Daha fazla bilgi için [yönetme özel durumları hata ayıklayıcısı ile](../debugger/managing-exceptions-with-the-debugger.md). Ayrıca **seçenekleri** yazılan veriler veri değerini değiştirmez, hata ayıklayıcısını özel durumlar yoksayması gerektiğini belirtmek için iletişim kutusu. Daha fazla bilgi için [genel, hata ayıklama, Seçenekler iletişim kutusu](../debugger/general-debugging-options-dialog-box.md).  

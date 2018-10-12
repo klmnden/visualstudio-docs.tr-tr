@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: kod parçacığı oluşturma | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2827b81c15a7ca9eb402c228cfa54635c9fcf2df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 038635db92d08837cc6519670053c9619ebe3c9b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687524"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267754"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>İzlenecek Yol: Kod Parçacığı Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [izlenecek yol: kod parçacığı oluşturma](https://docs.microsoft.com/visualstudio/ide/walkthrough-creating-a-code-snippet).  
-  
 Yalnızca birkaç adımda bir kod parçacığı oluşturabilirsiniz. Tek yapmak için ihtiyacınız olan bir XML dosyası oluşturun, uygun öğeleri doldurmak ve kodunuzu ekleyin. Kodunuza başvurular ve değiştirme parametreleri de ekleyebilirsiniz. Kod parçacığını kod parçacıkları yöneticisindeki İçe Aktar düğmesini kullanarak Visual Studio yüklemenize ekleyebilirsiniz (**Araçlar/kod parçacıkları Yöneticisi**).  
   
 > [!TIP]

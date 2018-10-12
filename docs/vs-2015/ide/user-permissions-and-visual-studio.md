@@ -1,7 +1,7 @@
 ---
 title: Kullanıcı izinleri ve Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a73ebaa7f720d149e35d23eec3655ab896c48844
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40d0fc07a5e305470ba38fdf897cfc951a138cd2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687419"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265739"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Kullanıcı İzinleri ve Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [kullanıcı izinleri ve Visual Studio](https://docs.microsoft.com/visualstudio/ide/user-permissions-and-visual-studio).  
-  
 Güvenlik nedenleriyle, mümkün oldukça Visual Studio'yu normal bir kullanıcı olarak çalıştırmanız gerekir.  
   
 > [!WARNING]
@@ -41,7 +39,7 @@ Güvenlik nedenleriyle, mümkün oldukça Visual Studio'yu normal bir kullanıc�
 |Alan|Görev|Daha fazla bilgi için|  
 |----------|----------|--------------------------|  
 |Yükleme|Visual Studio'yu Yükleme.|[Visual Studio 2015'i yükleme](../install/install-visual-studio-2015.md)|  
-||Visual Studio deneme sürümünden yükseltme.|[Nasıl yapılır: Visual Studio deneme sürümünden yükseltme](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|  
+||Visual Studio deneme sürümünden yükseltme.|[Nasıl Yapılır. Visual Studio Deneme Sürümünden Yükseltme](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|  
 ||Yerel Yardım içeriğini yükleme, güncelleştirme veya kaldırma.|[Yerel İçeriği Yükleme ve Yönetme](../ide/install-and-manage-local-content.md)|  
 |Uygulama türleri|SharePoint 2010 çözümleri geliştirme.|[SharePoint Çözümleri Geliştirmek için Gereksinimler](http://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|  
 ||İçin bir geliştirici lisansı alma [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].|[Bir geliştirici lisansı (Windows Store uygulamaları)](http://go.microsoft.com/fwlink/?LinkID=241313)|  
@@ -49,12 +47,12 @@ Güvenlik nedenleriyle, mümkün oldukça Visual Studio'yu normal bir kullanıc�
 |Eklentiler|IDE'de klasik COM kullanılarak yazılmış eklentileri yükleme ve kullanma.|[Eklentiler ve sihirbazlar oluşturma](http://msdn.microsoft.com/library/c5a47c21-6668-4de3-898d-afa969317e73)|  
 |Oluşturma|Bir bileşeni kayıt ettiren oluşturma sonrası olayları kullanma.|[Özel Derleme Adımlarını ve Derleme Olaylarını Anlama](http://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|  
 ||C++ projeleri oluşturduğunuzda kayıt adımı ekleme.|[Özel Derleme Adımlarını ve Derleme Olaylarını Anlama](http://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|  
-|Hata Ayıklama|Yükseltilmiş izinlerle çalışan uygulamalarda hata ayıklama.|[Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)|  
-||ASP.NET web siteleri gibi farklı bir kullanıcı hesabı altında çalışan uygulamalarda hata ayıklama.|[ASP.NET ve AJAX uygulamalarında hata ayıklama](../debugger/debugging-aspnet-and-ajax-applications.md)|  
+|Hata Ayıklama|Yükseltilmiş izinlerle çalışan uygulamalarda hata ayıklama.|[Hata Ayıklayıcısı Ayarları ve Hazırlığı](../debugger/debugger-settings-and-preparation.md)|  
+||ASP.NET web siteleri gibi farklı bir kullanıcı hesabı altında çalışan uygulamalarda hata ayıklama.|[ASP.NET ve AJAX Uygulamalarında Hata Ayıklama](../debugger/debugging-aspnet-and-ajax-applications.md)|  
 ||XAML Tarayıcı Uygulamaları (XBAP) için bölgede hata ayıklama.|[WPF Konağı (PresentationHost.exe)](http://msdn.microsoft.com/library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|  
 ||Microsoft Azure için bulut hizmeti projelerinde hata ayıklamak için öykünücü kullanma.|[Visual Studio'da bir bulut hizmetinin hatalarını ayıklama](http://go.microsoft.com/fwlink/?LinkId=266725)|  
 ||Uzaktan hata ayıklama için bir güvenlik duvarı yapılandırma.|[Cihazda uzak araçları ayarlama](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|  
-|Performans araçları|Uygulama profili oluşturma.|[Performans profili oluşturma Başlangıç Kılavuzu](../profiling/beginners-guide-to-performance-profiling.md)|  
+|Performans araçları|Uygulama profili oluşturma.|[Performans Profili Oluşturma Başlangıç Kılavuzu](../profiling/beginners-guide-to-performance-profiling.md)|  
 |Dağıtım|Yerel bir bilgisayarda Internet Information Services'a (IIS) web uygulaması dağıtma.|[Visual Studio veya Visual Web Developer kullanarak bir barındırma sağlayıcısı bir ASP.NET Web uygulaması dağıtma: IIS'ye bir Test ortamı olarak dağıtma](http://go.microsoft.com/fwlink/?LinkId=266478)|  
 |Microsoft'a geri bildirim sağlama|Visual Studio Müşteri Deneyimi Programı'na katılım şeklinizi değiştirme.|[Nasıl yapılır: geri bildirim gönder](../misc/how-to-send-feedback-about-visual-studio.md)|  
   

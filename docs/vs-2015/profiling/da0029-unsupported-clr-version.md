@@ -1,7 +1,7 @@
 ---
 title: 'DA0029: Desteklenmeyen CLR sürümü | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df5deda533c21033d26af4b8dc08d98a5dafc583
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6334fc69607f6d39e75d20c3b3ca228507db169d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631704"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265151"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: Desteklenmeyen CLR Sürümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [DA0029: Desteklenmeyen CLR sürümü](https://docs.microsoft.com/visualstudio/profiling/da0029-unsupported-clr-version).  
-  
 Kural Kimliği | DA0029 |  
 | Kategori | Profil oluşturma araçları kullanım |  
 | Profil oluşturma yöntemi | Komut satırından profil oluşturma |  

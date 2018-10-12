@@ -1,7 +1,7 @@
 ---
 title: IDebugPendingBreakpoint2::SetPassCount | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 08ddd328-57eb-42e0-baa9-8424dcd1bf04
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b73f3df393940dd387be36d79760b35e5508552
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1dc1dddcae442a4fb8ac3eaaf65fc47261d62a49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688206"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269210"
 ---
 # <a name="idebugpendingbreakpoint2setpasscount"></a>IDebugPendingBreakpoint2::SetPassCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [IDebugPendingBreakpoint2::SetPassCount](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount).  
-  
 Bekleyen kesme noktasıyla ilişkili parola sayısı değiştirir veya ayarlar.  
   
 ## <a name="syntax"></a>Sözdizimi  

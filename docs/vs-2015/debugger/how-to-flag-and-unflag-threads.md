@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: iş parçacıklarını bayrakla işaretleme ve bayrak | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f81de0353311d11cf744487d581296500d62ecb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb6c6c3f9c333ef1613f2733a476e7843f7249b4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694735"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289139"
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>Nasıl Yapılır: İş Parçacıklarını Bayrakla İşaretleme ve İşareti Geri Alma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: bayrağı ve iş parçacıklarını bayrakla](https://docs.microsoft.com/visualstudio/debugger/how-to-flag-and-unflag-threads).  
-  
 Bir simge ile işaretleyerek özel dikkat vermek istediğiniz bir iş parçacığı işaretleyebilirsiniz **iş parçacıkları**, **Paralel Yığınlar**, **paralel izleme**, ve **GPU İş parçacığı** windows. Başkalarının bayraklı iş parçacıklarını diğer iş parçacıklarından ayırt etmek ve bu simgeyi yardımcı olabilir.  
   
  Bayraklı iş parçacıklarını ayrıca Al, özel olarak değerlendirilmesi **iş parçacığı** listesini **hata ayıklama konumu** araç çubuğu. Bu liste tüm iş parçacıkları veya yalnızca bayraklı iş parçacıklarını gösterebilirsiniz. Bir iş parçacığı bayrak olduğunda **iş parçacığı** listesi yalnızca bayraklı iş parçacıklarını gösterecek şekilde otomatik olarak geçer, ancak geçiş yapabilirsiniz tüm iş parçacıklarının uygun şekilde geri gösterilecek.  
@@ -69,7 +67,7 @@ Bir simge ile işaretleyerek özel dikkat vermek istediğiniz bir iş parçacı�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [İzlenecek yol: çok iş parçacıklı uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-multithreaded-application.md)
+ [İzlenecek Yol: Çok İş Parçacıklı Uygulamada Hata Ayıklama](../debugger/walkthrough-debugging-a-multithreaded-application.md)
 
 
 

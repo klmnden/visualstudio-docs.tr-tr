@@ -1,7 +1,7 @@
 ---
 title: Pencere Özellikleri iletişim kutusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab4606972db64fe0e89cd0585b85353bfe0e2d37
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eee934eb2a0b1fa04a85dc77735e3d92dcbff80e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674969"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288021"
 ---
 # <a name="window-properties-dialog-box"></a>Pencere Özellikleri İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [pencere Özellikleri iletişim kutusu](https://docs.microsoft.com/visualstudio/debugger/window-properties-dialog-box).  
-  
 Belirli bir pencere hakkında daha fazla bilgi için bu iletişim kutusunu kullanın. Bu iletişim kutusunu görüntülemek için odağı taşıyın [Windows görünümü](../debugger/windows-view.md) penceresi. Herhangi bir pencere düğüm ağaçta seçin ve ardından **özellikleri** gelen **görünümü** menüsü.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
@@ -47,7 +45,7 @@ Belirli bir pencere hakkında daha fazla bilgi için bu iletişim kutusunu kulla
  Seçilen pencere işlemini tanımlar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Pencere arama iletişim kutusu](../debugger/window-search-dialog-box.md)  
+ [Pencere Arama İletişim Kutusu](../debugger/window-search-dialog-box.md)  
  Windows görünümünde belirli bir pencere için düğüm bulmak için kullanılır.  
   
  [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  

@@ -1,7 +1,7 @@
 ---
 title: İleti numaralandırıcısı | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 374881ecfe7af76b4d5aed3c6ae56b64094406fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d03e4c56a5cee3964ae5a4ec2fd9ca328988cdab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627520"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285590"
 ---
 # <a name="message-enumerator"></a>İleti Numaralandırıcısı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ileti numaralandırıcısı](https://docs.microsoft.com/visualstudio/extensibility/message-enumerator).  
-  
 Aşağıdaki bayrakları için kullanılan `TEXTOUTPROC` işlevini çağırdığında, IDE sağlayan bir geri çağırma işlevidir [SccOpenProject](../extensibility/sccopenproject-function.md) (bkz [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) geri çağırma hakkında ayrıntılı bilgi için işlevi).  
   
  İşlemi iptal etmek için IDE istenirse, iptal iletilerinden birini alabilirsiniz. Bu durumda, kaynak denetim eklentisini kullanan `SCC_MSG_STARTCANCEL` görüntülemek için IDE sormak **iptal** düğmesi. Bundan sonra herhangi bir dizi normal ileti gönderilebilir. Bu döndürür varsa `SCC_MSG_RTN_CANCEL`, eklenti işlemi çıkar ve döndürür. Ayrıca eklentinin yoklar `SCC_MSG_DOCANCEL` düzenli aralıklarla kullanıcı işlemi iptal etti belirlemek için. Tüm işlemler yapılır ya da devre dışı kullanıcı iptal etti, eklenti gönderirken `SCC_MSG_STOPCANCEL`. `SCC_MSG_INFO`, SCC_MSG_WARNING, ve SCC_MSG_ERROR türleri, iletileri kaydırma listesinde gösterilen iletileri için kullanılır. `SCC_MSG_STATUS` metin bir durum çubuğu veya geçici görüntüleme alanı içinde gösterilmesi gerekir olduğunu gösteren özel bir türdür. Kalıcı olarak listede kalmaz.  

@@ -1,7 +1,7 @@
 ---
 title: Kopyalama davranışını özelleştirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 58d96fd67189db7f3984ff1f82537d11306bfb7f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5e57f5d7b3ab3fa7f956516879f687ff9ac7491
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686988"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286474"
 ---
 # <a name="customizing-copy-behavior"></a>Kopyalama Davranışını Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [kopyalama davranışını özelleştirme](https://docs.microsoft.com/visualstudio/modeling/customizing-copy-behavior).  
-  
 İle oluşturulmuş bir etki alanına özgü dil (DSL) içinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Görselleştirme ve modelleme SDK'sı, kullanıcıya kopyalar ve öğeleri yapıştırır ne olur değiştirebilirsiniz.  
   
 ## <a name="standard-copy-and-paste-behavior"></a>Standart Kopyala ve yapıştır davranışı  

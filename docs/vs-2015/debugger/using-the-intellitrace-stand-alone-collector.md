@@ -1,7 +1,7 @@
 ---
 title: IntelliTrace tek başına toplayıcıyı kullanma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 111
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74c17850ebbbd8a7031bc1380bc4e651d0f9dda0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b35b6b42126bb0a1b159e3bf90e67aee15dd540
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697225"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267481"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>IntelliTrace tek başına toplayıcıyı kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [IntelliTrace collector kullanarak](https://docs.microsoft.com/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).  
-  
 **IntelliTrace collector** IntelliTrace Tanılama verilerini uygulamalarınız için üretim sunucularına ya da diğer ortamlarda hedef makinede Visual Studio yüklemeden ve değiştirmeden toplamanıza olanak tanır. Sistem ortam hedefleyin. IntelliTrace collector, web, SharePoint, WPF ve Windows Forms uygulamaları üzerinde çalışır. Veri toplama işiniz bittiğinde kaldırmak için toplayıcıyı silmeniz yeterlidir.  
   
  IntelliTrace'i çalışırken izleyin: [toplama ve analiz etme (kanal 9 videosu) hata ayıklama için üretimde IntelliTrace verilerini](http://go.microsoft.com/fwlink/?LinkID=251851)  

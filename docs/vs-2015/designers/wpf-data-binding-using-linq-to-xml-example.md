@@ -1,7 +1,7 @@
 ---
 title: LINQ to XML örneği kullanarak WPF verilerini bağlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 60a981b4ea2e2cbf6f71b9a845170ac67c218999
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c86dcc5e75474c6e0539b9d47f1b9ad11592de2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693279"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288047"
 ---
 # <a name="wpf-data-binding-using-linq-to-xml-example"></a>LINQ to XML örneği kullanarak WPF verilerini bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [kullanarak WPF verilerini bağlama LINQ'xml örneği için](https://docs.microsoft.com/visualstudio/designers/wpf-data-binding-using-linq-to-xml-example).  
-  
 Bu bölümde kullanıcı arabirimi bileşenleri gömülü bir XML veri kaynağına bağlanan bir Windows Presentation Foundation (WPF) örnek sağlar. Bu örnekte (ve onu içeren Visual Studio projesini) adı *LinqToXmlDataBinding*.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  

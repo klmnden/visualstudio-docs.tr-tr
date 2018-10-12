@@ -1,7 +1,7 @@
 ---
 title: Microsoft Visual Studio uzaktan hata ayıklama İzleyicisi'ne bağlanılamıyor. | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edc3d1384a67576bd805ef5efb60614a215a7a92
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 70a186ce1e75f516a08a85e3ce5ec792e6e4a788
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692505"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265914"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Microsoft Visual Studio Uzaktan Hata Ayıklama İzleyicisi'ne Bağlanılamıyor.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bağlanmak için Microsoft Visual Studio uzaktan hata ayıklama İzleyicisi alınamıyor](https://docs.microsoft.com/visualstudio/debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor).  
-  
 Geçersiz bir Visual Studio uzaktan hata ayıklama İzleyicisi ad girdiğinizde bu hata iletisi görüntülenir. **iliştirme** iletişim kutusu. Uzaktan hata ayıklama İzleyicisi adı genellikle, uzaktan hata ayıklama için bağlanmaya çalıştığınız makine ile aynıdır. Bu ileti, uzak makine ağ üzerinde mevcut değil, uzaktan hata ayıklama İzleyicisi düzgün uzak makinede kurulu değil veya uzak makineye ağ sorunlarının veya güvenlik duvarı varlığını nedeniyle erişilemez durumda nedeniyle oluşabilir.  
   
 > [!IMPORTANT]
@@ -91,7 +89,7 @@ Geçersiz bir Visual Studio uzaktan hata ayıklama İzleyicisi ad girdiğinizde 
  **res://C:\Program%20Files\Microsoft%20Visual%20Studio%2014.0\Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Uzaktan hata ayıklama](../debugger/remote-debugging.md)
+ [Uzaktan Hata Ayıklama](../debugger/remote-debugging.md)
 
 
 

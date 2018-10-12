@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: özel yönerge işlemcisi oluşturma | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d84fd8f389db771c1cbabbc3c5b830837703808e
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 6e9a46f5f686182fe78164499a8370e96ba87a76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880701"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274696"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>İzlenecek yol: Özel Yönerge İşlemcisi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [izlenecek yol: özel yönerge işlemcisi oluşturma](https://docs.microsoft.com/visualstudio/modeling/walkthrough-creating-a-custom-directive-processor).  
-  
 Yönerge işlemcileri * iş kod ekleyerek *oluşturulan dönüştürme sınıfına*. Eğer bir *yönergesi* gelen bir *metin şablonu*, metin şablonunuza yazdığınız kodun geri kalanını yönergenin sağladığı işlevselliğe dayanabilir.  
   
  Kendi özel yönerge işlemcilerinizi yazabilirsiniz. Bu metin şablonlarınızı özelleştirmenize olanak sağlar. Özel bir yönerge işlemcisi oluşturmak için öğesinden devralınan bir sınıf oluşturun. <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> veya <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.  

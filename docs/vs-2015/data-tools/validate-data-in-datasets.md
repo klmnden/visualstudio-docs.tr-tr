@@ -1,7 +1,7 @@
 ---
 title: Veri kümelerindeki verileri doğrulama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 728c496548a195acb98e0b5082d862d6dc8db241
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5dd01b20e84bbe39e0c082a0b598fb6742f33d9f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693018"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279025"
 ---
 # <a name="validate-data-in-datasets"></a>Veri kümelerindeki verileri doğrulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [veri kümelerindeki verileri doğrulama](https://docs.microsoft.com/visualstudio/data-tools/validate-data-in-datasets).  
-  
   
 Verileri doğrulama içinde bir veri kümesi şema kısıtlamalara uyması veri nesnelerine girilen değerlerin onaylanması işlemidir. Doğrulama işlemi ayrıca, bu değerler uygulamanız için kurulmuş kuralları takip ettiğiniz onaylar. Alttaki veritabanına güncelleştirmeleri göndermeden önce verileri doğrulamak için iyi bir uygulamadır. Bu, hataları ve bunun yanı sıra bir uygulama ve veritabanı arasındaki gidiş gelişlerin potansiyel sayısını azaltır.  
   

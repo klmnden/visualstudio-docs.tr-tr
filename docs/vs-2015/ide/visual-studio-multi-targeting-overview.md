@@ -1,7 +1,7 @@
 ---
 title: Visual Studio çoklu sürüm desteğine genel bakış | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6fcc7f1a1fb7b9f348ace817c800a5e353694e96
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab13a42c706b5f8c45f128e54bb4630b164e6a2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695061"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277075"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio Çoklu Sürüm Desteğine Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio çoklu sürüm desteğine genel bakış](https://docs.microsoft.com/visualstudio/ide/visual-studio-multi-targeting-overview).  
-  
 Bu sürümünde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], sürümünü belirtebilirsiniz [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] uygulamanız için gerekli olmasıdır. Bu nedenle, bu sürümü kullanmak istiyorsanız [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] önceki bir sürümde başlatılan bir projeyi geliştirmeye devam etmek için çerçeve hedefini değiştirmeniz gerekmez. Ayrıca, farklı sürümlerini hedefleyen framework'ün projeleri içeren bir çözüm oluşturabilirsiniz. Çerçeve hedefleme ayrıca uygulamanın yalnızca belirtilen çerçeve sürümünde kullanılabilir olan işlevleri kullanmasının garantilenmesine yardımcı olur.  
   
 > [!TIP]

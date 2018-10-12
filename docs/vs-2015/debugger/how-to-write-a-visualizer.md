@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: Görselleştirici yazma | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9b48b4f6a3813942eb20f9daecbe27aa9abffd30
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 815c2eba06af4fe50eb9dc87dd158fe1713342ac
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696029"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280156"
 ---
 # <a name="how-to-write-a-visualizer"></a>Nasıl Yapılır: Görselleştirici Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: Görselleştirici yazma](https://docs.microsoft.com/visualstudio/debugger/how-to-write-a-visualizer).  
-  
 Dışında herhangi bir yönetilen sınıfın bir nesnesi için özel Görselleştirici yazabileceğiniz <xref:System.Object> veya <xref:System.Array>.  
   
 > [!NOTE]
@@ -87,7 +85,7 @@ Dışında herhangi bir yönetilen sınıfın bir nesnesi için özel Görselle�
  [Özel Görselleştiriciler oluşturma](../debugger/create-custom-visualizers-of-data.md)   
  [Nasıl yapılır: Görselleştiriciyi yükleme](../debugger/how-to-install-a-visualizer.md)   
  [Nasıl yapılır: Görselleştiriciyi hata ayıklama ve Test](../debugger/how-to-test-and-debug-a-visualizer.md)   
- [Görselleştirici güvenlik konuları](../debugger/visualizer-security-considerations.md)
+ [Görselleştirici Güvenlik Konuları](../debugger/visualizer-security-considerations.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Uzak bir makinede çalıştırma Windows Store apps | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 289c7a4153a5a3485d80cc9c0739a37e4e9d6882
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a5e6044a56bfc94f7bc0e517ccbd91ae10d5b9d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685700"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289581"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Uzak makinede Windows Mağazası uygulamalarını çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [uzak bir makinede çalıştırma Windows Store apps](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine).  
-  
 Yalnızca Windows için geçerlidir] (.. /Image/windows_only_content.png "windows_only_content")  
   
  Visual Studio uzak Araçlar uygulaması, hata ayıklama, profil ve Visual Studio çalıştıran ikinci bir bilgisayardan bir cihazda çalışan bir Windows Store uygulaması test çalıştırmak sağlar. Visual Studio bilgisayarı, Windows Store uygulamaları dokunmatik, coğrafi konum ve fiziksel yön gibi belirli işlevleri desteklemiyorsa, uzak bir cihazda çalıştırma özellikle etkili olabilir. Bu konu başlığı altında yapılandırmak ve bir uzak oturumu başlatmak için gereken yordamları açıklar.  
@@ -38,7 +36,7 @@ Yalnızca Windows için geçerlidir] (.. /Image/windows_only_content.png "window
 ##  <a name="BKMK_In_this_topic"></a> Bu konudaki  
  Şunları öğrenebilirsiniz:  
   
- [Önkoşullar](#BKMK_Önkoşullar)  
+ [Önkoşullar](#BKMK_Prerequisites)  
   
  [Güvenlik](#BKMK_Security)  
   
@@ -179,7 +177,7 @@ Yalnızca Windows için geçerlidir] (.. /Image/windows_only_content.png "window
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio ile Store uygulamalarını test etme](../test/testing-store-apps-with-visual-studio.md)   
- [Visual Studio'da uygulamalarının hatalarını ayıklama](../debugger/debug-store-apps-in-visual-studio.md)
+ [Visual Studio’da uygulamaların hatalarını ayıklama](../debugger/debug-store-apps-in-visual-studio.md)
 
 
 

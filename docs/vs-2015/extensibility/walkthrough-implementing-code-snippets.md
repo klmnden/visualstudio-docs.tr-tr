@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: Kod parçacıkları uygulama | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 86d0ef82422b5f9cd419bf31e8b92b789fac1226
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b11234cd9dda19d010eb8408c359067697d95d80
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693022"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287163"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>İzlenecek Yol: Kod Parçacıkları Uygulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [izlenecek yol: kod parçacıkları uygulama](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-implementing-code-snippets).  
-  
 Kod parçacıklarınızı oluşturmak ve uzantının kullanıcılar için kendi kod ekleyebilmeniz bunları bir düzenleyici uzantısına dahil etme.  
   
  Kod parçacığı, kod veya bir dosyada edilebilecek diğer metin bir parçası olan. Üzerinde belirli programlama dilleri için kaydedilen tüm parçacıkları görüntülemek için **Araçları** menüsünü tıklatın **kod parçacığı Yöneticisi**. Sağ tıklatın, kod parçacığı, istediğiniz bir dosyada bir kod parçacığını eklemek için tıklatın **parçacık Ekle** veya **Surround With**, istediğiniz kod parçacığı bulun ve çift tıklatın. SEKME veya SHIFT + TAB ilgili bölümlerini kod parçacığını değiştirmek ve kabul etmek için ENTER veya ESC tuşuna basın. Daha fazla bilgi için [kod parçacıkları](../ide/code-snippets.md).  

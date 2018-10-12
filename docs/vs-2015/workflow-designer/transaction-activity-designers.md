@@ -1,7 +1,7 @@
 ---
 title: İşlem etkinlik tasarımcıları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 3bd211dbc2f9bf10eb00092dcd7501a20c724afc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 85afc69eae7e2478be9d98ec714048509bac3236
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630778"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266161"
 ---
 # <a name="transaction-activity-designers"></a>İşlem Etkinlik Tasarımcıları
 İşlem etkinlik tasarımcıları oluşturmak ve işlem etkinlikleri gibi yapılandırmak için kullanılan dengelemek ve onaylayın. Bu bölümde yer alan ve aşağıdaki tabloda listelenen konular Kılavuzu nasıl kullanılacağı hakkında sağlamaya [!INCLUDE[wfd2](../includes/wfd2-md.md)] etkinliği ve Şablon tasarımcıları.  
@@ -29,10 +29,10 @@ ms.locfileid: "42630778"
  [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)  
  Oluşturmak ve yapılandırmak için kullanılan bir <xref:System.Activities.Statements.CompensableActivity> etkinlik.  
   
- [Telafi](../workflow-designer/compensate-activity-designer.md)  
+ [Compensate](../workflow-designer/compensate-activity-designer.md)  
  Oluşturmak ve yapılandırmak için kullanılan bir <xref:System.Activities.Statements.Compensate> etkinlik.  
   
- [Onayla](../workflow-designer/confirm-activity-designer.md)  
+ [Confirm](../workflow-designer/confirm-activity-designer.md)  
  Oluşturmak ve yapılandırmak için kullanılan bir <xref:System.Activities.Statements.Confirm> etkinlik.  
   
  [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)  

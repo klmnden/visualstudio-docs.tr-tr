@@ -1,7 +1,7 @@
 ---
 title: Yönetilen kod uyarıları için Kod Analizi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4e1d74a44db244ed83e7d05fb09e66c96475466c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 300875689a8ea6e872e287eaed6d2328bdab5170
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683732"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278921"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Yönetilen Kod için Kod Çözümleme Uyarıları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yönetilen kod uyarıları için Kod Analizi](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-for-managed-code-warnings).  
-  
 Yönetilen kod analizi aracı, yönetilen kod kitaplıkları kuralı ihlallerini göstermek uyarılar sağlar. Uyarılar, tasarım, yerelleştirme, performans ve güvenlik gibi kural alanları halinde düzenlenir. Her uyarı, yönetilen kod analizi kural ihlalini gösterir. Bu bölümde, her yönetilen kod analizi uyarısı için derinlemesine tartışmalar ve örnekler sağlar.  
   
  Aşağıdaki tabloda, her uyarı için sağlanan bilgi türünü gösterir.  
@@ -54,7 +52,7 @@ Yönetilen kod analizi aracı, yönetilen kod kitaplıkları kuralı ihlallerini
   
 |||  
 |-|-|  
-|[Checkıd uyarıları](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Checkıd tüm uyarıları listeler|  
+|[CheckId Uyarıları](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Checkıd tüm uyarıları listeler|  
 |[Şifreleme Uyarıları](../code-quality/cryptography-warnings.md)|Daha güvenli kütüphaneleri ve uygulamaları doğru kullanımı aracılığıyla şifreleme desteği uyarılar.|  
 |[Tasarım Uyarıları](../code-quality/design-warnings.md)|Tarafından belirtilen doğru kitaplık tasarım desteği uyarıları [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] tasarım yönergeleri.|  
 |[Genelleştirme Uyarıları](../code-quality/globalization-warnings.md)|Dünya çapında kullanılmaya hazır kitaplıkları ve uygulamaları desteklemek uyarılar.|  

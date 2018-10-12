@@ -1,7 +1,7 @@
 ---
 title: 'DA0014: aşırı yüksek ücretler diske etkin bellek Sayfalaması | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 158ccc60d356fd83a808ca1a6d74268e53adb4b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0f3f62ecf91803e16ab1bd8bcdb59eecdc9d91e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691296"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288736"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: Aşırı yüksek oranda diske etkin bellek sayfalaması gerçekleşiyor.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [DA0014: aşırı yüksek ücretler diske etkin bellek Sayfalaması](https://docs.microsoft.com/visualstudio/profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk).  
-  
 Kural Kimliği | DA0014 |  
 | Kategori | Bellek ve disk belleği |  
 | Profil oluşturma yöntemi | Tüm |  

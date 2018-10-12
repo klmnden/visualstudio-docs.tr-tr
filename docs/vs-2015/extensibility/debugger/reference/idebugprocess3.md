@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess3 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7bd6b952-cf34-4e66-b8f6-d472dac3748f
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab646482762d9175a682b55691d012b2facef5f0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a5392329892c564608ab9649e29f1ff2bd2b1044
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688162"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269730"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [IDebugProcess3](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess3).  
-  
 Bu arabirim, çalışan bir işleme ve programları temsil eder. Bu arabirim için çeşitli yöntemlerin yerine mevcut [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) arabirimi. Bu işlemdeki tüm programlar üzerinde denetim sağlar.  
   
 > [!NOTE]
@@ -53,9 +51,9 @@ IDebugProcess3 : IDebugProcess2
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Devam et](../../../extensibility/debugger/reference/idebugprocess3-continue.md)|Yürütülmesini veya bir işlem üzerinden Adımlama devam eder.|  
-|[Yürütme](../../../extensibility/debugger/reference/idebugprocess3-execute.md)|Yürütme işlemi başlar.|  
-|[Adım](../../../extensibility/debugger/reference/idebugprocess3-step.md)|Bir yönerge veya deyimi işlemindeki adımları iletin.|  
+|[Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)|Yürütülmesini veya bir işlem üzerinden Adımlama devam eder.|  
+|[Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)|Yürütme işlemi başlar.|  
+|[Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)|Bir yönerge veya deyimi işlemindeki adımları iletin.|  
 |[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)|Hata ayıklama işlemi başlatıldı nedenini alır.|  
 |[SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)|Hata ayıklama altyapısı yükleyebilir ve uygun ifade değerlendiricisi barındırma dili ayarlar.|  
 |[GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)|Bu işlem için ayarlanmış dili alır.|  

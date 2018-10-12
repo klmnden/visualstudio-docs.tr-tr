@@ -1,7 +1,7 @@
 ---
 title: Uzaktan hata ayıklama için Windows Güvenlik Duvarı yapılandırma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9189cbc49d327a9106284dc6078eed3e21cc0f9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cb3473e8c34f36e1cde0450563711824ce22a37d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629367"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273890"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Uzaktan hata ayıklama için Windows Güvenlik duvarını yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [uzaktan hata ayıklama için Windows Güvenlik Duvarı Yapılandırma](https://docs.microsoft.com/visualstudio/debugger/configure-the-windows-firewall-for-remote-debugging).  
-  
 Bu konu, aşağıdaki işletim sistemlerini çalıştıran bilgisayarlarda uzaktan hata ayıklamayı etkinleştirmek için Güvenlik Duvarı'nı yapılandırmak açıklar:  
   
 -   Windows 7  
@@ -119,7 +117,7 @@ Bu konu, aşağıdaki işletim sistemlerini çalıştıran bilgisayarlarda uzakt
 8.  Yeni kuralınıza görmelisiniz **gelen kuralları** veya **giden kuralları** listesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Uzaktan hata ayıklama](../debugger/remote-debugging.md)
+ [Uzaktan Hata Ayıklama](../debugger/remote-debugging.md)
 
 
 

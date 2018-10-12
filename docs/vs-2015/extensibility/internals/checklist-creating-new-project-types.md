@@ -1,7 +1,7 @@
 ---
 title: 'Denetim listesi: Yeni proje türleri oluşturma | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f73462d32e0b047e0b2427646cfc5a3709c5e78a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8047ea1aeb6a163a627f9198ca3f6731419949ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631827"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285993"
 ---
 # <a name="checklist-creating-new-project-types"></a>Denetim Listesi: Yeni Proje Türleri Oluşturma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [denetim listesi: Yeni proje türleri oluşturma](https://docs.microsoft.com/visualstudio/extensibility/internals/checklist-creating-new-project-types).  
-  
 Yeni bir proje türü oluşturmak için birkaç görevi tamamlamanız gerekir. Aşağıdaki denetim listesinde, bu görevlerin bir kılavuz sağlar.  
   
 1.  Yeni Proje türünüz için işlevsellik tasarlayın. Daha fazla bilgi için [proje türü tasarım kararları](../../extensibility/internals/project-type-design-decisions.md).  

@@ -1,7 +1,7 @@
 ---
 title: Uygulama ayarları (.NET) yönetme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bc739c3ad34d5ed3b3de0a72ec76245c1ba0c155
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb2623c9122b987d8e0fe781b62127cd65bde0dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693606"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289516"
 ---
 # <a name="managing-application-settings-net"></a>Uygulama Ayarlarını Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [uygulama ayarlarını yönetme (.NET)](https://docs.microsoft.com/visualstudio/ide/managing-application-settings-dotnet).  
-  
 Uygulama ayarları, uygulama bilgilerini dinamik olarak depolamanıza olanak sağlar. Ayarları, uygulama kodu (örneğin bir bağlantı dizesi), kullanıcı tercihlerine ve çalışma zamanında gereken diğer bilgilere dahil edilmemesi gereken istemci bilgisayarda bilgileri depolamak sağlar.  
   
  Uygulama ayarları, Visual Studio'nun önceki sürümlerinde kullanılan dinamik özellikleri değiştirir.  

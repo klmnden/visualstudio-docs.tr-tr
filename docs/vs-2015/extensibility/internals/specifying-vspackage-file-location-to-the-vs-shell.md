@@ -1,7 +1,7 @@
 ---
 title: VS kabuğuna VSPackage dosya konumunu belirtme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: beb8607a-4183-4ed2-9ac8-7527f11513b1
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bcb78478e3e7396c2cef5f6d1f786c92130c49d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9e81ce857f6a37a709d46c3ee0567cb3cb203cb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688277"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281339"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>VS Kabuğuna VSPackage Dosya Konumunu Belirtme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [VS kabuğuna VSPackage dosya konumunu belirtme](https://docs.microsoft.com/visualstudio/extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackage'ı yüklemek için DLL derlemeyi bulabilir olması gerekir. Bunun çeşitli yollarla aşağıdaki tabloda açıklandığı gibi bulabilirsiniz.  
   
 |Yöntem|Açıklama|  

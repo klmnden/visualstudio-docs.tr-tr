@@ -1,7 +1,7 @@
 ---
 title: İşlemleri kullanarak UML model güncelleştirmelerini bağlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b05f0f1d178099337122cba2213b4bba22d2eead
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f63b7df949f87407735c994ffe5ca7aa65fcd29a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690349"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274267"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>İşlemleri kullanarak UML model güncelleştirmelerini bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [işlemleri kullanarak bağlantı UML model güncelleştirmelerini](https://docs.microsoft.com/visualstudio/modeling/link-uml-model-updates-by-using-transactions).  
-  
 Uzantı, Visual Studio'da UML tasarımcılarına tanımladığınızda, birkaç değişiklik adlı tek bir işlem içinde gruplandırabilirsiniz bir *bağlantılı geri alma bağlamının*. Visual Studio'nun hangi sürümlerinin UML modellerini desteklemek için bkz [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Varsayılan olarak, kodunuzun modelde yaptığı her değişikliği ayrı ayrı kullanıcı tarafından alınabilir. Örneğin, eğer iki UML sınıf adlarını değiştirir bir menü komutu tanımlarsanız, bir kullanıcı komutunu çağırın ve ardından tek bir geri alma gerçekleştirin. Bu, bir ad, ancak diğer, modelinizi istenmeyen bir durumda bırakarak değişikliği geri.  

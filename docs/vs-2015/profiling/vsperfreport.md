@@ -1,7 +1,7 @@
 ---
 title: VSPerfReport | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4576601581c86ffbc125526a7cd9002595c0d26
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e90a81832a73c172695bc771fc1dc833bd8c4e20
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692690"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269249"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [VSPerfReport](https://docs.microsoft.com/visualstudio/profiling/vsperfreport).  
-  
 VSPerfReport komut satırı aracını kullanarak raporları oluşturmak için kullanılan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] profil oluşturma veri dosyaları profil oluşturma araçları. Varsayılan rapor biçimini .csv dosyasıdır.  
   
  VSPerfReport aşağıdaki sözdizimini kullanır:  

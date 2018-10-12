@@ -1,7 +1,7 @@
 ---
 title: Proje Üreteçlerini kullanarak proje örnekleri oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ae36269de9d9911092bedb87f18f9aff3ca76a2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 28ca37af638802e3b9efd160b00d1b245d3ae4a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691023"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288346"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>Proje Üreteçlerini Kullanarak Proje Örnekleri Oluşturma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [oluşturma proje örnekleri tarafından kullanarak proje Fabrikalarını](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-project-instances-by-using-project-factories).  
-  
 Proje türlerinde [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kullanan bir *proje fabrikası* proje nesnelerin örneklerini oluşturmak için. Bir proje fabrikası cocreatable COM nesneleri için bir standart sınıf üreteci benzer. Ancak, proje nesnelerini cocreatable değildir: Bunlar yalnızca proje Fabrika kullanılarak oluşturulabilir.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE bir kullanıcı, mevcut bir projeyi yüklediğinde veya yeni bir proje oluşturur, VSPackage içinde uygulanan proje fabrikası çağırır [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Çözüm Gezgini doldurmak için yeterli bilgi IDE'ye yeni proje nesneyi sağlar. Yeni proje nesne IDE tarafından başlatılan tüm ilgili UI eylemlerini desteklemek için gereken arabirimler de sağlar.  

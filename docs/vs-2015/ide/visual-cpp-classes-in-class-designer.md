@@ -1,7 +1,7 @@
 ---
 title: Sınıf tasarımcısında Visual C++ sınıfları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 884d8cc74ea550c804aa6dd6ac735eb6f70be789
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4193dda70aeda8534b9dc2fa3428ca08a9d89fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630998"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285694"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Sınıf Tasarımcısında Visual C++ Sınıfları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [sınıf tasarımcısında Visual C++ sınıfları](https://docs.microsoft.com/visualstudio/ide/visual-cpp-classes-in-class-designer).  
-  
 Sınıf Tasarımcısı, C++ sınıflarını destekler ve C++ sınıfları birden çok devralma ilişkisi olabilir dışında Visual Basic ve Visual C# sınıfı şekiller, aynı şekilde yerel C++ sınıfları görselleştirir. Daha fazla alanlar ve yöntemler sınıfında göstermek veya alanından tasarruf etmek için daraltılabilir sınıf şeklinin genişletebilirsiniz.  
   
 > [!NOTE]

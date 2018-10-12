@@ -1,7 +1,7 @@
 ---
 title: Arayan-Aranan görünümü - .NET bellek izleme verileri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2cd30b9dcc72ba2afd97577f69ac059a2e8a1d32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a8cb22cb8274ea9af8fbea045eeeb779835c84a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691109"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273838"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Arayan/Aranan görünümü - .NET bellek izleme verileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [arayan-Aranan görünümü - NET bellek izleme verileri](https://docs.microsoft.com/visualstudio/profiling/caller-callee-view-net-memory-instrumentation-data).  
-  
 Arayan/Aranan görünümü profil oluşturma Araçlar yöntemini kullanarak toplanan veriyi .NET bellek ayırma ve zamanlama verileri için seçilen işlevin seçili işleve ve üst ve alt görüntüler. Arayan/Aranan görünümü üç Kılavuzlar içerir.  
   
  **Geçerli işlev** Orta kılavuzda görüntülenir ve bellek profili oluşturma seçili işlev hakkında bilgi gösterir. İşlev çağrıları tüm örneklenen değerlerini içerir.  

@@ -1,7 +1,7 @@
 ---
 title: AD_PROCESS_ID | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 4cb40d12-2e92-4f09-83f4-689928bd65b3
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93d50800f77705c24bdc2762be932161779372e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c573683ddde6199e8a9c0f1e8802547d286a7aa0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687058"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277491"
 ---
 # <a name="adprocessid"></a>AD_PROCESS_ID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [AD_PROCESS_ID](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ad-process-id).  
-  
 Sistem kimliği veya bir GUID olabilir işlem Kimliğini belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  

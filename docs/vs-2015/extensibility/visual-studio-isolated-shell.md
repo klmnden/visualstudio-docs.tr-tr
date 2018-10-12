@@ -1,7 +1,7 @@
 ---
 title: Visual Studio yalıtılmış Kabuğu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed81e88b12e371f74adb9d3911719112bca8b139
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e28a411ff5ef70cfd32e846edb0b70caa82c4764
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687357"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286071"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio yalıtılmış Kabuğu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio yalıtılmış Kabuğu](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-isolated-shell).  
-  
 Visual Studio yalıtılmış Kabuğu yan yana çalıştırabileceğiniz tek başına uygulamalar oluşturmanıza olanak tanır, Visual Studio'nun diğer sürümleriyle birlikte. Bu, öncelikle Visual Studio Hizmetleri kullanın ancak özelleştirilmiş bir görünüm de özel araçlar barındırmak için kullanılan ve marka olur. Visual Studio özellikleri ve menü komut gruplarını, kolayca açılıp kapatılabilir. Uygulama başlıkları, uygulama simgeleri ve Karşılama ekranları tamamen özelleştirilebilir. Özelleştirilebilir özelliklerinin listesi için bkz. [yalıtılmış Kabuğu özelleştirme](../extensibility/customizing-the-isolated-shell.md).  
   
  Bir yalıtılmış Kabuk proje ile çalışmak için Visual Studio SDK'yı yüklemeniz gerekir. Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik olarak eklenmiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'sını yükleme](../extensibility/installing-the-visual-studio-sdk.md).  

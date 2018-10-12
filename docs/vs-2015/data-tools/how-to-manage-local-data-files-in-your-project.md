@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: projenizdeki yerel veri dosyalarını yönetme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,12 +27,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: b63a90a354935300c705c0bf96ae307e0468b4f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 16e2d38dda97bd8a7f130254b2f23be9f17e0ac4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695805"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271381"
 ---
 # <a name="how-to-manage-local-data-files-in-your-project"></a>Nasıl yapılır: Projenizdeki Yerel Veri Dosyalarını Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,4 +61,4 @@ Yerel veritabanı dosyası bir proje dosyası olarak dahil edilebilir. Bir yerel
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: bir yerel veritabanı dosyası (Windows Forms) verilere bağlanma](../data-tools/walkthrough-connecting-to-data-in-a-local-database-file-windows-forms.md)   
- [(Windows Forms) bir erişim veritabanındaki verilere bağlanma](../data-tools/connect-to-data-in-an-access-database-windows-forms.md)
+ [Bir Access veritabanındaki verilere bağlanma (Windows Forms)](../data-tools/connect-to-data-in-an-access-database-windows-forms.md)

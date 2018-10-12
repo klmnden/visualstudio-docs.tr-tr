@@ -1,7 +1,7 @@
 ---
 title: İşlem Hata Ayıklama Yöneticisi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d0861e0c-b819-490c-9604-5e6d08ac291a
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf3c90b87f994e308d347e573f38156489b273dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5171a40f7fb5ee28769be41b8674ad5f88de3253
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674363"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276672"
 ---
 # <a name="process-debug-manager"></a>İşlem Hata Ayıklama Yöneticisi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [işlem hata ayıklama Yöneticisi](https://docs.microsoft.com/visualstudio/extensibility/debugger/process-debug-manager).  
-  
 İşlem Hata Ayıklama Yöneticisi (PDM) programları yönetir Visual Studio'nun bir bileşendir ve oturumu için kullanılabilir hale getirme işlemleri yöneticisi ve hata ayıklama altyapısı hatalarını ayıklayın.  
   
  PDM ayıklanabilir tüm işlemler yönetir. Hata ayıklama için bir program PDM ile kayıtlı olması gerekir. Bu program, bir bağlantı noktası veya bir hata ayıklama altyapısı tarafından başlatılan zaman gerçekleştirilir.  

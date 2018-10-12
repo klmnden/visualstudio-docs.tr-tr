@@ -1,7 +1,7 @@
 ---
 title: Visual Basic Varsayılanları, projeler, Seçenekler iletişim kutusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3370ecc8a80014f9d80152713140de7731bac058
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4c8a1b593333c8b560a828bb0edc5fa7f0628b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633707"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274865"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Visual Basic Varsayılanları, Projeler, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Basic Varsayılanları, projeler, Seçenekler iletişim kutusu](https://docs.microsoft.com/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box).  
-  
   
 Visual Basic proje seçenekleri için varsayılan ayarları belirtir. Yeni bir proje oluşturulduğunda, belirtilen seçenek deyimleri Kod Düzenleyicisi'nde proje üst bilgi eklenir. Seçenekler, tüm Visual Basic projeleri için geçerlidir.  
   
@@ -50,7 +48,7 @@ Visual Basic proje seçenekleri için varsayılan ayarları belirtir. Yeni bir p
  Yerel tür çıkarımı derleyici varsayılan ayarlar. Varsayılan olarak, **Option Infer** ayarlanır **üzerinde** yeni oluşturulan projelerde ve çok **kapalı** Visual Basic'in önceki sürümlerinde oluşturulan geçirilen projeleri için. Daha fazla bilgi için [/optioninfer](http://msdn.microsoft.com/library/f6c09db1-0553-464a-abe3-d4510c61d6ed).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Projeler ve çözümler](../../ide/solutions-and-projects-in-visual-studio.md)
+ [Çözümler ve Projeler](../../ide/solutions-and-projects-in-visual-studio.md)
 
 
 

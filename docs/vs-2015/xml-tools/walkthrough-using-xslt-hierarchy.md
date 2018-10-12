@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: XSLT hiyerarşisi kullanma | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ecbefef6cb179807e4b1546794a1fe1bcf418823
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b94a958a915ad7858575e093cae525df17cc23e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627543"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280968"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>İzlenecek Yol: XSLT Hiyerarşisi Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [izlenecek yol: XSLT hiyerarşisi kullanma](https://docs.microsoft.com/visualstudio/xml-tools/walkthrough-using-xslt-hierarchy).  
-  
   
 XSLT hiyerarşisi araç birçok XML geliştirme görevlerinizi basitleştirir. Genellikle bir XSLT stil sayfası kullanan `includes` ve `imports` yönergeleri. Derleme asıl stil sayfası içinden başlatır, ancak bir hata sonucunda bir XSLT stil sayfası derleme gördüğünüzde, hata asıl stil sayfası başka bir kaynaktan gelebilir. Hatanın düzeltilmesi veya stil sayfası düzenleme eklenen veya içeri aktarılan stil sayfaları için erişim gerektirebilir. Stil sayfasında hata ayıklayıcı ile Adımlama dahildir ve içeri aktarılan stil sayfaları açabilir ve bir veya daha fazlası dahil stil sayfaları belirli bir noktada bir kesme noktası eklemek isteyebilirsiniz.  
   

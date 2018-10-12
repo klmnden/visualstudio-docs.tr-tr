@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: Web formunda hata ayıklama | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,22 +28,20 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aff54238649947f578535dee2b813aa4daa90681
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f8cbda461c4472ed020087e7e606b1ab86ddb6b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630407"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275138"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>İzlenecek Yol: Web Formunda Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [izlenecek yol: Web formunda hata ayıklama](https://docs.microsoft.com/visualstudio/debugger/walkthrough-debugging-a-web-form).  
-  
 Bu kılavuzda açıklanan adımları hatalarını nasıl ayıklayacağınız Göster bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web uygulaması, Web formu olarak da bilinir. Başlat ve yürütmeyi durdurun, kesme noktaları ayarlayın ve değişkenleri incelemek nasıl gösterir **Watch** penceresi.  
   
 > [!NOTE]
->  Bu izlenecek yolu tamamlamak için sunucu bilgisayarında yönetici ayrıcalıkları olmalıdır. Varsayılan olarak, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] işlem aspnet_wp.exe veya w3wp.exe olarak çalışan bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] işlem. Hata ayıklamak için [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], bilgisayarda yönetici ayrıcalıklarına sahip olduğu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] çalıştırır. Daha fazla bilgi için [sistem gereksinimleri](../debugger/aspnet-debugging-system-requirements.md).  
+>  Bu izlenecek yolu tamamlamak için sunucu bilgisayarında yönetici ayrıcalıkları olmalıdır. Varsayılan olarak, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] işlem aspnet_wp.exe veya w3wp.exe olarak çalışan bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] işlem. Hata ayıklamak için [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], bilgisayarda yönetici ayrıcalıklarına sahip olduğu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] çalıştırır. Daha fazla bilgi için, bkz. [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
   
  İletişim kutuları ve menü komutları gördüğünüz açıklanana Yardım'da, etkin ayarlarınıza ve sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
@@ -176,7 +174,7 @@ Bu kılavuzda açıklanan adımları hatalarını nasıl ayıklayacağınız Gö
 6.  İşiniz bittiğinde hata ayıklama, üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Durdur**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ASP.NET ve AJAX uygulamalarında hata ayıklama](../debugger/debugging-aspnet-and-ajax-applications.md)
+ [ASP.NET ve AJAX Uygulamalarında Hata Ayıklama](../debugger/debugging-aspnet-and-ajax-applications.md)
 
 
 

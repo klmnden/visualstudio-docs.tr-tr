@@ -1,7 +1,7 @@
 ---
 title: Renkler ve stil Visual Studio için | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 355df1e0b0697470637f4bf79ad0eea15c4cd7c6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b57b50672fb476cfeac3a8748202d9e7dcb47a13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629964"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267416"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Renkler ve stil Visual Studio için
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [renkler ve stil Visual Studio için](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/colors-and-styling-for-visual-studio).  
-  
 ## <a name="using-color-in-visual-studio"></a>Visual Studio'da rengi kullanma  
  Visual Studio'da düzenleme gibi bir iletişim aracı olarak birincil renk kullanılır. Renk en düşük düzeyde kullanın ve istediğiniz durumlar için rezerve:  
   

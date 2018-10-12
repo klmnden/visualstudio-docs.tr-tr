@@ -1,7 +1,7 @@
 ---
 title: Hangi&#39;yeni profil oluşturma araçları, s | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3ab7fe2362bbf9779854bb1c79bfb4de9ffd1600
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5cb1d89409b38fea4e3745de7a619e913c6122f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630449"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290166"
 ---
 # <a name="what39s-new-in-profiling-tools"></a>Hangi&#39;yeni profil oluşturma araçları, s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [profil oluşturma yenilikleri](https://docs.microsoft.com/visualstudio/profiling/what-s-new-in-profiling-tools).  
-  
 Visual Studio 2015 güncelleştirme 1'hata ayıklama ve tanılama konusunda yeni olan her şey hakkında bilgi için [Visual Studio 2015 güncelleştirme 1 sürüm notları](https://www.visualstudio.com/news/vs2015-update1-vs#debug).  
   
  Visual Studio 2015 hata ayıklama ve tanılama konusunda yeni olan her şey hakkında bilgi için [Visual Studio 2015 sürüm notları](https://www.visualstudio.com/news/vs2015-vs#Debug).  
@@ -51,7 +49,7 @@ Visual Studio 2015 güncelleştirme 1'hata ayıklama ve tanılama konusunda yeni
  Windows Phone Uygulama analizi araçları web'da **hata ayıklama / Profiler / Windows Phone Uygulama analizi Araçları** (veya **ALT + F1**).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Profil oluşturma araçları](../profiling/profiling-tools.md)
+ [Profil Araçları](../profiling/profiling-tools.md)
 
 
 

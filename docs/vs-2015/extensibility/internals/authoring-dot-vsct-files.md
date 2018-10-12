@@ -1,7 +1,7 @@
 ---
 title: Yazma. Vsct dosyaları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0c2efb41474f9eeef29cc389529541ad460d9b89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 85a30c8987311ea8d6216312533dc70072c96f2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690336"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283679"
 ---
 # <a name="authoring-vsct-files"></a>Yazma. Vsct dosyaları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yazma. Vsct dosyaları](https://docs.microsoft.com/visualstudio/extensibility/internals/authoring-dot-vsct-files).  
-  
 Bu belge, menü öğeleri, araç çubukları ve diğer kullanıcı arabirimi (UI) öğeleri Visual Studio tümleşik geliştirme ortamı (IDE) eklemek için .vsct dosyası yazma işlemi gösterilmektedir. Visual Studio .vsct dosyası zaten sahip olmayan pakete (VSPackage'ı) kullanıcı Arabirimi öğeleri eklediğinizde, bu adımları kullanın.  
   
  Yeni projeler için seçimlerinizi bağlı olarak, bir menü komutu, bir araç penceresi ya da özel bir düzenleyici için gerekli öğeler zaten sahip olan bir .vsct dosyası oluşturur çünkü Visual Studio Paket şablon kullanmanızı öneririz. Bu .vsct dosyası, VSPackage gereksinimlerini karşılayacak şekilde değiştirebilirsiniz. Örneklerde .vsct dosyası değiştirme hakkında daha fazla bilgi için bkz. [genişletme menüler ve komutlar](../../extensibility/extending-menus-and-commands.md).  

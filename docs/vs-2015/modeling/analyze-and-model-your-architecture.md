@@ -1,14 +1,14 @@
 ---
 title: Çözümleme ve mimarinizin modelini | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-devops-techdebt
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Ultimate, exploring code
 - Visual Studio Ultimate, visualizing code
@@ -37,18 +37,16 @@ caps.latest.revision: 129
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1d2accb12f172cc5a6e4b69026a58a1cc04937ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 070ee6a2f948bc808961e35735fea88882d68880
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630640"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278362"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Mimarinizi çözümleme ve mimarinizin modelini oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [çözümleme ve mimarinizin modelini](https://docs.microsoft.com/visualstudio/modeling/analyze-and-model-your-architecture).  
-  
 Uygulamanızı kullanarak Visual Studio mimari ve Modelleme Araçları tasarlayıp uygulamanıza model kullanıcı gereksinimlerini karşıladığından emin olun. Var olan program kodu daha kolay kodun yapısını, davranış ve ilişkileri görselleştirmek için Visual Studio kullanarak anlayın.  
   
  Farklı geliştirme sürecinizin bir parçası olarak uygulama yaşam döngüsü boyunca ayrıntı düzeylerinde modeller oluşturun. Gereksinimleri, görevleri, test çalışmalarını, hataları ve Team Foundation Server iş öğelerini model öğelere ve geliştirme planınızı bağlantılandırarak Modellerinizi ile ilişkili diğer işleri izleyin. Bkz: [senaryo: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme](../modeling/scenario-change-your-design-using-visualization-and-modeling.md).  

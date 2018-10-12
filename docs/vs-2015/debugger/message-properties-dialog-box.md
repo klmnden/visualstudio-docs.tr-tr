@@ -1,7 +1,7 @@
 ---
 title: İleti Özellikleri iletişim kutusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be3975be4a50fd51e7004d4a587c28a2001d932c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c5fa9f785b3b374e917c62f66c1d49dc6f8232a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693905"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278914"
 ---
 # <a name="message-properties-dialog-box"></a>İleti Özellikleri İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ileti özellikleri iletişim kutusu](https://docs.microsoft.com/visualstudio/debugger/message-properties-dialog-box).  
-  
 Belirli bir ileti hakkında daha fazla bilgi için bu iletişim kutusunu kullanın. Bu iletişim kutusunu görüntülemek için odağı taşıyın. bir [iletiler görünümünü](../debugger/messages-view.md) penceresi. Herhangi bir ileti düğüm ağaçta seçin ve ardından **özellikleri** gelen **görünümü** menüsü.  
   
  **Genel** sekmedir yalnızca sekmesi görüntülenir. Aşağıdaki ayarlar kullanılabilir:  
@@ -52,10 +50,10 @@ Belirli bir ileti hakkında daha fazla bilgi için bu iletişim kutusunu kullan�
  Değerini *lParam* parametresi varsa. Bir dize veya yapısı için bir işaretçi ise bu değer olduğu için kodu.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [İleti Seçenekleri iletişim kutusu](../debugger/message-options-dialog-box.md)  
+ [İleti Seçenekleri İletişim Kutusu](../debugger/message-options-dialog-box.md)  
  İletileri etkin iletilerin Görünümü'nde listelenen seçmek için kullanılır.  
   
- [İleti arama iletişim kutusu](../debugger/message-search-dialog-box.md)  
+ [İleti Arama İletişim Kutusu](../debugger/message-search-dialog-box.md)  
  Düğüm iletiler görünümünde belirli bir ileti bulmak için kullanılır.  
   
  [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  

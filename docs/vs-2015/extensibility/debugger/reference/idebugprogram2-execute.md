@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::Execute | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f7205ce8-0ac6-4fcd-b6ec-b720b4fcaccf
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4223133cea40badb995b553032357267e21a948e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cfc486b307483f2f9a68ee43562e5449f3900ca6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675008"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286357"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [IDebugProgram2::Execute](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram2-execute).  
-  
 Bu program bir durdurulmuş çalışmaya devam eder. Herhangi bir önceki yürütme durumu (örneğin, bir adım) seçili, ve programı yeniden yürütme.  
   
 > [!NOTE]
@@ -58,5 +56,5 @@ int Execute();
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [Olay](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
- [Sürdür](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+ [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)
 

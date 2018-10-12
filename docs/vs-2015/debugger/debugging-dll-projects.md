@@ -1,7 +1,7 @@
 ---
 title: DLL projelerinde hata ayıklama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13e124c4c9c24ad298c2528f2901d5aa1d52d54c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb1d8cf355aee56797b5c814341255cb47cf4f9b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687169"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267390"
 ---
 # <a name="debugging-dll-projects"></a>DLL Projelerinde Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [DLL projelerinde hata ayıklama](https://docs.microsoft.com/visualstudio/debugger/debugging-dll-projects).  
-  
 Aşağıdaki şablonlar DLL'ler oluşturur:  
   
 -   (C++, C# ve Visual Basic) Sınıf kitaplığı  
@@ -60,9 +58,9 @@ Aşağıdaki şablonlar DLL'ler oluşturur:
   
  Bu bölüm aşağıdaki konular hakkında bilgi de içerir:  
   
--   [Nasıl yapılır: DLL projesinde hata ayıklama](../debugger/how-to-debug-from-a-dll-project.md)  
+-   [Nasıl Yapılır: DLL Projesinde Hata Ayıklama](../debugger/how-to-debug-from-a-dll-project.md)  
   
--   [Nasıl yapılır: karışık modda hata ayıklama](../debugger/how-to-debug-in-mixed-mode.md)  
+-   [Nasıl Yapılır: Karışık Modda Hata Ayıklama](../debugger/how-to-debug-in-mixed-mode.md)  
   
  Bu konu, hata ayıklama sınıf kitaplıklarının hazırlanması hakkında dikkat edilecek noktalar sağlayan aşağıdaki bölümleri içerir:  
   
@@ -156,7 +154,7 @@ Aşağıdaki şablonlar DLL'ler oluşturur:
  [C++ hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Hata ayıklama yapılandırması proje ayarları C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Hata ayıklama yapılandırması proje ayarları bir Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)
+ [Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)
 
 
 

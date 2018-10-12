@@ -1,7 +1,7 @@
 ---
 title: Bir etki alanına özgü dil çözümü şablonu seçme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cded93126f4e02aa5f0417819c7a76f17e0da6d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 618a26740759431ffe9de2b6ed5b51ffb32ea69e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692525"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268501"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Etki Alanına Özgü Dil Çözümü Şablonu Seçme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bir etki alanına özgü dil çözümü şablonu seçme](https://docs.microsoft.com/visualstudio/modeling/choosing-a-domain-specific-language-solution-template).  
-  
 Bir etki alanına özgü dil çözümü oluşturmak için etki alanına özgü dil Tasarımcısı Sihirbazı'nda kullanılabilir olan çözüm şablonlarından birini seçin. Oluşturmak istediğiniz dili en çok benzeyen bir şablon seçerek başlangıç çözüme yapmanız değişiklikleri en aza indirebilirsiniz.  
   
  Aşağıdaki çözüm şablonları, etki alanına özgü dil Tasarımcısı Sihirbazı'nda mevcuttur.  

@@ -1,14 +1,14 @@
 ---
 title: Hata ayıklayıcıdaki ifadeler | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
 dev_langs:
@@ -32,18 +32,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b8350356b82b6d2cefc3fda725d90dccea75e55
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d02d36e29f823db424c32cf40d036d498282da7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629199"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289334"
 ---
 # <a name="expressions-in-the-debugger"></a>Hata Ayıklayıcıdaki İfadeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [hata ayıklayıcısındaki ifadeler](https://docs.microsoft.com/visualstudio/debugger/expressions-in-the-debugger).  
-  
 Visual Studio hata ayıklayıcı bir ifade girdiğinizde çalışan ifade değerlendiricilerini içerir **QuickWatch** iletişim kutusu, **Watch** penceresinde veya **hemen** penceresi. İş yerinizde de ifade değerlendiricilerini olan **kesme noktaları** penceresi ve hata ayıklayıcı içindeki diğer pek çok yerde.  
   
  Aşağıdaki bölümlerde farklı dillerde ifadeler hakkında ayrıntılar verir.  

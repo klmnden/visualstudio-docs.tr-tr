@@ -1,7 +1,7 @@
 ---
 title: Bir UML profili yükleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 47346af32cf1b86ddf2f526e271127e4bde2da95
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b72c87f79ce5bafbc655fade59d6a8b7570f694
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691477"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275216"
 ---
 # <a name="install-a-uml-profile"></a>UML profili yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [UML profili yükleme](https://docs.microsoft.com/visualstudio/modeling/install-a-uml-profile).  
-  
 Visual Studio bir UML profili ile genişletebilirsiniz. Bir profili UML modellerinde oluşturabilirsiniz öğelerine stereotipler ve ek özellikler eklemenize olanak tanır. Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Profilleri kullanılarak oluşturulan bir UML modeli alırsanız, aynı profili yüklemediğiniz sürece bazı özellikler görüntülenmez.  
@@ -52,7 +50,7 @@ Visual Studio bir UML profili ile genişletebilirsiniz. Bir profili UML modeller
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Modelinizi profiller ve stereotipler aracılığıyla özelleştirme](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
- [UML genişletmek için profil tanımlama](../modeling/define-a-profile-to-extend-uml.md)
+ [UML’yi genişletmek için profil tanımlama](../modeling/define-a-profile-to-extend-uml.md)
 
 
 

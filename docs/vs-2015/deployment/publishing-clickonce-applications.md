@@ -1,7 +1,7 @@
 ---
 title: ClickOnce uygulamalarını yayımlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: f1e15ed2a1b2c2224a5e51cd02cf7609e40d5d29
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 70cf261f2d235a8ed1b27550acad916cf5a355a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673950"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265648"
 ---
 # <a name="publishing-clickonce-applications"></a>ClickOnce Uygulamalarını Yayımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ClickOnce uygulamalarını yayımlama](https://docs.microsoft.com/visualstudio/deployment/publishing-clickonce-applications).  
-  
 Yayımlama sırasında bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ilk kez uygulama yayımlama özellikleri Yayımlama Sihirbazı'nı kullanarak ayarlayabilirsiniz. Yalnızca birkaç özellikleri Sihirbazı'nda bulunur; diğer tüm özellikleri varsayılan değerlerine ayarlanır.  
   
  Üzerinde yapılan özelliklerini yayımlamak için sonraki değişiklikler **Yayımla** sayfasını **Proje Tasarımcısı**.  
@@ -89,7 +87,7 @@ Yayımlama sırasında bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)
 |[Nasıl yapılır: Teknik Destek için bir Bağlantı Belirtme](../deployment/how-to-specify-a-link-for-technical-support.md)|Nasıl ayarlanacağı açıklanır **destek URL'si** özelliği bir Web sayfası veya kullanıcılar nereye uygulama hakkında bilgi almak için dosya paylaşımı tanımlar.|  
 |[Nasıl yapılır: Bir ClickOnce Dağıtımı'nda Bağımsız Önkoşullar için Destek URL'sini Belirtme](../deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md)|El ile her önkoşul destek URL'lerini dahil etmek için bir uygulama bildirimi alter göstermişti.|  
 |[Nasıl yapılır: ClickOnce Uygulaması için bir Yayımlama Sayfası Belirtme](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)|Oluşturma ve yayımlama uygulama ile birlikte varsayılan Web sayfası (publish.htm) açıklanır|  
-|[Nasıl yapılır: ClickOnce Varsayılan Web sayfasını özelleştirme](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|Otomatik olarak oluşturulur ve uygulama ile birlikte yayımlanan Web sayfasında özelleştirmeyi açıklar.|  
+|[Nasıl yapılır: ClickOnce Varsayılan Web Sayfasını Özelleştirme](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|Otomatik olarak oluşturulur ve uygulama ile birlikte yayımlanan Web sayfasında özelleştirmeyi açıklar.|  
 |[Nasıl yapılır: CD Yüklemeleri için AutoStart'ı Etkinleştirme](../deployment/how-to-enable-autostart-for-cd-installations.md)|AutoStart'ı etkinleştirin; böylelikle medya eklendiğinde, ClickOnce uygulamasını otomatik olarak başlatıldığını açıklar.|  
   
 ## <a name="related-topics"></a>İlgili Konular  

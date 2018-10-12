@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: Bir özel düzenleyiciye özellik ekleme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ee6ca09f1bef7057e64287afb4ff8522fffb3f06
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7f0d7c79590c197b7c226fb2cb2841235049bb3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692196"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283068"
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>İzlenecek Yol: Bir Özel Düzenleyiciye Özellik Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [izlenecek yol: bir özel düzenleyiciye özellik ekleme](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-adding-features-to-a-custom-editor).  
-  
 Özel bir düzenleyici oluşturduktan sonra daha fazla özellik ekleyebilirsiniz.  
   
 ### <a name="to-create-an-editor-for-a-vspackage"></a>VSPackage için bir düzenleyici oluşturmak için  
@@ -163,5 +161,5 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [izlenecek yol: bir özel d
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Otomasyon modeline katkıda bulunma](../extensibility/internals/contributing-to-the-automation-model.md)   
- [Nasıl yapılır: bağlam sağlamak için düzenleyicileri açma](../extensibility/how-to-provide-context-for-editors.md)
+ [Nasıl Yapılır: Düzenleyiciler İçin Bağlam Sağlama](../extensibility/how-to-provide-context-for-editors.md)
 

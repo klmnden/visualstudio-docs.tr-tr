@@ -1,7 +1,7 @@
 ---
 title: İş parçacığı Ayrıntıları görünümü - çakışma verileri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32dd4ed90a30146a75132fcf0954b7b50fba87a6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 252afc79d7d6d9ecdce5cf0c8a543dffcc8ebc01
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688564"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275541"
 ---
 # <a name="thread-details-view---contention-data"></a>İş Parçacığı Ayrıntıları Görünümü - Çakışma Verileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [iş parçacığı Ayrıntıları görünümü - çakışma verileri](https://docs.microsoft.com/visualstudio/profiling/thread-details-view-contention-data).  
-  
 İş parçacığı Ayrıntıları görünümü kaynaklar üzerinde Çekişme tarafından neden Seçili iş parçacığı profil oluşturma çalıştırmasını engelleme olayları bir zaman çizelgesi grafiği gösterir. İş parçacığı başka bir iş parçacığının bir kaynağa erişim kilitlediği için yürütmeyi askıya almak zorunda engelleyen bir olayı oluşur.  
   
  Bu görünüm, yürütme zaman çizelgesi yatay bir çubuk olarak iş parçacığı ve iş parçacığı için yatay bir zaman çizelgesi üzerinde dikey çubuk olarak engelleme olayları temsil eder. Gerekli olduğunda bir bölüm olayları tek tek görüntülemek için zaman çizelgesinin yakınlaştırma yapabilirsiniz. Olaya yol açan işlevlerin yürütme yolu görüntülemek için olay Çubuğu'nu tıklatın. İşlevler çağrı yığını penceresinde görünür. Bir işlev için kaynak kodu kullanılabilir olduğunda, Visual Studio IDE'de kaynak dosyayı düzenlemek için işlev adına tıklayabilirsiniz.  

@@ -1,7 +1,7 @@
 ---
 title: '&lt;Dosya&gt; öğesi (ClickOnce uygulaması) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: bf5f0c803c9c60c9a4846aeba960cbdbf4c8129b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 16c301d55738519f3e097138f08b6b2c2fe2b4c7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688871"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270744"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;Dosya&gt; öğesi (ClickOnce uygulaması)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ &lt;dosya&gt; öğesi (ClickOnce uygulaması)](https://docs.microsoft.com/visualstudio/deployment/file-element-clickonce-application).  
-  
 İndirilen ve uygulama tarafından kullanılan tüm nonassembly dosyaları tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  

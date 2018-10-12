@@ -1,7 +1,7 @@
 ---
 title: Visual Studio'yu yüklemek için komut satırı parametrelerini kullanma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 7aa129021ef18cba3236624283872a2933c9ef80
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6266626d2eb60b64f1923a0c3f54d39c9b20072a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692067"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268612"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Visual Studio'yu yüklemek için komut satırı parametrelerini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Bir komut isteminden Visual Studio 2015'i yüklediğinizde, aşağıdaki komut s
 |**/qb**<br /><br /> **/ passive**|İlerleme durumunu gösterir ancak kullanıcı girişini beklemez.|  
 |**/ Repair**|Visual Studio'yu onarır.|  
 |**/ SuppressRefreshPrompt**|Yükleme Sihirbazı'nda, bu nedenle, Yükleme Sihirbazı'nı güncelleştirme kullanılabilir iletişim otomatik-tüm gerekli veya önerilen güncelleştirilmiş sürümlerini kabul görüntülenmesini engeller.|  
-|**/u**<br /><br /> **/ Uninstall**|Kaldırır [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|**/u**<br /><br /> **/ Uninstall**|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]'ı kaldırır.|  
 |**/ Uninstall/Force**<br /><br /> **/u/Force**|Visual Studio'yu ve diğer ürünlerle paylaşılan tüm özellikleri kaldırır. **Uyarı:** bu parametreyi kullanırsanız, aynı bilgisayarda yüklü diğer ürünler düzgün çalışmamaya başlayabilir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

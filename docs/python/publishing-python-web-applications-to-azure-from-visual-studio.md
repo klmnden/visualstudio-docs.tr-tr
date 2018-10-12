@@ -12,18 +12,21 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 6381edc213381e4254ba577a4cd1d36da0630d9f
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 3ebfd95431948e4444cd6b7ed551c0b99e457fec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100906"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277257"
 ---
 # <a name="publish-to-azure-app-service"></a>Azure App Service’e yayımlama
 
 Şu anda Python için Linux üzerinde Azure App Service'te desteklenir ve kullanan uygulamalar yayımlayabilmeniz için [Git dağıtma](#publish-to-app-service-on-linux-using-git-deploy) ve [kapsayıcıları](#publish-to-app-service-on-linux-using-containers)bu makalede açıklandığı gibi.
 
-Windows için Azure App Service'te Python desteği kullanım dışı bırakılmıştır. Sonuç olarak, **Yayımla** komutu Visual Studio için Python uygulamaları için artık desteklenmiyor bir [IIS hedef](#publish-to-iis), ve Azure App Service'te uzaktan hata ayıklama artık desteklenmiyor.
+> [!Note]
+> Windows için Azure App Service'te Python desteği resmi olarak kullanım dışı bırakılmıştır. Sonuç olarak, **Yayımla** Visual Studio'da komutu yalnızca desteklenen resmi bir [IIS hedef](#publish-to-iis), ve Azure App Service'te uzaktan hata ayıklama artık resmi olarak desteklenir.
+>
+> Ancak, bu özellikleri şimdilik, Windows üzerinde App Service'e Python uzantıları sunulmaya gibi çalışmaya devam ancak hizmet güncelleştirildi veya silinmez.
 
 ## <a name="publish-to-app-service-on-linux-using-git-deploy"></a>Yayımlama Linux üzerinde App Service'e Git kullanarak dağıtma
 

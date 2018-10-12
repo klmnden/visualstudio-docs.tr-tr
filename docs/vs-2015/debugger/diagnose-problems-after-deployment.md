@@ -1,7 +1,7 @@
 ---
 title: Dağıtımdan sonra sorunları tanılama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 66
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7979cdde9ec6411db83753b0006a2f55c4afb4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26a852bdf955a17dd59ffe79d29e2601362e47d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630428"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270601"
 ---
 # <a name="diagnose-problems-after-deployment"></a>Dağıtımdan sonra sorunları tanılama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [dağıtımdan sonra sorunları tanılama](https://docs.microsoft.com/visualstudio/debugger/diagnose-problems-after-deployment).  
-  
 IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunları tanılamak için Visual Studio otomatik olarak doğru kaynak dosyalarını ve hata ayıklama IntelliTrace günlüğü için gerekli olan simge dosyalarını Bul izin vermek için sürümle yapı bilgilerini içerir.  
   
  IntelliTrace denetlemek için Microsoft Monitoring Agent'ı kullanıyorsanız, aynı zamanda uygulama performansı web sunucunuz üzerinde izleme ayarlama ayarlamanıza gerek. Uygulamanızı çalışır ve olayları bir IntelliTrace günlük dosyasına kaydeder. Bu tanılama olaylarını kaydeder. Ardından olayları Visual Studio Enterprise (ancak değil Professional veya Community sürümlerini) bakın, bir olayın gerçekleştiği koda gitmek kayıtlı değerlere zamandaki o noktada göz ve çalışan kod ileteceğini veya geriye doğru taşıyın. Bulup sorunu sonra derleme, sürüm ve gelecekteki olası sorunları önceden ve daha hızlı çözebilmek sürümünüzü izlemek için döngüyü tekrarlayın.  

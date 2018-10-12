@@ -1,7 +1,7 @@
 ---
 title: XAML Tasarımcısı için klavye kısayolları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bd5fb40534c2c1f55ae5f18c63fcf0ec7ab6b2bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 53eef64f396b6c9362a42d351bd546d97f8d205a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684507"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271407"
 ---
 # <a name="keyboard-shortcuts--for-xaml-designer"></a>XAML Tasarımcısı için klavye kısayolları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [XAML Tasarımcısı için klavye kısayolları](https://docs.microsoft.com/visualstudio/designers/keyboard-shortcuts-for-xaml-designer).  
-  
 Klavye kısayolları XAML Tasarımcısı'nda, bir tek klavye kısayolu birden çok fare düğmesi tıklama gerektiren bir eylem azaltarak çalışmanızı hızlandırabilirsiniz.  
   
 ## <a name="element-shortcuts"></a>Öğesi kısayolları  
@@ -57,7 +55,7 @@ Klavye kısayolları XAML Tasarımcısı'nda, bir tek klavye kısayolu birden ç
 |Çalışma yüzeyinde nesneler üzerinde Belge Anahattı penceresi odak modundayken kilidini aç|SHIFT + CTRL + L|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [XAML Tasarımcısı'nı kullanarak kullanıcı Arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+ [XAML Tasarımcısı’nı kullanarak bir kullanıcı arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
 
 
 

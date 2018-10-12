@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: Koleksiyon metotları seçme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0aaa4c13509d02deacd719a52c2ac6514d4c0827
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 478183902012bd4e0a4400bf275fd7e67fade6b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632853"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274423"
 ---
 # <a name="how-to-choose-collection-methods"></a>Nasıl yapılır: Koleksiyon Metotları Seçme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: Koleksiyon metotları seçin](https://docs.microsoft.com/visualstudio/profiling/how-to-choose-collection-methods).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profil Araçları performans verilerini toplama üç yöntemi destekler: örnekleme, izleme ve eşzamanlılık. .NET bellek ayırma ve yaşam süresi verilerini toplamak için örnekleme veya Araçlar yöntemi de kullanabilirsiniz.  
   
  **Gereksinimler**  
@@ -106,7 +104,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: Koleksiy
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)   
  [Örnekleme veri değerlerini anlama](../profiling/understanding-sampling-data-values.md)   
- [Performans oturum özellikleri](../profiling/performance-session-properties.md)
+ [Performans Oturumu Özellikleri](../profiling/performance-session-properties.md)
 
 
 

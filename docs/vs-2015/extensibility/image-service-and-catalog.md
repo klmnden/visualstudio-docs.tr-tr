@@ -1,7 +1,7 @@
 ---
 title: Görüntü hizmeti ve kataloğu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3079bada9b8d3e9a0b2644e4aaa3d9e3ee3bebe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 847ac3b7ed956daf61a04c5891871c9182594877
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691929"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265219"
 ---
 # <a name="image-service-and-catalog"></a>Görüntü Hizmeti ve Kataloğu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Görüntü hizmeti ve Kataloğu](https://docs.microsoft.com/visualstudio/extensibility/image-service-and-catalog).  
-  
 Bu kılavuzu, rehberlik ve en iyi uygulamalar Visual Studio Görüntü hizmeti ve görüntü Visual Studio 2015'te tanıtılan Kataloğu'nu benimseme içerir.  
   
  Visual Studio 2015'te sunulan Görüntü hizmeti, geliştiricilerin en iyi görüntü için cihaz ve kullanıcının içinde görüntülendikleri bağlamı için doğru Tema oluşturma da dahil olmak üzere bu görüntüyü görüntülemek için seçilen tema alma sağlar. Görüntü hizmet benimsenmesi, varlık bakım, HDPI ölçeklendirme ve Tema oluşturma ile ilgili önemli sorunlu noktaları ortadan kaldırmanın yardımcı olur.  
@@ -152,7 +150,7 @@ Bu kılavuzu, rehberlik ve en iyi uygulamalar Visual Studio Görüntü hizmeti v
   
 |||  
 |-|-|  
-|**Özniteliği**|**Tanım**|  
+|**Öznitelik**|**Tanım**|  
 |Guid|[Gerekli] Görüntü bilinen adına GUID kısmını|  
 |Kimlik|[Gerekli] Resim bilinen adı kimliği bölümü|  
 |AllowColorInversion|[İsteğe bağlı, varsayılan true] Görüntü programlı olarak koyu renkli bir arka plan üzerinde kullanıldığında ters renklerini olup olmadığını gösterir.|  
@@ -169,7 +167,7 @@ Bu kılavuzu, rehberlik ve en iyi uygulamalar Visual Studio Görüntü hizmeti v
   
 |||  
 |-|-|  
-|**Özniteliği**|**Tanım**|  
+|**Öznitelik**|**Tanım**|  
 |URI|[Gerekli] Gelen görüntü burada yüklenebilir tanımlayan URI. Aşağıdakilerden biri olabilir:<br /><br /> -A [paketi URI](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) kullanarak uygulama: / / / yetkilisi<br />-Bir mutlak bileşen kaynak başvurusu<br />-Yerel bir kaynak içeren bir dosya yolu|  
 |Arka Plan|[İsteğe bağlı] Ne tür bir arka plan kaynak kullanılması amaçlanmıştır gösterir.<br /><br /> Aşağıdakilerden biri olabilir:<br /><br /> *Açık:* kaynağı açık bir arka plan üzerinde kullanılabilir.<br /><br /> *Koyu:* kaynağı koyu renkli bir arka plan üzerinde kullanılabilir.<br /><br /> *Yüksek Karşıtlık:* kaynağı, yüksek karşıtlık modunda herhangi bir arka plan üzerinde kullanılabilir.<br /><br /> *HighContrastLight:* kaynağı, yüksek karşıtlık modunda açık bir arka plan üzerinde kullanılabilir.<br /><br /> *HighContrastDark:* kaynağı, yüksek karşıtlık modunda koyu renkli arka plan üzerinde kullanılabilir.<br /><br /> Arka plan özniteliği belirtilmezse, kaynağı herhangi bir arka plan üzerinde kullanılabilir.<br /><br /> Arka planda ise *ışık*, *koyu*, *HighContrastLight*, veya *HighContrastDark*, hiçbir zaman ters kaynağının renkler. Arka plan atlanırsa veya kümesine *Karşıtlık*, kaynağın renkleri ters çevirmeyi görüntünün tarafından denetlenir **AllowColorInversion** özniteliği.|  
 |||  
@@ -178,7 +176,7 @@ Bu kılavuzu, rehberlik ve en iyi uygulamalar Visual Studio Görüntü hizmeti v
   
 ||||  
 |-|-|-|  
-|**Öğesi**|**Öznitelikler (tümü gereklidir)**|**Tanım**|  
+|**Öğe**|**Öznitelikler (tümü gereklidir)**|**Tanım**|  
 |\<Boyutu >|Değer|Kaynak (cihaz birimlerindeki) verilen boyutta görüntüleri için kullanılacaktır. Görüntü, kare olur.|  
 |\<SizeRange >|MinSize, Maxsıze|Kaynak MinSize (cihaz birimindeki) görüntülerini MaxSize aralığında kullanılacak. Görüntü, kare olur.|  
 |\<Boyutlar >|Genişlik, yükseklik|Kaynak, belirtilen genişlik ve yükseklik (cihaz birimindeki) görüntülerini için kullanılır.|  
@@ -192,7 +190,7 @@ Bu kılavuzu, rehberlik ve en iyi uygulamalar Visual Studio Görüntü hizmeti v
   
 |||  
 |-|-|  
-|**Özniteliği**|**Tanım**|  
+|**Öznitelik**|**Tanım**|  
 |Tür|[Gerekli] XAML ya da PNG yerel kaynak türü|  
 |Kimlik|[Gerekli] Yerel kaynak tamsayı kimliği bölümünü|  
   
@@ -209,7 +207,7 @@ Bu kılavuzu, rehberlik ve en iyi uygulamalar Visual Studio Görüntü hizmeti v
   
 |||  
 |-|-|  
-|**Özniteliği**|**Tanım**|  
+|**Öznitelik**|**Tanım**|  
 |Guid|[Gerekli] Görüntü bilinen adına GUID kısmını|  
 |Kimlik|[Gerekli] Resim bilinen adı kimliği bölümü|  
 |Harici|[İsteğe bağlı, varsayılan false] Görüntünün geçerli bildiriminde görüntü bilinen adına başvuruda bulunup bulunmadığını gösterir.|  

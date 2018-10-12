@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: paralel uygulamada hata ayıklama | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22a4d8ea3bfe98a034f485be8ceec1004f8fba75
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c46fbd570765d8843c9e6d87f37a5395c5b0133
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688473"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279779"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>İzlenecek Yol: Paralel Uygulamada Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [izlenecek yol: paralel uygulamada hata ayıklama](https://docs.microsoft.com/visualstudio/debugger/walkthrough-debugging-a-parallel-application).  
-  
 Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve **Paralel Yığınlar** paralel uygulamada hata ayıklamak için windows. Bu windows anlamanıza ve çalışma zamanı davranışı kullanan kod doğrulama Yardım [görev paralel kitaplığı (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) veya [eşzamanlılık çalışma zamanı](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). Bu izlenecek yol, yerleşik kesme noktaları olan örnek kodu sağlıyor. Kodları keser sonra izlenecek yolu nasıl kullanılacağını gösterir. **Paralel Görevler** ve **Paralel Yığınlar** bunu incelemek için windows.  
   
  Bu izlenecek yol bu görevleri öğretir:  
@@ -318,7 +316,7 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
  [Paralel Programlama](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
  [Eşzamanlılık Çalışma zamanı](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [Paralel Yığınlar penceresini kullanma](../debugger/using-the-parallel-stacks-window.md)   
- [Görevleri penceresini kullanma](../debugger/using-the-tasks-window.md)
+ [Görevleri Penceresini Kullanma](../debugger/using-the-tasks-window.md)
 
 
 

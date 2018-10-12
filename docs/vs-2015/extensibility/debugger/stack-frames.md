@@ -1,7 +1,7 @@
 ---
 title: Yığın çerçevesi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b5e439d4-1e9d-4e13-9cad-bb8b136d4ca8
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d1efbc05528dd009098749fbe75316c0261b1b20
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 301a782ebf0eda9b1e97c9f0f09c10a0985de4c2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687202"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271602"
 ---
 # <a name="stack-frames"></a>Yığın Çerçeveleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yığın çerçevelerini](https://docs.microsoft.com/visualstudio/extensibility/debugger/stack-frames).  
-  
 Hata ayıklayıcı mimarisi bakımından bir **yığın çerçevesi**:  
   
 -   Bir iş parçacığı yürütme bağlamı sağlayan bir yığının bir soyutlamadır. Bir iş parçacığı her zaman içinde bir işlevi yürütür. Bir yığın çerçevesi için işlevi ve bağımsız değişkenler, yerel değişkenleri tutar. Visual Studio ile hata ayıklamak için dil veya ortam ayıklanan yığın çerçeveleri desteklemesi gerekir.  

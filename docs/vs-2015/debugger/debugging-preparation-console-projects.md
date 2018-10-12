@@ -1,7 +1,7 @@
 ---
 title: 'Hata ayıklama hazırlığı: Konsol projeleri | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be92c7a77791e1cb329392773d19ce9e794bed75
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 870bbccafb25c855557bcd8c02a13d0218e5935a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630002"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265869"
 ---
 # <a name="debugging-preparation-console-projects"></a>Hata Ayıklama Hazırlığı: Konsol Projeleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [hata ayıklama hazırlığı: konsol projeleri](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-console-projects).  
-  
 Bir konsol projesinde hata ayıklamaya hazırlanıyor, bazı ek hususlar ile bir Windows projede hata ayıklamak hazırlamaya benzerdir. Daha fazla bilgi için [Windows Forms uygulamaları](../debugger/debugging-preparation-windows-forms-applications.md), ve [hata ayıklama hazırlığı: Windows Forms uygulamaları (.NET)](http://msdn.microsoft.com/en-us/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). Tüm konsol uygulamaları benzerlik nedeniyle, bu konu, aşağıdaki proje türlerini içerir:  
   
 -   C# konsol uygulaması  
@@ -72,7 +70,7 @@ Bir konsol projesinde hata ayıklamaya hazırlanıyor, bazı ek hususlar ile bir
  [Visual C++ proje türleri](../debugger/debugging-preparation-visual-cpp-project-types.md)   
  [C#, F # ve Visual Basic proje türleri](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [C++ hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)
+ [Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)
 
 
 

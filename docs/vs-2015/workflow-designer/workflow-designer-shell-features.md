@@ -1,7 +1,7 @@
 ---
 title: İş Akışı Tasarımcısı Kabuk özellikleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: e0ac119908003efdbdbda4c01bce18de4a5f0faa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f75d545055a4657ed4cefdbafe211ea2f34680f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693790"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275307"
 ---
 # <a name="workflow-designer-shell-features"></a>İş Akışı Tasarımcısı Kabuk Özellikleri
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] üç temel kullanıcı Arabirimi alanları oluşur: tasarım yüzeyinde, içerik haritası çubuğu üstünde ve altındaki Kabuk. Ekranın en üstünde konumlandırılmış içerik haritası çubuğu, geçerli bir kök etkinlik öncüleri listesini görüntülemek için kullanılır. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Nasıl yapılır: içerik haritası gezintisini kullanma](../workflow-designer/how-to-use-breadcrumb-navigation.md). Tasarımcı yüzeyine konumlandırılmış ekranın merkezinde, iş akışları oluşturmak için kullanılır. Ekranın alt kısmında konumlandırılmış Kabuk geçerli görünümü yönetme düğmelerini içerir.  

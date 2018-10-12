@@ -1,7 +1,7 @@
 ---
 title: Parametre düğümleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bed941a35af21b78ea5159a218ccd36d2ff5f1e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb15b19ebdef04facdb66d4b97042bb47e4cb5fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695401"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276296"
 ---
 # <a name="parameter-nodes"></a>Parametre Düğümleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [parametre düğümleri](https://docs.microsoft.com/visualstudio/designers/parameter-nodes).  
-  
 Gölgelendirici Tasarımcısı'nda, çizim başına temelinde, uygulamanın denetiminde örnek olarak gölgelendirici, malzeme özelliklerine, tek yönlü ışık, kamera konumuna ve zaman girişleri parametre düğümleri temsil eder. Bu parametrelerin her bir çizim çağrısıyla değiştirebilirsiniz çünkü nesne farklı görünümlerini sağlamak için aynı gölgelendirici kullanabilirsiniz.  
   
 ## <a name="parameter-node-reference"></a>Parametre düğüm başvurusu  

@@ -1,7 +1,7 @@
 ---
 title: 'CA1063: IDisposable doğru | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ed6b7832f17a39c145452d0bbfecfbda9be98547
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e80857ae1cfafdc6733af3eec78735dc249f4905
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42900453"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287488"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable'ı doğru uygulayın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA1063: IDisposable doğru](https://docs.microsoft.com/visualstudio/code-quality/ca1063-implement-idisposable-correctly).
-
 |||
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|

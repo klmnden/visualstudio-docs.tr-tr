@@ -1,7 +1,7 @@
 ---
 title: Hata ayıklama sırasında XAML özelliklerini denetleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb10290e14290f59950e6b291d479de2099ac7f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 282b93ac9f04f5e547567e8380e65826f433ba2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692661"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282262"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Hata ayıklama sırasında XAML özelliklerini denetleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [hata ayıklama sırasında XAML İnceleme özellikleri](https://docs.microsoft.com/visualstudio/debugger/inspect-xaml-properties-while-debugging).  
-  
 Çalışan XAML kodunuzu ile gerçek zamanlı bir görünümünü elde edebilirsiniz **Live Visual Tree** ve **Live Property Explorer**. Bu araçlar, çalışan XAML uygulamanızın kullanıcı Arabirimi öğelerini ağaç görünümünü sağlar ve seçtiğiniz herhangi bir kullanıcı Arabirimi öğesi çalışma zamanı özelliklerini göster.  
   
  Aşağıdaki yapılandırmaları bu araçları kullanabilirsiniz:  
