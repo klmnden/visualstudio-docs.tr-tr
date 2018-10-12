@@ -1,7 +1,7 @@
 ---
 title: İzleme metodu veri görünümleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab3337e018a173eb4bf8633d7aa5913bb3d88e63
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 17e4d588f2c19aa74c9741d69ee8a3c1022c677c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689544"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220434"
 ---
 # <a name="instrumentation-method-data-views"></a>İzleme Metodu Veri Görünümleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [izleme metodu veri görünümleri](https://docs.microsoft.com/visualstudio/profiling/instrumentation-method-data-views).  
-  
 Bu bölüm, görünümleri ve raporları araç haline getirme yöntemi kullanılarak üretilen Profil Oluşturucu veri dosyalarının yönelik başvuru bilgileri içerir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
@@ -55,17 +53,17 @@ Bu bölüm, görünümleri ve raporları araç haline getirme yöntemi kullanıl
  Tüm listeleri işlem yaşam süresi başlangıç ve bitiş zamanı profili bu wer işler.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Örnekleme yöntemi veri görünümleri](../profiling/profiler-sampling-method-data-views.md)  
+ [Örnekleme Yöntemi Veri Görünümleri](../profiling/profiler-sampling-method-data-views.md)  
  Görünümleri ve raporları örnekleme metodu kullanılarak üretilen Profil Oluşturucu veri dosyaları için başvuru bilgileri.  
   
- [.NET bellek verisi görünümleri](../profiling/dotnet-memory-data-views.md)  
+ [.NET Bellek Verisi Görünümleri](../profiling/dotnet-memory-data-views.md)  
  Görünümleri ve raporları, .NET bellek verileri içeren bir profil oluşturucu veri dosyalarının için başvuru bilgileri.  
   
  [Kaynak Çakışması Veri Görünümleri](../profiling/resource-contention-data-views.md)  
  Görünümleri ve raporları iş parçacığı Çekişme yöntemi kullanılarak üretilen Profil Oluşturucu veri dosyaları için başvuru bilgileri.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzleme veri değerlerini anlama](../profiling/understanding-instrumentation-data-values.md)
+ [İzleme Veri Değerlerini Anlama](../profiling/understanding-instrumentation-data-values.md)
 
 
 

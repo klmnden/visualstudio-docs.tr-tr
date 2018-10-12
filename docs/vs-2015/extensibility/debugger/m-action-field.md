@@ -1,7 +1,7 @@
 ---
 title: Alan m_action | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 201838c2-260d-4071-b6c3-f526874e19c9
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 68d526fe4266f9c8f7c0d3dc4790c8b5893f72ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 02a8f6ffcacf2c96905dc60dea753ce4737fe7b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688469"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192510"
 ---
 # <a name="maction-field"></a>m_action Alanı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [m_action alan](https://docs.microsoft.com/visualstudio/extensibility/debugger/m-action-field).  
-  
 İçindeki yürütülecek kodu temsil eden temsilcinin <xref:System.Threading.Tasks.Task> nesne.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
@@ -45,5 +43,5 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [m_action alan](https://doc
  Bu `action` parametresinde <xref:System.Threading.Tasks.Task.%23ctor%2A> Oluşturucusu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Görev sınıfı](../../extensibility/debugger/task-class-internal-members.md)
+ [Task Sınıfı](../../extensibility/debugger/task-class-internal-members.md)
 

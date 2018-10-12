@@ -1,7 +1,7 @@
 ---
 title: Düzenleyici içeri aktarımları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7017d4a99bbfd58a854ba1cd33230f11928024cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b7bb4ccf7c599b66d8e4e50c01270d5fede1f3b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697485"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171885"
 ---
 # <a name="editor-imports"></a>Düzenleyici İçeri Aktarımları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Düzenleyici içeri aktarımları](https://docs.microsoft.com/visualstudio/extensibility/editor-imports).  
-  
 Bir dizi Düzenleyicisi Hizmetleri, fabrikaları ve erişim farklı türde çekirdek Düzenleyici uzantınızı sağlayan aracıları içeri aktarabilirsiniz. Örneğin, aktarabilirsiniz <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> sunmak için bir <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> için belirli bir içerik türü. (Bu Gezgin, bir metin arabelleği farklı türde aramaları gerçekleştirme sağlar.)  
   
  Bir düzenleyici içeri aktarma kullanılacak bir alan veya özellik bir Yönetilen Genişletilebilirlik Çerçevesi bileşen bölümü dışarı aktaran bir sınıfın aktarmadan.  

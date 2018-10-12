@@ -1,7 +1,7 @@
 ---
 title: Liste kayıtları komut | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9ff1287bb4c92d074c0a0e123d48ddb7e61cc90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e52b7de812be9168c30093b16041db42ea4676b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693248"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195422"
 ---
 # <a name="list-registers-command"></a>Yazmaçları Listele Komutu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Listele komutu kaydeder](https://docs.microsoft.com/visualstudio/ide/reference/list-registers-command).  
-  
   
 Seçilen değeri kaydeder ve olanak tanır görüntüler liste kayıtları göstermek için değiştirin.  
   
@@ -75,7 +73,7 @@ r /Display Flags
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio komutları](../../ide/reference/visual-studio-commands.md)   
  [Hata ayıklama temelleri: Yazmaçlar penceresi](../../debugger/debugging-basics-registers-window.md)   
- [Nasıl yapılır: yazmaçlar penceresini kullanma](../../debugger/how-to-use-the-registers-window.md)
+ [Nasıl Yapılır: Yazmaçlar Penceresini Kullanma](../../debugger/how-to-use-the-registers-window.md)
 
 
 

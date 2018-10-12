@@ -1,7 +1,7 @@
 ---
 title: Sınıf Tasarımcısı hataları hakkında ek bilgi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4e343ed5453a5751bcbd491bc7e94a8491c1f88c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a957630de193d805b1a516d45c72bd1483f0278
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630332"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188532"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>Sınıf Tasarımcısı Hataları Hakkında Ek Bilgiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ek bilgiler hakkında Sınıf Tasarımcısı hataları](https://docs.microsoft.com/visualstudio/ide/additional-information-about-class-designer-errors).  
-  
 Sınıf Tasarımcısı, kaynak dosyalarının konumunu proje şekilde değiştirme izlemez veya proje kaynak dosyalarında taşıma Sınıf Tasarımcısı'nın türü (özellikle bir tür tanımı, temel sınıflar veya ilişki türlerini kaynak türü) kaybetmesine neden olabilir. Gibi bir hata alabilirsiniz **Sınıf Tasarımcısı bu türü görüntüleyemiyor**. Bunu yaparsanız, değiştirilmiş ya da yeni yerlerine kaynak kodu yeniden görüntülemek için sınıf diyagramına sürükleyin.  
   
  Ortamındaki aşağıdaki kaynaklara diğer hatalar ve uyarılar konusunda Yardım bulabilirsiniz:  

@@ -1,7 +1,7 @@
 ---
 title: Öğe tanımları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 39e8780ff8f7decc01abbe8b1c24fbfadb097a91
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 18045c8b6c388839f09ba42284ab498caf11dbf5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679928"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182071"
 ---
 # <a name="item-definitions"></a>Öğe Tanımları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [öğesi tanımları](https://docs.microsoft.com/visualstudio/msbuild/item-definitions).  
-  
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 kullanarak proje dosyalarındaki öğeleri statik bildirimi sağlayan [ItemGroup](../msbuild/itemgroup-element-msbuild.md) öğesi. Ancak, meta veriler için tüm öğeleri aynı olsa bile, yalnızca öğe düzeyinde meta veri eklenebilir. İtibariyle [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5, adlı bir proje öğesi [Itemdefinitiongroup](../msbuild/itemdefinitiongroup-element-msbuild.md) bu sınırlamayı kaldırır. *Itemdefinitiongroup* adlandırılmış öğe türü içindeki tüm öğeler için varsayılan meta veri değerlerini ekleyen öğesi tanımları kümesini tanımlamanızı sağlar.  
   
@@ -37,7 +35,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [öğesi tanımları](https
   
 -   Öğesi türleri, birden çok tanımına sahip olabilir. Ek meta veri belirtimleri türüne eklenir, son belirtimi önceliklidir. \(Meta veri özelliklerini izleyin aynı alma sırada izler.\)  
   
--   Meta veri olabilir eklenebilir. Örneğin, CDefines değerleri koşullu olarak ayarlanan özellikler bağlı olarak toplanır. Örneğin, `MT;STD_CALL;DEBUG;UNICODE`.  
+-   Meta veri olabilir eklenebilir. Örneğin, CDefines değerleri koşullu olarak ayarlanan özellikler bağlı olarak toplanır. Örneğin: `MT;STD_CALL;DEBUG;UNICODE`  
   
 -   Meta veri kaldırılabilir.  
   
@@ -248,7 +246,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [öğesi tanımları](https
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Toplu işleme](../msbuild/msbuild-batching.md)
+ [Toplu İşleme](../msbuild/msbuild-batching.md)
 
 
 

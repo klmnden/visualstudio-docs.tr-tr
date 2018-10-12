@@ -1,7 +1,7 @@
 ---
 title: Örnekleme veri değerlerini anlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60087d2788cd4b46b77d670cf430bf0e0198b6f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5834768784465b02b896b21339dc240a90781353
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686991"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221396"
 ---
 # <a name="understanding-sampling-data-values"></a>Örnekleme Veri Değerlerini Anlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [örnekleme veri değerlerini anlama](https://docs.microsoft.com/visualstudio/profiling/understanding-sampling-data-values).  
-  
 *Örnekleme* yöntemi profil oluşturma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] profil oluşturma araçları Bilgisayar işlemcisi belirlenen aralıklarla keser ve işlev çağrı yığını toplar. A *çağrı yığını* işlemci üzerinde yürütülen işlevler hakkında bilgi depolayan dinamik bir yapıdır.  
   
  **Gereksinimler**  
@@ -61,7 +59,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [örnekleme veri değerleri
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: Koleksiyon metotları seçme](../profiling/how-to-choose-collection-methods.md)   
- [Veri Araçları performansını analiz etme](../profiling/analyzing-performance-tools-data.md)
+ [Performans Araçları Verilerini Analiz Etme](../profiling/analyzing-performance-tools-data.md)
 
 
 

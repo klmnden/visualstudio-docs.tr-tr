@@ -1,7 +1,7 @@
 ---
 title: Visual Studio IDE'yi kişiselleştirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24def685632c995f173ad1c0b50910ef36d484e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8729b9d2e532909a89e6293d48aefb21922fb4d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673970"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220007"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Visual Studio IDE’yi kişiselleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio IDE'yi kişiselleştirme](https://docs.microsoft.com/visualstudio/ide/personalizing-the-visual-studio-ide).  
-  
 Bu bölümde, Visual Studio'yu en iyi geliştirme tarzınıza ve gereksinimlerini desteklemek için çeşitli yollarla kişiselleştirme açıklar. Tanımlamak ve birden çok pencere düzenlerini kaydedebilir ve bunlar arasında geçiş yapabilirsiniz. Örneğin, kodlamak için kullanılan bir düzen ve hata ayıklama için bir tane tanımlayabilirsiniz. Renkleri, yazı tipleri ve her dil için kod düzenleyicisinde biçimlendirme özelleştirebilirsiniz. Mavi, koyu ya da açık ortam Renk temalarını arasında seçebilir veya özel temalar indirip yükleyerek Visual Studio tema Düzenleyicisi Visual Studio kod Galerisi'nden oluşturabilirsiniz. Diğer birçok seçeneği de aracılığıyla sunulur [ortam Seçenekleri iletişim kutusu](../ide/reference/environment-options-dialog-box.md).  
   
  Ayarlarınızı birçoğu, Visual Studio örnekleri arasında dolaşıma girer. Bkz: [eşitlenmiş ayarlar](../ide/synchronized-settings-in-visual-studio.md) daha fazla bilgi için.  

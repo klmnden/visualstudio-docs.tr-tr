@@ -1,7 +1,7 @@
 ---
 title: Spy ++ görünümleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 648c0d32b19964d3e85feb3d16a04ccbd235444b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a361e09e534a19e0fc68bd44a68cccd8359b4b0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631184"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190976"
 ---
 # <a name="spy-views"></a>Spy++ Görünümleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Spy ++ görünümleri](https://docs.microsoft.com/visualstudio/debugger/spy-increment-views).  
-  
 Spy ++ makinenizde windows, iletileri, süreçleri ve iş parçacığı kullanılabilir ağaç görünümleri görüntüler.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
@@ -45,7 +43,7 @@ Spy ++ makinenizde windows, iletileri, süreçleri ve iş parçacığı kullanı
  Etkin iş parçacığı ağaç görünümünü görüntüler.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Spy ++ görünümleri için arama araçları](../debugger/search-tools-for-spy-increment-views.md)  
+ [Spy++ Görünümleri İçin Arama Araçları](../debugger/search-tools-for-spy-increment-views.md)  
  Spy ++ görünümleri Windows'da belirli düğümler bulmak için kullanılan iletişim kutuları.  
   
  [Spy++ kullanma](../debugger/using-spy-increment.md)  

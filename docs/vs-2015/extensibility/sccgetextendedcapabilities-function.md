@@ -1,7 +1,7 @@
 ---
 title: SccGetExtendedCapabilities işlevi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 588c6a92-2147-4d8b-a357-96ca7da0a092
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 016b44e8dcd8218b8c3fbd569ba6a27b77d9d204
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 03476339f4cf70f572bc76c90f9919dd3513df17
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693898"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181031"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities İşlevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [SccGetExtendedCapabilities işlevi](https://docs.microsoft.com/visualstudio/extensibility/sccgetextendedcapabilities-function).  
-  
 Bu işlev, kaynak denetimi eklentisi tarafından desteklenen ek özellikleri döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  

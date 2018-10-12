@@ -1,7 +1,7 @@
 ---
 title: İş parçacıklarında ve işlemlerde hata ayıklama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bda70d9f99b4b97623d5d9f03ca440721f9a728
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 711aaeaa76edbb4ea9d070254213f9a7207e12f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633471"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191496"
 ---
 # <a name="debug-threads-and-processes"></a>İş Parçacıklarında ve İşlemlerde Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [hata ayıklama iş parçacıklarında ve işlemlerde](https://docs.microsoft.com/visualstudio/debugger/debug-threads-and-processes).  
-  
 İş parçacıkları * ve *işlemleri* bilgisayar biliminde ilişkili kavramlardır. Her ikisi de belirli bir sırayla yürütülmesi gereken yönerge sıralarını temsil eder. Ayrı iş parçacıkları veya işlemlerdeki, yönergeleri, ancak paralel olarak çalıştırabilirsiniz.  
   
  İşlemler, işletim sistemi içinde bulunur ve kullanıcıların programlar ya da uygulamalar gördükleri için karşılık gelir. Bir iş parçacığı, diğer yandan, bir işlem içinde bulunur. Bu nedenle, iş parçacığı olarak da adlandırılır *basit işlemler*. Her işlem, bir veya daha fazla iş parçacığından oluşur.  
@@ -69,7 +67,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [hata ayıklama iş parçac
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çalıştırma işlemleri iliştirme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [GPU kodunda hata ayıklama](../debugger/debugging-gpu-code.md)
+ [GPU Kodunda Hata Ayıklama](../debugger/debugging-gpu-code.md)
 
 
 

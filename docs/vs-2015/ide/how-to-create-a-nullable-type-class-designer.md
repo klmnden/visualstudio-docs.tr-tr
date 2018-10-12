@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: boş değer atanabilir bir tür (Sınıf Tasarımcısı) oluşturma | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f93d5a18b71a054a147b396afd293c6bdce36c64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a30ac892489d832f4b6dc2d0c51efb6192e77419
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691782"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179432"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Nasıl Yapılır: Boş Değer Atanabilir Tür Oluşturma (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: boş değer atanabilir bir tür (Sınıf Tasarımcısı) oluşturma](https://docs.microsoft.com/visualstudio/ide/how-to-create-a-nullable-type-class-designer).  
-  
 Belirli değer türleri her zaman sahip (tanımlı bir değer veya gerekir). Burada bazı alanlar herhangi bir değer atanamaz veritabanlarında yaygın yöntem budur. Örneğin, bir null değer, henüz bir değer atanmadı olduğunu belirtmek için bir veritabanı alanı atayabilirsiniz.  
   
  A *boş değer atanabilir tür* türü ve ayrıca bir null değer için tipik değerleri aralığı alır, böylece genişleten bir değer türüdür. Örneğin, bir boş değer atanabilir, `Int32`, null olarak da başlar\<Int32 > herhangi bir değer -2147483648 2147483647 için atanabilir veya bir null değer atanabilir. Bir boş değer\<bool > değerler atanabilir `True`, `False`, ya da null (hiç değer).  

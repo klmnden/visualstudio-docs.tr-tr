@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: çok iş parçacıklı uygulamada hata ayıklama | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a13fa717cc7f3952e44fe0dffecf735e7b53345a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47cb401bae952e8ecdfaf18848e63f9d9a320be7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689838"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186205"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>İzlenecek Yol: Çok İş Parçacıklı Uygulamada Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [iş parçacıkları penceresini kullanarak birden çok iş parçacıklı bir uygulamada hata ayıklamaya](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-threads-window).  
-  
 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] Gelişmiş sağlar **iş parçacıkları** penceresi ve diğer kullanıcı arabirimi hata ayıklama çok iş parçacıklı uygulamalarda daha kolay hale getirmek için iyileştirmeler. Bu izlenecek yol yalnızca birkaç dakika sürer, ancak bunu tamamlamaya, çok iş parçacıklı uygulamalarda hata ayıklama için yeni arabirimi özellikleri ile alışmanızı.  
   
  Bu izlenecek yolda başlamak için bir çok iş parçacıklı uygulaması projesi gerekir. Bu projeyi oluşturmak için burada listelenen adımları izleyin.  
@@ -265,7 +263,7 @@ Thread::Sleep(3000);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Nasıl yapılır: hata ayıklarken başka bir iş parçacığına geçiş](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+ [Nasıl Yapılır: Hata Ayıklarken Başka Bir İş Parçacığına Geçme](../debugger/how-to-switch-to-another-thread-while-debugging.md)
 
 
 

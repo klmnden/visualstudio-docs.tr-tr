@@ -1,7 +1,7 @@
 ---
 title: XML Düzenleyicisi ile tümleştirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9066e4941fad5acbb0d8da2f6f6165ee99402873
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 72cbb498184317f79cdd91a59e60dab430dfcce7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692052"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214506"
 ---
 # <a name="integration-with-xml-editor"></a>XML Düzenleyicisi ile Tümleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Tümleştirmesi ile XML Düzenleyicisi](https://docs.microsoft.com/visualstudio/xml-tools/integration-with-xml-editor).  
-  
   
 XML şema tasarımcısını XML Düzenleyicisi ile tümleşiktir. XSD dosyası XML Düzenleyicisi'nde değiştirirseniz, değişikliğin yansıtılır [XML Şeması Gezgini](../xml-tools/xml-schema-explorer.md). Varsa [graf görünümünü](../xml-tools/graph-view.md) veya [içerik modeli görünümünü](../xml-tools/content-model-view.md) açık değişiklik de var. yansıtılır. XML şema tasarımcısını XML Düzenleyicisi arasında aşağıdaki yollarla gidebilirsiniz:  
   

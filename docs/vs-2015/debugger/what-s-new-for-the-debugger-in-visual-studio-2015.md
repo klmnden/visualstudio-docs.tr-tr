@@ -1,7 +1,7 @@
 ---
 title: Hata Ayıklayıcı'Visual Studio 2015'teki yenilikler | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 86
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b7a854e872a7739054379b1f6d01794f142f448
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 743875ef4ab7582bd4c1a254c82f168b96ba8208
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126559"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188623"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2015"></a>Visual Studio 2015 Hata Ayıklayıcısı’ndaki Yenilikler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [hata ayıklayıcının yenilikler](https://docs.microsoft.com/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio).  
-  
 Visual Studio 2015 güncelleştirme 1'hata ayıklama ve tanılama konusunda yeni olan her şey hakkında bilgi için [Visual Studio 2015 güncelleştirme 1 sürüm notları](https://www.visualstudio.com/news/vs2015-update1-vs#debug).  
   
  Visual Studio 2015 RTM hata ayıklama ve tanılama konusunda yeni olan her şey hakkında bilgi için [Visual Studio 2015 sürüm notları](https://www.visualstudio.com/news/vs2015-vs#debug).  

@@ -1,7 +1,7 @@
 ---
 title: Hizmetleri kaydetme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: c4ebac40-0374-4dda-948e-06fdda0e9c81
 caps.latest.revision: 8
 manager: douge
-ms.openlocfilehash: f56c73bbb09c659a76083e511d79d487402477ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5d8aa9e6652aa41e59d160c5cf25aacd3390572
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688556"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219693"
 ---
 # <a name="registering-services"></a>Hizmetleri kaydediliyor
 İsteğe bağlı yükleme desteklemek için bir hizmet sağlayıcısı, küresel hizmetler ile kaydetmelisiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

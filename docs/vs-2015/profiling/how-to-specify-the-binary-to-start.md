@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: başlatma için ikili dosya belirtme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec65dd3a5bcc812ff2f7c42ae4cbbba6080664db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 95539f978121dd5fb366776321498d33ac1ee92a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697241"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194343"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>Nasıl yapılır: Başlatma için İkili Dosya Belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: başlatma için ikili dosya belirtme](https://docs.microsoft.com/visualstudio/profiling/how-to-specify-the-binary-to-start).  
-  
 İçin profil ikili dosyaları, DLL'ler gibi bilgileri girmeniz gerekir  **\<hedef > özellik sayfaları** iletişim kutusu. Bu bilgiler, DLL projesi çağıran uygulama nereden gösterir.  
   
  **Gereksinimler**  
@@ -55,7 +53,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: başlatm
 7.  **Tamam**'ı tıklatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)
+ [Performans Oturumlarını Yapılandırma](../profiling/configuring-performance-sessions.md)
 
 
 

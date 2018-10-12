@@ -1,7 +1,7 @@
 ---
 title: Uzantılar ve güncelleştirmeler, ortam, Seçenekler iletişim kutusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 48af71d66b21c8175841c56f7d94a927f6e1a5a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b0b51d3b5f61a256a440673b9770f10efecb7b0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628788"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181096"
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>Uzantılar ve Güncelleştirmeler, Ortam, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Uzantılar ve güncelleştirmeler, ortam, Seçenekler iletişim kutusu](https://docs.microsoft.com/visualstudio/ide/reference/extensions-and-updates-environment-options-dialog-box).  
-  
   
 Visual Studio güncelleştirmelerini nasıl gerçekleştirir ve uzantıları nasıl güncelleştirildi ve bulunan seçeneklerini ayarlamak için bu sayfayı kullanın.  
   

@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: karışık modda hata ayıklama | Microsoft Docs'
 ms.custom: ''
-ms.date: 06/19/2017
+ms.date: 06/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,46 +19,48 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 834288c063a4bc0d830f121dcb8589b509c61bcf
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 8a08cf3cf95073d06c1dfa350f2de86bf72837c5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256168"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182682"
 ---
-# <a name="how-to-debug-in-mixed-mode"></a>Nasıl Yapılır: Karışık Modda Hata Ayıklama
-Aşağıdaki yordamlar, karışık mod hata ayıklaması olarak da bilinen, hem yönetilen hem de yerel kodda hata ayıklama açıklar. Olup DLL ya da uygulama yerel kodda yazılır bağlı olarak bunu yapmak için iki senaryo vardır:  
+# <a name="how-to-debug-in-mixed-mode"></a>Nasıl yapılır: karışık modda hata ayıklama
+Aşağıdaki yordamlar, yönetilen ve yerel kod birlikte, olarak da bilinen karışık mod hata ayıklama için hata ayıklamayı nasıl etkinleştireceğinizi açıklar. İki karma mod hata ayıklama senaryoları şunlardır:  
   
--   DLL çağrıları çağrı yapan uygulamanın yerel kodda yazılır. Bu durumda, DLL yönetilir ve yönetilen ve yerel hata ayıklayıcıları hem de hata ayıklama için etkinleştirilmiş olması gerekir. Bunu denetleyebilirsiniz  **\<Proje > özellik sayfaları** iletişim kutusu. Bunu nasıl yapacağınız olup, DLL projesi veya arama uygulama projesi hata ayıklama başlamanıza bağlıdır.  
+- Bir DLL çağıran uygulama yerel kodda yazılır ve DLL yönetilir. 
   
--   DLL çağrıları çağrı yapan uygulamanın yönetilen kodda yazılır ve DLL yerel kodda yazılır. Bu adımlarda size bir öğretici için bkz [yönetilen ve yerel kodda hata ayıklama](../debugger/how-to-debug-managed-and-native-code.md).
-  
+- Bir DLL çağıran uygulama, yönetilen kodda yazılır ve yerel kodda DLL'dir. Bu senaryo daha ayrıntılı size bir öğretici için bkz [yönetilen ve yerel kodda hata ayıklama](../debugger/how-to-debug-managed-and-native-code.md).
+   
+Hem yönetilen hem de yerel hata ayıklayıcıları çağıran uygulama projenin etkinleştirebilirsiniz **özelliği** sayfaları. Ayarlar, yerel ve yönetilen uygulamalar arasında farklılık gösterir. 
+
+Çağıran uygulamanın projeye erişimi yoksa, DLL DLL projesinden ayıklayabilirsiniz. Karma mod yalnızca DLL proje hatalarını ayıklamaya gerekmez. Daha fazla bilgi için [nasıl yapılır: DLL projesinde hata ayıklama](../debugger/how-to-debug-from-a-dll-project.md). 
+
 > [!NOTE]
->  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için tercih **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
+> İletişim kutuları ve gördüğünüz komutları bu makalede, Visual Studio ayarları veya sürüm bağlı olarak gösterilenlerden farklı olabilir. Ayarlarınızı değiştirmek için seçin **Araçları** > **içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
 
-Arama uygulama için proje erişim yoksa, DLL projesi DLL'den ayıklayabilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: DLL projesinde hata ayıklama](../debugger/how-to-debug-from-a-dll-project.md). Yalnızca DLL projesinde hata ayıklamak için karma kullanmanız gerekmez.
+## <a name="enable-mixed-mode-debugging-for-a-native-calling-app"></a>Yerel çağıran bir uygulama için karışık mod hata ayıklamayı etkinleştir  
   
-### <a name="to-enable-mixed-mode-debugging-c-calling-app"></a>Karışık mod (C++ çağıran uygulama) hata ayıklamayı etkinleştirmek için  
-  
-1.  İçinde **Çözüm Gezgini**, yerel projesini seçin.
-  
-2.  Üzerinde **Görünüm** menüsünde tıklatın **özellik sayfaları**.
-  
-3.  İçinde  **\<Proje > özellik sayfaları** iletişim kutusunda, genişletin **yapılandırma özellikleri** düğümünü ve ardından **hata ayıklama**.  
-  
-4.  Ayarlama **hata ayıklayıcı türü** için **karma** veya **otomatik**.
+1. C++ projesinde seçin **Çözüm Gezgini** tıklatıp **özellikleri** simgesi, tuşuna **Alt**+**Enter**, veya sağ tıklatın ve seçin **özellikleri**.
+   
+1. İçinde  **\<Proje > özellik sayfaları** iletişim kutusunda **yapılandırma özellikleri**ve ardından **hata ayıklama**.  
+   
+1. Ayarlama **hata ayıklayıcı türü** için **karma** veya **otomatik**.
+   
+1. Seçin **Tamam**.
+   
+   ![Karışık mod hata ayıklamayı](../debugger/media/dbg-mixed-mode-from-native.png "karışık modda hata ayıklama etkinleştirme")
 
-    ![Karışık mod hata ayıklamayı etkinleştir](../debugger/media/dbg-mixed-mode-from-native.png "karışık modda hata ayıklamayı etkinleştir")
+## <a name="enable-mixed-mode-debugging-for-a-managed-calling-app"></a>Yönetilen çağıran bir uygulama için karışık mod hata ayıklamayı etkinleştir  
+  
+1. C# veya Visual Basic projesinde seçin **Çözüm Gezgini** seçip **özellikleri** simgesi, tuşuna **Alt**+**Enter**, veya sağ tıklayıp seçin **özellikleri**.
+   
+1. Seçin **hata ayıklama** sekmesine tıklayın ve ardından **yerel kod hata ayıklamayı**.
+   
+1. Kullanım **dosya** > **seçili öğeleri Kaydet** veya **Ctrl + S** değişiklikleri kaydedin.
 
-### <a name="to-enable-mixed-mode-debugging-c-or-vb-calling-app"></a>Karışık mod (C# veya VB çağıran uygulama) hata ayıklamayı etkinleştirmek için  
+   ![Yerel kod hata ayıklamayı](../debugger/media/dbg-mixed-mode-from-csharp.png "yerel kod hata ayıklamayı etkinleştir")
   
-1.  İçinde **Çözüm Gezgini**, yönetilen projesini seçin.  
-  
-2.  Üzerinde **Görünüm** menüsünde tıklatın **özellik sayfaları**.  
-  
-3.  İçinde  **\<Proje > özellik sayfaları** iletişim kutusunda **hata ayıklama** sekmesini tıklatın ve ardından **yerel kod hata ayıklamayı etkinleştir**
-
-    ![Yerel kod hata ayıklamayı etkinleştir](../debugger/media/dbg-mixed-mode-from-csharp.png "yerel kod hata ayıklamayı etkinleştir")
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: DLL projesinde hata ayıklama](../debugger/how-to-debug-from-a-dll-project.md)
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Nasıl yapılır: DLL Projesinde hata ayıklama](../debugger/how-to-debug-from-a-dll-project.md)

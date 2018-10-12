@@ -1,7 +1,7 @@
 ---
 title: Program kodunda katman modellerini gezinme ve güncelleştirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3b4be16e9778ffe39e03e55254f6e38e64f3ad21
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69286377a302fabc900fe4cf9384bb65d094a378
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694856"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214941"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Program kodunda katman modellerini gezinme ve güncelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [erişin ve güncelleştirme modelleri program kodunda katman](https://docs.microsoft.com/visualstudio/modeling/navigate-and-update-layer-models-in-program-code).  
-  
 Bu konu, öğeleri ve ilişkileri gidin ve program kodunu kullanarak katman modellerini açıklar. Kullanıcı açısından katman diyagramları hakkında daha fazla bilgi için bkz: [katman diyagramları: başvuru](../modeling/layer-diagrams-reference.md) ve [katman diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md).  
   
  <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> Bu konuda açıklanan hakkında daha genel bir cephe modelidir <xref:Microsoft.VisualStudio.GraphModel> modeli. Yazıyorsanız bir [menü komut veya hareket uzantısı](../modeling/add-commands-and-gestures-to-layer-diagrams.md), kullanın `Layer` modeli. Yazıyorsanız bir [katman doğrulama uzantısı](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), kullanımı daha kolay olan `GraphModel`.  

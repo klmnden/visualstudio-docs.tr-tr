@@ -1,7 +1,7 @@
 ---
 title: İlgili hizmetler ve arabirimler (kaynak denetimi VSPackage'ı) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2aa25cc89bb3832aec6cfdf9a57c135147a1d86f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05ee2b91204c9dca07f59e088ab07db7ee9ceaca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689859"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210138"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>İlgili Hizmetler ve Arabirimler (Kaynak Denetimi VSPackage’ı)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ilgili hizmetler ve arabirimler (kaynak denetimi VSPackage'ı)](https://docs.microsoft.com/visualstudio/extensibility/internals/related-services-and-interfaces-source-control-vspackage).  
-  
 Bu bölümde, tüm kaynak denetimi VSPackage'ı ile ilgili arabirimler listelenmiştir [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. Kaynak denetimi VSPackage'ı, bazı bu arabirimleri uygulayan ve diğer kaynak denetimi görevlerini gerçekleştirmek için kullanır.  
   
 ## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>Kaynak denetimi VSPackage'larını ve tarafından uygulanan arabirimler  
@@ -71,5 +69,5 @@ Bu bölümde, tüm kaynak denetimi VSPackage'ı ile ilgili arabirimler listelenm
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>|Bu arabirim, çözümleri kapatma ya da proje açarken yeni dosyalar kaynak denetiminden almak önce proje dosyalarının iade gibi işlemleri gerçekleştirmek için olayları izlemek için kullanılır.|Kaynak denetimi VSPackage'ı|Önerilen|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Tasarım öğeleri](../../extensibility/internals/source-control-vspackage-design-elements.md)
+ [Tasarım Öğeleri](../../extensibility/internals/source-control-vspackage-design-elements.md)
 

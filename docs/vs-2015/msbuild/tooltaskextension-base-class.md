@@ -1,7 +1,7 @@
 ---
 title: ToolTaskExtension taban sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd535e28c7d229aa0a0468b60ee7e68181350dba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fa6ec44c857d8b8e229d8f34658e8a9d448fcb19
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692891"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221292"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension Taban Sınıfı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ToolTaskExtension temel sınıfı](https://docs.microsoft.com/visualstudio/msbuild/tooltaskextension-base-class).  
-  
   
 Birçok görevi devralacak <xref:Microsoft.Build.Tasks.ToolTaskExtension> öğesinden devralan sınıf <xref:Microsoft.Build.Utilities.ToolTask> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu devralma zincirini aktarımlar görevleri birkaç parametre ekler. Bu parametreler, bu belgede listelenir.  
   
@@ -60,7 +58,7 @@ Birçok görevi devralacak <xref:Microsoft.Build.Tasks.ToolTaskExtension> öğes
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
- [Görevleri](../msbuild/msbuild-tasks.md)
+ [Görevler](../msbuild/msbuild-tasks.md)
 
 
 

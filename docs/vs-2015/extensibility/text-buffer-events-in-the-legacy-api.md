@@ -1,7 +1,7 @@
 ---
 title: Metin arabelleği olayları eski API | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 799443f4674c48201a161dbbd02d525afdb3218c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c3db7d7a4b2c52e4b831078f789dea75c73b337
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687687"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218731"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Metin arabelleği olayları eski API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [metin arabelleği olayları eski API'sindeki](https://docs.microsoft.com/visualstudio/extensibility/text-buffer-events-in-the-legacy-api).  
-  
 Metin arabelleği nesne farklı durumlar için yanıt olanak tanıyan birkaç farklı olaylar gönderir.  
   
  Eski API'si kullanılırken, metin arabelleğini değişiklikleri bildirim almak için aşağıdaki arabirimlerinden uygulamalıdır. Metin arabelleği kullanılarak arabirimleri kullanıma `IConnectionPointContainer` satır bildirim almak için metin arabelleği arabirimde arabellekteki değiştirir. Daha fazla bilgi için [nasıl yapılır: metin arabelleği olayları eski API'si ile kaydolma](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). Durumunda, `IVsTextStreamEvents` veya `IVsTextLinesEvents` arabirimleri, değişiklikleri geri gönderilir ya da bir veya two dimensional koordinatlarında, sırasıyla.  
@@ -60,5 +58,5 @@ Metin arabelleği nesne farklı durumlar için yanıt olanak tanıyan birkaç fa
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski API'yi kullanarak metin arabelleğini erişme](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   
- [Nasıl yapılır: metin arabelleği olayları eski API'si ile kaydolma](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
+ [Nasıl Yapılır: Eski API ile Metin Arabelleği Olaylarına Kaydolma](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
 

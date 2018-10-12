@@ -1,7 +1,7 @@
 ---
 title: Visual Studio'dan Windows Store uygulamaları dağıtma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1212665b8e7e1c28fa30f50c1cd64a0dc5c217bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 540a335365102f279f62f0707ee3cf7cc4fe1b53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685678"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196111"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Visual Studio'dan Windows Store uygulamaları dağıtma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio'dan dağıtma Windows Store apps](https://docs.microsoft.com/visualstudio/debugger/deploy-windows-store-apps-from-visual-studio).  
-  
 Yalnızca Windows için geçerlidir] (.. /Image/windows_only_content.png "windows_only_content")  
   
  Visual Studio dağıtım işlevlerini oluşturur ve bir hedef cihazda oluşturulan Visual Studio ile Windows Store apps kaydeder. Uygulamanın tam olarak nasıl kaydedilir, hedef cihazın yerel veya uzak olup bağlıdır:  
@@ -128,7 +126,7 @@ Yalnızca Windows için geçerlidir] (.. /Image/windows_only_content.png "window
 -   JavaScript ve hata ayıklama özellik sayfası **uygulama Başlat** değerini **Evet**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio'dan uygulamaları çalıştırma](../debugger/run-store-apps-from-visual-studio.md)
+ [Visual Studio’dan uygulamaları çalıştırma](../debugger/run-store-apps-from-visual-studio.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Veri kaynakları penceresine özel denetimler ekleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: acdab62754a8cbbe7b97ea9723fba202d5078ac0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e84224d4ebd066891d4fdf90b4ad488a79cc0b1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688388"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183644"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Veri kaynakları penceresine özel denetimler ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [veri kaynakları penceresine özel denetimler ekleme](https://docs.microsoft.com/visualstudio/data-tools/add-custom-controls-to-the-data-sources-window).  
-  
   
 Bir öğeyi sürüklediğinizde **veri kaynakları** penceresinde bir veriye bağlı denetim oluşturmak için bir tasarım yüzeyine, oluşturduğunuz denetim türünü seçebilirsiniz. Penceresinde her öğenin, aralarından seçim yapabileceğiniz denetimleri görüntüleyen bir açılır liste vardır. Her bir öğeyle ilişkili denetimler kümesini öğesinin veri türüne göre belirlenir. Oluşturmak istediğiniz Denetim listede görünmüyorsa, denetim listesine eklemek için bu konudaki yönergeleri takip edebilirsiniz.  
   

@@ -1,7 +1,7 @@
 ---
 title: ClickOnce Dağıtım örnekleri ve izlenecek yollar | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7d83d296ff0d5a8578f75487e6bb1863eb33e993
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc16747838347810e12e293d718b355f492a158e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687061"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207226"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce Dağıtım Örnekleri ve Yönergeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ClickOnce Dağıtım örnekleri ve izlenecek yollar](https://docs.microsoft.com/visualstudio/deployment/clickonce-deployment-samples-and-walkthroughs).  
-  
 Bu bölümde, örnek uygulamalar, örnek kod ve söz dizimi, yapısı ve Windows Forms, WPF ve konsol uygulamaları dağıtmak için kullanılan teknikleri gösteren adım adım talimatları içerir.  
   
  Örnek kod yönerge amaçlıdır ve değişiklik olmadan dağıtılan çözümleri kullanılmamalıdır. Özellikle, güvenlik büyük dikkate almanız gerekir.  

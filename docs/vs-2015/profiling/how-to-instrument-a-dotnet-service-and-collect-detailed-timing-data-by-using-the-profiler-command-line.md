@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: bir .NET hizmetini izleme ve ayrıntılı zamanlama verileri Profiler komut satırını kullanarak toplama | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22c0a9944c61ea03b699539b50116bd48e804bd2
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 2593dd83763d1ebc373052b0fb05649af75655dd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879414"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191392"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Nasıl yapılır: Profil Oluşturucu Komut Satırını Kullanarak bir .NET Hizmetini İzleme ve Ayrıntılı Zamanlama Verileri Toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: bir .NET hizmetine ve ayrıntılı zamanlama verileri toplama Profiler komut satırını kullanarak izleme](https://docs.microsoft.com/visualstudio/profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line).  
-  
 Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] aracı profil oluşturma araçları komut satırı araçlarını bir [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ve ayrıntılı zamanlama verileri toplamak.  
   
 > [!NOTE]

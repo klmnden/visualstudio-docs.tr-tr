@@ -1,7 +1,7 @@
 ---
 title: Modüller görünümü - .NET bellek örnekleme verileri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1596d85e2668090533df9021c964d6767d36b38
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3334edce4d29792e44f4cab0840a9f46763d74aa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693128"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185401"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Modüller Görünümü - .NET Bellek Örnekleme Verileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [modüller görünümü - .NET bellek örnekleme verileri](https://docs.microsoft.com/visualstudio/profiling/modules-view-dotnet-memory-sampling-data).  
-  
 Örnekleme metodu kullanılarak toplanan .NET bellek ayırma verisini modülleri görünümünü bellek verileri profil oluşturma çalıştırmasını içinde yürütülen modülleri göre gruplandırır. Her bir hiyerarşik ağaç kökünde modülüdür. Modülündeki işlevlerin modülü düğümünün altında listelenir.  
   
  Bellek ayırma deyimleri kaynak dosya satır numaralarını işlevi düğümünün altında listelenir ve ayırmayı yönergeleri adresleri satırı düğümünün altında listelenir. Dahil ve hariç olan değerler her zaman satır verileri ve yönerge verileri için aynıdır.  

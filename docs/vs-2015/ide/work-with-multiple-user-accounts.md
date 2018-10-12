@@ -1,7 +1,7 @@
 ---
 title: Birden çok kullanıcı hesabıyla çalışma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3559e6df1f675489d15b2cfd53ef80737e003cb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93f029a067e5a45930c2ac827862c1807e32aff8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687975"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176273"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Birden çok kullanıcı hesabıyla çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [birden çok kullanıcı hesabıyla çalışma](https://docs.microsoft.com/visualstudio/ide/work-with-multiple-user-accounts).  
-  
 Birden çok Microsoft hesabına ve/veya iş veya Okul hesapları varsa, böylece herhangi bir hesabı kaynakları için ayrı ayrı oturum açmanız gerek kalmadan erişebilir bunları tüm Visual Studio için ekleyebilirsiniz. Visual Studio 2015 RTM tarih itibarıyla Azure, Application Insights, Team Foundation Server ve Office 365 Hizmetleri kolaylaştırılmış oturum açma deneyimini destekler. Zaman geçtikçe ek hizmetler kullanılabilir duruma gelebilir.  
   
  Başka bir makinede Visual Studio'ya oturum açarsanız bir makine üzerinde birden çok hesap ekledikten sonra bu hesapları kümesi sizinle birlikte dolaşır. Hesap adlarını Dolaşımda olsa da, kimlik bilgileri sağlamadığı, dikkat edin önemlidir. Bu nedenle, ilk kez yeni makineye kaynaklarını kullanma girişimi diğer hesaplar için kimlik bilgilerini girin istenir.  

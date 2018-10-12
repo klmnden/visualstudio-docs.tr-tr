@@ -1,7 +1,7 @@
 ---
 title: Pencere Bul iletişim kutusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04a2875d29248df45f8c9b92f49df8237e7fe993
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 946d147e0fc77086039a89419a47c2a2d078785e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674549"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224451"
 ---
 # <a name="find-window-dialog-box"></a>Pencere Bul İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Bul penceresi iletişim kutusu](https://docs.microsoft.com/visualstudio/debugger/find-window-dialog-box).  
-  
 Bir pencere seçmek ve kendi özellikleri ve iletileri görüntülemek için bu iletişim kutusunu kullanın. Bu iletişim kutusu görüntülemeyi tercih **Bul penceresi** gelen **Spy** menüsü.  
   
  Aşağıdaki ayarlar kullanılabilir:  
@@ -70,10 +68,10 @@ Bir pencere seçmek ve kendi özellikleri ve iletileri görüntülemek için bu 
  [Spy++ kullanma](../debugger/using-spy-increment.md)  
  Spy ++ araç tanıtır ve nasıl kullanılacağını açıklar.  
   
- [Pencere arama iletişim kutusu](../debugger/window-search-dialog-box.md)  
+ [Pencere Arama İletişim Kutusu](../debugger/window-search-dialog-box.md)  
  Windows görünümünde belirli bir pencere için düğüm bulmak için kullanılır.  
   
- [Pencere Özellikleri iletişim kutusu](../debugger/window-properties-dialog-box.md)  
+ [Pencere Özellikleri İletişim Kutusu](../debugger/window-properties-dialog-box.md)  
  Windows görünümünde seçilen bir pencere özelliklerini görüntülemek için kullanılır.  
   
  [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  

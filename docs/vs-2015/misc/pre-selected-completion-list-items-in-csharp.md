@@ -1,7 +1,7 @@
 ---
 title: Tamamlanma listesi öğeleri, C# ' önceden seçilmiş | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: BillWagner
 ms.author: billchi
 manager: douge
-ms.openlocfilehash: 9f4560bf5c0fbdd57485cd4ec2dda1e37d06964d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 081cd296f80518a4074a287efbac686e3c3f74d1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689760"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224672"
 ---
 # <a name="pre-selected-completion-list-items-in-c"></a>C#'de Önceden Seçilmiş Tamamlanma Listesi Öğeleri #
 Bu içerik için geçmiştir [tamamlanma listeleri C#](../misc/completion-lists-in-csharp.md)

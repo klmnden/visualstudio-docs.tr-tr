@@ -1,7 +1,7 @@
 ---
 title: UML genişletmek için profil tanımlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b54babfc6bb4350ba1cc99d6ce34a05f70dab693
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: aebac5a95a6d1b1ab6aa0d4230094003de2a2062
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775796"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221266"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>UML’yi genişletmek için profil tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [UML genişletmek için profil tanımlama](https://docs.microsoft.com/visualstudio/modeling/define-a-profile-to-extend-uml).  
-  
 Tanımlayabileceğiniz bir *UML profili* belirli amaçlar için standart model öğelerini özelleştirmek için. Bir profili bir veya daha fazla tanımlar *UML stereotipini*. Stereotip belirli bir tür nesneyi temsil eden bir türü işaretlemek için kullanılabilir. Stereotip ayrıca öğenin özellikler listesini genişletebilirsiniz.  
   
  Birkaç profil Visual Studio'nun desteklenen sürümleri yüklenir. Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport). Bu profiller ve stereotiplerin nasıl uygulandığı hakkında daha fazla bilgi için bkz: [modelinizi profiller ve stereotipler aracılığıyla özelleştirme](../modeling/customize-your-model-with-profiles-and-stereotypes.md).  

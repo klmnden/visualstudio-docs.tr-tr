@@ -1,7 +1,7 @@
 ---
 title: Öğe oluşturma ve hareketini özelleştirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 589c8c9be01477a2319943b47b329d09a80dc16f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 00e2bd91acd4240685411acbb00dcd478fff9aad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632967"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203534"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Öğe Oluşturma ve Hareketini Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [özelleştirme öğe oluşturma ve hareketini](https://docs.microsoft.com/visualstudio/modeling/customizing-element-creation-and-movement).  
-  
 Bir öğeyi başka sürüklenerek araç kutusundan veya bir yapıştırma veya taşıma işlemi izin verebilirsiniz. Belirttiğiniz ilişkileri kullanarak, taşınan öğeleri hedef öğelere bağlı olabilir.  
   
  Öğe birleştirme yönergesi (EMD) bir model öğesi olduğunda ne olacağını belirtir *birleştirilmiş* başka bir model öğesi olarak. Böyle olduğunda:  

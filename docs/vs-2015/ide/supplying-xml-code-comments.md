@@ -1,7 +1,7 @@
 ---
 title: XML kodu açıklamalarını sağlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 82a76cdc9da6a9d289ca325caf36f6ff2c159770
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 77c0eab37d23a9324d10c89b435f771dba28e634
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880441"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185464"
 ---
 # <a name="supplying-xml-code-comments"></a>XML Kodu Açıklamalarını Sağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [XML kodu açıklamalarını sağlama](https://docs.microsoft.com/visualstudio/ide/supplying-xml-code-comments).  
-  
 Yorumlar kaynak kodu dosyalarında IntelliSense olarak yapabilirsiniz. Visual Basic, C# veya C++ derleyici komut satırında/doc anahtar eklediğinizde, IntelliSense belgeleri için taban olarak görev yapan bir .xml dosyası oluşturulur.  
   
  Visual Basic kod belgeleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: XML belgeleri oluşturma](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230).  

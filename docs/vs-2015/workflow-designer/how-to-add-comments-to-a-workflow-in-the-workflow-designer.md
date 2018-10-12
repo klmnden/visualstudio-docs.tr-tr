@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: iş akışı tasarımcısında bir iş akışı aracılığıyla açıklama ekleme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: f70f8ba1a30d5adcaffe7e693fcc711d08a28baf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c605ec087a4aa5bec3aecf91d9f0ac1c1a1fb42a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690245"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194616"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Nasıl yapılır: iş akışı tasarımcısında bir iş akışı aracılığıyla açıklama ekleme
 Daha büyük, daha karmaşık iş akışları oluşturma kolaylaştırmak için [!INCLUDE[net_v45](../includes/net-v45-md.md)] öğesi Tasarımcısı'nda aşağıdaki türden ek açıklamalar eklemek geliştiricinin sağlar:  

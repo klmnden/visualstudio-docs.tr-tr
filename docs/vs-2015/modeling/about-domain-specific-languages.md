@@ -1,7 +1,7 @@
 ---
 title: Etki alanına özgü diller hakkında | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 971c63d25aee9c8676921b5ee7e112ae41a8a251
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0a9d3b89e91e0540766621f0889a12482291740a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684549"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175272"
 ---
 # <a name="about-domain-specific-languages"></a>Etki Alanına Özgü Diller Hakkında
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [etki alanına özgü diller hakkında](https://docs.microsoft.com/visualstudio/modeling/about-domain-specific-languages).  
-  
 C# veya UML gibi genel amaçlı bir dil, bir etki alanına özgü dil (DSL), belirli bir sorun alanı veya etki alanı deyimlerinde express için tasarlanmıştır.  
   
  İyi bilinen DSL'ler normal ifadeler ve SQL içerir. Her DSL kendi kapsamı dışındaki fikirleri tanımlamak için metin dizelerini veya bir veritabanı, ancak çok daha da kötüsü işlemleri tanımlamak için genel amaçlı bir dil daha çok daha iyidir. Tek tek sektörler kendi DSL'ler de vardır. Örneğin, telekomünikasyon sektörün dilleri yaygın bir telefon aramasıyla durumları dizisini belirtin ve sektör havada seyahat için kullanılan açıklama DSL uçuş kayıtları tanımlamak için kullanılan standart bir çağırın.  

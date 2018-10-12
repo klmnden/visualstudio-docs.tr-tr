@@ -1,7 +1,7 @@
 ---
 title: Yönetilen kod için temel tasarım yönerge kuralları kural kümesi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: aad4bb755889ca4d2aa9766836f156495d281bca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed0728eb0daa5c1ff0f322db42f66373181f3e23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691853"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184723"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Yönetilen kod için Temel Tasarım Yönerge Kuralları kural kümesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yönetilen kod için temel tasarım yönerge kuralları kural kümesi](https://docs.microsoft.com/visualstudio/code-quality/basic-design-guideline-rules-rule-set-for-managed-code).  
-  
 Microsoft temel tasarım yönerge kuralları kural kodunuzu anlamayı ve kullanmayı daha kolay hale odaklanmak için kümesi kullanabilirsiniz. Bu kural projeniz Kütüphane kodu içeriyorsa, ya da sürdürmek kolayca kod için en iyi yöntemler zorlamak istiyorsanız kümesini içermelidir.  
   
  Temel tasarım yönerge kuralları Microsoft Minimum Recommeded kurallar kural kümesindeki tüm kurallar içerir. Minimum kurallar listesi için bkz. [yönetilen kod için yönetilen önerilen kurallar kural kümesi](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).  

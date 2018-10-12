@@ -1,7 +1,7 @@
 ---
 title: Birim Test Gezgini ile mevcut C++ uygulamalarında testi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
 caps.latest.revision: 13
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 040e3f0a236067a96d107f64f4c9aca06d0706e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63761dc543b327c1c8639203c80afb92d4700c8d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632963"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172464"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Test Gezgini ile mevcut C++ uygulamalarında birim testi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Birim Test Gezgini ile mevcut C++ uygulamalarında testi](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer).  
-  
 Mevcut bir uygulamayı değiştirmeden önce birim testlerinin yeterli derecede kapsamlı olduğundan emin olun, öneririz. Bu, değişikliklerinizi yeni hatalar oluşturmadığından emin olmanızı sağlar. Uygulama zaten birim testlerine sahip değilse, bu konuda gösterilen teknikleri kullanarak ekleyebilirsiniz. Bu konuda, kod ve sonra oluşturmak, test etme karar ile başlayarak, var olan Visual C++ kodu için birim testleri eklemeyi açıklar yazma ve son olarak, testler.  
   
 ## <a name="deciding-how-to-test-your-code"></a>Kodunuzu test etmek nasıl karar verme  

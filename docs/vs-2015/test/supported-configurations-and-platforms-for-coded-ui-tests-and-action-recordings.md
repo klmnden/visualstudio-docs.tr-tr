@@ -1,7 +1,7 @@
 ---
 title: Desteklenen yapılandırmalar ve platformlar için kodlanmış UI testlerini ve Eylem kayıtlarını | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 544742b5-4ec1-4d51-b941-72b2f6ff17bc
 caps.latest.revision: 108
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8870d71c0536f12264f722e69408cbafd8b14e6e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23c1c84180df7fd185ce29d265f89c6b905ff794
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630911"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198776"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [kodlanmış UI testleri ve eylem kayıtları için desteklenen yapılandırmalar ve platformlar](https://docs.microsoft.com/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).  
-  
 Desteklenen yapılandırmalar ve platformlar için kodlanmış UI testleri için Visual Studio Enterprise aşağıdaki tabloda listelenmiştir. Bu yapılandırmalar kullanılarak oluşturulan eylem kayıtları için de geçerlidir. [!INCLUDE[MTRlong](../includes/mtrlong-md.md)].  
   
 > [!NOTE]

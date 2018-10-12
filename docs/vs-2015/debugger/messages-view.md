@@ -1,7 +1,7 @@
 ---
 title: İletiler görünümünü | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d603ad157786df756f130c3bf203961b48a610f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 76d033cdbe0949cfe861f44be8f390d72c316af8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695082"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182097"
 ---
 # <a name="messages-view"></a>İletiler Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [iletiler görünümünü](https://docs.microsoft.com/visualstudio/debugger/messages-view).  
-  
 Her pencere bir ilişkili ileti akışı içerir. İletiler Görünümü penceresi bu ileti akışı görüntüler. Pencere tanıtıcısı, ileti kodu ve ileti gösterilir. Bir iş parçacığı veya işlem de bir iletiler görünümü oluşturabilirsiniz. Bu, belirli bir işlem veya pencere Başlatma iletilerinin yakalamak için özellikle yararlıdır iş parçacığı tarafından sahip olunan tüm windows gönderilen iletileri görüntülemenize olanak sağlar.  
   
  Tipik bir iletiler Görünümü penceresi altında görünür. İlk sütun pencere tanıtıcısı içerir ve ikinci sütun içeren bir ileti kodu Not (açıklandığı [iletisi kodlarını](../debugger/message-codes.md)). Kodu çözülen ileti parametreleri ve dönüş değerleri sağdadır.  
@@ -67,7 +65,7 @@ Spy ++ iletiler görünümü
  [Başlatma ve durdurma ileti günlüğü görüntüsü](../debugger/how-to-start-and-stop-the-message-log-display.md)  
  İleti günlüğe kaydetmeyi durdurmak ve başlatmak açıklanmaktadır.  
   
- [İleti kodları](../debugger/message-codes.md)  
+ [İleti Kodları](../debugger/message-codes.md)  
  İletiler Görünümü'nde listelenen iletilerin kodlarını tanımlar.  
   
  [İleti özelliklerini görüntüleme](../debugger/how-to-display-message-properties.md)  
@@ -80,13 +78,13 @@ Spy ++ iletiler görünümü
  [Spy++ kullanma](../debugger/using-spy-increment.md)  
  Spy ++ araç tanıtır ve nasıl kullanılacağını açıklar.  
   
- [İleti Seçenekleri iletişim kutusu](../debugger/message-options-dialog-box.md)  
+ [İleti Seçenekleri İletişim Kutusu](../debugger/message-options-dialog-box.md)  
  İletileri etkin iletilerin Görünümü'nde listelenen seçmek için kullanılır.  
   
- [İleti arama iletişim kutusu](../debugger/message-search-dialog-box.md)  
+ [İleti Arama İletişim Kutusu](../debugger/message-search-dialog-box.md)  
  Düğüm iletiler görünümünde belirli bir ileti bulmak için kullanılır.  
   
- [İleti Özellikleri iletişim kutusu](../debugger/message-properties-dialog-box.md)  
+ [İleti Özellikleri İletişim Kutusu](../debugger/message-properties-dialog-box.md)  
  İleti görünümünde seçilen bir ileti özelliklerini görüntülemek için kullanılır.  
   
  [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  

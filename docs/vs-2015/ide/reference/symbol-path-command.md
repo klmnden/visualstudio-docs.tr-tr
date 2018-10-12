@@ -1,7 +1,7 @@
 ---
 title: Sembol yolu komutu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b21a745177722160b100d0bbad770c3a74c40ca3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 343b45f4a8aef0fdeef5aef7653a5dbb1c7c5582
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630547"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189169"
 ---
 # <a name="symbol-path-command"></a>Sembol Yolu Komutu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [sembol yolu komutu](https://docs.microsoft.com/visualstudio/ide/reference/symbol-path-command).  
-  
   
 Hata ayıklayıcının simge araması dizinler listesini ayarlar.  
   

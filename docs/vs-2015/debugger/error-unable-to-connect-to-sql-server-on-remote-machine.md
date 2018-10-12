@@ -1,7 +1,7 @@
 ---
 title: "Hata: Uzak makinede SQL Server'a bağlanılamıyor | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a30d9747d954ef70b0400af4a412d6e8d58ee77a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64f10867668b44c91268a6a27d61ddb1edfb3145
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690963"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221773"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Hata: Uzak makinede SQL Server'a bağlanılamıyor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [hata: uzak makinede SQL Server'a bağlanılamıyor](https://docs.microsoft.com/visualstudio/debugger/error-unable-to-connect-to-sql-server-on-remote-machine).  
-  
 Uzak makinede SQL Server'a bağlanılamıyor *adı*. Erişim reddedildi. Uzak makinede uzaktan hata ayıklayıcı yüklediğinizden emin olun. Uzak makine bir etki alanında değilse veya Visual Studio yerel hesabı olarak çalışıyorsa uzak makinede yerel hesap olarak bir hesapla aynı kullanıcı adı ve parola olmalıdır.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  

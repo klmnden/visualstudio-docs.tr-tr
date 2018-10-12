@@ -1,7 +1,7 @@
 ---
 title: Yerel verilere genel bakış | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,12 +30,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: b2bd594ba017a07ad3886a9aeb4b59d6f479a708
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 312dbee46f13bf1f8f5d0666dcba18adc1116cdf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684833"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210489"
 ---
 # <a name="local-data-overview"></a>Yerel Verilere Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,9 +64,9 @@ ms.locfileid: "42684833"
   
 |Konu|Açıklama|  
 |-----------|-----------------|  
-|[Bir tasarımcı kullanarak bir SQL veritabanı oluşturma](../data-tools/create-a-sql-database-by-using-a-designer.md)|Veri özelliklerini test etmek ve uygulamalar oluşturmak için kullanabileceğiniz bir yerel veritabanı dosyası oluşturmak için adım adım yönergeler sağlar.|  
+|[Tasarımcı kullanarak SQL veritabanı oluşturma](../data-tools/create-a-sql-database-by-using-a-designer.md)|Veri özelliklerini test etmek ve uygulamalar oluşturmak için kullanabileceğiniz bir yerel veritabanı dosyası oluşturmak için adım adım yönergeler sağlar.|  
 |[İzlenecek yol: bir yerel veritabanı dosyası (Windows Forms) verilere bağlanma](../data-tools/walkthrough-connecting-to-data-in-a-local-database-file-windows-forms.md)|Basit bir Windows uygulaması oluştururken, bir SQL Server Express LocalDB veritabanına bağlanmak için adım adım yönergeler sağlar.|  
-|[(Windows Forms) bir erişim veritabanındaki verilere bağlanma](../data-tools/connect-to-data-in-an-access-database-windows-forms.md)|Bir Microsoft Access veritabanına bağlanmak için adım adım yönergeler sağlar.|  
+|[Bir Access veritabanındaki verilere bağlanma (Windows Forms)](../data-tools/connect-to-data-in-an-access-database-windows-forms.md)|Bir Microsoft Access veritabanına bağlanmak için adım adım yönergeler sağlar.|  
 |[Nasıl yapılır: Northwind veritabanına bağlanma](../data-tools/how-to-connect-to-the-northwind-database.md)|Northwind örnek veritabanına bağlanma yönergeleri sağlar [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)], SQL Server Compact, SQL Server Express ve erişim.|  
   
 ## <a name="use-the-connection-string"></a>Bağlantı dizesini kullanın  
@@ -115,4 +115,4 @@ ms.locfileid: "42684833"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: bir yerel veritabanı dosyası (Windows Forms) verilere bağlanma](../data-tools/walkthrough-connecting-to-data-in-a-local-database-file-windows-forms.md)   
- [(Windows Forms) bir erişim veritabanındaki verilere bağlanma](../data-tools/connect-to-data-in-an-access-database-windows-forms.md)
+ [Bir Access veritabanındaki verilere bağlanma (Windows Forms)](../data-tools/connect-to-data-in-an-access-database-windows-forms.md)

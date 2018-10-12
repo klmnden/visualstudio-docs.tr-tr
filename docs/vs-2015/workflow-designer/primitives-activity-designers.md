@@ -1,7 +1,7 @@
 ---
 title: Temel öğeler etkinlik tasarımcıları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,21 +12,21 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 4d2397cf97b57008d92f8ec8086161df03d0714b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8fe81e57ed9eff699cf70f2e4fa613b0a0683f2f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686328"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197723"
 ---
 # <a name="primitives-activity-designers"></a>Temel Öğeler Etkinlik Tasarımcıları
 Temel öğeler etkinlik tasarımcıları oluşturmak ve çeşitli etkinlikler yapılandırmak için kullanılan <xref:System.Activities> atayın ve gecikme gibi ad alanı. Bu bölümde bulunan konularda nasıl kullanılacağı hakkında rehberlik [!INCLUDE[wfd2](../includes/wfd2-md.md)] etkinliği ve Şablon tasarımcıları.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Ata](../workflow-designer/assign-activity-designer.md)  
+ [Assign](../workflow-designer/assign-activity-designer.md)  
  Oluşturmak ve yapılandırmak için kullanılan bir <xref:System.Activities.Statements.Assign> etkinlik.  
   
- [gecikme](../workflow-designer/delay-activity-designer.md)  
+ [Delay](../workflow-designer/delay-activity-designer.md)  
  Oluşturmak ve yapılandırmak için kullanılan bir <xref:System.Activities.Statements.Delay> etkinlik.  
   
  [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)  
@@ -42,7 +42,7 @@ Temel öğeler etkinlik tasarımcıları oluşturmak ve çeşitli etkinlikler ya
   
  [Akış Çizelgesi](../workflow-designer/flowchart-activity-designers.md)  
   
- [Mesajlaşma](../workflow-designer/messaging-activity-designers.md)  
+ [Messaging](../workflow-designer/messaging-activity-designers.md)  
   
  [Çalışma Zamanı](../workflow-designer/runtime-activity-designers.md)  
   

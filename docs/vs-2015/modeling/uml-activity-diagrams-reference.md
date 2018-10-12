@@ -1,7 +1,7 @@
 ---
 title: 'UML etkinlik diyagramları: Başvuru | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bfe4eaad401ce61534e5785ed82b9e33fa2f6610
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3fe8a0d33b0e9be8eecdc55ac68d23138f6506d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631208"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177846"
 ---
 # <a name="uml-activity-diagrams-reference"></a>UML Etkinlik Diyagramları: Başvuru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [UML etkinlik diyagramları: başvuru](https://docs.microsoft.com/visualstudio/modeling/uml-activity-diagrams-reference).  
-  
 Bir *etkinlik diyagramı* yazılım işlem veya iş sürecini, bir dizi eylem iş akışı olarak gösterilir. Kişiler, yazılım bileşenlerini veya bilgisayarların bu eylemleri gerçekleştirebilirsiniz.  
   
  Etkinlik diyagramı, aşağıdaki örneklerde gibi çeşitli türlerde işlemleri tanımlamak için kullanabilirsiniz:  
@@ -63,7 +61,7 @@ Bir *etkinlik diyagramı* yazılım işlem veya iş sürecini, bir dizi eylem i�
   
 ||||  
 |-|-|-|  
-|**Şekil**|**Öğesi**|**Açıklama ve ana özellikleri**|  
+|**Şekil**|**Öğe**|**Açıklama ve ana özellikleri**|  
 |1.|**Eylem**|Bir etkinlikte adımda kullanıcılardan veya yazılımlardan bazı görevleri gerçekleştirir.<br /><br /> Bir belirteç tüm gelen akışlar sunuldu eylemi başlatabilirsiniz. Sona erdiğinde belirteçleri tüm giden akışlar gönderilir.<br /><br /> -   **Gövde** -ayrıntılı olarak eylemi belirtir.<br />-   **Dil** -gövdesi içindeki ifade dili.<br />-   **Yerel koşul Sonralarına** -yürütme sona erdiğinde karşılanması gereken kısıtlamaları. Eylem tarafından elde edilen hedefi.<br />-   **Yerel önkoşulları** -yürütme başlamadan önce karşılanması gereken kısıtlamaları.|  
 |2|**Denetim Akışı**|Bir bağlayıcı Eylemler arasındaki denetim akışı gösterilmektedir. Diyagram yorumlamak için bir belirteç sonraki bir eylemden akışları düşünün.<br /><br /> Bir iş akışı oluşturmak için kullanın **bağlayıcı** aracı.|  
 |3|**İlk düğüm**|İlk eylem veya eylem etkinliğindeki gösterir. Bir etkinlik başladığında, ilk düğümü aracılığıyla bir belirteç akar.|  
@@ -84,7 +82,7 @@ Bir *etkinlik diyagramı* yazılım işlem veya iş sürecini, bir dizi eylem i�
   
 ||||  
 |-|-|-|  
-|**Şekil**|**Öğesi**|**Açıklama**|  
+|**Şekil**|**Öğe**|**Açıklama**|  
 |11|**Çatal düğümü**|Tek bir akış eşzamanlı akışlara böler. Gelen her belirteç, her giden bağlayıcıdaki bir belirteç oluşturur.|  
 |12|**Düğüm katılın**|Eşzamanlı akışlara akar tek bir akış birleştirir. Bekleyen bir belirteci her gelen akış sahip olduğunda, bir belirteç çıktı oluşturulur.|  
 |13|**Sinyal eylemi Gönder**|Başka bir etkinlik veya eş zamanlı bir iş parçacığı aynı etkinlik için bir mesaj ya da sinyal gönderen bir eylem. İleti içeriği ve tür eyleme ait başlık tarafından kapsanan veya ek açıklamalarda belirlenir.<br /><br /> Eylem, bir nesne akışı veya giriş PIN (16) eyleme geçirilebilir sinyal içinde veri gönderebilirsiniz.|  
@@ -97,7 +95,7 @@ Bir *etkinlik diyagramı* yazılım işlem veya iş sürecini, bir dizi eylem i�
   
 ||||  
 |-|-|-|  
-|**Şekil**|**Öğesi**|**Açıklama**|  
+|**Şekil**|**Öğe**|**Açıklama**|  
 |15|**Nesne düğümü**|Akış boyunca geçen verileri temsil eder.<br /><br /> -   **Sıralama** - nasıl birden çok belirteç depolanır.<br />-   **Seçimi** -verilere filtre başka bir şemada tanımlanan bir işlem başlatır.<br />-   **Üst sınır** -0 verileri doğrudan akış boyunca; geçmesi gerektiğini gösterir \* veri akışı depolanabileceğini belirtir.<br />-   **Tür** -nesnelerin türü depolanan ve aktarılan.|  
 |16|**Giriş PIN**|Yürütüldüğünde bir eylemi alıp verileri temsil eder.<br /><br /> -   **Tür** -aktarılan nesnelerin türü.|  
 |17|**Çıkış PIN**|Yürütüldüğünde bir eylem üretir verileri temsil eder.<br /><br /> -   **Tür** -aktarılan nesnelerin türü.|  
@@ -106,7 +104,7 @@ Bir *etkinlik diyagramı* yazılım işlem veya iş sürecini, bir dizi eylem i�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)   
- [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md)
+ [UML Etkinlik Diyagramları: Yönergeler](../modeling/uml-activity-diagrams-guidelines.md)
 
 
 

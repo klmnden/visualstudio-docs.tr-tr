@@ -1,7 +1,7 @@
 ---
 title: İzleme ve QuickWatch Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e15167169b8940d65eeca66aaf3871997300cd04
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2a136647fc3ce8114b492e8f055efe0eb1a3889
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686909"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173634"
 ---
 # <a name="watch-and-quickwatch-windows"></a>İzleme ve QuickWatch Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [değişkenleri Visual Studio'da bir izleme ayarlayın](https://docs.microsoft.com/visualstudio/debugger/watch-and-quickwatch-windows).  
-  
 Kullanabilirsiniz **Watch** (**hata ayıklama / Windows / izleyin / izleyin (1, 2, 3, 4)**) ve **QuickWatch** (değişken üzerinde sağ / **hata ayıklama / QuickWatch**) değişkenleri ve ifadeleri hata ayıklama oturumu sırasında izlemek için windows.  Fark **Watch** penceresi, çeşitli değişkenleri görüntüleyebilir ancak **QuickWatch** penceresi bir kerede tek bir değişken görüntüler.  
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>QuickWatch sahip tek bir değişken gözleme  
@@ -247,7 +245,7 @@ public class Program
  **Dinamik Görünüm** COM nesneleri için hata ayıklama deneyimini de geliştirir. Hata ayıklayıcısı içinde sarmalanmış bir COM nesnesi karşılaştığında **System.comobject'e**, ekler bir **dinamik Görünüm** düğüm nesnesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows hata ayıklayıcı](../debugger/debugger-windows.md)
+ [Hata Ayıklayıcısı Pencereleri](../debugger/debugger-windows.md)
 
 
 

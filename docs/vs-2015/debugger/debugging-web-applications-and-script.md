@@ -1,7 +1,7 @@
 ---
 title: Web uygulamalarında ve betikte hata ayıklama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,40 +27,38 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10abe66dc372f50e8a48e40148eb3f298df0b6eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7878eccf4128b29538adcf048457ebba582a9ba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675994"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199595"
 ---
 # <a name="debugging-web-applications-and-script"></a>Web Uygulamalarında ve Betikte Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [hata ayıklama Web uygulamalarında ve betikte](https://docs.microsoft.com/visualstudio/debugger/debugging-web-applications-and-script).  
-  
 Gösterge Tablosu:  
   
  Bu bölümde, Web uygulamaları için yaygın hata ayıklama teknikleri açıklar. Daha fazla bilgi için [hata ayıklayıcı temel bilgileri](../debugger/debugger-basics.md).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [ASP.NET ve AJAX uygulamalarında hata ayıklama](../debugger/debugging-aspnet-and-ajax-applications.md)  
+ [ASP.NET ve AJAX Uygulamalarında Hata Ayıklama](../debugger/debugging-aspnet-and-ajax-applications.md)  
  Önkoşullar ve hata ayıklama hakkında yönergeler sağlayan bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] uygulama geliştirme sırasında veya dağıtımdan sonra.  
   
- [Web uygulamalarında hata ayıklama: Hatalar ve sorun giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [Web Uygulamalarında Hata Ayıklama: Hatalar ve Sorun Giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  Web uygulamalarında hata ayıklama sırasında karşılaşabileceğiniz hataları listeler ve düzeltmeler önerir.  
   
- [İzlenecek yol: paralel uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [İzlenecek Yol: Paralel Uygulamada Hata Ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Nasıl kullanılacağını açıklar **Paralel Görevler** ve **Paralel Yığınlar** paralel uygulamada hata ayıklamak için windows aracı.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [ASP.NET Web uygulamaları](../debugger/debugging-preparation-aspnet-web-applications.md)  
+ [ASP.NET Web Uygulamaları](../debugger/debugging-preparation-aspnet-web-applications.md)  
  Varsayılan proje ayarlarını ve davranışını açıklar [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web Uygulama projeleri, hata ayıklama ve varsayılan hata ayıklama yapılandırmasını değiştirme adımları.  
   
  [Visual Studio’da hata ayıklama](../debugger/debugging-in-visual-studio.md)  
  Hata ayıklama belgesinin en geniş bölümlerine bağlantılar sağlar. Bilgi aşağıdakileri içerir: hata ayıklayıcı, ayarları ve hazırlığı yeni nedir, özel durumları, kesme noktaları, Düzenle ve devam et, hata ayıklama yönetilen kodu, hata ayıklama [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] projeleri, hata ayıklama COM ve ActiveX, DLL'lerinde hata ayıklama, hata ayıklama SQL ve kullanıcı arabirimi başvuruları.  
   
- [Uzaktan hata ayıklama Web uygulamaları önkoşulları](../debugger/prerequistes-for-remote-debugging-web-applications.md)  
+ [Uzak Hata Ayıklama Web Uygulamaları Önkoşulları](../debugger/prerequistes-for-remote-debugging-web-applications.md)  
  ASP.NET Web uygulamalarının uzaktan hata ayıklama için Kurulum gereksinimlerini açıklar.  
   
  [IntelliTrace](../debugger/intellitrace.md)  

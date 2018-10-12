@@ -1,7 +1,7 @@
 ---
 title: Simulator'da çalıştırma Windows Store apps | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3007d0e6ea7a835cd9147f5f5ff94c91f9f7bda4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b17f8abed32a14aead89a685a030654e1afe32f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688584"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190729"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Simülatörde Windows Store uygulamaları çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [simulator'da çalıştırma Windows Store apps](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-in-the-simulator).  
-  
 Windows Store uygulamaları için Visual Studio simulator, Windows Store app taklit eden bir masaüstü uygulamasıdır. Uygulamaları çalıştırabilir ve ortak dokunma ve döndürme olaylarının geliştirme bilgisayarınızda benzetimini yapma. Ayrıca, fiziksel ekran boyutunu ve öykünme ve ağ bağlantısı özellikleri benzetimini yapmak istediğiniz çözümü seçebilirsiniz.  
   
  Simülatör, hangi tasarlayabilir, geliştirme, hata ayıklama ve Windows Store uygulamalarını test etmek bir ortam sağlar. Ancak, Windows Store için uygulamanızı yayımlamadan önce uygulamanızın gerçek bir cihaz üzerinde test etmelisiniz.  
@@ -147,7 +145,7 @@ Windows Store uygulamaları için Visual Studio simulator, Windows Store app tak
   
  [Ağ bilgi örnek](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
- [Enerji kullanımını analiz etme](../profiling/analyze-energy-use-in-store-apps.md)  
+ [Enerji kullanımını çözümleme](../profiling/analyze-energy-use-in-store-apps.md)  
   
  [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
@@ -161,7 +159,7 @@ Windows Store uygulamaları için Visual Studio simulator, Windows Store app tak
  Simülatör tuşlarına basarak kapatabilirsiniz **CTRL + ALT + F4**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio'dan uygulamaları çalıştırma](../debugger/run-store-apps-from-visual-studio.md)
+ [Visual Studio’dan uygulamaları çalıştırma](../debugger/run-store-apps-from-visual-studio.md)
 
 
 

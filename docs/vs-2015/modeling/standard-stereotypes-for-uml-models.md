@@ -1,7 +1,7 @@
 ---
 title: UML modelleri için standart stereotipler | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3e5cabed5b2b75d9a97c74dd58d87ea387df8f8e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c38ad14fa44d2f537f9622d7746e534f8dd41ea0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692124"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212166"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>UML modelleri için standart stereotipler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [UML modelleri için standart stereotipler](https://docs.microsoft.com/visualstudio/modeling/standard-stereotypes-for-uml-models).  
-  
 Okuyucu veya makine işlemek için ek bilgi sağlamak için UML model öğelerine stereotipler ekleyebilirsiniz. Stereotipler profillerinde tanımlanır ve her bir profil stereotipler sunmaktadır. Birkaç profil, Visual Studio ile sağlanır. Ayrıca, kendi stereotipler içerebilir kendi profilinizi tanımlayabilirsiniz. Daha fazla bilgi için [UML genişletmek için profil tanımlama](../modeling/define-a-profile-to-extend-uml.md).  
   
  Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -146,7 +144,7 @@ Okuyucu veya makine işlemek için ek bilgi sağlamak için UML model öğelerin
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Model öğelerine stereotipler ekleme](../modeling/add-stereotypes-to-uml-model-elements.md)   
  [Modelinizi profiller ve stereotipler aracılığıyla özelleştirme](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
- [UML genişletmek için profil tanımlama](../modeling/define-a-profile-to-extend-uml.md)
+ [UML’yi genişletmek için profil tanımlama](../modeling/define-a-profile-to-extend-uml.md)
 
 
 

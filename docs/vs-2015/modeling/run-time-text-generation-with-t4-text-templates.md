@@ -1,7 +1,7 @@
 ---
 title: T4 metin şablonları ile çalışma süresi metni oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c56b0b91301defaf08fb81c87e9eb070a9e5458
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47b50ece6d4fff79618890cb388c997503d95ad0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691305"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214753"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 Metin Şablonları İle Çalışma Süresi Metni Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [T4 metin şablonları ile çalışma süresi metni oluşturma](https://docs.microsoft.com/visualstudio/modeling/run-time-text-generation-with-t4-text-templates).  
-  
 Kullanarak uygulamanızdaki çalışma zamanında metin dizelerini oluşturabilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çalışma zamanı metin şablonları. Burada uygulama yürütür bilgisayar olması gerekmez. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Derleme zamanında çalışma zamanında yürütülen kod şablonu oluşturduğundan çalışma zamanı şablonları bazen "önceden işlenmiş metin şablonlarını" olarak adlandırılır.  
   
  Oluşturulan dize ve program kod parçalarını görüneceği şekilde her bir metin karışımını şablonudur. Program parçalarını dize değişkeni bölümleri için değerler sağlayın ve ayrıca koşullu ve tekrarlanan bölümleri denetimi.  

@@ -1,7 +1,7 @@
 ---
 title: SQL Server örnek veritabanları yükleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8a7e82091d93a14e53eed4ee67da086ee1a3c892
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b681a5ee965ac32120f72ac2e0064a72ce7fa76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692066"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213277"
 ---
 # <a name="install-sql-server-sample-databases"></a>SQL Server örnek veritabanları yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yüklemek SQL Server örnek veritabanları](https://docs.microsoft.com/visualstudio/data-tools/install-sql-server-sample-databases).  
-  
   
 Örnek veritabanları, SQL ve LINQ sorguları, veri bağlama, Entity Framework modelleme ve benzeri ile denemek için kullanışlıdır.  Her veritabanı ürünün kendi örnek veritabanları vardır. Northwind ve AdventureWorks iki yaygın olarak kullanılan SQL Server örnek veritabanlarıdır.  
   
