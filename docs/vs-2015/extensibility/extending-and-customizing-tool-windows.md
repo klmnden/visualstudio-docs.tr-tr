@@ -1,7 +1,7 @@
 ---
 title: Genişletme ve aracı Windows özelleştirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 90ba7833a48647043fcb9b6d8ca9095be7cabef0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 591351f41d0cd85de92836990e8d8523258f3d33
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631198"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199946"
 ---
 # <a name="extending-and-customizing-tool-windows"></a>Araç Pencerelerini Genişletme ve Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [genişletme ve özelleştirme araç Windows](https://docs.microsoft.com/visualstudio/extensibility/extending-and-customizing-tool-windows).  
-  
 Visual Studio, windows, örneğin araç pencereleri, belge pencereleri ve iletişim windows birkaç farklı türde sağlar. Diğer windows Özellikler penceresinde, çıkış penceresine ve Görev Listesi penceresi gibi araç pencerelerini türleridir.  
   
 ## <a name="tool-windows"></a>Aracı Windows  

@@ -1,7 +1,7 @@
 ---
 title: Visual Studio için etkileşim desenleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: a3643792-b0df-481c-bc35-576f948e04cf
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf21a8aa3c2a2813c71907d1d79bdcd4f7cde323
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ac6dde1b09e0488f3ae07b3a6ea02409d69892e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686181"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192068"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Visual Studio için etkileşim desenleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [etkileşim desenleri için Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/interaction-patterns-for-visual-studio).  
-  
 ## <a name="overview"></a>Genel Bakış  
  Bir tasarım deseni, genel olarak, çekirdeği kısıtlamaları benzer kümeleriyle ilgili sorunları çözmek için belirli durumlarda uygulanabilir bir tasarım olur. Özellik ve sistem tasarımcılarına bu tasarım desenleri, ardından kendi özel durum için uyarlanabilir noktaları, başlangıç olarak kullanın.  
   
@@ -43,9 +41,9 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [etkileşim desenleri için
   
  Her bir kullanıcı arabiriminde anahtar tümleştirme noktası IDE için temel kullanım desenlerini vardır:  
   
--   [Menüler ve komutlar için Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)  
+-   [Visual Studio İçin Menüler ve Komutlar](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)  
   
--   [Visual Studio için uygulama desenleri](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)  
+-   [Visual Studio İçin Uygulama Desenleri](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)  
   
     -   [Pencere etkileşimleri](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_WindowInteractions)  
   
@@ -62,7 +60,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [etkileşim desenleri için
   
  Visual Studio'da ortak denetimleri Masaüstü Windows yönergeleri izlemelidir. Koşullarımıza yalnızca, Visual Studio özgü etkileşimleri veya basamak, biz yönergeleri tamamen Gelişmiş kullanıcılarımızın gereksinimlerini karşılamak için Visual Studio uyarlamak için yerine geçen genel kurallar genişletmek ihtiyacımız olan alanları içerir.  
   
--   [Visual Studio için yaygın denetim desenleri](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md)  
+-   [Visual Studio İçin Yaygın Denetim Desenleri](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md)  
   
     -   [Ortak Denetimler](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_CommonControls)  
   
@@ -75,7 +73,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [etkileşim desenleri için
   
  En önemli bazı Visual Studio içinde birçok bileşik desenler varken bakımından tutarlılık şunlardır:  
   
--   [Visual Studio için bileşik desenler](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md)  
+-   [Visual Studio İçin Bileşik Desenler](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md)  
   
     -   [Nesne üzerinde kullanıcı Arabirimi ve gözatma](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)  
   

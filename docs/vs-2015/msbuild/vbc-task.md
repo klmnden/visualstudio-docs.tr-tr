@@ -1,7 +1,7 @@
 ---
 title: Vbc görevi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0457456651e233c44e5e8e5ae44e30013e0de0c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fe2bb17979b7bc4fd068ddd7fb309446c88b7f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693704"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184255"
 ---
 # <a name="vbc-task"></a>Vbc Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Vbc görevi](https://docs.microsoft.com/visualstudio/msbuild/vbc-task).  
-  
   
 Yürütülebilir dosyalar (.exe), dinamik bağlantı kitaplığı (.dll) veya modülleri (.netmodule) oluşturan vbc.exe sarmalar. Vbc.exe hakkında daha fazla bilgi için bkz. [Visual Basic komut satırı derleyicisi](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c).  
   
@@ -114,7 +112,7 @@ Yürütülebilir dosyalar (.exe), dinamik bağlantı kitaplığı (.dll) veya mo
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Basic komut satırı derleyicisi](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
  [Görevleri](../msbuild/msbuild-tasks.md)   
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+ [Görev Başvurusu](../msbuild/msbuild-task-reference.md)
 
 
 

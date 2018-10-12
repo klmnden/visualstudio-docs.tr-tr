@@ -1,7 +1,7 @@
 ---
 title: Importgroup öğesi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b579b75970539c6639f98e321bb6e0a03341aa59
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4522099c893c7fb5dc37c0ad78d40cb0600e84b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629601"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219979"
 ---
 # <a name="importgroup-element"></a>ImportGroup Öğesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Importgroup öğesi](https://docs.microsoft.com/visualstudio/msbuild/importgroup-element).  
-  
   
 Bir koleksiyonunu içeren `Import` isteğe bağlı bir koşul altında gruplandırılmış öğeler. Daha fazla bilgi için [içeri aktarma öğesi (MSBuild)](../msbuild/import-element-msbuild.md).  
   
@@ -62,7 +60,7 @@ Bir koleksiyonunu içeren `Import` isteğe bağlı bir koşul altında grupland�
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[içeri aktarma](../msbuild/import-element-msbuild.md)|Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.|  
+|[İçeri Aktar](../msbuild/import-element-msbuild.md)|Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.|  
   
 ### <a name="parent-elements"></a>Üst Öğeler  
   
@@ -87,7 +85,7 @@ Bir koleksiyonunu içeren `Import` isteğe bağlı bir koşul altında grupland�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)   
- [Öğeleri](../msbuild/msbuild-items.md)
+ [Öğeler](../msbuild/msbuild-items.md)
 
 
 

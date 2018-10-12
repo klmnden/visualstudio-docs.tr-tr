@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: ASP.NET uygulamaları için hata ayıklamayı etkinleştirme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9f96a53a6ccdd505735a09d3e9c39acaa3517c2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9d0e7a4b6f6daf4fb93884e6d5673ce550259ca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690013"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235943"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>Nasıl Yapılır: ASP.NET Uygulamaları için Hata Ayıklamayı Etkinleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: ASP.NET uygulamalarında hata ayıklama etkinleştirme](https://docs.microsoft.com/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications).  
-  
 Hata ayıklamayı etkinleştirmek için hem de etkinleştirmelisiniz **proje özellikleri** sayfasında ve uygulamanın web.config dosyasında.  
   
 > [!NOTE]  
@@ -95,7 +93,7 @@ Bir Web sitesi birden çok sanal dizin ve alt dizinler içerebilir ve her birind
 Hata ayıklama modunu etkinleştirme, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] uygulamanızın performansını önemli ölçüde etkiler. Bir yayınlama uygulaması dağıtmadan veya performans ölçümleri gerçekleştirmeden önce, hata ayıklama modunu devre dışı bırakmayı unutmayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
-[ASP.NET ve AJAX uygulamalarında hata ayıklama](../debugger/debugging-aspnet-and-ajax-applications.md)  
+[ASP.NET ve AJAX Uygulamalarında Hata Ayıklama](../debugger/debugging-aspnet-and-ajax-applications.md)  
   
 
 

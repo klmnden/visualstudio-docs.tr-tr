@@ -1,7 +1,7 @@
 ---
 title: Uygulama özellikleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f56ede85ffe643b995e3c7b51327693c8ef8847
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b74279373a11a13fd7e2e3fc47b2eb57e35d981
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628130"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209020"
 ---
 # <a name="application-properties"></a>Uygulama Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [uygulama özellikleri](https://docs.microsoft.com/visualstudio/ide/application-properties).  
-  
 Genel Uygulama Özellikleri Visual Basic, C# ve F # uygulamaları, uygulama türü, Başlangıç nesnesi ve derleme bilgileri gibi için de ayarlayabilirsiniz **uygulama** bölmesinde **Proje Tasarımcısı**.  
   
  Aşağıdaki görevler de gerçekleştirilebilir **uygulama** bölmesi:  

@@ -1,7 +1,7 @@
 ---
 title: Oyunlarda veya uygulamalarda 3B varlıklar kullanma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ab73f8ecdb9507459c7214de37b2349c01062f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09035e985926e3f1db3bd2dd1fc2bc009f111e33
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631499"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226318"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Oyunlarda veya Uygulamalarda 3B Varlıklar Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bilgisayarınızı oyunlarda veya uygulamalarda 3B varlıklar kullanma](https://docs.microsoft.com/visualstudio/designers/using-3-d-assets-in-your-game-or-app).  
-  
 Bu makalede nasıl kullanabileceğinizi açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 3B varlıkları işlemek ve bunları derlemelerinize dahil etmek için.  
   
  Araçları kullandıktan sonra [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 3-D varlıklarını oluşturmak için sonraki adımda bunları uygulamanızda kullanmaktır. Ancak, kullanabilmeniz için önce varlıklarınızın DirectX'in anlayabileceği bir biçime dönüştürülmesi sahip. Varlıklarınızı dönüştürmenize yardımcı olması için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] üretebileceği varlık her tür için yapı özelleştirmeleri sağlar. Yapınızda varlıkları dahil etmek için tüm yapmanız gereken olduğu yapı özelleştirmelerini kullanacak, projenize varlıklar eklemek ve doğru yapı özelleştirmesini kullanacak şekilde varlıkları yapılandırmaktır projenizi yapılandırın. Bundan sonra varlıkları uygulamanıza yükleyebilir ve bunları dolduran başka bir DirectX uygulamasında yaptığınız gibi DirectX kaynakları oluşturarak kullanabilirsiniz.  

@@ -1,7 +1,7 @@
 ---
 title: Dinamik araç penceresini açma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 71740aebb7b27bf4bd44302c23eeab10e5442996
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d45f1514b34e69b0b93fb7932b85a5b656f4c9a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692606"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263594"
 ---
 # <a name="opening-a-dynamic-tool-window"></a>Dinamik Araç Penceresini Açma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bir dinamik araç penceresini açma](https://docs.microsoft.com/visualstudio/extensibility/opening-a-dynamic-tool-window).  
-  
 Araç pencereleri genellikle bir menü veya eşdeğer bir kısayol komutundan açılır. Bazen, ancak belirli bir UI bağlamı uygular ve UI bağlamı Artık uygulanmadığında kapatır ne zaman açıldığını araç penceresi ihtiyacınız. Bunlar gibi araç pencerelerini çağrılır *dinamik* veya *otomatik görünür*.  
   
 > [!NOTE]

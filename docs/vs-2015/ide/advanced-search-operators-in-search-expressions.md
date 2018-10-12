@@ -1,7 +1,7 @@
 ---
 title: Arama işleçlerini arama ifadelerindeki Gelişmiş | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24bf027f2fa480f95c0f223f8a319e7977615454
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 706d6d89d46a1e5db4f94c2e7d5e35ace73e1bac
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695122"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178009"
 ---
 # <a name="advanced-search-operators-in-search-expressions"></a>Arama İfadelerindeki Gelişmiş Arama İşleçleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [arama ifadelerindeki Gelişmiş arama işleçleri](https://docs.microsoft.com/visualstudio/ide/advanced-search-operators-in-search-expressions).  
-  
 Gelişmiş arama işleçleri kullanarak aramanızı içerik için daha basit olanlardan daha karmaşık arama ifadeler oluşturarak iyileştirebilirsiniz. Aşağıdaki tabloda gösterildiği gibi bu işleçler, bir sorgu çalıştığı bağlam kısıtlayın.  
   
 > [!WARNING]
@@ -58,7 +56,7 @@ Gelişmiş arama işleçleri kullanarak aramanızı içerik için daha basit ola
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Arama ifadelerindeki mantıksal işleçler](../ide/logical-operators-in-search-expressions.md)   
- [Tam metin arama ipuçları](../ide/full-text-search-tips.md)
+ [Tam Metin Arama İpuçları](../ide/full-text-search-tips.md)
 
 
 

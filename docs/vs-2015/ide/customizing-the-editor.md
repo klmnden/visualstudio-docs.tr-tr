@@ -1,7 +1,7 @@
 ---
 title: Düzenleyiciyi özelleştirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4a74276e0b9ae70f94d87aa258eacf6168f20653
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0b9d01c6582d1bf67b0b33e5372d94700a62587
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693109"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259337"
 ---
 # <a name="customizing-the-editor"></a>Düzenleyiciyi Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [düzenleyiciyi özelleştirme](https://docs.microsoft.com/visualstudio/ide/customizing-the-editor).  
-  
 Biçimlendirme, sekmeler, yazı tipleri ve renkler, IntelliSense ve diğer birçok özellik Düzenleyicisi genel veya özel dil Düzenleyici seçeneklerini değiştirerek özelleştirebilirsiniz. Bu seçenekler hakkında daha fazla bilgi için bkz. [metin düzenleyici Seçenekleri iletişim kutusu](../ide/reference/text-editor-options-dialog-box.md) veya türü `Editor` içine **hızlı başlatma**. Ayrıca, düzenleyici pencerelerinin nasıl görüntüleneceğini değiştirebilirsiniz.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
@@ -48,7 +46,7 @@ Biçimlendirme, sekmeler, yazı tipleri ve renkler, IntelliSense ve diğer birç
  [Kodda yer işaretleri ayarlama](../ide/setting-bookmarks-in-code.md)   
  [Genel, ortam, Seçenekler iletişim kutusu](../ide/reference/general-environment-options-dialog-box.md)   
  [Belgeler, ortam, Seçenekler iletişim kutusu](../ide/reference/documents-environment-options-dialog-box.md)   
- [Yazı tipleri ve renkler, ortam, Seçenekler iletişim kutusu](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
+ [Yazı Tipleri ve Renkler, Ortam, Seçenekler İletişim Kutusu](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
 
 
 

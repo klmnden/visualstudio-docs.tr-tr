@@ -1,7 +1,7 @@
 ---
 title: Windows görüntüleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd40259af773e268a8786f370591d5d0a474b05e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4622e268aaaf76a2968a2bc6ef67ead7b0c45b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692644"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261709"
 ---
 # <a name="windows-view"></a>Pencereler Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Windows görünümü](https://docs.microsoft.com/visualstudio/debugger/windows-view).  
-  
 İlk kez Spy ++ açtığınızda, Windows görünüm sistemdeki tüm windows ve denetimleri ağacını görüntüler. Pencere tanıtıcısı ve sınıf adı gösterilir. Geçerli masaüstü pencere ağacının en üstünde değil. Diğer tüm windows masaüstünün alt öğesi olan ve standart pencere hiyerarşisi göre listelenir. Eşdüzey pencerelerin ebeveynleri altında girintili expansible listelerde görünür.  
   
  Aşağıdaki şekilde, en üst düğüme genişletilmiş tipik bir Spy ++ Windows görünümü gösterilmektedir.  
@@ -42,7 +40,7 @@ Spy ++ Windows görüntüle
  Windows görünümü odağa sahip olduğunda, Bulucu Aracı'nda kullanabileceğiniz [pencere arama iletişim kutusu](../debugger/window-search-dialog-box.md) Sisteminizde hiçbir penceresini açık bilgilerini görüntülemek için.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Nasıl yapılır: Bulucu aracını kullanma](../debugger/how-to-use-the-finder-tool.md)  
+ [Nasıl Yapılır: Bulucu Aracını Kullanma](../debugger/how-to-use-the-finder-tool.md)  
  Bu aracı windows özellikleri ve iletileri için nasıl tarar gösterir.  
   
  [Nasıl Yapılır: Pencereler Görünümünde Pencere Arama](../debugger/how-to-search-for-a-window-in-windows-view.md)  
@@ -61,10 +59,10 @@ Spy ++ Windows görüntüle
  [Pencere Bul İletişim Kutusu](../debugger/find-window-dialog-box.md)  
  Özellikleri veya belirli bir pencere iletileri görüntülemek için kullanılır.  
   
- [Pencere arama iletişim kutusu](../debugger/window-search-dialog-box.md)  
+ [Pencere Arama İletişim Kutusu](../debugger/window-search-dialog-box.md)  
  Windows görünümünde belirli bir pencere için düğüm bulmak için kullanılır.  
   
- [Pencere Özellikleri iletişim kutusu](../debugger/window-properties-dialog-box.md)  
+ [Pencere Özellikleri İletişim Kutusu](../debugger/window-properties-dialog-box.md)  
  Windows görünümünde seçilen bir pencere özelliklerini görüntülemek için kullanılır.  
   
  [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  

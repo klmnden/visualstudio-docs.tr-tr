@@ -1,7 +1,7 @@
 ---
 title: RequireJS için IntelliSense'i özelleştirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 04cffba0f7bd03cbb4fb2fe228174377871c35f8
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 7b1c32d0096742c2364e5ac3b8afe59b39152b2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880675"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246720"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>RequireJS için IntelliSense'i özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio 2017 belgeleri](/visualstudio/).  
-  
 Visual Studio 2013 güncelleştirme 4 ile başlayarak, popüler RequireJS JavaScript dosyası ve modüler Yükleyicisi için destek desteklenir. RequireJS kod modülleri arasındaki bağımlılıkları tanımlayın ve dinamik olarak yalnızca gerektiğinde modülleri yüklemek için daha kolay hale getirir. Modüller için bilgisayarınızda modülü tanımınızdan başvurulan veya kullanılarak başvurulan olması için sağlanan RequireJS kullanan bir JavaScript kodu yazarken IntelliSense önerileri olacaktır `require()` gelen kod içinde.  
   
  Varsayılan olarak, Visual Studio RequireJS desteklemek için çok basit bir yapılandırma destekler, ancak kendi özel yapılandırma ayarları ayarlamak için yaygın bir uygulamadır (diğer bir deyişle, diğer adlar kitaplıkları tanımlamak için). Bu konuda, Visual Studio projenizin benzersiz kurulum ile çalışmak için özelleştirebileceğiniz farklı yollarını açıklar.  

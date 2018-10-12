@@ -1,7 +1,7 @@
 ---
 title: Kullanıcı arabirimini güncelleştirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
 caps.latest.revision: 42
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c77fa7407c6c271b66104ed6d835bc516a40c288
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52559a48b842d61dd64616af6f48c946147aa1e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688915"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181047"
 ---
 # <a name="updating-the-user-interface"></a>Kullanıcı Arabirimini Güncelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [kullanıcı arabirimini güncelleştirme](https://docs.microsoft.com/visualstudio/extensibility/updating-the-user-interface).  
-  
 Bir komut uyguladıktan sonra yeni komutlarınızı durumuyla kullanıcı arabirimini güncelleştirmek için kod ekleyebilirsiniz.  
   
  Tipik bir Win32 uygulaması komut kümesi sürekli olarak yoklanabilir ve bunları kullanıcı görünümleri gibi tek tek komutlarla durumunu ayarlanabilir. Ancak, çünkü [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Kabuk VSPackages sınırsız sayıda barındırabilir, kapsamlı yoklama arasında birlikte çalışma bütünleştirilmiş kodları com ile yönetilen kod arasındaki özellikle yoklama yanıt verme hızını Azalt  

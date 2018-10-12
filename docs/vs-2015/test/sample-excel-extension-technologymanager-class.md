@@ -1,7 +1,7 @@
 ---
 title: 'Örnek Excel uzantısı: TechnologyManager Sınıfı | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 8a7b760d-b5ac-4451-9593-6ac1a0b95cdb
 caps.latest.revision: 11
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 440591cae5251c614c13738668bbe71d43f90600
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b23c3e735aba74d86b31afb4b83862d83bcd2bdb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631981"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190586"
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Örnek Excel Uzantısı: TechnologyManager Sınıfı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [örnek Excel uzantısı: TechnologyManager sınıfı](https://docs.microsoft.com/visualstudio/test/sample-excel-extension-technologymanager-class).  
-  
 Bu sınıf genişletir <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager> sınıfı ve temel Hizmetleri için sağlamaktan sorumluysa [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] uzantısı. Temel sınıf birçok yöntem olsa da, bu örnekte yalnızca bir alt kümesini kullanılır.  
   
  Bazı yöntemler, yalnızca bir özellik değeri döndürür. Birçok yöntem, kodlanmış UI test motoruna algoritmaları yapı varsayılan geçersiz kılmak Geliştirici izin vermek için tasarlanmıştır. Bu yöntemler throw bir <xref:System.NotSupportedException> veya dönüş `null`, varsayılan algoritmasını kullanabilmesi için framework söyler.  

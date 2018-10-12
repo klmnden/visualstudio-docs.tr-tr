@@ -1,7 +1,7 @@
 ---
 title: Artımlı derlemeleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6285b0283a477ec7d658c89cf44c29e386def466
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef689ede76b85a393fc56e452f1f5af4b059d0e3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695331"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251465"
 ---
 # <a name="incremental-builds"></a>Artımlı Derlemeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [artımlı derlemeler](https://docs.microsoft.com/visualstudio/msbuild/incremental-builds).  
-  
   
 Artımlı derlemeleri en iyi duruma getirilir ve böylece göre ilgili giriş dosyaları güncel olduğundan Çıkış dosyalarını olan hedefleri yürütülmez derlemeleri ' dir. Hedef öğe olabilir bir `Inputs` hangi hedef öğeler gösteren özniteliği, giriş olarak bekliyor ve bir `Outputs` ne üretir çıktı olarak öğelerini gösteren özniteliği. MSBuild, bu öznitelik değerleri, 1-1 eşlemesini bulmayı dener. 1-1 eşleme varsa, her giriş öğesinin zaman damgası için çıkış karşılığı zaman damgası MSBuild karşılaştırır. 1-1 eşleme sahip Çıkış dosyalarını, tüm giriş dosyaları için karşılaştırılır. Kendi çıktı dosyasını aynı yaş ise güncel veya kendi girdi dosyası veya dosya daha yeni bir öğe olarak kabul edilir.  
   

@@ -1,7 +1,7 @@
 ---
 title: Hizmet verme yönergeleri için yalıtılmış kabuk uygulamaları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 747d1a47-b8b3-4e8b-93c0-768724be48f2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dff7d9349e5081fa0e8ab64bfd32c90b83f19de3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 70d59500c49c6e6939d85a35d9c1ff9393f5708e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691327"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208396"
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Yalıtılmış kabuk uygulamaları için hizmet verme yönergeleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yalıtılmış kabuk uygulamaları için hizmet verme yönergeleri](https://docs.microsoft.com/visualstudio/extensibility/servicing-guidelines-for-isolated-shell-applications).  
-  
 Visual Studio yalıtılmış Kabuk uygulaması dağıttığınızda, yüklendikten sonra uygulamanız için yazılım güncelleştirmeleri sağlamak mümkün olması gerekir. Bunu yapmak için uygulamanızı Microsoft Installer (MSI) dosyası kullanarak yüklemeniz gerekir. Bu tür bir yükleme tarafından Web yeniden dağıtılması Microsoft tarafından sağlanan yazılım güncelleştirmeleri indirmek ve özel müdahalesi olmadan müşterileriniz tarafından tüketilen sağlar.  
   
 ## <a name="servicing-requirements"></a>Bakım gereksinimlerini  

@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: Kullanıcı Arabirimi yanıt hızı (HTML) geliştirme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9409a8af25d2283e3b808c7e779aa86361d2e454
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40cc0e20b08f151e3a7bbda8060469f40b2b9050
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689496"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258316"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>İzlenecek yol: Kullanıcı Arabirimi yanıt hızı (HTML) geliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [izlenecek yol: iyileştirme UI yanıtlama hızı (HTML)](https://docs.microsoft.com/visualstudio/profiling/walkthrough-improving-ui-responsiveness-html).  
-  
 Bu izlenecek yol, tanımlamak ve kullanarak bir performans sorunu düzeltme sürecinde müşteri adayları [HTML kullanıcı Arabirimi yanıtlama hızı Profil Oluşturucusu](../profiling/html-ui-responsiveness.md). Profil Oluşturucu, JavaScript kullanarak Visual Studio için Windows evrensel ve Windows Store uygulamalarında kullanılabilir. Bu senaryoda, DOM öğeleri çok sık güncelleştiren bir performans testi uygulaması oluşturma ve tanımlamak ve bu sorunu çözmek için Profiler'ı kullanın.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Uygulama oluşturma ve çalıştırma performans testi  
@@ -250,7 +248,7 @@ Bu izlenecek yol, tanımlamak ve kullanarak bir performans sorunu düzeltme sür
 2.  HTML kullanıcı Arabirimi yanıtlama hızı profil oluşturucuyu yeniden çalıştırın ve CPU kullanım grafiği denetleyin. Aşırı olayları kalkar ve CPU kullanımı, sıfıra yakın için bıraktı bulabilirsiniz. Düzeltildi!  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [HTML kullanıcı Arabirimi yanıt hızı](../profiling/html-ui-responsiveness.md)
+ [HTML kullanıcı arabirimi yanıt hızı](../profiling/html-ui-responsiveness.md)
 
 
 

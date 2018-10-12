@@ -1,7 +1,7 @@
 ---
 title: MSBuild görev başvurusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 43b7b413d403f2b85cc5c8e792cbee19488f8f11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6f1767ce1c572e1e3d8eacae8ba3a60f3593476
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631498"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193999"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild Görev Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [MSBuild görev başvurusu](https://docs.microsoft.com/visualstudio/msbuild/msbuild-task-reference).  
-  
   
 Görevler, derleme işlemi sırasında çalışan kodu sağlar. Görevleri aşağıdaki listede bulunan [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Zaman [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] yüklenen, ek görevler oluşturmak için kullanılan olan [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] projeleri. Daha fazla bilgi için [Visual C++ görevleri](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
   
@@ -236,7 +234,7 @@ Görevler, derleme işlemi sırasında çalışan kodu sağlar. Görevleri aşa�
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MSBuild başvurusu](../msbuild/msbuild-reference.md)   
  [Görev yazma](../msbuild/task-writing.md)   
- [Görevleri](../msbuild/msbuild-tasks.md)
+ [Görevler](../msbuild/msbuild-tasks.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Modelleme Diyagramında Menü komutu tanımlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 00cb466fc9859bc36734ee3c42a23190632f39a2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c1a93ab331771db3303ffcbcb7c067c4c325e6a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775180"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193160"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Modelleme diyagramında menü komutu tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [modelleme diyagramında menü komutu tanımlama](https://docs.microsoft.com/visualstudio/modeling/define-a-menu-command-on-a-modeling-diagram).  
-  
 Visual Studio'da UML diyagramının kısayol menülerindeki ek menü öğelerini tanımlayabilirsiniz. Menü komutunu görünür ve diyagram üzerindeki herhangi bir öğenin kısayol menüsünün etkinleştirilip ve kullanıcı menü öğesi seçtiğinde çalışan kod yazabileceğiniz olup olmadığını kontrol edebilirsiniz. Bu uzantılar bir Visual Studio Tümleştirme Uzantısı'na paketini ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) ve diğer Visual Studio kullanıcılarına dağıtabilirsiniz.  
   
 ## <a name="requirements"></a>Gereksinimler  

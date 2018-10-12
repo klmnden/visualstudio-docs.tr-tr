@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: aynı anda birden fazla yapılandırma derleme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bca6142edff2eea293db50f0af9b8f86a4fc47dd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e34be1203ba97c23302bd28dcf7578ba6cffd2e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632768"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205588"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>Nasıl yapılır: Aynı Anda Birden Fazla Yapılandırma Derleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: derleme birden çok yapılandırmaları aynı anda](https://docs.microsoft.com/visualstudio/ide/how-to-build-multiple-configurations-simultaneously).  
-  
 Birden çok proje veya bile tüm yapı yapılandırmalarına aynı anda birçok türü kullanarak oluşturabilirsiniz **Toplu derleme** iletişim kutusu. Ancak, aynı anda birden çok oluşturma yapılandırmasında projeleri aşağıdaki türde oluşturulamıyor:  
   
 1.  [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] JavaScript kullanarak Windows için oluşturulmuş uygulamalar.  
@@ -48,7 +46,7 @@ Birden çok proje veya bile tüm yapı yapılandırmalarına aynı anda birçok 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md)   
  [Derleme yapılandırmalarını anlama](../ide/understanding-build-configurations.md)   
- [Paralel birden çok proje derleme](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)
+ [Paralel Olarak Birden Çok Proje Derleme](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)
 
 
 

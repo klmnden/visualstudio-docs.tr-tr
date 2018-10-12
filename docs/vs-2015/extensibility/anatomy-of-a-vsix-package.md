@@ -1,7 +1,7 @@
 ---
 title: Bir VSIX paketinin anatomisi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 645d9bff0b1f1bd3ac3afe3f5c815d9b9cd208d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 207abbda08134c2a1e065cf73050fc2451d4eaab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686331"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181467"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Bir VSIX Paketinin Anatomisi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bir VSIX paketinin anatomisi](https://docs.microsoft.com/visualstudio/extensibility/anatomy-of-a-vsix-package).  
-  
 Bir VSIX paketi bir veya daha fazla Visual Studio uzantıları, sınıflandırmak ve uzantıları yüklemek için Visual Studio kullanan meta veriler ile birlikte içeren bir .vsix dosyasıdır. Bu meta veri, VSIX bildirimi ve [Content_Types] .xml dosyasının içinde yer alır. Bir VSIX paketi, ayrıca yerelleştirilmiş Kurulum metninde sağlamak için bir veya daha fazla Extension.vsixlangpack dosyalar içerebilir ve bağımlılıklarını yüklemek için ek VSIX paketleri içerebilir.  
   
  VSIX paket biçimi açık paketleme kuralları (OPC) standart izler. Paket ikili dosyalarını içerir ve destekleyen dosyaları, birlikte [Content_Types] .xml dosyası ve bir .vsix bildirim dosyası. Bir VSIX paketi birden çok proje veya kendi bildirimleri olan bile birden çok paketleri çıktısını içerebilir.  

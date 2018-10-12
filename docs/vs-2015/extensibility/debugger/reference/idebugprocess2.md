@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 99f6cd06-4076-45ee-b2ae-fa2ad627fd18
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cfb5a4fbd1c1e3b164b3e690da07136099711607
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5d1fcdb6df958a62ed23b3bc7e812e1f4a7e15f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684593"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218783"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [IDebugProcess2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess2).  
-  
 Bu arabirim bir bağlantı noktası üzerinde çalışan bir işlemi temsil eder. Yerel bağlantı noktası, bağlantı noktası ise, `IDebugProcess2` genellikle yerel makinedeki fiziksel bir işlemi temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -56,12 +54,12 @@ IDebugProcess2 : IUnknown
 |[EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)|Bu işlemde yer alan program numaralandırır.|  
 |[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)|Başlık, kolay ad veya işlemin dosya adını alır.|  
 |[GetServer](../../../extensibility/debugger/reference/idebugprocess2-getserver.md)|Bu işlem üzerinde çalıştığı bir makine sunucusu örneğini alır.|  
-|[sonlandırma](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)|İşlemi sonlandırır.|  
+|[Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)|İşlemi sonlandırır.|  
 |[Attach](../../../extensibility/debugger/reference/idebugprocess2-attach.md)|İşlemine ekler.|  
 |[CanDetach](../../../extensibility/debugger/reference/idebugprocess2-candetach.md)|SDM bir işlem ayırabilirsiniz belirler.|  
 |[Detach](../../../extensibility/debugger/reference/idebugprocess2-detach.md)|Hata ayıklayıcı işlemden ayırır.|  
 |[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)|Sistem işlemi tanımlayıcısını alır.|  
-|[Getprocessıd](../../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)|Bu işlem için bir genel benzersiz tanımlayıcısını alır.|  
+|[GetProcessId](../../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)|Bu işlem için bir genel benzersiz tanımlayıcısını alır.|  
 |[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)<br /><br /> [KULLANIM DIŞI]|İşlem hata ayıklama oturumu adını alır.<br /><br /> [KULLANIM DIŞI. GEREKEN HER ZAMAN DÖNÜŞ `E_NOTIMPL`.]|  
 |[EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)|İşlemde çalışan iş parçacıklarının numaralandırır.|  
 |[CauseBreak](../../../extensibility/debugger/reference/idebugprocess2-causebreak.md)|Bu işlem durdurma kodu çalıştıran sonraki program isteklerine.|  

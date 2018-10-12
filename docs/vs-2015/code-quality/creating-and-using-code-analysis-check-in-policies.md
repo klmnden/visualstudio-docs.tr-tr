@@ -1,7 +1,7 @@
 ---
 title: Oluşturma ve kod çözümleme iade ilkelerini kullanma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2719e9ec021a1fa2c40d7afb56a4ac459542a7b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b2eb5059d5ec027654b1e4de7098c732e897088
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634117"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238361"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Kod Çözümleme İade İlkeleri Oluşturma ve Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [oluşturma ve kod çözümleme iade ilkeleri kullanarak](https://docs.microsoft.com/visualstudio/code-quality/creating-and-using-code-analysis-check-in-policies).  
-  
 Team Foundation sürüm denetimi (TFVC) kullandığınızda, .NET Framework ve doğal (C/C++) kod projeleri bir takım projesi için iade Kod Analizi ilkesi oluşturabilirsiniz. Denetim ve kod tabanında denetlenen kodun kalitesini artırmak için kod çözümleme İade İlkesi'ni kullanabilirsiniz.  
   
  İlke, yerel yapı güncel olduğunda ve kod analizini en son kaynak dosyalarında Çalıştır geçirir. En azından kod projesinde etkin Kod Analizi kuralları, takım projesi iade ilkede tanımlanan aynı kuralları içermesi gerekir. Takım Proje ayarlarında hata olarak belirtilen kurallar, kod projesinde hata olarak de belirtilmelidir  
@@ -41,7 +39,7 @@ Team Foundation sürüm denetimi (TFVC) kullandığınızda, .NET Framework ve d
  [Nasıl yapılır: Standart Kod Çözümleme İade İlkeleri Oluşturma veya Güncelleme](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)  
  Ayarlamak ve bir takım projesi için Kod Analizi İlkesi değiştirmek için kullandığınız adımları açıklar.  
   
- [Yönetilen kod için özel iade ilkelerini uygulama](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)  
+ [Yönetilen Kod için Özel İade İlkelerini Uygulama](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)  
  Bir takım projesi iade ilkesi için özel bir kural oluşturmak ve ekip projesinin kod projelerini iade ilkesi ile eşitlemek için kullandığınız adımları açıklar.  
   
  [Kod Çözümleme İade İlkeleri için Sürüm Uyumluluğu](../code-quality/version-compatibility-for-code-analysis-check-in-policies.md)  

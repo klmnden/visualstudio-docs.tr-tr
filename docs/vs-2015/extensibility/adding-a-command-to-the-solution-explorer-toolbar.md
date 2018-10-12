@@ -1,7 +1,7 @@
 ---
 title: Çözüm Gezgini araç çubuğuna komut ekleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0dfc2aeb0b0e73e48fd0dcf64b5b7c09fcbea9f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f32cc47b796ea7d32207448e7888c17a1d40a73a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689786"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254405"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Çözüm Gezgini Araç Çubuğuna Komut Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Çözüm Gezgini araç çubuğuna komut ekleme](https://docs.microsoft.com/visualstudio/extensibility/adding-a-command-to-the-solution-explorer-toolbar).  
-  
 Bu izlenecek yol, bir düğme ekleme işlemi açıklanır **Çözüm Gezgini** araç çubuğu.  
   
  Herhangi bir araç çubuğunu veya menüyü komutunda Visual Studio'da bir düğme olarak adlandırılır. Düğme tıklandığında komut işleyici kod yürütülür. Genellikle, ilgili komutları bir grup oluşturmak için birlikte gruplandırılır. Menüleri ve araç çubukları grupları için kapsayıcı işlevi görür. Öncelik grubundaki tek tek komutlarla menü veya araç çubuğunda görüntülenme sırasını belirler. Bir düğme araç çubuğunu veya menüyü görünürlüğünü denetleme tarafından görüntülenmesini engelleyebilirsiniz. Listelenen bir komutu bir `<VisibilityConstraints>` .vsct dosyası bölümünü yalnızca ilişkili bağlam içinde görünür. Gruplara görünürlük uygulanamaz.  

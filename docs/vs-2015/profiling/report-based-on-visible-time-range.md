@@ -1,7 +1,7 @@
 ---
 title: Rapor görünür zaman aralığı temel | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c07943ada629e79fc88be54da915fb9f464fd0cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f13ab0b7d7ff1ea7ba264ed264b1ba70b79195b2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697422"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176247"
 ---
 # <a name="report-based-on-visible-time-range"></a>Görünür Zaman Aralığı Tabanlı Rapor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [görünür zaman aralığı temel rapor](https://docs.microsoft.com/visualstudio/profiling/report-based-on-visible-time-range).  
-  
 Profil görünümü şu anda görünür zaman aralığı ve kanalları göre raporları görüntüler. Farklı veri kümelerine ayrıntılarını görmek için gösterge öğelerini tıklayın.  
   
  Burada tablolardaki verileri hakkında daha fazla bilgi bulabilirsiniz.  

@@ -1,7 +1,7 @@
 ---
 title: Dizin durumu kod numaralandırıcısı | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 616026b5-f529-40ef-90c1-1836e116d797
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24f6dde65def4569eb8163d281f872011be0275c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 178d208b944cd52c641d60be7e0004c359896680
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687338"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264081"
 ---
 # <a name="directory-status-code-enumerator"></a>Dizin Durumu Kod Numaralandırıcısı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [dizin durumu kod numaralandırıcısı](https://docs.microsoft.com/visualstudio/extensibility/directory-status-code-enumerator).  
-  
 `SccDirStatus` Numaralandırıcı kaynak denetimi Sistemi'nde bir dizin durumunu belirten adlandırılmış sabit değerleri içerir. Bu sabit listesi tarafından kullanılan [Sccdirqueryınfo](../extensibility/sccdirqueryinfo-function.md). Bu kaynak denetimi eklentisi API 1.2 sürümünde kullanıma sunulmuştur.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -56,5 +54,5 @@ enum SccDirStatus {
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak denetimi eklentileri](../extensibility/source-control-plug-ins.md)   
- [Sccdirqueryınfo](../extensibility/sccdirqueryinfo-function.md)
+ [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)
 

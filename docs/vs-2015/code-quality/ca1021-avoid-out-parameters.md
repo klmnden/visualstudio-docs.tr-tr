@@ -1,7 +1,7 @@
 ---
 title: 'CA1021: out parametrelerinden kaçının | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bbcf7ceb27a802904351c7c8d0372f9d87708199
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: d29d80ea45735925a500b1c0b552697644a88d52
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42900691"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258758"
 ---
 # <a name="ca1021-avoid-out-parameters"></a>CA1021: Out parametrelerinden kaçının
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA1021: out parametrelerinden kaçının](https://docs.microsoft.com/visualstudio/code-quality/ca1021-avoid-out-parameters).
-
 |||
 |-|-|
 |TypeName|AvoidOutParameters|

@@ -1,7 +1,7 @@
 ---
 title: Bir özel durum sonra yürütmeye devam | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a71d71622809dfaeea399355e490fe4e69b52b9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f9e99a29c097bdf5e23bdb8f4955cd1ccc7ec19e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694972"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230132"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Özel Durumdan Sonra Yürütmeye Devam Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [devam eden yürütme sonrasında bir özel durum](https://docs.microsoft.com/visualstudio/debugger/continuing-execution-after-an-exception).  
-  
 Hata ayıklayıcı bir özel durum nedeniyle yürütmeyi keserse, bir iletişim kutusu görüntülenir. Visual Basic veya C# için göreceğiniz [özel durum Yardımcısı'nı](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) iletişim kutusunda, varsayılan olarak. C++ için eski görürsünüz **özel durum** iletişim kutusu. Visual Basic veya C# kullanarak ancak devre dışı bırakmış **özel durum Yardımcısı'nı** içinde **seçenekleri** iletişim kutusu görürsünüz **özel durum** iletişim kutusu.  
   
  Zaman **özel durum Yardımcısı'nı** veya **özel durum** iletişim kutusu görüntülenirse, özel duruma neden olan sorunu düzeltmeye çalışın.  
@@ -64,7 +62,7 @@ Hata ayıklayıcı bir özel durum nedeniyle yürütmeyi keserse, bir iletişim 
  Karma bir yerel ve yönetilen kod hata ayıklama sırasında işlenmeyen özel durumu, işletim sistemi kısıtlamaları çağrı yığınını geriye doğru izleme engeller. Kısayol menüsünü kullanarak çağrı yığınını geri sarma çalışırsanız, bir hata iletisi, hata ayıklayıcı işlenmeyen bir bırakma olamaz açıklar dışındaki hata ayıklama sırasında karma kodu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel durumları hata ayıklayıcısı ile yönetme](../debugger/managing-exceptions-with-the-debugger.md)
+ [Özel Durumları Hata Ayıklayıcısı ile Yönetme](../debugger/managing-exceptions-with-the-debugger.md)
 
 
 

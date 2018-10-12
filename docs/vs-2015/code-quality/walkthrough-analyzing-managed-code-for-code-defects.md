@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: Kod kusurları için yönetilen kodu analiz etme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9137e7319cd8cddfb54ab4b6a6929567b24bb6e5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c8bf9d1f293895c762348752b64c7be8cf6d510
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687465"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217491"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>İzlenecek yol: Kod Kusurları için Yönetilen Kodu Analiz Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [izlenecek yol: kod kusurları için yönetilen kodu analiz etme](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-analyzing-managed-code-for-code-defects).  
-  
 Bu kılavuzda, Kod Analizi aracını kullanarak kod kusurları için yönetilen bir proje çözümleyin.  
   
  Bu kılavuzda Microsoft .NET Framework tasarım yönergeleri ile uyumluluk için bütünleştirilmiş kodlarınızı .NET yönetilen kodu analiz etmek için kod analizini kullanarak işlemi adım adım.  

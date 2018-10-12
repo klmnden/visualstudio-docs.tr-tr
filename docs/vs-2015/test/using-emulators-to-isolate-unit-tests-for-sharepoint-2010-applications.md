@@ -1,7 +1,7 @@
 ---
 title: Sharepoint 2010 uygulamaları için birim testlerini yalıtmak üzere Öykünücüler kullanma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: b681164c-c87a-4bd7-be48-ed77e1578471
 caps.latest.revision: 17
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 85e3236e83d29e16c4501091cebf644605bfa82c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d45ea88fea9f30bf02c24e927694c81d8639559
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687030"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178314"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Sharepoint 2010 uygulamaları için birim testlerini yalıtmak üzere öykünücüler kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Sharepoint 2010 uygulamaları için birim testlerini yalıtmak üzere Öykünücüler kullanma](https://docs.microsoft.com/visualstudio/test/using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications).  
-  
 Microsoft.SharePoint.Emulators paketi Microsoft SharePoint 2010 uygulamaları için ayrılmış birim testleri oluşturmanıza yardımcı olacak bir dizi sağlar. Öykünücü kullanmak [dolgular](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) gelen [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) en genel nesneleri ve SharePoint API yöntemlerini taklit eden hafif bellek içi nesneler oluşturmak için yalıtım çerçevesi. Bir SharePoint yöntemine öykünülmediğinde veya bir öykünücü'nın varsayılan davranışını değiştirmek istediğinizde istediğiniz sonuçları sağlamak için sahte dolgu verisi oluşturabilirsiniz.  
   
  Mevcut test yöntemleri ve sınıfları kolayca öykünücü bağlamında çalışacak şekilde dönüştürülebilir. Bu özellik çift kullanımlı testler oluşturmanıza olanak sağlar. Çift kullanımlı test, Öykünücüler kullanan yalıtılmış birim testleri gerçek SharePoint API karşı tümleştirme testleri arasında geçiş yapabilirsiniz.  

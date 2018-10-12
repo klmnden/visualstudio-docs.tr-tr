@@ -1,7 +1,7 @@
 ---
 title: IDataObject nesnesinden UML model öğelerini alma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a69a6f20fdccdce9d8795c68bf0a70c74604428b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 07dd0d092883e643e093c27349574a6509cd9dfb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693398"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199575"
 ---
 # <a name="get-uml-model-elements-from-idataobject"></a>IDataObject nesnesinden UML model öğelerini alma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [alma UML model öğelerini bilgisine](https://docs.microsoft.com/visualstudio/modeling/get-uml-model-elements-from-idataobject).  
-  
 Kullanıcı öğeleri herhangi bir kaynaktan diyagram üzerine sürüklediğinde, sürüklenen öğeler içinde kodlanır bir `System.Windows.Forms.IDataObject`. Kodlama, kaynak nesnenin türüne bağlıdır. Aşağıdaki parçası, kaynak UML diyagram olduğunda öğelerin nasıl alındığını gösterir.  
   
 > [!NOTE]
@@ -87,7 +85,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML API ile programlama](../modeling/programming-with-the-uml-api.md)   
- [Modelleme Diyagramında Menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
+ [Modelleme diyagramında menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
 
 
 

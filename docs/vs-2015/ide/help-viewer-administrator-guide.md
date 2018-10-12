@@ -1,7 +1,7 @@
 ---
 title: Yardım Görüntüleyicisi Yönetici Kılavuzu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 97d28d0651be2fd04e283b05e5a9a0e81997c338
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d68f1ab876ffc24e5b422265f427ef5b26937d23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628530"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256964"
 ---
 # <a name="help-viewer-administrator-guide"></a>Yardım Görüntüleyicisi Yönetici Kılavuzu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Yardım Görüntüleyicisi Yönetici Kılavuzu'na](https://docs.microsoft.com/visualstudio/ide/help-viewer-administrator-guide).  
-  
 Yardım Görüntüleyici ile veya internet erişimi olmayan ağ ortamları için yerel Yardım yüklemelerini yönetmenize olanak sağlar. Yerel Yardım içeriği makine başına temelinde yapılandırılır. Varsayılan olarak, kullanıcılar, kendi yerel Yardım yüklemesini güncelleştirmek için yönetici haklarına sahip olmalıdır.  
   
  Ağ ortamınız istemcilerin Internet'e erişmesine izin veriyorsa, Yardım Görüntüleyici yerel Yardım içeriğini Internet üzerinden dağıtmak için komut satırı betikleri kullanmanızı sağlar.  
@@ -136,7 +134,7 @@ Yardım Görüntüleyici ile veya internet erişimi olmayan ağ ortamları için
   
      Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \< *KlasörAdı*> \ /y /e /k /o  
   
-     Örneğin: `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`  
+     Örneğin: `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`.  
   
 ### <a name="deploying-the-content"></a>İçerik dağıtma  
   

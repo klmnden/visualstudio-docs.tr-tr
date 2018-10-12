@@ -1,7 +1,7 @@
 ---
 title: WPF MSBuild başvurusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,26 +22,24 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ce51d31abb51c7cd63273b7e50c9ebd2b8499c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7b02761cad83684087099de7a061d7eed38d83b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632547"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263386"
 ---
 # <a name="wpf-msbuild-reference"></a>WPF MSBuild Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [WPF MSBuild başvurusu](https://docs.microsoft.com/visualstudio/msbuild/wpf-msbuild-reference).  
-  
   
 Windows Presentation Foundation (WPF), bu bölümde belgelenen diğer derleme desteğiyle Microsoft yapı engine (MSBuild) genişletir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [. MSBuild](../msbuild/wpf-dot-targets-files.md)  
+ [.Targets Dosyaları](../msbuild/wpf-dot-targets-files.md)  
  WPF açıklar. Dosyaları hedefler.  
   
- [Görev başvurusu](../msbuild/wpf-msbuild-task-reference.md)  
+ [Görev Başvurusu](../msbuild/wpf-msbuild-task-reference.md)  
  Derleme görevleri kullanılabilir WPF listeler.  
   
  <xref:Microsoft.Build.Tasks>  

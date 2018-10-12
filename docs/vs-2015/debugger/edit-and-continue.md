@@ -1,7 +1,7 @@
 ---
 title: Düzenle ve devam et | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,27 +28,25 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26e1215bfbc8696c86a4ac2ec976b8302089b977
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df27a9f2eaa9c6a923a17c640f19ab94c608d6df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692666"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175727"
 ---
 # <a name="edit-and-continue"></a>Düzenle ve Devam Et
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Düzenle ve devam et](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue).  
-  
 Düzenle ve devam programınız kesme modundayken, kaynak kodunuzda değişiklikler yapmanızı sağlayan bir zamandan tasarruf özelliktir. Ne zaman, sürdürme programın yürütülmesini gibi bir yürütme komutu seçerek **devam** veya **adım**, Düzenle ve devam otomatik olarak kod değişiklikleri ile ilgili bazı sınırlamalar uygular. Bu, durdurmak, tüm programınızı yeniden derleyin ve hata ayıklama oturumunu yeniden zorunda kalmak yerine bir hata ayıklama oturumu sırasında kodunuzda değişiklikler yapmanızı sağlar.  
   
  Bu bölüm şu konuları içerir:  
   
  [Nasıl yapılır: kod değişikliklerini açıkça uygulama](http://msdn.microsoft.com/en-us/89c4fce9-a3ef-432d-a840-67840b1c4be8)  
   
- [Nasıl yapılır: etkinleştirme ve devre dışı Düzenle ve devam et](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
+ [Nasıl Yapılır: Düzenle ve Devam Et'i Etkinleştirme veya Devre Dışı Bırakma](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
   
- [Nasıl yapılır: kod değişikliklerini durdurma](../debugger/how-to-stop-code-changes.md)  
+ [Nasıl Yapılır: Kod Değişikliklerini Durdurma](../debugger/how-to-stop-code-changes.md)  
   
  [Yürütme noktası](http://msdn.microsoft.com/en-us/dd9855a7-b536-4e76-821f-27017829b996)  
   
@@ -58,12 +56,12 @@ Düzenle ve devam programınız kesme modundayken, kaynak kodunuzda değişiklik
   
  [Düzenle ve Devam Et (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)  
   
- [Düzenle ve devam et F # için desteklenmiyor](../debugger/edit-and-continue-not-supported-for-f-hash.md)  
+ [F# için Düzenle ve Devam Et Desteklenmez](../debugger/edit-and-continue-not-supported-for-f-hash.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
  [Düzenle ve devam et, hata ayıklama, Seçenekler iletişim kutusu](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
- [Hata ayıklayıcı temel bilgileri](../debugger/debugger-basics.md)
+ [Hata Ayıklayıcısı Temel Bilgileri](../debugger/debugger-basics.md)
 
 
 

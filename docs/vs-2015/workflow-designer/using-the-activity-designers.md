@@ -1,7 +1,7 @@
 ---
 title: Etkinlik tasarımcılarını kullanma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: c370b48d0534303947ca2e940adf95e178422c56
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7601f4e42c7dbc2bee63719986760bedd1c8589
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687849"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224243"
 ---
 # <a name="using-the-activity-designers"></a>Etkinlik Tasarımcılarını kullanma
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] Etkinliklerini ve iş akışlarını oluştururken kullanabileceğiniz sistem tarafından sağlanan etkinlikler içerir. Bu bölümde, sistem tarafından sağlanan etkinlikleri ve kullanılabilir olan kendi tasarımcıları kategorileri açıklanmaktadır. Etkinlikler ve bunların ilgili tasarımcılar Bu kategorilerden her biri içinde konularda ne bu etkinlikleri yapın ve bunların nasıl kullanılacağı hakkında rehberlik açıklanmaktadır.  
@@ -35,7 +35,7 @@ ms.locfileid: "42687849"
  [Durum Makinesi](../workflow-designer/state-machine-activity-designers.md)  
  Durum makinesi etkinlik oluşturmak için kullanılan etkinlik tasarımcıları.  
   
- [Mesajlaşma](../workflow-designer/messaging-activity-designers.md)  
+ [Messaging](../workflow-designer/messaging-activity-designers.md)  
  Mesajlaşma etkinlikleri yönetmek için kullanılan etkinlik tasarımcıları.  
   
  [Çalışma Zamanı](../workflow-designer/runtime-activity-designers.md)  

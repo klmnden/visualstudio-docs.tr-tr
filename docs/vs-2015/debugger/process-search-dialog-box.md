@@ -1,7 +1,7 @@
 ---
 title: İşlem arama iletişim kutusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 455921678267ae918175445bdd06fe4391f84fff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43f856e849974375e9360dac1844e634c9915000
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693615"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244653"
 ---
 # <a name="process-search-dialog-box"></a>İşlem Arama İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [işlem arama iletişim kutusu](https://docs.microsoft.com/visualstudio/debugger/process-search-dialog-box).  
-  
 Bulmak ve belirli bir işlem düğümü seçmek için bu iletişim kutusunu kullanın [işlemler görünümü](../debugger/processes-view.md). Bu iletişim kutusunu görüntülemek için odağı taşıyın. bir **işlemleri** Görünümü penceresi. Ardından **bulma işlemi** gelen **arama** menüsü.  
   
  Aşağıdaki ayarlar kullanılabilir:  
@@ -54,7 +52,7 @@ Bulmak ve belirli bir işlem düğümü seçmek için bu iletişim kutusunu kull
  [Spy++ kullanma](../debugger/using-spy-increment.md)  
  Spy ++ araç tanıtır ve nasıl kullanılacağını açıklar.  
   
- [İşlem özellikleri iletişim kutusu](../debugger/process-properties-dialog-box.md)  
+ [İşlem Özellikleri İletişim Kutusu](../debugger/process-properties-dialog-box.md)  
  İşlemler görünümünde seçilen işlem özelliklerini görüntülemek için kullanılır.  
   
  [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  

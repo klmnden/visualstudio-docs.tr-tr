@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: bir içerik türü için bir dosya adı uzantısına bağlama | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1742da19e2d99cbb22d930b7146b1f9859e19cef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45534f4a85cd289360c098083228ac5f28025a90
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693112"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261735"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>İzlenecek Yol: Bir İçerik Türünü Dosya Adı Uzantısına Bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [izlenecek yol: bir içerik türü için bir dosya adı uzantısına bağlama](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension).  
-  
 Kendi içerik türü tanımlayabilir ve düzenleyici Yönetilen Genişletilebilirlik Çerçevesi (MEF) uzantılarını kullanarak bağlamak için bir dosya adı uzantısı. Bazı durumlarda, dosya adı uzantısı zaten bir dil hizmeti tarafından tanımlandı; Bununla birlikte, MEF ile kullanmak için yine de bunu bir içerik türüyle bağlamanız gerekir.  
   
 ## <a name="prerequisites"></a>Önkoşullar  

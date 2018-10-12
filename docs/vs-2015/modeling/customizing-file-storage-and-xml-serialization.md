@@ -1,7 +1,7 @@
 ---
 title: Dosya depolamayı ve XML serileştirmeyi özelleştirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ee8a3b5a5510ef5b8a104e3a55ace3af9ce7d318
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 012805e83e0fa3fae2a58274bfa400818d6d22fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775533"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183026"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Dosya Depolamayı ve XML Serileştirmeyi Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [özelleştirme dosya depolamayı ve XML serileştirmeyi](https://docs.microsoft.com/visualstudio/modeling/customizing-file-storage-and-xml-serialization).  
-  
 Kullanıcı bir örneği kaydettiğinde veya *modeli*, içinde bir etki alanına özgü dil (DSL), [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], bir XML dosyası oluşturulduğunda veya güncelleştirildiğinde. Store modelde yeniden oluşturmak için dosya yeniden yüklenebilir.  
   
  Ayarlar altında ayarlayarak, serileştirme düzenini özelleştirebilirsiniz **Xml serileştirme davranışı** DSL Gezgini içinde. Bir düğüm altında **Xml serileştirme davranışı** her etki alanı sınıfı, özellik ve ilişki. İlişkiler, kendi kaynak sınıfları altında yer alır. Düğüm şekli, bağlayıcı ve diyagram sınıfları karşılık gelen vardır.  
@@ -282,7 +280,7 @@ Kullanıcı bir örneği kaydettiğinde veya *modeli*, içinde bir etki alanına
 |Etki alanı sınıfı|Bu sınıf veri düğümü geçerli olduğu etki alanı sınıfı. Salt okunur.|  
 |Öğe adı|Bu sınıfına ait öğelerin XML düğümü adı. Varsayılan değer, etki alanı sınıfı adı küçük harflerden sürümüdür.|  
 |Bilinen ad özniteliği adı|Başvuruyu içerecek bilinen ad öğelerinde kullanılan özniteliğin adı. Boş ise anahtar özelliğinin ve kimliğin adı kullanılır.<br /><br /> Bu örnekte, "name" verilmiştir:  `<personMoniker name="/Mike Nash"/>`|  
-|Bilinen ad öğesi adı|Başvurmak için bu sınıfın öğelerine ait bilinen adlar için kullanılan xml öğesinin adı.<br /><br /> Varsayılan değer "Moniker" ile ve sonra sınıf adı küçük bir sürümüdür. Örneğin, `personMoniker`.|  
+|Bilinen ad öğesi adı|Başvurmak için bu sınıfın öğelerine ait bilinen adlar için kullanılan xml öğesinin adı.<br /><br /> Varsayılan değer "Moniker" ile ve sonra sınıf adı küçük bir sürümüdür. Örneğin: `personMoniker`|  
 |Bilinen ad tür adı|Bu sınıfın öğelerine ait bilinen adlar için oluşturulan xsd türünün adı. XSD bulunduğu **Dsl\Generated kod\\\*Schema.xsd**|  
 |Kimliği seri hale getirme|TRUE ise, ' % s'öğesi GUID'si dosyasına dahil edilir. Bu işaretlenmiş özelliği yok ise true **olduğu bilinen ad anahtarı** DSL bu sınıfa başvuru ilişkileri tanımlar.|  
 |Tür adı|Xsd belirtilen alan sınıfından oluşturulan xml türünün adı.|  

@@ -1,7 +1,7 @@
 ---
 title: Yeni Öğe Ekle komutu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f380a11440ed413871d2c80603148aa7cc77390
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 866a77e148fe59d6a5d66b900982716630dd2faa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687635"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240233"
 ---
 # <a name="add-new-item-command"></a>Yeni Öğe Ekle Komutu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yeni öğe komut Ekle](https://docs.microsoft.com/visualstudio/ide/reference/add-new-item-command).  
-  
   
 Geçerli çözüme .htm, .css, .txt veya frameset gibi yeni bir çözüm öğesi ekler ve onu açar.  
   

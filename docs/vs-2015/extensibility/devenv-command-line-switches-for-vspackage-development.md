@@ -1,7 +1,7 @@
 ---
 title: VSPackage geliştirme için Devenv komut satırı anahtarları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7bb10653a784b6d481717965e68b445c24b3f3db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 80f67d2c640106d0956f4feda06c4969bbeadeac
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686357"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172061"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>VSPackage Geliştirme için Devenv Komut Satırı Anahtarları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [VSPackage geliştirme için Devenv komut satırı anahtarları](https://docs.microsoft.com/visualstudio/extensibility/devenv-command-line-switches-for-vspackage-development).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] geliştiricilerin devenv.exe, Visual Studio tümleşik geliştirme ortamı (IDE) başlatan dosyanın yürütülürken komut satırından görevleri otomatikleştirmenize olanak tanır.  
   
  Görevler aşağıdakileri içerir:  

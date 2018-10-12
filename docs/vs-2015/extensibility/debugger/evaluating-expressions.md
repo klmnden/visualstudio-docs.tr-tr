@@ -1,7 +1,7 @@
 ---
 title: İfadeleri değerlendirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5ccfcc80-dea5-48a1-8bae-6a26f8d3bc56
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c51cc08da8c71a2ac1f25d02461ea9c24797ebc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b0aae7193c6840d389f7990f155fecb0149edc7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693299"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213687"
 ---
 # <a name="evaluating-expressions"></a>İfadeleri Değerlendirme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ifadeleri değerlendirme](https://docs.microsoft.com/visualstudio/extensibility/debugger/evaluating-expressions).  
-  
 İfadeler, Otomatikler, izleme, QuickWatch veya pencereler'deki geçirilir dizelerden oluşturulur. Bir ifade değerlendirildiğinde değişken veya bağımsız değişken ve değeri türünü ve adını içeren bir yazdırılabilir bir dize oluşturur. Bu dize karşılık gelen bir IDE penceresinde görüntülenir.  
   
 ## <a name="implementation"></a>Uygulama  

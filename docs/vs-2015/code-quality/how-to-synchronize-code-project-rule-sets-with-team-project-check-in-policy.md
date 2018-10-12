@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: iade takım projesi ilkesiyle kod proje kural kümelerini eşitleme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d7d20680fdba3affa5da4ee917fb12bf1b98457b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 482f3107aeb7545951632f6841c43968067b1b2a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694480"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263126"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Nasıl yapılır: Takım Projesi İade İlkesiyle Kod Proje Kural Kümelerini Eşitleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: takım projesi iade ilkesiyle kod proje kural kümelerini eşitleme](https://docs.microsoft.com/visualstudio/code-quality/how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy).  
-  
 Takım projesi için iade ilkesiyle kod projeleri için Kod Analizi ayarları, en az belirtilen kural kümesi için iade ilkesi kuralları içeren bir kural kümesi belirterek eşitleyin. Geliştirici sağlama, ad ve kural kümesi için iade ilkesi konumunu bildirebilirsiniz. Proje için Kod Analizi kuralları doğru kümesini kullandığından emin olmak için aşağıdaki seçeneklerden birini kullanabilirsiniz:  
   
 -   İade İlkesi Microsoft yerleşik kural kümelerini kullanıyorsa, kod projesi için özellikleri iletişim kutusunu açın, Kod Analizi sayfayı görüntülemek ve kod projesi ayarları Kod Analizi sayfasında ayarlama kuralı seçin. Microsoft Standart kural kümelerinden Visual Studio ile otomatik olarak yüklenir, salt okunur olarak ayarlanır ve düzenlenmemelidir. Kural kümeleri düzenlenemez, yerel kural kümeleri ve ilke kuralları eşleştirmek için garanti edilir.  

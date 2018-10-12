@@ -1,7 +1,7 @@
 ---
 title: 'CA2233: İşlemler değil overflow | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2cb9dbf5f88921d20b4923c3800dd02d096034a8
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 32707a891cfe99eecc4d6cba16ec5c04bdd3c100
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42900435"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235449"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: İşlemler taşmamalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA2233: işlemleri değil overflow](https://docs.microsoft.com/visualstudio/code-quality/ca2233-operations-should-not-overflow).
-
 |||
 |-|-|
 |TypeName|OperationsShouldNotOverflow|

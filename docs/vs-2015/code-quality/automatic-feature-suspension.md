@@ -1,7 +1,7 @@
 ---
 title: Otomatik özelliği askıya alma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,15 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 281a4cbfb7bb1564af698cf4e745d56207f3e58e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8aee8f4ef46d3621bf569b260d943180abd7ad5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673926"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178184"
 ---
 # <a name="automatic-feature-suspension"></a>Otomatik özelliği askıya alma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Bu konuda en son sürümünü şu yolda bulunabilir: [otomatik özelliği askıya alma](https://docs.microsoft.com/visualstudio/code-quality/automatic-feature-suspension).
-
 200 MB veya daha az, kullanılabilir sistem belleğini denk gelirse, Visual Studio Kod Düzenleyicisi'nde aşağıdaki iletiyi görüntüler.
 
  ![Uyarı metni tam çözüm analizini askıya](../code-quality/media/fsa-alert.png "FSA_Alert")
@@ -68,6 +65,6 @@ Ayrıca, iç Visual Studio işlemleri için kullanılan önbellekler de temizlen
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır: Enable ve Disable tam çözüm analizini](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
+- [Nasıl Yapılır: Tam Çözüm Analizini Etkinleştirme ve Devre Dışı Bırakma](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
 - [Atık Toplamanın Temelleri](http://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
 - [Büyük çözümler için performans konuları](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

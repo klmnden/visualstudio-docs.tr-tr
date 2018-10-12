@@ -1,7 +1,7 @@
 ---
 title: T4 Include yönergesi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 32af7c25070f4e93c40d01da0cc0ba09e80c2193
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0ad5f409b6f7da852abbf2872bf01ef678b7a5d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631833"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233993"
 ---
 # <a name="t4-include-directive"></a>T4 Include Yönergesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [T4 dahil yönergesi](https://docs.microsoft.com/visualstudio/modeling/t4-include-directive).  
-  
 Metin şablonunda, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], kullanarak başka bir dosyadan metin dahil edebilirsiniz bir `<#@include#>` yönergesi. Koyabilirsiniz `include` yönergelerini ilk sınıf özelliği bloğundan önce metin şablonunda herhangi bir yerindeki `<#+ ... #>`. Eklenen dosyalar ayrıca içerebilir `include` yönergeleriyle birlikte diğer yönergeleri. Bu şablon kodunu ve demirbaş metni şablonlar arasında paylaşmanızı sağlar.  
   
 ## <a name="using-include-directives"></a>Ekleme Yönergelerini Kullanma  

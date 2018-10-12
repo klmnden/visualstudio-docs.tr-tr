@@ -1,7 +1,7 @@
 ---
 title: Metin Düzenleyici Seçenekleri iletişim kutusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fef1fee7b91d43b543f9baaccce40686554604f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 939438c2506a95c98005144dde395028d18cc481
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689393"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260241"
 ---
 # <a name="text-editor-options-dialog-box"></a>Metin Düzenleyici Seçenekleri İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [metin düzenleyici Seçenekleri iletişim kutusu](https://docs.microsoft.com/visualstudio/ide/reference/text-editor-options-dialog-box).  
-  
   
 Düzenleyici Seçenekleri **seçenekleri** iletişim kutusu Düzenleyicisi davranışını ve görünümünü özelleştirmek için yol sağlayın.  
   
@@ -57,47 +55,47 @@ Düzenleyici Seçenekleri **seçenekleri** iletişim kutusu Düzenleyicisi davra
  [Dile Özgü Düzenleyici Seçeneklerini Ayarlama](../../ide/reference/setting-language-specific-editor-options.md)  
  Yalnızca bir geliştirme dilini geçerli Düzenleyici seçeneklerini ayarlama açıklanmaktadır.  
   
- [Seçenekler, metin düzenleyici, genel](../../ide/reference/options-text-editor-general.md)  
+ [Seçenekler, Metin Düzenleyici, Genel](../../ide/reference/options-text-editor-general.md)  
  Genel Düzenleyici seçenekleri açıklanmaktadır.  
   
- [Seçenekler, metin düzenleyici, dosya uzantısı](../../ide/reference/options-text-editor-file-extension.md)  
+ [Seçenekler, Metin Düzenleyici, Dosya Uzantısı](../../ide/reference/options-text-editor-file-extension.md)  
  Dosya uzantısı seçenekleri açıklanmaktadır.  
   
- [Seçenekler, metin düzenleyici, tüm diller](../../ide/reference/options-text-editor-all-languages.md)  
+ [Seçenekler, Metin Düzenleyici, Tüm Diller](../../ide/reference/options-text-editor-all-languages.md)  
  Tüm diller için kullanılabilir seçenekleri açıklar.  
   
- [Seçenekler, metin düzenleyici, tüm diller, sekmeler](../../ide/reference/options-text-editor-all-languages-tabs.md)  
+ [Seçenekler, Metin Düzenleyici, Tüm Diller, Sekmeler](../../ide/reference/options-text-editor-all-languages-tabs.md)  
  Tüm diller için sekmesinde seçenekleri açıklar.  
   
- [Seçenekler, metin düzenleyici, temel (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)  
+ [Seçenekler, Metin Düzenleyici, Temel (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)  
  Visual Basic seçenekleri açıklar.  
   
- [Seçenekler, metin düzenleyici, C/C++, biçimlendirme](../../ide/reference/options-text-editor-c-cpp-formatting.md)  
+ [Seçenekler, Metin Düzenleyici, C/C++, Biçimlendirme](../../ide/reference/options-text-editor-c-cpp-formatting.md)  
  C/C++ biçimlendirme seçeneklerini açıklar.  
   
- [Seçenekler, metin düzenleyici, C/C++, Gelişmiş](../../ide/reference/options-text-editor-c-cpp-advanced.md)  
+ [Seçenekler, Metin Düzenleyici, C/C++, Gelişmiş](../../ide/reference/options-text-editor-c-cpp-advanced.md)  
  C/C++ Gelişmiş seçenekleri açıklanmaktadır.  
   
- [Seçenekler, metin düzenleyici, C++, biçimlendirme](../../ide/reference/options-text-editor-csharp-formatting.md)  
+ [Seçenekler, Metin Düzenleyici, C#, Biçimlendirme](../../ide/reference/options-text-editor-csharp-formatting.md)  
  C# biçimlendirme seçeneklerini açıklar.  
   
- [Seçenekler, metin düzenleyici, C#, Gelişmiş](../../ide/reference/options-text-editor-csharp-advanced.md)  
+ [Seçenekler, Metin Düzenleyici, C#, Gelişmiş](../../ide/reference/options-text-editor-csharp-advanced.md)  
  C# Gelişmiş seçenekleri açıklanmaktadır.  
   
- [Seçenekler, metin düzenleyici, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)  
+ [Seçenekler, Metin Düzenleyici, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)  
  C# IntelliSense seçenekleri açıklanmaktadır.  
   
- [Seçenekler, metin düzenleyici, JavaScript, biçimlendirme](../../ide/reference/options-text-editor-javascript-formatting.md)  
+ [Seçenekler, Metin Düzenleyici, JavaScript, Biçimlendirme](../../ide/reference/options-text-editor-javascript-formatting.md)  
  JavaScript, biçimlendirme seçeneklerini açıklar.  
   
- [Seçenekler, metin düzenleyici, JavaScript, IntelliSense](../../ide/reference/options-text-editor-javascript-intellisense.md)  
+ [Seçenekler, Metin Düzenleyici, JavaScript, IntelliSense](../../ide/reference/options-text-editor-javascript-intellisense.md)  
  JavaScript IntelliSense seçenekleri açıklanmaktadır.  
   
- [Biçimlendirme seçenekler, metin düzenleyici, XAML,](../../ide/reference/options-text-editor-xaml-formatting.md)  
+ [Seçenekler, Metin Düzenleyici, XAML, Biçimlendirme](../../ide/reference/options-text-editor-xaml-formatting.md)  
  XAML biçimlendirme seçeneklerini açıklar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Kod yazma](../../ide/writing-code-in-the-code-and-text-editor.md)  
+ [Kod Yazma](../../ide/writing-code-in-the-code-and-text-editor.md)  
  Kod Düzenleyicisi'ni kullanmak için farklı yollar açıklanmaktadır.
 
 

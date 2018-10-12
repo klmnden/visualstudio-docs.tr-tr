@@ -1,7 +1,7 @@
 ---
 title: Kural Ayarla iletişim kutusu (eski) seçin. | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 170a7467be4f1fb3bfdc3f3696c654717131a3d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c53aefdf17e11974e5ef563cd3684e80722837c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689477"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195994"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Kural Kümesi Seç İletişim Kutusu (Eski)
 Bu konu açıklar nasıl **kural kümesi seç** eski iletişim kutusunda [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -35,7 +35,7 @@ Bu konu açıklar nasıl **kural kümesi seç** eski iletişim kutusunda [!INCLU
 |**Yeni...**|Açmak için tıklayın [kural kümesi Düzenleyicisi iletişim kutusu (eski)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) yeni bir kural koşulu oluşturma.|  
 |**Düzenle...**|Açmak için tıklayın [kural kümesi Düzenleyicisi iletişim kutusu (eski)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) seçili kural koşulu düzenlenecek.|  
 |**Yeniden Adlandır...**|Vybranou sadu pravidel yeniden adlandırmak için kullanılan bir iletişim kutusunu açmak için tıklayın.|  
-|**Sil**|Odstranit vybranou sadu pravidel için tıklayın.|  
+|**Delete**|Odstranit vybranou sadu pravidel için tıklayın.|  
 |**Kural kümesi Önizleme**|Seçili kural kümesinde kurallarını görüntüler.|  
 |**TAMAM**|Seçili kural kümesi atamak için tıklatın **PolicyActivity** etkinlik.|  
   

@@ -1,7 +1,7 @@
 ---
 title: Oluşturma ve Visual Studio'da bir Store uygulaması için birim testleri çalıştırma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 76a73232cf4c522baf261d50910d188234e8a4c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea2cf8293a0969a152e38304b469e0b4042073c0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681168"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249515"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Oluşturma ve Visual Studio'da bir Store uygulaması için birim testleri çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [oluşturma ve çalıştırma birim testlerini Visual Studio'da bir Store uygulaması için](https://docs.microsoft.com/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio).  
-  
 Visual Studio 2012 Express Windows 8 için birim testi araçları, geliştiricilerin ve birim testi içinde yazılım geliştirme yöntemleri bünyesine ekipleri desteklemek üzere tasarlanmıştır. Birim testleri, geliştiricilere Visual C#, Visual Basic ve Visual C++ projelerindeki sınıfların yöntemlerinde mantık hataları aramak için verimli ve sürdürülebilir bir yol verin.  
   
 > [!NOTE]
@@ -40,11 +38,11 @@ Visual Studio 2012 Express Windows 8 için birim testi araçları, geliştiricil
 >  Daha fazla bilgi için [Birim Test kodunuzu](../test/unit-test-your-code.md) MSDN Kitaplığı'nda.  
   
 ## <a name="in-this-section"></a>Bu bölümde  
- [C# koduna birim testi](../test/unit-testing-visual-csharp-code-in-a-store-app.md)  
+ [C# birim testi sınıfı](../test/unit-testing-visual-csharp-code-in-a-store-app.md)  
   
- [Bir C++ DLL birim testi](../test/unit-testing-a-visual-cpp-dll-for-store-apps.md)  
+ [C++ DLL birim testi](../test/unit-testing-a-visual-cpp-dll-for-store-apps.md)  
   
- [Test Gezgini'nde birim testleri çalıştırma](../test/run-unit-tests-for-store-apps-in-visual-studio.md)
+ [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-for-store-apps-in-visual-studio.md)
 
 
 

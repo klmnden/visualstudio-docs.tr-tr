@@ -1,7 +1,7 @@
 ---
 title: Özel yönerge işlemcisi dağıtma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b46d95aae0908a4e1e2ba72e860d56ec975b051f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc49795a2d19ab28eb4462efc9d6361e1ac18ab6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633100"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251959"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Özel Yönerge İşlemcisi Dağıtma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [özel yönerge işlemcisini dağıtma](https://docs.microsoft.com/visualstudio/modeling/deploying-a-custom-directive-processor).  
-  
 Özel bir yönerge işlemcisi kullanmak için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] herhangi bir bilgisayarda, bu konuda açıklanan yöntemlerin biriyle kaydetmeniz gerekir.  
   
  Diğer yöntemler şunlardır:  
@@ -169,7 +167,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [özel yönerge işlemcisin
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Bir kayıt defteri anahtarı ayarlayarak bir yönerge işlemcisi kaydetmek için  
   
-1.  Çalıştırma `regedit`.  
+1.  `regedit`'i çalıştırın.  
   
 2.  Regedit içinde şuraya gidin:  
   

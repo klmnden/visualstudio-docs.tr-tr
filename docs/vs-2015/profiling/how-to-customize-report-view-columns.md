@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: rapor görünümü sütunlarını özelleştirme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14e6e751f826d0ee52db5f00712a225f2171ecc9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5bc7b18e4df3baac4f6acb65d39c9ab66bcafa5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687918"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202819"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Nasıl yapılır: Rapor Görünümü Sütunlarını Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: rapor görünümü sütunlarını özelleştirme](https://docs.microsoft.com/visualstudio/profiling/how-to-customize-report-view-columns).  
-  
 Visual Studio Team System geliştirme sürümü Performans araçları tümleşik geliştirme ortamına (IDE) kesintisiz bir kullanıcı deneyimi sağlamak için tam olarak tümleşiktir. Aşağıdaki listede ekleme, kaldırma ve sütunları yeniden düzenleme özelleştirilmiş görünümleri etmektedir:  
   
 -   [Modüller Görünümü](../profiling/modules-view.md)  
@@ -41,11 +39,11 @@ Visual Studio Team System geliştirme sürümü Performans araçları tümleşik
   
 -   [Yönerge İşaretçileri (IP) Görünümü](../profiling/instruction-pointers-ips-view.md)  
   
--   [Arayan/Aranan görünümü](../profiling/caller-callee-view.md)  
+-   [Çağıran/Çağrılan Görünümü](../profiling/caller-callee-view.md)  
   
 -   [Çağrı Ağacı Görünümü](../profiling/call-tree-view.md)  
   
--   [Ayırma görünümü](../profiling/dotnet-memory-allocations-view.md)  
+-   [Ayırmalar Görünümü](../profiling/dotnet-memory-allocations-view.md)  
   
 -   [Nesne Ömrü Görünümü](../profiling/object-lifetime-view.md)  
   

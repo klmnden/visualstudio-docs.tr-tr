@@ -1,7 +1,7 @@
 ---
 title: VSTemplate öğesi (Visual Studio şablonları) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f8ac561b-3b0b-4246-9ec9-118d2447e9a9
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dad2fb7a9af5e15d00b05f4a4c6cf99f3929e31e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2477381333683b7ada89a84a3e8d79edf3f7fed9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690953"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255846"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate Öğesi (Visual Studio Şablonları)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [VSTemplate öğesi (Visual Studio şablonları)](https://docs.microsoft.com/visualstudio/extensibility/vstemplate-element-visual-studio-templates).  
-  
 Proje şablonu, öğe şablonu veya başlangıç Seti hakkındaki meta verileri içerir.  
   
 ## <a name="syntax"></a>Sözdizimi  

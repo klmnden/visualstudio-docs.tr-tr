@@ -1,7 +1,7 @@
 ---
 title: GenerateDeploymentManifest görevi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 86b26edae7b96c9ce29bcef4ed1b37744faf68eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ad0b9919c5c567662d78573573f1bf046c93552
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692672"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261898"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [GenerateDeploymentManifest görevi](https://docs.microsoft.com/visualstudio/msbuild/generatedeploymentmanifest-task).  
-  
   
 Oluşturur bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım bildirimi. A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtımı için benzersiz bir kimliği tanımlayarak dağıtım bildirimini bir uygulama dağıtımını açıklar, tanımlayıcı dağıtım özellikleri yükleme veya uygulama belirtme çevrimiçi modu gibi ayarları ve konumları, güncelleştirme ve ilgili [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi.  
   
@@ -77,7 +75,7 @@ Oluşturur bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım
  [Görevleri](../msbuild/msbuild-tasks.md)   
  [GenerateApplicationManifest görevi](../msbuild/generateapplicationmanifest-task.md)   
  [SignFile görevi](../msbuild/signfile-task.md)   
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+ [Görev Başvurusu](../msbuild/msbuild-task-reference.md)
 
 
 

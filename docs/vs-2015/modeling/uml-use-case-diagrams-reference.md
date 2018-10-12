@@ -1,7 +1,7 @@
 ---
 title: 'UML Kullanım durumu diyagramları: Başvuru | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2bc0d23a1404925183af00ab710a422639e51654
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9fbdf85b3177b88e1a7e97f3cbcd4f901961958d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690401"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256314"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>UML Kullanım Durumu Diyagramları: Başvuru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [UML Kullanım durumu diyagramları: başvuru](https://docs.microsoft.com/visualstudio/modeling/uml-use-case-diagrams-reference).  
-  
 Visual Studio'da bir *kullanım örneği diyagramı* kullanan uygulama ya da sistemin ve onunla neler özetler. Bir UML Kullanım durumu diyagramı oluşturmak için **mimarisi** menüsünü tıklatın **yeni UML veya katman diyagramı**.  
   
  Bir kullanım durumu diyagramı, kullanıcı gereksinimlerini açıklaması bir odak olarak görev yapar. Bu gereksinimler, kullanıcılar ve ana bileşenleri arasındaki ilişkileri açıklar. Ayrıntılı gereksinimler tanımlamaz; Bunlar ayrı diyagramları veya her kullanım örneğine bağlanabilen belgelerde açıklanabilir. Kullanım örneği diyagramları anlamanıza, tartışın ve kullanıcılarınızın ihtiyaçlarını nasıl yardımcı olabileceği hakkında daha fazla bilgi için bkz: [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).  
@@ -49,7 +47,7 @@ Visual Studio'da bir *kullanım örneği diyagramı* kullanan uygulama ya da sis
 ### <a name="actors-use-cases-and-subsystems"></a>Aktörleri kullanım örnekleri ve alt sistemlerin  
  ![Bir kullanım durumu diyagramı öğeleri](../modeling/media/uml-ucovactor.png "UML_UCOvActor")  
   
-|**Şekil**|**Öğesi**|**Açıklama ve ana özellikleri**|  
+|**Şekil**|**Öğe**|**Açıklama ve ana özellikleri**|  
 |---------------|-----------------|-----------------------------------------|  
 |1.|**Aktör**|Bir kullanıcı, kuruluş veya uygulama ya da sistemin ile etkileşime giren bir dış sistem temsil eder. Bir aktör türü türüdür.<br /><br /> -   **Görüntü yolu** -varsayılan aktör simge yerine kullanılması gereken bir görüntü dosyasının yolu. Simgesi, Visual Studio projesi içinde bir kaynak dosyası olmalıdır.|  
 |2|**Kullanım örneği**|Belirli bir hedefin takip içinde bir veya daha fazla aktör tarafından gerçekleştirilen eylemleri gösterir. Kullanım örneği, türü türüdür.<br /><br /> -   **Konular** -alt kullanım örneği göründüğü.|  
@@ -59,7 +57,7 @@ Visual Studio'da bir *kullanım örneği diyagramı* kullanan uygulama ya da sis
 ### <a name="structuring-use-cases"></a>Kullanım örnekleri yapılandırma  
  ![İle birlikte kullanım örnekleri, genişletme ve Genelleştirme](../modeling/media/uml-ucovstructure.png "UML_UCOvStructure")  
   
-|Şekil|**Öğesi**|Açıklama|  
+|Şekil|**Öğe**|Açıklama|  
 |-----------|-----------------|-----------------|  
 |5|**İçerir**|Dahil olmak üzere bir kullanım örneği çağrıları veya dahil edilen bir çağırır. Ekleme, bir kullanım durumu daha küçük adımlara nasıl ayrıldığını göstermek için kullanılır. Dahil olan kullanım ok ucu durumdur.<br /><br /> Diyagram adımlarının sırasını göstermez dikkat edin. Bu ayrıntıları açıklamak için bir etkinlik diyagramı, sıralı diyagram veya başka bir belgeye kullanabilirsiniz.|  
 |6|**Genişletme**|Genişletme bir kullanım örneği, hedefler ve adımları genişletilmiş kullanım örneğine ekler. Uzantılar yalnızca belirli koşullar altında çalışır. Genişletilmiş kullanım örneğine ok ucu ' dir.<br /><br /> Diyagram uzantısı altında uygulandığı tam koşullar göstermez dikkat edin: bunları yorum veya diğer belge kaydedebilirsiniz.|  
@@ -75,7 +73,7 @@ Visual Studio'da bir *kullanım örneği diyagramı* kullanan uygulama ya da sis
  [UML sıralı diyagramlar: başvuru](../modeling/uml-sequence-diagrams-reference.md)   
  [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)   
  [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)   
- [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)
+ [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)
 
 
 

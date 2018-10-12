@@ -1,7 +1,7 @@
 ---
 title: Ayrıştırılmış kodu komut listesi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6834bc8f6c9bc3aacb95ae3705195fde32c4d6cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4cbdc3ee566135fe86301deefe1e8be8db431f9f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689836"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256665"
 ---
 # <a name="list-disassembly-command"></a>Ayrıştırılmış Kodu Listele Komutu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ayrıştırılmış kodu Listele komutu](https://docs.microsoft.com/visualstudio/ide/reference/list-disassembly-command).  
-  
   
 Hata ayıklama işlemini başlatır ve hataların nasıl işleneceğini belirtmenizi sağlar.  
   

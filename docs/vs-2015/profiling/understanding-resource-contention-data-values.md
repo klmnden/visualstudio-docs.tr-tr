@@ -1,7 +1,7 @@
 ---
 title: Kaynak çakışması veri değerlerini anlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10c06805db7ef817421f7c9f85e316af8d4b5b35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54f8c7a545e0517c9d27dc32b68428e078cdfd40
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692096"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263243"
 ---
 # <a name="understanding-resource-contention-data-values"></a>Kaynak Çakışması Veri Değerlerini Anlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [anlama kaynak çakışması veri değerlerini](https://docs.microsoft.com/visualstudio/profiling/understanding-resource-contention-data-values).  
-  
 Kaynak Çekişme profil oluşturma, paylaşılan bir kaynağa erişim için beklenecek rakip iş parçacığı bir uygulamada zorlanan ayrıntılı çağrı yığını bilgileri her zaman toplar.  
   
  **Gereksinimler**  
@@ -43,9 +41,9 @@ Kaynak Çekişme profil oluşturma, paylaşılan bir kaynağa erişim için bekl
   
  Kaynak çakışması rapor görünümleri Ayrıca, zaman içindeki tek tek Çekişme olayları Göster zaman çizelgesi grafikleri içerir ve belirli olay oluşturulan çağrı yığınları göster. Daha fazla bilgi için aşağıdaki konulardan birine bakın:  
   
--   [İş parçacığı Ayrıntıları görünümü](../profiling/thread-details-view-contention-data.md)  
+-   [İş Parçacığı Ayrıntıları Görünümü](../profiling/thread-details-view-contention-data.md)  
   
--   [Kaynak Ayrıntıları görünümü](../profiling/resource-details-view-contention-data.md)  
+-   [Kaynak Ayrıntıları Görünümü](../profiling/resource-details-view-contention-data.md)  
   
  Eşzamanlılık profil oluşturması ikinci modu hakkında daha fazla bilgi için bkz: [eşzamanlılık görselleştiricisi](../profiling/concurrency-visualizer.md).
 

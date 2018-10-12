@@ -1,7 +1,7 @@
 ---
 title: ClickOnce uygulamalarını yerelleştirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 285c1273114fe7f59b2ee0bb6bc612d18cbaf32e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7c3b8527bf96ee783de6ac975117bd4c797d426
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690526"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261475"
 ---
 # <a name="localizing-clickonce-applications"></a>ClickOnce Uygulamalarını Yerelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ClickOnce uygulamalarını yerelleştirme](https://docs.microsoft.com/visualstudio/deployment/localizing-clickonce-applications).  
-  
 Yerelleştirme, uygulamanızın belirli bir kültür için uygun hale getirme işlemidir. Bu işlem, kullanıcı arabirimi (UI) metni doğru tarih ve para birimi biçimlendirme, bir form üzerinde denetimleri boyutunu ayarlama kullanarak bir bölgeye özgü dile çevirme içerir ve gerekirse yansıtma denetimleri sağdan sola.  
   
  Bir veya daha fazla uydu derlemeleri oluşturma uygulama sonuçlarınızda yerelleştirme. Her derleme, kullanıcı Arabirimi dizeleri, resimler ve diğer kaynakları belirli bir kültüre özgü içerir. (Uygulamanızın ana yürütülebilir dosyanın uygulamanız için varsayılan kültürü dizeleri içerir.)  

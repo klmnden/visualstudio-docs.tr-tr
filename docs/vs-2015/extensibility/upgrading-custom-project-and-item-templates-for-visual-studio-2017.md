@@ -1,7 +1,7 @@
 ---
 title: Visual Studio "15" için özel Proje ve öğe şablonlarını yükseltme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 02c7b14051a41616ed1b98812d1f1b7762f7165e
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 7e44ea1c267d9fe57c3f32ddad876b412f69ea24
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126552"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221162"
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-15"></a>Visual Studio "15" için özel Proje ve öğe şablonlarını yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [özel Proje ve öğe şablonlarını yükseltme Visual Studio için ](https://docs.microsoft.com/visualstudio/extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017).  
-  
 Başlangıç Visual Studio "15" Preview 4, Visual Studio bir .vsix veya bir. msi'nin yüklenmiş proje ve öğe şablonlarını bulduğu şeklimiz değişiyor. Özel proje veya öğe şablonları kullanan uzantıları sahipseniz, uzantılarınız güncelleştirmeniz gerekiyor. Ne yapmanız gerekir, bu konuda açıklanmaktadır.  
   
  Bu değişiklik, yalnızca Visual Studio "15" etkiler. Visual Studio'nun önceki sürümlerini etkilemez.  

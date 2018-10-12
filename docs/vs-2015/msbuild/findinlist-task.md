@@ -1,7 +1,7 @@
 ---
 title: Findınlist görevi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a66ae638363586d456b21d62d894e68d8969264
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4a9d6a1fc6dbf8f160400ffae10a4a5fb355f3d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687864"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206810"
 ---
 # <a name="findinlist-task"></a>FindInList Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Findınlist görevi](https://docs.microsoft.com/visualstudio/msbuild/findinlist-task).  
-  
   
 Belirtilen bir listede eşleşen itemspec sahip bir öğe bulur.  
   
@@ -54,7 +52,7 @@ Belirtilen bir listede eşleşen itemspec sahip bir öğe bulur.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görevleri](../msbuild/msbuild-tasks.md)   
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+ [Görev Başvurusu](../msbuild/msbuild-task-reference.md)
 
 
 

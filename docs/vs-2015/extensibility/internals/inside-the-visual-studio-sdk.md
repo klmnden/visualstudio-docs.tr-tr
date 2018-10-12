@@ -1,7 +1,7 @@
 ---
 title: Visual Studio SDK'sı içindeki | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf54468618e12abdd29921677687201f9840a70c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d22e5c1384e4b24bd3b05cb868a40cede19ba1f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631118"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214714"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Visual Studio SDK’nın İçinde
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [içinde Visual Studio SDK](https://docs.microsoft.com/visualstudio/extensibility/internals/inside-the-visual-studio-sdk).  
-  
 Bu bölüm, Visual Studio mimari, bileşenleri, hizmetleri, şemalar, yardımcı programlar ve benzeri gibi Visual Studio uzantıları hakkında ayrıntılı bilgi sağlar.  
   
 ## <a name="extensibility-architecture"></a>Genişletilebilirlik mimarisi  
@@ -115,7 +113,7 @@ Visual Studio mimari genelleştirilmiş görünümü
 ## <a name="visual-studio-services"></a>Visual Studio Hizmetleri  
  Bir hizmet arabirimleri tüketmeye bileşenleri için belirli bir kümesini sağlar. Visual Studio uzantıları dahil olmak üzere tüm bileşenleri tarafından kullanılabilecek Hizmetleri kümesi sağlar. Örneğin, araç pencerelerini gösterilecek veya dinamik olarak gizli Yardım, durum çubuğu veya UI olayları erişmesini sağlamak Visual Studio hizmetleri sağlar. Visual Studio Düzenleyicisi, düzenleyici uzantıları tarafından içe aktarılabilir hizmetleri de sağlar. Daha fazla bilgi için [kullanma ve sağlama Hizmetleri](../../extensibility/using-and-providing-services.md).  
   
-## <a name="debugger"></a>Hata ayıklayıcı  
+## <a name="debugger"></a>Hata Ayıklayıcısı  
  Hata ayıklayıcı, dile özgü hata ayıklama bileşenleri için kullanıcı arabirimidir. Yeni bir dil hizmeti oluşturduysanız, hata ayıklayıcıya için belirli hata ayıklama altyapısı oluşturmak gerekir. Daha fazla bilgi için [Visual Studio hata ayıklayıcı genişletilebilirliği](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  
   
 ## <a name="source-control"></a>Kaynak Denetimi  

@@ -1,7 +1,7 @@
 ---
 title: 'Öğretici 3: bir eşleştirme oyunu oluşturun | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 00484f4cefe196cc26dcb13aadb882c23f1f9e71
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e8742924e1693a79268d6a35bc266caf5c5f32ec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687798"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259106"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Öğretici 3: eşleme oyunu oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Tutorial 3: Create a Matching Game](https://docs.microsoft.com/visualstudio/ide/tutorial-3-create-a-matching-game).  
-  
 Bu öğreticide, oyuncunun gizli simge çiftlerini eşleştirmesi gereken bir eşleştirme oyunu oluşturuyorsunuz. Aşağıdakilerin nasıl yapıldığını öğreneceksiniz:  
   
 -   Store simgeler gibi nesneleri bir `List` nesne.  

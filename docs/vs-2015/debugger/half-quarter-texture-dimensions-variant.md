@@ -1,7 +1,7 @@
 ---
 title: Yarı Çeyrek doku boyutları çeşidi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f42a6786fc378379ca446b704ac8159b8979bf08
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c61d2ab349a245f4720c69479519c54cc078f882
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695365"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228513"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Yarı/Çeyrek doku boyutları çeşidi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yarı Çeyrek doku boyutları değişken](https://docs.microsoft.com/visualstudio/debugger/graphics/half-quarter-texture-dimensions-variant).  
-  
 Doku boyutlarını hedefleri işlenmeyebilir dokular üzerinde azaltır.  
   
 ## <a name="interpretation"></a>Yorumu  

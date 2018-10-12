@@ -1,7 +1,7 @@
 ---
 title: İş Akışı Tasarımcısı ile uygulama geliştirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 6a010a0df75e683ad26ac0ca297a0ab817bd22cd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 71cde900802543a21a20bc02e95bcfedc50d5541
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628950"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259161"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>İş Akışı Tasarımcısı ile uygulama geliştirme
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] Bir görsel tasarımcı ve grafik oluşturma ve hata ayıklama için hata ayıklayıcı [!INCLUDE[wf](../includes/wf-md.md)] uygulamalarda [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] barındırılan [!INCLUDE[vs2010](../includes/vs2010-md.md)] geliştirme ortamı. Bir bileşik iş akışı uygulaması, etkinlik kitaplığı oluşturma olanak tanır veya [!INCLUDE[indigo1](../includes/indigo1-md.md)] hizmet şablonları ve etkinlik tasarımcıları kullanarak. [!INCLUDE[crabout](../includes/crabout-md.md)] İş akışları için bkz: [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  

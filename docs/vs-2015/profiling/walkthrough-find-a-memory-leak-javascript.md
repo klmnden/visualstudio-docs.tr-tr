@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: Bellek sızıntısını (JavaScript) bulma | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 242dd78d7110a36e0c8baf4d1ea1e1a7f323a1c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7feaa8629078be9e5e7a915fe3c09a9599a8f292
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695715"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234201"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>İzlenecek yol: Bellek sızıntısını bulma (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [izlenecek yol: bir bellek sızıntısını bulma (JavaScript)](https://docs.microsoft.com/visualstudio/profiling/walkthrough-find-a-memory-leak-javascript).  
-  
 Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Bu izlenecek yol, tanımlamak ve JavaScript bellek Çözümleyicisi'ni kullanarak bir basit bir bellek sorunu düzeltme sürecinde yol gösterir. JavaScript bellek Çözümleyicisi, JavaScript kullanarak Windows için oluşturulan Visual Studio için Windows Store uygulamalarında kullanılabilir. Bu senaryoda, hatalı oluşturulmuş aynı hızda öğelerin disposing yerine bellekte DOM öğeleri korunur bir uygulama oluşturun.  
@@ -294,7 +292,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
      ![Anlık görüntüleri gösteren sabit bir bellek sızıntısı](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [JavaScript bellek](../profiling/javascript-memory.md)
+ [JavaScript Belleği](../profiling/javascript-memory.md)
 
 
 

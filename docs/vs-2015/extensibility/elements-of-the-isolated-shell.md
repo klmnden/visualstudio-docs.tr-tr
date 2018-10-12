@@ -1,7 +1,7 @@
 ---
 title: Yalıtılmış kabuğun öğeleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9edba9d02b0c02321cd468cdc75630be92d53fe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c051425f2d3ae131362c2d95494ed0edbef5353e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689910"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246057"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Yalıtılmış kabuğun öğeleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yalıtılmış kabuğun öğeleri](https://docs.microsoft.com/visualstudio/extensibility/elements-of-the-isolated-shell).  
-  
 Kayıt defteri ayarları, çalışma zamanı ayarlarını ve uygulama giriş noktası, yalıtılmış Kabuk uygulaması ve kendi .vsct, .pkgdef, and.pkgundef dosyaları değiştirebilirsiniz.  
   
 ## <a name="registry-settings"></a>Kayıt defteri ayarları  

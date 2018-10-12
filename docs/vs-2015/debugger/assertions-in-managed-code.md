@@ -1,7 +1,7 @@
 ---
 title: Yönetilen koddaki onaylar | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 08cdbcde693655997fd980c018935a2b1c6df768
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5cd62b5cc5eabd731e5ad398cbb9ddbe60db073
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684300"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219121"
 ---
 # <a name="assertions-in-managed-code"></a>Yönetilen Koddaki Onaylar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yönetilen koddaki onaylar](https://docs.microsoft.com/visualstudio/debugger/assertions-in-managed-code).  
-  
 Onaylama işlemi, bir veya `Assert` ifadesi bağımsız değişkeni olarak belirlediğiniz bir koşulu sınar `Assert` deyimi. Koşul true olarak değerlendirilirse, herhangi bir işlem gerçekleşir. Koşul false olarak değerlendirilirse, onaylama işlemi başarısız olur. Hata ayıklama derlemesi ile çalıştırıyorsanız, programınız Kesme moduna girer.  
   
 ##  <a name="BKMK_In_this_topic"></a> Bu konudaki  
@@ -232,7 +230,7 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
  [İzleme ve İşaretleme uygulamaları](http://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)   
  [Nasıl yapılır: izleme ve hata ayıklama ile koşullu derleme](http://msdn.microsoft.com/library/56d051c3-012c-42c1-9a58-7270edc624aa)   
  [C#, F # ve Visual Basic proje türleri](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)
+ [Yönetilen Kodda Hata Ayıklama](../debugger/debugging-managed-code.md)
 
 
 
