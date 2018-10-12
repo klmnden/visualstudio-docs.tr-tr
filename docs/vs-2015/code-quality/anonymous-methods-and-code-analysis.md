@@ -1,7 +1,7 @@
 ---
 title: Anonim metotlar ve kod çözümleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8a65c80f3198fe4218c2f2a6c3543f2e1e299f22
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 73ff8dfca29f1ed9896462725886baa87e729100
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687163"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280171"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Anonim Metotlar ve Kod Çözümleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [anonim metotlar ve kod çözümleme](https://docs.microsoft.com/visualstudio/code-quality/anonymous-methods-and-code-analysis).  
-  
 Bir *anonim yöntem* ada sahip bir yöntemdir. Anonim yöntemler, en sık temsilcinin parametre olarak bir kod bloğu geçirmek için kullanılır.  
   
  Bu konu, Kod Analizi uyarıları ve anonim yöntemler ile ilişkili olan ölçümleri nasıl işlediğini açıklar.  
@@ -160,7 +158,7 @@ class Class
  Bu sorun iki yoldan biriyle getirebilirler. Bildirebilirsiniz **anonymousMethod** ortak bir oluşturucuda, tüm oluşturucular zinciri. Veya tüm oluşturucular tarafından çağrılan başlatma yöntemini bildirebilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönetilen kod kalitesini analiz etme](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
+ [Yönetilen Kod Kalitesini Analiz Etme](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
 
 
 

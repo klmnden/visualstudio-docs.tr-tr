@@ -1,7 +1,7 @@
 ---
 title: ThreadOn ve ThreadOff | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a6b327905fd844679263eabf0fffb832ee81c73
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29bb94664fce8d7adf282a50e94eba39b232a0e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695333"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249112"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn ve ThreadOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ThreadOn ve ThreadOff](https://docs.microsoft.com/visualstudio/profiling/threadon-and-threadoff).  
-  
 VSPerfCmd.exe **ThreadOff** ve **ThreadOn** alt komutları şüpheli işlem yöntemini kullanan komut satırı profil oluşturma oturumunda kullanılabilir yalnızca. **ThreadOff** ve **ThreadOn** duraklatma ve sürdürme belirtilen iş parçacığı profil oluşturma. **ThreadOff** iş parçacığı profil oluşturmayı durdurur ve **ThreadOn** iş parçacığı profil oluşturmaya başlar.  
   
  Çoğu durumda, belirttiğiniz **ThreadOn** veya **ThreadOff** yalnızca bir VSPerfCmd.exe seçenek olarak komut satırı, ancak aynı zamanda ile birleştirilebilir **GlobalOn**, **GlobalOff**, **ProcessOn**, ve **ProcessOff** alt komutları.  
@@ -82,7 +80,7 @@ VSPerfCmd /Shutdown
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Bağımsız uygulamaların profilini oluşturma](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [ASP.NET Web uygulamalarında profil oluşturma](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profil oluşturma hizmetleri](../profiling/command-line-profiling-of-services.md)
+ [Profil Oluşturma Hizmetleri](../profiling/command-line-profiling-of-services.md)
 
 
 

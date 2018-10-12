@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: Görselleştiriciyi hata ayıklama ve Test | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9972951b1c5064fcc0582909976a234158ea096
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dba924f94da967cd19d63982ee2f6eb93384d0a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692589"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237256"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Nasıl Yapılır: Görselleştiriciyi Test Etme ve Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: Görselleştiriciyi hata ayıklama ve Test](https://docs.microsoft.com/visualstudio/debugger/how-to-test-and-debug-a-visualizer).  
-  
 Görselleştirici, hata ayıklama ve test için ihtiyaç duyduğunuz bir kez yazdığınız.  
   
  Görselleştiriciyi sınamak için bir Visual Studio yükleyerek ve bir hata ayıklayıcı penceresinde çağırma yoludur. (Bkz [nasıl yapılır: Görselleştiriciyi yükleme](../debugger/how-to-install-a-visualizer.md).) Bunu yaparsanız, ekleyin ve hata ayıklayıcı ilk örneğinde çalışan görselleştiricisi hata ayıklamak için Visual Studio'nun ikinci bir örneğini kullanmanız gerekir.  
@@ -66,7 +64,7 @@ Görselleştirici, hata ayıklama ve test için ihtiyaç duyduğunuz bir kez yaz
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: Görselleştiriciyi C# ' de yazma](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
  [Nasıl yapılır: Görselleştiriciyi yükleme](../debugger/how-to-install-a-visualizer.md)   
- [Özel Görselleştiriciler oluşturma](../debugger/create-custom-visualizers-of-data.md)
+ [Özel Görselleştirici Oluşturma](../debugger/create-custom-visualizers-of-data.md)
 
 
 

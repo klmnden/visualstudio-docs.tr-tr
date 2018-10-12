@@ -1,7 +1,7 @@
 ---
 title: Komut satırından Profiler örnekleme yöntemini kullanarak ASP.NET Web uygulamaları için uygulama istatistikleri toplama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4353308ce42ad61fdc53732d1a077f510ed2c1c
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 004f09db73c1eaa977d64b8bafb376a60a45a7a0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881579"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277894"
 ---
 # <a name="collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line"></a>Komut Satırından Profil Oluşturucu Örnekleme Yöntemini Kullanarak ASP.NET Web Uygulamaları için Uygulama İstatistikleri Toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [komut satırından Profiler örnekleme yöntemini kullanarak ASP.NET Web uygulamaları için uygulama istatistikleri toplama](https://docs.microsoft.com/visualstudio/profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line).  
-  
 Bu bölümdeki yordamları ve kullanarak bir ASP.NET Web uygulaması için performans istatistikleri toplama seçeneklerini açıklar **VSPerfASPNETCmd** ve **VSPerfCmd** komut satırı aracı ve örnekleme profili oluşturma yöntemi.  
   
 > [!NOTE]

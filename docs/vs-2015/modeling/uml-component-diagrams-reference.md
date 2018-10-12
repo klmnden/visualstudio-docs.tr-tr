@@ -1,7 +1,7 @@
 ---
 title: 'UML Bileşen Diyagramları: Başvuru | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 38
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f628ebfa84246c6d991543352f4de36a51cc7fbf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b99188aa069a830d17e31733ad20b0ae727d63f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692571"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206747"
 ---
 # <a name="uml-component-diagrams-reference"></a>UML Bileşen Diyagramları: Başvuru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [UML Bileşen Diyagramları: başvuru](https://docs.microsoft.com/visualstudio/modeling/uml-component-diagrams-reference).  
-  
 Visual Studio'da bir *bileşen diyagramı* bir yazılım sistemi için bir tasarım parçaları gösterilmektedir. Sistem ve bu parçaların sağlayan ve tüketen arabirimler aracılığıyla hizmet davranışı üst düzey yapısını görselleştirin bir bileşen diyagramı yardımcı olur. Bir UML bileşen diyagramı oluşturmak için **mimarisi** menüsünü tıklatın **yeni UML veya katman diyagramı**.  
   
  Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -50,7 +48,7 @@ Visual Studio'da bir *bileşen diyagramı* bir yazılım sistemi için bir tasar
   
  ![Bileşen diyagramları üzerinde kullanılan öğeleri](../modeling/media/uml-compovreading.png "UML_CompOvReading")  
   
-|**Şekil**|**Öğesi**|**Açıklama ve ana özellikleri**|  
+|**Şekil**|**Öğe**|**Açıklama ve ana özellikleri**|  
 |---------------|-----------------|-----------------------------------------|  
 |1.|**Bileşen**|Sistem işlevleri yeniden kullanılabilir bir parçası. Bir bileşen sağlayan ve tüketen arabirimler yoluyla davranış ve diğer bileşenleri kullanabilirsiniz.<br /><br /> Gizleme veya genişletme/daraltma denetimi (9) kullanarak bir bileşenin iç parçalarını gösterme.<br /><br /> Bir bileşeni, sınıf türüdür.<br /><br /> -   **Dolaylı olarak Örneklendirilmiş**. TRUE ise (varsayılan), bileşeni yalnızca bir tasarım yapıt bulunmaktadır. Çalışma zamanında, yalnızca bölümleri mevcuttur.|  
 |2|**Sağlanan arabirim bağlantı noktası**|Bir bileşenin uyguladığı ve diğer bileşenler veya dış sistemler kullanabileceğiniz çağıran ya da Grup iletileri gösterir. Bir bağlantı noktası, bir arabirim türü olarak olan bir bileşenin bir özelliktir.|  
@@ -70,7 +68,7 @@ Visual Studio'da bir *bileşen diyagramı* bir yazılım sistemi için bir tasar
  [UML Kullanım durumu diyagramları: başvuru](../modeling/uml-use-case-diagrams-reference.md)   
  [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)   
  [UML etkinlik diyagramları: başvuru](../modeling/uml-activity-diagrams-reference.md)   
- [UML sıralı diyagramlar: başvuru](../modeling/uml-sequence-diagrams-reference.md)
+ [UML Sıralı Diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)
 
 
 

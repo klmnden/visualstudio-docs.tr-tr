@@ -1,7 +1,7 @@
 ---
 title: Profiler komut satırını kullanarak .NET Framework hizmetlerinden bellek verileri toplama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ee88087c96b05854359a7e6bcfd95b6c09925ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 303e740aa753536a9c15543a03712e7480f41e0d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632546"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269628"
 ---
 # <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Profil Oluşturucu Komut Satırını Kullanarak .NET Framework Hizmetlerinden Bellek Verileri Toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Profiler komut satırını kullanarak .NET Framework hizmetlerinden bellek verileri toplama](https://docs.microsoft.com/visualstudio/profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line).  
-  
 Bu bölümde yordamları ve bellek ayırma ve nesne yaşam süresi verilerini toplamak için seçenekleri açıklar bir [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] komut satırından örnekleme metodu kullanılarak hizmet.  
   
 ## <a name="common-tasks"></a>Ortak Görevler  
@@ -54,10 +52,10 @@ Bu bölümde yordamları ve bellek ayırma ve nesne yaşam süresi verilerini to
 |**ASP.NET Web uygulamalarının profilini oluşturma**|-   [Bellek verileri toplama](../profiling/collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md)|  
   
 ### <a name="analyzing-net-memory-data-views-and-reports"></a>.NET bellek verileri analiz etme, görünümleri ve raporlar  
- [.NET bellek verisi görünümleri](../profiling/dotnet-memory-data-views.md)  
+ [.NET Bellek Verisi Görünümleri](../profiling/dotnet-memory-data-views.md)  
   
 ## <a name="reference"></a>Başvuru  
- [Komut satırı profil araçları başvurusu](../profiling/command-line-profiling-tools-reference.md)
+ [Komut Satırı Profil Oluşturma Araçları Başvurusu](../profiling/command-line-profiling-tools-reference.md)
 
 
 

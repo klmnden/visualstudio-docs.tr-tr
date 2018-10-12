@@ -1,7 +1,7 @@
 ---
 title: StateMachine etkinlik Tasarımcısı | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: steved0x
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 1f768142ce3cf71b254e6740a87895f5626372fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 18f7cc5eb88265de1250e4a06f78b13bcc419fb7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630660"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301411"
 ---
 # <a name="statemachine-activity-designer"></a>StateMachine Etkinlik Tasarımcısı
 <xref:System.Activities.Statements.StateMachine> Etkinliği durumları koleksiyonunu içeren ve tanıdık durum makine paradigma kullanarak iş akışları modeller.  

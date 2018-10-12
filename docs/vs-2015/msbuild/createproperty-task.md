@@ -1,7 +1,7 @@
 ---
 title: CreateProperty görevi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 961f034f2bb508175d258259097f3be25e2a0b11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c18288e5088871703605da4915786486e2e864b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687732"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267663"
 ---
 # <a name="createproperty-task"></a>CreateProperty Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [CreateProperty görevi](https://docs.microsoft.com/visualstudio/msbuild/createproperty-task).  
-  
   
 Özellikler, geçirilen değerlerle doldurur. Bu, bir özellik veya dize diğerine kopyalanması için değerler sağlar.  
   
@@ -79,7 +77,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [CreateProperty görevi](ht
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
- [Görevleri](../msbuild/msbuild-tasks.md)
+ [Görevler](../msbuild/msbuild-tasks.md)
 
 
 

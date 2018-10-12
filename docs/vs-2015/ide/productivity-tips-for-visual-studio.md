@@ -1,7 +1,7 @@
 ---
 title: Visual Studio için üretkenlik ipuçları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,25 +14,23 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 05bac3fe7d5272674b141b15459d2d21c521cc0f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ced1b47c0e5b9d50fb8752dc79ab516ca682bd0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634256"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173336"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio için Üretkenlik İpuçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio için üretkenlik ipuçları](https://docs.microsoft.com/visualstudio/ide/productivity-tips-for-visual-studio).  
-  
 Bu ipuçlarını izleyerek, daha hızlı ve verimli bir şekilde yazma gidin ve kodunuzu Visual Studio'da hata ayıklama. Ortak klavye kısayolları hakkında daha fazla bilgi için bkz. [ipuçları ve püf noktaları](../ide/tips-and-tricks-for-visual-studio.md). Daha kapsamlı bir liste için bkz. [tanımlama ve özelleştirme klavye kısayolları](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) ve [varsayılan klavye kısayolları](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
   
  Bu konu aşağıdaki bölümleri içermektedir:  
   
  [Visual Studio araçlarına erişim](../ide/productivity-tips-for-visual-studio.md#BKMK_Access)  
   
- [Kod yazma](../ide/productivity-tips-for-visual-studio.md#BKMK_Writing)  
+ [Kod Yazma](../ide/productivity-tips-for-visual-studio.md#BKMK_Writing)  
   
  [Kodunuzun içinde gezinme](../ide/productivity-tips-for-visual-studio.md#BKMK_Navigating)  
   

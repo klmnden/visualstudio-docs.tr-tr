@@ -1,7 +1,7 @@
 ---
 title: Saydamlığından ~ SAK dosyalarının | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a11ed0972c403c4c3ea2a8b3f607135f12e9e315
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7dda375cb4657bc6fcc2089341600611b370e52b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684508"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216105"
 ---
 # <a name="elimination-of-sak-files"></a>~SAK Dosyalarının Ortadan Kaldırılması
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Saydamlığından ~ SAK dosyalarının](https://docs.microsoft.com/visualstudio/extensibility/internals/elimination-of-tilde-sak-files).  
-  
 Kaynak Denetimi Eklentisi API 1.2, ~ SAK dosyalarının, özellik bayrakları ve kaynak denetimi eklentisi MSSCCPRJ dosyasını ve paylaşımlı kullanıma Almalarla destekleyip desteklemediğini algılamak yeni işlevleri tarafından değiştirildi.  
   
 ## <a name="sak-files"></a>~ SAK dosyalarının  
@@ -48,7 +46,7 @@ Kaynak Denetimi Eklentisi API 1.2, ~ SAK dosyalarının, özellik bayrakları ve
 ## <a name="new-functions"></a>Yeni işlevleri  
  [SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md)  
   
- [Sccısmulticheckoutenabled](../../extensibility/sccismulticheckoutenabled-function.md)  
+ [SccIsMultiCheckoutEnabled](../../extensibility/sccismulticheckoutenabled-function.md)  
   
  Kaynak Denetimi Eklentisi birden çok (paylaşılan) kullanıma destekler ve ardından bunu bildirir, `SCC_CAP_MULTICHECKOUT` yetenek ve uygular `SccIsMultiCheckOutEnabled` işlevi. Kaynak denetimli projelerin herhangi bir kullanıma alma işlemi oluştuğunda, bu işlev çağrılır.  
   

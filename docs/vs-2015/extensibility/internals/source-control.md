@@ -1,7 +1,7 @@
 ---
 title: Kaynak denetimi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,22 +15,20 @@ ms.assetid: 13d5728c-4e28-42e4-944a-a565b1765ef8
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93b00df779d5b650de59c91196b8fc004efa6994
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 875ee92c91081b2df097e96bf833ea2fcf775f6d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686634"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247520"
 ---
 # <a name="source-control"></a>Kaynak Denetimi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [kaynak denetimi](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control).  
-  
 Bu bölümde, tümleşik bir özelliği olarak kaynak denetimi uygulama seçenekleri ele alınmaktadır [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], kaynak denetimi eklentisi veya kaynak denetimi VSPackage'ı üzerinden.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Temel bileşenler](../../extensibility/internals/source-control-integration-essentials.md)  
+ [Temel Bileşenler](../../extensibility/internals/source-control-integration-essentials.md)  
  Kaynak denetimi ile çalışmaya başlamak için gereken önemli bilgiler sunulmuştur.  
   
  [Genel bakış](../../extensibility/internals/source-control-integration-overview.md)  

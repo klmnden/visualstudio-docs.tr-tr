@@ -1,7 +1,7 @@
 ---
 title: Metin şablonu dönüştürme süreci | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c7b39517e5e4c88bbefe6bf378e1dffd3c233872
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 146d391cc843291b79dc34af29851cfed4c80a46
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693549"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203781"
 ---
 # <a name="the-text-template-transformation-process"></a>Metin Şablonu Dönüştürme Süreci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [metin şablonu dönüştürme süreci](https://docs.microsoft.com/visualstudio/modeling/the-text-template-transformation-process).  
-  
 Metin şablonu dönüştürme süreci, bir metin şablonu dosyasını girdi olarak alır ve çıktı olarak yeni bir metin dosyası oluşturur. Örneğin, Visual Basic veya C# kodu oluşturmak için metin şablonlarını kullanabilir veya bir HTML raporu oluşturabilirsiniz.  
   
  Üç bileşeni, bu işlemde bölümü yararlanın: altyapısı, konak ve yönerge işlemcilerine. Altyapı işlemi denetler; Çıkış dosyası üretmek için konak ve yönerge işlemcisinin ile etkileşime girer. Ana bilgisayar dosyaları ve derlemeleri bulma gibi ortamı, herhangi bir etkileşim sağlar. Yönerge işlemcisini bir XML dosyasına veya bir veritabanından veri okuma gibi işlevler ekler.  

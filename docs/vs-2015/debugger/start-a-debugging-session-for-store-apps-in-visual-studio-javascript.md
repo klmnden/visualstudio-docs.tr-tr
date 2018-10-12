@@ -1,7 +1,7 @@
 ---
 title: (JavaScript) Visual Studio'da Store uygulamaları için hata ayıklama oturumu başlatma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9131c0e9a9b1b329a2c24d02e0988e68d701987b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6818383fd5da157359e74effc86c69d181b32be2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697323"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294989"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>(JavaScript) Visual Studio'da Store uygulamaları için hata ayıklama oturumu başlatma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [(JavaScript) Visual Studio'da Store uygulamaları için hata ayıklama oturumu başlatma](https://docs.microsoft.com/visualstudio/debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript).  
-  
 Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Bu konu, HTML5 ve JavaScript ile yazılan Windows Store uygulamaları için hata ayıklama oturumu başlatmak açıklar. Tek bir tuş vuruşu ile hata ayıklama başlayabilir veya hata ayıklama oturumu belirli senaryolar için yapılandırmak ve uygulamayı başlatmak için yol seçin.  
@@ -269,7 +267,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
  [Denetim yürütme hata ayıklama oturumunda (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)   
  [Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md)   
  [Tetikleme askıya alma, sürdürme ve arka plan olaylarını Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)   
- [Visual Studio'da uygulamalarının hatalarını ayıklama](../debugger/debug-store-apps-in-visual-studio.md)
+ [Visual Studio’da uygulamaların hatalarını ayıklama](../debugger/debug-store-apps-in-visual-studio.md)
 
 
 

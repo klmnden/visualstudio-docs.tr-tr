@@ -1,7 +1,7 @@
 ---
 title: Başvuru (programlı yakalama) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 70581d468c32964d7e081ec0ee4af3fe411b71b9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c68b196829b1ecf27732e325c6d2b402c720c94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688384"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230353"
 ---
 # <a name="reference-programmatic-capture"></a>Başvuru (Programlı Yakalama)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [başvuru (programlı yakalama)](https://docs.microsoft.com/visualstudio/debugger/graphics/reference-programmatic-capture).  
-  
 Grafik tanılama yakalama özelliklerini programlı yakalama bir API aracılığıyla programlı denetime destekler. Geçiş ve iletileri grafik tanılama baş üstü (baş yukarı Göster) eklemek, başlatmak ve grafik günlük dosyaları oluşturmak ve grafik bilgilerini yakalamak için bu API'yi kullanabilirsiniz.  
   
 ## <a name="programmatic-capture-apis"></a>Programlı yakalama API'leri  

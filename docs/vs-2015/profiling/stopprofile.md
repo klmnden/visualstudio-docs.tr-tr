@@ -1,7 +1,7 @@
 ---
 title: StopProfile | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 326ed9afa9d277babde5cda99ba5640f6d66bd98
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5d6b3777f29447cb6291cfabd8bcc5f5930587a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691104"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209150"
 ---
 # <a name="stopprofile"></a>StopProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [StopProfile](https://docs.microsoft.com/visualstudio/profiling/stopprofile).  
-  
 `StopProfile` İşlevi için belirtilen profil oluşturma düzeyi 0 (Kapalı) sayaç ayarlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -117,7 +115,7 @@ void ExerciseStopProfile()
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio Profiler API Başvurusu (yerel)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Visual Studio Profil Oluşturucu API Başvurusu (Yerel)](../profiling/visual-studio-profiler-api-reference-native.md)
 
 
 

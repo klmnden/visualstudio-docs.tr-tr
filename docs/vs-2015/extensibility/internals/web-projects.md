@@ -1,7 +1,7 @@
 ---
 title: Web projeleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,22 +15,20 @@ ms.assetid: d9c0329f-4b0b-4fda-8061-cce69f2f502d
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 307b8a2d9859d3924ae8b6975cd582ba2459c23c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 79fd2da19e7fcf77839292a63a9e472dbb2510a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691942"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232498"
 ---
 # <a name="web-projects"></a>Web Projeleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Web projeleri](https://docs.microsoft.com/visualstudio/extensibility/internals/web-projects).  
-  
 Web Proje sistemi, Web projeleri oluşturan bir proje sistemidir. Web projeleri sırayla Web uygulamaları oluşturun. Geleneksel programlama dilleri gibi kullanarak bir Web sayfası programlayabileceğiniz [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] veya [!INCLUDE[csprcs](../../includes/csprcs-md.md)]toplamak ve kullanıcıdan bilgi işlem, bir veritabanında saklamak ve benzeri için. Web sayfaları ile ilişkili kod akıllı Web sayfaları denir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Temel bileşenler](../../extensibility/internals/web-project-essentials.md)  
+ [Temel Bileşenler](../../extensibility/internals/web-project-essentials.md)  
  Önemli öğeleri sunan [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Web projeleri.  
   
  [Web Sitesi Desteği](../../extensibility/internals/web-site-support.md)  

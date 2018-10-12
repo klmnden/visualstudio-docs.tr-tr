@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: bir çözümde birden çok proje için yönetilen kod kural kümesi belirtme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 42b04eb88e6edee2d8250ac29a26f4cfe6562a29
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d2469491eeb5419c70e208bbf6e1ed7809657dbc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684364"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218705"
 ---
 # <a name="how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution"></a>Nasıl Yapılır: Bir Çözümde Birden Çok Proje İçin Yönetilen Kod Kural Kümesi Belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: belirtin yönetilen kod kural kümesi için bir çözümde birden çok proje](https://docs.microsoft.com/visualstudio/code-quality/how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution).  
-  
 Varsayılan olarak, Microsoft en az önerilen kurallar Kod Analizi bir çözümün tüm yönetilen projelere atanır *kural kümesi*. Proje Özellikleri iletişim kutusunda çözüm için bir çözüm atanmış olan kural kümeleri değiştirebilirsiniz.  
   
 > [!NOTE]

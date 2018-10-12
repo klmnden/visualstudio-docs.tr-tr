@@ -1,7 +1,7 @@
 ---
 title: Windows 8 ve Windows Server 2012 uygulamalarında performans araçları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8138129c928a02ed5fb6684bc6ee06282435860e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1e495f5f07e5db2214c7eca8bc2c21df253fa49e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776165"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195526"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 ve Windows Server 2012 uygulamalarında performans araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](https://docs.microsoft.com/visualstudio/profiling/performance-tools-on-windows-8-and-windows-server-2012-applications).  
-  
 Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özelliklerine şekilde Visual Studio performans araçları de yapılan önemli değişiklikler bu platformlarda veri toplama gerekli. Windows Store apps ayrıca yeni toplama teknikleri gerektirir. Bu konuda, Windows 8 ve Windows Server 2012 platformlarda değişiklikleri için performans araçları açıklanmaktadır.  
   
 > [!NOTE]

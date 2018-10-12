@@ -1,7 +1,7 @@
 ---
 title: Eski iş akışı etkinlikleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 7f661254b06174c12b4d7dece194e345ac0056bc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ff21a431e380a281ce1261215367b89c4ecf1a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688229"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205424"
 ---
 # <a name="legacy-workflow-activities"></a>Eski İş Akışı Etkinlikleri
 [!INCLUDE[wf](../includes/wf-md.md)] Varsayılan işlevler sağlayan denetim akışı koşulları, olay işleme, durum yönetimi ve iletişim için uygulamalar ve hizmetler ile etkinlik kümesini içerir. İş akışları tasarlarken tarafından sağlanan sistem tarafından sağlanan etkinlikler kullanabileceğiniz [!INCLUDE[wfd1](../includes/wfd1-md.md)], veya özel etkinliklerinizi oluşturabilirsiniz.  
@@ -83,10 +83,10 @@ ms.locfileid: "42688229"
  [Nasıl Yapılır: PolicyActivity Kural Kümesi Oluşturma (Eski)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)  
  PolicyActivity kural kümesi oluşturma adımları gösterilmektedir.  
   
- [Nasıl yapılır: bir WCF sözleşmesi işlemi (eski) uygulama](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)  
+ [Nasıl Yapılır: WCF Bütünleştirme İşlemi Gerçekleştirme (Eski)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)  
  Uygulamak için bu adımları gösteren bir [!INCLUDE[indigo2](../includes/indigo2-md.md)] sözleşme işlemi.  
   
- [Nasıl yapılır: bir WCF sözleşmesi işlemi (eski) Çağır](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)  
+ [Nasıl Yapılır: WCF Bütünleştirme İşlemi Çağırma (Eski)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)  
  Çağrılacak adımları gösteren bir [!INCLUDE[indigo2](../includes/indigo2-md.md)] sözleşme işlemi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

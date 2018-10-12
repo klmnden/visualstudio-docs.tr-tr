@@ -1,7 +1,7 @@
 ---
 title: Visual Studio'da eşitlenen ayarlar | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1e0facac569671c880004d1fc1a7aa29487e7926
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29e962192644d605f83504fb14df10398e1237ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688010"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228403"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Visual Studio'da Eşitlenmiş Ayarlar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio'da ayarlarınızı eşitleme](https://docs.microsoft.com/visualstudio/ide/synchronized-settings-in-visual-studio).  
-  
 Visual Studio için birden çok bilgisayarda oturum açmak için aynı kişiselleştirme hesabı kullandığınızda, varsayılan olarak ayarlarınız tüm bilgisayarlarda eşitlenir.  
   
 ## <a name="synchronized-settings"></a>Eşitlenmiş ayarlar  
@@ -65,7 +63,7 @@ Visual Studio için birden çok bilgisayarda oturum açmak için aynı kişisell
 >  Ayarlar, Visual Studio 2015 ve Visual Studio 2013 arasında eşitlenmez. Visual Studio 2015'te, ilk açtığınızda, ayarlarınızı Visual Studio 2013'ten geçirilir, ancak Visual Studio 2013 için geri bundan sonra geçirilemezler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)
+ [IDE’yi Kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)
 
 
 

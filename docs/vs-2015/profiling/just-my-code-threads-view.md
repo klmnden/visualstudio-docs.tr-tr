@@ -1,7 +1,7 @@
 ---
 title: Yalnızca kendi kodum (iş parçacıkları görünümü) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be1c495a9bf3becc36f23508ac71f40b42bf7600
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64f08b9cfe7a0fd0d455d548f3685dbbea6160af
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687369"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296861"
 ---
 # <a name="just-my-code-threads-view"></a>Yalnızca Kendi Kodum (İş Parçacıkları Görünümü)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yalnızca benim kodum (iş parçacıkları görünümü)](https://docs.microsoft.com/visualstudio/profiling/just-my-code-threads-view).  
-  
 Bu seçeneği belirlerseniz, çağrı yığını, yalnızca kodunuzu artı çağrılan fonksiyonların bir seviyesini göstermek için filtre uygular.  
   
  Bu seçeneği etkinleştirilerek çağrı yığınının karmaşıklığını önemli ölçüde azaltan ve belki de belirli bir sorunu tanılamak daha kolay hale getirebilirsiniz.  

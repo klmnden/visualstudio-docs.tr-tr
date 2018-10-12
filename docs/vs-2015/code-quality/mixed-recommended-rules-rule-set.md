@@ -1,7 +1,7 @@
 ---
 title: Karışık önerilen kurallar kural kümesi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ccf58c04c266741350e834cedbfdeebf237c9f71
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf0fa74c80a570271e6fb5e92dbb2d3fc46f1551
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630641"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299409"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Karışık Önerilen Kurallar kural kümesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [karışık önerilen kurallar kural kümesi](https://docs.microsoft.com/visualstudio/code-quality/mixed-recommended-rules-rule-set).  
-  
 Microsoft karışık önerilen kurallar potansiyel güvenlik boşluklarını, uygulama kilitlenmesi ve diğer önemli mantık ve tasarım hataları gibi Common Language Runtime destekleyen C++ projeleriniz en yaygın ve kritik sorunlarına odaklanır. Common Language Runtime destekleyen C++ projeleriniz için oluşturduğunuz herhangi bir özel kural kümesi bu kural kümesini içermelidir. Bu kural Seti Visual Studio Professional sürümü ve üzeri sürümlerin yapılandırılması için tasarlanmıştır.  
   
 |Kural|Açıklama|  

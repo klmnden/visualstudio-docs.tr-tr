@@ -1,7 +1,7 @@
 ---
 title: ADO.NET kullanarak basit veri uygulaması oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e9ba21aa4cf5d2f11ba7aa24f095acaaea13924
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a38d92aa43056b3824b4d583ccd93f255b1439f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692030"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204316"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET kullanarak basit veri uygulaması oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ADO.NET kullanarak basit veri uygulaması oluşturma](https://docs.microsoft.com/visualstudio/data-tools/create-a-simple-data-application-by-using-adonet).  
-  
   
 Bir veritabanındaki verileri işleyen bir uygulama oluşturduğunuzda, bu tür bağlantı dizeleri tanımlama, veri ekleme ve saklı yordamları çalıştırma temel görevleri gerçekleştirin. Bu konuyu takip ederek, Visual C# veya Visual Basic ve ADO.NET kullanarak basit bir "veriler üzerinden formlar" Windows Forms uygulaması dahilinden bir veritabanıyla etkileşime nasıl bulabilir.  Tüm .NET veri teknolojilerini — LINQ to SQL ve Entity Framework veri kümeleri dahil olmak üzere; sonuç olarak, bu makalede gösterilen bu çok benzer adımları gerçekleştirin.  
   

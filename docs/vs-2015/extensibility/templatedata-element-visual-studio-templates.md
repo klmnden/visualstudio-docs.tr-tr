@@ -1,7 +1,7 @@
 ---
 title: TemplateData öğesi (Visual Studio şablonları) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: db17ec9b-bfdf-46b1-bbe7-5ccc140056e2
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 03825105f549030c05ac202f1e3601977adec7f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52ca9ada28f40beb26ce88c6dfcd42a170ea5010
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631895"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172360"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData Öğesi (Visual Studio Şablonları)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [TemplateData öğesi (Visual Studio şablonları)](https://docs.microsoft.com/visualstudio/extensibility/templatedata-element-visual-studio-templates).  
-  
 Şablonu kategorilere ayırır ve nasıl görüntülendiğini tanımlar **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.  
   
  \<VSTemplate >  
@@ -56,7 +54,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [TemplateData öğesi (Visu
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Adı](../extensibility/name-element-visual-studio-templates.md)|Gerekli öğe.<br /><br /> Ya da göründüğü gibi şablonunun adını belirtir. **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.|  
+|[Ad](../extensibility/name-element-visual-studio-templates.md)|Gerekli öğe.<br /><br /> Ya da göründüğü gibi şablonunun adını belirtir. **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.|  
 |[Açıklama](../extensibility/description-element-visual-studio-templates.md)|Gerekli öğe.<br /><br /> Şablonun açıklaması da içinde göründüğü gibi belirtir **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.|  
 |[Simgesi](../extensibility/icon-element-visual-studio-templates.md)|Gerekli öğe.<br /><br /> Yol ve dosya adı ya da görünür simge olarak hizmet veren bir görüntü dosyasının belirtir **yeni proje** veya **Yeni Öğe Ekle** şablon için bir iletişim kutusu.|  
 |[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|Gerekli öğe.<br /><br /> Belirtilen grubun altında görünmesi proje şablonu kategorilere ayırır **yeni proje** iletişim kutusu.|  

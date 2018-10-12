@@ -1,7 +1,7 @@
 ---
 title: Bağlantı noktası alma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 719da05cf3d408322480ed5a7edb1f20dd12fa89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 809757df7d3a69eaf82bcda9fce78a45cece4e70
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677455"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183072"
 ---
 # <a name="getting-a-port"></a>Bağlantı Noktası Alma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bağlantı noktası alma](https://docs.microsoft.com/visualstudio/extensibility/debugger/getting-a-port).  
-  
 Bir bağlantı noktası işlemleri çalıştırdığınız bir makine bağlantısını temsil eder. Bu makineyi, yerel veya uzak bir makinede olabilir (büyük olasılıkla çalışan Windows tabanlı olmayan bir işletim sistemi; bkz [bağlantı noktaları](../../extensibility/debugger/ports.md) daha fazla bilgi için).  
   
  Bir bağlantı noktası tarafından temsil edilen [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) arabirimi. Bağlantı noktasına bağlı bir makinede çalışan işlemler hakkında bilgi almak için kullanılır.  

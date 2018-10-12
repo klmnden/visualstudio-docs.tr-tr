@@ -1,7 +1,7 @@
 ---
 title: WPF topluluk kaynakları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 06b7022f44f6aa8c180e28ef13493d17c1a008df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 326670dcb5087961b17d45f8f945c989da044c9c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694591"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297108"
 ---
 # <a name="wpf-community-resources"></a>WPF topluluk kaynakları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [WPF topluluk kaynakları](https://docs.microsoft.com/visualstudio/designers/wpf-community-resources).  
-  
 Microsoft Topluluk kaynakları hakkında bilgi edinin, tartışın ve üzerinde Windows Presentation Foundation (WPF takım üyeleri ve topluluk liderleriyle, forumlar ve Microsoft Connect geri bildirim tarafından üretilen blogları dahil olmak üzere WPF), geri bildirim sağlamak için çeşitli kullanıma sunar. Merkezi.  
   
 ## <a name="community"></a>Topluluk  

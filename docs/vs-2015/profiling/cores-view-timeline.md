@@ -1,7 +1,7 @@
 ---
 title: Çekirdekler görünümü zaman çizelgesi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0cc11d873ff29cccd9a71575c2cd0f0e84e4f3ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8aefbaf557cd6388fb90d722fa698b33c9582428
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686154"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277114"
 ---
 # <a name="cores-view-timeline"></a>Çekirdekler Görünümü Zaman Çizelgesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [çekirdekler görünümü zaman çizelgesi](https://docs.microsoft.com/visualstudio/profiling/cores-view-timeline).  
-  
 Her satırda bir zaman çizelgesi profili oluşturulmuş sistemdeki bir mantıksal işlemci çekirdeği temsil eder. Her satır için yatay ekseni hangi iş parçacığının zaman içinde belirli bir noktada mantıksal çekirdek üzerinde çalıştığı gösterir. Bir renk ilgilendiğiniz iş parçacığı tanımlayan bir araç ipucu döndürmek için bir zaman çizelgesindeki üzerine gelerek. İş parçacığı kimliği yardımcı olmak için ne her rengidir pencerenin alt kısmındaki gösterge gösterir. Yakınlaştırma ve uzaklaştırma tıklatarak ve sürükleyerek veya CTRL tuşuna basarak ve fare tekerleğini taşımak için Yakınlaştırma aracını kullanın. Çekirdekler görünümü ve iş parçacıkları görünümü arasında geçiş yaptığınızda yakınlaştırma tutarlılık korunur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

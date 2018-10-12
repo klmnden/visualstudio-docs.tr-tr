@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: etki alanına özgü dil tasarımcısını genişletme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 568b5f608d06c61b25b84bce56bb8c80a1a6d690
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e6a7bf23ab8b64516f474c6741cef48d7a0d4b43
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689705"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294274"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Nasıl yapılır: Etki Alanına Özgü Dil Tasarımcısını Genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

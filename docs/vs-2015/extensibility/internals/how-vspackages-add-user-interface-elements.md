@@ -1,7 +1,7 @@
 ---
 title: Nasıl VSPackages kullanıcı arabirimi öğeleri eklemesi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a6265edea1044c1ee7be25725268a792d78a79cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f97202daa4626f0060a53781f609382bf082c17
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697201"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283276"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>VSPackage’ların Kullanıcı Arabirimi Öğeleri Eklemesi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl VSPackages Ekle kullanıcı arabirimi öğeleri](https://docs.microsoft.com/visualstudio/extensibility/internals/how-vspackages-add-user-interface-elements).  
-  
 VSPackage kullanıcı arabirimi (UI) öğeleri, örneğin, menüler, araç çubuklarını, ekleyebilir ve Visual Studio .vsct dosyası kullanarak bir windows aracı.  
   
  Kullanıcı Arabirimi öğeleri için tasarım yönergeleri bulabilirsiniz [Visual Studio kullanıcı deneyimi yönergeleri](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  

@@ -1,7 +1,7 @@
 ---
 title: Performans araçları ile çalışmaya başlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0bb0fa65bbd11e18f6b83fafe0a7ad8df9fd15eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89822656a518c13467e20b9b79ad36fd09ef36a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689341"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249496"
 ---
 # <a name="getting-started-with-performance-tools"></a>Performans araçları ile çalışmaya başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [performans araçları ile çalışmaya başlama](https://docs.microsoft.com/visualstudio/profiling/getting-started-with-performance-tools).  
-  
 Bu bölümde, kavramlar ve Topla, görüntülemek ve Visual Studio performans araçları kullanarak kod performansını çözümlemek uygulanacak görevlere genel bir bakış sağlar.  
   
  Bu araçlar, performans verilerini toplamanıza ve analiz için birkaç yol sağlar. Ancak birçok durumda, başlamak için en iyi yolu, performans sorunlarını kodunuzda işaret edebilir ve uygulama istatistikleri toplamanıza olanak tanır performans Sihirbazı'nın varsayılan ayarlarını kullanın.  
@@ -49,7 +47,7 @@ Bu bölümde, kavramlar ve Topla, görüntülemek ve Visual Studio performans ar
  [Genel bakış](../profiling/overviews-performance-tools.md)   
  [Veri Araçları performansını analiz etme](../profiling/analyzing-performance-tools-data.md)   
  [Verileri çözümlemek için performans kurallarını kullanma](../profiling/using-performance-rules-to-analyze-data.md)   
- [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)
+ [Performans Oturumlarını Yapılandırma](../profiling/configuring-performance-sessions.md)
 
 
 

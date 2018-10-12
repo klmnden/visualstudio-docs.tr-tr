@@ -1,7 +1,7 @@
 ---
 title: Visual C# kod parçacıkları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2afbadccfc894dd5ba5baba9c58ab43417f44ed5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9c06243b4f41919c1c51002f0ed805a3fbd67112
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775444"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297420"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C# Kod Parçacıkları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual C# kod parçacıkları](https://docs.microsoft.com/visualstudio/ide/visual-csharp-code-snippets).  
-  
 Kod parçacıkları, kullanıma hazır, kodunuza hızla ekleyebilirsiniz kod parçacıkları verilmiştir. Örneğin, `for` oluşturur boş bir kod parçacığı `for` döngü. Bazı kod parçacıklarına, kod satırları seçmek etkinleştirmeniz ve sonra seçilen kod satırlarını içeren bir kod parçacığı surround-with kod parçacıkları, verilmiştir. Örneğin, ne zaman isterseniz kod satırlarını seçip ardından etkinleştirmek `for` kod parçacığı, oluşturur bir `for` Bu döngü bloğu içinde kod satırlarını içeren döngü. Kod parçacıkları kod yazma programını daha hızlı, kolay ve daha güvenilir hale getirebilirsiniz.  
   
  İmleç konumuna bir kod parçacığı Ekle ya da şu anda seçili olan kod etrafında surround-with kod parçacığını ekleyin. Kod parçacığı ekleyici aracılığıyla çağrılan **kod parçacığı Ekle** veya **Surround With** komutlarını **IntelliSense** menüsünden veya CTRL + K klavye kısayollarını kullanarak ve ardından X veya CTRL + K ve sonra S sırasıyla.  

@@ -1,7 +1,7 @@
 ---
 title: Grafik piksel geçmişi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b37dab129c5eb19825746177cb30a5e20493399
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9ac64d352bfb6d6a35ea1bd9027d30f527aab116
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686333"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208370"
 ---
 # <a name="graphics-pixel-history"></a>Grafik Piksel Geçmişi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [grafik piksel geçmişi](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-pixel-history).  
-  
 Visual Studio grafik Çözümleyicisi grafik piksel geçmişi penceresinde belirli bir pikseli oyunlarda veya uygulamalarda bir çerçevesinde gerçekleşen Direct3D olayları tarafından nasıl etkilendiğini anlamanıza yardımcı olur.  
   
  Piksel Geçmişi penceresini budur:  

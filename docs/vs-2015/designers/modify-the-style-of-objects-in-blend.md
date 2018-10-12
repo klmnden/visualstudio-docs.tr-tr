@@ -1,7 +1,7 @@
 ---
 title: Blend'de nesnelerin stilini değiştirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e6205eea283bec68a3fbbf5c95a5bac36fdbaee9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6fef77a22d043d4b98d337286e539666b5d4b2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692103"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240160"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Blend'de nesnlerin stilini değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [blend'de nesnelerin stilini değiştirme](https://docs.microsoft.com/visualstudio/designers/modify-the-style-of-objects-in-blend).  
-  
 Özellikleri ayarlamak için bir nesne özelleştirmek için en kolay yolu olan **özellikleri** bölmesi.  
   
  Ayarları yeniden kullanmak veya ayar gruplarını istiyorsanız, yeniden kullanılabilir bir kaynak oluşturun. Bunun bir *stili*, *şablon*, ya da özel bir renk gibi basit bir şeyden. Ayrıca, bir denetim üzerinde durumuna göre farklı şekilde görünür yapabilirsiniz. Örneğin, kullanıcı tıkladığında bir düğme yeşile döner.  

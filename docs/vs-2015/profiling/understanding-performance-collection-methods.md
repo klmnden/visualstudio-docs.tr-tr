@@ -1,7 +1,7 @@
 ---
 title: Performans toplama metotlarını anlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57be2cf704521f25b48495e6537d384633cfd85f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 77ccabd5a75e2290f57d97af70d23d6e4e136fbe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691895"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295730"
 ---
 # <a name="understanding-performance-collection-methods"></a>Performans toplama metotlarını anlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [anlama performans koleksiyon metotları](https://docs.microsoft.com/visualstudio/profiling/understanding-performance-collection-methods).  
-  
 Visual Studio Profil Araçları performans verilerini toplamak için kullanabileceğiniz beş yöntemler sağlar. Bu konu, farklı yöntemleri açıklar ve bazı senaryolarda belirli bir yöntem ile veri toplama uygun olabilir önerir.  
   
 > [!NOTE]
@@ -58,11 +56,11 @@ Visual Studio Profil Araçları performans verilerini toplamak için kullanabile
   
  Varsayılan olarak, profil oluşturucu örnekleme aralığı için CPU döngülerini ayarlar. Aralık türü için başka bir CPU performans sayacı değiştirebilir ve aralığını sayacı olay sayısını ayarlayabilirsiniz. ADO.NET ile bir SQL server veritabanına yapılan sorguları hakkında bilgi sağlayan katman etkileşim profiling(TIP) verileri de toplayabilirsiniz.  
   
- [Örnekleme kullanarak performans istatistikleri toplama](../profiling/collecting-performance-statistics-by-using-sampling.md)  
+ [Örnekleme Kullanarak Performans İstatistikleri Toplama](../profiling/collecting-performance-statistics-by-using-sampling.md)  
   
- [Örnekleme veri değerlerini anlama](../profiling/understanding-sampling-data-values.md)  
+ [Örnekleme Veri Değerlerini Anlama](../profiling/understanding-sampling-data-values.md)  
   
- [Örnekleme yöntemi veri görünümleri](../profiling/profiler-sampling-method-data-views.md)  
+ [Örnekleme Yöntemi Veri Görünümleri](../profiling/profiler-sampling-method-data-views.md)  
   
 ##  <a name="instrumentation"></a> İzleme  
  İzleme profili oluşturma metodu profili oluşturulmuş bir uygulamada işlev çağrıları için ayrıntılı zamanlama toplar. İzleme profil aşağıdakiler için yararlıdır:  
@@ -83,9 +81,9 @@ Visual Studio Profil Araçları performans verilerini toplamak için kullanabile
   
  Araçlar yöntemini kullanarak, hem CPU hem de yazılım performans sayaçları de toplayabilir.  
   
- [İzleme veri değerlerini anlama](../profiling/understanding-instrumentation-data-values.md)  
+ [İzleme Veri Değerlerini Anlama](../profiling/understanding-instrumentation-data-values.md)  
   
- [İzleme kullanarak ayrıntılı zamanlama verileri toplama](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)  
+ [İzleme Kullanarak Ayrıntılı Zamanlama Verileri Toplama](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)  
   
  [İzleme Metodu Veri Görünümleri](../profiling/instrumentation-method-data-views.md)  
   
@@ -96,9 +94,9 @@ Visual Studio Profil Araçları performans verilerini toplamak için kullanabile
   
 -   Eşzamanlılık görselleştiricisi performans sorunları, CPU Tıkanıklığı, iş parçacığı Çekişme, iş parçacığı geçişi, eşitleme gecikmeleri, çakışan I/O alanları ve diğer bilgileri bulmak için kullanabileceğiniz grafik bilgilerini görüntüler. Mümkün olduğunda, yığın ve kaynak çağırmak üzere grafik çıktı bağlantıları veri kod. Eşzamanlılık görselleştirme verileri yalnızca komut satırı ve Windows uygulamaları için toplanabilir.  
   
- [Kaynak çakışması veri değerlerini anlama](../profiling/understanding-resource-contention-data-values.md)  
+ [Kaynak Çakışması Veri Değerlerini Anlama](../profiling/understanding-resource-contention-data-values.md)  
   
- [İş parçacığı ve işlem eşzamanlılık verileri toplama](../profiling/collecting-thread-and-process-concurrency-data.md)  
+ [İş Parçacığı ve İşlem Eşzamanlılık Verileri Toplama](../profiling/collecting-thread-and-process-concurrency-data.md)  
   
  [Kaynak Çakışması Veri Görünümleri](../profiling/resource-contention-data-views.md)  
   
@@ -119,11 +117,11 @@ Visual Studio Profil Araçları performans verilerini toplamak için kullanabile
   
 -   .NET bellek profili oluşturma araçları modda çalıştırdığınızda, birlikte dahil ve hariç ayırma değerleri ayrıntılı zamanlama bilgileri toplanır.  
   
- [Bellek ayırma ve nesne yaşam verisi değerlerini anlama](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
+ [Bellek Ayırma ve Nesne Yaşam Verisi Değerlerini Anlama](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
   
- [.NET bellek ayırma ve yaşam süresi verilerini toplama](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
+ [.NET Bellek Ayırma ve Yaşam Süresi Verilerini Toplama](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
   
- [.NET bellek verisi görünümleri](../profiling/dotnet-memory-data-views.md)  
+ [.NET Bellek Verisi Görünümleri](../profiling/dotnet-memory-data-views.md)  
   
 ##  <a name="tier_interaction"></a> Katman etkileşimi  
  Katman etkileşimli profil oluşturma ekler bilgi hakkında zaman uyumlu bir profil oluşturma veri dosyasını [!INCLUDE[vstecado](../includes/vstecado-md.md)] arasında çağıran bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] sayfa veya diğer uygulama ve [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] veritabanı. Veri sayısı ve zaman çağrıları ve maksimum ve minimum içerir. Örnekleme, izleme, .NET bellek veya eşzamanlılık yöntemi ile toplanan verileri profil oluşturma için katman etkileşim verileri eklenebilir.  
@@ -137,7 +135,7 @@ Profil oluşturma araçları tarafından toplanan katman etkileşim verileri
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: bir Web sitesi için performans verileri toplama](../profiling/how-to-collect-performance-data-for-a-web-site.md)   
- [Performans profili oluşturma Başlangıç Kılavuzu](../profiling/beginners-guide-to-performance-profiling.md)
+ [Performans Profili Oluşturma Başlangıç Kılavuzu](../profiling/beginners-guide-to-performance-profiling.md)
 
 
 

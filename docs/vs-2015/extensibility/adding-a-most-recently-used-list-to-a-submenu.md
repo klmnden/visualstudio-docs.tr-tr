@@ -1,7 +1,7 @@
 ---
 title: Bir en son kullanılan bir alt listeye ekleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa2a5f0177243c178890673986b0c04b4627505e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89526f799c0b4e260bba140c413f2c89e573a701
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693147"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223740"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Bir Alt Menüye Son Kullanılanlar Listesi Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [menüye en son kullanılan liste ekleme](https://docs.microsoft.com/visualstudio/extensibility/adding-a-most-recently-used-list-to-a-submenu).  
-  
 Bu izlenecek yol tanıtımlar geliştirir [menüye alt menü ekleme](../extensibility/adding-a-submenu-to-a-menu.md)ve dinamik bir listesi için bir alt menü ekleme işlemi gösterilmektedir. Dinamik listesi en son kullanılanlar (MRU) listesini oluşturmak için temelini oluşturur.  
   
  Dinamik menü listesi menüsünde yer tutucu ile başlar. Menü gösterilen her zaman Visual Studio tümleşik geliştirme ortamı (IDE) yer tutucuyu gösterilen tüm komutlar için VSPackage ister. Dinamik bir listesi, herhangi bir yere menüde ortaya çıkabilir. Ancak, dinamik listeler genellikle tutulur ve başlarına alt menüler ya da menü altlarındaki görüntülenir. Bu tasarım desenleri kullanarak dinamik genişletin ve diğer komutlar menüsünde konumunu etkilemeden sözleşme komutların listesini sağlar. Bu izlenecek yolda, alt geri kalanından satırla ayrılan, var olan bir alt kısmındaki dinamik MRU listesi görüntülenir.  

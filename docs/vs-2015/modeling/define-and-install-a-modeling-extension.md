@@ -1,7 +1,7 @@
 ---
 title: Modelleme Uzantısı Tanımlama ve yükleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c3d6ea563d7b7d4e2cac0e4f69ea5fddcd192418
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e550d7c34640b1c4b436f6a2e098a3f3ee494757
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774581"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234409"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Modelleme uzantısı tanımlama ve yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [tanımlama ve yükleme Modelleme Uzantısı](https://docs.microsoft.com/visualstudio/modeling/define-and-install-a-modeling-extension).  
-  
 Visual Studio'da modelleme diyagramları için uzantı tanımlayabilirsiniz. Bu şekilde, kendi gereksinimlerine göre modelleri ve diyagramları uyarlayabilirsiniz. Örneğin, menü komutlarını, UML profilleri, doğrulama kısıtlamaları ve araç kutusu öğeleri tanımlayabilirsiniz. Çeşitli bileşenleri tek bir uzantı tanımlayabilirsiniz. Ayrıca bu uzantılar şeklinde diğer Visual Studio kullanıcılarına dağıtabilirsiniz bir [Visual Studio Tümleştirme Uzantısı (VSIX)](http://go.microsoft.com/fwlink/?LinkId=160780). Bir VSIX projesi kullanarak Visual Studio'da bir VSIX projesi oluşturabilirsiniz.  
   
 ## <a name="requirements"></a>Gereksinimler  

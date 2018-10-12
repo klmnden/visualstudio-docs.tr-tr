@@ -1,7 +1,7 @@
 ---
 title: Hangi&#39;da kaynak denetimi eklentisi API sürümü 1.2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 7c5fa471-456e-4f95-8309-5750ec4e5e85
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 439e91730ffa0c8ab3d73454198c09803df59f3d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9df28160f321cdd585cd9adba8d80c43cfcb18d6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683716"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300163"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Hangi&#39;da kaynak denetimi eklentisi API sürümü 1.2
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ne&#39;kaynak denetimi eklentisi API sürümü 1.2 Yeni s](https://docs.microsoft.com/visualstudio/extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2).  
-  
 Bu bölümde, kaynak denetimi eklentisi API sürümü 1.2 Gelişmiş kaynak kod denetimi işlevlerini vurgular. 1.2 sürümündeki yeni özellikler listelenmektedir:  
   
 ## <a name="changes"></a>Değişiklikler  

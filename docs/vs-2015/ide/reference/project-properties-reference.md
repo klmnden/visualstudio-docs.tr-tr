@@ -1,7 +1,7 @@
 ---
 title: Proje Özellikleri başvurusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c31817310f1626c95ac4380e6cb1e922e72defc4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 497afd9c7fb6f1449d8d9c2227c7ae1ee7af44b8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691139"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297537"
 ---
 # <a name="project-properties-reference"></a>Proje Özellikleri Başvurusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [proje özellikleri başvurusu](https://docs.microsoft.com/visualstudio/ide/reference/project-properties-reference).  
-  
   
 Yapılandırma ve proje özelliklerini özelleştirme hakkında daha fazla bilgi edinin.  
   
@@ -54,7 +52,7 @@ Yapılandırma ve proje özelliklerini özelleştirme hakkında daha fazla bilgi
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Proje Tasarımcısı giriş](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
- [Projeler ve çözümler](../../ide/solutions-and-projects-in-visual-studio.md)
+ [Çözümler ve Projeler](../../ide/solutions-and-projects-in-visual-studio.md)
 
 
 

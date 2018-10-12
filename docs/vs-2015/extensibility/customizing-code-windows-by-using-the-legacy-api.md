@@ -1,7 +1,7 @@
 ---
 title: Eski API'sini kullanarak kod Windows özelleştirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5328ab2f-55cb-4680-9744-ec79f55acd1b
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7738ef02b7f26e78197ca974fdc03b60c157799f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c698f9661866ad6d2900bb7feb0f0f4a17d21589
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692517"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299994"
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>Eski API'sini kullanarak kod Windows özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [eski API'yi kullanarak kod Windows özelleştirme](https://docs.microsoft.com/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api).  
-  
 Bir kod penceresinde bir veya daha fazla metin görünümlerini destekleyen bir belge penceresi nesnesidir. Tam bir kod penceresi özelliklerini ilişkili dil hizmetine bağlıdır. Çok Belgeli Arabirim (MDI) modunda kod penceresinde MDI alt çerçeve ' dir.  
   
  Kodu windows dil Hizmetleri tarafından denetlenir ve her dil hizmeti, kendi kod penceresinde yöneticisini sağlayabilir. Bu, kod penceresi dalgalı çizgiler, renklendirme ve daha fazlası gibi kendi kenarlıklar eklemek dil hizmeti sağlar. Core pencereyi oluşturma hakkında daha fazla bilgi için bkz. [çekirdek düzenleyici kullanarak eski API örnekleme](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md).  
@@ -42,10 +40,10 @@ Kod penceresi
  `Customizing Code Windows by Using the Legacy API`  
  Kodu windows eski API'yi kullanarak özelleştirmek nasıl açıklar.  
   
- [Nasıl yapılır: başka bir düzenleyicide bir düzenleyicide barındırın](../extensibility/how-to-host-an-editor-in-another-editor.md)  
+ [Nasıl Yapılır: Bir Düzenleyiciyi Başka Bir Düzenleyicide Barındırma](../extensibility/how-to-host-an-editor-in-another-editor.md)  
  Bir düzenleyici penceresi içine ikinci bir düzenleyici barındırmak nasıl açıklar.  
   
- [Nasıl yapılır: Düzenleyici odağı kaybettiğinde olayları yangın](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ [Nasıl Yapılır: Düzenleyici Odağı Kaybettiğinde Olayları Başlatma](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  Bir belge veri nesnesine bir belge görünümü ekleme açıklanmaktadır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
@@ -54,5 +52,5 @@ Kod penceresi
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
  [Eski API'yi kullanarak çekirdek Düzenleyici örnekleme](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)   
- [Eski API'yi kullanarak erişen erişimcisinde görüntüle](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
+ [Eski API'yi Kullanarak Metin Görünümüne Erişme](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
 

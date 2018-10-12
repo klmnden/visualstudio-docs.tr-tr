@@ -1,7 +1,7 @@
 ---
 title: JavaScript IntelliSense için XML belge açıklamaları oluştur | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3801fb58f09ac70c26e21304957e31f7b3ec4ddc
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: d15144a2cee70e5f6bdc496bf2c09eb8fb95c85d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881026"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220564"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>JavaScript IntelliSense için XML belge açıklamaları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio 2017 belgeleri](/visualstudio/).  
-  
 *XML belgeleri yorumları* olan JavaScript yorumları işlevleri, alanları ve değişkenler gibi kod öğeleri hakkında bilgi sağlamak için bir komut ekleyin. Betik işlevi başvurduğunuzda, Visual Studio'da bu metin açıklamaları IntelliSense ile görüntülenir.  
   
  Bu konuda, XML belgeleri yorumları kullanma hakkında temel bir öğretici sağlar. Diğer öğeleri gibi kullanma hakkında bilgi için [ \<var >](../ide/var-javascript.md) ve [ \<değer >](../ide/value-javascript.md)ve ek kod örnekleri için bkz: [XML belge açıklamaları ](../ide/xml-documentation-comments-javascript.md). Zaman uyumsuz bir geri çağırma için IntelliSense bilgisi gibi sağlama hakkında bilgi için bir `Promise`, bkz: [ \<döndürür >](../ide/returns-javascript.md).  

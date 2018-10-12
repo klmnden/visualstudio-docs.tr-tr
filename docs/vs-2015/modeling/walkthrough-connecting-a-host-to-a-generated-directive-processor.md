@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: üretilen bir yönerge işlemcisine ana bilgisayar bağlama | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 451dcf21e8965de9ea350577c819daefb150a5d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 486d41927e45dc8c99fda06c29d14871008d7066
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630539"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251946"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>İzlenecek yol: Üretilen bir Yönerge İşlemcisine Ana Bilgisayar Bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [izlenecek yol: üretilen bir yönerge işlemcisine ana bilgisayar bağlama](https://docs.microsoft.com/visualstudio/modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor).  
-  
 Metin şablonlarını işleme kendi ana bilgisayar yazabilirsiniz. Temel özel bir ana bilgisayar gösterilmiştir [izlenecek yol: bir özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md). Birden çok çıktı dosyaları oluşturmak gibi işlevler eklemek için bu konak genişletebilirsiniz.  
   
  Yönerge işlemcileri çağıran metin şablonlarını destekler, böylece bu kılavuzda, özel bir ana bilgisayar genişletin. Bu, bir etki alanına özgü dil tanımladığınızda, oluşturur bir *yönerge işlemcisi* için etki alanı modeli. Yönerge işlemcisini bütünleştirilmiş kod yazma ve içeri aktarma yönergeleri şablonlarındaki gereksinimini azaltır modeline erişim şablonları yazmak kullanıcılar için kolaylaştırır.  

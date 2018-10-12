@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: betik belgelerini görüntüleme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc24c5e9c2332516cbf939e14581a2df7bea44eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7f32fc5537fae9483401ac479eb4585d1e19108
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692908"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230522"
 ---
 # <a name="how-to-view-script-documents"></a>Nasıl Yapılır: Betik Belgelerini Görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: betik belgelerini görüntüleme](https://docs.microsoft.com/visualstudio/debugger/how-to-view-script-documents).  
-  
 Önceki sürümlerinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], sunucu tarafı betiğinden oluşturulan istemci tarafı komut dosyaları betik Gezgini penceresinde görüntülenmektedir. İstemci tarafı komut dosyası kullanılabilirliğini her zaman açık değil, betik Gezgini penceresi genellikle, gizli olduğu.  
   
  İçinde [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], sunucu tarafı betiğinden oluşturulan istemci tarafı komut dosyaları, varsayılan olarak görünen Çözüm Gezgini'nde görünür. Betik Gezgini penceresi ortadan kaldırılmıştır.  
@@ -58,7 +56,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: betik be
      İstemci tarafı komut dosyası, bir kaynak penceresinde açılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklayıcıda verileri görüntüleme](../debugger/viewing-data-in-the-debugger.md)
+ [Hata Ayıklayıcıda Verileri Görüntüleme](../debugger/viewing-data-in-the-debugger.md)
 
 
 

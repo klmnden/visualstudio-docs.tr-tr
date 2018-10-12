@@ -1,7 +1,7 @@
 ---
 title: 'CA2107: Gözden geçirmeyi reddetmek ve yalnızca kullanımına izin ver | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a898c16131e38c9958c9808ffd94f9373385ab82
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: b317ddb69dea8241ead6bb70d50c3b99d96bd078
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42900873"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178652"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Gözden geçirmeyi reddet ve yalnızca kullanımına izin ver
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA2107: gözden geçirmeyi reddetmek ve yalnızca kullanımına izin ver](https://docs.microsoft.com/visualstudio/code-quality/ca2107-review-deny-and-permit-only-usage).
-
 |||
 |-|-|
 |TypeName|ReviewDenyAndPermitOnlyUsage|

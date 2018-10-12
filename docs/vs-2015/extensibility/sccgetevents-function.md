@@ -1,7 +1,7 @@
 ---
 title: SccGetEvents işlevi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 32f8147d-6dcc-465e-b07b-42da5824f9b0
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1e73fea52d207d4f9834d5c3eabb15bf733c7e23
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 720b2fdb6be29ebc21bad5f6e7062d818e4529c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693746"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171762"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents İşlevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [SccGetEvents işlevi](https://docs.microsoft.com/visualstudio/extensibility/sccgetevents-function).  
-  
 Bu işlev, bir kuyruğa alınmış durumu olayı alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -71,5 +69,5 @@ SCCRTN SccGetEvents (
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak Denetimi Eklentisi API işlevleri](../extensibility/source-control-plug-in-api-functions.md)   
- [Dosya durum kodu](../extensibility/file-status-code-enumerator.md)
+ [Dosya Durumu Kodu](../extensibility/file-status-code-enumerator.md)
 

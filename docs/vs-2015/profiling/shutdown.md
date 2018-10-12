@@ -1,7 +1,7 @@
 ---
 title: Kapatma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7e351050859a96ca95c267bdcbe34ee19e7f87f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fcc2012f46311d51cfd7c50f28158a471b67e26
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693132"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269306"
 ---
 # <a name="shutdown"></a>Kapat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [kapatma](https://docs.microsoft.com/visualstudio/profiling/shutdown).  
-  
 **Kapatma** seçeneği bekler herhangi şu anda son veya ayırmak için işlem profili ve ardından profil oluşturucuyu devre dışı bırakır ve profil oluşturma veri dosyasını kapatır. **Kapatma** seçeneği, bir profil oluşturma, son komut olması gerekir.  
   
  Bir zaman aşımı parametresi belirtilmezse **kapatma** seçeneği süresiz olarak bekleyecek. Seçeneği bir zaman aşımı parametresi belirtilirse, belirtilen sayıda saniye geçtikten sonra profil oluşturucuyu kapatmak veya veri dosyasını kapatmadan döndürür.  
@@ -46,7 +44,7 @@ VSPerfCmd.exe /Shutdown[:Timeout]
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Bağımsız uygulamaların profilini oluşturma](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [ASP.NET Web uygulamalarında profil oluşturma](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profil oluşturma hizmetleri](../profiling/command-line-profiling-of-services.md)
+ [Profil Oluşturma Hizmetleri](../profiling/command-line-profiling-of-services.md)
 
 
 

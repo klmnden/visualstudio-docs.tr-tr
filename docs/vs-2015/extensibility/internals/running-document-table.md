@@ -1,7 +1,7 @@
 ---
 title: Çalıştırılan Belge tablosu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b7f22fed31618c3f0e8b897992da0beb1c0cc80
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 131fbf7d5587382b2e47002f52e374dad154d448
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632987"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293078"
 ---
 # <a name="running-document-table"></a>Çalıştırılan Belge Tablosu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [çalıştırılan Belge tablosu](https://docs.microsoft.com/visualstudio/extensibility/internals/running-document-table).  
-  
 IDE, tüm açık belgelerde çalıştırılan Belge tablosu (RDT) olarak adlandırılan bir iç yapıyı listesini tutar. Bu liste, bellekte olup bu belgeler şu anda düzenlenmekte olan bağımsız olarak tüm açık belgeleri içerir. Kalıcı, dosyaları bir proje veya ana proje dosyasında (örneğin, bir .vcxproj dosyası) dahil olmak üzere herhangi bir öğeyi bir belgedir.  
   
 ## <a name="elements-of-the-running-document-table"></a>Çalıştırılan Belge tablosu öğeleri  

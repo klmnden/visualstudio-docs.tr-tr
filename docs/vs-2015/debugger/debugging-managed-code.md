@@ -1,7 +1,7 @@
 ---
 title: Yönetilen kodda hata ayıklama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,28 +26,26 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: efa999fabc0d27900900c6d1512cca3fde76043d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ba07591cf4682ef40579f58b290f6b26bb4c111
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696018"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211594"
 ---
 # <a name="debugging-managed-code"></a>Yönetilen Kodda Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yönetilen kodda hata ayıklama](https://docs.microsoft.com/visualstudio/debugger/debugging-managed-code).  
-  
 Bu bölüm yaygın hata ayıklama sorunları ve yönetilen uygulamalar için teknikleri kapsar veya uygulamalarda yazıldığına dillerde hedefleyen Visual Basic, C# ve C++ gibi ortak dil çalışma zamanı. Burada açıklanan teknikleri, üst düzey tekniklerle aynıdır. Daha fazla bilgi için [hata ayıklayıcıyı kullanma](../debugger/debugger-basics.md).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Çıkış penceresindeki tanılama iletileri](../debugger/diagnostic-messages-in-the-output-window.md)  
+ [Çıkış Penceresindeki Tanılama İletileri](../debugger/diagnostic-messages-in-the-output-window.md)  
  Açıklar <xref:System.Diagnostics.Debug> ve <xref:System.Diagnostics.Trace> sınıfları, çalışma zamanı iletileri ile yazabileceğiniz **çıkış** penceresi. Bu sınıflar, belirtilen bir koşulu başarısız olursa da yürütmeyi keser yürütme ve bilgi çıkış bozmadan bilgi çıkışı etkinleştir çıkış yöntemleri kapsar.  
   
- [Yönetilen koddaki onaylar](../debugger/assertions-in-managed-code.md)  
+ [Yönetilen Koddaki Onaylamalar](../debugger/assertions-in-managed-code.md)  
  Bağımsız değişken olarak belirttiğiniz koşullara test yönetilen koddaki onaylar açıklar `Assert` yöntemleri. Ayrıca, bu konu örnek kod, hakkında bilgi sağlar <xref:System.Diagnostics.Debug> ve <xref:System.Diagnostics.Trace> sınıfı yöntemleri, kodun, yan etkileri, hata ayıklama ve yayın sürümleri hususlarına assert bağımsız değişkenler, özelleştirme assert davranışı ve yapılandırma dosyaları.  
   
- [Visual Basic'de Durdur deyimleri](../debugger/stop-statements-in-visual-basic.md)  
+ [Visual Basic'de Durdur Deyimleri](../debugger/stop-statements-in-visual-basic.md)  
  Açıklar `Stop` bir kesme noktası ayarlamak için bir alternatif sağlayan bir ifade. Örnek kod ayrıca sağlanan, arasında karşılaştırma birlikte `Stop` deyimi ve `End` arasında iyi gibi olarak bir deyim `Stop` ve `Assert` deyimi.  
   
  [İzlenecek yol: Windows Formunda hata ayıklama](../debugger/walkthrough-debugging-a-windows-form.md)  
@@ -62,13 +60,13 @@ Bu bölüm yaygın hata ayıklama sorunları ve yönetilen uygulamalar için tek
  [Hata: Sistemde çekirdek hata ayıklayıcı etkinleştirildiğinden hata ayıklama mümkün değil](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
  Yönetilen kodda hata ayıklama çalışırsanız oluşan bir hata iletisi açıklayan bir [!INCLUDE[win7](../includes/win7-md.md)], [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)], [!INCLUDE[winxp](../includes/winxp-md.md)], [!INCLUDE[Win2kFamily](../includes/win2kfamily-md.md)], veya hata ayıklama modunda başlatıldı Windows NT sistem.  
   
- [JIT iyileştirmesi ve hata ayıklama](../debugger/jit-optimization-and-debugging.md)  
+ [JIT İyileştirmesi ve Hata Ayıklaması](../debugger/jit-optimization-and-debugging.md)  
  Hata ayıklamayı JIT iyileştirmesini etkilerini açıklar.  
   
  [LINQ ve DLINQ hata ayıklama](../debugger/debugging-linq.md)  
  LINQ sorguları hata ayıklama teknikleri açıklar.  
   
- [İzlenecek yol: paralel uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [İzlenecek Yol: Paralel Uygulamada Hata Ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Nasıl kullanılacağını açıklar **Paralel Görevler** ve **Paralel Yığınlar** paralel uygulamada hata ayıklamak için windows aracı.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
@@ -90,7 +88,7 @@ Bu bölüm yaygın hata ayıklama sorunları ve yönetilen uygulamalar için tek
  [Betik ve Web uygulamalarında hata ayıklama](../debugger/debugging-web-applications-and-script.md)  
  Genel hata ayıklama sorunları ve komut dosyası ve Web uygulamalarında hata ayıklama sırasında karşılaşabileceğiniz teknikleri açıklar.  
   
- [Hata Ayıklayıcı'Visual Studio 2015'teki yenilikler](../debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md)  
+ [Visual Studio 2015'te Hata Ayıklayıcısı Yenilikleri](../debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md)  
  Bu sürümde eklenen yeni hata ayıklama özellikleri açıklaması [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  [Giriş sayfasının hatalarını ayıklama](../debugger/debugging-in-visual-studio.md)  

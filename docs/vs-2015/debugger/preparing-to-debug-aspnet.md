@@ -1,7 +1,7 @@
 ---
 title: ASP.NET hata ayıklamak hazırlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,41 +21,39 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d9f19e062f60f1f72ca1f7e3ee54aeb211e4b75
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 57031fa7529a7ef12c7ad8c2c61b41194bd18f74
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631330"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171503"
 ---
 # <a name="preparing-to-debug-aspnet"></a>ASP.NET'de Hata Ayıklamaya Hazırlanıyor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ASP.NET hata ayıklama için hazırlama](https://docs.microsoft.com/visualstudio/debugger/preparing-to-debug-aspnet).  
-  
 Bu bölümde nasıl ayarlandığı açıklanmaktadır [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] hata ayıklamak için bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] veya WCF uygulaması.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Sistem Gereksinimleri](../debugger/aspnet-debugging-system-requirements.md)  
  Hata ayıklama için işletim sistemi gereksinimlerini açıklar [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] veya WCF Web uygulamalarını kullanarak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- [WCE hata ayıklamasında sınırlamalar](../debugger/limitations-on-wcf-debugging.md)  
+ [WCE Hata Ayıklama Sınırlamaları](../debugger/limitations-on-wcf-debugging.md)  
  Kullanarak WCF Web uygulamalarında hata ayıklama konusunda limitleri açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- [Nasıl yapılır: ASP.NET uygulamaları için hata ayıklamayı etkinleştirme](../debugger/how-to-enable-debugging-for-aspnet-applications.md)  
+ [Nasıl Yapılır: ASP.NET Uygulamaları için Hata Ayıklamayı Etkinleştirme](../debugger/how-to-enable-debugging-for-aspnet-applications.md)  
  İçin hata ayıklama modunu ayarlama açıklanır bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] uygulama. Bilgi Web.config dosyaları, dosya, örnek kod ve hiyerarşik yapılandırma dosyaları davranışını düzenlemek için öneriler açıklamasını içerir.  
   
- [Uzaktan hata ayıklama Web uygulamaları önkoşulları](../debugger/prerequistes-for-remote-debugging-web-applications.md)  
+ [Uzak Hata Ayıklama Web Uygulamaları Önkoşulları](../debugger/prerequistes-for-remote-debugging-web-applications.md)  
  Uzak bir sunucuda bir Web uygulamasında hata ayıklama için önkoşulları listeler.  
   
  [Nasıl yapılır: Windows Server 2003'te IIS yapılandırma](http://msdn.microsoft.com/en-us/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
  Hata ayıklama için sistem gereksinimleri hata ayıklama için gereken özel bir yapılandırma adımları ele alınmıştır [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] üzerinde [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)].  
   
- [Nasıl yapılır: kendini barındıran WCF hizmetinde hata ayıklama](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
+ [Nasıl Yapılır: Kendini Barındıran WCF Hizmetinde Hata Ayıklama](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
  IIS veya ASP.NET Development Server'da barındırılan değil bir WCF Hizmeti hata ayıklama için adımları açıklar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Web uygulamalarında hata ayıklama: Hatalar ve sorun giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [Web Uygulamalarında Hata Ayıklama: Hatalar ve Sorun Giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  Sık karşılaşılan sorunların nasıl giderileceği açıklanmaktadır ve hata iletilerini listeler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

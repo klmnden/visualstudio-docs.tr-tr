@@ -1,7 +1,7 @@
 ---
 title: .Mdf dosyalarını yükseltme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 773f88e34c111b44f92080c3117eb7e2e42dd70c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a684a4c07379021b9b5c625a20a3f715e572d8c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695765"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298122"
 ---
 # <a name="upgrade-mdf-files"></a>.mdf dosyalarını yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [.mdf dosyalarını yükseltme](https://docs.microsoft.com/visualstudio/data-tools/upgrade-dot-mdf-files).  
-  
   
 Bu konuda, Visual Studio'nun daha yeni bir sürümünü yükledikten sonra veritabanı dosyasına (.mdf) yükseltme seçenekleriniz açıklanmaktadır. Yönergeler için aşağıdaki görevleri içerir:  
   

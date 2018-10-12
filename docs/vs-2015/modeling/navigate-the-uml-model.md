@@ -1,7 +1,7 @@
 ---
 title: UML modelinde gezinme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6c5190e1ec273ac0e0b20855c1d0764b58dda65b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 827a0f7b79f3973b98710de0fb13565145ffb1e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686172"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300267"
 ---
 # <a name="navigate-the-uml-model"></a>UML modelinde gezinme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [UML modelini gezme](https://docs.microsoft.com/visualstudio/modeling/navigate-the-uml-model).  
-  
 Bu konu UML modelinin ana türlerini tanıtır.  
   
 ## <a name="the-model-elements-model-and-model-store"></a>Model öğelerini, Model ve Model Store  
@@ -79,9 +77,9 @@ Bu konu UML modelinin ana türlerini tanıtır.
   
 |Öznitelik türü|Bu erişim sağlar|Daha fazla bilgi|  
 |--------------------|----------------------------------|----------------------|  
-|Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> . IDiagramContext<br /><br /> (Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll dosyasında)|Geçerli odak diyagramı.|[Modelleme Diyagramında Menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|  
+|Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> . IDiagramContext<br /><br /> (Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll dosyasında)|Geçerli odak diyagramı.|[Modelleme diyagramında menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|  
 |Microsoft.VisualStudio.Modeling.ExtensionEnablement<br /><br /> . ILinkedUndoContext<br /><br /> (Microsoft.VisualStudio.Modeling.Sdk içinde. [sürüm] .dll)|Grup değişiklikleri işlemleri sağlar.|[İşlemleri kullanarak UML model güncelleştirmelerini bağlama](../modeling/link-uml-model-updates-by-using-transactions.md)|  
-|Microsoft.VisualStudio.Shell. SVsServiceProvider<br /><br /> (Microsoft.VisualStudio.Shell.Immutable içinde. [sürüm] .dll)|Konak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Buradan dosyalara, projelere ve diğer yönlere erişebilirsiniz.|[Visual Studio API kullanarak bir UML modeli açma](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)|  
+|Microsoft.VisualStudio.Shell. SVsServiceProvider<br /><br /> (Microsoft.VisualStudio.Shell.Immutable içinde. [sürüm] .dll)|Konak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Buradan dosyalara, projelere ve diğer yönlere erişebilirsiniz.|[Visual Studio API kullanarak UML modeli açma](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)|  
   
 ### <a name="to-get-the-context"></a>Bağlamı almak için  
  Uzantı Sınıfınız içinde aşağıdaki arabirimlerinden birini veya bildirin:  

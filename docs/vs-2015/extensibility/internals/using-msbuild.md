@@ -1,7 +1,7 @@
 ---
 title: MSBuild kullanarak | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9d38c388-1f64-430e-8f6c-e88bc99a4260
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8b776823c78835ad687a110c1fcc0ba1382bead
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d382261615624fe099694af5b067de55090ad0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633101"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229339"
 ---
 # <a name="using-msbuild"></a>MSBuild Kullanma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [kullanarak MSBuild](https://docs.microsoft.com/visualstudio/extensibility/internals/using-msbuild).  
-  
 MSBuild proje öğeleri oluşturulması, derleme görevleri ve derleme yapılandırmaları için tam olarak açıklayan proje dosyaları oluşturmak için bir iyi tanımlanmış, Genişletilebilir XML biçiminde sağlar.  
   
  Bir dil proje sistemi Msbuild'i temel alan bir uçtan uca örnek için bkz: IronPython örnek ayrıntılı Bakışında[VSSDK örnekleri](../../misc/vssdk-samples.md).  

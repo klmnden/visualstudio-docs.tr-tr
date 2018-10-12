@@ -1,7 +1,7 @@
 ---
 title: MSSCCPRJ. SCC dosya | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a3387d5563cee60149c8d59a0d7f7179c211a10
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a220dbbf80320603b997f03ca16db58dd2865be0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695839"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246031"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ.SCC Dosyası
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [MSSCCPRJ. SCC dosya](https://docs.microsoft.com/visualstudio/extensibility/mssccprj-scc-file).  
-  
 Bir Visual Studio çözüm veya projeyi IDE'yi kullanarak kaynak denetimi altında yerleştirildiğinde, IDE iki temel bilgi parçasını öğesinden kaynak denetimi eklentisi dizeleri biçiminde alır. Bu dizeler, "AuxPath" ve "ProjName" IDE'ye opak, ancak bunlar eklenti tarafından sürüm denetimine çözüm veya projeyi bulmak için kullanılır. IDE genellikle bu dizeler ilk kez çağırarak alır [SccGetProjPath](../extensibility/sccgetprojpath-function.md), ve ardından bunları gelecekteki çağrılar için çözüm veya proje dosyasında kaydeder [SccOpenProject](../extensibility/sccopenproject-function.md). Bir kullanıcı, çatallar, dallar veya sürüm denetimindeki çözüm ve proje dosyalarını kopyalar çözüm ve proje dosyalarında eklendiğinde, "AuxPath" ve "ProjName" dizeleri otomatik olarak güncelleştirilmez. Çözüm ve proje dosyaları sürüm denetiminde kendi doğru konuma işaret ettiğinden emin olmak için kullanıcıların el ile dizeler güncelleştirmeniz gerekir. Dizeleri donuk yöneliktir olduğundan, bu her zaman nasıl güncelleştirileceğini açık olmayabilir.  
   
  Kaynak Denetimi Eklentisi "AuxPath" ve "ProjName" dizeleri MSSCCPRJ adlı özel bir dosyaya depolayarak, bu sorunu önleyebilirsiniz. SCC dosyası. Bu sahibi olduğu ve eklenti tarafından tutulan yerel, istemci tarafı bir dosyadır. Bu dosya kaynak denetimi altında hiçbir zaman yerleştirilir ancak kaynak-denetimli dosyaları içeren her dizin eklentisi tarafından oluşturulur. Visual Studio çözüm ve proje dosyaları hangi dosyaların belirlemek için kaynak denetimi eklentisi bir standart veya kullanıcı tarafından sağlanan listesine karşı dosya uzantılarını karşılaştırabilirsiniz. Bir eklenti MSSCCPRJ desteklediğini IDE algıladıktan sonra. SCC dosya, "AuxPath" ekleme olmaktan çıkar ve çözüm ve proje dosyaları ve "ProjName" dizelere Bu dizelerin MSSCCPRJ okur. SCC dosya yerine.  

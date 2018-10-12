@@ -1,7 +1,7 @@
 ---
 title: Çağrı ağacı görünümü - izleme verileri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54360ded2c3e758658969484515e06e50b86b45e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fde596d095a07ce609b0a357f16f17fabfa4258
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686224"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297277"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Çağrı Ağacı Görünümü - İzleme Verileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [çağrı ağacı görünümü - izleme verileri](https://docs.microsoft.com/visualstudio/profiling/call-tree-view-instrumentation-data).  
-  
 Bir işlev çağrısı ağacında için değerleri, çağrı ağacında üst işlev tarafından çağrılan işlev örnekleri için zaman gösterir. Yüzde değerleri, toplam geçen kapsamlı süre işlevi örneklerine profil oluşturma çalıştırmasını tüm işlevlerin değerini karşılaştırılmasıyla hesaplanır.  
   
 ## <a name="general"></a>Genel  
@@ -96,7 +94,7 @@ Bir işlev çağrısı ağacında için değerleri, çağrı ağacında üst iş
  [Nasıl yapılır: rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md)   
  [Çağrı ağacı görünümü](../profiling/call-tree-view-sampling-data.md)   
  [Çağrı ağacı görünümü - izleme](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
- [Çağrı ağacı görünümü - örnekleme](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
+ [Çağrı Ağacı Görünümü - Örnekleme](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
 
 
 

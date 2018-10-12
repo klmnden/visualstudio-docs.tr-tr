@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: işlemler görünümünde işlem arama | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ebb0c6a13db0fdc1a586a78038f759c59f8b110
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0e924acf48af293fedae2e9c47347e336ed6450f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697426"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222904"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Nasıl Yapılır: İşlemler Görünümünde İşlem Arama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: işlemler görünümünde işlem arama](https://docs.microsoft.com/visualstudio/debugger/how-to-search-for-a-process-in-processes-view).  
-  
 Belirli bir işlem işlemler görünümünde işlem kimliği veya modül dizesi arama ölçütü olarak kullanarak arayabilirsiniz. İlk arama yönünü de belirtebilirsiniz. Alanları iletişim kutusunda işlem ağacında seçilen işlem özniteliklerini gösterir.  
   
 ### <a name="to-search-for-a-process-in-processes-view"></a>İşlemler görünümünde işlem aramak için  

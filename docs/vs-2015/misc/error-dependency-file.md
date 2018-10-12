@@ -1,7 +1,7 @@
 ---
 title: 'Hata: bağımlılık &#39;dosya&#39; projesinde &#39;proje&#39; bağımlılığı ile çakışacağından çalıştırma dizinine kopyalanamıyor &#39;dosya&#39; | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikeblome
 ms.author: mblome
 manager: douge
-ms.openlocfilehash: 6f571ec21094a28077f63bf86d4afe97af5429dd
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 0a8d6fe7440a39fc207d8d9a1b56bea06547e273
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43231118"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274306"
 ---
 # <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>Hata: bağımlılık &#39;dosya&#39; projesinde &#39;proje&#39; bağımlılığı ile çakışacağından çalıştırma dizinine kopyalanamıyor &#39;dosyası&#39;
 Başvuruları arasında bir çakışma yoktur; uygulamanın çalıştırılması bin dizinini kopyalanan aynı dosya adına sahip birden fazla ayrı bağımlılığı. Bağımlılıkları hiçbiri birincil başvurular olmadığından çalıştırma dizinine çakışması çözümlenemiyor.  

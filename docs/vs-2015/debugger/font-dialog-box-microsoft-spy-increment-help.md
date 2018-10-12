@@ -1,7 +1,7 @@
 ---
 title: Yazı tipi iletişim kutusu (Microsoft Spy ++ Yardımı) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8e753bd3f0e00e813556813689cb0702fc43214
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0fa7fcf78180790e9f57ae2f944a9b5683e8423
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692681"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288077"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>Yazı Tipi İletişim Kutusu (Microsoft Spy++ Yardımı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yazı tipi iletişim kutusu (Microsoft Spy ++ Yardımı)](https://docs.microsoft.com/visualstudio/debugger/font-dialog-box-microsoft-spy-increment-help).  
-  
 Kullanılan karakter yazı tipi yapılandırmak için bu iletişim kutusunu kullanın. bir [Spy ++ görünümleri](../debugger/spy-increment-views.md) penceresi. Bu iletişim kutusunu görüntülemek için genişletin **görünümü** menüsünü seçip **yazı tipi**.  
   
  Aşağıdaki ayarlar kullanılabilir:  

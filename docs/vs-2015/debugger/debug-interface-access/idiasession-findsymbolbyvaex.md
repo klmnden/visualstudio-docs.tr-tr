@@ -1,7 +1,7 @@
 ---
 title: Idiasession::findsymbolbyvaex | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95239c2eb30b4c5203fae62bc000bbade7a3a924
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab87fb156108d575df539ef42b1b8b9fc197a81c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631972"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301632"
 ---
 # <a name="idiasessionfindsymbolbyvaex"></a>IDiaSession::findSymbolByVAEx
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Idiasession::findsymbolbyvaex](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findsymbolbyvaex).  
-  
 İçeriyor veya belirtilen sanal adres (VA) ve uzaklığı için en yakın olan bir belirtilen simge türü alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -72,7 +70,7 @@ pSession->findSymbolByVAEx( va, SymTagFunction, &pFunc, &disp );
  [Idiasession::findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [Idiasession::findsymbolbyva](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)   
  [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum numaralandırması](../../debugger/debug-interface-access/symtagenum.md)
+ [SymTagEnum Numaralandırması](../../debugger/debug-interface-access/symtagenum.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: .Runsettings dosyasını kullanarak birim testlerini yapılandırma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e071364a6aaf7e83c554200548574c52b9b49ce5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a78c73afb11f5c04ef3cc61a5efecb9d8069bac4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684385"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255625"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>.runsettings dosyasını kullanarak birim testlerini yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bir .runsettings dosyasını kullanarak birim testlerini yapılandırma](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file).  
-  
 Visual Studio'da birim testlerini *.runsettings dosyası kullanılarak yapılandırılabilir. ('.Runsettings.' uzantısı kullandığınız sağlanan dosya adı, önemli değildir) Örneğin, üzerinde testler çalıştırılacak, .NET Framework burada test sonuçlarının teslim edildiği ve test sırasında toplanan verileri çalıştırma dizini değiştirebilirsiniz.  
   
  Özel bir yapılandırma gerçekleştirmek istiyorsanız, bir *.runsettings dosyası gerekmez. Özelleştirme için sıkça kullanılır [kod kapsamı](../test/customizing-code-coverage-analysis.md).  

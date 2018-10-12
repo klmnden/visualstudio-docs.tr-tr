@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: bir çalışma zamanı hata raporlama işlevi yazma | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94bbc0ff7d5ca06ca4ff7f84e1f2cb85c254b197
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5de5ecabc9a07dce04a17394448da0deec65268
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690977"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284823"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>Nasıl Yapılır: Çalışma Zamanı Hata Raporlama İşlevi Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: bir çalışma zamanı hata raporlama işlevi yazma](https://docs.microsoft.com/visualstudio/debugger/how-to-write-a-run-time-error-reporting-function).  
-  
 Özel raporlama işlevi için çalışma zamanı hataları olarak aynı bildirimde olmalıdır `_CrtDbgReportW`. Hata ayıklayıcısı için 1 değerini döndürmesi gerekir.  
   
  Aşağıdaki örnek, bir özel raporlama fonksiyon tanımlayın gösterilmektedir.  
@@ -135,7 +133,7 @@ int main()
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yerel çalışma zamanı denetimlerini özelleştirme](../debugger/native-run-time-checks-customization.md)
+ [Yerel Çalışma Zamanı Denetimlerini Özelleştirme](../debugger/native-run-time-checks-customization.md)
 
 
 

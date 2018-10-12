@@ -1,7 +1,7 @@
 ---
 title: Açıklamanın ne zaman ve nereye uygulanacağını belirtme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 9
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ca11e9339534c1053a62442f4eb2e4a65ca2a62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4772dc980743db131002dbde80346836e9dc4c0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688095"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303361"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Açıklamanın Ne Zaman ve Nereye Uygulanacağını Belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [belirtirken ve ek açıklama bir'burada geçerli](https://docs.microsoft.com/visualstudio/code-quality/specifying-when-and-where-an-annotation-applies).  
-  
 Bir ek açıklama koşullu olduğunda, diğer ek açıklamalar Çözümleyicisi belirtmek için gerekli olabilir.  Bir işlevi zaman uyumlu veya zaman uyumsuz bir değişken varsa, örneğin, işlev gibi davranır: zaman uyumlu durumunda her zaman sonunda başarılı, ancak bunu hemen başarısız zaman uyumsuz durumda, bir hata bildirir. İşlevi zaman uyumlu olarak çağrıldığında değil döndüğünüzü çünkü sonuç değeri denetimi için kod Çözümleyicisi hiçbir değer sağlar.  Bununla birlikte, işlev zaman uyumsuz olarak adlandırılır ve işlev sonucu işaretli olduğunda, ciddi bir hata oluşabilir. Bu örnekte, bir durum kullanma gösterilmektedir `_When_` ek açıklama: Bu makalenin sonraki bölümlerinde açıklanan — denetimini etkinleştirmek için.  
   
 ## <a name="structural-annotations"></a>Yapısal ek açıklamaları  
@@ -51,7 +49,7 @@ Bir ek açıklama koşullu olduğunda, diğer ek açıklamalar Çözümleyicisi 
  [Yapıları ve sınıfları yorumlama](../code-quality/annotating-structs-and-classes.md)   
  [Kilitlenme davranışını yorumlama](../code-quality/annotating-locking-behavior.md)   
  [İç işlevleri](../code-quality/intrinsic-functions.md)   
- [En iyi yöntemler ve örnekler](../code-quality/best-practices-and-examples-sal.md)
+ [En İyi Yöntemler ve Örnekler](../code-quality/best-practices-and-examples-sal.md)
 
 
 

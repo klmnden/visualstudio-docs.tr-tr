@@ -1,7 +1,7 @@
 ---
 title: Çalışma modları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f69972d0-809d-40df-9da3-04738791391c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b23ba695b02a0332ad40a2c51047336903255a13
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bdadec54c5b28ae77d4905d2884bbee2d1f2a2ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689777"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298837"
 ---
 # <a name="operational-modes"></a>Çalışma Modları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [çalışma modları](https://docs.microsoft.com/visualstudio/extensibility/debugger/operational-modes).  
-  
 Üç moddan, IDE, şu şekilde çalışabilir vardır:  
   
 -   [Tasarım modu](#vsconoperationalmodesanchor1)  
@@ -52,11 +50,11 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [çalışma modları](https
   
  Geçiş hata ayıklayıcı kesme modundan modu adımı veya çalıştırmak için aşağıdaki yöntemlerden birini yapılan bir çağrıyla durdurma olayları ettirilen:  
   
--   [Yürütme](../../extensibility/debugger/reference/idebugprocess3-execute.md)  
+-   [Execute](../../extensibility/debugger/reference/idebugprocess3-execute.md)  
   
--   [Adım](../../extensibility/debugger/reference/idebugprocess3-step.md)  
+-   [Step](../../extensibility/debugger/reference/idebugprocess3-step.md)  
   
--   [Devam et](../../extensibility/debugger/reference/idebugprocess3-continue.md)  
+-   [Continue](../../extensibility/debugger/reference/idebugprocess3-continue.md)  
   
 ###  <a name="vsconoperationalmodesanchor4"></a> Adım modu  
  Adım modu, program kodu veya içine, üzerinden veya bir işlev dışına sonraki satıra adımlar oluşur. Yöntemini çağırarak bir adımı yürütülür [adım](../../extensibility/debugger/reference/idebugprocess3-step.md). Bu yöntem gerektirir `DWORD`belirtin s [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) ve [STEPKIND](../../extensibility/debugger/reference/stepkind.md) giriş parametresi olarak listeleme.  

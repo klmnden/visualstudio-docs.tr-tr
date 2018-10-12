@@ -1,7 +1,7 @@
 ---
 title: 'CA2216: Atılabilir türler sonlandırıcıyı bildirmelidir | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d7e44ead74e7bcedefff69fefd2ebaf7a478faa3
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: a3724e883146cd382369026cd02432f6b8f0e5a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902667"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238621"
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: Atılabilir türler sonlandırıcıyı bildirmelidir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA2216: atılabilir türler sonlandırıcıyı bildirmelidir](https://docs.microsoft.com/visualstudio/code-quality/ca2216-disposable-types-should-declare-finalizer).
-
 |||
 |-|-|
 |TypeName|DisposableTypesShouldDeclareFinalizer|

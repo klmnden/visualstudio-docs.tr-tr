@@ -1,7 +1,7 @@
 ---
 title: Tableadapter'lar oluşturma ve yapılandırma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: df2a5313ace294c536dc1e8cdaab6ce0adcaeabb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c1c9337fac3cde818fd8af298813c89c8c13daf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689276"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199257"
 ---
 # <a name="create-and-configure-tableadapters"></a>TableAdapter’lar oluşturma ve yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [oluştur ve TableAdapter yapılandırma](https://docs.microsoft.com/visualstudio/data-tools/create-and-configure-tableadapters).  
-  
   
 TableAdapter, uygulamanızla veritabanı arasındaki iletişimi sağlar. Veritabanı, çalışma sorguları veya saklı yordamları bağlanmak ve ya da yeni bir veri döndürmeyen tablo veya mevcut bir dolgu <xref:System.Data.DataTable> döndürülen verilerle. TableAdapter ayrıca uygulamanızdan veritabanına güncelleştirilmiş veriler gönderebilirsiniz.  
   
@@ -117,5 +115,5 @@ TableAdapter, uygulamanızla veritabanı arasındaki iletişimi sağlar. Veritab
     >  Sürükleyerek bir **sorgu** doğrudan nesne **veri kümesi Tasarımcısı** yalnızca skaler (tek) değer döndüren bir yöntem oluşturur. Sorgu veya saklı yordam seçtiğiniz birden çok tek bir değer döndürebilir sırasında sihirbaz tarafından oluşturulan yöntemi yalnızca tek bir değer döndürür. Örneğin, sorgu döndürülen verileri ilk satırının ilk sütununu döndürebilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [TableAdapters'ı kullanarak veri kümelerini doldurma](../data-tools/fill-datasets-by-using-tableadapters.md)
+ [TableAdapter'ları kullanarak veri kümelerini doldurma](../data-tools/fill-datasets-by-using-tableadapters.md)
 

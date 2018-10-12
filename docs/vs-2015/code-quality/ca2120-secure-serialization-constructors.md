@@ -1,7 +1,7 @@
 ---
 title: 'CA2120: Serileştirme oluşturucularının güvenliğini sağlama | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6ab2a0774e813b7064aa97c2753ce5a1493a7962
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 02f06a4636aa653b4dc790f40ac64ab907c534e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42903014"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300800"
 ---
 # <a name="ca2120-secure-serialization-constructors"></a>CA2120: Serileştirme oluşturucularının güvenliğini sağlayın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA2120: Serileştirme oluşturucularının güvenliğini](https://docs.microsoft.com/visualstudio/code-quality/ca2120-secure-serialization-constructors).
-
 |||
 |-|-|
 |TypeName|SecureSerializationConstructors|

@@ -1,7 +1,7 @@
 ---
 title: Etkinlik görünümleri (eski) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: ef7aaa042ea358ecdf3d45b6ee75dd14cf117a01
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5fb8368228118b210865b1a351d12b1b5da4b27
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683733"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229324"
 ---
 # <a name="activity-views-legacy"></a>Etkinlik Görünümleri (Eski)
 Tarafından sağlanan etkinliklerinin birçok [!INCLUDE[wf](../includes/wf-md.md)], hangi iş akışları öğesinden oluşur, çeşitli tasarım görünümlerini eski içinde kullanılabilir olan [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Bir etkinlik Tasarımcısı'ndan sürüklediğinizde **araç kutusu** tasarım yüzeyine ve bundan sonra etkinliği seçtiğinizde kullanın ya da farklı tasarım görünümler arasında geçiş yapabilirsiniz **iş akışı**menü veya sağ tıklayarak seçili etkinlik. Seçili etkinlik adı üzerinde işaretçiyi getirdiğinizde, ayrıca, farklı görünümler arasında geçiş yapmak için kullanabileceğiniz bir sekme açılır kümesi görünür.  

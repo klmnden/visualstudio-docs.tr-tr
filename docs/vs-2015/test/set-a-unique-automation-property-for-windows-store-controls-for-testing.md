@@ -1,7 +1,7 @@
 ---
 title: Test etmek için Windows Store denetimleri için benzersiz Otomasyon özelliği ayarlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3dd593efa23d40278a314f6b1c1d90e7f7905922
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0e20186a7615f774f3cef0b57c56a61a3b076b8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687666"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238881"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Test yapma amacıyla Windows Mağazası Denetimleri için Benzersiz Otomasyon Özelliği ayarlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [test için bir benzersiz Otomasyon özelliği için Windows Store denetimleri ayarlayın](https://docs.microsoft.com/visualstudio/test/set-a-unique-automation-property-for-windows-store-controls-for-testing).  
-  
 XAML tabanlı Windows Store uygulamanız için kodlanmış UI testlerini çalıştırmak istiyorsanız, her denetimi tanımlayan benzersiz Otomasyon özelliği olmalıdır.  
   
  Benzersiz Otomasyon özelliği, uygulamanızdaki XAML denetimi türüne göre atayabilirsiniz. Aşağıdaki durumlarda bu benzersiz Otomasyon özelliği atama şöyledir:  

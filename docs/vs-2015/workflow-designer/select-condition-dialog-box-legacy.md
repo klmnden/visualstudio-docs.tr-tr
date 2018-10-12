@@ -1,7 +1,7 @@
 ---
 title: Koşul iletişim kutusu (eski) seçin. | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 1aa0f8644d350bbcccc2496c1d4f155332933e60
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4baec4427c09eff34b2fedb205de5556f22a4aa6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692246"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246155"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Koşul Seç İletişim Kutusu (Eski)
 Bu konu açıklar nasıl **koşulu seçin** eski iletişim kutusunda [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -45,7 +45,7 @@ Bu konu açıklar nasıl **koşulu seçin** eski iletişim kutusunda [!INCLUDE[w
 |**Yeni...**|Açmak için tıklayın [Kural Koşulu Düzenleyicisi iletişim kutusu (eski)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) yeni bir kural koşulu oluşturma.|  
 |**Düzenle...**|Açmak için tıklayın [Kural Koşulu Düzenleyicisi iletişim kutusu (eski)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) seçili kural koşulu düzenlenecek.|  
 |**Yeniden Adlandır...**|Seçili Kural koşulu yeniden adlandırmak için kullanılan bir iletişim kutusunu açmak için tıklayın.|  
-|**Sil**|Seçili Kural koşulu silmek için tıklayın.|  
+|**Delete**|Seçili Kural koşulu silmek için tıklayın.|  
 |**Koşul önizlemesi**|Seçili Kural koşulu için koşul ifadesi görüntüler.|  
 |**TAMAM**|Seçili Kural koşulu etkinliğin durumuna atamak için tıklayın.|  
   

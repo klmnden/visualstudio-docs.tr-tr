@@ -1,7 +1,7 @@
 ---
 title: Karakter denetimi (kaynak denetimi VSPackage'ı) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: b9413b08-b3c3-4fc3-a6e0-3dc0db3652d7
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cec0adc7c637dee7821552079c2c6f55296e9d0e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad922a083e11007bb20ab83006a04726a38a034e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690303"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267612"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>Karakter Denetimi (Kaynak Denetimi VSPackage’ı)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [karakter denetimi (kaynak denetimi VSPackage'ı)](https://docs.microsoft.com/visualstudio/extensibility/internals/glyph-control-source-control-vspackage).  
-  
 Kaynak denetimi altında öğelerinin durumunu göstermek için kendi karakterleri görüntüleme olanağı kaynak denetimi VSPackage'ları için kullanılabilecek kapsamlı tümleştirme parçasıdır.  
   
 ## <a name="levels-of-glyph-control"></a>Karakter denetimi düzeyleri  

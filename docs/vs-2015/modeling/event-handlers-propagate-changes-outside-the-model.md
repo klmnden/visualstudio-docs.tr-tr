@@ -1,7 +1,7 @@
 ---
 title: Değişiklikleri modelin dışına yayan olay işleyicileri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 93b971c80cdf0c13567364d507f72027d62faae9
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38958aae1c2449145107faa7abe00a2d86baaa9a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775517"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303205"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Değişiklikleri Modelin Dışına Yayan Olay İşleyicileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [olay işleyicileri yaymak değişiklikleri dışında modeli](https://docs.microsoft.com/visualstudio/modeling/event-handlers-propagate-changes-outside-the-model).  
-  
 Görselleştirme ve modelleme SDK'sı, mağaza içi değişkenler, dosyalar, başka depolar veya diğer modeller gibi mağazası dışındaki kaynaklar değişiklikleri yaymak için depolama olay işleyicileri tanımlayabilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uzantıları. Tetikleyici olayın gerçekleştiği işlem sonunda Store olay işleyicisi yürütülür. Bunlar ayrıca bir geri alma veya yineleme işlemi içinde yürütülür. Bu nedenle, depolama kurallarından farklı olarak, deposu olayları deponun dışında olan değerleri güncelleştirmek için ekseriyetle faydalıdır. .NET olaylarının tersine, bir sınıfa dinlemek için depolama olay işleyicileri kaydedilir: her örneği için ayrı bir işleyici kaydetmek zorunda değildir. Değişiklikleri işlemek için farklı yöntemler arasında seçim yapma hakkında daha fazla bilgi için bkz. [yanıt verme ve değişiklikleri yayma](../modeling/responding-to-and-propagating-changes.md).  
   
  Grafik yüzeyine ve diğer kullanıcı arabirimi denetimleri deposu olayları tarafından işlenebilen dış kaynaklara örnekleridir.  

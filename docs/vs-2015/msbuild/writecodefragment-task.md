@@ -1,7 +1,7 @@
 ---
 title: WriteCodeFragment görevi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95780e4de5a14d18b755908e06bc990e90d805aa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 862792e14bd52d52e3dafd83b4a8784f46ce8369
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688895"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290543"
 ---
 # <a name="writecodefragment-task"></a>WriteCodeFragment Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [WriteCodeFragment görevi](https://docs.microsoft.com/visualstudio/msbuild/writecodefragment-task).  
-  
   
 Geçici bir kod dosyası belirtilen oluşturulan kod parçasını oluşturur. Dosya silinmez.  
   
@@ -52,7 +50,7 @@ Geçici bir kod dosyası belirtilen oluşturulan kod parçasını oluşturur. Do
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görevleri](../msbuild/msbuild-tasks.md)   
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+ [Görev Başvurusu](../msbuild/msbuild-task-reference.md)
 
 
 

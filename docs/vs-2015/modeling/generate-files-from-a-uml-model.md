@@ -1,7 +1,7 @@
 ---
 title: Bir UML modelinden dosyalar oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 20d017c8db48f2afa3732fbf99a8361775c9f6d8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7d2987084235f88d8360bb344445faa311956dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693437"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226505"
 ---
 # <a name="generate-files-from-a-uml-model"></a>UML modeli aracılığıyla dosya oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bir UML modelinden dosyalar oluşturma](https://docs.microsoft.com/visualstudio/modeling/generate-files-from-a-uml-model).  
-  
 Bir UML modelinden, program kodu, şemalar, belgelerin, kaynakları ve diğer yapılara hiçbir türde oluşturabilirsiniz. Bir UML modelinden metin dosyaları oluşturma kullanışlı bir yöntem ise [metin şablonlarını](../modeling/code-generation-and-t4-text-templates.md). Bu, program kodu içinde oluşturmak istediğiniz metni ekleme olanak tanır.  
   
  Başlıca üç senaryo vardır:  
@@ -43,7 +41,7 @@ Bir UML modelinden, program kodu, şemalar, belgelerin, kaynakları ve diğer ya
   
  Bu özellikler hakkında daha fazla bilgi için aşağıdaki konuları okuyun:  
   
--   [Modelleme Diyagramında Menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md)  
+-   [Modelleme diyagramında menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md)  
   
 -   [T4 Metin Şablonları İle Çalışma Süresi Metni Oluşturma](../modeling/run-time-text-generation-with-t4-text-templates.md)  
   

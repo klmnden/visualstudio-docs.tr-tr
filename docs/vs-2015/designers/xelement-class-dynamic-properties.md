@@ -1,7 +1,7 @@
 ---
 title: XElement sınıfı dinamik özellikleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,28 +14,26 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d2ed1352aeeeba4573fbe7b8ac7490aed7d7e8b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 15e3ad45f9588c7e43a58e40e6f75419ad505e04
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692171"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205453"
 ---
 # <a name="xelement-class-dynamic-properties"></a>XElement sınıfı dinamik özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [XElement sınıfı dinamik özellikleri](https://docs.microsoft.com/visualstudio/designers/xelement-class-dynamic-properties).  
-  
 Bu bölümde dinamik özelliklerini açıklayan <xref:System.Xml.Linq.XElement?displayProperty=fullName>[t] (<!-- TODO: review code entity reference <xref:assetId:///t?qualifyHint=False&amp;autoUpgrade=True>  -->) sınıfı.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
   
 |Konu|Açıklama|  
 |-----------|-----------------|  
-|[Özniteliği](../designers/attribute-xelement-dynamic-property.md)|Belirtilen bir genişletilmiş adına karşılık gelen öznitelik almak için kullanılan bir dizin oluşturucuyu alır.|  
-|[Öğesi](../designers/element-xelement-dynamic-property.md)|Belirtilen bir genişletilmiş adına karşılık gelen alt öğesi almak için kullanılan bir dizin oluşturucuyu alır.|  
+|[Öznitelik](../designers/attribute-xelement-dynamic-property.md)|Belirtilen bir genişletilmiş adına karşılık gelen öznitelik almak için kullanılan bir dizin oluşturucuyu alır.|  
+|[Öğe](../designers/element-xelement-dynamic-property.md)|Belirtilen bir genişletilmiş adına karşılık gelen alt öğesi almak için kullanılan bir dizin oluşturucuyu alır.|  
 |[Elements](../designers/elements-xelement-dynamic-property.md)|Geçerli öğenin belirtilen Genişletilmiş adı eşleşen alt öğeleri almak için kullanılan bir dizin oluşturucuyu alır.|  
-|[Alt öğeleri](../designers/descendants-xelement-dynamic-property.md)|Belirtilen bir genişletilmiş adı ile eşleşen tüm azalan öğeleri geçerli öğenin almak için kullanılan bir dizin oluşturucuyu alır.|  
+|[Alt Öğeler](../designers/descendants-xelement-dynamic-property.md)|Belirtilen bir genişletilmiş adı ile eşleşen tüm azalan öğeleri geçerli öğenin almak için kullanılan bir dizin oluşturucuyu alır.|  
 |[Değer](../designers/value-xelement-dynamic-property.md)|Alır veya bir öğenin içeriğini ayarlar.|  
 |[Xml](../designers/xml-xelement-dynamic-property.md)|Bir öğe biçimlendirilmemiş XML gösterimini alır.|  
   

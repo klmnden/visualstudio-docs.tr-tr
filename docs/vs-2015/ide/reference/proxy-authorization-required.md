@@ -1,7 +1,7 @@
 ---
 title: Proxy yetkilendirmesi gerekli | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 855fa85a8135ceac60f262fc5510fad4aa34b006
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2650dadddefe3be18a4406eb4fd07c5599622212
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683682"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259221"
 ---
 # <a name="proxy-authorization-required"></a>Proxy kimlik doğrulaması gerekli
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Proxy Yetkilendirmesi gerekli](https://docs.microsoft.com/visualstudio/ide/reference/proxy-authorization-required).  
-  
   
 Bu hata genellikle kullanıcılar Visual Studio Online için bir proxy sunucu üzerinden bağlanır ve proxy sunucusu çağrıları engeller oluşur. Visual Studio Online IDE açan kullanıcı tutmak için kullanılır.  
   

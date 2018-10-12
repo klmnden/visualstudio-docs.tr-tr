@@ -1,7 +1,7 @@
 ---
 title: Windows sekmesi, pencere Özellikleri iletişim kutusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 925727710ac36e40f2eed1a648418df745417c27
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9546be8fd50daea8369b00ae9bbc1eab2427c9c9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630561"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297225"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Pencereler Sekmesi, Pencere Özellikleri İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Windows sekmesi, pencere Özellikleri iletişim kutusu](https://docs.microsoft.com/visualstudio/debugger/windows-tab-window-properties-dialog-box).  
-  
 Kullanım **Windows** Windows'da bilgi göstermek için sekmesinde seçilen pencereyi ilgili. Görüntülenecek [pencere Özellikleri iletişim kutusu](../debugger/window-properties-dialog-box.md), odağı Taşı [Windows görünümü](../debugger/windows-view.md) penceresi. Herhangi bir pencere düğüm ağaçta seçin ve ardından **özellikleri** gelen **görünümü** menüsü.  
   
  Aşağıdaki ayarlar kullanılabilir **Windows** sekmesinde:  

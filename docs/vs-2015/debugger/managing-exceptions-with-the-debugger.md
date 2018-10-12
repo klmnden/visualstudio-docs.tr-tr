@@ -1,7 +1,7 @@
 ---
 title: Özel durumları hata ayıklayıcısı ile yönetme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -38,18 +38,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8837a633c12277a1caac2f88af3eb85a4db2dafc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05fda0b130d765d5028e9c257102100708908dca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684502"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285928"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Özel Durumları Hata Ayıklayıcısı ile Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [özel durumları Visual Studio hata ayıklayıcısı ile yönetme](https://docs.microsoft.com/visualstudio/debugger/managing-exceptions-with-the-debugger).  
-  
 Bir özel durum bir program yürütüldüğü sırada gerçekleşen bir hata durumu göstergesidir. Olabilir ve yanıt için en önemli özel durum işleyicileri sağlamanız gerekir, ancak nasıl kesmek, görmek istediğiniz için özel durumlar için hata ayıklayıcı ' ayarlanacağını bilmek önemlidir.  
   
  Ne zaman hata ayıklayıcının çıkış penceresinde bir özel durum iletisi yazar. bir özel durum oluşur. Aşağıdaki durumlarda yürütmeyi Kes:  
@@ -194,7 +192,7 @@ public class GenericException<T> : Exception
  [Nasıl yapılır: yerel çalışma zamanı denetimlerini kullanma](../debugger/how-to-use-native-run-time-checks.md)   
  [C çalışma zamanı kitaplığını kullanmadan çalışma zamanı kullanarak denetler](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
  [Özel durum Yardımcısı](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
- [Hata ayıklayıcı temel bilgileri](../debugger/debugger-basics.md)
+ [Hata Ayıklayıcısı Temel Bilgileri](../debugger/debugger-basics.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: BP_LOCATION_CODE_CONTEXT | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 37412896-021a-4f73-9bb7-4125502c2e18
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f75d61a786e26f1447c933440701df5948e7ac0a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c04c1b2f4645c85d1c12ae00343d50ccebd8961
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688815"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183670"
 ---
 # <a name="bplocationcodecontext"></a>BP_LOCATION_CODE_CONTEXT
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [BP_LOCATION_CODE_CONTEXT](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-location-code-context).  
-  
 Hata ayıklanan programa bir adres için doğrudan bağlı bir kesme noktası konumu açıklar.  
   
 ## <a name="syntax"></a>Sözdizimi  

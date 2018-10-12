@@ -1,7 +1,7 @@
 ---
 title: 'CA1404: P-Invoke ardından hemen GetLastError çağırın | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 848ab5a19e4e4dc51e898ce764bd381a29d1eafb
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 444617094e1f2bf3217a49f32652b240918abd8c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42900884"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297784"
 ---
 # <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: P/Invoke ardından hemen GetLastError çağır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA1404: P-Invoke sonra hemen GetLastError çağırın](https://docs.microsoft.com/visualstudio/code-quality/ca1404-call-getlasterror-immediately-after-p-invoke).
-
 |||
 |-|-|
 |TypeName|CallGetLastErrorImmediatelyAfterPInvoke|

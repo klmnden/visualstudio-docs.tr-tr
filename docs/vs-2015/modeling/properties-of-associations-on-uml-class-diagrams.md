@@ -1,7 +1,7 @@
 ---
 title: Sınıf diyagramları UML İlişkilendirmelerin Özellikleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 96dc1d942a06e4030992889970fd3946d2e4d9d4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f8274cd45142886dd71e0c8ce8e1950c0fee9609
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629970"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252076"
 ---
 # <a name="properties-of-associations-on-uml-class-diagrams"></a>UML sınıf diyagramlarındaki ilişkilendirmelerin özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [UML İlişkilendirmelerin Özellikleri sınıf diyagramları](https://docs.microsoft.com/visualstudio/modeling/properties-of-associations-on-uml-class-diagrams).  
-  
 Bir UML sınıf diyagramı çizebilirsiniz *ilişkilendirmeleri* herhangi bir tür çifti arasında. Bir sınıf, arabirim veya numaralandırma türüdür.  
   
  Bir ilişkilendirme geliştirdiğiniz sistem ilgili türlerinin örnekleri arasında tür bağlantılar içerdiğini gösterir. Genellikle, bu bağlantıları uygulanmasıyla ilgili herhangi bir şey göstermez. Örneğin, bunlar işaretçileri, bir tablodaki satırlar XML adlarında çapraz başvuru olması ve benzeri.  
@@ -74,7 +72,7 @@ Bir UML sınıf diyagramı çizebilirsiniz *ilişkilendirmeleri* herhangi bir t�
  [UML sınıf diyagramlarındaki türlerin özellikleri](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [UML sınıf diyagramlarındaki özniteliklerin özellikleri](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [UML sınıf diyagramlarındaki işlemlerin özellikleri](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
- [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md)
+ [UML Sınıf Diyagramları: Yönergeler](../modeling/uml-class-diagrams-guidelines.md)
 
 
 

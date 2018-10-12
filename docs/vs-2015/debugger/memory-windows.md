@@ -1,7 +1,7 @@
 ---
 title: Bellek Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 180abd9aed356613456790a328fb45d1c3ffcf69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9ce78912be4e4b29e323061996de650e1f2ff255
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673973"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297201"
 ---
 # <a name="memory-windows"></a>Bellek Pencereleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [hata ayıklayıcısı değişkenler için belleği görüntüleme](https://docs.microsoft.com/visualstudio/debugger/memory-windows).  
-  
 **Bellek** penceresi, uygulamanız tarafından kullanılan bellek alanını bir görünüm sağlar. **Watch** penceresinde **QuickWatch** iletişim kutusu, **Otolar** penceresinde ve **Yereller** penceresi olan değişken içeriğini göster bellekte belirli konumlara depolanır. Ancak **bellek** penceresi büyük ölçekli resmi gösterir. Bu görünüm, büyük (arabellek veya örneğin, büyük dizelerin) de diğer pencerelerinde görüntüleme veri parçaları incelemek için kullanışlı olabilir. Ancak, **bellek** penceresi verileri görüntülemek için sınırlı değildir. İçerik verileri, kod veya Çöp rastgele bitlerini atanmamış bellek olup olmadığını her şeyi bellek alanı görüntüler.  
   
  **Bellek** pencere, yalnızca adres seviyesinde hata ayıklamayı etkin değilse kullanılabilir **seçenekleri**iletişim kutusu,**hata ayıklama** düğümü. **Bellek** penceresini komut dosyası veya SQL, bellek kavramını tanımaz diller için kullanılabilir değil.  
@@ -129,7 +127,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [hata ayıklayıcısı değ
      Şimdi, kullanırken bir yürütme komutu gibi **adım**, görüntülenen adres bellek işaretçi değiştikçe otomatik olarak değiştirilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklayıcıda verileri görüntüleme](../debugger/viewing-data-in-the-debugger.md)
+ [Hata Ayıklayıcıda Verileri Görüntüleme](../debugger/viewing-data-in-the-debugger.md)
 
 
 

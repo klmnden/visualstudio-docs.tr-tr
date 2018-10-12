@@ -1,7 +1,7 @@
 ---
 title: Grafik nesne tablosu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64c2cf7af6c7133182d915c62aa763b2d8718c90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09ddad36cf6d9ae70c21a0e1f9505e257b253ca3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688081"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219526"
 ---
 # <a name="graphics-object-table"></a>Grafik Nesnesi Tablosu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Graphics Object Table](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-object-table).  
-  
 Visual Studio grafik analizi grafik nesnesi tablosu oyunlarda veya uygulamalarda karesi destekleyen Direct3D nesneleri anlamanıza yardımcı olur.  
   
  Bu nesne tablosu.  

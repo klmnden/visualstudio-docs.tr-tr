@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: derleme olayları belirtme (C#) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5bda99acace01e068c58bae78e20b44b28313722
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4f0a5198f1f8c402fda54f448f3c9b520baabfb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695062"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297303"
 ---
 # <a name="how-to-specify-build-events-c"></a>Nasıl Yapılır: Derleme Olayları Belirtme (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: derleme olayları belirtme (C#)](https://docs.microsoft.com/visualstudio/ide/how-to-specify-build-events-csharp).  
-  
 Oluşturma başlamadan önce veya derleme tamamlandıktan sonra çalışan komutlar belirtmek için derleme olaylarını kullanma. Derleme olayları, yalnızca derlemenin yapı işleminde bu noktaları başarıyla ulaşırsa yürütülür.  
   
  Bir proje oluşturulduğunda, derleme öncesi olayları PreBuildEvent.bat adlı bir dosyaya eklenir ve derleme sonrası olayları PostBuildEvent.bat adlı bir dosyaya eklenir. Hata denetimini sağlamak istiyorsanız, kendi hata denetimi komutları, yapı adımlarını ekleyin.  

@@ -1,7 +1,7 @@
 ---
 title: 'Öğretici 1: Resim Görüntüleyici oluşturma | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1472d682ea6c00807318873a3f738f792875d1bc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e8e881b4d8faef7ced037c8752f099af0e5e8bfa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632110"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214335"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Eğitmen 1: Resim Görüntüleyici Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [öğretici 1: Resim Görüntüleyici oluşturma](https://docs.microsoft.com/visualstudio/ide/tutorial-1-create-a-picture-viewer).  
-  
 Bu öğreticide, bir dosyadan resim yükleyen ve pencerede görüntüleyen bir program oluşturun. Düğmeler ve resim kutuları, form üzerindeki özellikleri ayarlamak ve sorunsuz formu yeniden boyutlandırmak için kapsayıcıları kullanma gibi denetimleri Sürüklemeyi öğrenin. Ayrıca, kod yazmaya başlayın. Aşağıdakilerin nasıl yapıldığını öğreneceksiniz:  
   
 -   Yeni bir proje oluşturun.  

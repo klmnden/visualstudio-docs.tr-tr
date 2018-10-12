@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8d73df73-cfff-4b8b-b426-d6051edb1939
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 01d80ae623be1e808164f71a922353f7556b69ec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cca25e55c43a94859588aca56f432e5c86dd5f94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628988"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213440"
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [IDebugProgram2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram2).  
-  
 Bu arabirim, bir işlemde çalışan bir program temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -51,15 +49,15 @@ IDebugProgram2 : IUnknown
 |[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)|Bu programa çalışan iş parçacıklarının numaralandırır.|  
 |[GetName](../../../extensibility/debugger/reference/idebugprogram2-getname.md)|Programın adını alır.|  
 |[GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)|Bu programı çalıştırmayı işlemi alır.|  
-|[sonlandırma](../../../extensibility/debugger/reference/idebugprogram2-terminate.md)|Bu program sona erer.|  
+|[Terminate](../../../extensibility/debugger/reference/idebugprogram2-terminate.md)|Bu program sona erer.|  
 |[Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md)|Bu programa ekler.|  
 |[CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)|Hata ayıklama altyapısı (DE) bir programdan ayırabilirsiniz belirler.|  
 |[Detach](../../../extensibility/debugger/reference/idebugprogram2-detach.md)|Hata ayıklayıcı bu programdan ayrılır.|  
 |[GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)|Bu program için genel olarak benzersiz bir tanımlayıcı alır.|  
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugprogram2-getdebugproperty.md)|Alır özellikleri program.|  
-|[Yürütme](../../../extensibility/debugger/reference/idebugprogram2-execute.md)|Bu program bir durdurulmuş çalışmaya devam eder. Herhangi bir önceki yürütme durumu temizlenir.|  
-|[Devam et](../../../extensibility/debugger/reference/idebugprogram2-continue.md)|Bu program bir durdurulmuş çalışmaya devam eder. Herhangi bir önceki yürütme durumu korunur.|  
-|[Adım](../../../extensibility/debugger/reference/idebugprogram2-step.md)|Bir adımı gerçekleştirir.|  
+|[Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)|Bu program bir durdurulmuş çalışmaya devam eder. Herhangi bir önceki yürütme durumu temizlenir.|  
+|[Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md)|Bu program bir durdurulmuş çalışmaya devam eder. Herhangi bir önceki yürütme durumu korunur.|  
+|[Step](../../../extensibility/debugger/reference/idebugprogram2-step.md)|Bir adımı gerçekleştirir.|  
 |[CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)|Bu program yürütme sonraki durdurma isteği, iş parçacığı kodun birini zaman.|  
 |[GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)|Bu programı çalıştırmayı hata ayıklama altyapısı (DE) tanıtıcısı ve adını alır.|  
 |[EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)|Belirli bir pozisyon kaynak dosyada kod bağlamları numaralandırır.|  

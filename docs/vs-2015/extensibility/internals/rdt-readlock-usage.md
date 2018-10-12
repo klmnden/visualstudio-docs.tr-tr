@@ -1,7 +1,7 @@
 ---
 title: RDT_ReadLock kullanımı | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 87f92f525d94ac81231272658c26f7484d93bef8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09bbded597fe29f01ac83589c0dc551929380030
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691407"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297797"
 ---
 # <a name="rdtreadlock-usage"></a>RDT_ReadLock Kullanımı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [RDT_ReadLock kullanımı](https://docs.microsoft.com/visualstudio/extensibility/internals/rdt-readlock-usage).  
-  
 <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> bir belge çalıştırılan Belge tablosu (RDT), kilitleme Visual Studio IDE içinde şu anda açık olan tüm belgelerin listesi olduğu için mantıksal sağlayan bayrak değeridir. Bu bayrak açıldığında belgeleri ve belge kullanıcı arabiriminde görünür veya kilitlerinden bellekte tutulan olup belirler.  
   
  Genellikle, kullanacağınız <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> aşağıdakilerden birini olduğunda true:  

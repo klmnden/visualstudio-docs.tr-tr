@@ -1,7 +1,7 @@
 ---
 title: NameProfile | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 966a3557c4436a625c7b8cd07ce850216085f194
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47db8dc67108e8d443e5f485babb906bd7b040f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632109"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301944"
 ---
 # <a name="nameprofile"></a>NameProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [NameProfile](https://docs.microsoft.com/visualstudio/profiling/nameprofile).  
-  
 `NameProfile` İşlevi belirtilen işlem veya iş parçacığı bir dize atar.  
   
  NameProfile API, yalnızca izleme profil oluşturmak için kullanılabilir. NameProfile API örnekleme profil için desteklenmiyor.  
@@ -143,7 +141,7 @@ void ExerciseNameProfile()
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio Profiler API Başvurusu (yerel)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Visual Studio Profil Oluşturucu API Başvurusu (Yerel)](../profiling/visual-studio-profiler-api-reference-native.md)
 
 
 

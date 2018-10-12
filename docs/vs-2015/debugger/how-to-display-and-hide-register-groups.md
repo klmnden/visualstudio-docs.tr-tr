@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: görüntüleme ve gizleme yazmaç gruplarını | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3060a21d9ffbaf079696eef83f01b7f0787ed59a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ff44cb0977103d7169ac0b3f14a8bf0fb8f6c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686298"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206498"
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>Nasıl Yapılır: Yazmaç Gruplarını Görüntüleme ve Gizleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: görüntü ve kayıt grupları Gizle](https://docs.microsoft.com/visualstudio/debugger/how-to-display-and-hide-register-groups).  
-  
 **Kaydeder** pencere, yalnızca adres seviyesinde hata ayıklamayı etkin değilse kullanılabilir **seçenekleri** iletişim kutusu, **hata ayıklama** düğümünün **genel**kategorisi.  
   
  Dağınıklığı, azaltmak için **kaydeder** penceresi kayıtları gruplar halinde düzenler. Sağ varsa **kaydeder** penceresinde görüntüleme ya da aşağıdaki yordamı izleyerek gördüğünüz şekilde Gizle bu grupları içeren bir kısayol menüsü göreceksiniz.  
@@ -56,7 +54,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: görünt
      Seçilemez bu nedenle üzerinde hata ayıklama donanım tarafından desteklenmeyen yazmaç gruplarını kısayol menüsünde, devre dışı bırakıldı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: yazmaçlar penceresini kullanma](../debugger/how-to-use-the-registers-window.md)
+ [Nasıl Yapılır: Yazmaçlar Penceresini Kullanma](../debugger/how-to-use-the-registers-window.md)
 
 
 

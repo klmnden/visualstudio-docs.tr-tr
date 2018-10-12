@@ -1,7 +1,7 @@
 ---
 title: Taşıma, geçirme ve Visual Studio projelerini yükseltme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,12 +24,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 324b24913edbe14152b3efa56bd2a594115798cf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec590e3c643f731a9c85bc59c0c36394988f6c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691241"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204262"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Visual Studio Projelerine Taşıma, Geçiş ve Yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Bu belgede hangi çözümler bulmak için kullanabileceğiniz Visual Studio'nun 
 |Proje Türü|Uyumluluk|  
 |---------------------|-------------------|  
 |Evrensel Windows platformu uygulamaları|Visual Studio kurulumunda Evrensel Windows uygulamaları, araçları yüklemek için seçin **özel** veya **Değiştir**ve ardından **Evrensel Windows uygulama geliştirme araçları**.<br /><br /> Windows 10 için evrensel Windows Platformu (UWP) uygulaması geliştirme yalnızca desteklenen [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] Windows 10 veya [!INCLUDE[win81](../includes/win81-md.md)].|  
-|Windows Mağazası uygulamaları|Windows Store uygulaması geliştirme, hem Windows 8.1 ve Windows Phone 8.1 hedefleyen Evrensel uygulamaları dahil olmak üzere desteklenen [!INCLUDE[win81](../includes/win81-md.md)] ve Windows 10. Varolan [!INCLUDE[win8](../includes/win8-md.md)] projeleri hizmet almaya devam edebilir ancak yeni [!INCLUDE[win8](../includes/win8-md.md)] projeleri oluşturulamaz. [!INCLUDE[win81](../includes/win81-md.md)] projeleri yalnızca belirli türlerdeki başvurulara bağlı olabilir. Daha fazla bilgi için [bir projedeki başvuruları yönetme](../ide/managing-references-in-a-project.md). **Not:** [!INCLUDE[win81](../includes/win81-md.md)] kullanarak oluşturduğunuz projeleri [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] veya [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] içinde açılamaz [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].   Çünkü [!INCLUDE[win81](../includes/win81-md.md)] kullanılarak oluşturulan projeler [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] ve [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] bu sürümleri hedefleyen ve [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] yalnızca destekler [!INCLUDE[win8](../includes/win8-md.md)] hedefleyen projelerde [!INCLUDE[win8](../includes/win8-md.md)].|  
+|Windows Mağazası uygulamaları|Windows Store uygulaması geliştirme, hem Windows 8.1 ve Windows Phone 8.1 hedefleyen Evrensel uygulamaları dahil olmak üzere desteklenen [!INCLUDE[win81](../includes/win81-md.md)] ve Windows 10. Varolan [!INCLUDE[win8](../includes/win8-md.md)] projeleri hizmet almaya devam edebilir ancak yeni [!INCLUDE[win8](../includes/win8-md.md)] projeleri oluşturulamaz. [!INCLUDE[win81](../includes/win81-md.md)] projeleri yalnızca belirli türlerdeki başvurulara bağlı olabilir. Daha fazla bilgi için [bir projedeki başvuruları yönetme](../ide/managing-references-in-a-project.md). **Not:** [!INCLUDE[win81](../includes/win81-md.md)] kullanarak oluşturduğunuz projeleri [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] veya [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] içinde açılamaz [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Çünkü [!INCLUDE[win81](../includes/win81-md.md)] kullanılarak oluşturulan projeler [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] ve [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] bu sürümleri hedefleyen ve [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] yalnızca destekler [!INCLUDE[win8](../includes/win8-md.md)] hedefleyen projelerde [!INCLUDE[win8](../includes/win8-md.md)].|  
 |[!INCLUDE[net_v451](../includes/net-v451-md.md)]|Oluşturabilir ve bu projelerde kullan [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] ve [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] uygun çoklu sürüm desteği paketini yükledikten sonra. Bu projeler Visual Studio 2010 SP1 sürümünde desteklenmez.|  
 |[!INCLUDE[net_v45](../includes/net-v45-md.md)]|Oluşturabilir ve bu projelerde açık [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] ve [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], ancak Visual Studio 2010 SP1 içinde değil.|  
 |BizTalk|BizTalk server projeleri ile uyumlu olmayan [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] veya [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].|  

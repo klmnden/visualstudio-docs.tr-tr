@@ -1,7 +1,7 @@
 ---
 title: ClickOnce Dağıtımları içinde belirli hataları giderme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 4ec87f12dc97ced54248c7323643b417fb14a63c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0b7e53eba21372641bad683c442e796648a4765
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631954"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213648"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>ClickOnce Dağıtımları İçinde Belirli Hataları Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ClickOnce Dağıtımları içinde belirli hataları giderme](https://docs.microsoft.com/visualstudio/deployment/troubleshooting-specific-errors-in-clickonce-deployments).  
-  
 Bu konu, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama ve her sorunu gidermek için adımları sağlar.  
   
 ## <a name="general-errors"></a>Genel hatalar  

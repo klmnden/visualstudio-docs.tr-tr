@@ -1,7 +1,7 @@
 ---
 title: BC doku sıkıştırma çeşidi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a33bef6c94d738a51ef5f9cbc93a14d2f4648011
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da5df0faa57a63f44892fa86785bccf4716f38f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684396"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203313"
 ---
 # <a name="bc-texture-compression-variant"></a>BC Doku Sıkıştırma Çeşidi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [BC doku sıkıştırma değişken](https://docs.microsoft.com/visualstudio/debugger/graphics/bc-texture-compression-variant).  
-  
 Etkinleştirir sıkıştırma B8G8R8X8, B8G8R8A8 veya R8G8B8A8 çeşididir bir piksel biçimi dokular hakkında engelleyin.  
   
 ## <a name="interpretation"></a>Yorumu  
@@ -71,7 +69,7 @@ Etkinleştirir sıkıştırma B8G8R8X8, B8G8R8A8 veya R8G8B8A8 çeşididir bir p
  Bu değişken blok-dokular çağırmadan önce çalışma zamanında sıkıştırır `CreateTexture2D`. Bu yaklaşım üretim kodu için karşı daha fazla disk alanı sıkıştırılmamış dokular tükettiği için ve blok tabanlı sıkıştırma önemli gerektirdiğinden ek adım uygulamanız yükleme sürelerini önemli ölçüde artırabildiğinden öneririz kodlanacak hesaplama kaynaklarını sağlar. Bunun yerine, bir Resim Düzenleyicisi'ni veya derleme işlem hattınızı parçası olan görüntü işlemci kullanarak çevrimdışı, doku sıkıştırma öneririz. Bu yaklaşımların disk alanı gereksinimlerini azaltmak, çalışma zamanı uygulamanızda ek yükü ortadan kaldırır ve daha fazla işleme süresi en iyi görüntü kalitesini tutabildiğiniz göze.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yarı/Çeyrek doku boyutları çeşidi](../debugger/half-quarter-texture-dimensions-variant.md)
+ [Yarı/Çeyrek Doku Boyutları Çeşidi](../debugger/half-quarter-texture-dimensions-variant.md)
 
 
 

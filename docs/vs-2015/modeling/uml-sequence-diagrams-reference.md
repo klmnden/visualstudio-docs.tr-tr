@@ -1,7 +1,7 @@
 ---
 title: 'UML sıralı diyagramlar: Başvuru | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 43
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 94ae423e74e0d78389a196adf1185ebdfa062069
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ebadcc72e346aac26b227ff069e20ffd81a601e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692853"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195136"
 ---
 # <a name="uml-sequence-diagrams-reference"></a>UML Sıralı Diyagramlar: Başvuru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [UML sıralı diyagramlar: başvuru](https://docs.microsoft.com/visualstudio/modeling/uml-sequence-diagrams-reference).  
-  
 Visual Studio'da bir *sıralı diyagram* etkileşimi temsil eden sınıfları, bileşenleri, alt sistemler veya aktör örnekleri arasında iletiler dizisini gösterir. Zaman diyagram akar ve denetim akışını bir katılımcıdan diğerine gösterir. Nesneler ve sınıflar ve yöntemler yerine olayları görselleştirmek üzere sıralı diyagramlar kullanın. Aynı türde birden fazla örneği çok diyagramda görünebilir. Aynı mesajın birden fazla yinelenmiş de görünür.  
   
  UML sıralı diyagramlar bir UML modeli bir parçasıdır ve yalnızca UML modelleme projeleri içinde mevcuttur. Bir UML sıralı diyagramı oluşturmak için **mimarisi** menüsünde tıklatın **yeni UML veya katman diyagramı**. Oluşturma ve çizme hakkında daha fazla bilgi edinin [UML sıralı diyagramlar](../modeling/uml-sequence-diagrams-guidelines.md) veya [UML modelleme diyagramlarını](../modeling/edit-uml-models-and-diagrams.md) genel.  
@@ -45,7 +43,7 @@ Visual Studio'da bir *sıralı diyagram* etkileşimi temsil eden sınıfları, b
   
  ![Sıralı Diyagram bölümlerini](../modeling/media/uml-sequence.png "UML_Sequence")  
   
-|**Şekil**|**Öğesi**|**Açıklama**|  
+|**Şekil**|**Öğe**|**Açıklama**|  
 |---------------|-----------------|---------------------|  
 |1.|**Yaşam çizgisi**|Bir satır aşağı zaman ilerlemesi sırasında etkileşim sırasında bir katılımcı gerçekleşen olayların sırasını temsil eden bir dikey çizgi. Bu katılımcı, bir sınıf, bileşen veya aktörün bir örneğini olabilir.|  
 |2|**Aktör**|Geliştirmekte olduğunuz sisteme dış katılımcı.<br /><br /> Bir aktör simge yaşam çizgisinin üstünde ayarlayarak görünür yapabilirsiniz, **aktör** özelliği.|  
@@ -71,7 +69,7 @@ Visual Studio'da bir *sıralı diyagram* etkileşimi temsil eden sınıfları, b
  [UML Kullanım durumu diyagramları: başvuru](../modeling/uml-use-case-diagrams-reference.md)   
  [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)   
  [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)   
- [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)
+ [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)
 
 
 

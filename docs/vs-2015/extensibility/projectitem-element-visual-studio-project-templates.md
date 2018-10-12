@@ -1,7 +1,7 @@
 ---
 title: ProjectItem öğesi (Visual Studio Proje şablonları) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 70f848f39fac464e2c02717a76dfc691b291613a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 16caf0ec50d061a1f7e89aa5bee141495397ce68
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684222"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301307"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem Öğesi (Visual Studio Proje Şablonları)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ProjectItem öğesi (Visual Studio Proje şablonları)](https://docs.microsoft.com/visualstudio/extensibility/projectitem-element-visual-studio-project-templates).  
-  
 Proje şablonunda içeren bir dosyayı belirtir.  
   
 > [!NOTE]

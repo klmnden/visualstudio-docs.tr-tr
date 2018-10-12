@@ -1,7 +1,7 @@
 ---
 title: Seçilen bir veya daha fazla öğe tasarımcı tarafından desteklenmeyen bir veri türü içeren | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6acf9d49d2deae1c46466f5bd39d1385fa8c32e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 640dd69990e3c659efe98ef5e73ae83098c58c1a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630209"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177006"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Seçilen bir veya birden çok öğe, tasarımcı tarafından desteklenmeyen bir veri türü içeriyor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [seçilen bir veya daha fazla öğe tasarımcı tarafından desteklenmeyen bir veri türü içeren](https://docs.microsoft.com/visualstudio/data-tools/one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer).  
-  
   
 Bir veya daha fazla öğe sürüklediğiniz gelen **Sunucu Gezgini**/**veritabanı Gezgini** üzerine [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] tarafından desteklenmeyen bir veri türü içeren [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] (örneğin, [Kullanıcı tanımlı CLR türlerini](http://msdn.microsoft.com/library/9f70e0b0-3a0d-4eb1-b914-07a5d0c167c2)).  
   

@@ -1,7 +1,7 @@
 ---
 title: Kod parçacıkları için en iyi uygulamalar | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2c775dd0f5c7242779dcded5027ebf92e51a0406
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c02abbef9a5a9022e5a887c5a9aa452143adb8b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630698"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241325"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Kod Parçacıkları İçin En İyi Uygulamalar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [kullanarak kod parçacıkları için en iyi](https://docs.microsoft.com/visualstudio/ide/best-practices-for-using-code-snippets).  
-  
 Kod parçacığı kodda bir şey yalnızca en basit yol gösterir. Çoğu uygulama için kod uygulaması uyacak şekilde değiştirilmesi gerekir.  
   
 ## <a name="handling-exceptions"></a>Özel Durumları İşleme  

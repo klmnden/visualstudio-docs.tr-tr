@@ -1,7 +1,7 @@
 ---
 title: VSIX renk derleyicisi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 08358c8d4b77834bf0dfefe626891de44b2b754c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3594d587f9d4968127b6e81a5c5e3b5549a9df89
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694783"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207330"
 ---
 # <a name="vsix-color-compiler"></a>VSIX Renk Derleyicisi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [VSIX renk derleyicisi](https://docs.microsoft.com/visualstudio/extensibility/internals/vsix-color-compiler).  
-  
 Visual Studio uzantısı renk derleyicisi bir .pkgdef için dosya Visual Studio'da bu renkleri kullanılabilir olacak şekilde dönüştürür ve mevcut Visual Studio Tema renkleri temsil eden bir .xml dosyasına götüren bir konsol uygulamasına bir araçtır. .Xml dosyaları arasındaki farkları karşılaştırmak kolay olduğundan, bu kaynak denetiminde özel renkler yönetmek için kullanışlı bir araçtır. Böylece yapı çıkışını geçerli .pkgdef dosyası derleme ortamlara da bağlanabilir.  
   
  **Temanın XML Şeması**  
@@ -58,7 +56,7 @@ Visual Studio uzantısı renk derleyicisi bir .pkgdef için dosya Visual Studio'
   
 |||  
 |-|-|  
-|**Özniteliği**|**Tanım**|  
+|**Öznitelik**|**Tanım**|  
 |Ad|[Gerekli] Temanın adı|  
 |GUID|[Gerekli] Temanın GUID (GUID biçimlendirme eşleşmelidir)|  
   
@@ -84,7 +82,7 @@ Visual Studio uzantısı renk derleyicisi bir .pkgdef için dosya Visual Studio'
   
 |||  
 |-|-|  
-|**Özniteliği**|**Tanım**|  
+|**Öznitelik**|**Tanım**|  
 |Ad|[Gerekli] Kategori adı|  
 |GUID|[Gerekli] Kategori GUID (GUID biçimlendirme eşleşmelidir)|  
   
@@ -101,7 +99,7 @@ Visual Studio uzantısı renk derleyicisi bir .pkgdef için dosya Visual Studio'
   
 |||  
 |-|-|  
-|**Özniteliği**|**Tanım**|  
+|**Öznitelik**|**Tanım**|  
 |Ad|[Gerekli] Renk adı|  
   
  **Arka plan ve/veya ön plan**  
@@ -115,7 +113,7 @@ Visual Studio uzantısı renk derleyicisi bir .pkgdef için dosya Visual Studio'
   
 |||  
 |-|-|  
-|**Özniteliği**|**Tanım**|  
+|**Öznitelik**|**Tanım**|  
 |Tür|[Gerekli] Renk türü. Aşağıdakilerden biri olabilir:<br /><br /> *CT_INVALID:* geçersiz ya da ayarlanmadığından rengi.<br /><br /> *CT_RAW:* bir ham ARGB değeri.<br /><br /> *CT_COLORINDEX:* KULLANMAYIN.<br /><br /> *CT_SYSCOLOR:* SysColor Windows sistem renk.<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX Visual Studio renk.<br /><br /> *CT_AUTOMATIC:* otomatik rengi.<br /><br /> *CT_TRACK_FOREGROUND:* KULLANMAYIN.<br /><br /> *CT_TRACK_BACKGROUND:* KULLANMAYIN.|  
 |Kaynak|[Gerekli] Rengin onaltılık olarak temsil edilen değeri|  
   

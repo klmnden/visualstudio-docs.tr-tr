@@ -1,7 +1,7 @@
 ---
 title: Yeni veya değiştirilen davranışı Düzenleyicisi bağdaştırıcısıyla | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce1cc8c95fcd2c6a34342b71c1c94bf5930e0e51
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 740fc83a9ded8ad35b93120d6fdec5767ceeea82
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692704"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178964"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Düzenleyici bağdaştırıcıları ile yeni veya değiştirilen davranışı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yeni veya değiştirilen davranışı Düzenleyicisi bağdaştırıcısıyla](https://docs.microsoft.com/visualstudio/extensibility/new-or-changed-behavior-with-editor-adapters).  
-  
 Visual Studio çekirdek Düzenleyicisi önceki sürümlerini karşı yazılmış kodu güncelleştirmekte olduğunuz ve yeni API kullanmak yerine Düzenleyicisi bağdaştırıcıları (veya dolgular) kullanmayı planlıyorsanız, düzenleyici bağdaştırıcılarının davranışta aşağıdaki farklar farkında olmalıdır önceki çekirdek Düzenleyici göre.  
   
 ## <a name="features"></a>Özellikler  

@@ -1,7 +1,7 @@
 ---
 title: 'UML sınıf diyagramları: Başvuru | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 43
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 239b5427c4e19b15e44d683def0e2d6c82dccdfe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 890c69a4cde928e645dd2ede9fbbb27f66a44794
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683783"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220135"
 ---
 # <a name="uml-class-diagrams-reference"></a>UML Sınıf Diyagramları: Başvuru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [UML sınıf diyagramları: başvuru](https://docs.microsoft.com/visualstudio/modeling/uml-class-diagrams-reference).  
-  
 Bir UML sınıf diyagramı nesne ve hem iç hem de kullanıcılar ile iletişim yapıları, uygulamanız tarafından kullanılan bilgileri açıklar. Bu, belirli bir uygulamaya başvuru olmadan bilgiler açıklanmaktadır. Alt sınıflar ve ilişkiler, veritabanı tablolarını, XML düğümüyle veya yazılım nesnelerin bileşimleri gibi pek çok yolla uygulanabilir.  
   
 > [!NOTE]
@@ -57,16 +55,16 @@ Bir UML sınıf diyagramı nesne ve hem iç hem de kullanıcılar ile iletişim 
   
 -   [UML sınıf diyagramlarındaki işlemlerin özellikleri](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
--   [UML sınıf diyagramlarındaki İlişkilendirmelerin Özellikleri](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
+-   [UML sınıf diyagramlarındaki ilişkilendirmelerin özellikleri](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
   
  ![Üç ilişkileri gösteren ve Özellikler sınıfları](../modeling/media/uml-classovreading.png "UML_ClassOvReading")  
   
-|**Şekil**|**Öğesi**|**Açıklama**|  
+|**Şekil**|**Öğe**|**Açıklama**|  
 |---------------|-----------------|---------------------|  
 |1.|**Sınıfı**|Yapısal veya davranışsal özellikleri paylaşan nesnelerin tanımıdır. Daha fazla bilgi için [özellikleri türleri UML sınıf diyagramları](../modeling/properties-of-types-on-uml-class-diagrams.md).|  
 |1.|Sınıflandırıcısı|Bir sınıf, arabirim veya numaralandırma genel adı. Bileşenler, kullanım örnekleri ve aktörler de sınıflandırıcıdır.|  
 |2|Daraltma / genişletme denetimi|Sınıflandırıcı ayrıntılarını göremiyorsanız, genişletici sınıflandırıcı sol konumunda tıklayın. Öğesine tıklamanız her bir kesim üzerinde [+] olabilir.|  
-|3|**Özniteliği**|Her bir sınıflandırıcı örneğine bağlı türü belirtilmiş bir değer.<br /><br /> Bir öznitelik eklemek için tıklatın **öznitelikleri** bölüm ve tuşuna **ENTER**. Öznitelik imzası yazın. Daha fazla bilgi için [özelliklerini öznitelikleri UML sınıf diyagramları](../modeling/properties-of-attributes-on-uml-class-diagrams.md).|  
+|3|**Öznitelik**|Her bir sınıflandırıcı örneğine bağlı türü belirtilmiş bir değer.<br /><br /> Bir öznitelik eklemek için tıklatın **öznitelikleri** bölüm ve tuşuna **ENTER**. Öznitelik imzası yazın. Daha fazla bilgi için [özelliklerini öznitelikleri UML sınıf diyagramları](../modeling/properties-of-attributes-on-uml-class-diagrams.md).|  
 |4|**İşlemi**|Bir yöntem veya işlev, sınıflandırıcı örneklerinin tarafından gerçekleştirilebilir. Bir işlem eklemek için tıklatın **işlemleri** bölüm ve tuşuna **ENTER**. İşlemin imzasını yazın. Daha fazla bilgi için [UML işlemlerin özellikleri sınıf diyagramları](../modeling/properties-of-operations-on-uml-class-diagrams.md).|  
 |5|**İlişkilendirme**|Üyeleri, iki sınıflandırıcı arasındaki ilişki. Daha fazla bilgi için [UML İlişkilendirmelerin Özellikleri sınıf diyagramları](../modeling/properties-of-associations-on-uml-class-diagrams.md).|  
 |5a|**Toplama**|Paylaşılan sahiplik ilişkisini gösteren bir ilişkilendirmedir. **Toplama** özelliği sahip rolünün **paylaşılan**.|  
@@ -88,7 +86,7 @@ Bir UML sınıf diyagramı nesne ve hem iç hem de kullanıcılar ile iletişim 
   
  ![Bağlayıcı ve lollipop ile gösterilen gerçekleştirme](../modeling/media/uml-classovrealize.png "UML_ClassOvRealize")  
   
-|Şekil|**Öğesi**|Açıklama|  
+|Şekil|**Öğe**|Açıklama|  
 |-----------|-----------------|-----------------|  
 |15|**gerçekleştirme**|Sınıf, arabirim tarafından tanımlanan öznitelikleri ve işlemleri uygular.<br /><br /> Kullanım **devralma** gerçekleştirme arasında bir sınıf ve arabirim oluşturmak için aracı.|  
 |16|**gerçekleştirme**|Alternatif bir sunu aynı ilişki. Lolipop simge etiketi arabirimi tanımlar.<br /><br /> Bu sunum oluşturmak için varolan gerçekleştirme ilişkisini seçin. İlişkilendirmenin yanında bir eylem etiketi görünür. Eylem etiketine ve ardından **Lolipop olarak göster**.|  
@@ -99,7 +97,7 @@ Bir UML sınıf diyagramı nesne ve hem iç hem de kullanıcılar ile iletişim 
  [UML sınıf diyagramlarındaki türlerin özellikleri](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [UML sınıf diyagramlarındaki özniteliklerin özellikleri](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [UML sınıf diyagramlarındaki işlemlerin özellikleri](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
- [UML sınıf diyagramlarındaki İlişkilendirmelerin Özellikleri](../modeling/properties-of-associations-on-uml-class-diagrams.md)
+ [UML sınıf diyagramlarındaki ilişkilendirmelerin özellikleri](../modeling/properties-of-associations-on-uml-class-diagrams.md)
 
 
 

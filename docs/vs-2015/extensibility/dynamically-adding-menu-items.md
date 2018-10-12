@@ -1,7 +1,7 @@
 ---
 title: Dinamik olarak menü öğeleri ekleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: edd3a97eea69843bcd09a9483a7cea196d3a4c5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cb0cd49d8ce9f1851bd54bb3362932de775eb2c2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682136"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300208"
 ---
 # <a name="dynamically-adding-menu-items"></a>Dinamik Olarak Menü Öğeleri Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [dinamik olarak menü öğeleri ekleme](https://docs.microsoft.com/visualstudio/extensibility/dynamically-adding-menu-items).  
-  
 Çalışma zamanında menü öğelerini belirterek ekleyebilirsiniz `DynamicItemStart` (kodda) menüsünde sayısını tanımlama görüntüleme ve komut işleme daha sonra Visual Studio komut tablosu (.vsct) dosyasında bir yer tutucu düğmesi tanımı bayrağı komutu. VSPackage'ı yüklendiğinde, yer tutucu Dinamik menü öğeleri ile değiştirilir.  
   
  Visual Studio kullanan dinamik listelerinde **en son kullanılan** (MRU) listesinde, son açtığınız belgeleri adlarını görüntüler ve **Windows** windows adlarını gösteren liste şu anda açık olan.   `DynamicItemStart` Bir komut tanımı bayrağı VSPackage açılıncaya kadar komutu bir yer tutucu olduğunu belirtir. VSPackage'ı açıldığında, yer tutucu 0 ya da çalışma zamanında oluşturulan ve dinamik listeye eklenen diğer komutları ile değiştirilir. VSPackage'ı açılıncaya kadar dinamik listesi göründüğü menüsünde konumu görmek mümkün olmayabilir.  Dinamik listeyi doldurmak için VSPackage'ı ilk karakterine yer tutucu kimliği aynı olan bir Kimliğe sahip bir komut aramak için Visual Studio ister. Visual Studio eşleşen bir komut bulduğunda, komutun adını dinamik listesine ekler. Ardından kimliği artırır ve kalmayana kadar daha fazla dinamik komutları dinamik listeye eklemek için başka bir eşleşen komutunu arar.  

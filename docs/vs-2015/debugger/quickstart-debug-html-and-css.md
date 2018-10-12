@@ -1,7 +1,7 @@
 ---
 title: 'Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 104
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b331ccf0cf180364738f5ac9084b0bd2ff6b716b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2896d88ee5730482aeca737f89e5b5340070be7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693072"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225491"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [hızlı başlangıç: hata ayıklama HTML ve CSS](https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-html-and-css).  
-  
 Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Visual Studio, JavaScript uygulamaları için Internet Explorer ve Visual Studio geliştiricilerinin aşina olan özellikleri içeren kapsamlı bir hata ayıklama deneyimi sağlar. Bu özellikler için desteklenen [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], Windows Phone Store uygulamaları ve Apache Cordova için Visual Studio Araçları kullanılarak oluşturulan uygulamalar için  
@@ -54,7 +52,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
 -   [DOM Gezgini'ni kullanarak CSS stillerinde hata ayıklama](../debugger/debug-css-styles-using-dom-explorer.md)  
   
--   [DOM Gezgini'ni kullanarak Düzen hatalarını ayıklama](../debugger/debug-layout-using-dom-explorer.md)  
+-   [DOM Gezgini'ni kullanarak düzen hatalarını ayıklama](../debugger/debug-layout-using-dom-explorer.md)  
   
 -   [DOM olayı dinleyicilerini görüntüleme](../debugger/view-dom-event-listeners.md)  
   

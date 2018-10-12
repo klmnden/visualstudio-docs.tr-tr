@@ -1,7 +1,7 @@
 ---
 title: Özet görünümü | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b253767977a59ba782dbaae9eb3384bba5f313d8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 242250476a55ce33344863003a90d9c829eaea1a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695789"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301541"
 ---
 # <a name="summary-view"></a>Özet Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [özeti görünümünü](https://docs.microsoft.com/visualstudio/profiling/summary-view).  
-  
 Özet görünümü profil oluşturma yürütmesine en pahalı performans işlevleri veya nesneler hakkındaki bilgileri görüntüler. Bu görünümde bir zaman çizelgesi grafiği sağlar ve profil oluşturma yöntemine performans ölçümleri temelinde en pahalı işlevleri veya nesneleri iki veya daha fazla listesini alan. Bu görünümdeki veriler kullanılan profil oluşturma yöntemine bağlıdır (örnekleme, izleme veya eşzamanlılık) ve .NET bellek ayırma olup toplanmadı.  
   
  Eşzamanlılık verileri Özet görünümünü dışındaki tüm Özet görünümleri için profil oluşturma gerçekleşen zaman içinde oluşturulan uygulamanın işlemci (CPU) kullanımı Özet görünümünde zaman çizelgesi grafiği gösterir.  

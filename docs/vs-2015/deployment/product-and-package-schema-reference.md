@@ -1,7 +1,7 @@
 ---
 title: Ürün ve paket şema başvurusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7812354ee1de5341838029e2198912840da6f0b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6fb70a1dff0f166aabeaf0facdd4b031f3d4fb6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691258"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271043"
 ---
 # <a name="product-and-package-schema-reference"></a>Ürün ve Paket Şema Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ürün ve paket şema başvurusu](https://docs.microsoft.com/visualstudio/deployment/product-and-package-schema-reference).  
-  
 A *ürün dosyası* tüm gerekli dış bağımlılıkları tanımlayan bir XML bildirimi olan bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama. Dış bağımlılıklar örnekler [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ve Microsoft Data Access Components (MDAC). Bir paket dosyası ürün dosyasına benzer ancak yerelleştirilmiş derlemeleri, lisans sözleşmelerini ve belgeler gibi bir bağımlılık kültüre bağlı bileşenleri yüklemek için kullanılır.  
   
  Ürün ve paket dosyası birini bir üst düzey `Product` veya `Package` öğesi, her biri aşağıdaki öğeleri içerir.  

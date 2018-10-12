@@ -1,7 +1,7 @@
 ---
 title: Kullanıcı arabirim başvurusunda hata ayıklama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,33 +27,31 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8059274914093f0beaa22b3e4841c7b2cf44e6a2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d872d338bd44a561b71266243a07faa607bdcdaf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693100"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206329"
 ---
 # <a name="debugging-user-interface-reference"></a>Kullanıcı Arabirim Başvurusunda Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [kullanıcı arabirim başvurusunda hata ayıklama](https://docs.microsoft.com/visualstudio/debugger/debugging-user-interface-reference).  
-  
 Uygulamanızda hata ayıklama olarak aşağıdaki iletişim kutuları karşılaşabilirsiniz.  
   
  Birçok hata ayıklayıcı özelliği Visual Studio genişletilebilirlik modelini kullanarak otomatik hale getirebilirsiniz. Daha fazla bilgi için Visual Studio hata ayıklama SDK bakın.  
   
--   [Kesme noktaları iletişim kutusu seç](../debugger/choose-breakpoints-dialog-box.md)  
+-   [Kesme Noktaları Seç İletişim Kutusu](../debugger/choose-breakpoints-dialog-box.md)  
   
--   [Kaynak dosyaları, ortak özellikler, çözüm özellik sayfaları iletişim kutusu hata ayıklama](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)  
+-   [Kaynak Dosyalarda Hata Ayıklama, Ortak Özellikler, Çözüm Özellik Sayfaları İletişim Kutusu](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)  
   
--   [Hata ayıklama, Seçenekler iletişim kutusu](../debugger/debugging-options-dialog-box.md)  
+-   [Hata Ayıklama, Seçenekler İletişim Kutusu](../debugger/debugging-options-dialog-box.md)  
   
--   [Düzenle ve devam et iletişim kutusu](../debugger/edit-and-continue-dialog-box.md)  
+-   [Düzenle ve Devam Et İletişim Kutusu](../debugger/edit-and-continue-dialog-box.md)  
   
--   [İlerleme durumu iletişim kutusu hata ayıklamayı Durdur](../debugger/stop-debugging-in-progress-dialog-box.md)  
+-   [Devam Eden Hata Ayıklamayı Durdur İletişim Kutusu](../debugger/stop-debugging-in-progress-dialog-box.md)  
   
--   [Hata ayıklama hataları ve uyarı iletişim kutuları](../debugger/debugging-errors-and-warning-dialog-boxes.md)  
+-   [Hataları Ayıklama ve Uyarı İletişim Kutuları](../debugger/debugging-errors-and-warning-dialog-boxes.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md)   

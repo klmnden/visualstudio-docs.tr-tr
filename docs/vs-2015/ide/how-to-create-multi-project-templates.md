@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: birden çok proje şablonu oluşturma | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ce7147df5b15dd6aaa639c27b2d2ffbc0b3d3152
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 99c8a008cf48d596569e61534d7bfbf7cb9e45c8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631090"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256574"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Nasıl Yapılır: Birden Çok Proje Şablonu Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: Create multi-Project Templates](https://docs.microsoft.com/visualstudio/ide/how-to-create-multi-project-templates).  
-  
 Birden fazla projeli şablonlar, iki veya daha fazla proje için kapsayıcı olarak davranır. Ne zaman bir proje bir çoklu proje şablonunu temel alarak oluşturulur **yeni proje** iletişim kutusu, şablondaki her proje, çözüme eklenir.  
   
  Birden çok proje şablonu, sıkıştırılmış bir .zip dosyasına aşağıdaki öğeleri içermelidir:  

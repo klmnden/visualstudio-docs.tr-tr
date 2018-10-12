@@ -1,7 +1,7 @@
 ---
 title: Kullanılabilir kaynak yok | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4fd7643dd7334a220d1e5c78ef12bddf07af11f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f9213abc9dab5824422b0fadf3920ffb188ab14
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630550"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266090"
 ---
 # <a name="no-source-available"></a>Kullanılabilir Kaynak Yok
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Hayır kaynağı kullanılabilir](https://docs.microsoft.com/visualstudio/debugger/no-source-available).  
-  
 Projenizin kaynak kodunu görüntülemeye çalıştığınız kod içermiyor. Olağan sebep, kaynak kodu olmayan bir modül çift **çağrı yığını penceresinde** veya **iş parçacıkları penceresi**. Hata ayıklamak, devam edebilirsiniz, ancak kaynak penceresinde kesme noktaları ayarlamak ve bu konumdaki diğer eylemleri gerçekleştirmek için kullanamazsınız. Bir kesme noktası ayarlamak ihtiyacınız varsa, **ayrıştırma penceresi** yerine.  
   
  Çözüm özellik sayfaları'nda hata ayıklayıcı kaynakları dosyalarını nerede arar dizinleri değiştirin ve seçili kaynak dosyaları yoksaymak için hata ayıklayıcının işlemi durdurmasını. Bkz: [kaynak dosyaları, ortak özellikler, çözüm özellik sayfaları iletişim kutusu için hata ayıklama](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md).  

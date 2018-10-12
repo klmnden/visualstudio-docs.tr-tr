@@ -1,7 +1,7 @@
 ---
 title: Uygulama özel kategoriler ve öğeleri görüntüleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c47bc8bc4cae609ad378dabaf64f239b7aa47c6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4a9f18330060888527466c29f911a37ce29ce46
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632007"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218679"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Uygulama özel kategoriler ve öğeleri görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [uygulama özel kategoriler ve görüntü öğeleri](https://docs.microsoft.com/visualstudio/extensibility/implementing-custom-categories-and-display-items).  
-  
 VSPackage denetim yazı tipleri ve renkler için kendi metin sağlayabilir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] özel kategoriler ve görüntü öğeleri aracılığıyla tümleşik geliştirme ortamı (IDE).  
   
  Özel kategorileri ve görüntü öğeleri olan **yazı tipleri ve renkler** özellik sayfası. Açmak için **yazı tipleri ve renkler** özellik sayfasında **Araçları** menüsünde tıklatın **seçenekleri**. Genişletin **ortam** ve ardından **yazı tipleri ve renkler**.  
@@ -141,5 +139,5 @@ VSPackage denetim yazı tipleri ve renkler için kendi metin sağlayabilir [!INC
  [Yazı tipi ve metin renklendirmesi için renk bilgilerini alma](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
  [Saklı yazı tipi ve renk ayarlarını erişme](../extensibility/accessing-stored-font-and-color-settings.md)   
  [Nasıl yapılır: yerleşik yazı tipi ve renk şeması erişim](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)   
- [Yazı tipi ve renk genel bakış](../extensibility/font-and-color-overview.md)
+ [Yazı Tipi ve Renklere Genel Bakış](../extensibility/font-and-color-overview.md)
 

@@ -1,7 +1,7 @@
 ---
 title: 'CA1600: boş işlem önceliğini kullanmayın | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b211c1ab646d27cf32290d3c5c306719ba7decff
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: b297f3769f16b46ede954d8336e96684115a64bc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902570"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265243"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: Boş işlem önceliğini kullanmayın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA1600: boş işlem önceliğini kullanmayın](https://docs.microsoft.com/visualstudio/code-quality/ca1600-do-not-use-idle-process-priority).
-
 |||
 |-|-|
 |TypeName|DoNotUseIdleProcessPriority|

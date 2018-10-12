@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Kabuğu (tümleşik) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5e5247261a94b04e1730398f0d8c751ff1a020d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60456a99023067e76a4396cb18990b9d0f900920
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688420"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296451"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Kabuğu (tümleşik)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Visual Studio tümleşik kabuğu, tümleşik geliştirme ortamı (IDE), hata ay�
 |Düzenleyici|-Koda göz atma (birleştirilmiş arama, kaynak tanımı, devralma) araçları<br />-Kod Gezintisi<br />-IntelliSense<br />-Akıllı etiketler<br />-Yeniden düzenleme<br />-Düzgün listeleme<br />-IntelliSense filtreleme<br />-   **Kod tanımı** penceresi|  
 |Tasarımcı|-Windows Presentation Foundation Tasarımcısı<br />-Windows Forms Tasarımcısı<br />-Web Tasarımcısı ve HTML düzenleyicisi|  
 |Veri|-   **Sunucu Gezgini** (Basitleştirilmiş: yalnızca verileri). Bkz. Not 1.<br />-   **Veri kaynakları** penceresi<br />-Tam kümesini veri denetimleri<br />-XML Düzenleyicisi<br />-Veri bağlama için yerel veri kaynağı (. MDF veya. MDB)<br />-Veri nesnesine bağlama<br />-Veri Web hizmetine bağlama<br />-Yerel veritabanı sunucusuna veri bağlama<br />-Uzak veritabanı sunucusu veri bağlama<br />-DDL uzak veri için Araçlar<br />-   **Sunucu Gezgini** genişletilebilirlik ([!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] örnekleri)|  
-|Hata ayıklayıcı|-Yerel hata ayıklama. Bkz. Not 2.<br />-Yönetilen hata ayıklama<br />-Yerel hata ayıklama<br />-Yerel işleme<br />-Uzaktan işleme<br />-Anonim temsilci<br />-Uygulama etki alanları<br />-ASPX hata ayıklama<br />-Attributes<br />-Func-değerlendirmesi sırasında kesme<br />-Kesme noktaları<br />-Kesme noktası kısıtlamaları<br />-Çağrı yığını<br />-   **Komut** penceresi<br />-İş parçacıkları arası hata ayıklama<br />-Veri ipuçları<br />-Veri Görselleştirici<br />-Yönetilen hata ayıklama Yardımcıları (Mda'lar) hata ayıklayıcı desteği<br />-Tür ileticisi hata ayıklayıcı desteği<br />-Dteeevents OTB desteği<br />-JMC adımlayıcıdaki<br />-Hata ayıklayıcı AppID test (DBGCLR)<br />-Hata ayıklayıcı profili<br />-Hata ayıklayıcı Araçlar ve Seçenekler<br />-Hata ayıklama yineleyici<br />-Tasarım zamanı ifade değerlendirmesi<br />-C# ifade değerlendiricisi<br />-Ayrıştırma<br />-Düzenle ve devam et<br />-İfade değerlendirici windows (izleme, Yereller, Otolar)<br />-Özel durum Yardımcısı<br />-Özel durumları<br />-Yürütme<br />-Genel türler<br />-Doğru kaynağı alma<br />-HPC/küme hata ayıklama<br />-Tümleşik çoklu dil hata ayıklama<br />-Birlikte çalışma hata ayıklama<br />-Just-ın-time hata ayıklama<br />-Yerel hata ayıklama<br />-Yönetilen hata ayıklama<br />-El ile denetim (işlemler penceresi)<br />-Bellek<br />-Mini döküm desteği<br />-Modüller<br />-Çok işlemli hata ayıklama<br />-Yerel hata ayıklama<br />-Yeni hata ayıklama altyapısı desteği<br />-Optimize edilmiş kodda hata ayıklama<br />-Çıkış windows filtreleme<br />-Barındırma yönetilen hata ayıklama için işleme<br />-İşlemler<br />-Quickwatch<br />-Kaydeder<br />-Stack kayıtlara<br />-Uzaktan hata ayıklama<br />-Dönüş değerleri<br />-Komut dosyası hata ayıklama<br />-Kaynak hizmet desteği<br />-Güvenlik<br />-Yan<br />-SQL<br />-Sembol sunucusu<br />-İzleme noktaları<br />-İş parçacığı<br />-Görsel öğeler<br />-Genişletilebilir Stil Sayfası Dil Dönüşümleri (XSLT) hata ayıklayıcı|  
+|Hata Ayıklayıcısı|-Yerel hata ayıklama. Bkz. Not 2.<br />-Yönetilen hata ayıklama<br />-Yerel hata ayıklama<br />-Yerel işleme<br />-Uzaktan işleme<br />-Anonim temsilci<br />-Uygulama etki alanları<br />-ASPX hata ayıklama<br />-Attributes<br />-Func-değerlendirmesi sırasında kesme<br />-Kesme noktaları<br />-Kesme noktası kısıtlamaları<br />-Çağrı yığını<br />-   **Komut** penceresi<br />-İş parçacıkları arası hata ayıklama<br />-Veri ipuçları<br />-Veri Görselleştirici<br />-Yönetilen hata ayıklama Yardımcıları (Mda'lar) hata ayıklayıcı desteği<br />-Tür ileticisi hata ayıklayıcı desteği<br />-Dteeevents OTB desteği<br />-JMC adımlayıcıdaki<br />-Hata ayıklayıcı AppID test (DBGCLR)<br />-Hata ayıklayıcı profili<br />-Hata ayıklayıcı Araçlar ve Seçenekler<br />-Hata ayıklama yineleyici<br />-Tasarım zamanı ifade değerlendirmesi<br />-C# ifade değerlendiricisi<br />-Ayrıştırma<br />-Düzenle ve devam et<br />-İfade değerlendirici windows (izleme, Yereller, Otolar)<br />-Özel durum Yardımcısı<br />-Özel durumları<br />-Yürütme<br />-Genel türler<br />-Doğru kaynağı alma<br />-HPC/küme hata ayıklama<br />-Tümleşik çoklu dil hata ayıklama<br />-Birlikte çalışma hata ayıklama<br />-Just-ın-time hata ayıklama<br />-Yerel hata ayıklama<br />-Yönetilen hata ayıklama<br />-El ile denetim (işlemler penceresi)<br />-Bellek<br />-Mini döküm desteği<br />-Modüller<br />-Çok işlemli hata ayıklama<br />-Yerel hata ayıklama<br />-Yeni hata ayıklama altyapısı desteği<br />-Optimize edilmiş kodda hata ayıklama<br />-Çıkış windows filtreleme<br />-Barındırma yönetilen hata ayıklama için işleme<br />-İşlemler<br />-Quickwatch<br />-Kaydeder<br />-Stack kayıtlara<br />-Uzaktan hata ayıklama<br />-Dönüş değerleri<br />-Komut dosyası hata ayıklama<br />-Kaynak hizmet desteği<br />-Güvenlik<br />-Yan<br />-SQL<br />-Sembol sunucusu<br />-İzleme noktaları<br />-İş parçacığı<br />-Görsel öğeler<br />-Genişletilebilir Stil Sayfası Dil Dönüşümleri (XSLT) hata ayıklayıcı|  
 |64-bit desteği|-64-bit hem yönetilen hem de yerel kod için tüm dillerde hata ayıklama<br />-x64 yerel destek|  
 |Kaynak kodu denetimi (SCC)|-Temel SCC tümleştirmesi. Bkz. Not 3.<br />-Araçlar ve Seçenekler doğrulama|  
 |Genişletilebilirlik|-VSPackages ve MEF Bileşenleri kullanma|  

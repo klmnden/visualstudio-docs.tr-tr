@@ -1,7 +1,7 @@
 ---
 title: Asyncvoidmethodbuilder.objectıdfordebugger özelliği | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 97c48c49-3fb2-4778-accd-8585fa4feabf
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 90ba9dd5465501b2d48d88a6411da7692e603eb0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6e646b4044b77cdf62b0abbc2ae6dea008fed554
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691342"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208251"
 ---
 # <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>AsyncVoidMethodBuilder.ObjectIdForDebugger Özelliği
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Asyncvoidmethodbuilder.objectıdfordebugger özelliği](https://docs.microsoft.com/visualstudio/extensibility/debugger/asyncvoidmethodbuilder-objectidfordebugger-property).  
-  
 Hata ayıklayıcı bu oluşturucuya benzersiz olarak tanımlanabilmesi için kullanılabilecek bir nesneyi alır.  
   
  **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  

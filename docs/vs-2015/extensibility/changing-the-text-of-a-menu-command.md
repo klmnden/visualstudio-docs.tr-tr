@@ -1,7 +1,7 @@
 ---
 title: Menü komutunun metnini değiştirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5cb676a0-c6e2-47e5-bd2b-133dc8842e46
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e04756fc1ba35c762112eb993085dfd15ba3340
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 00437c10fa93bb72d7579328ad22c347cdf96049
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689331"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237451"
 ---
 # <a name="changing-the-text-of-a-menu-command"></a>Bir Menü Komutunun Metnini Değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [menü komutunun metnini değiştirme](https://docs.microsoft.com/visualstudio/extensibility/changing-the-text-of-a-menu-command).  
-  
 Aşağıdaki adımları kullanarak bir menü komutu metin etiketini değiştirme Göster <xref:System.ComponentModel.Design.IMenuCommandService> hizmeti.  
   
 ## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>Bir menü komutu etiket IMenuCommandService ile değiştirme  

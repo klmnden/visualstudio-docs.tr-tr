@@ -1,7 +1,7 @@
 ---
 title: Atama kanca işlevleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c42d1984d8138186241fddaf3d8dbaee7f02338d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d2770898d630cbd4b428b87d8362f5aca31f6bca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690470"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271462"
 ---
 # <a name="allocation-hook-functions"></a>Atama Kanca İşlevleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [atama kanca işlevleri](https://docs.microsoft.com/visualstudio/debugger/allocation-hook-functions).  
-  
 Kullanarak yüklü bir ayırma kanca işlevini [_CrtSetAllocHook](http://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d), bellek tahsis, yeniden tahsis veya serbest her zaman çağrılır. Bu tür bir kanca birçok farklı amaçlarla kullanılabilir. Bunu nasıl bir uygulama yetersiz bellek durumları, örneğin, işleme test etmek için veya ayırma desenlerini incelenmesi veya daha sonraki analizler için ayırma bilgileri günlüğe kaydetmek için kullanın.  
   
 > [!NOTE]
