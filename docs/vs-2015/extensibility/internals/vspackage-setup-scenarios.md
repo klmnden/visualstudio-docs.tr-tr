@@ -1,7 +1,7 @@
 ---
 title: VSPackage Kurulum senaryoları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d2928498-f27c-46b4-a9cd-cba41fd85a10
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b88dcef6eebe552c23268cb307248956db5486b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 819f6b9a1da5979e3e9647d6a0773d741f13e945
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633000"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253064"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage Kurulum Senaryoları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [VSPackage Kurulum senaryoları](https://docs.microsoft.com/visualstudio/extensibility/internals/vspackage-setup-scenarios).  
-  
 VSPackage yükleyicinizi esneklik tasarlamak önemlidir. Örneğin, bir güvenlik düzeltme eki gelecekte serbest bırakmanız gerekebilir veya kapsamlı yan yana sürüm oluşturma desteği gerektiren işletme stratejisinin değişebilir.  
   
  İçinde [destekleyen birden çok Versions of Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md), avantajlar ve yan yana yüklemeleri destekleme sorunlar hakkında bilgi edinebilirsiniz [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , VSPackage paylaşılan veya yan yana yüklemeleri ile. Kısacası, yan yana VSPackages yeni özellikleri desteklemek için en fazla esnekliği size [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  

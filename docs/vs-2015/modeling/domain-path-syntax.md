@@ -1,7 +1,7 @@
 ---
 title: Etki alanı yolu sözdizimi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6df1f73614a8df59ee0bff8fb76610382d58b4e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4e98715bae8869619e8d9f2852c810153984777
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690271"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254780"
 ---
 # <a name="domain-path-syntax"></a>Etki Alanı Yolu Sözdizimi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [etki alanı yolu sözdizimi](https://docs.microsoft.com/visualstudio/modeling/domain-path-syntax).  
-  
 DSL tanımlarına XPath benzeri bir sözdizimi bir modelde belirli öğeleri bulmak için kullanın.  
   
  Normalde bu sözdizimi ile doğrudan çalışmak zorunda değildir. DSL ayrıntıları veya Özellikler penceresinde göründüğü aşağı oka tıklayın ve yolu Düzenleyicisi'ni kullanın. Ancak, düzenleyici kullandıktan sonra yol bu alanı formda görüntülenir.  

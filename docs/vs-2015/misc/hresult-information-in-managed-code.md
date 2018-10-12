@@ -1,7 +1,7 @@
 ---
 title: Yönetilen kodda HRESULT bilgi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0795ee94-17a8-4327-bf57-27cd5e312a4c
 caps.latest.revision: 29
 manager: douge
-ms.openlocfilehash: c87fc618f1c80b60bbd2f95537dc70a83eb2bdc7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b629f856bcdba13523c094b5d3fd32b6848ec23f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631958"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256080"
 ---
 # <a name="hresult-information-in-managed-code"></a>Yönetilen kodda HRESULT bilgileri
 HRESULT dönüş değerlerini karşılaştığında, yönetilen kodda COM arasındaki etkileşimi sorunlara neden olabilir.  

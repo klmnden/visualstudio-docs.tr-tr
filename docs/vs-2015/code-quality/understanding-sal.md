@@ -1,7 +1,7 @@
 ---
 title: SAL'ı Anlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae6b16cc7f69aaf365188c488416d35402de9ca4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7551b507a90ffb5bba6a969029e4c53092f3db1c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633491"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253259"
 ---
 # <a name="understanding-sal"></a>SAL'ı Anlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [anlama SAL](https://docs.microsoft.com/visualstudio/code-quality/understanding-sal).  
-  
 Microsoft kaynak kodu ek açıklama dili (SAL) bir işlev parametrelerini ve bunlarla ilgili kolaylaştıran varsayımların tamamlandığında kolaylaştıran garanti nasıl kullandığını tanımlamak için kullanabileceğiniz ek açıklamaları sunmaktadır. Ek açıklamalar üstbilgi dosyasında tanımlanan `<sal.h>`. C++ için Visual Studio kod analizi, kendi analiz işlevleri değiştirmek için SAL ek açıklamalarını kullanır. Windows Sürücü Geliştirme için SAL 2.0 hakkında daha fazla bilgi için bkz. [SAL 2.0 ek açıklamalar için Windows sürücüleri](http://go.microsoft.com/fwlink/?LinkId=250979).  
   
  Yerel olarak, C ve C++ geliştiricileri amacı ve değişmezlik terimlerinin tutarlı bir şekilde ifade etmek için yalnızca sınırlı yolları sağlayın. SAL ek açıklamalarını kullanarak bunları kullanan geliştiriciler, bunları nasıl kullanacağınızı daha iyi anlayabilmeniz işlevlerinizi daha ayrıntılı tanımlayabilirsiniz.  
@@ -425,7 +423,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
  [Yapıları ve sınıfları yorumlama](../code-quality/annotating-structs-and-classes.md)   
  [Kilitlenme davranışını yorumlama](../code-quality/annotating-locking-behavior.md)   
  [Açıklamanın ne zaman ve nereye uygulanacağını belirtme](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
- [En iyi yöntemler ve örnekler](../code-quality/best-practices-and-examples-sal.md)
+ [En İyi Yöntemler ve Örnekler](../code-quality/best-practices-and-examples-sal.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Kesme noktasını silme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 75a046cc-d20a-4c79-ad2d-1f18426ac5d0
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 18b88cc55a4c641e56c062356a9f74c2224835a8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b20ac5b76dfcd24e0dbed5fbc08720c33d88fdd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686383"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254091"
 ---
 # <a name="deleting-a-breakpoint"></a>Kesme Noktasını Silme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [kesme noktasını silme](https://docs.microsoft.com/visualstudio/extensibility/debugger/deleting-a-breakpoint).  
-  
 Aşağıdaki bir bekleyen kesme noktasının silerken işlemi açıklanmaktadır:  
   
 ## <a name="deletion-process"></a>Silme işlemi  

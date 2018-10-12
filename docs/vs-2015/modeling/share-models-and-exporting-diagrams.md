@@ -1,7 +1,7 @@
 ---
 title: Modelleri ve diyagramları dışarı aktarma paylaşır | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 16
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e450216d25c4e7991bd0bc27fcc64feb81a2919a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4f25931b1374042a09fd130731c83f8813353a5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634052"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254398"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Modelleri paylaşma ve diyagramları dışarı aktarma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [paylaşmak modelleri ve diyagramları dışarı aktarma](https://docs.microsoft.com/visualstudio/modeling/share-models-and-exporting-diagrams).  
-  
 Visual Studio'da çeşitli şekillerde iş arkadaşlarınızla modelleri ve diyagramları paylaşabilirsiniz.  
   
  Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -62,7 +60,7 @@ Visual Studio'da çeşitli şekillerde iş arkadaşlarınızla modelleri ve diya
 |[Modelleme çözümünüzün yapısını oluşturma](../modeling/structure-your-modeling-solution.md)|Büyük ve orta ölçekli projelerde modelleri paylaşma.|  
 |[Diğer Visual Studio sürümlerindeki modelleri ve diyagramları okuma](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md)|Modelleri oluşturulamıyor Visual Studio'nun bazı sürümlerinin kullanıcılarının modelleri ve diyagramları okuma.|  
 |[Diyagramları görüntü olarak dışarı aktarma](../modeling/export-diagrams-as-images.md)|Diyagram bölümlerini PowerPoint'e veya Word gibi uygulamalara kopyalayın veya XPS dosyası için bir diyagramını yazdır.|  
-|[Çözümleme ve mimarinin modelini oluşturma](../modeling/analyze-and-model-your-architecture.md)|Modelleri ve diyagramları genel bakış.|  
+|[Mimariyi Çözümleme ve Mimarinin Modelini Oluşturma](../modeling/analyze-and-model-your-architecture.md)|Modelleri ve diyagramları genel bakış.|  
 |[Modelinizi profiller ve stereotipler aracılığıyla özelleştirme](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|Bir modeldeki bir UML profili kullanın ve daha sonra modeli başka bir kişiye göndermek, aynı profili yüklü olması gerekir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

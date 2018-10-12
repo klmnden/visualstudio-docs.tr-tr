@@ -1,7 +1,7 @@
 ---
 title: Filtrelenmiş tamamlanma listeleri Visual Basic'te | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 305d7c97de6cb8ccd0a88bc420c86a5f5e98a593
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7fa045e85df45772ffc03a1a255f9c5e6ac6ba8c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689205"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255638"
 ---
 # <a name="filtered-completion-lists-in-visual-basic"></a>Visual Basic'de Filtrelenmiş Tamamlanma Listeleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Basic'de filtrelenmiş tamamlanma listeleri](https://docs.microsoft.com/visualstudio/ide/filtered-completion-lists-in-visual-basic).  
-  
 Visual Basic IntelliSense tamamlanma listelerinde listelerin altına bulunan iki sekme denetimleri sahip. **Ortak** varsayılan olarak seçilir, sekme, yazmakta olduğunuz deyimi tamamlamak için en sık kullanılan öğeleri görüntüler. **Tüm** sekmesi de açık olanlar dahil olmak üzere otomatik tamamlama için kullanılabilir olan tüm öğeleri görüntüler **ortak** sekmesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

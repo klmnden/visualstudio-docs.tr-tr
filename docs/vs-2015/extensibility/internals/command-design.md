@@ -1,7 +1,7 @@
 ---
 title: Komut tasarımı | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6fe22e67d97af7dc7b8c900dd10c301d02d8c5a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d46bbe3c9898fae2974b482e1ead607ea486fef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687793"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252474"
 ---
 # <a name="command-design"></a>Komut Tasarımı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [komut tasarımı](https://docs.microsoft.com/visualstudio/extensibility/internals/command-design).  
-  
 Bir komut için bir VSPackage'ı eklediğinizde, görüntülenecek olduğu, kullanılabilir olduğunda ve nasıl işleneceğini olduğunu belirtmeniz gerekir.  
   
 ## <a name="defining-commands"></a>Komutlarını tanımlama  
@@ -73,8 +71,8 @@ Bir komut için bir VSPackage'ı eklediğinizde, görüntülenecek olduğu, kull
 |-----------|-----------------|  
 |[Uygulama](../../extensibility/internals/command-implementation.md)|VSPackage'ı komutları uygulamak açıklar.|  
 |[Kullanılabilirlik](../../extensibility/internals/command-availability.md)|Visual Studio bağlam hangi komutları kullanılabilir etiketleneceğini nasıl açıklar.|  
-|[Yönlendirme algoritması](../../extensibility/internals/command-routing-algorithm.md)|Visual Studio komut yönlendirme mimarisi farklı VSPackage'ları tarafından işlenecek komutları nasıl sağladığını açıklar.|  
-|[Yerleştirme yönergeleri](../../extensibility/internals/command-placement-guidelines.md)|Visual Studio ortamında komutları konumlandırmak nasıl önerir.|  
+|[Yönlendirme Algoritması](../../extensibility/internals/command-routing-algorithm.md)|Visual Studio komut yönlendirme mimarisi farklı VSPackage'ları tarafından işlenecek komutları nasıl sağladığını açıklar.|  
+|[Yerleştirme Yönergeleri](../../extensibility/internals/command-placement-guidelines.md)|Visual Studio ortamında komutları konumlandırmak nasıl önerir.|  
 |[VSPackage’ların Kullanıcı Arabirimi Öğeleri Eklemesi](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)|VSPackage en iyi kullanarak Visual Studio komut mimarisi nasıl açıklar.|  
 |[Varsayılan Komut, Grup ve Araç Çubuğu Yerleşimi](../../extensibility/internals/default-command-group-and-toolbar-placement.md)|Nasıl VSPackages Visual Studio'ya dahil olan komutları en iyi şekilde kullanabileceğinizi açıklar.|  
 |[VSPackage’ları Yönetme](../../extensibility/managing-vspackages.md)|Visual Studio VSPackages nasıl yüklenir açıklar.|  

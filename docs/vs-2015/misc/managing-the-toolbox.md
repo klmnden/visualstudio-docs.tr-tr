@@ -1,7 +1,7 @@
 ---
 title: Araç kutusu yönetme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: douge
-ms.openlocfilehash: fa9b30429de00f950e4d9de160fe72ece7f06760
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a42c50addeb878041087d9017321ed71daac115
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631512"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254418"
 ---
 # <a name="managing-the-toolbox"></a>Araç kutusu yönetme
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Gibi bir düzenleyici veya tasarımcı, görünümünü ve üyeliğini yönetmek için bir VSPackage sağlayan **araç kutusu**.  

@@ -1,7 +1,7 @@
 ---
 title: MSBuild | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c660dee2f8767a5abee296d0b91157475724ea6f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: afa446afdf8cb9b3c17028927d9325ffd6e18323
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688846"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253558"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,9 +66,9 @@ ms.locfileid: "42688846"
   
     -   [Özellikler](#BKMK_Properties)  
   
-    -   [Öğeleri](#BKMK_Items)  
+    -   [Öğeler](#BKMK_Items)  
   
-    -   [Görevleri](#BKMK_Tasks)  
+    -   [Görevler](#BKMK_Tasks)  
   
     -   [Hedefler](#BKMK_Targets)  
   
@@ -76,7 +76,7 @@ ms.locfileid: "42688846"
   
 -   [Visual Studio'da MSBuild kullanma](#BKMK_VisualStudio)  
   
--   [Çoklu sürüm desteği](#BKMK_Multitargeting)  
+-   [Çoklu Sürüm Desteği](#BKMK_Multitargeting)  
   
 ##  <a name="BKMK_CommandPrompt"></a> Bir komut isteminde MSBuild kullanma  
  Çalıştırılacak [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] komut isteminde, bir proje dosyası MSBuild.exe için uygun komut satırı seçenekleriyle birlikte geçirin. Komut satırı seçenekleri özellikleri ayarlamak, belirli hedefleri yürütmenizi ve yapı işlemini denetleyen diğer seçenekleri belirlemenizi sağlar. Örneğin, dosyayı oluşturmak için aşağıdaki komut satırı sözdizimini kullanırsınız `MyProj.proj` ile `Configuration` özelliğini `Debug`.  
@@ -201,12 +201,12 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 |[İzlenecek Yol: Sıfırdan MSBuild Proje Dosyası Oluşturma](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Basit bir proje dosyasının aşamalı olarak, yalnızca bir metin düzenleyicisi kullanarak oluşturmanız gösterilmektedir.|  
 |[İzlenecek Yol: MSBuild Kullanma](../msbuild/walkthrough-using-msbuild.md)|MSBuild'in yapı bloklarını tanıtır ve MSBuild projelerinin Visual Studio IDE kapatılmadan hata ayıklama yazma ve düzenleme işlemi gösterilmektedir.|  
 |[MSBuild Kavramları](../msbuild/msbuild-concepts.md)|MSBuild'in dört yapı bloğunu sunar: özellikler, öğeleri, hedefler ve görevler.|  
-|[Öğeleri](../msbuild/msbuild-items.md)|Ardındaki genel kavramları açıklar [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] dosya biçimi ve nasıl parçaları bir araya getireceğinizi.|  
+|[Öğeler](../msbuild/msbuild-items.md)|Ardındaki genel kavramları açıklar [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] dosya biçimi ve nasıl parçaları bir araya getireceğinizi.|  
 |[MSBuild Özellikleri](msbuild-properties1.md)|Özellikler ve özellik koleksiyonları tanıtır. Özellikler, yapıları yapılandırmak için kullanılan anahtar/değer çiftleri olur.|  
 |[Hedefler](../msbuild/msbuild-targets.md)|Belirli bir sırada görevleri gruplandırın ve komut satırında çağrılacak yapı işlemi bölümlerinin etkinleştirme açıklanmaktadır.|  
-|[Görevleri](../msbuild/msbuild-tasks.md)|Tarafından kullanılan yürütülebilir kod biriminin nasıl oluşturulacağını gösterir [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] CAN atomik yapı işlemleri gerçekleştirmek için.|  
+|[Görevler](../msbuild/msbuild-tasks.md)|Tarafından kullanılan yürütülebilir kod biriminin nasıl oluşturulacağını gösterir [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] CAN atomik yapı işlemleri gerçekleştirmek için.|  
 |[Koşullar](../msbuild/msbuild-conditions.md)|Nasıl kullanılacağı ele alınmaktadır `Condition` özniteliğinin bir MSBuild öğesinde.|  
-|[Gelişmiş kavramlar](../msbuild/msbuild-advanced-concepts.md)|Toplu işleme, dönüşümler, çoklu hedefleme ve diğer gelişmiş teknikleri gerçekleştirmek sunar.|  
+|[Gelişmiş Kavramlar](../msbuild/msbuild-advanced-concepts.md)|Toplu işleme, dönüşümler, çoklu hedefleme ve diğer gelişmiş teknikleri gerçekleştirmek sunar.|  
 |[MSBuild'de Günlük Kaydı](../msbuild/logging-in-msbuild.md)|Yapı olaylarının, iletilerin ve hataların günlüğünün nasıl açıklar.|  
 |[Ek Kaynaklar](../msbuild/additional-msbuild-resources.md)|MSBuild hakkında daha fazla bilgi için topluluk ve destek kaynaklarını listeler.|  
   

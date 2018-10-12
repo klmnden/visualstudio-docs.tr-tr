@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: bir özel kural kümesi oluşturma | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ee21452912fa87b63b49db609828ef44cac7c4c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4b6c401b602575b34fb80ab98b31bb4ebcd1620
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695677"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255508"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Nasıl yapılır: Özel Kural Kümesi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: bir özel kural kümesi oluşturma](https://docs.microsoft.com/visualstudio/code-quality/how-to-create-a-custom-rule-set).  
-  
 İçinde [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], ve [!INCLUDE[vsPro](../includes/vspro-md.md)], özel bir oluşturup *kural kümesi* Kod Analizi ile ilgili belirli proje gereksinimlerini karşılamak için. Özel bir kural oluşturmak için bir açın veya kural kümesi Düzenleyicisi'nde daha fazla standart bir kural koyar. Ekleyebilir veya belirli kuralları kaldırın ve Kod Analizi kural ihlal belirlediğinde, gerçekleşen eylemi değiştirebilirsiniz.  
   
  Yeni bir özel kural oluşturmak için yeni bir dosya adını kullanarak kaydedin. Özel kural kümesi, projeye otomatik olarak atanır.  

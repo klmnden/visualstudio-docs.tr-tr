@@ -1,7 +1,7 @@
 ---
 title: Windows Store ve Windows Evrensel uygulamaları hata ayıklama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df5a49fc3a92c5108a53ae7e355d9d69b25dac6a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b85fd9f205b40bd04398833885d5e07e14c1866f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687337"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256119"
 ---
 # <a name="debugging-windows-store-and-windows-universal-apps"></a>Windows Mağazası’nda ve Evrensel Windows Uygulamaları’nda Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [hata ayıklama Windows Store ve Windows Evrensel uygulamaları](https://docs.microsoft.com/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).  
-  
 Visual Studio hata ayıklayıcı, hata ayıklama Windows Store uygulamaları için tam destek sağlar.  
   
  Windows Evrensel uygulamaları hata ayıklama hakkında daha fazla bilgi için bkz: [dağıtma ve hata ayıklama Evrensel Windows platformu uygulamaları](https://msdn.microsoft.com/library/windows/apps/mt613243.aspx).  
@@ -41,12 +39,12 @@ Visual Studio hata ayıklayıcı, hata ayıklama Windows Store uygulamaları iç
   
 |||  
 |-|-|  
-|[Visual Studio'dan uygulamaları çalıştırma](../debugger/run-store-apps-from-visual-studio.md)|Yerel bir makinede, bir uygulama simülatörü veya öykünücü veya uzak bir cihazda Store uygulamaları çalıştırma.|  
-|[Visual Studio'da uygulamalarının hatalarını ayıklama](../debugger/debug-store-apps-in-visual-studio.md)|Bul ve Visual Studio hata ayıklayıcısını kullanarak Store uygulamalarınızda hataları düzeltin.|  
+|[Visual Studio’dan uygulamaları çalıştırma](../debugger/run-store-apps-from-visual-studio.md)|Yerel bir makinede, bir uygulama simülatörü veya öykünücü veya uzak bir cihazda Store uygulamaları çalıştırma.|  
+|[Visual Studio’da uygulamaların hatalarını ayıklama](../debugger/debug-store-apps-in-visual-studio.md)|Bul ve Visual Studio hata ayıklayıcısını kullanarak Store uygulamalarınızda hataları düzeltin.|  
 |[Microsoft Store uygulamaları için içeriği önceden getirme](../debugger/prefetch-content-for-windows-store-apps.md)|Windows Store apps ContentPrefetcher sınıfı etkisini analiz edin.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Statik kod analizini kullanarak kod kalitesini analiz etme](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)
+ [Statik kod analizi kullanarak kod kalitesini analiz etme](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: '&lt;entryPoint&gt; öğesi (ClickOnce uygulaması) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 05e8e08718d9a0a87a1a3903e512c690ab0ebff8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da308de644dfc73d9364b65e21e820d6fc6c2a8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693665"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255326"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;entryPoint&gt; öğesi (ClickOnce uygulaması)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ &lt;entryPoint&gt; öğesi (ClickOnce uygulaması)](https://docs.microsoft.com/visualstudio/deployment/entrypoint-element-clickonce-application).  
-  
 Gereken derleme tanımlayan yürütülmesi bu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulamayı bir istemci bilgisayarda çalıştırın.  
   
 ## <a name="syntax"></a>Sözdizimi  

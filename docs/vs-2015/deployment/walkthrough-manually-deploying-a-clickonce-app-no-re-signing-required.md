@@ -1,7 +1,7 @@
 ---
 title: İzlenecek yol:, Yeniden imzalama gerektirmeyen ve marka bilgisini koruyan bir ClickOnce uygulamasını el ile dağıtma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 85453b899501d83191016bde0edd40b4e2a96d94
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 2d6531a94a99e2a1c24d80e9f326d23fcc6c4ec3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43231140"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252999"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>İzlenecek yol: Yeniden İmzalama Gerektirmeyen ve Marka Bilgisini Koruyan bir ClickOnce Uygulamasını El ile Dağıtma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [izlenecek yol: bir ClickOnce uygulamasını yeniden imzalama gerektirmeyen ve bu korur markalama bilgileri el ile dağıtma](https://docs.microsoft.com/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information).  
-  
 Oluştururken bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama ve ardından bu yayımlamak için bir müşteri verin ve dağıtmak, müşteri geleneksel dağıtım bildirimini güncelleştir ve yeniden oturum oluşturdu. Çoğu durumda tercih edilen yöntem, hala olmakla birlikte, .NET Framework 3.5 oluşturmanızı sağlayan [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] yeni bir dağıtım bildirimi yeniden oluşturmak zorunda kalmadan, müşteriler tarafından dağıtılabilir dağıtımlar. Daha fazla bilgi için [dağıtma ClickOnce uygulamaları test etme ve üretim sunucularına Resigning olmadan](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
   
  Oluştururken bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama ve ardından bu yayımlamak için bir müşteri verin ve dağıtmak, uygulama müşterinin marka kullanabilirsiniz veya marka bilgilerinizi koruyabilirsiniz. Örneğin, uygulamanın tek bir özel uygulama ise, markanızı isteyebilirsiniz. Uygulamanın her müşteri için yüksek oranda özelleştirilmiş ise, müşterinin marka kullanmak isteyebilirsiniz. Dağıtmak üzere bir uygulama için bir kuruluş verdiğinizde .NET Framework 3.5, markanızı, yayımcı bilgileri ve güvenlik imza sağlar. Daha fazla bilgi için [oluşturma başkalarının ClickOnce uygulamaları dağıtma](../deployment/creating-clickonce-applications-for-others-to-deploy.md).  
