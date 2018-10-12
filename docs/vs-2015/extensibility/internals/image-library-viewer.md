@@ -1,7 +1,7 @@
 ---
 title: Görüntü kitaplığı Görüntüleyicisi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1af471eeada5f6da04f4fdf6b4ee69cc0741110b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 884f97acb6ff0e54c641c3a5df9c5edba9868e50
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695431"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184112"
 ---
 # <a name="image-library-viewer"></a>Görüntü Kitaplığı Görüntüleyicisi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [görüntü kitaplığı Görüntüleyicisi](https://docs.microsoft.com/visualstudio/extensibility/internals/image-library-viewer).  
-  
 Visual Studio görüntü kitaplığı Görüntüleyicisi araç, yüklemek ve görüntü bildirimler, bunları Visual Studio olduğu aynı şekilde yönetmek kullanıcının arayın. Kullanıcı, arka plan, boyutları, DPI, yüksek karşıtlık ve diğer ayarlarını değiştirebilirsiniz. Araç ayrıca her görüntü bildirimi yükleme bilgilerini görüntüler ve görüntü bildiriminde her görüntü kaynağı bilgilerini görüntüler. Bu araç için yararlıdır:  
   
 1.  Hataları tanılama  
@@ -118,7 +116,7 @@ Visual Studio görüntü kitaplığı Görüntüleyicisi araç, yüklemek ve gö
   
 |||  
 |-|-|  
-|**Özniteliği**|**Tanım**|  
+|**Öznitelik**|**Tanım**|  
 |Guid|[Gerekli] Görüntü bilinen adına GUID kısmını|  
 |Kimlik|[Gerekli] Resim bilinen adı kimliği bölümü|  
 |AllowColorInversion|[İsteğe bağlı, varsayılan true] Görüntü programlı olarak koyu renkli bir arka plan üzerinde kullanıldığında ters renklerini olup olmadığını gösterir.|  
@@ -135,7 +133,7 @@ Visual Studio görüntü kitaplığı Görüntüleyicisi araç, yüklemek ve gö
   
 |||  
 |-|-|  
-|**Özniteliği**|**Tanım**|  
+|**Öznitelik**|**Tanım**|  
 |URI|[Gerekli] Gelen görüntü burada yüklenebilir tanımlayan URI. Aşağıdakilerden biri olabilir:<br /><br /> -A [paketi URI](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) kullanarak uygulama: / / / yetkilisi<br /><br /> -Bir mutlak bileşen kaynak başvurusu<br /><br /> -Yerel bir kaynak içeren bir dosya yolu|  
 |Arka Plan|[İsteğe bağlı] Ne tür bir arka plan kaynak kullanılması amaçlanmıştır gösterir.<br /><br /> Aşağıdakilerden biri olabilir:<br /><br /> - *Işık*: kaynağı açık bir arka plan üzerinde kullanılabilir.<br /><br /> - *Koyu*: kaynağı koyu renkli bir arka plan üzerinde kullanılabilir.<br /><br /> - *Yüksek Karşıtlık*: kaynak, yüksek karşıtlık modunda herhangi bir arka plan üzerinde kullanılabilir.<br /><br /> - *HighContrastLight*: kaynak, yüksek karşıtlık modunda açık bir arka plan üzerinde kullanılabilir.<br /><br /> -*HighContrastDark*: kaynak, yüksek karşıtlık modunda koyu renkli arka plan üzerinde kullanılabilir.<br /><br /> Varsa **arka plan** özniteliği atlanırsa, kaynağı herhangi bir arka plan üzerinde kullanılabilir.<br /><br /> Varsa **arka plan** olduğu *ışık*, *koyu*, *HighContrastLight*, veya *HighContrastDark*, hiçbir zaman ters kaynağının renkler. Varsa **arka plan** yok sayıldıysa veya kümesine *Karşıtlık*, kaynağın renkleri ters çevirmeyi görüntünün tarafından denetlenir **AllowColorInversion** özniteliği.|  
   
@@ -143,7 +141,7 @@ Visual Studio görüntü kitaplığı Görüntüleyicisi araç, yüklemek ve gö
   
 ||||  
 |-|-|-|  
-|**Öğesi**|**Öznitelikler (tümü gereklidir)**|**Tanım**|  
+|**Öğe**|**Öznitelikler (tümü gereklidir)**|**Tanım**|  
 |\<Boyutu >|Değer|Kaynak (cihaz birimlerindeki) verilen boyutta görüntüleri için kullanılacaktır. Görüntü, kare olur.|  
 |\<SizeRange >|MinSize, Maxsıze|Kaynak MinSize (cihaz birimindeki) görüntülerini MaxSize aralığında kullanılacak. Görüntü, kare olur.|  
 |\<Boyutlar >|Genişlik, yükseklik|Kaynak, belirtilen genişlik ve yükseklik (cihaz birimindeki) görüntülerini için kullanılır.|  
@@ -157,7 +155,7 @@ Visual Studio görüntü kitaplığı Görüntüleyicisi araç, yüklemek ve gö
   
 |||  
 |-|-|  
-|**Özniteliği**|**Tanım**|  
+|**Öznitelik**|**Tanım**|  
 |Tür|[Gerekli] XAML ya da PNG yerel kaynak türü|  
 |Kimlik|[Gerekli] Yerel kaynak tamsayı kimliği bölümünü|  
   
@@ -174,7 +172,7 @@ Visual Studio görüntü kitaplığı Görüntüleyicisi araç, yüklemek ve gö
   
 |||  
 |-|-|  
-|**Özniteliği**|**Tanım**|  
+|**Öznitelik**|**Tanım**|  
 |Guid|[Gerekli] Görüntü bilinen adına GUID kısmını|  
 |Kimlik|[Gerekli] Resim bilinen adı kimliği bölümü|  
 |Harici|[İsteğe bağlı, varsayılan false] Görüntünün geçerli bildiriminde görüntü bilinen adına başvuruda bulunup bulunmadığını gösterir.|  

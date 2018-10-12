@@ -1,7 +1,7 @@
 ---
 title: Bir etki alanına özgü dili özelleştirme ve genişletme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 158bebd18e62ac23560a09fcfacb2125e1988477
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d5b55a9b9a55d00cbfb7928295699c254f72639
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687389"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180693"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Etki Alanına Özgü Dili Özelleştirme ve Genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bir etki alanına özgü dili özelleştirme ve genişletme](https://docs.microsoft.com/visualstudio/modeling/customizing-and-extending-a-domain-specific-language).  
-  
 Visual Studio modelleme ve görselleştirme SDK'sı (VMSDK) modelleme araçları tanımlamak birden fazla düzeyleri sağlar:  
   
 1.  DSL tanım diyagramı kullanarak bir etki alanına özgü dil (DSL) tanımlayın. Bir DSL, bir grafiksel gösterimi, okunabilir XML form ve kodu ve diğer yapıları üretmek için gerekli olan temel araçları ile hızlı bir şekilde oluşturabilirsiniz.  

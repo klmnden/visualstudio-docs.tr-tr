@@ -1,7 +1,7 @@
 ---
 title: Kodlanmış UI testleriyle Windows UWP ve 8.1 Store uygulamaları test | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: 26
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e61c03b8f991fe462c0170db8a72d52056ea2906
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d177fc191eab84d864ad57bf5ad301dcb0b310e3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697507"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175792"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Kodlanmış UI testleriyle Windows UWP ve 8.1 Store uygulamaları test etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Test Windows UWP ve 8.1 Store uygulamaları kodlanmış UI testleriyle](https://docs.microsoft.com/visualstudio/test/test-windows-store-8-1-apps-with-coded-ui-tests).  
-  
 Bu izlenecek yol, UWP uygulamaları ve XAML tabanlı Store 8.1 uygulamaları için kullanıcı Arabirimi testleri oluşturmak için kullanın.
   
 ## <a name="create-a-simple-windows-store-app"></a>Basit bir Windows Store uygulaması oluşturun  
@@ -330,7 +328,7 @@ Bu izlenecek yol, UWP uygulamaları ve XAML tabanlı Store 8.1 uygulamaları iç
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kodunuzu test etmek için UI otomasyonunu kullanma](../test/use-ui-automation-to-test-your-code.md)   
- [Test etmek için Windows Store denetimleri için benzersiz Otomasyon özelliği ayarlama](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)
+ [Test yapma amacıyla Windows Mağazası Denetimleri için Benzersiz Otomasyon Özelliği ayarlama](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)
 
 
 

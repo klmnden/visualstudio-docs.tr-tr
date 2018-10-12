@@ -1,7 +1,7 @@
 ---
 title: 'CA1708: Tanımlayıcılar daha fazla farklı olmalıdır | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d60c29b7e6a5cec32b8a694bb0b21d7f85538e01
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 07f4b9f9a69de3458bf0f7ea7dcb316e2e9a086a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902887"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187648"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Tanımlayıcılar örnekten daha fazla farklı olmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA1708: tanımlayıcılar farklı büyük küçük harf](https://docs.microsoft.com/visualstudio/code-quality/ca1708-identifiers-should-differ-by-more-than-case).
-
 |||
 |-|-|
 |TypeName|IdentifiersShouldDifferByMoreThanCase|

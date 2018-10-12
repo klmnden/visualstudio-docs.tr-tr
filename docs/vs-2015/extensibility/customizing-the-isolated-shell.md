@@ -1,7 +1,7 @@
 ---
 title: Yalıtılmış Kabuğu özelleştirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e0b7c3ae-210f-4f48-ac49-6a59e6034f5f
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 61cd1d84978baa6f8deb08b2a2cc9327dad543c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3804ded3106c68c1298063b38fb3d384685a18a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690355"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175558"
 ---
 # <a name="customizing-the-isolated-shell"></a>Yalıtılmış Kabuğu özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yalıtılmış Kabuğu özelleştirme](https://docs.microsoft.com/visualstudio/extensibility/customizing-the-isolated-shell).  
-  
 Visual Studio kullanıcı arabirimini farklı yönlerini değiştirme ve özel uygulamanıza dahil olan özellikler ve komutları kısıtlayarak, Visual Studio yalıtılmış Kabuğu uygulamanızı özelleştirebilirsiniz.  
   
 ## <a name="using-the-applicationpkgdef-file"></a>Application.pkgdef dosyası kullanma  

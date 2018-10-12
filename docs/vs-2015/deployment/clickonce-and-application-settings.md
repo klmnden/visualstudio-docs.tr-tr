@@ -1,7 +1,7 @@
 ---
 title: ClickOnce ve uygulama ayarlarını | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 2aa565721bc934fb78a7b183b0e4b4b637bafaf8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29f51960ad953318c8d9de749f28f684128e52ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693220"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177004"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce ve Uygulama Ayarları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ClickOnce ve uygulama ayarlarını](https://docs.microsoft.com/visualstudio/deployment/clickonce-and-application-settings).  
-  
 Windows Forms için uygulama ayarları oluşturmak, depolamak ve özel uygulama ve kullanıcı tercihlerini istemcide bakımını yapmayı kolaylaştırır. Uygulama ayarları dosyaları bir ClickOnce uygulamasında nasıl çalışır ve kullanıcı sonraki bir sürüme yükseltildiğinde ClickOnce ayarları nasıl geçirdiğini aşağıdaki belge açıklar.  
   
  Aşağıdaki bilgiler yalnızca varsayılan uygulama ayarları sağlayıcısına geçerlidir <xref:System.Configuration.LocalFileSettingsProvider> sınıfı. Özel bir sağlayıcı sağlarsanız, bu sağlayıcı, verileri nasıl depoladı ve ayarlarına sürümleri arasında yükseltme nasıl belirler. Uygulama ayarları sağlayıcıları hakkında daha fazla bilgi için bkz. [uygulama ayarları mimarisi](http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  

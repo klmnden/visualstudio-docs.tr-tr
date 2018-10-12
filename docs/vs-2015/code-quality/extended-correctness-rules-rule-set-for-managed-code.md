@@ -1,7 +1,7 @@
 ---
 title: Yönetilen kod için genişletilmiş doğruluk kuralları kural kümesi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: aa22234c797a47fba945ba65343532df3565aefc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cebb3f492bb3aec873f503c2efcacb7220ec9739
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695195"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187438"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Yönetilen kod için Genişletilmiş Doğruluk Kuralları kural kümesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yönetilen kod için genişletilmiş doğruluk kuralları kural kümesi](https://docs.microsoft.com/visualstudio/code-quality/extended-correctness-rules-rule-set-for-managed-code).  
-  
 Microsoft genişletilmiş doğruluk kuralları kural kümesi Kod Analizi tarafından raporlanan mantığı ve framework kullanım hatalarını en üst düzeye çıkarır. Ekstra Vurgu COM birlikte çalışabilirlik ve mobil uygulamaları gibi spesifik senaryolarda yer alır. Bu kural Bu senaryolardan biri, projenize veya projenize ek sorunları bulmak için geçerliyse kümesi dahil olmak üzere düşünmelisiniz.  
   
  Microsoft genişletilmiş doğruluk kuralları kural kümesi içinde Microsoft temel doğruluk kuralları kural kümesi kurallar içerir. Temel doğruluk kuralları Microsoft en az önerilen kurallar kural kümesi kurallar içerir. Daha fazla bilgi için [yönetilen kod için temel doğruluk kuralları kural kümesi](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) ve [yönetilen kod için yönetilen önerilen kurallar kural kümesi](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)  

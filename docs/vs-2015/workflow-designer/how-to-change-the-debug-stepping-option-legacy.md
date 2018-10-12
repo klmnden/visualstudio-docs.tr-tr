@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: hata ayıklama Adımlama seçeneğini (eski) değiştirme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -18,12 +18,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 1fbe4ef5feeff7201a5c8772c1e754402db9ffd5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b89ad55fec7b15884acefd5607cfd863a45564b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694834"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179250"
 ---
 # <a name="how-to-change-the-debug-stepping-option-legacy"></a>Nasıl yapılır: hata ayıklama Adımlama seçeneğini (eski) değiştirme
 Bu konu için hata ayıklama Adımlama seçeneğini değiştirme açıklar [!INCLUDE[wf](../includes/wf-md.md)] eski uygulamalarda [!INCLUDE[wfd1](../includes/wfd1-md.md)] eşzamanlı eylemler vardır. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

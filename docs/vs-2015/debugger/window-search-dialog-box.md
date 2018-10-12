@@ -1,7 +1,7 @@
 ---
 title: Pencere arama iletişim kutusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd352f1943d4576f848f5bd8d1a51b9196d72d03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c9ec54fb45a84ade7d0f87cb2c7a7c5d953b9df4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695000"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179978"
 ---
 # <a name="window-search-dialog-box"></a>Pencere Arama İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [pencere arama iletişim kutusu](https://docs.microsoft.com/visualstudio/debugger/window-search-dialog-box).  
-  
 Bulmak ve belirli bir pencere içinde düğümü seçmek için bu iletişim kutusunu kullanın [Windows görünümü](../debugger/windows-view.md). Bu iletişim kutusunu görüntülemek için Windows görünüm penceresine odağı Taşı. Ardından **Bul penceresi** gelen **arama** menüsü.  
   
  Kullanabileceğiniz **Bulucu Aracı** veya bir pencere seçmek için Pencere işleyicisi girebilir, veya pencere başlığını ve sınıfı tarafından tanımlayın.  
@@ -68,7 +66,7 @@ Bulmak ve belirli bir pencere içinde düğümü seçmek için bu iletişim kutu
  [Pencere Bul İletişim Kutusu](../debugger/find-window-dialog-box.md)  
  Özellikleri veya belirli bir pencere iletileri görüntülemek için kullanılır.  
   
- [Pencere Özellikleri iletişim kutusu](../debugger/window-properties-dialog-box.md)  
+ [Pencere Özellikleri İletişim Kutusu](../debugger/window-properties-dialog-box.md)  
  Windows görünümünde seçilen bir pencere özelliklerini görüntülemek için kullanılır.  
   
  [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  

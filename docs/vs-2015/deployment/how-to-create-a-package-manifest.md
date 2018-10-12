@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: Paket bildirimi oluşturma | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 6abbbb351d04251b4ef1c209f35652a91b11d8c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2941000e9fa2c6f1d9fd4835c9fd0b8fa1fd1b4f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692941"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182435"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Nasıl yapılır: Paket Bildirimi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: bir paket bildirimi oluşturma](https://docs.microsoft.com/visualstudio/deployment/how-to-create-a-package-manifest).  
-  
 Uygulamanız için önkoşul dağıtmak için bir önyükleyici paketi kullanabilirsiniz. Paket bildirimi ancak tek ürün bildirim dosyasını her yerel ayar için bir önyükleyici paketi içerir. Yerelleştirilmiş farklı sürümleri arasında paylaşılan işlevselliği ürün bildirimine gitmeniz gerekir.  
   
  Paket bildirimleri hakkında daha fazla bilgi için bkz. [nasıl yapılır: bir ürün bildirimi oluşturma](../deployment/how-to-create-a-product-manifest.md).  

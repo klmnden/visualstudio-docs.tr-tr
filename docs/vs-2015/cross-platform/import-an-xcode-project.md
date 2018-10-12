@@ -1,7 +1,7 @@
 ---
 title: Bir XCode projesini içeri aktarma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,16 @@ caps.latest.revision: 10
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: 793702d2d4c2f688f62fc956648d7df811b4b87d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 792107fca4aab5390101b8be64b4ea2d1c4f286a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693272"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175584"
 ---
 # <a name="import-an-xcode-project"></a>Bir XCode Projesini İçeri Aktarma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bir XCode projesini içeri aktarma](https://docs.microsoft.com/visualstudio/cross-platform/import-an-xcode-project).  
-  
   
 Microsoft Visual C++ platformlar arası Mobil Geliştirme için Visual Studio'yla, platformlar arası kitaplıklar oluşturun ve diğer projeleri ile kod paylaşın, XCode projelerinizi taşımak için destek içerir. İçeri Aktar Sihirbazı XCode projeleri içeri aktarma işlemini basitleştirir ve C++ kodunu, XCode hedefler için bölme bir statik kitaplık kullanmak ya da paylaşılan kod projesi. İOS özel kodunuzu Visual Studio yönetin ve XCode film şeritleri ve yapıları yapmak için kullanmaya devam edebilirsiniz. Kodu sürekli Visual Studio ve XCode arasında kolaylıkla geçiş hakkında daha fazla bilgi için XCode arasında taşıma değişiklikleri ve Visual Studio bakın.  
   

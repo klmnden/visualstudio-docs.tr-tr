@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: Direct2D veya JavaScript uygulamaları kullanmak için doku dışa aktarma | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b064620174a3a64194eee3ae18bffbe330ece13b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43854b2d0aad0e1466f8d8b6fcb45921999aba5d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697269"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186296"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Nasıl yapılır: Direct2D veya Javascript Uygulamaları Kullanmak için Doku Dışa Aktarma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: Direct2D veya JavaScript uygulamaları kullanmak için doku dışa aktarma](https://docs.microsoft.com/visualstudio/designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps).  
-  
 Görüntü içeriği ardışık düzeni, Direct2D'in iç işleme kuralları ile uyumlu dokular oluşturabilir. Bu tür dokular Direct2D kullanan uygulamalar ve JavaScript kullanılarak oluşturulan Windows Store uygulamalarında kullanım için uygundur.  
   
  Bu belgede şu faaliyetler gösterilmiştir:  

@@ -1,7 +1,7 @@
 ---
 title: CreateItem görevi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dae25b1a187c446e1076d709e3dc8f7a7d6a82a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7db76f3ec603c493cef38536b6fb54b74ac6c43b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688220"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180914"
 ---
 # <a name="createitem-task"></a>CreateItem Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [CreateItem görevi](https://docs.microsoft.com/visualstudio/msbuild/createitem-task).  
-  
   
 Öğe koleksiyonlarını girdi öğelerinin ile doldurur. Bu, bir listeden diğerine kopyalanmasına öğeleri sağlar.  
   
@@ -89,7 +87,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [CreateItem görevi](https:
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
- [Görevleri](../msbuild/msbuild-tasks.md)
+ [Görevler](../msbuild/msbuild-tasks.md)
 
 
 

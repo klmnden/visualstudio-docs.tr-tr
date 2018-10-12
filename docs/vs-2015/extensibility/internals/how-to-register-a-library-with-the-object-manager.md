@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: nesne yöneticisine kitaplık kaydetme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 91b03bdf1287c66d86de9e5cd037d6a779a52bad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 204291cae617c704943889b8b88c590145935db3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692021"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174713"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Nasıl yapılır: nesne yöneticisine kitaplık kaydetme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: nesne yöneticisine kitaplık kaydetme](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-register-a-library-with-the-object-manager).  
-  
 Sembol tarama araçlarını, gibi **sınıf görünümü**, **Nesne Tarayıcısı**, **çağrı tarayıcısı** ve **sembol sonuçları Bul**, etkinleştirdiğiniz görüntülemek Projenizdeki veya dış bileşenler semboller. Simgeler, ad alanları, sınıflar, arabirimler, yöntemleri ve diğer dil öğelerini içerir. Kitaplıkları bu sembolleri izlemek ve bunlara üzerinden kullanıma sunacaksınız [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] araçları verilerle dolduran Nesne Yöneticisi.  
   
  Nesne Yöneticisi, kullanılabilir tüm kitaplıkları izler. Her kitaplık nesne yöneticisine semboller için Sembol tarama araçlarını sağlamadan önce kaydetmeniz gerekir.  

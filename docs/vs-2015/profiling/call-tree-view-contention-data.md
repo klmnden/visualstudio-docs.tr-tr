@@ -1,7 +1,7 @@
 ---
 title: Çağrı ağacı görünümü - çakışma verileri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 337152a7a91f7e2f6ce4a19a4cb77b166ebe5754
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc4b4b7b0ac3a6bb77c539b54162bf449e19771a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628559"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179233"
 ---
 # <a name="call-tree-view---contention-data"></a>Çağrı Ağacı Görünümü - Çakışma Verileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [çağrı ağacı görünümü - çakışma verileri](https://docs.microsoft.com/visualstudio/profiling/call-tree-view-contention-data).  
-  
 Çağrı ağacı görünümü, profili oluşturulan uygulamada geçiş işlev yürütme yollarını görüntüler. Ağacının kökü, uygulama veya bileşen giriş noktasıdır. Her işlev düğümü adlı tüm İşlevler, işlev engellendi sayısı ve diğer iş parçacıkları veya işlemlerdeki sahip bir kaynak için contending çünkü işlevi engellenen süreyi listeler.  
   
  Çağrı ağacı görünümü çağrı ağacında üst işlev tarafından çağrılan işlev örnekleri için değerler. Yüzde değerleri, profil oluşturma çalıştırmasını çakışması toplam sayısı işlev örneği değerine karşılaştırılmasıyla hesaplanır.  

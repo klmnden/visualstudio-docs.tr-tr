@@ -1,7 +1,7 @@
 ---
 title: Kullanarak Paralel Yığınlar penceresini | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01dd627143c072fea6dec99ea47ee4d6919dd62e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 353d9a39a299c0803bb4f27843fcae43375105cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630337"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182181"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Paralel Yığınlar Penceresini Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Paralel Yığınlar penceresini kullanma](https://docs.microsoft.com/visualstudio/debugger/using-the-parallel-stacks-window).  
-  
 **Paralel Yığınlar** penceresi, çok iş parçacıklı uygulamalarda hata ayıklama işlemi yaparken yararlıdır. Kendi **iş parçacıkları görünümü** gösterir, uygulamanızdaki tüm iş parçacıkları için yığın bilgileri çağırın. İş parçacıkları ve bu iş parçacıkları üzerinde yığın çerçevelerini arasında gezinmenize olanak tanır. Yönetilen kodda **Görevler görünümü** gösterir çağrı yığını <xref:System.Threading.Tasks.Task?displayProperty=fullName> nesneleri. Yerel kodda **Görevler görünümü** gösterir çağrı yığını [görev grupları](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [paralel algoritmalar](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [zaman uyumsuz aracılar](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)ve [Basit görevler](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90).  
   
 ## <a name="threads-view"></a>İş Parçacıkları Görünümü  
@@ -131,7 +129,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [Paralel Yığınlar pencer
  [Paralel Programlama](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
  [Görevleri penceresini kullanma](../debugger/using-the-tasks-window.md)   
  [İzlenecek yol: paralel uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Görev sınıfı](../extensibility/debugger/task-class-internal-members.md)
+ [Task Sınıfı](../extensibility/debugger/task-class-internal-members.md)
 
 
 

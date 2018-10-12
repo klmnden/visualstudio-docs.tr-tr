@@ -1,7 +1,7 @@
 ---
 title: Kilitlenme davranışını yorumlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -38,18 +38,16 @@ caps.latest.revision: 11
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f34eb22d56cc6a1e47e07229a5b3e922aee5c386
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 881fa2a0355c1524855008d508163a3012f95dff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631844"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187518"
 ---
 # <a name="annotating-locking-behavior"></a>Kilitlenme Davranışını Yorumlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [kilitlenme davranışını yorumlama](https://docs.microsoft.com/visualstudio/code-quality/annotating-locking-behavior).  
-  
 Çoklu iş parçacığı kullanan programınızda eşzamanlılık hataları önlemek için her zaman uygun kilitleme uzmanlık alanı izleyin ve SAL ek açıklamalarını kullanma.  
   
  Eşzamanlılık yeniden, tanılama ve belirleyici olmadığından hata ayıklama öğesinin zor hatalardır. İş parçacığı Interleaving hakkında mantık en iyi zordur ve fazla sayıda iş parçacığı olan kod gövdesinin tasarlarken pratik hale gelir. Bu nedenle, bir kilitleme disiplini, çok iş parçacıklı programlarda izleyin iyi bir uygulamadır. Örneğin, birden çok kilit alınırken kilitlenmeleri önlemek yardımcı olurken bir kilit sırası obeying ve paylaşılan bir kaynağa erişmeden önce doğru guarding kilit alınırken yarış durumlarını engellemeye yardımcı olur.  

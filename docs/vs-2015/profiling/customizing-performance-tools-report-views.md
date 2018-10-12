@@ -1,7 +1,7 @@
 ---
 title: Araçlar rapor görünümlerini özelleştirme performans | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07ebcf0a5a2e3b69644dcfbad37b540cc902eb74
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6de9d7e99ee592af0fde59c4ebe1d4765b3325a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681162"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189273"
 ---
 # <a name="customizing-performance-tools-report-views"></a>Rapor görünümlerini özelleştirme performans araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [performans araçları rapor görünümlerini özelleştirme](https://docs.microsoft.com/visualstudio/profiling/customizing-performance-tools-report-views).  
-  
 Bu bölüm ile oluşturulan raporları nasıl özelleştireceğiniz kapsar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] profil oluşturma araçları.  
   
 ## <a name="common-tasks"></a>Ortak Görevler  
@@ -44,7 +42,7 @@ Bu bölüm ile oluşturulan raporları nasıl özelleştireceğiniz kapsar [!INC
  Profil oluşturma verilerini analiz etmek için kullanabileceğiniz görünümler açıklanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri Araçları performansını analiz etme](../profiling/analyzing-performance-tools-data.md)
+ [Performans Araçları Verilerini Analiz Etme](../profiling/analyzing-performance-tools-data.md)
 
 
 

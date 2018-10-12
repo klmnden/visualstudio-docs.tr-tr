@@ -1,7 +1,7 @@
 ---
 title: UML modellerini ve diyagramları genişletme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d15da471e077e737bb7ba82d19d68f24f15db687
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fa0196000e2349f5f323d28138186b59ae07cfd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628338"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179133"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>UML modellerini ve diyagramları genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [genişletmek UML modellerini ve diyagramları](https://docs.microsoft.com/visualstudio/modeling/extend-uml-models-and-diagrams).  
-  
 Bu konu UML modelleme araçları Visual Studio'ya dahil edildi genişletebileceğiniz farklı yollarını özetler. Her model türünü ve aracı Visual Studio'nun hangi sürümlerinin desteklediği için bkz [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Aşağıdaki örnek senaryoyu, Fabrikam tasarlar ve havaalanı bagaj sistemleri işleme yükler. Sonraki bir Havalimanı projeden temel donanım ve onu denetleyen bir yazılım benzer vardır. Ancak, aynı zamanda taşıyıcı bantları, iade etme masalarını, depo depolama ve işleme diğer paketi yapılandırma gibi büyük ölçüde farklılık gösteren birkaç faktör vardır.  

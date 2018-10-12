@@ -1,7 +1,7 @@
 ---
 title: Veri sınıfı devralma (O R Designer) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c361d35a4c5d6c4418a803b6bbba403e5571e1e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae36d6aac3ea9a4ff4de73dea57207b6f03abc72
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633481"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180524"
 ---
 # <a name="data-class-inheritance-or-designer"></a>Veri sınıfı devralma (O/R Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [veri sınıfı devralma (O R Designer)](https://docs.microsoft.com/visualstudio/data-tools/data-class-inheritance-o-r-designer).  
-  
   
 Gibi diğer nesneler [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] sınıflar, devralma kullanabilirsiniz ve diğer sınıflarından türetilmiş. Kod içinde bir sınıf diğerinden devralır bildirmek nesneler arasındaki devralma ilişkileri belirtebilirsiniz. Bir veritabanında kalıtım ilişkileri çeşitli yollarla oluşturulur. [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) İlişkisel sistemlerde sık uygulandığı şekilde tek tablolu devralma kavramını destekler.  
   
@@ -46,7 +44,7 @@ Gibi diğer nesneler [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] sını
 |Konu|Açıklama|  
 |-----------|-----------------|  
 |[Nasıl yapılır: O/R Tasarımcısı kullanarak devralmayı yapılandırma](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)|Tek Tablo Devralma kullanarak varlık sınıflarını yapılandırmayı açıklar [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].|  
-|[İzlenecek yol: Tek tablolu devralma (O/R Tasarımcısı) kullanarak LINQ to SQL sınıfları oluşturma](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|Tek Tablo Devralma kullanarak varlık sınıfları yapılandırma hakkında adım adım yönergeler sağlar [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].|  
+|[İzlenecek Yol: Tek Tablo Devralma Kullanarak LINQ to SQL Sınıfı Oluşturma (O/R Tasarımcısı)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|Tek Tablo Devralma kullanarak varlık sınıfları yapılandırma hakkında adım adım yönergeler sağlar [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

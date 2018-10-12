@@ -1,14 +1,14 @@
 ---
 title: Otolar ve yerel öğeler Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
 - vs.debug.locals
@@ -26,18 +26,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 877d145f83ce15cd5c1bb49b607519888ad0e96b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94b583fee7f0e03fae3f194f1614d82016136e13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634127"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191327"
 ---
 # <a name="autos-and-locals-windows"></a>Otolar ve yerel öğeler Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio hata ayıklayıcıda denetleme değişkenlerinde](https://docs.microsoft.com/visualstudio/debugger/autos-and-locals-windows).  
-  
 **Otolar** penceresini (hata ayıklarken, **CTRL + ALT + V, A**, veya **hata ayıklama / Windows / Otolar**) ve **Yereller** (hata ayıklarken, penceresi **CTRL + ALT + V, L**, veya **hata ayıklama / Windows / Yereller**) oldukça ayıklarken değişken değerleri görmek istediğinizde yararlıdır. **Yereller** genel işlev veya şu anda yürütülmekte olan bir yöntem olan yerel kapsamda tanımlanan değişkenler penceresinde görüntülenir. **Otolar** penceresi değişkenleri geçerli satırı (hata ayıklayıcı durduğu yeri) geçici olarak kullanılan görüntüler. Tam olarak hangi değişkenleri görüntülenen farklı dillerde farklı değildir. Değişkenleri Otolar penceresinde görüntülenecek görüyor musunuz? Aşağıda.  
   
  Temel hata ayıklama hakkında daha fazla bilgiye ihtiyacınız varsa bkz [hata ayıklayıcı ile çalışmaya başlama](../debugger/getting-started-with-the-debugger.md).  
@@ -154,7 +152,7 @@ private static int subtractVars(int i, int j)
  Ayrıca bağlamı farklı işlev çağrıları, iş parçacıklarını veya işlemleri öğesinde çift tıklatarak değiştirebilirsiniz **çağrı yığını** penceresinde **iş parçacıkları** penceresinde veya **işlemleri** penceresi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows hata ayıklayıcı](../debugger/debugger-windows.md)
+ [Hata Ayıklayıcısı Pencereleri](../debugger/debugger-windows.md)
 
 
 

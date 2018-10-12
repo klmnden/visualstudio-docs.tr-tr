@@ -1,7 +1,7 @@
 ---
 title: Özel projelerini yükseltme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 262ada44-7689-44d8-bacb-9c6d33834d4e
 caps.latest.revision: 11
 manager: douge
-ms.openlocfilehash: 5c3fd31cfc7cfbf3f7dd687d38483f5bb62703ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1eceaee51778e9eafa6d81f819a17a25377b2841
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685760"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173600"
 ---
 # <a name="upgrading-custom-projects"></a>Özel projelerini yükseltme
 Değiştirirseniz, ürünün farklı Visual Studio sürümleri arasında proje dosyasındaki bilgileri kalıcı sonra proje dosyası eski sürümden yeni sürüme yükseltme desteklemeniz gerekiyor. Katılmak izin veren yükseltmeyi desteklediği için **Visual Studio Dönüştürme Sihirbazı**, uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> arabirimi. Bu arabirim, kopyalama yükseltmek için yalnızca mekanizması kullanılabilir içerir. Proje yükseltme açılır çözümün bir parçası olarak gerçekleşir. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> Arabirimi proje fabrikası tarafından uygulanan ya da proje fabrikadan elde edilebilir en az olmalıdır.  

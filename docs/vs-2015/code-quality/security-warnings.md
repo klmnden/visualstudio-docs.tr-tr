@@ -1,7 +1,7 @@
 ---
 title: Güvenlik Uyarıları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e906143b384a36dd34a5f487f6785705bdc2ab33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3015e1d01407120aef30b25aea4dbc8e0c6c7fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687762"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187611"
 ---
 # <a name="security-warnings"></a>Güvenlik Uyarıları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [güvenlik uyarıları](https://docs.microsoft.com/visualstudio/code-quality/security-warnings).  
-  
 Güvenlik uyarıları, daha güvenli kütüphaneleri ve uygulamaları destekler. Bu uyarılar, programınızdaki güvenlik açıklarını önlemeye yardımcı olur. Bu uyarılardan birini devre dışı bırakırsanız, bunun sebebini kodunuzda açıkça işaretlemelisiniz ve ayrıca geliştirme projeniz için güvenlik çalışanını bilgilendirmelisiniz.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
@@ -87,7 +85,7 @@ Güvenlik uyarıları, daha güvenli kütüphaneleri ve uygulamaları destekler.
 |[CA2147: Saydam türler güvenlik bildirimlerini kullanmamalıdır](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|SecurityTransparentAttribute olarak işaretlenmiş kod, onay için yeterli izinlerin verilmiş olmasını garanti etmez.|  
 |[CA2149: Saydam metotlar yerel kod içine çağırmamalıdır](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Bu kural, örneğin P/Invoke gibi yerel kod içinde doğrudan çağıran herhangi bir saydam yöntemi tetikler. Bu kural ihlalleri 2. seviye saydamlık modeli içindeki MethodAccessException öncülüğünde ve 1. seviye saydamlık modeli içindeki UnmanagedCode için talepte bulunur.|  
 |[CA2151: Kritik türler içeren alanlar güvenlik açısından kritik olmalıdır](../code-quality/ca2151-fields-with-critical-types-should-be-security-critical.md)|Kritik güvenlik türlerini kullanmak için türe başvuran kod güvenliği kritik veya güvenlik güvenli kritik olmalıdır. Dolaylı başvuru olsa bile bu doğrudur. Bu nedenle, bir güvenlik saydam veya güvenlik güvenli kritik alana erişmek mümkün olmayacaktır, çünkü saydam kod hala alana erişemeyecektir.|  
-|[CA5122 P/Invoke bildirimleri güvenli olmamalıdır kritik](../code-quality/ca5122-p-invoke-declarations-should-not-be-safe-critical.md)|Güvenlik duyarlı işlem gerçekleştirildiğinde yöntemler SecuritySafeCritical olarak işaretlenir ancak saydam mod kullanılarak da güvenli olur. Saydam kod, P/Invoke aracılığıyla yerel kodu hiçbir zaman doğrudan çağırmayabilir. Bu nedenle, P/Invoke güvenlik güvenli kritik olarak işaretleme çağırmak için saydam kodu etkinleştirmez ve güvenlik çözümlemesi için yanıltıcıdır.|  
+|[CA5122 P/Invoke bildirimleri güvenli kritik olmamalıdır](../code-quality/ca5122-p-invoke-declarations-should-not-be-safe-critical.md)|Güvenlik duyarlı işlem gerçekleştirildiğinde yöntemler SecuritySafeCritical olarak işaretlenir ancak saydam mod kullanılarak da güvenli olur. Saydam kod, P/Invoke aracılığıyla yerel kodu hiçbir zaman doğrudan çağırmayabilir. Bu nedenle, P/Invoke güvenlik güvenli kritik olarak işaretleme çağırmak için saydam kodu etkinleştirmez ve güvenlik çözümlemesi için yanıltıcıdır.|  
 |[CA2153: Bozuk Durum Özel Durumlarını İşlemekten Kaçının](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[Bozuk durum özel durumlar (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) belirtmek, Bellek Bozulması işleminizde mevcut. Bir saldırgan bozuk bir bellek bölgesini bir yararlanma yerleştirebilirsiniz, kilitlenme işlemine izin vermek yerine bu yakalama güvenlik açıklarına neden olabilir.|  
 |[CA3075: Güvensiz DTD İşleme](../code-quality/ca3075-insecure-dtd-processing.md)|Güvensiz XmlReaderSettings örnekleri kullanın veya dış varlık kaynaklarına başvuran, ayrıştırıcının güvenilmeyen giriş kabul ve saldırganlar için hassas bilgileri ifşa.|  
 |[CA3076: Güvensiz XSLT Betiği Yürütme](../code-quality/ca3076-insecure-xslt-script-execution.md)|Genişletilebilir Stil Sayfası Dil Dönüşümleri (XSLT) .NET uygulamalarında endpoınt çalışırsa, saldırganların hizmet reddi ve siteler arası lideri, hassas bilgileri ifşa güvenilmeyen URI başvuruları işlemci çözebilir saldırıları.|  

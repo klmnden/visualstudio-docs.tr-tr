@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: rapor görünümlerinde gürültü azaltmayı yapılandırma | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee848f506a81b156309fa7e0d86891418251d0e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af3a994dbad1ce15830145dc01acd0f47003681d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693117"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176026"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Nasıl yapılır: Rapor Görünümlerinde Gürültü Azaltmayı Yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: rapor görünümlerinde gürültü azaltmayı yapılandırma](https://docs.microsoft.com/visualstudio/profiling/how-to-configure-noise-reduction-in-report-views).  
-  
 Performans raporları çağrı ağacı görünümü ve ayırma görünümünde görüntülenen veri miktarını sınırlamak için gürültü azaltma yapılandırılabilir. Gürültü azaltma kullanarak performans sorunlarını daha belirgin. Performans raporları çözümlemek istediğinizde yararlıdır.  
   
  Gürültü azaltma yapılandırma seçenekleri aşağıdaki ayarları içerir:  
@@ -90,7 +88,7 @@ Performans raporları çağrı ağacı görünümü ve ayırma görünümünde g
  [Rapor görünümlerini özelleştirme performans araçları](../profiling/customizing-performance-tools-report-views.md)   
  [Nasıl yapılır: kısa işlevleri izlemeden dahil veya hariç](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
  [Çağrı ağacı görünümü](../profiling/call-tree-view.md)   
- [Ayırma görünümü](../profiling/dotnet-memory-allocations-view.md)
+ [Ayırmalar Görünümü](../profiling/dotnet-memory-allocations-view.md)
 
 
 

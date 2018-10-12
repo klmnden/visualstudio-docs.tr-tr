@@ -1,7 +1,7 @@
 ---
 title: İşlem özellikleri iletişim kutusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,37 +17,35 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23df984e13f2f8d022a4731926d0747450c7faaf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e0c58dfd492886a5e4a222ba758c0652f73c014
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694814"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180953"
 ---
 # <a name="process-properties-dialog-box"></a>İşlem Özellikleri İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [işlem özellikleri iletişim kutusu](https://docs.microsoft.com/visualstudio/debugger/process-properties-dialog-box).  
-  
 Belirli bir işlemle ilgili daha fazla bilgi için bu iletişim kutusunu kullanın. Bu iletişim kutusunu görüntülemek için odağı taşıyın. bir [işlemler görünümü](../debugger/processes-view.md) penceresi. Herhangi bir işlem düğümü ağacında seçin ve ardından **özellikleri** gelen **görünümü** menüsü.  
   
  Windows 98 ve Windows 95 işletim sistemlerinde, yalnızca değiştirilmiş bir sürümünü **genel** sekmesi görüntülenir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Genel sekmesi, işlem özellikleri iletişim kutusu](../debugger/general-tab-thread-properties-dialog-box.md)  
+ [Genel Sekmesi, İşlem Özellikleri İletişim Kutusu](../debugger/general-tab-thread-properties-dialog-box.md)  
  Seçilen işlem hakkında daha fazla bu iletişim kutusu bulma kullanın.  
   
- [Bellek sekmesi, işlem özellikleri iletişim kutusu](../debugger/memory-tab-process-properties-dialog-box.md)  
+ [Bellek Sekmesi, İşlem Özellikleri İletişim Kutusu](../debugger/memory-tab-process-properties-dialog-box.md)  
  Bir işlem bellek nasıl kullandığını göstermek için bu sekmeyi kullanın.  
   
- [Sayfa dosyası sekmesi, işlem özellikleri iletişim kutusu](../debugger/page-file-tab-process-properties-dialog-box.md)  
+ [Sayfa Dosyası Sekmesi, İşlem Özellikleri İletişim Kutusu](../debugger/page-file-tab-process-properties-dialog-box.md)  
  Bir işlemin disk belleği dosyasını incelemek için bu sekmeyi kullanın.  
   
- [Alan sekmesi, işlem özellikleri iletişim kutusu](../debugger/space-tab-process-properties-dialog-box.md)  
+ [Alan Sekmesi, İşlem Özellikleri İletişim Kutusu](../debugger/space-tab-process-properties-dialog-box.md)  
  Bir işlemin adres alanı incelemek için bu sekmeyi kullanın.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [İşlem arama iletişim kutusu](../debugger/process-search-dialog-box.md)  
+ [İşlem Arama İletişim Kutusu](../debugger/process-search-dialog-box.md)  
  İşlem görünümü içinde belirli bir işlem düğümü bulmak için kullanılır.  
   
  [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  

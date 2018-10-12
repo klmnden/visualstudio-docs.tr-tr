@@ -1,7 +1,7 @@
 ---
 title: Toplama ayrıntılı zamanlama verileri araçları kullanarak | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae3d2335c73f68f790e9b3def8f2a1d4ced7c969
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8355911a54e6682b763d7f3aecbf29812fa4a1e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774906"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186270"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>İzleme Kullanarak Ayrıntılı Zamanlama Verileri Toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [tarafından ölçümlü izleme kullanarak ayrıntılı zamanlama verileri toplama](https://docs.microsoft.com/visualstudio/profiling/collecting-detailed-timing-data-by-using-instrumentation).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profil oluşturma araçları araç haline getirme yöntemi, bir modülün bir kopyasını profil oluşturma kodu ekler. Kodun her giriş, çıkış ve işlevlerin işlev çağrısı modülünde bir profil oluşturma sırasında kaydeder. Araçlar yöntemini giriş ve çıkış işlemleri uygulama performansı üzerindeki etkisini anlamak için kodun bir bölümünü hakkında ayrıntılı zamanlama bilgileri toplamak için yararlı olacaktır.  
   
  Araçlar yöntemini aşağıdaki yordamlardan birini kullanarak belirtebilirsiniz:  

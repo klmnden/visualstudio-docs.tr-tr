@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: erişme ve seçimi kısıtlama geçerli seçimi | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 308187842eeaed8e216336ab84c6e9036c1ced70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec8ff7ae0b0e006528b11604f54dc74170857cf7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695226"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187583"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Nasıl yapılır: Geçerli Seçime Erişme ve Seçimi Kısıtlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: erişme ve seçimi kısıtlama geçerli seçimi](https://docs.microsoft.com/visualstudio/modeling/how-to-access-and-constrain-the-current-selection).  
-  
 Bir komut veya hareket işleyici alana özgü dilinizi yazarken, hangi öğe kullanıcı sağ belirleyebilirsiniz. Bazı şekilleri veya alanları seçilmesini de engelleyebilir. Örneğin, kullanıcı bir simge dekoratör tıkladığında, içerdiği şekli yerine seçili düzenleyebilirsiniz. Seçim bu şekilde sınırlama yazmanız gereken işleyicileri sayısını azaltır. Ayrıca şeklinde dekoratör önlemek gerek kalmadan herhangi bir yere tıklayın kullanıcı, kolaylaştırır.  
   
 ## <a name="accessing-the-current-selection-from-a-command-handler"></a>Bir komut işleyici geçerli seçime erişme  

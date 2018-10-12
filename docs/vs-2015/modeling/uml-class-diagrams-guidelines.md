@@ -1,7 +1,7 @@
 ---
 title: 'UML sınıf diyagramları: Yönergeler | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 56
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 073fb32fae3d02e7edaa8adb8347901e797d047f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9c7b5f5a88e8563930615c883c6911956932d17
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690008"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181785"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML Sınıf Diyagramları: Yönergeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [UML sınıf diyagramları: yönergeler](https://docs.microsoft.com/visualstudio/modeling/uml-class-diagrams-guidelines).  
-  
 Visual Studio'da kullanabileceğiniz bir *UML sınıf diyagramı* veri türlerini ve ilişkilerini uygulamalarından ayrı olarak açıklamak için. Diyagram, sınıfların uygulamaları yerine mantıksal yönlerine odaklanmak için kullanılır.  
   
  Bir UML sınıf diyagramı oluşturmak için **mimarisi** menüsünde seçin **yeni UML diyagram veya katman diyagramı**.  
@@ -484,7 +482,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
  [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)   
  [UML sıralı diyagramlar: başvuru](../modeling/uml-sequence-diagrams-reference.md)   
  [UML Kullanım durumu diyagramları: başvuru](../modeling/uml-use-case-diagrams-reference.md)   
- [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)
+ [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)
 
 
 

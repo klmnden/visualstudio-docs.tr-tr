@@ -1,7 +1,7 @@
 ---
 title: VSPackage yükleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a6e128b4e8decef7d8dfabc1f2bd8a56ea592e06
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d2294f40158c37b404a9e0301a5204b022c7f1fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686482"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173023"
 ---
 # <a name="loading-vspackages"></a>VSPackage Yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [VSPackage yükleme](https://docs.microsoft.com/visualstudio/extensibility/loading-vspackages).  
-  
 İşlevleri gerekli olduğunda VSPackages Visual Studio'ya yüklenir. Örneğin, Visual Studio bir proje fabrikası ya da VSPackage'ı uygulayan bir hizmet kullanırken bir VSPackage yüklenir. Bu özellik, mümkün olduğunda performansını artırmak kullanılan Gecikmeli yüklemeyi çağrılır.  
   
 > [!NOTE]

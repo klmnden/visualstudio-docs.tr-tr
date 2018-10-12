@@ -1,7 +1,7 @@
 ---
 title: Kullanılan değiştirme dizeleri. Pkgdef ve. Pkgundef dosyaları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b1755d63-d794-4fd7-864b-70a9684881c2
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24996e4e32ab86af46fce5280947719f906ffc3a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f679f5c4f817002fa92475a1fba7dc38caa34984
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695313"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175298"
 ---
 # <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>Kullanılan değiştirme dizeleri. Pkgdef ve. Pkgundef dosyaları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [değiştirme dizeleri kullanılır. Pkgdef ve. Pkgundef dosyaları](https://docs.microsoft.com/visualstudio/extensibility/substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files).  
-  
 .Pkgdef aşağıda listelenen değiştirme dizeleri kullanabilirsiniz ve .pkgundef dosyaları, Visual Studio için tanımladığınız yalıtılmış Kabuk uygulaması.  
   
 ## <a name="substitution-strings"></a>Değiştirme dizeleri  

@@ -1,7 +1,7 @@
 ---
 title: 'CA1304: CultureInfo belirtme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 149ab03c1ee33d8aaf5aae30ddf56150279c4052
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: d53cdb1622fbb9750cddd2a79b1bbc7cd606ba20
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42903038"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188350"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304: CultureInfo belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA1304: CultureInfo belirtin](https://docs.microsoft.com/visualstudio/code-quality/ca1304-specify-cultureinfo).
-
 |||
 |-|-|
 |TypeName|SpecifyCultureInfo|
@@ -51,9 +48,9 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [CA1304: CultureInfo belirt
 ## <a name="rule-description"></a>Kural Tanımı
  Olduğunda bir <xref:System.Globalization.CultureInfo> veya <xref:System.IFormatProvider?displayProperty=fullName> nesnesi sağlanmadı, aşırı yüklü üye tarafından sağlanan varsayılan değer, tüm yerel ayarlarda istediğiniz etkiyi vermeyebilir. Ayrıca, [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] üyeleri varsayılan kültür seçin ve alan biçimlendirme hakkında varsayımlar kodunuz için doğru olmayabilir. Kod senaryolarınız için beklendiği gibi çalıştığından emin olmak için aşağıdaki kılavuzlara göre kültüre özgü bilgileri vermeniz gerekir:
 
--   Değeri kullanıcıya görüntülenir, geçerli kültür kullanın. Bkz: <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.
+-   Değeri kullanıcıya görüntülenir, geçerli kültür kullanın. Bkz. <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.
 
--   Diğer bir deyişle, bir dosya ya da veritabanı, kalıcı bir değeri depolanan ve yazılım tarafından erişilen, sabit kültür kullanın. Bkz: <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>.
+-   Diğer bir deyişle, bir dosya ya da veritabanı, kalıcı bir değeri depolanan ve yazılım tarafından erişilen, sabit kültür kullanın. Bkz. <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>.
 
 -   Hedef değerin bilmiyorsanız, veri tüketici sahip veya sağlayıcıyı kültür.
 

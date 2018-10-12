@@ -1,7 +1,7 @@
 ---
 title: Çözüm (. Sln) dosyası | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 737186560f6e1cde0fc35d16dab35fb146685fbb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0b6248bf97650212324fe9ca0791ccbd981d92ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693909"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173686"
 ---
 # <a name="solution-sln-file"></a>Çözüm (.Sln) Dosyası
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [çözüm (. Sln) dosya](https://docs.microsoft.com/visualstudio/extensibility/internals/solution-dot-sln-file).  
-  
 Çözüm Projeleri Visual Studio'da düzenleme yapısıdır. Çözüm projeleri (metin tabanlı, paylaşılan) .sln ve .suo (ikili, kullanıcıya özel bir çözüm seçenekleri) dosyaları için durum bilgilerini tutar. .Suo dosyaları hakkında daha fazla bilgi için bkz. [çözüm kullanıcı seçenekleri (. Suo) dosyası](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
   
  Ortam, VSPackage .sln dosyasında başvurulan bir sonucu olarak yüklenirse çağırır <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A> .sln dosyasını okuma için.  

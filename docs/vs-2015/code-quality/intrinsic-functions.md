@@ -1,7 +1,7 @@
 ---
 title: İç işlevler | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 9
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a391bc1f5208b47ffb1aca51dbbd40b5b15fb04d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b50742c0176b8c880d3ed0b58b7b8ef76355777
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694588"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174492"
 ---
 # <a name="intrinsic-functions"></a>İç İşlevler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [iç işlevleri](https://docs.microsoft.com/visualstudio/code-quality/intrinsic-functions).  
-  
 SAL bir ifadede, yan etkilere sahip olmayan bir ifade olması şartıyla C/C++ ifade olabilir — örneğin, ++,--ve işlev çağrıları bu bağlamda tümüne sahip yan etkiler.  SAL ancak, bazı işlev benzeri nesnelerin ve SAL ifadelerde kullanılabilir ayrılmış bazı semboller sağlar. Bunlar olarak adlandırılır *iç işlevleri*.  
   
 ## <a name="general-purpose"></a>Genel amaçlı  
@@ -44,7 +42,7 @@ SAL bir ifadede, yan etkilere sahip olmayan bir ifade olması şartıyla C/C++ i
 |`_Inexpressible_(expr)`|Burada bir arabellek boyutu ek açıklama ifadesi kullanılarak temsil etmek için çok karmaşık bir durum ifade eder — Örneğin, ne zaman, bir giriş veri kümesi tarama ve sonra sayım hesaplanan üyeler seçili.|  
 |`_Nullterm_length_(param)`|`param` en fazla arabellek ancak bir null Sonlandırıcı içermeden öğeleri sayısıdır. Toplama olmayan, void olmayan tür herhangi bir arabellek için uygulanabilir.|  
 |`_Old_(expr)`|Önkoşul değerlendirildiğinde `_Old_` giriş değeri döndürür `expr`.  Sonrası koşulu değerlendirilirken, değeri döndürür. `expr` önkoşulu değerlendirilen gibi.|  
-|`_Param_(n)`|`n`Parametresinden 1'den sayım, bir işleve `n`, ve `n` değişmez değer bir tamsayı sabitidir. Parametre ise, bu ek açıklama parametre adıyla erişmek için aynıdır. **Not:** `n` üç nokta tanımlanan ya da adları değil kullanıldığı işlev prototiplerinde kullanılabilir konumsal parametreleri başvurabilir.  |  
+|`_Param_(n)`|`n`Parametresinden 1'den sayım, bir işleve `n`, ve `n` değişmez değer bir tamsayı sabitidir. Parametre ise, bu ek açıklama parametre adıyla erişmek için aynıdır. **Not:** `n` üç nokta tanımlanan ya da adları değil kullanıldığı işlev prototiplerinde kullanılabilir konumsal parametreleri başvurabilir.|  
 |`return`|C/C++ ayrılmış anahtar sözcüğü `return` SAL ifadesinde bir işlev dönüş değeri belirtmek için kullanılabilir.  Değer yalnızca post kullanılabilir durumdadır; öncesi durumunda kullanmak için bir söz dizimi hatası var.|  
   
 ## <a name="string-specific"></a>Belirli dize  
@@ -64,7 +62,7 @@ SAL bir ifadede, yan etkilere sahip olmayan bir ifade olması şartıyla C/C++ i
  [Yapıları ve sınıfları yorumlama](../code-quality/annotating-structs-and-classes.md)   
  [Kilitlenme davranışını yorumlama](../code-quality/annotating-locking-behavior.md)   
  [Açıklamanın ne zaman ve nereye uygulanacağını belirtme](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
- [En iyi yöntemler ve örnekler](../code-quality/best-practices-and-examples-sal.md)
+ [En İyi Yöntemler ve Örnekler](../code-quality/best-practices-and-examples-sal.md)
 
 
 

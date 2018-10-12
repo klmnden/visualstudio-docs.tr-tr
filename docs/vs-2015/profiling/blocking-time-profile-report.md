@@ -1,7 +1,7 @@
 ---
 title: Engelleme zamanı Profil raporu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae0c4f34f0d3447f63afbf08e9d788304b2d353f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6cf06fc37a10f6bf028d3f4ef7174e73574b604b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633274"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180810"
 ---
 # <a name="blocking-time-profile-report"></a>Engelleme Zamanı Profil Raporu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [engelleme zamanı Profil raporu](https://docs.microsoft.com/visualstudio/profiling/blocking-time-profile-report).  
-  
 Profil raporlarını engelleme her kategorisi (örneğin, "G/ç" veya "Eşitleme") belirli çağrı yığınlarını engelleme zamanı veri toplama sağlayın. Önalım raporu geçerli işlem önalım örneklerinin birlikte etkisiz işlemleri listeler. Engelleme Profil raporu oluşturmak için araç engelleme API çağrıları toplar ve bunları çağrı yığınlarını ağacının toplanır. Bu raporlarda gösterilen verileri geçerli zaman aralığı, gizli dizileri ve uygulanabilir aşağıdaki iki filtre olarak değişir:  
   
 -   Yalnızca kendi kodum seçtiyseniz bir düzey altındaki kullanıcı kodunun yanı sıra kullanıcı koduna sahip yığın çerçevelerini sunulur.  

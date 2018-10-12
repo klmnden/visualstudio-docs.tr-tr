@@ -1,7 +1,7 @@
 ---
 title: Projeleri yükseltme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 74ec29dbc4aae393d9ee09fa6a9de273369ce7cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 31f380c7de629a9f0a60d842fce38f0e960158df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633114"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177660"
 ---
 # <a name="upgrading-projects"></a>Projeleri Yükseltme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [projeleri yükseltme](https://docs.microsoft.com/visualstudio/extensibility/internals/upgrading-projects).  
-  
 Proje modeli için bir sürümünden değişiklikleri [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] sonraki sürüme üzerinde çalıştırabilmeniz için projeler ve çözümler yükseltilmesi özellikle gerektirebilir. [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] Yükseltme desteği kendi projelerinde uygulamak için kullanılan arabirimleri sağlar.  
   
 ## <a name="upgrade-strategies"></a>Yükseltme stratejileri  

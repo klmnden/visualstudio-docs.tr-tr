@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: özel yerel ayara sahip olan bir projeyi yayımlama | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: f832fc7f8ff78fc23571015ceeaf67d605a82aa9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f45b0a453e66814d54bbe0cb5e20c4f287cc713f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680889"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185217"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Nasıl yapılır: Özel Yerel Ayara Sahip Olan Bir Projeyi Yayımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: özel yerel ayara sahip olan bir projeyi yayımlama](https://docs.microsoft.com/visualstudio/deployment/how-to-publish-a-project-that-has-a-specific-locale).  
-  
 Farklı yerel ayarlara sahip bileşenleri içeren bir uygulama için durumdur. Bu senaryoda, birkaç proje sahip bir çözüm oluşturun ve ardından her yerel ayar için ayrı projeler yayımlama. Bu yordam, bir makro 'tr' yerel ayarı kullanarak bir çözümde ilk projenizi yayımlamak için nasıl kullanılacağını gösterir. Bu yordamı 'tr' dışında bir yerel ayar ile deneyin istiyorsanız, ayarladığınızdan emin olun `localeString` (örneğin, 'de' veya 'de-DE') kullanarak yerel ayarına uyan makroda.  
   
 > [!NOTE]

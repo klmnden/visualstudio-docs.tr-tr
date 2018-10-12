@@ -1,7 +1,7 @@
 ---
 title: Profil oluşturma HPC (yüksek performanslı hesaplama) kümelerinde | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c67732552239f995b5edd6a328ae1de4fa379e3a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1bea3ca5adf462ec6c403099c8276bbdb87e4b57
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693234"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178951"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>HPC (Yüksek Performanslı Hesaplama) Kümelerinde Profil Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [HPC (yüksek performanslı hesaplama) kümelerinde profil oluşturma](https://docs.microsoft.com/visualstudio/profiling/profiling-on-hpc-high-performance-computing-clusters).  
-  
 Örnekleme yöntemini kullanarak, Microsoft Windows HPC kümeleri işlem düğümlerinde profilini oluşturabilirsiniz [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] veya [!INCLUDE[vsUltExt](../includes/vsultext-md.md)] profil oluşturma araçları. HPC hakkında daha fazla bilgi için bkz. [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) Microsoft Web sitesinde.  
   
 ## <a name="prerequisites"></a>Önkoşullar  

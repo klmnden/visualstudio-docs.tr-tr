@@ -1,7 +1,7 @@
 ---
 title: Sürüm denetimi altındaki modelleri ve diyagramları yönetme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1c2cc85b5ae94e95ef5f1e07a6d3ca13663fbb44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4aa1da880195e3566460d8169c6eed4e81bb0fb1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693024"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187576"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Sürüm denetimi altındaki modelleri ve diyagramları yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [sürüm denetimi altındaki modelleri ve diyagramları yönetme](https://docs.microsoft.com/visualstudio/modeling/manage-models-and-diagrams-under-version-control).  
-  
 Modelleme projeleri ve diyagramları, kod haritaları (.dgml dosyaları) dahil olmak üzere farklı sürümlerini yönetmek [Team Foundation sürüm denetimi veya Git kullanan](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314); ya da şirket içi Team Foundation Server ile veya Visual ile bulutta Studio Team Services.  
   
  Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

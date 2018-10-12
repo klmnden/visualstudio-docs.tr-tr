@@ -1,7 +1,7 @@
 ---
 title: Çekirdekler görünümü göstergesi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6416b9bf96b3a23fce72df56190df9dfd5847531
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d28cef1493371fc55fc15c38a1e493d0cad0621
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692760"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176260"
 ---
 # <a name="cores-view-legend"></a>Çekirdekler Görünümü Göstergesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [çekirdekler görünümü göstergesi](https://docs.microsoft.com/visualstudio/profiling/cores-view-legend).  
-  
 Çekirdekler görünümü göstergesi, renk ve ada göre her bir iş parçacığı tanımlar. Çekirdekler arası bağlam anahtarları, toplam bağlam anahtarları ve çekirdekleri çaprazlayan bağlam anahtarlarının yüzdesi sayılarını gösteren sütunları içerir. Gösterge satırlarda azalan olarak çekirdekler arası bağlam anahtarları sayısına göre sıralanır.  
   
  Satırları zaman çizelgesinde görüntülenen iş parçacıklarının filtrelemek için göstergeyi seçebilirsiniz. Seçili iş parçacıklarını zaman çizelgesinde gösterilir. Hiçbir satır seçtiyseniz, tüm satırları zaman çizelgesinde gösterilir.  

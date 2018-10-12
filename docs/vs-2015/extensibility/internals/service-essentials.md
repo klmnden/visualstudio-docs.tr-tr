@@ -1,7 +1,7 @@
 ---
 title: Hizmet temel bileşenleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 497f894f1ae8eef6c58ffeea542128105a51336b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec9ccc92a8650c71336fc4a6916b797bd449dc7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688836"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178145"
 ---
 # <a name="service-essentials"></a>Hizmet Temel Bileşenleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [hizmet temel bileşenleri](https://docs.microsoft.com/visualstudio/extensibility/internals/service-essentials).  
-  
 Bir sözleşme iki Vspackage'lar arasında olan bir hizmettir. Bir VSPackage'ı kullanmak başka bir VSPackage arabirimleri belirli sunmaktadır. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kendisini diğer Vspackages'a hizmetleri sağlayan VSPackages oluşan bir koleksiyondur.  
   
  Örneğin, etkinlik günlüğüne yazmak için kullanabileceğiniz bir IVsActivityLog arabirimi almak için SVsActivityLog hizmetini kullanabilirsiniz. Daha fazla bilgi için [nasıl yapılır: etkinlik günlüğü'nün](../../extensibility/how-to-use-the-activity-log.md).  

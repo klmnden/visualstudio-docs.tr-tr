@@ -1,7 +1,7 @@
 ---
 title: İşlevi Yüzlerce Kere Çağırırken Hangi Çağrının Başarısız Olduğunu Nasıl Bilebilirim? | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2655205c3e0c34d1063ce54793f49330ab7ccc2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60e01816d6b123c95b8bab07189710869d0193f3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694747"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180992"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>İşlevi Yüzlerce Kere Çağırırken Hangi Çağrının Başarısız Olduğunu Nasıl Bilebilirim?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [işlevi yüzlerce kere çağırırken nasıl hangi çağrının başarısız bilebilirim?](https://docs.microsoft.com/visualstudio/debugger/when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed-q).  
-  
 Sorun açıklaması  
  Kendi programımı belirli bir işlev çağrısı başarısız `CnvtV`. Bu başarısız olmadan önce programı büyük olasılıkla bu işlev birkaç yüzlerce kez çağırır. Ben bir konum kesme noktası ayarlarsanız, `CnvtV`, söz konusu işleve yapılan her çağrıda programı durdurur ve bu istemiyorum. Koşullu kesme noktası olarak ayarlanamıyor için hangi koşullar çağrının başarısız olmasına neden bilmiyorum. Ne yapabilirim?  
   
@@ -61,7 +59,7 @@ CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yerel kod hata ayıklaması SSS](../debugger/debugging-native-code-faqs.md)   
  [Kesme noktaları ayarlama](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)   
- [Yerel kodda hata ayıklama](../debugger/debugging-native-code.md)
+ [Yerel Kodda Hata Ayıklama](../debugger/debugging-native-code.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Kaynak denetimi VSPackage'ı mimarisi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 453125fc-23dc-49b1-8476-94581f05e6c7
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d2a76a877581085b6bdffd8522bfcea24ea9e24
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69cbcd1f8ab1f04f02d89839eed1e0cd67aa2fd9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630314"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190469"
 ---
 # <a name="source-control-vspackage-architecture"></a>Kaynak Denetimi VSPackage’ı Mimarisi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [kaynak denetimi VSPackage'ı mimarisi](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-vspackage-architecture).  
-  
 Kaynak denetimi kullanan bir VSPackage Hizmetleri paketidir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] özelliklere sahip IDE sunar. Buna karşılık, bir kaynak denetimi paket, kaynak denetimi hizmetini işlevselliği sağlar. Ayrıca, bir kaynak denetimi daha verimli bir alternatif bir kaynak denetimi eklentisi kaynak denetimine tümleştirmek için daha pakettir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
  Kaynak Denetimi Eklentisi Kaynak Denetimi Eklentisi API uygulayan katı bir sözleşme'ne bağlıdır. Örneğin, bu eklenti varsayılan değiştirilemiyor [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kullanıcı arabirimi (UI). Ayrıca, kaynak denetimi eklentisi API kendi kaynak denetimi modeli uygulamak bir eklenti etkinleştirmez. Bir kaynak denetimi paket ancak, bu sınırlamalardan hem de ortadan kaldırır. Kaynak denetimi paket kaynak denetim deneyimi üzerinde tam denetime sahip bir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kullanıcı. Ayrıca, kendi kaynak denetimi modeli ve mantıksal bir kaynak denetimi paketini kullanabilir ve tüm kaynak denetimi ile ilgili kullanıcı arabirimleri tanımlayabilirsiniz.  

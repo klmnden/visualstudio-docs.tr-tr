@@ -1,7 +1,7 @@
 ---
 title: Extern öğesi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5dce51835164424272874b42b6073131607c7272
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc1b406fa0675a481b538446f9c4bf0716475872
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692664"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171892"
 ---
 # <a name="extern-element"></a>Extern Öğesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Extern öğesi](https://docs.microsoft.com/visualstudio/extensibility/extern-element).  
-  
 Extern öğesi, derleme zamanında .vsct dosyası ile birleştirmek için dış üstbilgi (.h) dosyalarla başvuruyor. VSCT derleyici için verilen ya da başvurduğu yoluna birleştirilecek dosyaları olmalıdır bir [INCLUDE öğesi](../extensibility/include-element.md). Dosyaları diğer .vsct dosyaları veya C++ üstbilgi dosyaları olabilir.  
   
  Üst bilgi dosyaları tanımlarında biçiminde olmalıdır "# [Value] [simge] define" önceden tanımlı değilse değer başka bir sembol olabilir. Tanımları komut öğeleri koşullu ifadelerde kullanılabilir. Gerçekten kullanılmıyorsa herhangi bir simge atılacak.  
