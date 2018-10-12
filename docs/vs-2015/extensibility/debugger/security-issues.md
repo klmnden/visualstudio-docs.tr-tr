@@ -1,7 +1,7 @@
 ---
 title: Güvenlik sorunları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d6ffff0a-afb4-4f38-86d8-476c881c4e4b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0459f7e91fbced71dda0bb401ffe056b5cd49f52
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c20ef751960bed02b6b6b1d393f168a9b8e510f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632968"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219381"
 ---
 # <a name="security-issues"></a>Güvenlik Sorunları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [güvenlik sorunları](https://docs.microsoft.com/visualstudio/extensibility/debugger/security-issues).  
-  
 Visual Studio kullanarak bir programda hata ayıklamak için gerekli tek izinler programı çalıştırmak için bir geliştiricinin ihtiyaç duyduğu bilgilerle aynı değil. Bu, çoğu durum için (Internet bilgi hizmeti gibi diğer hizmetlerle ilgili bazı durumlarda, daha yüksek düzeyde izinleri gerektirebilir) uzaktan hata ayıklamayı içerir.  
   
  Visual Studio çalışırken, işlem hata ayıklama Yöneticisi (PDM) yerel makine üzerinde hata ayıklama işlemlerini izler. Uzaktan msvsmon.exe adlı bir program, uzaktan hata ayıklama işlemek ve PDM kullanılabilir hale getirmek için geliştirici tarafından başlatılır. (Unutmayın. msvsmon.exe'in hizmet değildir ve bu makinede uzaktan hata ayıklamayı etkinleştirmek için el ile başlatılması gerekir.) Visual Studio'nun (veya msvsmon.exe) çalışmadığında, hiçbir işlem hata ayıklama için izlenir.  

@@ -1,7 +1,7 @@
 ---
 title: Hata ayıklama kanca işlevi yazma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,35 +28,33 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5761b0a32e7739a5611f2d3d07183f0c529fc60c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4439b3c308a3c76172b0de4aa5c8a95f92092c5b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693518"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218991"
 ---
 # <a name="debug-hook-function-writing"></a>Hata Ayıklama Kanca İşlevi Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [hata ayıklama kanca işlevi yazma](https://docs.microsoft.com/visualstudio/debugger/debug-hook-function-writing).  
-  
 Bu bölümde, bir dizi önceden tanımlanmış bazı noktalar normal işleme hata ayıklayıcı'nın içinde kod eklemeye izin veren yazabileceğiniz özel hata ayıklama kanca işlevleri açıklanmaktadır.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [İstemci blok kanca işlevleri](../debugger/client-block-hook-functions.md)  
+ [İstemci Blok Kanca İşlevleri](../debugger/client-block-hook-functions.md)  
  Yönergeler ve bir prototip doğrulamak veya _clıent_block bloklarında depolanan verilerin içeriklerini rapor işlevleri yazmak için sağlar.  
   
- [Atama kanca işlevleri](../debugger/allocation-hook-functions.md)  
+ [Atama Kanca İşlevleri](../debugger/allocation-hook-functions.md)  
  Bir ayırma kanca işlevini tanımlayan, farklı kullanımları, kısıtlamalar, noktaları inceler ve bir prototip sağlar.  
   
  [Atama kancaları ve CRT bellek ayırmaları](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)  
  Kısıtlama açıkça yoksayılıyor, atama kanca işlevleri açıklar `_CRT_BLOCK` iç bellek C çalışma zamanı kitaplık işlevleri çağrıları yaptıkları engeller. Bu konuda, atama kanca değil yoksayarsanız, ayrıca sonuçları listeler `_CRT_BLOCK` bloklarla (örnekler) ve varsayılan ayırma değiştirme kanca işlevini, **CrtDefaultAllocHook**.  
   
- [Kanca işlevlerini raporlama](../debugger/report-hook-functions.md)  
+ [Kanca İşlevlerini Raporlama](../debugger/report-hook-functions.md)  
  Anlatılmaktadır `_CrtSetReportHook`, ayırmaları belirli türlerde odaklanmak için filtre uygulamak için kullanabileceğiniz raporlar. Bu konu, bir prototip de sağlar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [CRT hata ayıklama teknikleri](../debugger/crt-debugging-techniques.md)  
+ [CRT Hata Ayıklama Teknikleri](../debugger/crt-debugging-techniques.md)  
  CRT hata ayıklama kitaplığı, raporlama için makroları kullanma dahil olmak üzere C çalışma zamanı kitaplığı hata ayıklama tekniklerine bağlantılarını farkları arasında `malloc` ve `_malloc_dbg`, hata ayıklama kanca işlevlerini ve CRT hata ayıklama yığın yazma.
 
 

@@ -1,7 +1,7 @@
 ---
 title: 'Hata: Web sunucusunda hata ayıklama başlatılamıyor. | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -33,18 +33,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 410b180d7b533c925aa183d01bd8f64463225629
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ccfce76d1cedacecdc467971151a6f9a66d5af68
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683790"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217886"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Hata: Web Sunucusunda Hata Ayıklama Başlatılamıyor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [hatası: hata ayıklamayı Başlat Web sunucusundaki kurulamıyor](https://docs.microsoft.com/visualstudio/debugger/error-unable-to-start-debugging-on-the-web-server).  
-  
 Bir Web sunucusunda çalışan bir ASP.NET uygulamasında hata ayıklama kaydetmeye çalıştığında bu hata iletisini alabilirsiniz: Web sunucusunda hata ayıklama başlatılamıyor.
   
 IIS düzgün yapılandırılmadığından, çoğu durumda, bu hata oluşur.
@@ -98,7 +96,7 @@ Visual Studio'nun daha eski bir sürümü kullanıyorsanız:
    
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Web uygulamalarında hata ayıklama: Hatalar ve sorun giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Web Uygulamalarında Hata Ayıklama: Hatalar ve Sorun Giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 
 
 

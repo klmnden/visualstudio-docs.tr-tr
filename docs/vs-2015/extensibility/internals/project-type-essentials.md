@@ -1,7 +1,7 @@
 ---
 title: Proje türü temel bileşenleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 09991589-2300-430e-b6a4-7f2b95fe676f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd2c0db72cce80f5345475dfd7e82b019b0ec22a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f4f2163526e1bd324e87b6ffd78bafa98965490
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694487"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222488"
 ---
 # <a name="project-type-essentials"></a>Proje Türü Temel Bileşenleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [proje türü temel bileşenleri](https://docs.microsoft.com/visualstudio/extensibility/internals/project-type-essentials).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Proje birden fazla dil için APIleri içerir [!INCLUDE[csprcs](../../includes/csprcs-md.md)] veya [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Ayrıca, kendi proje türleri oluşturmanızı sağlar.  
   
  Özel komutlar, düzenleyiciler ve araç pencerelerini eklemek istiyorsanız [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], yeni bir proje türü oluşturmak zorunda kalmadan yapabilirsiniz. Daha fazla bilgi için aşağıdaki konulara bakın:  

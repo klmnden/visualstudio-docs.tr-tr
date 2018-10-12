@@ -1,7 +1,7 @@
 ---
 title: Nesneleri Düzen kapsayıcılarına XAML Tasarımcısı'nda yerleştirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 329e41454431c0d19adda5175b455449d4f48e7b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c92af4e78715c608fdee860690fd58561b8bb2d5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690542"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219563"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>XAML Tasarımcısı’nda nesneleri düzen kapsayıcılarına yerleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nesneleri Düzen kapsayıcılarına XAML Tasarımcısı'nda düzenlemek](https://docs.microsoft.com/visualstudio/designers/organize-objects-into-layout-containers-in-xaml-designer).  
-  
 Nesneleri bir sayfada görüntülenmesini istediğiniz düşünün; Görüntü, düğmeler ve video gibi nesneleri. Dikey veya yatay veya sabit konumlarda satırlar ve sütunlar, tek bir satırda görünmesini istediğiniz olabilir.  
   
  Bir düzen paneli, sayfanın nasıl görünebilir hakkında düşünmek ettikten sonra seçin. Nesnelerinizi eklemeniz gerektiği için tüm sayfaları ile başlayın. Varsayılan olarak, bu bir **kılavuz** ancak isterseniz bunu değiştirebilirsiniz.  
@@ -141,7 +139,7 @@ Nesneleri bir sayfada görüntülenmesini istediğiniz düşünün; Görüntü, 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XAML Tasarımcısı'nda öğelerle çalışma](../designers/working-with-elements-in-xaml-designer.md)   
- [XAML Tasarımcısı'nı kullanarak kullanıcı Arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+ [XAML Tasarımcısı’nı kullanarak bir kullanıcı arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
 
 
 

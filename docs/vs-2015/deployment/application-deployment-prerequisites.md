@@ -1,7 +1,7 @@
 ---
 title: Uygulama dağıtımının önkoşulları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 3a866105a2b9d4549fd3684dc4726f165d43a7af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 699d7261db325b23502003f250e8ed2fc61f5c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631856"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217938"
 ---
 # <a name="application-deployment-prerequisites"></a>Uygulama Dağıtımının Önkoşulları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Uygulama dağıtımının önkoşulları](https://docs.microsoft.com/visualstudio/deployment/application-deployment-prerequisites).  
-  
 Uygulamanızı yüklemek ve başarılı bir şekilde çalıştırılması sağlamak için önce uygulamanızın bağımlı olduğu tüm bileşenleri hedef bilgisayarda zaten yüklü olduğundan emin olun gerekir. Örneğin, çoğu uygulama kullanılarak oluşturulan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] üzerinde bir bağımlılığa sahip [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]; uygulama yüklenmeden önce doğru ortak dil çalışma zamanı sürümünü hedef bilgisayarda mevcut olması gerekir.  
   
  Önkoşullar seçebileceğiniz **Önkoşullar iletişim kutusu** ve .NET Framework ve diğer yeniden dağıtılabilir dosyaları yüklemenizin bir parçası yükleyin. Bu yöntem olarak da bilinen *önyükleme*. Ardından, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] olarak da bilinir, Setup.exe adlı bir Windows yürütülebilir bir program oluşturur bir *önyükleyici*. Önyükleyici, uygulama çalışmadan önce bu önkoşulları yüklemek için sorumludur. Bu Önkoşullar seçme hakkında daha fazla bilgi için bkz. [Önkoşullar iletişim kutusu](../ide/reference/prerequisites-dialog-box.md).  

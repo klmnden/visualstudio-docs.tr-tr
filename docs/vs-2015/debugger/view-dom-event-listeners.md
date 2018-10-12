@@ -1,7 +1,7 @@
 ---
 title: DOM olayı dinleyicilerini görüntüleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7eeca4964df8e89511b1a077cace83484c35f44d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9d6f5c913cb2868df1af25470eb69f84575ffab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630759"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223307"
 ---
 # <a name="view-dom-event-listeners"></a>DOM olayı dinleyicilerini görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [görünümü DOM olayı dinleyicilerini](https://docs.microsoft.com/visualstudio/debugger/view-dom-event-listeners).  
-  
 Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  **Olayları** DOM Gezgini sekmesinde bir DOM öğesiyle ilişkili olayları gösterir. Her bir üst düğüm **olayları** sekmesinde, etkin aboneler bir olayını temsil eder. Üst düğüm belirli bir olay için kayıtlı olay dinleyicileri temsil eden alt düğümleri içerir. Olay dinleyicilerini görüntülemenin yanı sıra JavaScript kodunda olay dinleyicisi konumuna gitmek için bu sekmeyi kullanabilirsiniz. Bu konu başlığı altındaki bilgiler, HTML ve JavaScript kullanarak Store uygulamaları için geçerlidir.  
@@ -62,7 +60,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
 6.  DOM Gezgini'nde `Find` sağ üst köşedeki.  
   
-7.  Tür `ListView`, ve ardından Enter tuşuna basın.  
+7.  `ListView`yazın ve ardından Enter tuşuna basın.  
   
 8.  Gerekirse, seçin **sonraki** düğmesi bulunacak `DIV` temsil eden öğe `ListView` denetimi (Bu öğeyi bir `data-win-control` değerini `WinJS.UI.ListView`).  
   
@@ -118,7 +116,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md)   
  [DOM Gezgini'ni kullanarak CSS stillerinde hata ayıklama](../debugger/debug-css-styles-using-dom-explorer.md)   
- [DOM Gezgini'ni kullanarak Düzen hatalarını ayıklama](../debugger/debug-layout-using-dom-explorer.md)
+ [DOM Gezgini'ni kullanarak düzen hatalarını ayıklama](../debugger/debug-layout-using-dom-explorer.md)
 
 
 

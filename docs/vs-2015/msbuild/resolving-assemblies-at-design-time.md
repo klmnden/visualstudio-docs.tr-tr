@@ -1,7 +1,7 @@
 ---
 title: Tasarım zamanında derlemeleri çözme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b54d2c3dc69e33ba732f8b31b36d896c90e8b774
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc10169ac07efdeded41a9bb2990bdc206a17435
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632111"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224659"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Tasarım Zamanında Derlemeleri Çözme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [tasarım zamanında derlemeleri çözme](https://docs.microsoft.com/visualstudio/msbuild/resolving-assemblies-at-design-time).  
-  
   
 Başvuru Başvuru Ekle iletişim kutusunun .NET sekmesinde aracılığıyla bir derlemeye bir başvuru eklediğinizde, bir ara başvuru bütünleştirilmiş kodu için diğer bir deyişle, derlemedeki tüm tür ve imza bilgileri içeren, ancak bu mutlaka içermiyor gösterir. kodu. .NET sekmesinde, .NET Framework çalışma zamanı derlemeleri karşılık gelen başvuru derlemelerini listeler. Ayrıca, çalışma zamanı derlemeleri üçüncü taraflar tarafından kullanılan kayıtlı AssemblyFoldersEx klasörlerdeki karşılık gelen başvuru derlemelerini listeler.  
   
@@ -48,7 +46,7 @@ Başvuru Başvuru Ekle iletişim kutusunun .NET sekmesinde aracılığıyla bir 
  Şimdi .NET Framework SDK ile birlikte gelen hedefleme paketini tüm çalışma zamanı derlemelerinin listesi (redist) yeniden dağıtım listesi olarak adlandırılan Framework'ün bu sürümünde içerir. Bu, yanlış derleme sürümüne karşı türleri çözümlemek için derleme sistemini mümkün kılar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Gelişmiş kavramlar](../msbuild/msbuild-advanced-concepts.md)
+ [Gelişmiş Kavramlar](../msbuild/msbuild-advanced-concepts.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Sihirbazlar | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1396837a0d9eee3b31a5e938a2305052d5cc2761
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2331c75b5e0d708d6a2d0fa1ab987cc869879cd2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688091"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224308"
 ---
 # <a name="wizards"></a>Sihirbazlar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [sihirbazları](https://docs.microsoft.com/visualstudio/extensibility/internals/wizards).  
-  
 Bir sihirbaz oluşturduktan sonra genellikle eklemek istediğiniz [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] başkalarının da kullanabilmesi için tümleşik geliştirme ortamı (IDE). Eklenen Sihirbazı ardından görünür **Yeni Proje Ekle** veya **Yeni Öğe Ekle** iletişim kutuları. Görmek için **Yeni Proje Ekle** veya **Yeni Öğe Ekle** iletişim kutuları, sağ tıklayın, açık bir çözümde **Çözüm Gezgini**, işaret **Ekle**, ve ardından **yeni proje** veya **yeni öğe**.  
   
  Sihirbazlar uygulanabilir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kullanıcıların bir ağaç görünümünü açtıklarında kullanılabilir değerler arasından seçim **Yeni Proje Ekle** iletişim kutusu veya **Yeni Öğe Ekle** iletişim kutusu veya ne zaman sağ bir öğeyi **Çözüm Gezgini**.  

@@ -1,7 +1,7 @@
 ---
 title: ResolveKeySource görevi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a51b9b07be214a6713da4d9d6f9ccf99814b270f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1297b50390d98239fae491e0567abc7485202cff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689762"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219836"
 ---
 # <a name="resolvekeysource-task"></a>ResolveKeySource Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ResolveKeySource görevi](https://docs.microsoft.com/visualstudio/msbuild/resolvekeysource-task).  
-  
   
 Tanımlayıcı ad anahtar kaynağını belirler.  
   
@@ -60,7 +58,7 @@ Tanımlayıcı ad anahtar kaynağını belirler.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görevleri](../msbuild/msbuild-tasks.md)   
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+ [Görev Başvurusu](../msbuild/msbuild-task-reference.md)
 
 
 

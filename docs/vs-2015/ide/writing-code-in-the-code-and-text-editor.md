@@ -1,7 +1,7 @@
 ---
 title: Kod ve metin düzenleyici içinde kod yazma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -65,18 +65,15 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb879efdc3370578d57b529194a9a8790c9136dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64b8af9e995dc863fe578f61e22647726da73b35
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631898"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220538"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Kod ve Metin Düzenleyici'de Kod Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Bu konuda en son sürümünü şu yolda bulunabilir: [kodu ve metin düzenleyicisi kod yazma](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor).
-
 Visual Studio Düzenleyicisi, yazmak ve kodunuzu yönetmenizi kolaylaştıran birçok özellik sağlar. Genişletebilir ve Anahat oluşturmayı kullanarak farklı kod bloklarından birini daraltabilirsiniz. IntelliSense, kullanarak kullandığınız kod hakkında daha fazla bilgi **Nesne Tarayıcısı**ve arama hiyerarşisi. Gibi özellikleri kullanarak kodunuzda gezebilirsiniz gidebilirsiniz **gitmek için**, **tanıma**, ve **tüm başvuruları Bul**. Kod parçacıklarıyla kod blokları ekleyebilirsiniz ve kod gibi özellikleri kullanarak oluşturabileceğiniz **kullanımından Oluştur**. Visual Studio 2015 Düzenleyicisi önce hiç kullanmadıysanız, [kodunuzu düzenleme](https://www.visualstudio.com/features/ide-vs) hızlı bir genel bakış.  
 
  Kodunuzu bir dizi farklı yolla görüntüleyebilirsiniz. Çözümünüzü sınıf görünümü görmek için açabilirsiniz **sınıf görünümü** penceresi veya ait düğümleri genişletebilirsiniz **Çözüm Gezgini** sınıf dosyaları altındaki.  
@@ -201,7 +198,7 @@ Bu özellik, uzun adları kodunuz varsa, özellikle yararlı olur.
 
 -   [C# için Visual Studio Geliştirme Ortamını Kullanma](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
--   [Seçenekler, metin düzenleyici, JavaScript, biçimlendirme](../ide/reference/options-text-editor-javascript-formatting.md)  
+-   [Seçenekler, Metin Düzenleyici, JavaScript, Biçimlendirme](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>Bu bölümde  
 

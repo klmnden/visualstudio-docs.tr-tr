@@ -1,7 +1,7 @@
 ---
 title: Seçenekler sayfası, hata ayıklama düğümü özellikleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 128e4719775a4ce9d06214547936110ed88b7a14
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8bcc4637ebb933c2d6cc8a06d15ad70c1fbb76c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627765"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223857"
 ---
 # <a name="options-page-debugging-node-properties"></a>Seçenekler Sayfası, Hata Ayıklama Düğümü Özellikleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [seçenekler sayfası, hata ayıklama düğümü özellikleri](https://docs.microsoft.com/visualstudio/ide/reference/options-page-debugging-node-properties).  
-  
   
 Aşağıdaki tablolarda sayfaları (veya özellik koleksiyonları) açıklanmaktadır ile ilişkili **hata ayıklama** kategori `DTE.Properties("Debugging", <Property Page>)` , **seçenekleri** iletişim kutusu.  
   
@@ -95,7 +93,7 @@ Aşağıdaki tablolarda sayfaları (veya özellik koleksiyonları) açıklanmakt
  [Seçenekler sayfası, metin düzenleyici düğümü özellikleri](../../ide/reference/options-page-text-editor-node-properties.md)   
  [Genel, hata ayıklama, Seçenekler iletişim kutusu](../../debugger/general-debugging-options-dialog-box.md)   
  [Düzenle ve devam et, hata ayıklama, Seçenekler iletişim kutusu](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
- [Yalnızca hata ayıklama, zamanında, Seçenekler iletişim kutusu](../../debugger/just-in-time-debugging-options-dialog-box.md)
+ [Tam Zamanında, Hata Ayıklama, Seçenekler İletişim Kutusu](../../debugger/just-in-time-debugging-options-dialog-box.md)
 
 
 

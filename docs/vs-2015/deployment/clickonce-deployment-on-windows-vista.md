@@ -1,7 +1,7 @@
 ---
 title: Windows Vista'da ClickOnce dağıtımı | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8057cc9c27d99058d5f16052864082e288591457
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6340d34e6f974cf8e7ea6f2dd7fea38b5ef94a57
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694376"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224516"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista'da ClickOnce Dağıtımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Windows Vista'da ClickOnce dağıtımı](https://docs.microsoft.com/visualstudio/deployment/clickonce-deployment-on-windows-vista).  
-  
 Visual Studio'da uygulamaları oluşturma, Windows Vista kullanıcı hesabı denetimi (UAC) normalde gömülü bir bildirim üretir uygulamanın yürütülebilir dosyasına ikili olarak XML verilerinde kodlanmış. ClickOnce ve Registration-Free COM uygulamaları harici bildirim gerektirdiğinden, Visual Studio bu tür bir gömülü bildirimi yerine UAC verilerini içeren projeler için bir dosya oluşturur. Varsayılan olarak, Visual Studio, bilgileri (ClickOnce ve Registration-Free COM dağıtım için) dış UAC bildirim bilgilerini oluşturmak ya da (tüm diğer durumlarda için) uygulamanın yürütülebilir dosyasına katıştırma app.manifest adlı bir dosyadan kullanır. Visual Studio, bildirim oluşturmak üzere aşağıdaki seçenekleri sağlar:  
   
 -   Gömülü bir bildirim kullanın. UAC veri uygulamanın yürütülebilir dosyasına katıştırma ve normal kullanıcı olarak çalıştırın.  

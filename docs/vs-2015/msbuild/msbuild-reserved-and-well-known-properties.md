@@ -1,7 +1,7 @@
 ---
 title: MSBuild ayrılmış ve tanınmış özellikleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc067916f6657e55ae8352ca6fcc81704a80f4a2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6f121701ff5d463c852f386f012fe22a7a46d43e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692126"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225413"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild Ayrılmış ve Tanınmış Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [MSBuild ayrılmış ve tanınmış özellikleri](https://docs.microsoft.com/visualstudio/msbuild/msbuild-reserved-and-well-known-properties).  
-  
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] Proje dosyası hakkında bilgi depolayan önceden tanımlanmış özellikler kümesi sağlar ve [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ikili dosyaları. Bu özellikler diğer aynı şekilde değerlendirilir [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] özellikleri. Örneğin, kullanılacak `MSBuildProjectFile` özelliği, yazdığınız `$(MSBuildProjectFile)`.  
   
