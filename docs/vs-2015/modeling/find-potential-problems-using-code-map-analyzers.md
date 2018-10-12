@@ -1,12 +1,12 @@
 ---
 title: Kod Haritası çözümleyicilerini kullanarak olası sorunları bulma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemapanalyzers
 helpviewer_keywords:
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b15a6d95e2a64aa09d57cb4fba02ab0369be5799
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ccac7f869c0395839e2c63354558df0389ced36b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630402"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204808"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Kod haritası çözümleyicilerini kullanarak olası sorunları bulma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [kod kullanarak olası sorunları bulma harita Çözümleyicileri](https://docs.microsoft.com/visualstudio/modeling/find-potential-problems-using-code-map-analyzers).  
-  
 Fazla karmaşık olabilecek kod tanımlamanıza yardımcı olması için kod haritalarını Çözümleyicileri çalıştırın veya geliştirme ihtiyaç duyabilirsiniz. Örneğin, bu Çözümleyicileri kullanabilirsiniz:  
   
 |**Sahip kodu bulmak için**|**Bu alanları görmek için inceleyin olmadığını**|  
@@ -56,7 +54,7 @@ Fazla karmaşık olabilecek kod tanımlamanıza yardımcı olması için kod har
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)   
  [Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma](../modeling/use-code-maps-to-debug-your-applications.md)   
- [Hata ayıklarken çağrı yığınında yöntemler eşleştirme](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
+ [Hata ayıklarken çağrı yığınında eşleştirme yöntemleri](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 
 
 

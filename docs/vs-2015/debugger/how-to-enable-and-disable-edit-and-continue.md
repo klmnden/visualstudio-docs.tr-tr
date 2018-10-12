@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: etkinleştirme ve devre dışı Düzenle ve devam et | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57a9ec8b8e25da6edb36e1983e45f7bb78251208
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2700076fa0cc08aa137377b9a99c1179d9b8fc12
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688228"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212841"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue"></a>Nasıl Yapılır: Düzenle ve Devam Et'i Etkinleştirme veya Devre Dışı Bırakma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: etkinleştirme ve devre dışı Düzenle ve devam et](https://docs.microsoft.com/visualstudio/debugger/how-to-enable-and-disable-edit-and-continue).  
-  
 Düzenle ve devam et, etkinleştirmek veya devre dışı **seçenekleri** tasarım zamanında iletişim kutusu. Hata ayıklarken bu ayarı değiştiremezsiniz.  
   
  Düzenle ve works yalnızca hata ayıklama yapılarında devam edin. Yerel C++ için Düzenle ve devam et gerektirir / Incremental kullanma seçeneği.  
@@ -64,7 +62,7 @@ Düzenle ve devam et, etkinleştirmek veya devre dışı **seçenekleri** tasar�
  Bu seçenekler hakkında daha fazla bilgi için bkz. [genel, hata ayıklama, Seçenekler iletişim kutusu](../debugger/general-debugging-options-dialog-box.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Düzenle ve devam et](../debugger/edit-and-continue.md)
+ [Düzenle ve Devam Et](../debugger/edit-and-continue.md)
 
 
 

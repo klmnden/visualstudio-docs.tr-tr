@@ -1,7 +1,7 @@
 ---
 title: UsedCommand öğesi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 78ab46c4524bb25563d407514aa0590e75feffaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: abcc3117b46cca424388b849f9baf26d79ca270e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697337"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194648"
 ---
 # <a name="usedcommand-element"></a>UsedCommand Öğesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [UsedCommand öğesi](https://docs.microsoft.com/visualstudio/extensibility/usedcommand-element).  
-  
 VSPackage'ı başka bir .vsct dosyası içinde tanımlanan bir komutuna erişmek üzere etkinleştirir. Örneğin, standart, VSPackage'ı kullanıyorsa, **kopyalama** tanımlanan komutu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] shell ekleyebileceğiniz komut bir menü veya araç yeniden uygulamadan.  
   
 ## <a name="syntax"></a>Sözdizimi  

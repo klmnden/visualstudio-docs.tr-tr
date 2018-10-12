@@ -1,7 +1,7 @@
 ---
 title: Bir simgenin veya Dekoratörün görünürlüğünü denetleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9cc74f7ba8c71c2b8828ad19c4d6af80d6e8b8e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 299abef4d60b6bdc6fdf07cb8257034a6ee22d10
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628936"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207863"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Bir Simgenin veya Dekoratörün Görünürlüğünü Denetleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bir simgenin veya Dekoratörün görünürlüğünü denetleme](https://docs.microsoft.com/visualstudio/modeling/controlling-the-visibility-of-an-icon-or-decorator).  
-  
 A *dekoratör* bir simge ya da bir etki alanına özgü dil (DSL) şeklinde görünen metin satırı. Dekoratör görünmesi ve modelinde özelliklerini durumuna bağlı olarak kaybolur. Örneğin, bir kişiyi temsil eden bir şekli üzerinde alt sayıda kişinin cinsiyet bağlı olarak görünür ve benzeri farklı simgeler olabilir.  
   
 ## <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Bir simgenin veya dekoratörün görünürlüğünü denetleme  

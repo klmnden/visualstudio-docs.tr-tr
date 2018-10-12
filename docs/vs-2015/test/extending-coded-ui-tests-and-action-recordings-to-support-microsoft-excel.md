@@ -1,7 +1,7 @@
 ---
 title: Genişletme kodlanmış UI testlerini ve Eylem kayıtlarını Microsoft Excel'i desteklemek için | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c48f68c6e3c712f5cf728ae7769108f8e35e9aec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 304b01564f067206a8995662a4f3711cf041116b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692484"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202897"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Kodlanmış Kullanıcı Arabirimi Testlerini ve Eylem Kayıtlarını Microsoft Excel'i Desteklemek için Genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [genişletme kodlanmış UI testleri ve eylem kayıtları için destek Microsoft Excel](https://docs.microsoft.com/visualstudio/test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel).  
-  
 Kodlanmış UI testleri ve eylem kayıtları için test çerçevesi, her olası kullanıcı arabirimi desteklemiyor. Test etmek istediğiniz belirli bir kullanıcı Arabirimi desteklemiyor olabilir. Örneğin, hemen ya da kodlanmış UI testi için bir eylem kaydı oluşturamazsınız bir [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] elektronik tablo. Ancak, belirli kullanıcı Arabirimi, kodlanmış UI testi framework'ün genişletilebilirlik avantajlarından yararlanarak destekleyecek kodlanmış kullanıcı Arabirimi testi çerçevesini kendi uzantınızı oluşturun. Kodlanmış UI testleri ve eylem kayıtları için oluşturulmasını desteklemek için çerçevesinin nasıl genişletileceğine örneği aşağıdaki konuda verir [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Desteklenen platformlar hakkında daha fazla bilgi için bkz. [kodlanmış UI testleri ve eylem kayıtları için desteklenen yapılandırmalar ve platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).  
   
  **Gereksinimler**  

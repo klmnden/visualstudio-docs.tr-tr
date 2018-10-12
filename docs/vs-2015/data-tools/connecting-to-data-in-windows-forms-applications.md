@@ -1,7 +1,7 @@
 ---
 title: Forms uygulamalarında Windows verilere bağlanma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -42,12 +42,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: d1132ee07e892886e49fbaa4670b309afc448da6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d8da35b32f3dd25bd7ed47b25f722c6b0aa21ac7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688870"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208955"
 ---
 # <a name="connecting-to-data-in-windows-forms-applications"></a>Windows Forms Uygulamalarındaki Verilere Bağlanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ ms.locfileid: "42688870"
   
 -   [İzlenecek yol: nesnelerdeki (Windows Forms) verilere bağlanma](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)  
   
--   [(Windows Forms) bir erişim veritabanındaki verilere bağlanma](../data-tools/connect-to-data-in-an-access-database-windows-forms.md)  
+-   [Bir Access veritabanındaki verilere bağlanma (Windows Forms)](../data-tools/connect-to-data-in-an-access-database-windows-forms.md)  
   
 ## <a name="creating-connections"></a>Bağlantı oluşturma  
  İçinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], bağlantıları kullanarak yapılandırılmış **Bağlantı Ekle/Değiştir** iletişim kutusu. **Bağlantı Ekle** düzenlerken veya veri sihirbazlardan birini içindeki bağlantılar oluşturma iletişim kutusu görünür veya [Sunucu Gezgini/veritabanı Gezgini](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) veya ne zaman düzenlediğiniz bağlantı özellikleri **özellikleri** penceresi.  

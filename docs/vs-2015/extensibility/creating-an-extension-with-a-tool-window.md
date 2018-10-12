@@ -1,7 +1,7 @@
 ---
 title: Araç penceresi içeren bir uzantı oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: afa24a7faceade36cf6b3d19c7e86fb8d6676ba8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 13ec73d4b251cc06b6224d2d08f1bb20ad8e98dd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631083"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204782"
 ---
 # <a name="creating-an-extension-with-a-tool-window"></a>Araç Penceresi İçeren Bir Uzantı Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [araç penceresi içeren bir uzantı oluşturma](https://docs.microsoft.com/visualstudio/extensibility/creating-an-extension-with-a-tool-window).  
-  
 Bu yordamda, VSIX proje şablonu kullanmayı öğrenin ve **özel araç penceresi** öğe şablonu, araç penceresi içeren bir uzantı oluşturma.  
   
 ## <a name="prerequisites"></a>Önkoşullar  

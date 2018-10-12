@@ -1,7 +1,7 @@
 ---
 title: CRT kitaplığını kullanarak bellek sızıntılarını bulma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -35,18 +35,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6d2c45ed2377b400fb00ac264aa2dcf8e5df8410
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 4be0ac6e3e0de77f19f63b41ec53f433478f5063
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879778"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198087"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>CRT Kitaplığını Kullanarak Bellek Sızıntılarını Bulma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bulma bellek sızıntılarını kullanarak CRT Kitaplığı](https://docs.microsoft.com/visualstudio/debugger/finding-memory-leaks-using-the-crt-library).  
-  
 Önceden ayrılmış olan belleği doğru şekilde serbest bırakmak başarısız tanımlanan bellek sızıntıları, C/C++ uygulamalarında en zarif ve algılamak zor hatalar arasındadır. Küçük bellek sızıntısı, ilk ancak zaman içinde fark edilmeyebilir, aşamalı bir bellek sızıntısı belirtileri, aralığı performansı azalan uygulama bellek yetersiz çalıştığında belirtilere neden olabilir. Daha da kötüsü, tüm kullanılabilir belleği kullanan sızdıran bir uygulama hangi uygulamanın sorumlu olduğu konusunda karışıklık oluşturur başka bir uygulamanın çökmesine neden neden olabilir. Görünüşte zararsız bellek sızıntıları, düzeltilmesi gereken başka sorunların belirtisi olabilir.  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Hata ayıklayıcı ve C çalışma zamanı (CRT) kitaplıkları size sağlar algılama ve bellek sızıntıları tanımlayan anlamına gelir.  

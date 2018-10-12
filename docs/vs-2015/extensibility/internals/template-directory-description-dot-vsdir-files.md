@@ -1,7 +1,7 @@
 ---
 title: Şablon dizin açıklaması (. Vsdir) dosyaları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b0d4281201c0aa7d699deb5c1d2d9ae1b183fd76
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 733f59b4498ccec80b1223c87e32de0fab2ded69
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696021"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201998"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Şablon Dizin Açıklaması (.Vsdir) Dosyaları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [şablon dizin açıklaması (. Vsdir) dosyaları](https://docs.microsoft.com/visualstudio/extensibility/internals/template-directory-description-dot-vsdir-files).  
-  
 Bir şablon dizin açıklaması (.vsdir) tümleşik geliştirme ortamı (IDE) klasörleri, sihirbaz .vsz dosyasına ve iletişim kutularında projenizle ilişkili şablon dosyaları görüntülemek için etkinleştiren bir metin dosyası dosyasıdır. İçeriği, her dosya veya klasör için bir kayıt içerir. Tüm .vsdir dosyalarını başvurulan bir konumda, yalnızca bir .vsdir dosyası birden çok klasör, sihirbazlar veya şablon dosyalarını tanımlamak için genellikle bulunmakla birleştirilir.  
   
  Klasörleri (alt dizin) .vsdir dosya ve .vsdir dosyasında başvurulan dosyaların tümünü aynı dizinde bulunur. IDE ne zaman bir Sihirbazı çalıştıran veya bir klasörü veya dosyayı görüntüler **yeni proje** veya **Yeni Öğe Ekle** iletişim kutuları, IDE inceler .vsdir dosyanın olup olmadığını belirlemek için yürütülen dosyalarını içeren dizin mevcut. .Vsdir dosya bulunamazsa, IDE yürütülen veya görüntülenen bir klasör veya dosya için bir giriş içerip içermediğini belirlemek için okur. Bir giriş bulunması durumunda, IDE Sihirbazı yürütme veya içeriği görüntüleme bilgileri kullanır.  

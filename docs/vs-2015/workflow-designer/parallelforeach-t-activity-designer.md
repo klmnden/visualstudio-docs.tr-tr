@@ -1,7 +1,7 @@
 ---
 title: ParallelForEach&lt;T&gt; etkinlik Tasarımcısı | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 7a384844ca8d41b9e40de13c7dc7bc161d6c09f7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb97ba6abb40c34d03e612c346e2c721719024de
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675775"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216404"
 ---
 # <a name="parallelforeachlttgt-activity-designer"></a>ParallelForEach&lt;T&gt; etkinlik Tasarımcısı
 <xref:System.Activities.Statements.ParallelForEach%601> Etkinlik bir koleksiyon öğelerini numaralandırır ve bir katıştırılmış deyim koleksiyonundaki her öğe için olan aynı iş parçacığında zaman uyumsuz olarak paralel olarak yürütür. Bu akış denetimi etkinliği yerine kullanın <xref:System.Activities.Statements.Sequence> boşta gitmek için bu etkinliği alt etkinliklerini bekleniyorsa etkinlik.  

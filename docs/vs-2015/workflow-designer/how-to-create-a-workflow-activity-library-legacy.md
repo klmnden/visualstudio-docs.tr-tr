@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: bir iş akışı etkinlik kitaplığı oluşturma (eski) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: b3124b855d9ab7f1f59551b915cf7b8eb44f2df0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: daed51a1cb5ba6eb3d4e0d7748993027686d5b7e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688436"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211476"
 ---
 # <a name="how-to-create-a-workflow-activity-library-legacy"></a>Nasıl yapılır: bir iş akışı etkinlik kitaplığı oluşturma (eski)
 Eski kullanarak bir iş akışı etkinlik kitaplığı projesi oluşturmak için bu adımları [!INCLUDE[wfd1](../includes/wfd1-md.md)] tarafından sağlanan [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

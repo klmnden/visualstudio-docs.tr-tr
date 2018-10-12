@@ -1,7 +1,7 @@
 ---
 title: Hata ayıklama altyapısı uygulama stratejisi seçme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8a9e449fddad18c3ff0e95786ab852745407e6a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 662102fbf74d9721fc8a93d85f5f8e694fba7ccd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676210"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212374"
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>Hata Ayıklama Altyapısı Uygulama Stratejisi Seçme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [hata ayıklama altyapısı uygulama stratejisi seçme](https://docs.microsoft.com/visualstudio/extensibility/debugger/choosing-a-debug-engine-implementation-strategy).  
-  
 Hata ayıklama altyapısı (DE) uygulaması stratejinizi belirleme için çalışma zamanı mimarisi kullanın. Hata ayıklama altyapısı, işlemdeki hata ayıklaması, olmasını program işlemdeki Visual Studio oturumu hata ayıklama Yöneticisi (SDM) ya da giden işlem her ikisine de oluşturulabilir. Aşağıdaki yönergeler bu üç stratejiler arasında seçmenize yardımcı olmalıdır.  
   
 ## <a name="guidelines"></a>Kuralları  

@@ -1,7 +1,7 @@
 ---
 title: Proje nesnelerini kullanıma sunma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5514589660df1850dc2f5d9fce3079f6769ec06e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3cc9f3ffc7869506dc5ac46a715c9bd7b042a81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628944"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210805"
 ---
 # <a name="exposing-project-objects"></a>Proje Nesnelerini Kullanıma Sunma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [proje nesnelerini kullanıma sunma](https://docs.microsoft.com/visualstudio/extensibility/internals/exposing-project-objects).  
-  
 Özel proje türleri Otomasyon arabirimlerini kullanarak proje erişmesine izin vermek için Otomasyon nesneleri sağlar. Her proje türü standart sağlaması beklenir <xref:EnvDTE.Project> erişilen Otomasyon nesnesi <xref:EnvDTE.Solution>, IDE'de açık olan tüm projelerin bir koleksiyonunu içerir. Her proje öğesi tarafından kullanıma sunulan beklenen bir <xref:EnvDTE.ProjectItem> erişilen nesne <xref:EnvDTE.Project.ProjectItems>. Bu standart Otomasyon nesnelerin yanı sıra, projeye özgü Otomasyon nesneleri sunmak projeleri seçebilirsiniz.  
   
  Geç DTE nesnesini kullanarak kök bağlama erişebileceğiniz özel kök düzeyinde Otomasyon nesneleri oluşturabileceğiniz `DTE.<customeObjectName>` veya `DTE.GetObject(“<customObjectName>”)`. Örneğin, Visual C++ "DTE kullanarak erişebileceğiniz VCProjects" adlı C++ projeye özgü proje koleksiyonu oluşturur. VCProjects veya DTE. GetObject("VCProjects"). Ayrıca, en çok türetilen nesne için ProjectItem.Object ve bir ProjectItem.FileCodeModel sunan bir ProjectItem sorgulanabilir bir Project.CodeModel proje türü için benzersiz bir Project.Object oluşturabilirsiniz.  

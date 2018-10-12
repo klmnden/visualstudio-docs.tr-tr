@@ -1,7 +1,7 @@
 ---
 title: 'CA2134: Yöntemler tutarlı saydamlığı taban yöntemleri geçersiz kılarken tutmalıdır | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,15 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: df04e5462e2b03c402ce792b390b476b05873036
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: fdb43405cb920510993a3acead454bac366e959d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901937"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211802"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Yöntemler taban yöntemleri geçersiz kılarken tutarlı saydamlığı tutmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA2134: yöntemler taban yöntemleri geçersiz kılarken tutarlı saydamlığı tutması gerekir](https://docs.microsoft.com/visualstudio/code-quality/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods).
-
 |||
 |-|-|
 |TypeName|MethodsMustOverrideWithConsistentTransparency|

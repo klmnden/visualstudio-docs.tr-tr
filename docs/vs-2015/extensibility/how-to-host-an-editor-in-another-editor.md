@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: başka bir düzenleyicide bir düzenleyicide konak | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 2b0eb705-fe94-4ca8-93e0-9dbd8ce61a44
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6390f5550c445239fbd8f8f72f9c8c4ad013665a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7bdab7eb1949cb2d1113247c1c537c1a43ccf97
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691868"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208526"
 ---
 # <a name="how-to-host-an-editor-in-another-editor"></a>Nasıl yapılır: başka bir düzenleyicide bir düzenleyicide barındırın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: başka bir düzenleyicide bir düzenleyicide konak](https://docs.microsoft.com/visualstudio/extensibility/how-to-host-an-editor-in-another-editor).  
-  
 Visual Studio'da barındırma penceresi bir üst pencere olarak belirterek, içinde başka bir düzenleyicide barındırabilirsiniz. Bunu yapmak için parametreleri ayarlayın <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> ve <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> alt pencere çerçevesi.  
   
 ### <a name="to-set-up-the-window-frame-to-host-an-editor"></a>Bir düzenleyici barındırmak için Pencere çerçevesi ayarlamak için  

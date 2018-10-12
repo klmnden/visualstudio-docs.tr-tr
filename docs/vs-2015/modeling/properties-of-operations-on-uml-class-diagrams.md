@@ -1,7 +1,7 @@
 ---
 title: UML işlemlerin özellikleri sınıf diyagramları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e977ede02f355724f1a93f82f1c688de27e36fa6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c2392cf951c5f25a5b287a1d56338b03bebb27e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774716"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207031"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>UML sınıf diyagramlarındaki işlemlerin özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [UML işlemlerin özellikleri sınıf diyagramları](https://docs.microsoft.com/visualstudio/modeling/properties-of-operations-on-uml-class-diagrams).  
-  
 Bir UML sınıf diyagramı üzerinde eklediğiniz *işlemleri* sınıfları ve arabirimleri. Bir yöntem veya bir sınıf veya arabirim örneği tarafından gerçekleştirilebilen işlevi bir işlemdir.  
   
  Bir işlem eklemek için sınıf veya arabirim sağ tıklatın, **Ekle**ve ardından **işlemi**.  

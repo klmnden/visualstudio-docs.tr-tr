@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: (Sınıf Tasarımcısı) türler arasında devralmayı görüntüleme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 090f2475a095607f22b30a328f6ab3c9ed4fc8e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 31d5c57408765b74ec736b8ec5c6dd8edc9d8a01
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683657"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202028"
 ---
 # <a name="how-to-view-inheritance-between-types-class-designer"></a>Nasıl Yapılır: Türler Arasında Devralmayı Görüntüleme (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: görünüm devralma arasında türleri (Sınıf Tasarımcısı)](https://docs.microsoft.com/visualstudio/ide/how-to-view-inheritance-between-types-class-designer).  
-  
 Bir taban türü ve Sınıf Tasarımcısı'nda bir sınıf diyagramında, türetilmiş türler arasında varsa devralma ilişkisi bulabilirsiniz. Bkz: hiçbiri, iki tür arasında yoksa bir devralma ilişkisi oluşturmak için [nasıl yapılır: devralma arasında türleri oluşturmak (Sınıf Tasarımcısı)](../ide/how-to-create-inheritance-between-types-class-designer.md).  
   
 ### <a name="to-find-the-base-type"></a>Temel tür bulmak için  

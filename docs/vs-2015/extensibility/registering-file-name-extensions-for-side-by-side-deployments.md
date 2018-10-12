@@ -1,7 +1,7 @@
 ---
 title: Yan yana dağıtımlar için dosya adı uzantılarını kaydetme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9ab046a2-147d-4167-aa14-7d661b1eaaa5
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e80aa90c5fcb6d223e63df6ed740e0295dd3adf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9d16c6475675fbf563f8228a6e05dfb81f739485
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694655"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211425"
 ---
 # <a name="registering-file-name-extensions-for-side-by-side-deployments"></a>Yan Yana Dağıtım için Dosya Adı Uzantılarını Kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yan yana dağıtımlar için dosya adı uzantılarını kaydetme](https://docs.microsoft.com/visualstudio/extensibility/registering-file-name-extensions-for-side-by-side-deployments).  
-  
 Yan yana bir ortamda dağıtılan Vspackage'lar için dosyaları doğru sürümü ile ilişkilendirilecek dosya adı uzantıları kaydetmelisiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Sürüme özgü dosya adı uzantısı kullanmıyorsanız, kayıt, kullanıcıların projenizi açın ve proje öğesi dosyaları uygun sürümünü de olanak tanır. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="in-this-section"></a>Bu Bölümde  

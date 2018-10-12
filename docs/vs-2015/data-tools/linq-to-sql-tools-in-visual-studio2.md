@@ -1,7 +1,7 @@
 ---
 title: LINQ to SQL Araçları'nda Visual Studio2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19d9bccad36a186c93aeb8aef8e93b63320a00d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0ff09fea0f534343fcc5e896e082f550e6bcdcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631988"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195383"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL araçlarını Visual Studio'da
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [LINQ to SQL Araçları'nda Visual Studio2](https://docs.microsoft.com/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).  
-  
   
 LINQ to SQL Microsoft tarafından yayınlanan ilk nesne ilişkisel eşleme teknoloji oluştu. Temel senaryolarında iyi çalışır ve Visual Studio'da desteklenmeye devam eder, ancak artık etkin geliştirilme aşamasındadır. LINQ zaten kullandığı eski bir uygulama korurken SQL veya SQL Server'ı kullanın ve birden çok tablo eşleme gerektirmeyen basit uygulamalar kullanın. Genel olarak, bir nesne ilişkisel eşleyicidir katmanı gerekli olduğunda yeni uygulamalar Entity Framework kullanmanız gerekir.  
   
@@ -74,43 +72,43 @@ LINQ to SQL Microsoft tarafından yayınlanan ilk nesne ilişkisel eşleme tekno
  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Sağlar **bağlam Namespace** ve **varlık Namespace** özellikleri <xref:System.Data.Linq.DataContext>. Bu özellikler ne ad alanı belirlemek <xref:System.Data.Linq.DataContext> ve varlık sınıfı kod içinde oluşturulur. Bu özellikler varsayılan olarak, boş olur ve <xref:System.Data.Linq.DataContext> ve varlık sınıfları, uygulamanın ad alanına oluşturulur. Uygulamanın ad alanı başka bir ad alanı içinde kod üretmek için bir değer olarak girin. **bağlam Namespace** ve/veya **varlık Namespace** özellikleri.  
   
 ## <a name="in-this-section"></a>Bu bölümde  
- [DataContext yöntemi (O/R Tasarımcısı)](../data-tools/datacontext-methods-o-r-designer.md)  
+ [DataContext Metotları (O/R Tasarımcısı)](../data-tools/datacontext-methods-o-r-designer.md)  
  Ne <xref:System.Data.Linq.DataContext> yöntemleri olan ve bunların nasıl oluşturulacağı.  
   
  [Veri sınıfı devralma (O/R Tasarımcısı)](../data-tools/data-class-inheritance-o-r-designer.md)  
  Tek tablo devralma ve nasıl öğesinde uygulanır kavramını açıklar [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
- [Nasıl yapılır: LINQ to SQL sınıfları tablolar ve görünümler (O/R Tasarımcısı) ile eşlenmiş oluşturma](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)  
+ [Nasıl yapılır: Tablolar ve görünümler ile eşlenen LINQ to SQL sınıfları oluşturma (O/R Tasarımcısı)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)  
  Tabloları ve görünümleri veritabanındaki eşlendiğine varlık sınıfları oluşturma işlemini açıklar.  
   
- [Nasıl yapılır: LINQ to SQL sınıfları (O/R Tasarımcısı) arasında bir ilişki (ilişki) oluşturun](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)  
+ [Nasıl yapılır: LINQ to SQL sınıfları arasında ilişkilendirme (ilişki) oluşturma (O/R Tasarımcısı)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)  
  Arasında bir ilişki oluşturma işlemini açıklamaktadır [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] varlık sınıfları.  
   
- [Nasıl yapılır: saklı yordamları ve işlevleri (O/R Tasarımcısı) için eşlenen DataContext-metotları oluşturma](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)  
+ [Nasıl yapılır: Saklı yordamlarla eşlenen DataContext metotları oluşturma (O/R Tasarımcısı)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)  
  Nasıl oluşturulacağını açıklar <xref:System.Data.Linq.DataContext> bunlar çağrıldığında, saklı yordamları ve işlevleri çalıştırmak yöntemleri.  
   
- [Nasıl yapılır: güncelleştirme, ekleme ve silme (O/R Tasarımcısı) gerçekleştirmek için saklı yordamlar atama](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)  
+ [Nasıl yapılır: Güncelleştirme, ekleme ve silme işlemleri gerçekleştirmek için saklı yordamlar atama (O/R Tasarımcısı)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)  
  Nasıl yapılandırılacağını açıklar bir <xref:System.Data.Linq.DataContext> sınıfları bir veritabanına geri varlıktan verileri kaydedilirken saklı yordamları kullanın.  
   
- [Nasıl yapılır: bir DataContext yöntemi (O/R Tasarımcısı) dönüş türünü değiştirme](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)  
+ [Nasıl yapılır: Bir DataContext metodunun dönüş türünü değiştirme (O/R Tasarımcısı)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)  
  Dönüş türünü ayarlama işlemi açıklanmaktadır bir <xref:System.Data.Linq.DataContext> varlık sınıfı türü veya O/R tasarımcısı tarafından oluşturulan bir otomatik olarak üretilen tür yöntemi.  
   
  [Nasıl yapılır: Varlık sınıflarına doğrulama ekleme](../data-tools/how-to-add-validation-to-entity-classes.md)  
  Etkinleştirme kodu eklenmesi özelliği değiştiğinde ve varlık sınıfı güncelleştirmeler sırasında kısmi yöntemler oluşturmayı açıklar.  
   
- [Nasıl yapılır: Aç çoğullaştırmayı açıp kapamasına (O/R Tasarımcısı)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)  
+ [Nasıl yapılır: Çoğullaştırmayı açıp kapatma (O/R Tasarımcısı)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)  
  Açma ve kapatma otomatik olarak eklenen sınıfları yeniden adlandırılmasını açıklar [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
  [Nasıl yapılır: O/R Tasarımcısı kullanarak devralmayı yapılandırma](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)  
  Tek tablo kalıtım kullanarak varlık sınıflarını yapılandırmayı açıklar [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
- [Nasıl yapılır: bir O/R tasarımcısı tarafından oluşturulan kodu genişletme](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md)  
+ [Nasıl Yapılır: O/R Tasarımcısı Tarafından Oluşturulan Kodu Genişletme](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md)  
  Nasıl ve nerede açıklar O/R Tasarımcısı nesnelerde yapılan kod yenilediğinizde üzerine yazılmaz kod eklemek için.  
   
- [İzlenecek yol: Tek tablolu devralma (O/R Tasarımcısı) kullanarak LINQ to SQL sınıfları oluşturma](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)  
+ [İzlenecek Yol: Tek Tablo Devralma Kullanarak LINQ to SQL Sınıfı Oluşturma (O/R Tasarımcısı)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)  
  Tek tablo kalıtım kullanarak varlık sınıflarını yapılandırma için adım adım yönergeler sağlar [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
- [İzlenecek yol: INSERT özelleştirme, güncelleştirme ve silme davranışı varlık sınıflarının](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)  
+ [İzlenecek yol: Varlık sınıflarının ekleme, güncelleştirme ve silme davranışını özelleştirme](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)  
  Yapılandırma için adım adım yönergeler sağlar bir <xref:System.Data.Linq.DataContext> sınıfları bir veritabanına geri varlıktan verileri kaydedilirken saklı yordamları kullanın.  
   
 ## <a name="reference-content"></a>Başvuru içeriği  

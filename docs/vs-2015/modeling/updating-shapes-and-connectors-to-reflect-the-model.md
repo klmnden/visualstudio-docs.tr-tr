@@ -1,7 +1,7 @@
 ---
 title: Modeli yansıtacak şekilleri ve bağlayıcıları güncelleştirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 99539a417ea61073cb4826d6a1e94e96564a108f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93c079a5dc80b0a26e133258328fb7b5b9fb8d41
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685736"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192458"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Modeli Yansıtacak Şekilleri ve Bağlayıcıları Güncelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [güncelleştirme şekilleri ve bağlayıcıları modeli yansıtacak şekilde](https://docs.microsoft.com/visualstudio/modeling/updating-shapes-and-connectors-to-reflect-the-model).  
-  
 ' De etki alanına özgü bir dilde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], temel alınan modelin durumunu yansıtacak bir şekil görünümünü yapabilirsiniz.  
   
  Bu konudaki kod örnekleri eklenmesi gereken bir `.cs` dosyası, `Dsl` proje. Bu deyimler her dosyaya ihtiyacınız olacak:  

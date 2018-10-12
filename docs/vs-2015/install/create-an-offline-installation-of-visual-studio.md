@@ -1,7 +1,7 @@
 ---
 title: Visual Studio'nun çevrimdışı yüklemesini oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,12 +18,12 @@ caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 31273fc8abb59661351cc50bcaca7da5a5b8612e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c248ee51d266eaa30bf738eba6e649ca15f3c9ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689541"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193212"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio'nun çevrimdışı yüklemesini oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +83,7 @@ Bu sayfa, Internet'e bağlı olmadıkları sırada Visual Studio 2015 yüklemeyi
 |Fransızca|http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x40C|  
 |İtalyanca|http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x410|  
 |Japonca|http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x411|  
-|Kore Dili|http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x412|  
+|Korece|http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x412|  
 |Lehçe|http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x415|  
 |Portekizce|http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x416|  
 |Rusça|http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x419|  

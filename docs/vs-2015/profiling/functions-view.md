@@ -1,7 +1,7 @@
 ---
 title: İşlevler görünümü | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4bc15c21400b720bd5dde9c18111d7cc68afc34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 88ae3a5053c6e1cdd5f3e8ab36c80823fdb13b41
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689260"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205614"
 ---
 # <a name="functions-view"></a>İşlevler Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [işlevler görünümü](https://docs.microsoft.com/visualstudio/profiling/functions-view).  
-  
 İşlevler görünümü, profil oluşturma sırasında çağrılan işlevleri listeler.  
   
  Varsayılan olarak, İşlevler adına göre listelenmiştir. Modülü tarafından işlevleri görüntülemek için İşlevler Görünümü penceresine sağ tıklatın ve ardından **Modül Görünümü Göster**. Bu modül görünümü görüntülenir.  
@@ -45,7 +43,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [işlevler görünümü](ht
  [İşlevler görünümü](../profiling/functions-view-sampling-data.md)   
  [İşlevler görünümü](../profiling/functions-view-instrumentation-data.md)   
  [İşlevler görünümü - izleme](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
- [İşlevler görünümü - örnekleme](../profiling/functions-view-dotnet-memory-sampling-data.md)
+ [İşlevler Görünümü- Örnekleme](../profiling/functions-view-dotnet-memory-sampling-data.md)
 
 
 

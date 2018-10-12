@@ -1,7 +1,7 @@
 ---
 title: Sınıflarla ve diğer türlerle (Sınıf Tasarımcısı) ile çalışma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7690c24e8691858dbc0c027ea765b92f54144b85
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5282b37fca3e35e23e6ca343538aad12854b7bba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695961"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198310"
 ---
 # <a name="working-with-classes-and-other-types-class-designer"></a>Sınıflarla ve Diğer Türlerle Çalışma (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [sınıflarla ve diğer türleri (Sınıf Tasarımcısı) çalışma](https://docs.microsoft.com/visualstudio/ide/working-with-classes-and-other-types-class-designer).  
-  
 Daha kolay oluşturmak ve bunları Visual Studio'da Sınıf Tasarımcısı ile düzenlemek, en çok önem verdiğiniz türleri ve sınıfların odaklanır. Daha fazla görsel olarak Visual C# .NET, Visual Basic .NET veya C++ kodunuzla çalışmak için sınıf diyagramları kullanın.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  

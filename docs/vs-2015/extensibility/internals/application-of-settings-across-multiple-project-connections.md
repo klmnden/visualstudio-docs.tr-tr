@@ -1,7 +1,7 @@
 ---
 title: Birden çok proje bağlantısında ayarların uygulanması | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 2116d3d0-c46c-4d0a-b482-08a178584f46
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cc2be78900e7bef33be138dfc8ed9dc1531af7c8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 81d6a1f540314863e4e24b3b91c7f4112e0af8f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632983"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197619"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Birden Çok Proje Bağlantısında Ayarların Uygulanması
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [uygulama ayarları arasında birden çok proje bağlantı](https://docs.microsoft.com/visualstudio/extensibility/internals/application-of-settings-across-multiple-project-connections).  
-  
 Kaynak Denetimi Eklentisi Kaynak Denetimi Eklentisi API 1.2 kullanılarak oluşturulan bir toplu işlem birden fazla proje veya birden çok bağlantı bağlamları arasında aynı kaynak denetimi işlemi yürütmek için kullanabilirsiniz. Toplu kullanılabilir yedekli ortadan kaldırmak için proje başına kullanıcı deneyiminden iletişim kutuları.  
   
  Bir kullanıcı birden fazla bağlantı kaynak denetimi eklentisi API 1.1 (örneğin, iki Web projeleri farklı bir dosya paylaşımı makinelerde) kullanılarak oluşturulan bir kaynak denetimi eklentisi içinde ait birden çok öğe seçilir ve bunları denetler, kullanıcı aynı iletişim kutusu görür. sürekli olarak. Kullanıcı tıkladığında bile böyle **tümüne uygula** IDE her bağlantı bağlamı için durumuna sıfırlar çünkü iletişim kutusunda, kutuyu işaretleyin.  

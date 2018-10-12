@@ -1,7 +1,7 @@
 ---
 title: Hangi&#39;s kaynak denetimine'deki yenilikler | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f098c9f46d649a8b93c29eff57c5606438d3e399
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fac4b901c7e9b3c5a59e125a9480b21703b19a8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687179"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217065"
 ---
 # <a name="what39s-new-in-source-control"></a>Hangi&#39;da kaynak denetimi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ne&#39;yeni kaynak denetiminde s](https://docs.microsoft.com/visualstudio/extensibility/internals/what-s-new-in-source-control).  
-  
 İçinde [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] kaynak denetimi VSPackage'ı uygulayarak, derin tümleşik kaynak denetimi çözümü sağlayabilirsiniz. Bu bölümde, kaynak denetimi VSPackage'ları özelliklerini açıklar ve uygulama adımlarını genel bir bakış sağlar.  
   
 ## <a name="the-source-control-vspackage"></a>Kaynak denetimi VSPackage'ı  

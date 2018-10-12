@@ -1,7 +1,7 @@
 ---
 title: Başvuru (Visual Studio hata ayıklama API'leri) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9810fc50-43c7-4916-9916-1cf333037b51
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3af0907f1a3b5c59cd857b118ec47ab2cae983b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c3e45670976d0f7ba26312b39ce448b6736f8ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689398"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191847"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>Başvuru (Visual Studio Hata Ayıklama API’leri)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [başvurusu (Visual Studio hata ayıklama API'leri)](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/reference-visual-studio-debugging-apis).  
-  
 Visual Studio hata ayıklama SDK başvuruları, hata ayıklayıcı ve bileşenlerinin işlevselliği ve çalışma zamanı mimarisi için temel modeli özetler. Belgeleri, bileşenleri ve arabirimler, arabirimler aracılığıyla tanımlar davranışı dışında açıklanmaktadır hakkında olabildiğince az sayıda varsayım yapmaz.  
   
  Başvuru bölümüne amacı, bir dizi diller, çalışma zamanları ve işletim sistemleri mümkün olduğunca desteklemek için farklı olarak sağlamaktır.  

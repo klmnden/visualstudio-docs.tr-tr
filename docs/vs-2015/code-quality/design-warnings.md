@@ -1,7 +1,7 @@
 ---
 title: Tasarım uyarıları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6f7ba768d27334052c16f13b114d990156bb4a59
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d903b1ae2f708cb2866c2831debd4bd6b2abd55
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690440"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201558"
 ---
 # <a name="design-warnings"></a>Tasarım Uyarıları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [tasarım uyarıları](https://docs.microsoft.com/visualstudio/code-quality/design-warnings).  
-  
 Tasarım uyarıları bağlılığı .NET Framework tasarım yönergeleri için destek.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
@@ -93,7 +91,7 @@ Tasarım uyarıları bağlılığı .NET Framework tasarım yönergeleri için d
 |[CA1057: Dize URI aşırı yüklemeleri System.Uri aşırı yüklemelerini çağırır](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)|Bir tür sadece System.Uri parametresi ile dize parametresinin değiştirilmesiyle yöntem aşırı yüklemesini bildirir. Aşırı yüklemeler URI parametresiyle aşırı yüklenmiş olan dize parametresini alır.|  
 |[CA1058: Türler belli temel türleri genişletmemelidir](../code-quality/ca1058-types-should-not-extend-certain-base-types.md)|Dışarıdan görünen tür belirli temel türleri genişletir. Diğer seçenekleri kullanın.|  
 |[CA1059: Üyeler belli somut türleri göstermemelidir](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)|Somut tür tam bir uygulamaya sahiptir ve bu nedenle oluşturulabilecek bir türdür. Üye yaygın kullanımını etkinleştirmek için önerilen arabirimi kullanarak somut türünü değiştirin.|  
-|[CA1060: Taşıma P/Invokes öğesini NativeMethods sınıfına](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|Platform çağırma yöntemleri ile işaretlenenler gibi <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> veya Declare anahtar sözcüğü kullanılarak tanımlanan yöntemleri [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], yönetilmeyen koda erişebilirsiniz. Bu yöntemler, NativeMethods, SafeNativeMethods veya UnsafeNativeMethods sınıfının üyesi olmalıdır.|  
+|[CA1060: P/Invokes öğesini NativeMethods sınıfına taşıyın](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|Platform çağırma yöntemleri ile işaretlenenler gibi <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> veya Declare anahtar sözcüğü kullanılarak tanımlanan yöntemleri [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], yönetilmeyen koda erişebilirsiniz. Bu yöntemler, NativeMethods, SafeNativeMethods veya UnsafeNativeMethods sınıfının üyesi olmalıdır.|  
 |[CA1061: Taban sınıf yöntemlerini gizlemeyin](../code-quality/ca1061-do-not-hide-base-class-methods.md)|Basit türdeki bir yöntem türetilmiş türdeki adlandırılmış yöntem tarafından gizlenmiştir, türetilmiş yöntemin parametre imzası yalnızca türetilmiş türleri ve karşılık gelen temel yöntemin parametre imzası daha zayıf türlerine göre farklı olduğunda temel türde bir yöntemin türetilmiş türle aynı adlı yöntem olarak gizlidir.|  
 |[CA1062: Genel yöntemlerin bağımsız değişkenlerini doğrulayın](../code-quality/ca1062-validate-arguments-of-public-methods.md)|Dışarıdan görünen yöntemlerin null'a karşı denetlenmesi için geçirilen tüm başvuru bağımsız değişkenleri.|  
 |[CA1063: IDisposable'ı doğru uygulayın](../code-quality/ca1063-implement-idisposable-correctly.md)|Tüm IDisposable türleri Dispose kalıbını doğru uygulamalıdır.|  

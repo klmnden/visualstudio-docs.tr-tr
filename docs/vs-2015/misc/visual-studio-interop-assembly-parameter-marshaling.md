@@ -1,7 +1,7 @@
 ---
 title: Visual Studio birlikte çalışma bütünleştirilmiş kodu parametresi hazırlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: douge
-ms.openlocfilehash: 77b94eeb4195654edabdd566eae762593b785496
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e18667adb48f565f73acc14f5012f9c96283efe9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689299"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195025"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Visual Studio birlikte çalışma bütünleştirilmiş kodu parametresi hazırlama
 Yönetilen kodda yazılır VSPackages çağrı yapma veya yönetilmeyen COM kod tarafından çağrılmak gerekebilir. Genellikle, yöntem bağımsız değişkenleri dönüştürülmüş veya otomatik olarak birlikte çalışma sıralayıcısı göre sıralanır. Ancak, bazen bağımsız değişkenleri basit bir şekilde dönüştürülemez. Bu gibi durumlarda birlikte çalışma derlemesi yöntemi prototip parametreleri COM işlev parametrelerini mümkün olduğunca yakın eşleştirmek için kullanılır. Daha fazla bilgi için [birlikte çalışma hazırlama](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  

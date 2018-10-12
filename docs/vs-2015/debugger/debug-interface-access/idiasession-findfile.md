@@ -1,7 +1,7 @@
 ---
 title: Idiasession::findfile | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2967e99d116b5de10d3b90869e9a68a88fb2120
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e6c5cfca23bcffd8e363e3b2850f3c9a4a01bd1f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692487"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208682"
 ---
 # <a name="idiasessionfindfile"></a>IDiaSession::findFile
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Idiasession::findfile](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findfile).  
-  
 Derlenecek dosya ve ada göre kaynak dosyaları alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -70,7 +68,7 @@ pSession->findFile( NULL, L"sourcefile.cpp", nsFNameExt, &pEnum );
  [Idiaenumsourcefiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   
  [Idiasession](../../debugger/debug-interface-access/idiasession.md)   
  [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [NameSearchOptions numaralandırması](../../debugger/debug-interface-access/namesearchoptions.md)
+ [NameSearchOptions Numaralandırması](../../debugger/debug-interface-access/namesearchoptions.md)
 
 
 

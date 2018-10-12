@@ -1,7 +1,7 @@
 ---
 title: Barındırma süreci (vshost.exe) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a90a4cd7b829c63070750c34a0cf975f4adea899
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d45da37dae805399f9af8591bcd017ed61a975c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695904"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216716"
 ---
 # <a name="hosting-process-vshostexe"></a>Barındırma Süreci (vshost.exe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [barındırma süreci (vshost.exe)](https://docs.microsoft.com/visualstudio/ide/hosting-process-vshost-exe).  
-  
 Barındırma işlemi, Visual Studio'da hata ayıklama performansını artırır, kısmi güvende hata ayıklamayı etkinleştirir ve tasarım zamanı ifade değerlendirmesi sağlayan bir özelliktir. Barındırma işlemi dosyaları, dosya adında vshost içerir ve projenizin çıkış klasörüne yerleştirilir. Daha fazla bilgi için [hata ayıklama ve barındırma işlemi](../debugger/debugging-and-the-hosting-process.md).  
   
 > [!NOTE]

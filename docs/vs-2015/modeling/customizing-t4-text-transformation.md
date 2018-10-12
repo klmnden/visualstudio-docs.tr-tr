@@ -1,7 +1,7 @@
 ---
 title: T4 metin dönüştürmeyi özelleştirme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e304b38979b80c1d67d3f88accdbfa584406c9cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc44c1de2e0a590b73916a8496a7fe5cae7cb07e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693476"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200245"
 ---
 # <a name="customizing-t4-text-transformation"></a>T4 Metin Dönüştürmeyi Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [T4 metin dönüştürmeyi özelleştirme](https://docs.microsoft.com/visualstudio/modeling/customizing-t4-text-transformation).  
-  
 Metin şablonları, bir özelliği olan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] program kodu veya bir dönüştürme işlemiyle diğer metin dosyaları oluşturmak kullanabilirsiniz. Kullanarak [!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)], metin şablonu yönerge işlemcisini veya metin şablonu ana bilgisayarı'nı özelleştirerek varsayılan şablonu dönüştürme süreci genişletebilirsiniz.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  

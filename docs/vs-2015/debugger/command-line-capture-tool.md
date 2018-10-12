@@ -1,7 +1,7 @@
 ---
 title: Komut satırı Yakalama aracı | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22f6a399630a675b7a44f5357faea50d1dc16d91
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a2c646af7102bd6a5017b1afb522448d4e6b1d8b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775374"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210554"
 ---
 # <a name="command-line-capture-tool"></a>Komut Satırı Yakalama Aracı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [komut satırı Yakalama aracı](https://docs.microsoft.com/visualstudio/debugger/graphics/command-line-capture-tool).  
-  
 DXCap.exe, grafik tanılama yakalama ve kayıttan yürütme için bir komut satırı aracıdır. Bu, Direct3D 10 ila Direct3D 12 arasında tüm özellik düzeylerini destekler.  
   
 ## <a name="syntax"></a>Sözdizimi  

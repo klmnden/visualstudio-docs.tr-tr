@@ -1,7 +1,7 @@
 ---
 title: JavaScript IntelliSense | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b64dc915dddb7290eb80a8a38352e87a331e0dd0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1daa2681b52f8e052d2868135d028bbbe0092fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695432"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194720"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [JavaScript IntelliSense](https://docs.microsoft.com/visualstudio/ide/javascript-intellisense).  
-  
 IntelliSense, kodu oluşturduğunuz sırada size bilgi sağlayarak daha hızlı ve daha az hatayla kod yazmanıza yardımcı olur. JavaScript Düzenleyicisi'nde istemci komut dosyasıyla çalıştığınız sırada, IntelliSense geçerli bağlamınızı temel alarak uygun nesneleri, işlevleri, özellikleri ve parametreleri listeler. IntelliSense'in sağladığı açılan listeden bir kodlama seçeneğini belirleyerek kodunuzu tamamlayabilirsiniz.  
   
  IntelliSense aşağıdaki görevleri tamamlamayı kolaylaştırır:  

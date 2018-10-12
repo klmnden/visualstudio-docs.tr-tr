@@ -1,7 +1,7 @@
 ---
 title: Yönlendirilmiş Grafik işaretleme dili (DGML) başvurusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 10
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a8059d30a5fddf29e7e20f3cb0e87d6da35e72ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f3188d3421a9962aa7d238d90fcc6d1ce3f1b762
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694867"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214675"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Yönlendirilmiş Grafik İşaretleme Dili (DGML) başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yönlendirilmiş grafik işaretleme dili (DGML) başvurusu](https://docs.microsoft.com/visualstudio/modeling/directed-graph-markup-language-dgml-reference).  
-  
 Yönlendirilmiş Grafik işaretleme dili (DGML) Görselleştirme ve karmaşıklık analizleri gerçekleştirmek için kullanılan bilgileri açıklar ve biçimi Visual Studio'daki kod haritaları kalıcı hale getirmek için kullanılır. Döngüsel ve döngüsel olmayan yönlendirilmiş grafikleri açıklamak için basit XML kullanır. Yönlendirilmiş bir grafik, bağlantılarla veya kenarlarla bağlanmış bir düğüm kümesidir. Düğümler ve bağlantılar, bir yazılım projesindeki öğeler gibi ağ yapılarını açıklamak için kullanılabilir.  
   
  Visual Studio'nun bazı sürümlerinin yalnızca bir alt kümesini DGML özellikleri desteği, bkz: Not [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

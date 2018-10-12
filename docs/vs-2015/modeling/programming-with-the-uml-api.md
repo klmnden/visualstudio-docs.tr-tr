@@ -1,7 +1,7 @@
 ---
 title: UML API ile programlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aff07c444b6dac85144b06c0430ad1d9a2a497c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7e7fe3a58b1e21b116b3afcfff022cf19ba9af1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684319"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206309"
 ---
 # <a name="programming-with-the-uml-api"></a>UML API ile Programlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [UML API ile programlama](https://docs.microsoft.com/visualstudio/modeling/programming-with-the-uml-api).  
-  
 UML API Visual Studio'nun oluşturmak, okumak ve UML modellerini ve diyagramları güncelleştirmek için kod yazmanıza olanak sağlar. Visual Studio'nun hangi sürümlerinin UML modellerini desteklemek için bkz [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  API başvuru sayfalarına ek olarak aşağıdaki konular API'yi açıklar.  
@@ -34,14 +32,14 @@ UML API Visual Studio'nun oluşturmak, okumak ve UML modellerini ve diyagramlar�
 |Konu|Örnek türleri ve yöntemleri açıklanmaktadır|Açıklanan özellikler|  
 |-----------|-----------------------------------------|------------------------|  
 |[UML API ile ilişkilerde gezinme](../modeling/navigate-relationships-with-the-uml-api.md)|UML öğeleri ve bunların özelliklerini ve ilişkileri. Örneğin, IElement ve alt öğeleri dahil olmak üzere,: IClass, IActivity, IUseCase, IComponent, IInteraction, IModel, IPackage|Visual Studio'da UML modelleri UML adresindeki alınabilen belirtimi sürüm 2.1.2'ye, uygun [UML kaynak sayfası](http://go.microsoft.com/fwlink/?LinkId=160796). Her tür "I" önekli UML türü, aynı ada sahip bir arayüzdür.|  
-|[UML modellerinde öğe ve ilişkiler oluşturma](../modeling/create-elements-and-relationships-in-uml-models.md)|IPackage.CreateClass()<br /><br /> IClass.CreateOperation()|Her öğe türünün alt öğelerini oluşturmak için yöntemleri vardır.|  
-|[Diyagramlar üzerinde bir UML model görüntüleme](../modeling/display-a-uml-model-on-diagrams.md)|IShape, IDiagram<br /><br /> IShape.Move()|Modeldeki her öğe diyagram üzerindeki bir şekil olarak gösterilebilir. Bazı durumlarda, her nesne için yeni şekiller oluşturabilirsiniz. Taşıma, renklendirebilir ve daraltabilir veya bu şekilleri genişletin.|  
+|[UML modellerinde öğe ve ilişki oluşturma](../modeling/create-elements-and-relationships-in-uml-models.md)|IPackage.CreateClass()<br /><br /> IClass.CreateOperation()|Her öğe türünün alt öğelerini oluşturmak için yöntemleri vardır.|  
+|[Diyagramlar üzerinde model görüntüleme](../modeling/display-a-uml-model-on-diagrams.md)|IShape, IDiagram<br /><br /> IShape.Move()|Modeldeki her öğe diyagram üzerindeki bir şekil olarak gösterilebilir. Bazı durumlarda, her nesne için yeni şekiller oluşturabilirsiniz. Taşıma, renklendirebilir ve daraltabilir veya bu şekilleri genişletin.|  
 |[UML modelinde gezinme](../modeling/navigate-the-uml-model.md)|IModelStore<br /><br /> IDiagramContext|Model Store modeli depolar.<br /><br /> Diyagram bağlamı, geçerli diyagrama ve depoya erişiminizi erişmenizi sağlar.|  
 |[İşlemleri kullanarak UML model güncelleştirmelerini bağlama](../modeling/link-uml-model-updates-by-using-transactions.md)|ILinkedUndoContext|Bir dizi değişikliği tek bir işleme bağlayabilirsiniz.|  
-|[Modelleme Diyagramında Menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|IMenuCommand<br /><br /> IGestureExtension<br /><br /> ICommandExtension|Diyagramın işlevselliğini, çift tıklayarak ve diyagram üzerine sürükleyip çağrılan komutları tanımlayarak genişletebilirsiniz.|  
+|[Modelleme diyagramında menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|IMenuCommand<br /><br /> IGestureExtension<br /><br /> ICommandExtension|Diyagramın işlevselliğini, çift tıklayarak ve diyagram üzerine sürükleyip çağrılan komutları tanımlayarak genişletebilirsiniz.|  
 |[UML modelleri için doğrulama kısıtlamaları tanımlama](../modeling/define-validation-constraints-for-uml-models.md)|ValidationContext|Doğrulama yardımcı kurallar, bir model, belirtilen kısıtlamalara uyduğundan emin tanımlayabilirsiniz.|  
 |[IDataObject nesnesinden UML model öğelerini alma](../modeling/get-uml-model-elements-from-idataobject.md)|IElement, IShape|Bir öğe UML Model Gezgini veya UML diyagram başka bir diyagrama veya uygulamaya sürüklendiğinde, IDataObject olarak seri hale getirilir.|  
-|[UML API kullanarak UML sıralı diyagramlar Düzenle](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)|IInteraction, ILifeline, IMessage|Oluşturma ve etkileşim diyagramı güncelleştirme diğer diyagram türleri ile çalışmaktan biraz farklıdır.|  
+|[UML API kullanarak sıralama diyagramlarını düzenleme](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)|IInteraction, ILifeline, IMessage|Oluşturma ve etkileşim diyagramı güncelleştirme diğer diyagram türleri ile çalışmaktan biraz farklıdır.|  
 |[Katman diyagramlarını genişletme](../modeling/extend-layer-diagrams.md)|ILayer, ILayerDiagram|Oluşturun ve katman diyagramları düzenlemek için kod yazma ve ayrıca program kodunu bunlara karşı doğrulayın.|  
   
 ## <a name="about-the-implementation"></a>Uygulama hakkında  

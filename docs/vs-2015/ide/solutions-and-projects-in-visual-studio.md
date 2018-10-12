@@ -1,7 +1,7 @@
 ---
 title: Visual Studio'da projeler ve çözümler | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -55,18 +55,16 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7223acc3612d12fc5589e46b06b9fa76b5ecf002
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e5996d07a3186c1881e4fc44b3b1622a9ab221f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692578"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211152"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio’da Çözümler ve Projeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio'da projeler ve çözümler](https://docs.microsoft.com/visualstudio/ide/solutions-and-projects-in-visual-studio).  
-  
 Oluşturduğunuz sırada bir uygulama, uygulama, Web sitesi, Web uygulaması, betik, eklenti, vb. ile başlamanız Visual Studio'da bir *proje*. Mantıksal bir anlamda, tüm kaynak kodu dosyaları, simgeler, görüntü, veri dosyaları ve diğer her şey bir yürütülebilir programı veya web sitesi derlenecek, aksi takdirde derleme gerçekleştirmek için gerekli bir proje içerir.  Bir proje, ayrıca tüm derleyici ayarlarını ve çeşitli hizmetler veya programınızın iletişim kuracağı bileşenleri tarafından gerekebilecek diğer yapılandırma dosyalarını içerir.  
   
  Bir değişmez değer anlamda bir proje bir XML dosyasıdır (*.vbproj, \*.csproj, \*.vcxproj) tanımlayan bir sanal klasör hiyerarşisi yolları birlikte "içerdiği" tüm öğeler ve tüm yapı ayarları için. Visual Studio'da proje dosyası, proje içeriğini ve ayarlarını görüntülemek için Çözüm Gezgini tarafından kullanılır. Projenizi derlerken, MSBuild altyapısına yürütülebilir dosyayı oluşturmak için proje dosyasını kullanır. Çıkış diğer tür projelere ürün de özelleştirebilirsiniz.  
