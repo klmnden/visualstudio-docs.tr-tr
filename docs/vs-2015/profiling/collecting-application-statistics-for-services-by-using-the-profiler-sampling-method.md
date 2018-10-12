@@ -1,7 +1,7 @@
 ---
 title: Profiler örnekleme yöntemini kullanarak hizmetler için uygulama istatistikleri toplama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02936803b969c3e73410608ed0c5bf35c44db91b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a847777ad3d5b12162eedc8e998098ad20926a1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686885"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295561"
 ---
 # <a name="collecting-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>Profil Oluşturucu Örnekleme Yöntemini Kullanarak Hizmetler için Uygulama İstatistikleri Toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Profiler örnekleme yöntemini kullanarak hizmetler için uygulama istatistikleri toplama](https://docs.microsoft.com/visualstudio/profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method).  
-  
 Bu bölümde, Windows Hizmetleri komut satırından örnekleme yöntemini kullanarak performans istatistikleri toplama seçeneklerini ve yordamlar açıklanmaktadır.  
   
 > [!NOTE]
@@ -57,7 +55,7 @@ Bu bölümde, Windows Hizmetleri komut satırından örnekleme yöntemini kullan
 |**ASP.NET Web uygulamalarının profilini oluşturma**|-   [Örnekleme kullanarak uygulama istatistikleri toplama](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
   
 ### <a name="analyzing-sampling-data-views-and-reports"></a>Görünümleri ve raporları örnekleme verileri analiz etme  
- [Örnekleme yöntemi veri görünümleri](../profiling/profiler-sampling-method-data-views.md)
+ [Örnekleme Yöntemi Veri Görünümleri](../profiling/profiler-sampling-method-data-views.md)
 
 
 

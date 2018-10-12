@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: dizinde konu bulma | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 46021283b922758a8b4c5eafad1adeda3d6be573
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6bdfb94a7164dc38bf636d12d8b99ea73aefad8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692957"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296809"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>Nasıl yapılır: Dizinde Konu Bulma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: Dizin Bul konularındaki](https://docs.microsoft.com/visualstudio/ide/how-to-find-topics-in-the-index).  
-  
 Dizin, yüklü içeriği konularındaki ile ilişkili anahtar sözcüklerin listesini içerir. Kendisiyle ilişkili birden fazla anahtar sözcüğü her konu olabilir ve her anahtar sözcüğün birden fazla konu ile ilişkili olabilir. Bu dizin, dizin bir kitap kullandığınız gibi aynı şekilde kullanın.  
   
 ### <a name="to-find-a-topic-by-using-the-index"></a>Dizini kullanarak bir konu bulunamadı  
@@ -51,7 +49,7 @@ Dizin, yüklü içeriği konularındaki ile ilişkili anahtar sözcüklerin list
      Belirttiğiniz anahtar sözcüğü yalnızca bir konu ile ilişkili ise, görünür. Aksi halde, anahtar sözcüğü ile ilişkili olan tüm konuların listesi görüntülenir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Dizin arama ipuçları](../ide/index-search-tips.md)
+ [Dizin Arama İpuçları](../ide/index-search-tips.md)
 
 
 

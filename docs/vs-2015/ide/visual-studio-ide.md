@@ -1,7 +1,7 @@
 ---
 title: Visual Studio IDE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,15 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 98d0da464c5c156d959a05410326cebd4cd870f4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 760dc4f859de68040676439d84fea60d23602aeb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692179"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292792"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio IDE belgeleri](https://docs.microsoft.com/visualstudio/ide/index).
-
 Microsoft Visual Studio 2015 için kullanıcı Arabirimi tasarımı aracılığıyla planlama aşamasında den yazılım oluşturma, kodlama, test etme, hata ayıklama, kod kalitesini ve performansını analiz araçları, müşterileri ve kullanım telemetri toplama dağıtma paketidir. Bu araçlar, birlikte mümkün olan tüm Visual Studio tümleşik geliştirme ortamı (IDE üzerinden) sunulan olarak sorunsuz bir şekilde çalışmak üzere tasarlanmıştır.
 
 Visual Studio, birçok türde uygulamalar, güç kurumlar ve veri merkezlerine büyük ve karmaşık sistemleri için basit mağazası uygulamaları ve mobil istemciler için oyunlar oluşturmak için kullanabilirsiniz. Oluşturabilirsiniz:
@@ -198,12 +195,12 @@ Bir hata veya başarılı iletileri de dahil olmak üzere, yapı çıktısını 
 
 |||
 |-|-|
-|[Kullanıcı hesapları ve güncelleştirmeler](../ide/user-accounts-and-updates.md)|[IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)|
-|[Nasıl yapılır: IDE'de gezinme](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Visual Studio ile Geliştirmeye Başlama](../ide/get-started-developing-with-visual-studio.md)|
-|[Visual Studio Uzantıları’nı bulma ve kullanma](../ide/finding-and-using-visual-studio-extensions.md)|[Projeler ve çözümler](../ide/solutions-and-projects-in-visual-studio.md)|
-|[Kod yazma](../ide/writing-code-in-the-code-and-text-editor.md)|[Visual Studio’da hata ayıklama](../debugger/debugging-in-visual-studio.md)|
-|[Profil oluşturma araçları](../profiling/profiling-tools.md)|[Kod Kalitesini Geliştirme](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|
-|[Kullanıcı Arabirimleri Tasarlama](../designers/designing-user-interfaces.md)|[Çözümleme ve mimarinin modelini oluşturma](../modeling/analyze-and-model-your-architecture.md)|
+|[Kullanıcı Hesapları ve Güncelleştirmeler](../ide/user-accounts-and-updates.md)|[IDE’yi Kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)|
+|[Nasıl Yapılır: IDE'de Gezinme](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Visual Studio ile Geliştirmeye Başlama](../ide/get-started-developing-with-visual-studio.md)|
+|[Visual Studio Uzantıları’nı bulma ve kullanma](../ide/finding-and-using-visual-studio-extensions.md)|[Çözümler ve Projeler](../ide/solutions-and-projects-in-visual-studio.md)|
+|[Kod Yazma](../ide/writing-code-in-the-code-and-text-editor.md)|[Visual Studio’da hata ayıklama](../debugger/debugging-in-visual-studio.md)|
+|[Profil Araçları](../profiling/profiling-tools.md)|[Kod Kalitesini Geliştirme](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|
+|[Kullanıcı Arabirimleri Tasarlama](../designers/designing-user-interfaces.md)|[Mimariyi Çözümleme ve Mimarinin Modelini Oluşturma](../modeling/analyze-and-model-your-architecture.md)|
 |[Derleme ve Oluşturma](../ide/compiling-and-building-in-visual-studio.md)|[Uygulamaları, Hizmetleri ve Bileşenleri Dağıtma](../deployment/deploying-applications-services-and-components.md)|
 |[Visual Studio IDE 64 Bit Desteği](../ide/visual-studio-ide-64-bit-support.md)|[Güvenlik](../ide/security-in-visual-studio.md)|
 |[Visual Studio Örnekleri](../ide/visual-studio-samples.md)|[Microsoft Yardım Görüntüleyicisi](../ide/microsoft-help-viewer.md)|
@@ -213,6 +210,6 @@ Bir hata veya başarılı iletileri de dahil olmak üzere, yapı çıktısını 
 
 - [Visual Studio 2015'i yükleme](../install/install-visual-studio-2015.md)
 - [Kodunuzu düzenleme](https://www.visualstudio.com/features/ide-vs)
-- [Visual Studio 2015'teki yenilikler](../what-s-new-in-visual-studio-2015.md)
+- [Visual Studio 2015’teki Yenilikler](../what-s-new-in-visual-studio-2015.md)
 - [Visual Studio Projelerini Taşıma, Geçirme ve Yükseltme](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
 - [Bizimle İletişime Geçin](../ide/talk-to-us.md)

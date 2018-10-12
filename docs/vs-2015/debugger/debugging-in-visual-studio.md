@@ -1,7 +1,7 @@
 ---
 title: Visual Studio'da hata ayıklama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,15 @@ caps.latest.revision: 55
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 73c87560e6ce238877088def248afe9d8ce42103
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c3323c2513b21ad5432b6784ea305bf1693990d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691209"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296458"
 ---
 # <a name="debugging-in-visual-studio"></a>Visual Studio'da Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio'da hata ayıklama](https://docs.microsoft.com/visualstudio/debugger/debugger-feature-tour).
-
 Visual Studio hata ayıklayıcı, programınızın çalışma zamanı davranışını gözlemlemenize ve sorunları bulma yardımcı olur. Hata ayıklayıcı, tüm Visual Studio programlama dilleri ve bunların ilişkili kitaplıkları ile çalışır. Hata ayıklayıcı, programınızın kodunu incelemek, inceleyin ve değişkenleri düzenlemek, kayıt defterlerini görüntülemek, kaynak kodunuzdan oluşturulan yönergelere bakmak için programınızın yürütülmesini Kes ve uygulamanız tarafından kullanılan bellek alanını görüntüleyebilirsiniz.  
   
  Hata ayıklama ve tanılama Visual Studio için hızlı bir giriş için bkz: [hata ayıklama, profil ve tanılama](https://www.visualstudio.com/features/debugging-and-diagnostics-vs).  

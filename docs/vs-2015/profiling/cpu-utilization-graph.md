@@ -1,7 +1,7 @@
 ---
 title: CPU kullanım grafiği | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: defa2f16a18c97a10f74e8d351152442ccc0907f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc7dace6156cbb0909c2a54294a82f848fcb5b5e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681218"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292236"
 ---
 # <a name="cpu-utilization-graph"></a>CPU Kullanım Grafiği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [CPU kullanım grafiği](https://docs.microsoft.com/visualstudio/profiling/cpu-utilization-graph).  
-  
 CPU kullanım grafiği, zaman içinde bir uygulamada kullanım düzeyini gösterir. X ekseni izleme süresini ve y ekseni sistemdeki mantıksal çekirdek sayısını temsil eder. Graf, hangi belirli çekirdek herhangi bir zamanda etkin göstermez. Örneğin, iki çekirdek her belirli bir süre için yüzde 50 kapasitesine çalıştırıyorsanız, bu görünüm kullanılan bir mantıksal çekirdek gösterir.  
   
 ## <a name="cpu-utilization-graph-colors"></a>CPU kullanım grafiği renkleri  

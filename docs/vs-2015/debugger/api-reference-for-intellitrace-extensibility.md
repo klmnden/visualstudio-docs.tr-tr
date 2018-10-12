@@ -1,7 +1,7 @@
 ---
 title: IntelliTrace genişletilebilirliği için API Başvurusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c2956378c8da8d9488ad74db58ce54614411c34f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0506044893049c54ff76ebc39e79d84629b51724
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674366"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295095"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>IntelliTrace Genişletilebilirliği için API Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [IntelliTrace genişletilebilirliği için API Başvurusu](https://docs.microsoft.com/visualstudio/debugger/api-reference-for-intellitrace-extensibility).  
-  
 Bu bölümdeki bilgileri kullanarak, okuma ve uygulamanızda .itrace dosyaları kodlayıp kod çözebilirsiniz IntelliTrace genişletilebilirlik API'leri kullanabilirsiniz.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  

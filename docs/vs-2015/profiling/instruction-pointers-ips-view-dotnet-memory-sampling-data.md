@@ -1,7 +1,7 @@
 ---
 title: Yönerge işaretçileri (IP) görünümü - .NET bellek örnekleme verileri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 21141483d462df0faee099c22e2b79fc1718880d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0e39088aa546a83e374cf0b1edfd58f7132b9ed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631959"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290636"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Yönerge İşaretçileri (IP) Görünümü - .NET Bellek Örnekleme Verileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yönerge işaretçileri (IP) görünümü - .NET bellek örnekleme verileri](https://docs.microsoft.com/visualstudio/profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data).  
-  
 Örnekleme metodu kullanılarak tarafından toplanan .NET bellek ayırma profil oluşturma verisini IP'ler görünümünü ayrılan bellek profil oluşturma çalışması süresince derleme yönergeleri listeler. Görünümün sütunlarını ayrıca ayırmaların sayısı ve boyutu listeleyin.  
   
  Yalnızca özel değerleri listelenmektedir.  

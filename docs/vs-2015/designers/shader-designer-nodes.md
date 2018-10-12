@@ -1,7 +1,7 @@
 ---
 title: Gölgelendirici Tasarımcısı düğümleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f718faebef46308cf74847f75b3a05cd12386704
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f41d1d3d934ecd85ac36d24d704db561d42faa97
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689319"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293507"
 ---
 # <a name="shader-designer-nodes"></a>Gölgelendirici Tasarımcısı Düğümleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [gölgelendirici Tasarımcısı düğümleri](https://docs.microsoft.com/visualstudio/designers/shader-designer-nodes).  
-  
 Belgelerin bu bölümdeki makaleleri grafik efektleri oluşturmak için kullanabileceğiniz çeşitli gölgelendirici Tasarımcısı düğümleri hakkında bilgiler içerir.  
   
 ## <a name="nodes-and-node-types"></a>Düğüm ve düğüm türleri  

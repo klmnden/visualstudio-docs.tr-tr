@@ -1,7 +1,7 @@
 ---
 title: Bileşen diyagramlarındaki öğelerin özellikleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 16
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 832f293e09f14831dc9c0f44833631874d6741bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c77c9e6be69604176c470fa8de9e33a74c05532
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686318"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291427"
 ---
 # <a name="properties-of-elements-on-uml-component-diagrams"></a>Bileşen diyagramlarındaki öğelerin özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Bileşen diyagramlarındaki öğelerin özellikleri](https://docs.microsoft.com/visualstudio/modeling/properties-of-elements-on-uml-component-diagrams).  
-  
 Bir UML bileşen diyagramı her öğe diyagram üzerindeki özellikleri vardır. Öğenin özelliklerini görmek için diyagram üzerinde veya öğeye sağ tıklayın **UML Model Gezgini** ve ardından **özellikleri**. Özellikleri görünür **özellikleri** penceresi.  
   
 > [!NOTE]
@@ -54,7 +52,7 @@ Bir UML bileşen diyagramı her öğe diyagram üzerindeki özellikleri vardır.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML Kullanım durumu diyagramları: başvuru](../modeling/uml-use-case-diagrams-reference.md)   
- [UML Kullanım durumu diyagramları: yönergeler](../modeling/uml-use-case-diagrams-guidelines.md)
+ [UML Kullanım Durumu Diyagramları: Yönergeler](../modeling/uml-use-case-diagrams-guidelines.md)
 
 
 

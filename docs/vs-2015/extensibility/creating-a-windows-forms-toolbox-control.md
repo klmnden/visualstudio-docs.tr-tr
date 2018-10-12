@@ -1,7 +1,7 @@
 ---
 title: Oluşturma bir Windows Forms araç kutusu denetimi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc1deab4439133eb43348289fcfbba204a1cf9ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b7f1c5f9f052253e2b18ac2f7c669b7442ac391
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687637"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294222"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Windows Forms Araç Kutusu Denetimi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bir Windows Forms araç kutusu denetimi oluşturma](https://docs.microsoft.com/visualstudio/extensibility/creating-a-windows-forms-toolbox-control).  
-  
 Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç kutusu denetimi öğe şablonu otomatik olarak eklenen bir denetim oluşturmanızı sağlar **araç kutusu** uzantısı yüklü olduğunda. Bu konuda, diğer kullanıcılarına dağıtabileceğiniz bir basit bir sayaç denetimi oluşturmak için şablonu kullanmayı gösterir.  
   
 ## <a name="prerequisites"></a>Önkoşullar  

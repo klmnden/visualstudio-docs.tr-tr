@@ -12,19 +12,19 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d70ef67902093cd25d9cc038e61d702e7b71e533
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: d333a6561e7fd891e4eaacf0ca1364dfec4a7b19
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101201"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293442"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>IIS için Python web uygulamalarını yapılandırma
 
 Bir web sunucusu bir Windows bilgisayarda Internet Information Services (IIS) kullanırken (dahil olmak üzere [azure'da Windows sanal makineleri](/azure/architecture/reference-architectures/n-tier/windows-vm), Python uygulamaları, belirli ayarları içermelidir, *web.config* IIS'nin düzgün Python kodu işleyebilmek için dosyalar. Bilgisayar da Python web uygulamasının herhangi bir paket ile birlikte yüklü olması gerekir.
 
 > [!Note]
-> Bu makalede daha önce Windows üzerinde Azure App Service'te Python yapılandırmaya yönelik yönergeler içeriyor. Python uzantıları ve bu senaryoda kullanılan Windows ana bilgisayarları, Linux üzerinde Azure App Service ile değiştiriliyor bırakılmıştır. Daha fazla bilgi için [Azure App Service'e yayımlama Python uygulamaları](publishing-python-web-applications-to-azure-from-visual-studio.md)
+> Bu makalede daha önce Windows üzerinde Azure App Service'te Python yapılandırmaya yönelik yönergeler içeriyor. Python uzantıları ve bu senaryoda kullanılan Windows ana bilgisayarları, Linux üzerinde Azure App Service ile değiştiriliyor bırakılmıştır. Daha fazla bilgi için [Azure App Service'e yayımlama Python uygulamaları](publishing-python-web-applications-to-azure-from-visual-studio.md). Python uzantıları ile önceden kullanılabilen Windows üzerinde App Service'ı yönetmek için bilgi yine de gerekliyse, lütfen bu makalenin alt kısmındaki sorun kaydedebilir.
 
 ## <a name="install-python-on-windows"></a>Windows üzerinde Python'ı yükleyin
 

@@ -1,7 +1,7 @@
 ---
 title: '5. adım: Ekleme NumericUpDown denetimleri için giriş olay işleyicileri girin | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 879ae4e11fb51b63ed1a154eadcdb67ce87b2435
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a87704f7d836da2309e711f3379df01b01c807c2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675981"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294495"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>5. Adım: NumericUpDown Denetimleri için Giriş Olay İşleyicileri Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [5. adım: ekleme girmek için olay işleyicileri NumericUpDown denetimleri](https://docs.microsoft.com/visualstudio/ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls).  
-  
 Bu Eğitimin beşinci kısmında girme sınav sorularının yanıtlarını biraz daha kolay hale getirmek için gir olayı işleyicilerini ekleyeceksiniz. Bu kodu seçin ve her NumericUpDown denetimindeki geçerli değeri sınava seçer ve farklı bir değer girmeye başladığında sürede temizleyin.  
   
 > [!NOTE]

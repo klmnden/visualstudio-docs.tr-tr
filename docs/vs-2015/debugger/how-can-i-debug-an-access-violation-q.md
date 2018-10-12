@@ -1,7 +1,7 @@
 ---
 title: Erişim İhlalinde Nasıl Hata Ayıklayabilirim? | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c06121d84c6b573b5f1895fa447535826dad540
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1afc4902e818024e85f0f860173cece20ae9c73e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688375"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290608"
 ---
 # <a name="how-can-i-debug-an-access-violation"></a>Erişim İhlalinde Nasıl Hata Ayıklayabilirim?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl hata ayıklamayı erişim ihlali?](https://docs.microsoft.com/visualstudio/debugger/how-can-i-debug-an-access-violation-q).  
-  
 Sorun açıklaması  
  Kendi programımı bir erişim ihlali üretir. Bu sorunu nasıl ayıklayabilirim?  
   
@@ -81,7 +79,7 @@ int main() {
  İşaretçi erişim ihlaline neden neden belirleyemiyorsa, soruna işaretçi doğru şekilde atandığını emin olmak için kod boyunca izleme.  Bir parametre olarak geçirilir, doğru geçirilir ve yanlışlıkla oluşturma olmayan emin bir [yüzeysel kopya](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy). Ardından değerlerini istemeden yere programda veri kesme noktası işaretçisi, başka bir yerde programda değiştirilen olmadığından emin olmak için söz konusu oluşturarak değiştirilmekte olan değil olduğunu doğrulayın. Veri kesme noktaları hakkında daha fazla bilgi için bkz: veri kesme noktası bölümünde [kullanılarak kesme noktaları](../debugger/using-breakpoints.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yerel kod hata ayıklaması SSS](../debugger/debugging-native-code-faqs.md)
+ [Yerel Kodda Hata Ayıklama SSS](../debugger/debugging-native-code-faqs.md)
 
 
 

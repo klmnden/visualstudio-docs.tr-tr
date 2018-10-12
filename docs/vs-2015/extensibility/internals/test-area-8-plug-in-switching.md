@@ -1,7 +1,7 @@
 ---
 title: 'Test alanı 8: Eklenti değiştirme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6633c2bd2f2f968f10aef215f395203f95c99da1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6be407cc89820cc466180077c90288d8b285f7e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692188"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296718"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Test Alanı 8: Eklenti Değiştirme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Test alanı 8: eklenti değiştirme](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-8-plug-in-switching).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Tümleşik geliştirme ortamı (IDE), geçerli kaynak denetimi eklentisi değiştirmek için kullanıcı arabirimi (UI) sahiptir. Bu test alanı kullanmak için çözüm kaynak denetimi eklentisi, çekme işlemini test çalışmalarını sağlar.  
   
 ## <a name="command-menu-access"></a>Komut menü erişimi  

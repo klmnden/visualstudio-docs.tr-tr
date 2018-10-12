@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: bir UML modelindeki değişikliklere yanıt | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 3
 author: alancameronwills
 ms.author: awills
 manager: kamrani
-ms.openlocfilehash: 07af0a9ee8fb31839343e853ee7175b204b7fe09
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2352a6ba3c03df7c89b8888102fd5860a2c48810
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630639"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294365"
 ---
 # <a name="how-to-respond-to-changes-in-a-uml-model"></a>Nasıl yapılır: Bir UML Modelindeki Değişikliklere Yanıt Verme
 Visual Studio'da UML modelini bir değişiklik gerçekleştiğinde yürütülen kod yazmak mümkündür. Diğer Visual Studio uzantıları ve doğrudan kullanıcı tarafından yapılan değişiklikler için eşit olarak yanıt verir. Visual Studio'nun hangi sürümlerinin UML modellerini desteklemek için bkz [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

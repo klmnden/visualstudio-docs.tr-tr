@@ -1,7 +1,7 @@
 ---
 title: "Nasıl yapılır: düzenleyicide bağlantılar olarak görüntüleme URL'leri | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39dbd1db782c133500fab9ba07044645d134863e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a61794e036ff4ba5b107c085be1779e2ba79f35f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691119"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292363"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Nasıl Yapılır: Düzenleyicide URL'leri Bağlantılar Olarak Görüntüleme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: düzenleyicide bağlantılar olarak görüntüleme URL'leri](https://docs.microsoft.com/visualstudio/ide/reference/how-to-display-urls-as-links-in-the-editor).  
-  
   
 Tekdüzen Kaynak Konum Belirleyicisi (URL) kabul Kod Düzenleyicisi kodunuzda etkin bağlantı olarak seçebilirsiniz. Bu özellik, URL'leri kullandığınızda:  
   
@@ -61,7 +59,7 @@ Tekdüzen Kaynak Konum Belirleyicisi (URL) kabul Kod Düzenleyicisi kodunuzda et
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Düzenleyiciyi özelleştirme](../../ide/customizing-the-editor.md)   
  [Metin Düzenleyici Seçenekleri iletişim kutusu](../../ide/reference/text-editor-options-dialog-box.md)   
- [Kod yazma](../../ide/writing-code-in-the-code-and-text-editor.md)
+ [Kod Yazma](../../ide/writing-code-in-the-code-and-text-editor.md)
 
 
 

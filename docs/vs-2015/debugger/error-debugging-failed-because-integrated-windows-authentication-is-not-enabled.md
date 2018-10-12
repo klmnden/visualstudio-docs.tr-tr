@@ -1,7 +1,7 @@
 ---
 title: 'Hata: Tümleşik Windows kimlik doğrulaması etkinleştirilmediğinden hata ayıklama başarısız oldu | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3ef22190b37b85256476259ee42288ffd0ef0bc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c7855ede01c522f3e79dd4c342e38830cd2fd23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692865"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296146"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Hata: Tümleşik Windows Kimlik Doğrulaması Etkinleştirilmediğinden Hata Ayıklama Başarısız
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [hatası: hata ayıklama başarısız oldu çünkü tümleşik Windows kimlik doğrulaması etkin değil](https://docs.microsoft.com/visualstudio/debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled).  
-  
 Hata ayıklama isteyen kullanıcının kimlik doğrulaması, kimlik doğrulama hatası tarafından engellendi. Bir Web uygulaması veya bir XML Web hizmeti adımlamak çalıştığınızda ortaya çıkabilir. Bu hatanın bir nedeni, tümleşik Windows kimlik doğrulamasının etkin olduğunu. Bunu etkinleştirmek için "Tümleşik Windows kimlik doğrulamasını etkinleştirmek için." bulunan adımları izleyin.  
   
  Tümleşik Windows kimlik doğrulaması etkin ve bu hatayı görünmeye devam eder, çünkü bu hataya neden olduğunu mümkün **Windows etki alanı sunucuları için Özet kimlik doğrulaması** etkinleştirilir. Bu durumda, ağ yöneticinize başvurmanız gerekir.  

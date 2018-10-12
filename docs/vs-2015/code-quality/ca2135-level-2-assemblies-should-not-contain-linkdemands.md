@@ -1,7 +1,7 @@
 ---
 title: 'CA2135: Düzey 2 derlemeler LinkDemands içermemelidir | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,15 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9df472598587e90ad56ecc77a1d58c4094b2e61c
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 4e4b4cd759557defc7761db34841e3d87a285558
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545641"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294807"
 ---
 # <a name="ca2135-level-2-assemblies-should-not-contain-linkdemands"></a>CA2135: Düzey 2 derlemeler LinkDemands içermemelidir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA2135: Düzey 2 derlemeler LinkDemands içermemelidir](https://docs.microsoft.com/visualstudio/code-quality/ca2135-level-2-assemblies-should-not-contain-linkdemands).
-
 |||
 |-|-|
 |TypeName|SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemands|

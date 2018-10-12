@@ -1,7 +1,7 @@
 ---
 title: Kaynak Denetimi Eklentisi API işlevleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eadf9c76fcebe79eb8e8f599aecdf934485a34ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c02d873e2ccb6062f94569d1231b47fc56624fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686179"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293046"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Kaynak Denetimi Eklentisi API İşlevleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [kaynak denetimi eklentisi API işlevleri](https://docs.microsoft.com/visualstudio/extensibility/source-control-plug-in-api-functions).  
-  
 Kaynak Denetimi Eklentisi API kaynak denetimi eklentisi bu API uygun olarak uygulanması gereken aşağıdaki işlevleri sağlar. Her işlev ve semantiği imzalarını bit bayrakları ile ilişkili olan ve diğer parametreler, bu başvuru kaynağında ayrıntılı olarak açıklanmıştır.  
   
 ## <a name="initialization-and-housekeeping-functions"></a>Başlatma ve temizlik işlevleri  
@@ -36,7 +34,7 @@ Kaynak Denetimi Eklentisi API kaynak denetimi eklentisi bu API uygun olarak uygu
 |[SccCloseProject](../extensibility/scccloseproject-function.md)|Bir proje kapatır.|  
 |[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)|Verilen komutu için Gelişmiş Seçenekleri kullanıcıya sorar.|  
 |[SccGetVersion](../extensibility/sccgetversion-function.md)|Eklenti kaynak denetimi sürümünü döndürür.|  
-|[Sccınitialize](../extensibility/sccinitialize-function.md)|Kaynak Denetimi Eklentisi başlatır. Ayrıca, eklentinin her örneği için bir kez çağrılır.|  
+|[SccInitialize](../extensibility/sccinitialize-function.md)|Kaynak Denetimi Eklentisi başlatır. Ayrıca, eklentinin her örneği için bir kez çağrılır.|  
 |[SccOpenProject](../extensibility/sccopenproject-function.md)|Bir proje açılır.|  
 |[SccSetOption](../extensibility/sccsetoption-function.md)|Çok çeşitli seçenekleri ayarlamak için kullanılan genel bir işlev. Her seçeneği ile başlayan `SCC_OPT_xxx` ve kendi tanımlanan değerleri kümesi vardır.|  
 |[SccUninitialize](../extensibility/sccuninitialize-function.md)|Kaynak Denetimi Eklentisi çekilmesine gerektiğinde sonra çağrılır.|  
@@ -56,7 +54,7 @@ Kaynak Denetimi Eklentisi API kaynak denetimi eklentisi bu API uygun olarak uygu
 |[SccHistory](../extensibility/scchistory-function.md)|Bir dizi yerel tam olarak nitelenmiş dosya adını geçmişini gösterir.|  
 |[SccPopulateList](../extensibility/sccpopulatelist-function.md)|Bunların geçerli durum için dosyaların listesini inceler. Ayrıca, kullandığı `pfnPopulate` işlevi bir dosya için ölçüt eşleşmediğinde çağrıyı yapana bunu bildirmesi `nCommand`.|  
 |[SccProperties](../extensibility/sccproperties-function.md)|Tam olarak nitelenmiş dosya özelliklerini gösterir.|  
-|[Sccqueryınfo](../extensibility/sccqueryinfo-function.md)|Bunların geçerli durum için tam dosyaları listesini inceler.|  
+|[SccQueryInfo](../extensibility/sccqueryinfo-function.md)|Bunların geçerli durum için tam dosyaları listesini inceler.|  
 |[SccRemove](../extensibility/sccremove-function.md)|Dizinin tam dosyaların kaynak denetim sisteminden kaldırır.|  
 |[SccRename](../extensibility/sccrename-function.md)|Belirtilen dosya, kaynak denetim sistemi yeni bir ad ile yeniden adlandırır.|  
 |[SccRunScc](../extensibility/sccrunscc-function.md)|Kaynak denetim sistemi özelliklerinin tam aralığının erişir.|  
@@ -70,10 +68,10 @@ Kaynak Denetimi Eklentisi API kaynak denetimi eklentisi bu API uygun olarak uygu
 |[SccBeginBatch](../extensibility/sccbeginbatch-function.md)|Bir toplu işlem başlar.|  
 |[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)|Varolan üst projesinin altında verilen ada sahip bir alt proje oluşturur.|  
 |[SccDirDiff](../extensibility/sccdirdiff-function.md)|Bir tam yol adı ve kaynak denetimi veritabanı yeri tarafından belirtilen yerel kullanıcı dizini arasındaki farklar gösterilmektedir.|  
-|[Sccdirqueryınfo](../extensibility/sccdirqueryinfo-function.md)|Bunların geçerli durum için tam dizinler listesini inceler.|  
+|[SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)|Bunların geçerli durum için tam dizinler listesini inceler.|  
 |[SccEndBatch](../extensibility/sccendbatch-function.md)|Bir toplu işlem sona erer.|  
 |[SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)|Döndürür (projenin var olması gerekir) belirtilen proje yolu üst.|  
-|[Sccısmulticheckoutenabled](../extensibility/sccismulticheckoutenabled-function.md)|Bir dosya çubuğunda birden çok kullanıma izin verilip verilmediğini denetler.|  
+|[SccIsMultiCheckoutEnabled](../extensibility/sccismulticheckoutenabled-function.md)|Bir dosya çubuğunda birden çok kullanıma izin verilip verilmediğini denetler.|  
 |[SccWillCreateSccFile](../extensibility/sccwillcreatesccfile-function.md)|Eklenti MSSCCPRJ oluşturacak olup olmadığını denetler. SCC dosyaları.|  
   
 ## <a name="functions-that-support-advanced-capability-version-13-of-the-source-control-plug-in-api"></a>Gelişmiş özelliği (kaynak denetimi eklentisi API sürüm 1.3) destekleyen işlevleri  

@@ -1,7 +1,7 @@
 ---
 title: İOS kullanarak derlemeye yönelik ve Yapılandırma Araçları'nı yükleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: 84ff5fbd829fa47452ba258d431dcc0d0148ebf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b2fe10b960de79694050af5cbad3e707bb21568b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694720"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295288"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>iOS Kullanarak Derlemeye Yönelik Araçları Yükleme ve Yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yükleme ve yapılandırma araçları iOS kullanarak derlemeye](https://docs.microsoft.com/visualstudio/cross-platform/install-and-configure-tools-to-build-using-ios).  
-  
   
 Platformlar arası Mobil Geliştirme için Visual C++, düzenleme, hata ayıklama ve iOS Simulator'a veya bir iOS cihazının iOS kod dağıtmak için kullanabilirsiniz, ancak lisans kısıtlamaları nedeniyle, kodu oluşturulmuş ve gerekir uzaktan Mac'te çalışan Yapı ve Visual Studio kullanarak iOS uygulamaları çalıştırmak için kurma ve uzak aracı yapılandırma yapmanız [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), mac'inizde Uzak Aracı tutamaçları Visual Studio'dan derleme istekleri ve uygulama, Mac veya Mac üzerinde iOS Simülatörünün bağlı bir iOS cihazında çalışır  
   
@@ -36,7 +34,7 @@ Platformlar arası Mobil Geliştirme için Visual C++, düzenleme, hata ayıklam
   
  İOS kullanarak geliştirmek için araçları yükledikten sonra yolları hızlı bir şekilde yapılandırın ve Visual Studio ve Mac üzerinde iOS geliştirme için Uzak aracısını güncelleştirmek bu konuya bakın  
   
- [Önkoşulları](#Prerequisites)  
+ [Önkoşullar](#Prerequisites)  
   
  [İOS için Uzak aracı yükleme](#Install)  
   

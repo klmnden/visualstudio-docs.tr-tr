@@ -1,7 +1,7 @@
 ---
 title: System.Activities sekmesi, araç kutusu öğeleri iletişim kutusunda seçin | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 9c769058aaf86796780645c77b5bc2173db52048
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bed2df94edefdd074fab12244b93c032670f8cec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677609"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292051"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>System.Activities Sekmesi, Araç Kutusu Öğelerini Seç İletişim Kutusu
 Bu sekme, **araç kutusu öğelerini Seç** iletişim kutusu, bir listesini görüntüler [!INCLUDE[wf](../includes/wf-md.md)] etkinlikleri, şablonları ve öğeler için kullanılabilir. Bu listeyi görüntülemek için seçin **araç kutusu öğelerini Seç** gelen **Araçları** menüsü veya sağ tıklayarak **araç kutusu** seçerek **öğelerini Seç**görüntülenecek **araç kutusu öğelerini Seç** iletişim kutusunu ve ardından kendi **System.Activities** sekmesi. Kullanıma hazır, liste iş akışı etkinlikleri System.Activities System.ServiceModel.Activities ve System.Activities.Core.Presentation derlemelerden içerir. Ancak, yalnızca sistem tarafından sağlanan gösterilen etkinlikleri ve görüntülenen diğer derlemeleriyle eklenen etkinlikleri **araç kutusu** varsayılan olarak denetlenir. En son eklenen etkinlikler otomatik olarak denetlenir ve görünür **araç kutusu** tıkladığınızda **Tamam** iletişim kutusundaki. Bu öğeler de görünür **araç kutusu** etkinlik/öğe/şablonunda yer aldığı ad alanına karşılık gelen yeni bir kategori altında.  

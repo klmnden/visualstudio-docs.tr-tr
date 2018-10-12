@@ -1,7 +1,7 @@
 ---
 title: MSBuild başvurusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,32 +21,30 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 33ec64d3eb1ec4faa1566bb2d8f90d23f14a0555
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b99a082355742ad81ee2ac2e7280a17cfd233a2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693209"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292311"
 ---
 # <a name="msbuild-reference"></a>MSBuild Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [MSBuild başvurusu](https://docs.microsoft.com/visualstudio/msbuild/msbuild-reference).  
-  
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] için derleme sistemidir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Aşağıdaki bağlantılar içeren konuların müşteri adayı [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] başvuru bilgileri.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)  
+ [Proje Dosyası Şema Başvurusu](../msbuild/msbuild-project-file-schema-reference.md)  
  Oluşturan XML öğeleri açıklanır [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] dosya biçimi.  
   
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)  
+ [Görev Başvurusu](../msbuild/msbuild-task-reference.md)  
  Dahil olan tipik görevlerden bazılarını açıklar [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
  [Koşullar](../msbuild/msbuild-conditions.md)  
  İçinde kullanılabilir olan koşulları açıklayan [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] dosyaları.  
   
- [Koşullu yapılar](../msbuild/msbuild-conditional-constructs.md)  
+ [Koşullu Yapılar](../msbuild/msbuild-conditional-constructs.md)  
  Nasıl kullanılacağını açıklar `Choose`, `When`, ve `Otherwise` öğeleri.  
   
  [MSBuild Ayrılmış ve Tanınmış Özellikleri](../msbuild/msbuild-reserved-and-well-known-properties.md)  
@@ -61,13 +59,13 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [MSBuild başvurusu](https:
  [Komut Satırı Başvurusu](../msbuild/msbuild-command-line-reference.md)  
  İle kullanılabilecek anahtarlar ve bağımsız değişkenleri açıklar [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].exe.  
   
- [. MSBuild](../msbuild/msbuild-dot-targets-files.md)  
+ [.Targets Dosyaları](../msbuild/msbuild-dot-targets-files.md)  
  Açıklar. Dahil edilen hedefler dosyası [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
- [Tanınmış öğe meta verisi](../msbuild/msbuild-well-known-item-metadata.md)  
+ [Tanınmış Öğe Meta Verisi](../msbuild/msbuild-well-known-item-metadata.md)  
  İle birlikte her bir öğe oluşturulduğunda meta verilerini listeler.  
   
- [Yanıt dosyaları](../msbuild/msbuild-response-files.md)  
+ [Yanıt Dosyaları](../msbuild/msbuild-response-files.md)  
  Komut satırı anahtarları içeren .rsp dosyaları açıklar.  
   
  [Ek Kaynaklar](../msbuild/additional-resources-for-msbuild.md)  

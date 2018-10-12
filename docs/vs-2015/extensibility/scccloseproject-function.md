@@ -1,7 +1,7 @@
 ---
 title: SccCloseProject işlevi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 259c2069-d349-4814-810f-1c3151b7fb84
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aebc9d43ebf712d8add7e2aee4f7884ef2754da6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 06f4e1e4ed8d59ce040c9bcfb531d16908d26c43
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632125"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290790"
 ---
 # <a name="scccloseproject-function"></a>SccCloseProject İşlevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [SccCloseProject işlevi](https://docs.microsoft.com/visualstudio/extensibility/scccloseproject-function).  
-  
 Bu işlev, belirli bir oturum sonunu işaretlemek için bir proje, kapatır.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -59,5 +57,5 @@ SCCRTN SccCloseProject (
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak Denetimi Eklentisi API işlevleri](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   
- [Sccınitialize](../extensibility/sccinitialize-function.md)
+ [SccInitialize](../extensibility/sccinitialize-function.md)
 

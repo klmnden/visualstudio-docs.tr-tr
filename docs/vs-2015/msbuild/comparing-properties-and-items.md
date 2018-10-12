@@ -1,7 +1,7 @@
 ---
 title: Özellikleri ve öğeleri karşılaştırma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ff56531eea960523cfa7fad7275dfdf20d0cf9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b80ea0c25766f75d21d193a67be68c13eb5ea0d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697124"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292402"
 ---
 # <a name="comparing-properties-and-items"></a>Özellikleri ve Öğeleri Karşılaştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [karşılaştırma özellikleri ve öğeleri](https://docs.microsoft.com/visualstudio/msbuild/comparing-properties-and-items).  
-  
   
 MSBuild özellikleri ve öğeleri hem de bilgi geçirmek için görevler, koşulları değerlendirin ve proje dosyası boyunca başvurulabilir değerleri depolamak için kullanılır.  
   
@@ -190,7 +188,7 @@ KeyFileVersion: 1.0.0.3
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Gelişmiş kavramlar](../msbuild/msbuild-advanced-concepts.md)
+ [Gelişmiş Kavramlar](../msbuild/msbuild-advanced-concepts.md)
 
 
 

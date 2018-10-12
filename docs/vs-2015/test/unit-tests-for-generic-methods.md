@@ -1,7 +1,7 @@
 ---
 title: Genel metotlar için birim testleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 19e17718cdee01b4fec4b126072126d4ff9ee281
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 208682486f2a1b3c9be69e969b5d80374c8fde32
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690612"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295795"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Genel Metotlar için birim testleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [genel metotlar için birim testleri](https://docs.microsoft.com/visualstudio/test/unit-tests-for-generic-methods).  
-  
 Diğer yöntemleri için tam olarak yaptığınız gibi açıklandığı gibi genel metotlar için birim testleri oluşturabilirsiniz [nasıl yapılır: birim testi oluşturma ve çalıştırma](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Aşağıdaki bölümler ve örnekleri, genel metotlar için birim testleri oluşturma hakkında bilgi sağlar.  
   
 ## <a name="type-arguments-and-type-constraints"></a>Tür bağımsız değişkeni ve tür kısıtlamaları  

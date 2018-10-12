@@ -1,7 +1,7 @@
 ---
 title: Visual Studio'da XAML Tasarımcısı kullanarak kullanıcı Arabirimi oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 932a347820a0c6f2edf87d9a7f41e95a8c27f1b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d59798e5ecf503b1dcb6b76e9d0d8fb448cc1e8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680916"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295034"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Visual Studio’da XAML Tasarımcısı’nı kullanarak kullanıcı arabirimi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio'da XAML Tasarımcısı kullanarak kullanıcı Arabirimi oluşturma](https://docs.microsoft.com/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio).  
-  
 Visual Studio'da XAML Tasarımcısı, XAML tabanlı Windows Store, Windows Phone, WPF ve Silverlight uygulamaları tasarlamanıza yardımcı olması için görsel bir arabirim sağlar. Denetimlerden sürükleyerek, uygulamalarınız için kullanıcı arabirimleri oluşturabilirsiniz **araç kutusu** ve ayarları **özellikleri** penceresi. Ayrıca, XAML XAML görünümünde doğrudan düzenleyebilirsiniz.  
   
  Gelişmiş XAML tasarım görevleri için animasyon ve davranışlarla gibi bkz [Visual Studio için Blend'i kullanarak kullanıcı Arabirimi oluşturma](../designers/creating-a-ui-by-using-blend-for-visual-studio.md).  

@@ -1,7 +1,7 @@
 ---
 title: VSCT XML Şeması Başvurusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84490c5bbaba926cb76927b5e545b88c4c1d4757
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a8975e53d690f4f2e13b08ccf290492955c49b0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685680"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293065"
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML Şeması Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [VSCT XML Şeması Başvurusu](https://docs.microsoft.com/visualstudio/extensibility/vsct-xml-schema-reference).  
-  
 Komut tablosu derleyici şema öğelerinin bir tablo ile izin verilen alt öğeler ve öznitelikler için her sağlar.  
   
  Bir XML tabanlı komut tablosu (.vsct) yapılandırma dosyası tümleşik geliştirme ortamı (IDE) bir VSPackage sağlayan komut öğeleri tanımlar. Menü öğeleri, menüler, araç çubukları ve birleşik giriş kutuları bu öğeleri içerir.  
@@ -79,7 +77,7 @@ Komut tablosu derleyici şema öğelerinin bir tablo ile izin verilen alt öğel
   
  [Symbols Öğesi](../extensibility/symbols-element.md)  
   
- [Koşullu öznitelikleri](../extensibility/vsct-xml-schema-conditional-attributes.md)  
+ [Koşullu Öznitelikler](../extensibility/vsct-xml-schema-conditional-attributes.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [VSPackage kullanıcı arabirimi öğelerini nasıl eklenir](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   

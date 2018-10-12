@@ -1,7 +1,7 @@
 ---
 title: Kullanarak yalıtılmış Kabuğu değiştirme. Pkgdef dosya | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 69e8f78e-bcf1-46cb-8866-7de37d134997
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f70036f91eb52d85054465e6eea9f82672d851f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3a9b56d946e5a337c5afeb6cdd399c3c7ba24bd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684538"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291466"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>Kullanarak yalıtılmış Kabuğu değiştirme. Pkgdef dosyası
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yalıtılmış Kabuğu kullanarak değiştirme. Pkgdef dosya](https://docs.microsoft.com/visualstudio/extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file).  
-  
 .Pkgdef dosyası, yalıtılmış Kabuk uygulaması özelleştirmek için kullanabileceğiniz ayarları destekler. Bu, uygulamanın bir bilgisayarda yüklendiğinde ve uygulama başladığında, Visual Studio shell tarafından başvurulan oluşturulan değerleri belirtir. Ayarlar dosyasındaki ilgili kayıt defteri anahtara göre düzenlenir.  
   
 > [!WARNING]
@@ -136,5 +134,5 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [yalıtılmış Kabuğu kul
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yalıtılmış Kabuğu özelleştirme](../extensibility/customizing-the-isolated-shell.md)   
- [. Pkgundef dosyaları](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md)
+ [.Pkgundef Dosyaları](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md)
 

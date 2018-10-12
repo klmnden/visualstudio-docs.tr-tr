@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: ortam derleme birden çok bilgisayarda oluşturma | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: da285fd1b769aa22127a81753c6bb49ca16954cd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93d5e45bc4e8efd146391c5dff78bcb11fcf067f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684584"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292090"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>İzlenecek yol: Birden Çok Bilgisayarda Derleme Ortamı Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [izlenecek yol: bir birden çok bilgisayarda derleme ortamı oluşturma](https://docs.microsoft.com/visualstudio/ide/walkthrough-creating-a-multiple-computer-build-environment).  
-  
 Visual Studio bir ana bilgisayara yükleyerek, kuruluşunuzda bir yapı ortamı oluşturabilirsiniz ve böylece katılabilmesi çeşitli dosya ve ayarları başka bir bilgisayara ardından kopyalama oluşturur. Visual Studio'yu diğer bilgisayara yüklemeniz gerekmez.  
   
  Bu belge, yazılımın harici olarak dağıtılması veya üçüncü taraflara yapı ortamları sağlamak için hakları confer değil.  

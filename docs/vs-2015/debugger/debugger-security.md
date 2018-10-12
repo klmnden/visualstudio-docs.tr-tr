@@ -1,7 +1,7 @@
 ---
 title: Hata ayıklayıcısı güvenliği | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f40dfc655148530045b6566ac56d77553951b93
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9d446cfa4eca86ff4657fc9a8741aa965fd43de
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695968"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290504"
 ---
 # <a name="debugger-security"></a>Hata Ayıklama Güvenliği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [hata ayıklayıcısı güvenlik](https://docs.microsoft.com/visualstudio/debugger/debugger-security).  
-  
 Başka bir işlem hata ayıklama olanağı, aksi takdirde, özellikle de uzaktan hata ayıklama yapılırken erişemeyecek çok geniş powers sağlar. Kötü amaçlı bir hata ayıklayıcı hataları ayıklanmakta olan makinede yaygın zarar başını.  
   
  Ancak, birçok geliştiricinin güvenlik tehdidi ters yöne akabilir başlığımız dikkatinizi çekmiş olabilir değil. Hata ayıklanan işlemin hata ayıklama makinesi güvenliğini tehlikeye atabilir, kötü amaçlı kod için mümkündür: bir dizi karşı korumalı olacak güvenlik açıkları vardır.  
@@ -91,7 +89,7 @@ Başka bir işlem hata ayıklama olanağı, aksi takdirde, özellikle de uzaktan
  [Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)   
  [Hata ayıklayıcı temel bilgileri](../debugger/debugger-basics.md)   
  [Güvenlik Uyarısı: Güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme tehlikeli olabilir. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)   
- [Güvenlik Uyarısı: Hata ayıklayıcı güvenilmeyen komut yürütmeli](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
+ [Güvenlik Uyarısı: Hata Ayıklayıcı Güvenilmeyen Komut Yürütmeli](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
 
 
 

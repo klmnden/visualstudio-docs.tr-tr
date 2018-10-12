@@ -1,7 +1,7 @@
 ---
 title: Visual Basic'de desteklenmeyen düzenlemeler Düzenle ve devam et | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 44dea7dd67653a5dbde95f10a331932a9c8c14c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ffe536b21b5569ad3427dfe4e3b281887cc00b13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631975"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296328"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Visual Basic Düzenle ve Devam Et'de Desteklenmeyen Düzenlemeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [desteklenmeyen düzenlemeler Visual Basic Düzenle ve devam et](https://docs.microsoft.com/visualstudio/debugger/unsupported-edits-in-visual-basic-edit-and-continue).  
-  
 Düzenle ve kesme modunda programın yürütülmesini durdurur, kod için değişiklik ve yeni eklenen değişikliklerle program sürdürebilir les devam edin. Genel bir sınıf yapısını etkileyen bildirim temelli kod düzenleme genel olarak yasaklanmış olmasına karşın bir yöntem, özellik gövdesi veya özel bir sınıf bildirimlerinde yapabileceğiniz birçok düzenlemelere izin.  
   
  Desteklenmeyen bir değişiklik yapmanız gerekirse, hata ayıklamayı durdurmak, değişiklikleri yapın ve yeni bir hata ayıklama oturumu başlatın.  

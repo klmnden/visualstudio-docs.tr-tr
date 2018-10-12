@@ -1,7 +1,7 @@
 ---
 title: Eski etkinlik Tasarımcısını kullanma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -19,12 +19,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: a3970a4453c23a47b609886c24d0b8fe62efd3e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c71fa8d901653babd8c3558da7eff8ff16058c5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695220"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296835"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Eski Etkinlik Tasarımcısını Kullanma
 Bu konuda, etkinlik Tasarımcısı içinde eski kullanmayı açıklar [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Eski Tasarımcı hedeflenirken kullanın [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

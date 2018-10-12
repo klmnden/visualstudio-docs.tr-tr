@@ -1,7 +1,7 @@
 ---
 title: Visual Studio grafik tanılama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c708900a0eebb2f4de1515eeab2f788eb5345a03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a1ada0fb0379846d7c0a0af5a6ab28906b29f619
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682099"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294209"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio Grafik Tanılama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio grafik tanılama](https://docs.microsoft.com/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics).  
-  
 Visual Studio*grafik tanılama* kaydetme ve ardından Direct3D uygulamalar oluşturma ve performans sorunları çözümleme araçları kümesidir. Grafik Tanılama, Windows PC, bir Windows cihaz öykünücüsü veya bir uzak bilgisayar veya cihaz üzerinde yerel olarak çalışan uygulamalarda kullanılabilir.  
   
  Grafik tanılama iş akışının nasıl Direct3D uygulamanızın kullandığı kaydını yakalayarak başlar — Canlı çalıştığı gibi — davranışını hemen çözümlenebilir böylece paylaşılan ya da daha sonra kullanmak üzere kaydedildi. Yakalama oturumu başlatılabilir ve Visual Studio'dan el ile veya komut satırı Yakalama aracı ile controled **dxcap.exe**. Yakalama oturumu da başlatılabilir ve grafik tanılama yakalama API'leri kullanarak programlı olarak controled.  
@@ -50,19 +48,19 @@ Visual Studio*grafik tanılama* kaydetme ve ardından Direct3D uygulamalar oluş
  [Grafik Bilgilerini Yakalama](../debugger/capturing-graphics-information.md)  
  Uygulamanızda bir işleme sorunuyla incelemek için grafik tanılama kullanmak için öncelikle uygulamayı DirectX nasıl kullandığı hakkında bilgi kaydedin. Kayıt oturumu sırasında uygulamanız çalışırken normalde, *yakalama* (diğer bir deyişle, seçin), ilgilendiğiniz çerçeveleri. Yakalamalar çerçeveleri nasıl işlendiğini hakkında ayrıntılı bilgi içerir. Yakalanan bilgiler grafik olarak kaydedebilirsiniz daha sonra incelemek veya takımınızın diğer üyeleriyle paylaşmak için günlük belgesi.  
   
- [GPU kullanımı](../debugger/gpu-usage.md)  
+ [GPU Kullanımı](../debugger/gpu-usage.md)  
  Uygulamanızın profilini çıkarmak için grafik tanılama kullanmak için GPU kullanımı aracı kullanın. GPU kullanımı, CPU kullanımı gibi diğer profil oluşturma araçları ile uyumlu bir şekilde uygulamanızdaki performans sorunlarını katkıda bulunabilir CPU ve GPU etkinliği ilişkilendirmek için kullanılabilir.  
   
  [Grafik Günlük Belgesi](../debugger/graphics-log-document.md)  
  Kaydedilen grafik günlüğü incelenmesi başlatmak için grafik günlüğü belge penceresinde bir yakalanan çerçeve seçmek için kullandığınız — ve hatta belirli bir pikseli — böylece ayrıntılı olarak inceleyebilir *olayları* (diğer bir deyişle, DirectX API onu etkileyen çağrıları) .  
   
- [Çerçeve analizi](../debugger/graphics-frame-analysis.md)  
+ [Çerçeve Analizi](../debugger/graphics-frame-analysis.md)  
  Bir çerçeveyi seçtikten sonra işleme performansını ayarlamak ve incelemek için grafik çerçeve çözümlemesi kullanın.  
   
  [Olay Listesi](../debugger/graphics-event-list.md)  
  Bir çerçeveyi seçtikten sonra kullandığınız **grafik olay listesi** işleme sorunuyla ilgili olup olmadığını belirlemek için olaylarını incelemek için.  
   
- [durumu](../debugger/graphics-state.md)  
+ [State](../debugger/graphics-state.md)  
  Durum Penceresi'ni geçerli olay sırasında etkin olan grafik durumu anlamanıza yardımcı olur.  
   
  [Ardışık Düzen Aşamaları](../debugger/graphics-pipeline-stages.md)  
@@ -77,7 +75,7 @@ Visual Studio*grafik tanılama* kaydetme ve ardından Direct3D uygulamalar oluş
  [Nesne Tablosu](../debugger/graphics-object-table.md)  
  Kullandığınız **Graphics Object Table** özelliklerini ve belirli Direct3D nesneleri ve şu anda seçili olayı için geçerli olan kaynakların içeriğini incelemek için. Nesne tablosu, bir olayı sırasında etkin olan grafik cihaz bağlamı belirlemek ve sabit arabellekler köşe arabellekleri ve dokular gibi grafik kaynakları içeriğini incelemek yardımcı olabilir.  
   
- [HLSL hata ayıklayıcısı](../debugger/hlsl-shader-debugger.md)  
+ [HLSL Hata Ayıklayıcısı](../debugger/hlsl-shader-debugger.md)  
  Seçili olan olay ve grafik aşama işlem hattı için gölgelendirici kodu nasıl davranacağını incelemek için kullandığınız **HLSL hata ayıklayıcısı** kodda adım adım için değişkenlerin içeriğini inceleyebilir ve tipik diğer hata ayıklama görevleri. HLSL hata ayıklayıcısı, compute gölgelendirici kodu sonuçlarını grafik ardışık düzen tarafından daha fazla işlenebilir veya yalnızca, uygulamanız tarafından okunur bağımsız olarak incelemek için de kullanabilirsiniz.  
   
  [Komut satırı Yakalama Aracı](../debugger/command-line-capture-tool.md)  

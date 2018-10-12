@@ -1,7 +1,7 @@
 ---
 title: Idiasymbol::get_isnaked | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1da5488995575b76529c8273fa4c42f70675d8cd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c7dacf0831f286f30899d7173d712a0fd485cf31
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687708"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293819"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Idiasymbol::get_isnaked](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-isnaked).  
-  
 İşlev olup olmadığını belirten bir bayrak alır [naked](http://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) özniteliği (diğer bir deyişle, işlev derleyici tarafından eklenen giriş veya çıkış kodu olmayan).  
   
 ## <a name="syntax"></a>Sözdizimi  

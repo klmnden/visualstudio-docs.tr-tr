@@ -1,7 +1,7 @@
 ---
 title: Kural kümesi Düzenleyicisi iletişim kutusu (eski) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 2b7c7965d7f9af42dc25a91c750a6ec633fedc73
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9da35b83eead06f40452696bb9559d409da8e38d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693806"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294586"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Kural Kümesi Düzenleyicisi İletişim Kutusu (Eski)
 Bu konu açıklar nasıl **kural kümesi Düzenleyicisi** eski iletişim kutusunda [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -41,7 +41,7 @@ Bu konu açıklar nasıl **kural kümesi Düzenleyicisi** eski iletişim kutusun
 |Arabirim Öğesi|Açıklama|  
 |----------------|-----------------|  
 |**Kural Ekle**|Yeni bir kural tanımı kural kümesine ekler.|  
-|**Sil**|Seçili kuralı kural kümesinden siler.|  
+|**Delete**|Seçili kuralı kural kümesinden siler.|  
 |**Zincirleme**|Kural kümesi ile kullanmak için ileriye doğru zincirleme türü belirtir. Kullanılabilir seçenekler şunlardır:<br /><br /> -   **Tam zincirleme**, tüm ileriye doğru zincirleme mekanizmaları kullanma belirtir: dolaylı yöntem öznitelik atanıyor ve açık bir **güncelleştirme** işlevi.<br />-   **Sıralı**, herhangi bir iletme zincirleme kullanmayacak şekilde belirtir.<br />-   **Yalnızca açık güncelleştirme**, yalnızca üzerinde İleri zincirleme gerçekleştirmek için belirten **güncelleştirme** eylemler.<br /><br /> İleriye doğru zincirleme hakkında daha fazla bilgi için bkz. [PolicyActivity etkinliğini kullanarak](http://go.microsoft.com/fwlink?LinkID=65004).|  
 |**Ad**|Kural listesi sütun başlığını ayarlayın. Ada göre kural listesini sıralamak için tıklayın.|  
 |**Öncelik**|Kural listesi sütun başlığını ayarlayın. Kurallar listesini öncelik sırasına göre sıralamak için tıklayın.|  

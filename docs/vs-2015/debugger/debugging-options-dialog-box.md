@@ -1,7 +1,7 @@
 ---
 title: Hata ayıklama, Seçenekler iletişim kutusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,25 +30,23 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a03eb60900e0634bef6fedd1200d8633ad7b93d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea3c784aa5920935976ccbf873fd49919f9372fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686632"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293871"
 ---
 # <a name="debugging-options-dialog-box"></a>Hata Ayıklama, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [hata ayıklama, Seçenekler iletişim kutusu](https://docs.microsoft.com/visualstudio/debugger/debugging-options-dialog-box).  
-  
 **Hata ayıklama** klasörü içinde **seçenekleri** iletişim kutusunda **Araçları** menüsünde, hata ayıklayıcı belirtmenize olanak verir sayfalarda araç seçenekleri sağlar.  
   
--   [Genel, hata ayıklama, Seçenekler iletişim kutusu](../debugger/general-debugging-options-dialog-box.md)  
+-   [Genel, Hata Ayıklama, Seçenekler İletişim Kutusu](../debugger/general-debugging-options-dialog-box.md)  
   
--   [Yalnızca hata ayıklama, zamanında, Seçenekler iletişim kutusu](../debugger/just-in-time-debugging-options-dialog-box.md)  
+-   [Tam Zamanında, Hata Ayıklama, Seçenekler İletişim Kutusu](../debugger/just-in-time-debugging-options-dialog-box.md)  
   
--   [Çıkış penceresi, hata ayıklama, Seçenekler iletişim kutusu](../debugger/output-window-debugging-options-dialog-box.md)  
+-   [Çıkış Penceresi, Hata Ayıklama, Seçenekler İletişim Kutusu](../debugger/output-window-debugging-options-dialog-box.md)  
   
 -   [Simgeler, hata ayıklama, Seçenekler iletişim kutusu](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   

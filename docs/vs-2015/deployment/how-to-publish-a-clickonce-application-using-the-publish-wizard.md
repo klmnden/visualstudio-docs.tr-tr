@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: yayımlama sihirbazını kullanarak ClickOnce uygulaması yayımlama | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 46b969a20859ed537549aaede8818e10c0d13fde
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82600212626ea5c5f0543579b82d95903f1fcc8e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693819"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293910"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Nasıl yapılır: Yayımlama Sihirbazını Kullanarak ClickOnce Uygulaması Yayımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: yayımlama sihirbazını kullanarak ClickOnce uygulaması yayımlama](https://docs.microsoft.com/visualstudio/deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard).  
-  
 Bir ClickOnce uygulamasını kullanıcılar tarafından kullanılabilmesi için bir dosya paylaşımı veya yolu, FTP sunucusu veya çıkarılabilir medya yayımlamanız gerekir. Uygulama Yayımlama Sihirbazı'nı kullanarak yayınlayabilirsiniz; yayımlama ile ilgili ek özellikler kullanılabilir **Yayımla** sayfasının **Proje Tasarımcısı**. Daha fazla bilgi için [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md).  
   
  Yayımlama Sihirbazı'nı çalıştırmadan önce yayınlama özelliklerini uygun şekilde ayarlamanız gerekir. ClickOnce uygulamanızı imzalamak için bir anahtar belirlemek istiyorsanız, örneğin, vb. yapabileceğiniz **imzalama** sayfasının **Proje Tasarımcısı**. Daha fazla bilgi için [ClickOnce uygulamalarının güvenliğini sağlama](../deployment/securing-clickonce-applications.md).  

@@ -1,7 +1,7 @@
 ---
 title: Bir etki alanına özgü dili özelleştirmek için kod yazma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d22bc992da094ea592f508f3d9e0662977e7e534
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9debc18c9d99c9b44b66116ff2f956296fdc19f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692723"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293351"
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>Etki Alanına Özgü Dili Özelleştirmek için Kod Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bir etki alanına özgü dili özelleştirmek için kod yazma](https://docs.microsoft.com/visualstudio/modeling/writing-code-to-customise-a-domain-specific-language).  
-  
 Bu bölümde erişim, değiştirme veya bir etki alanına özgü dili bir model oluşturmak için özel kod kullanma gösterilmektedir.  
   
  Bir DSL ile çalışan kod yazabileceğiniz birkaç bağlamları vardır:  

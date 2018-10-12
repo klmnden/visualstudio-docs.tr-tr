@@ -1,7 +1,7 @@
 ---
 title: Bir eşzamanlılık özel durumunu işleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d174aeb48170f1232aa0830bd2532897e7cb6f5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5949578a6515d74d97821608093f8cdf0dfc7b15
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675987"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295307"
 ---
 # <a name="handle-a-concurrency-exception"></a>Bir eşzamanlılık özel durumunu işleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bir eşzamanlılık özel durumunu işleme](https://docs.microsoft.com/visualstudio/data-tools/handle-a-concurrency-exception).  
-  
   
 Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki kullanıcı, bir veritabanında aynı verileri aynı anda değiştirme girişiminde oluşturulur. Bu kılavuzda, catch gösterilmektedir bir Windows uygulaması oluşturma bir <xref:System.Data.DBConcurrencyException>hataya neden satırı bulun ve nasıl işleyeceğini bir stratejisi öğrenin.  
   

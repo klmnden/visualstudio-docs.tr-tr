@@ -1,7 +1,7 @@
 ---
 title: 'DA0039: Çok yüksek oranda kilit çakışmaları | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: acfd579696fbc9f8c8ef228e579278e1b2b60bec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b69756928e8102488e825b87f1d0cd468e970f1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684471"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291895"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Çok Yüksek Oranda Kilit çakışmaları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
