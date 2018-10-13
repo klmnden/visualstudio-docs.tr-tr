@@ -1,14 +1,14 @@
 ---
 title: 'Senaryo: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-devops-techdebt
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - code visualization [Visual Studio ALM]
 - modeling software [Visual Studio ALM]
@@ -22,18 +22,16 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 67fd284bca4e81c36cd6e7e185b9c4712f07e6b6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 220666e6fe12e6a5ab3bbaf1238c19d761427cea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685812"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303049"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Senaryo: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [senaryo: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme](https://docs.microsoft.com/visualstudio/modeling/scenario-change-your-design-using-visualization-and-modeling).  
-  
 Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visual Studio tarafından Kullanıcıların ihtiyaçlarını karşıladığından emin olun. Birleşik Modelleme Dili (UML) diyagramları, kod Haritaları, katman diyagramları ve sınıf diyagramları gibi araçları kullanın:  
   
  Her araç, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -56,7 +54,7 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
  Bu araçlar ve destekledikleri senaryolar hakkında daha fazla bilgi için bkz:  
   
--   [Çözümleme ve mimarinin modelini oluşturma](../modeling/analyze-and-model-your-architecture.md)  
+-   [Mimariyi Çözümleme ve Mimarinin Modelini Oluşturma](../modeling/analyze-and-model-your-architecture.md)  
   
 -   [Kodu görselleştirme](../modeling/visualize-code.md)  
   
@@ -345,7 +343,7 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
 -   [Visual Studio Team Services veya Team Foundation Server kullanarak iş izleme](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
   
--   [Ve iş öğelerini model öğelere bağlama](../modeling/link-model-elements-and-work-items.md)  
+-   [Model öğelerini ve iş öğelerini bağlama](../modeling/link-model-elements-and-work-items.md)  
   
 -   [Grafikler, panolar ve Visual Studio ALM için raporlar](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
   
@@ -426,9 +424,9 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
  Bkz.  
   
--   [UML Kullanım durumu diyagramları: başvuru](../modeling/uml-use-case-diagrams-reference.md)  
+-   [UML Kullanım Durumu Diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)  
   
--   [UML Kullanım durumu diyagramları: yönergeler](../modeling/uml-use-case-diagrams-guidelines.md)  
+-   [UML Kullanım Durumu Diyagramları: Yönergeler](../modeling/uml-use-case-diagrams-guidelines.md)  
   
 #### <a name="drawing-a-use-case-diagram"></a>Kullanım çalışması diyagramı çizme  
  Bir kullanım durumu diyagramı aşağıdaki önemli özelliklere sahiptir:  
@@ -447,9 +445,9 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
  Bkz.  
   
--   [UML Kullanım durumu diyagramları: başvuru](../modeling/uml-use-case-diagrams-reference.md)  
+-   [UML Kullanım Durumu Diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)  
   
--   [UML Kullanım durumu diyagramları: yönergeler](../modeling/uml-use-case-diagrams-guidelines.md)  
+-   [UML Kullanım Durumu Diyagramları: Yönergeler](../modeling/uml-use-case-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-use-case-diagrams"></a>Özet: Kullanım örneği diyagramları gücü  
  Kullanım örneği diyagramları görselleştirmenize yardımcı olur:  
@@ -487,9 +485,9 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
  Bkz.  
   
--   [UML etkinlik diyagramları: başvuru](../modeling/uml-activity-diagrams-reference.md)  
+-   [UML Etkinlik Diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)  
   
--   [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md)  
+-   [UML Etkinlik Diyagramları: Yönergeler](../modeling/uml-activity-diagrams-guidelines.md)  
   
 #### <a name="drawing-an-activity-diagram"></a>Etkinlik diyagramı çizme  
  Bir faaliyet diyagramı aşağıdaki önemli özelliklere sahiptir:  
@@ -512,9 +510,9 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
  Bkz.  
   
--   [UML etkinlik diyagramları: başvuru](../modeling/uml-activity-diagrams-reference.md)  
+-   [UML Etkinlik Diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)  
   
--   [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md)  
+-   [UML Etkinlik Diyagramları: Yönergeler](../modeling/uml-activity-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-activity-diagrams"></a>Özet: Etkinlik Şemalarının Gücü  
  Etkinlik diyagramları görselleştirmenize ve denetimi ve bir iş, sistem veya programa ait Eylemler arasındaki bilgi akışını açıklayan yardımcı olur. Diğer kişilerle iletişim kurarken iş akışını açıklamak için basit ve kullanışlı bir yolu budur.  
@@ -561,9 +559,9 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
  Bkz.  
   
--   [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)  
+-   [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)  
   
--   [UML Bileşen Diyagramları: yönergeler](../modeling/uml-component-diagrams-guidelines.md)  
+-   [UML Bileşen Diyagramları: Yönergeler](../modeling/uml-component-diagrams-guidelines.md)  
   
 #### <a name="drawing-a-component-diagram"></a>Bileşen diyagramı çizme  
  Bir bileşen diyagramı aşağıdaki önemli özelliklere sahiptir:  
@@ -582,9 +580,9 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
  Bkz.  
   
--   [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)  
+-   [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)  
   
--   [UML Bileşen Diyagramları: yönergeler](../modeling/uml-component-diagrams-guidelines.md)  
+-   [UML Bileşen Diyagramları: Yönergeler](../modeling/uml-component-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-component-diagrams"></a>Özet: Bileşen Şemalarının Gücü  
  Bileşen diyagramları görselleştirmenize yardımcı olur:  
@@ -689,9 +687,9 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
  Bkz.  
   
--   [UML sıralı diyagramlar: başvuru](../modeling/uml-sequence-diagrams-reference.md)  
+-   [UML Sıralı Diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)  
   
--   [UML sıralı diyagramlar: yönergeler](../modeling/uml-sequence-diagrams-guidelines.md)  
+-   [UML Sıralı Diyagramlar: Yönergeler](../modeling/uml-sequence-diagrams-guidelines.md)  
   
 -   [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)  
   
@@ -710,9 +708,9 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
  Bkz.  
   
--   [UML sıralı diyagramlar: başvuru](../modeling/uml-sequence-diagrams-reference.md)  
+-   [UML Sıralı Diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)  
   
--   [UML sıralı diyagramlar: yönergeler](../modeling/uml-sequence-diagrams-guidelines.md)  
+-   [UML Sıralı Diyagramlar: Yönergeler](../modeling/uml-sequence-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-sequence-diagrams"></a>Özet: Sıra Şemalarının Gücü  
  Sıralama diyagramları görselleştirmenize yardımcı olur:  
@@ -748,9 +746,9 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
  Bkz.  
   
--   [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)  
+-   [UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)  
   
--   [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md)  
+-   [UML Sınıf Diyagramları: Yönergeler](../modeling/uml-class-diagrams-guidelines.md)  
   
 #### <a name="drawing-a-class-diagram"></a>Sınıf diyagramı çizme  
  Bir sınıf diyagramı aşağıdaki önemli özelliklere sahiptir:  
@@ -787,9 +785,9 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
  Bkz.  
   
--   [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)  
+-   [UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)  
   
--   [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md)  
+-   [UML Sınıf Diyagramları: Yönergeler](../modeling/uml-class-diagrams-guidelines.md)  
   
 -   [Nasıl Yapılır: Projelere Sınıf Diyagramları Ekleme (Sınıf Tasarımcısı)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
@@ -865,9 +863,9 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
 -   [Kodunuz aracılığıyla katman diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)  
   
--   [Katman diyagramları: başvuru](../modeling/layer-diagrams-reference.md)  
+-   [Katman Diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)  
   
--   [Katman diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md)  
+-   [Katman Diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)  
   
 -   [Katman diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)  
   

@@ -1,7 +1,7 @@
 ---
 title: Klavye kısayolları ve değiştirici tuşlar blend'de | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba02644e3be4aeb5b9d6d1dced8e990065552eee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40970dbbffcb6f20fe605ac07a10ae359e300578
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694550"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283900"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Blend’de klavye kısayolları ve değiştirici tuşlar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [klavye kısayolları ve değiştirici tuşlar blend'de](https://docs.microsoft.com/visualstudio/designers/keyboard-shortcuts-and-modifier-keys-in-blend).  
-  
 Klavye kısayolları, bir tek klavye kısayolu birden çok fare düğmesi tıklama gerektiren bir eylem azaltarak çalışmanızı hızlandırabilirsiniz. Klavye kısayolları [!INCLUDE[blend_first](../includes/blend-first-md.md)] aşağıdaki iki kategoriye ayrılır:  
   
 -   **Erişim anahtarları** klavyede belirli bir tuşa basarak menü komutunu ya da bir alanda bir iletişim kutusu erişmek için erişim anahtarlarını kullanın. Erişim tuşları, şu anda seçili komut ya da iletişim kutusunda görünen alt çizgi tarafından tanımlanır.  

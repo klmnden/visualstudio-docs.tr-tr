@@ -1,7 +1,7 @@
 ---
 title: Veri uygulamaları Visual Studio'da genel bakış | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,12 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: fae912d438be42e874dd539ea78853c9039ebc90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6473608bb781ed9a9ca2e11b473e15e596be1db5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634364"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232810"
 ---
 # <a name="overview-of-data-applications-in-visual-studio"></a>Visual Studio'da Veri Uygulamalarına Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Bu bölümde, bilgi ve genellikle istemci ve orta katmanı hedefleyen Visual Stu
  [Veri erişimi hatalarında sorun giderme için ek kaynaklar](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
  Visual Studio'da veriyle çalışmak için ilgili forumlar için bağlantılar sağlar.  
   
- [Yükleme veritabanı sistemleri, araçları ve örnekleri](../data-tools/installing-database-systems-tools-and-samples.md)  
+ [Veritabanı sistemlerini, araçları ve örnekleri yükleme](../data-tools/installing-database-systems-tools-and-samples.md)  
  Örnek veritabanları indirmek için bağlantılar sağlar ve veri izlenecek yollarında örnek veritabanların kullanımı yapılandırma ile ilgili konuları listeler.  
   
  [Örnekler ve İzlenecek Yollar](../data-tools/data-applications-samples-and-walkthroughs.md)  
@@ -82,7 +82,7 @@ Bu bölümde, bilgi ve genellikle istemci ve orta katmanı hedefleyen Visual Stu
  [Verileri Kaydetme](../data-tools/saving-data.md)  
  Geçen, bağlantısı kesilmiş çalışma bellekte bulunan bağlantısız kayıt depolarıyla çalışırken dikkat edilmesi gereken sorunları açıklar.  
   
- [LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
+ [Visual Studio'daki LINQ to SQL Araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
  Nasıl oluşturulacağı hakkındaki konulara bağlantılar sağlar [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] sınıfları kullanarak [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
  [Hiyerarşik güncelleştirme](../data-tools/hierarchical-update.md)  

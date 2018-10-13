@@ -1,7 +1,7 @@
 ---
 title: Kural kümeleri kullanma Kod Analizi kurallarını gruplandırmak için | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ae7374ae6b713fe7fa1911cdcce3effa600482b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8af8cbc27a61369640a80dbccb4d99dd2466f3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687374"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220590"
 ---
 # <a name="using-rule-sets-to-group-code-analysis-rules"></a>Kod Çözümleme Kurallarını Gruplandırmak için Kural Kümeleri Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Kod Analizi kurallarını gruplandırmak için kural kümeleri kullanma](https://docs.microsoft.com/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules).  
-  
 Kod Analizi yapılandırdığınızda [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], veya [!INCLUDE[vsPro](../includes/vspro-md.md)], Microsoft yerleşik bir listeden seçebilirsiniz *kural kümeleri*. Bir kural kümesi, hedeflenen sorunları ve belirli koşullar belirleyen kod analizi kuralları mantıksal bir gruplandırmasıdır. Örneğin, kod genel kullanıma açık API'leri taramak için tasarlanmış bir kural kümesi uygulayabilirsiniz veya içeren yalnızca en az önerilen kurallar kural kümesi uygulayabilirsiniz. İçeren tüm kurallar kural kümesi de uygulayabilirsiniz.  
   
  Bir kural ekleme veya silme kuralları veya kuralları değiştirerek görünmesini kümesini özelleştirebilirsiniz **hata listesi** uyarıları veya hataları olarak penceresi. Özel kural kümeleri belirli geliştirme ortamınızı gereksinimini karşılayabilir. Kural kümesi sayfası, bir kural kümesi özelleştirdiğinizde, arama ve filtreleme süreçte yardımcı olacak araçlar sağlar.  

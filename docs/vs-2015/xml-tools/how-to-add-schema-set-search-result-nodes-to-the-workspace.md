@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: şema kümesi arama sonucu düğümlerini çalışma alanına ekleme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19157704019a949a4b2590ff277bcabd3bb320f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 75f254a8f64c3750a3c89e10016a0520d3760847
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693044"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210372"
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Nasıl yapılır: şema kümesi arama sonucu düğümlerini çalışma alanına ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: ekleme şema kümesi arama sonucu düğümlerini çalışma alanına](https://docs.microsoft.com/visualstudio/xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace).  
-  
   
 Bu konuda, çalışma alanındaki anahtar sözcük arama sonucu olarak, XML şema Gezgini içinde vurgulanmıştır düğümlerini ekleme açıklanmaktadır.  
   

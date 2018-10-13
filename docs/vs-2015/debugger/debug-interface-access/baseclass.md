@@ -1,7 +1,7 @@
 ---
 title: BaseClass | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c7fcff45c4d11a9ee7047222e9803ee9f1bdc58
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 86da35d23af05b318bcecf950064e5d8de23df0a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689543"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242092"
 ---
 # <a name="baseclass"></a>BaseClass
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [BaseClass](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/baseclass).  
-  
 Her temel sınıf için bir kullanıcı tanımlı tür (UDT) simgesi ile bir alt tarafından tanımlanmış bir `SymTagBaseClass` etiketi. [Idiasymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md) özelliği için temel alınan UDT simgesi içerir ve temel alınan UDT tüm özelliklerinin kullanılabilir bu BaseClass simgesi bir parçası olarak.  
   
 ## <a name="properties"></a>Özellikler  

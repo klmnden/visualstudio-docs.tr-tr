@@ -1,7 +1,7 @@
 ---
 title: Web denetim kitaplığı (yönetilen kod için) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bdc9c62699e905a2c7aaee106dcb9cba14ac312
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7e942fe6909d41ed5000f5e8a4f31f0de87cf9e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686465"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262537"
 ---
 # <a name="web-control-library-managed-code"></a>Web Kontrol Kitaplığı (Yönetilen Kod)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Web denetim kitaplığı (yönetilen kod)](https://docs.microsoft.com/visualstudio/debugger/web-control-library-managed-code).  
-  
 Web Denetim Kitaplığı proje şablonu, bir DLL oluşturur. Sınıf kitaplığının DLL olduğundan, doğrudan çalıştıramazsınız. Oluşturmalısınız bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] denetim katıştırır sayfası. Daha fazla bilgi için [Web denetim kitaplığı şablonu](http://msdn.microsoft.com/en-us/00666b07-71d2-4ace-a13c-cc130a3ce372).  
   
 ### <a name="to-debug-a-web-control-library-method-1"></a>Bir Web denetim kitaplığı (yöntemi 1) hata ayıklamak için  
@@ -59,7 +57,7 @@ Web Denetim Kitaplığı proje şablonu, bir DLL oluşturur. Sınıf kitaplığ�
 3.  Web denetim projesine bir başvuru ekleyin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ASP.NET Web uygulamaları](../debugger/debugging-preparation-aspnet-web-applications.md)
+ [ASP.NET Web Uygulamaları](../debugger/debugging-preparation-aspnet-web-applications.md)
 
 
 

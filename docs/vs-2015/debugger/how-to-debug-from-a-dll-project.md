@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: DLL projesinde hata ayıklama | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a3ab401c4631da22f2afc84d2e1ec763258fc42
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 965a68194241c5e93e1da5bc6a9ba3f46db17213
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694863"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254793"
 ---
 # <a name="how-to-debug-from-a-dll-project"></a>Nasıl Yapılır: DLL Projesinde Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: DLL projesinde hata ayıklama](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-from-a-dll-project).  
-  
 DLL projesinde hata ayıklamayı başlatmak için proje özelliklerinde çağıran uygulama belirtmeniz gerekir. C++ özellik sayfaları, düzeni ve içerikleri C# ve Visual Basic özellik sayfaları farklılık gösterir.  
   
  Yönetilen bir DLL'yi yerel kod tarafından çağrılır ve her ikisi de hata ayıklamak istiyorsanız, proje özelliklerinde belirtebilirsiniz. Daha fazla bilgi için [nasıl yapılır: karışık modda hata ayıklama](../debugger/how-to-debug-in-mixed-mode.md).  
@@ -80,7 +78,7 @@ DLL projesinde hata ayıklamayı başlatmak için proje özelliklerinde çağır
  [DLL projelerinde hata ayıklama](../debugger/debugging-dll-projects.md)   
  [Hata ayıklama yapılandırması proje ayarları C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Hata ayıklama yapılandırması proje ayarları bir Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [C++ hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+ [C++ Hata Ayıklama Yapılandırması Proje Ayarları](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 
 
 

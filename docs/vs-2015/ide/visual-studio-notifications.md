@@ -1,7 +1,7 @@
 ---
 title: Visual Studio bildirimleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea1ce5086b9afea272fefd68660d1ef2881bde22
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60d5ce504b9e4725035b662d0ccb6dd97b294e57
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695838"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274358"
 ---
 # <a name="visual-studio-notifications"></a>Visual Studio Bildirimleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Visual Studio bildirimleri](https://docs.microsoft.com/visualstudio/ide/visual-studio-notifications).  
-  
 Visual Studio'nun hangi çeşitli olayları için uyarıları uyarı sistemi vardır:  
   
 1.  Visual Studio içinde bir bileşen için bir güncelleştirme kullanılabilir  

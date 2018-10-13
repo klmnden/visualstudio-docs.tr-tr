@@ -1,7 +1,7 @@
 ---
 title: Hata ayıklayıcı genişletilebilirliği ile çalışmaya başlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f8f056ed8fff53eb166b37f2adba9daa17f12916
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 321c4790decb81d91ef57afe6bedffcd89a179e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689367"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304981"
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>Hata Ayıklayıcı Genişletilebilirliği ile Çalışmaya Başlama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [hata ayıklayıcı genişletilebilirliği ile çalışmaya başlama](https://docs.microsoft.com/visualstudio/extensibility/debugger/getting-started-with-debugger-extensibility).  
-  
 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] Oluşturma ve hata ayıklama bileşenlerinin içinden programlarda hata ayıklamak için kullanılan özelleştirme için gereken bilgileri sağlar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ortam.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hata ayıklama geliştirmeleri önceki üzerinde gerçekleştirilen test kapsamlı kullanılabilirlik türetilen ekledi [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hata ayıklayıcıları. Kullanabileceğiniz [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] çok dilli uygulama veya boyunca adım adım hata ayıklama uygulayabilirsiniz uygulamalar ve çok dilli çözümler hata ayıklama sırasında değişkenler üzerinde halindeyken düzenleme.  

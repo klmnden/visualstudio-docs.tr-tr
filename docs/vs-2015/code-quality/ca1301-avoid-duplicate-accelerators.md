@@ -1,7 +1,7 @@
 ---
 title: 'CA1301: Yinelenen hızlandırıcılardan kaçının | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0212aaa6e415e0a7f46d481e2de684c0660225c3
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e0a7f821f11a86b0ce9bf12708df483a6ae071a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901244"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233252"
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Yinelenen hızlandırıcılardan kaçının
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA1301: Yinelenen hızlandırıcılardan kaçının](https://docs.microsoft.com/visualstudio/code-quality/ca1301-avoid-duplicate-accelerators).
-
 |||
 |-|-|
 |TypeName|AvoidDuplicateAccelerators|

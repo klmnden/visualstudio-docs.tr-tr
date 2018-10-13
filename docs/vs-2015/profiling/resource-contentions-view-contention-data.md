@@ -1,7 +1,7 @@
 ---
 title: Kaynak çekişmeleri görünümü - çakışma verileri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3f18cf1131e61ba88832d59e0e77f462c088bec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c6db867b582c4d1f5b0722d085e8a2eac48d182f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689795"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253025"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Kaynak Çakışmaları Görünümü - Çakışma Verileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [kaynak çekişmeleri görünümü - çakışma verileri](https://docs.microsoft.com/visualstudio/profiling/resource-contentions-view-contention-data).  
-  
 Çekişme olayları kaynağı olan kaynaklar için Çekişme verisi kaynak çakışması görünümü listeler. Bir iş parçacığında bir işlev kaynağa erişim için başka bir iş parçacığı bir işlevde kaynağına özel erişim aldığından beklenecek zorlanır Çekişme olayı oluşur. Her kaynak Çekişme olayıyla sonuçlandı işlevi yürütme yollarını görüntüler bir çağrı ağacı kök düğümüdür.  
   
 ## <a name="data-values"></a>Veri değerleri  

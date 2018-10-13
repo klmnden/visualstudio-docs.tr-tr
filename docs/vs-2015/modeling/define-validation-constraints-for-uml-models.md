@@ -1,7 +1,7 @@
 ---
 title: UML modelleri için doğrulama kısıtlamaları tanımlama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1caf688f6ecc84413d3bdb86c1c1825241aa5ba3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6f2b97f2b7f3db141bbbbe17d5cf1ab63212be81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775611"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176546"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>UML modelleri için doğrulama kısıtlamaları tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [UML modelleri için doğrulama kısıtlamaları tanımlama](https://docs.microsoft.com/visualstudio/modeling/define-validation-constraints-for-uml-models).  
-  
 Modelin belirttiğiniz koşulu karşılayıp karşılamadığını test eden doğrulama kısıtlamalarını tanımlayabilirsiniz. Örneğin, kullanıcının kalıtım ilişkileri döngüsünü oluşturmadığından emin olmak için bir kısıtlama tanımlayabilirsiniz. Kullanıcı açmanız veya kaydetmeniz model dener ve ayrıca el ile çağrılabilir kısıtlaması çağrılır. Eğer kısıtlama başarısız olursa, tanımladığınız bir hata iletisi hata penceresine eklenir. Bu kısıtlamalar bir Visual Studio Tümleştirme Uzantısı'na paketini ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) ve diğer Visual Studio kullanıcılarına dağıtabilirsiniz.  
   
  Ayrıca, modeli veritabanları gibi dış kaynaklara karşı doğrulama kısıtlamalarını tanımlayabilirsiniz. Program kodunu katman diyagramına karşı doğrulamak istiyorsanız, bkz. [katman diyagramlarına özel mimari doğrulaması ekleme](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  

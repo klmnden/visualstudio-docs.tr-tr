@@ -1,7 +1,7 @@
 ---
 title: MSBuild görevleri belirli Visual C++ | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: af8de092a21f0e37dc523b6a8604c3c55316c6db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1da9bdb5c181c9fd935987d629f08af1505f0501
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632972"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246161"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Visual C++'ye Özgü MSBuild Görevleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [MSBuild görevleri belirli Visual c++](https://docs.microsoft.com/visualstudio/msbuild/msbuild-tasks-specific-to-visual-cpp).  
-  
   
 Görevler, derleme işlemi sırasında çalışan kodu sağlar. Visual C++ yüklü olduğunda, aşağıdaki görevleri ile birlikte yüklenen listelenenlere kullanılabilir [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Daha fazla bilgi için [MSBuild (Visual C++) genel bakış](http://msdn.microsoft.com/library/dd258f6f-ab51-48d9-b274-f7ba911d05ca).  
   
@@ -60,7 +58,7 @@ Görevler, derleme işlemi sırasında çalışan kodu sağlar. Visual C++ yükl
 |[XDCMake Görevi](../msbuild/xdcmake-task.md)|XML belge açıklaması (.xdc) dosyaları bir .xml dosyasına birleştirir XML belgelendirme Aracı (xdcmake.exe'yi) sarmalar.|  
 |[XSD Görevi](../msbuild/xsd-task.md)|Bir kaynaktan şema ya da sınıf dosyaları oluşturur XML şema tanımı Aracı (XSD.exe'nin) sarmalar.|  
 |[MSBuild Başvurusu](../msbuild/msbuild-reference.md)|MSBuild sistemi öğeleri açıklar.|  
-|[Görevleri](../msbuild/msbuild-tasks.md)|Bir yapı oluşturmak için birleştirilebilir kod birimleri olan görevleri açıklar.|  
+|[Görevler](../msbuild/msbuild-tasks.md)|Bir yapı oluşturmak için birleştirilebilir kod birimleri olan görevleri açıklar.|  
 |[Görev Yazma](../msbuild/task-writing.md)|Bir görevin nasıl oluşturulacağını açıklar.|
 
 

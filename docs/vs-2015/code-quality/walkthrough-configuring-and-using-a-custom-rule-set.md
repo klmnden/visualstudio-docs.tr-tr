@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: Yapılandırma ve kullanma özel bir kural kümesi | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b17767f6bb0f8b72b9c06e2870146f6b037a7ca7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5410127cd94bc8e43de4fec82597686d4c11805
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631853"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221643"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>İzlenecek Yol: Özel bir Kural Kümesini Yapılandırma ve Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [izlenecek yol: yapılandırma ve bir özel kural kümesi kullanma](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-configuring-and-using-a-custom-rule-set).  
-  
 Bu izlenecek yol, özelleştirilmiş kullanmak üzere yapılandırıldıklarını Kod Analizi araçları nasıl kullanacağınızı gösterir *kural kümesi* üzerinde bir sınıf kitaplığı. Eski kod bölünemez şekilde düzeltilen sorunlar için tarama gibi belirli bir gereksinimi karşılamak için alternatif bir kural kümeleri seçimi yapabilir veya çözümünüz için belirtilen proje türü için ilişkili bir kural kümesini seçebilirsiniz. Her iki durumda da kural kümelerini de bunları proje gereksinimlerinizi ince özelleştirilebilir.  
   
  Bu izlenecek yolda, bu işlemleri adım:  

@@ -1,7 +1,7 @@
 ---
 title: Yazı tipleri ve renkler kullanarak | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,36 +19,34 @@ ms.assetid: d1a9b99f-fbdc-45ed-920a-e08c3d931ac9
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6db4f030a3367a5fd2fb449b3515643fe6cd6033
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6ed3c7a67ca8463c2afef38fc39e28e3d81fd58
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634208"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245981"
 ---
 # <a name="using-fonts-and-colors"></a>Yazı tipleri ve renkler kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [kullanarak yazı tipleri ve renkler](https://docs.microsoft.com/visualstudio/extensibility/using-fonts-and-colors).  
-  
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Metni görüntülemek için yazı tiplerini ve renklerini kullanma desteği sağlar.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Yazı tipi ve renk genel bakış](../extensibility/font-and-color-overview.md)  
+ [Yazı Tipi ve Renklere Genel Bakış](../extensibility/font-and-color-overview.md)  
  Metin yazı tipi ve renk ayarları açıklanır [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tümleşik geliştirme ortamı (IDE). Ayrıca kategorileri ve görüntü öğeleri kavramlar tanıtılır ve VSPackages ve çekirdek düzenleyici metin özniteliklerini kullanımını açıklar.  
   
- [Yazı tipi ve metin renklendirmesi için renk bilgilerini alma](../extensibility/getting-font-and-color-information-for-text-colorization.md)  
+ [Metin Renklendirme İçin Yazı Tipi ve Renk Bilgilerini Alma](../extensibility/getting-font-and-color-information-for-text-colorization.md)  
  Metin renklendirmesi yönetme Vspackage'larda uygulamak için kılavuz bilgiler verilmektedir **kategorileri** dışında **metin düzenleyici**.  
   
- [Saklı yazı tipi ve renk ayarlarını erişme](../extensibility/accessing-stored-font-and-color-settings.md)  
+ [Depolanan Yazı Tipi ve Renk Ayarlarına Erişme](../extensibility/accessing-stored-font-and-color-settings.md)  
  Açıklar nasıl geçerli yazı tipi ve renk ayarları depolanan, alınan ve uygulanır.  
   
- [Uygulama özel kategoriler ve öğeleri görüntüleme](../extensibility/implementing-custom-categories-and-display-items.md)  
+ [Özel Kategoriler ve Görüntüleme Öğeleri Uygulama](../extensibility/implementing-custom-categories-and-display-items.md)  
  Bir pencere oluşturabilir ve kullanmak, kendi temel adımlar açıklanmıştır **öğeleri görüntüle** ve **kategorileri** metin görüntülenmesini desteklemek için.  
   
  VSPackage'ı uygulamak bu yaklaşım gerektirir <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> ve ilgili arabirim.  
   
- [Nasıl yapılır: yerleşik yazı tipi ve renk şeması erişim](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
+ [Nasıl Yapılır: Yerleşik Yazı Tipi ve Renk Şemasına Erişme](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
  Tanımlamak ve bir kategori yerleşik yazı tipleri ve renkler kullanarak kaydetmek ve sistem tarafından sağlanan yazı tipleri ve renkler kullanımı başlatmak nasıl ele alınmaktadır.  
   
 ## <a name="reference"></a>Başvuru  

@@ -1,7 +1,7 @@
 ---
 title: Nesne ömrü görünümü | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3aaff07ecc6732403ef1d611cb23129207a27351
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a503a0de6a8b9935fbfb6b7e415d79cb0520f67d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630420"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202858"
 ---
 # <a name="object-lifetime-view"></a>Nesne Ömrü Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nesne ömrü görünümü](https://docs.microsoft.com/visualstudio/profiling/object-lifetime-view).  
-  
 Nesne ömrü görünümü kullanılabilir **ayrıca .NET nesnesi ömür verileri toplayın** performans oturumu özellikleri sayfasında denetlenir.  
   
  Çöp toplayıcı, [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ayrılmasını ve uygulamanız için bellek serbest yönetir. Atık toplayıcının performansını optimize etmek için, yönetilen yığın üç nesle ayrılır: 0, 1 ve 2. Yeni nesneler, çalışma zamanının atık toplayıcı nesil 0 depolar. Sonra varlığını sürdüren nesneler yükseltilerek ve depolanan nesil 1 ve 2.  
@@ -82,7 +80,7 @@ Nesne ömrü görünümü kullanılabilir **ayrıca .NET nesnesi ömür verileri
 |**Büyük nesne yığını toplanan bayt**|Bu tür örnekleri, büyük nesne yığını içinde bulunan ve profil oluşturma çalışmasında toplanan bayt cinsinden boyutu.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [.NET bellek verisi görünümleri](../profiling/dotnet-memory-data-views.md)
+ [.NET Bellek Verisi Görünümleri](../profiling/dotnet-memory-data-views.md)
 
 
 

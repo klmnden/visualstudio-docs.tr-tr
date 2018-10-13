@@ -1,7 +1,7 @@
 ---
 title: Derleme ve Visual Studio'da oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ec3a74d911a32d7e7f869ee099c70914cafe9a08
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 65fbe40a3609b0729bdc376196940f2adb670a2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691821"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229235"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Derleme ve Visual Studio'da oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [derleme ve Visual Studio'da oluşturma](https://docs.microsoft.com/visualstudio/ide/compiling-and-building-in-visual-studio).  
-  
 Visual Studio, uygulamalar ve derlemeler ve yürütülebilir programlar sık aralıklarla geliştirme döngüsü sırasında oluşturmak için kullanabilirsiniz. Kodunuzu genellikle oluşturarak, derleme zamanı hataları, sözdizimi yanlış yazılmış anahtar sözcükleri ve tür uyumsuzluklarına gibi daha önce belirleyebilirsiniz. Ayrıca, algılamak ve sık oluşturma ve kod hata ayıklama sürümlerini çalıştıran mantık hataları ve anlamsal hataları gibi çalışma zamanı hataları düzeltin.  
   
  Tam olarak geliştirilen ve yeterince bir proje veya çözüm hata ayıklama bileşenleri derleme derleyebilirsiniz. Varsayılan olarak, bir yayın yapısı en iyi duruma getirilmiş ve hata ayıklama sürümünden daha küçük ve daha hızlı çalışır olacak şekilde tasarlanır. Daha fazla bilgi için [izlenecek yol: uygulama oluşturma](../ide/walkthrough-building-an-application.md).  

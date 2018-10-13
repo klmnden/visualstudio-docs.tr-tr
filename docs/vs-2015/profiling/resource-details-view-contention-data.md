@@ -1,7 +1,7 @@
 ---
 title: Kaynak Ayrıntıları görünümü - çakışma verileri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 760240544971062da3a5161eab7d203ba6d097c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a99cce1d78c91ce2300e30127d0e5375d2cc1b1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630885"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203729"
 ---
 # <a name="resource-details-view---contention-data"></a>Kaynak Ayrıntıları Görünümü - Çakışma Verileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Kaynak Ayrıntıları görünümü - çakışma verileri](https://docs.microsoft.com/visualstudio/profiling/resource-details-view-contention-data).  
-  
 Kaynak Ayrıntıları görünümü çakışması tarafından seçilen bir kaynak üzerinde kaynaklanan engelleme olayların bir zaman çizelgesi grafiği gösterir. Bir iş parçacığı başka bir iş parçacığının kaynağa erişim kilitlediği için yürütmeyi askıya almak zorunda engelleyen bir olayı oluşur.  
   
  Bu görünüm, yatay bir çubuk olarak her bir iş parçacığı yürütme zaman çizelgesi temsil eder ve iş parçacığı zaman çizelgesi üzerinde dikey bir çubuk olarak her engelleyen bir olayı temsil eder. Gerekli olduğunda olayları tek tek görüntülemek için zaman çizelgesinin bir bölümü büyütebilirsiniz. Olaya yol açan işlevlerin yürütme yolu (çağrı yığınını) görüntülemek için olay Çubuğu'nu tıklatın. İşlevleri görünür **çağrı yığını** penceresi. Bir işlev için kaynak kodu kullanılabilir duruma geldiğinde arabirimdeki kaynak dosyayı düzenlemek için işlev adını tıklayabilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

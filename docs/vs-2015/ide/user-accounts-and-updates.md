@@ -1,7 +1,7 @@
 ---
 title: Kullanıcı hesapları ve güncelleştirmeler | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e3547d2084fe8644b099bac96c8b6b772e16e1e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 76f1e52ed548cdca5bd2e910023e4371fdc87e1f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686616"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222435"
 ---
 # <a name="user-accounts-and-updates"></a>Kullanıcı Hesapları ve Güncelleştirmeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [kullanıcı hesapları ve güncelleştirmeler](https://docs.microsoft.com/visualstudio/ide/user-accounts-and-updates).  
-  
 Visual Studio'nun kendisine bağlı bir ortamdır. Oturum açma tarafından bu hesaba bağlı tüm hesaplarının yanı sıra, kullanıcı hesabı ile ilişkili tüm hizmetlere erişim sağlar. Visual Studio kullandığınız her yerde hesap ayarlarınız sizinle birlikte Dolaşımda olur. Bireysel kullanıcılar için belirli bir Visual Studio örneğinde izin düzeylerinin yapılandırabilirsiniz. Ayrıca, Visual Studio yüklemenizin bir SDK'sı gibi herhangi bir bileşeni sahip bir güncelleştirme kullanılabilir olduğunda bildirir.  
   
 ## <a name="in-this-section"></a>Bu bölümde  

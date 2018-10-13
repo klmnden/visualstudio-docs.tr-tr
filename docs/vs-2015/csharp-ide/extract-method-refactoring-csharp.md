@@ -1,7 +1,7 @@
 ---
 title: Ayıklama yöntemi yeniden düzenlemesi (C#) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,12 +21,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7aaa6570382fe296cc58f3d41d451250eafe6537
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc05da79676beed5fa698f11843a6b7485280e71
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696025"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228066"
 ---
 # <a name="extract-method-refactoring-c"></a>Ayıklama Yöntemi Yeniden Düzenlemesi (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -130,4 +130,4 @@ class Program
  Bu durumu çözmek için sınıf anonim yöntem alanları kullanılan yerel değişkenler olun.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yeniden düzenlemesi (C#)](../csharp-ide/refactoring-csharp.md)
+ [Yeniden Düzenleme (C#)](../csharp-ide/refactoring-csharp.md)

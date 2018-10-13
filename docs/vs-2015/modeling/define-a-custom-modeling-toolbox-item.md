@@ -1,7 +1,7 @@
 ---
 title: Özel tanımlama Modelleme araç kutusu öğesi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 33
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bd2d7ff2b31e8975574cb6b2780a352faa1cd663
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 994bb8dfd047320ac0ea4a0d63260f19a2c3d45c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683812"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252375"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Özel bir modelleme araç kutusu öğesi tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [tanımlayan özel bir modelleme araç kutusu öğesi](https://docs.microsoft.com/visualstudio/modeling/define-a-custom-modeling-toolbox-item).  
-  
 Bir öğe veya sık kullandığınız bir desene göre öğeler grubu oluşturmayı kolaylaştırmak için yeni araçları modelleme diyagramları Visual Studio araç kutusu ekleyebilirsiniz. Bu araç kutusu öğelerini, diğer Visual Studio kullanıcılarına dağıtabilirsiniz.  
   
  Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

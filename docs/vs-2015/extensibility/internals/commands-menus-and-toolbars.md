@@ -1,7 +1,7 @@
 ---
 title: Komutlar, menüler ve araç çubukları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e99669e5790d30cf9d290e7d0411b6caff047265
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d5105686e4b29568cb551cf617a851a595fb197
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630884"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173803"
 ---
 # <a name="commands-menus-and-toolbars"></a>Komutlar, Menüler ve Araç Çubukları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [komutlar, menüler ve araç çubukları](https://docs.microsoft.com/visualstudio/extensibility/internals/commands-menus-and-toolbars).  
-  
 Menüleri ve araç çubuklarını, VSPackage komutlarında kullanıcıların erişimi olan. Yazdırma, bir görünümü yenileme veya yeni bir dosya oluşturmak gibi görevleri gerçekleştirmek işlevleri komutlardır. Menüleri ve araç çubuklarını komutlarınızı sunmak için uygun grafik yöntemlerdir. Genellikle, ilgili komutları birlikte aynı menü veya araç çubuğunda kümelenir.  
   
 -   Menüleri, genellikle bir satırda tümleşik geliştirme ortamı (IDE) veya bir araç penceresinin üst kısmındaki kümelenmiş Tek sözcüklü dizeler olarak görüntülenir. Menüler ayrıca sağ tıklama olay sonucu olarak görüntülenir ve bu bağlamda kısayol menüleri olarak adlandırılır. Tıklandığında, menüler, bir veya daha fazla komut görüntülemek için genişletin. Tıklandığında, komutları, görevleri gerçekleştirmek veya ek komutlar içeren alt menüler başlatın. Bazı iyi bilinen menü adları, dosya, düzenleme, görüntüleme ve pencere ' dir. Daha fazla bilgi için [genişletme menüler ve komutlar](../../extensibility/extending-menus-and-commands.md).  
