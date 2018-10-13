@@ -1,7 +1,7 @@
 ---
 title: Windows Installer temel bilgileri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a15d47971a7f500d1f709dfb248838f84065f21
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 281dfa7a8c671923dd64eb8ecaee0629d4b8e224
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683607"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223060"
 ---
 # <a name="windows-installer-basics"></a>Temel Windows Installer Bilgileri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Windows Installer Temelleri](https://docs.microsoft.com/visualstudio/extensibility/internals/windows-installer-basics).  
-  
 Windows Installer yükler ve uygulamalar veya yazılım ürünlerinin bir kullanıcının bilgisayarında Windows Yükleyici bileşenlerini (bazen WICs veya yalnızca bileşenleri olarak adlandırılır) olarak adlandırılan birimler içinde bu görevleri gerçekleştirmeye kaldırır. Bir GUID, yükleme ve başvuru sayımı Windows Installer kullanarak ayarları için temel birimdir her WIC tanımlar.  
   
  Windows Installer'ın kapsamlı belgeler için Platform SDK'sı, konusuna [Windows Installer](http://msdn.microsoft.com/library/aa372866.aspx).  

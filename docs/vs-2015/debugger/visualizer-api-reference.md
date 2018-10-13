@@ -1,7 +1,7 @@
 ---
 title: Görselleştirici API Başvurusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ab8b56cb8eea3424d03292d761816c7b7ac9fb4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 849b8d93722f7ca70ba161b297449dc33cfd1acc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687883"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206355"
 ---
 # <a name="visualizer-api-reference"></a>Görselleştirici API Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Görselleştirici API Başvurusu](https://docs.microsoft.com/visualstudio/debugger/visualizer-api-reference).  
-  
 Görselleştirici API'leri için Visual Studio hata ayıklayıcı Görselleştirici yazma isteyen kullanıcılar için sağlanır. Görselleştirici kullanıcı arabirimi Visual Studio hata ayıklayıcısını işlevselliğini genişleten küçük bir uygulamadır. Görselleştirici görüntüleyebilir (ve, isteğe bağlı olarak, Düzenle) görselleştiricisi için tasarlanmış belirli bir türün veri nesnesi.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
@@ -52,7 +50,7 @@ Görselleştirici API'leri için Visual Studio hata ayıklayıcı Görselleştir
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: Görselleştiriciyi C# ' de yazma](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
  [Nasıl yapılır: Görselleştirici yazma](../debugger/how-to-write-a-visualizer.md)   
- [Özel Görselleştiriciler oluşturma](../debugger/create-custom-visualizers-of-data.md)
+ [Özel Görselleştirici Oluşturma](../debugger/create-custom-visualizers-of-data.md)
 
 
 

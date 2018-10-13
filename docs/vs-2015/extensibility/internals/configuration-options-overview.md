@@ -1,7 +1,7 @@
 ---
 title: Yapılandırma seçenekleri, genel bakış | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 85fa1b9d19beca6bd879d98bc7a24af0fd5756c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4778fd01dde3f08bcc76cd6fc5dd5814f2bc913b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631036"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294300"
 ---
 # <a name="configuration-options-overview"></a>Yapılandırma Seçeneklerine Genel Bakış
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yapılandırma seçeneklerine genel bakış](https://docs.microsoft.com/visualstudio/extensibility/internals/configuration-options-overview).  
-  
 Projelerinde [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] oluşturulabilir, hatası ayıklanmış, çalıştırma ve/veya dağıtılan birden fazla yapılandırmaları destekler. Açıklanan özellikler, genellikle derleyici anahtarları ve dosya konumlarını adlandırılmış kümesi ile bir yapı türünü bir yapılandırmadır. Varsayılan olarak, yeni çözümleri iki yapılandırma, hata ayıklama ve yayın içerir. Bu yapılandırmalar, kendi varsayılan ayarları kullanarak veya değiştirilmiş çözüm veya proje belirli gereksinimlerinizi karşılamak için uygulanabilir. Bazı paketler iki şekilde oluşturulabilir: yerinde bileşeni olarak veya bir ActiveX Düzenleyici. Projeleri birden çok yapılandırmada ancak destek gerekmez. Kullanılabilir tek yapılandırması varsa, bu yapılandırma tüm çözüm yapılandırmaları eşlenir.  
   
  Yapılandırmaları, genellikle iki bölümden oluşur: platform ayarları ve yapılandırma adı (gibi hata ayıklama veya sürüm). Bir yapılandırmasının platform adı gibi bir API configuration hedefleri ayarlanan ortam veya işletim sistemi platformunu tanımlar. Kullanıcıları [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bir platform; oluşturulamıyor seçimlerden VSPackage sağlayan bir proje seçmelisiniz. Bir kullanıcı yüklemelerini bir VSPackage'ı paket geliştirme sırasında oluşturulan teslim platformu istenen herhangi bir platform adı ne zaman ortaya çıkabilir paket Oluşturucu tarafından ayarlanmış herhangi ölçütlere göre. Kullanıcı, ardından özellik sayfaları örnek oluşturulduğunda VSPackage'ı kullanılabilir platformlar listesinden seçebilirsiniz.  

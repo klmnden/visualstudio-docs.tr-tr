@@ -1,7 +1,7 @@
 ---
 title: '7. adım: Formunuza iletişim kutusu bileşenleri ekleme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1b6f819495cd6787398fadf414bcfebb2c3eefec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca17a6958a3c66054b89fc65c30bf397c4e6b821
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686419"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192952"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>7. Adım: Formunuza İletişim Kutusu Bileşenleri Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [7. adım: bilgisayarınızı forma Ekle iletişim kutusu bileşenleri](https://docs.microsoft.com/visualstudio/ide/step-7-add-dialog-components-to-your-form).  
-  
 Programınızın resim dosyalarınızı açmasını ve bu adımda, bir arka plan rengini seçin etkinleştirmek için bir **OpenFileDialog** bileşeni ve bir **ColorDialog** formunuza bileşen.  
   
  Bazı açılardan denetim gibi bir bileşenidir. Formunuza bir bileşen eklemek için araç kutusunu kullanın ve kullanarak onun özelliklerini ayarlarsınız **özellikleri** penceresi. Ancak denetimden farklı olarak formunuza bir bileşen eklemek, kullanıcının formda görebileceği görünür bir öğe eklemez. Bunun yerine, kod ile tetikleyebileceğiniz belirli davranışlar sağlar. Açılır bir bileşendir bir **açık dosya** iletişim kutusu.  

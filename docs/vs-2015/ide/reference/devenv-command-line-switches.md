@@ -1,7 +1,7 @@
 ---
 title: Devenv komut satırı anahtarları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 459ab16b30882feb3d167d7668ffd660e6490cf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ee1596cf59fb4ba9b21772cdabc0c875ef8779a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694392"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215040"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv Komut Satırı Anahtarları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Devenv komut satırı anahtarları](https://docs.microsoft.com/visualstudio/ide/reference/devenv-command-line-switches).  
-  
   
 Devenv, tümleşik geliştirme ortamı (IDE) için çeşitli seçenekleri de derleme, hata ayıklama ve projeleri, komut satırından dağıtma olanak tanır. Bu anahtarlar, IDE bir betik veya .bat dosyası, örneğin, Gecelik Yapı betiği çalıştırmak için veya belirli bir yapılandırmada IDE başlatmak için kullanın.  
   
@@ -99,7 +97,7 @@ Devenv, tümleşik geliştirme ortamı (IDE) için çeşitli seçenekleri de der
 |[/ Derleme (devenv.exe)](../../ide/reference/build-devenv-exe.md)|Belirtilen çözüm veya projeyi yapılandırmasına göre belirtilen çözümü derler.<br /><br /> **Myproj.csproj. / Build Devenv**|  
 |[/ Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)|Kaynak dosyaları etkilemeden oluşturma komutu tarafından oluşturulan tüm dosyaları siler.<br /><br /> **Devenv myproj.csproj / Temizle**|  
 |[/ (Devenv.exe) dağıtma](../../ide/reference/deploy-devenv-exe.md)|Çözümleri yapılandırmasına bir dağıtım için gerekli dosyaları ile birlikte çözümü derler.<br /><br /> **Devenv myproj.csproj / dağıtma**|  
-|[/ Diff](../../ide/reference/diff.md)|İki dosyayı karşılaştırır.  Dört parametreleri: Kaynakdosya, Hedefdosya, SourceDisplayName(optional),TargetDisplayName(optional) alır.|  
+|[/Diff](../../ide/reference/diff.md)|İki dosyayı karşılaştırır.  Dört parametreleri: Kaynakdosya, Hedefdosya, SourceDisplayName(optional),TargetDisplayName(optional) alır.|  
 |[/ Installvstemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md)|Bulunan proje veya öğe şablonları kaydeder  *\<VisualStudioInstallDir >* \Common7\IDE\ProjectTemplates veya  *\<VisualStudioInstallDir >* \Common7 \IDE\ItemTemplates aracılığıyla erişilebilir olacak şekilde **yeni proje** ve **Yeni Öğe Ekle** iletişim kutuları.<br /><br /> **Devenv /InstallVSTemplates**|  
 |[/ (Devenv.exe out)](../../ide/reference/out-devenv-exe.md)|Oluşturma sırasında hatalar almak için bir dosya belirtmenizi sağlar.<br /><br /> **Myproj.csproj. / Build Devenv/out log.txt**|  
 |[/ Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)|Projeyi oluşturmak için temizlemek veya dağıtmak. Yalnızca / Build ayrıca sağladıysanız bu anahtarı kullanabilirsiniz. / rebuild, / clean veya / deploy anahtarı.|  
@@ -110,7 +108,7 @@ Devenv, tümleşik geliştirme ortamı (IDE) için çeşitli seçenekleri de der
 |[/ Yükseltme (devenv.exe)](../../ide/reference/upgrade-devenv-exe.md)|Belirtilen çözüm dosyasını ve tüm proje dosyaları ya da belirtilen proje dosyası, geçerli yükseltme [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bu dosyaların biçimleri.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel, ortam, Seçenekler iletişim kutusu](../../ide/reference/general-environment-options-dialog-box.md)
+ [Genel, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/general-environment-options-dialog-box.md)
 
 
 

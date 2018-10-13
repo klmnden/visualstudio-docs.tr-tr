@@ -1,7 +1,7 @@
 ---
 title: Assembly öğesi (Visual Studio Şablon Sihirbazı uzantısı) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 0c3dc280-1753-4ea2-a13c-d31d13b935b2
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0c2314bfebcfd86b4df96e43bf7e3e798de731c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3e4f5b57a94043b702d5b85c13745ec298e20c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687343"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224542"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly Öğesi (Visual Studio Şablon Sihirbazı Uzantısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Assembly öğesi (Visual Studio Şablon Sihirbazı uzantısı)](https://docs.microsoft.com/visualstudio/extensibility/assembly-element-visual-studio-template-wizard-extension).  
-  
 Adını veya uygulayan derleme güçlü adını belirtir `IWizard` arabirimi.  
   
  \<VSTemplate >  
@@ -60,7 +58,7 @@ Adını veya uygulayan derleme güçlü adını belirtir `IWizard` arabirimi.
 ## <a name="text-value"></a>Metin Değeri  
  Bir metin değeri gereklidir.  
   
- Bu metin uygulayan derlemeye belirtir `IWizard` arabirimi. Bu bütünleştirilmiş kod adı bir tam derleme adı belirtilmelidir. Örneğin, `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.  
+ Bu metin uygulayan derlemeye belirtir `IWizard` arabirimi. Bu bütünleştirilmiş kod adı bir tam derleme adı belirtilmelidir. Örneğin: `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`  
   
 ## <a name="remarks"></a>Açıklamalar  
  `Assembly` gerekli alt öğesi olan `WizardExtension`.  

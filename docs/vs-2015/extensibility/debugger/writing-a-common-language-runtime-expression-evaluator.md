@@ -1,7 +1,7 @@
 ---
 title: Bir ortak dil çalışma zamanı ifade değerlendiricisi yazma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: bd79d57f-8e0a-4e14-a417-0b1de28fa1b2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6917a4ad5936792e309b5b14abbc862ca6bd5654
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9369baecc160c662244fc0256f6ac06c36b2822c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695887"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244302"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>Ortak Dil Çalışma Zamanı İfade Değerlendiricisi Yazma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bir ortak dil çalışma zamanı ifade değerlendiricisi yazma](https://docs.microsoft.com/visualstudio/extensibility/debugger/writing-a-common-language-runtime-expression-evaluator).  
-  
 > [!IMPORTANT]
 >  Visual Studio 2015'te, bu şekilde ifade değerlendiricisi uygulama kullanım dışı bırakılmıştır. CLR ifade değerlendiricisi uygulama hakkında daha fazla bilgi için lütfen bkz [CLR ifade Değerlendiricilerini](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) ve [yönetilen ifade değerlendiricisi örnek](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   

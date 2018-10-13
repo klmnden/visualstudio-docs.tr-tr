@@ -1,7 +1,7 @@
 ---
 title: Düzenle ve devam et hata iletisi iletişim kutusu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d649df9584fc06ee08b7a7d1e846597c12519019
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b6252fbaf67a9a5b4173c0fee3f65607e9cc462
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675006"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227246"
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>Düzenle ve Devam Et Hata İletisi İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Düzenle ve devam et hata iletisi iletişim kutusu](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-error-message-dialog-box).  
-  
 Düzenle ve devam et, destekleyen bir dilde hata ayıklaması yapıyorsanız, bu iletişim kutusu görüntülenir ancak **Düzenle ve devam et** yapmış olduğunuz değişiklikleri kod türü için kullanılabilir değil. Hata iletisi kutu içinde daha ayrıntılı bir açıklama sağlar. Bu iletişim kutusunu dahil görmek için olası nedenler:  
   
 -   Yönetilemeyen hata ayıklama etkinleştirildiğinde, yönetilen kod düzenleme denedi. Düzenle ve devam et seçenekleri çalışmaz karışık mod hata ayıklama ile.  

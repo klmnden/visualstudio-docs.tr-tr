@@ -1,7 +1,7 @@
 ---
 title: N katmanlı veri uygulamalarına genel bakış | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 761002eb9e46ec0e344c653affbebb10b3922466
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 912752c39d8180f7f3cd5dc0cca719e39e39a0e8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697167"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171970"
 ---
 # <a name="n-tier-data-applications-overview"></a>N Katmanlı Veri Uygulamalarına Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [N katmanlı veri uygulamalarına genel bakış](https://docs.microsoft.com/visualstudio/data-tools/n-tier-data-applications-overview).  
-  
   
 N-katmanı * veri uygulamaları, birden çok ayrılmış veri uygulama *katmanları*. "Dağıtılmış uygulamalar" ve "çok katmanlı uygulamalar" olarak da bilinir, n katmanlı uygulamalar, istemci ve sunucu arasında dağıtılan farklı katmanlara bir işlem ayırın. Verilere erişen uygulamalar geliştirirken, uygulamayı oluşturan çeşitli katmanları arasında NET bir ayrım olmalıdır.  
   
@@ -91,7 +89,7 @@ Veri katmanı
   
  [Veri kümeleri ile TableAdapter’ları farklı projelere ayırma](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
   
- [İzlenecek yol: bir N katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
+ [İzlenecek Yol: N Katmanlı Bir Veri Uygulaması Oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
   
  [İzlenecek yol: Bir N katmanlı bir veri uygulamasına doğrulama ekleme](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
   

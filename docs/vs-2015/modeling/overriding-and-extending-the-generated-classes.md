@@ -1,7 +1,7 @@
 ---
 title: Geçersiz kılma ve oluşturulan sınıflar genişletme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 31db7980738c8976fdcd318e87d8350a833f6252
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b74929d741b166d30762d7a84bf001a0ea7ba429
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684468"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268177"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Üretilen Sınıfları Geçersiz Kılma ve Genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [geçersiz kılma ve oluşturulan sınıflar genişletme](https://docs.microsoft.com/visualstudio/modeling/overriding-and-extending-the-generated-classes).  
-  
 DSL tanımınızı güçlü bir etki alanına özgü dil tabanlı araçlar kümesi oluşturabileceğiniz bir platformdur. Birçok uzantıları ve uyarlaması, geçersiz kılma ve genişletme DSL tanımını oluşturan sınıfları tarafından yapılabilir. Bu sınıflar yalnızca DSL tanım diyagramı içinde açıkça tanımlanmış alan sınıfları, aynı zamanda tanımlayan araç kutusu, Gezgini, seri hale getirme ve benzeri diğer sınıflar içerir.  
   
 ## <a name="extensibility-mechanisms"></a>Genişletilebilirlik mekanizması  

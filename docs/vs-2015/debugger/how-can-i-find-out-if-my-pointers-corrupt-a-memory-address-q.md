@@ -1,7 +1,7 @@
 ---
 title: Kendi İşaretçilerimin Bellek Adresini Bozup Bozmadığını Nasıl Anlarım? | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c9d3a6c754aa200703c5f2a0ed2e458e08830a3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 04df8c5dfc0d6fbf57183cf90ab0fd8a4fc79686
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688127"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217335"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>Kendi İşaretçilerimin Bellek Adresini Bozup Bozmadığını Nasıl Anlarım?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [olmadığını anlamak fotoğraf My işaretçileri Corrupt bir bellek adresi nasıl öğrenebilirim?](https://docs.microsoft.com/visualstudio/debugger/how-can-i-find-out-if-my-pointers-corrupt-a-memory-address-q).  
-  
 Sorun açıklaması  
  İşaretçilerimden birinin 0x00408000 adresinde belleği bozabileceğini düşünüyorum. Nasıl öğrenebilirim orada neler olduğunu kullanıma?  
   
@@ -56,7 +54,7 @@ Sorun açıklaması
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yerel kod hata ayıklaması SSS](../debugger/debugging-native-code-faqs.md)   
- [Yerel kodda hata ayıklama](../debugger/debugging-native-code.md)
+ [Yerel Kodda Hata Ayıklama](../debugger/debugging-native-code.md)
 
 
 

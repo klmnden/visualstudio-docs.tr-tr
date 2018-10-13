@@ -1,7 +1,7 @@
 ---
 title: Özellikleri genişletme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9db64799426eea6aeaecdd0890da683a7597a129
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be53c59cc0a1baf5331502c3079ee741751c53eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631507"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303712"
 ---
 # <a name="extending-properties"></a>Özellikleri Genişletme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [genişletme özellikleri](https://docs.microsoft.com/visualstudio/extensibility/internals/extending-properties).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **Özellikleri** penceresi COM ve COM + bileşenleri için bir evrensel özellik tarayıcısı ve tüm destekler [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ürünleri. **Özellikleri** penceresinde çalışır `ITypeInfo` bilgi ve herhangi bir tümleşik geliştirme ortamı (IDE) penceresinde şu anda seçili nesne için tasarım zamanı özellikleri listelemek için COM + meta verileri yazın.  
   
  **Özellikleri** klavyedeki F4 veya seçtiğinizde açılan penceresinde **Özellikler penceresi** üzerinde **görünümü** menüsünde, görüntülemek ve düzenlemek için kullanılır bağımsız yapılandırma, tasarım zamanı özellikleri ve seçili nesnelerin olayları. Bağımlı yapılandırma özellikleri, çözümler ve projeler, ile ilişkili görüntülenir [özellik sayfaları](../../extensibility/internals/property-pages.md). Daha fazla bilgi için [NIB: Proje özelliklerini](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [yapılandırma seçeneklerini yönetme](../../extensibility/internals/managing-configuration-options.md), ve [projelerinde NIB: öğesi Yönetimi](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
@@ -92,7 +90,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [genişletme özellikleri](
  [NIB: Proje Özellikleri](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50)  
  Projenin tamamı projeye Uygula denetim özellikleri ve ayrıca belirli proje derleme yapılandırmaları için sınırlı özellikleri olanak tanıyan ayarlar nasıl yönettiğini açıklanmaktadır.  
   
- [Projeler ve çözümler](../../ide/solutions-and-projects-in-visual-studio.md)  
+ [Çözümler ve Projeler](../../ide/solutions-and-projects-in-visual-studio.md)  
  Açıklayan nasıl [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] başvuruları, veri bağlantıları, klasörleri ve geliştirme çalışmalarınızı çözümler ve projeler aracılığıyla gerektirdiği dosyaları gibi öğeleri yönetir.  
   
  [Visual Studio’nun Diğer Bölümlerini Genişletme](../../extensibility/extending-other-parts-of-visual-studio.md)  

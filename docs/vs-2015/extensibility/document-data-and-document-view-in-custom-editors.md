@@ -1,7 +1,7 @@
 ---
 title: Özel düzenleyicilerde belge verileri ve belge görüntüleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6df543f832fa85ea6d74fc2846355fbf9deab912
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 258718a99e774b7098ff29dd66efc51a57062475
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630423"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206914"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Özel Düzenleyicilerde Belge Verileri ve Belge Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [belge verileri ve özel düzenleyicilerde belge görünümü](https://docs.microsoft.com/visualstudio/extensibility/document-data-and-document-view-in-custom-editors).  
-  
 Özel bir düzenleyici iki bölümden oluşur: bir belge veri nesnesi ve bir belge görünümü nesnesi. Adları önermek gibi belge verileri nesne görüntülenecek metin verileri temsil eder ve belge görünümü nesnesi (veya "Görünüm") bir veya daha fazla windows belge veri nesnesi görüntüleneceği temsil eder.  
   
 ## <a name="document-data-object"></a>Belge veri nesnesi  
@@ -54,5 +52,5 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [belge verileri ve özel d�
  [Standart belge kaydetme](../extensibility/internals/saving-a-standard-document.md)   
  [Kalıcılık ve çalıştırılan Belge tablosu](../extensibility/internals/persistence-and-the-running-document-table.md)   
  [Bir projedeki bir dosyayı hangi düzenleyicinin açacağını belirleme](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)   
- [Düzenleyici fabrikaları](../extensibility/editor-factories.md)
+ [Düzenleyici Fabrikaları](../extensibility/editor-factories.md)
 

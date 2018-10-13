@@ -1,7 +1,7 @@
 ---
 title: UML sınıf diyagramlarından kod oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 53
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8874e5aa1c2dcf440c7cfed1cc2ce42c4187bdc1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e13ad8f658fafa2a20556e95123c5cd5965934e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629354"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222841"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>UML sınıf diyagramları aracılığıyla kod oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [UML sınıf diyagramlarından kod oluşturma](https://docs.microsoft.com/visualstudio/modeling/generate-code-from-uml-class-diagrams).  
-  
 Visual Studio'da UML sınıf diyagramlarından Visual C# .NET kodunu oluşturmak için **kod üret** komutu. Varsayılan olarak, komut seçtiğiniz her UML türü için bir C# türü oluşturur. Kod oluşturan metin şablonlarını değiştirerek veya kopyalayarak bu davranışı değiştirebilir ve genişletebilirsiniz. Modelinizdeki farklı paketlerde bulunan türler için farklı davranış belirtebilirsiniz.  
   
  **Kod üret** kullanıcının öğe seçiminden kod oluşturmak ve her UML sınıfı veya diğer öğe için bir dosya oluşturmak için komut özellikle uygun. Örneğin, ekran görüntüsü iki UML sınıfından oluşturulmuş iki C# dosyası gösterir.  
@@ -41,9 +39,9 @@ Visual Studio'da UML sınıf diyagramlarından Visual C# .NET kodunu oluşturmak
   
  Visual Studio'da UML sınıf diyagramları hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)  
+-   [UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)  
   
--   [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md)  
+-   [UML Sınıf Diyagramları: Yönergeler](../modeling/uml-class-diagrams-guidelines.md)  
   
  UML sınıf diyagramları Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -173,9 +171,9 @@ Visual Studio'da UML sınıf diyagramlarından Visual C# .NET kodunu oluşturmak
     |------------------|---------------------|  
     |Ad|Bu bağlama için bir ad. Kapsayan bir paketten veya modelden devralınan bir bağlamayı geçersiz kılmak için geçersiz kılmak istediğiniz bağlamayla aynı adı kullanın.|  
     |Üzerine yaz|True ise, varolan tüm kodların üzerine yazılır.|  
-    |Hedef Adı|Oluşturulan dosyanın adı.<br /><br /> Bu dizeye gibi ifadeler ekleyebilirsiniz `{Name}` veya `{Owner.Name}`. Örneğin, şunu yazabilirsiniz: `{Owner.Name}_{Name}`. İfade, model öğesi üzerinde değerlendirilir. Yöntemlerin değil, öğelerin özelliklerini kullanabilir. Hangi özelliklerin kullanılabileceğini öğrenmek için öğesinde türlerin özelliklerine bakın **Microsoft.VisualStudio.Uml.\*** . **Önemli:** `{Name}` veya `{Owner.Name}` yalnızca kullanılabilir **hedef adı** özelliği.   Oluşturulan sınıfın adını değiştirmek için şablonu değiştirmeniz gerekir. Daha fazla bilgi için [Writing a Text Template](#writing).|  
+    |Hedef Adı|Oluşturulan dosyanın adı.<br /><br /> Bu dizeye gibi ifadeler ekleyebilirsiniz `{Name}` veya `{Owner.Name}`. Örneğin, şunu yazabilirsiniz: `{Owner.Name}_{Name}`. İfade, model öğesi üzerinde değerlendirilir. Yöntemlerin değil, öğelerin özelliklerini kullanabilir. Hangi özelliklerin kullanılabileceğini öğrenmek için öğesinde türlerin özelliklerine bakın **Microsoft.VisualStudio.Uml.\*** . **Önemli:** `{Name}` veya `{Owner.Name}` yalnızca kullanılabilir **hedef adı** özelliği. Oluşturulan sınıfın adını değiştirmek için şablonu değiştirmeniz gerekir. Daha fazla bilgi için [Writing a Text Template](#writing).|  
     |Proje Yolu|Yolunu belirtir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dönüştürme içeren bir proje Çıkış dosyalarını. Yeni bir proje oluşturmak için yazılan değerleri kullanın. Üç nokta düğmesini (**[...]** ) varolan bir projeyi seçin.<br /><br /> Yoksa yeni bir proje oluşturulacaktır. Bu bir C# sınıf kitaplığı projesi olacaktır.<br /><br /> Bunu yapmak için projeyi doğrudan yazmanız gerekir. %ProgramFiles% veya %LocalAppData% gibi ortam değişkeni makrolarını dahil edebilirsiniz.|  
-    |Hedef Dizin|Hedef dosyanın oluşturulduğu klasör. Yol, proje klasörüyle ilişkilidir.<br /><br /> Kullanabileceğiniz `{PackageStructure}` kapsayan paketlerin adlarına karşılık gelen bir yol eklemek için ifade. Varsayılan değer `\GeneratedCode\{PackageStructure}` şeklindedir. %TEMP% veya %HomePath% gibi ortam değişkenlerini de ekleyebilirsiniz. **Önemli:** `{PackageStructure}` yalnızca kullanılabilir **hedef dizin** özelliği.  |  
+    |Hedef Dizin|Hedef dosyanın oluşturulduğu klasör. Yol, proje klasörüyle ilişkilidir.<br /><br /> Kullanabileceğiniz `{PackageStructure}` kapsayan paketlerin adlarına karşılık gelen bir yol eklemek için ifade. Varsayılan değer `\GeneratedCode\{PackageStructure}` şeklindedir. %TEMP% veya %HomePath% gibi ortam değişkenlerini de ekleyebilirsiniz. **Önemli:** `{PackageStructure}` yalnızca kullanılabilir **hedef dizin** özelliği.|  
     |Şablon Dosya Yolu|Dönüşümü gerçekleştirecek şablon.<br /><br /> Sağlanan şablonları kullanabilir veya kendi şablonunuzu oluşturabilirsiniz. Sağlanan şablonları aşağıdaki konumda bulabilirsiniz:<br /><br /> …\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\|  
   
 5.  Bir öğeye istediğiniz kadar bağlama ekleyebilirsiniz.  
@@ -242,7 +240,7 @@ Visual Studio'da UML sınıf diyagramlarından Visual C# .NET kodunu oluşturmak
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)   
  [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md)   
- [Bir UML modelinden dosyalar oluşturma](../modeling/generate-files-from-a-uml-model.md)
+ [UML modeli aracılığıyla dosya oluşturma](../modeling/generate-files-from-a-uml-model.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Menüler ve komutlar genişletme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7b2be4b9-e3fe-4412-874f-ae72ebc84c4b
 caps.latest.revision: 50
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 158759d2511b6ba1209a045a898969fce774e0a8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 20ec62586f9a725c1a33da60986d3c8729f0e402
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689190"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261007"
 ---
 # <a name="extending-menus-and-commands"></a>Menüleri ve Komutları Genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [genişletme menüler ve komutlar](https://docs.microsoft.com/visualstudio/extensibility/extending-menus-and-commands).  
-  
 Komutları için Visual Studio eylem ve işlemleri ekleme yoludur. Çoğu durumda, menü veya araç çubukları komutları görüntülenir. VSPackage proje şablonu, çok basit bir komut uygulamak gösterilmektedir. Görmek için biraz daha uzun ancak yine de temel bir uygulama, [bir menü komutuyla uzantı oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
  Visual Studio komutlar, menüler ve araç çubukları hakkında daha fazla bilgi için bkz: [komutlar, menüler ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md).  

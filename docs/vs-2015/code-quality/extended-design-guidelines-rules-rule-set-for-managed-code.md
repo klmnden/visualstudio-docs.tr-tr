@@ -1,7 +1,7 @@
 ---
 title: Yönetilen kod için genişletilmiş tasarım yönerge kuralları kural kümesi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fb9b8544d2d4f902bf5bd64afc937f505990b736
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7b486156a2b2fb9161b20441cfb8e62c2a9b4bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630703"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207824"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Yönetilen kod için Genişletilmiş Tasarım Yönerge Kuralları kural kümesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [yönetilen kod için genişletilmiş tasarım yönerge kuralları kural kümesi](https://docs.microsoft.com/visualstudio/code-quality/extended-design-guidelines-rules-rule-set-for-managed-code).  
-  
 Microsoft genişletilmiş tasarım yönerge kuralları kural kümesi bildirilir ve yaşatılabilirlik en üst düzeye çıkarmak için temel tasarım yönerge kuralları genişletir. Kuralları adlandırma üzerinde fazladan Vurgu yerleştirilir. Bu kural projeniz Kütüphane kodu içeriyorsa, ya da sürdürmek kolayca kod yazmak için en yüksek standartları zorlamak istiyorsanız kümesi dahil olmak üzere düşünmelisiniz.  
   
  Genişletilmiş tasarım yönerge kuralları tüm Microsoft temel tasarım yönerge kuralları içerir. Temel tasarım yönerge kuralları tüm Microsoft en az önerilen kurallar içerir. Daha fazla bilgi için [yönetilen kod için temel tasarım yönerge kuralları kural kümesi](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) ve [yönetilen kod için yönetilen önerilen kurallar kural kümesi](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)  

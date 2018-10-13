@@ -1,7 +1,7 @@
 ---
 title: 'Hata: SQL Server hata ayıklama arabirimine erişilemiyor | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b2499081daaff60b128c67558990e15f248a6f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5d4780ece4ae00b2fb0b8c59bc84f3e48980b30
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691137"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200895"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Hata: SQL Server hata ayıklama arabirimine erişilemiyor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [hata: SQL Server hata ayıklama arabirimine erişilemiyor](https://docs.microsoft.com/visualstudio/debugger/error-unable-to-access-the-sql-server-debugging-interface).  
-  
 Bir makine üzerinde SQL hata ayıklamayı denediğinizde bu ileti, burada SQL hata ayıklama etkin değil oluşur.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  

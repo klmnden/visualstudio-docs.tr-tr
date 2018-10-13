@@ -1,7 +1,7 @@
 ---
 title: TableAdapters'ı kullanarak veri kümelerini doldurma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c25bbba01d89935044e82a67b3ce40f99d1bf9a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 118b8165b4c5ad972aacf9a3d91cff78c1b776e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687805"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251857"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>TableAdapters'ı kullanarak veri kümelerini doldurma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [TableAdapter kullanarak veri kümelerini dolgu](https://docs.microsoft.com/visualstudio/data-tools/fill-datasets-by-using-tableadapters).  
-  
   
 Bir TableAdapter bileşeni, bir veri kümesi bir veya daha fazla sorguları veya belirttiğiniz saklı yordamlar göre veritabanındaki verilerle doldurur. TableAdapter'ları da gerçekleştirebilirsiniz ekler, güncelleştirir ve veri kümesine yaptığınız değişiklikleri kalıcı hale getirmek için veritabanında siler. Ayrıca, belirli bir tabloya ilişkisiz genel komutları da verebilir.  
   
@@ -118,5 +116,5 @@ Bir TableAdapter bileşeni, bir veri kümesi bir veya daha fazla sorguları veya
  Veri komutları ile kullandığınızda bir `CommandType` özelliğini <xref:System.Data.CommandType>, dikkatli bir şekilde veritabanına geçirmeden önce bir istemciden gönderilen bilgilere bakın. Kötü amaçlı kullanıcılara gönderilecek deneyin (Ekle) yetkisiz erişim veya veritabanı zarar vermek için çaba değiştirilmiş veya ek SQL deyimlerinde. Bir veritabanına kullanıcı girişi aktarmadan önce her zaman bilgilerin geçerli olduğunu doğrulayın. Parametreli sorgular veya saklı yordamları mümkün olduğunda her zaman kullanmak iyi bir uygulamadır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio'da veri kümesi araçları](../data-tools/dataset-tools-in-visual-studio.md)
+ [Visual Studio'daki veri kümesi araçları](../data-tools/dataset-tools-in-visual-studio.md)
 

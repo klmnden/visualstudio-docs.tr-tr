@@ -1,7 +1,7 @@
 ---
 title: Gölgelendirici Tasarımcısı | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a8a6e0bb39ee501f72c96b55575859af0ce1e26
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c1342d97d07ab44a30768e7515521c7d08b90e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687792"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182801"
 ---
 # <a name="shader-designer"></a>Gölgelendirici Tasarımcısı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [gölgelendirici Tasarımcısı](https://docs.microsoft.com/visualstudio/designers/shader-designer).  
-  
 Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oluşturmak, değiştirmek ve olarak bilinen özel görsel efektler dışarı aktarmak için gölgelendirici Tasarımcısı *gölgelendiricileri*.  
   
  Oyunlarda veya uygulamalarda için özel görsel efektler HLSL programlama bilmeseniz bile oluşturmak için gölgelendirici Tasarımcısı'nı kullanabilirsiniz. Gölgelendirici Tasarımcısı'nda bir gölgelendirici oluşturmak için yalnızca teslim bir grafik oluşturun; diğer bir deyişle, tasarım yüzeyine eklediğiniz *düğümleri* verileri ve işlemleri temsil eder ve ardından verileri nasıl işlemlerini tanımlamak için bunlar arasında bağlantı kurun. Sonuç görselleştirebilir, böylece her işlem düğümünde o noktaya kadar etkili önizlemesi sağlanır. Veri düğümleri gölgelendirici çıkışı temsil eden bir son düğümü doğru akar.  

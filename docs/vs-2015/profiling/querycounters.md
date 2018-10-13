@@ -1,7 +1,7 @@
 ---
 title: QueryCounters | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff5cd703a323c93c479d69bbe956855106d80d80
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0ee9028f3fe4d72d70b2d9b6acab2c70705bfe40
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630297"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175259"
 ---
 # <a name="querycounters"></a>QueryCounters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [QueryCounters](https://docs.microsoft.com/visualstudio/profiling/querycounters).  
-  
 **QueryCounters** seçeneği bilgisayarda kullanılabilir CPU (Donanım) performans sayaçları listeler.  
   
  **QueryCounters** yalnızca seçeneğin komut satırında olması gerekir.  
@@ -48,7 +46,7 @@ VSPerfCmd.exe /QueryCounters
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Bağımsız uygulamaların profilini oluşturma](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [ASP.NET Web uygulamalarında profil oluşturma](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profil oluşturma hizmetleri](../profiling/command-line-profiling-of-services.md)
+ [Profil Oluşturma Hizmetleri](../profiling/command-line-profiling-of-services.md)
 
 
 

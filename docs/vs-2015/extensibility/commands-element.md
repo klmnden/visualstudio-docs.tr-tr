@@ -1,7 +1,7 @@
 ---
 title: Komutlar öğenin | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 47cf16a5-d78b-452e-86f6-b5893856dddf
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed21cfb92cbf39b384be512aca640555bb4884f7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a2383bb24ecd54bdbc7a30c98cd1fff555b4aeb9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686098"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182948"
 ---
 # <a name="commands-element"></a>Commands Öğesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [komutlar öğenin](https://docs.microsoft.com/visualstudio/extensibility/commands-element).  
-  
 VSPackage araç çubuğundaki komutları koleksiyonunu temsil eder. Koleksiyon en fazla beş alt bölümlerde, aşağıdaki gibi olabilir: menüler, grupları, düğmeler, combos ve bit eşlemler.  
   
  Her alt alt öğesi, örneğin, \<menüsü >, bir GUID ve sayısal tanımlayıcı çifti benzersiz komut Kimliğine göre tanımlanır. GUID "komut kümesini" tanımlayan ve mantıksal olarak ilgili komutları gruplandırmak için kullanılır. VSPackage'ı diğer VSPackages tarafından tanımlanan komut kimlikleri çarpışmalardan kaçınmak için set kendi komutu tanımlamanız gerekir.  

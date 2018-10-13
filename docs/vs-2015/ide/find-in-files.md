@@ -1,7 +1,7 @@
 ---
 title: Dosyalarda Bul | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2f6f51f53642f0eb17cbbae5498ce1c4c288a867
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af1eb1b42281e001bb56f9556c2b0eb21d859758
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684387"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178262"
 ---
 # <a name="find-in-files"></a>Dosyalarda Bul
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [dosyalarda Bul](https://docs.microsoft.com/visualstudio/ide/find-in-files).  
-  
 Find dosyalar ** belirtilen bir dosya kümesi aramanıza olanak sağlar. Eşleşme bulundu ve gerçekleştirilen eylemler listelenen **sonuçları Bul** seçili penceresi **neden seçenekleri**.  
   
  Görüntülemek için aşağıdaki yöntemlerden herhangi birini kullanabilirsiniz **dosyalarda Bul** içinde **Bul ve Değiştir** penceresi.  

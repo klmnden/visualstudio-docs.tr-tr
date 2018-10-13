@@ -1,7 +1,7 @@
 ---
 title: Ayıklama arabirimi yeniden düzenlemesi (C#) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,12 +21,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 07b31815bced7e9523809d6c5f9f649922eadbdf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7c3af675155cf3d47d82457aadbfb6327895d4f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686208"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279909"
 ---
 # <a name="extract-interface-refactoring-c"></a>Ayıklama Arabirimi Yeniden Düzenlemesi (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,4 +81,4 @@ Ayıklama arabirimi bir varolan bir sınıf, yapı veya arabirim üyeleri ile ye
  Bir sınıf veya yapı çıkartma arabirimi çağırdığınızda tabanları ve arabirimleri listenin yeni arabirim adını içerecek şekilde değiştirilir. Tabanları ve arabirimleri listenin ayıklama bir arabirimde çağırdığınızda değiştirilmez.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yeniden düzenlemesi (C#)](../csharp-ide/refactoring-csharp.md)
+ [Yeniden Düzenleme (C#)](../csharp-ide/refactoring-csharp.md)

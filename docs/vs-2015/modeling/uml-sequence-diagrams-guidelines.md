@@ -1,7 +1,7 @@
 ---
 title: 'UML sıralı diyagramlar: Yönergeler | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 55
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 388bb32aa871b220768e856e96cced2d5bced694
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d8578d81dd955cc9e7223692be1fe9f63d2bf00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631832"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278687"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>UML Sıralı Diyagramlar: Yönergeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [UML sıralı diyagramlar: yönergeler](https://docs.microsoft.com/visualstudio/modeling/uml-sequence-diagrams-guidelines).  
-  
 Visual Studio'da çizdiğiniz bir *sıralı diyagram* etkileşim göstermek için. Etkileşim, sınıflar, bileşenleri, alt sistemler veya aktörler tipik örnekleri arasında iletileri dizisidir.  
   
  UML sıralı diyagramlar bir UML modeli bir parçasıdır ve yalnızca UML modelleme projeleri içinde mevcuttur. Bir UML sıralı diyagramı oluşturmak için **mimarisi** menüsünde tıklatın **yeni UML veya katman diyagramı**. Hakkında daha fazla bilgi edinin [UML sıralı diyagram öğelerini](../modeling/uml-sequence-diagrams-reference.md) veya [UML modelleme diyagramlarını](../modeling/edit-uml-models-and-diagrams.md) genel. Video gösterimi için bkz. [tasarlamaktan sıralı diyagramlar (2010) kullanarak etkileşimleri](http://channel9.msdn.com/Blogs/clinted/UML-with-VS-2010-Part-7-Sketching-Interactions-with-Sequence-Diagrams).  

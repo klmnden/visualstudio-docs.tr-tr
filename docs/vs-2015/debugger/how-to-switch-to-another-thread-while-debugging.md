@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: hata ayıklarken başka bir iş parçacığına geçiş | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c682ddff5fd4dc44fe79fa81c1615362f8121e5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d242207115389bc80f7b79e2e9eb587939affb4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690962"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189604"
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging"></a>Nasıl Yapılır: Hata Ayıklarken Başka Bir İş Parçacığına Değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: başka bir iş parçacığı sırasında hata ayıklama için geçiş](https://docs.microsoft.com/visualstudio/debugger/how-to-switch-to-another-thread-while-debugging).  
-  
 Çok iş parçacıklı uygulamada hata ayıklaması yaparken, başka bir iş parçacığına çalıştığınız iş parçacığı bağlamdan geçiş yapmak için birkaç yöntemden birini kullanabilirsiniz.  
   
 ### <a name="to-switch-to-any-thread-that-appears-in-the-threads-window"></a>İş parçacıkları penceresinde görüntülenen herhangi bir iş parçacığına geçiş yapmak için  
@@ -52,7 +50,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: başka b
 2.  Listede, geçiş yapmak istediğiniz iş parçacığı tıklayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+ [Çok İş Parçacıklı Uygulamaların Hatalarını Ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 
 
 

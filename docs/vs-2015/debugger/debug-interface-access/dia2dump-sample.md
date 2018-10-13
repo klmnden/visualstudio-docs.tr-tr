@@ -1,7 +1,7 @@
 ---
 title: Dia2dump örneği | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 410d4e8cf2a63c7d01058e501391f02543b1eee7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d2f2dab085476a3800308c5214053c8919e84d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690983"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300826"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump Örneği
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Dia2dump örneği](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/dia2dump-sample).  
-  
 Dia2dump örneği, Visual Studio ile yüklenir ve Dia2dump.cpp kaynak dosyası içerir. Derlenmiş yürütülebilir dosya, komut satırından çalıştırır ve tüm program veritabanı (.pdb) dosyasının içeriği görüntüler.  
   
 ### <a name="to-install-the-sample"></a>Örneği yüklemek için  
@@ -59,7 +57,7 @@ Dia2dump örneği, Visual Studio ile yüklenir ve Dia2dump.cpp kaynak dosyası i
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Dia2dump.cpp kaynak dosyası](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)   
- [Nasıl yapılır: başarısız Visual Studio Proje yükseltmelerinde sorun giderme](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)
+ [Nasıl Yapılır: Başarısız Visual Studio Proje Yükseltmelerinde Sorun Giderme](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)
 
 
 

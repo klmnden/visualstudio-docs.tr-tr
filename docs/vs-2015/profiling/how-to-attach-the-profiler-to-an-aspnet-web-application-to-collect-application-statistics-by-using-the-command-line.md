@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: komut satırını kullanarak uygulama istatistikleri toplamak için bir ASP.NET Web uygulamasına Profiler ekleme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a54ba9e03443b2bf1d17c2b92292129ec657dca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a61872f9f2aa207920bca6e52b44f64944613076
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690556"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303699"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Nasıl yapılır: Komut Satırını Kullanarak Uygulama İstatistikleri Verileri Toplamak için bir ASP.NET Web Uygulamasına Profil Oluşturucu Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: komut satırını kullanarak uygulama istatistikleri toplamak için bir ASP.NET Web uygulaması iliştirmek Profiler](https://docs.microsoft.com/visualstudio/profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line).  
-  
 Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bir ASP.NET Web uygulamasına profil oluşturucu örnekleme yöntemini kullanarak performans istatistikleri toplamak için profil oluşturma araçları komut satırı araçları.  
   
 > [!NOTE]
@@ -134,7 +132,7 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprv
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ASP.NET Web uygulamalarında profil oluşturma](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Örnekleme yöntemi veri görünümleri](../profiling/profiler-sampling-method-data-views.md)
+ [Örnekleme Yöntemi Veri Görünümleri](../profiling/profiler-sampling-method-data-views.md)
 
 
 

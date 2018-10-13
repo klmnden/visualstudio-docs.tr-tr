@@ -1,7 +1,7 @@
 ---
 title: Matematik düğümleri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 154f79ab5a90821ee08b7a9e802f1481baae55dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bab77bbed9f14ccc81429c37ad367d7d51709871
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692646"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305779"
 ---
 # <a name="math-nodes"></a>Matematik Düğümleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [matematik düğümleri](https://docs.microsoft.com/visualstudio/designers/math-nodes).  
-  
 Matematik düğümleri cebirsel, gölgelendirici Tasarımcısı'nda gerçekleştirme mantığı, trigonometrik ve diğer matematiksel işlemler.  
   
 > [!NOTE]
@@ -36,7 +34,7 @@ Matematik düğümleri cebirsel, gölgelendirici Tasarımcısı'nda gerçekleşt
 |Düğüm|Ayrıntılar|Özellikler|  
 |----------|-------------|----------------|  
 |**Abs**|Belirtilen giriş bileşeni başına mutlak değerini hesaplar.<br /><br /> Her bir bileşenin giriş `X`, negatif değerler pozitif hale getirilir, böylece sonucun her bileşeni pozitif bir değer içeriyor.<br /><br /> **Giriş:**<br /><br /> `X`: `float`, `float2`, `float3`, veya `float4`<br /> Mutlak değeri belirlemek istediğiniz değerleri.<br /><br /> `Output:`<br /><br /> `Output`: aynı giriş `X`<br /> Bileşen başına mutlak değeri.|Yok.|  
-|**Ekle**|Belirtilen girişleri bileşeni başına değişkenlerin bileşen odaklı toplamını hesaplar.<br /><br /> Giriş karşılık gelen bileşenlerden sonucun her bileşeni için `X` ve giriş `Y` birlikte eklenir.<br /><br /> **Giriş:**<br /><br /> `X`: `float`, `float2`, `float3`, veya `float4`<br /> Birleştirmek için değerlerinden biri.<br /><br /> `Y`: aynı giriş `X`<br /> Birleştirmek için değerlerinden biri.<br /><br /> **Çıkış:**<br /><br /> `Output`: aynı giriş `X`<br /> Her bileşen toplamı.|Yok.|  
+|**Add**|Belirtilen girişleri bileşeni başına değişkenlerin bileşen odaklı toplamını hesaplar.<br /><br /> Giriş karşılık gelen bileşenlerden sonucun her bileşeni için `X` ve giriş `Y` birlikte eklenir.<br /><br /> **Giriş:**<br /><br /> `X`: `float`, `float2`, `float3`, veya `float4`<br /> Birleştirmek için değerlerinden biri.<br /><br /> `Y`: aynı giriş `X`<br /> Birleştirmek için değerlerinden biri.<br /><br /> **Çıkış:**<br /><br /> `Output`: aynı giriş `X`<br /> Her bileşen toplamı.|Yok.|  
 |**Ceil**|Bileşen başına belirtilen girişin tavanını hesaplar.<br /><br /> Tavan değeri büyük veya bu değere eşit en küçük bir tamsayıdır.<br /><br /> **Giriş:**<br /><br /> `X`: `float`, `float2`, `float3`, veya `float4`<br /> Tavan işlem istediğiniz değerleri.<br /><br /> **Çıkış:**<br /><br /> `Output`: aynı giriş `X`<br /> Bileşen başına tavan.|Yok.|  
 |**CLAMP**|Önceden tanımlanmış bir aralık için belirtilen giriş'ın her bileşeninin sıkıştırır.<br /><br /> Sonucun her bileşeni için tanımlanan aralığın değerler aralıktaki en düşük değerle eşit hale, tanımlanan aralığın üstündeki değerler aralıktaki en büyük değere eşit hale ve aralıkta değerler değişmez.<br /><br /> **Giriş:**<br /><br /> `X`: `float`, `float2`, `float3`, veya `float4`<br /> CLAMP için kullanılan değerler.<br /><br /> **Çıkış:**<br /><br /> `Output`: aynı giriş `X`<br /> Bileşen başına kenetlenen değeri.|**en fazla**<br /> Olası en büyük değer aralığı.<br /><br /> **Min**<br /> Olası en küçük değer aralığı.|  
 |**Cos**|Belirtilen giriş, radyan cinsinden bileşeni başına kosinüsünü hesaplar.<br /><br /> Sonucun her bileşeni için radyanlarda verilen karşılık gelen bileşenin kosinüsü hesaplanır. Sonucu aralığında değerlere sahip bileşenleri sahip [-1, 1].<br /><br /> **Giriş:**<br /><br /> `X`: `float`, `float2`, `float3`, veya `float4`<br /> Radyan cinsinden kosinüsünü, işlem için kullanılan değerler.<br /><br /> **Çıkış:**<br /><br /> `Output`: aynı giriş `X`<br /> Her bileşenin kosinüsü.|Yok.|  
@@ -58,7 +56,7 @@ Matematik düğümleri cebirsel, gölgelendirici Tasarımcısı'nda gerçekleşt
 |**Saturate**|[0, 1] aralığında belirtilen giriş'ın her bileşeninin sıkıştırır.<br /><br /> Bu aralık, yüzdeleri ve diğer ilgili ölçümleri hesaplamalar temsil etmek için kullanabilirsiniz. Sonucun her bileşeni için 0'dan küçük karşılık gelen bileşen değerleri girişin 0, 1, 1'e eşit yapılır ve aralıkta değerler değişmez büyük olan değerleri eşit hale getirilir.<br /><br /> **Giriş:**<br /><br /> `X`: `float`, `float2`, `float3`, veya `float4`<br /> Saturate için kullanılan değerler.<br /><br /> **Çıkış:**<br /><br /> `Output`: aynı giriş `X`<br /> Bileşen başına doygun değeri.|Yok.|  
 |**Sin**|Belirtilen giriş, radyan cinsinden bileşeni başına sinüsünü hesaplar.<br /><br /> Sonucun her bileşeni için radyanlarda verilen karşılık gelen bileşenin sinüsü hesaplanır. Sonucun [-1, 1] aralığında değerleri olan bileşenleri içerir.<br /><br /> **Giriş:**<br /><br /> `X`: `float`, `float2`, `float3`, veya `float4`<br /> Radyan cinsinden sinüsünü, işlem için kullanılan değerler.<br /><br /> **Çıkış:**<br /><br /> `Output`: aynı giriş `X`<br /> Her bileşenin sinüsü.|Yok.|  
 |**Sqrt**|Belirtilen giriş, bileşeni başına karekökünü hesaplar.<br /><br /> Sonucun her bileşeni için karşılık gelen bileşenin karekökü hesaplanır.<br /><br /> **Giriş:**<br /><br /> `X`: `float`, `float2`, `float3`, veya `float4`<br /> İşlem kare kökünü istediğiniz değerleri.<br /><br /> **Çıkış:**<br /><br /> `Output`: aynı giriş `X`<br /> Bileşen başına kare kökü.|Yok.|  
-|**Çıkarma**|Belirtilen giriş değişkenlerin bileşen odaklı farkı hesaplar.<br /><br /> Giriş karşılık gelen bileşenin sonucun her bileşeni için `Y` girişe karşılık gelen bileşenden çıkarılır `X`. Bu ilk girişten ikinci genişleten vektörü hesaplamak için kullanabilirsiniz.<br /><br /> **Giriş:**<br /><br /> `X`: `float`, `float2`, `float3`, veya `float4`<br /> Çıkarmanın yapılacağı değerleri.<br /><br /> `Y`: aynı giriş `X`<br /> Girişten çıkarılacak değerleri `X`.<br /><br /> **Çıkış:**<br /><br /> `Output`: aynı giriş `X`<br /> Bileşen başına farkı.|Yok.|  
+|**Subtract**|Belirtilen giriş değişkenlerin bileşen odaklı farkı hesaplar.<br /><br /> Giriş karşılık gelen bileşenin sonucun her bileşeni için `Y` girişe karşılık gelen bileşenden çıkarılır `X`. Bu ilk girişten ikinci genişleten vektörü hesaplamak için kullanabilirsiniz.<br /><br /> **Giriş:**<br /><br /> `X`: `float`, `float2`, `float3`, veya `float4`<br /> Çıkarmanın yapılacağı değerleri.<br /><br /> `Y`: aynı giriş `X`<br /> Girişten çıkarılacak değerleri `X`.<br /><br /> **Çıkış:**<br /><br /> `Output`: aynı giriş `X`<br /> Bileşen başına farkı.|Yok.|  
 |**3B vektörü Dönüştür**|Belirtilen 3B vektör farklı bir alana dönüştürür.<br /><br /> Bunu, anlamlı hesaplamalar gerçekleştirmede kullanabilmeniz noktaları veya vektörleri genel bir alana getirmek için kullanabilirsiniz.<br /><br /> **Giriş:**<br /><br /> `Vector`: `float3`<br /> Dönüştürmek için vektör.<br /><br /> **Çıkış:**<br /><br /> `Output`: `float3`<br /> Dönüştürülen vektör.|**Sistemden**<br /> Vektörün yerel alanı.<br /><br /> **Sisteme**<br /> Vektörün dönüştürüleceği alan.|
 
 

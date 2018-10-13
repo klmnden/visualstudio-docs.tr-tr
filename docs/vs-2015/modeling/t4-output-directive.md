@@ -1,7 +1,7 @@
 ---
 title: T4 Çıkış yönergesi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e0eaa2d8e3fc257e14e04bad3cac706b8a3bc92a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e2d30c5d1dee578da14608a4e272fea09184a76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693832"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198529"
 ---
 # <a name="t4-output-directive"></a>T4 Çıkış Yönergesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [T4 çıkış yönergesi](https://docs.microsoft.com/visualstudio/modeling/t4-output-directive).  
-  
 İçinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] metin şablonlarını `output` yönergesi, dosya adı uzantısı ve dönüştürülen dosyanın kodlamasını tanımlamak için kullanılır.  
   
  Örneğin, varsa, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proje adlı şablon dosyası içerir **MyTemplate.tt** aşağıdaki yönerge içerir:  

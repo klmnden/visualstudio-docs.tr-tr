@@ -1,7 +1,7 @@
 ---
 title: Using the Tasks Window | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7e5d4c979d8160e9b2a9cee1a937bcc8049fc5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 638c0c44be94398da8b1964a849ad99011044f78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694473"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226206"
 ---
 # <a name="using-the-tasks-window"></a>Görevleri Penceresini Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Using the Tasks Window](https://docs.microsoft.com/visualstudio/debugger/using-the-tasks-window).  
-  
 **Görevleri** pencere benzeyen **iş parçacıkları** BT'nin hakkında bilgileri gösterir ancak pencere <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7), veya [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) yerine her bir iş parçacığı nesneleri. İş parçacığı gibi görevleri aynı anda çalışabilecek zaman uyumsuz işlemleri temsil eder; Ancak, birden çok görev aynı iş parçacığı üzerinde çalışabilir. Bkz: [zaman uyumsuz programlama (Windows Store apps) javascript'teki](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) daha fazla bilgi için.  
   
  Yönetilen kodda kullanabileceğiniz **görevleri** ile çalışırken penceresi <xref:System.Threading.Tasks.Task?displayProperty=fullName> nesneleri veya **await** ve **zaman uyumsuz** anahtar sözcükleri (**Await** ve **zaman uyumsuz** VisualBasic içinde). Yönetilen kodda görevleri hakkında daha fazla bilgi için bkz. [paralel programlama](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d).  
@@ -105,7 +103,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [Using the Tasks Window](ht
  [Paralel Programlama](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
  [Eşzamanlılık Çalışma zamanı](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [Paralel Yığınlar penceresini kullanma](../debugger/using-the-parallel-stacks-window.md)   
- [İzlenecek yol: paralel uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)
+ [İzlenecek Yol: Paralel Uygulamada Hata Ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)
 
 
 

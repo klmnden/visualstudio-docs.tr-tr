@@ -1,7 +1,7 @@
 ---
 title: Idiasymbol::get_hassetjump | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a87713d5e0a1fcbdfb7fbfc267696525eff1f2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa113d43f848c6f1d953f6f03fef14ebae952dee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692138"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265297"
 ---
 # <a name="idiasymbolgethassetjump"></a>IDiaSymbol::get_hasSetJump
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Idiasymbol::get_hassetjump](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-hassetjump).  
-  
 İşlev bir kullanımını içerip içermediğini belirten bir bayrak alır [setjmp](http://msdn.microsoft.com/library/684a8b27-e8eb-455b-b4a8-733ca1cbd7d2) komut (ile eşleştirilmiş [longjmp](http://msdn.microsoft.com/library/0e13670a-5130-45c1-ad69-6862505b7a2f) komutu, C stili yöntemi özel durum işleme gelerek).  
   
 ## <a name="syntax"></a>Sözdizimi  

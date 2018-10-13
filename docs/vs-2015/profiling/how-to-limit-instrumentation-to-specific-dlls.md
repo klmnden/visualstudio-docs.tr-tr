@@ -1,7 +1,7 @@
 ---
 title: "Nasıl yapılır: belirli DLL'ler için izleme sınırlama | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b99a67921739f620c908f1551f0f8a29a5aac73a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d61879e967e2e75f0edcd2d91bd7e31fd4d9382
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628148"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234526"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Nasıl yapılır: Belirli DLL'ler için İzleme Sınırlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: izlemeyi belirli DLL'ler sınırı](https://docs.microsoft.com/visualstudio/profiling/how-to-limit-instrumentation-to-specific-dlls).  
-  
 İzleme profil oluşturma metodunu kullanarak bir uygulama bir veya daha fazla dll için profil oluşturma verilerinin toplanmasını sınırlayabilirsiniz. Bir uygulama bir veya daha fazla dll profilini çıkarmak için hedefler olarak .dll dosyalarını içeren bir performans oturumu oluşturun. Projelerinde olarak profilini oluşturmak istediğiniz DLL'leri belirleyebilirsiniz bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çözümü ya da bağımsız ikili dosyaları olarak.  
   
 ### <a name="to-limit-instrumentation-to-specific-dlls-in-a-visual-studio-solution"></a>Visual Studio çözümünde belirli DLL'ler için izleme sınırlama  
@@ -79,7 +77,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: izlemeyi
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Veri toplama denetimi](../profiling/controlling-data-collection.md)   
- [Nasıl yapılır: izlemeyi belirli araçlarla sınırlama](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
+ [Nasıl Yapılır: İzlemeyi Belirli Araçlarla Sınırlama](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
 
 
 
