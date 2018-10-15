@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4c32f3a9b0f0c09b7e7b58aa4c424630326d122
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b31ce44c458f7f376d98fac83670595b8a163d65
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676690"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49325009"
 ---
 # <a name="custom-xml-parts-overview"></a>Özel XML bölümlerine genel bakış
   Bazı Microsoft Office uygulamaları için belgelerde XML veri ekleyebilir. Bir belgedeki XML verileri ekleme, veriler adlı bir *özel XML bölümleri*.  
@@ -76,7 +76,7 @@ ms.locfileid: "35676690"
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>Office uygulamasını başlatmadan XML bölümlerini Değiştir  
  Ekleyebilir veya Excel, PowerPoint ve Word başlatmadan özel bir XML parçasına değiştirebilirsiniz. Bu, yüklü bir sunucu gibi Microsoft Office uygulamalarının yüklü olmadığı bir bilgisayarda, bir belgedeki XML verileriyle çalışmak istiyorsanız kullanışlıdır.  
   
- Microsoft Office başlatmadan özel XML bölümleri ekleme için sınıflar açık XML SDK'yı kullanın. Bu sınıflar, Office belgeleri için özel bir Open XML içeriğe erişim sağlamak üzere tasarlanmıştır. Örneğin, bir Excel çalışma kitabına özel bir XML parçasına eklemek için kullandığınız [WorkbookPart\<T >](http://msdn.microsoft.com/47c348c0-77ab-a504-5097-bcd6a213921a) yöntemi bir [AddNewPart](http://msdn.microsoft.com/d011e6f4-77dd-d02d-66ef-dc4a9e7b26f2) nesne. Daha fazla bilgi için [açık XML SDK 2.0](http://msdn.microsoft.com/f6a9ae68-7989-4208-97f5-3c945137a0ab).  
+ Microsoft Office başlatmadan özel XML bölümleri ekleme için sınıflar açık XML SDK'yı kullanın. Bu sınıflar, Office belgeleri için özel bir Open XML içeriğe erişim sağlamak üzere tasarlanmıştır. Örneğin, bir Excel çalışma kitabına özel bir XML parçasına eklemek için kullandığınız [WorkbookPart\<T >](https://msdn.microsoft.com/library/office/cc562657.aspx) yöntemi bir [AddNewPart](https://msdn.microsoft.com/library/office/documentformat.openxml.packaging.workbookpart.aspx) nesne. Daha fazla bilgi için [açık XML SDK](/office/open-xml/open-xml-sdk).  
   
 ## <a name="bind-custom-xml-parts-to-word-content-controls"></a>Word içerik denetimlerini özel XML bölümlerine bağlama  
  İçerik denetimleri bir sözcük çözüme özel bir XML parçasına öğeleri bağlayabilirsiniz. Bir içerik denetimi için özel bir XML parçasına bağlı olduğunda özel bir XML parçasına verileri içerik denetimi kullanıcı arabiriminde (UI) görüntülenir. Karşılık gelen XML öğesi, bir kullanıcı denetiminde metin düzenlerse, otomatik olarak güncelleştirilir. Benzer şekilde, özel XML bölümleri içindeki öğe değerlerini değiştirdiyseniz, XML öğelerine bağlanan içerik denetimlerini yeni verileri görüntüleyin. Daha fazla bilgi için [içerik denetimleri](../vsto/content-controls.md).  
