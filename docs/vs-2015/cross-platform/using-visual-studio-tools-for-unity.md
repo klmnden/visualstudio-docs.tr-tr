@@ -1,7 +1,7 @@
 ---
 title: Unity için Visual Studio araçlarını kullanma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 036a3a8b3e3c055325f1062a39ad439160378684
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 67c1661543370dc589bf5a20ad8837913e9d19e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775539"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199218"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçlarını Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [Unity için Visual Studio araçları kullanarak](https://docs.microsoft.com/visualstudio/cross-platform/using-visual-studio-tools-for-unity).  
-  
   
 Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik özellikleri için nasıl kullanılacağını ve Unity'de geliştirme için Visual Studio hata ayıklayıcısını kullanmayı öğreneceksiniz.  
   

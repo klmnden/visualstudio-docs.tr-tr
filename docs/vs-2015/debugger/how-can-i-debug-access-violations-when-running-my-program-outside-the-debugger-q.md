@@ -1,7 +1,7 @@
 ---
 title: Kendi Programımı Hata Ayıklayıcı Dışında Çalıştırırken Erişim İhlallerinde Nasıl Hata Ayıklayabilirim? | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1525061210c6ef7cdda32c6204648c3944f4b889
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 486b981311d93a93866622ccf80b6eabdee748ff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630646"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290764"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>Kendi Programımı Hata Ayıklayıcı Dışında Çalıştırırken Erişim İhlallerinde Nasıl Hata Ayıklayabilirim?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl kaldırabilirim hata ayıklama erişimi ihlalleri, çalışan My Program dışında hata ayıklayıcı?](https://docs.microsoft.com/visualstudio/debugger/how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger-q).  
-  
 Sorun açıklaması  
  Kendi programımı Visual Studio ortamında düzgün çalışıyor, ancak bu tek başına Windows işletim sistemiyle birlikte çalıştırabilir, erişim ihlali üretir. Bu sorunu nasıl hata ayıklaması yapabilirsiniz?  
   
@@ -47,7 +45,7 @@ Sorun açıklaması
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yerel kod hata ayıklaması SSS](../debugger/debugging-native-code-faqs.md)   
- [Yerel kodda hata ayıklama](../debugger/debugging-native-code.md)
+ [Yerel Kodda Hata Ayıklama](../debugger/debugging-native-code.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Klavye kısayolları blend'de | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a5128c188b92597ef0b6f64845a381c675488e5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4cf0dd03a496d97f883bd1543f133f9f5213ba93
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694804"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262516"
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Blend'de klavye kısayolları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [klavye kısayolları blend'de](https://docs.microsoft.com/visualstudio/designers/keyboard-shortcuts-in-blend).  
-  
 Proje kısayolları  
   
 |Bunu yapmak için|Bunu yapın|  
@@ -83,7 +81,7 @@ Proje kısayolları
 |Nesnelerin grubunu Çöz|CTRL + SHIFT + G|  
 |Seçili nesne Öne Getir|CTRL + SHIFT +]|  
 |Öne Getir|CTRL +]|  
-|Seçili nesne Arkaya Gönder|CTRL + SHIFT +]|  
+|Seçili nesne Arkaya Gönder|CTRL + SHIFT +[|  
 |Bir geri gönder|CTRL + [|  
 |Bir kullanıcı denetiminin seçili nesnelerin (WPF)|F8|  
 |Nesneleri oranlarını sınırlamak|Nesnenin sürüklerken SHIFT tuşunu basılı tutun|  

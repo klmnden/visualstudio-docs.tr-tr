@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: iç içe Projeler uygulama | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 860f231771db2385afa830a97749286f128e77f0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3892d02e39eb29039f815df5ff9174ce39415a81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632736"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173582"
 ---
 # <a name="how-to-implement-nested-projects"></a>Nasıl yapılır: iç içe Projeler uygulama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: uygulama iç içe projeler](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-implement-nested-projects).  
-  
 Oluşturduğunuz var. iç içe proje türü uygulanması gereken bir birkaç ek adımlar verilmiştir. Bazı iç içe geçmiş (alt) projeleri için çözüm olan aynı sorumluluklarını ana proje alır. Ana proje, proje çözüm benzer bir kapsayıcıdır. Özellikle, çözüm ve iç içe projeler hiyerarşisini üst projeleri tarafından oluşturulması gereken çeşitli olaylar vardır. Bu olaylar için iç içe projeler oluşturmaya yönelik aşağıdaki işlem açıklanmaktadır.  
   
 ### <a name="to-create-nested-projects"></a>İç içe projeler oluşturmak için  

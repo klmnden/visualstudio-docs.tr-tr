@@ -1,7 +1,7 @@
 ---
 title: GenerateResource görevi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b60160cf2d22756904dab4b3b0317bd67c84f4ae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6686e34ade66a3d4f2ec8ef23c9649bb5d7a1c47
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684600"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212504"
 ---
 # <a name="generateresource-task"></a>GenerateResource Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [GenerateResource görevi](https://docs.microsoft.com/visualstudio/msbuild/generateresource-task).  
-  
   
 Arasında .txt, .resx (XML tabanlı kaynak biçimi) dosyalarını ve çalışma zamanı ikili çalıştırılabilir dosyasına katıştırılabilen veya uydu derlemeleri haline getirilebilen ortak dil çalışma zamanı ikili .resources dosyalarına dönüştürür. Bu görev, genellikle için .resource dosyaları .txt veya .resx dosyalarına dönüştürmek için kullanılır. `GenerateResource` Görev benzer işlevsellik [resgen.exe](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4).  
   
@@ -58,7 +56,7 @@ Arasında .txt, .resx (XML tabanlı kaynak biçimi) dosyalarını ve çalışma 
 |`Sources`|Gerekli <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametresi.<br /><br /> Öğeleri dönüştürmek için belirtir. Bu parametreye geçirilen öğe, şu dosya uzantılarından biri olmalıdır:<br /><br /> -   `.txt`: Dönüştürülecek bir metin dosyası uzantısı belirtir. Metin dosyaları yalnızca dize kaynakları içerebilir.<br />-   `.resx`: Dönüştürülecek XML tabanlı kaynak dosyası için bir uzantı belirtir.<br />-   `.restext`: .txt aynı biçimi belirtir. Bu farklı uzantı, diğer kaynak dosyaları, yapı işleminizde kaynakları içeren kaynak dosyalarını NET bir ayrım yapmak istiyorsanız kullanışlıdır.<br />-   `.resources`: Dönüştürmek bir kaynak dosya uzantısı belirtir.|  
 |`StateFile`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> parametresi.<br /><br /> Giriş dosyalarını .resx bağlantılar denetimi bağımlılık hızlandırmak için kullanılan bir isteğe bağlı önbellek dosyası yolunu belirtir.|  
 |`StronglyTypedClassName`|İsteğe bağlı `String` parametresi.<br /><br /> Türü kesin belirlenmiş kaynak sınıfı için sınıf adını belirtir. Bu parametre belirtilmezse, kaynak dosyanın temel adı kullanılır.|  
-|`StronglyTypedFilename`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> parametresi.<br /><br /> Kaynak dosyası için dosya adını belirtir. Bu parametre belirtilmezse, sınıfın adını dile bağlı olarak değişir uzantılı temel dosya adı olarak kullanılır. Örneğin: `MyClass.cs`.|  
+|`StronglyTypedFilename`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> parametresi.<br /><br /> Kaynak dosyası için dosya adını belirtir. Bu parametre belirtilmezse, sınıfın adını dile bağlı olarak değişir uzantılı temel dosya adı olarak kullanılır. Örneğin: `MyClass.cs`|  
 |`StronglyTypedLanguage`|İsteğe bağlı `String` parametresi.<br /><br /> Kesin olarak belirlenmiş kaynak sınıfı kaynağı oluşturulurken kullanılacak dili belirtir. Bu parametre CodeDomProvider tarafından kullanılan dillerden biriyle tam olarak eşleşmelidir. Örneğin: `VB` veya `C#`.<br /><br /> Bu parametre için bir değer aktararak, türü kesin belirlenmiş kaynak oluşturmak için görev isteyin.|  
 |`StronglyTypedManifestPrefix`|İsteğe bağlı `String` parametresi.<br /><br /> Oluşturulan sınıfın kaynak türü kesin belirlenmiş bir kaynak için kullanılacak kaynak ad alanı ya da bildirim öneki belirtir.|  
 |`StronglyTypedNamespace`|İsteğe bağlı `String` parametresi.<br /><br /> Kesin belirlenmiş bir kaynak için oluşturulan sınıf kaynağı için kullanılacak ad alanını belirtir. Bu parametre belirtilmezse, türü kesin belirlenmiş kaynak genel ad alanında görüntülenir.|  
@@ -103,7 +101,7 @@ Arasında .txt, .resx (XML tabanlı kaynak biçimi) dosyalarını ve çalışma 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görevleri](../msbuild/msbuild-tasks.md)   
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+ [Görev Başvurusu](../msbuild/msbuild-task-reference.md)
 
 
 

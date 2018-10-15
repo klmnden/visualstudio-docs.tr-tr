@@ -1,7 +1,7 @@
 ---
 title: Şekiller ve yollar çizin | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 79a48b91c7d467e66be8311692a85dc1b4de25dd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f59ecbdf9e69093d5c445cdb6d4780eb3b6f86e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634381"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188194"
 ---
 # <a name="draw-shapes-and-paths"></a>Şekiller ve yollar çizin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [şekiller ve yollar çizin](https://docs.microsoft.com/visualstudio/designers/draw-shapes-and-paths).  
-  
 XAML Tasarımcısı'nda bir *şekli* tamamen beklediğiniz. Örneğin: dikdörtgen, daire veya elips. A *yolu* bir şekil daha esnek bir sürümüdür. Yeni şekil için bunları birleştirmek ya da bunları yeniden şekillendirmek gibi şeyler.  
   
  Şekiller ve yollar iyi yüksek çözünürlüklü ekranlar için ölçeklendirme vektör grafik kullanın. Vektör grafikleri hakkında daha fazla bilgi edinmek istiyorsanız bkz [vektör grafikleri nelerdir](https://www.youtube.com/watch?v=MoCSwF0n-io) veya [vektör grafikleri](http://www.webopedia.com/TERM/V/vector_graphics.html).  

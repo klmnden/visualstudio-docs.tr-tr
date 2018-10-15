@@ -1,7 +1,7 @@
 ---
 title: Veri uygulamaları oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,12 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 9e662eedef9053a460ffbb5012a079f05239a9a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4e5354d167dd6d3a1bef9beeb3dcaaaf24871bab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690628"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291323"
 ---
 # <a name="creating-data-applications"></a>Veri Uygulamaları Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Visual Studio, veri erişim uygulamalarını oluşturmanıza yardımcı olması 
   
  İçindeki verilere erişen uygulamalar geliştirirken [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], farklı gereksinimleriniz olacaktır. Bazı durumlarda, yalnızca formdaki verileri görüntülemek isteyebilirsiniz. Diğer durumlarda, diğer uygulamalar ve süreçler ile bilgi paylaşımı için bir yol oluşturmanız gerekebilir.  
   
- Verilerle ne olursa olsun, anlamanız gereken bazı temel kavramları vardır. Hiç veri işleme ayrıntılarının bazılarını bilmeniz gerekmeyebilir; Örneğin, hiçbir zaman programlı olarak veritabanı oluşturmak ihtiyacınız olabilecek — ancak temel veri kavramlarının yanı sıra veri araçlarını (sihirbazlar ve tasarımcılar) içinde kullanılabiliranlamakçokkullanışlıdır<c1/>.  
+ Verilerle ne olursa olsun, anlamanız gereken bazı temel kavramları vardır. Hiç veri işleme ayrıntılarının bazılarını bilmeniz gerekmeyebilir; Örneğin, hiçbir zaman programlı olarak veritabanı oluşturmak ihtiyacınız olabilecek — ancak temel veri kavramlarının yanı sıra veri araçlarını (sihirbazlar ve tasarımcılar) içinde kullanılabiliranlamakçokkullanışlıdır[!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  Normal bir veri uygulaması şu şemada gösterilen işlemlerin çoğunu kullanır:  
   

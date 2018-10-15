@@ -1,7 +1,7 @@
 ---
 title: Bir T4 metin şablonuna ilişkin hata ayıklama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d04fe451a752c5132a376fd63091aeb6b1ee1f49
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f299b89f7f59cbfc043bb77e6e56c3e5fac22d16
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628757"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298915"
 ---
 # <a name="debugging-a-t4-text-template"></a>Bir T4 Metin Şablonuna İlişkin Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bir T4 metin şablonuna ilişkin hata ayıklama](https://docs.microsoft.com/visualstudio/modeling/debugging-a-t4-text-template).  
-  
 Metin şablonlarında kesme noktaları ayarlayabilirsiniz. Tasarım zamanı metin şablonunda hata ayıklama için metin şablonu dosyasını kaydedin ve ardından **T4 şablonunda Hata Ayıkla** Çözüm Gezgini içinde dosyanın kısayol menüsünde. Bir çalışma zamanı metin şablonunda hata ayıklama için yalnızca ait olduğu uygulama hata ayıklama.  
   
  Bir metin şablonunda hata ayıklama için şablonu dönüştürme süreci adımları anlamanız gerekir. Her bir adımın çeşitli hatalar oluşabilir. Adımlar aşağıdaki gibidir.  
@@ -52,7 +50,7 @@ Metin şablonlarında kesme noktaları ayarlayabilirsiniz. Tasarım zamanı meti
 |Derleme '{0}'for 'yönerge işlemcisi{1}' FullTrust izin kümesi verilmedi. Sadece güvenilir bütünleştirilmiş kodların yönerge işlemcileri sağlamanıza izin verilir. Bu yönerge işlemcisi yüklenmeyecek.|Sistem bir yönerge işlemcisini içeren derleme için FullTrust izinlerini verin değil oluşur. İleti, derlemenin adı ve yönerge işlemcisinin adını sağlar.|Yalnızca yerel makinede güvenilir derlemeler, kullandığınızdan emin olun.|  
 |Yol '{0}' Bu bilgisayarda yerel veya güvenilen bölgenizin bir parçası olmalıdır.|Yerel makinenizde olmayan veya ağınızın Güvenilir Bölge bir dosya yönergeniz veya derleme yönergesi başvuruda bulunduğunda oluşur.|Yönergeniz veya derleme yönergeleri bulunduğu dizin, güvenilen bir bölgede olduğundan emin olun. Internet Explorer aracılığıyla güvenilen bölgenizin bir ağ dizinine ekleyebilirsiniz.|  
 |"Geçersiz belirteç ' catch'" veya "bir ad alanı doğrudan üyeleri içeremez" gibi birden çok sözdizimi hataları|Şablon kodunuz içinde çok fazla kapatma küme. Derleyici, standart nesil koduyla kafa karıştırıcı olduğu.|Küme parantezleri ve köşeli ayraçlar içinde kod sınırlayıcılar kapatma sayısını denetleyin.|  
-|Döngüler veya derlenmiş değil veya düzgün şekilde yürütmesi koşullular. Örneğin: `<#if (i>10)#> Number is: <#= i #>`.<br /><br /> Bu kod, her zaman değerini çıkarır ediyorum. Yalnızca "sayıdır:" koşullu değil.|C# içinde her zaman küme ayraçları denetim deyimlerinde katıştırılmış metin blokları kapsamak için kullanın.|Küme ayracı Ekle: `<#if (i>10) { #>    Number is: <#= i #><# } #>`.|  
+|Döngüler veya derlenmiş değil veya düzgün şekilde yürütmesi koşullular. Örneğin: `<#if (i>10)#> Number is: <#= i #>`<br /><br /> Bu kod, her zaman değerini çıkarır ediyorum. Yalnızca "sayıdır:" koşullu değil.|C# içinde her zaman küme ayraçları denetim deyimlerinde katıştırılmış metin blokları kapsamak için kullanın.|Küme ayracı Ekle: `<#if (i>10) { #>    Number is: <#= i #><# } #>`.|  
 |"İfade çok karmaşık", bir tasarım zamanı şablonu işleme veya bir çalışma zamanı (önceden işlenmiş) şablonu derleniyor.<br /><br /> [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bir çalışma zamanı şablon tarafından oluşturulan kodu incelemek çalışırken çalışmayı durdurur.|Metin bloğu çok uzun. T4 metin blokları her bir şablon satır için bir dize içeren bir dize birleştirme ifadesi dönüştürür. Çok uzun metin blokları, derleyicinin boyut sınırları çağırdığınızdan.|Uzun metin bloğu gibi bir ifade bloğu ile bölmeniz:<br /><br /> `<#= "" #>`|  
   
 ## <a name="warning-descriptions-and-fixes"></a>Uyarı açıklaması ve düzeltme  

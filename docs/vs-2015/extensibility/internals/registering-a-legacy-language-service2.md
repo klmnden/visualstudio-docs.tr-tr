@@ -1,7 +1,7 @@
 ---
 title: Bir eski dil hizmeti kaydetme2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 59fbdb3417bbeb09a47f1c7a7b0552f230a6d269
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 833dfbfe62a7e8b669460d332ade43f670a4a13e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686299"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287085"
 ---
 # <a name="registering-a-legacy-language-service"></a>Eski dil hizmeti kaydediliyor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [bir eski dil hizmeti Kaydetme2](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-a-legacy-language-service2).  
-  
 Aşağıdaki bölümlerde kayıt defteri girdilerinin listesi çeşitli dil için kullanılabilir hizmet seçenekleri sağlanır [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
  Kayıt defteri girdileri aşağıdaki listedeki *VS Reg kök* hkey_local_machıne\software\microsoft\visualstudio için eşittir\\*X.Y*burada *X.Y* olduğu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] sürüm numarası.  

@@ -1,7 +1,7 @@
 ---
 title: Komut satırından ClickOnce uygulamaları oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: beb799a75649b02a04dc4a0aae8672855b1094b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 070ab3c216cacfcaeaf73bdc4cc6bebdaf52233b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688055"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271040"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Komut Satırından ClickOnce Uygulamalarını Derleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [komut satırından ClickOnce uygulamalarını derleme](https://docs.microsoft.com/visualstudio/deployment/building-clickonce-applications-from-the-command-line).  
-  
 İçinde [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], tümleşik geliştirme ortamında (IDE) oluşturulmamış olsa bile, komut satırından projeleri oluşturabilirsiniz. Aslında, ile oluşturulmuş bir projeyi yeniden oluşturabilirsiniz [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] yalnızca olan başka bir bilgisayara [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] yüklü. Bu, otomatik bir işlem kullanılarak yapı oluşturmanızı sağlar, örneğin, merkezi bir yapı içinde Laboratuvar veya kullanarak, proje oluşturma kapsamı dışında teknikleri Gelişmiş.  
   
 ## <a name="using-msbuild-to-reproduce-clickonce-application-deployments"></a>ClickOnce Uygulama dağıtımlarını yeniden oluşturmak için MSBuild kullanma  
@@ -75,13 +73,13 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [komut satırından ClickOn
   
 2.  Windows gelen **Başlat** menüsünde tıklayın **tüm programlar**, ardından **Microsoft Visual Studio**, ardından **Visual Studio Araçları**, ardından **Visual Studio komut istemi**. Bu, geçerli kullanıcının kök klasöründe bir komut istemi açmanız gerekir.  
   
-3.  İçinde **Visual Studio komut istemi**, geçerli dizini yalnızca yerleşik yukarıda projenin konumunu değiştirin. Örneğin `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.  
+3.  İçinde **Visual Studio komut istemi**, geçerli dizini yalnızca yerleşik yukarıda projenin konumunu değiştirin. Örneğin, `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.  
   
 4.  Üretilen mevcut dosyaları kaldırmak için "oluşturmak ve yayımlamak için bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] projesi" türü `rmdir /s publish`.  
   
      Bu adım isteğe bağlıdır, ancak yeni dosyalar tüm komut satırı derleme tarafından üretilen sağlar.  
   
-5.  Tür `msbuild /target:publish`.  
+5.  Türü `msbuild /target:publish`  
   
  Yukarıdaki adımları tam üretecektir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] projenizin P adlı bir alt uygulama dağıtımı**Yayımla**. CmdLineDemo.Application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım bildirimi. CmdLineDemo_1.0.0.0 klasörü CmdLineDemo.exe dosyaları CmdLineDemo.exe.manifest ve dosyalarını içeren [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi. Setup.exe olduğundan, varsayılan olarak yüklemek için yapılandırılmış önyükleyici [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. DotNetFX klasörü için yeniden dağıtılabilir dosyaları içeren [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Web üzerinden ya da UNC veya CD/DVD aracılığıyla uygulamanızı dağıtmak için gereken dosya kümesinin tamamını budur.  
   

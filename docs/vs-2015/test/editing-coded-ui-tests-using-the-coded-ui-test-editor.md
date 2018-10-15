@@ -1,7 +1,7 @@
 ---
 title: Kodlanmış UI testleri, kodlanmış UI Test düzenleyicisini kullanarak düzenleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2d43cef0a6603b1085306a64bb385a520f2b5637
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa426175155f45feb480b8185b5902049101f577
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693765"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242729"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Kodlanmış UI Test Düzenleyicisi'ni Kullanarak Kodlanmış UI Testlerini Düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [düzenleme kodlanmış UI Test düzenleyicisini kullanarak kodlanmış UI testleri](https://docs.microsoft.com/visualstudio/test/editing-coded-ui-tests-using-the-coded-ui-test-editor).  
-  
 Kodlanmış UI Test Düzenleyicisi'ni kullanarak kodlanmış UI testlerini kolayca değiştirmenize olanak tanır. Kodlanmış UI Test Düzenleyicisi'ni kullanarak bulun, görüntüleyin ve test yöntemlerinizi ve UI eylemlerini özelliklerini düzenleyin. Ayrıca, UI kontrol haritasını görüntülemek ve bunların ilgili denetimleri düzenlemek için kullanabilirsiniz.  
   
  **Gereksinimler**  
@@ -82,7 +80,7 @@ UI eylem özelliklerini düzenleme
   
  Bir UI eylem özelliklerini değiştirmek için **UI eylemi** bölmesinde UI eylem özelliklerini yı düzenlemek istediğiniz bir UI eyleminden içeren test yöntemi genişletin ve ardından Özellikler penceresini kullanarak özelliklerini değiştirin.  
   
- Örneğin, bir sunucu kullanılamıyor ve Web tarayıcınızı ile ilişkili bir kullanıcı Arabirimi eylemine sahip belirten **Web sayfasına gidin 'http://Contoso1/default.aspx'**, URL'sine değişebilir `‘http://Contoso2/default.aspx’`.  
+ Örneğin, bir sunucu kullanılamıyor ve Web tarayıcınızı ile ilişkili bir kullanıcı Arabirimi eylemine sahip belirten **Web sayfasına gidin 'http://Contoso1/default.aspx'**, URL'sine değişebilir `‘ http://Contoso2/default.aspx’`.  
   
  ![Denetim Özellikleri](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Denetim özelliklerini düzenleme  

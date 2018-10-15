@@ -1,7 +1,7 @@
 ---
 title: Hata ayıklama için SDK Yardımcıları | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 010827bc484ceed7c24c12759a2d6e610abad95e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4b058b4e3f831f4d8eddcbd816e4e35dbd83803
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694394"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232870"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Hata Ayıklama için SDK Yardımcıları
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [hata ayıklama için SDK Yardımcıları](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/sdk-helpers-for-debugging).  
-  
 Bu işlevler ve bildirimleri C++'da uygulama, hata ayıklama altyapısı, ifade değerlendiricilerini ve sembol sağlayıcıları için genel yardımcı işlevlerdir.  
   
 > [!NOTE]
@@ -278,7 +276,7 @@ HRESULT EnumMetricSections(
 |*[ölçüm değeri]*|Ölçüm için atanan değer. Değeri (dize, sayı, vb.) olmamalıdır türüne ölçüme göre değişir.|  
   
 > [!NOTE]
->  Tüm GUID biçiminde depolanır `{GUID}`. Örneğin, `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
+>  Tüm GUID biçiminde depolanır `{GUID}`. Örneğin: `{123D150B-FA18-461C-B218-45B3E4589F9B}`  
   
 ### <a name="debug-engines"></a>Hata ayıklama altyapıları  
  Aşağıdaki kayıt defteri hata ayıklama altyapıları ölçümlerinin kuruluştur. `Engine` hata ayıklama altyapısı için ölçüm türü adıdır ve karşılık gelen *[ölçüm türü]* yukarıdaki kayıt defteri alt ağacı içinde.  

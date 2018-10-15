@@ -1,7 +1,7 @@
 ---
 title: Bir özel konak kullanarak metin şablonlarını işleme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 62fd774744c9bb9184d3dcc25eb7827f93feb223
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5fa54f6b7ea57b6374e8fef291c64f0e5369ffea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693814"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303465"
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>Bir Özel Konak kullanarak Metin Şablonlarını İşleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [özel konak kullanarak metin şablonlarını işleme](https://docs.microsoft.com/visualstudio/modeling/processing-text-templates-by-using-a-custom-host).  
-  
 *Metin şablonu dönüştürme* işlem alır bir *metin şablonu* dosyası olarak girdi ve çıktı olarak bir metin dosyası oluşturur. Metin dönüştürme altyapısı çağırabilirsiniz bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uzantısı, veya bir makine üzerinde çalışan bir tek başına uygulamasından [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] yüklenir. Ancak, sağlamanız gereken bir *metin şablonu oluşturma barındırıcısı*. Bu sınıf, derlemeler ve ekleme dosyaları gibi kaynakları bularak ve çıktı ve hata iletilerini işleme alarak şablonu ortama bağlar.  
   
 > [!TIP]

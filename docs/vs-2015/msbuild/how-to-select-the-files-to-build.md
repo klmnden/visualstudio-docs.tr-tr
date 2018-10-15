@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: derlenecek dosyaları seçme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 284ad92c170e0b34b73ca15a7eb2f35b744f44a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b8eeb62b8a5091743345c1a5c136bc2fa87269c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694455"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223814"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Nasıl Yapılır: Derlenecek Dosyaları Seçme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [nasıl yapılır: derlenecek dosyaları seçme](https://docs.microsoft.com/visualstudio/msbuild/how-to-select-the-files-to-build).  
-  
   
 Bir proje oluşturduğunuzda bazı dosyaları içeren, her dosya proje dosyasında ayrı olarak listeleyebilirsiniz veya tüm dosyaları bir dizin veya iç içe geçmiş bir dizinler kümesi eklemek için joker karakterler kullanabilirsiniz.  
   
@@ -49,7 +47,7 @@ Bir proje oluşturduğunuzda bazı dosyaları içeren, her dosya proje dosyasın
      `<VBFile Include="form1.vb"/>`  
   
     > [!NOTE]
-    >  Proje dosyası ile aynı dizinde bir öğe koleksiyonu öğeleri emin değilseniz, öğenin tam veya göreli yol belirtmeniz gerekir. Örneğin: `Include="..\..\form2.cs"`.  
+    >  Proje dosyası ile aynı dizinde bir öğe koleksiyonu öğeleri emin değilseniz, öğenin tam veya göreli yol belirtmeniz gerekir. Örneğin: `Include="..\..\form2.cs"`  
   
 #### <a name="to-declare-multiple-items"></a>Birden çok öğe bildirmek için  
   
@@ -182,7 +180,7 @@ Bir proje oluşturduğunuzda bazı dosyaları içeren, her dosya proje dosyasın
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: dosyaları derlemeden dışlama](../msbuild/how-to-exclude-files-from-the-build.md)   
- [Öğeleri](../msbuild/msbuild-items.md)
+ [Öğeler](../msbuild/msbuild-items.md)
 
 
 
