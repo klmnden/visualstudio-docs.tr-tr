@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 4764df436a7adeb3ac65c574812c8f7d334d497b
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: da27e119c26a304f2b49f641509c87f15535cc0c
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890571"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356710"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>XAML Tasarımcısı’nda proje kodu hatalarını ayıklama veya proje kodunu devre dışı bırakma
 
@@ -86,6 +86,19 @@ Visual Studio, proje kodunu devre dışı bırakıldığında, yer tutucuları g
 
     > [!NOTE]
     > Proje kodunu devre dışı bırakmak için tasarım zamanı veri kaybına neden olabilir. Tasarımcıda çalışan kodda hata ayıklamak için kullanılan bir alternatiftir.
+
+## <a name="control-display-options"></a>Denetim görüntüleme seçenekleri
+
+> [!NOTE]
+> **Denetim görüntüleme seçenekleri** yalnızca Windows 10 Fall Creators Update (derleme 16299) hedefleyen Evrensel Windows platformu uygulamaları için kullanılabilir veya üzeri. **Denetimi görüntüleme seçeneklerini** özelliği Visual Studio 2017 15,9 veya sonraki bir sürümü kullanılabilir. 
+
+XAML Tasarımcısı'nda, yalnızca Windows SDK platform denetimlerini görüntülemek için Denetim görüntüleme seçeneklerini değiştirebilirsiniz. Bu XAML tasarımcının güvenilirliğini artırabilir.
+
+Denetim görüntüleme seçeneklerini değiştirmek için Tasarımcı penceresinin sol alt simgeyi tıklatın ve ardından **denetimi görüntüleme seçeneklerini** düğmesi:
+
+![Denetim görüntüleme seçenekleri](../designers/media/control_display_options.png)
+
+Seçtiğinizde, **yalnızca görüntü platformu denetimleri**, SDK'larından gelen tüm özel denetimleri, müşteri kullanıcı denetimleri ve daha fazla değil işleme tamamen. Bunun yerine, bunlar denetimin konumunu ve boyutunu göstermek için geri dönüş denetimleri tarafından değiştirilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

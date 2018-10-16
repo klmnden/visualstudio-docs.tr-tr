@@ -9,16 +9,18 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 778ad9112d4133871bd15292847d21af73c3ad86
-ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
+ms.openlocfilehash: 079ae6affd5c495136d97a00eae2ddccfa2c9066
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44701715"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356788"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Visual Studio Kubernetes araçları kullanmaya başlayın
 
 Visual Studio Kubernetes araçları Kubernetes hedefleyen kapsayıcılı uygulamaların geliştirilmesini kolaylaştıran yardımcı olur. Visual Studio, Kubernetes dağıtımı, dockerfile'ları ve Helm grafiklerini gibi desteklemek için gereken kod olarak yapılandırma dosyaları otomatik olarak oluşturabilirsiniz. Azure geliştirme alanları kullanarak canlı bir Azure Kubernetes Service (AKS) kümesi kodunuzda hata ayıklamak veya bir AKS kümesi doğrudan yayımlamak Visual Studio içinde.
+
+Bu öğretici, Visual Studio kullanarak Kubernetes desteği olan bir projeye ekleme ve yayımlama için AKS kapsar. Kullanarak öncelikle ilgileniyorsanız [Azure geliştirme alanları](http://aka.ms/get-azds) hata ayıklamak ve test projeniz AKS'de çalışan için atlayabilirsiniz [Azure geliştirme alanları öğretici](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio) yerine.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -28,9 +30,9 @@ Bu yeni işlevselliği yararlanmak için gerekir:
 
 - [Visual Studio için Kubernetes Araçları](https://aka.ms/get-vsk8stools), ayrı bir indirme olarak kullanılabilir.
 
-- [Windows için docker](https://store.docker.com/editions/community/docker-ce-desktop-windows) geliştirme iş istasyonunuzda yüklü (diğer bir deyişle, Visual Studio'yu çalıştırdığınız), Docker görüntülerinizi oluşturmak istiyorsanız, yerel olarak çalışan Docker kapsayıcıları hata ayıklama veya AKS için yayımlayın.
+- [Windows için docker](https://store.docker.com/editions/community/docker-ce-desktop-windows) geliştirme iş istasyonunuzda yüklü (diğer bir deyişle, Visual Studio'yu çalıştırdığınız), Docker görüntülerinizi oluşturmak istiyorsanız, yerel olarak çalışan Docker kapsayıcıları hata ayıklama veya AKS için yayımlayın. (Docker *değil* derleme ve Azure Dev alanları kullanarak AKS Docker kapsayıcılarında hata ayıklama için gereklidir.)
 
-- AKS için Visual Studio'dan yayımlamak istiyorsanız:
+- AKS için Visual Studio'dan yayımlamak isterseniz (*değil* Azure geliştirme alanları kullanarak AKS içinde hata ayıklama için gerekli):
 
     1.  [Yayınlama araçları AKS](https://aka.ms/get-vsk8spublish), ayrı bir indirme olarak kullanılabilir.
 
@@ -78,11 +80,11 @@ Eklenen dosyalar şunlardır:
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Azure Kubernetes Service'i (AKS) yayımlama
 
-Yalnızca zaman olduğu gibi tüm bu dosyaları yerinde, Visual Studio IDE yazma ve uygulama kodunuzun hatalarını ayıklamak için kullanabilirsiniz.
+Yalnızca zaman olduğu gibi tüm bu dosyaları yerinde, Visual Studio IDE yazma ve uygulama kodunuzun hatalarını ayıklamak için kullanabilirsiniz. Ayrıca [Azure geliştirme alanları](http://aka.ms/get-azds) hızla çalıştırın ve kodunuzu bir AKS kümesinde çalışırken hata ayıklamak için. Daha fazla bilgi için lütfen başvuru [Azure geliştirme alanları Öğreticisi](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
 
 Bir AKS kümeye doğrudan Visual Studio'dan yayımlayabilirsiniz, istediğiniz şekilde çalışan, koda sahip olduğunuzda.
 
-Bunu yapmak için önce her şeyi açıklandığı yüklediğinizi sağlayamazsanız yapmanız [önkoşulları](#prerequisities) bölümünde yayımlamak için AKS öğesinin altındaki ve bağlantıları verilen tüm komut satırı adımlarını çalıştırın. Ardından, kapsayıcı görüntünüzü Azure Container Registry (ACR) yayımlayan bir yayımlama profili ayarlayın. Ardından AKS ACR'den, kapsayıcı görüntüsü çekin ve kümeye dağıtın.
+Bunu yapmak için önce her şeyi açıklandığı yüklediğinizi sağlayamazsanız yapmanız [önkoşulları](#prerequisites) bölümünde yayımlamak için AKS öğesinin altındaki ve bağlantıları verilen tüm komut satırı adımlarını çalıştırın. Ardından, kapsayıcı görüntünüzü Azure Container Registry (ACR) yayımlayan bir yayımlama profili ayarlayın. Ardından AKS ACR'den, kapsayıcı görüntüsü çekin ve kümeye dağıtın.
 
 1. İçinde **Çözüm Gezgini**, sağ tıklayın, *proje* ve **Yayımla**.
 
@@ -119,3 +121,5 @@ Tebrikler! Artık tüm Kubernetes uygulama geliştirme için Visual Studio'nun t
 ## <a name="next-steps"></a>Sonraki adımlar
 
 Azure'da Kubernetes geliştirme hakkında daha fazla bilgi edinmek [AKS belgelerini](/azure/aks).
+
+Azure geliştirme alanları hakkında daha fazla bilgi edinmek [Azure geliştirme alanları belgeleri](http://aka.ms/get-azds)

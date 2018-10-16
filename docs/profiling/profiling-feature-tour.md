@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 907aa9eb69bbbbe23f147472995cc7a4accd3679
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 9f884b92d03027782eed27f4583e06b1141341db
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860446"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356801"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Hızlı Başlangıç: Profil oluşturma araçları ilk bakış
 
@@ -34,7 +34,8 @@ Hata ayıklarken, kullanabileceğiniz **tanılama araçları** penceresi CPU ve 
 
 **Tanılama araçları** penceresi, genellikle profili uygulamalar için tercih edilen yoludur, ancak sürüm derlemeleri için Ayrıca uygulamanızı son İnceleme analizini bunun yerine bunu yapabilirsiniz. Farklı yaklaşımlar hakkında daha fazla bilgi istiyorsanız bkz [profil oluşturma araçları ile veya hata ayıklayıcı olmadan çalıştırın](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Farklı uygulama türleri için araç desteği görmek için bkz: [hangi aracın kullanmalıyım?](#which-tool-should-i-use).
 
-> ! [NOT] Windows 7 ve daha sonra son İnceleme araçları kullanabilirsiniz. Windows 8 ve üzeri, hata ayıklayıcısı ile profil oluşturma araçları çalıştırmak için gereklidir (**tanılama araçları** pencere).
+> [!NOTE]
+> Windows 7 ve daha sonra son İnceleme araçları kullanabilirsiniz. Windows 8 ve üzeri, hata ayıklayıcısı ile profil oluşturma araçları çalıştırmak için gereklidir (**tanılama araçları** pencere).
 
 ## <a name="analyze-cpu-usage"></a>CPU kullanımını analiz etme
 

@@ -9,16 +9,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a0d5ab3c86c454a547ea80307c5440441424b1c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 91d9c809d16a3763bed75d5de4c03bd7112c6e8a
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499571"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356762"
 ---
 # <a name="create-your-first-extension-hello-world"></a>İlk uzantınızı oluşturun: Hello World
 
-Bu Hello World örnek, Visual Studio için ilk uzantınızı oluşturmada size yol gösterir. Bu öğreticide, Visual Studio için yeni bir komut ekleme gösterilmektedir.
+Bu Hello World örnek, Visual Studio için ilk uzantınızı oluşturmada size yol gösterir. Bu öğreticide Visual Studio için yeni bir komut eklerseniz gösterilmektedir.
 
 Bu süreçte şunları öğreneceksiniz nasıl yapılır:
 
@@ -35,11 +35,12 @@ Bu örnekte, Visual C# özel menü düğmesi "Deyin. Hello World!" adlı eklemek
 
 Başlamadan önce yüklediğinizden emin olun **Visual Studio uzantısı geliştirme** ihtiyacınız ve örnek kod VSIX şablonu içeren iş yükü.
 
-Not: Visual Studio (Community, Professional veya Enterprise) Visual Studio genişletilebilirlik projesi oluşturmak için herhangi bir sürümünü kullanabilirsiniz.
+> [!NOTE]
+> Visual Studio (Community, Professional veya Enterprise) Visual Studio genişletilebilirlik projesi oluşturmak için herhangi bir sürümünü kullanabilirsiniz.
 
 ## <a name="create-an-extensibility-project"></a>Bir genişletilebilirlik projesi oluşturma
 
-Adım 1. Gelen **dosya** menüsünü tıklatın **yeni proje**. Ekranın alt kısmında, projenizin adını girebilirsiniz.
+Adım 1. Gelen **dosya** menüsünü tıklatın **yeni proje**. Ekranın alt kısmında, projenizin adını girin.
 
 Adım 2. Gelen **şablonları** menüsünde tıklatın **Visual C#**, tıklayın **genişletilebilirlik**ve ardından **VSIX projesi**.
 
@@ -53,9 +54,9 @@ Bu öğreticide bırakın ve kendisine döndürülmesini gerekiyorsa, yeni Hello
 
 Adım 1. Bildirim seçerseniz, hangi seçenekleri örneği, meta verileri, açıklama ve sürümü için ayarlarken görebilirsiniz.
 
-Adım 2. ' % S'projesi (çözümü değil) sağ tıklayın. Bağlam menüsünde **Ekle**ve ardından **kullanıcı denetimi**.
+Adım 2. ' % S'projesi (çözümü değil) sağ tıklayın. Bağlam menüsünde **Ekle**ve ardından **yeni öğe**.
 
-Adım 3. Geri Git **genişletilebilirlik** bölümüne ve ardından **özel komut**.
+Adım 3. Seçin **genişletilebilirlik** bölümüne ve ardından **özel komut**.
 
 4. adımı. İçinde **adı** altındaki alan, bu örneği için bir ad verin *Command.cs*.
 
@@ -116,7 +117,7 @@ Her dosya için değişikliklerinizi kaydettiğinizden emin olun.
 
 Bu gibi durumlarda, kaynak kodu artık Visual Studio deneysel örneğinde çalıştırabilirsiniz.
 
-Adım 1. Tıklayın **Başlat** araç. Bu derleme ve hata ayıklayıcı, Visual Studio adlı yeni bir örneğini başlatarak, başlangıç **deneysel örneğinde**.
+Adım 1. Tıklayın **Başlat** araç. Bu, projeniz derlenir ve Visual Studio adlı yeni bir örneğini başlatarak, hata ayıklayıcıyı başlatır **deneysel örneğinde**.
 
 Sözcükleri göreceğiniz **deneysel örneğinde** Visual Studio başlık çubuğunda.
 

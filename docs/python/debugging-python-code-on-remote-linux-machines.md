@@ -1,7 +1,7 @@
 ---
 title: Uzak Linux bilgisayarlarda Python kodunda hata ayıklama
 description: Uzak Linux bilgisayarlarda çalışan, gerekli yapılandırma adımları, güvenlik ve sorun giderme Python kodunda hata ayıklamak için Visual Studio kullanma
-ms.date: 09/03/2018
+ms.date: 10/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3462e3e46a551b9f9245dc2cb5bf25bbcde768a5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 654ac9cfd466cfdd6486ea5aa9e658495d5704fe
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549317"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356775"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Linux'ta Python kodu uzaktan hata ayıklama
 
@@ -74,10 +74,8 @@ Bir Azure sanal makinesi için bir güvenlik duvarı kuralı oluşturma hakkınd
 
    ```python
    import ptvsd
-   ptvsd.enable_attach('my_secret')
+   ptvsd.enable_attach()
    ```
-
-   Geçirilen ilk bağımsız değişken `enable_attach` ("gizli" olarak adlandırılır) çalışan komut dosyasına erişimi kısıtlayan ve uzaktan hata ayıklayıcı eklerken bu gizli dizi girin. (Önerilmez olsa da, bağlanmak, kullanan herkese izin verebilirsiniz `enable_attach(secret=None)`.)
 
 1. Dosyayı kaydedin ve çalıştırın `python3 guessing-game.py`. Çağrı `enable_attach` arka planda çalışır ve aksi takdirde programla etkileşime geçtiğimiz sırada gelen bağlantılar için bekler. İsterseniz, `wait_for_attach` işlevi, sonra çağrılabilir `enable_attach` hata ayıklayıcı ekler kadar program engelleyecek.
 
@@ -96,10 +94,7 @@ Bu adımlarda, uzak işlemini durdurmak için basit bir kesme noktası ayarladı
 
 1. İçinde **iliştirme** görüntülenen iletişim **bağlantı türü** için **Python uzaktan (ptvsd)**. (Bu komutlar Visual Studio'nun eski sürümlerini adlandırılır **aktarım** ve **Python uzaktan hata ayıklama**.)
 
-1. İçinde **bağlantı hedefi** alan (**niteleyicisi** daha eski sürümlerindeki), girin `tcp://<secret>@<ip_address>:5678` burada `<secret>` geçirilen bir dize `enable_attach` Python kodunda `<ip_address>` budur (Bu bir açık adresi ya da myvm.cloudapp.net gibi bir ad olabilir) uzak bilgisayar ve `:5678` uzaktan hata ayıklama bağlantı noktası numarası.
-
-    > [!Warning]
-    > Genel internet üzerinden bağlantı yapıyorsanız, kullanılmalı `tcps` bunun yerine ve yönerge için aşağıdaki [hata ayıklayıcısı bağlantı SSL ile güvenli](#secure-the-debugger-connection-with-ssl).
+1. İçinde **bağlantı hedefi** alan (**niteleyicisi** daha eski sürümlerindeki), girin `tcp://<ip_address>:5678` burada `<ip_address>` bu uzak bilgisayarın (olabilen bir açık adresi ya da adı gibi myvm.cloudapp.NET) ve `:5678` uzaktan hata ayıklama bağlantı noktası numarası.
 
 1. Tuşuna **Enter** o bilgisayardaki kullanılabilir ptvsd işlemlerin listesini doldurmak için:
 
@@ -121,7 +116,7 @@ Bu adımlarda, uzak işlemini durdurmak için basit bir kesme noktası ayarladı
 1. Kontrol gizli dizisinde **bağlantı hedefi** (veya **niteleyicisi**) gizli dizi uzak kodda tam olarak eşleşir.
 1. IP adresi denetimi **bağlantı hedefi** (veya **niteleyicisi**), uzak bilgisayarın eşleşir.
 1. Uzak bilgisayarda uzaktan hata ayıklama bağlantı noktası açık ve, bağlantı noktası son eki bağlantı hedefte gibi bulunduğundan emin olun `:5678`.
-    - Farklı bir bağlantı noktası kullanmanız gerekiyorsa, içinde belirtebilirsiniz `enable_attach` çağrıda `address` bağımsız değişken, giriş olarak `ptvsd.enable_attach(secret = 'my_secret', address = ('0.0.0.0', 8080))`. Bu durumda, belirli bir bağlantı noktasını Güvenlik Duvarı'nda açın.
+    - Farklı bir bağlantı noktası kullanmanız gerekiyorsa, içinde belirtebilirsiniz `enable_attach` çağrıda `address` bağımsız değişken, giriş olarak `ptvsd.enable_attach(address = ('0.0.0.0', 8080))`. Bu durumda, belirli bir bağlantı noktasını Güvenlik Duvarı'nda açın.
 1. Ptvsd sürümü tarafından döndürülen uzak bilgisayarda yüklü olup olmadığını kontrol edin `pip3 list` aşağıdaki tabloda Visual Studio'da kullanmakta olduğunuz Python tools sürümü tarafından kullanılan eşleşir. Gerekirse, uzak bilgisayardaki ptvsd güncelleştirin.
 
     | Visual Studio sürümü | Python araçları/ptvsd sürümü |
@@ -136,9 +131,15 @@ Bu adımlarda, uzak işlemini durdurmak için basit bir kesme noktası ayarladı
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
-## <a name="secure-the-debugger-connection-with-ssl"></a>Hata ayıklayıcı bağlantısını SSL ile güvenli hale getirme
+## <a name="using-ptvsd-3x"></a>Ptvsd kullanarak 3.x
 
-Varsayılan olarak ptvsd uzaktan hata ayıklama sunucusuyla bağlantı yalnızca gizli dizi tarafından sağlanır ve tüm verileri, düz metin olarak geçirilir. Daha güvenli bir bağlantı için gibi ayarladığınız SSL ptvsd destekler:
+Aşağıdaki bilgiler, yalnızca uzaktan ptvsd ile hata ayıklama için geçerlidir ptvsd kaldırılan bazı özellikleri içeren 3.x 4.x.
+
+1. Ptvsd ile 3.x `enable_attach` işlevi gerekli çalışan betiğe erişimi kısıtlayan ilk bağımsız değişken olarak "gizli dizisini" geçirin. Uzaktan hata ayıklayıcı eklerken bu gizli dizi girin. Önerilmez olsa da, bağlanmak, kullanan herkese izin verebilirsiniz `enable_attach(secret=None)`.
+
+1. Bağlantı hedef URL `tcp://<secret>@<ip_address>:5678` burada `<secret>` geçirilen bir dize `enable_attach` Python kodunda.
+
+Varsayılan olarak, sunucuya ptvsd 3.x uzaktan hata ayıklama yalnızca gizli dizi tarafından sağlanır ve tüm verileri, düz metin olarak geçirilir. Ptvsd daha güvenli bir bağlantı 3.x destekler SSL kullanarak `tcsp` Protokolü şu şekilde ayarlayın:
 
 1. Uzak bilgisayarda ayrı otomatik olarak imzalanan sertifika ve openssl kullanarak anahtar dosyalarını oluşturur:
 
@@ -171,17 +172,12 @@ Varsayılan olarak ptvsd uzaktan hata ayıklama sunucusuyla bağlantı yalnızca
 
     ![SSL ile uzaktan hata ayıklama taşıma seçme](media/remote-debugging-qualifier-ssl.png)
 
-### <a name="warnings"></a>Uyarılar
+1. Visual Studio hakkında olası Sertifika sorunları, SSL üzerinden bağlanırken ister. Uyarılarını gözardı et ve devam, ancak kanal hala gizlice dinlemeye karşı şifrelenmiş olsa da adam-de-adam saldırılarına açık olabilir.
 
-Visual Studio hakkında olası Sertifika sorunları, aşağıda açıklandığı gibi SSL üzerinden bağlanırken ister. Uyarılarını gözardı et ve devam, ancak kanal hala gizlice dinlemeye karşı şifrelenmiş olsa da adam-de-adam saldırılarına açık olabilir.
+    1. Görürseniz **uzaktan sertifikası güvenilir değil** aşağıda uyarı, değil düzgün eklediğiniz sertifika için güvenilen kök CA'yı anlamına gelir. Bu adımlar denetleyin ve yeniden deneyin.
 
-1. Görürseniz **uzaktan sertifikası güvenilir değil** aşağıda uyarı, değil düzgün eklediğiniz sertifika için güvenilen kök CA'yı anlamına gelir. Bu adımlar denetleyin ve yeniden deneyin.
+        ![SSL güvenilen bir sertifika Uyarısı](media/remote-debugging-ssl-warning.png)
 
-    ![SSL güvenilen bir sertifika Uyarısı](media/remote-debugging-ssl-warning.png)
+    1. Görürseniz **uzak sertifika adı, ana bilgisayar adı eşleşmiyor** aşağıda uyarı, size kullanmayan uygun konak adı veya IP adresi olarak geldiğini **ortak ad** sertifikayı oluştururken.
 
-1. Görürseniz **uzak sertifika adı, ana bilgisayar adı eşleşmiyor** aşağıda uyarı, size kullanmayan uygun konak adı veya IP adresi olarak geldiğini **ortak ad** sertifikayı oluştururken.
-
-    ![SSL sertifika ana bilgisayar adı Uyarısı](media/remote-debugging-ssl-warning2.png)
-
-> [!Warning]
-> Şu anda bu uyarılarını gözardı Visual Studio 2017 kilitleniyor. Bağlanmayı denemeden önce tüm sorunları düzeltmek emin olun.
+        ![SSL sertifika ana bilgisayar adı Uyarısı](media/remote-debugging-ssl-warning2.png)
