@@ -1,7 +1,7 @@
 ---
 title: Seçme ve Python yorumlayıcılarını yükleme
 description: Visual Studio'da kısa yönergelerle yükleyicilerinin nerede bulacağını üzerinde desteklenen Python yorumlayıcılarını tam bir listesi.
-ms.date: 09/04/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1d8b9016b0ec5f8334ba94f94b89f5e18bf9fe71
-ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
+ms.openlocfilehash: 7791eec2408f14a442a8dd50c1a881ffc0802697
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48243893"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49324983"
 ---
 # <a name="install-python-interpreters"></a>Python yorumlayıcılarını yükleme
 
 Varsayılan olarak, Python geliştirme iş yükünü Visual Studio 2017'de yükleme Python 3 (64-bit) yükler. İsteğe bağlı olarak Python 2, Python 3, Anaconda 2 ve 3 Anaconda, 32-bit ve 64 bit sürümlerini yüklemek açıklandığı seçebileceğiniz [yükleme](installing-python-support-in-visual-studio.md).
 
-Ayrıca, herhangi bir Visual Studio yükleyicisi dışında aşağıdaki tabloda listelenen yorumlayıcılarını el ile de yükleyebilirsiniz. Örneğin, Visual Studio'yu yüklemeden önce Anaconda 3 yüklü değilse, Visual Studio yükleyicisi yeniden yüklemeniz gerekmez.
+Ayrıca, herhangi bir Visual Studio yükleyicisi dışında aşağıdaki tabloda listelenen yorumlayıcılarını el ile de yükleyebilirsiniz. Örneğin, Visual Studio'yu yüklemeden önce Anaconda 3 yüklü değilse, Visual Studio yükleyicisi yeniden yüklemeniz gerekmez. Ayrıca yorumlayıcıyı el ile yükleyebilirsiniz, örneğin, daha yeni bir sürümü kullanılabilir, henüz Visual Studio Yükleyicisi'nde görünmez.
 
 İçin **Visual Studio 2015 veya önceki**, yorumlayıcılarını birini el ile yüklemelisiniz.
 
@@ -34,7 +34,7 @@ Visual Studio gösterir bilinen tüm ortamlarda [ **Python ortamları** ](managi
 
 | Yorumlayıcı | Açıklama |
 | --- | --- |
-| [CPython](https://www.python.org/) | "Yerel" ve en yaygın olarak kullanılan Yorumlayıcı, 32-bit ve 64-bit sürümleri (32-bit önerilir) kullanılabilir. En son dil özellikleri, en yüksek Python paket uyumluluğu, tam hata ayıklama desteği ve birlikte çalışma içerir [Ipython](http://ipython.org/). Ayrıca bkz: [Python 2 veya Python 3 kullanmalıyım?](https://wiki.python.org/moin/Python2orPython3). Visual Studio 2015 veya önceki Python 3.6 + desteklemez ve hatalar gibi verebilirsiniz Not **desteklenmeyen python 3.6 sürümünü**. Python 3.5 veya daha önceki kullanmak yerine. |
+| [CPython](https://www.python.org/) | "Yerel" ve en yaygın olarak kullanılan Yorumlayıcı, 32-bit ve 64-bit sürümleri (32-bit önerilir) kullanılabilir. En son dil özellikleri, en yüksek Python paket uyumluluğu, tam hata ayıklama desteği ve birlikte çalışma içerir [Ipython](http://ipython.org/). Ayrıca bkz: [Python 2 veya Python 3 kullanmalıyım?](https://wiki,python.org/moin/Python2orPython3). Visual Studio 2015 veya önceki Python 3.6 + desteklemez ve hatalar gibi verebilirsiniz Not **desteklenmeyen python 3.6 sürümünü**. Python 3.5 veya daha önceki kullanmak yerine. |
 | [V Ironpythonu](https://github.com/IronLanguages/ironpython2) | Bir .NET uygulaması sağlama C# /F #/ Visual Basic birlikte çalışabilirliği, Python, 32-bit ve 64 bit sürümlerde kullanılabilir olan erişim .NET API'leri, standart Python hata ayıklama (ancak değil C++ karışık mod hata ayıklama için) ve karma IronPython / C# hata ayıklama. Ancak, IronPython, sanal ortamları desteklemez. |
 | [Anaconda](https://www.continuum.io) | Bir açık veri bilimi platformu Python tarafından desteklenen ve CPython ve zor yükleme paketlerinin en son sürümünü içerir. Aksi takdirde karar veremez, öneririz. |
 | [PyPy](https://www.pypy.org/) | Yüksek performans izleme JIT uzun süre çalışan programlar ve performans tanımlamak burada durumlar için iyi bir Python uygulamasıdır verir ancak diğer çözümleri bulunamıyor. Visual Studio ile ancak sınırlı destek ile çalıştığı için Gelişmiş hata ayıklama özellikleri. |
