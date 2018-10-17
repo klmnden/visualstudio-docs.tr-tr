@@ -1,7 +1,7 @@
 ---
-title: 'Nasıl yapılır: tam zamanında hata ayıklayıcı için yanıt | Microsoft Docs'
+title: Tam zamanında hata ayıklayıcı devre dışı bırakma | Microsoft Docs
 ms.custom: ''
-ms.date: 05/23/17
+ms.date: 05/23/18
 ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -13,41 +13,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3f565d8bb58ae290b0b569bb61d4cb57e8edaa
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 147e16bab14a6a038622804cf9c57e5fdc92bf02
+ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179781"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49382785"
 ---
-# <a name="how-to-respond-to-the-just-in-time-debugger"></a>Nasıl yapılır: tam zamanında hata ayıklayıcı için yanıt
+# <a name="disable-the-just-in-time-debugger"></a>Tam zamanında hata ayıklayıcı devre dışı bırak 
 
-Just-ın-Time gördüğünüzde işlemlerde hata ayıklayıcısı iletişim kutusu bağımlı ne yapılacağını çalışıyorsunuz:
+Tam zamanında hata ayıklayıcı iletişim kutusu içinde çalışan bir uygulamanın hata oluştuğunda açın ve uygulama devam etmesini engelleyebilir. 
 
-#### <a name="if-you-want-to-fix-or-debug-the-error-visual-studio-users"></a>(Visual Studio kullanıcılarına) hata ayıklama veya düzeltmek istiyorsanız
+Tam zamanında hata ayıklayıcı, hata ayıklama için Visual Studio'yu başlatmak için seçeneği sunar. Olmalıdır [Visual Studio](http://visualstudio.microsoft.com) veya başka bir seçilen hata ayıklayıcı hata hakkında ayrıntılı bilgi görüntülemek veya hata ayıklarken için yüklü. 
 
-- Olmalıdır [Visual Studio'nun yüklü](http://visualstudio.microsoft.com) hata hakkında ayrıntılı bilgi görüntülemek ve hata ayıklamak deneyin. Daha fazla bilgi için [tam zamanında hata ayıklayıcı ile hata ayıklama](../debugger/debug-using-the-just-in-time-debugger.md). Hatayı çözün ve uygulama düzeltme, hatayı gidermek için uygulama sahibine başvurun.
+Visual Studio sürümünü kullanıyorsanız ve hata ayıklama için bkz. denemek istiyorsanız [tam zamanında hata ayıklayıcı ile hata ayıklama](../debugger/debug-using-the-just-in-time-debugger.md). Hatayı düzeltin veya tam zamanında hata ayıklayıcı açmasının tutmak istediğiniz olamaz varsa [Visual Studio'dan devre dışı bırakma, Just-ın-Time hata ayıklama](debug-using-the-just-in-time-debugger.md#BKMK_Enabling). 
 
-#### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>Tam zamanında hata ayıklayıcı iletişim kutusunun görünmesini engellemek istiyorsanız
+Visual Studio yüklü, ancak artık iş olsaydı gerekebilir [Windows kayıt defterinden devre dışı bırakma, Just-ın-Time hata ayıklama](debug-using-the-just-in-time-debugger.md#disable-just-in-time-debugging-from-the-windows-registry). 
 
-Just-ın-Time önlemek üzere adım atabilirsiniz görüntülenmesini hata ayıklayıcısı iletişim kutusu. Uygulama hata işleme, uygulama normal şekilde çalıştırabilirsiniz.
+Visual Studio yüklü yoksa, tam zamanında hata ayıklamayı veya sunucu tarafı hata ayıklamasını devre dışı bırakarak hata ayıklamayı engelleyebilir. 
 
-1. (Web uygulamaları) Bir web uygulamasını çalıştırmak çalışıyorsanız, komut dosyası hata ayıklaması devre dışı bırakabilirsiniz.
+- Bir web uygulamasını çalıştırmak çalışıyorsanız, komut dosyası hata ayıklaması devre dışı bırakın:
+  
+  Windows içinde **Denetim Masası** > **ağ ve Internet** > **Internet Seçenekleri**seçin **betik hata ayıklama (devre dışı bırak Internet Explorer)** ve **devre dışı bırak (diğer) ayıklamasını**. Uygulanacak adımlar ve ayarlarını Windows ve tarayıcınızı sürümünüze bağlıdır.
+  
+  ![JIT Internet Seçenekleri](../debugger/media/jitinternetoptions.png "JIT Internet Seçenekleri")
+  
+- IIS'de ASP.NET web uygulaması barındırıyorsanız, sunucu tarafı hata ayıklamasını devre dışı bırakın:
 
-    Internet Explorer veya Edge için Internet Seçenekleri iletişim kutusunda betik hata ayıklamasını devre dışı bırakın. Bu ayarlardan erişebileceğiniz **Denetim Masası** > **ağ ve Internet** > **Internet Seçenekleri** (tam adımlar bağlıdır, Windows ve sürümünü tarayıcınızı).
+  1. IIS Yöneticisi'nde **özellikler görünümü**altında **ASP.NET** bölümünde, çift **.NET derleme**, veya seçin ve ardından **açık özellik**içinde **eylemleri** bölmesi. 
+  1. Altında **davranışı** > **hata ayıklama**seçin **False**. IIS eski sürümlerinde adımlar farklıdır.
 
-    ![JITInternetOptions](../debugger/media/jitinternetoptions.png "JITInternetOptions")
+Tam zamanında hata ayıklama devre dışı bıraktıktan sonra uygulamaya normal olarak çalışır ve hatayı işlemek mümkün olabilir. 
 
-    Hatanın bulunduğu web sayfasını yeniden açın. Bu ayarı değiştirmeden sorunu çözmezse, sorunu düzeltmek için web uygulama sahibine başvurun.
+Uygulamanın yine işlenmemiş bir hata varsa bir hata iletisini görebilirsiniz veya uygulama kilitlenme veya askıda olabilir. Uygulamayı, normalde hata düzeltilene kadar çalışmayacaktır. Uygulama sahibine başvurun ve sorunu gidermek için isteyin deneyebilirsiniz.
 
-3. (Visual Studio kullanıcı) Visual Studio yüklü (veya tablonuz varsa daha önce yüklenmiş ve o da kaldırılır), [devre dışı bırakma, Just-ın-Time hata ayıklama](../debugger/debug-using-the-just-in-time-debugger.md) ve uygulamayı yeniden çalıştırmayı deneyin.
-
-    > [!IMPORTANT]
-    > Just-ın-Time devre dışı bırakırsanız hata ayıklama ve uygulama karşılaştığında işlenmeyen bir özel durum (hata), standart hata iletişim kutusu yerine görürsünüz ve uygulama kilitlenme veya kapat. (Veya uygulama sahibi tarafından) hata düzeltilene kadar uygulama normal şekilde çalışmaz.
-
-2. (ASP.NET ve IIS) IIS'de ASP.NET Web uygulaması barındırıyorsanız, sunucu tarafı hata ayıklamasını devre dışı bırakın.
-
-    IIS Yöneticisi'nde, sunucu düğümünü sağ tıklatın ve seçin **özellikler görünümüne geç**. ASP.NET bölümü altında seçin **.NET derleme** ve ardından seçtiğinizden emin olun **False** (adımları IIS eski sürümlerinde farklı) hata ayıklama davranışı olarak.
-
-## <a name="see-also"></a>Ayrıca Bkz.
- [Hata ayıklayıcı temel bilgileri](../debugger/getting-started-with-the-debugger.md)
