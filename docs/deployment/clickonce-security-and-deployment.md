@@ -19,25 +19,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70c90d70af60b6bd1f2399847447c1d49785ebb0
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: dd089b57fb50d20c8805c932b0043bb8c0dba82e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078432"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926455"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce güvenliği ve dağıtımı
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yüklü ve minimum kullanıcı müdahalesiyle çalıştırma kendi kendini güncelleştiren ve Windows tabanlı uygulamalar oluşturmanızı sağlayan bir dağıtım teknolojisidir. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Yayımlama ve projelerinizi Visual Basic ve Visual C# geliştirdiyseniz, ClickOnce teknolojisi ile dağıtılan uygulamaları güncelleştirmek için tam destek sağlar. Visual C++ uygulamalarını dağıtma hakkında daha fazla bilgi için bkz: [Visual C++ uygulamaları için ClickOnce dağıtımı](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
   
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Dağıtım üç ana dağıtım sorunları üstesinden gelir:  
   
--   **Uygulamaları güncelleştirme sorunlar yaşıyoruz.** Microsoft Windows Installer dağıtımı ile bir uygulama her güncelleştirildiğinde, kullanıcı bir msp dosyası bir güncelleştirmeyi yüklemek ve yüklü ürün için geçerlidir; ile [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtımı, güncelleştirmeleri otomatik olarak sağlayabilirsiniz. Yalnızca değişmiş olan uygulama bölümlerini yüklenir ve ardından tam, güncelleştirilmiş uygulamayı yan yana bir klasörden yeniden yüklenir.  
+- **Uygulamaları güncelleştirme sorunlar yaşıyoruz.** Microsoft Windows Installer dağıtımı ile bir uygulama her güncelleştirildiğinde, kullanıcı bir msp dosyası bir güncelleştirmeyi yüklemek ve yüklü ürün için geçerlidir; ile [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtımı, güncelleştirmeleri otomatik olarak sağlayabilirsiniz. Yalnızca değişmiş olan uygulama bölümlerini yüklenir ve ardından tam, güncelleştirilmiş uygulamayı yan yana bir klasörden yeniden yüklenir.  
   
--   **Kullanıcının bilgisayarı bir etki.** Windows Installer dağıtımı ile uygulama olası sürüm çakışmaları ile paylaşılan bileşenler genellikle dayanır; ile [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım, her uygulama kendi içinde bağımsızdır ve diğer uygulamalarla müdahale edemez.  
+- **Kullanıcının bilgisayarı bir etki.** Windows Installer dağıtımı ile uygulama olası sürüm çakışmaları ile paylaşılan bileşenler genellikle dayanır; ile [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım, her uygulama kendi içinde bağımsızdır ve diğer uygulamalarla müdahale edemez.  
   
--   **Güvenlik izinleri.** Windows Installer dağıtımı, yönetim izinleri gerektirir ve yalnızca sınırlı kullanıcı yüklemesine izin verir; [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtımı yüklemek yönetici olmayan kullanıcılara sağlar ve yalnızca uygulama için gerekli kod erişimi güvenliği izinleri verir.  
+- **Güvenlik izinleri.** Windows Installer dağıtımı, yönetim izinleri gerektirir ve yalnızca sınırlı kullanıcı yüklemesine izin verir; [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtımı yüklemek yönetici olmayan kullanıcılara sağlar ve yalnızca uygulama için gerekli kod erişimi güvenliği izinleri verir.  
   
- Geçmişte, bu sorunları bazen ödün Yükleme kolaylığı için zengin kullanıcı arabirimi, Windows tabanlı uygulamalar yerine Web uygulamaları oluşturmaya karar geliştiricilerin neden oldu. Kullanılarak dağıtılan uygulamalar kullanarak [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], her iki teknolojinin en iyi olabilir.  
+  Geçmişte, bu sorunları bazen ödün Yükleme kolaylığı için zengin kullanıcı arabirimi, Windows tabanlı uygulamalar yerine Web uygulamaları oluşturmaya karar geliştiricilerin neden oldu. Kullanılarak dağıtılan uygulamalar kullanarak [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], her iki teknolojinin en iyi olabilir.  
   
 ## <a name="what-is-a-clickonce-application"></a>ClickOnce uygulaması nedir?  
  A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamasıdır herhangi bir Windows Presentation Foundation (*.xbap*), Windows Forms (*.exe*), konsol uygulaması (*.exe*), ya da Office çözümü (*.dll*) kullanılarak yayımlanan [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] teknoloji. Yayımlayabilmek için bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] üç farklı yolla uygulama: bir Web sayfası, bir ağ dosya paylaşımı veya CD-ROM gibi medya. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama son kullanıcının bilgisayarında yüklü ve bile bilgisayarı çevrimdışı olduğunda veya yalnızca çevrimiçi modda, çalıştırılabilir kalıcı olarak herhangi bir şey son kullanıcının bilgisayarında yüklemeden yerel olarak çalıştırın. Daha fazla bilgi için [ClickOnce dağıtım stratejisini seçin](../deployment/choosing-a-clickonce-deployment-strategy.md).  

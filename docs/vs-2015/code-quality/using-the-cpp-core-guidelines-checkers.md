@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fc975ab5c9c1e43b79ddd861bca3a61e9005f5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 63cd97a23f26d23b99aa7c93be90cef91a630856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194096"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906175"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ temel yönergeleri denetleyicilerini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,25 +35,25 @@ C++ temel yönergeleri yönergeleri, kuralları ve C++ uzmanlar ve tasarımcıla
   
 #### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project"></a>Microsoft.CppCoreCheck paketi projenize eklemek için  
   
-1.  İçinde **Çözüm Gezgini**, pakete eklemek istediğiniz çözümü projenizin bağlam menüsünü açmak için sağ tıklayın. Seçin **NuGet paketlerini Yönet** açmak için **NuGet Paket Yöneticisi**.  
+1. İçinde **Çözüm Gezgini**, pakete eklemek istediğiniz çözümü projenizin bağlam menüsünü açmak için sağ tıklayın. Seçin **NuGet paketlerini Yönet** açmak için **NuGet Paket Yöneticisi**.  
   
-2.  İçinde **NuGet Paket Yöneticisi** penceresinde, Microsoft.CppCoreCheck arayın.  
+2. İçinde **NuGet Paket Yöneticisi** penceresinde, Microsoft.CppCoreCheck arayın.  
   
-     ![Nuget Paket Yöneticisi penceresi gösterir CppCoreCheck paket](../code-quality/media/cppcorecheck-nuget-window.PNG "CPPCoreCheck_Nuget_Window")  
+    ![Nuget Paket Yöneticisi penceresi gösterir CppCoreCheck paket](../code-quality/media/cppcorecheck-nuget-window.PNG "CPPCoreCheck_Nuget_Window")  
   
-3.  Microsoft.CppCoreCheck paketi seçin ve ardından **yükleme** düğmesini kuralları projenize ekleyin.  
+3. Microsoft.CppCoreCheck paketi seçin ve ardından **yükleme** düğmesini kuralları projenize ekleyin.  
   
- NuGet paketini projenize projeniz üzerinde kod analizini etkinleştirdiğinizde, çağrılan bir ek MSBuild .targets dosyasını ekler. Bu .targets dosyasında, Visual Studio kod analizi aracı için ek uzantı olarak C++ temel denetimi kuralları ekler.  
+   NuGet paketini projenize projeniz üzerinde kod analizini etkinleştirdiğinizde, çağrılan bir ek MSBuild .targets dosyasını ekler. Bu .targets dosyasında, Visual Studio kod analizi aracı için ek uzantı olarak C++ temel denetimi kuralları ekler.  
   
- Seçerek projeniz üzerinde kod analizi etkinleştirebilirsiniz **derlemede kod analizini etkinleştir** onay kutusu **Kod Analizi** bölümünü **özellik sayfaları** için iletişim kutusu projenizi.  
+   Seçerek projeniz üzerinde kod analizi etkinleştirebilirsiniz **derlemede kod analizini etkinleştir** onay kutusu **Kod Analizi** bölümünü **özellik sayfaları** için iletişim kutusu projenizi.  
   
- ![Kod Analizi genel ayarları için özellik sayfası](../code-quality/media/cppcorecheck-codeanalysis-general.png "CPPCoreCheck_CodeAnalysis_General")  
+   ![Kod Analizi genel ayarları için özellik sayfası](../code-quality/media/cppcorecheck-codeanalysis-general.png "CPPCoreCheck_CodeAnalysis_General")  
   
- C++ temel denetimi kuralları, Kod Analizi etkinleştirildiğinde çalıştırılan varsayılan kural kümesi bir parçası haline gelir. C++ temel denetimi kuralları geliştirilmekte olduğundan, bazı kurallar tüm kod üzerinde kullanılmaya hazır olmayabilir ancak geliştirme sırasında bilgilendirici olabilir. Bu kurallar, Deneysel olarak kullanıma sunulur. Projeniz için özellikleri yayınlanan veya Deneysel kuralı çalıştırılıp çalıştırılmayacağını seçebilirsiniz.  
+   C++ temel denetimi kuralları, Kod Analizi etkinleştirildiğinde çalıştırılan varsayılan kural kümesi bir parçası haline gelir. C++ temel denetimi kuralları geliştirilmekte olduğundan, bazı kurallar tüm kod üzerinde kullanılmaya hazır olmayabilir ancak geliştirme sırasında bilgilendirici olabilir. Bu kurallar, Deneysel olarak kullanıma sunulur. Projeniz için özellikleri yayınlanan veya Deneysel kuralı çalıştırılıp çalıştırılmayacağını seçebilirsiniz.  
   
- ![Kod Analizi uzantıları ayarları için özellik sayfası](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
+   ![Kod Analizi uzantıları ayarları için özellik sayfası](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
- Etkinleştirmek veya devre dışı C++ temel denetimi kural kümesi için açık **özellik sayfaları** projeniz için iletişim. Altında **yapılandırma özellikleri**, genişletme **Kod Analizi**, **uzantıları**. Denetim yanındaki açılır menüde **etkinleştirme C++ temel denetimi (serbest bırakıldı)** veya **etkinleştirme C++ temel denetimi (Deneysel)**, seçin **Evet** veya **Hayır**. Seçin **Tamam** veya **Uygula** yaptığınız değişiklikleri kaydedin.  
+   Etkinleştirmek veya devre dışı C++ temel denetimi kural kümesi için açık **özellik sayfaları** projeniz için iletişim. Altında **yapılandırma özellikleri**, genişletme **Kod Analizi**, **uzantıları**. Denetim yanındaki açılır menüde **etkinleştirme C++ temel denetimi (serbest bırakıldı)** veya **etkinleştirme C++ temel denetimi (Deneysel)**, seçin **Evet** veya **Hayır**. Seçin **Tamam** veya **Uygula** yaptığınız değişiklikleri kaydedin.  
   
 ## <a name="check-types-bounds-and-lifetimes"></a>Türleri, sınırları ve yaşam süresi yok  
  C++ temel denetimi şu anda denetleyicileri için pakette [tür güvenliği](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type), [sınırların güvenliği](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds), ve [ömrü güvenliği](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime) profilleri.  
@@ -81,15 +81,15 @@ int main()
   
  Bu örnek, C++ temel denetimi kuralları bulabilirsiniz uyarıları birkaçını göstermektedir:  
   
--   C26494 olan kural Type.5: bir nesneyi her zaman başlatın.  
+- C26494 olan kural Type.5: bir nesneyi her zaman başlatın.  
   
--   C26485 olan kural Bounds.3: hiçbir dizi işaretçiye azalma gerçekleştirmeyin.  
+- C26485 olan kural Bounds.3: hiçbir dizi işaretçiye azalma gerçekleştirmeyin.  
   
--   C26481 olan kural Bounds.1: işaretçi aritmetiği kullanmayın. Bunun yerine `span` kullanın.  
+- C26481 olan kural Bounds.1: işaretçi aritmetiği kullanmayın. Bunun yerine `span` kullanın.  
   
- C++ temel denetimi Kod Analizi rulesets yüklediyseniz ve bu kodu derlerken etkin ilk iki uyarıları çıktısı alınır, ancak üçüncü bastırılır. Örnek kod derleme çıktısı şöyledir:  
+  C++ temel denetimi Kod Analizi rulesets yüklediyseniz ve bu kodu derlerken etkin ilk iki uyarıları çıktısı alınır, ancak üçüncü bastırılır. Örnek kod derleme çıktısı şöyledir:  
   
- **1 >---derleme başladı: Proje: CoreCheckExample, yapılandırma: hata ayıklama Win32--**  
+  **1 >---derleme başladı: Proje: CoreCheckExample, yapılandırma: hata ayıklama Win32--**  
 **----**  
 **1 > CoreCheckExample.cpp**  
 **1 > CoreCheckExample.vcxproj C:\Users\username\documents\visual studio 2015\P ->**  

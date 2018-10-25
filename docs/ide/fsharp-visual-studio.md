@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 938beef8676901c385ef7cc7c07b9ce0d52067c3
-ms.sourcegitcommit: c87b0d9f65dc7ebe95071f66ea8da4d4bc52d360
+ms.openlocfilehash: 4512a6ad5efe519c203a764b18cdfc352ed6e81a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993908"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921437"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Visual Studio içinde Visual F # ile geliştirme
 
@@ -61,7 +61,7 @@ Proje Özellikleri'nde özellikler aşağıdaki tabloda F #'ta özetlenmiştir:
 **Proje Tasarımcısı** ilgili işlevselliğe göre gruplandırılan çeşitli proje özellik sayfaları oluşur. F # projeleri için kullanılabilir sayfaları genellikle diğer diller için mevcut kodlar alt kümesidir ve aşağıdaki tabloda açıklanmıştır. Bağlantılar sağlanır karşılık gelen C# için **Proje Tasarımcısı** sayfası.
 
 |Proje Tasarımcısı sayfası|İlgili bağlantılar|Açıklama|
-|---------------------|-------------|-----------|
+| - |-------------|-----------|
 |Uygulama|[Uygulama sayfası, Proje Tasarımcısı](reference/application-page-project-designer-csharp.md)|Uygulama düzeyi ayarları ve özellikleri, bir kitaplık veya yürütülebilir bir dosya, uygulama hangi .NET Framework sürümünü hedefliyor ve burada kaynak dosyaları hakkında bilgi oluşturmakta olduğunuz gibi belirtmenize olanak tanıyan uygulama kullanan depolanır.|
 |Derleme|[Derleme sayfası, Proje Tasarımcısı](reference/build-page-project-designer-csharp.md)|Kodun nasıl derlendiğini denetlemenize olanak verir.|
 |Derleme olayları|[Derleme olayları sayfası, Proje Tasarımcısı](reference/build-events-page-project-designer-csharp.md)|Önce veya sonra bir derleme için komutları belirtmenizi sağlar.|
@@ -75,7 +75,7 @@ Proje Özellikleri'nde özellikler aşağıdaki tabloda F #'ta özetlenmiştir:
 Aşağıdaki tabloda, F #'tan da özgü ayarları özetlenmektedir:
 
 |Proje Tasarımcısı sayfası|Ayar|Açıklama|
-|---------------------|-------|-----------|
+| - |-------|-----------|
 |Derleme|Kuyruk çağrıları oluştur|Seçili olduğunda, Microsoft Ara dil (MSIL) yönerge kuyruğunu kullanımını etkinleştirir. Bu yığın çerçevesinin tail özyinelemeli işlevler için yeniden neden olur. Eşdeğer `--tailcalls` derleyici seçeneği.|
 |Derleme|Diğer bayrakları|Ek derleyici komut satırı seçenekleri belirtmenizi sağlar.|
 

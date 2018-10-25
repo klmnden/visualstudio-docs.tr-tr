@@ -13,124 +13,127 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 71db208b1dc1f651e325445636278f7117356f44
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 4b584495ee4848a3c01ebe63ee30b5bc52b0ff34
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859867"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895645"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Öğe Oluşturma ve Hareketini Özelleştirme
+
 Bir öğeyi başka sürüklenerek araç kutusundan veya bir yapıştırma veya taşıma işlemi izin verebilirsiniz. Belirttiğiniz ilişkileri kullanarak, taşınan öğeleri hedef öğelere bağlı olabilir.
 
- Öğe birleştirme yönergesi (EMD) bir model öğesi olduğunda ne olacağını belirtir *birleştirilmiş* başka bir model öğesi olarak. Böyle olduğunda:
+Öğe birleştirme yönergesi (EMD) bir model öğesi olduğunda ne olacağını belirtir *birleştirilmiş* başka bir model öğesi olarak. Böyle olduğunda:
 
--   Diyagramda veya bir şekil araç kutusundan kullanıcı sürükler.
+- Diyagramda veya bir şekil araç kutusundan kullanıcı sürükler.
 
--   Kullanıcı, bir Ekle menü Gezgini veya bir bölme şekli kullanarak bir öğe oluşturur.
+- Kullanıcı, bir Ekle menü Gezgini veya bir bölme şekli kullanarak bir öğe oluşturur.
 
--   Kullanıcı bir öğeyi bir Kulvar diğerine taşır.
+- Kullanıcı bir öğeyi bir Kulvar diğerine taşır.
 
--   Kullanıcı bir öğeyi yapıştırır.
+- Kullanıcı bir öğeyi yapıştırır.
 
--   Öğe birleştirme yönergesi, program kodu çağırır.
+- Öğe birleştirme yönergesi, program kodu çağırır.
 
- Oluşturma işlemleri kopyalama işlemlerini farklı görünse de, bunlar aslında aynı şekilde çalışır. Örneğin bir öğe eklendiğinde, araç kutusundan bir prototipi çoğaltılır. Prototip, modelin başka bir bölümünden kopyalanan öğeleri aynı şekilde modele birleştirilir.
+Oluşturma işlemleri kopyalama işlemlerini farklı görünse de, bunlar aslında aynı şekilde çalışır. Örneğin bir öğe eklendiğinde, araç kutusundan bir prototipi çoğaltılır. Prototip, modelin başka bir bölümünden kopyalanan öğeleri aynı şekilde modele birleştirilir.
 
- Bir EMD nasıl bir nesne veya grup nesne modelinde belirli bir konuma birleştirilip karar sorumluluğundadır. Özellikle, birleştirilmiş Grup modele bağlanmak için hangi ilişkileri örneği karar verir. Bu özellikleri ayarlamak ve ek nesneler oluşturmak için özelleştirebilirsiniz.
+Bir EMD nasıl bir nesne veya grup nesne modelinde belirli bir konuma birleştirilip karar sorumluluğundadır. Özellikle, birleştirilmiş Grup modele bağlanmak için hangi ilişkileri örneği karar verir. Bu özellikleri ayarlamak ve ek nesneler oluşturmak için özelleştirebilirsiniz.
 
- ![DSL&#45;EMD&#95;birleştirme](../modeling/media/dsl-emd_merge.png) öğe birleştirme yönergesinde rolü
+![DSL&#45;EMD&#95;birleştirme](../modeling/media/dsl-emd_merge.png)
 
- Gömme ilişkisi tanımlarken bir EMD otomatik olarak oluşturulur. Kullanıcılar üst öğeye yeni alt örnekleri eklediğinizde bu varsayılan EMD bir ilişkinin örneğini oluşturur. Özel kod ekleyerek bu varsayılan EMDs örneğin değiştirebilirsiniz.
+Gömme ilişkisi tanımlarken bir EMD otomatik olarak oluşturulur. Kullanıcılar üst öğeye yeni alt örnekleri eklediğinizde bu varsayılan EMD bir ilişkinin örneğini oluşturur. Özel kod ekleyerek bu varsayılan EMDs örneğin değiştirebilirsiniz.
 
- Ayrıca, kendi EMDs sürükleyin veya birleştirilmiş ve alan sınıfları farklı birleşimlerini yapıştırın kullanıcıların DSL tanımındaki ekleyebilirsiniz.
+Ayrıca, kendi EMDs sürükleyin veya birleştirilmiş ve alan sınıfları farklı birleşimlerini yapıştırın kullanıcıların DSL tanımındaki ekleyebilirsiniz.
 
 ## <a name="defining-an-element-merge-directive"></a>Bir öğe birleştirme yönergesinde tanımlama
- Etki alanı sınıfları, etki alanı ilişkileri, şekiller, bağlayıcılar ve diyagramları için öğe birleştirme yönergeleri ekleyebilirsiniz. Ekleyebilir veya bunları DSL Gezgini'nde alıcı etki alanı sınıfı altında bulun. Alıcı sınıfın modelinde ve yeni ya da kopyalanmış öğesi birleştirilmesi gerektiğini zaten olan öğenin etki alanı sınıftır.
 
- ![DSL&#45;EMD&#95;ayrıntıları](../modeling/media/dsl-emd_details.png)
+Etki alanı sınıfları, etki alanı ilişkileri, şekiller, bağlayıcılar ve diyagramları için öğe birleştirme yönergeleri ekleyebilirsiniz. Ekleyebilir veya bunları DSL Gezgini'nde alıcı etki alanı sınıfı altında bulun. Alıcı sınıfın modelinde ve yeni ya da kopyalanmış öğesi birleştirilmesi gerektiğini zaten olan öğenin etki alanı sınıftır.
 
- **Dizin oluşturma sınıfı** alıcı sınıfın üyeleri birleştirilebilir öğelerin etki alanı sınıftır. Dizin oluşturma sınıfının alt sınıfların örneklerini de birleştirilip birleştirilmeyeceğini bu EMD ayarlamadığınız sürece **alt sınıflar için geçerli** false.
+![DSL&#45;EMD&#95;ayrıntıları](../modeling/media/dsl-emd_details.png)
 
- Birleştirme yönergesi iki tür vardır:
+**Dizin oluşturma sınıfı** alıcı sınıfın üyeleri birleştirilebilir öğelerin etki alanı sınıftır. Dizin oluşturma sınıfının alt sınıfların örneklerini de birleştirilip birleştirilmeyeceğini bu EMD ayarlamadığınız sürece **alt sınıflar için geçerli** false.
 
--   A **birleştirme işlemi** yönergesi tarafından yeni bir öğe bağlı olmaları ağacına ilişkileri belirtir.
+Birleştirme yönergesi iki tür vardır:
 
--   A **İleri birleştirme** yönergesi, başka bir alıcı öğe genellikle bir üst öğeye yeni öğe yönlendirir.
+- A **birleştirme işlemi** yönergesi tarafından yeni bir öğe bağlı olmaları ağacına ilişkileri belirtir.
 
- Yönergeleri birleştirmek için özel kod ekleyebilirsiniz:
+- A **İleri birleştirme** yönergesi, başka bir alıcı öğe genellikle bir üst öğeye yeni öğe yönlendirir.
 
--   Ayarlama **kullanan özel kabul** dizinleme öğe belirli bir örneğini hedef öğeye birleştirilmiş olup olmadığını belirlemek için kendi kodunuzu eklemek için. Kullanıcı araç kutusundan sürüklediğinde, kodunuzu birleştirme izin vermiyor, "geçersiz" işaretçi gösterir.
+Yönergeleri birleştirmek için özel kod ekleyebilirsiniz:
 
-     Örneğin, yalnızca alıcı öğe belirli bir durumda olduğunda birleştirme izin verebilir.
+- Ayarlama **kullanan özel kabul** dizinleme öğe belirli bir örneğini hedef öğeye birleştirilmiş olup olmadığını belirlemek için kendi kodunuzu eklemek için. Kullanıcı araç kutusundan sürüklediğinde, kodunuzu birleştirme izin vermiyor, "geçersiz" işaretçi gösterir.
 
--   Ayarlama **kullanan özel birleştirme** eklemek için birleştirme işlemi gerçekleştirildiğinde modelinde yapılan değişiklikleri tanımlamak için kendi kodunu sağlayın.
+   Örneğin, yalnızca alıcı öğe belirli bir durumda olduğunda birleştirme izin verebilir.
 
-     Örneğin, veri modelinde yeni konumuna kullanarak birleştirilmiş öğesinde özellikleri ayarlayabilirsiniz.
+- Ayarlama **kullanan özel birleştirme** eklemek için birleştirme işlemi gerçekleştirildiğinde modelinde yapılan değişiklikleri tanımlamak için kendi kodunu sağlayın.
+
+   Örneğin, veri modelinde yeni konumuna kullanarak birleştirilmiş öğesinde özellikleri ayarlayabilirsiniz.
 
 > [!NOTE]
->  Özel birleştirme kodu yazarsanız, bu EMD kullanılarak gerçekleştirilen yalnızca birleştirmeler etkiler. Aynı nesne türünü birleştirme diğer EMDs varsa veya EMD kullanmadan bu nesneleri oluşturan diğer özel kodu varsa, ardından bunların özel birleştirme kodunuz tarafından etkilenmez.
+> Özel birleştirme kodu yazarsanız, bu EMD kullanılarak gerçekleştirilen yalnızca birleştirmeler etkiler. Aynı nesne türünü birleştirme diğer EMDs varsa veya EMD kullanmadan bu nesneleri oluşturan diğer özel kodu varsa, ardından bunların özel birleştirme kodunuz tarafından etkilenmez.
 >
->  Yeni bir öğe veya yeni ilişki her zaman özel kodunuz tarafından işlendiğinden emin olmak istiyorsanız, tanımlama göz önünde bir `AddRule` gömme ilişkisinde ve `DeleteRule` öğenin etki alanı sınıfı üzerinde. Daha fazla bilgi için [kuralları yaymak değişiklikleri içinde modeli](../modeling/rules-propagate-changes-within-the-model.md).
+> Yeni bir öğe veya yeni ilişki her zaman özel kodunuz tarafından işlendiğinden emin olmak istiyorsanız, tanımlama göz önünde bir `AddRule` gömme ilişkisinde ve `DeleteRule` öğenin etki alanı sınıfı üzerinde. Daha fazla bilgi için [kuralları yaymak değişiklikleri içinde modeli](../modeling/rules-propagate-changes-within-the-model.md).
 
 ## <a name="example-defining-an-emd-without-custom-code"></a>Örnek: bir EMD özel kod olmadan tanımlama
- Aşağıdaki örnek, bir öğe ve bir bağlayıcı aynı anda var olan bir şekil araç kutusundan sürükleyip oluşturmasına olanak verir. Örneğin DSL tanımı için bir EMD ekler. Bu değişiklikten önce kullanıcıların araçları mevcut şekiller üzerine değil ancak diyagram üzerine sürükleyebilirsiniz.
 
- Kullanıcılar ayrıca öğeleri diğer öğeler üzerine yapıştırabilirsiniz.
+Aşağıdaki örnek, bir öğe ve bir bağlayıcı aynı anda var olan bir şekil araç kutusundan sürükleyip oluşturmasına olanak verir. Örneğin DSL tanımı için bir EMD ekler. Bu değişiklikten önce kullanıcıların araçları mevcut şekiller üzerine değil ancak diyagram üzerine sürükleyebilirsiniz.
 
-#### <a name="to-let-users-create-an-element-and-a-connector-at-the-same-time"></a>Kullanıcıların aynı zamanda bir öğe ve bir bağlayıcı oluşturun
+Kullanıcılar ayrıca öğeleri diğer öğeler üzerine yapıştırabilirsiniz.
 
-1.  Kullanarak yeni bir DSL oluşturma **Minimal dil** çözüm şablonu.
+### <a name="to-let-users-create-an-element-and-a-connector-at-the-same-time"></a>Kullanıcıların aynı zamanda bir öğe ve bir bağlayıcı oluşturun
 
-     Bu DSL çalıştırdığınızda, şekilleri ve bağlayıcıları şekiller arasında oluşturmanızı sağlar. Yeni bir sürükleyemezsiniz **ExampleElement** varolan bir şekli araç kutusundan şekli.
+1. Kullanarak yeni bir DSL oluşturma **Minimal dil** çözüm şablonu.
 
-2.  Öğeleri Birleştir kullanıcıların `ExampleElement` şekilleri oluşturmak, yeni bir EMD `ExampleElement` etki alanı sınıfı:
+    Bu DSL çalıştırdığınızda, şekilleri ve bağlayıcıları şekiller arasında oluşturmanızı sağlar. Yeni bir sürükleyemezsiniz **ExampleElement** varolan bir şekli araç kutusundan şekli.
 
-    1.  İçinde **DSL Gezgini**, genişletme **alan sınıfları**. Sağ `ExampleElement` ve ardından **yeni öğe birleştirme yönergesinde ekleme**.
+2. Öğeleri Birleştir kullanıcıların `ExampleElement` şekilleri oluşturmak, yeni bir EMD `ExampleElement` etki alanı sınıfı:
 
-    2.  Emin olun **DSL ayrıntıları** penceresi açıkken, böylece yeni EMD ayrıntılarını görebilirsiniz. (Menü: **görünümü**, **diğer Windows**, **DSL ayrıntıları**.)
+   1.  İçinde **DSL Gezgini**, genişletme **alan sınıfları**. Sağ `ExampleElement` ve ardından **yeni öğe birleştirme yönergesinde ekleme**.
 
-3.  Ayarlama **dizin oluşturma sınıfı** hangi sınıfın öğelerin üzerine birleştirilebilir tanımlamak için DSL Ayrıntıları penceresinde `ExampleElement` nesneleri.
+   2.  Emin olun **DSL ayrıntıları** penceresi açıkken, böylece yeni EMD ayrıntılarını görebilirsiniz. (Menü: **görünümü**, **diğer Windows**, **DSL ayrıntıları**.)
 
-     Bu örnekte, seçin `ExampleElements`, böylece kullanıcı, yeni öğeler var olan öğeleri sürükleyebilirsiniz.
+3. Ayarlama **dizin oluşturma sınıfı** hangi sınıfın öğelerin üzerine birleştirilebilir tanımlamak için DSL Ayrıntıları penceresinde `ExampleElement` nesneleri.
 
-     Dizin oluşturma sınıfı DSL Gezgini'nde EMD adını duruma dikkat edin.
+    Bu örnekte, seçin `ExampleElements`, böylece kullanıcı, yeni öğeler var olan öğeleri sürükleyebilirsiniz.
 
-4.  Altında **bağlantılar oluşturarak birleştirmeyi işle**, iki yolu ekleyin:
+    Dizin oluşturma sınıfı DSL Gezgini'nde EMD adını duruma dikkat edin.
 
-    1.  Bir yolu, yeni bir öğe üst modeline bağlar. Girmenize gerek yol ifadesi mevcut öğesinden ayarlama gömme ilişkisi üst modele gider. Son olarak, yeni bir öğe atanacak yeni bağlantıya rol belirtir. Yol aşağıdaki gibidir:
+4. Altında **bağlantılar oluşturarak birleştirmeyi işle**, iki yolu ekleyin:
 
-         `ExampleModelHasElements.ExampleModel/!ExampleModel/.Elements`
+   - Bir yolu, yeni bir öğe üst modeline bağlar. Girmenize gerek yol ifadesi mevcut öğesinden ayarlama gömme ilişkisi üst modele gider. Son olarak, yeni bir öğe atanacak yeni bağlantıya rol belirtir. Yol aşağıdaki gibidir:
 
-    2.  Başka bir yol var olan öğeye yeni öğe bağlar. Başvuru ilişkisi ve yeni bir öğe atanacak rol yol ifadesi belirtir. Bu yolu aşağıdaki gibidir:
+      `ExampleModelHasElements.ExampleModel/!ExampleModel/.Elements`
 
-         `ExampleElementReferencesTargets.Sources`
+   - Başka bir yol var olan öğeye yeni öğe bağlar. Başvuru ilişkisi ve yeni bir öğe atanacak rol yol ifadesi belirtir. Bu yolu aşağıdaki gibidir:
 
-     Yolun gezinme aracı her bir yol oluşturmak için kullanabilirsiniz:
+      `ExampleElementReferencesTargets.Sources`
 
-    1.  Altında **yollarda bağlantılar oluşturarak birleştirmeyi işle**, tıklayın  **\<yolu Ekle >**.
+      Yolun gezinme aracı her bir yol oluşturmak için kullanabilirsiniz:
 
-    2.  Liste öğesi sağındaki açılan oku tıklatın. Ağaç görünümünde görünür.
+      1. Altında **yollarda bağlantılar oluşturarak birleştirmeyi işle**, tıklayın  **\<yolu Ekle >**.
 
-    3.  Belirlemek istediğiniz yolu oluşturmak için ağaç düğümleri genişletin.
+      2. Liste öğesi sağındaki açılan oku tıklatın. Ağaç görünümünde görünür.
 
-5.  DSL test edin:
+      3. Belirlemek istediğiniz yolu oluşturmak için ağaç düğümleri genişletin.
 
-    1.  Yeniden oluşturun ve çözümü çalıştırmak için F5 tuşuna basın.
+5. DSL test edin:
 
-         Metin şablonlarından yeni DSL tanımı için uygun olması için oluşturulan kodu güncelleştirilecek olduğundan yeniden normalden daha uzun sürer.
+   1.  Tuşuna **F5** yeniden oluşturun ve çözümü çalıştırın.
 
-    2.  Visual Studio'nun deneysel örneği başlatıldığında, DSL'nin bir model dosyasını açın. Bazı örnek öğeleri oluşturun.
+        Metin şablonlarından yeni DSL tanımı için uygun olması için oluşturulan kodu güncelleştirilecek olduğundan yeniden normalden daha uzun sürer.
 
-    3.  Sürükleyin **örnek öğesi** varolan bir şekli üzerine aracı.
+   2.  Visual Studio'nun deneysel örneği başlatıldığında, DSL'nin bir model dosyasını açın. Bazı örnek öğeleri oluşturun.
 
-         Yeni bir şekli görünür ve varolan bir şekli bir bağlayıcı ile bağlantılıdır.
+   3.  Sürükleyin **örnek öğesi** varolan bir şekli üzerine aracı.
 
-    4.  Varolan bir şekli kopyalayın. Başka bir şekil seçmeniz ve yapıştırın.
+        Yeni bir şekli görünür ve varolan bir şekli bir bağlayıcı ile bağlantılıdır.
 
-         İlk şekli bir kopyası oluşturulur.  Yeni bir ada sahip ve ikinci şekli bir bağlayıcı ile bağlantılıdır.
+   4.  Varolan bir şekli kopyalayın. Başka bir şekil seçmeniz ve yapıştırın.
 
- Bu yordamdan aşağıdaki noktalara dikkat edin:
+        İlk şekli bir kopyası oluşturulur.  Yeni bir ada sahip ve ikinci şekli bir bağlayıcı ile bağlantılıdır.
+
+Bu yordamdan aşağıdaki noktalara dikkat edin:
 
 -   Öğe birleştirme yönergeleri oluşturarak, öğenin diğer kabul etmek için herhangi bir sınıf izin verebilirsiniz. Alıcı etki alanı sınıfında EMD oluşturulur ve kabul edilen etki alanı sınıfı belirtilen **dizin sınıfı** alan.
 
@@ -143,9 +146,10 @@ Bir öğeyi başka sürüklenerek araç kutusundan veya bir yapıştırma veya t
      Yeni öğeleri oluşturan özel kodu yazarsanız, açıkça EMD kullanarak çağırabilirsiniz `ElementOperations.Merge` yöntemi. Bu, kodunuzu yeni öğeler modele diğer işlemler aynı şekilde bağlantı emin olur. Daha fazla bilgi için [kopyalama davranışını özelleştirme](../modeling/customizing-copy-behavior.md).
 
 ## <a name="example-adding-custom-accept-code-to-an-emd"></a>Örnek: Bir EMD için özel kabul kod ekleme
- Bir EMD için özel kod ekleyerek daha karmaşık birleştirme davranışı tanımlayabilirsiniz. Bu basit örnekte, kullanıcı diyagrama öğe sayısından daha eklemesini önler. Örneğin, varsayılan gömme ilişkisi eşlik eden EMD değiştirir.
 
-#### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>Hangi kullanıcı ekleyebilir kısıtlamak için özel kabul kod yazma
+Bir EMD için özel kod ekleyerek daha karmaşık birleştirme davranışı tanımlayabilirsiniz. Bu basit örnekte, kullanıcı diyagrama öğe sayısından daha eklemesini önler. Örneğin, varsayılan gömme ilişkisi eşlik eden EMD değiştirir.
+
+### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>Hangi kullanıcı ekleyebilir kısıtlamak için özel kabul kod yazma
 
 1.  Bir DSL kullanarak oluşturma **Minimal dil** çözüm şablonu. DSL tanım diyagramı açın.
 
@@ -186,35 +190,35 @@ Bir öğeyi başka sürüklenerek araç kutusundan veya bir yapıştırma veya t
         }
       }
     }
-
     ```
 
-     Bu basit örnekte üst modele birleştirilebilir öğelerin sayısını kısıtlar. Daha çok ilginizi çeken koşullara için yöntem özelliklerinden herhangi birini ve alıcı nesnenin bağlantıları inceleyebilirsiniz. İçinde gerçekleştirilen birleştirme öğelerin özelliklerini inceleyebilirsiniz bir <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Hakkında daha fazla bilgi için `ElementGroupPrototypes`, bkz: [kopyalama davranışını özelleştirme](../modeling/customizing-copy-behavior.md). Bir modeli okuyan kod yazma hakkında daha fazla bilgi için bkz. [gezinme ve güncelleştirme Program kodundaki modeli](../modeling/navigating-and-updating-a-model-in-program-code.md).
+    Bu basit örnekte üst modele birleştirilebilir öğelerin sayısını kısıtlar. Daha çok ilginizi çeken koşullara için yöntem özelliklerinden herhangi birini ve alıcı nesnenin bağlantıları inceleyebilirsiniz. İçinde gerçekleştirilen birleştirme öğelerin özelliklerini inceleyebilirsiniz bir <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Hakkında daha fazla bilgi için `ElementGroupPrototypes`, bkz: [kopyalama davranışını özelleştirme](../modeling/customizing-copy-behavior.md). Bir modeli okuyan kod yazma hakkında daha fazla bilgi için bkz. [gezinme ve güncelleştirme Program kodundaki modeli](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
 6.  DSL test edin:
 
-    1.  Çözümü yeniden derlemek için F5 tuşuna basın. Visual Studio'nun deneysel örneğinde oturum açtığında, DSL'nizi örneği açın.
+    1.  Tuşuna **F5** çözümü yeniden oluşturmak için. Visual Studio'nun deneysel örneğinde oturum açtığında, DSL'nizi örneği açın.
 
     2.  Yeni öğeler, çeşitli yollarla oluşturun:
 
-        1.  Sürükleyin **örnek öğesi** diyagram üzerine aracı.
+        - Sürükleyin **örnek öğesi** diyagram üzerine aracı.
 
-        2.  İçinde **örnek Model Gezgini**, kök düğümüne sağ tıklayın ve ardından **yeni örnek öğesi ekleme**.
+        - İçinde **örnek Model Gezgini**, kök düğümüne sağ tıklayın ve ardından **yeni örnek öğesi ekleme**.
 
-        3.  Kopyalayın ve bir öğeyi diyagram üzerine yapıştırın.
+        - Kopyalayın ve bir öğeyi diyagram üzerine yapıştırın.
 
     3.  Modele dörtten fazla öğeleri eklemek için şu adımlardan herhangi birini kullanamazsınız doğrulayın. Tüm öğe birleştirme yönergesinde kullandıkları olmasıdır.
 
 ## <a name="example-adding-custom-merge-code-to-an-emd"></a>Örnek: Özel birleştirme kodu için bir EMD ekleme
- Özel birleştirme kodu, kullanıcı bir araç sürüklediğinde veya bir öğenin üstüne yapıştırır ne tanımlayabilirsiniz. Özel bir birleştirme tanımlamak için iki yolu vardır:
 
-1.  Ayarlama **kullanan özel birleştirme** ve gerekli kodu sağlayın. Kodunuzu oluşturulan birleştirme kodu değiştirir. Birleştirme yaptığı tamamen tanımlanacak istiyorsanız bu seçeneği kullanın.
+Özel birleştirme kodu, kullanıcı bir araç sürüklediğinde veya bir öğenin üstüne yapıştırır ne tanımlayabilirsiniz. Özel bir birleştirme tanımlamak için iki yolu vardır:
 
-2.  Geçersiz kılma `MergeRelate` yöntemi ve isteğe bağlı olarak `MergeDisconnect` yöntemi. Bunu yapmak için ayarlamalısınız **Generates Double Derived** alan sınıfının özelliği. Kodunuz, temel sınıfta oluşturulan birleştirme kodu çağırabilir. Birleştirmeyi gerçekleştirdikten sonra ek işlemleri gerçekleştirmek istiyorsanız bu seçeneği kullanın.
+1. Ayarlama **kullanan özel birleştirme** ve gerekli kodu sağlayın. Kodunuzu oluşturulan birleştirme kodu değiştirir. Birleştirme yaptığı tamamen tanımlanacak istiyorsanız bu seçeneği kullanın.
 
- Bu yaklaşım, yalnızca bu EMD kullanılarak gerçekleştirilen birleştirme etkiler. Tüm yollar, birleştirilmiş öğesi oluşturulabilir değiştirmek istediğiniz alternatif tanımlamak için varsa, bir `AddRule` gömme ilişkisinde ve `DeleteRule` birleştirilmiş bir etki alanı sınıfı üzerinde. Daha fazla bilgi için [kuralları yaymak değişiklikleri içinde modeli](../modeling/rules-propagate-changes-within-the-model.md).
+2. Geçersiz kılma `MergeRelate` yöntemi ve isteğe bağlı olarak `MergeDisconnect` yöntemi. Bunu yapmak için ayarlamalısınız **Generates Double Derived** alan sınıfının özelliği. Kodunuz, temel sınıfta oluşturulan birleştirme kodu çağırabilir. Birleştirmeyi gerçekleştirdikten sonra ek işlemleri gerçekleştirmek istiyorsanız bu seçeneği kullanın.
 
-#### <a name="to-override-mergerelate"></a>MergeRelate geçersiz kılmak için
+   Bu yaklaşım, yalnızca bu EMD kullanılarak gerçekleştirilen birleştirme etkiler. Tüm yollar, birleştirilmiş öğesi oluşturulabilir değiştirmek istediğiniz alternatif tanımlamak için varsa, bir `AddRule` gömme ilişkisinde ve `DeleteRule` birleştirilmiş bir etki alanı sınıfı üzerinde. Daha fazla bilgi için [kuralları yaymak değişiklikleri içinde modeli](../modeling/rules-propagate-changes-within-the-model.md).
+
+### <a name="to-override-mergerelate"></a>MergeRelate geçersiz kılmak için
 
 1.  DSL tanımındaki kod eklemek istediğiniz EMD tanımladığınız emin olun. İsterseniz, yollarını ekleyin ve tanımlayın önceki bölümlerde açıklandığı gibi özel kabul kod.
 
@@ -252,57 +256,57 @@ Bir öğeyi başka sürüklenerek araç kutusundan veya bir yapıştırma veya t
         }
       }
     }
-
     ```
 
-#### <a name="to-write-custom-merge-code"></a>Özel birleştirme kodu yazmak için
+### <a name="to-write-custom-merge-code"></a>Özel birleştirme kodu yazmak için
 
-1.  İçinde **Dsl\Generated Code\DomainClasses.cs**, adlı yöntemleri inceleyin `MergeRelate`. Bu yöntemler varolan modeli ile yeni bir öğe arasındaki bağlantılar oluşturun.
+1. İçinde **Dsl\Generated Code\DomainClasses.cs**, adlı yöntemleri inceleyin `MergeRelate`. Bu yöntemler varolan modeli ile yeni bir öğe arasındaki bağlantılar oluşturun.
 
-     Ayrıca, adlı yöntemleri inceleyin `MergeDisconnect`. Silinecek olduğunda bu yöntemler bir öğeyi model bağlantısını.
+    Ayrıca, adlı yöntemleri inceleyin `MergeDisconnect`. Silinecek olduğunda bu yöntemler bir öğeyi model bağlantısını.
 
-2.  İçinde **DSL Gezgini**seçin veya özelleştirmek istediğiniz öğe birleştirme yönergesinde oluşturun. İçinde **DSL ayrıntıları** penceresinde **kullanan özel birleştirme**.
+2. İçinde **DSL Gezgini**seçin veya özelleştirmek istediğiniz öğe birleştirme yönergesinde oluşturun. İçinde **DSL ayrıntıları** penceresinde **kullanan özel birleştirme**.
 
-     Bu seçeneği ayarladığınızda **birleştirme işlemi** ve **İleri birleştirme** seçenekler yok sayılır. Kodunuzu bunun yerine kullanılır.
+    Bu seçeneği ayarladığınızda **birleştirme işlemi** ve **İleri birleştirme** seçenekler yok sayılır. Kodunuzu bunun yerine kullanılır.
 
-3.  Çözümü yeniden derleyin. Oluşturulan kod dosyaları modelden güncelleştirilecek nedeniyle normalden daha uzun sürer.
+3. Çözümü yeniden derleyin. Oluşturulan kod dosyaları modelden güncelleştirilecek nedeniyle normalden daha uzun sürer.
 
-     Hata iletileri görüntülenir. Oluşturulan kodun yönergeleri görmek için hata iletileri çift tıklayın. Bu yönergeler, iki yöntem sağlamayı isteyin `MergeRelate` *YourDomainClass* ve `MergeDisconnect` *YourDomainClass*
+    Hata iletileri görüntülenir. Oluşturulan kodun yönergeleri görmek için hata iletileri çift tıklayın. Bu yönergeler, iki yöntem sağlamayı isteyin `MergeRelate` *YourDomainClass* ve `MergeDisconnect` *YourDomainClass*
 
-4.  Ayrı bir kod dosyasında bir parçalı sınıf tanımında yöntemleri yazın. Daha önce inceledi örnekler gerekenler Öner.
+4. Ayrı bir kod dosyasında bir parçalı sınıf tanımında yöntemleri yazın. Daha önce inceledi örnekler gerekenler Öner.
 
- Özel birleştirme kodu, nesneleri ve ilişkileri doğrudan oluşturan kodu etkilemez ve diğer EMDs etkilemez. Öğe nasıl oluşturulduğuna bakılmaksızın, ek değişiklikler uygulandığından emin olmak için yazma göz önünde bulundurun. bir `AddRule` ve `DeleteRule` yerine. Daha fazla bilgi için [kuralları yaymak değişiklikleri içinde modeli](../modeling/rules-propagate-changes-within-the-model.md).
+   Özel birleştirme kodu, nesneleri ve ilişkileri doğrudan oluşturan kodu etkilemez ve diğer EMDs etkilemez. Öğe nasıl oluşturulduğuna bakılmaksızın, ek değişiklikler uygulandığından emin olmak için yazma göz önünde bulundurun. bir `AddRule` ve `DeleteRule` yerine. Daha fazla bilgi için [kuralları yaymak değişiklikleri içinde modeli](../modeling/rules-propagate-changes-within-the-model.md).
 
 ## <a name="redirecting-a-merge-operation"></a>Bir birleştirme işlemi yeniden yönlendirme
- Bir iletme birleştirme yönergesi, bir birleştirme işlemi hedefi yönlendirir. Genellikle yeni ilk hedef katıştırma üst hedefidir.
 
- Örneğin, bileşen diyagramı şablonuyla oluşturulan bir DSL içinde bağlantı noktaları bileşenlerde katıştırılır. Bağlantı noktaları, bir bileşen şekli kenarında küçük şekiller olarak görüntülenir. Kullanıcı, bağlantı noktası aracını bileşenin şeklin üzerine sürükleyerek, bağlantı noktaları oluşturur. Ancak bazı durumlarda, kullanıcı Port aracı yanlışlıkla bileşen yerine var olan bir bağlantı noktası üzerine sürüklediğinde ve işlem başarısız olur. Var olan çeşitli bağlantı noktaları olduğunda bir kolayca hata budur. Bu rahatsızlığı kullanıcıya yardımcı olmak için varolan bir bağlantı noktasını sürüklenerek, ancak ana bileşen için yeniden yönlendirilen eyleme sahip bağlantı noktalarına izin verebilirsiniz. İşlem, hedef öğenin bileşeni değilmiş gibi çalışır.
+Bir iletme birleştirme yönergesi, bir birleştirme işlemi hedefi yönlendirir. Genellikle yeni ilk hedef katıştırma üst hedefidir.
 
- Bileşen modeli çözümde iletme birleştirme yönergesi oluşturabilirsiniz. Derleme ve özgün çözümü çalıştırın, kullanıcıların herhangi bir sayıda sürükleyebilirsiniz görmelisiniz **giriş bağlantı noktası** veya **çıkış bağlantı noktasına** öğelerden **araç kutusu** bir için**Bileşen** öğesi. Ancak, bunlar mevcut bir bağlantı noktasına bir bağlantı noktası sürükleyemezsiniz. Bu taşıma etkin olmadığını uyaran işaretçiyi kullanılamaz. Yanlışlıkla bir bağlantı noktasıdır, ancak iletme birleştirme yönergesi oluşturabilirsiniz var olan bir bırakılan **giriş bağlantı noktası** iletilir **bileşen** öğesi.
+Örneğin, bileşen diyagramı şablonuyla oluşturulan bir DSL içinde bağlantı noktaları bileşenlerde katıştırılır. Bağlantı noktaları, bir bileşen şekli kenarında küçük şekiller olarak görüntülenir. Kullanıcı, bağlantı noktası aracını bileşenin şeklin üzerine sürükleyerek, bağlantı noktaları oluşturur. Ancak bazı durumlarda, kullanıcı Port aracı yanlışlıkla bileşen yerine var olan bir bağlantı noktası üzerine sürüklediğinde ve işlem başarısız olur. Var olan çeşitli bağlantı noktaları olduğunda bir kolayca hata budur. Bu rahatsızlığı kullanıcıya yardımcı olmak için varolan bir bağlantı noktasını sürüklenerek, ancak ana bileşen için yeniden yönlendirilen eyleme sahip bağlantı noktalarına izin verebilirsiniz. İşlem, hedef öğenin bileşeni değilmiş gibi çalışır.
 
-#### <a name="to-create-a-forward-merge-directive"></a>Bir iletme birleştirme yönergesi oluşturmak için
+Bileşen modeli çözümde iletme birleştirme yönergesi oluşturabilirsiniz. Derleme ve özgün çözümü çalıştırın, kullanıcıların herhangi bir sayıda sürükleyebilirsiniz görmelisiniz **giriş bağlantı noktası** veya **çıkış bağlantı noktasına** öğelerden **araç kutusu** bir için**Bileşen** öğesi. Ancak, bunlar mevcut bir bağlantı noktasına bir bağlantı noktası sürükleyemezsiniz. Bu taşıma etkin olmadığını uyaran işaretçiyi kullanılamaz. Yanlışlıkla bir bağlantı noktasıdır, ancak iletme birleştirme yönergesi oluşturabilirsiniz var olan bir bırakılan **giriş bağlantı noktası** iletilir **bileşen** öğesi.
 
-1.  Oluşturma bir [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] bileşen modeli şablonunu kullanarak çözüm.
+### <a name="to-create-a-forward-merge-directive"></a>Bir iletme birleştirme yönergesi oluşturmak için
 
-2.  Görüntü **DSL Gezgini** DslDefinition.dsl açarak.
+1. Oluşturma bir [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] bileşen modeli şablonunu kullanarak çözüm.
 
-3.  İçinde **DSL Gezgini**, genişletme **alan sınıfları**.
+2. Görüntü **DSL Gezgini** DslDefinition.dsl açarak.
 
-4.  **ComponentPort** soyut etki alanı sınıfı, hem temel sınıfını **InPort** ve **OutPort**. Sağ **ComponentPort** ve ardından **yeni öğe birleştirme yönergesinde ekleme**.
+3. İçinde **DSL Gezgini**, genişletme **alan sınıfları**.
 
-     Yeni bir **öğe birleştirme yönergesinde** düğümü altında görünür **öğe birleştirme yönergeleri** düğümü.
+4. **ComponentPort** soyut etki alanı sınıfı, hem temel sınıfını **InPort** ve **OutPort**. Sağ **ComponentPort** ve ardından **yeni öğe birleştirme yönergesinde ekleme**.
 
-5.  Seçin **öğe birleştirme yönergesinde** düğüm ve açık **DSL ayrıntıları** penceresi.
+    Yeni bir **öğe birleştirme yönergesinde** düğümü altında görünür **öğe birleştirme yönergeleri** düğümü.
 
-6.  Dizin oluşturma sınıfı listesinde **ComponentPort**.
+5. Seçin **öğe birleştirme yönergesinde** düğüm ve açık **DSL ayrıntıları** penceresi.
 
-7.  Seçin **birleştirmeyi farklı bir alan sınıfına ilet**.
+6. Dizin oluşturma sınıfı listesinde **ComponentPort**.
 
-8.  Yol seçim listesinde genişletin **ComponentPort**, genişletme **ComponentHasPorts**ve ardından **bileşeni**.
+7. Seçin **birleştirmeyi farklı bir alan sınıfına ilet**.
 
-     Yeni yol buna benzemelidir:
+8. Yol seçim listesinde genişletin **ComponentPort**, genişletme **ComponentHasPorts**ve ardından **bileşeni**.
 
-     **ComponentHasPorts.Component/!Component**
+    Yeni yol buna benzemelidir:
+
+    **ComponentHasPorts.Component/!Component**
 
 9. Çözüm kaydedin ve ardından sağdaki düğmesine tıklayarak şablonlarını Dönüştür **Çözüm Gezgini** araç çubuğu.
 

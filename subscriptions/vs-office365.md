@@ -9,12 +9,12 @@ description: Bazı Visual Studio abonelikleri dahil Office 365 Avantajı hakkın
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 27be6e98bcaf030a74096a404383cbc54d64f44f
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: a3aa6a9dc60ea48db5e0d97b7a3c417dcb18559a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073915"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908398"
 ---
 # <a name="office-365-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Office 365
 
@@ -43,6 +43,7 @@ Office için uygulama geliştirmek üzere planlıyorsanız etkinleştirmek istey
 
 
 ## <a name="eligibility"></a>Uygunluk
+
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standart, yıllık bulut)   | VL, Azure, perakende| Kullanılabilir       |  Evet          |

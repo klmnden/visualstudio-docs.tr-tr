@@ -31,12 +31,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5cd62b5cc5eabd731e5ad398cbb9ddbe60db073
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: feae495e83e4f78fcd627bec25dd5e988962cec4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219121"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917706"
 ---
 # <a name="assertions-in-managed-code"></a>Yönetilen Koddaki Onaylar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,19 +153,19 @@ Debug.Assert ( temp != 0 );
   
  Aksi takdirde için <xref:System.Diagnostics.Trace> çalışmak için yöntemler programınızı kaynak dosyasının en üstüne aşağıdaki birine sahip olmalıdır:  
   
--   `#Const TRACE = True` Visual Basic'te  
+- `#Const TRACE = True` Visual Basic'te  
   
--   `#define TRACE` Visual C# ve C++  
+- `#define TRACE` Visual C# ve C++  
   
- Veya, programınızın izleme seçeneği ile oluşturulmalıdır:  
+  Veya, programınızın izleme seçeneği ile oluşturulmalıdır:  
   
--   `/d:TRACE=True` Visual Basic'te  
+- `/d:TRACE=True` Visual Basic'te  
   
--   `/d:TRACE` Visual C# ve C++  
+- `/d:TRACE` Visual C# ve C++  
   
- Bir C# veya Visual Basic yayın yapı içinde hata ayıklama yöntemleri kullanmanız gerekiyorsa, hata ayıklama sembolü yayın yapılandırmanızda tanımlamanız gerekir.  
+  Bir C# veya Visual Basic yayın yapı içinde hata ayıklama yöntemleri kullanmanız gerekiyorsa, hata ayıklama sembolü yayın yapılandırmanızda tanımlamanız gerekir.  
   
- C++ desteklemiyor <xref:System.Diagnostics.Debug> sınıfı yöntemleri. Kullanarak aynı etkiyi elde edebilirsiniz <xref:System.Diagnostics.Trace> koşullu derleme ile gibi sınıf `#ifdef DEBUG`... `#endif`. Bu sembolleri tanımlayabilirsiniz  **\<Proje > özellik sayfaları** iletişim kutusu. Daha fazla bilgi için [Visual Basic hata ayıklama yapılandırması proje ayarları değiştirme](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) veya [bir C veya C++ hata ayıklama yapılandırması proje ayarları değiştirme](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+  C++ desteklemiyor <xref:System.Diagnostics.Debug> sınıfı yöntemleri. Kullanarak aynı etkiyi elde edebilirsiniz <xref:System.Diagnostics.Trace> koşullu derleme ile gibi sınıf `#ifdef DEBUG`... `#endif`. Bu sembolleri tanımlayabilirsiniz  **\<Proje > özellik sayfaları** iletişim kutusu. Daha fazla bilgi için [Visual Basic hata ayıklama yapılandırması proje ayarları değiştirme](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) veya [bir C veya C++ hata ayıklama yapılandırması proje ayarları değiştirme](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
 ##  <a name="BKMK_Assert_arguments"></a> Assert bağımsız değişkenleri  
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> ve <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> en fazla üç bağımsız değişken almaz. Zorunlu olan ilk bağımsız değişken, kontrol etmek istediğiniz durumdur. Eğer <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> veya <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName> tek bağımsız değişkenli `Assert` yöntemi koşulu denetleyen ve sonuç false ise çağrı yığınını içeriğini çıkarır **çıkış** penceresi. Aşağıdaki örnekte gösterildiği <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> ve <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName>:  

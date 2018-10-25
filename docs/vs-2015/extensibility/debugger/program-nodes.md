@@ -18,27 +18,27 @@ ms.assetid: 1c5a5c13-c14d-42c3-af11-4c63f1032c8d
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 41ce3fd47850df5bab1db771177637102e9ec57a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fdb06d4909bab31169dc0a46156b7e1300b917bc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287891"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891342"
 ---
 # <a name="program-nodes"></a>Program Düğümleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Hata ayıklayıcı mimarisi bakımından bir **program düğüm**:  
   
--   Basit bir program açıklamasıdır.  
+- Basit bir program açıklamasıdır.  
   
--   Kendisi ve çalıştığı ve öğesinden ayrıldı ve, varsa oluşturulan hata ayıklama altyapısı (DE) tanımlamak için bağlı işlemi tanımlayabilirsiniz.  
+- Kendisi ve çalıştığı ve öğesinden ayrıldı ve, varsa oluşturulan hata ayıklama altyapısı (DE) tanımlamak için bağlı işlemi tanımlayabilirsiniz.  
   
--   Tarafından temsil edilen bir [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) arabirimi, genellikle DE veya bağlantı noktası tarafından oluşturulur. Program düğümleri çağırarak bir bağlantı noktasına eklenir [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Bir program düğüm bir bağlantı eklendiğinde bu programı bu düğümün temsil ettiği program içeren işleme eklenir.  
+- Tarafından temsil edilen bir [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) arabirimi, genellikle DE veya bağlantı noktası tarafından oluşturulur. Program düğümleri çağırarak bir bağlantı noktasına eklenir [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Bir program düğüm bir bağlantı eklendiğinde bu programı bu düğümün temsil ettiği program içeren işleme eklenir.  
   
- Süre bir hata ayıklama oturumu, hata ayıklama paketi bağlı olarak uygulama başlatıldıktan sonra program düğümleri karşılık gelen programlar oluşturmak için kullanılır. Bir işlem için programları sorgulandığında programları numaralandırılır, program her düğüm için bir tane.  
+  Süre bir hata ayıklama oturumu, hata ayıklama paketi bağlı olarak uygulama başlatıldıktan sonra program düğümleri karşılık gelen programlar oluşturmak için kullanılır. Bir işlem için programları sorgulandığında programları numaralandırılır, program her düğüm için bir tane.  
   
- Bir program iliştirildiği önce IDE program basit bir açıklamasını gerekir. Bu bilgi programı düğümden elde edilebilir. Program için bağlandıktan sonra programdaki tüm iş parçacıkları listesi gibi daha ayrıntılı bilgi görüntülemek IDE gerekir. Bu bilgiler programından elde edilir.  
+  Bir program iliştirildiği önce IDE program basit bir açıklamasını gerekir. Bu bilgi programı düğümden elde edilebilir. Program için bağlandıktan sonra programdaki tüm iş parçacıkları listesi gibi daha ayrıntılı bilgi görüntülemek IDE gerekir. Bu bilgiler programından elde edilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Programlar](../../extensibility/debugger/programs.md)   

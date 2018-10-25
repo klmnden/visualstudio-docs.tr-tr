@@ -13,56 +13,56 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc86f6f5e6689903acb4c57131cee5562117f732
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 7ac2ad16c0e6a3e0a6c76e15ff6860838fa349c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636353"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893110"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Nasıl yapılır: özel metin işaretçileri oluşturma
 Vurgulamak veya kod düzenlemek için bir özel metin işaretçisi oluşturmak istiyorsanız, aşağıdaki adımları izlemelisiniz:  
   
--   Diğer araçları erişebilmesi yeni metin işaretçisi kaydedin.  
+- Diğer araçları erişebilmesi yeni metin işaretçisi kaydedin.  
   
--   Varsayılan uygulama ve metin işaretçisi yapılandırılmasını sağlar.  
+- Varsayılan uygulama ve metin işaretçisi yapılandırılmasını sağlar.  
   
--   Diğer işlemler tarafından yapmak için kullanılabilecek bir hizmet oluşturma metin işaret kullanın.  
+- Diğer işlemler tarafından yapmak için kullanılabilecek bir hizmet oluşturma metin işaret kullanın.  
   
- Bir bölge kodu bir metin işaretçisi uygulama hakkında daha fazla bilgi için bkz: [nasıl yapılır: metin işaretçileri kullanma](../extensibility/how-to-use-text-markers.md).  
+  Bir bölge kodu bir metin işaretçisi uygulama hakkında daha fazla bilgi için bkz: [nasıl yapılır: metin işaretçileri kullanma](../extensibility/how-to-use-text-markers.md).  
   
 ## <a name="to-register-a-custom-marker"></a>Özel işaret kaydetmek için  
   
-1.  Gibi bir kayıt defteri girişini oluşturun:  
+1. Gibi bir kayıt defteri girişini oluşturun:  
   
-     **Hkey_local_machıne\software\microsoft\visualstudio\\\<sürüm > \Text Editor\External işaretçileri\\\<MarkerGUID >**  
+    **Hkey_local_machıne\software\microsoft\visualstudio\\\<sürüm > \Text Editor\External işaretçileri\\\<MarkerGUID >**  
   
-     *\<MarkerGUID >* olduğu bir `GUID` eklenen işaret tanımlamak için kullanılan  
+    *\<MarkerGUID >* olduğu bir `GUID` eklenen işaret tanımlamak için kullanılan  
   
-     `<Version>` sürümü [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], örneğin 8.0  
+    `<Version>` sürümü [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], örneğin 8.0  
   
-     `<PackageGUID>` VSPackage'ı GUİD'si Otomasyon nesnesi uygular.  
+    `<PackageGUID>` VSPackage'ı GUİD'si Otomasyon nesnesi uygular.  
   
-    > [!NOTE]
-    >  Kök yolu **hkey_local_machıne\software\microsoft\visualstudio\\\<sürüm >** Visual Studio Kabuğu başlatıldığında daha fazla bilgi için bkz, alternatif bir kök ile geçersiz kılınabilir [Komut satırı anahtarları](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > [!NOTE]
+   >  Kök yolu **hkey_local_machıne\software\microsoft\visualstudio\\\<sürüm >** Visual Studio Kabuğu başlatıldığında daha fazla bilgi için bkz, alternatif bir kök ile geçersiz kılınabilir [Komut satırı anahtarları](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2.  Dört değer altında oluşturma **hkey_local_machıne\software\microsoft\visualstudio\\\<sürüm > \Text Editor\External işaretçileri\\\<MarkerGUID >**  
+2. Dört değer altında oluşturma **hkey_local_machıne\software\microsoft\visualstudio\\\<sürüm > \Text Editor\External işaretçileri\\\<MarkerGUID >**  
   
-    -   (Varsayılan)  
+   -   (Varsayılan)  
   
-    -   Hizmet  
+   -   Hizmet  
   
-    -   displayName  
+   -   displayName  
   
-    -   Paket  
+   -   Paket  
   
-    -   `Default` tür REG_SZ isteğe bağlı bir girdidir. Ayarlandığında, giriş bazı yararlı tanımlayıcı bilgileri, örneğin "özel metin işaretçisi" içeren bir dize değeridir.  
+   -   `Default` tür REG_SZ isteğe bağlı bir girdidir. Ayarlandığında, giriş bazı yararlı tanımlayıcı bilgileri, örneğin "özel metin işaretçisi" içeren bir dize değeridir.  
   
-    -   `Service` bir giriş türü REG_SZ içeren özel metin işaretçisi tarafından proffering sağlayan hizmet GUID dizesi olduğu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. {XXXXXX XXXX XXXX XXXX XXXXXXXXX} biçimindedir.  
+   -   `Service` bir giriş türü REG_SZ içeren özel metin işaretçisi tarafından proffering sağlayan hizmet GUID dizesi olduğu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. {XXXXXX XXXX XXXX XXXX XXXXXXXXX} biçimindedir.  
   
-    -   `DisplayName` Özel metin işaretçisi adını kaynak Kimliğini içeren bir giriş türü REG_SZ. #YYYY biçimidir.  
+   -   `DisplayName` Özel metin işaretçisi adını kaynak Kimliğini içeren bir giriş türü REG_SZ. #YYYY biçimidir.  
   
-    -   `Package` Giriş türü REG_SZ içeren `GUID` hizmeti sağlayan VSPackage'nın hizmetinin altında listelenir. {XXXXXX XXXX XXXX XXXX XXXXXXXXX} biçimindedir.  
+   -   `Package` Giriş türü REG_SZ içeren `GUID` hizmeti sağlayan VSPackage'nın hizmetinin altında listelenir. {XXXXXX XXXX XXXX XXXX XXXXXXXXX} biçimindedir.  
   
 ## <a name="to-create-a-custom-text-marker"></a>Bir özel metin işaretçisi oluşturmak için  
   

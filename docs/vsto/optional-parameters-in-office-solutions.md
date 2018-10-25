@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a086fc37be7d9cd8ba4d4f51c1012b6ad0ba7046
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d4a9737ae9e256cdc9862c0d7725e9bffda5b633
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676674"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882580"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Office çözümlerinde isteğe bağlı parametreler
   Çoğu Microsoft Office uygulamasının nesne modellerini yöntemlere, isteğe bağlı parametreleri kabul eder. Office çözümünü Visual Studio'da geliştirme için Visual Basic kullanıyorsanız, her eksik parametre için varsayılan değerleri otomatik olarak kullanıldığından isteğe bağlı parametreler için bir değer geçirmek zorunda değildir. Çoğu durumda, Visual C# projelerinde isteğe bağlı parametreler atlayabilirsiniz. Ancak, isteğe bağlı atlayamazsınız **ref** parametrelerinin `ThisDocument` belge düzeyi Word projelerinde sınıfı.  
@@ -57,19 +57,19 @@ ms.locfileid: "35676674"
   
  Yöntemlerini çağırdığınızda `ThisDocument` sınıfında, aşağıdaki yönergeleri izleyin:  
   
--   İsteğe bağlı varsayılan değerini kabul etmek üzere **ref** parametre, pass `missing` değişken parametre. `missing` Değişken Visual C# Office projelerinde otomatik olarak tanımlanır ve değer atanmış <xref:System.Type.Missing> oluşturulan proje kod.  
+- İsteğe bağlı varsayılan değerini kabul etmek üzere **ref** parametre, pass `missing` değişken parametre. `missing` Değişken Visual C# Office projelerinde otomatik olarak tanımlanır ve değer atanmış <xref:System.Type.Missing> oluşturulan proje kod.  
   
--   İsteğe bağlı kendi değerinizi **ref** parametresi, belirtmek istediğiniz değer atanmış bir nesne bildirme ve nesneyi parametresini geçirin.  
+- İsteğe bağlı kendi değerinizi **ref** parametresi, belirtmek istediğiniz değer atanmış bir nesne bildirme ve nesneyi parametresini geçirin.  
   
- Aşağıdaki kod örneğinde nasıl çağrılacağını gösterir <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> yöntemi için bir değer belirterek *ignoreUppercase* parametresi ve diğer parametreler için varsayılan değeri kabul etme.  
+  Aşağıdaki kod örneğinde nasıl çağrılacağını gösterir <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> yöntemi için bir değer belirterek *ignoreUppercase* parametresi ve diğer parametreler için varsayılan değeri kabul etme.  
   
- [!code-csharp[Trin_VstrefGeneralWord#4](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#4)]  
+  [!code-csharp[Trin_VstrefGeneralWord#4](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#4)]  
   
- İsteğe bağlı atlayarak kod yazmak istiyorsanız **ref** bir yöntemin parametre `ThisDocument` sınıfı, alternatif olarak çağırabilirsiniz aynı yöntem üzerinde <xref:Microsoft.Office.Interop.Word.Document> tarafından döndürülen nesne <xref:Microsoft.Office.Tools.Word.Document.InnerObject%2A> özelliği ve çıkarın Bu yöntem parametreleri. Çünkü bunu yapabilirsiniz <xref:Microsoft.Office.Interop.Word.Document> bir sınıf yerine bir arabirim olduğundan.  
+  İsteğe bağlı atlayarak kod yazmak istiyorsanız **ref** bir yöntemin parametre `ThisDocument` sınıfı, alternatif olarak çağırabilirsiniz aynı yöntem üzerinde <xref:Microsoft.Office.Interop.Word.Document> tarafından döndürülen nesne <xref:Microsoft.Office.Tools.Word.Document.InnerObject%2A> özelliği ve çıkarın Bu yöntem parametreleri. Çünkü bunu yapabilirsiniz <xref:Microsoft.Office.Interop.Word.Document> bir sınıf yerine bir arabirim olduğundan.  
   
- [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
+  [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
   
- Değer ve başvuru türü parametreleri hakkında daha fazla bilgi için bkz. [bağımsız değişkenleri değere ve başvuruya göre geçirme &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (Visual Basic için) ve [parametreleri geçirmek &#40;C&#35; Programlama Kılavuzu&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
+  Değer ve başvuru türü parametreleri hakkında daha fazla bilgi için bkz. [bağımsız değişkenleri değere ve başvuruya göre geçirme &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (Visual Basic için) ve [parametreleri geçirmek &#40;C&#35; Programlama Kılavuzu&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümleri geliştirme](../vsto/developing-office-solutions.md)   

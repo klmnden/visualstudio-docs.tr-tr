@@ -13,12 +13,12 @@ ms.assetid: b681164c-c87a-4bd7-be48-ed77e1578471
 caps.latest.revision: 17
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5d45ea88fea9f30bf02c24e927694c81d8639559
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4c2922d5be6c3326dac3b0c2667e5210ec908722
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178314"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915457"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Sharepoint 2010 uygulamaları için birim testlerini yalıtmak üzere öykünücüler kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,31 +34,31 @@ Microsoft.SharePoint.Emulators paketi Microsoft SharePoint 2010 uygulamaları i�
   
  [Varolan bir testi dönüştürme](#BKMK_Converting_an_existing_test)  
   
--   [Öykünücüler paketini test projesine ekleme](#BKMK_Adding_the_Emulators_package_to_a_test_project)  
+- [Öykünücüler paketini test projesine ekleme](#BKMK_Adding_the_Emulators_package_to_a_test_project)  
   
--   [Bir test yöntemini öykünmeyle çalıştırma](#BKMK__Running_a_test_method_in_the_emulation_context)  
+- [Bir test yöntemini öykünmeyle çalıştırma](#BKMK__Running_a_test_method_in_the_emulation_context)  
   
- [Çift kullanımlı sınıflar ve yöntemler oluşturma](#BKMK_Creating_dual_use_classes_and_methods)  
+  [Çift kullanımlı sınıflar ve yöntemler oluşturma](#BKMK_Creating_dual_use_classes_and_methods)  
   
- [Çift kullanımlı oluşturmak için öznitelikleri test sınıfı TestInitialize ve TestCleanup kullanma](#BKMK_Using_TestInitialize_and_TestCleanup_attributes_to_create_a_dual_use_test_class)  
+  [Çift kullanımlı oluşturmak için öznitelikleri test sınıfı TestInitialize ve TestCleanup kullanma](#BKMK_Using_TestInitialize_and_TestCleanup_attributes_to_create_a_dual_use_test_class)  
   
- [Benzetilmemiş SharePoint yöntemlerinin yönetilmesi](#BKMK_Handling_non_emulated_SharePoint_methods)  
+  [Benzetilmemiş SharePoint yöntemlerinin yönetilmesi](#BKMK_Handling_non_emulated_SharePoint_methods)  
   
- [Karalama ve bir Özet yazma öykünmesi testleri](#BKMK_Writing_emulation_tests_from_scratch__and_a_summary)  
+  [Karalama ve bir Özet yazma öykünmesi testleri](#BKMK_Writing_emulation_tests_from_scratch__and_a_summary)  
   
- [Örnek](#BKMK_Example)  
+  [Örnek](#BKMK_Example)  
   
- [Benzetilmiş SharePoint türleri](#BKMK_Emulated_SharePoint_types)  
+  [Benzetilmiş SharePoint türleri](#BKMK_Emulated_SharePoint_types)  
   
 ##  <a name="BKMK_Requirements"></a> Gereksinimleri  
   
--   Microsoft SharePoint 2010 (SharePoint 2010 Server veya SharePoint 2010 Foundation)  
+- Microsoft SharePoint 2010 (SharePoint 2010 Server veya SharePoint 2010 Foundation)  
   
--   Microsoft Visual Studio Enterprise  
+- Microsoft Visual Studio Enterprise  
   
--   Microsoft SharePoint Öykünücüler NuGet paketi  
+- Microsoft SharePoint Öykünücüler NuGet paketi  
   
- Ayrıca sahibi olmalısınız [Visual Studio'da birim testinin temellerini](../test/unit-test-basics.md) ve biraz bilgi [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
+  Ayrıca sahibi olmalısınız [Visual Studio'da birim testinin temellerini](../test/unit-test-basics.md) ve biraz bilgi [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
   
 ##  <a name="BKMK_The_AppointmentsWebPart_example"></a> AppointmentsWebPart örneği  
  AppointmentsWebPart, randevularınızın SharePoint listesini yönetmek ve görüntülemek olanak tanır.  
@@ -67,11 +67,11 @@ Microsoft.SharePoint.Emulators paketi Microsoft SharePoint 2010 uygulamaları i�
   
  Biz bu örnekte web bölümünün iki yöntemini test ediyoruz:  
   
--   `ScheduleAppointment` Yöntemi yönteme geçirilen liste öğesi değerlerini doğrular ve belirtilen bir SharePoint web bir listede yeni bir giriş oluşturur.  
+- `ScheduleAppointment` Yöntemi yönteme geçirilen liste öğesi değerlerini doğrular ve belirtilen bir SharePoint web bir listede yeni bir giriş oluşturur.  
   
--   `GetAppointmentsForToday` Yöntemi bugüne ait randevuların ayrıntılarını döndürür.  
+- `GetAppointmentsForToday` Yöntemi bugüne ait randevuların ayrıntılarını döndürür.  
   
- [Bu konudaki](#BKMK_In_this_topic)  
+  [Bu konudaki](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Converting_an_existing_test"></a> Varolan bir testi dönüştürme  
  Bir yöntemin bir SharePoint bileşeninde tipik bir test, test yöntemi SharePoint Foundation içinde geçici bir site oluşturur ve SharePoint bileşenlerini test gerekenleri altındaki kodun siteye ekler. Test yöntemi oluşturur ve bileşen örneği uygular. Testin sonunda site bozuk.  
@@ -146,15 +146,15 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 ###  <a name="BKMK_Adding_the_Emulators_package_to_a_test_project"></a> Öykünücüler paketini test projesine ekleme  
  Bir test projesine SharePoint öykünücüleri eklemek için:  
   
-1.  Çözüm Gezgini'nde test projesini seçin.  
+1. Çözüm Gezgini'nde test projesini seçin.  
   
-2.  Seçin **NuGet paketlerini Yönet...**  kısayol menüsünde.  
+2. Seçin **NuGet paketlerini Yönet...**  kısayol menüsünde.  
   
-3.  Arama **çevrimiçi** kategorisi için `Microsoft.SharePoint.Emulators`ve ardından **yükleme**.  
+3. Arama **çevrimiçi** kategorisi için `Microsoft.SharePoint.Emulators`ve ardından **yükleme**.  
   
- ![SharePoint Öykünücüler NuGet paketi](../test/media/ut-emulators-nuget.png "UT_EMULATORS_Nuget")  
+   ![SharePoint Öykünücüler NuGet paketi](../test/media/ut-emulators-nuget.png "UT_EMULATORS_Nuget")  
   
- [Bu konudaki](#BKMK_In_this_topic)  
+   [Bu konudaki](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK__Running_a_test_method_in_the_emulation_context"></a> Bir test yöntemini öykünmeyle çalıştırma  
  Paketin yüklenmesi projeleriniz için gerekli kitaplıklara başvurular ekler. Var olan bir test sınıfında öykünücüleri kullanmayı yapmak için ad alanları Ekle `Microsoft.SharePoint.Emulators` ve `Microsoft.QualityTools.Testing.Emulators`.  
@@ -235,15 +235,15 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 ##  <a name="BKMK_Using_TestInitialize_and_TestCleanup_attributes_to_create_a_dual_use_test_class"></a> Çift kullanımlı oluşturmak için öznitelikleri test sınıfı TestInitialize ve TestCleanup kullanma  
  Kullanarak sınıftaki tüm veya çoğu testi çalıştırırsanız `SharePointEmulationScope`, öykünme modu ayarlamak için sınıf düzeyi tekniklerinin yararlanabilir.  
   
--   Test sınıfı yöntemleri ile oluşturulan <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> ve <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> oluşturabilir ve kapsamı yok.  
+- Test sınıfı yöntemleri ile oluşturulan <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> ve <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> oluşturabilir ve kapsamı yok.  
   
--   Ayarı `EmulationMode` sınıf düzeyi arasında mod değişikliğini otomatikleştirmenize sağlayabilirsiniz `EmulationMode.Enabled` ve `EmulationMode.Passthrough`.  
+- Ayarı `EmulationMode` sınıf düzeyi arasında mod değişikliğini otomatikleştirmenize sağlayabilirsiniz `EmulationMode.Enabled` ve `EmulationMode.Passthrough`.  
   
- İle öznitelendirilen sınıf yöntemi `[TestInitialize]` ile öznitelendirilen bir yöntem ve her test yönteminin başlangıcında çalıştırılan `[TestCleanup]` her test yönteminin sonunda çalıştırır. İçin özel alan bildirebilir `SharePointEmulationScope` nesnesi sınıf düzeyinde, bunu başlatabilir `TestInitialize` öznitelikli yöntem ve sonra nesneyi elden `TestCleanup` öznitelikli yöntem.  
+  İle öznitelendirilen sınıf yöntemi `[TestInitialize]` ile öznitelendirilen bir yöntem ve her test yönteminin başlangıcında çalıştırılan `[TestCleanup]` her test yönteminin sonunda çalıştırır. İçin özel alan bildirebilir `SharePointEmulationScope` nesnesi sınıf düzeyinde, bunu başlatabilir `TestInitialize` öznitelikli yöntem ve sonra nesneyi elden `TestCleanup` öznitelikli yöntem.  
   
- Seçimini otomatikleştirmesi için seçtiğiniz herhangi bir yöntemi kullanabilirsiniz `EmulationMode`. Bir önişlemci yönergelerini kullanarak bir sembolün varlığını denetlemek için yoludur. Örneğin, Öykünücüler kullanan bir sınıf içinde test yöntemleri çalıştırmak için bir simge gibi tanımlayabileceğiniz `USE_EMULATION` test proje dosyası veya derleme komut satırı. Simge tanımlanmışsa bir sınıf seviyesi `EmulationMode` sabiti bildirilir ve kümesine `Enabled`. Aksi takdirde, sabiti ayarlanmış `Passthrough`.  
+  Seçimini otomatikleştirmesi için seçtiğiniz herhangi bir yöntemi kullanabilirsiniz `EmulationMode`. Bir önişlemci yönergelerini kullanarak bir sembolün varlığını denetlemek için yoludur. Örneğin, Öykünücüler kullanan bir sınıf içinde test yöntemleri çalıştırmak için bir simge gibi tanımlayabileceğiniz `USE_EMULATION` test proje dosyası veya derleme komut satırı. Simge tanımlanmışsa bir sınıf seviyesi `EmulationMode` sabiti bildirilir ve kümesine `Enabled`. Aksi takdirde, sabiti ayarlanmış `Passthrough`.  
   
- Önişlemci yönergeleri kullanmayı gösteren test sınıfının bir örnek aşağıda verilmiştir ve `TestInitialize` ve `TestCleanup` öznitelikli yöntemlerinin öykünme modunu ayarlamak için.  
+  Önişlemci yönergeleri kullanmayı gösteren test sınıfının bir örnek aşağıda verilmiştir ve `TestInitialize` ve `TestCleanup` öznitelikli yöntemlerinin öykünme modunu ayarlamak için.  
   
 ```csharp  
 //namespace declarations  
@@ -306,21 +306,21 @@ namspace MySPAppTests
   
  Microsoft Fakes dolgu verileri açıkça çağırmak için:  
   
-1.  Benzetilmemiş bir SharePoint sınıfını istiyorsanız, Microsoft.SharePoint.fakes dosyasını düzenleyin ve sınıfı sınıflar listesine ekleyin. Bkz: [saplamalar ve dolguların kod oluşturma yapılandırma](http://msdn.microsoft.com/library/hh708916.aspx#bkmk_configuring_code_generation_of_stubs) bölümünü [kod oluşturma, derleme ve adlandırma kuralları Microsoft Fakes](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md).  
+1. Benzetilmemiş bir SharePoint sınıfını istiyorsanız, Microsoft.SharePoint.fakes dosyasını düzenleyin ve sınıfı sınıflar listesine ekleyin. Bkz: [saplamalar ve dolguların kod oluşturma yapılandırma](http://msdn.microsoft.com/library/hh708916.aspx#bkmk_configuring_code_generation_of_stubs) bölümünü [kod oluşturma, derleme ve adlandırma kuralları Microsoft Fakes](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md).  
   
-     ![Çözüm Gezgini'nde klasörü fakes](../test/media/ut-emulators-fakesfilefolder.png "UT_EMULATORS_FakesFileFolder")  
+    ![Çözüm Gezgini'nde klasörü fakes](../test/media/ut-emulators-fakesfilefolder.png "UT_EMULATORS_FakesFileFolder")  
   
-2.  Test projesini en az bir kez Microsoft SharePoint Öykünücüler paketini yükledikten sonra ve Microsoft.SharePoint.Fakes dosyası düzenlediyseniz yeniden oluşturun. Proje derleme oluşturur ve doldurur bir **FakesAssembly** disk üzerinde proje kök klasörünüzde klasör.  
+2. Test projesini en az bir kez Microsoft SharePoint Öykünücüler paketini yükledikten sonra ve Microsoft.SharePoint.Fakes dosyası düzenlediyseniz yeniden oluşturun. Proje derleme oluşturur ve doldurur bir **FakesAssembly** disk üzerinde proje kök klasörünüzde klasör.  
   
-     ![FakesAssembly klasör](../test/media/ut-emulators-fakesassemblyfolder.png "UT_EMULATORS_FakesAssemblyFolder")  
+    ![FakesAssembly klasör](../test/media/ut-emulators-fakesassemblyfolder.png "UT_EMULATORS_FakesAssemblyFolder")  
   
-3.  Bir başvuru ekleyin **Microsoft.SharePoint.14.0.0.0.Fakes.dll** bulunan derleme **FakesAssembly** klasör.  
+3. Bir başvuru ekleyin **Microsoft.SharePoint.14.0.0.0.Fakes.dll** bulunan derleme **FakesAssembly** klasör.  
   
-4.  (İsteğe bağlı) Test sınıfı için bir ad alanı yönergesi için ekleme `Microsoft.QualityTools.Testing.Fakes`, `Microsoft.SharePoint.Fakes` ve tüm iç içe geçmiş ad alanı `Microsoft.SharePoint.Fakes`kullanmak istediğiniz.  
+4. (İsteğe bağlı) Test sınıfı için bir ad alanı yönergesi için ekleme `Microsoft.QualityTools.Testing.Fakes`, `Microsoft.SharePoint.Fakes` ve tüm iç içe geçmiş ad alanı `Microsoft.SharePoint.Fakes`kullanmak istediğiniz.  
   
- **Bir SharePoint yöntemi için dolgu temsilcisi uygulama**  
+   **Bir SharePoint yöntemi için dolgu temsilcisi uygulama**  
   
- Bizim örnek projemizde `GetAppointmentsForToday` yöntem çağrılarını [SPList.getıtems(spquery)](http://msdn.microsoft.com/library/ms457534.aspx) SharePoint API yöntemini.  
+   Bizim örnek projemizde `GetAppointmentsForToday` yöntem çağrılarını [SPList.getıtems(spquery)](http://msdn.microsoft.com/library/ms457534.aspx) SharePoint API yöntemini.  
   
 ```csharp  
 // method under test  
@@ -393,19 +393,19 @@ public void GetAppointmentsForTodayReturnsOnlyTodaysAppointments()
 ##  <a name="BKMK_Writing_emulation_tests_from_scratch__and_a_summary"></a> Karalama ve bir Özet yazma öykünmesi testleri  
  Öykünme ve önceki bölümlerde açıklanan çift kullanımlı testler oluşturmak için tekniklerin, mevcut testleri dönüştürdüğünüzü varsaymasına rağmen teknikleri sıfırdan testler yazmak için kullanabilirsiniz. Aşağıdaki listede bu teknikler özetlenmektedir:  
   
--   Sınama projesinde öykünücü kullanmak için Microsoft.SharePoint.Emulators NuGet paketini projeye ekleyin.  
+- Sınama projesinde öykünücü kullanmak için Microsoft.SharePoint.Emulators NuGet paketini projeye ekleyin.  
   
--   Sınama yönteminde öykünücü kullanmak için oluşturun bir `SharePointEmulationScope` yöntemin başında bir nesne. Kapsam atılana kadar tüm desteklenen SharePoint API'larının.  
+- Sınama yönteminde öykünücü kullanmak için oluşturun bir `SharePointEmulationScope` yöntemin başında bir nesne. Kapsam atılana kadar tüm desteklenen SharePoint API'larının.  
   
--   Test kodunuzu gerçek bir SharePoint API'si yazar gibi yazın. Öykünme bağlamı, SharePoint yöntemlerinin çağrıları otomatik olarak saptıran.  
+- Test kodunuzu gerçek bir SharePoint API'si yazar gibi yazın. Öykünme bağlamı, SharePoint yöntemlerinin çağrıları otomatik olarak saptıran.  
   
--   SharePoint nesnelerin hepsi benzetilmiş değildir ve benzetilmiş bazı nesnelerin tüm yöntemleri benzetilmiş değildir. A `NotSupportedException` benzetilmemiş nesne veya yöntem kullandığınızda özel durumu harekete geçirilir. Böyle bir durumda gerekli davranışın döndürülmesi için Fakes dolgu temsilcisi yönteminde açıkça oluşturun.  
+- SharePoint nesnelerin hepsi benzetilmiş değildir ve benzetilmiş bazı nesnelerin tüm yöntemleri benzetilmiş değildir. A `NotSupportedException` benzetilmemiş nesne veya yöntem kullandığınızda özel durumu harekete geçirilir. Böyle bir durumda gerekli davranışın döndürülmesi için Fakes dolgu temsilcisi yönteminde açıkça oluşturun.  
   
--   Çift kullanımlı testler oluşturmak için kullanın `SharePointEmulationScope(EmulationMode)` kullanarak öykünme kapsamı nesnesi oluşturmak için oluşturucu. `EmulationMode` SharePoint çağrıları öykünülmüş veya gerçek bir SharePoint sitesine karşı yürütülen değerini belirtir.  
+- Çift kullanımlı testler oluşturmak için kullanın `SharePointEmulationScope(EmulationMode)` kullanarak öykünme kapsamı nesnesi oluşturmak için oluşturucu. `EmulationMode` SharePoint çağrıları öykünülmüş veya gerçek bir SharePoint sitesine karşı yürütülen değerini belirtir.  
   
--   Tümünü veya bir test sınıfındaki test yöntemlerinizin çoğu öykünme bağlamında çalışırsa, bir sınıf seviyesi kullanabileceğiniz `TestInitialize` öznitelikli yöntemini `SharePointEmulationScope` nesnesi ve bir sınıf seviyesi alanını öykünme modunu ayarlamak için. Bu öykünme modunu değiştirmeyi otomatikleştirmenize yardımcı olur. Ardından bir `TestCleanup` öznitelikli kapsam nesnesini atmak için yöntem.  
+- Tümünü veya bir test sınıfındaki test yöntemlerinizin çoğu öykünme bağlamında çalışırsa, bir sınıf seviyesi kullanabileceğiniz `TestInitialize` öznitelikli yöntemini `SharePointEmulationScope` nesnesi ve bir sınıf seviyesi alanını öykünme modunu ayarlamak için. Bu öykünme modunu değiştirmeyi otomatikleştirmenize yardımcı olur. Ardından bir `TestCleanup` öznitelikli kapsam nesnesini atmak için yöntem.  
   
- [Bu konudaki](#BKMK_In_this_topic)  
+  [Bu konudaki](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Example"></a> Örnek  
  Yukarıda açıklanan SharePoint öykünücüsü tekniklerini içeren son bir örnek aşağıda verilmiştir:  

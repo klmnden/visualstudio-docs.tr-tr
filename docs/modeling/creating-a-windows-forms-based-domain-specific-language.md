@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f8034ae225707ec6030daba39ed09bab3bd161c4
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 01b2b906d514d8fd9042c1046ea2481faee39499
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859529"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926689"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Windows Forms Tabanlı Etki Alanına Özgü Dil Oluşturma
 Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model durumunu görüntülemek için Windows Forms kullanabilirsiniz. Bu konuda, bir Windows formu Visual Studio Görselleştirme ve modelleme SDK'sını kullanarak bir DSL için bağlama aracılığıyla açıklanmaktadır.
@@ -26,30 +26,32 @@ Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model dur
 
 #### <a name="to-create-a-minimal-winforms-dsl"></a>En az bir WinForms DSL oluşturmak için
 
-1.  Bir DSL gelen oluşturma **Minimal WinForm Tasarımcısı** şablonu.
+1. Bir DSL gelen oluşturma **Minimal WinForm Tasarımcısı** şablonu.
 
-     Bu kılavuzda, aşağıdaki adlarını kabul edilir:
+    Bu kılavuzda, aşağıdaki adlarını kabul edilir:
 
-    |||
-    |-|-|
-    |Çözüm ve DSL adı|FarmApp|
-    |Ad Alanı|Company.FarmApp|
 
-2.  Şablon sağlar ilk örnek ile denemeler yapın:
+   | | |
+   |-|-|
+   | Çözüm ve DSL adı | FarmApp |
+   | Ad Alanı | Company.FarmApp |
 
-    1.  Tüm Şablonları Dönüştür.
 
-    2.  Derleme ve çalıştırma örneği (**CTRL + F5**).
+2. Şablon sağlar ilk örnek ile denemeler yapın:
 
-    3.  Visual Studio'nun deneysel örneğinde açın `Sample` hata ayıklama proje dosyasında.
+   1.  Tüm Şablonları Dönüştür.
 
-         Bir Windows Forms denetiminde görüntülendiğini dikkat edin.
+   2.  Derleme ve çalıştırma örneği (**CTRL + F5**).
 
-         Gezgini'nde gösterilen model öğelerini de görebilirsiniz.
+   3.  Visual Studio'nun deneysel örneğinde açın `Sample` hata ayıklama proje dosyasında.
 
-         Form veya Gezgini bazı öğeleri ekleyin ve diğer görüntüsünü görüntülendiğine dikkat edin.
+        Bir Windows Forms denetiminde görüntülendiğini dikkat edin.
 
- Visual Studio'nun ana örneği DSL çözüm hakkında aşağıdaki noktalara dikkat edin:
+        Gezgini'nde gösterilen model öğelerini de görebilirsiniz.
+
+        Form veya Gezgini bazı öğeleri ekleyin ve diğer görüntüsünü görüntülendiğine dikkat edin.
+
+   Visual Studio'nun ana örneği DSL çözüm hakkında aşağıdaki noktalara dikkat edin:
 
 -   `DslDefinition.dsl` hiçbir diyagram öğeleri içerir. Bu DSL örneği modelleri görüntülemek için DSL diyagramları kullanmaz olmasıdır. Bunun yerine, bir Windows Form modeline bağlar ve formu üzerindeki öğelerin model görüntülenir.
 
@@ -132,30 +134,30 @@ Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model dur
 
 #### <a name="to-connect-your-model-to-a-form"></a>Bir forma modelinizi bağlanmak için
 
-1.  İçinde **UI** projesinde, tüm mevcut .cs dosyaları silin.
+1. İçinde **UI** projesinde, tüm mevcut .cs dosyaları silin.
 
-2.  Yeni bir **kullanıcı denetimi** adlı dosya `FarmControl` için **UI** proje.
+2. Yeni bir **kullanıcı denetimi** adlı dosya `FarmControl` için **UI** proje.
 
-3.  İçinde **veri kaynakları** penceresinde aşağı açılan menüden **grubu**, seçin **ayrıntıları**.
+3. İçinde **veri kaynakları** penceresinde aşağı açılan menüden **grubu**, seçin **ayrıntıları**.
 
-     Diğer özellikler için varsayılan ayarları bırakın.
+    Diğer özellikler için varsayılan ayarları bırakın.
 
-4.  FarmControl.cs Tasarım Görünümü'nde açın.
+4. FarmControl.cs Tasarım Görünümü'nde açın.
 
-     Sürükleme **grubu** FarmControl veri kaynakları penceresinden.
+    Sürükleme **grubu** FarmControl veri kaynakları penceresinden.
 
-     Bir dizi denetimi görünür, her bir özellik için bir tane. İlişki özellikleri denetimleri oluşturmaz.
+    Bir dizi denetimi görünür, her bir özellik için bir tane. İlişki özellikleri denetimleri oluşturmaz.
 
-5.  Silme **farmBindingNavigator**. Bu da otomatik olarak oluşturulur `FarmControl` Tasarımcısı, ancak bu uygulama için yararlı değildir.
+5. Silme **farmBindingNavigator**. Bu da otomatik olarak oluşturulur `FarmControl` Tasarımcısı, ancak bu uygulama için yararlı değildir.
 
-6.  Araç kutusunu kullanma iki örneğini oluşturma **DataGridView**ve bunları `AnimalGridView` ve `FieldGridView`.
+6. Araç kutusunu kullanma iki örneğini oluşturma **DataGridView**ve bunları `AnimalGridView` ve `FieldGridView`.
 
-    > [!NOTE]
-    >  Alternatif bir adım veri kaynakları penceresinden denetimin üzerine hayvanlar ve alanları öğeleri sürüklemektir. Bu eylem, veri kılavuzları ve bağlamaları kılavuz görünümünü ve veri kaynağı arasında otomatik olarak oluşturur. Ancak, bu bağlama için DSL'ler düzgün çalışmaz. Bu nedenle daha iyi veri kılavuzları ve bağlamaları oluşturmak el ile.
+   > [!NOTE]
+   >  Alternatif bir adım veri kaynakları penceresinden denetimin üzerine hayvanlar ve alanları öğeleri sürüklemektir. Bu eylem, veri kılavuzları ve bağlamaları kılavuz görünümünü ve veri kaynağı arasında otomatik olarak oluşturur. Ancak, bu bağlama için DSL'ler düzgün çalışmaz. Bu nedenle daha iyi veri kılavuzları ve bağlamaları oluşturmak el ile.
 
-7.  Araç kutusu içermiyorsa **ModelingBindingSource** aracı, ekleyin. Kısayol menüsünde **veri** sekmesini, **öğelerini Seç**. İçinde **araç kutusu öğelerini Seç** iletişim kutusunda **ModelingBindingSource** gelen **.NET Framework sekmesinde**.
+7. Araç kutusu içermiyorsa **ModelingBindingSource** aracı, ekleyin. Kısayol menüsünde **veri** sekmesini, **öğelerini Seç**. İçinde **araç kutusu öğelerini Seç** iletişim kutusunda **ModelingBindingSource** gelen **.NET Framework sekmesinde**.
 
-8.  Araç kutusunu kullanma iki örneğini oluşturma **ModelingBindingSource**ve bunları `AnimalBinding` ve `FieldBinding`.
+8. Araç kutusunu kullanma iki örneğini oluşturma **ModelingBindingSource**ve bunları `AnimalBinding` ve `FieldBinding`.
 
 9. Ayarlama **DataSource** her özellik **ModelingBindingSource** için **farmBindingSource**.
 
@@ -165,15 +167,15 @@ Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model dur
 
 11. Denemek için Grup denetimin düzenini ayarlayın.
 
- **ModelingBindingSource** DSL'ler için özgü çeşitli işlevler gerçekleştiren bir bağdaştırıcı:
+    **ModelingBindingSource** DSL'ler için özgü çeşitli işlevler gerçekleştiren bir bağdaştırıcı:
 
--   Bu, VMSDK Store işlem güncelleştirmeleri sarmalar.
+- Bu, VMSDK Store işlem güncelleştirmeleri sarmalar.
 
-     Örneğin, kullanıcı bir satır veri görünümü kılavuzdan sildiğinde, normal bir bağlama bir işlem özel durum neden olur.
+   Örneğin, kullanıcı bir satır veri görünümü kılavuzdan sildiğinde, normal bir bağlama bir işlem özel durum neden olur.
 
--   Kullanıcı bir satır seçtiğinde, Özellikler penceresinde veri kılavuzu satırı yerine karşılık gelen model öğesinin özelliklerini görüntüler, sağlar.
+- Kullanıcı bir satır seçtiğinde, Özellikler penceresinde veri kılavuzu satırı yerine karşılık gelen model öğesinin özelliklerini görüntüler, sağlar.
 
- ![DslWpf4](../modeling/media/dslwpf4.png) şema veri kaynakları ve görünümleri arasındaki bağlantı.
+  ![DslWpf4](../modeling/media/dslwpf4.png) şema veri kaynakları ve görünümleri arasındaki bağlantı.
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>DSL bağlamaları tamamlamak için
 
@@ -247,62 +249,60 @@ Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model dur
 
 #### <a name="to-provide-add-buttons"></a>Ekle düğmesini sağlamak için
 
-1.  FarmControl.cs Tasarım görünümünde, araç kutusu, formdaki bir düğme oluşturmak için kullanın.
+1. FarmControl.cs Tasarım görünümünde, araç kutusu, formdaki bir düğme oluşturmak için kullanın.
 
-     Düğme metni ve adını örneğin için düzenleyin `New Sheep`.
+    Düğme metni ve adını örneğin için düzenleyin `New Sheep`.
 
-2.  Düğmenin arka plan kod (örneğin, çift tıklayarak) açın.
+2. Düğmenin arka plan kod (örneğin, çift tıklayarak) açın.
 
-     Şu şekilde düzenleyin:
+    Şu şekilde düzenleyin:
 
-    ```csharp
-    private void NewSheepButton_Click(object sender, EventArgs e)
-    {
-      using (Transaction t = farm.Store.TransactionManager.BeginTransaction("Add sheep"))
-      {
-        elementOperations.MergeElementGroup(farm,
-          new ElementGroup(new Sheep(farm.Partition)));
-        t.Commit();
-      }
-    }
+   ```csharp
+   private void NewSheepButton_Click(object sender, EventArgs e)
+   {
+     using (Transaction t = farm.Store.TransactionManager.BeginTransaction("Add sheep"))
+     {
+       elementOperations.MergeElementGroup(farm,
+         new ElementGroup(new Sheep(farm.Partition)));
+       t.Commit();
+     }
+   }
 
-    // The following code is shared with other add buttons:
-    private ElementOperations operationsCache = null;
-    private ElementOperations elementOperations
-    {
-      get
-      {
-        if (operationsCache == null)
-        {
-          operationsCache = new ElementOperations(farm.Store, farm.Partition);
-        }
-        return operationsCache;
-      }
-    }
-    private Farm farm
-    {
-      get { return this.farmBindingSource.DataSource as Farm; }
-    }
+   // The following code is shared with other add buttons:
+   private ElementOperations operationsCache = null;
+   private ElementOperations elementOperations
+   {
+     get
+     {
+       if (operationsCache == null)
+       {
+         operationsCache = new ElementOperations(farm.Store, farm.Partition);
+       }
+       return operationsCache;
+     }
+   }
+   private Farm farm
+   {
+     get { return this.farmBindingSource.DataSource as Farm; }
+   }
+   ```
 
-    ```
+    Aşağıdaki Direktif Ekle gerekecektir:
 
-     Aşağıdaki Direktif Ekle gerekecektir:
+   ```csharp
 
-    ```csharp
+   using Microsoft.VisualStudio.Modeling;
+   ```
 
-    using Microsoft.VisualStudio.Modeling;
+3. Goats ve alanları için benzer bir düğme ekleyin.
 
-    ```
+4. Derleme ve çözümü çalıştırın.
 
-3.  Goats ve alanları için benzer bir düğme ekleyin.
+5. Yeni düğmesini bir öğe ekler doğrulayın. Yeni öğe FarmApp Gezgini'nde ve uygun veri ızgara görünümünde görüntülenmesi gerekir.
 
-4.  Derleme ve çözümü çalıştırın.
+    Veri Kılavuzu görünümü öğe adını düzenlemeniz mümkün olması gerekir. Ayrıca oradan silebilirsiniz.
 
-5.  Yeni düğmesini bir öğe ekler doğrulayın. Yeni öğe FarmApp Gezgini'nde ve uygun veri ızgara görünümünde görüntülenmesi gerekir.
-
-     Veri Kılavuzu görünümü öğe adını düzenlemeniz mümkün olması gerekir. Ayrıca oradan silebilirsiniz.
-
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
+   ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Bir öğe eklemek için kod hakkında
  Yeni öğe düğmeler için aşağıdaki diğer kod biraz daha basittir.
@@ -316,7 +316,6 @@ private void NewSheepButton_Click(object sender, EventArgs e)
     t.Commit();
   }
 }
-
 ```
 
  Ancak, bu kod yeni öğe için bir varsayılan ad ayarlı değil. İçinde tanımlı herhangi bir özelleştirilmiş birleştirme çalıştırmaz **öğe birleştirme yönergeleri** DSL, ve tanımlanmış herhangi bir özel birleştirme kodu çalışmaz.

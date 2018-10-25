@@ -32,12 +32,12 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d02d36e29f823db424c32cf40d036d498282da7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3254ea0197ee0b241735df9c1f437490a09da969
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289334"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914324"
 ---
 # <a name="expressions-in-the-debugger"></a>Hata Ayıklayıcıdaki İfadeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,13 +104,13 @@ int main()
   
  Hata ayıklayıcı iç işlevleri:  
   
--   Güvenli olması garanti: hata ayıklayıcı iç işlev yürütülürken bozuk olmadıklarından ayıklanmakta olan işlem.  
+- Güvenli olması garanti: hata ayıklayıcı iç işlev yürütülürken bozuk olmadıklarından ayıklanmakta olan işlem.  
   
--   Hatta burada yan etkileri ve işlev değerlendirmesi izin verilmeyen senaryolarda tüm ifadelerde izin verilir.  
+- Hatta burada yan etkileri ve işlev değerlendirmesi izin verilmeyen senaryolarda tüm ifadelerde izin verilir.  
   
--   Normal işlev çağrıları bir mini döküm hata ayıklama gibi mümkün olmadığı senaryolarda çalışır.  
+- Normal işlev çağrıları bir mini döküm hata ayıklama gibi mümkün olmadığı senaryolarda çalışır.  
   
- Hata ayıklayıcı iç işlevleri da değerlendirilirken ifadeleri daha kullanışlı hale getirebilirsiniz. Örneğin, `strncmp(str, “asd”)` bir kesme noktası koşulu yazmak kolaydır `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`. )  
+  Hata ayıklayıcı iç işlevleri da değerlendirilirken ifadeleri daha kullanışlı hale getirebilirsiniz. Örneğin, `strncmp(str, “asd”)` bir kesme noktası koşulu yazmak kolaydır `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`. )  
   
 |Alan|İç işlevleri|  
 |----------|-------------------------|  

@@ -19,25 +19,25 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e9b2cd003011d610b56ac97ed95e3008b5cabc6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 583296b47c2d230a48c21952613954b17ebfe622
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267429"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892343"
 ---
 # <a name="memory-usage-without-debugging"></a>Hata ayıklama olmadan bellek kullanımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kullanabileceğiniz **bellek kullanımı** aşağıdakileri yapmak için hata ayıklama olmadan aracı  
   
--   Uygulamanızın izleme bellek kullanım hakkı Visual Studio'da bir senaryo geliştirirken.  
+- Uygulamanızın izleme bellek kullanım hakkı Visual Studio'da bir senaryo geliştirirken.  
   
--   Uygulamanızın bellek durumunun ayrıntılı anlık görüntüler oluşturun.  
+- Uygulamanızın bellek durumunun ayrıntılı anlık görüntüler oluşturun.  
   
--   Bellek sorunlarının temel nedenini bulmak için anlık görüntüleri karşılaştırın.  
+- Bellek sorunlarının temel nedenini bulmak için anlık görüntüleri karşılaştırın.  
   
- Bu konu açıklar nasıl bir Windows Evrensel XAML uygulaması çözümlemek için bellek kullanımı aracı kullanın. JavaScript ve HTML kullanmak, bkz. Evrensel Windows uygulamalarında bellek kullanımını analiz etmek istiyorsanız [(JavaScript) bellek kullanımını analiz etme](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
+  Bu konu açıklar nasıl bir Windows Evrensel XAML uygulaması çözümlemek için bellek kullanımı aracı kullanın. JavaScript ve HTML kullanmak, bkz. Evrensel Windows uygulamalarında bellek kullanımını analiz etmek istiyorsanız [(JavaScript) bellek kullanımını analiz etme](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
   
 ##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Bir bellek kullanımı Tanılama oturumu başlatın  
   
@@ -76,13 +76,13 @@ Kullanabileceğiniz **bellek kullanımı** aşağıdakileri yapmak için hata ay
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a> Bellek kullanımı anlık görüntü görünümleri  
  Ayrıntılı raporlar Visual Studio'nun yeni bir pencerede açmak için anlık görüntü görünümleri kullanın. Anlık görüntü görünümleri iki tür vardır:  
   
--   A [anlık görüntü raporları ayrıntıları](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports) türlerinin ve örneklerinin bir anlık görüntüde gösterilmektedir.  
+- A [anlık görüntü raporları ayrıntıları](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports) türlerinin ve örneklerinin bir anlık görüntüde gösterilmektedir.  
   
--   A [anlık görüntü fark (fark) raporları](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports) türleri ve iki anlık görüntü örnekleri karşılaştırır.  
+- A [anlık görüntü fark (fark) raporları](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports) türleri ve iki anlık görüntü örnekleri karşılaştırır.  
   
- ![Anlık görüntü bağlantıları görüntüle](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
+  ![Anlık görüntü bağlantıları görüntüle](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
   
- Anlık görüntü görünümü bir resimde numaralı öğeler bellek kullanım raporu görünümlerini açmak bağlantılardır.  
+  Anlık görüntü görünümü bir resimde numaralı öğeler bellek kullanım raporu görünümlerini açmak bağlantılardır.  
   
 |||  
 |-|-|  

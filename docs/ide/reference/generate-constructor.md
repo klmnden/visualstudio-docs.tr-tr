@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 039e9a43e3ab6af5db399aa32722c698014256c9
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 2e1c289ca84b4f3298aa32cc0016b3be9132263b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443564"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926741"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Visual Studio'da bir oluşturucu üret
 
@@ -47,10 +47,10 @@ Bu kod oluşturma için geçerlidir:
 1. Ardından, aşağıdakilerden birini yapın:
 
    - **Klavye**
-     - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
+      - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
    - **Fare**
-     - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
-     - &nbsp; ![Ampul](media/bulb-cs.png) boş bir satıra sınıfında metin imleci ise, sol kenar boşluğunda görünür simge.
+      - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
+      - &nbsp; ![Ampul](media/bulb-cs.png) boş bir satıra sınıfında metin imleci ise, sol kenar boşluğunda görünür simge.
 
    ![Oluşturucu Önizleme oluşturma](media/constructor1-preview-cs.png)
 
@@ -78,12 +78,12 @@ Bu kod oluşturma için geçerlidir:
 1. Ardından, aşağıdakilerden birini yapın:
 
    - **Klavye**
-     - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
+      - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
    - **Fare**
-     - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
-     - &nbsp; ![Ampul](media/bulb-cs.png) Seçimi içeren satırda metin imleci ise, sol kenar boşluğunda görünür simge.
+      - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
+      - &nbsp; ![Ampul](media/bulb-cs.png) Seçimi içeren satırda metin imleci ise, sol kenar boşluğunda görünür simge.
 
-     ![Oluşturucu Önizleme oluşturma](media/constructor2-preview-cs.png)
+      ![Oluşturucu Önizleme oluşturma](media/constructor2-preview-cs.png)
 
 1. Seçin **'TypeName(...)' Generate Oluşturucusu**  aşağı açılan menüden.
 
@@ -97,24 +97,24 @@ Bu kod oluşturma için geçerlidir:
 
    - C# İÇİN:
 
-    ![Vurgulanmış kodu C#](media/constructor-highlight-cs.png)
+       ![Vurgulanmış kodu C#](media/constructor-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Vurgulanmış kodu VB](media/constructor-highlight-vb.png)
+       ![Vurgulanmış kodu VB](media/constructor-highlight-vb.png)
 
-1. Ardından, aşağıdakilerden birini yapın:
+2. Ardından, aşağıdakilerden birini yapın:
 
    - **Klavye**
-     - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
+      - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
    - **Fare**
-     - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
-     - Kırmızı dalgalı çizgi gelin ve tıklayın ![Ampul](media/bulb-cs.png) görüntülenen simge.
-     - &nbsp; ![Ampul](media/bulb-cs.png) kırmızı dalgalı çizgi içeren satırda metin imleci ise, sol kenar boşluğunda görünür simge.
+      - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
+      - Kırmızı dalgalı çizgi gelin ve tıklayın ![Ampul](media/bulb-cs.png) görüntülenen simge.
+      - &nbsp; ![Ampul](media/bulb-cs.png) kırmızı dalgalı çizgi içeren satırda metin imleci ise, sol kenar boşluğunda görünür simge.
 
-    ![Oluşturucu Önizleme oluşturma](media/constructor-preview-cs.png)
+      ![Oluşturucu Önizleme oluşturma](media/constructor-preview-cs.png)
 
-1. Seçin **içinde Oluşturucu Üret '*TypeName*'** aşağı açılan menüden.
+3. Seçin **içinde Oluşturucu Üret '*TypeName*'** aşağı açılan menüden.
 
    > [!TIP]
    > Kullanım **değişiklik önizlemesi** Önizleme pencerenin alt kısmındaki bağlantı [tüm değişiklikleri görmek için](../../ide/preview-changes.md) , oluşturulacak, seçim yapmadan önce.
@@ -123,32 +123,32 @@ Bu kod oluşturma için geçerlidir:
 
    - C# İÇİN:
 
-      ![Yöntem sonuç C# oluştur](media/constructor-result-cs.png)
+       ![Yöntem sonuç C# oluştur](media/constructor-result-cs.png)
 
    - Visual Basic:
 
-      ![Yöntem sonuç VB oluştur](media/constructor-result-vb.png)
+       ![Yöntem sonuç VB oluştur](media/constructor-result-vb.png)
 
 ## <a id="addparameter"></a> Oluşturucuya varolan (yalnızca C#) parametre Ekle
 
 1. Var olan bir oluşturucu çağrısı için bir parametre ekleyin.
 
-1. İmlecinizi satıra Yerleştir henüz mevcut olmayan bir oluşturucu kullanılan belirten bir kırmızı dalgalı olduğu.
+2. İmlecinizi satıra Yerleştir henüz mevcut olmayan bir oluşturucu kullanılan belirten bir kırmızı dalgalı olduğu.
 
     ![Oluşturucu vurgulama oluştur](media/constructor4-highlight-cs.png)
 
-1. Ardından, aşağıdakilerden birini yapın:
+3. Ardından, aşağıdakilerden birini yapın:
 
    - **Klavye**
-     - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
+      - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
    - **Fare**
-     - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
-     - Kırmızı dalgalı çizgi gelin ve tıklayın ![Ampul](media/bulb-cs.png) görüntülenen simge.
-     - &nbsp; ![Ampul](media/bulb-cs.png) kırmızı dalgalı çizgi içeren satırda metin imleci ise, sol kenar boşluğunda görünür simge.
+      - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
+      - Kırmızı dalgalı çizgi gelin ve tıklayın ![Ampul](media/bulb-cs.png) görüntülenen simge.
+      - &nbsp; ![Ampul](media/bulb-cs.png) kırmızı dalgalı çizgi içeren satırda metin imleci ise, sol kenar boşluğunda görünür simge.
 
-    ![Oluşturucu Önizleme oluşturma](media/constructor4-preview-cs.png)
+      ![Oluşturucu Önizleme oluşturma](media/constructor4-preview-cs.png)
 
-1. Seçin **'TypeName(...)' için parametre Ekle**  aşağı açılan menüden.
+4. Seçin **'TypeName(...)' için parametre Ekle**  aşağı açılan menüden.
 
    Oluşturucuya, kullanımdan çıkarılan türü ile parametresi eklendi.
 
@@ -167,10 +167,10 @@ Varolan bir yöntem için parametre de ekleyebilirsiniz. Daha fazla bilgi için 
 1. Ardından, aşağıdakilerden birini yapın:
 
    - **Klavye**
-     - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
+      - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
    - **Fare**
-     - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
-     - &nbsp; ![Ampul](media/bulb-cs.png) eklenen parametresiyle satırındaki metin imleci ise, sol kenar boşluğunda görünür simge.
+      - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
+      - &nbsp; ![Ampul](media/bulb-cs.png) eklenen parametresiyle satırındaki metin imleci ise, sol kenar boşluğunda görünür simge.
 
    ![Oluşturucu Önizleme oluşturma](media/constructor5-preview-cs.png)
 

@@ -17,12 +17,12 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6362b05967d937afa3b08a0680fd62854645b728
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fabc1f5e199b9b1456db704552a288a6c9beb76f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200037"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887572"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Eski dil hizmetinde parametre bilgisi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,11 +101,11 @@ namespace TestLanguagePackage
 ## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>Parametre bilgisi araç ipucu ayrıştırıcısını destekleme  
  <xref:Microsoft.VisualStudio.Package.Source> Sınıfı içeriğini ilgili bazı varsayımlarda <xref:Microsoft.VisualStudio.Package.AuthoringScope> ve <xref:Microsoft.VisualStudio.Package.AuthoringSink> parametre bilgisi araç ipucu görüntülenir ve sınıfları.  
   
--   Ayrıştırıcının verilen <xref:Microsoft.VisualStudio.Package.ParseReason> parametre listesi başlangıç karakteri türü olduğunda.  
+- Ayrıştırıcının verilen <xref:Microsoft.VisualStudio.Package.ParseReason> parametre listesi başlangıç karakteri türü olduğunda.  
   
--   Verilen konuma <xref:Microsoft.VisualStudio.Package.ParseRequest> nesnedir parametre listesinde hemen sonra karakter. Ayrıştırıcının getirin ve bunları sürümünüz listesinde depolayan kullanılabilir tüm yöntem bildirimleri imzalarını toplamak gerekir <xref:Microsoft.VisualStudio.Package.AuthoringScope> nesne. Bu liste, yöntem adı içerir yöntemi türü (veya dönüş türü) ve olası parametrelerin bir listesi. Bu liste, daha sonra yöntem imzası veya parametre bilgisi İpucunda görüntülenecek imzaları aranır.  
+- Verilen konuma <xref:Microsoft.VisualStudio.Package.ParseRequest> nesnedir parametre listesinde hemen sonra karakter. Ayrıştırıcının getirin ve bunları sürümünüz listesinde depolayan kullanılabilir tüm yöntem bildirimleri imzalarını toplamak gerekir <xref:Microsoft.VisualStudio.Package.AuthoringScope> nesne. Bu liste, yöntem adı içerir yöntemi türü (veya dönüş türü) ve olası parametrelerin bir listesi. Bu liste, daha sonra yöntem imzası veya parametre bilgisi İpucunda görüntülenecek imzaları aranır.  
   
- Ayrıştırıcı tarafından belirtilen satırın ardından ayrıştırma gerekir <xref:Microsoft.VisualStudio.Package.ParseRequest> Girilmekte olan yöntemin yanı sıra kullanıcının ne kadar boyunca adı toplamak için nesnedir parametreleri metin. Bu yöntemin adını geçirerek gerçekleştirilir <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> metodunda <xref:Microsoft.VisualStudio.Package.AuthoringSink> nesnesi ve ardından arama <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> parametre listesi karakter başlattığınızda yöntemi ayrıştırılır, çağırma <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> yöntemi, parametre listesi sonraki karakteri, ayrıştırılmış ve son olarak çağıran <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> parametre listesi son karakter ayrıştırıldığında yöntemi. Bu yöntem çağrılarının sonuçlarını tarafından kullanılan <xref:Microsoft.VisualStudio.Package.Source> sınıfı parametre bilgisi araç ipucu uygun şekilde güncelleştirilecek.  
+  Ayrıştırıcı tarafından belirtilen satırın ardından ayrıştırma gerekir <xref:Microsoft.VisualStudio.Package.ParseRequest> Girilmekte olan yöntemin yanı sıra kullanıcının ne kadar boyunca adı toplamak için nesnedir parametreleri metin. Bu yöntemin adını geçirerek gerçekleştirilir <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> metodunda <xref:Microsoft.VisualStudio.Package.AuthoringSink> nesnesi ve ardından arama <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> parametre listesi karakter başlattığınızda yöntemi ayrıştırılır, çağırma <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> yöntemi, parametre listesi sonraki karakteri, ayrıştırılmış ve son olarak çağıran <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> parametre listesi son karakter ayrıştırıldığında yöntemi. Bu yöntem çağrılarının sonuçlarını tarafından kullanılan <xref:Microsoft.VisualStudio.Package.Source> sınıfı parametre bilgisi araç ipucu uygun şekilde güncelleştirilecek.  
   
 ### <a name="example"></a>Örnek  
  Kullanıcı girebilir metin satırı aşağıda verilmiştir. Çizginin altındaki sayılar, hangi adımın (ayrıştırma taşır soldan sağa varsayılarak) satırı o konumda ayrıştırıcı tarafından gerçekleştirilen gösterir. Buradaki varsayım satırından önce her şeyi zaten "testfunc" yöntem imzası dahil olmak üzere, yöntem imzaları için ayrıştırıldıktan emin olur.  

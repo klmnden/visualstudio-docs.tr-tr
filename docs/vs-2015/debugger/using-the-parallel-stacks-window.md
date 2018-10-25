@@ -23,12 +23,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 353d9a39a299c0803bb4f27843fcae43375105cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3be45a598535d81e23cd32ff4d30045ae2ac8dcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182181"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891732"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Paralel Yığınlar Penceresini Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,21 +99,21 @@ ms.locfileid: "49182181"
 ## <a name="tasks-view"></a>Görevler görünümü  
  Uygulamanızı kullanıyorsa <xref:System.Threading.Tasks.Task?displayProperty=fullName> nesneleri (yönetilen kod için) veya `task_handle` paralellik ifade etmek için (yerel kod için) nesneleri, geçiş yapmak Paralel Yığınlar penceresi araç çubuğu birleşik giriş kutusunda kullanabilirsiniz *Görevler görünümü*. Görev Görünümü görevleri yerine iş parçacığı çağrı yığınlarını gösterir. Görevler görünümü iş parçacıkları Görünümü'ndeki aşağıdaki şekilde farklıdır:  
   
--   Görevler ile çalışan iş parçacığı çağrı yığınlarını gösterilmez.  
+- Görevler ile çalışan iş parçacığı çağrı yığınlarını gösterilmez.  
   
--   Görevleri çalıştıran iş parçacığı çağrı yığınlarını görsel olarak göster görevlere ait ilgilendiren çerçeveleri için altındaki ve üstündeki atılır.  
+- Görevleri çalıştıran iş parçacığı çağrı yığınlarını görsel olarak göster görevlere ait ilgilendiren çerçeveleri için altındaki ve üstündeki atılır.  
   
--   Birden çok görev bir iş parçacığı üzerinde olduğunda, bu görevlerin çağrı yığınları farklı düğümlere bölünür.  
+- Birden çok görev bir iş parçacığı üzerinde olduğunda, bu görevlerin çağrı yığınları farklı düğümlere bölünür.  
   
- Paralel Yığınlar Görevler görünümü sağ ve sol taraftaki karşılık gelen iş parçacıkları görünümü aşağıda gösterilmiştir.  
+  Paralel Yığınlar Görevler görünümü sağ ve sol taraftaki karşılık gelen iş parçacıkları görünümü aşağıda gösterilmiştir.  
   
- ![Görevler Paralel Yığınlar penceresini görünümünde](../debugger/media/parallel-tasksview.png "Parallel_TasksView")  
+  ![Görevler Paralel Yığınlar penceresini görünümünde](../debugger/media/parallel-tasksview.png "Parallel_TasksView")  
   
- Tüm çağrı yığınını görmek için yalnızca iş parçacığı yığın çerçevesi sağ tıklatıp ardından görünümüne dönebilirsiniz **iş parçacığına Git**.  
+  Tüm çağrı yığınını görmek için yalnızca iş parçacığı yığın çerçevesi sağ tıklatıp ardından görünümüne dönebilirsiniz **iş parçacığına Git**.  
   
- Bir yöntem bağlamı gelerek önceki tabloda açıklandığı gibi ek bilgileri görebilirsiniz. Aşağıdaki görüntüde iş parçacıkları görünümü ve Görevler görünümü için araç ipucunda bilgileri gösterir.  
+  Bir yöntem bağlamı gelerek önceki tabloda açıklandığı gibi ek bilgileri görebilirsiniz. Aşağıdaki görüntüde iş parçacıkları görünümü ve Görevler görünümü için araç ipucunda bilgileri gösterir.  
   
- ![Paralel Yığınlar penceresini araç ipuçlarında](../debugger/media/parallel-stack-tooltips.png "Parallel_Stack_Tooltips")  
+  ![Paralel Yığınlar penceresini araç ipuçlarında](../debugger/media/parallel-stack-tooltips.png "Parallel_Stack_Tooltips")  
   
 ## <a name="method-view"></a>Metot görüntüle  
  İş Parçacıkları görünümü veya Görevler görünümünde, araç çubuğundaki yöntemi görünümü simgesine tıklayarak geçerli yöntemi grafikte Özet. Yöntemi bir bakışta tüm yöntemleri çağırmak ya da geçerli yöntemi tarafından çağrılır tüm iş parçacıkları üzerinde görüntüler. Aşağıdaki çizimde, iş parçacıkları görünümü ve de aynı bilgileri yöntemi Görünümü'nde nasıl göründüğünü gösterir.  

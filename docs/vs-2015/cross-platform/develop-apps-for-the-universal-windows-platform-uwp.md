@@ -14,12 +14,12 @@ caps.latest.revision: 50
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 1235416a411935d811f3747fa5127cc395ef0f29
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 682ae7d410f80d3ba5e960d485c144b2f7495141
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287098"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909061"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Evrensel Windows Platformu (UWP) için uygulama geliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,21 +44,21 @@ Evrensel Windows platformu ve bizim bir Windows çekirdek ile aynı uygulama tü
   
  Gereken yazılım listesi aşağıda verilmiştir:  
   
--   [Windows 10](http://windows.microsoft.com/windows/downloads)  
+- [Windows 10](http://windows.microsoft.com/windows/downloads)  
   
--   [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=526725). Evrensel Windows uygulama geliştirme araçları isteğe bağlı özellikler listesinden seçili olduğundan emin olun. Bu araçlar olmasaydı, Evrensel uygulamaları oluşturmak mümkün olmayacaktır.  
+- [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=526725). Evrensel Windows uygulama geliştirme araçları isteğe bağlı özellikler listesinden seçili olduğundan emin olun. Bu araçlar olmasaydı, Evrensel uygulamaları oluşturmak mümkün olmayacaktır.  
   
- Bu yazılımı yükledikten sonra yapmanız [Windows 10 Cihazınızı etkinleştirme](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) geliştirme için. (Artık bir geliştirici lisansı her Windows 10 cihaz için ihtiyacınız.)  
+  Bu yazılımı yükledikten sonra yapmanız [Windows 10 Cihazınızı etkinleştirme](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) geliştirme için. (Artık bir geliştirici lisansı her Windows 10 cihaz için ihtiyacınız.)  
   
- **Windows 8.1 ve Windows 7 desteği**  
+  **Windows 8.1 ve Windows 7 desteği**  
   
- Windows 10 dışındaki bir platformda Visual Studio 2015 ile Evrensel Windows uygulamaları geliştirme kullanmayı tercih ederseniz kısıtlamaları şunlardır:  
+  Windows 10 dışındaki bir platformda Visual Studio 2015 ile Evrensel Windows uygulamaları geliştirme kullanmayı tercih ederseniz kısıtlamaları şunlardır:  
   
--   Windows 8.1: Uygulamayı yerel olarak (yalnızca bir uzak Windows 10 cihazında) çalıştıramazsınız. Visual Studio, ancak simülatörü değil öykünücüleri kullanabilirsiniz.  
+- Windows 8.1: Uygulamayı yerel olarak (yalnızca bir uzak Windows 10 cihazında) çalıştıramazsınız. Visual Studio, ancak simülatörü değil öykünücüleri kullanabilirsiniz.  
   
--   Windows 7: Uygulamayı yerel olarak (yalnızca bir uzak Windows 10 cihazında) çalıştıramazsınız. Visual Studio öykünücü veya simülatör ya da kullanamazsınız.  
+- Windows 7: Uygulamayı yerel olarak (yalnızca bir uzak Windows 10 cihazında) çalıştıramazsınız. Visual Studio öykünücü veya simülatör ya da kullanamazsınız.  
   
- Geliştirme platformunuzu Windows 10 ise yalnızca XAML Tasarımcısı'nı kullanabilirsiniz.  
+  Geliştirme platformunuzu Windows 10 ise yalnızca XAML Tasarımcısı'nı kullanabilirsiniz.  
   
 ## <a name="universal-windows-apps"></a>Evrensel Windows uygulamaları  
  Tercih edilen geliştirme dilini C#, Visual Basic, C++ veya JavaScript arasından [Windows 10 cihazları için bir evrensel Windows uygulaması oluşturma](http://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). Veya, watch [bu başlangıç videosu](http://channel9.msdn.com/Series/ConnectOn-Demand/229).  

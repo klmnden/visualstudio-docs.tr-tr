@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: v-brickg
-ms.openlocfilehash: 981c05e61e02746e1cbaf40e7f15553d04786a02
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: acc359d7dec2c008bec49a86357faa7227d53ff6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299344"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875079"
 ---
 # <a name="shared-colors"></a>Paylaşılan renkler
 Açıklamayı buraya ekleyin.  
@@ -48,10 +48,10 @@ Açıklamayı buraya ekleyin.
  Kullan...  
  -   herhangi bir zamanda, özel bir menü oluşturmanız gerekir.  
   
--   Visual Studio menülerinin eşleştirmek istediğiniz yeni bir kullanıcı Arabirimi bileşeninin olduğunda.  
+- Visual Studio menülerinin eşleştirmek istediğiniz yeni bir kullanıcı Arabirimi bileşeninin olduğunda.  
   
- Kullanmayın...  
- tek başına arka plan rengi. Her zaman arka plan/ön plan birlikte belirtilen kullanın.  
+  Kullanmayın...  
+  tek başına arka plan rengi. Her zaman arka plan/ön plan birlikte belirtilen kullanın.  
   
 ##### <a name="menu-title"></a>Menü başlığı  
  Genellikle bir Komut çubuğuna menü bulunduğunda menü başlığı arka plan, kenarlık ve başlık metnini yanı isteğe bağlı bir karakter oluşur.  
@@ -64,9 +64,9 @@ Açıklamayı buraya ekleyin.
  Kullanmayın...  
  -   her şey için her zaman istemediğiniz menü başlığının eşleştirin.  
   
--   Belirtilen dışındaki tüm arka plan/ön plan arada.  
+- Belirtilen dışındaki tüm arka plan/ön plan arada.  
   
- **Default**  
+  **Default**  
   
 |Bileşen|Öğe|Belirteç adı: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -113,9 +113,9 @@ Açıklamayı buraya ekleyin.
  Kullanmayın...  
  -   herhangi bir aşağı açılan listeyi, başka bir bağlamda gerçekleşir.  
   
--   Belirtilen dışındaki tüm arka plan/ön plan arada.  
+- Belirtilen dışındaki tüm arka plan/ön plan arada.  
   
- **Default**  
+  **Default**  
   
 |Bileşen|Öğe|Belirteç adı: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -180,9 +180,9 @@ Açıklamayı buraya ekleyin.
  Kullanmayın...  
  -   Kullanıcı Arabirimi öğeleri için Komut çubuğuna benzer değildir.  
   
--   belirteç adları dışında olduğu için istediklerinizi belirtilen komut çubuğu bileşenleri için.  
+- belirteç adları dışında olduğu için istediklerinizi belirtilen komut çubuğu bileşenleri için.  
   
- **Varsayılan** (başka hiçbir durum)  
+  **Varsayılan** (başka hiçbir durum)  
   
 |Öğe|Belirteç adı: Category.color|  
 |-------------|--------------------------------|  
@@ -202,9 +202,9 @@ Açıklamayı buraya ekleyin.
  Kullanmayın...  
  -   denetimler için belirteç adlarına sahip.  
   
--   Belirtilen dışındaki tüm arka plan/ön plan arada.  
+- Belirtilen dışındaki tüm arka plan/ön plan arada.  
   
- **Default**  
+  **Default**  
   
 |Bileşen|Öğe|Belirteç adı: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -252,14 +252,14 @@ Açıklamayı buraya ekleyin.
  Kullan...  
  -   özel bir birleşik giriş kutuları oluştururken.  
   
--   bir birleşik giriş kutusuna benzeyen bir komut çubuğu denetimini oluştururken.  
+- bir birleşik giriş kutusuna benzeyen bir komut çubuğu denetimini oluştururken.  
   
- Kullanmayın...  
- -   her şey için her zaman komut eşleştirilecek istemediğiniz çubuğu kullanıcı Arabirimi.  
+  Kullanmayın...  
+  -   her şey için her zaman komut eşleştirilecek istemediğiniz çubuğu kullanıcı Arabirimi.  
   
--   erişim için bir stil uygulanmış bir birleşik giriş kutusu olduğunda.  
+- erişim için bir stil uygulanmış bir birleşik giriş kutusu olduğunda.  
   
- **Default**  
+  **Default**  
   
 |Bileşen|Öğe|Belirteç adı: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -333,9 +333,9 @@ Açıklamayı buraya ekleyin.
  Kullanmayın...  
  -   her şey için aşağı açılan listesine benzer değil.  
   
--   Birleşik giriş kutuları veya Bölünmüş düğme.  
+- Birleşik giriş kutuları veya Bölünmüş düğme.  
   
- **Default**  
+  **Default**  
   
 |Bileşen|Öğe|Belirteç adı: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -397,9 +397,9 @@ Açıklamayı buraya ekleyin.
  Kullanmayın...  
  -   diğer düğme türleri için.  
   
--   Belirtilen dışındaki tüm arka plan/ön plan arada.  
+- Belirtilen dışındaki tüm arka plan/ön plan arada.  
   
- **Default**  
+  **Default**  
   
 |Bileşen|Öğe|Belirteç adı: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -550,19 +550,19 @@ Açıklamayı buraya ekleyin.
 ##### <a name="open-document-tabs"></a>Açık belge sekmeleri  
  Her açık belge adını görüntüleyen belge sekme kanalda bir sekmesi vardır. Belge ya da seçilebilir veya arka planda açın ve bu durumları sekmeleri yansıtacak:  
   
--   Seçili belgeyi de şu anda görüntülenen belgenin temsil eder. Seçili bir sekme iyi belgenin üst kenarı genişlettiği belge kenarlık vardır.  
+- Seçili belgeyi de şu anda görüntülenen belgenin temsil eder. Seçili bir sekme iyi belgenin üst kenarı genişlettiği belge kenarlık vardır.  
   
--   Arka plan sekmeleri şu anda seçilen sekmesi olmayan herhangi bir belge sekme var. Tıklattıktan sonra seçili duruma ve tüm arka plan, kenarlık ve metin renklerini Bu belirteci adlarından Al.  
+- Arka plan sekmeleri şu anda seçilen sekmesi olmayan herhangi bir belge sekme var. Tıklattıktan sonra seçili duruma ve tüm arka plan, kenarlık ve metin renklerini Bu belirteci adlarından Al.  
   
- ![Açık belge sekme kırmızı çizgi](../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")  
+  ![Açık belge sekme kırmızı çizgi](../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")  
   
- Kullan...  
- ne zaman özel belge sekmeleri oluşturuyorsunuz.  
+  Kullan...  
+  ne zaman özel belge sekmeleri oluşturuyorsunuz.  
   
- Kullanmayın...  
- -   (Önizleme) provisional sekmeler için.  
+  Kullanmayın...  
+  -   (Önizleme) provisional sekmeler için.  
   
--   otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi için bir tema güncelleştirme Kabuk sahiptir.  
+- otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi için bir tema güncelleştirme Kabuk sahiptir.  
   
 ##### <a name="selected-tab"></a>Seçilen sekmesi  
  **Odaklanmış**  
@@ -611,9 +611,9 @@ Açıklamayı buraya ekleyin.
  Kullanmayın...  
  -   Belge ya da geçici olmayan sekmesinde herhangi bir türdeki (Önizleme).  
   
--   otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi için bir tema güncelleştirme Kabuk sahiptir.  
+- otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi için bir tema güncelleştirme Kabuk sahiptir.  
   
- **Seçili Önizleme sekmesi: odaklanmış**  
+  **Seçili Önizleme sekmesi: odaklanmış**  
   
 |Bileşen|Öğe|Belirteç adı: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -658,9 +658,9 @@ Açıklamayı buraya ekleyin.
  Kullanmayın...  
  -   taşma düğmesini için benzer değil kullanıcı Arabirimi için.  
   
--   Komut çubuğu taşma düğmeleri.  
+- Komut çubuğu taşma düğmeleri.  
   
- **Default**  
+  **Default**  
   
 |Bileşen|Öğe|Belirteç adı: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -765,9 +765,9 @@ Açıklamayı buraya ekleyin.
  Kullanmayın...  
  -   diğer konumlardaki düğmeler.  
   
--   Belirtilen dışındaki tüm arka plan/ön plan arada.  
+- Belirtilen dışındaki tüm arka plan/ön plan arada.  
   
- **Default**  
+  **Default**  
   
 |Bileşen|Öğe|Belirteç adı: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -870,25 +870,25 @@ Açıklamayı buraya ekleyin.
   
  Bir arama kutusu bazıları birbirini dışlayan olan çeşitli durumları biri olabilir:  
   
--   "Odaklı" veya "odaklanmadan" olup olmadığını imleç ve metin kutusundaki için kısaltmasıdır.  
+- "Odaklı" veya "odaklanmadan" olup olmadığını imleç ve metin kutusundaki için kısaltmasıdır.  
   
--   Kullanıcının metin kutusuna bir arama sorgusu girişinin için "Etkin" veya "etkin" anlamına gelir.  
+- Kullanıcının metin kutusuna bir arama sorgusu girişinin için "Etkin" veya "etkin" anlamına gelir.  
   
--   "Vurgu", kullanıcı (Bu durumda, diğer tüm durumları geçersiz kılar) fare ile arama kutusuna moused anlamına gelir.  
+- "Vurgu", kullanıcı (Bu durumda, diğer tüm durumları geçersiz kılar) fare ile arama kutusuna moused anlamına gelir.  
   
--   "Devre dışı" arama işlevi için geçerli bağlam kapalı anlamına gelir.  
+- "Devre dışı" arama işlevi için geçerli bağlam kapalı anlamına gelir.  
   
- ![Arama kutusuna kırmızı çizgi](../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303 110_SearchBoxRedline")  
+  ![Arama kutusuna kırmızı çizgi](../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303 110_SearchBoxRedline")  
   
- Kullan...  
- ne zaman bir özel arama kutusu tasarlarken.  
+  Kullan...  
+  ne zaman bir özel arama kutusu tasarlarken.  
   
- Kullanmayın...  
- -   her şey için bir arama kutusu değil.  
+  Kullanmayın...  
+  -   her şey için bir arama kutusu değil.  
   
--   her zaman arama eşleştirilecek istemediğiniz her şey için kullanıcı Arabirimi kutusu.  
+- her zaman arama eşleştirilecek istemediğiniz her şey için kullanıcı Arabirimi kutusu.  
   
- **Odaklanmış**  
+  **Odaklanmış**  
   
 |Bileşen|Öğe|Belirteç adı: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -969,14 +969,14 @@ Açıklamayı buraya ekleyin.
  Kullan...  
  -   ne zaman bir özel arama açılan listedeki oluşturuyorsunuz.  
   
--   Düzeltme listesi bileşenleri için doğru belirteci adları.  
+- Düzeltme listesi bileşenleri için doğru belirteci adları.  
   
- Kullanmayın...  
- -   diğer bağlamlarda görünen açılan listeler.  
+  Kullanmayın...  
+  -   diğer bağlamlarda görünen açılan listeler.  
   
--   Belirtilen dışındaki tüm arka plan/ön plan arada.  
+- Belirtilen dışındaki tüm arka plan/ön plan arada.  
   
- **Varsayılan (başka hiçbir durum)**  
+  **Varsayılan (başka hiçbir durum)**  
   
 |Öğe|Belirteç adı: Category.color|  
 |-------------|--------------------------------|  
@@ -1133,9 +1133,9 @@ Açıklamayı buraya ekleyin.
  Kullanmayın...  
  -   her şey için bir ağaç görünümüne benzer değil.  
   
--   Belirtilen dışındaki tüm arka plan/ön plan arada.  
+- Belirtilen dışındaki tüm arka plan/ön plan arada.  
   
- **Default**  
+  **Default**  
   
 |Bileşen|Öğe|Belirteç adı: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -1295,9 +1295,9 @@ Açıklamayı buraya ekleyin.
  Kullanmayın...  
  -   bir açılan veya birleşik giriş kutusu değil herhangi bir UI için.  
   
--   için bir [açılan](../misc/shared-colors.md#BKMK_CommandDropDown) veya [birleşik giriş kutusu](../misc/shared-colors.md#BKMK_CommandComboBox) komut çubuğunda.  
+- için bir [açılan](../misc/shared-colors.md#BKMK_CommandDropDown) veya [birleşik giriş kutusu](../misc/shared-colors.md#BKMK_CommandComboBox) komut çubuğunda.  
   
- **Default**  
+  **Default**  
   
 |Bileşen|Öğe|Belirteç adı: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -1428,12 +1428,12 @@ Açıklamayı buraya ekleyin.
  Kullan...  
  -   Bildirim Tasarımcısı için benzer tasarımcıları.  
   
--   bir düzenleyici belgesi içinde üst kısmındaki ortak sekme denetimleri kullanarak yerine yanı sıra.  
+- bir düzenleyici belgesi içinde üst kısmındaki ortak sekme denetimleri kullanarak yerine yanı sıra.  
   
- Kullanmayın...  
- -   altıdan fazla sekme varsa.  
+  Kullanmayın...  
+  -   altıdan fazla sekme varsa.  
   
--   Bildirim Tasarımcısı gibi yapılandırılmamış herhangi bir UI için.  
+- Bildirim Tasarımcısı gibi yapılandırılmamış herhangi bir UI için.  
   
 |Durum|Bileşen|Öğe|Belirteç adı: Category.color|  
 |-----------|---------------|-------------|--------------------------------|  
@@ -1550,10 +1550,10 @@ Açıklamayı buraya ekleyin.
  Kullan...  
  -   menüleri ve araç çubukları yerleştirdiğiniz alanları.  
   
--   doğru arka plan/ön plan belirteç adı birlikte.  
+- doğru arka plan / ön plan belirteç adı birleşimi.  
   
- Kullanmayın...  
- bir komut raf için benzer olmayan alanları.  
+  Kullanmayın...  
+  bir komut raf için benzer olmayan alanları.  
   
 |Bileşen|Öğe|Belirteç adı: Category.color|  
 |---------------|-------------|--------------------------------|  

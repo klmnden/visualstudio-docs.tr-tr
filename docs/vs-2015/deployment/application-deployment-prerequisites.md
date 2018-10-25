@@ -25,12 +25,12 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 699d7261db325b23502003f250e8ed2fc61f5c7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e382c5d312a2de69281bdeda92e9c275e2877932
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217938"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891004"
 ---
 # <a name="application-deployment-prerequisites"></a>Uygulama Dağıtımının Önkoşulları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ Uygulamanızı yüklemek ve başarılı bir şekilde çalıştırılması sağla
 ## <a name="bootstrapping-and-clickonce-deployment"></a>Önyükleme ve ClickOnce dağıtımı  
  Bir istemci bilgisayarda, bir uygulamayı yüklemeden önce [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildiriminde belirtilen belirli gereksinimleri olduğundan emin olmak için istemci inceleyeceksiniz. Bunlar aşağıdakileri içerir:  
   
--   Bir derleme bağımlılığı uygulama bildiriminde belirtilen ortak dil çalışma zamanı sürümü gerekli en düşük.  
+- Bir derleme bağımlılığı uygulama bildiriminde belirtilen ortak dil çalışma zamanı sürümü gerekli en düşük.  
   
--   Gerekli en düşük sürümü Windows işletim sistemi, uygulamanın gerektirdiği belirtilen uygulama bildirimi kullanarak `<osVersionInfo>` öğesi. (Bkz [ \<bağımlılık > öğesi](../deployment/dependency-element-clickonce-application.md))  
+- Gerekli en düşük sürümü Windows işletim sistemi, uygulamanın gerektirdiği belirtilen uygulama bildirimi kullanarak `<osVersionInfo>` öğesi. (Bkz [ \<bağımlılık > öğesi](../deployment/dependency-element-clickonce-application.md))  
   
--   Derleme bildiriminde derleme bağımlılık bildirimi tarafından belirtilen genel derleme önbelleğinde (GAC), önceden yüklenmiş tüm derlemeleri en düşük sürümü.  
+- Derleme bildiriminde derleme bağımlılık bildirimi tarafından belirtilen genel derleme önbelleğinde (GAC), önceden yüklenmiş tüm derlemeleri en düşük sürümü.  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] eksik Önkoşullar algılayabilir ve bir önyükleyici kullanarak önkoşulları yükleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: ClickOnce uygulamasıyla Önkoşulları Yükleme](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] eksik Önkoşullar algılayabilir ve bir önyükleyici kullanarak önkoşulları yükleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: ClickOnce uygulamasıyla Önkoşulları Yükleme](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
 >  Bildirimleri gibi araçları tarafından oluşturulan değerleri değiştirmek için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] MageUI.exe ihtiyacınız ve uygulama bildirimi bir metin düzenleyicisinde düzenleyin ve ardından uygulama ve dağıtım bildirimlerini yeniden imzalama. Daha fazla bilgi için [nasıl yapılır: yeniden imzalama uygulama ve dağıtım bildirimlerini](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  

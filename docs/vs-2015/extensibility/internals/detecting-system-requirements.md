@@ -16,12 +16,12 @@ ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 51
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e1956130203498d32d1ee39d67121f7797dd41fc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d92d895b0986a8a6df888d4bea258f9dab067e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187486"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880565"
 ---
 # <a name="detecting-system-requirements"></a>Sistem Gereksinimlerini Algılama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ VSPackage Visual Studio'nun yüklü olduğu sürece çalışamaz. Microsoft Wind
 ## <a name="detecting-visual-studio-editions"></a>Visual Studio sürümleri algılama  
  Visual Studio sürümü yüklü olup olmadığını belirlemek için yükleme kayıt defteri anahtarının değerini (REG_DWORD) uygun klasöründe, 1 aşağıdaki tabloda listelendiği gibi olduğunu. Visual Studio sürümleri hiyerarşisini olduğuna dikkat edin:  
   
-1.  Enterprise  
+1. Enterprise  
   
-2.  Professional  
+2. Professional  
   
-3.  Topluluk  
+3. Topluluk  
   
- "Yüksek" sürümü yüklendiğinde, kayıt defteri anahtarlarını bu sürümünde de "Düşük" sürümleri gibi eklenir. Diğer bir deyişle, Enterprise edition yüklediyseniz, yükleme anahtar 1 Professional ve Community sürümlerinde yanı sıra, kuruluş için ayarlanır. Bu nedenle, gereksinim duyduğunuz yalnızca "Yüksek" sürümü için denetlemeniz gerekir.  
+   "Yüksek" sürümü yüklendiğinde, kayıt defteri anahtarlarını bu sürümünde de "Düşük" sürümleri gibi eklenir. Diğer bir deyişle, Enterprise edition yüklediyseniz, yükleme anahtar 1 Professional ve Community sürümlerinde yanı sıra, kuruluş için ayarlanır. Bu nedenle, gereksinim duyduğunuz yalnızca "Yüksek" sürümü için denetlemeniz gerekir.  
   
 > [!NOTE]
 >  Kayıt Defteri Düzenleyicisi'ni 64-bit sürümünde 32 bit anahtarlar HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node altında görüntülenen\\. Visual Studio anahtarları HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing altında olan\\.  

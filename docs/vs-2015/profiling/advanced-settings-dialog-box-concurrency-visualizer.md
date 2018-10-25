@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b09b5d3a6bb279291df64c0de720ba03f2eee16d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 052c4c59b72d5d7f5c4722fc32efc9ecedb0556b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204442"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921970"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Gelişmiş Ayarlar İletişim Kutusu (Eşzamanlılık Görselleştiricisi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,15 +81,15 @@ Kullanarak **Gelişmiş ayarlar** iletişim kutusu eşzamanlılık görselleşti
 ## <a name="files"></a>Dosyalar  
  Üzerinde **dosyaları** sekmesinde, bir izleme depolanan her seferinde hangi izleme dosyalar dizine toplanır belirtebilirsiniz.  Eşzamanlılık görselleştiricisi topladığı her izleme için dört dosya üretir:  
   
--   Bir çekirdek modu olay izleme günlüğü (ETL) dosyası (*. kernel.etl)  
+- Bir çekirdek modu olay izleme günlüğü (ETL) dosyası (*. kernel.etl)  
   
--   Bir kullanıcı modu olay izleme günlüğü dosyası (*. user.etl)  
+- Bir kullanıcı modu olay izleme günlüğü dosyası (*. user.etl)  
   
--   Eşzamanlılık görselleştiricisi verisi dosyası (*. CVData)  
+- Eşzamanlılık görselleştiricisi verisi dosyası (*. CVData)  
   
--   Eşzamanlılık görselleştiricisi izlemesi dosyası (*. CVTrace)  
+- Eşzamanlılık görselleştiricisi izlemesi dosyası (*. CVTrace)  
   
- İki ETL Ham izleme verileri depolamak ve iki eşzamanlılık görselleştiricisi dosyaları işlenen verileri depolayın.  Bir izleme işlendikten sonra ham ETL dosyaları genellikle kullanılmaz.  Seçme **Sil olay izleme günlüğü (ETL) dosyalarını çözümleme sonrasında** onay kutusunu, diskte depolanan izleme veri miktarını azaltır.  
+  İki ETL Ham izleme verileri depolamak ve iki eşzamanlılık görselleştiricisi dosyaları işlenen verileri depolayın.  Bir izleme işlendikten sonra ham ETL dosyaları genellikle kullanılmaz.  Seçme **Sil olay izleme günlüğü (ETL) dosyalarını çözümleme sonrasında** onay kutusunu, diskte depolanan izleme veri miktarını azaltır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yalnızca kendi kodum](../profiling/just-my-code-threads-view.md)   

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8acd51675aaca979a1dce0edddb9d7d937422d49
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: add008f6e5728d8c53f0f4ad3c9f590ecd7dc919
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177818"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929211"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Seçenekler Sayfası, Metin Düzenleyici Düğümü Özellikleri
 Bu belgede, bazı sayfalar (veya özellik koleksiyonları) açıklanmaktadır ile ilişkili **metin düzenleyici** kategori `DTE.Properties("TextEditor", <Property Page>)`, biri **seçenekleri** iletişim kutusu. Her bir alt bölümünün başlığı kullanılan çağrıdır erişimi `Properties` toplama ve her bir alt bölümdeki tabloda koleksiyondaki özellikler listelenmektedir.
@@ -29,7 +29,7 @@ Bu belgede, bazı sayfalar (veya özellik koleksiyonları) açıklanmaktadır il
  `DTE.Properties("TextEditor", "General")`
 
 |Özellik Öğesi Adı|Değer|Açıklama|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |GoToAnchorAfterEscape|Get/Set (Boole)|Varsa `True`, bir seçim varken ESC tuşuna basılması ekleme noktasını seçimi oluşturan eylemin başlatıldığı yere taşıyın. `False` ekleme noktasını seçimin diğer sonuna taşır.|
 |DragNDropTextEditing|Get/Set (Boole)|Seçilen bir metin bölümünü, kopyala veya kes/yapıştır işlemleri için belge içinde bir yerden başka bir yere sürükleyip sürükleyemeyeceğinizi belirler.|
 |HorizontalScrollBar|Get/Set (Boole)|Düzenleyici pencerelerinde yatay kaydırma çubuğu olup olmadığını belirler.|
@@ -48,7 +48,7 @@ Bu belgede, bazı sayfalar (veya özellik koleksiyonları) açıklanmaktadır il
  `PlainText` Düzenleyici seçenekleri, metin dosyaları düzenlenirken Düzenleyici ayarlarını etkiler. Her programlama dilinin ve [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] paketi olan kendi özel **metin düzenleyici** ayarları. Örneğin, görüntüleme veya değiştirme için [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Düzenleyici ayarları kullanmak `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`. İçin **SQL betiğini** Düzenleyici ayarları kullanmak `DTE.Properties("TextEditor", "SQL ")`.
 
 |Özellik Öğesi Adı|Değer|Açıklama|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |AutoListMembers|Get/Set (Boole)|Kullanıcı, bir değişken başvurusunun ardından nokta girdiğinde, kullanılabilir üye listesinin otomatik olarak görünüp görünmeyeceğini belirler.|
 |AutoListParams|Get/Set (Boole)|Kullanıcılar bir işlev adının ardından "(" girdiğinde, bağımsız değişken listesi açıklamasının otomatik olarak görüntülenip görüntülenmeyeceğini belirler.|
 |HideAdvancedMembers|Get/Set (Boole)|Deyim tamamlama özelliğinin tüm üyeleri mi, yoksa sadece sık kullanılanları mı listeleyeceğini belirler.|

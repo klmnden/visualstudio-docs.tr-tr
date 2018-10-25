@@ -23,12 +23,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 9c9a59d8b1d24ee854a4ff7e3f462f7db9062763
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50654574dea18df98f8f4ecef8d606cccec93f14
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232108"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898180"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce Güvenliği ve Dağıtımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ ms.locfileid: "49232108"
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Dağıtım üç ana dağıtım sorunları üstesinden gelir:  
   
--   **Uygulamaları güncelleştirme sorunlar yaşıyoruz.** Microsoft Windows Installer dağıtımı ile bir uygulama her güncelleştirildiğinde, kullanıcı bir msp dosyası bir güncelleştirmeyi yüklemek ve yüklü ürün için geçerlidir; ile [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtımı, güncelleştirmeleri otomatik olarak sağlayabilirsiniz. Yalnızca değişmiş olan uygulama bölümlerini yüklenir ve ardından tam, güncelleştirilmiş uygulamayı yan yana bir klasörden yeniden yüklenir.  
+- **Uygulamaları güncelleştirme sorunlar yaşıyoruz.** Microsoft Windows Installer dağıtımı ile bir uygulama her güncelleştirildiğinde, kullanıcı bir msp dosyası bir güncelleştirmeyi yüklemek ve yüklü ürün için geçerlidir; ile [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtımı, güncelleştirmeleri otomatik olarak sağlayabilirsiniz. Yalnızca değişmiş olan uygulama bölümlerini yüklenir ve ardından tam, güncelleştirilmiş uygulamayı yan yana bir klasörden yeniden yüklenir.  
   
--   **Kullanıcının bilgisayarı bir etki.** Windows Installer dağıtımı ile uygulama olası sürüm çakışmaları ile paylaşılan bileşenler genellikle dayanır; ile [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım, her uygulama kendi içinde bağımsızdır ve diğer uygulamalarla müdahale edemez.  
+- **Kullanıcının bilgisayarı bir etki.** Windows Installer dağıtımı ile uygulama olası sürüm çakışmaları ile paylaşılan bileşenler genellikle dayanır; ile [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım, her uygulama kendi içinde bağımsızdır ve diğer uygulamalarla müdahale edemez.  
   
--   **Güvenlik izinleri.** Windows Installer dağıtımı, yönetim izinleri gerektirir ve yalnızca sınırlı kullanıcı yüklemesine izin verir; [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtımı yüklemek yönetici olmayan kullanıcılara sağlar ve yalnızca uygulama için gerekli kod erişimi güvenliği izinleri verir.  
+- **Güvenlik izinleri.** Windows Installer dağıtımı, yönetim izinleri gerektirir ve yalnızca sınırlı kullanıcı yüklemesine izin verir; [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtımı yüklemek yönetici olmayan kullanıcılara sağlar ve yalnızca uygulama için gerekli kod erişimi güvenliği izinleri verir.  
   
- Geçmişte, bu sorunları bazen ödün Yükleme kolaylığı için zengin kullanıcı arabirimi, Windows tabanlı uygulamalar yerine Web uygulamaları oluşturmaya karar geliştiricilerin neden oldu. Kullanılarak dağıtılan uygulamalar kullanarak [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], her iki teknolojinin en iyi olabilir.  
+  Geçmişte, bu sorunları bazen ödün Yükleme kolaylığı için zengin kullanıcı arabirimi, Windows tabanlı uygulamalar yerine Web uygulamaları oluşturmaya karar geliştiricilerin neden oldu. Kullanılarak dağıtılan uygulamalar kullanarak [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], her iki teknolojinin en iyi olabilir.  
   
 ## <a name="what-is-a-clickonce-application"></a>ClickOnce uygulaması nedir?  
  A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulamasıdır herhangi bir Windows Presentation Foundation (.xbap), Windows Forms (.exe), konsol uygulaması (.exe) veya yayımlanan kullanarak Office çözümü (.dll) [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] teknoloji. Yayımlayabilmek için bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] üç farklı yolla uygulama: bir Web sayfası, bir ağ dosya paylaşımı veya CD-ROM gibi medya. A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama son kullanıcının bilgisayarında yüklü ve bile bilgisayarı çevrimdışı olduğunda veya yalnızca çevrimiçi modda, çalıştırılabilir kalıcı olarak herhangi bir şey son kullanıcının bilgisayarında yüklemeden yerel olarak çalıştırın. Daha fazla bilgi için [ClickOnce dağıtım stratejisini seçme](../deployment/choosing-a-clickonce-deployment-strategy.md).  

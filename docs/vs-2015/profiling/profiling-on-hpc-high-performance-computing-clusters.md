@@ -26,12 +26,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1bea3ca5adf462ec6c403099c8276bbdb87e4b57
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67cc55d47e10093b440597ce464d7cc058689455
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178951"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920371"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>HPC (Yüksek Performanslı Hesaplama) Kümelerinde Profil Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ ms.locfileid: "49178951"
 ## <a name="prerequisites"></a>Önkoşullar  
  Bir HPC işlem düğümünde profili oluşturmak için aşağıdakileri yapmanız gerekir:  
   
--   Microsoft HPC Paketi 2008 aynı bilgisayara yükleme [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. HPC kümesinin parçası olacak bir bilgisayar yok. HPC paketini yükleyebilirsiniz [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=177414).  
+- Microsoft HPC Paketi 2008 aynı bilgisayara yükleme [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. HPC kümesinin parçası olacak bir bilgisayar yok. HPC paketini yükleyebilirsiniz [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=177414).  
   
--   Yükleme [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] ve tek başına bir HPC profil oluşturma araçları sürümünü işlem düğümü. Program için yükleme [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ve profil oluşturucuyu tek başına kullanılabilir [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] yükleme medyası. **Not** yükledikten sonra işlem yeniden [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ve profil oluşturma araçları yüklemeden önce.  
+- Yükleme [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] ve tek başına bir HPC profil oluşturma araçları sürümünü işlem düğümü. Program için yükleme [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ve profil oluşturucuyu tek başına kullanılabilir [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] yükleme medyası. **Not** yükledikten sonra işlem yeniden [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ve profil oluşturma araçları yüklemeden önce.  
   
- Yüklenecek [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] ve tek başına profil oluşturma araçları etkin bir HPC bilgi işlem düğümü ve etkin küme makinede profil oluşturma, şu adımları izleyin:  
+  Yüklenecek [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] ve tek başına profil oluşturma araçları etkin bir HPC bilgi işlem düğümü ve etkin küme makinede profil oluşturma, şu adımları izleyin:  
   
 1.  HPC pack ile yüklü bir komut istemi penceresi açın.  
   

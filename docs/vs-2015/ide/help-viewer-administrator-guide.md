@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d68f1ab876ffc24e5b422265f427ef5b26937d23
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f470c55b08cc559e481ed75e962fda4f0e625a5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256964"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871296"
 ---
 # <a name="help-viewer-administrator-guide"></a>Yardım Görüntüleyicisi Yönetici Kılavuzu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,18 +47,18 @@ Yardım Görüntüleyici ile veya internet erişimi olmayan ağ ortamları için
   
  Gereksinimler:  
   
--   İstemci bilgisayarların Internet'e erişimi olmalıdır.  
+- İstemci bilgisayarların Internet'e erişimi olmalıdır.  
   
--   Kullanıcılar, güncelleştirme, ekleme veya yüklendikten sonra yerel Yardım içeriğini kaldırmak için yönetici haklarına sahip olmalıdır.  
+- Kullanıcılar, güncelleştirme, ekleme veya yüklendikten sonra yerel Yardım içeriğini kaldırmak için yönetici haklarına sahip olmalıdır.  
   
- Uyarılar:  
+  Uyarılar:  
   
--   Yardım için varsayılan kaynak çevrimiçi olmaya devam edecektir.  
+- Yardım için varsayılan kaynak çevrimiçi olmaya devam edecektir.  
   
-    > [!TIP]
-    >  Yardım için varsayılan kaynağı, HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp kayıt defteri anahtarını değiştirerek değiştirebilirsiniz. Daha fazla bilgi için [Yardım İçerik Yöneticisi geçersiz kılmaları](../ide/help-content-manager-overrides.md).  
+  > [!TIP]
+  >  Yardım için varsayılan kaynağı, HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp kayıt defteri anahtarını değiştirerek değiştirebilirsiniz. Daha fazla bilgi için [Yardım İçerik Yöneticisi geçersiz kılmaları](../ide/help-content-manager-overrides.md).  
   
--   İstemcileri, Visual Studio'nun ilk başlatma sırasında temel Yardım içeriğini yüklemek için yine de istenir. HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection kayıt defteri anahtarını değiştirerek bu istemi devre dışı bırakabilirsiniz.  
+- İstemcileri, Visual Studio'nun ilk başlatma sırasında temel Yardım içeriğini yüklemek için yine de istenir. HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection kayıt defteri anahtarını değiştirerek bu istemi devre dışı bırakabilirsiniz.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnek, Visual Studio için İngilizce içeriği bir istemci bilgisayara yükler.  
@@ -78,47 +78,47 @@ Yardım Görüntüleyici ile veya internet erişimi olmayan ağ ortamları için
   
  Gereksinimler:  
   
--   İçerik kümesini yüklediğiniz bilgisayarın Internet erişimi olmalıdır.  
+- İçerik kümesini yüklediğiniz bilgisayarın Internet erişimi olmalıdır.  
   
--   Kullanıcılar, güncelleştirme, ekleme veya yüklendikten sonra yerel Yardım içeriğini kaldırmak için yönetici haklarına sahip olmalıdır.  
+- Kullanıcılar, güncelleştirme, ekleme veya yüklendikten sonra yerel Yardım içeriğini kaldırmak için yönetici haklarına sahip olmalıdır.  
   
-    > [!TIP]
-    >  Kullanıcıların yönetici hakları yoksa, Yardım Görüntüleyicisi'nde içeriği Yönet sekmesini devre dışı bırakmanız önerilir. Daha fazla bilgi için [Yardım İçerik Yöneticisi geçersiz kılmaları](../ide/help-content-manager-overrides.md).  
+  > [!TIP]
+  >  Kullanıcıların yönetici hakları yoksa, Yardım Görüntüleyicisi'nde içeriği Yönet sekmesini devre dışı bırakmanız önerilir. Daha fazla bilgi için [Yardım İçerik Yöneticisi geçersiz kılmaları](../ide/help-content-manager-overrides.md).  
   
- Uyarılar:  
+  Uyarılar:  
   
--   Kullanıcıların yönetici hakları yoksa, Yardım Görüntüleyicisi'nde içeriği Yönet sekmesini devre dışı bırakmanız önerilir. Daha fazla bilgi için [Yardım İçerik Yöneticisi geçersiz kılmaları](../ide/help-content-manager-overrides.md).  
+- Kullanıcıların yönetici hakları yoksa, Yardım Görüntüleyicisi'nde içeriği Yönet sekmesini devre dışı bırakmanız önerilir. Daha fazla bilgi için [Yardım İçerik Yöneticisi geçersiz kılmaları](../ide/help-content-manager-overrides.md).  
   
--   Yardım için varsayılan kaynak çevrimiçi olmaya devam edecektir.  
+- Yardım için varsayılan kaynak çevrimiçi olmaya devam edecektir.  
   
--   İstemcileri, Visual Studio'nun ilk başlatma sırasında temel Yardım içeriğini yüklemek için yine de istenir. Daha fazla bilgi için [Yardım İçerik Yöneticisi geçersiz kılmaları](../ide/help-content-manager-overrides.md).  
+- İstemcileri, Visual Studio'nun ilk başlatma sırasında temel Yardım içeriğini yüklemek için yine de istenir. Daha fazla bilgi için [Yardım İçerik Yöneticisi geçersiz kılmaları](../ide/help-content-manager-overrides.md).  
   
 ### <a name="create-the-content-set"></a>İçerik kümesi oluşturma  
  Temel içerik kümesini oluşturabilmeniz için önce hedef bilgisayardaki tüm yerel Visual Studio içeriğini kaldırmanız gerekir.  
   
 ##### <a name="to-uninstall-local-help"></a>Yerel Yardımı kaldırmak için  
   
-1.  Yardım Görüntüleyici'de seçin **içeriği Yönet** sekmesi.  
+1. Yardım Görüntüleyici'de seçin **içeriği Yönet** sekmesi.  
   
-2.  Altında **kullanılabilir belgeler**, Visual Studio belge kümesine gidin.  
+2. Altında **kullanılabilir belgeler**, Visual Studio belge kümesine gidin.  
   
-3.  Seçin **Kaldır** her bir alt öğenin yanında.  
+3. Seçin **Kaldır** her bir alt öğenin yanında.  
   
-4.  Seçin **Başlat** kaldırmak için  
+4. Seçin **Başlat** kaldırmak için  
   
-5.  Gözat *n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 ve klasörün yalnızca catalogType.xml dosyasını içerdiğini doğrulayın.  
+5. Gözat *n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 ve klasörün yalnızca catalogType.xml dosyasını içerdiğini doğrulayın.  
   
- Tüm önceden yüklenmiş yerel Visual Studio Yardım içeriğini kaldırdıktan sonra temel içerik kümesini yüklemeye hazırsınız demektir.  
+   Tüm önceden yüklenmiş yerel Visual Studio Yardım içeriğini kaldırdıktan sonra temel içerik kümesini yüklemeye hazırsınız demektir.  
   
 ##### <a name="to-download-the-content"></a>İçerik indirmek için  
   
-1.  Yardım Görüntüleyici'de seçin **içeriği Yönet** sekmesi.  
+1. Yardım Görüntüleyici'de seçin **içeriği Yönet** sekmesi.  
   
-2.  Altında **kullanılabilir belgeler**, indirin ve ardından istediğiniz belge kümelerine gidin **Ekle**.  
+2. Altında **kullanılabilir belgeler**, indirin ve ardından istediğiniz belge kümelerine gidin **Ekle**.  
   
-3.  Seçin **Başlat**.  
+3. Seçin **Başlat**.  
   
- Ardından, istemci bilgisayarlara dağıtılacak şekilde içeriği paketlemek gerekir.  
+   Ardından, istemci bilgisayarlara dağıtılacak şekilde içeriği paketlemek gerekir.  
   
 ##### <a name="to-package-the-content"></a>İçeriği paketlemek için  
   
