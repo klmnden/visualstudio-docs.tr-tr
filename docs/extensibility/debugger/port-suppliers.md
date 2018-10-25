@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5385e006bcd2f79ab7b1c2e723e696b833991f36
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 680f57878b3dd06e2f5935874f4a3f3bb06a2a1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252355"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948232"
 ---
 # <a name="port-suppliers"></a>Bağlantı noktası sağlayıcıları
 Hata ayıklayıcı mimarisinde bir *bağlantı noktası sağlayıcısı*:  
   
--   Sunucu tarafından bulunur ve bu sunucuya gönderilen istek bağlantı noktaları sağlar.  
+- Sunucu tarafından bulunur ve bu sunucuya gönderilen istek bağlantı noktaları sağlar.  
   
--   Ekleyebilir ve bağlantı noktalarını içeren sunucudan kaldırın.  
+- Ekleyebilir ve bağlantı noktalarını içeren sunucudan kaldırın.  
   
--   Sunucuya yayımlamış tüm bağlantı noktaları sıralayabilirsiniz.  
+- Sunucuya yayımlamış tüm bağlantı noktaları sıralayabilirsiniz.  
   
--   Tarafından temsil edilen bir [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) kayıt defteri aracılığıyla Visual Studio ile kayıtlı arabirim. Bu arabirim, çağrılarak alınabilir [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).  
+- Tarafından temsil edilen bir [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) kayıt defteri aracılığıyla Visual Studio ile kayıtlı arabirim. Bu arabirim, çağrılarak alınabilir [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Varsayılan bağlantı noktası sağlayıcısı ve varsayılan bir bağlantı noktası sağlar. Özel bir bağlantı noktası uygulanması gerekiyorsa, özel bağlantı noktası sağlayıcısı Ayrıca bu özel bağlantı sağlamak için uygulanması gerekir.  
+  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Varsayılan bağlantı noktası sağlayıcısı ve varsayılan bir bağlantı noktası sağlar. Özel bir bağlantı noktası uygulanması gerekiyorsa, özel bağlantı noktası sağlayıcısı Ayrıca bu özel bağlantı sağlamak için uygulanması gerekir.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Sunucuları](../../extensibility/debugger/servers-visual-studio-sdk.md)   

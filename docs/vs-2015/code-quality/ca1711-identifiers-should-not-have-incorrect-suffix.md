@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: af8904db6d1c07f9c805a21975101d7728456eec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f42416a6d88edc417c0150685ab4c7e198aa808
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218315"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837106"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Tanımlayıcıların sonekleri yanlış olmamalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
@@ -59,15 +60,15 @@ ms.locfileid: "49218315"
 
  Ayrıca, aşağıdaki sonekler **değil** kullanılabilir:
 
--   Temsilci
+- Temsilci
 
--   Enum
+- Enum
 
--   Impl - yerine 'Core' kullanın
+- Impl - yerine 'Core' kullanın
 
--   Onu aynı türün daha eski bir sürümünden ayırmak için Ex veya benzer sonek
+- Onu aynı türün daha eski bir sürümünden ayırmak için Ex veya benzer sonek
 
- Adlandırma kuralları, ortak dil çalışma zamanını hedefleyen kitaplıkları için genel bir bakış sağlar. Bu, yeni yazılım kitaplıkları için gereklidir ve kitaplık geliştirme yönetilen kodda uzmanlığına sahip olan kişi tarafından geliştirilmiştir müşterilerinizin size olan güvenini artırır öğrenme eğrisini azaltır.
+  Adlandırma kuralları, ortak dil çalışma zamanını hedefleyen kitaplıkları için genel bir bakış sağlar. Bu, yeni yazılım kitaplıkları için gereklidir ve kitaplık geliştirme yönetilen kodda uzmanlığına sahip olan kişi tarafından geliştirilmiştir müşterilerinizin size olan güvenini artırır öğrenme eğrisini azaltır.
 
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
  Tür adından soneki kaldırın.

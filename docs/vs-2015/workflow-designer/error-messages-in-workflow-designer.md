@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 942cd4846b091e31bc74ab3d45860e2782767079
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: efd6bc680be42f1074da8d2313b1a4b8e9307580
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305064"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894852"
 ---
 # <a name="error-messages-in-workflow-designer"></a>İş Akışı Tasarımcısında Hata İletileri
 Bu konu ile çalışırken karşılaşılan hata iletileri türlerini açıklar [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
@@ -29,17 +29,17 @@ Bu konu ile çalışırken karşılaşılan hata iletileri türlerini açıklar 
 ## <a name="situations-in-which-errors-in-the-workflow-designer-occur"></a>İş akışı tasarımcısında hatalar oluşabilen durumları  
  Hataları [!INCLUDE[wfd2](../includes/wfd2-md.md)] aşağıdaki durumlarda oluşur:  
   
-1.  Bir ifadede bir hata var.  
+1. Bir ifadede bir hata var.  
   
-2.  Bir etkinliğin doğrulama kısıtlamaları karşılanmadı.  
+2. Bir etkinliğin doğrulama kısıtlamaları karşılanmadı.  
   
-3.  Bir etkinlik yüklenemedi neden XAML dosyasındaki hataları vardır.  
+3. Bir etkinlik yüklenemedi neden XAML dosyasındaki hataları vardır.  
   
-4.  Neden yüklenmesi başarısız iş akışı XAML dosyasındaki hataları vardır.  
+4. Neden yüklenmesi başarısız iş akışı XAML dosyasındaki hataları vardır.  
   
- Geçersiz ifade ve hizmetlerinizden doğrulama kısıtlamalarını iş akışı oluşturmak başarısız olmasına neden olmaz. İş akışınızı oluşturma başarılı, ancak bir <xref:System.Activities.InvalidWorkflowException> çalışma zamanında oluşturulur. XAML dosyasında hatalar varsa derleme başarısız oluyor.  
+   Geçersiz ifade ve hizmetlerinizden doğrulama kısıtlamalarını iş akışı oluşturmak başarısız olmasına neden olmaz. İş akışınızı oluşturma başarılı, ancak bir <xref:System.Activities.InvalidWorkflowException> çalışma zamanında oluşturulur. XAML dosyasında hatalar varsa derleme başarısız oluyor.  
   
- İçinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], bir iş akışı yüklendiğinde, hatalar görüntülenir **hata listesi**. Hata kaynağı olan etkinliğin gitmek için hataya çift **hata listesi**.  
+   İçinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], bir iş akışı yüklendiğinde, hatalar görüntülenir **hata listesi**. Hata kaynağı olan etkinliğin gitmek için hataya çift **hata listesi**.  
   
 ### <a name="expression-errors"></a>İfade hataları  
  Geçersiz bir ifade, kırmızı bir daire ifade yanındaki beyaz bir ünlem işaretiyle gösterilir. Bu simgenin üzerine geldiğinizde, hatanın kaynağını tanımlayan bir araç ipucu görüntülenir. İçinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ifade hatanın kaynağını çizip çizmeyeceğini satırı görüntülemek için tıklayın. Hatanın kaynağını tanımlayan bir araç ipucu çizgili metin görüntüler geldiğinizde.  

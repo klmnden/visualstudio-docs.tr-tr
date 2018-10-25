@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ab4ee8f468b3d6fa138984e17f3bbe843082e987
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
+ms.openlocfilehash: 4b6bf3a790d1e6d8d4165bb489176010a43e7c19
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582453"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925094"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Basit veri bağlamayı destekleyen bir Windows Forms kullanıcı denetimi oluşturma
 
@@ -32,7 +32,7 @@ Denetim yazma ile ilgili daha fazla bilgi için bkz: [tasarım zamanında Window
 Veri bağlama senaryoları denetimler yazarken, aşağıdaki veri bağlama özniteliklerden birini uygulamanız gerekir:
 
 |Veri bağlama öznitelik kullanımı|
-|-----------------------------------|
+| - |
 |Uygulama <xref:System.ComponentModel.DefaultBindingPropertyAttribute> basit denetimlerinde gibi bir <xref:System.Windows.Forms.TextBox>, tek bir sütun (veya özellik) veri görüntüler. (Bu işlem, bu izlenecek yol sayfasında açıklanmıştır.)|
 |Uygulama <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> denetimler üzerinde gibi bir <xref:System.Windows.Forms.DataGridView>, veri listeleri'ı (veya tablo) görüntüler. Daha fazla bilgi için [karmaşık veri bağlamayı destekleyen bir Windows Forms kullanıcı denetimi oluşturma](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|
 |Uygulama <xref:System.ComponentModel.LookupBindingPropertiesAttribute> denetimler üzerinde gibi bir <xref:System.Windows.Forms.ComboBox>, görünen veri listeleri (veya tablo) ancak tek bir sütun veya özelliği sunmak de gerekir. Daha fazla bilgi için [arama verileri bağlamayı destekleyen bir Windows Forms kullanıcı denetimi oluşturma](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|

@@ -22,12 +22,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 1807efdefd387c4e4fa01c2acec0f7b32bbce6f8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 733eb98544d48716ec073605d68628ddeab7b794
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215923"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827592"
 ---
 # <a name="trusted-application-deployment-overview"></a>Güvenilir Uygulama Dağıtımına Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,11 +57,11 @@ Bu konu nasıl dağıtılacağı hakkında genel bakış sağlar [!INCLUDE[ndpte
   
  Daha büyük kuruluşlarda yayımcı ve dağıtıcı sık iki ayrı varlık şunlardır:  
   
--   Yayımcı oluşturan grubudur [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama.  
+- Yayımcı oluşturan grubudur [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama.  
   
--   Dağıtıcı dağıtan genellikle bilgi teknolojisi (BT) departmanı, grubudur [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] kurumsal masaüstü bilgisayarlar için uygulama.  
+- Dağıtıcı dağıtan genellikle bilgi teknolojisi (BT) departmanı, grubudur [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] kurumsal masaüstü bilgisayarlar için uygulama.  
   
- Güvenilir uygulama dağıtımı yararlanmak için şu adımları izlemelisiniz:  
+  Güvenilir uygulama dağıtımı yararlanmak için şu adımları izlemelisiniz:  
   
 1.  Yayımcı için bir sertifika edinin.  
   

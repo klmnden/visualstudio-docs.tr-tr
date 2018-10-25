@@ -17,31 +17,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 794d1bae562bf107d9986a132a44d4fa95aec20d
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: b5701044e20f2122199d9d0ca5558e453e6e5f72
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495823"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906032"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK, Visual Studio özellikleri genişletmek veya yeni özelliklerini Visual Studio'ya tümleştirmenize yardımcı olur. Diğer kullanıcılara yanı sıra Visual Studio Marketi uzantılarınızı dağıtabilirsiniz. Visual Studio genişletebileceğiniz yollardan bazılarını aşağıda verilmiştir:  
   
--   IDE komutları, düğmeler, menüler ve diğer kullanıcı Arabirimi öğeleri ekleyin  
+- IDE komutları, düğmeler, menüler ve diğer kullanıcı Arabirimi öğeleri ekleyin  
   
--   Aracı penceresi için yeni işlevsellik ekleme  
+- Aracı penceresi için yeni işlevsellik ekleme  
   
--   Belirli bir dil için IntelliSense genişletin veya yeni bir programlama dili için IntelliSense sağlar  
+- Belirli bir dil için IntelliSense genişletin veya yeni bir programlama dili için IntelliSense sağlar  
   
--   İpuçları ve geliştiricilerin yardımcı önerileri daha iyi kod yazma sağlamak ampuller kullanın  
+- İpuçları ve geliştiricilerin yardımcı önerileri daha iyi kod yazma sağlamak ampuller kullanın  
   
--   Yeni bir dil desteğini etkinleştirme  
+- Yeni bir dil desteğini etkinleştirme  
   
--   Özel Proje Türü Ekle  
+- Özel Proje Türü Ekle  
   
--   Milyonlarca geliştirici Visual Studio Market aracılığıyla ulaşın  
+- Milyonlarca geliştirici Visual Studio Market aracılığıyla ulaşın  
   
- Visual Studio uzantısı önce hiçbir zaman yazdıysanız, konumunda ve bu özellikler hakkında daha fazla bilgi bulmalısınız [Visual Studio uzantıları geliştirmeye başlama](../extensibility/starting-to-develop-visual-studio-extensions.md).  
+  Visual Studio uzantısı önce hiçbir zaman yazdıysanız, konumunda ve bu özellikler hakkında daha fazla bilgi bulmalısınız [Visual Studio uzantıları geliştirmeye başlama](../extensibility/starting-to-develop-visual-studio-extensions.md).  
   
 ## <a name="install-the-visual-studio-sdk"></a>Visual Studio SDK’yı Yükleme  
  Visual Studio SDK, Visual Studio kurulumunda isteğe bağlı bir özelliktir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'yı yükleme](../extensibility/installing-the-visual-studio-sdk.md).  

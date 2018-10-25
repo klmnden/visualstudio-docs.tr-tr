@@ -13,23 +13,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36ec73ef7b414519f0939c47c167f0e89c1e0941
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 848778506bdea1b7bf61b6a94a1fb14908a7b930
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638957"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908964"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Nasıl yapılır: bağlam sağlamak için düzenleyicileri açma
 Yalnızca Düzenleyici odaklı veya araç penceresine odak hemen taşınmadan önce odağa sahip için bir düzenleyici, bağlamı etkin değil. Aşağıdaki görevleri gerçekleştirerek, içerik için bir düzenleyici sağlayabilirsiniz:  
   
-1.  Bir içerik paketi oluşturun.  
+1. Bir içerik paketi oluşturun.  
   
-2.  İçerik Paketi seçimi öğe tanımlayıcısı (SEID) yayımlayın.  
+2. İçerik Paketi seçimi öğe tanımlayıcısı (SEID) yayımlayın.  
   
-3.  Paket bağlamı korur.  
+3. Paket bağlamı korur.  
   
- Bu görevleri, aşağıdaki yordamları tarafından ele alınmaktadır. Bağlam sağlama hakkında daha fazla bilgi için bkz. **güçlü programlama** bu makalenin ilerleyen bölümlerinde.  
+   Bu görevleri, aşağıdaki yordamları tarafından ele alınmaktadır. Bağlam sağlama hakkında daha fazla bilgi için bkz. **güçlü programlama** bu makalenin ilerleyen bölümlerinde.  
   
 ## <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>Bir düzenleyici veya tasarımcı için bir içerik paketi oluşturmak için  
   

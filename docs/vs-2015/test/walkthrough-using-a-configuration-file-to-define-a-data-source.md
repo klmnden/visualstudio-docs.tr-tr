@@ -17,12 +17,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5ea3d2f52df217b8df6d3d12909671f4e493ae18
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f3dca876e777e8f40773ca42b05fece1c22fe33e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253012"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843047"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>İzlenecek Yol: Bir Veri Kaynağı Tanımlamak için Yapılandırma Dosyası Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ Bu izlenecek yol, bir birim testi için app.config dosyasında tanımlanan bir v
   
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Özel yapılandırma bölümü app.config dosyasına eklemek için  
   
-1.  App.config kök öğesi olmalıdır `configuration` öğesi. Oluşturma bir `configSections` öğesiyle `configuration` öğesi. `configSections` App.config dosyasında ilk öğe olmalıdır.  
+1. App.config kök öğesi olmalıdır `configuration` öğesi. Oluşturma bir `configSections` öğesiyle `configuration` öğesi. `configSections` App.config dosyasında ilk öğe olmalıdır.  
   
-2.  İçinde `configSections` öğesi oluşturmak bir `section` öğesi.  
+2. İçinde `configSections` öğesi oluşturmak bir `section` öğesi.  
   
-3.  İçinde `section` öğesi adlı öznitelik ekleme `name` ve eşit bir değer atayın `microsoft.visualstudio.testtools`. Adlı başka bir öznitelik Ekle `type` ve eşit bir değer atayın `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`  
+3. İçinde `section` öğesi adlı öznitelik ekleme `name` ve eşit bir değer atayın `microsoft.visualstudio.testtools`. Adlı başka bir öznitelik Ekle `type` ve eşit bir değer atayın `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`  
   
- `section` Öğesi şuna benzer görünmelidir:  
+   `section` Öğesi şuna benzer görünmelidir:  
   
 ```  
 <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>  
@@ -117,15 +117,15 @@ Bu izlenecek yol, bir birim testi için app.config dosyasında tanımlanan bir v
 ## <a name="define-data-sources"></a>Veri kaynaklarını tanımlama  
  Veri kaynakları bölümü, bir veri kaynağından veri almak için test altyapısı tarafından kullanılan dört öznitelikleri içerir.  
   
--   `name` tarafından kullanılan kimliği tanımlar <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> kullanmak için hangi veri kaynağını belirtmek için.  
+- `name` tarafından kullanılan kimliği tanımlar <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> kullanmak için hangi veri kaynağını belirtmek için.  
   
--   `connectionString` Bağlantı dizeleri tanımlama bir önceki bölümde oluşturulan bağlantı dizesini tanımlar.  
+- `connectionString` Bağlantı dizeleri tanımlama bir önceki bölümde oluşturulan bağlantı dizesini tanımlar.  
   
--   `dataTableName` Tablo veya testinde kullanmak üzere verileri tutan sayfasını tanımlar.  
+- `dataTableName` Tablo veya testinde kullanmak üzere verileri tutan sayfasını tanımlar.  
   
--   `dataAccessMethod` veri kaynağındaki veri değerlerine erişim için teknik tanımlar.  
+- `dataAccessMethod` veri kaynağındaki veri değerlerine erişim için teknik tanımlar.  
   
- Bu bölümde, bir birim testinde kullanmak üzere iki veri kaynağı tanımlayacaksınız.  
+  Bu bölümde, bir birim testinde kullanmak üzere iki veri kaynağı tanımlayacaksınız.  
   
 #### <a name="to-define-data-sources"></a>Veri kaynakları tanımlamak için  
   

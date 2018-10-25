@@ -23,12 +23,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ce77ac0d7d2cf7cfa131742f40f89af692982506
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b8ef4cf0c416a72b61b1e02f97cf28798ecb340
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189065"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812862"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Nasıl Yapılır: Visual Studio IDE’de Gezinme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,20 +48,20 @@ Tümleşik geliştirme ortamı (IDE) penceresi penceresinin hareket etmenize izi
   
 #### <a name="to-move-through-open-files-in-order-of-use"></a>Kullanım sırasına göre açık dosyalar arasında taşımak için  
   
--   Açık belgeleri en son dokunulan sırada etkinleştirmek için CTRL + eksi işareti'ya basın.  
+- Açık belgeleri en son dokunulan sırada etkinleştirmek için CTRL + eksi işareti'ya basın.  
   
--   Ters sırada açık belgeler etkinleştirmek için CTRL + SHIFT + eksi işareti'ya basın.  
+- Ters sırada açık belgeler etkinleştirmek için CTRL + SHIFT + eksi işareti'ya basın.  
   
-    > [!NOTE]
-    >  **Geriye doğru gidin** ve **Navigate Forward** üzerinde bulunabilir **görünümü** menüsü.  
+  > [!NOTE]
+  >  **Geriye doğru gidin** ve **Navigate Forward** üzerinde bulunabilir **görünümü** menüsü.  
   
- Belirli bir dosyayı dosya son erişildiği zaman bağımsız olarak düzenleyicide açık geçebilirsiniz kullanarak **haldeyken IDE Gezgini'ni**, **etkin dosyaların** düzenleyicisinde, liste veya **Windows** iletişim kutusu.  
+  Belirli bir dosyayı dosya son erişildiği zaman bağımsız olarak düzenleyicide açık geçebilirsiniz kullanarak **haldeyken IDE Gezgini'ni**, **etkin dosyaların** düzenleyicisinde, liste veya **Windows** iletişim kutusu.  
   
- **Haldeyken IDE Gezgini'ni** Windows uygulama değiştirici gibi çalışır. Menüleri kullanılamaz ve yalnızca kısayol tuşu kullanılarak erişilebilir. İki komutlardan birini erişmek için kullanabileceğiniz **haldeyken IDE Gezgini'ni** (arasında geçiş yapmak istediğiniz düzene bağlı olarak, dosyalar arasında geçiş yapmak için aşağıda).  
+  **Haldeyken IDE Gezgini'ni** Windows uygulama değiştirici gibi çalışır. Menüleri kullanılamaz ve yalnızca kısayol tuşu kullanılarak erişilebilir. İki komutlardan birini erişmek için kullanabileceğiniz **haldeyken IDE Gezgini'ni** (arasında geçiş yapmak istediğiniz düzene bağlı olarak, dosyalar arasında geçiş yapmak için aşağıda).  
   
- ![Visual Studio IDE Gezgini](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")  
+  ![Visual Studio IDE Gezgini](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")  
   
- `Window.PreviousDocumentWindowNav` en son erişilen dosyanın taşımanızı sağlar ve `Window.NextDocumentWindowNav` ters sırada taşımanızı sağlar. Genel Geliştirme Ayarları atar CTRL + SHIFT + TAB `Window.PreviousDocumentWindowNav` ve CTRL + TAB `Window.NextDocumentWindowNav`.  
+  `Window.PreviousDocumentWindowNav` en son erişilen dosyanın taşımanızı sağlar ve `Window.NextDocumentWindowNav` ters sırada taşımanızı sağlar. Genel Geliştirme Ayarları atar CTRL + SHIFT + TAB `Window.PreviousDocumentWindowNav` ve CTRL + TAB `Window.NextDocumentWindowNav`.  
   
 > [!NOTE]
 >  Kullanmakta olduğunuz bir ayarlar bileşimi bu komutuna atanmış kısayol tuş bileşimi zaten yoksa, kendi özel komut kullanarak atayabilirsiniz **klavye** sayfasının **seçenekleri** iletişim bir kutu. Daha fazla bilgi için [tanımlama ve özelleştirme klavye kısayolları](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  

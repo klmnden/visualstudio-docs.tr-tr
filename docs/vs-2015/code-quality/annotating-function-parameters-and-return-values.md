@@ -131,12 +131,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e3a49283763a8de2bec7cee003610b75cc62ce2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dbd84b13757e4d742896c0450bd4661b5c4d06cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297173"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900169"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>İşlev Parametrelerini ve Dönüş Değerlerini Açıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -304,92 +304,92 @@ Bu makalede basit işlev parametreleri için ek açıklamaları tipik kullanıml
   
  **Ek açıklamalar ve açıklamaları**  
   
--   `_Outptr_`  
+- `_Outptr_`  
   
-     Parametresi null olamaz ve sonrası durumunda, işaret edilen konumu null olamaz ve geçerli olmalıdır.  
+   Parametresi null olamaz ve sonrası durumunda, işaret edilen konumu null olamaz ve geçerli olmalıdır.  
   
--   `_Outptr_opt_`  
+- `_Outptr_opt_`  
   
-     Parametre null olabilir, ancak sonrası durumunda, işaret edilen konumu null olamaz ve geçerli olmalıdır.  
+   Parametre null olabilir, ancak sonrası durumunda, işaret edilen konumu null olamaz ve geçerli olmalıdır.  
   
--   `_Outptr_result_maybenull_`  
+- `_Outptr_result_maybenull_`  
   
-     Parametresi null olamaz ve sonrası durumda işaret edilen konumu null olabilir.  
+   Parametresi null olamaz ve sonrası durumda işaret edilen konumu null olabilir.  
   
--   `_Outptr_opt_result_maybenull_`  
+- `_Outptr_opt_result_maybenull_`  
   
-     Parametre null olabilir ve sonrası durumda işaret edilen konumu null olabilir.  
+   Parametre null olabilir ve sonrası durumda işaret edilen konumu null olabilir.  
   
- Aşağıdaki tabloda, ek alt dizeler daha fazla ek açıklama anlamını nitelemek için ek açıklama adı eklenir.  Çeşitli alt dizeler olan `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, ve `_to_`.  
+  Aşağıdaki tabloda, ek alt dizeler daha fazla ek açıklama anlamını nitelemek için ek açıklama adı eklenir.  Çeşitli alt dizeler olan `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, ve `_to_`.  
   
 > [!IMPORTANT]
 >  COM yorumlama arabirimi ise bu ek açıklamalar COM biçimini kullanın. COM ek açıklamalar, başka bir tür arabirimiyle kullanmayın.  
   
  **Ek açıklamalar ve açıklamaları**  
   
--   `_Outptr_result_z_`  
+- `_Outptr_result_z_`  
   
-     `_Outptr_opt_result_z_`  
+   `_Outptr_opt_result_z_`  
   
-     `_Outptr_result_maybenull_z_`  
+   `_Outptr_result_maybenull_z_`  
   
-     `_Ouptr_opt_result_maybenull_z_`  
+   `_Ouptr_opt_result_maybenull_z_`  
   
-     Döndürülen işaretçiyle `_Null_terminated_` ek açıklama.  
+   Döndürülen işaretçiyle `_Null_terminated_` ek açıklama.  
   
--   `_COM_Outptr_`  
+- `_COM_Outptr_`  
   
-     `_COM_Outptr_opt_`  
+   `_COM_Outptr_opt_`  
   
-     `_COM_Outptr_result_maybenull_`  
+   `_COM_Outptr_result_maybenull_`  
   
-     `_COM_Outptr_opt_result_maybenull_`  
+   `_COM_Outptr_opt_result_maybenull_`  
   
-     Döndürülen işaretçi COM semantiği vardır ve bu nedenle taşıyan bir `_On_failure_` sonrası koşul döndürülen işaretçi null.  
+   Döndürülen işaretçi COM semantiği vardır ve bu nedenle taşıyan bir `_On_failure_` sonrası koşul döndürülen işaretçi null.  
   
--   `_Outptr_result_buffer_(s)`  
+- `_Outptr_result_buffer_(s)`  
   
-     `_Outptr_result_bytebuffer_(s)`  
+   `_Outptr_result_bytebuffer_(s)`  
   
-     `_Outptr_opt_result_buffer_(s)`  
+   `_Outptr_opt_result_buffer_(s)`  
   
-     `_Outptr_opt_result_bytebuffer_(s)`  
+   `_Outptr_opt_result_bytebuffer_(s)`  
   
-     Döndürülen işaretçi işaret için geçerli bir arabellek boyutunu `s` öğeleri veya bayt sayısı.  
+   Döndürülen işaretçi işaret için geçerli bir arabellek boyutunu `s` öğeleri veya bayt sayısı.  
   
--   `_Outptr_result_buffer_to_(s, c)`  
+- `_Outptr_result_buffer_to_(s, c)`  
   
-     `_Outptr_result_bytebuffer_to_(s, c)`  
+   `_Outptr_result_bytebuffer_to_(s, c)`  
   
-     `_Outptr_opt_result_buffer_to_(s,c)`  
+   `_Outptr_opt_result_buffer_to_(s,c)`  
   
-     `_Outptr_opt_result_bytebuffer_to_(s,c)`  
+   `_Outptr_opt_result_bytebuffer_to_(s,c)`  
   
-     Döndürülen işaretçi işaret eden bir arabellek boyutunu `s` öğeleri veya bayt cinsinden, ilk `c` geçerlidir.  
+   Döndürülen işaretçi işaret eden bir arabellek boyutunu `s` öğeleri veya bayt cinsinden, ilk `c` geçerlidir.  
   
- Belirli bir arabirim kuralları, çıktı parametreleri hatasında nullified olduğunu varsayar.  Açıkça COM kodu hariç, aşağıdaki tabloda formlar tercih edilir.  COM kodu için önceki bölümde listelenen karşılık gelen bir COM forms kullanın.  
+  Belirli bir arabirim kuralları, çıktı parametreleri hatasında nullified olduğunu varsayar.  Açıkça COM kodu hariç, aşağıdaki tabloda formlar tercih edilir.  COM kodu için önceki bölümde listelenen karşılık gelen bir COM forms kullanın.  
   
- **Ek açıklamalar ve açıklamaları**  
+  **Ek açıklamalar ve açıklamaları**  
   
--   `_Result_nullonfailure_`  
+- `_Result_nullonfailure_`  
   
-     Diğer ek açıklamalar değiştirir. Sonuç, işlev başarısız olursa null olarak ayarlanır.  
+   Diğer ek açıklamalar değiştirir. Sonuç, işlev başarısız olursa null olarak ayarlanır.  
   
--   `_Result_zeroonfailure_`  
+- `_Result_zeroonfailure_`  
   
-     Diğer ek açıklamalar değiştirir. Sonuç, işlev başarısız olursa sıfır olarak ayarlanır.  
+   Diğer ek açıklamalar değiştirir. Sonuç, işlev başarısız olursa sıfır olarak ayarlanır.  
   
--   `_Outptr_result_nullonfailure_`  
+- `_Outptr_result_nullonfailure_`  
   
-     İşlev başarısız olursa, döndürülen işaretçi işlev başarılı olursa geçerli bir arabellek veya null gösterir. Bu ek açıklama için isteğe bağlı olmayan bir parametredir.  
+   İşlev başarısız olursa, döndürülen işaretçi işlev başarılı olursa geçerli bir arabellek veya null gösterir. Bu ek açıklama için isteğe bağlı olmayan bir parametredir.  
   
--   `_Outptr_opt_result_nullonfailure_`  
+- `_Outptr_opt_result_nullonfailure_`  
   
-     İşlev başarısız olursa, döndürülen işaretçi işlev başarılı olursa geçerli bir arabellek veya null gösterir. Bu ek açıklama için isteğe bağlı bir parametredir.  
+   İşlev başarısız olursa, döndürülen işaretçi işlev başarılı olursa geçerli bir arabellek veya null gösterir. Bu ek açıklama için isteğe bağlı bir parametredir.  
   
--   `_Outref_result_nullonfailure_`  
+- `_Outref_result_nullonfailure_`  
   
-     İşlev başarısız olursa, döndürülen işaretçi işlev başarılı olursa geçerli bir arabellek veya null gösterir. Bu ek açıklama bir başvuru parametresi olmalıdır.  
+   İşlev başarısız olursa, döndürülen işaretçi işlev başarılı olursa geçerli bir arabellek veya null gösterir. Bu ek açıklama bir başvuru parametresi olmalıdır.  
   
 ## <a name="output-reference-parameters"></a>Çıkış başvuru parametreleri  
  Bir ortak başvuru parametresi uygulanacağı çıktı parametreleri için kullanılır.  Basit çıkış başvuru parametreleri için — örneğin, `int&`—`_Out_` doğru semantikler sağlar.  Ancak, çıkış değeri olduğunda bir işaretçi — örneğin `int *&`— eşdeğer işaretçi ek açıklamalar ister `_Outptr_ int **` doğru semantiği sağlaması gerekmez.  İşaretçi türleri için çıktı başvuru parametreleri semantiği kısaca ifade etmek için bu bileşik ek açıklamaları kullanın:  

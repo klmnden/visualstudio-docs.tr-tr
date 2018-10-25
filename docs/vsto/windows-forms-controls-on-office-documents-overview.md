@@ -30,12 +30,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 41870980aa27dd14576a3e04378d602f073091ab
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 51c671a583e4e96b51ae6627de1fce738696fe22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676942"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892787"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Windows Forms denetimlerine Office belgeleri genel bakış
   Windows Forms denetimlerini, kullanıcıların girin veya verileri işlemek için etkileşim kurabilir nesnelerdir. Microsoft Office Excel ve Microsoft Office Word için belge düzeyi projeleri, Windows Forms denetimleri belge veya çalışma kitabındaki projenizde tasarım zamanında ekleyebileceğiniz veya program aracılığıyla çalışma zamanında bu denetimler ekleyebilirsiniz. Program aracılığıyla bu denetimleri herhangi bir açık belge veya çalışma zamanında VSTO eklenti Excel veya Word için ekleyebilirsiniz.  
@@ -52,25 +52,25 @@ ms.locfileid: "35676942"
  Belge üzerinde.  
  -   %100 zaman denetimlerini görüntülemek istediğinizde.  
   
--   Kullanıcıların doğrudan belgedeki verileri, örneğin, form tabanlı belgeleri nerede düzenleme surface kilitli girmesini istediğinizde.  
+- Kullanıcıların doğrudan belgedeki verileri, örneğin, form tabanlı belgeleri nerede düzenleme surface kilitli girmesini istediğinizde.  
   
--   Belgedeki veriyi ayarlarına uygun olarak görüntülemek için denetimler istediğinizde. Örneğin, her satıra bir liste nesnesinin düğmeleri ekliyorsanız, bunları ayarlarına uygun olarak her bir liste öğesi istersiniz.  
+- Belgedeki veriyi ayarlarına uygun olarak görüntülemek için denetimler istediğinizde. Örneğin, her satıra bir liste nesnesinin düğmeleri ekliyorsanız, bunları ayarlarına uygun olarak her bir liste öğesi istersiniz.  
   
- Eylemler bölmesinde veya bir özel görev bölmesi.  
- -   Kullanıcıya bağlamsal bilgi sağlamak istediğinizde.  
+  Eylemler bölmesinde veya bir özel görev bölmesi.  
+  -   Kullanıcıya bağlamsal bilgi sağlamak istediğinizde.  
   
--   Belge ve değil sorgu denetimleri ve verileri yalnızca sonuçların görünmesini istediğinizde.  
+- Belge ve değil sorgu denetimleri ve verileri yalnızca sonuçların görünmesini istediğinizde.  
   
--   Denetim belgeyle yazdırılmaz sağlamak istediğinizde.  
+- Denetim belgeyle yazdırılmaz sağlamak istediğinizde.  
   
--   Denetimler belgenin görüntüsüyle karışmadığına müdahale etmez sağlamak istediğinizde.  
+- Denetimler belgenin görüntüsüyle karışmadığına müdahale etmez sağlamak istediğinizde.  
   
- Bir Windows formunda.  
- -   Kullanıcı arabirimini boyutunu denetlemek istediğinizde.  
+  Bir Windows formunda.  
+  -   Kullanıcı arabirimini boyutunu denetlemek istediğinizde.  
   
--   Denetimleri gizleme veya kullanıcıların engellemek istediğinizde.  
+- Denetimleri gizleme veya kullanıcıların engellemek istediğinizde.  
   
--   Bir kullanıcıdan giriş almak ve kullanıcının giriş alınana kadar her şeyi belge yapmasını önlemek istediğinizde.  
+- Bir kullanıcıdan giriş almak ve kullanıcının giriş alınana kadar her şeyi belge yapmasını önlemek istediğinizde.  
   
 ## <a name="add-windows-forms-controls-programmatically"></a>Program aracılığıyla Windows Forms denetimleri ekleme  
  Word belgelerini ve Excel çalışma zamanında Windows Forms denetimleri ekleyebilirsiniz. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Ortak Windows Formları denetimleri eklemek için yardımcı yöntemleri sağlar. Bu yardımcı yöntemler Office belge ve birleşik Windows Forms denetimi işlevlerini erişim denetimleri ve işlevselliği Office ile ilgili bu denetimlerin hızla eklemenize imkan tanır.  
@@ -134,13 +134,13 @@ ms.locfileid: "35676942"
   
  Çalışma zamanında bir Word belgesi için bir denetim eklediğinizde, farklı kullanarak yeni denetimin düzen stili belirtebilirsiniz `Add` \< *denetim sınıf*> yöntemi aşırı yüklemeleri <xref:Microsoft.Office.Tools.Word.ControlCollection> sınıfı:  
   
--   Ayarlarına uygun olarak metin denetimi eklemek için kabul eden bir aşırı yüklemesini kullanın. bir <xref:Microsoft.Office.Interop.Word.Range> denetimin konumunu belirtir.  
+- Ayarlarına uygun olarak metin denetimi eklemek için kabul eden bir aşırı yüklemesini kullanın. bir <xref:Microsoft.Office.Interop.Word.Range> denetimin konumunu belirtir.  
   
--   Denetimi kayan bir şekil eklemek için denetimin sol ve üst koordinatları kabul eden bir aşırı yüklemesini kullanın.  
+- Denetimi kayan bir şekil eklemek için denetimin sol ve üst koordinatları kabul eden bir aşırı yüklemesini kullanın.  
   
- Daha fazla bilgi için [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+  Daha fazla bilgi için [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- Visual Studio tasarımcıda bir Word şablonu açın, Visual Studio şablonu açar çünkü şablon satır içi denetimleri görünür olmayabilir **Normal** görünümü. Denetimleri görüntülemek için görünüme **düzeni**.  
+  Visual Studio tasarımcıda bir Word şablonu açın, Visual Studio şablonu açar çünkü şablon satır içi denetimleri görünür olmayabilir **Normal** görünümü. Denetimleri görüntülemek için görünüme **düzeni**.  
   
 ### <a name="controls-outside-the-main-document-body"></a>Ana dosya gövdesinin dışında denetimleri  
  Windows Forms denetimleri üstbilgisindeki veya altbilgisindeki içinde veya bir alt içinde desteklenmez.  

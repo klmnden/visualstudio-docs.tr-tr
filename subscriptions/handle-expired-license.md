@@ -9,18 +9,18 @@ description: Süresi dolan Visual Studio abonelikleri yöneticileri nasıl işle
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ed407abbf4da1914f8a7faa03bbec5ae74b87049
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: a5f968eef0418a89d4db78f8d79258bfe6004385
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639402"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815760"
 ---
 # <a name="handling-expired-subscriptions"></a>Abonelikleri işleme süresi
 
 Bir kullanıcının abonelik sona erdiğinde, bu portalda aboneleri listesinde adının yanındaki kırmızı bir çubuk gösterilir. Bu aboneleri, Visual Studio abonelik avantajlarının kullanmaya devam etmek, kullanıcıların lisansları yenilemeniz gerekecektir. 
 > [!div class="mx-imgBorder"]
-> ![Süresi dolan abonelikleri listesi](_img\expired-subscriptions\expired-list.png)
+> ![Süresi dolan abonelikleri listesi](_img/expired-subscriptions/expired-list.png)
 
 **Abonelik yenileme**
 1.  Toplu Lisanslama satıcınızla veya, Microsoft satıcı ile iletişime geçin. 

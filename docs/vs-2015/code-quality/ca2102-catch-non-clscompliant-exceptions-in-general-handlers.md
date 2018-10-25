@@ -19,15 +19,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c9b08b143df05ec365c069d4c6dbf7d9ed84813d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c2797b32bbcabd1c63fbfd510aec05c8bf54d21
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244880"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877432"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: CLSCompliant olmayan özel durumları genel işleyiciler içinde yakalayın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|CatchNonClsCompliantExceptionsInGeneralHandlers|
@@ -41,11 +42,11 @@ ms.locfileid: "49244880"
 ## <a name="rule-description"></a>Kural Tanımı
  İşleme bir catch bloğu <xref:System.Exception> ortak dil belirtimi (CLS) uyumlu özel durumların tamamını yakalar. Ancak, CLS olmayan uyumlu özel durumları yakalamaz. CLS olmayan uyumlu özel durumlar yerel koddan veya Microsoft tarafından oluşturulan yönetilen koddan Ara dil (MSIL) derleyici. Dikkat edin C# ve [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] derleyiciler CLS olmayan uyumlu özel durum oluşturulmasına izin verme ve [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] CLS olmayan uyumlu özel durumları yakalamaz. Catch bloğu amacı, tüm özel durumları işlemek için ise, aşağıdaki genel bir catch bloğu sözdizimini kullanın.
 
--   C# İÇİN: `catch {}`
+- C# İÇİN: `catch {}`
 
--   C++: `catch(...) {}` veya `catch(Object^) {}`
+- C++: `catch(...) {}` veya `catch(Object^) {}`
 
- Daha önce verilen izinler içindeki yakalama bloğunun kaldırıldığında işlenmemiş CLS olmayan uyumlu özel bir güvenlik sorunu haline gelir. CLS olmayan uyumlu özel durum yakalandı çünkü CLS olmayan uyumlu özel durum oluşturur, kötü amaçlı bir yöntem yükseltilmiş izinlerle çalıştırabilir.
+  Daha önce verilen izinler içindeki yakalama bloğunun kaldırıldığında işlenmemiş CLS olmayan uyumlu özel bir güvenlik sorunu haline gelir. CLS olmayan uyumlu özel durum yakalandı çünkü CLS olmayan uyumlu özel durum oluşturur, kötü amaçlı bir yöntem yükseltilmiş izinlerle çalıştırabilir.
 
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
  Amaç kaynaklananlar olduğunda bu kural ihlalini düzeltmek için özel durumlar, değiştirin veya bir genel bir catch bloğu ekleyin veya derlemeyi işaretlemek `RuntimeCompatibility(WrapNonExceptionThrows = true)`. İzinleri içindeki yakalama bloğunun kaldırılırsa, yinelenen genel işlevleri catch bloğu. İşleyen yakalama bloğu tüm özel durumları işlemek için hedefi değil ise, yerine <xref:System.Exception> belirli özel durum türlerini işleme catch bloğu ile.

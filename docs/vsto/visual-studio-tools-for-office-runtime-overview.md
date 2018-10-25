@@ -29,21 +29,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 219ffa4a7a9c7d32348a262ea49c6f66d20e1c7f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b169242b9828f47f1ecfb87ebf02a9f86234699f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677223"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837002"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Office çalışma zamanına genel bakış için Visual Studio Araçları
   Visual Studio'da Microsoft Office geliştirici araçlarını kullanarak oluşturulan çözümleri çalıştırmak için son kullanıcı bilgisayarlarında Office çalışma zamanı için Visual Studio 2010 Araçları yüklenmesi gerekir. Daha fazla bilgi için [nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları yükleme](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Office çalışma zamanı için Visual Studio 2010 Araçları iki ana bileşenden oluşur:  
   
--   .NET Framework için Office uzantıları. Bu bileşenler, çözümünüz ile Microsoft Office uygulaması arasındaki iletişim katmanını sağlayan yönetilen derlemelerdir. Daha fazla bilgi için [.NET Framework için Office uzantılarını anlama](#officeextensions).  
+- .NET Framework için Office uzantıları. Bu bileşenler, çözümünüz ile Microsoft Office uygulaması arasındaki iletişim katmanını sağlayan yönetilen derlemelerdir. Daha fazla bilgi için [.NET Framework için Office uzantılarını anlama](#officeextensions).  
   
--   Office çözüm yükleyicisi. Bu bileşen, Office uygulamalarının çalışma zamanını ve çözümlerinizi yüklemek için kullandığı bir yönetilmeyen DLL'ler kümesidir. Daha fazla bilgi için [Office çözüm yükleyicisini anlama](#UnmanagedLoader).  
+- Office çözüm yükleyicisi. Bu bileşen, Office uygulamalarının çalışma zamanını ve çözümlerinizi yüklemek için kullandığı bir yönetilmeyen DLL'ler kümesidir. Daha fazla bilgi için [Office çözüm yükleyicisini anlama](#UnmanagedLoader).  
   
- Çalışma zamanı birkaç farklı yolla yüklenebilir. Bilgisayarın yapılandırmasına bağlı olarak, çalışma zamanını yüklediğinizde farklı çalışma zamanı bileşenlerinin yüklemesi gerçekleşir. Daha fazla bilgi için [Office çalışma zamanı yükleme senaryoları için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
+  Çalışma zamanı birkaç farklı yolla yüklenebilir. Bilgisayarın yapılandırmasına bağlı olarak, çalışma zamanını yüklediğinizde farklı çalışma zamanı bileşenlerinin yüklemesi gerçekleşir. Daha fazla bilgi için [Office çalışma zamanı yükleme senaryoları için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
   
 ##  <a name="officeextensions"></a> .NET Framework için Office uzantılarını anlama  
  Office çalışma zamanı için Visual Studio 2010 Araçları, .NET Framework 3.5 için Office uzantılarını içeren [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ve daha sonra. Her bir .NET Framework sürümünü hedefleyen çözümler, ilgili sürüm için uygun uzantıları kullanır.  
@@ -65,17 +65,17 @@ ms.locfileid: "35677223"
   
  Hedefleyen bir Office projesi oluşturduğunuzda varsayılan olarak tür denklik özelliği etkin değil [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri. Bu özelliği etkinleştirmek istiyorsanız, **birlikte çalışma türlerini katıştır** projenize aşağıdaki derleme başvurularının herhangi birinin özelliğini **True**:  
   
--   Microsoft.Office.Tools.dll  
+- Microsoft.Office.Tools.dll  
   
--   Microsoft.Office.Tools.Common.dll  
+- Microsoft.Office.Tools.Common.dll  
   
--   Microsoft.Office.Tools.Excel.dll  
+- Microsoft.Office.Tools.Excel.dll  
   
--   Microsoft.Office.Tools.Outlook.dll  
+- Microsoft.Office.Tools.Outlook.dll  
   
--   Microsoft.Office.Tools.Word.dll  
+- Microsoft.Office.Tools.Word.dll  
   
- Bu değişikliği yaptıktan sonra, projeyi oluşturduğunuzda, proje tarafından kullanılan tüm çalışma zamanı türlerine ilişkin tür bilgileri çözüm derlemesine eklenir. Tür bilgilerini başvurulan derlemelerdeki yerine bu katıştırılmış bilgi türünü çalışma zamanında bir çözüm tarafından kullanılır.  
+  Bu değişikliği yaptıktan sonra, projeyi oluşturduğunuzda, proje tarafından kullanılan tüm çalışma zamanı türlerine ilişkin tür bilgileri çözüm derlemesine eklenir. Tür bilgilerini başvurulan derlemelerdeki yerine bu katıştırılmış bilgi türünü çalışma zamanında bir çözüm tarafından kullanılır.  
   
 ##  <a name="UnmanagedLoader"></a> Office çözüm yükleyicisini anlama  
  Office çalışma zamanı için Visual Studio Araçları çalışma zamanı ve Office çözümlerini yüklemek için Office uygulamalarının kullandığı bazı yönetilmeyen DLL'ler içerir. Hiçbir zaman bu DLL'ler ile doğrudan çalışmanız gerekmese de, bu DLL'lerin amaçlarını bilmeniz, Office çözümlerinin mimarisini daha iyi anlamanıza yardımcı olabilir.  
@@ -90,17 +90,17 @@ ms.locfileid: "35677223"
 ### <a name="vstoloaderdll"></a>VSTOLoader.dll  
  Sonra *VSTOEE.dll* uygun sürümünü yükler [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], *VSTOLoader.dll* çözüm derlemesini yüklemek için gerekli çalışmanın çoğunu gerçekleştirir. *VSTOLoader.dll* çeşitli işlemler yapar:  
   
--   Her bir çözüm derlemesi için uygulama etki alanı oluşturur.  
+- Her bir çözüm derlemesi için uygulama etki alanı oluşturur.  
   
--   Çözüm derlemesinin çalışma izni olduğunu doğrulamak için bir dizi güvenlik denetimi gerçekleştirir.  
+- Çözüm derlemesinin çalışma izni olduğunu doğrulamak için bir dizi güvenlik denetimi gerçekleştirir.  
   
--   Çözüm için gerekli .NET Framework için Office uzantıları sürümünü yükler.  
+- Çözüm için gerekli .NET Framework için Office uzantıları sürümünü yükler.  
   
- *VSTOLoader.dll* ayrıca VSTO eklentileri özgü çeşitli işlemler yapar:  
+  *VSTOLoader.dll* ayrıca VSTO eklentileri özgü çeşitli işlemler yapar:  
   
--   Bunu uygulayan <xref:Extensibility.IDTExtensibility2> arabirimi. <xref:Extensibility.IDTExtensibility2> Tüm VSTO eklentileri için Microsoft Office uygulamaları uygulamalıdır bir COM arabirimidir. Bu arabirim, uygulamanın VSTO eklenti ile iletişim kurmak için çağırdığı yöntemleri tanımlar.  
+- Bunu uygulayan <xref:Extensibility.IDTExtensibility2> arabirimi. <xref:Extensibility.IDTExtensibility2> Tüm VSTO eklentileri için Microsoft Office uygulamaları uygulamalıdır bir COM arabirimidir. Bu arabirim, uygulamanın VSTO eklenti ile iletişim kurmak için çağırdığı yöntemleri tanımlar.  
   
--   Imanagedaddin arabirimi uygular. Bu arabirim, VSTO eklentileri yükünü dengeleyebilmek için Office uygulamaları tarafından kullanılır. Daha fazla bilgi için [Imanagedaddin arabirimi](../vsto/imanagedaddin-interface.md).  
+- Imanagedaddin arabirimi uygular. Bu arabirim, VSTO eklentileri yükünü dengeleyebilmek için Office uygulamaları tarafından kullanılır. Daha fazla bilgi için [Imanagedaddin arabirimi](../vsto/imanagedaddin-interface.md).  
   
 ## <a name="understand-the-32-bit-and-64-bit-versions-of-the-runtime"></a>Çalışma zamanının 32-bit ve 64 bit sürümlerini anlama  
  Office çalışma zamanı için Visual Studio 2010 Araçları'nın ayrı 64-bit ve 32-bit sürümleri vardır. Çalışma zamanının bu sürümü, 64-bit ve 32-bit sürümlerinde Office çözümleri çalıştırmak için kullanılır. Aşağıdaki tabloda gösterilen her Windows ve Office birleşimi için hangi çalışma zamanı sürümü gereklidir.  

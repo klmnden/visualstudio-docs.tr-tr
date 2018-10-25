@@ -14,12 +14,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c0c8730d2a73b5e6dd2c48138c1633e24234db29
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c01116ee4a4b0edc43a6277db7725e8d962bd607
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273266"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839329"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Etki Alanına Özgü Dil Araçlarına Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,31 +39,31 @@ ms.locfileid: "49273266"
 ## <a name="the-dsl-tools-solution"></a>DSL araçları çözümü  
  Etki alanına özgü Tasarımcısı Sihirbazı'nı aşağıdaki çözüm şablonlarını sunar:  
   
--   Görev akışı  
+- Görev akışı  
   
--   Sınıf diyagramları  
+- Sınıf diyagramları  
   
--   Minimal dil  
+- Minimal dil  
   
--   Bileşen modelleri  
+- Bileşen modelleri  
   
--   En az bir WPF  
+- En az bir WPF  
   
--   En az Windows.Forms  
+- En az Windows.Forms  
   
--   DSL kitaplığı  
+- DSL kitaplığı  
   
- Daha fazla bilgi için [bir etki alanına özgü dil çözümü şablonu seçme](../modeling/choosing-a-domain-specific-language-solution-template.md).  
+  Daha fazla bilgi için [bir etki alanına özgü dil çözümü şablonu seçme](../modeling/choosing-a-domain-specific-language-solution-template.md).  
   
- Sihirbazın oluşturduğu bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aşağıdaki projeleri içeren bir çözümü:  
+  Sihirbazın oluşturduğu bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aşağıdaki projeleri içeren bir çözümü:  
   
--   DSL  
+- DSL  
   
-     Dsl projesi, etki alanına özgü dil ve işlemek ve düzenleme araçları tanımlar.  
+   Dsl projesi, etki alanına özgü dil ve işlemek ve düzenleme araçları tanımlar.  
   
--   **DslPackage**  
+- **DslPackage**  
   
-     Dil araçları ile tümleştirmek DslPackage proje belirler [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+   Dil araçları ile tümleştirmek DslPackage proje belirler [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="the-dsl-tools-graphical-interface"></a>DSL araçları grafik arabirimi  
  DSL araçları grafik arabirim öğeleri ve ilişkileri için etki alanına özgü dil eklemek için kullanabilirsiniz. Öğeleri ekledikten sonra bunları şekillere eşleme renkleri özelleştirme ve dekoratörler ekleme görünümleri tanımlayabilirsiniz. Araç kutusu öğeleri de ekleyebilirsiniz.  

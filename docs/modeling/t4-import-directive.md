@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c14cfea94277158583717aa77edc4636f245e58a
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: b0e641ca9eafb0fb78dbe42e2deb936db8fd840b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857860"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916029"
 ---
 # <a name="t4-import-directive"></a>T4 İçe Aktarma Yönergesi
 
@@ -41,15 +41,15 @@ The file contains: <#=  fileContent #>
 ## <a name="standard-imports"></a>Standart İçeri Aktarmalar
  Aşağıdaki ad alanı otomatik olarak içeri aktarılır, böylece onun için içeri aktarma yönergesi yazmanıza gerek kalmaz:
 
--   `System`
+- `System`
 
- Ayrıca, özel yönerge kullanıyorsanız, yönerge işlemcisi bazı ad alanlarını otomatik olarak içeri aktarabilir.
+  Ayrıca, özel yönerge kullanıyorsanız, yönerge işlemcisi bazı ad alanlarını otomatik olarak içeri aktarabilir.
 
- Örneğin, etki alanına özgü dil (DSL) için şablonlar yazarsanız, aşağıdaki ad alanları için içeri aktarma yönergeleri yazmak gerekmez:
+  Örneğin, etki alanına özgü dil (DSL) için şablonlar yazarsanız, aşağıdaki ad alanları için içeri aktarma yönergeleri yazmak gerekmez:
 
--   `Microsoft.VisualStudio.Modeling`
+- `Microsoft.VisualStudio.Modeling`
 
--   DSL'NİZİN ad alanı
+- DSL'NİZİN ad alanı
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

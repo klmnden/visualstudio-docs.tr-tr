@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb4275a8cf88ccedc93695422261624801fdcf33
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 260e745db7036981ab0a3c79074d99a2b7c7fbb5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586758"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828417"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate öğesi (Visual Studio şablonları)
 Proje şablonu, öğe şablonu veya başlangıç Seti hakkındaki meta verileri içerir.  
@@ -40,10 +40,10 @@ Proje şablonu, öğe şablonu veya başlangıç Seti hakkındaki meta verileri 
   
 ### <a name="attributes"></a>Öznitelikler  
   
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|`Type`|Şablonu proje şablonu veya bir öğe şablonu olarak tanımlar. Bu öznitelik değeri olabilir `Project` veya `Item`.|  
-|`Version`|Şablon için bir sürüm numarasını belirtir. Şablonlarda [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] ve [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] sahip bir `Version` öznitelik değerini `3.0.0`.|  
+| Öznitelik | Açıklama |
+|-----------| - |
+| `Type` | Şablonu proje şablonu veya bir öğe şablonu olarak tanımlar. Bu öznitelik değeri olabilir `Project` veya `Item`. |
+| `Version` | Şablon için bir sürüm numarasını belirtir. Şablonlarda [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] ve [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] sahip bir `Version` öznitelik değerini `3.0.0`. |
   
 ### <a name="child-elements"></a>Alt öğeleri  
   

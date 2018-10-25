@@ -15,12 +15,12 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: b6a89c76cf1f292ca99664e0e75c4070bdddaa54
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 5b5346f47d3dcb836a0e8eeef7d9b21bd55ccd07
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859945"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896243"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>İzlenecek yol: Konağı Oluşturulan bir Yönerge İşlemcisine Bağlama
 
@@ -33,21 +33,22 @@ Yönerge işlemcileri çağıran metin şablonlarını destekler, böylece bu k�
 
 Bu izlenecek yol aşağıdaki görevleri içerir:
 
--   Kullanarak [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] bir etki alanı modeline dayalı bir yönerge işlemcisi oluşturmak için.
+- Kullanarak [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] bir etki alanı modeline dayalı bir yönerge işlemcisi oluşturmak için.
 
--   Özel metin şablonu ana bilgisayar üretilen bir yönerge işlemcisine bağlama.
+- Özel metin şablonu ana bilgisayar üretilen bir yönerge işlemcisine bağlama.
 
--   Özel ana bilgisayarı ile oluşturulan yönerge işlemcisini test etme.
+- Özel ana bilgisayarı ile oluşturulan yönerge işlemcisini test etme.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
 Bir DSL tanımlamak için aşağıdaki bileşenler yüklemiş olmanız gerekir:
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio Görselleştirme ve modelleme SDK'sı||
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| Visual Studio Görselleştirme ve modelleme SDK'sı | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -57,34 +58,34 @@ Ayrıca, oluşturduğunuz özel metin şablonu dönüştürme olmalıdır [izlen
 
 Bu kılavuzda, bir etki alanına özgü dil çözümü DSLMinimalTest oluşturmak için etki alanına özgü dil Tasarımcısı Sihirbazı'nı kullanın.
 
-1.  Aşağıdaki özelliklere sahip bir etki alanına özgü dil çözümü oluşturun:
+1. Aşağıdaki özelliklere sahip bir etki alanına özgü dil çözümü oluşturun:
 
-    -   Ad: DSLMinimalTest
+   -   Ad: DSLMinimalTest
 
-    -   Çözüm şablonu: en az bir dil
+   -   Çözüm şablonu: en az bir dil
 
-    -   Dosya uzantısı: en düşük
+   -   Dosya uzantısı: en düşük
 
-    -   Şirket adı: Fabrikam
+   -   Şirket adı: Fabrikam
 
    Bir etki alanına özgü dil çözümü oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: bir etki alanına özgü dil çözümü oluşturma](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
-2.  Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.
+2. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.
 
-    > [!IMPORTANT]
-    > Bu adım, yönerge işlemcisi oluşturur ve anahtar için bunu kayıt defterine ekler.
+   > [!IMPORTANT]
+   > Bu adım, yönerge işlemcisi oluşturur ve anahtar için bunu kayıt defterine ekler.
 
-3.  Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat**.
+3. Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat**.
 
-     Visual Studio ikinci bir örneğini açar.
+    Visual Studio ikinci bir örneğini açar.
 
-4.  Deneysel yapı içinde **Çözüm Gezgini**, dosyayı çift **sample.min**.
+4. Deneysel yapı içinde **Çözüm Gezgini**, dosyayı çift **sample.min**.
 
-     Dosyası tasarımcıda açılır. Model iki öğe, ExampleElement1 ve ExampleElement2 ve bunlar arasında bir bağlantı olduğuna dikkat edin.
+    Dosyası tasarımcıda açılır. Model iki öğe, ExampleElement1 ve ExampleElement2 ve bunlar arasında bir bağlantı olduğuna dikkat edin.
 
-5.  Visual Studio'nun ikinci örneğini kapatın.
+5. Visual Studio'nun ikinci örneğini kapatın.
 
-6.  Çözüm kaydedin ve ardından etki alanına özgü dil tasarımcısını kapatın.
+6. Çözüm kaydedin ve ardından etki alanına özgü dil tasarımcısını kapatın.
 
 ## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>Bir özel metin şablonu konağı bir yönerge işlemcisine bağlama
 
