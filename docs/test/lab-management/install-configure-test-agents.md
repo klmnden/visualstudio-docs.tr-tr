@@ -1,6 +1,6 @@
 ---
 title: Test aracılarını ve test denetleyicilerini yükleme
-ms.date: 07/06/2018
+ms.date: 10/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcdc556366a84deffa37d7e0234b1c543882022c
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 3e024772e9deb5f391e057c3c66e505637765e1d
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370971"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050098"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Test aracılarını ve test denetleyicilerini yükleme
 
@@ -55,6 +55,9 @@ TFS, Microsoft Test Yöneticisi (MTM), test denetleyicisi ve test aracısını f
 | 2015: yeni bir yükleme | 2013 | 2013 | 2013 |
 | 2015: 2013'den yükseltme ya da yeni yükleyin | 2015 | 2013 | 2013 |
 | 2013 | 2015 | 2013 | 2013 |
+
+> [!NOTE]
+> Laboratuvar Yönetimi senaryoları DevOps Hizmetleri ve TFS 2018'de kullanım dışı bırakılmıştır. Daha fazla bilgi için [TFS 2018 sürüm notları](/visualstudio/releasenotes/tfs2018-relnotes#--removing-support-for-lab-center-and-automated-testing-flows-in-microsoft-test-manager).
 
 ## <a name="upgrade-from-visual-studio-2013-test-agents"></a>Visual Studio 2013'ün test aracılarını yükseltme
 

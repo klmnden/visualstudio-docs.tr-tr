@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0a3b14086957d37809c8fbcba88386daff57be4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0e28653749b19c9f53bd8e43e245fd8dcb20aa31
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892005"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050268"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Form bölgesini Outlook ileti sınıfıyla ilişkilendirme
   Form bölgesi her bir öğenin ileti sınıfıyla ilişkilendirme tarafından bir form bölgesi hangi Microsoft Office Outlook öğeleri görüntülemek belirtebilirsiniz. Örneğin, bir posta öğesinin altına bir form bölgesi eklemek istiyorsanız, form bölgesi ile ilişkilendirebilirsiniz `IPM.Note` ileti sınıfı.  
@@ -111,7 +111,7 @@ ms.locfileid: "49892005"
  [Outlook form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md)   
  [İzlenecek yol: Outlook form bölgesi tasarlama](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Outlook form bölgeleri oluşturma yönergeleri](../vsto/guidelines-for-creating-outlook-form-regions.md)   
- [Form adı ve ileti sınıfına genel bakış](http://msdn.microsoft.com/library/office/ff867629.aspx)   
- [Outlook form ve öğeleri birlikte nasıl çalışır](http://msdn.microsoft.com/library/office/ff869706.aspx)  
+ [Form adı ve ileti sınıfına genel bakış](/office/vba/outlook/Concepts/Forms/form-name-and-message-class-overview)   
+ [Outlook form ve öğeleri birlikte nasıl çalışır](/office/vba/outlook/Concepts/Forms/how-outlook-forms-and-items-work-together)  
   
   

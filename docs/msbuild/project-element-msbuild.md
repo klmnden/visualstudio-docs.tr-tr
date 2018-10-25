@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb3acd9add6f19ec258f808fd55a955eac14b6e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e95677bde8fbd1a05e83ab460396201316a7786d
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831750"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050319"
 ---
 # <a name="project-element-msbuild"></a>Proje öğesi (MSBuild)
 Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası.  
@@ -59,7 +59,7 @@ Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/incl
 | Öznitelik | Açıklama |
 |------------------------| - |
 | `DefaultTargets` | İsteğe bağlı öznitelik.<br /><br /> Varsayılan hedef veya hedefleri hiçbir hedef belirtilmemişse, derlemenin giriş noktası olacak. Noktalı virgülle (;) birden çok hedefi olan ayrılmış.<br /><br /> Varsayılan hedef ya da belirtilirse `DefaultTargets` özniteliği veya [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] komut satırı altyapısı yürütür ilk hedef sonra proje dosyasında [alma](../msbuild/import-element-msbuild.md) öğeler değerlendirilir. |
-| `InitialTargets` | İsteğe bağlı öznitelik.<br /><br /> İlk hedef veya hedefleri önce belirtilen hedefleri çalıştırılacak `DefaultTargets` özniteliği veya komut satırında. Noktalı virgülle (;) birden çok hedefi olan ayrılmış. |
+| `InitialTargets` | İsteğe bağlı öznitelik.<br /><br /> İlk hedef veya hedefleri önce belirtilen hedefleri çalıştırılacak `DefaultTargets` özniteliği veya komut satırında. Noktalı virgülle ayrılmış birden çok hedefi olan (`;`) ayrılmış. Birden çok fazla içe aktarılan dosyaları tanımlarsanız `InitialTargets`bahsedilen tüm hedefleri çalıştırın, sırayla Imports karşılaşılan. |
 | `Sdk` | İsteğe bağlı öznitelik. <br /><br /> Örtük oluşturmak için kullanılacak isteğe bağlı sürümü ve SDK adı .proj dosyasına eklenir deyimleri içeri aktarın. Hiçbir sürüm belirtilmezse, MSBuild varsayılan sürümü çözümlemeye çalışır.  Örneğin, `<Project Sdk="Microsoft.NET.Sdk" />` veya `<Project Sdk="My.Custom.Sdk/1.0.0" />`. |
 | `ToolsVersion` | İsteğe bağlı öznitelik.<br /><br /> MSBuild araç takımı sürümünü $(MSBuildBinPath) ve $(MSBuildToolsPath) için değerleri belirlemek için kullanır. |
 | `TreatAsLocalProperty` | İsteğe bağlı öznitelik.<br /><br /> Genel olarak kabul olmaz özellik adları. Bu öznitelik, bir proje veya hedefler dosyasının ve sonraki tüm içe aktarmaları ayarlanan özellik değerlerini geçersiz kılmasını belirli komut satırı özelliklerini engeller. Noktalı virgülle (;) birden çok özelliklerdir ayrılmış.<br /><br /> Normalde, genel özellikler, proje veya hedefler dosyasında ayarlanan özellik değerlerini geçersiz kılar. Özelliği içinde listelenmişse `TreatAsLocalProperty` , genel özellik değerini değil geçersiz kılma değeri'nda bu dosya ve sonraki tüm içeri aktarmaları ayarlanan özellik değerleri. Daha fazla bilgi için [nasıl yapılır: farklı seçeneklerle aynı kaynak dosyaları derleme](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Not:** genel özellikleri kullanarak bir komut isteminde ayarlama **-özellik** (veya **-p**) geçin. Ayrıca ayarlamak veya birden çok proje derleme alt projeler için genel özelliklerini kullanarak değiştirmek `Properties` MSBuild görevinin özniteliği. Daha fazla bilgi için [MSBuild görevi](../msbuild/msbuild-task.md). |

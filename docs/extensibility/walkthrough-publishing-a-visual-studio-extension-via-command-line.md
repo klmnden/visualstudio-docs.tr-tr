@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b50e5e1c0198f1a8c6e33254f0cdab17bc38535
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d95e2fbe36a73074b97f47f6714f1fc4aa8228c
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883360"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050189"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>İzlenecek yol: komut satırı aracılığıyla bir Visual Studio uzantısı yayımlama
 
@@ -38,7 +38,7 @@ Bir uzantıyı Market'te yayımlar. Uzantı, bir VSIX, bir exe/MSI dosyası veya
 |Yük (gerekli) | Ya da bir yolu veya yayımlamak için yükünü "Daha fazla bilgi URL" kullanmak için bir bağlantı. |
 |publishManifest (gerekli) | Bildirim kullanılacak dosya yolu yayımlanır. |
 |ignoreWarnings | Bir uzantı yayımlarken yok saymak için uyarıları listesi. Bu uyarı, bir uzantı yayımlarken komut satırı ileti olarak gösterilmez. (örneğin, "VSIXValidatorWarning01, VSIXValidatorWarning02")  
-|personalAccesToken | Kişisel erişim yayımcı kimliğini doğrulamak için kullanılan belirteç. Sağlanmazsa, oturum açmış olan kullanıcılar pat alınır. |
+|personalAccessToken | Kişisel erişim belirteci (yayımcı kimliğini doğrulamak için kullanılan PAT). Sağlanmazsa, oturum açmış olan kullanıcılar PAT alınır. |
 
 ```
 VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to vs-publish.json}" -ignoreWarnings "VSIXValidatorWarning01,VSIXValidatorWarning02"
