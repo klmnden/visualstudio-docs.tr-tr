@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 738934450536d6ae51e67223c440e607ac6b6839
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7cb1bbc637b51ecf75c0b491a5918ceaa147aa8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286097"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932318"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Nasıl yapılır: Derleyici Uyarılarını Gizleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,59 +57,59 @@ Derleyici uyarılarını içerecek şekilde istemediğiniz bir veya daha fazla t
   
 #### <a name="to-suppress-specific-warnings-for-visual-basic"></a>Visual Basic için belirli uyarıları bastırmak için  
   
-1.  İçinde **Çözüm Gezgini**, uyarıları bastırmak istediğiniz projeyi seçin.  
+1. İçinde **Çözüm Gezgini**, uyarıları bastırmak istediğiniz projeyi seçin.  
   
-2.  Menü çubuğunda, **proje**, **projeyi**.  
+2. Menü çubuğunda, **proje**, **projeyi**.  
   
-3.  İçinde **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **Düzenle**_ProjectName_**.vbproj**.  
+3. İçinde **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **Düzenle**_ProjectName_**.vbproj**.  
   
-     Proje dosyası Kod Düzenleyicisi'nde açılır.  
+    Proje dosyası Kod Düzenleyicisi'nde açılır.  
   
-4.  Bulun `<NoWarn></NoWarn>` ile oluşturmakta olduğunuza yapı yapılandırma öğesi.  
+4. Bulun `<NoWarn></NoWarn>` ile oluşturmakta olduğunuza yapı yapılandırma öğesi.  
   
-     Aşağıdaki örnekte gösterildiği `<NoWarn></NoWarn>` kalın metin için hata ayıklama derleme yapılandırmasını x x86 öğesinde platformu:  
+    Aşağıdaki örnekte gösterildiği `<NoWarn></NoWarn>` kalın metin için hata ayıklama derleme yapılandırmasını x x86 öğesinde platformu:  
   
-    ```  
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
-        <PlatformTarget>x86</PlatformTarget>  
-        <DebugSymbols>true</DebugSymbols>  
-        <DebugType>full</DebugType>  
-        <Optimize>false</Optimize>  
-        <OutputPath>bin\Debug\</OutputPath>  
-        <DefineDebug>true</DefineDebug>  
-        <DefineTrace>true</DefineTrace>  
-        <ErrorReport>prompt</ErrorReport>  
-        <NoWarn></NoWarn>  
-        <WarningLevel>1</WarningLevel>  
-      </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
+       <PlatformTarget>x86</PlatformTarget>  
+       <DebugSymbols>true</DebugSymbols>  
+       <DebugType>full</DebugType>  
+       <Optimize>false</Optimize>  
+       <OutputPath>bin\Debug\</OutputPath>  
+       <DefineDebug>true</DefineDebug>  
+       <DefineTrace>true</DefineTrace>  
+       <ErrorReport>prompt</ErrorReport>  
+       <NoWarn></NoWarn>  
+       <WarningLevel>1</WarningLevel>  
+     </PropertyGroup>  
+   ```  
   
-5.  Bir veya daha fazla uyarı numaralarını değeri olarak Ekle `<NoWarn>` öğesi. Birden çok uyarı numaralarını belirtirseniz, aşağıdaki örnekte gösterildiği gibi bir virgül ile ayırın.  
+5. Bir veya daha fazla uyarı numaralarını değeri olarak Ekle `<NoWarn>` öğesi. Birden çok uyarı numaralarını belirtirseniz, aşağıdaki örnekte gösterildiği gibi bir virgül ile ayırın.  
   
-    ```  
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
-        <PlatformTarget>x86</PlatformTarget>  
-        <DebugSymbols>true</DebugSymbols>  
-        <DebugType>full</DebugType>  
-        <Optimize>false</Optimize>  
-        <OutputPath>bin\Debug\</OutputPath>  
-        <DefineDebug>true</DefineDebug>  
-        <DefineTrace>true</DefineTrace>  
-        <ErrorReport>prompt</ErrorReport>  
-        <NoWarn>40059,42024</NoWarn>  
-        <WarningLevel>1</WarningLevel>  
-      </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
+       <PlatformTarget>x86</PlatformTarget>  
+       <DebugSymbols>true</DebugSymbols>  
+       <DebugType>full</DebugType>  
+       <Optimize>false</Optimize>  
+       <OutputPath>bin\Debug\</OutputPath>  
+       <DefineDebug>true</DefineDebug>  
+       <DefineTrace>true</DefineTrace>  
+       <ErrorReport>prompt</ErrorReport>  
+       <NoWarn>40059,42024</NoWarn>  
+       <WarningLevel>1</WarningLevel>  
+     </PropertyGroup>  
+   ```  
   
-6.  .vbproj dosyasındaki değişiklikleri kaydedin.  
+6. .vbproj dosyasındaki değişiklikleri kaydedin.  
   
-7.  Menü çubuğunda, **proje**, **projeyi**.  
+7. Menü çubuğunda, **proje**, **projeyi**.  
   
-8.  Menü çubuğunda, **derleme**, **çözümü yeniden derle**.  
+8. Menü çubuğunda, **derleme**, **çözümü yeniden derle**.  
   
-     **Çıkış** penceresi artık belirtilen uyarıları gösterir.  
+    **Çıkış** penceresi artık belirtilen uyarıları gösterir.  
   
- Daha fazla bilgi için [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).  
+   Daha fazla bilgi için [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: bir uygulama oluşturma](../ide/walkthrough-building-an-application.md)   

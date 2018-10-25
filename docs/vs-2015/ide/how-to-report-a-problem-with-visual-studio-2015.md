@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fcc49f96faf043101ffb2462d544e41394b38e7b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e0f2e81d82db81859ff5833903d00b8bf149436
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290400"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941249"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Visual Studio 2015 ile ilgili bir sorun bildirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Visual Studio 2015 ile ilgili bir sorun yaşarsanız, böylece biz de tanılayı
   
 ###  <a name="describe_the_problem"></a>  
   
-1.  Yol, Visual Studio içinde doğru takıma yardımcı olacak sorun için açıklayıcı bir başlık verin.  
+1. Yol, Visual Studio içinde doğru takıma yardımcı olacak sorun için açıklayıcı bir başlık verin.  
   
-2.  Ek ayrıntılar verin ve mümkünse sorunu yeniden oluşturma adımları.  
+2. Ek ayrıntılar verin ve mümkünse sorunu yeniden oluşturma adımları.  
   
-3.  Sorunun görüldüğü alan açılan listeden seçin. Emin değilseniz, en iyi tahmin edin.  
+3. Sorunun görüldüğü alan açılan listeden seçin. Emin değilseniz, en iyi tahmin edin.  
   
- ![Bir sorun iletişim kutusu rapor](../ide/media/report-a-problem-dialog.png "sorun iletişim raporu")  
+   ![Bir sorun iletişim kutusu rapor](../ide/media/report-a-problem-dialog.png "sorun iletişim raporu")  
   
 ## <a name="provide-a-screenshot-optional"></a>(İsteğe bağlı) bir ekran görüntüsü sağlayın  
  Seçin **ekran görüntüsü Ekle** geçerli ekranınızın Microsoft'a gönderilecek. Araç yalnızca sorunu gösteren ekran parçası gösterilecek görüntü kırpma sağlar. Tıklayarak bir ek ekran görüntüleri veya diğer dosyaları iliştirebilirsiniz **ek dosyalar iliştirmek** düğmesi.  

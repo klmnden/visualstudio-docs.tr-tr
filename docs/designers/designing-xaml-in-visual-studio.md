@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: e39a7d770308cae7e022d419b21695f9d478aad7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 16ec8cdb2402546f2059053495a8e656427783e3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381699"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937336"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Visual Studio’da XAML tasarlama
 
@@ -61,7 +61,7 @@ En temel görevler için Visual Studio IDE ve Visual Studio için Blend paylaş�
 Üretkenliğinizi artırmak için aşağıdaki görevler için Visual Studio için Blend kullanarak göz önünde bulundurun. Bu, Visual Studio için Blend, daha fazla hız ve Visual Studio Tasarımcısı veya tek başına bir kod işlevsellik burada sunar alanlardır.
 
 |Bitiş|Visual Studio|Visual Studio için Blend|Daha fazla bilgi|
-|--------|-------------------|-----------------------------|----------------------|
+|--------|-------------------| - | - |
 |**Animasyonlar oluşturma**|Animasyon için tasarım aracı yoktur; bunları programlı olarak oluşturmanız gerekir. Bu, animasyon ve zamanlama sistemine WPF ve kodlama kapsamlı uzmanlığını'nın bilinmesini gerektirir.|Görsel animasyonlar oluşturur ve bunları Visual Studio için blend'de önizlemesini görebilirsiniz. Bu daha hızlı ve kod içinde animasyonları oluşturmak daha kesin değildir. Kullanıcı etkileşimi işlemek için Tetikleyiciler ekleyebilir ve olay işleyicileri ve diğer işlevler eklemek için kod geçiş yapabilirsiniz.|[Nesnelere animasyon ekleme](../designers/animate-objects-in-xaml-designer.md)|
 |**Şekil ve metinler yolları daha kolay düzenlemesi için dönüştürün**|Desteklenmez.|Daha iyi düzenleme denetimi sağlayan yollar dönüştürerek (örneğin, dikdörtgenler ve elipsler) şekillere ince veya çarpıcı değişiklikler yapabilirsiniz. Şekillendirmek veya yolları birleştirme ve birden çok şekillerden bileşik yollar oluşturabilir.<br /><br /> Ayrıca metin blokları vektör görüntüleri yönetileceğini yolları dönüştürebilirsiniz.|[Şekiller ve yollar çizme](../designers/draw-shapes-and-paths.md)|
 |**UI tasarımlarınızı etkileşim ekleme**|C#, Visual Basic veya C++ kod gerektirir.|Davranışlar statik tasarımlarınızı etkileşim eklemek için denetimleri üzerine sürükleyip yeniden açın. Davranışlar, sürükle ve bırak, yakınlaştırma ve görsel durum değişiklikleri gibi işlevi kapsülleyen kullanıma hazır kod parçacıkları verilmiştir. Aralarından seçim yapabilirsiniz ve kendi oluşturabilirsiniz davranışlarını büyüyen bir dizi yoktur.<br /><br /> Her davranışı, Visual Studio için blend'de özelliklerini değiştirerek veya olay işleyicileri ekleme kodu daha sonra özelleştirebilirsiniz.|[Denetimler ekleme ve bunların davranışlarını değiştirme](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)|

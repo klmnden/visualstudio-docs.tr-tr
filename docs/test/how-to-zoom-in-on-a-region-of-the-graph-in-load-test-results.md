@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f39ff75eaa6efe0d71d884fd5d6d76f65e5dad50
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3a5d07e4267291e30f85b1b16b49213ab119cd1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380207"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932357"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Nasıl yapılır: yük testi sonuçlarında grafiğin bir bölgesine yakınlaştırma
 
@@ -94,15 +94,15 @@ Bir yük testi tamamlandıktan sonra yakınlaştırmak ve kaydırmak için grafi
 
 ### <a name="to-zoom-to-a-region-of-the-graph-by-choosing-and-dragging"></a>Seçip sürükleyerek grafiğin belirli bir bölgesine yakınlaştırmak için
 
-1.  Yakınlaştırma alanının bir ucunda bulunan bir grafiği seçin.
+1. Yakınlaştırma alanının bir ucunda bulunan bir grafiği seçin.
 
-2.  Fare işaretçisi Yakınlaştırma alanının diğer sonuna kadar sürükleyin.
+2. Fare işaretçisi Yakınlaştırma alanının diğer sonuna kadar sürükleyin.
 
-3.  Fare düğmesini bırakın.
+3. Fare düğmesini bırakın.
 
-     Bu, seçip sürükleyerek tanımladığınız alanı büyütür.
+    Bu, seçip sürükleyerek tanımladığınız alanı büyütür.
 
- Aşağıdaki yordam, yakınlaştırma çubuğu ucunda ayarlamak zorunda kalmadan hızlıca uzaklaştırmak açıklar.
+   Aşağıdaki yordam, yakınlaştırma çubuğu ucunda ayarlamak zorunda kalmadan hızlıca uzaklaştırmak açıklar.
 
 ### <a name="to-zoom-out"></a>Uzaklaştırmak için
 

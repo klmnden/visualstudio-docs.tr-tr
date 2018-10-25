@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7616dd184bae2cabb433879ceadae79dbeb23b93
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4512dc15d394cdf2442d8bfcf440ccb31623a29
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626022"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942081"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>İzlenecek yol: bir proje şablonu, bölüm 2 ile bir site sütunu proje öğesi oluşturma
   Özel bir SharePoint proje öğesi türünü tanımlar ve bir proje şablonu Visual Studio'da ilişkilendirmek sonra şablon için bir sihirbaz sağlamak isteyebilirsiniz. Sihirbaz, şablonu proje öğesi içeren yeni bir proje oluşturmak için kullanıldığında, kullanıcılardan bilgi toplamak için kullanabilirsiniz. Topladığınız bilgiler, proje öğesini başlatmak için kullanılabilir.  
@@ -48,15 +48,15 @@ ms.locfileid: "42626022"
   
  Bu izlenecek yolu tamamlamak için geliştirme bilgisayarında aşağıdaki bileşenler de aşağıdakiler gerekir:  
   
--   Windows, SharePoint ve Visual Studio'nun desteklenen sürümleri.
+- Windows, SharePoint ve Visual Studio'nun desteklenen sürümleri.
   
--   Visual Studio SDK. Bu izlenecek yolda **VSIX projesi** proje öğesini dağıtmak üzere bir VSIX paketi oluşturmak için SDK'sı şablonunda. Daha fazla bilgi için [Visual Studio'da SharePoint araçlarını genişletmek](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- Visual Studio SDK. Bu izlenecek yolda **VSIX projesi** proje öğesini dağıtmak üzere bir VSIX paketi oluşturmak için SDK'sı şablonunda. Daha fazla bilgi için [Visual Studio'da SharePoint araçlarını genişletmek](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Aşağıdaki kavramları bilgisi yardımcı, ancak gerekli değildir, bu izlenecek yolu tamamlamak için:  
+  Aşağıdaki kavramları bilgisi yardımcı, ancak gerekli değildir, bu izlenecek yolu tamamlamak için:  
   
--   Visual Studio'da proje ve öğe şablonlarını sihirbazları. Daha fazla bilgi için [nasıl yapılır: Proje şablonlarıyla kullanma sihirbazları](../extensibility/how-to-use-wizards-with-project-templates.md) ve <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> arabirimi.  
+- Visual Studio'da proje ve öğe şablonlarını sihirbazları. Daha fazla bilgi için [nasıl yapılır: Proje şablonlarıyla kullanma sihirbazları](../extensibility/how-to-use-wizards-with-project-templates.md) ve <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> arabirimi.  
   
--   SharePoint için site sütunları. Daha fazla bilgi için [sütunları](http://go.microsoft.com/fwlink/?LinkId=183547).  
+- SharePoint için site sütunları. Daha fazla bilgi için [sütunları](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
 ## <a name="understand-the-wizard-components"></a>Sihirbaz bileşenlerini anlama
  Bu izlenecek yolda gösterilen Sihirbazı çeşitli bileşenler bulunur. Aşağıdaki tabloda, bu bileşenler açıklanmaktadır.  
@@ -72,11 +72,11 @@ ms.locfileid: "42626022"
 ## <a name="create-the-projects"></a>Projeleri oluşturma
  Bu izlenecek yolu tamamlamak için birkaç proje oluşturduğunuz SiteColumnProjectItem çözüme eklemeniz gerekir [izlenecek yol: bir proje şablonu, bölüm 1 ile bir site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
   
--   Bir WPF projesi. U uygulayacaksınız <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> arabirim ve kullanıcı Arabirimi Sihirbazı bu projeyi tanımlayın.  
+- Bir WPF projesi. U uygulayacaksınız <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> arabirim ve kullanıcı Arabirimi Sihirbazı bu projeyi tanımlayın.  
   
--   SharePoint komutları tanımlayan bir sınıf kitaplığı projesi. Bu projenin.NET Framework 3.5 hedeflemesi gerekir.  
+- SharePoint komutları tanımlayan bir sınıf kitaplığı projesi. Bu projenin.NET Framework 3.5 hedeflemesi gerekir.  
   
- İzlenecek yol, proje oluşturmaya başlayın.  
+  İzlenecek yol, proje oluşturmaya başlayın.  
   
 #### <a name="to-create-the-wpf-project"></a>WPF projesini oluşturmak için
   
@@ -192,13 +192,13 @@ ms.locfileid: "42626022"
 ## <a name="create-the-wizard-model-signing-manager-and-sharepoint-command-ids"></a>Sihirbaz modeli, imzalama Yöneticisi ve SharePoint komut kimlikleri oluşturma
  Örnekte aşağıdaki bileşenleri uygulamak için ProjectTemplateWizard proje kodu ekleyin:  
   
--   SharePoint komut kimlikleri. Bu dizeler Sihirbazı'nı kullanan SharePoint komutları belirleyin. Bu kılavuzda daha sonra SharePointCommands projeye komutları uygulamak için kod ekleyeceksiniz.  
+- SharePoint komut kimlikleri. Bu dizeler Sihirbazı'nı kullanan SharePoint komutları belirleyin. Bu kılavuzda daha sonra SharePointCommands projeye komutları uygulamak için kod ekleyeceksiniz.  
   
--   Sihirbaz veri modeli.  
+- Sihirbaz veri modeli.  
   
--   Proje imzalama Yöneticisi.  
+- Proje imzalama Yöneticisi.  
   
- Bu bileşenler hakkında daha fazla bilgi için bkz. [Sihirbazı bileşenlerini anlama](#wizardcomponents).  
+  Bu bileşenler hakkında daha fazla bilgi için bkz. [Sihirbazı bileşenlerini anlama](#wizardcomponents).  
   
 #### <a name="to-define-the-sharepoint-command-ids"></a>SharePoint komut kimlikleri tanımlamak için
   
@@ -485,29 +485,29 @@ ms.locfileid: "42626022"
   
 #### <a name="to-test-the-wizard-in-visual-studio"></a>Sihirbaz Visual Studio'da Test etmek için  
   
-1.  Visual Studio'nun Deneysel örneğinin menü çubuğunda seçin **dosya** > **yeni** > **proje**.  
+1. Visual Studio'nun Deneysel örneğinin menü çubuğunda seçin **dosya** > **yeni** > **proje**.  
   
-2.  Genişletin **Visual C#** düğümü veya **Visual Basic** (dile bağlı olarak, proje şablonu destekleyen), düğümünü **SharePoint** düğümünü seçin **2010** düğümü.  
+2. Genişletin **Visual C#** düğümü veya **Visual Basic** (dile bağlı olarak, proje şablonu destekleyen), düğümünü **SharePoint** düğümünü seçin **2010** düğümü.  
   
-3.  Proje şablonları listesinde seçin **Site sütunu**, projeyi adlandırın **SiteColumnWizardTest**ve ardından **Tamam** düğmesi.  
+3. Proje şablonları listesinde seçin **Site sütunu**, projeyi adlandırın **SiteColumnWizardTest**ve ardından **Tamam** düğmesi.  
   
-4.  Visual Studio'nun diğer örneğindeki kodun daha önce ayarladığınız kesme noktasına durduğunu doğrulayın `RunStarted` yöntemi.  
+4. Visual Studio'nun diğer örneğindeki kodun daha önce ayarladığınız kesme noktasına durduğunu doğrulayın `RunStarted` yöntemi.  
   
-5.  Seçerek proje hatalarını ayıklamaya devam **F5** anahtar veya, menü çubuğundan seçme **hata ayıklama** > **devam**.  
+5. Seçerek proje hatalarını ayıklamaya devam **F5** anahtar veya, menü çubuğundan seçme **hata ayıklama** > **devam**.  
   
-6.  İçinde **SharePoint Özelleştirme Sihirbazı**, hata ayıklama için kullanmak istediğiniz sitenin URL'sini girin ve ardından **sonraki** düğmesi.  
+6. İçinde **SharePoint Özelleştirme Sihirbazı**, hata ayıklama için kullanmak istediğiniz sitenin URL'sini girin ve ardından **sonraki** düğmesi.  
   
-7.  İkinci sayfasında **SharePoint Özelleştirme Sihirbazı**, aşağıdaki seçimleri yapın:  
+7. İkinci sayfasında **SharePoint Özelleştirme Sihirbazı**, aşağıdaki seçimleri yapın:  
   
-    -   İçinde **türü** listesinde **Boole**.  
+   - İçinde **türü** listesinde **Boole**.  
   
-    -   İçinde **grubu** listesinde **özel Hayır sütunları**.  
+   - İçinde **grubu** listesinde **özel Hayır sütunları**.  
   
-    -   İçinde **adı** kutusuna **My Hayır sütun**ve ardından **son** düğmesi.  
+   - İçinde **adı** kutusuna **My Hayır sütun**ve ardından **son** düğmesi.  
   
      İçinde **Çözüm Gezgini**, yeni bir proje görünür ve adlı bir proje öğesi içeren **alan1**, ve Visual Studio açılır ve projenin *Elements.xml* düzenleyicideki dosyada.  
   
-8.  Doğrulayın *Elements.xml* sihirbazda belirttiğiniz değerleri içerir.  
+8. Doğrulayın *Elements.xml* sihirbazda belirttiğiniz değerleri içerir.  
   
 #### <a name="to-test-the-site-column-in-sharepoint"></a>SharePoint site sütunu test etmek için  
   
