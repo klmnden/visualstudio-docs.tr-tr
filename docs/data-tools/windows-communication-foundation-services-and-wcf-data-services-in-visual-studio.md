@@ -37,12 +37,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e83a541c9cff15375f8dc0fcdde74119a40713e4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 197418bc1a4f8049c0388af005ef36eff287a856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178884"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915938"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio'da Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri
 Visual Studio, Windows Communication Foundation (WCF) ile çalışmaya yönelik araçlar sağlar ve [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], dağıtılmış uygulamalar oluşturmak için Microsoft teknolojileri. Bu konu Visual Studio açısından hizmetlere bir giriş sağlar. Tüm belgeler için bkz. [WCF Veri Hizmetleri 4.5](/dotnet/framework/data/wcf/index).
@@ -234,16 +234,16 @@ Bu sorunu önlemek için bütünleştirilmiş kodlardaki türleri varsayılan ol
 
 ## <a name="related-topics"></a>İlgili konular
 
-|Başlık|Açıklama|
-|-----------|-----------------|
-|[İzlenecek yol: Windows Forms'ta basit bir WCF hizmeti oluşturma](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Oluşturma ve Visual Studio'da WCF hizmetleri kullanarak adım adım bir gösterim sağlar.|
-|[İzlenecek yol: WPF ve Entity Framework ile WCF veri hizmeti oluşturma](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Oluşturma ve kullanma konusunda adım adım bir gösterim sağlar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] Visual Studio'da.|
-|[WCF geliştirme araçlarını kullanma](/dotnet/framework/wcf/using-the-wcf-development-tools)|Oluşturma ve WCF hizmetlerini Visual Studio'da test anlatılmaktadır.|
-||[Nasıl yapılır: ekleme, güncelleştirme veya WCF veri hizmeti başvurusunu Kaldır](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Nasıl başvurulacağını ve anlatılmaktadır [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] Visual Studio'da.|
-|[Hizmet başvurularında sorun giderme](../data-tools/troubleshooting-service-references.md)|Hizmet başvuruları ve bunların nasıl ile ortaya çıkabilecek bazı yaygın hatalar gösterir.|
-|[WCF hizmetlerinde hata ayıklama](../debugger/debugging-wcf-services.md)|Genel hata ayıklama sorunları ve WCF hizmetlerinde hata ayıklama sırasında karşılaşabileceğiniz teknikleri açıklar.|
-|[İzlenecek yol: bir n katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Türü belirtilmiş veri kümesi oluşturma ve birden çok projelere TableAdapter ve veri kümesi kodunu ayırmak için adım adım yönergeler sağlar.|
-|[Hizmet başvurusu Yapılandır iletişim kutusu](../data-tools/configure-service-reference-dialog-box.md)|Kullanıcı arabirimi öğelerini açıklar **hizmet başvurusu yapılandırma** iletişim kutusu.|
+| Başlık | Açıklama |
+| - | - |
+| [İzlenecek yol: Windows Forms içinde basit bir WCF Hizmeti oluşturma](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Oluşturma ve Visual Studio'da WCF hizmetleri kullanarak adım adım bir gösterim sağlar. |
+| [İzlenecek yol: WPF ve Entity Framework ile WCF veri hizmeti oluşturma](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | Oluşturma ve kullanma konusunda adım adım bir gösterim sağlar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] Visual Studio'da. |
+| [WCF geliştirme araçlarını kullanma](/dotnet/framework/wcf/using-the-wcf-development-tools) | Oluşturma ve WCF hizmetlerini Visual Studio'da test anlatılmaktadır. |
+| | [Nasıl yapılır: ekleme, güncelleştirme veya WCF veri hizmeti başvurusunu Kaldır](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
+| [Hizmet başvurularında sorun giderme](../data-tools/troubleshooting-service-references.md) | Hizmet başvuruları ve bunların nasıl ile ortaya çıkabilecek bazı yaygın hatalar gösterir. |
+| [WCF hizmetlerinde hata ayıklama](../debugger/debugging-wcf-services.md) | Genel hata ayıklama sorunları ve WCF hizmetlerinde hata ayıklama sırasında karşılaşabileceğiniz teknikleri açıklar. |
+| [İzlenecek yol: bir n katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | Türü belirtilmiş veri kümesi oluşturma ve birden çok projelere TableAdapter ve veri kümesi kodunu ayırmak için adım adım yönergeler sağlar. |
+| [Hizmet başvurusu Yapılandır iletişim kutusu](../data-tools/configure-service-reference-dialog-box.md) | Kullanıcı arabirimi öğelerini açıklar **hizmet başvurusu yapılandırma** iletişim kutusu. |
 
 ## <a name="reference"></a>Başvuru
 

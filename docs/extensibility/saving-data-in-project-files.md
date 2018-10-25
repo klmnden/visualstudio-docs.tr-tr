@@ -15,21 +15,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 717cff683f5f16f8f42f967c5f3b90ff2fe1e3fc
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: adc7d06b8479da4aef7042fd64702cff5ca3be60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635975"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900663"
 ---
 # <a name="save-data-in-project-files"></a>Proje dosyalarında verileri kaydetme
 Proje alt kaydedebilir ve proje dosyasındaki alt özgü verileri alma. Yönetilen paket Framework (MPF), bu görevi gerçekleştirmek için iki arabirim sağlar:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> Erişim özellik değerleri için arabirim sağlar **MSBuild** proje dosyasının. Tarafından sağlanan yöntemleri <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> yüklemek veya kaydetmek için kullanıcı gereksinimlerini ilgili verileri oluşturduğunuzda, herhangi bir kullanıcı tarafından çağrılabilir.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> Erişim özellik değerleri için arabirim sağlar **MSBuild** proje dosyasının. Tarafından sağlanan yöntemleri <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> yüklemek veya kaydetmek için kullanıcı gereksinimlerini ilgili verileri oluşturduğunuzda, herhangi bir kullanıcı tarafından çağrılabilir.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Serbest biçimli XML olmayan derleme ilgili verileri kalıcı hale getirmek için kullanılır. Tarafından sağlanan yöntemleri <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> tarafından aranır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] her [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] derleme olmayan proje dosyasındaki ilgili verileri kalıcı hale getirilmesi.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Serbest biçimli XML olmayan derleme ilgili verileri kalıcı hale getirmek için kullanılır. Tarafından sağlanan yöntemleri <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> tarafından aranır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] her [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] derleme olmayan proje dosyasındaki ilgili verileri kalıcı hale getirilmesi.  
   
- Derleme ve ilgili derleme olmayan verileri kalıcı hale getirmek nasıl hakkında daha fazla bilgi için bkz. [MSBuild proje dosyasında verileri kalıcı hale getirmenize](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md).  
+  Derleme ve ilgili derleme olmayan verileri kalıcı hale getirmek nasıl hakkında daha fazla bilgi için bkz. [MSBuild proje dosyasında verileri kalıcı hale getirmenize](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md).  
   
 ## <a name="save-and-retrieve-build-related-data"></a>İlgili verileri Kaydet ve Al oluşturun  
   

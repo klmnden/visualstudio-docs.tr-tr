@@ -27,12 +27,12 @@ caps.latest.revision: 91
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 784f36c022f967f59e365ac35912a9e54a81b82c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dba1be310260a2b1ae6ad28efe4b3d98ac14c4a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281443"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896845"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Kod haritalarına göz atma ve bunları yeniden düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -178,25 +178,25 @@ Okuma ve bunların performansı daha kolay hale getirmek için kod haritaların�
 ###  <a name="AddNodes"></a>   
 ##### <a name="add-a-link-between-existing-code-elements"></a>Varolan kod öğeleri arasında bir bağlantı ekleyin  
   
-1.  Kaynak kodu öğesi seçin. Bir araç çubuğu üzerinde kod öğesi görünür.  
+1. Kaynak kodu öğesi seçin. Bir araç çubuğu üzerinde kod öğesi görünür.  
   
-     ![Bağımlılık grafiği araç](../modeling/media/depedencygraph-toolbar.png "DepedencyGraph_Toolbar")  
+    ![Bağımlılık grafiği araç](../modeling/media/depedencygraph-toolbar.png "DepedencyGraph_Toolbar")  
   
-2.  İlk simgesi, araç çubuğunda **yeni bağlantı oluşturun bu düğümden tıklayacağınız düğüme sonraki**.  
+2. İlk simgesi, araç çubuğunda **yeni bağlantı oluşturun bu düğümden tıklayacağınız düğüme sonraki**.  
   
-3.  Hedef kod öğesi seçin. İki kod öğeleri arasında bir bağlantı görüntülenir.  
+3. Hedef kod öğesi seçin. İki kod öğeleri arasında bir bağlantı görüntülenir.  
   
- \- veya -  
+   \- veya -  
   
-1.  Harita üzerinde kaynak kodu öğesi seçin.  
+4. Harita üzerinde kaynak kodu öğesi seçin.  
   
-2.  Yüklü bir fare varsa, fare işaretçisini harita sınırları dışında taşıyın.  
+5. Yüklü bir fare varsa, fare işaretçisini harita sınırları dışında taşıyın.  
   
-3.  Kod öğenin kısayol menüsünü açın ve seçin **Düzenle**, **Ekle**, **genel bağlantı**.  
+6. Kod öğenin kısayol menüsünü açın ve seçin **Düzenle**, **Ekle**, **genel bağlantı**.  
   
-4.  İçin sekmesinde ve bağlantının hedef kod öğesi seçin.  
+7. İçin sekmesinde ve bağlantının hedef kod öğesi seçin.  
   
-5.  Tuşuna **dönüş**.  
+8. Tuşuna **dönüş**.  
   
 ###  <a name="AddComments"></a>   
 ##### <a name="add-a-comment-to-an-existing-node-on-the-map"></a>Harita üzerinde varolan düğüm için bir açıklama ekleyin  

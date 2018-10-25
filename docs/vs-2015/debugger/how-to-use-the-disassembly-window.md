@@ -30,12 +30,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aa414aacc8b7ffc39132157686abee860cac994c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8cdefbbc16021931e3d31dd2d46f4e6509c4dd17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287767"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907592"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>Nasıl Yapılır: Ayrıştırılmış Kod Penceresini Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,23 +46,23 @@ Bu özellik yalnızca adres seviyesinde hata ayıklamayı etkinse kullanılabili
   
  Derleme yönergeleri yanı sıra **ayrıştırılmış kodu** penceresi, aşağıdaki isteğe bağlı bilgileri gösterebilir:  
   
--   Her yönerge bulunduğu bellek adresi. Yerel uygulamalar için bu gerçek bellek adresidir. Visual Basic, C# veya yönetilen kod için işlevin başlangıcına uzaklık var.  
+- Her yönerge bulunduğu bellek adresi. Yerel uygulamalar için bu gerçek bellek adresidir. Visual Basic, C# veya yönetilen kod için işlevin başlangıcına uzaklık var.  
   
--   Bütünleştirilmiş kodu türetildiği kaynak kodu.  
+- Bütünleştirilmiş kodu türetildiği kaynak kodu.  
   
--   Kod bayt — bayt temsillerini gerçek makine ya da MSIL yönergeleri.  
+- Kod bayt — bayt temsillerini gerçek makine ya da MSIL yönergeleri.  
   
--   Sembol adları için bellek adresleri.  
+- Sembol adları için bellek adresleri.  
   
--   Kaynak koduna karşılık gelen satır numaraları.  
+- Kaynak koduna karşılık gelen satır numaraları.  
   
- Derleme dili talimatlarını yönerge adları ve değişkenler, kayıtlar ve sabitleri temsil eden simgeler kısaltmalar anımsatıcıları, oluşur. Her makine dil yönergesi, genellikle bir veya daha fazla değişkenleri, kayıtları veya sabitler ve ardından, bir derleme dili anımsatıcı temsil edilir.  
+  Derleme dili talimatlarını yönerge adları ve değişkenler, kayıtlar ve sabitleri temsil eden simgeler kısaltmalar anımsatıcıları, oluşur. Her makine dil yönergesi, genellikle bir veya daha fazla değişkenleri, kayıtları veya sabitler ve ardından, bir derleme dili anımsatıcı temsil edilir.  
   
- Assembly dili okuyun ve ayrıştırma penceresi tam olarak yararlanmak istiyorsanız, derleme dili programlama hakkında iyi kitap başvurun. Assembly dili programlama ne biz Ayrıştırılmış kod penceresini kısa giriş bölümünde ele kapsamı dışındadır.  
+  Assembly dili okuyun ve ayrıştırma penceresi tam olarak yararlanmak istiyorsanız, derleme dili programlama hakkında iyi kitap başvurun. Assembly dili programlama ne biz Ayrıştırılmış kod penceresini kısa giriş bölümünde ele kapsamı dışındadır.  
   
- Bütünleştirilmiş kodu, yoğun işlemci kayıtları veya yönetilen kod kullandığından, ortak dil çalışma zamanı kaydeder, genellikle birlikte ayrıştırma penceresinde, kayıt incelemenize olanak tanır yazmaçlar penceresi ile kullanmak faydalı içeriği.  
+  Bütünleştirilmiş kodu, yoğun işlemci kayıtları veya yönetilen kod kullandığından, ortak dil çalışma zamanı kaydeder, genellikle birlikte ayrıştırma penceresinde, kayıt incelemenize olanak tanır yazmaçlar penceresi ile kullanmak faydalı içeriği.  
   
- Büyük olasılıkla hiçbir zaman isteğine sahip veya kendi ham, sayısal bir form yerine derleme dili yönergeleri makine kodu görüntülemeniz gerekir. Ancak, bunu yapmak istiyorsanız, bu amaç için bellek penceresini kullanma veya kod bayt ayrıştırma penceresinde kısayol menüsünden seçin.  
+  Büyük olasılıkla hiçbir zaman isteğine sahip veya kendi ham, sayısal bir form yerine derleme dili yönergeleri makine kodu görüntülemeniz gerekir. Ancak, bunu yapmak istiyorsanız, bu amaç için bellek penceresini kullanma veya kod bayt ayrıştırma penceresinde kısayol menüsünden seçin.  
   
 > [!NOTE]
 >  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

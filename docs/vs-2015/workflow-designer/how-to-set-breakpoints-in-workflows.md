@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 18d87e523e9c0456f0f80add89c2ade32cf903fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b3dedba320ce8a783b7d54df54a30b0759a6bd00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896230"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Nasıl yapılır: iş akışlarında kesme noktası ayarlama
 Kullanırken [!INCLUDE[wfd1](../includes/wfd1-md.md)], Visual Basic veya C# kodunda yaptığınız gibi grafik iş akışlarında kesme noktalarını ayarlayabilir. Beklendiği gibi iş akışı yürütme ayarladığınız her bir kesme noktasında durur.  
@@ -26,10 +26,10 @@ Kullanırken [!INCLUDE[wfd1](../includes/wfd1-md.md)], Visual Basic veya C# kodu
   
 > [!NOTE]
 >  Çağrılan iş akışlarında kesme noktaları ayarlama desteklenmiyor.  
-  
+> 
 > [!WARNING]
->  Seçeneğini belirlediğinizden emin olun **yalnızca benim kodumu etkinleştir (sadece yönetilen)** gelen **Araçları**, **seçenekleri**, **hata ayıklama** , önce menüsü hata ayıklama. Başka bir dizi içinde iç içe iki diziyi varsa ve ilk iç dizisi üzerinde bir kesme noktası ayarlayın, tuşuna basarak **F11** ikinci iç dizisi hata ayıklaması değil **yalnızca benim kodumu etkinleştir (sadece yönetilen)** seçeneği belirlenmez.  
-  
+>  Seçeneğini belirlediğinizden emin olun **yalnızca benim kodumu etkinleştir (sadece yönetilen)** gelen **Araçları**, **seçenekleri**, **hata ayıklama** , önce menüsü hata ayıklama. Başka bir dizi içinde iç içe iki diziyi varsa ve ilk iç dizisi üzerinde bir kesme noktası ayarlayın, tuşuna basarak **F11** ikinci iç dizisi hata ayıklaması değil <strong>yalnızca benim kodumu etkinleştir (sadece yönetilen)</strong>seçeneği belirlenmez.  
+> 
 > [!WARNING]
 >  XAML dosya özelliği tam yolu doğru değilse, bir iş akışında kesme noktaları ulaşırsınız değil. Proje/çözüm taşıdıktan sonra başka bir klasöre veya başka bir makineye özelliği XAML dosyasının tam yolu doğru değil. Kaydet ve tam yolunu özelliği güncelleştirmek için CTRL + S seçin.  
   

@@ -24,12 +24,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a41b7c66ff364febffb88c8d9a326b8cecdf6fd7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 11eeaa2c6742675372acf8b96280737f556c7799
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199608"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914144"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Yerelleştirme için Kaynakların Hiyerarşik Organizasyonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ Visual Studio'da yerelleştirilmiş kaynaklar (dizeler ve her bir kültür için
   
 ## <a name="kinds-of-resources-in-the-hierarchy"></a>Kaynak hiyerarşideki türleri  
   
--   Örneğin İngilizce ("tr"), varsayılan kültür için geri dönüş kaynak hiyerarşisinin en üstünde bulunur. Bunları kendi dosyalarına sahip olmayan tek kaynaklardır; Bunlar, ana derlemesinde depolanır.  
+- Örneğin İngilizce ("tr"), varsayılan kültür için geri dönüş kaynak hiyerarşisinin en üstünde bulunur. Bunları kendi dosyalarına sahip olmayan tek kaynaklardır; Bunlar, ana derlemesinde depolanır.  
   
--   Geri dönüş kaynakları nötr kültürler için kaynaklardır. Bağımsız kültür, bir dil ancak değil bir ülke/bölge ile ilişkilidir. Örneğin, Fransızca ("fr"), bağımsız kültür olur. (Geri dönüş kaynakları da bağımsız bir kültür, ancak bir özel olduğunu unutmayın.)  
+- Geri dönüş kaynakları nötr kültürler için kaynaklardır. Bağımsız kültür, bir dil ancak değil bir ülke/bölge ile ilişkilidir. Örneğin, Fransızca ("fr"), bağımsız kültür olur. (Geri dönüş kaynakları da bağımsız bir kültür, ancak bir özel olduğunu unutmayın.)  
   
--   Kaynaklarını belirli kültürler için olanlardır. Belirli bir kültür, bir dil ve ülke/bölge ile ilişkilidir. Örneğin, Kanada Fransızcası ("fr-CA") belirli bir kültür olur.  
+- Kaynaklarını belirli kültürler için olanlardır. Belirli bir kültür, bir dil ve ülke/bölge ile ilişkilidir. Örneğin, Kanada Fransızcası ("fr-CA") belirli bir kültür olur.  
   
- Bir uygulama gibi bir dize, yerelleştirilmiş tüm kaynak yüklemeye çalışır ve bunu bulamaz, istenen kaynak içeren bir kaynak dosyayı bulana kadar hiyerarşisinde yukarı taşınır.  
+  Bir uygulama gibi bir dize, yerelleştirilmiş tüm kaynak yüklemeye çalışır ve bunu bulamaz, istenen kaynak içeren bir kaynak dosyayı bulana kadar hiyerarşisinde yukarı taşınır.  
   
- Kaynaklarınızı depolamak için en iyi yolu bunları mümkün olduğunca generalize sağlamaktır. Bu, kaynak dosyalarında özel kültürler mümkün olduğunda yerine nötr kültürler için yerelleştirilmiş dizeler, görüntüler vb. depolamak anlamına gelir. Örneğin, Fransızca Belçika için kaynaklarınız varsa ("fr-olabilir") kültürü ve hemen yukarıdaki kaynakları geri dönüş kaynakları İngilizce, biri Fransızcası kültürü için yapılandırılmış bir sistemde, uygulamanızın kullandığında bir sorun meydana gelebilir. Sistem "fr-CA" için bir uydu derleme aramak değil bulmak ve İngilizce, Fransızca kaynakları yüklemek yerine geri dönüş kaynağı içeren ana derlemesi yüklenemiyor. Aşağıdaki resimde, bu istenmeyen bir senaryo gösterir.  
+  Kaynaklarınızı depolamak için en iyi yolu bunları mümkün olduğunca generalize sağlamaktır. Bu, kaynak dosyalarında özel kültürler mümkün olduğunda yerine nötr kültürler için yerelleştirilmiş dizeler, görüntüler vb. depolamak anlamına gelir. Örneğin, Fransızca Belçika için kaynaklarınız varsa ("fr-olabilir") kültürü ve hemen yukarıdaki kaynakları geri dönüş kaynakları İngilizce, biri Fransızcası kültürü için yapılandırılmış bir sistemde, uygulamanızın kullandığında bir sorun meydana gelebilir. Sistem "fr-CA" için bir uydu derleme aramak değil bulmak ve İngilizce, Fransızca kaynakları yüklemek yerine geri dönüş kaynağı içeren ana derlemesi yüklenemiyor. Aşağıdaki resimde, bu istenmeyen bir senaryo gösterir.  
   
- ![Yalnızca belirli kaynakları](../ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")  
+  ![Yalnızca belirli kaynakları](../ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")  
   
- Önerilen uygulama "fr" kültür için bir bağımsız kaynak dosyasında mümkün olduğunca fazla kaynak yerleştirme izlerseniz, Fransızca Kanada kullanıcı için işaretlenen kaynakları görmek "fr-olması" kültür, ancak kendisine getirirseniz dizeleri Fransızca. Aşağıdaki durum bu tercih edilen bir senaryo gösterir.  
+  Önerilen uygulama "fr" kültür için bir bağımsız kaynak dosyasında mümkün olduğunca fazla kaynak yerleştirme izlerseniz, Fransızca Kanada kullanıcı için işaretlenen kaynakları görmek "fr-olması" kültür, ancak kendisine getirirseniz dizeleri Fransızca. Aşağıdaki durum bu tercih edilen bir senaryo gösterir.  
   
- ![NeutralSpecificResources grafiği](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
+  ![NeutralSpecificResources grafiği](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yerelleştirme için bağımsız kaynak dilleri](../ide/neutral-resources-languages-for-localization.md)   

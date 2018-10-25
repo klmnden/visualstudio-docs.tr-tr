@@ -18,12 +18,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cf28035726f20aa715bfe12a48b1378edfacb673
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2650afc2172cdcceca892d4ad19a05becac3e472
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223229"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908962"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Nasıl yapılır: Etki Alanına Özgü Dil Çözümü Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,43 +43,43 @@ Bir etki alanına özgü dil (DSL) özelleştirilmiş kullanılarak oluşturulan
   
 #### <a name="to-create-a-domain-specific-language-solution"></a>Bir etki alanına özgü dil çözümü oluşturma  
   
-1.  DSL Sihirbazı'nı başlatın.  
+1. DSL Sihirbazı'nı başlatın.  
   
-    1.  Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
+   1. Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
   
-    2.  **Yeni proje** iletişim kutusu görüntülenir.  
+   2. **Yeni proje** iletişim kutusu görüntülenir.  
   
-    3.  Altında **proje türleri**, genişletme **diğer proje türleri** düğüm seçeneğine tıklayıp **genişletilebilirlik**.  
+   3. Altında **proje türleri**, genişletme **diğer proje türleri** düğüm seçeneğine tıklayıp **genişletilebilirlik**.  
   
-    4.  Tıklayın **etki alanına özgü dil tasarımcısını**.  
+   4. Tıklayın **etki alanına özgü dil tasarımcısını**.  
   
-    5.  İçinde **adı** çözüm için bir ad yazın. **Tamam**'ı tıklatın.  
+   5. İçinde **adı** çözüm için bir ad yazın. **Tamam**'ı tıklatın.  
   
-         **Etki alanına özgü dil Tasarımcısı Sihirbazı** görünür.  
+       **Etki alanına özgü dil Tasarımcısı Sihirbazı** görünür.  
   
-        > [!NOTE]
-        >  Tercihen, kodu oluşturmak için kullanılabilir olmadığından geçerli bir Visual C# tanımlayıcısı, yazdığınız ad olmalıdır.  
+      > [!NOTE]
+      >  Tercihen, kodu oluşturmak için kullanılabilir olmadığından geçerli bir Visual C# tanımlayıcısı, yazdığınız ad olmalıdır.  
   
-     ![DSL iletişim oluşturma](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
+      ![DSL iletişim oluşturma](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
-2.  Bir DSL şablonu seçin.  
+2. Bir DSL şablonu seçin.  
   
-     Üzerinde **etki alanına özgü dil seçenekleri** sayfasında, çözüm şablonları gibi birini **Minimal dil**. Oluşturmak istediğiniz DSL için benzer bir şablon seçin.  
+    Üzerinde **etki alanına özgü dil seçenekleri** sayfasında, çözüm şablonları gibi birini **Minimal dil**. Oluşturmak istediğiniz DSL için benzer bir şablon seçin.  
   
-     Çözüm şablonları hakkında daha fazla bilgi için bkz: [bir etki alanına özgü dil çözümü şablonu seçme](../modeling/choosing-a-domain-specific-language-solution-template.md).  
+    Çözüm şablonları hakkında daha fazla bilgi için bkz: [bir etki alanına özgü dil çözümü şablonu seçme](../modeling/choosing-a-domain-specific-language-solution-template.md).  
   
-3.  Bir dosya adı uzantısı girin **dosya uzantısı** sayfası. Bilgisayarınızın benzersiz olmalıdır ve DSL yüklemek istediğiniz tüm bilgisayarlara içinde. Şu iletiyi görürsünüz **bu uygulamaları ya da Visual Studio düzenleyicileri kullanın**.  
+3. Bir dosya adı uzantısı girin **dosya uzantısı** sayfası. Bilgisayarınızın benzersiz olmalıdır ve DSL yüklemek istediğiniz tüm bilgisayarlara içinde. Şu iletiyi görürsünüz **bu uygulamaları ya da Visual Studio düzenleyicileri kullanın**.  
   
-    -   Tam olarak yüklenmemiş önceki Deneysel DSL içinde dosya adı uzantısı'nı kullandıysanız, bunları dışarı kullanarak temizleyebilir **Deneysel örneğini sıfırlama** bulunabilir aracı [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK menüsü.  
+   -   Tam olarak yüklenmemiş önceki Deneysel DSL içinde dosya adı uzantısı'nı kullandıysanız, bunları dışarı kullanarak temizleyebilir **Deneysel örneğini sıfırlama** bulunabilir aracı [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK menüsü.  
   
-    -   Başka bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bu uzantıyı kullanan uzantısı tam olarak yüklü bilgisayarınızda, kaldırmayı göz önünde bulundurun. Üzerinde **Araçları** menüsünde tıklatın **Uzantı Yöneticisi**.  
+   -   Başka bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bu uzantıyı kullanan uzantısı tam olarak yüklü bilgisayarınızda, kaldırmayı göz önünde bulundurun. Üzerinde **Araçları** menüsünde tıklatın **Uzantı Yöneticisi**.  
   
-4.  İnceleyin ve gerekirse ayarlayın, sihirbazın kalan sayfalarında alanları. Seçimlerden memnun olduğunuzda tıklayın **son**. Ayarlar hakkında daha fazla bilgi için bkz. [DSL Tasarımcısı Sihirbazı sayfaları](#settings).  
+4. İnceleyin ve gerekirse ayarlayın, sihirbazın kalan sayfalarında alanları. Seçimlerden memnun olduğunuzda tıklayın **son**. Ayarlar hakkında daha fazla bilgi için bkz. [DSL Tasarımcısı Sihirbazı sayfaları](#settings).  
   
-     Sihirbaz, adlandırılmış iki proje içeren bir çözüm oluşturur. **Dsl** ve **DslPackage**.  
+    Sihirbaz, adlandırılmış iki proje içeren bir çözüm oluşturur. **Dsl** ve **DslPackage**.  
   
-    > [!NOTE]
-    >  Güvenilmeyen kaynaklardan metin şablonlarını çalıştırmak için değil uyaran bir ileti görürseniz **Tamam**. Bu ileti yeniden görünür değil ayarlayabilirsiniz.  
+   > [!NOTE]
+   >  Güvenilmeyen kaynaklardan metin şablonlarını çalıştırmak için değil uyaran bir ileti görürseniz **Tamam**. Bu ileti yeniden görünür değil ayarlayabilirsiniz.  
   
 ##  <a name="settings"></a> DSL Tasarımcısı Sihirbazı sayfaları  
  Bazı alanlar, varsayılan değerleri değiştirmeden bırakabilirsiniz. Ancak, dosya uzantısı alanın ayarlanmış emin olun.  

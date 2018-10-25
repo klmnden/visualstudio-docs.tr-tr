@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9daef780847da99463811a9c10399102dc7b808
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 67ff7d911ef0cdd3debd920ac85e9e3265a619e3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637438"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909964"
 ---
 # <a name="provide-a-language-service-context-by-using-the-legacy-api"></a>Eski API'yi kullanarak bir dil Hizmet bağlamı sağlar.
 Kullanıcı bağlamı kullanarak sağlamak için bir dil hizmeti için iki seçenek [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çekirdek Düzenleyicisi: metin işaretçisi bağlam sağlamak ya da tüm kullanıcı bağlamı sağlar. Her arasındaki farklar aşağıda özetlenmiştir.  
@@ -35,20 +35,20 @@ Kullanıcı bağlamı kullanarak sağlamak için bir dil hizmeti için iki seçe
   
  Uygulamak için iki farklı yolu vardır `IVsLanguageContextProvider`:  
   
--   İçerik Paketi için bir anahtar sağlar.  
+- İçerik Paketi için bir anahtar sağlar.  
   
-     Düzenleyici bağlam paketini güncelleştirmek için çağrıldığında uygun anahtar sözcüklere ve öznitelikleri geçirin ve ardından dönün `S_OK`. Bu dönüş değeri yerine anahtar sözcüğü ve öznitelik içeriğinizi korumak için İçerik Paketi için imlecin anahtar sözcüğü Düzenleyicisi söyler.  
+   Düzenleyici bağlam paketini güncelleştirmek için çağrıldığında uygun anahtar sözcüklere ve öznitelikleri geçirin ve ardından dönün `S_OK`. Bu dönüş değeri yerine anahtar sözcüğü ve öznitelik içeriğinizi korumak için İçerik Paketi için imlecin anahtar sözcüğü Düzenleyicisi söyler.  
   
--   İmlecin anahtar sözcüğü ile anahtar sözcüğü alın  
+- İmlecin anahtar sözcüğü ile anahtar sözcüğü alın  
   
-     Düzenleyici bağlam paketini güncelleştirmek için çağrıldığında, uygun öznitelikleri geçirin ve ardından dönün `E_FAIL`. Bu dönüş değeri, içerik paketi özniteliklerinizin korur, ancak içerik paketi imlecin anahtar sözcüğü ile güncelleştirme Düzenleyici söyler.  
+   Düzenleyici bağlam paketini güncelleştirmek için çağrıldığında, uygun öznitelikleri geçirin ve ardından dönün `E_FAIL`. Bu dönüş değeri, içerik paketi özniteliklerinizin korur, ancak içerik paketi imlecin anahtar sözcüğü ile güncelleştirme Düzenleyici söyler.  
   
- Aşağıdaki diyagramda bağlam uygulayan bir dil hizmeti için nasıl sağlandığını gösterir `IVsLanguageContextProvider`.  
+  Aşağıdaki diyagramda bağlam uygulayan bir dil hizmeti için nasıl sağlandığını gösterir `IVsLanguageContextProvider`.  
   
- ![LangServiceImplementation2 grafik](../extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
-Bağlam için bir dil hizmeti  
+  ![LangServiceImplementation2 grafik](../extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
+  Bağlam için bir dil hizmeti  
   
- Diyagramda görüldüğü gibi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] temel metin düzenleyicisi iliştirilmiş bir içerik paketi vardır. Bu içerik paketi için üç ayrı üzere paketleri işaret: dil hizmeti, varsayılan Düzenleyicisi ve metin işaretçisi. Dil hizmeti ve metin işaretçisi üzere paketleri, öznitelikleri ve dil hizmeti için anahtar sözcükler içeren <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> arabirimi uygulanır ve metin işaretçileri, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> arabirimi uygulanır. Ya da bu arabirimler uygulayamaz, düzenleyici varsayılan Düzenleyicisi üzere pakette imlecin anahtar sözcüğü için bağlam sağlar.  
+  Diyagramda görüldüğü gibi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] temel metin düzenleyicisi iliştirilmiş bir içerik paketi vardır. Bu içerik paketi için üç ayrı üzere paketleri işaret: dil hizmeti, varsayılan Düzenleyicisi ve metin işaretçisi. Dil hizmeti ve metin işaretçisi üzere paketleri, öznitelikleri ve dil hizmeti için anahtar sözcükler içeren <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> arabirimi uygulanır ve metin işaretçileri, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> arabirimi uygulanır. Ya da bu arabirimler uygulayamaz, düzenleyici varsayılan Düzenleyicisi üzere pakette imlecin anahtar sözcüğü için bağlam sağlar.  
   
 ## <a name="context-guidelines-for-editors-and-designers"></a>Düzenleyiciler ve tasarımcılar için bağlam yönergeleri  
  Tasarımcılar ve düzenleyiciler bir genel anahtar sözcük Düzenleyici veya tasarımcı penceresini sağlamanız gerekir. Bir kullanıcının bastığında genel, ancak uygun bir Yardım konusu için tasarımcı veya düzenleyicide görüntülenir, böylece bu yapılır **F1**. Bir düzenleyici gerekir Buna ek olarak, geçerli anahtar sözcüğü imlecin sağlayın veya geçerli seçime dayanan bir anahtar terimi sağlayın. Bu metin veya kullanıcı Arabirimi öğesi için bir Yardım konusu işaret veya kullanıcının bastığında görüntüler seçili emin olmak için gerçekleştirilir **F1**. Bir tasarımcı, bir düğme gibi bir tasarımcıdan seçili bir öğe için bağlam sağlar. Düzenleyiciler ve tasarımcılar de bağlanması için bir dil hizmeti açıklandığı şekilde [eski dil hizmeti temel bileşenleri](../extensibility/internals/legacy-language-service-essentials.md).

@@ -33,12 +33,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9bdff85f80999d312a6c09c0c92e39fedfa37439
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d110056488b7555bc7bbccc5cbad3205d9de7405
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173621"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901651"
 ---
 # <a name="viewing-the-structure-of-code"></a>Kod Yapısını Görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,23 +145,23 @@ Nesneleri ve üyeleri Visual Studio projelerinde ve nesneleri ve üyeleri .NET F
   
  Görüntülemek istediğiniz filtreleyebilirsiniz **Nesne Tarayıcısı**. Pencerenin en üstündeki açılan listeyi kullanarak, aşağıdaki seçenekleri arasından seçim yapabilirsiniz:  
   
--   Herhangi bir .NET Framework  
+- Herhangi bir .NET Framework  
   
--   Silverlight  
+- Silverlight  
   
--   Etkin çözüm  
+- Etkin çözüm  
   
--   Özel bir bileşenler kümesi  
+- Özel bir bileşenler kümesi  
   
- Özel bileşenler, yönetilen kod yürütülebilir dosyaları, Kütüphane derlemelerini, tür kitaplıkları ve .ocx dosya dahil edebilirsiniz. C++ özel bileşenler eklemek mümkün değildir. Özel ayarlar, Visual Studio kullanıcı uygulama dizininde, % APPDATA%\Roaming\Microsoft\VisualStudio\11.0\ObjBrowEX.dat kaydedilir.  
+  Özel bileşenler, yönetilen kod yürütülebilir dosyaları, Kütüphane derlemelerini, tür kitaplıkları ve .ocx dosya dahil edebilirsiniz. C++ özel bileşenler eklemek mümkün değildir. Özel ayarlar, Visual Studio kullanıcı uygulama dizininde, % APPDATA%\Roaming\Microsoft\VisualStudio\11.0\ObjBrowEX.dat kaydedilir.  
   
- Sol bölmesinde **Nesne Tarayıcısı** .NET Framework ve COM bileşenleri gibi fiziksel kapsayıcılar gösterir. İçerdikleri ad alanlarını görüntülemek için kapsayıcı düğümlerini genişletin ve ardından içerdikleri türleri görüntülenecek ad alanları genişletin. Üyeleri (örneğin, özellikleri ve yöntemleri), bir türünü seçtiğinizde, sağ bölmede listelenir. Alt sağ bölmesinde seçtiğiniz öğe hakkındaki ayrıntılı bilgileri görüntüler.  
+  Sol bölmesinde **Nesne Tarayıcısı** .NET Framework ve COM bileşenleri gibi fiziksel kapsayıcılar gösterir. İçerdikleri ad alanlarını görüntülemek için kapsayıcı düğümlerini genişletin ve ardından içerdikleri türleri görüntülenecek ad alanları genişletin. Üyeleri (örneğin, özellikleri ve yöntemleri), bir türünü seçtiğinizde, sağ bölmede listelenir. Alt sağ bölmesinde seçtiğiniz öğe hakkındaki ayrıntılı bilgileri görüntüler.  
   
- Kullanarak belirli bir öğe için arama yapabilirsiniz **arama** pencerenin üst kısmındaki kutusu. Aramalar büyük/küçük harfe duyarsızdır. Arama sonuçları, sol bölmede görüntülenir. Aramayı temizlemek için seçin **Aramayı Temizle** (X) düğmesini yanındaki **arama** kutusu.  
+  Kullanarak belirli bir öğe için arama yapabilirsiniz **arama** pencerenin üst kısmındaki kutusu. Aramalar büyük/küçük harfe duyarsızdır. Arama sonuçları, sol bölmede görüntülenir. Aramayı temizlemek için seçin **Aramayı Temizle** (X) düğmesini yanındaki **arama** kutusu.  
   
- **Nesne Tarayıcısı** yaptığınız seçimleri izini ve gidebilirsiniz seçimlerinizi arasında kullanarak **İleri** ve **geri** araç çubuğundaki düğmeler.  
+  **Nesne Tarayıcısı** yaptığınız seçimleri izini ve gidebilirsiniz seçimlerinizi arasında kullanarak **İleri** ve **geri** araç çubuğundaki düğmeler.  
   
- Kullanabileceğiniz **Nesne Tarayıcısı** (derleme, ad alanı, tür veya üye) bir öğe ve seçerek bir açık çözüme bir bütünleştirilmiş kod başvurusu eklemek için **Başvuru Ekle** araç çubuğunda.  
+  Kullanabileceğiniz **Nesne Tarayıcısı** (derleme, ad alanı, tür veya üye) bir öğe ve seçerek bir açık çözüme bir bütünleştirilmiş kod başvurusu eklemek için **Başvuru Ekle** araç çubuğunda.  
   
 ### <a name="object-browser-settings"></a>Nesne Tarayıcısı ayarları  
  Kullanarak **nesne tarayıcısı ayarları** düğme araç çubuğunda, aşağıdaki görünümlerden birini belirtebilirsiniz.  

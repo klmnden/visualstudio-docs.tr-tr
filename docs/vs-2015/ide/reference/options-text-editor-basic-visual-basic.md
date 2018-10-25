@@ -23,12 +23,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f49a6f55cdccc82214c20c4b489d83bbd0199d8a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb8856f250810988b73058562402c8d1fe8c644f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227844"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902483"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>Seçenekler, Metin Düzenleyici, Temel (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,28 +42,28 @@ ms.locfileid: "49227844"
  **Kodu düzgün listeleme (yeniden biçimlendirme)**  
  Metin düzenleyici, uygun şekilde kodunuzu yeniden biçimlendirir. Bu seçenek belirlendiğinde, Kod Düzenleyici olur:  
   
--   Kodunuz doğru sekme konumuna Hizala  
+- Kodunuz doğru sekme konumuna Hizala  
   
--   Anahtar sözcükler, değişkenler ve doğru çalışması için nesneler recase  
+- Anahtar sözcükler, değişkenler ve doğru çalışması için nesneler recase  
   
--   Eksik ekleme `Then` için bir `If...Then` deyimi  
+- Eksik ekleme `Then` için bir `If...Then` deyimi  
   
--   İşlev çağrıları için parantez ekleyin  
+- İşlev çağrıları için parantez ekleyin  
   
--   Bitiş tırnak işaretleri eksik dizelere ekleme  
+- Bitiş tırnak işaretleri eksik dizelere ekleme  
   
--   Üstel gösterim yeniden biçimlendirin  
+- Üstel gösterim yeniden biçimlendirin  
   
--   Tarihleri yeniden biçimlendirin  
+- Tarihleri yeniden biçimlendirin  
   
- **Anahat oluşturma modunu etkinleştir**  
- Kod Düzenleyicisi'nde bir dosyayı açtığınızda, belge anahat modunda görüntüleyebilirsiniz. Bkz: [anahat](../../ide/outlining.md) daha fazla bilgi için. Bu seçenek belirlendiğinde, bir dosyayı açtığınızda anahat oluşturma özelliği etkinleştirilir.  
+  **Anahat oluşturma modunu etkinleştir**  
+  Kod Düzenleyicisi'nde bir dosyayı açtığınızda, belge anahat modunda görüntüleyebilirsiniz. Bkz: [anahat](../../ide/outlining.md) daha fazla bilgi için. Bu seçenek belirlendiğinde, bir dosyayı açtığınızda anahat oluşturma özelliği etkinleştirilir.  
   
- **Interface ve MustOverride üyelerinin otomatik ekleme**  
- İşlerseniz bir `Implements` deyimi veya bir `Inherits` ifadesi için bir sınıf, metin düzenleyici ekler prototipleri uygulanan ya da geçersiz, sırasıyla sahip üyeler için.  
+  **Interface ve MustOverride üyelerinin otomatik ekleme**  
+  İşlerseniz bir `Implements` deyimi veya bir `Inherits` ifadesi için bir sınıf, metin düzenleyici ekler prototipleri uygulanan ya da geçersiz, sırasıyla sahip üyeler için.  
   
- **Yordam satır ayıraçlarını Göster**  
- Metin düzenleyici, yordamların görsel kapsamını belirtir. Bir çizgi, aşağıdaki tabloda listelenen konumlara projenizin .vb kaynak dosyalarında çizilir:  
+  **Yordam satır ayıraçlarını Göster**  
+  Metin düzenleyici, yordamların görsel kapsamını belirtir. Bir çizgi, aşağıdaki tabloda listelenen konumlara projenizin .vb kaynak dosyalarında çizilir:  
   
 |.Vb kaynak dosya konumu|Satır konumu örneği|  
 |---------------------------------|------------------------------|  

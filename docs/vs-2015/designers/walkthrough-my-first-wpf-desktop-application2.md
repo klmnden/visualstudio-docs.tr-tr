@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1b1ec46cf032928a090991577b83782e1fcfb513
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d8af02051774b744f9229e15a6184603c4d9f6b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289929"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899285"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>İzlenecek yol: İlk WPF Masaüstü Uygulamam
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -958,27 +958,27 @@ name = "Giriş" ></a> bu kılavuzda Windows Presentation Foundation (WPF) geliş
   
  WPF mimarisi ve programlama modelleri hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [WPF Mimarisi](https://msdn.microsoft.com/library/ms750441\(v=vs.100\).aspx)  
+- [WPF Mimarisi](https://msdn.microsoft.com/library/ms750441\(v=vs.100\).aspx)  
   
--   [XAML genel bakış](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)  
+- [XAML genel bakış](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)  
   
--   [Bağımlılık Özelliklerine Genel Bakış](https://msdn.microsoft.com/library/ms752914\(v=vs.100\).aspx)  
+- [Bağımlılık Özelliklerine Genel Bakış](https://msdn.microsoft.com/library/ms752914\(v=vs.100\).aspx)  
   
--   [Düzen sistemi](https://msdn.microsoft.com/library/ms745058\(v=vs.100\).aspx)  
+- [Düzen sistemi](https://msdn.microsoft.com/library/ms745058\(v=vs.100\).aspx)  
   
--   [Stiller ve Şablonlar](https://msdn.microsoft.com/library/bb613570\(v=vs.100\).aspx)  
+- [Stiller ve Şablonlar](https://msdn.microsoft.com/library/bb613570\(v=vs.100\).aspx)  
   
- Uygulamaları oluşturma hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
+  Uygulamaları oluşturma hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [Uygulaması geliştirmeye genel bakış](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)  
+- [Uygulaması geliştirmeye genel bakış](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)  
   
--   [Denetimlerine genel bakış](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)  
+- [Denetimlerine genel bakış](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)  
   
--   [Veri Bağlamaya Genel Bakış](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)  
+- [Veri Bağlamaya Genel Bakış](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)  
   
--   [WPF Grafik, animasyon ve medya genel bakış](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx)  
+- [WPF Grafik, animasyon ve medya genel bakış](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx)  
   
--   [WPF'deki Belgeler](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
+- [WPF'deki Belgeler](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: bir Azure mobil hizmetinize bağlanan bir WPF masaüstü uygulaması oluşturma](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   

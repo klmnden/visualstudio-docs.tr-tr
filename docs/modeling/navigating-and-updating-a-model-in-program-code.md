@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5bb0b27e57490f49dc677cffa553bc10201e5a47
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 930d7ededf4a54aaf75516c59001eaccf38c210c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511346"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896776"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Program Kodunda Modelde Gezinme ve Modeli Güncelleştirme
 
@@ -186,46 +186,46 @@ using (Transaction t =
 
  Bu örnekte, bir öğe oluşturma hakkında daha fazla şu önemli noktaları gösterilmektedir:
 
--   Store belirli bir bölüme yeni öğe oluşturun. Model öğeleri ve ilişkileri ancak olmayan şekiller için bu genellikle varsayılan bölümdür.
+- Store belirli bir bölüme yeni öğe oluşturun. Model öğeleri ve ilişkileri ancak olmayan şekiller için bu genellikle varsayılan bölümdür.
 
--   Gömme ilişkisi hedef kolaylaştırır. Bu örnekte DslDefinition içinde her kişi gömme ilişkisi FamilyTreeHasPeople hedef olmalıdır. Bunu başarmak için biz kişi nesnesinin FamilyTreeModel rolü özelliği ayarlamak veya FamilyTreeModel nesnesinin kişiler rol özelliğine kişiyi ekler.
+- Gömme ilişkisi hedef kolaylaştırır. Bu örnekte DslDefinition içinde her kişi gömme ilişkisi FamilyTreeHasPeople hedef olmalıdır. Bunu başarmak için biz kişi nesnesinin FamilyTreeModel rolü özelliği ayarlamak veya FamilyTreeModel nesnesinin kişiler rol özelliğine kişiyi ekler.
 
--   Özellikle özelliği olan yeni bir öğe özelliklerini ayarlayın `IsName` DslDefinition geçerlidir. Bu bayrak, öğe sahibi içinde benzersiz şekilde tanımlamak için hizmet veren özelliği işaretler. Bu durumda, Name özelliği bu bayrağı vardır.
+- Özellikle özelliği olan yeni bir öğe özelliklerini ayarlayın `IsName` DslDefinition geçerlidir. Bu bayrak, öğe sahibi içinde benzersiz şekilde tanımlamak için hizmet veren özelliği işaretler. Bu durumda, Name özelliği bu bayrağı vardır.
 
--   Bu DSL DSL tanımını Store yüklenmiş olmalıdır. Bir menü komutu gibi bir uzantı yazıyorsanız, bu genellikle önceden true olması gerekir. Diğer durumlarda, bunu açıkça modeli Store yüklemek, veya kullanabilirsiniz <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> yüklemek için. Daha fazla bilgi için [nasıl yapılır: Program kodunda dosyadan Model açma](../modeling/how-to-open-a-model-from-file-in-program-code.md).
+- Bu DSL DSL tanımını Store yüklenmiş olmalıdır. Bir menü komutu gibi bir uzantı yazıyorsanız, bu genellikle önceden true olması gerekir. Diğer durumlarda, bunu açıkça modeli Store yüklemek, veya kullanabilirsiniz <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> yüklemek için. Daha fazla bilgi için [nasıl yapılır: Program kodunda dosyadan Model açma](../modeling/how-to-open-a-model-from-file-in-program-code.md).
 
- Bu şekilde bir öğe oluşturduğunuzda, bir şekil (DSL diyagram varsa) otomatik olarak oluşturulur. Varsayılan şekli, rengi ve diğer özellikleri otomatik olarak atanmış bir konumda görüntülenir. Nerede ve nasıl ilişkili şekli görünür denetlemek istiyorsanız bkz [bir öğe ve şeklini oluşturma](#merge).
+  Bu şekilde bir öğe oluşturduğunuzda, bir şekil (DSL diyagram varsa) otomatik olarak oluşturulur. Varsayılan şekli, rengi ve diğer özellikleri otomatik olarak atanmış bir konumda görüntülenir. Nerede ve nasıl ilişkili şekli görünür denetlemek istiyorsanız bkz [bir öğe ve şeklini oluşturma](#merge).
 
 ##  <a name="links"></a> İlişki bağlantılar oluşturma
  DSL tanımını örnekte tanımlanan iki ilişkisi vardır. Her ilişkiyi tanımlayan bir *rolü özelliği* sınıfındaki ilişkinin her iki ucunda.
 
  Bir ilişkinin örneğini oluşturabileceğiniz üç yolu vardır. Bu üç yöntemlerin her biri aynı etkiye sahiptir:
 
--   Kaynak rol oyuncusu özelliğini ayarlayın. Örneğin:
+- Kaynak rol oyuncusu özelliğini ayarlayın. Örneğin:
 
-    -   `familyTree.People.Add(edward);`
+  -   `familyTree.People.Add(edward);`
 
-    -   `edward.Parents.Add(henry);`
+  -   `edward.Parents.Add(henry);`
 
--   Hedef rol oyuncusu özelliğini ayarlayın. Örneğin:
+- Hedef rol oyuncusu özelliğini ayarlayın. Örneğin:
 
-    -   `edward.familyTreeModel = familyTree;`
+  -   `edward.familyTreeModel = familyTree;`
 
-         Bu rolün çokluğu olan `1..1`, biz değerini atayın.
+       Bu rolün çokluğu olan `1..1`, biz değerini atayın.
 
-    -   `henry.Children.Add(edward);`
+  -   `henry.Children.Add(edward);`
 
-         Bu rolün çokluğu olan `0..*`, koleksiyona ekleriz.
+       Bu rolün çokluğu olan `0..*`, koleksiyona ekleriz.
 
--   Bir ilişkinin örneğini açıkça oluşturur. Örneğin:
+- Bir ilişkinin örneğini açıkça oluşturur. Örneğin:
 
-    -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
+  -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
-    -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`
+  -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`
 
- Son yöntem, ilişki özellikleri ayarlamak istiyorsanız kullanışlıdır.
+  Son yöntem, ilişki özellikleri ayarlamak istiyorsanız kullanışlıdır.
 
- Bu şekilde bir öğe oluşturduğunuzda, diyagram bağlayıcıda otomatik olarak oluşturulur, ancak bir varsayılan şekli, rengi ve diğer özellikleri vardır. İlişkili bağlayıcısının nasıl oluşturulacağını denetlemek için bkz: [bir öğe ve şeklini oluşturma](#merge).
+  Bu şekilde bir öğe oluşturduğunuzda, diyagram bağlayıcıda otomatik olarak oluşturulur, ancak bir varsayılan şekli, rengi ve diğer özellikleri vardır. İlişkili bağlayıcısının nasıl oluşturulacağını denetlemek için bkz: [bir öğe ve şeklini oluşturma](#merge).
 
 ##  <a name="deleteelements"></a> Öğeleri silme
  Çağırarak öğeyi Sil `Delete()`:
@@ -234,21 +234,21 @@ using (Transaction t =
 
  Bu işlem ayrıca silecek:
 
--   Bağlantılar öğesinden ilişki. Örneğin, `edward.Parents` artık içerecek `henry`.
+- Bağlantılar öğesinden ilişki. Örneğin, `edward.Parents` artık içerecek `henry`.
 
--   Rollerin öğeler `PropagatesDelete` bayrağı doğrudur. Örneğin, öğeyi görüntüleyen şekli silinir.
+- Rollerin öğeler `PropagatesDelete` bayrağı doğrudur. Örneğin, öğeyi görüntüleyen şekli silinir.
 
- Varsayılan olarak, her bir gömme ilişkisi vardır `PropagatesDelete` hedef rolü true. Silme `henry` silmediği `familyTree`, ancak `familyTree.Delete()` tüm siler `Persons`. Daha fazla bilgi için [silme davranışını özelleştirme](../modeling/customizing-deletion-behavior.md).
+  Varsayılan olarak, her bir gömme ilişkisi vardır `PropagatesDelete` hedef rolü true. Silme `henry` silmediği `familyTree`, ancak `familyTree.Delete()` tüm siler `Persons`. Daha fazla bilgi için [silme davranışını özelleştirme](../modeling/customizing-deletion-behavior.md).
 
- Varsayılan olarak, `PropagatesDelete` başvuru ilişkileri rolleri için geçerli değildir.
+  Varsayılan olarak, `PropagatesDelete` başvuru ilişkileri rolleri için geçerli değildir.
 
- Bir nesne sildiğinizde belirli yayılmaları atlamak silme kuralları neden olabilir. Bu işlem için başka bir öğe değiştirerek, kullanışlıdır. Siz kendisi için silme yayılmayacak bir veya daha fazla rol GUID'sini sağlayın. GUID ilişki sınıfı alınabilir:
+  Bir nesne sildiğinizde belirli yayılmaları atlamak silme kuralları neden olabilir. Bu işlem için başka bir öğe değiştirerek, kullanışlıdır. Siz kendisi için silme yayılmayacak bir veya daha fazla rol GUID'sini sağlayın. GUID ilişki sınıfı alınabilir:
 
- `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
+  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
 
- (Söz konusu örnekte hiçbir etkisi yoktur, çünkü `PropagatesDelete` olduğu `false` rolleri için `ParentsHaveChildren` ilişki.)
+  (Söz konusu örnekte hiçbir etkisi yoktur, çünkü `PropagatesDelete` olduğu `false` rolleri için `ParentsHaveChildren` ilişki.)
 
- Bazı durumlarda, silme, öğe veya yayma tarafından silinmiş bir öğe üzerinde bir kilit varlığı tarafından engellenir. Kullanabileceğiniz `element.CanDelete()` öğe silinmiş olup olmadığını denetlemek için.
+  Bazı durumlarda, silme, öğe veya yayma tarafından silinmiş bir öğe üzerinde bir kilit varlığı tarafından engellenir. Kullanabileceğiniz `element.CanDelete()` öğe silinmiş olup olmadığını denetlemek için.
 
 ##  <a name="deletelinks"></a> İlişki bağlantıları siliniyor
  Bir öğenin bir rol özelliği kaldırarak bir ilişki bağlantı silebilirsiniz:
@@ -325,7 +325,7 @@ using (Transaction t = targetDiagram.Store.
  DSL Tanımınızda, belirttiğiniz her bir öğe aşağıdaki standart sınıflarının birinden türetilmiş bir sınıf oluşturur.
 
 |Öğe türü|Temel sınıf|
-|---------------------|----------------|
+|-|-|
 |Etki alanı sınıfı|<xref:Microsoft.VisualStudio.Modeling.ModelElement>|
 |Etki alanı ilişkisi|<xref:Microsoft.VisualStudio.Modeling.ElementLink>|
 |Şekil|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|
@@ -468,7 +468,6 @@ partial class MyDiagram
     }
   }
 }
-
 ```
 
  Birden fazla şekil sağlarsanız, göreli konumlarını kullanarak ayarlayın `AbsoluteBounds`.

@@ -13,12 +13,12 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 93d08695a891aeda0d4f153fa2f3e6738d647b27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1de284c8d4fdfe5cb84a474641b880590c2094aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200024"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895333"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes'te kod oluşturma, derleme ve adlandırma kuralları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ Bu konu Fakes kod oluşturma ve derleme seçeneklerini ve sorunlarını açıkla
 ##  <a name="BKMK_In_this_topic"></a> Bu konudaki  
  [Kod oluşturma ve derleme](#BKMK_Code_generation_and_compilation)  
   
--   [Koçanların kod oluşturma yapılandırma](#BKMK_Configuring_code_generation_of_stubs) • [tür filtreleme](#BKMK_Type_filtering) • [somut sınıflar ve sanal yöntemleri Koçan yapma](#BKMK_Stubbing_concrete_classes_and_virtual_methods) • [iç türleri](#BKMK_Internal_types) • [ Derleme sürelerini en iyi duruma getirme](#BKMK_Optimizing_build_times) • [derleme adı Çarpışmasından](#BKMK_Avoiding_assembly_name_clashing)  
+- [Koçanların kod oluşturma yapılandırma](#BKMK_Configuring_code_generation_of_stubs) • [tür filtreleme](#BKMK_Type_filtering) • [somut sınıflar ve sanal yöntemleri Koçan yapma](#BKMK_Stubbing_concrete_classes_and_virtual_methods) • [iç türleri](#BKMK_Internal_types) • [ Derleme sürelerini en iyi duruma getirme](#BKMK_Optimizing_build_times) • [derleme adı Çarpışmasından](#BKMK_Avoiding_assembly_name_clashing)  
   
- [Fakes adlandırma kuralları](#BKMK_Fakes_naming_conventions)  
+  [Fakes adlandırma kuralları](#BKMK_Fakes_naming_conventions)  
   
--   [Dolgu ve Koçan türleri adlandırma kuralları yazın](#BKMK_Shim_type_and_stub_type_naming_conventions) • [Shim temsilci özelliği veya stub temsilci alanı adlandırma kuralları](#BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions) • [parametre türü adlandırma kuralları](#BKMK_Parameter_type_naming_conventions) • [özyinelemeli kuralları](#BKMK_Recursive_rules)  
+- [Dolgu ve Koçan türleri adlandırma kuralları yazın](#BKMK_Shim_type_and_stub_type_naming_conventions) • [Shim temsilci özelliği veya stub temsilci alanı adlandırma kuralları](#BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions) • [parametre türü adlandırma kuralları](#BKMK_Parameter_type_naming_conventions) • [özyinelemeli kuralları](#BKMK_Recursive_rules)  
   
- [Dış Kaynaklar](#BKMK_External_resources)  
+  [Dış Kaynaklar](#BKMK_External_resources)  
   
--   [Kılavuz](#BKMK_Guidance)  
+- [Kılavuz](#BKMK_Guidance)  
   
 ##  <a name="BKMK_Code_generation_and_compilation"></a> Kod oluşturma ve derleme  
   
@@ -127,21 +127,21 @@ Bu konu Fakes kod oluşturma ve derleme seçeneklerini ve sorunlarını açıkla
   
  Shimmed derleme kesin şekilde adlandırıldığında ve derlemenin iç türlerine erişmek isterseniz:  
   
--   Hem test derlemeniz hem de Fakes derlemeniz kesin adlandırılmış olmalıdır.  
+- Hem test derlemeniz hem de Fakes derlemeniz kesin adlandırılmış olmalıdır.  
   
--   Test ve Fakes derlemesinin ortak anahtarlarını eklemelisiniz **Internalsvisibletoattribute** shimmed derlemelerdeki öznitelikleri. Shimmed derleme kesin şekilde adlandırıldığında dolgu kullanılan derleme koduna bizim örnek öznitelikleri nasıl görüneceğini aşağıda verilmiştir:  
+- Test ve Fakes derlemesinin ortak anahtarlarını eklemelisiniz **Internalsvisibletoattribute** shimmed derlemelerdeki öznitelikleri. Shimmed derleme kesin şekilde adlandırıldığında dolgu kullanılan derleme koduna bizim örnek öznitelikleri nasıl görüneceğini aşağıda verilmiştir:  
   
-    ```csharp  
-    // FileSystem\AssemblyInfo.cs  
-    [assembly: InternalsVisibleTo("FileSystem.Fakes",  
-        PublicKey=<Fakes_assembly_public_key>)]  
-    [assembly: InternalsVisibleTo("FileSystem.Tests",  
-        PublicKey=<Test_assembly_public_key>)]  
-    ```  
+  ```csharp  
+  // FileSystem\AssemblyInfo.cs  
+  [assembly: InternalsVisibleTo("FileSystem.Fakes",  
+      PublicKey=<Fakes_assembly_public_key>)]  
+  [assembly: InternalsVisibleTo("FileSystem.Tests",  
+      PublicKey=<Test_assembly_public_key>)]  
+  ```  
   
- Shimmed derleme güçlü adlandırılırsa Fakes framework otomatik olarak oluşturulan Fakes derlemeleri imzalar. Test derlemesi strong oturum gerekir. Bkz: [oluşturma ve kullanma tanımlayıcı adlandırılmış derlemeler](http://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
+  Shimmed derleme güçlü adlandırılırsa Fakes framework otomatik olarak oluşturulan Fakes derlemeleri imzalar. Test derlemesi strong oturum gerekir. Bkz: [oluşturma ve kullanma tanımlayıcı adlandırılmış derlemeler](http://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
   
- Fakes çerçevesi, bu kod parçacığı eklemek için bir başlangıç noktası olarak kullanabilmeniz için oluşturulan tüm derlemeleri imzalamak için aynı anahtarı kullanır. **InternalsVisibleTo** özniteliğini shimmed derleme kodunuza fakes derlemesi.  
+  Fakes çerçevesi, bu kod parçacığı eklemek için bir başlangıç noktası olarak kullanabilmeniz için oluşturulan tüm derlemeleri imzalamak için aynı anahtarı kullanır. **InternalsVisibleTo** özniteliğini shimmed derleme kodunuza fakes derlemesi.  
   
 ```csharp  
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]  
@@ -211,38 +211,38 @@ attribute of the Assembly element in the .fakes:
 ###  <a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a> Dolgu ve Koçan türleri adlandırma kuralları yazın  
  **Ad Alanları**  
   
--   . Fakes sonekini ad alanına eklenir.  
+- . Fakes sonekini ad alanına eklenir.  
   
-     Örneğin, `System.Fakes` ad alanı System ad alanının Shim/dolgu türlerini içerir.  
+   Örneğin, `System.Fakes` ad alanı System ad alanının Shim/dolgu türlerini içerir.  
   
--   Global.Fakes boş ad alanını dolgu türünü içerir.  
+- Global.Fakes boş ad alanını dolgu türünü içerir.  
   
- **Tür adları**  
+  **Tür adları**  
   
--   Dolgu/Shim öneki Dolgu türü adı yapılandırmak için tür adına eklenir.  
+- Dolgu/Shim öneki Dolgu türü adı yapılandırmak için tür adına eklenir.  
   
-     Örneğin, ShimExample Example türünün shim türüdür.  
+   Örneğin, ShimExample Example türünün shim türüdür.  
   
--   Stub öneki stub türü adı yapılandırmak için tür adına eklenir.  
+- Stub öneki stub türü adı yapılandırmak için tür adına eklenir.  
   
-     Örneğin, Stubıexample IExample türünün stub türüdür.  
+   Örneğin, Stubıexample IExample türünün stub türüdür.  
   
- **Tür argümanları ve iç içe tür yapıları**  
+  **Tür argümanları ve iç içe tür yapıları**  
   
--   Genel tür argümanları kopyalanır.  
+- Genel tür argümanları kopyalanır.  
   
--   İç içe tür yapıları shim türleri için kopyalanır.  
+- İç içe tür yapıları shim türleri için kopyalanır.  
   
 ###  <a name="BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions"></a> Adlandırma kuralları shim temsilci özelliği veya stub temsilci alanı  
  **Temel kurallar** alanının adlandırma, boş bir isimden başlama:  
   
--   Yöntem adı eklenir.  
+- Yöntem adı eklenir.  
   
--   Yöntem adı açık arabirim uygulaması ise noktalar kaldırılır.  
+- Yöntem adı açık arabirim uygulaması ise noktalar kaldırılır.  
   
--   Yöntem genelse, `Of` *n* nereden eklenir *n* genel yöntem bağımsız değişken sayısı.  
+- Yöntem genelse, `Of` *n* nereden eklenir *n* genel yöntem bağımsız değişken sayısı.  
   
- **Özel yöntem adları** gibi özellik alıcı veya ayarlayıcılar aşağıdaki tabloda açıklandığı gibi kabul edilir.  
+  **Özel yöntem adları** gibi özellik alıcı veya ayarlayıcılar aşağıdaki tabloda açıklandığı gibi kabul edilir.  
   
 |Yöntem ise...|Örnek|Yöntem adı eklenmiş|  
 |-------------------|-------------|--------------------------|  

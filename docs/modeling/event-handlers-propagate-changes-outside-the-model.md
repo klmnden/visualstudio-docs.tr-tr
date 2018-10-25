@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ab42f0a8b3dafebaf73c116e8ce3295d99ce6fdd
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 65ca1d8e1685ab52e84d4be97c6c691c1d2296c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859283"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910634"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Değişiklikleri Modelin Dışına Yayan Olay İşleyicileri
 
@@ -173,7 +173,7 @@ Bir olay yazarsanız, deponun güncelleştirir:
 Her olay türüne bir koleksiyon Store.EventManagerDirectory karşılık gelir. Ekleyip olay işleyicileri dilediğiniz zaman kaldırabilirsiniz, ancak belge yüklendiğinde bunları eklemek için normal.
 
 |`EventManagerDirectory` Özellik adı|Yürütülmesi|
-|-------------------------------------------|-------------------|
+|-|-|
 |ElementAdded|Etki alanı sınıfı, etki alanı ilişkisi, şekil, bağlayıcı veya diyagramı örneği oluşturulur.|
 |ElementDeleted|Bir model öğesini mağazanın öğesi dizinden kaldırılıp artık kaynak veya herhangi bir ilişki hedefi değil. Öğe gerçekten bellekten silinmez, ancak gelecekteki bir geri alma durumunda korunur.|
 |ElementEventsBegun|Bir dış işlem sonunda çağrılır.|
