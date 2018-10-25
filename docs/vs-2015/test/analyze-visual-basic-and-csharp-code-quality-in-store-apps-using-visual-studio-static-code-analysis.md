@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0b65e204f9af28eea59d45cdf8fd591bf7e2dabd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8bca7452b94aa8e65386c3d5ef77e9f36ab98df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306122"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828708"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio statik kod analizini kullanarak Store uygulamalarında Visual Basic ve C# kod kalitesini analiz etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,17 +49,17 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 ##  <a name="BKMK_Run"></a> Kod Analizi çalıştırma  
  Visual Studio çözümünüzü Kod Analizi çalıştırmak için:  
   
--   Üzerinde **derleme** menüsünde seçin **çözüm üzerinde kod analizini Çalıştır**.  
+- Üzerinde **derleme** menüsünde seçin **çözüm üzerinde kod analizini Çalıştır**.  
   
- Kod analizinin her zaman otomatik olarak çalıştırmak için bir proje oluşturun:  
+  Kod analizinin her zaman otomatik olarak çalıştırmak için bir proje oluşturun:  
   
-1.  Çözüm Gezgini'nde proje adına sağ tıklayın ve ardından **özellikleri**.  
+1. Çözüm Gezgini'nde proje adına sağ tıklayın ve ardından **özellikleri**.  
   
-2.  Proje özellik sayfası seçin **Kod Analizi** seçip **etkinleştir (CODEANALYSIS sabitini tanımlar) derlemede kod analizini**.  
+2. Proje özellik sayfası seçin **Kod Analizi** seçip **etkinleştir (CODEANALYSIS sabitini tanımlar) derlemede kod analizini**.  
   
- Çözüm derlenir ve Kod Analizi çalıştırır. Sonuçları Kod Analizi penceresinde görünür.  
+   Çözüm derlenir ve Kod Analizi çalıştırır. Sonuçları Kod Analizi penceresinde görünür.  
   
- ![Kod Analizi penceresi](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")  
+   ![Kod Analizi penceresi](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")  
   
 ##  <a name="BKMK_Analyze"></a> Çözümleme ve kod çözümleme uyarıları çözümleme  
  Belirli bir uyarıyı çözümlemek için Kod Analizi penceresi uyarıda başlığını tıklatın. Sorun hakkında ayrıntılı bilgileri görüntülemek için uyarı genişletir.  
@@ -80,15 +80,15 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
  Bir uyarıyı bastırmak için:  
   
-1.  Ayrıntılı bilgi görüntülenmiyorsa genişletmek için uyarı başlığını tıklatın.  
+1. Ayrıntılı bilgi görüntülenmiyorsa genişletmek için uyarı başlığını tıklatın.  
   
-2.  Seçin **eylemleri** Uyarı alt kısmındaki bağlantı.  
+2. Seçin **eylemleri** Uyarı alt kısmındaki bağlantı.  
   
-3.  İşaret **ileti Gizle** seçin **içinde kaynak** veya **gizleme dosyası içinde**.  
+3. İşaret **ileti Gizle** seçin **içinde kaynak** veya **gizleme dosyası içinde**.  
   
-    -   **Kaynakta** ekler bir `SuppressMessage` uyarıyı oluşturan yöntem yukarıda kaynak dosyasındaki özniteliği. Bu gizleme daha bulunabilir hale getirir.  
+   - **Kaynakta** ekler bir `SuppressMessage` uyarıyı oluşturan yöntem yukarıda kaynak dosyasındaki özniteliği. Bu gizleme daha bulunabilir hale getirir.  
   
-    -   **Gizleme dosyasında** ekler bir `SuppressMessage` özniteliğini **GlobalSuppressions.cs** proje dosyası. Bu yönetim gizlemelerinin kolaylaştırabilir. Unutmayın `SuppressMessage` eklenen özniteliği **GlobalSuppression.cs** da hedefler, uyarıyı oluşturan yöntem. Uyarı engellemez genel.  
+   - **Gizleme dosyasında** ekler bir `SuppressMessage` özniteliğini **GlobalSuppressions.cs** proje dosyası. Bu yönetim gizlemelerinin kolaylaştırabilir. Unutmayın `SuppressMessage` eklenen özniteliği **GlobalSuppression.cs** da hedefler, uyarıyı oluşturan yöntem. Uyarı engellemez genel.  
   
      Kararınız uyarı gizleme dosyasında veya kaynak dosyadaki engellenip engellenmeyeceğini belirtir, kodlama stili ve gereksinimlerine bağlıdır.  
   

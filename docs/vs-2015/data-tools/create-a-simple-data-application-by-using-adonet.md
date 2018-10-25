@@ -17,12 +17,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a38d92aa43056b3824b4d583ccd93f255b1439f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4754cad05858ed48fd421301b4b0f1d2c569a926
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204316"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824288"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET kullanarak basit veri uygulaması oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,41 +52,41 @@ Bir veritabanındaki verileri işleyen bir uygulama oluşturduğunuzda, bu tür 
 ## <a name="prerequisites"></a>Önkoşullar  
  Uygulama oluşturmak için gerekir:  
   
--   Visual Studio Community sürümü.  
+- Visual Studio Community sürümü.  
   
--   SQL Server Express LocalDB.  
+- SQL Server Express LocalDB.  
   
--   İçindeki adımları izleyerek oluşturduğunuz küçük örnek veritabanı [bir komut dosyası kullanarak SQL veritabanı oluşturma](../data-tools/create-a-sql-database-by-using-a-script.md).  
+- İçindeki adımları izleyerek oluşturduğunuz küçük örnek veritabanı [bir komut dosyası kullanarak SQL veritabanı oluşturma](../data-tools/create-a-sql-database-by-using-a-script.md).  
   
--   Bunu ayarladıktan sonra veritabanı için bağlantı dizesi. Açarak bu değeri bulabilirsiniz **SQL Server Nesne Gezgini**, veritabanı için kısayol menüsünü açarak, seçerek **özellikleri**ve ardından kaydırmayı **ConnectionString** özelliği.  
+- Bunu ayarladıktan sonra veritabanı için bağlantı dizesi. Açarak bu değeri bulabilirsiniz **SQL Server Nesne Gezgini**, veritabanı için kısayol menüsünü açarak, seçerek **özellikleri**ve ardından kaydırmayı **ConnectionString** özelliği.  
   
- Bu konuda, Visual Studio IDE temel işlevsellikle biliyor ve bir Windows Forms uygulaması oluşturma, forms düğme ve diğer denetimleri formlarda, put, bu proje için bu denetimleri ve olay özelliklerini ayarlamak ekleyin, varsayılır . Bu görevler konusunda deneyimli değilseniz, tamamlamanızı öneririz [Visual C# ve Visual Basic ile çalışmaya başlama](../ide/getting-started-with-visual-csharp-and-visual-basic.md) bu konuya başlamadan önce.  
+  Bu konuda, Visual Studio IDE temel işlevsellikle biliyor ve bir Windows Forms uygulaması oluşturma, forms düğme ve diğer denetimleri formlarda, put, bu proje için bu denetimleri ve olay özelliklerini ayarlamak ekleyin, varsayılır . Bu görevler konusunda deneyimli değilseniz, tamamlamanızı öneririz [Visual C# ve Visual Basic ile çalışmaya başlama](../ide/getting-started-with-visual-csharp-and-visual-basic.md) bu konuya başlamadan önce.  
   
 ##  <a name="BKMK_setupthesampledatabase"></a> Örnek veritabanı kurma  
  Bu izlenecek yol için örnek veritabanı, müşteri ve sipariş tablolarından oluşur. Tabloları başlangıçta herhangi bir veri içermez, ancak oluşturacağınız uygulamayı çalıştırdığınızda veri eklersiniz. Veritabanının beş basit saklı yordamı de var. [Bir komut dosyası kullanarak SQL veritabanı oluşturma](../data-tools/create-a-sql-database-by-using-a-script.md) tabloları, birincil ve yabancı anahtarları, kısıtlamaları ve saklı yordamları oluşturan bir Transact-SQL betiği içerir.  
   
 ##  <a name="BKMK_createtheformsandaddcontrols"></a> Formlar oluşturun ve denetimler ekleme  
   
-1.  Bir Windows Forms uygulaması projesi oluşturun ve SimpleDataApp adlandırın.  
+1. Bir Windows Forms uygulaması projesi oluşturun ve SimpleDataApp adlandırın.  
   
-     Visual Studio projeyi ve Form1 adıyla boş bir Windows formu dahil olmak üzere birçok dosyayı oluşturur.  
+    Visual Studio projeyi ve Form1 adıyla boş bir Windows formu dahil olmak üzere birçok dosyayı oluşturur.  
   
-2.  Üç sahip olacak şekilde iki Windows formunu projenize ekleyin ve ardından bunları aşağıdaki adlar verin:  
+2. Üç sahip olacak şekilde iki Windows formunu projenize ekleyin ve ardından bunları aşağıdaki adlar verin:  
   
-    -   Gezinti  
+   -   Gezinti  
   
-    -   NewCustomer  
+   -   NewCustomer  
   
-    -   FillOrCancel  
+   -   FillOrCancel  
   
-3.  Her form için aşağıdaki resimlerde metin kutularını, düğmeleri ve görüntülenen diğer denetimleri ekleyin. Her denetim için tabloların açıkladığı özellikleri ayarlayın.  
+3. Her form için aşağıdaki resimlerde metin kutularını, düğmeleri ve görüntülenen diğer denetimleri ekleyin. Her denetim için tabloların açıkladığı özellikleri ayarlayın.  
   
-    > [!NOTE]
-    >  Grup kutusu ve etiket denetimleri netlik kazandırır ancak kodda kullanılmaz.  
+   > [!NOTE]
+   >  Grup kutusu ve etiket denetimleri netlik kazandırır ancak kodda kullanılmaz.  
   
- **Gezinti formu**  
+   **Gezinti formu**  
   
- ![Gezinti iletişim kutusu](../data-tools/media/simpleappnav.png "SimpleAppNav")  
+   ![Gezinti iletişim kutusu](../data-tools/media/simpleappnav.png "SimpleAppNav")  
   
 |Gezinti formu için denetimler|Özellikler|  
 |--------------------------------------|----------------|  

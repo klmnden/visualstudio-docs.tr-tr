@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 788f496f2afeb3b6392cb165d243a9d83f8ea005
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 1ed8ea2aa16ec9bddd626c08f1e45d502d402b57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151079"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823196"
 ---
 # <a name="change-the-value-of-a-local"></a>Yerel bir değiştirin
 > [!IMPORTANT]
@@ -29,21 +29,21 @@ ms.locfileid: "39151079"
   
  Bu yerel değerini değiştirme işlemine bir genel bakış.  
   
-1.  Kullanıcı yeni bir değer girdikten sonra Visual Studio çağırır [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) üzerinde [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) yerel ile ilişkili nesne.  
+1. Kullanıcı yeni bir değer girdikten sonra Visual Studio çağırır [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) üzerinde [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) yerel ile ilişkili nesne.  
   
-2.  `IDebugProperty2::SetValueAsString` Aşağıdaki görevleri gerçekleştirir:  
+2. `IDebugProperty2::SetValueAsString` Aşağıdaki görevleri gerçekleştirir:  
   
-    1.  Dize değeri üretmek için değerlendirir.  
+   1.  Dize değeri üretmek için değerlendirir.  
   
-    2.  İlişkili bağlar [IDebugField](../../extensibility/debugger/reference/idebugfield.md) nesne elde etmek için bir [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) nesne.  
+   2.  İlişkili bağlar [IDebugField](../../extensibility/debugger/reference/idebugfield.md) nesne elde etmek için bir [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) nesne.  
   
-    3.  Değer bir dizi bayt dönüştürür.  
+   3.  Değer bir dizi bayt dönüştürür.  
   
-    4.  Çağrıları [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) ayıklanan programa erişebilmesi için bu değerin bayt belleğe yerleştirmek için.  
+   4.  Çağrıları [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) ayıklanan programa erişebilmesi için bu değerin bayt belleğe yerleştirmek için.  
   
-3.  Visual Studio yeniler **Yereller** görüntüleme (bkz [görüntüleme Yereller](../../extensibility/debugger/displaying-locals.md) Ayrıntılar için).  
+3. Visual Studio yeniler **Yereller** görüntüleme (bkz [görüntüleme Yereller](../../extensibility/debugger/displaying-locals.md) Ayrıntılar için).  
   
- Bu yordam içinde bir değişken değerini değiştirmek için de kullanılır **Watch** bunun dışında penceresinde `IDebugProperty2` yerine kullanılan yerel değeriyle ilişkili nesne `IDebugProperty2` yerel ile ilişkili nesne kendisi.  
+   Bu yordam içinde bir değişken değerini değiştirmek için de kullanılır **Watch** bunun dışında penceresinde `IDebugProperty2` yerine kullanılan yerel değeriyle ilişkili nesne `IDebugProperty2` yerel ile ilişkili nesne kendisi.  
   
 ## <a name="in-this-section"></a>Bu bölümde  
  [Değer değiştirme örnek uygulaması](../../extensibility/debugger/sample-implementation-of-changing-values.md)  

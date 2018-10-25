@@ -16,12 +16,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3d704be00294f1b7b52e5a9bd4a01d0692bc5ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 07eeee3fa69407c17c20f55b7b8c0974bd4751b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255300"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829514"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Eski Dil Hizmeti Ayrıştırıcısı ve Tarayıcısı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,11 +63,11 @@ namespace MyNamespace
 ## <a name="types-of-parsers"></a>Çözümleyicileri türleri  
  Dil hizmeti ayrıştırıcısı bir derleyici bir parçası olarak kullanılan bir ayrıştırıcı ile aynı değil. Ancak, bu tür bir ayrıştırıcı bir tarayıcı hem bir ayrıştırıcı derleyici ayrıştırıcı olarak aynı şekilde kullanılmalıdır.  
   
--   Bir tarayıcı, belirteç türleri tanımlamak için kullanılır. Bu bilgiler, sözdizimi vurgulama ve Ayraç eşleştirme diğer işlemler, örneğin, tetikleyebilirsiniz belirteç türleri hızlı bir şekilde tanımlamak için kullanılır. Bu tarayıcı tarafından temsil edilen <xref:Microsoft.VisualStudio.Package.IScanner> arabirimi.  
+- Bir tarayıcı, belirteç türleri tanımlamak için kullanılır. Bu bilgiler, sözdizimi vurgulama ve Ayraç eşleştirme diğer işlemler, örneğin, tetikleyebilirsiniz belirteç türleri hızlı bir şekilde tanımlamak için kullanılır. Bu tarayıcı tarafından temsil edilen <xref:Microsoft.VisualStudio.Package.IScanner> arabirimi.  
   
--   Bir Ayrıştırıcı işlevler ve belirteçlerin kapsamı tanımlamak için kullanılır. Bu bilgiler, yöntemleri, değişkenleri, parametreleri ve bildirimler gibi Dil öğelerini tanımlamak ve üye ve yöntem imzalarına bağlamına dayalı bir listesini sağlamak üzere IntelliSense işlemlerinde kullanılır. Bu Çözümleyici, küme ayraçları ve parantezler gibi eşleşen dil öğesi çiftlerini bulmak için de kullanılır. Bu ayrıştırıcısı, aracılığıyla erişilir <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> yönteminde <xref:Microsoft.VisualStudio.Package.LanguageService> sınıfı.  
+- Bir Ayrıştırıcı işlevler ve belirteçlerin kapsamı tanımlamak için kullanılır. Bu bilgiler, yöntemleri, değişkenleri, parametreleri ve bildirimler gibi Dil öğelerini tanımlamak ve üye ve yöntem imzalarına bağlamına dayalı bir listesini sağlamak üzere IntelliSense işlemlerinde kullanılır. Bu Çözümleyici, küme ayraçları ve parantezler gibi eşleşen dil öğesi çiftlerini bulmak için de kullanılır. Bu ayrıştırıcısı, aracılığıyla erişilir <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> yönteminde <xref:Microsoft.VisualStudio.Package.LanguageService> sınıfı.  
   
- Tarayıcı ve ayrıştırıcı dil hizmetiniz için nasıl uygulayacağınıza size bağlıdır. Çeşitli kaynaklar kullanılabilir Çözümleyicileri nasıl çalıştığı ve nasıl kendi ayrıştırıcı yazılacağını açıklar. Ayrıca, bazı ücretsiz ve ticari ürünleri kullanılabilir Yardım bir ayrıştırıcı oluşturma.  
+  Tarayıcı ve ayrıştırıcı dil hizmetiniz için nasıl uygulayacağınıza size bağlıdır. Çeşitli kaynaklar kullanılabilir Çözümleyicileri nasıl çalıştığı ve nasıl kendi ayrıştırıcı yazılacağını açıklar. Ayrıca, bazı ücretsiz ve ticari ürünleri kullanılabilir Yardım bir ayrıştırıcı oluşturma.  
   
 ### <a name="the-parsesource-parser"></a>ParseSource ayrıştırıcı  
  (Burada belirteçleri yürütülebilir kod bazı biçimine dönüştürülür) bir derleyici bir parçası olarak kullanılan bir ayrıştırıcı, bir dil hizmeti ayrıştırıcısı birçok farklı nedenlerle ve birçok farklı bağlamlardaki volat pouze jednou. Bu yaklaşımda nasıl uygulayacağınıza <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> yönteminde <xref:Microsoft.VisualStudio.Package.LanguageService> sınıfı, size kalmıştır. Bunu göz önünde bulundurmanız önemlidir, <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> yöntemi bir arka plan iş parçacığında çağrıldı.  

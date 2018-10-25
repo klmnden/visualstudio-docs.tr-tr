@@ -13,12 +13,12 @@ ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96b4ded80d3c00c0f2c7a5c9037758f72907ea28
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8f792553e29a4b24d30a25dd835db0b96befcbd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215611"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824275"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>İzlenecek Yol: C# veya Visual Basic Kullanarak SDK Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,23 +138,23 @@ Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak ol
   
 ##  <a name="createSample"></a> Sınıf kitaplığı kullanan örnek bir uygulama oluşturmak için  
   
-1.  Menü çubuğunda, **dosya**, **yeni**, **yeni proje**.  
+1. Menü çubuğunda, **dosya**, **yeni**, **yeni proje**.  
   
-2.  Şablonlar listesinde genişletin **Visual C#** veya **Visual Basic**ve ardından **Windows Store** düğümü.  
+2. Şablonlar listesinde genişletin **Visual C#** veya **Visual Basic**ve ardından **Windows Store** düğümü.  
   
-3.  Seçin **boş uygulama** şablon, proje adı **ArithmeticUI**ve ardından **Tamam** düğmesi.  
+3. Seçin **boş uygulama** şablon, proje adı **ArithmeticUI**ve ardından **Tamam** düğmesi.  
   
-4.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **ArithmeticUI** proje ve ardından **Ekle**, **başvuru**.  
+4. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **ArithmeticUI** proje ve ardından **Ekle**, **başvuru**.  
   
-5.  Başvuru türlerinin listesinde, **Windows**ve ardından **uzantıları**.  
+5. Başvuru türlerinin listesinde, **Windows**ve ardından **uzantıları**.  
   
-6.  Ayrıntılar bölmesinde **basit matematik SDK** uzantısı.  
+6. Ayrıntılar bölmesinde **basit matematik SDK** uzantısı.  
   
-     SDK'nızı hakkında ek bilgiler görüntülenir. Seçebileceğiniz **daha fazla bilgi** açmak için bağlantıyı http://www.msdn.microsoft.com, bu kılavuzda daha önce açıklanan SDKManifest.xml dosyasında belirtildiği gibi.  
+    SDK'nızı hakkında ek bilgiler görüntülenir. Seçebileceğiniz **daha fazla bilgi** açmak için bağlantıyı http://www.msdn.microsoft.com, bu kılavuzda daha önce açıklanan SDKManifest.xml dosyasında belirtildiği gibi.  
   
-7.  İçinde **başvuru Yöneticisi** iletişim kutusunda **basit matematik SDK** onay kutusunu işaretleyin ve ardından **Tamam** düğmesi.  
+7. İçinde **başvuru Yöneticisi** iletişim kutusunda **basit matematik SDK** onay kutusunu işaretleyin ve ardından **Tamam** düğmesi.  
   
-8.  Menü çubuğunda, **görünümü**, **Nesne Tarayıcısı**.  
+8. Menü çubuğunda, **görünümü**, **Nesne Tarayıcısı**.  
   
 9. İçinde **Gözat** listesinde **basit matematik**.  
   
@@ -176,7 +176,7 @@ Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak ol
   
      Doğru sonucu görünür.  
   
- Başarıyla oluşturulan ve bir uzantı SDK'sı kullanılıyor.  
+    Başarıyla oluşturulan ve bir uzantı SDK'sı kullanılıyor.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: C++ kullanarak SDK oluşturma](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   

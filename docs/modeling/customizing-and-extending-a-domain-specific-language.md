@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ba8c37e4fd5e62a0f8d05d735fb991c86937698d
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: a49d9998aa319e66c22baa345864bc473f733c87
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859997"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816711"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Etki Alanına Özgü Dili Özelleştirme ve Genişletme
 Visual Studio modelleme ve görselleştirme SDK'sı (VMSDK) modelleme araçları tanımlamak birden fazla düzeyleri sağlar:
@@ -35,7 +35,7 @@ Visual Studio modelleme ve görselleştirme SDK'sı (VMSDK) modelleme araçları
 ## <a name="customShapes"></a> Bu bölümde
 
 |Bu etkiyi elde etmek için|Bu konuya bakın|
-|----------------------------|-------------------------|
+|-|-|
 |Şeklin rengi ve stil özelliklerini ayarlama izin verin.|Şekil veya bağlayıcının sınıfı sağ tıklatın, **ekleme kullanıma sunulan**ve bir öğeye tıklayın.<br /><br /> Bkz: [diyagramda sunuyu özelleştirme](../modeling/customizing-presentation-on-the-diagram.md).|
 |Model öğesinin farklı sınıflar diyagramda ilk yükseklik ve genişlik, renk, araç ipuçları gibi özellikleri paylaşımı benzer.|Şekilleri veya bağlayıcı sınıfları arasındaki devralma kullanın. Türetilmiş şekiller ve türetilmiş alan sınıfları arasındaki eşlemeleri üst eşleme ayrıntılarını alır.<br /><br /> Ya da farklı bir etki alanı sınıfları aynı şekli sınıfa eşleme.|
 |Model öğesinin bir sınıf tarafından bağlamları farklı şekiller görüntülenir.|Birden fazla şekil sınıfı için aynı etki alanı sınıfı eşleyin. Çözüm derlediğinizde, hata raporu izleyin ve kullanmak için nasıl bir şekil karar vermek için istenen kod sağlar.|

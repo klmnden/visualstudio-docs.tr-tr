@@ -15,23 +15,23 @@ ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15f0aeda589b101d9d02c9741eabf8b0e1866e4c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e7d103415869cc30f2c940b632c73f611986af2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273370"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811368"
 ---
 # <a name="using-the-settings-store"></a>Ayarlar Deposu Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ayarları depolar iki tür vardır:  
   
--   Salt okunur Visual Studio ve VSPackage ayarları yapılandırma ayarları. Visual Studio bu depoya tüm bilinen .pkgdef dosyalarından ayarları birleştirir.  
+- Salt okunur Visual Studio ve VSPackage ayarları yapılandırma ayarları. Visual Studio bu depoya tüm bilinen .pkgdef dosyalarından ayarları birleştirir.  
   
--   Yazılabilir ayarları sayfalarında görüntülenen olanlar gibi kullanıcı ayarlarını da **seçenekleri** iletişim kutusunda, özellik sayfaları ve belirli bir iletişim kutusu. Visual Studio uzantıları bunlar küçük miktarda verilerin yerel depolama için kullanabilir.  
+- Yazılabilir ayarları sayfalarında görüntülenen olanlar gibi kullanıcı ayarlarını da **seçenekleri** iletişim kutusunda, özellik sayfaları ve belirli bir iletişim kutusu. Visual Studio uzantıları bunlar küçük miktarda verilerin yerel depolama için kullanabilir.  
   
- Bu izlenecek yol, yapılandırma ayarı Mağazası'ndan veri okuma işlemi gösterilmektedir. Bkz: [yazmak için kullanıcı ayarları Store](../extensibility/writing-to-the-user-settings-store.md) için kullanıcı ayarları deposuna yazma bir açıklama.  
+  Bu izlenecek yol, yapılandırma ayarı Mağazası'ndan veri okuma işlemi gösterilmektedir. Bkz: [yazmak için kullanıcı ayarları Store](../extensibility/writing-to-the-user-settings-store.md) için kullanıcı ayarları deposuna yazma bir açıklama.  
   
 ## <a name="creating-the-example-project"></a>Örnek Proje oluşturma  
  Bu bölümde, Tanıtım amaçlı bir menü komutu ile bir basit uzantı projesi oluşturma işlemi gösterilmektedir.  
@@ -43,44 +43,44 @@ Ayarları depolar iki tür vardır:
 ## <a name="using-the-configuration-settings-store"></a>Yapılandırma ayarları Store kullanma  
  Bu bölümde, algılamak ve yapılandırma ayarlarını görüntülemek gösterilmektedir.  
   
-1.  SettingsStorageCommand.cs dosyasına aşağıdakileri ekleyin using deyimlerini:  
+1. SettingsStorageCommand.cs dosyasına aşağıdakileri ekleyin using deyimlerini:  
   
-    ```  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.Settings;  
-    using Microsoft.VisualStudio.Shell.Settings;  
-    using System.Windows.Forms;  
-    ```  
+   ```  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.Settings;  
+   using Microsoft.VisualStudio.Shell.Settings;  
+   using System.Windows.Forms;  
+   ```  
   
-2.  İçinde `MenuItemCallback`, yöntemin gövdesi kaldırın ve bu satırları Al yapılandırma ayarları deposu ekleyin:  
+2. İçinde `MenuItemCallback`, yöntemin gövdesi kaldırın ve bu satırları Al yapılandırma ayarları deposu ekleyin:  
   
-    ```  
-    SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
-    SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
-    ```  
+   ```  
+   SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
+   SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
+   ```  
   
-     <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager> Üzerinden yönetilen bir yardımcı sınıfıdır <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> hizmeti.  
+    <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager> Üzerinden yönetilen bir yardımcı sınıfıdır <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> hizmeti.  
   
-3.  Artık Windows Phone araçları yüklü olan çıkış bulun. Kod gibi görünmelidir:  
+3. Artık Windows Phone araçları yüklü olan çıkış bulun. Kod gibi görünmelidir:  
   
-    ```  
-    private void MenuItemCallback(object sender, EventArgs e)  
-    {  
-        SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
-        SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
-        bool arePhoneToolsInstalled = configurationSettingsStore.CollectionExists(@"InstalledProducts\Microsoft Windows Phone Developer Tools");  
-        string message = "Microsoft Windows Phone Developer Tools: " + arePhoneToolsInstalled;  
-        MessageBox.Show(message);  
-    }  
-    ```  
+   ```  
+   private void MenuItemCallback(object sender, EventArgs e)  
+   {  
+       SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
+       SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
+       bool arePhoneToolsInstalled = configurationSettingsStore.CollectionExists(@"InstalledProducts\Microsoft Windows Phone Developer Tools");  
+       string message = "Microsoft Windows Phone Developer Tools: " + arePhoneToolsInstalled;  
+       MessageBox.Show(message);  
+   }  
+   ```  
   
-4.  Kodu test edin. Projeyi oluşturmak ve hata ayıklamaya başlayın.  
+4. Kodu test edin. Projeyi oluşturmak ve hata ayıklamaya başlayın.  
   
-5.  Deneysel örneğinde üzerinde **Araçları** menüsünde tıklatın **çağırma SettingsStoreCommand**.  
+5. Deneysel örneğinde üzerinde **Araçları** menüsünde tıklatın **çağırma SettingsStoreCommand**.  
   
-     Kutusu iletisini görmeniz gerekir **Microsoft Windows Phone geliştirici araçları:** ardından **True** veya **False**.  
+    Kutusu iletisini görmeniz gerekir **Microsoft Windows Phone geliştirici araçları:** ardından **True** veya **False**.  
   
- Visual Studio ayarlar deposu, sistem kayıt defterinde tutar.  
+   Visual Studio ayarlar deposu, sistem kayıt defterinde tutar.  
   
 #### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Yapılandırma ayarlarını doğrulamak için bir kayıt defteri Düzenleyicisi'ni kullanmak için  
   

@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64a22cb00a90d9d5475fe89ff8c7fc800f23d86a
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: c37da890842711b941e61aadc23ed85d60672f3c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371153"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823768"
 ---
 # <a name="image-service-and-catalog"></a>Görüntü hizmeti ve kataloğu
 Bu kılavuzu, rehberlik ve en iyi uygulamalar Visual Studio Görüntü hizmeti ve görüntü Visual Studio 2015'te tanıtılan Kataloğu'nu benimseme içerir.  
@@ -32,46 +32,46 @@ Bu kılavuzu, rehberlik ve en iyi uygulamalar Visual Studio Görüntü hizmeti v
   
  Görüntü hizmeti neden benimseyin?  
   
--   Her zaman Visual Studio'dan en son "kusursuz kalitede" Görüntü Al  
+- Her zaman Visual Studio'dan en son "kusursuz kalitede" Görüntü Al  
   
--   Gönder ve kendi görüntülerinizi kullanın  
+- Gönder ve kendi görüntülerinizi kullanın  
   
--   Windows yeni DPI ölçeklendirme eklediğinde kullanıma görüntülerinizi test gerekmez.  
+- Windows yeni DPI ölçeklendirme eklediğinde kullanıma görüntülerinizi test gerekmez.  
   
--   Eski mimari bulutta, uygulamalarında adresi  
+- Eski mimari bulutta, uygulamalarında adresi  
   
- Visual Studio shell araç önce ve sonra görüntü hizmeti kullanarak:  
+  Visual Studio shell araç önce ve sonra görüntü hizmeti kullanarak:  
   
- ![Görüntü hizmeti önce ve sonra](../extensibility/media/image-service-before-and-after.png "önce ve sonra görüntü hizmeti")  
+  ![Görüntü hizmeti önce ve sonra](../extensibility/media/image-service-before-and-after.png "önce ve sonra görüntü hizmeti")  
   
 ## <a name="how-it-works"></a>Nasıl çalışır?
  Görüntü hizmeti, tüm desteklenen UI çerçevesi için uygun bir bit eşlemli görüntüsü belirtebilirsiniz:  
   
--   WPF: BitmapSource  
+- WPF: BitmapSource  
   
--   WinForms: System.Drawing.Bitmap  
+- WinForms: System.Drawing.Bitmap  
   
--   Win32: HBITMAP  
+- Win32: HBITMAP  
   
- Görüntü hizmeti Akış Diyagramı  
+  Görüntü hizmeti Akış Diyagramı  
   
- ![Görüntü hizmeti Akış Diyagramı](../extensibility/media/image-service-flow-diagram.png "Görüntü hizmeti Akış Diyagramı")  
+  ![Görüntü hizmeti Akış Diyagramı](../extensibility/media/image-service-flow-diagram.png "Görüntü hizmeti Akış Diyagramı")  
   
- **Görüntü bilinen adlar**  
+  **Görüntü bilinen adlar**  
   
- Bir resim bilinen adı (veya kısa için bilinen ad) bir resim varlığı veya Resim Kitaplığı'ndaki Görüntü listesi varlığı benzersiz olarak tanımlayan bir GUID/ID çiftidir.  
+  Bir resim bilinen adı (veya kısa için bilinen ad) bir resim varlığı veya Resim Kitaplığı'ndaki Görüntü listesi varlığı benzersiz olarak tanımlayan bir GUID/ID çiftidir.  
   
- **Bilinen adlar**  
+  **Bilinen adlar**  
   
- Visual Studio görüntü katalog ve tüketilebilir herkese açık şekilde herhangi bir Visual Studio bileşeni veya uzantısı tarafından bulunan bir resim bilinen adlar kümesi.  
+  Visual Studio görüntü katalog ve tüketilebilir herkese açık şekilde herhangi bir Visual Studio bileşeni veya uzantısı tarafından bulunan bir resim bilinen adlar kümesi.  
   
- **Görüntü bildirim dosyaları**  
+  **Görüntü bildirim dosyaları**  
   
- Görüntü bildirimi (*.imagemanifest*) dosyalarıdır, bu varlıkları ve gerçek görüntü veya her varlık temsil eden görüntüleri temsil eden bir takma ad, resim varlıkları tanımlamak XML dosyaları. Tek başına resimler görüntü bildirimleri tanımlayabilirsiniz veya eski kullanıcı Arabirimi desteği görüntü listeler. Ayrıca, varlık veya ayrı ayrı görüntülere her varlık arkasında ne zaman ve bu varlıkları nasıl görüntüleneceğini değiştirmek için ayarlanabilen öznitelikleri vardır.  
+  Görüntü bildirimi (*.imagemanifest*) dosyalarıdır, bu varlıkları ve gerçek görüntü veya her varlık temsil eden görüntüleri temsil eden bir takma ad, resim varlıkları tanımlamak XML dosyaları. Tek başına resimler görüntü bildirimleri tanımlayabilirsiniz veya eski kullanıcı Arabirimi desteği görüntü listeler. Ayrıca, varlık veya ayrı ayrı görüntülere her varlık arkasında ne zaman ve bu varlıkları nasıl görüntüleneceğini değiştirmek için ayarlanabilen öznitelikleri vardır.  
   
- **Görüntü bildirim şeması**  
+  **Görüntü bildirim şeması**  
   
- Tam görüntü bildiriminin şöyle görünür:  
+  Tam görüntü bildiriminin şöyle görünür:  
   
 ```xml  
 <ImageManifest>  
@@ -405,52 +405,52 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
   
  Bu araç penceresinde adlar kullanmak için anahtar yerlerdir. Her biri için yönergeleri izleyin:  
   
-1.  Sekmeleri yeterince geldiğinizde araç penceresi sekmesine (aynı zamanda kullanılan **Ctrl**+**sekmesini** pencere değiştirici).  
+1. Sekmeleri yeterince geldiğinizde araç penceresi sekmesine (aynı zamanda kullanılan **Ctrl**+**sekmesini** pencere değiştirici).  
   
-     Öğesinden türetilen sınıfın oluşturucusunda bu satırı ekleyin **ToolWindowPane** türü:  
+    Öğesinden türetilen sınıfın oluşturucusunda bu satırı ekleyin **ToolWindowPane** türü:  
   
-    ```csharp  
-    // Replace this KnownMoniker with your desired ImageMoniker  
-    this.BitmapImageMoniker = KnownMonikers.Blank;  
-    ```  
+   ```csharp  
+   // Replace this KnownMoniker with your desired ImageMoniker  
+   this.BitmapImageMoniker = KnownMonikers.Blank;  
+   ```  
   
-2.  Araç penceresini açmak için komutu.  
+2. Araç penceresini açmak için komutu.  
   
-     İçinde *.vsct* dosyasını paket için araç penceresinin komut düğmesi düzenleyin:  
+    İçinde *.vsct* dosyasını paket için araç penceresinin komut düğmesi düzenleyin:  
   
-    ```xml  
-    <Button guid="guidPackageCmdSet" id="CommandId" priority="0x0100" type="Button">  
-      <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
-      <!-- Replace this KnownMoniker with your desired ImageMoniker -->  
-      <Icon guid="ImageCatalogGuid" id="Blank" />  
-      <!-- Add this -->  
-      <CommandFlag>IconIsMoniker</CommandFlag>  
-      <Strings>  
-        <ButtonText>MyToolWindow</ButtonText>  
-      </Strings>  
-    </Button>  
-    ```  
+   ```xml  
+   <Button guid="guidPackageCmdSet" id="CommandId" priority="0x0100" type="Button">  
+     <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
+     <!-- Replace this KnownMoniker with your desired ImageMoniker -->  
+     <Icon guid="ImageCatalogGuid" id="Blank" />  
+     <!-- Add this -->  
+     <CommandFlag>IconIsMoniker</CommandFlag>  
+     <Strings>  
+       <ButtonText>MyToolWindow</ButtonText>  
+     </Strings>  
+   </Button>  
+   ```  
   
- **Görüntü bilinen adlar var olan bir araç penceresinde nasıl kullanabilirim?**  
+   **Görüntü bilinen adlar var olan bir araç penceresinde nasıl kullanabilirim?**  
   
- Görüntü bilinen adlar kullanmak için mevcut bir araç penceresi güncelleştirme yeni bir araç penceresi oluşturma adımlarını benzer.  
+   Görüntü bilinen adlar kullanmak için mevcut bir araç penceresi güncelleştirme yeni bir araç penceresi oluşturma adımlarını benzer.  
   
- Bu araç penceresinde adlar kullanmak için anahtar yerlerdir. Her biri için yönergeleri izleyin:  
+   Bu araç penceresinde adlar kullanmak için anahtar yerlerdir. Her biri için yönergeleri izleyin:  
   
-1.  Sekmeleri yeterince geldiğinizde araç penceresi sekmesine (aynı zamanda kullanılan **Ctrl**+**sekmesini** pencere değiştirici).  
+3. Sekmeleri yeterince geldiğinizde araç penceresi sekmesine (aynı zamanda kullanılan **Ctrl**+**sekmesini** pencere değiştirici).  
   
-    1.  (Varsa), türetilen sınıfın oluşturucusunda bu satırları kaldırmak **ToolWindowPane** türü:  
+   1.  (Varsa), türetilen sınıfın oluşturucusunda bu satırları kaldırmak **ToolWindowPane** türü:  
   
-        ```csharp  
-        this.BitmapResourceID = <Value>;  
-        this.BitmapIndex = <Value>;  
-        ```  
+       ```csharp  
+       this.BitmapResourceID = <Value>;  
+       this.BitmapIndex = <Value>;  
+       ```  
   
-    2.  #1. adım, bkz. "Nasıl kullanırım görüntü bilinen yeni bir araç penceresinde?" Yukarıdaki bölümde.  
+   2.  #1. adım, bkz. "Nasıl kullanırım görüntü bilinen yeni bir araç penceresinde?" Yukarıdaki bölümde.  
   
-2.  Araç penceresini açmak için komutu.  
+4. Araç penceresini açmak için komutu.  
   
-    -   #2. adım, bkz. "Nasıl kullanırım görüntü bilinen yeni bir araç penceresinde?" Yukarıdaki bölümde.  
+   -   #2. adım, bkz. "Nasıl kullanırım görüntü bilinen yeni bir araç penceresinde?" Yukarıdaki bölümde.  
   
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>Görüntü bilinen adlar .vsct dosyası içinde nasıl kullanabilirim?  
  Güncelleştirme, *.vsct* dosya aşağıdaki açıklama eklenen satırları tarafından belirtildiği şekilde:  
@@ -516,83 +516,83 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ## <a name="how-do-i-port-a-project-system"></a>Proje sistemi nasıl taşımalısınız?  
  **Bir proje için ImageMonikers sağlamak nasıl**  
   
-1.  Uygulama **VSHPROPID_SupportsIconMonikers** projenin **Ivshierarchy**ve true döndürür.  
+1. Uygulama **VSHPROPID_SupportsIconMonikers** projenin **Ivshierarchy**ve true döndürür.  
   
-2.  Ya da uygulama **VSHPROPID_IconMonikerImageList** (özgün proje kullandıysanız **VSHPROPID_IconImgList**) veya **VSHPROPID_IconMonikerGuid**,  **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (özgün proje kullandıysanız  **VSHPROPID_IconHandle** ve **VSHPROPID_OpenFolderIconHandle**).  
+2. Ya da uygulama **VSHPROPID_IconMonikerImageList** (özgün proje kullandıysanız **VSHPROPID_IconImgList**) veya **VSHPROPID_IconMonikerGuid**,  **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (özgün proje kullandıysanız  **VSHPROPID_IconHandle** ve **VSHPROPID_OpenFolderIconHandle**).  
   
-3.  Uzantı noktaları bunları istemesi durumunda simgeleri "eski" sürümlerini oluşturmak için simgeler için özgün VSHPROPIDs uygulamasını değiştirin. **IVsImageService2** simgeleri getirmek için gereken işlevleri sağlar  
+3. Uzantı noktaları bunları istemesi durumunda simgeleri "eski" sürümlerini oluşturmak için simgeler için özgün VSHPROPIDs uygulamasını değiştirin. **IVsImageService2** simgeleri getirmek için gereken işlevleri sağlar  
   
- **Ek gereksinimler vb / C# proje özellikleri**  
+   **Ek gereksinimler vb / C# proje özellikleri**  
   
- Yalnızca uygulama **VSHPROPID_SupportsIconMonikers** projenizin olduğunu tespit ederse **en dıştaki flavor**. Aksi takdirde, gerçekte görüntü bilinen adlar gerçek en dıştaki flavor desteklemeyebilir ve, temel özellik etkili bir şekilde "özelleştirilmiş görüntülerinizi gizlemek".  
+   Yalnızca uygulama **VSHPROPID_SupportsIconMonikers** projenizin olduğunu tespit ederse **en dıştaki flavor**. Aksi takdirde, gerçekte görüntü bilinen adlar gerçek en dıştaki flavor desteklemeyebilir ve, temel özellik etkili bir şekilde "özelleştirilmiş görüntülerinizi gizlemek".  
   
- **Görüntü bilinen adlar CPS'de nasıl kullanabilirim?**  
+   **Görüntü bilinen adlar CPS'de nasıl kullanabilirim?**  
   
- Özel görüntüleri (ortak proje sistemi) CPS'de ayarlama el ile veya Project sistem genişletilebilirliği SDK ile birlikte gelen öğe şablonu aracılığıyla yapılabilir.  
+   Özel görüntüleri (ortak proje sistemi) CPS'de ayarlama el ile veya Project sistem genişletilebilirliği SDK ile birlikte gelen öğe şablonu aracılığıyla yapılabilir.  
   
- **Project sistem genişletilebilirliği SDK'sını kullanma**  
+   **Project sistem genişletilebilirliği SDK'sını kullanma**  
   
- Konumundaki yönergeleri [proje türü/öğe türü için özel simgeler sağlayın](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md) CPS görüntülerinizi özelleştirmek için. CPS hakkında daha fazla bilgi şu adreste bulunabilir: [Visual Studio Proje sistemi genişletilebilirlik belgeleri](https://github.com/Microsoft/VSProjectSystem)  
+   Konumundaki yönergeleri [proje türü/öğe türü için özel simgeler sağlayın](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md) CPS görüntülerinizi özelleştirmek için. CPS hakkında daha fazla bilgi şu adreste bulunabilir: [Visual Studio Proje sistemi genişletilebilirlik belgeleri](https://github.com/Microsoft/VSProjectSystem)  
   
- **El ile ImageMonikers kullanın**  
+   **El ile ImageMonikers kullanın**  
   
-1.  Uygulama ve dışarı aktarma **IProjectTreeModifier** proje sisteminizde arabirimi.  
+4. Uygulama ve dışarı aktarma **IProjectTreeModifier** proje sisteminizde arabirimi.  
   
-2.  Belirleyen **KnownMoniker** veya kullanmak istediğiniz özel görüntü bilinen ad.  
+5. Belirleyen **KnownMoniker** veya kullanmak istediğiniz özel görüntü bilinen ad.  
   
-3.  İçinde **ApplyModifications** yöntemi aşağıdakileri benzer yeni ağaç döndürmeden önce herhangi bir yöntem aşağıdaki örnekteki:  
+6. İçinde **ApplyModifications** yöntemi aşağıdakileri benzer yeni ağaç döndürmeden önce herhangi bir yöntem aşağıdaki örnekteki:  
   
-    ```csharp  
-    // Replace this KnownMoniker with your desired ImageMoniker  
-    tree = tree.SetIcon(KnownMonikers.Blank.ToProjectSystemType());  
-    ```  
+   ```csharp  
+   // Replace this KnownMoniker with your desired ImageMoniker  
+   tree = tree.SetIcon(KnownMonikers.Blank.ToProjectSystemType());  
+   ```  
   
-4.  Yeni bir ağaç oluşturuyorsanız, benzer NewTree yöntemi içinde istenen adlar geçirerek özel görüntüleri ayarlayabilirsiniz aşağıdaki örnekteki:  
+7. Yeni bir ağaç oluşturuyorsanız, benzer NewTree yöntemi içinde istenen adlar geçirerek özel görüntüleri ayarlayabilirsiniz aşağıdaki örnekteki:  
   
-    ```csharp  
-    // Replace this KnownMoniker with your desired ImageMoniker  
-    ProjectImageMoniker icon         = KnownMonikers.FolderClosed.ToProjectSystemType();  
-    ProjectImageMoniker expandedIcon = KnownMonikers.FolderOpened.ToProjectSystemType();  
+   ```csharp  
+   // Replace this KnownMoniker with your desired ImageMoniker  
+   ProjectImageMoniker icon         = KnownMonikers.FolderClosed.ToProjectSystemType();  
+   ProjectImageMoniker expandedIcon = KnownMonikers.FolderOpened.ToProjectSystemType();  
   
-    return this.ProjectTreeFactory.Value.NewTree(/*caption*/<value>,  
-                                                 /*filePath*/<value>,  
-                                                 /*browseObjectProperties*/<value>,  
-                                                 icon,  
-                                                 expandedIcon);  
-    ```  
+   return this.ProjectTreeFactory.Value.NewTree(/*caption*/<value>,  
+                                                /*filePath*/<value>,  
+                                                /*browseObjectProperties*/<value>,  
+                                                icon,  
+                                                expandedIcon);  
+   ```  
   
 ## <a name="how-do-i-convert-from-a-real-image-strip-to-a-moniker-based-image-strip"></a>Bir bilinen ad tabanlı görüntü şeridi için bir gerçek görüntü şeridi nasıl dönüştürebilirim?  
  **HIMAGELISTs desteği gerekir**  
   
  Görüntü hizmeti kullanmak için güncelleştirmek istediğiniz, ancak görüntü listeleri etrafında geçirme gerektiren API'leri tarafından kısıtlanmıştır kodunuz için zaten varolan bir görüntü şeridi varsa, yine de görüntü hizmeti avantajlarını elde edebilirsiniz. Bir bilinen ad tabanlı görüntü şeridi oluşturmak için bildirim mevcut adlar oluşturmak için aşağıdaki adımları izleyin.  
   
-1.  Çalıştırma **ManifestFromResources** aracı, görüntü şeridi geçirme. Bu Şerit için bir bildirim oluşturur.  
+1. Çalıştırma **ManifestFromResources** aracı, görüntü şeridi geçirme. Bu Şerit için bir bildirim oluşturur.  
   
-    -   Önerilen: kullanımını uyacak şekilde bildirimi olmayan varsayılan bir ad sağlayın.  
+   -   Önerilen: kullanımını uyacak şekilde bildirimi olmayan varsayılan bir ad sağlayın.  
   
-2.  Yalnızca kullanıyorsanız **KnownMonikers**, aşağıdakileri yapın:  
+2. Yalnızca kullanıyorsanız **KnownMonikers**, aşağıdakileri yapın:  
   
-    -   Değiştirin \<görüntüleri > ile bildiriminin \<görüntüleri / >.  
+   -   Değiştirin \<görüntüleri > ile bildiriminin \<görüntüleri / >.  
   
-    -   Tüm subimage kimlikleri kaldırmak (hepsi birlikte \<imagestrip adı > _ ##).  
+   -   Tüm subimage kimlikleri kaldırmak (hepsi birlikte \<imagestrip adı > _ ##).  
   
-    -   Önerilen: AssetsGuid simge ve görüntü şeridi sembol kullanımını uyacak şekilde yeniden adlandırın.  
+   -   Önerilen: AssetsGuid simge ve görüntü şeridi sembol kullanımını uyacak şekilde yeniden adlandırın.  
   
-    -   Her değiştirin **ContainedImage**ait GUID $(ImageCatalogGuid) ile her değiştirin **ContainedImage**'s $ Kimliğiyle (\<bilinen ad >) ve dış = "true" özniteliği eklemek için her **ContainedImage**  
+   -   Her değiştirin **ContainedImage**ait GUID $(ImageCatalogGuid) ile her değiştirin **ContainedImage**'s $ Kimliğiyle (\<bilinen ad >) ve dış = "true" özniteliği eklemek için her **ContainedImage**  
   
-        -   \<bilinen ad > ile değiştirilmelidir **KnownMoniker** görüntü eşleşen ancak "KnownMonikers." adından kaldırıldı.  
+       -   \<bilinen ad > ile değiştirilmelidir **KnownMoniker** görüntü eşleşen ancak "KnownMonikers." adından kaldırıldı.  
   
-    -   Ekle < alma Manifest="$(ManifestFolder)\\< yükleme dizini yolu göreli *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest" /\*> üstüne \<sembolleri > bölümü.  
+   -   Ekle < alma Manifest="$(ManifestFolder)\\< yükleme dizini yolu göreli *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest" /\*> üstüne \<sembolleri > bölümü.  
   
-        -   Göreli yol bildirimi yazma Kurulum içinde tanımlanan dağıtım konumu tarafından belirlenir.  
+       -   Göreli yol bildirimi yazma Kurulum içinde tanımlanan dağıtım konumu tarafından belirlenir.  
   
-3.  Çalıştırma **ManifestToCode** görüntü şeridi için Görüntü hizmeti sorgulamak için kullanabileceğiniz bir bilinen ad var olan kod sahip olacak şekilde sarmalayıcılar aracı.  
+3. Çalıştırma **ManifestToCode** görüntü şeridi için Görüntü hizmeti sorgulamak için kullanabileceğiniz bir bilinen ad var olan kod sahip olacak şekilde sarmalayıcılar aracı.  
   
-    -   Önerilen: sarmalayıcıları ve bunların kullanımını uyacak şekilde ad alanları için varsayılan olmayan adlar sağlar.  
+   -   Önerilen: sarmalayıcıları ve bunların kullanımını uyacak şekilde ad alanları için varsayılan olmayan adlar sağlar.  
   
-4.  Tüm ekler, yazma Kurulum/dağıtım ve diğer kod değişikliklerini Görüntü hizmeti ve yeni dosyaları ile çalışma.  
+4. Tüm ekler, yazma Kurulum/dağıtım ve diğer kod değişikliklerini Görüntü hizmeti ve yeni dosyaları ile çalışma.  
   
- Örnek bildirim ne gibi görünmelidir görmek için hem iç hem de dış görüntüleri dahil olmak üzere:  
+   Örnek bildirim ne gibi görünmelidir görmek için hem iç hem de dış görüntüleri dahil olmak üzere:  
   
 ```xml  
 <?xml version="1.0"?>  

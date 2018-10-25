@@ -9,12 +9,12 @@ description: Bulun ve Visual Studio aboneliğinize dahil olan Microsoft ürünle
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4ac1f74f9f60526c8b1f884cd63907329d2f91a2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ec2dd900e0cfae3b150bba52e31834efb53628e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637743"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831438"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Visual Studio aboneliklerinde kullanarak abone indirmeleri
 Abone Avantajlarınızı bir parçası olarak çok çeşitli yazılım indirme işlemleri erişebilirsiniz.
@@ -42,11 +42,11 @@ Aboneliğinize dahil olan yüklemeler yalnızca sizin için görüntülenen [ind
 
 Ziyaret ettiğinizde [indirir](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) sayfasında ürün türüne göre gruplar halinde düzenlenmiş popüler karşıdan yüklemeler göreceksiniz.  Sayfanın en üstündeki arama çubuğunu kullanarak herhangi bir ürünü arama veya gösterilen popüler karşıdan yüklemeler birini seçin.
 > [!div class="mx-imgBorder"]
-> ![Sayfa abone indirmeleri](_img\subscriber-downloads\subscriber-downloads-resized.png)
+> ![Sayfa abone indirmeleri](_img/subscriber-downloads/subscriber-downloads-resized.png)
 
 Örneğin, seçtiğiniz **Visual Studio 2017** geliştirici araçları listeden kullanılabilir Visual Studio 2017 indirmeleri listesini görürsünüz.
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2017 indirmeleri](_img\subscriber-downloads\vs2017-new-UI.png)
+> ![Visual Studio 2017 indirmeleri](_img/subscriber-downloads/vs2017-new-UI.png)
 
 Kolayca kullanılabilir açılan menüleri kullanarak, mimarisi, dil ve dosya türünü seçin. Tercih edilen seçeneklerinizi belirleyin ve tıklayın **indirme** ürün karşıdan yüklemeye başlamak için.
 
@@ -54,13 +54,13 @@ Kolayca kullanılabilir açılan menüleri kullanarak, mimarisi, dil ve dosya t�
 
 Ürün adı veya tıklayarak **bilgisi** indirin ve ürün için sürüm notları erişim sağlamak için bağlantı ayrıntılarını görüntüler.
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2017 Pro Yükleme ayrıntıları](_img\subscriber-downloads\vs2017-pro-details.png)
+> ![Visual Studio 2017 Pro Yükleme ayrıntıları](_img/subscriber-downloads/vs2017-pro-details.png)
 
 Ayrıntılar bölmesinde, tıklayarak **anahtarları** ürün anahtarlarınızı durumunu denetlemek için sekmesinde.
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2017 Pro ürün anahtarları](_img\subscriber-downloads\vs2017-pro-keys.png)
+> ![Visual Studio 2017 Pro ürün anahtarları](_img/subscriber-downloads/vs2017-pro-keys.png)
 
 ### <a name="obtaining-product-keys"></a>Ürün anahtarlarını alma
 Bir ürün almak için indirme için anahtar ya da etiketli mavi anahtar tıklayabilirsiniz **anahtar Al** veya ayrıntılar bölmesinde görüntülüyorsanız, tıklayarak **anahtar talep et** üzerinde **anahtarları** sekmesi.
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2017 Pro ürün anahtarlarını talep](_img\subscriber-downloads\vs2017-pro-claim-keys.png)
+> ![Visual Studio 2017 Pro ürün anahtarlarını talep](_img/subscriber-downloads/vs2017-pro-claim-keys.png)

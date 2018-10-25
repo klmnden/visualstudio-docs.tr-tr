@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edd88755fbc3065cf6d9ff95b9859b7e70393300
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9b7d898f4be4a314a8f046399f9d82ca9a9a84f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676938"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811587"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Yayımlama Sihirbazı (Visual Studio'da Office Geliştirme)
   Kullanım **Yayımlama Sihirbazı** çözüm dosyaları belirtilen bir konuma kopyalamak için bildirim dosyalarını oluşturmak ve bir Kurulum programı oluşturma.  
@@ -41,13 +41,13 @@ ms.locfileid: "35676938"
   
  Bir disk yolu, dosya paylaşımı, FTP sitesi veya web sitesi URL'si bir konum yazın ya da tıklayın **Gözat** konumu için Gözat düğmesini. Yol, aşağıdaki biçimlerde olabilir:  
   
--   Göreli veya mutlak bir yol standart Windows, aşağıdakiler gibi biçimlendirme *C:\Deploy\MyApplication* veya *\MyApplication*.  
+- Göreli veya mutlak bir yol standart Windows, aşağıdakiler gibi biçimlendirme *C:\Deploy\MyApplication* veya *\MyApplication*.  
   
--   Bir Evrensel Adlandırma Kuralı (UNC) yolu gibi  *\\\ServerName\MyApplication\\*.  
+- Bir Evrensel Adlandırma Kuralı (UNC) yolu gibi  *\\\ServerName\MyApplication\\*.  
   
--   Gibi bir URL bir web sitesi http://www.microsoft.com/MyApplication.  
+- Gibi bir URL bir web sitesi http://www.microsoft.com/MyApplication.  
   
- Varsayılan olarak, yayımlama konumdur *http://localhost/projectname/* IIS yüklü veya bunu yaparsanız yayınla\ dizini IIS yüklü.  
+  Varsayılan olarak, yayımlama konumdur *http://localhost/projectname/* IIS yüklü veya bunu yaparsanız yayınla\ dizini IIS yüklü.  
   
 > [!NOTE]  
 >  Hedef bilgisayarın Windows Vista çalıştırıyorsa, daha fazla ilgili önemli noktalar vardır. Yerel yayımlama seçeneğini kullanmak için Windows Vista bilgisayarda yönetici olması gerekir. Ayrıca, her zaman varsayılan konumu: *yayımlama\\*  IIS yüklü olup olmadığından bağımsız olarak dizin.  

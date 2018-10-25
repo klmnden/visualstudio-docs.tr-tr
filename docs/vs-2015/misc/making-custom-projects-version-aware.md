@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: douge
-ms.openlocfilehash: 3ae06a36155ed7270ce01178fa49e40dff06aed8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 038f478d6a8dbdd3dc050b6db85af82be377c325
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236333"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833011"
 ---
 # <a name="making-custom-projects-version-aware"></a>Özel projeler sürüm ile uyumlu hale getirme
 Özel proje sisteminizi projeleri Visual Studio birden çok sürümünü yüklemek için bu türdeki izin verebilirsiniz. Bu tür projeleri, Visual Studio'nun bir önceki sürümünde yüklenmesini de engelleyebilirsiniz. Proje Proje Onar, dönüştürme ya da kullanımdan kaldırma gerektiriyor durumunda sonraki bir sürüme kendisini tanımlamak de etkinleştirebilirsiniz.  
@@ -125,13 +125,13 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
  Bu yöntem ayarlarsa `pUpgradeRequired` TRUE ve döndürür `S_OK`, sonuç "Güncelleştirme" olarak kabul edilir ve olarak rağmen set metodu bir yükseltme bayrağı değerine `VSPUVF_PROJECT_ONEWAYUPGRADE`, bu konunun ilerleyen bölümlerinde açıklanmıştır. Aşağıdaki değerler, bu eski yöntem ancak yalnızca kullanarak desteklenir dönüş `pUpgradeRequired` TRUE olarak ayarlayın:  
   
-1.  `VS_S_PROJECT_SAFEREPAIRREQUIRED`. Bu dönüş değeri çevirir `pUpgradeRequired` TRUE değerine eşdeğer olarak `VSPUVF_PROJECT_SAFEREPAIR`, bu konunun ilerleyen bölümlerinde açıklanmıştır.  
+1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`. Bu dönüş değeri çevirir `pUpgradeRequired` TRUE değerine eşdeğer olarak `VSPUVF_PROJECT_SAFEREPAIR`, bu konunun ilerleyen bölümlerinde açıklanmıştır.  
   
-2.  `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. Bu dönüş değeri çevirir `pUpgradeRequired` TRUE değerine eşdeğer olarak `VSPUVF_PROJECT_UNSAFEREPAIR`, bu konunun ilerleyen bölümlerinde açıklanan  
+2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. Bu dönüş değeri çevirir `pUpgradeRequired` TRUE değerine eşdeğer olarak `VSPUVF_PROJECT_UNSAFEREPAIR`, bu konunun ilerleyen bölümlerinde açıklanan  
   
-3.  `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`. Bu dönüş değeri çevirir `pUpgradeRequired` TRUE değerine eşdeğer olarak `VSPUVF_PROJECT_ONEWAYUPGRADE`, bu konunun ilerleyen bölümlerinde açıklanmıştır.  
+3. `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`. Bu dönüş değeri çevirir `pUpgradeRequired` TRUE değerine eşdeğer olarak `VSPUVF_PROJECT_ONEWAYUPGRADE`, bu konunun ilerleyen bölümlerinde açıklanmıştır.  
   
- Yeni uygulamalarında `IVsProjectUpgradeViaFactory4` ve `IVsProjectFlavorUpgradeViaFactory2` geçiş türü daha kesin olarak belirterek etkinleştirin.  
+   Yeni uygulamalarında `IVsProjectUpgradeViaFactory4` ve `IVsProjectFlavorUpgradeViaFactory2` geçiş türü daha kesin olarak belirterek etkinleştirin.  
   
 > [!NOTE]
 >  Uyumluluk denetimi tarafından sonucunu önbelleğe alabilir `UpgradeProject_CheckOnly` BT'nin ayrıca sonraki çağrı tarafından kullanılabilmesi için yöntemi `CreateProject`.  

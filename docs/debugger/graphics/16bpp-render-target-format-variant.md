@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e9a8e990ee3b95d93f8757f54b92c808fb650f8
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: f9c72abaaf1a799316686c77b127952f1fe4f689
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433334"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832896"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>16 bpp hedef biçimi değişken işleme
 Piksel biçimlendirmek için DXGI_FORMAT_B5G6R5_UNORM tüm ayarlar, işleme hedefleri ve arabellek yedekleyin.  
@@ -43,9 +43,9 @@ Takas zinciri bir parçası olan uygulamaları 16 bpp desteklemeyen bir arka ara
 2. Takas zinciri arka arabelleği üzerine işleme hedefi bir tam ekran dört işleme hedefi olarak, kaynak doku ile çizerek kopyalayın.
 3. Yoksa, takas zinciri üzerinde çağırın.
 
- Ardından bu strateji işleme hedefi için takas zinciri arka arabelleği kopyalayarak tüketilen daha fazla bant genişliği kaydederse, işleme performansı geliştirildi.
+   Ardından bu strateji işleme hedefi için takas zinciri arka arabelleği kopyalayarak tüketilen daha fazla bant genişliği kaydederse, işleme performansı geliştirildi.
 
- Döşenmiş işleme tekniklerini GPU mimarileri, 16 bpp çerçeve arabellek biçimini kullanarak önemli performans avantajlarını görebiliyorum. Bu geliştirme, çerçeve arabelleği daha büyük bir kısmını her kutucuğun yerel çerçeve arabelleği önbellekte sığabilen olmasıdır. Döşenmiş işleme mimarisi, bazen ahizeleri mobil ve tablet bilgisayarlar Gpu'lar bulunur; Bu özel dışında nadiren görünürler.  
+   Döşenmiş işleme tekniklerini GPU mimarileri, 16 bpp çerçeve arabellek biçimini kullanarak önemli performans avantajlarını görebiliyorum. Bu geliştirme, çerçeve arabelleği daha büyük bir kısmını her kutucuğun yerel çerçeve arabelleği önbellekte sığabilen olmasıdır. Döşenmiş işleme mimarisi, bazen ahizeleri mobil ve tablet bilgisayarlar Gpu'lar bulunur; Bu özel dışında nadiren görünürler.  
   
 ## <a name="remarks"></a>Açıklamalar  
  İşleme hedef biçim üzerinde yapılan her çağrı için DXGI_FORMAT_B5G6R5_UNORM sıfırlanır `ID3D11Device::CreateTexture2D` işleme hedefi oluşturur. Özellikle, pDesc içinde geçirilen D3D11_TEXTURE2D_DESC nesnesi bir işleme hedefi açıkladığında biçimi geçersiz; Yani:  

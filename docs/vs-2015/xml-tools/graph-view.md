@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ca48fecf68ad9ecd1db6dc61acbf168a0a1c0f14
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d1c0bbe55f2e63c1d86d71556392d57d1330c6b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298538"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813628"
 ---
 # <a name="graph-view"></a>Graf Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,11 +132,11 @@ Bir grafik gösterimi genel şeması düğümlerin ve düğümler arasındaki il
   
  Yakınlaştırma, aşağıdaki yollarla denetlenebilir:  
   
--   CTRL tuşunu basılı tutarak ve fare graf görünümünü yüzeyi gelindiğinde, fare tekerleğini dönen.  
+- CTRL tuşunu basılı tutarak ve fare graf görünümünü yüzeyi gelindiğinde, fare tekerleğini dönen.  
   
--   Kaydırıcı denetimi kullanarak. Kaydırıcı geçerli yakınlaştırma düzeyini gösterir.  
+- Kaydırıcı denetimi kullanarak. Kaydırıcı geçerli yakınlaştırma düzeyini gösterir.  
   
- Bunu, üzerine geldiğinizde seçin veya CTRL yakınlaştırma için fare tekerleğini ile kullanın. yakınlaştırma kaydırıcısı donuk olur; diğer her zaman saydamdır.  
+  Bunu, üzerine geldiğinizde seçin veya CTRL yakınlaştırma için fare tekerleğini ile kullanın. yakınlaştırma kaydırıcısı donuk olur; diğer her zaman saydamdır.  
   
 ## <a name="xml-editor-integration"></a>XML Düzenleyicisi tümleştirme  
  Bir düğüm tıklayarak ve kodu görüntüle bağlam menüsünü kullanarak graf görünümünden ve XML Düzenleyicisi arasında ileri ve geri geçebilirsiniz.  

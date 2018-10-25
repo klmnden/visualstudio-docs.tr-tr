@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dfc32400f926bd62c77431bcc448e4b78dedd026
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3c190606c860a2a9d9711f0636420c34a38c8d52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301490"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813602"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>İle veya hata ayıklayıcı olmadan profil oluşturma araçları çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,60 +46,60 @@ Sunan Visual Studio artık, bir performans, tercih ettiğiniz araçları, bazıl
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Hata ayıklama sırasında profil oluşturma verilerini topla  
  Aşağıdaki bölümde, yerel olarak hata ayıklama ile ilgilidir. Bir cihaz veya uzaktan, sonraki bölümlerde hata ayıklama hata ayıklama hakkında bilgi edinebilirsiniz.  
   
-1.  Açık ayıklamak istediğiniz proje ardından **hata ayıklama / hata ayıklamayı Başlat** (veya **Başlat** araç çubuğunda veya **F5**).  
+1. Açık ayıklamak istediğiniz proje ardından **hata ayıklama / hata ayıklamayı Başlat** (veya **Başlat** araç çubuğunda veya **F5**).  
   
-2.  **Tanılama araçları** penceresi görünür otomatik olarak, bunu devre dışı bırakmış sürece. Pencereyi ayarlayıp yeniden getirmek için tıklayın **hata ayıklama / Windows / tanılama araçlarını Göster**.  
+2. **Tanılama araçları** penceresi görünür otomatik olarak, bunu devre dışı bırakmış sürece. Pencereyi ayarlayıp yeniden getirmek için tıklayın **hata ayıklama / Windows / tanılama araçlarını Göster**.  
   
-3.  Verileri toplamak istediğiniz senaryoları çalıştırın.  
+3. Verileri toplamak istediğiniz senaryoları çalıştırın.  
   
-     Oturum çalışırken, olaylar, işlem belleğini ve CPU kullanımı hakkında daha fazla bilgi görebilirsiniz.  
+    Oturum çalışırken, olaylar, işlem belleğini ve CPU kullanımı hakkında daha fazla bilgi görebilirsiniz.  
   
-     Aşağıdaki grafik gösterildiği **tanılama araçları** penceresi Visual Studio 2015 güncelleştirme 1'de:  
+    Aşağıdaki grafik gösterildiği **tanılama araçları** penceresi Visual Studio 2015 güncelleştirme 1'de:  
   
-     ![DiagnosticTools&#45;güncelleştirme 1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-güncelleştirme 1")  
+    ![DiagnosticTools&#45;güncelleştirme 1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-güncelleştirme 1")  
   
-4.  Görmek isteyip istemediğinizi seçebilirsiniz **bellek kullanımı** veya **CPU kullanımı** (veya her ikisi) ile **seçtiğiniz Araçları** araç ayarlama. Visual Studio Enterprise çalıştırıyorsanız, etkinleştirebilir veya IntelliTrace içinde devre dışı **Araçlar / Seçenekler / IntelliTrace**.  
+4. Görmek isteyip istemediğinizi seçebilirsiniz **bellek kullanımı** veya **CPU kullanımı** (veya her ikisi) ile **seçtiğiniz Araçları** araç ayarlama. Visual Studio Enterprise çalıştırıyorsanız, etkinleştirebilir veya IntelliTrace içinde devre dışı **Araçlar / Seçenekler / IntelliTrace**.  
   
-5.  Hata ayıklamayı durdurduğunuzda Tanılama oturumu sona erer.  
+5. Hata ayıklamayı durdurduğunuzda Tanılama oturumu sona erer.  
   
- Visual Studio 2015 güncelleştirme 1'de **tanılama araçları** penceresi kolaylaştırır, ilgilendiğiniz olay odaklanmak için.   Olay adları artık kategori ön ekleri gösterilir (**hareket**, **Program çıktısı**, **kesme noktası**, **dosyası** vb.) hızlı şekilde belirli bir kategorideki listesi veya hakkında umursamaz kategorileri atlayabilirsiniz.  
+   Visual Studio 2015 güncelleştirme 1'de **tanılama araçları** penceresi kolaylaştırır, ilgilendiğiniz olay odaklanmak için.   Olay adları artık kategori ön ekleri gösterilir (**hareket**, **Program çıktısı**, **kesme noktası**, **dosyası** vb.) hızlı şekilde belirli bir kategorideki listesi veya hakkında umursamaz kategorileri atlayabilirsiniz.  
   
- Herhangi bir olay listesinden belirli bir dizeyi bulabilmesi penceresi artık bir arama kutusu sahiptir. Örneğin, aşağıdaki dize için arama sonuçlarının "dört olayları eşleşen Yükle" gösterir:  
+   Herhangi bir olay listesinden belirli bir dizeyi bulabilmesi penceresi artık bir arama kutusu sahiptir. Örneğin, aşağıdaki dize için arama sonuçlarının "dört olayları eşleşen Yükle" gösterir:  
   
- ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
+   ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
   
- Ayrıca, Görünüm penceresinde içine ve dışına olayları filtreleyebilirsiniz. İçinde **filtre** açılır listesinde, kontrol edin veya belirli olayların kategorilerini işaretini kaldırın:. Kategori adları önek adı ile aynıdır.  
+   Ayrıca, Görünüm penceresinde içine ve dışına olayları filtreleyebilirsiniz. İçinde **filtre** açılır listesinde, kontrol edin veya belirli olayların kategorilerini işaretini kaldırın:. Kategori adları önek adı ile aynıdır.  
   
- ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
+   ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
- Daha fazla bilgi için [arama ve filtreleme tanılama araçları penceresinin olaylar sekmesinde](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
+   Daha fazla bilgi için [arama ve filtreleme tanılama araçları penceresinin olaylar sekmesinde](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
   
 ## <a name="collect-profiling-data-without-debugging"></a>Hata ayıklama olmadan profil oluşturma verilerini topla  
  Bazı profil oluşturma araçları çalıştırmak için yönetici ayrıcalıkları gerektirir. Visual Studio'yu yönetici olarak başlatın veya Tanılama oturumu başlattığınızda araçları yönetici olarak çalıştırmak seçebilirsiniz.  
   
-1.  Projeyi Visual Studio'da açın.  
+1. Projeyi Visual Studio'da açın.  
   
-2.  Üzerinde **hata ayıklama** menüsünde seçin **performans Profiler...** (Kısayol tuşu: Alt + F2).  
+2. Üzerinde **hata ayıklama** menüsünde seçin **performans Profiler...** (Kısayol tuşu: Alt + F2).  
   
-3.  Tanılama başlatma sayfasında oturumunda çalıştırmak için bir veya daha fazla araç seçin. Proje türü, işletim sistemi ve programlama dili için uygun olan araçlar görüntülenir. Bir tanılama aracı seçtiğinizde, aynı Tanılama oturumu çalıştırılamaz araçları seçimlerini devre dışı bırakıldı. Seçimlerinizi bir C# Windows Evrensel uygulama için nasıl görünebileceği aşağıda verilmiştir:  
+3. Tanılama başlatma sayfasında oturumunda çalıştırmak için bir veya daha fazla araç seçin. Proje türü, işletim sistemi ve programlama dili için uygun olan araçlar görüntülenir. Bir tanılama aracı seçtiğinizde, aynı Tanılama oturumu çalıştırılamaz araçları seçimlerini devre dışı bırakıldı. Seçimlerinizi bir C# Windows Evrensel uygulama için nasıl görünebileceği aşağıda verilmiştir:  
   
-     ![Tanılama Araçları](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
+    ![Tanılama Araçları](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
   
-4.  Tanılama oturumu başlatmak için tıklatın **Başlat**.  
+4. Tanılama oturumu başlatmak için tıklatın **Başlat**.  
   
-5.  Verileri toplamak istediğiniz senaryoları çalıştırın.  
+5. Verileri toplamak istediğiniz senaryoları çalıştırın.  
   
-     Oturum çalışırken bazı araçlar gerçek zamanlı veri grafikleri tanılama araçlarını Başlat sayfasında görüntüler.  
+    Oturum çalışırken bazı araçlar gerçek zamanlı veri grafikleri tanılama araçlarını Başlat sayfasında görüntüler.  
   
-     ![Performans ve tanılama fası üzerinde veri toplama](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
+    ![Performans ve tanılama fası üzerinde veri toplama](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
   
-6.  Tanılama oturumu sona erdirmek için tıklatın **koleksiyonu Durdur**.  
+6. Tanılama oturumu sona erdirmek için tıklatın **koleksiyonu Durdur**.  
   
- Bir tanılama oturumu veri toplamayı durdurduğunuzda, veriler, analiz ve Tanılama sayfasında rapor görüntülenir.  
+   Bir tanılama oturumu veri toplamayı durdurduğunuzda, veriler, analiz ve Tanılama sayfasında rapor görüntülenir.  
   
- Ayrıca, tanılama araçları en son açılan listeden dosyalarda sayfasını başlatmak kaydedilmiş .diagnostic oturum açabilirsiniz.  
+   Ayrıca, tanılama araçları en son açılan listeden dosyalarda sayfasını başlatmak kaydedilmiş .diagnostic oturum açabilirsiniz.  
   
- ![Kaydedilen Tanılama oturumu dosyası açın](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
+   ![Kaydedilen Tanılama oturumu dosyası açın](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>Profil oluşturma raporu  
  ![Tanılama araçları rapor](../profiling/media/diag-report.png "DIAG_Report")  

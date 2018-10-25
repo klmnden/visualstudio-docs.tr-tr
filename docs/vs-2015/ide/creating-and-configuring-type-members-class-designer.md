@@ -35,12 +35,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9a133b452000753eb5b7dfba579c8954791196b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93a112fac274921fe2d1075e1a1b9178c408240c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228338"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827981"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Tür Üyeleri Oluşturma ve Yapılandırma (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,11 +72,11 @@ Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma e
   
 #### <a name="to-open-the-class-details-window"></a>Sınıf Ayrıntıları penceresini açmak için  
   
-1.  Herhangi bir sınıf diyagramında bir bağlam menüsünü görüntülemek için sağ tıklayın.  
+1. Herhangi bir sınıf diyagramında bir bağlam menüsünü görüntülemek için sağ tıklayın.  
   
-2.  Bağlam menüsünde tıklatın **sınıf Ayrıntıları penceresi**.  
+2. Bağlam menüsünde tıklatın **sınıf Ayrıntıları penceresi**.  
   
- – veya -  
+   – veya -  
   
 -   İşaret **diğer Windows** Görünüm menüsü ve ardından **sınıf ayrıntıları**.  
   
@@ -194,31 +194,31 @@ Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma e
   
  Parametre satırı aşağıdaki öğeleri içerir:  
   
--   **Ad**  
+- **Ad**  
   
-     **Adı** sütunu bir parametre satırındaki parametrenin adını görüntüler. Bu ad ayrıca görüntülenen **adı** Özellikler penceresindeki özellik. Okuma/Yazma izinlerine sahip herhangi bir parametrenin adını değiştirmek için bu hücreyi kullanabilirsiniz.  
+   **Adı** sütunu bir parametre satırındaki parametrenin adını görüntüler. Bu ad ayrıca görüntülenen **adı** Özellikler penceresindeki özellik. Okuma/Yazma izinlerine sahip herhangi bir parametrenin adını değiştirmek için bu hücreyi kullanabilirsiniz.  
   
-     Parametre adını işaret eden görüntüler parametrenin adını **adı** sütunu adın tamamını görüntüleyemeyecek kadar darsa.  
+   Parametre adını işaret eden görüntüler parametrenin adını **adı** sütunu adın tamamını görüntüleyemeyecek kadar darsa.  
   
--   **Türü**  
+- **Türü**  
   
-     **Parametre türü** hücresi geçerli projede veya başvurulan projelerde kullanılabilen tüm türlerin listesinden seçim yapmanıza izin IntelliSense özelliğini kullanır.  
+   **Parametre türü** hücresi geçerli projede veya başvurulan projelerde kullanılabilen tüm türlerin listesinden seçim yapmanıza izin IntelliSense özelliğini kullanır.  
   
--   **Değiştiricisi**  
+- **Değiştiricisi**  
   
-     **Değiştiricisi** hücre bir parametre satırındaki kabul eder ve parametrenin yeni değiştiricisini görüntüler. Yeni bir parametre değiştiricisi girmek için seçmek için aşağı açılan liste kutusunu kullanmak **hiçbiri**, **ref**, **kullanıma**, veya **params** C# ve **ByVal**, **ByRef**, veya **ParamArray** vb'de  
+   **Değiştiricisi** hücre bir parametre satırındaki kabul eder ve parametrenin yeni değiştiricisini görüntüler. Yeni bir parametre değiştiricisi girmek için seçmek için aşağı açılan liste kutusunu kullanmak **hiçbiri**, **ref**, **kullanıma**, veya **params** C# ve **ByVal**, **ByRef**, veya **ParamArray** vb'de  
   
--   **Özet**  
+- **Özet**  
   
-     **Özeti** hücre bir parametre satırındaki parametreyi kod düzenleyicisine girerken Intellisense'te görünen kod açıklamalarının girme sağlar.  
+   **Özeti** hücre bir parametre satırındaki parametreyi kod düzenleyicisine girerken Intellisense'te görünen kod açıklamalarının girme sağlar.  
   
--   **\<Parametre Ekle >**  
+- **\<Parametre Ekle >**  
   
-     Bir üyenin son parametre satırı metni içeren **<add parameter>** içinde **adı** hücre. Bu hücreye tıklanması yeni bir parametre oluşturmanıza izin verir. Daha fazla bilgi için [bir yönteme parametre eklemek için](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod).  
+   Bir üyenin son parametre satırı metni içeren **<add parameter>** içinde **adı** hücre. Bu hücreye tıklanması yeni bir parametre oluşturmanıza izin verir. Daha fazla bilgi için [bir yönteme parametre eklemek için](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod).  
   
- **Özellikler penceresindeki parametre özellikleri**  
+  **Özellikler penceresindeki parametre özellikleri**  
   
- Özellikler penceresi sınıf Ayrıntıları penceresinde görüntülenen parametre özelliklerinin görüntüler: **adı**, **türü**, **değiştiricisi**, **özeti**, hem de **isteğe bağlı varsayılan** özelliği. Özelliğin bir konumda değiştirilmesi, özelliğin değerini global olarak güncelleştirir (değerinin diğer konumda görüntülenmesi de buna dahildir).  
+  Özellikler penceresi sınıf Ayrıntıları penceresinde görüntülenen parametre özelliklerinin görüntüler: **adı**, **türü**, **değiştiricisi**, **özeti**, hem de **isteğe bağlı varsayılan** özelliği. Özelliğin bir konumda değiştirilmesi, özelliğin değerini global olarak güncelleştirir (değerinin diğer konumda görüntülenmesi de buna dahildir).  
   
 > [!NOTE]
 >  Bir temsilciye parametre eklemek için bkz [üyeleri oluşturma](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
@@ -268,62 +268,62 @@ Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma e
   
  Bir kaç özel durum dışında, Sınıf Ayrıntıları penceresindeki tüm hücreler düzenlenebilir:  
   
--   Türün tamamı salt okunur olduğunda, örneğin başvurulan bir derlemede yer alıyor (bkz [salt okunur bilgilerini görüntüleme (Sınıf Tasarımcısı)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Sınıf Tasarımcısı'nda şekli seçtiğinizde, Sınıf Ayrıntıları penceresi ilgili ayrıntıları salt okunur halde görüntüler.  
+- Türün tamamı salt okunur olduğunda, örneğin başvurulan bir derlemede yer alıyor (bkz [salt okunur bilgilerini görüntüleme (Sınıf Tasarımcısı)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Sınıf Tasarımcısı'nda şekli seçtiğinizde, Sınıf Ayrıntıları penceresi ilgili ayrıntıları salt okunur halde görüntüler.  
   
--   Dizin oluşturucular için, ad bilgisi salt okunur ve geri kalanı (tür, değiştirici, özet) düzenlenebilir özelliktedir.  
+- Dizin oluşturucular için, ad bilgisi salt okunur ve geri kalanı (tür, değiştirici, özet) düzenlenebilir özelliktedir.  
   
--   Tüm genel öğeler Sınıf Ayrıntıları penceresinde salt okunur parametrelere sahiptir. Bir genel parametreyi değiştirmek için kaynak kodunu düzenleyin.  
+- Tüm genel öğeler Sınıf Ayrıntıları penceresinde salt okunur parametrelere sahiptir. Bir genel parametreyi değiştirmek için kaynak kodunu düzenleyin.  
   
--   Genel türde tanımlanan tür parametresinin adı salt okunurdur.  
+- Genel türde tanımlanan tür parametresinin adı salt okunurdur.  
   
--   Türün kodu bozuk (çözümlenemez) olduğunda, Sınıf Ayrıntıları penceresi türün içeriğini salt okunur olarak görüntüler.  
+- Türün kodu bozuk (çözümlenemez) olduğunda, Sınıf Ayrıntıları penceresi türün içeriğini salt okunur olarak görüntüler.  
   
- **Sınıf Ayrıntıları penceresi ve kaynak kodu**  
+  **Sınıf Ayrıntıları penceresi ve kaynak kodu**  
   
--   Kaynak kodunu, Sınıf Ayrıntıları (veya Sınıf Tasarımcısı) penceresinde bir şekle sağ tıklayıp ardından Kodu Görüntüle'ye tıklayarak görüntüleyebilirsiniz. Kaynak kodu dosyası açılır ve seçili öğeye kadar ilerler.  
+- Kaynak kodunu, Sınıf Ayrıntıları (veya Sınıf Tasarımcısı) penceresinde bir şekle sağ tıklayıp ardından Kodu Görüntüle'ye tıklayarak görüntüleyebilirsiniz. Kaynak kodu dosyası açılır ve seçili öğeye kadar ilerler.  
   
--   Kaynak kodunun değiştirilmesi, Sınıf Tasarımcısı ve Sınıf Ayrıntıları penceresinde imza bilgilerinin görüntüsüne anında yansıtılır. Sınıf Ayrıntıları penceresi bu sırada kapalıysa, pencereyi bir sonraki açışınızda yeni bilgiler görülür.  
+- Kaynak kodunun değiştirilmesi, Sınıf Tasarımcısı ve Sınıf Ayrıntıları penceresinde imza bilgilerinin görüntüsüne anında yansıtılır. Sınıf Ayrıntıları penceresi bu sırada kapalıysa, pencereyi bir sonraki açışınızda yeni bilgiler görülür.  
   
--   Türün kodu bozuk (çözümlenemez) olduğunda, Sınıf Ayrıntıları penceresi türün içeriğini salt okunur olarak görüntüler.  
+- Türün kodu bozuk (çözümlenemez) olduğunda, Sınıf Ayrıntıları penceresi türün içeriğini salt okunur olarak görüntüler.  
   
- **Sınıf Ayrıntıları penceresinde Pano işlevselliği**  
+  **Sınıf Ayrıntıları penceresinde Pano işlevselliği**  
   
- Sınıf Ayrıntıları penceresinden alanları veya satırları kopyalayabilir ya da kesebilir ve bunları başka bir türe yapıştırabilirsiniz. Bir satırı ancak salt okunur ise kesebilirsiniz. Satırı yapıştırdığınızda, Sınıf Ayrıntıları penceresi çakışma olmasını önlemek için yeni bir ad (kopyalanan satırın adından türetilir) atar.  
+  Sınıf Ayrıntıları penceresinden alanları veya satırları kopyalayabilir ya da kesebilir ve bunları başka bir türe yapıştırabilirsiniz. Bir satırı ancak salt okunur ise kesebilirsiniz. Satırı yapıştırdığınızda, Sınıf Ayrıntıları penceresi çakışma olmasını önlemek için yeni bir ad (kopyalanan satırın adından türetilir) atar.  
   
 ##  <a name="ReadOnlyInfo"></a> Salt okunur bilgileri görüntüleme  
  Sınıf Tasarımcısı ve Sınıf Ayrıntıları penceresi aşağıdaki öğeler için türleri (ve türlerin üyelerini) görüntüleyebilir:  
   
--   Sınıf diyagramı içeren bir proje  
+- Sınıf diyagramı içeren bir proje  
   
--   Sınıf diyagramı içeren bir projeden başvurulan proje  
+- Sınıf diyagramı içeren bir projeden başvurulan proje  
   
--   Sınıf diyagramı içeren bir projeden başvurulan derleme  
+- Sınıf diyagramı içeren bir projeden başvurulan derleme  
   
- Sonraki iki durum için, başvurulan varlık (bir tür veya üye) temsil ettiği sınıf diyagramında salt okunurdur.  
+  Sonraki iki durum için, başvurulan varlık (bir tür veya üye) temsil ettiği sınıf diyagramında salt okunurdur.  
   
- Bir projenin tamamı ya da kısımları (tek tek dosyalar gibi) salt okunur olabilir. Projenin veya dosyalarından birinin salt okunur olduğu en yaygın durumlar, bir kaynak kodu denetiminin altında olduğu (ve kullanıma alınmamış), bir dış derlemede var olduğu veya işletim sisteminin dosyaları salt okunur olarak düşündüğü durumlardır.  
+  Bir projenin tamamı ya da kısımları (tek tek dosyalar gibi) salt okunur olabilir. Projenin veya dosyalarından birinin salt okunur olduğu en yaygın durumlar, bir kaynak kodu denetiminin altında olduğu (ve kullanıma alınmamış), bir dış derlemede var olduğu veya işletim sisteminin dosyaları salt okunur olarak düşündüğü durumlardır.  
   
- **Kaynak kodu denetimi**  
+  **Kaynak kodu denetimi**  
   
- Sınıf diyagramı projenin içine bir dosya olarak kaydedildiğinden, Sınıf Tasarımcısı veya Sınıf Ayrıntıları penceresinde yaptığınız değişiklikleri kaydetmek için projeyi kullanıma almanız gerekir.  
+  Sınıf diyagramı projenin içine bir dosya olarak kaydedildiğinden, Sınıf Tasarımcısı veya Sınıf Ayrıntıları penceresinde yaptığınız değişiklikleri kaydetmek için projeyi kullanıma almanız gerekir.  
   
- **Salt okunur projeler**  
+  **Salt okunur projeler**  
   
- Proje, kaynak kodu denetimi dışındaki bir nedenle salt okunur olabilir. Proje kapatıldığında, proje dosyasının üzerine mi yazılacağını, değişikliklerin yok mu sayılacağını(kaydetme) ya da kapatma işleminin iptal mi edileceğini soran bir iletişim kutusu görüntülenir. Üzerine yazmayı tercih ederseniz proje dosyalarının üzerine yazılır ve okuma/yazma özellikli yapılırlar. Yeni sınıf diyagramı dosyası eklenir.  
+  Proje, kaynak kodu denetimi dışındaki bir nedenle salt okunur olabilir. Proje kapatıldığında, proje dosyasının üzerine mi yazılacağını, değişikliklerin yok mu sayılacağını(kaydetme) ya da kapatma işleminin iptal mi edileceğini soran bir iletişim kutusu görüntülenir. Üzerine yazmayı tercih ederseniz proje dosyalarının üzerine yazılır ve okuma/yazma özellikli yapılırlar. Yeni sınıf diyagramı dosyası eklenir.  
   
- **Salt okunur türler**  
+  **Salt okunur türler**  
   
- Kaynak kodu dosyası salt okunur bir türü içeren bir projeyi kaydetmeyi denerseniz **salt okunur dosyanın kaydı** iletişim kutusu görüntülenirse, dosyayı yeni bir ad veya yeni bir konuma veya salt okunur dosyanın üzerine yazma seçenekleri sunar . Dosyanın üzerine yazarsanız yeni kopyası artık salt okunur özellikte olmaz.  
+  Kaynak kodu dosyası salt okunur bir türü içeren bir projeyi kaydetmeyi denerseniz **salt okunur dosyanın kaydı** iletişim kutusu görüntülenirse, dosyayı yeni bir ad veya yeni bir konuma veya salt okunur dosyanın üzerine yazma seçenekleri sunar . Dosyanın üzerine yazarsanız yeni kopyası artık salt okunur özellikte olmaz.  
   
- Bir Kod dosyası sözdizimi hatası içeriyorsa, bu dosyadaki kodu gösteren şekiller söz dizimi hatası düzeltilinceye kadar geçici olarak salt okunur olur. Bu durumdaki şekiller, "Kaynak kodu dosyası ayrıştırma hatası içeriyor" yazılı araç ipucunu gösteren kırmızı bir metin ve kırmızı bir simge görüntüler.  
+  Bir Kod dosyası sözdizimi hatası içeriyorsa, bu dosyadaki kodu gösteren şekiller söz dizimi hatası düzeltilinceye kadar geçici olarak salt okunur olur. Bu durumdaki şekiller, "Kaynak kodu dosyası ayrıştırma hatası içeriyor" yazılı araç ipucunu gösteren kırmızı bir metin ve kırmızı bir simge görüntüler.  
   
- Başka bir proje düğümü altında ya da başvurulan bir derleme düğümü altında bulunan bir başvurulan tür (.NET Framework türü gibi), Sınıf Tasarımcısı'nın tasarım yüzeyinde salt okunur olarak belirtilir. Açık durumda bulunan projede var olan bir yerel tür okuma/yazma özelliklidir ve Sınıf Tasarımcısı'nın tasarım yüzeyindeki şekli de böyle belirtilir.  
+  Başka bir proje düğümü altında ya da başvurulan bir derleme düğümü altında bulunan bir başvurulan tür (.NET Framework türü gibi), Sınıf Tasarımcısı'nın tasarım yüzeyinde salt okunur olarak belirtilir. Açık durumda bulunan projede var olan bir yerel tür okuma/yazma özelliklidir ve Sınıf Tasarımcısı'nın tasarım yüzeyindeki şekli de böyle belirtilir.  
   
- Dizin oluşturucular kod içinde ve Sınıf Ayrıntıları penceresinde okuma/yazma özelliklidir, ancak dizin oluşturucunun adı salt okunurdur.  
+  Dizin oluşturucular kod içinde ve Sınıf Ayrıntıları penceresinde okuma/yazma özelliklidir, ancak dizin oluşturucunun adı salt okunurdur.  
   
- Kısmi yöntemleri Sınıf Tasarımcısı veya Sınıf Ayrıntıları penceresini kullanarak düzenleyemezsiniz; bunları düzenlemek için Kod Düzenleyicisi'ni kullanmanız gerekir.  
+  Kısmi yöntemleri Sınıf Tasarımcısı veya Sınıf Ayrıntıları penceresini kullanarak düzenleyemezsiniz; bunları düzenlemek için Kod Düzenleyicisi'ni kullanmanız gerekir.  
   
- Yerel C++ kodunu Sınıf Tasarımcısı veya Sınıf Ayrıntıları penceresini kullanarak düzenleyemezsiniz; yerel C++ kodunu düzenlemek için Kod Düzenleyicisi'ni kullanmanız gerekir.  
+  Yerel C++ kodunu Sınıf Tasarımcısı veya Sınıf Ayrıntıları penceresini kullanarak düzenleyemezsiniz; yerel C++ kodunu düzenlemek için Kod Düzenleyicisi'ni kullanmanız gerekir.  
   
 ## <a name="related-topics"></a>İlgili Konular  
   

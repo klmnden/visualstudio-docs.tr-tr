@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42ad89e544727a67611a305444f85ff022f6b2ff
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: e5ff8b850287e91cf2a1e5e6a546980c9087541d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500036"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824197"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>İzlenecek yol: Görüntü Hızlıbilgi araç ipuçları
 Hızlıbilgi yöntem imzaları görüntüleyen bir IntelliSense özelliğidir ve açıklamaları bir kullanıcı işaretçiyi bir yöntem adı üzerinde taşır. Quickınfo'da açıklamaları sağlamak istediğiniz tanımlayıcıları tanımlayıp ardından, içeriği görüntülemek bir araç ipucu oluşturma dil tabanlı özellikleri gibi Hızlıbilgi uygulayabilirsiniz. Bir dil hizmeti bağlamında Hızlıbilgi tanımlayabilirsiniz kendi dosya adı uzantısı ve içerik türünü tanımlayın ve bu tür için Hızlıbilgi görüntülemek veya mevcut bir içerik türü (örneğin, "metin") için Hızlıbilgi görüntüleyebilirsiniz. Bu izlenecek yol, Hızlıbilgi görüntülemek için "metin" içerik türü gösterilmektedir.  
   
  Bu kılavuzda Hızlıbilgi örnek, bir kullanıcı, bir yöntem adı işaretçiyi hareket ettirdiğinde araç ipuçları görüntüler. Bu tasarım, dört bu arabirimlerin uygulanma gerektirir:  
   
--   Kaynak arabirimi  
+- Kaynak arabirimi  
   
--   Kaynak sağlayıcı arabirimi  
+- Kaynak sağlayıcı arabirimi  
   
--   denetleyici arabirimi  
+- denetleyici arabirimi  
   
--   Denetleyici sağlayıcı arabirimi  
+- Denetleyici sağlayıcı arabirimi  
   
- Kaynak ve denetleyici sağlayıcıları, Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşeni bölümleri ve kaynak ve denetleyici sınıflarını dışarı aktarmak için sorumludur ve içeri aktarma ve Hizmetleri gibi aracıları <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, araç ipucu metni oluşturur Arabellek ve <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, Hızlıbilgi oturumu tetikler.  
+  Kaynak ve denetleyici sağlayıcıları, Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşeni bölümleri ve kaynak ve denetleyici sınıflarını dışarı aktarmak için sorumludur ve içeri aktarma ve Hizmetleri gibi aracıları <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, araç ipucu metni oluşturur Arabellek ve <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, Hızlıbilgi oturumu tetikler.  
   
- Bu örnekte, yöntem adları ve açıklamaları, sabit kodlanmış listesini Hızlıbilgi kaynak kullanır, ancak dil hizmeti ve dil belgeleri tam uygulamalarında, bu içeriği sağlamaktan sorumlu.  
+  Bu örnekte, yöntem adları ve açıklamaları, sabit kodlanmış listesini Hızlıbilgi kaynak kullanır, ancak dil hizmeti ve dil belgeleri tam uygulamalarında, bu içeriği sağlamaktan sorumlu.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Visual Studio 2015'ten başlayarak, Visual Studio SDK İndirme Merkezi'nden yüklemeniz gerekmez. Visual Studio kurulumunda isteğe bağlı bir özellik eklemiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'yı yükleme](../extensibility/installing-the-visual-studio-sdk.md).  

@@ -9,35 +9,35 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f108e1385c74df7d627f35cd21e18638e50264fe
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7808c4485a00c080a8a5b260a6472d81bfb7fd44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511775"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816839"
 ---
 # <a name="image-library-viewer"></a>Görüntü Kitaplığı Görüntüleyicisi
 Visual Studio görüntü kitaplığı Görüntüleyicisi araç, yüklemek ve görüntü bildirimler, bunları Visual Studio olduğu aynı şekilde yönetmek kullanıcının arayın. Kullanıcı, arka plan, boyutları, DPI, yüksek karşıtlık ve diğer ayarlarını değiştirebilirsiniz. Araç ayrıca her görüntü bildirimi yükleme bilgilerini görüntüler ve görüntü bildiriminde her görüntü kaynağı bilgilerini görüntüler. Bu araç için yararlıdır:  
   
-1.  Hataları tanılama  
+1. Hataları tanılama  
   
-2.  Özel görüntü Bildirimlerde kalmasını sağlama öznitelikleri ayarlandığını  
+2. Özel görüntü Bildirimlerde kalmasını sağlama öznitelikleri ayarlandığını  
   
-3.  Visual Studio uzantı Visual Studio stili uyan görüntüleri kullanabilmesi için Visual Studio görüntü kataloğunda görüntüleri için arama  
+3. Visual Studio uzantı Visual Studio stili uyan görüntüleri kullanabilmesi için Visual Studio görüntü kataloğunda görüntüleri için arama  
   
- ![Görüntü kitaplığı Görüntüleyicisi Hero](../../extensibility/internals/media/image-library-viewer-hero.png "görüntü kitaplığı Görüntüleyicisi Hero")  
+   ![Görüntü kitaplığı Görüntüleyicisi Hero](../../extensibility/internals/media/image-library-viewer-hero.png "görüntü kitaplığı Görüntüleyicisi Hero")  
   
- **Resim bilinen adı**  
+   **Resim bilinen adı**  
   
- Bir resim bilinen adı (veya kısa için bilinen ad) bir resim varlığı veya Resim Kitaplığı'ndaki Görüntü listesi varlığı benzersiz olarak tanımlayan bir GUID:ID çiftidir.  
+   Bir resim bilinen adı (veya kısa için bilinen ad) bir resim varlığı veya Resim Kitaplığı'ndaki Görüntü listesi varlığı benzersiz olarak tanımlayan bir GUID:ID çiftidir.  
   
- **Görüntü bildirim dosyaları**  
+   **Görüntü bildirim dosyaları**  
   
- Görüntü bildirimi (.imagemanifest) dosyaları bu varlıkları ve gerçek görüntü veya her varlık temsil eden görüntüleri temsil eden bir takma ad, resim varlıkları kümesini tanımlayan XML dosyalarıdır. Tek başına resimler görüntü bildirimleri tanımlayabilirsiniz veya eski kullanıcı Arabirimi desteği görüntü listeler. Ayrıca, varlık veya ayrı ayrı görüntülere her varlık arkasında ne zaman ve bu varlıkları nasıl görüntüleneceğini değiştirmek için ayarlanabilen öznitelikleri vardır.  
+   Görüntü bildirimi (.imagemanifest) dosyaları bu varlıkları ve gerçek görüntü veya her varlık temsil eden görüntüleri temsil eden bir takma ad, resim varlıkları kümesini tanımlayan XML dosyalarıdır. Tek başına resimler görüntü bildirimleri tanımlayabilirsiniz veya eski kullanıcı Arabirimi desteği görüntü listeler. Ayrıca, varlık veya ayrı ayrı görüntülere her varlık arkasında ne zaman ve bu varlıkları nasıl görüntüleneceğini değiştirmek için ayarlanabilen öznitelikleri vardır.  
   
- **Görüntü bildirim şeması**  
+   **Görüntü bildirim şeması**  
   
- Tam görüntü bildiriminin şöyle görünür:  
+   Tam görüntü bildiriminin şöyle görünür:  
   
 ```xml  
 <ImageManifest>  
@@ -113,7 +113,7 @@ Visual Studio görüntü kitaplığı Görüntüleyicisi araç, yüklemek ve gö
   
 |||  
 |-|-|  
-|**Özniteliği**|**Tanım**|  
+|**Öznitelik**|**Tanım**|  
 |Guid|[Gerekli] Görüntü bilinen adına GUID kısmını|  
 |Kimlik|[Gerekli] Resim bilinen adı kimliği bölümü|  
 |AllowColorInversion|[İsteğe bağlı, varsayılan true] Görüntü programlı olarak koyu renkli bir arka plan üzerinde kullanıldığında ters renklerini olup olmadığını gösterir.|  
@@ -130,7 +130,7 @@ Visual Studio görüntü kitaplığı Görüntüleyicisi araç, yüklemek ve gö
   
 |||  
 |-|-|  
-|**Özniteliği**|**Tanım**|  
+|**Öznitelik**|**Tanım**|  
 |URI|[Gerekli] Gelen görüntü burada yüklenebilir tanımlayan URI. Aşağıdakilerden biri olabilir:<br /><br /> -A [paketi URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) kullanarak uygulama: / / / yetkilisi<br /><br /> -Bir mutlak bileşen kaynak başvurusu<br /><br /> -Yerel bir kaynak içeren bir dosya yolu|  
 |Arka Plan|[İsteğe bağlı] Ne tür bir arka plan kaynak kullanılması amaçlanmıştır gösterir.<br /><br /> Aşağıdakilerden biri olabilir:<br /><br /> - *Işık*: kaynağı açık bir arka plan üzerinde kullanılabilir.<br /><br /> - *Koyu*: kaynağı koyu renkli bir arka plan üzerinde kullanılabilir.<br /><br /> - *Yüksek Karşıtlık*: kaynak, yüksek karşıtlık modunda herhangi bir arka plan üzerinde kullanılabilir.<br /><br /> - *HighContrastLight*: kaynak, yüksek karşıtlık modunda açık bir arka plan üzerinde kullanılabilir.<br /><br /> -*HighContrastDark*: kaynak, yüksek karşıtlık modunda koyu renkli arka plan üzerinde kullanılabilir.<br /><br /> Varsa **arka plan** özniteliği atlanırsa, kaynağı herhangi bir arka plan üzerinde kullanılabilir.<br /><br /> Varsa **arka plan** olduğu *ışık*, *koyu*, *HighContrastLight*, veya *HighContrastDark*, hiçbir zaman ters kaynağının renkler. Varsa **arka plan** yok sayıldıysa veya kümesine *Karşıtlık*, kaynağın renkleri ters çevirmeyi görüntünün tarafından denetlenir **AllowColorInversion** özniteliği.|  
   
@@ -138,7 +138,7 @@ Visual Studio görüntü kitaplığı Görüntüleyicisi araç, yüklemek ve gö
   
 ||||  
 |-|-|-|  
-|**Öğesi**|**Öznitelikler (tümü gereklidir)**|**Tanım**|  
+|**Öğe**|**Öznitelikler (tümü gereklidir)**|**Tanım**|  
 |\<Boyutu >|Değer|Kaynak (cihaz birimlerindeki) verilen boyutta görüntüleri için kullanılacaktır. Görüntü, kare olur.|  
 |\<SizeRange >|MinSize, Maxsıze|Kaynak MinSize (cihaz birimindeki) görüntülerini MaxSize aralığında kullanılacak. Görüntü, kare olur.|  
 |\<Boyutlar >|Genişlik, yükseklik|Kaynak, belirtilen genişlik ve yükseklik (cihaz birimindeki) görüntülerini için kullanılır.|  
@@ -152,7 +152,7 @@ Visual Studio görüntü kitaplığı Görüntüleyicisi araç, yüklemek ve gö
   
 |||  
 |-|-|  
-|**Özniteliği**|**Tanım**|  
+|**Öznitelik**|**Tanım**|  
 |Tür|[Gerekli] XAML ya da PNG yerel kaynak türü|  
 |Kimlik|[Gerekli] Yerel kaynak tamsayı kimliği bölümünü|  
   
@@ -169,7 +169,7 @@ Visual Studio görüntü kitaplığı Görüntüleyicisi araç, yüklemek ve gö
   
 |||  
 |-|-|  
-|**Özniteliği**|**Tanım**|  
+|**Öznitelik**|**Tanım**|  
 |Guid|[Gerekli] Görüntü bilinen adına GUID kısmını|  
 |Kimlik|[Gerekli] Resim bilinen adı kimliği bölümü|  
 |Harici|[İsteğe bağlı, varsayılan false] Görüntünün geçerli bildiriminde görüntü bilinen adına başvuruda bulunup bulunmadığını gösterir.|  

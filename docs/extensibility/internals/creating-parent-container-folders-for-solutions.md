@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be768f684a495271f06a2a79a71647a9bbaa8552
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 87fbda8cb55d0d2a6ef9f21a2a7878d4babd3fe6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498876"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830698"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Üst kapsayıcı klasörleri çözümleri oluşturun
 İçinde kaynak denetimi eklentisi API sürümü 1.2, bir kullanıcı bir çözüm içindeki tüm web projeleri için tek bir kök kaynak denetimi hedef belirtebilirsiniz. Bu tek köklü bir süper birleşik kök (SUR) olarak adlandırılır.  
@@ -50,7 +50,7 @@ ms.locfileid: "39498876"
 İçinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], SUR klasörün adını uzantısı olmadan çözüm adı ile aynı olması önerilir. İki sürüm davranış aşağıdaki tabloda özetlenmiştir.  
   
 |Özellik|Kaynak Denetimi Eklentisi API sürümü 1.1|Kaynak Denetimi Eklentisi API sürümü 1.2|  
-|-------------|----------------------------------------------|---------------------------------------------|  
+|-------------| - | - |  
 |SCC için çözüm ekleyin|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
 |Kaynak-denetimli çözüme proje ekleme|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **Not:** Visual Studio çözüm Sur doğrudan alt olduğunu varsayar|  
   

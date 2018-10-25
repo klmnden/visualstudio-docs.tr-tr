@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b20aed36dbde31b63956fa104c5c1a50e0088d1
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 76e7b9433fe76464e7af385081ac3577d53919e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859308"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813904"
 ---
 # <a name="customizing-the-properties-window"></a>Özellikler Penceresini Özelleştirme
 Etki alanına özgü dil (DSL) Visual Studio içinde Özellikler penceresinde davranışını ve görünümünü özelleştirebilirsiniz. DSL tanımındaki her etki alanı sınıfı üzerinde etki alanı özelliklerini tanımlayın. Diyagram üzerinde veya Model Gezgini'nde sınıfının bir örneğini seçtiğinizde varsayılan olarak, her etki alanı özelliği Özellikler penceresinde listelenir. Bunları diyagramdaki şekil alanları eşlenmedi olsa bile bu görmek ve etki alanı özelliklerinin değerlerini düzenlemek, sağlar.
@@ -28,11 +28,11 @@ Etki alanına özgü dil (DSL) Visual Studio içinde Özellikler penceresinde da
 
  **Açıklama**. Bir etki alanı özelliğin açıklamasını iki yerde görüntülenir:
 
--   Kullanıcı özelliği seçtiğinde Özellikler penceresinin alt. Kullanıcıya ne özelliği temsil eden açıklamak için kullanabilirsiniz.
+- Kullanıcı özelliği seçtiğinde Özellikler penceresinin alt. Kullanıcıya ne özelliği temsil eden açıklamak için kullanabilirsiniz.
 
--   Oluşturulan program kodu içinde. API belgeleri ayıklamak için belge özelliklerini kullanıyorsanız, bu özelliğin API açıklamasını olarak görünür.
+- Oluşturulan program kodu içinde. API belgeleri ayıklamak için belge özelliklerini kullanıyorsanız, bu özelliğin API açıklamasını olarak görünür.
 
- **Kategori**. Özellikler penceresinde başlık kategorisidir.
+  **Kategori**. Özellikler penceresinde başlık kategorisidir.
 
 ## <a name="exposing-style-features"></a>Stil özelliklerini gösterme
  Grafik öğelerin dinamik özelliklerin bazıları temsil edilebilir veya *kullanıma sunulan* olarak etki alanı özellikleri. Bu şekilde sunulan bir özellik kullanıcı tarafından güncelleştirilebilir ve daha fazlasını kolayca program kodu tarafından güncelleştirilebilir.
@@ -67,67 +67,67 @@ Etki alanına özgü dil (DSL) Visual Studio içinde Özellikler penceresinde da
 
 ##### <a name="to-forward-a-property-from-another-element"></a>Başka bir öğeden bir özellik iletmek için
 
-1.  Oluşturma bir [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] olarak adlandırılır, bu örnekte, en az iki sınıf içeren çözüm **kitap** ve **Yazar**. İki tür arasında bir ilişki olmalıdır **kitap** ve **Yazar**.
+1. Oluşturma bir [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] olarak adlandırılır, bu örnekte, en az iki sınıf içeren çözüm **kitap** ve **Yazar**. İki tür arasında bir ilişki olmalıdır **kitap** ve **Yazar**.
 
-     Kaynak rolünün çokluğu (rolün **kitap** tarafı) 0.. 1 veya 1..1, olmalıdır böylece her **kitap** varsa **Yazar**.
+    Kaynak rolünün çokluğu (rolün **kitap** tarafı) 0.. 1 veya 1..1, olmalıdır böylece her **kitap** varsa **Yazar**.
 
-2.  İçinde **DSL Gezgini**, sağ **kitap** etki alanı sınıfı ve ardından **ekleme yeni DomainTypeDescriptor**.
+2. İçinde **DSL Gezgini**, sağ **kitap** etki alanı sınıfı ve ardından **ekleme yeni DomainTypeDescriptor**.
 
-     Adlı bir düğüm **özel özellik tanımlayıcılarının yolları** altında görünür **özel tür tanımlayıcısının** düğümü.
+    Adlı bir düğüm **özel özellik tanımlayıcılarının yolları** altında görünür **özel tür tanımlayıcısının** düğümü.
 
-3.  Sağ **özel tür tanımlayıcısının** düğümünü ve ardından **ekleme yeni PropertyPath**.
+3. Sağ **özel tür tanımlayıcısının** düğümünü ve ardından **ekleme yeni PropertyPath**.
 
-     Yeni bir özellik yolu altında görünür **özel özellik tanımlayıcılarının yolları** düğümü.
+    Yeni bir özellik yolu altında görünür **özel özellik tanımlayıcılarının yolları** düğümü.
 
-4.  Yeni özellik yolu seçin ve **özellikleri** penceresinde **özelliğinin yolu** uygun model öğesi yolu.
+4. Yeni özellik yolu seçin ve **özellikleri** penceresinde **özelliğinin yolu** uygun model öğesi yolu.
 
-     Bu özellik sağındaki aşağı oka tıklayarak ağaç görünümünde yolu düzenleyebilirsiniz. Etki alanı yolları hakkında daha fazla bilgi için bkz. [etki alanı yolu sözdizimi](../modeling/domain-path-syntax.md). Düzenlediğinizde, yolun benzemelidir **BookReferencesAuthor.Author/! Yazar**.
+    Bu özellik sağındaki aşağı oka tıklayarak ağaç görünümünde yolu düzenleyebilirsiniz. Etki alanı yolları hakkında daha fazla bilgi için bkz. [etki alanı yolu sözdizimi](../modeling/domain-path-syntax.md). Düzenlediğinizde, yolun benzemelidir **BookReferencesAuthor.Author/! Yazar**.
 
-5.  Ayarlama **özelliği** için **adı** etki alanı özelliğine **Yazar**.
+5. Ayarlama **özelliği** için **adı** etki alanı özelliğine **Yazar**.
 
-6.  Ayarlama **görünen adı** için **yazar adı**.
+6. Ayarlama **görünen adı** için **yazar adı**.
 
-7.  Tüm Şablonları dönüştürme, oluşturma ve DSL çalıştırın.
+7. Tüm Şablonları dönüştürme, oluşturma ve DSL çalıştırın.
 
-8.  Bir modeli diyagramı yazar, kitap oluşturur ve başvuru ilişkisi kullanarak bunları bağlayabilirsiniz. Kitap öğesini seçin ve Özellikler penceresinde kitabı özelliklerine ek olarak yazar adını görmeniz gerekir. Bağlantılı yazarının adını değiştirin veya başka bir yazar kitap bağlayın ve kitap yazar adını değiştiğini gözlemleyin.
+8. Bir modeli diyagramı yazar, kitap oluşturur ve başvuru ilişkisi kullanarak bunları bağlayabilirsiniz. Kitap öğesini seçin ve Özellikler penceresinde kitabı özelliklerine ek olarak yazar adını görmeniz gerekir. Bağlantılı yazarının adını değiştirin veya başka bir yazar kitap bağlayın ve kitap yazar adını değiştiğini gözlemleyin.
 
 ## <a name="custom-property-editors"></a>Özel özellik düzenleyicileri
  Özellik penceresi, düzenleme deneyimi her bir etki alanı özellik türü için uygun bir varsayılan sağlar. Örneğin, bir listeden seçimli türü için bir açılan liste kullanıcının gördüğü ve sayısal bir özellik için kullanıcı basamak girebilirsiniz. Bu yalnızca yerleşik türler için geçerlidir. Dış tür belirtirseniz, kullanıcının özellik değerleri görebilirsiniz, ancak düzenleme olmadan mümkün olacaktır.
 
  Ancak, aşağıdaki düzenleyiciler ve türleri belirtebilirsiniz:
 
-1.  Standart türüyle kullanılan başka bir düzenleyici. Örneğin, bir dize özelliği için bir dosya yolu Düzenleyicisi belirtebilirsiniz.
+1. Standart türüyle kullanılan başka bir düzenleyici. Örneğin, bir dize özelliği için bir dosya yolu Düzenleyicisi belirtebilirsiniz.
 
-2.  Etki alanı özelliği ve bunun için bir düzenleyici için dış tür.
+2. Etki alanı özelliği ve bunun için bir düzenleyici için dış tür.
 
-3.  Bir .NET Düzenleyicisi gibi dosya yolu Düzenleyicisi veya kendi özel özellik düzenleyici oluşturabilirsiniz.
+3. Bir .NET Düzenleyicisi gibi dosya yolu Düzenleyicisi veya kendi özel özellik düzenleyici oluşturabilirsiniz.
 
-     Bir dış tür ve varsayılan Düzenleyicisi olan dize gibi bir tür arasında dönüştürme.
+    Bir dış tür ve varsayılan Düzenleyicisi olan dize gibi bir tür arasında dönüştürme.
 
- Bir DSL içinde bir *dış tür* basit türleri (örneğin, Boole veya Int32) veya dize biri değil herhangi bir tür.
+   Bir DSL içinde bir *dış tür* basit türleri (örneğin, Boole veya Int32) veya dize biri değil herhangi bir tür.
 
 #### <a name="to-define-a-domain-property-that-has-an-external-type"></a>Bir dış türe sahip bir alan özelliği tanımlamak için
 
-1.  İçinde **Çözüm Gezgini**, dış tür içeren derleme (DLL) bir başvuru ekleyin **Dsl** proje.
+1. İçinde **Çözüm Gezgini**, dış tür içeren derleme (DLL) bir başvuru ekleyin **Dsl** proje.
 
-     Derleme, bir .NET bütünleştirilmiş kodu ya da sizin tarafınızdan sağlanan derleme olabilir.
+    Derleme, bir .NET bütünleştirilmiş kodu ya da sizin tarafınızdan sağlanan derleme olabilir.
 
-2.  Türüne eklemek **etki alanı türleri** zaten yapmış sürece listesi.
+2. Türüne eklemek **etki alanı türleri** zaten yapmış sürece listesi.
 
-    1.  DslDefinition.dsl, açın ve **DSL Gezgini**kök düğümüne sağ tıklayın ve ardından **yeni dış türü Ekle**.
+   1.  DslDefinition.dsl, açın ve **DSL Gezgini**kök düğümüne sağ tıklayın ve ardından **yeni dış türü Ekle**.
 
-         Altında yeni bir giriş belirir **etki alanı türleri** düğümü.
+        Altında yeni bir giriş belirir **etki alanı türleri** düğümü.
 
-        > [!WARNING]
-        >  Menü öğesi DSL kök düğümde değil **etki alanı türleri** düğümü.
+       > [!WARNING]
+       >  Menü öğesi DSL kök düğümde değil **etki alanı türleri** düğümü.
 
-    2.  Özellikler penceresinde, adı ve yeni türünün ad alanını ayarlayın.
+   2.  Özellikler penceresinde, adı ve yeni türünün ad alanını ayarlayın.
 
-3.  Bir alan özelliği için bir etki alanı sınıfı, her zamanki şekilde ekleyin.
+3. Bir alan özelliği için bir etki alanı sınıfı, her zamanki şekilde ekleyin.
 
-     Özellikler penceresinde, aşağı açılan listeden dış türünü seçin. **türü** alan.
+    Özellikler penceresinde, aşağı açılan listeden dış türünü seçin. **türü** alan.
 
- Bu aşamada, kullanıcılar özelliğinin değerlerini görüntüleyebilir, ancak panoyu düzenleyemez. Görüntülenen değerleri elde edilir `ToString()` işlevi. Özelliğinin değeri, örneğin bir komut veya kuralın ayarlar program kodu yazabilirsiniz.
+   Bu aşamada, kullanıcılar özelliğinin değerlerini görüntüleyebilir, ancak panoyu düzenleyemez. Görüntülenen değerleri elde edilir `ToString()` işlevi. Özelliğinin değeri, örneğin bir komut veya kuralın ayarlar program kodu yazabilirsiniz.
 
 ### <a name="setting-a-property-editor"></a>Özellik Düzenleyicisi'ni ayarlama
  Etki alanı özelliğine aşağıdaki biçimde bir CLR özniteliği ekleyin:
@@ -136,7 +136,6 @@ Etki alanına özgü dil (DSL) Visual Studio içinde Özellikler penceresinde da
 [System.ComponentModel.Editor (
    typeof(AnEditor),
    typeof(System.Drawing.Design.UITypeEditor))]
-
 ```
 
  Bir özellik özniteliğini kullanarak ayarlayabilirsiniz **özel özniteliği** Özellikler penceresindeki girişi.
@@ -173,11 +172,11 @@ Etki alanına özgü dil (DSL) Visual Studio içinde Özellikler penceresinde da
 
  Türetilen bir sınıf yazarak bir düzenleyici tanımladığınız <xref:System.Drawing.Design.UITypeEditor>. Sınıfınıza geçersiz kılmanız gerekir:
 
--   <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, kullanıcı ile etkileşim kurmanızı ve özellik değerini güncelleştirin.
+- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, kullanıcı ile etkileşim kurmanızı ve özellik değerini güncelleştirin.
 
--   <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, Düzenleyici bir iletişim kutusunu açın veya bir açılan menü sağlamak belirtmek için.
+- <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, Düzenleyici bir iletişim kutusunu açın veya bir açılan menü sağlamak belirtmek için.
 
- Grafik gösterimi özellik kılavuzunda görüntülenecek özelliğin değerini de sağlayabilirsiniz. Bunu yapmak için geçersiz kılma `GetPaintValueSupported`, ve `PaintValue`.  Daha fazla bilgi için bkz. <xref:System.Drawing.Design.UITypeEditor>.
+  Grafik gösterimi özellik kılavuzunda görüntülenecek özelliğin değerini de sağlayabilirsiniz. Bunu yapmak için geçersiz kılma `GetPaintValueSupported`, ve `PaintValue`.  Daha fazla bilgi için bkz. <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 >  Ayrı bir kod dosyasında kod ekleme **Dsl** proje.
@@ -194,7 +193,6 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
     openFileDialog.Title = "Select a text file";
   }
 }
-
 ```
 
  Bu düzenleyici kullanmak için ayarlanmış **özel özniteliği** etki alanı özellik:
@@ -203,7 +201,6 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 [System.ComponentModel.Editor (
    typeof(MyNamespace.TextFileNameEditor)
    , typeof(System.Drawing.Design.UITypeEditor))]
-
 ```
 
  Daha fazla bilgi için bkz. <xref:System.Drawing.Design.UITypeEditor>.
@@ -219,7 +216,6 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 ```csharp
 [System.ComponentModel.TypeConverter
 (typeof(MyTypeConverter))]
-
 ```
 
  Türetilen bir sınıf tanımlama <xref:System.ComponentModel.TypeConverter>. Ayrı bir dosyaya kod eklemek **Dsl** proje. Örneğin:
@@ -313,7 +309,6 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
   }
 
 }
-
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3830f33879101a720a72276ff0c4b7425f46a83f
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 3227b2f17932936e54c244f385a648c583677923
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586358"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831932"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX Uzantı Şeması 2.0 başvurusu
 VSIX dağıtım bildirimi dosyası, bir VSIX paketinin içeriğini açıklar. Dosya biçimi, bir şema tarafından yönetilir. Özel türler ve öznitelikler eklemek bu şema 2.0 sürümünü destekler.  Bildirim şeması genişletilebilir. Yükleyici bildirimi XML öğeleri ve onu anlamıyor öznitelikleri yok sayar.  
@@ -162,33 +162,33 @@ VSIX dağıtım bildirimi dosyası, bir VSIX paketinin içeriğini açıklar. Do
 ### <a name="assets-element"></a>Varlıklar öğesi  
  Bu öğe bir listesini içeren `<Asset>` uzantısı ya da içerik her öğe için etiketleri, bu paket tarafından ortaya.  
   
--   `<Asset>` -Bu öğe aşağıdaki öznitelikler ve öğeler içeriyor:  
+- `<Asset>` -Bu öğe aşağıdaki öznitelikler ve öğeler içeriyor:  
   
-    -   `Type` -Uzantı veya bu öğe tarafından temsil edilen içerik türü. Her `<Asset>` tek bir öğe olmalıdır `Type`, ancak birden çok `<Asset>` öğeleri aynı olabilir `Type`. Bu öznitelik ad alanı kurallarına göre tam bir ad temsil edilebilir. Bilinen türleri şunlardır:  
+  - `Type` -Uzantı veya bu öğe tarafından temsil edilen içerik türü. Her `<Asset>` tek bir öğe olmalıdır `Type`, ancak birden çok `<Asset>` öğeleri aynı olabilir `Type`. Bu öznitelik ad alanı kurallarına göre tam bir ad temsil edilebilir. Bilinen türleri şunlardır:  
   
-        1.  Microsoft.VisualStudio.VsPackage  
+    1. Microsoft.VisualStudio.VsPackage  
   
-        2.  Microsoft.VisualStudio.MefComponent  
+    2. Microsoft.VisualStudio.MefComponent  
   
-        3.  Microsoft.VisualStudio.ToolboxControl  
+    3. Microsoft.VisualStudio.ToolboxControl  
   
-        4.  Microsoft.VisualStudio.Samples  
+    4. Microsoft.VisualStudio.Samples  
   
-        5.  Microsoft.VisualStudio.ProjectTemplate  
+    5. Microsoft.VisualStudio.ProjectTemplate  
   
-        6.  Microsoft.VisualStudio.ItemTemplate  
+    6. Microsoft.VisualStudio.ItemTemplate  
   
-        7.  Microsoft.VisualStudio.Assembly  
+    7. Microsoft.VisualStudio.Assembly  
   
-         Kendi türlerinizi oluşturmak ve bunları benzersiz adlar verin. Visual Studio içindeki çalışma zamanında kodunuzu listeleme ve Uzantı Yöneticisi API aracılığıyla bu özel tür erişim.  
+       Kendi türlerinizi oluşturmak ve bunları benzersiz adlar verin. Visual Studio içindeki çalışma zamanında kodunuzu listeleme ve Uzantı Yöneticisi API aracılığıyla bu özel tür erişim.  
   
-    -   `Path` -Dosya veya klasörün varlığı içeren paket içindeki göreli yolu.  
+  - `Path` -Dosya veya klasörün varlığı içeren paket içindeki göreli yolu.  
     
-    -   `TargetVersion` -belirli bir varlık uygulandığı sürüm aralığı. Varlıklar farklı sürümlerine, Visual Studio'nun birden çok sürümünü sevk edilmesi için kullanılır. Geçerli olması Visual Studio 2017.3 veya daha yenisini gerektirir.
+  - `TargetVersion` -belirli bir varlık uygulandığı sürüm aralığı. Varlıklar farklı sürümlerine, Visual Studio'nun birden çok sürümünü sevk edilmesi için kullanılır. Geçerli olması Visual Studio 2017.3 veya daha yenisini gerektirir.
   
-    -   `AnyAttribute*` -Çalışma zamanında bir ad-değer çiftinin sözlüğü olarak sunulan açık uçlu bir kümesini öznitelikleri.  
+  - `AnyAttribute*` -Çalışma zamanında bir ad-değer çiftinin sözlüğü olarak sunulan açık uçlu bir kümesini öznitelikleri.  
   
-         `<AnyElement>*` -Herhangi bir yapılandırılmış içerik arasında izin verilen bir `<Asset>` başlar ve bitiş etiketi. Tüm öğeleri XmlElement nesnelerin bir listesini sunulur. VSIX uzantılarını yapısal türe özgü meta veriler bildirim dosyasında tanımlayabilir ve bunları çalışma zamanında numaralandırır.  
+     `<AnyElement>*` -Herhangi bir yapılandırılmış içerik arasında izin verilen bir `<Asset>` başlar ve bitiş etiketi. Tüm öğeleri XmlElement nesnelerin bir listesini sunulur. VSIX uzantılarını yapısal türe özgü meta veriler bildirim dosyasında tanımlayabilir ve bunları çalışma zamanında numaralandırır.  
   
 ### <a name="sample-manifest"></a>Örnek bildirimi  
   

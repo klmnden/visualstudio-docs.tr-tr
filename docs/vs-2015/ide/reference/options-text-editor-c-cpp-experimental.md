@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b07bdc7ab114619629ab4ef360ded3bf6655e6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aae8681bf9db0998c1d86ad00112d3228a76081d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285122"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814421"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Seçenekler, metin düzenleyici, C/C++, Deneysel
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,15 +59,15 @@ Bu seçenekler değiştirerek, C veya C++ ortamında programlama, IntelliSense v
   
  Visual Studio Galerisi hakkında ek metin Düzenleyicisi özellikleri için listesi için bkzile [burada](http://go.microsoft.com/fwlink/?LinkId=692016). Bir örnek [C++ hızlı düzeltmeler](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f), aşağıdakileri destekler:  
   
--   **Eksik Ekle #include** -ilgili önerir #include kodunuzu bilinmeyen sembolleri  
+- **Eksik Ekle #include** -ilgili önerir #include kodunuzu bilinmeyen sembolleri  
   
--   **Ekleme simge ad alanı/tam olarak nitelemek** - önceki öğeyi gibi ancak ad alanları için  
+- **Ekleme simge ad alanı/tam olarak nitelemek** - önceki öğeyi gibi ancak ad alanları için  
   
--   **Eksik noktalı virgül Ekle**  
+- **Eksik noktalı virgül Ekle**  
   
--   **MSDN Yardımı** -hata iletilerinizi MSDN'de arama yapın  
+- **MSDN Yardımı** -hata iletilerinizi MSDN'de arama yapın  
   
- Her iki vurgulu bir ampul alın veya Ctrl + nokta (Ctrl +.) varsayılan klavye kısayolu kullanmak için bir dalgalı çizgi kullanabilirsiniz. Klavye kısayolu için belirli bir hata ya da belirtecinde konumlandırılabilir, giriş işaretini gerektirmeyeceği dikkat edin. yalnızca, o satırdaki her şey için öneriler çağrılacak hata ile aynı satırda olabilir.  
+  Her iki vurgulu bir ampul alın veya Ctrl + nokta (Ctrl +.) varsayılan klavye kısayolu kullanmak için bir dalgalı çizgi kullanabilirsiniz. Klavye kısayolu için belirli bir hata ya da belirtecinde konumlandırılabilir, giriş işaretini gerektirmeyeceği dikkat edin. yalnızca, o satırdaki her şey için öneriler çağrılacak hata ile aynı satırda olabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Dile özgü Düzenleyici seçeneklerini ayarlama](../../ide/reference/setting-language-specific-editor-options.md)   

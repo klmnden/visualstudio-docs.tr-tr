@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f49e2e9e23f19a4346080b0e59435128e33849d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e597f13d2627a8b3e40aa65926d1c990be839c38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677267"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833193"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>İzlenecek yol: içerik denetimlerini kullanarak şablon oluşturma
   Bu yönerge, yapılandırılmış ve yeniden kullanılabilir içerik bir Microsoft Office Word şablonu oluşturmak için içerik denetimlerini kullanan bir belge düzeyi özelleştirmeyi oluşturma işlemini gösterir.  
@@ -35,17 +35,17 @@ ms.locfileid: "35677267"
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
--   İçeriği içeren bir tablo oluşturma bir Word şablonu tasarım zamanında denetler.  
+- İçeriği içeren bir tablo oluşturma bir Word şablonu tasarım zamanında denetler.  
   
--   Birleşik giriş kutusu içerik denetimi ve bir açılır liste içerik denetimi program aracılığıyla doldurma.  
+- Birleşik giriş kutusu içerik denetimi ve bir açılır liste içerik denetimi program aracılığıyla doldurma.  
   
--   Kullanıcıların, belirtilen tablo düzenlemelerini engelleme.  
+- Kullanıcıların, belirtilen tablo düzenlemelerini engelleme.  
   
--   Tablo, bir şablon yapı taşları koleksiyonuna ekleme.  
+- Tablo, bir şablon yapı taşları koleksiyonuna ekleme.  
   
--   Bir içerik denetimi oluşturma şablonda kullanılabilir yapı taşlarını görüntüler.  
+- Bir içerik denetimi oluşturma şablonda kullanılabilir yapı taşlarını görüntüler.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
@@ -68,31 +68,31 @@ ms.locfileid: "35677267"
   
 ### <a name="to-create-the-employee-table"></a>Çalışan tablosu oluşturmak için  
   
-1.  Barındırılan Word şablonunda [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Şeritteki tasarımcıya tıklayın **Ekle** sekmesi.  
+1. Barındırılan Word şablonunda [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Şeritteki tasarımcıya tıklayın **Ekle** sekmesi.  
   
-2.  İçinde **tabloları** grubunda **tablo**ve iki sütun ve dört satır içeren bir tablo ekleyin.  
+2. İçinde **tabloları** grubunda **tablo**ve iki sütun ve dört satır içeren bir tablo ekleyin.  
   
-3.  Aşağıdaki sütun benzeyecek şekilde ilk sütunundaki metni yazın:  
+3. Aşağıdaki sütun benzeyecek şekilde ilk sütunundaki metni yazın:  
   
-    ||  
-    |-|  
-    |**Çalışan adı**|  
-    |**İşe Alınma Tarihi**|  
-    |**Başlık**|  
-    |**resmi**|  
+   ||  
+   |-|  
+   |**Çalışan adı**|  
+   |**İşe Alınma Tarihi**|  
+   |**Başlık**|  
+   |**resmi**|  
   
-4.  İkinci sütunda ilk hücreye tıklayın (yanındaki **çalışan adı**).  
+4. İkinci sütunda ilk hücreye tıklayın (yanındaki **çalışan adı**).  
   
-5.  Şerit üzerinde tıklayın **Geliştirici** sekmesi.  
+5. Şerit üzerinde tıklayın **Geliştirici** sekmesi.  
   
-    > [!NOTE]  
-    >  Varsa **Geliştirici** sekme görünür değilse, önce görünür olmalıdır. Daha fazla bilgi için [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+   > [!NOTE]  
+   >  Varsa **Geliştirici** sekme görünür değilse, önce görünür olmalıdır. Daha fazla bilgi için [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  İçinde **denetimleri** grubunda **metin** düğmesi ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") bir eklemekiçin<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>ilk hücreye.  
+6. İçinde **denetimleri** grubunda **metin** düğmesi ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") bir eklemekiçin<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>ilk hücreye.  
   
-7.  İkinci sütunda ikinci hücreyi tıklatın (yanındaki **işe giriş tarihi**).  
+7. İkinci sütunda ikinci hücreyi tıklatın (yanındaki **işe giriş tarihi**).  
   
-8.  İçinde **denetimleri** grubunda **tarih seçici** düğmesi ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") bir eklemekiçin<xref:Microsoft.Office.Tools.Word.DatePickerContentControl> ikinci hücreye.  
+8. İçinde **denetimleri** grubunda **tarih seçici** düğmesi ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") bir eklemekiçin<xref:Microsoft.Office.Tools.Word.DatePickerContentControl> ikinci hücreye.  
   
 9. İkinci sütunda üçüncü hücrede tıklayın (yanındaki **başlık**).  
   
@@ -107,27 +107,27 @@ ms.locfileid: "35677267"
   
 ### <a name="to-create-the-customer-feedback-table"></a>Müşteri geri bildirim tablo oluşturmak için  
   
-1.  Word şablonu, daha önce eklediğiniz çalışan tablosunun satırı tıklatın ve basın **Enter** yeni bir paragrafa eklemek için.  
+1. Word şablonu, daha önce eklediğiniz çalışan tablosunun satırı tıklatın ve basın **Enter** yeni bir paragrafa eklemek için.  
   
-2.  Şerit üzerinde tıklayın **Ekle** sekmesi.  
+2. Şerit üzerinde tıklayın **Ekle** sekmesi.  
   
-3.  İçinde **tabloları** grubunda **tablo**ve iki ve üç satır içeren bir tablo ekleyin.  
+3. İçinde **tabloları** grubunda **tablo**ve iki ve üç satır içeren bir tablo ekleyin.  
   
-4.  Aşağıdaki sütun benzeyecek şekilde ilk sütunundaki metni yazın:  
+4. Aşağıdaki sütun benzeyecek şekilde ilk sütunundaki metni yazın:  
   
-    ||  
-    |-|  
-    |**Müşteri adı**|  
-    |**Memnuniyet derecesi**|  
-    |**Açıklamalar**|  
+   ||  
+   |-|  
+   |**Müşteri adı**|  
+   |**Memnuniyet derecesi**|  
+   |**Açıklamalar**|  
   
-5.  İkinci sütunda ilk hücreye tıklayın (yanındaki **müşteri adı**).  
+5. İkinci sütunda ilk hücreye tıklayın (yanındaki **müşteri adı**).  
   
-6.  Şerit üzerinde tıklayın **Geliştirici** sekmesi.  
+6. Şerit üzerinde tıklayın **Geliştirici** sekmesi.  
   
-7.  İçinde **denetimleri** grubunda **metin** düğmesi ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") bir eklemekiçin<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>ilk hücreye.  
+7. İçinde **denetimleri** grubunda **metin** düğmesi ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") bir eklemekiçin<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>ilk hücreye.  
   
-8.  İkinci sütunda ikinci hücresinde tıklayın (yanındaki **memnuniyeti derecelendirme**).  
+8. İkinci sütunda ikinci hücresinde tıklayın (yanındaki **memnuniyeti derecelendirme**).  
   
 9. İçinde **denetimleri** grubunda **açılır listede** düğmesi ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") eklemek için bir <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> ikinci hücreye.  
   
