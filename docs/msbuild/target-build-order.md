@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7546c2da20c29f0140bd6b9572175ae0c2b019ad
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 13405d197fc5ab64d4c7b7040580f073e36f98c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879375"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812666"
 ---
 # <a name="target-build-order"></a>Hedef derleme sırası
 Başka bir hedef üzerinde çıkışını bir hedef girişi bağlıysa hedefleri sıralanmış olmaları gerekmektedir. Bu öznitelikler, hedef çalıştığı sırayı belirtmek için kullanabilirsiniz:  
   
--   `InitialTargets`. Bu `Project` özniteliği belirtir önce çalıştırılacak hedeflerin hedefleri komut satırında veya belirtilmese bile `DefaultTargets` özniteliği.  
+- `InitialTargets`. Bu `Project` özniteliği belirtir önce çalıştırılacak hedeflerin hedefleri komut satırında veya belirtilmese bile `DefaultTargets` özniteliği.  
   
--   `DefaultTargets`. Bu `Project` özniteliği belirtir hedefleri çalıştırın hedef komut satırında açıkça belirtilmediği takdirde.  
+- `DefaultTargets`. Bu `Project` özniteliği belirtir hedefleri çalıştırın hedef komut satırında açıkça belirtilmediği takdirde.  
   
--   `DependsOnTargets`. Bu `Target` özniteliği, bu hedef çalıştırmadan önce çalıştırılması gereken hedefleri belirtir.  
+- `DependsOnTargets`. Bu `Target` özniteliği, bu hedef çalıştırmadan önce çalıştırılması gereken hedefleri belirtir.  
   
--   `BeforeTargets` ve `AfterTargets`. Bunlar `Target` öznitelikler bu hedeften önce veya sonra belirtilen hedefleri (MSBuild 4.0) çalışması gerektiğini belirtin.  
+- `BeforeTargets` ve `AfterTargets`. Bunlar `Target` öznitelikler bu hedeften önce veya sonra belirtilen hedefleri (MSBuild 4.0) çalışması gerektiğini belirtin.  
   
- Bir sonraki hedef yapı ona bağlı olsa bile bir hedef hiçbir zaman bir yapı sırasında iki kez çalıştırın. Bir hedef çalıştırıldıktan sonra kendi derleme katkısı tamamlanmıştır.  
+  Bir sonraki hedef yapı ona bağlı olsa bile bir hedef hiçbir zaman bir yapı sırasında iki kez çalıştırın. Bir hedef çalıştırıldıktan sonra kendi derleme katkısı tamamlanmıştır.  
   
- Hedefleri olabilir bir `Condition` özniteliği. Belirtilen koşulun değerlendirme sonucu `false`, hedef yürütülen değildir ve yapı üzerinde hiçbir etkisi olmaz. Koşullar hakkında daha fazla bilgi için bkz. [koşullar](../msbuild/msbuild-conditions.md).  
+  Hedefleri olabilir bir `Condition` özniteliği. Belirtilen koşulun değerlendirme sonucu `false`, hedef yürütülen değildir ve yapı üzerinde hiçbir etkisi olmaz. Koşullar hakkında daha fazla bilgi için bkz. [koşullar](../msbuild/msbuild-conditions.md).  
   
 ## <a name="initial-targets"></a>Başlangıç hedefleri  
  `InitialTargets` Özniteliği [proje](../msbuild/project-element-msbuild.md) öğesi belirtir önce çalıştırılacak hedeflerin hedefleri komut satırında veya belirtilmese bile `DefaultTargets` özniteliği. Başlangıç hedefleri genellikle hata denetlemek için kullanılır.  

@@ -17,12 +17,12 @@ ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7dda375cb4657bc6fcc2089341600611b370e52b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c7422b0dae02b12d731713f6da416361798d3276
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216105"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824317"
 ---
 # <a name="elimination-of-sak-files"></a>~SAK Dosyalarının Ortadan Kaldırılması
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Kaynak Denetimi Eklentisi API 1.2, ~ SAK dosyalarının, özellik bayrakları ve
 ## <a name="sak-files"></a>~ SAK dosyalarının  
  Visual Studio .NET 2003 oluşturulan geçici dosyalar ön ekine sahip ~ SAK. Bu dosyalar kaynak denetimi eklentisi destekleyip desteklemediğini belirlemek için kullanılır:  
   
--   MSSCCPRJ. SCC dosyası.  
+- MSSCCPRJ. SCC dosyası.  
   
--   Birden çok (paylaşılan) kullanıma alma.  
+- Birden çok (paylaşılan) kullanıma alma.  
   
- Kaynak Denetimi Eklentisi API 1.2 ile sağlanan gelişmiş işlevleri destekleyen eklentileri için yeni özellikler, bayraklar ve İşlevler, aşağıdaki bölümlerde ayrıntılı kullanımı geçici dosyalar oluşturmadan bu özellikler IDE algılayabilir.  
+  Kaynak Denetimi Eklentisi API 1.2 ile sağlanan gelişmiş işlevleri destekleyen eklentileri için yeni özellikler, bayraklar ve İşlevler, aşağıdaki bölümlerde ayrıntılı kullanımı geçici dosyalar oluşturmadan bu özellikler IDE algılayabilir.  
   
 ## <a name="new-capability-flags"></a>Yeni özellik bayrakları  
  `SCC_CAP_SCCFILE`  

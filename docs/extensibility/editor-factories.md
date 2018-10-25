@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07c94dda2a04ca1b69c2dbfd59b0df575f1b6c73
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 9f4dc0eca2c74161abb9cc4afe3917a160a18422
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638065"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933137"
 ---
 # <a name="editor-factories"></a>Düzenleyici fabrikaları
 Bir düzenleyici fabrikası Düzenleyicisi nesneleri oluşturur ve bunları fiziksel bir görünüm olarak bilinen bir pencere çerçevesi koyar. Belge verileri ve düzenleyiciler ve tasarımcılar oluşturmak için gerekli olan belge görünümü nesneleri oluşturur. Bir düzenleyici fabrikası, Visual Studio çekirdek Düzenleyicisi ve herhangi bir standart düzenleyici oluşturmak için gereklidir. Özel bir düzenleyici Ayrıca isteğe bağlı olarak bir düzenleyici fabrikası ile oluşturulabilir.  
@@ -46,13 +46,13 @@ Bir düzenleyici fabrikası Düzenleyicisi nesneleri oluşturur ve bunları fizi
 ## <a name="the-editor-factory-registration-process"></a>Düzenleyici fabrikası kayıt işlemi  
  Visual Studio Düzenleyicisi Fabrika kullanarak düzenleyiciniz yüklediğinde aşağıdaki süreç gerçekleşir:  
   
-1.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Proje sistem çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
+1. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Proje sistem çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
   
-2.  Bu yöntem, düzenleyici üreteci döndürür. Visual Studio gecikmeler ancak, düzenleyicinin paket proje Sistemi Düzenleyicisi gerçekten gereken kadar yükleniyor.  
+2. Bu yöntem, düzenleyici üreteci döndürür. Visual Studio gecikmeler ancak, düzenleyicinin paket proje Sistemi Düzenleyicisi gerçekten gereken kadar yükleniyor.  
   
-3.  Visual Studio Proje Sistemi Düzenleyicisi gerektiğinde, çağıran <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, hem belge görünümü hem de belge veri nesneleri döndüren özel bir yöntem.  
+3. Visual Studio Proje Sistemi Düzenleyicisi gerektiğinde, çağıran <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, hem belge görünümü hem de belge veri nesneleri döndüren özel bir yöntem.  
   
-4.  Varsa, düzenleyici fabrikası kullanarak Visual Studio tarafından çağıran <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> hem bir belge veri nesnesi hem de bir belge görünümü nesnesi döndürür, Visual Studio sonra belge penceresi oluşturur, belge view nesnesinin yerleştirir ve çalışan belgeye bir giriş yapar Belge veri nesnesi için tablo (RDT).  
+4. Varsa, düzenleyici fabrikası kullanarak Visual Studio tarafından çağıran <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> hem bir belge veri nesnesi hem de bir belge görünümü nesnesi döndürür, Visual Studio sonra belge penceresi oluşturur, belge view nesnesinin yerleştirir ve çalışan belgeye bir giriş yapar Belge veri nesnesi için tablo (RDT).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   

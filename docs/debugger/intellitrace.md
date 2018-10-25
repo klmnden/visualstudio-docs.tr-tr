@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfa8b1430bde66416a47d2bbc93bd6f728c0709b
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: e2ee2e3662e550e013b2f8436cc32ee9585a419d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542462"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825427"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -52,11 +52,11 @@ IntelliTrace, Visual Studio Enterprise edition (ancak Professional veya Communit
 
 ## <a name="IntelliTraceSupport"></a> IntelliTrace ile hangi uygulamaların ayıklayabilirim?
 
-|||
-|-|-|
-|**Tam destek**|-.NET Framework 2.0 veya üzeri sürümleri kullanan Visual Basic ve Visual C# uygulamalar.<br/>ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows iş akışı, SharePoint 2010, SharePoint 2013 ve 64-bit uygulamalar da dahil olmak üzere çoğu uygulamada hata ayıklaması yapabilirsiniz.<br/>IntelliTrace ile SharePoint uygulamalarında hata ayıklamak için bkz: [izlenecek yol: bir SharePoint uygulaması tarafından IntelliTrace kullanarak hata ayıklama](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Microsoft Azure uygulamalarında IntelliTrace ile hata ayıklamak için bkz: [bulut hizmet yayımlanan IntelliTrace ve Visual Studio ile hata ayıklama](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|
-|**Sınırlı destek**|-Windows Destek IntelliTrace geri adım atmayı kullanarak anlık görüntüleri görüntüleme hedefleyen yerel uygulamalar. Yalnızca hata ayıklayıcı ve özel durum olaylarını desteklenir.<br />-.NET core ve ASP.NET Core uygulamaları yerel hata ayıklama belirli olaylar yalnızca (MVC denetleyicisi, ADO.NET ve HTTPClicent olaylar) desteklenir. Tek başına Toplayıcı, .NET Core veya ASP.NET Core uygulamaları için desteklenmez.<br />-Deneysel olarak F # uygulamaları<br />-Yalnızca olaylar için desteklenen UWP uygulamaları|
-|**Desteklenmiyor**|-Diğer diller ve komut dosyası<br />-Windows Hizmetleri, Silverlight, Xbox veya [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] uygulamaları|
+| | |
+|---------------------| - |
+| **Tam destek** | -.NET Framework 2.0 veya üzeri sürümleri kullanan Visual Basic ve Visual C# uygulamalar.<br/>ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows iş akışı, SharePoint 2010, SharePoint 2013 ve 64-bit uygulamalar da dahil olmak üzere çoğu uygulamada hata ayıklaması yapabilirsiniz.<br/>IntelliTrace ile SharePoint uygulamalarında hata ayıklamak için bkz: [izlenecek yol: bir SharePoint uygulaması tarafından IntelliTrace kullanarak hata ayıklama](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Microsoft Azure uygulamalarında IntelliTrace ile hata ayıklamak için bkz: [bulut hizmet yayımlanan IntelliTrace ve Visual Studio ile hata ayıklama](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services). |
+| **Sınırlı destek** | -Windows Destek IntelliTrace geri adım atmayı kullanarak anlık görüntüleri görüntüleme hedefleyen yerel uygulamalar. Yalnızca hata ayıklayıcı ve özel durum olaylarını desteklenir.<br />-.NET core ve ASP.NET Core uygulamaları yerel hata ayıklama belirli olaylar yalnızca (MVC denetleyicisi, ADO.NET ve HTTPClicent olaylar) desteklenir. Tek başına Toplayıcı, .NET Core veya ASP.NET Core uygulamaları için desteklenmez.<br />-Deneysel olarak F # uygulamaları<br />-Yalnızca olaylar için desteklenen UWP uygulamaları |
+| **Desteklenmiyor** | -Diğer diller ve komut dosyası<br />-Windows Hizmetleri, Silverlight, Xbox veya [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] uygulamaları |
 
 > [!NOTE]
 > Zaten çalışan bir işlemde hata ayıklamak istiyorsanız, yalnızca IntelliTrace olayları (çağrı bilgileri) toplayabilir. Yerel makinede yalnızca bir 32 bit veya 64-bit işleme iliştirebilirsiniz. İşleme İliştir önce meydana gelen olayları toplanmadı.
@@ -77,7 +77,7 @@ Bu kaynaklardan IntelliTrace verisi kaydedebilirsiniz:
 
 - IIS'de barındırılan ASP.NET web uygulamaları ya da Microsoft Monitoring Agent kullandığınızda dağıtımda tek başına ya da System Center 2012 ile birlikte çalışan SharePoint 2010 ve SharePoint 2013 uygulamaları. Bkz: [IntelliTrace tek başına toplayıcıyı kullanma](../debugger/using-the-intellitrace-stand-alone-collector.md) ve [Microsoft Monitoring Agent ile izleme](http://technet.microsoft.com/library/dn465153.aspx).
 
- IntelliTrace'in hata ayıklamada yardımcı olması ile ilgili bazı örnekler aşağıdadır:
+  IntelliTrace'in hata ayıklamada yardımcı olması ile ilgili bazı örnekler aşağıdadır:
 
 - Uygulamanız bir veri dosyasını bozdu, ancak bu olayın nerede meydana geldiğini bilmiyorsunuz.
 
@@ -111,11 +111,11 @@ Varsayılan olarak, IntelliTrace yalnızca IntelliTrace olayları kaydeder: hata
 
      Varsayılan olarak, performansa yardımcı olmak için IntelliTrace hata ayıklayıcı olayında olası her değeri kaydetmez. Bunun yerine, bu değerleri kaydeder:
 
-    - Değerler **Yereller** penceresi. Tutun **Yereller** penceresinde bu değerleri görmek için açık.
+  - Değerler **Yereller** penceresi. Tutun **Yereller** penceresinde bu değerleri görmek için açık.
 
-    - Değerler **Otolar** penceresi **Otolar** penceresini aç
+  - Değerler **Otolar** penceresi **Otolar** penceresini aç
 
-    - Kaynak penceresinde değerini görmek için bir değişkenin üzerine fare işaretçisini getirdiğinizde görüntülenen DataTips değerleri. IntelliTrace sabitlenmiş DataTips değerlerini toplamaz.
+  - Kaynak penceresinde değerini görmek için bir değişkenin üzerine fare işaretçisini getirdiğinizde görüntülenen DataTips değerleri. IntelliTrace sabitlenmiş DataTips değerlerini toplamaz.
 
     IntelliTrace olayları ve anlık görüntüler modu etkin olduğunda, IntelliTrace her hata ayıklayıcıya uygulamanın işlem anlık görüntüsünü alma **kesme noktası** ve **adım** olay. Bu değerleri kaydeder **Yereller**, **Otolar**, ve **Watch** windows, windows veya açık olup ne olursa olsun. Tüm sabitlenmiş veri ipuçları değerlerde de toplanacak.
 

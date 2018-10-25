@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 403b85ba7c5fc45a2809f695ce038a4e1576c93a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2b330dfc360a4986f5e255fc6369b819eabd4ebf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382545"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836443"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>İzlenecek yol: Modele Erişen Metin Şablonunda Hata Ayıklama
 Kaynak kodu veya oluşturulan kodun derlediğinde şablon altyapısı dönüştürürken, Değiştir veya metin şablonları bir etki alanına özgü dil çözümünde eklediğinizde, hatalar alabilirsiniz. Aşağıdaki örneklerde bir metin şablonunda hata ayıklama için yapabileceğiniz şeylerden bazıları gösterilmektedir.
@@ -25,15 +25,15 @@ Kaynak kodu veya oluşturulan kodun derlediğinde şablon altyapısı dönüşt�
 ## <a name="creating-a-domain-specific-language-solution"></a>Bir etki alanına özgü dil çözümü oluşturma
  Bu yordamda aşağıdaki özelliklere sahip bir etki alanına özgü dil çözümü oluşturun:
 
--   Ad: DebuggingTestLanguage
+- Ad: DebuggingTestLanguage
 
--   Çözüm şablonu: en az bir dil
+- Çözüm şablonu: en az bir dil
 
--   Dosya uzantısı: .ddd
+- Dosya uzantısı: .ddd
 
--   Şirket adı: Fabrikam
+- Şirket adı: Fabrikam
 
- Bir etki alanına özgü dil çözümü oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: bir etki alanına özgü dil çözümü oluşturma](../modeling/how-to-create-a-domain-specific-language-solution.md).
+  Bir etki alanına özgü dil çözümü oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: bir etki alanına özgü dil çözümü oluşturma](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="creating-a-text-template"></a>Bir metin şablonu oluşturma
  Bir metin şablonu çözümünüze ekleyin.

@@ -15,25 +15,25 @@ ms.assetid: f69972d0-809d-40df-9da3-04738791391c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bdadec54c5b28ae77d4905d2884bbee2d1f2a2ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae5380f360ca1a18bcf0edafea762417084aa3d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298837"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817464"
 ---
 # <a name="operational-modes"></a>Çalışma Modları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Üç moddan, IDE, şu şekilde çalışabilir vardır:  
   
--   [Tasarım modu](#vsconoperationalmodesanchor1)  
+- [Tasarım modu](#vsconoperationalmodesanchor1)  
   
--   [Çalıştırma modu](#vsconoperationalmodesanchor2)  
+- [Çalıştırma modu](#vsconoperationalmodesanchor2)  
   
--   [Kesme modu](#vsconoperationalmodesanchor3)  
+- [Kesme modu](#vsconoperationalmodesanchor3)  
   
- Özel hata ayıklama altyapısı (DE) bu modları arasında nasıl geçiş geçiş yöntemleriyle ilgili bilgi sahibi olmasını gerektiren bir uygulama kararıdır. DE olabilir veya doğrudan bu modlardan uygulayamaz. Bu gerçekten kullanıcı eylemi veya DE olayları temel alarak geçiş hata ayıklama paketi modları modlarıdır. Örneğin, bir DE durdurma olayından tarafından kesme modu için çalışma moduna geçiş instigated. Sonu modunda veya adım modunda çalıştırın ya da geçiş adımı veya çalıştırma gibi işlemleri gerçekleştiren kullanıcı tarafından instigated. DE geçiş hakkında daha fazla bilgi için bkz: [yürütme denetimi](../../extensibility/debugger/control-of-execution.md).  
+  Özel hata ayıklama altyapısı (DE) bu modları arasında nasıl geçiş geçiş yöntemleriyle ilgili bilgi sahibi olmasını gerektiren bir uygulama kararıdır. DE olabilir veya doğrudan bu modlardan uygulayamaz. Bu gerçekten kullanıcı eylemi veya DE olayları temel alarak geçiş hata ayıklama paketi modları modlarıdır. Örneğin, bir DE durdurma olayından tarafından kesme modu için çalışma moduna geçiş instigated. Sonu modunda veya adım modunda çalıştırın ya da geçiş adımı veya çalıştırma gibi işlemleri gerçekleştiren kullanıcı tarafından instigated. DE geçiş hakkında daha fazla bilgi için bkz: [yürütme denetimi](../../extensibility/debugger/control-of-execution.md).  
   
 ##  <a name="vsconoperationalmodesanchor1"></a> Tasarım modu  
  Tasarım modu süre içerisinde hata ayıklama uygulamanızda özellikleri ayarlayabilirsiniz Visual Studio hata ayıklama, nonrunning durum şeklindedir.  

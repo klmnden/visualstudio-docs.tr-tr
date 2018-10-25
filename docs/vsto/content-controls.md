@@ -41,25 +41,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b1006a8c4b04fcb935d651f65031764a874b75f8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6880437616f2a1250488e5faaf910823a1b4b58a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677753"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940235"
 ---
 # <a name="content-controls"></a>İçerik denetimleri
   İçerik denetimleri tasarım belgeleri ve bu özelliklere sahip şablonları sağlamak sizin için bir yol:  
   
--   Girdileri form gibi uygulanmayacaksa bir kullanıcı arabirimi (UI).  
+- Girdileri form gibi uygulanmayacaksa bir kullanıcı arabirimi (UI).  
   
--   Kullanıcıların belgenin veya şablonun korunan bölümlerini düzenlemesini önlemek kısıtlamaları. Daha fazla bilgi için [içerik denetimlerini kullanarak belge bölümlerini koruma](#Protection).  
+- Kullanıcıların belgenin veya şablonun korunan bölümlerini düzenlemesini önlemek kısıtlamaları. Daha fazla bilgi için [içerik denetimlerini kullanarak belge bölümlerini koruma](#Protection).  
   
--   Bir veri kaynağına veri bağlama. Daha fazla bilgi için [içerik denetimlerine veri bağlama](#DataBinding).  
+- Bir veri kaynağına veri bağlama. Daha fazla bilgi için [içerik denetimlerine veri bağlama](#DataBinding).  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [Word 2007 için veri bağlama denetimleri Office sistemi (3.0) için Visual Studio araçları kullanarak içerik](http://go.microsoft.com/fwlink/?LinkId=136785).  
+  ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [Word 2007 için veri bağlama denetimleri Office sistemi (3.0) için Visual Studio araçları kullanarak içerik](http://go.microsoft.com/fwlink/?LinkId=136785).  
   
 ## <a name="overview-of-content-controls"></a>İçerik denetimlerine genel bakış  
  İçerik denetimleri, her iki kullanıcı için giriş ve yazdırma için iyileştirilmiş bir kullanıcı Arabirimi sağlar. Belge bir içerik denetimi eklediğinizde, denetimin kenarlık, bir başlık ve kullanıcıya yönergeler sağlayan geçici metin tarafından tanımlanır. Kenarlık ve denetimi başlığı belge yazdırılan sürümlerde görünmez.  
@@ -68,11 +68,11 @@ ms.locfileid: "35677753"
   
  İçerik, ayrıca Yardım aşağıdakileri denetler:  
   
--   Kullanıcının düzenleme veya belge parçalarını silmesini engeller. Bu, bir belge veya kullanıcıların okuma, ancak düzenleyemez şablon bilgileri varsa veya kullanıcıların içerik denetimleri Düzen ancak silme istiyorsanız kullanışlıdır.  
+- Kullanıcının düzenleme veya belge parçalarını silmesini engeller. Bu, bir belge veya kullanıcıların okuma, ancak düzenleyemez şablon bilgileri varsa veya kullanıcıların içerik denetimleri Düzen ancak silme istiyorsanız kullanışlıdır.  
   
--   Bir belge veya şablon bölümleri verilere bağlayın. İçerik denetimleri veritabanı alanları, yönetilen nesneleri adlarınıza bağlayabileceğiniz [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)], belge ve diğer veri kaynakları depolanan XML öğeleri.  
+- Bir belge veya şablon bölümleri verilere bağlayın. İçerik denetimleri veritabanı alanları, yönetilen nesneleri adlarınıza bağlayabileceğiniz [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)], belge ve diğer veri kaynakları depolanan XML öğeleri.  
   
- Belge düzeyinde projelerde belgenize tasarım zamanında veya çalışma zamanında içerik denetimlerine ekleyebilirsiniz. VSTO eklenti projesinde herhangi bir açık belgeye çalışma zamanında içerik denetimlerine ekleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Word belgelerine içerik denetimleri ekleme](../vsto/how-to-add-content-controls-to-word-documents.md).  
+  Belge düzeyinde projelerde belgenize tasarım zamanında veya çalışma zamanında içerik denetimlerine ekleyebilirsiniz. VSTO eklenti projesinde herhangi bir açık belgeye çalışma zamanında içerik denetimlerine ekleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Word belgelerine içerik denetimleri ekleme](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
 > [!NOTE]  
 >  Open XML biçiminde kaydedilen belgelerde içerik denetimleri kullanabilirsiniz. Word 97-2003 belgesi kaydedilen belgelerde içerik denetimlerini kullanamazsınız (*.doc*) biçimi.  
@@ -133,11 +133,11 @@ ms.locfileid: "35677753"
   
  Bir içerik denetimi içinde korumak istediğiniz alan ise kullanıcıların düzenleme veya silmesini önlemek için içerik denetimi özelliklerini kullanabilirsiniz:  
   
--   **LockContents** özelliği kullanıcılar içeriği düzenlemesini engeller.  
+- **LockContents** özelliği kullanıcılar içeriği düzenlemesini engeller.  
   
--   **LockContentControl** özelliği kullanıcılar silmesini engeller.  
+- **LockContentControl** özelliği kullanıcılar silmesini engeller.  
   
- Korumak istediğiniz alanı içinde bir içerik denetimi değilse veya içerik denetimleri ve diğer içerik türlerini içeren bir alan korumak istiyorsanız, size tüm alanı koyabilirsiniz bir <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Diğer içerik denetimleri farklı bir <xref:Microsoft.Office.Tools.Word.GroupContentControl> kullanıcıya görünür olan kullanıcı Arabirimi sağlar. Tek amacı, kullanıcıların düzenleyemeyeceği bir bölge tanımlamaktır.  
+  Korumak istediğiniz alanı içinde bir içerik denetimi değilse veya içerik denetimleri ve diğer içerik türlerini içeren bir alan korumak istiyorsanız, size tüm alanı koyabilirsiniz bir <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Diğer içerik denetimleri farklı bir <xref:Microsoft.Office.Tools.Word.GroupContentControl> kullanıcıya görünür olan kullanıcı Arabirimi sağlar. Tek amacı, kullanıcıların düzenleyemeyeceği bir bölge tanımlamaktır.  
   
 > [!NOTE]  
 >  Oluşturursanız, bir <xref:Microsoft.Office.Tools.Word.GroupContentControl> katıştırılmış içerik denetimleri içeren, katıştırılmış içerik denetimleri otomatik olarak korunmaz. Kullanmalısınız **LockContents** her özellik katıştırılmış kullanıcıların içeriklerini düzenlemesini önlemek için denetimi.  
@@ -149,11 +149,11 @@ ms.locfileid: "35677753"
   
  İçerik denetimleri, veri bağlama seçenekler aşağıda belirtilmiştir:  
   
--   İçerik denetimleri, Windows Forms aynı veri bağlama modelini kullanarak veritabanı alanları veya yönetilen nesnelere bağlayabilirsiniz.  
+- İçerik denetimleri, Windows Forms aynı veri bağlama modelini kullanarak veritabanı alanları veya yönetilen nesnelere bağlayabilirsiniz.  
   
--   İçerik denetimleri, XML parçalarının öğelere bağlayabilirsiniz (olarak da adlandırılan *özel XML bölümleri*) belge içinde gömülü.  
+- İçerik denetimleri, XML parçalarının öğelere bağlayabilirsiniz (olarak da adlandırılan *özel XML bölümleri*) belge içinde gömülü.  
   
- Konak denetimleri Office çözümlerinde veri bağlama genel bakış için bkz: [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md).  
+  Konak denetimleri Office çözümlerinde veri bağlama genel bakış için bkz: [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
 ### <a name="use-the-windows-forms-data-binding-model"></a>Windows Forms veri bağlama modelini kullanın  
  Çoğu içerik denetimleri, Windows Forms kullanan basit veri bağlama modelini destekler. Basit veri bağlama, bir denetim bir veri tablosunun bir sütunu bir değer gibi bir tek veri öğesine bağlı olduğu anlamına gelir. Daha fazla bilgi için [veri bağlama ve Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  

@@ -5,19 +5,19 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 10/10/2018
+ms.date: 10/23/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: ae0c5d95c21385a7230a3707cd8e9729b5d2b1fb
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 7479b92fd8e249c44f03ba3e9dcd1672f0cf7866
+ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073687"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991581"
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 derleme numaraları ve yayın tarihleri
 
@@ -25,6 +25,7 @@ Aşağıdaki tabloda, Visual Studio 2017 için derleme numaraları ve yayın tar
 
 | **Sürüm**| **Kanal** | **Yayın tarihi** | **Derleme sürümü** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.0 preview 4 | Önizleme | 23 Ekim 2018 | 15.9.28219.56 |
 | 15.8.7 | Sürüm | 10 Ekim 2018 | 15.8.28010.2046 |
 | 15.0.19 | Sürüm | 10 Ekim 2018 | 15.0.26228.57 |
 | 15.9.0 preview 3 | Önizleme | 2 Ekim 2018 | 15.9.28128.56 |

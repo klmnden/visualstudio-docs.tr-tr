@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00cfaa2957f1dcb5fcfd9e7404f061d67cc44094
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: cc27aa96b0e893ada745533d070b3b7aa29264e2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924388"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937817"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Nasıl yapılır: temel Phong gölgelendiricisi oluşturma
 
@@ -29,19 +29,19 @@ Lambert aydınlatma modeli hakkında daha fazla bilgi için bkz: [nasıl yapıl�
 
 Başlamadan önce emin **özellikleri** penceresi ve **araç kutusu** görüntülenir.
 
-1.  Bölümünde anlatıldığı gibi bir Lambert gölgelendiricisi oluşturma [nasıl yapılır: temel Lambert gölgelendiricisi oluşturma](../designers/how-to-create-a-basic-lambert-shader.md).
+1. Bölümünde anlatıldığı gibi bir Lambert gölgelendiricisi oluşturma [nasıl yapılır: temel Lambert gölgelendiricisi oluşturma](../designers/how-to-create-a-basic-lambert-shader.md).
 
-2.  Bağlantı kesme **Lambert** düğümünden **son rengini** düğümü. Seçin **RGB** , terminal **Lambert** düğümünü seçip **Bağlantıları Kes**. Bu, sonraki adımda eklenen düğümü için yer sağlar.
+2. Bağlantı kesme **Lambert** düğümünden **son rengini** düğümü. Seçin **RGB** , terminal **Lambert** düğümünü seçip **Bağlantıları Kes**. Bu, sonraki adımda eklenen düğümü için yer sağlar.
 
-3.  Ekle bir **Ekle** grafiğe düğüm. İçinde **araç kutusu**altında **matematik**seçin **Ekle** ve tasarım yüzeyine taşıyın.
+3. Ekle bir **Ekle** grafiğe düğüm. İçinde **araç kutusu**altında **matematik**seçin **Ekle** ve tasarım yüzeyine taşıyın.
 
-4.  Ekleme bir **Specular** grafiğe düğüm. İçinde **araç kutusu**altında **yardımcı programı**seçin **Specular** ve tasarım yüzeyine taşıyın.
+4. Ekleme bir **Specular** grafiğe düğüm. İçinde **araç kutusu**altında **yardımcı programı**seçin **Specular** ve tasarım yüzeyine taşıyın.
 
-5.  Yansımalı katkı ekleyin. Taşıma **çıkış** , terminal **Specular** düğüme **X** , terminal **Ekle** düğümünü ve ardından taşıyın **çıkış**  , terminal **Lambert** düğüme **Y** , terminal **Ekle** düğümü. Bu bağlantılar piksel toplam dağıtma ve Yansımalı renk katkısını birleştirin.
+5. Yansımalı katkı ekleyin. Taşıma **çıkış** , terminal **Specular** düğüme **X** , terminal **Ekle** düğümünü ve ardından taşıyın **çıkış**  , terminal **Lambert** düğüme **Y** , terminal **Ekle** düğümü. Bu bağlantılar piksel toplam dağıtma ve Yansımalı renk katkısını birleştirin.
 
-6.  Hesaplanan renk değeri son rengi bağlanın. Taşıma **çıkış** , terminal **Ekle** düğüme **RGB** , terminal **son rengini** düğümü.
+6. Hesaplanan renk değeri son rengi bağlanın. Taşıma **çıkış** , terminal **Ekle** düğüme **RGB** , terminal **son rengini** düğümü.
 
- Aşağıdaki resimde tamamlanmış gölgelendirici grafiği ve çaydanlık modeline uygulanan gölgelendiricinin önizlemesini gösterir.
+   Aşağıdaki resimde tamamlanmış gölgelendirici grafiği ve çaydanlık modeline uygulanan gölgelendiricinin önizlemesini gösterir.
 
 > [!NOTE]
 > Bu çizimde gösterilen gölgelendirici etkisini daha iyi göstermek için turuncu renk kullanarak belirtilmiş **MaterialDiffuse** kullanarakgölgelendiricivemetalikgörünümlübirsonparametresibelirtilmedi**MaterialSpecular** ve **MaterialSpecularPower** parametreleri. Gölgelendiricileri Önizleme bölümünde malzeme parametreleri hakkında daha fazla bilgi için bkz. [gölgelendirici Tasarımcısı](../designers/shader-designer.md).

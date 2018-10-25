@@ -19,12 +19,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab8ab81c83f98a7a35620db7cbb10a0f700d78e4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 831fb08941e16abdb197d3a25e71f2a20fcb14cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172750"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909685"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Derleme ve Bildirim İmzalamayı Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,23 +40,23 @@ Tanımlayıcı ad imzalama bir yazılım bileşeni genel olarak benzersiz bir ki
 ## <a name="asset-types-and-signing"></a>Varlık türleri ve imzalama  
  .NET derlemelerini ve uygulama bildirimleri imzalayabilirsiniz. Bunlar aşağıdakileri içerir:  
   
--   yürütülebilir dosyalar (.exe)  
+- yürütülebilir dosyalar (.exe)  
   
--   uygulama bildirimleri (. exe.manifest)  
+- uygulama bildirimleri (. exe.manifest)  
   
--   dağıtım bildirimleri (.application)  
+- dağıtım bildirimleri (.application)  
   
--   Paylaşılan bileşen derlemeleri (.dll)  
+- Paylaşılan bileşen derlemeleri (.dll)  
   
- Aşağıdaki varlık türleri oturum açmanız gerekir:  
+  Aşağıdaki varlık türleri oturum açmanız gerekir:  
   
-1.  Derlemeleri, Genel Derleme Önbelleği (GAC) bunları dağıtmak istiyorsanız.  
+1. Derlemeleri, Genel Derleme Önbelleği (GAC) bunları dağıtmak istiyorsanız.  
   
-2.  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Uygulama ve dağıtım bildirimleri. Visual Studio, bu uygulamalar için varsayılan olarak imzalama sağlar.  
+2. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Uygulama ve dağıtım bildirimleri. Visual Studio, bu uygulamalar için varsayılan olarak imzalama sağlar.  
   
-3.  COM birlikte çalışabilirlik için kullanılan birincil birlikte çalışma derlemelerini. Birincil birlikte çalışma derlemesi bir COM tür kitaplığından oluştururken, TLBIMP yardımcı programı güçlü adlandırma zorlar.  
+3. COM birlikte çalışabilirlik için kullanılan birincil birlikte çalışma derlemelerini. Birincil birlikte çalışma derlemesi bir COM tür kitaplığından oluştururken, TLBIMP yardımcı programı güçlü adlandırma zorlar.  
   
- Genel olarak yürütülebilir dosyaları kaydolma. Kesin adlandırılmış bir bileşeni uygulama ile dağıtılan kesin adlandırılmış bir bileşen başvuramaz. Visual Studio uygulama yürütülebilir dosyaları oturum açmasını sağlamayan ancak bunun yerine zayıf adlı yürütülebilir öğeye işaret uygulama bildirimini imzalar. Genellikle, imzalama, bağımlılıkları yönetmek daha zor zorlaştırabilir çünkü uygulamanıza özel bileşenler imzalama kaçınmanız gerekir.  
+   Genel olarak yürütülebilir dosyaları kaydolma. Kesin adlandırılmış bir bileşeni uygulama ile dağıtılan kesin adlandırılmış bir bileşen başvuramaz. Visual Studio uygulama yürütülebilir dosyaları oturum açmasını sağlamayan ancak bunun yerine zayıf adlı yürütülebilir öğeye işaret uygulama bildirimini imzalar. Genellikle, imzalama, bağımlılıkları yönetmek daha zor zorlaştırabilir çünkü uygulamanıza özel bileşenler imzalama kaçınmanız gerekir.  
   
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Bir derlemeyi Visual Studio'da oturum açma  
  Bir uygulama veya bileşenin kullanarak oturum **imzalama** Proje Özellikleri penceresi için sekmesinde ('nde proje düğümüne sağ tıklayın **Çözüm Gezgini** seçip **özellikleri**, veya tür **proje özellikleri** içinde **hızlı başlatma** penceresinde ya da alt + ENTER tuşlarına basın **Çözüm Gezgini** pencere). Seçin **imzalama** sekmesine ve ardından seçin **derlemeyi imzalamayı** onay kutusu.  

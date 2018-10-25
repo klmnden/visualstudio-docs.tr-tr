@@ -1,5 +1,5 @@
 ---
-title: Yerel Visual Studio Yardım belgelerine yükleyin
+title: Yerel Visual Studio Yardım belgeleri yükleyin
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-help-viewer
@@ -25,111 +25,111 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 702c1124e3b14f8bfec4f514edd8e1e7def6b776
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 238c903fc81ef2323d0de44e4e5b900a9b68d766
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947644"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915853"
 ---
-# <a name="install-and-manage-local-content"></a>Yükleme ve yerel içeriği yönetme
+# <a name="install-and-manage-local-content"></a>Yerel içeriği yükleme ve yönetme
 
-Microsoft Yardım Görüntüleyicisi'ni kullanarak, Ekle, Kaldır, güncelleştirme ve yazılım geliştirme gereksinimlerinize uyacak şekilde bilgisayarınızda yüklü Yardım içeriği taşıma.
+Microsoft Yardım Görüntüleyicisi'ni kullanarak, ekleme, kaldırma, güncelleştirme ve yazılım geliştirme ihtiyaçlarınıza uygun şekilde bilgisayarınızda yüklü olan Yardım içeriğini taşımak.
 
-Yerel bilgisayarınızda içeriği yönetmek için yönetici izinlerine sahip bir hesapla oturum açmalısınız. Ayrıca, bir kuruluş ortamında çalışıyorsanız, sistem yöneticileri, kuruluşunuz için bu kararlar almanıza çünkü yerel içeriği yönetmek mümkün olmayabilir. Daha fazla bilgi için bkz: [Yardım Görüntüleyicisi Yönetici Kılavuzu'na](../ide/help-viewer-administrator-guide.md).
+Yerel bilgisayarınızdaki içeriği yönetmek için yönetici izinlerine sahip bir hesapla oturum açmalısınız. Ayrıca, bir Kurumsal ortamda çalışıyorsanız, sistem yöneticileri bu kararları kuruluşunuz için yapabileceğiniz çünkü yerel içeriği yönetmek mümkün olmayabilir. Daha fazla bilgi için [Yardım Görüntüleyicisi Yönetici Kılavuzu](../ide/help-viewer-administrator-guide.md).
 
 ## <a name="change-the-content-installation-source"></a>İçerik yükleme kaynağını değiştirme
 
-Varsayılan olarak, Yardım Görüntüleyici, içerik kaynağı olarak bir Microsoft online service kullanarak yükler. Kendisi için bir Sistem Yöneticisi içeriği başka bir konumda yüklü bir kuruluş ortamında iş sürece, genellikle, içerik kaynağı değiştirilmemesi gerekir.
+Varsayılan olarak, Yardım Görüntüleyici, içerik kaynak olarak bir Microsoft online service kullanarak yükler. Kendisi için bir sistem yöneticisinin içeriği başka bir konumda yüklü bir Kurumsal ortamda çalışmıyorsanız genellikle içerik kaynağını değiştirmeniz gerekmez.
 
-### <a name="to-change-the-content-installation-source"></a>İçerik yükleme kaynağı değiştirmek için
+### <a name="to-change-the-content-installation-source"></a>İçerik yükleme kaynağını değiştirmek için
 
-1.  Üzerinde **içeriği Yönet** sekmesinde, seçin **Disk** seçenek düğmesi.
+1.  Üzerinde **içeriği Yönet** sekmesini, **Disk** seçenek düğmesini.
 
     > [!NOTE]
-    > **Disk** seçeneği yöneticinize içerik yükleme kaynağını değiştirme engelledi kullanılabilir değil. Daha fazla bilgi için bkz: [Yardım Görüntüleyicisi Yönetici Kılavuzu'na](../ide/help-viewer-administrator-guide.md).
+    > **Disk** seçenek yöneticinize, içerik yükleme kaynağını değiştirmenizi engellerse kullanılabilir değildir. Daha fazla bilgi için [Yardım Görüntüleyicisi Yönetici Kılavuzu](../ide/help-viewer-administrator-guide.md).
 
 2.  Aşağıdaki adımlardan birini uygulayın:
 
-    -   Yolunu girin bir *.msha* dosya veya bir hizmet uç noktası URL'si.
+    -   Yolunu girin bir *.msha* dosya veya bir hizmet uç noktasının URL'si.
 
-    -   Gözat'ı seçin (**...** ) düğmesine gitmek için bir *.msha* dosya.
+    -   Gözat düğmesini seçin (**...** ) düğmesine gitmek için bir *.msha* dosya.
 
-    -   Listede, en son kullanılan giriş seçin.
+    -   Listeden en son kullanılan girdiyi seçin.
 
-## <a name="download-and-install-content-locally"></a>İçeriği yerel olarak indir ve yükle
+## <a name="download-and-install-content-locally"></a>Yerel olarak içeriği indir ve yükle
 
-Yerel bilgisayarınızda içerik yükleyip varsa, internet bağlantısı olmadığında konuları görüntüleyebilirsiniz.
+İndirme ve içeriği yerel bilgisayarınıza yükleyin, internet bağlantısı olmadığında konuları görüntüleyebilirsiniz.
 
 > [!IMPORTANT]
-> İçeriği yüklemek için yönetim izinlerine sahip bir hesapla oturum açmalısınız.
+> İçeriği yüklemek için yönetici izinleri olan bir hesapla oturum açmalısınız.
 
 > [!NOTE]
-> İngilizce dışında bir dil için Visual Studio IDE ayarlarsanız, İngilizce içerik, yerelleştirilmiş içeriği veya her ikisi de yükleyebilirsiniz. Yalnızca İngilizce sürümünü yüklerseniz, ancak içerik görünür ve **dahil İngilizce içerik tüm gezinme sekmeleri ve F1 istekleri** onay kutusuna **Görüntüleyici seçenekleri** iletişim kutusu temizlenir.
+> Visual Studio IDE İngilizce dışında bir dile ayarlanmışsa İngilizce içeriği, yerelleştirilmiş içeriği veya her ikisini de yükleyebilirsiniz. Yalnızca İngilizce sürümü yüklerseniz, ancak içerik görünür ve **İngilizceyi dahil et içerik tüm gezinme sekmelerine ve F1 isteklerine dahil** onay kutusuna **Görüntüleyici seçenekleri** iletişim kutusu temizlenir.
 
-### <a name="to-download-and-install-content"></a>Karşıdan yükleme ve içeriği yüklemek için
+### <a name="to-download-and-install-content"></a>İçeriği indirmek ve yüklemek için
 
 1.  Seçin **içeriği Yönet** sekmesi.
 
-2.  İçerik listede seçin **Ekle** kitap veya indirmek ve yüklemek için istediğiniz books yanındaki bağlantı.
+2.  İçerik listesinde **Ekle** kitabın veya kitapların indirmek ve yüklemek için istediğiniz yanındaki bağlantı.
 
-     Kitap eklenen **bekleyen değişiklikler** listesi ve kitap ya da görünür bu liste belirtilen books tahmini boyutu. Bazı books konuları paylaştığından, birden çok books toplam indirme boyutu birlikte belirttiğiniz her kitap boyutlarını ekleme sonucunu küçük olabilir.
+     Kitap eklenir **bekleyen değişiklikler** listesi ve tahmini boyutunu belirttiğiniz kitap veya kitaplar bu listenin altında görünür. Bazı kitaplar konuları paylaştığından birden çok kitap toplam yükleme boyutu, belirttiğiniz her kitabın boyutlarını birlikte eklemenin sonucunu küçük olabilir.
 
 3.  Seçin **güncelleştirme** düğmesi.
 
-     Kitap ya da belirttiğiniz books bilgisayarınızda zaten defterleri için herhangi bir güncelleştirme ile birlikte yüklenir. Yükleme süreleri değişir, ancak durum çubuğunda ilerleme durumunu görüntüleyebilirsiniz.
+     Belirttiğiniz kitap veya kitaplar, bilgisayarınızda zaten yüklü Kitaplar için tüm güncelleştirmelerle birlikte yüklenir. Yükleme süreleri değişebilir ancak durum çubuğundan ilerlemeyi görüntüleyebilirsiniz.
 
 ## <a name="remove-local-content"></a>Yerel içeriği kaldırma
 
-Bilgisayarınızdan istenmeyen içerik kaldırarak disk alanından kazanabilirsiniz.
+İstenmeyen içeriği bilgisayarınızdan kaldırarak disk alanından kazanabilirsiniz.
 
 > [!IMPORTANT]
 > İçeriği kaldırmak için yönetici izinleri olmalıdır.
 
 > [!NOTE]
-> İngilizce dışında bir dil için Visual Studio IDE ayarlarsanız, kaldırdığınız yerelleştirilmiş içeriği, içerik görünür ve **dahil İngilizce içerik tüm gezinti sekmesi ve F1 istekleri** onay kutusuna **Görüntüleyici seçenekleri** iletişim kutusu temizlenir.
+> İçerik, Visual Studio IDE İngilizce dışında bir dile ayarlanırsa, yerelleştirilmiş içeriği kaldırmak görünür ve **İngilizceyi dahil et içerik tüm gezinme sekmesindeki ve F1 isteklerine dahil** onay kutusuna **Görüntüleyiciseçenekleri** iletişim kutusu temizlenir.
 
 ### <a name="to-remove-content"></a>İçeriği kaldırmak için
 
 1.  Seçin **içeriği Yönet** sekmesi.
 
-2.  İçerik listede seçin **kaldırmak** kitap veya kaldırmak istediğiniz books yanındaki bağlantı.
+2.  İçerik listesinde **Kaldır** kitabın veya kitapların kaldırmak istediğiniz yanındaki bağlantı.
 
-     Kitap eklenen **bekleyen değişiklikler** listesi.
+     Kitap eklenir **bekleyen değişiklikler** listesi.
 
 3.  Seçin **güncelleştirme** düğmesi.
 
-     Kitap ya da belirttiğiniz books bilgisayarınızdan kaldırılır.
+     Belirttiğiniz kitap veya kitaplar bilgisayarınızdan kaldırılır.
 
 ## <a name="update-local-content"></a>Yerel içeriği güncelleştirme
 
-Durum çubuğu, güncelleştirmelerinin yüklü içeriğinize ne zaman kullanılabileceğini gösterir.
+Durum çubuğu yüklü içeriğinizle güncelleştirmelerinin ne zaman kullanılabilir olduğunu gösterir.
 
 > [!IMPORTANT]
-> İsterseniz **Yardım Görüntüleyici** otomatik olarak çevrimiçi güncelleştirmeleri denetlemek için açmalısınız **Görüntüleyici seçenekleri** iletişim kutusunu ve ardından **içerik güncelleştirmeleridenetlemekiçinçevrimiçi**onay kutusu.
+> İsterseniz **Yardım Görüntüleyici** çevrimiçi güncelleştirmeleri otomatik olarak denetlemek için açmalısınız **Görüntüleyici seçenekleri** iletişim kutusunu ve ardından **içerikgüncelleştirmelerinidenetlemekiçinçevrimiçiol**onay kutusu.
 
 ### <a name="to-update-local-content"></a>Yerel içeriği güncelleştirmek için
 
--   Durum çubuğu sağ alt köşedeki seçin **şimdi yüklemek için burayı tıklatın** bağlantı.
+- Durum çubuğunun sağ alt köşesinde seçin **şimdi indirmek için buraya tıklayın** bağlantı.
 
- Güncelleştirme zamanlarını farklılık gösterebilir, ancak durum çubuğunda güncelleştirme ilerleme durumunu görüntüleyebilirsiniz.
+Güncelleştirme süreleri değişebilir ancak durum çubuğunda güncelleştirme ilerleme durumunu görüntüleyebilirsiniz.
 
-## <a name="move-local-content"></a>Yerel içerik taşıma
+## <a name="move-local-content"></a>Yerel içeriği taşıma
 
-Yüklü olan içeriğin yerel bilgisayarınızdan bir ağ paylaşımına veya başka bir bölüm için yerel bilgisayarınızda taşıyarak disk alanından kazanabilirsiniz.
+Yüklü içeriği yerel bilgisayarınızdan bir ağ paylaşımına veya başka bir bölüme, yerel bilgisayarınızda taşıyarak disk alanından kazanabilirsiniz.
 
 > [!IMPORTANT]
-> İçeriği taşımak için yönetim izinlerine sahip bir hesapla oturum açmalısınız.
+> İçeriği taşımak için yönetici izinleri olan bir hesapla oturum açmalısınız.
 
-### <a name="to-move-local-content"></a>Yerel içerik taşımak için
+### <a name="to-move-local-content"></a>Yerel içeriği taşımak için
 
-1.  Üzerinde **içeriği Yönet** sekmesinde, seçin **taşıma** altında düğmesini **yerel deposu yolu**.
+1.  Üzerinde **içeriği Yönet** sekmesini, **taşıma** düğmesini **yerel Store yol**.
 
-     **Taşıma içerik** iletişim kutusu açılır.
+     **İçeriği Taşı** iletişim kutusu açılır.
 
 2.  İçinde **için** metin kutusuna içerik için farklı bir konum girin ve ardından **Tamam** düğmesi.
 
-3.  Seçin **Kapat** içeriği taşındıklarında düğmesine tıklayın.
+3.  Seçin **Kapat** içerik taşındıktan sonra düğme.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

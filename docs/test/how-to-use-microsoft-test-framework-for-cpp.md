@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6087b864ba497d3754adfa01dc0168da5317aa5e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 53243502e0368d3cb988950edf266cc56adbaa22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379559"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812458"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Microsoft birim testi çerçevesi Visual Studio'da C++ için kullanın
 
@@ -28,20 +28,22 @@ Genellikle, test kodunuzu test etmek istediğiniz kodu aynı çözümde kendi pr
 
 Bazı durumlarda, örneğin bir DLL içinde aktarılmış işlevlerini test ederken testleri test programı olarak aynı projede oluşturmanız gerekebilir. Aynı projede birim testleri yazmak için:
 
-1.  Proje özelliklerini, üst bilgiler ve birim testi için gerekli olan kitaplık dosyalarını içerecek şekilde değiştirin.
+1. Proje özelliklerini, üst bilgiler ve birim testi için gerekli olan kitaplık dosyalarını içerecek şekilde değiştirin.
 
-    1.  İçinde **Çözüm Gezgini**, test programı için proje düğümüne sağ tıklayın ve ardından seçin **özellikleri** > **yapılandırma özellikleri**  >  **VC ++ dizinleri**.
+   1. İçinde **Çözüm Gezgini**, test programı için proje düğümüne sağ tıklayın ve ardından seçin **özellikleri** > **yapılandırma özellikleri**  >  **VC ++ dizinleri**.
 
-    3.  Aşağıdaki satırları aşağı oka tıklayın ve seçin **<Edit>** :
+   2. Aşağıdaki satırları aşağı oka tıklayın ve seçin **<Edit>** :
 
-        |Dizin|Özellik|
-        |-|-|
-        |**Ekleme kodu dizinleri**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
-        |**Kitaplık dizinleri**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
 
-2.  Bir C++ birim testi dosyası ekleyin:
+      | Dizin | Özellik |
+      |-| - |
+      | **Ekleme kodu dizinleri** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
+      | **Kitaplık dizinleri** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
 
-    -   ' Nde proje düğümüne sağ **Çözüm Gezgini** ve **Ekle** > **yeni öğe** > **C++ birim testi**.
+
+2. Bir C++ birim testi dosyası ekleyin:
+
+   -   ' Nde proje düğümüne sağ **Çözüm Gezgini** ve **Ekle** > **yeni öğe** > **C++ birim testi**.
 
 ## <a name="write-the-tests"></a>Testleri yazma
 
@@ -53,13 +55,13 @@ Statik yöntemleri kullanın [Assert](microsoft-visualstudio-testtools-cppunitte
 
 ## <a name="run-the-tests"></a>Testleri çalıştırın
 
-1.  Üzerinde **Test** menüsünde seçin **Windows** > **Test Gezgini**.
+1. Üzerinde **Test** menüsünde seçin **Windows** > **Test Gezgini**.
 2. Testlerinizin tümünü penceresinde görünür değilse, onun düğümüne sağ tıklayarak test projesi oluşturmak **Çözüm Gezgini** seçip **derleme** veya **yeniden**.
 
-2.  İçinde **Test Gezgini**, seçin **tümünü Çalıştır**, ya da belirli testleri çalıştırmak istediğiniz seçin. Bir test etkin kesme noktaları ile hata ayıklama modunda çalıştırmak dahil, diğer seçenekler için sağ tıklayın.
-3. İçinde **çıkış penceresine** seçin **testleri** açılan view iletileri tarafından yazılan aşağı `Logger` sınıfı:
+3. İçinde **Test Gezgini**, seçin **tümünü Çalıştır**, ya da belirli testleri çalıştırmak istediğiniz seçin. Bir test etkin kesme noktaları ile hata ayıklama modunda çalıştırmak dahil, diğer seçenekler için sağ tıklayın.
+4. İçinde **çıkış penceresine** seçin **testleri** açılan view iletileri tarafından yazılan aşağı `Logger` sınıfı:
 
-  ![C++ çıkış penceresine sınama iletileri gösterme](media/cpp-test-output-window.png)
+   ![C++ çıkış penceresine sınama iletileri gösterme](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>Gruplandırma etkinleştirmek için özellikleri tanımlayın
 
@@ -90,7 +92,7 @@ TEST_METHOD(Method1)
 Aşağıdaki önceden tanımlanmış nitelikler bulunan `CppUnitTest.h`. Daha fazla bilgi için [Microsoft birim testi çerçevesi için C++ API Başvurusu](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
 |Makrosu|Açıklama|
-|-----------|-----------------|
+|-|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|Ayırt edici nitelik tanımlamak için test_method_attrıbute makrosunu kullanın.|
 |`TEST_OWNER(ownerAlias)`|Test yönteminin sahibini belirtmek için önceden tanımlanmış sahip ayırt edici niteliğini kullanın.|
 |`TEST_PRIORITY(priority)`|Test yöntemlerinize göreli öncelikler atamak için önceden tanımlanmış öncelik ayırt edici niteliğini kullanın.|

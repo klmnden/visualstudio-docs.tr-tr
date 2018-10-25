@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 47b50ece6d4fff79618890cb388c997503d95ad0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214753"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920137"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 Metin Şablonları İle Çalışma Süresi Metni Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -295,17 +295,17 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 #### <a name="inheritance-pattern-fragments-in-base-methods"></a>Devralma deseni: temel yöntemlerini parçaları  
  Aşağıdaki örnekte kullanılan deseni, aşağıdaki noktalara dikkat edin:  
   
--   Temel sınıf `SharedFragments` sınıf özelliği bloklarını içinde yöntemlerini `<#+ ... #>`.  
+- Temel sınıf `SharedFragments` sınıf özelliği bloklarını içinde yöntemlerini `<#+ ... #>`.  
   
--   Boş metin temel sınıfı içerir. Bunun yerine, tüm metin blokları içinde sınıf özellik yöntemleri oluşur.  
+- Boş metin temel sınıfı içerir. Bunun yerine, tüm metin blokları içinde sınıf özellik yöntemleri oluşur.  
   
--   Türetilmiş sınıf içinde tanımlanan yöntemleri çağırır `SharedFragments`.  
+- Türetilmiş sınıf içinde tanımlanan yöntemleri çağırır `SharedFragments`.  
   
--   Uygulama çağrıları `TextTransform()` yöntemi türetilmiş sınıfın temel sınıf dönüştürme değil ancak `SharedFragments`.  
+- Uygulama çağrıları `TextTransform()` yöntemi türetilmiş sınıfın temel sınıf dönüştürme değil ancak `SharedFragments`.  
   
--   Çalışma zamanı metin şablonları temel ve türetilmiş sınıfları şunlardır: diğer bir deyişle, **özel araç** özelliği **TextTemplatingFilePreprocessor**.  
+- Çalışma zamanı metin şablonları temel ve türetilmiş sınıfları şunlardır: diğer bir deyişle, **özel araç** özelliği **TextTemplatingFilePreprocessor**.  
   
- **SharedFragments.tt:**  
+  **SharedFragments.tt:**  
   
 ```csharp  
 <#@ template language="C#" #>  

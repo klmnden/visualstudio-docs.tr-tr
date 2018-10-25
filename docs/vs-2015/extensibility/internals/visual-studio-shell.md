@@ -16,12 +16,12 @@ ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f0ef1e207fffc4d44963b968caad392b9d976c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 141b0966c3b7d53bf1084b3ea9ac466bbc92d0bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222410"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903718"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Kabuğu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,59 +31,59 @@ ms.locfileid: "49222410"
 ## <a name="shell-responsibilities"></a>Kabuk sorumlulukları  
  Kabuk aşağıdaki anahtar sorumluluklara sahiptir:  
   
--   Temel kullanıcı arabirimini (UI) öğeleri (COM arabirimleri) destek. Bunlar, varsayılan menüleri ve araç çubukları, belge pencere çerçeveleri veya çok Belgeli Arabirim (MDI) alt pencereler ve aracı pencere çerçeveleri ve yerleştirme desteği içerir.  
+- Temel kullanıcı arabirimini (UI) öğeleri (COM arabirimleri) destek. Bunlar, varsayılan menüleri ve araç çubukları, belge pencere çerçeveleri veya çok Belgeli Arabirim (MDI) alt pencereler ve aracı pencere çerçeveleri ve yerleştirme desteği içerir.  
   
--   Tüm açık belgelerde çalıştırılan Belge tablosu (RDT) çalışan bir listesini, belgelerin Kalıcılık koordine ve birden fazla yolla ya da uyumsuz şekilde bir belge açılamıyor güvence altına almak için koruma.  
+- Tüm açık belgelerde çalıştırılan Belge tablosu (RDT) çalışan bir listesini, belgelerin Kalıcılık koordine ve birden fazla yolla ya da uyumsuz şekilde bir belge açılamıyor güvence altına almak için koruma.  
   
--   Komut Yönlendirme ve komut işleme arabirimini destekleyen `IOleCommandTarget`.  
+- Komut Yönlendirme ve komut işleme arabirimini destekleyen `IOleCommandTarget`.  
   
--   VSPackage uygun zamanlarda yükleniyor. VSPackage gecikme yükleme Kabuk performansını geliştirmek için gereklidir.  
+- VSPackage uygun zamanlarda yükleniyor. VSPackage gecikme yükleme Kabuk performansını geliştirmek için gereklidir.  
   
--   Belirli yönetme paylaşılan hizmetler gibi <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>, temel Kabuk işlevleri sağlayan ve <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, temel Pencereleme işlevleri sağlar.  
+- Belirli yönetme paylaşılan hizmetler gibi <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>, temel Kabuk işlevleri sağlayan ve <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, temel Pencereleme işlevleri sağlar.  
   
--   Çözüm (.sln) dosyaları yönetme. Çözümler, ilgili projelerin, Visual C++ 6.0 (.dsw) çalışma alanı dosyaları benzer grupları içerir.  
+- Çözüm (.sln) dosyaları yönetme. Çözümler, ilgili projelerin, Visual C++ 6.0 (.dsw) çalışma alanı dosyaları benzer grupları içerir.  
   
--   İzleme Kabuk genelinde seçimi, bağlam ve para birimi. Kabuk öğeleri aşağıdaki türde izler:  
+- İzleme Kabuk genelinde seçimi, bağlam ve para birimi. Kabuk öğeleri aşağıdaki türde izler:  
   
-    -   Geçerli proje  
+  -   Geçerli proje  
   
-    -   Geçerli proje öğe veya öğe kimliği geçerli <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+  -   Geçerli proje öğe veya öğe kimliği geçerli <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-    -   Geçerli seçim için **özellikleri** penceresi veya `SelectionContainer`  
+  -   Geçerli seçim için **özellikleri** penceresi veya `SelectionContainer`  
   
-    -   Kimlikleri veya komutlar, menüler ve araç çubukları görünürlüğünü denetleme CmdUIGuids UI bağlamı  
+  -   Kimlikleri veya komutlar, menüler ve araç çubukları görünürlüğünü denetleme CmdUIGuids UI bağlamı  
   
-    -   Etkin pencereyi, belge ve geri alma yöneticisi gibi şu anda etkin öğeleri  
+  -   Etkin pencereyi, belge ve geri alma yöneticisi gibi şu anda etkin öğeleri  
   
-    -   Dinamik Yardım sürücü kullanıcı bağlamı öznitelikleri  
+  -   Dinamik Yardım sürücü kullanıcı bağlamı öznitelikleri  
   
- Kabuk yüklü VSPackages ve geçerli Hizmetleri arasındaki iletişim de aracılık. Kabuk temel özellikleri destekler ve bunları tüm VSPackages tümleşik kullandırır [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Bu temel özellikleri, aşağıdaki öğeleri ekleyin:  
+  Kabuk yüklü VSPackages ve geçerli Hizmetleri arasındaki iletişim de aracılık. Kabuk temel özellikleri destekler ve bunları tüm VSPackages tümleşik kullandırır [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Bu temel özellikleri, aşağıdaki öğeleri ekleyin:  
   
--   **Hakkında** iletişim kutusu ve karşılama ekranı  
+- **Hakkında** iletişim kutusu ve karşılama ekranı  
   
--   **Yeni ve varolan öğeyi ekle ekleme** iletişim kutuları  
+- **Yeni ve varolan öğeyi ekle ekleme** iletişim kutuları  
   
--   **Sınıf Görünümü** penceresi ve **Nesne Tarayıcısı**  
+- **Sınıf Görünümü** penceresi ve **Nesne Tarayıcısı**  
   
--   **Başvuruları** iletişim kutusu  
+- **Başvuruları** iletişim kutusu  
   
--   **Belge Anahattı** penceresi  
+- **Belge Anahattı** penceresi  
   
--   **Dinamik Yardım** penceresi  
+- **Dinamik Yardım** penceresi  
   
--   **Bulma** ve **değiştirin**  
+- **Bulma** ve **değiştirin**  
   
--   **Projeyi açın** ve **açık dosya** iletişim kutuları üzerinde **yeni** menüsü  
+- **Projeyi açın** ve **açık dosya** iletişim kutuları üzerinde **yeni** menüsü  
   
--   **Seçenekleri** iletişim kutusunda **Araçları** menüsü  
+- **Seçenekleri** iletişim kutusunda **Araçları** menüsü  
   
--   **Özellikleri** penceresi  
+- **Özellikleri** penceresi  
   
--   **Çözüm Gezgini**  
+- **Çözüm Gezgini**  
   
--   **Görev listesi** penceresi  
+- **Görev listesi** penceresi  
   
--   **Araç Kutusu**  
+- **Araç Kutusu**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   

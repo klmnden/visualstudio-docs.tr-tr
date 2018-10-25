@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8ca228edf7e05e48a733ba4f38bdc43560ef1552
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7300af951a50fb463453e83041d0651ac2c62cef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263711"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835276"
 ---
 # <a name="model-your-app39s-architecture"></a>Uygulamanızı model&#39;s mimarisi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,49 +63,49 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
   
  Bu temel bilgi parçasını gereksinimler modeli sağlar:  
   
--   Sağlanan arabirimleri. İnsan kullanıcılara veya diğer yazılım bileşenleri olmalarından sağlanan arabirim Hizmetleri veya sistem veya bileşen, kullanıcılar için sağlaması gereken işlemleri listeler.  
+- Sağlanan arabirimleri. İnsan kullanıcılara veya diğer yazılım bileşenleri olmalarından sağlanan arabirim Hizmetleri veya sistem veya bileşen, kullanıcılar için sağlaması gereken işlemleri listeler.  
   
--   Gerekli arabirimleri. Gerekli arabirimi, hizmetleri veya sistem veya bileşen kullanabileceğiniz işlemleri listeler. Bazı durumlarda, bu hizmetlerin tümü kendi sisteminin bir parçası tasarlamak mümkün olacaktır. Diğer durumlarda, özellikle birçok yapılandırması içindeki diğer bileşenlere birlikte bir bileşeni tasarlıyorsanız gerekli arabirime dış etkenler tarafından ayarlanır.  
+- Gerekli arabirimleri. Gerekli arabirimi, hizmetleri veya sistem veya bileşen kullanabileceğiniz işlemleri listeler. Bazı durumlarda, bu hizmetlerin tümü kendi sisteminin bir parçası tasarlamak mümkün olacaktır. Diğer durumlarda, özellikle birçok yapılandırması içindeki diğer bileşenlere birlikte bir bileşeni tasarlıyorsanız gerekli arabirime dış etkenler tarafından ayarlanır.  
   
--   Hizmet gereksinimlerinin kalitesini. Performans, güvenlik, sağlamlık ve diğer hedefler ve sistem karşılamalıdır kısıtlamaları.  
+- Hizmet gereksinimlerinin kalitesini. Performans, güvenlik, sağlamlık ve diğer hedefler ve sistem karşılamalıdır kısıtlamaları.  
   
- Kişiler veya diğer yazılım bileşenleri olmalarından gereksinimler modelini açısından bakıldığında, sisteminizin kullanıcılarının yazılır. Hiçbir şey sisteminizi iç işleyişini bildirin. Aksine, amacınız bir mimari modelinde iç işleyişini açıklar ve kullanıcıların nasıl karşıladıklarından göstermek için gerekiyor.  
+  Kişiler veya diğer yazılım bileşenleri olmalarından gereksinimler modelini açısından bakıldığında, sisteminizin kullanıcılarının yazılır. Hiçbir şey sisteminizi iç işleyişini bildirin. Aksine, amacınız bir mimari modelinde iç işleyişini açıklar ve kullanıcıların nasıl karşıladıklarından göstermek için gerekiyor.  
   
- Mimari modeller ve gereksinimleri ayrı tutmak kullanıcılarla gereksinimleri görüşmek üzere kolaylaştırır için yararlıdır. Ayrıca, tasarımı yeniden düzenleyin ve gereksinimleri değişmeden tutarken diğer mimarileri göz önünde bulundurun yardımcı olur.  
+  Mimari modeller ve gereksinimleri ayrı tutmak kullanıcılarla gereksinimleri görüşmek üzere kolaylaştırır için yararlıdır. Ayrıca, tasarımı yeniden düzenleyin ve gereksinimleri değişmeden tutarken diğer mimarileri göz önünde bulundurun yardımcı olur.  
   
- Mimari modeller ve gereksinimleri iki farklı şekilde ayırabilirsiniz:  
+  Mimari modeller ve gereksinimleri iki farklı şekilde ayırabilirsiniz:  
   
--   Bunları aynı çözüm içinde ancak farklı projelerde tutun. Ayrı modelleri UML Model Gezgini'nde olarak görünür. Farklı ekip üyeleri, modeller üzerinde paralel olarak çalışabilir. İzlemenin sınırlı türleri arasında modelleri oluşturulabilir.  
+- Bunları aynı çözüm içinde ancak farklı projelerde tutun. Ayrı modelleri UML Model Gezgini'nde olarak görünür. Farklı ekip üyeleri, modeller üzerinde paralel olarak çalışabilir. İzlemenin sınırlı türleri arasında modelleri oluşturulabilir.  
   
--   Bunları aynı UML modeli, ancak farklı paketler yerleştirin. Bu modelleri arasındaki bağımlılıkları izlemenizi kolaylaştırır, ancak birden fazla kişi aynı anda model üzerinde çalışmasını engeller. Ayrıca, çok büyük bir modelin Visual Studio'ya yüklemek için daha uzun sürer. Bu yaklaşım bu nedenle büyük projeler için daha az uygundur.  
+- Bunları aynı UML modeli, ancak farklı paketler yerleştirin. Bu modelleri arasındaki bağımlılıkları izlemenizi kolaylaştırır, ancak birden fazla kişi aynı anda model üzerinde çalışmasını engeller. Ayrıca, çok büyük bir modelin Visual Studio'ya yüklemek için daha uzun sürer. Bu yaklaşım bu nedenle büyük projeler için daha az uygundur.  
   
- Gereksinimler veya mimari bir model koymanız gerekir ayrıntı miktarını ölçek ve proje boyutu ve takım dağıtımı bağlıdır. Küçük bir takımda kısa bir projedeki başka bir sınıf diyagramı iş kavramlar ve bazı tasarım desenleri tasarlamaktan daha geçebilir; büyük bir projenin birden fazla bölge dağıtılmış önemli ölçüde daha fazla ayrıntı gerekir.  
+  Gereksinimler veya mimari bir model koymanız gerekir ayrıntı miktarını ölçek ve proje boyutu ve takım dağıtımı bağlıdır. Küçük bir takımda kısa bir projedeki başka bir sınıf diyagramı iş kavramlar ve bazı tasarım desenleri tasarlamaktan daha geçebilir; büyük bir projenin birden fazla bölge dağıtılmış önemli ölçüde daha fazla ayrıntı gerekir.  
   
 ##  <a name="BigDecisions"></a> Mimari desenleri  
  Geliştirme aşamasında bir ana teknolojileri ve tasarım bağlı olacağı öğeleri seçmeniz gerekir. Bu seçenek hale getirilmesi gereken alanları şunlardır:  
   
--   Bir veritabanı ve dosya sistemi ve bir ağ uygulaması ve bir Web istemcisi arasında seçim arasında seçim yapma gibi teknoloji seçimleri temel vb. kullanın.  
+- Bir veritabanı ve dosya sistemi ve bir ağ uygulaması ve bir Web istemcisi arasında seçim arasında seçim yapma gibi teknoloji seçimleri temel vb. kullanın.  
   
--   Windows Workflow Foundation ya da ADO.NET Entity Framework arasında seçim yapma gibi çerçeveleri seçenekleri.  
+- Windows Workflow Foundation ya da ADO.NET Entity Framework arasında seçim yapma gibi çerçeveleri seçenekleri.  
   
--   Örneğin bir enterprise service bus veya noktadan noktaya kanal arasında tümleştirme yöntemi seçenekleri.  
+- Örneğin bir enterprise service bus veya noktadan noktaya kanal arasında tümleştirme yöntemi seçenekleri.  
   
- Bu seçimleri sık ölçeklendirme ve esneklik gibi hizmet gereksinimlerinin kalitesini tarafından belirlenir ve ayrıntılı gereksinimleri bilinen önce yapılabilir. Büyük bir sistemde, donanım ve yazılım yapılandırmasını kesin birbiriyle ilişkili.  
+  Bu seçimleri sık ölçeklendirme ve esneklik gibi hizmet gereksinimlerinin kalitesini tarafından belirlenir ve ayrıntılı gereksinimleri bilinen önce yapılabilir. Büyük bir sistemde, donanım ve yazılım yapılandırmasını kesin birbiriyle ilişkili.  
   
- Kullanımınızı ve mimari modelini yorumlamak, yaptığınız seçimleri etkiler. XML dosyalarını temel alan bir sistemde, XPath kullanan çapraz ilişkilendirmeleri gösterebilir ancak örneğin, bir veritabanını kullanan bir sistemde, bir sınıf diyagramı ilişkilendirmeler ilişkileri ya da bir veritabanındaki yabancı anahtarlar temsil edebilir. Dağıtılmış bir sistemde iletilerin sıralı diyagramda bir kablo iletileri temsil edebilir; kendi içinde bir uygulamada, işlev çağrıları temsil edebilir.  
+  Kullanımınızı ve mimari modelini yorumlamak, yaptığınız seçimleri etkiler. XML dosyalarını temel alan bir sistemde, XPath kullanan çapraz ilişkilendirmeleri gösterebilir ancak örneğin, bir veritabanını kullanan bir sistemde, bir sınıf diyagramı ilişkilendirmeler ilişkileri ya da bir veritabanındaki yabancı anahtarlar temsil edebilir. Dağıtılmış bir sistemde iletilerin sıralı diyagramda bir kablo iletileri temsil edebilir; kendi içinde bir uygulamada, işlev çağrıları temsil edebilir.  
   
 ##  <a name="Components"></a> Bileşenlerini ve bunların  
  Bu bölümde başlıca önerileri aşağıdaki gibidir:  
   
--   Sisteminizin başlıca parçaları göstermek için Bileşen diyagramları oluşturun.  
+- Sisteminizin başlıca parçaları göstermek için Bileşen diyagramları oluşturun.  
   
--   Bileşenler veya sisteminin yapısını göstermek üzere arabirimlerini arasında bağımlıklar çizin.  
+- Bileşenler veya sisteminin yapısını göstermek üzere arabirimlerini arasında bağımlıklar çizin.  
   
--   Arabirimleri, her bileşen sağlar veya gerektirir Hizmetleri göstermek için bileşene kullanın.  
+- Arabirimleri, her bileşen sağlar veya gerektirir Hizmetleri göstermek için bileşene kullanın.  
   
--   Büyük bir tasarım içinde her bileşenin daha küçük parçalara ayırmak için ayrı diyagramlar çizebilirsiniz.  
+- Büyük bir tasarım içinde her bileşenin daha küçük parçalara ayırmak için ayrı diyagramlar çizebilirsiniz.  
   
- Bu bölümün geri kalanında bu noktaları ayrıntılandırılmıştır.  
+  Bu bölümün geri kalanında bu noktaları ayrıntılandırılmıştır.  
   
 ### <a name="components"></a>Bileşenler  
  Merkezi bir mimari modeli sistem ve birbirine nasıl bağlı olan başlıca parçaları Göster Bileşen diyagramları görünümleridir. Bileşen diyagramları hakkında daha fazla bilgi için bkz: [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md).  
@@ -131,13 +131,13 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
   
  İyi yapılandırılmış bir mimari bağımlılıkları, bu koşullar doğru olduğunda açık bir yerleşimini sahiptir:  
   
--   Kod haritasında döngü vardır.  
+- Kod haritasında döngü vardır.  
   
--   Bileşenler, her bağımlılık bir katmandaki bir bileşenden alınan sonraki bir bileşen gider katmanlara düzenlenebilir. Her iki katman arasındaki tüm bağımlılıkları aynı yönde gidin.  
+- Bileşenler, her bağımlılık bir katmandaki bir bileşenden alınan sonraki bir bileşen gider katmanlara düzenlenebilir. Her iki katman arasındaki tüm bağımlılıkları aynı yönde gidin.  
   
- Bileşenler arasındaki bağımlılıkları doğrudan gösterebilir veya gerekli ve sağlanan bileşenlere iliştirilmiş arabirimleri arasındaki bağımlılıkları gösterebilirsiniz. Arabirimler kullanarak hangi işlemleri her bir bağımlılığın içinde kullanılan tanımlayabilirsiniz. Genellikle, bağımlılıkları diyagramları çizilmiş önce ve sonra daha fazla bilgi eklendikçe arabirimleri arasındaki bağımlılıkları yerini bileşenleri arasında gösterilir. Her iki sürümü yazılım doğru açıklamalardır ancak arabirimleri sürümle önceki sürümden daha fazla ayrıntı sağlar.  
+  Bileşenler arasındaki bağımlılıkları doğrudan gösterebilir veya gerekli ve sağlanan bileşenlere iliştirilmiş arabirimleri arasındaki bağımlılıkları gösterebilirsiniz. Arabirimler kullanarak hangi işlemleri her bir bağımlılığın içinde kullanılan tanımlayabilirsiniz. Genellikle, bağımlılıkları diyagramları çizilmiş önce ve sonra daha fazla bilgi eklendikçe arabirimleri arasındaki bağımlılıkları yerini bileşenleri arasında gösterilir. Her iki sürümü yazılım doğru açıklamalardır ancak arabirimleri sürümle önceki sürümden daha fazla ayrıntı sağlar.  
   
- Bağımlılık Yönetimi yazılım sürdürülebilir üretim için en önemli şey. Bileşen diyagramları, kodunuzdaki tüm bağımlılıkları yansıtmalıdır. Kodu zaten varsa, tüm bağımlılıkları diyagramlara gösterildiğinden emin olun. Kod geliştirilen, onu değil planlanan bağımlılıkları bileşen diyagramında içermediğinden emin olun. Bir koddaki bağımlılıkları keşfetmenize yardımcı olmak için katman diyagramları oluşturabilirsiniz. Planlanan bağımlılık kısıtlamaları karşılandığından emin olun yardımcı olmak için kodu katman diyagramlarına karşı doğrulayabilir. Daha fazla bilgi için [katman diyagramları: başvuru](../modeling/layer-diagrams-reference.md).  
+  Bağımlılık Yönetimi yazılım sürdürülebilir üretim için en önemli şey. Bileşen diyagramları, kodunuzdaki tüm bağımlılıkları yansıtmalıdır. Kodu zaten varsa, tüm bağımlılıkları diyagramlara gösterildiğinden emin olun. Kod geliştirilen, onu değil planlanan bağımlılıkları bileşen diyagramında içermediğinden emin olun. Bir koddaki bağımlılıkları keşfetmenize yardımcı olmak için katman diyagramları oluşturabilirsiniz. Planlanan bağımlılık kısıtlamaları karşılandığından emin olun yardımcı olmak için kodu katman diyagramlarına karşı doğrulayabilir. Daha fazla bilgi için [katman diyagramları: başvuru](../modeling/layer-diagrams-reference.md).  
   
 ### <a name="interfaces"></a>Arabirimler  
  Arabirimleri bileşenlerinizin üzerine yerleştirerek, ayırın ve her bir bileşen tarafından sağlanan işlemlerinin büyük grup adı. Örneğin, web tabanlı bir satış sistemine bileşenlerde bir arabirim üzerinden müşterilere mal satın alma, bir arabirim üzerinden tedarikçileri, katalog güncelleştirmesi ve sistem yönetilen aracılığıyla üçüncü arabirim olabilir.  
@@ -146,17 +146,17 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
   
  Tanımlarsanız hem de sağlanan ve bu teknikler kullanabilmesi için gerekli arabirimlere bu bileşeni düzgün bir şekilde tasarım geri kalanından ayrı yardımcı olur:  
   
--   Bileşen çevreleyen bileşenler tarafından test bandı benzetimi yapılmış bir test bandı yerleştirin.  
+- Bileşen çevreleyen bileşenler tarafından test bandı benzetimi yapılmış bir test bandı yerleştirin.  
   
--   Bileşeniniz diğer bileşenleri bağımsız olarak geliştirin.  
+- Bileşeniniz diğer bileşenleri bağımsız olarak geliştirin.  
   
--   Farklı bileşenlere arabirimlerinden eşleyerek diğer bağlamlarda bileşeni yeniden.  
+- Farklı bileşenlere arabirimlerinden eşleyerek diğer bağlamlarda bileşeni yeniden.  
   
- Bir arabirimde işlemlerin listesini tanımlamak istediğiniz zaman bir UML sınıf diyagramında arabirimi başka bir görünümünü oluşturabilirsiniz. Bunu yapmak için arabirimi UML Model Gezgini'nde bulun ve bir sınıf diyagramına sürükleyin. Arabirimi işlemleri daha sonra ekleyebilirsiniz.  
+  Bir arabirimde işlemlerin listesini tanımlamak istediğiniz zaman bir UML sınıf diyagramında arabirimi başka bir görünümünü oluşturabilirsiniz. Bunu yapmak için arabirimi UML Model Gezgini'nde bulun ve bir sınıf diyagramına sürükleyin. Arabirimi işlemleri daha sonra ekleyebilirsiniz.  
   
- Bir bileşenin davranış çağrılabilir herhangi bir şekilde bir UML arabirimde bir işlemi temsil edebilir. Bir Web hizmeti isteği, bir sinyal veya başka bir tür ya da bir sıradan program işlev çağrısı etkileşimi temsil edebilir.  
+  Bir bileşenin davranış çağrılabilir herhangi bir şekilde bir UML arabirimde bir işlemi temsil edebilir. Bir Web hizmeti isteği, bir sinyal veya başka bir tür ya da bir sıradan program işlev çağrısı etkileşimi temsil edebilir.  
   
- Eklemek için hangi işlemleri belirlemek için bileşenlerin birbirleriyle nasıl etkileşim göstermek için sıralı diyagramlar oluşturun. Bkz: [bileşenler arasındaki etkileşimler](#Interactions). Her biri bu sıralı diyagramlar oluşan etkileşimler farklı kullanım örneğini gösterir. Kullanım örnekleri keşfedin bu şekilde, kademeli olarak her bileşenin arabiriminde işlemler listesine ekleyebilirsiniz.  
+  Eklemek için hangi işlemleri belirlemek için bileşenlerin birbirleriyle nasıl etkileşim göstermek için sıralı diyagramlar oluşturun. Bkz: [bileşenler arasındaki etkileşimler](#Interactions). Her biri bu sıralı diyagramlar oluşan etkileşimler farklı kullanım örneğini gösterir. Kullanım örnekleri keşfedin bu şekilde, kademeli olarak her bileşenin arabiriminde işlemler listesine ekleyebilirsiniz.  
   
 ### <a name="decomposing-a-component-into-parts"></a>Bir bileşeni parçalara ayırma  
  Her bileşen için önceki bölümlerde açıklanan yordamı uygulayabilirsiniz.  
@@ -169,32 +169,32 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
   
  Parçalar, aşağıdaki durumlarda kullanın:  
   
--   Tasarım ana bileşenin her zaman parçanın bileşen türü kullanmanız gerekir. Bu nedenle bölümünün tasarım ana bileşenin tasarıma tamsayı gereklidir.  
+- Tasarım ana bileşenin her zaman parçanın bileşen türü kullanmanız gerekir. Bu nedenle bölümünün tasarım ana bileşenin tasarıma tamsayı gereklidir.  
   
--   Ana bileşen kendi hiçbir somut varlığını sahiptir. Örneğin, görünümleri ve Kullanıcı etkileşimlerine işleyen gerçek bileşenleri koleksiyonunu temsil eder bir sunu katmanı adlı kavramsal bir bileşen olabilir.  
+- Ana bileşen kendi hiçbir somut varlığını sahiptir. Örneğin, görünümleri ve Kullanıcı etkileşimlerine işleyen gerçek bileşenleri koleksiyonunu temsil eder bir sunu katmanı adlı kavramsal bir bileşen olabilir.  
   
- Bu gibi durumlarda gerekli arabirimleri aracılığıyla erişilen ayrı bileşenler kullanın:  
+  Bu gibi durumlarda gerekli arabirimleri aracılığıyla erişilen ayrı bileşenler kullanın:  
   
--   Gerektiren bileşenin arabirimleri aracılığıyla çalışma zamanında sağlayan farklı bileşenleri eşleştirilmek.  
+- Gerektiren bileşenin arabirimleri aracılığıyla çalışma zamanında sağlayan farklı bileşenleri eşleştirilmek.  
   
--   Bir sağlayıcı değiştirileceği kolay şekilde tasarımdır.  
+- Bir sağlayıcı değiştirileceği kolay şekilde tasarımdır.  
   
- Gerekli arabirimlerin parça kullanımı için genellikle tercih edilir. Elde edilen sistem tasarımı daha uzun sürebilir ancak daha esnektir. Bileşenlerini ayrı ayrı test etmek kolaydır. Bu, geliştirme planlarında daha az eşleşmeye izin verir.  
+  Gerekli arabirimlerin parça kullanımı için genellikle tercih edilir. Elde edilen sistem tasarımı daha uzun sürebilir ancak daha esnektir. Bileşenlerini ayrı ayrı test etmek kolaydır. Bu, geliştirme planlarında daha az eşleşmeye izin verir.  
   
 ##  <a name="Interactions"></a> Bileşenler arasındaki etkileşimler  
  Bu bölümde başlıca önerileri aşağıdaki gibidir:  
   
--   Sisteminizin kullanım örnekleri tanımlayın.  
+- Sisteminizin kullanım örnekleri tanımlayın.  
   
--   Her kullanım örneği için nasıl sisteminizi bileşenlerinin birbirleriyle ve kullanıcılar ile birlikte çalışarak gerekli sonuç elde göstermek için bir veya daha fazla diyagramlar çizin. Genellikle, sıralı diyagramlar veya etkinlik diyagramları şunlardır.  
+- Her kullanım örneği için nasıl sisteminizi bileşenlerinin birbirleriyle ve kullanıcılar ile birlikte çalışarak gerekli sonuç elde göstermek için bir veya daha fazla diyagramlar çizin. Genellikle, sıralı diyagramlar veya etkinlik diyagramları şunlardır.  
   
--   Arabirimleri, her bileşen tarafından alınan iletileri belirtmek için kullanın.  
+- Arabirimleri, her bileşen tarafından alınan iletileri belirtmek için kullanın.  
   
--   Arabirimlerdeki işlemlerin etkisini açıklar.  
+- Arabirimlerdeki işlemlerin etkisini açıklar.  
   
--   Parçalarının nasıl etkileştiğini gösteren her bileşen için yordamı yineleyin.  
+- Parçalarının nasıl etkileştiğini gösteren her bileşen için yordamı yineleyin.  
   
- Örneğin, web tabanlı bir satış sistemine, gereksinimler modelini bir müşterinin satın bir kullanım durumu olarak tanımlayabilir. Etkileşimler müşteri sunu katmanındaki bileşenlerle olduğunu göstermek için ve etkileşimler ambarı ve hesap bileşenleri ile olduğunu göstermek için sıralı diyagram oluşturabilirsiniz.  
+  Örneğin, web tabanlı bir satış sistemine, gereksinimler modelini bir müşterinin satın bir kullanım durumu olarak tanımlayabilir. Etkileşimler müşteri sunu katmanındaki bileşenlerle olduğunu göstermek için ve etkileşimler ambarı ve hesap bileşenleri ile olduğunu göstermek için sıralı diyagram oluşturabilirsiniz.  
   
 ### <a name="identifying-the-initiating-events"></a>Başlatma olaylarını belirleme  
  Çoğu yazılım sistemleri tarafından çalışmanın, kolayca, farklı giriş veya olayları için verdiği yanıtlar tarafından da bölünebilir. Başlatma olayı, aşağıdaki olaylardan biri olabilir:  

@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb1b28615593758b0a34425be9e9a5aef11d406b
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 2152f90d244ed283250bf8ea6a42a39b545f9c09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863562"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847987"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Nasıl yapılır: projeleri hedef platformlar için yapılandırma
 
@@ -59,11 +59,11 @@ Visual Studio uygulamalarınızı 64 bit platformlar da dahil olmak üzere, fark
 
 Bu görevi gerçekleştirmek, kullandığınız programlama diline göre değişir. Daha fazla bilgi için aşağıdaki bağlantılara bakın:
 
--   İçin [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projeleri için bkz: [/Platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
+- İçin [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projeleri için bkz: [/Platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
 
--   İçin [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projeleri için bkz: [derleme sayfası, Proje Tasarımcısı (C#)](../ide/reference/build-page-project-designer-csharp.md).
+- İçin [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projeleri için bkz: [derleme sayfası, Proje Tasarımcısı (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
--   İçin [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projeleri için bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](/cpp/build/reference/clr-common-language-runtime-compilation).
+- İçin [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projeleri için bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](/cpp/build/reference/clr-common-language-runtime-compilation).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

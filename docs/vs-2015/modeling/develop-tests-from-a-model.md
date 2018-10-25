@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fc773f9b4945a16bac0a9726e0a06f94726fad96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 230cd5ae3bd4ae0d46baf4fe48f00eca9ffe879d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236762"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825123"
 ---
 # <a name="develop-tests-from-a-model"></a>Model aracılığıyla test geliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,19 +66,19 @@ Sisteminiz ve bileşenlerinin testleri düzenlemenize yardımcı olması için g
   
 ###### <a name="to-link-tests-to-a-use-case"></a>Testleri bir kullanım örneğine bağlamak için  
   
-1.  İçinde [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], bir gereksinim oluşturmanız ve bir test paketi üzerinde temel. Bunun hakkında bilgi edinmek için [uygulamayı test etme](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. İçinde [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], bir gereksinim oluşturmanız ve bir test paketi üzerinde temel. Bunun hakkında bilgi edinmek için [uygulamayı test etme](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
-     Bir iş öğesinde oluşturduğunuz gereksinimi olan [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Bir kullanıcı hikayesi, gereksinim veya kullanım örneği iş öğesi ile projenizin kullandığı işlem şablonuna bağlı olarak olabilir [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Daha fazla bilgi için [Visual Studio Team Services veya Team Foundation Server kullanarak iş izleme](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
+    Bir iş öğesinde oluşturduğunuz gereksinimi olan [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Bir kullanıcı hikayesi, gereksinim veya kullanım örneği iş öğesi ile projenizin kullandığı işlem şablonuna bağlı olarak olabilir [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Daha fazla bilgi için [Visual Studio Team Services veya Team Foundation Server kullanarak iş izleme](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
-2.  Modelinizde bir veya daha fazla kullanım örnekleri için gereksinim iş öğesine bağlayın.  
+2. Modelinizde bir veya daha fazla kullanım örnekleri için gereksinim iş öğesine bağlayın.  
   
-     Bir kullanım durumu diyagramı, kullanım örneğine sağ tıklayın ve ardından **iş öğesine bağlantı**. Daha fazla bilgi için [bağlantı model öğelerini ve iş öğeleri](../modeling/link-model-elements-and-work-items.md).  
+    Bir kullanım durumu diyagramı, kullanım örneğine sağ tıklayın ve ardından **iş öğesine bağlantı**. Daha fazla bilgi için [bağlantı model öğelerini ve iş öğeleri](../modeling/link-model-elements-and-work-items.md).  
   
-3.  Kullanım örnekleri doğrulama test çalışmaları, test paketine ekleyin.  
+3. Kullanım örnekleri doğrulama test çalışmaları, test paketine ekleyin.  
   
- Genellikle, her kullanıcı hikayesi veya gereksinim çalışma öğesi, modelinizdeki çeşitli kullanım örnekleri için bağlantı içerir ve her kullanım örneği, birkaç kullanıcı hikayeleri veya gereksinimler bağlayacaksınız. Her kullanıcı öyküsü veya gereksinime çeşitli kullanım örnekleri geliştirme görevlerin kümesi sağlanmıştır olmasıdır. Örneğin, projenizin erken bir yineleme bir müşteri Kataloğu'ndan öğeleri seçin ve bunları teslim temel kullanıcı hikayesi geliştirebilir. Bir sonraki yinelemede hikayeyi malları gönderdikten sonra para sırasını ve tedarikçi Tamamlanıyor aldığında, kullanıcı öder olabilir.  Her hikayenin Sonkoşul sırasını ürün kullanım örneği için bir yan tümce ekler.  
+   Genellikle, her kullanıcı hikayesi veya gereksinim çalışma öğesi, modelinizdeki çeşitli kullanım örnekleri için bağlantı içerir ve her kullanım örneği, birkaç kullanıcı hikayeleri veya gereksinimler bağlayacaksınız. Her kullanıcı öyküsü veya gereksinime çeşitli kullanım örnekleri geliştirme görevlerin kümesi sağlanmıştır olmasıdır. Örneğin, projenizin erken bir yineleme bir müşteri Kataloğu'ndan öğeleri seçin ve bunları teslim temel kullanıcı hikayesi geliştirebilir. Bir sonraki yinelemede hikayeyi malları gönderdikten sonra para sırasını ve tedarikçi Tamamlanıyor aldığında, kullanıcı öder olabilir.  Her hikayenin Sonkoşul sırasını ürün kullanım örneği için bir yan tümce ekler.  
   
- Bu yan tümceleri ayrı açıklamalara kullanım durumu diyagramında yazarak Sonkoşul yan tümceyi gereksinimlerinden ayrı bağlantılar oluşturabilirsiniz. Her bir gereksinim iş öğesine bağlayın ve açıklama kullanım örneği diyagramındaki bağlayabilirsiniz.  
+   Bu yan tümceleri ayrı açıklamalara kullanım durumu diyagramında yazarak Sonkoşul yan tümceyi gereksinimlerinden ayrı bağlantılar oluşturabilirsiniz. Her bir gereksinim iş öğesine bağlayın ve açıklama kullanım örneği diyagramındaki bağlayabilirsiniz.  
   
 ### <a name="base-tests-on-the-requirements-types"></a>Gereksinim türleri temel testler  
  Olan türler, sınıflar, arabirimler ve numaralandırmalar, gereksinimler modelini kavramlar ve kullanıcıların nasıl düşünün ve iş hakkında iletişim açısından ilişkiler açıklanmaktadır. Bu, sistemin yalnızca iç tasarımı ile ilgili türler hariç tutar.  

@@ -22,12 +22,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: db774bdfb02d762c2370ab342cc67c1a9b792bed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0dabf5b84eb1adde1d6e579b7ec5ad6a6c443723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254715"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859063"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Başvurular Sayfası, Proje Tasarımcısı (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Kullanım **başvuruları** sayfasının **Proje Tasarımcısı** başvuruları 
   
 > [!NOTE]
 >  Proje sistemi bir bütünleştirilmiş kod başvurusu bulduğunda, sistem aşağıdaki sırayla şu konumlarda bakarak başvuru çözer:  
->   
->  1.  Proje klasörü. Proje klasörü dosyaları görünür **Çözüm Gezgini** olduğunda **tüm dosyaları göster** geçerli değildir.  
-> 2.  İçinde belirtilen klasörler **başvuru yolları** iletişim kutusu.  
-> 3.  Dosyaları görüntüleme klasörleri **Başvuru Ekle** iletişim kutusu.  
-> 4.  Projenin obj klasörü. (Bir veya daha fazla derlemeleri projenize bir COM başvurusu eklediğinizde, projenin obj klasöre eklenebilir.)  
+> 
+> 1. Proje klasörü. Proje klasörü dosyaları görünür **Çözüm Gezgini** olduğunda **tüm dosyaları göster** geçerli değildir.  
+>    2.  İçinde belirtilen klasörler **başvuru yolları** iletişim kutusu.  
+>    3.  Dosyaları görüntüleme klasörleri **Başvuru Ekle** iletişim kutusu.  
+>    4.  Projenin obj klasörü. (Bir veya daha fazla derlemeleri projenize bir COM başvurusu eklediğinizde, projenin obj klasöre eklenebilir.)  
   
  **Başvurular**  
  Bu liste, projede kullanılan tüm başvuruları gösterir veya kullanılmayan.  

@@ -13,40 +13,40 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a8d43412ae475a2823ac645954a7f1d823e3429
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 8f711b3a2e131baf5f7e480982ff34dc7ef89614
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276370"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949363"
 ---
 # <a name="supported-event-types"></a>Desteklenen olay türleri
 Visual Studio hata ayıklama, şu anda aşağıdaki olay türlerini destekler:  
   
--   Zaman uyumsuz olay  
+- Zaman uyumsuz olay  
   
-     Oturum hata ayıklama Yöneticisi (SDM) bildirmek ve ayıklanan uygulamayı durumunu değiştirme IDE. Bu olaylar SDM ve IDE zamanınızda işlenir. Olayı işlendikten sonra yanıt hata ayıklama Altyapısı'na (DE) gönderilir. [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md) ve [IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md) arabirimleri, zaman uyumsuz olay örnekleri verilmiştir.  
+   Oturum hata ayıklama Yöneticisi (SDM) bildirmek ve ayıklanan uygulamayı durumunu değiştirme IDE. Bu olaylar SDM ve IDE zamanınızda işlenir. Olayı işlendikten sonra yanıt hata ayıklama Altyapısı'na (DE) gönderilir. [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md) ve [IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md) arabirimleri, zaman uyumsuz olay örnekleri verilmiştir.  
   
--   Zaman uyumlu olayları  
+- Zaman uyumlu olayları  
   
-     SDM ve ayıklanan uygulamayı durumunu değiştirme IDE bildirin. Bu olaylar ve zaman uyumsuz olaylar arasındaki tek fark yanıt yoluyla gönderileceğini olan [ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md) yöntemi.  
+   SDM ve ayıklanan uygulamayı durumunu değiştirme IDE bildirin. Bu olaylar ve zaman uyumsuz olaylar arasındaki tek fark yanıt yoluyla gönderileceğini olan [ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md) yöntemi.  
   
-     Zaman uyumlu bir olayı gönderirken, IDE alır ve olayı işleyen sonra işleme devam etmek için DE gerektiğinde kullanışlıdır.  
+   Zaman uyumlu bir olayı gönderirken, IDE alır ve olayı işleyen sonra işleme devam etmek için DE gerektiğinde kullanışlıdır.  
   
--   Zaman uyumlu olayları durdurma veya olayları durduruluyor  
+- Zaman uyumlu olayları durdurma veya olayları durduruluyor  
   
-     Bildirim SDM ve IDE ayıklanan uygulamayı kod yürütme durduruldu. Durdurma olay yöntemiyle gönderdiğinizde [olay](../../extensibility/debugger/reference/idebugeventcallback2-event.md), [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) parametresi gereklidir. Aşağıdaki yöntemlerden birini yapılan bir çağrıyla durdurma olayları ettirilen:  
+   Bildirim SDM ve IDE ayıklanan uygulamayı kod yürütme durduruldu. Durdurma olay yöntemiyle gönderdiğinizde [olay](../../extensibility/debugger/reference/idebugeventcallback2-event.md), [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) parametresi gereklidir. Aşağıdaki yöntemlerden birini yapılan bir çağrıyla durdurma olayları ettirilen:  
   
-    -   [Yürütme](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
+  - [Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
   
-    -   [Adım](../../extensibility/debugger/reference/idebugprogram2-step.md)  
+  - [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)  
   
-    -   [Devam et](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
+  - [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
   
-     Arabirimler [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) ve [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) durdurma olayları örnekleridir.  
+    Arabirimler [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) ve [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) durdurma olayları örnekleridir.  
   
-    > [!NOTE]
-    >  Zaman uyumsuz durdurma olayları desteklenmez. Bu zaman uyumsuz durdurma olay göndermek için bir hatadır.  
+  > [!NOTE]
+  >  Zaman uyumsuz durdurma olayları desteklenmez. Bu zaman uyumsuz durdurma olay göndermek için bir hatadır.  
   
 ## <a name="discussion"></a>Tartışma  
  Olayların kullanımınız, sizin DE tasarımına bağlıdır. Gönderilen her olay türünü DE tasarlarken hangi ayarlanan kendi özniteliklere göre belirlenir. Örneğin, bir DE gönderebiliriz bir [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) olarak zaman uyumsuz olay sırasında başka bir durdurma olay olarak gönderebilir.  

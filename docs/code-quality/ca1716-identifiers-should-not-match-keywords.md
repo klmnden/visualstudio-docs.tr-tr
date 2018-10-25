@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c95219ea13e8d2e4d989a2ac9950c4d04e65bd
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: cfaef87f8463c43c412c5db3c83a899fb22b4f66
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858199"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862443"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Tanımlayıcılar anahtar sözcüklerle eşleşmemelidir
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|
@@ -32,12 +33,14 @@ ms.locfileid: "47858199"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Bir ad alanı, bir tür veya viritual veya arabirim üye adı ayrılmış bir anahtar sözcük bir programlama dili ile eşleşir.
+
+Bir ad alanı, bir tür veya viritual veya arabirim üye adı ayrılmış bir anahtar sözcük bir programlama dili ile eşleşir.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Tanımlayıcı ad alanları, türler, için ve sanal ve arabirim üyeleri olmayan ortak dil çalışma zamanını hedefleyen diller tarafından tanımlanan anahtar sözcükleri eşleşmelidir. Kullanılan dil ve anahtar sözcüğü bağlı olarak, derleyici hataları ve belirsizlikler kitaplığı kullanmak zorlaştırabilir.
 
- Bu kural, anahtar sözcükleri şu dillerde karşı denetler:
+Tanımlayıcı ad alanları, türler, için ve sanal ve arabirim üyeleri olmayan ortak dil çalışma zamanını hedefleyen diller tarafından tanımlanan anahtar sözcükleri eşleşmelidir. Kullanılan dil ve anahtar sözcüğü bağlı olarak, derleyici hataları ve belirsizlikler kitaplığı kullanmak zorlaştırabilir.
+
+Bu kural, anahtar sözcükleri şu dillerde karşı denetler:
 
 - Visual Basic
 
@@ -45,10 +48,12 @@ ms.locfileid: "47858199"
 
 - C++/CLI
 
- Büyük küçük harf duyarsız bir karşılaştırma için kullanılan [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] anahtar sözcükleri ve büyük küçük harfe duyarlı karşılaştırma diğer diller için kullanılır.
+Büyük küçük harf duyarsız bir karşılaştırma için kullanılan [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] anahtar sözcükleri ve büyük küçük harfe duyarlı karşılaştırma diğer diller için kullanılır.
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Anahtar sözcükler listesinde görünmeyen bir adı seçin.
+
+Anahtar sözcükler listesinde görünmeyen bir adı seçin.
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Tanımlayıcı kullanıcılara API'nin karıştırır değil ve kitaplık .NET Framework içindeki kullanılabilir tüm dillerde kullanılabilir ikna varsa bu kuraldan bir uyarıyı gösterilmemesini sağlayabilirsiniz.
+
+Tanımlayıcı kullanıcılara API'nin karıştırır değil ve kitaplık .NET Framework içindeki kullanılabilir tüm dillerde kullanılabilir ikna varsa bu kuraldan bir uyarıyı gösterilmemesini sağlayabilirsiniz.

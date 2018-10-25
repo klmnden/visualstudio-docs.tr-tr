@@ -16,12 +16,12 @@ ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 592f24a4fc4100f7c716c7fbec0c300c0adec906
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 63c1eae7d53050f1763ba868d8d545ab7f326a34
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305038"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906929"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage Yapısı (Kaynak Denetimi VSPackage’ı)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ Kaynak denetimi paket SDK izin kendi kaynak denetimi işlevlerini ile tümleşti
   
  VSPackage semantiği şunlardır:  
   
--   VSPackage'ı olan da uygulanacak arabirim ( `IVsPackage` arabirimi)  
+- VSPackage'ı olan da uygulanacak arabirim ( `IVsPackage` arabirimi)  
   
--   Komut kullanıcı Arabirimi uygulama (.vsct dosyası ve uygulaması <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirimi)  
+- Komut kullanıcı Arabirimi uygulama (.vsct dosyası ve uygulaması <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirimi)  
   
--   İle VSPackage kaydı [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- İle VSPackage kaydı [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
- Kaynak denetimi VSPackage'ı ile diğer iletmelidir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] varlıkları:  
+  Kaynak denetimi VSPackage'ı ile diğer iletmelidir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] varlıkları:  
   
--   Projeler  
+- Projeler  
   
--   Düzenleyiciler  
+- Düzenleyiciler  
   
--   Çözümler  
+- Çözümler  
   
--   Windows  
+- Windows  
   
--   Çalıştırılan Belge tablosu  
+- Çalıştırılan Belge tablosu  
   
 ### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Tüketilebilir visual Studio ortamını Hizmetleri  
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>  

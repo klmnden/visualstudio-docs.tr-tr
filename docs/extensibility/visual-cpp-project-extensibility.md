@@ -11,12 +11,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76adb5df7fec7663f5c9bc1a4c84c378f0e14a82
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 2b9f8bfcaf9e6f584d4f0038ebef17daad3aa74a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46135665"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850821"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ proje sistemi genişletilebilirlik ve araç takımı tümleştirmesi
 
@@ -478,12 +478,13 @@ Kural biçimi doğrudan olduğundan bu bölüm, yalnızca kural kullanıcı arab
 
 `PageTemplate` Özniteliği, kural nasıl görüntüleneceğini tanımlar **özellik sayfaları** iletişim. Özniteliği şu değerlerden biri olabilir:
 
-|Öznitelik|Açıklama|
-|-|-|
-`generic`|Tüm özelliklerini kategoriye başlıklar altında tek bir sayfada gösterilir<br/>Kural için görünür `Project` ve `PropertySheet` bağlamı, ama `File`.<br/><br/> Örnek: `$(VCTargetsPath)` \\ *1033*\\*general.xml*
-`tool`|Kategoriler, alt gösterilir.<br/>Kural tüm bağlamlarda görüntülenebilir: `Project`, `PropertySheet` ve `File`.<br/>Yalnızca proje öğeleriyle varsa kural proje özelliklerinde görülebilir `ItemType` tanımlanan `Rule.DataSource`kural adı dahil sürece `ProjectTools` öğesi grubu.<br/><br/>Örnek: `$(VCTargetsPath)` \\ *1033*\\*clang.xml*
-`debugger`|Sayfanın hata ayıklama sayfası bir parçası olarak gösterilir.<br/>Kategorileri şu anda göz ardı edilir.<br/>Kural adı hata ayıklama başlatıcısı MEF nesnenin eşleşmelidir `ExportDebugger` özniteliği.<br/><br/>Örnek: `$(VCTargetsPath)` \\ *1033*\\*hata ayıklayıcı\_yerel\_windows.xml*
-*Özel*| Özel bir şablon. Şablon adı eşleşmelidir `ExportPropertyPageUIFactoryProvider` özniteliği `PropertyPageUIFactoryProvider` MEF nesne. Bkz: **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Örnek: `$(VCTargetsPath)` \\ *1033*\\*userMacros.xml*
+
+| Öznitelik | Açıklama |
+|------------| - |
+| `generic` | Tüm özelliklerini kategoriye başlıklar altında tek bir sayfada gösterilir<br/>Kural için görünür `Project` ve `PropertySheet` bağlamı, ama `File`.<br/><br/> Örnek: `$(VCTargetsPath)` \\ *1033*\\*general.xml* |
+| `tool` | Kategoriler, alt gösterilir.<br/>Kural tüm bağlamlarda görüntülenebilir: `Project`, `PropertySheet` ve `File`.<br/>Yalnızca proje öğeleriyle varsa kural proje özelliklerinde görülebilir `ItemType` tanımlanan `Rule.DataSource`kural adı dahil sürece `ProjectTools` öğesi grubu.<br/><br/>Örnek: `$(VCTargetsPath)` \\ *1033*\\*clang.xml* |
+| `debugger` | Sayfanın hata ayıklama sayfası bir parçası olarak gösterilir.<br/>Kategorileri şu anda göz ardı edilir.<br/>Kural adı hata ayıklama başlatıcısı MEF nesnenin eşleşmelidir `ExportDebugger` özniteliği.<br/><br/>Örnek: `$(VCTargetsPath)` \\ *1033*\\*hata ayıklayıcı\_yerel\_windows.xml* |
+| *custom* | Özel bir şablon. Şablon adı eşleşmelidir `ExportPropertyPageUIFactoryProvider` özniteliği `PropertyPageUIFactoryProvider` MEF nesne. Bkz: **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Örnek: `$(VCTargetsPath)` \\ *1033*\\*userMacros.xml* |
 
 Kural özellik kılavuzunda tabanlı şablonlardan birini kullanıyorsa, bu genişletilebilirlik noktaları için özelliklerini kullanabilirsiniz:
 

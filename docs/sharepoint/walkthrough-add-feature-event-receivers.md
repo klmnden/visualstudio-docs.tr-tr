@@ -19,33 +19,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4a8777dff45eb257a941716306f099c67e3fcda7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab2eded41d9416f03592c9346a379f8a276366a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626094"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948788"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>İzlenecek yol: özellik Olay alıcıları ekleme
   Özellik Olay alıcıları SharePoint'te özelliği ile ilgili aşağıdaki olaylardan biri meydana geldiğinde yürütülen yöntemler şunlardır:
 
--   Bir özelliği yüklenir.
+- Bir özelliği yüklenir.
 
--   Bir özelliği etkinleştirilir.
+- Bir özelliği etkinleştirilir.
 
--   Bir özelliği devre dışı bırakılır.
+- Bir özelliği devre dışı bırakılır.
 
--   Bir özellik kaldırılır.
+- Bir özellik kaldırılır.
 
- Bu yönerge, SharePoint projesindeki bir özellik için bir olay alıcısı ekleneceğini gösterir. Bunu, aşağıdaki görevleri gösterir:
+  Bu yönerge, SharePoint projesindeki bir özellik için bir olay alıcısı ekleneceğini gösterir. Bunu, aşağıdaki görevleri gösterir:
 
--   Boş bir proje özellik olayı alıcısını oluşturuluyor.
+- Boş bir proje özellik olayı alıcısını oluşturuluyor.
 
--   İşleme **FeatureDeactivating** yöntemi.
+- İşleme **FeatureDeactivating** yöntemi.
 
--   Duyuru duyuruları listesine eklemek için SharePoint Proje nesne modelini kullanma.
+- Duyuru duyuruları listesine eklemek için SharePoint Proje nesne modelini kullanma.
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:

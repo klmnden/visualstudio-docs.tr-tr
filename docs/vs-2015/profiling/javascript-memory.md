@@ -28,12 +28,12 @@ caps.latest.revision: 54
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 531590495cf31f0a173b9dfc1dbc995a9fb73364
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d0d1d45caa7f5bfe275cd851711dfbc9a8186d74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257614"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814954"
 ---
 # <a name="javascript-memory"></a>JavaScript bellek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,35 +42,35 @@ JavaScript bellek Çözümleyicisi, bellek kullanımını anlamak ve JavaScript 
   
  JavaScript bellek Çözümleyicisi bunları sizin için neler yapabileceğini:  
   
--   Hızlı bir şekilde bellek kullanım sorunlarını uygulamanızda en alakalı verileri vurgulayarak bulmanıza yardımcı olur.  
+- Hızlı bir şekilde bellek kullanım sorunlarını uygulamanızda en alakalı verileri vurgulayarak bulmanıza yardımcı olur.  
   
-     İki anlık görüntü arasındaki farkları gösteren ve daha ayrıntılı görünüm bağlantıları verilmektedir anlık görüntü özetleri, bu verileri elde edersiniz.  
+   İki anlık görüntü arasındaki farkları gösteren ve daha ayrıntılı görünüm bağlantıları verilmektedir anlık görüntü özetleri, bu verileri elde edersiniz.  
   
--   Önceller, türleri ve kökleri sorunlarını gidermeye yardımcı olmak için görünümler sağlar.  
+- Önceller, türleri ve kökleri sorunlarını gidermeye yardımcı olmak için görünümler sağlar.  
   
--   JavaScript yığın verileri eyleme dönüştürülebilir olmayan bilgisini azaltın.  
+- JavaScript yığın verileri eyleme dönüştürülebilir olmayan bilgisini azaltın.  
   
-     Uygulama kodunuzda doğrudan oluşturulmaz nesneleri otomatik olarak filtrelenir. Ayrıca, verileri nesne adına göre filtreleyebilirsiniz.  
+   Uygulama kodunuzda doğrudan oluşturulmaz nesneleri otomatik olarak filtrelenir. Ayrıca, verileri nesne adına göre filtreleyebilirsiniz.  
   
- Çalışan bir uygulamayı bir bellek sızıntısı tanımlama işleminde size yol gösterir bir öğretici için bkz [izlenecek yol: bir bellek sızıntısını bulma (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+  Çalışan bir uygulamayı bir bellek sızıntısı tanımlama işleminde size yol gösterir bir öğretici için bkz [izlenecek yol: bir bellek sızıntısını bulma (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
- Bu konuda:  
+  Bu konuda:  
   
- [JavaScript bellek Çözümleyicisi'ni çalıştırmak](#Run)   
- [Bellek kullanımını denetleyin](#Check)   
- [Bir bellek sızıntısı Ayır](#Isolate)   
- [Dinamik bellek kullanım özetini görüntüle](#LiveMemory)   
- [Anlık görüntü özetini görüntüle](#SnapshotSummary)   
- [Anlık görüntü ayrıntılarını görüntüle](#SnapshotDetails)   
- [Anlık görüntü farkı görüntüleme](#SnapshotDiff)   
- [Görünüm nesneleri Katla](#FoldObjects)   
- [Veri tanımlayıcıya göre filtrele](#Filter)   
- [Nesne ağacında bir nesne bulunamadı](#ShowInRootsView)   
- [Paylaşılan Görünüm nesne başvuruları](#References)   
- [Yerleşik nesnelerini Göster](#BuiltInValues)   
- [Tanılama oturumu dosyaları Kaydet](#Save)   
- [Kaynak kodu ile bellek kullanımı verileri ilişkilendirme](#JSConsoleCommands)   
- [Bellek sorunlarını tanımlamaya yönelik ipuçları](#Tips)  
+  [JavaScript bellek Çözümleyicisi'ni çalıştırmak](#Run)   
+  [Bellek kullanımını denetleyin](#Check)   
+  [Bir bellek sızıntısı Ayır](#Isolate)   
+  [Dinamik bellek kullanım özetini görüntüle](#LiveMemory)   
+  [Anlık görüntü özetini görüntüle](#SnapshotSummary)   
+  [Anlık görüntü ayrıntılarını görüntüle](#SnapshotDetails)   
+  [Anlık görüntü farkı görüntüleme](#SnapshotDiff)   
+  [Görünüm nesneleri Katla](#FoldObjects)   
+  [Veri tanımlayıcıya göre filtrele](#Filter)   
+  [Nesne ağacında bir nesne bulunamadı](#ShowInRootsView)   
+  [Paylaşılan Görünüm nesne başvuruları](#References)   
+  [Yerleşik nesnelerini Göster](#BuiltInValues)   
+  [Tanılama oturumu dosyaları Kaydet](#Save)   
+  [Kaynak kodu ile bellek kullanımı verileri ilişkilendirme](#JSConsoleCommands)   
+  [Bellek sorunlarını tanımlamaya yönelik ipuçları](#Tips)  
   
 ##  <a name="Run"></a> JavaScript bellek Çözümleyicisi'ni çalıştırmak  
  Çalışan bir Windows Store app Visual Studio'da açık olduğunda bellek Çözümleyicisi'ni kullanabilirsiniz, veya çalıştıran bir bilgisayarda yüklü [!INCLUDE[win8](../includes/win8-md.md)] veya üzeri.  
@@ -133,31 +133,31 @@ JavaScript bellek Çözümleyicisi, bellek kullanımını anlamak ve JavaScript 
 ##  <a name="Isolate"></a> Bir bellek sızıntısı Ayır  
  JavaScript bellek Çözümleyicisi daha etkili bir şekilde kullanmanıza yardımcı olabilecek bir iş akışı adımları sağlar. Aşağıdaki adımları uygulamanız bir bellek sızıntısı olduğunu şüpheleniyorsanız yararlı olabilir. Çalışan bir uygulamayı bir bellek sızıntısı tanımlama işleminde size yol gösterir bir öğretici için bkz [izlenecek yol: bir bellek sızıntısını bulma (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
-1.  Uygulamanızı Visual Studio'da açın.  
+1. Uygulamanızı Visual Studio'da açın.  
   
-2.  JavaScript bellek Çözümleyicisi'ni çalıştırın. Daha fazla bilgi için bkz. [JavaScript bellek Çözümleyicisi'ni çalıştırmak](#Run).  
+2. JavaScript bellek Çözümleyicisi'ni çalıştırın. Daha fazla bilgi için bkz. [JavaScript bellek Çözümleyicisi'ni çalıştırmak](#Run).  
   
-3.  Uygulamanızı test etmek istediğiniz senaryoyu çalıştırın. Örneğin, senaryo belirli bir sayfa yüklendiğinde veya uygulama başlatıldığında büyük bir DOM Mutasyon gerektirebilir.  
+3. Uygulamanızı test etmek istediğiniz senaryoyu çalıştırın. Örneğin, senaryo belirli bir sayfa yüklendiğinde veya uygulama başlatıldığında büyük bir DOM Mutasyon gerektirebilir.  
   
-4.  Senaryo 1-4 birkaç kez yineleyin.  
+4. Senaryo 1-4 birkaç kez yineleyin.  
   
-    > [!TIP]
-    >  Birkaç kez test senaryosu tekrarlayarak başlatma iş koşullarda filtrelenebilir olmamasını sağlamaya yardımcı olabilir.  
+   > [!TIP]
+   >  Birkaç kez test senaryosu tekrarlayarak başlatma iş koşullarda filtrelenebilir olmamasını sağlamaya yardımcı olabilir.  
   
-5.  Visual Studio (Alt + Sekme tuşuna basın) geçin.  
+5. Visual Studio (Alt + Sekme tuşuna basın) geçin.  
   
-6.  Seçerek temel yığın anlık görüntüsünü alma **yığın anlık görüntüsü Al**.  
+6. Seçerek temel yığın anlık görüntüsünü alma **yığın anlık görüntüsü Al**.  
   
-     Aşağıdaki çizimde, bir temel anlık görüntü örneği gösterilmektedir.  
+    Aşağıdaki çizimde, bir temel anlık görüntü örneği gösterilmektedir.  
   
-     ![Temel anlık görüntü](../profiling/media/js-mem-leak-workflow-baseline.png "JS_Mem_Leak_Workflow_Baseline")  
+    ![Temel anlık görüntü](../profiling/media/js-mem-leak-workflow-baseline.png "JS_Mem_Leak_Workflow_Baseline")  
   
-    > [!TIP]
-    >  Anlık görüntü zamanlama üzerinde daha kesin denetim için kullandığınız [kaynak kodu bellek kullanım verileri ile ilişkilendirmek](#JSConsoleCommands) kodunuzda komutu.  
+   > [!TIP]
+   >  Anlık görüntü zamanlama üzerinde daha kesin denetim için kullandığınız [kaynak kodu bellek kullanım verileri ile ilişkilendirmek](#JSConsoleCommands) kodunuzda komutu.  
   
-7.  Uygulamanıza geçin ve (yineleme yalnızca bir kez) Test senaryosu yineleyin.  
+7. Uygulamanıza geçin ve (yineleme yalnızca bir kez) Test senaryosu yineleyin.  
   
-8.  Visual Studio'ya geçiş yapın ve ikinci bir anlık görüntüsünü alın.  
+8. Visual Studio'ya geçiş yapın ve ikinci bir anlık görüntüsünü alın.  
   
 9. Uygulamanıza geçin ve (yineleme yalnızca bir kez) Test senaryosu yineleyin.  
   
@@ -171,11 +171,11 @@ JavaScript bellek Çözümleyicisi, bellek kullanımını anlamak ve JavaScript 
   
 11. Üçüncü anlık görüntüden bir bağlantısını fark görünümlerden birini seçin:  
   
-    -   Fark yığın boyutu (sol bağlantı yığın boyutu altında). Bağlantı metni, önceki anlık görüntüye yığın boyutu ve yığın boyutu geçerli anlık görüntü arasındaki farkı gösterir.  
+    - Fark yığın boyutu (sol bağlantı yığın boyutu altında). Bağlantı metni, önceki anlık görüntüye yığın boyutu ve yığın boyutu geçerli anlık görüntü arasındaki farkı gösterir.  
   
-    -   Fark nesne sayısı (sağ bağlantı altındaki nesne sayısı). Bağlantı metni iki değer gösterilir (örneğin, +1858 /-1765): ilk değeri önceki anlık görüntüye bu yana eklenen yeni nesneler sayısıdır ve ikinci değer nesnelerin önceki anlık görüntüye beri kaldırılan sayısıdır.  
+    - Fark nesne sayısı (sağ bağlantı altındaki nesne sayısı). Bağlantı metni iki değer gösterilir (örneğin, +1858 /-1765): ilk değeri önceki anlık görüntüye bu yana eklenen yeni nesneler sayısıdır ve ikinci değer nesnelerin önceki anlık görüntüye beri kaldırılan sayısıdır.  
   
-     Bu bağlantılar, türleri yığında tutulan boyut veya bağlı olarak hangi bağlantı açtığınız nesne sayısı, sıralı bir fark anlık görüntü Ayrıntıları görünümünü açın.  
+      Bu bağlantılar, türleri yığında tutulan boyut veya bağlı olarak hangi bağlantı açtığınız nesne sayısı, sıralı bir fark anlık görüntü Ayrıntıları görünümünü açın.  
   
 12. Aşağıdakilerden birini seçin **kapsam** filtre bellek kullanım sorunlarını belirlemenize yardımcı olması için seçenekleri:  
   
@@ -244,29 +244,29 @@ JavaScript bellek Çözümleyicisi, bellek kullanımını anlamak ve JavaScript 
   
  Anlık görüntü Ayrıntıları görünümünde, araç çubuğundan bir seçenek belirleyerek tür, kök veya DOMINATOR bellek kullanım verileri gözden geçirebilirsiniz:  
   
--   **Türleri**. Nesne türüne göre gruplandırılmış yığındaki nesneleri örnek sayısı ve toplam boyutunu gösterir. Varsayılan olarak, bu örnek sayısına göre sıralanır.  
+- **Türleri**. Nesne türüne göre gruplandırılmış yığındaki nesneleri örnek sayısı ve toplam boyutunu gösterir. Varsayılan olarak, bu örnek sayısına göre sıralanır.  
   
-    > [!TIP]
-    >  Genellikle, nesne yığını üzerindeki fark görünümlerinde türlerinin en kullanışlı bir bellek sızıntısı tanımlamaya yönelik görünümleridir; Bu görünüm sağlayan bir **kapsam** sol nesneler üzerinde belirlemenize yardımcı olması için filtre.  
+  > [!TIP]
+  >  Genellikle, nesne yığını üzerindeki fark görünümlerinde türlerinin en kullanışlı bir bellek sızıntısı tanımlamaya yönelik görünümleridir; Bu görünüm sağlayan bir **kapsam** sol nesneler üzerinde belirlemenize yardımcı olması için filtre.  
   
--   **Kökler**. Alt başvurular aracılığıyla kök nesnelerden nesnelerin hiyerarşik bir görünümü gösterir. Varsayılan olarak, alt düğümler ile büyük en üstünde tutulan boyut sütuna göre sıralanır.  
+- **Kökler**. Alt başvurular aracılığıyla kök nesnelerden nesnelerin hiyerarşik bir görünümü gösterir. Varsayılan olarak, alt düğümler ile büyük en üstünde tutulan boyut sütuna göre sıralanır.  
   
--   **Önceller**. Özel diğer nesnelerin referansları sahip yığındaki nesnelerin bir listesini gösterir. Önceller tutulan boyuta göre sıralanır.  
+- **Önceller**. Özel diğer nesnelerin referansları sahip yığındaki nesnelerin bir listesini gösterir. Önceller tutulan boyuta göre sıralanır.  
   
-    > [!TIP]
-    >  Bir DOMINATOR bellekten kaldırdığınızda, nesneyi tutuyor tüm belleği geri kazanın. Tam nesne başvuru zinciri araştırabilirsiniz çünkü birkaç uygulama için tutulan bellek boyutları açıklamak Önceller görünümü yardımcı olabilir.  
+  > [!TIP]
+  >  Bir DOMINATOR bellekten kaldırdığınızda, nesneyi tutuyor tüm belleği geri kazanın. Tam nesne başvuru zinciri araştırabilirsiniz çünkü birkaç uygulama için tutulan bellek boyutları açıklamak Önceller görünümü yardımcı olabilir.  
   
- Üç görünümün tümü benzer değer türleri göster:  
+  Üç görünümün tümü benzer değer türleri göster:  
   
--   **Tanımlayıcıları**. En iyi nesneyi tanımlayan ad. Örneğin, bir kullanılıyorsa, HTML öğeleri için kimliği öznitelik değeri, anlık görüntü ayrıntılarını gösterir.  
+- **Tanımlayıcıları**. En iyi nesneyi tanımlayan ad. Örneğin, bir kullanılıyorsa, HTML öğeleri için kimliği öznitelik değeri, anlık görüntü ayrıntılarını gösterir.  
   
--   **Tür**. Nesne türü (örneğin, HTML bağlantı öğesine veya div öğesi).  
+- **Tür**. Nesne türü (örneğin, HTML bağlantı öğesine veya div öğesi).  
   
--   **Boyutu**. Nesne boyutu, başvurulan tüm nesnelerin boyutunu içermez.  
+- **Boyutu**. Nesne boyutu, başvurulan tüm nesnelerin boyutunu içermez.  
   
--   **Tutulan boyut**. Ayrıca nesne boyutu başka bir üst öğeye sahip tüm alt öğe nesnelerinin boyutu. Pratik amacıyla, bu nesne silerseniz belirtilen miktarda bellek geri kazanmak için nesne tarafından tutulan bellek miktarıdır.  
+- **Tutulan boyut**. Ayrıca nesne boyutu başka bir üst öğeye sahip tüm alt öğe nesnelerinin boyutu. Pratik amacıyla, bu nesne silerseniz belirtilen miktarda bellek geri kazanmak için nesne tarafından tutulan bellek miktarıdır.  
   
--   **Sayısı**. Nesne örneği sayısı. Bu değer yalnızca türleri Görünümü'nde görünür.  
+- **Sayısı**. Nesne örneği sayısı. Bu değer yalnızca türleri Görünümü'nde görünür.  
   
 ##  <a name="SnapshotDiff"></a> Anlık görüntü farkı görüntüleme  
  JavaScript bellek Çözümleyicisi'nde bir anlık görüntüsüne karşı anlık görüntü fark görünümlerinde önceki anlık görüntüye karşılaştırabilirsiniz.  
@@ -281,22 +281,22 @@ JavaScript bellek Çözümleyicisi, bellek kullanımını anlamak ve JavaScript 
   
  Anlık görüntü fark penceresinde Önceller, türleri ve kökleri görünümleri aynıdır [anlık görüntü ayrıntılarını görüntüleme](#SnapshotDetails) penceresi. Anlık görüntü diff anlık görüntü ayrıntılarla bu ek değerler olarak aynı bilgileri gösterir:  
   
--   **Boyut farkı**. Boyutunu dahil değil önceki anlık görüntünün boyutuna ve nesnenin geçerli anlık görüntü boyutu arasındaki fark nesnelerine başvuru.  
+- **Boyut farkı**. Boyutunu dahil değil önceki anlık görüntünün boyutuna ve nesnenin geçerli anlık görüntü boyutu arasındaki fark nesnelerine başvuru.  
   
--   **Tutulan boyut farkı**. Önceki anlık görüntüdeki geçerli anlık görüntü nesnesinin tutulan boyut tutulan boyutu arasındaki fark. Tutulan boyut nesne boyutu artı boyutu, başka bir üst öğeye sahip tüm alt nesneleri içerir. Pratik amacıyla tutulan boyut nesnesi silerseniz belirtilen miktarda bellek geri kazanmak için nesne tarafından tutulan bellek miktarıdır.  
+- **Tutulan boyut farkı**. Önceki anlık görüntüdeki geçerli anlık görüntü nesnesinin tutulan boyut tutulan boyutu arasındaki fark. Tutulan boyut nesne boyutu artı boyutu, başka bir üst öğeye sahip tüm alt nesneleri içerir. Pratik amacıyla tutulan boyut nesnesi silerseniz belirtilen miktarda bellek geri kazanmak için nesne tarafından tutulan bellek miktarıdır.  
   
- Anlık görüntü arasındaki fark bilgilerini filtrelemek için aşağıdakilerden birini seçin: **kapsam** fark görünümleri üstündeki filtreleri.  
+  Anlık görüntü arasındaki fark bilgilerini filtrelemek için aşağıdakilerden birini seçin: **kapsam** fark görünümleri üstündeki filtreleri.  
   
--   **Kalan nesneler gelen anlık görüntü sayısı\<numarası >**. Bu filtre yığına eklenen ve temel anlık görüntü ve önceki anlık görüntüye kıyasla yığın kaldırılır nesneler arasındaki farkı gösterir. Anlık görüntü özeti +205 gösterir. Örneğin, /-195 nesne sayısı bu filtre gösterir, on nesneleri eklendi ancak kaldırılmaz.  
+- **Kalan nesneler gelen anlık görüntü sayısı\<numarası >**. Bu filtre yığına eklenen ve temel anlık görüntü ve önceki anlık görüntüye kıyasla yığın kaldırılır nesneler arasındaki farkı gösterir. Anlık görüntü özeti +205 gösterir. Örneğin, /-195 nesne sayısı bu filtre gösterir, on nesneleri eklendi ancak kaldırılmaz.  
   
-    > [!TIP]
-    >  Bu filtrede en yararlı bilgiler göstermek için açıklanan adımları izleyin. [bir bellek sızıntısı yalıtmak](#Isolate).  
+  > [!TIP]
+  >  Bu filtrede en yararlı bilgiler göstermek için açıklanan adımları izleyin. [bir bellek sızıntısı yalıtmak](#Isolate).  
   
--   **Nesneler arasında eklenen anlık görüntü sayısı\<numarası > ve #\<numarası >**. Bu filtre, önceki anlık görüntüden yığına eklenen tüm nesneleri gösterir.  
+- **Nesneler arasında eklenen anlık görüntü sayısı\<numarası > ve #\<numarası >**. Bu filtre, önceki anlık görüntüden yığına eklenen tüm nesneleri gösterir.  
   
--   **Anlık görüntüsündeki tüm nesneler #\<numarası >**. Bu filtre ayarı herhangi bir nesne yığını üzerindeki filtre değil.  
+- **Anlık görüntüsündeki tüm nesneler #\<numarası >**. Bu filtre ayarı herhangi bir nesne yığını üzerindeki filtre değil.  
   
- Geçerli eşleşmeyen nesne başvuruları göstermek için **kapsam** filtre, select **eşleşmeyen başvuruları göster** ayarlar listesinde ![ayarları bırakma&#45;bellek Çözümleyicisi listede aşağı ](../profiling/media/js-mem-settings.png "JS_Mem_Settings") bölmesinde sağ üst köşesindeki. Bu ayarı etkinleştirirseniz, eşleşmeyen başvuruları gri metinle görüntülenir.  
+  Geçerli eşleşmeyen nesne başvuruları göstermek için **kapsam** filtre, select **eşleşmeyen başvuruları göster** ayarlar listesinde ![ayarları bırakma&#45;bellek Çözümleyicisi listede aşağı ](../profiling/media/js-mem-settings.png "JS_Mem_Settings") bölmesinde sağ üst köşesindeki. Bu ayarı etkinleştirirseniz, eşleşmeyen başvuruları gri metinle görüntülenir.  
   
 > [!TIP]
 >  Adımları izlemenizi öneririz [bir bellek sızıntısı yalıtmak](#Isolate) ve kalan nesneler **kapsam** bellek sızıntısına yol açan nesneleri tanımlamaya yardımcı olmak için filtre uygulayın.  
@@ -339,19 +339,19 @@ JavaScript bellek Çözümleyicisi, bellek kullanımını anlamak ve JavaScript 
 ##  <a name="JSConsoleCommands"></a> Kaynak kodu ile bellek kullanımı verileri ilişkilendirme  
  Bir bellek sorunu olan kod bölümünün yalıtmaya yardımcı olması için aşağıdaki yöntemleri kullanın:  
   
--   Sınıf adları ve kimlikler için ayrıntıları ve değişiklik görünümleri DOM öğeleri arayın.  
+- Sınıf adları ve kimlikler için ayrıntıları ve değişiklik görünümleri DOM öğeleri arayın.  
   
--   Dize değerleri ayrıntıları ve kaynak kodu ile ilişkilendirilmiş olabilir fark görünümleri arayın.  
+- Dize değerleri ayrıntıları ve kaynak kodu ile ilişkilendirilmiş olabilir fark görünümleri arayın.  
   
--   Kullanım [nesne ağacında bir nesneyi bulmak](#ShowInRootsView) nesne ağacın komutu. Bu, ilişkili kaynak kodunu tanımlamak için yardımcı.  
+- Kullanım [nesne ağacında bir nesneyi bulmak](#ShowInRootsView) nesne ağacın komutu. Bu, ilişkili kaynak kodunu tanımlamak için yardımcı.  
   
--   Bellek Çözümleyicisi komutlar kaynak kodunuza ekleyin.  
+- Bellek Çözümleyicisi komutlar kaynak kodunuza ekleyin.  
   
- Kaynak kodunuzu aşağıdaki komutları kullanabilirsiniz:  
+  Kaynak kodunuzu aşağıdaki komutları kullanabilirsiniz:  
   
--   `console.takeHeapSnapshot` JavaScript bellek Çözümleyicisi'nde görüntülenen yığın anlık görüntüsünü alır. Bu komut biridir [JavaScript Konsolu komutları](../debugger/javascript-console-commands.md).  
+- `console.takeHeapSnapshot` JavaScript bellek Çözümleyicisi'nde görüntülenen yığın anlık görüntüsünü alır. Bu komut biridir [JavaScript Konsolu komutları](../debugger/javascript-console-commands.md).  
   
--   `performance.mark` Uygulama çalışırken, Özet görünümü bellek grafik zaman çizelgesinde görüntülenen bir kullanıcı işareti (ters üçgeni) ayarlar. Bu komut, olay açıklayan ve bellek grafikteki bir araç ipucu olarak görünür bir dize bağımsız değişkeni alır. Bu açıklama 100 karakterden uzun olmamalıdır.  
+- `performance.mark` Uygulama çalışırken, Özet görünümü bellek grafik zaman çizelgesinde görüntülenen bir kullanıcı işareti (ters üçgeni) ayarlar. Bu komut, olay açıklayan ve bellek grafikteki bir araç ipucu olarak görünür bir dize bağımsız değişkeni alır. Bu açıklama 100 karakterden uzun olmamalıdır.  
   
 > [!TIP]
 >  Kullanım `console.takeHeapSnapshot` bellek kullanım senaryoları yinelenen analiz hızlandırmak için.  

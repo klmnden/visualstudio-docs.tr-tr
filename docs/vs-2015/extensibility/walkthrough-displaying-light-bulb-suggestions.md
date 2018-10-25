@@ -13,12 +13,12 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 34ce6854c5af256c9a4fde35340414b6b2de640f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: de18b0371baae2d48be9341b605f064875ef21de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252505"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869060"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>İzlenecek Yol: Ampul Önerilerini Görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,21 +27,21 @@ Ampuller bir eylemler kümesi görüntülemek için genişletin, örneğin yerle
   
  Visual C# ve Visual Basic düzenleyicilerde yazma ve kendi kod Çözümleyicileri otomatik olarak ampuller görüntüleyen eylemlerle paketlemek için .NET derleyici Platformu ("Roslyn") kullanabilirsiniz. Daha fazla bilgi için bkz.:  
   
--   [Nasıl yapılır: C# tanılama ve kod düzeltmenizi yazın](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [Nasıl yapılır: C# tanılama ve kod düzeltmenizi yazın](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
--   [Nasıl yapılır: Visual Basic tanılama ve kod düzeltmenizi yazın](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [Nasıl yapılır: Visual Basic tanılama ve kod düzeltmenizi yazın](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
- Diğer diller C++ gibi ampuller gibi bir öneri, bu işlevin bir saplama uygulaması oluşturmak için bazı hızlı eylemler için de sağlar.  
+  Diğer diller C++ gibi ampuller gibi bir öneri, bu işlevin bir saplama uygulaması oluşturmak için bazı hızlı eylemler için de sağlar.  
   
- İşte bir ampul gibi görünüyor. Geçersiz olduğunda bir Visual Basic veya Visual C# projesinde, kırmızı dalgalı bir değişken adı altında görünür. Geçersiz tanımlayıcı fare bir ampul imlecin yanında görüntülenir.  
+  İşte bir ampul gibi görünüyor. Geçersiz olduğunda bir Visual Basic veya Visual C# projesinde, kırmızı dalgalı bir değişken adı altında görünür. Geçersiz tanımlayıcı fare bir ampul imlecin yanında görüntülenir.  
   
- ![Ampul](../extensibility/media/lightbulb.png "ampul")  
+  ![Ampul](../extensibility/media/lightbulb.png "ampul")  
   
- Ampul tarafından aşağı oka tıklayın, seçili eylem önizlemesi ile birlikte bir dizi önerilen eylemi görüntülenir. Bu durumda, eylem çalışırsa, kodunuzda yapılan değişiklikleri gösterir.  
+  Ampul tarafından aşağı oka tıklayın, seçili eylem önizlemesi ile birlikte bir dizi önerilen eylemi görüntülenir. Bu durumda, eylem çalışırsa, kodunuzda yapılan değişiklikleri gösterir.  
   
- ![Ampul Önizleme](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
+  ![Ampul Önizleme](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
- Ampuller kendi önerilen eylemler sağlamak için kullanabilirsiniz. Örneğin, açma küme ayraçları yeni bir satıra Taşı veya bunları önceki satır sonuna taşı eylemleri sağlayabilir. Aşağıdaki örneklerde, geçerli sözcüğü görünür bir ampul oluşturma işlemi gösterilmektedir ve iki sahip önerilen eylemler: **büyük harfe Dönüştür** ve **küçük harfe Dönüştür**.  
+  Ampuller kendi önerilen eylemler sağlamak için kullanabilirsiniz. Örneğin, açma küme ayraçları yeni bir satıra Taşı veya bunları önceki satır sonuna taşı eylemleri sağlayabilir. Aşağıdaki örneklerde, geçerli sözcüğü görünür bir ampul oluşturma işlemi gösterilmektedir ve iki sahip önerilen eylemler: **büyük harfe Dönüştür** ve **küçük harfe Dönüştür**.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik olarak eklenmiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'sını yükleme](../extensibility/installing-the-visual-studio-sdk.md).  

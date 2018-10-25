@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5c60e0b812cd0557b266d3e34dae62cb22cc57d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1dea0fce75d83678161013baef109364842fcc46
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281763"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937739"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Bir VSIX paketinin anatomisi
 Bir VSIX paketi bir *.vsix* sınıflandırmak ve uzantıları yüklemek için bir veya daha fazla Visual Studio uzantıları, Visual Studio meta verileri ile birlikte içeren bir dosya kullanır. Meta verilerin yer alan VSIX bildirimi içinde ve *[Content_Types] .xml* dosya. Bir VSIX paketi de bir veya daha fazla içerebilir *Extension.vsixlangpack* sağlamak üzere dosyaları Kurulum metninde yerelleştirilmiş ve bağımlılıklarını yüklemek için ek VSIX paketleri içerebilir.  
@@ -55,7 +55,7 @@ Bir VSIX paketi bir *.vsix* sınıflandırmak ve uzantıları yüklemek için bi
 ## <a name="installation-location"></a>Yükleme konumu  
  Yükleme sırasında **Uzantılar ve güncelleştirmeler** altında bir klasöre VSIX paketinin içeriği arar *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*.  
   
- Varsayılan olarak, çünkü yalnızca geçerli kullanıcının yükleme uygular *% LocalAppData %* kullanıcıya özgü dizinidir. Ancak ayarlarsanız [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) için bildirimin öğesi `True`, uzantı altında yüklü *... \\* VisualStudioInstallationFolder*\Common7\IDE\Extensions* ve bilgisayarın tüm kullanıcıları için kullanılabilir olacak.  
+ Varsayılan olarak, çünkü yalnızca geçerli kullanıcının yükleme uygular *% LocalAppData %* kullanıcıya özgü dizinidir. Ancak ayarlarsanız [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) için bildirimin öğesi `True`, uzantı altında yüklü <em>... \\</em> VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em> ve bilgisayarın tüm kullanıcıları için kullanılabilir olacak.  
   
 ## <a name="contenttypesxml"></a>[Content_Types] .xml  
  *[Content_Types] .xml* dosyayı genişletilmiş dosya türlerini tanımlayan *.vsix* dosya. Visual Studio Paket yüklemesi sırasında bu dosyayı kullanır ancak dosyayı yüklemez. Bu dosya hakkında daha fazla bilgi için bkz. [[Content_types] .xml dosyasının yapısı](the-structure-of-the-content-types-dot-xml-file.md).  

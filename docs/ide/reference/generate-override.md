@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da yöntemi geçersiz kılma oluştur
+title: Visual Studio'da bir yöntemi geçersiz kılma oluşturma
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c366ce3d393e639590e5d45fc55ad5523be920b6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5d51139d2e5197607de2255b267c24bf2a9db2b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943872"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919071"
 ---
-# <a name="generate-an-override-in-visual-studio"></a>Visual Studio'da bir geçersiz kılma oluştur
+# <a name="generate-an-override-in-visual-studio"></a>Visual Studio'da bir geçersiz kılma oluşturma
 
 Bu kod oluşturma için geçerlidir:
 
@@ -24,39 +24,39 @@ Bu kod oluşturma için geçerlidir:
 
 - Visual Basic
 
-**Ne:** hemen bir taban sınıftan hangi kılınabilir herhangi bir yöntemini kodunu oluşturmak olanak tanır.
+**Ne:** geçersiz kılınabilir bir yöntemi için kod bir taban sınıftan hemen oluşturmanıza olanak tanır.
 
-**Ne zaman:** bir temel sınıf yöntemini geçersiz kılın ve imza otomatik olarak oluşturmak istediğiniz.
+**Ne zaman:** bir temel sınıf yöntemini geçersiz kılın ve imza otomatik olarak oluşturmak istiyorsunuz.
 
-**Neden:** ancak, bu özellik imza otomatik olarak oluşturur, yöntem imzası kendiniz yazabilirsiniz.
+**Neden:** ancak bu özellik imzası otomatik olarak oluşturur, yöntem imzası kendiniz yazabilirsiniz.
 
 ## <a name="how-to"></a>Nasıl Yapılır Konuları
 
-1. Tür `override` C# veya `Overrides` Visual Basic'te, ardından olduğu gibi bir geçersiz kılma yöntemi eklemek için bir boşluk.
+1. Tür `override` içinde C# veya `Overrides` Visual Basic'te, ardından bir boşluk istediğiniz bir geçersiz kılma yöntemi eklemek için.
 
-   - C# ' TA:
+   - C# İÇİN:
 
-    ![IntelliSense C# geçersiz kıl](media/override-intellisense-cs.png)
+      ![IntelliSense geçersiz kılC#](media/override-intellisense-cs.png)
 
    - Visual Basic:
 
-    ![IntelliSense VB geçersiz kıl](media/override-intellisense-vb.png)
+      ![IntelliSense VB geçersiz kıl](media/override-intellisense-vb.png)
 
-1. Temel sınıfından geçersiz kılmak istediğiniz yöntemi seçin.
+2. Taban sınıfından geçersiz kılmak istediğiniz yöntemi seçin.
 
    > [!TIP]
-   > - Özellik simgesi kullanın ![Özellik simgesi](media/override-property-cs.png) göstermek veya özellikler listesinde gizlemek için.
-   > - Yöntem simgesini kullanın ![Yöntem simgesi](media/override-method-cs.png) göstermek veya gizlemek listesinde yöntemleri için.
+   > - Özellik simgesi kullanın ![Özellik simgesi](media/override-property-cs.png) Özellikler listesinde gizlemek veya göstermek için.
+   > - Yöntem simgesi kullanın ![Yöntem simgesi](media/override-method-cs.png) yöntemleri listesindeki gizlemek veya göstermek için.
 
-   Seçilen yöntemi veya özelliği sınıfa geçersiz kılma uygulanması için hazır eklenir.
+   Seçili yöntemi veya özelliği geçersiz kılma uygulanması hazır sınıfa eklenir.
 
-   - C# ' TA:
+   - C# İÇİN:
 
-      ![Sonuç C# geçersiz kıl](media/override-result-cs.png)
+       ![Sonucu geçersiz kılC#](media/override-result-cs.png)
 
    - Visual Basic:
 
-      ![Sonuç VB geçersiz kıl](media/override-result-vb.png)
+       ![VB sonucu geçersiz kıl](media/override-result-vb.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

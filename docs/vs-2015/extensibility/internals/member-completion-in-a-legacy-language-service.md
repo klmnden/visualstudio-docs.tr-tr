@@ -17,12 +17,12 @@ ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e375cc8d314163b277cc20685ae19f134236b0a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 321cbd6482be088bd57c94224c41d4626a86a0f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240818"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892694"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Üye Tamamlama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ IntelliSense üye tamamlama sınıf, yapı, sabit listesi veya ad alanı gibi be
 ## <a name="how-it-works"></a>Nasıl çalışır?  
  MPF sınıflarını kullanarak bir üye listesi gösterilen iki yollar şunlardır:  
   
--   Giriş işaretini bir tanımlayıcı veya bir üye tamamlama karakterinden sonraki konumlandırma ve seçerek **üyeleri Listele** gelen **IntelliSense** menüsü.  
+- Giriş işaretini bir tanımlayıcı veya bir üye tamamlama karakterinden sonraki konumlandırma ve seçerek **üyeleri Listele** gelen **IntelliSense** menüsü.  
   
--   <xref:Microsoft.VisualStudio.Package.IScanner> Tarayıcı üye tamamlama karakter algılar ve bir belirteç tetikleyicisi ayarlar <xref:Microsoft.VisualStudio.Package.TokenTriggers> bu karakteri.  
+- <xref:Microsoft.VisualStudio.Package.IScanner> Tarayıcı üye tamamlama karakter algılar ve bir belirteç tetikleyicisi ayarlar <xref:Microsoft.VisualStudio.Package.TokenTriggers> bu karakteri.  
   
- Bir üye tamamlama karakter, bir sınıf, yapı ya da numaralandırma üyesi izlemek için olduğunu gösterir. Örneğin, C# veya Visual Basic'te üye tamamlama karakter olan bir `.`, c++'ta karakter ya da olsa bir `.` veya `->`. Üye seçme karakter tarandığında tetikleyici değeri ayarlanır.  
+  Bir üye tamamlama karakter, bir sınıf, yapı ya da numaralandırma üyesi izlemek için olduğunu gösterir. Örneğin, C# veya Visual Basic'te üye tamamlama karakter olan bir `.`, c++'ta karakter ya da olsa bir `.` veya `->`. Üye seçme karakter tarandığında tetikleyici değeri ayarlanır.  
   
 ### <a name="the-intellisense-member-list-command"></a>IntelliSense üye Listele komutu  
  <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Komut başlatan bir çağrı <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metodunda <xref:Microsoft.VisualStudio.Package.Source> sınıfı ve <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> sırayla yöntemini çağırır <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> yöntemi ayrıştırıcı ayrıştırma nedeni ile <xref:Microsoft.VisualStudio.Package.ParseReason>.  

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ee391ce1200cce03e83f80b6f345ead4cd03199
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 3e00b96d1f5361d3d5260296532be47636f430d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495251"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921463"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>İzlenecek yol: bir çekirdek Düzenleyicisi ve bir düzenleyici dosya türü kayıt oluşturma
 Bu izlenecek yol başlatan bir VSPackage'ı oluşturma işlemini gösterir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çekirdek Düzenleyicisi ile bir dosya *.myext* dosya adı uzantısı yüklenir.  
@@ -37,97 +37,97 @@ Bu izlenecek yol başlatan bir VSPackage'ı oluşturma işlemini gösterir [!INC
   
 ### <a name="to-create-the-vspackage"></a>VSPackage'ı oluşturmak için  
   
--   Başlangıç [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oluşturup bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] adlı VSPackage `MyPackage`açıklandığı gibi [izlenecek yol: bir VSPackage menü komutu oluşturmak](https://msdn.microsoft.com/library/d699c149-5d1e-47ff-94c7-e1222af02c32).  
+- Başlangıç [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oluşturup bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] adlı VSPackage `MyPackage`açıklandığı gibi [izlenecek yol: bir VSPackage menü komutu oluşturmak](https://msdn.microsoft.com/library/d699c149-5d1e-47ff-94c7-e1222af02c32).  
   
 ### <a name="to-add-the-editor-factory"></a>Düzenleyici üreteci eklemek için  
   
-1.  Sağ **MyPackage** proje, işaret **Ekle**ve ardından **sınıfı**.  
+1. Sağ **MyPackage** proje, işaret **Ekle**ve ardından **sınıfı**.  
   
-2.  İçinde **Yeni Öğe Ekle** iletişim kutusunda, emin **sınıfı** şablonu seçili türü `EditorFactory.cs` adı ve ardından **Ekle** sınıfı projenize eklemek için.  
+2. İçinde **Yeni Öğe Ekle** iletişim kutusunda, emin **sınıfı** şablonu seçili türü `EditorFactory.cs` adı ve ardından **Ekle** sınıfı projenize eklemek için.  
   
-     *EditorFactory.cs* dosya otomatik olarak açması gerekir.  
+    *EditorFactory.cs* dosya otomatik olarak açması gerekir.  
   
-3.  Aşağıdaki derlemelere de kodunuzdan başvurur.  
+3. Aşağıdaki derlemelere de kodunuzdan başvurur.  
   
-    ```vb  
-    Imports System.Runtime.InteropServices  
-    Imports Microsoft.VisualStudio  
-    Imports Microsoft.VisualStudio.Shell  
-    Imports Microsoft.VisualStudio.Shell.Interop  
-    Imports Microsoft.VisualStudio.OLE.Interop  
-    Imports Microsoft.VisualStudio.TextManager.Interop  
-    Imports IOleServiceProvider = Microsoft.VisualStudio.OLE.Interop.IServiceProvider  
-    ```  
+   ```vb  
+   Imports System.Runtime.InteropServices  
+   Imports Microsoft.VisualStudio  
+   Imports Microsoft.VisualStudio.Shell  
+   Imports Microsoft.VisualStudio.Shell.Interop  
+   Imports Microsoft.VisualStudio.OLE.Interop  
+   Imports Microsoft.VisualStudio.TextManager.Interop  
+   Imports IOleServiceProvider = Microsoft.VisualStudio.OLE.Interop.IServiceProvider  
+   ```  
   
-    ```csharp  
-    using System.Runtime.InteropServices;  
-    using Microsoft.VisualStudio;  
-    using Microsoft.VisualStudio.Shell;  
-    using Microsoft.VisualStudio.Shell.Interop;  
-    using Microsoft.VisualStudio.OLE.Interop;  
-    using Microsoft.VisualStudio.TextManager.Interop;  
-    using IOleServiceProvider = Microsoft.VisualStudio.OLE.Interop.IServiceProvider;  
+   ```csharp  
+   using System.Runtime.InteropServices;  
+   using Microsoft.VisualStudio;  
+   using Microsoft.VisualStudio.Shell;  
+   using Microsoft.VisualStudio.Shell.Interop;  
+   using Microsoft.VisualStudio.OLE.Interop;  
+   using Microsoft.VisualStudio.TextManager.Interop;  
+   using IOleServiceProvider = Microsoft.VisualStudio.OLE.Interop.IServiceProvider;  
   
-    ```  
+   ```  
   
-4.  Bir GUID değeri ekleyin `EditorFactory` ekleyerek sınıfı `Guid` özniteliği sınıf bildiriminden hemen önce.  
+4. Bir GUID değeri ekleyin `EditorFactory` ekleyerek sınıfı `Guid` özniteliği sınıf bildiriminden hemen önce.  
   
-     Kullanarak yeni bir GUID oluşturabilirsiniz *guidgen.exe* , program [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komut istemi veya tıklayarak komut **GUID Oluştur** üzerinde **Araçları** menüsü. Burada kullanılan GUID yalnızca bir örnektir; Projenizde kullanmayın.  
+    Kullanarak yeni bir GUID oluşturabilirsiniz *guidgen.exe* , program [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komut istemi veya tıklayarak komut **GUID Oluştur** üzerinde **Araçları** menüsü. Burada kullanılan GUID yalnızca bir örnektir; Projenizde kullanmayın.  
   
-    ```vb  
-    <Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")> _  
-    ```  
+   ```vb  
+   <Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")> _  
+   ```  
   
-    ```csharp  
-    [Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")]   
-    ```  
+   ```csharp  
+   [Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")]   
+   ```  
   
-5.  Sınıf tanımında üst pakete ve bir hizmet sağlayıcısı içerecek şekilde iki özel değişkeni ekleyin.  
+5. Sınıf tanımında üst pakete ve bir hizmet sağlayıcısı içerecek şekilde iki özel değişkeni ekleyin.  
   
-    ```vb  
-    Class EditorFactory  
-        Private parentPackage As Package  
-        Private serviceProvider As IOleServiceProvider  
-    ```  
+   ```vb  
+   Class EditorFactory  
+       Private parentPackage As Package  
+       Private serviceProvider As IOleServiceProvider  
+   ```  
   
-    ```csharp  
-    class EditorFactory  
-    {  
-        private Package parentPackage;  
-        private IOleServiceProvider serviceProvider;  
-    }  
+   ```csharp  
+   class EditorFactory  
+   {  
+       private Package parentPackage;  
+       private IOleServiceProvider serviceProvider;  
+   }  
   
-    ```  
+   ```  
   
-6.  Türünden bir parametre alan bir genel sınıf oluşturucu Ekle <xref:Microsoft.VisualStudio.Shell.Package>:  
+6. Türünden bir parametre alan bir genel sınıf oluşturucu Ekle <xref:Microsoft.VisualStudio.Shell.Package>:  
   
-    ```vb  
-    Public Sub New(ByVal parentPackage As Package)  
-        Me.parentPackage = parentPackage  
-    End Sub  
-    ```  
+   ```vb  
+   Public Sub New(ByVal parentPackage As Package)  
+       Me.parentPackage = parentPackage  
+   End Sub  
+   ```  
   
-    ```csharp  
-    public EditorFactory(Package parentPackage)  
-    {  
-        this.parentPackage = parentPackage;  
-    }  
-    ```  
+   ```csharp  
+   public EditorFactory(Package parentPackage)  
+   {  
+       this.parentPackage = parentPackage;  
+   }  
+   ```  
   
-7.  Değiştirme `EditorFactory` sınıf türetmek için bildirimi <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> arabirimi.  
+7. Değiştirme `EditorFactory` sınıf türetmek için bildirimi <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> arabirimi.  
   
-    ```vb  
-    Class EditorFactory Implements IVsEditorFacto  
-    ```  
+   ```vb  
+   Class EditorFactory Implements IVsEditorFacto  
+   ```  
   
-    ```csharp  
-    class EditorFactory : IVsEditorFactory  
+   ```csharp  
+   class EditorFactory : IVsEditorFactory  
   
-    ```  
+   ```  
   
-8.  Sağ <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>, tıklayın **arabirim uygulama**ve ardından **uygulama arabirimi açıkça**.  
+8. Sağ <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>, tıklayın **arabirim uygulama**ve ardından **uygulama arabirimi açıkça**.  
   
-     Bu adım, uygulanması gereken dört yöntemleri ekler <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> arabirimi.  
+    Bu adım, uygulanması gereken dört yöntemleri ekler <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> arabirimi.  
   
 9. Öğesinin içeriğini değiştirin `IVsEditorFactory.Close` yöntemini aşağıdaki kod ile.  
   
@@ -321,63 +321,63 @@ Bu izlenecek yol başlatan bir VSPackage'ı oluşturma işlemini gösterir [!INC
   
 ### <a name="to-register-the-editor-factory"></a>Düzenleyici üreteci kaydetmek için  
   
-1.  İçinde **Çözüm Gezgini**, çift **Resources.resx** olan dize tablosuna açmak için dosyaya giriş **Dize1** seçili.  
+1. İçinde **Çözüm Gezgini**, çift **Resources.resx** olan dize tablosuna açmak için dosyaya giriş **Dize1** seçili.  
   
-2.  Tanımlayıcı için adını değiştirmek `IDS_EDITORNAME` ve metni **MyPackage Düzenleyici.** Bu dize Düzenleyici adı olarak görünür.  
+2. Tanımlayıcı için adını değiştirmek `IDS_EDITORNAME` ve metni **MyPackage Düzenleyici.** Bu dize Düzenleyici adı olarak görünür.  
   
-3.  Açık **VSPackage.resx** dosya, yeni bir dize ekleyin, adı kümesine **101**ve değerine `IDS_EDITORNAME`. Bu adım, oluşturduğunuz dize erişmek için bir kaynak kimliği ile paket sağlar.  
+3. Açık **VSPackage.resx** dosya, yeni bir dize ekleyin, adı kümesine **101**ve değerine `IDS_EDITORNAME`. Bu adım, oluşturduğunuz dize erişmek için bir kaynak kimliği ile paket sağlar.  
   
-    > [!NOTE]
-    >  Varsa **VSPackage.resx** dosyasını içeren başka bir, dize `name` özniteliğini **101**, başka bir benzersiz, sayısal değer, burada ve aşağıdaki adımları değiştirin.  
+   > [!NOTE]
+   >  Varsa **VSPackage.resx** dosyasını içeren başka bir, dize `name` özniteliğini **101**, başka bir benzersiz, sayısal değer, burada ve aşağıdaki adımları değiştirin.  
   
-4.  İçinde **Çözüm Gezgini**açın **MyPackagePackage.cs** dosya.  
+4. İçinde **Çözüm Gezgini**açın **MyPackagePackage.cs** dosya.  
   
-     Ana paket dosyası bu dosyadır.  
+    Ana paket dosyası bu dosyadır.  
   
-5.  Aşağıdaki kullanıcı öznitelikleri hemen önüne ekleyin `Guid` özniteliği.  
+5. Aşağıdaki kullanıcı öznitelikleri hemen önüne ekleyin `Guid` özniteliği.  
   
-    ```vb  
-    <ProvideEditorFactoryAttribute(GetType(EditorFactory), 101)> _  
-    <ProvideEditorExtensionAttribute(GetType(EditorFactory), _  
-          ".myext", 32, NameResourceID:=101 )> _  
-    ```  
+   ```vb  
+   <ProvideEditorFactoryAttribute(GetType(EditorFactory), 101)> _  
+   <ProvideEditorExtensionAttribute(GetType(EditorFactory), _  
+         ".myext", 32, NameResourceID:=101 )> _  
+   ```  
   
-    ```csharp  
-    [ProvideEditorFactory(typeof(EditorFactory), 101)]  
-    [ProvideEditorExtension(typeof(EditorFactory),   
-          ".myext", 32, NameResourceID = 101)]   
-    ```  
+   ```csharp  
+   [ProvideEditorFactory(typeof(EditorFactory), 101)]  
+   [ProvideEditorExtension(typeof(EditorFactory),   
+         ".myext", 32, NameResourceID = 101)]   
+   ```  
   
-     <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> Özniteliği ilişkilendirir *.myext* uzantısı yüklenir, Düzenleyicisi Fabrika çağrılan sahip bir dosya için istediğiniz zaman, böylece dosya uzantısı, düzenleyici fabrikası ile.  
+    <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> Özniteliği ilişkilendirir *.myext* uzantısı yüklenir, Düzenleyicisi Fabrika çağrılan sahip bir dosya için istediğiniz zaman, böylece dosya uzantısı, düzenleyici fabrikası ile.  
   
-6.  Özel bir değişken ekleyin `MyPackage` , sınıf oluşturucusu hemen önce ve türü verin `EditorFactory`.  
+6. Özel bir değişken ekleyin `MyPackage` , sınıf oluşturucusu hemen önce ve türü verin `EditorFactory`.  
   
-    ```vb  
-    Private editorFactory As EditorFactory  
-    ```  
+   ```vb  
+   Private editorFactory As EditorFactory  
+   ```  
   
-    ```csharp  
-    private EditorFactory editorFactory;  
-    ```  
+   ```csharp  
+   private EditorFactory editorFactory;  
+   ```  
   
-7.  Bulma `Initialize` yöntemi (açmanız gerekebilir `Package Members` gizli bölge) ve çağrısından sonra aşağıdaki kodu ekleyin `base.Initialize()`.  
+7. Bulma `Initialize` yöntemi (açmanız gerekebilir `Package Members` gizli bölge) ve çağrısından sonra aşağıdaki kodu ekleyin `base.Initialize()`.  
   
-    ```vb  
-    'Create our editor factory and register it.   
-    Me.editorFactory = New EditorFactory(Me)  
-    MyBase.RegisterEditorFactory(Me.editorFactory)  
-    ```  
+   ```vb  
+   'Create our editor factory and register it.   
+   Me.editorFactory = New EditorFactory(Me)  
+   MyBase.RegisterEditorFactory(Me.editorFactory)  
+   ```  
   
-    ```csharp  
-    // Create our editor factory and register it.  
-    this.editorFactory = new EditorFactory(this);  
-    base.RegisterEditorFactory(this.editorFactory);  
+   ```csharp  
+   // Create our editor factory and register it.  
+   this.editorFactory = new EditorFactory(this);  
+   base.RegisterEditorFactory(this.editorFactory);  
   
-    ```  
+   ```  
   
-8.  Program derleyin ve hiçbir hata olmadığından emin olun.  
+8. Program derleyin ve hiçbir hata olmadığından emin olun.  
   
-     Bu adım için Deneysel kayıt defteri kovanında Düzenleyici üreteci kaydeder [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Geçersiz kılınacak istenirse *resource.h* dosyasına sağ tıklayıp **Tamam**.  
+    Bu adım için Deneysel kayıt defteri kovanında Düzenleyici üreteci kaydeder [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Geçersiz kılınacak istenirse *resource.h* dosyasına sağ tıklayıp **Tamam**.  
   
 9. Adlandırılmış bir örnek dosyası oluşturma *TextFile1.myext*.  
   

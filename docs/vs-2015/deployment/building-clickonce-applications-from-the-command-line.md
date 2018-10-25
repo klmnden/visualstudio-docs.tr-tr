@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 070ab3c216cacfcaeaf73bdc4cc6bebdaf52233b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dac26a7846f4a6b611c53e9cd537d112a8205d2f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271040"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836794"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Komut Satırından ClickOnce Uygulamalarını Derleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,39 +49,39 @@ ms.locfileid: "49271040"
   
 #### <a name="to-create-and-publish-a-clickonce-project"></a>Oluşturma ve bir ClickOnce projeyi yayımlama  
   
-1.  Tıklayın **yeni proje** gelen **dosya** menüsü. **Yeni proje** iletişim kutusu görüntülenir.  
+1. Tıklayın **yeni proje** gelen **dosya** menüsü. **Yeni proje** iletişim kutusu görüntülenir.  
   
-2.  Seçin **Windows uygulama** ve adlandırın `CmdLineDemo`.  
+2. Seçin **Windows uygulama** ve adlandırın `CmdLineDemo`.  
   
-3.  Gelen **derleme** menüsünde tıklatın **Yayımla** komutu.  
+3. Gelen **derleme** menüsünde tıklatın **Yayımla** komutu.  
   
-     Bu adım projeyi oluşturmak için düzgün yapılandırıldığını sağlar bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama dağıtımı.  
+    Bu adım projeyi oluşturmak için düzgün yapılandırıldığını sağlar bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama dağıtımı.  
   
-     Yayınla Sihirbazı görüntülenir.  
+    Yayınla Sihirbazı görüntülenir.  
   
-4.  Yayımlama Sihirbazı'nda tıklatın **son**.  
+4. Yayımlama Sihirbazı'nda tıklatın **son**.  
   
-     Visual Studio oluşturur ve Publish.htm adlı varsayılan Web sayfası görüntülenir.  
+    Visual Studio oluşturur ve Publish.htm adlı varsayılan Web sayfası görüntülenir.  
   
-5.  Projenizi kaydedin ve onu depolandığı klasör konumunu not edin.  
+5. Projenizi kaydedin ve onu depolandığı klasör konumunu not edin.  
   
- Yukarıdaki adımları oluşturma bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ilk kez yayımlanan bir proje. Artık derleme IDE dışında yeniden oluşturabilirsiniz.  
+   Yukarıdaki adımları oluşturma bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ilk kez yayımlanan bir proje. Artık derleme IDE dışında yeniden oluşturabilirsiniz.  
   
 #### <a name="to-reproduce-the-build-from-the-command-line"></a>Komut satırından derleme yeniden oluşturmak için  
   
-1.  Çıkış [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+1. Çıkış [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
-2.  Windows gelen **Başlat** menüsünde tıklayın **tüm programlar**, ardından **Microsoft Visual Studio**, ardından **Visual Studio Araçları**, ardından **Visual Studio komut istemi**. Bu, geçerli kullanıcının kök klasöründe bir komut istemi açmanız gerekir.  
+2. Windows gelen **Başlat** menüsünde tıklayın **tüm programlar**, ardından **Microsoft Visual Studio**, ardından **Visual Studio Araçları**, ardından **Visual Studio komut istemi**. Bu, geçerli kullanıcının kök klasöründe bir komut istemi açmanız gerekir.  
   
-3.  İçinde **Visual Studio komut istemi**, geçerli dizini yalnızca yerleşik yukarıda projenin konumunu değiştirin. Örneğin, `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.  
+3. İçinde **Visual Studio komut istemi**, geçerli dizini yalnızca yerleşik yukarıda projenin konumunu değiştirin. Örneğin, `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.  
   
-4.  Üretilen mevcut dosyaları kaldırmak için "oluşturmak ve yayımlamak için bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] projesi" türü `rmdir /s publish`.  
+4. Üretilen mevcut dosyaları kaldırmak için "oluşturmak ve yayımlamak için bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] projesi" türü `rmdir /s publish`.  
   
-     Bu adım isteğe bağlıdır, ancak yeni dosyalar tüm komut satırı derleme tarafından üretilen sağlar.  
+    Bu adım isteğe bağlıdır, ancak yeni dosyalar tüm komut satırı derleme tarafından üretilen sağlar.  
   
-5.  Türü `msbuild /target:publish`  
+5. Türü `msbuild /target:publish`  
   
- Yukarıdaki adımları tam üretecektir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] projenizin P adlı bir alt uygulama dağıtımı**Yayımla**. CmdLineDemo.Application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım bildirimi. CmdLineDemo_1.0.0.0 klasörü CmdLineDemo.exe dosyaları CmdLineDemo.exe.manifest ve dosyalarını içeren [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi. Setup.exe olduğundan, varsayılan olarak yüklemek için yapılandırılmış önyükleyici [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. DotNetFX klasörü için yeniden dağıtılabilir dosyaları içeren [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Web üzerinden ya da UNC veya CD/DVD aracılığıyla uygulamanızı dağıtmak için gereken dosya kümesinin tamamını budur.  
+   Yukarıdaki adımları tam üretecektir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] projenizin P adlı bir alt uygulama dağıtımı**Yayımla**. CmdLineDemo.Application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım bildirimi. CmdLineDemo_1.0.0.0 klasörü CmdLineDemo.exe dosyaları CmdLineDemo.exe.manifest ve dosyalarını içeren [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi. Setup.exe olduğundan, varsayılan olarak yüklemek için yapılandırılmış önyükleyici [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. DotNetFX klasörü için yeniden dağıtılabilir dosyaları içeren [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Web üzerinden ya da UNC veya CD/DVD aracılığıyla uygulamanızı dağıtmak için gereken dosya kümesinin tamamını budur.  
   
 ## <a name="publishing-properties"></a>Yayımlama özellikleri  
  Yukarıdaki yordamlarda uygulama yayımladığınızda, aşağıdaki özellikler, Yayımla Sihirbazı tarafından proje dosyanıza eklenir. Bu özellikleri doğrudan etkilemek nasıl [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama oluşturulur.  
@@ -116,51 +116,51 @@ msbuild /target:publish /property:BootstrapperEnabled=false
   
  Yayımlama özellikleri denetlenir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gelen **Yayımla**, **güvenlik**, ve **imzalama** özellik sayfalarından **Proje Tasarımcısı** . Her Uygulama Tasarımcısı çeşitli özellik sayfalarında ayarlanmış nasıl bir gösterge ile birlikte yayımlama özellikleri açıklaması aşağıda verilmiştir:  
   
--   `AssemblyOriginatorKeyFile` oturum açmak için kullanılan anahtar dosyasını belirler, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimleri. Bu anahtarı, tanımlayıcı ad atamak için de kullanılabilir. Bu özellik üzerinde ayarlanır **imzalama** sayfasının **Proje Tasarımcısı**.  
+- `AssemblyOriginatorKeyFile` oturum açmak için kullanılan anahtar dosyasını belirler, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimleri. Bu anahtarı, tanımlayıcı ad atamak için de kullanılabilir. Bu özellik üzerinde ayarlanır **imzalama** sayfasının **Proje Tasarımcısı**.  
   
- Aşağıdaki özellikler ayarlanır **güvenlik** sayfası:  
+  Aşağıdaki özellikler ayarlanır **güvenlik** sayfası:  
   
--   **ClickOnce güvenlik ayarlarını etkinleştirme** belirler olmadığını [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bildirimleri oluşturulur. Bir proje ilk oluşturulduğunda [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bildirim oluşturma varsayılan olarak kapalıdır. Sihirbaz, bu bayrak, ilk kez yayımladığınızda üzerinde otomatik olarak açılır.  
+- **ClickOnce güvenlik ayarlarını etkinleştirme** belirler olmadığını [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bildirimleri oluşturulur. Bir proje ilk oluşturulduğunda [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bildirim oluşturma varsayılan olarak kapalıdır. Sihirbaz, bu bayrak, ilk kez yayımladığınızda üzerinde otomatik olarak açılır.  
   
--   **TargetZone** için güven düzeyini belirler, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi. Olası değerler şunlardır: "Internet", "LocalIntranet" ve "Özel". Internet ve LocalIntranet için varsayılan bir izin neden olur, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi. LocalIntranet varsayılandır ve temel tam güven anlamına gelir. Özel belirtir için yalnızca temel App.manifest'i dosyasında açıkça belirtilen izinleri olduğunu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi. Yalnızca güven bilgi tanımları içeren kısmi bir bildirim dosyası app.manifest dosyasıdır. İzinleri yapılandırdığınızda otomatik olarak projenize eklenir gizli bir dosya olan **güvenlik** sayfası.  
+- **TargetZone** için güven düzeyini belirler, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi. Olası değerler şunlardır: "Internet", "LocalIntranet" ve "Özel". Internet ve LocalIntranet için varsayılan bir izin neden olur, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi. LocalIntranet varsayılandır ve temel tam güven anlamına gelir. Özel belirtir için yalnızca temel App.manifest'i dosyasında açıkça belirtilen izinleri olduğunu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi. Yalnızca güven bilgi tanımları içeren kısmi bir bildirim dosyası app.manifest dosyasıdır. İzinleri yapılandırdığınızda otomatik olarak projenize eklenir gizli bir dosya olan **güvenlik** sayfası.  
   
- Aşağıdaki özellikler ayarlanır **Yayımla** sayfası:  
+  Aşağıdaki özellikler ayarlanır **Yayımla** sayfası:  
   
--   `PublishUrl` Uygulama IDE içinde yayımlanır burada konumdur. İçine eklenir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi kullanılmazsa `InstallUrl` veya `UpdateUrl` özelliği belirtildi.  
+- `PublishUrl` Uygulama IDE içinde yayımlanır burada konumdur. İçine eklenir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi kullanılmazsa `InstallUrl` veya `UpdateUrl` özelliği belirtildi.  
   
--   `ApplicationVersion` sürümünü belirtir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama. Bu dört basamaklı sürüm numarasıdır. Son basamağı ise bir "*", ardından `ApplicationRevision` derleme zamanında bildirim içine eklenen değeri konur.  
+- `ApplicationVersion` sürümünü belirtir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama. Bu dört basamaklı sürüm numarasıdır. Son basamağı ise bir "*", ardından `ApplicationRevision` derleme zamanında bildirim içine eklenen değeri konur.  
   
--   `ApplicationRevision` Düzeltme belirtir. Bu, IDE'de yayımladığınız her zaman yükseltir tamsayıdır. Bu otomatik olarak komut satırında gerçekleştirilen derlemeler için artmaz, dikkat edin.  
+- `ApplicationRevision` Düzeltme belirtir. Bu, IDE'de yayımladığınız her zaman yükseltir tamsayıdır. Bu otomatik olarak komut satırında gerçekleştirilen derlemeler için artmaz, dikkat edin.  
   
--   `Install` uygulamanın yüklü bir uygulama veya bir çalışma alanından Web uygulaması olup olmadığını belirler.  
+- `Install` uygulamanın yüklü bir uygulama veya bir çalışma alanından Web uygulaması olup olmadığını belirler.  
   
--   `InstallUrl` (gösterilmemiştir), burada, kullanıcılar uygulamayı yükleyecek konumdur. Belirtilmişse bu değer setup.exe önyükleyicisi içine `IsWebBootstrapper` özelliği etkin hale getirilir. Uygulama bildirim if eklenir `UpdateUrl` belirtilmedi.  
+- `InstallUrl` (gösterilmemiştir), burada, kullanıcılar uygulamayı yükleyecek konumdur. Belirtilmişse bu değer setup.exe önyükleyicisi içine `IsWebBootstrapper` özelliği etkin hale getirilir. Uygulama bildirim if eklenir `UpdateUrl` belirtilmedi.  
   
--   `SupportUrl` (gösterilmemiştir) konumu olarak bağlı **Program Ekle/Kaldır** yüklü bir uygulama için iletişim kutusu.  
+- `SupportUrl` (gösterilmemiştir) konumu olarak bağlı **Program Ekle/Kaldır** yüklü bir uygulama için iletişim kutusu.  
   
- Aşağıdaki özellikleri ayarlayın **uygulama güncelleştirmeleri** iletişim kutusu, erişilen **Yayımla** sayfası.  
+  Aşağıdaki özellikleri ayarlayın **uygulama güncelleştirmeleri** iletişim kutusu, erişilen **Yayımla** sayfası.  
   
--   `UpdateEnabled` Uygulama güncelleştirmeleri denetlesin olup olmadığını gösterir.  
+- `UpdateEnabled` Uygulama güncelleştirmeleri denetlesin olup olmadığını gösterir.  
   
--   `UpdateMode` ön plan güncelleştirmeleri ya da arka plan güncelleştirmeleri belirtir.  
+- `UpdateMode` ön plan güncelleştirmeleri ya da arka plan güncelleştirmeleri belirtir.  
   
--   `UpdateInterval` uygulamanın güncelleştirmeleri ne sıklıkla denetlemesi gerektiğini belirtir.  
+- `UpdateInterval` uygulamanın güncelleştirmeleri ne sıklıkla denetlemesi gerektiğini belirtir.  
   
--   `UpdateIntervalUnits` belirtir olup olmadığını `UpdateInterval` birimleri saat, gün veya hafta cinsinden bir değerdir.  
+- `UpdateIntervalUnits` belirtir olup olmadığını `UpdateInterval` birimleri saat, gün veya hafta cinsinden bir değerdir.  
   
--   `UpdateUrl` (gösterilmemiştir), uygulama güncelleştirmelerini alacağı konumdur. Belirtilmişse bu değer, uygulama bildirimine eklenir.  
+- `UpdateUrl` (gösterilmemiştir), uygulama güncelleştirmelerini alacağı konumdur. Belirtilmişse bu değer, uygulama bildirimine eklenir.  
   
--   Aşağıdaki özellikleri ayarlayın **yayımlama seçeneği** iletişim kutusu, erişilen **Yayımla** sayfası.  
+- Aşağıdaki özellikleri ayarlayın **yayımlama seçeneği** iletişim kutusu, erişilen **Yayımla** sayfası.  
   
--   `PublisherName` yüklediğinizde veya uygulamayı çalıştıran gösterilen satırında görüntülenen yayımcı adını belirtir. Yüklü bir uygulama söz konusu olduğunda da klasör adı belirtmeniz kullanıldığı **Başlat** menüsü.  
+- `PublisherName` yüklediğinizde veya uygulamayı çalıştıran gösterilen satırında görüntülenen yayımcı adını belirtir. Yüklü bir uygulama söz konusu olduğunda da klasör adı belirtmeniz kullanıldığı **Başlat** menüsü.  
   
--   `ProductName` yüklediğinizde veya uygulamayı çalıştıran gösterilen istemde ürün adını belirtir. Yüklü bir uygulama söz konusu olduğunda, bu da kısayol adı üzerinde belirtmek için kullanılan **Başlat** menüsü.  
+- `ProductName` yüklediğinizde veya uygulamayı çalıştıran gösterilen istemde ürün adını belirtir. Yüklü bir uygulama söz konusu olduğunda, bu da kısayol adı üzerinde belirtmek için kullanılan **Başlat** menüsü.  
   
--   Aşağıdaki özellikleri ayarlayın **önkoşulları** iletişim kutusu, erişilen **Yayımla** sayfası.  
+- Aşağıdaki özellikleri ayarlayın **önkoşulları** iletişim kutusu, erişilen **Yayımla** sayfası.  
   
--   `BootstrapperEnabled` setup.exe önyükleyici oluşturulup oluşturulmayacağını belirler.  
+- `BootstrapperEnabled` setup.exe önyükleyici oluşturulup oluşturulmayacağını belirler.  
   
--   `IsWebBootstrapper` setup.exe önyükleyici Web üzerinden veya disk tabanlı modunda çalışıp çalışmadığını belirler.  
+- `IsWebBootstrapper` setup.exe önyükleyici Web üzerinden veya disk tabanlı modunda çalışıp çalışmadığını belirler.  
   
 ## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallUrl, SupportUrl PublishURL ve UpdateURL  
  ClickOnce dağıtımı için dört URL seçenekleri aşağıdaki tabloda gösterilmektedir.  

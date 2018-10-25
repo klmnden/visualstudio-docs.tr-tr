@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2943f2a9b0e5d23d40b05a481e45095ad52fc8a8
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 07a4c1178859a3b5884e0573bde31ed251e8a68f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078371"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899012"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Nasıl yapılır: yayımlama sihirbazını kullanarak ClickOnce uygulaması yayımlama
 Bir ClickOnce uygulamasını kullanıcılar tarafından kullanılabilmesi için bir dosya paylaşımı veya yolu, FTP sunucusu veya çıkarılabilir medya yayımlamanız gerekir. Uygulama Yayımlama Sihirbazı'nı kullanarak yayınlayabilirsiniz; yayımlama ile ilgili ek özellikler kullanılabilir **Yayımla** sayfasının **Proje Tasarımcısı**. Daha fazla bilgi için [yayımlama ClickOnce uygulamaları](../deployment/publishing-clickonce-applications.md).  
@@ -39,65 +39,65 @@ Bir ClickOnce uygulamasını kullanıcılar tarafından kullanılabilmesi için 
   
 ### <a name="to-publish-to-a-file-share-or-path"></a>Bir dosya paylaşımı ya da yolu yayımlamak için  
   
-1.  İçinde **Çözüm Gezgini**, uygulama projesini seçin.  
+1. İçinde **Çözüm Gezgini**, uygulama projesini seçin.  
   
-2.  Üzerinde **derleme** menüsünde tıklatın **Yayımla** *Projectname*.  
+2. Üzerinde **derleme** menüsünde tıklatın **Yayımla** *Projectname*.  
   
-     Yayınla Sihirbazı görüntülenir.  
+    Yayınla Sihirbazı görüntülenir.  
   
-3.  İçinde **nerede uygulamayı yayımlamak istiyorsunuz?** sayfasında, geçerli bir FTP sunucusu adresi ya da gösterilen biçimlerden birini kullanarak geçerli dosya yolu girin ve ardından **sonraki**.  
+3. İçinde **nerede uygulamayı yayımlamak istiyorsunuz?** sayfasında, geçerli bir FTP sunucusu adresi ya da gösterilen biçimlerden birini kullanarak geçerli dosya yolu girin ve ardından **sonraki**.  
   
-4.  İçinde **nasıl kullanıcılar uygulamayı yükleyecek?** sayfasında, kullanıcıların nereye uygulamayı yüklemek için konumu seçin:  
+4. İçinde **nasıl kullanıcılar uygulamayı yükleyecek?** sayfasında, kullanıcıların nereye uygulamayı yüklemek için konumu seçin:  
   
-    -   Kullanıcılar Web sitesinden yükleyecekse tıklayın **Web sitesinden** ve önceki adımda girilen dosya yoluna karşılık gelen URL'yi girin. **İleri**'ye tıklayın. (Yayımlama konumu olarak bir FTP adresi belirttiğinizde bu seçenek genellikle kullanılır. FTP üzerinden doğrudan indirme desteklenmiyor. Bu nedenle, bir URL girmeniz gerekir.)  
+   -   Kullanıcılar Web sitesinden yükleyecekse tıklayın **Web sitesinden** ve önceki adımda girilen dosya yoluna karşılık gelen URL'yi girin. **İleri**'ye tıklayın. (Yayımlama konumu olarak bir FTP adresi belirttiğinizde bu seçenek genellikle kullanılır. FTP üzerinden doğrudan indirme desteklenmiyor. Bu nedenle, bir URL girmeniz gerekir.)  
   
-    -   Kullanıcılar, uygulamayı doğrudan dosya paylaşımından yükleyecekse tıklayın **UNC yolu veya dosya paylaşımı**ve ardından **sonraki**. (Bu formun konumlarını yayımlamak için *c:\deploy\myapp* veya  *\\\server\myapp*.)  
+   -   Kullanıcılar, uygulamayı doğrudan dosya paylaşımından yükleyecekse tıklayın **UNC yolu veya dosya paylaşımı**ve ardından **sonraki**. (Bu formun konumlarını yayımlamak için *c:\deploy\myapp* veya  *\\\server\myapp*.)  
   
-    -   Kullanıcılar çıkarılabilir medyadan yükleyecekse tıklayın **CD-ROM veya DVD-ROM**ve ardından **sonraki**.  
+   -   Kullanıcılar çıkarılabilir medyadan yükleyecekse tıklayın **CD-ROM veya DVD-ROM**ve ardından **sonraki**.  
   
-5.  Üzerinde **uygulama çevrimdışı kullanılabilir mi?** sayfasında, uygun seçeneği tıklayın:  
+5. Üzerinde **uygulama çevrimdışı kullanılabilir mi?** sayfasında, uygun seçeneği tıklayın:  
   
-    -   Çalıştırılacak uygulamanın etkinleştirmek istiyorsanız, kullanıcı bağlantısı kesilmiş ağdan, tıklayın **Evet, bu uygulama çevrimiçi veya çevrimdışı kullanılabilir mi**. Bir kısayol **Başlat** menüsünde uygulama için oluşturulur.  
+   - Çalıştırılacak uygulamanın etkinleştirmek istiyorsanız, kullanıcı bağlantısı kesilmiş ağdan, tıklayın **Evet, bu uygulama çevrimiçi veya çevrimdışı kullanılabilir mi**. Bir kısayol **Başlat** menüsünde uygulama için oluşturulur.  
   
-    -   Uygulamayı doğrudan yayınlama konumundan çalıştırmak isterseniz **Hayır, bu uygulama yalnızca çevrimiçi kullanılabilir**. Bir kısayol **Başlat** menü oluşturulmayacak.  
+   - Uygulamayı doğrudan yayınlama konumundan çalıştırmak isterseniz **Hayır, bu uygulama yalnızca çevrimiçi kullanılabilir**. Bir kısayol **Başlat** menü oluşturulmayacak.  
   
      Devam etmek için **İleri** 'ye tıklayın.  
   
-6.  Tıklayın **son** uygulamayı yayınlamak için.  
+6. Tıklayın **son** uygulamayı yayınlamak için.  
   
-     Yayımlama durumu, durum bildirim alanında görüntülenir.  
+    Yayımlama durumu, durum bildirim alanında görüntülenir.  
   
 ### <a name="to-publish-to-a-cd-rom-or-dvd-rom"></a>Bir CD-ROM veya DVD-ROM yayımlamak için  
   
-1.  İçinde **Çözüm Gezgini**, uygulama projesine sağ tıklayıp **özellikleri**.  
+1. İçinde **Çözüm Gezgini**, uygulama projesine sağ tıklayıp **özellikleri**.  
   
-     **Proje Tasarımcısı** görünür.  
+    **Proje Tasarımcısı** görünür.  
   
-2.  Tıklayın **Yayımla** açmak için sekmesinde **Yayımla** sayfasını **Proje Tasarımcısı**, tıklatıp **Yayımlama Sihirbazı** düğmesi.  
+2. Tıklayın **Yayımla** açmak için sekmesinde **Yayımla** sayfasını **Proje Tasarımcısı**, tıklatıp **Yayımlama Sihirbazı** düğmesi.  
   
-     Yayınla Sihirbazı görüntülenir.  
+    Yayınla Sihirbazı görüntülenir.  
   
-3.  İçinde **nerede uygulamayı yayımlamak istiyorsunuz?** sayfasında, dosya yolunu veya FTP konumu burada uygulama yayımlanacak, örneğin girin *d:\deploy*. Ardından **sonraki** devam etmek için.  
+3. İçinde **nerede uygulamayı yayımlamak istiyorsunuz?** sayfasında, dosya yolunu veya FTP konumu burada uygulama yayımlanacak, örneğin girin *d:\deploy*. Ardından **sonraki** devam etmek için.  
   
-4.  Üzerinde **nasıl kullanıcılar uygulamayı yükleyecek?** sayfasında, gelen bir **CD-ROM veya DVD-ROM**ve ardından **sonraki**.  
+4. Üzerinde **nasıl kullanıcılar uygulamayı yükleyecek?** sayfasında, gelen bir **CD-ROM veya DVD-ROM**ve ardından **sonraki**.  
   
-    > [!NOTE]
-    >  Yüklemenin otomatik olarak çalışmasını istiyorsanız, CD-ROM'dan eklenir sürücüsüne açık **Yayımla** sayfasını **Proje Tasarımcısı** tıklatıp **seçenekleri** düğmesini ve ardından **yayımlama seçeneği** seçin **için CD yüklemeleri, CD takıldığında Kurulumu otomatik olarak Başlat**.  
+   > [!NOTE]
+   >  Yüklemenin otomatik olarak çalışmasını istiyorsanız, CD-ROM'dan eklenir sürücüsüne açık **Yayımla** sayfasını **Proje Tasarımcısı** tıklatıp **seçenekleri** düğmesini ve ardından **yayımlama seçeneği** seçin **için CD yüklemeleri, CD takıldığında Kurulumu otomatik olarak Başlat**.  
   
-5.  Uygulamanızı CD-ROM üzerinde dağıtırsanız, güncelleştirmeleri bir Web sitesinden sağlamak isteyebilirsiniz. İçinde **burada Uygulama Güncelleştirmeleri denetle?** sayfasında, güncelleştirme bir seçeneği belirleyin:  
+5. Uygulamanızı CD-ROM üzerinde dağıtırsanız, güncelleştirmeleri bir Web sitesinden sağlamak isteyebilirsiniz. İçinde **burada Uygulama Güncelleştirmeleri denetle?** sayfasında, güncelleştirme bir seçeneği belirleyin:  
   
-    -   Uygulama güncelleştirmeleri denetleyecekse, tıklayın **uygulama aşağıdaki konumdan güncelleştirmelerini denetleyecek** ve burada güncelleştirmeleri denetleyecekse konumu girin. Bu, bir dosya konumu, Web sitesi veya FTP sunucusu olabilir.  
+   - Uygulama güncelleştirmeleri denetleyecekse, tıklayın **uygulama aşağıdaki konumdan güncelleştirmelerini denetleyecek** ve burada güncelleştirmeleri denetleyecekse konumu girin. Bu, bir dosya konumu, Web sitesi veya FTP sunucusu olabilir.  
   
-    -   Uygulama güncelleştirmeleri denetlemeyecekse, tıklayın **uygulama güncelleştirmeleri denetlemeyecek**.  
+   - Uygulama güncelleştirmeleri denetlemeyecekse, tıklayın **uygulama güncelleştirmeleri denetlemeyecek**.  
   
      Devam etmek için **İleri** 'ye tıklayın.  
   
-6.  Tıklayın **son** uygulamayı yayınlamak için.  
+6. Tıklayın **son** uygulamayı yayınlamak için.  
   
-     Yayımlama durumu, durum bildirim alanında görüntülenir.  
+    Yayımlama durumu, durum bildirim alanında görüntülenir.  
   
-    > [!NOTE]
-    >  Yayınlama tamamlandıktan sonra CD-ROM veya DVD-ROM medyaya dosyaları belirttiğiniz konuma kopyalamak için DVD-Rewriter adım 3 ya da CD-Rewriter kullanmanız gerekecektir.  
+   > [!NOTE]
+   >  Yayınlama tamamlandıktan sonra CD-ROM veya DVD-ROM medyaya dosyaları belirttiğiniz konuma kopyalamak için DVD-Rewriter adım 3 ya da CD-Rewriter kullanmanız gerekecektir.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)   

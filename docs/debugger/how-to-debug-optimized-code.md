@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47b26883d0800611f2fba5cbf7a02907fef1d948
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0e223853c8bf805d7466fffec184032b24ec9e88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280824"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937804"
 ---
 # <a name="how-to-debug-optimized-code"></a>Nasıl Yapılır: İyileştirilmiş Kodda Hata Ayıklama
 > [!NOTE]
@@ -43,37 +43,37 @@ ms.locfileid: "44280824"
   
  En iyi duruma getirme etkileyebilir:  
   
--   İyileştirici tarafından kaldırılmış veya hata ayıklayıcı anlamadığı konumlara taşınmış yerel değişkenler.  
+- İyileştirici tarafından kaldırılmış veya hata ayıklayıcı anlamadığı konumlara taşınmış yerel değişkenler.  
   
--   İyileştirici kod bloklarını birleştirir, değiştirilen konumları bir işlev içinde.  
+- İyileştirici kod bloklarını birleştirir, değiştirilen konumları bir işlev içinde.  
   
--   İyileştirici iki işlev birleştirir, yanlış olabilir çağrı yığınında çerçeve için işlev adlarını.  
+- İyileştirici iki işlev birleştirir, yanlış olabilir çağrı yığınında çerçeve için işlev adlarını.  
   
- Çağrı yığınındaki gördüğünüz çerçeveleri neredeyse her zaman Bununla birlikte, semboller için tüm çerçeveleri olduğunu varsayarsak doğrudur. Çağrı yığınında çerçeve derleme dilinde yazılı işlev varsa yığın bozulması varsa veya işletim sistemi çerçeve çağrı yığınında eşleştirme sembolleri olmayan ise yanlış olur.  
+  Çağrı yığınındaki gördüğünüz çerçeveleri neredeyse her zaman Bununla birlikte, semboller için tüm çerçeveleri olduğunu varsayarsak doğrudur. Çağrı yığınında çerçeve derleme dilinde yazılı işlev varsa yığın bozulması varsa veya işletim sistemi çerçeve çağrı yığınında eşleştirme sembolleri olmayan ise yanlış olur.  
   
- Genel ve statik değişkenleri her zaman doğru bir şekilde gösterilir. Bu nedenle yapısı düzendir. Bir yapıya bir işaretçi olması ve işaretçi değerini doğru ise, her üye değişkeni yapısının doğru değeri gösterilir.  
+  Genel ve statik değişkenleri her zaman doğru bir şekilde gösterilir. Bu nedenle yapısı düzendir. Bir yapıya bir işaretçi olması ve işaretçi değerini doğru ise, her üye değişkeni yapısının doğru değeri gösterilir.  
   
- Bu sınırlamalar nedeniyle bu tamamen Mümkünse, programınızın iyileştirilmemiş bir sürümünü kullanarak hata ayıklama. Varsayılan olarak, en iyi duruma getirme Visual C++ programı hata ayıklama yapılandırmasında devre dışı bırakılmış ve yayın yapılandırmasında açık.  
+  Bu sınırlamalar nedeniyle bu tamamen Mümkünse, programınızın iyileştirilmemiş bir sürümünü kullanarak hata ayıklama. Varsayılan olarak, en iyi duruma getirme Visual C++ programı hata ayıklama yapılandırmasında devre dışı bırakılmış ve yayın yapılandırmasında açık.  
   
- Ancak, bir hatayı yalnızca bir programın en iyi duruma getirilmiş bir sürümünü görünebilir. Bu durumda, siz en iyi duruma getirilmiş kodda hata ayıklama gerekir.  
+  Ancak, bir hatayı yalnızca bir programın en iyi duruma getirilmiş bir sürümünü görünebilir. Bu durumda, siz en iyi duruma getirilmiş kodda hata ayıklama gerekir.  
   
 ### <a name="to-turn-on-optimization-in-a-debug-build-configuration"></a>Bir hata ayıklama iyileştirme etkinleştirmek için yapılandırma derleme  
   
-1.  Yeni bir proje oluşturduğunuzda, `Win32 Debug` hedef. Kullanım `Win32``Debug` programınızı tam hata ayıklama ve derlemek için hazır kadar hedef bir `Win32 Release` hedef. Derleyicinin `Win32 Debug` hedef.  
+1. Yeni bir proje oluşturduğunuzda, `Win32 Debug` hedef. Kullanım `Win32``Debug` programınızı tam hata ayıklama ve derlemek için hazır kadar hedef bir `Win32 Release` hedef. Derleyicinin `Win32 Debug` hedef.  
   
-2.  Çözüm Gezgini'nde projeyi seçin.  
+2. Çözüm Gezgini'nde projeyi seçin.  
   
-3.  Üzerinde **görünümü** menüsünü tıklatın **özellik sayfaları**.  
+3. Üzerinde **görünümü** menüsünü tıklatın **özellik sayfaları**.  
   
-4.  İçinde **özellik sayfaları** iletişim kutusunda, emin `Debug` seçili **yapılandırma** açılır listede.  
+4. İçinde **özellik sayfaları** iletişim kutusunda, emin `Debug` seçili **yapılandırma** açılır listede.  
   
-5.  Klasör Görünümü'nde sol taraftaki seçin **C/C++** klasör.  
+5. Klasör Görünümü'nde sol taraftaki seçin **C/C++** klasör.  
   
-6.  Altında **C++** klasörüne `Optimization`.  
+6. Altında **C++** klasörüne `Optimization`.  
   
-7.  Sağ taraftaki özellikler listesinde, bulma `Optimization`. Bir ayarın yanındaki, büyük olasılıkla diyor `Disabled (` [/Od](/cpp/build/reference/od-disable-debug)`)`. Diğer seçeneklerden birini seçin (`Minimum Size``(`[/O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Maximum Speed``(` [/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Full Optimization``(` [/Ox](/cpp/build/reference/ox-full-optimization) `)`, veya `Custom`).  
+7. Sağ taraftaki özellikler listesinde, bulma `Optimization`. Bir ayarın yanındaki, büyük olasılıkla diyor `Disabled (` [/Od](/cpp/build/reference/od-disable-debug)`)`. Diğer seçeneklerden birini seçin (`Minimum Size``(`[/O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Maximum Speed``(` [/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Full Optimization``(` [/Ox](/cpp/build/reference/ox-full-optimization) `)`, veya `Custom`).  
   
-8.  Seçerseniz, `Custom` seçeneğini `Optimization`, artık gösterilen özellikler listesinde bulunan diğer özelliklerden herhangi biri için seçenekleri ayarlayabilirsiniz.  
+8. Seçerseniz, `Custom` seçeneğini `Optimization`, artık gösterilen özellikler listesinde bulunan diğer özelliklerden herhangi biri için seçenekleri ayarlayabilirsiniz.  
   
 9. Yapılandırma özellikleri, C/C++, proje özellikleri sayfasında, komut satırı düğümünü seçin ve Ekle `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` için **ek seçenekler** metin kutusu.  
   
@@ -82,7 +82,7 @@ ms.locfileid: "44280824"
     >   
     >  Ekleme `/Zo` devre dışı bırakacak [Düzenle ve devam et](../debugger/edit-and-continue-visual-csharp.md).  
   
- En iyi duruma getirilmiş kod hata ayıklaması yaparken kullanın **ayrıştırılmış kodu** penceresini hangi yönergeleri gerçekten oluşturulduğunu ve yürütüldü. Kesme noktası ayarlarsanız, kesme noktası ile birlikte bir yönerge taşınmasını gerektirecek bilmeniz gerekir. Örneğin, aşağıdaki kodu düşünün:  
+   En iyi duruma getirilmiş kod hata ayıklaması yaparken kullanın **ayrıştırılmış kodu** penceresini hangi yönergeleri gerçekten oluşturulduğunu ve yürütüldü. Kesme noktası ayarlarsanız, kesme noktası ile birlikte bir yönerge taşınmasını gerektirecek bilmeniz gerekir. Örneğin, aşağıdaki kodu düşünün:  
   
 ```cpp
 for (x=0; x<10; x++)  

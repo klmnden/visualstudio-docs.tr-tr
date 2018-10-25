@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 055e1da96ae3078c0b77597816868be5994d1223
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 09b9299c6428ef63ccf71220fc3cb599e9e3b5a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281279"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872414"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>İzlenecek yol: SharePoint için bir web bölümü oluşturma
 
@@ -96,13 +96,13 @@ Web Bölümü sınıfı denetimler koleksiyonuna ekleyerek Web bölümünde gör
 
 3. Aşağıdaki kodu ekleyin `WebPart1` sınıfı. Bu kod, aşağıdaki alanları bildirir:
 
-    - Çalışanlar Web bölümünde görüntülenecek veri kılavuzu.
+   - Çalışanlar Web bölümünde görüntülenecek veri kılavuzu.
 
-    - Veri Kılavuzu filtrelemek için kullanılan bir denetimde görünen metin.
+   - Veri Kılavuzu filtrelemek için kullanılan bir denetimde görünen metin.
 
-    - Bir etiket veri kılavuzu verileri görüntülemek kuramazsa, bir hata gösterir.
+   - Bir etiket veri kılavuzu verileri görüntülemek kuramazsa, bir hata gösterir.
 
-    - Çalışan veri dosyasının yolunu içeren bir dize.
+   - Çalışan veri dosyasının yolunu içeren bir dize.
 
      [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
      [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
@@ -114,18 +114,18 @@ Web Bölümü sınıfı denetimler koleksiyonuna ekleyerek Web bölümünde gör
 
 5. Değiştirin `CreateChildControls` yöntemini aşağıdaki kod ile. Bu kod aşağıdaki görevleri gerçekleştirir:
 
-    - Önceki adımda, veri kılavuzu ve bildirdiğiniz etiketi ekler.
+   - Önceki adımda, veri kılavuzu ve bildirdiğiniz etiketi ekler.
 
-    - Veri Kılavuzu çalışan verilerini içeren bir XML dosyasına bağlar.
+   - Veri Kılavuzu çalışan verilerini içeren bir XML dosyasına bağlar.
 
      [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
      [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
 
 6. Aşağıdaki yöntemi ekleyin `WebPart1` sınıfı. Bu kod aşağıdaki görevleri gerçekleştirir:
 
-    - İşlenmiş Web Bölümünü Web Bölümü fiilleri menüde görüntülenen fiil oluşturur.
+   - İşlenmiş Web Bölümünü Web Bölümü fiilleri menüde görüntülenen fiil oluşturur.
 
-    - Kullanıcı fiillere menüde fiili seçtiğinde başlatan olayını işler. Bu kod, veri kılavuzunda görüntülenen çalışanlar listesini filtreler.
+   - Kullanıcı fiillere menüde fiili seçtiğinde başlatan olayını işler. Bu kod, veri kılavuzunda görüntülenen çalışanlar listesini filtreler.
 
      [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
      [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]

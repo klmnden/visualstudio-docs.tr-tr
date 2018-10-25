@@ -9,12 +9,12 @@ description: Yöneticiler abonelik atamaları düzenleme nasıl öğrenin.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d5d781f682372203e118fc6aaf1bfb51ea8bf652
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 588568521b52b6c21c93b6488829b5055d12048b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638166"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942471"
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Visual Studio aboneliği atamalarını düzenlemek
 
@@ -25,7 +25,7 @@ Hataları düzeltin veya bilgileri güncelleştirmek için bir abonenin bilgiler
 
 Abone düzenlemek için abonenin e-posta adresi yanındaki fareyi üzerine geldiğinizde görüntülenen üç nokta (...) seçin. Açılan bir menüde görünecektir.  Seçin **Düzenle** abonenin ayrıntılarını değiştirmek için. Abonenin satırda kılavuzunda Düzenle açmak için çift tıklayabilirsiniz.
 > [!div class="mx-imgBorder"]
-> ![Düzenlemek için aboneyi Seç](_img\edit-license\select-subscriber.png)
+> ![Düzenlemek için aboneyi Seç](_img/edit-license/select-subscriber.png)
 
 Abonenin adı, Soyadı, ülke, dil ve yükleme güncelleştirebilirsiniz. Abonenin bilgileri düzenleyin ve ardından **Kaydet**.
 
@@ -39,17 +39,17 @@ Tek seferde toplu düzenleme işlemi kullanarak birden fazla aboneye düzenleyeb
    > [!IMPORTANT]
    > Abonelik düzeylerini (yani, Enterprise, Professional, vb.) ve abonelik GUID'leri değiştirilemez.  Değiştirilen bu öğeler ile karşıya yükleme denemesi, karşıya yükleme başarısız olur.  
 
-1.  Aynı anda birden çok aboneyi düzenleme aboneleri sekmesine gidin. Üstteki Şeritte tıklayın **toplu düzenleme**. 
+1. Aynı anda birden çok aboneyi düzenleme aboneleri sekmesine gidin. Üstteki Şeritte tıklayın **toplu düzenleme**. 
 
-2.  Toplu düzenleme abone bilgisi düzenlemeleri için bir Excel şablonu kullanır. Toplu düzenleme kutusuna tıklayın **bu excel dışarı aktarma** aboneleri tüm bunların bilgileri dahil olmak üzere geçerli listesini indirmek için. 
-    > [!div class="mx-imgBorder"]
-    > ![Dışarı aktarma - lisans düzenleme toplu düzenlemeler listesi](_img\edit-license\edit-license-bulk-edit-export.png)
+2. Toplu düzenleme abone bilgisi düzenlemeleri için bir Excel şablonu kullanır. Toplu düzenleme kutusuna tıklayın **bu excel dışarı aktarma** aboneleri tüm bunların bilgileri dahil olmak üzere geçerli listesini indirmek için. 
+   > [!div class="mx-imgBorder"]
+   > ![Dışarı aktarma - lisans düzenleme toplu düzenlemeler listesi](_img/edit-license/edit-license-bulk-edit-export.png)
 
-3.  Ardından, kolayca bulmak ve bunu karşıya yüklemeden önce gerekli değişiklikleri yapın dosyayı yerel olarak kaydedin. Başarılı bir karşıya yükleme emin olmak için **abonelik düzeyinde veya abonelik GUID'si düzenlemeyin** bunu yaparsanız bu nedenle karşıya yükleme başarısız olmasına neden olur. 
+3. Ardından, kolayca bulmak ve bunu karşıya yüklemeden önce gerekli değişiklikleri yapın dosyayı yerel olarak kaydedin. Başarılı bir karşıya yükleme emin olmak için **abonelik düzeyinde veya abonelik GUID'si düzenlemeyin** bunu yaparsanız bu nedenle karşıya yükleme başarısız olmasına neden olur. 
 
-4.  İade Visual Studio abonelikleri Yönetim Portalı ve toplu düzenleme iletişim kutusunda, tıklayın **Gözat**. Kaydettiğiniz Excel dosyasını seçin ve tıklayın **Tamam**. Ekranda, karşıya yükleme ilerleme durumunu görürsünüz.
-    > [!div class="mx-imgBorder"]    
-    > ![Bir lisans - düzenleme toplu düzenlemeler karşıya dosya yükleme](_img\edit-license\edit-license-bulk-file-upload1.png)
+4. İade Visual Studio abonelikleri Yönetim Portalı ve toplu düzenleme iletişim kutusunda, tıklayın **Gözat**. Kaydettiğiniz Excel dosyasını seçin ve tıklayın **Tamam**. Ekranda, karşıya yükleme ilerleme durumunu görürsünüz.
+   > [!div class="mx-imgBorder"]    
+   > ![Bir lisans - düzenleme toplu düzenlemeler karşıya dosya yükleme](_img/edit-license/edit-license-bulk-file-upload1.png)
 
-5.  Dosyayı yükledikten sonra size başarılı olduğunu bildiren bir bildirim görürsünüz. Bu noktada, yaptığınız düzenlemeleri abone bilgileri yansıtılır. 
+5. Dosyayı yükledikten sonra size başarılı olduğunu bildiren bir bildirim görürsünüz. Bu noktada, yaptığınız düzenlemeleri abone bilgileri yansıtılır. 
 

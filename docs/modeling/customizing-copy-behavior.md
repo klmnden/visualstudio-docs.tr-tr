@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 72aa7681293fa6dd50b23e4b9d090f086d3c67ad
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 6839385e64503ce939d5244b116a9f24be786395
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860465"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904446"
 ---
 # <a name="customizing-copy-behavior"></a>Kopyalama Davranışını Özelleştirme
 Visual Studio Görselleştirme ve modelleme SDK'sı ile oluşturulan bir etki alanına özgü dil (DSL), kullanıcı kopyalar ve öğeleri yapıştırır ne olur değiştirebilirsiniz.
@@ -24,19 +24,19 @@ Visual Studio Görselleştirme ve modelleme SDK'sı ile oluşturulan bir etki al
 
  Kullanıcı öğelerini Pano'ya kopyalar, varsayılan olarak, aşağıdaki öğeleri de kopyalanır:
 
--   Seçilen öğeleri ekli alt öğeleri. (Diğer bir deyişle, adresindeki kaynaklanan ilişkileri ekleme hedefleri olan öğeler öğeleri kopyaladınız.)
+- Seçilen öğeleri ekli alt öğeleri. (Diğer bir deyişle, adresindeki kaynaklanan ilişkileri ekleme hedefleri olan öğeler öğeleri kopyaladınız.)
 
--   Kopyalanan öğeler arasındaki ilişki bağlantılar.
+- Kopyalanan öğeler arasındaki ilişki bağlantılar.
 
- Bu kural, bağlantılar ve kopyalanan öğeler özyinelemeli olarak uygulanır.
+  Bu kural, bağlantılar ve kopyalanan öğeler özyinelemeli olarak uygulanır.
 
- ![Kopyalanan ve yapıştırılan öğeleri](../modeling/media/dslcopypastedefault.png)
+  ![Kopyalanan ve yapıştırılan öğeleri](../modeling/media/dslcopypastedefault.png)
 
- Kopyalanan öğeleri ve bağlantılarına serileştirilmiş ve depolanan bir <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP) panoya yerleştirilir.
+  Kopyalanan öğeleri ve bağlantılarına serileştirilmiş ve depolanan bir <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP) panoya yerleştirilir.
 
- Kopyalanan öğeler görüntüsü de panoya yerleştirilir. Bu kullanıcının Word gibi başka uygulamalara yapıştırmayı sağlar.
+  Kopyalanan öğeler görüntüsü de panoya yerleştirilir. Bu kullanıcının Word gibi başka uygulamalara yapıştırmayı sağlar.
 
- Kullanıcı, DSL tanımını göre öğeleri kabul edebilen bir hedef kopyalanan öğeleri yapıştırabilirsiniz. Örneğin, bileşenleri çözüm şablonundan oluşturulan bir DSL içinde kullanıcı bağlantı noktaları bileşenleri üzerine ancak değil diyagram üzerine yapıştırabilirsiniz; ve bileşenlerinin diyagram üzerine, ancak diğer bileşenlere değil üzerine yapıştırabilirsiniz.
+  Kullanıcı, DSL tanımını göre öğeleri kabul edebilen bir hedef kopyalanan öğeleri yapıştırabilirsiniz. Örneğin, bileşenleri çözüm şablonundan oluşturulan bir DSL içinde kullanıcı bağlantı noktaları bileşenleri üzerine ancak değil diyagram üzerine yapıştırabilirsiniz; ve bileşenlerinin diyagram üzerine, ancak diğer bileşenlere değil üzerine yapıştırabilirsiniz.
 
 ## <a name="customizing-copy-and-paste-behavior"></a>Kopyalama ve yapıştırma davranışını özelleştirme
  Program kodu kullanarak model özelleştirme hakkında daha fazla bilgi için bkz. [gezinme ve güncelleştirme Program kodundaki modeli](../modeling/navigating-and-updating-a-model-in-program-code.md).
@@ -72,7 +72,6 @@ partial class MyDslClipboardCommandSet
      .SelectObjects(1, new object[] { diagram }, 0);
   }
 } }
-
 ```
 
  **Kullanıcının seçili bir hedefe yapıştırır ek bağlantılar oluşturun.** Örneğin, bir açıklama kutusuna bir öğenin üstüne yapıştırıldığında, bağlantı aralarında yapılır.
@@ -142,7 +141,6 @@ partial class MyDslDiagram // EDIT NAME
   }
  private MyElementOperations singleton = null;
 }
-
 ```
 
  **Şekiller geçerli imleç konumu gibi seçtiğiniz bir konuma yapıştırın.**
@@ -222,15 +220,15 @@ Bkz: [nasıl yapılır: sürükle ve bırak işleyicisi ekleme](../modeling/how-
 
  Üç değer vardır:
 
--   Kopyalama yayılmamasını
+- Kopyalama yayılmamasını
 
--   Yalnızca - bağlamak için kopyalama yaymak grubu yapıştırıldığında, bu bağlantı yeni kopyasını bağlantının diğer ucundaki var olan öğeye başvuracaktır.
+- Yalnızca - bağlamak için kopyalama yaymak grubu yapıştırıldığında, bu bağlantı yeni kopyasını bağlantının diğer ucundaki var olan öğeye başvuracaktır.
 
--   Bağlamak için kopyalama yayar ve rol oyuncusu - bağlantının diğer ucundaki öğenin bir kopyasını kopyalanan grubu içerir.
+- Bağlamak için kopyalama yayar ve rol oyuncusu - bağlantının diğer ucundaki öğenin bir kopyasını kopyalanan grubu içerir.
 
- ![Etkisini PropagateCopyToLinkOnly ile kopyalama](../modeling/media/dslpropagatecopy.png)
+  ![Etkisini PropagateCopyToLinkOnly ile kopyalama](../modeling/media/dslpropagatecopy.png)
 
- Yaptığınız değişiklikler, öğeleri hem kopyalanan görüntünün etkiler.
+  Yaptığınız değişiklikler, öğeleri hem kopyalanan görüntünün etkiler.
 
 ## <a name="programming-copy-and-paste-behavior"></a>Programlama Kopyala ve yapıştır davranışı
  Birçok yönden bir DSL'nin davranış kopyalama, yapıştırma, oluşturma ve nesnelerin silinmesi ile ilgili bir örneği tarafından yönetilir <xref:Microsoft.VisualStudio.Modeling.ElementOperations> diyagrama eşleşmiş. Kendi sınıftan türetme tarafından DSL'NİZİN davranışı değiştirebilirsiniz <xref:Microsoft.VisualStudio.Modeling.ElementOperations> ve geçersiz kılma <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> diyagram sınıfınızın özelliği.
@@ -244,13 +242,13 @@ Bkz: [nasıl yapılır: sürükle ve bırak işleyicisi ekleme](../modeling/how-
 
 #### <a name="to-define-your-own-elementoperations"></a>Kendi ElementOperations tanımlamak için
 
-1.  DSL projenizde yeni bir dosyasında türetilen bir sınıf oluşturun <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.
+1. DSL projenizde yeni bir dosyasında türetilen bir sınıf oluşturun <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.
 
-2.  Diyagram sınıfınız için bir parçalı sınıf tanımı ekleyin. Bu sınıf adını bulunabilir **Dsl\GeneratedCode\Diagrams.cs**.
+2. Diyagram sınıfınız için bir parçalı sınıf tanımı ekleyin. Bu sınıf adını bulunabilir **Dsl\GeneratedCode\Diagrams.cs**.
 
-     Diyagram sınıfta geçersiz <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> , ElementOperations alt sınıf örneği dönün. Her çağrıda aynı örneği döndürmelidir.
+    Diyagram sınıfta geçersiz <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> , ElementOperations alt sınıf örneği dönün. Her çağrıda aynı örneği döndürmelidir.
 
- Özel bir kod dosyasında DslPackage projesinde bu kodu ekleyin:
+   Özel bir kod dosyasında DslPackage projesinde bu kodu ekleyin:
 
 ```csharp
 
@@ -281,7 +279,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
     { }
     // Overridden methods follow
   }
-
 ```
 
 ## <a name="receiving-items-dragged-from-other-models"></a>Diğer modellerinden sürüklenen öğe alma
@@ -311,7 +308,6 @@ public override bool CanMerge(ModelElement targetShape, System.Windows.Forms.IDa
         return true;
    return base.CanMerge(targetShape, data);
  }
-
 ```
 
 ## <a name="mergeelementgroupprototype"></a>MergeElementGroupPrototype()
@@ -329,7 +325,6 @@ public override void MergeElementGroupPrototype(ModelElement targetShape, Elemen
   if (prototypeToMerge != null)
     base.MergeElementGroupPrototype(targetShape, prototypeToMerge);
 }
-
 ```
 
  Bu örnek, bir UML sınıf diyagramından sürüklenen bir UML sınıf öğeleri ile ilgilidir. DSL UML sınıfları doğrudan depolamak üzere tasarlanmamıştır, ancak bunun yerine, her sürüklenen bir UML sınıf için bir DSL öğesi oluştururuz. Örneğin DSL örneği diyagram ise bu yararlı olacaktır. Kullanıcı sınıfları bu sınıfların örnekleri oluşturmak için diyagram üzerine sürükleyebilirsiniz.
@@ -367,7 +362,6 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
   }
   return null;
 }
-
 ```
 
 ## <a name="standard-copy-behavior"></a>Standart kopyalama davranışı
@@ -558,7 +552,6 @@ namespace Company.MyDsl
     }
   }
 }
-
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

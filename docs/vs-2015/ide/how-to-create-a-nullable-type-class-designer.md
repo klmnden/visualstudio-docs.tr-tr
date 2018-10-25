@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a30ac892489d832f4b6dc2d0c51efb6192e77419
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab5bfe3068f79bceb02352b47de4beb08da75c85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179432"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941951"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Nasıl Yapılır: Boş Değer Atanabilir Tür Oluşturma (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Belirli değer türleri her zaman sahip (tanımlı bir değer veya gerekir). Bur
   
  Boş değer atanabilir türler örnekleridir <xref:System.Nullable%601> yapısı. Boş değer atanabilir bir tür örneği her iki genel salt okunur özelliklere sahip `HasValue` ve `Value`:  
   
--   `HasValue` tür `bool` ve değişken tanımlı bir değer içerip içermediğini belirtir. `True` değişkeni boş olmayan bir değer içeren anlamına gelir. İçin tanımlı bir değer gibi bir deyim kullanarak test edebilirsiniz `if (x.HasValue)` veya `if (y != null)`.  
+- `HasValue` tür `bool` ve değişken tanımlı bir değer içerip içermediğini belirtir. `True` değişkeni boş olmayan bir değer içeren anlamına gelir. İçin tanımlı bir değer gibi bir deyim kullanarak test edebilirsiniz `if (x.HasValue)` veya `if (y != null)`.  
   
--   `Value` temel alınan aynı türde değil. Varsa `HasValue` olduğu `True`, `Value` anlamlı bir değer içeriyor. Varsa `HasValue` olduğu `False`, erişim `Value` bir geçersiz işlem özel durum oluşturur.  
+- `Value` temel alınan aynı türde değil. Varsa `HasValue` olduğu `True`, `Value` anlamlı bir değer içeriyor. Varsa `HasValue` olduğu `False`, erişim `Value` bir geçersiz işlem özel durum oluşturur.  
   
- Varsayılan, boş değer atanabilir bir tür olarak bir değişken bildirdiğinizde tanımlı değer yok sahiptir (`HasValue` olan `False`), kendi temel değer türünün varsayılan değeri diğer.  
+  Varsayılan, boş değer atanabilir bir tür olarak bir değişken bildirdiğinizde tanımlı değer yok sahiptir (`HasValue` olan `False`), kendi temel değer türünün varsayılan değeri diğer.  
   
- Sınıf Tasarımcısı, temelindeki türe görüntüler yalnızca boş değer atanabilir bir tür görüntüler.  
+  Sınıf Tasarımcısı, temelindeki türe görüntüler yalnızca boş değer atanabilir bir tür görüntüler.  
   
- Visual C# içinde boş değer atanabilir türler hakkında daha fazla bilgi için bkz. [boş değer atanabilir türler](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Visual Basic'te boş değer atanabilir türler hakkında daha fazla bilgi için bkz: [boş değer atanabilir değer türleri](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
+  Visual C# içinde boş değer atanabilir türler hakkında daha fazla bilgi için bkz. [boş değer atanabilir türler](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Visual Basic'te boş değer atanabilir türler hakkında daha fazla bilgi için bkz: [boş değer atanabilir değer türleri](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Sınıf Tasarımcısı kullanarak boş değer atanabilir bir tür eklemek için  
   

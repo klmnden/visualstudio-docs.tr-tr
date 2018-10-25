@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 751bf673cd16e50c68aff1eb5d27247cdcd1ca01
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: cccaef2d5678bffa19e822cf537f4acb3d046cca
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120409"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907527"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Visual Studio IDE Hoş Geldiniz
 
@@ -94,7 +94,7 @@ Visual Studio yazılım geliştirme sırasında daha üretken olmanıza yardımc
 
 - [Tanıma Git](../ide/go-to-and-peek-definition.md)
 
-  Tanıma özelliği, doğrudan bir işlev veya tür tanımlandığı konumuna götürür.
+   Tanıma özelliği, doğrudan bir işlev veya tür tanımlandığı konumuna götürür.
 
    ![Tanıma Git](../ide/media/go-to-definition-menu.png)
 
@@ -112,14 +112,14 @@ Visual Studio yazılım geliştirme sırasında daha üretken olmanıza yardımc
 
    ![Dosya > Yeni Proje menü çubuğunda](../ide/media/file-new-project-menu.png)
 
-1. **Yeni proje** iletişim kutusu gösterir birkaç proje *şablonları*. Şablon, belirtilen proje türü için gereken ayarları ve temel dosyaları içerir. Seçin **.NET Core** kategorisi altında **Visual C#** ve ardından **konsol uygulaması (.NET Core)** şablonu. İçinde **adı** metin kutusunda, **HelloWorld**ve ardından **Tamam** düğmesi.
+2. **Yeni proje** iletişim kutusu gösterir birkaç proje *şablonları*. Şablon, belirtilen proje türü için gereken ayarları ve temel dosyaları içerir. Seçin **.NET Core** kategorisi altında **Visual C#** ve ardından **konsol uygulaması (.NET Core)** şablonu. İçinde **adı** metin kutusunda, **HelloWorld**ve ardından **Tamam** düğmesi.
 
    ![.NET core uygulaması şablonu](../ide/media/overview-new-project-dialog.png)
 
    Visual Studio projesi oluşturur. Çağıran basit bir "Hello World" uygulaması olan <xref:System.Console.WriteLine?displayProperty=nameWithType> "Hello World!" sabit dizesini görüntülemek için yöntemi (program çıktısı) konsol penceresinde.
 
-  > [!NOTE]
-  > Görmüyorsanız **.NET Core** kategorisi, yüklemeniz gereken **.NET Core çoklu platform geliştirme** iş yükü. Bunu yapmak için **açık Visual Studio yükleyicisi** alt sol tarafındaki bağlantıyı **yeni proje** iletişim. Visual Studio yükleyicisi açıldığında, aşağıya kaydırın ve **.NET Core çoklu platform geliştirme** iş yükü ve ardından **Değiştir**.
+   > [!NOTE]
+   > Görmüyorsanız **.NET Core** kategorisi, yüklemeniz gereken **.NET Core çoklu platform geliştirme** iş yükü. Bunu yapmak için **açık Visual Studio yükleyicisi** alt sol tarafındaki bağlantıyı **yeni proje** iletişim. Visual Studio yükleyicisi açıldığında, aşağıya kaydırın ve **.NET Core çoklu platform geliştirme** iş yükü ve ardından **Değiştir**.
 
    Kısa bir süre sonra aşağıdaki gibi görmeniz gerekir:
 
@@ -127,21 +127,21 @@ Visual Studio yazılım geliştirme sırasında daha üretken olmanıza yardımc
 
    Alanı çoğu alan Düzenleyicisi penceresinde, uygulamanız için C# kodunu gösterir. Farklı anahtar sözcükleri ve türleri gibi bir kod bölümlerini göstermek için metni otomatik olarak renklendirilmiş dikkat edin. Ayrıca, hangi küme ayraçları başka bir eşleşen küçük, dikey kesikli satır kodda belirtmek ve satır numaralarını Yardım kodu daha sonra bulun. Daraltma veya genişletme kod blokları için küçük, kutulanmış eksi işaretleri seçebilirsiniz. Anahat oluşturma özelliği bu kod, ekranda dağınıklığı aza indirilmesine yardımcı ihtiyacınız olmayan kodu Gizle olanak tanır. Proje dosyalarını adlı bir pencerede sağ tarafta listelenen **Çözüm Gezgini**.
 
-  ![Kırmızı kutuları ile Visual Studio IDE](../ide/media/overview-ide-console-app-red-boxes.png)
+   ![Kırmızı kutuları ile Visual Studio IDE](../ide/media/overview-ide-console-app-red-boxes.png)
 
-  Kullanılabilir diğer menüleri ve araç pencerelerini, ancak geçelim şimdilik.
+   Kullanılabilir diğer menüleri ve araç pencerelerini, ancak geçelim şimdilik.
 
-1. Şimdi uygulamayı başlatın. Bunu seçerek yapabilirsiniz **hata ayıklama olmadan Başlat** gelen **hata ayıklama** menü çubuğundaki menü. Ayrıca basabilirsiniz **Ctrl**+**F5**.
+3. Şimdi uygulamayı başlatın. Bunu seçerek yapabilirsiniz **hata ayıklama olmadan Başlat** gelen **hata ayıklama** menü çubuğundaki menü. Ayrıca basabilirsiniz **Ctrl**+**F5**.
 
-  ![Hata ayıklama > menü hata ayıklama olmadan Başlat](../ide/media/overview-start-without-debugging.png)
+   ![Hata ayıklama > menü hata ayıklama olmadan Başlat](../ide/media/overview-start-without-debugging.png)
 
-  Visual Studio uygulamayı derler ve bir konsol penceresi iletiyle açılır **Merhaba Dünya!**. Artık çalışan bir uygulamanın var!
+   Visual Studio uygulamayı derler ve bir konsol penceresi iletiyle açılır **Merhaba Dünya!**. Artık çalışan bir uygulamanın var!
 
-  ![Konsol penceresi](../ide/media/overview-console-window.png)
+   ![Konsol penceresi](../ide/media/overview-console-window.png)
 
-1. Konsol penceresini kapatmak için klavyenizde herhangi bir tuşa basın.
+4. Konsol penceresini kapatmak için klavyenizde herhangi bir tuşa basın.
 
-1. Uygulama için bazı ek kod ekleyelim. Aşağıdaki C# kodu yazan satırından önce ekleyin `Console.WriteLine("Hello World!");`:
+5. Uygulama için bazı ek kod ekleyelim. Aşağıdaki C# kodu yazan satırından önce ekleyin `Console.WriteLine("Hello World!");`:
 
    ```csharp
    Console.WriteLine("\nWhat is your name?");
@@ -150,21 +150,21 @@ Visual Studio yazılım geliştirme sırasında daha üretken olmanıza yardımc
 
    Bu kod görüntüler **adınız ne?** konsol penceresi, ve ardından kullanıcı tarafından izlenen metin girene kadar bekler **Enter** anahtarı.
 
-1. Yazan satırı değiştirin `Console.WriteLine("Hello World!");` aşağıdaki koda:
+6. Yazan satırı değiştirin `Console.WriteLine("Hello World!");` aşağıdaki koda:
 
    ```csharp
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Seçerek uygulama yeniden çalıştırma **hata ayıklama** > **hata ayıklama olmadan Başlat** veya basarak **Ctrl**+**F5**.
+7. Seçerek uygulama yeniden çalıştırma **hata ayıklama** > **hata ayıklama olmadan Başlat** veya basarak **Ctrl**+**F5**.
 
    Visual Studio uygulaması oluşturur ve bir konsol penceresi açar ve sizden adınız için ister.
 
-1. Konsol penceresi ve ENTER tuşuna adınızı girin **Enter**.
+8. Konsol penceresi ve ENTER tuşuna adınızı girin **Enter**.
 
    ![Konsol penceresi girdisi](media/overview-console-input.png)
 
-1. Konsol penceresini kapatın ve çalışan programa durdurmak için herhangi bir tuşa basın.
+9. Konsol penceresini kapatın ve çalışan programa durdurmak için herhangi bir tuşa basın.
 
 ## <a name="use-refactoring-and-intellisense"></a>Yeniden düzenleme ve IntelliSense kullanma
 
@@ -174,11 +174,11 @@ Birkaç farklı şekilde bakalım, [yeniden düzenleme](refactoring-in-visual-st
 
 1. Çift `name` değişkeni seçin.
 
-1. Değişken için yeni adı yazın **username**.
+2. Değişken için yeni adı yazın **username**.
 
    Değişkeni ve bir ampul gri kutu göründüğüne dikkat edin, kenar boşluğunda görünür.
 
-1. Kullanılabilir göstermek için ampul simgesini [hızlı Eylemler](quick-actions.md). Seçin **Yeniden Adlandır 'name 'username' için'**.
+3. Kullanılabilir göstermek için ampul simgesini [hızlı Eylemler](quick-actions.md). Seçin **Yeniden Adlandır 'name 'username' için'**.
 
    ![Visual Studio'da eylemini yeniden adlandır](media/rename-quick-action.png)
 
@@ -186,15 +186,15 @@ Birkaç farklı şekilde bakalım, [yeniden düzenleme](refactoring-in-visual-st
 
    ![Visual Studio'da yeniden adlandırma düzenlemesi gösteren animasyonlu gif](media/rename-refactoring.gif)
 
-1. Artık IntelliSense bir göz atalım. İfadesini içeren bir satırın altına `Console.WriteLine($"\nHello {username}!");`, türü **DateTime artık tarih/saat =.**.
+4. Artık IntelliSense bir göz atalım. İfadesini içeren bir satırın altına `Console.WriteLine($"\nHello {username}!");`, türü **DateTime artık tarih/saat =.**.
 
    Bir kutu üyelerini görüntüler <xref:System.DateTime> sınıfı. Ayrıca, ayrı bir kutuda şu anda seçilen üyenin açıklamasını görüntüler.
 
    ![Visual Studio IntelliSense üyeleri Listele](media/intellisense-list-members.png)
 
-1. Adlı üye seçin **artık**, üzerine çift tıklayarak veya basarak sınıfın bir özelliği olan **sekmesini**. Noktalı virgül ekleyerek kod satırının tamamlamak **;**.
+5. Adlı üye seçin **artık**, üzerine çift tıklayarak veya basarak sınıfın bir özelliği olan **sekmesini**. Noktalı virgül ekleyerek kod satırının tamamlamak **;**.
 
-1. Aşağıda, yazın veya aşağıdaki kod satırlarını kopyala:
+6. Aşağıda, yazın veya aşağıdaki kod satırlarını kopyala:
 
    ```csharp
    int dayOfYear = now.DayOfYear;
@@ -206,17 +206,17 @@ Birkaç farklı şekilde bakalım, [yeniden düzenleme](refactoring-in-visual-st
    > [!TIP]
    > <xref:System.Console.Write%2A?displayProperty=nameWithType> biraz farklı <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> içeren Yazar sonra bir satır Sonlandırıcı eklemez. Bu sonraki çıkışa gönderilir metin parçası aynı satırda yazdırılır anlamına gelir. Bu yöntemlerin her biri kendi açıklamasını görmek için kodunuzda gelebilirsiniz.
 
-1. Ardından, yeniden yeniden düzenleme kod biraz daha kısa olmak için kullanacağız. Değişkenin üzerine tıklayın `now` satırında `DateTime now = DateTime.Now;`.
+7. Ardından, yeniden yeniden düzenleme kod biraz daha kısa olmak için kullanacağız. Değişkenin üzerine tıklayın `now` satırında `DateTime now = DateTime.Now;`.
 
    Kenar boşluğunda bu satırdaki bir tornavida ikonu görüntülendiğine dikkat edin.
 
-1. Önerileri görmek için tornavida simgesine tıklayarak Visual Studio kullanılabilir sahiptir. Bu durumda, gösteren [satır içi geçici değişken](reference/inline-temporary-variable.md) düzenleme genel davranışını değiştirmeden bir kod satırı kaldırmak için:
+8. Önerileri görmek için tornavida simgesine tıklayarak Visual Studio kullanılabilir sahiptir. Bu durumda, gösteren [satır içi geçici değişken](reference/inline-temporary-variable.md) düzenleme genel davranışını değiştirmeden bir kod satırı kaldırmak için:
 
    ![Satır içi geçici değişken Visual Studio'da yeniden düzenleme](media/inline-temporary-variable-refactoring.png)
 
-1. Tıklayın **satır içi geçici değişken** kodun yeniden.
+9. Tıklayın **satır içi geçici değişken** kodun yeniden.
 
-1. Tuşlarına basarak programı yeniden çalıştırın **Ctrl**+**F5**. Çıktı aşağıdakine benzer olacaktır:
+10. Tuşlarına basarak programı yeniden çalıştırın **Ctrl**+**F5**. Çıktı aşağıdakine benzer olacaktır:
 
    ![Konsol penceresi ile program çıktısı](../ide/media/overview-console-final.png)
 
@@ -252,7 +252,7 @@ Varsayılan renk temasını değiştirme dahil olmak üzere Visual Studio kullan
 
 1. Menü çubuğunda, **Araçları** > **seçenekleri** açmak için **seçenekleri** iletişim.
 
-1. Üzerinde **ortam** > **genel** seçenekler sayfası, değişiklik **renk teması** seçimi **koyu**seçin **Tamam**.
+2. Üzerinde **ortam** > **genel** seçenekler sayfası, değişiklik **renk teması** seçimi **koyu**seçin **Tamam**.
 
    IDE renk temasını tamamı için değişir **koyu**.
 

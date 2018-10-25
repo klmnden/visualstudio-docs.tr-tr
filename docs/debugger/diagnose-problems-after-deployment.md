@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3313957ae1cccbd3f56b1fafacfed58570531f
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 3ce10e56d197b720922356b72ab7245036c4f7d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542513"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865368"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace"></a>IntelliTrace kullanarak dağıtımdan sonra sorunları tanılama
 
@@ -264,100 +264,100 @@ Visual Studio 2017 içermez *Buildınfo.config* kullanım dışı ve sonra kald�
 
 3.  Dosyanın gerekli bilgileri içerdiğinden emin olun:
 
--   **projectName**
+- **projectName**
 
-     Projenizi Visual Studio'da adı. Örneğin:
+   Projenizi Visual Studio'da adı. Örneğin:
+
+  ```xml
+  <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
+  ```
+
+- **SourceControl**
+
+- Kaynak Denetim sisteminizle ve bunlar hakkında bilgi özellikleri gerekli:
+
+  - **TFS**
+
+    - **ProjectCollectionUri**: Team Foundation Server ve proje koleksiyonunuz için URI
+
+    - **Projectıtemspec**: uygulamanızın proje dosyasına (.csproj veya .vbproj) yolu
+
+    - **ProjectVersionSpec**: projeniz için yeni sürümü
+
+      Örneğin:
 
     ```xml
-    <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
+    <SourceControl type="TFS">
+       <TfsSourceControl>
+          <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>
+          <ProjectItemSpec>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectItemSpec>
+          <ProjectVersionSpec>LFabrikamFiber_BuildAndPublish_20130813@$/WorkInProgress</ProjectVersionSpec>
+       </TfsSourceControl>
+    </SourceControl>
     ```
 
--   **SourceControl**
+  - **Git**
 
--   Kaynak Denetim sisteminizle ve bunlar hakkında bilgi özellikleri gerekli:
+    - **GitSourceControl**: konumunu **GitSourceControl** şeması
 
-    -   **TFS**
+    - **RepositoryUrl**: Team Foundation Server, proje koleksiyonu ve Git deposu için URI
 
-        -   **ProjectCollectionUri**: Team Foundation Server ve proje koleksiyonunuz için URI
+    - **ProjectPath**: uygulamanızın proje dosyasına (.csproj veya .vbproj) yolu
 
-        -   **Projectıtemspec**: uygulamanızın proje dosyasına (.csproj veya .vbproj) yolu
+    - **Commitıd**: kaydınızı kimliği
 
-        -   **ProjectVersionSpec**: projeniz için yeni sürümü
+      Örneğin:
 
-         Örneğin:
+    ```xml
+    <SourceControl type="Git">
+       <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">
+          <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>
+          <ProjectPath>/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectPath>
+          <CommitId>50662c96502dddaae5cd5ced962d9f14ec5bc64d</CommitId>
+       </GitSourceControl>
+    </SourceControl>
+    ```
 
-        ```xml
-        <SourceControl type="TFS">
-           <TfsSourceControl>
-              <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>
-              <ProjectItemSpec>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectItemSpec>
-              <ProjectVersionSpec>LFabrikamFiber_BuildAndPublish_20130813@$/WorkInProgress</ProjectVersionSpec>
-           </TfsSourceControl>
-        </SourceControl>
-        ```
+- **Derleme**
 
-    -   **Git**
+   Yapı sisteminizi hakkında bilgi ya da `"TeamBuild"` veya `"MSBuild"`, ve bunlar gerekli özellikler:
 
-        -   **GitSourceControl**: konumunu **GitSourceControl** şeması
+  - **BuildLabel** (TeamBuild için için): derleme adı ve numarası. Bu etiket, ayrıca dağıtım olay adı olarak kullanılır. Derleme numaraları hakkında daha fazla bilgi için bkz. [kullanılan yapı numaralarını tamamlanan yapılara anlamlı adlar vermek için](/azure/devops/pipelines/build/options?view=vsts).
 
-        -   **RepositoryUrl**: Team Foundation Server, proje koleksiyonu ve Git deposu için URI
+  - **SymbolPath** (önerilen): URI listesi için Sembol (PDB dosyası) konumlarınıza noktalı virgüllerle ayrılmış. Bu URI'ler URL'ler veya UNC olabilir. Bu, hatalarını ayıklamaya yardımcı olmak için eşleşen simgeleri bulmak Visual Studio için kolaylaştırır.
 
-        -   **ProjectPath**: uygulamanızın proje dosyasına (.csproj veya .vbproj) yolu
+  - **BuildReportUrl** (için TeamBuild için): TFS'de yapı raporunun konumu
 
-        -   **Commitıd**: kaydınızı kimliği
+  - **Buildıd** (için TeamBuild için): TFS'de yapı için URI ayrıntıları. Bu URI, ayrıca dağıtım Olay No olarak kullanılır. Bu kimliği TeamBuild kullanmıyorsanız, benzersiz olmalıdır gerekir.
 
-         Örneğin:
+  - **BuiltSolution**: Visual Studio çözüm dosyasının yolu bulmak ve eşleşen çözümü açmak için kullanır. Bu içeriği, **SolutionPath** MsBuild özelliği.
 
-        ```xml
-        <SourceControl type="Git">
-           <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">
-              <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>
-              <ProjectPath>/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectPath>
-              <CommitId>50662c96502dddaae5cd5ced962d9f14ec5bc64d</CommitId>
-           </GitSourceControl>
-        </SourceControl>
-        ```
+    Örneğin:
 
--   **Derleme**
+  - **TFS**
 
-     Yapı sisteminizi hakkında bilgi ya da `"TeamBuild"` veya `"MSBuild"`, ve bunlar gerekli özellikler:
+    ```xml
+    <Build type="TeamBuild">
+       <MsBuild>
+          <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>
+          <SymbolPath>\\fabrikamfiber\FabrikamFiber.CallCenter\Symbols</SymbolPath>
+          <BuildReportUrl kind="informative, url" url="http://fabrikamfiber:8080/tfs/FabrikamFiber/_releasePipeline/FindRelease?buildUri=fabrikamfiber%3a%2f%2f%2fBuild%2fBuild%2f448">Build Report Url</BuildReportUrl>
+          <BuildId kind="id">1c4444d2-518d-4673-a590-dce2773c7744,fabrikamfiber:///Build/Build/448</BuildId>
+          <BuiltSolution>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
+       </MsBuild>
+    </Build>
+    ```
 
-    -   **BuildLabel** (TeamBuild için için): derleme adı ve numarası. Bu etiket, ayrıca dağıtım olay adı olarak kullanılır. Derleme numaraları hakkında daha fazla bilgi için bkz. [kullanılan yapı numaralarını tamamlanan yapılara anlamlı adlar vermek için](/azure/devops/pipelines/build/options?view=vsts).
+  - **Git**
 
-    -   **SymbolPath** (önerilen): URI listesi için Sembol (PDB dosyası) konumlarınıza noktalı virgüllerle ayrılmış. Bu URI'ler URL'ler veya UNC olabilir. Bu, hatalarını ayıklamaya yardımcı olmak için eşleşen simgeleri bulmak Visual Studio için kolaylaştırır.
-
-    -   **BuildReportUrl** (için TeamBuild için): TFS'de yapı raporunun konumu
-
-    -   **Buildıd** (için TeamBuild için): TFS'de yapı için URI ayrıntıları. Bu URI, ayrıca dağıtım Olay No olarak kullanılır. Bu kimliği TeamBuild kullanmıyorsanız, benzersiz olmalıdır gerekir.
-
-    -   **BuiltSolution**: Visual Studio çözüm dosyasının yolu bulmak ve eşleşen çözümü açmak için kullanır. Bu içeriği, **SolutionPath** MsBuild özelliği.
-
-     Örneğin:
-
-    -   **TFS**
-
-        ```xml
-        <Build type="TeamBuild">
-           <MsBuild>
-              <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>
-              <SymbolPath>\\fabrikamfiber\FabrikamFiber.CallCenter\Symbols</SymbolPath>
-              <BuildReportUrl kind="informative, url" url="http://fabrikamfiber:8080/tfs/FabrikamFiber/_releasePipeline/FindRelease?buildUri=fabrikamfiber%3a%2f%2f%2fBuild%2fBuild%2f448">Build Report Url</BuildReportUrl>
-              <BuildId kind="id">1c4444d2-518d-4673-a590-dce2773c7744,fabrikamfiber:///Build/Build/448</BuildId>
-              <BuiltSolution>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
-           </MsBuild>
-        </Build>
-        ```
-
-    -   **Git**
-
-        ```xml
-        <Build type="MSBuild">
-           <MSBuild>
-              <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>
-              <BuiltSolution>/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
-           </MSBuild>
-        </Build>
-        ```
+    ```xml
+    <Build type="MSBuild">
+       <MSBuild>
+          <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>
+          <BuiltSolution>/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
+       </MSBuild>
+    </Build>
+    ```
 
 ####  <a name="IneligibleWorkspace"></a> S: neden Visual Studio seçili çalışma alanımın uygun olmadığını söylüyor?
  **Y:** seçilen çalışma alanı, kaynak denetim klasörü ve yerel klasör arasında herhangi bir eşlemeye sahip değil. Bu çalışma alanına ilişkin bir eşleme oluşturmak için seçin **Yönet**. Aksi halde, zaten eşleşmiş bir çalışma alanı seçin veya yeni bir çalışma alanı oluşturun.

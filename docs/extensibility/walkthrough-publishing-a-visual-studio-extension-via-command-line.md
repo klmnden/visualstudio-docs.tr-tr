@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a915a8acdd9918f27a8909cdff2a790e6488566
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 0b50e5e1c0198f1a8c6e33254f0cdab17bc38535
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863913"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883360"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>İzlenecek yol: komut satırı aracılığıyla bir Visual Studio uzantısı yayımlama
 
@@ -33,12 +33,12 @@ VsixPublisher.exe Market'te yayımlama Visual Studio uzantıları için komut sa
 
 Bir uzantıyı Market'te yayımlar. Uzantı, bir VSIX, bir exe/MSI dosyası veya bir bağlantı olabilir. Uzantı ile aynı sürümü varsa, uzantı üzerine yazar. Uzantı zaten mevcut değilse yeni bir uzantı oluşturacaksınız.
 
-|Komut seçenekleri                    |Açıklama  |
+|Komut seçenekleri |Açıklama |
 |---------|---------|
-|Yük (gerekli)                 |  Ya da bir yolu veya yayımlamak için yükünü "Daha fazla bilgi URL" kullanmak için bir bağlantı.      |
-|publishManifest (gerekli)         |  Bildirim kullanılacak dosya yolu yayımlanır.       |
-|ignoreWarnings                     |  Bir uzantı yayımlarken yok saymak için uyarıları listesi. Bu uyarı, bir uzantı yayımlarken komut satırı ileti olarak gösterilmez. (örneğin, "VSIXValidatorWarning01, VSIXValidatorWarning02")  
-|personalAccesToken                 |  Kişisel erişim yayımcı kimliğini doğrulamak için kullanılan belirteç. Sağlanmazsa, oturum açmış olan kullanıcılar pat alınır.       |
+|Yük (gerekli) | Ya da bir yolu veya yayımlamak için yükünü "Daha fazla bilgi URL" kullanmak için bir bağlantı. |
+|publishManifest (gerekli) | Bildirim kullanılacak dosya yolu yayımlanır. |
+|ignoreWarnings | Bir uzantı yayımlarken yok saymak için uyarıları listesi. Bu uyarı, bir uzantı yayımlarken komut satırı ileti olarak gösterilmez. (örneğin, "VSIXValidatorWarning01, VSIXValidatorWarning02")  
+|personalAccesToken | Kişisel erişim yayımcı kimliğini doğrulamak için kullanılan belirteç. Sağlanmazsa, oturum açmış olan kullanıcılar pat alınır. |
 
 ```
 VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to vs-publish.json}" -ignoreWarnings "VSIXValidatorWarning01,VSIXValidatorWarning02"
@@ -48,13 +48,13 @@ VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to v
 
 Yayımcının Market'te oluşturur. Ayrıca yayımcı makinede gelecekteki Eylemler (örneğin bir uzantı siliniyor/yayımlama) günlüğe yazar.
 
-|Komut seçenekleri                    |Açıklama  |
+|Komut seçenekleri |Açıklama |
 |---------|---------|
-|displayName (gerekli)             |  Yayımcı görünen adı.      |
-|publisherName (gerekli)           |  Yayımcı (örneğin, tanımlayıcı) adı.      |
-|personalAccessToken (gerekli)     |  Kişisel erişim yayımcı kimliğini doğrulamak için kullanılan belirteç.      |
-|shortDescription                   |  Yayımcı (dosyası değil), kısa bir açıklaması.       |
-|longDescription                    |  Yayımcı (dosyası değil) uzun açıklaması.      |
+|displayName (gerekli) | Yayımcı görünen adı. |
+|publisherName (gerekli) | Yayımcı (örneğin, tanımlayıcı) adı. |
+|personalAccessToken (gerekli) | Kişisel erişim yayımcı kimliğini doğrulamak için kullanılan belirteç. |
+|shortDescription | Yayımcı (dosyası değil), kısa bir açıklaması. |
+|longDescription | Yayımcı (dosyası değil) uzun açıklaması. |
 
 ```
 VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName "{Publisher Display Name}" -personalAccessToken "{Personal Access Token}"
@@ -64,10 +64,10 @@ VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName
 
 Yayımcının Market'te siler.
 
-|Komut seçenekleri                    |Açıklama  |
+|Komut seçenekleri |Açıklama |
 |---------|---------|
-|publisherName (gerekli)           |  Yayımcı (örneğin, tanımlayıcı) adı.      |
-|personalAccessToken (gerekli)     |  Kişisel erişim yayımcı kimliğini doğrulamak için kullanılan belirteç.      |
+|publisherName (gerekli) | Yayımcı (örneğin, tanımlayıcı) adı. |
+|personalAccessToken (gerekli) | Kişisel erişim yayımcı kimliğini doğrulamak için kullanılan belirteç. |
 
 ```
 VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAccessToken "{Personal Access Token}"
@@ -77,11 +77,11 @@ VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAcc
 
 Market'ten bir uzantı siler.
 
-|Komut seçenekleri                    |Açıklama  |
+|Komut seçenekleri |Açıklama |
 |---------|---------|
-|extensionName (gerekli)           |  Silmek için uzantı adı.      |
-|publisherName (gerekli)           |  Yayımcı (örneğin, tanımlayıcı) adı.      |
-|personalAccessToken                |  Kişisel erişim yayımcı kimliğini doğrulamak için kullanılan belirteç. Sağlanmazsa, oturum açmış olan kullanıcılar pat alınır.     |
+|extensionName (gerekli) | Silmek için uzantı adı. |
+|publisherName (gerekli) | Yayımcı (örneğin, tanımlayıcı) adı. |
+|personalAccessToken | Kişisel erişim yayımcı kimliğini doğrulamak için kullanılan belirteç. Sağlanmazsa, oturum açmış olan kullanıcılar pat alınır. |
 
 ```
 VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherName "{Publisher Name}"
@@ -91,11 +91,11 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 
 Bir yayımcı makinesine kaydeder.
 
-|Komut seçenekleri                    |Açıklama  |
+|Komut seçenekleri |Açıklama |
 |---------|---------|
-|(gerekli personalAccessToken      |  Kişisel erişim yayımcı kimliğini doğrulamak için kullanılan belirteç.      |
-|publisherName (gerekli)           |  Yayımcı (örneğin, tanımlayıcı) adı.      |
-|Üzerine yaz                          |  Yeni bir kişisel erişim belirteci ile var olan bir yayımcı üzerine yazılması gerektiğini belirtir.     |
+|(gerekli personalAccessToken | Kişisel erişim yayımcı kimliğini doğrulamak için kullanılan belirteç. |
+|publisherName (gerekli) | Yayımcı (örneğin, tanımlayıcı) adı. |
+|Üzerine yaz | Yeni bir kişisel erişim belirteci ile var olan bir yayımcı üzerine yazılması gerektiğini belirtir. |
 
 ```
 VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publisherName "{Publisher Name}"
@@ -105,10 +105,10 @@ VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publishe
 
 Makine dışında bir yayımcı günlüğe kaydeder.
 
-|Komut seçenekleri                    |Açıklama  |
+|Komut seçenekleri |Açıklama |
 |---------|---------|
-|publisherName (gerekli)           |  Yayımcı (örneğin, tanımlayıcı) adı.      |
-|ignoreMissingPublisher             |  Belirtilen yayımcı yok zaten oturum açmış durumdaysa aracı hata gerektiğini belirtir.     |
+|publisherName (gerekli) | Yayımcı (örneğin, tanımlayıcı) adı. |
+|ignoreMissingPublisher | Belirtilen yayımcı yok zaten oturum açmış durumdaysa aracı hata gerektiğini belirtir. |
 
 ```
 VsixPublisher.exe logout -publisherName "{Publisher Name}"
