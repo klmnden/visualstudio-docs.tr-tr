@@ -18,12 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ad897c624de858edc436e6f547d98f90b1d77282
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e4cb16af7fe70388f85fa5b3beb48ee97f897f72
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286441"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863784"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Kodlama kuralı ayarlarına EditorConfig için .NET
 
@@ -319,7 +319,7 @@ Bu bölümdeki Stil kurallarının değiştiricisi tercihleri, erişilebilirlik 
 Aşağıdaki tabloda, kuralı adları, kural kimliklerini, geçerli programlama dilleri, varsayılan değerleri ve Visual Studio'nun desteklenen ilk sürüm gösterilmektedir:
 
 | Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
-| --------- | ------- | -------------------- | ----------------------| ----------------  |
+| --------- | ------- | -------------------- | ----------------------| ---------------- |
 | dotnet_style_require_accessibility_modifiers | IDE0040 | C# ve Visual Basic | for_non_interface_members:none | 15.5 |
 | csharp_preferred_modifier_order | IDE0036 | C# | Genel, özel, korumalı, dahili, statik ve extern, yeni, virtual, abstract, korumalı, geçersiz kılma, salt okunur, güvenli, geçici, zaman uyumsuz: yok | 15.5 |
 | visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Kısmi, varsayılan, özel, korumalı, genel, arkadaş NotOverridable, geçersiz kılınabilir, MustOverride, aşırı yüklemeler, geçersiz kılmalar, MustInherit, NotInheritable, statik, paylaşılan, gölgeler, salt okunur, WriteOnly, boyutu, Const, WithEvents, daraltma, özel, genişletme Zaman uyumsuz: yok | 15.5 |
@@ -671,7 +671,6 @@ var anon = new { age, name };
 
 // dotnet_style_prefer_inferred_anonymous_type_member_names = false
 var anon = new { age = age, name = name };
-
 ```
 
 ```vb
@@ -680,7 +679,6 @@ Dim anon = New With {name, age}
 
 ' dotnet_style_prefer_inferred_anonymous_type_member_names = false
 Dim anon = New With {.name = name, .age = age}
-
 ```
 
 **DotNet\_stili\_tercih\_otomatik\_özellikleri**
@@ -984,7 +982,7 @@ Bu bölümdeki Stil kurallarının kullanımını ilgilendiriyor [ifade gövdeli
 Aşağıdaki tabloda, kuralı adları, kural kimliklerini, geçerli dil sürümleri, varsayılan değerleri ve Visual Studio'nun desteklenen ilk sürüm gösterilmektedir:
 
 | Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
-| --------- | ------- | -------------------- | ----------------------| ----------------  |
+| --------- | ------- | -------------------- | ----------------------| ---------------- |
 | csharp_style_expression_bodied_methods | IDE0022 | C# 6.0 VE ÜZERİ | false: yok | 15.3 |
 | csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0 + | false: yok | 15.3 |
 | csharp_style_expression_bodied_operators | IDE0023 ve IDE0024 | C# 7.0 + | false: yok | 15.3 |
@@ -1219,7 +1217,7 @@ Stil kurallarının bu bölümdeki ifade düzeyi tercihleri, kullanımı dahil o
 Aşağıdaki tabloda, kural adı, kural kimliği, geçerli dil sürümleri, varsayılan değerleri ve Visual Studio'nun desteklenen ilk sürüm gösterilmektedir:
 
 | Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
-| --------- | ------- | -------------------- | ----------------------| ----------------  |
+| --------- | ------- | -------------------- | ----------------------| ---------------- |
 | csharp_prefer_simple_default_expression | IDE0034 | C# 7.1 + | TRUE: öneri | 15.3 |
 | csharp_style_deconstructed_variable_declaration | IDE0042 | C# 7.0 + | TRUE: öneri | 15.5 |
 | csharp_style_pattern_local_over_anonymous_function | IDE0039 | C# 7.0 + | TRUE: öneri | 15.5 |
@@ -1354,7 +1352,7 @@ Bu stil kuralı kaşlı ayraçlar kullanımı ile ilgilidir `{ }` kod blokları 
 Aşağıdaki tabloda, kural adı, kural kimliği, geçerli dil sürümleri, varsayılan değerleri ve Visual Studio'nun desteklenen ilk sürüm gösterilmektedir:
 
 | Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
-| --------- | ------- | -------------------- | ----------------------| ----------------  |
+| --------- | ------- | -------------------- | ----------------------| ---------------- |
 | csharp_prefer_braces | IDE0011 | C# | TRUE: yok | 15.3 |
 
 **CSharp\_tercih\_küme ayraçları**
@@ -1433,8 +1431,8 @@ Biçimlendirme bu kural ile ilgili diğer yönergeleri kullanarak System.* yerle
 Aşağıdaki tabloda, kural adı, geçerli diller, varsayılan değer ve Visual Studio'nun desteklenen ilk sürüm gösterilmektedir:
 
 | Kural adı | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| dotnet_sort_system_directives_first |  C# ve Visual Basic | true | 15.3  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| dotnet_sort_system_directives_first | C# ve Visual Basic | true | 15.3 |
 
 **DotNet\_sıralama\_sistem\_directives_first**
 
@@ -1474,14 +1472,14 @@ Bu biçimlendirme kurallarını kod biçimlendirmek için yeni satırlar kullan�
 Aşağıdaki tabloda "Yeni satıra" kuralı adları gösterir. geçerli diller, varsayılan değerler ve öncelikle Visual Studio sürümü desteklenir:
 
 | Kural adı | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_new_line_before_open_brace |  C# | tüm | 15.3  |
-| csharp_new_line_before_else |  C# | true | 15.3  |
-| csharp_new_line_before_catch |  C# | true | 15.3  |
-| csharp_new_line_before_finally |  C# | true | 15.3  |
-| csharp_new_line_before_members_in_object_initializers |  C# | true | 15.3  |
-| csharp_new_line_before_members_in_anonymous_types |  C# | true | 15.3  |
-| csharp_new_line_between_query_expression_clauses |  C# | true | 15.3  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| csharp_new_line_before_open_brace | C# | tüm | 15.3 |
+| csharp_new_line_before_else | C# | true | 15.3 |
+| csharp_new_line_before_catch | C# | true | 15.3 |
+| csharp_new_line_before_finally | C# | true | 15.3 |
+| csharp_new_line_before_members_in_object_initializers | C# | true | 15.3 |
+| csharp_new_line_before_members_in_anonymous_types | C# | true | 15.3 |
+| csharp_new_line_between_query_expression_clauses | C# | true | 15.3 |
 
 **CSharp\_yeni\_satırı\_önce\_open_brace**
 
@@ -1673,10 +1671,10 @@ Bu biçimlendirme kuralları biçimi koda girinti kullanımını ilgilendiriyor.
 Aşağıdaki tabloda, kural adı, geçerli diller, varsayılan değerleri ve Visual Studio'nun desteklenen ilk sürüm gösterilmektedir:
 
 | Kural adı | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_indent_case_contents |  C# | true | 15.3  |
-| csharp_indent_switch_labels |  C# | true | 15.3  |
-| csharp_indent_labels |  C# | no_change | 15.3  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| csharp_indent_case_contents | C# | true | 15.3 |
+| csharp_indent_switch_labels | C# | true | 15.3 |
+| csharp_indent_labels | C# | no_change | 15.3 |
 
 **CSharp\_girinti\_case_contents**
 
@@ -1818,18 +1816,18 @@ Bu biçimlendirme kuralları koduna boşluk karakterleri kullanımını ilgilend
 Aşağıdaki tabloda, kural adı, geçerli diller, varsayılan değerleri ve Visual Studio'nun desteklenen ilk sürüm gösterilmektedir:
 
 | Kural adı | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_space_after_cast |  C# | false | 15.3  |
-| csharp_space_after_keywords_in_control_flow_statements |  C# | true | 15.3  |
-| csharp_space_between_method_declaration_parameter_ list_parentheses |  C# | false | 15.3  |
-| csharp_space_between_method_call_parameter_list_parentheses |  C# | false | 15.3  |
-| csharp_space_between_parentheses |  C# | false | 15.3  |
-| csharp_space_before_colon_in_inheritance_clause |  C# | true | 15.7  |
-| csharp_space_after_colon_in_inheritance_clause |  C# | true | 15.7  |
-| csharp_space_around_binary_operators |  C# | before_and_after | 15.7  |
-| csharp_space_between_method_declaration_empty_parameter_list_parentheses |  C# | false | 15.7  |
-| csharp_space_between_method_call_name_and_opening_parenthesis |  C# | false | 15.7  |
-| csharp_space_between_method_call_empty_parameter_list_parentheses |  C# | false | 15.7  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| csharp_space_after_cast | C# | false | 15.3 |
+| csharp_space_after_keywords_in_control_flow_statements | C# | true | 15.3 |
+| csharp_space_between_method_declaration_parameter_ list_parentheses | C# | false | 15.3 |
+| csharp_space_between_method_call_parameter_list_parentheses | C# | false | 15.3 |
+| csharp_space_between_parentheses | C# | false | 15.3 |
+| csharp_space_before_colon_in_inheritance_clause | C# | true | 15.7 |
+| csharp_space_after_colon_in_inheritance_clause | C# | true | 15.7 |
+| csharp_space_around_binary_operators | C# | before_and_after | 15.7 |
+| csharp_space_between_method_declaration_empty_parameter_list_parentheses | C# | false | 15.7 |
+| csharp_space_between_method_call_name_and_opening_parenthesis | C# | false | 15.7 |
+| csharp_space_between_method_call_empty_parameter_list_parentheses | C# | false | 15.7 |
 
 **CSharp\_alanı\_after_cast**
 
@@ -2121,9 +2119,9 @@ Bu biçimlendirme kuralları ifadeleri ve kod blokları için ayrı satırlara k
 Aşağıdaki tabloda, kural adı, geçerli diller, varsayılan değerleri ve Visual Studio'nun desteklenen ilk sürüm gösterilmektedir:
 
 | Kural adı | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_preserve_single_line_statements |  C# | true | 15.3  |
-| csharp_preserve_single_line_blocks |  C# | true | 15.3  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| csharp_preserve_single_line_statements | C# | true | 15.3 |
+| csharp_preserve_single_line_blocks | C# | true | 15.3 |
 
 **csharp_preserve_single_line_statements**
 

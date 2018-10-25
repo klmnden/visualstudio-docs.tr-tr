@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7ac55e2ec1d07c32c154b69cd467dfc534da6ae3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bc0620c06b6fa5b4018b6e027e30a18216454b29
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215832"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863964"
 ---
 # <a name="model-user-requirements"></a>Kullanıcı gereksinimlerini modelleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
   
  Gereksinimler modeli, yardımcı olur:  
   
--   İç tasarımından ayrı olarak sistemin dış özelliklerine odaklanır.  
+- İç tasarımından ayrı olarak sistemin dış özelliklerine odaklanır.  
   
--   Kullanıcıların ve hissedarların ile doğal dilde daha az belirsizlik gerekiyor.  
+- Kullanıcıların ve hissedarların ile doğal dilde daha az belirsizlik gerekiyor.  
   
--   Tutarlı bir kullanıcı, geliştiriciler ve testçiler tarafından kullanılan terimler sözlüğü tanımlayın.  
+- Tutarlı bir kullanıcı, geliştiriciler ve testçiler tarafından kullanılan terimler sözlüğü tanımlayın.  
   
--   Boşluk ve tutarsızlıkları azaltın.  
+- Boşluk ve tutarsızlıkları azaltın.  
   
--   Gereksinim değişikliklerine yanıt vermek için gereken iş miktarını azaltmaya.  
+- Gereksinim değişikliklerine yanıt vermek için gereken iş miktarını azaltmaya.  
   
--   Özellikleri geliştirileceğini sırasını planlayın.  
+- Özellikleri geliştirileceğini sırasını planlayın.  
   
--   Modelleri, testler ve gereksinimler arasında NET bir ilişki yapma, sistem testleri için temel olarak kullanın. Gereksinimleri değiştiğinde, bu ilişki, testler doğru bir şekilde güncelleştirmenize yardımcı olur. Bu, sistemin yeni gereksinimlerini karşıladığından emin olur.  
+- Modelleri, testler ve gereksinimler arasında NET bir ilişki yapma, sistem testleri için temel olarak kullanın. Gereksinimleri değiştiğinde, bu ilişki, testler doğru bir şekilde güncelleştirmenize yardımcı olur. Bu, sistemin yeni gereksinimlerini karşıladığından emin olur.  
   
- Kullanıcıları veya temsilciler ile tartışmalara odaklanmak için kullanın ve bunu her yineleme başlangıcında yeniden ziyaret gereksinimler modelini en büyük avantajı sağlar. Ayrıntılı olarak kod yazmadan önce tamamlamanız gerekmez. Kısmen çalışan bir uygulama, çok Basitleştirilmiş bile genellikle kullanıcıların gereksinimleriyle irdelemesi en cazip temelini oluşturur. Model, bu tartışmaların sonuçları özetlemek için etkili bir yoludur. Daha fazla bilgi için [geliştirme sürecinizde modelleri kullanma](../modeling/use-models-in-your-development-process.md).  
+  Kullanıcıları veya temsilciler ile tartışmalara odaklanmak için kullanın ve bunu her yineleme başlangıcında yeniden ziyaret gereksinimler modelini en büyük avantajı sağlar. Ayrıntılı olarak kod yazmadan önce tamamlamanız gerekmez. Kısmen çalışan bir uygulama, çok Basitleştirilmiş bile genellikle kullanıcıların gereksinimleriyle irdelemesi en cazip temelini oluşturur. Model, bu tartışmaların sonuçları özetlemek için etkili bir yoludur. Daha fazla bilgi için [geliştirme sürecinizde modelleri kullanma](../modeling/use-models-in-your-development-process.md).  
   
 > [!NOTE]
 >  Bu konular boyunca sistem ya da geliştirmekte olduğunuz uygulamanın "Sistem" anlamına gelir. Birçok yazılım ve donanım bileşenleri büyük koleksiyonu olabilir; ya da tek bir uygulama; veya daha büyük bir sistemde içinde bir yazılım bileşeni. Her durumda, bir kullanıcı arabirimi ya da API aracılığıyla sistemin dışından görülemediğinden, davranışı gereksinimler modelini açıklar.  
@@ -84,11 +84,11 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
   
  Kullanım çalışması diyagramı çizme, takımınızın yardımcı olur:  
   
--   Hangi kullanıcılar tarafından uygulamasının Ayrıntılar dikkatiniz olmadan sistemiyle yapmak beklediğinize odaklanın.  
+- Hangi kullanıcılar tarafından uygulamasının Ayrıntılar dikkatiniz olmadan sistemiyle yapmak beklediğinize odaklanın.  
   
--   Sisteminizin kapsam ya da sistem belirli sürümlerini ele alınmıştır.  
+- Sisteminizin kapsam ya da sistem belirli sürümlerini ele alınmıştır.  
   
- Aşağıdaki konular, daha fazla bilgi sağlar:  
+  Aşağıdaki konular, daha fazla bilgi sağlar:  
   
 |Hakkında bilgi edinmek için|Oku|  
 |--------------------|----------|  
@@ -99,41 +99,41 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
 ##  <a name="RequirementsClasses"></a> Gereksinimlerini tanımlamak için kullanılan terimleri tanımlama  
  UML sınıf diyagramları, tutarlı bir sözlük aşağıdaki amaçlar için kullanılan iş kavramlarını geliştirmenize yardımcı olması için kullanabilirsiniz:  
   
--   Sistem çalıştığı iş tartışmak için kullanıcılar tarafından.  
+- Sistem çalıştığı iş tartışmak için kullanıcılar tarafından.  
   
--   Örnek kullanım durumları, iş kuralları ve kullanıcı hikayeleri açıklamalarında Kullanıcıların ihtiyaçlarını açıklamak için.  
+- Örnek kullanım durumları, iş kuralları ve kullanıcı hikayeleri açıklamalarında Kullanıcıların ihtiyaçlarını açıklamak için.  
   
--   Sistemin API veya kullanıcı arabirimi aracılığıyla alınıp bilgi türleri.  
+- Sistemin API veya kullanıcı arabirimi aracılığıyla alınıp bilgi türleri.  
   
--   Sistem veya onay testleri açıklamaları.  
+- Sistem veya onay testleri açıklamaları.  
   
- Bu amaç için kullanılan bir UML sınıf diyagramı içeriğini kavramsal sınıf diyagramı çağrılır. (Olarak da bilinen bir *etki alanı modeli* veya *sınıf çözümleme modeli*.)  
+  Bu amaç için kullanılan bir UML sınıf diyagramı içeriğini kavramsal sınıf diyagramı çağrılır. (Olarak da bilinen bir *etki alanı modeli* veya *sınıf çözümleme modeli*.)  
   
- Kavramsal bir sınıf diyagramında, sistemin iç tasarımının ayrıntısı göstermeden gereksinimleri açıklamasında gereken yalnızca sınıfları göster. Diyagram sistemin iç tasarım ayrıntılarını göstermez. Genellikle işlemleri veya arabirimleri kavramsal sınıflarında göstermeniz gerekmez.  
+  Kavramsal bir sınıf diyagramında, sistemin iç tasarımının ayrıntısı göstermeden gereksinimleri açıklamasında gereken yalnızca sınıfları göster. Diyagram sistemin iç tasarım ayrıntılarını göstermez. Genellikle işlemleri veya arabirimleri kavramsal sınıflarında göstermeniz gerekmez.  
   
- Örneğin, Şimdi Akşam Yemeği sisteminin kavramsal bu sınıfların çizebilirsiniz:  
+  Örneğin, Şimdi Akşam Yemeği sisteminin kavramsal bu sınıfların çizebilirsiniz:  
   
- ![Sınıfları menü, sipariş menü öğesi, Düzen öğesi. ](../modeling/media/uml-reqmcd1.png "UML_ReqMCD1")  
+  ![Sınıfları menü, sipariş menü öğesi, Düzen öğesi. ](../modeling/media/uml-reqmcd1.png "UML_ReqMCD1")  
   
- Kavramsal bir sınıf diyagramı boyunca gereksinimler modelini kullanan terimlerin sözlüğünü sağlar. Örneğin, ayrıntılı açıklama kullanım durumu, Yemek Sipariş, yazabilirsiniz:  
+  Kavramsal bir sınıf diyagramı boyunca gereksinimler modelini kullanan terimlerin sözlüğünü sağlar. Örneğin, ayrıntılı açıklama kullanım durumu, Yemek Sipariş, yazabilirsiniz:  
   
- Müşterinin seçtiği bir *menü* oluşturmak üzere bir *sipariş*ve ardından oluşturan *öğeleri sıralama* içinde *sipariş* seçerek *Menü öğelerini* gelen *menü*.  
+  Müşterinin seçtiği bir *menü* oluşturmak üzere bir *sipariş*ve ardından oluşturan *öğeleri sıralama* içinde *sipariş* seçerek *Menü öğelerini* gelen *menü*.  
   
- Açıklamada kullanılan terimler modelinde sınıfların adlarını nasıl olduğuna dikkat edin. Diyagram, bu sınıflar arasındaki ilişkileri belirsizlikleri kaldırır. Örneğin, bu açıkça her sipariş yalnızca bir menü ile ilişkili olduğunu gösterir.  
+  Açıklamada kullanılan terimler modelinde sınıfların adlarını nasıl olduğuna dikkat edin. Diyagram, bu sınıflar arasındaki ilişkileri belirsizlikleri kaldırır. Örneğin, bu açıkça her sipariş yalnızca bir menü ile ilişkili olduğunu gösterir.  
   
- Artırarak yanlış anlaşılmaların kullanıcıların gereksinimleri hakkında sık sözcük ayrıntılı ilgili anlamaları için de izlenebilir. Örneğin, çoğu Restoran menüsü ve sipariş terimleri paylaşılan bir anlayışa sahip olacaktır, ancak bir öğe üzerinde bir sipariş menüsündeki bir öğeyi arasındaki fark daha az açıktır. Gereksinimleri ile işletme paydaşları tartışılırken, bu farklılıkları kullanıma sunmak önemlidir. Sınıf diyagramı, koşulları ve ilişkilerini açıklamak yardımcı olmak için yararlı bir araçtır.  
+  Artırarak yanlış anlaşılmaların kullanıcıların gereksinimleri hakkında sık sözcük ayrıntılı ilgili anlamaları için de izlenebilir. Örneğin, çoğu Restoran menüsü ve sipariş terimleri paylaşılan bir anlayışa sahip olacaktır, ancak bir öğe üzerinde bir sipariş menüsündeki bir öğeyi arasındaki fark daha az açıktır. Gereksinimleri ile işletme paydaşları tartışılırken, bu farklılıkları kullanıma sunmak önemlidir. Sınıf diyagramı, koşulları ve ilişkilerini açıklamak yardımcı olmak için yararlı bir araçtır.  
   
- Sistem iş mantığı açıklanabilir temel sözlük kavramsal sınıf modeli oluşturabilir. Ancak uygulamanızın performans, dağıtım, esneklik ve diğer faktörler gibi konuları göz önünde bulundurmanız gerekir çünkü yazılım sınıflarda genellikle kullanılan kavramsal model çok daha karmaşık olacaktır. Kavramsal bir sınıfın birkaç farklı uygulamaları bir sistemde nadir bulunan hatalardır.  
+  Sistem iş mantığı açıklanabilir temel sözlük kavramsal sınıf modeli oluşturabilir. Ancak uygulamanızın performans, dağıtım, esneklik ve diğer faktörler gibi konuları göz önünde bulundurmanız gerekir çünkü yazılım sınıflarda genellikle kullanılan kavramsal model çok daha karmaşık olacaktır. Kavramsal bir sınıfın birkaç farklı uygulamaları bir sistemde nadir bulunan hatalardır.  
   
- Örneğin, siparişler, XML, SQL, HTML ve C# dilinde ve sistemin farklı parçaları parçalar arasındaki farklı arabirimlerde gösterilebilir. Siparişi ile menü arasındaki ilişki, C# kodu, bir veritabanında ilişkileri başvurulara gibi birçok farklı şekillerde gösterilebilir veya XML kimlikleri çapraz başvuru. Ancak şu farklılıklara rağmen kavramsal model yazılımın her bir parçası doğru olan önemli bilgiler sağlar. Örnek sınıf diyagramında bize her uygulamada olacağını tek her siparişi ile menü ilişkili gösterir.  
+  Örneğin, siparişler, XML, SQL, HTML ve C# dilinde ve sistemin farklı parçaları parçalar arasındaki farklı arabirimlerde gösterilebilir. Siparişi ile menü arasındaki ilişki, C# kodu, bir veritabanında ilişkileri başvurulara gibi birçok farklı şekillerde gösterilebilir veya XML kimlikleri çapraz başvuru. Ancak şu farklılıklara rağmen kavramsal model yazılımın her bir parçası doğru olan önemli bilgiler sağlar. Örnek sınıf diyagramında bize her uygulamada olacağını tek her siparişi ile menü ilişkili gösterir.  
   
- Takımınızın gereksinimlerini sınıf diyagramı çizme yardımcı olur:  
+  Takımınızın gereksinimlerini sınıf diyagramı çizme yardımcı olur:  
   
--   Kullanıcıların ihtiyaçlarını tartışmalara temel terimleri standartlaştırmak ve tanımlayın.  
+- Kullanıcıların ihtiyaçlarını tartışmalara temel terimleri standartlaştırmak ve tanımlayın.  
   
--   Bu terimler arasındaki ilişkileri açıklayın.  
+- Bu terimler arasındaki ilişkileri açıklayın.  
   
- Aşağıdaki konular, daha fazla bilgi sağlar:  
+  Aşağıdaki konular, daha fazla bilgi sağlar:  
   
 |Hakkında bilgi edinmek için|Oku|  
 |--------------------|----------|  
@@ -146,7 +146,7 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
 ##  <a name="BusinessRules"></a> İş kurallarını gösterme  
  Bir iş kuralı, belirli kullanım örneği ile ilişkili değil ve sistem genelinde gözlenmelidir bir gereksinimdir.  
   
- Birçok iş kuralları kavramsal sınıflar arasındaki ilişkileri kısıtlamalar şunlardır. Bu yazma *statik ** iş kuralları* kavramsal sınıf diyagramında ilgili sınıflar ile ilgili açıklamalar olarak. Örneğin:  
+ Birçok iş kuralları kavramsal sınıflar arasındaki ilişkileri kısıtlamalar şunlardır. Bu yazma *statik iş kuralları* kavramsal sınıf diyagramında ilgili sınıflar ile ilgili açıklamalar olarak. Örneğin:  
   
  ![Açıklama kuralında sırasını sınıfa iliştirilen. ](../modeling/media/uml-reqmcd2.png "UML_ReqmCD2")  
   
@@ -167,21 +167,21 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
 ##  <a name="QoSRequirements"></a> Hizmet gereksinimlerinin kalitesini açıklayan  
  Hizmet gereksinimi kalitesi birkaç işlem kategorisi vardır. Bunlar aşağıdakileri içerir:  
   
--   Performans  
+- Performans  
   
--   Güvenlik  
+- Güvenlik  
   
--   Kullanılabilirlik  
+- Kullanılabilirlik  
   
--   Güvenilirlik  
+- Güvenilirlik  
   
--   Sağlamlık  
+- Sağlamlık  
   
- Bu gereksinimlerin bazıları belirli kullanım durumları açıklamasında içerebilir. Diğer gereksinimler kullanım örneklerine özgü olmayan ve ayrı bir belgede en etkili bir şekilde yazılır. Mümkün olduğunda, gereksinimler modeli tarafından tanımlanan sözlük izliyor kullanışlıdır. Aşağıdaki örnekte, özel olarak gereksinimini kullanılan ana sözcüklerin aktörleri kullanım örnekleri ve önceki çizimlerde sınıfları başlıklarını olduğuna dikkat edin:  
+  Bu gereksinimlerin bazıları belirli kullanım durumları açıklamasında içerebilir. Diğer gereksinimler kullanım örneklerine özgü olmayan ve ayrı bir belgede en etkili bir şekilde yazılır. Mümkün olduğunda, gereksinimler modeli tarafından tanımlanan sözlük izliyor kullanışlıdır. Aşağıdaki örnekte, özel olarak gereksinimini kullanılan ana sözcüklerin aktörleri kullanım örnekleri ve önceki çizimlerde sınıfları başlıklarını olduğuna dikkat edin:  
   
- Bir müşteri, Yemek Sipariş sırada bir restoran, bir menü öğesini siler. Bu menü öğesine başvuran bir sipariş öğesi kırmızı renkte görüntülenir.  
+  Bir müşteri, Yemek Sipariş sırada bir restoran, bir menü öğesini siler. Bu menü öğesine başvuran bir sipariş öğesi kırmızı renkte görüntülenir.  
   
- Aşağıdaki konular, daha fazla bilgi sağlar:  
+  Aşağıdaki konular, daha fazla bilgi sağlar:  
   
 |Hakkında bilgi edinmek için|Oku|  
 |--------------------|----------|  
@@ -232,15 +232,15 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
   
  Bir model oluştururken iş etki alanı hakkındaki kadar fazla soruyu doğal olarak oluşan bulabilirsiniz. Kullanıcıların bu soruları koyarak projedeki daha sonraki bir aşamada değişiklikleri gereksinimini azaltır. İlk başta kendinize ve ardından yanıt belirsiz olup işletme paydaşları sorun belirli bazı sorular şunlardır:  
   
--   "Hangi kullanım bu sınıfın örneklerinin oluşturur?" gereksinimleri modeldeki her bir sınıf için sor Örneğin, bir çevrimiçi yemek siparişi hizmet içinde isteyebilir, "hangi kullanım Restoran menüsü sınıfının bir örneğini oluşturur?" Bu tartışma nasıl yeni bir restoran hizmete kaydolan ve onun menü katkıda bulunduğu yol açar. Neyin oluşturduğu veya öznitelikler ve ilişkilendirmeler değişiklikleri hakkında benzer sorular sorabilirsiniz.  
+- "Hangi kullanım bu sınıfın örneklerinin oluşturur?" gereksinimleri modeldeki her bir sınıf için sor Örneğin, bir çevrimiçi yemek siparişi hizmet içinde isteyebilir, "hangi kullanım Restoran menüsü sınıfının bir örneğini oluşturur?" Bu tartışma nasıl yeni bir restoran hizmete kaydolan ve onun menü katkıda bulunduğu yol açar. Neyin oluşturduğu veya öznitelikler ve ilişkilendirmeler değişiklikleri hakkında benzer sorular sorabilirsiniz.  
   
--   Sonucu veya sınıf diyagramları tarafından sağlanan sözcüklerdeki her kullanım örneği sonkoşulunu açıklamak gereksinimleri modeldeki her kullanım örneği için deneyin. Önce ve sonra bir oluşum kullanım örneğinin sınıfların örneklerini hazırlayarak kullanım etkisini göstermek sık kullanışlıdır. Örneğin, kullanım örneği sonkoşulunun "menü öğesi için müşterinin sipariş eklendiğinde" derse, sıralama ve menü öğesi sınıfların örneklerini tasarlayın. Yeni bir bağlantı veya yeni bir nesne gibi bir kullanım örneği etkilerini yeni bir çizim veya farklı bir renkte gösterir. Bu sık hangi bilgilerin modelde gerekli olduğu hakkında tartışmalar neden olur. Gereksinimleri sınıfları doğrudan bir uygulama ile ilgilenir değil olsa da, sisteminizin depolamak ve iletmek için gereken bilgileri açıklar.  
+- Sonucu veya sınıf diyagramları tarafından sağlanan sözcüklerdeki her kullanım örneği sonkoşulunu açıklamak gereksinimleri modeldeki her kullanım örneği için deneyin. Önce ve sonra bir oluşum kullanım örneğinin sınıfların örneklerini hazırlayarak kullanım etkisini göstermek sık kullanışlıdır. Örneğin, kullanım örneği sonkoşulunun "menü öğesi için müşterinin sipariş eklendiğinde" derse, sıralama ve menü öğesi sınıfların örneklerini tasarlayın. Yeni bir bağlantı veya yeni bir nesne gibi bir kullanım örneği etkilerini yeni bir çizim veya farklı bir renkte gösterir. Bu sık hangi bilgilerin modelde gerekli olduğu hakkında tartışmalar neden olur. Gereksinimleri sınıfları doğrudan bir uygulama ile ilgilenir değil olsa da, sisteminizin depolamak ve iletmek için gereken bilgileri açıklar.  
   
--   Öznitelikler ve ilişkilendirmeler, özellikle birden fazla öznitelik veya ilişkilendirme ilgili kısıtlamalar kısıtlamalar hakkında isteyin.  
+- Öznitelikler ve ilişkilendirmeler, özellikle birden fazla öznitelik veya ilişkilendirme ilgili kısıtlamalar kısıtlamalar hakkında isteyin.  
   
--   Kullanım örnekleri, bunları göstermek için sıralı veya etkinlik diyagramları çizmek geçerli ve geçersiz dizileri hakkında isteyin.  
+- Kullanım örnekleri, bunları göstermek için sıralı veya etkinlik diyagramları çizmek geçerli ve geçersiz dizileri hakkında isteyin.  
   
- Farklı diyagramlarda sağlayan görünümleri arasındaki ilişkileri inceleyerek, kullanıcılarınızın iş, ana kavramları hızla anlayabilmeniz ve bunları sistemden ihtiyaç duydukları anlamak için yardımcı olur. Ayrıca hangi gereksinimler paydaşlara hakkında az belirli daha iyi anlayabilirsiniz. Bu özellikler, kullanıcıların onları denemelerine izin vermek için bu projenin erken bir aşamada Basitleştirilmiş en az geliştirmek planlayabilirsiniz.  
+  Farklı diyagramlarda sağlayan görünümleri arasındaki ilişkileri inceleyerek, kullanıcılarınızın iş, ana kavramları hızla anlayabilmeniz ve bunları sistemden ihtiyaç duydukları anlamak için yardımcı olur. Ayrıca hangi gereksinimler paydaşlara hakkında az belirli daha iyi anlayabilirsiniz. Bu özellikler, kullanıcıların onları denemelerine izin vermek için bu projenin erken bir aşamada Basitleştirilmiş en az geliştirmek planlayabilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)   

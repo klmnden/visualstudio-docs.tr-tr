@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da5df0faa57a63f44892fa86785bccf4716f38f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67876c6b9191c8b551eb70906272751bc55ef481
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203313"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837977"
 ---
 # <a name="bc-texture-compression-variant"></a>BC Doku Sıkıştırma Çeşidi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Etkinleştirir sıkıştırma B8G8R8X8, B8G8R8A8 veya R8G8B8A8 çeşididir bir p
 ## <a name="remarks"></a>Açıklamalar  
  Yapılan her çağrı bir blok tabanlı sıkıştırma biçimini kullanarak doku sıkıştırma `ID3DDevice::CreateTexture2D` kaynak doku oluşturur. Özellikle, doku sıkıştırılmış olduğunda:  
   
--   `D3D11_TEXTURE2D_DESC` Geçirilen nesne `pDesc` olan değişmeyen bir gölgelendirici kaynak; açıklar:  
+- `D3D11_TEXTURE2D_DESC` Geçirilen nesne `pDesc` olan değişmeyen bir gölgelendirici kaynak; açıklar:  
   
-    -   Yalnızca D3D11_BIND_SHADER_RESOURCE bayrağı ayarlanmış BindFlags üye var.  
+  -   Yalnızca D3D11_BIND_SHADER_RESOURCE bayrağı ayarlanmış BindFlags üye var.  
   
-    -   Kullanım üye D3D11_USAGE_DEFAULT ya da D3D11_USAGE_IMMUTABLE ayarlanır.  
+  -   Kullanım üye D3D11_USAGE_DEFAULT ya da D3D11_USAGE_IMMUTABLE ayarlanır.  
   
-    -   CPUAccessFlags üyesi (CPU erişim yok) 0 olarak ayarlanır.  
+  -   CPUAccessFlags üyesi (CPU erişim yok) 0 olarak ayarlanır.  
   
-    -   (Hiçbir çok örnekli düzgünleştirme (MSAA)) 1 olarak ayarlayın, sayım üyesi SamplerDesc üye var.  
+  -   (Hiçbir çok örnekli düzgünleştirme (MSAA)) 1 olarak ayarlayın, sayım üyesi SamplerDesc üye var.  
   
--   İlk veri çağrısına sağlanan `CreateTexture2D`.  
+- İlk veri çağrısına sağlanan `CreateTexture2D`.  
   
- Desteklenen kaynak biçimleri ve bunların blok sıkıştırılmış biçimlerden aşağıda verilmiştir.  
+  Desteklenen kaynak biçimleri ve bunların blok sıkıştırılmış biçimlerden aşağıda verilmiştir.  
   
 |Özgün biçiminde (Başlangıç)|Sıkıştırılmış biçimi (Bitiş)|  
 |------------------------------|------------------------------|  

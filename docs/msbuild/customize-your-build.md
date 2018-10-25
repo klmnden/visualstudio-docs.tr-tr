@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4fa433a3eb2318c36545a285cfd57386c169eb2
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 31856366712da0a2287f73906c6e3a5f81f63a00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101036"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857594"
 ---
 # <a name="customize-your-build"></a>Derlemenizi özelleştirme
 
@@ -46,13 +46,13 @@ Bununla birlikte, artık yeni bir özellik tek bir adımda her proje için bir t
 1. Adlı deponuzun kök dizininde yeni bir dosya oluşturun *Directory.Build.props*.
 2. Aşağıdaki XML dosyasına ekleyin.
 
-  ```xml
-  <Project>
+   ```xml
+   <Project>
     <PropertyGroup>
       <Deterministic>true</Deterministic>
     </PropertyGroup>
-  </Project>
-  ```
+   </Project>
+   ```
 3. MSBuild Çalıştır. Projenizin mevcut aktarımlarının *Microsoft.Common.props* ve *Microsoft.Common.targets* dosyasını bulun ve içe aktarın.
 
 ### <a name="search-scope"></a>Arama kapsamı

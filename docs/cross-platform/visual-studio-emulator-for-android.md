@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6799bc7d3a2a79fadfb6d0535b8ccbbf0b0cffd
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 28d82c13273f18f9787104f080ed39c9c903076c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283672"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884842"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü
 
@@ -51,26 +51,26 @@ Android için Visual Studio öykünücüsü Android cihaz öykünen bir masaüst
 ##  <a name="Requirements"></a> Sistem gereksinimleri ve geriye dönük uyumluluk  
  Donanım, yazılım ve Android için Visual Studio öykünücüsü'nü yapılandırma gereksinimleri hakkında önemli bilgiler için aşağıdaki konuya bakın.  
   
--   [Android için Visual Studio öykünücüsü sistem gereksinimleri](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+- [Android için Visual Studio öykünücüsü sistem gereksinimleri](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
- Android için Visual Studio öykünücü, Visual Studio 2015 gerektirir; Visual Studio'nun önceki sürümleriyle geriye dönük olarak uyumlu değil.  
+  Android için Visual Studio öykünücü, Visual Studio 2015 gerektirir; Visual Studio'nun önceki sürümleriyle geriye dönük olarak uyumlu değil.  
   
- Öykünücü yeni sürümleri eski sürümlerinin üzerine yüklenir (ve bazı durumlarda, ayarları, uygulamalar ve dosyalar üzerinde bu görüntüleri yüklü atılıyor eski görüntülerin değiştirin olabilir).  
+  Öykünücü yeni sürümleri eski sürümlerinin üzerine yüklenir (ve bazı durumlarda, ayarları, uygulamalar ve dosyalar üzerinde bu görüntüleri yüklü atılıyor eski görüntülerin değiştirin olabilir).  
   
 ##  <a name="Networking"></a> Android için Visual Studio öykünücüsü'nü de ağ  
  Android için Visual Studio öykünücüsü ' ağ bağlantısı, bir masaüstü bilgisayarın bu özelliklere sahip bir bağlantı gibi davranır:  
   
--   Öykünücü ağ üzerinde kendi IP adresine sahip ayrı bir cihaz olarak görünür.  
+- Öykünücü ağ üzerinde kendi IP adresine sahip ayrı bir cihaz olarak görünür.  
   
--   Öykünücü ile zaten yüklü değilse ek ağ yazılımı gerektirmez.  
+- Öykünücü ile zaten yüklü değilse ek ağ yazılımı gerektirmez.  
   
--   Bir Windows etki alanına katılmamış.  
+- Bir Windows etki alanına katılmamış.  
   
- Öykünücü'nın ağ bağlantısı özelliklerini anlamak için bu Android telefonunuzdan aynı ağa bir Wi-Fi bağlantısı için benzer olarak düşünebilirsiniz. Telefonunuzda çalışan bir uygulamanın bir ağ kaynağına, Wi-Fi bağlantısı üzerinden erişebilirsiniz, öykünücü üzerinde çalışan bir uygulama da aynı ağ kaynağına erişebilirsiniz.  
+  Öykünücü'nın ağ bağlantısı özelliklerini anlamak için bu Android telefonunuzdan aynı ağa bir Wi-Fi bağlantısı için benzer olarak düşünebilirsiniz. Telefonunuzda çalışan bir uygulamanın bir ağ kaynağına, Wi-Fi bağlantısı üzerinden erişebilirsiniz, öykünücü üzerinde çalışan bir uygulama da aynı ağ kaynağına erişebilirsiniz.  
   
- Ağ gereksinimleri hakkında daha fazla bilgi için bkz. [Android için Visual Studio öykünücüsü sistem gereksinimleri](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+  Ağ gereksinimleri hakkında daha fazla bilgi için bkz. [Android için Visual Studio öykünücüsü sistem gereksinimleri](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
- Ağ sorunlarını giderme hakkında daha fazla bilgi için bkz. [Android için Visual Studio öykünücü sorun giderme](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).  
+  Ağ sorunlarını giderme hakkında daha fazla bilgi için bkz. [Android için Visual Studio öykünücü sorun giderme](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).  
   
 ##  <a name="Configuring"></a> Android için Visual Studio öykünücüsü'nü yapılandırma  
  Android uygulamanız için Uyumluluk şaşırtıcı çeşitli Android donanım üzerinde test zor olabilir. Android telefonlar ve tabletler pazarında kapsayan çok çeşitli sürümleri ve ekran boyutları ve birçok farklı donanım yapılandırmalarında (RAM, CPU, mimarisi, vb.) gelir. Android için Visual Studio öykünücüsü, bu cihaz profillerini kullanarak kolaylaştırır. Cihaz profillerinin kümemizdeki Samsung, Motorola, Sony, LG ve diğer cihazlar dahil pazardaki en popüler donanımı temsil eder.  

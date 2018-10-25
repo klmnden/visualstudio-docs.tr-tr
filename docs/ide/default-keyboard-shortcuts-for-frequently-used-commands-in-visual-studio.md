@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50e9a56d6682c32d4f02f5d45899867ce21768ec
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: f917486a6b4a539401c8652f70ca95b2e7bc7bc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370984"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843209"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio'daki sık kullanılan komutlar için varsayılan klavye kısayolları
 
@@ -26,7 +26,7 @@ Bu varsayılan klavye kısayolları seçerek Visual Studio'da sık kullanılan k
 ## <a name="build"></a>Derleme
 
 |Komutlar|Klavye kısayolları [Bağlamlar]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Build.BuildSolution|**Ctrl + Shift + B** [genel]|
 |Build.Cancel|**Ctrl + Break** [genel]|
 |Build.Compile|**CTRL + F7** [genel]|
@@ -35,7 +35,7 @@ Bu varsayılan klavye kısayolları seçerek Visual Studio'da sık kullanılan k
 ## <a name="debug"></a>Hata ayıklama
 
 |Komutlar|Klavye kısayolları [Bağlamlar]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Debug.BreakatFunction|**CTRL + B** [genel]|
 |Debug.BreakAll|**Ctrl + Alt + Break** [genel]|
 |Debug.DeleteAllBreakpoints|**CTRL + SHIFT + F9** [genel]|
@@ -55,7 +55,7 @@ Bu varsayılan klavye kısayolları seçerek Visual Studio'da sık kullanılan k
 ## <a name="edit"></a>Düzenle
 
 |Komutlar|Klavye kısayolları [Bağlamlar]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Edit.BreakLine|**Girin** [metin düzenleyici, Rapor Tasarımcısı, Windows Forms Tasarımcısı]<br /><br /> veya **Shift + Enter** [metin düzenleyici]|
 |Edit.CollapseToDefinitions|**CTRL + M**, **Ctrl + O** [metin düzenleyici]|
 |Edit.CommentSelection|**CTRL + K**, **Ctrl + C** [metin düzenleyici]|
@@ -106,7 +106,7 @@ Bu varsayılan klavye kısayolları seçerek Visual Studio'da sık kullanılan k
 ## <a name="file"></a>Dosya
 
 |Komutlar|Klavye kısayolları [Bağlamlar]|
-|--------------|-------------------------------------|
+|--------------| - |
 |File.Exit|**Alt + F4** [genel]|
 |File.NewFile|**CTRL + N** [genel]|
 |File.NewProject|**Ctrl + Shift + N** [genel]|
@@ -122,26 +122,26 @@ Bu varsayılan klavye kısayolları seçerek Visual Studio'da sık kullanılan k
 ## <a name="project"></a>Proje
 
 |Komutlar|Klavye kısayolları [Bağlamlar]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Project.AddExistingItem|**SHIFT + Alt + A** [genel]|
 |Project.AddNewItem|**Ctrl + Shift + A** [genel]|
 
 ## <a name="refactor"></a>Yeniden Düzenleme (Refactor)
 
 |Komut|Klavye kısayolu [bağlam]|
-|-------------|-----------------------------------|
+|-------------| - |
 |Refactor.ExtractMethod|**CTRL + R, Ctrl + M** [genel]|
 
 ## <a name="tools"></a>Araçlar
 
 |Komut|Klavye kısayolu [bağlam]|
-|-------------|-----------------------------------|
+|-------------| - |
 |Tools.AttachtoProcess|**Ctrl + Alt + P** [genel]|
 
 ## <a name="view"></a>Görüntüle
 
 |Komutlar|Klavye kısayolları [Bağlamlar]|
-|--------------|-------------------------------------|
+|--------------| - |
 |View.ClassView|**Ctrl + Shift + C** [genel]|
 |View.EditLabel|**F2** [genel]|
 |View.ErrorList|**CTRL +\\, Ctrl + E** [genel]<br /><br /> veya **Ctrl +\\, E** [genel]|
@@ -162,7 +162,7 @@ Bu varsayılan klavye kısayolları seçerek Visual Studio'da sık kullanılan k
 ## <a name="window"></a>Pencere
 
 |Komutlar|Klavye kısayolları [Bağlamlar]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Window.ActivateDocumentWindow|**ESC** [genel]|
 |Window.CloseDocumentWindow|**CTRL + F4** [genel]|
 |Window.NextDocumentWindow|**CTRL + F6** [genel]|

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fb0e6d011868f56375def1516bd0e41410da662
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 18ac2ad1125067109b0ca02d552e997f2c30482f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152506"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873792"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>İzlenecek yol: Bir gizlilik istemiyle özel bir önyükleyici oluşturma
 Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda otomatik olarak güncelleştirmek için ClickOnce uygulamaları yapılandırabilirsiniz. Müşterileriniz için bu davranış kabul ettiğinden emin olmak için bunları bir gizlilik istemi görüntüleyebilirsiniz. Ardından, bunlar otomatik olarak güncelleştirmek için uygulamaya izin verilip verilmeyeceğini seçebilirsiniz. Uygulamayı otomatik olarak güncelleştirmesine izin verilmiyorsa yüklemez.  
@@ -43,23 +43,23 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
   
 #### <a name="to-create-a-consent-dialog-box"></a>Onay iletişim kutusu oluşturmak için  
   
-1.  Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
+1. Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
   
-2.  İçinde **yeni proje** iletişim kutusu, tıklayın **Windows**ve ardından **WindowsFormsApplication**.  
+2. İçinde **yeni proje** iletişim kutusu, tıklayın **Windows**ve ardından **WindowsFormsApplication**.  
   
-3.  İçin **adı**, türü **ConsentDialog**ve ardından **Tamam**.  
+3. İçin **adı**, türü **ConsentDialog**ve ardından **Tamam**.  
   
-4.  Form Tasarımcısı'nda tıklatın.  
+4. Form Tasarımcısı'nda tıklatın.  
   
-5.  İçinde **özellikleri** penceresinde değişiklik **metin** özelliğini **Güncelleştirme Onayı iletişim**.  
+5. İçinde **özellikleri** penceresinde değişiklik **metin** özelliğini **Güncelleştirme Onayı iletişim**.  
   
-6.  İçinde **araç kutusu**, genişletme **tüm Windows Formları**, sürükleyin bir **etiket** forma.  
+6. İçinde **araç kutusu**, genişletme **tüm Windows Formları**, sürükleyin bir **etiket** forma.  
   
-7.  Tasarımcıda etiket denetimi tıklayın.  
+7. Tasarımcıda etiket denetimi tıklayın.  
   
-8.  İçinde **özellikleri** penceresinde değişiklik **metin** özelliği altında **Görünüm** aşağıdaki:  
+8. İçinde **özellikleri** penceresinde değişiklik **metin** özelliği altında **Görünüm** aşağıdaki:  
   
-     Web üzerinde en son güncelleştirmeleri yüklemek üzere olduğunuz uygulama denetler. "Kabul ediyorum" tıklayarak denetlemek ve güncelleştirmeleri Internet'ten otomatik olarak yüklemek için uygulamayı yetkilendirme.  
+    Web üzerinde en son güncelleştirmeleri yüklemek üzere olduğunuz uygulama denetler. "Kabul ediyorum" tıklayarak denetlemek ve güncelleştirmeleri Internet'ten otomatik olarak yüklemek için uygulamayı yetkilendirme.  
   
 9. İçinde **araç kutusu**, sürükleyin bir **onay kutusu** ortaya form denetimi.  
   
@@ -112,28 +112,28 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
   
      Yalnızca Visual Basic geliştiriciler için:  
   
-    1.  İçinde **Çözüm Gezgini**, tıklayın **ConsentDialog**.  
+    1. İçinde **Çözüm Gezgini**, tıklayın **ConsentDialog**.  
   
-    2.  Üzerinde **proje** menüsünü tıklatın **Modül Ekle**ve ardından **Ekle**.  
+    2. Üzerinde **proje** menüsünü tıklatın **Modül Ekle**ve ardından **Ekle**.  
   
-    3.  İçinde *Module1.vb* kod dosyası, aşağıdaki kodu ekleyin.  
+    3. İçinde *Module1.vb* kod dosyası, aşağıdaki kodu ekleyin.  
   
-         [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
+        [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
   
-    4.  Üzerinde **proje** menüsünde tıklatın **ConsentDialog özellikleri**ve ardından **uygulama** sekmesi.  
+    4. Üzerinde **proje** menüsünde tıklatın **ConsentDialog özellikleri**ve ardından **uygulama** sekmesi.  
   
-    5.  Onay kutusunu temizleyin **etkinleştir uygulama çerçevesi**.  
+    5. Onay kutusunu temizleyin **etkinleştir uygulama çerçevesi**.  
   
-    6.  İçinde **Başlangıç nesnesi** açılan menüsünde, select **Module1**.  
+    6. İçinde **Başlangıç nesnesi** açılan menüsünde, select **Module1**.  
   
-        > [!NOTE]
-        >  Uygulama Framework'ü devre dışı bırakma, Windows XP görsel stilleri, uygulama olayları, giriş ekranı, tek örnek uygulama ve diğer özellikleri devre dışı bırakır. Daha fazla bilgi için [uygulama sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+       > [!NOTE]
+       >  Uygulama Framework'ü devre dışı bırakma, Windows XP görsel stilleri, uygulama olayları, giriş ekranı, tek örnek uygulama ve diğer özellikleri devre dışı bırakır. Daha fazla bilgi için [uygulama sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
-     Visual C# yalnızca geliştiriciler için:  
+       Visual C# yalnızca geliştiriciler için:  
   
-     Açık *Program.cs* kod dosyası ve aşağıdaki kodu ekleyin.  
+       Açık *Program.cs* kod dosyası ve aşağıdaki kodu ekleyin.  
   
-     [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
+       [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
   
 26. Üzerinde **derleme** menüsünde tıklatın **BuildSolution**.  
   

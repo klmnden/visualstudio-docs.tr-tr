@@ -18,29 +18,29 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e90e8080f8f5afb7bd670d04e0f004f433420d68
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 082fe68979ea7ae6a0c0655b7731aa8c7c9f3ac5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281539"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838770"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>İzlenecek yol: WPF ve Entity Framework ile WCF veri hizmeti oluşturma
 Bu izlenecek yol basit bir oluşturma işlemini gösterir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] barındırılan bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulamasını ve sonra bir Windows Forms uygulamasından erişebilirsiniz.
 
 Bu kılavuzda:
 
--   Konak için bir web uygulaması oluşturma bir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
+- Konak için bir web uygulaması oluşturma bir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
--   Oluşturma bir [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] temsil eden `Customers` Northwind veritabanındaki tablo.
+- Oluşturma bir [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] temsil eden `Customers` Northwind veritabanındaki tablo.
 
--   Oluşturma bir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
+- Oluşturma bir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
--   İstemci uygulaması oluşturma ve bir başvuru ekleyin [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
+- İstemci uygulaması oluşturma ve bir başvuru ekleyin [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
--   Hizmete veri bağlamayı etkinleştirin ve kullanıcı arabirimini oluşturun.
+- Hizmete veri bağlamayı etkinleştirin ve kullanıcı arabirimini oluşturun.
 
--   İsteğe bağlı olarak, uygulamaya filtreleme yetenekleri ekleyin.
+- İsteğe bağlı olarak, uygulamaya filtreleme yetenekleri ekleyin.
 
 ## <a name="prerequisites"></a>Önkoşullar
 Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını kullanır.
@@ -66,7 +66,7 @@ Oluşturmak için bir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-#### <a name="to-create-the-web-project"></a>Web projesi oluşturmak için
+### <a name="to-create-the-web-project"></a>Web projesi oluşturmak için
 
 1.  Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
@@ -78,7 +78,7 @@ Oluşturmak için bir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_
 
 Sonraki adımda oluşturduğunuz bir [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] temsil eden `Customers` Northwind veritabanındaki tablo.
 
-#### <a name="to-create-the-entity-data-model"></a>Varlık Veri Modeli'ni oluşturmak için
+### <a name="to-create-the-entity-data-model"></a>Varlık Veri Modeli'ni oluşturmak için
 
 1.  Menü çubuğunda, **proje** > **Yeni Öğe Ekle**.
 
@@ -101,12 +101,12 @@ Sonraki adımda oluşturduğunuz bir [!INCLUDE[adonet_edm](../data-tools/include
 6.  Veritabanına parola gerekiyorsa seçin **Evet, bağlantı dizesini hassas verileri eklemek** seçenek düğmesini ve ardından **sonraki** düğmesi.
 
     > [!NOTE]
-    >  Bir iletişim kutusu görüntülenirse, seçin **Evet** dosyayı projenize kaydetmek için.
+    > Bir iletişim kutusu görüntülenirse, seçin **Evet** dosyayı projenize kaydetmek için.
 
 7.  Üzerinde **sürümünüzü seçin** sayfasında **Entity Framework 5.0** seçenek düğmesini ve ardından **sonraki** düğmesi.
 
     > [!NOTE]
-    >  WCF hizmetleri ile Entity Framework 6 en son sürümünü kullanmak için WCF Veri Hizmetleri Entity Framework sağlayıcısı NuGet paketini yüklemeniz gerekir. Bkz: [kullanarak WCF Veri Hizmetleri 5.6.0 Entity Framework 6 +](https://blogs.msdn.microsoft.com/odatateam/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6/).
+    > WCF hizmetleri ile Entity Framework 6 en son sürümünü kullanmak için WCF Veri Hizmetleri Entity Framework sağlayıcısı NuGet paketini yüklemeniz gerekir. Bkz: [kullanarak WCF Veri Hizmetleri 5.6.0 Entity Framework 6 +](https://blogs.msdn.microsoft.com/odatateam/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6/).
 
 8.  Üzerinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları** düğümünü **müşteriler** onay kutusunu işaretleyin ve ardından **son** düğmesi.
 
@@ -114,7 +114,7 @@ Sonraki adımda oluşturduğunuz bir [!INCLUDE[adonet_edm](../data-tools/include
 
 Sonraki adımda, oluşturun ve veri hizmetini test edin.
 
-#### <a name="to-create-the-data-service"></a>Veri hizmetini oluşturmak için
+### <a name="to-create-the-data-service"></a>Veri hizmetini oluşturmak için
 
 1.  Menü çubuğunda, **proje** > **Yeni Öğe Ekle**.
 
@@ -141,7 +141,7 @@ Sonraki adımda, oluşturun ve veri hizmetini test edin.
      Verileri bir XML temsilini `Customers` tablo görünür.
 
     > [!NOTE]
-    >  Bazı durumlarda, Internet Explorer verileri yanlışlıkla RSS akışı olarak yorumlar. RSS akışlarını görüntüleme seçeneğinin devre dışı bırakıldığından emin olmalısınız. Daha fazla bilgi için [hizmet başvurularında sorun giderme](../data-tools/troubleshooting-service-references.md).
+    > Bazı durumlarda, Internet Explorer verileri yanlışlıkla RSS akışı olarak yorumlar. RSS akışlarını görüntüleme seçeneğinin devre dışı bırakıldığından emin olmalısınız. Daha fazla bilgi için [hizmet başvurularında sorun giderme](../data-tools/troubleshooting-service-references.md).
 
 8.  Tarayıcı penceresini kapatın.
 
@@ -152,7 +152,7 @@ Sonraki adımlarda hizmeti kullanmak üzere bir Windows Forms istemci uygulamas�
 
  İlk adım, bir Windows Forms projesi çözüme ekleyin ve başlangıç projesi olarak ayarlayın.
 
-#### <a name="to-create-the-client-application"></a>İstemci uygulamasını oluşturmak için
+### <a name="to-create-the-client-application"></a>İstemci uygulamasını oluşturmak için
 
 1.  Menü çubuğunda, dosya **Ekle** > **yeni proje**.
 
@@ -166,7 +166,7 @@ Sonraki adımlarda hizmeti kullanmak üzere bir Windows Forms istemci uygulamas�
 
 Sonraki adımda, bir hizmet Başvurusu Ekle [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] web projesinde.
 
-#### <a name="to-add-a-service-reference"></a>Hizmet başvurusu eklemek için
+### <a name="to-add-a-service-reference"></a>Hizmet başvurusu eklemek için
 
 1.  Menü çubuğunda, **proje** > **hizmet Başvurusu Ekle**.
 
@@ -178,7 +178,7 @@ Sonraki adımda, bir hizmet Başvurusu Ekle [!INCLUDE[ss_data_service](../data-t
 
 Sonraki adımda, hizmete veri bağlamayı etkinleştirmek için bir veri kaynağı yapılandırın.
 
-#### <a name="to-enable-data-binding-to-the-service"></a>Hizmete veri bağlamayı etkinleştirmek için
+### <a name="to-enable-data-binding-to-the-service"></a>Hizmete veri bağlamayı etkinleştirmek için
 
 1.  Menü çubuğunda, **görünümü** > **diğer Windows** > **veri kaynakları**.
 
@@ -192,61 +192,60 @@ Sonraki adımda, hizmete veri bağlamayı etkinleştirmek için bir veri kaynağ
 
 Sonraki adımda, hizmetten alınan verileri görüntüleyen bir kullanıcı arabirimi oluşturun.
 
-#### <a name="to-create-the-user-interface"></a>Kullanıcı arabirimini oluşturmak için
+### <a name="to-create-the-user-interface"></a>Kullanıcı arabirimini oluşturmak için
 
-1.  İçinde **veri kaynakları** penceresinde, kısayol menüsünü açın **müşteriler** düğüm ve **kopyalama**.
+1. İçinde **veri kaynakları** penceresinde, kısayol menüsünü açın **müşteriler** düğüm ve **kopyalama**.
 
-2.  İçinde **Form1.vb** veya **Form1.cs** form tasarımcısında kısayol menüsünü açın ve seçin **Yapıştır**.
+2. İçinde **Form1.vb** veya **Form1.cs** form tasarımcısında kısayol menüsünü açın ve seçin **Yapıştır**.
 
-     A <xref:System.Windows.Forms.DataGridView> denetimi, bir <xref:System.Windows.Forms.BindingSource> bileşeni ve bir <xref:System.Windows.Forms.BindingNavigator> bileşeni formuna eklenir.
+    A <xref:System.Windows.Forms.DataGridView> denetimi, bir <xref:System.Windows.Forms.BindingSource> bileşeni ve bir <xref:System.Windows.Forms.BindingNavigator> bileşeni formuna eklenir.
 
-3.  Seçin **CustomersDataGridView** denetimi ve ardından **özellikleri** penceresi kümesi **Dock** özelliğini **dolgu**.
+3. Seçin **CustomersDataGridView** denetimi ve ardından **özellikleri** penceresi kümesi **Dock** özelliğini **dolgu**.
 
-4.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **Form1** düğüm ve **kodu görüntüle** Kod Düzenleyicisi'ni açın ve aşağıdakileri ekleyin `Imports` veya `Using`deyimini dosyanın üst:
+4. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **Form1** düğüm ve **kodu görüntüle** Kod Düzenleyicisi'ni açın ve aşağıdakileri ekleyin `Imports` veya `Using`deyimini dosyanın üst:
 
-    ```vb
-    Imports NorthwindClient.ServiceReference1
-    ```
+   ```vb
+   Imports NorthwindClient.ServiceReference1
+   ```
 
-    ```csharp
-    using NorthwindClient.ServiceReference1;
-    ```
+   ```csharp
+   using NorthwindClient.ServiceReference1;
+   ```
 
-5.  Aşağıdaki kodu ekleyin `Form1_Load` olay işleyicisi:
+5. Aşağıdaki kodu ekleyin `Form1_Load` olay işleyicisi:
 
-    ```vb
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-            Dim proxy As New NorthwindEntities _
-    (New Uri("http://localhost:53161/NorthwindCustomers.svc/"))
-            Me.CustomersBindingSource.DataSource = proxy.Customers
-        End Sub
-    ```
+   ```vb
+   Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+           Dim proxy As New NorthwindEntities _
+   (New Uri("http://localhost:53161/NorthwindCustomers.svc/"))
+           Me.CustomersBindingSource.DataSource = proxy.Customers
+       End Sub
+   ```
 
-    ```csharp
-    private void Form1_Load(object sender, EventArgs e)
-    {
-    NorthwindEntities proxy = new NorthwindEntities(new Uri("http://localhost:53161/NorthwindCustomers.svc/"));
-    this.CustomersBindingSource.DataSource = proxy.Customers;
-    }
+   ```csharp
+   private void Form1_Load(object sender, EventArgs e)
+   {
+   NorthwindEntities proxy = new NorthwindEntities(new Uri("http://localhost:53161/NorthwindCustomers.svc/"));
+   this.CustomersBindingSource.DataSource = proxy.Customers;
+   }
+   ```
 
-    ```
+6. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **NorthwindCustomers.svc** seçin ve dosya **tarayıcıda görüntüle**. Internet Explorer açılır ve hizmet için XML Şeması görüntülenir.
 
-6.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **NorthwindCustomers.svc** seçin ve dosya **tarayıcıda görüntüle**. Internet Explorer açılır ve hizmet için XML Şeması görüntülenir.
+7. Internet Explorer adres çubuğundan URL'yi kopyalayın.
 
-7.  Internet Explorer adres çubuğundan URL'yi kopyalayın.
-
-8.  4. adımda eklediğiniz kodda seçin `http://localhost:53161/NorthwindCustomers.svc/` ve az önce kopyaladığınız URL ile değiştirin.
+8. 4. adımda eklediğiniz kodda seçin `http://localhost:53161/NorthwindCustomers.svc/` ve az önce kopyaladığınız URL ile değiştirin.
 
 9. Menü çubuğunda, **hata ayıklama** > **hata ayıklamayı Başlat** uygulamayı çalıştırın. Müşteri bilgileri gösterilir.
 
- Artık, NorthwindCustomers hizmetinden müşterilerin listesini görüntüleyen çalışır bir uygulamanız var. Ek veri hizmeti aracılığıyla kullanıma sunmak isterseniz değiştirebileceğiniz [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Northwind veritabanından ek tablolar içerecek şekilde.
+   Artık, NorthwindCustomers hizmetinden müşterilerin listesini görüntüleyen çalışır bir uygulamanız var. Ek veri hizmeti aracılığıyla kullanıma sunmak isterseniz değiştirebileceğiniz [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Northwind veritabanından ek tablolar içerecek şekilde.
 
 Sonraki isteğe bağlı adımda hizmetin döndürdüğü verileri filtreleme hakkında bilgi edinin.
 
 ## <a name="adding-filtering-capabilities"></a>Filtreleme Yetenekleri Ekleme
  Bu adımda, uygulama verileri müşterinin Şehir bilgisine göre filtrelemek için özelleştirin.
 
-#### <a name="to-add-filtering-by-city"></a>Şehir bilgisine göre filtreleme eklemek için
+### <a name="to-add-filtering-by-city"></a>Şehir bilgisine göre filtreleme eklemek için
 
 1.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **Form1.vb** veya **Form1.cs** düğüm ve **açın**.
 

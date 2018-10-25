@@ -19,12 +19,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a5e6044a56bfc94f7bc0e517ccbd91ae10d5b9d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f031e81911c9a36cd2c48abf7bd2b092bb5940f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289581"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886285"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Uzak makinede Windows Mağazası uygulamalarını çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Yalnızca Windows için geçerlidir] (.. /Image/windows_only_content.png "window
   
  [Uzaktan hata ayıklama için Visual Studio projesini yapılandırma](#BKMK_ConnectVS)  
   
--   [C# ve Visual Basic projeleri için Uzak cihaz seçme](#BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects)  
+- [C# ve Visual Basic projeleri için Uzak cihaz seçme](#BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects)  
   
--   [JavaScript ve C++ projeleri için Uzak cihaz seçme](#BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects)  
+- [JavaScript ve C++ projeleri için Uzak cihaz seçme](#BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects)  
   
- [Uzaktan hata ayıklama oturumu çalıştırma](#BKMK_RunRemoteDebug)  
+  [Uzaktan hata ayıklama oturumu çalıştırma](#BKMK_RunRemoteDebug)  
   
 ##  <a name="BKMK_Prerequisites"></a> Önkoşullar  
  Uzak bir cihazda hata ayıklamak için:  
@@ -123,20 +123,20 @@ Yalnızca Windows için geçerlidir] (.. /Image/windows_only_content.png "window
 ##  <a name="BKMK_ConfigureRemoteDebugger"></a> Uzaktan hata ayıklayıcı yapılandırma  
  Uzaktan hata ayıklayıcı yapılandırmasını değiştirmek için iki aracı kullanın.  
   
-1.  Üzerinde **Araçları** menüsü **Visual Studio uzaktan hata ayıklama İzleyicisi**:  
+1. Üzerinde **Araçları** menüsü **Visual Studio uzaktan hata ayıklama İzleyicisi**:  
   
-    1.  Seçin **seçenekleri** bağlantı noktası numarasını, kimlik doğrulama modunu veya uzaktan hata ayıklayıcı zaman aşımı aralığını değiştirmek için.  
+   1.  Seçin **seçenekleri** bağlantı noktası numarasını, kimlik doğrulama modunu veya uzaktan hata ayıklayıcı zaman aşımı aralığını değiştirmek için.  
   
-    2.  Seçin **izinleri** uzaktan hata ayıklama iznine sahip kullanıcı eklemek veya kaldırmak için.  
+   2.  Seçin **izinleri** uzaktan hata ayıklama iznine sahip kullanıcı eklemek veya kaldırmak için.  
   
-        > [!NOTE]
-        >  Her kullanıcı hesabı için uzaktan hata ayıklamasına izin verilmelidir.  
+       > [!NOTE]
+       >  Her kullanıcı hesabı için uzaktan hata ayıklamasına izin verilmelidir.  
   
- Kullandığınız **uzaktan hata ayıklayıcı Yapılandırma Sihirbazı'nı** uzaktan hata ayıklayıcı için Gelişmiş seçeneklerini ayarlamak için. Sihirbazı açmak için seçin **uzaktan hata ayıklayıcı Yapılandırma Sihirbazı'nı** başlangıç ekranında.  
+   Kullandığınız **uzaktan hata ayıklayıcı Yapılandırma Sihirbazı'nı** uzaktan hata ayıklayıcı için Gelişmiş seçeneklerini ayarlamak için. Sihirbazı açmak için seçin **uzaktan hata ayıklayıcı Yapılandırma Sihirbazı'nı** başlangıç ekranında.  
   
-1.  Üzerinde **Visual Studio uzaktan hata ayıklayıcı yapılandırma** sayfasında tercih edebilirsiniz uzaktan hata ayıklayıcıyı bir hizmet olarak çalıştırmak. Çoğu durumda, bir hizmet olarak çalışma gerekli değildir.  
+2. Üzerinde **Visual Studio uzaktan hata ayıklayıcı yapılandırma** sayfasında tercih edebilirsiniz uzaktan hata ayıklayıcıyı bir hizmet olarak çalıştırmak. Çoğu durumda, bir hizmet olarak çalışma gerekli değildir.  
   
-2.  Üzerinde **hata ayıklama için Windows Güvenlik Duvarı Yapılandırma** sayfasında, eklemek veya bağlanmak için uzaktan hata ayıklayıcı istediğiniz ağ türünü kaldırın. Cihaz şu anda bağlı olduğu ağlar etkinleştirilir. En az bir ağ seçmelisiniz.  
+3. Üzerinde **hata ayıklama için Windows Güvenlik Duvarı Yapılandırma** sayfasında, eklemek veya bağlanmak için uzaktan hata ayıklayıcı istediğiniz ağ türünü kaldırın. Cihaz şu anda bağlı olduğu ağlar etkinleştirilir. En az bir ağ seçmelisiniz.  
   
 ##  <a name="BKMK_ConnectVS"></a> Uzaktan hata ayıklama için Visual Studio projesini yapılandırma  
  Proje özelliklerinde Bağlanılacak uzak cihazı belirtin. Yordam programlama diline bağlı olarak farklılık gösterir. Uzak cihaz ağ adını yazmanız veya uzaktan hata ayıklayıcı bağlantısı Seç iletişim kutusundan seçebilirsiniz.  

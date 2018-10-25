@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a63dd4eae31b99646af04ceabe76e4edb946027
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ce16e3c2aca99acf6de9a7ce74c0c2ff46c0dcbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800938"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849040"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>İzlenecek yol: Excel için ilk belge düzeyi özelleştirmeyi oluşturma
   Bu tanıtıcı kılavuz, Microsoft Office Excel için belge düzeyi özelleştirmeyi oluşturma işlemini göstermektedir. Bu tür bir çözüm içinde oluşturduğunuz özellikler, yalnızca belirli bir çalışma kitabı açık olduğunda kullanılabilir. Belge düzeyi özelleştirmesi birçok farklı uygulama değişiklik yapmak için kullanamazsınız, örneğin, herhangi bir çalışma kitabını açtığınızda yeni bir Şerit sekmesi görüntüleme gibi.  
@@ -31,17 +31,17 @@ ms.locfileid: "38800938"
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
--   Bir Excel çalışma kitabı projesi oluşturma.  
+- Bir Excel çalışma kitabı projesi oluşturma.  
   
--   Visual Studio Tasarımcısı'nda barındırılan bir çalışma sayfasına metin ekleniyor.  
+- Visual Studio Tasarımcısı'nda barındırılan bir çalışma sayfasına metin ekleniyor.  
   
--   Açıldığında özelleştirilmiş bir çalışma sayfasına metin eklemek için Excel nesne modeli kullanan kod yazma.  
+- Açıldığında özelleştirilmiş bir çalışma sayfasına metin eklemek için Excel nesne modeli kullanan kod yazma.  
   
--   Geliştirme ve test etmek için proje çalıştırma.  
+- Geliştirme ve test etmek için proje çalıştırma.  
   
--   Gereksiz derleme dosyaları ve güvenlik ayarları, geliştirme bilgisayarınızdan kaldırmak için projeyi temizleniyor.  
+- Gereksiz derleme dosyaları ve güvenlik ayarları, geliştirme bilgisayarınızdan kaldırmak için projeyi temizleniyor.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
@@ -54,35 +54,35 @@ ms.locfileid: "38800938"
   
 ### <a name="to-create-a-new-excel-workbook-project-in-visual-studio"></a>Visual Studio'da yeni bir Excel çalışma kitabı projesi oluşturmak için  
   
-1.  Başlangıç [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1. Başlangıç [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
+2. Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
   
-3.  Şablonlar bölmesinde, **Visual C#** veya **Visual Basic**ve ardından **Office/SharePoint**.  
+3. Şablonlar bölmesinde, **Visual C#** veya **Visual Basic**ve ardından **Office/SharePoint**.  
   
-4.  Genişletilmiş altında **Office/SharePoint** düğümünü **Office eklentilerini** düğümü.  
+4. Genişletilmiş altında **Office/SharePoint** düğümünü **Office eklentilerini** düğümü.  
   
-5.  Proje şablonları listesinde, bir Excel VSTO eklenti projesini seçin.  
+5. Proje şablonları listesinde, bir Excel VSTO eklenti projesini seçin.  
   
-6.  İçinde **adı** kutusuna **FirstWorkbookCustomization**.  
+6. İçinde **adı** kutusuna **FirstWorkbookCustomization**.  
   
-7.  **Tamam**'ı tıklatın.  
+7. **Tamam**'ı tıklatın.  
   
-     **Office Project Sihirbazı için Visual Studio Araçları** açılır.  
+    **Office Project Sihirbazı için Visual Studio Araçları** açılır.  
   
-8.  Seçin **yeni belge oluşturma**, tıklatıp **Tamam**.  
+8. Seçin **yeni belge oluşturma**, tıklatıp **Tamam**.  
   
-    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] oluşturur **FirstWorkbookCustomization** proje ve aşağıdaki dosyalar projeye ekler.  
+   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] oluşturur **FirstWorkbookCustomization** proje ve aşağıdaki dosyalar projeye ekler.  
   
-    -   *FirstWorkbookCustomization*.xlsx - proje Excel çalışma kitabında temsil eder. Tüm çalışma sayfaları ve grafikleri içerir.  
+   - *FirstWorkbookCustomization*.xlsx - proje Excel çalışma kitabında temsil eder. Tüm çalışma sayfaları ve grafikleri içerir.  
   
-    -   Sheet1 (*.vb* Visual Basic için dosya veya *.cs* dosya Visual C#)-ilk çalışma kitabındaki için tasarım yüzeyi ve kod sağlayan bir çalışma. Daha fazla bilgi için [çalışma sayfası konak öğesi](../vsto/worksheet-host-item.md).  
+   - Sheet1 (*.vb* Visual Basic için dosya veya *.cs* dosya Visual C#)-ilk çalışma kitabındaki için tasarım yüzeyi ve kod sağlayan bir çalışma. Daha fazla bilgi için [çalışma sayfası konak öğesi](../vsto/worksheet-host-item.md).  
   
-    -   Sheet2 (*.vb* Visual Basic için dosya veya *.cs* dosya Visual C#)-ikinci çalışma kitabındaki için tasarım yüzeyi ve kod sağlayan bir çalışma.  
+   - Sheet2 (*.vb* Visual Basic için dosya veya *.cs* dosya Visual C#)-ikinci çalışma kitabındaki için tasarım yüzeyi ve kod sağlayan bir çalışma.  
   
-    -   Sheet3 (*.vb* Visual Basic için dosya veya *.cs* dosya Visual C#)-üçüncü çalışma kitabındaki için tasarım yüzeyi ve kod sağlayan bir çalışma.  
+   - Sheet3 (*.vb* Visual Basic için dosya veya *.cs* dosya Visual C#)-üçüncü çalışma kitabındaki için tasarım yüzeyi ve kod sağlayan bir çalışma.  
   
-    -   ThisWorkbook (*.vb* Visual Basic için dosya veya *.cs* dosya Visual C#)-tasarım yüzeyini ve çalışma kitabını düzeyi özelleştirmeleri için kod içerir. Daha fazla bilgi için [çalışma kitabı konak öğesi](../vsto/workbook-host-item.md).  
+   - ThisWorkbook (*.vb* Visual Basic için dosya veya *.cs* dosya Visual C#)-tasarım yüzeyini ve çalışma kitabını düzeyi özelleştirmeleri için kod içerir. Daha fazla bilgi için [çalışma kitabı konak öğesi](../vsto/workbook-host-item.md).  
   
      Sheet1 kod dosyası Tasarımcısı'nda otomatik olarak açılır.  
   

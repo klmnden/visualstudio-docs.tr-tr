@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ada2c6f3b147e103c132e3d5dfd1d8ac623065
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 0072d04ed8f31b492e0ee792717b8975478c8c99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379825"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891030"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Birden çok UI eşlemesi bulunan büyük uygulamaları test etme
 
@@ -25,19 +25,19 @@ Bu konu, birden çok UI Haritası'nı kullanarak büyük bir uygulamayı test et
 
  **Gereksinimler**
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
- Yeni kodlanmış UI testi oluşturduğunuzda, Visual Studio test çerçevesi varsayılan olarak testi için kod oluşturur bir <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> sınıfı. Kodlanmış UI testleri nasıl kaydedileceği hakkında daha fazla bilgi için bkz: [Oluştur kodlanmış UI testleri](../test/use-ui-automation-to-test-your-code.md) ve [kodlanmış UI testinin anatomisi](../test/anatomy-of-a-coded-ui-test.md).
+  Yeni kodlanmış UI testi oluşturduğunuzda, Visual Studio test çerçevesi varsayılan olarak testi için kod oluşturur bir <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> sınıfı. Kodlanmış UI testleri nasıl kaydedileceği hakkında daha fazla bilgi için bkz: [Oluştur kodlanmış UI testleri](../test/use-ui-automation-to-test-your-code.md) ve [kodlanmış UI testinin anatomisi](../test/anatomy-of-a-coded-ui-test.md).
 
- Oluşturulan kod için UI haritasında test ile etkileşime giren her nesne için bir sınıf içerir. Oluşturulan her bir yöntemi için Yöntem parametreleri için bir yardımcı sınıfı için özel olarak bu yöntem oluşturulur. UI haritasında, nesneleri, sayfalar ve formları ve denetimleri, uygulamanızda çok sayıda varsa, çok fazla büyüyebilir. Ayrıca, birkaç kişiye testleri üzerinde çalışıyorsanız ve o uygulama tek bir büyük UI haritası dosyasıyla hantal hale gelir.
+  Oluşturulan kod için UI haritasında test ile etkileşime giren her nesne için bir sınıf içerir. Oluşturulan her bir yöntemi için Yöntem parametreleri için bir yardımcı sınıfı için özel olarak bu yöntem oluşturulur. UI haritasında, nesneleri, sayfalar ve formları ve denetimleri, uygulamanızda çok sayıda varsa, çok fazla büyüyebilir. Ayrıca, birkaç kişiye testleri üzerinde çalışıyorsanız ve o uygulama tek bir büyük UI haritası dosyasıyla hantal hale gelir.
 
- Birden çok UI haritası dosyalarını kullanarak, aşağıdaki faydaları sağlayabilir:
+  Birden çok UI haritası dosyalarını kullanarak, aşağıdaki faydaları sağlayabilir:
 
--   Her harita bir mantıksal uygulama alt kümesi ile ilişkili olabilir. Bu değişiklikleri yönetmeyi kolaylaştırır.
+- Her harita bir mantıksal uygulama alt kümesi ile ilişkili olabilir. Bu değişiklikleri yönetmeyi kolaylaştırır.
 
--   Her test uygulamasının bir bölüm çalışabilir ve uygulamanın diğer bölümlerini üzerinde çalışan test edicileri ile engellemeden kodları denetleyin.
+- Her test uygulamasının bir bölüm çalışabilir ve uygulamanın diğer bölümlerini üzerinde çalışan test edicileri ile engellemeden kodları denetleyin.
 
--   Uygulama kullanıcı Arabirimi eklemeler, artımlı olarak arabiriminin diğer bölümleri için testleri üzerinde çok az etkisi olan ölçeklendirilebilir.
+- Uygulama kullanıcı Arabirimi eklemeler, artımlı olarak arabiriminin diğer bölümleri için testleri üzerinde çok az etkisi olan ölçeklendirilebilir.
 
 ## <a name="do-you-need-multiple-ui-maps"></a>Birden çok UI haritası gerekiyor mu?
  Birden çok UI haritası, bu tür durumlarda her oluşturun:
@@ -50,34 +50,34 @@ Bu konu, birden çok UI Haritası'nı kullanarak büyük bir uygulamayı test et
 
 ### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>UI haritasında, kodlanmış UI test projesi eklemek için
 
-1.  İçinde **Çözüm Gezgini**UI haritası depolamak, kodlanmış UI testi proje dosyasını sağ tıklayın, fareyle için kodlanmış UI test projesi içinde bir klasör oluşturmak için **Ekle**ve ardından **Yeniklasör**. Örneğin, adlandırabilirsiniz `UIMaps`.
+1. İçinde **Çözüm Gezgini**UI haritası depolamak, kodlanmış UI testi proje dosyasını sağ tıklayın, fareyle için kodlanmış UI test projesi içinde bir klasör oluşturmak için **Ekle**ve ardından **Yeniklasör**. Örneğin, adlandırabilirsiniz `UIMaps`.
 
-     Yeni klasör, kodlanmış UI test projesi altında görüntülenir.
+    Yeni klasör, kodlanmış UI test projesi altında görüntülenir.
 
-2.  Sağ `UIMaps` klasörünü **Ekle**ve ardından **yeni öğe**.
+2. Sağ `UIMaps` klasörünü **Ekle**ve ardından **yeni öğe**.
 
-     **Yeni Öğe Ekle** iletişim kutusu görüntülenir.
+    **Yeni Öğe Ekle** iletişim kutusu görüntülenir.
 
-    > [!NOTE]
-    > Yeni bir kodlanmış UI testi Haritası eklemek için kodlanmış UI test projesi içinde olmalıdır.
+   > [!NOTE]
+   > Yeni bir kodlanmış UI testi Haritası eklemek için kodlanmış UI test projesi içinde olmalıdır.
 
-3.  Seçin **kodlanmış UI testi Haritası** listeden.
+3. Seçin **kodlanmış UI testi Haritası** listeden.
 
-     İçinde **adı** kutusunda, yeni UI eşlemesi için bir ad girin. Bileşen veya eşleme, örneğin, temsil edecek bir sayfa adını kullanmak `HomePageMap`.
+    İçinde **adı** kutusunda, yeni UI eşlemesi için bir ad girin. Bileşen veya eşleme, örneğin, temsil edecek bir sayfa adını kullanmak `HomePageMap`.
 
-4.  Seçin **ekleme**.
+4. Seçin **ekleme**.
 
-     Visual Studio penceresi simge durumuna küçültür ve **kodlanmış UI Test Oluşturucusu** iletişim kutusu görüntülenir.
+    Visual Studio penceresi simge durumuna küçültür ve **kodlanmış UI Test Oluşturucusu** iletişim kutusu görüntülenir.
 
-5.  İlk yöntem için eylemlerini kaydedin ve seçin **kod üret**.
+5. İlk yöntem için eylemlerini kaydedin ve seçin **kod üret**.
 
-6.  Kayıtlı tüm eylem ve ilk bileşen veya sayfa için onaylar ve yöntemlere gruplanmış sonra kapatın **kodlanmış UI Test Oluşturucusu** iletişim kutusu.
+6. Kayıtlı tüm eylem ve ilk bileşen veya sayfa için onaylar ve yöntemlere gruplanmış sonra kapatın **kodlanmış UI Test Oluşturucusu** iletişim kutusu.
 
-7.  UI haritası oluşturmaya devam edin. Eylemler ve Onaylamalar kaydedin, her bileşen için yöntemlerde gruplamak ve ardından kodu oluşturun.
+7. UI haritası oluşturmaya devam edin. Eylemler ve Onaylamalar kaydedin, her bileşen için yöntemlerde gruplamak ve ardından kodu oluşturun.
 
- Çoğu durumda, uygulamanızın en üst düzey penceresi tüm sihirbazları, formlar ve sayfalar için sabittir. Üst düzey bir pencere için bir sınıf her UI eşlemesine sahip olsa da, tüm eşlemeler büyük olasılıkla çalıştırın, uygulamanızın tüm bileşenlerin aynı üst düzey pencereye başvuruyordur. Üst düzey penceresinden başlayarak kodlanmış UI testleri arama denetimlerin hiyerarşik olarak yukarıdan aşağıya doğru böylece her UI haritasında gerçek üst düzey bir pencere karmaşık bir uygulamada yinelenen. Gerçek üst düzey bir pencere yineleniyorsa, o pencereyi değişirse, birden fazla değişiklik neden olur. UI haritası arasında geçiş yaptığınızda bu performans sorunlarına neden olabilir.
+   Çoğu durumda, uygulamanızın en üst düzey penceresi tüm sihirbazları, formlar ve sayfalar için sabittir. Üst düzey bir pencere için bir sınıf her UI eşlemesine sahip olsa da, tüm eşlemeler büyük olasılıkla çalıştırın, uygulamanızın tüm bileşenlerin aynı üst düzey pencereye başvuruyordur. Üst düzey penceresinden başlayarak kodlanmış UI testleri arama denetimlerin hiyerarşik olarak yukarıdan aşağıya doğru böylece her UI haritasında gerçek üst düzey bir pencere karmaşık bir uygulamada yinelenen. Gerçek üst düzey bir pencere yineleniyorsa, o pencereyi değişirse, birden fazla değişiklik neden olur. UI haritası arasında geçiş yaptığınızda bu performans sorunlarına neden olabilir.
 
- Bu etkiyi en aza indirmek için kullanabileceğiniz `CopyFrom()` yöntemi üst düzey yeni pencerede, UI haritasını ana üst düzey pencere aynı olduğundan emin olun.
+   Bu etkiyi en aza indirmek için kullanabileceğiniz `CopyFrom()` yöntemi üst düzey yeni pencerede, UI haritasını ana üst düzey pencere aynı olduğundan emin olun.
 
 ## <a name="example"></a>Örnek
 

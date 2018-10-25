@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 00ad8f91e738cb98aeba93b69cb47c6ab644aa3f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e794a995d1e978cf5aae8d1b6ec9c1711436af73
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676699"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883483"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Nasıl yapılır: program aracılığıyla belgeleri kaydetme
   Microsoft Office Word belgeleri kaydetmek için çeşitli yollar vardır. Belge adını değiştirmeden bir belgeyi kaydedebilirsiniz veya yeni bir adla bir belgeyi kaydedebilirsiniz.  
@@ -39,12 +39,12 @@ ms.locfileid: "35676699"
   
 ### <a name="to-save-the-active-document"></a>Etkin belgeyi kaydetmek için  
   
-1.  Çağrı <xref:Microsoft.Office.Interop.Word._Document.Save%2A> etkin belge için yöntemi. Bu kod örneği kullanmak için çalıştırın `ThisDocument` veya `ThisAddIn` projenizdeki sınıfı.  
+1. Çağrı <xref:Microsoft.Office.Interop.Word._Document.Save%2A> etkin belge için yöntemi. Bu kod örneği kullanmak için çalıştırın `ThisDocument` veya `ThisAddIn` projenizdeki sınıfı.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#8)]
-     [!code-csharp[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#8)]  
+    [!code-vb[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#8)]
+    [!code-csharp[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#8)]  
   
- Etkin belgeyi kaydetmek istediğiniz belge olup emin değilseniz adıyla başvurabilir.  
+   Etkin belgeyi kaydetmek istediğiniz belge olup emin değilseniz adıyla başvurabilir.  
   
 ### <a name="to-save-a-document-specified-by-name"></a>Belirtilen ada göre bir belgeyi kaydetmek için  
   

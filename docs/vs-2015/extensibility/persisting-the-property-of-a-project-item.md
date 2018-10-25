@@ -16,12 +16,12 @@ ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f9094dfd2ffa9edab1b884f2658f74db718ab3c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa71856cf21853d2e234b104ea5345bd46a7311a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285109"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852433"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>Proje Öğesinin Özelliğini Kalıcı Yapma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

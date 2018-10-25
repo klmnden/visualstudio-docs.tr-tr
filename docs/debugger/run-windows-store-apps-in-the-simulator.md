@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: fd0aa403e702a591a0b09d0891116063a3ed9ff2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f8d1ae730947a70cac253866d0257aa4e0216626
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281058"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882775"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Simülatörde UWP uygulamaları çalıştırma
 UWP uygulamaları için Visual Studio simulator, UWP uygulaması taklit eden bir masaüstü uygulamasıdır. Genellikle, yerel makine, bağlı bir cihaz veya uzak makinede hata ayıklama istersiniz. Ancak, bazı senaryolarda, farklı fiziksel ekran boyutunu ve çözüm benzetmek için Visual Studio simulator kullanmak isteyebilirsiniz. Ayrıca, ortak dokunma ve döndürme olaylarının benzetimini yapma ve ağ bağlantısı özellikleri benzetimi.
@@ -115,35 +115,35 @@ UWP uygulamaları için Visual Studio simulator, UWP uygulaması taklit eden bir
   
  Ağ özellikleri benzetimini yapmak için:  
   
-1.  Simülatör araç çubuğunda **ağ özelliklerini değiştirme** düğmesi.  
+1. Simülatör araç çubuğunda **ağ özelliklerini değiştirme** düğmesi.  
   
-2.  Üzerinde **ağ özelliklerini ayarla** iletişim kutusunda **kullanım sanal ağ özellikleri**.  
+2. Üzerinde **ağ özelliklerini ayarla** iletişim kutusunda **kullanım sanal ağ özellikleri**.  
   
-     Benzetim kaldırın ve şu anda bağlı arabirimi için ağ özellikleri döndürmek için bu onay kutusunu temizleyin.  
+    Benzetim kaldırın ve şu anda bağlı arabirimi için ağ özellikleri döndürmek için bu onay kutusunu temizleyin.  
   
-3.  Girin bir **profil adı** sanal ağ için. Benzetim tanımlamak için kullanabileceğiniz bir benzersiz ad kullanmanızı öneririz [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) özelliği [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) nesne.  
+3. Girin bir **profil adı** sanal ağ için. Benzetim tanımlamak için kullanabileceğiniz bir benzersiz ad kullanmanızı öneririz [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) özelliği [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) nesne.  
   
-4.  Seçin [NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype) profilinden değeri **ağ maliyet türü** listesi.  
+4. Seçin [NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype) profilinden değeri **ağ maliyet türü** listesi.  
   
-5.  Gelen **veri sınırı durum bayrağı** liste, ayarlayabilirsiniz [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) özelliği veya [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) özelliği true olarak veya tercih edebilirsiniz  **Veri sınırının altında** her iki değeri false olarak ayarlanacak.  
+5. Gelen **veri sınırı durum bayrağı** liste, ayarlayabilirsiniz [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) özelliği veya [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) özelliği true olarak veya tercih edebilirsiniz  **Veri sınırının altında** her iki değeri false olarak ayarlanacak.  
   
-6.  Gelen **gezici durumu** listesinde, ayarlamak [gezici](/uwp/api/windows.networking.connectivity.connectioncost) özelliği.  
+6. Gelen **gezici durumu** listesinde, ayarlamak [gezici](/uwp/api/windows.networking.connectivity.connectioncost) özelliği.  
   
-7.  Seçin **özelliklerini ayarla** ağ özelliklerinin, ön plan tetikleyerek benzetimini yapmak için [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) olay ve arka plan [SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger) türü **NetworkStateChange**.  
+7. Seçin **özelliklerini ayarla** ağ özelliklerinin, ön plan tetikleyerek benzetimini yapmak için [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) olay ve arka plan [SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger) türü **NetworkStateChange**.  
   
- **Ağ Bağlantıları yönetme hakkında daha fazla bilgi**  
+   **Ağ Bağlantıları yönetme hakkında daha fazla bilgi**  
   
- [Hızlı Başlangıç: Tarifeli ağ maliyet kısıtlamalarını yönetme](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Hızlı Başlangıç: Tarifeli ağ maliyet kısıtlamalarını yönetme](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
- [Ağ bilgi örnek](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [Ağ bilgi örnek](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
- [Enerji kullanımını çözümleme](../profiling/analyze-energy-use-in-store-apps.md)  
+   [Enerji kullanımını çözümleme](../profiling/analyze-energy-use-in-store-apps.md)  
   
- [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
+   [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
   
- [Nasıl sistem arka plan görevleri ile olaylara yanıt verme](/previous-versions/windows/apps/hh977058(v=win.10))  
+   [Nasıl sistem arka plan görevleri ile olaylara yanıt verme](/previous-versions/windows/apps/hh977058(v=win.10))  
   
- [UWP uygulamalarında askıya alma, sürdürme ve arka plan olayları tetikleme](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
+   [UWP uygulamalarında askıya alma, sürdürme ve arka plan olayları tetikleme](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Simülatör klavye ile gezinme  
  Simülatör araç çubuğu tuşlarına basarak gezinebilirsiniz **CTRL + ALT + YUKARI OK** odak simülatör araç çubuğuna simülatör penceresinde geçiş yapmak için. Kullanım **yukarı ok** ve **aşağı ok** araç çubuğu düğmeleri arasında taşımak için.  

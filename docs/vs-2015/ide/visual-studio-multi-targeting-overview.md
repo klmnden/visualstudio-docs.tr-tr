@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ab13a42c706b5f8c45f128e54bb4630b164e6a2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 03ffd0a1d7150d03a801fdc839f48b072f278130
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277075"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857685"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio Çoklu Sürüm Desteğine Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,29 +37,29 @@ Bu sürümünde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], sürümünü belir
 ## <a name="framework-targeting-features"></a>Çerçeve hedefleme özellikleri  
  Çerçeve hedefleme şu özellikleri içerir:  
   
--   Önceki bir sürümünü hedefleyen bir proje açtığınızda [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] otomatik olarak bu yükseltebilir veya hedefi olduğu gibi bırakın.  
+- Önceki bir sürümünü hedefleyen bir proje açtığınızda [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] otomatik olarak bu yükseltebilir veya hedefi olduğu gibi bırakın.  
   
--   Bir proje oluşturduğunuzda, sürümünü belirtebilirsiniz [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] hedeflemek istediğiniz.  
+- Bir proje oluşturduğunuzda, sürümünü belirtebilirsiniz [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] hedeflemek istediğiniz.  
   
--   Sürümünü değiştirebilirsiniz [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] varolan bir projenin hedefler.  
+- Sürümünü değiştirebilirsiniz [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] varolan bir projenin hedefler.  
   
--   Farklı bir sürümünü hedefleyebilirsiniz [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] aynı çözümdeki çeşitli projelerin her birinde içinde.  
+- Farklı bir sürümünü hedefleyebilirsiniz [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] aynı çözümdeki çeşitli projelerin her birinde içinde.  
   
--   Sürümünü değiştirdiğinizde [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , bir projenin hedeflediği [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] başvurular ve yapılandırma dosyalarında gerekli değişiklikleri yapar.  
+- Sürümünü değiştirdiğinizde [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , bir projenin hedeflediği [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] başvurular ve yapılandırma dosyalarında gerekli değişiklikleri yapar.  
   
- Önceki bir sürümünü hedefleyen bir proje üzerinde çalışırken [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], Visual Studio dinamik olarak geliştirme ortamını aşağıdaki gibi değişir:  
+  Önceki bir sürümünü hedefleyen bir proje üzerinde çalışırken [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], Visual Studio dinamik olarak geliştirme ortamını aşağıdaki gibi değişir:  
   
--   Öğelere **yeni proje** iletişim kutusu, **Yeni Öğe Ekle** iletişim kutusu, **Yeni Başvuru Ekle** iletişim kutusu ve **hizmetBaşvurusuEkle** hedef sürümde bulunmayan seçimleri atlamak için iletişim kutusu.  
+- Öğelere **yeni proje** iletişim kutusu, **Yeni Öğe Ekle** iletişim kutusu, **Yeni Başvuru Ekle** iletişim kutusu ve **hizmetBaşvurusuEkle** hedef sürümde bulunmayan seçimleri atlamak için iletişim kutusu.  
   
--   Özel denetimlerinde filtreler **araç kutusu** hedeflenen sürümde olmayanları kaldırın ve yalnızca göstermek için birden çok denetim uygun olduğunda en güncel kontrol eder.  
+- Özel denetimlerinde filtreler **araç kutusu** hedeflenen sürümde olmayanları kaldırın ve yalnızca göstermek için birden çok denetim uygun olduğunda en güncel kontrol eder.  
   
--   Bu, hedeflenen sürümde olmayan dil özelliklerini atlamak için Intellisense'e filtre uygular.  
+- Bu, hedeflenen sürümde olmayan dil özelliklerini atlamak için Intellisense'e filtre uygular.  
   
--   Özelliklere **özellikleri** hedeflenen sürümde olmayanları atlamak için penceresi.  
+- Özelliklere **özellikleri** hedeflenen sürümde olmayanları atlamak için penceresi.  
   
--   Bu, hedeflenen sürümde kullanılabilir olmayan seçenekleri atlamak için menü seçeneklerine filtre uygular.  
+- Bu, hedeflenen sürümde kullanılabilir olmayan seçenekleri atlamak için menü seçeneklerine filtre uygular.  
   
--   Derlemeler için derleyici ve derleyici seçenekleri hedeflenen sürüm için uygun sürümünü kullanır.  
+- Derlemeler için derleyici ve derleyici seçenekleri hedeflenen sürüm için uygun sürümünü kullanır.  
   
 > [!NOTE]
 >  Çerçeve hedefleme, uygulamanızın doğru şekilde çalışacağını garanti etmez. Hedeflenen sürümde çalışacağından çalıştığından emin olmak için uygulamanızı test etmeniz gerekir. .NET Framework 2. 0 ' daha eski framework sürümlerini hedefleyemezsiniz.  

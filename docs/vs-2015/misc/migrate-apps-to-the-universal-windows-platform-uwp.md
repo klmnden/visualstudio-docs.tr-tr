@@ -14,27 +14,27 @@ caps.latest.revision: 19
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: a23cdd24ad696795127a4469c447f12e9d191930
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d59ccac2ef8f91fae9bede5951ff42ec5a43be0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285954"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848559"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Uygulamaları Evrensel Windows Platformu’na (UWP) geçirme
 Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza Windows Store 8.1 uygulamaları, Windows Phone 8.1 uygulamaları ya da Visual Studio 2015 RC ile oluşturulmuş Evrensel Windows uygulamaları için gerekli el ile değişiklikleri yapın. (Windows 8.1 Evrensel uygulamasıyla bir Windows uygulaması projesi ve Windows Phone projesi varsa, her projeyi geçirmek için adımları izlemeniz gerekir.)  
   
  Evrensel Windows platformu ile uygulamanıza bir veya daha fazla cihaz aileleri hedefleyin. Evrensel Windows uygulamaları hakkında daha fazla bilgi istiyorsanız, bu göz atın [platform Kılavuzu](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx).  
   
--   [Mevcut C# /VB Windows Store 8.1 veya Windows Phone 8.1 uygulamalarınızın geçirme](#MigrateCSharp) Evrensel Windows platformu kullanılacak.  
+- [Mevcut C# /VB Windows Store 8.1 veya Windows Phone 8.1 uygulamalarınızın geçirme](#MigrateCSharp) Evrensel Windows platformu kullanılacak.  
   
--   [Var olan C++ Windows Store 8.1 veya Windows Phone 8.1 uygulamaları geçirme](#MigrateCPlusPlus) Evrensel Windows platformu kullanılacak.  
+- [Var olan C++ Windows Store 8.1 veya Windows Phone 8.1 uygulamaları geçirme](#MigrateCPlusPlus) Evrensel Windows platformu kullanılacak.  
   
--   [Visual Studio 2015 RC ile oluşturulmuş mevcut bir evrensel Windows uygulamaları için gerekli değişiklikleri](#PreviousVersions).  
+- [Visual Studio 2015 RC ile oluşturulmuş mevcut bir evrensel Windows uygulamaları için gerekli değişiklikleri](#PreviousVersions).  
   
--   [Mevcut Visual Studio 2015 RC ile oluşturulmuş Evrensel Windows uygulamaları için birim testi projeleri için gerekli değişiklikleri](#MigrateUnitTest).  
+- [Mevcut Visual Studio 2015 RC ile oluşturulmuş Evrensel Windows uygulamaları için birim testi projeleri için gerekli değişiklikleri](#MigrateUnitTest).  
   
- Bu değişiklikleri yapmak istemiyorsanız, bilgi nasıl [mevcut uygulamalarınızı bağlantı noktası](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) içine yeni bir evrensel Windows projesi.  
+  Bu değişiklikleri yapmak istemiyorsanız, bilgi nasıl [mevcut uygulamalarınızı bağlantı noktası](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) içine yeni bir evrensel Windows projesi.  
   
 ##  <a name="MigrateCSharp"></a> Evrensel Windows Platformu'nu kullanmak için C# /VB Windows Store 8.1 veya Windows Phone 8.1 uygulamaları geçirme  
   
@@ -333,121 +333,121 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
   
 #### <a name="update-your-package-manifest-file"></a>Paket bildirim dosyanızı güncelleştirin  
   
-1.  Package.appxmanifest dosyasını açın. Her biri, Windows Store ve Windows Phone projeleri için Package.AppxManifest dosyasını düzenlemeniz gerekebilir.  
+1. Package.appxmanifest dosyasını açın. Her biri, Windows Store ve Windows Phone projeleri için Package.AppxManifest dosyasını düzenlemeniz gerekebilir.  
   
-2.  Güncelleştirmeye gerek duyduğunuz \<paket > Yeni şemaları öğeyle mevcut proje türünüz temel. İlk Windows Store veya Windows Phone projesi olup olmadığına göre aşağıdaki şemaları kaldırın.  
+2. Güncelleştirmeye gerek duyduğunuz \<paket > Yeni şemaları öğeyle mevcut proje türünüz temel. İlk Windows Store veya Windows Phone projesi olup olmadığına göre aşağıdaki şemaları kaldırın.  
   
-     **Windows Store projesi için eski:** , \<paket > öğesi şuna benzer görünür.  
+    **Windows Store projesi için eski:** , \<paket > öğesi şuna benzer görünür.  
   
-    ```xml  
-    <Package  
-        xmlns="http://schemas.microsoft.com/appx/2010/manifest"     
-        xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">  
+   ```xml  
+   <Package  
+       xmlns="http://schemas.microsoft.com/appx/2010/manifest"     
+       xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">  
   
-    ```  
+   ```  
   
-     **Windows Phone projesi için eski:** , \<paket > öğesi şuna benzer görünür.  
+    **Windows Phone projesi için eski:** , \<paket > öğesi şuna benzer görünür.  
   
-    ```xml  
-    <Package  
-        xmlns="http://schemas.microsoft.com/appx/2010/manifest"     
-    xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest"  
-    xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest"  
-    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">  
-    ```  
+   ```xml  
+   <Package  
+       xmlns="http://schemas.microsoft.com/appx/2010/manifest"     
+   xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest"  
+   xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest"  
+   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">  
+   ```  
   
-     **Evrensel Windows platformu için yeni:** aşağıdaki şema eklemek, \<paket > öğesi. Tüm ilişkili ad alanı tanımlayıcısı ön ekleri için az önce kaldırdığınız şemaları öğeleri kaldırın. IgnorableNamespaces özelliğini güncelleştirin: uap mp. Yeni \<paket > öğesi şuna benzer görünmelidir.  
+    **Evrensel Windows platformu için yeni:** aşağıdaki şema eklemek, \<paket > öğesi. Tüm ilişkili ad alanı tanımlayıcısı ön ekleri için az önce kaldırdığınız şemaları öğeleri kaldırın. IgnorableNamespaces özelliğini güncelleştirin: uap mp. Yeni \<paket > öğesi şuna benzer görünmelidir.  
   
-    ```xml  
-    <Package  
-        xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"  
-        xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"  
-        xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"  
-       IgnorableNamespaces= "uap mp">  
+   ```xml  
+   <Package  
+       xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"  
+       xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"  
+       xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"  
+      IgnorableNamespaces= "uap mp">  
   
-    ```  
+   ```  
   
-3.  Ekleme bir \<bağımlılıkları > alt öğe \<paket > öğesi. Ardından Ekle bir \<TargetDeviceFamily > alt öğe bu \<bağımlılıkları > öğesi adı, MinVersion ve MaxVersionTested özniteliklere sahip. Ad özniteliği değeri vermek: Windows.Universal. MinVersion ve MaxVersionTested yüklediğiniz Evrensel Windows platformu sürümü değerini verin. Bu öğe, şuna benzer görünmelidir:  
+3. Ekleme bir \<bağımlılıkları > alt öğe \<paket > öğesi. Ardından Ekle bir \<TargetDeviceFamily > alt öğe bu \<bağımlılıkları > öğesi adı, MinVersion ve MaxVersionTested özniteliklere sahip. Ad özniteliği değeri vermek: Windows.Universal. MinVersion ve MaxVersionTested yüklediğiniz Evrensel Windows platformu sürümü değerini verin. Bu öğe, şuna benzer görünmelidir:  
   
-    ```xml  
-    <Dependencies>  
-    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10069.0" MaxVersionTested="10.0.10069.0" />  
-    </Dependencies>  
-    ```  
+   ```xml  
+   <Dependencies>  
+   <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10069.0" MaxVersionTested="10.0.10069.0" />  
+   </Dependencies>  
+   ```  
   
-4.  **Yalnızca Windows Store için:** eklemenize gerek bir \<mp:PhoneIdentity > alt öğe \<paket > öğesi. Bir PhoneProductId ve PhonePublisherId özniteliklerini ekleyin. Ad özniteliği ile aynı değere sahip PhoneProductId ayarlamak \<kimlik > öğesi. PhonePublishedId değerini şuna ayarlayın: 00000000-0000-0000-0000-000000000000. Böyle:  
+4. **Yalnızca Windows Store için:** eklemenize gerek bir \<mp:PhoneIdentity > alt öğe \<paket > öğesi. Bir PhoneProductId ve PhonePublisherId özniteliklerini ekleyin. Ad özniteliği ile aynı değere sahip PhoneProductId ayarlamak \<kimlik > öğesi. PhonePublishedId değerini şuna ayarlayın: 00000000-0000-0000-0000-000000000000. Böyle:  
   
-    ```xml  
-    <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />   
-    <mp:PhoneIdentity PhoneProductId="aa3815a1-2d97-4c71-8c99-578135b28cd8" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>  
-    ```  
+   ```xml  
+   <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />   
+   <mp:PhoneIdentity PhoneProductId="aa3815a1-2d97-4c71-8c99-578135b28cd8" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>  
+   ```  
   
-5.  Bulma \<önkoşulları > öğesi ve bu öğeyi ve bunun tüm alt öğeleri silin.  
+5. Bulma \<önkoşulları > öğesi ve bu öğeyi ve bunun tüm alt öğeleri silin.  
   
-6.  Ekleme **uap** ad alanına aşağıdaki \<kaynak > öğeleri: DXFeatureLevel, ölçeklendirin. Örneğin:  
+6. Ekleme **uap** ad alanına aşağıdaki \<kaynak > öğeleri: DXFeatureLevel, ölçeklendirin. Örneğin:  
   
-    ```xml  
-    <Resources>  
-      <Resource Language="en-us"/>  
-     <Resource uap:Scale="180"/>  
-     <Resource uap:DXFeatureLevel="dx11"/>  
-    </Resources>  
+   ```xml  
+   <Resources>  
+     <Resource Language="en-us"/>  
+    <Resource uap:Scale="180"/>  
+    <Resource uap:DXFeatureLevel="dx11"/>  
+   </Resources>  
   
-    ```  
+   ```  
   
-7.  Ekleme **uap** ad alanına aşağıdaki \<yeteneği > öğeleri: documentsLibrary, picturesLibrary, videosLibrary, musicLibrary, enterpriseAuthentication, sharedUserCertificates, removableStorage, randevular ve kişiler. Örneğin:  
+7. Ekleme **uap** ad alanına aşağıdaki \<yeteneği > öğeleri: documentsLibrary, picturesLibrary, videosLibrary, musicLibrary, enterpriseAuthentication, sharedUserCertificates, removableStorage, randevular ve kişiler. Örneğin:  
   
-    ```xml  
-    <Capabilities>  
-      <uap:Capability Name="documentsLibrary"/>  
-      <uap:Capability Name="removableStorage"/>  
-    </Capabilities>  
+   ```xml  
+   <Capabilities>  
+     <uap:Capability Name="documentsLibrary"/>  
+     <uap:Capability Name="removableStorage"/>  
+   </Capabilities>  
   
-    ```  
+   ```  
   
-8.  Ekleme **uap** ad alanına \<VisualElements > öğesi ve tüm alt öğeleri. Örneğin:  
+8. Ekleme **uap** ad alanına \<VisualElements > öğesi ve tüm alt öğeleri. Örneğin:  
   
-    ```xml  
-    <uap:VisualElements  
-        DisplayName="My WWA App"  
-        Square150x150Logo="images/150x150.png"  
-        Square44x44Logo="images/44x44.png"  
-        Description="My WWA App"  
-        BackgroundColor="#777777">  
-      <uap:SplashScreen Image="images/splash.png"/>  
-    </uap:VisualElements>  
+   ```xml  
+   <uap:VisualElements  
+       DisplayName="My WWA App"  
+       Square150x150Logo="images/150x150.png"  
+       Square44x44Logo="images/44x44.png"  
+       Description="My WWA App"  
+       BackgroundColor="#777777">  
+     <uap:SplashScreen Image="images/splash.png"/>  
+   </uap:VisualElements>  
   
-    ```  
+   ```  
   
-     **Yalnızca Windows Store için geçerlidir:** döşeme boyutu adları değiştirilmiştir. Öznitelikleri değiştirmek \<VisualElements > yakınsanmış kutucuk boyutlarından seçim yaparak yeni yansıtacak şekilde öğesi. 70 x 70 71 x 71 haline gelir ve 30 x 30 44 x 44 haline gelir.  
+    **Yalnızca Windows Store için geçerlidir:** döşeme boyutu adları değiştirilmiştir. Öznitelikleri değiştirmek \<VisualElements > yakınsanmış kutucuk boyutlarından seçim yaparak yeni yansıtacak şekilde öğesi. 70 x 70 71 x 71 haline gelir ve 30 x 30 44 x 44 haline gelir.  
   
-     **Eski:** döşeme boyutu adları  
+    **Eski:** döşeme boyutu adları  
   
-    ```xml  
-    <m2:VisualElements  
-        …  
-        Square30x30Logo="Assets\SmallLogo.png"  
-        …>  
-     <m2:DefaultTile  
-          …  
-          Square70x70Logo="images/70x70.png">  
-    </m2:VisualElements>  
+   ```xml  
+   <m2:VisualElements  
+       …  
+       Square30x30Logo="Assets\SmallLogo.png"  
+       …>  
+    <m2:DefaultTile  
+         …  
+         Square70x70Logo="images/70x70.png">  
+   </m2:VisualElements>  
   
-    ```  
+   ```  
   
-     **Yeni:** döşeme boyutu adları  
+    **Yeni:** döşeme boyutu adları  
   
-    ```xml  
-    <uap:VisualElements  
-        …  
-        Square44x44Logo="Assets\SmallLogo.png"  
-        …>  
-     <uap:DefaultTile  
-          …  
-          Square71x71Logo="images/70x70.png">  
-    </uap:VisualElements>  
+   ```xml  
+   <uap:VisualElements  
+       …  
+       Square44x44Logo="Assets\SmallLogo.png"  
+       …>  
+    <uap:DefaultTile  
+         …  
+         Square71x71Logo="images/70x70.png">  
+   </uap:VisualElements>  
   
-    ```  
+   ```  
   
 9. Ekleme **uap** ad alanına \<ApplicationContentUriRules > ve onun tüm alt öğeleri. Örneğin:  
   
@@ -563,28 +563,28 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
   
 15. Kullanım dışı öğeleri kaldırın.  
   
-    1.  Bu öznitelikler için \<VisualElements > kullanım dışı bırakılmıştır ve kaldırılması gerekiyor:  
+    1. Bu öznitelikler için \<VisualElements > kullanım dışı bırakılmıştır ve kaldırılması gerekiyor:  
   
-        -   \<VisualElements > öznitelikleri: ForegroundText, ToastCapable  
+       - \<VisualElements > öznitelikleri: ForegroundText, ToastCapable  
   
-        -   \<DefaultTile > DefaultSize özniteliği  
+       - \<DefaultTile > DefaultSize özniteliği  
   
-        -   \<ApplicationView > öğesi  
+       - \<ApplicationView > öğesi  
   
          Örneğin:  
   
-        ```xml  
-        <m2:VisualElements  
-            …  
-            ForegroundText="dark"  
-            ToastCapable="true">  
-        <m2:DefaultTile DefaultSize="square150x150Logo"/>  
-          <m2:ApplicationView MinWidth="width320"/>  
-        </m2:VisualElements>  
+       ```xml  
+       <m2:VisualElements  
+           …  
+           ForegroundText="dark"  
+           ToastCapable="true">  
+       <m2:DefaultTile DefaultSize="square150x150Logo"/>  
+         <m2:ApplicationView MinWidth="width320"/>  
+       </m2:VisualElements>  
   
-        ```  
+       ```  
   
-    2.  Windows.Contact ve windows.contactPicker uzantıları ve bu uzantıları altındaki tüm öğeleri kaldırın.  
+    2. Windows.Contact ve windows.contactPicker uzantıları ve bu uzantıları altındaki tüm öğeleri kaldırın.  
   
 16. Package.appxmanifest dosyasını kaydedin. Ardından Visual Studio'yu kapatın.  
   
@@ -618,113 +618,113 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
   
 ##### <a name="update-your-cvb-projects-to-use-the-latest-universal-windows-platform"></a>C# /VB projelerinizi en son Evrensel Windows Platformu'nu kullanmak için güncelleştirme  
   
-1.  Yüklediğiniz hangi Evrensel Windows platformu bulmak için şu dosyayı açın: **\Program dosyaları (x86) \Windows Kits\10\Platforms\UAP**. Bu, yüklü Evrensel her Windows platformu için klasörlerin listesini içerir. Klasör adı yüklemiş olduğunuz Evrensel Windows platformu sürümüdür. Örneğin, bu Windows 10 cihazına yüklü sürüm 10.0.10240.0 Evrensel Windows platformu vardır.  
+1. Yüklediğiniz hangi Evrensel Windows platformu bulmak için şu dosyayı açın: **\Program dosyaları (x86) \Windows Kits\10\Platforms\UAP**. Bu, yüklü Evrensel her Windows platformu için klasörlerin listesini içerir. Klasör adı yüklemiş olduğunuz Evrensel Windows platformu sürümüdür. Örneğin, bu Windows 10 cihazına yüklü sürüm 10.0.10240.0 Evrensel Windows platformu vardır.  
   
-     ![Yüklü sürüm görüntülemek için klasörü açın](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
+    ![Yüklü sürüm görüntülemek için klasörü açın](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
   
-     Evrensel Windows platformu birden çok sürümü yüklenebilir. Uygulamanız için en son sürümünü kullanmanızı öneririz.  
+    Evrensel Windows platformu birden çok sürümü yüklenebilir. Uygulamanız için en son sürümünü kullanmanızı öneririz.  
   
-2.  Dosya Gezgini'ni kullanarak UWP projenizin depolandığı klasöre gidin. Dosya packages.config silin ve bu klasöre yeni bir .json dosyası oluşturun. Dosya adı: project.json ve ardından bu dosyaya aşağıdaki içeriği ekleyin:  
+2. Dosya Gezgini'ni kullanarak UWP projenizin depolandığı klasöre gidin. Dosya packages.config silin ve bu klasöre yeni bir .json dosyası oluşturun. Dosya adı: project.json ve ardından bu dosyaya aşağıdaki içeriği ekleyin:  
   
-    ```json  
+   ```json  
   
-    {  
-      "dependencies": {  
-        "Microsoft.ApplicationInsights": "1.0.0",  
-        "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",  
-        "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",  
-        "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"  
-      },  
-      "frameworks": {  
-        "uap10.0": {}  
-      },  
-      "runtimes": {  
-        "win10-arm": {},  
-        "win10-arm-aot": {},  
-        "win10-x86": {},  
-        "win10-x86-aot": {},  
-        "win10-x64": {},  
-        "win10-x64-aot": {}  
-      }  
-    }  
+   {  
+     "dependencies": {  
+       "Microsoft.ApplicationInsights": "1.0.0",  
+       "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",  
+       "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",  
+       "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"  
+     },  
+     "frameworks": {  
+       "uap10.0": {}  
+     },  
+     "runtimes": {  
+       "win10-arm": {},  
+       "win10-arm-aot": {},  
+       "win10-x86": {},  
+       "win10-x86-aot": {},  
+       "win10-x64": {},  
+       "win10-x64-aot": {}  
+     }  
+   }  
   
-    ```  
+   ```  
   
-3.  Visual Studio ile C# /VB Evrensel Windows uygulamanızı içeren çözümünüzü açın. Proje dosyanız (.csproj veya .vbproj dosyası) güncelleştirilmesi gerektiğini görürsünüz. Proje dosyasını sağ tıklayın ve bu dosyayı düzenlemek seçin.  
+3. Visual Studio ile C# /VB Evrensel Windows uygulamanızı içeren çözümünüzü açın. Proje dosyanız (.csproj veya .vbproj dosyası) güncelleştirilmesi gerektiğini görürsünüz. Proje dosyasını sağ tıklayın ve bu dosyayı düzenlemek seçin.  
   
-     ![Projeye sağ tıklayın ve Düzen](../misc/media/uap-editproject.png "UAP_EditProject")  
+    ![Projeye sağ tıklayın ve Düzen](../misc/media/uap-editproject.png "UAP_EditProject")  
   
-4.  Bulma \<PropertyGroup > öğesini içeren \<TargetPlatformVersion > ve \<TargetPlatformMinVersion > öğeleri. Mevcut değiştirin \<TargetPlatformVersion > ve \<TargetPlatformMinVersion > yüklediğiniz Evrensel Windows platformu aynı sürümde olması için öğeleri.  
+4. Bulma \<PropertyGroup > öğesini içeren \<TargetPlatformVersion > ve \<TargetPlatformMinVersion > öğeleri. Mevcut değiştirin \<TargetPlatformVersion > ve \<TargetPlatformMinVersion > yüklediğiniz Evrensel Windows platformu aynı sürümde olması için öğeleri.  
   
-     Evrensel Windows uygulamaları için varsayılan varlık ölçek 200'dür. 100 ile ölçeği dahil Visual Studio 2015 RC varlıklar ile oluşturulan projeleri, ihtiyaç duyacağınız eklemek bir \<UapDefaultAssetScale > Bu PropertyGroup 100 değerini içeren öğe. Daha fazla bilgi edinin [varlıklar ve ölçekler](http://msdn.microsoft.com/library/jj679352.aspx).  
+    Evrensel Windows uygulamaları için varsayılan varlık ölçek 200'dür. 100 ile ölçeği dahil Visual Studio 2015 RC varlıklar ile oluşturulan projeleri, ihtiyaç duyacağınız eklemek bir \<UapDefaultAssetScale > Bu PropertyGroup 100 değerini içeren öğe. Daha fazla bilgi edinin [varlıklar ve ölçekler](http://msdn.microsoft.com/library/jj679352.aspx).  
   
-5.  UWP uzantı SDK'ları herhangi bir referansı eklediyseniz (örneğin: Windows Mobile SDK'sı), SDK sürümü güncelleştirmeniz gerekecektir. Örneğin bu \<SDKReference > öğesi:  
+5. UWP uzantı SDK'ları herhangi bir referansı eklediyseniz (örneğin: Windows Mobile SDK'sı), SDK sürümü güncelleştirmeniz gerekecektir. Örneğin bu \<SDKReference > öğesi:  
   
-    ```xml  
-    <SDKReference Include="WindowsMobile, Version=10.0.0.1">  
-          <Name>Microsoft Mobile Extension SDK for Universal App Platform</Name>  
-    </SDKReference>  
+   ```xml  
+   <SDKReference Include="WindowsMobile, Version=10.0.0.1">  
+         <Name>Microsoft Mobile Extension SDK for Universal App Platform</Name>  
+   </SDKReference>  
   
-    ```  
+   ```  
   
-     Bu değiştirilmelidir:  
+    Bu değiştirilmelidir:  
   
-    ```xml  
-    <SDKReference Include="WindowsMobile, Version=10.0.10240.0">  
-          <Name>Microsoft Mobile Extension SDK for Universal App Platform</Name>  
-    </SDKReference>  
+   ```xml  
+   <SDKReference Include="WindowsMobile, Version=10.0.10240.0">  
+         <Name>Microsoft Mobile Extension SDK for Universal App Platform</Name>  
+   </SDKReference>  
   
-    ```  
+   ```  
   
-6.  Bulma \<hedef > değeri olan bir ad özniteliği olan öğe: EnsureNuGetPackageBuildImports. Bu öğenin ve tüm alt öğelerini silin.  
+6. Bulma \<hedef > değeri olan bir ad özniteliği olan öğe: EnsureNuGetPackageBuildImports. Bu öğenin ve tüm alt öğelerini silin.  
   
-    ```xml  
-    <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">  
-        <PropertyGroup>  
-          <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>  
-        </PropertyGroup>  
-        <Error Condition="!Exists('..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets'))" />  
-        <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets'))" />  
-    </Target>  
-    ```  
+   ```xml  
+   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">  
+       <PropertyGroup>  
+         <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>  
+       </PropertyGroup>  
+       <Error Condition="!Exists('..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets'))" />  
+       <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets'))" />  
+   </Target>  
+   ```  
   
-7.  Bulup silmesine \<alma > öğeleri proje ve koşul öznitelikleriyle gt;Microsoft.Diagnostics.tracing.EventSource ve Microsoft.applicationınsights, başvuru şöyle:  
+7. Bulup silmesine \<alma > öğeleri proje ve koşul öznitelikleriyle gt;Microsoft.Diagnostics.tracing.EventSource ve Microsoft.applicationınsights, başvuru şöyle:  
   
-    ```xml  
-    <Import Project="..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets" Condition="Exists('..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets')" />  
-    <Import Project="..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets')" />  
+   ```xml  
+   <Import Project="..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets" Condition="Exists('..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets')" />  
+   <Import Project="..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets')" />  
   
-    ```  
+   ```  
   
-8.  Bulma \<ItemGroup > olan \<başvuru > NuGet paketlerine alt öğeleri. Bir sonraki adım için bu bilgiler gerekeceğinden, başvurulan, NuGet paketlerini not alın. Bir Windows 10 proje biçimi Visual Studio 2015 RC ve Visual Studio 2015 RTM arasında arasında önemli bir fark RTM biçimini kullandığını [NuGet](http://docs.nuget.org/) sürüm 3.  
+8. Bulma \<ItemGroup > olan \<başvuru > NuGet paketlerine alt öğeleri. Bir sonraki adım için bu bilgiler gerekeceğinden, başvurulan, NuGet paketlerini not alın. Bir Windows 10 proje biçimi Visual Studio 2015 RC ve Visual Studio 2015 RTM arasında arasında önemli bir fark RTM biçimini kullandığını [NuGet](http://docs.nuget.org/) sürüm 3.  
   
-     Kaldırma \<ItemGroup > ve tüm alt öğeleri. Örneğin, Visual Studio RC ile oluşturulmuş bir UWP projesi kaldırılması gereken aşağıdaki NuGet paketlerini olacaktır:  
+    Kaldırma \<ItemGroup > ve tüm alt öğeleri. Örneğin, Visual Studio RC ile oluşturulmuş bir UWP projesi kaldırılması gereken aşağıdaki NuGet paketlerini olacaktır:  
   
-    ```xml  
-    <ItemGroup>  
-        <Reference Include="Microsoft.ApplicationInsights, Version=0.14.3.177, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
-          <HintPath>..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll</HintPath>  
-          <Private>True</Private>  
-        </Reference>  
-        <Reference Include="Microsoft.ApplicationInsights.Extensibility.Windows, Version=0.14.3.177, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
-          <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsApps.0.14.3-build00177\lib\win81\Microsoft.ApplicationInsights.Extensibility.Windows.dll</HintPath>  
-          <Private>True</Private>  
-        </Reference>  
-        <Reference Include="Microsoft.ApplicationInsights.PersistenceChannel, Version=0.14.3.186, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
-          <HintPath>..\packages\Microsoft.ApplicationInsights.PersistenceChannel.0.14.3-build00177\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.PersistenceChannel.dll</HintPath>  
-          <Private>True</Private>  
-        </Reference>  
-        <Reference Include="System.Numerics.Vectors, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">  
-          <HintPath>..\packages\System.Numerics.Vectors.4.0.0\lib\win8\System.Numerics.Vectors.dll</HintPath>  
-          <Private>True</Private>  
-        </Reference>  
-        <Reference Include="System.Numerics.Vectors.WindowsRuntime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">  
-          <HintPath>..\packages\System.Numerics.Vectors.4.0.0\lib\win8\System.Numerics.Vectors.WindowsRuntime.dll</HintPath>  
-          <Private>True</Private>  
-        </Reference>  
-      </ItemGroup>  
+   ```xml  
+   <ItemGroup>  
+       <Reference Include="Microsoft.ApplicationInsights, Version=0.14.3.177, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
+         <HintPath>..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll</HintPath>  
+         <Private>True</Private>  
+       </Reference>  
+       <Reference Include="Microsoft.ApplicationInsights.Extensibility.Windows, Version=0.14.3.177, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
+         <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsApps.0.14.3-build00177\lib\win81\Microsoft.ApplicationInsights.Extensibility.Windows.dll</HintPath>  
+         <Private>True</Private>  
+       </Reference>  
+       <Reference Include="Microsoft.ApplicationInsights.PersistenceChannel, Version=0.14.3.186, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
+         <HintPath>..\packages\Microsoft.ApplicationInsights.PersistenceChannel.0.14.3-build00177\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.PersistenceChannel.dll</HintPath>  
+         <Private>True</Private>  
+       </Reference>  
+       <Reference Include="System.Numerics.Vectors, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">  
+         <HintPath>..\packages\System.Numerics.Vectors.4.0.0\lib\win8\System.Numerics.Vectors.dll</HintPath>  
+         <Private>True</Private>  
+       </Reference>  
+       <Reference Include="System.Numerics.Vectors.WindowsRuntime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">  
+         <HintPath>..\packages\System.Numerics.Vectors.4.0.0\lib\win8\System.Numerics.Vectors.WindowsRuntime.dll</HintPath>  
+         <Private>True</Private>  
+       </Reference>  
+     </ItemGroup>  
   
-    ```  
+   ```  
   
 9. Bulma \<ItemGroup > öğesini içeren bir \<AppxManifest > öğesi. Varsa bir \<yok > kümesine bir dahil etme özniteliği olan öğe: packages.config, silin. Ayrıca, bir \<yok > öğesi ile bir dahil etme özniteliği ve değerini ayarlamak: project.json.  
   
@@ -746,9 +746,9 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
   
 14. Önceki adımda sildiğiniz paketleri eklemek için NuGet Yöneticisi'ni kullanın. Bir Windows 10 proje biçimi Visual Studio 2015 RC ve Visual Studio 2015 RTM arasında arasında önemli bir fark RTM biçimini kullandığını [NuGet](http://docs.nuget.org/) sürüm 3.  
   
- Artık, kod, derleme ve uygulamanızda hata ayıklama.  
+    Artık, kod, derleme ve uygulamanızda hata ayıklama.  
   
- Evrensel Windows uygulamaları için birim testi projelerini varsa, ayrıca izlemeniz gereken [adımları](#MigrateUnitTest).  
+    Evrensel Windows uygulamaları için birim testi projelerini varsa, ayrıca izlemeniz gereken [adımları](#MigrateUnitTest).  
   
 ###  <a name="RCUpdate10CPlusPlus"></a> C++ projelerinizin en yeni evrensel Windows platformu Kullan'ı güncelleştirme  
   
@@ -826,176 +826,176 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
   
 ###  <a name="UnitTestRCUpdate10CSharp"></a> C# /VB birim testi projelerini güncelleştirme  
   
-1.  Visual Studio ile C# /VB birim testi projesi içeren çözümünüzü açın. Değiştirin \<OuttputType > öğesine: AppContainerExe.  
+1. Visual Studio ile C# /VB birim testi projesi içeren çözümünüzü açın. Değiştirin \<OuttputType > öğesine: AppContainerExe.  
   
-    ```xml  
+   ```xml  
   
-    <OutputType>AppContainerExe</OutputType>  
+   <OutputType>AppContainerExe</OutputType>  
   
-    ```  
+   ```  
   
-2.  Bu öğeyi değiştirin \<EnableCoreRuntime > false\</EnableCoreRuntime > öğesi ile:  
+2. Bu öğeyi değiştirin \<EnableCoreRuntime > false\</EnableCoreRuntime > öğesi ile:  
   
-    ```xml  
+   ```xml  
   
-    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>  
+   <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>  
   
-    ```  
+   ```  
   
-3.  Aşağıdaki satırları kaldırın:  
+3. Aşağıdaki satırları kaldırın:  
   
-    ```xml  
+   ```xml  
   
-    <PropertyGroup>  
-        <AppXPackage>True</AppXPackage>  
-        <AppxPackageIncludePrivateSymbols>true</AppxPackageIncludePrivateSymbols>  
-     </PropertyGroup>  
-     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">  
-     <PlatformTarget>AnyCPU</PlatformTarget>  
-     <DebugSymbols>true</DebugSymbols>  
-     <DebugType>full</DebugType>  
-     <Optimize>false</Optimize>  
-     <OutputPath>bin\Debug\</OutputPath>  
-     <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>  
-     <ErrorReport>prompt</ErrorReport>  
-     <WarningLevel>4</WarningLevel>  
-     </PropertyGroup>  
-     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">  
-        <PlatformTarget>AnyCPU</PlatformTarget>  
-        <DebugType>pdbonly</DebugType>  
-        <Optimize>true</Optimize>  
-        <OutputPath>bin\Release\</OutputPath>  
-        <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>  
-        <ErrorReport>prompt</ErrorReport>  
-        <WarningLevel>4</WarningLevel>  
-     </PropertyGroup>  
+   <PropertyGroup>  
+       <AppXPackage>True</AppXPackage>  
+       <AppxPackageIncludePrivateSymbols>true</AppxPackageIncludePrivateSymbols>  
+    </PropertyGroup>  
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">  
+    <PlatformTarget>AnyCPU</PlatformTarget>  
+    <DebugSymbols>true</DebugSymbols>  
+    <DebugType>full</DebugType>  
+    <Optimize>false</Optimize>  
+    <OutputPath>bin\Debug\</OutputPath>  
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>  
+    <ErrorReport>prompt</ErrorReport>  
+    <WarningLevel>4</WarningLevel>  
+    </PropertyGroup>  
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">  
+       <PlatformTarget>AnyCPU</PlatformTarget>  
+       <DebugType>pdbonly</DebugType>  
+       <Optimize>true</Optimize>  
+       <OutputPath>bin\Release\</OutputPath>  
+       <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>  
+       <ErrorReport>prompt</ErrorReport>  
+       <WarningLevel>4</WarningLevel>  
+    </PropertyGroup>  
   
-    ```  
+   ```  
   
-4.  Bu öğe ekleme \<UseDotNetNativeToolchain > true\</UseDotNetNativeToolchain > Bu özelliği gruplara bir alt öğesi olarak:  
+4. Bu öğe ekleme \<UseDotNetNativeToolchain > true\</UseDotNetNativeToolchain > Bu özelliği gruplara bir alt öğesi olarak:  
   
-    ```xml  
+   ```xml  
   
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">  
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|X86'">  
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|X64'">  
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">  
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|X86'">  
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|X64'">  
   
-    ```  
+   ```  
   
-5.  Aşağıdaki Sil \<ItemGroup > öğeleri:  
+5. Aşağıdaki Sil \<ItemGroup > öğeleri:  
   
-    ```xml  
+   ```xml  
   
-    <ItemGroup>  
-       <Compile Include="Properties\AssemblyInfo.cs" />  
-       <Compile Include="UnitTest.cs" />  
-    </ItemGroup>  
-    <ItemGroup>  
-       <AppxManifest Include="Package.appxmanifest">  
-          <SubType>Designer</SubType>  
-       </AppxManifest>  
-       <None Include="packages.config" />  
-       <None Include="UnitTestProject1_TemporaryKey.pfx" />  
-    </ItemGroup>  
-    <ItemGroup>  
-       <Content Include="Properties\Default.rd.xml" />  
-       <Content Include="Assets\Logo.scale-240.png" />  
-       <Content Include="Assets\SmallLogo.scale-240.png" />  
-       <Content Include="Assets\SplashScreen.scale-240.png" />  
-       <Content Include="Assets\Square71x71Logo.scale-240.png" />  
-       <Content Include="Assets\StoreLogo.scale-240.png" />  
-       <Content Include="Assets\WideLogo.scale-240.png" />  
-    </ItemGroup>  
+   <ItemGroup>  
+      <Compile Include="Properties\AssemblyInfo.cs" />  
+      <Compile Include="UnitTest.cs" />  
+   </ItemGroup>  
+   <ItemGroup>  
+      <AppxManifest Include="Package.appxmanifest">  
+         <SubType>Designer</SubType>  
+      </AppxManifest>  
+      <None Include="packages.config" />  
+      <None Include="UnitTestProject1_TemporaryKey.pfx" />  
+   </ItemGroup>  
+   <ItemGroup>  
+      <Content Include="Properties\Default.rd.xml" />  
+      <Content Include="Assets\Logo.scale-240.png" />  
+      <Content Include="Assets\SmallLogo.scale-240.png" />  
+      <Content Include="Assets\SplashScreen.scale-240.png" />  
+      <Content Include="Assets\Square71x71Logo.scale-240.png" />  
+      <Content Include="Assets\StoreLogo.scale-240.png" />  
+      <Content Include="Assets\WideLogo.scale-240.png" />  
+   </ItemGroup>  
   
-    ```  
+   ```  
   
-     Bunları, bu öğeleri ile değiştirin:  
+    Bunları, bu öğeleri ile değiştirin:  
   
-    ```xml  
+   ```xml  
   
-    <ItemGroup>  
-       <Compile Include="Properties\AssemblyInfo.cs" />  
-       <Compile Include="UnitTestApp.xaml.cs">  
-          <DependentUpon>UnitTestApp.xaml</DependentUpon>  
-       </Compile>  
-       <Compile Include="UnitTest.cs" />  
-    </ItemGroup>  
-    <ItemGroup>  
-       <ApplicationDefinition Include="UnitTestApp.xaml">  
-          <Generator>MSBuild:Compile</Generator>  
-          <SubType>Designer</SubType>  
-       </ApplicationDefinition>  
-    </ItemGroup>  
-    <ItemGroup>  
-       <AppxManifest Include="Package.appxmanifest">  
-          <SubType>Designer</SubType>  
-       </AppxManifest>  
-       <None Include="UnitTestProject1_TemporaryKey.pfx" />  
-    </ItemGroup>  
-    <ItemGroup>  
-       <Content Include="Properties\UnitTestApp.rd.xml" />  
-       <Content Include="Assets\LockScreenLogo.scale-200.png" />  
-       <Content Include="Assets\SplashScreen.scale-200.png" />  
-       <Content Include="Assets\Square150x150Logo.scale-200.png" />  
-       <Content Include="Assets\Square44x44Logo.scale-200.png" />  
-       <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />  
-       <Content Include="Assets\StoreLogo.png" />  
-       <Content Include="Assets\Wide310x150Logo.scale-200.png" />  
-    </ItemGroup>  
-    ```  
+   <ItemGroup>  
+      <Compile Include="Properties\AssemblyInfo.cs" />  
+      <Compile Include="UnitTestApp.xaml.cs">  
+         <DependentUpon>UnitTestApp.xaml</DependentUpon>  
+      </Compile>  
+      <Compile Include="UnitTest.cs" />  
+   </ItemGroup>  
+   <ItemGroup>  
+      <ApplicationDefinition Include="UnitTestApp.xaml">  
+         <Generator>MSBuild:Compile</Generator>  
+         <SubType>Designer</SubType>  
+      </ApplicationDefinition>  
+   </ItemGroup>  
+   <ItemGroup>  
+      <AppxManifest Include="Package.appxmanifest">  
+         <SubType>Designer</SubType>  
+      </AppxManifest>  
+      <None Include="UnitTestProject1_TemporaryKey.pfx" />  
+   </ItemGroup>  
+   <ItemGroup>  
+      <Content Include="Properties\UnitTestApp.rd.xml" />  
+      <Content Include="Assets\LockScreenLogo.scale-200.png" />  
+      <Content Include="Assets\SplashScreen.scale-200.png" />  
+      <Content Include="Assets\Square150x150Logo.scale-200.png" />  
+      <Content Include="Assets\Square44x44Logo.scale-200.png" />  
+      <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />  
+      <Content Include="Assets\StoreLogo.png" />  
+      <Content Include="Assets\Wide310x150Logo.scale-200.png" />  
+   </ItemGroup>  
+   ```  
   
-6.  Yeni bir birim testi projesi oluşturun ve UnitTestApp.xaml ve UnitTestApp.xaml.cs dosyaları bu yeni proje oluştur güncelleştirmekte olduğunuz mevcut birim test projenize kopyalayın.  
+6. Yeni bir birim testi projesi oluşturun ve UnitTestApp.xaml ve UnitTestApp.xaml.cs dosyaları bu yeni proje oluştur güncelleştirmekte olduğunuz mevcut birim test projenize kopyalayın.  
   
-7.  UnitTestApp.rd.xml dosyayı yeni birim testi projesinin özellikleri klasöründen güncelleştirmekte olduğunuz mevcut birim testi projesi özellikleri klasörüne kopyalayın.  
+7. UnitTestApp.rd.xml dosyayı yeni birim testi projesinin özellikleri klasöründen güncelleştirmekte olduğunuz mevcut birim testi projesi özellikleri klasörüne kopyalayın.  
   
-8.  Package.appxmanifest dosyasını açın. Ardından bu öğeleri, ondan silin:  
+8. Package.appxmanifest dosyasını açın. Ardından bu öğeleri, ondan silin:  
   
-    ```xml  
+   ```xml  
   
-    <Applications>  
-       <Application Id="vstest.executionengine.universal.App"  
-             Executable="vstest.executionengine.appcontainer.uap.exe"  
-             EntryPoint="Microsoft.VisualStudio.TestPlatform.TestExecutor.AppContainer.App">  
-          <uap:VisualElements  
-             DisplayName="UnitTestProject1"  
-             Square150x150Logo="Assets\Logo.png"  
-             Square44x44Logo="Assets\SmallLogo.png"  
-             Description="UnitTestProject1"  
-             BackgroundColor="#464646">  
-             <uap:SplashScreen Image="Assets\SplashScreen.png" />  
-          </uap:VisualElements>  
-       </Application>  
-    </Applications>  
-    <Capabilities>  
-       <Capability Name="internetClientServer" />  
-    </Capabilities>  
-    ```  
+   <Applications>  
+      <Application Id="vstest.executionengine.universal.App"  
+            Executable="vstest.executionengine.appcontainer.uap.exe"  
+            EntryPoint="Microsoft.VisualStudio.TestPlatform.TestExecutor.AppContainer.App">  
+         <uap:VisualElements  
+            DisplayName="UnitTestProject1"  
+            Square150x150Logo="Assets\Logo.png"  
+            Square44x44Logo="Assets\SmallLogo.png"  
+            Description="UnitTestProject1"  
+            BackgroundColor="#464646">  
+            <uap:SplashScreen Image="Assets\SplashScreen.png" />  
+         </uap:VisualElements>  
+      </Application>  
+   </Applications>  
+   <Capabilities>  
+      <Capability Name="internetClientServer" />  
+   </Capabilities>  
+   ```  
   
-     Bu silinen öğeleri aşağıdaki öğeleri ile değiştirin. Aşağıdaki öğeleri UnitTestProject1 yerine projenizin adına dayanarak ProjectName için uygun değeri kullanın:  
+    Bu silinen öğeleri aşağıdaki öğeleri ile değiştirin. Aşağıdaki öğeleri UnitTestProject1 yerine projenizin adına dayanarak ProjectName için uygun değeri kullanın:  
   
-    ```xml  
+   ```xml  
   
-    <Applications>  
-       <Application Id="vstest.executionengine.universal.App"   
-             Executable="$targetnametoken$.exe"  
-             EntryPoint="UnitTestProject1.App">  
-          <uap:VisualElements  
-                DisplayName="UnitTestProject1"  
-                Square150x150Logo="Assets\Square150x150Logo.png"  
-                Square44x44Logo="Assets\Square44x44Logo.png"  
-                Description="UnitTestProject1"  
-                BackgroundColor="transparent">  
-             <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>  
-             <uap:SplashScreen Image="Assets\SplashScreen.png" />  
-          </uap:VisualElements>  
-       </Application>  
-    </Applications>  
-    <Capabilities>  
-       <Capability Name="internetClient" />  
-    </Capabilities>  
-    ```  
+   <Applications>  
+      <Application Id="vstest.executionengine.universal.App"   
+            Executable="$targetnametoken$.exe"  
+            EntryPoint="UnitTestProject1.App">  
+         <uap:VisualElements  
+               DisplayName="UnitTestProject1"  
+               Square150x150Logo="Assets\Square150x150Logo.png"  
+               Square44x44Logo="Assets\Square44x44Logo.png"  
+               Description="UnitTestProject1"  
+               BackgroundColor="transparent">  
+            <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>  
+            <uap:SplashScreen Image="Assets\SplashScreen.png" />  
+         </uap:VisualElements>  
+      </Application>  
+   </Applications>  
+   <Capabilities>  
+      <Capability Name="internetClient" />  
+   </Capabilities>  
+   ```  
   
- Artık, birim testleri çalıştırabilirsiniz.  
+   Artık, birim testleri çalıştırabilirsiniz.  
   
 ###  <a name="UnitTestRCUpdate10CPlusPlus"></a> C++ projelerinizin en yeni evrensel Windows platformu Kullan'ı güncelleştirme  
   

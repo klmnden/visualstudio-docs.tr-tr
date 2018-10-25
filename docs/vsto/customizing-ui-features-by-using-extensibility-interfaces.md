@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 15d666ed4e2896a1645f1f47a5a310dc3151309f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6a18ad30fac44028f4eda89da72babeb36ffe24a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677195"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873980"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Genişletilebilirlik arabirimlerini kullanarak kullanıcı Arabirimi özelliklerini özelleştirme
   Visual Studio'da Office geliştirme araçları, sınıflar ve VSTO eklentisi içinde özel görev bölmeleri, Şerit özelleştirmeleri ve Outlook form bölgeleri oluşturma kullanıldıklarında birçok uygulama ayrıntıları işleyen tasarımcılar sağlar. Ancak, aynı zamanda uygulayabileceğiniz *genişletilebilirlik arabirimi* her özel gereksinimleriniz varsa, kendiniz özelliği.  
@@ -61,17 +61,17 @@ ms.locfileid: "35677195"
 ### <a name="example-of-implementing-an-extensibility-interface"></a>Genişletilebilirlik arabirimi uygulama örneği  
  Aşağıdaki kod örneği basit bir uygulamasını gösterir <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> özel görev bölmesi oluşturmak için arabirim. Bu örnek, iki sınıf tanımlar:  
   
--   `TaskPaneHelper` Sınıfının Implements <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> oluşturmak ve bir özel görev bölmesini görüntülemek için.  
+- `TaskPaneHelper` Sınıfının Implements <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> oluşturmak ve bir özel görev bölmesini görüntülemek için.  
   
--   `TaskPaneUI` Sınıfı görev bölmesinin kullanıcı Arabirimi sağlar. Özniteliklerini `TaskPaneUI` sınıfı sınıfı sınıfı bulmak Microsoft Office uygulamaları sağlayan COM görünür hale. Bu örnekte, boş bir kullanıcı Arabirimi olan <xref:System.Windows.Forms.UserControl>, ancak kodu değiştirerek denetimler ekleyebilirsiniz.  
+- `TaskPaneUI` Sınıfı görev bölmesinin kullanıcı Arabirimi sağlar. Özniteliklerini `TaskPaneUI` sınıfı sınıfı sınıfı bulmak Microsoft Office uygulamaları sağlayan COM görünür hale. Bu örnekte, boş bir kullanıcı Arabirimi olan <xref:System.Windows.Forms.UserControl>, ancak kodu değiştirerek denetimler ekleyebilirsiniz.  
   
-    > [!NOTE]  
-    >  Kullanıma sunmak için `TaskPaneUI` sınıfı, COM de ayarlamanız gerekir **kaydetme COM birlikte çalışması için** proje özelliği.  
+  > [!NOTE]  
+  >  Kullanıma sunmak için `TaskPaneUI` sınıfı, COM de ayarlamanız gerekir **kaydetme COM birlikte çalışması için** proje özelliği.  
   
- [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
- [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
+  [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
+  [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
   
- Uygulama hakkında daha fazla bilgi için <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, bkz: [2007 Office sistemi içinde özel görev bölmeleri oluşturma](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) Microsoft Office belgelerinde.  
+  Uygulama hakkında daha fazla bilgi için <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, bkz: [2007 Office sistemi içinde özel görev bölmeleri oluşturma](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) Microsoft Office belgelerinde.  
   
 ### <a name="example-of-overriding-the-requestservice-method"></a>Örnek RequestService yöntemini geçersiz kılma  
  Aşağıdaki kod örneğinde nasıl geçersiz kılınacağını gösterir <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> örneği döndürülecek yöntemi `TaskPaneHelper` önceki kod örneğinde bir sınıftan. Değerini denetler *serviceGuid* hangi arabirim istenen ve ardından bu arabirimi uygulayan bir nesne döndürür belirlemek için parametre.  

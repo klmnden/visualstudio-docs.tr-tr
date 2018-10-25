@@ -1,5 +1,5 @@
 ---
-title: İş Akışı Tasarımcısı - iş akışı Tasarımcısı'nda klavye kısayolları
+title: İş Akışı Tasarımcısı - iş akışı tasarımcısında klavye kısayolları
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,74 +12,74 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76f7e2f94f358fda50ca1fbb377ce9694b98b487
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: e4040a5b370674e7794b09e4d1cae68f424c7792
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756600"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887377"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>İş Akışı Tasarımcısında Klavye Kısayolları
 
-Tüm iş akışı Tasarımcısı'nın çekirdek işlevselliğini klavye kullanılarak erişilebilir.
+İş Akışı Tasarımcısı'nın temel işlevleri klavye tarafından erişilebilir.
 
 ## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>Klavyeyi kullanarak iş akışı Tasarımcısı gezinme
 
-Visual Studio içinde genel kısayolları ve hata ayıklama kısayolları iş akışı Tasarımcısı için geçerlidir. Ayrıca, iş akışı Tasarımcısı belirli klavye kısayollarını sayısı oluşturuldu. Visual Studio'da tüm klavye kısayollarını açmayla. Ancak, bir rehosted uygulamasında bu klavye kısayolları sabit kodlanmış değildir.
+Visual Studio içinde iş akışı Tasarımcısı için genel kısayolları ve hata ayıklama kısayollar geçerlidir. Ayrıca, birkaç iş akışı Tasarımcısı özel klavye kısayollarını oluşturulmadı. Visual Studio'da tüm klavye kısayollarını yeniden. Ancak, yeniden barındırılan bir uygulamada şu klavye kısayollarını sabittir.
 
 ### <a name="workflow-designer-keyboard-shortcuts"></a>İş Akışı Tasarımcısı klavye kısayolları
 
-İş Akışı Tasarımcısı komutları atanmış varsayılan klavye kısayolları aşağıdaki tabloda özetlenmiştir.
+İş Akışı Tasarımcısı komutlara atanmış varsayılan klavye kısayolları aşağıdaki tabloda özetlenmiştir.
 
 |Kısayol|Amaç|
-|--------------|-------------|
-|CTRL + E, A|Gösterir veya bağımsız değişkeni Tasarımcısı gizler.|
+|-|-------------|
+|CTRL + E, A|Bağımsız değişken tasarımcısını gizler veya gösterir.|
 |CTRL+E, C|Seçili etkinlik yerinde daraltır.|
 |CTRL + E, E|Seçili etkinlik yerinde genişletir.|
-|CTRL + E, F|Bir akış çizelgesi seçili etkinlikler bağlanır.|
-|CTRL + E, T|Gösterir veya içeri aktarmalar Tasarımcısı gizler.|
+|CTRL + E, F|Bir akış grafiğindeki seçili etkinlikler bağlanır.|
+|CTRL + E, I|İçe Aktarılanlar tasarımcısını gizler veya gösterir.|
 |CTRL + E, M|Klavye odağını sekme sırasında bir sonraki öğeye taşır.|
 |CTRL+E, N|Seçili etkinlik (veya en yakın) kapsamında yeni bir değişken oluşturur.|
-|CTRL + E, O|Gösterir veya gizler Genel İnceleme haritası.|
-|CTRL + E, P|Seçili etkinlik üst öğeye gider. Bu içerik haritası Gezinti bir düzey yukarı gider ve tasarımcı yüzeyine kök faaliyete değiştirir.|
-|CTRL + E, S|Öğe klavye odağını ile geçerli seçime ekler.|
-|CTRL+E, V|Gösterir veya değişken Tasarımcısı gizler.|
+|CTRL + E, O|Genel Bakış haritasını gizler veya gösterir.|
+|CTRL + E, P|Seçilen etkinliğin üst gider. Bu içerik haritası gezintisini bir düzey yukarı gider ve tasarımcı yüzeyinde Kök etkinlik değiştirir.|
+|CTRL + E, S|Klavye odağı sahip öğe geçerli seçime ekler.|
+|CTRL+E, V|Değişken tasarımcısını gizler veya gösterir.|
 |CTRL+E, X|İş akışındaki tüm etkinlikler genişletir.|
-|CTRL+ALT+F6|Klavye odağı geçerli kullanıcı Arabirimi alanından dizisi sonraki alanına taşır. Sipariş aşağıdaki gibidir:<br /><br /> 1.  İçerik haritası gezinti çubuğu.<br />2.  Tasarımcı yüzeyine<br />3.  Bağımsız değişkenler/değişkenleri/Imports Tasarımcısı açıksa<br />4.  Kabuk|
+|CTRL+ALT+F6|Klavye odağı geçerli kullanıcı Arabirimi alanından dizideki sonraki alanına taşır. Sırayla aşağıdaki gibidir:<br /><br /> 1.  İçerik haritası gezinme çubuğu.<br />2.  Tasarımcı yüzeyi<br />3.  Bağımsız değişkenler/değişkenler/içe Aktarılanlar tasarımcısını açıksa<br />4.  Kabuk|
 
 ### <a name="flowchart"></a>Akış Çizelgesi
 
-Aşağıdaki liste bir akış çizelgesi oluşturmak için klavye tarafından kullanılan hareketlerini gösterir. İş Akışı Tasarımcısı rest olduğu gibi etkinlikler Visual Studio ile sağlanan genel araç kısayolları kullanılarak Tasarımcı yüzeyine eklenir.
+Aşağıdaki liste, bir akış oluşturmak için klavye tarafından kullanılan hareketlerini gösterir. İş Akışı Tasarımcısı geri kalan olduğu gibi etkinlikleri, Visual Studio ile sağlanan genel araç kısayolları kullanılarak tasarımcısının yüzeyine eklenir.
 
-- Bir etkinlik taşımak için etkinliği seçin ve onu yeniden konumlandırmak için ok tuşlarını kullanın.
+- Bir etkinlik taşımak için etkinliği seçin ve bunu yeniden konumlandırmak için ok tuşlarını kullanın.
 
-- Bir akış çizelgesi yeniden boyutlandırmak için ok tuşlarını kullanarak akış geçerli kenarlığının geçmiş bir etkinlik taşıyın. Akış Çizelgesi otomatik olarak yeniden boyutlandırılır.
+- Bir akış yeniden boyutlandırmak için ok tuşlarını kullanarak akış geçerli kenarlığını geçmiş etkinlik taşıyın. Akış otomatik olarak yeniden boyutlandırılır.
 
-- Bir etkinlik başlangıç düğümü olarak ayarlamak için kullanın **BaşlangıçDüğümü ayarlamak** bağlam menüsünden komutu.
+- Etkinlik Başlangıç düğümü olarak ayarlamak için kullanın **BaşlangıçDüğümü ayarlamak** bağlam menüsündeki komutu.
 
-- Etkinlikler bağlanmak için:
+- Etkinlikleri bağlanmak için:
 
     1.  Kaynak etkinliği için etkinlik sekmelerle seçin.
 
-    2.  CTRL + E, klavye odağı hedef etkinliğe taşımak için gereken sayıda tekrar M tuşuna basın.
+    2.  CTRL + E, hedef etkinliğe klavye odağı taşımak için gerekli sayıda M tuşuna basın.
 
     3.  CTRL + E, seçime hedef etkinlik eklemek için S tuşuna basın.
 
-    4.  CTRL + E, bağlayıcı kaynaktan hedefe eklemek için F tuşlarına basın.
+    4.  CTRL + E, bağlayıcı kaynaktan hedefe eklemek için F tuşuna basın.
 
-Etkinlikler tarafından klavye bağlanma hakkında notlar:
+Etkinlikleri tarafından klavye bağlama hakkında notlar:
 
-- CTRL + E, f basmadan seçimi için daha fazla etkinlikler ekleyerek aynı anda birden çok bağlantı yapabilirsiniz Bağlantılar etkinlikleri seçimi eklenen sırada yapılır.
+- CTRL + E, f tuşuna basarak önce seçime daha fazla etkinlikler ekleyerek aynı anda birden çok bağlantı yapabilirsiniz Bağlantılar, etkinlikleri seçimi eklendiğini sırada yapılır.
 
-- Kaynak etkinliği giden bir bağlantı zaten varsa, örneğin etkinlikleri çifti bağlanamaz seçimdeki etkinlikler arasında diğer bağlantılar hala mümkün hale getirilir.
+- Kaynak etkinliği giden bir bağlantı zaten varsa, örneğin bir çift etkinlikleri bağlanamaz, seçimdeki etkinlikler arasında diğer bağlantılar hala mümkün olduğunca yapılır.
 
-- Zaman bir **FlowDecision** seçim eklenir ve **FlowDecision** giden bağlayıcı içermiyor, bağlayıcı yerleştirildiği **True** dal.
+- Olduğunda bir **FlowDecision** seçime dahil ve **FlowDecision** giden bağlayıcı yok, bağlayıcı yerleştirildiği **True** dal.
 
 ### <a name="expression-editing"></a>İfade düzenleme
 
-Varsayılan olarak, Visual Basic metin düzenleme için varsayılan klavye kısayolları iş akışı Tasarımcısı'nda ifade Düzenleyicisi aşağıdaki kısıtlamalarla içinde geçerlidir:
+Varsayılan olarak, Visual Basic metin düzenleme için varsayılan klavye kısayolları aşağıdaki sınırlamalara sahip iş akışı Tasarımcısı'nda ifade düzenleyicisi içinde geçerlidir:
 
-- Aşağıdaki komutlar için klavye kısayolları yeniden eşleme hiçbir etkisi olmaz. Klavye kısayolları yalnızca bir ifade düzenlerken bu komutlara erişmek için de kullanabilirsiniz.
+- Aşağıdaki komutlar için klavye kısayolları yeniden eşleme, hiçbir etkisi olmaz. Bir ifade düzenlerken bu komutlara erişmek için yalnızca klavye kısayolları kullanabilirsiniz.
 
    - Kes
    - Kopyala
@@ -88,4 +88,4 @@ Varsayılan olarak, Visual Basic metin düzenleme için varsayılan klavye kısa
    - Geri alma
    - Yinele
 
-- İş Akışı Tasarımcısı'nda Visual Studio içindeki ifade düzenleme komutları için klavye kısayolları yeniden eşlemek için iş akışı Tasarımcısı kapsamında kısayolları düzenleyin. Metin Düzenleyici kapsamda yapılan değişiklikleri otomatik olarak iş akışı Tasarımcısı için geçerli değildir. Her iki yerde kısayolları yeniden eşlemek istiyorsanız, değişiklikleri iki kez uygulamanız gerekir (her kapsam için bir kez).
+- İş Akışı Tasarımcısı'nda Visual Studio içindeki ifade düzenleme komutları için klavye kısayolları yeniden eşlemek için iş akışı Tasarımcısı kapsamında kısayollar düzenleyin. Metin Düzenleyici kapsamı içinde yapılan değişiklikleri otomatik olarak iş akışı Tasarımcısı için geçerli değildir. Her iki yerde kısayolları eşlemek isterseniz değişiklikleri iki kez uygulamanız gerekir (her kapsam için bir kez).

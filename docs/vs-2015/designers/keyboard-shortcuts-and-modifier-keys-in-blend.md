@@ -14,33 +14,33 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 40970dbbffcb6f20fe605ac07a10ae359e300578
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96e68794346b32c5117ff06c8e90f05293460203
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283900"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848572"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Blend’de klavye kısayolları ve değiştirici tuşlar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Klavye kısayolları, bir tek klavye kısayolu birden çok fare düğmesi tıklama gerektiren bir eylem azaltarak çalışmanızı hızlandırabilirsiniz. Klavye kısayolları [!INCLUDE[blend_first](../includes/blend-first-md.md)] aşağıdaki iki kategoriye ayrılır:  
   
--   **Erişim anahtarları** klavyede belirli bir tuşa basarak menü komutunu ya da bir alanda bir iletişim kutusu erişmek için erişim anahtarlarını kullanın. Erişim tuşları, şu anda seçili komut ya da iletişim kutusunda görünen alt çizgi tarafından tanımlanır.  
+- **Erişim anahtarları** klavyede belirli bir tuşa basarak menü komutunu ya da bir alanda bir iletişim kutusu erişmek için erişim anahtarlarını kullanın. Erişim tuşları, şu anda seçili komut ya da iletişim kutusunda görünen alt çizgi tarafından tanımlanır.  
   
-     Erişim anahtarları kullanmak için önce ALT ya da F10 görünür ve tuşuna basarak belirli menü veya iletişim kutusu öğenin karşılık gelen harf alt çizgileri yapmak için basın. Alternatif olarak, SEKME tuşunu veya ok tuşlarını kullanarak bir menü veya iletişim kutusu gidebilirsiniz. Örneğin, ALT tuşuna basarsanız [!INCLUDE[blend_subs](../includes/blend-subs-md.md)], altı çizili harfi altında görünür **F** içinde **dosya** bir erişim anahtarı tanımlamak için menü. Bir projeyi açmak için tuşuna basın ve ALT tuşunu basılı F tuşlarına basın ve o tuşuna basın.  
+   Erişim anahtarları kullanmak için önce ALT ya da F10 görünür ve tuşuna basarak belirli menü veya iletişim kutusu öğenin karşılık gelen harf alt çizgileri yapmak için basın. Alternatif olarak, SEKME tuşunu veya ok tuşlarını kullanarak bir menü veya iletişim kutusu gidebilirsiniz. Örneğin, ALT tuşuna basarsanız [!INCLUDE[blend_subs](../includes/blend-subs-md.md)], altı çizili harfi altında görünür **F** içinde **dosya** bir erişim anahtarı tanımlamak için menü. Bir projeyi açmak için tuşuna basın ve ALT tuşunu basılı F tuşlarına basın ve o tuşuna basın.  
   
-     ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png "441d5d67-48ee-4ba3-9e55-1826167e8d64")  
-Bir alt çizgiyle ALT tuşuna bastıktan sonra görüntülenen erişim anahtarları  
+   ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png "441d5d67-48ee-4ba3-9e55-1826167e8d64")  
+  Bir alt çizgiyle ALT tuşuna bastıktan sonra görüntülenen erişim anahtarları  
   
--   **Kısayol tuşları** klavye kısayol tuşuna basarak (örneğin, bir menü komutu seçme veya bir aracı davranışını değiştirme) bir eylemi gerçekleştirmek için kısayol tuşlarını kullanabilirsiniz.  
+- **Kısayol tuşları** klavye kısayol tuşuna basarak (örneğin, bir menü komutu seçme veya bir aracı davranışını değiştirme) bir eylemi gerçekleştirmek için kısayol tuşlarını kullanabilirsiniz.  
   
-     Çoğu klavye kısayollarını kullanıcı arabiriminde kolayca [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]; bunlar menü komutları sağında görüntülenir. Örneğin, **dosya** menüsünde **Proje Aç** CTRL + SHIFT + O klavye kısayol menü komutunu içerir. Bir aracı için kısayol tuşlarını görmek için **Araçları** panelinde, aracı işaretçisini.  
+   Çoğu klavye kısayollarını kullanıcı arabiriminde kolayca [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]; bunlar menü komutları sağında görüntülenir. Örneğin, **dosya** menüsünde **Proje Aç** CTRL + SHIFT + O klavye kısayol menü komutunu içerir. Bir aracı için kısayol tuşlarını görmek için **Araçları** panelinde, aracı işaretçisini.  
   
-     ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4E8A-8039-bead80a3e595")  
-Kısayollar menü öğelerini yanında görüntülenen kısayol tuşları  
+   ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4E8A-8039-bead80a3e595")  
+  Kısayollar menü öğelerini yanında görüntülenen kısayol tuşları  
   
- Erişilebilirlik ve özellikler hakkında daha fazla bilgi için bkz. [erişilebilirlik Microsoft'ta](http://go.microsoft.com/fwlink/?LinkId=75069).  
+  Erişilebilirlik ve özellikler hakkında daha fazla bilgi için bkz. [erişilebilirlik Microsoft'ta](http://go.microsoft.com/fwlink/?LinkId=75069).  
   
 ## <a name="modifier-keys"></a>Değiştirici tuşları  
  Bazı klavye kısayolları sahip ilişkilendirilmemiş menü öğeleri, kullanamayacağınız anlamına gelir [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] bunları bulmak için kullanıcı arabirimi. Aşağıdaki konular, araçları davranışını değiştirmek veya nesneyi yeniden boyutlandırma gibi bir eylem değiştiren kısayolları listeleyin:  

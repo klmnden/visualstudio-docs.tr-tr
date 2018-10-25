@@ -20,12 +20,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4c961d0a8e313760db20a74fb1397706d5890b96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 239416a1638940207a8dcb78b395ed1915e8a93a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214259"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867084"
 ---
 # <a name="extending-javascript-intellisense"></a>JavaScript IntelliSense Genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,13 +84,13 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  Uzantı kodunuzu kullanarak aşağıdaki olay türleri için işleyiciler oluşturabilirsiniz `addEventListener`:  
   
--   `statementcompletion`, bir deyim tamamlama olayı işleyicisi ekler. Deyim tamamlama bir nokta (.) gibi özel bir karakter yazın sonra görüntülenen belirli bir tür için üye listesi veya yazarken veya CTRL + J. tuşuna bastığınızda görüntülenen tanımlayıcıları listesini sağlar. Bir olay nesne türünde işleyici alır `CompletionEvent`, aşağıdaki üyeleri destekler: [özelliği](#Items), [özelliği hedef](#Target), [targetName özelliği](#TargetName), ve [özelliği kapsam](#Scope).  
+- `statementcompletion`, bir deyim tamamlama olayı işleyicisi ekler. Deyim tamamlama bir nokta (.) gibi özel bir karakter yazın sonra görüntülenen belirli bir tür için üye listesi veya yazarken veya CTRL + J. tuşuna bastığınızda görüntülenen tanımlayıcıları listesini sağlar. Bir olay nesne türünde işleyici alır `CompletionEvent`, aşağıdaki üyeleri destekler: [özelliği](#Items), [özelliği hedef](#Target), [targetName özelliği](#TargetName), ve [özelliği kapsam](#Scope).  
   
--   `signaturehelp`, IntelliSense parametre bilgisi için bir işleyici ekler. Parametre bilgisi sayısı, adları ve bir işlev için gerekli parametre türleri hakkında bilgi sağlar. Bir olay nesne türünde işleyici alır `SignatureHelpEvent`, aşağıdaki üyeleri destekler: [özelliği hedef](#Target), [parentObject özelliği](#ParentObject), [functionCommentsözelliği](#FunctionComments), [functionHelp özelliği](#FunctionHelp).  
+- `signaturehelp`, IntelliSense parametre bilgisi için bir işleyici ekler. Parametre bilgisi sayısı, adları ve bir işlev için gerekli parametre türleri hakkında bilgi sağlar. Bir olay nesne türünde işleyici alır `SignatureHelpEvent`, aşağıdaki üyeleri destekler: [özelliği hedef](#Target), [parentObject özelliği](#ParentObject), [functionCommentsözelliği](#FunctionComments), [functionHelp özelliği](#FunctionHelp).  
   
--   `statementcompletionhint`, IntelliSense hızlı bilgi için bir işleyici ekler. Hızlı bilgi açılır kutunun tam bir bildirim tanımlayıcıları için kodunuzda gösterir. Bir olay nesne türünde işleyici alır `CompletionHintEvent`, aşağıdaki üyeleri destekler: [completionItem özelliği](#CompletionItem), ve [symbolHelp özelliği](#SymbolHelp).  
+- `statementcompletionhint`, IntelliSense hızlı bilgi için bir işleyici ekler. Hızlı bilgi açılır kutunun tam bir bildirim tanımlayıcıları için kodunuzda gösterir. Bir olay nesne türünde işleyici alır `CompletionHintEvent`, aşağıdaki üyeleri destekler: [completionItem özelliği](#CompletionItem), ve [symbolHelp özelliği](#SymbolHelp).  
   
- Deyim tamamlama, parametre bilgileri ve hızlı bilgi gibi IntelliSense özelliklerini gösteren örnekler için bkz [IntelliSense kullanarak](../ide/using-intellisense.md).  
+  Deyim tamamlama, parametre bilgileri ve hızlı bilgi gibi IntelliSense özelliklerini gösteren örnekler için bkz [IntelliSense kullanarak](../ide/using-intellisense.md).  
   
 > [!NOTE]
 >  JavaScript'te hızlı bilgi tamamlanma listesi sağında görünen açılır kutusunda ifade eder. Hızlı Bilgi'yi el ile çağrılamaz.  

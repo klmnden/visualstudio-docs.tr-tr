@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 912752c39d8180f7f3cd5dc0cca719e39e39a0e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a5f6c89f6b71ecd2902877757f7d852c0e51088
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171970"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852927"
 ---
 # <a name="n-tier-data-applications-overview"></a>N Katmanlı Veri Uygulamalarına Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,31 +48,31 @@ N-katmanı * veri uygulamaları, birden çok ayrılmış veri uygulama *katmanla
 ## <a name="presentation-tier"></a>Sunu katmanı  
  *Sunu katmanı* kullanıcıların uygulamayla etkileşim katmanı gösterir. Ek uygulama mantığı genellikle de içerir. Tipik bir sunu katmanı bileşenleri şunları içerir:  
   
--   Veri bileşenleri gibi bağlama <xref:System.Windows.Forms.BindingSource> ve <xref:System.Windows.Forms.BindingNavigator>.  
+- Veri bileşenleri gibi bağlama <xref:System.Windows.Forms.BindingSource> ve <xref:System.Windows.Forms.BindingNavigator>.  
   
--   Verilerin temsillerini gibi nesne [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) sunu katmanı kullanmak için varlık sınıfları.  
+- Verilerin temsillerini gibi nesne [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) sunu katmanı kullanmak için varlık sınıfları.  
   
- Genellikle sunu katmanına bir hizmet başvurusu kullanarak orta katman erişir (örneğin, bir [Windows Communication Foundation Hizmetleri ve Visual Studio'da WCF Veri Hizmetleri](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) uygulama). Sunu katmanı veri katmanı doğrudan erişimi yoktur. Sunu katmanı, orta katman veri erişim bileşeni yoluyla veri katmanı ile iletişim kurar.  
+  Genellikle sunu katmanına bir hizmet başvurusu kullanarak orta katman erişir (örneğin, bir [Windows Communication Foundation Hizmetleri ve Visual Studio'da WCF Veri Hizmetleri](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) uygulama). Sunu katmanı veri katmanı doğrudan erişimi yoktur. Sunu katmanı, orta katman veri erişim bileşeni yoluyla veri katmanı ile iletişim kurar.  
   
 ## <a name="middle-tier"></a>Orta katman  
  *Orta katman* sunu katmanı ve veri katmanı katman kullanın birbirleri ile iletişim kurmak için. Tipik bir orta katman bileşenleri şunları içerir:  
   
--   İş kuralları ve veri doğrulama gibi iş mantığı.  
+- İş kuralları ve veri doğrulama gibi iş mantığı.  
   
--   Bileşenleri ve aşağıdaki gibi bir mantıksal veri erişim:  
+- Bileşenleri ve aşağıdaki gibi bir mantıksal veri erişim:  
   
-    -   [TableAdapter bağdaştırıcıları](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) ve [DataAdapters ve DataReaders](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
+  -   [TableAdapter bağdaştırıcıları](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) ve [DataAdapters ve DataReaders](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
   
-    -   Verilerin temsillerini gibi nesne [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) varlık sınıfları.  
+  -   Verilerin temsillerini gibi nesne [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) varlık sınıfları.  
   
-    -   Kimlik doğrulama, yetkilendirme ve kişiselleştirme gibi ortak uygulama hizmetleri.  
+  -   Kimlik doğrulama, yetkilendirme ve kişiselleştirme gibi ortak uygulama hizmetleri.  
   
- Özellikleri ve teknolojileri Visual Studio'da bulunan ve burada, n katmanlı bir uygulama orta katman için uygun olmayabilir aşağıdaki çizimde gösterilmektedir.  
+  Özellikleri ve teknolojileri Visual Studio'da bulunan ve burada, n katmanlı bir uygulama orta katman için uygun olmayabilir aşağıdaki çizimde gösterilmektedir.  
   
- ![Orta katman bileşenleri](../data-tools/media/ntiermid.png "NtierMid")  
-Orta katman  
+  ![Orta katman bileşenleri](../data-tools/media/ntiermid.png "NtierMid")  
+  Orta katman  
   
- Orta katman veri katmanına genellikle bir veri bağlantısı kullanarak bağlanır. Bu veri bağlantısının veri erişim bileşeni genellikle depolanır.  
+  Orta katman veri katmanına genellikle bir veri bağlantısı kullanarak bağlanır. Bu veri bağlantısının veri erişim bileşeni genellikle depolanır.  
   
 ## <a name="data-tier"></a>Veri katmanı  
  *Veri katmanı* temel bir uygulamanın verilerini depolayan sunucudur (örneğin, çalıştıran bir sunucuya [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]).  

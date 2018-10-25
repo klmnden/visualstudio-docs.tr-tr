@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 4b6fb4e5ba69695389de2ad7db578488bf55ab75
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 9d924ee92258e348d5ffee1551fcde7707d711cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879807"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855215"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları ile çalışmaya başlama
 
@@ -63,21 +63,21 @@ Visual Studio ile Unity 2018.1 başlayarak, varsayılan harici kod Düzenleyicis
 
 1. Seçin **tercihleri** gelen **Düzenle** menüsü.
 
-  ![Tercihler seçin](media/vstu_unity-preferences.png)
+   ![Tercihler seçin](media/vstu_unity-preferences.png)
 
-1. Tercihler iletişim kutusunda, seçmek **dış Araçlar** sekmesi.
+2. Tercihler iletişim kutusunda, seçmek **dış Araçlar** sekmesi.
 
-1. Gelen **dış betik Düzenleyicisi** açılan listesinde, istediğiniz Visual Studio sürümünüze listelenmişse seçin, aksi takdirde **Gözat...** .
+3. Gelen **dış betik Düzenleyicisi** açılan listesinde, istediğiniz Visual Studio sürümünüze listelenmişse seçin, aksi takdirde **Gözat...** .
 
-  ![Visual Studio seçin](media/vstu_unity-external-tools.png)
+   ![Visual Studio seçin](media/vstu_unity-external-tools.png)
 
-1. Varsa **Gözat...**  olan seçili gidin **Common7/IDE** seçin ve Visual Studio yükleme dizini içinde dizin **devenv.exe**. Ardından **açık**.
+4. Varsa **Gözat...**  olan seçili gidin **Common7/IDE** seçin ve Visual Studio yükleme dizini içinde dizin **devenv.exe**. Ardından **açık**.
 
-  ![Aç'ı seçin](media/vstu_browse-for-application.png)
+   ![Aç'ı seçin](media/vstu_browse-for-application.png)
 
-1. Visual Studio içinde seçildikten sonra **dış betik Düzenleyicisi** listesinde, onaylayın **Düzenleyici ekleme** onay kutusunun seçili.
+5. Visual Studio içinde seçildikten sonra **dış betik Düzenleyicisi** listesinde, onaylayın **Düzenleyici ekleme** onay kutusunun seçili.
 
-1. Kapat **tercihleri** yapılandırma işlemini tamamlamak için iletişim.
+6. Kapat **tercihleri** yapılandırma işlemini tamamlamak için iletişim.
 
 ## <a name="support-for-older-versions"></a>Eski sürümleri için destek
 

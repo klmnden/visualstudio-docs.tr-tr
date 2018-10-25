@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dace2a3de8e61a92672442adbf77199232c76e12
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: feae82f3909be5816e025de21200acda20933d63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370919"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874624"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Katman modeli uzantısı dağıtma
 
@@ -29,13 +29,13 @@ Uzantınız, diğer bilgisayarlara yükleyebileceğiniz bir VSIX dosyasına derl
 
 ### <a name="to-install-the-extension"></a>Uzantıyı yüklemek için
 
-1.  İçeren projede **source.vsix.manifest**açın **bin\\ \***  dosya Gezgini'nde.
+1. İçeren projede **source.vsix.manifest**açın *bin* dosya Gezgini'nde dizin.
 
-2.  Kopyalama  **\*.vsix** uzantıyı yüklemek istediğiniz bilgisayarın dosyasına.
+2. Kopyalama  **\*.vsix** uzantıyı yüklemek istediğiniz bilgisayarın dosyasına.
 
-3.  Hedef bilgisayarda, Windows Gezgini'nde *.vsix dosyasını çift tıklatın.
+3. Hedef bilgisayarda, Windows Gezgini'nde *.vsix dosyasını çift tıklatın.
 
-     VSIX yükleyici açılır.
+    VSIX yükleyici açılır.
 
 ### <a name="to-uninstall-the-extension"></a>Uzantıyı kaldırmak için
 

@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c97810b69ef7256379b6d14bf29ba08a9e6e0040
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 19e57f9cebf6e9a8086f736735527fb647544228
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273942"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833765"
 ---
 # <a name="just-my-code"></a>Yalnızca Kendi Kodum
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,13 +52,13 @@ ms.locfileid: "49273942"
   
  Hata ayıklayıcı kodum olmasını dikkate üç özniteliği de etkiler:  
   
--   <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> için uygulanan kod benim kodum değil hata ayıklayıcıya bildirir.  
+- <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> için uygulanan kod benim kodum değil hata ayıklayıcıya bildirir.  
   
--   <xref:System.Diagnostics.DebuggerHiddenAttribute> Yalnızca kendi kodum kapalı olsa bile hata ayıklayıcıyı kodu gizler.  
+- <xref:System.Diagnostics.DebuggerHiddenAttribute> Yalnızca kendi kodum kapalı olsa bile hata ayıklayıcıyı kodu gizler.  
   
--   <xref:System.Diagnostics.DebuggerStepThroughAttribute> hata ayıklayıcının, kod içine Adımlama yerine uygulandığı kod adım adım anlatır.  
+- <xref:System.Diagnostics.DebuggerStepThroughAttribute> hata ayıklayıcının, kod içine Adımlama yerine uygulandığı kod adım adım anlatır.  
   
- Diğer tüm kod, kullanıcı kodu olarak kabul edilir.  
+  Diğer tüm kod, kullanıcı kodu olarak kabul edilir.  
   
 ###  <a name="BKMK_NET_Stepping_behavior"></a> Atlama davranışını  
  Olduğunda, **içine adımla** (klavye kısayolu: F11) kullanıcı olmayan kod, sonraki kullanıcı deyimi için kod üzerinde hata ayıklama adımlarında. Olduğunda, **Step Out** (klavye: Shift + F11), hata ayıklayıcı sonraki satıra kullanıcı kodu çalıştırır. Hiç kullanıcı kodu karşılaşıldıktan sonra yürütülmeye kadar uygulama çıkar, bir kesme noktasına isabet ya da bir özel durum oluşur.  
@@ -80,17 +80,17 @@ ms.locfileid: "49273942"
   
  Varsayılan olarak, bu işlevler, çağrı yığını Windows kullanıcı olmayan kod için hata ayıklayıcı göz önünde bulundurur:  
   
--   İşlevler, semboller dosyası kesilmiş kaynak bilgileri.  
+- İşlevler, semboller dosyası kesilmiş kaynak bilgileri.  
   
--   İşlevler, yığın çerçevesi için karşılık gelen kaynak dosya yok sembol dosyaları burada belirtin.  
+- İşlevler, yığın çerçevesi için karşılık gelen kaynak dosya yok sembol dosyaları burada belirtin.  
   
--   Belirtilen işlevleri `*.natjmc` dosyalar `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` klasör.  
+- Belirtilen işlevleri `*.natjmc` dosyalar `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` klasör.  
   
- **Adımlama**  
+  **Adımlama**  
   
- Varsayılan olarak, yalnızca işlevler belirtilen `*.natstepfilter` dosyalar `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` klasör kullanıcı olmayan kod olarak kabul edilir.  
+  Varsayılan olarak, yalnızca işlevler belirtilen `*.natstepfilter` dosyalar `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` klasör kullanıcı olmayan kod olarak kabul edilir.  
   
- Kendi oluşturabilirsiniz `.natstepfilter` ve `.natjmc` Adımlama özelleştirip çağrı yığını penceresi davranışı `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`.  
+  Kendi oluşturabilirsiniz `.natstepfilter` ve `.natjmc` Adımlama özelleştirip çağrı yığını penceresi davranışı `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`.  
   
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Atlama davranışını  
  Olduğunda, **içine adımla** (klavye kısayolu: F11) kullanıcı kodundan kullanıcı olmayan kod, kod üzerinde hata ayıklama adımlarında kullanıcı kodu sonraki satırına. Olduğunda, **Step Out** (klavye: Shift + F11), hata ayıklayıcı sonraki satıra kullanıcı kodu çalıştırır. Hiç kullanıcı kodu karşılaşıldıktan sonra yürütülmeye kadar uygulama çıkar, bir kesme noktasına isabet ya da bir özel durum oluşur.  
@@ -103,11 +103,11 @@ ms.locfileid: "49273942"
 ###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> Atlama davranışını özelleştirme  
  Kullanıcı olmayan kod olarak listelenerek tarafından devralınırsa adım için işlevleri belirtebilirsiniz `*.natstepfilter` dosyaları.  
   
--   Kullanıcı dışı kod için Visual Studio makinenin tüm kullanıcıları belirtmek için .natstepfilter dosyaya ekleyin `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` klasör.  
+- Kullanıcı dışı kod için Visual Studio makinenin tüm kullanıcıları belirtmek için .natstepfilter dosyaya ekleyin `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` klasör.  
   
--   Bir kullanıcı için kullanıcı olmayan kod belirtmek için .natstepfilter dosyaya ekleyin `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` klasör.  
+- Bir kullanıcı için kullanıcı olmayan kod belirtmek için .natstepfilter dosyaya ekleyin `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` klasör.  
   
- Bu sözdizimi ile xml dosyaları .natstepfilter dosyalar şunlardır:  
+  Bu sözdizimi ile xml dosyaları .natstepfilter dosyalar şunlardır:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -135,11 +135,11 @@ ms.locfileid: "49273942"
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Çağrı yığını davranışını özelleştirme  
  Modüller, kaynak dosyaları ve bunları belirterek, çağrı yığınlarını kullanıcı olmayan kod olarak değerlendirilecek işlevleri belirtebilirsiniz `*.natjmc` dosyaları.  
   
--   Kullanıcı dışı kod için Visual Studio makinenin tüm kullanıcıları belirtmek için .natjmc dosyaya ekleyin `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` klasör.  
+- Kullanıcı dışı kod için Visual Studio makinenin tüm kullanıcıları belirtmek için .natjmc dosyaya ekleyin `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` klasör.  
   
--   Bir kullanıcı için kullanıcı olmayan kod belirtmek için .natjmc dosyaya ekleyin `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` klasör.  
+- Bir kullanıcı için kullanıcı olmayan kod belirtmek için .natjmc dosyaya ekleyin `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` klasör.  
   
- Bu sözdizimi ile xml dosyaları .natjmc dosyalar şunlardır:  
+  Bu sözdizimi ile xml dosyaları .natjmc dosyalar şunlardır:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -197,19 +197,19 @@ ms.locfileid: "49273942"
   
  JavaScript hata ayıklayıcı, aşağıdaki kod türleri otomatik olarak sınıflandırır:  
   
--   Ana bilgisayar tarafından sağlanan için bir dize geçirerek yürütülen betik `eval` işlevi olarak sınıflandırılmış **MyCode**.  
+- Ana bilgisayar tarafından sağlanan için bir dize geçirerek yürütülen betik `eval` işlevi olarak sınıflandırılmış **MyCode**.  
   
--   Bir dizeye geçirerek yürütülen betik `Function` Oluşturucu olarak sınıflandırılmış **LibraryCode**.  
+- Bir dizeye geçirerek yürütülen betik `Function` Oluşturucu olarak sınıflandırılmış **LibraryCode**.  
   
--   WinJS ya da Azure SDK'sı gibi bir çerçeve başvurusu yer alan komut dosyası olarak sınıflandırılmış **LibraryCode**.  
+- WinJS ya da Azure SDK'sı gibi bir çerçeve başvurusu yer alan komut dosyası olarak sınıflandırılmış **LibraryCode**.  
   
--   Bir dizeye geçirerek yürütülen betik `setTimeout`, `setImmediate`, veya `setInterval` işlevleri olarak sınıflandırılmış **UnrelatedCode**.  
+- Bir dizeye geçirerek yürütülen betik `setTimeout`, `setImmediate`, veya `setInterval` işlevleri olarak sınıflandırılmış **UnrelatedCode**.  
   
--   `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` Diğer tüm Visual Studio JavaScript projeleri için kullanıcı ve kullanıcı olmayan kod belirtir.  
+- `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` Diğer tüm Visual Studio JavaScript projeleri için kullanıcı ve kullanıcı olmayan kod belirtir.  
   
- Varsayılan sınıflandırmalar değiştirmek ve belirli dosyaları sınıflandırabilir ve URL'leri ile adlı bir .json dosyası eklemek `mycode.json` bir projesinin kök klasörüne.  
+  Varsayılan sınıflandırmalar değiştirmek ve belirli dosyaları sınıflandırabilir ve URL'leri ile adlı bir .json dosyası eklemek `mycode.json` bir projesinin kök klasörüne.  
   
- Diğer tüm kod olarak sınıflandırılır **MyCode**.  
+  Diğer tüm kod olarak sınıflandırılır **MyCode**.  
   
 ###  <a name="BKMK_JS_Stepping_behavior"></a> Atlama davranışını  
   
@@ -234,30 +234,30 @@ ms.locfileid: "49273942"
 ###  <a name="BKMK_JS_Exception_behavior"></a> Özel durum davranışını  
  İşlenmeyen bir özel durum oluşması halinde:  
   
--   **MyCode** veya **LibraryCode** kod, hata ayıklayıcı her zaman keser.  
+- **MyCode** veya **LibraryCode** kod, hata ayıklayıcı her zaman keser.  
   
--   **UnrelatedCode** kodunu ve **MyCode** veya **LibraryCode** çağrı yığını, hata ayıklayıcı kesmesi kodudur.  
+- **UnrelatedCode** kodunu ve **MyCode** veya **LibraryCode** çağrı yığını, hata ayıklayıcı kesmesi kodudur.  
   
- İlk fırsat özel durumlar, özel durum iletişim kutusunda özel durum için etkinleştirilir ve özel durumun **LibraryCode** veya **UnrelatedCode** kod:  
+  İlk fırsat özel durumlar, özel durum iletişim kutusunda özel durum için etkinleştirilir ve özel durumun **LibraryCode** veya **UnrelatedCode** kod:  
   
--   Özel durumun işlenip, hata ayıklayıcı sonu gelmez.  
+- Özel durumun işlenip, hata ayıklayıcı sonu gelmez.  
   
--   Özel durum işlenmezse hata ayıklayıcı keser.  
+- Özel durum işlenmezse hata ayıklayıcı keser.  
   
 ###  <a name="BKMK_JS_Customize_Just_My_Code"></a> Yalnızca kendi kodum özelleştirme  
  Kullanıcı ve kullanıcı dışı kod için tek bir Visual Studio Proje sınıflandırmak için adlandırılmış bir .json dosyası eklemek `mycode.json` projesinin kök klasörüne.  
   
  Sınıflandırmalar, bu sırada gerçekleştirilir:  
   
-1.  Varsayılan sınıflandırmalar  
+1. Varsayılan sınıflandırmalar  
   
-2.  Sınıflandırmaları `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` dosyası  
+2. Sınıflandırmaları `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` dosyası  
   
-3.  Sınıflandırmaları `mycode. json` geçerli projenin dosya.  
+3. Sınıflandırmaları `mycode. json` geçerli projenin dosya.  
   
- Her sınıflandırma adım, önceki adımlarda geçersiz kılar. Bir .json dosyası tüm anahtar-değer çiftlerinin listesinde gerekmez ve **MyCode**, **kitaplıkları**, ve **Unrelated** değerler, boş bir dizi olabilir.  
+   Her sınıflandırma adım, önceki adımlarda geçersiz kılar. Bir .json dosyası tüm anahtar-değer çiftlerinin listesinde gerekmez ve **MyCode**, **kitaplıkları**, ve **Unrelated** değerler, boş bir dizi olabilir.  
   
- My Code .json dosyaları, bu sözdizimini kullanın:  
+   My Code .json dosyaları, bu sözdizimini kullanın:  
   
 ```json  
 {  
@@ -295,15 +295,15 @@ ms.locfileid: "49273942"
   
  Bu anahtar sözcüklerden biri için değer değiştirebilirsiniz:  
   
--   `MyCode`  betik olarak sınıflandırır **MyCode**.  
+- `MyCode`  betik olarak sınıflandırır **MyCode**.  
   
--   `Library`  betik olarak sınıflandırır **LibraryCode**.  
+- `Library`  betik olarak sınıflandırır **LibraryCode**.  
   
--   `Unrelated`  betik olarak sınıflandırır **UnrelatedCode**.  
+- `Unrelated`  betik olarak sınıflandırır **UnrelatedCode**.  
   
- **MyCode, kitaplıklar ve ilgisiz**  
+  **MyCode, kitaplıklar ve ilgisiz**  
   
- **MyCode**, **kitaplıkları**, ve **Unrelated** anahtar-değer çiftlerinin bir sınıflandırma dahil etmek istediğiniz dosyaları ve URL'leri belirtin:  
+  **MyCode**, **kitaplıkları**, ve **Unrelated** anahtar-değer çiftlerinin bir sınıflandırma dahil etmek istediğiniz dosyaları ve URL'leri belirtin:  
   
 |||  
 |-|-|  

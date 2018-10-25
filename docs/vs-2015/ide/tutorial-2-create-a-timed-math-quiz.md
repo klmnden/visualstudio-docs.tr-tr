@@ -14,32 +14,32 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d86d42ce7e345a30c56390bede6957dff8bcd67
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8b0b7a5949ab8fe624a087a1e024367f896ddb99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205081"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884894"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Eğitmen 2: Zamanlı Matematik Testi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu öğreticide, sınava giren belirli bir süre içinde dört rastgele aritmetik sorusuna yanıtlamalısınız bir test oluşturun. Aşağıdakilerin nasıl yapıldığını öğreneceksiniz:  
   
--   Kullanarak rastgele sayılar üretin `Random` sınıfı.  
+- Kullanarak rastgele sayılar üretin `Random` sınıfı.  
   
--   Kullanarak belirli bir zamanda oluşacak olayları tetikleme bir **Zamanlayıcı** denetimi.  
+- Kullanarak belirli bir zamanda oluşacak olayları tetikleme bir **Zamanlayıcı** denetimi.  
   
--   Kullanarak program akışını denetleme `if else` deyimleri.  
+- Kullanarak program akışını denetleme `if else` deyimleri.  
   
--   Kodda temel aritmetik işlemleri gerçekleştirin.  
+- Kodda temel aritmetik işlemleri gerçekleştirin.  
   
- İşiniz bittiğinde, sınav aşağıdaki resim gibi dışında sayıların farklı görünecektir.  
+  İşiniz bittiğinde, sınav aşağıdaki resim gibi dışında sayıların farklı görünecektir.  
   
- ![Dört Sorulu matematik sınavı](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")  
-Bu öğreticide oluşturduğunuz sınav  
+  ![Dört Sorulu matematik sınavı](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")  
+  Bu öğreticide oluşturduğunuz sınav  
   
- Sınavın tamamlanmış bir sürümünü indirmek için bkz [matematik sınavı öğretici örneği](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
+  Sınavın tamamlanmış bir sürümünü indirmek için bkz [matematik sınavı öğretici örneği](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
   
 > [!NOTE]
 >  Bu öğreticide hem Visual C# ve Visual Basic ele alınmaktadır; bu nedenle kullandığınız programlama diline özgü bilgilere odaklanın.  

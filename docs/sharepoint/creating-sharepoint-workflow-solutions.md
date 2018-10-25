@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd67173078a81c5fc250ca993474a60057076d70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4e808d93d2ae3039d4c5d79d1c14c65360bba32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634728"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892317"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>SharePoint iş akışı çözümleri oluşturma
 
@@ -70,25 +70,25 @@ SharePoint ile ilgili daha fazla bilgi için bkz. [Microsoft SharePoint Ürünle
 
  İki tür etkinlik vardır:
 
--   *Basit etkinlikleri* iş, "1 gün için gecikme" veya "Web hizmeti başlatılamıyor." gibi tek bir birim
+- *Basit etkinlikleri* iş, "1 gün için gecikme" veya "Web hizmeti başlatılamıyor." gibi tek bir birim
 
--   *Bileşik etkinlikleri* diğer etkinlikleri içerir; örneğin, bir koşullu etkinlik iki dalı içerebilir.
+- *Bileşik etkinlikleri* diğer etkinlikleri içerir; örneğin, bir koşullu etkinlik iki dalı içerebilir.
 
- Her iki tür etkinlik mevcuttur **araç kutusu**.
+  Her iki tür etkinlik mevcuttur **araç kutusu**.
 
- Etkinlikler, özellikleri, yöntemleri ve olayları olabilir. Kullanım **özellikleri** penceresinde etkinliğin özelliklerini ayarlamak için.
+  Etkinlikler, özellikleri, yöntemleri ve olayları olabilir. Kullanım **özellikleri** penceresinde etkinliğin özelliklerini ayarlamak için.
 
- Ayrıca, özel bir etkinlik oluşturabilirsiniz. Daha fazla bilgi için [izlenecek yol: özel site iş akışı faaliyeti oluşturma](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
+  Ayrıca, özel bir etkinlik oluşturabilirsiniz. Daha fazla bilgi için [izlenecek yol: özel site iş akışı faaliyeti oluşturma](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
 
- Etkinlikler, aşağıdaki sekmeleri düzenlenir **araç kutusu**:
+  Etkinlikler, aşağıdaki sekmeleri düzenlenir **araç kutusu**:
 
--   **SharePoint iş akışı**
+- **SharePoint iş akışı**
 
--   **Windows iş akışı v3.0**
+- **Windows iş akışı v3.0**
 
--   **Windows iş akışı v3.5**
+- **Windows iş akışı v3.5**
 
- Tüm temel iş akışı etkinlikleri, SharePoint tarafından desteklenir. Daha fazla bilgi için [iş akışı etkinlikleri için Windows SharePoint Services Genel Bakış](http://go.microsoft.com/fwlink/?LinkID=156094).
+  Tüm temel iş akışı etkinlikleri, SharePoint tarafından desteklenir. Daha fazla bilgi için [iş akışı etkinlikleri için Windows SharePoint Services Genel Bakış](http://go.microsoft.com/fwlink/?LinkID=156094).
 
 #### <a name="sharepoint-workflow-activities"></a>SharePoint iş akışı etkinlikleri
  **SharePoint iş akışı** sekmeler içeren özel etkinlikleri kullanmak için [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]. Bu etkinlikler basitleştirebilir ve geliştirmeye yönelik belge yaşam döngüsü iş akışları. Listelenen etkinlikleri hakkında daha fazla bilgi için **SharePoint iş akışı** sekmesinde bkz [iş akışı etkinlikleri için Windows SharePoint Services Genel Bakış](http://go.microsoft.com/fwlink/?LinkID=156094).
@@ -111,15 +111,15 @@ SharePoint ile ilgili daha fazla bilgi için bkz. [Microsoft SharePoint Ürünle
 
  Bir iş akışında kullanılabilecek forms dört tür vardır:
 
--   İlişkilendirme
+- İlişkilendirme
 
--   Başlatma
+- Başlatma
 
--   Değişiklik
+- Değişiklik
 
--   Görev
+- Görev
 
- Bu, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ilişki ve başlatma formları için öğe şablonları içerir. Örneği bir *ilişkilendirme formu* yükleme iş akışı Yöneticisi sağlayan bir girin bir harcama iş akışı için bir harcama sınırına gibi iş akışı ile ilgili parametreler. Örneği bir *başlatma formu* bir iş akışına harcadıkları süre girin kullanıcının bir iş akışının gider olanak sağlar. Bu form türleri hakkında daha fazla bilgi için bkz. [SharePoint projesi ve proje öğesi şablonları](../sharepoint/sharepoint-project-and-project-item-templates.md).
+  Bu, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ilişki ve başlatma formları için öğe şablonları içerir. Örneği bir *ilişkilendirme formu* yükleme iş akışı Yöneticisi sağlayan bir girin bir harcama iş akışı için bir harcama sınırına gibi iş akışı ile ilgili parametreler. Örneği bir *başlatma formu* bir iş akışına harcadıkları süre girin kullanıcının bir iş akışının gider olanak sağlar. Bu form türleri hakkında daha fazla bilgi için bkz. [SharePoint projesi ve proje öğesi şablonları](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
 ### <a name="item-properties"></a>Öğe özellikleri
  SharePoint kitaplığına veya listedeki bir öğe özelliklerini kullanarak kullanıcıların bilgilerini de toplayabilir. Ana kod dosyası (Workflow1.cs veya Workflow1.vb) adlı Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties sınıfının bir örneğini bildirir `workflowProperties`. Kullanım `workflowProperties` kitaplık veya liste kodda özelliklerine erişmek için nesne. Bir örnek için bkz. [izlenecek yol: oluşturma ve bir SharePoint iş akışı çözümü hata ayıklama](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md).

@@ -14,27 +14,27 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: be0c91441df0ff85771993195a4f34c7c682abdb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ac0d333f8103f6904bce517397a73cc010b1d36
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214701"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873415"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Yardım İçeriği Yöneticisi İçin Komut Satırı Bağımsız Değişkenleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dağıtmak ve komut satırı bağımsız değişkenleri için Yardım içeriği Yöneticisi (HlpCtntmgr.exe) kullanarak yerel Yardım içeriğini yönetmek nasıl belirtebilirsiniz. Bu komut satırı aracı için komut dosyalarını yönetici izinleriyle çalıştırmalısınız ve bu betikler, hizmet olarak çalıştıramazsınız. Bu aracı kullanarak aşağıdaki görevleri gerçekleştirebilirsiniz:  
   
--   Ekleyin veya bir disk veya buluttan yerel Yardım içeriğini güncelleştirin.  
+- Ekleyin veya bir disk veya buluttan yerel Yardım içeriğini güncelleştirin.  
   
--   Yerel Yardım içeriğini kaldırın.  
+- Yerel Yardım içeriğini kaldırın.  
   
--   Yerel Yardım içerik deposunu taşıyın.  
+- Yerel Yardım içerik deposunu taşıyın.  
   
--   Eklemek, güncelleştirmek, kaldırmak veya yerel Yardım içeriğini sessizce taşıyın.  
+- Eklemek, güncelleştirmek, kaldırmak veya yerel Yardım içeriğini sessizce taşıyın.  
   
- Sözdizimi:  
+  Sözdizimi:  
   
 ```  
 HlpCtntmgr.exe /operation Value /catalogname CatalogName /locale Locale /sourceuri InstallationPoint  

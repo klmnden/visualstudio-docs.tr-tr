@@ -18,23 +18,23 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6cf06fc37a10f6bf028d3f4ef7174e73574b604b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5be0649cd9d3fb7aa5f4e3f52496ec43658a41ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842878"
 ---
 # <a name="blocking-time-profile-report"></a>Engelleme Zamanı Profil Raporu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Profil raporlarını engelleme her kategorisi (örneğin, "G/ç" veya "Eşitleme") belirli çağrı yığınlarını engelleme zamanı veri toplama sağlayın. Önalım raporu geçerli işlem önalım örneklerinin birlikte etkisiz işlemleri listeler. Engelleme Profil raporu oluşturmak için araç engelleme API çağrıları toplar ve bunları çağrı yığınlarını ağacının toplanır. Bu raporlarda gösterilen verileri geçerli zaman aralığı, gizli dizileri ve uygulanabilir aşağıdaki iki filtre olarak değişir:  
   
--   Yalnızca kendi kodum seçtiyseniz bir düzey altındaki kullanıcı kodunun yanı sıra kullanıcı koduna sahip yığın çerçevelerini sunulur.  
+- Yalnızca kendi kodum seçtiyseniz bir düzey altındaki kullanıcı kodunun yanı sıra kullanıcı koduna sahip yığın çerçevelerini sunulur.  
   
--   Gürültü azaltma değeri ayarlarsanız, belirtilen sıklıkta atlanır daha az olan yığınları Harmanlanmış.  
+- Gürültü azaltma değeri ayarlarsanız, belirtilen sıklıkta atlanır daha az olan yığınları Harmanlanmış.  
   
- Engelleme zamanı için harcanan kod satırının bulmak için herhangi bir çağrı ağacını giriş genişletin. Kendi kısayol menüsünde bir giriş kaynağı olan satırını bulun, seçin **kaynağı görüntüle**. Bu bir kısayol menüsünde, çağıran kod satırı bulunacak seçin **çağrı siteleri görünümünü**. Yalnızca bir çağrı sitesini kullanılabilir, komut vurgulanan satırlık bir kod için çağrı sitesini bağlanır. Birden çok çağrı siteleri varsa, komutu bir girişi seçin ve ardından bir iletişim kutusu açılır **kaynağa Git** vurgulanan çağrı sitesini bulmaya düğmesi. Genellikle en iyi örnek, en çok zaman veya her ikisi de çağrı sitedeki kaynak kodunu görüntülemek en kullanışlıdır.  
+  Engelleme zamanı için harcanan kod satırının bulmak için herhangi bir çağrı ağacını giriş genişletin. Kendi kısayol menüsünde bir giriş kaynağı olan satırını bulun, seçin **kaynağı görüntüle**. Bu bir kısayol menüsünde, çağıran kod satırı bulunacak seçin **çağrı siteleri görünümünü**. Yalnızca bir çağrı sitesini kullanılabilir, komut vurgulanan satırlık bir kod için çağrı sitesini bağlanır. Birden çok çağrı siteleri varsa, komutu bir girişi seçin ve ardından bir iletişim kutusu açılır **kaynağa Git** vurgulanan çağrı sitesini bulmaya düğmesi. Genellikle en iyi örnek, en çok zaman veya her ikisi de çağrı sitedeki kaynak kodunu görüntülemek en kullanışlıdır.  
   
 ## <a name="blocking-time-report-columns"></a>Engelleme zamanı Rapor sütunları  
  Aşağıdaki tabloda her engelleme zamanı rapor için sütunları gösterir.  

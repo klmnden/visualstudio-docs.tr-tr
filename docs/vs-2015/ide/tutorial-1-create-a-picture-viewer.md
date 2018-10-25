@@ -14,40 +14,40 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8e881b4d8faef7ced037c8752f099af0e5e8bfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0cdc926121212a8082fac126e4ab91b753df7dee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214335"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884972"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Eğitmen 1: Resim Görüntüleyici Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu öğreticide, bir dosyadan resim yükleyen ve pencerede görüntüleyen bir program oluşturun. Düğmeler ve resim kutuları, form üzerindeki özellikleri ayarlamak ve sorunsuz formu yeniden boyutlandırmak için kapsayıcıları kullanma gibi denetimleri Sürüklemeyi öğrenin. Ayrıca, kod yazmaya başlayın. Aşağıdakilerin nasıl yapıldığını öğreneceksiniz:  
   
--   Yeni bir proje oluşturun.  
+- Yeni bir proje oluşturun.  
   
--   Test (hata ayıklama) bir uygulama.  
+- Test (hata ayıklama) bir uygulama.  
   
--   Bir forma onay kutuları ve düğmeler gibi temel denetimler ekleyin.  
+- Bir forma onay kutuları ve düğmeler gibi temel denetimler ekleyin.  
   
--   Düzenleri kullanarak form üzerinde denetimleri yerleştirin.  
+- Düzenleri kullanarak form üzerinde denetimleri yerleştirin.  
   
--   Ekleme **açık dosya** ve **renk** bir forma iletişim kutuları.  
+- Ekleme **açık dosya** ve **renk** bir forma iletişim kutuları.  
   
--   IntelliSense ve kod parçacıkları kullanarak kod yazın.  
+- IntelliSense ve kod parçacıkları kullanarak kod yazın.  
   
--   Olay işleyicisi yöntemleri yazın.  
+- Olay işleyicisi yöntemleri yazın.  
   
- İşiniz bittiğinde, programınız aşağıdaki resim gibi görünecektir.  
+  İşiniz bittiğinde, programınız aşağıdaki resim gibi görünecektir.  
   
- ![Bu öğreticide oluşturduğunuz resim](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone")  
-Bu öğreticide oluşturduğunuz resim  
+  ![Bu öğreticide oluşturduğunuz resim](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone")  
+  Bu öğreticide oluşturduğunuz resim  
   
- Örnek tamamlanmış bir sürümünü indirmek için bkz [eksiksiz resim görüntüleyici Öğreticisi örneği](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
+  Örnek tamamlanmış bir sürümünü indirmek için bkz [eksiksiz resim görüntüleyici Öğreticisi örneği](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
   
- ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo")bu konunun video sürümü için bkz. [nasıl ı: Resim Görüntüleyici oluşturma Visual Basic'te?](http://go.microsoft.com/fwlink/?LinkId=205207) veya [nasıl ı: Resim Görüntüleyici oluşturma C#?](http://go.microsoft.com/fwlink/?LinkId=205198).  
+  ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo")bu konunun video sürümü için bkz. [nasıl ı: Resim Görüntüleyici oluşturma Visual Basic'te?](http://go.microsoft.com/fwlink/?LinkId=205207) veya [nasıl ı: Resim Görüntüleyici oluşturma C#?](http://go.microsoft.com/fwlink/?LinkId=205198).  
   
 > [!NOTE]
 >  Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır. Visual C# ve Visual Basic hem de Bu öğreticide ele alınmaktadır; bu nedenle kullandığınız programlama diline özgü bilgilere odaklanın.  

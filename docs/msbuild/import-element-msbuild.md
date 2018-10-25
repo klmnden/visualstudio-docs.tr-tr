@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4cba83b1e2ed91e827c8dc09dc3b3e7a02bc61
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7dd5b0aa6f0ed56aaa3315c03aeef6ed1b77ad62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077496"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839615"
 ---
 # <a name="import-element-msbuild"></a>İçeri aktarma öğesi (MSBuild)
 Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.  
@@ -55,10 +55,10 @@ Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.
 
 ### <a name="parent-elements"></a>Üst öğeler  
 
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası.|  
-|[Importgroup](../msbuild/importgroup-element.md)|Bir koleksiyonunu içeren `Import` öğeleri isteğe bağlı bir koşul altında gruplandırılır.|  
+| Öğe | Açıklama |
+| - | - |
+| [Project](../msbuild/project-element-msbuild.md) | Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası. |
+| [Importgroup](../msbuild/importgroup-element.md) | Bir koleksiyonunu içeren `Import` öğeleri isteğe bağlı bir koşul altında gruplandırılır. |
 
 ## <a name="remarks"></a>Açıklamalar  
  Kullanarak `Import` öğesi, birçok proje dosyaları için ortak olan kod yeniden. Paylaşılan koda yaptığınız tüm güncelleştirmeleri almak için tüm projeleri yayılan çünkü kod bakımını kolaylaştırır.  
@@ -75,7 +75,7 @@ Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.
 
 > [!NOTE]
 >  Koşullu içeri aktarma deyimlerini komut satırı MSBuilds içinde çalışırken, bunlar ile Msbuild'de çalışmaz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE). Proje yüklendiğinde ayarlanır yapılandırma ve platform değerleri kullanarak koşullu içeri aktarmalar değerlendirilir. Daha sonra proje dosyasında koşullar'ın bir yeniden değerlendirme gerektiren değişiklikler, örneğin, platform değiştirme [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] özellikleri ve öğeleri, ancak içeri aktarmalar koşulları reevaluates. İçeri aktarma, içeri aktarma koşullu değerlendirilmez çünkü atlanır.  
->   
+> 
 >  Bu sorunu çözmek için koşullu içeri aktarmalar koymak *.targets* dosyaları veya put kodu koşullu gibi engelleyecek bir [Seç öğesi (MSBuild)](../msbuild/choose-element-msbuild.md) blok.  
 
 ## <a name="wildcards"></a>Joker karakterler  

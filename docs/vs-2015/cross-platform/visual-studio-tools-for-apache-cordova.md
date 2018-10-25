@@ -11,31 +11,31 @@ caps.latest.revision: 7
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 33dd9ece0e7c2574aceec9fc2f6fe0c8ebf29d7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 77613d3e8303a02031da713ec149602a40ef9acb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236112"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846043"
 ---
 # <a name="visual-studio-tools-for-apache-cordova"></a>Apache Cordova için Visual Studio Araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Yaklaşık %100 kodunuzu paylaşmak ve iOS, Android ve Windows cihazlarında çalışan uygulamalar oluşturun. Bunları, sık kullandığınız web teknolojileri ile oluşturun. Apache Cordova, yerel bir phone'da kamera gibi cihaz özelliklerine erişmenizi sağlar ve en önemlisi, ücretsizdir. Visual Studio, uygulamanızı oluşturmak daha da kolay hale getirmek için bu ek özellikler ekler:  
   
--   Kolay yükleme ve Kurulum.  
+- Kolay yükleme ve Kurulum.  
   
--   Bulmanıza ve sorunları gidermeye yardımcı olmak için Gelişmiş hata ayıklayıcısı'ı seçin.  
+- Bulmanıza ve sorunları gidermeye yardımcı olmak için Gelişmiş hata ayıklayıcısı'ı seçin.  
   
--   Cihaz öykünücüleri için kolay erişim sağlar.  
+- Cihaz öykünücüleri için kolay erişim sağlar.  
   
--   Cihaz eklentilerinizi yönetmek için bir tasarımcı.  
+- Cihaz eklentilerinizi yönetmek için bir tasarımcı.  
   
--   Komut satırı arabirimi ile tamamen uyumlu bir proje.  
+- Komut satırı arabirimi ile tamamen uyumlu bir proje.  
   
- Bu araçlar kullanılabiliyor, ancak bunları deneyin henüz ziyaret edin, hazır değil bizim [özellikleri](https://www.visualstudio.com/explore/cordova-vs) sayfası, belirleriz, bunlar hakkında daha fazla.  
+  Bu araçlar kullanılabiliyor, ancak bunları deneyin henüz ziyaret edin, hazır değil bizim [özellikleri](https://www.visualstudio.com/explore/cordova-vs) sayfası, belirleriz, bunlar hakkında daha fazla.  
   
- Başlamaya hazırsanız ziyaret bizim [Web sitesi](http://taco.visualstudio.com/en-us/docs/get-started-vs-tools-apache-cordova/).
+  Başlamaya hazırsanız ziyaret bizim [Web sitesi](http://taco.visualstudio.com/en-us/docs/get-started-vs-tools-apache-cordova/).
 
 
 

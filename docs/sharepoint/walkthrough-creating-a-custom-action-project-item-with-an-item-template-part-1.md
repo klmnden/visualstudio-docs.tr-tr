@@ -18,33 +18,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 16469da5a4724a2bf536fed3b5e28da0fec68aed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4d7de98fb6fbc8bcb5466b83ac406c0e7c98475
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635336"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878069"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>İzlenecek yol: bir öğe şablonu, bölüm 1 ile özel bir eylem proje öğesi oluşturma
   Visual Studio'da SharePoint Proje sistemi kendi proje öğesi türleri oluşturarak genişletebilirsiniz. Bu kılavuzda, bir SharePoint sitesinde özel eylem oluşturmak için bir SharePoint projesine eklenen bir proje öğesi oluşturur. Bir menü öğesi özel eylemi ekler **Site eylemleri** SharePoint sitesinin menüsü.  
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
--   Visual Studio uzantısı oluşturma, yeni bir SharePoint proje öğesi için özel bir eylem türünü tanımlar. Yeni proje öğesi türüyle birden fazla özel özellikler uygular:  
+- Visual Studio uzantısı oluşturma, yeni bir SharePoint proje öğesi için özel bir eylem türünü tanımlar. Yeni proje öğesi türüyle birden fazla özel özellikler uygular:  
   
-    -   Visual Studio'da özel bir eylem için bir tasarımcı görüntüleme gibi proje öğesi ile ilgili ek görevler için bir başlangıç noktası olarak hizmet veren bir kısayol menüsü.  
+  -   Visual Studio'da özel bir eylem için bir tasarımcı görüntüleme gibi proje öğesi ile ilgili ek görevler için bir başlangıç noktası olarak hizmet veren bir kısayol menüsü.  
   
-    -   Bir geliştirici proje öğesi ve onu içeren projeyi belirli özellikleri değiştiğinde çalışan kod.  
+  -   Bir geliştirici proje öğesi ve onu içeren projeyi belirli özellikleri değiştiğinde çalışan kod.  
   
-    -   Proje öğesinde yanında özel bir simge **Çözüm Gezgini**.  
+  -   Proje öğesinde yanında özel bir simge **Çözüm Gezgini**.  
   
--   Visual Studio öğe Şablonu proje öğesi için oluşturuluyor.  
+- Visual Studio öğe Şablonu proje öğesi için oluşturuluyor.  
   
--   Proje öğesi şablon ve uzantı derlemesini dağıtmak için Visual Studio Uzantısı (VSIX) paketini derleme.  
+- Proje öğesi şablon ve uzantı derlemesini dağıtmak için Visual Studio Uzantısı (VSIX) paketini derleme.  
   
--   Hata ayıklama ve proje öğesi test etme.  
+- Hata ayıklama ve proje öğesi test etme.  
   
- Tek başına bir gidiş yolu budur. Bu kılavuzu tamamladıktan sonra proje öğesi için öğe şablonu sihirbaz ekleyerek geliştirebilirsiniz. Daha fazla bilgi için [izlenecek yol: bir öğe şablonu, bölüm 2 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
+  Tek başına bir gidiş yolu budur. Bu kılavuzu tamamladıktan sonra proje öğesi için öğe şablonu sihirbaz ekleyerek geliştirebilirsiniz. Daha fazla bilgi için [izlenecek yol: bir öğe şablonu, bölüm 2 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
   
 > [!NOTE]  
 >  Bir örnekten indirebileceğiniz [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) , özel etkinlikler için iş akışı oluşturma işlemi gösterilmektedir.  
@@ -52,26 +52,26 @@ ms.locfileid: "42635336"
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için geliştirme bilgisayarında aşağıdaki bileşenler ihtiyacınız vardır:  
   
--   Microsoft Windows, SharePoint ve Visual Studio'nun desteklenen sürümleri.
+- Microsoft Windows, SharePoint ve Visual Studio'nun desteklenen sürümleri.
   
--   [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Bu izlenecek yolda **VSIX projesi** proje öğesini dağıtmak üzere bir VSIX paketi oluşturmak için SDK'sı şablonunda. Daha fazla bilgi için [Visual Studio'da SharePoint araçlarını genişletmek](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Bu izlenecek yolda **VSIX projesi** proje öğesini dağıtmak üzere bir VSIX paketi oluşturmak için SDK'sı şablonunda. Daha fazla bilgi için [Visual Studio'da SharePoint araçlarını genişletmek](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Aşağıdaki kavramları bilgisi yardımcı, ancak gerekli değildir, bu izlenecek yolu tamamlamak için:  
+  Aşağıdaki kavramları bilgisi yardımcı, ancak gerekli değildir, bu izlenecek yolu tamamlamak için:  
   
--   SharePoint özel eylemler. Daha fazla bilgi için [özel eylem](http://go.microsoft.com/fwlink/?LinkId=177800).  
+- SharePoint özel eylemler. Daha fazla bilgi için [özel eylem](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
--   Visual Studio öğe şablonları. Daha fazla bilgi için [oluşturma proje ve öğe şablonları](/visualstudio/ide/creating-project-and-item-templates).  
+- Visual Studio öğe şablonları. Daha fazla bilgi için [oluşturma proje ve öğe şablonları](/visualstudio/ide/creating-project-and-item-templates).  
   
 ## <a name="create-the-projects"></a>Projeleri oluşturma
  Bu izlenecek yolu tamamlamak için üç projeleri oluşturmanız gerekir:  
   
--   VSIX projesi. Bu proje SharePoint Proje öğesini dağıtmak için VSIX paketi oluşturur.  
+- VSIX projesi. Bu proje SharePoint Proje öğesini dağıtmak için VSIX paketi oluşturur.  
   
--   Bir öğe şablonu projesi. Bu proje bir SharePoint projesine SharePoint proje öğesi eklemek için kullanılan bir öğe şablonu oluşturur.  
+- Bir öğe şablonu projesi. Bu proje bir SharePoint projesine SharePoint proje öğesi eklemek için kullanılan bir öğe şablonu oluşturur.  
   
--   Bir sınıf kitaplığı projesi. Bu proje, SharePoint Proje öğesinin davranışını tanımlayan bir Visual Studio uzantısı uygular.  
+- Bir sınıf kitaplığı projesi. Bu proje, SharePoint Proje öğesinin davranışını tanımlayan bir Visual Studio uzantısı uygular.  
   
- İzlenecek yol, proje oluşturmaya başlayın.  
+  İzlenecek yol, proje oluşturmaya başlayın.  
   
 #### <a name="to-create-the-vsix-project"></a>VSIX projesi oluşturmak için  
   

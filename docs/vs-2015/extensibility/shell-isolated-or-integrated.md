@@ -19,12 +19,12 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0001ff15bd6f74ea0b993c73a9c458d5724a28a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 01a16f7711b35d8c1062117d486fdf00ab998566
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266129"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836001"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (yalıtılmış veya tümleşik)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ Tümleşik veya yalıtılmış modda, kendi Visual Studio tabanlı bir uygulama 
   
 > [!IMPORTANT]
 >  [Son kullanıcı lisans sözleşmesi (EULA)](https://www.visualstudio.com/en-us/support/legal/mt171552) Kabukları Visual Studio tümleşik ve yalıtılmış bir bölüm veri toplamayı içerir (**bölüm 3. Veri**).  Bu, kullanıcıların uygulamanıza yapı tümleşik veya yalıtılmış Kabuk yazılım ya da Microsoft tarafından toplanabilir müşteri kullanım verilerini açıklar. Daha fazla bilgi için [Microsoft Visual Studio ürün ailesi gizlilik bildirimi](https://www.visualstudio.com/en-us/dn948229).  
->   
+> 
 >  Uygulamanızı müşterilerinizin ayrı kullanım verilerini toplamak, uygun dikkat edin, Topla, uygulamanızın kullanıcılara sağlamanız gerekir.  Visual Studio Yazılım Geliştirme Seti lisans göre uygulamanızın bir parçası olarak yalıtılmış veya tümleşik Kabuk yazılım dağıttığınızda aşağıdakilerden birini içermelidir:  
->   
->  -   Uygulama lisansı bir parçası olarak son kullanıcı lisans sözleşmesi  
-> -   Visual Studio koruyan koşulları kabul etmeniz müşterilerinizin gerektiren kendi EULA'yı tümleşik veya kabuk yazılım için Microsoft son kullanıcı lisans koşullarını olarak yalıtılmış Kabuk en azından  
+> 
+> - Uygulama lisansı bir parçası olarak son kullanıcı lisans sözleşmesi  
+>   -   Visual Studio koruyan koşulları kabul etmeniz müşterilerinizin gerektiren kendi EULA'yı tümleşik veya kabuk yazılım için Microsoft son kullanıcı lisans koşullarını olarak yalıtılmış Kabuk en azından  
   
 ## <a name="additional-resources"></a>Ek Kaynaklar  
  Yeniden dağıtılabilir paketleri hakkında daha fazla bilgi için bkz: [Visual Studio genişletilebilirlik indirmeleri](http://go.microsoft.com/fwlink/?LinkID=119298) Web sitesi.  

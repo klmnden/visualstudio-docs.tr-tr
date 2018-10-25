@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c90270876721f2a43c78375108608064d325b39a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e162b1fdc8f775fc7b4d95249ceeac8d86cd0b74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260227"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836872"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Denetim akışını UML sıralı diyagramlarında parçalarla açıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,46 +57,46 @@ Bir UML sıralı diyagramda *Birleşik Parçalar* döngüleri, dalları ve başk
   
 #### <a name="to-create-a-combined-fragment"></a>Birleştirilmiş parça oluşturmak için  
   
-1.  Bir iletiyi veya iletileri tümü aynı yaşam çizgisinin veya yürütme oluşması başlatmak, bir dizi seçin.  
+1. Bir iletiyi veya iletileri tümü aynı yaşam çizgisinin veya yürütme oluşması başlatmak, bir dizi seçin.  
   
-    > [!NOTE]
-    >  Birden fazla ileti seçerseniz, kesintisiz bir dizi oluşturması gerekir.  
+   > [!NOTE]
+   >  Birden fazla ileti seçerseniz, kesintisiz bir dizi oluşturması gerekir.  
   
-2.  İletileri birine sağ tıklayın, fareyle **Surround With**ve gibi istediğiniz birleştirilmiş parça türü ardından **Alt birleştirilmiş parça**.  
+2. İletileri birine sağ tıklayın, fareyle **Surround With**ve gibi istediğiniz birleştirilmiş parça türü ardından **Alt birleştirilmiş parça**.  
   
-     Yeni bir birleştirilmiş parça görünür. Başlık gibi seçtiğiniz birleştirilmiş parça türü belirtir **Alt**.  
+    Yeni bir birleştirilmiş parça görünür. Başlık gibi seçtiğiniz birleştirilmiş parça türü belirtir **Alt**.  
   
-     Birleştirilmiş parça seçtiğiniz iletileri içeren bir parça yoktur.  
+    Birleştirilmiş parça seçtiğiniz iletileri içeren bir parça yoktur.  
   
- Daha fazla etkileşim işlenenleri birleştirilmiş parça için bazı türleri ekleyebilirsiniz.  
+   Daha fazla etkileşim işlenenleri birleştirilmiş parça için bazı türleri ekleyebilirsiniz.  
   
- İletileri birleştirilmiş parça içinde yeniden sonra seçin **düzeni yeniden Düzenle** birleştirilmiş parça çerçeve yeniden boyutlandırmak için kısayol menüsünde.  
+   İletileri birleştirilmiş parça içinde yeniden sonra seçin **düzeni yeniden Düzenle** birleştirilmiş parça çerçeve yeniden boyutlandırmak için kısayol menüsünde.  
   
 #### <a name="to-add-a-new-interaction-operand-to-a-combined-fragment"></a>Yeni bir etkileşim işleneni için birleştirilmiş bir parça eklemek için  
   
-1.  Etkileşim işleneni (2) dışında herhangi bir kapsanan parça ve birleştirilmiş parça başlığının altına içinde boş bir alana sağ tıklayın.  
+1. Etkileşim işleneni (2) dışında herhangi bir kapsanan parça ve birleştirilmiş parça başlığının altına içinde boş bir alana sağ tıklayın.  
   
-2.  İşaret **ekleme**.  
+2. İşaret **ekleme**.  
   
-3.  Tıklayın **önce etkileşim işleneni**, veya **sonra etkileşim işleneni**.  
+3. Tıklayın **önce etkileşim işleneni**, veya **sonra etkileşim işleneni**.  
   
-4.  İleti araçları kullanarak yeni etkileşim işleneni içinde veya var olan iletileri yapıştırarak iletileri ekleyebilirsiniz.  
+4. İleti araçları kullanarak yeni etkileşim işleneni içinde veya var olan iletileri yapıştırarak iletileri ekleyebilirsiniz.  
   
- Ayarlayabileceğiniz **Guard** iletilerin içinde gerçekleştirilir koşulları tanımlamak için etkileşim işleneninin özelliği. Örneğin, bir **döngü** birleştirilmiş parça, bu sırada döngünün devam koşulu belirtmek için koruma kullanabilirsiniz. İçinde bir **Alt** birleşik parça, her etkileşimi işlenen için ayrı bir koşul belirtebilirsiniz.  
+   Ayarlayabileceğiniz **Guard** iletilerin içinde gerçekleştirilir koşulları tanımlamak için etkileşim işleneninin özelliği. Örneğin, bir **döngü** birleştirilmiş parça, bu sırada döngünün devam koşulu belirtmek için koruma kullanabilirsiniz. İçinde bir **Alt** birleşik parça, her etkileşimi işlenen için ayrı bir koşul belirtebilirsiniz.  
   
 #### <a name="to-set-the-guard-of-an-interaction-operand"></a>Etkileşim işleneninin ayarlamak için  
   
-1.  Etkileşim işleneni (2) dışında herhangi bir kapsanan parça içinde boş bir alana tıklayın.  
+1. Etkileşim işleneni (2) dışında herhangi bir kapsanan parça içinde boş bir alana tıklayın.  
   
-     Etkileşim işleneni ve koruma koşulu etrafında bir seçim kenarlığı görüntülenir.  
+    Etkileşim işleneni ve koruma koşulu etrafında bir seçim kenarlığı görüntülenir.  
   
-     Başlıkta **özellikleri** penceresi şunu gösterir **etkileşim işleneni**.  
+    Başlıkta **özellikleri** penceresi şunu gösterir **etkileşim işleneni**.  
   
-2.  Koruma koşulunu yazın.  
+2. Koruma koşulunu yazın.  
   
-     Koşul, parça (4) en görünür.  
+    Koşul, parça (4) en görünür.  
   
- Birleştirilmiş parçaları bazı tür özelliklerini ayarlayabilirsiniz.  
+   Birleştirilmiş parçaları bazı tür özelliklerini ayarlayabilirsiniz.  
   
 #### <a name="to-set-or-view-the-properties-of-a-combined-fragment"></a>Ayarlamak veya birleştirilmiş parça özelliklerini görüntülemek için  
   

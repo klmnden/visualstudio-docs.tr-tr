@@ -16,12 +16,12 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: e4a8bc0f4b276ed649cdff986bdfc56cf8c77e06
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 94d785ce55b57e35b0880537e099cbc3e03d20ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586228"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855826"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX Dil Paketi Şeması 2.0 başvurusu
 
@@ -34,6 +34,7 @@ Dil paketi dosyasının kök öğe `<PackageLanguagePackManifest>`, özniteliği
 ### <a name="packagelangaugepackmanifest-element"></a>PackageLangaugePackManifest öğesi
 
 İçinde `<PackageLanguagePackManifest>` öğesi şu öğe bulunmalıdır:
+
 |Başlık|Açıklama|
 |-----------|-----------------|
 |`<Metadata>`| Tüm yerelleştirilmiş paket meta verileri için kapsayıcı öğe
@@ -41,6 +42,7 @@ Dil paketi dosyasının kök öğe `<PackageLanguagePackManifest>`, özniteliği
 ### <a name="metadata-element"></a>Meta veri öğesi
 
 İçinde `<Metadata>` öğesi aşağıdaki öğelere sahip olabilir:
+
 |Başlık|Açıklama|
 |-----------|-----------------|
 |`<DisplayName>`|Yerelleştirilmiş adı uzantısının yüklenmesi|
