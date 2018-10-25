@@ -20,12 +20,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9821cde6c159712ff44438b74eea0f8e01247155
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 377815adc7751841e2a2a3bb2f4dc8b51beecdea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791828"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941288"
 ---
 # <a name="dbgpropinfoflags"></a>DBGPROP_INFO_FLAGS
 Belirtmek için kullanılan `DebugPropertyInfo` alanları  
@@ -61,11 +61,11 @@ enum {
  Başlatır `dwAttrib` alan.  
   
  DBGPROP_INFO_DEBUGPROP  
- Başlatır `pDebugProp` içeren alanın bir `IDebugProperty` arabirimi.  
+ Başlatır `pDebugProp` içeren alan bir `IDebugProperty` arabirimi.  
   
  DBGPROP_INFO_AUTOEXPAND  
- Varsa, bu nesne türü değeri alanı otomatik genişletilmiş değeri içermesi gerektiğini belirtir.  
+ Varsa, bu nesne türü için değer alanını otomatik olarak genişletilmiş değeri içermesi gerektiğini belirtir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Debugpropertyınfo yapısı](../../winscript/reference/debugpropertyinfo-structure.md)   
- [Idebugproperty arabirimi](../../winscript/reference/idebugproperty-interface.md)
+ [IDebugProperty Arabirimi](../../winscript/reference/idebugproperty-interface.md)

@@ -10,37 +10,37 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 884f97acb6ff0e54c641c3a5df9c5edba9868e50
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f88aa5b9983390771a9b869a6e141802e94d684
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184112"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949818"
 ---
 # <a name="image-library-viewer"></a>Görüntü Kitaplığı Görüntüleyicisi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Visual Studio görüntü kitaplığı Görüntüleyicisi araç, yüklemek ve görüntü bildirimler, bunları Visual Studio olduğu aynı şekilde yönetmek kullanıcının arayın. Kullanıcı, arka plan, boyutları, DPI, yüksek karşıtlık ve diğer ayarlarını değiştirebilirsiniz. Araç ayrıca her görüntü bildirimi yükleme bilgilerini görüntüler ve görüntü bildiriminde her görüntü kaynağı bilgilerini görüntüler. Bu araç için yararlıdır:  
   
-1.  Hataları tanılama  
+1. Hataları tanılama  
   
-2.  Özel görüntü Bildirimlerde kalmasını sağlama öznitelikleri ayarlandığını  
+2. Özel görüntü Bildirimlerde kalmasını sağlama öznitelikleri ayarlandığını  
   
-3.  Visual Studio uzantı Visual Studio stili uyan görüntüleri kullanabilmesi için Visual Studio görüntü kataloğunda görüntüleri için arama  
+3. Visual Studio uzantı Visual Studio stili uyan görüntüleri kullanabilmesi için Visual Studio görüntü kataloğunda görüntüleri için arama  
   
- ![Görüntü kitaplığı Görüntüleyicisi Hero](../../extensibility/internals/media/image-library-viewer-hero.png "görüntü kitaplığı Görüntüleyicisi Hero")  
+   ![Görüntü kitaplığı Görüntüleyicisi Hero](../../extensibility/internals/media/image-library-viewer-hero.png "görüntü kitaplığı Görüntüleyicisi Hero")  
   
- **Resim bilinen adı**  
+   **Resim bilinen adı**  
   
- Bir resim bilinen adı (veya kısa için bilinen ad) bir resim varlığı veya Resim Kitaplığı'ndaki Görüntü listesi varlığı benzersiz olarak tanımlayan bir GUID:ID çiftidir.  
+   Bir resim bilinen adı (veya kısa için bilinen ad) bir resim varlığı veya Resim Kitaplığı'ndaki Görüntü listesi varlığı benzersiz olarak tanımlayan bir GUID:ID çiftidir.  
   
- **Görüntü bildirim dosyaları**  
+   **Görüntü bildirim dosyaları**  
   
- Görüntü bildirimi (.imagemanifest) dosyaları bu varlıkları ve gerçek görüntü veya her varlık temsil eden görüntüleri temsil eden bir takma ad, resim varlıkları kümesini tanımlayan XML dosyalarıdır. Tek başına resimler görüntü bildirimleri tanımlayabilirsiniz veya eski kullanıcı Arabirimi desteği görüntü listeler. Ayrıca, varlık veya ayrı ayrı görüntülere her varlık arkasında ne zaman ve bu varlıkları nasıl görüntüleneceğini değiştirmek için ayarlanabilen öznitelikleri vardır.  
+   Görüntü bildirimi (.imagemanifest) dosyaları bu varlıkları ve gerçek görüntü veya her varlık temsil eden görüntüleri temsil eden bir takma ad, resim varlıkları kümesini tanımlayan XML dosyalarıdır. Tek başına resimler görüntü bildirimleri tanımlayabilirsiniz veya eski kullanıcı Arabirimi desteği görüntü listeler. Ayrıca, varlık veya ayrı ayrı görüntülere her varlık arkasında ne zaman ve bu varlıkları nasıl görüntüleneceğini değiştirmek için ayarlanabilen öznitelikleri vardır.  
   
- **Görüntü bildirim şeması**  
+   **Görüntü bildirim şeması**  
   
- Tam görüntü bildiriminin şöyle görünür:  
+   Tam görüntü bildiriminin şöyle görünür:  
   
 ```xml  
 <ImageManifest>  

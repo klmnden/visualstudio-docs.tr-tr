@@ -16,12 +16,12 @@ ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 28ca37af638802e3b9efd160b00d1b245d3ae4a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f66e32be2625347f413f3a796396a313b02aad7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288346"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949239"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>Proje Üreteçlerini Kullanarak Proje Örnekleri Oluşturma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,19 +39,19 @@ Proje türlerinde [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kullanan bir *
 ## <a name="creating-an-owned-project"></a>Sahip olunan bir proje oluşturma  
  Bir sahip iki aşamada sahibi bir proje oluşturur:  
   
-1.  Çağırarak <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.PreCreateForOwner%2A> yöntemi. Bu sahibi proje giriş kontrol etme hakkındaki bağlı bir toplu proje nesne oluşturmak için bir şans verir `IUnknown`. Sahip olunan proje iç geçirir `IUnknown` ve tekrar sahibi projeye toplanan nesne. Bu sahibi proje iç depolamak için bir şans verir `IUnknown`.  
+1. Çağırarak <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.PreCreateForOwner%2A> yöntemi. Bu sahibi proje giriş kontrol etme hakkındaki bağlı bir toplu proje nesne oluşturmak için bir şans verir `IUnknown`. Sahip olunan proje iç geçirir `IUnknown` ve tekrar sahibi projeye toplanan nesne. Bu sahibi proje iç depolamak için bir şans verir `IUnknown`.  
   
-2.  Çağırarak <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A> yöntemi. Çağırmak yerine bu yöntem çağrıldığında, sahip olunan proje tüm örnekleme mu `IVsProjectFactory::CreateProject` sahibi olmayan projeler için durum olduğu gibi. Giriş `VSOWNEDPROJECTOBJECT` sabit listesi, genellikle toplu sahip olunan proje. Sahip olunan proje proje nesne zaten oluşturulmuş olup olmadığını belirlemek için bu değişkeni kullanın (tanımlama bilgisi eşit değil NULL) veya (tanımlama bilgisi eşittir NULL) oluşturulması gerekir.  
+2. Çağırarak <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A> yöntemi. Çağırmak yerine bu yöntem çağrıldığında, sahip olunan proje tüm örnekleme mu `IVsProjectFactory::CreateProject` sahibi olmayan projeler için durum olduğu gibi. Giriş `VSOWNEDPROJECTOBJECT` sabit listesi, genellikle toplu sahip olunan proje. Sahip olunan proje proje nesne zaten oluşturulmuş olup olmadığını belirlemek için bu değişkeni kullanın (tanımlama bilgisi eşit değil NULL) veya (tanımlama bilgisi eşittir NULL) oluşturulması gerekir.  
   
- Proje türleri, benzersiz bir proje GUID cocreatable bir COM nesnesi CLSID'sini benzer tarafından tanımlanır. Genellikle, bir proje fabrikası mümkün olsa bir tek proje türünün örneğini oluşturmak bir proje fabrikası işleyen birden fazla proje türü GUID işleyin.  
+   Proje türleri, benzersiz bir proje GUID cocreatable bir COM nesnesi CLSID'sini benzer tarafından tanımlanır. Genellikle, bir proje fabrikası mümkün olsa bir tek proje türünün örneğini oluşturmak bir proje fabrikası işleyen birden fazla proje türü GUID işleyin.  
   
- Proje türleri belirli dosya adı uzantısı ile ilişkilendirilir. Bir kullanıcı var olan bir proje dosyasını açmaya veya şablon kopyalayarak yeni bir proje oluşturma girişimi şu IDE uzantısı dosyada karşılık gelen proje GUID'i belirlemek için kullanır.  
+   Proje türleri belirli dosya adı uzantısı ile ilişkilendirilir. Bir kullanıcı var olan bir proje dosyasını açmaya veya şablon kopyalayarak yeni bir proje oluşturma girişimi şu IDE uzantısı dosyada karşılık gelen proje GUID'i belirlemek için kullanır.  
   
- Belirli bir türün varolan bir projeyi açın veya yeni bir proje oluşturmak gerekir yoksa IDE bilgileri [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0\Projects] sistem kayıt defteri, bulmak için kullandığı IDE belirler hemen sonra VSPackage'ı gerekli proje fabrikası uygular. IDE bu VSPackage'ı yükler. İçinde <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> yöntemi VSPackage'ı kaydetmeniz gerekir, proje fabrikası IDE ile çağırarak <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> yöntemi.  
+   Belirli bir türün varolan bir projeyi açın veya yeni bir proje oluşturmak gerekir yoksa IDE bilgileri [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0\Projects] sistem kayıt defteri, bulmak için kullandığı IDE belirler hemen sonra VSPackage'ı gerekli proje fabrikası uygular. IDE bu VSPackage'ı yükler. İçinde <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> yöntemi VSPackage'ı kaydetmeniz gerekir, proje fabrikası IDE ile çağırarak <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> yöntemi.  
   
- Birincil yöntemi `IVsProjectFactory` arabirimi <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> olduğu iki senaryo ele: mevcut bir projeyi açmak ve yeni proje oluşturma. Çoğu proje proje durumlarına proje dosyasında depolar. Genellikle, yeni projeler şablon dosyasının bir kopyasını geçirilen yapma tarafından oluşturulan `CreateProject` yöntemi ve sonra bu kopyayı açabilirler. Mevcut projeleri örneği tarafından geçirilen proje dosyası açılırken doğrudan `CreateProject` yöntemi. `CreateProject` Yöntemi, kullanıcıya gerekli olarak ek kullanıcı Arabirimi özelliklerini görüntüleyebilirsiniz.  
+   Birincil yöntemi `IVsProjectFactory` arabirimi <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> olduğu iki senaryo ele: mevcut bir projeyi açmak ve yeni proje oluşturma. Çoğu proje proje durumlarına proje dosyasında depolar. Genellikle, yeni projeler şablon dosyasının bir kopyasını geçirilen yapma tarafından oluşturulan `CreateProject` yöntemi ve sonra bu kopyayı açabilirler. Mevcut projeleri örneği tarafından geçirilen proje dosyası açılırken doğrudan `CreateProject` yöntemi. `CreateProject` Yöntemi, kullanıcıya gerekli olarak ek kullanıcı Arabirimi özelliklerini görüntüleyebilirsiniz.  
   
- Proje hiçbir dosya da kullanabilir ve bunun yerine, bir veritabanı veya Web sunucusu gibi dosya sistemi dışındaki bir depolama mekanizması proje durumunu depolar. Dosya adı parametresi bu durumda, geçirilen `CreateProject` yöntemi aslında bir dosya sistemi yolu ancak benzersiz bir dize değil; bir URL — proje verilerini tanımlamak için. Geçirilen şablon dosyaları kopyalama gerekmez `CreateProject` uygun Oluşturma sırası yürütülecek tetiklemek için.  
+   Proje hiçbir dosya da kullanabilir ve bunun yerine, bir veritabanı veya Web sunucusu gibi dosya sistemi dışındaki bir depolama mekanizması proje durumunu depolar. Dosya adı parametresi bu durumda, geçirilen `CreateProject` yöntemi aslında bir dosya sistemi yolu ancak benzersiz bir dize değil; bir URL — proje verilerini tanımlamak için. Geçirilen şablon dosyaları kopyalama gerekmez `CreateProject` uygun Oluşturma sırası yürütülecek tetiklemek için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>   

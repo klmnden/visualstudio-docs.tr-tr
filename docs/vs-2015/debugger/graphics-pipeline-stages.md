@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1669a13b047236044e5f7c65c2d27e187096b62b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 140dea9d65260a4ea5140e09df5876a59e64b2de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267468"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938610"
 ---
 # <a name="graphics-pipeline-stages"></a>Grafik Ardışık Düzen Aşamaları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Grafik ardışık düzen Aşamaları penceresinde bir bağımsız çizim çağr�
 ### <a name="links-to-related-graphics-objects"></a>İlişkili grafik nesneleri bağlantılar  
  Neden bir çizim çağrısı belirli bir şekilde grafik ardışık düzen ile etkileşime giren belirlemek için bazen ek bağlam gerekir. Bu ek bağlam bulmayı kolaylaştırmak için grafik işlem hattında neler grafik ardışık düzen Aşamaları penceresinde bağlantılar ek bağlam sağlamak veya daha fazla nesne ilişkili.  
   
--   Direct3D 12'deki bu nesne, genellikle komut listesi alır.  
+- Direct3D 12'deki bu nesne, genellikle komut listesi alır.  
   
--   Direct3D 11'de bu nesne, genellikle bir grafik cihaz bağlamı olur.  
+- Direct3D 11'de bu nesne, genellikle bir grafik cihaz bağlamı olur.  
   
- Bu bağlantıların grafik ardışık düzen aşamaları penceresinin sol alt köşesinde bulunan geçerli grafik olay imzası bir parçasıdır. Herhangi bir nesne hakkında daha ayrıntılı incelemek için bu bağlantıları izleyin.  
+  Bu bağlantıların grafik ardışık düzen aşamaları penceresinin sol alt köşesinde bulunan geçerli grafik olay imzası bir parçasıdır. Herhangi bir nesne hakkında daha ayrıntılı incelemek için bu bağlantıları izleyin.  
   
 ### <a name="viewing-and-debugging-shader-code"></a>Görüntüleme ve gölgelendirici kodunda hata ayıklama  
  İnceleyin ve ardışık düzen Aşamaları penceresinde ilgili kendi aşamaları alttaki denetimleri kullanarak köşe, kabuk, etki alanı, geometri ve piksel gölgelendiricilerini kod hata ayıklama.  

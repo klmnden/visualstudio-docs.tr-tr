@@ -20,15 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4bbf07e4b8475c45f5f9ea1818a51b5670e23454
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9fb00f8a0986d5ead81e36888a9b714244d1230c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200370"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928451"
 ---
 # <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: Değişmez değerler doğru yazılmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|LiteralsShouldBeSpelledCorrectly|
@@ -42,15 +43,15 @@ ms.locfileid: "49200370"
 ## <a name="rule-description"></a>Kural Tanımı
  Bu kural, bir parametre veya bir özellik için bir değer olarak geçirilen bir sabit dize denetler veya aşağıdaki durumlarda daha fazla doğrudur:
 
--   <xref:System.ComponentModel.LocalizableAttribute> Özniteliği parametre ya da özelliğin true.
+- <xref:System.ComponentModel.LocalizableAttribute> Özniteliği parametre ya da özelliğin true.
 
--   Parametresi veya özellik adı "Metin", "İleti" veya "Başlık" içeriyor.
+- Parametresi veya özellik adı "Metin", "İleti" veya "Başlık" içeriyor.
 
--   "Value" veya "biçim" Console.Write veya Console.WriteLine yönteme geçirilen dize parametresi adıdır.
+- "Value" veya "biçim" Console.Write veya Console.WriteLine yönteme geçirilen dize parametresi adıdır.
 
- Bu kural sabit dizesini bileşik sözcüklerin kelimelere, ayrıştırır ve her kelimenin/belirtecin yazımını denetler. Ayrıştırma algoritma hakkında daha fazla bilgi için bkz. [CA1704: tanımlayıcılar yazıldığından](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+  Bu kural sabit dizesini bileşik sözcüklerin kelimelere, ayrıştırır ve her kelimenin/belirtecin yazımını denetler. Ayrıştırma algoritma hakkında daha fazla bilgi için bkz. [CA1704: tanımlayıcılar yazıldığından](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
- Varsayılan olarak, yazım denetimcisi (TR) İngilizce sürümü kullanılır.
+  Varsayılan olarak, yazım denetimcisi (TR) İngilizce sürümü kullanılır.
 
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
  Bu kural ihlalini düzeltmek için sözcük yazımını düzeltin ya da sözcüğü bir özel sözlüğüne ekleyin. Özel sözlükler kullanma hakkında daha fazla bilgi için bkz: [nasıl yapılır: kod çözümleme dizinini özelleştirme](../code-quality/how-to-customize-the-code-analysis-dictionary.md).

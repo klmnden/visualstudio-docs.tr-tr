@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a0ea42942fc06225bc5c64c02eba85a766a94ef1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2c2a5366a9772060a3e94de14b12f5d2ae62cbdf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381113"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949324"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Nasıl yapılır: Web Performans Test Sonuçları Görüntüleyicisi için bir Visual Studio eklentisi oluşturma
 
@@ -49,28 +49,28 @@ Bir Visual Studio tümleşik geliştirme ortamında (IDE) çalışan derlenmiş 
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>Eklenti Sihirbazı'nı kullanarak bir eklenti oluşturmak için
 
-1.  İçinde **Çözüm Gezgini**, çözüme sağ tıklayın, seçin **Ekle**ve ardından **yeni proje**.
+1. İçinde **Çözüm Gezgini**, çözüme sağ tıklayın, seçin **Ekle**ve ardından **yeni proje**.
 
-     **Yeni proje** iletişim kutusu görüntülenir.
+    **Yeni proje** iletişim kutusu görüntülenir.
 
-2.  Altında **yüklü şablonlar**, genişletme **diğer proje türleri** seçip **genişletilebilirlik**.
+2. Altında **yüklü şablonlar**, genişletme **diğer proje türleri** seçip **genişletilebilirlik**.
 
-3.  Şablonlar listesinde seçin **Visual Studio eklentisini**.
+3. Şablonlar listesinde seçin **Visual Studio eklentisini**.
 
-4.  Altında **adı**, eklenti için bir ad yazın. Örneğin, **WebPerfTestResultsViewerAddin**.
+4. Altında **adı**, eklenti için bir ad yazın. Örneğin, **WebPerfTestResultsViewerAddin**.
 
-5.  Seçin **Tamam**.
+5. Seçin **Tamam**.
 
-     Visual Studio **Eklenti Sihirbazı** başlatır.
+    Visual Studio **Eklenti Sihirbazı** başlatır.
 
-6.  Seçin **sonraki**.
+6. Seçin **sonraki**.
 
-7.  Üzerinde **bir programlama dili seçin** sayfasında, eklentiyi yazmak için kullanmak istediğiniz programlama dilini seçin.
+7. Üzerinde **bir programlama dili seçin** sayfasında, eklentiyi yazmak için kullanmak istediğiniz programlama dilini seçin.
 
-    > [!NOTE]
-    > Bu konu Visual C# örnek kodunu kullanır.
+   > [!NOTE]
+   > Bu konu Visual C# örnek kodunu kullanır.
 
-8.  Üzerinde **seçin, bir uygulama ana bilgisayarı** sayfasında **Visual Studio** temizleyin **Visual Studio Macros**.
+8. Üzerinde **seçin, bir uygulama ana bilgisayarı** sayfasında **Visual Studio** temizleyin **Visual Studio Macros**.
 
 9. Seçin **sonraki**.
 
@@ -96,18 +96,18 @@ Bir Visual Studio tümleşik geliştirme ortamında (IDE) çalışan derlenmiş 
 
      Kod ekleyeceksiniz *Connect.cs* bu WebPerfTestResultsViewerAddin projesi tarafından başvurulacak olan bir kullanıcı denetimi oluşturur aşağıdaki yordamda sonra dosya.
 
- Bir eklenti oluşturulduktan sonra etkinleştirilmeden önce Visual Studio ile kaydetmelisiniz **Eklenti Yöneticisi**. Sahip bir XML dosyası kullanarak bunu bir *.addin* dosya adı uzantısı.
+    Bir eklenti oluşturulduktan sonra etkinleştirilmeden önce Visual Studio ile kaydetmelisiniz **Eklenti Yöneticisi**. Sahip bir XML dosyası kullanarak bunu bir *.addin* dosya adı uzantısı.
 
- *.Addin* dosya içinde görüntülemek için Visual Studio gerektiren bilgilerin açıklar **Eklenti Yöneticisi**. Visual Studio başladığında bakar *.addin* dosya konumu için tüm kullanılabilir *.addin* dosyaları. Herhangi birini bulursa, XML dosyasını okur ve verir **Eklenti Yöneticisi** eklenti tıklatıldığında başlatmak için gerekli bilgileri.
+    *.Addin* dosya içinde görüntülemek için Visual Studio gerektiren bilgilerin açıklar **Eklenti Yöneticisi**. Visual Studio başladığında bakar *.addin* dosya konumu için tüm kullanılabilir *.addin* dosyaları. Herhangi birini bulursa, XML dosyasını okur ve verir **Eklenti Yöneticisi** eklenti tıklatıldığında başlatmak için gerekli bilgileri.
 
- *.Addin* dosyası, eklenti kullanarak oluşturduğunuzda otomatik olarak oluşturulursa **Eklenti Sihirbazı**.
+    *.Addin* dosyası, eklenti kullanarak oluşturduğunuzda otomatik olarak oluşturulursa **Eklenti Sihirbazı**.
 
 ### <a name="add-in-file-locations"></a>Eklenti dosyası konumları
 
 İki kopyalar *.addin* dosyaları tarafından otomatik olarak oluşturulur **Eklenti Sihirbazı**gibi:
 
 |**. Eklenti dosyası**|**Açıklama**|
-|------------------------------|----------------------------|---------------------|
+|-|----------------------------|-|
 |Kök proje klasörü|Eklenti projesinin dağıtımı için kullanılır. Projeye düzenleme kolaylığı dahil ve XCopy tarzı dağıtımının yerel yolu vardır.|
 |Eklenti klasörü|Eklentinin hata ayıklama ortamında çalıştırılması için kullanılır. Her zaman geçerli yapı yapılandırmasının çıktı yolunu göstermelidir.|
 

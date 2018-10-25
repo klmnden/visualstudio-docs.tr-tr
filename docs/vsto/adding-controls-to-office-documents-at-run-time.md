@@ -25,12 +25,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9ac0eb6ee06d22eefb3b402df74ae4bf9735ff9c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2a23a779058276460f33b18ed881abcc4d40eca7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677210"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941184"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Office belgelerine çalışma zamanında denetimler ekleme
   Microsoft Office Word belgesi ve Microsoft Office Excel çalışma zamanında denetimler ekleyebilirsiniz. Ayrıca bunları çalışma zamanında kaldırabilirsiniz. Çalışma zamanında ekleyip denetimleri çağrılır *Dinamik denetimleri*.  
@@ -39,13 +39,13 @@ ms.locfileid: "35677210"
 
  Bu konuda aşağıda açıklanmıştır:  
 
--   [Denetimlerini çalışma zamanında denetim koleksiyonu yönetmek](#ControlsCollection).  
+- [Denetimlerini çalışma zamanında denetim koleksiyonu yönetmek](#ControlsCollection).  
 
--   [Konak denetimleri belgelerine ekleme](#HostControls).  
+- [Konak denetimleri belgelerine ekleme](#HostControls).  
 
--   [Belgelerine Windows Forms denetimleri ekleme](#WindowsForms).  
+- [Belgelerine Windows Forms denetimleri ekleme](#WindowsForms).  
 
- ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [nasıl ı: ekleme denetimleri belgeye yüzey çalışma zamanında?](http://go.microsoft.com/fwlink/?LinkId=132782).  
+  ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [nasıl ı: ekleme denetimleri belgeye yüzey çalışma zamanında?](http://go.microsoft.com/fwlink/?LinkId=132782).  
 
 ##  <a name="ControlsCollection"></a> Denetimlerini çalışma zamanında denetim koleksiyonu kullanarak yönetme  
  Ekle, Al veya denetimlerini çalışma zamanında kaldırmak için yardımcı yöntemleri kullanmak <xref:Microsoft.Office.Tools.Excel.ControlCollection> ve <xref:Microsoft.Office.Tools.Word.ControlCollection> nesneleri.  
@@ -82,19 +82,19 @@ ms.locfileid: "35677210"
 ##  <a name="HostControls"></a> Konak denetimleri belgelere ekleme  
  Konak denetimleri program aracılığıyla belgelere eklediğinizde, denetimin benzersiz olarak tanımlayan bir ad sağlamanız gerekir ve belgeye denetim eklemek nereye belirtmeniz gerekir. Ayrıntılı yönergeler için aşağıdaki konulara bakın:  
 
--   [Nasıl yapılır: çalışma sayfalarına ListObject denetimleri ekleme](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
+- [Nasıl yapılır: çalışma sayfalarına ListObject denetimleri ekleme](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
 
--   [Nasıl yapılır: çalışma sayfalarına NamedRange denetimleri ekleme](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
+- [Nasıl yapılır: çalışma sayfalarına NamedRange denetimleri ekleme](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
 
--   [Nasıl yapılır: çalışma sayfalarına Grafik denetimleri ekleme](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+- [Nasıl yapılır: çalışma sayfalarına Grafik denetimleri ekleme](../vsto/how-to-add-chart-controls-to-worksheets.md)  
 
--   [Nasıl yapılır: içerik ekleme denetimlerine Word belgeleri](../vsto/how-to-add-content-controls-to-word-documents.md)  
+- [Nasıl yapılır: içerik ekleme denetimlerine Word belgeleri](../vsto/how-to-add-content-controls-to-word-documents.md)  
 
--   [Nasıl yapılır: Word belgelerine yer işareti denetimi ekleme](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
+- [Nasıl yapılır: Word belgelerine yer işareti denetimi ekleme](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
 
- Konak denetimleri hakkında daha fazla bilgi için bkz: [konak öğelerini ve denetimlerine genel bakış için ana bilgisayar](../vsto/host-items-and-host-controls-overview.md).  
+  Konak denetimleri hakkında daha fazla bilgi için bkz: [konak öğelerini ve denetimlerine genel bakış için ana bilgisayar](../vsto/host-items-and-host-controls-overview.md).  
 
- Bir Belge kaydedildiğinde ve sonra kapalı olduğunda, tüm dinamik olarak oluşturulmuş konak denetimleri, olaylarından kesilir ve kendi veri bağlama işlevselliğini kaybeder. Çözümünüze belge açıldığında konak denetimleri yeniden oluşturmak için kod ekleyebilirsiniz. Daha fazla bilgi için [Office belgelerinde Dinamik denetimleri kalıcı](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+  Bir Belge kaydedildiğinde ve sonra kapalı olduğunda, tüm dinamik olarak oluşturulmuş konak denetimleri, olaylarından kesilir ve kendi veri bağlama işlevselliğini kaybeder. Çözümünüze belge açıldığında konak denetimleri yeniden oluşturmak için kod ekleyebilirsiniz. Daha fazla bilgi için [Office belgelerinde Dinamik denetimleri kalıcı](../vsto/persisting-dynamic-controls-in-office-documents.md).  
 
 > [!NOTE]  
 >  Yardımcı yöntemler sağlanmadı aşağıdaki denetimleri barındırmak için bu denetimleri belgeleri program aracılığıyla eklenemez çünkü: <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>, ve <xref:Microsoft.Office.Tools.Word.XMLNodes>.  
@@ -110,36 +110,36 @@ ms.locfileid: "35677210"
 ### <a name="add-custom-controls"></a>Özel denetim ekleme  
  Eklemek istiyorsanız bir <xref:System.Windows.Forms.Control> kullanılabilir yardımcı yöntemler gibi özel bir kullanıcı denetimi tarafından desteklenmiyor, aşağıdaki yöntemleri kullanın:  
 
--   Excel için birini <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> yöntemlerinin bir <xref:Microsoft.Office.Tools.Excel.ControlCollection> nesne.  
+- Excel için birini <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> yöntemlerinin bir <xref:Microsoft.Office.Tools.Excel.ControlCollection> nesne.  
 
--   Word için birini <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> yöntemlerinin bir <xref:Microsoft.Office.Tools.Word.ControlCollection> nesne.  
+- Word için birini <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> yöntemlerinin bir <xref:Microsoft.Office.Tools.Word.ControlCollection> nesne.  
 
- Denetim eklemek için geçirmek <xref:System.Windows.Forms.Control>, bir denetim için konum ve bir denetim için benzersiz olarak tanımlayan ad `AddControl` yöntemi. `AddControl` Yöntemi denetimin çalışma sayfası veya belge ile nasıl etkileşime gireceğini tanımlayan nesneyi döndürür. `AddControl` Yöntemi döndürür bir <xref:Microsoft.Office.Tools.Excel.ControlSite> (Excel için) veya bir <xref:Microsoft.Office.Tools.Word.ControlSite> nesnesi (sözcük).  
+  Denetim eklemek için geçirmek <xref:System.Windows.Forms.Control>, bir denetim için konum ve bir denetim için benzersiz olarak tanımlayan ad `AddControl` yöntemi. `AddControl` Yöntemi denetimin çalışma sayfası veya belge ile nasıl etkileşime gireceğini tanımlayan nesneyi döndürür. `AddControl` Yöntemi döndürür bir <xref:Microsoft.Office.Tools.Excel.ControlSite> (Excel için) veya bir <xref:Microsoft.Office.Tools.Word.ControlSite> nesnesi (sözcük).  
 
- Aşağıdaki kod örneğinde nasıl kullanılacağını gösterir <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> dinamik olarak Excel belge düzeyi projesindeki çalışma sayfasına özel bir kullanıcı denetimi eklemek için yöntemi. Bu örnekte, kullanıcı denetimi adlı `UserControl1`ve <xref:Microsoft.Office.Interop.Excel.Range> adlı `range1`. Bu örneği kullanmak için çalıştırın bir `Sheet` *n* projedeki sınıf.  
+  Aşağıdaki kod örneğinde nasıl kullanılacağını gösterir <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> dinamik olarak Excel belge düzeyi projesindeki çalışma sayfasına özel bir kullanıcı denetimi eklemek için yöntemi. Bu örnekte, kullanıcı denetimi adlı `UserControl1`ve <xref:Microsoft.Office.Interop.Excel.Range> adlı `range1`. Bu örneği kullanmak için çalıştırın bir `Sheet` *n* projedeki sınıf.  
 
- [!code-vb[Trin_VstcoreProgrammingControlsExcel#2](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#2)]
- [!code-csharp[Trin_VstcoreProgrammingControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#2)]  
+  [!code-vb[Trin_VstcoreProgrammingControlsExcel#2](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#2)]
+  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#2)]  
 
 ### <a name="use-members-of-custom-controls"></a>Özel denetimler üyeleri kullanın  
  Aşağıdakilerden birini kullandıktan sonra `AddControl` çalışma sayfası ya da belge, artık bir denetim eklemek için yöntemleri olan iki farklı denetim nesnesi:  
 
--   <xref:System.Windows.Forms.Control> , Özel bir denetimi temsil eder.  
+- <xref:System.Windows.Forms.Control> , Özel bir denetimi temsil eder.  
 
--   `ControlSite`, `OLEObject`, Veya `OLEControl` çalışma sayfası veya belgeye eklendikten sonra denetimini temsil eden nesne.  
+- `ControlSite`, `OLEObject`, Veya `OLEControl` çalışma sayfası veya belgeye eklendikten sonra denetimini temsil eden nesne.  
 
- Çoğu özellikleri ve yöntemleri bu denetimler arasında paylaşılır. Uygun denetimler aracılığıyla bu üyelere erişmek önemlidir:  
+  Çoğu özellikleri ve yöntemleri bu denetimler arasında paylaşılır. Uygun denetimler aracılığıyla bu üyelere erişmek önemlidir:  
 
--   Yalnızca özel denetime ait üyelerinin erişmek için <xref:System.Windows.Forms.Control>.  
+- Yalnızca özel denetime ait üyelerinin erişmek için <xref:System.Windows.Forms.Control>.  
 
--   Denetimler tarafından paylaşılan üyeleri erişmek için `ControlSite`, `OLEObject`, veya `OLEControl` nesne.  
+- Denetimler tarafından paylaşılan üyeleri erişmek için `ControlSite`, `OLEObject`, veya `OLEControl` nesne.  
 
- Paylaşılan bir üye erişim <xref:System.Windows.Forms.Control>, uyarı veya bildirim başarısız olabilir veya geçersiz sonuçlara neden olabilir. Her zaman yöntemleri veya özellikleri kullanmak `ControlSite`, `OLEObject`, veya `OLEControl` nesne yöntemi veya özelliği gerek olmadığı sürece kullanılamaz; yalnızca o gereken, başvuru <xref:System.Windows.Forms.Control>.  
+  Paylaşılan bir üye erişim <xref:System.Windows.Forms.Control>, uyarı veya bildirim başarısız olabilir veya geçersiz sonuçlara neden olabilir. Her zaman yöntemleri veya özellikleri kullanmak `ControlSite`, `OLEObject`, veya `OLEControl` nesne yöntemi veya özelliği gerek olmadığı sürece kullanılamaz; yalnızca o gereken, başvuru <xref:System.Windows.Forms.Control>.  
 
- Örneğin, her ikisi de <xref:Microsoft.Office.Tools.Excel.ControlSite> sınıfı ve <xref:System.Windows.Forms.Control> sınıfı bir `Top` özelliği. Alınacak veya ayarlanacak denetimin üst ve belgenin üst kısmında arasındaki uzaklığı için kullanın <xref:Microsoft.Office.Tools.Excel.ControlSite.Top%2A> özelliği <xref:Microsoft.Office.Tools.Excel.ControlSite>değil <xref:System.Windows.Forms.Control.Top%2A> özelliği <xref:System.Windows.Forms.Control>.  
+  Örneğin, her ikisi de <xref:Microsoft.Office.Tools.Excel.ControlSite> sınıfı ve <xref:System.Windows.Forms.Control> sınıfı bir `Top` özelliği. Alınacak veya ayarlanacak denetimin üst ve belgenin üst kısmında arasındaki uzaklığı için kullanın <xref:Microsoft.Office.Tools.Excel.ControlSite.Top%2A> özelliği <xref:Microsoft.Office.Tools.Excel.ControlSite>değil <xref:System.Windows.Forms.Control.Top%2A> özelliği <xref:System.Windows.Forms.Control>.  
 
- [!code-vb[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#3)]
- [!code-csharp[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#3)]  
+  [!code-vb[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#3)]
+  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#3)]  
 
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Office belgelerindeki denetimler](../vsto/controls-on-office-documents.md)   

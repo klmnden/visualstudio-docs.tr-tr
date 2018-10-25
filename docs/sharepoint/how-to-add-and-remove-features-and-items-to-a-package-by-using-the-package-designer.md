@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: ekleme ve kaldırma özellikler ve öğeler bir paket için paket Tasarımcısını kullanarak | Microsoft Docs'
+title: 'Nasıl yapılır: ekleme ve kaldırma özellikleri ve öğeleri bir paket için paket Tasarımcısını kullanarak | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,47 +19,47 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a2307a870487a3cc62a60b4162245db57653d452
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d58fbaf598e4844d4b76898e17dac5331a8b2e54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756099"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935074"
 ---
-# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Nasıl yapılır: ekleme ve özellikler ve öğeler bir paket için paket Tasarımcısını kullanarak kaldırma
-  Bir SharePoint çözüm oluşturduğunuzda, Visual Studio çözümü paketinde varsayılan SharePoint özelliklerini ekler. Son dağıtım öncesinde ekleyin ve SharePoint Proje öğeleri ve SharePoint paketi değiştirmek için özellikler kaldırın.  
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Nasıl yapılır: ekleme ve özellikler ve öğeler bir paketi paket Tasarımcısını kullanarak kaldırma
+  Bir SharePoint çözüm oluşturduğunuzda, Visual Studio çözüm içindeki paket varsayılan SharePoint özelliklerini ekler. Son dağıtım öncesinde ekleyebilir ve SharePoint Proje öğeleri ve SharePoint paketini değiştirmek için özellikler kaldırın.  
   
- Alternatif olarak, SharePoint Proje öğeleri eklemek ve kaldırmak için paketleme Gezgini'ni kullanın. Ayrıca, görüntüleyin ve SharePoint Proje öğeleri ve (.wsp) paketine konulduğundan özellikleri hiyerarşisini değiştirin. Daha fazla bilgi için bkz: [nasıl yapılır: ekleyip özellikler ve öğeler bir pakete paketleme Gezgini'ni kullanarak](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
+ Alternatif olarak, SharePoint Proje öğeleri eklemek ve kaldırmak için paketleme Gezgini'ni kullanabilirsiniz. Görüntüleyebilir ve hiyerarşi SharePoint Proje öğeleri ve paketine (.wsp) konulduğundan özelliklerini değiştirin. Daha fazla bilgi için [nasıl yapılır: ekleme ve paketleme Gezgini'ni kullanarak, özellikler ve öğeler pakete kaldırma](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
-## <a name="add-features-to-a-sharepoint-package"></a>Bir SharePoint paket özellikleri ekleyin  
- Bir SharePoint pakete özellikleri eklemek için paket tasarımcısını kullanabilirsiniz.  
+## <a name="add-features-to-a-sharepoint-package"></a>Bir SharePoint paketi özellikleri ekleyin  
+ Paket Tasarımcısı için bir SharePoint paketi özellikleri eklemek için kullanabilirsiniz.  
   
-#### <a name="to-add-sharepoint-features-with-the-package-designer"></a>Paket Tasarımcısı ile SharePoint özellikleri eklemek için
+#### <a name="to-add-sharepoint-features-with-the-package-designer"></a>Paket Tasarımcısı ile SharePoint özelliklerini eklemek için
   
-1.  Açık **paketini Tasarımcısı**.  
+1. Açık **paket Tasarımcısı**.  
   
-     Daha fazla bilgi için bkz: [nasıl yapılır: bir SharePoint çözüm paketini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+    Daha fazla bilgi için [nasıl yapılır: bir SharePoint çözüm paketini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
-2.  Bir veya daha fazla aşağıdaki adımları gerçekleştirerek bir veya daha fazla SharePoint özellikleri ekleyin:  
+2. Bir veya daha fazla aşağıdaki adımları gerçekleştirerek bir veya daha fazla SharePoint özelliklerini ekleyin:  
   
-    1.  Her öğeyi çift tıklatın **çözümü öğelerde** eklemek istediğiniz listesi.  
+   1. Her öğe, çift **Çözümdeki öğelere** eklemek istediğiniz listesi.  
   
-    2.  Ekleyin ve ardından istediğiniz öğeyi seçin **Ekle** düğmesini (>).  
+   2. Ekleyin ve ardından istediğiniz öğeyi seçin **Ekle** düğmesine (>).  
   
-    3.  Seçin **Tümünü Ekle** düğmesi (>>) aynı anda tüm öğeler eklemek için.  
+   3. Seçin **Ekle** düğmesine (>>) aynı anda tüm öğeleri eklemek için.  
   
-     Örneğin, bir öğeyi çift tıklayarak **çözümü öğelerde** eklemek için liste **paket öğeleri** listesi.  
+      Örneğin, bir öğeye çift tıklayabilirsiniz **Çözümdeki öğelere** eklemek için liste **paket öğeleri** listesi.  
   
-     SharePoint Proje öğeleri ve özellikleri görünür **paket öğeleri** listesi.  
+      SharePoint Proje öğeleri ve özellikleri görünür **paket öğeleri** listesi.  
   
-## <a name="remove-features-from-a-sharepoint-package"></a>Bir SharePoint paketinden özellikleri Kaldır  
- Bir SharePoint paket özellikleri kaldırmak için paket tasarımcısını kullanabilirsiniz.  
+## <a name="remove-features-from-a-sharepoint-package"></a>Bir SharePoint paketi özellikleri Kaldır  
+ Paket Tasarımcısı özellikleri için bir SharePoint paketi kaldırmak için kullanabilirsiniz.  
   
-#### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>SharePoint özellikleri ile paket tasarımcısını kaldırmak için
+#### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>Paket Tasarımcısı ile SharePoint özelliklerini kaldırmak için
   
-1.  İçinde **paket öğeleri** listesinde, kaldırmak ve ardından istediğiniz öğeyi seçin **kaldırmak** (<) düğmesini veya seçin **Tümünü Kaldır** düğmesi (<<) kaldırmak için tüm öğeler.  
+1.  İçinde **paket öğeleri** listesinde, kaldırmak ve ardından istediğiniz öğeyi seçin **Kaldır** (<) düğmesini veya tercih **Tümünü Kaldır** düğmesine (<<) kaldırmak için tüm öğeler.  
   
-     SharePoint öğeleri görünür **çözümü öğelerde** listesi.  
+     SharePoint öğeleri görünür **Çözümdeki öğelere** listesi.  
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint çözüm paketleri oluşturma](../sharepoint/creating-sharepoint-solution-packages.md)   

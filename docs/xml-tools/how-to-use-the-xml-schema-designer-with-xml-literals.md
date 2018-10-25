@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dd0f709e53a3595437bc432a1d1db9a4d6d5c79
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9858768da0096c98ffb3014f0a52936adbf39019
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379520"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931122"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Nasıl yapılır: XML şema tasarımcısını XML değişmez değerleri ile kullanma
 
@@ -43,35 +43,35 @@ Bu konuda, bir Visual Basic projesinde sabit değeri bir XML ile ilişkili bir �
 
 ## <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>Projeye dahil XSD dosyası göre bir XML değişmez değer, Visual Basic kodunu eklemek için
 
-1.  Değiştirin *Module1.vb* dosyasındaki kodu aşağıdaki kodla:
+1. Değiştirin *Module1.vb* dosyasındaki kodu aşağıdaki kodla:
 
    ```vb
    Imports <xmlns:ns="http://tempuri.org/PurchaseOrderSchema.xsd">
 
    Module Module1
-       Sub Main()
+      Sub Main()
 
-           Dim XMLLiteral = <ns:PurchaseOrder OrderDate="1900-01-01">
-                                <ns:ShipTo country="US">
-                                    <ns:name>name1</ns:name>
-                                    <ns:street>street1</ns:street>
-                                    <ns:city>city1</ns:city>
-                                    <ns:state>state1</ns:state>
-                                    <ns:zip>1</ns:zip>
-                                </ns:ShipTo>
-                                <ns:BillTo country="US">
-                                    <ns:name>name1</ns:name>
-                                    <ns:street>street1</ns:street>
-                                    <ns:city>city1</ns:city>
-                                    <ns:state>state1</ns:state>
-                                    <ns:zip>1</ns:zip>
-                                </ns:BillTo>
-                            </ns:PurchaseOrder>
+          Dim XMLLiteral = <ns:PurchaseOrder OrderDate="1900-01-01">
+                               <ns:ShipTo country="US">
+                                   <ns:name>name1</ns:name>
+                                   <ns:street>street1</ns:street>
+                                   <ns:city>city1</ns:city>
+                                   <ns:state>state1</ns:state>
+                                   <ns:zip>1</ns:zip>
+                               </ns:ShipTo>
+                               <ns:BillTo country="US">
+                                   <ns:name>name1</ns:name>
+                                   <ns:street>street1</ns:street>
+                                   <ns:city>city1</ns:city>
+                                   <ns:state>state1</ns:state>
+                                   <ns:zip>1</ns:zip>
+                               </ns:BillTo>
+                           </ns:PurchaseOrder>
 
-       End Sub
+      End Sub
    End Module
    ```
 
-2.  Herhangi bir XML değişmez değeri ya da bir XML ad alanı alma XML düğümünü sağ tıklatın ve seçin **şema Gezgini'nde Göster**.
+2. Herhangi bir XML değişmez değeri ya da bir XML ad alanı alma XML düğümünü sağ tıklatın ve seçin **şema Gezgini'nde Göster**.
 
-     **XML Şeması Gezgini** XML şema kümesi ile ilişkili XML değişmez değeri olan bir Visual Basic dosyası ile yan yana görüntülenir.
+    **XML Şeması Gezgini** XML şema kümesi ile ilişkili XML değişmez değeri olan bir Visual Basic dosyası ile yan yana görüntülenir.

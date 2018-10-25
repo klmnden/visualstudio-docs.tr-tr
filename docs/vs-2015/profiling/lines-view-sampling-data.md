@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a972d529b93445c1c66e9418b7d8f3e068b005c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 73a50b3daf77fdd1a1e0a058bd64ddd068467c2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289945"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932994"
 ---
 # <a name="lines-view---sampling-data"></a>Satırlar Görünümü - Örnekleme Verileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,21 +33,21 @@ Profil oluşturma örnek toplanmadı olduğunda yürüten deyimleri için perfor
   
  Bir kaynak dosyasında bir deyimi kaynak dosyasında birden fazla satırı kapsayabilir ve tek bir satır birden fazla deyim içerebilir. Bir deyimi aşağıdaki tarafından tanımlanır:  
   
--   Function deyimi içeren kaynak dosyası.  
+- Function deyimi içeren kaynak dosyası.  
   
--   Deyimi içeren işlev.  
+- Deyimi içeren işlev.  
   
--   Kaynak satırı deyim başlar.  
+- Kaynak satırı deyim başlar.  
   
--   Deyim başladığı kaynak satırı karakter.  
+- Deyim başladığı kaynak satırı karakter.  
   
--   Kaynak satırı başlangıçtan deyimini sonlandırır.  
+- Kaynak satırı başlangıçtan deyimini sonlandırır.  
   
--   Deyim erdiği kaynak satırı karakter.  
+- Deyim erdiği kaynak satırı karakter.  
   
- Satır adı sütunu tanımlayıcısı veri sıralanabilir bir birleşimini sağlar.  
+  Satır adı sütunu tanımlayıcısı veri sıralanabilir bir birleşimini sağlar.  
   
- Tanımı gereği, diğer işlevler bir deyim çağırmaz. Bu nedenle, yalnızca özel değerler listelenmiştir.  
+  Tanımı gereği, diğer işlevler bir deyim çağırmaz. Bu nedenle, yalnızca özel değerler listelenmiştir.  
   
 |Sütun|Açıklama|  
 |------------|-----------------|  

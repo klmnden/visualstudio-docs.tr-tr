@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22e44ace13e0f70bf74b71f17975b3a45cb76471
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: cf20b3f742bfc5ff6de6af080f3651f9d9027234
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808904"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940976"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>İzlenecek yol: Word için ilk VSTO eklentinizi oluşturma
   Bu tanıtıcı kılavuz, Microsoft Office Word için VSTO eklentisi oluşturma işlemini göstermektedir. Bu tür bir çözüm içinde oluşturduğunuz özellikler uygulamanın kendisinin belgeler açık olduğu bağımsız olarak kullanılabilir.  
@@ -32,15 +32,15 @@ ms.locfileid: "38808904"
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
--   Bir sözcük VSTO eklentisi projesi oluşturma.  
+- Bir sözcük VSTO eklentisi projesi oluşturma.  
   
--   Word nesne modeli kaydedildiğinde, belgeye metin ekleme kullanan kod yazma.  
+- Word nesne modeli kaydedildiğinde, belgeye metin ekleme kullanan kod yazma.  
   
--   Geliştirme ve test etmek için proje çalıştırma.  
+- Geliştirme ve test etmek için proje çalıştırma.  
   
--   Tamamlanmış projeyi VSTO eklentisi artık otomatik olarak geliştirme bilgisayarınızda çalıştırılır, böylece temizleme.  
+- Tamamlanmış projeyi VSTO eklentisi artık otomatik olarak geliştirme bilgisayarınızda çalıştırılır, böylece temizleme.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
@@ -78,21 +78,21 @@ ms.locfileid: "38808904"
   
 ### <a name="to-add-a-paragraph-of-text-to-the-saved-document"></a>Bir metin paragrafı sağlandığında kaydedilmiş belgeye eklemek için  
   
-1.  ThisAddIn kod dosyasında, aşağıdaki kodu ekleyin `ThisAddIn` sınıfı. Yeni kod için bir olay işleyicisi tanımlar <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> bir Belge kaydedildiğinde gerçekleşmek üzereyken olay.  
+1. ThisAddIn kod dosyasında, aşağıdaki kodu ekleyin `ThisAddIn` sınıfı. Yeni kod için bir olay işleyicisi tanımlar <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> bir Belge kaydedildiğinde gerçekleşmek üzereyken olay.  
   
-     Kullanıcı bir belgeyi kaydettiğinde, olay işleyicisi belgenin başlangıcında yeni metin ekler.  
+    Kullanıcı bir belgeyi kaydettiğinde, olay işleyicisi belgenin başlangıcında yeni metin ekler.  
   
-     [!code-vb[Trin_WordAddInTutorial#1](../vsto/codesnippet/VisualBasic/FirstWordAddIn/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_WordAddInTutorial#1](../vsto/codesnippet/VisualBasic/FirstWordAddIn/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]  
   
-    > [!NOTE]  
-    >  Bu kod, ilk paragrafa erişmek için bir dizin değeri 1 kullanır. <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> koleksiyonu. Visual Basic ve Visual C#, 0 tabanlı diziler kullanmasına karşın, birçok koleksiyonun Word nesne modelinde alt dizi sınırları 1'dir. Daha fazla bilgi için [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md).  
+   > [!NOTE]  
+   >  Bu kod, ilk paragrafa erişmek için bir dizin değeri 1 kullanır. <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> koleksiyonu. Visual Basic ve Visual C#, 0 tabanlı diziler kullanmasına karşın, birçok koleksiyonun Word nesne modelinde alt dizi sınırları 1'dir. Daha fazla bilgi için [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md).  
   
-2.  C# kullanıyorsanız, aşağıdaki gerekli kodu eklemek `ThisAddIn_Startup` olay işleyicisi. Bu kod bağlanmak için kullanılan `Application_DocumentBeforeSave` olay işleyicisi ile <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> olay.  
+2. C# kullanıyorsanız, aşağıdaki gerekli kodu eklemek `ThisAddIn_Startup` olay işleyicisi. Bu kod bağlanmak için kullanılan `Application_DocumentBeforeSave` olay işleyicisi ile <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> olay.  
   
-     [!code-csharp[Trin_WordAddInTutorial#2](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#2)]  
+    [!code-csharp[Trin_WordAddInTutorial#2](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#2)]  
   
- Belge kaydedildiğinde değiştirmek için aşağıdaki nesneler önceki kod örnekleri kullanın:  
+   Belge kaydedildiğinde değiştirmek için aşağıdaki nesneler önceki kod örnekleri kullanın:  
   
 -   `Application` Alanını `ThisAddIn` sınıfı. `Application` Alan döndürür bir <xref:Microsoft.Office.Interop.Word.Application> Word'ün geçerli örneğini temsil eden nesne.  
   

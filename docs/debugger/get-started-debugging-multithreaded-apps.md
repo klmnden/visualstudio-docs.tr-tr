@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11cb05ea81f086cf8c26e3058850968a909b84e3
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 66239362e454d5ab333214c444aeee3fa54b1b8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468689"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936868"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Visual Studio'da çok iş parçacıklı uygulamalarda hata ayıklamaya başlama
 Visual Studio, çeşitli araçları ve çok iş parçacıklı uygulamalarda hata ayıklamanıza yardımcı olmak için kullanıcı arabirimi öğeleri sağlar. Bu öğreticide, iş parçacığı işaretçileri kullanmak gösterilir **Paralel Yığınlar** penceresinde **paralel izleme** pencere, koşullu kesme noktaları ve filtre kesme noktaları. Bu öğreticide yalnızca birkaç dakika sürer, ancak bunu tamamlamaya, çok iş parçacıklı uygulamalarda hata ayıklama özellikleriyle alışmanızı.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin")  |    [Bir video izleyin](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) benzer adımları gösteren çok iş parçacıklı hata ayıklama. |
+| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | [Bir video izleyin](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) benzer adımları gösteren çok iş parçacıklı hata ayıklama. |
 
 Diğer konular, diğer birden çok iş parçacıklı hata ayıklama araçları kullanarak ek bilgileri sağlayın:
 
@@ -217,30 +217,30 @@ Bu öğreticiye başlamadan bir çok iş parçacıklı uygulaması projesi gerek
   
 #### <a name="to-start-debugging"></a>Hata ayıklamayı başlatmak için  
   
-1.  ' A tıklayın sol kanalda `Thread.Sleep` veya `this_thread::sleep_for` ifadesi yeni kesme noktası eklemek için.  
+1. ' A tıklayın sol kanalda `Thread.Sleep` veya `this_thread::sleep_for` ifadesi yeni kesme noktası eklemek için.  
   
-     Kaynak kod düzenleyicinin sol tarafındaki kanalda, kırmızı bir daire görünür. Bu, bir kesme noktası bu konumda şimdi ayarlandığını gösterir. 
+    Kaynak kod düzenleyicinin sol tarafındaki kanalda, kırmızı bir daire görünür. Bu, bir kesme noktası bu konumda şimdi ayarlandığını gösterir. 
   
-2.  Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat** (**F5**).  
+2. Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat** (**F5**).  
   
-     Visual Studio çözümü oluşturur, uygulamayı hata ayıklayıcısı ekli çalıştırmaya başladığında ve uygulama kesme noktasında durur.  
+    Visual Studio çözümü oluşturur, uygulamayı hata ayıklayıcısı ekli çalıştırmaya başladığında ve uygulama kesme noktasında durur.  
   
-    > [!NOTE]
-    > Konsol penceresine odak geçiş yapıyorsanız, tıklayın [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Pencere odağı döndürülecek [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+   > [!NOTE]
+   > Konsol penceresine odak geçiş yapıyorsanız, tıklayın [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Pencere odağı döndürülecek [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-4.  Kaynak Kod Düzenleyicisi'nde kesme noktasını içeren satırı bulun:  
+3. Kaynak Kod Düzenleyicisi'nde kesme noktasını içeren satırı bulun:  
   
-    ```csharp  
-    Thread.Sleep(3000);  
-    ```  
+   ```csharp  
+   Thread.Sleep(3000);  
+   ```  
   
-    ```C++  
-    this_thread::sleep_for(chrono::seconds(3)); 
-    ```
+   ```C++  
+   this_thread::sleep_for(chrono::seconds(3)); 
+   ```
 
-    ```VB
-    Thread.Sleep(3000)
-    ```    
+   ```VB
+   Thread.Sleep(3000)
+   ```    
   
 #### <a name="ShowThreadsInSource"></a>İş parçacığı işaret bulmak için  
 
@@ -384,4 +384,4 @@ Bazen, hata ayıklayıcı tek bir iş parçacığının yürütülmesini izlemek
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Nasıl yapılır: hata ayıklarken başka bir iş parçacığına geçiş](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+ [Nasıl Yapılır: Hata Ayıklarken Başka Bir İş Parçacığına Geçme](../debugger/how-to-switch-to-another-thread-while-debugging.md)

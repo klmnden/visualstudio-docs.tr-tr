@@ -13,12 +13,12 @@ ms.assetid: 3f07b67b-95c5-4ae8-8b7e-d643cbbb0348
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ec29228180826849cb4d119a5e527dc473ace79
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 698892062fa7c8379c98104ada9c7ee646002b52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240805"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934073"
 ---
 # <a name="moreinfourl-element-vsix-language-pack-schema"></a>MoreInfoURL öğesi (VSIX Dil Paketi Şeması)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,12 +57,12 @@ ms.locfileid: "49240805"
   
 ## <a name="element-information"></a>Öğe Bilgisi  
   
-|||  
-|-|-|  
-|Ad Alanı|http://schemas.microsoft.com/developer/vsx-schema-lp/2010|  
-|Şema adı|VSIX Dil Paketi şeması|  
-|Doğrulama dosyası|VSIXLanguagePackSchema.xsd|  
-|Boş olabilir.|Geçerli değil|  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    Ad Alanı    | http://schemas.microsoft.com/developer/vsx-schema-lp/2010 |
+|   Şema adı   |                 VSIX Dil Paketi şeması                 |
+| Doğrulama dosyası |                VSIXLanguagePackSchema.xsd                 |
+|  Boş olabilir.   |                      Geçerli değil                       |
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [VSX dil paketi Şeması Başvurusu](../extensibility/vsx-language-pack-schema-reference.md)   

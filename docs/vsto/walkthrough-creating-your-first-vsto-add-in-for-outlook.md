@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25155e6dee56fd816425f795a5082667c90c242a
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: fc0f2e7cc7dc40dc305f7860223b5d4acf19a573
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778134"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950969"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>İzlenecek yol: ilk VSTO eklentinizi Outlook için oluşturma
   Bu kılavuzda, Microsoft Office Outlook için VSTO eklentisi oluşturma işlemini göstermektedir. Bu tür bir çözüm içinde oluşturduğunuz özellikler uygulamanın kendisinin Outlook öğesine açık olduğu bağımsız olarak kullanılabilir. Daha fazla bilgi için [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -32,15 +32,15 @@ ms.locfileid: "38778134"
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
--   Outlook için Outlook VSTO eklenti projesinde oluşturuluyor.  
+- Outlook için Outlook VSTO eklenti projesinde oluşturuluyor.  
   
--   Konu ve yeni bir e-posta iletisinin gövdesi, metin eklemek için Outlook nesne modeli kullanan kod yazma.  
+- Konu ve yeni bir e-posta iletisinin gövdesi, metin eklemek için Outlook nesne modeli kullanan kod yazma.  
   
--   Geliştirme ve test etmek için proje çalıştırma.  
+- Geliştirme ve test etmek için proje çalıştırma.  
   
--   Tamamlanmış projeyi VSTO eklentisi artık otomatik olarak geliştirme bilgisayarınızda çalıştırılır, böylece temizleme.  
+- Tamamlanmış projeyi VSTO eklentisi artık otomatik olarak geliştirme bilgisayarınızda çalıştırılır, böylece temizleme.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
@@ -78,24 +78,24 @@ ms.locfileid: "38778134"
   
 ### <a name="to-add-text-to-the-subject-and-body-of-each-new-mail-message"></a>Konu ve her yeni e-posta iletisinin gövdesi, metin eklemek için  
   
-1.  ThisAddIn kod dosyasında, adında bir alan bildirmek `inspectors` içinde `ThisAddIn` sınıfı. `inspectors` Alan geçerli Outlook örneğini denetçisi windows derlemesine bir başvuru tutar. Bu başvuru atık toplayıcının için olay işleyicisini içeren belleği boşaltmasını engeller <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> olay.  
+1. ThisAddIn kod dosyasında, adında bir alan bildirmek `inspectors` içinde `ThisAddIn` sınıfı. `inspectors` Alan geçerli Outlook örneğini denetçisi windows derlemesine bir başvuru tutar. Bu başvuru atık toplayıcının için olay işleyicisini içeren belleği boşaltmasını engeller <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> olay.  
   
-     [!code-vb[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  Değiştirin `ThisAddIn_Startup` yöntemini aşağıdaki kod ile. Bu kod bir olay işleyicisi ekler <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> olay.  
+2. Değiştirin `ThisAddIn_Startup` yöntemini aşağıdaki kod ile. Bu kod bir olay işleyicisi ekler <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> olay.  
   
-     [!code-vb[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#2)]
-     [!code-csharp[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#2)]  
+    [!code-vb[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#2)]
+    [!code-csharp[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#2)]  
   
-3.  ThisAddIn kod dosyasında, aşağıdaki kodu ekleyin `ThisAddIn` sınıfı. Bu kod için bir olay işleyicisi tanımlar <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> olay.  
+3. ThisAddIn kod dosyasında, aşağıdaki kodu ekleyin `ThisAddIn` sınıfı. Bu kod için bir olay işleyicisi tanımlar <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> olay.  
   
-     Kullanıcı yeni bir posta iletisi oluşturduğunda, bu olay işleyicisi konu satırı ve ileti gövdesini metin ekler.  
+    Kullanıcı yeni bir posta iletisi oluşturduğunda, bu olay işleyicisi konu satırı ve ileti gövdesini metin ekler.  
   
-     [!code-vb[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#3)]
-     [!code-csharp[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#3)]  
+    [!code-vb[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#3)]
+    [!code-csharp[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#3)]  
   
- Her yeni posta iletisini değiştirmek için aşağıdaki nesneler önceki kod örnekleri kullanın:  
+   Her yeni posta iletisini değiştirmek için aşağıdaki nesneler önceki kod örnekleri kullanın:  
   
 -   `Application` Alanını `ThisAddIn` sınıfı. `Application` Alan döndürür bir <xref:Microsoft.Office.Interop.Outlook.Application> Outlook'ün geçerli örneğini temsil eden nesne.  
   

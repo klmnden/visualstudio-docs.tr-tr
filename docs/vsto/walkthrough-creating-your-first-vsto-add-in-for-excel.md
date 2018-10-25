@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6421df0109d68d2647cafff5713aecb297c3536d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 6a9b7540a42dbaf7b7079793158d33d761199720
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38797805"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949909"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>İzlenecek yol: Excel için ilk VSTO eklentinizi oluşturma
   Bu tanıtıcı kılavuz Microsoft Office Excel için uygulama düzeyi eklentiyi oluşturma işlemini gösterir. Bu tür bir çözüm içinde oluşturduğunuz özellikler uygulamanın kendisinin çalışma kitaplarını açık olan bağımsız olarak kullanılabilir.  
@@ -32,15 +32,15 @@ ms.locfileid: "38797805"
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
--   Excel VSTO eklenti projesinde Excel için oluşturuluyor.  
+- Excel VSTO eklenti projesinde Excel için oluşturuluyor.  
   
--   Kaydedildiğinde bir çalışma kitabına metin eklemek için Excel nesne modeli kullanan kod yazma.  
+- Kaydedildiğinde bir çalışma kitabına metin eklemek için Excel nesne modeli kullanan kod yazma.  
   
--   Geliştirme ve test etmek için proje çalıştırma.  
+- Geliştirme ve test etmek için proje çalıştırma.  
   
--   Tamamlanmış projeyi VSTO eklentisi artık otomatik olarak geliştirme bilgisayarınızda çalıştırılır, böylece temizleme.  
+- Tamamlanmış projeyi VSTO eklentisi artık otomatik olarak geliştirme bilgisayarınızda çalıştırılır, böylece temizleme.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
@@ -78,18 +78,18 @@ ms.locfileid: "38797805"
   
 ### <a name="to-add-a-line-of-text-to-the-saved-workbook"></a>Kaydedilen çalışma kitabına metin satırı eklemek için  
   
-1.  ThisAddIn kod dosyasında, aşağıdaki kodu ekleyin `ThisAddIn` sınıfı. Yeni kod için bir olay işleyicisi tanımlar <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> bir çalışma kitabı kaydedildiğinde gerçekleşmek üzereyken olay.  
+1. ThisAddIn kod dosyasında, aşağıdaki kodu ekleyin `ThisAddIn` sınıfı. Yeni kod için bir olay işleyicisi tanımlar <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> bir çalışma kitabı kaydedildiğinde gerçekleşmek üzereyken olay.  
   
-     Kullanıcı bir çalışma kitabı kaydettiğinde, olay işleyicisi etkin çalışma başlangıcında yeni metin ekler.  
+    Kullanıcı bir çalışma kitabı kaydettiğinde, olay işleyicisi etkin çalışma başlangıcında yeni metin ekler.  
   
-     [!code-vb[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  C# kullanıyorsanız, aşağıdaki gerekli kodu eklemek `ThisAddIn_Startup` olay işleyicisi. Bu kod bağlanmak için kullanılan `Application_WorkbookBeforeSave` olay işleyicisi ile <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> olay.  
+2. C# kullanıyorsanız, aşağıdaki gerekli kodu eklemek `ThisAddIn_Startup` olay işleyicisi. Bu kod bağlanmak için kullanılan `Application_WorkbookBeforeSave` olay işleyicisi ile <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> olay.  
   
-     [!code-csharp[Trin_ExcelAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#2)]  
+    [!code-csharp[Trin_ExcelAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#2)]  
   
- Çalışma kitabı kaydedildiğinde değiştirmek için aşağıdaki nesneler önceki kod örnekleri kullanın:  
+   Çalışma kitabı kaydedildiğinde değiştirmek için aşağıdaki nesneler önceki kod örnekleri kullanın:  
   
 -   `Application` Alanını `ThisAddIn` sınıfı. `Application` Alan döndürür bir <xref:Microsoft.Office.Interop.Excel.Application> Excel'ün geçerli örneğini temsil eden nesne.  
   

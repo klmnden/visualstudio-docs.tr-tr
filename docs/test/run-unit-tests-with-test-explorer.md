@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a0feb539be589a4eab51544f1a04154c11f6f9c7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: dc918adb6a66f64cdcda46ea535cd0ab017c0676
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382340"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939525"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Test Gezgini ile birim testleri çalıştırma
 
@@ -100,7 +100,7 @@ Test Gezgini, testlerinizi önceden tanımlanmış kategoriler halinde gruplaman
 ### <a name="test-explorer-groups"></a>Test Gezgini grupları
 
 |Grup|Açıklama|
-|-----------|-----------------|
+|-|-----------------|
 |**Süresi**|Yürütme süresine göre testi gruplandırır: **hızlı**, **orta**, ve **yavaş**.|
 |**Sonucu**|Yürütme sonuçlarına göre testleri gruplandırır: **başarısız testler**, **Atlanan testler**, **başarılı testler**.|
 |**Nitelikler**|Tanımladığınız kategori/değer çiftlerine göre testi gruplandırır. Nitelik kategorileri ve değerlerini belirtmek için sözdizimi birim test çerçevesi tarafından tanımlanır.|
@@ -115,7 +115,7 @@ Test Gezgini, testlerinizi önceden tanımlanmış kategoriler halinde gruplaman
  Yönetilen uygulamalar için Microsoft birim test çerçevesi, ayırt edici nitelik adını tanımlamak / değer çiftinin bir <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> özniteliği. Test çerçevesi, önceden tanımlanmış bu nitelikleri de içerir:
 
 |Nitelik|Açıklama|
-|-----------|-----------------|
+|-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|Sahip kategorisi birim test çerçevesi tarafından tanımlanır ve sahibin bir dize değerini vermenizi gerektirir.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|Öncelik kategorisi birim test çerçevesi tarafından tanımlanır ve bir tamsayı öncelik değeri vermenizi gerektirir.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|TestCategory özniteliği bir değer olmadan bir kategori girmenize olanak tanır. TestCategory özniteliği tarafından tanımlanan bir kategori, TestProperty özniteliği kategorisi de olabilir.|
@@ -143,7 +143,7 @@ Farklı ölçütlere göre filtrelemek için:
 > Arama büyük/küçük harfe duyarsızdır ve belirtilen dizeyi ölçüt değeri herhangi bir bölümü eşleştir.
 
 |Niteleyicisi|Açıklama|
-|---------------|-----------------|
+|-|-----------------|
 |**Nitelik**|Hem ayırdedici nitelik kategorisini hem de değer eşleşmelerini arar. Nitelik kategorileri ve değerlerini belirtmek için sözdizimi birim test çerçevesi tarafından tanımlanır.|
 |**Project**|Test proje adı eşleşmeleri arar.|
 |**Hata iletisi**|Arama tarafından döndürülen başarısız kullanıcı tanımlı hata iletileri için eşleşme onaylar.|
@@ -187,7 +187,7 @@ Test Gezgini, testleriniz için hata ayıklama oturumu başlatmak için kullanab
 
 2. Test Gezgini'nde test yöntemlerini seçin ve ardından **seçilen Testlerde Hata Ayıkla** bağlam menüsünde.
 
- Hata ayıklayıcısı hakkında daha fazla bilgi için bkz. [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md).
+   Hata ayıklayıcısı hakkında daha fazla bilgi için bkz. [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md).
 
 ### <a name="diagnose-test-method-performance-issues"></a>Test yöntemi performans sorunlarını tanılama
 
@@ -216,7 +216,7 @@ Daha fazla bilgi için [ne kadar kodun test edildiğini belirlemek için kod kap
 Test çalıştırılabilir **Test Gezgini**, Kod düzenleyicisinde bir test üzerinde sağ tıklatıp seçerek **test çalıştırması**, veya varsayılan kullanarak [Test Gezgini kısayolları](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) içinde Visual Studio. Bazı kısayolları, içerik tabanlı. Bu, çalıştırmak veya imleci Kod Düzenleyicisi'nde olduğu temel Testlerde Hata Ayıkla anlamına gelir. İmleci test yönteminin içinde ise, ardından, yöntemi test çalıştırmaları. İmlecinizi sınıf düzeyinde ise, ardından o sınıfta tüm testleri çalıştırın. Bu ad alanı düzeyinde de aynıdır.
 
 |Sık kullanılan komutları| Klavye Kısayolları|
-|--------------|------------------------|
+|-|------------------------|
 |TestExplorer.DebugAllTestsInContext|**CTRL**+**R**, **Ctrl**+**T**|
 |TestExplorer.RunAllTestsInContext|**CTRL**+**R**, **T**|
 

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce398f18913063d770aa180a06ff8e2017aebd86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 402e7f80ea208d714b31bd61e25b352494310487
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677131"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949259"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Nasıl yapılır: çalışma sayfalarına ListObject denetimleri ekleme
   Ekleyebileceğiniz <xref:Microsoft.Office.Tools.Excel.ListObject> tasarım zamanında ve belge düzeyi projelere çalışma zamanında bir Microsoft Office Excel çalışma sayfasına denetimler.  
@@ -32,13 +32,13 @@ ms.locfileid: "35677131"
   
  Bu konuda, aşağıdaki görevleri açıklanmaktadır:  
   
--   [Tasarım zamanında ListObject denetimleri ekleme](#designtime)  
+- [Tasarım zamanında ListObject denetimleri ekleme](#designtime)  
   
--   [Çalışma zamanında bir belge düzeyi projede ListObject denetimleri ekleme](#runtimedoclevel)  
+- [Çalışma zamanında bir belge düzeyi projede ListObject denetimleri ekleme](#runtimedoclevel)  
   
--   [Çalışma zamanında VSTO eklenti projesinde ListObject denetimleri ekleme](#runtimeaddin)  
+- [Çalışma zamanında VSTO eklenti projesinde ListObject denetimleri ekleme](#runtimeaddin)  
   
- Hakkında daha fazla bilgi için <xref:Microsoft.Office.Tools.Excel.ListObject> denetimlerini, [ListObject denetimine](../vsto/listobject-control.md).  
+  Hakkında daha fazla bilgi için <xref:Microsoft.Office.Tools.Excel.ListObject> denetimlerini, [ListObject denetimine](../vsto/listobject-control.md).  
   
 ##  <a name="designtime"></a> Tasarım zamanında ListObject denetimleri ekleme  
  Eklemek için çeşitli yollar vardır <xref:Microsoft.Office.Tools.Excel.ListObject> denetimlerini çalışma zamanında bir belge düzeyi projede: gelen Visual Studio'dan Excel'den **araç kutusu**, gelen ve giden **veri kaynakları** penceresi.  

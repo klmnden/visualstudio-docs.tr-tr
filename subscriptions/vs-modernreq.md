@@ -9,12 +9,12 @@ description: Seçili Visual Studio Enterprise aboneliklerine dahil olan ürünle
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7b2b7cd8848550efe24541a128caaf336a6458ad
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 1c080b19694495057243c2d8df9ee505bd650cb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073876"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942874"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>MODERNRequirements4TFS avantaj olarak Visual Studio abonelikleri
 
@@ -22,69 +22,70 @@ Seçili Visual Studio abonelikleri MODERNRequirements SmartOffice 4TFS ve Modern
 
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
-1.  MODERNRequirementsTFS teklifinizi kullanmak için oturum açın [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-2.  Araçlar bölümüne MODERNRequirements4TFS kutucuğu bulun ve tıklayın **kodunu Al** bağlantı kutucuğu pencerenin sol konumunda.
-    > [!div class="mx-imgBorder"]
-    > ![ModernRequirements avantajı kutucuğu](_img\vs-modernreq\vs-modernreq-tile.png)
+1. MODERNRequirementsTFS teklifinizi kullanmak için oturum açın [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+2. Araçlar bölümüne MODERNRequirements4TFS kutucuğu bulun ve tıklayın **kodunu Al** bağlantı kutucuğu pencerenin sol konumunda.
+   > [!div class="mx-imgBorder"]
+   > ![ModernRequirements avantajı kutucuğu](_img/vs-modernreq/vs-modernreq-tile.png)
 
-2.  Kod başarıyla alındı bir bildirim alacaksınız.  Tıklayın **etkinleştirme**.
+3. Kod başarıyla alındı bir bildirim alacaksınız.  Tıklayın **etkinleştirme**.
 
-3.  Hesabınızı oluşturmak ve yazılımı yüklemek için ModernRequirements Web sitesine yönlendirilirsiniz.  Giriş sayfasında, istenen kişi bilgilerini sağlayın ve tıklayın **lisans anahtarı alın ve indirme**.
-    > [!div class="mx-imgBorder"]
-    > ![ModernRequirements giriş sayfası](_img\vs-modernreq\vs-modernreq-landing.png)
-
-
-4.  Sonraki sayfada, lisans anahtarı içerir.  Lütfen sayfada sağlanan yüklemeler hakkında bilgileri gözden geçirin ve ardından üzerinde mavi tıklayın **indirmek için yazılım lütfen burayı** sayfanın ortasında bağlantı.
-    > [!div class="mx-imgBorder"]
-    > ![ModernRequirements lisans anahtarı](_img\vs-modernreq\vs-modernreq-license-new-resized.png)
+4. Hesabınızı oluşturmak ve yazılımı yüklemek için ModernRequirements Web sitesine yönlendirilirsiniz.  Giriş sayfasında, istenen kişi bilgilerini sağlayın ve tıklayın **lisans anahtarı alın ve indirme**.
+   > [!div class="mx-imgBorder"]
+   > ![ModernRequirements giriş sayfası](_img/vs-modernreq/vs-modernreq-landing.png)
 
 
-5.  Karşıdan yükleme sayfasında MODERNRequirements paketleri yükleme seçeneğiniz vardır veya SMARTOffice4TFS paketinden bağımsız modüllerini yükleyin.  Sizin için doğru seçenekleri tercihlerinizi, aynı zamanda TFS hangi sürümünün yüklü olduğunu bağlıdır.  Sizin için doğru sürüme sahip ürünleri seçmenize yardımcı olmak için sayfadaki bilgiler planladığınızdan emin olun.
-    > [!div class="mx-imgBorder"]
-    > ![ModernRequirement indirme seçenekleri](_img\vs-modernreq\vs-modernreq-download-page-new.png)
+5. Sonraki sayfada, lisans anahtarı içerir.  Lütfen sayfada sağlanan yüklemeler hakkında bilgileri gözden geçirin ve ardından üzerinde mavi tıklayın **indirmek için yazılım lütfen burayı** sayfanın ortasında bağlantı.
+   > [!div class="mx-imgBorder"]
+   > ![ModernRequirements lisans anahtarı](_img/vs-modernreq/vs-modernreq-license-new-resized.png)
 
-6.  Bu örnekte, SMARTOffice4TFS seçeceğiz.  İndirme ve .zip dosyasını kaydetmek için üç seçenek sağlayan indirme iletişim kutusu görünür.  Seçeceğiz **Kaydet** böylece bilgisayarın indirilenler klasörünü paketinin bir kopyasını sahibiz.
 
-7.  Zaman indirilmesini **SmartOffice4TFS_Online.zip** sahip tamamlandı, tıklayın **Klasör Aç**.
+6. Karşıdan yükleme sayfasında MODERNRequirements paketleri yükleme seçeneğiniz vardır veya SMARTOffice4TFS paketinden bağımsız modüllerini yükleyin.  Sizin için doğru seçenekleri tercihlerinizi, aynı zamanda TFS hangi sürümünün yüklü olduğunu bağlıdır.  Sizin için doğru sürüme sahip ürünleri seçmenize yardımcı olmak için sayfadaki bilgiler planladığınızdan emin olun.
+   > [!div class="mx-imgBorder"]
+   > ![ModernRequirement indirme seçenekleri](_img/vs-modernreq/vs-modernreq-download-page-new.png)
 
-8.  "SmartOffice4TFS_Online" klasörünü açın.
+7. Bu örnekte, SMARTOffice4TFS seçeceğiz.  İndirme ve .zip dosyasını kaydetmek için üç seçenek sağlayan indirme iletişim kutusu görünür.  Seçeceğiz **Kaydet** böylece bilgisayarın indirilenler klasörünü paketinin bir kopyasını sahibiz.
 
-9.  "SmartOffice4TFS_Online" alt klasörünü açın.
+8. Zaman indirilmesini **SmartOffice4TFS_Online.zip** sahip tamamlandı, tıklayın **Klasör Aç**.
 
-10. Dört yükleyici uygulamalar, her biri için klasör içerir:
+9. "SmartOffice4TFS_Online" klasörünü açın.
+
+10. "SmartOffice4TFS_Online" alt klasörünü açın.
+
+11. Dört yükleyici uygulamalar, her biri için klasör içerir:
     - SmartExcel4TFS_Online
     - SmartOutlook4TFS_Online
     - SmartVisio4TFS_Online
     - SmartWord4TFS_Online
 
     > [!div class="mx-imgBorder"]
-    > ![ModernRequirement indirme seçenekleri](_img\vs-modernreq\vs-modernreq-downloaded-cropped.png)
+    > ![ModernRequirement indirme seçenekleri](_img/vs-modernreq/vs-modernreq-downloaded-cropped.png)
 
-11. Klasöre sağ tıklayın ve seçin **tümünü Ayıkla**.  Dosyaların ayıklanacağı ve istediğiniz konumu belirtin **ayıklamak**.
+12. Klasöre sağ tıklayın ve seçin **tümünü Ayıkla**.  Dosyaların ayıklanacağı ve istediğiniz konumu belirtin **ayıklamak**.
 
-12. Ürünlerden herhangi birini yüklemek için indirilenler klasörüne karşılık gelen uygulamayı başlatın.  Bizim örneğimizde, biz SmartWord4TFS yükler.  Kullanıcı Hesabı Denetimi iletişim kutusu açıldığında tıklayın **Evet** uygulamayı başlatmak için.
+13. Ürünlerden herhangi birini yüklemek için indirilenler klasörüne karşılık gelen uygulamayı başlatın.  Bizim örneğimizde, biz SmartWord4TFS yükler.  Kullanıcı Hesabı Denetimi iletişim kutusu açıldığında tıklayın **Evet** uygulamayı başlatmak için.
 
-13. Kurulum Sihirbazı başlar.  Devam etmek için **İleri** 'ye tıklayın.
+14. Kurulum Sihirbazı başlar.  Devam etmek için **İleri** 'ye tıklayın.
 
-14. Tıklayın **kabul ediyorum** koşullarını kabul edin ve ardından radyo düğmesini **sonraki**.
+15. Tıklayın **kabul ediyorum** koşullarını kabul edin ve ardından radyo düğmesini **sonraki**.
 
-15. Uygulamayı yüklemek ve tüm kullanıcılar veya kendiniz için kullanılabilir olmasını isteyip istemediğinizi belirtmek burada istediğinizi seçin.  **İleri**'ye tıklayın.
+16. Uygulamayı yüklemek ve tüm kullanıcılar veya kendiniz için kullanılabilir olmasını isteyip istemediğinizi belirtmek burada istediğinizi seçin.  **İleri**'ye tıklayın.
 
-16. Modunda yazar veya Gözden Geçiren modunda yüklemek için SmartWord isteyip istemediğinizi seçin.  Bu modları hakkında daha fazla bilgi için [MODERNRequirements Destek](http://www.modernrequirements.com/support-2/).  **İleri**'ye tıklayın.
+17. Modunda yazar veya Gözden Geçiren modunda yüklemek için SmartWord isteyip istemediğinizi seçin.  Bu modları hakkında daha fazla bilgi için [MODERNRequirements Destek](http://www.modernrequirements.com/support-2/).  **İleri**'ye tıklayın.
 
-17. Ardından, tıklatıp şablonlarını yüklemek isteyip istemediğinizi seçin **sonraki**.
+18. Ardından, tıklatıp şablonlarını yüklemek isteyip istemediğinizi seçin **sonraki**.
 
-18. Tıklayın **sonraki** yeniden yüklemeyi başlatmak için.
+19. Tıklayın **sonraki** yeniden yüklemeyi başlatmak için.
 
-19. Kullanıcı Hesabı Denetimi iletişim kutusu göründüğünde tıklayın **Evet**.
+20. Kullanıcı Hesabı Denetimi iletişim kutusu göründüğünde tıklayın **Evet**.
 
-20. Yükleme tamamlandığında, tıklayın **Kapat**.
+21. Yükleme tamamlandığında, tıklayın **Kapat**.
 
-21. Microsoft Word yeniden başlattığınızda SmartWord4TFS eklentisini yüklemek istediğinizi onaylamanızı isteyen bir Microsoft Office Özelleştirme Yükleyicisi iletişim kutusu açılır.  **Yükle**'ye tıklatın.
+22. Microsoft Word yeniden başlattığınızda SmartWord4TFS eklentisini yüklemek istediğinizi onaylamanızı isteyen bir Microsoft Office Özelleştirme Yükleyicisi iletişim kutusu açılır.  **Yükle**'ye tıklatın.
 
-22. Açılır, Word, SmartWord4TFS sekme eklendiğini görürsünüz. SmartWord4TFS Araç Takımı'nı görüntülemek için sekmesinde tıklayın.
+23. Açılır, Word, SmartWord4TFS sekme eklendiğini görürsünüz. SmartWord4TFS Araç Takımı'nı görüntülemek için sekmesinde tıklayın.
 
 ## <a name="eligibility"></a>Uygunluk
+
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standart, yıllık bulut)   | VL, Azure, perakende, seçili NFR<sup>1</sup> | 6 ay       |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir          |

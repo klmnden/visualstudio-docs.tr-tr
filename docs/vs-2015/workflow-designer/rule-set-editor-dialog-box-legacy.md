@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 9da35b83eead06f40452696bb9559d409da8e38d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3469e395ee50e63f8ac76e4181d02b777ccbd4ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294586"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942406"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Kural Kümesi Düzenleyicisi İletişim Kutusu (Eski)
 Bu konu açıklar nasıl **kural kümesi Düzenleyicisi** eski iletişim kutusunda [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -67,19 +67,19 @@ Bu konu açıklar nasıl **kural kümesi Düzenleyicisi** eski iletişim kutusun
   
  İfadeler, aşağıdaki işleçleri destekler:  
   
--   İlişkisel işleçleri: ==, =,! =  
+- İlişkisel işleçleri: ==, =,! =  
   
--   Karşılaştırma işleçleri: <, \<=, >, > =  
+- Karşılaştırma işleçleri: <, \<=, >, > =  
   
--   Aritmetik işleçler: +, -, *, /, MOD  
+- Aritmetik işleçler: +, -, *, /, MOD  
   
--   Mantıksal işleçler: ve, & &, OR &#124; &#124;değil,!  
+- Mantıksal işleçler: ve, & &, OR &#124; &#124;değil,!  
   
--   Bit düzeyinde işleçler: &,&#124;  
+- Bit düzeyinde işleçler: &,&#124;  
   
- İfadenin İşleç önceliği, C# İşleç önceliği kurallarını izler.  
+  İfadenin İşleç önceliği, C# İşleç önceliği kurallarını izler.  
   
- Koşullar hakkında daha fazla bilgi için bkz. [iş akışlarını kullanarak koşullarında](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77).  
+  Koşullar hakkında daha fazla bilgi için bkz. [iş akışlarını kullanarak koşullarında](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Durdurmak ve güncelleştirme işlevleri  
  **Ardından Eylemler:** ve **başka eylemler:** ifadeleri Destek **durdurmak** ve **güncelleştirme** işlevleri. Kullanılacak **durdurmak** işlev, yazın **durdurmak** içine bir **eylemi:** veya **başka eylem:** metin kutusu. **Durdurmak** eylem hemen durdurmak kural kümesi yürütmenin neden olur ve denetim için arama kodunu döndürür. Kullandığınız **güncelleştirme** İleri zincirleme ile işlevi.  

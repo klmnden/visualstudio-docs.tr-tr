@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3578573a2020dbf048e3da4e0bf44a54df07860b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 5e74ec5e1e4efe4cbdf98125aa17cb3646fbc136
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676757"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930914"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>UWP uygulamalarında enerji kullanımını analiz etme
 Visual Studio **enerji tüketimi** profil oluşturucu, zaman bir kısmını veya tamamını kendi piliyle çalışan düşük güçlü tablet cihazları UWP uygulamaları güç ve enerji tüketimini çözümlemenize yardımcı olur. Enerjisini pilden alan bir aygıtta çok fazla enerji kullanan bir uygulama, çok fazla müşteri memnuniyetsizliğine neden olabilir ve sonunda müşteriler uygulamayı kaldırmaya da karar verebilir. Enerji kullanımını en iyi duruma getirme, uygulamanızın benimsenme oranını artırabilirsiniz ve müşteriler tarafından kullanın.  
@@ -35,15 +35,15 @@ Visual Studio **enerji tüketimi** profil oluşturucu, zaman bir kısmını veya
   
  Enerji tüketimi Profil Oluşturucusu bu tanımları kullanır *güç* ve *enerji*:  
   
--   *Güç* ölçüler zorla oranı bir sürede yapılan işi gerçekleştirmek için kullanılır. Elektrik biliminde standart güç birimi olan bir *watt*, hangi iş yapılır zaman oranı tanımlanan bir ampere aracılığıyla voltluk elektriksel potansiyel farkından bir amper, geçerli akış. İçinde **güç kullanımı** grafiğinde birimler Miliwatt **mW** watt'ın bir 214.748,3648 olduğu.  
+- *Güç* ölçüler zorla oranı bir sürede yapılan işi gerçekleştirmek için kullanılır. Elektrik biliminde standart güç birimi olan bir *watt*, hangi iş yapılır zaman oranı tanımlanan bir ampere aracılığıyla voltluk elektriksel potansiyel farkından bir amper, geçerli akış. İçinde **güç kullanımı** grafiğinde birimler Miliwatt **mW** watt'ın bir 214.748,3648 olduğu.  
   
-     Güç bir miktar olduğundan, bir yönü (bir zaman dilimi içinde artabilir veya azalabilir) ve bir de hızı (işin artış veya azalış miktarı) olduğu unutulmamalıdır.  
+   Güç bir miktar olduğundan, bir yönü (bir zaman dilimi içinde artabilir veya azalabilir) ve bir de hızı (işin artış veya azalış miktarı) olduğu unutulmamalıdır.  
   
--   *Enerji* toplam kapasite veya potansiyel, bir pilin güç kapasitesi olduğu gibi olarak ya da toplam güç miktarı pilin güç bir süre minimuma ölçümleri. Enerji birimi watt-saat olup, bir saat boyunca sürekli olarak uygulanan bir watt'lık güç miktarıdır. İçinde **enerji özeti**, birim watt-saat görüntülenen **mW-h**.  
+- *Enerji* toplam kapasite veya potansiyel, bir pilin güç kapasitesi olduğu gibi olarak ya da toplam güç miktarı pilin güç bir süre minimuma ölçümleri. Enerji birimi watt-saat olup, bir saat boyunca sürekli olarak uygulanan bir watt'lık güç miktarıdır. İçinde **enerji özeti**, birim watt-saat görüntülenen **mW-h**.  
   
- ![Enerji kapasite, power kullanıldığında, kullanılan toplam enerji](../profiling/media/energyprof_capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
+  ![Enerji kapasite, power kullanıldığında, kullanılan toplam enerji](../profiling/media/energyprof_capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
   
- Örneğin, bir tabletteki tam şarjlı bir pilde belli miktarda depolanmış enerji vardır. Bir ağ üzerinden iletişim kurma, değerleri hesaplama veya grafikleri görüntüleme gibi görevleri gerçekleştirmek için enerji kullanıldıkça, pilin gücü farklı oranlarda harcanır. Herhangi bir zaman dilimi için, harcanan güç toplamı da enerji ile ölçülür.  
+  Örneğin, bir tabletteki tam şarjlı bir pilde belli miktarda depolanmış enerji vardır. Bir ağ üzerinden iletişim kurma, değerleri hesaplama veya grafikleri görüntüleme gibi görevleri gerçekleştirmek için enerji kullanıldıkça, pilin gücü farklı oranlarda harcanır. Herhangi bir zaman dilimi için, harcanan güç toplamı da enerji ile ölçülür.  
   
 ## <a name="identify-scenarios-with-user-marks"></a>Kullanıcı işaretleriyle senaryoları tanımlama  
  Ekleyebileceğiniz *kullanıcı işaretlerini* profil oluşturma verilerinize zaman çizelgesi cetvelindeki alanları tanımlamanıza yardımcı olacak.  
@@ -59,8 +59,8 @@ Visual Studio **enerji tüketimi** profil oluşturucu, zaman bir kısmını veya
  Yöntem yürütüldüğünde, profil oluşturma verilerine bir iletiyle birlikte bir kullanıcı işareti eklenir.  
   
 > [!NOTE]
->  -   Windows.Foundation.Diagnostics LoggingChannel uygulayan [Windows.Foundation.ıclosable](/uwp/api/windows.foundation.iclosable) arabirimi (tahmini olarak [System.IDisposable](/dotnet/api/system.idisposable) C# ve VB). İşletim sistemi kaynaklarını sızdırılmasını önlemek için çağrı [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) C# ve VB) işiniz bittiğinde günlük kaydı ile Kanal.  
-> -   Her açık günlük kanalının benzersiz bir adı olması gerekir. Elde kalan bir kanal ile aynı adda yeni bir günlük kanalı oluşturmaya çalışmak özel duruma neden olur.  
+> - Windows.Foundation.Diagnostics LoggingChannel uygulayan [Windows.Foundation.ıclosable](/uwp/api/windows.foundation.iclosable) arabirimi (tahmini olarak [System.IDisposable](/dotnet/api/system.idisposable) C# ve VB). İşletim sistemi kaynaklarını sızdırılmasını önlemek için çağrı [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) C# ve VB) işiniz bittiğinde günlük kaydı ile Kanal.  
+>   -   Her açık günlük kanalının benzersiz bir adı olması gerekir. Elde kalan bir kanal ile aynı adda yeni bir günlük kanalı oluşturmaya çalışmak özel duruma neden olur.  
   
  Bkz. Windows SDK'sı örneği [LoggingSession örneğine](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) örnekler.  
   
@@ -80,9 +80,9 @@ if (performance && performance.mark) {
  İyi tahminler elde etmek için pilden güç alan düşük güç tüketimli bir cihazda uygulamanın enerji kullanımının profilini oluşturmak istersiniz. Visual Studio bu cihazların çoğunda çalışmadığından, Visual Studio bilgisayarınızı cihaza Visual Studio uzak araçlarını kullanarak bağlanmak gerekir. Uzaktaki bir cihaza bağlanmak için, hem Visual Studio projesini hem de uzak cihazı yapılandırmanız gerekir. Bkz: [uzak bir makinede çalıştırmak UWP uygulamaları](../debugger/run-windows-store-apps-on-a-remote-machine.md) daha fazla bilgi için.  
   
 > [!TIP]
->  -   UWP simülatör'ü veya Visual Studio bilgisayarında enerji profili oluşturma önerilmemektedir. Gerçek cihazda profil oluşturmak çok daha gerçekçi veriler sağlar.  
-> -   Hedef cihazda profil oluşturmayı, kendi pilleriyle çalışırken gerçekleştirin.  
-> -   Aynı kaynakları (ağ, CPU veya ekran) kullanabilecek diğer uygulamaları kapatın.  
+> - UWP simülatör'ü veya Visual Studio bilgisayarında enerji profili oluşturma önerilmemektedir. Gerçek cihazda profil oluşturmak çok daha gerçekçi veriler sağlar.  
+>   -   Hedef cihazda profil oluşturmayı, kendi pilleriyle çalışırken gerçekleştirin.  
+>   -   Aynı kaynakları (ağ, CPU veya ekran) kullanabilecek diğer uygulamaları kapatın.  
   
 ## <a name="collect-energy-profile-data-for-your-app"></a>Uygulamanız için enerji profili verilerini toplama  
   
@@ -106,15 +106,15 @@ if (performance && performance.mark) {
 ## <a name="collect-energy-profile-data-for-an-installed-app"></a>Yüklü bir uygulama için enerji profili verilerini toplama  
  Enerji tüketimi aracı yalnızca, Visual Studio çözümünden başlatılan veya Microsoft Store yüklü UWP uygulamalarında çalıştırılabilir. Visual Studio'da bir çözümü açtığınızda, varsayılan hedef olduğunu **başlangıç projesi**. Yüklü bir uygulamayı hedeflemek için:  
   
-1.  Seçin **hedefi Değiştir** seçip **uygulamasının yüklü**.  
+1. Seçin **hedefi Değiştir** seçip **uygulamasının yüklü**.  
   
-2.  Gelen **yüklü uygulama paketi seçin** listesinde, bir hedef seçin.  
+2. Gelen **yüklü uygulama paketi seçin** listesinde, bir hedef seçin.  
   
-3.  Seçin **enerji tüketimi** tanılama hub'ı sayfasında.  
+3. Seçin **enerji tüketimi** tanılama hub'ı sayfasında.  
   
-4.  Seçin **Başlat** profili oluşturmaya başlamak için.  
+4. Seçin **Başlat** profili oluşturmaya başlamak için.  
   
- Profil oluşturmayı durdurmak için Visual Studio'ya dönün (Alt + Sekme) ve seçin **koleksiyonu Durdur** tanılama hub'ı sayfasında.  
+   Profil oluşturmayı durdurmak için Visual Studio'ya dönün (Alt + Sekme) ve seçin **koleksiyonu Durdur** tanılama hub'ı sayfasında.  
   
 ## <a name="analyze-energy-profile-data"></a>Enerji profili verilerini analiz etme  
  Enerji profili verileri Visual Studio belge penceresinde görüntülenir:  

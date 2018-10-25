@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 011dc258281eccf7d1a1eca7acbc8cc71a53f00a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9d6bd68f5e94e04cab01dcb7bafd7dcc3cf3c17d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281149"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936131"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Uzaktan hata ayıklama Visual Studio'da C# veya Visual Basic projesi
 Farklı bir bilgisayara dağıtılan bir Visual Studio uygulamasında hata ayıklamak için yükleme ve uzak Araçlar, uygulamanızın dağıtıldığı bilgisayarda çalıştırın, projenizi Visual Studio'dan uzak bilgisayara bağlanmak için yapılandırın ve ardından uygulamanızı çalıştırın.
@@ -56,25 +56,25 @@ Desteklenen Windows 7 ve daha yeni uzaktan hata ayıklayıcı (telefon değil) v
 ## <a name="remote_csharp"></a> Uzaktan hata ayıklama projesi
 Hata ayıklayıcı uzak makinede Visual C# veya Visual Basic Masaüstü uygulamalar dağıtamazsınız, ancak yine de bunları aşağıdaki gösterildiği gibi uzaktan hata ayıklama. Aşağıdaki yordamda adlı bir bilgisayarda hata ayıklamak istediğiniz varsayılmaktadır **MJO DL**, aşağıdaki çizimde gösterildiği gibi.
   
-1.  Adlı bir WPF projesi oluşturma **MyWpf**.  
+1. Adlı bir WPF projesi oluşturma **MyWpf**.  
   
-2.  Bir kesme noktası herhangi bir kolayca ulaşıldığında kodda ayarlayın.  
+2. Bir kesme noktası herhangi bir kolayca ulaşıldığında kodda ayarlayın.  
   
-     Örneğin, bir düğme işleyicisinde bir kesme noktası ayarlayabilirsiniz. Bunu yapmak için MainWindow.xaml açın ve araç kutusundan bir düğme denetimi ekleyin ve onun işleyicisi açmak için düğmeyi çift tıklatın.
+    Örneğin, bir düğme işleyicisinde bir kesme noktası ayarlayabilirsiniz. Bunu yapmak için MainWindow.xaml açın ve araç kutusundan bir düğme denetimi ekleyin ve onun işleyicisi açmak için düğmeyi çift tıklatın.
   
-3.  Çözüm Gezgini'nde projeye sağ tıklayıp seçin **özellikleri**.  
+3. Çözüm Gezgini'nde projeye sağ tıklayıp seçin **özellikleri**.  
   
-4.  Üzerinde **özellikleri** sayfasında **hata ayıklama** sekmesi.  
+4. Üzerinde **özellikleri** sayfasında **hata ayıklama** sekmesi.  
   
-     ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")  
+    ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")  
   
-5.  Emin **çalışma dizini** metin kutusu boştur.  
+5. Emin **çalışma dizini** metin kutusu boştur.  
   
-6.  Seçin **uzak makine**ve türü **MJO-DL:4022** metin kutusuna. (4022 uzaktan hata ayıklayıcı penceresinde gösterilen bağlantı noktası numarasıdır. Bağlantı noktası numarasını artırır 2. Visual Studio'nun her sürümü).
+6. Seçin **uzak makine**ve türü **MJO-DL:4022** metin kutusuna. (4022 uzaktan hata ayıklayıcı penceresinde gösterilen bağlantı noktası numarasıdır. Bağlantı noktası numarasını artırır 2. Visual Studio'nun her sürümü).
   
-7.  Emin olun **yerel kod hata ayıklamayı** seçilmez.  
+7. Emin olun **yerel kod hata ayıklamayı** seçilmez.  
   
-8.  Projeyi oluşturun.  
+8. Projeyi oluşturun.  
   
 9. Uzak bilgisayarda aynı yol üzerinde bir klasör oluşturun **hata ayıklama** Visual Studio'nun bilgisayarınızda klasörünü:  **\<kaynak yolu > \MyWPF\MyWPF\bin\Debug**.  
   
@@ -93,7 +93,7 @@ Hata ayıklayıcı uzak makinede Visual C# veya Visual Basic Masaüstü uygulama
   
 13. İstenirse, uzak makineye bağlanmak için ağ kimlik bilgilerini girin.  
   
-     Gerekli kimlik bilgilerinin, ağınızın güvenlik yapılandırmasına bağlı olarak farklılık gösterir. Örneğin, bir etki alanı bilgisayarında etki alanı adınızı ve parolanızı girebilirsiniz. Bir etki alanı olmayan makinede, makine adı ve geçerli kullanıcı hesabı adı gibi girebilirsiniz **MJO-DL\name@something.com**, doğru parola ile birlikte.
+     Gerekli kimlik bilgilerinin, ağınızın güvenlik yapılandırmasına bağlı olarak farklılık gösterir. Örneğin, bir etki alanı bilgisayarında etki alanı adınızı ve parolanızı girebilirsiniz. Bir etki alanı olmayan makinede, makine adı ve geçerli kullanıcı hesabı adı gibi girebilirsiniz <strong>MJO-DL\name@something.com</strong>, doğru parola ile birlikte.
 
      WPF uygulamanın ana pencere uzak bilgisayarda açık olduğunu görmeniz gerekir.
   
@@ -101,7 +101,7 @@ Hata ayıklayıcı uzak makinede Visual C# veya Visual Basic Masaüstü uygulama
   
 15. Visual Studio makinede yürütme kesme noktasında durduruldu görmeniz gerekir.
   
- Uygulama tarafından kullanılması gereken herhangi bir kod dışı dosyalara varsa, bunları Visual Studio projenize eklemeniz gerekir. Ek dosyalar için bir proje klasörü oluşturun (içinde **Çözüm Gezgini**, tıklayın **Ekle > Yeni klasör**). Dosyaları klasöre eklersiniz (içinde **Çözüm Gezgini**, tıklayın **Ekle > var olan öğe**, ardından dosyaları seçin). Üzerinde **özellikleri** sayfasında her dosya için **çıkış dizinine Kopyala** için **her zaman Kopyala**.
+    Uygulama tarafından kullanılması gereken herhangi bir kod dışı dosyalara varsa, bunları Visual Studio projenize eklemeniz gerekir. Ek dosyalar için bir proje klasörü oluşturun (içinde **Çözüm Gezgini**, tıklayın **Ekle > Yeni klasör**). Dosyaları klasöre eklersiniz (içinde **Çözüm Gezgini**, tıklayın **Ekle > var olan öğe**, ardından dosyaları seçin). Üzerinde **özellikleri** sayfasında her dosya için **çıkış dizinine Kopyala** için **her zaman Kopyala**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Uzak simgeleri ile hata ayıklamayı kurma 
 

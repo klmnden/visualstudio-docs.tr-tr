@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4f23cae01c9356da26c42ca299a6ac6bb7c190f
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 34c263479be170b9f108c4cbc095be737f0b2b22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498717"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936057"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Bir Windows Forms araç kutusu denetimi oluşturma
 Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç kutusu denetimi öğe şablonu otomatik olarak eklenen bir denetim oluşturmanızı sağlar **araç kutusu** uzantısı yüklü olduğunda. Bu konuda, diğer kullanıcılarına dağıtabileceğiniz bir basit bir sayaç denetimi oluşturmak için şablonu kullanmayı gösterir.  
@@ -209,7 +209,7 @@ Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç
      Sayaç sıfırlanır için **0**.  
   
 ## <a name="next-steps"></a>Sonraki adımlar  
- Oluşturduğunuzda bir **araç kutusu** denetimi, Visual Studio, adlı bir dosya oluşturur *ProjectName.vsix* içinde * \bin\debug\* projenizin klasör. Denetim yükleyerek dağıtabileceğiniz *.vsix* bir ağ veya bir Web sitesi için dosya. Kullanıcı açtığında *.vsix* dosya, denetimin yüklü ve Visual Studio için eklenen **araç kutusu** kullanıcının bilgisayarında. Alternatif olarak, karşıya *.vsix* dosyasını [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkID=123847) Web sitesi kullanıcılar bunu göz atarak bulabilirsiniz **Araçları**  >  **Uzantı ve güncelleştirmeler** iletişim.  
+ Oluşturduğunuzda bir **araç kutusu** denetimi, Visual Studio, adlı bir dosya oluşturur *ProjectName.vsix* içinde <em>\bin\debug\* projenizin klasör. Denetim *.vsix yükleyerek dağıtabileceğiniz</em> bir ağ veya bir Web sitesi için dosya. Kullanıcı açtığında *.vsix* dosya, denetimin yüklü ve Visual Studio için eklenen **araç kutusu** kullanıcının bilgisayarında. Alternatif olarak, karşıya *.vsix* dosyasını [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkID=123847) Web sitesi kullanıcılar bunu göz atarak bulabilirsiniz **Araçları**  >  **Uzantı ve güncelleştirmeler** iletişim.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Visual Studio'nun diğer bölümlerini genişletme](../extensibility/extending-other-parts-of-visual-studio.md)   

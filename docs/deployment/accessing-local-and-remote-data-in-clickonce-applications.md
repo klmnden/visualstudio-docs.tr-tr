@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7829c9fce0c8315ac42fc1c376987e4e30b4be8e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b6f25bb2920f8f50afbd8bfb820e7c852e160865
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081244"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943056"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>ClickOnce uygulamalarında yerel ve uzak veri erişimi
 Çoğu uygulama veri üretir veya tüketir. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Okuma ve yerel olarak ve uzaktan veri yazma için çeşitli seçenekler sunar.  
@@ -30,11 +30,11 @@ ms.locfileid: "39081244"
 ## <a name="local-data"></a>Yerel veriler  
  İle [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], aşağıdaki yöntemlerden birini kullanarak yerel olarak veri depolamak ve yükleyin:  
   
--   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Veri dizini  
+- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Veri dizini  
   
--   Yalıtılmış Depolama  
+- Yalıtılmış Depolama  
   
--   Diğer yerel dosyaları  
+- Diğer yerel dosyaları  
   
 ### <a name="clickonce-data-directory"></a>ClickOnce veri dizini  
  Her [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yerel bir bilgisayarda yüklü uygulama kullanıcının belgeler ve ayarlar klasöründe depolanan bir veri dizinine sahip. Dahil herhangi bir dosyayı bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama ve işaretli bir "veri" dosyası, bir uygulama yüklendiğinde bu dizine kopyalanır. Veri dosyaları en sık kullanılan bir dosya türünde olabilir metin, XML ve Microsoft Access .mdb dosyaları gibi veritabanı dosyaları.  

@@ -18,12 +18,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 478183902012bd4e0a4400bf275fd7e67fade6b5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20617a8c05a0d9b9a57f0a181a4c985d7ffc1f4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274423"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940963"
 ---
 # <a name="how-to-choose-collection-methods"></a>Nasıl yapılır: Koleksiyon Metotları Seçme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ ms.locfileid: "49274423"
   
  **Gereksinimler**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Performans oturumu kullanabilirsiniz **yöntemi** uygulamanız için en uygun koleksiyon yöntemi belirtmek için özellik. Performans Sihirbazı, performans Gezgini ya da bir performans oturumunun özellik sayfaları koleksiyonunu yöntemi ayarlayabilirsiniz. Komut satırı araçlarını kullanıyorsanız bkz [komut satırından profil oluşturma](../profiling/using-the-profiling-tools-from-the-command-line.md) daha fazla bilgi için.  
+  Performans oturumu kullanabilirsiniz **yöntemi** uygulamanız için en uygun koleksiyon yöntemi belirtmek için özellik. Performans Sihirbazı, performans Gezgini ya da bir performans oturumunun özellik sayfaları koleksiyonunu yöntemi ayarlayabilirsiniz. Komut satırı araçlarını kullanıyorsanız bkz [komut satırından profil oluşturma](../profiling/using-the-profiling-tools-from-the-command-line.md) daha fazla bilgi için.  
   
 ## <a name="performance-wizard"></a>Performans Sihirbazı  
   

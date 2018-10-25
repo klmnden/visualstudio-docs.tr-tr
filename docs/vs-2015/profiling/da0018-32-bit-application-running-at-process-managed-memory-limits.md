@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 237d38fe601b8ae2d530cc735701fe236572601a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6795675d8cf2b41310dadfc7aec44eb9ae8a0f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269587"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928769"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32 bitlik Uygulama işlem tarafından yönetilen bellek sınırlarında çalışıyor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,23 +57,23 @@ Kural Kimliği | DA0018 |
   
  Aşırı yönetilen bellek yükü bir sorun varsa, bu seçeneklerden birini göz önünde bulundurun:  
   
--   uygulamanın yönetilen bellek kaynaklarının kullanımını en iyi duruma getirme  
+- uygulamanın yönetilen bellek kaynaklarının kullanımını en iyi duruma getirme  
   
-     veya  
+   veya  
   
--   sanal bellek 32 bitlik bir işlem için en büyük boyutunu mimari kısıtlamalar hafifletmek için gerekli adımların atılmasından  
+- sanal bellek 32 bitlik bir işlem için en büyük boyutunu mimari kısıtlamalar hafifletmek için gerekli adımların atılmasından  
   
- Yönetilen bellek kaynaklarının uygulama kullanımını iyileştirmek için bir .NET bellek ayırma profil oluşturma, yönetilen bellek ayırma verisini toplayın. Gözden geçirme [.NET bellek verisi görünümleri](../profiling/dotnet-memory-data-views.md) bellek ayırma uygulama desenini anlamak için raporlar.  
+  Yönetilen bellek kaynaklarının uygulama kullanımını iyileştirmek için bir .NET bellek ayırma profil oluşturma, yönetilen bellek ayırma verisini toplayın. Gözden geçirme [.NET bellek verisi görünümleri](../profiling/dotnet-memory-data-views.md) bellek ayırma uygulama desenini anlamak için raporlar.  
   
- Kullanım [nesne ömrü görünümü](../profiling/object-lifetime-view.md) hangi programın veri oluşturma ve ardından buradan iadesi nesneleri geri kalan belirleme.  
+  Kullanım [nesne ömrü görünümü](../profiling/object-lifetime-view.md) hangi programın veri oluşturma ve ardından buradan iadesi nesneleri geri kalan belirleme.  
   
- Kullanım [ayırma görünümü](../profiling/dotnet-memory-allocations-view.md) bu ayırma sonuçlanan yürütme yolunu belirlemek için.  
+  Kullanım [ayırma görünümü](../profiling/dotnet-memory-allocations-view.md) bu ayırma sonuçlanan yürütme yolunu belirlemek için.  
   
- Çöp toplama performansını artırma hakkında daha fazla bilgi için .NET Framework teknik makaleye bakın [çöp toplayıcı temelleri ve performans ipuçları](http://go.microsoft.com/fwlink/?LinkId=177946) MSDN Web sitesinde.  
+  Çöp toplama performansını artırma hakkında daha fazla bilgi için .NET Framework teknik makaleye bakın [çöp toplayıcı temelleri ve performans ipuçları](http://go.microsoft.com/fwlink/?LinkId=177946) MSDN Web sitesinde.  
   
- Mimari Tahliye boyutu sanal bellek kısıtlamalardan işlemi adres alanı özel kısmının kazanmak için bu 32 bit işlemin 64-bit bir makineye çalıştığı deneyin.  Bir 64-bit makinedeki 32 bitlik bir işlem en fazla 4 GB özel sanal bellek elde edebilirsiniz.  
+  Mimari Tahliye boyutu sanal bellek kısıtlamalardan işlemi adres alanı özel kısmının kazanmak için bu 32 bit işlemin 64-bit bir makineye çalıştığı deneyin.  Bir 64-bit makinedeki 32 bitlik bir işlem en fazla 4 GB özel sanal bellek elde edebilirsiniz.  
   
- Bir 64 bit makine üzerinde çalışan 64 bitlik bir işlem 8 TB'a kadar sanal belleğin elde edebilirsiniz. Yerel bir 64 bit uygulama olarak yürütmek için uygulamayı yeniden derlemeyi düşünün. Bu kural yalnızca bilgi amaçlıdır ve düzeltici eylem gerekli değil.
+  Bir 64 bit makine üzerinde çalışan 64 bitlik bir işlem 8 TB'a kadar sanal belleğin elde edebilirsiniz. Yerel bir 64 bit uygulama olarak yürütmek için uygulamayı yeniden derlemeyi düşünün. Bu kural yalnızca bilgi amaçlıdır ve düzeltici eylem gerekli değil.
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Outlook form bölgesini görüntülemesini engelleme'
+title: "Nasıl yapılır: Outlook'un form bölgesini görüntülemesini engelleme"
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,27 +16,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87a03e62c77730c7be2c9487c5e344d668ea62cc
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 1ec9f45b2055a7a56e067440d216482877da14c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254794"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949064"
 ---
-# <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Nasıl yapılır: Outlook form bölgesini görüntülemesini engelleme
-  Belirli bir öğe için bir form bölgesini görüntülemek için Microsoft Office Outlook istemediğiniz durumlar olabilir. Örneğin, bir kişi öğesi iş adresi içermiyorsa, iş konumunu görünmesini bir harita gösteren form bölgesini engelleyebilirsiniz.  
+# <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Nasıl yapılır: Outlook'un form bölgesini görüntülemesini engelleme
+  Microsoft Office Outlook, belirli bir öğe için bir form bölgesinin istemediğiniz durumlar olabilir. Örneğin, bir kişi öğesi bir iş adresi içermiyorsa görüntülenmesini bir eşlem içindeki iş konumunu gösteren bir form bölgesi engelleyebilirsiniz.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## <a name="to-prevent-outlook-from-displaying-a-form-region"></a>Outlook form bölgesini görüntülemesini engellemek için  
+## <a name="to-prevent-outlook-from-displaying-a-form-region"></a>Outlook'un form bölgesini görüntülemesini engelleme için  
   
-1.  Değiştirmek istediğiniz form bölgesi için kod dosyasını açın.  
+1. Değiştirmek istediğiniz form bölgesi için kod dosyasını açın.  
   
-2.  Genişletme **Form bölgesi fabrikası** kod bölgesini.  
+2. Genişletin **Form bölgesi fabrikası** kod bölge.  
   
-3.  Kodu ekleyin `FormRegionInitializing` ayarlar olay işleyicisi <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> özelliği <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> sınıfının **doğru**.  
+3. Kodu `FormRegionInitializing` ayarlar olay işleyicisi <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> özelliği <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> sınıfının **true**.  
   
- Kişi öğesini bir adres içermiyorsa, bu örnekte, <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> özelliği ayarlanmış **doğru**, ve form bölgesi görünmez.  
+   Bu örnekte, kişi öğesi bir adresi içermiyorsa <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> özelliği **true**, ve form bölgesi görünmez.  
   
 ## <a name="example"></a>Örnek  
  [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
