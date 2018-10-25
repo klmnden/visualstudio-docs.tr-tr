@@ -13,12 +13,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 38bb2e9db99d35773d2e625783a613db5c051b5b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9e540e35bdfd68d8c371c2bad0ace3fc4b420e0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210385"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893240"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Kodlanmış UI Testleriyle Farklı Web Tarayıcıları Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,35 +27,35 @@ Kodlanmış UI testleri, web uygulamaları için Internet Explorer'ı kullanarak
   
  **Gereksinimler**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
--   İşletim sistemleri:  
+- İşletim sistemleri:  
   
-    -   Microsoft Windows 7  
+  -   Microsoft Windows 7  
   
-    -   Microsoft Windows 8  
+  -   Microsoft Windows 8  
   
-    -   Microsoft Windows Server 2008 R2 SP1  
+  -   Microsoft Windows Server 2008 R2 SP1  
   
--   Web tarayıcı sürümleri:  
+- Web tarayıcı sürümleri:  
   
-    -   Windows Internet Explorer 9  
+  -   Windows Internet Explorer 9  
   
-    -   Windows Internet Explorer 10  
+  -   Windows Internet Explorer 10  
   
-    -   Mozilla Firefox ve Google Chrome'un desteklenen sürümleri için Git [burada](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)  
+  -   Mozilla Firefox ve Google Chrome'un desteklenen sürümleri için Git [burada](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)  
   
--   Yükleme [kodlanmış UI çapraz tarayıcı test etmek için Selenium bileşenlerini](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
+- Yükleme [kodlanmış UI çapraz tarayıcı test etmek için Selenium bileşenlerini](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
- **Ne tüm web tarayıcıları destekleniyor mu?**  
+  **Ne tüm web tarayıcıları destekleniyor mu?**  
   
--   [Özellikleri denetlemek için özel kod ekleme](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx) properties, search ve playback waiters gibi.  
+- [Özellikleri denetlemek için özel kod ekleme](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx) properties, search ve playback waiters gibi.  
   
--   Açılır pencereler ve iletişim kutuları  
+- Açılır pencereler ve iletişim kutuları  
   
--   [Dönüş türü olmadan temel JavaScript yürütme](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)  
+- [Dönüş türü olmadan temel JavaScript yürütme](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)  
   
--   Arama (akıllı eşleşme kullanarak) esneklik ve [performans geliştirmeleri](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)  
+- Arama (akıllı eşleşme kullanarak) esneklik ve [performans geliştirmeleri](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)  
   
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Birden çok web tarayıcı türleri arasında kodlanmış UI testleri neden kullanmalıyım?  
  Çeşitli web tarayıcı türleri kullanarak, web uygulamanızı test ederek, farklı tarayıcılar çalıştıran kullanıcıların kullanıcı arabirimi deneyimi daha iyi benzetirsiniz. Örneğin, uygulamanız diğer web tarayıcıları ile uyumlu olmayan Internet Explorer denetim veya kod içerebilir. Diğer tarayıcılar arasında kodlanmış UI testleri çalıştırarak, müşterilerinizi etkilemeden önce herhangi bir sorunu keşfedebilir ve düzeltebilirsiniz.  
@@ -74,16 +74,16 @@ Kodlanmış UI testleri, web uygulamaları için Internet Explorer'ı kullanarak
   
 #### <a name="installing-selenium-components"></a>Selenium bileşenlerini yükleme  
   
-1.  Üzerinde **Araçları** menüsünde seçin **Uzantılar ve güncelleştirmeler**.  
+1. Üzerinde **Araçları** menüsünde seçin **Uzantılar ve güncelleştirmeler**.  
   
-2.  Uzantı ve güncelleştirmeler iletişim kutusunda arama `Selenium components for Cross Browser Testing`.  
+2. Uzantı ve güncelleştirmeler iletişim kutusunda arama `Selenium components for Cross Browser Testing`.  
   
-3.  Uzantısını vurgulayın ve seçin **indirme**.  
+3. Uzantısını vurgulayın ve seçin **indirme**.  
   
-    > [!TIP]
-    >  Kodlanmış UI çapraz tarayıcı test etmek için Selenium bileşenlerini indirebilirsiniz [burada](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
+   > [!TIP]
+   >  Kodlanmış UI çapraz tarayıcı test etmek için Selenium bileşenlerini indirebilirsiniz [burada](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
- Daha fazla bilgi oluşturma ve kullanarak kodlanmış UI testleri için bkz. [kodlanmış UI testleri](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
+   Daha fazla bilgi oluşturma ve kullanarak kodlanmış UI testleri için bkz. [kodlanmış UI testleri](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
   
 ### <a name="enable-debugging"></a>Hata ayıklamayı etkinleştir  
  Web uygulamanızda hata ayıklamayı etkinleştirmek için aşağıdaki yapılandırma seçeneklerini tamamlamanız gerekir:  
@@ -106,29 +106,29 @@ Kodlanmış UI testleri, web uygulamaları için Internet Explorer'ı kullanarak
  *Başka neleri bilmeliyim?*  
  **Notlar**  
   
--   ![Prerequsite](../test/media/prereq.png "önkoşul uyarılarını gözardı et") Apple Safari web tarayıcısı desteklenmiyor.  
+- ![Prerequsite](../test/media/prereq.png "önkoşul uyarılarını gözardı et") Apple Safari web tarayıcısı desteklenmiyor.  
   
--   ![Prerequsite](../test/media/prereq.png "önkoşul uyarılarını gözardı et") web tarayıcısını başlatma eylemini, kodlanmış UI testi parçası olmalıdır.  
+- ![Prerequsite](../test/media/prereq.png "önkoşul uyarılarını gözardı et") web tarayıcısını başlatma eylemini, kodlanmış UI testi parçası olmalıdır.  
   
-     Internet Explorer kullanmadığınız sürece açık bir web tarayıcısına sahip ve adımlar üzerinde çalıştırmak istiyorsanız, kayıttan yürütme başarısız olur. Bu nedenle, web tarayıcınızı başlatması kodlanmış UI testleriniz bir parçası olarak dahil en iyi uygulamadır.  
+   Internet Explorer kullanmadığınız sürece açık bir web tarayıcısına sahip ve adımlar üzerinde çalıştırmak istiyorsanız, kayıttan yürütme başarısız olur. Bu nedenle, web tarayıcınızı başlatması kodlanmış UI testleriniz bir parçası olarak dahil en iyi uygulamadır.  
   
--   ![Prerequsite](../test/media/prereq.png "önkoşul uyarılarını gözardı et") belirli otomatikleştirme tarayıcı tabanlı UI eylemlerini gibi en üst düzeye çıkarmak, en aza indirmek ve geri yükleme desteklenmiyor.  
+- ![Prerequsite](../test/media/prereq.png "önkoşul uyarılarını gözardı et") belirli otomatikleştirme tarayıcı tabanlı UI eylemlerini gibi en üst düzeye çıkarmak, en aza indirmek ve geri yükleme desteklenmiyor.  
   
- **İpuçları**  
+  **İpuçları**  
   
--   ![İpucu](../test/media/tip.png "İpucu") çıktı kodlanmış UI günlüklerinde ekran görüntüleri içerecek şekilde yapılandırabilirsiniz. Bunu yapmak için bazı yapılandırma ayarlarını QTAgent32.exe.config dosyasında ayarlamanız gerekir. Varsayılan olarak, bu dosya aşağıdaki konuma yüklenir:  
+- ![İpucu](../test/media/tip.png "İpucu") çıktı kodlanmış UI günlüklerinde ekran görüntüleri içerecek şekilde yapılandırabilirsiniz. Bunu yapmak için bazı yapılandırma ayarlarını QTAgent32.exe.config dosyasında ayarlamanız gerekir. Varsayılan olarak, bu dosya aşağıdaki konuma yüklenir:  
   
-     **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**  
+   **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**  
   
-     Aşağıdaki değerleri ayarlayın:  
+   Aşağıdaki değerleri ayarlayın:  
   
-    -   `EqtTraceLevel` içinde `system.diagnostics` bölümü.  
+  - `EqtTraceLevel` içinde `system.diagnostics` bölümü.  
   
-    -   `<add name="EqtTraceLevel" value="4" />`  
+  - `<add name="EqtTraceLevel" value="4" />`  
   
-         3 veya daha yüksek bir değere ayarlayarak ekran görüntüleri her eylem için alınır. Değeri 1 veya 2'ye ayarlandığında, ekran görüntüleri yalnızca hata eylemleri alır.  
+     3 veya daha yüksek bir değere ayarlayarak ekran görüntüleri her eylem için alınır. Değeri 1 veya 2'ye ayarlandığında, ekran görüntüleri yalnızca hata eylemleri alır.  
   
-     Daha fazla bilgi için [çözümleme kodlanmış UI testleri kullanarak kodlanmış UI Test günlüklerini](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).  
+    Daha fazla bilgi için [çözümleme kodlanmış UI testleri kullanarak kodlanmış UI Test günlüklerini](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).  
   
 ## <a name="external-resources"></a>Dış Kaynaklar  
   

@@ -13,12 +13,12 @@ ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd99df10b7cfeefea38bd8399c3d21961d65d205
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 72aaaa4a3eb75043f4a2cf3bdd20352bdd2af93b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245394"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856697"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio için paylaşılan renkler
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,10 +48,10 @@ Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlarken v
  Kullan...  
  -   herhangi bir zamanda, özel bir menü oluşturmanız gerekir.  
   
--   Visual Studio menülerinin eşleştirmek istediğiniz yeni bir kullanıcı Arabirimi bileşeninin olduğunda.  
+- Visual Studio menülerinin eşleştirmek istediğiniz yeni bir kullanıcı Arabirimi bileşeninin olduğunda.  
   
- Kullanmayın...  
- tek başına arka plan rengi. Her zaman arka plan/ön plan birlikte belirtilen kullanın.  
+  Kullanmayın...  
+  tek başına arka plan rengi. Her zaman arka plan/ön plan birlikte belirtilen kullanın.  
   
 #### <a name="menu-title"></a>Menü başlığı  
  Genellikle bir Komut çubuğuna menü bulunduğunda menü başlığı arka plan, kenarlık ve başlık metnini yanı isteğe bağlı bir karakter oluşur.  
@@ -64,137 +64,137 @@ Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlarken v
  Kullanmayın...  
  -   her şey için her zaman istemediğiniz menü başlığının eşleştirin.  
   
--   Belirtilen dışındaki tüm arka plan/ön plan arada.  
+- Belirtilen dışındaki tüm arka plan/ön plan arada.  
   
- **Default**  
+  **Default**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Menü başlığı varsayılan](../../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")  
+  ![Menü başlığı varsayılan](../../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")  
   
- **Menü başlığı**  
+  **Menü başlığı**  
   
- Arka Plan  
+  Arka Plan  
   
- Yok.  
+  Yok.  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- ![Menü başlığı glif varsayılan](../../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303 003_MenuTitleWithGlyphDefault")  
+  ![Menü başlığı glif varsayılan](../../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303 003_MenuTitleWithGlyphDefault")  
   
- **Menü başlığı karakter ile**  
+  **Menü başlığı karakter ile**  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.CommandBarMenuGlyph`  
+  `Environment.CommandBarMenuGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- Yok.  
+  Yok.  
   
- **Vurgulu**  
+  **Vurgulu**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Menü başlığı üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303 004_MenuTitleHover")  
+  ![Menü başlığı üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303 004_MenuTitleHover")  
   
- **Menü başlığı**  
+  **Menü başlığı**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.CommandBarMouseOverBackgroundBegin`  
+  `Environment.CommandBarMouseOverBackgroundBegin`  
   
- Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
+  Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.CommandBarTextHover`  
+  `Environment.CommandBarTextHover`  
   
- ![Menü başlığı ile üzerine gelindiğinde glif](../../extensibility/ux-guidelines/media/0303-005-menutitlewithglyphhover.png "0303 005_MenuTitleWithGlyphHover")  
+  ![Menü başlığı ile üzerine gelindiğinde glif](../../extensibility/ux-guidelines/media/0303-005-menutitlewithglyphhover.png "0303 005_MenuTitleWithGlyphHover")  
   
- **Menü başlığı karakter ile**  
+  **Menü başlığı karakter ile**  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.CommandBarMenuMouseOverGlyph`  
+  `Environment.CommandBarMenuMouseOverGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- **Basılan**  
+  **Basılan**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Menü başlığı basılı](../../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303 006_MenuTitlePressed")  
+  ![Menü başlığı basılı](../../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303 006_MenuTitlePressed")  
   
- **Menü başlığı**  
+  **Menü başlığı**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.CommandBarMenuBackgroundGradientBegin`  
+  `Environment.CommandBarMenuBackgroundGradientBegin`  
   
- Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
+  Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- ![Menü başlığı basılı karakteri ile](../../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303 007_MenuTitleWithGlyphPressed")  
+  ![Menü başlığı basılı karakteri ile](../../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303 007_MenuTitleWithGlyphPressed")  
   
- **Menü başlığı karakter ile**  
+  **Menü başlığı karakter ile**  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.CommandBarMenuMouseDownGlyph`  
+  `Environment.CommandBarMenuMouseDownGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.CommandBarMenuBorder`  
+  `Environment.CommandBarMenuBorder`  
   
- Yalnızca sol, üst ve sağ.  
+  Yalnızca sol, üst ve sağ.  
   
- **Devre dışı**  
+  **Devre dışı**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Menü başlığı devre dışı karakter ile](../../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")  
+  ![Menü başlığı devre dışı karakter ile](../../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")  
   
- **Menü başlığı karakter ile**  
+  **Menü başlığı karakter ile**  
   
- Arka Plan  
+  Arka Plan  
   
- Yok.  
+  Yok.  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- Kenarlık  
+  Kenarlık  
   
- Yok.  
+  Yok.  
   
 #### <a name="menu"></a>Menü  
  Bir tek menü öğesinin menü metnini ve bir isteğe bağlı simge, onay kutusu veya alt simge oluşur. Arka plan ve metin rengi değişiklik üzerine gelindiğinde. Bu renk belirteci, bir arka plan/ön plan çiftidir.  
@@ -207,153 +207,153 @@ Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlarken v
  Kullanmayın...  
  -   herhangi bir aşağı açılan listeyi, başka bir bağlamda gerçekleşir.  
   
--   Belirtilen dışındaki tüm arka plan/ön plan arada.  
+- Belirtilen dışındaki tüm arka plan/ön plan arada.  
   
- **Default**  
+  **Default**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Menü varsayılan](../../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 010_MenuDefault")  
+  ![Menü varsayılan](../../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 010_MenuDefault")  
   
- **Menü**  
+  **Menü**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.CommandBarMenuBackgroundGradientBegin`  
+  `Environment.CommandBarMenuBackgroundGradientBegin`  
   
- Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
+  Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- Ön plan (alt karakter)  
+  Ön plan (alt karakter)  
   
- `Environment.CommandBarMenuSubmenuGlyph`  
+  `Environment.CommandBarMenuSubmenuGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.CommandBarMenuBorder`  
+  `Environment.CommandBarMenuBorder`  
   
- Simge kanal arka planı  
+  Simge kanal arka planı  
   
- `Environment.CommandBarMenuIconBackground`  
+  `Environment.CommandBarMenuIconBackground`  
   
- Ayırıcı  
+  Ayırıcı  
   
- `Environment.CommandBarMenuSeparator`  
+  `Environment.CommandBarMenuSeparator`  
   
- Gölge  
+  Gölge  
   
- `Environment.DropShadowBackground`  
+  `Environment.DropShadowBackground`  
   
- ![İşaretli menü](../../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303 011_MenuChecked")  
+  ![İşaretli menü](../../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303 011_MenuChecked")  
   
- **İşaretli**  
+  **İşaretli**  
   
- Onay işareti  
+  Onay işareti  
   
- `Environment.CommandBarCheckBox`  
+  `Environment.CommandBarCheckBox`  
   
- Onay işareti arka plan  
+  Onay işareti arka plan  
   
- `Environment.CommandBarSelectedIcon`  
+  `Environment.CommandBarSelectedIcon`  
   
- ![Seçili menü](../../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303 012_MenuSelected")  
+  ![Seçili menü](../../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303 012_MenuSelected")  
   
- **Seçili**  
+  **Seçili**  
   
- Simge arka planı  
+  Simge arka planı  
   
- `Environment.CommandBarSelected`  
+  `Environment.CommandBarSelected`  
   
- Simge kenarlık  
+  Simge kenarlık  
   
- `Environment.CommandBarSelectedBorder`  
+  `Environment.CommandBarSelectedBorder`  
   
- **Vurgulu**  
+  **Vurgulu**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Menü vurgulu](../../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303 013_MenuHover")  
+  ![Menü vurgulu](../../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303 013_MenuHover")  
   
- **Menü öğesi**  
+  **Menü öğesi**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.CommandBarMenuItemMouseOver`  
+  `Environment.CommandBarMenuItemMouseOver`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.CommandBarMenuItemMouseOver`  
+  `Environment.CommandBarMenuItemMouseOver`  
   
- Ön plan (alt karakter)  
+  Ön plan (alt karakter)  
   
- `Environment.CommandBarMenuMouseOverSubmenuGlyph`  
+  `Environment.CommandBarMenuMouseOverSubmenuGlyph`  
   
- ![İşaretli menü vurgulu](../../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303 014_MenuHoverChecked")  
+  ![İşaretli menü vurgulu](../../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303 014_MenuHoverChecked")  
   
- **İşaretli**  
+  **İşaretli**  
   
- Onay işareti  
+  Onay işareti  
   
- `Environment.CommandBarCheckBoxMouseOver`  
+  `Environment.CommandBarCheckBoxMouseOver`  
   
- Onay işareti arka plan  
+  Onay işareti arka plan  
   
- `Environment.CommandBarHoverOverSelectedIcon`  
+  `Environment.CommandBarHoverOverSelectedIcon`  
   
- ![Seçili menü vurgulu](../../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303 015_MenuHoverSelected")  
+  ![Seçili menü vurgulu](../../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303 015_MenuHoverSelected")  
   
- **Seçili**  
+  **Seçili**  
   
- Simge arka planı  
+  Simge arka planı  
   
- `Environment.CommandBarHoverOverSelected`  
+  `Environment.CommandBarHoverOverSelected`  
   
- Simge kenarlık  
+  Simge kenarlık  
   
- `Environment.CommandBarHoverOverSelectedIconBorder`  
+  `Environment.CommandBarHoverOverSelectedIconBorder`  
   
- **Devre dışı**  
+  **Devre dışı**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Devre dışı menü](../../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303 016_MenuDisabled")  
+  ![Devre dışı menü](../../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303 016_MenuDisabled")  
   
- Menü öğesi  
+  Menü öğesi  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- Ön plan (alt karakter)  
+  Ön plan (alt karakter)  
   
- `Environment.CommandBarMenuSubmenuGlyph`  
+  `Environment.CommandBarMenuSubmenuGlyph`  
   
- ![Menü devre dışı işaretli](../../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303 017_MenuDisabledChecked")  
+  ![Menü devre dışı işaretli](../../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303 017_MenuDisabledChecked")  
   
- İşaretli  
+  İşaretli  
   
- Onay işareti  
+  Onay işareti  
   
- `Environment.CommandBarCheckBoxDisabled`  
+  `Environment.CommandBarCheckBoxDisabled`  
   
- Onay işareti arka plan  
+  Onay işareti arka plan  
   
- `Environment.CommandBarSelectedIconDisabled`  
+  `Environment.CommandBarSelectedIconDisabled`  
   
 ### <a name="command-bar"></a>Komut çubuğu  
  Komut çubuğunda, birden fazla yerde Visual Studio IDE içinde komut raf ve katıştırılmış araç veya belge pencereleri özellikle görünebilir.  
@@ -383,33 +383,33 @@ Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlarken v
  Kullanmayın...  
  -   Kullanıcı Arabirimi öğeleri için Komut çubuğuna benzer değildir.  
   
--   belirteç adları dışında olduğu için istediklerinizi belirtilen komut çubuğu bileşenleri için.  
+- belirteç adları dışında olduğu için istediklerinizi belirtilen komut çubuğu bileşenleri için.  
   
- **Varsayılan** (başka hiçbir durum)  
+  **Varsayılan** (başka hiçbir durum)  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.CommandBarGradientBegin`  
+  `Environment.CommandBarGradientBegin`  
   
- Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
+  Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.CommandBarToolBarBorder`  
+  `Environment.CommandBarToolBarBorder`  
   
- Sürükleme tutamacı  
+  Sürükleme tutamacı  
   
- `Environment.CommandBarDragHandle`  
+  `Environment.CommandBarDragHandle`  
   
- Ayırıcı  
+  Ayırıcı  
   
- `Environment.CommandBarToolBarSeparator`  
+  `Environment.CommandBarToolBarSeparator`  
   
- `Environment.CommandBarToolBarSeparatorHighlight`  
+  `Environment.CommandBarToolBarSeparatorHighlight`  
   
 #### <a name="command-icons"></a>Komut simgeleri  
  ![Komut simgesi kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303 021_CommandIconRedline1")  
@@ -422,139 +422,139 @@ Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlarken v
  Kullanmayın...  
  -   denetimler için belirteç adlarına sahip.  
   
--   Belirtilen dışındaki tüm arka plan/ön plan arada.  
+- Belirtilen dışındaki tüm arka plan/ön plan arada.  
   
- **Default**  
+  **Default**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Komut simgesinin varsayılan](../../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")  
+  ![Komut simgesinin varsayılan](../../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")  
   
- **Default**  
+  **Default**  
   
- Arka Plan  
+  Arka Plan  
   
- Yok (komut çubuğu arka planından devralır)  
+  Yok (komut çubuğu arka planından devralır)  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- Kenarlık  
+  Kenarlık  
   
- Yok  
+  Yok  
   
- ![Komut simgesinin varsayılan seçili](../../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 024_CommandIconDefaultSelected")  
+  ![Komut simgesinin varsayılan seçili](../../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 024_CommandIconDefaultSelected")  
   
- **Seçili**  
+  **Seçili**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.CommandBarSelected`  
+  `Environment.CommandBarSelected`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.CommandBarTextSelected`  
+  `Environment.CommandBarTextSelected`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.CommandBarSelectedBorder`  
+  `Environment.CommandBarSelectedBorder`  
   
- **Hover ve klavye odaklı**  
+  **Hover ve klavye odaklı**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Komut simgesinin üzerine gelindiğinde kullanılacak](../../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 025_CommandIconHover")  
+  ![Komut simgesinin üzerine gelindiğinde kullanılacak](../../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 025_CommandIconHover")  
   
- **Üzerine gelindiğinde standart**  
+  **Üzerine gelindiğinde standart**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.CommandBarMouseOverBackgroundBegin`  
+  `Environment.CommandBarMouseOverBackgroundBegin`  
   
- Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
+  Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.CommandBarTextHover`  
+  `Environment.CommandBarTextHover`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- ![Komut simgesinin üzerine gelindiğinde kullanılacak seçili](../../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303 026_CommandIconHoverSelected")  
+  ![Komut simgesinin üzerine gelindiğinde kullanılacak seçili](../../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303 026_CommandIconHoverSelected")  
   
- **Üzerine gelindiğinde seçili**  
+  **Üzerine gelindiğinde seçili**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.CommandBarHoverOverSelected`  
+  `Environment.CommandBarHoverOverSelected`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.CommandBarTextHoverOverSelected`  
+  `Environment.CommandBarTextHoverOverSelected`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.CommandBarHoverOverSelectedIconBorder`  
+  `Environment.CommandBarHoverOverSelectedIconBorder`  
   
- **Basılan**  
+  **Basılan**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Komut simgesinin basılı](../../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 027_CommandIconPressed")  
+  ![Komut simgesinin basılı](../../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 027_CommandIconPressed")  
   
- **Basılan komut simgesi**  
+  **Basılan komut simgesi**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.CommandBarMouseDownBackgroundBegin`  
+  `Environment.CommandBarMouseDownBackgroundBegin`  
   
- Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
+  Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.CommandBarTextMouseDown`  
+  `Environment.CommandBarTextMouseDown`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- **Devre dışı**  
+  **Devre dışı**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Komut simgesinin devre dışı](../../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 028_CommandIconDisabled")  
+  ![Komut simgesinin devre dışı](../../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 028_CommandIconDisabled")  
   
- **Devre dışı bir komut simgesi**  
+  **Devre dışı bir komut simgesi**  
   
- Arka Plan  
+  Arka Plan  
   
- Yok (komut çubuğu arka planından devralır)  
+  Yok (komut çubuğu arka planından devralır)  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- Kenarlık  
+  Kenarlık  
   
- Yok  
+  Yok  
   
 ####  <a name="BKMK_CommandComboBox"></a> Birleşik giriş kutusu  
   
@@ -566,242 +566,242 @@ Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlarken v
  Kullan...  
  -   özel bir birleşik giriş kutuları oluştururken.  
   
--   bir birleşik giriş kutusuna benzeyen bir komut çubuğu denetimini oluştururken.  
+- bir birleşik giriş kutusuna benzeyen bir komut çubuğu denetimini oluştururken.  
   
- Kullanmayın...  
- -   her şey için her zaman komut eşleştirilecek istemediğiniz çubuğu kullanıcı Arabirimi.  
+  Kullanmayın...  
+  -   her şey için her zaman komut eşleştirilecek istemediğiniz çubuğu kullanıcı Arabirimi.  
   
--   erişim için bir stil uygulanmış bir birleşik giriş kutusu olduğunda.  
+- erişim için bir stil uygulanmış bir birleşik giriş kutusu olduğunda.  
   
- **Default**  
+  **Default**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Birleşik giriş kutusu giriş alanı](../../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 030_ComboBoxInputField")  
+  ![Birleşik giriş kutusu giriş alanı](../../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 030_ComboBoxInputField")  
   
- **Giriş alanı**  
+  **Giriş alanı**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.ComboBoxBackground`  
+  `Environment.ComboBoxBackground`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.ComboBoxText`  
+  `Environment.ComboBoxText`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.ComboBoxBorder`  
+  `Environment.ComboBoxBorder`  
   
- Ayırıcı  
+  Ayırıcı  
   
- Hiçbir ayırıcısı  
+  Hiçbir ayırıcısı  
   
- ![Açılan birleşik giriş kutusu&#45;Kapat düğmesi](../../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")  
+  ![Açılan birleşik giriş kutusu&#45;Kapat düğmesi](../../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")  
   
- **Aşağı açılan düğmesi**  
+  **Aşağı açılan düğmesi**  
   
- Arka Plan  
+  Arka Plan  
   
- Yok (devralınan)  
+  Yok (devralınan)  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.ComboBoxGlyph`  
+  `Environment.ComboBoxGlyph`  
   
- ![Birleşik giriş kutusu&#47;bırak&#45;açılan listesinde](../../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303 032_ComboBoxDropdownList")  
+  ![Birleşik giriş kutusu&#47;bırak&#45;açılan listesinde](../../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303 032_ComboBoxDropdownList")  
   
- **Aşağı açılan listesi**  
+  **Aşağı açılan listesi**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.ComboBoxPopupBackgroundBegin`  
+  `Environment.ComboBoxPopupBackgroundBegin`  
   
- Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
+  Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.ComboBoxItemText`  
+  `Environment.ComboBoxItemText`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.ComboBoxPopupBorder`  
+  `Environment.ComboBoxPopupBorder`  
   
- **Vurgulu**  
+  **Vurgulu**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Birleşik giriş kutusu giriş alanı üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 033_ComboBoxInputFieldHover")  
+  ![Birleşik giriş kutusu giriş alanı üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 033_ComboBoxInputFieldHover")  
   
- **Giriş alanı**  
+  **Giriş alanı**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.ComboBoxMouseOverBackgroundBegin`  
+  `Environment.ComboBoxMouseOverBackgroundBegin`  
   
- Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
+  Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.ComboBoxMouseOverText`  
+  `Environment.ComboBoxMouseOverText`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.ComboBoxMouseOverBorder`  
+  `Environment.ComboBoxMouseOverBorder`  
   
- Ayırıcı  
+  Ayırıcı  
   
- `Environment.ComboBoxMouseOverSeparator`  
+  `Environment.ComboBoxMouseOverSeparator`  
   
- ![Birleşik giriş kutusu&#47;bırak&#45;Kapat düğmesi üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303 034_ComboBoxDropdownButtonHover")  
+  ![Birleşik giriş kutusu&#47;bırak&#45;Kapat düğmesi üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303 034_ComboBoxDropdownButtonHover")  
   
- **Aşağı açılan düğmesi**  
+  **Aşağı açılan düğmesi**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.ComboBoxButtonMouseOverBackground`  
+  `Environment.ComboBoxButtonMouseOverBackground`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.ComboBoxMouseOverGlyph`  
+  `Environment.ComboBoxMouseOverGlyph`  
   
- ![Birleşik giriş kutusu&#47;bırak&#45;açılan listesinde üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303 035_ComboBoxDropdownListHover")  
+  ![Birleşik giriş kutusu&#47;bırak&#45;açılan listesinde üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303 035_ComboBoxDropdownListHover")  
   
- **Aşağı açılan listesi**  
+  **Aşağı açılan listesi**  
   
- Arka plan (menü öğesi)  
+  Arka plan (menü öğesi)  
   
- `Environment.ComboBoxItemMouseOverBackground`  
+  `Environment.ComboBoxItemMouseOverBackground`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.ComboBoxItemMouseOverText`  
+  `Environment.ComboBoxItemMouseOverText`  
   
- Kenarlık (menü öğesi)  
+  Kenarlık (menü öğesi)  
   
- `Environment.ComboBoxItemMouseOverBorder`  
+  `Environment.ComboBoxItemMouseOverBorder`  
   
- **Odaklanmış**  
+  **Odaklanmış**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Color.category  
+  Belirteç adı: Color.category  
   
- ![Birleşik giriş kutusu giriş alanı odaklanmış](../../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303 036_ComboBoxInputFieldFocused")  
+  ![Birleşik giriş kutusu giriş alanı odaklanmış](../../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303 036_ComboBoxInputFieldFocused")  
   
- **Giriş alanı**  
+  **Giriş alanı**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.ComboBoxFocusedBackground`  
+  `Environment.ComboBoxFocusedBackground`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.ComboBoxFocusedText`  
+  `Environment.ComboBoxFocusedText`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.ComboBoxFocusedBorder`  
+  `Environment.ComboBoxFocusedBorder`  
   
- Ayırıcı  
+  Ayırıcı  
   
- `Environment.ComboBoxFocusedButtonSeparator`  
+  `Environment.ComboBoxFocusedButtonSeparator`  
   
- ![Birleşik giriş kutusu&#47;bırak&#45;odaklanmış düğmesini basılı](../../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303 037_ComboBoxDropdownButtonFocused")  
+  ![Birleşik giriş kutusu&#47;bırak&#45;odaklanmış düğmesini basılı](../../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303 037_ComboBoxDropdownButtonFocused")  
   
- **Aşağı açılan düğmesi**  
+  **Aşağı açılan düğmesi**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.ComboBoxFocusedButtonBackground`  
+  `Environment.ComboBoxFocusedButtonBackground`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.ComboBoxFocusedGlyph`  
+  `Environment.ComboBoxFocusedGlyph`  
   
- **Basılan**  
+  **Basılan**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Color.category  
+  Belirteç adı: Color.category  
   
- ![Birleşik giriş kutusu giriş alanı basılı](../../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303 038_ComboBoxInputFieldPressed")  
+  ![Birleşik giriş kutusu giriş alanı basılı](../../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303 038_ComboBoxInputFieldPressed")  
   
- **Giriş alanı**  
+  **Giriş alanı**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.ComboBoxMouseDownBackground`  
+  `Environment.ComboBoxMouseDownBackground`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.ComboBoxMouseDownText`  
+  `Environment.ComboBoxMouseDownText`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.ComboBoxMouseDownBorder`  
+  `Environment.ComboBoxMouseDownBorder`  
   
- Ayırıcı  
+  Ayırıcı  
   
- `Environment.ComboBoxMouseDownSeparator`  
+  `Environment.ComboBoxMouseDownSeparator`  
   
- ![Birleşik giriş kutusu&#47;bırak&#45;düğmeye basıldığını aşağı](../../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303 039_ComboBoxDropdownButtonPressed")  
+  ![Birleşik giriş kutusu&#47;bırak&#45;düğmeye basıldığını aşağı](../../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303 039_ComboBoxDropdownButtonPressed")  
   
- **Aşağı açılan düğmesi**  
+  **Aşağı açılan düğmesi**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.ComboBoxButtonMouseDownBackground`  
+  `Environment.ComboBoxButtonMouseDownBackground`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.ComboBoxMouseDownGlyph`  
+  `Environment.ComboBoxMouseDownGlyph`  
   
- **Devre dışı**  
+  **Devre dışı**  
   
- ![Birleşik giriş kutusu giriş alanını devre dışı](../../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 041_ComboBoxInputFieldDisabled")  
+  ![Birleşik giriş kutusu giriş alanını devre dışı](../../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 041_ComboBoxInputFieldDisabled")  
   
- **Giriş alanı**  
+  **Giriş alanı**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.ComboBoxDisabledBackground`  
+  `Environment.ComboBoxDisabledBackground`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.ComboBoxDisabledText`  
+  `Environment.ComboBoxDisabledText`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.ComboBoxDisabledBorder`  
+  `Environment.ComboBoxDisabledBorder`  
   
- Ayırıcı  
+  Ayırıcı  
   
- Hiçbir ayırıcısı  
+  Hiçbir ayırıcısı  
   
- ![Birleşik giriş kutusu&#47;bırak&#45;Kapat düğmesi devre dışı](../../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303 040_ComboBoxDropdownButtonDisabled")  
+  ![Birleşik giriş kutusu&#47;bırak&#45;Kapat düğmesi devre dışı](../../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303 040_ComboBoxDropdownButtonDisabled")  
   
- **Aşağı açılan düğmesi**  
+  **Aşağı açılan düğmesi**  
   
- Arka Plan  
+  Arka Plan  
   
- Yok.  
+  Yok.  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.ComboBoxDisabledGlyph`  
+  `Environment.ComboBoxDisabledGlyph`  
   
 ####  <a name="BKMK_CommandDropDown"></a> Açılan  
   
@@ -816,203 +816,203 @@ Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlarken v
  Kullanmayın...  
  -   her şey için aşağı açılan listesine benzer değil.  
   
--   Birleşik giriş kutuları veya Bölünmüş düğme.  
+- Birleşik giriş kutuları veya Bölünmüş düğme.  
   
- **Default**  
+  **Default**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![DROP&#45;seçim alanı aşağı](../../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")  
+  ![DROP&#45;seçim alanı aşağı](../../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")  
   
- **Seçim alanı**  
+  **Seçim alanı**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.DropDownBackground`  
+  `Environment.DropDownBackground`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `DropDownText`  
+  `DropDownText`  
   
- Kenarlık  
+  Kenarlık  
   
- `DropDownBorder`  
+  `DropDownBorder`  
   
- Ayırıcı  
+  Ayırıcı  
   
- Hiçbir ayırıcısı  
+  Hiçbir ayırıcısı  
   
- ![DROP&#45;Kapat düğmesi](../../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303 044_DropdownButton")  
+  ![DROP&#45;Kapat düğmesi](../../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303 044_DropdownButton")  
   
- **Aşağı açılan düğmesi**  
+  **Aşağı açılan düğmesi**  
   
- Arka Plan  
+  Arka Plan  
   
- Yok.  
+  Yok.  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.DropDownGlyph`  
+  `Environment.DropDownGlyph`  
   
- ![DROP&#45;açılan listesinde](../../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 045_DropdownList")  
+  ![DROP&#45;açılan listesinde](../../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 045_DropdownList")  
   
- **Aşağı açılan listesi**  
+  **Aşağı açılan listesi**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.DropDownPopupBackgroundBegin`  
+  `Environment.DropDownPopupBackgroundBegin`  
   
- Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
+  Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.ComboBoxItemText`  
+  `Environment.ComboBoxItemText`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.DropDownPopupBorder`  
+  `Environment.DropDownPopupBorder`  
   
- Gölge  
+  Gölge  
   
- `Environment.DropShadowBackground`  
+  `Environment.DropShadowBackground`  
   
- **Vurgulu**  
+  **Vurgulu**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![DROP&#45;seçim alanı üzerine gelindiğinde aşağı](../../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 046_DropdownSelectionFieldHover")  
+  ![DROP&#45;seçim alanı üzerine gelindiğinde aşağı](../../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 046_DropdownSelectionFieldHover")  
   
- **Seçim alanı**  
+  **Seçim alanı**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.DropDownMouseOverBackgroundBegin`  
+  `Environment.DropDownMouseOverBackgroundBegin`  
   
- Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
+  Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.DropDownMouseOverText`  
+  `Environment.DropDownMouseOverText`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.DropDownMouseOverBorder`  
+  `Environment.DropDownMouseOverBorder`  
   
- Ayırıcı  
+  Ayırıcı  
   
- `Environment.DropDownButtonMouseOverSeparator`  
+  `Environment.DropDownButtonMouseOverSeparator`  
   
- ![DROP&#45;Kapat düğmesi üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303 047_DropdownButtonHover")  
+  ![DROP&#45;Kapat düğmesi üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303 047_DropdownButtonHover")  
   
- **Aşağı açılan düğmesi**  
+  **Aşağı açılan düğmesi**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.DropDownButtonMouseOverBackground`  
+  `Environment.DropDownButtonMouseOverBackground`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.DropDownMouseOverGlyph`  
+  `Environment.DropDownMouseOverGlyph`  
   
- ![DROP&#45;açılan listesinde üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303 048_DropdownListHover")  
+  ![DROP&#45;açılan listesinde üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303 048_DropdownListHover")  
   
- **Aşağı açılan listesi**  
+  **Aşağı açılan listesi**  
   
- Arka plan (menü öğesi)  
+  Arka plan (menü öğesi)  
   
- `Environment.ComboBoxItemMouseOverBackground`  
+  `Environment.ComboBoxItemMouseOverBackground`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.ComboBoxItemMouseOverText`  
+  `Environment.ComboBoxItemMouseOverText`  
   
- Kenarlık (menü öğesi)  
+  Kenarlık (menü öğesi)  
   
- `Environment.ComboBoxItemMouseOverBorder`  
+  `Environment.ComboBoxItemMouseOverBorder`  
   
- **Basılan**  
+  **Basılan**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![DROP&#45;tuşunu basılı seçim alanı](../../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")  
+  ![DROP&#45;tuşunu basılı seçim alanı](../../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")  
   
- **Seçim alanı**  
+  **Seçim alanı**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.DropDownMouseDownBackground`  
+  `Environment.DropDownMouseDownBackground`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.DropDownMouseDownText`  
+  `Environment.DropDownMouseDownText`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.DropDownMouseDownBorder`  
+  `Environment.DropDownMouseDownBorder`  
   
- Ayırıcı  
+  Ayırıcı  
   
- `Environment.DropDownButtonMouseDownSeparator`  
+  `Environment.DropDownButtonMouseDownSeparator`  
   
- ![DROP&#45;düğmeye basıldığını aşağı](../../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303 050_DropdownButtonPressed")  
+  ![DROP&#45;düğmeye basıldığını aşağı](../../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303 050_DropdownButtonPressed")  
   
- **Aşağı açılan düğmesi**  
+  **Aşağı açılan düğmesi**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.DropDownButtonMouseDownBackground`  
+  `Environment.DropDownButtonMouseDownBackground`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.DropDownMouseDownGlyph`  
+  `Environment.DropDownMouseDownGlyph`  
   
- **Devre dışı**  
+  **Devre dışı**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![DROP&#45;devre dışı seçim alanı aşağı](../../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")  
+  ![DROP&#45;devre dışı seçim alanı aşağı](../../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.DropDownDisabledBackground`  
+  `Environment.DropDownDisabledBackground`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.DropDownDisabledText`  
+  `Environment.DropDownDisabledText`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.DropDownDisabledBorder`  
+  `Environment.DropDownDisabledBorder`  
   
- Ayırıcı  
+  Ayırıcı  
   
- Hiçbir ayırıcısı  
+  Hiçbir ayırıcısı  
   
- ![DROP&#45;Kapat düğmesi devre dışı](../../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303 052_DropdownButtonDisabled")  
+  ![DROP&#45;Kapat düğmesi devre dışı](../../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303 052_DropdownButtonDisabled")  
   
- Arka Plan  
+  Arka Plan  
   
- Yok  
+  Yok  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.DropDownDisabledGlyph`  
+  `Environment.DropDownDisabledGlyph`  
   
 #### <a name="split-button"></a>Bölünmüş düğme  
  Bölünmüş düğme fazla belirteç ad düğmeler, menüler ve komut çubuğu metni gibi diğer komut çubuğu denetimleri ile paylaşın. Tüm gerekli eylem ve açılan düğmeyi belirteci adları kolaylık olması için burada yinelenir. Bölünmüş düğme açılan listeleri, uygulamaları komut çubuğunun [menüleri](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).  
@@ -1025,139 +1025,139 @@ Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlarken v
  Kullanmayın...  
  -   diğer düğme türleri için.  
   
--   Belirtilen dışındaki tüm arka plan/ön plan arada.  
+- Belirtilen dışındaki tüm arka plan/ön plan arada.  
   
- **Default**  
+  **Default**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Bölünmüş düğme](../../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")  
+  ![Bölünmüş düğme](../../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")  
   
- **Bölünmüş düğme (varsayılan)**  
+  **Bölünmüş düğme (varsayılan)**  
   
- Arka Plan  
+  Arka Plan  
   
- Yok.  
+  Yok.  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.CommandBarSplitButtonGlyph`  
+  `Environment.CommandBarSplitButtonGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- Yok  
+  Yok  
   
- Ayırıcı  
+  Ayırıcı  
   
- Yok  
+  Yok  
   
- **Vurgulu**  
+  **Vurgulu**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Bölünmüş düğme üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 055_SplitButtonHover")  
+  ![Bölünmüş düğme üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 055_SplitButtonHover")  
   
- **Bölünmüş düğme (üzerine gelindiğinde)**  
+  **Bölünmüş düğme (üzerine gelindiğinde)**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.CommandBarMouseOverBackgroundBegin`  
+  `Environment.CommandBarMouseOverBackgroundBegin`  
   
- Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
+  Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.CommandBarTextHover`  
+  `Environment.CommandBarTextHover`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.CommandBarSplitButtonMouseOverGlyph`  
+  `Environment.CommandBarSplitButtonMouseOverGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- Ayırıcı  
+  Ayırıcı  
   
- `Environment.CommandBarSplitButtonSeparator`  
+  `Environment.CommandBarSplitButtonSeparator`  
   
- **Basılan**  
+  **Basılan**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Bölünmüş düğmeye basıldığını](../../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 056_SplitButtonPressed")  
+  ![Bölünmüş düğmeye basıldığını](../../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 056_SplitButtonPressed")  
   
- **Bölünmüş düğme (basılı)**  
+  **Bölünmüş düğme (basılı)**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.CommandBarMouseDownBackgroundBegin`  
+  `Environment.CommandBarMouseDownBackgroundBegin`  
   
- Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
+  Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.CommandBarTextMouseDown`  
+  `Environment.CommandBarTextMouseDown`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.CommandBarSplitButtonMouseDownGlyph`  
+  `Environment.CommandBarSplitButtonMouseDownGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- Ayırıcı  
+  Ayırıcı  
   
- Yok  
+  Yok  
   
- **Devre dışı**  
+  **Devre dışı**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Bölünmüş düğme devre dışı](../../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")  
+  ![Bölünmüş düğme devre dışı](../../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")  
   
- **Bölünmüş düğme (devre dışı)**  
+  **Bölünmüş düğme (devre dışı)**  
   
- Arka Plan  
+  Arka Plan  
   
- Yok  
+  Yok  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.ComboBoxItemTextInactive`  
+  `Environment.ComboBoxItemTextInactive`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- Kenarlık  
+  Kenarlık  
   
- Yok  
+  Yok  
   
- Ayırıcı  
+  Ayırıcı  
   
- Yok  
+  Yok  
   
 #### <a name="more-options-and-overflow-buttons"></a>'Daha Seçenekleri' ve 'Overflow' düğmeleri  
  "Diğer seçenekler" düğmesi, bir komut çubuğu grubu özelleştirilebilir ekleme veya kaldırma ilgili komut çubuğu düğmelerinin olduğunda kullanılır. Bir komut çubuğu için yatay boşluk eksikliği nedeniyle kesilmiş ve görüntülenemiyor komut çubuğu düğmelerini içeren bir menü çubuğunda gösterir "Taşma" düğmesi görünür. Bu iki düğme için renkleri belirteci adları aynı kümesi tarafından denetlenir.  
@@ -1420,19 +1420,19 @@ Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlarken v
 #### <a name="open-document-tabs"></a>Açık belge sekmeleri  
  Her açık belge adını görüntüleyen belge sekme kanalda bir sekmesi vardır. Belge ya da seçilebilir veya arka planda açın ve bu durumları sekmeleri yansıtacak:  
   
--   Seçili belgeyi de şu anda görüntülenen belgenin temsil eder. Seçili bir sekme iyi belgenin üst kenarı genişlettiği belge kenarlık vardır.  
+- Seçili belgeyi de şu anda görüntülenen belgenin temsil eder. Seçili bir sekme iyi belgenin üst kenarı genişlettiği belge kenarlık vardır.  
   
--   Arka plan sekmeleri şu anda seçilen sekmesi olmayan herhangi bir belge sekme var. Tıklattıktan sonra seçili duruma ve tüm arka plan, kenarlık ve metin renklerini Bu belirteci adlarından Al.  
+- Arka plan sekmeleri şu anda seçilen sekmesi olmayan herhangi bir belge sekme var. Tıklattıktan sonra seçili duruma ve tüm arka plan, kenarlık ve metin renklerini Bu belirteci adlarından Al.  
   
- ![Açık belge sekme kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")  
+  ![Açık belge sekme kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")  
   
- Kullan...  
- ne zaman özel belge sekmeleri oluşturuyorsunuz.  
+  Kullan...  
+  ne zaman özel belge sekmeleri oluşturuyorsunuz.  
   
- Kullanmayın...  
- -   (Önizleme) provisional sekmeler için.  
+  Kullanmayın...  
+  -   (Önizleme) provisional sekmeler için.  
   
--   otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi için bir tema güncelleştirme Kabuk sahiptir.  
+- otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi için bir tema güncelleştirme Kabuk sahiptir.  
   
 #### <a name="selected-tab"></a>Seçilen sekmesi  
  **Odaklanmış**  
@@ -1553,117 +1553,117 @@ Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlarken v
  Kullanmayın...  
  -   Belge ya da geçici olmayan sekmesinde herhangi bir türdeki (Önizleme).  
   
--   otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi için bir tema güncelleştirme Kabuk sahiptir.  
+- otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi için bir tema güncelleştirme Kabuk sahiptir.  
   
- **Seçili Önizleme sekmesi: odaklanmış**  
+  **Seçili Önizleme sekmesi: odaklanmış**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Önizleme sekmesini odaklanmış](../../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")  
+  ![Önizleme sekmesini odaklanmış](../../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")  
   
- **Odaklanmış Önizleme sekmesi**  
+  **Odaklanmış Önizleme sekmesi**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.FileTabProvisionalSelectedActive`  
+  `Environment.FileTabProvisionalSelectedActive`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.FileTabProvisionalSelectedActiveForeground`  
+  `Environment.FileTabProvisionalSelectedActiveForeground`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.FileTabProvisionalSelectedActiveBorder`  
+  `Environment.FileTabProvisionalSelectedActiveBorder`  
   
- Aynı arka plan rengini ayarlayın.  
+  Aynı arka plan rengini ayarlayın.  
   
- Belge kenarlık  
+  Belge kenarlık  
   
- `Environment.FileTabProvisionalSelectedActiveBorder`  
+  `Environment.FileTabProvisionalSelectedActiveBorder`  
   
- **Seçili Önizleme sekmesi: Odaklanmadan**  
+  **Seçili Önizleme sekmesi: Odaklanmadan**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Önizleme sekmesini odaklanmadan](../../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")  
+  ![Önizleme sekmesini odaklanmadan](../../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")  
   
- **Plana odaklanmadan Önizleme sekmesi**  
+  **Plana odaklanmadan Önizleme sekmesi**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.FileTabProvisionalSelectedInactive`  
+  `Environment.FileTabProvisionalSelectedInactive`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.FileTabProvisionalSelectedInactiveForeground`  
+  `Environment.FileTabProvisionalSelectedInactiveForeground`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.FileTabProvisionalSelectedInactiveBorder`  
+  `Environment.FileTabProvisionalSelectedInactiveBorder`  
   
- Belge kenarlık  
+  Belge kenarlık  
   
- `Environment.FileTabProvisionalSelectedInactiveBorder`  
+  `Environment.FileTabProvisionalSelectedInactiveBorder`  
   
- **Arka plan Önizleme sekmesi: varsayılan**  
+  **Arka plan Önizleme sekmesi: varsayılan**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Önizleme arka plan sekmesine](../../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 081_PreviewBackgroundTab")  
+  ![Önizleme arka plan sekmesine](../../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 081_PreviewBackgroundTab")  
   
- **Önizleme sekmesini arka plan sekmesi**  
+  **Önizleme sekmesini arka plan sekmesi**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.FileTabProvisionalInactive`  
+  `Environment.FileTabProvisionalInactive`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.FileTabProvisionalInactiveForeground`  
+  `Environment.FileTabProvisionalInactiveForeground`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.FileTabProvisionalInactiveBorder`  
+  `Environment.FileTabProvisionalInactiveBorder`  
   
- Aynı arka plan rengini ayarlayın.  
+  Aynı arka plan rengini ayarlayın.  
   
- **Arka plan Önizleme sekmesi: getirin**  
+  **Arka plan Önizleme sekmesi: getirin**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Önizleme arka plan sekmesine üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 082_PreviewBackgroundTabHover")  
+  ![Önizleme arka plan sekmesine üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 082_PreviewBackgroundTabHover")  
   
- **Önizleme sekmesini arka plan sekmesine üzerine gelindiğinde**  
+  **Önizleme sekmesini arka plan sekmesine üzerine gelindiğinde**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.FileTabProvisionalHover`  
+  `Environment.FileTabProvisionalHover`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `Environment.FileTabProvisionalHoverForeground`  
+  `Environment.FileTabProvisionalHoverForeground`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.FileTabProvisionalHoverBorder`  
+  `Environment.FileTabProvisionalHoverBorder`  
   
- Aynı arka plan rengini ayarlayın.  
+  Aynı arka plan rengini ayarlayın.  
   
 #### <a name="document-overflow-button"></a>Belge Taşma düğmesi  
  Belge Taşma düğmesi, bir veya daha fazla belge olup olmamasına bakılmaksızın açık, mevcut ise tüm belge sekmeleri uyacak şekilde, geçerli yapılandırma dikey boşluk yoktur. Denetlenen belge taşma açılan menüsünü **CommandBarMenu** renkleri (bkz [menüleri](../../misc/shared-colors.md#BKMK_CommandMenus)), bütün açık belgeleri, görünür ve gizli ve taşma glif değişikliklerin bir listesini görüntüler bağlı olarak tüm açık belgeleri sekmesini kanalda olup görüntülenir.  
@@ -1676,79 +1676,79 @@ Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlarken v
  Kullanmayın...  
  -   taşma düğmesini için benzer değil kullanıcı Arabirimi için.  
   
--   Komut çubuğu taşma düğmeleri.  
+- Komut çubuğu taşma düğmeleri.  
   
- **Default**  
+  **Default**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Overflow](../../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 084_Overflow")  
+  ![Overflow](../../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 084_Overflow")  
   
- **Belge Taşma düğmesi**  
+  **Belge Taşma düğmesi**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.DocWellOverflowButtonBackground`  
+  `Environment.DocWellOverflowButtonBackground`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.DocWellOverflowButtonGlyph`  
+  `Environment.DocWellOverflowButtonGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- Yok  
+  Yok  
   
- **Vurgulu**  
+  **Vurgulu**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Overflow üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 085_OverflowHover")  
+  ![Overflow üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 085_OverflowHover")  
   
- **Üzerine gelindiğinde belge taşma düğmesi**  
+  **Üzerine gelindiğinde belge taşma düğmesi**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.DocWellOverflowButtonMouseOverBackground`  
+  `Environment.DocWellOverflowButtonMouseOverBackground`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.DocWellOverflowButtonMouseOverGlyph`  
+  `Environment.DocWellOverflowButtonMouseOverGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.DocWellOverflowButtonMouseOverBorder`  
+  `Environment.DocWellOverflowButtonMouseOverBorder`  
   
- **Basılan**  
+  **Basılan**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Basılan taşma](../../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 086_OverflowPressed")  
+  ![Basılan taşma](../../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 086_OverflowPressed")  
   
- **Belge taşma düğmesini basılı**  
+  **Belge taşma düğmesini basılı**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.DocWellOverflowButtonMouseDownBackground`  
+  `Environment.DocWellOverflowButtonMouseDownBackground`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.DocWellOverflowButtonMouseDownGlyph`  
+  `Environment.DocWellOverflowButtonMouseDownGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.DocWellOverflowButtonMouseDownBorder`  
+  `Environment.DocWellOverflowButtonMouseDownBorder`  
   
 ## <a name="tool-windows"></a>Araç pencereleri  
  Visual Studio ortamı tarafından sağlandığından, araç pencerelerini çoğaltmak için gerek yoktur. Ancak, kullanıcı Arabirimi her zaman Visual Studio ortamının bu bölümü ile tutarlı görünmesi araç pencerelerinde kullanılan renkleri yararlanmak istediğinize karar verin.  
@@ -1908,127 +1908,127 @@ Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlarken v
  Kullanmayın...  
  -   diğer konumlardaki düğmeler.  
   
--   Belirtilen dışındaki tüm arka plan/ön plan arada.  
+- Belirtilen dışındaki tüm arka plan/ön plan arada.  
   
- **Default**  
+  **Default**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Başlık düğme odaklanmış](../../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")  
+  ![Başlık düğme odaklanmış](../../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")  
   
- **Odaklanmış**  
+  **Odaklanmış**  
   
- Arka Plan  
+  Arka Plan  
   
- Yok  
+  Yok  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.ToolWindowButtonActiveGlyph`  
+  `Environment.ToolWindowButtonActiveGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- Yok  
+  Yok  
   
- ![Başlık düğme odaklanmadan](../../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")  
+  ![Başlık düğme odaklanmadan](../../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")  
   
- **Plana odaklanmadan**  
+  **Plana odaklanmadan**  
   
- Arka Plan  
+  Arka Plan  
   
- Yok  
+  Yok  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.ToolWindowButtonInactiveGlyph`  
+  `Environment.ToolWindowButtonInactiveGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- Yok  
+  Yok  
   
- **Vurgulu**  
+  **Vurgulu**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Başlık çubuğu düğme üzerine gelindiğinde odaklanmış](../../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")  
+  ![Başlık çubuğu düğme üzerine gelindiğinde odaklanmış](../../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")  
   
- **Odaklanmış**  
+  **Odaklanmış**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.ToolWindowButtonHoverActive`  
+  `Environment.ToolWindowButtonHoverActive`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.ToolWindowButtonHoverActiveGlyph`  
+  `Environment.ToolWindowButtonHoverActiveGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.ToolWindowButtonHoverActiveBorder`  
+  `Environment.ToolWindowButtonHoverActiveBorder`  
   
- ![Başlık çubuğu düğme üzerine gelindiğinde odaklanmadan](../../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303 099_TitleBarButtonUnfocusedHover")  
+  ![Başlık çubuğu düğme üzerine gelindiğinde odaklanmadan](../../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303 099_TitleBarButtonUnfocusedHover")  
   
- **Plana odaklanmadan**  
+  **Plana odaklanmadan**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.ToolWindowButtonHoverInactive`  
+  `Environment.ToolWindowButtonHoverInactive`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.ToolWindowButtonHoverInactiveGlyph`  
+  `Environment.ToolWindowButtonHoverInactiveGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.ToolWindowButtonHoverInactiveBorder`  
+  `Environment.ToolWindowButtonHoverInactiveBorder`  
   
- **Basılan**  
+  **Basılan**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Başlık odaklı ve basılı düğmesi](../../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")  
+  ![Başlık odaklı ve basılı düğmesi](../../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")  
   
- **Odaklanmış**  
+  **Odaklanmış**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.ToolWindowButtonDown`  
+  `Environment.ToolWindowButtonDown`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.ToolWindowButtonDownActiveGlyph`  
+  `Environment.ToolWindowButtonDownActiveGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.ToolWindowButtonDownBorder`  
+  `Environment.ToolWindowButtonDownBorder`  
   
- ![Başlık çubuğu düğme odaklanmadan ve basılı](../../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303 101_TitleBarButtonUnfocusedPressed")  
+  ![Başlık çubuğu düğme odaklanmadan ve basılı](../../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303 101_TitleBarButtonUnfocusedPressed")  
   
- **Plana odaklanmadan**  
+  **Plana odaklanmadan**  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.ToolWindowButtonDown`  
+  `Environment.ToolWindowButtonDown`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `Environment.ToolWindowButtonDownInactiveGlyph`  
+  `Environment.ToolWindowButtonDownInactiveGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- `Environment.ToolWindowButtonDownBorder`  
+  `Environment.ToolWindowButtonDownBorder`  
   
 ### <a name="tool-window-tabs"></a>Araç penceresi sekmeleri  
  ![Araç penceresi sekmesindeki kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-102-toolwindowtabredline.png "0303 102_ToolWindowTabRedline")  
@@ -2218,307 +2218,307 @@ Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlarken v
   
  Bir arama kutusu bazıları birbirini dışlayan olan çeşitli durumları biri olabilir:  
   
--   "Odaklı" veya "odaklanmadan" olup olmadığını imleç ve metin kutusundaki için kısaltmasıdır.  
+- "Odaklı" veya "odaklanmadan" olup olmadığını imleç ve metin kutusundaki için kısaltmasıdır.  
   
--   Kullanıcının metin kutusuna bir arama sorgusu girişinin için "Etkin" veya "etkin" anlamına gelir.  
+- Kullanıcının metin kutusuna bir arama sorgusu girişinin için "Etkin" veya "etkin" anlamına gelir.  
   
--   "Vurgu", kullanıcı (Bu durumda, diğer tüm durumları geçersiz kılar) fare ile arama kutusuna moused anlamına gelir.  
+- "Vurgu", kullanıcı (Bu durumda, diğer tüm durumları geçersiz kılar) fare ile arama kutusuna moused anlamına gelir.  
   
--   "Devre dışı" arama işlevi için geçerli bağlam kapalı anlamına gelir.  
+- "Devre dışı" arama işlevi için geçerli bağlam kapalı anlamına gelir.  
   
- ![Arama kutusuna kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303 110_SearchBoxRedline")  
+  ![Arama kutusuna kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303 110_SearchBoxRedline")  
   
- Kullan...  
- ne zaman bir özel arama kutusu tasarlarken.  
+  Kullan...  
+  ne zaman bir özel arama kutusu tasarlarken.  
   
- Kullanmayın...  
- -   her şey için bir arama kutusu değil.  
+  Kullanmayın...  
+  -   her şey için bir arama kutusu değil.  
   
--   her zaman arama eşleştirilecek istemediğiniz her şey için kullanıcı Arabirimi kutusu.  
+- her zaman arama eşleştirilecek istemediğiniz her şey için kullanıcı Arabirimi kutusu.  
   
- **Odaklanmış**  
+  **Odaklanmış**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Arama giriş alanı odaklanmış](../../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")  
+  ![Arama giriş alanı odaklanmış](../../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")  
   
- **Giriş alanı**  
+  **Giriş alanı**  
   
- Arka Plan  
+  Arka Plan  
   
- `SearchControl.FocusedBackground`  
+  `SearchControl.FocusedBackground`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `SearchControl.FocusedBackground`  
+  `SearchControl.FocusedBackground`  
   
- Kenarlık  
+  Kenarlık  
   
- `SearchControl.FocusedBorder`  
+  `SearchControl.FocusedBorder`  
   
- Ayırıcı  
+  Ayırıcı  
   
- `SearchControl.FocusedDropDownSeparator`  
+  `SearchControl.FocusedDropDownSeparator`  
   
- ![Arama eylem düğmesi odaklanmış](../../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 112_SearchActionButtonFocused")  
+  ![Arama eylem düğmesi odaklanmış](../../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 112_SearchActionButtonFocused")  
   
- **Eylem düğmesi**  
+  **Eylem düğmesi**  
   
- Arka Plan  
+  Arka Plan  
   
- Yok.  
+  Yok.  
   
- Ön plan (arama karakter)  
+  Ön plan (arama karakter)  
   
- `SearchControl.SearchGlyph`  
+  `SearchControl.SearchGlyph`  
   
- Ön plan (durdurma karakter)  
+  Ön plan (durdurma karakter)  
   
- `SearchControl.StopGlyph`  
+  `SearchControl.StopGlyph`  
   
- Ön plan (NET karakter)  
+  Ön plan (NET karakter)  
   
- `SearchControl.ClearGlyph`  
+  `SearchControl.ClearGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- Yok  
+  Yok  
   
- ![Arama açılan&#45;odaklanmış düğmesini basılı](../../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303 113_SearchDropdownButtonFocused")  
+  ![Arama açılan&#45;odaklanmış düğmesini basılı](../../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303 113_SearchDropdownButtonFocused")  
   
- **Aşağı açılan düğmesi**  
+  **Aşağı açılan düğmesi**  
   
- Arka Plan  
+  Arka Plan  
   
- `SearchControl.FocusedDropDownButton`  
+  `SearchControl.FocusedDropDownButton`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `SearchControl.FocusedDropDownButtonGlyph`  
+  `SearchControl.FocusedDropDownButtonGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- `SearchControl.FocusedDropDownButtonBorder`  
+  `SearchControl.FocusedDropDownButtonBorder`  
   
- **Plana odaklanmadan**  
+  **Plana odaklanmadan**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Arama giriş alanı odaklanmadan](../../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 114_SearchInputFieldUnfocused")  
+  ![Arama giriş alanı odaklanmadan](../../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 114_SearchInputFieldUnfocused")  
   
- **Etkin giriş alanı**  
+  **Etkin giriş alanı**  
   
- Arka Plan  
+  Arka Plan  
   
- `SearchControl.SearchActiveBackground`  
+  `SearchControl.SearchActiveBackground`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `SearchControl.SearchActiveBackground`  
+  `SearchControl.SearchActiveBackground`  
   
- Kenarlık  
+  Kenarlık  
   
- `SearchControl.UnfocusedBorder`  
+  `SearchControl.UnfocusedBorder`  
   
- Ayırıcı  
+  Ayırıcı  
   
- `SearchControl.DropDownSeparator`  
+  `SearchControl.DropDownSeparator`  
   
- ![Arama giriş alanı odaklanmadan ve etkin olmayan](../../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303 114 1_SearchInputFieldUnfocusedInactive")  
+  ![Arama giriş alanı odaklanmadan ve etkin olmayan](../../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303 114 1_SearchInputFieldUnfocusedInactive")  
   
- **Etkin olmayan giriş alanı**  
+  **Etkin olmayan giriş alanı**  
   
- Arka Plan  
+  Arka Plan  
   
- `SearchControl.Unfocused`  
+  `SearchControl.Unfocused`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `SearchControl.Unfocused`  
+  `SearchControl.Unfocused`  
   
- Kenarlık  
+  Kenarlık  
   
- `SearchControl.UnfocusedBorder`  
+  `SearchControl.UnfocusedBorder`  
   
- Ayırıcı  
+  Ayırıcı  
   
- `SearchControl.DropDownSeparator`  
+  `SearchControl.DropDownSeparator`  
   
- ![Arama eylem düğmesi odaklanmadan](../../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")  
+  ![Arama eylem düğmesi odaklanmadan](../../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")  
   
- **Eylem düğmesi**  
+  **Eylem düğmesi**  
   
- Arka Plan  
+  Arka Plan  
   
- Yok  
+  Yok  
   
- Ön plan (arama karakter)  
+  Ön plan (arama karakter)  
   
- `SearchControl.SearchGlyph`  
+  `SearchControl.SearchGlyph`  
   
- Ön plan (durdurma karakter)  
+  Ön plan (durdurma karakter)  
   
- `SearchControl.StopGlyph`  
+  `SearchControl.StopGlyph`  
   
- Ön plan (NET karakter)  
+  Ön plan (NET karakter)  
   
- `SearchControl.ClearGlyph`  
+  `SearchControl.ClearGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- Yok  
+  Yok  
   
- ![Arama açılan&#45;Kapat düğmesi odaklanmadan](../../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303 116_SearchDropdownButtonUnfocused")  
+  ![Arama açılan&#45;Kapat düğmesi odaklanmadan](../../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303 116_SearchDropdownButtonUnfocused")  
   
- **Aşağı açılan düğmesi**  
+  **Aşağı açılan düğmesi**  
   
- Arka Plan  
+  Arka Plan  
   
- `SearchControl.UnfocusedDropDownButton`  
+  `SearchControl.UnfocusedDropDownButton`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `SearchControl.UnfocusedDropDownButtonGlyph`  
+  `SearchControl.UnfocusedDropDownButtonGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- `SearchControl.UnfocusedDropDownButtonBorder`  
+  `SearchControl.UnfocusedDropDownButtonBorder`  
   
- **Basılan**  
+  **Basılan**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Arama eylem düğmesi basılı](../../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303 116 1_SearchActionButtonPressed")  
+  ![Arama eylem düğmesi basılı](../../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303 116 1_SearchActionButtonPressed")  
   
- **Eylem düğmesi**  
+  **Eylem düğmesi**  
   
- Arka Plan  
+  Arka Plan  
   
- `SearchControl.ActionButtonMouseDown`  
+  `SearchControl.ActionButtonMouseDown`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `SearchControl.ActionButtonMouseDownGlyph`  
+  `SearchControl.ActionButtonMouseDownGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- `SearchControl.ActionButtonMouseDownBorder`  
+  `SearchControl.ActionButtonMouseDownBorder`  
   
- ![Arama açılan&#45;düğmeye basıldığını aşağı](../../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303 116 2_SearchDropdownButtonPressed")  
+  ![Arama açılan&#45;düğmeye basıldığını aşağı](../../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303 116 2_SearchDropdownButtonPressed")  
   
- **Aşağı açılan düğmesi**  
+  **Aşağı açılan düğmesi**  
   
- Arka Plan  
+  Arka Plan  
   
- `SearchControl.MouseDownDropDownButton`  
+  `SearchControl.MouseDownDropDownButton`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `SearchControl.MouseDownDropDownButtonGlyph`  
+  `SearchControl.MouseDownDropDownButtonGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- `SearchControl.MouseDownDropDownButtonBorder`  
+  `SearchControl.MouseDownDropDownButtonBorder`  
   
- **Vurgulanan (yalnızca metin)**  
+  **Vurgulanan (yalnızca metin)**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Arama giriş alanı vurgulama](../../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")  
+  ![Arama giriş alanı vurgulama](../../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")  
   
- **Giriş alanı vurgulanmış metin**  
+  **Giriş alanı vurgulanmış metin**  
   
- Arka Plan  
+  Arka Plan  
   
- `SearchControl.Selection`  
+  `SearchControl.Selection`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `SearchControl.FocusedBackground`  
+  `SearchControl.FocusedBackground`  
   
- Kenarlık  
+  Kenarlık  
   
- Yok.  
+  Yok.  
   
- Ayırıcı  
+  Ayırıcı  
   
- `SearchControl.FocusedDropDownSeparator`  
+  `SearchControl.FocusedDropDownSeparator`  
   
- **Devre dışı**  
+  **Devre dışı**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Arama giriş alanını devre dışı](../../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")  
+  ![Arama giriş alanını devre dışı](../../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")  
   
- **Giriş alanı**  
+  **Giriş alanı**  
   
- Arka Plan  
+  Arka Plan  
   
- `SearchControl.Disabled`  
+  `SearchControl.Disabled`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `SearchControl.Disabled`  
+  `SearchControl.Disabled`  
   
- Kenarlık  
+  Kenarlık  
   
- `SearchControl.DisabledBorder`  
+  `SearchControl.DisabledBorder`  
   
- Ayırıcı  
+  Ayırıcı  
   
- `SearchControl.DropDownSeparator`  
+  `SearchControl.DropDownSeparator`  
   
- ![Arama eylem düğmesi devre dışı](../../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 122_SearchActionButtonDisabled")  
+  ![Arama eylem düğmesi devre dışı](../../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 122_SearchActionButtonDisabled")  
   
- **Eylem düğmesi**  
+  **Eylem düğmesi**  
   
- Arka Plan  
+  Arka Plan  
   
- Yok.  
+  Yok.  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `SearchControl.ActionButtonDisabledGlyph`  
+  `SearchControl.ActionButtonDisabledGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- Yok.  
+  Yok.  
   
- ![Arama açılan&#45;Kapat düğmesi devre dışı](../../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 123_SearchDropdownButtonDisabled")  
+  ![Arama açılan&#45;Kapat düğmesi devre dışı](../../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 123_SearchDropdownButtonDisabled")  
   
- **Aşağı açılan düğmesi**  
+  **Aşağı açılan düğmesi**  
   
- Arka Plan  
+  Arka Plan  
   
- Yok.  
+  Yok.  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `SearchControl.DisabledDownButtonGlyph`  
+  `SearchControl.DisabledDownButtonGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- Yok.  
+  Yok.  
   
 #### <a name="search-drop-down-lists"></a>Arama açılan listeler  
  Arama kutusu açılır menüsünde, Visual Studio'daki diğer açılan menüler biraz daha karmaşık hale olasılığına sahiptir. "Önerilen aramalar" ve "Arama Seçenekleri" bölümleri tek başına görünebilir veya birlikte menü ve her biri ayrı ayrı renktedir. Bir satır da birlikte görünür ve tüm açılan menüden bir kenarlık çevreleyen bu iki bölüme ayırır.  
@@ -2528,176 +2528,176 @@ Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlarken v
  Kullan...  
  -   ne zaman bir özel arama açılan listedeki oluşturuyorsunuz.  
   
--   Düzeltme listesi bileşenleri için doğru belirteci adları.  
+- Düzeltme listesi bileşenleri için doğru belirteci adları.  
   
- Kullanmayın...  
- -   diğer bağlamlarda görünen açılan listeler.  
+  Kullanmayın...  
+  -   diğer bağlamlarda görünen açılan listeler.  
   
--   Belirtilen dışındaki tüm arka plan/ön plan arada.  
+- Belirtilen dışındaki tüm arka plan/ön plan arada.  
   
- **Varsayılan (başka hiçbir durum)**  
+  **Varsayılan (başka hiçbir durum)**  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- Kenarlık  
+  Kenarlık  
   
- `SearchControl.PopupBorder`  
+  `SearchControl.PopupBorder`  
   
- Ayırıcı  
+  Ayırıcı  
   
- `SearchControl.PopupSectionHeaderSeparator`  
+  `SearchControl.PopupSectionHeaderSeparator`  
   
- Gölge  
+  Gölge  
   
- `Environment.DropShadowBackground`  
+  `Environment.DropShadowBackground`  
   
- **Default**  
+  **Default**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Önerilen arama](../../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303 125_SearchSuggested")  
+  ![Önerilen arama](../../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303 125_SearchSuggested")  
   
- **Önerilen aramalar**  
+  **Önerilen aramalar**  
   
- Arka Plan  
+  Arka Plan  
   
- `SearchControl.PopupItemsListBackgroundGradientBegin`  
+  `SearchControl.PopupItemsListBackgroundGradientBegin`  
   
- Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
+  Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `SearchControl.PopupItemText`  
+  `SearchControl.PopupItemText`  
   
- ![Arama onay kutusunu](../../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303 126_SearchCheckbox")  
+  ![Arama onay kutusunu](../../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303 126_SearchCheckbox")  
   
- **Arama Seçenekleri (onay kutusu)**  
+  **Arama Seçenekleri (onay kutusu)**  
   
- ![Arama Seçenekleri](../../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303 127_SearchOptions")  
+  ![Arama Seçenekleri](../../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303 127_SearchOptions")  
   
- **Arama Seçenekleri (bağlantı)**  
+  **Arama Seçenekleri (bağlantı)**  
   
- Arka Plan  
+  Arka Plan  
   
- `SearchControl.PopupSectionBackgroundGradientBegin`  
+  `SearchControl.PopupSectionBackgroundGradientBegin`  
   
- Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
+  Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
   
- Ön plan (onay kutusu metni)  
+  Ön plan (onay kutusu metni)  
   
- `SearchControl.PopupCheckboxText`  
+  `SearchControl.PopupCheckboxText`  
   
- Ön plan (bağlantı metni)  
+  Ön plan (bağlantı metni)  
   
- `SearchControl.PopupButtonText`  
+  `SearchControl.PopupButtonText`  
   
- Başlık arka plan  
+  Başlık arka plan  
   
- `SearchControl.PopupSectionHeaderGradientBegin`  
+  `SearchControl.PopupSectionHeaderGradientBegin`  
   
- Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
+  Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
   
- Ön plan (üst bilgi metni)  
+  Ön plan (üst bilgi metni)  
   
- `SearchControl.PopupSectionHeaderText`  
+  `SearchControl.PopupSectionHeaderText`  
   
- **Vurgulu**  
+  **Vurgulu**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Üzerine gelindiğinde önerilen arama](../../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 128_SearchSuggestedHover")  
+  ![Üzerine gelindiğinde önerilen arama](../../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 128_SearchSuggestedHover")  
   
- **Önerilen aramalar**  
+  **Önerilen aramalar**  
   
- Arka Plan  
+  Arka Plan  
   
- `SearchControl.PopupControlMouseOverBackgroundGradientBegin`  
+  `SearchControl.PopupControlMouseOverBackgroundGradientBegin`  
   
- Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
+  Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `SearchControl.PopupMouseOverItemText`  
+  `SearchControl.PopupMouseOverItemText`  
   
- Kenarlık  
+  Kenarlık  
   
- `SearchControl.PopupControlMouseOverBorder`  
+  `SearchControl.PopupControlMouseOverBorder`  
   
- ![Arama onay kutusunu üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303 129_SearchCheckboxHover")  
+  ![Arama onay kutusunu üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303 129_SearchCheckboxHover")  
   
- **Önerilen aramalar (onay kutusu)**  
+  **Önerilen aramalar (onay kutusu)**  
   
- ![Arama seçenekleri üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303 130_SearchOptionsHover")  
+  ![Arama seçenekleri üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303 130_SearchOptionsHover")  
   
- **Arama Seçenekleri**  
+  **Arama Seçenekleri**  
   
- Arka Plan  
+  Arka Plan  
   
- `SearchControl.PopupControlMouseOverBackgroundGradientBegin`  
+  `SearchControl.PopupControlMouseOverBackgroundGradientBegin`  
   
- Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
+  Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
   
- Ön plan (onay kutusu metni)  
+  Ön plan (onay kutusu metni)  
   
- `SearchControl.PopupCheckboxMouseDownText`  
+  `SearchControl.PopupCheckboxMouseDownText`  
   
- Ön plan (bağlantı metni)  
+  Ön plan (bağlantı metni)  
   
- `SearchControl.PopupButtonMouseDownText`  
+  `SearchControl.PopupButtonMouseDownText`  
   
- Kenarlık  
+  Kenarlık  
   
- `SearchControl.PopupControlMouseOverBorder`  
+  `SearchControl.PopupControlMouseOverBorder`  
   
- **Basılan**  
+  **Basılan**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Arama önerilen basılı](../../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303 131_SearchSuggestedPressed")  
+  ![Arama önerilen basılı](../../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303 131_SearchSuggestedPressed")  
   
- **Önerilen aramalar (onay kutusu)**  
+  **Önerilen aramalar (onay kutusu)**  
   
- ![Arama Seçenekleri basılı](../../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303 132_SearchOptionsPressed")  
+  ![Arama Seçenekleri basılı](../../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303 132_SearchOptionsPressed")  
   
- **Arama Seçenekleri**  
+  **Arama Seçenekleri**  
   
- Onay kutusu arka plan  
+  Onay kutusu arka plan  
   
- `SearchControl.PopupControlMouseDownBackgroundGradientBegin`  
+  `SearchControl.PopupControlMouseDownBackgroundGradientBegin`  
   
- Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
+  Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
   
- `SearchControl.PopupControlMouseDownBackgroundGradientEnd`  
+  `SearchControl.PopupControlMouseDownBackgroundGradientEnd`  
   
- Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
+  Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
   
- Ön plan (onay kutusu metni)  
+  Ön plan (onay kutusu metni)  
   
- `SearchControl.PopupCheckboxMouseDownText`  
+  `SearchControl.PopupCheckboxMouseDownText`  
   
- Bağlantı arka plan  
+  Bağlantı arka plan  
   
- `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`  
+  `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`  
   
- Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
+  Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.  
   
- Ön plan (bağlantı metni)  
+  Ön plan (bağlantı metni)  
   
- `SearchControl.PopupButtonMouseDownText`  
+  `SearchControl.PopupButtonMouseDownText`  
   
 ### <a name="hyperlink"></a>Köprü  
  Köprüyü bir ön plan/arka plan çifti sahip olmayan bir denetimdir. Her durumda, doğru koyu gri ve beyaz arka plan üzerinde görünür köprü ön plan rengini kullanın. Köprü denetim için renk belirteç kullanmazsanız "basılı için" varsayılan sistem renk görürsünüz ", kırmızı flash. Bu denetim doğru ortamı renk belirteci kullanmıyor sinyaldir.  
@@ -2923,181 +2923,181 @@ Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlarken v
  Kullanmayın...  
  -   her şey için bir ağaç görünümüne benzer değil.  
   
--   Belirtilen dışındaki tüm arka plan/ön plan arada.  
+- Belirtilen dışındaki tüm arka plan/ön plan arada.  
   
- **Default**  
+  **Default**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Ağaç görünümü](../../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 148_TreeView")  
+  ![Ağaç görünümü](../../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 148_TreeView")  
   
- Arka Plan  
+  Arka Plan  
   
- `TreeView.Background`  
+  `TreeView.Background`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `TreeView.Background`  
+  `TreeView.Background`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `TreeView.Glyph`  
+  `TreeView.Glyph`  
   
- Kenarlık  
+  Kenarlık  
   
- Yok.  
+  Yok.  
   
- **Vurgulu**  
+  **Vurgulu**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Ağaç görünümü üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 149_TreeViewHover")  
+  ![Ağaç görünümü üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 149_TreeViewHover")  
   
- Arka Plan  
+  Arka Plan  
   
- `TreeView.Background`  
+  `TreeView.Background`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `TreeView.Background`  
+  `TreeView.Background`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `TreeView.GlyphMouseOver`  
+  `TreeView.GlyphMouseOver`  
   
- Kenarlık  
+  Kenarlık  
   
- Yok.  
+  Yok.  
   
- **Üzerine sürükleyin**  
+  **Üzerine sürükleyin**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Ağaç görünümü dragover](../../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 150_TreeViewDragOver")  
+  ![Ağaç görünümü dragover](../../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 150_TreeViewDragOver")  
   
- Arka Plan  
+  Arka Plan  
   
- `TreeView.DragOverItem`  
+  `TreeView.DragOverItem`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `TreeView.DragOverItem`  
+  `TreeView.DragOverItem`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `TreeView.DragOverItemGlyph`  
+  `TreeView.DragOverItemGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- Yok.  
+  Yok.  
   
- **Seçili**  
+  **Seçili**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Ağaç görünümü odaklanmış](../../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")  
+  ![Ağaç görünümü odaklanmış](../../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")  
   
- **Odaklanmış**  
+  **Odaklanmış**  
   
- Arka Plan  
+  Arka Plan  
   
- `TreeView.SelectedItemActive`  
+  `TreeView.SelectedItemActive`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `TreeView.SelectedItemActive`  
+  `TreeView.SelectedItemActive`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `TreeView.SelectedItemActiveGlyph`  
+  `TreeView.SelectedItemActiveGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- `TreeView.FocusVisualBorder`  
+  `TreeView.FocusVisualBorder`  
   
- ![Ağaç görünümü odaklanmadan](../../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303 152_TreeViewUnfocused")  
+  ![Ağaç görünümü odaklanmadan](../../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303 152_TreeViewUnfocused")  
   
- **Plana odaklanmadan**  
+  **Plana odaklanmadan**  
   
- Arka Plan  
+  Arka Plan  
   
- `TreeView.SelectedItemInactive`  
+  `TreeView.SelectedItemInactive`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `TreeView.SelectedItemInactive`  
+  `TreeView.SelectedItemInactive`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `TreeView.SelectedItemInactiveGlyph`  
+  `TreeView.SelectedItemInactiveGlyph`  
   
- Kenarlık  
+  Kenarlık  
   
- Yok.  
+  Yok.  
   
- **Seçili üzerine gelin**  
+  **Seçili üzerine gelin**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![Ağaç görünümü üzerine gelindiğinde odaklanmış](../../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")  
+  ![Ağaç görünümü üzerine gelindiğinde odaklanmış](../../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")  
   
- **Odaklanmış**  
+  **Odaklanmış**  
   
- Arka Plan  
+  Arka Plan  
   
- `TreeView.SelectedItemActive`  
+  `TreeView.SelectedItemActive`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `TreeView.SelectedItemActive`  
+  `TreeView.SelectedItemActive`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `TreeView.SelectedItemActiveGlyphMouseOver`  
+  `TreeView.SelectedItemActiveGlyphMouseOver`  
   
- Kenarlık  
+  Kenarlık  
   
- Yok`TreeView.FocusVisualBorder`  
+  Yok`TreeView.FocusVisualBorder`  
   
- ![Ağaç görünümü odaklanmadan üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303 154_TreeViewUnfocusedHover")  
+  ![Ağaç görünümü odaklanmadan üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303 154_TreeViewUnfocusedHover")  
   
- **Plana odaklanmadan**  
+  **Plana odaklanmadan**  
   
- Arka Plan  
+  Arka Plan  
   
- `TreeView.SelectedItemInactive`  
+  `TreeView.SelectedItemInactive`  
   
- Ön plan (metin)  
+  Ön plan (metin)  
   
- `TreeView.SelectedItemInactive`  
+  `TreeView.SelectedItemInactive`  
   
- Ön plan (karakter)  
+  Ön plan (karakter)  
   
- `TreeView.SelectedItemActiveGlyphMouseOver`  
+  `TreeView.SelectedItemActiveGlyphMouseOver`  
   
- Kenarlık  
+  Kenarlık  
   
- Yok.  
+  Yok.  
   
 ### <a name="button-controls"></a>Düğme denetimleri  
  ![Düğme denetimi kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-155-buttoncontrolredline.png "0303 155_ButtonControlRedline")  
@@ -3346,229 +3346,229 @@ Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlarken v
  Kullanmayın...  
  -   bir açılan veya birleşik giriş kutusu değil herhangi bir UI için.  
   
--   için bir [açılan](../../misc/shared-colors.md#BKMK_CommandDropDown) veya [birleşik giriş kutusu](../../misc/shared-colors.md#BKMK_CommandComboBox) komut çubuğunda.  
+- için bir [açılan](../../misc/shared-colors.md#BKMK_CommandDropDown) veya [birleşik giriş kutusu](../../misc/shared-colors.md#BKMK_CommandComboBox) komut çubuğunda.  
   
- **Default**  
+  **Default**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![DROP&#45;aşağı&#47;birleşik giriş kutusu](../../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")  
+  ![DROP&#45;aşağı&#47;birleşik giriş kutusu](../../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")  
   
- Arka Plan  
+  Arka Plan  
   
- `CommonControls.ComboBoxBackground`  
+  `CommonControls.ComboBoxBackground`  
   
- Kenarlık  
+  Kenarlık  
   
- `CommonControls.ComboBoxBorder`  
+  `CommonControls.ComboBoxBorder`  
   
- Metin  
+  Metin  
   
- `CommonControls.ComboBoxText`  
+  `CommonControls.ComboBoxText`  
   
- Ayırıcı  
+  Ayırıcı  
   
- `CommonControls.ComboBoxSeparator`  
+  `CommonControls.ComboBoxSeparator`  
   
- Glif  
+  Glif  
   
- `CommonControls.ComboBoxGlyph`  
+  `CommonControls.ComboBoxGlyph`  
   
- Simge arka plan  
+  Simge arka plan  
   
- `CommonControls.ComboBoxGlyphBackground`  
+  `CommonControls.ComboBoxGlyphBackground`  
   
- **Devre dışı**  
+  **Devre dışı**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![DROP&#45;aşağı&#47;birleşik giriş kutusu devre dışı](../../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")  
+  ![DROP&#45;aşağı&#47;birleşik giriş kutusu devre dışı](../../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")  
   
- Arka Plan  
+  Arka Plan  
   
- `CommonControls.ComboBoxBackgroundDisabled`  
+  `CommonControls.ComboBoxBackgroundDisabled`  
   
- Kenarlık  
+  Kenarlık  
   
- `CommonControls.ComboBoxBorderDisabled`  
+  `CommonControls.ComboBoxBorderDisabled`  
   
- Metin  
+  Metin  
   
- `CommonControls.ComboBoxTextDisabled`  
+  `CommonControls.ComboBoxTextDisabled`  
   
- Ayırıcı  
+  Ayırıcı  
   
- `CommonControls.ComboBoxSeparatorDisabled`  
+  `CommonControls.ComboBoxSeparatorDisabled`  
   
- Glif  
+  Glif  
   
- `CommonControls.ComboBoxGlyphDisabled`  
+  `CommonControls.ComboBoxGlyphDisabled`  
   
- Simge arka plan  
+  Simge arka plan  
   
- `CommonControls.ComboBoxGlyphBackgroundDisabled`  
+  `CommonControls.ComboBoxGlyphBackgroundDisabled`  
   
- **Vurgulu**  
+  **Vurgulu**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![DROP&#45;aşağı&#47;birleşik giriş kutusu üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")  
+  ![DROP&#45;aşağı&#47;birleşik giriş kutusu üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")  
   
- Arka Plan  
+  Arka Plan  
   
- `CommonControls.ComboBoxBackgroundHover`  
+  `CommonControls.ComboBoxBackgroundHover`  
   
- Kenarlık  
+  Kenarlık  
   
- `CommonControls.ComboBoxBorderHover`  
+  `CommonControls.ComboBoxBorderHover`  
   
- Metin  
+  Metin  
   
- `CommonControls.ComboBoxTextHover`  
+  `CommonControls.ComboBoxTextHover`  
   
- Ayırıcı  
+  Ayırıcı  
   
- `CommonControls.ComboBoxSeparatorHover`  
+  `CommonControls.ComboBoxSeparatorHover`  
   
- Glif  
+  Glif  
   
- `CommonControls.ComboBoxGlyphHover`  
+  `CommonControls.ComboBoxGlyphHover`  
   
- Simge arka plan  
+  Simge arka plan  
   
- `CommonControls.ComboBoxGlyphBackgroundHover`  
+  `CommonControls.ComboBoxGlyphBackgroundHover`  
   
- **Basılan**  
+  **Basılan**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![DROP&#45;aşağı&#47;basılı birleşik giriş kutusu](../../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")  
+  ![DROP&#45;aşağı&#47;basılı birleşik giriş kutusu](../../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")  
   
- Arka Plan  
+  Arka Plan  
   
- `CommonControls.ComboBoxBackgroundPressed`  
+  `CommonControls.ComboBoxBackgroundPressed`  
   
- Kenarlık  
+  Kenarlık  
   
- `CommonControls.ComboBoxBorderPressed`  
+  `CommonControls.ComboBoxBorderPressed`  
   
- Metin  
+  Metin  
   
- `CommonControls.ComboBoxTextPressed`  
+  `CommonControls.ComboBoxTextPressed`  
   
- Ayırıcı  
+  Ayırıcı  
   
- `CommonControls.ComboBoxSeparatorPressed`  
+  `CommonControls.ComboBoxSeparatorPressed`  
   
- Glif  
+  Glif  
   
- `CommonControls.ComboBoxGlyphPressed`  
+  `CommonControls.ComboBoxGlyphPressed`  
   
- Simge arka plan  
+  Simge arka plan  
   
- `CommonControls.ComboBoxGlyphBackgroundPressed`  
+  `CommonControls.ComboBoxGlyphBackgroundPressed`  
   
- **Odaklanmış**  
+  **Odaklanmış**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![DROP&#45;aşağı&#47;odaklanmış birleşik giriş kutusu](../../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")  
+  ![DROP&#45;aşağı&#47;odaklanmış birleşik giriş kutusu](../../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")  
   
- Arka Plan  
+  Arka Plan  
   
- `CommonControls.ComboBoxBackgroundFocused`  
+  `CommonControls.ComboBoxBackgroundFocused`  
   
- Kenarlık  
+  Kenarlık  
   
- `CommonControls.ComboBoxBorderFocused`  
+  `CommonControls.ComboBoxBorderFocused`  
   
- Metin  
+  Metin  
   
- `CommonControls.ComboBoxTextFocused`  
+  `CommonControls.ComboBoxTextFocused`  
   
- Ayırıcı  
+  Ayırıcı  
   
- `CommonControls.ComboBoxSeparatorFocused`  
+  `CommonControls.ComboBoxSeparatorFocused`  
   
- Glif  
+  Glif  
   
- `CommonControls.ComboBoxGlyphFocused`  
+  `CommonControls.ComboBoxGlyphFocused`  
   
- Simge arka plan  
+  Simge arka plan  
   
- `CommonControls.ComboBoxGlyphBackgroundFocused`  
+  `CommonControls.ComboBoxGlyphBackgroundFocused`  
   
- **Giriş metin seçimi**  
+  **Giriş metin seçimi**  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- ![DROP&#45;aşağı&#47;birleşik giriş kutusu metin girişi](../../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303 173_DropDownComboBoxTextInput")  
+  ![DROP&#45;aşağı&#47;birleşik giriş kutusu metin girişi](../../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303 173_DropDownComboBoxTextInput")  
   
- Vurgulayın  
+  Vurgulayın  
   
- `CommonControls.ComboBoxTextInputSelection`  
+  `CommonControls.ComboBoxTextInputSelection`  
   
- **Basılan – liste öğesi görünümü**  
+  **Basılan – liste öğesi görünümü**  
   
- ![DROP&#45;aşağı&#47;birleşik giriş kutusu liste görünümü](../../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")  
+  ![DROP&#45;aşağı&#47;birleşik giriş kutusu liste görünümü](../../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")  
   
- Arka Plan  
+  Arka Plan  
   
- `CommonControls.ComboBoxListBackground`  
+  `CommonControls.ComboBoxListBackground`  
   
- `CommonControls.ComboBoxListBackgroundHover`  
+  `CommonControls.ComboBoxListBackgroundHover`  
   
- `CommonControls.ComboBoxListItemBackgroundPressed`  
+  `CommonControls.ComboBoxListItemBackgroundPressed`  
   
- `CommonControls.ComboBoxListItemBackgroundFocused`  
+  `CommonControls.ComboBoxListItemBackgroundFocused`  
   
- Kenarlık  
+  Kenarlık  
   
- `CommonControls.ComboBoxListBorder`  
+  `CommonControls.ComboBoxListBorder`  
   
- `CommonControls.ComboBoxListBorderHover`  
+  `CommonControls.ComboBoxListBorderHover`  
   
- `CommonControls.ComboBoxListBorderPressed`  
+  `CommonControls.ComboBoxListBorderPressed`  
   
- `CommonControls.ComboBoxListBorderFocused`  
+  `CommonControls.ComboBoxListBorderFocused`  
   
- Öğe metni  
+  Öğe metni  
   
- `CommonControls.ComboBoxListItemText`  
+  `CommonControls.ComboBoxListItemText`  
   
- `CommonControls.ComboBoxListItemTextHover`  
+  `CommonControls.ComboBoxListItemTextHover`  
   
- `CommonControls.ComboBoxListItemTextPressed`  
+  `CommonControls.ComboBoxListItemTextPressed`  
   
- `CommonControls.ComboBoxListItemTextFocused`  
+  `CommonControls.ComboBoxListItemTextFocused`  
   
- Arka plan gölge  
+  Arka plan gölge  
   
- `CommonControls.ComboBoxListBackgroundShadow`  
+  `CommonControls.ComboBoxListBackgroundShadow`  
   
 ### <a name="tabular-data-grid-controls"></a>Tablosal veri (Kılavuz) denetimleri  
  Tablosal veri denetimleri, kılavuz denetimleri olarak da bilinir, yüksek miktarda verilerden oluşan birden çok sütunda sunmak için kullanılan Visual Studio için ortak denetimlerdir. Standart tablo veri denetimleri Visual Studio içinde birden fazla yerde bulunabilir: hata listesi araç penceresi, IntelliTrace raporlar ve diğerlerinin yanı sıra bellek yığın görünümü. Her zaman sağlanan standart tablo veri denetimleri kullanın. Bazı ender durumlarda, standart tablo veri denetimleri erişimi olmayabilir. Bu gibi durumlarda, kullanıcı Arabirimi diğer Visual Studio'da tablosal veri denetimleriyle tutarlı olduğundan emin olmak için aşağıdaki belirteci adları kullanın.  
@@ -3703,66 +3703,66 @@ Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlarken v
  Kullan...  
  -   Bildirim Tasarımcısı için benzer tasarımcıları.  
   
--   bir düzenleyici belgesi içinde üst kısmındaki ortak sekme denetimleri kullanarak yerine yanı sıra.  
+- bir düzenleyici belgesi içinde üst kısmındaki ortak sekme denetimleri kullanarak yerine yanı sıra.  
   
- Kullanmayın...  
- -   altıdan fazla sekme varsa.  
+  Kullanmayın...  
+  -   altıdan fazla sekme varsa.  
   
--   Bildirim Tasarımcısı gibi yapılandırılmamış herhangi bir UI için.  
+- Bildirim Tasarımcısı gibi yapılandırılmamış herhangi bir UI için.  
   
- Durum  
+  Durum  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- Varsayılan (Seçili)  
+  Varsayılan (Seçili)  
   
- Tab  
+  Tab  
   
- Arka Plan  
+  Arka Plan  
   
- `ManifestDesigner.TabActive`  
+  `ManifestDesigner.TabActive`  
   
- Kenarlık  
+  Kenarlık  
   
- Yok.  
+  Yok.  
   
- Açıklama bölmesi  
+  Açıklama bölmesi  
   
- Arka Plan  
+  Arka Plan  
   
- `ManifestDesigner.DescriptionPane`  
+  `ManifestDesigner.DescriptionPane`  
   
- İçerik sayfası  
+  İçerik sayfası  
   
- Arka Plan  
+  Arka Plan  
   
- `ManifestDesigner.Background`  
+  `ManifestDesigner.Background`  
   
- İletişim yardımcı metni  
+  İletişim yardımcı metni  
   
- `ManifestDesigner.WatermarkText`  
+  `ManifestDesigner.WatermarkText`  
   
- Bu belirteç adı işlevini eşleşmiyor.  
+  Bu belirteç adı işlevini eşleşmiyor.  
   
- Olmayan seçili  
+  Olmayan seçili  
   
- Tab  
+  Tab  
   
- Arka Plan  
+  Arka Plan  
   
- `ManifestDesigner.Tab.Inactive`  
+  `ManifestDesigner.Tab.Inactive`  
   
- Vurgulu  
+  Vurgulu  
   
- Tab  
+  Tab  
   
- Arka Plan  
+  Arka Plan  
   
- `ManifestDesigner.Tab.Mouseover`  
+  `ManifestDesigner.Tab.Mouseover`  
   
 ## <a name="tagging"></a>Etiketleme  
  Visual Studio etiketleme, izleme amacıyla aranabilir anahtar sözcükleri bildirmek bir kullanıcı sağlayan destekler. Örneğin, proje yöneticileri ve geliştiriciler Team Foundation Server (TFS) iş öğelerini etiketlemek için kullanabilirsiniz. Aşağıdaki tablolarda, etiket hem üzerine gelin ve seçili durumlardan görünür "simge" Kapat"karakteri için renk adlar verin.  
@@ -3980,39 +3980,39 @@ Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlarken v
  Kullanmayın...  
  -   arka plan yüzeyleri olmayan basamak için dolgu olarak.  
   
--   ön plan öğeleri yerleştirmek istediğiniz arka plan olarak.  
+- ön plan öğeleri yerleştirmek istediğiniz arka plan olarak.  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- Alt Katman  
+  Alt Katman  
   
- Arka Plan  
+  Arka Plan  
   
- `Environment.EnvironmentBackground`  
+  `Environment.EnvironmentBackground`  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- Üst katman  
+  Üst katman  
   
- Arka Plan  
+  Arka Plan  
   
- *Visual Studio 2013'ün açık ve koyu temaları aynı renk değeri kümesine gradyan durdurur.*  
+  *Visual Studio 2013'ün açık ve koyu temaları aynı renk değeri kümesine gradyan durdurur.*  
   
- `Environment.EnvironmentBackgroundGradientBegin`  
+  `Environment.EnvironmentBackgroundGradientBegin`  
   
- `Environment.EnvironmentBackgroundGradientEnd`  
+  `Environment.EnvironmentBackgroundGradientEnd`  
   
- `Environment.EnvironmentBackgroundGradientMiddle1`  
+  `Environment.EnvironmentBackgroundGradientMiddle1`  
   
- `Environment.EnvironmentBackgroundGradientMiddle2`  
+  `Environment.EnvironmentBackgroundGradientMiddle2`  
   
 ### <a name="command-shelf"></a>Komut raf  
  İki simge adları, komut raf planları kullanılır: menü çubuğu burada yer alan, biri burada komut çubukları sit ayarlayın. Bir tek tek komut çubuğu grubu "Komut çubuğunda" bölümünde daha ayrıntılı olarak ele alınmıştır, kendi arka plan renk değerleri var. Menü çubuğu ve komut çubuğundan metin sırasıyla menü ve komut çubuğu bölümlerinde ele alınmıştır.  
@@ -4022,40 +4022,40 @@ Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlarken v
  Kullan...  
  -   menüleri ve araç çubukları yerleştirdiğiniz alanları.  
   
--   doğru arka plan /? ön plan belirteç adı birleşimi.  
+- doğru arka plan /? ön plan belirteç adı birleşimi.  
   
- Kullanmayın...  
- bir komut raf için benzer olmayan alanları.  
+  Kullanmayın...  
+  bir komut raf için benzer olmayan alanları.  
   
- Bileşen  
+  Bileşen  
   
- Öğe  
+  Öğe  
   
- Belirteç adı: Category.color  
+  Belirteç adı: Category.color  
   
- Menü çubuğu  
+  Menü çubuğu  
   
- Arka Plan  
+  Arka Plan  
   
- *Visual Studio 2013'ün açık ve koyu temaları aynı renk değeri kümesine gradyan durdurur.*  
+  *Visual Studio 2013'ün açık ve koyu temaları aynı renk değeri kümesine gradyan durdurur.*  
   
- `Environment.CommandShelfHighlightGradientBegin`  
+  `Environment.CommandShelfHighlightGradientBegin`  
   
- `Environment.CommandShelfHighlightGradientMiddle`  
+  `Environment.CommandShelfHighlightGradientMiddle`  
   
- `Environment.CommandShelfHighlightGradientEnd`  
+  `Environment.CommandShelfHighlightGradientEnd`  
   
- Komut çubuğu  
+  Komut çubuğu  
   
- Arka Plan  
+  Arka Plan  
   
- *Visual Studio 2013'ün açık ve koyu temaları aynı renk değeri kümesine gradyan durdurur.*  
+  *Visual Studio 2013'ün açık ve koyu temaları aynı renk değeri kümesine gradyan durdurur.*  
   
- `Environment.CommandShelfBackgroundGradientBegin`  
+  `Environment.CommandShelfBackgroundGradientBegin`  
   
- `Environment.CommandShelfBackgroundGradientMiddle`  
+  `Environment.CommandShelfBackgroundGradientMiddle`  
   
- `Environment.CommandShelfBackgroundGradientEnd`  
+  `Environment.CommandShelfBackgroundGradientEnd`  
   
 ## <a name="toolbox"></a>Araç Kutusu  
  Araç, Visual Studio'daki sık kullanılan ortak bir araç pencereleri biridir. Aslında bir ağaç denetimi ile özel teması ve stil uygulanmış olduğu.  

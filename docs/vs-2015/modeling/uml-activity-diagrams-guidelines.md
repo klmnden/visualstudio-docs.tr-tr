@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: de4ea9890f6a39fa263129f3a0df9559ae9ab479
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 81fcc0c4d747a59f287bc12e7413c5ccab204f7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176650"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874455"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>UML Etkinlik Diyagramları: Yönergeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,28 +36,28 @@ Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eyle
   
  Birçok amaç için bir etkinlik diyagramı kullanabilirsiniz:  
   
--   Bir iş sürecini veya kullanıcılar ve sistem arasındaki iş akışını tanımlamak için. Daha fazla bilgi için [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).  
+- Bir iş sürecini veya kullanıcılar ve sistem arasındaki iş akışını tanımlamak için. Daha fazla bilgi için [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).  
   
--   Adımları açıklamak için bir kullanım örneği, gerçekleştirdi. Daha fazla bilgi için [UML Kullanım durumu diyagramları: yönergeler](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Adımları açıklamak için bir kullanım örneği, gerçekleştirdi. Daha fazla bilgi için [UML Kullanım durumu diyagramları: yönergeler](../modeling/uml-use-case-diagrams-guidelines.md).  
   
--   Yöntemi, işlev veya yazılım işlemi tanımlamak için. Daha fazla bilgi için [uygulama Mimarinizi modelleme](../modeling/model-your-app-s-architecture.md).  
+- Yöntemi, işlev veya yazılım işlemi tanımlamak için. Daha fazla bilgi için [uygulama Mimarinizi modelleme](../modeling/model-your-app-s-architecture.md).  
   
- Etkinlik diyagramı çizme işlem geliştirmenize yardımcı olabilir. Mevcut bir işlemi diyagramı çok karmaşık olduğu durumlarda, işlemin nasıl Basitleştirilmiş düşünebilirsiniz.  
+  Etkinlik diyagramı çizme işlem geliştirmenize yardımcı olabilir. Mevcut bir işlemi diyagramı çok karmaşık olduğu durumlarda, işlemin nasıl Basitleştirilmiş düşünebilirsiniz.  
   
- Etkinlik diyagramlarındaki öğeler hakkında başvuru bilgileri için bkz. [UML etkinlik diyagramları: başvuru](../modeling/uml-activity-diagrams-reference.md).  
+  Etkinlik diyagramlarındaki öğeler hakkında başvuru bilgileri için bkz. [UML etkinlik diyagramları: başvuru](../modeling/uml-activity-diagrams-reference.md).  
   
 ##  <a name="Relationships"></a> Diğer diyagramlarla ilişki  
  Bir iş sürecini veya kullanıcıların sistemi kullanma bir şekilde açıklamak için bir etkinlik diyagramı çizme, aynı bilgilerle farklı bir görünüm göstermek için bir kullanım durumu diyagramı çizebilirsiniz. Kullanım durumu diyagramı, kullanım örnekleri gibi eylemler çizin. Kullanım örneklerine karşılık gelen eylem olarak aynı adı verin. Kullanım örneği görünümünün avantajları şunlardır:  
   
--   Ne kadar büyük bir diyagram Göster Eylemler/kullanım örnekleri içeren ilişkisini kullanarak daha küçük depolara oluşur.  
+- Ne kadar büyük bir diyagram Göster Eylemler/kullanım örnekleri içeren ilişkisini kullanarak daha küçük depolara oluşur.  
   
--   Kullanıcılara veya dış sistemler yürütülmesinde yer alan her eylem/kullanım örneğini açıkça bağlanın.  
+- Kullanıcılara veya dış sistemler yürütülmesinde yer alan her eylem/kullanım örneğini açıkça bağlanın.  
   
--   Sisteminizi ya da her ana bileşeni tarafından desteklenen eylemleri/kullanım durumları etrafında sınırlar çizer.  
+- Sisteminizi ya da her ana bileşeni tarafından desteklenen eylemleri/kullanım durumları etrafında sınırlar çizer.  
   
- Ayrıca, bir yazılım işleminin ayrıntılı tasarım açıklamak için bir etkinlik diyagramı çizebilirsiniz.  
+  Ayrıca, bir yazılım işleminin ayrıntılı tasarım açıklamak için bir etkinlik diyagramı çizebilirsiniz.  
   
- Bir etkinlik diyagramı, eylemler arasında geçen veri akışını gösterebilirsiniz. Bölümüne [açıklayan veri akışı](#DataFlows). Ancak, bir etkinlik diyagramı, veri yapısını açıklamaz. Bu amaç için UML sınıf diyagramı çizebilirsiniz. Bilgi için [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md).  
+  Bir etkinlik diyagramı, eylemler arasında geçen veri akışını gösterebilirsiniz. Bölümüne [açıklayan veri akışı](#DataFlows). Ancak, bir etkinlik diyagramı, veri yapısını açıklamaz. Bu amaç için UML sınıf diyagramı çizebilirsiniz. Bilgi için [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md).  
   
 ##  <a name="BasicSteps"></a> Etkinlik diyagramları çizmek için temel adımlar  
  Herhangi bir modelleme diyagramının oluşturmaya yönelik ayrıntılı adımlar açıklanmıştır [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
@@ -112,18 +112,18 @@ Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eyle
   
  Etkinlik diyagramları kullanın **eylemleri** ve **Bağlayıcılar** sırayla bir eylemden akışı denetimi ile sistem veya uygulama bir dizi eylem olarak tanımlamak için.  
   
--   Oluşturma bir **eylem** (1) için bir kullanıcı, sistem veya işbirliği içinde her ikisi tarafından gerçekleştirilen her ana görev.  
+- Oluşturma bir **eylem** (1) için bir kullanıcı, sistem veya işbirliği içinde her ikisi tarafından gerçekleştirilen her ana görev.  
   
-    > [!NOTE]
-    >  İşlem veya yalnızca birkaç eylemleri algoritmasıyla açıklamaya çalışın. Kullanabileceğiniz **çağrı davranış eylemleri** açıklandığı gibi daha ayrıntılı olarak ayrı bir diyagramda her bir eylemin tanımlamak için [çağrı davranış eylemleri alt etkinliklerle açıklayan](#Subactivities).  
+  > [!NOTE]
+  >  İşlem veya yalnızca birkaç eylemleri algoritmasıyla açıklamaya çalışın. Kullanabileceğiniz **çağrı davranış eylemleri** açıklandığı gibi daha ayrıntılı olarak ayrı bir diyagramda her bir eylemin tanımlamak için [çağrı davranış eylemleri alt etkinliklerle açıklayan](#Subactivities).  
   
--   Genellikle neyi hedeflediğini her eylemin başlık açıkça belirttiğinden emin olun.  
+- Genellikle neyi hedeflediğini her eylemin başlık açıkça belirttiğinden emin olun.  
   
--   Eylemler dizisi ile bağlantısını **Bağlayıcılar** (2).  
+- Eylemler dizisi ile bağlantısını **Bağlayıcılar** (2).  
   
--   Denetim akışı bir sonraki eylem başlamadan önce her eylem sona erer. Çakışma kullanmak eylemleri tanımlamak istiyorsanız bir **Çatal Düğüm** bölümünde açıklandığı gibi [eşzamanlı akışlar](#Concurrent).  
+- Denetim akışı bir sonraki eylem başlamadan önce her eylem sona erer. Çakışma kullanmak eylemleri tanımlamak istiyorsanız bir **Çatal Düğüm** bölümünde açıklandığı gibi [eşzamanlı akışlar](#Concurrent).  
   
- Eylemlerin sırasını diyagrama açıklar ancak nasıl eylemleri yürütülür veya denetim sonraki bir eylemden nasıl geçirilir açıklamaz. Bir iş sürecini temsil etmek için diyagram kullanıyorsanız, bir kişinin e-posta gönderdiğinde denetimi, örneğin, geçirilebilir. Yazılım tasarımı göstermek için diyagramda kullanırsanız, Denetim yürütme normal akışa göre sonraki bir durumdan diğerine geçebilir.  
+  Eylemlerin sırasını diyagrama açıklar ancak nasıl eylemleri yürütülür veya denetim sonraki bir eylemden nasıl geçirilir açıklamaz. Bir iş sürecini temsil etmek için diyagram kullanıyorsanız, bir kişinin e-posta gönderdiğinde denetimi, örneğin, geçirilebilir. Yazılım tasarımı göstermek için diyagramda kullanırsanız, Denetim yürütme normal akışa göre sonraki bir durumdan diğerine geçebilir.  
   
 ### <a name="describing-decisions-and-loops"></a>Açıklayan kararlarını ve döngüler  
   
@@ -171,11 +171,11 @@ Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eyle
 ### <a name="swimlanes"></a>Kulvarlar  
  Bazen, bir etkinlik farklı nesneleri veya eylemler gerçekleştiren iş rolleri karşılık gelen alanlarına eylemleri düzenlemek yararlıdır. Bu alanlar sütunlarında standart olarak düzenlenir ve adlandırılır *Kulvarlar*.  
   
--   Çizgiler veya dikdörtgenler gelen kullanın **Basit şekiller** Kulvarlar veya diğer alanları çizmek için araç bölümü.  
+- Çizgiler veya dikdörtgenler gelen kullanın **Basit şekiller** Kulvarlar veya diğer alanları çizmek için araç bölümü.  
   
--   Her Kulvar etiketlemek için bir açıklama oluşturun ve ayarlayın, **saydam** özelliğini **True**.  
+- Her Kulvar etiketlemek için bir açıklama oluşturun ve ayarlayın, **saydam** özelliğini **True**.  
   
- Basit şekiller UML modelinin bir parçası oluşturmuyor ve UML Model Gezgini'nde görünmez.  
+  Basit şekiller UML modelinin bir parçası oluşturmuyor ve UML Model Gezgini'nde görünmez.  
   
 ##  <a name="DataFlows"></a> Veri akışı açıklayan  
  Bir etkinlik iki yöntemden biriyle içine ve dışına geçen verileri tanımlayabilirsiniz:  
@@ -277,16 +277,16 @@ Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eyle
 ### <a name="describing-data-flow-in-and-out-of-sub-activities"></a>Veri akışı alt etkinlikleri içine ve dışına açıklayan  
  Yazılım parametreleri kullanmak aynı şekilde alt etkinlikleri içine ve dışına akan verileri tanımlayabilirsiniz.  
   
--   Giriş ve PIN (1) için her parça içine veya dışına eylemi akan veri adlı davranışı eylemi çıkış oluşturma. Her birini uygun şekilde adlandırın.  
+- Giriş ve PIN (1) için her parça içine veya dışına eylemi akan veri adlı davranışı eylemi çıkış oluşturma. Her birini uygun şekilde adlandırın.  
   
--   Alt etkinlik diyagramında oluşturma bir **etkinlik parametre düğümü** (2) için her giriş ve çıkış PIN çağıran eylem. Her düğüm, karşılık gelen PIN aynı adı verin.  
+- Alt etkinlik diyagramında oluşturma bir **etkinlik parametre düğümü** (2) için her giriş ve çıkış PIN çağıran eylem. Her düğüm, karşılık gelen PIN aynı adı verin.  
   
-    > [!NOTE]
-    >  Bir etkinlik parametre düğümü bir nesne düğümü benzer. Aradığınız düğüm türünü denetlemek için düğümüne sağ tıklayın ve ardından **özellikleri**. Düğüm türü, Özellikler penceresinde üst bilgisinde gösterilir.  
+  > [!NOTE]
+  >  Bir etkinlik parametre düğümü bir nesne düğümü benzer. Aradığınız düğüm türünü denetlemek için düğümüne sağ tıklayın ve ardından **özellikleri**. Düğüm türü, Özellikler penceresinde üst bilgisinde gösterilir.  
   
--   Alt etkinlik diyagramında içine veya dışına her etkinlik parametresi düğüm nesneleri akışını göstermek bağlayıcıları çizin.  
+- Alt etkinlik diyagramında içine veya dışına her etkinlik parametresi düğüm nesneleri akışını göstermek bağlayıcıları çizin.  
   
- ![Etkinlik parametreleri için davranış çağrı haritada sabitler](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")  
+  ![Etkinlik parametreleri için davranış çağrı haritada sabitler](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")  
   
 ###  <a name="Postcondition"></a> Koşul Sonralarına ve önkoşulları tanımlama  
  Kullanabileceğiniz **yerel koşul Sonralarına** ve **yerel önkoşulları** özellikleri ayrıntılı olarak bir eylem sonucunu belirtmek için. Bu özellikler, etkisi nasıl elde edildiğini açıklamadan eylemi etkisini açıklar.  
@@ -389,45 +389,45 @@ Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eyle
 ### <a name="selection-and-transformation"></a>Seçim ve dönüştürme  
  Bir nesne akışı nesneleri, seçili dönüştürüldüğünü belirtebilirsiniz veya her ikisini de. Nesne akışı bir akış için veya bir PIN veya bir nesne düğümü olur.  
   
--   Bir dönüştürme, bir akış girerek nesneleri başka bir türe nasıl dönüştürülür açıklar.  
+- Bir dönüştürme, bir akış girerek nesneleri başka bir türe nasıl dönüştürülür açıklar.  
   
--   Bir seçim nasıl yalnızca açıklar bazı akış girerek nesneleri alıcı eyleme iletilir.  
+- Bir seçim nasıl yalnızca açıklar bazı akış girerek nesneleri alıcı eyleme iletilir.  
   
- Örnek bir dönüştürmeyi gösterir. Bir posta kodu veya posta kodu, bir çıkış PIN Diyagram 1 ilk eylem üretir. Bu ikinci eylemi Giriş bir PIN bağlıdır. Ancak, tam olarak belirtilen bir adres ikinci eylemi bekliyor. Bir türden diğerine dönüştürme, adres arama gibi ikinci bir etkinlik içinde belirtilir. Bu nesne akışına dönüştürme özelliğinden başvuruluyor. Adres Arama etkinliği, gelen posta kodu için bir etkinlik parametre düğümü ve giden tam adresi için başka bir etkinlik parametresi düğümü içerir.  
+  Örnek bir dönüştürmeyi gösterir. Bir posta kodu veya posta kodu, bir çıkış PIN Diyagram 1 ilk eylem üretir. Bu ikinci eylemi Giriş bir PIN bağlıdır. Ancak, tam olarak belirtilen bir adres ikinci eylemi bekliyor. Bir türden diğerine dönüştürme, adres arama gibi ikinci bir etkinlik içinde belirtilir. Bu nesne akışına dönüştürme özelliğinden başvuruluyor. Adres Arama etkinliği, gelen posta kodu için bir etkinlik parametre düğümü ve giden tam adresi için başka bir etkinlik parametresi düğümü içerir.  
   
- ![Nesne başka bir diyagrama tanımlanan dönüşüm](../modeling/media/uml-actguidetransform.png "UML_ActGuideTransform")  
+  ![Nesne başka bir diyagrama tanımlanan dönüşüm](../modeling/media/uml-actguidetransform.png "UML_ActGuideTransform")  
   
- Bir dönüştürme ya da seçimi iki şekilde belirtebilirsiniz:  
+  Bir dönüştürme ya da seçimi iki şekilde belirtebilirsiniz:  
   
--   Giriş veya çıkış PIN için bir açıklama ekleyin.  
+- Giriş veya çıkış PIN için bir açıklama ekleyin.  
   
-    -   Bu açıklamayı genel açıklamadan ayırt etmek için bir açıklama ile başlanması <\<**dönüştürme**>> veya <\<**seçimi**>>.  
+  -   Bu açıklamayı genel açıklamadan ayırt etmek için bir açıklama ile başlanması <\<**dönüştürme**>> veya <\<**seçimi**>>.  
   
--   Ayrıntılı olarak ayrı bir etkinlik diyagramı, dönüştürme ya da seçimi belirtin.  
+- Ayrıntılı olarak ayrı bir etkinlik diyagramı, dönüştürme ya da seçimi belirtin.  
   
-    -   Bu yöntemi kullanırsanız, bir açıklama ayrıca Temizle dönüştürme tanımlanmamış okuyucularına yapmak için iliştirin.  
+  -   Bu yöntemi kullanırsanız, bir açıklama ayrıca Temizle dönüştürme tanımlanmamış okuyucularına yapmak için iliştirin.  
   
 ##### <a name="to-specify-a-transformation-or-selection-in-a-separate-activity-diagram"></a>Bir dönüştürme ya da seçimi ayrı etkinlik diyagramında belirtmek için  
   
-1.  Dönüştürme ya da seçimi akışını açıklamak yeni bir etkinlik diyagramı oluşturun.  
+1. Dönüştürme ya da seçimi akışını açıklamak yeni bir etkinlik diyagramı oluşturun.  
   
-    -   İçinde **Çözüm Gezgini**, projenize sağ tıklayın, fareyle **Ekle**, tıklayın **yeni öğe**ve ardından **etkinlik diyagramı**. Diyagram, dönüştürme ya da seçimi akış için uygun bir ad verin. **Ekle**'yi tıklatın.  
+   -   İçinde **Çözüm Gezgini**, projenize sağ tıklayın, fareyle **Ekle**, tıklayın **yeni öğe**ve ardından **etkinlik diyagramı**. Diyagram, dönüştürme ya da seçimi akış için uygun bir ad verin. **Ekle**'yi tıklatın.  
   
-2.  Yeni bir diyagramda:  
+2. Yeni bir diyagramda:  
   
-    1.  İki etkinlik parametre düğümleri, Giriş akışı için bir ve çıkış için bir tane oluşturun.  
+   1.  İki etkinlik parametre düğümleri, Giriş akışı için bir ve çıkış için bir tane oluşturun.  
   
-    2.  Nesne akışları ile birbirine bağlı bir eylem oluşturun. Bu, dönüştürme ya da seçimi nasıl çalıştığını gösterir.  
+   2.  Nesne akışları ile birbirine bağlı bir eylem oluşturun. Bu, dönüştürme ya da seçimi nasıl çalıştığını gösterir.  
   
-3.  Dönüştürme ya da seçimi kullanmak istediğiniz herhangi bir diyagrama içinde:  
+3. Dönüştürme ya da seçimi kullanmak istediğiniz herhangi bir diyagrama içinde:  
   
-    1.  Diğer bir deyişle, bağlayıcı için veya bir giriş veya çıkış PIN, bir nesne düğümü ya da bir etkinlik parametre düğümü bir nesne akış oluşturun.  
+   1.  Diğer bir deyişle, bağlayıcı için veya bir giriş veya çıkış PIN, bir nesne düğümü ya da bir etkinlik parametre düğümü bir nesne akış oluşturun.  
   
-    2.  Nesne akışı sağ tıklayın ve ardından **özellikleri**.  
+   2.  Nesne akışı sağ tıklayın ve ardından **özellikleri**.  
   
-    3.  İçinde **dönüştürme** veya **seçimi** özelliği, belirtilen burada dönüştürme ya da seçimi akış diyagramı seçin.  
+   3.  İçinde **dönüştürme** veya **seçimi** özelliği, belirtilen burada dönüştürme ya da seçimi akış diyagramı seçin.  
   
- Bir seçim tek tek giriş ve çıkış sabitleyicileri ve bir nesne düğümü de tanımlayabilirsiniz. Bir seçim etkinliği önceki yordamı tanımlayın ve ardından **seçimi** nesne düğümü veya giriş veya çıkış PIN özelliği.  
+   Bir seçim tek tek giriş ve çıkış sabitleyicileri ve bir nesne düğümü de tanımlayabilirsiniz. Bir seçim etkinliği önceki yordamı tanımlayın ve ardından **seçimi** nesne düğümü veya giriş veya çıkış PIN özelliği.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)   

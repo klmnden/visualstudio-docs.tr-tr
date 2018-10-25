@@ -13,12 +13,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 604ac82fbcda190c63a15e5ba0a1800022853b07
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 808482fdd7599adb270fe7634d61d4b88acb0d80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890152"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Kodlanmış UI Testleriyle Windows UWP ve 8.1 Phone Uygulamalarını Test Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,37 +85,37 @@ Bu kılavuz, mobil cihaz veya öykünücü üzerinde çalışan UWP uygulamalar�
 
 [Evrensel Windows Platformu (UWP) uygulamaları için kodlanmış UI testleri nasıl oluşturulur?](#uwpapps)
   
-1.  Windows Phone uygulaması ile çözüme yeni bir kodlanmış UI test projesi ekleyin.  
+1. Windows Phone uygulaması ile çözüme yeni bir kodlanmış UI test projesi ekleyin.  
   
-     ![Windows Phone için yeni kodlanmış UI testi oluşturma](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")  
+    ![Windows Phone için yeni kodlanmış UI testi oluşturma](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")  
   
-2.  İnce artı aracını kullanarak UI eşlemini düzenlemek için seçin.  
+2. İnce artı aracını kullanarak UI eşlemini düzenlemek için seçin.  
   
-     ![Kodlanmış UI çapraz kullanarak test oluşturma&#45;artı aracını. ](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
+    ![Kodlanmış UI çapraz kullanarak test oluşturma&#45;artı aracını. ](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
   
-3.  Uygulamayı seçmek için artı işareti aracını kullanın ve ardından uygulamanın değerini kopyalayın **Automationıd** daha sonra test uygulamasını başlatmak için kullanılacak özelliği.  
+3. Uygulamayı seçmek için artı işareti aracını kullanın ve ardından uygulamanın değerini kopyalayın **Automationıd** daha sonra test uygulamasını başlatmak için kullanılacak özelliği.  
   
-     ![Uygulamanın Automationıd değerini kopyalayın](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")  
+    ![Uygulamanın Automationıd değerini kopyalayın](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")  
   
-4.  Öykünücüsünde uygulamayı başlatın ve düğme denetimini seçmek için artı işareti aracını kullanın. Düğme denetimini UI kontrol haritasına eklersiniz.  
+4. Öykünücüsünde uygulamayı başlatın ve düğme denetimini seçmek için artı işareti aracını kullanın. Düğme denetimini UI kontrol haritasına eklersiniz.  
   
-     ![Çapraz kullanın&#45;eşleme denetimleri için artı aracını](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")  
+    ![Çapraz kullanın&#45;eşleme denetimleri için artı aracını](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")  
   
-5.  Textbox denetimi UI kontrol Haritası'na eklemek için önceki adımı yineleyin.  
+5. Textbox denetimi UI kontrol Haritası'na eklemek için önceki adımı yineleyin.  
   
-     ![Çapraz kullanın&#45;artı aracını ve harita textbox denetimi](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")  
+    ![Çapraz kullanın&#45;artı aracını ve harita textbox denetimi](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")  
   
-6.  UI kontrol haritasında değişiklikler için kod oluşturmak için kod oluşturur.  
+6. UI kontrol haritasında değişiklikler için kod oluşturmak için kod oluşturur.  
   
-     ![Kod oluşturma Oluşturucusu'ndan](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")  
+    ![Kod oluşturma Oluşturucusu'ndan](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")  
   
-7.  Textbox denetimi seçin ve ardından seçmek için artı işareti aracını kullanın **metin** özelliği.  
+7. Textbox denetimi seçin ve ardından seçmek için artı işareti aracını kullanın **metin** özelliği.  
   
-     ![Metin özelliği seçin](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")  
+    ![Metin özelliği seçin](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")  
   
-8.  Onaylama Ekle. Bu testte değerin doğru olduğunu doğrulamak için kullanılır.  
+8. Onaylama Ekle. Bu testte değerin doğru olduğunu doğrulamak için kullanılır.  
   
-     ![Test için onaylama Ekle](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")  
+    ![Test için onaylama Ekle](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")  
   
 9. Ekleyin ve onay yöntemi için kod oluşturur.  
   
@@ -223,37 +223,37 @@ Bu kılavuz, mobil cihaz veya öykünücü üzerinde çalışan UWP uygulamalar�
   
 11. Çözüm Gezgini'nde Codeduıtest1.cs veya Codeduıtest1.vb dosyasını açın. Şimdi, test çalıştırmak için gerekli eylemleri CodedUTTestMethod1 yöntemine kod ekleyebilirsiniz. Kod eklemek için Uımap'a eklenen denetimleri kullanın:  
   
-    1.  Daha önce panoya kopyaladığınız Otomasyon kimliği özelliğini kullanarak Windows Phone uygulamasını Başlat:  
+    1. Daha önce panoya kopyaladığınız Otomasyon kimliği özelliğini kullanarak Windows Phone uygulamasını Başlat:  
   
-        ```csharp  
-        XamlWindow myAppWindow = XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
-        ```  
+       ```csharp  
+       XamlWindow myAppWindow = XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
+       ```  
   
-        ```vb  
-        XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
-        ```  
+       ```vb  
+       XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
+       ```  
   
-    2.  Düğme denetimine dokunma hareketi ekleyin:  
+    2. Düğme denetimine dokunma hareketi ekleyin:  
   
-        ```csharp  
-        Gesture.Tap(this.UIMap.UIApp1Window.UIButtonButton);  
-        ```  
+       ```csharp  
+       Gesture.Tap(this.UIMap.UIApp1Window.UIButtonButton);  
+       ```  
   
-        ```vb  
-        Gesture.Tap(Me.UIMap.UIApp1Window.UIButtonButton)  
-        ```  
+       ```vb  
+       Gesture.Tap(Me.UIMap.UIApp1Window.UIButtonButton)  
+       ```  
   
-    3.  Otomatik olarak oluşturulan izin yöntemine çağrı uygulama başlatıldıktan sonra geldiğini doğrulamak ve düğme üzerinde hareket dokunun:  
+    3. Otomatik olarak oluşturulan izin yöntemine çağrı uygulama başlatıldıktan sonra geldiğini doğrulamak ve düğme üzerinde hareket dokunun:  
   
-        ```csharp  
-        this.UIMap.AssertMethod1();  
-        ```  
+       ```csharp  
+       this.UIMap.AssertMethod1();  
+       ```  
   
-        ```vb  
-        Me.UIMap.AssertMethod1()  
-        ```  
+       ```vb  
+       Me.UIMap.AssertMethod1()  
+       ```  
   
-     Kod ekledikten sonra Codeduıtestmethod1 test yöntemi şu şekilde görünmelidir:  
+       Kod ekledikten sonra Codeduıtestmethod1 test yöntemi şu şekilde görünmelidir:  
   
     ```csharp  
     [TestMethod]  
@@ -340,11 +340,11 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>S: Evrensel Windows Platformu (UWP) uygulamaları için kodlanmış UI testleri nasıl oluşturulur?  
  **A**: Burada test UWP uygulamanızın platforma bağlı olarak, aşağıdaki yöntemlerden biriyle kodlanmış UI test projesi oluşturun:  
   
--   Yerel makine üzerinde çalışan UWP uygulaması bir Store uygulaması olarak çalışır. Bu test için kullanmanız gerekir **kodlanmış UI Test projesi (Windows)** şablonu. Yeni bir proje oluşturduğunuzda, bu şablonu bulmak için Git **Windows**, **Evrensel** düğümü. Veya Git **Windows**, **Windows 8**, **Windows** düğümü.  
+- Yerel makine üzerinde çalışan UWP uygulaması bir Store uygulaması olarak çalışır. Bu test için kullanmanız gerekir **kodlanmış UI Test projesi (Windows)** şablonu. Yeni bir proje oluşturduğunuzda, bu şablonu bulmak için Git **Windows**, **Evrensel** düğümü. Veya Git **Windows**, **Windows 8**, **Windows** düğümü.  
   
--   Mobil cihaz veya öykünücü üzerinde çalışan bir UWP uygulaması, bir telefon uygulaması çalışır. Bu test için kullanmanız gerekir **kodlanmış UI Test projesi (Windows Phone)** şablonu. Yeni bir proje oluşturduğunuzda, bu şablonu bulmak için Git **Windows**, **Evrensel** düğümü. Veya Git **Windows**, **Windows 8**, **Windows Phone** düğümü.  
+- Mobil cihaz veya öykünücü üzerinde çalışan bir UWP uygulaması, bir telefon uygulaması çalışır. Bu test için kullanmanız gerekir **kodlanmış UI Test projesi (Windows Phone)** şablonu. Yeni bir proje oluşturduğunuzda, bu şablonu bulmak için Git **Windows**, **Evrensel** düğümü. Veya Git **Windows**, **Windows 8**, **Windows Phone** düğümü.  
   
- Projeyi oluşturduktan sonra bir test yazma önceki ile aynı kalır.  
+  Projeyi oluşturduktan sonra bir test yazma önceki ile aynı kalır.  
   
 ### <a name="q-can-i-select-controls-that-are-outside-the-emulator"></a>Öykünücü dışında olan denetimler seçtiğim miyim?  
  **A**: Hayır, oluşturucu bunları algılamaz.  

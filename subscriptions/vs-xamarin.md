@@ -9,12 +9,12 @@ description: Seçili Visual Studio aboneliğine dahildir Xamarin University eği
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3e709ea6d9ad5f53725aeed0f0400b4e5d365ab0
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: df8bc6abc23c4258872b0983b2443e757ca849db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073538"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838081"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Xamarin University eğitimi avantajı olarak Visual Studio abonelikleri
 
@@ -67,6 +67,7 @@ Visual Studio Dev Essentials üyeleri erişim seçili ücretsiz kurslar, Konuk e
     > ![Xamarin University portalı](_img/vs-xamarin/vs-xamarin-portal.png)
 
 ## <a name="eligibility"></a>Uygunluk
+
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standart, yıllık bulut)   | VL, Azure, perakende, seçili NFR<sup>1</sup> | 6 ay       |  Evet |

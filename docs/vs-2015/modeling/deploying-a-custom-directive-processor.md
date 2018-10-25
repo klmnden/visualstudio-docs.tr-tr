@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: dc49795a2d19ab28eb4462efc9d6361e1ac18ab6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6986811b522f6ed3621335227231bb69ab6cf1c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251959"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836404"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Özel Yönerge İşlemcisi Dağıtma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,26 +28,26 @@ ms.locfileid: "49251959"
   
  Diğer yöntemler şunlardır:  
   
--   [Visual Studio Uzantısı (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Bu, yönerge işlemcisini hem kendi bilgisayar hem de diğer bilgisayarlara yüklemek/kaldırmak için bir yol sağlar. Genellikle, diğer özellikleri aynı VSIX'te paketleyebilirsiniz.  
+- [Visual Studio Uzantısı (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Bu, yönerge işlemcisini hem kendi bilgisayar hem de diğer bilgisayarlara yüklemek/kaldırmak için bir yol sağlar. Genellikle, diğer özellikleri aynı VSIX'te paketleyebilirsiniz.  
   
--   [VSPackage](../extensibility/internals/vspackages.md). Yönerge işlemcisinin yanı sıra diğer özellikleri de içeren bir VSPackage tanımlıyorsanız, yönerge işlemcisi kaydetmeye uygun bir yöntem yoktur.  
+- [VSPackage](../extensibility/internals/vspackages.md). Yönerge işlemcisinin yanı sıra diğer özellikleri de içeren bir VSPackage tanımlıyorsanız, yönerge işlemcisi kaydetmeye uygun bir yöntem yoktur.  
   
--   Bir kayıt defteri anahtarı ayarlayın. Bu yöntemde, yönerge işlemcisi için bir kayıt defteri girdisini ekleyin.  
+- Bir kayıt defteri anahtarı ayarlayın. Bu yöntemde, yönerge işlemcisi için bir kayıt defteri girdisini ekleyin.  
   
- Yalnızca, metin şablonunuza dönüştürmek istiyorsanız aşağıdaki yöntemlerden birini kullanmanız gerekir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] veya [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Kendi uygulamanızda özel bir ana bilgisayar kullanıyorsanız, her yönerge için yönerge işlemcisi bulmak özel ana bilgisayarınızın sorumluluğundadır.  
+  Yalnızca, metin şablonunuza dönüştürmek istiyorsanız aşağıdaki yöntemlerden birini kullanmanız gerekir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] veya [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Kendi uygulamanızda özel bir ana bilgisayar kullanıyorsanız, her yönerge için yönerge işlemcisi bulmak özel ana bilgisayarınızın sorumluluğundadır.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>VSIX'te Yönerge İşlemcisini Dağıtma  
  Özel bir yönerge işlemcisi ekleyebilirsiniz bir [Visual Studio Uzantısı (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
   
  Aşağıdaki iki öğenin .vsix dosyasında bulunduğundan emin olmanız gerekir:  
   
--   Özel yönerge işlemcisi sınıfını içeren derleme (.dll).  
+- Özel yönerge işlemcisi sınıfını içeren derleme (.dll).  
   
--   Yönerge işlemcisini kaydeden .pkgdef dosyası. Dosyanın kök adı derleme ile aynı olmalıdır. Örneğin, dosyalarınız CDP.dll ve CDP.pkgdef olarak adlandırılabilir.  
+- Yönerge işlemcisini kaydeden .pkgdef dosyası. Dosyanın kök adı derleme ile aynı olmalıdır. Örneğin, dosyalarınız CDP.dll ve CDP.pkgdef olarak adlandırılabilir.  
   
- Bir .vsix dosyasının içeriğini denetlemek veya değiştirmek için, dosya adı uzantısını .zip olarak değiştirin ve açın. İçerikleri düzenledikten sonra, dosya adını .vsix olarak eski haline döndürün.  
+  Bir .vsix dosyasının içeriğini denetlemek veya değiştirmek için, dosya adı uzantısını .zip olarak değiştirin ve açın. İçerikleri düzenledikten sonra, dosya adını .vsix olarak eski haline döndürün.  
   
- Bir .vsix dosyası oluşturmanın birkaç yolu vardır. Aşağıdaki yordam bir yöntemi açıklamaktadır.  
+  Bir .vsix dosyası oluşturmanın birkaç yolu vardır. Aşağıdaki yordam bir yöntemi açıklamaktadır.  
   
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Bir VSIX projesinde özel bir yönerge işlemcisi geliştirmek için  
   
@@ -167,27 +167,27 @@ ms.locfileid: "49251959"
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Bir kayıt defteri anahtarı ayarlayarak bir yönerge işlemcisi kaydetmek için  
   
-1.  `regedit`'i çalıştırın.  
+1. `regedit`'i çalıştırın.  
   
-2.  Regedit içinde şuraya gidin:  
+2. Regedit içinde şuraya gidin:  
   
-     **Hkey_local_machıne\software\microsoft\visualstudio\\\*.0\TextTemplating\DirectiveProcessors**  
+    **Hkey_local_machıne\software\microsoft\visualstudio\\\*.0\TextTemplating\DirectiveProcessors**  
   
-     Deneysel sürümüne yönerge işlemcisi eklemek isterseniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], "11.0" "sonuna Exp" ekleyin.  
+    Deneysel sürümüne yönerge işlemcisi eklemek isterseniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], "11.0" "sonuna Exp" ekleyin.  
   
-3.  Yönerge işlemcisi sınıfıyla aynı ada sahip bir kayıt defteri anahtarı ekleyin.  
+3. Yönerge işlemcisi sınıfıyla aynı ada sahip bir kayıt defteri anahtarı ekleyin.  
   
-    -   Kayıt defteri ağacında sağ **DirectiveProcessors** düğümüne **yeni**ve ardından **anahtar**.  
+   -   Kayıt defteri ağacında sağ **DirectiveProcessors** düğümüne **yeni**ve ardından **anahtar**.  
   
-4.  Yeni düğümünde, Sınıf ve CodeBase veya Derleme için dize değerlerini aşağıdaki tablolara göre ekleyin.  
+4. Yeni düğümünde, Sınıf ve CodeBase veya Derleme için dize değerlerini aşağıdaki tablolara göre ekleyin.  
   
-    1.  Oluşturduğunuz düğüme sağ tıklayın, fareyle **yeni**ve ardından **dize değeri**.  
+   1.  Oluşturduğunuz düğüme sağ tıklayın, fareyle **yeni**ve ardından **dize değeri**.  
   
-    2.  Değerin adını düzenleyin.  
+   2.  Değerin adını düzenleyin.  
   
-    3.  Adı çift tıklatın ve verileri düzenleyin.  
+   3.  Adı çift tıklatın ve verileri düzenleyin.  
   
- Özel yönerge işlemcisi GAC'de değilse, kayıt defteri alt anahtarları aşağıdaki tabloda gibi görünmelidir:  
+   Özel yönerge işlemcisi GAC'de değilse, kayıt defteri alt anahtarları aşağıdaki tabloda gibi görünmelidir:  
   
 |Ad|Tür|Veri|  
 |----------|----------|----------|  

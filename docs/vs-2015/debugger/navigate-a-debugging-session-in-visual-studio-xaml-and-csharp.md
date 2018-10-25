@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59ff131289d5ae69cc66f3069bb7fd693e7878f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7e0acee43c05332dd3f9f10eecb7ea55b02671f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306312"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842647"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Visual Studio’da (Xaml ve C#) bir hata ayıklama oturumunda gezinme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,29 +93,29 @@ Bu hızlı başlangıçta, Visual Studio hata ayıklama oturumları gitmek ve g�
   
  Bir kod satırının içine adımladığınızda hata ayıklayıcısı aşağıdaki işlemlerden birini gerçekleştirir:  
   
--   Sonraki deyim, çözümünüzün bir işlev çağrısı değilse, hata ayıklayıcısı deyimi yürütür, sonraki deyime geçer ve ardından yürütmeyi askıya alır.  
+- Sonraki deyim, çözümünüzün bir işlev çağrısı değilse, hata ayıklayıcısı deyimi yürütür, sonraki deyime geçer ve ardından yürütmeyi askıya alır.  
   
--   Çözümünüzde bir işlev çağrısı ifadesi ise hata ayıklayıcısı çağrılan işlevin Giriş noktasına taşır ve ardından yürütmeyi askıya alır.  
+- Çözümünüzde bir işlev çağrısı ifadesi ise hata ayıklayıcısı çağrılan işlevin Giriş noktasına taşır ve ardından yürütmeyi askıya alır.  
   
- Çıkış noktası ulaşıncaya kadar örnek1 açıklamaalarını adımla devam edin. Hata ayıklayıcı yöntemin kapanış küme ayracı vurgulanır.  
+  Çıkış noktası ulaşıncaya kadar örnek1 açıklamaalarını adımla devam edin. Hata ayıklayıcı yöntemin kapanış küme ayracı vurgulanır.  
   
- **Veri ipuçları değişken değerleri inceleyin.** Fare bir değişken adının üzerine geldiğinizde, bir veri ipucunda ada, değere ve değişken türü görüntülenir.  
+  **Veri ipuçları değişken değerleri inceleyin.** Fare bir değişken adının üzerine geldiğinizde, bir veri ipucunda ada, değere ve değişken türü görüntülenir.  
   
- ![Hata ayıklayıcı veri İpucu](../debugger/media/dbg-basics-datatip.png "DBG_Basics_DataTip")  
+  ![Hata ayıklayıcı veri İpucu](../debugger/media/dbg-basics-datatip.png "DBG_Basics_DataTip")  
   
- Değişkenin fare gelin `a`. Ada, değere ve veri türünü not alın. Değişkenin fare gelin `methodTrack`. Yeniden ada, değere ve veri türünü not alın.  
+  Değişkenin fare gelin `a`. Ada, değere ve veri türünü not alın. Değişkenin fare gelin `methodTrack`. Yeniden ada, değere ve veri türünü not alın.  
   
- **Değişken değerleri Yereller penceresinde inceleyin.** Üzerinde **hata ayıklama** menüsünde **Windows**ve ardından **Yereller**. (Klavye: Alt + 4).  
+  **Değişken değerleri Yereller penceresinde inceleyin.** Üzerinde **hata ayıklama** menüsünde **Windows**ve ardından **Yereller**. (Klavye: Alt + 4).  
   
- ![Yerel öğeler penceresinde](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")  
+  ![Yerel öğeler penceresinde](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")  
   
- Yerel windows, ağaç görünümünde parametrelerinin ve işlevin değişkenleri gereklidir. Nesnenin alt düğümleri bir nesne değişkeninin özelliklerdir. `this` Değişkendir nesnesini temsil eden her nesne yöntemi gizli parametre. Bu durumda, MainPage sınıfı temsil eder. Çünkü `methodTrack` MainPage sınıfının, değer ve veri türünün bir üyesi bir satırda altında listelenen olan `this`. Genişletin `this` görüntülemek için düğümü `methodTrack` bilgileri.  
+  Yerel windows, ağaç görünümünde parametrelerinin ve işlevin değişkenleri gereklidir. Nesnenin alt düğümleri bir nesne değişkeninin özelliklerdir. `this` Değişkendir nesnesini temsil eden her nesne yöntemi gizli parametre. Bu durumda, MainPage sınıfı temsil eder. Çünkü `methodTrack` MainPage sınıfının, değer ve veri türünün bir üyesi bir satırda altında listelenen olan `this`. Genişletin `this` görüntülemek için düğümü `methodTrack` bilgileri.  
   
- **MethodTrack değişken için bir izleme ekleyin.** `methodWatch` Değişkeni bu hızlı başlangıç boyunca örneklerde çağrılan yöntemler göstermek için kullanılır. Değişkenin değerini görüntülemek kolaylaştırmak için bir watch pencere ekleyin. Yerel öğeler penceresinde değişken adına sağ tıklayın ve ardından **Gözcü Ekle**.  
+  **MethodTrack değişken için bir izleme ekleyin.** `methodWatch` Değişkeni bu hızlı başlangıç boyunca örneklerde çağrılan yöntemler göstermek için kullanılır. Değişkenin değerini görüntülemek kolaylaştırmak için bir watch pencere ekleyin. Yerel öğeler penceresinde değişken adına sağ tıklayın ve ardından **Gözcü Ekle**.  
   
- ![İzleme penceresi](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")  
+  ![İzleme penceresi](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")  
   
- Birden çok izleme penceresi değişkenleri izleyebilirsiniz. Değerleri Yereller ve veri ipucu windows gibi izlenen değişkenlerin değerleri, her yürütme askıya alındığında güncelleştirilir. Kod düzenleyicisinden İzle penceresine değişkenler de ekleyebilirsiniz. İzlemek için değişkeni seçin, sağ tıklatın ve ardından **Gözcü Ekle**.  
+  Birden çok izleme penceresi değişkenleri izleyebilirsiniz. Değerleri Yereller ve veri ipucu windows gibi izlenen değişkenlerin değerleri, her yürütme askıya alındığında güncelleştirilir. Kod düzenleyicisinden İzle penceresine değişkenler de ekleyebilirsiniz. İzlemek için değişkeni seçin, sağ tıklatın ve ardından **Gözcü Ekle**.  
   
 ##  <a name="BKMK_StepIntoOverOut"></a> İçine, üzerine ve dışına yöntemleri adım  
  Üst yöntemi tarafından adlı bir yöntem içine Adımlama, aksine bir yöntem Adımlama alt yöntemini yürütür ve üst sürdürür olarak çağıran yöntem yürütme bekletir. Yöntem çalışır ve yürütme göreceğiniz Araştırdığınız sorunun etkilemez eminseniz işlemleriyle ilgili bilgi sahibi olduğunda bir yöntem adım.  

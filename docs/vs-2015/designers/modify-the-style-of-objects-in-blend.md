@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6fef77a22d043d4b98d337286e539666b5d4b2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70bf451a828e3884a6004f6304b91351e866ee52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240160"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843656"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Blend'de nesnlerin stilini değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,15 +80,15 @@ ms.locfileid: "49240160"
   
  Stil oluşturma, nesneyi seçin ve ardından **nesne** menüsünde seçin **stili Düzenle**ve ardından **kopya Düzenle** veya **boş oluşturma**.  
   
--   Seçin **kopya Düzenle** varsayılan stil veya şablon denetimi ile başlatmak için.  
+- Seçin **kopya Düzenle** varsayılan stil veya şablon denetimi ile başlatmak için.  
   
--   Seçin **oluşturma boş** sıfırdan başlatmak için.  
+- Seçin **oluşturma boş** sıfırdan başlatmak için.  
   
- **Geçerli olanı Düzenle** seçeneği, yalnızca bir stil veya önceden oluşturduğunuz bir şablonu düzenlerseniz görüntülenir. Bir denetim için varsayılan sistem şablonunu yine de kullandığı görünmeyecektir.  
+  **Geçerli olanı Düzenle** seçeneği, yalnızca bir stil veya önceden oluşturduğunuz bir şablonu düzenlerseniz görüntülenir. Bir denetim için varsayılan sistem şablonunu yine de kullandığı görünmeyecektir.  
   
- İçinde **stil kaynağı oluştur** iletişim kutusu, ya da adını stil veya şablon daha sonra kullanabileceğiniz ya da bu türdeki tüm denetimlere stili veya şablonu uygulayabilirsiniz.  
+  İçinde **stil kaynağı oluştur** iletişim kutusu, ya da adını stil veya şablon daha sonra kullanabileceğiniz ya da bu türdeki tüm denetimlere stili veya şablonu uygulayabilirsiniz.  
   
- ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
+  ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
   
 > [!NOTE]
 >  Stilleri veya şablonları her denetim türü için oluşturulamıyor. Bir denetim onları desteklemiyorsa, içerik haritası düğmesi çalışma yüzeyi üzerinde görünmez.  

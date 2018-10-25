@@ -13,12 +13,12 @@ ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c4e0950010247387d8ddc1380589a6f684ab8ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e31588850d47276d63bda724e61e502c38a4575
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265136"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862326"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>İzlenecek Yol: Görünüm Kenarlığı, Komutlar ve Ayarlar (Sütun Kılavuzları) Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,21 +27,21 @@ Visual Studio metin/Kod Düzenleyicisi komutları ve görünüm efektleriyle gen
   
  Bu izlenecek yolda yapacaklarınız:  
   
--   VSIX projesi oluşturun  
+- VSIX projesi oluşturun  
   
--   Bir düzenleyici görünüm kenarlığı Ekle  
+- Bir düzenleyici görünüm kenarlığı Ekle  
   
--   Kaydetme ve (çizim sütun kılavuzları ve bunların renk için) ayarları almak için destek eklendi  
+- Kaydetme ve (çizim sütun kılavuzları ve bunların renk için) ayarları almak için destek eklendi  
   
--   Komutları eklendi (sütun kılavuzları Ekle/Kaldır, kendi rengi değiştirme)  
+- Komutları eklendi (sütun kılavuzları Ekle/Kaldır, kendi rengi değiştirme)  
   
--   Düzen menüsü ve metin belgesi bağlam menüleri komutları koyun  
+- Düzen menüsü ve metin belgesi bağlam menüleri komutları koyun  
   
--   Visual Studio komut penceresinde komutlar yürütmesini desteği eklendi  
+- Visual Studio komut penceresinde komutlar yürütmesini desteği eklendi  
   
- Bu Visual Studio Galerisi sütun kılavuzları özelliğiyle sürümünü deneyebilirsiniz[uzantısı](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
+  Bu Visual Studio Galerisi sütun kılavuzları özelliğiyle sürümünü deneyebilirsiniz[uzantısı](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
   
- **Not**: Bu kılavuzda visual studio uzantı şablonları tarafından oluşturulan bazı dosyalara bir sürü kod yapıştırın, ancak yakında bu kılavuzda github'da diğer uzantı örnekleriyle tamamlanmış bir çözümdür başvuracaktır.  Tamamlanan kodu generictemplate simgeler kullanmak yerine gerçek komut simgeleri sahip, biraz farklıdır.  
+  **Not**: Bu kılavuzda visual studio uzantı şablonları tarafından oluşturulan bazı dosyalara bir sürü kod yapıştırın, ancak yakında bu kılavuzda github'da diğer uzantı örnekleriyle tamamlanmış bir çözümdür başvuracaktır.  Tamamlanan kodu generictemplate simgeler kullanmak yerine gerçek komut simgeleri sahip, biraz farklıdır.  
   
 ## <a name="getting-started"></a>Başlarken  
  Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik olarak eklenmiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'sını yükleme](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -49,21 +49,21 @@ Visual Studio metin/Kod Düzenleyicisi komutları ve görünüm efektleriyle gen
 ## <a name="setting-up-the-solution"></a>Çözümünü ayarlama  
  İlk bir VSIX projesi oluşturun, bir düzenleyici görünüm kenarlığı ekleyin ve ardından (komut sahibi VSPackage ekleyen) bir komut ekleyin.  Temel mimari aşağıdaki gibidir:  
   
--   Oluşturur bir metin görünümünü oluşturma dinleyici sahip bir `ColumnGuideAdornment` görünüm başına nesne.  Bu nesne görünümü değiştirme hakkında olayları dinleyen veya ayarları değiştirme, güncelleştirme veya yeniden sütun gerektiği şekilde kılavuzluk eder.  
+- Oluşturur bir metin görünümünü oluşturma dinleyici sahip bir `ColumnGuideAdornment` görünüm başına nesne.  Bu nesne görünümü değiştirme hakkında olayları dinleyen veya ayarları değiştirme, güncelleştirme veya yeniden sütun gerektiği şekilde kılavuzluk eder.  
   
--   Var olan bir `GuidesSettingsManager` Visual Studio ayarları depolamadan yazma ve okuma işler.  Ayarlar Yöneticisi ayrıca kullanıcı komutları destek ayarları güncelleştirmek için işlemleri vardır (sütun ekleme, sütun kaldırmak, rengini değiştirme).  
+- Var olan bir `GuidesSettingsManager` Visual Studio ayarları depolamadan yazma ve okuma işler.  Ayarlar Yöneticisi ayrıca kullanıcı komutları destek ayarları güncelleştirmek için işlemleri vardır (sütun ekleme, sütun kaldırmak, rengini değiştirme).  
   
--   Kullanıcı komutları varsa gerekli olan bir VSIP paket, ancak yalnızca komutlar uygulama nesnesini başlatır Demirbaş kod değil.  
+- Kullanıcı komutları varsa gerekli olan bir VSIP paket, ancak yalnızca komutlar uygulama nesnesini başlatır Demirbaş kod değil.  
   
--   Var olan bir `ColumnGuideCommands` uygulayan kullanıcı komutları ve komutlar için komut işleyicileri'kurmak kancaları nesne .vsct dosyası içinde bildirilmiş.  
+- Var olan bir `ColumnGuideCommands` uygulayan kullanıcı komutları ve komutlar için komut işleyicileri'kurmak kancaları nesne .vsct dosyası içinde bildirilmiş.  
   
- **VSIX**.  Kullanım **dosya &#124; yeni...** bir proje oluşturmak için komutu.  Sol Gezinti Bölmesi'nde genişletilebilirlik düğümünde C# ' ı seçin ve **VSIX projesi** sağ bölmede.  ColumnGuides adını girin ve seçin **Tamam** projeyi oluşturmak için.  
+  **VSIX**.  Kullanım **dosya &#124; yeni...** bir proje oluşturmak için komutu.  Sol Gezinti Bölmesi'nde genişletilebilirlik düğümünde C# ' ı seçin ve **VSIX projesi** sağ bölmede.  ColumnGuides adını girin ve seçin **Tamam** projeyi oluşturmak için.  
   
- **Kenarlığı görüntüleyin**.  Çözüm Gezgini'nde proje düğümüne sağ işaretçi düğmesine basın.  Seçin **ekleme &#124; yeni öğe...** Yeni bir görünüm kenarlığı öğe eklemek için komutu.  Seçin **genişletilebilirlik &#124; Düzenleyicisi** sol gezinti bölmesinde seçin **Düzenleyicisi Görünüm penceresi kenarlığı** sağ bölmede.  Öğe adı ColumnGuideAdornment adı girin ve seçin **Ekle** ekleyin.  
+  **Kenarlığı görüntüleyin**.  Çözüm Gezgini'nde proje düğümüne sağ işaretçi düğmesine basın.  Seçin **ekleme &#124; yeni öğe...** Yeni bir görünüm kenarlığı öğe eklemek için komutu.  Seçin **genişletilebilirlik &#124; Düzenleyicisi** sol gezinti bölmesinde seçin **Düzenleyicisi Görünüm penceresi kenarlığı** sağ bölmede.  Öğe adı ColumnGuideAdornment adı girin ve seçin **Ekle** ekleyin.  
   
- Proje (yanı sıra başvuruları ve benzeri) Bu öğe şablonu eklenen iki dosya görebilirsiniz: ColumnGuideAdornment.cs ve ColumnGuideAdornmentTextViewCreationListener.cs.  Şablonlar, yalnızca görünümünde mor renkli bir dikdörtgen çizin.  Aşağıda birkaç görünüm oluşturma dinleyici satırları değiştirin ve ColumnGuideAdornment.cs içeriğini değiştirin.  
+  Proje (yanı sıra başvuruları ve benzeri) Bu öğe şablonu eklenen iki dosya görebilirsiniz: ColumnGuideAdornment.cs ve ColumnGuideAdornmentTextViewCreationListener.cs.  Şablonlar, yalnızca görünümünde mor renkli bir dikdörtgen çizin.  Aşağıda birkaç görünüm oluşturma dinleyici satırları değiştirin ve ColumnGuideAdornment.cs içeriğini değiştirin.  
   
- **Komutları**.  Çözüm Gezgini'nde proje düğümüne sağ işaretçi düğmesine basın.  Seçin **ekleme &#124; yeni öğe...** Yeni bir görünüm kenarlığı öğe eklemek için komutu.  Seçin **genişletilebilirlik &#124; VSPackage** sol gezinti bölmesinde seçin **özel komut** sağ bölmede.  Öğe adı ColumnGuideCommands adı girin ve seçin **Ekle** ekleyin.  Birkaç başvurulara ek komutlar ve paket ekleme ColumnGuideCommands.cs ColumnGuideCommandsPackage.cs ve ColumnGuideCommandsPackage.vsct eklendi.  Aşağıdaki komutlar tanımlaması ve ilk ve son dosyaların içeriğini yerini alır.  
+  **Komutları**.  Çözüm Gezgini'nde proje düğümüne sağ işaretçi düğmesine basın.  Seçin **ekleme &#124; yeni öğe...** Yeni bir görünüm kenarlığı öğe eklemek için komutu.  Seçin **genişletilebilirlik &#124; VSPackage** sol gezinti bölmesinde seçin **özel komut** sağ bölmede.  Öğe adı ColumnGuideCommands adı girin ve seçin **Ekle** ekleyin.  Birkaç başvurulara ek komutlar ve paket ekleme ColumnGuideCommands.cs ColumnGuideCommandsPackage.cs ve ColumnGuideCommandsPackage.vsct eklendi.  Aşağıdaki komutlar tanımlaması ve ilk ve son dosyaların içeriğini yerini alır.  
   
 ## <a name="setting-up-the-text-view-creation-listener"></a>Metin görünümü oluşturma dinleyici ayarlama  
  ColumnGuideAdornmentTextViewCreationListener.cs düzenleyicide açın.  Bu kod, her Visual Studio metin görünümler oluşturur için bir işleyici uygular.  İşleyici görünümün özelliklere bağlı olarak ne zaman çağrıldığını denetleyen öznitelikleri vardır.  

@@ -13,12 +13,12 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fbe8dd5ba0687471478d87606db45aa506991c12
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d52a6e8eb5be9fb6516bcbc7788cf3115e2debdf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192549"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848702"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Visual Studio için uygulama desenleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -67,19 +67,19 @@ ms.locfileid: "49192549"
 #### <a name="tool-window-states"></a>Araç penceresi durumları  
  Visual Studio araç pencereleri, bazıları (otomatik gizleme özelliği gibi) kullanıcı etkinleştirilmiş olan farklı durumları sahip. Gibi diğer durumlarını otomatik görünür, doğru bağlamda görüntülenir ve gerekli gizle Araç pencereleri izin verin. Toplam beş araç penceresi durumlar vardır.  
   
--   **Yerleşik ve sabitlenmiş** araç pencereleri belge alanını dört tarafına birine eklenebilir. Araç penceresinin başlık çubuğundaki Raptiye simgesi görünür. Araç penceresi kabuk ve diğer araç pencereleri kenarına yatay veya dikey olarak yerleştirilmiş olabilir ve aynı zamanda sekme bağlantılı olabilir.  
+- **Yerleşik ve sabitlenmiş** araç pencereleri belge alanını dört tarafına birine eklenebilir. Araç penceresinin başlık çubuğundaki Raptiye simgesi görünür. Araç penceresi kabuk ve diğer araç pencereleri kenarına yatay veya dikey olarak yerleştirilmiş olabilir ve aynı zamanda sekme bağlantılı olabilir.  
   
--   **Otomatik gizlenmiş** araç pencereleri sabitlenmemiş. Pencerenin görme, belge alanını kenarında (araç penceresi adını ve simgesini) içeren bir sekme bırakarak dışında kaydırabilirsiniz. Bir kullanıcı sekmenin üzerine geldiğinde kullanıma araç penceresi çıkar.  
+- **Otomatik gizlenmiş** araç pencereleri sabitlenmemiş. Pencerenin görme, belge alanını kenarında (araç penceresi adını ve simgesini) içeren bir sekme bırakarak dışında kaydırabilirsiniz. Bir kullanıcı sekmenin üzerine geldiğinde kullanıma araç penceresi çıkar.  
   
--   **Otomatik görünür** araç pencereleri otomatik olarak kullanıcı Arabirimi, başka bir parçası gibi bir düzenleyici başlatılır veya odağını kazandığında görüntülenir.  
+- **Otomatik görünür** araç pencereleri otomatik olarak kullanıcı Arabirimi, başka bir parçası gibi bir düzenleyici başlatılır veya odağını kazandığında görüntülenir.  
   
--   **Kayan** araç pencerelerini IDE dışında gelin. Bu, çoklu monitör yapılandırmaları için kullanışlıdır.  
+- **Kayan** araç pencerelerini IDE dışında gelin. Bu, çoklu monitör yapılandırmaları için kullanışlıdır.  
   
--   **Sekmeli belge** araç pencereleri yerleştirilmiş belgenin içinde iyi. Bu, kenarlarını çerçevenin takma izin verdiğinden daha fazla gerçek boyutunuzu gereken nesne tarayıcısı gibi büyük araç pencereleri için kullanışlıdır.  
+- **Sekmeli belge** araç pencereleri yerleştirilmiş belgenin içinde iyi. Bu, kenarlarını çerçevenin takma izin verdiğinden daha fazla gerçek boyutunuzu gereken nesne tarayıcısı gibi büyük araç pencereleri için kullanışlıdır.  
   
- ![Araç penceresi durumları Visual Studio'da](../../extensibility/ux-guidelines/media/0702-01-toolwindowstates.png "0702 01_ToolWindowStates")  
+  ![Araç penceresi durumları Visual Studio'da](../../extensibility/ux-guidelines/media/0702-01-toolwindowstates.png "0702 01_ToolWindowStates")  
   
- **Visual Studio araç penceresi durumları**  
+  **Visual Studio araç penceresi durumları**  
   
 #### <a name="single-instance-and-multi-instance"></a>Tek Örnekli ve çok örnekli  
  Araç pencereleri, tek örnekli ya da çok örnekli ' dir. Çok örnekli araç pencereleri görünmeyebilir ancak bazı Tek Örnekli araç pencereleri etkin belge penceresi ile ilişkilendirilmiş olabilir. Çok örnekli araç pencereleri, pencerenin yeni bir örneğini oluşturarak penceresi/yeni pencere komutuna yanıt. Aşağıdaki görüntüde pencerede örneği etkin olduğunda yeni pencere komutu etkinleştirme araç penceresi gösterilmektedir:  
@@ -164,19 +164,19 @@ ms.locfileid: "49192549"
 ### <a name="user-expectations-for-specific-document-types"></a>Özel belge türleri için kullanıcı beklentileri  
  Belge düzenleyicileri birkaç farklı temel türleri vardır ve her bir aynı türden başkalarıyla tutarlı etkileşimleri kümesine sahiptir.  
   
--   **Metin tabanlı Düzenleyici:** Kod Düzenleyicisi, günlük dosyaları  
+- **Metin tabanlı Düzenleyici:** Kod Düzenleyicisi, günlük dosyaları  
   
--   **Tasarım yüzeyine:** WPF forms Tasarımcısı, Windows forms  
+- **Tasarım yüzeyine:** WPF forms Tasarımcısı, Windows forms  
   
--   **İletişim kutusu stilinde Düzenleyicisi:** bildirim Tasarımcısı, proje özellikleri  
+- **İletişim kutusu stilinde Düzenleyicisi:** bildirim Tasarımcısı, proje özellikleri  
   
--   **Model Tasarımcısı:** iş akışı Tasarımcısı, codemap, mimari diyagramı, ilerleme  
+- **Model Tasarımcısı:** iş akışı Tasarımcısı, codemap, mimari diyagramı, ilerleme  
   
- Belge de kullandığınız birkaç Düzenleyicisi olmayan türleri de vardır. Belgeler kendilerini düzenleme yapmadığınız sırada bunlar belge pencereleri için standart etkileşimlerini izlemeniz gerekir.  
+  Belge de kullandığınız birkaç Düzenleyicisi olmayan türleri de vardır. Belgeler kendilerini düzenleme yapmadığınız sırada bunlar belge pencereleri için standart etkileşimlerini izlemeniz gerekir.  
   
--   **Raporları:** IntelliTrace raporu, Hyper-V rapor profil oluşturucusu raporu  
+- **Raporları:** IntelliTrace raporu, Hyper-V rapor profil oluşturucusu raporu  
   
--   **Pano:** tanılama Merkezi  
+- **Pano:** tanılama Merkezi  
   
 #### <a name="text-based-editors"></a>Metin tabanlı düzenleyiciler  
   
@@ -251,13 +251,13 @@ ms.locfileid: "49192549"
   
  Bir iletişim kutusu ihtiyacınız karar verdiyseniz, tercih sırasına göre üç seçeneğiniz vardır:  
   
-1.  Tek bir paylaşılan iletişim kutularının Visual Studio'da özelliklerinizi tümleştirin.  
+1. Tek bir paylaşılan iletişim kutularının Visual Studio'da özelliklerinizi tümleştirin.  
   
-2.  Mevcut bir benzer iletişim kutusundaki bir desen kullanarak kendi iletişim oluşturun.  
+2. Mevcut bir benzer iletişim kutusundaki bir desen kullanarak kendi iletişim oluşturun.  
   
-3.  Yeni bir iletişim kutusu, aşağıdaki etkileşim ve Düzen kılavuzu oluşturun.  
+3. Yeni bir iletişim kutusu, aşağıdaki etkileşim ve Düzen kılavuzu oluşturun.  
   
- Bu konuda, Visual Studio iş akışı içinde doğru iletişim düzeni iletişim tasarımı için genel kurallar seçip açıklar.  
+   Bu konuda, Visual Studio iş akışı içinde doğru iletişim düzeni iletişim tasarımı için genel kurallar seçip açıklar.  
   
 ### <a name="themes"></a>Temalar  
  Visual Studio iletişim kutularında iki temel stilleri birini izleyin:  
@@ -268,15 +268,15 @@ ms.locfileid: "49192549"
 #### <a name="themed"></a>Tema  
  Özel "SIGNATURE" iletişim kutuları temalı olabilir. Temalı iletişim kutuları, bazı özel etkileşim desenleri stil ile ilişkili olan farklı bir görünüm vardır. Tema yalnızca bu gereksinimleri karşılıyorsa iletişim:  
   
--   İletişim kutusu, görülebilir ve sıklıkla veya çok sayıda kullanıcı tarafından kullanılan ortak deneyimidir (örneğin, **yeni proje** iletişim.  
+- İletişim kutusu, görülebilir ve sıklıkla veya çok sayıda kullanıcı tarafından kullanılan ortak deneyimidir (örneğin, **yeni proje** iletişim.  
   
--   İletişim tanınmış ürün marka öğelerini içerir (örneğin, **hesap ayarları** iletişim).  
+- İletişim tanınmış ürün marka öğelerini içerir (örneğin, **hesap ayarları** iletişim).  
   
--   Temalı diğer iletişim kutuları içeren daha büyük bir akış ayrılmaz bir parçası iletişim kutusu görüntülenir (örneğin, **bağlı hizmet Ekle** iletişim).  
+- Temalı diğer iletişim kutuları içeren daha büyük bir akış ayrılmaz bir parçası iletişim kutusu görüntülenir (örneğin, **bağlı hizmet Ekle** iletişim).  
   
--   İletişim kutusu, yükseltme veya bir ürün sürümü farklılaştırılması stratejik bir rol oynar bir deneyim, önemli bir parçasıdır.  
+- İletişim kutusu, yükseltme veya bir ürün sürümü farklılaştırılması stratejik bir rol oynar bir deneyim, önemli bir parçasıdır.  
   
- Temalı iletişim oluştururken uygun ortam renklerini kullan ve etkileşim desenleri ve doğru düzeni izleyin. (Bkz [Visual Studio için Düzen](../../extensibility/ux-guidelines/layout-for-visual-studio.md))  
+  Temalı iletişim oluştururken uygun ortam renklerini kullan ve etkileşim desenleri ve doğru düzeni izleyin. (Bkz [Visual Studio için Düzen](../../extensibility/ux-guidelines/layout-for-visual-studio.md))  
   
 ### <a name="dialog-design"></a>İletişim tasarım  
  İyi tasarlanmış bir iletişim kutusu aşağıdaki öğeleri dikkate alın:  
@@ -360,17 +360,17 @@ ms.locfileid: "49192549"
   
 #### <a name="title-bars"></a>Başlık çubukları  
   
--   Başlık çubuğunda metin onu başlatan komut adını yansıtması gerekir.  
+- Başlık çubuğunda metin onu başlatan komut adını yansıtması gerekir.  
   
--   Herhangi bir simge iletişim başlık çubuklarında kullanılmalıdır. Burada sistem gerektiren durumlarda, Visual Studio logosu kullanın.  
+- Herhangi bir simge iletişim başlık çubuklarında kullanılmalıdır. Burada sistem gerektiren durumlarda, Visual Studio logosu kullanın.  
   
--   İletişim kutuları olmamalıdır en aza indirmek ya da düğmeleri en üst düzeye çıkarın.  
+- İletişim kutuları olmamalıdır en aza indirmek ya da düğmeleri en üst düzeye çıkarın.  
   
--   Başlık çubuğunda Yardımı düğmeleri kullanım dışı bırakıldı. Yeni iletişim kutuları için bunları eklemeyin. Mevcut olduğunda, kavramsal olarak bir görevle ilgili Yardım konusunu başlatmak.  
+- Başlık çubuğunda Yardımı düğmeleri kullanım dışı bırakıldı. Yeni iletişim kutuları için bunları eklemeyin. Mevcut olduğunda, kavramsal olarak bir görevle ilgili Yardım konusunu başlatmak.  
   
- ![Başlık Çubuğu Özellikleri Visual Studio için](../../extensibility/ux-guidelines/media/0704-03-titlebarspecs.png "0704 03_TitleBarSpecs")  
+  ![Başlık Çubuğu Özellikleri Visual Studio için](../../extensibility/ux-guidelines/media/0704-03-titlebarspecs.png "0704 03_TitleBarSpecs")  
   
- **Visual Studio iletişim kutularındaki başlık çubukları için kılavuz belirtimleri.**  
+  **Visual Studio iletişim kutularındaki başlık çubukları için kılavuz belirtimleri.**  
   
 #### <a name="control-buttons"></a>Düğme denetimi  
  Genel olarak, **Tamam**/**iptal**/**yardımcı** düğmeleri düzenlenmiş yatay olarak iletişim kutusunun sağ alt köşesinde. Bir iletişim kutusu denetim düğmeleri visual karıştırılıyor neden olabilir iletişim kutusunun altındaki çeşitli diğer düğmeleri varsa alternatif dikey yığın izin verilir.  
@@ -381,11 +381,11 @@ ms.locfileid: "49192549"
   
  İletişim kutusu, varsayılan denetimi düğme içermesi gerekir. Varsayılan olarak kullanmak için en iyi komutu belirlemek için (öncelik sırasına göre listelenmiş) aşağıdaki seçenekler arasından seçim yapın:  
   
--   Varsayılan olarak güvenli ve en güvenli komutu seçin. Bu, veri kaybını önlemeye ve istenmeyen sistem erişimi önlemek büyük olasılıkla komutunu seçerek anlamına gelir.  
+- Varsayılan olarak güvenli ve en güvenli komutu seçin. Bu, veri kaybını önlemeye ve istenmeyen sistem erişimi önlemek büyük olasılıkla komutunu seçerek anlamına gelir.  
   
--   Veri kaybı ve güvenlik faktörleri değilseniz, kolaylık üzerinde göre varsayılan komutu'ni seçin. Sık ve yinelenen görevleri iletişim kutusu desteklediğinde, en olası komutu varsayılan olarak dahil olmak üzere kullanıcının iş akışı iyileştirir.  
+- Veri kaybı ve güvenlik faktörleri değilseniz, kolaylık üzerinde göre varsayılan komutu'ni seçin. Sık ve yinelenen görevleri iletişim kutusu desteklediğinde, en olası komutu varsayılan olarak dahil olmak üzere kullanıcının iş akışı iyileştirir.  
   
- Varsayılan komut için kalıcı olarak zararlı bir eylem seçmekten kaçının. Böyle bir komut varsa, daha güvenli bir komutu bunun yerine varsayılan olarak'nı seçin.  
+  Varsayılan komut için kalıcı olarak zararlı bir eylem seçmekten kaçının. Böyle bir komut varsa, daha güvenli bir komutu bunun yerine varsayılan olarak'nı seçin.  
   
 #### <a name="access-keys"></a>Erişim anahtarları  
  Erişim tuşları kullanmayın **Tamam**/**iptal**/**yardımcı** düğmeleri. Bu düğmeler kısayol tuşları için varsayılan olarak eşleştirilir:  
@@ -437,54 +437,54 @@ ms.locfileid: "49192549"
   
  Her zaman projeleri gerekir:  
   
--   Proje içeriği düzenlemek için proje klasörleri ekleme özelliği desteği  
+- Proje içeriği düzenlemek için proje klasörleri ekleme özelliği desteği  
   
--   Proje kalıcılığı için tutarlı bir modeli koru  
+- Proje kalıcılığı için tutarlı bir modeli koru  
   
- Projeleri için tutarlı etkileşim modelleri de korumanız gerekir:  
+  Projeleri için tutarlı etkileşim modelleri de korumanız gerekir:  
   
--   Proje öğeleri kaldırma  
+- Proje öğeleri kaldırma  
   
--   Belgeleri kaydetme  
+- Belgeleri kaydetme  
   
--   Proje özelliğini düzenleme  
+- Proje özelliğini düzenleme  
   
--   Alternatif bir görünümü'nde projeye düzenleme  
+- Alternatif bir görünümü'nde projeye düzenleme  
   
--   Sürükle ve bırak işlemleri  
+- Sürükle ve bırak işlemleri  
   
 ### <a name="drag-and-drop-interaction-model"></a>Sürükle ve bırak etkileşim modeli  
  Projeleri genellikle sınıflandırmak (kalıcı depolama alanında proje öğeleri için yalnızca başvuruları mümkün), kendilerine başvuru tabanlı olarak dizin tabanlı (yalnızca proje öğelerinin fiziksel olarak kalıcı hale getirmek için saklı bir projenin hiyerarşisi içinde) ya da karma (başvurular kalıcı hale getirmek kullanabilirsiniz veya fiziksel öğeleri). IDE içinde aynı anda üç tür projeleri karşılar **Çözüm Gezgini**.  
   
  Sürükle ve bırak açısından bakıldığında, aşağıdaki özelliklere her türde bir proje içinde uygulanması gereken **Çözüm Gezgini**:  
   
--   **Proje başvurusu tabanlı:** anahtar projenin'ın depolama alanındaki bir öğeye bir başvuru geçici olarak sürükleyerek noktasıdır. Başvuru-tabanlı bir proje bir taşıma işlemi için bir kaynak olarak davranırken, yalnızca proje öğesine başvuruyu kaldırmanız gerekir. Öğe sabit sürücüden gerçekten silinmemelidir. Başvuru-tabanlı bir proje taşıma (veya kopyalama) işlemi için hedef olarak davranırken, özgün kaynak öğeye bir başvuru öğesinin özel bir kopyasını yapmadan eklemelisiniz.  
+- **Proje başvurusu tabanlı:** anahtar projenin'ın depolama alanındaki bir öğeye bir başvuru geçici olarak sürükleyerek noktasıdır. Başvuru-tabanlı bir proje bir taşıma işlemi için bir kaynak olarak davranırken, yalnızca proje öğesine başvuruyu kaldırmanız gerekir. Öğe sabit sürücüden gerçekten silinmemelidir. Başvuru-tabanlı bir proje taşıma (veya kopyalama) işlemi için hedef olarak davranırken, özgün kaynak öğeye bir başvuru öğesinin özel bir kopyasını yapmadan eklemelisiniz.  
   
--   **Dizin tabanlı proje:** bir Sürükle ve bırak açısından bakıldığında, proje başvurusu yerine fiziksel öğenin sürüklemekte olduğu. Dizin tabanlı bir proje için bir taşıma işlemi kaynağı olarak davranırken sabit sürücüyü fiziksel silmenizi yanı sıra projeden kaldırma yukarı bitmelidir. Dizin tabanlı bir proje taşıma (veya kopyalama) işlemi için hedef olarak davranırken, hedef konumunda kaynak öğenin bir kopyasını olmanız gerekir.  
+- **Dizin tabanlı proje:** bir Sürükle ve bırak açısından bakıldığında, proje başvurusu yerine fiziksel öğenin sürüklemekte olduğu. Dizin tabanlı bir proje için bir taşıma işlemi kaynağı olarak davranırken sabit sürücüyü fiziksel silmenizi yanı sıra projeden kaldırma yukarı bitmelidir. Dizin tabanlı bir proje taşıma (veya kopyalama) işlemi için hedef olarak davranırken, hedef konumunda kaynak öğenin bir kopyasını olmanız gerekir.  
   
--   **Karma hedef proje:** doğasını (depolama alanındaki bir öğeye bir başvuru) ya da öğe sürüklenen öğe üzerinde bir Sürükle ve bırak açısından bakıldığında, bu tür bir proje davranışını temel alır. Başvurular ve fiziksel öğeleri için doğru davranışı üzerinde açıklanmıştır.  
+- **Karma hedef proje:** doğasını (depolama alanındaki bir öğeye bir başvuru) ya da öğe sürüklenen öğe üzerinde bir Sürükle ve bırak açısından bakıldığında, bu tür bir proje davranışını temel alır. Başvurular ve fiziksel öğeleri için doğru davranışı üzerinde açıklanmıştır.  
   
- Projesinde yalnızca bir tür varsa **Çözüm Gezgini**, sürükle ve bırak işlemleri basit olabilir. Her proje sistemi kendi sürükle-bırak davranışı tanımlama yeteneği olduğundan, tahmin edilebilir bir kullanıcı deneyimi sağlamak için (Windows Explorer sürükle-bırak davranışı göre) belirli yönergeleri izlenmesi gerekir:  
+  Projesinde yalnızca bir tür varsa **Çözüm Gezgini**, sürükle ve bırak işlemleri basit olabilir. Her proje sistemi kendi sürükle-bırak davranışı tanımlama yeteneği olduğundan, tahmin edilebilir bir kullanıcı deneyimi sağlamak için (Windows Explorer sürükle-bırak davranışı göre) belirli yönergeleri izlenmesi gerekir:  
   
--   Değiştirilmemiş bir sürükleme işlemi **Çözüm Gezgini** (ne zaman Ctrl ya da SHIFT tuşlarını tutulan), bir taşıma işlemi neden olur.  
+- Değiştirilmemiş bir sürükleme işlemi **Çözüm Gezgini** (ne zaman Ctrl ya da SHIFT tuşlarını tutulan), bir taşıma işlemi neden olur.  
   
--   Shift-sürükleme işlemi aynı zamanda bir taşıma işlemi neden olur.  
+- Shift-sürükleme işlemi aynı zamanda bir taşıma işlemi neden olur.  
   
--   CTRL tuşunu işlemi, bir kopyalama işleminde neden olur.  
+- CTRL tuşunu işlemi, bir kopyalama işleminde neden olur.  
   
--   Başvuru tabanlı ve karma proje sistemleri kaynak öğesine bir bağlantı (veya başvuru) ekleme kavramını destekler. Bu projeler, bir Sürükle ve bırak işleminin hedef olduğunda (zaman **Ctrl + Shift** basılı tutularak), projeye eklenen öğeye bir başvuru neden  
+- Başvuru tabanlı ve karma proje sistemleri kaynak öğesine bir bağlantı (veya başvuru) ekleme kavramını destekler. Bu projeler, bir Sürükle ve bırak işleminin hedef olduğunda (zaman **Ctrl + Shift** basılı tutularak), projeye eklenen öğeye bir başvuru neden  
   
- Tüm sürükle ve bırak işlemleri tabanlı başvurusu, dizin tabanlı ve karma projeleri arasında mantıklı birleşimleridir. Özellikle, taşıma tamamlandıktan sonra kaynak öğeyi silmek kaynak dizin tabanlı proje sahip olacağından bir directory tabanlı kaynak ve hedef başvuru tabanlı proje arasında taşıma işlemi izin vermek anlatabilirsiniz sorunlu. Hedef tabanlı başvurusu proje ardından silinmiş bir öğeyi başvurusuyla sonunda.  
+  Tüm sürükle ve bırak işlemleri tabanlı başvurusu, dizin tabanlı ve karma projeleri arasında mantıklı birleşimleridir. Özellikle, taşıma tamamlandıktan sonra kaynak öğeyi silmek kaynak dizin tabanlı proje sahip olacağından bir directory tabanlı kaynak ve hedef başvuru tabanlı proje arasında taşıma işlemi izin vermek anlatabilirsiniz sorunlu. Hedef tabanlı başvurusu proje ardından silinmiş bir öğeyi başvurusuyla sonunda.  
   
- Hedef projeye başvuru tabanlı kaynak öğenin bir bağımsız kopyası yapmaması gerekir çünkü bu proje türleri arasında bir kopyalama işlemine izin vermek anlatabilirsiniz yanıltıcıdır. Bir dizin tabanlı proje başvuruları kalıcı hale getirmek kuramadığı benzer şekilde, Ctrl + Üst karakter için bir hedef dizin tabanlı proje sürükleyerek izin verilmemesi. Sürükle ve bırak işlemi desteklenmediği durumlarda, IDE açılan izin vermeyin ve kullanıcı (işaretçi tabloda gösterilen) bırakma imleç görünmesi gerekir.  
+  Hedef projeye başvuru tabanlı kaynak öğenin bir bağımsız kopyası yapmaması gerekir çünkü bu proje türleri arasında bir kopyalama işlemine izin vermek anlatabilirsiniz yanıltıcıdır. Bir dizin tabanlı proje başvuruları kalıcı hale getirmek kuramadığı benzer şekilde, Ctrl + Üst karakter için bir hedef dizin tabanlı proje sürükleyerek izin verilmemesi. Sürükle ve bırak işlemi desteklenmediği durumlarda, IDE açılan izin vermeyin ve kullanıcı (işaretçi tabloda gösterilen) bırakma imleç görünmesi gerekir.  
   
- Sürükle ve bırak davranışı düzgün bir şekilde uygulamak için sürükleme kaynağı projenin doğası iletişim kurması gereken (örneğin, başvuru veya dizin tabanlı olduğu?) hedef projeye. Bu bilgiler, kaynak tarafından sunulan Pano biçimi ile belirtilir. Bir sürükleme (veya Pano kopyalama işlemi) kaynak olarak bir proje ya da sunmalıdır **CF_VSREFPROJECTITEM**S veya **CF_VSSTGPROJECTITEMS** sırasıyla proje başvurusu tabanlı olup olmamasına bağlı olarak ya da dizin tabanlı. Bu biçimler her ikisi de Windows için benzerdir aynı veri içeriğe sahip **CF_HDROP** listeleri dosya adları olan yerine dize, çift - şeylerdir biçimlendirme**NULL** listesisonlandırıldı **Projref** dizeleri (döndürülen **IVsSolution::GetProjrefOfItem** veya **:: GetProjrefOfProject** uygun şekilde).  
+  Sürükle ve bırak davranışı düzgün bir şekilde uygulamak için sürükleme kaynağı projenin doğası iletişim kurması gereken (örneğin, başvuru veya dizin tabanlı olduğu?) hedef projeye. Bu bilgiler, kaynak tarafından sunulan Pano biçimi ile belirtilir. Bir sürükleme (veya Pano kopyalama işlemi) kaynak olarak bir proje ya da sunmalıdır **CF_VSREFPROJECTITEM**S veya **CF_VSSTGPROJECTITEMS** sırasıyla proje başvurusu tabanlı olup olmamasına bağlı olarak ya da dizin tabanlı. Bu biçimler her ikisi de Windows için benzerdir aynı veri içeriğe sahip **CF_HDROP** listeleri dosya adları olan yerine dize, çift - şeylerdir biçimlendirme**NULL** listesisonlandırıldı **Projref** dizeleri (döndürülen **IVsSolution::GetProjrefOfItem** veya **:: GetProjrefOfProject** uygun şekilde).  
   
- Bir bırakma (veya Pano Yapıştırma işlemi) ve hedef olarak bir proje her ikisini de kabul etmelidir **CF_VSREFPROJECTITEMS** ve **CF_VSSTGPROJECTITEMS**, sürükle ve bırak işlemi tam işleme değişir ancak hedef proje ve kaynak proje doğasına bağlı olarak. Kaynak projenin doğası tarafından sunduğu olup olmadığını bildirir **CF_VSREFPROJECTITEMS** veya **CF_VSSTGPROJECTITEMS**. Bırakma hedefi kendi yapısı anlar ve bu nedenle bir taşıma, kopyalama olmadığını olarak kararlar için yeterli bilgiye sahip ya da bağlantı gerçekleştirilmelidir. Kullanıcı ayrıca Ctrl, SHIFT, veya hem Ctrl ve Shift tuşlarını tuşlarına basarak sürükle ve bırak işlemi gerçekleştirilmesi gereken değiştirir. Bırakma hedefi için hangi işlem önceden de gerçekleştirilmeyecek düzgün bir şekilde belirtmek önemlidir, **DragEnter** ve **DragOver** yöntemleri. **Çözüm Gezgini** kaynak ve hedef projeye aynı projede olup olmadığını otomatik olarak bilir.  
+  Bir bırakma (veya Pano Yapıştırma işlemi) ve hedef olarak bir proje her ikisini de kabul etmelidir **CF_VSREFPROJECTITEMS** ve **CF_VSSTGPROJECTITEMS**, sürükle ve bırak işlemi tam işleme değişir ancak hedef proje ve kaynak proje doğasına bağlı olarak. Kaynak projenin doğası tarafından sunduğu olup olmadığını bildirir **CF_VSREFPROJECTITEMS** veya **CF_VSSTGPROJECTITEMS**. Bırakma hedefi kendi yapısı anlar ve bu nedenle bir taşıma, kopyalama olmadığını olarak kararlar için yeterli bilgiye sahip ya da bağlantı gerçekleştirilmelidir. Kullanıcı ayrıca Ctrl, SHIFT, veya hem Ctrl ve Shift tuşlarını tuşlarına basarak sürükle ve bırak işlemi gerçekleştirilmesi gereken değiştirir. Bırakma hedefi için hangi işlem önceden de gerçekleştirilmeyecek düzgün bir şekilde belirtmek önemlidir, **DragEnter** ve **DragOver** yöntemleri. **Çözüm Gezgini** kaynak ve hedef projeye aynı projede olup olmadığını otomatik olarak bilir.  
   
- Proje öğeleri (örneğin, bir örnekten diğerine Devenv.exe) Visual Studio örneği üzerinde sürükleyerek özellikle olmayan desteklenmiyor. **Çözüm Gezgini** doğrudan bu devre dışı bırakır.  
+  Proje öğeleri (örneğin, bir örnekten diğerine Devenv.exe) Visual Studio örneği üzerinde sürükleyerek özellikle olmayan desteklenmiyor. **Çözüm Gezgini** doğrudan bu devre dışı bırakır.  
   
- Kullanıcının her zaman bir öğenin seçilmesi, hedef konuma sürükleyerek ve öğe kesilmeden önce aşağıdaki fare işaretçileri görünen gözleme bir Sürükle ve bırak işlemi etkisini belirlemek mümkün olması gerekir:  
+  Kullanıcının her zaman bir öğenin seçilmesi, hedef konuma sürükleyerek ve öğe kesilmeden önce aşağıdaki fare işaretçileri görünen gözleme bir Sürükle ve bırak işlemi etkisini belirlemek mümkün olması gerekir:  
   
 |Fare işaretçisi|Komut|Açıklama|  
 |-------------------|-------------|-----------------|  
@@ -583,33 +583,33 @@ ms.locfileid: "49192549"
   
  Bu ayrıntılar dikkate sürükleyerek uygularken dikkat edilmelidir **Çözüm Gezgini**:  
   
--   Çoklu seçim senaryolarına yönelik tasarım.  
+- Çoklu seçim senaryolarına yönelik tasarım.  
   
--   Dosya adları (tam yolu) hedef projede benzersiz olmalıdır veya açılır izin.  
+- Dosya adları (tam yolu) hedef projede benzersiz olmalıdır veya açılır izin.  
   
--   Klasör adları benzersiz olmalıdır (büyük küçük harf duyarsız) düzeyinde bunlar bırakılır.  
+- Klasör adları benzersiz olmalıdır (büyük küçük harf duyarsız) düzeyinde bunlar bırakılır.  
   
--   Açık veya kapalı (yukarıdaki senaryolarda geçmeyen) sürükleyin, zamanında dosyaları arasındaki davranış farklılıkları vardır.  
+- Açık veya kapalı (yukarıdaki senaryolarda geçmeyen) sürükleyin, zamanında dosyaları arasındaki davranış farklılıkları vardır.  
   
--   Üst düzey dosyaları klasörlerdeki dosyaları biraz daha farklı davranır.  
+- Üst düzey dosyaları klasörlerdeki dosyaları biraz daha farklı davranır.  
   
- Dikkat edilmesi gereken başka bir taşıma işlemleri için bir açık Tasarımcı veya düzenleyici sahip öğeleri nasıl ele alınacağını sorunudur. Beklenen bir davranış (tüm proje türleri için geçerlidir) aşağıdaki gibidir:  
+  Dikkat edilmesi gereken başka bir taşıma işlemleri için bir açık Tasarımcı veya düzenleyici sahip öğeleri nasıl ele alınacağını sorunudur. Beklenen bir davranış (tüm proje türleri için geçerlidir) aşağıdaki gibidir:  
   
-1.  Açık Düzenleyicisi/Tasarımcısı kaydedilmemiş değişiklikler yoksa Düzenleyicisi/Tasarımcı penceresinin sessizce kapatılmalıdır.  
+1. Açık Düzenleyicisi/Tasarımcısı kaydedilmemiş değişiklikler yoksa Düzenleyicisi/Tasarımcı penceresinin sessizce kapatılmalıdır.  
   
-2.  Açık Düzenleyicisi/Tasarımcısı Kaydedilmemiş değişiklikleriniz varsa, bu ardından sürükleme kaynağı görüntülemesini ve ardından kullanıcıdan aşağıdakine benzer bir isteme içeren pencereyi kapatmadan önce açık belgelerde kaydedilmemiş değişiklikleri kaydetmek için açılan için beklemesi gereken :  
+2. Açık Düzenleyicisi/Tasarımcısı Kaydedilmemiş değişiklikleriniz varsa, bu ardından sürükleme kaynağı görüntülemesini ve ardından kullanıcıdan aşağıdakine benzer bir isteme içeren pencereyi kapatmadan önce açık belgelerde kaydedilmemiş değişiklikleri kaydetmek için açılan için beklemesi gereken :  
   
-    ```  
-    ==========================================================   
-         One or more open documents have unsaved changes.  
-    Do you want to save uncommitted changes before proceeding?   
-                      [Yes]  [No]  [Cancel]   
-    ==========================================================  
-    ```  
+   ```  
+   ==========================================================   
+        One or more open documents have unsaved changes.  
+   Do you want to save uncommitted changes before proceeding?   
+                     [Yes]  [No]  [Cancel]   
+   ==========================================================  
+   ```  
   
- Bu kullanıcı, kopya hedef kolaylaştırır önce süren kaydetme fırsatı verir. Yeni bir yöntem **IVsHierarchyDropDataSource2::OnBeforeDropNotify** bu işlemesini etkinleştirmek için eklendi.  
+   Bu kullanıcı, kopya hedef kolaylaştırır önce süren kaydetme fırsatı verir. Yeni bir yöntem **IVsHierarchyDropDataSource2::OnBeforeDropNotify** bu işlemesini etkinleştirmek için eklendi.  
   
- Depolama alanında olduğu gibi hedef ardından öğesinin durumu kopyalayın (kullanıcı seçerseniz kaydedilmemiş değişiklikler düzenleyicide içermeden **Hayır**). Hedef, kopyalama tamamlandıktan sonra (içinde **IVsHierarchyDropDataSource::Drop**), kaynak taşıma işlemi silme bölümünü tamamlamak için fırsatı verilir (içinde **IVsHierarchyDropDataSource::O nDropNotify**).  
+   Depolama alanında olduğu gibi hedef ardından öğesinin durumu kopyalayın (kullanıcı seçerseniz kaydedilmemiş değişiklikler düzenleyicide içermeden **Hayır**). Hedef, kopyalama tamamlandıktan sonra (içinde **IVsHierarchyDropDataSource::Drop**), kaynak taşıma işlemi silme bölümünü tamamlamak için fırsatı verilir (içinde **IVsHierarchyDropDataSource::O nDropNotify**).  
   
- Tüm düzenleyicileri kaydedilmemiş değişikliklerle açık bırakılmalıdır. Kaydedilmemiş değişiklikler ile belgeler için tuşların Bu taşıma işlemi kopyalama kısmı gerçekleştirilir, ancak silme bölümü durdurulacak anlamına gelir. Kullanıcı seçtiğinde birden fazla seçim senaryosunda **Hayır**, kaydedilmemiş değişiklikler bu belgelerle kapalı kaldırıldı veya değiştirilmemesi gereken ancak kaydedilmemiş değişiklikler olmayanlar kapalı ve kaldırılması.
+   Tüm düzenleyicileri kaydedilmemiş değişikliklerle açık bırakılmalıdır. Kaydedilmemiş değişiklikler ile belgeler için tuşların Bu taşıma işlemi kopyalama kısmı gerçekleştirilir, ancak silme bölümü durdurulacak anlamına gelir. Kullanıcı seçtiğinde birden fazla seçim senaryosunda **Hayır**, kaydedilmemiş değişiklikler bu belgelerle kapalı kaldırıldı veya değiştirilmemesi gereken ancak kaydedilmemiş değişiklikler olmayanlar kapalı ve kaldırılması.
 

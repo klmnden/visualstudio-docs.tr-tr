@@ -15,12 +15,12 @@ ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1658f54cb50ca1d04668f177657b8aaa80592494
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a16a0ece140f205f8276f0b3ec7db6b2402d3537
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224191"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836781"
 ---
 # <a name="source-control-integration-overview"></a>Kaynak Denetimini Tümleştirmeye Genel Bakış
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Bu bölümde, Visual Studio kaynak denetimine tümleştirmek için iki şekilde 
   
  Kaynak Denetimi Eklentisi Kaynak Denetimi Eklentisi API kullanarak uygulamak için şu adımları izleyin:  
   
-1.  Belirtilen işlevleri uygulayan bir DLL'yi oluşturmak [kaynak denetimi eklentileri](../../extensibility/source-control-plug-ins.md).  
+1. Belirtilen işlevleri uygulayan bir DLL'yi oluşturmak [kaynak denetimi eklentileri](../../extensibility/source-control-plug-ins.md).  
   
-2.  Uygun kayıt defteri girişlerini yaparak DLL'yi kaydetme (açıklanan [nasıl yapılır: kaynak denetimi eklentisi yükleme](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
+2. Uygun kayıt defteri girişlerini yaparak DLL'yi kaydetme (açıklanan [nasıl yapılır: kaynak denetimi eklentisi yükleme](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
   
-3.  Kullanıcı Arabirimi ve kaynak denetimi bağdaştırıcısı paketi (kaynak denetimi eklentileri aracılığıyla kaynak denetimi işlevlerini işleyen Visual Studio bileşeni) tarafından istendiğinde görünen bir Yardımcısı oluşturma  
+3. Kullanıcı Arabirimi ve kaynak denetimi bağdaştırıcısı paketi (kaynak denetimi eklentileri aracılığıyla kaynak denetimi işlevlerini işleyen Visual Studio bileşeni) tarafından istendiğinde görünen bir Yardımcısı oluşturma  
   
- Komutuna yanıt olarak bir kaynak denetimi, Visual Studio IDE temel işlemleri için standart bir kullanıcı Arabirimi sunar ve bu bilgileri için kaynak denetimi eklentisi tanımlanan kaynak denetimi eklentisi API işlevleri aracılığıyla geçirir. Gelişmiş seçenekleri için kaynak denetimi eklentisi üzerinde kendi Arabirim sunmak için örneğin kaynak-denetimli bir proje için gözatma çağrılabilir. Bu kullanıcının kaynak denetimi ile ilgilenirken iki farklı olması olası kullanıcı Arabirimi stilleri ile gelebilir anlamına gelir: sunan Visual Studio kullanıcı Arabirimi ve kullanıcı arabirimini kaynak denetimi eklentisi sunar. Gelişmiş kaynak denetimi işlemleri ile en dikkat çeken budur.  
+   Komutuna yanıt olarak bir kaynak denetimi, Visual Studio IDE temel işlemleri için standart bir kullanıcı Arabirimi sunar ve bu bilgileri için kaynak denetimi eklentisi tanımlanan kaynak denetimi eklentisi API işlevleri aracılığıyla geçirir. Gelişmiş seçenekleri için kaynak denetimi eklentisi üzerinde kendi Arabirim sunmak için örneğin kaynak-denetimli bir proje için gözatma çağrılabilir. Bu kullanıcının kaynak denetimi ile ilgilenirken iki farklı olması olası kullanıcı Arabirimi stilleri ile gelebilir anlamına gelir: sunan Visual Studio kullanıcı Arabirimi ve kullanıcı arabirimini kaynak denetimi eklentisi sunar. Gelişmiş kaynak denetimi işlemleri ile en dikkat çeken budur.  
   
 ### <a name="drawbacks-to-implementing-a-source-control-plug-in"></a>Kaynak Denetimi Eklentisi uygulamak için dezavantajları  
   

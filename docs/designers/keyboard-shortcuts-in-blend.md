@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ae9d21808ba256612526e24b722717fed365a8b
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 119c896313adb94524417cde73624987dd96e279
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978000"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891836"
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Blend'de klavye kısayolları
+
 ## <a name="project-shortcuts"></a>Proje kısayolları
 
 |Bunu yapmak için|Bunu yapın|
@@ -46,7 +47,7 @@ ms.locfileid: "38978000"
 |Kes|**CTRL**+**X**|
 |Kopyala|**CTRL**+**C**|
 |Yapıştır|**CTRL**+**V**|
-|Sil|**Sil**|
+|Sil|**Delete**|
 |Metin (XAML görünümünde veya yalnızca JavaScript Düzenleyici) bulma|**CTRL**+**F**|
 |Metin (XAML görünümünde veya yalnızca JavaScript Düzenleyici) Sonrakini Bul|**F3** veya **Ctrl**+**H**|
 

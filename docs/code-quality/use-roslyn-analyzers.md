@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 971cbe690cc53b0e4035b951570ba8c7aba19313
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 47dc7d38a2ae9b842891d2e36aebd9b009297cbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512177"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817047"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Yapılandırma ve Roslyn çözümleyicisi kuralları kullanma
 
@@ -121,15 +121,15 @@ Kural ihlallerinin bastırmak için birden çok yolu vardır:
 
 Bir veya daha çok tanılamadan gizleyebilirsiniz **hata listesi** bastırmak için istediklerinizi seçerek ve ardından sağ tıklayarak ve seçerek **bastır** > **içinde kaynak**  veya **bastır** > **gizleme dosyasında**.
 
-   - Seçerseniz **içinde kaynak**, **Değişiklikleri Önizle** iletişim kutusu açılır ve C# önizlemesini [#pragma Uyarısı](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) veya Visual Basic [#DisableUyarısı](/dotnet/visual-basic/language-reference/directives/directives) kaynak koduna eklenen yönergesi.
+- Seçerseniz **içinde kaynak**, **Değişiklikleri Önizle** iletişim kutusu açılır ve C# önizlemesini [#pragma Uyarısı](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) veya Visual Basic [#DisableUyarısı](/dotnet/visual-basic/language-reference/directives/directives) kaynak koduna eklenen yönergesi.
 
-      ![#Pragma uyarısı kod dosyasına ekleme Önizleme](media/pragma-warning-preview.png)
+   ![#Pragma uyarısı kod dosyasına ekleme Önizleme](media/pragma-warning-preview.png)
 
-   - Seçerseniz **gizleme dosyası içinde**, **Değişiklikleri Önizle** iletişim kutusu açılır ve önizlemesini <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliği genel dosyasına eklenir.
+- Seçerseniz **gizleme dosyası içinde**, **Değişiklikleri Önizle** iletişim kutusu açılır ve önizlemesini <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliği genel dosyasına eklenir.
 
-      ![SuppressMessage özniteliğini gizleme dosyasına ekleme Önizleme](media/preview-changes-in-suppression-file.png)
+   ![SuppressMessage özniteliğini gizleme dosyasına ekleme Önizleme](media/preview-changes-in-suppression-file.png)
 
-   İçinde **Değişiklikleri Önizle** iletişim kutusunda **Uygula**.
+İçinde **Değişiklikleri Önizle** iletişim kutusunda **Uygula**.
 
 **Hata listesi** Tanılama veya ihlalleri, hem Canlı kod analizi ve yapı kuralı görüntüler. Derleme tanılama eski olduğundan, ve ihlali gidermek için kodu düzenlenmiş, ancak henüz yeniden, örneğin, bu Tanılama'ya başlatmayı önleyemez **hata listesi**. Ancak, tanılama Canlı analysis veya IntelliSense, her zaman geçerli kaynaklarıyla güncel olduğundan ve gelen gizlenebilir **hata listesi**. Gizleme seçeneğini sağ tıklayın veya bağlam menüsünde devre dışıysa, çünkü bir veya daha fazla tanılama Seçiminizdeki yapı olasıdır. Derleme tanılama seçimden hariç tutmak için geçiş **hata listesi** kaynak filtresinden **derleme + IntelliSense** için **yalnızca IntelliSense**. Ardından daha önce açıklandığı gibi yarayan istediğiniz Tanılama'yı seçin.
 

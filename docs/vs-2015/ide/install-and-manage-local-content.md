@@ -29,12 +29,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9cc71753fa34ceee7ba23cc63d45288d9b583b7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b8a67a9105314ad73076d3a8b12d51c23f83097
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193849"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832738"
 ---
 # <a name="install-and-manage-local-content"></a>Yerel İçeriği Yükleme ve Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,9 +109,9 @@ Microsoft Yardım Görüntüleyicisi'ni kullanarak, ekleme, kaldırma, güncelle
   
 #### <a name="to-update-local-content"></a>Yerel içeriği güncelleştirmek için  
   
--   Durum çubuğunun sağ alt köşesinde seçin **şimdi indirmek için buraya tıklayın** bağlantı.  
+- Durum çubuğunun sağ alt köşesinde seçin **şimdi indirmek için buraya tıklayın** bağlantı.  
   
- Güncelleştirme süreleri değişebilir ancak durum çubuğunda güncelleştirme ilerleme durumunu görüntüleyebilirsiniz.  
+  Güncelleştirme süreleri değişebilir ancak durum çubuğunda güncelleştirme ilerleme durumunu görüntüleyebilirsiniz.  
   
 ## <a name="moving-local-content"></a>Yerel içeriği taşıma  
  Yüklü içeriği yerel bilgisayarınızdan bir ağ paylaşımına veya başka bir bölüme, yerel bilgisayarınızda taşıyarak disk alanından kazanabilirsiniz.  

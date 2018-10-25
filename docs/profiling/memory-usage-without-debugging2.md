@@ -14,23 +14,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b19b0c8371cc4f3b496255e37f06f7b1cbc1fa9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 2c79184af7afa11e2008ff32ce2ffb2dedd19559
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859880"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827745"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcı olmadan bellek kullanımını analiz etme
 Kullanabileceğiniz **bellek kullanımı** aşağıdakileri yapmak için hata ayıklama olmadan aracı  
   
--   Uygulamanızın izleme bellek kullanım hakkı Visual Studio'da bir senaryo geliştirirken.  
+- Uygulamanızın izleme bellek kullanım hakkı Visual Studio'da bir senaryo geliştirirken.  
   
--   Uygulamanızın bellek durumunun ayrıntılı anlık görüntüler oluşturun.  
+- Uygulamanızın bellek durumunun ayrıntılı anlık görüntüler oluşturun.  
   
--   Bellek sorunlarının temel nedenini bulmak için anlık görüntüleri karşılaştırın.  
+- Bellek sorunlarının temel nedenini bulmak için anlık görüntüleri karşılaştırın.  
   
- Şu anda .NET Core uygulaması için bellek kullanımını ölçmek için hata ayıklayıcısı ekli aracını kullanmanız gerekir. Diğer yönetilen ve yerel uygulamalar için veya bilginiz olmaksızın hata ayıklayıcısı ekli aracını kullanabilirsiniz. Bu konudaki ekran görüntüleri bir UWP XAML uygulaması gösterir. JavaScript ve HTML kullanır UWP uygulamasında bellek kullanımını analiz etmek istiyorsanız, bkz: [(JavaScript) bellek kullanımını analiz etme](../profiling/javascript-memory.md).
+  Şu anda .NET Core uygulaması için bellek kullanımını ölçmek için hata ayıklayıcısı ekli aracını kullanmanız gerekir. Diğer yönetilen ve yerel uygulamalar için veya bilginiz olmaksızın hata ayıklayıcısı ekli aracını kullanabilirsiniz. Bu konudaki ekran görüntüleri bir UWP XAML uygulaması gösterir. JavaScript ve HTML kullanır UWP uygulamasında bellek kullanımını analiz etmek istiyorsanız, bkz: [(JavaScript) bellek kullanımını analiz etme](../profiling/javascript-memory.md).
   
 ## <a name="start-a-memory-usage-diagnostic-session"></a>Bir bellek kullanımı Tanılama oturumu başlatın  
   
@@ -69,13 +69,13 @@ Kullanabileceğiniz **bellek kullanımı** aşağıdakileri yapmak için hata ay
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a> Bellek kullanımı anlık görüntü görünümleri  
  Ayrıntılı raporlar Visual Studio'nun yeni bir pencerede açmak için anlık görüntü görünümleri kullanın. Anlık görüntü görünümleri iki tür vardır:  
   
--   A [anlık görüntü raporları ayrıntıları](#snapshot-reports) türlerinin ve örneklerinin bir anlık görüntüde gösterilmektedir.  
+- A [anlık görüntü raporları ayrıntıları](#snapshot-reports) türlerinin ve örneklerinin bir anlık görüntüde gösterilmektedir.  
   
--   A [anlık görüntü fark (fark) raporları](#snapshot-difference-diff-reports) türleri ve iki anlık görüntü örnekleri karşılaştırır.  
+- A [anlık görüntü fark (fark) raporları](#snapshot-difference-diff-reports) türleri ve iki anlık görüntü örnekleri karşılaştırır.  
   
- ![Anlık görüntü bağlantıları görüntüle](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
+  ![Anlık görüntü bağlantıları görüntüle](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
   
- Anlık görüntü görünümü bir resimde numaralı öğeler bellek kullanım raporu görünümlerini açmak bağlantılardır.  
+  Anlık görüntü görünümü bir resimde numaralı öğeler bellek kullanım raporu görünümlerini açmak bağlantılardır.  
   
 |||  
 |-|-|  

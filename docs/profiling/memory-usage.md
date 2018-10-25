@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6924ff846da2ca7fb3ad7591f6d1c8e07f89b0d
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: eeacfb15b02c19ea4a166fbc8511aab644d41ea5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624270"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861416"
 ---
 # <a name="profile-memory-usage-in-visual-studio"></a>Visual Studio’da bellek kullanımının profilini oluşturma
 Hata ayıklayıcıyla tümleştirilmiş ile hata ayıklarken bellek sızıntılarını ve verimsiz bellek Bul **bellek kullanımı** Tanılama aracı. Bir veya daha fazla atmanız bellek kullanımı aracı sağlar *anlık görüntüleri* nesne türlerinin bellek kullanımı etkilerini anlamanıza yardımcı olmak üzere yönetilen ve yerel bellek yığın. .NET, yerel veya karma mod (.NET ve yerel) uygulamaları, anlık toplayabilirsiniz.  
@@ -101,14 +101,14 @@ Birden çok anlık görüntüleri gerçekleştirdiğinizden, Özet Tablo hücrel
 
 Bellek kullanımını analiz etme için bellek kullanımının ayrıntılı bir rapor açılır bağlantılardan birine tıklayın:  
 
--   Geçerli anlık görüntü ve önceki anlık görüntü arasındaki fark görüntüsünün detaylarını görmeye değiştir bağlantısını sol tarafındaki oku seçin (![bellek artırmalarını](../profiling/media/prof-tour-mem-usage-up-arrow.png "bellek artırmalarını")). Kırmızı bir ok, bellek kullanımı ve düzenli bir Azalış gösterir için yeşil bir ok artış gösterir.
+- Geçerli anlık görüntü ve önceki anlık görüntü arasındaki fark görüntüsünün detaylarını görmeye değiştir bağlantısını sol tarafındaki oku seçin (![bellek artırmalarını](../profiling/media/prof-tour-mem-usage-up-arrow.png "bellek artırmalarını")). Kırmızı bir ok, bellek kullanımı ve düzenli bir Azalış gösterir için yeşil bir ok artış gösterir.
 
-    > [!TIP]
-    >  Bellek sorunlarını daha hızlı bir şekilde belirlemenize yardımcı olmak için fark raporları en genel numarasını artırılmış nesne türlerine göre sıralanır (değişiklik bağlantıya tıklayın **nesneler (fark)** sütun) veya en genel yığın boyutunu (tıklayın artar değişiklik bağlantıya **yığın boyutu (fark)** sütunu).
+  > [!TIP]
+  >  Bellek sorunlarını daha hızlı bir şekilde belirlemenize yardımcı olmak için fark raporları en genel numarasını artırılmış nesne türlerine göre sıralanır (değişiklik bağlantıya tıklayın **nesneler (fark)** sütun) veya en genel yığın boyutunu (tıklayın artar değişiklik bağlantıya **yığın boyutu (fark)** sütunu).
 
--   Yalnızca seçilen anlık görüntüsünün detaylarını görmeye olmayan değiştir bağlantısını tıklayın. 
+- Yalnızca seçilen anlık görüntüsünün detaylarını görmeye olmayan değiştir bağlantısını tıklayın. 
   
- Rapor, ayrı bir pencerede görüntülenir.   
+  Rapor, ayrı bir pencerede görüntülenir.   
   
 ### <a name="managed-types-reports"></a>Yönetilen türler raporları  
  Geçerli bağlantıyı seçin bir **nesneler (fark)** veya **ayırmalar (fark)** bellek kullanımı özeti tablodaki hücre.  
@@ -148,23 +148,23 @@ Bellek kullanımını analiz etme için bellek kullanımının ayrıntılı bir 
   
 ### <a name="change-diff-reports"></a>Değiştir (fark) raporları  
   
--   Özet tablosunu hücrede değiştir bağlantısını seçin **bellek kullanımı** sekmesinde **tanılama araçları** penceresi.  
+- Özet tablosunu hücrede değiştir bağlantısını seçin **bellek kullanımı** sekmesinde **tanılama araçları** penceresi.  
   
-     ![Bir değişiklik seçin &#40;DIF&#41;f rapor](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
+   ![Bir değişiklik seçin &#40;DIF&#41;f rapor](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
   
--   Anlık görüntüde seçin **Karşılaştırılacak** yönetilen veya yerel bir rapor listesi.  
+- Anlık görüntüde seçin **Karşılaştırılacak** yönetilen veya yerel bir rapor listesi.  
   
-     ![Bir anlık görüntüsünü karşılaştırmak için listeden seçin](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
+   ![Bir anlık görüntüsünü karşılaştırmak için listeden seçin](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
   
- Değişiklik raporu sütunları ekler (ile işaretlenen **(fark)**) temel anlık görüntü değeri ile karşılaştırma anlık görüntü arasındaki fark gösteren temel bir rapor. Bir yerel tür View fark raporu nasıl görünebileceği aşağıda verilmiştir:  
+  Değişiklik raporu sütunları ekler (ile işaretlenen **(fark)**) temel anlık görüntü değeri ile karşılaştırma anlık görüntü arasındaki fark gösteren temel bir rapor. Bir yerel tür View fark raporu nasıl görünebileceği aşağıda verilmiştir:  
   
- ![Yerel türler fark Veiw](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
+  ![Yerel türler fark Veiw](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
 ## <a name="blogs-and-videos"></a>Bloglar ve videolar  
 
-|         |         |
+| | |
 |---------|---------|
-|  ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin")  |    [Bir video izleyin](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) bellek kullanımı ve Visual Studio 2017'de CPU kullanımını analiz etme gösteren tanılama araçlarını kullanma. |
+| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | [Bir video izleyin](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) bellek kullanımı ve Visual Studio 2017'de CPU kullanımını analiz etme gösteren tanılama araçlarını kullanma. |
 
  [Hata ayıklama sırasında CPU ve bellek çözümleme](https://blogs.msdn.microsoft.com/visualstudio/2016/02/15/analyze-cpu-memory-while-debugging/)  
   

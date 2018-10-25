@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd2b4802d5078a007d6e2c4fab081b88481156de
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 35febfa4c4d13b3f5d3d279f7d1c35e96051d54b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677174"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867123"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Nasıl yapılır: çalışma sayfalarına NamedRange denetimleri ekleme
   Ekleyebileceğiniz <xref:Microsoft.Office.Tools.Excel.NamedRange> tasarım zamanında ve belge düzeyi projelere çalışma zamanında bir Microsoft Office Excel çalışma sayfasına denetimler.  
@@ -33,13 +33,13 @@ ms.locfileid: "35677174"
   
  Bu konuda, aşağıdaki görevleri açıklanmaktadır:  
   
--   [Tasarım zamanında NamedRange denetimleri ekleme](#designtime)  
+- [Tasarım zamanında NamedRange denetimleri ekleme](#designtime)  
   
--   [Çalışma zamanında bir belge düzeyi projede NamedRange denetimleri ekleme](#runtimedoclevel)  
+- [Çalışma zamanında bir belge düzeyi projede NamedRange denetimleri ekleme](#runtimedoclevel)  
   
--   [Çalışma zamanında VSTO eklenti projesinde NamedRange denetimleri ekleme](#runtimeaddin)  
+- [Çalışma zamanında VSTO eklenti projesinde NamedRange denetimleri ekleme](#runtimeaddin)  
   
- Hakkında daha fazla bilgi için <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimlerini, [NamedRange denetimi](../vsto/namedrange-control.md).  
+  Hakkında daha fazla bilgi için <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimlerini, [NamedRange denetimi](../vsto/namedrange-control.md).  
   
 ##  <a name="designtime"></a> Tasarım zamanında NamedRange denetimleri ekleme  
  Eklemek için çeşitli yollar vardır <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimlerini çalışma zamanında bir belge düzeyi projede: gelen Visual Studio'dan Excel'den **araç kutusu**, gelen ve giden **veri kaynakları** penceresi.  

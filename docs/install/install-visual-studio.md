@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b7e42c274bd1ef5bb2d04db2e856418ea6719f8
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 6eba5c5dc2ec357d9aaf6a5e8f9cdef18102b8da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384298"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856177"
 ---
 # <a name="install-visual-studio-2017"></a>Visual Studio 2017'yi yükleyin
 
@@ -63,11 +63,11 @@ Ardından, Visual Studio Yükleyicisi'ni yüklemek için önyükleyici dosyasın
 
 1. Öğesinden, **indirir** klasöründe eşleşen veya benzer bir aşağıdaki dosyalar önyükleyici çift tıklayın:
 
-  * **vs_enterprise.exe** için Visual Studio Enterprise
-  * **vs_professional.exe** Visual Studio Professional
-  * **vs_community.exe** Visual Studio Community için  <br><br>
+   * **vs_enterprise.exe** için Visual Studio Enterprise
+   * **vs_professional.exe** Visual Studio Professional
+   * **vs_community.exe** Visual Studio Community için  <br><br>
 
-  Bir kullanıcı hesabı denetimi bildirim alırsanız tıklayın **Evet**.
+   Bir kullanıcı hesabı denetimi bildirim alırsanız tıklayın **Evet**.
 
 2. Microsoft onaylamak için isteriz [lisans koşulları](https://visualstudio.microsoft.com/license-terms/) ve Microsoft [gizlilik bildirimi](https://privacy.microsoft.com/privacystatement). 
               **Devam**'a tıklayın.
@@ -80,7 +80,7 @@ Yükleyici yüklendikten sonra bu özellik kümeleri seçerek yüklemenizi özel
 
 1. Bulmak istediğiniz iş yükünü **Visual Studio'yu** ekran.
 
- ![Visual Studio 2017 Kurulum iletişim kutusundan bir iş yükünü seçme](../install/media/install-visual-studio-community.png)
+   ![Visual Studio 2017 Kurulum iletişim kutusundan bir iş yükünü seçme](../install/media/install-visual-studio-community.png)
 
      Örneğin, ".NET masaüstü geliştirme" iş yükünü seçin. Bu, temel kod düzenleme açın ve projeye gerek kalmadan herhangi bir klasörden kodu düzenleme olanağı 20'den dil için destek içerir ve tümleşik kaynak kod denetimi varsayılan çekirdek Düzenleyicisi ile birlikte gelir.
 
@@ -131,15 +131,17 @@ Daha fazla bilgi için [Visual Studio yükleme konumlarını değiştirme](chang
 
 ## <a name="step-8---start-developing"></a>8. adım - geliştirmeye başlayın
 
-1. Visual Studio yüklemesi tamamlandıktan sonra tıklayın **başlatma** düğmesi [Visual Studio ile geliştirmeye başlayın](../ide/get-started-developing-with-visual-studio.md).
+1. Visual Studio yüklemesi tamamlandıktan sonra tıklayın **başlatma** Visual Studio ile geliştirmeye başlamak için düğme.
 
 2. Tıklayın **dosya**ve ardından **yeni proje**.
 
-3. Bir proje türü seçin. <br><br>
-   Örneğin, [bir C++ uygulaması derleme](../ide/getting-started-with-cpp-in-visual-studio.md), tıklayın **yüklü**, genişletme **Visual C++** ve sonra oluşturmak istediğiniz C++ proje türü seçin. <br><br>
-   İçin [bir C# uygulaması derleme](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), tıklayın **yüklü**, genişletme **Visual C#** ve ardından oluşturmak istediğiniz C# proje türünü seçin.
+3. Bir proje türü seçin.
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)] 
+   Örneğin, [bir C++ uygulaması derleme](../ide/getting-started-with-cpp-in-visual-studio.md), tıklayın **yüklü**, genişletme **Visual C++** ve sonra oluşturmak istediğiniz C++ proje türü seçin.
+
+   İçin [yapı bir C# uygulama](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), tıklayın **yüklü**, genişletme **Visual C#** ve ardından C# proje derlemek istediğiniz türü.
+
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

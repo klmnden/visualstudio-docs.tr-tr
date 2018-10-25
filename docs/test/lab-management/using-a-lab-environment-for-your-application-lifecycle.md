@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 66ed9323b9298f588ad1f29267d88630fae0f39b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: dc7351c9449993b624569cc13ac5ced7d169b129
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321183"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837119"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Devops için bir laboratuvar ortamı kullanma
 
@@ -36,9 +36,9 @@ Ortak laboratuvar ortamı topolojilerinin örnekleri şunlardır:
 |![Bulut laboratuvar ortamı](../media/topology_cloud.png)| Bu laboratuar ortamını benzer özellikleri sağlar ve olarak özellikleri _sunucu topolojisi_, ancak fiziksel veya sanal bir yerel ortamda; çalışan kurulum süresini azaltabilir, basitleştirmek makineler gereksinimini ortadan kaldırır Bakım ve maliyeti en aza indirin. Birden çok Web siteleri ve sanal makineler, özel ağı ayarlamak hızlı ve kolay bir bulut ortamında Microsoft Azure gibi.|
 |![İstemci-sunucu laboratuvar ortamı](../media/topology_clientserver.png)| Bu laboratuar ortamını sahip bir *istemci-sunucu topolojisi*, genellikle istemci ve sunucu bileşenlerini içeren bir uygulamayı test etmek için kullanılır. Bir istemci/sunucu topolojisinde, uygulamanızı test etmek için kullanılan istemci ve sunucu makinelerini, Laboratuvar ortamınızda tümü. Bu topoloji kullandığınızda, testlerinizi etkiler her makineden test verilerini toplayabilir.|
 
-|   |   |
+| | |
 |---|---|
-|  ![video kamera simgesini film](../../install/media/video-icon.png)  |    [Bir video izleyin](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) Laboratuvar ortamlarını test için yönetme. |
+| ![video kamera simgesini film](../../install/media/video-icon.png) | [Bir video izleyin](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) Laboratuvar ortamlarını test için yönetme. |
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Bulut ile Azure işlem hatları veya Team Foundation Server derleme ve yayın kullanın
 
@@ -95,7 +95,7 @@ SCVMM hakkında daha fazla bilgi için bkz. [Virtual Machine Manager](/azure/dev
 Standart ortamlar hem SCVMM ortamları aynı özelliklerin çoğunu destekler. Ancak, dikkate alınması gereken bazı önemli farklar vardır. Aşağıdaki tabloda, standart ortamlar hem SCVMM ortamları için kullanılabilen özellikler karşılaştırılmıştır.
 
 |Özellik|SCVMM ortamları|Standart ortamları|
-|----------------|------------------------|---------------------------|
+|-|------------------------|-|
 |**Test etme**|||
 |El ile testleri çalıştırma|Desteklenir|Desteklenir|
 |Kodlanmış UI ve diğer otomatikleştirilmiş testleri çalıştırma|Desteklenir|Desteklenir|
@@ -117,7 +117,7 @@ Standart ortamlar hem SCVMM ortamları aynı özelliklerin çoğunu destekler. A
 Devam etmeden önce bilmeniz bazı ek kavramları şunlardır:
 
 |Terim|Açıklama|
-|----------|-----------------|
+|-|-----------------|
 |Laboratuvar Merkezi|Microsoft Test oluşturduğunuz ve Laboratuvar ortamlarını Yöneticisi alan.|
 |Azure DevOps projesi Laboratuvar|Bağlanabilmesi için bunları ayarlayın ve sanal makinelerini çalıştırmak için laboratuvar ortamlarını koleksiyonu.|
 |Azure DevOps projesi kitaplığı|Bir arşiv depolanan sanal makineler, şablonlar ve projenizin konak grubuna içe saklı laboratuvar ortamları. SCVMM ortamları ile kitaplığınızda öğeleri kullanabilirsiniz; Ancak, bunları doğrudan standart bir ortama ekleyemezsiniz. Kitaplığınızda öğeleri çalıştırılamıyor; Bunun yerine, bunları yeni bir ortamı dağıtmak için kullanın.|

@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b23d7da819a0403366260b240fa095defd0f120a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 91f552ce30030abeae6af0d63763625e711d32e2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511415"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875105"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>İzlenecek yol:, Yeniden imzalama gerektirmeyen ve marka bilgisini koruyan bir ClickOnce uygulamasını el ile dağıtma
 Oluştururken bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama ve ardından bu yayımlamak için bir müşteri verin ve dağıtmak, müşteri geleneksel dağıtım bildirimini güncelleştir ve yeniden oturum oluşturdu. Çoğu durumda tercih edilen yöntem, hala olmakla birlikte, .NET Framework 3.5 oluşturmanızı sağlayan [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yeni bir dağıtım bildirimi yeniden oluşturmak zorunda kalmadan, müşteriler tarafından dağıtılabilir dağıtımlar. Daha fazla bilgi için [dağıtma ClickOnce uygulamaları için teslim etmeden test ve üretim sunucuları](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
@@ -48,36 +48,36 @@ Oluştururken bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
   
 ### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageexe"></a>Birden çok dağıtım ve Mage.exe kullanarak marka desteği ile ClickOnce uygulamasında dağıtmak için  
   
-1.  Visual Studio komut istemi açın veya [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] komut istemi ve depolama dizinine, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dosyaları.  
+1. Visual Studio komut istemi açın veya [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] komut istemi ve depolama dizinine, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dosyaları.  
   
-2.  Geçerli dağıtım sürümünün adını bir dizin oluşturun. Bu uygulamayı ilk kez ise, büyük olasılıkla seçeceğiniz **1.0.0.0**.  
+2. Geçerli dağıtım sürümünün adını bir dizin oluşturun. Bu uygulamayı ilk kez ise, büyük olasılıkla seçeceğiniz **1.0.0.0**.  
   
-    > [!NOTE]
-    >  Dağıtımınızın sürümünden uygulama dosyalarınızı sürümünden farklı olabilir.  
+   > [!NOTE]
+   >  Dağıtımınızın sürümünden uygulama dosyalarınızı sürümünden farklı olabilir.  
   
-3.  Adlı bir alt dizin oluşturma **bin** ve yürütülebilir dosyalar, derlemeleri, kaynakları ve veri dosyaları dahil olmak üzere tüm uygulama dosyalarınızı buraya kopyalayın.  
+3. Adlı bir alt dizin oluşturma **bin** ve yürütülebilir dosyalar, derlemeleri, kaynakları ve veri dosyaları dahil olmak üzere tüm uygulama dosyalarınızı buraya kopyalayın.  
   
-4.  Mage.exe çağrısı ile bir uygulama bildirimi oluşturur.  
+4. Mage.exe çağrısı ile bir uygulama bildirimi oluşturur.  
   
-    ```cmd  
-    mage -New Application -ToFile 1.0.0.0\WindowsFormsApp1.exe.manifest -Name "Windows Forms App 1" -Version 1.0.0.0 -FromDirectory 1.0.0.0\bin -UseManifestForTrust true -Publisher "A. Datum Corporation"  
-    ```  
+   ```cmd  
+   mage -New Application -ToFile 1.0.0.0\WindowsFormsApp1.exe.manifest -Name "Windows Forms App 1" -Version 1.0.0.0 -FromDirectory 1.0.0.0\bin -UseManifestForTrust true -Publisher "A. Datum Corporation"  
+   ```  
   
-5.  Uygulama bildirimi dijital sertifikanızla imzalayın.  
+5. Uygulama bildirimi dijital sertifikanızla imzalayın.  
   
-    ```cmd  
-    mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx  
-    ```  
+   ```cmd  
+   mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx  
+   ```  
   
-6.  Bir çağrıyla dağıtım bildirimi oluşturmak *Mage.exe*. Varsayılan olarak, *Mage.exe* işaretler, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım yüklü bir uygulama, BT'nin hem çevrimiçi çalıştırabilmeniz için ve çevrimdışı olarak. Kullanıcının çevrimiçi olduğunda uygulama kullanılabilir yapmak için `-i` bağımsız değişken değerini `f`. Bu uygulama birden çok dağıtım özelliğinden yararlanın dışlayın `-providerUrl` bağımsız değişkeni *Mage.exe*. (Dışlama .NET Framework sürüm 3.5, önceki sürümlerinde `-providerUrl` için çevrimdışı bir uygulama bir hataya neden olur.)  
+6. Bir çağrıyla dağıtım bildirimi oluşturmak *Mage.exe*. Varsayılan olarak, *Mage.exe* işaretler, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım yüklü bir uygulama, BT'nin hem çevrimiçi çalıştırabilmeniz için ve çevrimdışı olarak. Kullanıcının çevrimiçi olduğunda uygulama kullanılabilir yapmak için `-i` bağımsız değişken değerini `f`. Bu uygulama birden çok dağıtım özelliğinden yararlanın dışlayın `-providerUrl` bağımsız değişkeni *Mage.exe*. (Dışlama .NET Framework sürüm 3.5, önceki sürümlerinde `-providerUrl` için çevrimdışı bir uygulama bir hataya neden olur.)  
   
-    ```cmd  
-    mage -New Deployment -ToFile WindowsFormsApp1.application -Name "Windows Forms App 1" -Version 1.0.0.0 -AppManifest 1.0.0.0\WindowsFormsApp1.manifest   
-    ```  
+   ```cmd  
+   mage -New Deployment -ToFile WindowsFormsApp1.application -Name "Windows Forms App 1" -Version 1.0.0.0 -AppManifest 1.0.0.0\WindowsFormsApp1.manifest   
+   ```  
   
-7.  Dağıtım bildirimi oturum yok.  
+7. Dağıtım bildirimi oturum yok.  
   
-8.  Uygulama, ağ üzerinde dağıtan müşteriye, tüm dosyaları sağlar.  
+8. Uygulama, ağ üzerinde dağıtan müşteriye, tüm dosyaları sağlar.  
   
 9. Bu noktada, müşteri, dağıtım bildirimini kendi kendinden oluşturulmuş bir sertifika ile oturum açmanız gerekir. Müşteri, Adventure Works adlı bir şirketin çalışırsa, örneğin, kendisinin otomatik olarak imzalanan sertifika kullanarak bir oluşturabilirsiniz *MakeCert.exe* aracı. Ardından, *Pvk2pfx.exe* aracı tarafından oluşturulan dosyaları birleştirmek için *MakeCert.exe* geçirilebilir bir PFX dosyasına *Mage.exe*.  
   
@@ -96,28 +96,28 @@ Oluştururken bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
   
 ### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageuiexe"></a>Birden çok dağıtım ve MageUI.exe kullanarak marka desteği ile ClickOnce uygulamasında dağıtmak için  
   
-1.  Visual Studio komut istemi açın veya [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] komut istemi ve depolama dizinine gidin, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dosyaları.  
+1. Visual Studio komut istemi açın veya [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] komut istemi ve depolama dizinine gidin, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dosyaları.  
   
-2.  Adlı bir alt dizin oluşturma **bin** ve yürütülebilir dosyalar, derlemeleri, kaynakları ve veri dosyaları dahil olmak üzere tüm uygulama dosyalarınızı buraya kopyalayın.  
+2. Adlı bir alt dizin oluşturma **bin** ve yürütülebilir dosyalar, derlemeleri, kaynakları ve veri dosyaları dahil olmak üzere tüm uygulama dosyalarınızı buraya kopyalayın.  
   
-3.  Geçerli dağıtım sürümünün adını bir dizin oluşturun. Bu uygulamayı ilk kez ise, büyük olasılıkla seçeceğiniz **1.0.0.0**.  
+3. Geçerli dağıtım sürümünün adını bir dizin oluşturun. Bu uygulamayı ilk kez ise, büyük olasılıkla seçeceğiniz **1.0.0.0**.  
   
-    > [!NOTE]
-    >  Dağıtımınızın sürümünden uygulama dosyalarınızı sürümünden farklı olabilir.  
+   > [!NOTE]
+   >  Dağıtımınızın sürümünden uygulama dosyalarınızı sürümünden farklı olabilir.  
   
-4.  Taşıma \\ **bin** 2. adımda oluşturduğunuz dizine dizin.  
+4. Taşıma \\ **bin** 2. adımda oluşturduğunuz dizine dizin.  
   
-5.  Grafik aracını Başlat *MageUI.exe*.  
+5. Grafik aracını Başlat *MageUI.exe*.  
   
-    ```cmd  
-    MageUI.exe  
-    ```  
+   ```cmd  
+   MageUI.exe  
+   ```  
   
-6.  Seçerek yeni bir uygulama bildirimi oluşturmak **dosya**, **yeni**, **uygulama bildirimi** menüsünde.  
+6. Seçerek yeni bir uygulama bildirimi oluşturmak **dosya**, **yeni**, **uygulama bildirimi** menüsünde.  
   
-7.  Varsayılan **adı** sekmesinde, bu dağıtımın adını ve sürüm numarasını girin. Ayrıca, bir değer sağlamak **yayımcı**, doğrulayacak uygulamanın kısayol bağlantısı öğesinin Başlangıç menüsündeki klasör adı olarak dağıtıldığında.  
+7. Varsayılan **adı** sekmesinde, bu dağıtımın adını ve sürüm numarasını girin. Ayrıca, bir değer sağlamak **yayımcı**, doğrulayacak uygulamanın kısayol bağlantısı öğesinin Başlangıç menüsündeki klasör adı olarak dağıtıldığında.  
   
-8.  Seçin **uygulama seçenekleri** sekmesine **kullanmak, uygulama bildirimi güven bilgi**. Bu üçüncü taraf markayı olanak tanıyacak [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama.  
+8. Seçin **uygulama seçenekleri** sekmesine **kullanmak, uygulama bildirimi güven bilgi**. Bu üçüncü taraf markayı olanak tanıyacak [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama.  
   
 9. Seçin **dosyaları** sekmesine **Gözat** düğmesinin yanındaki **uygulama dizini** metin kutusu.  
   

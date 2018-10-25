@@ -26,12 +26,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 70cf261f2d235a8ed1b27550acad916cf5a355a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4282ce38671e2270c1e91d70df8968d790c54a22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265648"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891771"
 ---
 # <a name="publishing-clickonce-applications"></a>ClickOnce Uygulamalarını Yayımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,15 +43,15 @@ Yayımlama sırasında bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)
 ## <a name="publish-wizard"></a>Yayımlama Sihirbazı  
  Uygulamanızı yayımlamak için temel ayarları ayarlamak için Yayımla Sihirbazı'nı kullanabilirsiniz. Bu, yayımlama aşağıdaki özellikleri içerir:  
   
--   Yayımlama klasörü konumu - Visual Studio (yerel bilgisayar, ağ dosya paylaşımı, FTP sunucusu veya Web sitesi) dosyaları burada kopyalar  
+- Yayımlama klasörü konumu - Visual Studio (yerel bilgisayar, ağ dosya paylaşımı, FTP sunucusu veya Web sitesi) dosyaları burada kopyalar  
   
--   Yükleme klasörü konumu - son kullanıcıların yükleme yapacakları (ağ dosya paylaşımı, FTP sunucusu, Web sitesi, CD/DVD kaynağı)  
+- Yükleme klasörü konumu - son kullanıcıların yükleme yapacakları (ağ dosya paylaşımı, FTP sunucusu, Web sitesi, CD/DVD kaynağı)  
   
--   Çevrimiçi veya çevrimdışı kullanılabilirliği - son kullanıcıların uygulama ile veya bir ağ bağlantısı olmadan erişebilir.  
+- Çevrimiçi veya çevrimdışı kullanılabilirliği - son kullanıcıların uygulama ile veya bir ağ bağlantısı olmadan erişebilir.  
   
--   Güncelleştirme sıklığı - ne sıklıkta uygulama için yeni güncelleştirmeleri denetler.  
+- Güncelleştirme sıklığı - ne sıklıkta uygulama için yeni güncelleştirmeleri denetler.  
   
- Daha fazla bilgi için [nasıl yapılır: yayımlama sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+  Daha fazla bilgi için [nasıl yapılır: yayımlama sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 ## <a name="publish-page"></a>Yayımlama Sayfası  
  **Yayımla** sayfasının **Proje Tasarımcısı** ClickOnce dağıtım özelliklerini yapılandırmak için kullanılır. Aşağıdaki tabloda konularını listeler  

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29a7bec902f28c67e5e6d6e9d63d9a85239c32c1
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: fb497953775bc283dcc908e9617fd7692fc76afe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586371"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861585"
 ---
 # <a name="refactor-python-code"></a>Python kodu yeniden düzenleyin
 
@@ -30,27 +30,27 @@ Visual Studio otomatik olarak dönüştürmek ve Python kaynak kodunuzu Temizlem
 ## <a name="rename"></a>Rename
 
 1. Seçin ve yeniden adlandırmak istediğiniz tanımlayıcısı sağ **Yeniden Adlandır**, o tanımlayıcıda giriş işaretini yerleştirin veya seçin **Düzenle** > **yeniden düzenleyin**  >  **Yeniden Adlandır** menü komutu (**F2**).
-1. İçinde **Yeniden Adlandır** görüntülenen iletişim tanıtıcısı ve seçin için yeni bir ad girin **Tamam**:
+2. İçinde **Yeniden Adlandır** görüntülenen iletişim tanıtıcısı ve seçin için yeni bir ad girin **Tamam**:
 
-  ![Yeni bir tanımlayıcı ad sor yeniden adlandır](media/code-refactor-rename-1.png)
+   ![Yeni bir tanımlayıcı ad sor yeniden adlandır](media/code-refactor-rename-1.png)
 
-1. Sonraki iletişim kutusunda, dosyaları ve kodunuzu yeniden adlandırma uygulanacağı durumlarda seçin; Değişikliğinizi önizlemek için herhangi tek bir örneğine seçin:
+3. Sonraki iletişim kutusunda, dosyaları ve kodunuzu yeniden adlandırma uygulanacağı durumlarda seçin; Değişikliğinizi önizlemek için herhangi tek bir örneğine seçin:
 
-  ![Yeniden adlandırma değişiklikleri uygulamak yeri seçmek için iletişim kutusu](media/code-refactor-rename-2.png)
+   ![Yeniden adlandırma değişiklikleri uygulamak yeri seçmek için iletişim kutusu](media/code-refactor-rename-2.png)
 
-1. Seçin **Uygula** kaynak kod dosyalarınızı değişiklik yapma. (Bu eylem geri alınabilir.)
+4. Seçin **Uygula** kaynak kod dosyalarınızı değişiklik yapma. (Bu eylem geri alınabilir.)
 
 ## <a name="extract-method"></a>Ayıklama metodu
 
 1. Kod veya ayrı bir yöntem ayıklamak için ifade satırları seçin.
-1. Seçin **Düzenle** > **yeniden düzenleme** > **yöntemi Ayıkla** menü komutu ya da türü **Ctrl** + **R** > **M**.
-1. Görüntülenen iletişim kutusunda, ayıklayın ve herhangi bir kapanış değişkeni konumu gösteren yeni bir yöntem adı girin. Değişkenleri Kapatılmak üzere işaretli değil yöntem bağımsız değişkenleri ile etkinleştirilir:
+2. Seçin **Düzenle** > **yeniden düzenleme** > **yöntemi Ayıkla** menü komutu ya da türü **Ctrl** + **R** > **M**.
+3. Görüntülenen iletişim kutusunda, ayıklayın ve herhangi bir kapanış değişkeni konumu gösteren yeni bir yöntem adı girin. Değişkenleri Kapatılmak üzere işaretli değil yöntem bağımsız değişkenleri ile etkinleştirilir:
 
-  ![İletişim yöntemi Ayıkla](media/code-refactor-extract-method-1.png)
+   ![İletişim yöntemi Ayıkla](media/code-refactor-extract-method-1.png)
 
-1. Seçin **Tamam** ve kodu uygun şekilde değiştirilir:
+4. Seçin **Tamam** ve kodu uygun şekilde değiştirilir:
 
-  ![Yöntemi ayıklama etkisi](media/code-refactor-extract-method-2.png)
+   ![Yöntemi ayıklama etkisi](media/code-refactor-extract-method-2.png)
 
 ## <a name="add-import"></a>İçeri aktarma ekleyin
 

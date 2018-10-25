@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85b34fd85e8449949bb1e96efc1dd79aacbc1bd9
-ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
+ms.openlocfilehash: 6d43e1a04570d68ce69f283cde264280fc24865a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48243958"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846869"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Visual Studio'da IntelliTrace geri adım atmayı kullanarak önceki uygulama durumlarını İnceleme
 
@@ -106,17 +106,17 @@ Genel Adımlama performansı üzerindeki etkisini, uygulamaya bağlıdır. Bir a
 * Windows 10 Fall Creators Update (RS3) eski Windows sürümlerinde IntelliTrace olayları ve anlık görüntüler modu kullanıyorsanız ve uygulamayı hata ayıklama platformu hedefi için x86 ayarlanırsa IntelliTrace anlık görüntüler almaz.
 
     Geçici çözümler:
-    * Windows 10 Yıldönümü Güncelleştirmesi (RS1) ve 10.0.14393.2273, önceki bir sürümü kullanıyorsanız [KB4103720 yükleme](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
-    * Windows 10 Creators Update (RS2) ve 10.0.15063.1112, önceki bir sürümü kullanıyorsanız [KB4103722 yükleme](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
-    * Yükleme veya Windows 10 Fall Creators Update (RS3) yükseltin. 
-    * Alternatif olarak: 
-        1. Visual Studio yükleyicisinden masaüstü için VC++ 2015.3 v140 araç seti (x86, x64) bileşenini yükleyin.
-        2. Hedef uygulamayı derleyin.
-        3. Komut satırından, editbin aracını ayarlamak için kullanın. `Largeaddressaware` hedef yürütülebilir için bayrak. Örneğin, (yol güncelleştirdikten sonra) Bu komutu kullanabilirsiniz: "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" / largeaddressaware "C:\Path\To\Application\app.exe".
-        4. Hata ayıklamayı başlatmak için basın **F5**. Artık, hata ayıklama adımlarında ve kesme noktalarında anlık görüntü alınır.
+  * Windows 10 Yıldönümü Güncelleştirmesi (RS1) ve 10.0.14393.2273, önceki bir sürümü kullanıyorsanız [KB4103720 yükleme](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
+  * Windows 10 Creators Update (RS2) ve 10.0.15063.1112, önceki bir sürümü kullanıyorsanız [KB4103722 yükleme](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
+  * Yükleme veya Windows 10 Fall Creators Update (RS3) yükseltin. 
+  * Alternatif olarak: 
+    1. Visual Studio yükleyicisinden masaüstü için VC++ 2015.3 v140 araç seti (x86, x64) bileşenini yükleyin.
+    2. Hedef uygulamayı derleyin.
+    3. Komut satırından, editbin aracını ayarlamak için kullanın. `Largeaddressaware` hedef yürütülebilir için bayrak. Örneğin, (yol güncelleştirdikten sonra) Bu komutu kullanabilirsiniz: "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" / largeaddressaware "C:\Path\To\Application\app.exe".
+    4. Hata ayıklamayı başlatmak için basın **F5**. Artık, hata ayıklama adımlarında ve kesme noktalarında anlık görüntü alınır.
 
-        > [!Note]
-        > `Largeaddressaware` Yürütülebilirin değişikliklerle yeniden derlendiği her zaman bayrağı ayarlanmalıdır.
+       > [!Note]
+       > `Largeaddressaware` Yürütülebilirin değişikliklerle yeniden derlendiği her zaman bayrağı ayarlanmalıdır.
 
 * Uygulamanın işlem anlık görüntüsünü kullanan bir kalıcı bellek işlemeli dosya bir uygulama alındığında anlık görüntü ile işlem (hatta üst işleme kilidin piyasaya sonra) özel bir kilit üzerinde bellekle eşlenen dosya tutar. Diğer işlemlerin okunan ancak, bellekle eşlenen dosyasına yazmayacak koruyabilmeyi.
 

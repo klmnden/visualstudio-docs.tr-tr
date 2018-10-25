@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1d1f16efc07f45fc3b2b80a58b50e4f28b1d57de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d29a501ef6f55c835efd68e474bc39a847f745d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302152"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837576"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Nasıl yapılır: Etki Alanına Özgü bir Dilde Standart Menü Komutunu Değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ DSL'nizi içinde otomatik olarak tanımlanan standart komutlardan bazıları dav
   
  Özetle, komutu değiştirmek için şunu yazın:  
   
-1.  [Hangi değiştirebilirsiniz komutları bulma](#what).  
+1. [Hangi değiştirebilirsiniz komutları bulma](#what).  
   
-2.  [Uygun komut kümesi sınıfının bir kısmi bildirimi oluşturma](#extend).  
+2. [Uygun komut kümesi sınıfının bir kısmi bildirimi oluşturma](#extend).  
   
-3.  [Geçersiz kılma ProcessOnStatus ve ProcessOnMenu yöntemleri](#override) komutu.  
+3. [Geçersiz kılma ProcessOnStatus ve ProcessOnMenu yöntemleri](#override) komutu.  
   
- Bu konu, bu yordamı açıklar.  
+   Bu konu, bu yordamı açıklar.  
   
 > [!NOTE]
 >  Menü komutlarınızı oluşturmak istiyorsanız, bkz. [nasıl yapılır: kısayol menüsüne komut ekleme](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
@@ -139,19 +139,19 @@ protected override void ProcessOnMenuDeleteCommand()
 ### <a name="writing-the-code-of-the-methods"></a>Yöntemlerin kodunu yazma  
  Aşağıdaki parça bu yöntemleri içinde sık kullanışlıdır:  
   
--   `this.CurrentSelection`. Kullanıcının sağ şekli şekiller ve bağlayıcılar bu listede her zaman dahil edilir. Diyagram kullanıcı diyagramın boş bir kısmına tıklarsa, listeyi yalnızca üyesidir.  
+- `this.CurrentSelection`. Kullanıcının sağ şekli şekiller ve bağlayıcılar bu listede her zaman dahil edilir. Diyagram kullanıcı diyagramın boş bir kısmına tıklarsa, listeyi yalnızca üyesidir.  
   
--   `this.IsDiagramSelected()` - `true` Kullanıcı diyagramın boş bir kısmına tıkladıysanız.  
+- `this.IsDiagramSelected()` - `true` Kullanıcı diyagramın boş bir kısmına tıkladıysanız.  
   
--   `this.IsCurrentDiagramEmpty()`  
+- `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()` -Kullanıcı birden çok şekil seçmediniz  
+- `this.IsSingleSelection()` -Kullanıcı birden çok şekil seçmediniz  
   
--   `this.SingleSelection` -Şekil veya kullanıcı sağ diyagramı  
+- `this.SingleSelection` -Şekil veya kullanıcı sağ diyagramı  
   
--   `shape.ModelElement as MyLanguageElement` -bir şekil tarafından temsil edilen model öğesi.  
+- `shape.ModelElement as MyLanguageElement` -bir şekil tarafından temsil edilen model öğesi.  
   
- Nesneler ve bağlantılar oluşturma ve gezinme öğesi başka bir öğe hakkında daha fazla bilgi için bkz: [gezinme ve güncelleştirme Program kodundaki modeli](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+  Nesneler ve bağlantılar oluşturma ve gezinme öğesi başka bir öğe hakkında daha fazla bilgi için bkz: [gezinme ve güncelleştirme Program kodundaki modeli](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.ComponentModel.Design.MenuCommand>   

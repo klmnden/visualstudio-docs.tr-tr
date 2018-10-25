@@ -15,12 +15,12 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c051425f2d3ae131362c2d95494ed0edbef5353e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca63b6a8c973b33a9dffc98966fd0622c0a5407a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246057"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868436"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Yalıtılmış kabuğun öğeleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Kayıt defteri ayarları, çalışma zamanı ayarlarını ve uygulama giriş nok
 ## <a name="run-time-settings"></a>Çalışma zamanı ayarları  
  Bir kullanıcının yalıtılmış Kabuk uygulaması başladığında Visual Studio Kabuğu başlangıç giriş noktası çağırır. Uygulama ayarları, uygulamanız başlatıldığında, şu şekilde tanımlanır:  
   
-1.  Visual Studio Kabuğu uygulama kayıt defteri belirli anahtarlar için denetler. Bir anahtarı ayarı, başlangıç giriş noktası çağrısında belirtilirse, bu değeri kayıt defteri değerini geçersiz kılar.  
+1. Visual Studio Kabuğu uygulama kayıt defteri belirli anahtarlar için denetler. Bir anahtarı ayarı, başlangıç giriş noktası çağrısında belirtilirse, bu değeri kayıt defteri değerini geçersiz kılar.  
   
-2.  Kayıt defteri ya da giriş noktası parametresi bir ayarın değerini belirtir ve ayarı için varsayılan değer kullanılır.  
+2. Kayıt defteri ya da giriş noktası parametresi bir ayarın değerini belirtir ve ayarı için varsayılan değer kullanılır.  
   
- Bir kullanıcı, komut satırından, uygulama başlatıldığında, tüm komut satırı anahtarları bunları Devenv yaptığı aynı şekilde davranır Visual Studio Kabuğu geçirilir. Devenv anahtarları hakkında daha fazla bilgi için bkz. [Devenv komut satırı anahtarları](../ide/reference/devenv-command-line-switches.md) ve [VSPackage geliştirme için Devenv komut satırı anahtarları](../extensibility/devenv-command-line-switches-for-vspackage-development.md). Bir paket için komut satırı anahtarları nasıl kayıtları hakkında daha fazla bilgi için bkz. [komut satırı anahtarları ekleme](../extensibility/adding-command-line-switches.md).  
+   Bir kullanıcı, komut satırından, uygulama başlatıldığında, tüm komut satırı anahtarları bunları Devenv yaptığı aynı şekilde davranır Visual Studio Kabuğu geçirilir. Devenv anahtarları hakkında daha fazla bilgi için bkz. [Devenv komut satırı anahtarları](../ide/reference/devenv-command-line-switches.md) ve [VSPackage geliştirme için Devenv komut satırı anahtarları](../extensibility/devenv-command-line-switches-for-vspackage-development.md). Bir paket için komut satırı anahtarları nasıl kayıtları hakkında daha fazla bilgi için bkz. [komut satırı anahtarları ekleme](../extensibility/adding-command-line-switches.md).  
   
 ## <a name="the-start-entry-point"></a>Başlangıç giriş noktası  
  Appenvstub.dll dosyası, yalıtılmış Kabuk erişimi için giriş noktaları içerir. Uygulama başladığında, başlangıç giriş noktası Appenvstub.dll çağırır.  

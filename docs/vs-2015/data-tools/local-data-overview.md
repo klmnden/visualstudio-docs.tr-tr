@@ -30,12 +30,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 312dbee46f13bf1f8f5d0666dcba18adc1116cdf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 94b3f066a66a380875609b4f6485d56a19ebde3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210489"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885583"
 ---
 # <a name="local-data-overview"></a>Yerel Verilere Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,19 +48,19 @@ ms.locfileid: "49210489"
   
 2.  
   
--  
+- 
   
--  
+- 
   
--   Çözüm Gezgini'nde çözüm düğümüne tıklayarak ve seçerek bir SQL Server veritabanı projesi oluşturma **Ekle &#124; yeni proje**.  Sol bölmede seçin **SQL Server &#124; veritabanı** proje ve Tamam'a tıklayın. Çözüm Gezgini'nde, bir yerel veritabanı dosyasına aktarmak için veritabanı proje düğümüne sağ tıklayın ve ardından Proje tarafından üretilen veritabanı bağlanan bir uygulama geliştirin. Geliştirme ve veritabanı şeması uygulama geliştiriyorsunuz aynı anda değiştirme İyi.  
+- Çözüm Gezgini'nde çözüm düğümüne tıklayarak ve seçerek bir SQL Server veritabanı projesi oluşturma **Ekle &#124; yeni proje**.  Sol bölmede seçin **SQL Server &#124; veritabanı** proje ve Tamam'a tıklayın. Çözüm Gezgini'nde, bir yerel veritabanı dosyasına aktarmak için veritabanı proje düğümüne sağ tıklayın ve ardından Proje tarafından üretilen veritabanı bağlanan bir uygulama geliştirin. Geliştirme ve veritabanı şeması uygulama geliştiriyorsunuz aynı anda değiştirme İyi.  
   
-     ![Veritabanı, veritabanı projesine içeri aktarmalısınız](../data-tools/media/raddata-import-database-into-database-project.png "veritabanı projesine raddata Veritabanını İçeri Aktar")  
+   ![Veritabanı, veritabanı projesine içeri aktarmalısınız](../data-tools/media/raddata-import-database-into-database-project.png "veritabanı projesine raddata Veritabanını İçeri Aktar")  
   
--   Yeni bir veritabanı oluşturuyorsanız, ilk olarak ekleyin. bir **hizmet tabanlı veritabanı dosyasını** projenize (**proje &#124; Yeni Öğe Ekle)**. Bu, varsayılan olarak (localdb) \MSSQLocalDB olan yerel makinede SQL Server örneğine bağlı yeni bir .mdf dosyası oluşturur. Veritabanı Sunucu Gezgini içinde görüntülenmesi gerekir. Düğümünü genişletin ve düğümleri tablolar, görünümler, İşlevler vb. gibi yeni veritabanı nesneleri eklemek için sağ tıklayın.  
+- Yeni bir veritabanı oluşturuyorsanız, ilk olarak ekleyin. bir **hizmet tabanlı veritabanı dosyasını** projenize (**proje &#124; Yeni Öğe Ekle)**. Bu, varsayılan olarak (localdb) \MSSQLocalDB olan yerel makinede SQL Server örneğine bağlı yeni bir .mdf dosyası oluşturur. Veritabanı Sunucu Gezgini içinde görüntülenmesi gerekir. Düğümünü genişletin ve düğümleri tablolar, görünümler, İşlevler vb. gibi yeni veritabanı nesneleri eklemek için sağ tıklayın.  
   
- SQL Server Express LocalDB hakkında daha fazla bilgi için bkz: [Localdb'ye giriş, Gelişmiş bir SQL Express](http://go.microsoft.com/fwlink/?LinkId=234375) ve [LocalDB: Veritabanım nerede?](http://go.microsoft.com/fwlink/?LinkId=234376) Microsoft Web sitesinde.  
+  SQL Server Express LocalDB hakkında daha fazla bilgi için bkz: [Localdb'ye giriş, Gelişmiş bir SQL Express](http://go.microsoft.com/fwlink/?LinkId=234375) ve [LocalDB: Veritabanım nerede?](http://go.microsoft.com/fwlink/?LinkId=234376) Microsoft Web sitesinde.  
   
- Aşağıdaki tabloda, uygulamanızı yerel verilere bağlanma açıklayan konulara bağlantılar sağlar:  
+  Aşağıdaki tabloda, uygulamanızı yerel verilere bağlanma açıklayan konulara bağlantılar sağlar:  
   
 |Konu|Açıklama|  
 |-----------|-----------------|  

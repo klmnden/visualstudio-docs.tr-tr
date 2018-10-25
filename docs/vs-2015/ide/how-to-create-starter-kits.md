@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a0fb7e9593ee49df3e766fbc52c578e635e2d72d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 163fcc07318ae02ff88fda13d4ea6300d513806e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243394"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857412"
 ---
 # <a name="how-to-create-starter-kits"></a>Nasıl Yapılır: Başlangıç Paketleri Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ Starter Kit tam bir uygulama ve değiştirme veya uygulama genişletin eklemeye 
   
  Bir örnek, bir uygulama ya da eklenti oluşturuyorsanız:  
   
--   Hatasız oluşturan bir proje oluşturun.  
+- Hatasız oluşturan bir proje oluşturun.  
   
--   Ek görevler (isteğe bağlı) uygulamak için şablon kodunu ekleyin.  
+- Ek görevler (isteğe bağlı) uygulamak için şablon kodunu ekleyin.  
   
--   Belgeleri hazırlayın.  
+- Belgeleri hazırlayın.  
   
- Öğrenme aracı oluşturuyorsanız:  
+  Öğrenme aracı oluşturuyorsanız:  
   
--   Hatasız oluşturan bir proje oluşturun.  
+- Hatasız oluşturan bir proje oluşturun.  
   
--   Kod parçacıkları ve öğe şablonları gibi kaynakları düzenleyin.  
+- Kod parçacıkları ve öğe şablonları gibi kaynakları düzenleyin.  
   
--   Belgeleri hazırlayın.  
+- Belgeleri hazırlayın.  
   
 ## <a name="creating-a-template"></a>Şablon oluşturma  
  Proje ve belgeler tamamladıktan sonra proje şablonu için başlangıç Seti oluşturmaya hazırsınız. Bu işlem tam olarak bir proje şablonu oluşturma aynıdır.  

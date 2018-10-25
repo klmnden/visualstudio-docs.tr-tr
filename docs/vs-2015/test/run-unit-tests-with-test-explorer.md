@@ -15,12 +15,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 837e004dfffbaba5eac154b195ff4ed8c382430d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f4c5a8a4d090a7603f83f6fb3c3d9deb0c67d5f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218354"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846843"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Test Gezgini ile birim testleri çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,17 +67,17 @@ Test Gezgini, Visual Studio veya üçüncü taraf birim testi projelerini birim 
 ###  <a name="BKMK_Run_tests"></a> Testleri çalıştırın  
  Tüm testler, Çözümdeki tüm testleri bir grup veya seçtiğiniz test kümesini çalıştırabilirsiniz. Aşağıdakilerden birini yapın:  
   
--   Bir çözümdeki tüm testleri çalıştırmak için tercih **tümünü Çalıştır**.  
+- Bir çözümdeki tüm testleri çalıştırmak için tercih **tümünü Çalıştır**.  
   
--   Varsayılan bir grupta tüm testleri çalıştırmak için tercih **Çalıştır...**  ve sonra menüde grubu seçin.  
+- Varsayılan bir grupta tüm testleri çalıştırmak için tercih **Çalıştır...**  ve sonra menüde grubu seçin.  
   
--   Seçilmiş test için bağlam menüsünü açın ve ardından çalıştırmak istediğiniz testleri tek tek seçin **seçili Testleri Çalıştır**.  
+- Seçilmiş test için bağlam menüsünü açın ve ardından çalıştırmak istediğiniz testleri tek tek seçin **seçili Testleri Çalıştır**.  
   
--   Paralel test yürütme ile bireysel testler herhangi bir sırada çalıştırılan engelleyen bağımlılık varsa, açma ![ALIŞTIR&#95;parallelicon&#45;küçük](../test/media/ute-parallelicon-small.png "UTE_parallelicon küçük") araç çubuğundaki iki durumlu düğme. Bu durum, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.  
+- Paralel test yürütme ile bireysel testler herhangi bir sırada çalıştırılan engelleyen bağımlılık varsa, açma ![ALIŞTIR&#95;parallelicon&#45;küçük](../test/media/ute-parallelicon-small.png "UTE_parallelicon küçük") araç çubuğundaki iki durumlu düğme. Bu durum, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.  
   
- Testler çalışırken Test Gezgini penceresinin en üstündeki geçer/başarısız çubuğunda animasyon görünür. Tüm testler başarılı ya da herhangi bir test başarısız olursa kırmızıya döner test çalışması kılavuzumuzun geçer/başarısız çubuğu yeşile döner.  
+  Testler çalışırken Test Gezgini penceresinin en üstündeki geçer/başarısız çubuğunda animasyon görünür. Tüm testler başarılı ya da herhangi bir test başarısız olursa kırmızıya döner test çalışması kılavuzumuzun geçer/başarısız çubuğu yeşile döner.  
   
- ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
+  ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
   
 ###  <a name="BKMK_Run_tests_after_every_build"></a> Her derleme sonrasında Testleri Çalıştır  
   
@@ -102,19 +102,19 @@ Test Gezgini, Visual Studio veya üçüncü taraf birim testi projelerini birim 
   
  Test ayrıntıları bölmesinde aşağıdaki bilgileri görüntüler:  
   
--   Kaynak dosya adı ve test yönteminin satır sayısı.  
+- Kaynak dosya adı ve test yönteminin satır sayısı.  
   
--   Testin durumu.  
+- Testin durumu.  
   
--   Test yöntemini çalıştırmak için geçen geçen süre.  
+- Test yöntemini çalıştırmak için geçen geçen süre.  
   
- Test başarısız olursa, Ayrıntılar bölmesinde de görüntüler:  
+  Test başarısız olursa, Ayrıntılar bölmesinde de görüntüler:  
   
--   Test için birim test çerçevesi tarafından döndürülen ileti.  
+- Test için birim test çerçevesi tarafından döndürülen ileti.  
   
--   Yığın izleme zaman test başarısız oldu.  
+- Yığın izleme zaman test başarısız oldu.  
   
- ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
+  ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
   
 ###  <a name="BKMK_View_the_source_code_of_a_test_method"></a> Test yönteminin kaynak kodunu görüntüleme  
  Visual Studio düzenleyicisinde bir test yöntemi için kaynak kodunu görüntülemek için testi seçin ve ardından **testi Aç** bağlam menüsünde (klavye: F12).  
@@ -197,13 +197,13 @@ TEST_METHOD(Method1)
   
  Farklı ölçütlere göre filtrelemek için:  
   
-1.  Arama kutusunun sağındaki açılan listeyi açın.  
+1. Arama kutusunun sağındaki açılan listeyi açın.  
   
-2.  Yeni bir ölçüt seçin.  
+2. Yeni bir ölçüt seçin.  
   
-3.  Filtre değeri tırnak işaretleri arasında girin.  
+3. Filtre değeri tırnak işaretleri arasında girin.  
   
- ![Test Gezgini testleri filtrelemek](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
+   ![Test Gezgini testleri filtrelemek](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
   
 > [!NOTE]
 >  Arama büyük/küçük harfe duyarsızdır ve belirtilen dizeyi ölçüt değeri herhangi bir bölümü eşleştir.  
@@ -255,16 +255,16 @@ FullName:"MyClass" - FullName:"PerfTest"
 ###  <a name="BKMK_Debug_unit_tests"></a> Birim testlerinin hatalarını ayıklama  
  Test Gezgini, testleriniz için hata ayıklama oturumu başlatmak için kullanabilirsiniz. Kodunuzu Visual Studio hata ayıklayıcısı ile sorunsuz bir şekilde Adımlama, İleri ve geri birim testleri ve test altındaki projeye arasında sürer. Hata ayıklamayı başlatmak için:  
   
-1.  Visual Studio düzenleyicisinde, hatalarını ayıklamak istediğiniz bir veya daha fazla test yöntemlerinde kesme noktası ayarlayın.  
+1. Visual Studio düzenleyicisinde, hatalarını ayıklamak istediğiniz bir veya daha fazla test yöntemlerinde kesme noktası ayarlayın.  
   
-    > [!NOTE]
-    >  Test yöntemleri herhangi bir sırada çalışabileceğinden, hata ayıklamak istediğiniz tüm test yöntemlerinde kesme noktalarını ayarlayın.  
+   > [!NOTE]
+   >  Test yöntemleri herhangi bir sırada çalışabileceğinden, hata ayıklamak istediğiniz tüm test yöntemlerinde kesme noktalarını ayarlayın.  
   
-2.  Test Gezgini'nde test yöntemlerini seçin ve ardından **seçilen Testlerde Hata Ayıkla** bağlam menüsünde.  
+2. Test Gezgini'nde test yöntemlerini seçin ve ardından **seçilen Testlerde Hata Ayıkla** bağlam menüsünde.  
   
- Hata ayıklayıcısı hakkında daha fazla bilgi için bkz. [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md).  
+   Hata ayıklayıcısı hakkında daha fazla bilgi için bkz. [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md).  
   
- ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
+   ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
   
 ###  <a name="BKMK_Diagnose_test_method_performance_issues"></a> Test yöntemi performans sorunlarını tanılama  
  Neden bir test yöntemi, çok fazla zaman aldığını tanılamak için yöntemi Test Gezgini'nde seçin ve ardından bağlam menüsünde profilini seçin. Bkz: [performans Gezgini](../profiling/performance-explorer.md).  
@@ -278,19 +278,19 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  Bir çözümde test yöntemleri için kod kapsamını çalıştırmak için:  
   
-1.  Seçin **testleri** Visual Studio menüsünde seçip **kod kapsamını analiz etme**.  
+1. Seçin **testleri** Visual Studio menüsünde seçip **kod kapsamını analiz etme**.  
   
-2.  Alt menüden olarak aşağıdaki komutlardan birini seçin:  
+2. Alt menüden olarak aşağıdaki komutlardan birini seçin:  
   
-    -   **Seçili testler** Test Gezgini'nde seçtiğiniz test yöntemlerini çalıştırır.  
+   -   **Seçili testler** Test Gezgini'nde seçtiğiniz test yöntemlerini çalıştırır.  
   
-    -   **Tüm testler** Çözümdeki tüm test yöntemlerini çalıştırır.  
+   -   **Tüm testler** Çözümdeki tüm test yöntemlerini çalıştırır.  
   
- Kod Kapsamı Sonuçları penceresi satır, işlevi, sınıf, ad alanı ve modül tarafından uygulanan ürünün kodu bloklarının yüzdesini görüntüler.  
+   Kod Kapsamı Sonuçları penceresi satır, işlevi, sınıf, ad alanı ve modül tarafından uygulanan ürünün kodu bloklarının yüzdesini görüntüler.  
   
- Daha fazla bilgi için [kullanarak kod kapsamı için belirlemek ne kadar kodun test](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
+   Daha fazla bilgi için [kullanarak kod kapsamı için belirlemek ne kadar kodun test](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
   
- ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
+   ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
   
 ##  <a name="BKMK_External_resources"></a> Dış Kaynaklar  
   

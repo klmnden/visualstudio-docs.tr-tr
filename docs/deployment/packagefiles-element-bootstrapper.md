@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fbb8fa5e4881c76aae08759b2feb159b764231f
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 84451a90e316a98a9998e1a64e68a72668bd4781
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078149"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813771"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; öğesi (Önyükleyici)
 `PackageFiles` Ögesinin `PackageFile` sonucu olarak çalıştırılan yükleme paketleri tanımlayan öğeleri `Command` öğesi.  
-  
+
 ## <a name="syntax"></a>Sözdizimi  
-  
+
 ```xml  
 <PackageFiles  
     CopyAllPackageFiles  
@@ -42,30 +42,31 @@ ms.locfileid: "39078149"
     />  
 </PackageFiles>  
 ```  
-  
+
 ## <a name="elements-and-attributes"></a>Öğeler ve öznitelikler  
  `PackageFiles` Öğesi aşağıdaki özniteliklere sahiptir.  
-  
+
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
 |`CopyAllPackageFiles`|İsteğe bağlı. Varsa kümesine `false`, yükleyici yalnızca öğesinden başvurulan dosyaları indirir `Command` öğesi. Varsa kümesine `true`, tüm dosyalar indirilir.<br /><br /> Varsa kümesine `IfNotHomesite`, yükleyici aynı davranış göstereceği gibi `False` varsa `ComponentsLocation` ayarlanır `HomeSite`ve aksi takdirde aynı davranış göstereceği gibi `True`. Bu ayar, kendileri paketleri HomeSite senaryosunda kendi davranışı önyükleyici vermesini sağlamak da yararlı olabilir.<br /><br /> Varsayılan, `true` değeridir.|  
-  
+
 ## <a name="packagefile"></a>PackageFile  
  `PackageFile` Öğesi alt öğesi olan `PackageFiles` öğesi. A `PackageFiles` öğesi en az bir olmalı `PackageFile` öğesi.  
-  
+
  `PackageFile` Aşağıdaki özniteliklere sahiptir.  
-  
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|`Name`|Gerekli. Paket dosyasının adı. Bu addır, `Command` öğesi, bir paket yükleyen koşullarını tanımlayan olduğunda başvuracağı. Bu değer aynı zamanda bir anahtar olarak kullanılan `Strings` gibi araçlar yerelleştirilmiş adı almak için tablo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] paketi tanımlamak için kullanır.|  
-|`HomeSite`|İsteğe bağlı. Uzak sunucuda yükleyiciyi dahil edilmezse paketinin konumu.|  
-|`CopyOnBuild`|İsteğe bağlı. Önyükleyici paket dosyası diske oluşturma zamanında kopyalama olup olmadığını belirtir. Varsayılan değer True'dur.|  
-|`PublicKey`|Paketin sertifikayı imzalayan şifrelenmiş ortak anahtarı. Gerekli if `HomeSite` kullanılan, isteğe bağlı; Aksi takdirde.|  
-|`Hash`|İsteğe bağlı. Paket dosyası bir SHA1 karması. Bu, yükleme sırasında dosya bütünlüğünü doğrulamak için kullanılır. Aynı karma paket dosyasından deltanın hesaplanamaması durumunda paketi yüklü değil.|  
-  
+
+
+| Öznitelik | Açıklama |
+|---------------| - |
+| `Name` | Gerekli. Paket dosyasının adı. Bu addır, `Command` öğesi, bir paket yükleyen koşullarını tanımlayan olduğunda başvuracağı. Bu değer aynı zamanda bir anahtar olarak kullanılan `Strings` gibi araçlar yerelleştirilmiş adı almak için tablo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] paketi tanımlamak için kullanır. |
+| `HomeSite` | İsteğe bağlı. Uzak sunucuda yükleyiciyi dahil edilmezse paketinin konumu. |
+| `CopyOnBuild` | İsteğe bağlı. Önyükleyici paket dosyası diske oluşturma zamanında kopyalama olup olmadığını belirtir. Varsayılan değer True'dur. |
+| `PublicKey` | Paketin sertifikayı imzalayan şifrelenmiş ortak anahtarı. Gerekli if `HomeSite` kullanılan, isteğe bağlı; Aksi takdirde. |
+| `Hash` | İsteğe bağlı. Paket dosyası bir SHA1 karması. Bu, yükleme sırasında dosya bütünlüğünü doğrulamak için kullanılır. Aynı karma paket dosyasından deltanın hesaplanamaması durumunda paketi yüklü değil. |
+
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod örneği için paketleri tanımlar [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] yeniden dağıtılabilir paketi ve bağımlılıkları, Windows Installer gibi.  
-  
+
 ```xml  
 <PackageFiles>  
     <PackageFile Name="instmsia.exe" HomeSite="InstMsiAExe" PublicKey="3082010A0282010100AA99BD39A81827F42B3D0B4C3F7C772EA7CBB5D18C0DC23A74D793B5E0A04B3F595ECE454F9A7929F149CC1A47EE55C2083E1220F855F2EE5FD3E0CA96BC30DEFE58C82732D08554E8F09110BBF32BBE19E5039B0B861DF3B0398CB8FD0B1D3C7326AC572BCA29A215908215E277A34052038B9DC270BA1FE934F6F335924E5583F8DA30B620DE5706B55A4206DE59CBF2DFA6BD154771192523D2CB6F9B1979DF6A5BF176057929FCC356CA8F440885558ACBC80F464B55CB8C96774A87E8A94106C7FF0DE968576372C36957B443CF323A30DC1BE9D543262A79FE95DB226724C92FD034E3E6FB514986B83CD0255FD6EC9E036187A96840C7F8E203E6CF050203010001"/>  
@@ -74,7 +75,7 @@ ms.locfileid: "39078149"
     <PackageFile Name="dotnetchk.exe"/>  
 </PackageFiles>  
 ```  
-  
+
 ## <a name="see-also"></a>Ayrıca bkz.  
  [\<Ürün > öğesi](../deployment/product-element-bootstrapper.md)   
  [\<Paket > öğesi](../deployment/package-element-bootstrapper.md)   

@@ -18,12 +18,12 @@ caps.latest.revision: 37
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5a45466b441fc8964b0b3a715acbd95b920e3392
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa08a132c752b5bdde7ba2b497a6bd206e8f2972
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299395"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843853"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>UML Bileşen Diyagramları: Yönergeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
   
  Bileşen diyagramı çizmenin birçok faydası vardır:  
   
--   Tasarımınızı ana blokları dikkate alarak göz önünde bulundurmak, geliştirme takımının varolan tasarımı anlamasına ve yeni bir tane oluşturmasına yardım eder.  
+- Tasarımınızı ana blokları dikkate alarak göz önünde bulundurmak, geliştirme takımının varolan tasarımı anlamasına ve yeni bir tane oluşturmasına yardım eder.  
   
--   Sisteminizi iyi tanımlanmış sağlanan ve gerekli arabirimlerden oluşan bir bileşenler koleksiyonu gibi düşünerek, bileşenler arasındaki ayrımı daha iyi anlayabilirsiniz. Böylece, tasarımın anlaşılması ve gereksinimler değiştiğinde değiştirilmesi daha kolay hale gelir.  
+- Sisteminizi iyi tanımlanmış sağlanan ve gerekli arabirimlerden oluşan bir bileşenler koleksiyonu gibi düşünerek, bileşenler arasındaki ayrımı daha iyi anlayabilirsiniz. Böylece, tasarımın anlaşılması ve gereksinimler değiştiğinde değiştirilmesi daha kolay hale gelir.  
   
- Bileşen diyagramını, tasarımın kullandığı veya kullanacağı dile ya da platforma bakılmaksızın tasarımınızı göstermek için kullanabilirsiniz.  
+  Bileşen diyagramını, tasarımın kullandığı veya kullanacağı dile ya da platforma bakılmaksızın tasarımınızı göstermek için kullanabilirsiniz.  
   
 ##  <a name="OtherDiagrams"></a> Diğer diyagramlarla ilişki  
  Bileşen diyagramını başka diyagramlarla birlikte kullanabilirsiniz.  
@@ -118,32 +118,32 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
   
 ##### <a name="to-add-ports-to-a-component"></a>Bileşene bağlantı noktaları eklemek için  
   
-1.  Araç kutusunda tıklayın **sağlanan arabirim** veya **gerekli arabirim**.  
+1. Araç kutusunda tıklayın **sağlanan arabirim** veya **gerekli arabirim**.  
   
-2.  Eklemek istediğiniz bileşene tıklayın.  
+2. Eklemek istediğiniz bileşene tıklayın.  
   
-     Bir bağlantı noktası bileşenin sınırında görünür.  
+    Bir bağlantı noktası bileşenin sınırında görünür.  
   
-     Yeni arabirim bir bağlantı noktası türü olarak oluşturulur. Bu arabirim görünür **UML Model Gezgini**.  
+    Yeni arabirim bir bağlantı noktası türü olarak oluşturulur. Bu arabirim görünür **UML Model Gezgini**.  
   
-3.  Bağlantı noktasını bileşen sınırı etrafında istediğiniz yere yerleştirmek için sürükleyin.  
+3. Bağlantı noktasını bileşen sınırı etrafında istediğiniz yere yerleştirmek için sürükleyin.  
   
-4.  Bağlantı noktasının etiketini konumunu ayarlamak için sürükleyin.  
+4. Bağlantı noktasının etiketini konumunu ayarlamak için sürükleyin.  
   
-5.  Etiketi değiştirmek için ona tıklayın. Etiket arabirimin adını gösterir. Etiketi değiştirirseniz, arabirimin adı da değişir.  
+5. Etiketi değiştirmek için ona tıklayın. Etiket arabirimin adını gösterir. Etiketi değiştirirseniz, arabirimin adı da değişir.  
   
- Arabirimin özniteliklerini ve işlemlerini listelemek istiyorsanız, bunu UML Model Gezgini'nde arabirime ekleyerek yapabilirsiniz. Alternatif olarak, arabirimi UML Model Gezgini'nden sınıf diyagramına sürükleyebilir ve işlemleri ve öznitelikleri buraya ekleyebilirsiniz.  
+   Arabirimin özniteliklerini ve işlemlerini listelemek istiyorsanız, bunu UML Model Gezgini'nde arabirime ekleyerek yapabilirsiniz. Alternatif olarak, arabirimi UML Model Gezgini'nden sınıf diyagramına sürükleyebilir ve işlemleri ve öznitelikleri buraya ekleyebilirsiniz.  
   
 ### <a name="linking-between-components"></a>Bileşenler arasında bağlama  
  Bir bileşen gereksiniminin başka bileşen tarafından sağlanan işlemler veya hizmetler tarafından karşılanabileceğini göstermek için bir bağımlılık (4) kullanın.  
   
 ##### <a name="to-show-that-a-provided-interface-can-satisfy-a-required-interface"></a>Sağlanan arabirimin gerekli arabirimi karşılayabileceğini göstermek için  
   
-1.  Araç kutusunda tıklayın **bağımlılık**.  
+1. Araç kutusunda tıklayın **bağımlılık**.  
   
-2.  Bir bileşende gerekli arabirime sahip bağlantı noktasına tıklayın ve ardından başka bir bileşende sağlanan arabirime sahip bağlantı noktasına tıklayın.  
+2. Bir bileşende gerekli arabirime sahip bağlantı noktasına tıklayın ve ardından başka bir bileşende sağlanan arabirime sahip bağlantı noktasına tıklayın.  
   
- Gruptaki her bileşenin diğer bileşenlere bağlı olduğu bağımlılık döngülerini tasarlamaktan kaçınmayı denemelisiniz.  
+   Gruptaki her bileşenin diğer bileşenlere bağlı olduğu bağımlılık döngülerini tasarlamaktan kaçınmayı denemelisiniz.  
   
 ##### <a name="to-add-a-port-for-an-existing-interface-to-a-component"></a>Varolan arabirim için bileşene bağlantı noktası eklemek üzere  
   
@@ -269,11 +269,11 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
   
  Sistem işinin farklı bileşenler arasında nasıl yayıldığını değerlendirmek için sıralı diyagramlar kullanın.  
   
--   Bir parçaya çok fazla yüklenilirse, işin eşit bir şekilde dağıtıldığı durumlara göre uygulamanın güncelleştirilmesi daha zor olacaktır.  
+- Bir parçaya çok fazla yüklenilirse, işin eşit bir şekilde dağıtıldığı durumlara göre uygulamanın güncelleştirilmesi daha zor olacaktır.  
   
--   İş birçok etkileşimle yetersiz bir şekilde dağıtılmışsa, sistem kötü bir şekilde çalışabilir ve anlaşılması zor olabilir.  
+- İş birçok etkileşimle yetersiz bir şekilde dağıtılmışsa, sistem kötü bir şekilde çalışabilir ve anlaşılması zor olabilir.  
   
- ![Sıralı diyagram gösterme işbirliği bölümleri](../modeling/media/uml-compdescparts.png "UML_CompDescParts")  
+  ![Sıralı diyagram gösterme işbirliği bölümleri](../modeling/media/uml-compdescparts.png "UML_CompDescParts")  
   
 ##### <a name="to-draw-a-sequence-diagram-that-shows-collaboration-between-parts"></a>Parçalar arasındaki işbirliğini gösteren sıralı diyagram çizmek için  
   
@@ -327,13 +327,13 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
   
  Bağımlılığın tipik türleri şunlardır:  
   
--   Bir bileşen diğeri içindeki kodu çağırır.  
+- Bir bileşen diğeri içindeki kodu çağırır.  
   
--   Bir bileşen başka bir sınıfın içinde tanımlanan sınıfın örneğini oluşturur.  
+- Bir bileşen başka bir sınıfın içinde tanımlanan sınıfın örneğini oluşturur.  
   
--   Bir bileşen başka bir bileşen tarafından oluşturulan bilgileri kullanır.  
+- Bir bileşen başka bir bileşen tarafından oluşturulan bilgileri kullanır.  
   
- Kullanımın belirli bir türünü göstermek için bağımlılık okunun adını kullanabilirsiniz. Adı ayarlamak için oka sağ tıklayın ve ardından **özellikleri**, ayarlayıp **adı** Özellikler penceresindeki alan.  
+  Kullanımın belirli bir türünü göstermek için bağımlılık okunun adını kullanabilirsiniz. Adı ayarlamak için oka sağ tıklayın ve ardından **özellikleri**, ayarlayıp **adı** Özellikler penceresindeki alan.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)   

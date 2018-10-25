@@ -17,12 +17,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: afa446afdf8cb9b3c17028927d9325ffd6e18323
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a2ca3a14c1e4e35da4e8cddfdecb0346740286a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253558"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837769"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ ms.locfileid: "49253558"
   
  Visual Studio IDE'si yerine MSBuild komut satırını kullanarak derlemeler çalıştırdığınızda, aşağıdaki örnekler gösterilmektedir.  
   
--   Visual Studio yüklü değil.  
+- Visual Studio yüklü değil.  
   
--   MSBuild'in 64-bit sürümünü kullanmak istiyorsunuz. MSBuild'in bu sürümü genellikle gereksizdir, ancak MSBuild daha fazla belleğe erişmesini sağlar.  
+- MSBuild'in 64-bit sürümünü kullanmak istiyorsunuz. MSBuild'in bu sürümü genellikle gereksizdir, ancak MSBuild daha fazla belleğe erişmesini sağlar.  
   
--   Bir derlemeyi birden fazla işlemde çalıştırmak istiyorsunuz. Bununla birlikte, C++ ve C# ' deki projelerde aynı sonucu elde etmek için IDE kullanabilirsiniz.  
+- Bir derlemeyi birden fazla işlemde çalıştırmak istiyorsunuz. Bununla birlikte, C++ ve C# ' deki projelerde aynı sonucu elde etmek için IDE kullanabilirsiniz.  
   
--   Derleme sistemini değiştirmek istiyorsunuz. Örneğin, aşağıdaki eylemleri etkinleştirmek isteyebilirsiniz:  
+- Derleme sistemini değiştirmek istiyorsunuz. Örneğin, aşağıdaki eylemleri etkinleştirmek isteyebilirsiniz:  
   
-    -   Derleyiciye ulaşmadan önce dosyaları ön işlemden geçirin.  
+  -   Derleyiciye ulaşmadan önce dosyaları ön işlemden geçirin.  
   
-    -   Yapı çıktılarını farklı bir konuma kopyalayın.  
+  -   Yapı çıktılarını farklı bir konuma kopyalayın.  
   
-    -   Yapı çıktılarından sıkıştırılmış dosyalar oluşturun.  
+  -   Yapı çıktılarından sıkıştırılmış dosyalar oluşturun.  
   
-    -   Bir sonradan işleme adımı yapın. Örneğin, bir derleme farklı bir sürüm ile damgalamak isteyebilirsiniz.  
+  -   Bir sonradan işleme adımı yapın. Örneğin, bir derleme farklı bir sürüm ile damgalamak isteyebilirsiniz.  
   
- Visual Studio IDE'de kod yazabilir buna karşın derlemeleri Msbuild'i kullanarak Çalıştır. Başka bir alternatif olarak IDE içindeki kodu geliştirme bilgisayarında oluşturabilirsiniz, ancak birden çok geliştiriciden tümleştirilen kodu oluşturmak için MSBuild komut satırını kullanın.  
+  Visual Studio IDE'de kod yazabilir buna karşın derlemeleri Msbuild'i kullanarak Çalıştır. Başka bir alternatif olarak IDE içindeki kodu geliştirme bilgisayarında oluşturabilirsiniz, ancak birden çok geliştiriciden tümleştirilen kodu oluşturmak için MSBuild komut satırını kullanın.  
   
 > [!NOTE]
 >  Otomatik olarak derlemek, test ve uygulamanızı dağıtmak için Team Foundation Build'ı kullanabilirsiniz. Geliştiriciler kodu (örneğin, bir sürekli tümleştirme stratejisinin parçası olarak) iade ettiğinde veya uygun bir zamanlama (örneğin, bir gecelik yapı doğrulama testi derlemesinde) otomatik olarak yapı sistemi kullanabilirsiniz. Team Foundation derlemesi kodunuzu Msbuild'i kullanarak derler. Daha fazla bilgi için [uygulamayı derleyin](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
@@ -182,17 +182,17 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Çoklu sürüm desteği avantajlarından bazıları şunlardır:  
   
--   .NET Framework'ün önceki sürümlerinde Örneğin, 2.0, 3.0 ve 3.5 sürümleri hedefleyen uygulamalar geliştirebilirsiniz.  
+- .NET Framework'ün önceki sürümlerinde Örneğin, 2.0, 3.0 ve 3.5 sürümleri hedefleyen uygulamalar geliştirebilirsiniz.  
   
--   .NET Framework, örneğin, Silverlight başka çerçeveleri hedefleyebilirsiniz.  
+- .NET Framework, örneğin, Silverlight başka çerçeveleri hedefleyebilirsiniz.  
   
--   Platformlarını hedefleyebilen bir *framework profili*, hangi hedef framework'ün önceden tanımlanmış bir alt kümesidir.  
+- Platformlarını hedefleyebilen bir *framework profili*, hangi hedef framework'ün önceden tanımlanmış bir alt kümesidir.  
   
--   Geçerli .NET Framework sürümü için bir hizmet paketi yayımlandığında bunu hedefleyebilirsiniz.  
+- Geçerli .NET Framework sürümü için bir hizmet paketi yayımlandığında bunu hedefleyebilirsiniz.  
   
--   Çoklu hedefleme, uygulamanın yalnızca hedef framework ve platformda mevcut olan işlevselliği kullandığı garanti eder.  
+- Çoklu hedefleme, uygulamanın yalnızca hedef framework ve platformda mevcut olan işlevselliği kullandığı garanti eder.  
   
- Daha fazla bilgi için [çoklu hedefleme](../msbuild/msbuild-multitargeting-overview.md).  
+  Daha fazla bilgi için [çoklu hedefleme](../msbuild/msbuild-multitargeting-overview.md).  
   
 ## <a name="related-topics"></a>İlgili Konular  
   

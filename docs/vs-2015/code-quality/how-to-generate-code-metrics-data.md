@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4dbd9b4e0b62d1c6542231418aa99bd6d6ab0438
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14acbe1ac804ca953f7167f6ee7f849d0a615db8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189812"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836209"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Nasıl yapılır: Kod Ölçümleri Verileri Üretme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,15 +50,15 @@ Bütün bir çözüm ya da Seçili proje için kod ölçümleri sonuçları olu�
   
 ### <a name="to-generate-code-metrics-results-for-one-or-more-selected-projects"></a>Seçili projeler için bir veya daha fazla kod ölçümleri sonuçları oluşturma  
   
-1.  İçinde **Çözüm Gezgini**, bir veya daha fazla proje seçin.  
+1. İçinde **Çözüm Gezgini**, bir veya daha fazla proje seçin.  
   
-2.  Tıklayın **Çözümle**ve ardından **seçili projeleri (s) için kod ölçümleri oluşturmak**.  
+2. Tıklayın **Çözümle**ve ardından **seçili projeleri (s) için kod ölçümleri oluşturmak**.  
   
-     \- veya -  
+    \- veya -  
   
-     Seçimlerinizi sağ tıklayın ve ardından **CalculateCode ölçümleri**.  
+    Seçimlerinizi sağ tıklayın ve ardından **CalculateCode ölçümleri**.  
   
- Sonuçları oluşturulur ve **kod ölçümleri sonuçları** penceresi görüntülenir.  
+   Sonuçları oluşturulur ve **kod ölçümleri sonuçları** penceresi görüntülenir.  
   
 ### <a name="to-view-the-results-details"></a>Sonuçları ayrıntılarını görüntülemek için  
   

@@ -9,12 +9,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 432246ed1cbb11589e9a42a5fce90cd2e7239223
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a2bd14e4d052179df8a61dfa4b418f07b0f31e3c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676850"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893604"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Çalıştırılacak C++ kurallarını belirtmek için kural kümeleri kullanma
 
@@ -34,11 +34,11 @@ Yeni bir özel kural oluşturmak için yeni bir dosya adını kullanarak kaydedi
 
 3. İçinde **kural kümesi** aşağı açılan listesinde, aşağıdakilerden birini yapın:
 
-    - Özelleştirmek istediğiniz kural kümesi seçin.
+   - Özelleştirmek istediğiniz kural kümesi seçin.
 
      \- veya -
 
-    - Seçin  **\<Gözat … >** mevcut bir kuralı kümesini belirlemek için listesinde değil.
+   - Seçin  **\<Gözat … >** mevcut bir kuralı kümesini belirlemek için listesinde değil.
 
 4. Seçin **açık** kuralları kural kümesi Düzenleyicisi'nde görüntülemek için.
 

@@ -18,29 +18,29 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b7caa6af725fc1af5551e9b705e609e25f74121b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82ce653eda1ec074f050809845610fbc1ab1bc0c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303452"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833665"
 ---
 # <a name="visualize-code"></a>Kodu görselleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Görselleştirme ve modelleme araçlarını Visual Studio'da, mevcut kodu anlamanıza ve uygulamanızı tanımlamanıza yardımcı olması için kullanabilirsiniz. Bu görsel olarak yaptığınız değişiklikler kod ve iş ve bu değişikliklerden kaynaklanan riskleri değerlendirme Yardım nasıl etkileyebilecek öğrenmenize olanak tanır. Örneğin:  
   
--   Kodunuzdaki ilişkileri anlamak için bu ilişkileri görsel olarak eşleyin.  
+- Kodunuzdaki ilişkileri anlamak için bu ilişkileri görsel olarak eşleyin.  
   
--   Sisteminizin mimarisini ve kod, tasarım ile tutarlı tutmak için katman diyagramları oluşturun ve bu diyagramları karşı kodu doğrulayın.  
+- Sisteminizin mimarisini ve kod, tasarım ile tutarlı tutmak için katman diyagramları oluşturun ve bu diyagramları karşı kodu doğrulayın.  
   
--   Sınıf yapılarını açıklamak için sınıf diyagramları oluşturun.  
+- Sınıf yapılarını açıklamak için sınıf diyagramları oluşturun.  
   
--   Model ve sistem çeşitli yönlerini iletmek için Birleşik Modelleme Dili (UML) diyagramları çizin. Örneğin, bir sistemin bileşenleri, türleri, etkileşimleri ve işlemlerini modelleyebilir.  
+- Model ve sistem çeşitli yönlerini iletmek için Birleşik Modelleme Dili (UML) diyagramları çizin. Örneğin, bir sistemin bileşenleri, türleri, etkileşimleri ve işlemlerini modelleyebilir.  
   
- Bu araçlar, ayrıca daha kolay proje ile ilgili kişilerle iletişim kurmasına yardımcı olur. Örneğin, proje hissedarları, kullanıcılar ve takım üyeleri ile sistem tartışmak için ortak bir sözlüğü oluşturmak için UML sınıf diyagramları kullanabilirsiniz.  
+  Bu araçlar, ayrıca daha kolay proje ile ilgili kişilerle iletişim kurmasına yardımcı olur. Örneğin, proje hissedarları, kullanıcılar ve takım üyeleri ile sistem tartışmak için ortak bir sözlüğü oluşturmak için UML sınıf diyagramları kullanabilirsiniz.  
   
- Visual Studio'nun hangi sürümlerinin her özelliğini desteklemek için bkz [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
+  Visual Studio'nun hangi sürümlerinin her özelliğini desteklemek için bkz [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
   
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?  
   
