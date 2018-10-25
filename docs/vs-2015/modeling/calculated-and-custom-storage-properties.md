@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c1203b962627071d757dc1876a534977c574a813
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82d90d6965558ba6d28753fb71b3b227a84467a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179497"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852862"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Hesaplanan ve Özel Depolama Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,11 +93,11 @@ Tüm etki alanı özellikleri bir etki alanına özgü dil (DSL) diyagramı ve d
   
  Ancak, küme yöntemini kullanıcı geri alma veya yineleme çağırır veya bir işlem geri alınıyor çağrılabilir. Zaman <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> true kümesi yönteminizi davranış şu şekilde olur:  
   
--   Bu değişiklikler diğer etki alanı özellikleri için değerler atama deposundaki yapmamanız gerekir. Geri alma yöneticisi değerlerini ayarlar.  
+- Bu değişiklikler diğer etki alanı özellikleri için değerler atama deposundaki yapmamanız gerekir. Geri alma yöneticisi değerlerini ayarlar.  
   
--   Ancak, veritabanı veya dosya içeriklerini mağazası dışındaki nesnelere gibi herhangi bir dış kaynağa güncelleştirmeniz gerekir. Bu bunlar içinde synchronism deposundaki değerlerle tutulur emin olmanızı sağlar.  
+- Ancak, veritabanı veya dosya içeriklerini mağazası dışındaki nesnelere gibi herhangi bir dış kaynağa güncelleştirmeniz gerekir. Bu bunlar içinde synchronism deposundaki değerlerle tutulur emin olmanızı sağlar.  
   
- Örneğin:  
+  Örneğin:  
   
 ```  
 void SetAgeValue(int value)  

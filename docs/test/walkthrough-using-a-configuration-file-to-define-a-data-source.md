@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2552dec4e564b42d2044ce0d9da51ebfb8913901
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 64d01fd3551ee94cef178cb840742721db58a360
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382807"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821623"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>İzlenecek yol: bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanma
 
@@ -88,7 +88,7 @@ Bağlantı dizelerini veri kaynaklarına erişim için sağlayıcıya özel bilg
 3. İlk **Ekle** öğesinde şu öznitelikler ve değerler için bir Microsoft Access veritabanına bağlantı oluşturun:
 
 |Öznitelik|Değerler|
-|---------------|------------|
+|-|------------|
 |`name`|`"MyJetConn"`|
 |`connectionString`|`"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;"`|
 |`providerName`|`"System.Data.OleDb"`|
@@ -135,7 +135,7 @@ Bu bölümde, bir birim testinde kullanmak üzere iki veri kaynağı tanımlars�
 4. İlk **ekleme** öğesi, aşağıdaki öznitelikleri ve değerleri için bir Microsoft Access veri kaynağı oluşturun:
 
 |Öznitelik|Değerler|
-|---------------|------------|
+|-|------------|
 |`name`|`"MyJetDataSource"`|
 |`connectionString`|`"MyJetConn"`|
 |`dataTableName`|`"MyDataTable"`|

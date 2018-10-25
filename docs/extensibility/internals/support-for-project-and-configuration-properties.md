@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c36ee7332f896ed3228166b2c729a4bc2a4df03c
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 783c73cc73da188ec1be626cf54db93ca62af465
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496044"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865108"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Proje ve Yapılandırma Özellikleri için Destek
 **Özellikleri** penceresinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE) proje ve yapılandırma özelliklerini görüntüleyebilirsiniz. Kullanıcı, uygulamanın özelliklerini ayarlayabilirsiniz böylece, kendi proje türü için özellik sayfası sağlayabilirsiniz.  
@@ -61,14 +61,14 @@ ms.locfileid: "46496044"
   
  `SettingsPage` Sınıfı ve `Microsoft.VisualStudio.Package.ProjectNode` sınıfı, yapılandırma özellikleri kalıcı hale getirmek için bu yöntemleri sunar:  
   
--   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` ve `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` Proje özelliklerinin kalıcı.  
+- `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` ve `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` Proje özelliklerinin kalıcı.  
   
--   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` ve `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` yapılandırma özellikleri kalıcı.  
+- `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` ve `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` yapılandırma özellikleri kalıcı.  
   
-    > [!NOTE]
-    >  Uygulamaları `Microsoft.VisualStudio.Package.SettingsPage` ve `Microsoft.VisualStudio.Package.ProjectNode` sınıfları kullanın `Microsoft.Build.BuildEngine` almak ve proje dosyasından proje ve yapılandırma özelliklerini ayarlamak için yöntemleri (MSBuild).  
+  > [!NOTE]
+  >  Uygulamaları `Microsoft.VisualStudio.Package.SettingsPage` ve `Microsoft.VisualStudio.Package.ProjectNode` sınıfları kullanın `Microsoft.Build.BuildEngine` almak ve proje dosyasından proje ve yapılandırma özelliklerini ayarlamak için yöntemleri (MSBuild).  
   
- Türetilen sınıf `SettingsPage` uygulamalıdır `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` ve `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` proje dosyasının proje veya yapılandırma özelliklerini kalıcı hale getirmek için.  
+  Türetilen sınıf `SettingsPage` uygulamalıdır `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` ve `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` proje dosyasının proje veya yapılandırma özelliklerini kalıcı hale getirmek için.  
   
 ## <a name="provideobjectattribute-and-registry-path"></a>ProvideObjectAttribute ve kayıt defteri yolu  
  Türetilen sınıflar `SettingsPage` Vspackage'lar arasında paylaşılacak şekilde tasarlanmıştır. Türetilen bir sınıf oluşturmak bir VSPackage için mümkün kılmak için `SettingsPage`, ekleme bir `Microsoft.VisualStudio.Shell.ProvideObjectAttribute` türetilen bir sınıf için `Microsoft.VisualStudio.Shell.Package`.  

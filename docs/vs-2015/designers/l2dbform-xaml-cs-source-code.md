@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6248b61b2332694151d84bd9f5969ff18587c7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6ac13d8998972ddf60576537f8b0af55d832d820
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180615"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817544"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs kaynak kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,19 +51,19 @@ Bu konu, içeriği ve C# kaynak kodu dosyasında L2DBForm.xaml.cs açıklamasın
   
  Ancak seçilen kitap öğesi kaldırmanın çekirdek iş yalnızca iki deyim tarafından gerçekleştirilir:  
   
--   İlk olarak, şu anda seçili öğeyi liste kutusunda ilişkili kitap öğesi alınır:  
+- İlk olarak, şu anda seçili öğeyi liste kutusunda ilişkili kitap öğesi alınır:  
   
-    ```  
-    XElement selBook = (XElement)lbBooks.SelectedItem;   
-    ```  
+  ```  
+  XElement selBook = (XElement)lbBooks.SelectedItem;   
+  ```  
   
--   Ardından, bu öğe, veri sağlayıcısı'ndan silinir:  
+- Ardından, bu öğe, veri sağlayıcısı'ndan silinir:  
   
-    ```  
-    selBook.Remove();  
-    ```  
+  ```  
+  selBook.Remove();  
+  ```  
   
- Dinamik veri bağlama yeniden programın UI otomatik olarak güncelleştirilir sağlar.  
+  Dinamik veri bağlama yeniden programın UI otomatik olarak güncelleştirilir sağlar.  
   
 ## <a name="example"></a>Örnek  
   

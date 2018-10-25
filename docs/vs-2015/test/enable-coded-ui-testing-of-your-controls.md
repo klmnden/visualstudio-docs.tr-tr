@@ -13,12 +13,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9883b266e74db115c57f0a7cc245889ed59a599d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5ab2ca3e0f7d8f7006177f89c6850ce9882681a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247877"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848546"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Denetimlerinizin Kodlanmış UI Testlerini Etkinleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Kodlanmış UI test çerçevesi için destek uygularsanız, denetim daha kolay t
   
  **Bu konuda:**  
   
-1.  [Erişilebilirlik uygulayarak kaydı ve kayıttan yürütme ve doğrulama özelliği desteği](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
+1. [Erişilebilirlik uygulayarak kaydı ve kayıttan yürütme ve doğrulama özelliği desteği](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
   
-2.  [Bir özellik sağlayıcısı uygulayarak özel özellik doğrulama desteği](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)  
+2. [Bir özellik sağlayıcısı uygulayarak özel özellik doğrulama desteği](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)  
   
-3.  [Özel özelliklere erişmek için bir sınıf uygulayarak kod oluşturma desteği](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)  
+3. [Özel özelliklere erişmek için bir sınıf uygulayarak kod oluşturma desteği](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)  
   
-4.  [Bir eyleme eylem filtresi uygulayarak amaç duyarlı Eylemler desteği](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
+4. [Bir eyleme eylem filtresi uygulayarak amaç duyarlı Eylemler desteği](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
   
- ![CUIT&#95;tam](../test/media/cuit-full.png "CUIT_Full")  
+   ![CUIT&#95;tam](../test/media/cuit-full.png "CUIT_Full")  
   
 ##  <a name="recordandplayback"></a> Erişilebilirlik uygulayarak kaydı ve kayıttan yürütme ve doğrulama özelliği desteği  
  Kodlanmış UI test oluşturucusu, kayıt sırasında karşılaştığı ve ardından bu oturumu yeniden Yürüt için kod oluşturur denetimleri hakkında bilgi yakalar. Denetiminiz erişilebilirlik desteklemiyorsa, kodlanmış UI test Oluşturucusu kullanarak ekran koordinatları (fare tıklamaları gibi) eylemleri yakalayın. Test yürütüldüğünde, oluşturulan kod bu fare tıklamaları aynı ekran koordinatlarında verecek. Test yürütüldüğünde denetim ekranda farklı bir yerde görünür, oluşturulan kod denetiminizi bu eylemi gerçekleştirmek başarısız olur. Test farklı ortamlarda veya kullanıcı Arabirimi düzeninde değişiklikler yapıldı sonra farklı bir ekrana yapılandırmada kayıttan yürütülebilir bu hatalarına neden olabilir.  

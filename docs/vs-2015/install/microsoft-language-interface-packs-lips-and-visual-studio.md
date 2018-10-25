@@ -23,12 +23,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f72b67216ef0403af2e1f97208a7e33daa09b9b7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 72c71ae80dfd44752e03f1d4fd7fd384adc13dfc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179289"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812887"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft Dil Arabirim Paketleri (LIP'ler) ve Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,15 +97,15 @@ Bir Windows Dil Arabirim Paketi (LIP) kullanarak Windows dil sürümünü yükle
   
 #### <a name="to-set-the-language-that-is-used-for-the-ui-text-in-visual-studio"></a>Visual Studio UI metinde kullanılan dili ayarlamak için  
   
-1.  Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.  
+1. Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.  
   
-2.  İçinde **seçenekleri** iletişim kutusunda **ortam** ve ardından **uluslararası ayarlar**.  
+2. İçinde **seçenekleri** iletişim kutusunda **ortam** ve ardından **uluslararası ayarlar**.  
   
-3.  İçinde **dil** listesinde, geliştirme ortamında UI metni görüntüleneceği dili seçin.  
+3. İçinde **dil** listesinde, geliştirme ortamında UI metni görüntüleneceği dili seçin.  
   
-     UI metni IDE içinde ayarlama işletim sistemi görüntüleme dilini eşleşmesi için seçin **Microsoft Windows ile aynı**.  
+    UI metni IDE içinde ayarlama işletim sistemi görüntüleme dilini eşleşmesi için seçin **Microsoft Windows ile aynı**.  
   
- Devenv komut, kullanıcı Arabiriminde kullanılan dilini ayarlamak amacıyla da kullanabilirsiniz. Daha fazla bilgi için [/LCID (devenv.exe)](../ide/reference/lcid-devenv-exe.md).  
+   Devenv komut, kullanıcı Arabiriminde kullanılan dilini ayarlamak amacıyla da kullanabilirsiniz. Daha fazla bilgi için [/LCID (devenv.exe)](../ide/reference/lcid-devenv-exe.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uluslararası Ayarlar, Ortam, Seçenekler İletişim Kutusu](../ide/reference/international-settings-environment-options-dialog-box.md)

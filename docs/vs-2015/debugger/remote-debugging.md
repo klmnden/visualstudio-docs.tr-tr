@@ -24,12 +24,12 @@ caps.latest.revision: 81
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 58df8dd3c95d5962b5966660599c65951d659ac2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 61b1bc7f81ca4d6c3f313c543be23b746d56d37e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306533"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812900"
 ---
 # <a name="remote-debugging"></a>Uzaktan Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,71 +112,71 @@ Uzaktan hata ayıklayıcıyı bulabilirsiniz (**msvsmon.exe**) bir bilgisayarda 
 ## <a name="bkmk_setup"></a>Uzaktan hata ayıklayıcı ayarlayın  
  Uzak bilgisayarda yönetici izinlerinizin olması gerekir  
   
-1.  Uzaktan hata ayıklayıcı uygulamasını bulun. (Başlat menüsünü açın ve arama **uzaktan hata ayıklayıcı**.)
+1. Uzaktan hata ayıklayıcı uygulamasını bulun. (Başlat menüsünü açın ve arama **uzaktan hata ayıklayıcı**.)
   
-     Uzaktan hata ayıklayıcı uzak bir sunucuda çalışıyorsa, uzaktan hata ayıklayıcı uygulama sağ tıklatın ve seçin **yönetici olarak çalıştır** (veya, uzaktan hata ayıklayıcıyı bir hizmet olarak çalıştırmak). Uzak bir sunucuda, çalıştırmıyorsanız yalnızca başlatın normalde.
+    Uzaktan hata ayıklayıcı uzak bir sunucuda çalışıyorsa, uzaktan hata ayıklayıcı uygulama sağ tıklatın ve seçin **yönetici olarak çalıştır** (veya, uzaktan hata ayıklayıcıyı bir hizmet olarak çalıştırmak). Uzak bir sunucuda, çalıştırmıyorsanız yalnızca başlatın normalde.
   
-3.  Başladığınızda uzak araçları ilk kez (veya yapılandırmış olduğunuz önce), **uzaktan hata ayıklama Yapılandırması** dalog kutusu görüntülenir.  
+2. Başladığınızda uzak araçları ilk kez (veya yapılandırmış olduğunuz önce), **uzaktan hata ayıklama Yapılandırması** dalog kutusu görüntülenir.  
   
-     ![RemoteDebuggerConfWizardPage](../debugger/media/remotedebuggerconfwizardpage.png "RemoteDebuggerConfWizardPage")  
+    ![RemoteDebuggerConfWizardPage](../debugger/media/remotedebuggerconfwizardpage.png "RemoteDebuggerConfWizardPage")  
   
-4.  Windows hizmeti API'si (yalnızca Windows Server 2008 R2 üzerinde gerçekleşen) yüklü değilse seçin **yükleme** düğmesi.  
+3. Windows hizmeti API'si (yalnızca Windows Server 2008 R2 üzerinde gerçekleşen) yüklü değilse seçin **yükleme** düğmesi.  
   
-5.  Uzak araçları kullanmak istediğiniz ağ türlerini seçin. En az bir ağ türü seçilmelidir. Bilgisayarları bir etki alanına bağlıysanız, ilk öğe seçmeniz gerekir. Bilgisayar bir çalışma grubunda veya ev grubu bağlıysa, uygun şekilde ikinci veya üçüncü öğe seçmek gerekir.  
+4. Uzak araçları kullanmak istediğiniz ağ türlerini seçin. En az bir ağ türü seçilmelidir. Bilgisayarları bir etki alanına bağlıysanız, ilk öğe seçmeniz gerekir. Bilgisayar bir çalışma grubunda veya ev grubu bağlıysa, uygun şekilde ikinci veya üçüncü öğe seçmek gerekir.  
   
-6.  Seçin **uzaktan hata ayıklamayı Yapılandır** güvenlik duvarını ve Aracı'nı başlatın.  
+5. Seçin **uzaktan hata ayıklamayı Yapılandır** güvenlik duvarını ve Aracı'nı başlatın.  
   
-7.  Yapılandırma tamamlandıktan sonra uzaktan hata ayıklayıcı penceresi görüntülenir.
+6. Yapılandırma tamamlandıktan sonra uzaktan hata ayıklayıcı penceresi görüntülenir.
   
-     ![RemoteDebuggerWindow](../debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")
+    ![RemoteDebuggerWindow](../debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")
   
-     Uzaktan hata ayıklayıcı şimdi bir bağlantı için bekliyor. Sunucu adını not edin ve bunu daha sonra Visual Studio'da yapılandırması için ihtiyacınız olacağı için bağlantı noktası görüntülenir, numarası.  
+    Uzaktan hata ayıklayıcı şimdi bir bağlantı için bekliyor. Sunucu adını not edin ve bunu daha sonra Visual Studio'da yapılandırması için ihtiyacınız olacağı için bağlantı noktası görüntülenir, numarası.  
   
- Hata ayıklama ve uzaktan hata ayıklayıcıyı gerek bittiğinde tıklatın **dosya / çıkış** penceresinde. Buradan yeniden **Başlat** menüsünden veya komut satırından:  
+   Hata ayıklama ve uzaktan hata ayıklayıcıyı gerek bittiğinde tıklatın **dosya / çıkış** penceresinde. Buradan yeniden **Başlat** menüsünden veya komut satırından:  
   
- **\<Visual Studio yükleme dizini > \Common7\IDE\Remote hata ayıklayıcı\\< x86, x64 veya Appx\msvsmon.exe**.  
+   **\<Visual Studio yükleme dizini > \Common7\IDE\Remote hata ayıklayıcı\\< x86, x64 veya Appx\msvsmon.exe**.  
   
 ## <a name="configure-the-remote-debugger"></a>Uzaktan hata ayıklayıcı yapılandırma  
  İlk kez başlattıktan sonra bazı yönleri uzaktan hata ayıklayıcı yapılandırmasını değiştirebilirsiniz.
   
--   Uzaktan hata ayıklayıcıya bağlanmak diğer kullanıcılara etkinleştirmeyi seçerseniz **araçları / izinleri**. İzinleri vermek veya reddetmek için yönetici ayrıcalıklarınızın olması gerekir.
+- Uzaktan hata ayıklayıcıya bağlanmak diğer kullanıcılara etkinleştirmeyi seçerseniz **araçları / izinleri**. İzinleri vermek veya reddetmek için yönetici ayrıcalıklarınızın olması gerekir.
 
-    > [!IMPORTANT]
-    > Visual Studio bilgisayarda kullandığınız kullanıcı hesabına ait farklı bir kullanıcı hesabı altında uzaktan hata ayıklayıcı çalıştırabilirsiniz, ancak farklı bir kullanıcı hesabı için uzaktan hata ayıklayıcının izinleri eklemeniz gerekir. 
+  > [!IMPORTANT]
+  > Visual Studio bilgisayarda kullandığınız kullanıcı hesabına ait farklı bir kullanıcı hesabı altında uzaktan hata ayıklayıcı çalıştırabilirsiniz, ancak farklı bir kullanıcı hesabı için uzaktan hata ayıklayıcının izinleri eklemeniz gerekir. 
 
-     Alternatif olarak, komut satırından uzaktan hata ayıklayıcıyı başlatabilirsiniz **/ allow \<kullanıcıadı >** parametresi: **msvsmon / allow \< username@computer>**.
+   Alternatif olarak, komut satırından uzaktan hata ayıklayıcıyı başlatabilirsiniz **/ allow \<kullanıcıadı >** parametresi: **msvsmon / allow \< username@computer>**.
   
--   Kimlik doğrulama modunu veya bağlantı noktası numarasını değiştirmek veya uzak araçlar için bir zaman aşımı değeri belirtmek için: seçin **Araçlar / Seçenekler**.  
+- Kimlik doğrulama modunu veya bağlantı noktası numarasını değiştirmek veya uzak araçlar için bir zaman aşımı değeri belirtmek için: seçin **Araçlar / Seçenekler**.  
   
-     Varsayılan olarak kullanılan bağlantı noktası numaraları listesi için bkz. [uzaktan hata ayıklayıcı bağlantı noktası atamaları](../debugger/remote-debugger-port-assignments.md).  
+   Varsayılan olarak kullanılan bağlantı noktası numaraları listesi için bkz. [uzaktan hata ayıklayıcı bağlantı noktası atamaları](../debugger/remote-debugger-port-assignments.md).  
   
-     > [!WARNING]
->  Uzak araçları Kimlik Doğrulaması Yok modunda çalıştırmayı seçebilirsiniz, fakat bu mod kesinlikle önerilmez. Bu modda çalıştırdığınızda, ağ güvenliği yoktur. Yalnızca ağ kötü amaçlı veya tehlikeli trafik karşı risk altında olduğunu eminseniz kimlik doğrulaması yok modu seçin.
+   > [!WARNING]
+  >  Uzak araçları Kimlik Doğrulaması Yok modunda çalıştırmayı seçebilirsiniz, fakat bu mod kesinlikle önerilmez. Bu modda çalıştırdığınızda, ağ güvenliği yoktur. Yalnızca ağ kötü amaçlı veya tehlikeli trafik karşı risk altında olduğunu eminseniz kimlik doğrulaması yok modu seçin.
 
 ##  <a name="bkmk_configureService"></a> (İsteğe bağlı) Uzaktan hata ayıklayıcıyı bir hizmet olarak yapılandırma
  ASP.NET ve diğer sunucu ortamlarında hata ayıklama için uzaktan hata ayıklayıcı yönetici olarak çalıştırın veya gerekir, her zaman çalışır, isterseniz, uzaktan hata ayıklayıcıyı bir hizmet olarak çalıştırın.
   
  Uzaktan hata ayıklayıcıyı bir hizmet olarak yapılandırmak istiyorsanız, aşağıdaki adımları izleyin.  
   
-1.  Bulma **uzaktan hata ayıklayıcı Yapılandırma Sihirbazı'nı** (rdbgwiz.exe). (Uzaktan hata ayıklayıcı ayrı bir uygulamadan budur.) Yalnızca uzak araçları yüklediğinizde kullanılabilir. Visual Studio ile yüklü değil.  
+1. Bulma **uzaktan hata ayıklayıcı Yapılandırma Sihirbazı'nı** (rdbgwiz.exe). (Uzaktan hata ayıklayıcı ayrı bir uygulamadan budur.) Yalnızca uzak araçları yüklediğinizde kullanılabilir. Visual Studio ile yüklü değil.  
   
-2.  Yapılandırma Sihirbazı'nı çalıştırmaya başlayın İlk sayfasına geldiğinde tıklayın **sonraki**.  
+2. Yapılandırma Sihirbazı'nı çalıştırmaya başlayın İlk sayfasına geldiğinde tıklayın **sonraki**.  
   
-3.  Denetleme **Visual Studio 2015 uzaktan hata ayıklayıcı bir hizmet olarak çalıştırmak** onay kutusu.  
+3. Denetleme **Visual Studio 2015 uzaktan hata ayıklayıcı bir hizmet olarak çalıştırmak** onay kutusu.  
   
-4.  Parola ve hesap adını ekleyin.  
+4. Parola ve hesap adını ekleyin.  
   
-     Eklemeniz gerekebilir **hizmet oturum açma** bu hesap için doğru kullanıcı. (Bul **yerel güvenlik ilkesi** (secpol.msc) içinde **Başlat** sayfası veya pencere (veya türü **secpol** bir komut isteminde). Penceresi açıldığında, çift **kullanıcı hakları ataması**, ardından bulun **hizmet oturum açma** sağ bölmede. Çift tıklatın. Kullanıcı hesabına eklemek **özellikleri** penceresini açın ve **Tamam**.) Tıklayın **sonraki**.  
+    Eklemeniz gerekebilir **hizmet oturum açma** bu hesap için doğru kullanıcı. (Bul **yerel güvenlik ilkesi** (secpol.msc) içinde **Başlat** sayfası veya pencere (veya türü **secpol** bir komut isteminde). Penceresi açıldığında, çift **kullanıcı hakları ataması**, ardından bulun **hizmet oturum açma** sağ bölmede. Çift tıklatın. Kullanıcı hesabına eklemek **özellikleri** penceresini açın ve **Tamam**.) Tıklayın **sonraki**.  
   
-5.  Uzak araçların iletişim kurmak istediğiniz ağ türünü seçin. En az bir ağ türü seçilmelidir. Bilgisayarları bir etki alanına bağlıysanız, ilk öğe seçmeniz gerekir. Bilgisayar bir çalışma grubunda veya ev grubu bağlıysa, ikinci veya üçüncü öğe seçmeniz gerekir. **İleri**'ye tıklayın.  
+5. Uzak araçların iletişim kurmak istediğiniz ağ türünü seçin. En az bir ağ türü seçilmelidir. Bilgisayarları bir etki alanına bağlıysanız, ilk öğe seçmeniz gerekir. Bilgisayar bir çalışma grubunda veya ev grubu bağlıysa, ikinci veya üçüncü öğe seçmeniz gerekir. **İleri**'ye tıklayın.  
   
-6.  Hizmetin başlatılması, görürsünüz **Visual Studio uzaktan hata ayıklayıcı Yapılandırma Sihirbazı başarıyla tamamladınız**. Hizmet başlatılamazsa göreceğiniz **Visual Studio uzaktan hata ayıklayıcı Yapılandırma Sihirbazı tamamlanamadı**. Sayfa aynı zamanda hizmetin başlatılması almak için izlemeniz gereken bazı ipuçları sağlar.  
+6. Hizmetin başlatılması, görürsünüz **Visual Studio uzaktan hata ayıklayıcı Yapılandırma Sihirbazı başarıyla tamamladınız**. Hizmet başlatılamazsa göreceğiniz **Visual Studio uzaktan hata ayıklayıcı Yapılandırma Sihirbazı tamamlanamadı**. Sayfa aynı zamanda hizmetin başlatılması almak için izlemeniz gereken bazı ipuçları sağlar.  
   
-7.  **Son**'a tıklayın.  
+7. **Son**'a tıklayın.  
   
- Bu noktada uzaktan hata ayıklayıcıyı bir hizmet olarak çalışıyor. Bu sayfasına giderek kontrol **Denetim Masası / Hizmetleri** ve örnek kod **Visual Studio 2015 uzaktan hata ayıklayıcı**.  
+   Bu noktada uzaktan hata ayıklayıcıyı bir hizmet olarak çalışıyor. Bu sayfasına giderek kontrol **Denetim Masası / Hizmetleri** ve örnek kod **Visual Studio 2015 uzaktan hata ayıklayıcı**.  
   
- Uzaktan hata ayıklayıcı hizmetini durdurup **Denetim Masası / Hizmetleri**.  
+   Uzaktan hata ayıklayıcı hizmetini durdurup **Denetim Masası / Hizmetleri**.  
 
 ## <a name="remote-debug-an-aspnet-application"></a>Uzaktan hata ayıklama ASP.NET uygulaması  
  IIS çalıştıran bir uzak bilgisayara bir ASP.NET uygulaması dağıtma, IIS sürümü ve işletim sistemine bağlı olarak farklı adımlar vardır. IIS 7.5 veya sonraki bir sürümü yüklüyse lütfen bkz. Windows Server 2008 veya Windows Server 2012 çalıştıran uzak bilgisayarlar için [uzak bir IIS bilgisayarda uzaktan hata ayıklama ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).
@@ -186,73 +186,73 @@ Uzaktan hata ayıklayıcıyı bulabilirsiniz (**msvsmon.exe**) bir bilgisayarda 
 ## <a name="remote-debug-a-visual-c-project"></a>Visual C++ projesinin hatalarını uzaktan ayıklama  
  Aşağıdaki yordamda projesinin yolunu ve adını C:\remotetemp\MyMfc ve uzak bilgisayarın adını **MJO DL**.  
   
-1.  Adlı bir MFC uygulaması oluşturmak **mymfc.**  
+1. Adlı bir MFC uygulaması oluşturmak **mymfc.**  
   
-2.  Herhangi bir kolayca, örnekte için ulaşıldığında uygulamada bir kesme noktası ayarlayın **MainFrm.cpp**, başlangıcında `CMainFrame::OnCreate`.  
+2. Herhangi bir kolayca, örnekte için ulaşıldığında uygulamada bir kesme noktası ayarlayın **MainFrm.cpp**, başlangıcında `CMainFrame::OnCreate`.  
   
-3.  Çözüm Gezgini'nde sağ tıklatın ve proje **özellikleri**. Açık **hata ayıklama** sekmesi.  
+3. Çözüm Gezgini'nde sağ tıklatın ve proje **özellikleri**. Açık **hata ayıklama** sekmesi.  
   
-4.  Ayarlama **başlatmak için hata ayıklayıcı** için **uzaktan Windows hata ayıklayıcı**.  
+4. Ayarlama **başlatmak için hata ayıklayıcı** için **uzaktan Windows hata ayıklayıcı**.  
   
-     ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")  
+    ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")  
   
-5.  Aşağıdaki özelliklerde değişiklik:  
+5. Aşağıdaki özelliklerde değişiklik:  
   
-    |Ayar|Değer|
-    |-|-|  
-    |Uzaktan komut|C:\remotetemp\mymfc.exe|  
-    |Çalışma dizini|C:\remotetemp|  
-    |Uzak sunucu adı|MJO DL:*BağlantıNoktasıNumarası*|  
-    |bağlantı|Windows kimlik doğrulaması ile uzaktan|  
-    |Hata ayıklayıcı türü|Yalnızca yerel|  
-    |Dağıtım dizini|C:\remotetemp.|  
-    |Dağıtılacak ek dosyalar|C:\data\mymfcdata.txt.|  
+   |Ayar|Değer|
+   |-|-|  
+   |Uzaktan komut|C:\remotetemp\mymfc.exe|  
+   |Çalışma dizini|C:\remotetemp|  
+   |Uzak sunucu adı|MJO DL:*BağlantıNoktasıNumarası*|  
+   |bağlantı|Windows kimlik doğrulaması ile uzaktan|  
+   |Hata ayıklayıcı türü|Yalnızca yerel|  
+   |Dağıtım dizini|C:\remotetemp.|  
+   |Dağıtılacak ek dosyalar|C:\data\mymfcdata.txt.|  
   
-     (İsteğe bağlı) ek dosyaları dağıtmak istiyorsanız her iki makinelerde klasörü bulunmalıdır.  
+    (İsteğe bağlı) ek dosyaları dağıtmak istiyorsanız her iki makinelerde klasörü bulunmalıdır.  
   
-6.  Çözüm Gezgini'nde çözüme sağ tıklayıp seçin **Configuration Manager**.  
+6. Çözüm Gezgini'nde çözüme sağ tıklayıp seçin **Configuration Manager**.  
   
-7.  İçin **hata ayıklama** yapılandırma, select **Dağıt** onay kutusu.  
+7. İçin **hata ayıklama** yapılandırma, select **Dağıt** onay kutusu.  
   
-     ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
+    ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
   
-8.  Hata Ayıklamayı Başlat (**hata ayıklama / hata ayıklamayı Başlat**, veya **F5**).  
+8. Hata Ayıklamayı Başlat (**hata ayıklama / hata ayıklamayı Başlat**, veya **F5**).  
   
 9. Yürütülebilir dosyayı uzak bilgisayara otomatik olarak dağıtılır.  
   
 10. İstenirse, uzak makineye bağlanmak için ağ kimlik bilgilerini girin.  
   
-     Gerekli kimlik bilgilerinin, ağınızın güvenlik yapılandırması'nı özgüdür. Örneğin, bir etki alanı bilgisayarında güvenlik sertifikasını seçin veya etki alanı adınızı ve parolanızı girin. Bir etki alanı olmayan makinede, makine adı ve geçerli kullanıcı hesabı adı gibi girebilirsiniz **MJO-DL\name@something.com**, doğru parola ile birlikte.  
+     Gerekli kimlik bilgilerinin, ağınızın güvenlik yapılandırması'nı özgüdür. Örneğin, bir etki alanı bilgisayarında güvenlik sertifikasını seçin veya etki alanı adınızı ve parolanızı girin. Bir etki alanı olmayan makinede, makine adı ve geçerli kullanıcı hesabı adı gibi girebilirsiniz <strong>MJO-DL\name@something.com</strong>, doğru parola ile birlikte.  
   
 11. Visual Studio bilgisayarda yürütme kesme noktasında durdurulduğunu görmeniz gerekir.  
   
     > [!TIP]
     >  Alternatif olarak, dosyaların ayrı bir adım olarak dağıtabilirsiniz. İçinde **Çözüm Gezgini** sağ **mymfc** düğümünü seçip **Dağıt**.  
   
- Uygulama tarafından kullanılması gereken kod dışı dosyalara varsa, bunları Visual Studio projenize eklemeniz gerekir. Ek dosyalar için bir proje klasörü oluşturun (içinde **Çözüm Gezgini**, tıklayın **Ekle / yeni klasör**.) Dosyaları klasöre eklersiniz (içinde **Çözüm Gezgini**, tıklayın **Ekle / var olanı öğesi**, ardından dosyaları seçin.). Üzerinde **özellikleri** sayfasında her dosya için **çıkış dizinine Kopyala** için **her zaman Kopyala**.  
+    Uygulama tarafından kullanılması gereken kod dışı dosyalara varsa, bunları Visual Studio projenize eklemeniz gerekir. Ek dosyalar için bir proje klasörü oluşturun (içinde **Çözüm Gezgini**, tıklayın **Ekle / yeni klasör**.) Dosyaları klasöre eklersiniz (içinde **Çözüm Gezgini**, tıklayın **Ekle / var olanı öğesi**, ardından dosyaları seçin.). Üzerinde **özellikleri** sayfasında her dosya için **çıkış dizinine Kopyala** için **her zaman Kopyala**.  
   
 ## <a name="remote-debug-a-visual-c-or-visual-basic-project"></a>Uzaktan hata ayıklama Visual C# veya Visual Basic projesi  
  Hata ayıklayıcı uzak makinede Visual C# veya Visual Basic Masaüstü uygulamalar dağıtamazsınız, ancak yine de bunları aşağıdaki gösterildiği gibi uzaktan hata ayıklama. Aşağıdaki yordamda adlı bir bilgisayarda hata ayıklamak istediğiniz varsayılmaktadır **MJO DL**önceki resimde gösterildiği gibi.
   
-1.  Adlı bir WPF projesi oluşturma **MyWpf**.  
+1. Adlı bir WPF projesi oluşturma **MyWpf**.  
   
-2.  Bir kesme noktası herhangi bir kolayca ulaşıldığında kodda ayarlayın.  
+2. Bir kesme noktası herhangi bir kolayca ulaşıldığında kodda ayarlayın.  
   
-     Örneğin, bir düğme işleyicisinde bir kesme noktası ayarlayabilirsiniz. Bunu yapmak için MainWindow.xaml açın ve araç kutusundan bir düğme denetimi ekleyin ve onun işleyicisi açmak için düğmeyi çift tıklatın.
+    Örneğin, bir düğme işleyicisinde bir kesme noktası ayarlayabilirsiniz. Bunu yapmak için MainWindow.xaml açın ve araç kutusundan bir düğme denetimi ekleyin ve onun işleyicisi açmak için düğmeyi çift tıklatın.
   
-3.  Çözüm Gezgini'nde projeye sağ tıklayıp seçin **özellikleri**.  
+3. Çözüm Gezgini'nde projeye sağ tıklayıp seçin **özellikleri**.  
   
-4.  Üzerinde **özellikleri** sayfasında **hata ayıklama** sekmesi.  
+4. Üzerinde **özellikleri** sayfasında **hata ayıklama** sekmesi.  
   
-     ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")  
+    ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")  
   
-5.  Emin **çalışma dizini** metin kutusu boştur.  
+5. Emin **çalışma dizini** metin kutusu boştur.  
   
-6.  Seçin **uzak makine**ve türü **MJO-DL:4020** metin kutusuna. (4020 uzaktan hata ayıklayıcı penceresinde gösterilen bağlantı noktası numarasıdır).  
+6. Seçin **uzak makine**ve türü **MJO-DL:4020** metin kutusuna. (4020 uzaktan hata ayıklayıcı penceresinde gösterilen bağlantı noktası numarasıdır).  
   
-7.  Emin olun **yerel kod hata ayıklamayı** seçilmez.  
+7. Emin olun **yerel kod hata ayıklamayı** seçilmez.  
   
-8.  Projeyi oluşturun.  
+8. Projeyi oluşturun.  
   
 9. Uzak bilgisayarda aynı yol üzerinde bir klasör oluşturun **hata ayıklama** Visual Studio'nun bilgisayarınızda klasörünü:  **\<kaynak yolu > \MyWPF\MyWPF\bin\Debug**.  
   
@@ -271,7 +271,7 @@ Uzaktan hata ayıklayıcıyı bulabilirsiniz (**msvsmon.exe**) bir bilgisayarda 
   
 13. İstenirse, uzak makineye bağlanmak için ağ kimlik bilgilerini girin.  
   
-     Gerekli kimlik bilgilerinin, ağınızın güvenlik yapılandırmasına bağlı olarak farklılık gösterir. Örneğin, bir etki alanı bilgisayarında etki alanı adınızı ve parolanızı girebilirsiniz. Bir etki alanı olmayan makinede, makine adı ve geçerli kullanıcı hesabı adı gibi girebilirsiniz **MJO-DL\name@something.com**, doğru parola ile birlikte.
+     Gerekli kimlik bilgilerinin, ağınızın güvenlik yapılandırmasına bağlı olarak farklılık gösterir. Örneğin, bir etki alanı bilgisayarında etki alanı adınızı ve parolanızı girebilirsiniz. Bir etki alanı olmayan makinede, makine adı ve geçerli kullanıcı hesabı adı gibi girebilirsiniz <strong>MJO-DL\name@something.com</strong>, doğru parola ile birlikte.
 
      WPF uygulamanın ana pencere uzak bilgisayarda açık olduğunu görmeniz gerekir.
   
@@ -279,7 +279,7 @@ Uzaktan hata ayıklayıcıyı bulabilirsiniz (**msvsmon.exe**) bir bilgisayarda 
   
 15. Visual Studio makinede yürütme kesme noktasında durduruldu görmeniz gerekir.
   
- Uygulama tarafından kullanılması gereken kod dışı dosyalara varsa, bunları Visual Studio projenize eklemeniz gerekir. Ek dosyalar için bir proje klasörü oluşturun (içinde **Çözüm Gezgini**, tıklayın **Ekle / yeni klasör**.) Dosyaları klasöre eklersiniz (içinde **Çözüm Gezgini**, tıklayın **Ekle / var olanı öğesi**, ardından dosyaları seçin.). Üzerinde **özellikleri** sayfasında her dosya için **çıkış dizinine Kopyala** için **her zaman Kopyala**.
+    Uygulama tarafından kullanılması gereken kod dışı dosyalara varsa, bunları Visual Studio projenize eklemeniz gerekir. Ek dosyalar için bir proje klasörü oluşturun (içinde **Çözüm Gezgini**, tıklayın **Ekle / yeni klasör**.) Dosyaları klasöre eklersiniz (içinde **Çözüm Gezgini**, tıklayın **Ekle / var olanı öğesi**, ardından dosyaları seçin.). Üzerinde **özellikleri** sayfasında her dosya için **çıkış dizinine Kopyala** için **her zaman Kopyala**.
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>Uzak simgeleri ile hata ayıklamayı kurma  
  Kodunuzu Visual Studio bilgisayar üzerinde oluşturmak simgelerle hata ayıklamanız mümkün olması gerekir. Uzaktan hata ayıklayıcı performansının çok yerel semboller kullandığınızda daha iyidir.  Uzak sembolleri kullanmanız gerekirse, uzak makinede simgeleri aramak için uzaktan hata ayıklama İzleyicisi söylemeniz gerekir.  

@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 730064f3557f6ef98579d4cbd79adb451c7c9bdc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 32116de7bb88fe937980b02e1789830a27ca36b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196626"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845881"
 ---
 # <a name="xml-schema-explorer"></a>XML Şema Gezgini
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,44 +29,44 @@ XML Şeması Gezgini XML Şeması Tanım Dili (XSD) şemalarla çalışma sağla
   
  XML Şeması Gezgini aşağıdakileri yapmanızı sağlar:  
   
--   Şema kümesi hızlı bir bakış edinin.  
+- Şema kümesi hızlı bir bakış edinin.  
   
--   Gözat ve ağaç gidin.  
+- Gözat ve ağaç gidin.  
   
--   Anahtar sözcüğü ve şema özgü aramaları gerçekleştirin. Daha fazla bilgi için [şema kümesi arama](../xml-tools/searching-the-schema-set.md).  
+- Anahtar sözcüğü ve şema özgü aramaları gerçekleştirin. Daha fazla bilgi için [şema kümesi arama](../xml-tools/searching-the-schema-set.md).  
   
--   Arama sonuçlarını grafik görünümü veya içerik Modle görünümü ekleme  
+- Arama sonuçlarını grafik görünümü veya içerik Modle görünümü ekleme  
   
--   Belge sırada, tür veya ad ağaç sıralayın. Daha fazla bilgi için [sıralama, filtreleme ve gruplandırma](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).  
+- Belge sırada, tür veya ad ağaç sıralayın. Daha fazla bilgi için [sıralama, filtreleme ve gruplandırma](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).  
   
--   XML Düzenleyicisi'ni açın ve XSD dosyası kod konumlarda atlayın. Daha fazla bilgi için [Tümleştirmesi ile XML Düzenleyicisi](../xml-tools/integration-with-xml-editor.md).  
+- XML Düzenleyicisi'ni açın ve XSD dosyası kod konumlarda atlayın. Daha fazla bilgi için [Tümleştirmesi ile XML Düzenleyicisi](../xml-tools/integration-with-xml-editor.md).  
   
--   Genel öğeler için XML örneği oluşturur.  
+- Genel öğeler için XML örneği oluşturur.  
   
- XML Şeması Gezgini ağaç görünümü ayarlamak şema Cerberus bir görünümünü sağlar. XML Şeması Gezgini ayrıca arama, filtreleme, gezinti ve sıralama sağlar. XML Şeması Gezgini erişmek için aşağıdakilerden birini yapın:  
+  XML Şeması Gezgini ağaç görünümü ayarlamak şema Cerberus bir görünümünü sağlar. XML Şeması Gezgini ayrıca arama, filtreleme, gezinti ve sıralama sağlar. XML Şeması Gezgini erişmek için aşağıdakilerden birini yapın:  
   
--   Kullanıyorsanız [başlangıç görünümündeki](../xml-tools/start-view.md), tıklayın **XML Şeması Gezgini** bağlantı.  
+- Kullanıyorsanız [başlangıç görünümündeki](../xml-tools/start-view.md), tıklayın **XML Şeması Gezgini** bağlantı.  
   
--   Kullanıyorsanız [graf görünümünü](../xml-tools/graph-view.md) veya [içerik modeli görünümünü](../xml-tools/content-model-view.md) ve çalışma alanınızda düğümünüz, XML şema Gezgini seçmek için bağlam menüsünü kullanın.  
+- Kullanıyorsanız [graf görünümünü](../xml-tools/graph-view.md) veya [içerik modeli görünümünü](../xml-tools/content-model-view.md) ve çalışma alanınızda düğümünüz, XML şema Gezgini seçmek için bağlam menüsünü kullanın.  
   
--   XML şema Explorerfrom belirleyebilirsiniz **görünümü** menüsü.  
+- XML şema Explorerfrom belirleyebilirsiniz **görünümü** menüsü.  
   
--   Bir Visual Basic .xsd dosyası ile ilişkili XML değişmez değeri olan bir .vb dosyası XML şema Explorerfrom erişebilirsiniz. XML şema Gezgini içinde ayarlamak için bir XML düğümünde bir XML değişmez değer veya bir XML ad alanı alma sağ tıklayın ve seçin şemasını görmek için **şema Gezgini'nde Göster** komutu. Daha fazla bilgi için [tümleştirme, XML değişmez değerleri ile XML Şeması Gezgini](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).  
+- Bir Visual Basic .xsd dosyası ile ilişkili XML değişmez değeri olan bir .vb dosyası XML şema Explorerfrom erişebilirsiniz. XML şema Gezgini içinde ayarlamak için bir XML düğümünde bir XML değişmez değer veya bir XML ad alanı alma sağ tıklayın ve seçin şemasını görmek için **şema Gezgini'nde Göster** komutu. Daha fazla bilgi için [tümleştirme, XML değişmez değerleri ile XML Şeması Gezgini](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).  
   
 ## <a name="tree-view"></a>Ağaç görünümü  
  XML Şeması Gezgini ağaç yapısında önceden derlenmiş şema kümesi bilgilerini görüntüler. Ağaç yapısı şu şekilde düzenlenmiştir:  
   
--   En üst düzeyinde şema düğüm ayarlanır.  
+- En üst düzeyinde şema düğüm ayarlanır.  
   
--   İkinci düzey ad alanlarını içerir.  
+- İkinci düzey ad alanlarını içerir.  
   
--   Üçüncü düzeyini dosyaları içerir.  
+- Üçüncü düzeyini dosyaları içerir.  
   
--   Dördüncü düzey genel düğümleri içerir. Bu içerebilir öğeler, grupları, karmaşık türler, basit türler, öznitelikleri, öznitelik grupları ve `include`, `import`, ve `redefine` deyimleri.  
+- Dördüncü düzey genel düğümleri içerir. Bu içerebilir öğeler, grupları, karmaşık türler, basit türler, öznitelikleri, öznitelik grupları ve `include`, `import`, ve `redefine` deyimleri.  
   
- Bir ağaç yapısı örneği verilmiştir:  
+  Bir ağaç yapısı örneği verilmiştir:  
   
- ![XML Şeması Gezgini](../xml-tools/media/xmlschemaexplorer.gif "XMLSchemaExplorer")  
+  ![XML Şeması Gezgini](../xml-tools/media/xmlschemaexplorer.gif "XMLSchemaExplorer")  
   
 ## <a name="selection-and-activation"></a>Seçim ve etkinleştirme  
  Vurgulayın ve bir düğümü seçmek için şema Gezgini içinde bir kez tıklayın.  

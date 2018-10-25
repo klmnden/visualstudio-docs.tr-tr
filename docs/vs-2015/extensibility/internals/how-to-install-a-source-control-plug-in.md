@@ -16,12 +16,12 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35150331ed22960bb8556a7b1175e0ed629efca7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f8c442aec21042faa4aa992dcdefc4f9d2ad335
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292987"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812991"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Nasıl yapılır: kaynak denetimi eklentisi yükleme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -98,16 +98,16 @@ Kaynak Denetimi Eklentisi oluşturma üç adımdan oluşur:
 ## <a name="how-an-ide-locates-the-dll"></a>Bir IDE DLL nasıl bulur  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE olan iki kaynak bulma yolları denetleyen eklentisi DLL'sini:  
   
--   Varsayılan kaynak denetimi eklentisi bulmak ve sessiz bir şekilde bağlanabilir.  
+- Varsayılan kaynak denetimi eklentisi bulmak ve sessiz bir şekilde bağlanabilir.  
   
--   Tüm kayıtlı kaynak denetimi eklentileri, bir kullanıcının seçtiği bulun.  
+- Tüm kayıtlı kaynak denetimi eklentileri, bir kullanıcının seçtiği bulun.  
   
- İlk yol DLL bulmak için IDE ProviderRegKey girdisiyle HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider alt anahtarı altında arar. Bu giriş değerini başka bir alt anahtarına işaret eder. IDE ardından bu ikinci subkey under HKEY_LOCAL_MACHINE dizinine SccServerPath adlı bir giriş arar. Bu giriş değerini IDE DLL'ye işaret eder.  
+  İlk yol DLL bulmak için IDE ProviderRegKey girdisiyle HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider alt anahtarı altında arar. Bu giriş değerini başka bir alt anahtarına işaret eder. IDE ardından bu ikinci subkey under HKEY_LOCAL_MACHINE dizinine SccServerPath adlı bir giriş arar. Bu giriş değerini IDE DLL'ye işaret eder.  
   
 > [!NOTE]
 >  IDE göreli yollar (örneğin,.\NewProvider.DLL) DLL'leri yüklenmez. DLL tam yolun belirtilmesi gerekir (örneğin, c:\Providers\NewProvider.DLL). Bu, yetkisiz veya başkasının kimliğine bürünülerek gerçekleştirilen eklentisi DLL'sini yüklemesini engelleyerek IDE güvenliğini güçlendirir.  
   
- İkinci bir yolla DLL bulmak için tüm girişleri için HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders alt anahtarı altında IDE arar *.* Her girişin bir ada ve değere sahip. IDE, kullanıcıya bu adlarının bir listesini görüntüler *.* Kullanıcı adları seçtiğinde, IDE bir alt anahtarına işaret eden seçilen adı değeri bulur. Bu subkey under HKEY_LOCAL_MACHINE dizinine SccServerPath adlı bir giriş IDE arar. Bu giriş değerini doğru DLL'ye IDE işaret eder.  
+ İkinci bir yolla DLL bulmak için tüm girişleri için HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders alt anahtarı altında IDE arar<em>.</em> Her girişin bir ada ve değere sahip. IDE, kullanıcıya bu adlarının bir listesini görüntüler<em>.</em> Kullanıcı adları seçtiğinde, IDE bir alt anahtarına işaret eden seçilen adı değeri bulur. Bu subkey under HKEY_LOCAL_MACHINE dizinine SccServerPath adlı bir giriş IDE arar. Bu giriş değerini doğru DLL'ye IDE işaret eder.  
   
  DLL bulma her iki şekilde destek ve sonuç olarak, önceki bir ayarı üzerine ProviderRegKey, ayarlamak, kaynak denetimi eklentisi gerekir. Böylece kullanıcı kullanmak için hangi kaynak denetimi eklentisi seçeneği daha da önemlisi, onu kendisini InstalledSccProviders listesine eklemeniz gerekir.  
   

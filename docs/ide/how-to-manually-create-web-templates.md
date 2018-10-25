@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d092234c183c93ce99e7d864c71c64a332aeb758
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 59315562e16a7ce3ef4e0a79551f524ca88d44bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178949"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826407"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Nasıl yapılır: web şablonlarını elle oluşturma
 
@@ -30,33 +30,33 @@ Bir web şablonu oluşturma, diğer türlerdeki şablonları oluşturmaktan daha
 
 1. Web projesi oluşturun.
 
-1. Değiştirme veya proje dosyaları silin veya yeni dosyalar projeye ekleyin.
+2. Değiştirme veya proje dosyaları silin veya yeni dosyalar projeye ekleyin.
 
-1. Bir XML dosyası oluşturun ve ile kaydetmek bir *vstemplate* projeniz gibi aynı dizinde dosya adı uzantısı. Visual Studio'da projeye eklemeyin.
+3. Bir XML dosyası oluşturun ve ile kaydetmek bir *vstemplate* projeniz gibi aynı dizinde dosya adı uzantısı. Visual Studio'da projeye eklemeyin.
 
-1. Düzen *vstemplate* proje şablon meta verilerini sağlamak için XML dosyası. Daha fazla bilgi için [örnekte](#example).
+4. Düzen *vstemplate* proje şablon meta verilerini sağlamak için XML dosyası. Daha fazla bilgi için [örnekte](#example).
 
-1. Bulun `ProjectType` öğesinde *vstemplate* dosya ve metin değerine `Web`.
+5. Bulun `ProjectType` öğesinde *vstemplate* dosya ve metin değerine `Web`.
 
-1. Aşağıdaki `ProjectType` öğe, Ekle bir `ProjectSubType` öğesi ve metin şablonunun programlama dili değeri ayarlayın. Programlama dili, aşağıdaki değerlerden biri olabilir:
+6. Aşağıdaki `ProjectType` öğe, Ekle bir `ProjectSubType` öğesi ve metin şablonunun programlama dili değeri ayarlayın. Programlama dili, aşağıdaki değerlerden biri olabilir:
 
-    - CSharp
-    - VisualBasic
+   - CSharp
+   - VisualBasic
 
-    Örneğin:
+     Örneğin:
 
-    ```xml
-    <TemplateData>
-        ...
-        <ProjectType>Web</ProjectType>
-        <ProjectSubType>CSharp</ProjectSubType>
-        ...
-    </TemplateData>
-    ```
+     ```xml
+     <TemplateData>
+       ...
+       <ProjectType>Web</ProjectType>
+       <ProjectSubType>CSharp</ProjectSubType>
+       ...
+     </TemplateData>
+     ```
 
-1. Şablonunuzda dosyaları seçin (Bu içerir *vstemplate* dosyası), seçime sağ tıklayın ve seçme **göndermek** > **sıkıştırılmış (daraltılmış) klasör**. Dosyalar sıkıştırılmadan bir *.zip* dosya.
+7. Şablonunuzda dosyaları seçin (Bu içerir *vstemplate* dosyası), seçime sağ tıklayın ve seçme **göndermek** > **sıkıştırılmış (daraltılmış) klasör**. Dosyalar sıkıştırılmadan bir *.zip* dosya.
 
-1. PUT *.zip* Visual Studio Proje şablonu dizininde şablon dosyası. Varsayılan olarak, bu dizindir *%USERPROFILE%\Documents\Visual Studio \<sürüm\>\ProjectTemplates*.
+8. PUT *.zip* Visual Studio Proje şablonu dizininde şablon dosyası. Varsayılan olarak, bu dizindir *%USERPROFILE%\Documents\Visual Studio \<sürüm\>\ProjectTemplates*.
 
 ## <a name="example"></a>Örnek
 

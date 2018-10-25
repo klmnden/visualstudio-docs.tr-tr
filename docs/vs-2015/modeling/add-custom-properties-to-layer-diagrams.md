@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b43f7ab5a3247bbff4954616732aa0861726cc2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 517d9f40dc0c98ca8572c31ae256e81de864171e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235163"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844425"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Katman diyagramlarına özel özellikler ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ Katman diyagramları için uzantı kodu yazdığınızda, herhangi bir öğeyle 
   
 > [!IMPORTANT]
 >  Özellikleri görünür yapmak için katman özellikleri görünür olmasını istediğiniz her bilgisayarda aşağıdaki değişikliği yapmanız gerekir.  
->   
->  1.  Kullanarak Not Defteri'ni çalıştırma **yönetici olarak çalıştır**. açın `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
-> 2.  İçinde `Content` öğesini ekleyin:  
->   
->     ```xml  
->     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
->     ```  
-> 3.  Altında **Visual Studio Araçları** Visual Studio uygulama başlangıç menüsünde, açık bir bölümünü **Geliştirici komut istemi**.  
->   
->      Girin:  
->   
->      `devenv /rootSuffix /updateConfiguration`  
->   
->      `devenv /rootSuffix Exp /updateConfiguration`  
-> 4.  Visual Studio'yu yeniden başlatın.  
+> 
+> 1. Kullanarak Not Defteri'ni çalıştırma **yönetici olarak çalıştır**. açın `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
+>    2.  İçinde `Content` öğesini ekleyin:  
+> 
+>    ```xml  
+>    <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
+>    ```  
+>    3.  Altında **Visual Studio Araçları** Visual Studio uygulama başlangıç menüsünde, açık bir bölümünü **Geliştirici komut istemi**.  
+> 
+>    Girin:  
+> 
+>    `devenv /rootSuffix /updateConfiguration`  
+> 
+>    `devenv /rootSuffix Exp /updateConfiguration`  
+>    4.  Visual Studio'yu yeniden başlatın.  
   
  **Kodunuzun bir VSIX projesinde olduğundan emin olun**  
   

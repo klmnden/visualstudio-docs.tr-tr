@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb7cb76c471681fe49e5ea6957cd94f9829c64db
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 255121bb7dd504ecd96d05fb6257c3b2edeb96ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677142"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816969"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>İzlenecek yol: bir çalışma kitabından bir sunucuda önbelleğe alınmış verileri alma
   Bu kılavuzda bir Microsoft Office Excel çalışma kitabını Excel kullanarak başlatmadan önbelleğe alınan bir veri kümesinden veri almayı gösterir <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> sınıfı.  
@@ -33,17 +33,17 @@ ms.locfileid: "35677142"
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
--   Verileri içeren bir veri kümesi tanımlayarak *AdventureWorksLT* veritabanı.  
+- Verileri içeren bir veri kümesi tanımlayarak *AdventureWorksLT* veritabanı.  
   
--   Veri kümesinin örnekleri, bir Excel çalışma kitabı projesi ve bir konsol uygulama projesi oluşturma.  
+- Veri kümesinin örnekleri, bir Excel çalışma kitabı projesi ve bir konsol uygulama projesi oluşturma.  
   
--   Oluşturma bir <xref:Microsoft.Office.Tools.Excel.ListObject> çalışma kitabındaki veri kümesine bağlı ve doldurulurken <xref:Microsoft.Office.Tools.Excel.ListObject> verilerle çalışma kitabı açılır.  
+- Oluşturma bir <xref:Microsoft.Office.Tools.Excel.ListObject> çalışma kitabındaki veri kümesine bağlı ve doldurulurken <xref:Microsoft.Office.Tools.Excel.ListObject> verilerle çalışma kitabı açılır.  
   
--   Veri kümesini çalışma kitabında veri önbelleğine ekleniyor.  
+- Veri kümesini çalışma kitabında veri önbelleğine ekleniyor.  
   
--   Excel başlatmadan konsol uygulamasında, veri kümesine önbelleğe alınan veri kümesindeki verileri okuma.  
+- Excel başlatmadan konsol uygulamasında, veri kümesine önbelleğe alınan veri kümesindeki verileri okuma.  
   
- Bu izlenecek yol, geliştirme bilgisayarınızda kodun çalıştığını varsayar olsa da, bu izlenecek yol gösterilen kod Excel yüklü olmayan bir sunucu üzerinde kullanılabilir.  
+  Bu izlenecek yol, geliştirme bilgisayarınızda kodun çalıştığını varsayar olsa da, bu izlenecek yol gösterilen kod Excel yüklü olmayan bir sunucu üzerinde kullanılabilir.  
   
 > [!NOTE]  
 >  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).  
@@ -93,29 +93,29 @@ ms.locfileid: "35677142"
   
 ### <a name="define-a-typed-dataset-in-the-class-library-project"></a>Sınıf kitaplığı projesinde bir türü belirtilmiş veri kümesi tanımlayın  
   
-1.  İçinde **Çözüm Gezgini**, tıklayın **AdventureWorksDataSet** proje.  
+1. İçinde **Çözüm Gezgini**, tıklayın **AdventureWorksDataSet** proje.  
   
-2.  Varsa **veri kaynakları** penceresi görünür değilse, bunu, menü çubuğundan seçme görüntüleyebilir **görünümü** > **diğer Windows**  >   **Veri kaynakları**.  
+2. Varsa **veri kaynakları** penceresi görünür değilse, bunu, menü çubuğundan seçme görüntüleyebilir **görünümü** > **diğer Windows**  >   **Veri kaynakları**.  
   
-3.  Seçin **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı Yapılandırma Sihirbazı**.  
+3. Seçin **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı Yapılandırma Sihirbazı**.  
   
-4.  Tıklayın **veritabanı**ve ardından **sonraki**.  
+4. Tıklayın **veritabanı**ve ardından **sonraki**.  
   
-5.  AdventureWorksLT veritabanında var olan bir bağlantınız varsa bu bağlantıyı seçin ve tıklayın **sonraki**.  
+5. AdventureWorksLT veritabanında var olan bir bağlantınız varsa bu bağlantıyı seçin ve tıklayın **sonraki**.  
   
-     ' A tıklayıp **yeni bağlantı**ve **Bağlantı Ekle** yeni bir bağlantı oluşturmak için iletişim kutusu. Daha fazla bilgi için [yeni bağlantı ekleme](../data-tools/add-new-connections.md).  
+    ' A tıklayıp **yeni bağlantı**ve **Bağlantı Ekle** yeni bir bağlantı oluşturmak için iletişim kutusu. Daha fazla bilgi için [yeni bağlantı ekleme](../data-tools/add-new-connections.md).  
   
-6.  İçinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** sayfasında **sonraki**.  
+6. İçinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** sayfasında **sonraki**.  
   
-7.  İçinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları** seçip **ürün (SalesLT)**.  
+7. İçinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları** seçip **ürün (SalesLT)**.  
   
-8.  **Son**'a tıklayın.  
+8. **Son**'a tıklayın.  
   
-     *AdventureWorksLTDataSet.xsd* dosya eklendiğinde **AdventureWorksDataSet** proje. Bu dosya, aşağıdakileri tanımlar:  
+    *AdventureWorksLTDataSet.xsd* dosya eklendiğinde **AdventureWorksDataSet** proje. Bu dosya, aşağıdakileri tanımlar:  
   
-    -   Adlı bir türü belirtilmiş veri kümesi `AdventureWorksLTDataSet`. Bu veri kümesi Product tablosunda AdventureWorksLT veritabanında içeriğini temsil eder.  
+   - Adlı bir türü belirtilmiş veri kümesi `AdventureWorksLTDataSet`. Bu veri kümesi Product tablosunda AdventureWorksLT veritabanında içeriğini temsil eder.  
   
-    -   Adlı bir TableAdapter `ProductTableAdapter`. Bu TableAdapter okuyup veri yazmak için kullanılan `AdventureWorksLTDataSet`. Daha fazla bilgi için [TableAdapter genel bakışı](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
+   - Adlı bir TableAdapter `ProductTableAdapter`. Bu TableAdapter okuyup veri yazmak için kullanılan `AdventureWorksLTDataSet`. Daha fazla bilgi için [TableAdapter genel bakışı](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
   
      Bu izlenecek yolda, bu nesnelerin her ikisi de kullanır.  
   
@@ -236,44 +236,44 @@ ms.locfileid: "35677142"
   
 ### <a name="retrieve-data-from-the-cached-dataset"></a>Önbelleğe alınmış veri kümesinden veri alın  
   
-1.  İçinde **Çözüm Gezgini**, sağ **DataReader** projesine **Başvuru Ekle**.  
+1. İçinde **Çözüm Gezgini**, sağ **DataReader** projesine **Başvuru Ekle**.  
   
-2.  Üzerinde **.NET** sekmesinde **Microsoft.VisualStudio.Tools.Applications.ServerDocument**.  
+2. Üzerinde **.NET** sekmesinde **Microsoft.VisualStudio.Tools.Applications.ServerDocument**.  
   
-3.  **Tamam**'ı tıklatın.  
+3. **Tamam**'ı tıklatın.  
   
-4.  İçinde **Çözüm Gezgini**, sağ **DataReader** projesine **Başvuru Ekle**.  
+4. İçinde **Çözüm Gezgini**, sağ **DataReader** projesine **Başvuru Ekle**.  
   
-5.  Üzerinde **projeleri** sekmesinde **AdventureWorksDataSet**, tıklatıp **Tamam**.  
+5. Üzerinde **projeleri** sekmesinde **AdventureWorksDataSet**, tıklatıp **Tamam**.  
   
-6.  Açık *Program.cs* veya *Module1.vb* dosyasını Kod düzenleyicisinde.  
+6. Açık *Program.cs* veya *Module1.vb* dosyasını Kod düzenleyicisinde.  
   
-7.  Aşağıdaki **kullanarak** (için C#) veya **içeri aktarmalar** (Visual Basic için) kod dosyasının en üstüne deyimi.  
+7. Aşağıdaki **kullanarak** (için C#) veya **içeri aktarmalar** (Visual Basic için) kod dosyasının en üstüne deyimi.  
   
-     [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
-     [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]  
+    [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
+    [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]  
   
-8.  Aşağıdaki kodu ekleyin `Main` yöntemi. Bu kod, aşağıdaki nesneleri bildirir:  
+8. Aşağıdaki kodu ekleyin `Main` yöntemi. Bu kod, aşağıdaki nesneleri bildirir:  
   
-    -   Örneği `AdventureWorksLTDataSet` içinde tanımlanan tür **AdventureWorksDataSet** proje.  
+   - Örneği `AdventureWorksLTDataSet` içinde tanımlanan tür **AdventureWorksDataSet** proje.  
   
-    -   Derleme klasöründe AdventureWorksReport çalışma kitabı yolu **AdventureWorksReport** proje.  
+   - Derleme klasöründe AdventureWorksReport çalışma kitabı yolu **AdventureWorksReport** proje.  
   
-    -   A <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> çalışma kitabındaki verileri önbelleğe erişmek için kullanılacak nesne.  
+   - A <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> çalışma kitabındaki verileri önbelleğe erişmek için kullanılacak nesne.  
   
-        > [!NOTE]  
-        >  Aşağıdaki kodu kullanarak, çalışma kitabını kaydettiğiniz varsayar *.xlsx* uzantısı. Projenizdeki çalışma kitabının farklı bir uzantısı varsa, yol gerekli olarak değiştirin.  
+     > [!NOTE]  
+     >  Aşağıdaki kodu kullanarak, çalışma kitabını kaydettiğiniz varsayar *.xlsx* uzantısı. Projenizdeki çalışma kitabının farklı bir uzantısı varsa, yol gerekli olarak değiştirin.  
   
      [!code-csharp[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#10)]
      [!code-vb[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#10)]  
   
 9. Aşağıdaki kodu ekleyin `Main` yöntemi, önceki adımda eklediğiniz koddan sonra. Bu kod aşağıdaki görevleri gerçekleştirir:  
   
-    -   Kullandığı <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> özelliği <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> çalışma kitabında önbelleğe alınan veri kümesine erişmesine izin sınıfı.  
+   - Kullandığı <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> özelliği <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> çalışma kitabında önbelleğe alınan veri kümesine erişmesine izin sınıfı.  
   
-    -   Önbelleğe alınmış veri kümesinden verileri yerel kümesine okur.  
+   - Önbelleğe alınmış veri kümesinden verileri yerel kümesine okur.  
   
-    -   Satır sayısı, veri olduğunu doğrulamak için yerel veri kümesini görüntüler.  
+   - Satır sayısı, veri olduğunu doğrulamak için yerel veri kümesini görüntüler.  
   
      [!code-csharp[Trin_CachedDataWalkthroughs#11](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#11)]
      [!code-vb[Trin_CachedDataWalkthroughs#11](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#11)]  

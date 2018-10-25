@@ -15,27 +15,27 @@ ms.assetid: 064231e7-59b5-4437-8240-a23c0a7ec2a9
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 63e1bc230df89fe219607c20e1cce248fc2238e2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9109ef312fb16b4b370a9a8428f3ffb202b272ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270757"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862872"
 ---
 # <a name="sending-events"></a>Olayları Gönderme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Hata ayıklayıcı ile hata ayıklama altyapısı (DE) arasındaki iletişim için DCOM bir olay modeline mekanizmadır. Olayları COM nesneleri olarak gönderilir ve aşağıda belirttiğiniz parametreler her olay vardır:  
   
--   Olay adında DE.  
+- Olay adında DE.  
   
--   Ne açıklaması.  
+- Ne açıklaması.  
   
--   İşlem, program ve iş parçacığı bilgisi, olayın gerçekleştiği bağlamı tanımlar. İşlem, bir DE gönderilen olaylar için gönderilmez.  
+- İşlem, program ve iş parçacığı bilgisi, olayın gerçekleştiği bağlamı tanımlar. İşlem, bir DE gönderilen olaylar için gönderilmez.  
   
--   Zaman uyumlu veya zaman uyumsuz olay olup olmadığını belirten bir olay türü.  
+- Zaman uyumlu veya zaman uyumsuz olay olup olmadığını belirten bir olay türü.  
   
- Tüm hata ayıklama olaylarını yöntemi kullanılarak gönderilen [IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
+  Tüm hata ayıklama olaylarını yöntemi kullanılarak gönderilen [IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Olay Kaynakları](../../extensibility/debugger/event-sources-visual-studio-sdk.md)  

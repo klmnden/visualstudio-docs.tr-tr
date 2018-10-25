@@ -15,12 +15,12 @@ ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb75a161feffa049ebf7152d6a76d70f364a98ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8626a7c1c4fd38e5955a364699eb1b047bc2e5d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229391"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839212"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>XML komut tablosu tasarlama (. Vsct) dosyaları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,41 +37,41 @@ VSPackage için komut öğelerin Görünüm ve düzeninin bir XML komut tablosu 
 ## <a name="differences-between-ctc-and-vsct-files"></a>.Ctc ve .vsct dosyaları arasındaki farklar  
  Şimdi de .ctc dosya biçimi kullanım dışı olarak anlamı .vsct dosyası XML etiketleri arkasındaki aynı olsa da, kendi uygulama biraz farklıdır.  
   
--   Yeni  **\<extern >** etikettir yönelik olanlar gibi derlenecek diğer .h dosyaları burada başvuru [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] araç çubuğu.  
+- Yeni  **\<extern >** etikettir yönelik olanlar gibi derlenecek diğer .h dosyaları burada başvuru [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] araç çubuğu.  
   
--   .Vsct dosyaları desteği sırada **/ include** deyimi .ctc dosyalarında olduğu gibi ayrıca özelliklerine yeni \< **alma >** öğesi. Fark, **/ include** getirir **tüm** bilgileri ancak \< **Al >** adları yalnızca getirir.  
+- .Vsct dosyaları desteği sırada **/ include** deyimi .ctc dosyalarında olduğu gibi ayrıca özelliklerine yeni \< **alma >** öğesi. Fark, **/ include** getirir **tüm** bilgileri ancak \< **Al >** adları yalnızca getirir.  
   
--   Önişlemci yönergeleri, tanımladığınız bir üstbilgi dosyası .ctc dosyalar gerektirir, ancak bir .vsct dosyaları için gerekli değildir. Bunun yerine, yönergeleri bulunan sembol tablosu yerleştirin  **\<Sembol >** .vsct dosyası alt kısmında bulunan öğeleri.  
+- Önişlemci yönergeleri, tanımladığınız bir üstbilgi dosyası .ctc dosyalar gerektirir, ancak bir .vsct dosyaları için gerekli değildir. Bunun yerine, yönergeleri bulunan sembol tablosu yerleştirin  **\<Sembol >** .vsct dosyası alt kısmında bulunan öğeleri.  
   
--   .vsct dosyaları özelliği bir  **\<ek açıklama >** istediğiniz notları veya hatta resimler gibi herhangi bir bilgi eklemeye izin veren bir etiket.  
+- .vsct dosyaları özelliği bir  **\<ek açıklama >** istediğiniz notları veya hatta resimler gibi herhangi bir bilgi eklemeye izin veren bir etiket.  
   
--   Değerler, öğenin öznitelikleri olarak depolanır.  
+- Değerler, öğenin öznitelikleri olarak depolanır.  
   
--   Komut bayrakları ayrı ayrı depolanır veya yığın.  Ancak, IntelliSense, yığılmış komut bayrakları çalışmaz. Komut bayrakları hakkında daha fazla bilgi için bkz: [Command Flag öğesi](../../extensibility/command-flag-element.md).  
+- Komut bayrakları ayrı ayrı depolanır veya yığın.  Ancak, IntelliSense, yığılmış komut bayrakları çalışmaz. Komut bayrakları hakkında daha fazla bilgi için bkz: [Command Flag öğesi](../../extensibility/command-flag-element.md).  
   
--   Bölünmüş bırakmalar, combos vb. gibi birden çok tür belirtebilirsiniz.  
+- Bölünmüş bırakmalar, combos vb. gibi birden çok tür belirtebilirsiniz.  
   
--   GUID'ler doğrulamaz.  
+- GUID'ler doğrulamaz.  
   
--   Her kullanıcı Arabirimi öğesi ile görüntülenen metinleri temsil eden bir dize var.  
+- Her kullanıcı Arabirimi öğesi ile görüntülenen metinleri temsil eden bir dize var.  
   
--   Üst isteğe bağlıdır. Atlanırsa, "Grup Bilinmeyen" değeri kullanılır.  
+- Üst isteğe bağlıdır. Atlanırsa, "Grup Bilinmeyen" değeri kullanılır.  
   
--   Simge bağımsız değişken isteğe bağlıdır.  
+- Simge bağımsız değişken isteğe bağlıdır.  
   
--   Artık bir dosya adı tarafından vsct.exe derleyici derleme zamanında çekilir href aracılığıyla belirtebilirsiniz dışında bit eşlem bölüm--bir .ctc aynı dosya.  
+- Artık bir dosya adı tarafından vsct.exe derleyici derleme zamanında çekilir href aracılığıyla belirtebilirsiniz dışında bit eşlem bölüm--bir .ctc aynı dosya.  
   
--   ResID--eski bit eşlemi kaynak kimliği, kullanılabilir ve hala aynı .ctc dosyaları olduğu gibi çalışır.  
+- ResID--eski bit eşlemi kaynak kimliği, kullanılabilir ve hala aynı .ctc dosyaları olduğu gibi çalışır.  
   
--   HRef--bit eşlem kaynağı için bir dosya adı belirtmek izin veren yeni bir yöntem. Kullanılan bölümüne atlayabilirsiniz. böylece tüm kullanılan olduğunu varsayar. Derleyici öncelikle yerel kaynakları için tüm ağ paylaşımları üzerinde dosya ve /ı anahtar tarafından tanımlanan tüm kaynakları arar.  
+- HRef--bit eşlem kaynağı için bir dosya adı belirtmek izin veren yeni bir yöntem. Kullanılan bölümüne atlayabilirsiniz. böylece tüm kullanılan olduğunu varsayar. Derleyici öncelikle yerel kaynakları için tüm ağ paylaşımları üzerinde dosya ve /ı anahtar tarafından tanımlanan tüm kaynakları arar.  
   
--   Tuş--Artık bir öykünücü belirtmeniz gerekir. Bir belirtirseniz, derleyicinin düzenleyici ve öykünücü aynı olduğu varsayılır.  
+- Tuş--Artık bir öykünücü belirtmeniz gerekir. Bir belirtirseniz, derleyicinin düzenleyici ve öykünücü aynı olduğu varsayılır.  
   
--   Keychord--bırakıldı. Yeni biçimi Key1, Değişiklik1, Key2, Mod2 şeklindedir.  Bir karakter, onaltılık veya VK sabiti belirtebilirsiniz.  
+- Keychord--bırakıldı. Yeni biçimi Key1, Değişiklik1, Key2, Mod2 şeklindedir.  Bir karakter, onaltılık veya VK sabiti belirtebilirsiniz.  
   
- Yeni derleyici, vsct.exe, .ctc hem .vsct dosyaları derler. Eski ctc.exe derleyicinin ancak tanımak ne .vsct dosyaları derleyin.  
+  Yeni derleyici, vsct.exe, .ctc hem .vsct dosyaları derler. Eski ctc.exe derleyicinin ancak tanımak ne .vsct dosyaları derleyin.  
   
- Varolan .cto dosyasını bir .vsct dosyasına dönüştürmek için vsct.exe derleyici kullanabilirsiniz. Bu konu hakkında daha fazla bilgi için bkz. [nasıl yapılır: oluşturma bir. Vsct mevcut bir dosya. Cto dosya](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+  Varolan .cto dosyasını bir .vsct dosyasına dönüştürmek için vsct.exe derleyici kullanabilirsiniz. Bu konu hakkında daha fazla bilgi için bkz. [nasıl yapılır: oluşturma bir. Vsct mevcut bir dosya. Cto dosya](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
   
 ## <a name="the-vsct-file-elements"></a>.Vsct dosyası öğeleri  
  Komut tablosu aşağıdaki hiyerarşi ve öğeleri sahiptir:  

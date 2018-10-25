@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b152b381aaca2b9e43729616979cd7765d3a8c53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 34ebe35ba7cad601a0ba5d43cd5c424743cb2684
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305473"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848390"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Nasıl yapılır: Ön ve Son İzleme Komutları Belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,25 +36,25 @@ ms.locfileid: "49305473"
   
  **Gereksinimler**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Çalıştırdığınız işletim systen üzerinde komutları yürütülürken çalışma dizini bağlıdır [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] ve profili oluşturulan uygulamanın hedef platformu.  
+  Çalıştırdığınız işletim systen üzerinde komutları yürütülürken çalışma dizini bağlıdır [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] ve profili oluşturulan uygulamanın hedef platformu.  
   
- **32-bit bilgisayarlar**  
+  **32-bit bilgisayarlar**  
   
- 32-bit bilgisayarlarda varsayılan profil oluşturucu Araçlar önyükleme sürücüsü\Program Files\Microsoft Visual Studio 10.0\Team Araçlar\Performans araçları dizindir.  
+  32-bit bilgisayarlarda varsayılan profil oluşturucu Araçlar önyükleme sürücüsü\Program Files\Microsoft Visual Studio 10.0\Team Araçlar\Performans araçları dizindir.  
   
- **64-bit bilgisayarlar**  
+  **64-bit bilgisayarlar**  
   
- 64-bit bilgisayarlarda, profili oluşturulan uygulamanın hedef platformu göre yolu belirtin:  
+  64-bit bilgisayarlarda, profili oluşturulan uygulamanın hedef platformu göre yolu belirtin:  
   
--   32-bit uygulamalar için varsayılan profil oluşturucu Araçlar dizindir:  
+- 32-bit uygulamalar için varsayılan profil oluşturucu Araçlar dizindir:  
   
-     *Sürücü*\Program dosyaları (x86) \Microsoft Visual Studio 10.0\Team Araçlar\Performans araçları  
+   *Sürücü*\Program dosyaları (x86) \Microsoft Visual Studio 10.0\Team Araçlar\Performans araçları  
   
--   64-bit uygulamalar için varsayılan profil oluşturucu Araçlar dizindir:  
+- 64-bit uygulamalar için varsayılan profil oluşturucu Araçlar dizindir:  
   
-     *Sürücü*\Program dosyaları (x86) \Microsoft Visual Studio 10.0\Team Araçlar\Performans Tools\x64  
+   *Sürücü*\Program dosyaları (x86) \Microsoft Visual Studio 10.0\Team Araçlar\Performans Tools\x64  
   
 ### <a name="to-specify-pre-instrument-commands"></a>İşaretleme öncesi komut belirtmek için  
   

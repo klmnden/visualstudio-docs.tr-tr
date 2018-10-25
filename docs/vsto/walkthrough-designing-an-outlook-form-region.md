@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5969d47ff6ecb7af60a8d008c4a7a82405be8c8e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 693261bb6894681b613ad0db2f0b3c116109a782
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677162"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813693"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>İzlenecek yol: Outlook form bölgesi tasarlama
   Özel form bölgeleri, standart veya özel Microsoft Office Outlook formlarına genişletin. Bu kılavuzda, yeni bir sayfa denetçisi penceresinde bir kişi öğesinin görüntülenen özel form bölgesi tasarlama. Bu form bölgesini kişi için Windows Live yerel arama Web sitesine adres bilgilerini göndererek listelenen her adresinin haritasını görüntüler. Form bölgeleri hakkında daha fazla bilgi için bkz: [oluşturma Outlook form bölgeleri](../vsto/creating-outlook-form-regions.md).  
@@ -45,11 +45,11 @@ ms.locfileid: "35677162"
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
   
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] veya [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
+- [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] veya [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
   
- ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantı") bu konunun video sürümü için bkz: [Video nasıl yapılır: Outlook form bölgesi tasarlama](http://go.microsoft.com/fwlink/?LinkID=140824).  
+  ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantı") bu konunun video sürümü için bkz: [Video nasıl yapılır: Outlook form bölgesi tasarlama](http://go.microsoft.com/fwlink/?LinkID=140824).  
   
 ## <a name="create-a-new-outlook-vsto-add-in-project"></a>Yeni bir Outlook VSTO eklentisi projesi oluşturun  
  İlk temel bir VSTO eklenti projesi oluşturun.  
@@ -117,24 +117,24 @@ ms.locfileid: "35677162"
   
 ### <a name="to-customize-the-behavior-of-the-form-region"></a>Form bölgesi davranışını özelleştirmek için  
   
-1.  İçinde **Çözüm Gezgini**, sağ tıklayın *MapIt.cs* veya *MapIt.vb*ve ardından **Kodu Görüntüle**.  
+1. İçinde **Çözüm Gezgini**, sağ tıklayın *MapIt.cs* veya *MapIt.vb*ve ardından **Kodu Görüntüle**.  
   
-     *MapIt.cs* veya *MapIt.vb* Kod Düzenleyicisi'nde açılır.  
+    *MapIt.cs* veya *MapIt.vb* Kod Düzenleyicisi'nde açılır.  
   
-2.  Genişletin **Form bölgesi fabrikası** kod bölge.  
+2. Genişletin **Form bölgesi fabrikası** kod bölge.  
   
-     Form bölgesi fabrikası sınıfı adlı `MapItFactory` sunulur.  
+    Form bölgesi fabrikası sınıfı adlı `MapItFactory` sunulur.  
   
-3.  Aşağıdaki kodu ekleyin `MapItFactory_FormRegionInitializing` olay işleyicisi. Bir kişi öğesi kullanıcı oturum açtığında bu olay işleyicisinde çağrılır. Aşağıdaki kod, kişi öğesini bir adres içerip içermediğini belirler. Kişi öğesi bir adresi içermiyorsa, bu kod ayarlar <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> özelliği <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> sınıfının **true** ve form bölgesi görüntülenmez. Aksi takdirde, VSTO eklentisi başlatır <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> olay ve form bölgesi görüntüler.  
+3. Aşağıdaki kodu ekleyin `MapItFactory_FormRegionInitializing` olay işleyicisi. Bir kişi öğesi kullanıcı oturum açtığında bu olay işleyicisinde çağrılır. Aşağıdaki kod, kişi öğesini bir adres içerip içermediğini belirler. Kişi öğesi bir adresi içermiyorsa, bu kod ayarlar <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> özelliği <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> sınıfının **true** ve form bölgesi görüntülenmez. Aksi takdirde, VSTO eklentisi başlatır <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> olay ve form bölgesi görüntüler.  
   
-     [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
-     [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]  
+    [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
+    [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]  
   
-4.  Aşağıdaki kodu ekleyin <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> olay işleyicisi. Bu kod aşağıdaki görevleri gerçekleştirir:  
+4. Aşağıdaki kodu ekleyin <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> olay işleyicisi. Bu kod aşağıdaki görevleri gerçekleştirir:  
   
-    -   Her adresi kişi öğesini art arda ekler ve bir URL dizesi oluşturur.  
+   - Her adresi kişi öğesini art arda ekler ve bir URL dizesi oluşturur.  
   
-    -   Çağrıları <xref:System.Windows.Forms.WebBrowser.Navigate%2A> yöntemi <xref:System.Windows.Forms.WebBrowser> nesne ve URL dizesi parametre olarak geçirir.  
+   - Çağrıları <xref:System.Windows.Forms.WebBrowser.Navigate%2A> yöntemi <xref:System.Windows.Forms.WebBrowser> nesne ve URL dizesi parametre olarak geçirir.  
   
      Yerel arama Web sitesine, harita, form bölgesinde görünür ve her adresi karalama defterinde sunar.  
   

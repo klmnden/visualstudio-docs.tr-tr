@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1abd1dff1cb63f2e80e3c4b242699fbede2c3201
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 47ede5eebc4d7caf4fe1565c5d8b93b2524ed6ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379344"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849365"
 ---
 # <a name="interop-activity-designer"></a>Interop Etkinlik Tasarımcısı
 
@@ -46,7 +46,7 @@ Tıklayın **göz atmak için tıklatın** metinde **ActivityType** üzerinde ku
 Aşağıdaki tabloda <xref:System.Activities.Statements.Interop> özellikleri Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikler, özellik kılavuzu veya iş akışı Tasarımcısı yüzeyine düzenlenebilir.
 
 |Özellik adı|Gerekli|Kullanım|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Kolay adı <xref:System.Activities.Statements.Interop> etkinlik. Varsayılan değer **Interop**. Görünen ad gerekli olmamasına karşın, bir sağlamak için önerilir.|
 |<xref:System.Activities.Statements.Interop.ActivityType%2A>|Doğru|Tarafından bulunan bir etkinlik türünü belirten <xref:System.Activities.Statements.Interop> etkinlik. Bu tür belirtilen öğesinden türetilmelidir <xref:System.Workflow.ComponentModel.Activity>.|
 

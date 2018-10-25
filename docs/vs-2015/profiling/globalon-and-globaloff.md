@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 477c3103ce3d0da27ee0f149065a1d58eca21a01
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 38ed3c8396457f66fe40148216587b750c493190
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301138"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827031"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn ve GlobalOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ VSPerfCmd.exe **GlobalOff** ve **GlobalOn** seçenekleri duraklatma ve komut sat
   
  **GlobalOff** ve **GlobalOn** seçenekleri, profil oluşturucu API işlevleri tarafından yönetilen Global Başlat/Durdur sayısını da etkiler.  
   
--   **GlobalOff** hemen genel Başlat/Durdur sayısını 0 olarak ayarlar ve bu nedenle profil oluşturma duraklatır.  
+- **GlobalOff** hemen genel Başlat/Durdur sayısını 0 olarak ayarlar ve bu nedenle profil oluşturma duraklatır.  
   
--   **GlobalOn** hemen genel Başlat/Durdur sayısını 1 olarak ayarlar ve bu nedenle sürdürür profil oluşturma.  
+- **GlobalOn** hemen genel Başlat/Durdur sayısını 1 olarak ayarlar ve bu nedenle sürdürür profil oluşturma.  
   
- Daha fazla bilgi için [Profil Araçları API'leri](../profiling/profiling-tools-apis.md).  
+  Daha fazla bilgi için [Profil Araçları API'leri](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   

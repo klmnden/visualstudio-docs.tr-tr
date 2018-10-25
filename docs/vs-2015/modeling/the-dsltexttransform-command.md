@@ -14,12 +14,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1dbbf44a4adfe20f1940da32540eaad81c97251b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 882d2c8d0dec5e4673b24436067bd6255c2052be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269379"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853161"
 ---
 # <a name="the-dsltexttransform-command"></a>DslTextTransform Komutu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ DslTextTransform.cmd TextTransform.exe çağırır ve sık kullanılan seçenekl
   
  Şu bağımsız değişkenler DslTextTransform.cmd giriş olarak belirtebilirsiniz:  
   
--   Etki alanı modeli projenin çıkış dizini.  
+- Etki alanı modeli projenin çıkış dizini.  
   
--   Tasarımcı tanımı projenin çıkış dizini.  
+- Tasarımcı tanımı projenin çıkış dizini.  
   
--   Metin şablonu dosyasının konumu.  
+- Metin şablonu dosyasının konumu.  
   
- Varsayılan yönerge işlemcileri ve derlemeler kullanılarak belirtilen bir metin şablonu dosyasını DslTextTransform.cmd işler. Özel yönerge işlemcileri oluşturma, TextTransform.exe çağıran kendi toplu iş dosyası oluşturabilirsiniz. Bu toplu iş dosyasında bütünleştirilmiş kodlarınızı ve ilişkili özel yönerge işlemcisi belirtebilirsiniz.
+  Varsayılan yönerge işlemcileri ve derlemeler kullanılarak belirtilen bir metin şablonu dosyasını DslTextTransform.cmd işler. Özel yönerge işlemcileri oluşturma, TextTransform.exe çağıran kendi toplu iş dosyası oluşturabilirsiniz. Bu toplu iş dosyasında bütünleştirilmiş kodlarınızı ve ilişkili özel yönerge işlemcisi belirtebilirsiniz.
 
 
 

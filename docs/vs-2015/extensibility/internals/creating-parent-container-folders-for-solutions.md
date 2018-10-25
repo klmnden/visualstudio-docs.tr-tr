@@ -16,12 +16,12 @@ ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f731c9f441aecf5277dafffc5cc8b10d1a703a4b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8bf3de0c558dbda1d1b43e7b5887780f1a1e2b90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307722"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832075"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Çözümler için Üst Kapsayıcı Klasörleri Oluşturma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ Kaynak Denetimi Eklentisi API sürümü 1.2, bir kullanıcı bir çözüm içind
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE bir çözüm kaynak denetimine eklerken SUR klasör neredeyse her zaman oluşturur. Özellikle, bunu aşağıdaki durumlarda yapar:  
   
--   Bir dosya paylaşımı Web projesi projedir.  
+- Bir dosya paylaşımı Web projesi projedir.  
   
--   Proje ve çözüm dosyasını farklı sürücülere vardır.  
+- Proje ve çözüm dosyasını farklı sürücülere vardır.  
   
--   Proje ve çözüm dosyasını farklı paylaşımları vardır.  
+- Proje ve çözüm dosyasını farklı paylaşımları vardır.  
   
--   Projeleri ayrı olarak (bir kaynak kontrol çözümünde) eklendi.  
+- Projeleri ayrı olarak (bir kaynak kontrol çözümünde) eklendi.  
   
- İçinde [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] SUR klasörün adını uzantısı olmadan çözüm adı ile aynı olması önerilir. İki sürüm davranış aşağıdaki tabloda özetlenmiştir.  
+  İçinde [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] SUR klasörün adını uzantısı olmadan çözüm adı ile aynı olması önerilir. İki sürüm davranış aşağıdaki tabloda özetlenmiştir.  
   
 |Özellik|Tkaynak denetimi eklentisi API sürüm 1.1|Kaynak Denetimi Eklentisi API sürümü 1.2|  
 |-------------|----------------------------------------------|---------------------------------------------|  

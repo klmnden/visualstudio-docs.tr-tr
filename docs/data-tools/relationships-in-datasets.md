@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 78d190e843aa51c794fc41c803cef3fce21005f9
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 812b464fe3e9742309a1ce6918d8d6b383101bf8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174390"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864133"
 ---
 # <a name="create-relationships-between-datasets"></a>Veri kümeleri arasında ilişki oluşturma
 İlgili verileri içeren veri kümeleri tablolar kullanım <xref:System.Data.DataRelation> nesneleri tablolar arasında bir üst/alt ilişkilerini temsil eden ve birbirlerinden ilgili kayıtları döndürmek için. İlişkili tabloları kullanarak veri kümelerine ekleme **veri kaynağı Yapılandırma Sihirbazı**, veya **veri kümesi Tasarımcısı**oluşturur ve yapılandırır <xref:System.Data.DataRelation> nesnesi.
@@ -58,7 +58,7 @@ Yabancı anahtar kısıtlamasının bir parçası olarak üç noktalarda uygulan
 Yapabileceğiniz kuralları belirtilen <xref:System.Data.Rule> sabit listesi ve bu aşağıdaki tabloda listelenen.
 
 |Yabancı anahtar kısıtlaması kuralı|Eylem|
-|----------------------------------|------------|
+| - |------------|
 |<xref:System.Data.Rule.Cascade>|Üst kayıtta yapılan değişiklik (güncelleştirme veya silme) alt tablosundaki ilgili kayıtlar da gerçekleştirilir.|
 |<xref:System.Data.Rule.SetNull>|Alt kayıtları silinmez, ancak alt kayıtlardaki yabancı anahtarı kümesine <xref:System.DBNull>. Bu ayar, "artık" alt kayıtları bırakılabilir — diğer bir deyişle, bunlar hiç üst kayıtlar ilişkisi. **Not:** bu kullanarak alt tablosunda geçersiz veri sonuçlanabilir.|
 |<xref:System.Data.Rule.SetDefault>|İlgili alt kayıtları yabancı anahtarının varsayılan değerine ayarlanır (sütun tarafından belirlenen <xref:System.Data.DataColumn.DefaultValue%2A> özelliği).|

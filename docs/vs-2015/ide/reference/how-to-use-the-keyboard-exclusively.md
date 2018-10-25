@@ -21,12 +21,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 588f93a89713d42efaba61a34b0dabe5eb2af523
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd4e133ac057de9340900501b16e2c3b1ee7a388
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238530"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862170"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Nasıl Yapılır: Klavyeyi Özel Olarak Kullanma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49238530"
   
 #### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>Denetim klavye bir tasarımcı araç kutusundan eklemek için  
   
-1.  Menü çubuğunda, **görünümü**, **araç kutusu**.  
+1. Menü çubuğunda, **görünümü**, **araç kutusu**.  
   
-2.  Seç Ctrl + Yukarı Ok veya Ctrl + aşağı ok tuşlarını geçerli araç kutusunda bölümler arasında taşımak için sekmesinde.  
+2. Seç Ctrl + Yukarı Ok veya Ctrl + aşağı ok tuşlarını geçerli araç kutusunda bölümler arasında taşımak için sekmesinde.  
   
-3.  Yukarı oku seçin veya **aşağı ok** arasında denetimleri taşımak için anahtarları.  
+3. Yukarı oku seçin veya **aşağı ok** arasında denetimleri taşımak için anahtarları.  
   
-4.  Denetim seçildikten sonra Enter tuşuna basın.  
+4. Denetim seçildikten sonra Enter tuşuna basın.  
   
- Denetim Tasarımcısı ve form için eklenir.  
+   Denetim Tasarımcısı ve form için eklenir.  
   
 ## <a name="dialog-box-options"></a>İletişim kutusu seçenekleri  
  Bir iletişim kutusu seçenekleri arasında taşıyın ve klavye kullanarak seçenek ayarlarını değiştirebilirsiniz.  

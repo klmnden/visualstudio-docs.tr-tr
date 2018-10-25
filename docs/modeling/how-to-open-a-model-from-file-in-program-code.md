@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0bd6c2c2ebad1526a06cccdffef38936d201fc0b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 18cad086419be13a666d4eddbf454885c9cf9c36
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860427"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812497"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Nasıl yapılır: Program Kodunda Dosyadan Model Açma
 DSL model herhangi bir uygulama açabilirsiniz.
@@ -58,13 +58,13 @@ DSL model herhangi bir uygulama açabilirsiniz.
 ## <a name="reading-from-a-file"></a>Bir dosyadan okuma
  Aşağıdaki örnek, önemli sınıfları aşağıdaki gibi olan bir DSL okumak için tasarlanmıştır:
 
--   FamilyTreeModel
+- FamilyTreeModel
 
--   FamilyTreeSerializationHelper
+- FamilyTreeSerializationHelper
 
--   FamilyTreeDomainModel
+- FamilyTreeDomainModel
 
- Bu DSL içinde diğer etki alanı sınıfı kişi anlamına gelir.
+  Bu DSL içinde diğer etki alanı sınıfı kişi anlamına gelir.
 
 ```csharp
 using System;

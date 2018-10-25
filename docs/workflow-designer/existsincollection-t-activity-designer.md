@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c3525cb3f983495cc11403c1fcb419de43c5059
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 59ec7e9df4088c21820fa5fec319ab3e4ac10f78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857847"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853265"
 ---
 # <a name="existsincollectiont-activity-designer"></a>Existsıncollection\<T > etkinlik Tasarımcısı
 
@@ -38,7 +38,7 @@ ms.locfileid: "47857847"
 Aşağıdaki tabloda <xref:System.Activities.Statements.ExistsInCollection%601> özellikleri ve Tasarımcısı'nda nasıl kullanıldığını açıklar:
 
 |Özellik adı|Gerekli|Kullanım|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Kolay adı <xref:System.Activities.Statements.ExistsInCollection%601> etkinlik. Existsıncollection varsayılandır < Int32\>. Ancak <xref:System.Activities.Activity.DisplayName%2A> değeri kesinlikle gerekli değil, kullanmak için en iyi bir uygulamadır.|
 |<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|Doğru|Öğe koleksiyonda aranacak\<T >. Bu öğe türünde *T*, türünde *TypeArgument*. Öğesini belirtmek için bir Visual Basic ifadesinin özellik kılavuzunda yazın.|
 |<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|Doğru|Koleksiyon, öğe mevcut olup olmadığını denetleyin. Bu koleksiyonu türünde **ICollection < TypeArgument\>.** Koleksiyon belirtmek için bir Visual Basic ifadesinin özellik kılavuzunda yazın.|

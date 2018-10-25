@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f1b2c37f551bf7b5e0a781b91420881c594ade68
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: daa18ea2716972daa1429580ad0b2f5be5afe76c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180470"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854084"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Hizmet Başvurusu Yapılandırma İletişim Kutusu
 
@@ -104,7 +104,7 @@ Erişim için **hizmet başvurusu yapılandırma** iletişim kutusunda sağ tık
 
 > [!NOTE]
 > Bu seçenek yalnızca 2.0 sürümünü hedefleyen projeler için kullanılması gereken [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
-
+> 
 > [!NOTE]
 > **Web başvurusu Ekle'yi** düğmesi kullanılabilir yalnızca zaman **hizmet başvurusu yapılandırma** gelen iletişim kutusu görüntülenir **hizmet Başvurusu Ekle iletişim kutusunu**.
 

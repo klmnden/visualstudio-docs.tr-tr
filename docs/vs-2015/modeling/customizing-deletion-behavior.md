@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69774b098e76bb14ed11be092ae7ebedb71c218a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 401458a33c67d0c8d0302fddcdfd988113101e28
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202767"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837572"
 ---
 # <a name="customizing-deletion-behavior"></a>Silme Davranışını Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,19 +62,19 @@ Genellikle bir öğeyi silme ilgili öğeleri de silinmesine neden olur. Tüm il
   
 #### <a name="to-set-delete-propagation"></a>Delete yayma ayarlamak için  
   
-1.  DSL tanım diyagramı üzerinde seçin *rol* yayma silmek istediğiniz. Rol satırı soldaki veya bir etki alanı ilişkisi kutusunun sağ tarafından temsil edilir.  
+1. DSL tanım diyagramı üzerinde seçin *rol* yayma silmek istediğiniz. Rol satırı soldaki veya bir etki alanı ilişkisi kutusunun sağ tarafından temsil edilir.  
   
-     Örneğin, albüm silindiğinde belirtmek istiyorsanız, ilgili sanatçıların da silinir ve ardından etki alanı sınıfı sanatçının bağlı rolü seçin.  
+    Örneğin, albüm silindiğinde belirtmek istiyorsanız, ilgili sanatçıların da silinir ve ardından etki alanı sınıfı sanatçının bağlı rolü seçin.  
   
-2.  Özellikler penceresinde ayarlayın **yayar Sil** özelliği.  
+2. Özellikler penceresinde ayarlayın **yayar Sil** özelliği.  
   
-3.  F5 tuşuna basın ve doğrulayın:  
+3. F5 tuşuna basın ve doğrulayın:  
   
-    -   Bu ilişkinin örneğini silindiğinde, seçili rolü öğe de silinecek.  
+   -   Bu ilişkinin örneğini silindiğinde, seçili rolü öğe de silinecek.  
   
-    -   Karşı rol bir öğe silindiğinde, bu ilişki örneklerini silinecek ve ilgili öğeleri Bu roldeki silinecek.  
+   -   Karşı rol bir öğe silindiğinde, bu ilişki örneklerini silinecek ve ilgili öğeleri Bu roldeki silinecek.  
   
- Ayrıca bkz **yayar Sil** seçeneğini **DSL ayrıntıları** penceresi. Bir etki alanı sınıfı seçin ve açın DSL Ayrıntıları penceresinde **silme davranışı** penceresinin tarafındaki düğmeye tıklayarak sayfası. **Yay** seçeneği her ilişkinin end'in role gösterilir. **Silme Style** sütununda olmadığını **yay** varsayılan ayarında seçenektir ancak ayrı hiçbir etkisi yok.  
+   Ayrıca bkz **yayar Sil** seçeneğini **DSL ayrıntıları** penceresi. Bir etki alanı sınıfı seçin ve açın DSL Ayrıntıları penceresinde **silme davranışı** penceresinin tarafındaki düğmeye tıklayarak sayfası. **Yay** seçeneği her ilişkinin end'in role gösterilir. **Silme Style** sütununda olmadığını **yay** varsayılan ayarında seçenektir ancak ayrı hiçbir etkisi yok.  
   
 ## <a name="delete-propagation-by-using-program-code"></a>Program kodu kullanarak yayma Sil  
  DSL tanımı dosyasında seçenekleri yalnızca için hemen bir komşu silme işlemi yayar olmadığını seçmenize olanak tanır. Daha karmaşık bir delete yayma düzenini uygulamak için program kodu yazabilirsiniz.  
@@ -138,17 +138,17 @@ partial class MusicLibDeleteClosure
 ##  <a name="ondeleting"></a> OnDeleting ve OnDeleted kullanma  
  Geçersiz kılabilirsiniz `OnDeleting()` veya `OnDeleted()` bir etki alanı sınıfı veya bir etki alanı ilişkisi.  
   
-1.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> silinmek üzere bir öğe olduğunda, ancak ilişkilerini kesilmeden çağrılır. Diğer öğeleri gelen ve giden hala gezinebilir ve hala `store.ElementDirectory`.  
+1. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> silinmek üzere bir öğe olduğunda, ancak ilişkilerini kesilmeden çağrılır. Diğer öğeleri gelen ve giden hala gezinebilir ve hala `store.ElementDirectory`.  
   
-     Aynı anda birkaç öğe silindiğinde, OnDeleting hepsi için silme gerçekleştirmeden önce çağrılır.  
+    Aynı anda birkaç öğe silindiğinde, OnDeleting hepsi için silme gerçekleştirmeden önce çağrılır.  
   
-     `IsDeleting` geçerlidir.  
+    `IsDeleting` geçerlidir.  
   
-2.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> öğe silindiğinde çağırılır. Böylece gerekirse geri alma gerçekleştirilebilir, ancak diğer öğelerden bağlantısı kesilmişse ve kaldırılmasını CLR yığınında kalır `store.ElementDirectory`. İlişki için roller hala eski rol oyuncuları başvuru.`IsDeleted` geçerlidir.  
+2. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> öğe silindiğinde çağırılır. Böylece gerekirse geri alma gerçekleştirilebilir, ancak diğer öğelerden bağlantısı kesilmişse ve kaldırılmasını CLR yığınında kalır `store.ElementDirectory`. İlişki için roller hala eski rol oyuncuları başvuru.`IsDeleted` geçerlidir.  
   
-3.  Kullanıcının bir öğenin oluşturduktan sonra geri çağırır ve önceki bir silme işlemi Yinele için tekrarlandığında OnDeleting ve OnDeleted adı verilir. Kullanım `this.Store.InUndoRedoOrRollback` bu gibi durumlarda mağazası öğeleri güncelleştirme önlemek için. Daha fazla bilgi için [nasıl yapılır: modeli güncelleştirmek için kullanım işlemleri](../modeling/how-to-use-transactions-to-update-the-model.md).  
+3. Kullanıcının bir öğenin oluşturduktan sonra geri çağırır ve önceki bir silme işlemi Yinele için tekrarlandığında OnDeleting ve OnDeleted adı verilir. Kullanım `this.Store.InUndoRedoOrRollback` bu gibi durumlarda mağazası öğeleri güncelleştirme önlemek için. Daha fazla bilgi için [nasıl yapılır: modeli güncelleştirmek için kullanım işlemleri](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
- Örneğin, son alt şarkı silindiğinde aşağıdaki kod, albüm siler:  
+   Örneğin, son alt şarkı silindiğinde aşağıdaki kod, albüm siler:  
   
 ```  
   

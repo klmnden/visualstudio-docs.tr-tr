@@ -16,81 +16,81 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b6726b2c859143f5dbc9b264e67bb9bb91757de5
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 9099c1ee0b1ed3af108c11792f7629453dfbf7c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089318"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819049"
 ---
-# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Nasıl yapılır: ekleme, güncelleştirme veya bir WCF veri hizmeti başvurusunu kaldırma
-A *hizmet başvurusu* bir proje için bir veya daha fazla erişim sağlayan [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Kullanım **hizmet Başvurusu Ekle** aramak için iletişim kutusu [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] geçerli çözümde, yerel ağ üzerinde yerel olarak ya da Internet üzerindeki.
+# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Nasıl yapılır: ekleme, güncelleştirme veya bir WCF veri hizmeti başvurusunu Kaldır
+A *hizmet başvurusu* bir projeye bir veya daha fazla erişim sağlayan [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Kullanım **hizmet Başvurusu Ekle** aramak için iletişim kutusu [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] geçerli çözümde, yerel olarak bir yerel ağ veya Internet üzerinde.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="add-a-service-reference"></a>Hizmet Başvurusu Ekle
+## <a name="add-a-service-reference"></a>Bir hizmet Başvurusu Ekle
 
-### <a name="to-add-a-reference-to-an-external-service"></a>Bir dış hizmetine başvuru eklemek için
+### <a name="to-add-a-reference-to-an-external-service"></a>Bir dış hizmet için bir başvuru eklemek için
 
 1.  İçinde **Çözüm Gezgini**, hizmeti eklemek ve ardından istediğiniz proje adına sağ tıklayın **hizmet Başvurusu Ekle**.
 
      **Hizmet Başvurusu Ekle** iletişim kutusu görüntülenir.
 
-2.  İçinde **adresi** kutusuna hizmeti URL'sini girin ve ardından **Git** hizmetinde aramak için. Hizmetin kullanıcı adı ve parola güvenlik uygularsa, bir kullanıcı adı ve parolası istenebilir.
+2.  İçinde **adresi** kutusuna hizmeti için URL girin ve ardından **Git** hizmet için aranacak. Hizmet kullanıcı adı ve parola güvenlik uygularsa, bir kullanıcı adı ve parolası istenebilir.
 
     > [!NOTE]
-    >  Yalnızca güvenilir bir kaynaktan Hizmetleri başvuruda bulunmalıdır. Güvenilmeyen bir kaynaktan başvuruları ekleme, güvenliği tehlikeye atabilir.
+    >  Yalnızca güvenilir bir kaynaktan Hizmetleri başvuruda bulunmalıdır. Güvenilmeyen bir kaynaktan başvurularının eklenmesi, güvenliği tehlikeye atabilir.
 
-     URL'den öğesini de seçebilirsiniz **adresi** geçerli hizmet meta verisi bulunamadı önceki 15 URL'leri depolar listesi.
+     URL'den belirleyebilirsiniz **adresi** listesinde, geçerli hizmet meta verileri bulundu önceki 15 URL depolar.
 
-     Arama gerçekleştirildiğinde bir ilerleme çubuğu görüntüler. Tıklayarak istediğiniz zaman arama durdurabilirsiniz **durdurmak**.
+     Arama yapılırken bir ilerleme çubuğu görüntülenir. Tıklayarak arama dilediğiniz zaman durdurabilirsiniz **Durdur**.
 
-3.  İçinde **Hizmetleri** listesinde, kullanma ve bir varlık kümesi seçme istediğiniz hizmeti düğümünü genişletin.
+3.  İçinde **Hizmetleri** listesinde, bir varlık kümesi seçin ve istediğiniz hizmeti düğümünü genişletin.
 
-4.  İçinde **Namespace** kutusuna, başvuru için kullanmak istediğiniz ad alanı girin.
+4.  İçinde **Namespace** kutusunda, başvuru için kullanmak istediğiniz ad alanını girin.
 
-5.  Tıklatın **Tamam** projesine başvuru eklemek için.
+5.  Tıklayın **Tamam** projesine başvuru eklenemiyor.
 
-     Bir hizmeti istemcisi (proxy) oluşturulur ve hizmet açıklayan meta veriler eklenen *app.config* dosya.
+     Bir hizmeti istemcisi (proxy) oluşturulur ve hizmet açıklayan meta veriler eklenir *app.config* dosya.
 
-### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>Geçerli çözümde bir hizmet için bir başvuru eklemek için
+### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>Geçerli çözümde bir hizmet başvurusu eklemek için
 
-1.  İçinde **Çözüm Gezgini**, hizmeti eklemek ve ardından istediğiniz proje adına sağ tıklayın **hizmet Başvurusu Ekle**.
+1. İçinde **Çözüm Gezgini**, hizmeti eklemek ve ardından istediğiniz proje adına sağ tıklayın **hizmet Başvurusu Ekle**.
 
-     **Hizmet Başvurusu Ekle** iletişim kutusu görüntülenir.
+    **Hizmet Başvurusu Ekle** iletişim kutusu görüntülenir.
 
-2.  Tıklatın **Bul**.
+2. Tıklayın **Bul**.
 
-     Tüm hizmetler (her ikisi de [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] ve WCF hizmetleri) geçerli çözümde eklenir **Hizmetleri** listesi.
+    Tüm hizmetler (her ikisi de [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] ve WCF hizmetleri) geçerli çözümde eklenen **Hizmetleri** listesi.
 
-3.  İçinde **Hizmetleri** listesinde, kullanma ve bir varlık kümesi seçme istediğiniz hizmeti düğümünü genişletin.
+3. İçinde **Hizmetleri** listesinde, bir varlık kümesi seçin ve istediğiniz hizmeti düğümünü genişletin.
 
-4.  İçinde **Namespace** kutusuna, başvuru için kullanmak istediğiniz ad alanı girin.
+4. İçinde **Namespace** kutusunda, başvuru için kullanmak istediğiniz ad alanını girin.
 
-5.  Tıklatın **Tamam** projesine başvuru eklemek için.
+5. Tıklayın **Tamam** projesine başvuru eklenemiyor.
 
-     Bir hizmeti istemcisi (proxy) oluşturur ve hizmet açıklayan meta veriler eklenen *app.config* dosya.
+    Bir hizmeti istemcisi (proxy) oluşturur ve hizmet açıklayan meta veriler eklenir *app.config* dosya.
 
-## <a name="update-a-service-reference"></a>Güncelleştirme hizmeti başvurusu
- Varlık veri modeli için bir [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] bazen değiştirir. Bu gerçekleştiğinde, hizmet başvurusu güncelleştirmeniz gerekir.
+## <a name="update-a-service-reference"></a>Hizmet başvurusunu güncelle
+ Varlık veri modeli için bir [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] bazen değiştirir. Bu durumda, hizmet başvurusunu güncelleştirmeniz gerekir.
 
-### <a name="to-update-a-service-reference"></a>Hizmet başvurusu güncelleştirmek için
+### <a name="to-update-a-service-reference"></a>Bir hizmet başvurusu güncelleştirilecek
 
--   İçinde **Çözüm Gezgini**, hizmet başvurusu sağ tıklayın ve ardından **güncelleştirme hizmet başvurusu**.
+-   İçinde **Çözüm Gezgini**, hizmet başvurusunu sağ tıklayın ve ardından **güncelleştirme hizmet başvurusu**.
 
-     Başvuru özgün konumundan güncelleştirilir ve hizmeti istemcisi meta verilerindeki değişiklikleri yansıtacak şekilde yeniden ilerleme durumu iletişim kutusu görüntüler.
+     Başvuru özgün konumundan güncelleştirilir ve hizmeti istemcisi meta verilerindeki değişiklikleri yansıtacak şekilde yeniden ilerleme durumu iletişim kutusu görüntülenir.
 
-## <a name="remove-a-service-reference"></a>Bir hizmet başvurusunu kaldırın
- Hizmet başvurusu artık kullanılıp kullanılmadığını çözümünüzden kaldırabilirsiniz.
+## <a name="remove-a-service-reference"></a>Hizmet başvurusunu Kaldır
+ Bir hizmet başvurusu artık kullanılıyorsa çözümünüzden kaldırabilirsiniz.
 
 ### <a name="to-remove-a-service-reference"></a>Hizmet başvurusunu kaldırmak için
 
--   İçinde **Çözüm Gezgini**, hizmet başvurusu sağ tıklayın ve ardından **silmek**.
+-   İçinde **Çözüm Gezgini**, hizmet başvurusunu sağ tıklayın ve ardından **Sil**.
 
-     Hizmeti istemcisi çözümden kaldırılacak ve hizmet açıklayan meta veriler kaldırılır *app.config* dosya.
+     Hizmet istemcisi çözümden kaldırılacak ve hizmeti tanımlayan meta veriler kaldırılacak *app.config* dosya.
 
     > [!NOTE]
-    >  Hizmet başvurusu başvuran herhangi bir kod el ile kaldırılması gerekir.
+    >  Hizmet başvuru yapan tüm kodları el ile kaldırılması gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b490eb1afbe8136932cfbe4caf0b1df33fbd3e4b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 6886908f01ceaeb36ed83ba0970ef250873d69c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781676"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841890"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>İzlenecek yol: Belge düzeyi projede karmaşık veri bağlama
   Bu izlenecek yol, bir belge düzeyi projede karmaşık veri bağlama ilişkin temel bilgileri gösterir. Alanları Northwind SQL Server veritabanındaki birden çok hücre Microsoft Office Excel çalışma sayfasındaki bağlayabilirsiniz.  
@@ -32,13 +32,13 @@ ms.locfileid: "38781676"
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
--   Veri kaynağı, çalışma kitabı projenize ekleme.  
+- Veri kaynağı, çalışma kitabı projenize ekleme.  
   
--   Çalışma sayfasına verilere bağlı denetimler ekleme.  
+- Çalışma sayfasına verilere bağlı denetimler ekleme.  
   
--   Veri değişiklikleri veritabanına geri kaydediliyor.  
+- Veri değişiklikleri veritabanına geri kaydediliyor.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
@@ -67,25 +67,25 @@ ms.locfileid: "38781676"
   
 ### <a name="to-create-the-data-source"></a>Veri kaynağı oluşturmak için  
   
-1.  Varsa **veri kaynakları** penceresi görünür değilse, bunu, menü çubuğundan seçme görüntüleyebilir **görünümü** > **diğer Windows**  >   **Veri kaynakları**.  
+1. Varsa **veri kaynakları** penceresi görünür değilse, bunu, menü çubuğundan seçme görüntüleyebilir **görünümü** > **diğer Windows**  >   **Veri kaynakları**.  
   
-2.  Seçin **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı Yapılandırma Sihirbazı**.  
+2. Seçin **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı Yapılandırma Sihirbazı**.  
   
-3.  Seçin **veritabanı** ve ardından **sonraki**.  
+3. Seçin **veritabanı** ve ardından **sonraki**.  
   
-4.  Northwind örnek SQL Server veritabanıyla kurulan veri bağlantısı seçin veya yeni bir bağlantı kullanarak eklemek **yeni bağlantı** düğmesi.  
+4. Northwind örnek SQL Server veritabanıyla kurulan veri bağlantısı seçin veya yeni bir bağlantı kullanarak eklemek **yeni bağlantı** düğmesi.  
   
-5.  Bağlantı seçili veya oluşturulduktan sonra tıklayın **sonraki**.  
+5. Bağlantı seçili veya oluşturulduktan sonra tıklayın **sonraki**.  
   
-6.  Seçili olduğunda görüntüleyeceği bağlantı kaydetme seçeneğini ve ardından temizlemek **sonraki**.  
+6. Seçili olduğunda görüntüleyeceği bağlantı kaydetme seçeneğini ve ardından temizlemek **sonraki**.  
   
-7.  Genişletin **tabloları** düğümünde **veritabanı nesnelerinin** penceresi.  
+7. Genişletin **tabloları** düğümünde **veritabanı nesnelerinin** penceresi.  
   
-8.  Yanındaki onay kutusunu işaretleyin **çalışanlar** tablo.  
+8. Yanındaki onay kutusunu işaretleyin **çalışanlar** tablo.  
   
 9. **Son**'a tıklayın.  
   
- Sihirbaz ekler **çalışanlar** tablo **veri kaynakları** penceresi. Projenize görünür olan bir türü belirtilmiş veri kümesi de ekler **Çözüm Gezgini**.  
+   Sihirbaz ekler **çalışanlar** tablo **veri kaynakları** penceresi. Projenize görünür olan bir türü belirtilmiş veri kümesi de ekler **Çözüm Gezgini**.  
   
 ## <a name="add-controls-to-the-worksheet"></a>Çalışma sayfasına denetimler ekleme  
  Bir çalışma sayfası görüntüler **çalışanlar** çalışma kitabını açtığınızda tablo. Kullanıcılar, verilerde değişiklik yapabilir ve ardından bir düğmeye tıklayarak bu değişiklikleri veritabanına geri kaydedin mümkün olacaktır.  
@@ -108,27 +108,27 @@ ms.locfileid: "38781676"
   
 ### <a name="to-add-a-button"></a>Bir düğme eklemek için  
   
-1.  Gelen **ortak denetimleri** sekmesinde **araç kutusu**, ekleme bir <xref:System.Windows.Forms.Button> hücre denetimi **A4** çalışma sayfası.  
+1. Gelen **ortak denetimleri** sekmesinde **araç kutusu**, ekleme bir <xref:System.Windows.Forms.Button> hücre denetimi **A4** çalışma sayfası.  
   
- Sonraki adım çalışma sayfası açıldığında düğmeye metin eklemektir.  
+   Sonraki adım çalışma sayfası açıldığında düğmeye metin eklemektir.  
   
 ## <a name="initialize-the-control"></a>Denetimi başlatmak  
  Düğmeye metin eklemek <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> olay işleyicisi.  
   
 ### <a name="to-initialize-the-control"></a>Denetimi başlatmak için  
   
-1.  İçinde **Çözüm Gezgini**, sağ **Sheet1.vb** veya **Sheet1.cs**ve ardından **Kodu Görüntüle** kısayol menüsünde.  
+1. İçinde **Çözüm Gezgini**, sağ **Sheet1.vb** veya **Sheet1.cs**ve ardından **Kodu Görüntüle** kısayol menüsünde.  
   
-2.  Aşağıdaki kodu ekleyin `Sheet1_Startup` b metnini ayarlamak için yöntemi`utton`.  
+2. Aşağıdaki kodu ekleyin `Sheet1_Startup` b metnini ayarlamak için yöntemi`utton`.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
-     [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]  
+    [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
+    [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]  
   
-3.  Yalnızca C# için eklemek için bir olay işleyicisi <xref:System.Windows.Forms.Control.Click> olaya `Sheet1_Startup` yöntemi.  
+3. Yalnızca C# için eklemek için bir olay işleyicisi <xref:System.Windows.Forms.Control.Click> olaya `Sheet1_Startup` yöntemi.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]  
+    [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]  
   
- Şimdi işlemek için kod ekleyin <xref:System.Windows.Forms.Control.Click> düğmesinin olayı.  
+   Şimdi işlemek için kod ekleyin <xref:System.Windows.Forms.Control.Click> düğmesinin olayı.  
   
 ## <a name="save-changes-to-the-database"></a>Değişiklikleri veritabanına kaydetmek  
  Herhangi bir değişiklik yapılmıştır açıkça veritabanına geri kaydedilene kadar yalnızca yerel veri kümesindeki verileri yok.  
@@ -175,15 +175,15 @@ ms.locfileid: "38781676"
   
 ### <a name="to-add-new-rows"></a>Yeni satır eklemek için  
   
-1.  Liste nesnesi içinde bir hücre seçin.  
+1. Liste nesnesi içinde bir hücre seçin.  
   
-     Bir yıldız işareti ile listenin en yeni bir satır görüntülenir (**\***) ilk hücreye yeni bir satır.  
+    Bir yıldız işareti ile listenin en yeni bir satır görüntülenir (**\\***) ilk hücreye yeni bir satır.  
   
-2.  Aşağıdaki bilgileri boş satır ekleyin.  
+2. Aşağıdaki bilgileri boş satır ekleyin.  
   
-    |EmployeeID|Soyadı|FirstName|Başlık|  
-    |----------------|--------------|---------------|-----------|  
-    |10|Aslan|Halil|Satış Yöneticisi|  
+   |EmployeeID|Soyadı|FirstName|Başlık|  
+   |----------------|--------------|---------------|-----------|  
+   |10|Aslan|Halil|Satış Yöneticisi|  
   
 ### <a name="to-delete-rows"></a>Satırları silmek için  
   

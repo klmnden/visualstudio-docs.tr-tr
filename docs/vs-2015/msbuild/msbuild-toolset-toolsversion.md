@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b88587e54c19f4e5446526916f7a932b7502db63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd516501acfc7690c12a253adc5da6cf163b5592
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242781"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851835"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Araç Takımı (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,39 +65,39 @@ MSBuild, bir uygulama oluşturmak için bir araç takımı görevleri, hedefler 
 ## <a name="toolset-implementation"></a>Araç takımını uygulama  
  Bir araç takımı, çeşitli araçlar, hedefler ve araç takımı ' yapan görev yollarını seçerek uygulayın. MSBuild tanımlayan araç takımı araçlarında aşağıdaki kaynaklardan gelir:  
   
--   .NET Framework klasör.  
+- .NET Framework klasör.  
   
--   Ek yönetilen araçlar.  
+- Ek yönetilen araçlar.  
   
- ResGen.exe ve Tlbimp.exe'nin yönetilen araçlar içerir.  
+  ResGen.exe ve Tlbimp.exe'nin yönetilen araçlar içerir.  
   
- MSBuild araç takımı erişmek için iki yol sunar:  
+  MSBuild araç takımı erişmek için iki yol sunar:  
   
--   Araç özelliklerini kullanarak  
+- Araç özelliklerini kullanarak  
   
--   Kullanarak <xref:Microsoft.Build.Utilities.ToolLocationHelper> yöntemleri  
+- Kullanarak <xref:Microsoft.Build.Utilities.ToolLocationHelper> yöntemleri  
   
- Araç Özellikleri araçları yollarını belirtin. MSBuild değerini kullanır `ToolsVersion` araç özelliklerini ayarlamak için kayıt defteri anahtarı bilgileri sonra kullanır ve karşılık gelen kayıt defteri anahtarını bulmak için proje dosyasında özniteliği. Örneğin, varsa `ToolsVersion` değerine sahip `12.0`, MSBuild araç takımı özelliklerini bu kayıt defteri anahtarı göre ayarlar: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
+  Araç Özellikleri araçları yollarını belirtin. MSBuild değerini kullanır `ToolsVersion` araç özelliklerini ayarlamak için kayıt defteri anahtarı bilgileri sonra kullanır ve karşılık gelen kayıt defteri anahtarını bulmak için proje dosyasında özniteliği. Örneğin, varsa `ToolsVersion` değerine sahip `12.0`, MSBuild araç takımı özelliklerini bu kayıt defteri anahtarı göre ayarlar: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
   
- Araç özellikleri şunlardır:  
+  Araç özellikleri şunlardır:  
   
--   `MSBuildToolsPath` MSBuild ikili dosyalarının yolunu belirtir.  
+- `MSBuildToolsPath` MSBuild ikili dosyalarının yolunu belirtir.  
   
--   `SDK40ToolsPath` MSBuild için ek yönetilen araçları yolunu belirtir (Bu 4.0 veya 4.5 olabilir) 4.x.  
+- `SDK40ToolsPath` MSBuild için ek yönetilen araçları yolunu belirtir (Bu 4.0 veya 4.5 olabilir) 4.x.  
   
--   `SDK35ToolsPath` MSBuild 3.5 için ek yönetilen araçları yolunu belirtir.  
+- `SDK35ToolsPath` MSBuild 3.5 için ek yönetilen araçları yolunu belirtir.  
   
- Alternatif olarak, araç takımı program aracılığıyla yöntemleri çağırarak belirleyebilirsiniz <xref:Microsoft.Build.Utilities.ToolLocationHelper> sınıfı. Sınıfı, bu yöntem içerir:  
+  Alternatif olarak, araç takımı program aracılığıyla yöntemleri çağırarak belirleyebilirsiniz <xref:Microsoft.Build.Utilities.ToolLocationHelper> sınıfı. Sınıfı, bu yöntem içerir:  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> .NET Framework klasörünün yolunu döndürür.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> .NET Framework klasörünün yolunu döndürür.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> .NET Framework klasöründe bir dosya yolunu döndürür.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> .NET Framework klasöründe bir dosya yolunu döndürür.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> Yönetilen Araçları klasörünün yolunu döndürür.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> Yönetilen Araçları klasörünün yolunu döndürür.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> genellikle yönetilen Araçlar klasöründe bulunan bir dosyanın yolunu döndürür.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> genellikle yönetilen Araçlar klasöründe bulunan bir dosyanın yolunu döndürür.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> derleme araçları yolunu döndürür.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> derleme araçları yolunu döndürür.  
   
 ### <a name="sub-toolsets"></a>Alt araç takımları  
  Bu konunun önceki kısımlarında açıklandığı gibi MSBuild olan temel araçları yolunu belirtmek için bir kayıt defteri anahtarını kullanır. Bir alt anahtar varsa, MSBuild ek araçlarını içeren bir alt-araç yolu belirlemek için kullanır. Bu durumda, araç takımını hem anahtarlarında tanımlanan özellik tanımları birleştirerek tanımlanır.  
@@ -107,19 +107,19 @@ MSBuild, bir uygulama oluşturmak için bir araç takımı görevleri, hedefler 
   
  Alt araç takımları varken etkin hale `VisualStudioVersion` özellik oluşturun. Bu özellik, bu değerlerden birini alabilir:  
   
--   "10.0".NET Framework 4 alt araç belirtir  
+- "10.0".NET Framework 4 alt araç belirtir  
   
--   "11.0".NET Framework 4.5 alt araç belirtir  
+- "11.0".NET Framework 4.5 alt araç belirtir  
   
--   "12.0".NET Framework 4.5.1 alt araç belirtir  
+- "12.0".NET Framework 4.5.1 alt araç belirtir  
   
- Alt-takımları 10.0 ve 11.0 ToolsVersion 4.0 ile kullanılmalıdır. Sonraki sürümlerde, alt araç kümesi sürümünü ve ToolsVersion eşleşmesi gerekir.  
+  Alt-takımları 10.0 ve 11.0 ToolsVersion 4.0 ile kullanılmalıdır. Sonraki sürümlerde, alt araç kümesi sürümünü ve ToolsVersion eşleşmesi gerekir.  
   
- Bir derleme sırasında MSBuild otomatik olarak belirleyen ve ayarlar için varsayılan bir değer `VisualStudioVersion` zaten tanımlanmışsa özelliği.  
+  Bir derleme sırasında MSBuild otomatik olarak belirleyen ve ayarlar için varsayılan bir değer `VisualStudioVersion` zaten tanımlanmışsa özelliği.  
   
- MSBuild için aşırı yüklemeler sağlar `ToolLocationHelper` ekleme yöntemleri bir `VisualStudioVersion` numaralandırılmış bir parametre değeri  
+  MSBuild için aşırı yüklemeler sağlar `ToolLocationHelper` ekleme yöntemleri bir `VisualStudioVersion` numaralandırılmış bir parametre değeri  
   
- Alt araç takımları .NET Framework 4. 5 ' kullanılmaya başlanmıştır.  
+  Alt araç takımları .NET Framework 4. 5 ' kullanılmaya başlanmıştır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Standart ve özel araç takımı yapılandırmaları](../msbuild/standard-and-custom-toolset-configurations.md)   

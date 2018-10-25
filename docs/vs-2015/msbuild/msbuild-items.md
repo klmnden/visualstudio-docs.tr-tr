@@ -16,12 +16,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d04bd43be2a4fa2a72dec687df2582ccf6201b94
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d517d3fd24b17c33a7bba9f888fbb904631be5f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229365"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851939"
 ---
 # <a name="msbuild-items"></a>MSBuild Öğeleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,13 +100,13 @@ MSBuild öğeleri derleme sistemine girişleri ve genelde dosyaları temsil eder
 ##  <a name="BKMK_Wildcards"></a> Öğeleri belirtmek için joker karakter kullanılması  
  Kullanabileceğiniz **, \*, ve? her dosyayı ayrı ayrı listelemek yerine bir yapı için girdi olarak bir dosya grubu belirtmek için joker karakterler.  
   
--   ? joker karakter, bir tek karakterle eşleşir.  
+- ? joker karakter, bir tek karakterle eşleşir.  
   
--   * Joker karakter, sıfır veya daha fazla karakter ile eşleşir.  
+- * Joker karakter, sıfır veya daha fazla karakter ile eşleşir.  
   
--   ** Joker karakter dizisi ile eşleşen bir kısmi yol.  
+- ** Joker karakter dizisi ile eşleşen bir kısmi yol.  
   
- Örneğin, proje dosyanızda aşağıdaki öğeyi kullanarak proje dosyasını içeren dizine .cs dosyaları belirtebilirsiniz.  
+  Örneğin, proje dosyanızda aşağıdaki öğeyi kullanarak proje dosyasını içeren dizine .cs dosyaları belirtebilirsiniz.  
   
 ```  
 <CSFile Include="*.cs"/>  

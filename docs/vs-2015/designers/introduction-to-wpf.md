@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8eee94b8d3e2b384ac645cf1178403556f0496ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b29e4e241589134c8dfa5b94e997d6603b075ee3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277426"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826362"
 ---
 # <a name="introduction-to-wpf"></a>WPF'ye Giriş
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Windows Presentation Foundation (WPF) masaüstü istemcisi, görsel olarak etkil
 ##  <a name="Markup_And_Codebehind"></a> Biçimlendirme ve arka plan kod  
  WPF, her ikisini de kullanarak bir uygulama geliştirmenize olanak tanır *biçimlendirme* ve *arka plan kod*, ASP.NET geliştiricilerinin aşina olmanız gereken bir deneyim. Genel olarak yönetilen bir programlama dili (arka plan kod) davranışını uygulamak için kullanırken uygulama görünümünü uygulamak için XAML biçimlendirme kullanın. Görünümünü ve davranışını ayrımı aşağıdaki faydaları sağlar:  
   
--   Görünüm özgü biçimlendirme davranışını özgü kodla sıkı bir şekilde eşleşmediğinden dolayı geliştirme ve bakım maliyetlerinin azaltılır.  
+- Görünüm özgü biçimlendirme davranışını özgü kodla sıkı bir şekilde eşleşmediğinden dolayı geliştirme ve bakım maliyetlerinin azaltılır.  
   
--   Tasarımcılar ile aynı anda uygulamanın davranışını uygulama geliştiriciler bir uygulamanın görünümünü uygulayabilirsiniz çünkü geliştirme daha verimli olur.  
+- Tasarımcılar ile aynı anda uygulamanın davranışını uygulama geliştiriciler bir uygulamanın görünümünü uygulayabilirsiniz çünkü geliştirme daha verimli olur.  
   
--   [Genelleştirme ve Yerelleştirme](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx) WPF uygulamaları basitleştirilir.  
+- [Genelleştirme ve Yerelleştirme](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx) WPF uygulamaları basitleştirilir.  
   
- WPF biçimlendirmesi ve arka plan kod hakkında temel bilgiler verilmiştir.  
+  WPF biçimlendirmesi ve arka plan kod hakkında temel bilgiler verilmiştir.  
   
 ### <a name="markup"></a>Biçimlendirme  
  XAML bir uygulamanın görünümünü bildirimli olarak uygulamak için kullanılan XML-tabanlı işaretleme dilidir. Genellikle, windows, iletişim kutuları, sayfalar ve kullanıcı denetimleri oluşturma ve denetimleri, şekiller ve grafikler ile doldurmak için kullanılır.  
@@ -194,23 +194,23 @@ End Namespace
   
  Temel WPF sınıflarıyla alt denetimler için Düzen sistemi kullanıma sunulur. Kılavuz, yığın ve takma gibi ortak düzenleri için çeşitli düzen denetimleri WPF içerir:  
   
--   <xref:System.Windows.Controls.Canvas>: Kendi düzen alt denetimleri sağlar.  
+- <xref:System.Windows.Controls.Canvas>: Kendi düzen alt denetimleri sağlar.  
   
--   <xref:System.Windows.Controls.DockPanel>: Alt denetimler bölmesinin kenarlarını hizalanır.  
+- <xref:System.Windows.Controls.DockPanel>: Alt denetimler bölmesinin kenarlarını hizalanır.  
   
--   <xref:System.Windows.Controls.Grid>: Alt denetimler, satırlar ve sütunlarla yerleştirilir.  
+- <xref:System.Windows.Controls.Grid>: Alt denetimler, satırlar ve sütunlarla yerleştirilir.  
   
--   <xref:System.Windows.Controls.StackPanel>: Dikey veya yatay alt denetimler yığılır.  
+- <xref:System.Windows.Controls.StackPanel>: Dikey veya yatay alt denetimler yığılır.  
   
--   <xref:System.Windows.Controls.VirtualizingStackPanel>: Alt denetimler sanallaştırılmış ve yatay veya dikey yönlendirilmiş olan tek bir satıra düzenlenir.  
+- <xref:System.Windows.Controls.VirtualizingStackPanel>: Alt denetimler sanallaştırılmış ve yatay veya dikey yönlendirilmiş olan tek bir satıra düzenlenir.  
   
--   <xref:System.Windows.Controls.WrapPanel>: Alt denetimler soldan sağa doğru sırayla konumlandırılmış ve geçerli satırdaki boşluk izin verdiğinden daha fazla denetim olduğunda sonraki satıra kaydırılmış.  
+- <xref:System.Windows.Controls.WrapPanel>: Alt denetimler soldan sağa doğru sırayla konumlandırılmış ve geçerli satırdaki boşluk izin verdiğinden daha fazla denetim olduğunda sonraki satıra kaydırılmış.  
   
- Aşağıdaki örnekte bir <xref:System.Windows.Controls.DockPanel> birkaç düzenlemek için <xref:System.Windows.Controls.TextBox> kontrol eder.  
+  Aşağıdaki örnekte bir <xref:System.Windows.Controls.DockPanel> birkaç düzenlemek için <xref:System.Windows.Controls.TextBox> kontrol eder.  
   
- [!code-xml[IntroToWPFSnippets#LayoutMARKUP](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/LayoutWindow.xaml#layoutmarkup)]  
+  [!code-xml[IntroToWPFSnippets#LayoutMARKUP](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/LayoutWindow.xaml#layoutmarkup)]  
   
- <xref:System.Windows.Controls.DockPanel> Alt sağlayan <xref:System.Windows.Controls.TextBox> bunları düzenlemek nasıl bildirmek için kontrol eder. Bunu yapmak için <xref:System.Windows.Controls.DockPanel> uygulayan bir <xref:System.Windows.Controls.DockPanel.Dock%2A> dock stilini belirtmek için bunların her biri izin vermek için alt denetimler için kullanıma sunulan özelliği.  
+  <xref:System.Windows.Controls.DockPanel> Alt sağlayan <xref:System.Windows.Controls.TextBox> bunları düzenlemek nasıl bildirmek için kontrol eder. Bunu yapmak için <xref:System.Windows.Controls.DockPanel> uygulayan bir <xref:System.Windows.Controls.DockPanel.Dock%2A> dock stilini belirtmek için bunların her biri izin vermek için alt denetimler için kullanıma sunulan özelliği.  
   
 > [!NOTE]
 >  Alt denetimler tarafından kullanılacak bir WPF yapısı için bir üst denetimi tarafından uygulanan bir özellik olarak adlandırılan bir [ekli özellik](https://msdn.microsoft.com/library/ms749011\(v=vs.100\).aspx).  
@@ -222,33 +222,33 @@ End Namespace
 ##  <a name="Data_Binding"></a> Veri bağlama  
  Çoğu uygulama, kullanıcılara görüntülemek ve veri düzenleme bulunmasını sağlamak için oluşturulur. WPF uygulamaları için depolama ve veri erişim iş zaten için SQL Server ve ADO .NET gibi teknolojileri tarafından sağlanır. Verilere nasıl erişildiği ve yönetilen nesnelere bir uygulamanın yüklü WPF uygulamaları için sabit çalışmaya başladıktan sonra. Esas olarak, bu iki şey içerir:  
   
-1.  Verileri veri burada görüntülenir ve düzenlenebildiği denetimlere yönetilen nesneleri kopyalama.  
+1. Verileri veri burada görüntülenir ve düzenlenebildiği denetimlere yönetilen nesneleri kopyalama.  
   
-2.  Denetimleri kullanarak verilerde yapılan değişiklikler yönetilen nesnelere kopyalandığından emin olma.  
+2. Denetimleri kullanarak verilerde yapılan değişiklikler yönetilen nesnelere kopyalandığından emin olma.  
   
- Uygulama geliştirmeyi kolaylaştırmak için WPF otomatik olarak bu adımları gerçekleştirmek için veri bağlama altyapısı sağlar. Veri bağlama altyapısı temel birimidir <xref:System.Windows.Data.Binding> sınıfı, işi olduğu bir denetimi (bağlama hedefi) bağlamak için bir veri nesnesine (bağlama kaynağı). Bu ilişki, aşağıdaki şekilde gösterilmiştir.  
+   Uygulama geliştirmeyi kolaylaştırmak için WPF otomatik olarak bu adımları gerçekleştirmek için veri bağlama altyapısı sağlar. Veri bağlama altyapısı temel birimidir <xref:System.Windows.Data.Binding> sınıfı, işi olduğu bir denetimi (bağlama hedefi) bağlamak için bir veri nesnesine (bağlama kaynağı). Bu ilişki, aşağıdaki şekilde gösterilmiştir.  
   
- ![Temel veri bağlama diyagramı](../designers/media/databindingmostbasic.png "DataBindingMostBasic")  
+   ![Temel veri bağlama diyagramı](../designers/media/databindingmostbasic.png "DataBindingMostBasic")  
   
- Aşağıdaki örnek nasıl bağlanacağını gösterir. bir <xref:System.Windows.Controls.TextBox> özel bir örneğine `Person` nesne. `Person` Uygulaması, aşağıdaki kodda gösterilmiştir.  
+   Aşağıdaki örnek nasıl bağlanacağını gösterir. bir <xref:System.Windows.Controls.TextBox> özel bir örneğine `Person` nesne. `Person` Uygulaması, aşağıdaki kodda gösterilmiştir.  
   
- [!code-csharp[SimpleDataBindingSnippets#PersonClassCODE](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/Person.cs#personclasscode)]
- [!code-vb[SimpleDataBindingSnippets#PersonClassCODE](../snippets/visualbasic/VS_Snippets_Wpf/SimpleDataBindingSnippets/VisualBasic/Person.vb#personclasscode)]  
+   [!code-csharp[SimpleDataBindingSnippets#PersonClassCODE](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/Person.cs#personclasscode)]
+   [!code-vb[SimpleDataBindingSnippets#PersonClassCODE](../snippets/visualbasic/VS_Snippets_Wpf/SimpleDataBindingSnippets/VisualBasic/Person.vb#personclasscode)]  
   
- Aşağıdaki biçimlendirmede bağlar <xref:System.Windows.Controls.TextBox> özel bir örneğine `Person` nesne.  
+   Aşağıdaki biçimlendirmede bağlar <xref:System.Windows.Controls.TextBox> özel bir örneğine `Person` nesne.  
   
- [!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP1](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup1)]  
-[!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP2](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup2)]  
-[!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP3](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup3)]  
+   [!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP1](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup1)]  
+   [!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP2](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup2)]  
+   [!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP3](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup3)]  
   
- [!code-csharp[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml.cs#databindingcodebehind)]
- [!code-vb[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../snippets/visualbasic/VS_Snippets_Wpf/SimpleDataBindingSnippets/VisualBasic/DataBindingWindow.xaml.vb#databindingcodebehind)]  
+   [!code-csharp[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml.cs#databindingcodebehind)]
+   [!code-vb[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../snippets/visualbasic/VS_Snippets_Wpf/SimpleDataBindingSnippets/VisualBasic/DataBindingWindow.xaml.vb#databindingcodebehind)]  
   
- Bu örnekte, `Person` sınıfı gerideki kod örneği ve veri bağlamı olarak ayarlanmış olan `DataBindingWindow`. Biçimlendirme içinde <xref:System.Windows.Controls.TextBox.Text%2A> özelliği <xref:System.Windows.Controls.TextBox> bağlı `Person.Name` özelliği (kullanarak "`{Binding ... }`" XAML sözdizimi). WPF bağlama için bu XAML söyler <xref:System.Windows.Controls.TextBox> denetimini `Person` depolanan nesne <xref:System.Windows.FrameworkElement.DataContext%2A> penceresinin özelliği.  
+   Bu örnekte, `Person` sınıfı gerideki kod örneği ve veri bağlamı olarak ayarlanmış olan `DataBindingWindow`. Biçimlendirme içinde <xref:System.Windows.Controls.TextBox.Text%2A> özelliği <xref:System.Windows.Controls.TextBox> bağlı `Person.Name` özelliği (kullanarak "`{Binding ... }`" XAML sözdizimi). WPF bağlama için bu XAML söyler <xref:System.Windows.Controls.TextBox> denetimini `Person` depolanan nesne <xref:System.Windows.FrameworkElement.DataContext%2A> penceresinin özelliği.  
   
- WPF veri bağlama altyapısı, sıralama, filtreleme ve gruplandırma doğrulama içeren ek destek sağlar. Ayrıca, veri bağlama standart WPF denetimi tarafından görüntülenen kullanıcı arabirimi uygun değilse, bağlı veri için özel kullanıcı arabirimi oluşturmak üzere veri şablonları destekler.  
+   WPF veri bağlama altyapısı, sıralama, filtreleme ve gruplandırma doğrulama içeren ek destek sağlar. Ayrıca, veri bağlama standart WPF denetimi tarafından görüntülenen kullanıcı arabirimi uygun değilse, bağlı veri için özel kullanıcı arabirimi oluşturmak üzere veri şablonları destekler.  
   
- Daha fazla bilgi için [Data Binding Overview](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx).  
+   Daha fazla bilgi için [Data Binding Overview](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx).  
   
 ##  <a name="Graphics"></a> Grafik  
  WPF kapsamlı, ölçeklenebilir ve esnek bir aşağıdaki avantajlara sahip grafik özellikler kümesi sağlar:  
@@ -335,21 +335,21 @@ End Namespace
 ##  <a name="Text_and_Typography"></a> Metin ve tipografi  
  Yüksek kaliteli metin işleme kolaylaştırmak için WPF aşağıdaki özellikleri sunmaktadır:  
   
--   OpenType yazı tipi desteği.  
+- OpenType yazı tipi desteği.  
   
--   ClearType geliştirmeleri.  
+- ClearType geliştirmeleri.  
   
--   Donanım hızlandırma yararlanır, yüksek performans.  
+- Donanım hızlandırma yararlanır, yüksek performans.  
   
--   Tümleştirme ortamı, grafikler ve animasyon metin.  
+- Tümleştirme ortamı, grafikler ve animasyon metin.  
   
--   Destek ve geri dönüş mekanizması uluslararası yazı tipi.  
+- Destek ve geri dönüş mekanizması uluslararası yazı tipi.  
   
- Grafik metin tümleştirmesiyle bir örnek, aşağıdaki şekilde metin düzenlemelerinin uygulaması gösterilmektedir.  
+  Grafik metin tümleştirmesiyle bir örnek, aşağıdaki şekilde metin düzenlemelerinin uygulaması gösterilmektedir.  
   
- ![Çeşitli metin süslemeleri metin](../designers/media/wpfintrofigure23.png "WPFIntroFigure23")  
+  ![Çeşitli metin süslemeleri metin](../designers/media/wpfintrofigure23.png "WPFIntroFigure23")  
   
- Daha fazla bilgi için [tipografi Windows Presentation Foundation'da](https://msdn.microsoft.com/library/ms742190\(v=vs.100\).aspx).  
+  Daha fazla bilgi için [tipografi Windows Presentation Foundation'da](https://msdn.microsoft.com/library/ms742190\(v=vs.100\).aspx).  
   
 ##  <a name="WPF_Customization"></a> WPF uygulamaları özelleştirme  
  Bu noktaya kadar uygulamaları geliştirmek için çekirdek WPF yapı taşlarını öğrendiniz. Uygulama modeli, barındırmak ve çoğunlukla denetimlerden oluşan uygulama içerik teslim etmek için kullanın. Bir kullanıcı arabirimi denetimleri düzenlemesini basitleştirmek ve pencere boyutunu değişiklikleri karşılaşıldığında düzenlemeyi korunduğundan emin olmak ve ayarlarını görüntülemek için WPF düzen sistemi kullanın. Uygulamaların çoğu verilerle etkileşimde bulunmak kullanıcıların olduğundan, kullanıcı arabirimi ile veri tümleştirme iş miktarını azaltmaya yönelik veri bağlama kullanın. Uygulamanızın görünümünü geliştirmek için WPF tarafından sağlanan kapsamlı grafikler, animasyon ve medya kullanın.  
@@ -445,51 +445,51 @@ End Namespace
   
  Bu örnekte kullanarak arka plan rengi kaynağı uygulayan `Window.Resources` özellik öğesi. Bu kaynak için tüm alt kullanılabilir <xref:System.Windows.Window>. Birçok kaynak kapsamlar, aşağıdakiler de dahil oldukları çözümlenen sırayla listelenir:  
   
-1.  Tek bir denetim (devralınan kullanarak <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> özelliği).  
+1. Tek bir denetim (devralınan kullanarak <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> özelliği).  
   
-2.  A <xref:System.Windows.Window> veya <xref:System.Windows.Controls.Page> (Ayrıca devralınan kullanarak <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> özelliği).  
+2. A <xref:System.Windows.Window> veya <xref:System.Windows.Controls.Page> (Ayrıca devralınan kullanarak <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> özelliği).  
   
-3.  Bir <xref:System.Windows.Application> (kullanarak <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> özelliği).  
+3. Bir <xref:System.Windows.Application> (kullanarak <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> özelliği).  
   
- Çeşitli kapsamlar, tanımlamak ve kaynaklarınızı paylaşım yolu esneklik sağlar.  
+   Çeşitli kapsamlar, tanımlamak ve kaynaklarınızı paylaşım yolu esneklik sağlar.  
   
- Kaynaklarınızı doğrudan belirli bir kapsamla ilişkilendirmeye alternatif olarak, ayrı bir kullanarak bir veya daha fazla kaynak paketleyebilirsiniz <xref:System.Windows.ResourceDictionary> bir uygulamanın diğer bölümlerini başvurulabilir. Örneğin, aşağıdaki örnek, bir kaynak sözlüğünde varsayılan arka plan rengi tanımlar.  
+   Kaynaklarınızı doğrudan belirli bir kapsamla ilişkilendirmeye alternatif olarak, ayrı bir kullanarak bir veya daha fazla kaynak paketleyebilirsiniz <xref:System.Windows.ResourceDictionary> bir uygulamanın diğer bölümlerini başvurulabilir. Örneğin, aşağıdaki örnek, bir kaynak sözlüğünde varsayılan arka plan rengi tanımlar.  
   
- [!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/BackgroundColorResources.xaml#resourcedictionarymarkup1)]  
-[!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/BackgroundColorResources.xaml#resourcedictionarymarkup2)]  
+   [!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/BackgroundColorResources.xaml#resourcedictionarymarkup1)]  
+   [!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/BackgroundColorResources.xaml#resourcedictionarymarkup2)]  
   
- Aşağıdaki örnek, önceki örnekte, bir uygulama arasında paylaşılacak şekilde tanımlanmış kaynak sözlüğü başvurur.  
+   Aşağıdaki örnek, önceki örnekte, bir uygulama arasında paylaşılacak şekilde tanımlanmış kaynak sözlüğü başvurur.  
   
- [!code-xml[IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/App.xaml#applicationscopedresourcedictionarymarkup1)]  
-[!code-xml[IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/App.xaml#applicationscopedresourcedictionarymarkup2)]  
+   [!code-xml[IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/App.xaml#applicationscopedresourcedictionarymarkup1)]  
+   [!code-xml[IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/App.xaml#applicationscopedresourcedictionarymarkup2)]  
   
- Kaynak ve kaynak sözlükleri temalar ve dış görünümleri için destek WPF temelidir.  
+   Kaynak ve kaynak sözlükleri temalar ve dış görünümleri için destek WPF temelidir.  
   
- Daha fazla bilgi için [kaynaklarına genel bakış](https://msdn.microsoft.com/library/ms750613\(v=vs.100\).aspx).  
+   Daha fazla bilgi için [kaynaklarına genel bakış](https://msdn.microsoft.com/library/ms750613\(v=vs.100\).aspx).  
   
 ### <a name="custom-controls"></a>Özel denetimler  
  WPF özelleştirme desteği çok sayıda sağlasa da, burada varolan WPF denetimlerinin uygulamanız ya da kullanıcılarının gereksinimlerini karşılamayan durumlarla karşılaşabilirsiniz. Bu durum ortaya çıkabilir olduğunda:  
   
--   Varolan WPF uygulamaları Görünüm ve yapısını özelleştirerek gerektiren kullanıcı arabirimi oluşturulamıyor.  
+- Varolan WPF uygulamaları Görünüm ve yapısını özelleştirerek gerektiren kullanıcı arabirimi oluşturulamıyor.  
   
--   İhtiyaç duyduğunuz davranışı desteklenmiyor (veya kolayca desteklenmez) varolan WPF uygulamaları tarafından.  
+- İhtiyaç duyduğunuz davranışı desteklenmiyor (veya kolayca desteklenmez) varolan WPF uygulamaları tarafından.  
   
- Bu noktada, ancak yeni bir denetim oluşturmak için üç WPF model birinin yararlanabilirsiniz. Her model, belirli bir senaryoyu hedefler ve belirli WPF temel sınıftan türetilen özel denetim gerektirir. Üç model aşağıda listelenmiştir:  
+  Bu noktada, ancak yeni bir denetim oluşturmak için üç WPF model birinin yararlanabilirsiniz. Her model, belirli bir senaryoyu hedefler ve belirli WPF temel sınıftan türetilen özel denetim gerektirir. Üç model aşağıda listelenmiştir:  
   
--   **Kullanıcı denetimi modeli**. Özel denetim türetildiği <xref:System.Windows.Controls.UserControl> ve bir veya daha fazla diğer denetimlerden oluşur.  
+- **Kullanıcı denetimi modeli**. Özel denetim türetildiği <xref:System.Windows.Controls.UserControl> ve bir veya daha fazla diğer denetimlerden oluşur.  
   
--   **Denetim modeli**. Özel denetim türetildiği <xref:System.Windows.Controls.Control> ve WPF denetimleri çoğunu gibi şablonları kullanarak görünümlerini davranışlarını ayırmak uygulamaları oluşturmak için kullanılır. Öğesinden türetme <xref:System.Windows.Controls.Control> kullanıcı denetimleri, ancak daha fazla çaba gerektirebilir, özel bir kullanıcı arabirimi oluşturmak için daha fazla özgürlük tanır.  
+- **Denetim modeli**. Özel denetim türetildiği <xref:System.Windows.Controls.Control> ve WPF denetimleri çoğunu gibi şablonları kullanarak görünümlerini davranışlarını ayırmak uygulamaları oluşturmak için kullanılır. Öğesinden türetme <xref:System.Windows.Controls.Control> kullanıcı denetimleri, ancak daha fazla çaba gerektirebilir, özel bir kullanıcı arabirimi oluşturmak için daha fazla özgürlük tanır.  
   
--   **Framework öğesi modeli**. Özel denetim türetildiği <xref:System.Windows.FrameworkElement> görünümünü (şablonları değil) özel işleme mantığı tarafından tanımlanan zaman.  
+- **Framework öğesi modeli**. Özel denetim türetildiği <xref:System.Windows.FrameworkElement> görünümünü (şablonları değil) özel işleme mantığı tarafından tanımlanan zaman.  
   
- Aşağıdaki örnek bir özel sayısal gösterir yukarı/aşağı öğesinden türetilen denetim <xref:System.Windows.Controls.UserControl>.  
+  Aşağıdaki örnek bir özel sayısal gösterir yukarı/aşağı öğesinden türetilen denetim <xref:System.Windows.Controls.UserControl>.  
   
- [!code-xml[IntroToWPFSnippets#UserControlMARKUP](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml#usercontrolmarkup)]  
+  [!code-xml[IntroToWPFSnippets#UserControlMARKUP](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml#usercontrolmarkup)]  
   
- [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind1)]
- [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind1)]  
-[!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind2)]
-[!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind2)]  
+  [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind1)]
+  [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind1)]  
+  [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind2)]
+  [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind2)]  
   
   
  Kullanıcı denetimine eklemek için gerekli olan XAML sonraki örnekte bir <xref:System.Windows.Window>.  

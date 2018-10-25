@@ -18,12 +18,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8eadbd73c82bc40d6b3b669968cb8808ab2991d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 30a8b7a465c85e60b00f2208bd6e51cc55c4bbe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251920"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852537"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>İzlenecek yol: Windows Mağazası Uygulamaları için Birim Testleri Oluşturma ve Çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ Visual Studio birim testi yönetilen için destek içerir [!INCLUDE[win8_appname
   
  Visual Studio aşağıdaki birim sınama işlevleri sağlar:  
   
--   [Birim testi projeleri oluşturma](#CreateAndRunUnitTestWin8Tailored_Create)  
+- [Birim testi projeleri oluşturma](#CreateAndRunUnitTestWin8Tailored_Create)  
   
--   [Birim Test projesi için bildirimi düzenleyin](#CreateAndRunUnitTestWin8Tailored_Manifest)  
+- [Birim Test projesi için bildirimi düzenleyin](#CreateAndRunUnitTestWin8Tailored_Manifest)  
   
--   [Birim testini kodlama](#CreateAndRunUnitTestWin8Tailored_Code)  
+- [Birim testini kodlama](#CreateAndRunUnitTestWin8Tailored_Code)  
   
--   [Birim testleri çalıştırma](#CreateAndRunUnitTestWin8Tailored_Run)  
+- [Birim testleri çalıştırma](#CreateAndRunUnitTestWin8Tailored_Run)  
   
- Aşağıdaki yordamlar oluşturma, çalıştırma ve yönetilen Windows 8 için birim testlerinin hatalarını ayıklama adımlarını açıklamaktadır [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] uygulama.  
+  Aşağıdaki yordamlar oluşturma, çalıştırma ve yönetilen Windows 8 için birim testlerinin hatalarını ayıklama adımlarını açıklamaktadır [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] uygulama.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Visual Studio  

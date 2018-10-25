@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0ff9a85319ac35e051b41ff65ab5b027dc226f44
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f36ddfa182d1a0440ca733b19c34a27b245007fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677274"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848065"
 ---
 # <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Nasıl yapılır: program aracılığıyla bulunan öğeler arasında döngü
   <xref:Microsoft.Office.Interop.Word.Find> Sınıfında bir <xref:Microsoft.Office.Interop.Word.Find.Found%2A> döndüren özellik **true** olduğunda Aranan öğe bulundu. Bulunan tüm örnekleri arasında döngü bir <xref:Microsoft.Office.Interop.Word.Range> kullanarak <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> yöntemi.  
@@ -31,29 +31,29 @@ ms.locfileid: "35677274"
   
 ## <a name="to-loop-through-found-items"></a>Bulunan öğeler arasında döngü  
   
-1.  Bildirme bir <xref:Microsoft.Office.Interop.Word.Range> nesne.  
+1. Bildirme bir <xref:Microsoft.Office.Interop.Word.Range> nesne.  
   
-     Aşağıdaki kod örneği belge düzeyi özelleştirmesinde kullanılabilir.  
+    Aşağıdaki kod örneği belge düzeyi özelleştirmesinde kullanılabilir.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#79](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#79)]
-     [!code-csharp[Trin_VstcoreWordAutomation#79](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#79)]  
+    [!code-vb[Trin_VstcoreWordAutomation#79](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#79)]
+    [!code-csharp[Trin_VstcoreWordAutomation#79](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#79)]  
   
-     Aşağıdaki kod örneği, VSTO eklentisi içinde kullanılabilir. Bu örnek etkin belgeyi kullanır.  
+    Aşağıdaki kod örneği, VSTO eklentisi içinde kullanılabilir. Bu örnek etkin belgeyi kullanır.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#79](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#79)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#79](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#79)]  
+    [!code-vb[Trin_VstcoreWordAutomationAddIn#79](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#79)]
+    [!code-csharp[Trin_VstcoreWordAutomationAddIn#79](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#79)]  
   
-2.  Kullanım <xref:Microsoft.Office.Interop.Word.Find.Found%2A> belge dizenin tüm oluşumlarını arayın ve bir tam sayı değişkeni her zaman 1 artırmak için bir döngü özelliğinde dize bulundu.  
+2. Kullanım <xref:Microsoft.Office.Interop.Word.Find.Found%2A> belge dizenin tüm oluşumlarını arayın ve bir tam sayı değişkeni her zaman 1 artırmak için bir döngü özelliğinde dize bulundu.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#80](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#80)]
-     [!code-csharp[Trin_VstcoreWordAutomation#80](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#80)]  
+    [!code-vb[Trin_VstcoreWordAutomation#80](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#80)]
+    [!code-csharp[Trin_VstcoreWordAutomation#80](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#80)]  
   
-3.  Bir ileti kutusunda dizenin bulunup sayısını görüntüler.  
+3. Bir ileti kutusunda dizenin bulunup sayısını görüntüler.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#81](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#81)]
-     [!code-csharp[Trin_VstcoreWordAutomation#81](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#81)]  
+    [!code-vb[Trin_VstcoreWordAutomation#81](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#81)]
+    [!code-csharp[Trin_VstcoreWordAutomation#81](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#81)]  
   
- Aşağıdaki örnekler, ayrıntılı bir yöntemi gösterir.  
+   Aşağıdaki örnekler, ayrıntılı bir yöntemi gösterir.  
   
 ## <a name="document-level-customization-example"></a>Belge düzeyi özelleştirmesi örneği  
   

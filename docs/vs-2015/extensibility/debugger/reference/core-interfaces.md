@@ -15,12 +15,12 @@ ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ff260b8b54e3aff37b9cbceffaa1e4b3a374556
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2ef86b1985f71b1f6ea53106c4818e09a7f43b0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217743"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831828"
 ---
 # <a name="core-interfaces"></a>Temel Arabirimler
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -30,47 +30,47 @@ Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıda
 ## <a name="discussion"></a>Tartışma  
  Bu arabirimler, öncelikli olarak hata ayıklama altyapısı (DE) oluşturmak için kullanılır. Bunlar, kategorilere göre buraya düzenlenmiştir:  
   
--   [Kesme Noktaları](#Breakpoints)  
+- [Kesme Noktaları](#Breakpoints)  
   
--   [Bağlamlar](#Contexts)  
+- [Bağlamlar](#Contexts)  
   
--   [Çekirdek sunucusu](#CoreServer)  
+- [Çekirdek sunucusu](#CoreServer)  
   
--   [Hata ayıklama altyapıları](#DebugEngines)  
+- [Hata ayıklama altyapıları](#DebugEngines)  
   
--   [Belgeler](#Documents)  
+- [Belgeler](#Documents)  
   
--   [Olaylar](#Events)  
+- [Olaylar](#Events)  
   
--   [İfadeler](#Expressions)  
+- [İfadeler](#Expressions)  
   
--   [Bellek](#Memory)  
+- [Bellek](#Memory)  
   
--   [Modüller](#Modules)  
+- [Modüller](#Modules)  
   
--   [Bağlantı Noktaları](#Ports)  
+- [Bağlantı Noktaları](#Ports)  
   
--   [İşlemler](#Processes)  
+- [İşlemler](#Processes)  
   
--   [Programlar](#Programs)  
+- [Programlar](#Programs)  
   
--   [Özellikler](#Properties)  
+- [Özellikler](#Properties)  
   
--   [Yığın Çerçeveleri](#StackFrames)  
+- [Yığın Çerçeveleri](#StackFrames)  
   
--   [İş Parçacıkları](#Threads)  
+- [İş Parçacıkları](#Threads)  
   
--   [Tür Görselleştiricileri](#TypeVisualizers)  
+- [Tür Görselleştiricileri](#TypeVisualizers)  
   
- Arabirim uygulayabilir varlıkları şunlardır:  
+  Arabirim uygulayabilir varlıkları şunlardır:  
   
--   Hata ayıklama altyapısı (DE)  
+- Hata ayıklama altyapısı (DE)  
   
--   Bağlantı noktası sağlayıcısı (PS)  
+- Bağlantı noktası sağlayıcısı (PS)  
   
--   İfade değerlendirici (EE)  
+- İfade değerlendirici (EE)  
   
--   Visual Studio (VS)  
+- Visual Studio (VS)  
   
 ##  <a name="Breakpoints"></a> Kesme noktaları  
  Bu arabirimler ilgili uygulama ve kesme noktaları, izleme.  

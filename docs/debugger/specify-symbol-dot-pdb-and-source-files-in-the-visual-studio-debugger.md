@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f7710a84b05743c738bd694be0e5bcc117ab19
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 23286c6b042b7064c5ebfdf758a6b82e1b97f961
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880285"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850249"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısında simge (.pdb) ve kaynak dosyaları belirtme
 
@@ -67,24 +67,24 @@ Hata ayıklayıcı ayrıca sembol dosyaları aşağıdaki konumlarda arar:
    
    Varsayılan olarak, bir DLL oluşturduysanız veya bir *.exe* bağlayıcı bilgisayarınızda dosyanın bulunduğu yerleştirir tam yolunu ve dosya ilişkili *.pdb* DLL dosyasında veya *.exe* dosya. Hata ayıklayıcı sembol dosyası bu konumda olup olmadığını denetler.  
    
-1. Dll dosyasını aynı klasöre veya *.exe* dosya.
+2. Dll dosyasını aynı klasöre veya *.exe* dosya.
    
-1. Hata ayıklayıcı seçeneklerindeki sembol dosyaları için belirtilen konumlara. Ekleme ve simge konumları etkinleştirmek için bkz: [sembol konumlarını yapılandırma ve yükleme seçenekleri](#BKMK_Specify_symbol_locations_and_loading_behavior). 
+3. Hata ayıklayıcı seçeneklerindeki sembol dosyaları için belirtilen konumlara. Ekleme ve simge konumları etkinleştirmek için bkz: [sembol konumlarını yapılandırma ve yükleme seçenekleri](#BKMK_Specify_symbol_locations_and_loading_behavior). 
    
-    - Tüm yerel sembol Önbellek klasörü.  
+   - Tüm yerel sembol Önbellek klasörü.  
   
-    - Belirtilen ağ, internet veya yerel sembol sunucuları ve konumları, seçtiyseniz, Microsoft sembol sunucuları gibi. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hata ayıklama sembol dosyalarını uygulayan sembol sunucularından indirebilirsiniz `symsrv` protokolü. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) ve [Windows için hata ayıklama araçları](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) sembol sunucuları kullanabileceğiniz iki araçtır. 
+   - Belirtilen ağ, internet veya yerel sembol sunucuları ve konumları, seçtiyseniz, Microsoft sembol sunucuları gibi. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hata ayıklama sembol dosyalarını uygulayan sembol sunucularından indirebilirsiniz `symsrv` protokolü. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) ve [Windows için hata ayıklama araçları](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) sembol sunucuları kullanabileceğiniz iki araçtır. 
       
-      Kullanabileceğinize sembol sunucuları şunlardır:  
+     Kullanabileceğinize sembol sunucuları şunlardır:  
       
-      **Genel Microsoft sembol sunucuları**: bir sistem DLL Dosyasına veya bir üçüncü taraf kitaplığı için bir çağrı sırasında oluşan bir çökme hatasını gidermek için genellikle sistem gerekir *.pdb* dosyaları. Sistem *.pdb* dosyaları Windows DLL'leri için semboller içeren *.exe* dosyaları ve cihaz sürücüleri. Windows işletim sistemlerinde, MDAC, IIS, ISA sembolleri alabilirsiniz ve [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] genel Microsoft sembol sunucularından. 
+     **Genel Microsoft sembol sunucuları**: bir sistem DLL Dosyasına veya bir üçüncü taraf kitaplığı için bir çağrı sırasında oluşan bir çökme hatasını gidermek için genellikle sistem gerekir *.pdb* dosyaları. Sistem *.pdb* dosyaları Windows DLL'leri için semboller içeren *.exe* dosyaları ve cihaz sürücüleri. Windows işletim sistemlerinde, MDAC, IIS, ISA sembolleri alabilirsiniz ve [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] genel Microsoft sembol sunucularından. 
       
-      **Sembol sunucularını bir iç ağdaki veya yerel makinenizde**: ekibiniz veya şirketiniz, kendi ürünleriniz için ve sembollerin önbelleği olarak sembol sunucuları dış kaynaklardan oluşturabilirsiniz. Kendi makineniz üzerinde bir sembol sunucusu olabilir. 
+     **Sembol sunucularını bir iç ağdaki veya yerel makinenizde**: ekibiniz veya şirketiniz, kendi ürünleriniz için ve sembollerin önbelleği olarak sembol sunucuları dış kaynaklardan oluşturabilirsiniz. Kendi makineniz üzerinde bir sembol sunucusu olabilir. 
       
-      **Üçüncü taraf sembol sunucuları**: Windows uygulamaları ve kitaplıkları, üçüncü taraf sağlayıcılar, Internet üzerinden sembol sunucusuna erişim sağlayabilir. 
+     **Üçüncü taraf sembol sunucuları**: Windows uygulamaları ve kitaplıkları, üçüncü taraf sağlayıcılar, Internet üzerinden sembol sunucusuna erişim sağlayabilir. 
     
-    > [!WARNING]
-    > Genel Microsoft sembol sunucuları farklı bir sembol sunucusu kullanıyorsanız, sembol sunucusunun ve yolunun güvenilir olduğundan emin olun. Sembol dosyası rastgele yürütülebilir kod içerebileceğinden güvenlik tehditlerine karşı sunulabilir.  
+     > [!WARNING]
+     > Genel Microsoft sembol sunucuları farklı bir sembol sunucusu kullanıyorsanız, sembol sunucusunun ve yolunun güvenilir olduğundan emin olun. Sembol dosyası rastgele yürütülebilir kod içerebileceğinden güvenlik tehditlerine karşı sunulabilir.  
 
 <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a>
 ### <a name="configure-symbol-locations-and-loading-options"></a>Sembol konumları ve yükleme seçeneklerini yapılandırın
@@ -101,7 +101,7 @@ Hata ayıklayıcı ayrıca sembol dosyaları aşağıdaki konumlarda arar:
    
    ![Araçlar &#45; seçenekleri &#45; hata ayıklama &#45; semboller sayfasını](media/dbg-options-symbols.png "Araçları &#45; seçenekleri &#45; hata ayıklama &#45; semboller sayfasını")  
    
-1. Altında **sembol dosyası (.pdb) konumlar**,
+2. Altında **sembol dosyası (.pdb) konumlar**,
    - Kullanılacak **Microsoft sembol sunucuları**, onay kutusunu işaretleyin.  
    
    - Yeni bir sembol sunucusu konumu eklemek için
@@ -119,21 +119,21 @@ Hata ayıklayıcı ayrıca sembol dosyaları aşağıdaki konumlarda arar:
    - URL veya yol düzenlemek için girişi çift tıklatın veya seçin ve basın **F2**.  
    - Girişi kaldırmak için onu seçin ve ardından **-** simgesi.
   
-1.  (İsteğe bağlı) Altında sembol yükleme performansını iyileştirmek için **önbellek sembolleri bu dizinde**, sembol sunucuları kopyalayabilirsiniz bir yerel klasör yolunun semboller için türü.  
+3. (İsteğe bağlı) Altında sembol yükleme performansını iyileştirmek için **önbellek sembolleri bu dizinde**, sembol sunucuları kopyalayabilirsiniz bir yerel klasör yolunun semboller için türü.  
   
-    > [!NOTE]
-    > Yerel sembol önbellek C:\Windows veya bir alt klasör gibi korumalı bir klasördeki yerleştirmeyin. Bunun yerine okuma-yazma klasörü kullanın.  
+   > [!NOTE]
+   > Yerel sembol önbellek C:\Windows veya bir alt klasör gibi korumalı bir klasördeki yerleştirmeyin. Bunun yerine okuma-yazma klasörü kullanın.  
   
-    > [!NOTE]
-    > Varsa C++ projeleri için `_NT_SYMBOL_PATH` ortam değişken ayarlandığında, altında ayarlanan değer kılar **önbellek sembolleri bu dizinde**.
+   > [!NOTE]
+   > Varsa C++ projeleri için `_NT_SYMBOL_PATH` ortam değişken ayarlandığında, altında ayarlanan değer kılar **önbellek sembolleri bu dizinde**.
   
-1. Hata ayıklayıcıyı yüklemek istediğiniz modülleri belirtin **sembol dosyası (.pdb) konumlar** başladığı zaman.  
+4. Hata ayıklayıcıyı yüklemek istediğiniz modülleri belirtin **sembol dosyası (.pdb) konumlar** başladığı zaman.  
   
-  -  Seçin **aktarılmadıysa tüm modülleri Yükle** (sembol dosyası konumu, özellikle hariç modüller hariç tüm modüller için tüm sembolleri yüklemek için varsayılan). Bazı modüller hariç tutmak için işaretleyin **dışlanan modülleri belirtin**seçin **+** simge modülleri hariç tutmak ve adlarını yazın **Tamam**.  
+   -  Seçin **aktarılmadıysa tüm modülleri Yükle** (sembol dosyası konumu, özellikle hariç modüller hariç tüm modüller için tüm sembolleri yüklemek için varsayılan). Bazı modüller hariç tutmak için işaretleyin **dışlanan modülleri belirtin**seçin **+** simge modülleri hariç tutmak ve adlarını yazın **Tamam**.  
   
-  -  Sembol dosyası konumlardan belirttiğiniz modülleri yüklemek için işaretleyin **yük yalnızca belirtilen modüller**. Seçin **modülleri belirt dahil**seçin **+** simgesi ekleyin ve ardından modülleri adlarını yazın **Tamam**. Diğer modüller için Sembol dosyaları yüklü değil.  
+   -  Sembol dosyası konumlardan belirttiğiniz modülleri yüklemek için işaretleyin **yük yalnızca belirtilen modüller**. Seçin **modülleri belirt dahil**seçin **+** simgesi ekleyin ve ardından modülleri adlarını yazın **Tamam**. Diğer modüller için Sembol dosyaları yüklü değil.  
   
-1.  Seçin **Tamam**.
+5. Seçin **Tamam**.
 
 ## <a name="other-symbol-options-for-debugging"></a>Hata ayıklama için diğer sembol seçenekleri
   

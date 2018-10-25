@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a5e2bb260f8ef44936485203689bf7cf3e34e6c1
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: b5a05629773334648239a8656577fbe0ae347625
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857834"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830710"
 ---
 # <a name="t4-include-directive"></a>T4 Include Yönergesi
 
@@ -26,31 +26,31 @@ Metin şablonunda Visual Studio kullanarak başka bir dosyadan metin içerebilir
 <#@ include file="filePath" [once="true"] #>
 ```
 
--   `filePath` mutlak ya da geçerli şablon dosyasına bağıl olabilir.
+- `filePath` mutlak ya da geçerli şablon dosyasına bağıl olabilir.
 
-     Ayrıca, belirli Visual Studio uzantıları ekleme kodu dosyalarında aranacak kendi dizinlerini belirtebilir. Örneğin, Görselleştirme ve modelleme SDK'sını (DSL araçları) yüklediğinizde aşağıdaki klasör listeyi içermek için eklenir: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.
+   Ayrıca, belirli Visual Studio uzantıları ekleme kodu dosyalarında aranacak kendi dizinlerini belirtebilir. Örneğin, Görselleştirme ve modelleme SDK'sını (DSL araçları) yüklediğinizde aşağıdaki klasör listeyi içermek için eklenir: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.
 
-     Bu ek içerme klasörleri içeren dosyanın dosya uzantısına bağlı olabilir. Örneğin DSL araçları dahil etme klasörü, yalnızca dosya uzantısına sahip dosyalar dahil olmak üzere erişilebilir `.tt`
+   Bu ek içerme klasörleri içeren dosyanın dosya uzantısına bağlı olabilir. Örneğin DSL araçları dahil etme klasörü, yalnızca dosya uzantısına sahip dosyalar dahil olmak üzere erişilebilir `.tt`
 
--   `filePath` "%" ile sınırlandırılan ortam değişkenleri içerebilir. Örneğin:
+- `filePath` "%" ile sınırlandırılan ortam değişkenleri içerebilir. Örneğin:
 
-    ```
-    <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>
-    ```
+  ```
+  <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>
+  ```
 
--   Eklenen bir dosya adı uzantısının kullanılması gerekmez `".tt"`.
+- Eklenen bir dosya adı uzantısının kullanılması gerekmez `".tt"`.
 
-     Gibi başka bir uzantı kullanmak isteyebilirsiniz `".t4"` eklenen dosyalar için. Eklediğinizde, çünkü bir `.tt` bir proje, Visual Studio dosyayı otomatik olarak ayarlar, **özel araç** özelliğini `TextTemplatingFileGenerator`. Tek tek dönüştürülecek dosyaları genellikle eklemek istemezsiniz.
+   Gibi başka bir uzantı kullanmak isteyebilirsiniz `".t4"` eklenen dosyalar için. Eklediğinizde, çünkü bir `.tt` bir proje, Visual Studio dosyayı otomatik olarak ayarlar, **özel araç** özelliğini `TextTemplatingFileGenerator`. Tek tek dönüştürülecek dosyaları genellikle eklemek istemezsiniz.
 
-     Diğer taraftan, bazı durumlarda, dosya uzantısının ek klasörlerin hangi include dosyalarının aranacağını etkilediğinin farkında olmalısınız. Diğer dosyaları içeren eklediğiniz bir dosya varsa, bu önemli olabilir.
+   Diğer taraftan, bazı durumlarda, dosya uzantısının ek klasörlerin hangi include dosyalarının aranacağını etkilediğinin farkında olmalısınız. Diğer dosyaları içeren eklediğiniz bir dosya varsa, bu önemli olabilir.
 
--   Eklenen içerik ekleyen metin şablonunun hemen hemen parçasıymış gibi işlenir. Ancak, bir sınıf özelliği bloğu içeren bir dosya dahil edebilirsiniz `<#+...#>` bile `include` yönergesi ve standart denetim blokları ile izlense ardından.
+- Eklenen içerik ekleyen metin şablonunun hemen hemen parçasıymış gibi işlenir. Ancak, bir sınıf özelliği bloğu içeren bir dosya dahil edebilirsiniz `<#+...#>` bile `include` yönergesi ve standart denetim blokları ile izlense ardından.
 
--   Kullanım `once="true"` birden fazla başka ekleme dosyasından çağrılırsa bile şablonun yalnızca bir kez eklendiğinden emin olmak için.
+- Kullanım `once="true"` birden fazla başka ekleme dosyasından çağrılırsa bile şablonun yalnızca bir kez eklendiğinden emin olmak için.
 
-     Bu özellik yapar, ekleyebileceğiniz yeniden kullanılabilir T4 kod parçacıkları kitaplığını ayarlama kolayca, endişelenmenize gerek kalmadan çalışır başka bir kod parçacığı zaten bunları eklemiştir.  Örneğin, şablon işleme ve C# oluşturma ile ilgili çok ayrıntılı kod parçacıkları içeren bir kitaplık olduğunu varsayalım.  Buna karşılık, bunlar daha sonra daha uygulamaya özgü şablonlardan kullanabilirsiniz özel durumların gibi bazı daha göreve özel yardımcı programları tarafından kullanılır. Bağımlılık grafiği çizerseniz, bazı iş parçacıklarının birkaç kez dahil edildiğini görürsünüz. Ancak `once` parametresi sonraki eklemeleri engeller.
+   Bu özellik yapar, ekleyebileceğiniz yeniden kullanılabilir T4 kod parçacıkları kitaplığını ayarlama kolayca, endişelenmenize gerek kalmadan çalışır başka bir kod parçacığı zaten bunları eklemiştir.  Örneğin, şablon işleme ve C# oluşturma ile ilgili çok ayrıntılı kod parçacıkları içeren bir kitaplık olduğunu varsayalım.  Buna karşılık, bunlar daha sonra daha uygulamaya özgü şablonlardan kullanabilirsiniz özel durumların gibi bazı daha göreve özel yardımcı programları tarafından kullanılır. Bağımlılık grafiği çizerseniz, bazı iş parçacıklarının birkaç kez dahil edildiğini görürsünüz. Ancak `once` parametresi sonraki eklemeleri engeller.
 
- **MyTextTemplate.tt:**
+  **MyTextTemplate.tt:**
 
 ```
 <#@ output extension=".txt" #>
@@ -61,7 +61,6 @@ Output message 5 (from top template).
    GenerateMessage(6); // defined in TextFile1.t4
    AnotherGenerateMessage(7); // defined in TextFile2.t4
 #>
-
 ```
 
  **TextFile1.t4:**
@@ -78,7 +77,6 @@ void GenerateMessage(int n)
 <#+
 }
 #>
-
 ```
 
  **TextFile2.t4:**
@@ -93,7 +91,6 @@ void AnotherGenerateMessage(int n)
 <#+
 }
 #>
-
 ```
 
  **Sonuç dosyası, MyTextTemplate.txt oluşturuldu:**
@@ -108,7 +105,6 @@ Output message 1 (from top template).
 Output message 5 (from top template).
    Output Message 6 (from GenerateMessage method).
        Output Message 7 (from AnotherGenerateMessage method).
-
 ```
 
 ## <a name="msbuild"></a> MSBuild hem Visual Studio'da proje özelliklerini kullanma
@@ -128,7 +124,6 @@ Output message 5 (from top template).
       <Value>$(myIncludeFolder)</Value>
     </T4ParameterValues>
   </ItemGroup>
-
 ```
 
  Artık proje özelliğinizi metin şablonlarında kullanabilirsiniz, böylece hem Visual Studio hem de MSBuild içinde doğru dönüştürme yapılır:

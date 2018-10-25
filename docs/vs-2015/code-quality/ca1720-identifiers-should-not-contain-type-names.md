@@ -20,15 +20,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8dda659a746f98bfa8038156d38316729f43016c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ec0980d312d4a65a770e63f0a23203a7e95c546f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282509"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862345"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Tanımlayıcılar tür adları içermemelidir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotContainTypeNames|
@@ -48,89 +49,89 @@ ms.locfileid: "49282509"
 
  Parametre ya da üye adını ayrık her belirteç aşağıdaki dile bağlı veri türü adları karşı duyarlı bir şekilde denetlenir:
 
--   bool
+- bool
 
--   WChar
+- WChar
 
--   Int8
+- Int8
 
--   UInt8
+- UInt8
 
--   kısa
+- kısa
 
--   UShort
+- UShort
 
--   int
+- int
 
--   UInt
+- UInt
 
--   Tamsayı
+- Tamsayı
 
--   Uınteger
+- Uınteger
 
--   uzun
+- uzun
 
--   ULong
+- ULong
 
--   İşaretsiz
+- İşaretsiz
 
--   İmzalı
+- İmzalı
 
--   kayan nokta
+- kayan nokta
 
--   float32
+- float32
 
--   float64
+- float64
 
- Ayrıca, bir parametre adlarını büyük küçük harf duyarlı bir şekilde de aşağıdaki dilden bağımsız veri türü adları karşı denetlenir:
+  Ayrıca, bir parametre adlarını büyük küçük harf duyarlı bir şekilde de aşağıdaki dilden bağımsız veri türü adları karşı denetlenir:
 
--   Nesne
+- Nesne
 
--   obj
+- obj
 
--   Boole değeri
+- Boole değeri
 
--   Char
+- Char
 
--   Dize
+- Dize
 
--   SByte
+- SByte
 
--   Bayt
+- Bayt
 
--   UByte
+- UByte
 
--   Int16
+- Int16
 
--   UInt16
+- UInt16
 
--   Int32
+- Int32
 
--   UInt32
+- UInt32
 
--   Int64
+- Int64
 
--   UInt64
+- UInt64
 
--   IntPtr
+- IntPtr
 
--   PTR
+- PTR
 
--   İşaretçi
+- İşaretçi
 
--   UInptr
+- UInptr
 
--   UPtr
+- UPtr
 
--   UPointer
+- UPointer
 
--   Tek
+- Tek
 
--   Çift
+- Çift
 
--   Ondalık
+- Ondalık
 
--   Guid
+- Guid
 
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
  **Bir parametre karşı harekete varsa:**

@@ -23,30 +23,30 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f14358307c2c95e1b796695a0253a520ea00e3b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5d8354c850d1f55d229ce3f1205ca0bf0fe5f13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249437"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837080"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Nasıl Yapılır: Paralel İzleme Penceresini Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Paralel İzleme penceresinde aynı anda birden çok iş parçacığında bir ifade tutan değerleri görüntüleyebilirsiniz. Her satır bir uygulama içinde çalışan bir iş parçacığını temsil eder, ancak bir iş parçacığı içinde birden çok satır gösterilebilir. Daha açık belirtmek gerekirse her satır, işlev imzası geçerli yığın çerçevesinde işlevi eşleşen bir işlev çağrısını temsil eder. Sıralama, yeniden sıralama, kaldırmak ve sütunları olan öğeleri gruplayın. Bayrak, işaretsiz dondurma, (askıya) ve (devam) iş parçacıklarını çözme. Aşağıdaki sütunlar görüntülenir **paralel izleme** penceresi:  
   
--   Özel dikkat edilmesi gereken istediğiniz bir iş parçacığını işaretle Bayrak sütunu.  
+- Özel dikkat edilmesi gereken istediğiniz bir iş parçacığını işaretle Bayrak sütunu.  
   
--   Çerçeve sütunu bir ok Seçilen çerçevenin gösterir.  
+- Çerçeve sütunu bir ok Seçilen çerçevenin gösterir.  
   
--   Makine, işlem, döşeme, görev ve iş parçacığı görüntüleyebilirsiniz yapılandırılabilir bir sütun.  
+- Makine, işlem, döşeme, görev ve iş parçacığı görüntüleyebilirsiniz yapılandırılabilir bir sütun.  
   
-    > [!TIP]
-    >  Açmalısınız **paralel görev** görev bilgileri görüntülemek için pencere **paralel izleme** penceresi.  
+  > [!TIP]
+  >  Açmalısınız **paralel görev** görev bilgileri görüntülemek için pencere **paralel izleme** penceresi.  
   
--   **\<Gözcü Ekle >** izlemek için ifadeleri, girebileceğiniz sütunu.  
+- **\<Gözcü Ekle >** izlemek için ifadeleri, girebileceğiniz sütunu.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-display-the-parallel-watch-window"></a>Paralel İzleme penceresini görüntülemek için  
   

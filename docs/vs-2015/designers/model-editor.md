@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3fb0b83e266fbe865023d6a31f926ac31b61a10a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e947793dff1f0068c1341ba6b70c21df07463f6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264056"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844099"
 ---
 # <a name="model-editor"></a>Model Düzenleyicisi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,18 +157,18 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
   
 ##### <a name="to-transform-an-object-by-setting-its-properties"></a>Özelliklerini ayarlayarak bir nesneyi dönüştürmek için  
   
-1.  İçinde **seçin** modunda, dönüştürmek istediğiniz nesneyi seçin. Tel çerçeve yer paylaşımı nesnenin seçili olduğunu gösterir.  
+1. İçinde **seçin** modunda, dönüştürmek istediğiniz nesneyi seçin. Tel çerçeve yer paylaşımı nesnenin seçili olduğunu gösterir.  
   
-2.  İçinde **özellikleri** penceresinde değerlerini belirtin **döndürme**, **ölçek**, ve **çeviri** özellikleri.  
+2. İçinde **özellikleri** penceresinde değerlerini belirtin **döndürme**, **ölçek**, ve **çeviri** özellikleri.  
   
-    > [!IMPORTANT]
-    >  İçin **döndürme** özelliği, her üç eksen birinin etrafındaki dönüş derecesini belirtin. Döndürmeler sırayla uygulandığından önce x ekseni, sonra y ekseni ve sonra da z ekseni açısından bir döndürme planladığınızdan emin olun.  
+   > [!IMPORTANT]
+   >  İçin **döndürme** özelliği, her üç eksen birinin etrafındaki dönüş derecesini belirtin. Döndürmeler sırayla uygulandığından önce x ekseni, sonra y ekseni ve sonra da z ekseni açısından bir döndürme planladığınızdan emin olun.  
   
- Modelleme araçlarını kullanarak, dönüştürmeleri hızlı ancak kesin olmayan bir şekilde oluşturabilirsiniz. Nesne özelliklerini ayarlayarak, dönüştürmeleri kesin ancak hızlı olmayan bir şekilde belirtebilirsiniz. İstediğiniz dönüştürmelere "yeteri kadar" yaklaşmak için modelleme araçlarını kullanmanızı ve ardından özellik değerlerinde ince ayar yapmanızı öneririz.  
+   Modelleme araçlarını kullanarak, dönüştürmeleri hızlı ancak kesin olmayan bir şekilde oluşturabilirsiniz. Nesne özelliklerini ayarlayarak, dönüştürmeleri kesin ancak hızlı olmayan bir şekilde belirtebilirsiniz. İstediğiniz dönüştürmelere "yeteri kadar" yaklaşmak için modelleme araçlarını kullanmanızı ve ardından özellik değerlerinde ince ayar yapmanızı öneririz.  
   
- İşleyicileri kullanmayı istemiyorsanız, serbest biçim modunu etkinleştirebilirsiniz. Üzerinde **Model Düzenleyicisi** araç seçin **betikleri**, **Araçları**, **serbest biçim düzenleme** serbest biçim modunu etkinleştirmek (veya devre dışı bırakmak). Serbest biçim modunda, işleyici üzerindeki bir nokta yerine herhangi bir tasarım yüzeyi noktasında düzenleme yapmaya başlayabilirsiniz. Serbest biçim modunda, değiştirmek istemediklerinizi kilitleyerek bazı eksenlerde yapılacak değişiklikleri kısıtlayabilirsiniz. Üzerinde **Model Düzenleyicisi modu** araç, herhangi bir bileşimini seçin **Kilitle X**, **Kilitle Y**, ve **Kilitle Z** düğmeleri.  
+   İşleyicileri kullanmayı istemiyorsanız, serbest biçim modunu etkinleştirebilirsiniz. Üzerinde **Model Düzenleyicisi** araç seçin **betikleri**, **Araçları**, **serbest biçim düzenleme** serbest biçim modunu etkinleştirmek (veya devre dışı bırakmak). Serbest biçim modunda, işleyici üzerindeki bir nokta yerine herhangi bir tasarım yüzeyi noktasında düzenleme yapmaya başlayabilirsiniz. Serbest biçim modunda, değiştirmek istemediklerinizi kilitleyerek bazı eksenlerde yapılacak değişiklikleri kısıtlayabilirsiniz. Üzerinde **Model Düzenleyicisi modu** araç, herhangi bir bileşimini seçin **Kilitle X**, **Kilitle Y**, ve **Kilitle Z** düğmeleri.  
   
- Kılavuza uydur işlevini kullanarak nesnelerle çalışmayı daha kullanışlı bulabilirsiniz. Üzerinde **Model Düzenleyicisi modu** araç seçin **Yasla** kılavuza etkinleştirmek (veya devre dışı bırakmak). Kılavuza uydur etkinleştirildiğinde, çeviri, döndürme ve ölçeklendirme dönüştürmeleri önceden tanımlı aralıklarla sınırlandırılır.  
+   Kılavuza uydur işlevini kullanarak nesnelerle çalışmayı daha kullanışlı bulabilirsiniz. Üzerinde **Model Düzenleyicisi modu** araç seçin **Yasla** kılavuza etkinleştirmek (veya devre dışı bırakmak). Kılavuza uydur etkinleştirildiğinde, çeviri, döndürme ve ölçeklendirme dönüştürmeleri önceden tanımlı aralıklarla sınırlandırılır.  
   
 ### <a name="working-with-the-pivot-point"></a>Pivot noktası ile çalışma  
  Pivot noktası nesnenin döndürme ve ölçeklendirme merkezini tanımlar. Döndürme ve ölçeklendirme dönüşümlerinden nasıl etkilendiğini değiştirmek için bir nesnenin özet noktasını değiştirebilirsiniz. Üzerinde **Model Düzenleyicisi modu** araç seçin **Pivot modu** pivot modunu etkinleştirmek (veya devre dışı). Pivot modu etkin olduğunda, seçili nesnenin pivot noktasında küçük bir eksen göstergesi görünür. Ardından **çeviri** ve **döndürme** pivot noktasını düzenlemek için Araçlar.  
@@ -191,11 +191,11 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
   
 ##### <a name="to-subdivide-faces"></a>Yüzleri alt bölümlere ayırmak için  
   
-1.  Yüz seçimi modunda, alt bölümlere ayırmak istediğiniz yüzleri seçin. Alt bölüm yeni kenar verileri oluşturduğundan, tüm yüzeyleri aynı anda alt bölümlere ayırmak yüzler bitişik olduğunda daha tutarlı sonuçlar verir.  
+1. Yüz seçimi modunda, alt bölümlere ayırmak istediğiniz yüzleri seçin. Alt bölüm yeni kenar verileri oluşturduğundan, tüm yüzeyleri aynı anda alt bölümlere ayırmak yüzler bitişik olduğunda daha tutarlı sonuçlar verir.  
   
-2.  Üzerinde **Model Düzenleyicisi** araç seçin **betikleri**, **Araçları**, **Ayır**.  
+2. Üzerinde **Model Düzenleyicisi** araç seçin **betikleri**, **Araçları**, **Ayır**.  
   
- Ayrıca yüzeyleri üçgenlere bölebilir, nesneleri birleştirebilir ve çokgen seçimlerini yeni nesnelere dönüştürebilirsiniz. Üçgenlere bölme, üçgen olmayan bir yüz, en uygun sayıda üçgene dönüştürülecek şekilde ek kenarlar oluşturur; ancak ek geometrik ayrıntı sağlamaz. Birleştirme işlemi, seçili nesneleri tek bir nesne halinde birleştirir. Yeni nesneler bir çokgen seçiminden oluşturulabilir.  
+   Ayrıca yüzeyleri üçgenlere bölebilir, nesneleri birleştirebilir ve çokgen seçimlerini yeni nesnelere dönüştürebilirsiniz. Üçgenlere bölme, üçgen olmayan bir yüz, en uygun sayıda üçgene dönüştürülecek şekilde ek kenarlar oluşturur; ancak ek geometrik ayrıntı sağlamaz. Birleştirme işlemi, seçili nesneleri tek bir nesne halinde birleştirir. Yeni nesneler bir çokgen seçiminden oluşturulabilir.  
   
 ##### <a name="to-triangulate-a-face"></a>Bir yüzü üçgenlere bölmek için  
   
@@ -259,13 +259,13 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
   
 ##### <a name="to-create-a-hierarchy-of-sibling-objects"></a>Eşdüzeyli nesnelerin hiyerarşisini oluşturmak için  
   
-1.  İçinde **seçin** modu, iki veya daha fazla nesneleri seçebilir. Bir yer tutucu nesne oluşturulur ve onların üst nesnesi haline gelir.  
+1. İçinde **seçin** modu, iki veya daha fazla nesneleri seçebilir. Bir yer tutucu nesne oluşturulur ve onların üst nesnesi haline gelir.  
   
-2.  Üzerinde **Model Düzenleyicisi** araç seçin **betikleri**, **Sahne Yönetimi**, **Grup Oluştur**.  
+2. Üzerinde **Model Düzenleyicisi** araç seçin **betikleri**, **Sahne Yönetimi**, **Grup Oluştur**.  
   
- Model Düzenleyicisi, ilk seçilen nesneyi (üst öğe haline gelen) tanımlamak için beyaz tel çerçeve kullanır. Seçimdeki diğer nesneler mavi bir tel çerçeveye sahiptir. Varsayılan olarak, yer tutucu düğümleri görüntülenmez. Yer tutucu düğümlerini görüntülemek için **Model Düzenleyicisi** araç seçin **betikleri**, **Sahne Yönetimi**, **yer tutucu düğümlerini Göster**. Yer tutucu düğümleriyle, yer tutucu olmayan nesnelerle çalıştığınız gibi çalışabilirsiniz.  
+   Model Düzenleyicisi, ilk seçilen nesneyi (üst öğe haline gelen) tanımlamak için beyaz tel çerçeve kullanır. Seçimdeki diğer nesneler mavi bir tel çerçeveye sahiptir. Varsayılan olarak, yer tutucu düğümleri görüntülenmez. Yer tutucu düğümlerini görüntülemek için **Model Düzenleyicisi** araç seçin **betikleri**, **Sahne Yönetimi**, **yer tutucu düğümlerini Göster**. Yer tutucu düğümleriyle, yer tutucu olmayan nesnelerle çalıştığınız gibi çalışabilirsiniz.  
   
- İki nesne arasındaki üst-alt öğe ilişkilendirmesini kaldırmak için alt nesneyi seçin ve ardından **Model Düzenleyicisi** araç seçin **betikleri**, **Sahne Yönetimi**, **Üst öğeden Ayır**. Üst nesne ile alt nesneyi ayırdığınızda, alt nesne sahnede bir kök nesne olur.  
+   İki nesne arasındaki üst-alt öğe ilişkilendirmesini kaldırmak için alt nesneyi seçin ve ardından **Model Düzenleyicisi** araç seçin **betikleri**, **Sahne Yönetimi**, **Üst öğeden Ayır**. Üst nesne ile alt nesneyi ayırdığınızda, alt nesne sahnede bir kök nesne olur.  
   
 ## <a name="keyboard-shortcuts"></a>Klavye kısayolları  
   

@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b97cffd30416313ac9f46e6d0ab1bbd505fc4aed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 256000fb3371477c74d4f922de6cb10f3998ae86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268183"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831139"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Visual Studio Uzantıları’nı bulma ve kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,23 +69,23 @@ Visual Studio uzantıları Visual Studio içinde çalıştırın ve yeni veya ge
 ## <a name="sample-master-copies-and-working-copies"></a>Örnek ana kopyalar ve çalışma kopyaları  
  Çevrimiçi bir örneği yüklediğinizde, çözüm iki konumda depolanır:  
   
--   Belirtilen konumda bir çalışma kopyası depolanır **yeni proje** iletişim kutusu.  
+- Belirtilen konumda bir çalışma kopyası depolanır **yeni proje** iletişim kutusu.  
   
--   Ayrı bir ana kopya bilgisayarınızda depolanır.  
+- Ayrı bir ana kopya bilgisayarınızda depolanır.  
   
- Kullanabileceğiniz **Uzantılar ve güncelleştirmeler** iletişim kutusu örneklerle ilgili şu görevleri gerçekleştirebilirsiniz:  
+  Kullanabileceğiniz **Uzantılar ve güncelleştirmeler** iletişim kutusu örneklerle ilgili şu görevleri gerçekleştirebilirsiniz:  
   
--   Yüklediğiniz örneklerin ana kopyalarını listeleyin.  
+- Yüklediğiniz örneklerin ana kopyalarını listeleyin.  
   
--   Bir örneğin ana kopyasını devre dışı bırakın veya kaldırın.  
+- Bir örneğin ana kopyasını devre dışı bırakın veya kaldırın.  
   
--   Örnek Paketleri (bir teknoloji veya özellik ile ilgili örnek koleksiyonları) yükleyin.  
+- Örnek Paketleri (bir teknoloji veya özellik ile ilgili örnek koleksiyonları) yükleyin.  
   
--   Tek tek çevrimiçi örnekleri yükleyin. (Ayrıca bunu yapabilirsiniz **yeni proje** iletişim kutusu.)  
+- Tek tek çevrimiçi örnekleri yükleyin. (Ayrıca bunu yapabilirsiniz **yeni proje** iletişim kutusu.)  
   
--   Yüklü örnekler için kaynak kodu değişiklikleri yayımlandığında güncelleştirme bildirimlerini görüntüleyin.  
+- Yüklü örnekler için kaynak kodu değişiklikleri yayımlandığında güncelleştirme bildirimlerini görüntüleyin.  
   
--   Bir güncelleştirme bildirimi olduğunda yüklü bir örneğin ana kopyasını güncelleştirin.  
+- Bir güncelleştirme bildirimi olduğunda yüklü bir örneğin ana kopyasını güncelleştirin.  
   
 ## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>Uzantılar ve Güncelleştirmeler İletişim Kutusunu Kullanmadan Yükleme  
  .vsix dosyalarında paketlenmiş uzantılar Visual Studio Galerisi dışındaki konumlarda bulunabilir. **Uzantılar ve güncelleştirmeler** iletişim kutusunda, bu dosyaları silemese ancak dosyasına çift veya dosyasını seçme ve ENTER tuşuna basmak .vsix dosyasını yükleyebilirsiniz. Bundan sonra yalnızca yönergeleri izleyin. Uzantı yüklendiğinde, kullanabileceğiniz **Uzantılar ve güncelleştirmeler** etkinleştirmek, devre dışı bırakmak veya kaldırmak için iletişim kutusu.  

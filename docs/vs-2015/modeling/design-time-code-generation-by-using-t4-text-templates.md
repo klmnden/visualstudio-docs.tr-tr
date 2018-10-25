@@ -20,12 +20,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1edc6e7d66e8b371f38e16052ba26fa61287e398
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a302f2d4f96f7f110780feae3f76e08b440d037f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268339"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859284"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,66 +82,66 @@ Tasarım zamanı T4 metin şablonları, program kodu ve diğer dosyaları oluşt
 ### <a name="regenerating-the-code"></a>Kod oluşturma işlemi sürüyor  
  Aşağıdaki durumlarda hiçbirinde paketinizle dosyası oluşturmanın bir şablon yürütülecek:  
   
--   Şablonu düzenleyebilir ve ardından odak farklı bir değiştirme [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] penceresi.  
+- Şablonu düzenleyebilir ve ardından odak farklı bir değiştirme [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] penceresi.  
   
--   Şablonu kaydedin.  
+- Şablonu kaydedin.  
   
--   Tıklayın **tüm Şablonları Dönüştür** içinde **derleme** menüsü. Bu tüm şablonlarda dönüştüren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çözüm.  
+- Tıklayın **tüm Şablonları Dönüştür** içinde **derleme** menüsü. Bu tüm şablonlarda dönüştüren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çözüm.  
   
--   İçinde **Çözüm Gezgini**, kısayol menüsünden herhangi dosya öğesini **özel aracı Çalıştır**. Seçili şablonları kümesini dönüştürmek için bu yöntemi kullanın.  
+- İçinde **Çözüm Gezgini**, kısayol menüsünden herhangi dosya öğesini **özel aracı Çalıştır**. Seçili şablonları kümesini dönüştürmek için bu yöntemi kullanın.  
   
- Ayrıca ayarlayabileceğiniz bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okurlar veri dosyalar değiştiğinde şablonları çalıştırılır, böylece proje. Daha fazla bilgi için [kodu otomatik olarak yeniden](#Regenerating).  
+  Ayrıca ayarlayabileceğiniz bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okurlar veri dosyalar değiştiğinde şablonları çalıştırılır, böylece proje. Daha fazla bilgi için [kodu otomatik olarak yeniden](#Regenerating).  
   
 ## <a name="generating-variable-text"></a>Değişken metin oluşturma  
  Metin şablonları oluşturulan dosyanın içeriğini değiştirmek için program kodu kullanmanıza izin verir.  
   
 #### <a name="to-generate-text-by-using-program-code"></a>Program kodu kullanarak metin oluşturmak için  
   
-1.  İçeriğini değiştirme `.tt` dosyası:  
+1. İçeriğini değiştirme `.tt` dosyası:  
   
-    ```csharp  
-    <#@ template hostspecific="false" language="C#" #>  
-    <#@ output extension=".txt" #>  
-    <#int top = 10;  
+   ```csharp  
+   <#@ template hostspecific="false" language="C#" #>  
+   <#@ output extension=".txt" #>  
+   <#int top = 10;  
   
-    for (int i = 0; i<=top; i++)   
-    { #>  
+   for (int i = 0; i<=top; i++)   
+   { #>  
+      The square of <#= i #> is <#= i*i #>  
+   <# } #>  
+   ```  
+  
+   ```vb  
+   <#@ template hostspecific="false" language="VB" #>  
+   <#@ output extension=".txt" #>  
+   <#Dim top As Integer = 10  
+  
+   For i As Integer = 0 To top  
+   #>  
        The square of <#= i #> is <#= i*i #>  
-    <# } #>  
-    ```  
+   <#  
+   Next  
+   #>  
   
-    ```vb  
-    <#@ template hostspecific="false" language="VB" #>  
-    <#@ output extension=".txt" #>  
-    <#Dim top As Integer = 10  
+   ```  
   
-    For i As Integer = 0 To top  
-    #>  
-        The square of <#= i #> is <#= i*i #>  
-    <#  
-    Next  
-    #>  
+2. .Tt dosyasını kaydedin ve yeniden oluşturulmuş bir .txt dosyasını inceleyin. 0 sayıların 10 kareleri listeler.  
   
-    ```  
+   Deyimleri içinde alındığına dikkat edin `<#...#>`ve tek bir ifade içinde `<#=...#>`. Daha fazla bilgi için [T4 metin şablonu yazma](../modeling/writing-a-t4-text-template.md).  
   
-2.  .Tt dosyasını kaydedin ve yeniden oluşturulmuş bir .txt dosyasını inceleyin. 0 sayıların 10 kareleri listeler.  
-  
- Deyimleri içinde alındığına dikkat edin `<#...#>`ve tek bir ifade içinde `<#=...#>`. Daha fazla bilgi için [T4 metin şablonu yazma](../modeling/writing-a-t4-text-template.md).  
-  
- Kod yazarsanız [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], `template` yönergesi içermelidir `language="VB"`. `"C#"` varsayılandır.  
+   Kod yazarsanız [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], `template` yönergesi içermelidir `language="VB"`. `"C#"` varsayılandır.  
   
 ## <a name="debugging-a-design-time-t4-text-template"></a>Tasarım zamanı T4 metin şablonuna ilişkin hata ayıklama  
  Bir metin şablonunda hata ayıklama için:  
   
--   INSERT `debug="true"` içine `template` yönergesi. Örneğin:  
+- INSERT `debug="true"` içine `template` yönergesi. Örneğin:  
   
-     `<#@ template debug="true" hostspecific="false" language="C#" #>`  
+   `<#@ template debug="true" hostspecific="false" language="C#" #>`  
   
--   Kesme noktaları şablonda, sıradan bir kod için yaptığınız şekilde ayarlayın.  
+- Kesme noktaları şablonda, sıradan bir kod için yaptığınız şekilde ayarlayın.  
   
--   Seçin **T4 şablonunda Hata Ayıkla** Çözüm Gezgini'ndeki metin şablonu dosyasının kısayol menüsünden.  
+- Seçin **T4 şablonunda Hata Ayıkla** Çözüm Gezgini'ndeki metin şablonu dosyasının kısayol menüsünden.  
   
- Şablon çalıştırın ve kesme noktalarında durdurun. Değişkenleri incelemek ve her zamanki yolla kodda adım adım.  
+  Şablon çalıştırın ve kesme noktalarında durdurun. Değişkenleri incelemek ve her zamanki yolla kodda adım adım.  
   
 > [!TIP]
 >  `debug="true"` oluşturulan kodun daha doğru bir şekilde daha fazla satır yönergeleri oluşturulan koda numaralandırmasını ekleyerek metin şablonu için eşleme sağlar. Teslim değiştirmeden bırakırsanız, kesme noktaları durumu yanlış çalıştırmasında durabilir.  
@@ -208,13 +208,13 @@ Tasarım zamanı T4 metin şablonları, program kodu ve diğer dosyaları oluşt
 ### <a name="structuring-text-templates"></a>Metin şablonları yapılandırma  
  Birkaç iyi uygulama, biz şablon kodunu iki bölüme ayırın eğilimi gösterir:  
   
--   Bir yapılandırma veya değişkenleri değerleri ayarlar, ancak metin blokları içermiyor veri toplama bölümü. Önceki örnekte, bu başlatma parçasıdır `properties`.  
+- Bir yapılandırma veya değişkenleri değerleri ayarlar, ancak metin blokları içermiyor veri toplama bölümü. Önceki örnekte, bu başlatma parçasıdır `properties`.  
   
-     Mağaza modeli oluşturur ve genellikle bir model dosyasını okuyan buna bazen "modeli" bölümünde verilir.  
+   Mağaza modeli oluşturur ve genellikle bir model dosyasını okuyan buna bazen "modeli" bölümünde verilir.  
   
--   Metin oluşturma bölümü (`foreach(...){...}` örnekte), değişkenlerin değerleri kullanır.  
+- Metin oluşturma bölümü (`foreach(...){...}` örnekte), değişkenlerin değerleri kullanır.  
   
- Bu gerekli bir ayrım değildir, ancak şablon metni içeren bölümü karmaşıklığını azaltmayı tarafından okunacak kolaylaştıran bir stili.  
+  Bu gerekli bir ayrım değildir, ancak şablon metni içeren bölümü karmaşıklığını azaltmayı tarafından okunacak kolaylaştıran bir stili.  
   
 ## <a name="reading-files-or-other-sources"></a>Okuma dosyaları veya diğer kaynaklar  
  Bir model dosyası veya veritabanına erişmek için şablon kodunuz derlemeleri System.XML gibi kullanabilirsiniz. Bu derlemeler erişim kazanmak için şunlar gibi yönergeleri eklemeniz gerekir:  

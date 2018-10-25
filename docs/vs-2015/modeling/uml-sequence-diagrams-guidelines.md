@@ -26,12 +26,12 @@ caps.latest.revision: 55
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3d8578d81dd955cc9e7223692be1fe9f63d2bf00
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 529f36b476158e7333cf03210dec94ec8bab4ef2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278687"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869164"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>UML Sıralı Diyagramlar: Yönergeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,15 +60,15 @@ Visual Studio'da çizdiğiniz bir *sıralı diyagram* etkileşim göstermek içi
 ##  <a name="Using"></a> UML sıralı diyagramları kullanma  
  Çeşitli amaçlarla farklı program ayrıntı düzeylerinde için sıralı diyagramlar kullanabilirsiniz. Sıralı diyagram çizmek için tipik durumlar aşağıdaki gibidir:  
   
--   Sisteminizin kullanıcıları ve onların hedeflerini özetleyen bir kullanım durumu diyagramı varsa, her kullanım örneği amacı karşılamak için sistemin ana bileşenlerini nasıl etkileşimde bulunduğunu açıklamak için sıralı diyagramlar çizebilirsiniz. Daha fazla bilgi için [UML Kullanım durumu diyagramları: yönergeler](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Sisteminizin kullanıcıları ve onların hedeflerini özetleyen bir kullanım durumu diyagramı varsa, her kullanım örneği amacı karşılamak için sistemin ana bileşenlerini nasıl etkileşimde bulunduğunu açıklamak için sıralı diyagramlar çizebilirsiniz. Daha fazla bilgi için [UML Kullanım durumu diyagramları: yönergeler](../modeling/uml-use-case-diagrams-guidelines.md).  
   
--   Bir arabirimin bir bileşenin gelen iletiler belirlediyseniz, bileşenin iç parçalarını gelen her ileti için gereken sonucu elde etmek üzere nasıl etkileşimde bulunduğunu açıklamak için sıralı diyagramlar çizebilirsiniz. Daha fazla bilgi için [UML Bileşen Diyagramları: yönergeler](../modeling/uml-component-diagrams-guidelines.md).  
+- Bir arabirimin bir bileşenin gelen iletiler belirlediyseniz, bileşenin iç parçalarını gelen her ileti için gereken sonucu elde etmek üzere nasıl etkileşimde bulunduğunu açıklamak için sıralı diyagramlar çizebilirsiniz. Daha fazla bilgi için [UML Bileşen Diyagramları: yönergeler](../modeling/uml-component-diagrams-guidelines.md).  
   
- Sıralı diyagram çizmenin birçok faydası vardır:  
+  Sıralı diyagram çizmenin birçok faydası vardır:  
   
--   Görevleri bileşenleri arasında nasıl dağıtıldığını kolayca görebilirsiniz.  
+- Görevleri bileşenleri arasında nasıl dağıtıldığını kolayca görebilirsiniz.  
   
--   Yazılım güncelleştirme zorlaştıran etkileşimi örneklerini tanımlayabilirsiniz.  
+- Yazılım güncelleştirme zorlaştıran etkileşimi örneklerini tanımlayabilirsiniz.  
   
 ## <a name="relationship-to-other-diagrams"></a>Diğer diyagramlarla ilişki  
  Diğer diyagramlarla birlikte UML sıralı diyagramlar çeşitli yollarla kullanabilirsiniz.  
@@ -90,17 +90,17 @@ Visual Studio'da çizdiğiniz bir *sıralı diyagram* etkileşim göstermek içi
   
 #### <a name="to-create-a-sequence-diagram"></a>Bir sıralı diyagram oluşturmak için  
   
-1.  Üzerinde **mimarisi** menüsünü tıklatın **yeni UML veya katman diyagramı**.  
+1. Üzerinde **mimarisi** menüsünü tıklatın **yeni UML veya katman diyagramı**.  
   
-2.  Altında **şablonları**, tıklayın **UML sıralı diyagramı**.  
+2. Altında **şablonları**, tıklayın **UML sıralı diyagramı**.  
   
-3.  Diyagrama ad verin.  
+3. Diyagrama ad verin.  
   
-4.  İçinde **modelleme projesine Ekle**, çözümünüzde varolan modelleme projesini seçin veya **yeni modelleme projesi oluşturma**ve ardından **Tamam**.  
+4. İçinde **modelleme projesine Ekle**, çözümünüzde varolan modelleme projesini seçin veya **yeni modelleme projesi oluşturma**ve ardından **Tamam**.  
   
-     Yeni bir sıralı diyagram görünür **sıralı diyagram** araç kutusu. Araç kutusu gereken öğeleri ve bağlayıcıları içerir.  
+    Yeni bir sıralı diyagram görünür **sıralı diyagram** araç kutusu. Araç kutusu gereken öğeleri ve bağlayıcıları içerir.  
   
- ![Sıralı Diyagram bölümlerini](../modeling/media/uml-sequence.png "UML_Sequence")  
+   ![Sıralı Diyagram bölümlerini](../modeling/media/uml-sequence.png "UML_Sequence")  
   
 #### <a name="to-draw-a-sequence-diagram"></a>Bir sıralı diyagram çizmek için  
   
@@ -143,15 +143,15 @@ Visual Studio'da çizdiğiniz bir *sıralı diyagram* etkileşim göstermek içi
   
 #### <a name="to-display-and-edit-the-signature-text-for-a-message"></a>Görüntülemek ve bir ileti imzası metnini düzenlemek için  
   
--   Hedef yaşam çizgisi bağlı veya görünür olması için imza metni türlerine eşlenir. Bu görevi gerçekleştirmek için aşağıdaki adımlardan birini gerçekleştirin:  
+- Hedef yaşam çizgisi bağlı veya görünür olması için imza metni türlerine eşlenir. Bu görevi gerçekleştirmek için aşağıdaki adımlardan birini gerçekleştirin:  
   
-    -   Yaşam çizgisine sağ tıklayın ve ardından **Sınıf Oluştur**.  
+  - Yaşam çizgisine sağ tıklayın ve ardından **Sınıf Oluştur**.  
   
-         veya  
+     veya  
   
-    -   Tuşuna yaşam çizgisi seçin **F4**ve ardından **özellikleri** penceresinde **türü** mevcut bir özellik yazın veya yeni bir tür adını belirtin. İleti etiketi sağ tıklatın ve ardından **oluşturma işlemi**.  
+  - Tuşuna yaşam çizgisi seçin **F4**ve ardından **özellikleri** penceresinde **türü** mevcut bir özellik yazın veya yeni bir tür adını belirtin. İleti etiketi sağ tıklatın ve ardından **oluşturma işlemi**.  
   
-     İmza metin ileti görünür. Artık, imza metni düzenleyebilirsiniz. Daha fazla bilgi için [sınıfları ve yaşam çizgilerini](#ClassesAndLifelines).  
+    İmza metin ileti görünür. Artık, imza metni düzenleyebilirsiniz. Daha fazla bilgi için [sınıfları ve yaşam çizgilerini](#ClassesAndLifelines).  
   
 #### <a name="to-improve-the-layout-of-a-sequence-diagram"></a>Sıralı diyagram düzenini iyileştirmek için  
   
@@ -227,21 +227,21 @@ Visual Studio'da çizdiğiniz bir *sıralı diyagram* etkileşim göstermek içi
   
  Yaşam çizgilerini aşağıdaki ayrıntı düzeylerinden birini temsil edebilir:  
   
--   Program kodunda nesneleri, hangi ya mevcut değil veya geliştirdiğiniz.  
+- Program kodunda nesneleri, hangi ya mevcut değil veya geliştirdiğiniz.  
   
--   Bileşenler veya onların alt cepheleri Ara sunucuları ve diğer bileşenler genellikle atlama.  
+- Bileşenler veya onların alt cepheleri Ara sunucuları ve diğer bileşenler genellikle atlama.  
   
--   Sistem ve harici aktörler  
+- Sistem ve harici aktörler  
   
- İletileri bu ayrıntı düzeylerinden birini temsil edebilir:  
+  İletileri bu ayrıntı düzeylerinden birini temsil edebilir:  
   
--   Program kodunda API'de yazılım iletileri ya da Web arabirimi.  
+- Program kodunda API'de yazılım iletileri ya da Web arabirimi.  
   
--   İşlem veya alt işlemlerin, kodu ve veritabanı arasında veya örneğin, kullanıcılar ve sistem arasında.  
+- İşlem veya alt işlemlerin, kodu ve veritabanı arasında veya örneğin, kullanıcılar ve sistem arasında.  
   
--   Kullanım örnekleri - ana etkileşimler kullanıcılar ve sistem arasında.  
+- Kullanım örnekleri - ana etkileşimler kullanıcılar ve sistem arasında.  
   
- Ayrıntılı görünümleri mevcut kodu keşfettiğiniz ya da yeni bir tasarım açıklayan, onu çizmek ve daha az tartışmak çoğunlukla yararlı olur.  
+  Ayrıntılı görünümleri mevcut kodu keşfettiğiniz ya da yeni bir tasarım açıklayan, onu çizmek ve daha az tartışmak çoğunlukla yararlı olur.  
   
 ## <a name="describing-variations"></a>Değişimleri Açıklama  
  Olayları tek, normal bir dizi diyagramda gösterilmektedir. Hata senaryoları gibi alternatif olasılıkları göstermek istiyorsanız, bu seçeneklerden birini ya da kullanabilirsiniz:  
@@ -275,18 +275,18 @@ Visual Studio'da çizdiğiniz bir *sıralı diyagram* etkileşim göstermek içi
   
 ##### <a name="to-create-a-lifeline-from-an-existing-type"></a>Varolan türden bir yaşam çizgisi oluşturmak için  
   
--   Bir sınıf, bileşen veya arabirimi UML Model Gezgini'nden bir sıralama diyagramına sürükleyin.  
+- Bir sınıf, bileşen veya arabirimi UML Model Gezgini'nden bir sıralama diyagramına sürükleyin.  
   
-     \- veya -  
+   \- veya -  
   
-    1.  Sınıf, bileşen veya arabirimi ilgili diyagram üzerinde sağ tıklayın ve ardından **yaşam çizgisi Oluştur**.  
+  1. Sınıf, bileşen veya arabirimi ilgili diyagram üzerinde sağ tıklayın ve ardından **yaşam çizgisi Oluştur**.  
   
-    2.  İçinde **yaşam çizgisi Oluştur** iletişim kutusunda, sıralı diyagramı seçin ve ardından **Tamam**.  
+  2. İçinde **yaşam çizgisi Oluştur** iletişim kutusunda, sıralı diyagramı seçin ve ardından **Tamam**.  
   
      Yeni bir adlandırılmış örnek yaşam çizgisi türü sürüklediğiniz türü görüntülenir.  
   
-    > [!NOTE]
-    >  Bu eylem sayısı dilediğiniz kadar tekrarlayabilirsiniz. Bu örneği farklı adlarla yaşam çizgilerini oluşturur.  
+  > [!NOTE]
+  >  Bu eylem sayısı dilediğiniz kadar tekrarlayabilirsiniz. Bu örneği farklı adlarla yaşam çizgilerini oluşturur.  
   
 ##### <a name="to-change-the-type-of-a-lifeline"></a>Bir yaşam çizgisi türünü değiştirmek için  
   
