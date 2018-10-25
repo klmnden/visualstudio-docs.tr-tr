@@ -15,12 +15,12 @@ ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c2efd5a626e92d180f7c842172f764fa7f8011e4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 29ca670f5c660e70a5177754c3fac518443d310b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907892"
 ---
 # <a name="solution-configuration"></a>Çözüm Yapılandırması
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,33 +34,33 @@ ms.locfileid: "49245810"
   
  Proje türü tarafından desteklenen çözüm yapılandırmaları nasıl uygulayacağınıza dair aşağıda verilmiştir:  
   
--   Proje  
+- Proje  
   
-     Geçerli çözümde bulunan projelerinin adlarını görüntüler.  
+   Geçerli çözümde bulunan projelerinin adlarını görüntüler.  
   
--   Yapılandırma  
+- Yapılandırma  
   
-     Proje türü tarafından desteklenen yapılandırmaların listesi sağlamak ve özellik sayfaları'nda görüntülenen uygulamak için <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>.  
+   Proje türü tarafından desteklenen yapılandırmaların listesi sağlamak ve özellik sayfaları'nda görüntülenen uygulamak için <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>.  
   
-     Yapılandırma sütunu, bu çözüm yapılandırmasındaki, derlemek için proje yapılandırması adını görüntüler ve ok düğmesine tıkladığınızda, tüm proje yapılandırmalarını listeler. Ortam çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgNames%2A> bu listeyi doldurmak için yöntemi. Varsa <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> proje yapılandırmasını düzenleme, yeni destekler veya düzenleme seçimleri ayrıca yapılandırma başlığı altında görüntülenen yöntemi gösterir. Bu seçimleri her yöntemlerini çağıran iletişim kutularını başlatma `IVsCfgProvider2` proje yapılandırmalarını Düzenle için arabirim.  
+   Yapılandırma sütunu, bu çözüm yapılandırmasındaki, derlemek için proje yapılandırması adını görüntüler ve ok düğmesine tıkladığınızda, tüm proje yapılandırmalarını listeler. Ortam çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgNames%2A> bu listeyi doldurmak için yöntemi. Varsa <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> proje yapılandırmasını düzenleme, yeni destekler veya düzenleme seçimleri ayrıca yapılandırma başlığı altında görüntülenen yöntemi gösterir. Bu seçimleri her yöntemlerini çağıran iletişim kutularını başlatma `IVsCfgProvider2` proje yapılandırmalarını Düzenle için arabirim.  
   
-     Bir proje yapılandırmaları desteklemez, yapılandırma sütunu hiçbiri görüntüler ve devre dışı bırakıldı.  
+   Bir proje yapılandırmaları desteklemez, yapılandırma sütunu hiçbiri görüntüler ve devre dışı bırakıldı.  
   
--   Platform  
+- Platform  
   
-     Seçilen proje yapılandırması için derlemeler ve ok düğmesine tıkladığınızda, tüm proje için kullanılabilir platformları listeler platform görüntüler. Ortam çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetPlatformNames%2A> bu listeyi doldurmak için yöntemi. Varsa <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> proje platformu düzenleme, yeni destekler veya düzenleme seçimleri ayrıca Platform başlığı altında görüntülenen yöntemi gösterir. Bu seçimleri her çağrı iletişim kutularını başlatma `IVsCfgProvider2` projenin kullanılabilir platformlar düzenlemek için yöntemleri.  
+   Seçilen proje yapılandırması için derlemeler ve ok düğmesine tıkladığınızda, tüm proje için kullanılabilir platformları listeler platform görüntüler. Ortam çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetPlatformNames%2A> bu listeyi doldurmak için yöntemi. Varsa <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> proje platformu düzenleme, yeni destekler veya düzenleme seçimleri ayrıca Platform başlığı altında görüntülenen yöntemi gösterir. Bu seçimleri her çağrı iletişim kutularını başlatma `IVsCfgProvider2` projenin kullanılabilir platformlar düzenlemek için yöntemleri.  
   
-     Proje platformlarını desteklemiyor, bu proje için platform sütun yok görüntüler ve devre dışı bırakıldı.  
+   Proje platformlarını desteklemiyor, bu proje için platform sütun yok görüntüler ve devre dışı bırakıldı.  
   
--   Derleme  
+- Derleme  
   
-     Projenin geçerli çözüm yapılandırması tarafından oluşturulmuş olup olmadığını belirtir. Çözüm düzeyinde derleme komutları içerdikleri proje bağımlılıkları rağmen çağrıldığında seçili olmayan projeler oluşturulmadı. Oluşturulacak seçili olmayan projeler, hata ayıklama, çalışan, paketleme ve çözümün dağıtımı yine de eklenir.  
+   Projenin geçerli çözüm yapılandırması tarafından oluşturulmuş olup olmadığını belirtir. Çözüm düzeyinde derleme komutları içerdikleri proje bağımlılıkları rağmen çağrıldığında seçili olmayan projeler oluşturulmadı. Oluşturulacak seçili olmayan projeler, hata ayıklama, çalışan, paketleme ve çözümün dağıtımı yine de eklenir.  
   
--   Dağıt  
+- Dağıt  
   
-     Proje başlangıç veya dağıtma komutları seçili çözüm yapı yapılandırması ile birlikte kullanıldığında dağıtılacak olup olmadığını belirtir. Bu alan için onay kutusunu proje uygulayarak dağıtma destekliyorsa kullanılabilir <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> üzerinde arabirim kendi <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> nesne.  
+   Proje başlangıç veya dağıtma komutları seçili çözüm yapı yapılandırması ile birlikte kullanıldığında dağıtılacak olup olmadığını belirtir. Bu alan için onay kutusunu proje uygulayarak dağıtma destekliyorsa kullanılabilir <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> üzerinde arabirim kendi <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> nesne.  
   
- Yeni bir çözüm yapılandırması eklendikten sonra kullanıcı oluşturun ve/veya söz konusu yapılandırmayı başlatmak için standart araç çözüm yapılandırması aşağı açılan liste kutusundan seçebilirsiniz.  
+  Yeni bir çözüm yapılandırması eklendikten sonra kullanıcı oluşturun ve/veya söz konusu yapılandırmayı başlatmak için standart araç çözüm yapılandırması aşağı açılan liste kutusundan seçebilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yapılandırma seçeneklerini yönetme](../../extensibility/internals/managing-configuration-options.md)   

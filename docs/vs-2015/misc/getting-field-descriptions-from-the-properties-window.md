@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7d92bb6a-b9b9-4cd8-99e9-b5ee129b52a3
 caps.latest.revision: 9
 manager: douge
-ms.openlocfilehash: f152572198116a200f91672691b6a4787538063e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fc5d2c8553ccdb6c554f9a8364e9fd21eaa324d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301515"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814798"
 ---
 # <a name="getting-field-descriptions-from-the-properties-window"></a>Özellikler penceresinden alan tanımlarını alma
 Sayfanın alt kısmında **özellikleri** penceresinde bir açıklama alanını seçili özellik alanıyla ilgili bilgileri görüntüler. Bu özellik varsayılan olarak etkinleştirilir. Açıklama alanı gizlemek istiyorsanız, sağ **özellikleri** penceresini açın ve **açıklama**. Bunun yapılması ayrıca kaldırır onay işaretinin yanındaki **açıklama** menü penceresinin başlık. Geçiş yapmak için aynı adımları izleyerek alanı yeniden görüntüleyebilirsiniz **açıklama** yeniden açın.  
@@ -28,18 +28,18 @@ Sayfanın alt kısmında **özellikleri** penceresinde bir açıklama alanını 
   
 ### <a name="to-specify-localized-help-strings"></a>Yerelleştirilmiş Yardım dizeleri belirtmek için  
   
-1.  Ekleme `helpstringdll` özniteliği tür kitaplığının Kitaplık ifadeye (`typelib`).  
+1. Ekleme `helpstringdll` özniteliği tür kitaplığının Kitaplık ifadeye (`typelib`).  
   
-    > [!NOTE]
-    >  Bu adım, bir nesne kitaplığı (.olb) dosyasında tür kitaplığı ise isteğe bağlıdır.  
+   > [!NOTE]
+   >  Bu adım, bir nesne kitaplığı (.olb) dosyasında tür kitaplığı ise isteğe bağlıdır.  
   
-2.  Belirtin `helpstringcontext` dizeleri için öznitelikler. Ayrıca belirtebileceğiniz `helpstring` öznitelikleri.  
+2. Belirtin `helpstringcontext` dizeleri için öznitelikler. Ayrıca belirtebileceğiniz `helpstring` öznitelikleri.  
   
-     Bu öznitelikler kodundan `helpfile` ve `helpcontext` gerçek .chm dosya Yardım konularında bulunan öznitelikler.  
+    Bu öznitelikler kodundan `helpfile` ve `helpcontext` gerçek .chm dosya Yardım konularında bulunan öznitelikler.  
   
- Vurgulanan özellik adı, görüntülenecek açıklama bilgileri almak için **özellikleri** penceresi çağrıları <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A> seçili özellik için istenen belirtme `lcid` için öznitelik Çıkış dizesi. Dahili olarak <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> .dll dosyası içinde belirtilen bulur `helpstringdll` özniteliği ve çağrıları `DLLGetDocumentation` , .dll dosyasında belirtilen bağlamla ve `lcid` özniteliği.  
+   Vurgulanan özellik adı, görüntülenecek açıklama bilgileri almak için **özellikleri** penceresi çağrıları <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A> seçili özellik için istenen belirtme `lcid` için öznitelik Çıkış dizesi. Dahili olarak <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> .dll dosyası içinde belirtilen bulur `helpstringdll` özniteliği ve çağrıları `DLLGetDocumentation` , .dll dosyasında belirtilen bağlamla ve `lcid` özniteliği.  
   
- Uygulamasını ve imza `DLLGetDocumentation` şunlardır:  
+   Uygulamasını ve imza `DLLGetDocumentation` şunlardır:  
   
 ```  
 STDAPI DLLGetDocumentation  

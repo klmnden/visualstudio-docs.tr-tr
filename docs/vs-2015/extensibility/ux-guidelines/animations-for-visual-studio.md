@@ -13,12 +13,12 @@ ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f1769f4d94df0621e06eb01d3dad55598cc810c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3ba2f13ff484f73a7455089ccf2689037eabebdc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178431"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824405"
 ---
 # <a name="animations-for-visual-studio"></a>Visual Studio için animasyonları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,15 +64,15 @@ ms.locfileid: "49178431"
   
 #### <a name="do-not"></a>Yapma:  
   
--   Küçük hareketleri (küçük ayak izine hareket) kullanın, belgelemeyi ve belirerek nesneleri taşınmadan değiştirir.  
+- Küçük hareketleri (küçük ayak izine hareket) kullanın, belgelemeyi ve belirerek nesneleri taşınmadan değiştirir.  
   
--   Büyük bir alanı ekran gerçek boyutunuzu gerçekleşmesi animasyonları kullanın. Boyutundan bağımsız olarak, bu stil animasyonun dikkat kullanıcıya dağıtıyor.  
+- Büyük bir alanı ekran gerçek boyutunuzu gerçekleşmesi animasyonları kullanın. Boyutundan bağımsız olarak, bu stil animasyonun dikkat kullanıcıya dağıtıyor.  
   
--   Kullanıcı şu anda odaklanmıştır nesne veya ile etkileşim kurma ile ilgili olmayan animasyon kullanın.  
+- Kullanıcı şu anda odaklanmıştır nesne veya ile etkileşim kurma ile ilgili olmayan animasyon kullanın.  
   
--   Yanıp Durdur sağlamak için bir yanıp sönen bildirime yanıt vermek için kullanıcı zorlama gibi durumunu sıfırlamak için kullanıcı etkileşimi gerektiren animasyonları kullanın. Herhangi bir yolla normalde bunları kapatmak yeterli olmalıdır.  
+- Yanıp Durdur sağlamak için bir yanıp sönen bildirime yanıt vermek için kullanıcı zorlama gibi durumunu sıfırlamak için kullanıcı etkileşimi gerektiren animasyonları kullanın. Herhangi bir yolla normalde bunları kapatmak yeterli olmalıdır.  
   
- Bu en iyi uygulamalar hakkında daha fazla bilgi için bkz. [animasyon desenleri](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns).  
+  Bu en iyi uygulamalar hakkında daha fazla bilgi için bkz. [animasyon desenleri](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns).  
   
 ### <a name="animation-metrics"></a>Animasyon ölçümleri  
   
@@ -205,21 +205,21 @@ ms.locfileid: "49178431"
 ### <a name="overview"></a>Genel Bakış  
  Visual Studio içinde animasyon belirli bir işlev sunmak ve kullanıcı üretkenliğini azaltabilir değil yöneliktir. Eklenecek uyması genel animasyon özellikleri:  
   
--   Küçük ve örtük  
+- Küçük ve örtük  
   
--   Doğal ve gerçekçi  
+- Doğal ve gerçekçi  
   
--   İnce ve subdued  
+- İnce ve subdued  
   
--   Hızlı ve verimli  
+- Hızlı ve verimli  
   
--   Esnek, hurried değil  
+- Esnek, hurried değil  
   
- Aşağıdaki çizim Visual Studio'da kullanmak için önerilen animasyon stilleri gösterir. Gibi hiçbir animasyon ve ince animasyon belirerek / silinme en sık kullanılan. Animasyonları gibi genişletin ve sözleşme hareketin sınırlı bir uygulama, değiştirme ve Döndürme X ve Y konumu.  
+  Aşağıdaki çizim Visual Studio'da kullanmak için önerilen animasyon stilleri gösterir. Gibi hiçbir animasyon ve ince animasyon belirerek / silinme en sık kullanılan. Animasyonları gibi genişletin ve sözleşme hareketin sınırlı bir uygulama, değiştirme ve Döndürme X ve Y konumu.  
   
- ![Visual Studio için önerilen animasyon stiller](../../extensibility/ux-guidelines/media/1202-a-vsanimstyles.png "1202 a_VSAnimStyles")  
+  ![Visual Studio için önerilen animasyon stiller](../../extensibility/ux-guidelines/media/1202-a-vsanimstyles.png "1202 a_VSAnimStyles")  
   
- **Visual Studio için önerilen animasyon stilleri**  
+  **Visual Studio için önerilen animasyon stilleri**  
   
 #### <a name="appear-and-disappear"></a>Görünür ve kaybolur  
  Bu düzen ile bir öğe görülemediğinden görünüme giden ve geri geçiş animasyon olmadan geçer:  
@@ -363,65 +363,65 @@ ms.locfileid: "49178431"
   
 #### <a name="tab-open"></a>Açık sekmesi  
   
--   Stil: görüntülenir  
+- Stil: görüntülenir  
   
--   Süre: Sıfır saniye  
+- Süre: Sıfır saniye  
   
- ![Visual Studio'da Aç animasyon sekmesinde](../../extensibility/ux-guidelines/media/1202-h-tabopen.png "1202 h_TabOpen")  
+  ![Visual Studio'da Aç animasyon sekmesinde](../../extensibility/ux-guidelines/media/1202-h-tabopen.png "1202 h_TabOpen")  
   
 #### <a name="tab-close"></a>Sekmesini kapatın  
   
--   Stil: X konumunu değiştir  
+- Stil: X konumunu değiştir  
   
--   Süre: 200 milisaniye olarak  
+- Süre: 200 milisaniye olarak  
   
- ![Visual Studio'da Kapat animasyon sekmesinde](../../extensibility/ux-guidelines/media/1202-i-tabclose.png "1202 i_TabClose")  
+  ![Visual Studio'da Kapat animasyon sekmesinde](../../extensibility/ux-guidelines/media/1202-i-tabclose.png "1202 i_TabClose")  
   
 #### <a name="tab-reorder"></a>Sekme yeniden sıralama  
   
--   Stil: X konumunu değiştir  
+- Stil: X konumunu değiştir  
   
--   Süre: 200 milisaniye olarak  
+- Süre: 200 milisaniye olarak  
   
- ![Visual Studio'da yeniden düzenleme animasyon sekmesinde](../../extensibility/ux-guidelines/media/1202-j-tabreorder.png "1202 j_TabReorder")  
+  ![Visual Studio'da yeniden düzenleme animasyon sekmesinde](../../extensibility/ux-guidelines/media/1202-j-tabreorder.png "1202 j_TabReorder")  
   
 #### <a name="close-floating-document"></a>Kayan belgeyi Kapat  
   
--   Stil: görüntülenir  
+- Stil: görüntülenir  
   
--   Süre: 200 milisaniye olarak  
+- Süre: 200 milisaniye olarak  
   
- ![Visual Studio'da belge animasyon kayan Kapat](../../extensibility/ux-guidelines/media/1202-k-closefloatingdocument.png "1202 k_CloseFloatingDocument")  
+  ![Visual Studio'da belge animasyon kayan Kapat](../../extensibility/ux-guidelines/media/1202-k-closefloatingdocument.png "1202 k_CloseFloatingDocument")  
   
 #### <a name="window-state-transition"></a>Pencere durum geçişi  
   
--   Stil: diğer windows ile tutarlı olması için belgeyi Kapat animasyon tanımlayın geçerli işletim sistemi sağlar.  
+- Stil: diğer windows ile tutarlı olması için belgeyi Kapat animasyon tanımlayın geçerli işletim sistemi sağlar.  
   
--   Süre: 200 milisaniye olarak  
+- Süre: 200 milisaniye olarak  
   
- ![Visual Studio'da pencere durum geçişi animasyon](../../extensibility/ux-guidelines/media/1202-l-windowstatetransition.png "1202 l_WindowStateTransition")  
+  ![Visual Studio'da pencere durum geçişi animasyon](../../extensibility/ux-guidelines/media/1202-l-windowstatetransition.png "1202 l_WindowStateTransition")  
   
 #### <a name="menu-open"></a>Menü Aç  
   
--   Stil: belirme  
+- Stil: belirme  
   
--   Süre: 200 milisaniye olarak  
+- Süre: 200 milisaniye olarak  
   
- ![Visual Studio'da menü açık animasyon](../../extensibility/ux-guidelines/media/1202-m-menuopen.png "1202 m_MenuOpen")  
+  ![Visual Studio'da menü açık animasyon](../../extensibility/ux-guidelines/media/1202-m-menuopen.png "1202 m_MenuOpen")  
   
 #### <a name="menu-close"></a>Menüsünü Kapat  
   
--   Stil: Fade-out  
+- Stil: Fade-out  
   
--   Süre: 200 milisaniye olarak  
+- Süre: 200 milisaniye olarak  
   
- ![Visual Studio'da menü Kapat animasyon](../../extensibility/ux-guidelines/media/1202-n-menuclose.png "1202 n_MenuClose")  
+  ![Visual Studio'da menü Kapat animasyon](../../extensibility/ux-guidelines/media/1202-n-menuclose.png "1202 n_MenuClose")  
   
 #### <a name="auto-hide-tool-window-reveal"></a>Otomatik gizleme araç penceresini göster  
   
--   Stil: görüntülenir  
+- Stil: görüntülenir  
   
--   Süre: Sıfır saniye  
+- Süre: Sıfır saniye  
   
- ![Otomatik&#45;Visual Studio'da araç penceresi animasyon Gizle](../../extensibility/ux-guidelines/media/1202-o-autohidetoolwindowreveal.png "1202 o_AutoHideToolWindowReveal")
+  ![Otomatik&#45;Visual Studio'da araç penceresi animasyon Gizle](../../extensibility/ux-guidelines/media/1202-o-autohidetoolwindowreveal.png "1202 o_AutoHideToolWindowReveal")
 

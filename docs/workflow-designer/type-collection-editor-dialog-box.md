@@ -1,5 +1,5 @@
 ---
-title: İş Akışı Tasarımcısı - türü koleksiyon Düzenleyicisi iletişim kutusu
+title: İş Akışı Tasarımcısı - tür Koleksiyonu Düzenleyicisi iletişim kutusu
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,26 +12,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09bb5c7789be78a39a8d33a556ce66385db4a1d8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 08c6e8e2f7851d74bfbeb0399dd758ae0ca25b4f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973020"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812770"
 ---
-# <a name="type-collection-editor-dialog-box"></a>Türü koleksiyon Düzenleyicisi iletişim kutusu
+# <a name="type-collection-editor-dialog-box"></a>Tür Koleksiyonu Düzenleyicisi İletişim Kutusu
 
-**Türü Koleksiyonu Düzenleyicisi** iletişim kutusu için bilinen türleri eklemek için kullanılan **Gönder** ve **alma** etkinlikler. Bu iletişim kutusunu da genel tür bağımsız değişkenleri eklemek için kullanılan **InvokeMethod** etkinlik. İçin kullanıldığında **Gönder** ve **alma** bilinen türleri eklenecek etkinlikleri **türü Koleksiyonu Düzenleyicisi** iletişim kutusu türü eklemeleri benzersiz olmasını gerektirir. Yinelenen türü eklenir ve değişiklik tıklayarak kararlıdır **Tamam**, bir hata iletisi döndürülür. İçin kullanıldığında **InvokeMethod** genel tür bağımsız değişkenleri eklemek için etkinlik **türü Koleksiyonu Düzenleyicisi** iletişim kutusu yinelenen türleri eklenmesini sağlar.
+**Editor Typu Kolekce** iletişim kutusu için bilinen türleri eklemek için kullanılan **Gönder** ve **alma** etkinlikler. Bu iletişim için genel tür bağımsız değişkeni eklemek için de kullanılır **InvokeMethod** etkinlik. İçin kullanıldığında **Gönder** ve **alma** bilinen türleri eklenecek etkinlikleri **Editor Typu Kolekce** iletişim kutusu türü eklemeleri benzersiz olmasını gerektirir. Yinelenen tür eklenir ve değişiklik tıklayarak kararlıdır **Tamam**, bir hata iletisi döndürülür. İçin kullanıldığında **InvokeMethod** genel tür bağımsız değişkenleri, eklemek için etkinlik **Editor Typu Kolekce** yinelenen türlerinin eklenmesi iletişim kutusu sağlar.
 
-Daha fazla bilgi için bkz: [veri sözleşmesi bilinen türler](/dotnet/framework/wcf/feature-details/data-contract-known-types).
+Daha fazla bilgi için [veri anlaşması bilinen türler](/dotnet/framework/wcf/feature-details/data-contract-known-types).
 
-Kullanıcı Arabirimi (UI) öğelerini aşağıdaki tabloda açıklanmaktadır **türü koleksiyonu** iletişim kutusu.
+Aşağıdaki tabloda kullanıcı arabirimi (UI) öğelerini açıklar **türü koleksiyonu** iletişim kutusu.
 
 |Arabirim Öğesi|Açıklama|
-|----------------|-----------------|
+|-|-----------------|
 |**Tür Listesi**|Eklenen veya kaldırılan türlerinin listesi.|
 
-## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Yedekleme türü koleksiyon Düzenleyicisi'ni Gönder getirip etkinlikleri alma
+## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Editor Typu Kolekce yedeklemek için Gönder getirin ve etkinlikleri almak için
 
 1.  Seçin **Gönder** veya **alma** Tasarım görünümünde etkinlik.
 
@@ -39,7 +39,7 @@ Kullanıcı Arabirimi (UI) öğelerini aşağıdaki tabloda açıklanmaktadır *
 
 3.  İçinde **özellikleri** penceresinde, yanındaki üç nokta düğmesini tıklatın **KnownTypes** özelliği.
 
-## <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>Yukarı türü Koleksiyonu Düzenleyicisi InvokeMethod etkinliğinin getirmek için
+## <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>InvokeMethod etkinliği için tür Koleksiyonu Düzenleyicisi'kurmak getirmek için
 
 1.  Seçin **InvokeMethod** Tasarım görünümünde etkinlik.
 

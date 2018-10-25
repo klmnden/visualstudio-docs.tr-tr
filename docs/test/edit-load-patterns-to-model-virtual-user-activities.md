@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 431fea97c0dcca0407f2b0627e6b2d9def774799
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: fb5e63f8c33267d622271221271ba8e71bb6f205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179446"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862508"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Model sanal kullanıcı etkinlikleri için yük desenlerini düzenleme
 
@@ -56,32 +56,32 @@ Yük düzeni, bir senaryonun bir bileşenidir. Bir yük testi tanımlanmış yü
 
  Adım yük düzeni, kullanıcı yükü arttıkça performansın nasıl değişeceğini görebileceğiniz şekilde yük testi yapılırken sunucu veya sunucular üzerindeki yükü artırmak için kullanılabilir. Örneğin, sunucu veya sunucularınızın nasıl gerçekleştirmek görmek için kullanıcı yükü 2.000 kullanıcıya yükseldiğinde aşağıdaki özelliklere sahip bir adım yükü düzenini kullanarak 10 saatlik yük testi çalıştırabilirsiniz:
 
--   **İlk kullanıcı sayısı**: 100
+- **İlk kullanıcı sayısı**: 100
 
--   **En yüksek kullanıcı sayısı**: 2.000
+- **En yüksek kullanıcı sayısı**: 2.000
 
--   **Adım Süresi (saniye)**: 1.800
+- **Adım Süresi (saniye)**: 1.800
 
--   **Adım Rampa Süresi (saniye)**: 20
+- **Adım Rampa Süresi (saniye)**: 20
 
--   **Adım kullanıcısı sayısı**: 100
+- **Adım kullanıcısı sayısı**: 100
 
- Bu ayarlar kullanıcı 30 dakika (1800 saniye) için yük testini çalıştırın, 100, 200, 300 ve 2.000 kullanıcıya kadar yükler. **Adım eğrisi süresi** özelliği olan özel olarak belirtilmelidir, çünkü bu seçim için kullanılabilir değil Bu özelliklerden yalnızca biri **Yeni Yük Testi Sihirbazı**. Bu özelliği artırma bir adımdan bir sonrakine (örneğin 100 kullanıcıdan 200 kullanıcıya) artışın hemen yerine olanak tanır. Örnekte, kullanıcı yükü 20 saniyelik bir süreçte 100 kullanıcıdan 200'e yükseltilmiştir (artış beş kullanıcı her saniye). Daha fazla bilgi için [nasıl yapılır: Adım yük düzeni için Adım Rampa Süresi özelliğini belirtme](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
+  Bu ayarlar kullanıcı 30 dakika (1800 saniye) için yük testini çalıştırın, 100, 200, 300 ve 2.000 kullanıcıya kadar yükler. **Adım eğrisi süresi** özelliği olan özel olarak belirtilmelidir, çünkü bu seçim için kullanılabilir değil Bu özelliklerden yalnızca biri **Yeni Yük Testi Sihirbazı**. Bu özelliği artırma bir adımdan bir sonrakine (örneğin 100 kullanıcıdan 200 kullanıcıya) artışın hemen yerine olanak tanır. Örnekte, kullanıcı yükü 20 saniyelik bir süreçte 100 kullanıcıdan 200'e yükseltilmiştir (artış beş kullanıcı her saniye). Daha fazla bilgi için [nasıl yapılır: Adım yük düzeni için Adım Rampa Süresi özelliğini belirtme](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
 
 ### <a name="goal-based"></a>Hedef tabanlı
 
  Hedef tabanlı yük düzeni adım desenine benzer ancak kullanıcı yükünü düzenli kullanıcı yükü düzeltmeleri ve performans sayacı eşiklerine göre ayarlar. Hedefe dayalı yükler, çeşitli farklı amaçlar için kullanışlıdır:
 
--   Aracılardan gelen çıkış en üst düzeye: ölçüm aracıların çıkış en üst düzeye çıkarmak için aracı sınırlama anahtarı ölçün. Genellikle, CPU olur. Ancak, bu bellek da olabilir.
+- Aracılardan gelen çıkış en üst düzeye: ölçüm aracıların çıkış en üst düzeye çıkarmak için aracı sınırlama anahtarı ölçün. Genellikle, CPU olur. Ancak, bu bellek da olabilir.
 
--   Hedef kaynak düzeyine ulaşmasını, genellikle CPU, hedef sunucuda, ardından o düzeyde üretilen iş ölçme. Bu, sunucu üzerindeki kaynak kullanımının tutarlı bir düzey verilen aktarım hızının çalıştıracak çalışma için karşılaştırmalar yapmak sağlar.
+- Hedef kaynak düzeyine ulaşmasını, genellikle CPU, hedef sunucuda, ardından o düzeyde üretilen iş ölçme. Bu, sunucu üzerindeki kaynak kullanımının tutarlı bir düzey verilen aktarım hızının çalıştıracak çalışma için karşılaştırmalar yapmak sağlar.
 
--   Sunucuda bir hedef işleme düzeyine ulaşmasını.
+- Sunucuda bir hedef işleme düzeyine ulaşmasını.
 
- Aşağıdaki tabloda, aşağıdaki özellik ayarları hedef tabanlı bir desenle bir örnek gösterilmektedir:
+  Aşağıdaki tabloda, aşağıdaki özellik ayarları hedef tabanlı bir desenle bir örnek gösterilmektedir:
 
 |Özellik grubu|Özellik|Değer|
-|--------------------|--------------|-----------|
+|-|--------------|-|
 |Performans sayacı|Kategori|İşlemci|
 |Performans sayacı|Bilgisayar|ContosoServer1|
 |Performans sayacı|Sayaç|% İşlemci zamanı|
@@ -109,7 +109,7 @@ Yük düzeni, bir senaryonun bir bileşenidir. Bir yük testi tanımlanmış yü
 ## <a name="tasks"></a>Görevler
 
 |Görevler|İlişkili Konular|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Yük testiniz için ilk yük düzeni belirtme:** kullanarak yük testi oluşturduğunuzda **Yeni Yük Testi Sihirbazı**, yük düzeni seçin.|-   [Yük düzeni değiştirme](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
 |**Yük testiniz için yük düzeni düzenleme:** yük testinizi oluşturduktan sonra yük düzeni içindeki düzenleyebilirsiniz **Yük Testi Düzenleyicisi**.|-   [Nasıl yapılır: Adım yük düzeni için Adım Rampa Süresi özelliğini belirtme](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 |**Sanal kullanıcı yük testi senaryosuna olup olmadığını belirten web önbellek verilerini içermelidir:** değiştirebileceğiniz **yeni kullanıcıların yüzdesini** yük testi, önbelleğe alma web benzetim şeklini etkileyen özelliği sanal kullanıcı için bir web tarayıcısı tarafından gerçekleştirilmesi.|-   [Nasıl yapılır: web önbellek verilerini kullanan sanal kullanıcıların yüzdesini belirtme](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|

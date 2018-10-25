@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0323e6902be9c5b784a17bfc8b48f4f9a1225e41
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4d86dfcd84ba203891deb52b8a4b646f610a3567
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180327"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925222"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Kodlanmış UI testinin anatomisi
 
@@ -27,7 +27,7 @@ ms.locfileid: "39180327"
 Bir kodlanmış UI testi, oluşturduğunuzda **kodlanmış UI Test Oluşturucusu** test ve ayrıca test yöntemleri, parametreleri ve altındaki tüm testler için onaylar kullanıcı arabiriminin bir harita oluşturur. Ayrıca, her test için bir sınıf dosyası oluşturur.
 
 |Dosya|İçindekiler|Düzenlenebilir?|
-|----------|--------------|---------------|
+|-|-|-|
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[Bildirimler bölümü](#UIMapDesignerFile)<br /><br /> [UIMap sınıfı](#UIMapClass) (kısmi, otomatik olarak oluşturulan)<br /><br /> [Yöntemler](#UIMapMethods)<br /><br /> [Özellikler](#UIMapProperties)|Hayır|
 |[UIMap.cs](#UIMapCS)|[UIMap sınıfı](#UIMapCS) (kısmi)|Evet|
 |[Codeduıtest1.cs](#CodedUITestCS)|[Codeduıtest1 sınıfı](#CodedUITestCS)<br /><br /> [Yöntemler](#CodedUITestMethods)<br /><br /> [Özellikler](#CodedUITestProperties)|Evet|

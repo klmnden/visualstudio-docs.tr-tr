@@ -13,12 +13,12 @@ ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f9e92050eab33b542cc5b8165aed63fde1e5fc7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 657f54b258d759d0d966f65ff40649e0fb2a0669
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287696"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823534"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçlarına Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ Bu bölümde daha özellikleri Visual Studio Araçları Unity teklifler ve Unity
 ## <a name="superior-debugging"></a>Üst düzey hata ayıklama  
  Unity oyununuzu C# betik ve DLL'leri, tek başına çalışıp çalışmadığını veya Unity Editor'daki hata ayıklamak için Visual Studio'nun güçlü hata ayıklayıcı bağlanın. Visual Studio'dan beklediğiniz tüm hata ayıklama özelliklerini kullanabilirsiniz.  
   
--   Kesme, koşullu kesme noktaları da dahil olmak üzere.  
+- Kesme, koşullu kesme noktaları da dahil olmak üzere.  
   
--   İzleme penceresinde karmaşık ifadeleri değerlendirin.  
+- İzleme penceresinde karmaşık ifadeleri değerlendirin.  
   
--   İnceleyin ve değişkenleri ve bağımsız değişken değerini değiştirin.  
+- İnceleyin ve değişkenleri ve bağımsız değişken değerini değiştirin.  
   
--   Karmaşık nesne ve verileri yapılarda detayına gidin.  
+- Karmaşık nesne ve verileri yapılarda detayına gidin.  
   
- Unity oyununuzu, ağınızdaki başka bir makinede çalışırken bile ayıklayabilirsiniz.  
+  Unity oyununuzu, ağınızdaki başka bir makinede çalışırken bile ayıklayabilirsiniz.  
   
 ## <a name="productivity"></a>Üretkenlik  
  Yazma ve C# kodu yeniden düzenleme için Visual Studio'nun kurulu üretkenlik ek olarak, Unity için Visual Studio Araçları, Unity geliştiricileri için fazladan üretkenlik özellikleri sağlar.  

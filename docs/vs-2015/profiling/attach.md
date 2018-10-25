@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c102b00fa8ab66d5f86111a8749fcbbc23c75d6b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc3db6b677e23e0752612f688055befd366e34d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251691"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845543"
 ---
 # <a name="attach"></a>İliştir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 ## <a name="interval-options"></a>Aralık Seçenekleri  
  Örnekleme aralığı şunlardan birini Ekle komut satırında belirtilebilir. Varsayılan örnekleme aralığı 10.000.000 işlemci saat döngülerini ' dir.  
   
- **Zamanlayıcı**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:** Olayları]**sayacı**[**:**`Name`,`Reload`,`FriendlyName`]  
+ **Zamanlayıcı**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong> Olayları]**sayacı**[**:**`Name`,`Reload`,`FriendlyName`]  
  Sayısı ve örnekleme aralığı türünü belirtir.  
   
 -   **Zamanlayıcı** -örnekleri her `Cycles` işlemci saat döngüsü. Varsa `Cycles` belirtilmezse, 10.000.000 döngüleri kullanılır.  

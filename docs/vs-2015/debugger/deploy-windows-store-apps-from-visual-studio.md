@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 540a335365102f279f62f0707ee3cf7cc4fe1b53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 95b0b2dfd85f1184dc81c2c395d902d50626f7f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196111"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827293"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Visual Studio'dan Windows Store uygulamaları dağıtma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Yalnızca Windows için geçerlidir] (.. /Image/windows_only_content.png "window
   
  Visual Studio dağıtım işlevlerini oluşturur ve bir hedef cihazda oluşturulan Visual Studio ile Windows Store apps kaydeder. Uygulamanın tam olarak nasıl kaydedilir, hedef cihazın yerel veya uzak olup bağlıdır:  
   
--   Visual Studio LocalMachine hedeflendiğinde Visual Studio, derleme klasöründen uygulamayı kaydeder.  
+- Visual Studio LocalMachine hedeflendiğinde Visual Studio, derleme klasöründen uygulamayı kaydeder.  
   
--   Uzak aygıtı hedeflendiğinde Visual Studio gerekli dosyaları uzak makineye kopyalar ve o cihazdaki uygulama kaydeder.  
+- Uzak aygıtı hedeflendiğinde Visual Studio gerekli dosyaları uzak makineye kopyalar ve o cihazdaki uygulama kaydeder.  
   
- Dağıtım, kullanarak uygulamanızı Visual Studio'dan hata ayıklaması yaparken otomatiktir **hata ayıklamayı Başlat** seçeneği (klavye: F5) veya **hata ayıklama olmadan Başlat** seçeneği (klavye: CTRL + F5). Ayrıca, uygulamanızı el ile dağıtabilirsiniz. El ile dağıtımı, aşağıdaki senaryolarda kullanışlıdır:  
+  Dağıtım, kullanarak uygulamanızı Visual Studio'dan hata ayıklaması yaparken otomatiktir **hata ayıklamayı Başlat** seçeneği (klavye: F5) veya **hata ayıklama olmadan Başlat** seçeneği (klavye: CTRL + F5). Ayrıca, uygulamanızı el ile dağıtabilirsiniz. El ile dağıtımı, aşağıdaki senaryolarda kullanışlıdır:  
   
--   Yerel veya uzak bir makinede test geçici.  
+- Yerel veya uzak bir makinede test geçici.  
   
--   Hata ayıklamak istediğiniz başka bir uygulamayı başlatacak bir uygulamayı dağıtma.  
+- Hata ayıklamak istediğiniz başka bir uygulamayı başlatacak bir uygulamayı dağıtma.  
   
--   Başlatıldığında ayıklanacak bir uygulamayı başka bir uygulama veya metodu tarafından dağıtılıyor.  
+- Başlatıldığında ayıklanacak bir uygulamayı başka bir uygulama veya metodu tarafından dağıtılıyor.  
   
 ##  <a name="BKMK_In_this_topic"></a> Bu konudaki  
  Bu konu başlığında şunları öğrenebilirsiniz:  
@@ -78,33 +78,33 @@ Yalnızca Windows için geçerlidir] (.. /Image/windows_only_content.png "window
   
 #### <a name="to-specify-a-remote-device"></a>Uzak cihaz belirtmek için  
   
-1.  Başlangıç projesinin hata ayıklama özelliği sayfasında adını veya IP adresini bir uzak dağıtım hedefini belirtin.  
+1. Başlangıç projesinin hata ayıklama özelliği sayfasında adını veya IP adresini bir uzak dağıtım hedefini belirtin.  
   
-2.  Hata ayıklama özellik sayfasını açmak için Çözüm Gezgini'nde projeyi seçin ve ardından **özellikleri** kısayol menüsünden.  
+2. Hata ayıklama özellik sayfasını açmak için Çözüm Gezgini'nde projeyi seçin ve ardından **özellikleri** kısayol menüsünden.  
   
-3.  Ardından **hata ayıklama** özellik sayfaları penceresinin düğümde.  
+3. Ardından **hata ayıklama** özellik sayfaları penceresinin düğümde.  
   
-4.  Adını veya uzak cihazın IP adresini yazın veya CİHAZDAN seçebilirsiniz **uzaktan hata ayıklayıcı bağlantısı Seç** iletişim kutusu.  
+4. Adını veya uzak cihazın IP adresini yazın veya CİHAZDAN seçebilirsiniz **uzaktan hata ayıklayıcı bağlantısı Seç** iletişim kutusu.  
   
-     ![Select uzaktan hata ayıklayıcı bağlantısı iletişim kutusu](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
+    ![Select uzaktan hata ayıklayıcı bağlantısı iletişim kutusu](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
   
-     **Uzaktan hata ayıklayıcı bağlantısı Seç** iletişim kutusu, yerel ağ alt ağı ve bir Ethernet kablosuyla doğrudan Visual Studio makinesine bağlı herhangi bir CİHAZDAN şirket cihazları görüntüler.  
+    **Uzaktan hata ayıklayıcı bağlantısı Seç** iletişim kutusu, yerel ağ alt ağı ve bir Ethernet kablosuyla doğrudan Visual Studio makinesine bağlı herhangi bir CİHAZDAN şirket cihazları görüntüler.  
   
- **Uzak cihazın bir JavaScript ya da Visual C++ proje sayfada belirtme**  
+   **Uzak cihazın bir JavaScript ya da Visual C++ proje sayfada belirtme**  
   
- ![C&#43; &#43; proje uzaktan hata ayıklama özellikleri](../debugger/media/vsrun-cpp-projprop-remote.png "VSRUN_CPP_ProjProp_Remote")  
+   ![C&#43; &#43; proje uzaktan hata ayıklama özellikleri](../debugger/media/vsrun-cpp-projprop-remote.png "VSRUN_CPP_ProjProp_Remote")  
   
-1.  Seçin **uzaktan hata ayıklayıcı** gelen **başlatmak için hata ayıklayıcı** listesi.  
+5. Seçin **uzaktan hata ayıklayıcı** gelen **başlatmak için hata ayıklayıcı** listesi.  
   
-2.  Uzak cihaz ağ adını **makine adı** kutusu. Veya uzaktan hata ayıklayıcı bağlantısı Seç iletişim kutusundan cihazı seçin için kutusunda aşağı oku seçin.  
+6. Uzak cihaz ağ adını **makine adı** kutusu. Veya uzaktan hata ayıklayıcı bağlantısı Seç iletişim kutusundan cihazı seçin için kutusunda aşağı oku seçin.  
   
- **Uzak cihazın bir Visual C# ve Visual Basic proje sayfada belirtme**  
+   **Uzak cihazın bir Visual C# ve Visual Basic proje sayfada belirtme**  
   
- ![Uzaktan hata ayıklama için proje özellikleri yönetilen](../debugger/media/vsrun-managed-projprop-remote.png "VSRUN_Managed_ProjProp_Remote")  
+   ![Uzaktan hata ayıklama için proje özellikleri yönetilen](../debugger/media/vsrun-managed-projprop-remote.png "VSRUN_Managed_ProjProp_Remote")  
   
-1.  Seçin **uzak makine** gelen **hedef cihaz** listesi.  
+7. Seçin **uzak makine** gelen **hedef cihaz** listesi.  
   
-2.  Uzak cihaz ağ adını **uzak makine** kutusuna veya tıklayın **bulmak** cihazı seçin **uzaktan hata ayıklayıcı bağlantısı Seç** iletişim kutusu.  
+8. Uzak cihaz ağ adını **uzak makine** kutusuna veya tıklayın **bulmak** cihazı seçin **uzaktan hata ayıklayıcı bağlantısı Seç** iletişim kutusu.  
   
 ##  <a name="BKMK_Deployment_options"></a> Dağıtım seçenekleri  
  Aşağıdaki dağıtım seçeneklerinden başlangıç projesinin hata ayıklama özellik sayfasından ayarlayabilirsiniz.  
@@ -114,16 +114,16 @@ Yalnızca Windows için geçerlidir] (.. /Image/windows_only_content.png "window
   
  Uygulama ağ geri döngüsü muafiyet kaldırmak için:  
   
--   C# ve VB hata ayıklama özellik sayfası Temizle **ağ geri döngüsüne izin ver** onay kutusu.  
+- C# ve VB hata ayıklama özellik sayfası Temizle **ağ geri döngüsüne izin ver** onay kutusu.  
   
--   JavaScript ve hata ayıklama özellik sayfası **ağ geri döngüsüne izin** değerini **Hayır**.  
+- JavaScript ve hata ayıklama özellik sayfası **ağ geri döngüsüne izin** değerini **Hayır**.  
   
- **Başlatma, ancak (C# ve VB) başlatıldığında kodumda Hata Ayıkla / uygulama başlatma (JavaScript ve C++)**  
- Dağıtım, uygulama başlatıldığında hata ayıklama oturumu otomatik olarak başlayacak şekilde yapılandırmak için:  
+  **Başlatma, ancak (C# ve VB) başlatıldığında kodumda Hata Ayıkla / uygulama başlatma (JavaScript ve C++)**  
+  Dağıtım, uygulama başlatıldığında hata ayıklama oturumu otomatik olarak başlayacak şekilde yapılandırmak için:  
   
--   C# ve VB hata ayıklama özellik sayfasını kontrol **başlatma, ancak başlatıldığında kodumda Hata Ayıkla** onay kutusu.  
+- C# ve VB hata ayıklama özellik sayfasını kontrol **başlatma, ancak başlatıldığında kodumda Hata Ayıkla** onay kutusu.  
   
--   JavaScript ve hata ayıklama özellik sayfası **uygulama Başlat** değerini **Evet**.  
+- JavaScript ve hata ayıklama özellik sayfası **uygulama Başlat** değerini **Evet**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio’dan uygulamaları çalıştırma](../debugger/run-store-apps-from-visual-studio.md)

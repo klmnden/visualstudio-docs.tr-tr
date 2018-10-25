@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: bağımsız bir .NET Framework bileşenini izleme ve komut satırını kullanarak profil oluşturucu ile bellek verileri toplama | Microsoft Docs'
+title: 'Nasıl yapılır: bağımsız bir .NET Framework bileşenini izleme ve komut satırını kullanarak Profiler ile bellek verileri toplama | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,95 +10,96 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 67899ae042ee6056ab7262a8060890ba0685b502
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 6e2191469d313aca8506ccc86ddc6ab096f8e390
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815996"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842150"
 ---
-# <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>Nasıl yapılır: bağımsız bir .NET Framework bileşenini izleme ve komut satırını kullanarak profil oluşturucu ile bellek verileri toplama
-Bu makalede nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir .exe veya .dll dosyası gibi tek başına bir uygulama, .NET Framework bileşenini izleme için profil oluşturma araçları komut satırı araçları dosya ve Profil Oluşturucu kullanarak bellek bilgiler toplayabilir.  
-  
-> [!NOTE]
->  Profil oluşturma araçları komut satırı araçları içinde bulunur *\Team Tools\Performance Araçları* Visual Studio yükleme dizininin alt. 64-bit bilgisayarlarda, araçların 64-bit ve 32 bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresini PATH ortam değişkenine ekleyin veya komutuna ekleyin. Daha fazla bilgi için bkz: [komut satırı araçları yolunu belirtme](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+# <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>Nasıl yapılır: tek başına bir .NET Framework bileşenini izleme ve komut satırını kullanarak profil oluşturucu ile bellek verileri toplama
+Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .exe veya .dll gibi tek başına bir uygulamanın bir .NET Framework bileşenini izleme Profil Araçları komut satırı araçlarını kullanarak dosya ve profil oluşturucuyu kullanarak bellek bilgiler toplayabilir.  
 
-  
- İzleme metodunu kullanarak bir .NET Framework bileşenden bellek verileri toplamak için kullandığınız [VSInstr.exe](../profiling/vsinstr.md) bileşenin izleme eklenmiş bir sürümünü oluşturmak için araç ve [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) Profil oluşturma ortam değişkenlerini başlatmak için araç. Sonra kullanarak profil oluşturucu başlatın *VSPerfCmd.exe* aracı.  
-  
- İzleme eklenmiş bileşen yürütüldüğünde, bellek verileri bir veri dosyası otomatik olarak toplanır. Duraklatma ve veri toplama sırasında profil oluşturma oturumu sürdürün.  
-  
- Profil oluşturma oturumu sona erdirmek için hedef uygulamayı kapatın ve açıkça profil oluşturucuyu kapatın. Çoğu durumda, bir oturumun sonunda profil ortam değişkenleri temizleme öneririz.  
-  
-## <a name="start-the-application-with-the-profiler"></a>Profil Oluşturucu ile uygulama Başlat  
-  
-#### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>Profil Oluşturucu çalışan bir .NET Framework uygulama eklemek için  
-  
-1.  Bir komut istemi penceresi açın.  
-  
-2.  Kullanım **Vsınstr** hedef uygulama izleme eklenmiş bir sürümünü oluşturmak için aracı.  
-  
-3.  Ortam değişkenleri profil .NET Framework başlatır. Tür:  
-  
-     **VSPerfClrEnv** {**/tracegc** &#124; **/tracegclife**}  
-  
-    -   **/Tracegc** ve **/tracegclife** seçenekleri ortam değişkenleri yalnızca bellek ayırma verileri toplamak için veya bellek ayırma ve nesne yaşam süresi verilerini toplamak için başlatılamıyor.  
-  
-        |Seçenek|Açıklama|  
-        |------------|-----------------|  
-        |**/tracegc**|Bellek ayırma yalnızca verilerin toplanmasını sağlar.|  
-        |**/tracegclife**|Bellek ayırma ve nesne yaşam verisi koleksiyonunu sağlar.|  
-  
-4.  Profil Oluşturucu başlatın. Tür:  
-  
-     **VSPerfCmd /start:trace/Output:** `OutputFile` [`Options`]  
-  
-    -   [/Start](../profiling/start.md)**: izleme** seçeneği profil oluşturucu başlatır.  
-  
-    -   [/Çıkış](../profiling/output.md)**:** `OutputFile` seçeneği ile gerekli **/start**. `OutputFile` Profil oluşturma verileri konumunu ve adını belirtir (. *Vsp*) dosyası.  
-  
-     İle aşağıdaki seçeneklerden birini kullanabilirsiniz **/start:trace** seçeneği.  
-  
-    |Seçenek|Açıklama|  
-    |------------|-----------------|  
-    |[/ User](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Profili işleme sahip hesabın etki alanı ve kullanıcı adını belirtir. Bu seçenek, yalnızca işlem oturum açmış olan kullanıcı dışındaki bir kullanıcı olarak çalışıyorsa gereklidir. Kullanıcı adı sütununa listelendiğini işlem sahibi **işlemleri** sekmesi Windows Görev Yöneticisi'nin.|  
-    |[/crosssession](../profiling/crosssession.md)|Etkinleştirir, diğer oturumlarda işlemleri profil oluşturma. Bu seçenek, uygulamanın farklı bir oturumda çalışıyorsa gereklidir. Oturum idenitifer listelenen **oturum kimliği** sütunu **işlemleri** sekmesi Windows Görev Yöneticisi'nin. **/CS** için bir kısaltma olarak belirtilen **/crosssession**.|  
-    |[/globaloff](../profiling/globalon-and-globaloff.md)|Profil Oluşturucu ile veri toplama başlatmak için duraklatıldı, ekleme **/globaloff** için seçenek **/start** komut satırı. Kullanım **/globalon** profil sürdürmek için.|  
-    |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Profil oluşturma sırasında toplanması için bir Windows performans sayacı belirtir.|  
-    |[/automark](../profiling/automark.md) **:** `Interval`|İle kullandığınız **/wincounter** yalnızca. Windows performans sayacı toplama olayları arasındaki milisaniye sayısını belirtir. Varsayılan değer 500 ms ' dir.|  
-    |[/ sayacı](../profiling/counter.md) **:** `Config`|Yapılandırma dosyasında belirtilen işlemci performans sayacı bilgileri toplar. Sayaç bilgileri her profil olay, toplanan verilere eklenir.|  
-    |[Olayları](../profiling/events-vsperfcmd.md) **:** `Config`|Profil oluşturma sırasında toplanacak olay Windows için izleme (ETW) olayı belirtir. ETW olayları ayrı bir toplanır (. *etl*) dosyası.|  
-  
-5.  Hedef uygulama komut istemi penceresinden başlatın.  
-  
+> [!NOTE]
+>  Profil araçlarının komut satırı araçları yerleştirilir *tools\performance Araçları* Visual Studio yükleme dizininin alt. 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir. Daha fazla bilgi için [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+
+
+ Araçlar yöntemini kullanarak bir .NET Framework bileşeni bellek verileri toplamak için kullandığınız [VSInstr.exe](../profiling/vsinstr.md) aracını bileşenin belgelenmiş bir sürümünü oluşturmak için ve [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) Profil oluşturma ortamı değişkenlerini başlatmak için aracı. Ardından kullanarak profil oluşturucuyu başlatın *VSPerfCmd.exe* aracı.  
+
+ Araçlı bileşen yürütüldüğünde, bellek verileri bir veri dosyasına otomatik olarak toplanır. Duraklatma ve profil oluşturma oturumu sırasında veri koleksiyonu devam ettirin.  
+
+ Profil oluşturma oturumunu sona erdirmek için hedef uygulamayı kapatın ve açıkça profil oluşturucuyu kapatın. Çoğu durumda, bir oturumun sonunda profil oluşturma ortam değişkenlerini temizlemenizi öneririz.  
+
+## <a name="start-the-application-with-the-profiler"></a>Uygulamayı Profil Oluşturucu ile başlatma  
+
+#### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>Profil oluşturucuyu çalışan bir .NET Framework uygulamasına eklemek  
+
+1. Bir komut istemi penceresi açın.  
+
+2. Kullanım **Vsınstr** aracı hedef uygulamanın belgelenmiş bir sürümünü oluşturmak için.  
+
+3. .NET Framework'te profil oluşturma ortamı değişkenlerini başlatın. Tür:  
+
+    **VSPerfClrEnv** {**/tracegc** &#124; **/tracegclife**}  
+
+   -   **/Tracegc** ve **/tracegclife** seçenekleri sadece bellek ayırma verilerini toplamak için veya hem bellek ayırma hem de nesne ömür verilerini toplamak için ortam değişkenlerini başlatın.  
+
+       |Seçenek|Açıklama|  
+       |------------|-----------------|  
+       |**/tracegc**|Yalnızca bellek ayırma verilerinin toplanmasını etkinleştirir.|  
+       |**/tracegclife**|Hem bellek ayırma ve nesne yaşam verisi toplanmasını etkinleştirir.|  
+
+4. Profil oluşturucuyu başlatın. Tür:  
+
+    **VSPerfCmd çalıştığından/Output:** `OutputFile` [`Options`]  
+
+   - [/Start](../profiling/start.md)**: izleme** seçeneği profil oluşturucuyu başlatır.  
+
+   - [/Output](../profiling/output.md)**:** `OutputFile` ile seçeneği gereklidir **/start**. `OutputFile` Profil oluşturma verilerinin konumunu ve adını belirtir (. *Vsp*) dosyası.  
+
+     Aşağıdaki seçeneklerle dilediğinizi kullanabilirsiniz **çalıştığından** seçeneği.  
+
+   | Seçenek | Açıklama |
+   | - | - |
+   | [/ User](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | Profilli işlemin sahibi olan hesabının etki alanı ve kullanıcı adını belirtir. Bu seçenek, yalnızca oturum açan kullanıcıdan farklı bir kullanıcı olarak işlem çalışıyorsa gereklidir. İşlem sahibi kullanıcı adı sütununda listelenir **işlemleri** Windows Görev Yöneticisi'nin sekmesinde. |
+   | [/ crosssession](../profiling/crosssession.md) | Etkinleştirir, diğer oturumlarda işlemleri profil oluşturma. Bu seçenek, başka bir oturumda uygulama çalışıyorsa gereklidir. Oturum tanımlayıcısı listelenen **oturum kimliği** sütunu **işlemleri** Windows Görev Yöneticisi'nin sekmesinde. **/CS** için bir kısaltma olarak belirtilebilir **/crosssession**. |
+   | [/globaloff](../profiling/globalon-and-globaloff.md) | Profil Oluşturucu veri toplamayı başlatmak için duraklatıldı, ekleme **/globaloff** seçeneğini **/start** komut satırı. Kullanım **/globalon** profil oluşturmayı devam ettirmek için. |
+   | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Profil oluşturma sırasında Tahsil edilecek Windows performans sayacı belirtir. |
+   | [/automark](../profiling/automark.md) **:** `Interval` | İle kullanma **/wincounter** yalnızca. Windows performans sayacı toplama olayları arasındaki milisaniye sayısını belirtir. 500 ms varsayılandır. |
+   | [/ Sayaç](../profiling/counter.md) **:** `Config` | Config içerisinde belirtilen işlemci performans sayacından bilgi toplar. Sayaç bilgileri, her profil oluşturma etkinliğinde toplanan verilere eklenir. |
+   | [Olayları](../profiling/events-vsperfcmd.md) **:** `Config` | Profil oluşturma sırasında Tahsil edilecek bir olay izleme için Windows (ETW) olayı belirtir. Ayrı bir toplanan ETW olayları (. *etl*) dosyası. |
+
+
+5. Hedef uygulama komut istemi penceresinden başlatın.  
+
 ## <a name="control-data-collection"></a>Veri toplamayı denetleme  
- Hedef uygulama çalışırken, başlatma ve kullanarak verileri dosyaya yazma durdurma tarafından veri toplama denetleyebilirsiniz *VSPerfCmd.exe* seçenekleri. Veri toplama denetimi, program yürütme, başlatılıyor veya uygulama kapatılmadan gibi belirli bir bölümü için veri toplamanıza olanak sağlar.  
-  
-#### <a name="to-start-and-stop-data-collection"></a>Veri toplamayı durdurmak ve başlatmak için  
-  
--   Aşağıdaki çiftleri **VSPerfCmd** seçenekleri başlatma ve durdurma veri toplama. Her ayrı bir komut satırı seçeneğini belirtin. Veri toplama, birden çok kez açıp kapatabilirsiniz.  
-  
+ Hedef uygulama çalışırken, kullanarak verinin yazılmasını durdurmayla ve veri toplamayı kontrol edebilirsiniz *VSPerfCmd.exe* seçenekleri. Veri toplama denetimi uygulamayı kapatma veya başlatma gibi program yürütmenin özel bir bölümü için veri toplamanızı sağlar.  
+
+#### <a name="to-start-and-stop-data-collection"></a>Veri toplamayı durdurmak ve başlatmak  
+
+-   Aşağıdaki çiftleri **VSPerfCmd** seçenekleri başlatın ve veri toplamayı durdurun. Her seçeneği ayrı bir komut satırında belirtin. Veri Toplama'ı, birden çok kez açıp kapatabilirsiniz.  
+
     |Seçenek|Açıklama|  
     |------------|-----------------|  
-    |[/globalon](../profiling/globalon-and-globaloff.md) [/globaloff](../profiling/globalon-and-globaloff.md)|Başlatır (**/globalon**) veya durdurulduğunda (**/globaloff**) tüm işlemler için veri toplama.|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Başlatır (**/processon**) veya durdurulduğunda (**/processoff**) işlem kimliği tarafından belirtilen işlem için veri toplama (`PID`).|  
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Başlatır (**/threadon**) veya durdurulduğunda (**/threadoff**) Kimlikli iş parçacığı tarafından belirtilen iş parçacığı için veri toplama (`TID`).|  
-  
+    |[/ globalon](../profiling/globalon-and-globaloff.md) [/globaloff](../profiling/globalon-and-globaloff.md)|Başlar (**/globalon**) veya durdurur (**/globaloff**) tüm işlemler için veri toplama.|  
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Başlar (**/processon**) veya durdurur (**/processoff**) işlem kimliği tarafından belirtilen işlem için veri toplamayı (`PID`).|  
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Başlar (**/threadon**) veya durdurur (**/threadoff**) veri toplama iş parçacığı kimliği tarafından belirtilen iş parçacığı için (`TID`).|  
+
 ## <a name="end-the-profiling-session"></a>Profil oluşturma oturumunu sona erdirme  
- Profil oluşturma oturumu sona erdirmek için izleme eklenmiş bileşenini çalıştıran uygulamayı kapatın ve ardından arama **VSPerfCmd** [shutdown](../profiling/shutdown.md) profil oluşturucu devre dışı bırakma ve profil oluşturma veri dosyası kapatmak için seçeneği. **VSPerfClrEnv / kapalı** komutu profil ortam değişkenleri temizler.  
-  
-#### <a name="to-end-a-profiling-session"></a>Profil oluşturma oturumu sona erdirmek için  
-  
+ Profil oluşturma oturumunu sona erdirmek için Araçlı bileşeni çalıştıran uygulamayı kapatın ve sonra çağrı **VSPerfCmd** [/shutdown](../profiling/shutdown.md) profil oluşturucuyu devre dışı bırakırsınız ve profil oluşturma veri dosyasını kapatırsınız. **VSPerfClrEnv / off** komutu profil oluşturma ortam değişkenlerini temizler.  
+
+#### <a name="to-end-a-profiling-session"></a>Profil oluşturma oturumunu sona erdirmek için  
+
 1.  Hedef uygulamayı kapatın.  
-  
-2.  Profil Oluşturucu kapatın. Tür:  
-  
-     **VSPerfCmd Shutdown**  
-  
-3.  (İsteğe bağlı) Profil oluşturma ortam değişkenleri temizleyin. Tür:  
-  
-     **VSPerfCmd / kapalı**  
-  
+
+2.  Profil oluşturucuyu kapatın. Tür:  
+
+     **VSPerfCmd/Shutdown**  
+
+3.  (İsteğe bağlı) Profil oluşturma ortam değişkenlerini temizleyin. Tür:  
+
+     **VSPerfCmd / kapatma**  
+
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Bağımsız uygulamalar profili](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [.NET bellek verisi görünümleri](../profiling/dotnet-memory-data-views.md)

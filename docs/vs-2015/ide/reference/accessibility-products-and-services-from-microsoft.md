@@ -24,12 +24,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f8f16fdd837b266bfcc04f7e35cfbadd12a14fa5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96ad41ff6cec9a03c8d57905427dbdf45b5b4ed9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215780"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826992"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft'tan Erişilebilirlik Ürünleri ve Hizmetleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -75,11 +75,11 @@ Microsoft ürünlerinin ve hizmetlerinin kullanımını herkes için daha kolay 
 ##  <a name="hearing"></a> İşitme zorluğu yaşayan kişiler için Müşteri Hizmetleri  
  İşitme engelliyseniz veya işitme varsa, Microsoft Ürün ve müşteri hizmetlerine tam erişim metin telefonu (TTY/TDD) hizmeti aracılığıyla kullanılabilir:  
   
--   Müşteri Hizmetleri için Microsoft Sales Information tatiller hariç Center (800) 892-5234-17:30 Pasifik saati, Pazartesi-Cuma 6:30 AM arasındaki en başvurun.  
+- Müşteri Hizmetleri için Microsoft Sales Information tatiller hariç Center (800) 892-5234-17:30 Pasifik saati, Pazartesi-Cuma 6:30 AM arasındaki en başvurun.  
   
--   ABD'de Teknik Yardım için Microsoft Ürün Destek tatiller hariç Hizmetleri (800) 892-5234 6: 00'te Pasifik saati, Pazartesi-Cuma 6: 00'da arasındaki en başvurun. Kanada'da, tatiller hariç olmak üzere 8:00 AM ve 8:00 Doğu saati, Pazartesi-Cuma günleri arasında (905) 568-9641 çevirin.  
+- ABD'de Teknik Yardım için Microsoft Ürün Destek tatiller hariç Hizmetleri (800) 892-5234 6: 00'te Pasifik saati, Pazartesi-Cuma 6: 00'da arasındaki en başvurun. Kanada'da, tatiller hariç olmak üzere 8:00 AM ve 8:00 Doğu saati, Pazartesi-Cuma günleri arasında (905) 568-9641 çevirin.  
   
- Microsoft Destek Hizmetleri hizmetin kullanıldığı zaman fiyatları, hüküm ve koşullara tabi bağlıdır.  
+  Microsoft Destek Hizmetleri hizmetin kullanıldığı zaman fiyatları, hüküm ve koşullara tabi bağlıdır.  
   
 ##  <a name="moreinfo"></a> Daha fazla bilgi için  
  Nasıl erişilebilir teknolojinin engelli kişilerin yaşamlarını geliştirmeye yardımcı bilgisayarlar hakkında daha fazla bilgi için bkz. [Microsoft Erişilebilirlik Web sitesi](http://go.microsoft.com/fwlink/?LinkId=8431).  

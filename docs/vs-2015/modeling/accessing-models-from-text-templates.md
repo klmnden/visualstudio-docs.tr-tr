@@ -14,12 +14,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7ad3d921de04c3fd612571a55d012588793b91db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f311018197040c0c908964a49f63ab130121c8c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257198"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919864"
 ---
 # <a name="accessing-models-from-text-templates"></a>Metin Şablonlarından Modellere Erişme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Metin şablonları kullanarak rapor dosyaları, kaynak kodu dosyaları ve etki a
   
  Bir model bir metin şablonundan erişmek için:  
   
--   Şablon yönergesi için devral özelliğini <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. Bu, Store için erişim sağlar.  
+- Şablon yönergesi için devral özelliğini <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. Bu, Store için erişim sağlar.  
   
--   Yönerge işlemcileri, erişmek istediğiniz DSL için belirtin. Bu, böylece kendi etki alanı sınıfları, özellikleri ve ilişkileri metin şablonunuzu kodda kullanabilirsiniz DSL'nizi için derlemeleri yükler. Ayrıca, belirttiğiniz model dosyası yükler.  
+- Yönerge işlemcileri, erişmek istediğiniz DSL için belirtin. Bu, böylece kendi etki alanı sınıfları, özellikleri ve ilişkileri metin şablonunuzu kodda kullanabilirsiniz DSL'nizi için derlemeleri yükler. Ayrıca, belirttiğiniz model dosyası yükler.  
   
- A `.tt` dosyası aşağıdaki örneğe benzer, hata ayıklama projede oluşturulursa, yeni bir oluşturduğunuzda [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] DSL Minimal dil şablondan çözüm.  
+  A `.tt` dosyası aşağıdaki örneğe benzer, hata ayıklama projede oluşturulursa, yeni bir oluşturduğunuzda [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] DSL Minimal dil şablondan çözüm.  
   
 ```  
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>  
@@ -97,11 +97,11 @@ Here is a list of elements in the model:
   
  Şunlara dikkat edin:  
   
-1.  `filename` Ve `validation` parametreleri ile ayrılmış ";" ve diğer ayırıcı veya boşluk olması gerekir.  
+1. `filename` Ve `validation` parametreleri ile ayrılmış ";" ve diğer ayırıcı veya boşluk olması gerekir.  
   
-2.  Doğrulama kategori listesi, hangi doğrulama yöntemlerinin yürütülecek belirler. Birden çok kategori ile ayrılmalıdır "&#124;" ve diğer ayırıcı veya boşluk olması gerekir.  
+2. Doğrulama kategori listesi, hangi doğrulama yöntemlerinin yürütülecek belirler. Birden çok kategori ile ayrılmalıdır "&#124;" ve diğer ayırıcı veya boşluk olması gerekir.  
   
- Bir hata bulunursa hataları penceresinde bildirilir ve sonuç dosyası bir hata iletisi içerir.  
+   Bir hata bulunursa hataları penceresinde bildirilir ve sonuç dosyası bir hata iletisi içerir.  
   
 ##  <a name="Multiple"></a> Bir metin şablonundan birden çok modellere erişme  
   

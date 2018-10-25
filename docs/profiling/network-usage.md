@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a8698c3402fdbbd4daa3e132b1455d722b40ef1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d620ae0f93b2bbcee66419cfe9ff5e76e470c5f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676756"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918889"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>UWP uygulamalarında ağ kullanımını analiz etme
 Visual Studio **ağ** Tanılama aracını kullanarak gerçekleştirilen ağ işlemleri hakkındaki verileri toplar [Windows.Web.Http API](/uwp/api/windows.web.http). Verileri çözümleme, erişim ve kimlik doğrulaması ile ilgili sorunlar, yanlış önbellek kullanımı ve görüntü gibi sorunları çözmek ve indirme performansını yardımcı olabilir.  
@@ -28,19 +28,19 @@ Visual Studio **ağ** Tanılama aracını kullanarak gerçekleştirilen ağ işl
 ## <a name="collect-network-tool-data"></a>Ağ aracı verilerini topla  
  Çalıştırmalısınız **ağ** aracı ile Visual Studio bilgisayarda açık bir Visual Studio projesi.  
   
-1.  Projeyi Visual Studio'da açın.  
+1. Projeyi Visual Studio'da açın.  
   
-2.  Menüsünde **hata ayıklama / performans Profiler**. Seçin **ağ**ve ardından **Başlat**.  
+2. Menüsünde **hata ayıklama / performans Profiler**. Seçin **ağ**ve ardından **Başlat**.  
   
-3.  Ağ aracına, uygulamanızın HTTP trafiğini toplamaya başlar.  
+3. Ağ aracına, uygulamanızın HTTP trafiğini toplamaya başlar.  
   
-     Uygulamanızı çalıştırma gibi Özet görünümü sol bölmesinde otomatik olarak yakalanan HTTP işlemlerini listesini görüntüler. Özet görünümünde ayrıntılar bölmesini sağ bölmede, daha fazla bilgi görmek için bir öğe seçin.  
+    Uygulamanızı çalıştırma gibi Özet görünümü sol bölmesinde otomatik olarak yakalanan HTTP işlemlerini listesini görüntüler. Özet görünümünde ayrıntılar bölmesini sağ bölmede, daha fazla bilgi görmek için bir öğe seçin.  
   
-4.  Seçin **Durdur** uygulamayı kapatmak için.  
+4. Seçin **Durdur** uygulamayı kapatmak için.  
   
- Rapor penceresini aşağıdaki gibi görünmelidir:  
+   Rapor penceresini aşağıdaki gibi görünmelidir:  
   
- ![Ağ pencerenin](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
+   ![Ağ pencerenin](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyze-data"></a>Verileri analiz etme  
  Uygulamanız çalışırken veya bile uygulama, Özet görünümünde görüntülenen ağ işlemlerden birini seçerek kapatıldıktan sonra yakalanan HTTP trafiği analiz edebilirsiniz.  

@@ -20,32 +20,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b2d9f8a585b6a9353c9e64cf03b0876e5324a539
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a90355a21fb525b108987ca565689867904ae6b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258807"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881761"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>İzlenecek yol: çalışma zamanında Şerit denetimlerini güncelleştirme
-  Bu anlatımda Şerit nesne modeline Şerit Office uygulamasına yüklendikten sonra bir Şerit denetimlerini güncellemek için nasıl kullanılacağı gösterilir.  
+  Bu yönerge, Şerit nesne modeline Şerit Office uygulamasına yüklendikten sonra Şerit denetimlerini güncelleştirme için nasıl kullanılacağını gösterir.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
- Örnek bir birleşik giriş kutusu ve Microsoft Office Outlook menüde doldurmak için Northwind örnek veritabanı veri çeker. Bu denetimlerin otomatik olarak seçtiğiniz öğeler doldurmak alanları gibi **için** ve **konu** bir e-posta iletisi.  
+ Örneğin, Northwind örnek veritabanıyla kurulan bir birleşik giriş kutusu ve Microsoft Office Outlook menüde doldurmak için veri çeker. Bu denetimleri otomatik olarak seçtiğiniz öğeler doldurmak alanları gibi **için** ve **konu** bir e-posta iletisi.  
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
--   Yeni bir Outlook VSTO eklenti projesi oluşturun.  
+-   Yeni bir Outlook VSTO eklentisi projesi oluşturun.  
   
--   Özel Şerit grubu tasarlayın.  
+-   Özel Şerit grubuna tasarlayın.  
   
--   Özel bir grup için yerleşik bir sekmeyi ekleyin.  
+-   Özel bir grup yerleşik bir sekmeyi ekleyin.  
   
 -   Çalışma zamanında Şerit üzerindeki denetimleri güncelleştirin.  
   
 > [!NOTE]  
->  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).  
+>  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
@@ -54,201 +54,201 @@ ms.locfileid: "35258807"
   
 -   Microsoft Outlook  
   
-## <a name="create-a-new-outlook-vsto-add-in-project"></a>Yeni bir Outlook VSTO eklenti projesi oluşturma  
- İlk olarak, bir Outlook VSTO eklenti projesi oluşturun.  
+## <a name="create-a-new-outlook-vsto-add-in-project"></a>Yeni bir Outlook VSTO eklentisi projesi oluşturun  
+ İlk olarak bir Outlook VSTO eklentisi projesi oluşturun.  
   
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Yeni bir Outlook VSTO eklenti projesi oluşturmak için  
   
-1.  İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Outlook VSTO eklenti projesindeki adlı oluşturun **Çalışma_Zamanında_Şerit_Güncelleme**.  
+1.  İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Outlook VSTO eklenti projesinde adlı oluşturun **Çalışma_Zamanında_Şerit_Güncelleme**.  
   
 2.  İçinde **yeni proje** iletişim kutusunda **çözüm için dizin oluştur**.  
   
-3.  Projeyi varsayılan proje dizinine kaydedin.  
+3.  Projenin varsayılan proje dizinine kaydedin.  
   
-     Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Daha fazla bilgi için [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-## <a name="design-a-custom-ribbon-group"></a>Özel Şerit grubu tasarlama  
- Bir kullanıcı yeni bir posta iletisi yazdığında bu örnek için Şerit görünür. Şerit için özel bir grup oluşturmak için önce bir Şerit öğesi projenize ekleyin ve Şerit Tasarımcısı grubunda tasarım. Bu özel grup adları çekerek müşterilere izleme e-posta iletileri oluşturabilir ve veritabanından geçmişlerini sipariş yardımcı olur.  
+## <a name="design-a-custom-ribbon-group"></a>Özel Şerit grubuna tasarlama  
+ Bir kullanıcı yeni bir posta iletisi yazdığında, bu örnek için Şerit görünür. Şerit için özel bir grup oluşturmak için öncelikle bir Şerit öğesi projenize ekleyin ve ardından grubun Şerit Tasarımcısında tasarım. Bu özel grup adları çekerek müşterilere takip e-posta iletilerini oluşturmak ve veritabanı geçmişleri sipariş yardımcı olur.  
   
 ### <a name="to-design-a-custom-group"></a>Özel bir grup tasarlamak için  
   
-1.  Üzerinde **proje** menüsünde tıklatın **Yeni Öğe Ekle**.  
+1.  Üzerinde **proje** menüsünü tıklatın **Yeni Öğe Ekle**.  
   
 2.  İçinde **Yeni Öğe Ekle** iletişim kutusunda **Şerit (Görsel Tasarımcı)**.  
   
-3.  Yeni Şerit adını değiştirmek **CustomerRibbon**ve ardından **Ekle**.  
+3.  Yeni Şeridin adını değiştirmek **CustomerRibbon**ve ardından **Ekle**.  
   
      *CustomerRibbon.cs* veya *CustomerRibbon.vb* dosyası Şerit Tasarımcısı'nda açılır ve varsayılan bir sekme ve grup görüntüler.  
   
-4.  Şerit Tasarımcısı seçmek için tıklatın.  
+4.  Şerit Tasarımcısı seçmek için tıklayın.  
   
 5.  İçinde **özellikleri** penceresinde, aşağı açılan oku tıklatın **RibbonType** özelliği ve ardından **Microsoft.Outlook.Mail.Compose**.  
   
-     Bu kullanıcı Outlook içinde yeni bir posta iletisi yazdığında Şerit sağlar.  
+     Bu kullanıcı Outlook'ta yeni bir posta iletisi yazdığında Şerit sağlar.  
   
 6.  Şerit Tasarımcısı'nda tıklatın **Group1** seçin.  
   
-7.  İçinde **özellikleri** penceresindeki ayarlayın **etiket** için **Müşteri Harcamaları**.  
+7.  İçinde **özellikleri** penceresinde **etiket** için **Müşteri satın alımları**.  
   
-8.  Gelen **Office Şerit denetimleri** sekmesinde **araç**, sürükleyin bir **ComboBox** üzerine **Müşteri Harcamaları** grubu.  
+8.  Gelen **Office Şerit denetimleri** sekmesinde **araç kutusu**, sürükleyin bir **ComboBox** üzerine **Müşteri satın alımları** grubu.  
   
-9. Tıklatın **ComboBox1** seçin.  
+9. Tıklayın **ComboBox1** seçin.  
   
-10. İçinde **özellikleri** penceresindeki ayarlayın **etiket** için **müşteriler**.  
+10. İçinde **özellikleri** penceresinde **etiket** için **müşteriler**.  
   
-11. Gelen **Office Şerit denetimleri** sekmesinde **araç**, sürükleyin bir **menü** üzerine **Müşteri Harcamaları** grubu.  
+11. Gelen **Office Şerit denetimleri** sekmesinde **araç kutusu**, sürükleyin bir **menü** üzerine **Müşteri satın alımları** grubu.  
   
-12. İçinde **özellikleri** penceresindeki ayarlayın **etiket** için **ürün satın**.  
+12. İçinde **özellikleri** penceresinde **etiket** için **ürün satın**.  
   
-13. Ayarlama **dinamik** için **doğru**.  
+13. Ayarlama **dinamik** için **true**.  
   
-     Bu ekleyin ve Şerit Office uygulamasına yüklendikten sonra denetimlerini çalışma zamanında menüsünde kaldırmanızı sağlar.  
+     Bu, ekleme ve denetimler menüsünden çalışma zamanında Şerit Office uygulamasına yüklendikten sonra kaldırma sağlar.  
   
-## <a name="add-the-custom-group-to-a-built-in-tab"></a>Yerleşik bir sekmeyi özel Grup Ekle  
- Yerleşik bir sekmeyi bir Outlook Explorer veya denetçisinin Şerit üzerinde zaten var olan sekme olarak kullanılır. Bu yordamda, yerleşik bir sekmeyi özel grubunu ekleyin ve ardından sekmesinde özel grup konumunu belirtin.  
+## <a name="add-the-custom-group-to-a-built-in-tab"></a>Yerleşik bir sekmeyi özel grup ekleme  
+ Yerleşik bir sekmeyi bir Outlook Gezgini veya denetçisinin Şerit üzerinde zaten var olan bir sekmedir. Bu yordamda, özel bir grup yerleşik bir sekmeyi ekleyin ve sonra sekmede özel grubu konumunu belirtin.  
   
-### <a name="to-add-the-custom-group-to-a-built-in-tab"></a>Yerleşik bir sekmeyi özel grup eklemek için  
+### <a name="to-add-the-custom-group-to-a-built-in-tab"></a>Yerleşik bir sekmeyi özel bir grup eklemek için  
   
-1.  Tıklatın **TabAddins (yerleşik)** sekmesini seçin.  
+1.  Tıklayın **TabAddins (yerleşik)** seçmek için sekmesinde.  
   
-2.  İçinde **özellikleri** penceresinde genişletin **ControlId** özelliğini ayarlayın ve ardından **OfficeId** için **TabNewMailMessage**.  
+2.  İçinde **özellikleri** penceresini genişletin **ControlId** özelliği ve ardından **OfficeId** için **TabNewMailMessage**.  
   
-     Bu ekler **Müşteri Harcamaları** grubunu **iletileri** yeni bir posta iletisi içinde görünür Şerit sekmesi.  
+     Bu ekler **Müşteri satın alımları** grubunu **iletileri** yeni bir posta iletisi içinde görüntülenen bir Şerit sekmesinde.  
   
-3.  Tıklatın **Müşteri Harcamaları** grubu seçin.  
+3.  Tıklayın **Müşteri satın alımları** grubu seçin.  
   
-4.  İçinde **özellikleri** penceresinde genişletin **konumu** özelliği, açılan oku tıklatın **PositionType** özelliği ve ardından  **BeforeOfficeId**.  
+4.  İçinde **özellikleri** penceresinde genişletin **konumu** özelliğinin yanındaki açılan oka tıklayın **PositionType** özelliği ve ardından  **BeforeOfficeId**.  
   
-5.  Ayarlama **OfficeId** özelliğine **GroupClipboard**.  
+5.  Ayarlama **OfficeId** özelliğini **GroupClipboard**.  
   
-     Bu konumlandırır **Müşteri Harcamaları** önce Grup **Pano** grubunu **iletileri** sekmesi.  
+     Bu konumlandırır **Müşteri satın alımları** önce Grup **Pano** grubunu **iletileri** sekmesi.  
   
-## <a name="create-the-data-source"></a>Veri kaynağı oluşturun  
- Kullanım **veri kaynakları** penceresi türü belirtilmiş veri kümesi projenize ekleyin.  
+## <a name="create-the-data-source"></a>Veri kaynağı oluşturma  
+ Kullanım **veri kaynakları** penceresinin bir türü belirtilmiş veri kümesi projenize ekleyin.  
   
 ### <a name="to-create-the-data-source"></a>Veri kaynağı oluşturmak için  
   
-1.  Üzerinde **veri** menüsünde tıklatın **yeni veri kaynağı Ekle**.  
+1.  Üzerinde **veri** menüsünü tıklatın **yeni veri kaynağı Ekle**.  
   
      Bu başlatır **veri kaynağı Yapılandırma Sihirbazı**.  
   
 2.  Seçin **veritabanı**ve ardından **sonraki**.  
   
-3.  Seçin **Dataset**ve ardından **sonraki**.  
+3.  Seçin **veri kümesi**ve ardından **sonraki**.  
   
-4.  Northwind örnek Microsoft SQL Server Compact 4.0 veritabanı veri bağlantısı seçin veya yeni bir bağlantı kullanarak eklemek **yeni bağlantı** düğmesi.  
+4.  Northwind örnek Microsoft SQL Server Compact 4.0 veritabanını bir veri bağlantısı seçin veya yeni bir bağlantı kullanarak eklemek **yeni bağlantı** düğmesi.  
   
-5.  Bir bağlantı seçili veya oluşturulduktan sonra tıklayın **sonraki**.  
+5.  Bağlantı seçili veya oluşturulduktan sonra tıklayın **sonraki**.  
   
-6.  Tıklatın **sonraki** bağlantı dizesini kaydetmek için.  
+6.  Tıklayın **sonraki** bağlantı dizesini kaydedin.  
   
-7.  Üzerinde **veritabanı nesnelerinizi** sayfasında **tabloları**.  
+7.  Üzerinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları**.  
   
-8.  Aşağıdaki tablolarda her yanındaki onay kutusunu seçin:  
+8.  Aşağıdaki tabloların her biri yanındaki onay kutusunu seçin:  
   
     1.  **Müşteriler**  
   
-    2.  **Sipariş ayrıntılarını**  
+    2.  **Sipariş Ayrıntıları**  
   
-    3.  **Siparişleri**  
+    3.  **Siparişler**  
   
-    4.  **Ürünler**  
+    4.  **Ürünler  
   
 9. **Son**'a tıklayın.  
   
-## <a name="update-controls-in-the-custom-group-at-runtime"></a>Çalışma zamanında özel grup denetimlerini güncelleştirme  
- Şerit nesne modeli, aşağıdaki görevleri gerçekleştirmek için kullanın:  
+## <a name="update-controls-in-the-custom-group-at-runtime"></a>Özel grup çalışma zamanında güncelleştirme denetimleri  
+ Şerit nesne modeline, aşağıdaki görevleri gerçekleştirmek için kullanın:  
   
 -   Müşteri adları Ekle **müşteriler** birleşik giriş kutusu.  
   
--   Menü ve düğme denetimleri ekleme **satın alınan ürünler** siparişler ve ürünleri temsil eden menü satılan.  
+-   Menü ve düğme denetimleri ekleme **satın alınan ürünlerle** satış orders ve products temsil eden bir menü satılır.  
   
--   Kime, konu ve gövde doldurmak verileri kullanarak yeni posta iletileri alanlarının **müşteriler** birleşik giriş kutusu ve **satın alınan ürünler** menüsü.  
+-   Kime, konu ve gövde doldurmak verileri kullanarak yeni e-posta iletileri alanlarının **müşteriler** birleşik giriş kutusu ve **satın alınan ürünlerle** menüsü.  
   
-### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>Şerit nesne modelini kullanarak özel grup denetimlerini güncelleştirmek için  
+### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>Şerit nesne modelini kullanarak özel grup denetimleri güncelleştirmek için  
   
-1.  Üzerinde **proje** menüsünde tıklatın **Başvuru Ekle**.  
+1. Üzerinde **proje** menüsünü tıklatın **Başvuru Ekle**.  
   
-2.  İçinde **Başvuru Ekle** iletişim kutusu, tıklatın **.NET** sekmesine **System.Data.Linq** derleme ve ardından **Tamam**.  
+2. İçinde **Başvuru Ekle** iletişim kutusu, tıklayın **.NET** sekmesinde **System.Data.Linq** derleme ve ardından **Tamam**.  
   
-     Bu derleme dil ile tümleşik sorgu (LINQ) kullanmak için sınıflar içerir. Northwind veritabanı verileriyle özel grup denetimlerini doldurmak için LINQ kullanır.  
+    Bu derleme, dil ile tümleşik sorgu (LINQ) kullanmak için sınıflar içerir. LINQ denetimleri özel grup Northwind veritabanındaki verilerle doldurmak için kullanın.  
   
-3.  İçinde **Çözüm Gezgini**, tıklatın **CustomerRibbon.cs** veya **CustomerRibbon.vb** seçin.  
+3. İçinde **Çözüm Gezgini**, tıklayın **CustomerRibbon.cs** veya **CustomerRibbon.vb** seçin.  
   
-4.  Üzerinde **Görünüm** menüsünde tıklatın **kod**.  
+4. Üzerinde **görünümü** menüsünde tıklatın **kod**.  
   
-     Şerit kod dosyası Kod Düzenleyicisi'nde açılır.  
+    Kod Düzenleyicisi'nde Şerit kod dosyasını açar.  
   
-5.  Aşağıdaki deyimleri Şerit kod dosyasının üstüne ekleyin. Bu deyimler LINQ ad alanları ve Outlook birincil birlikte çalışma derlemesi (PIA) ad alanı için kolay erişim sağlar.  
+5. Şerit kod dosyasının en üstüne aşağıdaki deyimleri ekleyin. Bu deyimler, LINQ ad alanları ve Outlook birincil birlikte çalışma derlemesi (PIA) ad alanı için kolay erişim sağlar.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]  
+    [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
+    [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]  
   
-6.  Aşağıdaki kodu ekleyin `CustomerRibbon` sınıfı. Bu kod, müşteri, siparişler, sipariş ayrıntılarını ve ürün tablolarında Northwind veritabanı bilgileri depolamak için kullanacağı tablo bağdaştırıcıları ve veri tablosu bildirir.  
+6. Aşağıdaki kodu ekleyin `CustomerRibbon` sınıfı. Bu kod, veri tablosu ve müşteri, siparişler, sipariş ayrıntılarını ve ürün tabloları Northwind veritabanının bilgileri depolamak için kullanacağı tablo bağdaştırıcıları bildirir.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]  
+    [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
+    [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]  
   
-7.  Aşağıdaki kod bloğunu ekleyin `CustomerRibbon` sınıfı. Bu kod Şerit denetimlerini çalışma zamanında oluşturma üç yardımcı yöntemler ekler.  
+7. Aşağıdaki kod bloğunu ekleyin `CustomerRibbon` sınıfı. Bu kod, Şerit denetimlerini çalışma zamanında oluşturma üç yardımcı yöntemler ekler.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#3)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#3)]  
+    [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#3)]
+    [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#3)]  
   
-8.  Değiştir `CustomerRibbon_Load` olay işleyicisi yöntemini aşağıdaki kodla. Bu kod, aşağıdaki görevleri gerçekleştirmek için bir LINQ sorgusu kullanır:  
+8. Değiştirin `CustomerRibbon_Load` olay işleyicisi yöntemini aşağıdaki kodla. Bu kod, aşağıdaki görevleri gerçekleştirmek için bir LINQ Sorgu kullanır:  
   
-    -   Doldurmak **müşteriler** Northwind veritabanında 20 müşterinin adını ve kimlik Numarasını kullanarak birleşik giriş kutusu.  
+   - Doldurma **müşteriler** Northwind veritabanındaki kimliği ve 20 müşteriniz adını kullanarak birleşik giriş kutusu.  
   
-    -   Çağrıları `PopulateSalesOrderInfo` yardımcı yöntemi. Bu yöntem güncelleştirmeleri **AlınanÜrünler** menüsü, şu anda seçili müşteriye ait sipariş numarası.  
+   - Çağrıları `PopulateSalesOrderInfo` yardımcı yöntemi. Bu yöntem güncelleştirmeleri **AlınanÜrünler** şu anda seçilen müşteriye ait satış siparişi sayılarla menüsü.  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#4)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#4)]  
   
-9. Aşağıdaki kodu ekleyin `CustomerRibbon` sınıfı. Bu kod, aşağıdaki görevleri gerçekleştirmek için LINQ sorgularını kullanır:  
+9. Aşağıdaki kodu ekleyin `CustomerRibbon` sınıfı. Bu kod, aşağıdaki görevleri gerçekleştirmek için LINQ sorguları kullanır:  
   
-    -   Bir menüye ekler **AlınanÜrünler** her sipariş için menüsü seçili müşteriye ilgili.  
+   - Bir menüye ekler **AlınanÜrünler** her satış siparişi menüsünü ise seçili müşterilerle ilgili.  
   
-    -   Her alt ilgili satış sipariş ürünleri için düğmeler ekler.  
+   - Her alt satış siparişine ilgili ürünler için düğmeler ekler.  
   
-    -   Olay işleyicileri her düğmeye ekler.  
+   - Olay işleyicileri için her bir düğme ekler.  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#6)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#6)]  
   
 10. İçinde **Çözüm Gezgini**, Şerit kod dosyasına çift tıklayın.  
   
-     Şerit Tasarımcısı'nı açar.  
+     Şerit Tasarımcısı açılır.  
   
 11. Şerit Tasarımcısı'nda çift **müşteriler** birleşik giriş kutusu.  
   
-     Kod Düzenleyicisi'nde Şerit kod dosyasını açar ve `ComboBox1_TextChanged` olay işleyicisi görüntülenir.  
+     Kod Düzenleyicisi'nde Şerit kod dosyasını açar ve `ComboBox1_TextChanged` olay işleyicisi görünür.  
   
-12. Değiştir `ComboBox1_TextChanged` aşağıdaki kod ile olay işleyicisi. Bu kod aşağıdaki görevleri gerçekleştirir:  
+12. Değiştirin `ComboBox1_TextChanged` aşağıdaki kod ile olay işleyicisi. Bu kod aşağıdaki görevleri gerçekleştirir:  
   
-    -   Çağrıları `PopulateSalesOrderInfo` yardımcı yöntemi. Bu yöntem güncelleştirmeleri **satın alınan ürünler** seçili müşteriye ilişkili satış siparişleri menüsü.  
+    - Çağrıları `PopulateSalesOrderInfo` yardımcı yöntemi. Bu yöntem güncelleştirmeleri **satın alınan ürünlerle** ise seçili müşterilerle ilgili Siparişler menüsü.  
   
-    -   Çağrıları `PopulateMailItem` yardımcı yöntem ve seçili müşteri adı geçerli bir metin geçirir. Bu yöntem için konu ve gövde doldurur yeni posta iletisinin alanları.  
+    - Çağrıları `PopulateMailItem` yardımcı yöntem ve Seçilen müşteri adı geçerli metin geçirir. Bu yöntem Kime, konu ve gövde doldurur yeni posta iletileri alanları.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#5)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#5)]  
+      [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#5)]
+      [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#5)]  
   
-13. Aşağıdakileri ekleyin `Click` olay işleyicisine `CustomerRibbon` sınıfı. Bu kod seçili ürünlerin adını yeni posta iletisinin gövdesi alan ekler.  
+13. Aşağıdaki `Click` olay işleyicisine `CustomerRibbon` sınıfı. Bu kod, yeni e-posta iletisinin gövdesi alanına seçili ürünlerin adını ekler.  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#8)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#8)]  
   
 14. Aşağıdaki kodu ekleyin `CustomerRibbon` sınıfı. Bu kod aşağıdaki görevleri gerçekleştirir:  
   
-    -   Yeni posta iletisinin Kime satırında, şu anda seçili müşteri e-posta adresini kullanarak doldurur.  
+    - Şu anda seçili müşteri e-posta adresini kullanarak yeni bir e-posta iletisinin Kime satırına doldurur.  
   
-    -   Metin yeni posta iletisinin konu ve gövde alanlara ekler.  
+    - Yeni e-posta iletisinin konu ve gövde alanlara metin ekler.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#7)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#7)]  
+      [!code-csharp[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#7)]
+      [!code-vb[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#7)]  
   
-## <a name="test-the-controls-in-the-custom-group"></a>Özel grup denetimlerini test  
- Outlook içinde yeni bir posta formu açtığınızda, özel bir grup adlı **Müşteri Harcamaları** kasasındaki **iletileri** Şerit sekmesi.  
+## <a name="test-the-controls-in-the-custom-group"></a>Özel grup denetimleri test  
+ Outlook'ta yeni bir posta formu açtığınızda özel bir grup adlı **Müşteri satın alımları** görünür **iletileri** Şerit sekmesi.  
   
- Bir müşteri izleme e-posta iletisi oluşturmak üzere bir müşteri seçin ve sonra müşteri tarafından alınan ürünleri seçin. Denetimleri **Müşteri Harcamaları** Grup Northwind veritabanı verilerle çalışma zamanında güncelleştirilir.  
+ Bir müşteri takip e-posta iletisi oluşturmak için bir müşteri seçin ve ardından müşteri tarafından satın alınan ürünleri seçin. Denetimlerde **Müşteri satın alımları** Grup çalışma zamanında Northwind veritabanındaki verilerle güncelleştirilir.  
   
 ### <a name="to-test-the-controls-in-the-custom-group"></a>Özel grup denetimleri sınamak için  
   
@@ -256,41 +256,41 @@ ms.locfileid: "35258807"
   
      Outlook'u başlatır.  
   
-2.  Outlook'ta, üzerinde **dosya** menüsündeki **yeni**ve ardından **posta iletisi**.  
+2.  Outlook'ta, üzerinde **dosya** menüsünde **yeni**ve ardından **posta iletisi**.  
   
      Aşağıdaki eylemler gerçekleşir:  
   
     -   Yeni bir posta iletisi Inspector penceresi görünür.  
   
-    -   Üzerinde **ileti** Şerit sekmesi **Müşteri Harcamaları** grup görünür önce **Pano** grubu.  
+    -   Üzerinde **ileti** Şerit sekmesinde **Müşteri satın alımları** grup görünür önce **Pano** grubu.  
   
-    -   **Müşteriler** grubunda birleşik giriş kutusunu Northwind veritabanı müşteriler adlarıyla güncelleştirilir.  
+    -   **Müşteriler** grubu birleşik giriş kutusunda, Northwind veritabanındaki müşteriler adları ile güncelleştirilir.  
   
-3.  Üzerinde **ileti** Şerit sekmesi, **Müşteri Harcamaları** grubunda, müşteriden seçin **müşteriler** birleşik giriş kutusu.  
+3.  Üzerinde **ileti** Şerit sekmesinde, **Müşteri satın alımları** grubunda, müşteriden seçin **müşteriler** birleşik giriş kutusu.  
   
      Aşağıdaki eylemler gerçekleşir:  
   
-    -   **Satın alınan ürünler** menüsü seçili müşteri için her sipariş göstermek üzere güncelleştirilir.  
+    -   **Satın alınan ürünlerle** menüsünde, Seçilen müşteri için her bir satış siparişi göstermek için güncelleştirilir.  
   
-    -   Her sipariş alt o sırada satın ürünleri göstermek üzere güncelleştirilir.  
+    -   Her bir satış siparişi alt, o sırada satın alınan ürünleri göstermek için güncelleştirilir.  
   
-    -   Seçili müşterinin e-posta adresine eklenen **için** posta iletisi ve konu ve gövde posta iletisinin satırlık metin ile doldurulur.  
+    -   Seçilen müşteri e-posta adresine eklenen **için** posta iletisi konu ve e-posta iletisinin gövdesi, satır metin ile doldurulur.  
   
-4.  Tıklatın **ürünleri satın alma işlemleri** menüsünde noktası herhangi bir satış siparişi ve satış siparişi üründen'ye tıklayın.  
+4.  Tıklayın **ürünler satın alma işlemleri** menüsünden herhangi bir satış siparişinin noktası ve bir ürün satış siparişi'ye tıklayın.  
   
-     Ürün adı posta iletisinin gövdesine eklenir.  
+     Ürün adı, e-posta iletisinin gövdesine eklenir.  
   
 ## <a name="next-steps"></a>Sonraki adımlar  
- Aşağıdaki konulardan Office kullanıcı arabirimini özelleştirme hakkında daha fazla bilgi edinebilirsiniz:  
+ Aşağıdaki konulardan Office UI özelleştirme hakkında daha fazla bilgi edinebilirsiniz:  
   
--   Bağlam tabanlı UI hiçbir belge düzeyi özelleştirme ekleyin. Daha fazla bilgi için bkz: [Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md).  
+-   Tüm belge düzeyi özelleştirmesine Bağlam tabanlı UI ekleyin. Daha fazla bilgi için [Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md).  
   
--   Standart veya özel bir Microsoft Office Outlook form genişletir. Daha fazla bilgi için bkz: [izlenecek yol: Outlook form bölgesi tasarlama](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Bir standart veya özel Microsoft Office Outlook biçimini genişletin. Daha fazla bilgi için [izlenecek yol: Outlook form bölgesi tasarlama](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
--   Özel görev bölmesini Outlook'a ekleyin. Daha fazla bilgi için bkz: [özel görev bölmeleri](../vsto/custom-task-panes.md).  
+-   Özel görev bölmesini Outlook ekleyin. Daha fazla bilgi için [özel görev bölmeleri](../vsto/custom-task-panes.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Şerit çalışma zamanında erişme](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Şerit, çalışma zamanında erişme](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Şerite Genel Bakış](../vsto/ribbon-overview.md)   
  [Dil ile tümleşik sorgu (LINQ)](/dotnet/csharp/linq/index)   
  [Nasıl yapılır: Şerit özelleştirmeye başlama](../vsto/how-to-get-started-customizing-the-ribbon.md)   

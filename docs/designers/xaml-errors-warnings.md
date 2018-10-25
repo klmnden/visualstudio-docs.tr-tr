@@ -10,12 +10,12 @@ ms.author: karann
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4af9ec3cffc7375dd77be72887baee6a56e1b391
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 09251f13cafa320e2736e9c61135283bb9e9739d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077821"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844191"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML hataları ve uyarıları
 
@@ -26,7 +26,7 @@ XAML yazarken, yazdığınız sırada Visual Studio kod analiz eder. Bir hata al
 Arka planda birden çok araç, XAML paralel analiz edin. XAML hataları, hatanın algılandığı araca bağlı aşağıdaki üç türlerden birinde ayrılır:
 
 |**Tarafından algılanan hata**|**Hata kodu biçimi**|
-|--------------------------------|-----------------|
+| - |-----------------|
 |XAML dil hizmeti (XAML Düzenleyicisi)|XLSxxxx|
 |XAML Tasarımcısı|XDGxxxx|
 |XAML Düzenle ve devam et|XECxxxx|

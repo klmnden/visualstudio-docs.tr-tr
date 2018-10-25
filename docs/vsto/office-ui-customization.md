@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dfbb7b1a10c27793133afdfdaf0d673fac9535c8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 48c7fe1948231f88aba8309d6d06186848d32455
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677857"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836774"
 ---
 # <a name="office-ui-customization"></a>Office kullanıcı arabirimini özelleştirme
   Visual Studio'da Office geliştirme araçlarını kullanarak, kullanıcı arabirimi (UI) Microsoft Office uygulamalarının özelleştirebilirsiniz. Bu konu aşağıdaki bölümlerde özelleştirebileceğiniz kullanıcı Arabirimi özellikleri açıklar:  
@@ -61,13 +61,13 @@ ms.locfileid: "35677857"
   
  Visual Studio'da Office geliştirme araçları, görev bölmeleri özelleştirmek için iki farklı şekilde sağlayın:  
   
--   Belge düzeyi özelleştirmesinde, Eylemler bölmesi ekleyebilirsiniz. Varsayılan olarak, Eylemler bölmesinde belge sağındaki uygulama sağ tarafında görüntülenir. Ancak, Eylemler bölmesi sol, üst veya alt belgenin görüntülenebilir.  
+- Belge düzeyi özelleştirmesinde, Eylemler bölmesi ekleyebilirsiniz. Varsayılan olarak, Eylemler bölmesinde belge sağındaki uygulama sağ tarafında görüntülenir. Ancak, Eylemler bölmesi sol, üst veya alt belgenin görüntülenebilir.  
   
--   Özel görev bölmesi, VSTO eklentisi için ekleyebilirsiniz. Kullanıcılar, uygulama penceresinin farklı kenarlara özel görev bölmeleri sabitleyebileceğiniz veya penceresinde herhangi bir konuma özel görev bölmeleri sürükleyebilirsiniz.  
+- Özel görev bölmesi, VSTO eklentisi için ekleyebilirsiniz. Kullanıcılar, uygulama penceresinin farklı kenarlara özel görev bölmeleri sabitleyebileceğiniz veya penceresinde herhangi bir konuma özel görev bölmeleri sürükleyebilirsiniz.  
   
- Eylemler bölmeleri ve özel görev bölmeleri denetimleri ile veri girişi gibi görevleri kullanıcılara yardımcı olmak için çeşitli barındırarak işlevselliği sağlar. Şerit grubuna karşılaştırıldığında, Eylemler bölmesi ve özel görev bölmeleri, metin ve denetimler eklemek için daha geniş bir alan sağlar.  
+  Eylemler bölmeleri ve özel görev bölmeleri denetimleri ile veri girişi gibi görevleri kullanıcılara yardımcı olmak için çeşitli barındırarak işlevselliği sağlar. Şerit grubuna karşılaştırıldığında, Eylemler bölmesi ve özel görev bölmeleri, metin ve denetimler eklemek için daha geniş bir alan sağlar.  
   
- Eylemler bölmeleri hakkında daha fazla bilgi için bkz: [Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md). Özel görev bölmeleri hakkında daha fazla bilgi için bkz. [özel görev bölmeleri](../vsto/custom-task-panes.md).  
+  Eylemler bölmeleri hakkında daha fazla bilgi için bkz: [Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md). Özel görev bölmeleri hakkında daha fazla bilgi için bkz. [özel görev bölmeleri](../vsto/custom-task-panes.md).  
   
 ##  <a name="Ribbon"></a> Özel Şerit UI'si  
  Office uygulamalarında eklediğiniz işlevselliği göstermek için Şerit kullanıcı arabirimini özelleştirebilirsiniz. Şerit, böylece bunlar daha kolay olur (denetimleri biçiminde) ilgili komutları düzenlemek için bir yoldur. Kendi Şerit sekmelerini ve çözümünüzde sağlayan işlevsellik, kullanıcılara erişim vermek için grupları oluşturabilirsiniz. Microsoft Office sistemi önceki sürümlerinde menüleri ve araç çubukları tarafından erişilen özelliklerin çoğu, Şerit kullanarak artık erişilebilir.  

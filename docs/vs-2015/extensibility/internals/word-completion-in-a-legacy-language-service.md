@@ -17,12 +17,12 @@ ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 591967bd9ac61b611b1b062a006a5069fc94d114
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b1cf22cd0bc717e9e9e3d0b06b76bed8420d1778
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285304"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910803"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Sözcük Tamamlama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ Kısmen belirlenmiş bir Word eksik karakter Sözcük tamamlama doldurur. Yalnı
   
 ## <a name="implementation-steps"></a>Uygulama adımları  
   
-1.  Kullanıcı seçtiğinde **tam sözcük** gelen **IntelliSense** menüsünde <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> komut dil hizmetine gönderilir.  
+1. Kullanıcı seçtiğinde **tam sözcük** gelen **IntelliSense** menüsünde <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> komut dil hizmetine gönderilir.  
   
-2.  <xref:Microsoft.VisualStudio.Package.ViewFilter> Sınıfı komut ve çağrılarını yakalar <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> yöntemi ayrıştırma nedeni ile <xref:Microsoft.VisualStudio.Package.ParseReason>.  
+2. <xref:Microsoft.VisualStudio.Package.ViewFilter> Sınıfı komut ve çağrılarını yakalar <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> yöntemi ayrıştırma nedeni ile <xref:Microsoft.VisualStudio.Package.ParseReason>.  
   
-3.  <xref:Microsoft.VisualStudio.Package.Source> Sınıfı ardından çağrıları <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> olası sözcük tamamlamaları ve araç ipucu sözcükler listesi kullanarak sonra görüntüler listesini almak için yöntemi <xref:Microsoft.VisualStudio.Package.CompletionSet> sınıfı.  
+3. <xref:Microsoft.VisualStudio.Package.Source> Sınıfı ardından çağrıları <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> olası sözcük tamamlamaları ve araç ipucu sözcükler listesi kullanarak sonra görüntüler listesini almak için yöntemi <xref:Microsoft.VisualStudio.Package.CompletionSet> sınıfı.  
   
-     Eşleşen tek bir sözcük ise <xref:Microsoft.VisualStudio.Package.Source> sınıfı word tamamlar.  
+    Eşleşen tek bir sözcük ise <xref:Microsoft.VisualStudio.Package.Source> sınıfı word tamamlar.  
   
- Alternatif olarak, tarayıcı tetikleme değerini döndürürse <xref:Microsoft.VisualStudio.Package.TokenTriggers> bir tanımlayıcının ilk karakteri yazıldığında <xref:Microsoft.VisualStudio.Package.Source> sınıfı, bunu algılar ve çağıran <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> yöntemi ayrıştırma nedeni ile <xref:Microsoft.VisualStudio.Package.ParseReason>. Bu durumda ayrıştırıcı bir üye seçimi karakterin varolup olmadığını algılamak ve bu üye listesini sağlamanız gerekir.  
+   Alternatif olarak, tarayıcı tetikleme değerini döndürürse <xref:Microsoft.VisualStudio.Package.TokenTriggers> bir tanımlayıcının ilk karakteri yazıldığında <xref:Microsoft.VisualStudio.Package.Source> sınıfı, bunu algılar ve çağıran <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> yöntemi ayrıştırma nedeni ile <xref:Microsoft.VisualStudio.Package.ParseReason>. Bu durumda ayrıştırıcı bir üye seçimi karakterin varolup olmadığını algılamak ve bu üye listesini sağlamanız gerekir.  
   
 ## <a name="enabling-support-for-the-complete-word"></a>Tam sözcük desteğini etkinleştirme  
  Sözcük tamamlama kümesi desteğini etkinleştirmek için `CodeSense` geçirilen parametre adlı <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> dil paket ile ilişkili kullanıcı özniteliği. Bu ayarlar <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> özelliği <xref:Microsoft.VisualStudio.Package.LanguagePreferences> sınıfı.  

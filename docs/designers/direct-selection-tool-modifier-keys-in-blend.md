@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c17d5802e919108dfcb888f38acebe32c093bb76
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 1630432d6135ab4a6f6a221f54b89aa18e7e8cb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924099"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876236"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Blend'de doğrudan seçim aracı değiştirici tuşları
 Aşağıdaki tabloda, var olan bir yol ile şeklini değiştirmek için kullanabileceğiniz kısayollar listelenmektedir **doğrudan seçim** aracı ![doğrudan seçim aracı](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Eklemek veya var olan bir yol noktalarını kaldırmak için veya iki mevcut yollar katılmaya **kalem** aracı.
 
 |Bu işlemi yapma|Bunu yapın|İşaretçi|
-|-----------------------|-------------|-------------|
+| - |-------------|-------------|
 |Yol üzerinde bir nokta için görünür tutamaçların görünmesini|Yol üzerindeki bir noktasına tıklayın|![Yol üzerinde bir nokta için görünür tutamaçların görünmesini](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> Taşıma noktası işaretçisi|
 |Yol üzerindeki bir noktasını taşıyın|Yol üzerindeki bir nokta sürükleyin|![Yol üzerindeki bir noktasını taşıyın](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> Taşıma noktası işaretçisi|
 |Yol üzerindeki iki nokta arasındaki bir kesim için görünür tutamaçların görünmesini|Bir yol kesimini tıklayın|![Yol üzerindeki iki nokta arasındaki bir kesim için görünür tutamaçların görünmesini](../designers/media/2ace930f-98fa-410b-92cf-7a4b88503ee7.png)<br /><br /> Segment işaretçiyi|

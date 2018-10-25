@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 835d6e80c650a18b3e595d1c6dc0c8bafd6b958a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 3282495219e92da38fc90c9a98fa115791190d80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080018"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834571"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .targets dosyaları
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] birkaç içeren *.targets* öğeleri, özellikleri, hedefleri ve görevleri sık karşılaşılan senaryolara yönelik içeren dosyaları. Bu dosyaları en otomatik olarak içeri aktarılan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje dosyaları, Bakım ve okunabilirliği kolaylaştırmak.  
@@ -37,11 +37,11 @@ ms.locfileid: "39080018"
 
 ## <a name="common-targets-files"></a>Ortak .targets dosyaları  
 
-|*.targets* dosyası|Açıklama|  
-|-------------------|-----------------|  
-|*Microsoft.Common.targets*|İçin standart derleme işlemindeki adımları tanımlar [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ve [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projeleri.<br /><br /> Tarafından alınan *Microsoft.CSharp.targets* ve *Microsoft.VisualBasic.targets* aşağıdaki deyim içeren dosyalar: `<Import Project="Microsoft.Common.targets" />`|  
-|*Microsoft.CSharp.targets*|Visual C# projeleri için standart derleme işlemindeki adımları tanımlar.<br /><br /> Visual C# proje dosyaları tarafından içe aktarılan (*.csproj*), aşağıdaki deyimi ekleyin: `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`|  
-|*Microsoft.VisualBasic.targets*|Visual Basic projeleri için standart derleme işlemindeki adımları tanımlar.<br /><br /> Visual Basic proje dosyaları tarafından içe aktarılan (*.vbproj*), aşağıdaki deyimi ekleyin: `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`|
+| *.targets* dosyası | Açıklama |
+|---------------------------------| - |
+| *Microsoft.Common.targets* | İçin standart derleme işlemindeki adımları tanımlar [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ve [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projeleri.<br /><br /> Tarafından alınan *Microsoft.CSharp.targets* ve *Microsoft.VisualBasic.targets* aşağıdaki deyim içeren dosyalar: `<Import Project="Microsoft.Common.targets" />` |
+| *Microsoft.CSharp.targets* | Visual C# projeleri için standart derleme işlemindeki adımları tanımlar.<br /><br /> Visual C# proje dosyaları tarafından içe aktarılan (*.csproj*), aşağıdaki deyimi ekleyin: `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />` |
+| *Microsoft.VisualBasic.targets* | Visual Basic projeleri için standart derleme işlemindeki adımları tanımlar.<br /><br /> Visual Basic proje dosyaları tarafından içe aktarılan (*.vbproj*), aşağıdaki deyimi ekleyin: `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />` |
 
 ## <a name="directorybuildtargets"></a>Directory.Build.targets
 *Directory.Build.targets* özelleştirmeleri bir dizin altında projelerine sağlayan kullanıcı tanımlı bir dosya. Bu dosya gelen otomatik olarak içeri aktarılır *Microsoft.Common.targets* sürece özelliği **ImportDirectoryBuildTargets** ayarlanır **false**.

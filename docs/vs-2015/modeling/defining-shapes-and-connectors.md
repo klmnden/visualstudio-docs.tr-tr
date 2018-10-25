@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4ee3bfaac9cfcdf887a22c84e0b98a13f8add7ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 61cd27b307b4761e3f7773f91583965466892285
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244614"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812952"
 ---
 # <a name="defining-shapes-and-connectors"></a>Şekiller ve Bağlayıcıları Tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ Bir etki alanına özgü dil (DSL) diyagramda hakkındaki bilgileri görüntüle
 ##  <a name="shapeTypes"></a> Şekilleri ve bağlayıcıları temel türleri  
  Bir DSL diyagramı koleksiyonu gösterir *şekiller* birbirine satırlarla veya *Bağlayıcılar*.  Genellikle, ancak her zaman:  
   
--   Şekiller görünür gösterimini model öğeleri var.  
+- Şekiller görünür gösterimini model öğeleri var.  
   
--   Bağlayıcılar başvurusu ilişkileri temsil eder.  
+- Bağlayıcılar başvurusu ilişkileri temsil eder.  
   
--   Diyagram model kök örneğini temsil eder.  
+- Diyagram model kök örneğini temsil eder.  
   
--   Model öğeler arasındaki katıştırma ilişkileri kapsamlarına göre gösterilir. Örneğin, bileşenin bağlantı noktalarını temsil eden öğe bileşeni katıştırılır.  
+- Model öğeler arasındaki katıştırma ilişkileri kapsamlarına göre gösterilir. Örneğin, bileşenin bağlantı noktalarını temsil eden öğe bileşeni katıştırılır.  
   
- Bu düzenleri zorlanmaz ancak daha kesin desteklenir. Bir DSL tasarlarken, tasarım katıştırma ilişkilerinin olmalıdır aklınızda size aittir nasıl model ekranda sunmak istediğiniz tarafından etkiler. Bunun aksine, başvuru ilişkileri iş etki alanınızın kavramları yansıtmalıdır.  
+  Bu düzenleri zorlanmaz ancak daha kesin desteklenir. Bir DSL tasarlarken, tasarım katıştırma ilişkilerinin olmalıdır aklınızda size aittir nasıl model ekranda sunmak istediğiniz tarafından etkiler. Bunun aksine, başvuru ilişkileri iş etki alanınızın kavramları yansıtmalıdır.  
   
- Aşağıdaki şekil türleri kullanılabilir:  
+  Aşağıdaki şekil türleri kullanılabilir:  
   
 |Şekil türü|Açıklama|  
 |----------------|-----------------|  

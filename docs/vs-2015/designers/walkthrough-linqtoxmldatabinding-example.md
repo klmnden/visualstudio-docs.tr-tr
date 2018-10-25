@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54e714aa95ee1206e278546bcd61e31687c45211
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3c69c69cfed53b0080614984853b3128908c2e89
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182302"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893656"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>İzlenecek yol: LinqToXmlDataBinding örneği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +32,19 @@ Bu izlenecek yolda LinqToXmlDataBinding örneği ve daha ilgi çekici, iki birin
 ## <a name="remarks"></a>Açıklamalar  
  Oluşan bir Windows Presentation Foundation (WPF) uygulaması C# ve XAML kaynak dosyaları LinqToXmlDataBinding programdır. Kitap listesi tanımlar ve görüntüleme, ekleme, silme ve bu girişleri düzenlemek kullanıcının sağlayan gömülü bir XML belgesi içeriyor. Bunu, aşağıdaki iki birincil kaynak dosyalardan oluşur:  
   
--   L2DBForm.XAML ana penceresinin kullanıcı arabirimi (UI) XAML bildirimi kodunu içerir. Ayrıca, bir veri sağlayıcısı ve kitap listeleri için katıştırılmış XML belgesi tanımlayan bir pencere kaynak bölümü içerir.  
+- L2DBForm.XAML ana penceresinin kullanıcı arabirimi (UI) XAML bildirimi kodunu içerir. Ayrıca, bir veri sağlayıcısı ve kitap listeleri için katıştırılmış XML belgesi tanımlayan bir pencere kaynak bölümü içerir.  
   
--   L2DBForm.xaml.cs başlatma ve kullanıcı Arabirimi ile ilişkili olay işleme yöntemleri içerir.  
+- L2DBForm.xaml.cs başlatma ve kullanıcı Arabirimi ile ilişkili olay işleme yöntemleri içerir.  
   
- Ana pencereyi aşağıdaki dört dikey UI bölümlere ayrılmıştır:  
+  Ana pencereyi aşağıdaki dört dikey UI bölümlere ayrılmıştır:  
   
--   **XML** ham XML kaynağını katıştırılmış kitap listesi görüntüler.  
+- **XML** ham XML kaynağını katıştırılmış kitap listesi görüntüler.  
   
--   **Kitap listesi** defteri girdileri standart metin olarak görüntüler ve seçin ve tek tek girişleri silmek sağlar.  
+- **Kitap listesi** defteri girdileri standart metin olarak görüntüler ve seçin ve tek tek girişleri silmek sağlar.  
   
--   **Seçili kitap Düzenle** seçili rehberi girişiyle ilişkili değerlerini düzenlemek kullanıcının sağlar.  
+- **Seçili kitap Düzenle** seçili rehberi girişiyle ilişkili değerlerini düzenlemek kullanıcının sağlar.  
   
--   **Yeni kitabı ekleme** kullanıcı tarafından girilen değerleri temel alarak yeni bir kitap giriş oluşturulmasını sağlar.  
+- **Yeni kitabı ekleme** kullanıcı tarafından girilen değerleri temel alarak yeni bir kitap giriş oluşturulmasını sağlar.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
   

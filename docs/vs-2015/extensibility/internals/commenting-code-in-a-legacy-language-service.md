@@ -16,12 +16,12 @@ ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: da04f97cc31ba235fd70aea60f01c51f8c8a2b75
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d4b955879380166aae7d9a8e210ac7d5e53f882f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291908"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873480"
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Koda Açıklama Ekleme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ Programlama dilleri, normalde açıklama eklemek veya kod açıklaması için bi
 ## <a name="comment-styles"></a>Açıklama stilleri  
  Açıklama iki genel stiller şunlardır:  
   
-1.  Yorumu tek bir satırda olduğu satırlı yorumlar.  
+1. Yorumu tek bir satırda olduğu satırlı yorumlar.  
   
-2.  Bloğu açıklamaları, burada açıklama birden fazla satır içerebilir.  
+2. Bloğu açıklamaları, burada açıklama birden fazla satır içerebilir.  
   
- Satırlı yorumlar, genellikle başlangıç karakteri (ya da karakterler) bloğu açıklamaları sırasında hem başlangıç ve bitiş karakterlerini sahip sahiptir. Örneğin, C# ' ta bir satırı yorum ile başlayan / /, ve bir blok açıklama ile başlayan / * ve ile sona eren \*/.  
+   Satırlı yorumlar, genellikle başlangıç karakteri (ya da karakterler) bloğu açıklamaları sırasında hem başlangıç ve bitiş karakterlerini sahip sahiptir. Örneğin, C# ' ta bir satırı yorum ile başlayan / /, ve bir blok açıklama ile başlayan / * ve ile sona eren \*/.  
   
- Kullanıcı komutu seçtiğinde **yorum seçimi** gelen **Düzenle** -> **Gelişmiş** menüsünden komut yönlendirileceğini <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> yöntemi <xref:Microsoft.VisualStudio.Package.Source> sınıfı. Kullanıcı komutu seçtiğinde **seçimi işletilir satıra çevir**, komut yönlendirilir <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> yöntemi.  
+   Kullanıcı komutu seçtiğinde **yorum seçimi** gelen **Düzenle** -> **Gelişmiş** menüsünden komut yönlendirileceğini <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> yöntemi <xref:Microsoft.VisualStudio.Package.Source> sınıfı. Kullanıcı komutu seçtiğinde **seçimi işletilir satıra çevir**, komut yönlendirilir <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> yöntemi.  
   
 ## <a name="supporting-code-comments"></a>Kod açıklamaları destekleme  
  Dil hizmeti desteği kodu yorumlarınızı yoluyla olabilir `EnableCommenting` parametresinin adlı <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Bu ayarlar <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> özelliği <xref:Microsoft.VisualStudio.Package.LanguagePreferences> sınıfı. Dil servicce özellikleri ayarlama hakkında daha fazla bilgi için bkz. [eski dil hizmetinde kaydetme](../../extensibility/internals/registering-a-legacy-language-service1.md)).  

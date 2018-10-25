@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 725d902c181e6082c7f995ceec805aa05441bbaa
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 06d91a2a9e7dc206e2303637bce013b473cf6560
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49074058"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839043"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Nasıl yapılır: Visual Studio'da Office projeleri oluşturma
   Kullanabileceğiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] VSTO eklentisi ve belge düzeyi özelleştirmeleri Microsoft Office uygulamaları için. Bu proje türleri hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -40,49 +40,49 @@ ms.locfileid: "49074058"
   
 ### <a name="to-create-a-vsto-add-in-project"></a>Bir VSTO eklenti projesi oluşturmak için  
   
-1.  Üzerinde **dosya** menüsünde seçin **yeni** > **proje**. Tümleşik geliştirme ortamınız (IDE) kullanmak için ayarlanmış olup olmadığını [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] Geliştirme Ayarları'nda **dosya** menüsünde seçin **yeni** > **proje**.  
+1. Üzerinde **dosya** menüsünde seçin **yeni** > **proje**. Tümleşik geliştirme ortamınız (IDE) kullanmak için ayarlanmış olup olmadığını [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] Geliştirme Ayarları'nda **dosya** menüsünde seçin **yeni** > **proje**.  
   
-     **Yeni proje** iletişim kutusu görüntülenir.  
+    **Yeni proje** iletişim kutusu görüntülenir.  
   
-    > [!NOTE]  
-    >  Office projeleri hedef [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] varsayılan olarak. Daha fazla bilgi için [.NET Framework istemci profili](/dotnet/framework/deployment/client-profile).  
+   > [!NOTE]  
+   >  Office projeleri hedef [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] varsayılan olarak. Daha fazla bilgi için [.NET Framework istemci profili](/dotnet/framework/deployment/client-profile).  
   
-2.  Şablonlar bölmesinde, kullanmak istediğiniz dil için düğümü genişletin **Office/SharePoint**.  
+2. Şablonlar bölmesinde, kullanmak istediğiniz dil için düğümü genişletin **Office/SharePoint**.  
   
-3.  Seçin **Office eklentilerini** düğümü.  
+3. Seçin **Office eklentilerini** düğümü.  
   
-4.  Proje şablonları listesinde, VSTO eklentisi proje şablonu seçin. Kullanılabilir VSTO eklenti projesi şablonlarının bir listesi için bkz. [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md).  
+4. Proje şablonları listesinde, VSTO eklentisi proje şablonu seçin. Kullanılabilir VSTO eklenti projesi şablonlarının bir listesi için bkz. [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md).  
   
-    > [!NOTE]  
-    >  Proje şablonları görünür değilse seçtiğinizde **Office eklentilerini** düğümünün olduğundan emin olun **.NET Framework 4** veya daha sonra iletişim kutusunun üstündeki birleşik giriş kutusunda seçilir. Office proje şablonları, her iki .NET Framework sürümleri için görülebilir.  
+   > [!NOTE]  
+   >  Proje şablonları görünür değilse seçtiğinizde **Office eklentilerini** düğümünün olduğundan emin olun **.NET Framework 4** veya daha sonra iletişim kutusunun üstündeki birleşik giriş kutusunda seçilir. Office proje şablonları, her iki .NET Framework sürümleri için görülebilir.  
   
-5.  İçinde **adı** proje için bir ad yazın. Varsayılan olarak, proje adı çözüm adı olarak da kullanılır.  
+5. İçinde **adı** proje için bir ad yazın. Varsayılan olarak, proje adı çözüm adı olarak da kullanılır.  
   
-6.  İçinde **konumu** kutusunda, projeyi oluşturmak istediğiniz yolu girin. Mutlak ve Evrensel Adlandırma Kuralı (UNC) yollarını kullanabilirsiniz. HTTP, FTP veya diğer protokol yollarını kullanmayın.  
+6. İçinde **konumu** kutusunda, projeyi oluşturmak istediğiniz yolu girin. Mutlak ve Evrensel Adlandırma Kuralı (UNC) yollarını kullanabilirsiniz. HTTP, FTP veya diğer protokol yollarını kullanmayın.  
   
-     Konumlar aşağıdaki biçimlere sahiptir:  
+    Konumlar aşağıdaki biçimlere sahiptir:  
   
-      * [*sürücü*\]\:  
+   * [*sürücü*\]\:  
   
-      * \\\\*Sunucu*\\*paylaşımı*  
+   * \\\\*Sunucu*\\*paylaşımı*  
   
      Konumda şu karakterleri kullanmayın:  
   
-      * Yıldız işareti (*)  
+   * Yıldız işareti (*)  
   
-      * Dikey çubuk (|)  
+   * Dikey çubuk (|)  
   
-      * İki nokta üst üste (:) (Sürücü harfini hariç).  
+   * İki nokta üst üste (:) (Sürücü harfini hariç).  
   
-      * Çift tırnak işareti (") (boşluk içeren yollar gereksinim tırnak işaretleri.)  
+   * Çift tırnak işareti (") (boşluk içeren yollar gereksinim tırnak işaretleri.)  
   
-      * Küçüktür (\<)  
+   * Küçüktür (\<)  
   
-      * Büyüktür (>)  
+   * Büyüktür (>)  
   
-      * Soru işareti (?)  
+   * Soru işareti (?)  
   
-      * Yüzde işareti (%)  
+   * Yüzde işareti (%)  
   
 7. Seçin **Tamam** düğmesi.
   
@@ -91,71 +91,71 @@ ms.locfileid: "49074058"
   
 ### <a name="to-create-a-document-level-customization-project"></a>Belge düzeyi özelleştirme projesi oluşturmak için  
   
-1.  Üzerinde **dosya** menüsünde seçin **yeni** > **proje**. IDE'nizi Visual Basic geliştirme ayarlarını kullanmaya ayarlanmışsa **dosya** menüsünde seçin **yeni** > **proje**.  
+1. Üzerinde **dosya** menüsünde seçin **yeni** > **proje**. IDE'nizi Visual Basic geliştirme ayarlarını kullanmaya ayarlanmışsa **dosya** menüsünde seçin **yeni** > **proje**.  
   
-     **Yeni proje** iletişim kutusu görüntülenir.  
+    **Yeni proje** iletişim kutusu görüntülenir.  
   
-    > [!NOTE]  
-    >  Office projeleri hedef [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] varsayılan olarak.  Daha fazla bilgi için [.NET Framework istemci profili](/dotnet/framework/deployment/client-profile).  
+   > [!NOTE]  
+   >  Office projeleri hedef [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] varsayılan olarak.  Daha fazla bilgi için [.NET Framework istemci profili](/dotnet/framework/deployment/client-profile).  
   
-2.  Şablonlar bölmesinde, kullanmak istediğiniz dil için düğümü genişletin **Office/SharePoint**.  
+2. Şablonlar bölmesinde, kullanmak istediğiniz dil için düğümü genişletin **Office/SharePoint**.  
   
-3.  Seçin **Office eklentilerini** düğümü.  
+3. Seçin **Office eklentilerini** düğümü.  
   
-4.  Proje şablonları listesinde, bir belge düzeyi projesi şablonu seçin. Kullanılabilir belge düzeyi projesi şablonlarının bir listesi için bkz. [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md).  
+4. Proje şablonları listesinde, bir belge düzeyi projesi şablonu seçin. Kullanılabilir belge düzeyi projesi şablonlarının bir listesi için bkz. [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md).  
   
-    > [!NOTE]  
-    >  Proje şablonları görünür değilse seçtiğinizde **Office eklentilerini** düğümünün olduğundan emin olun **.NET Framework 4** veya daha sonra iletişim kutusunun üstündeki birleşik giriş kutusunda seçilir. Office proje şablonları, her iki .NET Framework sürümleri için görülebilir.  
+   > [!NOTE]  
+   >  Proje şablonları görünür değilse seçtiğinizde **Office eklentilerini** düğümünün olduğundan emin olun **.NET Framework 4** veya daha sonra iletişim kutusunun üstündeki birleşik giriş kutusunda seçilir. Office proje şablonları, her iki .NET Framework sürümleri için görülebilir.  
   
-5.  İçinde **adı** proje için bir ad yazın. Varsayılan olarak, bu ad belge için de kullanılır. IDE'nizi Visual C# geliştirme ayarlarını veya genel geliştirme ayarlarını kullanmaya ayarlanmışsa, konum ve çözüm adı da girin.  
+5. İçinde **adı** proje için bir ad yazın. Varsayılan olarak, bu ad belge için de kullanılır. IDE'nizi Visual C# geliştirme ayarlarını veya genel geliştirme ayarlarını kullanmaya ayarlanmışsa, konum ve çözüm adı da girin.  
   
-    > [!NOTE]  
-    >  Proje konumunun yolunda veya proje isminde temsilci karakterleri kullanamazsınız. Ayrıca, çevrimdışı kullanım için bir çözüm dağıtmayı planlıyorsanız proje adındaki karakterler HTTP protokolü belirtimlerine uymalıdır.  
+   > [!NOTE]  
+   >  Proje konumunun yolunda veya proje isminde temsilci karakterleri kullanamazsınız. Ayrıca, çevrimdışı kullanım için bir çözüm dağıtmayı planlıyorsanız proje adındaki karakterler HTTP protokolü belirtimlerine uymalıdır.  
   
-6.  Seçin **Tamam** düğmesi.  
+6. Seçin **Tamam** düğmesi.  
   
-     **Office Project Sihirbazı için Visual Studio Araçları** açılır.  
+    **Office Project Sihirbazı için Visual Studio Araçları** açılır.  
   
-7.  Seçin **yeni belge oluşturma** çözümü için yeni bir belge oluşturmak istiyorsanız **mevcut belgeyi kopyalamak** var olan bir belgeyi özelleştirmek istiyorsanız.  
+7. Seçin **yeni belge oluşturma** çözümü için yeni bir belge oluşturmak istiyorsanız **mevcut belgeyi kopyalamak** var olan bir belgeyi özelleştirmek istiyorsanız.  
   
-     Yeni bir belge oluşturursanız, ismi belirtin **adı** kutusunda ve kullanarak belgenin biçimini seçin **biçimi** kutusu. Kullanılabilir biçimler hakkında daha fazla bilgi için bkz. [belge düzeyi özelleştirmeler mimarisi](../vsto/architecture-of-document-level-customizations.md).  
+    Yeni bir belge oluşturursanız, ismi belirtin **adı** kutusunda ve kullanarak belgenin biçimini seçin **biçimi** kutusu. Kullanılabilir biçimler hakkında daha fazla bilgi için bkz. [belge düzeyi özelleştirmeler mimarisi](../vsto/architecture-of-document-level-customizations.md).  
   
-     Var olan bir belgeyi kullanıyorsanız, belgede konumunu **mevcut belgenin tam yolu** kutusu. Mutlak veya UNC yollarını kullanabilirsiniz. HTTP, FTP veya diğer protokol yollarını kullanmayın.  
+    Var olan bir belgeyi kullanıyorsanız, belgede konumunu **mevcut belgenin tam yolu** kutusu. Mutlak veya UNC yollarını kullanabilirsiniz. HTTP, FTP veya diğer protokol yollarını kullanmayın.  
   
-     Konumlar aşağıdaki biçimlere sahiptir:  
+    Konumlar aşağıdaki biçimlere sahiptir:  
   
-    -   [*sürücü*\]\:  
+   - [*sürücü*\]\:  
   
-    -   \\\\*Sunucu*\\*paylaşımı*  
+   - \\\\*Sunucu*\\*paylaşımı*  
   
      Konumda şu karakterleri kullanmayın:  
   
-    -   Yıldız işareti (*)  
+   - Yıldız işareti (*)  
   
-    -   Dikey çubuk (|)  
+   - Dikey çubuk (|)  
   
-    -   İki nokta üst üste (:) (Sürücü harfini hariç).  
+   - İki nokta üst üste (:) (Sürücü harfini hariç).  
   
-    -   Çift tırnak işareti (") (boşluk içeren yollar gereksinim tırnak işaretleri.)  
+   - Çift tırnak işareti (") (boşluk içeren yollar gereksinim tırnak işaretleri.)  
   
-    -   Küçüktür (\<)  
+   - Küçüktür (\<)  
   
-    -   Büyüktür (>)  
+   - Büyüktür (>)  
   
-    -   Soru işareti (?)  
+   - Soru işareti (?)  
   
-    -   Yüzde işareti (%)  
+   - Yüzde işareti (%)  
   
-    > [!NOTE]  
-    >  Varolan bir belgeyi kullanıyorsanız, bir [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] proje, yalnızca programında oluşturulan veya buna dönüştürülen belgeleri kullanın [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Benzer şekilde, bir sözcükteki var olan bir belgeyi kullanıyorsanız, 2010 projesinde, yalnızca programında oluşturulan veya Word 2010 dönüştürülen belgeleri kullanın. Word'ün önceki bir sürümde oluşturulmuş bir belgeyi kullanıyorsanız, bazı özellikler belgesinde devre dışı bırakılır. Bu özellikleri kullanan kod yazmayı denerseniz projenizde hatalarla karşılaşabilirsiniz. Bir belgeyi dönüştürmek için açılır [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] ve Word 2010 üzerinde **dosya** sekmesini Şerit üzerinde **bilgisi** > **Dönüştür**.  
+   > [!NOTE]  
+   >  Varolan bir belgeyi kullanıyorsanız, bir [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] proje, yalnızca programında oluşturulan veya buna dönüştürülen belgeleri kullanın [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Benzer şekilde, bir sözcükteki var olan bir belgeyi kullanıyorsanız, 2010 projesinde, yalnızca programında oluşturulan veya Word 2010 dönüştürülen belgeleri kullanın. Word'ün önceki bir sürümde oluşturulmuş bir belgeyi kullanıyorsanız, bazı özellikler belgesinde devre dışı bırakılır. Bu özellikleri kullanan kod yazmayı denerseniz projenizde hatalarla karşılaşabilirsiniz. Bir belgeyi dönüştürmek için açılır [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] ve Word 2010 üzerinde **dosya** sekmesini Şerit üzerinde **bilgisi** > **Dönüştür**.  
   
-8.  Seçin **son**.  
+8. Seçin **son**.  
   
 9. Aşağıdaki durumlarda Word'de Güven Merkezi'ndeki güvenilir konum listesine proje klasörünü ve alt klasörlerini ekleyin:  
   
-    -   Temel alan bir Word belgesi oluşturuyorsunuz bir *.docm* dosya ve belge bir VBA projesi içermekte ya da barındıran Windows Forms denetimleri. Proje klasörünü güvenilir konum listesine eklemek belgenin tasarım zamanında beklenildiği gibi çalıştığından emin olun yardımcı olur.  
+   - Temel alan bir Word belgesi oluşturuyorsunuz bir *.docm* dosya ve belge bir VBA projesi içermekte ya da barındıran Windows Forms denetimleri. Proje klasörünü güvenilir konum listesine eklemek belgenin tasarım zamanında beklenildiği gibi çalıştığından emin olun yardımcı olur.  
   
-    -   Temel alan bir Word Şablonu proje oluşturmakta olduğunuz bir *.dotx* dosya. Böylece çalıştırın ve proje hatalarını ayıklamaya proje klasörünü güvenilir konum listesine eklemeniz gerekir.  
+   - Temel alan bir Word Şablonu proje oluşturmakta olduğunuz bir *.dotx* dosya. Böylece çalıştırın ve proje hatalarını ayıklamaya proje klasörünü güvenilir konum listesine eklemeniz gerekir.  
   
      Belgeyi güvenilir konumlara eklemek hakkında daha fazla bilgi için Microsoft Office çevrimiçi web sitesine bakın [oluşturma, kaldırma veya değişiklik dosyalarınız için güvenilen bir konum](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   

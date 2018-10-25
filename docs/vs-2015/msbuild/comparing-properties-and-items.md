@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b80ea0c25766f75d21d193a67be68c13eb5ea0d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d42cc8fb4e5ba0783ad24aedc0edf7a323db4d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292402"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878589"
 ---
 # <a name="comparing-properties-and-items"></a>Özellikleri ve Öğeleri Karşılaştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,27 +90,27 @@ MSBuild özellikleri ve öğeleri hem de bilgi geçirmek için görevler, koşul
 ## <a name="property-and-item-evaluation-order"></a>Özelliği ve öğe değerlendirme sırası  
  Bir yapının değerlendirme aşamasında yapı göründükleri sırayla içeri aktarılan dosyaları dahil edilir. Özellikler ve öğeler aşağıdaki sırayla üç geçiş tanımlanır:  
   
--   Özellikleri tanımlanır ve göründükleri sırayla değiştirdi.  
+- Özellikleri tanımlanır ve göründükleri sırayla değiştirdi.  
   
--   Öğe tanımları tanımlanır ve göründükleri sırayla değiştirdi.  
+- Öğe tanımları tanımlanır ve göründükleri sırayla değiştirdi.  
   
--   Öğeleri tanımlanır ve göründükleri sırayla değiştirdi.  
+- Öğeleri tanımlanır ve göründükleri sırayla değiştirdi.  
   
- Bir derleme yürütme aşamasında özellikler ve hedefler içinde tanımlanan öğeleri birlikte tek bir aşamada göründükleri sırayla değerlendirilir.  
+  Bir derleme yürütme aşamasında özellikler ve hedefler içinde tanımlanan öğeleri birlikte tek bir aşamada göründükleri sırayla değerlendirilir.  
   
- Ancak, bu Yazının tamamını değildir. Bir özelliği, öğe tanımı veya öğesi tanımlı değilken değeri değerlendirilir. İfade değerlendirici değeri belirten dizeyi genişletir. Dize genişletme derleme aşamaya bağlıdır. Daha ayrıntılı bir özelliği ve öğe değerlendirme sırası şöyledir:  
+  Ancak, bu Yazının tamamını değildir. Bir özelliği, öğe tanımı veya öğesi tanımlı değilken değeri değerlendirilir. İfade değerlendirici değeri belirten dizeyi genişletir. Dize genişletme derleme aşamaya bağlıdır. Daha ayrıntılı bir özelliği ve öğe değerlendirme sırası şöyledir:  
   
--   Bir yapının değerlendirme aşamasında:  
+- Bir yapının değerlendirme aşamasında:  
   
-    -   Özellikleri tanımlanır ve göründükleri sırayla değiştirdi. Özellik işlevleri yürütülür. Özellik değerlerinde form $(PropertyName) ifadeler içinde genişletilir. Özellik değeri, genişletilmiş ifade ayarlanır.  
+  -   Özellikleri tanımlanır ve göründükleri sırayla değiştirdi. Özellik işlevleri yürütülür. Özellik değerlerinde form $(PropertyName) ifadeler içinde genişletilir. Özellik değeri, genişletilmiş ifade ayarlanır.  
   
-    -   Öğe tanımları tanımlanır ve göründükleri sırayla değiştirdi. Özellik işlevleri ifadeler içinde zaten genişletilmiştir. Meta veri değerleri için genişletilmiş ifadeleri ayarlanır.  
+  -   Öğe tanımları tanımlanır ve göründükleri sırayla değiştirdi. Özellik işlevleri ifadeler içinde zaten genişletilmiştir. Meta veri değerleri için genişletilmiş ifadeleri ayarlanır.  
   
-    -   Öğesi türleri tanımlı ve göründükleri sırayla değiştirdi. Form @(ItemType) içindeki öğe değerlerini genişletilir. Öğe dönüştürmeler de genişletilir. Özellik işlevleri ve değerleri, ifadeler içinde zaten genişletilmiştir. Öğe listesi ve meta verileri değerlerini genişletilmiş ifadeleri için ayarlanır.  
+  -   Öğesi türleri tanımlı ve göründükleri sırayla değiştirdi. Form @(ItemType) içindeki öğe değerlerini genişletilir. Öğe dönüştürmeler de genişletilir. Özellik işlevleri ve değerleri, ifadeler içinde zaten genişletilmiştir. Öğe listesi ve meta verileri değerlerini genişletilmiş ifadeleri için ayarlanır.  
   
--   Bir derleme yürütme aşaması sırasında:  
+- Bir derleme yürütme aşaması sırasında:  
   
-    -   Özellikler ve hedefler içinde tanımlanan öğeleri birlikte göründükleri sırayla değerlendirilir. Özellik işlevleri yürütülür ve özellik değerlerini ifadeler içinde genişletilir. Öğe değerlerini ve öğesi dönüştürmeler de genişletilir. Özellik değerleri, öğe türü değerlerini ve meta veri değerleri için genişletilmiş ifadeleri ayarlanır.  
+  -   Özellikler ve hedefler içinde tanımlanan öğeleri birlikte göründükleri sırayla değerlendirilir. Özellik işlevleri yürütülür ve özellik değerlerini ifadeler içinde genişletilir. Öğe değerlerini ve öğesi dönüştürmeler de genişletilir. Özellik değerleri, öğe türü değerlerini ve meta veri değerleri için genişletilmiş ifadeleri ayarlanır.  
   
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Hafif etkilerini değerlendirme sırası  
  Bir yapının değerlendirme aşamasında, özellik değerlendirmesini öğesi değerlendirme önce gelir. Bununla birlikte, Özellikler öğesi değerlerine bağımlı görünen değerlere sahip olabilir. Aşağıdaki komut dosyası düşünün.  

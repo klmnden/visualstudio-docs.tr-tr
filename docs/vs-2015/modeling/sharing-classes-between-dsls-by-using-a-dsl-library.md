@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2c0192aca40c6f58468fba35ee1fd174b0445bf1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed469b4621205539e3f7a2ce59878bd318ba556f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241531"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860042"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>DSL Kitaplığı Kullanarak DSL'ler Arasında Sınıfları Paylaşma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,21 +52,21 @@ ms.locfileid: "49241531"
   
 #### <a name="to-import-a-dsl-library"></a>DSL kitaplığı içeri aktarmak için  
   
-1.  Başka bir DSL tanımındaki içinde **DSL Gezgini**DSL kök sınıfının sağ tıklayın ve ardından **ekleme yeni DslLibrary alma**.  
+1. Başka bir DSL tanımındaki içinde **DSL Gezgini**DSL kök sınıfının sağ tıklayın ve ardından **ekleme yeni DslLibrary alma**.  
   
-2.  Özellikler penceresinde ayarlayın **dosya yolu** kitaplığı. Bir göreli veya mutlak bir yol kullanabilirsiniz.  
+2. Özellikler penceresinde ayarlayın **dosya yolu** kitaplığı. Bir göreli veya mutlak bir yol kullanabilirsiniz.  
   
-     İçeri aktarılan kitaplık salt okunur modda DSL Gezgini'nde görünür.  
+    İçeri aktarılan kitaplık salt okunur modda DSL Gezgini'nde görünür.  
   
-3.  İçeri aktarılan sınıflar temel sınıf olarak kullanabilirsiniz. İçeri aktarma DSL içinde alan sınıfı oluşturun ve Özellikler penceresinde ayarlayın **temel sınıf** içeri aktarılan bir sınıf.  
+3. İçeri aktarılan sınıflar temel sınıf olarak kullanabilirsiniz. İçeri aktarma DSL içinde alan sınıfı oluşturun ve Özellikler penceresinde ayarlayın **temel sınıf** içeri aktarılan bir sınıf.  
   
-4.  Tüm Şablonları Dönüştür tıklayın.  
+4. Tüm Şablonları Dönüştür tıklayın.  
   
-5.  DSL kitaplığı proje tarafından oluşturulan derleme (DLL) başvuru DSL projeye ekleyin.  
+5. DSL kitaplığı proje tarafından oluşturulan derleme (DLL) başvuru DSL projeye ekleyin.  
   
-6.  Çözümü oluşturun.  
+6. Çözümü oluşturun.  
   
- DSL kitaplığı diğer tür kitaplıklarını içeri aktarabilirsiniz. Bir kitaplığı içeri aktardığınızda, içeri aktarmalarından DSL Gezgini'nde da otomatik olarak görünür.  
+   DSL kitaplığı diğer tür kitaplıklarını içeri aktarabilirsiniz. Bir kitaplığı içeri aktardığınızda, içeri aktarmalarından DSL Gezgini'nde da otomatik olarak görünür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: Etki Alanına Özgü bir Dili Tanımlama](../modeling/how-to-define-a-domain-specific-language.md)

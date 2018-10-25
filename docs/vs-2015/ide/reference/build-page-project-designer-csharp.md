@@ -19,12 +19,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b762345c9f5c81e6244e16b2ee249f29283cc589
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a377db0ac82b672d053e59c621714945fa9b515c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280624"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837190"
 ---
 # <a name="build-page-project-designer-c"></a>Derleme Sayfası, Proje Tasarımcısı (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,17 +72,17 @@ Kullanım **derleme** sayfasının **Proje Tasarımcısı** projenin yapı yapı
   
  Bu onay kutusu yalnızca aşağıdaki koşulların tümü doğruysa, kullanılabilir:  
   
--   Üzerinde **yapı sayfası**, **Platform hedefi** listesinin **herhangi bir CPU**.  
+- Üzerinde **yapı sayfası**, **Platform hedefi** listesinin **herhangi bir CPU**.  
   
--   Üzerinde **uygulama sayfası**, **çıkış türü** listesi, projenin bir uygulama olduğunu belirtir.  
+- Üzerinde **uygulama sayfası**, **çıkış türü** listesi, projenin bir uygulama olduğunu belirtir.  
   
--   Üzerinde **uygulama sayfası**, **hedef Framework'ü** listesi .NET Framework 4.5 belirtir.  
+- Üzerinde **uygulama sayfası**, **hedef Framework'ü** listesi .NET Framework 4.5 belirtir.  
   
- **Güvenli olmayan koda izin ver**  
- Kullanan koda izin verir [güvenli](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0) derlemek için anahtar sözcüğü. Daha fazla bilgi için [/ unsafe (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc).  
+  **Güvenli olmayan koda izin ver**  
+  Kullanan koda izin verir [güvenli](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0) derlemek için anahtar sözcüğü. Daha fazla bilgi için [/ unsafe (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc).  
   
- **Kodu En İyileştir**  
- Etkinleştirmek veya çıkış dosyanızı daha küçük, daha hızlı ve daha verimli yapmak için derleyici tarafından gerçekleştirilen iyileştirmeleri devre dışı bırakın. Daha fazla bilgi için [/ optimize (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0).  
+  **Kodu En İyileştir**  
+  Etkinleştirmek veya çıkış dosyanızı daha küçük, daha hızlı ve daha verimli yapmak için derleyici tarafından gerçekleştirilen iyileştirmeleri devre dışı bırakın. Daha fazla bilgi için [/ optimize (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0).  
   
 ## <a name="errors-and-warnings"></a>Hatalar ve uyarılar  
  Aşağıdaki ayarlar, hata ve uyarı yapı işlemi seçeneklerini yapılandırmak için kullanılır.  

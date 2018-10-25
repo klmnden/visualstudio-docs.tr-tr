@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebda8f3e5b92089900bf8ce2d41b7d5046533895
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3955905252b2293d3c200640ea33d5c23c8fd208
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636771"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844464"
 ---
 # <a name="sccget-function"></a>SccGet işlevi
 Bu işlev, bir veya daha fazla dosyaları görüntülemek ve derleme ancak düzenleme için bir kopyasını alır. Çoğu sistemde, dosyaları salt okunur olarak etiketlenir.  

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d54d31a1a4478f114e997df39bcbeeb95d5cda5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 80b4000a8fc8657c1b82490b1ddb6dec0dbdd3ce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677218"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907241"
 ---
 # <a name="attach"></a>İliştir
 *VSPerfCmd.exe* **iliştirme** seçeneği, çalışan işlemin işlem kimliği (PID) tarafından belirtilen örnek profil oluşturma başlar.  
@@ -56,7 +56,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 ## <a name="interval-options"></a>Aralık Seçenekleri  
  Örnekleme aralığı şunlardan birini Ekle komut satırında belirtilebilir. Varsayılan örnekleme aralığı 10.000.000 işlemci saat döngülerini ' dir.  
   
- **Zamanlayıcı**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:** Olayları]**sayacı**[**:**`Name`,`Reload`,`FriendlyName`]  
+ **Zamanlayıcı**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong> Olayları]**sayacı**[**:**`Name`,`Reload`,`FriendlyName`]  
  Sayısı ve örnekleme aralığı türünü belirtir.  
   
 -   **Zamanlayıcı** -örnekleri her `Cycles` işlemci saat döngüsü. Varsa `Cycles` belirtilmezse, 10.000.000 döngüleri kullanılır.  

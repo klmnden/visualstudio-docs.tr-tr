@@ -16,12 +16,12 @@ ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 808ed1ce13af06fa263a339bc9c6788595a261a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a903d1cfdb503650f044a17961542c9d011b55bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229261"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856671"
 ---
 # <a name="test-area-5-change-source-control"></a>Test Alanı 5: Kaynak Denetimini Değiştirme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Bu kaynak denetimi eklentisi test alanını kapsayan aracılığıyla kaynak den
   
  **Kaynak denetimini Değiştir** komut, kullanıcı için dört temel işlevleri sağlar:  
   
--   **Bağlama:**  
+- **Bağlama:**  
   
-     Kurmak veya bir kaynak denetimi bağlantısı çözüm/proje ve sürüm deposuna arasında yeniden açmasına olanak sağlar.  
+   Kurmak veya bir kaynak denetimi bağlantısı çözüm/proje ve sürüm deposuna arasında yeniden açmasına olanak sağlar.  
   
--   **Bağlamayı Kaldır:**  
+- **Bağlamayı Kaldır:**  
   
-     Bağlantı başına temelinde kaynak denetiminden bir proje/çözüm kaldırır.  
+   Bağlantı başına temelinde kaynak denetiminden bir proje/çözüm kaldırır.  
   
--   **Bağlama/bağlantısını kes:**  
+- **Bağlama/bağlantısını kes:**  
   
- Bağlı veya çevrimdışı durumunu değiştirir alanı 3'te bahsedilen denetimli çözüm. Daha fazla bilgi için [Test alanı 3: kullanıma / geri alma](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
+  Bağlı veya çevrimdışı durumunu değiştirir alanı 3'te bahsedilen denetimli çözüm. Daha fazla bilgi için [Test alanı 3: kullanıma / geri alma](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
   
 ## <a name="command-menu-access"></a>Komut menü erişimi  
  Aşağıdaki [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tümleşik geliştirme ortamı menüsü yolu test durumlarında kullanılır.  

@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 27be9bc979ba1f3e86996aaf913502ca80142ebd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a3fa1c07bbb32bc1da963a0d2f0a91ae6c193a30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252973"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863691"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod Etkinlik Tasarımcısı
 **InvokeMethod** Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.Activities.Statements.InvokeMethod> etkinlik.  
@@ -51,15 +51,15 @@ ms.locfileid: "49252973"
   
  Parametreleri kaydetmek için algoritma <xref:System.Activities.Activity.CacheMetadata%2A> aşağıda gösterilmiştir:  
   
-1.  Kayıt <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> bağımsız değişken.  
+1. Kayıt <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> bağımsız değişken.  
   
-2.  Kayıt <xref:System.Activities.Statements.InvokeMethod.Result%2A> bağımsız değişken.  
+2. Kayıt <xref:System.Activities.Statements.InvokeMethod.Result%2A> bağımsız değişken.  
   
-3.  Yinelemek <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> koleksiyonu ve her bağımsız değişken kaydedin.  
+3. Yinelemek <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> koleksiyonu ve her bağımsız değişken kaydedin.  
   
- Sonuçta elde edilen özel durum türüdür <xref:System.Activities.InvalidWorkflowException> şu iletiyle: 'InvokeMethod': 'TargetObject' adıyla bir değişken RuntimeArgument veya zaten bir DelegateArgument bulunmaktadır. Adları bir ortam kapsamı içinde benzersiz olmalıdır.  
+   Sonuçta elde edilen özel durum türüdür <xref:System.Activities.InvalidWorkflowException> şu iletiyle: 'InvokeMethod': 'TargetObject' adıyla bir değişken RuntimeArgument veya zaten bir DelegateArgument bulunmaktadır. Adları bir ortam kapsamı içinde benzersiz olmalıdır.  
   
- Bu kısıtlama geçerli değildir <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> ve <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A> çünkü bunlar iş akışı bağımsız değişken değildir ve bu nedenle, kayıtlı olmayan <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> koleksiyonunu <xref:System.Activities.Statements.InvokeMethod> etkinliğinde <xref:System.Activities.Activity.CacheMetadata%2A> yöntemi.  
+   Bu kısıtlama geçerli değildir <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> ve <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A> çünkü bunlar iş akışı bağımsız değişken değildir ve bu nedenle, kayıtlı olmayan <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> koleksiyonunu <xref:System.Activities.Statements.InvokeMethod> etkinliğinde <xref:System.Activities.Activity.CacheMetadata%2A> yöntemi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Temel öğeler](../workflow-designer/primitives-activity-designers.md)   

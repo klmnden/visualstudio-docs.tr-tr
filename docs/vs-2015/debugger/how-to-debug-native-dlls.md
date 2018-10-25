@@ -28,12 +28,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eea8457c988e6ce1ff5f965a0154e8f2dbe87a2e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2807fa9d0085c70e3336a5f9a0d66b28a775f4fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244432"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830606"
 ---
 # <a name="how-to-debug-native-dlls"></a>Nasıl Yapılır: Yerel DLL'lerde Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,29 +43,29 @@ ms.locfileid: "49244432"
   
  Bir DLL'de hata ayıklamak, hata ayıklamayı başlayabilirsiniz:  
   
--   Yürütülebilir dosyayı oluşturmak için kullanılan proje DLL çağırır.  
+- Yürütülebilir dosyayı oluşturmak için kullanılan proje DLL çağırır.  
   
- \- veya -  
+  \- veya -  
   
--   DLL'yi oluşturmak için kullanılan proje.  
+- DLL'yi oluşturmak için kullanılan proje.  
   
- Yürütülebilir dosyayı oluşturmak için kullanılan bir proje varsa, bu projeden hata ayıklamayı başlatın. Ardından, DLL için bir kaynak dosyasını açın ve yürütülebilir dosyayı oluşturmak için kullanılan projenin bir parçası olmasa bile, bu dosyada kesme noktaları ayarlayın. Daha fazla bilgi için [kesme noktaları](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
+  Yürütülebilir dosyayı oluşturmak için kullanılan bir proje varsa, bu projeden hata ayıklamayı başlatın. Ardından, DLL için bir kaynak dosyasını açın ve yürütülebilir dosyayı oluşturmak için kullanılan projenin bir parçası olmasa bile, bu dosyada kesme noktaları ayarlayın. Daha fazla bilgi için [kesme noktaları](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
- DLL oluşturur projeden hata ayıklamayı başlatırsanız, hata ayıklama DLL içinde kullanmak istediğiniz yürütülebilir dosyanın belirtmeniz gerekir.  
+  DLL oluşturur projeden hata ayıklamayı başlatırsanız, hata ayıklama DLL içinde kullanmak istediğiniz yürütülebilir dosyanın belirtmeniz gerekir.  
   
 ### <a name="to-specify-an-executable-for-the-debug-session"></a>Hata ayıklama oturumu için yürütülebilir bir dosya belirtmek için  
   
-1.  İçinde **Çözüm Gezgini**, DLL oluşturur projeyi seçin.  
+1. İçinde **Çözüm Gezgini**, DLL oluşturur projeyi seçin.  
   
-2.  Gelen **görünümü** menüsünde seçin**özellik sayfaları**.  
+2. Gelen **görünümü** menüsünde seçin**özellik sayfaları**.  
   
-3.  İçinde **özellik sayfaları** açık iletişim kutusunu **yapılandırma özellikleri** klasörü ve select **hata ayıklama** kategorisi.  
+3. İçinde **özellik sayfaları** açık iletişim kutusunu **yapılandırma özellikleri** klasörü ve select **hata ayıklama** kategorisi.  
   
-4.  İçinde **komut** kutusunda, kapsayıcı için yol adı belirtin. Örneğin, C:\Program Files\MyApplication\MYAPP. EXE.  
+4. İçinde **komut** kutusunda, kapsayıcı için yol adı belirtin. Örneğin, C:\Program Files\MyApplication\MYAPP. EXE.  
   
-5.  İçinde **komut satırı bağımsız değişkenlerini** kutusunda, yürütülebilir dosya için gerekli olan herhangi bir bağımsız değişken belirtin.  
+5. İçinde **komut satırı bağımsız değişkenlerini** kutusunda, yürütülebilir dosya için gerekli olan herhangi bir bağımsız değişken belirtin.  
   
- Yürütülebilir dosya belirtmezseniz _proje_**özellik sayfaları** iletişim kutusu, [hata ayıklama oturumu iletişim kutusu için yürütülebilir](../debugger/executable-for-debugging-session-dialog-box.md) hata ayıklamaya başladığınızda görünür.  
+   Yürütülebilir dosya belirtmezseniz _proje_**özellik sayfaları** iletişim kutusu, [hata ayıklama oturumu iletişim kutusu için yürütülebilir](../debugger/executable-for-debugging-session-dialog-box.md) hata ayıklamaya başladığınızda görünür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   

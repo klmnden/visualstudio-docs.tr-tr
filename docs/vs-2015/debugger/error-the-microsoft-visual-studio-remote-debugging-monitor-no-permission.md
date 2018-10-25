@@ -27,12 +27,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c65a5ed9cc06c8d9c4d471b878762d863802f5f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20accedd9591c777cad26aed30c05954dfabbdfc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289048"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811095"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>Hata: Uzak bilgisayardaki Microsoft Visual Studio Uzaktan Hata Ayıklama İzleyicisinin bu bilgisayara bağlanma izni yok.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ Visual Studio uzaktan hata ayıklama İzleyicisi (msvsmon) çalıştırmayı den
   
 ### <a name="to-fix-this-problem"></a>Bu sorunu gidermek için  
   
--   Visual Studio hata ayıklayıcısı ana bilgisayar aynı adı ve parola msvsmon uzak bilgisayarda çalışan kullanıcı hesabı için bir kullanıcı hesabı eklemek,  
+- Visual Studio hata ayıklayıcısı ana bilgisayar aynı adı ve parola msvsmon uzak bilgisayarda çalışan kullanıcı hesabı için bir kullanıcı hesabı eklemek,  
   
-     \- veya -  
+   \- veya -  
   
--   Msvsmon yerel bilgisayara çağırma izni olan bir kullanıcı olarak çalıştırın. Başka bir deyişle, kullanıcının bir etki alanı kullanıcısı ve msvsmon bilgisayarda yönetici olması gerekir. Msvsmon iki yoldan biriyle çalıştırmak için kullanıcı hesabı belirtebilirsiniz:  
+- Msvsmon yerel bilgisayara çağırma izni olan bir kullanıcı olarak çalıştırın. Başka bir deyişle, kullanıcının bir etki alanı kullanıcısı ve msvsmon bilgisayarda yönetici olması gerekir. Msvsmon iki yoldan biriyle çalıştırmak için kullanıcı hesabı belirtebilirsiniz:  
   
-    -   Msvsmon simgesini sağ tıklatın ve seçin **Çalıştır** kısayol menüsünden  
+  - Msvsmon simgesini sağ tıklatın ve seçin **Çalıştır** kısayol menüsünden  
   
-     \- veya -  
+    \- veya -  
   
-    -   Komut isteminde çalıştırın `runas.exe`.  
+  - Komut isteminde çalıştırın `runas.exe`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uzaktan etki alanları arasında hata ayıklama](http://msdn.microsoft.com/library/8e697ce1-55e8-4ab0-a05f-f87225e2f29b)   

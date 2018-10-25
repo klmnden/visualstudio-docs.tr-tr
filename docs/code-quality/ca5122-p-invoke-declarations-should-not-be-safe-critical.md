@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 371f027782c4cf598bb234107e94aaea2bc896fc
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 30aea58afe014a4b6e19b32c03c780c129ec479d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549848"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896061"
 ---
 # <a name="ca5122-pinvoke-declarations-should-not-be-safe-critical"></a>CA5122 P/Invoke bildirimleri güvenli kritik olmamalıdır
+
 |||
 |-|-|
 |TypeName|PInvokesShouldNotBeSafeCriticalFxCopRule|
@@ -38,7 +39,6 @@ public class C
     [DllImport("kernel32.dll")]
     public static extern bool Beep(int frequency, int duration); // CA5122 - safe critical p/invoke
    }
-
 ```
 
  Bu örnekte, `C.Beep(...)` güvenlik bir güvenli kritik yöntem işaretlenmiştir.
@@ -64,7 +64,6 @@ class C
       return BeepPInvoke(frequency, duration);
    }
 }
-
 ```
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında

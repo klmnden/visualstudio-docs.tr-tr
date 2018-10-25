@@ -13,12 +13,12 @@ ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 589e09f2eb6dae64a9f199b64a93238161d4731d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3932272acbfbfb7108b4b8d38ce526b51ef6e45c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268358"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852029"
 ---
 # <a name="creating-a-software-development-kit"></a>Yazılık Geliştirme Seti Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Bir yazılım geliştirme seti (SDK), Visual Studio'da tek bir öğe olarak baş
   
  SDK'ları iki tür vardır:  
   
--   Platform SDK'larını bir platform için uygulamalar geliştirmeye yönelik zorunlu bileşenlerdir. Örneğin, [!INCLUDE[win81](../includes/win81-md.md)] geliştirmek için SDK'sı gereklidir [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] uygulamalar.  
+- Platform SDK'larını bir platform için uygulamalar geliştirmeye yönelik zorunlu bileşenlerdir. Örneğin, [!INCLUDE[win81](../includes/win81-md.md)] geliştirmek için SDK'sı gereklidir [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] uygulamalar.  
   
--   Uzantı Sdk'leri, platform için uygulamalar geliştirmek için zorunlu değildir ancak bir platformunu genişletmeye isteğe bağlı bileşenlerdir.  
+- Uzantı Sdk'leri, platform için uygulamalar geliştirmek için zorunlu değildir ancak bir platformunu genişletmeye isteğe bağlı bileşenlerdir.  
   
- Aşağıdaki bölümlerde SDK'ları ve platform SDK'sı oluşturma genel altyapı ve uzantı SDK.  
+  Aşağıdaki bölümlerde SDK'ları ve platform SDK'sı oluşturma genel altyapı ve uzantı SDK.  
   
--   [Platform SDK'ları](#PlatformSDKs)  
+- [Platform SDK'ları](#PlatformSDKs)  
   
--   [Uzantı SDK'ları](#ExtensionSDKs)  
+- [Uzantı SDK'ları](#ExtensionSDKs)  
   
 ##  <a name="PlatformSDKs"></a> Platform SDK'ları  
  Platform SDK'larını, bir platform için uygulamalar geliştirmek için gereklidir. Örneğin, [!INCLUDE[win81](../includes/win81-md.md)] uygulamaları geliştirmek için SDK'sı gereklidir [!INCLUDE[win81](../includes/win81-md.md)].  

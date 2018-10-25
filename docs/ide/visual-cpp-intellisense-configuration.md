@@ -9,11 +9,11 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 3772c2c910188aacb675f267d20f5e0f16565001
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881578"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836651"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>IntelliSense için bir C++ projesi yapılandırma
 

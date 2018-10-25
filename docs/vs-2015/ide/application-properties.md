@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b74279373a11a13fd7e2e3fc47b2eb57e35d981
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a89832fe70e2e19085e8006646de5370b6019cbc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209020"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848624"
 ---
 # <a name="application-properties"></a>Uygulama Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,31 +32,31 @@ Genel Uygulama Özellikleri Visual Basic, C# ve F # uygulamaları, uygulama tür
   
  Aşağıdaki görevler de gerçekleştirilebilir **uygulama** bölmesi:  
   
--   Derleme bilgilerini belirtin  
+- Derleme bilgilerini belirtin  
   
--   Bir uygulama için giriş ekranı belirtin  
+- Bir uygulama için giriş ekranı belirtin  
   
--   Uygulama düzeyinde olaylar belirtin  
+- Uygulama düzeyinde olaylar belirtin  
   
--   Bir derleme adı değiştirme  
+- Bir derleme adı değiştirme  
   
--   Bir uygulama için ad alanını değiştirme  
+- Bir uygulama için ad alanını değiştirme  
   
--   Uygulama türünü değiştirme  
+- Uygulama türünü değiştirme  
   
--   Bir uygulama için Başlangıç nesnesi değiştirme  
+- Bir uygulama için Başlangıç nesnesi değiştirme  
   
--   Uygulama simgesi belirtme  
+- Uygulama simgesi belirtme  
   
--   Windows XP görsel stilleri etkinleştirme  
+- Windows XP görsel stilleri etkinleştirme  
   
--   Bir uygulama için örneklemesini davranışı belirtin  
+- Bir uygulama için örneklemesini davranışı belirtin  
   
--   Özel kullanıcı kimlik doğrulamasını etkinleştirme  
+- Özel kullanıcı kimlik doğrulamasını etkinleştirme  
   
--   Bir uygulama için Kapatma davranışı belirtin  
+- Bir uygulama için Kapatma davranışı belirtin  
   
- Uygulamanız için kullanabileceği görevleri, kullanılan bir geliştirme dilini bağlıdır.  
+  Uygulamanız için kullanabileceği görevleri, kullanılan bir geliştirme dilini bağlıdır.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Nasıl Yapılır: Uygulama Simgesi Belirtme (Visual Basic C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  

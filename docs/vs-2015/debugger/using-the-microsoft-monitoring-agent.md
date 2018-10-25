@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3dcaf561e54f160e19e2c330486179609c810109
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a4e4268220531db9cdedeeb8fa6e1db27e6ebf87
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286747"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853206"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Microsoft İzleme Aracısı’nı kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,33 +87,33 @@ Kullanarak IIS ile barındırılan ASP.NET web uygulamaları ve SharePoint 2010 
 ####  <a name="FullPermissionsITLog"></a> S: uygulama havuzu için izinleri nasıl ayarlayabilirim?  
  **Y:** Windows kullanın **icacls** komutunu ya da Windows Explorer (veya dosya Gezgini) kullanın. Örneğin:  
   
--   Windows ile izinleri ayarlamak için **icacls** komutu:  
+- Windows ile izinleri ayarlamak için **icacls** komutu:  
   
-    -   İçinde bir web uygulaması için **DefaultAppPool** uygulama havuzu:  
+  - İçinde bir web uygulaması için **DefaultAppPool** uygulama havuzu:  
   
-         `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\DefaultAppPool":RX`  
+     `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\DefaultAppPool":RX`  
   
-    -   Bir SharePoint uygulaması için **SharePoint - 80** uygulama havuzu:  
+  - Bir SharePoint uygulaması için **SharePoint - 80** uygulama havuzu:  
   
-         `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
+     `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
   
-     veya  
+    veya  
   
--   Windows Explorer'ı (ya da File Explorer) ile izinleri ayarlamak için:  
+- Windows Explorer'ı (ya da File Explorer) ile izinleri ayarlamak için:  
   
-    1.  Açık **özellikleri** IntelliTrace günlük dizini için.  
+  1.  Açık **özellikleri** IntelliTrace günlük dizini için.  
   
-    2.  Üzerinde **güvenlik** sekmesini, **Düzenle**, **Ekle**.  
+  2.  Üzerinde **güvenlik** sekmesini, **Düzenle**, **Ekle**.  
   
-    3.  Emin olun **yerleşik güvenlik esasları** görünür **bu nesne türünü seç** kutusu. Bunu sahip değil, seçerseniz **nesne türlerini** ekleyin.  
+  3.  Emin olun **yerleşik güvenlik esasları** görünür **bu nesne türünü seç** kutusu. Bunu sahip değil, seçerseniz **nesne türlerini** ekleyin.  
   
-    4.  Yerel bilgisayarınıza emin görünür **bu konumdan** kutusu. Bunu sahip değil, seçerseniz **konumları** değiştirmek için.  
+  4.  Yerel bilgisayarınıza emin görünür **bu konumdan** kutusu. Bunu sahip değil, seçerseniz **konumları** değiştirmek için.  
   
-    5.  İçinde **Seçilecek nesne adlarını girin** kutusunda, web uygulaması ya da SharePoint uygulaması için uygulama havuzunu ekleyin.  
+  5.  İçinde **Seçilecek nesne adlarını girin** kutusunda, web uygulaması ya da SharePoint uygulaması için uygulama havuzunu ekleyin.  
   
-    6.  Seçin **Adları Denetle** adı çözümlenemedi. Seçin **Tamam**.  
+  6.  Seçin **Adları Denetle** adı çözümlenemedi. Seçin **Tamam**.  
   
-    7.  Uygulama havuzu olduğundan emin olun **okuma & yürütme** izinleri.  
+  7.  Uygulama havuzu olduğundan emin olun **okuma & yürütme** izinleri.  
   
 ##  <a name="MonitorEvents"></a> 2. adım: uygulamanızı izlemeye başlama  
  Windows PowerShell'i [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) start monitoring your App. komutu. System Center 2012 kullanıyorsanız, bkz [Microsoft Monitoring Agent ile Web uygulamalarını izleme](http://technet.microsoft.com/library/dn465157.aspx).  
@@ -157,83 +157,83 @@ Kullanarak IIS ile barındırılan ASP.NET web uygulamaları ve SharePoint 2010 
 ####  <a name="Minimizing"></a> S: uygulamamı yavaşlatmadan en çok veriyi nasıl alabilirim?  
  **Y:** Microsoft İzleme Aracısı çok fazla veri toplayabilir ve toplamasını veriler ve nasıl topladığınıza göre uygulamanızın performansını etkiler. Uygulamanızı yavaşlatmadan en çok veriyi almak için bazı yollar şunlardır:  
   
--   Web uygulamaları ve SharePoint uygulamaları için, aracı belirtilen uygulama havuzunu paylaşan her uygulama için veri kaydeder. Bu aynı uygulama havuzunu paylaşan herhangi bir uygulamayı, toplamayı tek bir uygulamanın modüllerine kısıtlamanıza rağmen yavaşlatabilir. Diğer uygulamaları yavaşlatmayı önlemek için, her uygulamayı kendi uygulama havuzunda barındırın.  
+- Web uygulamaları ve SharePoint uygulamaları için, aracı belirtilen uygulama havuzunu paylaşan her uygulama için veri kaydeder. Bu aynı uygulama havuzunu paylaşan herhangi bir uygulamayı, toplamayı tek bir uygulamanın modüllerine kısıtlamanıza rağmen yavaşlatabilir. Diğer uygulamaları yavaşlatmayı önlemek için, her uygulamayı kendi uygulama havuzunda barındırın.  
   
--   Toplama planında aracının veri topladığı olayları gözden geçirin. Uygun olmayan veya sizi İlginiz dahilinde olmayan olayları devre dışı bırakmak için toplama planını düzenleyin. Bu, başlangıç ve çalışma zamanı performansını artırabilir.  
+- Toplama planında aracının veri topladığı olayları gözden geçirin. Uygun olmayan veya sizi İlginiz dahilinde olmayan olayları devre dışı bırakmak için toplama planını düzenleyin. Bu, başlangıç ve çalışma zamanı performansını artırabilir.  
   
-     Bir olayı devre dışı bırakmak için ayarlanmış `enabled` özniteliğini `<DiagnosticEventSpecification>` öğesine `false`:  
+   Bir olayı devre dışı bırakmak için ayarlanmış `enabled` özniteliğini `<DiagnosticEventSpecification>` öğesine `false`:  
   
-     `<DiagnosticEventSpecification enabled="false">`  
+   `<DiagnosticEventSpecification enabled="false">`  
   
-     Varsa `enabled` öznitelik yoksa, olay etkinleştirilmiştir.  
+   Varsa `enabled` öznitelik yoksa, olay etkinleştirilmiştir.  
   
-     Örneğin:  
+   Örneğin:  
   
-    -   Windows Workflow kullanmayan uygulamalar için Windows Workflow olaylarını devre dışı bırakın.  
+  -   Windows Workflow kullanmayan uygulamalar için Windows Workflow olaylarını devre dışı bırakın.  
   
-    -   Kayıt defterine erişen ancak kayıt defteri ayarlarında sorun göstermeyen uygulamalar için kayıt defteri olaylarını devre dışı bırakın.  
+  -   Kayıt defterine erişen ancak kayıt defteri ayarlarında sorun göstermeyen uygulamalar için kayıt defteri olaylarını devre dışı bırakın.  
   
--   Toplama planında aracının veri topladığı modülleri gözden geçirin. Toplama planını yalnızca ilginizi çeken modülleri içerecek şekilde düzenleyin.  
+- Toplama planında aracının veri topladığı modülleri gözden geçirin. Toplama planını yalnızca ilginizi çeken modülleri içerecek şekilde düzenleyin.  
   
-     Bu uygulama başladığında ve çalıştığında aracının topladığı yöntem çağrı bilgisi ve diğer araç verisi miktarını azaltır. Bu veriler, hata ayıklarken kod içinde adım adım ilerlemenize ve işlev çağrılarına gönderilen ve bu çağrılardan alınan değerleri gözden geçirmenize yardımcı olur.  
+   Bu uygulama başladığında ve çalıştığında aracının topladığı yöntem çağrı bilgisi ve diğer araç verisi miktarını azaltır. Bu veriler, hata ayıklarken kod içinde adım adım ilerlemenize ve işlev çağrılarına gönderilen ve bu çağrılardan alınan değerleri gözden geçirmenize yardımcı olur.  
   
-    1.  Toplama planını açın. Bulma `<ModuleList>` öğesi.  
+  1. Toplama planını açın. Bulma `<ModuleList>` öğesi.  
   
-    2.  İçinde `<ModuleList>`ayarlayın `isExclusionList` özniteliğini `false`.  
+  2. İçinde `<ModuleList>`ayarlayın `isExclusionList` özniteliğini `false`.  
   
-    3.  Kullanım `<Name>` her modülü aşağıdakileri biri ile belirtmek için öğe: dosya adı, adında, dize veya ortak anahtar içeren her modülü içermek için dize değeri.  
+  3. Kullanım `<Name>` her modülü aşağıdakileri biri ile belirtmek için öğe: dosya adı, adında, dize veya ortak anahtar içeren her modülü içermek için dize değeri.  
   
      Bu örnek, Fabrikam Fiber web uygulamasının yalnızca ana modülünden veri toplayan bir liste oluşturur:  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>FabrikamFiber.Web.dll</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>FabrikamFiber.Web.dll</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     Adı "Fabrikam" içeren modüllerden veri toplamak için aşağıdakine benzer bir liste oluşturun:  
+   Adı "Fabrikam" içeren modüllerden veri toplamak için aşağıdakine benzer bir liste oluşturun:  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>Fabrikam</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>Fabrikam</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     Kendi ortak anahtar belirteçlerini belirterek modüllerden veri toplamak için aşağıdakine benzer bir liste oluşturun:  
+   Kendi ortak anahtar belirteçlerini belirterek modüllerden veri toplamak için aşağıdakine benzer bir liste oluşturun:  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>PublicKeyToken:B77A5C561934E089</Name>  
-       <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>  
-       <Name>PublicKeyToken:31BF3856AD364E35</Name>  
-       <Name>PublicKeyToken:89845DCD8080CC91</Name>  
-       <Name>PublicKeyToken:71E9BCE111E9429C</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>PublicKeyToken:B77A5C561934E089</Name>  
+     <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>  
+     <Name>PublicKeyToken:31BF3856AD364E35</Name>  
+     <Name>PublicKeyToken:89845DCD8080CC91</Name>  
+     <Name>PublicKeyToken:71E9BCE111E9429C</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     **S: neden değil yalnızca modülleri yerine dışlansın mı?**  
+   **S: neden değil yalnızca modülleri yerine dışlansın mı?**  
   
-     **Y:** varsayılan olarak ayarlayarak toplama planlarını modülleri hariç `isExclusionList` özniteliğini `true`. Ancak bu, yine de üçüncü taraf veya açık kaynak modüller gibi listenin ölçütlerine uymayan veya ilgilenmediğiniz modüllerden veri toplayabilir.  
+   **Y:** varsayılan olarak ayarlayarak toplama planlarını modülleri hariç `isExclusionList` özniteliğini `true`. Ancak bu, yine de üçüncü taraf veya açık kaynak modüller gibi listenin ölçütlerine uymayan veya ilgilenmediğiniz modüllerden veri toplayabilir.  
   
 #### <a name="q-what-values-does-the-agent-collect"></a>S: Aracı hangi değerleri toplar?  
  **Y:** performans üzerindeki etkiyi azaltmak için aracı yalnızca şu değerleri toplar:  
   
--   Yöntemlere geçirilen ve yöntemlerden döndürülen ilkel veri türleri  
+- Yöntemlere geçirilen ve yöntemlerden döndürülen ilkel veri türleri  
   
--   Yöntemlere geçirilen veya yöntemlerden geri döndürülen en üst düzey nesnelerin alanlarındaki ilkel veri türleri  
+- Yöntemlere geçirilen veya yöntemlerden geri döndürülen en üst düzey nesnelerin alanlarındaki ilkel veri türleri  
   
- Örneğin, sahip olduğunuz varsayalım. bir `AlterEmployee` kabul eden bir tamsayı yöntem imzası `id` ve `Employee` nesne `oldemployee`:  
+  Örneğin, sahip olduğunuz varsayalım. bir `AlterEmployee` kabul eden bir tamsayı yöntem imzası `id` ve `Employee` nesne `oldemployee`:  
   
- `public Employee AlterEmployee(int id, Employee oldemployee)`  
+  `public Employee AlterEmployee(int id, Employee oldemployee)`  
   
- `Employee` Türü şu öznitelikler bulunur: `Id`, `Name`, ve `HomeAddress`. Arasında bir ilişkilendirme ilişkisi var. `Employee` ve `Address` türü.  
+  `Employee` Türü şu öznitelikler bulunur: `Id`, `Name`, ve `HomeAddress`. Arasında bir ilişkilendirme ilişkisi var. `Employee` ve `Address` türü.  
   
- ![Çalışan ve adresi arasındaki ilişkiyi](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
+  ![Çalışan ve adresi arasındaki ilişkiyi](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
   
- Aracı `id`, `Employee.Id` ve `Employee.Name` değerlerini ve `Employee` yönteminden döndürülen `AlterEmployee` nesnesini kaydeder. Ancak aracı `Address` nesnesi hakkında, nesnenin null olup olmadığı dışında bilgi kaydetmez. Aracı, ayrıca, `AlterEmployee` yöntemindeki yerel değişkenlerle ilgili olarak, diğer yöntemler bu yerel değişkenleri parametre olarak kullanıp onların yöntem parametresi olarak kaydedilmesini sağlamadığı sürece, veri kaydetmez.  
+  Aracı `id`, `Employee.Id` ve `Employee.Name` değerlerini ve `Employee` yönteminden döndürülen `AlterEmployee` nesnesini kaydeder. Ancak aracı `Address` nesnesi hakkında, nesnenin null olup olmadığı dışında bilgi kaydetmez. Aracı, ayrıca, `AlterEmployee` yöntemindeki yerel değişkenlerle ilgili olarak, diğer yöntemler bu yerel değişkenleri parametre olarak kullanıp onların yöntem parametresi olarak kaydedilmesini sağlamadığı sürece, veri kaydetmez.  
   
 ##  <a name="SaveEvents"></a> 3. adım: Kayıtlı olayları kaydetme  
  Bir hata veya performans sorunu bulduğunuzda, kayıtlı olayları bir IntelliTrace günlüğüne kaydedin. Aracı günlüğü yalnızca olay kaydettiyse oluşturur. System Center 2012 kullanıyorsanız, bkz [Microsoft Monitoring Agent ile Web uygulamalarını izleme](http://technet.microsoft.com/library/dn465157.aspx).  
@@ -241,63 +241,63 @@ Kullanarak IIS ile barındırılan ASP.NET web uygulamaları ve SharePoint 2010 
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Kayıtlı olayları kaydedip izlemeye devam etme  
  IntelliTrace günlüğünü oluşturmak istediğinizde ancak uygulamanızı yeniden başlatmak veya izlemeyi durdurmak istemediğinizde bu adımları izleyin. Aracı, sunucu veya uygulama yeniden başlasa bile izlemeye devam eder.  
   
-1.  Web sunucunuzda yönetici olarak bir Windows PowerShell komut istemi penceresi açın.  
+1. Web sunucunuzda yönetici olarak bir Windows PowerShell komut istemi penceresi açın.  
   
-2.  Çalıştırma [Checkpoint-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313684) komut IntelliTrace günlüğünün görüntüsünü kaydetmek için:  
+2. Çalıştırma [Checkpoint-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313684) komut IntelliTrace günlüğünün görüntüsünü kaydetmek için:  
   
-     **Checkpoint-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
+    **Checkpoint-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
   
-     \- veya -  
+    \- veya -  
   
-     **Checkpoint-WebApplicationMonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
+    **Checkpoint-WebApplicationMonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
-     Örneğin:  
+    Örneğin:  
   
-     **PS C:\\> Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**  
+    **PS C:\\> Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**  
   
-     veya  
+    veya  
   
-     **PS C: > Checkpoint-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
+    **PS C: > Checkpoint-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
   
-     Daha fazla bilgi için **Checkpoint-WebApplicationMonitoring get-help – ayrıntılı** komutu veya **Checkpoint-WebApplicationMonitoring get-help-örnekler** komutu.  
+    Daha fazla bilgi için **Checkpoint-WebApplicationMonitoring get-help – ayrıntılı** komutu veya **Checkpoint-WebApplicationMonitoring get-help-örnekler** komutu.  
   
-3.  Günlüğü güvenli paylaşılan klasöre kopyalayın ve Visual Studio Enterprise (ancak Professional veya Community sürümlerini) sahip bir bilgisayarda oturum açın.  
+3. Günlüğü güvenli paylaşılan klasöre kopyalayın ve Visual Studio Enterprise (ancak Professional veya Community sürümlerini) sahip bir bilgisayarda oturum açın.  
   
-    > [!IMPORTANT]
-    >  Kişisel ve hassas veriler içerebileceklerinden, IntelliTrace günlüklerini paylaşırken dikkatli olun. Bu günlüklere erişebilen kişilerin o verileri görme izni olduğundan emin olun. Şirketinizin gizlilik ilkelerini denetleyin.  
+   > [!IMPORTANT]
+   >  Kişisel ve hassas veriler içerebileceklerinden, IntelliTrace günlüklerini paylaşırken dikkatli olun. Bu günlüklere erişebilen kişilerin o verileri görme izni olduğundan emin olun. Şirketinizin gizlilik ilkelerini denetleyin.  
   
- **Sonraki:** [Tanıla kaydedilen olayları Visual Studio Enterprise'da](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
+   **Sonraki:** [Tanıla kaydedilen olayları Visual Studio Enterprise'da](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
 ### <a name="save-recorded-events-and-stop-monitoring"></a>Kayıtlı olayları kaydedip izlemeyi durdurma  
  Belirli bir sorunu yeniden oluştururken yalnızca tanı bilgilerini almak istediğinizde bu adımları izleyin. Bu, web sunucunuzdaki tüm web uygulamalarını yeniden başlatır.  
   
-1.  Web sunucunuzda yönetici olarak bir Windows PowerShell komut istemi penceresi açın.  
+1. Web sunucunuzda yönetici olarak bir Windows PowerShell komut istemi penceresi açın.  
   
-2.  Çalıştırma [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) IntelliTrace günlüğü oluşturmak ve belirli bir web uygulamasını izlemeyi durdurmak için komut:  
+2. Çalıştırma [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) IntelliTrace günlüğü oluşturmak ve belirli bir web uygulamasını izlemeyi durdurmak için komut:  
   
-     **Stop-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
+    **Stop-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
   
-     \- veya -  
+    \- veya -  
   
-     **Webuygulamasınıizlemeyi Durdur "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
+    **Webuygulamasınıizlemeyi Durdur "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
-     Veya tüm web uygulamaları izlemeyi durdurmak için:  
+    Veya tüm web uygulamaları izlemeyi durdurmak için:  
   
-     **Stop-WebApplicationMonitoring - tüm**  
+    **Stop-WebApplicationMonitoring - tüm**  
   
-     Örneğin:  
+    Örneğin:  
   
-     **PS C:\\> Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
+    **PS C:\\> Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
   
-     \- veya -  
+    \- veya -  
   
-     **PS C:\\> Stop-WebApplicationMonitoring "IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
+    **PS C:\\> Stop-WebApplicationMonitoring "IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
   
-     Daha fazla bilgi için **Stop-WebApplicationMonitoring get-help – ayrıntılı** komutu veya **Stop-WebApplicationMonitoring get-help-örnekler** komutu.  
+    Daha fazla bilgi için **Stop-WebApplicationMonitoring get-help – ayrıntılı** komutu veya **Stop-WebApplicationMonitoring get-help-örnekler** komutu.  
   
-3.  Günlüğü güvenli paylaşılan klasöre kopyalayın ve Visual Studio Enterprise'ı olan bir bilgisayarda oturum açın.  
+3. Günlüğü güvenli paylaşılan klasöre kopyalayın ve Visual Studio Enterprise'ı olan bir bilgisayarda oturum açın.  
   
- **Sonraki:** [Tanıla kaydedilen olayları Visual Studio Enterprise'da](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
+   **Sonraki:** [Tanıla kaydedilen olayları Visual Studio Enterprise'da](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
 ## <a name="q--a"></a>Soru - Yanıt  
   

@@ -17,12 +17,12 @@ ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8beb028ddf2d7a7921c753b39601ee297a75746
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c062ce943e2ee42cd90877827ab7b92ee33c871b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248566"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883659"
 ---
 # <a name="elements-of-a-project-model"></a>Proje Modeli Öğeleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,20 +33,20 @@ Arabirimleri ve tüm projelerde uygulamaları [!INCLUDE[vsprvs](../../includes/v
   
  Diğer uygulama konuları:  
   
--   Tek proje modeli, birden fazla proje türü içerebilir.  
+- Tek proje modeli, birden fazla proje türü içerebilir.  
   
--   Proje türleri ve proje Katılımcısı fabrikaları GUID'lerini aşağıdaki ile bağımsız olarak kaydedilir.  
+- Proje türleri ve proje Katılımcısı fabrikaları GUID'lerini aşağıdaki ile bağımsız olarak kaydedilir.  
   
--   Her proje, bir şablon dosyasında ya da kullanıcı yeni bir proje aracılığıyla oluşturduğunda, yeni proje dosyası başlatmak için Sihirbazı olmalıdır [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kullanıcı Arabirimi. Örneğin, [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] şablonları başlatmak .vcproj dosyaları sonunda ne olur.  
+- Her proje, bir şablon dosyasında ya da kullanıcı yeni bir proje aracılığıyla oluşturduğunda, yeni proje dosyası başlatmak için Sihirbazı olmalıdır [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kullanıcı Arabirimi. Örneğin, [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] şablonları başlatmak .vcproj dosyaları sonunda ne olur.  
   
- Aşağıdaki çizim, birincil arabirimleri, hizmetleri ve normal projesinin uygulaması oluşturan nesneleri gösterir. Uygulama Yardımcısı HierUtil7, temel alınan nesnelerin ve diğer programlama Demirbaş oluşturmak için kullanabilirsiniz. HierUtil7 uygulama Yardımcısı hakkında daha fazla bilgi için bkz: [derleme içinde değil: Proje türü (C++) uygulamak için HierUtil7 proje sınıfları kullanarak](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+  Aşağıdaki çizim, birincil arabirimleri, hizmetleri ve normal projesinin uygulaması oluşturan nesneleri gösterir. Uygulama Yardımcısı HierUtil7, temel alınan nesnelerin ve diğer programlama Demirbaş oluşturmak için kullanabilirsiniz. HierUtil7 uygulama Yardımcısı hakkında daha fazla bilgi için bkz: [derleme içinde değil: Proje türü (C++) uygulamak için HierUtil7 proje sınıfları kullanarak](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
- ![Visual Studio Proje Modeli grafiği](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
-Proje modeli  
+  ![Visual Studio Proje Modeli grafiği](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
+  Proje modeli  
   
- Arabirimler ve önceki diyagramda listelenen hizmetlerin ve diyagramda yer almayan diğer isteğe bağlı arabirimler hakkında daha fazla bilgi için bkz. [proje modeli çekirdek bileşenleri](../../extensibility/internals/project-model-core-components.md).  
+  Arabirimler ve önceki diyagramda listelenen hizmetlerin ve diyagramda yer almayan diğer isteğe bağlı arabirimler hakkında daha fazla bilgi için bkz. [proje modeli çekirdek bileşenleri](../../extensibility/internals/project-model-core-components.md).  
   
- Projeleri komutları destekleyebilir ve bu nedenle uygulamalıdır <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> komut içerikle GUID'leri komut yönlendirme de katılmak için arabirim.  
+  Projeleri komutları destekleyebilir ve bu nedenle uygulamalıdır <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> komut içerikle GUID'leri komut yönlendirme de katılmak için arabirim.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Denetim listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)   

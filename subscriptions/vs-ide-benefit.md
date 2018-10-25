@@ -9,12 +9,12 @@ description: Visual Studio IDE, Visual Studio aboneliğinize dahil yükleyip ö�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 775ab55066c241eb4881e19a33a8557aeada2aa4
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: e506fa463aa33571ab8b87844e266b0558c46df2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073850"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923569"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>Visual Studio 2017 avantajının kullanılmasıyla
 
@@ -28,28 +28,28 @@ Visual Studio abonesi olarak, Visual Studio IDE erişebilirsiniz.  Belirli bir s
 IDE indirmek için:
 1. Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Visual Studio IDE kutucuk Araçlar bölümünde bulun ve tıklayın **indirme** avantajı kutucuğun alt kısmındaki bağlantı.  Nden de indirebilirsiniz [indirir](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs) sayfası.
-    > [!div class="mx-imgBorder"]
-    > ![Visual Studio Enterprise kutucuğu](_img\vs-ide-experience\vs-ide-tile.png)
+   > [!div class="mx-imgBorder"]
+   > ![Visual Studio Enterprise kutucuğu](_img/vs-ide-experience/vs-ide-tile.png)
 
-3.  Tıklayın, Visual Studio IDE karşıdan yüklemek ve etkinleştirmek için bir ürün anahtarı almak için bir fırsat olduğu kuruluş için sonuçları karşıdan yükleme sayfasına yönlendirilirsiniz. Mavi tıklayarak da bir ürün anahtarı bildirebileceklerinden **anahtar Al** bağlantı veya bir anahtarı daha sonra talep [ürün anahtarlarını](https://my.visualstudio.com/productkeys) sayfası.
-4.  İndirme sonuçları sayfasının Ayrıntılar sekmesinde:
-    - İstenen Mimarinizi (x86, x64) seçin
-    - Dil tercihinizi belirleyin.
-5.  Mavi indir düğmesine tıklayın.
-    > [!div class="mx-imgBorder"]
-    > ![Visual Studio Enterprise Yükleme ayrıntıları](_img\vs-ide-experience\vs-ide-download-details.png)
-6.  Şimdi yüklemek için tıklayın **çalıştırma**.
-7.  Kullanıcı Hesabı Denetimi iletişim kutusundan tıklatın **Evet**.
-8.  Tıklayın **devam** lisans koşullarını kabul etmek için.
-9.  Yükleyici başladığında, karşılık gelen sekmelerinde seçerek istediğiniz iş yükleri, tek tek bileşenlerin ve dil paketlerini seçin.
-    > [!div class="mx-imgBorder"]
-    > ![Visual Studio Enterprise'ı özelleştirme](_img\vs-ide-experience\vs-ide-customize-install-cropped.png)
+3. Tıklayın, Visual Studio IDE karşıdan yüklemek ve etkinleştirmek için bir ürün anahtarı almak için bir fırsat olduğu kuruluş için sonuçları karşıdan yükleme sayfasına yönlendirilirsiniz. Mavi tıklayarak da bir ürün anahtarı bildirebileceklerinden **anahtar Al** bağlantı veya bir anahtarı daha sonra talep [ürün anahtarlarını](https://my.visualstudio.com/productkeys) sayfası.
+4. İndirme sonuçları sayfasının Ayrıntılar sekmesinde:
+   - İstenen Mimarinizi (x86, x64) seçin
+   - Dil tercihinizi belirleyin.
+5. Mavi indir düğmesine tıklayın.
+   > [!div class="mx-imgBorder"]
+   > ![Visual Studio Enterprise Yükleme ayrıntıları](_img/vs-ide-experience/vs-ide-download-details.png)
+6. Şimdi yüklemek için tıklayın **çalıştırma**.
+7. Kullanıcı Hesabı Denetimi iletişim kutusundan tıklatın **Evet**.
+8. Tıklayın **devam** lisans koşullarını kabul etmek için.
+9. Yükleyici başladığında, karşılık gelen sekmelerinde seçerek istediğiniz iş yükleri, tek tek bileşenlerin ve dil paketlerini seçin.
+   > [!div class="mx-imgBorder"]
+   > ![Visual Studio Enterprise'ı özelleştirme](_img/vs-ide-experience/vs-ide-customize-install-cropped.png)
 
-10.  **Yükle**'ye tıklatın.
+10. **Yükle**'ye tıklatın.
 
 11. Yükleme tamamlandığında yükleme değiştirmek ya da Visual Studio'yu başlatın seçeneği sunulur.  Tıklayın **başlatma** kullanmaya başlamak için.
     > [!div class="mx-imgBorder"]
-    > ![Visual Studio Enterprise'ı Başlat](_img\vs-ide-experience\vs-ide-launch-cropped.png)
+    > ![Visual Studio Enterprise'ı Başlat](_img/vs-ide-experience/vs-ide-launch-cropped.png)
 
 12. Visual Studio aboneliğinizle ilişkilendirilmiş olan hesapla oturum açın.
 
@@ -57,9 +57,10 @@ IDE indirmek için:
 
 14. Başlangıç sayfası görüntülenir.  Visual Studio kullanmaya başlamak hazırsınız!
     > [!div class="mx-imgBorder"]
-    > ![Visual Studio Enterprise'ı kullanmaya başlayın](_img\vs-ide-experience\vs-ide-start-cropped.png)
+    > ![Visual Studio Enterprise'ı kullanmaya başlayın](_img/vs-ide-experience/vs-ide-start-cropped.png)
 
 ## <a name="eligibility"></a>Uygunluk
+
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standart, yıllık bulut, aylık bulut)   | VL, Azure, perakende, seçili NFR<sup>1</sup> | Kullanılabilir       |  Evet          |

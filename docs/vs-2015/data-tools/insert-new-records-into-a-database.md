@@ -23,12 +23,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c0ae1272820b7d8ec5ef124aaaa77d44a1285dde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9613d154cd0d9bb307fbde6d7255a8f1ecce000
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297407"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891485"
 ---
 # <a name="insert-new-records-into-a-database"></a>Veritabanına yeni kayıtlar ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,18 +51,18 @@ Veritabanına yeni kayıtlar eklemek için kullanabileceğiniz `TableAdapter.Upd
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>TableAdapter.Update yöntemini kullanarak bir veritabanına yeni kayıtlar eklemek için  
   
-1.  Yeni kayıtlar için istenen ekleme <xref:System.Data.DataTable> yeni bir oluşturarak <xref:System.Data.DataRow> ve eklemeyi <xref:System.Data.DataTable.Rows%2A> koleksiyonu. Daha fazla bilgi için [nasıl yapılır: bir DataTable Add Rows](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
+1. Yeni kayıtlar için istenen ekleme <xref:System.Data.DataTable> yeni bir oluşturarak <xref:System.Data.DataRow> ve eklemeyi <xref:System.Data.DataTable.Rows%2A> koleksiyonu. Daha fazla bilgi için [nasıl yapılır: bir DataTable Add Rows](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
   
-2.  Yeni satırlar eklendikten sonra <xref:System.Data.DataTable>, çağrı `TableAdapter.Update` yöntemi. Tüm geçirerek ya da güncelleştirmek için veri miktarını denetleyebilirsiniz <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, bir dizi <xref:System.Data.DataRow>s ya da tek bir <xref:System.Data.DataRow>.  
+2. Yeni satırlar eklendikten sonra <xref:System.Data.DataTable>, çağrı `TableAdapter.Update` yöntemi. Tüm geçirerek ya da güncelleştirmek için veri miktarını denetleyebilirsiniz <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, bir dizi <xref:System.Data.DataRow>s ya da tek bir <xref:System.Data.DataRow>.  
   
-     Aşağıdaki kod, yeni bir kayıt eklemek gösterilmektedir bir <xref:System.Data.DataTable> ve sonra çağrı `TableAdapter.Update` yeni satır veritabanına kaydetmek için yöntemi. (Bu örnekte `Region` Northwind veritabanındaki tabloda.)  
+    Aşağıdaki kod, yeni bir kayıt eklemek gösterilmektedir bir <xref:System.Data.DataTable> ve sonra çağrı `TableAdapter.Update` yeni satır veritabanına kaydetmek için yöntemi. (Bu örnekte `Region` Northwind veritabanındaki tabloda.)  
   
-     [!code-csharp[VbRaddataSaving#14](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#14)]
-     [!code-vb[VbRaddataSaving#14](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#14)]  
+    [!code-csharp[VbRaddataSaving#14](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#14)]
+    [!code-vb[VbRaddataSaving#14](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#14)]  
   
- Uygulama verilerini depolamak için nesneleri kullanıyorsa, kullanabileceğiniz `TableAdapter.Insert` yöntemini doğrudan veritabanında yeni satırlar. `Insert` Yöntemi, her bir sütunun değerlerini ayrı ayrı parametre olarak kabul eder. Yeni bir kayıt yöntemini çağırarak geçirilen parametre değerleri ile veritabanına ekler.  
+   Uygulama verilerini depolamak için nesneleri kullanıyorsa, kullanabileceğiniz `TableAdapter.Insert` yöntemini doğrudan veritabanında yeni satırlar. `Insert` Yöntemi, her bir sütunun değerlerini ayrı ayrı parametre olarak kabul eder. Yeni bir kayıt yöntemini çağırarak geçirilen parametre değerleri ile veritabanına ekler.  
   
- Aşağıdaki yordam kullanır `Region` örnek olarak Northwind veritabanındaki tablo.  
+   Aşağıdaki yordam kullanır `Region` örnek olarak Northwind veritabanındaki tablo.  
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>TableAdapter.INSERT yöntemi kullanarak bir veritabanına yeni kayıtlar eklemek için  
   

@@ -14,12 +14,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b4e08b0ad058566bdd74522b94e0010d5cdc2f91
-ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
+ms.openlocfilehash: 3862f62439bd9b919d3c0534a8c2fe2d3c16fea9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168363"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926624"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Hızlı Başlangıç: Kullanım ilk Vue.js uygulamanızı oluşturmak için Visual Studio
 
@@ -64,13 +64,13 @@ Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE)
 
      ![VUE.js çözümü](../javascript/media/vuejs-solution.png)
 
-  - Kalın yazı tipinde vurgulanmış olduğu içinde verdiğiniz ad kullanarak projenize **yeni proje** iletişim kutusu. Disk üzerinde bu proje tarafından temsil edilen bir. *njsproj* proje klasörünüzdeki dosya.
+   - Kalın yazı tipinde vurgulanmış olduğu içinde verdiğiniz ad kullanarak projenize **yeni proje** iletişim kutusu. Disk üzerinde bu proje tarafından temsil edilen bir. *njsproj* proje klasörünüzdeki dosya.
 
-  - En üst düzeyinde ve proje ile aynı ada sahip varsayılan bir çözümdür. Bir çözüm tarafından temsil edilen bir. *sln* dosya diskte, bir veya daha fazla ilgili proje için bir kapsayıcıdır.
+   - En üst düzeyinde ve proje ile aynı ada sahip varsayılan bir çözümdür. Bir çözüm tarafından temsil edilen bir. *sln* dosya diskte, bir veya daha fazla ilgili proje için bir kapsayıcıdır.
 
-  - **Npm** düğüm tüm yüklü npm paketlerini gösterir. İçin arama yapın ve iletişim kutusunu kullanarak npm paketlerini yüklemek için npm düğümünü sağ tıklayabilirsiniz.
+   - **Npm** düğüm tüm yüklü npm paketlerini gösterir. İçin arama yapın ve iletişim kutusunu kullanarak npm paketlerini yüklemek için npm düğümünü sağ tıklayabilirsiniz.
 
-1. Npm paketlerini yükle veya bir komut istemi'nden Node.js komutları çalıştırmak, proje düğümüne sağ tıklayın ve seçin, isterseniz **burada açık komut istemi**.
+2. Npm paketlerini yükle veya bir komut istemi'nden Node.js komutları çalıştırmak, proje düğümüne sağ tıklayın ve seçin, isterseniz **burada açık komut istemi**.
 
 ## <a name="add-a-vue-file-to-the-project"></a>.Vue dosya projeye ekleyin.
 
