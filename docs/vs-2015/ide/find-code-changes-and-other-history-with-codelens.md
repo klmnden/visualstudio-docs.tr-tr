@@ -14,12 +14,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c1fac3a8fde417065aecb7e3882ff9dc12b06402
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: df4b435f791b066afda90ac9f5492a946d7e215c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224971"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825679"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens ile kod değişikliklerini ve diğer geçmişi bulma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,46 +42,46 @@ ms.locfileid: "49224971"
 ##  <a name="FindReferences"></a> Kodunuzda başvuruları Bul  
  Şunları yapmanız gerekir:  
   
--   Visual Studio Enterprise veya Visual Studio Professional  
+- Visual Studio Enterprise veya Visual Studio Professional  
   
--   Visual C# .NET veya Visual Basic .NET kodunu  
+- Visual C# .NET veya Visual Basic .NET kodunu  
   
- Seçin **başvuruları** göstergesi (**Alt + 2**). Görürseniz **0 başvuru**, Visual C# veya Visual Basic kodundan başvurularınız. Bu, XAML ve ASPX dosyaları gibi diğer öğelerdeki başvuruları içermez.  
+  Seçin **başvuruları** göstergesi (**Alt + 2**). Görürseniz **0 başvuru**, Visual C# veya Visual Basic kodundan başvurularınız. Bu, XAML ve ASPX dosyaları gibi diğer öğelerdeki başvuruları içermez.  
   
- ![CodeLens &#45; başvuru göstergesini seçin](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
+  ![CodeLens &#45; başvuru göstergesini seçin](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
   
- Başvuru kodu görmek için başvuru üzerinde fareyi hareket ettirin.  
+  Başvuru kodu görmek için başvuru üzerinde fareyi hareket ettirin.  
   
- ![CodeLens &#45; Özet başvuru](../ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")  
+  ![CodeLens &#45; Özet başvuru](../ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")  
   
- Başvuruyu içeren dosyayı açmak için başvuruyu çift tıklayın.  
+  Başvuruyu içeren dosyayı açmak için başvuruyu çift tıklayın.  
   
- Bu kod ve başvuruları, arasındaki ilişkileri görmek için [bir kod Haritası oluşturun](../modeling/map-dependencies-across-your-solutions.md) ve **tüm başvuruları göster** kod Haritası kısayol menüsünde.  
+  Bu kod ve başvuruları, arasındaki ilişkileri görmek için [bir kod Haritası oluşturun](../modeling/map-dependencies-across-your-solutions.md) ve **tüm başvuruları göster** kod Haritası kısayol menüsünde.  
   
- ![CodeLens &#45; başvuruları kod haritasında](../ide/media/codelensmappedreferences.png "CodeLensMappedReferences")  
+  ![CodeLens &#45; başvuruları kod haritasında](../ide/media/codelensmappedreferences.png "CodeLensMappedReferences")  
   
 ##  <a name="FindCodeHistory"></a> Kodunuzun geçmişini ve ilişkili öğeleri bulun  
  Kodunuzun geçmişini, kodunuzu ne olduğunu görmek için gözden geçirin. Ya da önce dala değişiklikleri kodunuzu nasıl etkileyeceğini daha iyi anlayabilmeniz için kodunuza birleştirilmiş değişiklikleri gözden geçirin.  
   
  Şunları yapmanız gerekir:  
   
--   Visual Studio Enterprise veya Visual Studio Professional  
+- Visual Studio Enterprise veya Visual Studio Professional  
   
--   Team Foundation Server 2013 veya üzeri, Visual Studio Team Services veya Git  
+- Team Foundation Server 2013 veya üzeri, Visual Studio Team Services veya Git  
   
--   [Lync 2010 veya üzeri ya da Skype Kurumsal'a](http://technet.microsoft.com/lync), takımınızın kod düzenleyicisinden başvurma  
+- [Lync 2010 veya üzeri ya da Skype Kurumsal'a](http://technet.microsoft.com/lync), takımınızın kod düzenleyicisinden başvurma  
   
- Team Foundation sürüm denetimi (TFVC) veya Git ile depolanan Visual C# .NET veya Visual Basic .NET kodu için sınıf ve yöntem düzeylerinde CodeLens ayrıntıları alın (*kod öğe düzeyinde* göstergeleri). Git deponuzu TfGit içinde barındırılıyorsa, aynı zamanda TFS iş öğelerinin bağlantılarını alın.  
+  Team Foundation sürüm denetimi (TFVC) veya Git ile depolanan Visual C# .NET veya Visual Basic .NET kodu için sınıf ve yöntem düzeylerinde CodeLens ayrıntıları alın (*kod öğe düzeyinde* göstergeleri). Git deponuzu TfGit içinde barındırılıyorsa, aynı zamanda TFS iş öğelerinin bağlantılarını alın.  
   
- ![Kod öğesi&#45;düzey göstergeler](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
+  ![Kod öğesi&#45;düzey göstergeler](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
   
- Tüm diğer Visual Studio düzenleyicisinde açabileceğiniz dosya türlerinde, CodeLens ayrıntıları dosyanın tamamını tek bir yerde pencerenin alt kısmında alın (*dosya düzeyinde* göstergeleri).  
+  Tüm diğer Visual Studio düzenleyicisinde açabileceğiniz dosya türlerinde, CodeLens ayrıntıları dosyanın tamamını tek bir yerde pencerenin alt kısmında alın (*dosya düzeyinde* göstergeleri).  
   
- ![Dosya&#45;CodeLens göstergeleri düzey](../ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
+  ![Dosya&#45;CodeLens göstergeleri düzey](../ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
   
- Göstergeleri seçmek için klavyeyi kullanmak için basılı tutun **ALT** ilgili sayı anahtarlarını görüntülemek için anahtar.  
+  Göstergeleri seçmek için klavyeyi kullanmak için basılı tutun **ALT** ilgili sayı anahtarlarını görüntülemek için anahtar.  
   
- ![Klavye erişimi sayıları görmek için ALT tuşuna basın](../ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
+  ![Klavye erişimi sayıları görmek için ALT tuşuna basın](../ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
   
 ### <a name="find-changes-in-your-code"></a>Kodunuzda değişiklikler Bul  
  C# veya Visual Basic kodu kimin değiştirdiğini ve bunlar kod öğe düzeyi göstergelerini yapılan değişiklikleri bulun. Team Foundation Server veya Visual Studio Team Services, Team Foundation sürüm denetimi (TFVC) kullandığınızda gördüğünüz budur.  
@@ -243,11 +243,11 @@ ms.locfileid: "49224971"
   
  **Hangi Lync ve Skype yapılandırmaları desteklenir?**  
   
--   Skype Kurumsal'a (32 bit veya 64-bit)  
+- Skype Kurumsal'a (32 bit veya 64-bit)  
   
--   Lync 2010 veya daha sonra tek başına (32 bit veya 64-bit), ancak değil, Lync Basic 2013 ile Windows 8.1  
+- Lync 2010 veya daha sonra tek başına (32 bit veya 64-bit), ancak değil, Lync Basic 2013 ile Windows 8.1  
   
- CodeLens, farklı Lync sürümlerine sahip desteklemiyor veya Skype yüklü. Bunlar, Visual Studio'nun tüm yerelleştirilmiş sürümleri için yerelleştirilmiş olmayabilir.  
+  CodeLens, farklı Lync sürümlerine sahip desteklemiyor veya Skype yüklü. Bunlar, Visual Studio'nun tüm yerelleştirilmiş sürümleri için yerelleştirilmiş olmayabilir.  
   
 ### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>S: nasıl yazı tipi ve renk için CodeLens değiştirebilirim?  
  **Y:** Git **Araçları**, **seçenekleri**, **ortam**, **yazı tipleri ve renkler**.  
