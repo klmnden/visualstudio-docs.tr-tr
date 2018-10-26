@@ -6,7 +6,6 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.Build_and_Run
-- VS.ToolsOptionsPag.Projects.Build_and_Run
 helpviewer_keywords:
 - builds [Visual Studio], setting up
 - run actions
@@ -17,53 +16,53 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6a569162105ffb577bdad854d973fff91b3c81b
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 1b2d047201214e3a7cd4c14c61baa041840decd8
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845044"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143326"
 ---
 # <a name="options-dialog-box-projects-and-solutions-build-and-run"></a>Seçenekler İletişim Kutusu, Projeler ve Çözümler, Derleme ve Çalıştırma
 
-Bu iletişim kutusunda, aynı anda oluşturabilirsiniz Visual C++ veya C# projeleri üst sınırını belirtebilirsiniz, belirli varsayılan davranışlar yapı ve bazı günlük ayarlarını oluşturun. Bu seçenekler erişmek için seçin **Araçlar > Seçenekler** genişletin **projeler ve çözümler**seçip **derleme ve çalıştırma**.
+Bu iletişim kutusunda, Visual C++ en yüksek sayısını belirtebilirsiniz veya C# aynı anda oluşturabilirsiniz projeleri, belirli bir varsayılan derleme davranışları ve bazı günlük ayarlarını oluşturun. Bu seçeneklere erişmek için seçin **Araçlar > Seçenekler** genişletin **projeler ve çözümler**seçip **derleme ve çalıştırma**.
 
-**Yapılar paralel olarak proje maksimum sayısı**
+**derleme en fazla paralel proje sayısı**
 
-Aynı anda oluşturabilirsiniz Visual C++ ve C# projeleri en fazla sayısını belirtir. Derleme işlemi iyileştirmek için paralel olarak proje derlemeleri sayısı bilgisayarınızın CPU sayısı için otomatik olarak ayarlanır. En fazla 32'dir.
+Visual C++ en fazla sayısını belirtir ve C# projeleri aynı anda oluşturabilirsiniz. Derleme işlemi iyileştirmek için en fazla paralel proje yapılandırma sayısını bilgisayarınızın CPU sayısını otomatik olarak ayarlanır. En fazla 32'dir.
 
-**Başlangıç projeleri ve bağımlılıkları çalıştırılmasında yalnızca derleme**
+**Başlangıç projelerini ve bağımlılıkları sadece çalıştırıldığında Derle**
 
-F5 anahtar, select kullandığınızda yalnızca başlangıç projesi ve onun bağımlılıklarını derlemeler **hata ayıklama > başlangıç** menü komutu ya da geçerli komutlarını **yapı** menüsü. NET, tüm projeleri ve bağımlılıkları yapı demektir.
+F5 anahtar, select kullandığınızda, yalnızca başlangıç projesi ve bağımlılıklarını yapılar **hata ayıklama > Başlat** menü komutu ya da geçerli komutları **derleme** menüsü. Açık tüm projelerinizi ve bağımlılıklarınızı derleme vardır.
 
-**Projeleri güncel olduğunda çalıştırılmasında**
+**Çalıştırmada, projelerin güncel olduğunda**
 
-*Uygulandığı öğe [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] yalnızca projeleri.*
+*Uygulandığı [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] yalnızca projeleri.*
 
-F5 ile bir proje çalışırken veya **hata ayıklama > başlangıç** komutu, varsayılan ayar **oluşturmak komut istemi** bir proje yapılandırma güncel değil, bir ileti görüntüler. Seçin **her zaman yapı** her çalıştırıldığında Projeyi derlemek için. Seçin **hiçbir zaman yapı** bir projeyi çalıştırdığınızda tüm otomatik derlemeleri gizlemek için.
+F5 tuşuna basarak bir proje çalıştırırken veya **hata ayıklama > Başlat** komut, varsayılan ayar **oluşturmak komut istemi** bir proje yapılandırması güncel değil, bir ileti görüntüler. Seçin **her zaman derleme** her çalıştırıldığında, projeyi oluşturmak için. Seçin **asla derleme** bir projeyi çalıştırdığınızda, tüm otomatik derlemeler bastırmak için.
 
-**Çalıştırmada, ne zaman yapı veya dağıtım hataları oluşuyor**
+**Alıştırmada, ne zaman derleme veya dağıtım hataları oluşuyor**
 
-*Uygulandığı öğe [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] yalnızca projeleri.*
+*Uygulandığı [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] yalnızca projeleri.*
 
-F5 ile bir proje çalışırken veya **hata ayıklama > başlangıç** komutu, varsayılan ayar **başlatmak komut istemi** derleme başarısız olsa bile bir proje çalışması gereken bir ileti görüntüler. Seçin **başlatma eski sürümünü** kod çalıştırırken ve kaynak kodu arasında eşleşmeler sonuçlanabilir son iyi yapılandırma otomatik olarak başlatılacak. Seçin **değil başlatma** iletinin gösterilmemesi için.
+F5 tuşuna basarak bir proje çalıştırırken veya **hata ayıklama > Başlat** komut, varsayılan ayar **başlatmak komut istemi** bir proje, derleme başarısız olsa bile çalıştırılması gereken bir ileti görüntüler. Seçin **başlatma eski sürümü** çalışan kodu ve kaynak kodu uyuşmazlıklarını sonuçlanabilir son iyi derlemeden otomatik olarak başlatılacak. Seçin **başlatma** iletiyi bastırmak için.
 
-**Yeni çözümler için şu anda seçili proje başlangıç projesi olarak kullanın.**
+**Yeni çözümleri şu anda seçili projeyi başlangıç projesi olarak kullanın.**
 
-Bu seçenek ayarlandığında, yeni çözümler şu anda seçili proje başlangıç projesi olarak kullanın.
+Bu seçenek ayarlandığında, yeni çözümleri şu anda seçili projeyi başlangıç projesi olarak kullanın.
 
-**MSBuild proje derleme çıktı ayrıntı**
+**MSBuild proje oluşturması çıkış ayrıntısı**
 
-Ne kadar bilgi görünür belirler **çıkış** penceresi derleme için.
+Ne kadar bilgi görünür belirler **çıkış** derleme için penceresi.
 
-**MSBuild proje derleme günlük dosyası ayrıntı**
+**MSBuild proje derleme günlük dosyası ayrıntısı**
 
-*Uygulandığı öğe [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] yalnızca projeleri.*
+*Uygulandığı [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] yalnızca projeleri.*
 
-Ne kadar bilgi bulunur yapı günlük dosyasına yazılır belirler \\... \\ *ProjectName*\Debug\\*ProjectName*. günlük.
+Şu konumdadır derleme günlüğü dosyası için ne kadar bilgi yazılacağını belirler \\... \\ *ProjectName*\Debug\\*ProjectName*. günlük.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Derleme ve Oluşturma](../../ide/compiling-and-building-in-visual-studio.md)
 - [Seçenekler iletişim kutusu, projeler ve çözümler](projects-and-solutions-options-dialog-box.md)
-- [Seçenekler iletişim kutusu, projeler ve çözümler, Web projeleri](options-dialog-box-projects-and-solutions-web-projects.md)
+- [Seçenekler İletişim Kutusu, Projeler ve Çözümler, Web Projeleri](options-dialog-box-projects-and-solutions-web-projects.md)

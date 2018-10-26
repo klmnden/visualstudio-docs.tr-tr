@@ -24,12 +24,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0fe2bb17979b7bc4fd068ddd7fb309446c88b7f6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f97e3ad4321cb8503a964115922f06e62f2c121
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184255"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143430"
 ---
 # <a name="vbc-task"></a>Vbc Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Yürütülebilir dosyalar (.exe), dinamik bağlantı kitaplığı (.dll) veya mo
 |`NoLogo`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, derleyici başlık bilgilerinin görüntülenmesini bastırır. Bu parametre için karşılık gelen [/nologo](http://msdn.microsoft.com/library/25ef54b6-d676-4639-a2d2-a747a158bc07) vbc.exe derleyicisinin anahtar.|  
 |`NoStandardLib`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Standart kitaplıkları başvuruda bulunmamaya derleyici neden olur. Bu parametre için karşılık gelen [/nostdlib](http://msdn.microsoft.com/library/140381b8-dc96-4ad5-ae11-792c9ed0be4d) vbc.exe derleyicisinin anahtar.|  
 |`NoVBRuntimeReference`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Yalnızca iç kullanım. TRUE ise Microsoft.VisualBasic.dll otomatik başvurusunu engeller...|  
-|`NoWarnings`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, görev açılıştaki tüm uyarıları. Daha fazla bilgi için [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).|  
+|`NoWarnings`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, görev tüm uyarıları bastırır. Daha fazla bilgi için [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).|  
 |`Optimize`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, derleyici iyileştirmelerini sağlar. Bu parametre için karşılık gelen [/ optimize](http://msdn.microsoft.com/library/fcba4a97-3622-4b87-a891-0f77deab4998) vbc.exe derleyicisinin anahtar.|  
 |`OptionCompare`|İsteğe bağlı `String` parametresi.<br /><br /> Dize karşılaştırmaları nasıl yapılacağını belirtir. Bu parametre aşağıdaki değerleri içerebilir:<br /><br /> -   `binary`<br />-   `text`<br /><br /> Değer `binary` görev ikili dize karşılaştırmaları kullandığını belirtir. Değer `text` görevi metin dize karşılaştırmaları kullandığını belirtir. Bu parametrenin varsayılan değeri `binary`. Bu parametre için karşılık gelen [/optioncompare](http://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4) vbc.exe derleyicisinin anahtar.|  
 |`OptionExplicit`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, değişkenleri açık bildirimini gereklidir. Bu parametre için karşılık gelen [/optionexplicit](http://msdn.microsoft.com/library/5d296ab3-bafe-4c4d-9887-78f162ed86c7) vbc.exe derleyicisinin anahtar.|  

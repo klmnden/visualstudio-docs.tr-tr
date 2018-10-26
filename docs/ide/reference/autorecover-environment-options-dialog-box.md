@@ -5,7 +5,6 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPag.Environment.AutoRecover
 - VS.DialogAutoRestore
 - VS.ToolsOptionsPages.Environment.AutoRecover
 - VS.ToolsOptionsPages.Environment.Auto_Save_and_Restore
@@ -20,23 +19,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f6409e31a606fe31fa1296dc937616338f8d62c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ed5ad6259ede32304cfe15ef4e79c6b3e56dbd9d
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943208"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143313"
 ---
-# <a name="autorecover-environment-options-dialog-box"></a>AutoRecover, Ortam, Seçenekler İletişim Kutusu
-Dosyaları otomatik olarak yedeklenir olup olmadığını belirlemek için Seçenekler iletişim kutusu, bu sayfayı kullanın. Bu sayfa Ayrıca tümleşik geliştirme ortamı (IDE) beklenmedik şekilde kapatıldığında dosyaları geri değişiklik olup olmadığına bakılmaksızın belirtmenizi sağlar. Seçerek bu iletişim kutusuna erişebilirsiniz **Araçları** menü ve seçme **seçenekleri**ve ardından seçerek **ortam** klasörü ve seçme  **AutoRecover** sayfası. Bu sayfayı listede görünmüyorsa, seçin **tüm ayarını gösteren** içinde **seçenekleri** iletişim kutusu.
+# <a name="autorecover-environment-options-dialog-box"></a>AutoRecover, ortam, Seçenekler iletişim kutusu
+
+Bu sayfada kullanın **seçenekleri** iletişim kutusu veya dosyaları otomatik olarak yedeklemek etkinleştirilip etkinleştirilmeyeceğini belirtin. Bu sayfa, Visual Studio'nun beklenmedik şekilde kapanırsa değiştirilmiş dosyaları geri yüklemek isteyip istemediğinizi belirtmenizi sağlar.
+
+Seçerek bu iletişim kutusuna erişmek **Araçları** menüsünde seçerek **seçenekleri**seçip **ortam** > **OtomatikKurtarma**. Bu sayfa listede görünmüyorsa, seçin **tüm bir ayarın gösterilip** içinde **seçenekleri** iletişim kutusu.
 
 > [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
 
- **Otomatik Kurtarma bilgilerini kaydetme her \<n > dakika** ne sıklıkta bir dosya Düzenleyicisi'nde otomatik olarak kaydedilir özelleştirmek için bu seçeneği kullanın. Önceden kaydedilmiş dosyalar için dosyanın bir kopyasını kaydedilen \\... \My Documents\Visual Studio \< *sürüm*> \Backup dosyaları\\<*projectname*>. Dosyayı yeni ise ve el ile kaydedilmedi, dosya otomatik-rastgele oluşturulan dosya adını kullanarak kaydedilir.
+**[N] dakikada bir Otomatik Kurtarma bilgilerini kaydetme**
 
- **Otomatik Kurtarma bilgisini tutmak \<n > gün** ne kadar süreyle Visual Studio kurtarma için oluşturulan dosyalar tutar belirtmek için bu seçeneği kullanın.
+Ne sıklıkta bir dosya Düzenleyicisi'nde otomatik olarak kaydedilir özelleştirmek için bu seçeneği kullanın. Dosyanın bir kopyasını daha önce kaydedilen dosyalar için kayıtlı olduğu *%USERPROFILE%\Documents\Visual Studio \<sürüm > \Backup dosyaları\\<projectname>*. Yeni bir dosyadır ve henüz kaydetmediğiniz, rastgele oluşturulan dosya adını kullanarak otomatik kaydedilmiş dosyasıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+**[N] günde Otomatik Kurtarma bilgisini sakla**
+
+Visual Studio kurtarma için oluşturulan dosyalar ne kadar süreyle korur belirtmek için bu seçeneği kullanın.
+
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Seçenekler İletişim Kutusu](../../ide/reference/options-dialog-box-visual-studio.md)

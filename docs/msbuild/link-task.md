@@ -32,12 +32,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c06e9a92eb6b6df82e4f45790b877286e6c52725
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 199d871851a03b7fe97c640a9efa70c01c2b8c5c
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081715"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143443"
 ---
 # <a name="link-task"></a>Bağlantı görevi
 Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi (COFF) nesne dosyaları ve yürütülebilir bir dosya oluşturmak için kitaplıklar bağlayıcı aracı bağlantılar (*.exe*) dosya veya dinamik bağlantı kitaplığı (DLL). Daha fazla bilgi için [bağlayıcı seçenekleri](/cpp/build/reference/linker-options).  
@@ -187,7 +187,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
   
      Bağlayıcı uygulayıp uygulamayacağını belirtir **SuppressUnmanagedCodeSecurityAttribute** bağlayıcı tarafından oluşturulan P/Invoke çağırıyor yönetilen koddan yerel DLL'lere için.  
   
-    Daha fazla bilgi için [/clrunmanagedcodecheck (SupressUnmanagedCodeSecurityAttribute ekleme)](/cpp/build/reference/clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute).  
+    Daha fazla bilgi için [/clrunmanagedcodecheck (SuppressUnmanagedCodeSecurityAttribute Ekle)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute).  
   
 -   **CreateHotPatchableImage**  
   

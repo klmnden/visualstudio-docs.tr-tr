@@ -6,7 +6,6 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Task_List
-- VS.ToolsOptionsPag.Environment.Task_List
 - VS.ToolsOptionsPages.Environment.TaskList
 - VS.Environment.Task List
 helpviewer_keywords:
@@ -25,63 +24,63 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe61b439c0cb4360151d161a5a0b0190858ef71f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c152e7a193fff8d444daf86d098681f20a8f5434
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947657"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143144"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Görev Listesi, Ortam, Seçenekler İletişim Kutusu
 
-Bu seçenekler sayfası eklemek, silmek ve oluşturma yorum belirteçleri değiştirmenizi sağlar **görev listesi** anımsatıcıları. Bu ayarları görüntülemek için seçin **seçenekleri** gelen **Araçları** menüsünde genişletin **ortam** klasörünü seçin **görev listesi**.
+Bu seçenekler sayfası, ekleme, silme ve oluşturma yorum belirteçleri değiştirme sağlar **görev listesi** anımsatıcılar. Bu ayarları görüntülemek için seçin **seçenekleri** gelen **Araçları** menüsünde genişletin **ortam** klasöründe ve **görev listesi**.
 
 ## <a name="task-list-options"></a>Görev listesi seçenekleri
- Görevleri silme işlemini onaylayın
+ Görevlerin silinmesini onaylayın
 
- Bir kullanıcı görev alanından silindiğinde seçili olduğunda, bir ileti kutusu görüntülenir **görev listesi**, silme işlemini onaylamak için izin verme. Bu seçenek varsayılan olarak seçilidir.
+ Bir kullanıcı görevini gelen silindiğinde seçili olduğunda, bir ileti kutusu görüntülenir **görev listesi**, silmeyi onaylamak etmenize imkan sağlar. Bu seçenek varsayılan olarak seçilidir.
 
 > [!NOTE]
-> Bir görev yorum silmek için açıklama bulmak için bağlantı kullanın ve kodunuzdan kaldırın.
+> Bir görev açıklamasının silmek için bir açıklama bulmak için bağlantıyı kullanın ve ardından kodunuzdan kaldırır.
 
 
- Dosya adları yalnızca gösterme
+ Yalnızca dosya adını göster
 
- Seçili olduğunda, **dosya** sütunu **görev listesi** yalnızca düzenlenmesi için dosyaların adlarını görüntüler tam yollarına değil.
+ Seçili olduğunda, **dosya** sütununun **görev listesi** yalnızca düzenlenmesi için dosya adlarını görüntüler kendi tam yolu.
 
 ## <a name="tokens"></a>Belirteçler
- Kodunuzu metni başlıyorsa uygulamasından bir belirteç içine bir yorum eklediğinizde **belirteç listesi**, **görev listesi** dosya düzenlenmek üzere açıldıktan her yorumunuzu yeni bir girdi olarak görüntüler. Bu tıklayabilirsiniz **görev listesi** doğrudan kodunuzda açıklama satırı atlamak için girişi. Daha fazla bilgi için bkz: [görev listesini kullanma](../../ide/using-the-task-list.md).
+ Metni başlar uygulamasından bir belirteç ile kodunuza açıklama eklediğinizde **belirteç listesi**, **görev listesi** dosyası düzenleme için açılan her yeni bir girdi olarak yorumunuzu görüntüler. Bu tıklayabilirsiniz **görev listesi** doğrudan kodunuza yorum satırı atlamak için giriş. Daha fazla bilgi için [görev listesini kullanma](../../ide/using-the-task-list.md).
 
  Belirteç Listesi
 
- Belirteçleri listesini görüntüler ve özel belirteçler ekleyip olanak tanır. Açıklama, C# ve Visual C++, ancak Visual Basic'te büyük küçük harfe duyarlı belirteçleridir.
+ Belirteçlerin listesini görüntüler ve özel belirteçler ekleyip olanak tanır. Yorum belirtkeleri büyük/küçük harfe duyarlı C# ve Visual C++ ancak Visual Basic içinde değil.
 
 > [!NOTE]
-> Tam olarak gösterildiği gibi istenen belirteci yazmazsanız **belirteç listesi**, bir açıklama görev içinde görüntülenmez **görev listesi**.
+> Tam olarak gösterildiği gibi istenen belirteç yazmazsanız **belirteç listesi**, yorum görev içinde görüntülenmeyecek **görev listesi**.
 
 
  Öncelik
 
- Seçili belirteci kullanan görevler önceliğini ayarlar. Bu belirteç ile başlayan görev yorumlar otomatik olarak belirlenen öncelik atanmış **görev listesi**.
+ Seçili olan belirteci kullanan görevler önceliğini ayarlar. Bu belirteç ile başlayan Görev açıklamalarını otomatik olarak belirlenen öncelik atanmış **görev listesi**.
 
  Ad
 
- Belirteç dizesini girin. Böylece **Ekle** düğmesi. Üzerinde **Ekle**, bu dize dahil **belirteç listesi**, ve bu ad ile başlayan açıklamaları gösterileceği **görev listesi**.
+ Belirteç dizesini girin. Böylece **Ekle** düğmesi. Üzerinde **Ekle**, bu dize yer aldığı **belirteç listesi**, ve bu ad ile başlayan Açıklamalar içinde görüntülenecektir **görev listesi**.
 
  Ekle
 
- Yeni bir girerken etkin **adı**. Girdiğiniz değerleri kullanarak yeni bir belirteç dizesi eklemek için tıklatın **adı** ve **öncelik** alanları.
+ Yeni bir girerken etkin **adı**. Girilen değerleri kullanarak yeni bir belirteç dizesi eklemek için tıklatın **adı** ve **öncelik** alanları.
 
  Sil
 
- Seçili belirtecinden silmek için tıklatın **belirteç listesi**. Varsayılan açıklama belirteci silemezsiniz.
+ Seçili belirteçten silmek için tıklayın **belirteç listesi**. Varsayılan yorum belirteci nelze odstranit.
 
  Değiştir
 
- Girdiğiniz değerleri kullanarak var olan bir belirteci değişiklikler yapmak için tıklatın **adı** ve **öncelik** alanları.
+ Girilen değerleri kullanarak mevcut bir belirteç değişiklik yapmak için tıklatın **adı** ve **öncelik** alanları.
 
 > [!NOTE]
-> Yeniden adlandırmak veya varsayılan açıklama belirteci silin, ancak öncelik düzeyini değiştirebilirsiniz.
+> Yeniden adlandırma veya varsayılan yorum belirteci silin, ancak öncelik düzeyini değiştirebilirsiniz.
 
 
 ## <a name="see-also"></a>Ayrıca Bkz.

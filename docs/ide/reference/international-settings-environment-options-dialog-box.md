@@ -8,7 +8,6 @@ f1_keywords:
 - VS.ToolsOptionsPages.Environment.InternationalSettings
 - VS.ToolsOptionsPages.Environment.International_Settings
 - VS.Environment.International Settings
-- VS.ToolsOptionsPag.Environment.International_Settings
 helpviewer_keywords:
 - International Settings dialog box
 - languages, environment settings
@@ -20,27 +19,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afb07a7cbc591c30ebbe7b281b49b38bfb0c911e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1609f33230942c2f5d026eb072e3e85860137d4b
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944794"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143157"
 ---
 # <a name="international-settings-environment-options-dialog-box"></a>Uluslararası Ayarlar, Ortam, Seçenekler İletişim Kutusu
-Uluslararası ayarlar sayfasını makinenize yüklü tümleşik geliştirme ortamı (IDE) birden fazla dil sürümü varsa, varsayılan dil değiştirmenize izin verir. Seçerek bu iletişim kutusuna erişebilirsiniz **seçenekleri** gelen **Araçları** menüsüne ve ardından seçme **uluslararası ayarları** gelen **ortamı** klasör. Bu sayfayı listede görünmüyorsa, seçin **tüm ayarları göster** içinde **seçenekleri** iletişim kutusu.
+
+Uluslararası Ayarlar sayfasında birden fazla dilde tümleşik geliştirme ortamının (IDE), makinenizde yüklü olduğunda varsayılan dili değiştirmenizi sağlar. Bu iletişim kutusunu seçerek erişebilirsiniz **seçenekleri** gelen **Araçları** menüsüne ve ardından **uluslararası ayarlar** gelen **ortamı** klasör. Bu sayfa, listede görünmüyorsa, seçin **tüm ayarları göster** içinde **seçenekleri** iletişim kutusu.
 
 > [!NOTE]
-> İletişim kutuları, adları ve menü komutlarını, gördüğünüz konumlarını Seçenekleri Yardımı'nda etkin ayarlarınıza veya sürümünüze bağlı olarak açıklanan nedir alanından farklı olabilir. Ayarlarınızı değiştirmek için tercih **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
+> İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
 
-
- **Dil** yüklü ürün dil sürümleri için kullanılabilir dilleri listeler. Makinenize yüklü birden fazla dil sürümü yoksa bu seçenek kullanılamaz. Birden çok dil ürünlerin veya karma dil yüklemesi ürün ortamında paylaşıyorsanız, dil seçimi değiştirildi **Microsoft Windows aynı**.
+ **Dil** yüklü ürün dil sürümleri için kullanılabilir olduğu dilleri listeler. Birden fazla dil sürümü, makinenizde yüklü olmadığı sürece, bu seçenek kullanılamaz. Birden çok ürünlerin dil veya bir karma dil yüklemesi ürün ortamı paylaşıyorsa, dil seçimi değiştirildi **Microsoft Windows ile aynı**.
 
 > [!CAUTION]
-> Birden çok dil yüklü olan bir sistemde, Visual C++ derleme Araçları (cl.exe, link.exe, nmake.exe, bscmake.exe ve ilişkili dosyaları), bu ayar tarafından etkilenmez. Bu araçları yüklü olan son dil sürümünü kullanın. Visual C++ derleme araçları uydu DLL modeli kullanmadığından daha önce yüklenen dil için derleme araçları üzerine yazılır.
-
+> Birden çok dil yüklü bir sistemde Visual C++ derleme Araçları (cl.exe, link.exe, nmake.exe, bscmake.exe'yi ve ilişkili dosyaları), bu ayardan etkilenmez. Bu araçları yüklü olan son dil sürümü kullanın. Visual C++ derleme araçları, uydu DLL modeli kullanmayın çünkü daha önce yüklenen dil için derleme araçları üzerine yazılır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [Dil paketlerini yükleyin](../../install/install-visual-studio.md#step-6---install-language-packs-optional)
+- [Dil paketlerini yükleme](../../install/install-visual-studio.md#step-6---install-language-packs-optional)
 - [Ortam Seçenekleri İletişim Kutusu](../../ide/reference/environment-options-dialog-box.md)

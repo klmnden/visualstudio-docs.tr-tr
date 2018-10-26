@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 77cce33aa8dd5a0f265aadcfa1cd1a751a34aa3d
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 9e874db45bca2938a3bceb976c679f45ecf39d69
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101062"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143482"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>6. adım: yoklamalar Django Web projesi şablonu kullanın.
 
@@ -376,4 +376,4 @@ Bir web uygulaması geliştirme bilgisayarınızda çalışan uygulamayı müşt
 
 - Uygulama, PostgreSQL, MySQL ve SQL Server'ın (her biri Azure üzerinde barındırılabilir) gibi bir üretim düzeyinde veri deposuna SQLite değiştirin. Üzerinde açıklandığı [SQLite kullanıldığı durumlar](https://www.sqlite.org/whentouse.html) (sqlite.org) SQLite düşük ile 100 bin isabet sayısı günde en fazla orta düzeyde trafiğe sahip siteler için düzgün çalışır, ancak daha yüksek birimleri için önerilmez. Ayrıca tek bir bilgisayara limited, bu nedenle onu kullanılamaz Yük Dengeleme ve coğrafi çoğaltma gibi herhangi bir çok sunuculu senaryo. Diğer veritabanlarını Django'nın desteği hakkında daha fazla bilgi için bkz: [Veritabanı Kurulumu](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Ayrıca [Python için Azure SDK'sı](azure-sdk-for-python.md) tablo ve BLOB'ları gibi Azure depolama hizmetleriyle çalışmaya.
 
-- Visual Studio Team Services (VSTS) gibi bir hizmette bir sürekli tümleştirme/sürekli dağıtım işlem hattı ayarlayın. Kaynak denetimi (VSTS, GitHub veya başka bir yerde) ile çalışma ek olarak, otomatik olarak yayın için bir önkoşul olarak birim testlerinizi çalıştırmak ve işlem hattı için dağıtmadan önce ek testler için bir hazırlık sunucusu dağıtmak için de yapılandırmanız VSTS olabilir Üretim. VSTS, ayrıca, App Insights gibi çözümlerle izleme ile tümleşir ve Çevik planlama araçları ile tüm döngüyü kapatır. Daha fazla bilgi için [Azure DevOps projesi ile CI/CD işlem hattı oluşturma için Python](/azure/devops-project/azure-devops-project-python?view=vsts).
+- Azure DevOps gibi bir hizmette bir sürekli tümleştirme/sürekli dağıtım işlem hattı ayarlayın. Kaynak denetimi (aracılığıyla Azure depoları veya GitHub ya da başka bir yerde) ile çalışma ek olarak, otomatik olarak yayın için bir önkoşul olarak birim testlerinizi çalıştırmak için bir Azure DevOps projesi yapılandırabilir ve ayrıca işlem hattı için bir hazırlık sunucusu dağıtmak için yapılandırma üretim ortamına dağıtmadan önce ek sınar. Ayrıca, Azure DevOps çözümlerini App Insights gibi izleme ile tümleşir ve Çevik planlama araçları ile tüm döngüyü kapatır. Daha fazla bilgi için [Azure DevOps projesi ile CI/CD işlem hattı oluşturma için Python](/azure/devops-project/azure-devops-project-python?view=vsts) ve ayrıca genel [Azure DevOps belgeleri](/azure/devops/?view=vsts).

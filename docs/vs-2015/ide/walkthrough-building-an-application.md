@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d18e7c2e4c57e867cac47d0c8927eadbc357286
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 350ff6d481c3f7cffc47519a252b1cb65d2748ba
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923101"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143183"
 ---
 # <a name="walkthrough-building-an-application"></a>İzlenecek yol: Uygulama Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -142,7 +142,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar oluştururken yap�
   
 3.  Seçin **derleme** sayfasında, daha sonra **uyarıları bastırma** kutusunda, uyarı numarasını belirtin `1762`.  
   
-     ![Derleme sayfası, Proje Tasarımcısı](../ide/media/buildwalk-csharpsupresswarnings.png "BuildWalk_CsharpSupressWarnings")  
+     ![Derleme sayfası, Proje Tasarımcısı](../ide/media/buildwalk-csharpsuppresswarnings.png "BuildWalk_CsharpSuppressWarnings")  
   
      Daha fazla bilgi için [derleme sayfası, Proje Tasarımcısı (C#)](../ide/reference/build-page-project-designer-csharp.md).  
   
@@ -162,7 +162,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar oluştururken yap�
   
 3. Üzerinde **derleme** sayfasında **tüm uyarıları devre dışı bırak** onay kutusu.  
   
-    ![Derleme sayfası, Proje Tasarımcısı](../ide/media/buildwalk-vbsupresswarnings.png "BuildWalk_VBSupressWarnings")  
+    ![Derleme sayfası, Proje Tasarımcısı](../ide/media/buildwalk-vbsuppresswarnings.png "BuildWalk_VBSuppressWarnings")  
   
     Daha fazla bilgi için [Visual Basic'teki uyarıları yapılandırma](../ide/configuring-warnings-in-visual-basic.md).  
   

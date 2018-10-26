@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4fc066e45017638eda863c0070e9ee067fcf8e
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 32abf9a2c11a8381b5f204a2388a85f7fd5d8230
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548809"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143131"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Tanımlayıcılar tür adları içermemelidir
 
@@ -138,7 +138,7 @@ Ayrıca, bir parametre adlarını büyük küçük harf duyarlı bir şekilde de
  Bunun anlamı, bir dil bağımsız eşdeğeriyle ya da 'value' gibi daha genel bir terim daha iyi açıklayan bir terim ile dile bağlı veri türü tanımlayıcısı ' üye adını değiştirin.
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Parametre ve üye adları türüne göre ara sıra kullanılmasını uygun olabilir. Ancak, hiçbir bilinen yeni geliştirme için senaryolar ortaya burada bu kuraldan bir uyarıyı bastırmak. Önceki sevk sahip kitaplıkları için bu kuraldan bir uyarıyı bastırmak olabilir.
+ Parametre ve üye adları türüne göre ara sıra kullanılmasını uygun olabilir. Ancak, hiçbir bilinen yeni geliştirme için senaryolar ortaya burada bu kuraldan bir uyarıyı bastırmak. Daha önce sevk kitaplıkları için bu kuraldan bir uyarıyı bastırmak olabilir.
 
 ## <a name="related-rules"></a>İlgili kuralları
  [CA1709: Tanımlayıcıların büyük/küçük harfleri doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
