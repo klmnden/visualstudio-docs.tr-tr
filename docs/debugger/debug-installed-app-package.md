@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 291f24c6ffdf885cf3d24c5ff163c2f4f911d7ce
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3bb858f2ee20eb65c09dd4979f2bbba1470cbe0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279566"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908255"
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Yüklü uygulama paketi, Visual Studio (UWP) hata ayıklama
 
@@ -78,18 +78,18 @@ Uzak bir bilgisayarda yüklü uygulama paketinin ilk kez hata ayıklaması yapar
 
      Bilgisayar adını kullanarak bağlanamıyorsa (seçtiğiniz sonra **Başlat**), bunun yerine IP adresi kullanın. IP adresi, XBox, HoloLens ve IOT cihazlar için kullanın.
 
-5. Bir seçenek belirleyerek kimlik doğrulaması yapmayı seçin **kimlik doğrulama modu**.
+6. Bir seçenek belirleyerek kimlik doğrulaması yapmayı seçin **kimlik doğrulama modu**.
 
     Çoğu uygulama için varsayılan değer tutmak **Evrensel (şifrelenmemiş Protokolü)**.
 
-6. Altında hata ayıklamak istediğiniz uygulamanın adını seçin **çalıştıran** veya **çalışmıyor** ve **Başlat** veya (çalışan uygulamalar) **iliştirme**.
+7. Altında hata ayıklamak istediğiniz uygulamanın adını seçin **çalıştıran** veya **çalışmıyor** ve **Başlat** veya (çalışan uygulamalar) **iliştirme**.
 
      Seçerseniz **başlatma, ancak başlatıldığında kodumda Hata Ayıkla**, bu özel teker teker başlattığınızda, uygulama paketi için Visual Studio hata ayıklayıcısının neden olur. Bu denetim yolları hata ayıklamak için etkili bir yoludur [farklı başlatma yöntemleri](/windows/uwp/xbox-apps/automate-launching-uwp-apps), özel parametrelerle protokolünü etkinleştirme gibi.
 
      İlk kez bağlı bir XBox, HoloLens ve IOT cihazda yüklü uygulama paketinin hata ayıklaması yaparken, Visual Studio uzaktan hata ayıklayıcı hedef cihazınız için doğru sürümünü yükler. Bu işlem biraz zaman alabilir ve bir ileti görürsünüz ``Starting remote debugger`` bu gerçekleştiği sırada.
 
      > [!NOTE]
-> Sunmak, XBox veya HoloLens cihaz uygulama zaten çalışıyorsa ayıklayıcıyı yeniden başlatılır.
+   > Sunmak, XBox veya HoloLens cihaz uygulama zaten çalışıyorsa ayıklayıcıyı yeniden başlatılır.
 
 [Dağıtma ve hata ayıklama UWP apps]((/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options). uzak dağıtımını UWP uygulamaları için Gelişmiş seçenekleri hakkında daha fazla bilgi için bkz. 
   
