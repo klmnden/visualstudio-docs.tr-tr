@@ -33,12 +33,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52320637f9de3f7c96af75dae7a53a5626dfeb36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f1a09cf7e4f6e15ee49ce62914b650c3622e6e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249827"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894059"
 ---
 # <a name="format-specifiers-in-c"></a>C++ içindeki Biçim Belirticileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ ms.locfileid: "49249827"
   
 > [!NOTE]
 >  Yeni bir hata ayıklama motoru değiştirildi ve Visual Studio yerel hata. Bu değişikliğin bir parçası olarak bazı yeni biçimli belirteçler eklendi eklenen ve bazı eskileri kaldırıldı. (Karışık özgün ve yönetilen) birlikte çalışabilirliği bunu yaptığınızda eski hata ayıklayıcı hala kullanılmaktadır hata ayıklamayı C + +/ CLI. Bu konudaki aşağıdaki bölümler her hata ayıklama altyapısı için biçim belirteçlerini gösterir.  
->   
->  -   [Biçim belirleyiciler](#BKMK_Visual_Studio_2012_format_specifiers) yeni hata ayıklama altyapısındaki biçim belirteçlerini açıklar.  
-> -   [Biçim belirleyiciler birlikte çalışma C + ile hata ayıklama için +/ CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) eski hata ayıklama altyapısında biçimi Belirleyicileri açıklar.  
+> 
+> - [Biçim belirleyiciler](#BKMK_Visual_Studio_2012_format_specifiers) yeni hata ayıklama altyapısındaki biçim belirteçlerini açıklar.  
+>   -   [Biçim belirleyiciler birlikte çalışma C + ile hata ayıklama için +/ CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) eski hata ayıklama altyapısında biçimi Belirleyicileri açıklar.  
   
 ## <a name="using-format-specifiers"></a>Biçim belirticilerini kullanma  
  Aşağıdaki koda sahipseniz:  

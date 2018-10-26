@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d085fd350c3757af4a24d659fe8b6ee30165e7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: baddf87e24efc48ea597e44c52abcee5e5bdcfad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215169"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829650"
 ---
 # <a name="save-data-back-to-the-database"></a>Verileri yeniden veritabanına kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49215169"
   
 Veri kümesi, verilerin bir bellek içi kopyasıdır. Bu verileri değiştirirseniz, bu değişiklikleri veritabanına kaydetmek için iyi bir uygulamadır. Üç yoldan biriyle bunu yapabilirsiniz:  
   
--   Aşağıdakilerden birini çağırarak `Update` TableAdapter yöntemleri  
+- Aşağıdakilerden birini çağırarak `Update` TableAdapter yöntemleri  
   
--   TableAdapter DBDirect yöntemleri çağırarak  
+- TableAdapter DBDirect yöntemleri çağırarak  
   
--   Üzerinde UpdateAll yöntemi çağırarak `TableAdapterManager` diğer tablolara veri kümesinde ilişkili tabloları veri kümesi içerdiğinde, Visual Studio sizin için oluşturur.  
+- Üzerinde UpdateAll yöntemi çağırarak `TableAdapterManager` diğer tablolara veri kümesinde ilişkili tabloları veri kümesi içerdiğinde, Visual Studio sizin için oluşturur.  
   
- Verileri bir Windows Form veya XAML sayfası denetimleri için veri kümesi tablolarını bağladığınızda, veri bağlama mimarisi işin tümünü sizin için halleder.  
+  Verileri bir Windows Form veya XAML sayfası denetimleri için veri kümesi tablolarını bağladığınızda, veri bağlama mimarisi işin tümünü sizin için halleder.  
   
- TableAdapter'ları ile sahibiyseniz, doğrudan aşağıdaki konulardan birine atlayabilirsiniz:  
+  TableAdapter'ları ile sahibiyseniz, doğrudan aşağıdaki konulardan birine atlayabilirsiniz:  
   
 |Konu|Açıklama|  
 |-----------|-----------------|  
@@ -107,11 +107,11 @@ Veri kümesi, verilerin bir bellek içi kopyasıdır. Bu verileri değiştirirse
   
  Erken sabiti ihlallerini önlemek için güncelleştirme kısıtlamaları geçici olarak askıya alabilirsiniz. Bu iki amaca hizmet eder:  
   
--   Bir hata, bir sütunu güncelleştirme işlemi tamamlandı, ancak başka bir güncelleştirme başlamamış sonra durum engeller.  
+- Bir hata, bir sütunu güncelleştirme işlemi tamamlandı, ancak başka bir güncelleştirme başlamamış sonra durum engeller.  
   
--   Bazı güncelleştirme engelleyen (genellikle doğrulama için kullanılan olayları) tetiklenen engeller olayları.  
+- Bazı güncelleştirme engelleyen (genellikle doğrulama için kullanılan olayları) tetiklenen engeller olayları.  
   
- Güncelleştirme tamamlandıktan sonra kısıtlama denetimi, da güncelleştirme olaylarını yeniden etkinleştirir ve bunları başlatır, yeniden etkinleştirebilirsiniz.  
+  Güncelleştirme tamamlandıktan sonra kısıtlama denetimi, da güncelleştirme olaylarını yeniden etkinleştirir ve bunları başlatır, yeniden etkinleştirebilirsiniz.  
   
 > [!NOTE]
 >  Windows Formları datagrid içinde yerleşik veri bağlama mimarisi odağı bir satır dışında taşır ve açıkça çağırmanız gerekmez kadar denetleme kısıtlaması askıya alır. <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, veya <xref:System.Data.DataRow.CancelEdit%2A> yöntemleri.  
@@ -177,33 +177,33 @@ Veri kümesi, verilerin bir bellek içi kopyasıdır. Bu verileri değiştirirse
   
  Değişiklikleri veri kaynağına geçerli durumu yansıtacak, artık bu bilgileri sürdürmeniz gerekir. Genellikle, veri kümesini ve kaynağı zaman eşitlenmiş durumda iki kez vardır:  
   
--   Hemen sonra ne zaman veri kaynağından okumak kümesine bilgi yüklediniz.  
+- Hemen sonra ne zaman veri kaynağından okumak kümesine bilgi yüklediniz.  
   
--   Değişiklikleri veri kaynağına, veri kümesinden gönderdikten sonra (ancak daha önce değil çünkü veritabanına değişiklikleri göndermek için gereken değişiklik bilgileri kaybedersiniz).  
+- Değişiklikleri veri kaynağına, veri kümesinden gönderdikten sonra (ancak daha önce değil çünkü veritabanına değişiklikleri göndermek için gereken değişiklik bilgileri kaybedersiniz).  
   
- Veri kümesine ilişkin bekleyen değişiklikleri çağırarak yürütülemez <xref:System.Data.DataSet.AcceptChanges%2A> yöntemi. Genellikle, <xref:System.Data.DataSet.AcceptChanges%2A> uygulamanızda aşağıdaki saatleri sırasında çağrılır.  
+  Veri kümesine ilişkin bekleyen değişiklikleri çağırarak yürütülemez <xref:System.Data.DataSet.AcceptChanges%2A> yöntemi. Genellikle, <xref:System.Data.DataSet.AcceptChanges%2A> uygulamanızda aşağıdaki saatleri sırasında çağrılır.  
   
--   Sonra veri kümesine yükler. Bir veri kümesi, yük TableAdapter bağdaştırıcısının çağırarak `Fill` yöntemi sonra bağdaştırıcı otomatik olarak tamamlar değişiklikleri sizin için. Bir veri kümesi içine başka bir veri kümesini birleştirerek yüklerseniz, ancak, daha sonra değişiklikleri el ile kaydetmek gerekir.  
+- Sonra veri kümesine yükler. Bir veri kümesi, yük TableAdapter bağdaştırıcısının çağırarak `Fill` yöntemi sonra bağdaştırıcı otomatik olarak tamamlar değişiklikleri sizin için. Bir veri kümesi içine başka bir veri kümesini birleştirerek yüklerseniz, ancak, daha sonra değişiklikleri el ile kaydetmek gerekir.  
   
-    > [!NOTE]
-    >  Bağdaştırıcı çağırdığınızda otomatik olarak değişiklikleri yürütmeyi öğesinden engelleyebilirsiniz `Fill` ayarlayarak yöntemi `AcceptChangesDuringFill` bağdaştırıcısının özellik `false`. Bu ayarlanırsa `false`, ardından <xref:System.Data.DataRow.RowState%2A> doldurma sırasında eklenen her bir satır kümesine <xref:System.Data.DataRowState>.  
+  > [!NOTE]
+  >  Bağdaştırıcı çağırdığınızda otomatik olarak değişiklikleri yürütmeyi öğesinden engelleyebilirsiniz `Fill` ayarlayarak yöntemi `AcceptChangesDuringFill` bağdaştırıcısının özellik `false`. Bu ayarlanırsa `false`, ardından <xref:System.Data.DataRow.RowState%2A> doldurma sırasında eklenen her bir satır kümesine <xref:System.Data.DataRowState>.  
   
--   XML Web hizmeti gibi başka bir işlem için veri kümesi değişiklikleri gönderdikten sonra.  
+- XML Web hizmeti gibi başka bir işlem için veri kümesi değişiklikleri gönderdikten sonra.  
   
-    > [!CAUTION]
-    >  Bu şekilde ardından değişikliği uygulamayı herhangi bir değişiklik bilgi siler. Değil değişiklikleri kadar çalıştırdıktan sonra uygulamanızı kümesinde hangi değişiklikler yapılmıştır bilmek gerektiren işlemler gerçekleştirme son.  
+  > [!CAUTION]
+  >  Bu şekilde ardından değişikliği uygulamayı herhangi bir değişiklik bilgi siler. Değil değişiklikleri kadar çalıştırdıktan sonra uygulamanızı kümesinde hangi değişiklikler yapılmıştır bilmek gerektiren işlemler gerçekleştirme son.  
   
- Bu yöntem, aşağıdakileri yerine getirir:  
+  Bu yöntem, aşağıdakileri yerine getirir:  
   
--   Yazar <xref:System.Data.DataRowVersion> bir kayıtta sürümü kendi <xref:System.Data.DataRowVersion> sürümü ve özgün sürümle üzerine yazar.  
+- Yazar <xref:System.Data.DataRowVersion> bir kayıtta sürümü kendi <xref:System.Data.DataRowVersion> sürümü ve özgün sürümle üzerine yazar.  
   
--   Satırları kaldıran burada <xref:System.Data.DataRow.RowState%2A> özelliği <xref:System.Data.DataRowState>.  
+- Satırları kaldıran burada <xref:System.Data.DataRow.RowState%2A> özelliği <xref:System.Data.DataRowState>.  
   
--   Kümeleri <xref:System.Data.DataRow.RowState%2A> özelliği için bir kaydın <xref:System.Data.DataRowState>.  
+- Kümeleri <xref:System.Data.DataRow.RowState%2A> özelliği için bir kaydın <xref:System.Data.DataRowState>.  
   
- <xref:System.Data.DataSet.AcceptChanges%2A> Yöntemi üç düzeyde kullanılabilir. Üzerinde çağırmak bir <xref:System.Data.DataRow> işlemeler için nesne yalnızca bu satır için değişiklikleri. Üzerinde de çağırabilirsiniz bir <xref:System.Data.DataTable> bir tablodaki tüm satırları işlemek için nesne. Üzerinde çağrı son olarak, <xref:System.Data.DataSet> nesnenin tüm kayıtları veri kümesinin tüm tabloların tüm bekleyen değişiklikleri kaydedin.  
+  <xref:System.Data.DataSet.AcceptChanges%2A> Yöntemi üç düzeyde kullanılabilir. Üzerinde çağırmak bir <xref:System.Data.DataRow> işlemeler için nesne yalnızca bu satır için değişiklikleri. Üzerinde de çağırabilirsiniz bir <xref:System.Data.DataTable> bir tablodaki tüm satırları işlemek için nesne. Üzerinde çağrı son olarak, <xref:System.Data.DataSet> nesnenin tüm kayıtları veri kümesinin tüm tabloların tüm bekleyen değişiklikleri kaydedin.  
   
- Aşağıdaki tablo, hangi yöntemin çağrıldığı nesne üzerinde göre hangi değişiklikler uygulandıktan açıklar.  
+  Aşağıdaki tablo, hangi yöntemin çağrıldığı nesne üzerinde göre hangi değişiklikler uygulandıktan açıklar.  
   
 |Yöntem|Sonuç|  
 |------------|------------|  
@@ -221,16 +221,16 @@ Veri kümesi, verilerin bir bellek içi kopyasıdır. Bu verileri değiştirirse
   
  Verileri farklı şekillerde doğrulayabilirsiniz:  
   
--   Verileri doğrulamak için uygulamanıza kod ekleyerek iş katmanı içinde. Veri kümesi, bunu yapmak için bir yerdir. Arka uç doğrulama avantajlarından bazıları veri kümesi sağlar; sütun ve satır değerleri değiştirme gibi değişiklikleri doğrulamak için özelliği gibi. Daha fazla bilgi için [veri kümelerindeki verileri doğrulama](../data-tools/validate-data-in-datasets.md).  
+- Verileri doğrulamak için uygulamanıza kod ekleyerek iş katmanı içinde. Veri kümesi, bunu yapmak için bir yerdir. Arka uç doğrulama avantajlarından bazıları veri kümesi sağlar; sütun ve satır değerleri değiştirme gibi değişiklikleri doğrulamak için özelliği gibi. Daha fazla bilgi için [veri kümelerindeki verileri doğrulama](../data-tools/validate-data-in-datasets.md).  
   
--   Doğrulama formlar ekleyerek sunu katmanda. Daha fazla bilgi için [Windows Forms'ta kullanıcı girdisi doğrulama](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
+- Doğrulama formlar ekleyerek sunu katmanda. Daha fazla bilgi için [Windows Forms'ta kullanıcı girdisi doğrulama](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
   
--   Veri kaynağına veri gönderen tarafından arka uç, verileri — Örneğin, veritabanı — ve kabul etme veya reddetme veri olanak tanır. Verileri doğrulama ve hata bilgilerini sağlayarak olanakları karmaşık bir veritabanı ile çalışıyorsanız, verilerin nereden geldiğini ne olursa olsun doğrulayabilirsiniz çünkü bu pratik bir yaklaşım olabilir. Ancak, bu yaklaşım uygulamaya özgü doğrulama gereksinimlerini karşılamaya değil. Ayrıca, verileri doğrulama veri kaynağına sahip çok sayıda gidiş dönüş içinde nasıl, uygulamanızın arka ucu tarafından oluşturulan doğrulama hatalarını çözümlenmesi kolaylaştırır bağlı olarak veri kaynağına neden olabilir.  
+- Veri kaynağına veri gönderen tarafından arka uç, verileri — Örneğin, veritabanı — ve kabul etme veya reddetme veri olanak tanır. Verileri doğrulama ve hata bilgilerini sağlayarak olanakları karmaşık bir veritabanı ile çalışıyorsanız, verilerin nereden geldiğini ne olursa olsun doğrulayabilirsiniz çünkü bu pratik bir yaklaşım olabilir. Ancak, bu yaklaşım uygulamaya özgü doğrulama gereksinimlerini karşılamaya değil. Ayrıca, verileri doğrulama veri kaynağına sahip çok sayıda gidiş dönüş içinde nasıl, uygulamanızın arka ucu tarafından oluşturulan doğrulama hatalarını çözümlenmesi kolaylaştırır bağlı olarak veri kaynağına neden olabilir.  
   
-    > [!IMPORTANT]
-    >  Veri komutları ile kullanırken bir <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> ayarlanan özellik <xref:System.Data.CommandType>, dikkatli bir şekilde veritabanına geçirmeden önce bir istemciden gönderilen bilgilere bakın. Kötü amaçlı kullanıcılara gönderilecek deneyin (Ekle) yetkisiz erişim veya veritabanı zarar vermek için çaba değiştirilmiş veya ek SQL deyimlerinde. Bir veritabanına kullanıcı girişi aktarmadan önce her zaman bilgilerin geçerli olduğunu doğrulayın. Parametreli sorgular veya saklı yordamları mümkün olduğunda kullanılması her zaman iyi bir uygulamadır. Daha fazla bilgi için [betik yararlanan genel bakış](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  > [!IMPORTANT]
+  >  Veri komutları ile kullanırken bir <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> ayarlanan özellik <xref:System.Data.CommandType>, dikkatli bir şekilde veritabanına geçirmeden önce bir istemciden gönderilen bilgilere bakın. Kötü amaçlı kullanıcılara gönderilecek deneyin (Ekle) yetkisiz erişim veya veritabanı zarar vermek için çaba değiştirilmiş veya ek SQL deyimlerinde. Bir veritabanına kullanıcı girişi aktarmadan önce her zaman bilgilerin geçerli olduğunu doğrulayın. Parametreli sorgular veya saklı yordamları mümkün olduğunda kullanılması her zaman iyi bir uygulamadır. Daha fazla bilgi için [betik yararlanan genel bakış](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- Bir veri kümesinde değişiklik yapıldıktan sonra değişiklikleri veri kaynağına aktarabilir. En yaygın olarak, çağrı yaparak bunu `Update` yöntemi bir TableAdapter (veya veri bağdaştırıcısı). Her bir veri tablosu kayıt yöntemi döner belirler ne tür bir güncelleştirme gerekli değildir (güncelleştirme, ekleme veya silme), varsa, ve ardından uygun komutu çalıştırır.  
+  Bir veri kümesinde değişiklik yapıldıktan sonra değişiklikleri veri kaynağına aktarabilir. En yaygın olarak, çağrı yaparak bunu `Update` yöntemi bir TableAdapter (veya veri bağdaştırıcısı). Her bir veri tablosu kayıt yöntemi döner belirler ne tür bir güncelleştirme gerekli değildir (güncelleştirme, ekleme veya silme), varsa, ve ardından uygun komutu çalıştırır.  
   
 ## <a name="transmitting-updates-to-the-data-source"></a>Veri kaynağına aktaran güncelleştirmeleri  
  Güncelleştirmeleri nasıl yapılacağını ilişkin bir çizim, uygulamanızın kullandığı bir tek veri tablosu içeren bir veri kümesi varsayalım. Uygulama, iki satır veritabanından veri getirir. Sonra alma, bellek içi verileri tablo şöyle görünür:  

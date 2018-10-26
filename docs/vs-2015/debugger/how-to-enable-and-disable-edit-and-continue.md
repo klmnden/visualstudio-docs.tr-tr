@@ -30,12 +30,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2700076fa0cc08aa137377b9a99c1179d9b8fc12
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9540e40325293795c44e0d9c2283a27f1d9ea0c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212841"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856712"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue"></a>Nasıl Yapılır: Düzenle ve Devam Et'i Etkinleştirme veya Devre Dışı Bırakma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,18 +48,18 @@ Düzenle ve devam et, etkinleştirmek veya devre dışı **seçenekleri** tasar�
   
 #### <a name="to-enabledisable-edit-and-continue"></a>Etkinleştirmek/devre dışı Düzenle ve devam et  
   
-1.  Hata ayıklama seçenekleri sayfasını aç (**Araçlar / Seçenekler / hata ayıklama**).  
+1. Hata ayıklama seçenekleri sayfasını aç (**Araçlar / Seçenekler / hata ayıklama**).  
   
-2.  Ekranı aşağı kaydırarak **Düzenle ve devam et** kategorisi.  
+2. Ekranı aşağı kaydırarak **Düzenle ve devam et** kategorisi.  
   
-3.  Etkinleştirmek için seçin **etkinleştirme Düzenle ve devam et** onay kutusu. Devre dışı bırakmak için onay kutusunu temizleyin.  
+3. Etkinleştirmek için seçin **etkinleştirme Düzenle ve devam et** onay kutusu. Devre dışı bırakmak için onay kutusunu temizleyin.  
   
-    > [!NOTE]
-    >  Etkin IntelliTrace ve hem IntelliTrace olayları ve çağrı bilgilerini toplamak, Düzenle ve Devam Et'i devre dışı bırakılmıştır. Daha fazla bilgi için [yapılandırma IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+   > [!NOTE]
+   >  Etkin IntelliTrace ve hem IntelliTrace olayları ve çağrı bilgilerini toplamak, Düzenle ve Devam Et'i devre dışı bırakılmıştır. Daha fazla bilgi için [yapılandırma IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
-4.  **Tamam**'ı tıklatın.  
+4. **Tamam**'ı tıklatın.  
   
- Bu seçenekler hakkında daha fazla bilgi için bkz. [genel, hata ayıklama, Seçenekler iletişim kutusu](../debugger/general-debugging-options-dialog-box.md).  
+   Bu seçenekler hakkında daha fazla bilgi için bkz. [genel, hata ayıklama, Seçenekler iletişim kutusu](../debugger/general-debugging-options-dialog-box.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Düzenle ve Devam Et](../debugger/edit-and-continue.md)

@@ -27,12 +27,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 550eedd1157d05f180e2229cec7594ae48c2fe45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 342d51b5057ac0c17e92db1d4c454962b50df19a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239388"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843398"
 ---
 # <a name="hierarchical-update"></a>Hiyerarşik güncelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,14 +89,14 @@ Hiyerarşik güncelleştirme * tutarlılığı korurken (bir veri kümesinden ik
   
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Kod değişiklikleri kaydetmeden önce ilişkili tabloları için güncelleştirmek için  
   
-1.  Çift **Kaydet** düğmesini <xref:System.Windows.Forms.BindingNavigator> açmak için **Form1** Kod Düzenleyicisi'nde.  
+1. Çift **Kaydet** düğmesini <xref:System.Windows.Forms.BindingNavigator> açmak için **Form1** Kod Düzenleyicisi'nde.  
   
-2.  Çağırmak için kod satırını ekleyin `OrdersBindingSource.EndEdit` yöntemi çağıran satırdan `CustomersBindingSource.EndEdit` yöntemi. Kodda **Kaydet** düğmesi tıklamasından olay aşağıdaki benzemesi gerekir:  
+2. Çağırmak için kod satırını ekleyin `OrdersBindingSource.EndEdit` yöntemi çağıran satırdan `CustomersBindingSource.EndEdit` yöntemi. Kodda **Kaydet** düğmesi tıklamasından olay aşağıdaki benzemesi gerekir:  
   
-     [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
+    [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
+    [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
   
- Verileri bir veritabanına kaydetme önce ilgili alt tablo üzerinde değişiklikler işleniyor ek olarak, bir veri kümesi için yeni alt kayıtları eklemeden önce yeni oluşturulan işleme üst kayıtlar için de olabilir. Yeni alt kayıtları (veri kümesine eklenecek siparişler) yabancı anahtar kısıtlamalarını etkinleştirmeden önce başka bir deyişle, yeni üst kayıt (müşteri) eklemek veri kümesine olabilir. Bunu yapmak için alt kullanabilirsiniz `BindingSource.AddingNew` olay.  
+   Verileri bir veritabanına kaydetme önce ilgili alt tablo üzerinde değişiklikler işleniyor ek olarak, bir veri kümesi için yeni alt kayıtları eklemeden önce yeni oluşturulan işleme üst kayıtlar için de olabilir. Yeni alt kayıtları (veri kümesine eklenecek siparişler) yabancı anahtar kısıtlamalarını etkinleştirmeden önce başka bir deyişle, yeni üst kayıt (müşteri) eklemek veri kümesine olabilir. Bunu yapmak için alt kullanabilirsiniz `BindingSource.AddingNew` olay.  
   
 > [!NOTE]
 >  Yeni üst kayıtlar işleme gerekip gerekmediğini, veri kaynağına bağlamak için kullanılan denetim türünü bağlıdır. Bu kılavuzda, üst tabloya bağlamak için tek tek denetimleri kullanın. Bu, yürütme yeni üst kaydı için ek kod gerektirir. Bunun yerine üst kayıtlar Karmaşık bağlama denetimde görüntülenen hoşlanıyorsanız <xref:System.Windows.Forms.DataGridView>, bu ek <xref:System.Windows.Forms.BindingSource.EndEdit%2A> ana kayıt gerekli olmaz için çağırın. Temel alınan veri bağlama denetimi işlevlerini yürüten yeni kayıtları işleme olmasıdır.  

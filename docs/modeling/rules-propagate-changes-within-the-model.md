@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3e1abc17e9675423359c6f850056a2fedf062e01
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 8f506b71240024206523821080cdf958660aa963
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567028"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865979"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Değişiklikleri Modelin İçinde Yayan Kurallar
 Bir değişiklik bir öğeden diğerine Görselleştirme ve modelleme SDK'sı (VMSDK) yaymak için bir depo oluşturabilirsiniz. Store herhangi bir öğeye bir değişiklik meydana geldiğinde, kuralları genellikle en dıştaki işlem tamamlandığında, yürütülmek üzere zamanlanır. Farklı türde bir öğe ekleme veya silme gibi olaylar, farklı türleri için kuralları vardır. Belirli öğeleri, şekilleri ve diyagramları türleri için kurallar ekleyebilirsiniz. Birçok yerleşik özellik kuralları tarafından tanımlanır: Örneğin, kuralları modeli değiştiğinde, diyagram güncelleştirildiğinden emin olun. Kendi kurallarınızı ekleyerek, etki alanına özgü dil özelleştirebilirsiniz.
@@ -67,7 +67,6 @@ namespace ExampleNamespace
    }
  }
 }
-
 ```
 
 > [!NOTE]
@@ -75,13 +74,13 @@ namespace ExampleNamespace
 
 ### <a name="to-define-a-rule"></a>Bir kural tanımlamak için
 
-1.  Bir sınıf ön eki olarak kuralı tanımlamak `RuleOn` özniteliği. Öznitelik kuralı bir etki alanı sınıfları, ilişkilerini veya diyagram öğeleri ile ilişkilendirir. Kural soyut bu sınıfın her örneği için uygulanır.
+1. Bir sınıf ön eki olarak kuralı tanımlamak `RuleOn` özniteliği. Öznitelik kuralı bir etki alanı sınıfları, ilişkilerini veya diyagram öğeleri ile ilişkilendirir. Kural soyut bu sınıfın her örneği için uygulanır.
 
-2.  Kural kümesi tarafından döndürülen ekleyerek kaydetme `GetCustomDomainModelTypes()` etki alanı model sınıfınızdaki.
+2. Kural kümesi tarafından döndürülen ekleyerek kaydetme `GetCustomDomainModelTypes()` etki alanı model sınıfınızdaki.
 
-3.  Kural sınıfı soyut kural sınıflarının birinden türetilir ve yürütme yönteminin yazma.
+3. Kural sınıfı soyut kural sınıflarının birinden türetilir ve yürütme yönteminin yazma.
 
- Aşağıdaki bölümlerde daha ayrıntılı adımları açıklanmaktadır.
+   Aşağıdaki bölümlerde daha ayrıntılı adımları açıklanmaktadır.
 
 ### <a name="to-define-a-rule-on-a-domain-class"></a>Bir etki alanı sınıf üzerinde bir kural tanımlamak için
 
@@ -129,24 +128,26 @@ namespace ExampleNamespace
 
 ### <a name="to-write-the-code-of-the-rule"></a>Kuralın kod yazmak için
 
--   Kural sınıfı aşağıdaki temel sınıflarının birinden türetilir:
+- Kural sınıfı aşağıdaki temel sınıflarının birinden türetilir:
 
-    |Temel sınıf|Tetikleyici|
-    |----------------|-------------|
-    |<xref:Microsoft.VisualStudio.Modeling.AddRule>|Bir öğe, bağlantı veya şekil eklenir.<br /><br /> Yeni öğelerin yanı sıra yeni ilişkiler algılamak için bunu kullanın.|
-    |<xref:Microsoft.VisualStudio.Modeling.ChangeRule>|Bir etki alanı özellik değeri değiştirilir. Yöntem bağımsız değişkenleri, eski ve yeni değerleri sağlar.<br /><br /> Şekiller için bu kural tetiklenir, yerleşik `AbsoluteBounds` şekli taşınırsa özellik değişiklikleri.<br /><br /> Çoğu durumda, geçersiz kılmak daha kullanışlı olan `OnValueChanged` veya `OnValueChanging` özellik işleyicisi. Bu yöntemler hemen önce ve değişiklikten sonra çağrılır. Aksine, kural, genellikle işlem sonunda çalışır. Daha fazla bilgi için [etki alanı özellik değeri değişiklik işleyicileri](../modeling/domain-property-value-change-handlers.md). **Not:** bağlantı oluşturulduğunda veya bu kural tetiklenir değil. Bunun yerine, yazma bir `AddRule` ve `DeleteRule` alan ilişkisine yönelik.|
-    |<xref:Microsoft.VisualStudio.Modeling.DeletingRule>|Bir öğe veya bağlantı silinmek üzere olduğunda tetiklenir. ' % S'özelliği ModelElement.IsDeleting işlemin sonuna kadar geçerlidir.|
-    |<xref:Microsoft.VisualStudio.Modeling.DeleteRule>|Bir öğe veya bağlantı silindiğinde gerçekleştirdi. Kural DeletingRules dahil olmak üzere diğer tüm kurallar yürütüldüğünü sonra yürütülür. ModelElement.IsDeleting yanlış ve ModelElement.IsDeleted geçerlidir. Bir sonraki geri alma için izin vermek için öğe gerçekten bellekten kaldırılmaz, ancak Store.ElementDirectory kaldırılır.|
-    |<xref:Microsoft.VisualStudio.Modeling.MoveRule>|Bir öğenin bir depo bölümünden diğerine taşınır.<br /><br /> (Bu bir şekil grafik konumuna ilgili olmadığını unutmayın.)|
-    |<xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule>|Bu kural yalnızca etki alanı ilişkileri için geçerlidir. Bir model öğesini açıkça bir bağlantı ya da sonuna kadar atarsanız tetiklenir.|
-    |<xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule>|Bağlantılar için veya bir öğeden sıralama MoveBefore veya MoveToIndex yöntemleri bir bağlantıyı kullanarak değiştirildiğinde tetiklenir.|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule>|Bir işlem oluşturulduğunda yürütülür.|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule>|İşlem yaklaşık olarak yürütülmesi için olduğunda yürütülür.|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule>|Hareket hakkında geri alınması ise yürütülür.|
 
--   Her sınıf, geçersiz bir yönteme sahip. Tür `override` sınıfınızdaki bulmak için. Bu yöntem parametresi olarak değiştirilmektedir öğe tanımlar.
+  | Temel sınıf | Tetikleyici |
+  |-|-|
+  | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Bir öğe, bağlantı veya şekil eklenir.<br /><br /> Yeni öğelerin yanı sıra yeni ilişkiler algılamak için bunu kullanın. |
+  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Bir etki alanı özellik değeri değiştirilir. Yöntem bağımsız değişkenleri, eski ve yeni değerleri sağlar.<br /><br /> Şekiller için bu kural tetiklenir, yerleşik `AbsoluteBounds` şekli taşınırsa özellik değişiklikleri.<br /><br /> Çoğu durumda, geçersiz kılmak daha kullanışlı olan `OnValueChanged` veya `OnValueChanging` özellik işleyicisi. Bu yöntemler hemen önce ve değişiklikten sonra çağrılır. Aksine, kural, genellikle işlem sonunda çalışır. Daha fazla bilgi için [etki alanı özellik değeri değişiklik işleyicileri](../modeling/domain-property-value-change-handlers.md). **Not:** bağlantı oluşturulduğunda veya bu kural tetiklenir değil. Bunun yerine, yazma bir `AddRule` ve `DeleteRule` alan ilişkisine yönelik. |
+  | <xref:Microsoft.VisualStudio.Modeling.DeletingRule> | Bir öğe veya bağlantı silinmek üzere olduğunda tetiklenir. ' % S'özelliği ModelElement.IsDeleting işlemin sonuna kadar geçerlidir. |
+  | <xref:Microsoft.VisualStudio.Modeling.DeleteRule> | Bir öğe veya bağlantı silindiğinde gerçekleştirdi. Kural DeletingRules dahil olmak üzere diğer tüm kurallar yürütüldüğünü sonra yürütülür. ModelElement.IsDeleting yanlış ve ModelElement.IsDeleted geçerlidir. Bir sonraki geri alma için izin vermek için öğe gerçekten bellekten kaldırılmaz, ancak Store.ElementDirectory kaldırılır. |
+  | <xref:Microsoft.VisualStudio.Modeling.MoveRule> | Bir öğenin bir depo bölümünden diğerine taşınır.<br /><br /> (Bu bir şekil grafik konumuna ilgili olmadığını unutmayın.) |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule> | Bu kural yalnızca etki alanı ilişkileri için geçerlidir. Bir model öğesini açıkça bir bağlantı ya da sonuna kadar atarsanız tetiklenir. |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule> | Bağlantılar için veya bir öğeden sıralama MoveBefore veya MoveToIndex yöntemleri bir bağlantıyı kullanarak değiştirildiğinde tetiklenir. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule> | Bir işlem oluşturulduğunda yürütülür. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule> | İşlem yaklaşık olarak yürütülmesi için olduğunda yürütülür. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule> | Hareket hakkında geri alınması ise yürütülür. |
 
- Kurallar hakkında aşağıdaki noktalara dikkat edin:
+
+- Her sınıf, geçersiz bir yönteme sahip. Tür `override` sınıfınızdaki bulmak için. Bu yöntem parametresi olarak değiştirilmektedir öğe tanımlar.
+
+  Kurallar hakkında aşağıdaki noktalara dikkat edin:
 
 1.  Bir işlemde değişiklik kümesini birçok kuralları tetikleyebilir. Genellikle, en dıştaki işlem tamamlandığında kurallar yürütülür. Bunlar, belirtilmemiş sırayla yürütülür.
 
@@ -208,7 +209,6 @@ namespace Company.TaskRuleExample
   }
 
 }
-
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.

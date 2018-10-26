@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d6152d75d28e5c6468ccc0a484e2eae3a25214d9
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 63cf3e71ded582b3406957ccb423c8dbf47768ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203760"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905908"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Nasıl yapılır: yük testi çalışma ayarı için bağlam parametreleri ekleme
 
@@ -36,19 +36,19 @@ Websunucusu1 bağlam parametresi değeri atamanız durumunda `http://CorporateSt
 
 Ayrıca, farklı bir yük testi çalışma ayarlarında aynı adı kullanarak bir bağlam parametresi için farklı değerler atama tarafından yük testi farklı ortamları kullanarak çalıştırabilirsiniz:
 
--   Kurumsal hazırlama Web sunucusuna çalışma ayarına: adlı bağlam parametresi `WebServer1=http://CorporateStagingWebServer`
+- Kurumsal hazırlama Web sunucusuna çalışma ayarına: adlı bağlam parametresi `WebServer1=http://CorporateStagingWebServer`
 
--   Kurumsal üretim Web sunucusu çalıştırma ayarı: adlı bağlam parametresi `WebServer1=http://CorporateProductionWebServer`
+- Kurumsal üretim Web sunucusu çalıştırma ayarı: adlı bağlam parametresi `WebServer1=http://CorporateProductionWebServer`
 
- **Komut satırından çalıştırma ayarını değiştirme**
+  **Komut satırından çalıştırma ayarını değiştirme**
 
- Bağlam parametresi stratejisi yararlanmak için farklı çalıştırma ayarları komut satırından kullanmak istiyorsanız, aşağıdaki komutları kullanın:
+  Bağlam parametresi stratejisi yararlanmak için farklı çalıştırma ayarları komut satırından kullanmak istiyorsanız, aşağıdaki komutları kullanın:
 
- **Test.UseRunSetting= CorporateStagingWebServer ayarlayın**
+  **Test.UseRunSetting= CorporateStagingWebServer ayarlayın**
 
- - ve -
+  - ve -
 
- **MSTest /testcontainer:loadtest1.loadtest**
+  **MSTest /testcontainer:loadtest1.loadtest**
 
 ## <a name="to-add-a-context-parameter-to-a-run-setting"></a>Bir çalışma ayarına bağlam parametresi eklemek için
 

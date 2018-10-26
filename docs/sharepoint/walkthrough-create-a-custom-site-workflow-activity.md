@@ -21,29 +21,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b366db32a4caadf0f454f893d8f98e2d288f2390
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2adb6dd8788027d89a743518adee4425e424ce60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627363"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894176"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>İzlenecek yol: özel site iş akışı faaliyeti oluşturma
   Bu izlenecek yol kullanarak bir site düzeyinde iş akışı için özel bir etkinlik oluşturma işlemini gösterir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Yalnızca bir site listesindeki tüm site için site düzeyinde iş akışları uygulayın.) Özel Etkinlik bir yedekleme Duyurular listesi oluşturur ve ardından Duyurular listesi içeriğini buna kopyalar.  
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
--   Site düzeyinde iş akışı oluşturma.  
+- Site düzeyinde iş akışı oluşturma.  
   
--   Bir özel iş akışı etkinliği oluşturma.  
+- Bir özel iş akışı etkinliği oluşturma.  
   
--   Oluşturma ve bir SharePoint listesi siliniyor.  
+- Oluşturma ve bir SharePoint listesi siliniyor.  
   
--   Öğeleri bir listeden diğerine kopyalama.  
+- Öğeleri bir listeden diğerine kopyalama.  
   
--   Hızlı Başlat çubuğunda liste görüntüleniyor.  
+- Hızlı Başlat çubuğunda liste görüntüleniyor.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  

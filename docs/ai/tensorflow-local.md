@@ -12,16 +12,17 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f60fa346df7d2b9e89f3d6905e273d0191bdf3b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 4bca48113349607de2f5ada53356f1d24eb82088
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281747"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933995"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Yerel olarak TensorFlow modeli eğitme
 
 Bu hızlı başlangıçta biz TensorFlow modeliyle eğitme [MNIST](http://yann.lecun.com/exdb/mnist/) yerel olarak yapay ZEKA için Visual Studio Araçları veri kümesi.
+
 MNIST veritabanını 60.000 örnekler Eğitim kümesi ve el yazısı basamak 10.000 örnekleri test kümesi vardır.
 
 ## <a name="prerequisites"></a>Önkoşullar
@@ -30,7 +31,8 @@ Başlamadan önce aşağıdakilerin yüklü olduğundan emin olun:
 
 ### <a name="google-tensorflow"></a>Google TensorFlow
 
-Bir terminalde aşağıdaki komutu çalıştırın.
+Bir terminalde aşağıdaki komutu çalıştırın:
+
 ```cmd
 C:\>pip.exe install tensorflow
 ```
@@ -47,9 +49,9 @@ Bu indirme [GitHub deposu](https://github.com/Microsoft/samples-for-ai) TensorFl
 
 - Seçin **Tensorflow örnekler** klasörü açık ve indirilen örnek deposundan **TensorflowExamples.sln** dosya.
 
-![Proje Aç](media\tensorflow-local\open-project.png)
+   ![Proje Aç](media/tensorflow-local/open-project.png)
 
-![Çözüm Aç](media\tensorflow-local\open-solution.png)
+   ![Çözüm Aç](media/tensorflow-local/open-solution.png)
 
 - MNIST projede bulma **Çözüm Gezgini**seçin ve sağ tıklatıp **başlangıç projesi olarak ayarla**.
 
@@ -57,7 +59,7 @@ Bu indirme [GitHub deposu](https://github.com/Microsoft/samples-for-ai) TensorFl
 
 - Çıkış konsolda yazdırılır.
 
-![Örnek konsol çıktısı](media\tensorflow-local\console-output.png)
+   ![Örnek konsol çıktısı](media/tensorflow-local/console-output.png)
 
 > [!div class="nextstepaction"]
 > [Bulutta bir TensorFlow modeli eğitme](tensorflow-vm.md)

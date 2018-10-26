@@ -17,12 +17,12 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f32cc47b796ea7d32207448e7888c17a1d40a73a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ad3c479349b698283fcb3a7145dcfc3948254b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254405"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836742"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Çözüm Gezgini Araç Çubuğuna Komut Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,41 +87,41 @@ Bu izlenecek yol, bir düğme ekleme işlemi açıklanır **Çözüm Gezgini** a
   
 #### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>Bir veya daha fazla proje açıkken bir düğme görüntülemek için  
   
-1.  İçinde `<Buttons>` bölümü ToolbarButtonPackage.vsct varolan iki komut bayrakları ekleme `<Button>` öğesi, arasında `<Strings>` ve `<Icons>` etiketler.  
+1. İçinde `<Buttons>` bölümü ToolbarButtonPackage.vsct varolan iki komut bayrakları ekleme `<Button>` öğesi, arasında `<Strings>` ve `<Icons>` etiketler.  
   
-    ```xml  
-    <CommandFlag>DefaultInvisible</CommandFlag>  
-    <CommandFlag>DynamicVisibility</CommandFlag>  
-    ```  
+   ```xml  
+   <CommandFlag>DefaultInvisible</CommandFlag>  
+   <CommandFlag>DynamicVisibility</CommandFlag>  
+   ```  
   
-     `DefaultInvisible` Ve `DynamicVisibility` bayrakları bunu ayarlanmalıdır Bu girdiler `<VisibilityConstraints>` bölüm etkisi alabilir.  
+    `DefaultInvisible` Ve `DynamicVisibility` bayrakları bunu ayarlanmalıdır Bu girdiler `<VisibilityConstraints>` bölüm etkisi alabilir.  
   
-2.  Oluşturma bir `<VisibilityConstraints>` iki bölüm `<VisibilityItem>` girdileri. Yeni bir bölüm kapattıktan sonra put `</Commands>` etiketi.  
+2. Oluşturma bir `<VisibilityConstraints>` iki bölüm `<VisibilityItem>` girdileri. Yeni bir bölüm kapattıktan sonra put `</Commands>` etiketi.  
   
-    ```xml  
-    <VisibilityConstraints>  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasSingleProject" />  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasMultipleProjects" />  
-    </VisibilityConstraints>  
-    ```  
+   ```xml  
+   <VisibilityConstraints>  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasSingleProject" />  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasMultipleProjects" />  
+   </VisibilityConstraints>  
+   ```  
   
-     Her görünürlük öğesi, belirtilen düğmenin görüntülendiği bir koşulunu temsil eder. Birden çok koşul uygulamak için aynı düğme için birden çok girişi oluşturmanız gerekir.  
+    Her görünürlük öğesi, belirtilen düğmenin görüntülendiği bir koşulunu temsil eder. Birden çok koşul uygulamak için aynı düğme için birden çok girişi oluşturmanız gerekir.  
   
-3.  Projeyi oluşturmak ve hata ayıklamaya başlayın. Deneysel örneği açılır.  
+3. Projeyi oluşturmak ve hata ayıklamaya başlayın. Deneysel örneği açılır.  
   
-     **Çözüm Gezgini** araç üstü çizili düğmesini içermiyor.  
+    **Çözüm Gezgini** araç üstü çizili düğmesini içermiyor.  
   
-4.  Bir proje içeren herhangi bir çözümü açın.  
+4. Bir proje içeren herhangi bir çözümü açın.  
   
-     Strikethrough düğmesi, varolan düğmeleri sağındaki araç çubuğunda görünür.  
+    Strikethrough düğmesi, varolan düğmeleri sağındaki araç çubuğunda görünür.  
   
-5.  Üzerinde **dosya** menüsünü tıklatın **çözümü Kapat**. Düğme araç çubuğundan kaybolur.  
+5. Üzerinde **dosya** menüsünü tıklatın **çözümü Kapat**. Düğme araç çubuğundan kaybolur.  
   
- Düğmesinin görünürlüğünü tarafından denetlenir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] VSPackage yüklenene kadar. VSPackage'ı yüklendikten sonra düğmesinin görünürlüğünü VSPackage'ı tarafından denetlenir.  Daha fazla bilgi için [MenuCommands Vs. OleMenuCommands](../misc/menucommands-vs-olemenucommands.md).  
+   Düğmesinin görünürlüğünü tarafından denetlenir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] VSPackage yüklenene kadar. VSPackage'ı yüklendikten sonra düğmesinin görünürlüğünü VSPackage'ı tarafından denetlenir.  Daha fazla bilgi için [MenuCommands Vs. OleMenuCommands](../misc/menucommands-vs-olemenucommands.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Komutlar, Menüler ve Araç Çubukları](../extensibility/internals/commands-menus-and-toolbars.md)

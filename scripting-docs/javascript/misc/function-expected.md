@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: aa2db3e95d4baece288c9f984a7a9cf7a82c9d1d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788714"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928938"
 ---
 # <a name="function-expected"></a>İşlev bekleniyor
-Aşağıdakilerden birini çağırma denedi ya da **işlev prototipi** yöntemleri değil bir nesne üzerinde bir `Function` nesnesi veya bir işlev çağrısı bağlamında bir nesne kullanılan. Örneğin, aşağıdaki kodu çünkü bu hatayı üreten **örnek** bir işlev değil.  
+Ya da birini çağırmaya çalıştığınız **işlev prototipi** yöntemleri olmayan bir nesne üzerinde bir `Function` nesne veya işlev çağrı bağlamındaki nesne kullanılan. Örneğin, aşağıdaki kod çünkü bu hatayı üretir **örnek** bir işlev değil.  
   
 ```JavaScript  
 var example = new Object();  // Create a new object called "example".  
@@ -37,10 +37,10 @@ var x = example();           // Try and call example as if it were a function.
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Yalnızca çağrısı **işlev prototipi** yöntemlere `Function` nesneleri.  
+-   Yalnızca çağrı **işlev prototipi** yöntemlerde `Function` nesneleri.  
   
--   İşlev çağırma işleci kullandığından emin olun `()` yalnızca işlevleri çağırmak için.  
+-   İşlev çağrısı işleci kullandığınızdan emin olun `()` yalnızca işlevleri çağırmak için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İşlev nesnesi](../../javascript/reference/function-object-javascript.md)   
- [prototype özelliği (nesne)](../../javascript/reference/prototype-property-object-javascript.md)
+ [prototype Özelliği (Nesne)](../../javascript/reference/prototype-property-object-javascript.md)

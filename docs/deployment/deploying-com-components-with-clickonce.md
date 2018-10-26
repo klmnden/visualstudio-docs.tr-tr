@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 868d9107edcc3490902bf677e364d9ad58c35d95
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 28b233f360e4a5fb066ae41b288dc0cdb2d610f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078881"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820468"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>ClickOnce ile COM bileşenleri dağıtma
 Eski COM bileşenlerinin dağıtımını, geleneksel olarak zor bir görev olmuştur. Bileşenleri, genel olarak kaydedilmesi gerekir ve bu nedenle çakışan uygulamalar arasında istenmeyen yan etkilere neden olabilir. Bileşenler bir uygulama için tamamen yalıtılmış veya yan yana uyumludur. çünkü bu durum genellikle .NET Framework uygulamalarında bir sorun değildir. Visual Studio yalıtılmış COM bileşenlerini Windows XP ya da daha yüksek işletim sistemi dağıtmanıza olanak tanır.  
@@ -85,46 +85,46 @@ Eski COM bileşenlerinin dağıtımını, geleneksel olarak zor bir görev olmu�
   
 ##### <a name="to-create-a-windows-based-application-using-a-com-component"></a>Bir COM bileşeni kullanarak Windows tabanlı bir uygulama oluşturmak için  
   
-1.  Visual Basic kullanarak **dosya** menüsünde tıklatın **yeni**, ardından **proje**.  
+1. Visual Basic kullanarak **dosya** menüsünde tıklatın **yeni**, ardından **proje**.  
   
-2.  İçinde **yeni proje** iletişim kutusunda **Visual Basic** düğümünü seçip alt **Windows uygulama**. İçinde **adı** kutusuna `RegFreeComDemo`.  
+2. İçinde **yeni proje** iletişim kutusunda **Visual Basic** düğümünü seçip alt **Windows uygulama**. İçinde **adı** kutusuna `RegFreeComDemo`.  
   
-3.  İçinde **Çözüm Gezgini**, tıklayın **tüm dosyaları göster** proje başvurularını görüntülenecek düğmesi.  
+3. İçinde **Çözüm Gezgini**, tıklayın **tüm dosyaları göster** proje başvurularını görüntülenecek düğmesi.  
   
-4.  Sağ **başvuruları** düğümünü seçip alt **Başvuru Ekle** bağlam menüsünden.  
+4. Sağ **başvuruları** düğümünü seçip alt **Başvuru Ekle** bağlam menüsünden.  
   
-5.  İçinde **Başvuru Ekle** iletişim kutusu, tıklayın **Gözat** sekmesine VB6Hello.dll'e gidin ve ardından seçin.  
+5. İçinde **Başvuru Ekle** iletişim kutusu, tıklayın **Gözat** sekmesine VB6Hello.dll'e gidin ve ardından seçin.  
   
-     A **VB6Hello** başvurusu, başvuruları listesinde belirir.  
+    A **VB6Hello** başvurusu, başvuruları listesinde belirir.  
   
-6.  İşaret **araç kutusu**seçin bir **düğmesi** denetlemek ve sürükleyin **Form1** formu.  
+6. İşaret **araç kutusu**seçin bir **düğmesi** denetlemek ve sürükleyin **Form1** formu.  
   
-7.  İçinde **özellikleri** penceresinde ayarlayın düğmenin **metin** özelliğini **Hello**.  
+7. İçinde **özellikleri** penceresinde ayarlayın düğmenin **metin** özelliğini **Hello**.  
   
-8.  İşleyici kodu eklemek için Ekle düğmesine çift tıklayın ve işleyicisi aşağıdaki gibi görünür, böylece kod dosyasında, kodu ekleyin:  
+8. İşleyici kodu eklemek için Ekle düğmesine çift tıklayın ve işleyicisi aşağıdaki gibi görünür, böylece kod dosyasında, kodu ekleyin:  
   
-    ```vb  
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
-        Dim VbObj As New VB6Hello.Class1  
-        VbObj.SayHello()  
-    End Sub  
-    ```  
+   ```vb  
+   Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
+       Dim VbObj As New VB6Hello.Class1  
+       VbObj.SayHello()  
+   End Sub  
+   ```  
   
 9. Uygulamayı çalıştırın. Gelen **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat**.  
   
- Sonraki denetimi ayırmanız gerekir. Uygulamanızın kullandığı her bir COM bileşeni projenize bir COM başvurusu olarak temsil edilir. Bu başvurular altında görülebilir **başvuruları** düğümünde **Çözüm Gezgini** penceresi. (Ekleyebileceğiniz bildirimi başvuran ya da kullanarak doğrudan **Başvuru Ekle** komutunu **proje** menüsünden veya dolaylı olarak bir ActiveX denetimini formunuza sürükleyerek.)  
+   Sonraki denetimi ayırmanız gerekir. Uygulamanızın kullandığı her bir COM bileşeni projenize bir COM başvurusu olarak temsil edilir. Bu başvurular altında görülebilir **başvuruları** düğümünde **Çözüm Gezgini** penceresi. (Ekleyebileceğiniz bildirimi başvuran ya da kullanarak doğrudan **Başvuru Ekle** komutunu **proje** menüsünden veya dolaylı olarak bir ActiveX denetimini formunuza sürükleyerek.)  
   
- Aşağıdaki adımlarda, COM bileşeni yalıtmak ve yalıtılmış denetimi içeren güncelleştirilmiş uygulamayı yayımlamak gösterilmektedir:  
+   Aşağıdaki adımlarda, COM bileşeni yalıtmak ve yalıtılmış denetimi içeren güncelleştirilmiş uygulamayı yayımlamak gösterilmektedir:  
   
 ##### <a name="to-isolate-a-com-component"></a>Bir COM bileşeni ayırmak için  
   
-1.  İçinde **Çözüm Gezgini**, **başvuruları** düğümünü **VB6Hello** başvuru.  
+1. İçinde **Çözüm Gezgini**, **başvuruları** düğümünü **VB6Hello** başvuru.  
   
-2.  İçinde **özellikleri** penceresinde değiştirin **yalıtılmış** özelliğinden **False** için **True**.  
+2. İçinde **özellikleri** penceresinde değiştirin **yalıtılmış** özelliğinden **False** için **True**.  
   
-3.  Gelen **derleme** menüsünde tıklatın **Çözümü Derle**.  
+3. Gelen **derleme** menüsünde tıklatın **Çözümü Derle**.  
   
- Şimdi ne zaman uygulama beklendiği gibi çalıştığını F5 tuşuna basın, ancak artık Kayıtsız COM altında çalışıyor Bu, kanıtlamak için VB6Hello.dll bileşen kaydı RegFreeComDemo1.exe Visual Studio IDE dışında çalıştırmayı deneyin. Düğme tıklandığında bu süre hala çalışır. Uygulama bildirimi geçici olarak yeniden adlandırma, yeniden başarısız olur.  
+   Şimdi ne zaman uygulama beklendiği gibi çalıştığını F5 tuşuna basın, ancak artık Kayıtsız COM altında çalışıyor Bu, kanıtlamak için VB6Hello.dll bileşen kaydı RegFreeComDemo1.exe Visual Studio IDE dışında çalıştırmayı deneyin. Düğme tıklandığında bu süre hala çalışır. Uygulama bildirimi geçici olarak yeniden adlandırma, yeniden başarısız olur.  
   
 > [!NOTE]
 >  Geçici olarak kaydını silerek bir COM bileşeni olmaması benzetimini yapabilirsiniz. Bir komut istemi açın, yazarak sistem klasörünüze gidin `cd /d %windir%\system32`, ardından yazarak bileşeninin kaydı `regsvr32 /u VB6Hello.dll`. Yeniden yazarak kaydedebilirsiniz `regsvr32 VB6Hello.dll`.  
@@ -133,15 +133,15 @@ Eski COM bileşenlerinin dağıtımını, geleneksel olarak zor bir görev olmu�
   
 ##### <a name="to-publish-an-application-update-with-an-isolated-com-component"></a>Yalıtılmış bir COM bileşeni ile bir uygulama güncelleştirmesi yayımlamak için  
   
-1.  Gelen **derleme** menüsünde tıklatın **yayımlama RegFreeComDemo**.  
+1. Gelen **derleme** menüsünde tıklatın **yayımlama RegFreeComDemo**.  
   
-     Yayınla Sihirbazı görüntülenir.  
+    Yayınla Sihirbazı görüntülenir.  
   
-2.  Yayımlama Sihirbazı'nda, burada erişebilir ve yayımlanan dosyaları incelemek yerel bilgisayarın diskte bir konum belirtin.  
+2. Yayımlama Sihirbazı'nda, burada erişebilir ve yayımlanan dosyaları incelemek yerel bilgisayarın diskte bir konum belirtin.  
   
-3.  Tıklayın **son** uygulamayı yayınlamak için.  
+3. Tıklayın **son** uygulamayı yayınlamak için.  
   
- Yayımlanan dosyaları incelemek, sysmon.ocx dosyasının dahil olduğunu fark edeceksiniz. Denetim, son kullanıcının makinede denetiminin farklı bir sürümü kullanılarak başka bir uygulama varsa, bu uygulamayla kesintiye neden olamaz, yani bu uygulama, tamamen yalıtılır.  
+   Yayımlanan dosyaları incelemek, sysmon.ocx dosyasının dahil olduğunu fark edeceksiniz. Denetim, son kullanıcının makinede denetiminin farklı bir sürümü kullanılarak başka bir uygulama varsa, bu uygulamayla kesintiye neden olamaz, yani bu uygulama, tamamen yalıtılır.  
   
 ## <a name="reference-native-assemblies"></a>Yerel başvuru derlemeleri  
  Visual Studio yerel Visual Basic 6.0 veya C++ derlemelerin başvurularını destekler. Yerel başvurular böyle başvurular çağrılır. Olduğunu doğrulayarak, bir başvuru yerel olup olmadığını, **dosya türü** özelliği **yerel** veya **ActiveX**.  
@@ -155,23 +155,23 @@ Eski COM bileşenlerinin dağıtımını, geleneksel olarak zor bir görev olmu�
   
  Her bileşen Kayıtsız COM için uygun bir adaydır Aşağıdakilerden biri doğruysa, bir bileşenin bir uygun değil:  
   
--   Bir işlem dışı sunucu bileşendir. EXE sunucuları desteklenmez; yalnızca dll desteklenir.  
+- Bir işlem dışı sunucu bileşendir. EXE sunucuları desteklenmez; yalnızca dll desteklenir.  
   
--   Bileşen, işletim sisteminin parçası olan veya XML, Internet Explorer veya Microsoft Data Access Components (MDAC) gibi bir sistem bileşeni. Yeniden dağıtım ilkesi bileşen yazarının izlemelidir; satıcınızla denetleyin.  
+- Bileşen, işletim sisteminin parçası olan veya XML, Internet Explorer veya Microsoft Data Access Components (MDAC) gibi bir sistem bileşeni. Yeniden dağıtım ilkesi bileşen yazarının izlemelidir; satıcınızla denetleyin.  
   
--   Bileşen bir uygulama, Microsoft Office gibi bir parçasıdır. Örneğin, Microsoft Excel nesne modeline yalıtmak çalışmamalıdır. Bu Office bir parçasıdır ve yalnızca tam Office ürünü yüklü bir bilgisayarda kullanılabilir.  
+- Bileşen bir uygulama, Microsoft Office gibi bir parçasıdır. Örneğin, Microsoft Excel nesne modeline yalıtmak çalışmamalıdır. Bu Office bir parçasıdır ve yalnızca tam Office ürünü yüklü bir bilgisayarda kullanılabilir.  
   
--   Bileşen bir eklenti veya bir ek bileşeni, örneğin bir Office Eklentisi veya bir Web tarayıcısında bir denetim olarak kullanılmak üzere tasarlanmıştır. Bu bileşenler, genellikle kayıt düzeni bildirim kapsamı dışında barındırma ortamı tarafından tanımlanan bir tür gerektirir.  
+- Bileşen bir eklenti veya bir ek bileşeni, örneğin bir Office Eklentisi veya bir Web tarayıcısında bir denetim olarak kullanılmak üzere tasarlanmıştır. Bu bileşenler, genellikle kayıt düzeni bildirim kapsamı dışında barındırma ortamı tarafından tanımlanan bir tür gerektirir.  
   
--   Bileşen, system, örneğin, yazdırma biriktiricisi bir aygıt sürücüsü için fiziksel veya sanal bir cihaz yönetir.  
+- Bileşen, system, örneğin, yazdırma biriktiricisi bir aygıt sürücüsü için fiziksel veya sanal bir cihaz yönetir.  
   
--   Yeniden dağıtılabilir veri erişim bileşendir. Veri uygulamaları, genellikle ayrı veri çalıştırılmadan önce yüklenecek erişim yeniden dağıtılabilir gerektirir. Microsoft ADO veri denetimi, Microsoft OLE DB veya Microsoft Data Access Components (MDAC) gibi bileşenleri yalıtmak çalışmamalıdır. Uygulamanız MDAC veya SQL Server Express kullanıyorsa, bunun yerine, önkoşul olarak ayarlamalısınız; bkz: [nasıl yapılır: ClickOnce uygulamasıyla Önkoşulları Yükleme](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+- Yeniden dağıtılabilir veri erişim bileşendir. Veri uygulamaları, genellikle ayrı veri çalıştırılmadan önce yüklenecek erişim yeniden dağıtılabilir gerektirir. Microsoft ADO veri denetimi, Microsoft OLE DB veya Microsoft Data Access Components (MDAC) gibi bileşenleri yalıtmak çalışmamalıdır. Uygulamanız MDAC veya SQL Server Express kullanıyorsa, bunun yerine, önkoşul olarak ayarlamalısınız; bkz: [nasıl yapılır: ClickOnce uygulamasıyla Önkoşulları Yükleme](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
- Bazı durumlarda, kayıt gerektirmeyen com için baştan tasarlama şansını Geliştirici bileşen için olası olabilir Bu mümkün değilse, yine de derleme ve bunlara bağımlı önyükleyici kullanarak standart kayıt düzeni ile uygulama yayımlama. Daha fazla bilgi için [önyükleyici paketleri oluşturma](../deployment/creating-bootstrapper-packages.md).  
+  Bazı durumlarda, kayıt gerektirmeyen com için baştan tasarlama şansını Geliştirici bileşen için olası olabilir Bu mümkün değilse, yine de derleme ve bunlara bağımlı önyükleyici kullanarak standart kayıt düzeni ile uygulama yayımlama. Daha fazla bilgi için [önyükleyici paketleri oluşturma](../deployment/creating-bootstrapper-packages.md).  
   
- Bir COM bileşeni yalnızca uygulama başına bir kez yalıtılmış olabilir. Örneğin, iki farklı aynı COM bileşeni ayıramazsınız **sınıf kitaplığı** aynı uygulamanın parçası olan projeleri. Bunun yapılması, bir yapı uyarısına neden olur ve uygulama çalışma zamanında yüklenmesi başarısız olur. Bu sorundan kaçınmak için Microsoft, bir tek Sınıf Kitaplığı'nda COM bileşenlerini kapsülleyen önerir.  
+  Bir COM bileşeni yalnızca uygulama başına bir kez yalıtılmış olabilir. Örneğin, iki farklı aynı COM bileşeni ayıramazsınız **sınıf kitaplığı** aynı uygulamanın parçası olan projeleri. Bunun yapılması, bir yapı uyarısına neden olur ve uygulama çalışma zamanında yüklenmesi başarısız olur. Bu sorundan kaçınmak için Microsoft, bir tek Sınıf Kitaplığı'nda COM bileşenlerini kapsülleyen önerir.  
   
- Uygulamanın dağıtım kayıt gerektirmez rağmen COM Geliştirici makinesinde, kayıt gereken birkaç senaryo mevcuttur. `Isolated` Özellik için otomatik olarak bildirim sırasında derleme oluşturmak için COM bileşeni Geliştirici makinesinde kayıtlı olması gerekir. Yapı sırasında kendi kendine kayıt çağıran hiçbir kayıt yakalama özellikleri vardır. Ayrıca, açıkça tür kitaplığında tanımlanan herhangi bir sınıf bildiriminde yansıtılmaz. Bir COM bileşeni ile yerel bir başvuru gibi önceden varolan bir bildirimi kullanırken Bileşen geliştirme zamanında kayıtlı olması gerekmeyebilir. Kayıt bir ActiveX denetimini bileşendir ve olmasını istiyorsanız ancak gereklidir **araç kutusu** ve Windows Forms Tasarımcısı.  
+  Uygulamanın dağıtım kayıt gerektirmez rağmen COM Geliştirici makinesinde, kayıt gereken birkaç senaryo mevcuttur. `Isolated` Özellik için otomatik olarak bildirim sırasında derleme oluşturmak için COM bileşeni Geliştirici makinesinde kayıtlı olması gerekir. Yapı sırasında kendi kendine kayıt çağıran hiçbir kayıt yakalama özellikleri vardır. Ayrıca, açıkça tür kitaplığında tanımlanan herhangi bir sınıf bildiriminde yansıtılmaz. Bir COM bileşeni ile yerel bir başvuru gibi önceden varolan bir bildirimi kullanırken Bileşen geliştirme zamanında kayıtlı olması gerekmeyebilir. Kayıt bir ActiveX denetimini bileşendir ve olmasını istiyorsanız ancak gereklidir **araç kutusu** ve Windows Forms Tasarımcısı.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)

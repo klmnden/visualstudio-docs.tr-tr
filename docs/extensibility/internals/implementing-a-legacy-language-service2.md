@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee151375cfff8977249ca5e21255401235987886
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: dccbac140aefb952eed97006cbcae6a61f94ac92
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513367"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855423"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Eski dil hizmetinde uygulama
 Yönetilen paket çerçevesini (MPF) kullanarak bir dil hizmeti uygulamak için öğesinden bir sınıf türetin <xref:Microsoft.VisualStudio.Package.LanguageService> sınıfı ve aşağıdaki soyut yöntemler ve özellikler uygular:  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> Yöntemi  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> Yöntemi  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> Yöntemi  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> Yöntemi  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Yöntemi  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Yöntemi  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A> Özelliği  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A> Özelliği  
   
- Uygulamaya bu yöntemleri ve özellikleri için aşağıdaki uygun bölümlere bakın.  
+  Uygulamaya bu yöntemleri ve özellikleri için aşağıdaki uygun bölümlere bakın.  
   
- Ek özellikleri destekleyecek şekilde dili hizmetinizi MPF dil hizmeti sınıflarının birinden bir sınıf türetin gerekebilir; Örneğin, ek menü komutları desteklemek için bir sınıftan türetilmelidir <xref:Microsoft.VisualStudio.Package.ViewFilter> sınıfı ve birkaç komut işleme yöntemi geçersiz kılın (bkz <xref:Microsoft.VisualStudio.Package.ViewFilter> Ayrıntılar için). <xref:Microsoft.VisualStudio.Package.LanguageService> , Sınıfının bir örneğini sağlamak üzere uygun oluşturma yöntemini geçersiz kılma ve sınıfı bir dizi yeni çeşitli sınıfların örneklerini oluşturmak için çağrılan yöntem sağlar. Örneğin, geçersiz kılmak ihtiyacınız <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> yönteminde <xref:Microsoft.VisualStudio.Package.LanguageService> sınıfının örneğini, kendi dönüş <xref:Microsoft.VisualStudio.Package.ViewFilter> sınıfı. Daha fazla ayrıntı için "Özel sınıflar örnekleme" bölümüne bakın.  
+  Ek özellikleri destekleyecek şekilde dili hizmetinizi MPF dil hizmeti sınıflarının birinden bir sınıf türetin gerekebilir; Örneğin, ek menü komutları desteklemek için bir sınıftan türetilmelidir <xref:Microsoft.VisualStudio.Package.ViewFilter> sınıfı ve birkaç komut işleme yöntemi geçersiz kılın (bkz <xref:Microsoft.VisualStudio.Package.ViewFilter> Ayrıntılar için). <xref:Microsoft.VisualStudio.Package.LanguageService> , Sınıfının bir örneğini sağlamak üzere uygun oluşturma yöntemini geçersiz kılma ve sınıfı bir dizi yeni çeşitli sınıfların örneklerini oluşturmak için çağrılan yöntem sağlar. Örneğin, geçersiz kılmak ihtiyacınız <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> yönteminde <xref:Microsoft.VisualStudio.Package.LanguageService> sınıfının örneğini, kendi dönüş <xref:Microsoft.VisualStudio.Package.ViewFilter> sınıfı. Daha fazla ayrıntı için "Özel sınıflar örnekleme" bölümüne bakın.  
   
- Dil hizmetiniz aynı zamanda pek çok yerde kullanılan kendi simgeleri sağlayabilir. Örneğin, bir IntelliSense tamamlanma listesi gösterildiğinde, listedeki her öğeye simge öğesi, bir yöntem, sınıf, ad alanı, özelliği işaretleme ilişkili olabilir veya dilinizi ne olursa olsun gereklidir. Bu simgeler kullanılan tüm IntelliSense listelerinde **gezinti çubuğu**hem de **hata listesi** görev penceresi. Ayrıntılar için aşağıdaki "Dil hizmeti görüntüleri" bölümüne bakın.  
+  Dil hizmetiniz aynı zamanda pek çok yerde kullanılan kendi simgeleri sağlayabilir. Örneğin, bir IntelliSense tamamlanma listesi gösterildiğinde, listedeki her öğeye simge öğesi, bir yöntem, sınıf, ad alanı, özelliği işaretleme ilişkili olabilir veya dilinizi ne olursa olsun gereklidir. Bu simgeler kullanılan tüm IntelliSense listelerinde **gezinti çubuğu**hem de **hata listesi** görev penceresi. Ayrıntılar için aşağıdaki "Dil hizmeti görüntüleri" bölümüne bakın.  
   
 ## <a name="getlanguagepreferences-method"></a>GetLanguagePreferences yöntemi  
  <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> Yöntemi her zaman aynı örneğini döndüren bir <xref:Microsoft.VisualStudio.Package.LanguagePreferences> sınıfı. Temel kullanabileceğiniz <xref:Microsoft.VisualStudio.Package.LanguagePreferences> dil hizmetiniz için ek tercihlere gerekmiyorsa sınıfı. Varlığı en az MPF dil hizmeti sınıfları varsayar temel <xref:Microsoft.VisualStudio.Package.LanguagePreferences> sınıfı.  

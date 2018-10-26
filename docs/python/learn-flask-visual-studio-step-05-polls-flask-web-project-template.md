@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f79cf8693eb33d7ad5a5d26c9f3c2ef13cc9772c
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: b1331890a0ec9b788b17214a0d5f90b63ceb1a32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101023"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909010"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>5. adım: yoklamalar Flask Web projesi şablonunu kullanma
 
@@ -228,7 +228,7 @@ def seed():
     return redirect('/')
 ```
 
-Çağrı `repository.add_sample_polls()` sona eriyor belirli birinde `Repository` seçilen veri deponuz için uygulamaları. Her uygulama çağrıları `_load_samples_json` yöntemi bulunan *modelleri\__init__.py* yüklenecek *models\samples.json* belleğe sonra dosya gerekli oluşturmak için bu verileri yinelenir `Poll` ve `Choice` veri deposundaki nesne.
+Çağrı `repository.add_sample_polls()` sona eriyor belirli birinde `Repository` seçilen veri deponuz için uygulamaları. Her uygulama çağrıları `_load_samples_json` yöntemi bulunan *modelleri\_\_init\_\_.py* yüklenecek *models\samples.json* dosyası belleğe, ardından gerekli oluşturmak için bu verileri yinelenir `Poll` ve `Choice` veri deposundaki nesne.
 
 Bu işlem tamamlandıktan sonra `redirect('/')` deyiminde `seed` yöntemi giriş sayfasına götürür. Çünkü `repository.get_polls` artık koşullu etiketleri bir veri nesnesi döndürür *templates\index.html* artık yoklamalar içeren bir tablo oluşturur.
 

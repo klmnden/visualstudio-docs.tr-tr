@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d873ba29ea2dc327cd6499613abb66d2a728008c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 03e4dcd79d90806eab0d664b2a0cba428c03207c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794393"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935334"
 ---
 # <a name="ienumdebugextendedpropertyinfoclone"></a>IEnumDebugExtendedPropertyInfo::Clone
 Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.  
@@ -44,4 +44,4 @@ HRESULT Clone (
  Geçerli bir döndürür `HRESULT`, genellikle `S_OK`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ienumdebugextendedpropertyınfo arabirimi](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)
+ [IEnumDebugExtendedPropertyInfo Arabirimi](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)

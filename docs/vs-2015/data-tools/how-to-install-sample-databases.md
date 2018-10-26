@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: fd51bd397e6db3728c10f52db68d45e226fb605b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3ffe88fb54da26468ca510a2f1a7ab6170d88db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881728"
 ---
 # <a name="how-to-install-sample-databases"></a>Nasıl Yapılır: Örnek Veritabanları Yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,11 +96,11 @@ Birçok veri örneği, Northwind, Pubs, AdventureWorks örnek veritabanlarına b
   
 #### <a name="to-install-the-northwind-sample-database-for-microsoft-access"></a>Microsoft Access için Northwind örnek veritabanını yüklemek için  
   
-1.  Microsoft Access 2010 veya sonraki sürümlerde, Northwind için çevrimiçi şablonlar arayın ve seçin **Desktop Northwind 2007 örnek veritabanına**.  
+1. Microsoft Access 2010 veya sonraki sürümlerde, Northwind için çevrimiçi şablonlar arayın ve seçin **Desktop Northwind 2007 örnek veritabanına**.  
   
-2.  Microsoft Access içinde veritabanı dosyasını Northwind.accdb kaydedin.  
+2. Microsoft Access içinde veritabanı dosyasını Northwind.accdb kaydedin.  
   
- Access veritabanları için yeni uzantı. accdb'dir. Bkz: [Microsoft Access 2010 ile veri programlama](http://msdn.microsoft.com/library/office/ff965871.aspx). Access'i kullanarak Northwind veritabanına bağlanmak için bkz: [nasıl yapılır: Northwind veritabanına bağlanmak](../data-tools/how-to-connect-to-the-northwind-database.md).  
+   Access veritabanları için yeni uzantı. accdb'dir. Bkz: [Microsoft Access 2010 ile veri programlama](http://msdn.microsoft.com/library/office/ff965871.aspx). Access'i kullanarak Northwind veritabanına bağlanmak için bkz: [nasıl yapılır: Northwind veritabanına bağlanmak](../data-tools/how-to-connect-to-the-northwind-database.md).  
   
 ## <a name="net-framework-security"></a>.NET Framework Güvenliği  
  Örnek veritabanları yalnızca gösterim amaçlıdır ve mutlaka en iyi güvenlik yöntemlerini ortaya koymaz.  

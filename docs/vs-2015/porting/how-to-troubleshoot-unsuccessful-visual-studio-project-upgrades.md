@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 4a7ab025b4d0a89555ebb29c8cda2579eb9c455c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c7dab8df520105aae1ba4168c675326ad588e603
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176125"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911609"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Nasıl Yapılır: Başarısız Visual Studio Proje Yükseltmelerinde Sorun Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,13 +53,13 @@ Bazı durumlarda Visual Studio tam olarak bir proje önceki bir sürümünü dö
   
 #### <a name="to-resolve-incorrect-references"></a>Yanlış başvurularını çözümlemek için  
   
-1.  Proje dosyanız, bir metin düzenleyicisinde açın.  
+1. Proje dosyanız, bir metin düzenleyicisinde açın.  
   
-2.  Proje özelliklerini açın.  
+2. Proje özelliklerini açın.  
   
-3.  Doğru seçin **hedef Framework'ü** değeri. Alternatif olarak, değerini değiştirebilirsiniz `<TargetFrameworkVersion>` doğrudan proje dosyasında öğesi.  
+3. Doğru seçin **hedef Framework'ü** değeri. Alternatif olarak, değerini değiştirebilirsiniz `<TargetFrameworkVersion>` doğrudan proje dosyasında öğesi.  
   
- Yükseltilen çalıştırmak üzere projenizi isteyip istemediğinizi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] sürümü, proje başvurularını güncelleştirme ve ayrıca güncelleştirin `Imports` veya `Using` çağrısı deyimleri. Projenizi IDE'de yüklerse kullanarak başvurular güncelleştirebilirsiniz **Çözüm Gezgini** veya **başvuru Yöneticisi** iletişim kutusu.  
+   Yükseltilen çalıştırmak üzere projenizi isteyip istemediğinizi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] sürümü, proje başvurularını güncelleştirme ve ayrıca güncelleştirin `Imports` veya `Using` çağrısı deyimleri. Projenizi IDE'de yüklerse kullanarak başvurular güncelleştirebilirsiniz **Çözüm Gezgini** veya **başvuru Yöneticisi** iletişim kutusu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [/ Yükseltme (devenv.exe)](../ide/reference/upgrade-devenv-exe.md)   

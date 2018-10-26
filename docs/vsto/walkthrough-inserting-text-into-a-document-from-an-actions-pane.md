@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 575f847758bd18c5e13298b1fddd3e34ddb98545
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ad60aa15b3924bd562ed95c30ed9aaf4adef0133
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676738"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862196"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>İzlenecek yol: Eylemler bölmesinden belgeye metin ekleme
   Bu yönerge, Microsoft Office Word belgesinde Eylemler bölmesi oluşturma işlemini gösterir. Eylemler bölmesinde girişini toplamak ve ardından metin belgeye gönderen iki denetimleri içerir.  
@@ -60,17 +60,17 @@ ms.locfileid: "35676738"
   
 ### <a name="to-add-text-to-your-document"></a>Belgeye metin ekleme  
   
-1.  Word belgenize aşağıdaki metni yazın:  
+1. Word belgenize aşağıdaki metni yazın:  
   
-     **21 Mart 2008**  
+    **21 Mart 2008**  
   
-     **Ad**  
+    **Ad**  
   
-     **Adresi**  
+    **Adresi**  
   
-     **Bu, bir sözcük temel Eylemler bölmesinde örneğidir.**  
+    **Bu, bir sözcük temel Eylemler bölmesinde örneğidir.**  
   
- Ekleyebileceğiniz bir <xref:Microsoft.Office.Tools.Word.Bookmark> ondan sürükleyerek belgenize denetimi **araç kutusu** kullanarak veya Visual Studio'da **yer işareti** iletişim kutusundaki Word.  
+   Ekleyebileceğiniz bir <xref:Microsoft.Office.Tools.Word.Bookmark> ondan sürükleyerek belgenize denetimi **araç kutusu** kullanarak veya Visual Studio'da **yer işareti** iletişim kutusundaki Word.  
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>Belgenize Bookmark denetimi eklemek için  
   

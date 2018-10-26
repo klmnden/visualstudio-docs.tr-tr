@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73a2dd2288ae54c184405793323cd3084b90e35a
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 67b80eb48129fb989822e28bcb0ac0e330c426bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495290"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828439"
 ---
 # <a name="vspackage-registration"></a>VSPackage Kaydı
 VSPackage gerekir öneri [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] yüklenir ve gereken yüklendi. Bu işlem, kayıt defterine bilgi yazma tarafından gerçekleştirilir. Tipik bir iş yükleyicinin olmasıdır.  
@@ -48,15 +48,15 @@ VSPackage gerekir öneri [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md
   
  Teorik olarak daha fazla iyi, kendi kendine kayıt VSPackage yükleme için uygun hale getiren birden çok fabrikadan sahiptir:  
   
--   Yükleme, kaldırma, geri yükleme ve kaldırma işlemini geri alma doğru destek RegPkg çağırarak kendi kendini kaydeden her yönetilen VSPackage için dört özel eylem yazmanızı gerektirir.  
+- Yükleme, kaldırma, geri yükleme ve kaldırma işlemini geri alma doğru destek RegPkg çağırarak kendi kendini kaydeden her yönetilen VSPackage için dört özel eylem yazmanızı gerektirir.  
   
--   Yan yana destek yönelik yaklaşımınızı RegSvr32 veya RegPkg desteklenen her sürümü için çağırma dört özel eylem Yazar gerektirebilir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+- Yan yana destek yönelik yaklaşımınızı RegSvr32 veya RegPkg desteklenen her sürümü için çağırma dört özel eylem Yazar gerektirebilir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
--   Kendi kendine kayıtlı anahtarlar başka bir özellik veya uygulama tarafından kullanılır, söyleyen hiçbir şekilde geri olmadığı için bir yükleme Self kayıtlı modül ile güvenli bir şekilde alınamaz.  
+- Kendi kendine kayıtlı anahtarlar başka bir özellik veya uygulama tarafından kullanılır, söyleyen hiçbir şekilde geri olmadığı için bir yükleme Self kayıtlı modül ile güvenli bir şekilde alınamaz.  
   
--   Kendi kendine kayıtlı DLL'leri bazen, mevcut olmayan ya da yanlış sürümü yardımcı DLL'lerine. Buna karşılık, Windows Installer DLL'leri sistemin geçerli durumunu üzerinde hiçbir bağımlılık ile kayıt tabloları kullanarak kaydedebilirsiniz.  
+- Kendi kendine kayıtlı DLL'leri bazen, mevcut olmayan ya da yanlış sürümü yardımcı DLL'lerine. Buna karşılık, Windows Installer DLL'leri sistemin geçerli durumunu üzerinde hiçbir bağımlılık ile kayıt tabloları kullanarak kaydedebilirsiniz.  
   
--   Tür kitaplıkları gibi ağ kaynaklarına erişim bileşeni hem çalışma alanından kaynağı olarak belirtilmişse ve kendi kendini kaydetme tabloda listelenen kendi kayıt kodunu engellenebilir. Bu yükleme bileşen Yönetim yüklemesi sırasında başarısız olmasına neden olabilir.  
+- Tür kitaplıkları gibi ağ kaynaklarına erişim bileşeni hem çalışma alanından kaynağı olarak belirtilmişse ve kendi kendini kaydetme tabloda listelenen kendi kayıt kodunu engellenebilir. Bu yükleme bileşen Yönetim yüklemesi sırasında başarısız olmasına neden olabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows Installer](/windows/desktop/Msi/windows-installer-portal)   

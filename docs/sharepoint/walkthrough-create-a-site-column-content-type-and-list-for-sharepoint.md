@@ -24,29 +24,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c0359af3d55f6efe26b2ae3bde7bc7726f7d333
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fb78f5c40a04bb69d2f95d7f872b05e3d501113
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635661"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900130"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>İzlenecek yol: SharePoint için site sütunu, içerik türü ve liste oluşturma
   Aşağıdaki yordamlar özel SharePoint sitesi sütunlar oluşturma işlemini göstermektedir: veya *alanları*— site sütunlarını kullanan bir içerik türü yanı sıra. Ayrıca, yeni içerik türü kullanan bir liste oluşturma işlemini gösterir.  
   
  Bu izlenecek yol aşağıdaki görevleri içerir:  
   
--   [Özel Site sütun oluşturma](#BKMK_CreatingCustSiteCols).  
+- [Özel Site sütun oluşturma](#BKMK_CreatingCustSiteCols).  
   
--   [Özel bir içerik türünü oluşturma](#BKMK_CreateCustContType).  
+- [Özel bir içerik türünü oluşturma](#BKMK_CreateCustContType).  
   
--   [Liste oluşturma](#BKMK_CreateList).  
+- [Liste oluşturma](#BKMK_CreateList).  
   
--   [Liste oluşturma](#BKMK_CreateList).  
+- [Liste oluşturma](#BKMK_CreateList).  
   
--   [Uygulamayı test etme](#BKMK_TestApp).  
+- [Uygulamayı test etme](#BKMK_TestApp).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  

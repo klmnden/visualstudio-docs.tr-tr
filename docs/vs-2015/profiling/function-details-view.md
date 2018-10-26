@@ -19,29 +19,29 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 980f676a0197e84523d4fa6a080e72abc02ccb4a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c60ca5c0e073aa3643d6f77fa1350aaa4cdce837
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181913"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812276"
 ---
 # <a name="function-details-view"></a>İşlev Ayrıntıları Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **İşlev Ayrıntıları görünümü** penceresinde aşağıdaki bilgileri görüntüler:  
   
--   **Maliyet dağılımı** çubuk grafik, seçtiğiniz bir işlev ve seçili işlev çağıran işlevler arasında ve seçili işlev tarafından çağrılan işlevler arasındaki ilişkileri temsil eder .  
+- **Maliyet dağılımı** çubuk grafik, seçtiğiniz bir işlev ve seçili işlev çağıran işlevler arasında ve seçili işlev tarafından çağrılan işlevler arasındaki ilişkileri temsil eder .  
   
--   **İşlevi performans ayrıntıları** belirttiğiniz işlevi için Özet profil oluşturma verilerini gösteren tablo.  
+- **İşlevi performans ayrıntıları** belirttiğiniz işlevi için Özet profil oluşturma verilerini gösteren tablo.  
   
--   **İşlev kod görünümü** kod kullanılabilir olduğunda, işlev kodunu gösteren bir pencere.  
+- **İşlev kod görünümü** kod kullanılabilir olduğunda, işlev kodunu gösteren bir pencere.  
   
- **İşlev kod görünümü** ayrı bir bölme bir penceredir. Varsayılan olarak, yatay, iki bölme bölme ve **işlev kod görünümü** penceresi çerçevenin en altında konumlandırılmış.  
+  **İşlev kod görünümü** ayrı bir bölme bir penceredir. Varsayılan olarak, yatay, iki bölme bölme ve **işlev kod görünümü** penceresi çerçevenin en altında konumlandırılmış.  
   
--   İki bölmeyi dikey olarak Böl için tıklatın **ekranı dikey olarak bölünmüş** araç.  
+- İki bölmeyi dikey olarak Böl için tıklatın **ekranı dikey olarak bölünmüş** araç.  
   
--   Bölmelerin göreli boyutlarını değiştirmek için gölgeli kenarlık kareleri arasında tıklayın ve kenarlığı farklı bir konuma sürükleyin.  
+- Bölmelerin göreli boyutlarını değiştirmek için gölgeli kenarlık kareleri arasında tıklayın ve kenarlığı farklı bir konuma sürükleyin.  
   
 ## <a name="cost-distribution-bar-chart"></a>Maliyet dağıtımı çubuk grafik  
   
@@ -55,25 +55,25 @@ ms.locfileid: "49181913"
   
  Görünümünde seçili işlev yapmak için bir çağıran işlevin adını tıklayabilirsiniz.  
   
--   Listelemek için çok fazla arama işlevleri varsa, en küçük katkılar işlevleriyle toplanır bir **diğer** blok. Tıklayın **diğer** seçilen işlevin çağrılmasından ve çağrılan işlevlerinden görüntülenecek **arayan/Aranan görünümü** penceresi. Daha fazla bilgi için [arayan/Aranan görünümü](../profiling/caller-callee-view.md).  
+- Listelemek için çok fazla arama işlevleri varsa, en küçük katkılar işlevleriyle toplanır bir **diğer** blok. Tıklayın **diğer** seçilen işlevin çağrılmasından ve çağrılan işlevlerinden görüntülenecek **arayan/Aranan görünümü** penceresi. Daha fazla bilgi için [arayan/Aranan görünümü](../profiling/caller-callee-view.md).  
   
--   Çağıran işlev yok yoksa veya işlev bir iş parçacığı veya işlem girişi işlevi ise bir **üst, yığın** bloğu görünür.  
+- Çağıran işlev yok yoksa veya işlev bir iş parçacığı veya işlem girişi işlevi ise bir **üst, yığın** bloğu görünür.  
   
- **Seçili işlevi**  
+  **Seçili işlevi**  
   
- Seçili işleve çubuğu, seçilen işlevin toplam performans ölçüm seçili işlev çağrılan işlevlerin ve kod Katkıları gösterir. Proportion için çağrılan bir işlevin veya işlev gövdesinin içeren blok boyutu olduğundan seçilen işlevin performans ölçüm, toplam değere katkıyı.  
+  Seçili işleve çubuğu, seçilen işlevin toplam performans ölçüm seçili işlev çağrılan işlevlerin ve kod Katkıları gösterir. Proportion için çağrılan bir işlevin veya işlev gövdesinin içeren blok boyutu olduğundan seçilen işlevin performans ölçüm, toplam değere katkıyı.  
   
- Görünümünde seçili işlev yapmak için çağrılan bir işlevin adını tıklayabilirsiniz.  
+  Görünümünde seçili işlev yapmak için çağrılan bir işlevin adını tıklayabilirsiniz.  
   
--   **Toplam** performans ölçümü seçilen işlevin bir değerdir.  
+- **Toplam** performans ölçümü seçilen işlevin bir değerdir.  
   
--   **İşlev gövdesi** blok doğrudan işlevinin gövdesindeki kod yürütülmesi gerçekleşen performans ölçümü toplam değerini miktarını temsil eder.  
+- **İşlev gövdesi** blok doğrudan işlevinin gövdesindeki kod yürütülmesi gerçekleşen performans ölçümü toplam değerini miktarını temsil eder.  
   
--   Seçili işlev tarafından çağrılmış işlevler bloklar halinde listelenmiştir. Seçilen işlevlerin blok boyutu içinde çağrılan işlev oluştu seçilen işlevin toplam performans ölçümü miktarını temsil eder.  
+- Seçili işlev tarafından çağrılmış işlevler bloklar halinde listelenmiştir. Seçilen işlevlerin blok boyutu içinde çağrılan işlev oluştu seçilen işlevin toplam performans ölçümü miktarını temsil eder.  
   
--   Listelemek için çok fazla arama işlevleri varsa, en küçük katkılar işlevleriyle toplanır bir **diğer** blok. Tıklayın **diğer** seçilen işlevin çağrılmasından ve çağrılan işlevlerinden görüntülenecek **arayan/Aranan görünümü** penceresi. Daha fazla bilgi için [arayan/Aranan görünümü](../profiling/caller-callee-view.md).  
+- Listelemek için çok fazla arama işlevleri varsa, en küçük katkılar işlevleriyle toplanır bir **diğer** blok. Tıklayın **diğer** seçilen işlevin çağrılmasından ve çağrılan işlevlerinden görüntülenecek **arayan/Aranan görünümü** penceresi. Daha fazla bilgi için [arayan/Aranan görünümü](../profiling/caller-callee-view.md).  
   
--   Çağrılan işlev yok, ise bir **alt, yığın** bloğu görünür.  
+- Çağrılan işlev yok, ise bir **alt, yığın** bloğu görünür.  
   
 ## <a name="function-performance-details"></a>İşlev performans ayrıntıları  
  İşlev performans Ayrıntıları tablosu özet verilerini seçili işlev için performans ölçümlerini sağlar. Hem değer hem de yüzde görünür. Belirtme ve grafik ayrıntıları görünen profil oluşturma verileri tablo olarak belirttiğiniz **performans ölçümü** listesi.  

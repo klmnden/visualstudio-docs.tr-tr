@@ -22,12 +22,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db777a7b35ce6576640b6ac688ae716c0e41f676
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bbcd6fb78ef87992571347f6a32f18e939a00586
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241676"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892187"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Hata: Transact-SQL yürütmesi hata ayıklaması yapılmadan sonlandı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ Hata ayıklayıcı hata ayıklama iletisi, SQL Server'dan almaz ve Transact-SQL 
   
  Kullanılan iki hesap vardır:  
   
--   Kullanıcı hesabı uygulama hesabıdır [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] olarak çalışıyor.  
+- Kullanıcı hesabı uygulama hesabıdır [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] olarak çalışıyor.  
   
--   Bağlantı hesabı SQL Server'a bağlantı kurmak için kullanılan kimliktir. Bu mutlaka bağlantı SQL kimlik doğrulaması kullanıyorsanız gibi Visual Studio çalıştıran kimliğin ile aynı değildir.  
+- Bağlantı hesabı SQL Server'a bağlantı kurmak için kullanılan kimliktir. Bu mutlaka bağlantı SQL kimlik doğrulaması kullanıyorsanız gibi Visual Studio çalıştıran kimliğin ile aynı değildir.  
   
- SQL hata ayıklama, uygulama hesabı bağlantı hesapla eşleşmesi gerekir veya sysadmin olmanız gerekir.  
+  SQL hata ayıklama, uygulama hesabı bağlantı hesapla eşleşmesi gerekir veya sysadmin olmanız gerekir.  
   
- Uygulama hesabı sa gibi bir SQL oturum açma kullanıyorsanız, kurulum SQL Server'da sysadmin olarak olması gerekir. Varsayılan olarak, yöneticiler makine SQL server üzerinde çalıştığı SQL Server Sistem bulunur.  
+  Uygulama hesabı sa gibi bir SQL oturum açma kullanıyorsanız, kurulum SQL Server'da sysadmin olarak olması gerekir. Varsayılan olarak, yöneticiler makine SQL server üzerinde çalıştığı SQL Server Sistem bulunur.  
   
- Bu hatayı düzeltmek için ihtiyacınız olabilecek:  
+  Bu hatayı düzeltmek için ihtiyacınız olabilecek:  
   
--   İzinleri ayarlarınızı doğrulayın. Daha fazla bilgi için [nasıl yapılır: hata ayıklama için SQL Server izinleri ayarlayın](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414).  
+- İzinleri ayarlarınızı doğrulayın. Daha fazla bilgi için [nasıl yapılır: hata ayıklama için SQL Server izinleri ayarlayın](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414).  
   
--   SQL hata ayıklamayı'ı doğru bir şekilde ayarlandığından emin olun.  
+- SQL hata ayıklamayı'ı doğru bir şekilde ayarlandığından emin olun.  
   
--   Ağ veya veritabanı yöneticinize başvurun.  
+- Ağ veya veritabanı yöneticinize başvurun.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [SQL hata ayıklamayı kurma](http://msdn.microsoft.com/en-us/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   

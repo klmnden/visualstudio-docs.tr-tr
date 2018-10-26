@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 205408cc4241bb0c10b4a2e413449f7b70452187
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0127bac6ca74be626f9ce22fb60ad5258ae6c3c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567083"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822131"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF kullanarak DSL'nizi genişletme
 
@@ -125,43 +125,43 @@ MEF özellikli kendinize veya başka bir kullanıcı tarafından oluşturulan bi
 
 #### <a name="to-create-a-dsl-extension-vsix"></a>Bir DSL uzantısı VSIX oluşturmak için
 
-1.  Yeni bir sınıf kitaplığı projesi oluşturun. Bunu yapmak için **yeni proje** iletişim kutusunda **Visual Basic** veya **Visual C#** seçip **sınıf kitaplığı**.
+1. Yeni bir sınıf kitaplığı projesi oluşturun. Bunu yapmak için **yeni proje** iletişim kutusunda **Visual Basic** veya **Visual C#** seçip **sınıf kitaplığı**.
 
-2.  Yeni sınıf kitaplığı projesinde DSL derlemeye bir başvuru ekleyin.
+2. Yeni sınıf kitaplığı projesinde DSL derlemeye bir başvuru ekleyin.
 
-    -   Bu derleme, genellikle ile biten bir ada sahip ". DSL.dll".
+   - Bu derleme, genellikle ile biten bir ada sahip ". DSL.dll".
 
-    -   DSL projesi erişiminiz varsa, derleme dosyası dizini altında bulabilirsiniz **Dsl\bin\\\***
+   - DSL projesi erişiminiz varsa, derleme dosyası dizini altında bulabilirsiniz **Dsl\bin\\\\***
 
-    -   DSL VSIX dosyasına erişimi varsa, derleme ".zip olarak" dosya adı uzantısı, VSIX dosyasını değiştirerek bulabilirsiniz. .Zip dosyasını açın.
+   - DSL VSIX dosyasına erişimi varsa, derleme ".zip olarak" dosya adı uzantısı, VSIX dosyasını değiştirerek bulabilirsiniz. .Zip dosyasını açın.
 
-3.  Aşağıdaki .NET derlemelere başvurular ekleyin:
+3. Aşağıdaki .NET derlemelere başvurular ekleyin:
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
+   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
+   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
+   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
-    -   System.ComponentModel.Composition.dll
+   -   System.ComponentModel.Composition.dll
 
-    -   System.Windows.Forms.dll
+   -   System.Windows.Forms.dll
 
-4.  Aynı çözüm içinde VSIX projesi oluşturun. Bunu yapmak için **yeni proje** iletişim kutusunda **Visual Basic** veya **Visual C#**, tıklayın **genişletilebilirlik**ve ardından seçin **VSIX projesi**.
+4. Aynı çözüm içinde VSIX projesi oluşturun. Bunu yapmak için **yeni proje** iletişim kutusunda **Visual Basic** veya **Visual C#**, tıklayın **genişletilebilirlik**ve ardından seçin **VSIX projesi**.
 
-5.  Çözüm Gezgini'nde VSIX projesini sağ tıklayın ve ardından **başlangıç projesi olarak ayarla**.
+5. Çözüm Gezgini'nde VSIX projesini sağ tıklayın ve ardından **başlangıç projesi olarak ayarla**.
 
-6.  Yeni projeyi **source.extension.vsixmanifest**.
+6. Yeni projeyi **source.extension.vsixmanifest**.
 
-7.  Tıklayın **içeriğinizi**. İletişim kutusunda ayarlanan **içerik türü** için **MEF Bileşeni**, ve **kaynak proje** sınıf kitaplığı projenize.
+7. Tıklayın **içeriğinizi**. İletişim kutusunda ayarlanan **içerik türü** için **MEF Bileşeni**, ve **kaynak proje** sınıf kitaplığı projenize.
 
-8.  Bir DSL VSIX başvuru ekleyin.
+8. Bir DSL VSIX başvuru ekleyin.
 
-    1.  İçinde **source.extension.vsixmanifest**, tıklayın **Başvuru Ekle**
+   1. İçinde **source.extension.vsixmanifest**, tıklayın **Başvuru Ekle**
 
-    2.  İletişim kutusunda **eklemek yükü** DSL VSIX dosyasını bulun. VSIX dosyasını DSL çözümde içinde yerleşik **DslPackage\bin\\\***.
+   2. İletişim kutusunda **eklemek yükü** DSL VSIX dosyasını bulun. VSIX dosyasını DSL çözümde içinde yerleşik ** DslPackage\bin\\\\***.
 
-         Bu, kullanıcıların DSL ve uzantınızı aynı anda yüklemesine olanak sağlar. Uzantınızı yalnızca kullanıcı DSL yüklü değilse yüklenir.
+       Bu, kullanıcıların DSL ve uzantınızı aynı anda yüklemesine olanak sağlar. Uzantınızı yalnızca kullanıcı DSL yüklü değilse yüklenir.
 
 9. Gözden geçirmek ve güncelleştirmek, diğer alanları **source.extension.vsixmanifest**. Tıklayın **sürümleri seçin** ve Visual Studio sürümleri doğru ayarlandığından emin olun.
 

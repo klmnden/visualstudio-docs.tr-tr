@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6c02abbef9a5a9022e5a887c5a9aa452143adb8b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1dad7bd7ccddf3645abb11dc55afcdf2e7cce7ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241325"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919916"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Kod Parçacıkları İçin En İyi Uygulamalar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ Kod parçacığı kodda bir şey yalnızca en basit yol gösterir. Çoğu uygula
 ## <a name="security"></a>Güvenlik  
  Nasıl bir kod parçacığı güvenlidir, kaynak kodunda kullanıldığı ve kodda olduğunda nasıl değiştirilir bağlıdır. Aşağıdaki liste, dikkate alınması gereken alanların birkaçını içerir.  
   
--   Dosya ve veritabanı erişimi  
+- Dosya ve veritabanı erişimi  
   
--   Kod erişimi güvenliği  
+- Kod erişimi güvenliği  
   
--   Kaynakları koruma (olay günlükleri, kayıt defteri)  
+- Kaynakları koruma (olay günlükleri, kayıt defteri)  
   
--   Gizli dizileri depolama  
+- Gizli dizileri depolama  
   
--   Giriş doğrulanıyor  
+- Giriş doğrulanıyor  
   
--   Komut dosyası teknolojileri için veri geçirme  
+- Komut dosyası teknolojileri için veri geçirme  
   
- Daha fazla bilgi için [uygulamaları güvenli hale getirme](../ide/securing-applications.md).  
+  Daha fazla bilgi için [uygulamaları güvenli hale getirme](../ide/securing-applications.md).  
   
 ## <a name="downloaded-code-snippets"></a>İndirilen kod parçacıkları  
  Visual Studio tarafından yüklenmiş IntelliSense kod parçacıkları kendisi içinde bir tehlike değildir. Ancak, bunlar uygulamanızda güvenlik risklerini oluşturabilirsiniz. Internet'ten indirilen kod parçacıkları gibi diğer tüm indirilen içeriği - işlemini çok dikkatli olunmalıdır.  

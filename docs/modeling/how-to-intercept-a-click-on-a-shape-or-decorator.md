@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a8f959595ec40f70b736c163299d8593883ee5e5
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0a8af35d9edbb28c6b357149586fe7015858f4f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567409"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876535"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Nasıl yapılır: Şekil veya Dekoratörde bir Click için Araya Girme
 Aşağıdaki yordamlar bir şekil veya bir simge dekoratörde bir click için araya girme nasıl ekleyebileceğiniz gösterilmektedir. Tıklama kesebilir, çift tıkladığında, sürüklediğinde, ve diğer hareketlerine yanıt öğesi.
@@ -121,17 +121,17 @@ public partial class MyShape // change
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Kesintiye tıklar ve CompartmentShape listelerde sürüklediğinde
  Aşağıdaki örnek, kullanıcıların sürükleyerek bir bölme şeklindeki öğeleri yeniden sıralamak sağlar. Bu kodu çalıştırmak için:
 
-1.  Kullanarak yeni bir DSL çözüm oluşturma **sınıf diyagramları** çözüm şablonu.
+1. Kullanarak yeni bir DSL çözüm oluşturma **sınıf diyagramları** çözüm şablonu.
 
-     Ayrıca, bölme şekilleri içeren bir çözüm kendi ile de çalışabilir. Bu kod, Şekil tarafından temsil edilen modeli ve bölme listesi öğelerinde gösterilen öğeler arasındaki gömme ilişkisi olduğunu varsayar.
+    Ayrıca, bölme şekilleri içeren bir çözüm kendi ile de çalışabilir. Bu kod, Şekil tarafından temsil edilen modeli ve bölme listesi öğelerinde gösterilen öğeler arasındaki gömme ilişkisi olduğunu varsayar.
 
-2.  Ayarlama **Generates Double Derived** özelliği bölme şekli.
+2. Ayarlama **Generates Double Derived** özelliği bölme şekli.
 
-3.  Bu kod bir dosyaya eklemek **Dsl** proje.
+3. Bu kod bir dosyaya eklemek **Dsl** proje.
 
-4.  Etki alanı sınıfı ve şekli adlarını bu kodda, kendi DSL eşleşecek şekilde ayarlayın.
+4. Etki alanı sınıfı ve şekli adlarını bu kodda, kendi DSL eşleşecek şekilde ayarlayın.
 
- Özet olarak, kod aşağıdaki gibi çalışır. Bu örnekte, `ClassShape` bölme şekli adıdır.
+   Özet olarak, kod aşağıdaki gibi çalışır. Bu örnekte, `ClassShape` bölme şekli adıdır.
 
 -   Oluşturulduğunda bir dizi fare olay işleyicileri her bölme örneğine eklenir.
 
@@ -393,7 +393,6 @@ namespace Company.CompartmentDrag
   }
  }
 }
-
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.

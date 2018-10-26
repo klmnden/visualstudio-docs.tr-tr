@@ -32,12 +32,12 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ce78912be4e4b29e323061996de650e1f2ff255
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f9b487f8805c81a1d854a7c077f74e6b70172f7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297201"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925508"
 ---
 # <a name="memory-windows"></a>Bellek Pencereleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,21 +91,21 @@ ms.locfileid: "49297201"
   
 #### <a name="to-change-the-number-of-columns-in-the-memory-window"></a>Bellek penceresi sütun sayısını değiştirmek için  
   
-1.  Üst kısmındaki araç çubuğunda **bellek** penceresinde bulun **sütunları** listesi.  
+1. Üst kısmındaki araç çubuğunda **bellek** penceresinde bulun **sütunları** listesi.  
   
-2.  İçinde **sütunları** listesinde, görüntülemek veya seçmek istediğiniz sütun sayısını seçin **otomatik** penceresi genişliğine sığacak şekilde otomatik ayarlama.  
+2. İçinde **sütunları** listesinde, görüntülemek veya seçmek istediğiniz sütun sayısını seçin **otomatik** penceresi genişliğine sığacak şekilde otomatik ayarlama.  
   
- İçeriğini istemiyorsanız **bellek** programınızı değiştirmek için pencere yürütür, Canlı ifade değerlendirmesi kapatabilirsiniz.  
+   İçeriğini istemiyorsanız **bellek** programınızı değiştirmek için pencere yürütür, Canlı ifade değerlendirmesi kapatabilirsiniz.  
   
 #### <a name="to-toggle-live-evaluation"></a>Canlı değerlendirme açıp kapatmak için  
   
-1.  Sağ **bellek** penceresi.  
+1. Sağ **bellek** penceresi.  
   
-2.  Kısayol menüsünde **otomatik olarak yeniden değerlendir**.  
+2. Kısayol menüsünde **otomatik olarak yeniden değerlendir**.  
   
-     Canlı değerlendirme açıksa, seçeneğini seçtiyseniz ve tıklayarak Canlı değerlendirmeyi devre dışı bırakır. Canlı değerlendirme devre dışıysa seçeneği seçili değilse ve canlı değerlendirmeye tıklayarak kapatır.  
+    Canlı değerlendirme açıksa, seçeneğini seçtiyseniz ve tıklayarak Canlı değerlendirmeyi devre dışı bırakır. Canlı değerlendirme devre dışıysa seçeneği seçili değilse ve canlı değerlendirmeye tıklayarak kapatır.  
   
- Gizleme veya en üstündeki araç çubuğunu görüntüleme **bellek** penceresi. Araç çubuğu gizli sürece kutusu veya diğer araçları yönelik erişim sahip.  
+   Gizleme veya en üstündeki araç çubuğunu görüntüleme **bellek** penceresi. Araç çubuğu gizli sürece kutusu veya diğer araçları yönelik erişim sahip.  
   
 #### <a name="to-toggle-the-toolbar"></a>Araç çubuğunu değiştirme  
   

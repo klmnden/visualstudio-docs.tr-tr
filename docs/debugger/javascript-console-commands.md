@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 8642d59beb845bf2784d09133a590a4716897ed4
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f10439e63b95fc2e78980ceb585e32dbbabd44d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282215"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823755"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio'da JavaScript Konsolu komutları
   
@@ -104,16 +104,16 @@ console.log(user.first, user.last);
   
  Aşağıdaki değiştirme desenleri desteklenir:  
   
--   %s - dize  
-     %i - tamsayı  
-     %d - tamsayı  
-     %f - float  
-     %o - nesne  
-     %b - ikili  
-     %x - onaltılık  
-     %e - üs  
+- %s - dize  
+   %i - tamsayı  
+   %d - tamsayı  
+   %f - float  
+   %o - nesne  
+   %b - ikili  
+   %x - onaltılık  
+   %e - üs  
   
- Değiştirme desenlerinde kullanmanın bazı örnekler şunlardır `console.log`:  
+  Değiştirme desenlerinde kullanmanın bazı örnekler şunlardır `console.log`:  
   
 ```javascript  
 var user = new Object();  

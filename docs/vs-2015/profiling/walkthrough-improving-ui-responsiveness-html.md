@@ -24,12 +24,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 40cc0e20b08f151e3a7bbda8060469f40b2b9050
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b085bf032611eafcb822a4e083d00d4ae72fd1ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258316"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893383"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>İzlenecek yol: Kullanıcı Arabirimi yanıt hızı (HTML) geliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -163,45 +163,45 @@ Bu izlenecek yol, tanımlamak ve kullanarak bir performans sorunu düzeltme sür
   
 ### <a name="analyzing-performance-data"></a>Performans verilerini çözümleme  
   
-1.  Üzerinde **hata ayıklama** araç penceresindeki **hata ayıklamayı Başlat** listesinde, Windows Phone Öykünücüleri birini seçin veya **simülatör**.  
+1. Üzerinde **hata ayıklama** araç penceresindeki **hata ayıklamayı Başlat** listesinde, Windows Phone Öykünücüleri birini seçin veya **simülatör**.  
   
-2.  Üzerinde **hata ayıklama** menüsünde seçin **performans ve tanılama**.  
+2. Üzerinde **hata ayıklama** menüsünde seçin **performans ve tanılama**.  
   
-3.  İçinde **kullanılabilir Araçları**, seçin **HTML UI yanıtlama hızı**ve ardından **Başlat**.  
+3. İçinde **kullanılabilir Araçları**, seçin **HTML UI yanıtlama hızı**ve ardından **Başlat**.  
   
-     Bu öğreticide, profil oluşturucu için başlangıç projesi iliştirmekte. Yüklü bir uygulama için profil oluşturucu ekleme gibi diğer seçenekleri hakkında daha fazla bilgi için bkz. [HTML UI yanıtlama hızı](../profiling/html-ui-responsiveness.md).  
+    Bu öğreticide, profil oluşturucu için başlangıç projesi iliştirmekte. Yüklü bir uygulama için profil oluşturucu ekleme gibi diğer seçenekleri hakkında daha fazla bilgi için bkz. [HTML UI yanıtlama hızı](../profiling/html-ui-responsiveness.md).  
   
-     Profil Oluşturucu başlattığınızda, Vsetwcollector.exe'yi çalıştırmak için izninizi isteyen bir kullanıcı hesabı denetimi görebilirsiniz. Seçin **Evet**.  
+    Profil Oluşturucu başlattığınızda, Vsetwcollector.exe'yi çalıştırmak için izninizi isteyen bir kullanıcı hesabı denetimi görebilirsiniz. Seçin **Evet**.  
   
-4.  Çalışan uygulamada seçin **değerleri için bekleyen** ve yaklaşık 10 saniye bekleyin. Düğme metni ve renk yaklaşık saniyede bir kez güncelleştirmesini doğrulayın.  
+4. Çalışan uygulamada seçin **değerleri için bekleyen** ve yaklaşık 10 saniye bekleyin. Düğme metni ve renk yaklaşık saniyede bir kez güncelleştirmesini doğrulayın.  
   
-5.  Çalışan uygulamayı, Visual Studio (Alt + Sekme) geçin.  
+5. Çalışan uygulamayı, Visual Studio (Alt + Sekme) geçin.  
   
-6.  Seçin **koleksiyonu Durdur**.  
+6. Seçin **koleksiyonu Durdur**.  
   
-     Profil Oluşturucu, Visual Studio'da yeni bir sekmede bilgileri görüntüler. CPU kullanımı ve görsel üretilen iş (FPS) veri bakın, bazı eğilimleri kolayca belirleyebilirsiniz:  
+    Profil Oluşturucu, Visual Studio'da yeni bir sekmede bilgileri görüntüler. CPU kullanımı ve görsel üretilen iş (FPS) veri bakın, bazı eğilimleri kolayca belirleyebilirsiniz:  
   
-    -   CPU kullanımı artırır önemli ölçüde yaklaşık 3 saniye sonra (ne zaman bastığınız **değerleri için bekleyen** düğme) ve bu noktadan itibaren olaylar (betik, stil ve işleme olayları tutarlı karışık) Temizle desenini gösterir.  
+   - CPU kullanımı artırır önemli ölçüde yaklaşık 3 saniye sonra (ne zaman bastığınız **değerleri için bekleyen** düğme) ve bu noktadan itibaren olaylar (betik, stil ve işleme olayları tutarlı karışık) Temizle desenini gösterir.  
   
-    -   Görsel üretilen iş değil etkilenen ve adresindeki 60 FPS kalır (diğer bir deyişle, bırakılan çerçeve yok).  
+   - Görsel üretilen iş değil etkilenen ve adresindeki 60 FPS kalır (diğer bir deyişle, bırakılan çerçeve yok).  
   
      CPU kullanım grafiği, yüksek etkinlik bu dönemde uygulamanın ne yaptığını bulmak için tipik bir bölümünü bakalım.  
   
-7.  CPU kullanım grafiği ortasında bir iki ikinci bölümü seçin (ya da'a tıklayın ve Sürükle veya sekme ve ok tuşlarını kullanın). Aşağıdaki çizimde, bir seçim yaptıktan sonra CPU kullanım grafiği gösterir. Paylaşılmayan seçimi alandır.  
+7. CPU kullanım grafiği ortasında bir iki ikinci bölümü seçin (ya da'a tıklayın ve Sürükle veya sekme ve ok tuşlarını kullanın). Aşağıdaki çizimde, bir seçim yaptıktan sonra CPU kullanım grafiği gösterir. Paylaşılmayan seçimi alandır.  
   
-     ![CPU kullanım grafiği](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
+    ![CPU kullanım grafiği](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
   
-8.  Seçin **yakınlaştırmak**.  
+8. Seçin **yakınlaştırmak**.  
   
-     Seçilen süre içinde daha fazla ayrıntı göstermek için grafiğin değişiklikler. Aşağıdaki çizim, yakınlaştırma sonra CPU kullanım grafiği gösterir. (Belirli verileri farklılık gösterebilir, ancak genel düzen görünür olacaktır.)  
+    Seçilen süre içinde daha fazla ayrıntı göstermek için grafiğin değişiklikler. Aşağıdaki çizim, yakınlaştırma sonra CPU kullanım grafiği gösterir. (Belirli verileri farklılık gösterebilir, ancak genel düzen görünür olacaktır.)  
   
-     ![Görünüm uzaklaştırılacağını](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
+    ![Görünüm uzaklaştırılacağını](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
   
-     Zaman Çizelgesi ayrıntılarını alt bölmede, seçilen süre için ayrıntıları örneği gösterilmektedir.  
+    Zaman Çizelgesi ayrıntılarını alt bölmede, seçilen süre için ayrıntıları örneği gösterilmektedir.  
   
-     ![Zaman Çizelgesi ayrıntıları](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
+    ![Zaman Çizelgesi ayrıntıları](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
   
-     CPU kullanım grafiği görünür eğilimler olayları zaman çizelgesi ayrıntıları onaylayın: çok kısa süreler boyunca gerçekleşen olayların vardır. Zaman Çizelgesi Ayrıntıları görünümü, bu olayların olduğunu gösterir. `Timer`, `Layout`, ve `Paint` olayları.  
+    CPU kullanım grafiği görünür eğilimler olayları zaman çizelgesi ayrıntıları onaylayın: çok kısa süreler boyunca gerçekleşen olayların vardır. Zaman Çizelgesi Ayrıntıları görünümü, bu olayların olduğunu gösterir. `Timer`, `Layout`, ve `Paint` olayları.  
   
 9. Bağlam menüsünü kullanın (veya sağ tıklayın) birini `Timer` alt bölmede, olayları ve **olaya filtre**. Aşağıda ayrıntıları örneği biri için gösterilmektedir `Timer` uygulamasını test etme olayları.  
   

@@ -13,12 +13,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c3b24aea533083e7d9158b54e2e68b5095f06df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 180f970f35ed0bb3de70ba3a7b7b47dbe656ddf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250542"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904051"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>C++ için Microsoft Birim Testi Çerçevesi ile C/C++ için Birim Testleri Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -187,53 +187,53 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
   
 ###  <a name="coupleProjects"></a> Birkaç DLL projesi için test projesi  
   
-1.  DLL projesi için test projesinin proje başvurularını ekleyin:  
+1. DLL projesi için test projesinin proje başvurularını ekleyin:  
   
-    1.  Test proje özelliklerini açın ve seçin **ortak özellikler**, **çerçeve ve başvurular**.  
+   1.  Test proje özelliklerini açın ve seçin **ortak özellikler**, **çerçeve ve başvurular**.  
   
-         ![C&#43; &#43; proje özellikleri &#45; çerçeve ve başvurular](../test/media/utecpp08.png "UteCpp08")  
+        ![C&#43; &#43; proje özellikleri &#45; çerçeve ve başvurular](../test/media/utecpp08.png "UteCpp08")  
   
-    2.  Seçin **Yeni Başvuru Ekle**.  
+   2.  Seçin **Yeni Başvuru Ekle**.  
   
-         İçinde **Başvuru Ekle** iletişim kutusunda, DLL projesi seçip **Ekle**.  
+        İçinde **Başvuru Ekle** iletişim kutusunda, DLL projesi seçip **Ekle**.  
   
-         ![C&#43; &#43; proje özellikleri &#45; Yeni Başvuru Ekle](../test/media/utecpp09.png "UteCpp09")  
+        ![C&#43; &#43; proje özellikleri &#45; Yeni Başvuru Ekle](../test/media/utecpp09.png "UteCpp09")  
   
-2.  Asıl birim test .cpp dosyasında DLL kod .h dosyası şunları içerir:  
+2. Asıl birim test .cpp dosyasında DLL kod .h dosyası şunları içerir:  
   
-    ```cpp  
-    #include "..\RootFinder\RootFinder.h"  
-    ```  
+   ```cpp  
+   #include "..\RootFinder\RootFinder.h"  
+   ```  
   
-3.  Dışarı aktarılan işlevin kullanan temel bir test ekleyin:  
+3. Dışarı aktarılan işlevin kullanan temel bir test ekleyin:  
   
-    ```cpp  
-    TEST_METHOD(BasicTest)  
-    {  
-    CRootFinder rooter;  
-    Assert::AreEqual(  
-    // Expected value:  
-    0.0,   
-    // Actual value:  
-    rooter.SquareRoot(0.0),   
-    // Tolerance:  
-    0.01,  
-    // Message:  
-    L"Basic test failed",  
-    // Line number - used if there is no PDB file:  
-    LINE_INFO());  
-    }  
-    ```  
+   ```cpp  
+   TEST_METHOD(BasicTest)  
+   {  
+   CRootFinder rooter;  
+   Assert::AreEqual(  
+   // Expected value:  
+   0.0,   
+   // Actual value:  
+   rooter.SquareRoot(0.0),   
+   // Tolerance:  
+   0.01,  
+   // Message:  
+   L"Basic test failed",  
+   // Line number - used if there is no PDB file:  
+   LINE_INFO());  
+   }  
+   ```  
   
-4.  Çözümü oluşturun.  
+4. Çözümü oluşturun.  
   
-     Yeni test, Test Gezgini'nde görünür.  
+    Yeni test, Test Gezgini'nde görünür.  
   
-5.  Test Gezgini'nde seçin **tümünü Çalıştır**.  
+5. Test Gezgini'nde seçin **tümünü Çalıştır**.  
   
-     ![Birim Test Gezgini &#45; temel geçirilen Test](../test/media/utecpp10.png "UteCpp10")  
+    ![Birim Test Gezgini &#45; temel geçirilen Test](../test/media/utecpp10.png "UteCpp10")  
   
- Test ve kod projelerini ayarlama sahiptir ve doğrulandı, kod projesinde işlevleri çalıştırmak testlerini çalıştırabilirsiniz. Şimdi gerçek test ve kod yazmaya başlayabilirsiniz.  
+   Test ve kod projelerini ayarlama sahiptir ve doğrulandı, kod projesinde işlevleri çalıştırmak testlerini çalıştırabilirsiniz. Şimdi gerçek test ve kod yazmaya başlayabilirsiniz.  
   
 ###  <a name="iterate"></a> Yinelemeli olarak testleri genişletme ve onları geçirin  
   

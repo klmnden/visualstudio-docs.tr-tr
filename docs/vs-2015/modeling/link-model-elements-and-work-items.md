@@ -22,12 +22,12 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e3c2a7558adb9036cec474429da9778394e8c1f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 71500fca3318bf6f18e1c841c1ff90bd303bfaa6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263935"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891758"
 ---
 # <a name="link-model-elements-and-work-items"></a>Model öğelerini ve iş öğelerini bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,27 +41,27 @@ Görevler, test çalışmalarını, hataları, gereksinimleri, sorunları ve Vis
   
  Örneğin, şunları bağlayabilirsiniz:  
   
--   Hikayenin sıralı işlemler olarak nasıl gerçekleştiğini açıklayan kullanıcı hikayesi iş öğesi ve etkinlik diyagramı  
+- Hikayenin sıralı işlemler olarak nasıl gerçekleştiğini açıklayan kullanıcı hikayesi iş öğesi ve etkinlik diyagramı  
   
--   Kullanım durumunun doğru bir şekilde uygulandığından emin olmanızı sağlayan, kullanım durumu ve test çalışması iş öğelerindeki bir kullanım durumu  
+- Kullanım durumunun doğru bir şekilde uygulandığından emin olmanızı sağlayan, kullanım durumu ve test çalışması iş öğelerindeki bir kullanım durumu  
   
--   Özniteliğin uygulanmasında bir hata gösteren UML sınıf diyagramındaki ve hata iş öğesindeki bir öznitelik  
+- Özniteliğin uygulanmasında bir hata gösteren UML sınıf diyagramındaki ve hata iş öğesindeki bir öznitelik  
   
--   Bileşenin gelişimini izleyen bileşen diyagramındaki ve görev iş öğesindeki bir bileşen. Böyle bir görev genellikle daha küçük görevlere ayrılır  
+- Bileşenin gelişimini izleyen bileşen diyagramındaki ve görev iş öğesindeki bir bileşen. Böyle bir görev genellikle daha küçük görevlere ayrılır  
   
- İş öğelerini, şu öğelerde olduğu gibi modelleme diyagramlarında veya UML Model Gezgini'nde seçebileceğiz herhangi bir öğeye bağlayabilirsiniz:  
+  İş öğelerini, şu öğelerde olduğu gibi modelleme diyagramlarında veya UML Model Gezgini'nde seçebileceğiz herhangi bir öğeye bağlayabilirsiniz:  
   
--   UML modellerindeki UML sınıfları, yaşam çizgileri, kullanım durumları, alt sistemler, etkinlikler, nesne düğümleri, bileşenler, arabirimler gibi tüm öğeler  
+- UML modellerindeki UML sınıfları, yaşam çizgileri, kullanım durumları, alt sistemler, etkinlikler, nesne düğümleri, bileşenler, arabirimler gibi tüm öğeler  
   
--   UML modellerindeki ilişkilendirme, genelleştirme, bağımlılık, akış ve iletiler gibi tüm ilişkiler  
+- UML modellerindeki ilişkilendirme, genelleştirme, bağımlılık, akış ve iletiler gibi tüm ilişkiler  
   
--   Sınıfların öznitelikleri ve işlemleri, yaşam çizgilerinin yürütme örnekleri, etkinliklerin giriş ve çıkış bağlantı noktaları, bileşenlerin parça ve bağlantı noktaları gibi öğelerin parçaları  
+- Sınıfların öznitelikleri ve işlemleri, yaşam çizgilerinin yürütme örnekleri, etkinliklerin giriş ve çıkış bağlantı noktaları, bileşenlerin parça ve bağlantı noktaları gibi öğelerin parçaları  
   
--   Katmanlar ve katman bağımlılıkları  
+- Katmanlar ve katman bağımlılıkları  
   
--   Açıklamalar ve açıklama bağlantıları  
+- Açıklamalar ve açıklama bağlantıları  
   
--   Diyagramlar. Bir diyagram seçmek için diyagramın boş bir kısmını seçin.  
+- Diyagramlar. Bir diyagram seçmek için diyagramın boş bir kısmını seçin.  
   
 > [!WARNING]
 >  Zaten için TFS kaynak kod denetimi (oluşturmak veya bir çalışma öğesiyle bağlantılandırmak için SCC) bağlı olmanız gerekir. Farklı bir TFS SCC bağlantı açmayı denerseniz, Visual Studio otomatik olarak geçerli çözümü kapatır. Zaten için uygun SCC oluşturmak veya bir çalışma öğesiyle bağlantılandırmak denemeden önce bağlı olduğunuzdan emin olun. Visual Studio daha sonraki sürümleri için bir SCC bağlı değilseniz, menü komutlarını kullanılamaz.  

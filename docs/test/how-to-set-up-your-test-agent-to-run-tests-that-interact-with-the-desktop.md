@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5a1be45dd85fdbc7df9870fe7d0db16b4020376c
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: b8eba85de98dd46a8ff6ad44154249598a489f5a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370685"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862105"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Nasıl yapılır: test aracınızı masaüstüyle etkileşim kuran testleri çalıştırmak için ayarlama
 
@@ -48,27 +48,27 @@ Masaüstü ile etkileşime gerek duyan bir görevi gerçekleştiren bir role ata
 
    > [!NOTE]
    > - İşlemi başlatmak için eklediğiniz kullanıcı, aynı zamanda bu aracı için test denetleyicisi için bilgisayarda TeamTestAgentService grubunun bir üyesi olarak eklenmelidir. Bu kullanıcıyı test denetleyicisi bilgisayarına eklediğinizde bu kullanıcı geçerli kullanıcıysa, kapatma veya yeniden başlatmanız gerekir.
-   - Null parolalar kullanıcı hesapları için desteklenmez.
-   - IntelliTrace'i veya ağ öykünmesi veri ve tanılama bağdaştırıcısını kullanmak istiyorsanız, kullanıcı hesabının Yöneticiler grubunun bir üyesi olması gerekir. Test aracısını çalıştıran makine en az ayrıcalıklı kullanıcı hesabı olan bir işletim sistemi çalıştırıyorsa, bu yönetici olarak da çalıştırmanız gerekir (yükseltilmiş). Aracı kullanıcı adı Aracı hizmeti içinde değilse, bunu eklemek test denetleyicisi üzerinde izinler gerektirir dener.
-   - Test denetleyicisini kullanmaya çalışan kullanıcı test denetleyicisinin kullanıcı hesabında olmalıdır ya da denetleyiciye karşı testleri çalıştırmak mümkün olmayacaktır.
+   > - Null parolalar kullanıcı hesapları için desteklenmez.
+   > - IntelliTrace'i veya ağ öykünmesi veri ve tanılama bağdaştırıcısını kullanmak istiyorsanız, kullanıcı hesabının Yöneticiler grubunun bir üyesi olması gerekir. Test aracısını çalıştıran makine en az ayrıcalıklı kullanıcı hesabı olan bir işletim sistemi çalıştırıyorsa, bu yönetici olarak da çalıştırmanız gerekir (yükseltilmiş). Aracı kullanıcı adı Aracı hizmeti içinde değilse, bunu eklemek test denetleyicisi üzerinde izinler gerektirir dener.
+   > - Test denetleyicisini kullanmaya çalışan kullanıcı test denetleyicisinin kullanıcı hesabında olmalıdır ya da denetleyiciye karşı testleri çalıştırmak mümkün olmayacaktır.
 
 4. Bir test aracısı olan bilgisayarın bilgisayarı yeniden başlattıktan sonra testleri çalıştıracağından emin olmak için bilgisayarı otomatik olarak test aracısı kullanıcısı oturum açmak için ayarlayabilirsiniz. Seçin **otomatik olarak oturum açma**. Bu kullanıcı adını ve parolasını şifrelenmiş bir biçimde kayıt defterinde depolar.
 
    > [!NOTE]
    > Uzak Masaüstü veya konuk tabanlı bağlantı kullanarak laboratuar ortamına bağlandığında, karşılaşabileceğiniz sık sık beklenmedik bağlantı kesilmeleriyle. Bağlantının kopmasının Olası nedenlerden biri, makine otomatik olarak ağda oturum açmak için yapılandırılmasıdır.
 
-7. Masaüstüyle etkileşimde olması gereken otomatikleştirilmiş testleri engelleyebilmesi yüzünden ekran koruyucunun devre dışı bırakıldığından emin olmak için seçin **olun ekran koruyucu devre dışı**.
+5. Masaüstüyle etkileşimde olması gereken otomatikleştirilmiş testleri engelleyebilmesi yüzünden ekran koruyucunun devre dışı bırakıldığından emin olmak için seçin **olun ekran koruyucu devre dışı**.
 
    > [!WARNING]
    > Otomatik olarak oturum açın veya ekran koruyucuyu devre dışı güvenlik riskleri vardır. Otomatik oturum açmayı etkinleştirerek, diğer kullanıcıların bilgisayarı başlatmasını ve otomatik olarak oturum hesabını kullanabilmelerini sağlar. Ekran koruyucu devre dışı bırakırsanız, bilgisayar kullanıcının oturum açmak bilgisayarın kilidini açmak istemeyebilir. Bu, herkesin bilgisayara fiziksel erişimi olan bilgisayara erişmesini sağlar. Bu özellikleri bir bilgisayarda etkinleştirirseniz, bu bilgisayarların fiziksel olarak güvenli olduğundan emin olun. Örneğin, bu bilgisayarların fiziksel olarak güvenli laboratuarda bulunur. Silerseniz **olun ekran koruyucu devre dışı**, bu ekran koruyucunuzu etkinleştirmez.
 
    Aracıyı geri hizmet olarak çalıştırmak için bu aracı kullanabilirsiniz ve **hizmet**.
 
-8. Yaptığınız değişiklikleri uygulamak için seçin **ayarlarını uygula**.
+6. Yaptığınız değişiklikleri uygulamak için seçin **ayarlarını uygula**.
 
    A **Yapılandırma Özeti** iletişim kutusu, her test aracınızı yapılandırmak için gereken adımları durumunu gösteren görüntülenir.
 
-9. Kapatmak için **Yapılandırma Özeti** iletişim kutusunda **kapatmak**. Ardından **kapatmak** kapatmak için tekrar **Test Aracısı Yapılandırma Aracı**.
+7. Kapatmak için **Yapılandırma Özeti** iletişim kutusunda **kapatmak**. Ardından **kapatmak** kapatmak için tekrar **Test Aracısı Yapılandırma Aracı**.
 
    > [!NOTE]
    > Bir işlem olarak çalışan bir test aracısı için bilgisayar üzerinde çalışan bir bildirim alanı simgesi vardır. Bu test aracısı durumunu gösterir. Başlat, Durdur veya bu aracı kullanarak bir işlem olarak çalışıyorsa aracıyı yeniden başlatın. Çalışır durumda değilse test aracısını bir işlem olarak başlatmak için seçin **Başlat** > **Visual Studio** > **Microsoft Visual Studio Test aracısı**.

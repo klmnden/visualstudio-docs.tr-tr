@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: d0732cc08c679bd3eab973632164d366efe87b3b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 13db7f4e4f1676f46a8b0170ffeadd5cd9eb31b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203872"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817450"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Çoklu Platform Mobil Uygulama Geliştirme için Visual C++’ı yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,18 +37,18 @@ Visual C++ platformlar arası Mobil Geliştirme için] (http://go.microsoft.com/
   
 ##  <a name="Requirements"></a> Gereksinimleri  
   
--   Yükleme gereksinimleri için bkz [Visual Studio 2015 sistem gereksinimleri](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs).  
+- Yükleme gereksinimleri için bkz [Visual Studio 2015 sistem gereksinimleri](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs).  
   
-    > [!IMPORTANT]
-    >  Windows 7 veya Windows Server 2008 R2 kullanıyorsanız, Klasik Windows uygulamaları, Android yerel etkinlik uygulamaları ve kitaplıkları ve uygulamaları için kodu ve kod kitaplıkları için iOS ve Windows Store veya evrensel Windows uygulamaları geliştirebilirsiniz.  
+  > [!IMPORTANT]
+  >  Windows 7 veya Windows Server 2008 R2 kullanıyorsanız, Klasik Windows uygulamaları, Android yerel etkinlik uygulamaları ve kitaplıkları ve uygulamaları için kodu ve kod kitaplıkları için iOS ve Windows Store veya evrensel Windows uygulamaları geliştirebilirsiniz.  
   
- Belirli cihaz platformları için uygulamalar oluşturmak için bazı ek gereksinimleri vardır:  
+  Belirli cihaz platformları için uygulamalar oluşturmak için bazı ek gereksinimleri vardır:  
   
--   Windows Phone öykünücüleri ve Android için Microsoft Visual Studio öykünücüsü, Hyper-V çalıştıran bir bilgisayar gerektirir. Windows Hyper-V özelliği yükleyip öykünücü çalıştırması önce etkinleştirilmesi gerekir. Öykünücü'nın daha fazla bilgi için bkz. [sistem gereksinimleri](http://msdn.microsoft.com/en-us/4d5bb438-231a-4cd2-84b7-e9660b0e3baf).  
+- Windows Phone öykünücüleri ve Android için Microsoft Visual Studio öykünücüsü, Hyper-V çalıştıran bir bilgisayar gerektirir. Windows Hyper-V özelliği yükleyip öykünücü çalıştırması önce etkinleştirilmesi gerekir. Öykünücü'nın daha fazla bilgi için bkz. [sistem gereksinimleri](http://msdn.microsoft.com/en-us/4d5bb438-231a-4cd2-84b7-e9660b0e3baf).  
   
--   X86 Android SDK'sı ile gelen Android öykünücüleri Intel HAXM sürücüsü çalıştıran bilgisayarlarda en iyi şekilde çalışır. Bu sürücü bir Intel x64 işlemci ile birlikte VT-x ve devre dışı Bit yürütme desteği gerektirir. Daha fazla bilgi için [yükleme yönergeleri için Intel® donanım hızlandırılmış yürütme Yöneticisi - Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385).  
+- X86 Android SDK'sı ile gelen Android öykünücüleri Intel HAXM sürücüsü çalıştıran bilgisayarlarda en iyi şekilde çalışır. Bu sürücü bir Intel x64 işlemci ile birlikte VT-x ve devre dışı Bit yürütme desteği gerektirir. Daha fazla bilgi için [yükleme yönergeleri için Intel® donanım hızlandırılmış yürütme Yöneticisi - Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385).  
   
--   İOS için kod oluşturma gerektiren bir Apple kimliği, bir iOS Developer Program hesap ve çalıştırabileceğiniz bir Mac bilgisayara [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) veya daha sonra OS X Mavericks veya sonraki sürümler. Basit yükleme adımları için bkz: [yüklemek için iOS Araçları](#InstallForiOS).  
+- İOS için kod oluşturma gerektiren bir Apple kimliği, bir iOS Developer Program hesap ve çalıştırabileceğiniz bir Mac bilgisayara [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) veya daha sonra OS X Mavericks veya sonraki sürümler. Basit yükleme adımları için bkz: [yüklemek için iOS Araçları](#InstallForiOS).  
   
 ##  <a name="GetTheTools"></a> Araçları edinin  
  Platformlar arası Mobil Geliştirme için Visual C++, Visual Studio Community, Professional ve Enterprise sürümlerinde bulunan bir yüklenebilir bileşendir. Visual Studio almak için Git [Visual Studio 2015 indirmeleri](http://go.microsoft.com/fwlink/p/?linkid=517106) sayfasında ve Visual Studio 2015 güncelleştirme 2 veya üzeri indirin.  
@@ -101,31 +101,31 @@ Visual C++ platformlar arası Mobil Geliştirme için] (http://go.microsoft.com/
   
  Aşağıdaki bilgileri okuyun ve bağımlılıkları el ile yüklemek için aşağıdaki bağlantıları kullanın.  
   
--   [Java SE Geliştirme Seti](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
+- [Java SE Geliştirme Seti](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
   
-     Varsayılan olarak, yükleyici C:\Program Files (x86) \Java içinde Java araçları geçirir.  
+   Varsayılan olarak, yükleyici C:\Program Files (x86) \Java içinde Java araçları geçirir.  
   
--   [Android SDK'sı](https://developer.android.com/sdk/index.html#Other)  
+- [Android SDK'sı](https://developer.android.com/sdk/index.html#Other)  
   
-     Yükleme sırasında API'leri önerildiği şekilde güncelleştirin. En az olduğundan emin olun Android 5.0 Lollipop (API düzey 21) için SDK'sı yüklü. Varsayılan olarak, yükleyici Android SDK'sı C:\Program Files (x86) \Android\android SDK'da geçirir.  
+   Yükleme sırasında API'leri önerildiği şekilde güncelleştirin. En az olduğundan emin olun Android 5.0 Lollipop (API düzey 21) için SDK'sı yüklü. Varsayılan olarak, yükleyici Android SDK'sı C:\Program Files (x86) \Android\android SDK'da geçirir.  
   
-     SDK Yöneticisi uygulama yeniden SDK'yi güncelleştirmek ve isteğe bağlı araçları ve ek API düzeylerini yüklemek için Android SDK dizininde çalıştırabilirsiniz. Güncelleştirmeleri kullanılmadıkça yükleme başarısız olabilir **yönetici olarak çalıştır** SDK Manager uygulamasını çalıştırmak için. Bir Android uygulaması oluşturma sorunları varsa, güncelleştirmeler, yüklü bir SDK'ları için SDK Yöneticisi'ni denetleyin.  
+   SDK Yöneticisi uygulama yeniden SDK'yi güncelleştirmek ve isteğe bağlı araçları ve ek API düzeylerini yüklemek için Android SDK dizininde çalıştırabilirsiniz. Güncelleştirmeleri kullanılmadıkça yükleme başarısız olabilir **yönetici olarak çalıştır** SDK Manager uygulamasını çalıştırmak için. Bir Android uygulaması oluşturma sorunları varsa, güncelleştirmeler, yüklü bir SDK'ları için SDK Yöneticisi'ni denetleyin.  
   
-     Android SDK'sı ile gelen Android öykünücüleri bazılarını kullanmak için isteğe bağlı Intel HAXM sürücüleri yüklemeniz gerekir. Hyper-V özelliği başarıyla Intel HAXM sürücüleri yüklemek için Windows kaldırmak zorunda kalabilirsiniz. Android için Windows Phone öykünücüleri ve Microsoft Visual Studio öykünücü kullanmak için Hyper-V özelliğini geri yüklemeniz gerekir.  
+   Android SDK'sı ile gelen Android öykünücüleri bazılarını kullanmak için isteğe bağlı Intel HAXM sürücüleri yüklemeniz gerekir. Hyper-V özelliği başarıyla Intel HAXM sürücüleri yüklemek için Windows kaldırmak zorunda kalabilirsiniz. Android için Windows Phone öykünücüleri ve Microsoft Visual Studio öykünücü kullanmak için Hyper-V özelliğini geri yüklemeniz gerekir.  
   
--   [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html)  
+- [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html)  
   
-     Varsayılan olarak, yükleyici C:\ProgramData\Microsoft\AndroidNDK içinde Android NDK geçirir. Android NDK yüklemenize güncelleştirmeyi yeniden NDK yükleyip.  
+   Varsayılan olarak, yükleyici C:\ProgramData\Microsoft\AndroidNDK içinde Android NDK geçirir. Android NDK yüklemenize güncelleştirmeyi yeniden NDK yükleyip.  
   
--   [Apache Ant](http://ant.apache.org/bindownload.cgi)  
+- [Apache Ant](http://ant.apache.org/bindownload.cgi)  
   
-     Varsayılan olarak, yükleyici C:\Program Files (x86) \Microsoft Visual Studio 14.0\Apps Apache Ant geçirir.  
+   Varsayılan olarak, yükleyici C:\Program Files (x86) \Microsoft Visual Studio 14.0\Apps Apache Ant geçirir.  
   
--   [Android için Microsoft Visual Studio öykünücüsü](http://go.microsoft.com/fwlink/p/?LinkId=536390)  
+- [Android için Microsoft Visual Studio öykünücüsü](http://go.microsoft.com/fwlink/p/?LinkId=536390)  
   
-     Yükleyebilir ve Visual Studio Galerisi Android için Microsoft Visual Studio öykünücü güncelleştirin.  
+   Yükleyebilir ve Visual Studio Galerisi Android için Microsoft Visual Studio öykünücü güncelleştirin.  
   
- Çoğu durumda, Visual Studio üçüncü taraf yazılım yükledikten ve iç ortam değişkenleri içindeki yükleme yolları tutar yapılandırmalarını algılayabilir. Platformlar arası geliştirme araçlarının Visual Studio IDE içindeki varsayılan yolları geçersiz kılabilirsiniz.  
+  Çoğu durumda, Visual Studio üçüncü taraf yazılım yükledikten ve iç ortam değişkenleri içindeki yükleme yolları tutar yapılandırmalarını algılayabilir. Platformlar arası geliştirme araçlarının Visual Studio IDE içindeki varsayılan yolları geçersiz kılabilirsiniz.  
   
 #### <a name="to-set-the-paths-for-third-party-tools"></a>Üçüncü taraf araçları yollarını ayarlamak için  
   

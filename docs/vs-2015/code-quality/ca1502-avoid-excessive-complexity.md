@@ -20,15 +20,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0f81efa03c3955114561e923c232e8ee81dd2af6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b582d4679aee10010741994117b8b17f47b23aa5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259083"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890588"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Aşırı karmaşıklıktan kaçının
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
@@ -59,11 +60,11 @@ ms.locfileid: "49259083"
 ## <a name="how-cyclomatic-complexity-is-calculated"></a>Döngüsel karmaşıklık nasıl hesaplanır
  Döngüsel karmaşıklık 1 aşağıdaki ekleyerek hesaplanır:
 
--   Dal sayısıyla (gibi `if`, `while`, ve `do`)
+- Dal sayısıyla (gibi `if`, `while`, ve `do`)
 
--   Sayısı `case` deyimlerinde bir `switch`
+- Sayısı `case` deyimlerinde bir `switch`
 
- Aşağıdaki örnekler, değişen döngüsel karmaşıklık içeren yöntemleri gösterir.
+  Aşağıdaki örnekler, değişen döngüsel karmaşıklık içeren yöntemleri gösterir.
 
 ## <a name="example"></a>Örnek
  **Döngüsel karmaşıklık 1**

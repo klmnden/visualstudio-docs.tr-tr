@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1455c8dad80e4f9bc9d051663c2c224d7058028b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 1ace7528eb1685765fe5c7ff11ce9b3c3234a941
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860231"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919162"
 ---
 # <a name="the-text-template-transformation-process"></a>Metin Şablonu Dönüştürme Süreci
 Metin şablonu dönüştürme süreci, bir metin şablonu dosyasını girdi olarak alır ve çıktı olarak yeni bir metin dosyası oluşturur. Örneğin, Visual Basic veya C# kodu oluşturmak için metin şablonlarını kullanabilir veya bir HTML raporu oluşturabilirsiniz.
@@ -28,7 +28,7 @@ Metin şablonu dönüştürme süreci, bir metin şablonu dosyasını girdi olar
 ## <a name="components"></a>Bileşenler
 
 |Bileşen|Açıklama|Özelleştirilebilir (Evet/Hayır)|
-|---------------|-----------------|------------------------------|
+|-|-|-|
 |Altyapısı|Metin şablonu dönüştürme süreci motorunda denetler|Hayır.|
 |Ana bilgisayar|Konak, altyapısı ve kullanıcı ortamını arasındaki arabirimdir. Visual Studio, metin dönüştürme işleminin bir ana bilgisayardır.|Evet. Özel bir ana bilgisayar yazabilirsiniz.|
 |Yönerge işlemcileri|Yönerge işlemcileri yönergeleri metin şablonlarında işleyen sınıflardır. Bir metin şablonu için bir giriş kaynağından veri sağlamak yönergeleri kullanabilirsiniz.|Evet. Özel yönerge işlemcilerinizi yazabilirsiniz.|

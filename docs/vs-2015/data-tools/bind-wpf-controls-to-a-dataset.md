@@ -21,12 +21,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5b56371ed66287f4b8f8005b6e793f6311427100
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 19189e63a3fb3fdfa3016cb2643cc34a193a2a52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289568"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893006"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Bir veri kümesine WPF denetimleri bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,30 +36,30 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
--   Bir WPF uygulamasını ve verileri AdventureWorksLT örnek veritabanını kullanarak oluşturulan bir veri kümesi oluşturma.  
+- Bir WPF uygulamasını ve verileri AdventureWorksLT örnek veritabanını kullanarak oluşturulan bir veri kümesi oluşturma.  
   
--   Bir veri tablosundan sürükleyerek veriye bağlı denetimler kümesini oluşturma **veri kaynakları** WPF Tasarımcısı penceresinde penceresine.  
+- Bir veri tablosundan sürükleyerek veriye bağlı denetimler kümesini oluşturma **veri kaynakları** WPF Tasarımcısı penceresinde penceresine.  
   
--   Ürün kayıtlarında ileriye ve geriye doğru gezinmek düğmeleri oluşturuluyor.  
+- Ürün kayıtlarında ileriye ve geriye doğru gezinmek düğmeleri oluşturuluyor.  
   
--   Bir düğme oluşturma, veri tablosu ve temel alınan veri kaynağı için ürün kayıtları kullanıcılar yaptığınız değişiklikleri kaydeder.  
+- Bir düğme oluşturma, veri tablosu ve temel alınan veri kaynağı için ürün kayıtları kullanıcılar yaptığınız değişiklikleri kaydeder.  
   
-     [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
--   Çalışan bir SQL Server veya SQL Server bağlı AdventureWorksLT örnek veritabanı içeren bir Express örneğine erişim. AdventureWorksLT veritabanı indirebileceğiniz [CodePlex Web site](http://go.microsoft.com/fwlink/?linkid=87843).  
+- Çalışan bir SQL Server veya SQL Server bağlı AdventureWorksLT örnek veritabanı içeren bir Express örneğine erişim. AdventureWorksLT veritabanı indirebileceğiniz [CodePlex Web site](http://go.microsoft.com/fwlink/?linkid=87843).  
   
- Aşağıdaki kavramları bilgisi de faydalıdır, ancak izlenecek yolu tamamlamak için gerekli değil:  
+  Aşağıdaki kavramları bilgisi de faydalıdır, ancak izlenecek yolu tamamlamak için gerekli değil:  
   
--   Veri kümeleri ve TableAdapters öğelerini. Daha fazla bilgi için [Visual Studio'daki veri kümesi Araçları](../data-tools/dataset-tools-in-visual-studio.md) ve [TableAdapter genel bakışı](../data-tools/tableadapter-overview.md).  
+- Veri kümeleri ve TableAdapters öğelerini. Daha fazla bilgi için [Visual Studio'daki veri kümesi Araçları](../data-tools/dataset-tools-in-visual-studio.md) ve [TableAdapter genel bakışı](../data-tools/tableadapter-overview.md).  
   
--   WPF Tasarımcısı ile çalışma. Daha fazla bilgi için [WPF ve Silverlight Tasarımcısı genel bakış](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- WPF Tasarımcısı ile çalışma. Daha fazla bilgi için [WPF ve Silverlight Tasarımcısı genel bakış](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
--   WPF veri bağlaması. Daha fazla bilgi için [Data Binding Overview](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- WPF veri bağlaması. Daha fazla bilgi için [Data Binding Overview](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="create-the-project"></a>Projeyi oluşturma  
  Yeni bir WPF projesi oluşturun. Proje ürün kayıtları görüntüler.  

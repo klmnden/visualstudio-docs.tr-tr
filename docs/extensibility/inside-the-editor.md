@@ -13,54 +13,54 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f85e7c6e4ba62842986db8e6090415d2e33f1c1
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 18587516298fa58e8a5e783ffb1f7c37d5a6b497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498960"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859688"
 ---
 # <a name="inside-the-editor"></a>Düzenleyicinin içinde
 Düzenleyici metin görünümünü ve kullanıcı arabirimi düzenleyici metin modeli ayrı tutmak için tasarlanmış farklı alt sistemler sayısı oluşur.  
   
  Bu bölümlerde, düzenleyici farklı yönlerini açıklanmıştır:  
   
--   [Alt sistemler genel bakış](../extensibility/inside-the-editor.md#overview-of-the-subsystems)  
+- [Alt sistemler genel bakış](../extensibility/inside-the-editor.md#overview-of-the-subsystems)  
   
--   [Metin modeli](../extensibility/inside-the-editor.md#the-text-model)  
+- [Metin modeli](../extensibility/inside-the-editor.md#the-text-model)  
   
--   [Metin görünümü](../extensibility/inside-the-editor.md#the-text-view)  
+- [Metin görünümü](../extensibility/inside-the-editor.md#the-text-view)  
   
- Bu bölümlerde, düzenleyici özellikleri açıklanmaktadır:  
+  Bu bölümlerde, düzenleyici özellikleri açıklanmaktadır:  
   
--   [Etiketleri ve sınıflandırıcı](../extensibility/inside-the-editor.md#tags-and-classifiers)  
+- [Etiketleri ve sınıflandırıcı](../extensibility/inside-the-editor.md#tags-and-classifiers)  
   
--   [Kenarlıklar](../extensibility/inside-the-editor.md#adornments)  
+- [Kenarlıklar](../extensibility/inside-the-editor.md#adornments)  
   
--   [Projeksiyon](../extensibility/inside-the-editor.md#projection)  
+- [Projeksiyon](../extensibility/inside-the-editor.md#projection)  
   
--   [Anahat Oluşturma](../extensibility/inside-the-editor.md#outlining)  
+- [Anahat Oluşturma](../extensibility/inside-the-editor.md#outlining)  
   
--   [Fare bağlamaları](../extensibility/inside-the-editor.md#mousebindings)  
+- [Fare bağlamaları](../extensibility/inside-the-editor.md#mousebindings)  
   
--   [Düzenleyici işlemleri](../extensibility/inside-the-editor.md#editoroperations)  
+- [Düzenleyici işlemleri](../extensibility/inside-the-editor.md#editoroperations)  
   
--   [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
+- [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
 ## <a name="overview-of-the-subsystems"></a>Alt sistemler genel bakış  
   
 ### <a name="text-model-subsystem"></a>Metin modeli alt sistemi  
  Metin modeli alt metin temsil eden ve kendi işleme etkinleştirme sorumludur. Metin modeli alt içeren <xref:Microsoft.VisualStudio.Text.ITextBuffer> düzenleyici tarafından görüntülenecek olan karakter dizisini tanımlayan arabirimi. Bu metin değiştirildi, izlenen ve aksi takdirde pek çok şekilde değiştirilebilir. Metin model türleri için aşağıdaki konuları da sağlar:  
   
--   Metin dosyaları ile ilişkilendirir ve bunları dosya sistemindeki yazma ve okuma yöneten hizmet.  
+- Metin dosyaları ile ilişkilendirir ve bunları dosya sistemindeki yazma ve okuma yöneten hizmet.  
   
--   En az iki diziyi nesnelerin farklarını bulur bir fark kayıt hizmeti.  
+- En az iki diziyi nesnelerin farklarını bulur bir fark kayıt hizmeti.  
   
--   Diğer arabellekler metinde kümelerine açısından arabellekteki metni açıklayan bir sistemi.  
+- Diğer arabellekler metinde kümelerine açısından arabellekteki metni açıklayan bir sistemi.  
   
- Metin modeli alt sistemi, kullanıcı arabirimi (UI) kavramlarını ücretsizdir. Örneğin, metin biçimlendirme veya metin düzeni için sorumlu değildir ve metinle birlikte ilişkilendirilebilir görsel Kenarlıklar olanağıyla sahiptir.  
+  Metin modeli alt sistemi, kullanıcı arabirimi (UI) kavramlarını ücretsizdir. Örneğin, metin biçimlendirme veya metin düzeni için sorumlu değildir ve metinle birlikte ilişkilendirilebilir görsel Kenarlıklar olanağıyla sahiptir.  
   
- Genel metin modeli alt türleri bulunan *Microsoft.VisualStudio.Text.Data.dll* ve *Microsoft.VisualStudio.CoreUtility.dll*, yalnızca .NET Framework temel bağlıdır sınıf kitaplığı ve Yönetilen Genişletilebilirlik Çerçevesi (MEF).  
+  Genel metin modeli alt türleri bulunan *Microsoft.VisualStudio.Text.Data.dll* ve *Microsoft.VisualStudio.CoreUtility.dll*, yalnızca .NET Framework temel bağlıdır sınıf kitaplığı ve Yönetilen Genişletilebilirlik Çerçevesi (MEF).  
   
 ### <a name="text-view-subsystem"></a>Metin görünümü alt sistemi  
  Metin görünümü alt sistemi, biçimlendirme ve metin görüntüleme için sorumludur. Bu alt türlerini olup türleri Windows Presentation Foundation (WPF) dayanır bağlı olarak iki katmanlara ayrılır. En önemli türleridir <xref:Microsoft.VisualStudio.Text.Editor.ITextView> ve <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>, görüntülenecek olan metin satırlarını kümesini ve da giriş işaretini seçimi ve WPF kullanıcı Arabirimi öğeleri kullanarak metin donatmak için özellikleri denetleme. Bu alt sistemi, ayrıca metin kenar boşluklarını görüntüleme alanı sağlar. Bu kenar boşluklarının uzatılabilir ve farklı türde içerik ve görsel efektler içerebilir. Satır numarası görüntüler ve kaydırma çubukları kenar boşlukları örnekleridir.  

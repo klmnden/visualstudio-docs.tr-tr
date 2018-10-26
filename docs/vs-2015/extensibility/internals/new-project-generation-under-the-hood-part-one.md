@@ -16,12 +16,12 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 122ef6b8f1e597006fd53e6360d10d304cc760b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c69df0e8c1aace595a1c79d52b7ca4cd08b7a004
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302620"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941240"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Yeni Proje Oluşturma: Altyapı Öğeleri, Bölüm Bir
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -175,35 +175,35 @@ devenv /installvstemplates
 #### <a name="a-quick-review"></a>Hızlı bir inceleme  
  Şimdi değiştirmek **yeni proje** iletişim kutusu ve yeni bir kullanıcı proje şablonu oluşturun.  
   
-1.  MyProjectNode alt \Program Visual Studio 14.0\Common7\IDE\ProjectTemplates\CSharp klasöre ekleyin.  
+1. MyProjectNode alt \Program Visual Studio 14.0\Common7\IDE\ProjectTemplates\CSharp klasöre ekleyin.  
   
-2.  Herhangi bir metin düzenleyicisi kullanarak MyProjectNode klasöründe bir MyProject.vstdir dosyası oluşturun.  
+2. Herhangi bir metin düzenleyicisi kullanarak MyProjectNode klasöründe bir MyProject.vstdir dosyası oluşturun.  
   
-3.  .Vstdır dosyanıza şu satırları ekleyin:  
+3. .Vstdır dosyanıza şu satırları ekleyin:  
   
-    ```  
-    <TemplateDir Version="1.0.0">  
-        <SortOrder>6</SortOrder>  
-    </TemplateDir>  
-    ```  
+   ```  
+   <TemplateDir Version="1.0.0">  
+       <SortOrder>6</SortOrder>  
+   </TemplateDir>  
+   ```  
   
-4.  .Vstdır dosyasını kaydedip kapatın.  
+4. .Vstdır dosyasını kaydedip kapatın.  
   
-5.  Herhangi bir metin düzenleyicisi kullanarak MyProjectNode klasöründe bir MyProject.vstemplate dosyası oluşturun.  
+5. Herhangi bir metin düzenleyicisi kullanarak MyProjectNode klasöründe bir MyProject.vstemplate dosyası oluşturun.  
   
-6.  .Vstemplate dosyasını şu satırları ekleyin:  
+6. .Vstemplate dosyasını şu satırları ekleyin:  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-        <TemplateData>  
-            <ProjectType>CSharp</ProjectType>  
-        </TemplateData>  
-    </VSTemplate>  
-    ```  
+   ```  
+   <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+       <TemplateData>  
+           <ProjectType>CSharp</ProjectType>  
+       </TemplateData>  
+   </VSTemplate>  
+   ```  
   
-7.  The.vstemplate dosyasını kaydedin ve düzenleyiciyi kapatın.  
+7. The.vstemplate dosyasını kaydedin ve düzenleyiciyi kapatın.  
   
-8.  .Vstemplate dosyasını yeni bir sıkıştırılmış MyProjectNode\MyProject.zip klasörü gönderin.  
+8. .Vstemplate dosyasını yeni bir sıkıştırılmış MyProjectNode\MyProject.zip klasörü gönderin.  
   
 9. Visual Studio komut penceresinden şunu yazın:  
   
@@ -211,13 +211,13 @@ devenv /installvstemplates
     devenv /installvstemplates  
     ```  
   
- Visual Studio'yu açın.  
+   Visual Studio'yu açın.  
   
-1.  Açık **yeni proje** iletişim kutusu ve genişletin **Visual C#** proje düğümü.  
+10. Açık **yeni proje** iletişim kutusu ve genişletin **Visual C#** proje düğümü.  
   
- ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
+    ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
   
- **MyProjectNode** Visual C# ' in Windows düğümü altında yalnızca bir alt düğüm olarak görünür.  
+    **MyProjectNode** Visual C# ' in Windows düğümü altında yalnızca bir alt düğüm olarak görünür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yeni Proje Oluşturma: Altyapı Öğeleri, Bölüm İki](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c63936fb78d2de58a9ae1c937a9f8f536a8714c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c117f6864aadd7c981aa2b89302c06ccfd6c9768
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256990"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923790"
 ---
 # <a name="item-metadata-in-task-batching"></a>Toplu Görev İşlemede Öğe Meta Verileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ ms.locfileid: "49256990"
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] öğe listeleri farklı kategorileri veya toplu işlemi bölmek için özelliği, öğe meta verileri temel alarak ve bir görevi, her batch ile bir kez çalıştırın. Tam olarak hangi batch ile hangi öğeleri geçirilen anlamak kafa karıştırıcı olabilir. Bu konu, toplu işleme içeren aşağıdaki yaygın senaryoları kapsar.  
   
--   Bir öğe listesini toplu işler bölme  
+- Bir öğe listesini toplu işler bölme  
   
--   Toplu işler çeşitli öğesi listeleri bölme  
+- Toplu işler çeşitli öğesi listeleri bölme  
   
--   Bir öğe aynı anda toplu işleme  
+- Bir öğe aynı anda toplu işleme  
   
--   Filtre öğesi listeleri  
+- Filtre öğesi listeleri  
   
- İle toplu işlem hakkında daha fazla bilgi için [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], bkz: [toplu işleme](../msbuild/msbuild-batching.md).  
+  İle toplu işlem hakkında daha fazla bilgi için [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], bkz: [toplu işleme](../msbuild/msbuild-batching.md).  
   
 ## <a name="dividing-an-item-list-into-batches"></a>Bir öğe listesini toplu işler bölme  
  Toplu işleme, öğe meta verileri temel alarak farklı toplu bir öğe listesi bölün ve her toplu işlerin bir görevle ayrı ayrı geçirebilirsiniz olanak tanır. Uydu derlemeleri oluşturmak için kullanışlıdır.  

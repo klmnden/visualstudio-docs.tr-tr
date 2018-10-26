@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6139187ec619ac1825cc56f801035bc4f719854b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c022f1a039aacee3599dd680adfa92a9404b34b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639266"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915678"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Nasıl yapılır: zaman uyumsuz bir Visual Studio hizmeti sağlama
 UI iş parçacığını engellemeden bir hizmet elde etmek istiyorsanız, zaman uyumsuz bir hizmet oluşturma ve arka plan iş parçacığında paketi gerekir. Bu amaçla kullanabileceğiniz bir <xref:Microsoft.VisualStudio.Shell.AsyncPackage> yerine <xref:Microsoft.VisualStudio.Shell.Package>ve hizmeti ile özel zaman uyumsuz yöntemler zaman uyumsuz paketin ekleyin.
@@ -104,11 +104,11 @@ UI iş parçacığını engellemeden bir hizmet elde etmek istiyorsanız, zaman 
 ## <a name="register-a-service"></a>Bir hizmeti kaydedin  
  Bir hizmeti kaydetmek için ekleme <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> hizmeti sağlayan paket. Farklı bir zaman uyumlu bir hizmet kayıt için hem paket hem de hizmet yükleme zaman uyumsuz desteklediğinden emin olmanız için gerekenler:
   
--   Eklemelisiniz **AllowsBackgroundLoading = true** alanı <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> paket başlatılabilir zaman uyumsuz olarak PackageRegistrationAttribute hakkında daha fazla bilgi sağlamak için bkz: [kaydedin ve VSPackage kaydı](../extensibility/registering-and-unregistering-vspackages.md).  
+- Eklemelisiniz **AllowsBackgroundLoading = true** alanı <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> paket başlatılabilir zaman uyumsuz olarak PackageRegistrationAttribute hakkında daha fazla bilgi sağlamak için bkz: [kaydedin ve VSPackage kaydı](../extensibility/registering-and-unregistering-vspackages.md).  
   
--   Eklemelisiniz **IsAsyncQueryable = true** alanı <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> hizmet örneği zaman uyumsuz olarak başlatılabilir emin olmak için.
+- Eklemelisiniz **IsAsyncQueryable = true** alanı <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> hizmet örneği zaman uyumsuz olarak başlatılabilir emin olmak için.
 
- İşte bir örnek bir `AsyncPackage` uyumsuz bir hizmet kaydı ile:
+  İşte bir örnek bir `AsyncPackage` uyumsuz bir hizmet kaydı ile:
   
 ```csharp  
 [ProvideService((typeof(STextWriterService)), IsAsyncQueryable = true)]  

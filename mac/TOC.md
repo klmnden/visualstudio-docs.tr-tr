@@ -2,7 +2,8 @@
 # [IDE Turu](ide-tour.md)
 
 # [Yükleme](installation.md)
-## [Önizleme Yükleme](install-preview.md)
+## [Bir güvenlik duvarı veya ara sunucunun arkasına yükleme ve burada kullanma](install-behind-a-firewall-or-proxy-server.md)
+## [Bir Önizleme sürümünü yükleme](install-preview.md)
 ## [Güncelleştir](update.md)
 ## [Kaldır](uninstall.md)
 

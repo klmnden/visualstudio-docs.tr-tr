@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ec3fff82fcdc8db8328d1129a860495d081be2e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7c4dc7cb560e6ae652474d16e003eafb352643ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282819"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951073"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Hata Ayıklama Hazırlığı: Windows Forms Uygulamaları
 Windows Forms proje şablonu, bir Windows Forms uygulaması oluşturur. Bu tür bir uygulamada hata ayıklama [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oldukça basittir. Daha fazla bilgi için [bir Windows uygulaması projesi oluşturma](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).  
@@ -47,23 +47,23 @@ Windows Forms proje şablonu, bir Windows Forms uygulaması oluşturur. Bu tür 
   
 ### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>Bir C#, F # veya Visual Basic Windows Forms uygulamasında hata ayıklamak için  
   
-1.  Projeyi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+1. Projeyi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-2.  Kesme noktaları, gerektiği şekilde oluşturun.  
+2. Kesme noktaları, gerektiği şekilde oluşturun.  
   
-     Windows Forms uygulamaları, olay temelli olduğundan, kesme noktalarınız olay işleyici kodu veya olay işleyici kodu tarafından çağrılan yöntemler geçer. Kesme noktaları yerleştirmek için tipik olaylar şunlardır:  
+    Windows Forms uygulamaları, olay temelli olduğundan, kesme noktalarınız olay işleyici kodu veya olay işleyici kodu tarafından çağrılan yöntemler geçer. Kesme noktaları yerleştirmek için tipik olaylar şunlardır:  
   
-    1.  ' A tıklayın, Enter vb. gibi bir denetim ile ilişkili olayları.  
+   1. ' A tıklayın, Enter vb. gibi bir denetim ile ilişkili olayları.  
   
-    2.  Uygulama başlatma ve kapatma, yük, etkin, vb. gibi ilişkili olaylar.  
+   2. Uygulama başlatma ve kapatma, yük, etkin, vb. gibi ilişkili olaylar.  
   
-    3.  Odak ve doğrulama olayları.  
+   3. Odak ve doğrulama olayları.  
   
-     Daha fazla bilgi için [Windows Forms'ta olay işleyicileri oluşturma](/dotnet/framework/winforms/creating-event-handlers-in-windows-forms).  
+      Daha fazla bilgi için [Windows Forms'ta olay işleyicileri oluşturma](/dotnet/framework/winforms/creating-event-handlers-in-windows-forms).  
   
-3.  Üzerinde **hata ayıklama** menüsünde tıklatın **Başlat**.  
+3. Üzerinde **hata ayıklama** menüsünde tıklatın **Başlat**.  
   
-4.  İçinde açıklanan teknikleri kullanarak hata ayıklama [hata ayıklayıcı temel bilgileri](../debugger/getting-started-with-the-debugger.md).  
+4. İçinde açıklanan teknikleri kullanarak hata ayıklama [hata ayıklayıcı temel bilgileri](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)   

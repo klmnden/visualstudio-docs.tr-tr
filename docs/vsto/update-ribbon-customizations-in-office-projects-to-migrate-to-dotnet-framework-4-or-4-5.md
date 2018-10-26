@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d610d5403bfe0341008213c5e4c663196b90229
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 4cfd5fb259db7903541e0a86f16c720c9ff9c4d2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252522"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937427"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz Office projelerindeki Şerit Özelleştirmelerini Güncelleştirme
   Projenizi kullanılarak oluşturulmuş bir Şerit özelleştirme içerip içermediğini **Şerit (Görsel Tasarımcı)** proje öğesi, hedef Framework'ü değiştirilirse proje kodunuzu aşağıdaki değişiklikleri yapmalısınız [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya Daha sonra.  
@@ -119,18 +119,18 @@ ms.locfileid: "39252522"
   
  Erişmenin iki yöntemi vardır <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> nesnesi:  
   
--   Şerit sınıfının Fabrika özelliğini kullanarak. Bu yaklaşım koddan Şerit sınıfınızda kullanın.  
+- Şerit sınıfının Fabrika özelliğini kullanarak. Bu yaklaşım koddan Şerit sınıfınızda kullanın.  
   
--   Kullanarak `Globals.Factory.GetRibbonFactory` yöntemi. Şerit sınıfınıza dışındaki kod bu yaklaşımı kullanın. Globals sınıfı hakkında daha fazla bilgi için bkz: [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md).  
+- Kullanarak `Globals.Factory.GetRibbonFactory` yöntemi. Şerit sınıfınıza dışındaki kod bu yaklaşımı kullanın. Globals sınıfı hakkında daha fazla bilgi için bkz: [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md).  
   
- Aşağıdaki kod örneğinde nasıl oluşturulacağını gösterir. bir <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> hedefleyen bir projeye bir Şerit sınıfında [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri.  
+  Aşağıdaki kod örneğinde nasıl oluşturulacağını gösterir. bir <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> hedefleyen bir projeye bir Şerit sınıfında [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri.  
   
 <CodeContentPlaceHolder>10</CodeContentPlaceHolder>  
 <CodeContentPlaceHolder>11</CodeContentPlaceHolder>  
  Programlı olarak oluşturabilir denetimleri ve hedefleyen projelerde bu denetimleri oluşturmak için kullanılacak yöntemi aşağıdaki tabloda listelenmektedir [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri.  
   
 |Denetim|Kullanılacak RibbonFactory yöntemi [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ve sonraki projeleri|  
-|-------------|---------------------------------------------------------------------------------------------------------------|  
+|-------------| - |  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonButton%2A>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonButtonGroup%2A>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonCheckBox%2A>|  
@@ -155,7 +155,7 @@ ms.locfileid: "39252522"
  Aşağıdaki tablo Şerit olayları ve hedefleyen projelerde bunlarla ilişkili temsilcileri listeler [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri.  
   
 |Olay|Kullanılacak temsilci [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ve sonraki projeleri|  
-|-----------|---------------------------------------------------------------------------------------------------|  
+|-----------| - |  
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> oluşturulan Şerit sınıfında olay|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.SelectionChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click>|<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler>|  
@@ -165,11 +165,11 @@ ms.locfileid: "39252522"
   
  Erişmenin iki yöntemi vardır <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> nesnesi:  
   
--   Kullanarak `Factory` Şerit sınıfın özelliği. Bu yaklaşım koddan Şerit sınıfınızda kullanın.  
+- Kullanarak `Factory` Şerit sınıfın özelliği. Bu yaklaşım koddan Şerit sınıfınızda kullanın.  
   
--   Kullanarak `Globals.Factory.GetRibbonFactory` yöntemi. Şerit sınıfınıza dışındaki kod bu yaklaşımı kullanın. Globals sınıfı hakkında daha fazla bilgi için bkz: [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md).  
+- Kullanarak `Globals.Factory.GetRibbonFactory` yöntemi. Şerit sınıfınıza dışındaki kod bu yaklaşımı kullanın. Globals sınıfı hakkında daha fazla bilgi için bkz: [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md).  
   
- Aşağıdaki kod örneğinde nasıl ayarlanacağını gösterir `Position` .NET Framework 3. 5'i hedefleyen bir projeye bir Şerit sınıfında bir sekmede özelliği.  
+  Aşağıdaki kod örneğinde nasıl ayarlanacağını gösterir `Position` .NET Framework 3. 5'i hedefleyen bir projeye bir Şerit sınıfında bir sekmede özelliği.  
   
 ```vb  
 Me.tab1.Position = RibbonPosition.AfterOfficeId("TabHome")  

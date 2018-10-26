@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 417d901504eb20894b3bd3e83d286dac4e66b072
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 371be943dc062c5c3b5aac7f59493aa5f4f53002
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749378"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897157"
 ---
 # <a name="cvwriteflag-function"></a>CvWriteFlag işlevi
-Bir bayrak eşzamanlılık görselleştiricisi izleme dosyasına yazar.  
+Bayrak eşzamanlılık görselleştiricisi izleme dosyasına yazar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -66,7 +66,7 @@ HRESULT CvWriteFlagExVA(
   
 #### <a name="parameters"></a>Parametreler  
  `argList`  
- Bağımsız değişkenler listesi.  
+ Bağımsız değişken listesi.  
   
  `category`  
  Kategori.  
@@ -81,14 +81,14 @@ HRESULT CvWriteFlagExVA(
  İleti biçimi dizesi. NULL olamaz.  
   
 ## <a name="return-value"></a>Dönüş değeri  
- İletiyi başarıyla yazıldığında S_OK. Hata kodu vardı herhangi bir hata durumunda. Hata koşulu denetlemek için başarılı/başarısız makroları kullanın.  
+ İletinin başarılı bir şekilde yazıldığında S_OK. Hata kodu: var olan herhangi bir hata durumunda. Hata koşulu denetleyen için başarılı/başarısız makroları kullanın.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** *cvmarkers.h*  
   
  **Unicode:** CvWriteFlagExW, CvWriteFlagExVW  
   
- **ANSI:** CvWriteFlagExA, CvWriteFlagExVA  
+ <strong>ANSI:</strong>CvWriteFlagExA, CvWriteFlagExVA  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [C++ Kitaplık Başvurusu](../profiling/cpp-library-reference.md)

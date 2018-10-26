@@ -19,12 +19,12 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d61d2c89a163cf111a2d33701a463e018f8f1488
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9cd4ea3b1465686ee2c0a0ebcfdc4e3aa2e9e56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261046"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816358"
 ---
 # <a name="options-and-options-pages"></a>Seçenekler ve Seçenekler Sayfaları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,21 +59,21 @@ Tıklayarak **seçenekleri** üzerinde **Araçları** menüsü açılır **seçe
 ## <a name="option-attributes-and-layout"></a>Seçenek öznitelikleri ve düzeni  
  Sayfa sağlayan kullanıcı arabirimi (UI) özel seçenekler sayfası seçeneklerinde görünümünü belirler. Düzen, etiketleme ve genel seçenekler sayfası seçeneklerinin açıklaması aşağıdaki özniteliklere göre belirlenir:  
   
--   <xref:System.ComponentModel.CategoryAttribute> seçeneği kategorisini belirler.  
+- <xref:System.ComponentModel.CategoryAttribute> seçeneği kategorisini belirler.  
   
--   <xref:System.ComponentModel.DisplayNameAttribute> seçenek görünen adını belirler.  
+- <xref:System.ComponentModel.DisplayNameAttribute> seçenek görünen adını belirler.  
   
--   <xref:System.ComponentModel.DescriptionAttribute> seçenek tanımı belirler.  
+- <xref:System.ComponentModel.DescriptionAttribute> seçenek tanımı belirler.  
   
-    > [!NOTE]
-    >  Eşdeğer öznitelikleri, SRCategory LocDisplayName ve SRDescription, yerelleştirme için dize kaynaklarını kullanın ve tanımlanan [yönetilen proje örnek](http://go.microsoft.com/fwlink/?LinkId=122774).  
+  > [!NOTE]
+  >  Eşdeğer öznitelikleri, SRCategory LocDisplayName ve SRDescription, yerelleştirme için dize kaynaklarını kullanın ve tanımlanan [yönetilen proje örnek](http://go.microsoft.com/fwlink/?LinkId=122774).  
   
- Aşağıdaki kod parçasını göz önünde bulundurun:  
+  Aşağıdaki kod parçasını göz önünde bulundurun:  
   
- [!code-csharp[VSSDKSupportForOptionsPages#3](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs#3)]
- [!code-vb[VSSDKSupportForOptionsPages#3](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb#3)]  
+  [!code-csharp[VSSDKSupportForOptionsPages#3](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs#3)]
+  [!code-vb[VSSDKSupportForOptionsPages#3](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb#3)]  
   
- Seçenekler sayfasında OptionInteger seçeneği görüntülenir **tamsayı seçeneği** içinde **My seçenekleri** kategorisi. Seçeneğini belirlediyseniz, açıklama **benim tamsayı seçeneğini**, Açıklama kutusuna görünür.  
+  Seçenekler sayfasında OptionInteger seçeneği görüntülenir **tamsayı seçeneği** içinde **My seçenekleri** kategorisi. Seçeneğini belirlediyseniz, açıklama **benim tamsayı seçeneğini**, Açıklama kutusuna görünür.  
   
 ## <a name="accessing-options-pages-from-another-vspackage"></a>Başka bir VSPackage erişen seçenekler sayfaları  
  Barındırdığı ve yönettiği bir seçenekler sayfası bir VSPackage Otomasyon modelini kullanarak, başka bir VSPackage'ı programlı olarak erişilebilir. Örneğin, aşağıdaki kodda bir VSPackage'ı bir seçenek sayfasını barındıran olarak kaydedilir.  

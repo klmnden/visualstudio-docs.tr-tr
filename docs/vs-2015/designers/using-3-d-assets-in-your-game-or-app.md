@@ -21,12 +21,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 09035e985926e3f1db3bd2dd1fc2bc009f111e33
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e04f4c82e6f11f2659b4cc65549efb291009b720
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226318"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863602"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Oyunlarda veya Uygulamalarda 3B Varlıklar Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,18 +57,18 @@ Bu makalede nasıl kullanabileceğinizi açıklar [!INCLUDE[vsprvs](../includes/
   
 #### <a name="to-add-an-asset-to-your-build"></a>Yapınıza bir varlık eklemek için  
   
-1.  İçinde **Çözüm Gezgini**, projenizde bir varlığın kısayol menüsünü açın ve ardından **özellikleri**. Varlığın **özellik sayfası** iletişim kutusu görüntülenir.  
+1. İçinde **Çözüm Gezgini**, projenizde bir varlığın kısayol menüsünü açın ve ardından **özellikleri**. Varlığın **özellik sayfası** iletişim kutusu görüntülenir.  
   
-2.  Emin olun **yapılandırma** ve **Platform** özellikleri, değişikliklerinizi uygulanmasını istediğiniz değerlere ayarlanır.  
+2. Emin olun **yapılandırma** ve **Platform** özellikleri, değişikliklerinizi uygulanmasını istediğiniz değerlere ayarlanır.  
   
-3.  Altında **yapılandırma özellikleri**, seçin **genel**ve sonra özellik kılavuzunda altında **genel**ayarlayın **öğesi türü** özelliği uygun içerik ardışık düzeni öğe türüne. Örneğin, bir resim veya doku dosyası için tercih **görüntü içeriği ardışık düzeni**.  
+3. Altında **yapılandırma özellikleri**, seçin **genel**ve sonra özellik kılavuzunda altında **genel**ayarlayın **öğesi türü** özelliği uygun içerik ardışık düzeni öğe türüne. Örneğin, bir resim veya doku dosyası için tercih **görüntü içeriği ardışık düzeni**.  
   
-    > [!IMPORTANT]
-    >  Varsayılan olarak, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pek çok resim dosyalarını kullanarak kategorize olması gerektiğini varsayar **görüntü** öğesi yerleşik olan türünü [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Bu nedenle, değiştirmek zorunda **öğesi türü** , görüntü içeriği ardışık düzeni tarafından işlenmesini istediğiniz her görüntünün özelliği. Diğer içerik türlerine işlem hattı, kaynak dosyaları, 3B modeller ve görsel gölgelendirici grafikler varsayılan olarak doğru **öğesi türü**.  
+   > [!IMPORTANT]
+   >  Varsayılan olarak, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pek çok resim dosyalarını kullanarak kategorize olması gerektiğini varsayar **görüntü** öğesi yerleşik olan türünü [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Bu nedenle, değiştirmek zorunda **öğesi türü** , görüntü içeriği ardışık düzeni tarafından işlenmesini istediğiniz her görüntünün özelliği. Diğer içerik türlerine işlem hattı, kaynak dosyaları, 3B modeller ve görsel gölgelendirici grafikler varsayılan olarak doğru **öğesi türü**.  
   
-4.  Seçin **Tamam** düğmesi.  
+4. Seçin **Tamam** düğmesi.  
   
- Üç İşte içeriği ardışık düzeni öğe türleri ve bunların ilişkili kaynakları ve çıktı dosya türleri.  
+   Üç İşte içeriği ardışık düzeni öğe türleri ve bunların ilişkili kaynakları ve çıktı dosya türleri.  
   
 |Öğe türü|Kaynak dosya türleri|Çıkış dosyası biçimi|  
 |---------------|-----------------------|------------------------|  

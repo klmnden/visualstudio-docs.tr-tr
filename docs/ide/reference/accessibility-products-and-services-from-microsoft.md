@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17a63dc86e77692538ea75ba708a1ff39f9fb1b9
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 58f3ad239802b032006a5a28816462147018982f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384259"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839537"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Erişilebilirlik ürünleri ve Microsoft Hizmetleri
 
@@ -45,7 +45,6 @@ Microsoft ürünlerinin ve hizmetlerinin kullanımını herkes için daha kolay 
 
 > [!NOTE]
 > Bu bölümdeki bilgiler, yalnızca Microsoft ürünlerini ABD'de lisans kullanıcılar için geçerli olabilir. Bu ürünü birleşik Devletler'in dışında edindiyseniz, yazılım paketinizle birlikte gelen yan kuruluş bilgi kartını kullanabilir veya ziyaret [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) Web sitesi için bir Microsoft Destek Hizmetleri listesi telefon numaraları ve adresleri. Bu bölümde açıklanan ürün ve hizmet türlerinin bölgeniz olup olmadığını öğrenmek için temsilcinize başvurabilirsiniz. Erişilebilirlik hakkında bilgiler Japonca ve Fransızca dahil olmak üzere diğer dillerde mevcuttur.
-
 
 ##  <a name="windows"></a> Windows erişilebilirlik özellikleri
 
@@ -70,24 +69,24 @@ Zorluk veya yazdırılan malzemelerin varsa, belge için daha erişilebilir bir 
 Buna ek olarak, Learning Ally'dan ek Microsoft yayınları edinebilirsiniz. Learning Ally, bu belgeleri kendi dağıtım hizmetine kayıtlı, nitelikli üyelerine dağıtır. Microsoft ürün belgelerinin ve Microsoft Press kitaplarının kullanılabilirliği hakkında bilgi için şuraya başvurun:
 
 |Learning Ally|
-|----------------------------------------------|
+| - |
 |20 Roszel yol<br /><br /> Princeton, NJ 08540<br /><br /> Learning Ally Web sitesi: [ http://www.learningally.org ](http://www.learningally.org/).|
 
 Web adresleri değişebilir, bu nedenle Web sitesi veya burada bahsedilen sitelerine bağlanamayabilirsiniz.
 
 ##  <a name="hearing"></a> İşitme zorluğu yaşayan kişiler için Müşteri Hizmetleri
 
- İşitme engelliyseniz veya işitme varsa, Microsoft Ürün ve müşteri hizmetlerine tam erişim metin telefonu (TTY/TDD) hizmeti aracılığıyla kullanılabilir:
+İşitme engelliyseniz veya işitme varsa, Microsoft Ürün ve müşteri hizmetlerine tam erişim metin telefonu (TTY/TDD) hizmeti aracılığıyla kullanılabilir:
 
--   Müşteri Hizmetleri için Microsoft Sales Information tatiller hariç Center (800) 892-5234-17:30 Pasifik saati, Pazartesi-Cuma 6:30 AM arasındaki en başvurun.
+- Müşteri Hizmetleri için Microsoft Sales Information tatiller hariç Center (800) 892-5234-17:30 Pasifik saati, Pazartesi-Cuma 6:30 AM arasındaki en başvurun.
 
--   ABD'de Teknik Yardım için Microsoft Ürün Destek tatiller hariç Hizmetleri (800) 892-5234 6: 00'te Pasifik saati, Pazartesi-Cuma 6: 00'da arasındaki en başvurun. Kanada'da, tatiller hariç olmak üzere 8:00 AM ve 8:00 Doğu saati, Pazartesi-Cuma günleri arasında (905) 568-9641 çevirin.
+- ABD'de Teknik Yardım için Microsoft Ürün Destek tatiller hariç Hizmetleri (800) 892-5234 6: 00'te Pasifik saati, Pazartesi-Cuma 6: 00'da arasındaki en başvurun. Kanada'da, tatiller hariç olmak üzere 8:00 AM ve 8:00 Doğu saati, Pazartesi-Cuma günleri arasında (905) 568-9641 çevirin.
 
- Microsoft Destek Hizmetleri hizmetin kullanıldığı zaman fiyatları, hüküm ve koşullara tabi bağlıdır.
+Microsoft Destek Hizmetleri hizmetin kullanıldığı zaman fiyatları, hüküm ve koşullara tabi bağlıdır.
 
 ##  <a name="moreinfo"></a> Daha fazla bilgi için
 
- Nasıl erişilebilir teknolojinin engelli kişilerin yaşamlarını geliştirmeye yardımcı bilgisayarlar hakkında daha fazla bilgi için bkz. [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) Web sitesi.
+Nasıl erişilebilir teknolojinin engelli kişilerin yaşamlarını geliştirmeye yardımcı bilgisayarlar hakkında daha fazla bilgi için bkz. [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) Web sitesi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

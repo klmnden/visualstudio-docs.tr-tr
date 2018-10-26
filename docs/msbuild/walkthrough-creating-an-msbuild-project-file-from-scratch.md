@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1254a7c768521f4ec8b84cb0e345dbee8fb25d69
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 4e2fba3d5a80de2be973d7a1efad7290731e5a7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879869"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828897"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>İzlenecek yol: sıfırdan bir MSBuild proje dosyası oluşturma
 .NET Framework'ü hedefleyen programlama dilleri, tanımlamak ve uygulama oluşturma işlemini denetlemek için MSBuild proje dosyaları kullanın. Bir MSBuild proje dosyası oluşturmak için Visual Studio kullandığınızda, uygun XML dosyasına otomatik olarak eklenir. Ancak, XML'in nasıl düzenlendiğini anlamak yararlı ve bunu bir yapıyı denetlemek üzere nasıl değiştirebilirsiniz.  

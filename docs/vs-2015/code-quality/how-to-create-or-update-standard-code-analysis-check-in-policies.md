@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 63c1b27d762f79a8933a31bb33850ad4604a9c37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6821d218c22f2d83108205d8753fc2d5beac4f28
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301567"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939442"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Nasıl yapılır: Standart Kod Çözümleme İade İlkeleri Oluşturma veya Güncelleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Kod çözümleme İade İlkesi'ni kullanarak kod analizi bir takım projesindeki
   
  Kod çözümleme iade ilkeleri, takım proje ayarlarında belirlenir ve her kod projesini takım projesinde geçerli. Kod Analizi yürütmeleri kod projesi için proje (.xxproj) dosyasında kod projeleri için yapılandırılır. Kod Analizi yürütmeleri yerel bilgisayarda gerçekleştirilir. İade Kod Analizi ilkesini etkinleştirmek, son kullanıcıların düzenlemeden sonra iade edilmesi için bir kod projesi dosyalarda derlenmiş ve en az bir kod analizini çalıştırdığınızda, içeren takım projesi ayarlarını kurallarında bilgisayarda gerçekleştirilmesi gereken yere c değişiklikleri yapıldı.  
   
--   Yönetilen kod için iade ilkesi belirterek ayarladığınız bir *kural kümesi* , bir alt kod analizi kuralları içerir.  
+- Yönetilen kod için iade ilkesi belirterek ayarladığınız bir *kural kümesi* , bir alt kod analizi kuralları içerir.  
   
--   C/C++ kodu için tüm kod analizi kuralları çalıştırılır iade ilkesi gerektirir. Takım projenizdeki bireysel kod projeleri için belirli kuralları devre dışı bırakmak için ön işlemci yönergeleri ekleyebilirsiniz.  
+- C/C++ kodu için tüm kod analizi kuralları çalıştırılır iade ilkesi gerektirir. Takım projenizdeki bireysel kod projeleri için belirli kuralları devre dışı bırakmak için ön işlemci yönergeleri ekleyebilirsiniz.  
   
- İade İlkesi yönetilen kod için belirttikten sonra takım üyeleri, takım projesi ilke ayarları için kod projeleri için Kod Analizi ayarları eşitleyebilirsiniz.  
+  İade İlkesi yönetilen kod için belirttikten sonra takım üyeleri, takım projesi ilke ayarları için kod projeleri için Kod Analizi ayarları eşitleyebilirsiniz.  
   
 ### <a name="to-open-the-check-in-policy-editor"></a>İade İlkesi Düzenleyicisi'ni açmak için  
   

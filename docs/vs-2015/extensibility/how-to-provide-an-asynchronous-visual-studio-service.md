@@ -10,12 +10,12 @@ ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1982162500ff21f754a15cf1f5aebe3117172310
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1938a3a8b5b0eb3c0cc7b062d6d43c4e869397eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185675"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851983"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Nasıl yapılır: bir zaman uyumsuz Visual Studio hizmeti sağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,11 +89,11 @@ UI iş parçacığını engellemeden bir hizmet elde etmek istiyorsanız, zaman 
 ## <a name="registering-a-service"></a>Bir hizmeti kaydediliyor  
  Bir hizmeti kaydetmek için ekleme <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> hizmeti sağlayan paket. Zaman uyumlu bir hizmet kayıt gelen iki fark vardır:  
   
--   Autoloading varsa paket eklemelisiniz <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags> BackgroundLoad değer özniteliğine. Autoloading VSPackage'ları hakkında daha fazla bilgi için bkz: [VSPackage yükleme](../extensibility/loading-vspackages.md).  
+- Autoloading varsa paket eklemelisiniz <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags> BackgroundLoad değer özniteliğine. Autoloading VSPackage'ları hakkında daha fazla bilgi için bkz: [VSPackage yükleme](../extensibility/loading-vspackages.md).  
   
--   Eklemelisiniz **AllowsBackgroundLoading = true** alanı <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>. PackageRegistrationAttribute hakkında daha fazla bilgi için bkz: [kaydetme ve kaydını kaldırma VSPackages](../extensibility/registering-and-unregistering-vspackages.md).  
+- Eklemelisiniz **AllowsBackgroundLoading = true** alanı <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>. PackageRegistrationAttribute hakkında daha fazla bilgi için bkz: [kaydetme ve kaydını kaldırma VSPackages](../extensibility/registering-and-unregistering-vspackages.md).  
   
- İşte bir örnek bir sınıfta bir zaman uyumsuz hizmet kaydı ile::  
+  İşte bir örnek bir sınıfta bir zaman uyumsuz hizmet kaydı ile::  
   
 ```csharp  
 [ProvideService((typeof(STextWriterService)), IsAsyncQueryable = true)]  

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98aece47b3936108b171ad7e2e1100e98d601312
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 405b208df0aedffe69c9e476a5a31745faeb84f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282800"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872570"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Oluşturma ve bir kaynağı uygulama
 Stilleri ve şablonları XAML Tasarımcısı'nda öğeler için kaynakları adlı yeniden kullanılabilir varlıklarda depolanır. Stilleri öğesi özellikleri ayarlamanızı ve birden çok öğe arasında tutarlı bir görünüm için bu ayarları yeniden etkinleştirin. A [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) denetiminin görünümünü tanımlar ve ayrıca bir kaynak olarak uygulanabilir. Daha fazla bilgi için [hızlı başlangıç: stil denetimleri](http://go.microsoft.com/fwlink/?LinkID=248239) ve [hızlı başlangıç: denetim şablonları](http://go.microsoft.com/fwlink/?LinkID=247982).
@@ -51,18 +51,18 @@ Stilleri ve şablonları XAML Tasarımcısı'nda öğeler için kaynakları adl�
 
 ### <a name="to-apply-a-resource-to-an-element-or-property"></a>Bir öğe veya özellik için bir kaynak uygulamak için
 
-1.  Belge Anahattı penceresi içinde bir kaynak uygulamak istediğiniz öğeyi seçin.
+1. Belge Anahattı penceresi içinde bir kaynak uygulamak istediğiniz öğeyi seçin.
 
-2.  Aşağıdakilerden birini yapın:
+2. Aşağıdakilerden birini yapın:
 
-    -   Bir kaynak bir özellik için geçerlidir. Özellikler penceresindeki özellik değerinin yanındaki özelliği işaretçisi seçin, **yerel kaynak** veya **sistem kaynağı**, görüntülenen listeden kullanılabilir bir kaynak seçin.
+   - Bir kaynak bir özellik için geçerlidir. Özellikler penceresindeki özellik değerinin yanındaki özelliği işaretçisi seçin, **yerel kaynak** veya **sistem kaynağı**, görüntülenen listeden kullanılabilir bir kaynak seçin.
 
-         Görmeyi beklediğiniz bir kaynak görmüyorsanız, kaynak türünü özelliğinin türü eşleşmediği için olabilir.
+      Görmeyi beklediğiniz bir kaynak görmüyorsanız, kaynak türünü özelliğinin türü eşleşmediği için olabilir.
 
-    -   Bir stil veya denetim şablon kaynağı, bir denetim için geçerlidir. Açık Belge Anahattı penceresi denetiminde için bağlam menüsünü seçin **şablonu Düzen** veya **Düzenle ek şablonlar**, seçin **kaynağı Uygula**seçin Görüntülenen listeden denetim şablonunun adı.
+   - Bir stil veya denetim şablon kaynağı, bir denetim için geçerlidir. Açık Belge Anahattı penceresi denetiminde için bağlam menüsünü seçin **şablonu Düzen** veya **Düzenle ek şablonlar**, seçin **kaynağı Uygula**seçin Görüntülenen listeden denetim şablonunun adı.
 
-        > [!NOTE]
-        >  **Şablonu Düzen** denetim şablonları için geçerlidir. **Ek şablonlar Düzenle** diğer şablonu türleri için geçerlidir.
+     > [!NOTE]
+     >  **Şablonu Düzen** denetim şablonları için geçerlidir. **Ek şablonlar Düzenle** diğer şablonu türleri için geçerlidir.
 
      Uyumlu oldukları yerde kaynaklara uygulayabilirsiniz. Örneğin, bir fırça kaynağı için uygulayabileceğiniz **ön plan** özelliği bir <xref:Windows.UI.Xaml.Controls.TextBox> denetimi.
 

@@ -19,25 +19,25 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc9f03650e4e99b7a7277f183993b84d79a67ab2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4ec6a27b8fcd35b4b74108f7bc608c975e120b02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217132"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828695"
 ---
 # <a name="visualizer-architecture"></a>Görselleştirici Mimarisi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Hata ayıklama görselleştiricisi mimarisini iki bölümden oluşur:  
   
--   *Hata ayıklayıcı, yan* Visual Studio hata ayıklayıcısı içinde çalıştırır. Hata ayıklayıcı tarafı kodunu oluşturup, görselleştiricisi için kullanıcı arabirimini görüntüler.  
+- *Hata ayıklayıcı, yan* Visual Studio hata ayıklayıcısı içinde çalıştırır. Hata ayıklayıcı tarafı kodunu oluşturup, görselleştiricisi için kullanıcı arabirimini görüntüler.  
   
--   *Hata ayıklanan yan* Visual Studio hata ayıklama işlemi içinde çalıştırılan ( *hata ayıklanan*).  
+- *Hata ayıklanan yan* Visual Studio hata ayıklama işlemi içinde çalıştırılan ( *hata ayıklanan*).  
   
- Görselleştirici görüntülenecek hata ayıklayıcıyı etkinleştiren bir hata ayıklayıcı bileşendir (*görselleştirme*) anlamlı, anlaşılır bir form veri nesnesinde içeriği. Veri nesnesinin de düzenleme bazı görselleştiriciler destekler. Özel görselleştiriciler yazarak, kendi özel veri türlerini işlemek için hata ayıklayıcı genişletebilirsiniz.  
+  Görselleştirici görüntülenecek hata ayıklayıcıyı etkinleştiren bir hata ayıklayıcı bileşendir (*görselleştirme*) anlamlı, anlaşılır bir form veri nesnesinde içeriği. Veri nesnesinin de düzenleme bazı görselleştiriciler destekler. Özel görselleştiriciler yazarak, kendi özel veri türlerini işlemek için hata ayıklayıcı genişletebilirsiniz.  
   
- Veri nesnesi görünür için hata ayıklama işlemi içinde bulunduğu ( *hata ayıklanan* işlem). İçinde Visual Studio hata ayıklayıcı işlemi verileri görüntüleyecek kullanıcı arabirimi oluşturulur:  
+  Veri nesnesi görünür için hata ayıklama işlemi içinde bulunduğu ( *hata ayıklanan* işlem). İçinde Visual Studio hata ayıklayıcı işlemi verileri görüntüleyecek kullanıcı arabirimi oluşturulur:  
   
 |Hata ayıklayıcı işleme|Hata ayıklanan işlem|  
 |----------------------|----------------------|  

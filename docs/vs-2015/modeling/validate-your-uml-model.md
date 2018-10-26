@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 470eadf92fa76e294ee92899a8c92cb1391a9b58
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c13a5e8ed5ae7fe778908af87958d4ed25951c1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292701"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812510"
 ---
 # <a name="validate-your-uml-model"></a>UML modelinizi doğrulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,20 +32,20 @@ Visual Studio'da çizebilirsiniz UML modellerini bazıları projenizde geçersiz
 ## <a name="invoking-validation"></a>Doğrulamayı çağırma  
  Bir doğrulama uzantısı yüklendiğinde, aşağıdaki durumlarda sağladığı kısıtlamalar uygulanabilir. Bazı kısıtlamalar yalnızca bazı durumlarda uygulamak için ayarlanır.  
   
--   **Doğrulama komutu.** Doğrulama herhangi bir zamanda başlatmak için tıklatın **UML modeli doğrula** üzerinde **mimarisi** menüsü.  
+- **Doğrulama komutu.** Doğrulama herhangi bir zamanda başlatmak için tıklatın **UML modeli doğrula** üzerinde **mimarisi** menüsü.  
   
-    > [!NOTE]
-    >  Komutu, yalnızca doğrulama kısıtlamalarını yüklüyse görünür.  
+  > [!NOTE]
+  >  Komutu, yalnızca doğrulama kısıtlamalarını yüklüyse görünür.  
   
--   **Bir modeli kaydederken.** Modeli kaydettiğinizde doğrulama kısıtlamalarını uygulanabilir. Bu kısıtlamaların amacı projenizin yorumu göre geçersiz bir modeli kaydettiğinizden emin olun yardımcı olmaktır.  
+- **Bir modeli kaydederken.** Modeli kaydettiğinizde doğrulama kısıtlamalarını uygulanabilir. Bu kısıtlamaların amacı projenizin yorumu göre geçersiz bir modeli kaydettiğinizden emin olun yardımcı olmaktır.  
   
-     Hatalar varsa, yine de modelini kaydetmek isteyip istemediğinizi istenecektir. Hataları düzeltin ya da yine de modeli kaydetmeyi tercih edebilirsiniz.  
+   Hatalar varsa, yine de modelini kaydetmek isteyip istemediğinizi istenecektir. Hataları düzeltin ya da yine de modeli kaydetmeyi tercih edebilirsiniz.  
   
--   **Model açılırken.** Bir modeli açtığınızda, doğrulama yöntemlerinin modeli kaydettiğinizde var olan hata iletilerini geri yüklemek için uygulanabilir. Hataları, farklı bir model kısımlarına çalışan kullanıcılar tarafından yapılan değişiklikleri arasındaki tutarsızlıkları tarafından da tanıtılabilir. Daha fazla bilgi için [paylaşmak modelleri ve diyagramları dışarı aktarma](../modeling/share-models-and-exporting-diagrams.md).  
+- **Model açılırken.** Bir modeli açtığınızda, doğrulama yöntemlerinin modeli kaydettiğinizde var olan hata iletilerini geri yüklemek için uygulanabilir. Hataları, farklı bir model kısımlarına çalışan kullanıcılar tarafından yapılan değişiklikleri arasındaki tutarsızlıkları tarafından da tanıtılabilir. Daha fazla bilgi için [paylaşmak modelleri ve diyagramları dışarı aktarma](../modeling/share-models-and-exporting-diagrams.md).  
   
- Doğrulama hataları bildirilir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] hatalar penceresinde.  
+  Doğrulama hataları bildirilir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] hatalar penceresinde.  
   
- Yanlış olan öğeler bir diyagramda seçmek için hataya çift tıklayın. Bu, yanlış öğeler yalnızca açık bir diyagramda görünür olması durumunda çalışır.  
+  Yanlış olan öğeler bir diyagramda seçmek için hataya çift tıklayın. Bu, yanlış öğeler yalnızca açık bir diyagramda görünür olması durumunda çalışır.  
   
 ## <a name="installing-validation-constraints"></a>Doğrulama kısıtlamalarını yükleme  
  Kısıtlamaları içinde paketlenir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uzantısı (VSIX) dosyaları. Genellikle, bir dizi kısıtlamaları da menü komutları, profilleri ve araç kutusu öğeleri gibi diğer tanımları içeren bir uzantının parçası olacaktır.  

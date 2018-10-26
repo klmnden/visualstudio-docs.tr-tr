@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c01bf88cc86f0b63c7dc63deb257f077f61541a0
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8b43cc3acbbff70124685229e33362cfd9b30561
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176690"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908810"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Nasıl yapılır: Yük Testi Sonuçlarındaki Grafiklerde Sayaç Ekleme ve Silme
 
@@ -33,7 +33,7 @@ Kullanabileceğiniz **sayaçları** paneli performans sayaçları grafiğe eklen
  Örnek hızlara ait bazı Kılavuzlar şunlardır:
 
 |Yük testi süresi|Önerilen örnek hız|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 saat|5 saniye|
 |1 - 8 saat|15 saniye|
 |8 - 24 saat|30 saniye|

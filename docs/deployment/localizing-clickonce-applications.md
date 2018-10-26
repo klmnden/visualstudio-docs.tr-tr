@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7897869e8cc010d54c1914cbfa8ca763dd3a3bfa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2a4234d8f6ee9fa946f2accfd50a587e6dbd8068
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279348"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822118"
 ---
 # <a name="localize-clickonce-applications"></a>ClickOnce uygulamalarını yerelleştirme
 Yerelleştirme, uygulamanızın belirli bir kültür için uygun hale getirme işlemidir. Bu işlem, kullanıcı arabirimi (UI) metni doğru tarih ve para birimi biçimlendirme, bir form üzerinde denetimleri boyutunu ayarlama kullanarak bir bölgeye özgü dile çevirme içerir ve gerekirse yansıtma denetimleri sağdan sola.  
@@ -76,9 +76,9 @@ Yerelleştirme, uygulamanızın belirli bir kültür için uygun hale getirme i�
   
  Uygulamanızın müşteriler için kullanılabilir hale getirmeden önce yerelleştirilmiş dağıtımları test etmek için üç seçeneğiniz vardır:  
   
--   Çalıştırabileceğiniz, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygun bir uygulama yerelleştirilmiş Windows sürümleri.  
+- Çalıştırabileceğiniz, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygun bir uygulama yerelleştirilmiş Windows sürümleri.  
   
--   Ayarlayabileceğiniz <xref:System.Threading.Thread.CurrentUICulture%2A> program aracılığıyla uygulamanızdaki özelliği. (Bu özelliği çağırmadan önce ayarlanmalıdır <xref:System.Windows.Forms.Application.Run%2A> yöntemi.)  
+- Ayarlayabileceğiniz <xref:System.Threading.Thread.CurrentUICulture%2A> program aracılığıyla uygulamanızdaki özelliği. (Bu özelliği çağırmadan önce ayarlanmalıdır <xref:System.Windows.Forms.Application.Run%2A> yöntemi.)  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [\<assemblyIdentity > öğesi](../deployment/assemblyidentity-element-clickonce-deployment.md)   

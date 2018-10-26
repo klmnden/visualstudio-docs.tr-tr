@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd1ddaff24cbceb73af3982cc7be3e9f09d351c2
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: b7f7d52ad8dc75f8e8bd313794b44c231522cde7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499958"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829943"
 ---
 # <a name="how-to-update-the-status-bar"></a>Nasıl yapılır: durum çubuğunda güncelleştirme
 **Durum çubuğu** bir denetim çubuğuna bir veya daha fazla durum metin satırlarını ya da göstergeleri içeren pek çok uygulama penceresi sonunda bulunur.  
@@ -35,19 +35,19 @@ ms.locfileid: "39499958"
 ## <a name="robust-programming"></a>Güçlü programlama  
  A **durum çubuğu** dört ayrı alanları içerir:  
   
--   Durum metni  
+- Durum metni  
   
--   İlerleme çubuğu  
+- İlerleme çubuğu  
   
--   Animasyonlu simgesi  
+- Animasyonlu simgesi  
   
--   Düzenleyici bilgileri  
+- Düzenleyici bilgileri  
   
- Daha fazla bilgi için [durum çubukları](/cpp/mfc/status-bars).  
+  Daha fazla bilgi için [durum çubukları](/cpp/mfc/status-bars).  
   
- IDE otomatik olarak çağıran <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> yöntemi, <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> belge penceresinin etkinleştirildiğinde, uygulama.  
+  IDE otomatik olarak çağıran <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> yöntemi, <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> belge penceresinin etkinleştirildiğinde, uygulama.  
   
- VSPackage'ı uygulayan, durum çubuğundaki durum metni güncelleştirmekten sorumludur. Durum metin alanı boş metin olarak ayarlanmışsa "Hazır" Bu dizeye IDE sıfırlar ("") boşta kalma zaman.  
+  VSPackage'ı uygulayan, durum çubuğundaki durum metni güncelleştirmekten sorumludur. Durum metin alanı boş metin olarak ayarlanmışsa "Hazır" Bu dizeye IDE sıfırlar ("") boşta kalma zaman.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Durum çubukları](/cpp/mfc/status-bars)

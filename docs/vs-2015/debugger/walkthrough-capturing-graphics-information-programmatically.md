@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 911a984b5d31e5eebe74ab636b44f6d6e2aa9bb8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7cdd1e740861765958c9115b8112dacd4b338b2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298161"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812913"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>İzlenecek Yol: Grafik Bilgilerini Programla Yakalama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,18 +73,18 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] grafik tanılam
   
 ###### <a name="to-define-the-idxgraphicsanalysis-interface"></a>IDXGraphicsAnalysis arabirimi tanımlamak için  
   
--   Aynı dosyada, üstbilgi dosyaları dahil IDXGraphicsAnalysis arabirimi tanımlayın.  
+- Aynı dosyada, üstbilgi dosyaları dahil IDXGraphicsAnalysis arabirimi tanımlayın.  
   
-    ```  
-    interface DECLSPEC_UUID("9f251514-9d4d-4902-9d60-18988ab7d4b5") DECLSPEC_NOVTABLE  
-    IDXGraphicsAnalysis : public IUnknown  
-    {  
-        STDMETHOD_(void, BeginCapture)() PURE;  
-        STDMETHOD_(void, EndCapture)() PURE;  
-    };  
-    ```  
+  ```  
+  interface DECLSPEC_UUID("9f251514-9d4d-4902-9d60-18988ab7d4b5") DECLSPEC_NOVTABLE  
+  IDXGraphicsAnalysis : public IUnknown  
+  {  
+      STDMETHOD_(void, BeginCapture)() PURE;  
+      STDMETHOD_(void, EndCapture)() PURE;  
+  };  
+  ```  
   
- Kolaylık olması için bu adımları izleyerek yeni bir üstbilgi dosyasında ve onu duyulduğu uygulamanıza dahil edin.  
+  Kolaylık olması için bu adımları izleyerek yeni bir üstbilgi dosyasında ve onu duyulduğu uygulamanıza dahil edin.  
   
 ### <a name="getting-the-idxgraphicsanalysis-interface"></a>IDXGraphicsAnalysis arabirimi alma  
  DirectX 11.2 grafik bilgilerini yakalamak için önce DXGI hata ayıklama arabirimi almak sahip.  
@@ -171,23 +171,23 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] grafik tanılam
   
 ##### <a name="to-configure-the-name-and-location-of-the-graphics-log-file"></a>Grafik günlük dosyasının konumunu ve adını yapılandırmak için  
   
--   Grafik günlüğü temp dizinine yazılır önce önlemek için `#include <vsgcapture.h>` satır, bunu ekleyin:  
+- Grafik günlüğü temp dizinine yazılır önce önlemek için `#include <vsgcapture.h>` satır, bunu ekleyin:  
   
-    ```  
-    #define DONT_SAVE_VSGLOG_TO_TEMP  
-    ```  
+  ```  
+  #define DONT_SAVE_VSGLOG_TO_TEMP  
+  ```  
   
-     Çalışma dizinine göreli bir konum veya mutlak bir yol için grafik günlüğüne yazmak için bu değeri tanımlayabilirsiniz, tanımını `VSG_DEFAULT_RUN_FILENAME` mutlak yoldur.  
+   Çalışma dizinine göreli bir konum veya mutlak bir yol için grafik günlüğüne yazmak için bu değeri tanımlayabilirsiniz, tanımını `VSG_DEFAULT_RUN_FILENAME` mutlak yoldur.  
   
--   Grafik günlüğü farklı bir konuma kaydedin veya farklı bir dosya adı, önce vermek için `#include <vsgcapture.h>` satır, bunu ekleyin:  
+- Grafik günlüğü farklı bir konuma kaydedin veya farklı bir dosya adı, önce vermek için `#include <vsgcapture.h>` satır, bunu ekleyin:  
   
-    ```  
-    #define VSG_DEFAULT_RUN_FILENAME <filename>  
-    ```  
+  ```  
+  #define VSG_DEFAULT_RUN_FILENAME <filename>  
+  ```  
   
-     Bu adım gerçekleştirme, dosya default.vsglog adıdır. Siz tanımlarsanız `DONT_SAVE_VSGLOG_TO_TEMP`, ardından dosyasının konumunu geçici dizine göre; mutlak dosya adı belirtilmişse Aksi takdirde, çalışma dizinine göre veya başka bir konumda.  
+   Bu adım gerçekleştirme, dosya default.vsglog adıdır. Siz tanımlarsanız `DONT_SAVE_VSGLOG_TO_TEMP`, ardından dosyasının konumunu geçici dizine göre; mutlak dosya adı belirtilmişse Aksi takdirde, çalışma dizinine göre veya başka bir konumda.  
   
- İçin [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] uygulamaları, geçici dizin konumunu her kullanıcı ve uygulamanın özgüdür ve genellikle C:\users gibi bir konumda bulunan\\*kullanıcıadı*\AppData\Local\Packages\\ *paket ailesi adı*\TempState\\. Masaüstü uygulamaları için geçici dizin konumunu her kullanıcı için özeldir ve genellikle C:\Users gibi bir konumda bulunan\\*kullanıcıadı*\AppData\Local\Temp\\.  
+  İçin [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] uygulamaları, geçici dizin konumunu her kullanıcı ve uygulamanın özgüdür ve genellikle C:\users gibi bir konumda bulunan\\*kullanıcıadı*\AppData\Local\Packages\\ *paket ailesi adı*\TempState\\. Masaüstü uygulamaları için geçici dizin konumunu her kullanıcı için özeldir ve genellikle C:\Users gibi bir konumda bulunan\\*kullanıcıadı*\AppData\Local\Temp\\.  
   
 > [!NOTE]
 >  Belirli bir konuma yazmak için bu konuma yazma izniniz olması gerekir; Aksi takdirde hata oluşur. Aklınızda [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] uygulamaları, Masaüstü uygulamaları, veri yazabilirsiniz ve burada belirli konumlara yazma için ek yapılandırma gerektirebilir hakkında daha fazla kısıtlanmış.  

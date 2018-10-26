@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 847f37d14743ae45efc273e8ac0b9f6d68b83e3e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6fa8f027fbb3418fff47b0459628afb691c8a05a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204346"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893682"
 ---
 # <a name="t4-import-directive"></a>T4 İçe Aktarma Yönergesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,15 +45,15 @@ The file contains: <#=  fileContent #>
 ## <a name="standard-imports"></a>Standart İçeri Aktarmalar  
  Aşağıdaki ad alanı otomatik olarak içeri aktarılır, böylece onun için içeri aktarma yönergesi yazmanıza gerek kalmaz:  
   
--   `System`  
+- `System`  
   
- Ayrıca, özel yönerge kullanıyorsanız, yönerge işlemcisi bazı ad alanlarını otomatik olarak içeri aktarabilir.  
+  Ayrıca, özel yönerge kullanıyorsanız, yönerge işlemcisi bazı ad alanlarını otomatik olarak içeri aktarabilir.  
   
- Örneğin, etki alanına özgü dil (DSL) için şablonlar yazarsanız, aşağıdaki ad alanları için içeri aktarma yönergeleri yazmak gerekmez:  
+  Örneğin, etki alanına özgü dil (DSL) için şablonlar yazarsanız, aşağıdaki ad alanları için içeri aktarma yönergeleri yazmak gerekmez:  
   
--   `Microsoft.VisualStudio.Modeling`  
+- `Microsoft.VisualStudio.Modeling`  
   
--   DSL'nizin ad alanı  
+- DSL'nizin ad alanı  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [T4 Derleme Yönergesi](../modeling/t4-assembly-directive.md)

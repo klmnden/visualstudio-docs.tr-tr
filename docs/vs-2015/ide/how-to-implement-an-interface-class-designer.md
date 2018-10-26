@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3bbe5eec0a512dafd6689f1420e721d6a2a63e1e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a196f49765623966a48b07eef3abe3f8ca7e5a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189858"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900546"
 ---
 # <a name="how-to-implement-an-interface-class-designer"></a>Nasıl Yapılır: Arabirimi Uygulama (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,13 +34,13 @@ Sınıf Tasarımcısı'nda, sınıf diyagramı üzerinde arabirim yöntemleri i�
   
 ### <a name="to-implement-an-interface-by-drawing-an-inheritance-line"></a>Devralım çizgisi çizerek bir arabirim uygulamak için  
   
-1.  Sınıf diyagramında, arabirimi ve arabirimini uygulayan sınıf görüntüler.  
+1. Sınıf diyagramında, arabirimi ve arabirimini uygulayan sınıf görüntüler.  
   
-2.  Devralım çizgisi, sınıf ve arabirim çizin.  
+2. Devralım çizgisi, sınıf ve arabirim çizin.  
   
-     Lolipop sınıfa iliştirilen görünür ve devralma ilişkisi arabirim adını içeren bir etiket tanımlar. Visual Studio tüm arabirim üyeleri için saplamalar oluşturur.  
+    Lolipop sınıfa iliştirilen görünür ve devralma ilişkisi arabirim adını içeren bir etiket tanımlar. Visual Studio tüm arabirim üyeleri için saplamalar oluşturur.  
   
- Daha fazla bilgi için [nasıl yapılır: devralma arasında türleri oluşturmak (Sınıf Tasarımcısı)](../ide/how-to-create-inheritance-between-types-class-designer.md).  
+   Daha fazla bilgi için [nasıl yapılır: devralma arasında türleri oluşturmak (Sınıf Tasarımcısı)](../ide/how-to-create-inheritance-between-types-class-designer.md).  
   
 ### <a name="to-implement-an-interface-from-the-class-view-window"></a>Sınıf Görünümü penceresinden bir arabirim uygulamak için  
   

@@ -22,21 +22,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2bbb0aad4db91119c3754a27cc5410769b494e65
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c2710fae53cd860b6d67cc9f9d8c7ce61afa2b03
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676881"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929861"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Office uygulaması ve proje türüne göre kullanılabilen özellikler
   Visual Studio Proje şablonları, farklı iş senaryoları aşağıdaki türleri dahil olmak üzere Microsoft Office uygulamaları için destek birçok tür içerir:  
   
--   Belge düzeyinde özelleştirmeler.  
+- Belge düzeyinde özelleştirmeler.  
   
--   VSTO eklentileri.  
+- VSTO eklentileri.  
   
- Tüm uygulamalar, her proje türü kullanabilirsiniz. Örneğin, yalnızca Microsoft Office Word ve Microsoft Office Excel için belge düzeyi projelere kullanılabilir. Benzer şekilde, bazı özellikler yalnızca belirli türlerdeki proje ya da uygulama için kullanılabilir. Örneğin, Eylemler bölmesinde yalnızca belge düzeyinde projelerinde kullanılabilir ve Şerit uzantıları yalnızca bazı uygulamalar için kullanılabilir. Farklı proje türleri hakkında daha fazla bilgi için bkz. [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
+  Tüm uygulamalar, her proje türü kullanabilirsiniz. Örneğin, yalnızca Microsoft Office Word ve Microsoft Office Excel için belge düzeyi projelere kullanılabilir. Benzer şekilde, bazı özellikler yalnızca belirli türlerdeki proje ya da uygulama için kullanılabilir. Örneğin, Eylemler bölmesinde yalnızca belge düzeyinde projelerinde kullanılabilir ve Şerit uzantıları yalnızca bazı uygulamalar için kullanılabilir. Farklı proje türleri hakkında daha fazla bilgi için bkz. [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 > [!NOTE]  
 >  Office proje şablonları yalnızca bazı sürümlerinde kullanılabilir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Daha fazla bilgi için [Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/configuring-a-computer-to-develop-office-solutions.md).  

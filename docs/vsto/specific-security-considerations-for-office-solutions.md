@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7c3bf48cf5f8acd24661adf2d9ae36324fadfd72
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: dcb2e0a3c381b1dd07c7724c3a64c53307856014
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676911"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951398"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Office çözümleriyle ilgili belirli güvenlik konuları
   Microsoft Office ve Microsoft .NET Framework tarafından sağlanan güvenlik özelliklerine Office çözümünüzü olası güvenlik tehditlerine karşı korunmasına yardımcı olabilir. Bu konu, bu tehditleri bazıları açıklanmıştır ve bunlara karşı koruma sağlamak için öneriler sağlar. Ayrıca, Microsoft Office güvenlik ayarları Office çözümlerini nasıl etkilediği hakkında bilgi içerir.  
@@ -55,11 +55,11 @@ ms.locfileid: "35676911"
   
  Nesne modeli koruması, VSTO eklentileri, Outlook Microsoft Exchange Server ile kullanılıp bağlı olarak farklı şekillerde etkileyebilir:  
   
--   Outlook ile Exchange kullanılmıyorsa yönetici etkinleştirebilir veya tüm VSTO eklentileri bilgisayarda için nesne modeli koruması devre dışı bırakın.  
+- Outlook ile Exchange kullanılmıyorsa yönetici etkinleştirebilir veya tüm VSTO eklentileri bilgisayarda için nesne modeli koruması devre dışı bırakın.  
   
--   Outlook ile Exchange kullanılırsa, yönetici etkinleştirebilir veya devre dışı tüm VSTO eklentileri bilgisayarda için nesne modeli koruması veya yönetici belirli VSTO eklentileri nesne modeli koruması karşılaşılmadan çalıştırabilirsiniz belirleyebilirsiniz. Yöneticiler, nesne modelinin belirli alanlar için nesne modeli koruması davranışını değiştirebilirsiniz. Örneğin, Yöneticiler otomatik olarak nesne modeli koruması etkinleştirilmiş olsa dahi VSTO Add-Ins programlı olarak e-posta göndermek izin verebilir.  
+- Outlook ile Exchange kullanılırsa, yönetici etkinleştirebilir veya devre dışı tüm VSTO eklentileri bilgisayarda için nesne modeli koruması veya yönetici belirli VSTO eklentileri nesne modeli koruması karşılaşılmadan çalıştırabilirsiniz belirleyebilirsiniz. Yöneticiler, nesne modelinin belirli alanlar için nesne modeli koruması davranışını değiştirebilirsiniz. Örneğin, Yöneticiler otomatik olarak nesne modeli koruması etkinleştirilmiş olsa dahi VSTO Add-Ins programlı olarak e-posta göndermek izin verebilir.  
   
- Outlook 2007'de başlayarak, nesne modeli koruması davranışını Outlook güvenli kalmasına yardımcı olun sırasında Geliştirici ve kullanıcı deneyimini iyileştirmek üzere değiştirildi. Daha fazla bilgi için [kod Outlook 2007'de güvenlik değişikliklerini](http://go.microsoft.com/fwlink/?LinkId=73429).  
+  Outlook 2007'de başlayarak, nesne modeli koruması davranışını Outlook güvenli kalmasına yardımcı olun sırasında Geliştirici ve kullanıcı deneyimini iyileştirmek üzere değiştirildi. Daha fazla bilgi için [kod Outlook 2007'de güvenlik değişikliklerini](http://go.microsoft.com/fwlink/?LinkId=73429).  
   
 ### <a name="minimize-object-model-guard-warnings"></a>Nesne modeli koruma uyarıları simge durumuna küçült  
  Sınırlı özelliklere ve yöntemlere kullandığınızda güvenlik uyarılarını önlemek için VSTO eklenti Outlook nesnelerden aldığına emin olun `Application` alanını `ThisAddIn` projenizdeki sınıfı. Bu alan hakkında daha fazla bilgi için bkz. [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md).  
@@ -94,15 +94,15 @@ ms.locfileid: "35676911"
   
  Kullanıcı VSTO eklentileri kullanarak yüklenmesini engeller, **Güven Merkezi**, VSTO eklentileri aşağıdaki türde yüklenmez:  
   
--   Yönetilen ve yönetilmeyen COM, VSTO eklentileri.  
+- Yönetilen ve yönetilmeyen COM, VSTO eklentileri.  
   
--   Yönetilen ve yönetilmeyen belgeler.  
+- Yönetilen ve yönetilmeyen belgeler.  
   
--   Yönetilen ve yönetilmeyen Otomasyon VSTO eklentileri.  
+- Yönetilen ve yönetilmeyen Otomasyon VSTO eklentileri.  
   
--   Yönetilen ve yönetilmeyen gerçek zamanlı veri bileşenleri.  
+- Yönetilen ve yönetilmeyen gerçek zamanlı veri bileşenleri.  
   
- Aşağıdaki yordamlar, kullanıcıların nasıl kullanabileceğinizi açıklar **Güven Merkezi** VSTO eklentileri yüklenirken Microsoft gelen kısıtlamak için [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ve Microsoft Office 2010. Bu yordamlar, VSTO eklentileri veya Visual Studio'da Office geliştirme araçlarını kullanarak oluşturulan özelleştirmeleri etkilemez.  
+  Aşağıdaki yordamlar, kullanıcıların nasıl kullanabileceğinizi açıklar **Güven Merkezi** VSTO eklentileri yüklenirken Microsoft gelen kısıtlamak için [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ve Microsoft Office 2010. Bu yordamlar, VSTO eklentileri veya Visual Studio'da Office geliştirme araçlarını kullanarak oluşturulan özelleştirmeleri etkilemez.  
   
 #### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-includeoffice15shortvstoincludesoffice-15-short-mdmd-applications"></a>VSTO eklentilerinde Microsoft Office 2010 ve Microsoft devre dışı bırakmak için [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] uygulamaları  
   

@@ -35,12 +35,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4be0ac6e3e0de77f19f63b41ec53f433478f5063
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8157e10ccc79df3caea8257d46753f2993501e5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198087"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812290"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>CRT Kitaplığını Kullanarak Bellek Sızıntılarını Bulma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,21 +112,21 @@ Object dump complete.
   
  Olup `_CRTDBG_MAP_ALLOC` veya değil, bellek sızıntısı raporu olacak aşağıdaki bilgileri görüntüler:  
   
--   Bellek ayırma numarası `18` Bu örnekte  
+- Bellek ayırma numarası `18` Bu örnekte  
   
--   [Blok türü](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97), olduğu `normal` Bu örnekte.  
+- [Blok türü](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97), olduğu `normal` Bu örnekte.  
   
--   Onaltılık bellek konumu olan `0x00780E80` Bu örnekte.  
+- Onaltılık bellek konumu olan `0x00780E80` Bu örnekte.  
   
--   Blok boyutu `64 bytes` Bu örnekte.  
+- Blok boyutu `64 bytes` Bu örnekte.  
   
--   Veri onaltılık biçiminde bloktaki ilk 16 bayt.  
+- Veri onaltılık biçiminde bloktaki ilk 16 bayt.  
   
- Bellek sızıntısı raporu bir blok bellek normal, istemci ya da CRT olarak tanımlar. A *normal blok* olan programınız tarafından ayrılan sıradan bellektir. A *istemci bloğu* özel bir yıkıcı gerektiren nesneler için MFC programları tarafından kullanılan bellek bloğu türüdür. MFC `new` işleci normal bir blok veya oluşturulan nesne için uygun bir istemci bloğu oluşturur. A *CRT bloğu* kendi kullanımı için CRT kitaplığı tarafından ayrılır. CRT kitaplığı bu bloklar için ayırma kaldırma işler. Bu nedenle, görürsünüz bir şey önemli ölçüde olmadığı sürece bellek sızıntısı raporunda bunları yanlış, örneğin CRT kitaplığının Bozulması düşüktür.  
+  Bellek sızıntısı raporu bir blok bellek normal, istemci ya da CRT olarak tanımlar. A *normal blok* olan programınız tarafından ayrılan sıradan bellektir. A *istemci bloğu* özel bir yıkıcı gerektiren nesneler için MFC programları tarafından kullanılan bellek bloğu türüdür. MFC `new` işleci normal bir blok veya oluşturulan nesne için uygun bir istemci bloğu oluşturur. A *CRT bloğu* kendi kullanımı için CRT kitaplığı tarafından ayrılır. CRT kitaplığı bu bloklar için ayırma kaldırma işler. Bu nedenle, görürsünüz bir şey önemli ölçüde olmadığı sürece bellek sızıntısı raporunda bunları yanlış, örneğin CRT kitaplığının Bozulması düşüktür.  
   
- Hiçbir zaman bellek sızıntısı raporlarında görünür bellek bloğu diğer iki türü vardır. A *boş blok* , yayınlanan bellektir. Bu, tanım gereği sızdırmamış anlamına gelir. Bir *yoksayma bloğu* , bellek sızıntısı raporundan dışlamak için açıkça işaretlediğiniz bellektir.  
+  Hiçbir zaman bellek sızıntısı raporlarında görünür bellek bloğu diğer iki türü vardır. A *boş blok* , yayınlanan bellektir. Bu, tanım gereği sızdırmamış anlamına gelir. Bir *yoksayma bloğu* , bellek sızıntısı raporundan dışlamak için açıkça işaretlediğiniz bellektir.  
   
- Bu teknikler standart CRT kullanılarak ayrılmış bellek için iş `malloc` işlevi. Programınız, C++ kullanarak bellek ayırırsa `new` işleci, ancak yalnızca karşılaşabilirsiniz dosya ve satır numarası nerede genel uygulama `operator new` çağrıları `_malloc_dbg` bellek sızıntısı raporunda. Bu davranışı çok kullanışlı olmadığı için ayırma şuna benzer bir makro kullanarak yapılan satırı bildirmek için değiştirebilirsiniz: 
+  Bu teknikler standart CRT kullanılarak ayrılmış bellek için iş `malloc` işlevi. Programınız, C++ kullanarak bellek ayırırsa `new` işleci, ancak yalnızca karşılaşabilirsiniz dosya ve satır numarası nerede genel uygulama `operator new` çağrıları `_malloc_dbg` bellek sızıntısı raporunda. Bu davranışı çok kullanışlı olmadığı için ayırma şuna benzer bir makro kullanarak yapılan satırı bildirmek için değiştirebilirsiniz: 
  
 ```cpp  
 #ifdef _DEBUG
@@ -188,25 +188,25 @@ Bu durum size sızdırılan ayırma debug_new.cpp satır 20 olduğunu gösterir.
   
 #### <a name="to-set-a-memory-allocation-breakpoint-using-the-watch-window"></a>İzleme penceresini kullanarak bir bellek ayırma kesme noktası ayarlamak için  
   
-1.  Uygulamanızın başlangıç bir kesme noktası ayarlayın ve ardından uygulamanızı başlatın.  
+1. Uygulamanızın başlangıç bir kesme noktası ayarlayın ve ardından uygulamanızı başlatın.  
   
-2.  Uygulama kesme noktasında kesildiğinde **Watch** penceresi.  
+2. Uygulama kesme noktasında kesildiğinde **Watch** penceresi.  
   
-3.  İçinde **Watch** penceresinde, tür `_crtBreakAlloc` içinde **adı** sütun.  
+3. İçinde **Watch** penceresinde, tür `_crtBreakAlloc` içinde **adı** sütun.  
   
-     (/MD seçeneği) CRT kitaplığının çok iş parçacıklı DLL sürümünü kullanıyorsanız, içerik işlecini dahil edin: `{,,ucrtbased.dll}_crtBreakAlloc`  
+    (/MD seçeneği) CRT kitaplığının çok iş parçacıklı DLL sürümünü kullanıyorsanız, içerik işlecini dahil edin: `{,,ucrtbased.dll}_crtBreakAlloc`  
   
-4.  Tuşuna **dönüş**.  
+4. Tuşuna **dönüş**.  
   
-     Hata ayıklayıcı çağrıyı değerlendirir ve sonucu yerleştirir **değer** sütun. Bellek ayırmalarında herhangi bir kesme noktası ayarlamadıysanız, bu değer – 1 olur.  
+    Hata ayıklayıcı çağrıyı değerlendirir ve sonucu yerleştirir **değer** sütun. Bellek ayırmalarında herhangi bir kesme noktası ayarlamadıysanız, bu değer – 1 olur.  
   
-5.  İçinde **değer** sütun, kesmek istediğiniz bellek ayırma ayırma sayısı ile gösterilen değerini değiştirin.  
+5. İçinde **değer** sütun, kesmek istediğiniz bellek ayırma ayırma sayısı ile gösterilen değerini değiştirin.  
   
- Bir bellek ayırma numarasında bir kesme noktası ayarladıktan sonra hata ayıklamaya devam. Böylece bellek ayırma sırasının önceki çalıştırmayla aynı koşullar altında programı çalıştırmayı dikkatli olun. Programınız belirtilen bellek ayırmada bölündüğünde, kullanabileceğiniz **çağrı yığını** penceresi ve diğer hata ayıklayıcı pencereleri altında bellek tahsis koşullarını belirlemek için. Ardından nesneye neler gözlemlemek için yürütmeye devam ve neden ayırmasının doğru şekilde belirleyin.  
+   Bir bellek ayırma numarasında bir kesme noktası ayarladıktan sonra hata ayıklamaya devam. Böylece bellek ayırma sırasının önceki çalıştırmayla aynı koşullar altında programı çalıştırmayı dikkatli olun. Programınız belirtilen bellek ayırmada bölündüğünde, kullanabileceğiniz **çağrı yığını** penceresi ve diğer hata ayıklayıcı pencereleri altında bellek tahsis koşullarını belirlemek için. Ardından nesneye neler gözlemlemek için yürütmeye devam ve neden ayırmasının doğru şekilde belirleyin.  
   
- Nesnede veri kesme noktası ayarlamak da bu kadar yardımcı olabilir. Daha fazla bilgi için [kullanılarak kesme noktaları](../debugger/using-breakpoints.md).  
+   Nesnede veri kesme noktası ayarlamak da bu kadar yardımcı olabilir. Daha fazla bilgi için [kullanılarak kesme noktaları](../debugger/using-breakpoints.md).  
   
- Kodda bellek ayırma kesme noktaları da ayarlayabilirsiniz. Bunu yapmak için iki yol vardır:  
+   Kodda bellek ayırma kesme noktaları da ayarlayabilirsiniz. Bunu yapmak için iki yol vardır:  
   
 ```  
 _crtBreakAlloc = 18;  

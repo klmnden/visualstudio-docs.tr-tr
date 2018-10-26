@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 213824ff9be80a151d20b4906839969dce3be7d1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 01ae9f07d5ec1c0eb2cddda6c24831f213f4bf86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175543"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826979"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Yük testleri için özel kod ve eklentiler oluşturma
 
@@ -27,7 +27,7 @@ ms.locfileid: "39175543"
 ## <a name="tasks"></a>Görevler
 
 |Görevler|İlişkili konular|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Özel bir yük testi eklentisi oluşturma**: yük testi API, özel bir Yük testiniz için daha fazla işlevsellik eklemek için eklenti oluşturmak için kullanabilirsiniz.|-   [Nasıl yapılır: yük testi API'si kullanma](../test/how-to-use-the-load-test-api.md)<br />-   [Nasıl yapılır: bir yük testi eklentisi oluşturma](../test/how-to-create-a-load-test-plug-in.md)|
 |**Özel bir Web başarım testi eklentisi oluşturma:** özel bir web performans testi isteği düzeyinde de dahil olmak üzere, daha fazla test işlevselliği eklemek için eklenti oluşturmak için web performans testi API'ı kullanabilirsiniz. Ayrıca, bir web hizmetini test oluşturabilirsiniz.<br /><br /> Ayrıca, bir web performans testi kaydedildikten sonra ancak Web Performans Testi Sonuç Görüntüleyicisi'nde göründüğü önce değiştirebileceğiniz bir web kaydedici eklentisi oluşturabilirsiniz.|-   [Nasıl yapılır: web başarım testi API'si kullanma](../test/how-to-use-the-web-performance-test-api.md)<br />-   [Nasıl yapılır: web performans testi eklentisi oluşturma](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [Nasıl yapılır: istek düzeyi eklentisi oluşturma](../test/how-to-create-a-request-level-plug-in.md)<br />-   [Nasıl yapılır: web hizmeti testi oluşturma](../test/how-to-create-a-web-service-test.md)<br />-   [Nasıl yapılır: kaydedici eklentisi oluşturma](../test/how-to-create-a-recorder-plug-in.md)|
 |**Web Performans Test Sonuçları Görüntüleyicisi için kullanıcı Arabirimi özellikleri ekleyin:** Visual Studio eklentisini kullanarak Web Performans Test Sonuçları Görüntüleyicisi için daha fazla kullanıcı Arabirimi özelliklerini ekleyebilirsiniz.|-   [Nasıl yapılır: Visual Studio eklentisi Web performans test sonuçları oluşturma Görüntüleyicisi](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|

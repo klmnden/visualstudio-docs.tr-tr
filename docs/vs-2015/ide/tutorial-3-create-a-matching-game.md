@@ -14,34 +14,34 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8742924e1693a79268d6a35bc266caf5c5f32ec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5bd7243e49c447dc8c362b0c98bf2cc7d77d76d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259106"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939507"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Öğretici 3: eşleme oyunu oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu öğreticide, oyuncunun gizli simge çiftlerini eşleştirmesi gereken bir eşleştirme oyunu oluşturuyorsunuz. Aşağıdakilerin nasıl yapıldığını öğreneceksiniz:  
   
--   Store simgeler gibi nesneleri bir `List` nesne.  
+- Store simgeler gibi nesneleri bir `List` nesne.  
   
--   Kullanım bir `foreach` döngü Visual C# veya `For Each` bir listedeki öğeler arasında yineleme yapmak için Visual Basic'te döngü.  
+- Kullanım bir `foreach` döngü Visual C# veya `For Each` bir listedeki öğeler arasında yineleme yapmak için Visual Basic'te döngü.  
   
--   Başvuru değişkenlerini kullanarak bir formun durumunu takip edin.  
+- Başvuru değişkenlerini kullanarak bir formun durumunu takip edin.  
   
--   Birden fazla nesneyle kullanabileceğiniz olaylara yanıt vermek için bir olay işleyicisi oluşturun.  
+- Birden fazla nesneyle kullanabileceğiniz olaylara yanıt vermek için bir olay işleyicisi oluşturun.  
   
--   Geriye doğru sayan ve başlatılmasının ardından bir olayı kesin olarak tetikleyen bir zamanlayıcı hazırlayın.  
+- Geriye doğru sayan ve başlatılmasının ardından bir olayı kesin olarak tetikleyen bir zamanlayıcı hazırlayın.  
   
- Bu öğreticiyi bitirdiğinizde, programınız aşağıdaki resim gibi görünecektir.  
+  Bu öğreticiyi bitirdiğinizde, programınız aşağıdaki resim gibi görünecektir.  
   
- ![Bu öğreticide oluşturduğunuz oyun](../ide/media/express-finishedgame.png "Express_FinishedGame")  
-Bu öğreticide oluşturduğunuz oyun  
+  ![Bu öğreticide oluşturduğunuz oyun](../ide/media/express-finishedgame.png "Express_FinishedGame")  
+  Bu öğreticide oluşturduğunuz oyun  
   
- Örnek tamamlanmış bir sürümünü indirmek için bkz [eksiksiz eşleştirme oyunu Öğreticisi örneği](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).  
+  Örnek tamamlanmış bir sürümünü indirmek için bkz [eksiksiz eşleştirme oyunu Öğreticisi örneği](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).  
   
 > [!NOTE]
 >  Bu öğreticide, hem Visual C# hem de Visual Basic ele alınmaktadır; bu nedenle kullandığınız programlama diline özgü bilgilere odaklanın.  

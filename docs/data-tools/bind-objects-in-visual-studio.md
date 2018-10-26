@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6d69167189c24d2a78a5ba02a34f6d95268d72e5
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b7790f5205aa24a68505a1b34e97283aff05e13c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510981"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950150"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Visual Studio'da veri kaynağı olarak nesneleri bağlama
 
@@ -137,7 +137,7 @@ Verileri, TableAdapter bağdaştırıcısının DBDirect yöntemleri için bir n
 Visual Studio doğrudan veritabanında yürütülebilecek DBDirect yöntemleri oluşturur. Bu yöntemler, veri kümesi ya da DataTable nesneleri gerektirmez.
 
 |TableAdapter DBDirect yöntemi|Açıklama|
-|----------------------------------|-----------------|
+| - |-----------------|
 |`TableAdapter.Insert`|Yöntem parametreleri olarak ayrı ayrı sütun değerlerine geçirin olanak tanıyan bir veritabanına yeni kayıtlar ekler.|
 |`TableAdapter.Update`|Mevcut veritabanındaki kayıtları güncelleştirir. Güncelleştirme yöntemi, yöntem parametreleri olarak özgün ve yeni sütun değerlerini alır. Orijinal değerleri özgün kaydı bulmak için kullanılır ve bu kaydı güncelleştirmek için yeni değerler kullanılır.<br /><br /> `TableAdapter.Update` Yöntemi dataset içindeki değişiklikleri veritabanına geri alarak karşılaştırmak için kullanılan ayrıca bir <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, veya dizi <xref:System.Data.DataRow>yöntem parametreleri olarak s.|
 |`TableAdapter.Delete`|Yöntem parametreleri olarak geçirilen var olan kayıtların özgün sütun değerlerine göre veritabanından siler.|

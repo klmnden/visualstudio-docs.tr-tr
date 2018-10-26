@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0702d1f47b8924e97cd3a6df1bba2af2503d5b29
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: b7e3da13240eb172e29676b990d1c23be71e4542
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029140"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855540"
 ---
 # <a name="model-editor"></a>Model düzenleyicisi
 
@@ -31,7 +31,7 @@ Kullanabileceğiniz **Model Düzenleyicisi** sıfırdan temel 3B model oluşturm
 **Model Düzenleyicisi** DirectX uygulaması geliştirmede kullanılan çeşitli 3B model biçimlerini destekler:
 
 |Biçim Adı|Dosya Uzantısı|Desteklenen İşlemler (Görüntüleme, Düzenleme, Oluşturma)|
-|-----------------|--------------------|-------------------------------------------------|
+|-----------------| - | - |
 |AutoDesk FBX Değişim Dosyası|*.fbx*|Görüntüleme, Düzenleme, Oluşturma|
 |Collada DAE Dosyası|*.DAE*|Görüntüleme, Düzenleme (Collada DAE dosyalarında yapılan değişiklikler FBX biçimi kullanılarak kaydedilir.)|
 |OBJ|*.obj*|Görüntüleme, Düzenleme (OBJ dosyalarında yapılan değişiklikler FBX biçimi kullanılarak kaydedilir.)|
@@ -254,7 +254,7 @@ Bu malzemelerin her biri nesnenin yüzeyine tek bir doku uygular. Malzemeyi kull
 Belirli bir nesnenin sahnedeki farklı ışık kaynaklarına verdiği tepkiyi değiştirmek için, malzemeyi kullanan diğer nesnelerden bağımsız olarak malzemenin aydınlatma özelliklerini değiştirebilirsiniz. Bu tabloda genel aydınlatma özellikleri açıklanmaktadır:
 
 |Aydınlatma Özelliği|Açıklama|
-|-----------------------|-----------------|
+| - |-----------------|
 |**Ortam**|Yüzeyin ortam aydınlatmasından nasıl etkilendiğini açıklar.|
 |**Yayınık**|Yüzeyin yönlü ve nokta ışıklardan nasıl etkilendiğini açıklar.|
 |**Yayımlatıcı**|Yüzeyin, diğer aydınlatmalardan bağımsız olarak ışığı nasıl yaydığını açıklar.|
@@ -294,7 +294,7 @@ Model Düzenleyicisi, ilk seçilen nesneyi (üst öğe haline gelen) tanımlamak
 ## <a name="keyboard-shortcuts"></a>Klavye kısayolları
 
 |Komut|Klavye kısayolları|
-|-------------|------------------------|
+|-------------| - |
 |Geçiş **seçin** modu|**CTRL**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
 |Geçiş **yakınlaştırma** modu|**CTRL**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
 |Geçiş **Pan** modu|**CTRL**+**G**, **Ctrl**+**P**<br /><br /> **K**|

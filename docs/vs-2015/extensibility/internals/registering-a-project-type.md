@@ -17,12 +17,12 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30956d812aa2ece166231d6ae7580b226025e308
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 103792f4751d290d9d782fa4e71309ebcf3914da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271784"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911342"
 ---
 # <a name="registering-a-project-type"></a>Proje Türü Kaydetme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -215,17 +215,17 @@ Yeni bir proje türü oluşturduğunuzda, sağlayan kayıt defteri girdileri olu
   
  IDE menüsü girişi menü bilgilerini almak için kullanılan kaynağına işaret eder. Bu veriler menü veritabanına birleştirilmiştir, aynı anahtarı kayıt defteri MenusMerged bölümünde eklenir. VSPackage'ı MenusMerged bölümünde herhangi bir şey doğrudan değiştirmeniz gerekir. Aşağıdaki tabloda veri alanında üç virgülle ayrılmış-alanları vardır. İlk alanı menüsü kaynak dosyasının tam yol tanımlar:  
   
--   İlk alan atlanırsa, menü kaynağı uydu DLL VSPackage GUID ile tanımlanan'ndan yüklenir.  
+- İlk alan atlanırsa, menü kaynağı uydu DLL VSPackage GUID ile tanımlanan'ndan yüklenir.  
   
- İkinci alan CTMENU türünde bir menü kaynak kimliği tanımlar:  
+  İkinci alan CTMENU türünde bir menü kaynak kimliği tanımlar:  
   
--   Kaynak Kimliği belirtilmiş ve dosya yolu ilk parametre tarafından sağlanan, menü kaynağı tam dosya yolundan yüklenir.  
+- Kaynak Kimliği belirtilmiş ve dosya yolu ilk parametre tarafından sağlanan, menü kaynağı tam dosya yolundan yüklenir.  
   
--   Kaynak Kimliği sağlanırsa ancak dosya yolu değil, menü kaynağı uydu DLL yüklenir.  
+- Kaynak Kimliği sağlanırsa ancak dosya yolu değil, menü kaynağı uydu DLL yüklenir.  
   
--   Tam dosya yolunu sağlanır ve kaynak kimliği atlanırsa, yüklenecek dosyanın CTO dosyası olması beklenir.  
+- Tam dosya yolunu sağlanır ve kaynak kimliği atlanırsa, yüklenecek dosyanın CTO dosyası olması beklenir.  
   
- Son alan CTMENU kaynak için sürüm numarasını belirtir. Sürüm numarası değiştirerek menüsünün yeniden birleştirebilirsiniz.  
+  Son alan CTMENU kaynak için sürüm numarasını belirtir. Sürüm numarası değiştirerek menüsünün yeniden birleştirebilirsiniz.  
   
 |Ad|Tür|Veri|Açıklama|  
 |----------|----------|----------|-----------------|  

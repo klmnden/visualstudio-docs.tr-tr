@@ -17,12 +17,12 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f7158dcbd55229998e49e2d2891ae46d88c7fbc9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0a23acf29b0ffc3a763b34ca12e08abd5a81b5d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199543"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942577"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>İzlenecek yol: temel yalıtılmış Kabuk uygulaması oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,13 +75,13 @@ Bu izlenecek yol, yalıtılmış Kabuk çözümünü oluşturun, Yardım konusu 
   
 #### <a name="to-customize-the-default-web-browser-home-page"></a>Varsayılan Web tarayıcısı giriş sayfasını özelleştirme  
   
-1.  MyVSShellStub.Application.pkgdef dosyasında değiştirmek `DefaultHomePage` öğesi değeri "http://www.microsoft.com".  
+1. MyVSShellStub.Application.pkgdef dosyasında değiştirmek `DefaultHomePage` öğesi değeri "<http://www.microsoft.com>".  
   
-2.  MyVSShellStub projeyi yeniden derleyin.  
+2. MyVSShellStub projeyi yeniden derleyin.  
   
-3.  Çözümü derleyin ve hata ayıklamaya başlayın.  
+3. Çözümü derleyin ve hata ayıklamaya başlayın.  
   
-4.  İçinde **görünüm / diğer Windows**, tıklayın **Web tarayıcısı**. **Web tarayıcısı** penceresi Microsoft Corporation'ın ana sayfası görüntüler.  
+4. İçinde **görünüm / diğer Windows**, tıklayın **Web tarayıcısı**. **Web tarayıcısı** penceresi Microsoft Corporation'ın ana sayfası görüntüler.  
   
 ## <a name="removing-the-print-command"></a>Yazdır komutu kaldırılıyor  
  Yalıtılmış Kabuk UI projesinde .vsct dosyası biçiminde bildirimlerinin kümesinden oluşur `<Define name=No_` *öğesi*`>`burada *öğesi* standart Visual Studio menülerinin biridir ve komutları.  
@@ -173,26 +173,26 @@ Bu izlenecek yol, yalıtılmış Kabuk çözümünü oluşturun, Yardım konusu 
 ## <a name="deploying-the-isolated-shell-application"></a>Yalıtılmış Kabuk uygulaması dağıtma  
  Bir hedef bilgisayara, yalıtılmış Kabuk uygulaması, bir kurulum projesi oluşturarak dağıtın. Bunları belirtmeniz gerekir:  
   
--   Hedef bilgisayarda dosya ve klasörleri düzeni.  
+- Hedef bilgisayarda dosya ve klasörleri düzeni.  
   
--   Hedef bilgisayarda yüklü çalışma zamanı .NET Framework ve Visual Studio Kabuğu garanti başlatma koşulları.  
+- Hedef bilgisayarda yüklü çalışma zamanı .NET Framework ve Visual Studio Kabuğu garanti başlatma koşulları.  
   
- Aşağıdaki yordamda InstallShield Limited Edition'ı bilgisayarınıza yüklemeniz gerekir.  
+  Aşağıdaki yordamda InstallShield Limited Edition'ı bilgisayarınıza yüklemeniz gerekir.  
   
 #### <a name="to-create-the-setup-project"></a>Kurulum projesi oluşturmak için  
   
-1.  İçinde **Çözüm Gezgini**, çözüm düğümüne sağ tıklayın ve ardından **Yeni Proje Ekle**.  
+1. İçinde **Çözüm Gezgini**, çözüm düğümüne sağ tıklayın ve ardından **Yeni Proje Ekle**.  
   
-2.  İçinde **yeni proje** iletişim kutusunda **diğer proje türleri** seçip **Kurulum ve dağıtım**. InstallShield şablonu seçin. Yeni proje adını `MySetup` ve ardından **Tamam**.  
+2. İçinde **yeni proje** iletişim kutusunda **diğer proje türleri** seçip **Kurulum ve dağıtım**. InstallShield şablonu seçin. Yeni proje adını `MySetup` ve ardından **Tamam**.  
   
-3.  InstallShield Limited Edition'ı zaten yüklediyseniz, sonraki adıma devam edin.  
+3. InstallShield Limited Edition'ı zaten yüklediyseniz, sonraki adıma devam edin.  
   
-     InstallShield Limited Edition zaten yüklü değilse InstallShield karşıdan yükleme sayfası görüntülenir. İndirip Visual Studio sürümünüzle uyumlu InstallShield sürümünü seçerek bu ürünü yüklemek için yönergeleri izleyin. InstallShield yüklemenizin kaydetmek veya değerlendirme sürümü kullanmak karar vermeniz gerekir. Yüklemeyi tamamladıktan sonra Visual Studio'yu yeniden başlatmanız gerekir.  
+    InstallShield Limited Edition zaten yüklü değilse InstallShield karşıdan yükleme sayfası görüntülenir. İndirip Visual Studio sürümünüzle uyumlu InstallShield sürümünü seçerek bu ürünü yüklemek için yönergeleri izleyin. InstallShield yüklemenizin kaydetmek veya değerlendirme sürümü kullanmak karar vermeniz gerekir. Yüklemeyi tamamladıktan sonra Visual Studio'yu yeniden başlatmanız gerekir.  
   
-    > [!IMPORTANT]
-    >  InstallShield projesi oluşturmadan önce Visual Studio'yu yönetici olarak başlatmanız gerekir. Bunu yaparsanız projeyi oluşturduğunuzda bir hata alırsınız.  
+   > [!IMPORTANT]
+   >  InstallShield projesi oluşturmadan önce Visual Studio'yu yönetici olarak başlatmanız gerekir. Bunu yaparsanız projeyi oluşturduğunuzda bir hata alırsınız.  
   
- Sonraki adımlar, Kurulum projesini yapılandırma gösterilmektedir.  
+   Sonraki adımlar, Kurulum projesini yapılandırma gösterilmektedir.  
   
 > [!IMPORTANT]
 >  Kurulum projesi yapılandırmadan önce en az bir kez sürüm yapılandırmasını yalıtılmış Kabuk projenizin oluşturduğunuzdan emin olun.  

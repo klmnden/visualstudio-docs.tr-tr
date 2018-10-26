@@ -22,25 +22,25 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e28ee8c4fa17eca8f2b5419b1d9aefb229fd020
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5e5d49b70cc594a05bae8056fe8139e405e15cba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219160"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888108"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCE Hata Ayıklamasında Sınırlamalar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir WCF Hizmeti hatasını ayıklamaya başlayabilmeniz için üç yol vardır:  
   
--   Bir hizmeti çağıran bir istemci işlemi hata ayıklama. Hata ayıklama adımlarında hizmete. Hizmet istemci uygulamanızı aynı çözümde olması gerekmez.  
+- Bir hizmeti çağıran bir istemci işlemi hata ayıklama. Hata ayıklama adımlarında hizmete. Hizmet istemci uygulamanızı aynı çözümde olması gerekmez.  
   
--   Bir hizmete bir istekte bir istemci işlemi hata ayıklama. Hizmet, çözümünüzün bir parçası olmalıdır.  
+- Bir hizmete bir istekte bir istemci işlemi hata ayıklama. Hizmet, çözümünüzün bir parçası olmalıdır.  
   
--   Kullandığınız **iliştirme** çalışmakta olan bir servise bağlamak için. Hata ayıklama, hizmet içinde başlar.  
+- Kullandığınız **iliştirme** çalışmakta olan bir servise bağlamak için. Hata ayıklama, hizmet içinde başlar.  
   
- Bu konuda, bu senaryolara sınırlamaları açıklanmaktadır.  
+  Bu konuda, bu senaryolara sınırlamaları açıklanmaktadır.  
   
 ## <a name="limitations-on-stepping-into-a-service"></a>Bir hizmette Adımlama sınırlamaları  
  Bir istemci uygulamalarında hata ayıklaması yaptığınız bir hizmette adımlamak için aşağıdaki koşullar karşılanmalıdır:  

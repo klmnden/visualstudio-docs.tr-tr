@@ -18,12 +18,12 @@ caps.latest.revision: 34
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3d6ab30934750f2c825029c1433ea7ca68447dcd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 551f2762886a9c6b8e7395d536538ac47752d3ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204288"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878160"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Visual Studio tasarımındaki yenilikler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,35 +39,35 @@ Visual Studio'nun bu sürümü daha iyi anlamanıza ve kod tasarlamanıza yardı
 
  Diğer iyileştirmeler şunlardır:
 
--   **Gelişmiş yukarıdan aşağıya diyagramlar**. Orta ve büyük ölçekli Visual Studio çözümleri, daha kullanışlı bir kod eşlemeleri, çözümünüz için almak için artık basitleştirilmiş bir mimari menüsü kullanabilirsiniz. Böylece bunları bağlam içinde görebilir ve, çözümü yapılandırırken yaptığınız çalışmadan yararlanarak çözümünüzün derlemeleri çözüm klasörleri tarafından gruplanır. Proje ve bütünleştirilmiş kod başvuruları ve bağlantı türleri görüntülenir hemen görürsünüz. Ayrıca, çözümünüze dışında bulunan derlemeler daha kompakt şekilde gruplanır.
+- **Gelişmiş yukarıdan aşağıya diyagramlar**. Orta ve büyük ölçekli Visual Studio çözümleri, daha kullanışlı bir kod eşlemeleri, çözümünüz için almak için artık basitleştirilmiş bir mimari menüsü kullanabilirsiniz. Böylece bunları bağlam içinde görebilir ve, çözümü yapılandırırken yaptığınız çalışmadan yararlanarak çözümünüzün derlemeleri çözüm klasörleri tarafından gruplanır. Proje ve bütünleştirilmiş kod başvuruları ve bağlantı türleri görüntülenir hemen görürsünüz. Ayrıca, çözümünüze dışında bulunan derlemeler daha kompakt şekilde gruplanır.
 
--   **Test projeleri farklı stillere sahip olabilir ve filtrelenebilir**. Farklı stillere çünkü haritasında test projelerini daha kolay ve hızlı bir şekilde artık tanımlayabilirsiniz. Uygulamanın çalışma koduna odaklanabilmeniz için bunlar da filtrelenebilen.
+- **Test projeleri farklı stillere sahip olabilir ve filtrelenebilir**. Farklı stillere çünkü haritasında test projelerini daha kolay ve hızlı bir şekilde artık tanımlayabilirsiniz. Uygulamanın çalışma koduna odaklanabilmeniz için bunlar da filtrelenebilen.
 
--   **Basitleştirilmiş dış bağımlılık bağlantıları**. Bağımlılık bağlantıları artık System.Object, System.ValueType, System.Enum ve kod haritanızda dış bağımlılıkların görmeyi kolaylaştırır ve System.Delegate öğesinden devralmayı temsil eder.
+- **Basitleştirilmiş dış bağımlılık bağlantıları**. Bağımlılık bağlantıları artık System.Object, System.ValueType, System.Enum ve kod haritanızda dış bağımlılıkların görmeyi kolaylaştırır ve System.Delegate öğesinden devralmayı temsil eder.
 
--   **' Ayrıntıya-bağımlılık bağlantılarının ' işleminde filtreler dikkate**. Bağımlılık bağlantısına yapılan katkıları anlamak için genişletirken, kullanışlı bir NET diyagram alırsınız. Diyagram daha az dağınıktır ve bağlantı filtreleme seçeneklerini seçmiş olduğunuz hesaba katar ' dir.
+- **' Ayrıntıya-bağımlılık bağlantılarının ' işleminde filtreler dikkate**. Bağımlılık bağlantısına yapılan katkıları anlamak için genişletirken, kullanışlı bir NET diyagram alırsınız. Diyagram daha az dağınıktır ve bağlantı filtreleme seçeneklerini seçmiş olduğunuz hesaba katar ' dir.
 
--   **Kod öğeleri, bağlamları ile birlikte bir kod haritasına eklenir**. Diyagramları artık bağlamları (gerektiğinde filtreleyebileceğiniz, derleme ve çözüm klasörüne kadar) ile birlikte sürükleyip kod öğelerini Çözüm Gezgini, sınıf görünümü, Nesne Tarayıcısı daha kullanışlı diyagramlar elde filtreleyebileceğiniz; veya, Çözüm Gezgini'nde öğeleri ve seçerek kod haritasında göster.
+- **Kod öğeleri, bağlamları ile birlikte bir kod haritasına eklenir**. Diyagramları artık bağlamları (gerektiğinde filtreleyebileceğiniz, derleme ve çözüm klasörüne kadar) ile birlikte sürükleyip kod öğelerini Çözüm Gezgini, sınıf görünümü, Nesne Tarayıcısı daha kullanışlı diyagramlar elde filtreleyebileceğiniz; veya, Çözüm Gezgini'nde öğeleri ve seçerek kod haritasında göster.
 
--   **Reaktif kod haritalarını daha hızlı alma**. Sürükleyip bırakma işlemleri anında sonuç verir ve düğümler arasındaki bağlantılar, düğümü genişletme veya daha fazla düğüm isteme gibi sonraki kullanıcı tarafından başlatılan işlemleri etkilemeden çok daha hızlı bir şekilde oluşturulur. Tüm olağandışı durumlar çözümü oluşturmadan kod haritaları oluşturduğunuzda — zaman derlemeleri oluşturulmadı gibi — şimdi işlenir.
+- **Reaktif kod haritalarını daha hızlı alma**. Sürükleyip bırakma işlemleri anında sonuç verir ve düğümler arasındaki bağlantılar, düğümü genişletme veya daha fazla düğüm isteme gibi sonraki kullanıcı tarafından başlatılan işlemleri etkilemeden çok daha hızlı bir şekilde oluşturulur. Tüm olağandışı durumlar çözümü oluşturmadan kod haritaları oluşturduğunuzda — zaman derlemeleri oluşturulmadı gibi — şimdi işlenir.
 
--   **Çözümünüzü yeniden oluşturmayı atlama.** Diyagram oluştururken veya düzenlerken daha iyi performans sağlar.
+- **Çözümünüzü yeniden oluşturmayı atlama.** Diyagram oluştururken veya düzenlerken daha iyi performans sağlar.
 
--   **Kod öğesi düğümlerini ve gruplarını filtreleme**. Hızlı bir şekilde, gösterme veya gizleme kod öğelerini kategorilerine veya kod öğelerini çözüm klasörleri, derlemeler, ad alanları, proje klasörleri ve türleri tarafından gruplandırma etsek düzelten.
+- **Kod öğesi düğümlerini ve gruplarını filtreleme**. Hızlı bir şekilde, gösterme veya gizleme kod öğelerini kategorilerine veya kod öğelerini çözüm klasörleri, derlemeler, ad alanları, proje klasörleri ve türleri tarafından gruplandırma etsek düzelten.
 
--   **Diyagramların okunmasını kolaylaştırmak için ilişkileri filtreleme**. Bağlantı filtrelemesi artık filtre penceresiyle çalışılmasını daha az sezgisel önceki sürümlere kıyasla getiren, çapraz grup bağlantıları için de geçerlidir.
+- **Diyagramların okunmasını kolaylaştırmak için ilişkileri filtreleme**. Bağlantı filtrelemesi artık filtre penceresiyle çalışılmasını daha az sezgisel önceki sürümlere kıyasla getiren, çapraz grup bağlantıları için de geçerlidir.
 
--   **Sınıf Görünümü ve Nesne Tarayıcısı'ndan diyagramlar oluşturma**. Sürükleyip dosyaları ve yeni veya mevcut bir haritayı derlemeleri sınıf görünümü ve Nesne Tarayıcısı windows.
+- **Sınıf Görünümü ve Nesne Tarayıcısı'ndan diyagramlar oluşturma**. Sürükleyip dosyaları ve yeni veya mevcut bir haritayı derlemeleri sınıf görünümü ve Nesne Tarayıcısı windows.
 
- Bkz: [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md).
+  Bkz: [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md).
 
- **Bu sürümdeki diğer tasarım ve modelleme değişiklikleri:**
+  **Bu sürümdeki diğer tasarım ve modelleme değişiklikleri:**
 
--   **Katman diyagramları**. Sınıf Görünümü ve Nesne Tarayıcısı'nı kullanarak bu diyagramları güncelleştirin. Yazılım tasarımı gerekliliklerini yerine getirmek için yazılımınız için istenen bağımlılıkları açıklamak için katman diyagramları kullanın. Kodun bu tasarım ile tutarlı bu sınırlamaları karşılamayan kodu bularak ve sonraki kodu bu temele göre doğrulayarak tutun.
+- **Katman diyagramları**. Sınıf Görünümü ve Nesne Tarayıcısı'nı kullanarak bu diyagramları güncelleştirin. Yazılım tasarımı gerekliliklerini yerine getirmek için yazılımınız için istenen bağımlılıkları açıklamak için katman diyagramları kullanın. Kodun bu tasarım ile tutarlı bu sınırlamaları karşılamayan kodu bularak ve sonraki kodu bu temele göre doğrulayarak tutun.
 
--   **UML diyagramları**. Artık koddan UML sınıf diyagramları ve sıra diyagramları oluşturamazsınız. Ancak yine de yeni UML öğelerini kullanarak bu diyagramları oluşturur.
+- **UML diyagramları**. Artık koddan UML sınıf diyagramları ve sıra diyagramları oluşturamazsınız. Ancak yine de yeni UML öğelerini kullanarak bu diyagramları oluşturur.
 
--   **Mimari Gezgini**. Mimari Gezgini artık diyagramları oluşturmak için de kullanabilirsiniz. Ancak Çözüm Gezgini'ni kullanmaya devam edebilirsiniz.
+- **Mimari Gezgini**. Mimari Gezgini artık diyagramları oluşturmak için de kullanabilirsiniz. Ancak Çözüm Gezgini'ni kullanmaya devam edebilirsiniz.
 
 ##  <a name="VersionSupport"></a> Mimari ve Modelleme Araçları sürüm desteği
 

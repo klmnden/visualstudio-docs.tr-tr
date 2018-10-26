@@ -21,15 +21,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7d39d324942348050d05dfb5273a9b4075747b1c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c77e448a492a64e3bbdf0f86809cdf82d7fd72fa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206511"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877406"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: SQL sorgularını güvenlik açıkları için gözden geçirin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ReviewSqlQueriesForSecurityVulnerabilities|
@@ -43,25 +44,25 @@ ms.locfileid: "49206511"
 ## <a name="rule-description"></a>Kural Tanımı
  Bu kural, dize değişkeninin kullanıcı girişi içerdiğini varsayar. Kullanıcı girişi ile oluşturulan SQL komut dizesi, SQL enjeksiyon saldırılarına karşı savunmasız durumdadır. SQL ekleme saldırısına kötü niyetli bir kullanıcı sorgu tasarımını zarar verecek ya da temel alınan veritabanına yetkisiz erişim girişimi değiştiren bir giriş sağlar. Tipik teknikleri ekleme tek tırnak işareti veya kesme işareti SQL değişmez dize sınırlayıcısı olan içerir. SQL açıklama gösterir iki kısa çizgi; ve noktalı virgül, yeni bir komut izlediğini belirtir. Kullanıcı girişi sorgu, aşağıdakilerden birini bir parçası olması gerekiyorsa saldırı riskini azaltmak için verimliliği, sırasına göre listelenmiş.
 
--   Bir saklı yordamı kullanın.
+- Bir saklı yordamı kullanın.
 
--   Bir parametreli komut dizesi kullanın.
+- Bir parametreli komut dizesi kullanın.
 
--   Komut dizesi oluşturmadan önce hem tür hem de içerik için kullanıcı girişi doğrulayın.
+- Komut dizesi oluşturmadan önce hem tür hem de içerik için kullanıcı girişi doğrulayın.
 
- Aşağıdaki [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] türleri uygulayan <xref:System.Data.IDbCommand.CommandText%2A> özelliği veya özelliği bir dize bağımsız değişkeni ayarlamak oluşturucular sağlar.
+  Aşağıdaki [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] türleri uygulayan <xref:System.Data.IDbCommand.CommandText%2A> özelliği veya özelliği bir dize bağımsız değişkeni ayarlamak oluşturucular sağlar.
 
--   <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> ve <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
+- <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> ve <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
--   <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> ve <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>
+- <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> ve <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>
 
--   <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> ve <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>
+- <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> ve <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>
 
--   [System.Data.SqlServerCe.SqlCeCommand] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeCommand?qualifyHint=False&amp;autoUpgrade=True>  -->) ve [System.Data.SqlServerCe.SqlCeDataAdapter] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeDataAdapter?qualifyHint=False&amp;autoUpgrade=True>  -->)
+- [System.Data.SqlServerCe.SqlCeCommand] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeCommand?qualifyHint=False&amp;autoUpgrade=True>  -->) ve [System.Data.SqlServerCe.SqlCeDataAdapter] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeDataAdapter?qualifyHint=False&amp;autoUpgrade=True>  -->)
 
--   <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> ve <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
+- <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> ve <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
 
- ToString yöntemini bir türün açıkça veya dolaylı olarak kullanıldığında, bu kuralı ihlal ettiğini fark sorgu dizesi oluşturmak için. Bir örnek verilmiştir.
+  ToString yöntemini bir türün açıkça veya dolaylı olarak kullanıldığında, bu kuralı ihlal ettiğini fark sorgu dizesi oluşturmak için. Bir örnek verilmiştir.
 
 ```
 int x = 10;

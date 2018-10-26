@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 994bb8dfd047320ac0ea4a0d63260f19a2c3d45c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dfdf517dc1871884d4a3893a976cfcd01b3e6333
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252375"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879538"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Özel bir modelleme araç kutusu öğesi tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,25 +66,25 @@ Bir öğe veya sık kullandığınız bir desene göre öğeler grubu oluşturma
 ### <a name="what-the-custom-tool-will-replicate"></a>Özel araç çoğaltma  
  Kaynak diyagram özelliklerinin çoğunu çoğaltma işlemi bir özel aracı:  
   
--   Adları. Araç kutusundan bir öğe oluşturulduğunda, aynı ad alanında aynı ada önlemek gerekirse adının sonuna bir sayı eklenir.  
+- Adları. Araç kutusundan bir öğe oluşturulduğunda, aynı ad alanında aynı ada önlemek gerekirse adının sonuna bir sayı eklenir.  
   
--   Renkler, boyutları ve şekiller  
+- Renkler, boyutları ve şekiller  
   
--   Stereotipler ve paket profilleri  
+- Stereotipler ve paket profilleri  
   
--   Soyut gibi özellik değerleri  
+- Soyut gibi özellik değerleri  
   
--   Bağlantılı iş öğeleri  
+- Bağlantılı iş öğeleri  
   
--   Çeşitlilikler ve ilişkilerinin diğer özellikleri  
+- Çeşitlilikler ve ilişkilerinin diğer özellikleri  
   
--   Şekiller göreli konumlarını.  
+- Şekiller göreli konumlarını.  
   
- Aşağıdaki özellikler, bir özel aracı korunmaz:  
+  Aşağıdaki özellikler, bir özel aracı korunmaz:  
   
--   Basit şekiller. Bazı tür diyagramlar çizebilirsiniz model öğelerine, ilgili olmayan şekiller şunlardır.  
+- Basit şekiller. Bazı tür diyagramlar çizebilirsiniz model öğelerine, ilgili olmayan şekiller şunlardır.  
   
--   Bağlayıcı yönlendirme. Bağlayıcılar el ile yönlendirmek, aracınızın kullanıldığında yönlendirme korunmaz. Bağlantı noktaları gibi bazı iç içe geçmiş şekillere konumlarını sahiplerinin göre korunmaz.  
+- Bağlayıcı yönlendirme. Bağlayıcılar el ile yönlendirmek, aracınızın kullanıldığında yönlendirme korunmaz. Bağlantı noktaları gibi bazı iç içe geçmiş şekillere konumlarını sahiplerinin göre korunmaz.  
   
 ##  <a name="tbxinfo"></a> Özel Araçlar özelliklerini tanımlama  
  Araç kutusu bilgileri (**.tbxinfo**) dosyası bir araç kutusu adı, simge, araç ipucu, sekme belirtin ve Yardım anahtar sözcüğü bir veya daha fazla özel araçlar için izin verir. Gibi herhangi bir ad verin **MyTools.tbxinfo**.  
@@ -114,19 +114,19 @@ Bir öğe veya sık kullandığınız bir desene göre öğeler grubu oluşturma
   
  Her öğenin değerini olabilir:  
   
--   Örnekte gösterildiği gibi `<bmp fileName="…"/>` araç kutusu simgesinin ve `<value>string</value>` diğer öğeler için.  
+- Örnekte gösterildiği gibi `<bmp fileName="…"/>` araç kutusu simgesinin ve `<value>string</value>` diğer öğeler için.  
   
- \- veya -  
+  \- veya -  
   
--   `<resource fileName="Resources.dll"`  
+- `<resource fileName="Resources.dll"`  
   
-     `baseName="Observer.resources" id="Observer.tabname" />`  
+   `baseName="Observer.resources" id="Observer.tabname" />`  
   
-     Bu durumda, dize değerlerini kaynaklar olarak derlenmiştir derlenmiş bir bütünleştirilmiş kod sağlayın.  
+   Bu durumda, dize değerlerini kaynaklar olarak derlenmiştir derlenmiş bir bütünleştirilmiş kod sağlayın.  
   
- Ekleme bir `<customToolboxItem>` tanımlamak istediğiniz her bir araç kutusu öğesi için düğüm.  
+  Ekleme bir `<customToolboxItem>` tanımlamak istediğiniz her bir araç kutusu öğesi için düğüm.  
   
- Düğümlerin **.tbxinfo** dosyası aşağıdaki gibidir. Her düğüm için bir varsayılan değer yoktur.  
+  Düğümlerin **.tbxinfo** dosyası aşağıdaki gibidir. Her düğüm için bir varsayılan değer yoktur.  
   
 |Düğüm adı|tanımlar|  
 |---------------|-------------|  
@@ -215,21 +215,21 @@ Bir öğe veya sık kullandığınız bir desene göre öğeler grubu oluşturma
   
 #### <a name="to-provide-versions-of-the-tool-in-more-than-one-language"></a>Birden fazla dilde Aracı sürümleri sağlamak için  
   
-1.  Bir veya daha fazla özel araçlarını içeren bir Visual Studio uzantı projesi oluşturun.  
+1. Bir veya daha fazla özel araçlarını içeren bir Visual Studio uzantı projesi oluşturun.  
   
-     İçinde **.tbxinfo** dosya, Aracı'nın tanımlamak için kaynak dosya yöntemini kullanmak `displayName`, araç kutusu `tabName`ve araç ipucu. Bu dizeler tanımlandığı kaynak dosyası oluşturma, bir birleştirme dosyasına derlemek ve tbxinfo dosyasından başvurduğu.  
+    İçinde **.tbxinfo** dosya, Aracı'nın tanımlamak için kaynak dosya yöntemini kullanmak `displayName`, araç kutusu `tabName`ve araç ipucu. Bu dizeler tanımlandığı kaynak dosyası oluşturma, bir birleştirme dosyasına derlemek ve tbxinfo dosyasından başvurduğu.  
   
-2.  Diğer dillerdeki dizeler içeren kaynak dosyalarını içeren ek derlemeler oluşturun.  
+2. Diğer dillerdeki dizeler içeren kaynak dosyalarını içeren ek derlemeler oluşturun.  
   
-3.  Her ek derleme dilin kültür kodu adı olan bir klasöre yerleştirin. Örneğin, bir derleme Fransızca sürümü adlı bir klasör yerleştirin **fr**.  
+3. Her ek derleme dilin kültür kodu adı olan bir klasöre yerleştirin. Örneğin, bir derleme Fransızca sürümü adlı bir klasör yerleştirin **fr**.  
   
-4.  Bağımsız kültür kodu, genellikle iki harf, belirli bir kültür gibi kullanmalısınız `fr-CA`. Kültür kodları hakkında daha fazla bilgi için bkz. [CultureInfo.GetCultures yöntemi](http://go.microsoft.com/fwlink/?LinkId=160782), kültür kodlarının tam listesini sağlar.  
+4. Bağımsız kültür kodu, genellikle iki harf, belirli bir kültür gibi kullanmalısınız `fr-CA`. Kültür kodları hakkında daha fazla bilgi için bkz. [CultureInfo.GetCultures yöntemi](http://go.microsoft.com/fwlink/?LinkId=160782), kültür kodlarının tam listesini sağlar.  
   
-5.  Visual Studio uzantısı oluşturun ve dağıtın.  
+5. Visual Studio uzantısı oluşturun ve dağıtın.  
   
-6.  Uzantıyı başka bir bilgisayarda yüklü olduğunda, kullanıcının yerel kültürü için kaynak dosyası sürümünü otomatik olarak yüklenir. Kullanıcının kültürü için bir sürüm sağlamadınız, varsayılan kaynakları kullanılır.  
+6. Uzantıyı başka bir bilgisayarda yüklü olduğunda, kullanıcının yerel kültürü için kaynak dosyası sürümünü otomatik olarak yüklenir. Kullanıcının kültürü için bir sürüm sağlamadınız, varsayılan kaynakları kullanılır.  
   
- Prototip diyagramın farklı sürümlerini yüklemek için bu yöntemi kullanamazsınız. Öğeleri ve bağlayıcılar adları her yüklemede aynı olacaktır.  
+   Prototip diyagramın farklı sürümlerini yüklemek için bu yöntemi kullanamazsınız. Öğeleri ve bağlayıcılar adları her yüklemede aynı olacaktır.  
   
 ## <a name="other-toolbox-operations"></a>Diğer araç kutusu işlemler  
  Normalde, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], araçlarını yeniden adlandırma, farklı araç kutusu sekmeleri taşımak ve onları silerek araç kutusunu kişiselleştirme. Ancak, bu değişiklikleri bu konu başlığında açıklanan yordamları ile oluşturulmuş özel modelleme araçları için devam etmez. Yeniden başlattığınızda [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], özel araçlar ile tanımlanmış adları ve konumları araç kutusu görünecektir.  

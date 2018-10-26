@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3fa890e15a27a3d54c420520a71119f794fd124c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ac76a294c8f6b536da93f06afe6e423ca593b84
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248274"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824171"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Nasıl Yapılır: Kod Merkezi Birincil Kaynağı ile Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ ms.locfileid: "49248274"
   
 ### <a name="to-prepare-for-debugging-with-code-center-premium"></a>Kod Merkezi birincil ile hata ayıklama için hazırlamak için  
   
-1.  Akıllı kart okuyucu bağlanmak ve paylaşılan kaynak girişimi aldığınız kart ekleyin.  
+1. Akıllı kart okuyucu bağlanmak ve paylaşılan kaynak girişimi aldığınız kart ekleyin.  
   
-2.  Visual Studio'yu başlatın.  
+2. Visual Studio'yu başlatın.  
   
-3.  Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.  
+3. Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.  
   
-4.  İçinde **seçenekleri** açık iletişim kutusunu **hata ayıklama** düğüm ve tıklatın **genel**.  
+4. İçinde **seçenekleri** açık iletişim kutusunu **hata ayıklama** düğüm ve tıklatın **genel**.  
   
-5.  NET **yalnızca benim kodumu etkinleştir (sadece yönetilen)** onay kutusu.  
+5. NET **yalnızca benim kodumu etkinleştir (sadece yönetilen)** onay kutusu.  
   
-6.  Seçin **kaynak sunucusu desteğini etkinleştir**.  
+6. Seçin **kaynak sunucusu desteğini etkinleştir**.  
   
-7.  NET **özgün sürümle kaynak dosyaların uyuşmasını gerektir**.  
+7. NET **özgün sürümle kaynak dosyaların uyuşmasını gerektir**.  
   
-8.  Altında **hata ayıklama** düğümünü tıklatın **sembolleri**.  
+8. Altında **hata ayıklama** düğümünü tıklatın **sembolleri**.  
   
 9. İçinde **sembol dosyası (.pdb) konumlar** kutusunun işaretini kaldırın **Microsoft Server sembolleri** onay kutusunu işaretleyin ve aşağıdaki konumlardan ekleyin:  
   
@@ -60,18 +60,18 @@ ms.locfileid: "49248274"
   
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
-    > [!NOTE]
-    >  Eğik yazdığınızdan emin olun**/** yolun sonuna.  
+   > [!NOTE]
+   >  Eğik yazdığınızdan emin olun<strong>/</strong> yolun sonuna.  
   
      Bu konumlar, bu sembolleri ilk yüklenmesini sağlamak için listenin en üstüne taşıyın.  
   
-    > [!NOTE]
-    >  Yüklenen ilk konumları olmasını sağlamak Bu kod merkezi birincil konumlar listelenmesi gerekir. Visual Studio 2010'da, yukarıdaki herhangi bir sunucuya taşınamaz **Microsoft sembol sunucuları** onay kutusunu temizlemeniz gerekir neden olan giriş.  
-    >   
-    >  Sembolleri Microsoft hata ayıklama oturumu sırasında sembolleri için şunu yapın:  
-    >   
-    >  1.  Üzerinde **hata ayıklama** menüsünde seçin **Windows** seçip **modülleri**.  
-    > 2.  Semboller için istediğiniz modülü seçin ve ardından kısayol menüsünü açın. Seçin **sembolleri şuradan Yükle** seçip **Microsoft sembol sunucuları**.  
+   > [!NOTE]
+   >  Yüklenen ilk konumları olmasını sağlamak Bu kod merkezi birincil konumlar listelenmesi gerekir. Visual Studio 2010'da, yukarıdaki herhangi bir sunucuya taşınamaz **Microsoft sembol sunucuları** onay kutusunu temizlemeniz gerekir neden olan giriş.  
+   > 
+   >  Sembolleri Microsoft hata ayıklama oturumu sırasında sembolleri için şunu yapın:  
+   > 
+   > 1. Üzerinde **hata ayıklama** menüsünde seçin **Windows** seçip **modülleri**.  
+   >    2.  Semboller için istediğiniz modülü seçin ve ardından kısayol menüsünü açın. Seçin **sembolleri şuradan Yükle** seçip **Microsoft sembol sunucuları**.  
   
 10. İçinde **sembolleri sembol sunucularından bu dizindeki önbellek** kutusunda, bir konum girin `C:\symbols` burada kod merkezi birincil önbellek simgeleri. Semboller önbelleğe alma, hata ayıklama sırasında performansını önemli ölçüde artırabilir.  
   
@@ -109,22 +109,22 @@ ms.locfileid: "49248274"
   
 ### <a name="to-debug-source-code-from-an-existing-solution"></a>Varolan bir çözüm kaynak kodundan hata ayıklamak için  
   
-1.  İçinde **Çözüm Gezgini**, çözüm için kısayol menüsünü açın ve ardından **özellikleri**.  
+1. İçinde **Çözüm Gezgini**, çözüm için kısayol menüsünü açın ve ardından **özellikleri**.  
   
-2.  Çözüm özellik sayfaları iletişim kutusunda seçin **kaynak dosyalarında Hata Ayıkla** içinde **ortak özellikler** düğümü.  
+2. Çözüm özellik sayfaları iletişim kutusunda seçin **kaynak dosyalarında Hata Ayıkla** içinde **ortak özellikler** düğümü.  
   
-3.  Şu konuma ekleme **kaynak dosyaları içeren dizinler** listesi:  
+3. Şu konuma ekleme **kaynak dosyaları içeren dizinler** listesi:  
   
-     `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
+    `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
-    > [!NOTE]
-    >  Eğik yazdığınızdan emin olun**/** yolun sonuna.  
+   > [!NOTE]
+   >  Eğik yazdığınızdan emin olun<strong>/</strong> yolun sonuna.  
   
-4.  Çözümünüzdeki her yönetilen proje için aşağıdakileri yapın  
+4. Çözümünüzdeki her yönetilen proje için aşağıdakileri yapın  
   
-    1.  Çözüm Gezgini'nde, proje için kısayol menüsünü açın ve ardından **özellikleri**.  
+   1.  Çözüm Gezgini'nde, proje için kısayol menüsünü açın ve ardından **özellikleri**.  
   
-    2.  Seçin **hata ayıklama** seçip **unmanged kod hata ayıklamayı**.  
+   2.  Seçin **hata ayıklama** seçip **unmanged kod hata ayıklamayı**.  
   
 ### <a name="to-debug-your-solution-with-code-center-premium-source"></a>Çözümünüzü kod merkezi birincil kaynağı ile hata ayıklamak için  
   

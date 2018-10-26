@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 160609032a4118c0a15abe88115971f267b90f4c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 1c5c25163a49e51b0759e57318d6119edec97983
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778113"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928821"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>İzlenecek yol: Word için ilk belge düzeyi özelleştirmeyi oluşturma
   Bu tanıtıcı kılavuz, Microsoft Office Word için belge düzeyi özelleştirmeyi oluşturma işlemini göstermektedir. Bu tür bir çözüm içinde oluşturduğunuz özellikler, yalnızca belirli bir belge açık olduğunda kullanılabilir. Belge düzeyi özelleştirmesi birçok farklı uygulama değişiklik yapmak için kullanamazsınız, örneğin, herhangi bir belge açık olduğunda, yeni bir Şerit sekmesi görüntüleme gibi.  
@@ -31,17 +31,17 @@ ms.locfileid: "38778113"
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
--   Bir Word belgesi projesi oluşturma.  
+- Bir Word belgesi projesi oluşturma.  
   
--   Visual Studio Tasarımcısı'nda barındırılan belgeye metin ekleme.  
+- Visual Studio Tasarımcısı'nda barındırılan belgeye metin ekleme.  
   
--   Açıldığında, özelleştirilmiş belgeye metin ekleme Word nesne modeli kullanan kod yazma.  
+- Açıldığında, özelleştirilmiş belgeye metin ekleme Word nesne modeli kullanan kod yazma.  
   
--   Geliştirme ve test etmek için proje çalıştırma.  
+- Geliştirme ve test etmek için proje çalıştırma.  
   
--   Gereksiz derleme dosyaları ve güvenlik ayarları Geliştirme bilgisayarınızdan kaldırmak için projeyi temizleniyor.  
+- Gereksiz derleme dosyaları ve güvenlik ayarları Geliştirme bilgisayarınızdan kaldırmak için projeyi temizleniyor.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  

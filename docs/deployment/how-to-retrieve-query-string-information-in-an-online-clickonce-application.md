@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 776ebca3b412b631634e45846ca15f00f31126f5
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9e8ad899d7cf62b2d874d5dc4971c8e7ad7f950a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282458"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829774"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Nasıl yapılır: çevrimiçi bir ClickOnce uygulamasında sorgu dize bilgilerini alma
 *Sorgu dizesi* soru biçiminde rastgele bilgi içeren işareti (?) ile başlayan bir URL kısmıdır *ad = değer*. Sahip olduğunuz varsayalım bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] adlı uygulama `WindowsApp1` üzerinde barındıran `servername`, ve değişken için bir değer geçirmek istediğiniz `username` zaman uygulamasını başlatır. URL'niz aşağıdakine benzeyebilir:  
@@ -57,17 +57,17 @@ ms.locfileid: "44282458"
   
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>Sorgu dizesi MageUI.exe ile ClickOnce uygulamasında geçirmeyi etkinleştirmek için  
   
-1.  .NET komut istemi açıp şunu yazın:  
+1. .NET komut istemi açıp şunu yazın:  
   
-    ```cmd  
-    MageUI  
-    ```  
+   ```cmd  
+   MageUI  
+   ```  
   
-2.  Gelen **dosya** menüsünde **açın**ve dağıtım bildirimini açmak, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dosyası olan uygulama sonu `.application` uzantısı.  
+2. Gelen **dosya** menüsünde **açın**ve dağıtım bildirimini açmak, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dosyası olan uygulama sonu `.application` uzantısı.  
   
-3.  Seçin **dağıtım seçenekleri** paneli sol taraftaki gezinti penceresinde ve seçin **uygulamaya geçirilecek parametreler URL'ye izin ver** onay kutusu.  
+3. Seçin **dağıtım seçenekleri** paneli sol taraftaki gezinti penceresinde ve seçin **uygulamaya geçirilecek parametreler URL'ye izin ver** onay kutusu.  
   
-4.  Gelen **dosya** menüsünde **Kaydet**.  
+4. Gelen **dosya** menüsünde **Kaydet**.  
   
 > [!NOTE]
 >  Alternatif olarak, sorgu dizesi içinde geçirmeyi etkinleştirebilirsiniz [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Seçin **uygulamaya geçirilecek parametreler URL'ye izin ver** açarak bulunabilir onay kutusunu **proje özellikleri**u seçerek **Yayımla** sekmesine tıklayarak **Seçenekleri** düğmesini seçip ardından **bildirimlerini**.  

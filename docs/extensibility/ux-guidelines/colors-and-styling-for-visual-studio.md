@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 028c88e1c2cd88736cf98a1f513654692ee50daf
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 5f184fc08679100562a53c1f3f27d797a4cdff37
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863848"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918031"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Renkler ve stil Visual Studio için
 
@@ -425,7 +425,7 @@ Bunu yapmak için bir VSPackage gerekir:
 
 - **IDE tarafından oluşturulan olayları ele** uygulayarak [IVsFontAndColorEvents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents) arabirimi. IDE yazı tipleri ve renkler sayfasının kullanıcı değişiklikleri izleyen uygun olan yöntemi çağırır. Örneğin, çağrı [OnFontChanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged) yeni bir yazı tipi seçtiyseniz yöntemi.
 
- **VEYA**
+  **VEYA**
 
 - **IDE değişiklikleri için yoklama**. Bu sistem uygulanan yapılabilir [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) arabirimi. Öncelikle desteği için Kalıcılık, ancak [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) yöntemi görüntü öğeleri için yazı tipi ve renk bilgilerini elde edebilirsiniz. Yazı tipi ve renk ayarları hakkında daha fazla bilgi için bkz. MSDN makalesi [erişme depolanan yazı tipi ve renk ayarlarını](../accessing-stored-font-and-color-settings.md).
 

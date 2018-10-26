@@ -14,12 +14,12 @@ caps.latest.revision: 25
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 014f7d7c76577cd9a749807eb994785d45f56e68
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c9bb652ee6b7ea9500d2ac153ca06d8b11430c9e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182499"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942555"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>Program kodundaki UML modelini okuma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,31 +81,31 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
   
 #### <a name="to-add-references-to-read-a-model-in-a-stand-alone-application"></a>Tek başına bir uygulamadaki modeli okumak için başvurular eklemek için.  
   
-1.  Çözüm Gezgini'nde, uygulama oluşturma ve ardından projeyi sağ **özellikleri**. Özellik Düzenleyicisi'ndeki içinde **uygulama** sekmesinde, belirleyin **hedef Framework'ü** gerekli .NET Framework sürümü için.  
+1. Çözüm Gezgini'nde, uygulama oluşturma ve ardından projeyi sağ **özellikleri**. Özellik Düzenleyicisi'ndeki içinde **uygulama** sekmesinde, belirleyin **hedef Framework'ü** gerekli .NET Framework sürümü için.  
   
-2.  Ekleme [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] UML modelleri, genellikle erişmek için gereksinim duyduğunuz başvuruları:  
+2. Ekleme [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] UML modelleri, genellikle erişmek için gereksinim duyduğunuz başvuruları:  
   
-    -   Microsoft.VisualStudio.UML.Interfaces.dll'yi  
+   -   Microsoft.VisualStudio.UML.Interfaces.dll'yi  
   
-    -   Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
+   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
   
-3.  Önceki bölümlerde listelenmiş başvurulara ek olarak, aşağıdaki proje başvurularından ekleme **\Program Visual Studio [sürüm] \Common7\IDE\PrivateAssemblies**:  
+3. Önceki bölümlerde listelenmiş başvurulara ek olarak, aşağıdaki proje başvurularından ekleme **\Program Visual Studio [sürüm] \Common7\IDE\PrivateAssemblies**:  
   
-    -   Microsoft.VisualStudio.Uml.dll  
+   - Microsoft.VisualStudio.Uml.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.ModelStore.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.ModelStore.Dsl.dll  
   
      Uygulamanızdaki diyagramları okumak istiyorsanız, bu başvurular da gerekebilir:  
   
-    -   Microsoft.VisualStudio.TeamArchitect.ActivityDesigner.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.ActivityDesigner.Dsl.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.ComponentDesigner.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.ComponentDesigner.Dsl.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.LogicalClassDesigner.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.LogicalClassDesigner.Dsl.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.SequenceDesigner.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.SequenceDesigner.Dsl.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.UseCase.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.UseCase.Dsl.dll  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML API ile programlama](../modeling/programming-with-the-uml-api.md)   

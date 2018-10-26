@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d3191f14cb3ad10b6fb95f2da6a3a4281c839de
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: bd4a22dc63f0304cc8afa98e35c5f7afd6cac011
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566603"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922001"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>İzlenecek yol: Uygulama kod parçacıkları
 Kod parçacıklarınızı oluşturmak ve uzantının kullanıcılar için kendi kod ekleyebilmeniz bunları bir düzenleyici uzantısına dahil etme.  
@@ -27,13 +27,13 @@ Kod parçacıklarınızı oluşturmak ve uzantının kullanıcılar için kendi 
   
  Bu izlenecek yol aşağıdaki görevlerin nasıl yerine getirileceğini öğretir:  
   
-1.  Oluşturun ve belirli bir dil için kod parçacıkları kaydedin.  
+1. Oluşturun ve belirli bir dil için kod parçacıkları kaydedin.  
   
-2.  Ekleme **parçacık Ekle** kısayol menüsüne komut.  
+2. Ekleme **parçacık Ekle** kısayol menüsüne komut.  
   
-3.  Kod parçacığı genişletme uygulayın.  
+3. Kod parçacığı genişletme uygulayın.  
   
- Bu izlenecek yolda temel alır [izlenecek yol: deyim tamamlamayı görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md).  
+   Bu izlenecek yolda temel alır [izlenecek yol: deyim tamamlamayı görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Visual Studio 2015'ten başlayarak, Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik eklemiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'yı yükleme](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -43,72 +43,72 @@ Kod parçacıklarınızı oluşturmak ve uzantının kullanıcılar için kendi 
   
  Aşağıdaki adımlar, kod parçacıkları oluşturmak ve bunları belirli bir GUID ile ilişkilendirmek nasıl ekleyebileceğiniz gösterilmektedir.  
   
-1.  Aşağıdaki dizin yapısını oluşturun:  
+1. Aşağıdaki dizin yapısını oluşturun:  
   
-     **%InstallDir%\TestSnippets\Snippets\1033\\**  
+    **%InstallDir%\TestSnippets\Snippets\1033\\**  
   
-     Burada *Installdır %* Visual Studio yükleme klasörüdür. (Bu yol genellikle kod parçacıkları yüklemek için kullanılsa da, herhangi bir yolu belirtebilirsiniz.)  
+    Burada *Installdır %* Visual Studio yükleme klasörüdür. (Bu yol genellikle kod parçacıkları yüklemek için kullanılsa da, herhangi bir yolu belirtebilirsiniz.)  
   
-2.  \1033\ klasöründe, oluşturun bir *.xml* adlandırın ve dosya **TestSnippets.xml**. (Bu adı genellikle bir kod parçacığı dizin dosyası için kullanılsa da, sahip olduğu sürece herhangi bir ad belirtebilirsiniz bir *.xml* dosya adı uzantısı.) Aşağıdaki metni ekleyin ve yer tutucu GUID silin ve kendi uygulamanızı ekleyin.  
+2. \1033\ klasöründe, oluşturun bir *.xml* adlandırın ve dosya **TestSnippets.xml**. (Bu adı genellikle bir kod parçacığı dizin dosyası için kullanılsa da, sahip olduğu sürece herhangi bir ad belirtebilirsiniz bir *.xml* dosya adı uzantısı.) Aşağıdaki metni ekleyin ve yer tutucu GUID silin ve kendi uygulamanızı ekleyin.  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <SnippetCollection>  
-        <Language Lang="TestSnippets" Guid="{00000000-0000-0000-0000-000000000000}">  
-            <SnippetDir>  
-                <OnOff>On</OnOff>  
-                <Installed>true</Installed>  
-                <Locale>1033</Locale>  
-                <DirPath>%InstallRoot%\TestSnippets\Snippets\%LCID%\</DirPath>  
-                <LocalizedName>Snippets</LocalizedName>  
-            </SnippetDir>  
-        </Language>  
-    </SnippetCollection>  
-    ```  
+   ```xml  
+   <?xml version="1.0" encoding="utf-8" ?>  
+   <SnippetCollection>  
+       <Language Lang="TestSnippets" Guid="{00000000-0000-0000-0000-000000000000}">  
+           <SnippetDir>  
+               <OnOff>On</OnOff>  
+               <Installed>true</Installed>  
+               <Locale>1033</Locale>  
+               <DirPath>%InstallRoot%\TestSnippets\Snippets\%LCID%\</DirPath>  
+               <LocalizedName>Snippets</LocalizedName>  
+           </SnippetDir>  
+       </Language>  
+   </SnippetCollection>  
+   ```  
   
-3.  Kod parçacığı klasörüne bir dosya oluşturun, adlandırın **test**`.snippet`ve ardından aşağıdaki metni ekleyin:  
+3. Kod parçacığı klasörüne bir dosya oluşturun, adlandırın **test**`.snippet`ve ardından aşağıdaki metni ekleyin:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
-        <CodeSnippet Format="1.0.0">  
-            <Header>  
-                <Title>Test replacement fields</Title>  
-                <Shortcut>test</Shortcut>  
-                <Description>Code snippet for testing replacement fields</Description>  
-                <Author>MSIT</Author>  
-                <SnippetTypes>  
-                    <SnippetType>Expansion</SnippetType>  
-                </SnippetTypes>  
-            </Header>  
-            <Snippet>  
-                <Declarations>  
-                    <Literal>  
-                      <ID>param1</ID>  
-                        <ToolTip>First field</ToolTip>  
-                        <Default>first</Default>  
-                    </Literal>  
-                    <Literal>  
-                        <ID>param2</ID>  
-                        <ToolTip>Second field</ToolTip>  
-                        <Default>second</Default>  
-                    </Literal>  
-                </Declarations>  
-                <References>  
-                   <Reference>  
-                       <Assembly>System.Windows.Forms.dll</Assembly>  
-                   </Reference>  
-                </References>  
-                <Code Language="TestSnippets">  
-                    <![CDATA[MessageBox.Show("$param1$");  
-         MessageBox.Show("$param2$");]]>  
-                </Code>    
-            </Snippet>  
-        </CodeSnippet>  
-    </CodeSnippets>  
-    ```  
+   ```xml  
+   <?xml version="1.0" encoding="utf-8" ?>  
+   <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
+       <CodeSnippet Format="1.0.0">  
+           <Header>  
+               <Title>Test replacement fields</Title>  
+               <Shortcut>test</Shortcut>  
+               <Description>Code snippet for testing replacement fields</Description>  
+               <Author>MSIT</Author>  
+               <SnippetTypes>  
+                   <SnippetType>Expansion</SnippetType>  
+               </SnippetTypes>  
+           </Header>  
+           <Snippet>  
+               <Declarations>  
+                   <Literal>  
+                     <ID>param1</ID>  
+                       <ToolTip>First field</ToolTip>  
+                       <Default>first</Default>  
+                   </Literal>  
+                   <Literal>  
+                       <ID>param2</ID>  
+                       <ToolTip>Second field</ToolTip>  
+                       <Default>second</Default>  
+                   </Literal>  
+               </Declarations>  
+               <References>  
+                  <Reference>  
+                      <Assembly>System.Windows.Forms.dll</Assembly>  
+                  </Reference>  
+               </References>  
+               <Code Language="TestSnippets">  
+                   <![CDATA[MessageBox.Show("$param1$");  
+        MessageBox.Show("$param2$");]]>  
+               </Code>    
+           </Snippet>  
+       </CodeSnippet>  
+   </CodeSnippets>  
+   ```  
   
- Aşağıdaki adımlarda, kod parçacıkları kaydettirmek gösterilmektedir.  
+   Aşağıdaki adımlarda, kod parçacıkları kaydettirmek gösterilmektedir.  
   
 ### <a name="to-register-code-snippets-for-a-specific-guid"></a>Kod parçacıkları için belirli bir GUID kaydetmek için  
   

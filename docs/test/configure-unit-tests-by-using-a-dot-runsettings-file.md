@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cfff2f5a040ce309e05afff1dc93954eb59db9dd
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 935c1ebfb2efd888de5b336eafab4059fa6cd443
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863666"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903562"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Kullanarak birim testlerini yapılandırma bir *.runsettings* dosyası
 
@@ -164,7 +164,7 @@ Aşağıdaki bölümlerde ayrıntılı öğelerini bir *.runsettings* dosya.
 **RunConfiguration** öğesi, aşağıdaki öğeleri içerebilir:
 
 |Düğüm|Varsayılan|Değerler|
-|----------|-------------|------------|
+|-|-|-|
 |**ResultsDirectory**||Test sonuçlarını yerleştirildiği dizin.|
 |**targetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />Bu ayar, bulmak ve testleri yürütmek için kullanılan birim test çerçevesi sürümünü belirtir. Birim test projesinin yapı özelliklerinde belirttiğiniz .NET platformu sürümünden farklı olabilir.|
 |**TargetPlatform**|x86|x86, x64|
@@ -241,7 +241,7 @@ Test çalıştırması parametrelerini kullanmak için özel bir ekleme <xref:Mi
 Bu ayarlar sahip test yöntemlerini çalıştıran test bağdaştırıcısına özgüdür <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> özniteliği.
 
 |Yapılandırma|Varsayılan|Değerler|
-|-------------------|-------------|------------|
+|-|-|-|
 |**ForcedLegacyMode**|false|Visual Studio 2012'de, MSTest bağdaştırıcısı daha hızlı ve daha ölçeklenebilir hale getirilmiş. Testlerin çalışma sırası gibi bazı davranışlar Visual Studio'nun önceki sürümlerindekiyle aynı olmayabilir. Bu değer kümesine **true** eski test bağdaştırıcısı kullanmak için.<br /><br />Örneğin, varsa bu ayarı kullanabilirsiniz bir *app.config* birim testi için belirtilen dosya.<br /><br />Daha yeni bağdaştırıcı kullanmanıza olanak vermek için testlerinizi yeniden düzenlemenizi öneririz.|
 |**IgnoreTestImpact**|false|MSTest veya Microsoft Test Yöneticisi'nde çalıştırıldığında test etkisi özelliği son değişikliklerden etkilenen testleri önceliklendirir. Bu ayar özelliği devre dışı bırakır. Daha fazla bilgi için [önceki derlemeden sonra hangi testlerin çalıştırılmalıdır](https://msdn.microsoft.com/library/dd286589).|
 |**SettingsFile**||Burada MSTest bağdaştırıcısı ile kullanmak için test ayarları dosyası belirtebilirsiniz. Test ayarları dosyasını seçerek belirtebilirsiniz **Test** > **Test ayarlarını** > **Test ayarları dosyasını Seç**.<br /><br />Bu değeri belirtirseniz, aynı zamanda ayarlamalısınız **ForcedlegacyMode** için **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|

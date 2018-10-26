@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a90d7d900054ee1ba8dec1a278d37d5898985dd
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 3678ec0cba6f46b65f5c1d6f84e9962b5487fa93
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495433"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937869"
 ---
 # <a name="use-the-text-manager-to-monitor-global-settings"></a>Genel ayarlar izlemek için metin Yöneticisi'ni kullanın
 Çekirdek Düzenleyici uygularsanız, bu değişiklikleri örneğinizin düzenleyicisinin etkileyebileceğinden genel ayarlara yapılan değişiklikleri izlemeniz gerekir. Metin Yöneticisi tarafından oluşturulan olaylara dinleyerek değişikliklerini izleyebilirsiniz. Örneğin, çekirdek düzenleyicisinde, kendi belge veri nesnesi gibi bir genel görünümünü veya davranışını bir bileşenin tercih belirttiğinizde metin Yöneticisi bu bilgileri depolar ve tüm etkilenen istemcileri ile iletişim kurar.  
@@ -27,19 +27,19 @@ ms.locfileid: "46495433"
 ## <a name="text-manager-functions"></a>Metin Yöneticisi işlevleri  
  Ayar, aşağıdakiler dahil olmak üzere olayları metin Yöneticisi'ni başlatır:  
   
--   Arabellek kaynak kodu denetiminde olup  
+- Arabellek kaynak kodu denetiminde olup  
   
--   Dosya değişikliği bildirimleri için kaydetme  
+- Dosya değişikliği bildirimleri için kaydetme  
   
--   Görünümleri belirli arabellek ile ilişkili takip etme  
+- Görünümleri belirli arabellek ile ilişkili takip etme  
   
--   Metin renklendirmesi tercihleri  
+- Metin renklendirmesi tercihleri  
   
--   Sekme boşluk tercihleri  
+- Sekme boşluk tercihleri  
   
- Verilen bir dile özgü tercihleri metin Yöneticisi tarafından yönetilmez. Bu ayarlar, her dil hizmeti tarafından yönetiliyor olması gerekir.  
+  Verilen bir dile özgü tercihleri metin Yöneticisi tarafından yönetilmez. Bu ayarlar, her dil hizmeti tarafından yönetiliyor olması gerekir.  
   
- Olay bildirimi için metin Yöneticisi tarafından sağlanır <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> arabirimi. Bu arabirimi uygulayan istemciniz üzerindeki metin Yöneticisi olaylarını işlemek için nesne oluşturulur. Bu olayları kullanarak kaydetme <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> metin manager arabirimi.  
+  Olay bildirimi için metin Yöneticisi tarafından sağlanır <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> arabirimi. Bu arabirimi uygulayan istemciniz üzerindeki metin Yöneticisi olaylarını işlemek için nesne oluşturulur. Bu olayları kullanarak kaydetme <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> metin manager arabirimi.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Çekirdek Düzenleyicisi içinde](../extensibility/inside-the-core-editor.md)   

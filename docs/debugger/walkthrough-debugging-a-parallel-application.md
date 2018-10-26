@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c8e82986d890f4d453190e1da6511c42dfe8866
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: b675b74ef843a9a6b186149d16086df2528eab57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468796"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872648"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>İzlenecek yol: paralel uygulamada Visual Studio'da hata ayıklama
 Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve **Paralel Yığınlar** paralel uygulamada hata ayıklamak için windows. Bu windows anlamanıza ve çalışma zamanı davranışı kullanan kod doğrulama Yardım [görev paralel kitaplığı (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) veya [eşzamanlılık çalışma zamanı](/cpp/parallel/concrt/concurrency-runtime). Bu izlenecek yol, yerleşik kesme noktaları olan örnek kodu sağlıyor. Kodları keser sonra izlenecek yolu nasıl kullanılacağını gösterir. **Paralel Görevler** ve **Paralel Yığınlar** bunu incelemek için windows.  
@@ -63,25 +63,25 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
   
 #### <a name="to-create-the-sample-project"></a>Örnek proje oluşturmak için  
   
-1.  Visual Studio'da üzerinde **dosya** menüsünde **yeni** ve ardından **proje**.  
+1. Visual Studio'da üzerinde **dosya** menüsünde **yeni** ve ardından **proje**.  
   
-2.  Şunlardan birini seçin **Visual C#**, **Visual Basic**, veya **Visual C++**. Yönetilen diller için emin [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] framework kutusunda görüntülenir.  
+2. Şunlardan birini seçin **Visual C#**, **Visual Basic**, veya **Visual C++**. Yönetilen diller için emin [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] framework kutusunda görüntülenir.  
   
-3.  Altında **Windows Masaüstü**, seçin **konsol uygulaması** ve ardından **Tamam**. Varsayılan hata ayıklama yapılandırmasında kalır.  
+3. Altında **Windows Masaüstü**, seçin **konsol uygulaması** ve ardından **Tamam**. Varsayılan hata ayıklama yapılandırmasında kalır.  
   
-4.  Projede .cpp, .cs veya .vb kod dosyasını açın. Boş bir kod dosyası oluşturmak için içeriğini silin.  
+4. Projede .cpp, .cs veya .vb kod dosyasını açın. Boş bir kod dosyası oluşturmak için içeriğini silin.  
   
-5.  Aşağıdaki kod, seçtiğiniz dilde için boş bir kod dosyasına yapıştırın.  
+5. Aşağıdaki kod, seçtiğiniz dilde için boş bir kod dosyasına yapıştırın.  
   
- [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
- [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
- [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]  
+   [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
+   [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
+   [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]  
   
-1.  Üzerinde **dosya** menüsünü tıklatın **Tümünü Kaydet**.  
+6. Üzerinde **dosya** menüsünü tıklatın **Tümünü Kaydet**.  
   
-2.  Üzerinde **derleme** menüsünde tıklatın **çözümü yeniden derle**.  
+7. Üzerinde **derleme** menüsünde tıklatın **çözümü yeniden derle**.  
   
-     Dört çağrıları olduğunu fark `Debugger.Break` (`DebugBreak` C++ örneğinde) bu nedenle, kesme noktaları eklemek gerekmez; yalnızca uygulamayı çalıştıran neden olur, en fazla dört kez hata ayıklayıcıda ayırmak.  
+    Dört çağrıları olduğunu fark `Debugger.Break` (`DebugBreak` C++ örneğinde) bu nedenle, kesme noktaları eklemek gerekmez; yalnızca uygulamayı çalıştıran neden olur, en fazla dört kez hata ayıklayıcıda ayırmak.  
   
 ## <a name="using-the-parallel-stacks-window-threads-view"></a>Kullanarak Paralel Yığınlar penceresi: iş parçacıkları görünümü  
  Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat**. İlk kesme noktasına isabet tamamlanmasını bekleyin.  
@@ -303,4 +303,4 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
  [Paralel Programlama](/dotnet/standard/parallel-programming/index)   
  [Eşzamanlılık Çalışma zamanı](/cpp/parallel/concrt/concurrency-runtime)   
  [Paralel Yığınlar penceresini kullanma](../debugger/using-the-parallel-stacks-window.md)   
- [Görevleri penceresini kullanma](../debugger/using-the-tasks-window.md)
+ [Görevleri Penceresini Kullanma](../debugger/using-the-tasks-window.md)

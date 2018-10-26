@@ -16,12 +16,12 @@ ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c1a0c138cbfcf3892508fb9ae42685ffe895411
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b3d65a1fb510daec68060261141ddb2d05822988
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228663"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836859"
 ---
 # <a name="selection-context-objects"></a>Seçim Bağlamı Nesneleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ ms.locfileid: "49228663"
   
  VSPackage izleyebilirsiniz genel seçim bağlamı Tetikleyicileri olayı değiştirme. VSPackage uygulayarak aşağıdaki görevleri gerçekleştirebilirsiniz `IVsTrackSelectionEx` ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> arabirimleri:  
   
--   Bir hiyerarşide o anda etkin dosyasını güncelleştirin.  
+- Bir hiyerarşide o anda etkin dosyasını güncelleştirin.  
   
--   Öğelerin belirli türlerini değişiklikleri izleyin. Örneğin, bir özel, VSPackage'ı kullanıyorsa, **özellikleri** penceresinde etkin değişiklikleri izleyebilirsiniz **özellikleri** penceresi ve sizinki gerektiğinde yeniden başlatın.  
+- Öğelerin belirli türlerini değişiklikleri izleyin. Örneğin, bir özel, VSPackage'ı kullanıyorsa, **özellikleri** penceresinde etkin değişiklikleri izleyebilirsiniz **özellikleri** penceresi ve sizinki gerektiğinde yeniden başlatın.  
   
- İzleme seçimi normal çalıştıysa aşağıdaki sırayı gösterir.  
+  İzleme seçimi normal çalıştıysa aşağıdaki sırayı gösterir.  
   
 1.  IDE yeni açılan penceresinde seçim bağlamını alır ve genel seçimi bağlamda koyar. Seçim bağlamını HIERARCHY_DONTPROPAGATE veya SELCONTAINER_DONTPROPAGATE kullanıyorsa, bu bilgileri için genel bağlamda dağıtılmadı. Daha fazla bilgi için [kullanıcıya geri bildirim](../../extensibility/internals/feedback-to-the-user.md).  
   

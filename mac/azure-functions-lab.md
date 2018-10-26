@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 446ec0dbc13e3f1d0907933388830c6f7d02f091
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 80e6f3291f0f0fdc26883d8f98e90e296ee0c7c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42623999"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919747"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Öğretici: Azure işlevleri ile çalışmaya başlama
 
@@ -34,17 +34,17 @@ Bu laboratuvarda, Mac için Visual Studio kullanarak Azure işlevleri geliştirm
 
 1. Başlatma **Mac için Visual Studio**.
 
-1. Seçin **Dosya > Yeni Çözüm**.
+2. Seçin **Dosya > Yeni Çözüm**.
 
-1. Gelen **bulut > Genel** kategorisi, select **Azure işlevleri** şablonu. Azure işlevleri'ı barındıran bir .NET sınıf kitaplığı oluşturmak için C# kullanır. **İleri**'ye tıklayın.
+3. Gelen **bulut > Genel** kategorisi, select **Azure işlevleri** şablonu. Azure işlevleri'ı barındıran bir .NET sınıf kitaplığı oluşturmak için C# kullanır. **İleri**'ye tıklayın.
 
     ![Azure işlevleri şablonu seçimi](media/azure-functions-lab-image1.png)
 
-1. Ayarlama **proje adı** için **"AzureFunctionsLab"** tıklatıp **Oluştur**.
+4. Ayarlama **proje adı** için **"AzureFunctionsLab"** tıklatıp **Oluştur**.
 
     ![adlandırma ve, azure işlev projesi oluşturma](media/azure-functions-lab-image2.png)
 
-1. Ait düğümleri genişletebilirsiniz **çözüm bölmesi**. Varsayılan proje şablonu ve Newtonsoft.Json paketini yanı sıra Azure WebJobs paketleri çeşitli NuGet başvurular içerir. 
+5. Ait düğümleri genişletebilirsiniz **çözüm bölmesi**. Varsayılan proje şablonu ve Newtonsoft.Json paketini yanı sıra Azure WebJobs paketleri çeşitli NuGet başvurular içerir. 
 
      Üç dosya vardır:  
         - **Host.JSON** konak genel yapılandırma seçenekleri tanımlamak için  

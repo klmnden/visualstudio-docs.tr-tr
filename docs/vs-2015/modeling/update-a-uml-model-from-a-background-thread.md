@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6ed72cc65535849516de35c861942913ca750fba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7faef9f085f21db4d4f819746acf52c119189f6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216859"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941002"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Bir UML modelini arka plan iş parçacığı aracılığıyla güncelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,35 +35,35 @@ Bazen bir arka plan iş parçacığı modelinde değişiklikler yapmak yararlı 
   
 #### <a name="to-run-the-example"></a>Örneği çalıştırmak için  
   
-1.  Bir komut işleyici açıklandığı gibi bir C# projesi oluşturma [modelleme diyagramında menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
+1. Bir komut işleyici açıklandığı gibi bir C# projesi oluşturma [modelleme diyagramında menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
-2.  Projeyi bu derlemelere başvuruları içerdiğinden emin olun:  
+2. Projeyi bu derlemelere başvuruları içerdiğinden emin olun:  
   
-    -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.[version]  
+   -   Microsoft.VisualStudio.Modeling.Sdk.[version]  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams. [sürüm]  
+   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams. [sürüm]  
   
-    -   Microsoft.VisualStudio.Uml.Interfaces  
+   -   Microsoft.VisualStudio.Uml.Interfaces  
   
-    -   System.ComponentModel.Composition  
+   -   System.ComponentModel.Composition  
   
-    -   System.Windows.Forms  
+   -   System.Windows.Forms  
   
-3.  Projeye adlı bir Windows formu eklemek **ProgressForm**. Güncelleştirmelerin sürmekte olduğunu bildiren bir ileti görüntülemelidir. Herhangi bir denetim yok.  
+3. Projeye adlı bir Windows formu eklemek **ProgressForm**. Güncelleştirmelerin sürmekte olduğunu bildiren bir ileti görüntülemelidir. Herhangi bir denetim yok.  
   
-4.  7. adımdan sonra gösterilen kodu içeren C# dosyası ekleyin.  
+4. 7. adımdan sonra gösterilen kodu içeren C# dosyası ekleyin.  
   
-5.  Derleme ve projeyi çalıştırın.  
+5. Derleme ve projeyi çalıştırın.  
   
-     Yeni bir örneğini [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Deneysel modda başlatılacaktır.  
+    Yeni bir örneğini [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Deneysel modda başlatılacaktır.  
   
-6.  Oluşturun veya bir UML sınıf diyagramı deneysel örneğinde açın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6. Oluşturun veya bir UML sınıf diyagramı deneysel örneğinde açın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-7.  UML sınıf diyagramında herhangi bir yere sağ tıklayın ve ardından **birkaç UML sınıfı Ekle**.  
+7. UML sınıf diyagramında herhangi bir yere sağ tıklayın ve ardından **birkaç UML sınıfı Ekle**.  
   
- Çeşitli yeni sınıf kutuları diyagramda, birbiri ardına yarım saniye aralıklarla görünür.  
+   Çeşitli yeni sınıf kutuları diyagramda, birbiri ardına yarım saniye aralıklarla görünür.  
   
 ```csharp  
 using System;  

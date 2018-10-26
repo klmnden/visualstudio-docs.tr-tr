@@ -25,12 +25,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 146a525394b51f71f470f1246610a855d968dddc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b2a26e847a23e8a4037958532889626a931341c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180225"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840044"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Sınama ve Üretim Sunucuları için Teslim Etmeden ClickOnce Uygulamaları Dağıtma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,11 +60,11 @@ Bu konuda ele alınmıştır ClickOnce bildirimlerini yeniden imzalama veya Clic
   
  Aşağıda, bu noktayı açıklığa kavuşturmak için iki örnek verilmiştir. İlk örnekte, ilgili olmayan ClickOnce uygulaması yayımlama `deploymentProvider` etiketi ve ondan kullanıcılar sorun http://www.adatum.com/MyApplication/. Uygulamayı bir sonraki güncelleştirmesine yayımlamak istediğiniz kullanmaya karar verirseniz http://subdomain.adatum.com/MyApplication/, bu dağıtım bildiriminde bulunan gösteren, bir yolu olmaz http://www.adatum.com/MyApplication/. İkisinden birini yapabilirsiniz:  
   
--   Önceki sürümü kaldırmalısınız girmelerini söyleyin ve yeni bir konumdan yeni sürümünü yükleyin.  
+- Önceki sürümü kaldırmalısınız girmelerini söyleyin ve yeni bir konumdan yeni sürümünü yükleyin.  
   
--   Bir güncelleştirme içerir http://www.adatum.com/MyApplication/ içeren bir `deploymentProvider` işaret http://www.adatum.com/MyApplication/. Ardından, daha sonra başka bir güncelleştirme sürüm `deploymentProvider` işaret http://subdomain.adatum.com/MyApplication/.  
+- Bir güncelleştirme içerir http://www.adatum.com/MyApplication/ içeren bir `deploymentProvider` işaret http://www.adatum.com/MyApplication/. Ardından, daha sonra başka bir güncelleştirme sürüm `deploymentProvider` işaret http://subdomain.adatum.com/MyApplication/.  
   
- İkinci örnekte belirten ClickOnce uygulaması yayımlama `deploymentProvider`, ve ardından bunu kaldırmaya karar verirsiniz. Bir kez yeni sürümü olmadan `deploymentProvider` indirildi, istemcilere, uygulamanızın sahip bir sürümün kadar güncelleştirmeler için kullanılan bir yola yönlendirmek mümkün olmayacaktır `deploymentProvider` geri. İlk örnek olarak, `deploymentProvider` başlangıçta, yeni konum geçerli güncelleştirme konumuna işaret etmelidir. Bu durumda, eklemeyi denerseniz bir `deploymentProvider` , başvurduğu http://subdomain.adatum.com/MyApplication/, sonraki güncelleştirme işlemi başarısız olur.  
+  İkinci örnekte belirten ClickOnce uygulaması yayımlama `deploymentProvider`, ve ardından bunu kaldırmaya karar verirsiniz. Bir kez yeni sürümü olmadan `deploymentProvider` indirildi, istemcilere, uygulamanızın sahip bir sürümün kadar güncelleştirmeler için kullanılan bir yola yönlendirmek mümkün olmayacaktır `deploymentProvider` geri. İlk örnek olarak, `deploymentProvider` başlangıçta, yeni konum geçerli güncelleştirme konumuna işaret etmelidir. Bu durumda, eklemeyi denerseniz bir `deploymentProvider` , başvurduğu http://subdomain.adatum.com/MyApplication/, sonraki güncelleştirme işlemi başarısız olur.  
   
 ## <a name="creating-a-deployment"></a>Bir dağıtımı oluşturma  
  Farklı ağ konumlarını dağıtılabilir dağıtımları oluşturma adım adım yönergeler için bkz. [izlenecek yol: ClickOnce uygulaması söz konusu mu değil gerektiren Re-Signing'el ile dağıtma ve bu korur markalama bilgileri](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  

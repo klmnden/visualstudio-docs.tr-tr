@@ -15,12 +15,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 09cf6f69348c08ec284e074feea8d9a33c488f0b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3674d6ccbda89a2a3ee1de551587ba034ba51c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229475"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932630"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Verilerle Çalışan Kodlanmış UI Testi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -204,13 +204,13 @@ Farklı koşulları test etmeye yönelik farklı parametre değerleriniz ile bir
   
 #### <a name="step-5--run-the-data-driven-test"></a>Adım 5-veri tabanlı test çalıştırma  
   
-1.  Test şimdi testi yeniden çalıştırarak veri odaklı olduğunu doğrulayın.  
+1. Test şimdi testi yeniden çalıştırarak veri odaklı olduğunu doğrulayın.  
   
-     .Csv dosyasında değerleri kullanarak üç yineleme aracılığıyla testi görmeniz gerekir. Doğrulama de çalışması gerekir ve test, Test Gezgini'nde geçti olarak görüntülenmelidir.  
+    .Csv dosyasında değerleri kullanarak üç yineleme aracılığıyla testi görmeniz gerekir. Doğrulama de çalışması gerekir ve test, Test Gezgini'nde geçti olarak görüntülenmelidir.  
   
- **Kılavuz**  
+   **Kılavuz**  
   
- Ek bilgi için bkz: [Visual Studio 2012 – bölüm 2 ile sürekli teslimat testi: birim testi: iç testler](http://go.microsoft.com/fwlink/?LinkID=255188) ve [Visual Studio 2012 – Chapter 5 ile sürekli teslimat testi: Sistem testlerini otomatikleştirme](http://go.microsoft.com/fwlink/?LinkID=255196)  
+   Ek bilgi için bkz: [Visual Studio 2012 – bölüm 2 ile sürekli teslimat testi: birim testi: iç testler](http://go.microsoft.com/fwlink/?LinkID=255188) ve [Visual Studio 2012 – Chapter 5 ile sürekli teslimat testi: Sistem testlerini otomatikleştirme](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ## <a name="q--a"></a>Soru - Yanıt  
   

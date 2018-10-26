@@ -29,12 +29,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2a136647fc3ce8114b492e8f055efe0eb1a3889
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0f9d881970e24a00223a17cbf3873bdb842ed32e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173634"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940409"
 ---
 # <a name="watch-and-quickwatch-windows"></a>İzleme ve QuickWatch Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,19 +92,19 @@ static void Main(string[] args)
   
  Üç değişkenlerin değerleri İzle penceresine aşağıdaki şekilde ekleyin:  
   
-1.  Bir kesme noktası ayarlamak `c = a + b;` satır.  
+1. Bir kesme noktası ayarlamak `c = a + b;` satır.  
   
-2.  Hata Ayıklamayı Başlat (**F5**). Yürütme kesme noktasında durur.  
+2. Hata Ayıklamayı Başlat (**F5**). Yürütme kesme noktasında durur.  
   
-3.  Gözcü penceresi açın (**hata ayıklama / Windows / izleyin / izleyin 1**, veya **CTRL + ALT + W, 1**).  
+3. Gözcü penceresi açın (**hata ayıklama / Windows / izleyin / izleyin 1**, veya **CTRL + ALT + W, 1**).  
   
-4.  Ekle `a` ilk satırın değişkenini `b` ikinci satır, değişken ve `c` üçüncü satır değişkeni.  
+4. Ekle `a` ilk satırın değişkenini `b` ikinci satır, değişken ve `c` üçüncü satır değişkeni.  
   
-5.  Hata ayıklamaya devam et.  
+5. Hata ayıklamaya devam et.  
   
- Değişken değerleri, yinelenecek şekilde değiştirme görmelisiniz `for` döngü.  
+   Değişken değerleri, yinelenecek şekilde değiştirme görmelisiniz `for` döngü.  
   
- Yerel kodda programlama yapıyorsanız, bazen bağlamını bir değişken adı veya değişken adını içeren bir ifadeyi nitelemeniz gerekebilir. , İşlev, kaynak dosyası ve bir değişkenin bulunduğu modül bağlamıdır. Bunu yapmanız gerekirsi içerik işleci sözdizimini kullanabilirsiniz. Daha fazla bilgi için C++ ifadeler bakın.  
+   Yerel kodda programlama yapıyorsanız, bazen bağlamını bir değişken adı veya değişken adını içeren bir ifadeyi nitelemeniz gerekebilir. , İşlev, kaynak dosyası ve bir değişkenin bulunduğu modül bağlamıdır. Bunu yapmanız gerekirsi içerik işleci sözdizimini kullanabilirsiniz. Daha fazla bilgi için C++ ifadeler bakın.  
   
 ## <a name="observing-expressions-with-the-watch-window"></a>İzleme penceresinde ifadelerle gözleme  
  Artık bir ifade kullanmayı deneyelim. Hata ayıklayıcı tarafından tanınan herhangi bir geçerli ifade ekleyebilirsiniz.  
@@ -138,15 +138,15 @@ static void Main(string[] args)
   
  Simgenin üzerine, bir araç ipucu ifadesi değil neden değerlendirildiğinde hakkında bilgi sağlar.  Circling oklar görünüyorsa, ifade aşağıdaki nedenlerden birinden dolayı değerlendirildiği değil:  
   
--   İfade değerlendirildiğinde gibi • bir hata oluştu. Örneğin, bir zaman aşımı oluşmuş olabilir veya bir değişken kapsam dışına silinmiş olabilir.  
+- İfade değerlendirildiğinde gibi • bir hata oluştu. Örneğin, bir zaman aşımı oluşmuş olabilir veya bir değişken kapsam dışına silinmiş olabilir.  
   
--   • İfade işlev çağrısı, bir uygulamada bir yan etkisi tetikleyebilir içerir (bkz [yan etkiler ve ifadeler](#bkmk_sideEffects)).  
+- • İfade işlev çağrısı, bir uygulamada bir yan etkisi tetikleyebilir içerir (bkz [yan etkiler ve ifadeler](#bkmk_sideEffects)).  
   
--   Özellikler ve hata ayıklayıcı tarafından dolaylı işlev çağrıları otomatik olarak değerlendirilmesini devre dışı bırakılmış durumdadır (**Araçlar / Seçenekler / hata ayıklama / özellik değerlendirmesini ve diğer örtük işlev çağrılarını etkinleştir**), ve ardından bir ifade olamaz otomatik olarak değerlendirilir.  
+- Özellikler ve hata ayıklayıcı tarafından dolaylı işlev çağrıları otomatik olarak değerlendirilmesini devre dışı bırakılmış durumdadır (**Araçlar / Seçenekler / hata ayıklama / özellik değerlendirmesini ve diğer örtük işlev çağrılarını etkinleştir**), ve ardından bir ifade olamaz otomatik olarak değerlendirilir.  
   
- Değer yenilemek için Yenile simgesine tıklayın veya Ara çubuğuna basın. Hata ayıklayıcısı ifadeyi yeniden dener. Özellikler ve örtük yan etkileri otomatik olarak değerlendirilmesini kapatıldığı için yenileme simgesi görüntüleniyorsa, ifade değerlendirilir.  
+  Değer yenilemek için Yenile simgesine tıklayın veya Ara çubuğuna basın. Hata ayıklayıcısı ifadeyi yeniden dener. Özellikler ve örtük yan etkileri otomatik olarak değerlendirilmesini kapatıldığı için yenileme simgesi görüntüleniyorsa, ifade değerlendirilir.  
   
- İş parçacıkları benzer iki dalgalı çizgiler daire bir simgeyi görürseniz, olası bir iş parçacıkları arası bağımlılık nedeniyle ifade Hesaplandı değil. Diğer bir deyişle, kodu değerlendirme, geçici olarak çalışması için uygulamanızı diğer iş parçacıkları gerektirir. Kesme modunda olduğunda, uygulamanızdaki tüm iş parçacıkları genellikle durdurulur. Diğer iş parçacıklarını geçici olarak çalışmasına izin vererek olabilir beklenmeyen etkiler, programınızın durumunu ve kesme noktaları ve bu iş parçacıkları üzerinde oluşturulan özel durumlar gibi olayları yok saymak hata ayıklayıcı neden olur.  
+  İş parçacıkları benzer iki dalgalı çizgiler daire bir simgeyi görürseniz, olası bir iş parçacıkları arası bağımlılık nedeniyle ifade Hesaplandı değil. Diğer bir deyişle, kodu değerlendirme, geçici olarak çalışması için uygulamanızı diğer iş parçacıkları gerektirir. Kesme modunda olduğunda, uygulamanızdaki tüm iş parçacıkları genellikle durdurulur. Diğer iş parçacıklarını geçici olarak çalışmasına izin vererek olabilir beklenmeyen etkiler, programınızın durumunu ve kesme noktaları ve bu iş parçacıkları üzerinde oluşturulan özel durumlar gibi olayları yok saymak hata ayıklayıcı neden olur.  
   
 ##  <a name="bkmk_sideEffects"></a> Yan etkiler ve ifadeler  
  Bazı ifadelerin değerlendirilmesi bir değişkenin değerini değiştirebilir veya aksi halde, programınızın durumunu etkileyebilir. Örneğin, aşağıdaki ifade değerlendirildiğinde değerini değiştirir `var1`:  
@@ -238,11 +238,11 @@ public class Program
   
  Yalnızca görüntülemek istiyorsanız **dinamik Görünüm** bir nesne için kullanabileceğiniz **dinamik** biçim belirticisi:  
   
--   C# ' ta: **ObjectName dinamik**  
+- C# ' ta: **ObjectName dinamik**  
   
--   Visual Basic:: **$dynamic, ObjectName**  
+- Visual Basic:: **$dynamic, ObjectName**  
   
- **Dinamik Görünüm** COM nesneleri için hata ayıklama deneyimini de geliştirir. Hata ayıklayıcısı içinde sarmalanmış bir COM nesnesi karşılaştığında **System.comobject'e**, ekler bir **dinamik Görünüm** düğüm nesnesi.  
+  **Dinamik Görünüm** COM nesneleri için hata ayıklama deneyimini de geliştirir. Hata ayıklayıcısı içinde sarmalanmış bir COM nesnesi karşılaştığında **System.comobject'e**, ekler bir **dinamik Görünüm** düğüm nesnesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata Ayıklayıcısı Pencereleri](../debugger/debugger-windows.md)

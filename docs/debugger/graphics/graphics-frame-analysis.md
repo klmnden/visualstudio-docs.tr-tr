@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f744848292c4d288be82bf4ca462d7ccae257d8a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e0ae541830adab222b07d1f16ce99e4957e380e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280085"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838107"
 ---
 # <a name="graphics-frame-analysis"></a>Grafik Çerçeve Çözümlemesi
 Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalarda işleme performansını iyileştirmek için Visual Studio grafik Çözümleyicisi'nde kullanın.  
@@ -24,17 +24,17 @@ Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalar
 ## <a name="frame-analysis"></a>Çerçeve analizi  
  Çerçeve analizi tanılama amacıyla bir grafik günlük dosyasında yakalanır ama bunun yerine işleme performansını özetlemek için kullandığı aynı olan bilgileri kullanır. Performans bilgilerini yakalama sırasında günlüğe kayıtlı değil; Çerçeve kayıttan gibi bunun yerine performans bilgileri daha sonra çerçeve analizi sırasında zamanlama olayları ve toplama istatistiklerini tarafından oluşturulur. Bu yaklaşım, yakalama sırasında performans bilgilerini kaydetme üzerinde çeşitli avantajları vardır:  
   
--   Çerçeve analizi sonuçları Özet performans istatistiksel olarak ses olduğundan emin olmak için aynı çerçevenin birden çok her oynatma ortalama.  
+- Çerçeve analizi sonuçları Özet performans istatistiksel olarak ses olduğundan emin olmak için aynı çerçevenin birden çok her oynatma ortalama.  
   
--   Çerçeve analizi, donanım yapılandırmaları ve bilgilerin yakalandığı farklı cihazlar için performans bilgilerini oluşturabilir.  
+- Çerçeve analizi, donanım yapılandırmaları ve bilgilerin yakalandığı farklı cihazlar için performans bilgilerini oluşturabilir.  
   
--   Çerçeve analizi daha önce yakalanan bilgilerinden yeni performans özetlerini oluşturun — Örneğin, ne zaman GPU sürücüleri iyileştirilmiştir veya ek hata ayıklama özellikleri kullanıma sunar.  
+- Çerçeve analizi daha önce yakalanan bilgilerinden yeni performans özetlerini oluşturun — Örneğin, ne zaman GPU sürücüleri iyileştirilmiştir veya ek hata ayıklama özellikleri kullanıma sunar.  
   
- Bu avantajlara ek olarak, çerçeve analizi aynı zamanda bir uygulamanın işleme performansını bu değişiklikleri nasıl etkileyebileceğini hakkında bilgi sunabilir, çerçeve kayıttan yürütme sırasında işlenme için değişiklik yapabilirsiniz. Tümünü uygulayın ve ardından yakalamak ve tüm sonuçlarını karşılaştırın gerek kalmadan olası en iyi duruma getirme stratejileri arasında karar vermek için bu bilgileri kullanabilirsiniz.  
+  Bu avantajlara ek olarak, çerçeve analizi aynı zamanda bir uygulamanın işleme performansını bu değişiklikleri nasıl etkileyebileceğini hakkında bilgi sunabilir, çerçeve kayıttan yürütme sırasında işlenme için değişiklik yapabilirsiniz. Tümünü uygulayın ve ardından yakalamak ve tüm sonuçlarını karşılaştırın gerek kalmadan olası en iyi duruma getirme stratejileri arasında karar vermek için bu bilgileri kullanabilirsiniz.  
   
- Çerçeve analizi öncelikle işleme daha hızlı performans elde etmenize yardımcı olmak amacıyla hazırlanmıştır olsa da, eşit olarak belirli performans hedefi için daha iyi görsel kaliteyi elde etmek veya GPU güç tüketimini azaltmak yardımcı olur.  
+  Çerçeve analizi öncelikle işleme daha hızlı performans elde etmenize yardımcı olmak amacıyla hazırlanmıştır olsa da, eşit olarak belirli performans hedefi için daha iyi görsel kaliteyi elde etmek veya GPU güç tüketimini azaltmak yardımcı olur.  
   
- Çerçeve analizi uygulamanız için neler yapabileceğinizi bir örnek görmek için izleyebilirsiniz [Visual Studio grafik çerçevesi analizi](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) Channel 9 video.  
+  Çerçeve analizi uygulamanız için neler yapabileceğinizi bir örnek görmek için izleyebilirsiniz [Visual Studio grafik çerçevesi analizi](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) Channel 9 video.  
   
 ## <a name="using-frame-analysis"></a>Çerçeve analizi kullanma  
  Çerçeve analizi kullanabilmeniz için önce çalıştığı bir grafik Çözümleyicisi araçlardan birini kullanırken yaptığınız gibi uygulamanızdan grafik bilgilerini yakalama gerekir. Ardından, grafik günlüğü (.vsglog) belge penceresinde **çerçeve analizi** sekmesi.  
@@ -48,23 +48,23 @@ Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalar
   
  Bazı sonuçları doğrudan değişken işleme performansını nasıl etkilediğini gösterir:  
   
--   Doku çift doğrusal filtreleme değişken performans kazancı elde edildi ise, uygulamanızda filtreleme çeşitleri doku'ı kullanarak benzer performans artışı gösterilir.  
+- Doku çift doğrusal filtreleme değişken performans kazancı elde edildi ise, uygulamanızda filtreleme çeşitleri doku'ı kullanarak benzer performans artışı gösterilir.  
   
--   1 x 1 Görünüm penceresi değişken performans kazancı elde edildi ise, ardından uygulamanıza işleme hedefleri boyutunu küçültmeyi işleme performansını geliştirir.  
+- 1 x 1 Görünüm penceresi değişken performans kazancı elde edildi ise, ardından uygulamanıza işleme hedefleri boyutunu küçültmeyi işleme performansını geliştirir.  
   
--   BC doku sıkıştırma çeşidi performans kazancı elde edildi ise, sonra da uygulamanızda BC doku sıkıştırma kullanarak benzer performans artışı gösterilir.  
+- BC doku sıkıştırma çeşidi performans kazancı elde edildi ise, sonra da uygulamanızda BC doku sıkıştırma kullanarak benzer performans artışı gösterilir.  
   
--   2xMSAA değişken neredeyse aynı performans 0xMSAA değişken varsa, uygulamanızda performans maliyeti olmadan işleme kalitesini artırmak için 2xMSAA etkinleştirebilirsiniz.  
+- 2xMSAA değişken neredeyse aynı performans 0xMSAA değişken varsa, uygulamanızda performans maliyeti olmadan işleme kalitesini artırmak için 2xMSAA etkinleştirebilirsiniz.  
   
- Diğer sonuçlar, uygulamanızın performansına daha derin, daha hafif etkileri önerebilir:  
+  Diğer sonuçlar, uygulamanızın performansına daha derin, daha hafif etkileri önerebilir:  
   
--   1 x 1 Görünüm penceresi değişken çok yüksek performans artışları gösteriyorsa, uygulamanızın büyük olasılıkla bulunandan daha fazla fillrate tüketiyor. Bu değişken bir performans kazancı elde edildi gösteriyorsa, uygulamanın büyük olasılıkla çok fazla köşe işliyor.  
+- 1 x 1 Görünüm penceresi değişken çok yüksek performans artışları gösteriyorsa, uygulamanızın büyük olasılıkla bulunandan daha fazla fillrate tüketiyor. Bu değişken bir performans kazancı elde edildi gösteriyorsa, uygulamanın büyük olasılıkla çok fazla köşe işliyor.  
   
--   16bpp işleme hedef biçim çeşidi önemli ölçüde performans kazanımı gösteriyorsa, uygulamanızın büyük olasılıkla çok fazla bellek bant genişliği tüketiyor.  
+- 16bpp işleme hedef biçim çeşidi önemli ölçüde performans kazanımı gösteriyorsa, uygulamanızın büyük olasılıkla çok fazla bellek bant genişliği tüketiyor.  
   
--   Önemli ölçüde performans kazanımı Half/Quarter doku boyutları çeşidi gösterir, dokular, büyük olasılıkla çok fazla bellek kaplayabilir, çok fazla bant genişliği tüketebilir veya doku önbelleğinin kullanamayabilir. Bu değişken performans içinde değişiklik gösteriyorsa, büyük olasılıkla bir performans maliyeti ödeme yapmadan daha büyük, daha ayrıntılı dokular kullanabilirsiniz.  
+- Önemli ölçüde performans kazanımı Half/Quarter doku boyutları çeşidi gösterir, dokular, büyük olasılıkla çok fazla bellek kaplayabilir, çok fazla bant genişliği tüketebilir veya doku önbelleğinin kullanamayabilir. Bu değişken performans içinde değişiklik gösteriyorsa, büyük olasılıkla bir performans maliyeti ödeme yapmadan daha büyük, daha ayrıntılı dokular kullanabilirsiniz.  
   
- Donanım sayaçları kullanılabilir olduğunda, uygulamanızın işleme performansını neden yaşıyorsa hakkında çok ayrıntılı bilgi toplamak için kullanabilirsiniz. Tüm özellik düzeyinde 9.2 ve üzeri cihazlar derinliği kapatma sorgularını destekler (**occluded piksel** sayacı) ve zaman damgası. Diğer donanım sayaçları GPU üreticisi ve donanım sayaçları uygulanan bunları sürücüsünü kullanıma bağlı olarak mevcut olabilir. Bu sayaçlar özet tabloda gösterilen sonuçları kesin nedenini onaylamak için kullanabileceğiniz — Örneğin, belirleyebilirsiniz olup overdraw tarafından derinlik testinde occluded piksel yüzdesi inceleyerek bir faktördür.  
+  Donanım sayaçları kullanılabilir olduğunda, uygulamanızın işleme performansını neden yaşıyorsa hakkında çok ayrıntılı bilgi toplamak için kullanabilirsiniz. Tüm özellik düzeyinde 9.2 ve üzeri cihazlar derinliği kapatma sorgularını destekler (**occluded piksel** sayacı) ve zaman damgası. Diğer donanım sayaçları GPU üreticisi ve donanım sayaçları uygulanan bunları sürücüsünü kullanıma bağlı olarak mevcut olabilir. Bu sayaçlar özet tabloda gösterilen sonuçları kesin nedenini onaylamak için kullanabileceğiniz — Örneğin, belirleyebilirsiniz olup overdraw tarafından derinlik testinde occluded piksel yüzdesi inceleyerek bir faktördür.  
   
 ### <a name="timeline-and-summary-table"></a>Zaman Çizelgesi ve Özet Tablosu  
  Varsayılan olarak, Özet Tablo ve zaman çizelgesi görüntülenir ve diğer bölümleri daraltılır.  
@@ -147,9 +147,9 @@ Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalar
   
  Hiçbir bilgisayar şu anda Intel, AMD veya NVIDIA tarafından sunulan GPU GPU donanım sayaçları güvenilir bir şekilde desteklediğinden, çerçeve analizi bunları sayaçlarını toplamaz. Ancak, çerçeve analizi güvenilir bir şekilde destekleyen aşağıdaki GPU donanım sayaçları toplamak:  
   
--   NVIDIA T40 (Tegra4)
+- NVIDIA T40 (Tegra4)
   
- Çerçeve analizi destekleyen herhangi bir platform GPU donanım sayaçlarını toplar.  
+  Çerçeve analizi destekleyen herhangi bir platform GPU donanım sayaçlarını toplar.  
   
 > [!NOTE]
 >  GPU donanım sayaçları donanım kaynaklar olduğundan, uygulamanın her işleme değişken için donanım sayaçları kümesinin tamamını toplamak için birden çok geçiş sürebilir. Sonuç olarak, hangi GPU'yu sayaçlar toplanır belirtilmeyen sırasıdır.  

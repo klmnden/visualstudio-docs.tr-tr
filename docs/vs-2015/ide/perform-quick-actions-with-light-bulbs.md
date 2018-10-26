@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 338e8e82e8b8f904c6f7f1e9e5f079e3de788bd3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3eff05df37dd1d15774fb059396f3f94b0fff2a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294573"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883464"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>Ampullerle hızlı eylemler gerçekleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Ampuller, Visual Studio 2015'te yeni bir üretkenlik özelliğidir. Visual Studi
   
 ## <a name="to-see-a-light-bulb"></a>Bir ampul görmek için  
   
-1.  Çoğu durumda, giriş işaretini bir hata var. bir satır taşıdığınız zaman noktasında bir hata veya düzenleyicinin sol kenar boşluğunda fare geldiğinizde ampuller kendiliğinden görünür. Kırmızı dalgalı gördüğünüzde, ampul görüntülemek için onu gelebilirsiniz. Ayrıca, herhangi bir satırda sorunun nerede oluştuğunu gitmek için klavye ve fare kullandığınızda görüntülemek bir ampul de neden olabilir.  
+1. Çoğu durumda, giriş işaretini bir hata var. bir satır taşıdığınız zaman noktasında bir hata veya düzenleyicinin sol kenar boşluğunda fare geldiğinizde ampuller kendiliğinden görünür. Kırmızı dalgalı gördüğünüzde, ampul görüntülemek için onu gelebilirsiniz. Ayrıca, herhangi bir satırda sorunun nerede oluştuğunu gitmek için klavye ve fare kullandığınızda görüntülemek bir ampul de neden olabilir.  
   
-2.  Tuşuna **Ctrl +.** Ampul çağırmak ve doğrudan olası listesine gitmek için bir satırda herhangi bir yere düzeltir.  
+2. Tuşuna **Ctrl +.** Ampul çağırmak ve doğrudan olası listesine gitmek için bir satırda herhangi bir yere düzeltir.  
   
- ![Ampul fare vurgulama ile](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")  
+   ![Ampul fare vurgulama ile](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")  
   
 ## <a name="to-see-potential-fixes"></a>Olası düzeltmeleri görmek için  
  Bulunan aşağı oka tıklayın ya da ampul için izleyebileceğiniz hızlı eylemlerin bir listesini görüntülemek için bağlantıyı Show olası düzeltmeleri.  

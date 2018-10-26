@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9d446cfa4eca86ff4657fc9a8741aa965fd43de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed03ae8ace6fe96c579d324422403d69e2248687
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290504"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881969"
 ---
 # <a name="debugger-security"></a>Hata Ayıklama Güvenliği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Başka bir işlem hata ayıklama olanağı, aksi takdirde, özellikle de uzaktan
 ### <a name="managed-debugging-security"></a>Yönetilen hata ayıklama güvenlik  
  Aşağıda, tüm yönetilen hata ayıklama uygulanan genel bazı öneriler verilmiştir.  
   
--   Güvenilmeyen bir kullanıcının işlemine iliştirme oluştururken dikkatli olun: Bu işlemi gerçekleştirdiğinizde, güvenilir olduğunu varsayın. Güvenilmeyen bir kullanıcının işleme girişiminde bulunduğunuzda bir güvenlik uyarısı iletişim kutusu onayı işleme isteyip istemediğinizi soran görünür. "Kullanıcıların güvenilen", dahil, ve bir dizi standart kullanıcıların yaygın olarak .NET Framework gibi yüklü olan makineler üzerinde tanımlanan **aspnet**, **localsystem**, **networkservice**, ve **localservice**. Daha fazla bilgi için [güvenlik uyarısı: güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme tehlikeli olabilir. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md).  
+- Güvenilmeyen bir kullanıcının işlemine iliştirme oluştururken dikkatli olun: Bu işlemi gerçekleştirdiğinizde, güvenilir olduğunu varsayın. Güvenilmeyen bir kullanıcının işleme girişiminde bulunduğunuzda bir güvenlik uyarısı iletişim kutusu onayı işleme isteyip istemediğinizi soran görünür. "Kullanıcıların güvenilen", dahil, ve bir dizi standart kullanıcıların yaygın olarak .NET Framework gibi yüklü olan makineler üzerinde tanımlanan **aspnet**, **localsystem**, **networkservice**, ve **localservice**. Daha fazla bilgi için [güvenlik uyarısı: güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme tehlikeli olabilir. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md).  
   
--   Internet ve içine yüklenirken kapalı bir proje indirme işlemi gerçekleştirirken dikkatli olun [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Bu hata ayıklama olmadan bile yapmak için çok risklidir. Bunu yaptığınızda, proje ve içerdiği kod güvenilir olduğunu varsayarak.  
+- Internet ve içine yüklenirken kapalı bir proje indirme işlemi gerçekleştirirken dikkatli olun [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Bu hata ayıklama olmadan bile yapmak için çok risklidir. Bunu yaptığınızda, proje ve içerdiği kod güvenilir olduğunu varsayarak.  
   
- Daha fazla bilgi için [yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md).  
+  Daha fazla bilgi için [yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md).  
   
 ### <a name="remote-debugging-security"></a>Uzaktan hata ayıklama güvenlik  
  Yerel hata ayıklama, uzaktan hata ayıklama daha genellikle güvenlidir. Uzaktan hata ayıklama araştırıldığı toplam yüzey alanını artırır.  
@@ -79,11 +79,11 @@ Başka bir işlem hata ayıklama olanağı, aksi takdirde, özellikle de uzaktan
 ### <a name="symbols-and-source-code"></a>Simgeler ve kaynak kodu  
  İki [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] güvenlik göz önünde bulundurulması gereken araçlar şunlardır:  
   
--   Kaynak sunucu sürümleriyle kaynak koddan bir kaynak kodu deposu sağlar. Geçerli sürümü, bir programın kaynak koduna sahip durumlarda yararlı olur. [Güvenlik Uyarısı: Hata ayıklayıcı güvenilmeyen komut yürütmeli](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
+- Kaynak sunucu sürümleriyle kaynak koddan bir kaynak kodu deposu sağlar. Geçerli sürümü, bir programın kaynak koduna sahip durumlarda yararlı olur. [Güvenlik Uyarısı: Hata ayıklayıcı güvenilmeyen komut yürütmeli](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
   
--   Sembol sunucusu, bir sistem çağrısı sırasında bir kilitlenme hatalarını ayıklamak için gerekli sembolleri sağlamak için kullanılır.  
+- Sembol sunucusu, bir sistem çağrısı sırasında bir kilitlenme hatalarını ayıklamak için gerekli sembolleri sağlamak için kullanılır.  
   
- Bkz: [sembol (.pdb) belirtin ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+  Bkz: [sembol (.pdb) belirtin ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)   

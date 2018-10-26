@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a2f919e1dce6864fa25348acd9c9858f9e4022f8
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 990b55f4ba78f32acba40c325ade596f5628c54f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857709"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893942"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL Tanımının Özellikleri
 DslDefinition özelliklerini tanımlayın *etki alanına özgü dil* sürümü numaralandırma gibi tanımı özellikleri. DslDefinition özellikleri görünür **özellikleri** pencere, diyagramdaki boş bir alanı tıkladığınızda *etki alanına özgü dil tasarımcısını*.
@@ -26,7 +26,7 @@ DslDefinition özelliklerini tanımlayın *etki alanına özgü dil* sürümü n
  DslDefinition aşağıdaki tabloda özelliklere sahiptir:
 
 |Özellik|Açıklama|Varsayılan|
-|--------------|-----------------|-------------|
+|-|-|-|
 |Erişim değiştiricisi|Alan sınıfına ait erişim değiştiricisinin public veya internal olduğunu belirler.|public|
 |Özel Öznitelikler|Özel öznitelikler etki alanı sınıfı için tanımlanmış.<br /><br /> **Not** bir öznitelik eklemek için Gözat düğmesini kullanın.|\<yok >|
 |Şirket adı|Sistem kayıt defterinde geçerli şirket adı adı.|Geçerli bir şirket adı|

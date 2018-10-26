@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e2c960fda37a15fe129a6a2b67c4a55c297cefa
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f2ba9e49a45305c42f813f996392bb1fa5af41b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676892"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842670"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office çözümleri geliştirmesine genel bakış (VSTO)
   Çözümleri Microsoft Office'in ön ucu olarak kullanarak, tanıdık Microsoft Office kullanıcı arabirimleri ve sözcük işlem özellikleri Word, Excel verilerini analiz özelliklerini ve Outlook e-posta yönetimi özelliklerini gibi araçları yararlanabilir . Office uygulamalarını özelleştirin ve iş süreçleriniz için gereken belirli özellikleri eklemek için Visual Studio çözümleri geliştirebilirsiniz. Örneğin, Word'ün kullanıma sözleşmeleri düzenlenebilir veya düzenlenemez yapılabilmesi için önceden varolan parçaların çeviren bir sözleşme oluşturucuyu kapatabilirsiniz. Excel ile farklı projeler için özelleştirilmiş bir otomatik bütçe çalışma sayfası oluşturabilirsiniz. Kullanıcılarınızın, karmaşık çözümleri web tabanlı bir mimari kullanırsanız, duruma göre daha pratik hale getiren office çözümlerini çevrimdışı da yararlanabilirsiniz.  
@@ -31,13 +31,13 @@ ms.locfileid: "35676892"
 ## <a name="choose-an-office-project-type"></a>Bir Office proje türünü seçin  
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] VSTO tabanlı Office geliştirme için proje şablonları aşağıdaki türlerini sağlar:  
   
--   **Belge düzeyi özelleştirmeleri** belirli bir belgeyle ilişkilidir.  
+- **Belge düzeyi özelleştirmeleri** belirli bir belgeyle ilişkilidir.  
   
--   **VSTO eklentileri** uygulamayla ilişkilendirilir.  
+- **VSTO eklentileri** uygulamayla ilişkilendirilir.  
   
- Bu proje türleri, çözümünüz için en iyi olduğuna karar vermek için kodunuzu çalıştırmak için istediğinizi düşünün yalnızca belirli bir belge açık olduğundan veya uygulama kodunun kullanılabilir olmasını isteyip istemediğinizi her çalıştığı. Proje şablonları hakkında daha fazla bilgi için bkz. [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md).  
+  Bu proje türleri, çözümünüz için en iyi olduğuna karar vermek için kodunuzu çalıştırmak için istediğinizi düşünün yalnızca belirli bir belge açık olduğundan veya uygulama kodunun kullanılabilir olmasını isteyip istemediğinizi her çalıştığı. Proje şablonları hakkında daha fazla bilgi için bkz. [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md).  
   
- Oluşturabileceğiniz proje türleri, hangi Office uygulamalarını geliştirme bilgisayarına yüklediğiniz bağlıdır. Daha fazla bilgi için [Office uygulaması ve proje türüne göre kullanılabilen özellikler](../vsto/features-available-by-office-application-and-project-type.md).  
+  Oluşturabileceğiniz proje türleri, hangi Office uygulamalarını geliştirme bilgisayarına yüklediğiniz bağlıdır. Daha fazla bilgi için [Office uygulaması ve proje türüne göre kullanılabilen özellikler](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ### <a name="document-level-customizations"></a>Belge düzeyinde özelleştirmeler  
  Belge düzeyi özelleştirmelerini tek bir belge, çalışma kitabı veya Microsoft Office Word veya Microsoft Office Excel şablonu ile ilişkili olan derleme oluşur. İlişkili belge açıldığında derleme yüklenir. Oluşturma, özelleştirme özellikleri, ilişkili belge açık olduğunda kullanılabilir. Özelleştirmeleri, herhangi bir belge açık olduğunda, yeni bir menü öğesi veya Şerit sekmesi görüntüleme gibi birçok farklı uygulama değişiklikleri yapamazsınız.  

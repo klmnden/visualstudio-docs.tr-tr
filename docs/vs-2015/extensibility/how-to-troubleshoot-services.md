@@ -15,27 +15,27 @@ ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 97084a1fe66bb84c56e1f6452397df9128f4d08f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fdce9cb5e6499066c7e96abe895db1505f952011
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279038"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826630"
 ---
 # <a name="how-to-troubleshoot-services"></a>Nasıl yapılır: hizmetlerde sorun giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir hizmet almayı deneyin gerektiğinde oluşabilecek bazı ortak sorunlar vardır:  
   
--   Hizmet ile kayıtlı değil [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- Hizmet ile kayıtlı değil [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   Arabirim türü ve hizmet türü tarafından değil hizmet istenen.  
+- Arabirim türü ve hizmet türü tarafından değil hizmet istenen.  
   
--   Hizmet isteyen VSPackage tarihli değil.  
+- Hizmet isteyen VSPackage tarihli değil.  
   
--   Yanlış hizmet sağlayıcısı kullanılır.  
+- Yanlış hizmet sağlayıcısı kullanılır.  
   
- İstenen hizmet elde edilemiyor varsa, çağrı <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> null döndürür. Bir hizmet istedikten sonra her zaman null için test etmeniz gerekir:  
+  İstenen hizmet elde edilemiyor varsa, çağrı <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> null döndürür. Bir hizmet istedikten sonra her zaman null için test etmeniz gerekir:  
   
 ```csharp  
 IVsActivityLog log =   

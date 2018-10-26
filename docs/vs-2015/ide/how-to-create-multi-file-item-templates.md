@@ -18,25 +18,25 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cda39459d0ddc0920dbb5b47157d90160ad3d166
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 00d7fbaa97172c98db61f93706f7e596bb22ddee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286799"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862183"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Nasıl Yapılır: Çok Dosyalı Şablonlar Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Öğe şablonları, yalnızca bir öğe belirtebilirsiniz, ancak öğe birden çok dosya bazen oluşur. Örneğin, bir Windows Forms öğe şablonu Visual Basic için aşağıdaki üç dosyayı gerektirir:  
   
--   Form için kod içeren bir .vb dosyası.  
+- Form için kod içeren bir .vb dosyası.  
   
--   Bir. form tasarımcısı bilgilerini içeren dosya Designer.vb olarak adlandırılır.  
+- Bir. form tasarımcısı bilgilerini içeren dosya Designer.vb olarak adlandırılır.  
   
--   Form için gömülü kaynaklar içeren bir .resx dosyası.  
+- Form için gömülü kaynaklar içeren bir .resx dosyası.  
   
- Çok dosyalı öğe şablonları gerekli parametreleri doğru dosya adı uzantılarını öğesi oluşturulduğunda kullanılan emin olmak için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Kullanarak bir öğe şablonu oluşturursanız **şablonu dışarı aktar** sihirbazında bu parametreleri otomatik olarak oluşturulur ve başka düzenleme gereklidir. Aşağıdaki adımlarda parametreleri doğru dosya adı uzantılarını oluşturulmasını sağlamak için nasıl kullanılacağını açıklanmaktadır.  
+  Çok dosyalı öğe şablonları gerekli parametreleri doğru dosya adı uzantılarını öğesi oluşturulduğunda kullanılan emin olmak için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Kullanarak bir öğe şablonu oluşturursanız **şablonu dışarı aktar** sihirbazında bu parametreleri otomatik olarak oluşturulur ve başka düzenleme gereklidir. Aşağıdaki adımlarda parametreleri doğru dosya adı uzantılarını oluşturulmasını sağlamak için nasıl kullanılacağını açıklanmaktadır.  
   
 ### <a name="to-manually-create-a-multi-file-item-template"></a>Çok dosyalı öğe şablonu el ile oluşturmak için  
   

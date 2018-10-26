@@ -12,12 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: a059cb5c0f295bc7f14ff8a0ce30ed21e4e70145
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 030e142911078aec36b01335c8fb3aaa4d82ac78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306195"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849651"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>C++ için Visual Studio veri araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,44 +31,44 @@ Veri kaynaklarına erişirken yerel C++ genellikle en hızlı performans sağlar
   
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Bir C++ uygulamasından localDB ODBC ve SQL Native Client aracılığıyla bağlanmak için  
   
-1.  SQL Server veri Araçları'nı yükleyin.  
+1. SQL Server veri Araçları'nı yükleyin.  
   
-2.  Örnek SQL veritabanına bağlanmak için gerekiyorsa, Northwind veritabanı indirin ve yeni bir konuma sıkıştırmasını açın.  
+2. Örnek SQL veritabanına bağlanmak için gerekiyorsa, Northwind veritabanı indirin ve yeni bir konuma sıkıştırmasını açın.  
   
-3.  LocalDB sıkıştırması Northwind.mdf dosya eklemek için SQL Server Management Studio'yu kullanın. SQL Server Management Studio başlatıldığında (localdb) \MSSQLLocalDB bağlanın.  
+3. LocalDB sıkıştırması Northwind.mdf dosya eklemek için SQL Server Management Studio'yu kullanın. SQL Server Management Studio başlatıldığında (localdb) \MSSQLLocalDB bağlanın.  
   
-     ![SSMS bağlanma iletişim](../data-tools/media/raddata-ssms-connect-dialog.png "raddata SSMS bağlanma iletişim kutusu")  
+    ![SSMS bağlanma iletişim](../data-tools/media/raddata-ssms-connect-dialog.png "raddata SSMS bağlanma iletişim kutusu")  
   
-     Ardından localdb düğümü sol bölmede sağ tıklatın ve seçin **iliştirme**.  
+    Ardından localdb düğümü sol bölmede sağ tıklatın ve seçin **iliştirme**.  
   
-     ![Veritabanını SSMS ekleme](../data-tools/media/raddata-ssms-attach-database.png "raddata veritabanını SSMS ekleme")  
+    ![Veritabanını SSMS ekleme](../data-tools/media/raddata-ssms-attach-database.png "raddata veritabanını SSMS ekleme")  
   
-4.  ODBC Windows SDK örneği indirin ve yeni bir konuma sıkıştırmasını açın. Bu örnek, bir veritabanı ve çıkış sorguları ve komutları bağlanmak için kullanılan temel ODBC komutları gösterir. Bu işlevler hakkında daha fazla bilgi [Microsoft açık veritabanı bağlantısı (ODBC)](https://msdn.microsoft.com/library/windows/desktop/ms710252\(v=vs.85\).aspx). (Bu, C++ klasöründe bulunur) çözümü ilk kez yüklediğinizde, Visual Studio çözümü Visual Studio'nun geçerli sürümüne yükseltme olanağı sunar. **Evet**'i tıklayın.  
+4. ODBC Windows SDK örneği indirin ve yeni bir konuma sıkıştırmasını açın. Bu örnek, bir veritabanı ve çıkış sorguları ve komutları bağlanmak için kullanılan temel ODBC komutları gösterir. Bu işlevler hakkında daha fazla bilgi [Microsoft açık veritabanı bağlantısı (ODBC)](https://msdn.microsoft.com/library/windows/desktop/ms710252\(v=vs.85\).aspx). (Bu, C++ klasöründe bulunur) çözümü ilk kez yüklediğinizde, Visual Studio çözümü Visual Studio'nun geçerli sürümüne yükseltme olanağı sunar. **Evet**'i tıklayın.  
   
-5.  Yerel istemci kullanmak için lib dosya ve üstbilgi dosyası gerekir. Bu dosyalar, İşlevler ve sql.h içinde tanımlanan ODBC işlevleri ötesinde SQL Server'a özel tanımları içerir. İçinde **proje** > **özellikleri** > **VC ++ dizinleri**, aşağıdakileri içeren dizin ekleyin:  
+5. Yerel istemci kullanmak için lib dosya ve üstbilgi dosyası gerekir. Bu dosyalar, İşlevler ve sql.h içinde tanımlanan ODBC işlevleri ötesinde SQL Server'a özel tanımları içerir. İçinde **proje** > **özellikleri** > **VC ++ dizinleri**, aşağıdakileri içeren dizin ekleyin:  
   
- **\<Sistem sürücüsü >: \Program SQL Server\110\SDK\Include** ve bu kitaplık dizini:  
+   **\<Sistem sürücüsü >: \Program SQL Server\110\SDK\Include** ve bu kitaplık dizini:  
   
- **c:\Program Files\Microsoft SQL Server\110\SDK\Lib**  
+   **c:\Program Files\Microsoft SQL Server\110\SDK\Lib**  
   
-6.  Odbcsql.cpp içinde şu satırı ekleyin. #Define ilgisiz OLE DB tanımları derlenen engeller.  
+6. Odbcsql.cpp içinde şu satırı ekleyin. #Define ilgisiz OLE DB tanımları derlenen engeller.  
   
-    ```  
-    #define _SQLNCLI_ODBC_  
-    #include <sqlncli.h>  
-    ```  
+   ```  
+   #define _SQLNCLI_ODBC_  
+   #include <sqlncli.h>  
+   ```  
   
-     Önceki adımlarda, derlemek ve çalıştırmak için gerekli değildir. Bu nedenle örnek gerçekten yerel istemci işlevleri kullanımda bulunmadığını unutmayın. Ancak, proje artık bu işlevselliği kullanmak için yapılandırılır. Daha fazla bilgi için [SQL Server yerel istemcisi programlama](https://msdn.microsoft.com/library/ms130892\(v=sql.130\).aspx).  
+    Önceki adımlarda, derlemek ve çalıştırmak için gerekli değildir. Bu nedenle örnek gerçekten yerel istemci işlevleri kullanımda bulunmadığını unutmayın. Ancak, proje artık bu işlevselliği kullanmak için yapılandırılır. Daha fazla bilgi için [SQL Server yerel istemcisi programlama](https://msdn.microsoft.com/library/ms130892\(v=sql.130\).aspx).  
   
-7.  ODBC alt sistemi kullanmak üzere hangi sürücüyü belirtin. Örnek sürücü bağlantı dizesi özniteliği, bir komut satırı bağımsız değişkeni geçirir. İçinde **proje** > **özellikleri** > **hata ayıklama**, bu komut bağımsız değişkeni ekleyin:  
+7. ODBC alt sistemi kullanmak üzere hangi sürücüyü belirtin. Örnek sürücü bağlantı dizesi özniteliği, bir komut satırı bağımsız değişkeni geçirir. İçinde **proje** > **özellikleri** > **hata ayıklama**, bu komut bağımsız değişkeni ekleyin:  
   
-    ```  
-    DRIVER="SQL Server Native Client 11.0"  
-    ```  
+   ```  
+   DRIVER="SQL Server Native Client 11.0"  
+   ```  
   
-8.  Derleme ve uygulamayı çalıştırmak için F5 tuşuna basın. Sürücüsünden bir veritabanı girmenizi isteyen bir iletişim kutusu görmeniz gerekir. Girin `(localdb)\MSSQLLocalDB`ve **güvenilir bağlantı kullan**. Tuşuna **Tamam**. Başarılı bir bağlantı iletileri konsoluyla görmeniz gerekir. Ayrıca SQL deyiminde girebileceğiniz bir komut istemini görmeniz gerekir. Aşağıdaki ekranda bir örnek sorgu ve sonuçları gösterir:  
+8. Derleme ve uygulamayı çalıştırmak için F5 tuşuna basın. Sürücüsünden bir veritabanı girmenizi isteyen bir iletişim kutusu görmeniz gerekir. Girin `(localdb)\MSSQLLocalDB`ve **güvenilir bağlantı kullan**. Tuşuna **Tamam**. Başarılı bir bağlantı iletileri konsoluyla görmeniz gerekir. Ayrıca SQL deyiminde girebileceğiniz bir komut istemini görmeniz gerekir. Aşağıdaki ekranda bir örnek sorgu ve sonuçları gösterir:  
   
-     ![ODBC örnek sorgu çıktısı](../data-tools/media/raddata-odbc-sample-query-output.png "raddata ODBC örnek sorgu çıktısı")  
+    ![ODBC örnek sorgu çıktısı](../data-tools/media/raddata-odbc-sample-query-output.png "raddata ODBC örnek sorgu çıktısı")  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da verilere erişime](../data-tools/accessing-data-in-visual-studio.md)

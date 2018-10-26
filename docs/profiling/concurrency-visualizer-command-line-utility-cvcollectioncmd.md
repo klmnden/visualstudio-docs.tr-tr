@@ -12,34 +12,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 713b4f3e925d753411a83ad9749587283cd7e74b
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: a24bea13687d58d4d9b9d9dc8ecf0bec86595759
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879791"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951251"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Eşzamanlılık görselleştiricisi komut satırı yardımcı programı (CVCollectionCmd)
 Eşzamanlılık görselleştiricisi komut satırı yardımcı programını kullanabilirsiniz (*CVCollectionCmd.exe*) bunları Visual Studio eşzamanlılık görselleştiricisi içinde görüntüleyebilmek komut satırından izlemeleri toplamak için. Araçlar, Visual Studio yüklü olmayan bilgisayarlarda kullanılabilir.  
-  
+
 > [!NOTE]
 >  Visual Studio 2013 itibariyle, Concurrency Visualizer isteğe bağlı uzantısıdır. (Daha önce Visual Studio'ya dahil.) İndirebileceğiniz [Eşzamanlılık Görselleştirici toplama araçları Visual Studio 2015 için](http://www.microsoft.com/download/details.aspx?id=49103) İndirme Merkezi'nden.  
-  
+
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Eşzamanlılık görselleştiricisi komut satırı yardımcı programını indirin  
  Komut satırı yardımcı programını yüklemek ve indirmek için Git [Eşzamanlılık Görselleştirici toplama araçları Visual Studio 2015 için](http://www.microsoft.com/download/details.aspx?id=49103) ve yönergeleri izleyin. Varsayılan olarak, *CVCollectionCmd.exe* %ProgramFiles%\Microsoft eşzamanlılık görselleştiricisi koleksiyon Tools\ içinde yüklenir (% ProgramFiles (x86) %\Microsoft eşzamanlılık görselleştiricisi koleksiyon Tools\ içinde x64 bilgisayarlar).  
-  
+
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>CVCollectionCmd ile bir izleme toplamak  
  Uygulama ile CVCollectionCmd başlatarak veya eklemeyi, bir izleme toplayabilirsiniz. Aşağıdaki komut başvurusu seçenekleri için bkz. Örneğin  
-  
+
 ```cmd  
 <Path>CVCollectionCmd /launch c:\myapp\myapp.exe /outdir c:\myapp\data  
 ```  
-  
+
 ## <a name="commands-and-parameters"></a>Komutlar ve parametreler  
  Komut satırı yardımcı programı komutlar ve parametreler hakkında daha fazla yardım almak için bu komut istemine yazın:  
-  
+
  **CvCollectionCmd /?**  
-  
+
 |Seçenek|Açıklama|Parametreler|Döndürülen değerler|  
 |------------|-----------------|----------------|-------------------|  
 |Sorgu|Koleksiyon başlatıldı olup olmadığını döndürür.|Yok.|Koleksiyon başlatmaya hazır olup olmadığını 0.<br /><br /> 1 koleksiyonu zaten sürüyor.<br /><br /> Toplama ilerleme durumunu, ancak bir veya daha fazla gerekli içinde değilse 2 [ETW](/dotnet/framework/wcf/samples/etw-tracing) oturumları zaten etkin.|  
@@ -51,63 +51,64 @@ Eşzamanlılık görselleştiricisi komut satırı yardımcı programını kulla
 |OutDir|İzleme dosyalarının kaydedileceği dizini belirtir. Başlatma ve ek komutlar için geçerlidir.|Bir dizin yolunu veya göreli yol.|Yok.|  
 |İşlem|Analiz komutu yürütüldüğünde analiz etmek için bir izleme Ekle komutu ne zaman yürütülen için eklemek için bir işlem veya işlemi belirtir. Attach ve analiz komutları için geçerlidir.|PID veya işlemin adı.|Yok.|  
 |Config|Koleksiyon ayarları varsayılan dışındaki istiyorsanız yapılandırma dosyasının yolunu belirtir.   Başlatma, Ekle ve analiz komutları için geçerlidir.|Dizin yolu veya XML yapılandırma dosyasının göreli yolu.|Yok.|  
-  
+
 ## <a name="customize-configuration-settings"></a>Yapılandırma ayarlarını özelleştirme  
  Ardından CVCollectionCmd izlemeleri toplamak için kullanın ve koleksiyon ayarlarını özelleştirmek istiyorsanız, bunları belirtmek için bir yapılandırma dosyası kullanın.  
-  
+
 > [!NOTE]
 >  İzlemeleri toplamak için Visual Studio kullandığınızda, yapılandırma dosyasını doğrudan değiştirmeyin.  Bunun yerine, [Gelişmiş ayarlar](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ayarlarını değiştirmek için iletişim kutusu.  
-  
+
  Koleksiyon ayarlarını değiştirmek için bir yapılandırma dosyası CVCollectionCmd yardımcı programı çalıştıracağınız makinede oluşturun. Yapılandırma dosyası sıfırdan oluşturabilir veya Visual Studio'nun yüklü olduğu bilgisayarda yapılandırma dosyasını kopyalayıp, değiştirebilirsiniz. Dosyanın nasıl adlandırıldığı *UserConfig.xml* ve bulunan *Yerel AppData* klasör. Yardımcı programını çalıştırdığınızda, yapılandırma seçeneği başlatma, Attach veya Analiz komutu ile birlikte kullanın.  Yapılandırma seçeneği ile ilişkili parametresinde yapılandırma dosyasının yolunu belirtin.  
-  
+
 ### <a name="configuration-file-tags"></a>Yapılandırma dosya etiketleri  
  XML-tabanlı yapılandırma dosyasıdır. Geçerli etiketleri ve değerleri şunlardır:  
-  
-|Etiket|Açıklama|Değerler|  
-|---------|-----------------|------------|  
-|Config|Genel yapılandırma dosyası demarcates.|Bu öğeleri içermelidir:<br /><br /> -MinorVersion<br />-MajorVersion|  
-|MajorVersion|Ana yapılandırma dosyası sürümünü belirtir.|İçin 1 olmalıdır [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] projeleri. Aksi durumda 1, yardımcı program çalışmaz.|  
-|MinorVersion|Yapılandırma dosyası alt sürümünü belirtir.|İçin 0 olmalıdır [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] projeleri. Aksi durumda 0, yardımcı program çalışmaz.|  
-|IncludeEnvSymbolPath|Ortam sembol yolunu (_NT_SYMBOL_PATH) kullanılıp kullanılmayacağını belirleyen değeri ayarlar.|-True<br />-Yanlış|  
-|DeleteEtlsAfterAnalysis|Analiz tamamlandığında ETL dosyaları silinmiş olup olmadığını belirleyen bir değer ayarlar.|-True<br />-Yanlış|  
-|SymbolPath|Sembol sunucusu yolunu belirtir. Daha fazla bilgi için [hata ayıklama sembol dosyalarını edinmek için Microsoft sembol Sunucusu'nu kullanma](http://go.microsoft.com/fwlink/?LinkID=149389).|Bir dizin adı veya URL'si.|  
-|İşaretçileri|İşaretleyicisi sağlayıcılarını listesini içerir.|Sıfır veya daha fazla MarkerProvider öğeler içerebilir.|  
-|MarkerProvider|Tek işaretleyici sağlayıcısını belirtir.|Bu öğeleri içermelidir:<br /><br /> -Düzeyi<br />-GUID<br />-Ad<br /><br /> Bu öğeleri içerebilir:<br /><br /> -Kategorileri<br />-IsEnabled|  
-|Düzey|Bir MarkerProvider önem düzeyini ayarlar.|-Düşük<br />-Normal<br />-Yüksek<br />-Kritik<br />-Her şey|  
-|Guid|ETW işaretleyici sağlayıcısını genel benzersiz tanımlayıcısı.|BİR GUID.|  
-|Ad|İşaretleyici sağlayıcı açıklamasını belirtir.|Bir dize.|  
-|Kategoriler|İşaretleyici sağlayıcı için toplanan kategorileri belirtir.|Virgülle ayrılmış bir dize sayı veya sayı aralığı.|  
-|IsEnabled|İşaretleyici sağlayıcısını koleksiyon için etkin olup olmadığını belirleyen bir değer ayarlar.|-True<br />-Yanlış|  
-|FilterConfig|Koleksiyondan filtrelenir ETW olayları yapılandırma seçeneklerinin listesini belirtir.|Bu öğeleri içerebilir:<br /><br /> -CollectClrEvents<br />-ClrCollectionOptions<br />-CollectSampleEvents<br />-CollectGpuEvents<br />-CollectFileIO|  
-|CollectClrEvents|CLR olayları toplanır olup olmadığını belirleyen bir değer ayarlayın.|-True<br />-Yanlış|  
-|ClrCollectionOptions|Yerel uygulamalar için CLR olayları toplamak etkinleştirilip etkinleştirilmeyeceğini ve NGEN azaltma olaylarını toplamak etkinleştirilip etkinleştirilmeyeceğini belirtir.|Biri, her ikisi de veya hiçbiri bu değerleri içerebilir:<br /><br /> -CollectForNative<br />-DisableNGenRundown|  
-|CollectSampleEvents|Örnek olaylar toplanan olup olmadığını belirleyen bir değer ayarlar.|-True<br />-Yanlış|  
-|CollectGpuEvents|DX tarafından oluşturulan olaylar toplanan olup olmadığını belirleyen bir değer ayarlar.|-True<br />-Yanlış|  
-|CollectFileIO|Dosya g/ç olayları toplanır olup olmadığını belirleyen bir değer ayarlar.|-True<br />-Yanlış|  
-|UserBufferSettings|Kullanıcı arabelleği ayarlarını parametrelerin listesini belirtir.|Bu öğeleri içermelidir:<br /><br /> -BufferFlushTimer<br />-BufferSize<br />-MinimumBuffers<br />-MaximumBuffers|  
-|KernelBufferSettings|Çekirdek arabelleği ayarlarını parametrelerin listesini belirtir.|Bu öğeleri içermelidir:<br /><br /> -BufferFlushTimer<br />-BufferSize<br />-MinimumBuffers<br />-MaximumBuffers|  
-|BufferFlushTimer|Temizleme Zamanlayıcısı ETW arabellek belirtir.|Pozitif bir tamsayı.|  
-|BufferSize|İçin kilobayt cinsinden, her olay izleme oturumu arabellek atanan bellek miktarı.|1024 numarası 0.|  
-|MinimumBuffers|Olay izleme oturumu arabellek havuzu için ayrılan arabellekler en küçük sayısı.|Pozitif bir tamsayı en az iki kez mantıksal çekirdek sayısı.|  
-|MaximumBuffers|Olay izleme oturumu arabellek havuzu için ayrılan arabellekler maksimum sayısı.|Büyüktür veya eşittir MinimumBuffers sayı.|  
-|JustMyCode|Yalnızca kendi kodum dizinler listesini belirtir.|Sıfır veya daha fazla MyCodeDirectory öğelerinin listesi.|  
-|MyCodeDirectory|Kodunuzu içeren dizini belirtir.|Mutlak bir yol.|  
-  
+
+
+| Etiket | Açıklama | Değerler |
+|-------------------------| - | - |
+| Config | Genel yapılandırma dosyası demarcates. | Bu öğeleri içermelidir:<br /><br /> -MinorVersion<br />-MajorVersion |
+| MajorVersion | Ana yapılandırma dosyası sürümünü belirtir. | İçin 1 olmalıdır [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] projeleri. Aksi durumda 1, yardımcı program çalışmaz. |
+| MinorVersion | Yapılandırma dosyası alt sürümünü belirtir. | İçin 0 olmalıdır [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] projeleri. Aksi durumda 0, yardımcı program çalışmaz. |
+| IncludeEnvSymbolPath | Ortam sembol yolunu (_NT_SYMBOL_PATH) kullanılıp kullanılmayacağını belirleyen değeri ayarlar. | -True<br />-Yanlış |
+| DeleteEtlsAfterAnalysis | Analiz tamamlandığında ETL dosyaları silinmiş olup olmadığını belirleyen bir değer ayarlar. | -True<br />-Yanlış |
+| SymbolPath | Sembol sunucusu yolunu belirtir. Daha fazla bilgi için [hata ayıklama sembol dosyalarını edinmek için Microsoft sembol Sunucusu'nu kullanma](http://go.microsoft.com/fwlink/?LinkID=149389). | Bir dizin adı veya URL'si. |
+| İşaretçileri | İşaretleyicisi sağlayıcılarını listesini içerir. | Sıfır veya daha fazla MarkerProvider öğeler içerebilir. |
+| MarkerProvider | Tek işaretleyici sağlayıcısını belirtir. | Bu öğeleri içermelidir:<br /><br /> -Düzeyi<br />-GUID<br />-Ad<br /><br /> Bu öğeleri içerebilir:<br /><br /> -Kategorileri<br />-IsEnabled |
+| Düzey | Bir MarkerProvider önem düzeyini ayarlar. | -Düşük<br />-Normal<br />-Yüksek<br />-Kritik<br />-Her şey |
+| Guid | ETW işaretleyici sağlayıcısını genel benzersiz tanımlayıcısı. | BİR GUID. |
+| Ad | İşaretleyici sağlayıcı açıklamasını belirtir. | Bir dize. |
+| Kategoriler | İşaretleyici sağlayıcı için toplanan kategorileri belirtir. | Virgülle ayrılmış bir dize sayı veya sayı aralığı. |
+| IsEnabled | İşaretleyici sağlayıcısını koleksiyon için etkin olup olmadığını belirleyen bir değer ayarlar. | -True<br />-Yanlış |
+| FilterConfig | Koleksiyondan filtrelenir ETW olayları yapılandırma seçeneklerinin listesini belirtir. | Bu öğeleri içerebilir:<br /><br /> -CollectClrEvents<br />-ClrCollectionOptions<br />-CollectSampleEvents<br />-CollectGpuEvents<br />-CollectFileIO |
+| CollectClrEvents | CLR olayları toplanır olup olmadığını belirleyen bir değer ayarlayın. | -True<br />-Yanlış |
+| ClrCollectionOptions | Yerel uygulamalar için CLR olayları toplamak etkinleştirilip etkinleştirilmeyeceğini ve NGEN azaltma olaylarını toplamak etkinleştirilip etkinleştirilmeyeceğini belirtir. | Biri, her ikisi de veya hiçbiri bu değerleri içerebilir:<br /><br /> -CollectForNative<br />-DisableNGenRundown |
+| CollectSampleEvents | Örnek olaylar toplanan olup olmadığını belirleyen bir değer ayarlar. | -True<br />-Yanlış |
+| CollectGpuEvents | DX tarafından oluşturulan olaylar toplanan olup olmadığını belirleyen bir değer ayarlar. | -True<br />-Yanlış |
+| CollectFileIO | Dosya g/ç olayları toplanır olup olmadığını belirleyen bir değer ayarlar. | -True<br />-Yanlış |
+| UserBufferSettings | Kullanıcı arabelleği ayarlarını parametrelerin listesini belirtir. | Bu öğeleri içermelidir:<br /><br /> -BufferFlushTimer<br />-BufferSize<br />-MinimumBuffers<br />-MaximumBuffers |
+| KernelBufferSettings | Çekirdek arabelleği ayarlarını parametrelerin listesini belirtir. | Bu öğeleri içermelidir:<br /><br /> -BufferFlushTimer<br />-BufferSize<br />-MinimumBuffers<br />-MaximumBuffers |
+| BufferFlushTimer | Temizleme Zamanlayıcısı ETW arabellek belirtir. | Pozitif bir tamsayı. |
+| BufferSize | İçin kilobayt cinsinden, her olay izleme oturumu arabellek atanan bellek miktarı. | 1024 numarası 0. |
+| MinimumBuffers | Olay izleme oturumu arabellek havuzu için ayrılan arabellekler en küçük sayısı. | Pozitif bir tamsayı en az iki kez mantıksal çekirdek sayısı. |
+| MaximumBuffers | Olay izleme oturumu arabellek havuzu için ayrılan arabellekler maksimum sayısı. | Büyüktür veya eşittir MinimumBuffers sayı. |
+| JustMyCode | Yalnızca kendi kodum dizinler listesini belirtir. | Sıfır veya daha fazla MyCodeDirectory öğelerinin listesi. |
+| MyCodeDirectory | Kodunuzu içeren dizini belirtir. | Mutlak bir yol. |
+
 ### <a name="example"></a>Örnek  
  Bir yapılandırma dosyası en baştan oluşturmak yerine, aşağıdaki örneği kopyalayın ve sonra gereksinimlerinizi karşılayacak şekilde değiştirebilirsiniz.  
-  
+
 ```xml  
 <?xml version="1.0"?>  
 <LocalConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MajorVersion="1" MinorVersion="0">  
-  
+
   <IncludeEnvSymbolPath>true</IncludeEnvSymbolPath>  
-  
+
   <DeleteEtlsAfterAnalysis>true</DeleteEtlsAfterAnalysis>  
-  
+
   <TraceLocation>C:\traces</TraceLocation>  
-  
+
   <SymbolPath>http://symweb</SymbolPath>  
-  
+
   <Markers>  
     <MarkerProvider Name="Default" Guid="8d4925ab-505a-483b-a7e0-6f824a07a6f0" Level="Low" />  
     <MarkerProvider Name="TPL" Guid="2e5dba47-a3d2-4d16-8ee0-6671ffdcd7b5" Level="Normal" />  
@@ -116,12 +117,12 @@ Eşzamanlılık görselleştiricisi komut satırı yardımcı programını kulla
     <MarkerProvider Name="PLINQ" Guid="159eeeec-4a14-4418-a8fe-faabcd987887" Level="Normal" />  
     <MarkerProvider Name="Concurrency Runtime" Guid="f7b697a3-4db5-4d3b-be71-c4d284e6592f" Level="Normal" />  
     <MarkerProvider Name="Scenario Markers" Guid="fb9244c9-f23a-4966-8a9c-97a51f8c355b" Level="Low" />  
-  
+
     <!-- The IsEnabled and Categories elements are optional -->  
     <MarkerProvider Name="myMarker1" Guid="d0dbb3a3-895c-4ce6-96d9-28f69d664dc3" Level="Critical" IsEnabled="false" Categories="0,1,3-5,8" />  
     <MarkerProvider Name="myMarker2" Guid="03452127-a617-4302-9e30-c0d10442e4ee" Level="Low" IsEnabled="false" Categories="0,1,3-5,8-10,11-13" />  
   </Markers>  
-  
+
   <FilterConfig>  
     <CollectClrEvents>true</CollectClrEvents>  
     <ClrCollectionOptions>CollectForNative DisableNGenRundown</ClrCollectionOptions>  
@@ -129,26 +130,26 @@ Eşzamanlılık görselleştiricisi komut satırı yardımcı programını kulla
     <CollectGpuEvents>true</CollectGpuEvents>  
     <CollectFileIO>true</CollectFileIO>  
   </FilterConfig>  
-  
+
   <UserBufferSettings>  
     <BufferFlushTimer>0</BufferFlushTimer>  
     <BufferSize>256</BufferSize>  
     <MinimumBuffers>512</MinimumBuffers>  
     <MaximumBuffers>1024</MaximumBuffers>  
   </UserBufferSettings>  
-  
+
   <KernelBufferSettings>  
     <BufferFlushTimer>0</BufferFlushTimer>  
     <BufferSize>256</BufferSize>  
     <MinimumBuffers>512</MinimumBuffers>  
     <MaximumBuffers>1024</MaximumBuffers>  
   </KernelBufferSettings>  
-  
+
   <!-- List of MyCodeDirectory directories -->  
   <JustMyCode>  
     <MyCodeDirectory>C:\myBinaries1</MyCodeDirectory>  
     <MyCodeDirectory>C:\myBinaries2</MyCodeDirectory>  
   </JustMyCode>  
 </LocalConfig>  
-  
+
 ```

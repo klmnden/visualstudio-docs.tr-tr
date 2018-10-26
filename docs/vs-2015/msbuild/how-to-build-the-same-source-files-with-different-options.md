@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c506d0e82bd1c71431ae766be636db35d96debd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c46d0577d19a3b3ad0fcd150f33d400e76d550d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243925"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831009"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Nasıl Yapılır: Farklı Seçeneklerle Aynı Kaynak Dosyaları Derleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,23 +75,23 @@ Projeleri oluşturduğunuzda, farklı bir derleme seçenekleri ile aynı bileşe
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Komut satırında birden fazla proje özelliği belirtmek için  
   
--   Kullanma **/Property** veya **/p** özellik ve özellik değerleri ile birden çok kez geçin veya kullanın **/Property** veya **/p** geçin ve birden çok özellik noktalı virgülle (;) ayırın. Örneğin:  
+- Kullanma **/Property** veya **/p** özellik ve özellik değerleri ile birden çok kez geçin veya kullanın **/Property** veya **/p** geçin ve birden çok özellik noktalı virgülle (;) ayırın. Örneğin:  
   
-    ```  
-    msbuild file.proj /p:Flavor=Debug;Platform=x86  
-    ```  
+  ```  
+  msbuild file.proj /p:Flavor=Debug;Platform=x86  
+  ```  
   
-     - veya -  
+   - veya -  
   
-    ```  
-    msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
-    ```  
+  ```  
+  msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
+  ```  
   
- Ortam değişkenlerini de özellik olarak kabul edilir ve tarafından otomatik olarak eklenen [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Ortam değişkenlerini kullanma hakkında daha fazla bilgi için bkz. [nasıl yapılır: bir yapı içinde kullanımı ortam değişkenlerini](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+  Ortam değişkenlerini de özellik olarak kabul edilir ve tarafından otomatik olarak eklenen [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Ortam değişkenlerini kullanma hakkında daha fazla bilgi için bkz. [nasıl yapılır: bir yapı içinde kullanımı ortam değişkenlerini](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
- Komut satırında belirtilen özellik değeri, aynı özelliği proje dosyasında ayarlanır ve değer proje dosyasında bir ortam değişkeni değeri önceliklidir herhangi bir değer daha önceliklidir.  
+  Komut satırında belirtilen özellik değeri, aynı özelliği proje dosyasında ayarlanır ve değer proje dosyasında bir ortam değişkeni değeri önceliklidir herhangi bir değer daha önceliklidir.  
   
- Kullanarak bu davranışı değiştirebilirsiniz `TreatAsLocalProperty` öznitelik bir proje etiketinde. Bu öznitelik ile listelenen özellik adları için komut satırında belirtilen özellik değeri değer proje dosyasında öncelikli değil. Bu konuda daha sonra bir örnek bulabilirsiniz.  
+  Kullanarak bu davranışı değiştirebilirsiniz `TreatAsLocalProperty` öznitelik bir proje etiketinde. Bu öznitelik ile listelenen özellik adları için komut satırında belirtilen özellik değeri değer proje dosyasında öncelikli değil. Bu konuda daha sonra bir örnek bulabilirsiniz.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod örneği, "Hello World" projenin hata ayıklama derleme ve yayın derlemesi oluşturmak için kullanılan iki yeni özellik gruplarını içerir.  

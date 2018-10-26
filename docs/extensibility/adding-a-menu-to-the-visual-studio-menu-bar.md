@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c95007ed5b740812ca2b1a269390fbad6ffbc2ba
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 42c1a9cd2d1c9d1349b07e06d65a8da6a41b4245
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079539"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938233"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Visual Studio menü çubuğuna menü ekleme
 Bu izlenecek yol, Visual Studio tümleşik geliştirme ortamı (IDE) menü çubuğuna menü ekleme işlemi gösterilmektedir. Menü kategorileri gibi IDE menü çubuğu içeren **dosya**, **Düzenle**, **görünümü**, **penceresi**, ve **yardımcı** .  
@@ -41,48 +41,48 @@ Bu izlenecek yol, Visual Studio tümleşik geliştirme ortamı (IDE) menü çubu
   
 ## <a name="create-a-menu-on-the-ide-menu-bar"></a>IDE menü çubuğunda bir menü oluşturma  
   
-1.  İçinde **Çözüm Gezgini**açın *TestCommandPackage.vsct*.  
+1. İçinde **Çözüm Gezgini**açın *TestCommandPackage.vsct*.  
   
-     Dosyanın sonunda, var olan bir \<sembolleri > içeren birkaç düğüm \<GuidSymbol > düğümleri. GuidTestCommandPackageCmdSet adlı düğümünde, yeni bir sembol, aşağıdaki şekilde ekleyin:  
+    Dosyanın sonunda, var olan bir \<sembolleri > içeren birkaç düğüm \<GuidSymbol > düğümleri. GuidTestCommandPackageCmdSet adlı düğümünde, yeni bir sembol, aşağıdaki şekilde ekleyin:  
   
-    ```xml  
-    <IDSymbol name="TopLevelMenu" value="0x1021"/>  
-    ```  
+   ```xml  
+   <IDSymbol name="TopLevelMenu" value="0x1021"/>  
+   ```  
   
-2.  Boş bir oluşturma \<menüleri > düğümünde \<komutları > düğümü hemen önce \<Gruplar >. İçinde \<menüleri > düğümü Ekle bir \<menüsü > düğümü, aşağıdaki gibi:  
+2. Boş bir oluşturma \<menüleri > düğümünde \<komutları > düğümü hemen önce \<Gruplar >. İçinde \<menüleri > düğümü Ekle bir \<menüsü > düğümü, aşağıdaki gibi:  
   
-    ```xml  
-    <Menus>  
-          <Menu guid="guidTestCommandPackageCmdSet" id="TopLevelMenu" priority="0x700" type="Menu">  
-            <Parent guid="guidSHLMainMenu"  
-                    id="IDG_VS_MM_TOOLSADDINS" />  
-            <Strings>  
-              <ButtonText>TestMenu</ButtonText>  
-              <CommandName>TestMenu</CommandName>  
-            </Strings>  
-        </Menu>  
-    </Menus>  
-    ```  
+   ```xml  
+   <Menus>  
+         <Menu guid="guidTestCommandPackageCmdSet" id="TopLevelMenu" priority="0x700" type="Menu">  
+           <Parent guid="guidSHLMainMenu"  
+                   id="IDG_VS_MM_TOOLSADDINS" />  
+           <Strings>  
+             <ButtonText>TestMenu</ButtonText>  
+             <CommandName>TestMenu</CommandName>  
+           </Strings>  
+       </Menu>  
+   </Menus>  
+   ```  
   
-     `guid` Ve `id` menü değerlerini komut kümesi ve belirli menü komut kümesinde belirtin.  
+    `guid` Ve `id` menü değerlerini komut kümesi ve belirli menü komut kümesinde belirtin.  
   
-     `guid` Ve `id` değerler üst menü Araçlar ve eklentiler menüleri içeren Visual Studio menü çubuğunun bölümüne getirin.  
+    `guid` Ve `id` değerler üst menü Araçlar ve eklentiler menüleri içeren Visual Studio menü çubuğunun bölümüne getirin.  
   
-     Değerini `CommandName` dize menü öğesi metni görüntüleneceğini belirtir.  
+    Değerini `CommandName` dize menü öğesi metni görüntüleneceğini belirtir.  
   
-3.  İçinde \<grupları > bölümünde, bulma \<grubu > değiştirip \<üst > öğesini eklediğimiz yöntemlerin menüsünde:  
+3. İçinde \<grupları > bölümünde, bulma \<grubu > değiştirip \<üst > öğesini eklediğimiz yöntemlerin menüsünde:  
   
-    ```csharp  
-    <Groups>  
-          <Group guid="guidTestCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">  
-            <Parent guid="guidTestCommandPackageCmdSet" id="TopLevelMenu"/>  
-          </Group>  
-        </Groups>  
-    ```  
+   ```csharp  
+   <Groups>  
+         <Group guid="guidTestCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">  
+           <Parent guid="guidTestCommandPackageCmdSet" id="TopLevelMenu"/>  
+         </Group>  
+       </Groups>  
+   ```  
   
-     Bu yeni menü grubunun parçası yapar.  
+    Bu yeni menü grubunun parçası yapar.  
   
-4.  Bulma `Buttons` bölümü. Dikkat [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] paket Şablonu oluşturulan bir `Button` üst kümesine sahip öğe `MyMenuGroup`. Sonuç olarak, bu komut menünüzde görünür.  
+4. Bulma `Buttons` bölümü. Dikkat [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] paket Şablonu oluşturulan bir `Button` üst kümesine sahip öğe `MyMenuGroup`. Sonuç olarak, bu komut menünüzde görünür.  
   
 ## <a name="build-and-test-the-extension"></a>Uzantıyı test etmek ve derleme  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c0f7a3da89f98d469dde60b98ad68de0574d10db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7aa5a216b9be48eae7f2905084f0c39109688d6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231640"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897803"
 ---
 # <a name="writing-a-t4-text-template"></a>T4 Metin Şablonu Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Bir metin şablonu, ondan oluşturulan metni içerir. Örneğin, bir web sayfas�
   
  Metin şablonları aşağıdaki bölümden oluşur:  
   
--   **Yönergeleri** -şablonu nasıl işleneceğini denetleyen öğeleri.  
+- **Yönergeleri** -şablonu nasıl işleneceğini denetleyen öğeleri.  
   
--   **Metin blokları** - içerik çıkışa doğrudan kopyalanır.  
+- **Metin blokları** - içerik çıkışa doğrudan kopyalanır.  
   
--   **Denetim blokları** -program değişken değerleri metnine ekler ve koşullu veya yinelenen bölümleri metin denetimlerini kodu.  
+- **Denetim blokları** -program değişken değerleri metnine ekler ve koşullu veya yinelenen bölümleri metin denetimlerini kodu.  
   
- Bu konudaki örnekleri denemek için bunları bir şablon dosyasına açıklandığı gibi kopyalayın [T4 metin şablonları kullanarak tasarım zamanı kodu oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Şablon dosyası düzenleme sonra dosyayı kaydedin ve ardından çıkışı inceleyebileceğiniz **.txt** dosya.  
+  Bu konudaki örnekleri denemek için bunları bir şablon dosyasına açıklandığı gibi kopyalayın [T4 metin şablonları kullanarak tasarım zamanı kodu oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Şablon dosyası düzenleme sonra dosyayı kaydedin ve ardından çıkışı inceleyebileceğiniz **.txt** dosya.  
   
 ## <a name="directives"></a>Yönergeler  
  Metin şablonu yönergeleri, metin şablon oluşturma altyapısı dönüştürme kodu ve çıktı dosyası oluşturma hakkında genel yönergeler sağlar.  

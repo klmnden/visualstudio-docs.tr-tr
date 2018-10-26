@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 716e58acaddd1891f2e0d605265cb53bae4ad8d7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac3db033b9e8055c28f29d54027df5fadf156742
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299188"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922204"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF ve Entity Framework 6 ile basit veri uygulaması oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,37 +52,37 @@ Bu kılavuzu, Visual Studio ile SQL Server LocalDB, Northwind veritabanı, Entit
   
 ## <a name="create-the-model"></a>Model oluşturma  
   
-1.  Çözüm Gezgini'nde proje düğümüne sağ tıklayın ve seçin **Ekle &#124; yeni öğe**. Sol bölmede, C# düğümü seçin **veri** ve Orta bölmede seçin **ADO.NET varlık veri modeli**.  
+1. Çözüm Gezgini'nde proje düğümüne sağ tıklayın ve seçin **Ekle &#124; yeni öğe**. Sol bölmede, C# düğümü seçin **veri** ve Orta bölmede seçin **ADO.NET varlık veri modeli**.  
   
-     ![Entity Framework modelini yeni proje öğesi](../data-tools/media/raddata-ef-new-project-item.png "raddata EF yeni proje öğesi")  
+    ![Entity Framework modelini yeni proje öğesi](../data-tools/media/raddata-ef-new-project-item.png "raddata EF yeni proje öğesi")  
   
-2.  Model çağrı `Northwind_model` ve Tamam'ı seçin. Bu işlem sonrasında **varlık veri modeli Sihirbazı**. Seçin **EF veritabanı Tasarımcısından** ve ardından **sonraki**.  
+2. Model çağrı `Northwind_model` ve Tamam'ı seçin. Bu işlem sonrasında **varlık veri modeli Sihirbazı**. Seçin **EF veritabanı Tasarımcısından** ve ardından **sonraki**.  
   
-     ![EF modeli veritabanından](../data-tools/media/raddata-ef-model-from-database.png "raddata veritabanından EF modeli")  
+    ![EF modeli veritabanından](../data-tools/media/raddata-ef-model-from-database.png "raddata veritabanından EF modeli")  
   
-3.  Sonraki ekranda, uygulamanızı LocalDB Northwind bağlantı tıklatın seçip **sonraki**.  
+3. Sonraki ekranda, uygulamanızı LocalDB Northwind bağlantı tıklatın seçip **sonraki**.  
   
-4.  Sihirbazın sonraki sayfasında tabloları, saklı yordamlar ve Entity Framework modele dahil edilecek diğer veritabanı nesnelerini seçin. Ağaç görünümünde dbo düğümünü genişletin ve müşteri, sipariş ve sipariş ayrıntıları seçin. Varsayılan seçili bırakın ve tıklayın **son**.  
+4. Sihirbazın sonraki sayfasında tabloları, saklı yordamlar ve Entity Framework modele dahil edilecek diğer veritabanı nesnelerini seçin. Ağaç görünümünde dbo düğümünü genişletin ve müşteri, sipariş ve sipariş ayrıntıları seçin. Varsayılan seçili bırakın ve tıklayın **son**.  
   
-     ![Model için veritabanı nesneleri seçmenizi](../data-tools/media/raddata-choose-ef-objects.png "raddata EF nesneleri seçin")  
+    ![Model için veritabanı nesneleri seçmenizi](../data-tools/media/raddata-choose-ef-objects.png "raddata EF nesneleri seçin")  
   
-5.  Sihirbaz, Entity Framework modelini temsil eden C# sınıfları oluşturur. Bunlar düz eski C# sınıfları ve bunların ne yapacağız veri bağlama WPF kullanıcı arabirimi. .Edmx dosyasını, ilişkileri ve veritabanındaki nesneleri sınıfları ilişkilendirir diğer meta veriler açıklanmaktadır.  Kodunu oluşturmak T4 şablonlarını model üzerinde çalışır ve değişiklikleri veritabanına kaydetmek .tt dosyalarıdır. Tüm bu Çözüm Gezgini'nde düğümü altındaki dosyaları Northwind_model görebilirsiniz:  
+5. Sihirbaz, Entity Framework modelini temsil eden C# sınıfları oluşturur. Bunlar düz eski C# sınıfları ve bunların ne yapacağız veri bağlama WPF kullanıcı arabirimi. .Edmx dosyasını, ilişkileri ve veritabanındaki nesneleri sınıfları ilişkilendirir diğer meta veriler açıklanmaktadır.  Kodunu oluşturmak T4 şablonlarını model üzerinde çalışır ve değişiklikleri veritabanına kaydetmek .tt dosyalarıdır. Tüm bu Çözüm Gezgini'nde düğümü altındaki dosyaları Northwind_model görebilirsiniz:  
   
-     ![Çözüm Gezgini EF modeli dosyaları](../data-tools/media/raddata-solution-explorer-ef-model-files.png "raddata Çözüm Gezgini EF modeli dosyaları")  
+    ![Çözüm Gezgini EF modeli dosyaları](../data-tools/media/raddata-solution-explorer-ef-model-files.png "raddata Çözüm Gezgini EF modeli dosyaları")  
   
-     Tasarımcı yüzeyine .edmx dosyası için bazı özellikler ve ilişkiler modelinde değiştirmenize olanak sağlar. Bu izlenecek yolda tasarımcısını kullanmak için kullanacağız değil.  
+    Tasarımcı yüzeyine .edmx dosyası için bazı özellikler ve ilişkiler modelinde değiştirmenize olanak sağlar. Bu izlenecek yolda tasarımcısını kullanmak için kullanacağız değil.  
   
-6.  .Tt dosyaları genel amaçlı ve bunlardan birinin ObservableCollections gerektiren WPF bağlama ile çalışmak için ince ayarlamalar yapmak gerekiyor.  Çözüm Gezgini'nde, Northwind_model.tt bulana kadar Northwind_model düğümünü genişletin. (Emin olun **değil** , *. Doğrudan .edmx dosyası olan bağlam .tt dosyası).  
+6. .Tt dosyaları genel amaçlı ve bunlardan birinin ObservableCollections gerektiren WPF bağlama ile çalışmak için ince ayarlamalar yapmak gerekiyor.  Çözüm Gezgini'nde, Northwind_model.tt bulana kadar Northwind_model düğümünü genişletin. (Emin olun **değil** , *. Doğrudan .edmx dosyası olan bağlam .tt dosyası).  
   
-    -   İki tekrarlamalarını <xref:System.Collections.ICollection> ile <xref:System.Collections.ObjectModel.ObservableCollection%601>.  
+   -   İki tekrarlamalarını <xref:System.Collections.ICollection> ile <xref:System.Collections.ObjectModel.ObservableCollection%601>.  
   
-    -   İlk geçtiği değiştirme <xref:System.Collections.Generic.HashSet%601> ile <xref:System.Collections.ObjectModel.ObservableCollection%601> 51 satırına yakın bir yerde. HashSet ikinci oluşum değiştirmeyin  
+   -   İlk geçtiği değiştirme <xref:System.Collections.Generic.HashSet%601> ile <xref:System.Collections.ObjectModel.ObservableCollection%601> 51 satırına yakın bir yerde. HashSet ikinci oluşum değiştirmeyin  
   
-    -   Yalnızca oluşumunu değiştirin <xref:System.Collections.Generic> (yaklaşık olarak satır 334) ile <xref:System.Collections.ObjectModel>.  
+   -   Yalnızca oluşumunu değiştirin <xref:System.Collections.Generic> (yaklaşık olarak satır 334) ile <xref:System.Collections.ObjectModel>.  
   
-7.  Tuşuna **Ctrl + Shift + B** Projeyi derlemek için. Derleme tamamlandığında model sınıfları için veri kaynağı Sihirbazı'nı görülebilir.  
+7. Tuşuna **Ctrl + Shift + B** Projeyi derlemek için. Derleme tamamlandığında model sınıfları için veri kaynağı Sihirbazı'nı görülebilir.  
   
- Şimdi biz görüntülemek, gezinebilir ve verileri değiştirme, XAML sayfası bu model bağlama hazırız.  
+   Şimdi biz görüntülemek, gezinebilir ve verileri değiştirme, XAML sayfası bu model bağlama hazırız.  
   
 ## <a name="databind-the-model-to-the-xaml-page"></a>Veri bağlama modelini XAML sayfası  
  Kendi veri bağlama kod yazmak mümkündür, ancak bunu sizin için Visual Studio belirlesin daha kolaydır.  

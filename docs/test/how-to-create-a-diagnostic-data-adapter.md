@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 94b1b46ce7d2843c733e1baf13f12672c98a3989
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 25b332fb822524f5fcab5e06ab97bfe2d6af8529
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321196"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851614"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Nasıl yapılır: tanılama veri bağdaştırıcısı oluşturma
 
@@ -33,7 +33,7 @@ Oluşturmak için bir *tanılama veri bağdaştırıcısı*, Visual Studio kulla
  Tanılama veri bağdaştırıcınızı oluştururken kullanabileceğiniz anahtar olayların kısmi bir listesi verilmiştir. Tanılama veri bağdaştırıcısı olaylarının tam listesi için bakınız <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> sınıfı.
 
 |Olay|Açıklama|
-|-----------|-----------------|
+|-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|Test çalıştırmanızın Başlat|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|Test çalıştırmanızın sonu|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseStart>|Test çalıştırmasındaki her testin başlatılması|
@@ -52,78 +52,78 @@ Oluşturmak için bir *tanılama veri bağdaştırıcısı*, Visual Studio kulla
 
 ### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>Tanılama veri bağdaştırıcısı oluşturmak ve yüklemek için
 
-1.  Yeni bir sınıf kitaplığı oluşturun.
+1. Yeni bir sınıf kitaplığı oluşturun.
 
-    1.  Üzerinde **dosya** menüsünde seçin **yeni**, gelin ve ardından **yeni proje**.
+   1.  Üzerinde **dosya** menüsünde seçin **yeni**, gelin ve ardından **yeni proje**.
 
-    2.  Gelen **proje türleri**, kullanacağınız dili seçin.
+   2.  Gelen **proje türleri**, kullanacağınız dili seçin.
 
-    3.  Gelen **Visual Studio yüklenmiş şablonlar**seçin **sınıf kitaplığı**.
+   3.  Gelen **Visual Studio yüklenmiş şablonlar**seçin **sınıf kitaplığı**.
 
-    4.  Tanılama veri bağdaştırıcınız için bir ad yazın.
+   4.  Tanılama veri bağdaştırıcınız için bir ad yazın.
 
-    5.  Seçin **Tamam**.
+   5.  Seçin **Tamam**.
 
-2.  Bütünleştirilmiş kod Ekle **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
+2. Bütünleştirilmiş kod Ekle **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 
-    1.  İçinde **Çözüm Gezgini**, sağ **başvuruları** ve **Başvuru Ekle** komutu.
+   1.  İçinde **Çözüm Gezgini**, sağ **başvuruları** ve **Başvuru Ekle** komutu.
 
-    2.  Seçin **.NET** bulun **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
+   2.  Seçin **.NET** bulun **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
-    3.  Seçin **Tamam**.
+   3.  Seçin **Tamam**.
 
-3.  Bütünleştirilmiş kod Ekle **Microsoft.VisualStudio.QualityTools.Common**.
+3. Bütünleştirilmiş kod Ekle **Microsoft.VisualStudio.QualityTools.Common**.
 
-    1.  İçinde **Çözüm Gezgini**, sağ **başvuruları** seçip **Başvuru Ekle** komutu.
+   1.  İçinde **Çözüm Gezgini**, sağ **başvuruları** seçip **Başvuru Ekle** komutu.
 
-    2.  Seçin **/.NET**, bulun **Microsoft.VisualStudio.QualityTools.Common.dll**.
+   2.  Seçin **/.NET**, bulun **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
-    3.  Seçin **Tamam**.
+   3.  Seçin **Tamam**.
 
-4.  Aşağıdaki `using` deyimlerini Sınıf dosyanıza:
+4. Aşağıdaki `using` deyimlerini Sınıf dosyanıza:
 
-    ```csharp
-    using Microsoft.VisualStudio.TestTools.Common;
-    using Microsoft.VisualStudio.TestTools.Execution;
-    using System.Linq;
-    using System.Text;
-    using System.Xml;
-    using System;
-    ```
+   ```csharp
+   using Microsoft.VisualStudio.TestTools.Common;
+   using Microsoft.VisualStudio.TestTools.Execution;
+   using System.Linq;
+   using System.Text;
+   using System.Xml;
+   using System;
+   ```
 
-5.  Ekleme <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> bir tanılama veri bağdaştırıcınız olarak tanımlamak üzere tanı veri bağdaştırıcınız için sınıfa değiştirerek **şirket**, **ürün**, ve **sürüm** ile Tanılama veri bağdaştırıcınız için uygun bilgileri:
+5. Ekleme <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> bir tanılama veri bağdaştırıcınız olarak tanımlamak üzere tanı veri bağdaştırıcınız için sınıfa değiştirerek **şirket**, **ürün**, ve **sürüm** ile Tanılama veri bağdaştırıcınız için uygun bilgileri:
 
-    ```csharp
-    [DataCollectorTypeUri("datacollector://Company/Product/Version")]
-    ```
+   ```csharp
+   [DataCollectorTypeUri("datacollector://Company/Product/Version")]
+   ```
 
-6.  Ekleme <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> parametreleri tanı veri bağdaştırıcınız için uygun bilgi ile değiştirerek sınıfa özniteliği:
+6. Ekleme <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> parametreleri tanı veri bağdaştırıcınız için uygun bilgi ile değiştirerek sınıfa özniteliği:
 
-    ```csharp
-    [DataCollectorFriendlyName("Collect Log Files", false)]
-    ```
+   ```csharp
+   [DataCollectorFriendlyName("Collect Log Files", false)]
+   ```
 
-     Bu kolay adı, test ayarları etkinliğinde görüntülenir.
+    Bu kolay adı, test ayarları etkinliğinde görüntülenir.
 
-    > [!NOTE]
-    > Ayrıca ekleyebilirsiniz <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> belirtmek için `Type` , düzenleyici için kullanılacak özel yapılandırma düzenleyicinizin bu veri bağdaştırıcısı için ve isteğe bağlı olarak Yardım dosyasını belirtmek için.
-    >
-    > Ayrıca uygulayabilirsiniz <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute> , her zaman etkin olması gerektiğini belirtmek için.
+   > [!NOTE]
+   > Ayrıca ekleyebilirsiniz <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> belirtmek için `Type` , düzenleyici için kullanılacak özel yapılandırma düzenleyicinizin bu veri bağdaştırıcısı için ve isteğe bağlı olarak Yardım dosyasını belirtmek için.
+   >
+   > Ayrıca uygulayabilirsiniz <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute> , her zaman etkin olması gerektiğini belirtmek için.
 
-7.  Tanılama veri bağdaştırıcısı sınıfınız devralmalıdır <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector> sınıfına aşağıdaki gibi:
+7. Tanılama veri bağdaştırıcısı sınıfınız devralmalıdır <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector> sınıfına aşağıdaki gibi:
 
-    ```csharp
-    public class MyDiagnosticDataAdapter : DataCollector
-    ```
+   ```csharp
+   public class MyDiagnosticDataAdapter : DataCollector
+   ```
 
-8.  Yerel değişkenler aşağıdaki şekilde ekleyin:
+8. Yerel değişkenler aşağıdaki şekilde ekleyin:
 
-    ```csharp
-    private DataCollectionEvents dataEvents;
-    private DataCollectionLogger dataLogger;
-    private DataCollectionSink dataSink;
-    private XmlElement configurationSettings;
-    ```
+   ```csharp
+   private DataCollectionEvents dataEvents;
+   private DataCollectionLogger dataLogger;
+   private DataCollectionSink dataSink;
+   private XmlElement configurationSettings;
+   ```
 
 9. Ekleme <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector.Initialize*> yöntemi ve bir **Dispose** yöntemi. İçinde `Initialize` , Initialize yöntemi, veri havuzu, tüm yapılandırma verilerini test ayarları ve istediğiniz olay işleyicileri gibi kaydedersiniz:
 
@@ -273,7 +273,7 @@ Oluşturmak için bir *tanılama veri bağdaştırıcısı*, Visual Studio kulla
 
 17. Seçilen tanılama veri bağdaştırıcısıyla test ayarlarını kullanarak testlerinizi çalıştırın.
 
-   Belirttiğiniz veri dosyası test sonuçlarınıza eklenir.
+    Belirttiğiniz veri dosyası test sonuçlarınıza eklenir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

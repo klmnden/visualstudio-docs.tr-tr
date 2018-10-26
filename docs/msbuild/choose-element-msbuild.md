@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 276a353dbbd47e2ded3a3c562e7a4a10df157655
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 7847f8b1dbea5ac5dbd2f9c1ed492c9172e539b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945775"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895476"
 ---
 # <a name="choose-element-msbuild"></a>Öğe Seç (MSBuild)
 Bir grubu seçmek için alt öğeleri değerlendirir `ItemGroup` öğelerin ve/veya `PropertyGroup` değerlendirmek için öğeleri.  
@@ -64,11 +64,11 @@ Bir grubu seçmek için alt öğeleri değerlendirir `ItemGroup` öğelerin ve/v
 
 ### <a name="parent-elements"></a>Üst öğeler  
 
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|[Aksi takdirde](../msbuild/otherwise-element-msbuild.md)|Belirtir, yürütülecek kod bloğu tüm koşullar `When` öğeleri değerlendirmek için `false`.|  
-|[Project](../msbuild/project-element-msbuild.md)|Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası.|  
-|[Ne zaman](../msbuild/when-element-msbuild.md)|Olası bir blok için kod belirtir `Choose` seçmek için öğesi.|  
+| Öğe | Açıklama |
+| - | - |
+| [Aksi takdirde](../msbuild/otherwise-element-msbuild.md) | Belirtir, yürütülecek kod bloğu tüm koşullar `When` öğeleri değerlendirmek için `false`. |
+| [Project](../msbuild/project-element-msbuild.md) | Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası. |
+| [Ne zaman](../msbuild/when-element-msbuild.md) | Olası bir blok için kod belirtir `Choose` seçmek için öğesi. |
 
 ## <a name="remarks"></a>Açıklamalar  
  `Choose`, `When`, Ve `Otherwise` öğeleri birlikte bir dizi olası alternatifler dışında yürütülecek kodun bir bölümünü seçmek için bir yol sağlamak amacıyla kullanılır. Daha fazla bilgi için [koşullu yapılar](../msbuild/msbuild-conditional-constructs.md).  

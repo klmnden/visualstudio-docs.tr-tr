@@ -24,12 +24,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 522a9035bc272d643ae3277e5471f0d67baedcde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 150105de459912716cd3cfccff9efb35927c7d49
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225264"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823508"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Parametreleştirilmiş TableAdapter sorguları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,41 +65,41 @@ Parametreli bir sorgu, WHERE yan tümcesi içinde sorgu koşulları karşılayan
   
 ### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>Varolan bir verilere bağlı forma bir sorgu ekleme  
   
-1.  Formda açın **Windows Form Tasarımcısı**.  
+1. Formda açın **Windows Form Tasarımcısı**.  
   
-2.  Üzerinde **veri** menüsünde**Sorgu Ekle**veya**veri akıllı etiketler**.  
+2. Üzerinde **veri** menüsünde**Sorgu Ekle**veya**veri akıllı etiketler**.  
   
-    > [!NOTE]
-    >  Varsa **Sorgu Ekle** kullanılamaz **veri** menüsü, görüntüler veri kaynağı, formda bir denetim için Parametreleştirme eklemek için seçin. Form verileri görüntüler, örneğin, bir <xref:System.Windows.Forms.DataGridView> denetlemek, onu seçin. Form bireysel denetimlerinde verileri görüntülüyorsa, herhangi bir veriye bağlı denetim seçin.  
+   > [!NOTE]
+   >  Varsa **Sorgu Ekle** kullanılamaz **veri** menüsü, görüntüler veri kaynağı, formda bir denetim için Parametreleştirme eklemek için seçin. Form verileri görüntüler, örneğin, bir <xref:System.Windows.Forms.DataGridView> denetlemek, onu seçin. Form bireysel denetimlerinde verileri görüntülüyorsa, herhangi bir veriye bağlı denetim seçin.  
   
-3.  İçinde **Select veri kaynağı tablosu** alanı Ekle'yi seçin istediğiniz tablethat Parametreleştirme için.  
+3. İçinde **Select veri kaynağı tablosu** alanı Ekle'yi seçin istediğiniz tablethat Parametreleştirme için.  
   
-4.  Bir ad yazın **yeni sorgu adı** yeni bir sorgu oluşturuyorsanız kutusu.  
+4. Bir ad yazın **yeni sorgu adı** yeni bir sorgu oluşturuyorsanız kutusu.  
   
-     veya  
+    veya  
   
-     Bir sorgu seçin **varolan sorgu adı** kutusu.  
+    Bir sorgu seçin **varolan sorgu adı** kutusu.  
   
-5.  İçinde **sorgu metni** parametreleri alan bir sorgu yazın.  
+5. İçinde **sorgu metni** parametreleri alan bir sorgu yazın.  
   
-6.  Seçin**Tamam**.  
+6. Seçin**Tamam**.  
   
-     Bir giriş parametresi için Denetim ve bir **yük** düğmesi, formda eklenir bir <xref:System.Windows.Forms.ToolStrip> denetimi.  
+    Bir giriş parametresi için Denetim ve bir **yük** düğmesi, formda eklenir bir <xref:System.Windows.Forms.ToolStrip> denetimi.  
   
- Hiçbir geçerli bir değere sahip kayıtları için sorgu istediğinizde TableAdapter parametreleri null değerler atanabilir. Örneğin, sahip şu sorguyu inceleyin bir `ShippedDate` parametresinde kendi `WHERE` yan tümcesi:  
+   Hiçbir geçerli bir değere sahip kayıtları için sorgu istediğinizde TableAdapter parametreleri null değerler atanabilir. Örneğin, sahip şu sorguyu inceleyin bir `ShippedDate` parametresinde kendi `WHERE` yan tümcesi:  
   
- `SELECT CustomerID, OrderDate, ShippedDate`  
+   `SELECT CustomerID, OrderDate, ShippedDate`  
   
- `FROM Orders`  
+   `FROM Orders`  
   
- `WHERE (ShippedDate = @ShippedDate) OR`  
+   `WHERE (ShippedDate = @ShippedDate) OR`  
   
- `(ShippedDate IS NULL)`  
+   `(ShippedDate IS NULL)`  
   
- Bu bir TableAdapter sorgu olsaydı, aşağıdaki kod ile birlikte gönderilmeyen tüm siparişleri için sorgu:  
+   Bu bir TableAdapter sorgu olsaydı, aşağıdaki kod ile birlikte gönderilmeyen tüm siparişleri için sorgu:  
   
- [!code-csharp[VbRaddataTableAdapters#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Form2.cs#8)]
- [!code-vb[VbRaddataTableAdapters#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Form2.vb#8)]  
+   [!code-csharp[VbRaddataTableAdapters#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Form2.cs#8)]
+   [!code-vb[VbRaddataTableAdapters#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Form2.vb#8)]  
   
 #### <a name="to-enable-a-query-to-accept-null-values"></a>Null değerleri kabul etmek bir sorgu etkinleştirmek için  
   

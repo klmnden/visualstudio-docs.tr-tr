@@ -17,15 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c51a7f79165d421f080d05088418d02a48680b66
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ac15ee59299653c71c2d1036e8318a0fee2b693c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767614"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927573"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;Güncelleştirme&gt; öğesi (Visual Studio'da Office Geliştirme)
-  `update` Öğesi çözüm denetleyecek güncelleştirmelere yönelik aralığı belirtir.  
+  `update` Öğesi çözüm denetleyecek güncelleştirmeleri aralığını belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,31 +39,31 @@ ms.locfileid: "34767614"
 </update>  
 ```  
   
-## <a name="elements-and-attributes"></a>Öğeleri ve öznitelikleri  
- `update` Öğesi gereklidir ve yer `vstav3` ad alanı.  
+## <a name="elements-and-attributes"></a>Öğeler ve öznitelikler  
+ `update` Öğesi gereklidir ve içinde `vstav3` ad alanı.  
   
- `update` Öğesi aşağıdaki özniteliklere sahiptir.  
+ `update` Öğesinde şu öznitelikler bulunur.  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|`enabled`|Gerekli. Aşağıdaki değerlerden biri için etkinleştirilmiş ayarlayın:<br /><br /> -   **doğru** güncelleştirmeleri denetlemek için.<br />-   **yanlış** güncelleştirmeleri denetleniyor önlemek için.|  
+|`enabled`|Gerekli. Aşağıdaki değerlerden biri etkin ayarlayın:<br /><br /> -   **doğru** güncelleştirmeleri denetlemek için.<br />-   **false** güncelleştirmeleri denetleme önlemek için.|  
   
- `update` Öğe aşağıdaki alt öğeleri vardır.  
+ `update` Öğesi şu alt öğelerden sahiptir.  
   
 ### <a name="expiration"></a>süre sonu  
- `expiration` Öğesi gereklidir ve yer `vstav3` ad alanı. Bu öğe, çözüm denetler aralığını güncelleştirmeleri belirtir.  
+ `expiration` Öğesi gereklidir ve içinde `vstav3` ad alanı. Bu öğe çözüm denetleyen güncelleştirmeleri aralığını belirtir.  
   
- `expiration` Öğesi aşağıdaki özniteliklere sahiptir.  
+ `expiration` Öğesinde şu öznitelikler bulunur.  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|`maximumAge`|   Gerekli. Bu, bir tamsayıya eşit ayarlayın.|  
-|`unit`|Gerekli. Ayarlama `unit` aşağıdaki değerlerden birine:<br /><br /> -   **Saatleri**<br />-   **gün**<br />-   **Hafta**|  
+|`maximumAge`| Gerekli. Bu, bir tamsayıya eşit ayarlayın.|  
+|`unit`|Gerekli. Ayarlama `unit` aşağıdaki değerlerden biri olarak:<br /><br /> -   **saat**<br />-   **gün**<br />-   **Hafta**|  
   
-## <a name="example-of-always-checking-for-updates"></a>Her zaman güncelleştirmeleri denetleniyor örneği  
+## <a name="example-of-always-checking-for-updates"></a>Her zaman güncelleştirmeleri denetleme örneği  
   
 ### <a name="description"></a>Açıklama  
- Aşağıdaki kod örneği gösterilmektedir bir `update` her zaman Office çözümlerinde güncelleştirmeleri denetlemek için ayarlanmış öğesi.  
+ Aşağıdaki kod örneğinde gösterilmiştir bir `update` her zaman Office çözümlerinde güncelleştirmeleri denetlemek için ayarlanmış olan öğe.  
   
 ### <a name="code"></a>Kod  
   
@@ -71,10 +71,10 @@ ms.locfileid: "34767614"
 <vstav3:update enabled="true" />  
 ```  
   
-## <a name="example-of-setting-a-default-update-interval"></a>Bir varsayılan güncelleştirme aralığı ayarlama örneği  
+## <a name="example-of-setting-a-default-update-interval"></a>Varsayılan güncelleştirme aralığını ayarlama örneği  
   
 ### <a name="description"></a>Açıklama  
- Aşağıdaki kod örneği gösterilmektedir bir `update` Office çözümleri için uygulama bildiriminde öğesi. Bu kod örneği sağlanan daha büyük bir örneğin parçasıdır [uygulama bildirimleri Office çözümleri için](../vsto/application-manifests-for-office-solutions.md).  
+ Aşağıdaki kod örneğinde gösterilmiştir bir `update` Office çözümleri için uygulama bildiriminde öğesi. Bu kod örneği, sağlanan daha büyük bir örneğin parçasıdır [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Kod  
   

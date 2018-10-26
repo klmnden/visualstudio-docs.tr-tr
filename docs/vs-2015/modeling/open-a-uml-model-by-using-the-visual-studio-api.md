@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e92ece9a8097071c8d8cef5b77ca9fdb242d677f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14fa94779fc8d849bbfdb9176fdc94049078c674
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292714"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920222"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>Visual Studio API kullanarak UML modeli açma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,27 +35,27 @@ Ayrıca API kullanarak modelleri ve diyagramları Visual Studio kullanıcı arab
 ##  <a name="Showing"></a> Visual Studio'da modelleri ve diyagramları açma  
  Kullanıcı arabiriminde model açmak için standart bir Visual Studio API kullanın. `EnvDTE.DTE`. Modelleme projesi öğeleri üzerinde gerçekleştirebileceğiniz iki yararlı dönüştürme vardır:  
   
--   `EnvDTE.Project` ve ondan dönüştürme `IModelingProject`, proje bir modelleme projesi ise ve geçerli AppDomain'e durumunda.  
+- `EnvDTE.Project` ve ondan dönüştürme `IModelingProject`, proje bir modelleme projesi ise ve geçerli AppDomain'e durumunda.  
   
--   `EnvDTE.ProjectItem` ve ondan dönüştürme `IDiagramContext`, öğe bir UML diyagram ise.  
+- `EnvDTE.ProjectItem` ve ondan dönüştürme `IDiagramContext`, öğe bir UML diyagram ise.  
   
- Aşağıdaki örnek için projenizin bu başvuruları içeri aktarması gerekir:  
+  Aşağıdaki örnek için projenizin bu başvuruları içeri aktarması gerekir:  
   
--   EnvDTE  
+- EnvDTE  
   
--   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+- Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
--   Microsoft.VisualStudio.Modeling.Sdk.[version]  
+- Microsoft.VisualStudio.Modeling.Sdk.[version]  
   
--   Microsoft.VisualStudio.Modeling.Sdk.Diagrams. [sürüm]  
+- Microsoft.VisualStudio.Modeling.Sdk.Diagrams. [sürüm]  
   
--   Microsoft.VisualStudio.Shell.Immutable. [sürüm]  
+- Microsoft.VisualStudio.Shell.Immutable. [sürüm]  
   
--   Microsoft.VisualStudio.Uml.Interfaces  
+- Microsoft.VisualStudio.Uml.Interfaces  
   
--   System.ComponentModel.Composition  
+- System.ComponentModel.Composition  
   
- Bu örnek, Visual Studio'da UML modeli açar:  
+  Bu örnek, Visual Studio'da UML modeli açar:  
   
 ```  
 using EnvDTE; // Visual Studio API for loading diagrams  

@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d4496c42bfcc0baecd69770ff529c189d85da026
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 23d810c6bbb460f01528d5f9fb55bb8ca482e383
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220876"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880760"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Nasıl Yapılır: Web Şablonlarını Elle Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,36 +36,36 @@ Bir Web şablonu oluşturma, diğer türlerdeki şablonları oluşturmaktan daha
   
 ### <a name="to-manually-create-a-web-template"></a>El ile bir Web şablonu oluşturmak için  
   
-1.  Web projesi oluşturun.  
+1. Web projesi oluşturun.  
   
-2.  Değiştirme veya proje dosyaları silin veya yeni dosyalar projeye ekleyin.  
+2. Değiştirme veya proje dosyaları silin veya yeni dosyalar projeye ekleyin.  
   
-3.  Bir XML dosyası oluşturun ve projeniz gibi aynı dizinde bir .vstemplate dosya adı uzantısı kullanarak kaydedin. Projede eklemeyin [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Bir XML dosyası oluşturun ve projeniz gibi aynı dizinde bir .vstemplate dosya adı uzantısı kullanarak kaydedin. Projede eklemeyin [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  Proje şablonu meta verilerini sağlamak için .vstemplate XML dosyasına yazar. Daha fazla bilgi için aşağıdaki bölümdeki örnekte bakın.  
+4. Proje şablonu meta verilerini sağlamak için .vstemplate XML dosyasına yazar. Daha fazla bilgi için aşağıdaki bölümdeki örnekte bakın.  
   
-5.  Bulun `ProjectType` .vstemplate dosyasını ve metin değerini kümesi öğesinde `Web`.  
+5. Bulun `ProjectType` .vstemplate dosyasını ve metin değerini kümesi öğesinde `Web`.  
   
-6.  Aşağıdaki `ProjectType` öğe, Ekle bir `ProjectSubType` öğesi ve metin şablonunun programlama dili değeri ayarlayın. Programlama dili, aşağıdaki değerlerden biri olabilir:  
+6. Aşağıdaki `ProjectType` öğe, Ekle bir `ProjectSubType` öğesi ve metin şablonunun programlama dili değeri ayarlayın. Programlama dili, aşağıdaki değerlerden biri olabilir:  
   
-    -   CSharp  
+   - CSharp  
   
-    -   VisualBasic  
+   - VisualBasic  
   
      Örneğin:  
   
-    ```  
-    <TemplateData>  
-        ...  
-        <ProjectType>Web</ProjectType>  
-        <ProjectSubType>CSharp</ProjectSubType>  
-        ...  
-    </TemplateData>  
-    ```  
+   ```  
+   <TemplateData>  
+       ...  
+       <ProjectType>Web</ProjectType>  
+       <ProjectSubType>CSharp</ProjectSubType>  
+       ...  
+   </TemplateData>  
+   ```  
   
-7.  (Bu içerir .vstemplate dosyası), şablonunuzda dosyaları seçin, seçime sağ tıklayın, **göndermek için**ve ardından **sıkıştırılmış (daraltılmış) klasör**. Dosyaları bir .zip dosyasına sıkıştırılır.  
+7. (Bu içerir .vstemplate dosyası), şablonunuzda dosyaları seçin, seçime sağ tıklayın, **göndermek için**ve ardından **sıkıştırılmış (daraltılmış) klasör**. Dosyaları bir .zip dosyasına sıkıştırılır.  
   
-8.  .Zip şablon dosyası koymak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proje şablonu dizini. Varsayılan olarak, bu \My Documents\Visual Studio dizindir *sürüm*\My dışarı aktarılan şablonları\\.  
+8. .Zip şablon dosyası koymak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proje şablonu dizini. Varsayılan olarak, bu \My Documents\Visual Studio dizindir *sürüm*\My dışarı aktarılan şablonları\\.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek, bir Web projesi şablonu için bir temel .vstemplate dosyası gösterilmektedir.  

@@ -17,12 +17,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 6d4f460d39d01f231cea03bf6bc81b927528844e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a72c907bf08ce534a61eb4ab7e4667135f104149
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173856"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885617"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Nasıl Yapılır: Katılımsız Visual Studio Yüklemesi Oluşturma ve Çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,9 +91,9 @@ ms.locfileid: "49173856"
   
 #### <a name="to-run-an-unattended-installation-on-a-client-computer"></a>Katılımsız bir yüklemeyi istemci bilgisayarda çalıştırmak için  
   
--   Açık **Başlat** menüsünde seçin **çalıştırma**yazıp enter \\ \\ *ServerName*\IDEinstall\vs_*ürün*.exe/adminfile *PathOfTheAdmindeployment.xmlFile**AdditionalParametersAsNeeded*  
+- Açık **Başlat** menüsünde seçin **çalıştırma**yazıp enter \\ \\ *ServerName*\IDEinstall\vs_*ürün*.exe/adminfile *PathOfTheAdmindeployment.xmlFile*<em>AdditionalParametersAsNeeded</em>  
   
-     Örneğin, aşağıdaki komut satırını belirtebilirsiniz: `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\ IDEinstall\AdminDeployment.xml /quiet /norestart`  
+   Örneğin, aşağıdaki komut satırını belirtebilirsiniz: `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\ IDEinstall\AdminDeployment.xml /quiet /norestart`  
   
 #### <a name="to-enable-clients-to-manually-install-visual-studio-with-pre-defined-settings"></a>Visual Studio'yu önceden tanımlanmış ayarlar ile el ile yüklemek istemcileri etkinleştirmek için  
   
@@ -115,59 +115,59 @@ ms.locfileid: "49173856"
   
 #### <a name="to-change-admindeployment-settings-on-a-client-computer-after-visual-studio-has-been-installed"></a>Visual Studio yüklendikten sonra istemci bilgisayarda AdminDeployment ayarlarını değiştirmek için  
   
-1.  Gerektiği gibi AdminDeployment.xml güncelleştirin.  
+1. Gerektiği gibi AdminDeployment.xml güncelleştirin.  
   
-2.  Açık **Başlat** menüsünü ve ardından **çalıştırmak**.  
+2. Açık **Başlat** menüsünü ve ardından **çalıştırmak**.  
   
-3.  Aşağıdaki metni girin: \\ \\ *ServerName*\IDEinstall\vs_*ürün*.exe/adminfile PathToAdmindeployment.xml dosyası  
+3. Aşağıdaki metni girin: \\ \\ *ServerName*\IDEinstall\vs_*ürün*.exe/adminfile PathToAdmindeployment.xml dosyası  
   
-     AdditionalParametersAsNeeded  
+    AdditionalParametersAsNeeded  
   
-     Örneğin, aşağıdaki komut satırını belirtebilirsiniz: `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\IDEinstall\AdminDeployment.xml /quiet /norestart`  
+    Örneğin, aşağıdaki komut satırını belirtebilirsiniz: `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\IDEinstall\AdminDeployment.xml /quiet /norestart`  
   
- Visual Studio yüklendikten sonra onarım varsayılan parametredir. Güncelleştirilmiş bir/adminfile ile Visual Studio'yu onarırsanız, güncelleştirilmiş AdminDeployment.xml dosyasını çağıran değerlerle geçerli yönetici dağıtma ayarları geçersiz kılar.  
+   Visual Studio yüklendikten sonra onarım varsayılan parametredir. Güncelleştirilmiş bir/adminfile ile Visual Studio'yu onarırsanız, güncelleştirilmiş AdminDeployment.xml dosyasını çağıran değerlerle geçerli yönetici dağıtma ayarları geçersiz kılar.  
   
 ## <a name="updating-an-installation"></a>Bir yüklemeyi güncelleştirme  
  Microsoft Visual Studio 2015 için birkaç güncelleştirme yayımladı. Bu bölümde, güncelleştirmeleri içerir, böylece Visual Studio 2015'in, katılımsız yükleme görüntüsünü güncelleştirmek açıklanmaktadır.  
   
 #### <a name="to-update-an-unattended-installation-of-visual-studio"></a>Visual Studio katılımsız yüklemesini güncelleştirmek için  
   
-1.  Mevcut ağ görüntüde Product.exe dosyasını bulun, sağ tıklayın ve ardından **özellikleri**.  
+1. Mevcut ağ görüntüde Product.exe dosyasını bulun, sağ tıklayın ve ardından **özellikleri**.  
   
-2.  Tıklayın **ayrıntıları** sekmesini ve sonra Not **ürün sürümü** özelliği.  
+2. Tıklayın **ayrıntıları** sekmesini ve sonra Not **ürün sürümü** özelliği.  
   
-     ![Visual Studio katılımsız yüklemesi Özellikleri iletişim kutusunda örneği](../install/media/unattended-install-properties-dialog-box.PNG "katılımsız yükleme - özellikleri iletişim kutusu")  
+    ![Visual Studio katılımsız yüklemesi Özellikleri iletişim kutusunda örneği](../install/media/unattended-install-properties-dialog-box.PNG "katılımsız yükleme - özellikleri iletişim kutusu")  
   
-3.  ###### <a name="if-the-product-version-is-140247200-or-140247201-follow-these-steps"></a>Ürün sürümü 14.0.24720.0 veya 14.0.24720.1 ise, şu adımları izleyin:  
-4.  1.  Çalıştırma *Product.exe* /layout *sürücü:* \IDEinstall Internet erişimi olan bir makinede. (Örneğin, çalıştırın: `vs_enterprise.exe /Layout d:\IDEinstall`.)  
+3. ###### <a name="if-the-product-version-is-140247200-or-140247201-follow-these-steps"></a>Ürün sürümü 14.0.24720.0 veya 14.0.24720.1 ise, şu adımları izleyin:  
+4. 1.  Çalıştırma *Product.exe* /layout *sürücü:* \IDEinstall Internet erişimi olan bir makinede. (Örneğin, çalıştırın: `vs_enterprise.exe /Layout d:\IDEinstall`.)  
   
-    2.  / Layout işlemi tamamlandıktan sonra yeni görüntüyü yeni bir konuma kopyalayın.  
+   2.  / Layout işlemi tamamlandıktan sonra yeni görüntüyü yeni bir konuma kopyalayın.  
   
-    3.  Oluşturun ve AdminDeployment.xml dosyasını değiştirin. Bunu yapmak için `/CreateAdminFile`  *\<dosya konumu >* komut satırı parametresi. (Daha fazla bilgi için bu makalenin "Katılımsız modda Visual Studio dağıtma" bölümüne bakın.)  
+   3.  Oluşturun ve AdminDeployment.xml dosyasını değiştirin. Bunu yapmak için `/CreateAdminFile`  *\<dosya konumu >* komut satırı parametresi. (Daha fazla bilgi için bu makalenin "Katılımsız modda Visual Studio dağıtma" bölümüne bakın.)  
   
-    4.  İstemci makinesinde daha önce yüklediğiniz Visual Studio kopyası güncelleştirmek için aşağıdaki komutu çalıştırın: "\\\\*Sunucu1*\IDEinstall_Updated_1\\*Product.exe*  /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart ".  
+   4.  İstemci makinesinde daha önce yüklediğiniz Visual Studio kopyası güncelleştirmek için aşağıdaki komutu çalıştırın: "\\\\*Sunucu1*\IDEinstall_Updated_1\\*Product.exe*  /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart ".  
   
-         Örneğin, şunu çalıştırın: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
-5.  ###### <a name="for-other-product-version-values-follow-these-steps"></a>Diğer ürün sürümü değerler için şu adımları izleyin:  
-6.  1.  Çalıştırma *Product.exe* /layout *sürücü:* \IDEinstall Internet erişimi olan bir makinede. (Örneğin, `vs-enterprise.exe /Layout d:\IDEinstall`.)  
+        Örneğin, şunu çalıştırın: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
+5. ###### <a name="for-other-product-version-values-follow-these-steps"></a>Diğer ürün sürümü değerler için şu adımları izleyin:  
+6. 1.  Çalıştırma *Product.exe* /layout *sürücü:* \IDEinstall Internet erişimi olan bir makinede. (Örneğin, `vs-enterprise.exe /Layout d:\IDEinstall`.)  
   
-    2.  / Layout işlemi tamamlandıktan sonra yeni görüntüyü yeni bir konuma kopyalayın. (Veya bunun yerine mevcut ağ görüntü geçersiz kılabilir.)  
+   2.  / Layout işlemi tamamlandıktan sonra yeni görüntüyü yeni bir konuma kopyalayın. (Veya bunun yerine mevcut ağ görüntü geçersiz kılabilir.)  
   
-    3.  Oluşturun ve sonra AdminDeployment.xml dosyasını değiştirmektir. Bunu yapmak için `/CreateAdminFile`  *\<dosya konumu >* komut satırı parametresi. (Daha fazla bilgi için bu makalenin "Katılımsız modda Visual Studio dağıtma" bölümüne bakın.)  
+   3.  Oluşturun ve sonra AdminDeployment.xml dosyasını değiştirmektir. Bunu yapmak için `/CreateAdminFile`  *\<dosya konumu >* komut satırı parametresi. (Daha fazla bilgi için bu makalenin "Katılımsız modda Visual Studio dağıtma" bölümüne bakın.)  
   
-    4.  Görüntüyü yeni bir konuma kopyalayın, daha önce yüklediğiniz Visual Studio kopyası güncelleştirmek için istemci makinesinde aşağıdaki komutu çalıştırmanız gerekir: "\\\\*Sunucu1*\IDEinstall_Updated_1\\ *Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart ".  
+   4.  Görüntüyü yeni bir konuma kopyalayın, daha önce yüklediğiniz Visual Studio kopyası güncelleştirmek için istemci makinesinde aşağıdaki komutu çalıştırmanız gerekir: "\\\\*Sunucu1*\IDEinstall_Updated_1\\ *Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart ".  
   
-         Örneğin, şunu çalıştırın: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
+        Örneğin, şunu çalıştırın: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
   
-    5.  Mevcut ağ görüntü geçersiz kılarsanız, önceki adımda listelenen komutunu çalıştırabilirsiniz ya da aşağıdakileri yapabilirsiniz:  
+   5.  Mevcut ağ görüntü geçersiz kılarsanız, önceki adımda listelenen komutunu çalıştırabilirsiniz ya da aşağıdakileri yapabilirsiniz:  
   
-    6.  1.  Açık **Denetim Masası**ve ardından **programlar ve Özellikler**.  
+   6.  1.  Açık **Denetim Masası**ve ardından **programlar ve Özellikler**.  
   
-        2.  Seçin **Visual Studio**ve ardından **değişiklik**.  
+       2.  Seçin **Visual Studio**ve ardından **değişiklik**.  
   
-        3.  Visual Studio bakım modunda başlattıktan sonra tıklayın **Değiştir**.  
+       3.  Visual Studio bakım modunda başlattıktan sonra tıklayın **Değiştir**.  
   
-        4.  En son güncelleştirmeyi Özellikler sayfasında görünmesi gerekir. Yüklemek için istediğiniz özellikleri seçin **sonraki**ve ardından **güncelleştirme** güncelleştirme hem yeni özellikler yüklemek için.  
+       4.  En son güncelleştirmeyi Özellikler sayfasında görünmesi gerekir. Yüklemek için istediğiniz özellikleri seçin **sonraki**ve ardından **güncelleştirme** güncelleştirme hem yeni özellikler yüklemek için.  
   
 ## <a name="registering-the-product"></a>Ürün kaydediliyor  
  Yükleme tamamlandıktan sonra kopyanızı kaydetmenizi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] içinden [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

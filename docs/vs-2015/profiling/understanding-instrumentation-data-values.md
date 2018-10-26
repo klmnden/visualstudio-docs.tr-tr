@@ -17,12 +17,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61e942a1c3cb43bcd2d3d7ef813ed4bd98267a1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75a1fddc6195805b786f4ad343c1c8917129dcdb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298889"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949247"
 ---
 # <a name="understanding-instrumentation-data-values"></a>İzleme Veri Değerlerini Anlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,37 +31,37 @@ ms.locfileid: "49298889"
   
  **Gereksinimler**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Araçlar yöntemini başlangıç ve son işlevlerin hedef profili oluşturulan ikili ve önceki ve sonraki her çağrının diğer işlevlere bu işlevleri tarafından kodu ekler. Eklenen kodu aşağıdaki kaydeder:  
+  Araçlar yöntemini başlangıç ve son işlevlerin hedef profili oluşturulan ikili ve önceki ve sonraki her çağrının diğer işlevlere bu işlevleri tarafından kodu ekler. Eklenen kodu aşağıdaki kaydeder:  
   
--   Bu koleksiyon olay ve önceki bir zaman aralığıdır.  
+- Bu koleksiyon olay ve önceki bir zaman aralığıdır.  
   
--   Olup bir işletim sistemi aralığı sırasında bir işlem gerçekleştirdi. Örneğin, işletim sistemi okuma veya yazma disk veya anahtar hedef iş parçacığı ve başka bir işlem başka bir iş parçacığı arasında.  
+- Olup bir işletim sistemi aralığı sırasında bir işlem gerçekleştirdi. Örneğin, işletim sistemi okuma veya yazma disk veya anahtar hedef iş parçacığı ve başka bir işlem başka bir iş parçacığı arasında.  
   
- **Gereksinimler**  
+  **Gereksinimler**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Her aralık için profil oluşturucu analiz aralığın sonunda mevcut çağırma yığınını yeniden oluşturur. Çağrı yığını, zaman içinde bir noktadaki bir işlemci üzerinde etkin olan işlevlerin listesidir. Yalnızca bir işlev (geçerli işlev) kodu yürütülüyor; diğer işlevler (çağrı yığınını) geçerli işlev çağrısında sonuçlanan işlev çağrıları zinciri içindedir.  
+  Her aralık için profil oluşturucu analiz aralığın sonunda mevcut çağırma yığınını yeniden oluşturur. Çağrı yığını, zaman içinde bir noktadaki bir işlemci üzerinde etkin olan işlevlerin listesidir. Yalnızca bir işlev (geçerli işlev) kodu yürütülüyor; diğer işlevler (çağrı yığınını) geçerli işlev çağrısında sonuçlanan işlev çağrıları zinciri içindedir.  
   
- Aralık kaydedildiği çağrı yığınında her işlev için profil oluşturucu analiz aralığı bir veya daha fazla işlev için dört veri değerlerinin ekler. Analiz iki ölçütleri temel alarak bir işlev için bir veri değer aralığı ekler:  
+  Aralık kaydedildiği çağrı yığınında her işlev için profil oluşturucu analiz aralığı bir veya daha fazla işlev için dört veri değerlerinin ekler. Analiz iki ölçütleri temel alarak bir işlev için bir veri değer aralığı ekler:  
   
--   Aralık kodu işlevin veya olup oluştu bir *alt işlevi* (işlev tarafından çağrılan bir işlev).  
+- Aralık kodu işlevin veya olup oluştu bir *alt işlevi* (işlev tarafından çağrılan bir işlev).  
   
--   Olup bir işletim sistemi olay aralığındaki oluştu.  
+- Olup bir işletim sistemi olay aralığındaki oluştu.  
   
- Bir işlev veya veri aralığı zaman aralığı için veri değerleri adlı *geçen kapsamlı*, *geçen dışlamalı*, *uygulama kapsamlı*, ve  *Uygulama özel*:  
+  Bir işlev veya veri aralığı zaman aralığı için veri değerleri adlı *geçen kapsamlı*, *geçen dışlamalı*, *uygulama kapsamlı*, ve  *Uygulama özel*:  
   
--   Bir işlevin tüm aralıkları geçen kapsamlı veri değerine eklenir.  
+- Bir işlevin tüm aralıkları geçen kapsamlı veri değerine eklenir.  
   
--   Aralık işlevinin kodundaki ve bir alt işlevindeki oluştuysa, aralığı işlevi geçen özel veri değerine eklenir.  
+- Aralık işlevinin kodundaki ve bir alt işlevindeki oluştuysa, aralığı işlevi geçen özel veri değerine eklenir.  
   
--   Bir işletim sistemi olay aralığında gerçekleşmedi aralığı uygulama kapsamlı veri değerine eklenir.  
+- Bir işletim sistemi olay aralığında gerçekleşmedi aralığı uygulama kapsamlı veri değerine eklenir.  
   
--   Bir işletim sistemi olay aralığında gerçekleşmedi ve doğrudan işlev kodunuzun yürütülmesine aralık oluştu (diğer bir deyişle, bir alt işlevde gerçekleşmedi), uygulama özel veri değerine aralık eklenir.  
+- Bir işletim sistemi olay aralığında gerçekleşmedi ve doğrudan işlev kodunuzun yürütülmesine aralık oluştu (diğer bir deyişle, bir alt işlevde gerçekleşmedi), uygulama özel veri değerine aralık eklenir.  
   
- Profil oluşturma araçları raporları profil oluşturma oturumu kendisini işlevlerin toplam değerleri ve işlemler, iş parçacıkları ve oturumun ikili dosyaları toplama.  
+  Profil oluşturma araçları raporları profil oluşturma oturumu kendisini işlevlerin toplam değerleri ve işlemler, iş parçacıkları ve oturumun ikili dosyaları toplama.  
   
 ## <a name="elapsed-inclusive-values"></a>Geçen kapsamlı değerleri  
  Bir işlev ve alt işlevleri yürütülürken harcanan toplam süre.  

@@ -16,12 +16,12 @@ ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d6d1e7f9323227ca6d925acadf93068935887f3d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1d701679755d73e01e27c7be0ba9833bf878bc43
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260062"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894449"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Nasıl yapılır: bir Atom oluşturmak için özel bir galeriyi akışı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ Bir Atom (uzantıları içeren ve akışa ekleme bir intranet konumu için RSS a
 ## <a name="creating-an-atom-feed"></a>Oluşturma bir Atom akışı  
  Atom akışı özel bir galeri oluşturmak için öncelikle bir klasöre uzantılarınızı (.vsix dosyaları) toplamanız gerekir. İsterseniz, alt klasörler halinde düzenleyebilirsiniz. Ayrıca, aşağıdaki kaynakları gerekir:  
   
--   Uzantıları özel bir galeri kullanılabilmesini atom.xml dosyası. Atom.xml dosyaya bağlanma hakkında daha fazla bilgi için **Uzantılar ve güncelleştirmeler**, bkz: [özel galeriler](../extensibility/private-galleries.md).  
+- Uzantıları özel bir galeri kullanılabilmesini atom.xml dosyası. Atom.xml dosyaya bağlanma hakkında daha fazla bilgi için **Uzantılar ve güncelleştirmeler**, bkz: [özel galeriler](../extensibility/private-galleries.md).  
   
--   (Örneğin, ekran görüntüleri) extensions ayıklanan herhangi bir görüntü dosyalarını içeren bir klasör. Böylece yer alır, görüntü yollarında göreli bağlantıları atom.xml dosyayı içeren **Uzantılar ve güncelleştirmeler**.  
+- (Örneğin, ekran görüntüleri) extensions ayıklanan herhangi bir görüntü dosyalarını içeren bir klasör. Böylece yer alır, görüntü yollarında göreli bağlantıları atom.xml dosyayı içeren **Uzantılar ve güncelleştirmeler**.  
   
- Örneğin, bir klasöre toplanan aşağıdaki iki uzantıları varsayın:  
+  Örneğin, bir klasöre toplanan aşağıdaki iki uzantıları varsayın:  
   
--   Template_Wizard_239.vsix boş bir VSIX proje şablonudur.  
+- Template_Wizard_239.vsix boş bir VSIX proje şablonudur.  
   
--   SelectionHighlight.vsix Seçili sözcüğün tüm örneklerinin vurgulamak için bir araçtır.  
+- SelectionHighlight.vsix Seçili sözcüğün tüm örneklerinin vurgulamak için bir araçtır.  
   
- Atom.xml dosyasının içeriğini aşağıdaki örneğe benzer:  
+  Atom.xml dosyasının içeriğini aşağıdaki örneğe benzer:  
   
 ```  
   <?xml version="1.0" encoding="utf-8" ?>   

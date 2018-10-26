@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3822e7d3c4ac027dbb010c642de6d9bf0ff1d13a
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 051935a2c7022af3c6811e90a89697a08f52fa9a
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138930"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050371"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Visual Studio 2017'yi yüklemek için komut satırı parametrelerini kullanma
 
@@ -33,9 +33,9 @@ Visual Studio 2017'yi bir komut isteminden yüklediğinizde, denetim ya da yükl
 
 Komut satırı seçenekleri, indirme işlemini başlatan küçük (yaklaşık 1 MB) dosya kurulum önyükleyici ile birlikte kullanılır. Önyükleyici Visual Studio sitesinden indirdiğinizde başlatıldığında ilk yürütülebilir ' dir. Doğrudan bir bağlantı için en son sürüm önyükleyici için yüklemekte olduğunuz ürün sürümünü almak için aşağıdaki bağlantıları kullanın:
 
-* [Visual Studio 2017 Enterprise](https://aka.ms/vs/15/release/vs_enterprise.exe)
-* [Visual Studio 2017 Professional](https://aka.ms/vs/15/release/vs_professional.exe)
-* [Visual Studio 2017 Community](https://aka.ms/vs/15/release/vs_community.exe)
+- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
 
 ## <a name="list-of-command-line-parameters"></a>Komut satırı parametrelerinin listesi
 
@@ -122,7 +122,7 @@ Komut satırı seçenekleri, indirme işlemini başlatan küçük (yaklaşık 1 
 | FR-fr | Fransızca |
 | İt-IT | İtalyanca |
 | Ja-jp | Japonca |
-| Ko-kr | Kore Dili |
+| Ko-kr | Korece |
 | PL-pl | Lehçe |
 | PT-br | Portekizce - Brezilya |
 | RU-ru | Rusça |
@@ -149,7 +149,7 @@ Her işlemin birkaç günlük dosyalarında oluşturur `%TEMP%` yüklemenin iler
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio 2017 yüklemesi için komut satırı parametresi örnekleri](command-line-parameter-examples.md)
-* [Visual Studio 2017'in çevrimdışı yüklemesini oluşturma](create-an-offline-installation-of-visual-studio.md)
-* [Yanıt dosyası ile Visual Studio yüklemesini otomatikleştirme](automated-installation-with-response-file.md)
-* [Visual Studio 2017 iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md)
+- [Visual Studio 2017 yüklemesi için komut satırı parametresi örnekleri](command-line-parameter-examples.md)
+- [Visual Studio 2017'in çevrimdışı yüklemesini oluşturma](create-an-offline-installation-of-visual-studio.md)
+- [Yanıt dosyası ile Visual Studio yüklemesini otomatikleştirme](automated-installation-with-response-file.md)
+- [Visual Studio 2017 iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md)

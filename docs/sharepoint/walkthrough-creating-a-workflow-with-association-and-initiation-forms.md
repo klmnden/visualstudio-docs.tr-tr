@@ -22,37 +22,37 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4832ce22bfa0137040892ffcd1ce08b3f32646bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6aafde6fed0a1f1722c2d355499523114aaaa00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635687"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873883"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>İzlenecek yol: İlişkilendirme ve başlatma formları ile iş akışı oluşturma
   Bu yönerge, ilişki ve başlatma formlarını kullanımını içeren bir temel sıralı iş akışının nasıl oluşturulacağını gösterir. Öncelikle SharePoint Yöneticisi tarafından (İlişkilendirme formu) ilişkili ve iş akışı (başlatma formu) kullanıcı tarafından yeniden başlatıldığında, bir iş akışına eklenecek parametrelerini etkinleştirme ASPX forms şunlardır.  
   
  Bu izlenecek yolda, burada aşağıdaki gereksinimleri olan bir onay iş akışı gider raporlarını oluşturmak için bir kullanıcının istediği bir senaryosu açıklanmaktadır:  
   
--   İş akışı bir listesi ile ilişkili olduğunda yönetici ile bir ilişkilendirme formu dolar sınırı masraf raporları nereye girmeleri istenir.  
+- İş akışı bir listesi ile ilişkili olduğunda yönetici ile bir ilişkilendirme formu dolar sınırı masraf raporları nereye girmeleri istenir.  
   
--   Çalışanlar paylaşılan belgeler listesine, Gider raporlarını karşıya yükleme, iş akışını başlatmak ve sonra iş akışı başlatma formu içinde Toplam gider girin.  
+- Çalışanlar paylaşılan belgeler listesine, Gider raporlarını karşıya yükleme, iş akışını başlatmak ve sonra iş akışı başlatma formu içinde Toplam gider girin.  
   
--   Toplam çalışan gider raporu yöneticinin önceden tanımlanmış sınırını aşarsa çalışanın yöneticisine harcama raporlarını onaylamak bir görev oluşturulur. Ancak, bir çalışanın harcama raporu toplam harcama sınırına eşit veya daha az ise, iş akışı Geçmiş listesine bir otomatik onaylı ileti yazılır.  
+- Toplam çalışan gider raporu yöneticinin önceden tanımlanmış sınırını aşarsa çalışanın yöneticisine harcama raporlarını onaylamak bir görev oluşturulur. Ancak, bir çalışanın harcama raporu toplam harcama sınırına eşit veya daha az ise, iş akışı Geçmiş listesine bir otomatik onaylı ileti yazılır.  
   
- Bu izlenecek yol aşağıdaki görevleri gösterir:  
+  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
--   Bir SharePoint liste tanımını sıralı iş akışı projesi oluşturma [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+- Bir SharePoint liste tanımını sıralı iş akışı projesi oluşturma [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
--   Bir iş akışı zamanlama oluşturuluyor.  
+- Bir iş akışı zamanlama oluşturuluyor.  
   
--   İşleme iş akışı etkinlik olayları.  
+- İşleme iş akışı etkinlik olayları.  
   
--   İş akışı ilişkilendirme ve başlatma formlarını oluşturuluyor.  
+- İş akışı ilişkilendirme ve başlatma formlarını oluşturuluyor.  
   
--   İş akışı ilişkilendirme.  
+- İş akışı ilişkilendirme.  
   
--   İş akışı el ile başlatma.  
+- İş akışı el ile başlatma.  
   
 > [!NOTE]  
 >  Bu kılavuzda bir sıralı iş akışı projesi kullansa da, durum makine iş akışları için aynı işlemidir.  

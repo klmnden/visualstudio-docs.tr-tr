@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35699d765a8d01e212fe02257da2aa83e245ecd4
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 88d7dd7f6fe09acd77ee37ca473fbd5290be6ee1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890194"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861117"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend'de çalışma yüzeyi değiştirici tuşları
 Bazı klavye kısayolları sahip ilişkilendirilmemiş menü öğeleri, kullanamayacağınız anlamına gelir [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] bunları bulmak için kullanıcı arabirimi. Bir nesneyi yeniden boyutlandırma gibi bir eylem değiştirme kısayolları aşağıdaki tabloda listelenmektedir.
 
 |Bu işlemi yapma|Bunu yapın|
-|-----------------------|-------------|
+| - |-------------|
 |Geçici olarak seçme **seçimi** farklı bir araç seçili kalırken Aracı (Bu bir şey tıklayın zorunda sayısını azaltır **Araçları** arasındagidippaneli, **Seçimi** araç ve diğerleri)|Basılı **Ctrl**|
 |Seçilen nesneleri sırasında kaydırmak **seçimi** araç seçili|OK tuşlarına basın|
 |Çalışma yüzeyine Kaydır|Basılı **boşluk** ve çalışma yüzeyine sürükleyin.|

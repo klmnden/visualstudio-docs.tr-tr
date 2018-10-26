@@ -20,47 +20,47 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f9ceb4d89c2c33e903811b891438d130f5552b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7b533a82f02d0c993ea4ecc58aca700c540e6a39
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284013"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852914"
 ---
 # <a name="how-to-attach-to-script"></a>Nasıl Yapılır: Betiğe Ekleme
 Bu konuda, bir komut dosyası hata ayıklama için Visual Studio hata ayıklayıcısını el ile ekleme açıklanmaktadır.  
   
 ### <a name="to-attach-to-a-running-process"></a>Çalışan bir işleme iliştirmek için  
   
-1.  Üzerinde **hata ayıklama** menüsünde seçin **iliştirme**. (Hiçbir proje açıksa seçin **iliştirme** üzerinde **Araçları** menü.)  
+1. Üzerinde **hata ayıklama** menüsünde seçin **iliştirme**. (Hiçbir proje açıksa seçin **iliştirme** üzerinde **Araçları** menü.)  
   
-2.  İçinde **iliştirme** iletişim kutusu, göz **kullanılabilir işlemler** listesi ve bulma komut dosyası işleme iliştirmek istediğiniz. Betik işlemleri bakarak belirleyebilirsiniz **türü** sütun.  
+2. İçinde **iliştirme** iletişim kutusu, göz **kullanılabilir işlemler** listesi ve bulma komut dosyası işleme iliştirmek istediğiniz. Betik işlemleri bakarak belirleyebilirsiniz **türü** sütun.  
   
-    1.  Hata ayıklama yapmak istediğiniz işlemi başka bir bilgisayarda çalışıyorsa, uzak bilgisayarın seçmeniz gerekir.
+   1.  Hata ayıklama yapmak istediğiniz işlemi başka bir bilgisayarda çalışıyorsa, uzak bilgisayarın seçmeniz gerekir.
   
-    2.  İşlemi farklı bir kullanıcı hesabı altında çalışıyorsa, seçin **tüm kullanıcıların işlemlerini göster** onay kutusu.  
+   2.  İşlemi farklı bir kullanıcı hesabı altında çalışıyorsa, seçin **tüm kullanıcıların işlemlerini göster** onay kutusu.  
   
-    3.  Aracılığıyla bağlanırsanız **Uzak Masaüstü Bağlantısı**seçin **tüm oturumlardaki işlemleri göster** onay kutusu.  
+   3.  Aracılığıyla bağlanırsanız **Uzak Masaüstü Bağlantısı**seçin **tüm oturumlardaki işlemleri göster** onay kutusu.  
   
-3.  Eklemek istediğiniz işlemi tıklayın.  
+3. Eklemek istediğiniz işlemi tıklayın.  
   
-4.  İçinde **ekleme** kutusunda, görmelisiniz **betik kodu** veya **otomatik: betik kodu**. Başka bir şey görürseniz, aşağıdaki adımları izleyin:  
+4. İçinde **ekleme** kutusunda, görmelisiniz **betik kodu** veya **otomatik: betik kodu**. Başka bir şey görürseniz, aşağıdaki adımları izleyin:  
   
-    1.  Tıklayın **seçin**.  
+   1.  Tıklayın **seçin**.  
   
-    2.  İçinde **kod türünü seç** iletişim kutusu, tıklayın **bu tür kodlarda hata ayıklama** seçip **betik**.  
+   2.  İçinde **kod türünü seç** iletişim kutusu, tıklayın **bu tür kodlarda hata ayıklama** seçip **betik**.  
   
-    3.  **Tamam**'ı tıklatın.  
+   3.  **Tamam**'ı tıklatın.  
   
-5.  Tıklayın **ekleme**.  
+5. Tıklayın **ekleme**.  
   
-     Bu noktada, komut dosyası hata ayıklaması Internet Explorer'da devre dışı bırakıldığını belirten bir uyarı görebilirsiniz. Bu meydana gelirse, bkz. [Uyarı: betik hata ayıklamasını devre dışı bırakılmış](../debugger/warning-script-debugging-disabled.md).  
+    Bu noktada, komut dosyası hata ayıklaması Internet Explorer'da devre dışı bırakıldığını belirten bir uyarı görebilirsiniz. Bu meydana gelirse, bkz. [Uyarı: betik hata ayıklamasını devre dışı bırakılmış](../debugger/warning-script-debugging-disabled.md).  
   
- **Kullanılabilir işlemler** listesi açıldığında otomatik olarak görüntüleniyor **işlemleri** iletişim kutusu. İşlemler başlatabilir ve iletişim kutusu açıkken arka planda durdurabilirsiniz. Bu nedenle, içeriği her zaman güncel olmayabilir. Listenin tuşlarına basarak işlemlerin geçerli listesini görmek için herhangi bir zamanda yenileyebilirsiniz **Yenile** düğmesi.  
+   **Kullanılabilir işlemler** listesi açıldığında otomatik olarak görüntüleniyor **işlemleri** iletişim kutusu. İşlemler başlatabilir ve iletişim kutusu açıkken arka planda durdurabilirsiniz. Bu nedenle, içeriği her zaman güncel olmayabilir. Listenin tuşlarına basarak işlemlerin geçerli listesini görmek için herhangi bir zamanda yenileyebilirsiniz **Yenile** düğmesi.  
   
- Birden çok programları için hata ayıklama, ancak herhangi bir anda yalnızca bir programı hata ayıklayıcıda etkin eklenebilir. Hata ayıklama konumu araç çubuğunda etkin programı ayarlayabilirsiniz. Daha fazla bilgi için [nasıl yapılır: geçerli süreci Ayarla](/previous-versions/visualstudio/visual-studio-2010/d5d4sxdw(v=vs.100)).  
+   Birden çok programları için hata ayıklama, ancak herhangi bir anda yalnızca bir programı hata ayıklayıcıda etkin eklenebilir. Hata ayıklama konumu araç çubuğunda etkin programı ayarlayabilirsiniz. Daha fazla bilgi için [nasıl yapılır: geçerli süreci Ayarla](/previous-versions/visualstudio/visual-studio-2010/d5d4sxdw(v=vs.100)).  
   
- Tüm **hata ayıklama** yürütme komutlarını etkin programı etkiler. Herhangi bir hata ayıklaması yapılan programa işlemleri iletişim kutusundan bozabilir. Bkz: [kesme noktalarını kullanma](../debugger/using-breakpoints.md).  
+   Tüm **hata ayıklama** yürütme komutlarını etkin programı etkiler. Herhangi bir hata ayıklaması yapılan programa işlemleri iletişim kutusundan bozabilir. Bkz: [kesme noktalarını kullanma](../debugger/using-breakpoints.md).  
   
 > [!NOTE]
 >  Güvenilmeyen bir kullanıcı tarafından sahip olunan bir işlem eklemeye çalışırsanız, bir güvenlik uyarısı iletişim kutusu onayı görünecektir. Daha fazla bilgi için [güvenlik uyarısı: güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme tehlikeli olabilir. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  

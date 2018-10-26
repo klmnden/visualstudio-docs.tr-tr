@@ -19,12 +19,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b17f8abed32a14aead89a685a030654e1afe32f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 74c3361e4c254841bb58f23ad789ed7a2cad584f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190729"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857399"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Simülatörde Windows Store uygulamaları çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,35 +123,35 @@ Windows Store uygulamaları için Visual Studio simulator, Windows Store app tak
   
  Ağ özellikleri benzetimini yapmak için:  
   
-1.  Simülatör araç çubuğunda **ağ özelliklerini değiştirme** düğmesi.  
+1. Simülatör araç çubuğunda **ağ özelliklerini değiştirme** düğmesi.  
   
-2.  Üzerinde **ağ özelliklerini ayarla** iletişim kutusunda **kullanım sanal ağ özellikleri**.  
+2. Üzerinde **ağ özelliklerini ayarla** iletişim kutusunda **kullanım sanal ağ özellikleri**.  
   
-     Benzetim kaldırın ve şu anda bağlı arabirimi için ağ özellikleri döndürmek için bu onay kutusunu temizleyin.  
+    Benzetim kaldırın ve şu anda bağlı arabirimi için ağ özellikleri döndürmek için bu onay kutusunu temizleyin.  
   
-3.  Girin bir **profil adı** sanal ağ için. Benzetim tanımlamak için kullanabileceğiniz bir benzersiz ad kullanmanızı öneririz [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) özelliği [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) nesne.  
+3. Girin bir **profil adı** sanal ağ için. Benzetim tanımlamak için kullanabileceğiniz bir benzersiz ad kullanmanızı öneririz [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) özelliği [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) nesne.  
   
-4.  Seçin [NetworkCostType](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) profilinden değeri **ağ maliyet türü** listesi.  
+4. Seçin [NetworkCostType](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) profilinden değeri **ağ maliyet türü** listesi.  
   
-5.  Gelen **veri sınırı durum bayrağı** liste, ayarlayabilirsiniz [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) özelliği veya [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)özelliği true olarak veya tercih edebilirsiniz  **Veri sınırının altında** her iki değeri false olarak ayarlanacak.  
+5. Gelen **veri sınırı durum bayrağı** liste, ayarlayabilirsiniz [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) özelliği veya [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)özelliği true olarak veya tercih edebilirsiniz  **Veri sınırının altında** her iki değeri false olarak ayarlanacak.  
   
-6.  Gelen **gezici durumu** listesinde, ayarlamak [gezici](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) özelliği.  
+6. Gelen **gezici durumu** listesinde, ayarlamak [gezici](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) özelliği.  
   
-7.  Seçin **özelliklerini ayarla** ağ özelliklerinin, ön plan tetikleyerek benzetimini yapmak için [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) olay ve arka plan [SystemTrigger](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) türü **NetworkStateChange**.  
+7. Seçin **özelliklerini ayarla** ağ özelliklerinin, ön plan tetikleyerek benzetimini yapmak için [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) olay ve arka plan [SystemTrigger](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) türü **NetworkStateChange**.  
   
- **Ağ Bağlantıları yönetme hakkında daha fazla bilgi**  
+   **Ağ Bağlantıları yönetme hakkında daha fazla bilgi**  
   
- [Hızlı Başlangıç: Tarifeli ağ maliyet kısıtlamalarını yönetme](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Hızlı Başlangıç: Tarifeli ağ maliyet kısıtlamalarını yönetme](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
- [Ağ bilgi örnek](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [Ağ bilgi örnek](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
- [Enerji kullanımını çözümleme](../profiling/analyze-energy-use-in-store-apps.md)  
+   [Enerji kullanımını çözümleme](../profiling/analyze-energy-use-in-store-apps.md)  
   
- [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
+   [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
- [Nasıl sistem arka plan görevleri ile olaylara yanıt verme](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+   [Nasıl sistem arka plan görevleri ile olaylara yanıt verme](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
- [Nasıl tetikleyeceğinizi askıya alma, sürdürme ve arka plan olaylarını Windows Store uygulamalarında](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+   [Nasıl tetikleyeceğinizi askıya alma, sürdürme ve arka plan olaylarını Windows Store uygulamalarında](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Simülatör klavye ile gezinme  
  Simülatör araç çubuğu tuşlarına basarak gezinebilirsiniz **CTRL + ALT + YUKARI OK** odak simülatör araç çubuğuna simülatör penceresinde geçiş yapmak için. Kullanım **yukarı ok** ve **aşağı ok** araç çubuğu düğmeleri arasında taşımak için.  

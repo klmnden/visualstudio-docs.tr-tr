@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 082471c04bd8354e392a075f1ff559961cd402ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14517a3f941ae7d177c876a48a400113c775fdb2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194134"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897881"
 ---
 # <a name="gpu-usage"></a>GPU Kullanımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,52 +33,52 @@ Visual Studio performans ve tanılama hub'ında GPU kullanımı aracı daha iyi 
 ## <a name="requirements"></a>Gereksinimler  
  Grafik tanılama gereksinimlerine ek olarak GPU kullanımı aracı kullanma gereksinimleri aşağıda verilmiştir.  
   
--   Bir GPU ve sürücü gerekli zamanlama araçları desteği.  
+- Bir GPU ve sürücü gerekli zamanlama araçları desteği.  
   
-    > [!NOTE]
-    >  Desteklenen donanım ve sürücüler hakkında daha fazla bilgi için bkz. [donanım ve sürücü desteği](#hwsupport) bu belgenin sonunda.  
+  > [!NOTE]
+  >  Desteklenen donanım ve sürücüler hakkında daha fazla bilgi için bkz. [donanım ve sürücü desteği](#hwsupport) bu belgenin sonunda.  
   
- Grafik tanılama gereksinimleri hakkında daha fazla bilgi için bkz. [Başlarken](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md).  
+  Grafik tanılama gereksinimleri hakkında daha fazla bilgi için bkz. [Başlarken](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="using-the-gpu-usage-tool"></a>GPU kullanımı Aracı'nı kullanma  
  GPU kullanımı aracı altında uygulamanızı çalıştırdığınızda, Visual Studio, uygulamanızın işleme performansını ve gerçek zamanlı GPU kullanımı hakkında üst düzey bilgileri grafik Tanılama oturumu oluşturur.  
   
 #### <a name="to-start-the-gpu-usage-tool"></a>GPU kullanımı aracı başlatmak için:  
   
-1.  Ana menüde seçin **hata ayıklama**, ardından **performans ve tanılama** (klavye: Alt + F2 tuşuna basın).  
+1. Ana menüde seçin **hata ayıklama**, ardından **performans ve tanılama** (klavye: Alt + F2 tuşuna basın).  
   
-2.  Performans ve tanılama hub yanındaki kutuyu işaretleyin **GPU kullanımı**. İsteğe bağlı olarak, ilgilendiğiniz diğer Araçlar'ın yanındaki kutuları işaretleyin. Eşzamanlı olarak uygulamanızın performansını daha kapsamlı bir resmini almak için birkaç performans ve tanılama araçları çalıştırabilirsiniz.  
+2. Performans ve tanılama hub yanındaki kutuyu işaretleyin **GPU kullanımı**. İsteğe bağlı olarak, ilgilendiğiniz diğer Araçlar'ın yanındaki kutuları işaretleyin. Eşzamanlı olarak uygulamanızın performansını daha kapsamlı bir resmini almak için birkaç performans ve tanılama araçları çalıştırabilirsiniz.  
   
-     ![Kullanmak istediğiniz Tanılama Araçları'nı seçin. ](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
+    ![Kullanmak istediğiniz Tanılama Araçları'nı seçin. ](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
-    > [!NOTE]
-    >  Tüm performans ve tanılama araçları, aynı anda kullanılabilir.  
+   > [!NOTE]
+   >  Tüm performans ve tanılama araçları, aynı anda kullanılabilir.  
   
-3.  Mavi seçin **Başlat** seçtiğiniz Araçları altındaki uygulamanızı çalıştırmak için performans ve tanılama hub'ın altındaki düğmesi.  
+3. Mavi seçin **Başlat** seçtiğiniz Araçları altındaki uygulamanızı çalıştırmak için performans ve tanılama hub'ın altındaki düğmesi.  
   
- Çerçeve zamanlama, kare hızı ve GPU kullanımı gerçek zamanlı olarak gösterilen üst düzey bilgileri içerir. Bu bilgilerin her grafiği çizilecek bağımsız olarak, ancak ortak saat ölçek kullanabilir, böylece bunlar arasında kolayca ilişkilendirebilirsiniz.  
+   Çerçeve zamanlama, kare hızı ve GPU kullanımı gerçek zamanlı olarak gösterilen üst düzey bilgileri içerir. Bu bilgilerin her grafiği çizilecek bağımsız olarak, ancak ortak saat ölçek kullanabilir, böylece bunlar arasında kolayca ilişkilendirebilirsiniz.  
   
- **Çerçeve süresi (ms)** ve **kare / saniye (FPS)** grafikler içeren iki kırmızı, yatay satırları performans hedefleyen 60 ve 30 kare / saniye temsil eder. İçinde **çerçeve süresi** grafik, uygulamanız grafiğin altına satır olduğunda performans hedef aşan ve grafik üzerine satır olduğunda eksik. Saniyedeki kare sayısını ikinci grafik için tersidir: uygulamanızı grafik üzerine satır olduğunda performans hedef aşan ve grafiğin altına satır olduğunda eksik. Öncelikle, bu grafiklere uygulamanızın performansı hakkında üst düzey bir fikir edinmek ve örneğin araştırmak isteyebileceğiniz slow-downs, GPU kullanımı bir ani değişiklik ya da bir kare hızı ani düşme tanımlamak için kullanılır.  
+   **Çerçeve süresi (ms)** ve **kare / saniye (FPS)** grafikler içeren iki kırmızı, yatay satırları performans hedefleyen 60 ve 30 kare / saniye temsil eder. İçinde **çerçeve süresi** grafik, uygulamanız grafiğin altına satır olduğunda performans hedef aşan ve grafik üzerine satır olduğunda eksik. Saniyedeki kare sayısını ikinci grafik için tersidir: uygulamanızı grafik üzerine satır olduğunda performans hedef aşan ve grafiğin altına satır olduğunda eksik. Öncelikle, bu grafiklere uygulamanızın performansı hakkında üst düzey bir fikir edinmek ve örneğin araştırmak isteyebileceğiniz slow-downs, GPU kullanımı bir ani değişiklik ya da bir kare hızı ani düşme tanımlamak için kullanılır.  
   
- Tanılama oturumu, ayrıca uygulamanızı GPU kullanımı aracı altında çalışırken, GPU üzerinde yürütülen grafik olaylarını hakkında ayrıntılı bilgi toplar. Bu bilgileri, uygulamanızın donanım nasıl kullanacağını daha ayrıntılı bir rapor oluşturmak için kullanılır. Bu rapor toplanan bilgileri oluşturmak için biraz zaman alır çünkü Tanılama oturumu bilgi toplama tamamlandıktan sonra yalnızca kullanılabilir.  
+   Tanılama oturumu, ayrıca uygulamanızı GPU kullanımı aracı altında çalışırken, GPU üzerinde yürütülen grafik olaylarını hakkında ayrıntılı bilgi toplar. Bu bilgileri, uygulamanızın donanım nasıl kullanacağını daha ayrıntılı bir rapor oluşturmak için kullanılır. Bu rapor toplanan bilgileri oluşturmak için biraz zaman alır çünkü Tanılama oturumu bilgi toplama tamamlandıktan sonra yalnızca kullanılabilir.  
   
- Ne zaman bir performans aramak istediğiniz veya kullanımı daha yakından sorun, raporu oluşturulan performans bilgilerini toplama durdurun.  
+   Ne zaman bir performans aramak istediğiniz veya kullanımı daha yakından sorun, raporu oluşturulan performans bilgilerini toplama durdurun.  
   
 #### <a name="to-generate-and-view-the-gpu-usage-report"></a>GPU kullanımı raporu görüntülemek ve oluşturmak için:  
   
-1.  Tanılama oturumu pencerenin alt kısmında seçin **toplamasını Durdur** tuşuna basın veya bağlantı **Durdur** sol üst köşesinde.  
+1. Tanılama oturumu pencerenin alt kısmında seçin **toplamasını Durdur** tuşuna basın veya bağlantı **Durdur** sol üst köşesinde.  
   
-     ![GPU ve CPU zamanlama bilgilerini toplayın. ](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
+    ![GPU ve CPU zamanlama bilgilerini toplayın. ](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
   
-2.  Raporun üst kısmında, araştırmak istediğiniz sorunu gösteren grafikler birinden bir bölüm seçin. Seçiminizi 3 saniyeye kadar uzun olabilir. daha uzun bölüm başına doğrultusunda kesilir.  
+2. Raporun üst kısmında, araştırmak istediğiniz sorunu gösteren grafikler birinden bir bölüm seçin. Seçiminizi 3 saniyeye kadar uzun olabilir. daha uzun bölüm başına doğrultusunda kesilir.  
   
-     ![POST&#45;koleksiyonu, ayrıntıları görüntülemek için bir aralık seçin](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
+    ![POST&#45;koleksiyonu, ayrıntıları görüntülemek için bir aralık seçin](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
   
-3.  Raporun alt kısmında seçin **ayrıntıları görüntüle** bağlantısını **. Bu aralıktaki GPU kullanım ayrıntılarını görüntülemek için burayı** seçiminizi ayrıntılı bir zaman çizelgesi görüntülenecek ileti.  
+3. Raporun alt kısmında seçin **ayrıntıları görüntüle** bağlantısını **. Bu aralıktaki GPU kullanım ayrıntılarını görüntülemek için burayı** seçiminizi ayrıntılı bir zaman çizelgesi görüntülenecek ileti.  
   
-     ![POST&#45;koleksiyonuyla seçilen aralık](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
+    ![POST&#45;koleksiyonuyla seçilen aralık](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
   
- Bu raporu içeren yeni bir sekmeli belge açılır. GPU kullanımı raporu, CPU üzerinde bir grafik olay başlatıldığında, GPU ulaştığında ve onu yürütmek için GPU ne kadar sürdüğünü görmek için yardımcı olur. Bu bilgiler performans sorunlarını ve kodunuzu artan paralellikteki fırsatları belirlemenize yardımcı olabilir.  
+   Bu raporu içeren yeni bir sekmeli belge açılır. GPU kullanımı raporu, CPU üzerinde bir grafik olay başlatıldığında, GPU ulaştığında ve onu yürütmek için GPU ne kadar sürdüğünü görmek için yardımcı olur. Bu bilgiler performans sorunlarını ve kodunuzu artan paralellikteki fırsatları belirlemenize yardımcı olabilir.  
   
 ## <a name="using-the-gpu-usage-report"></a>GPU kullanımı raporu kullanma  
  GPU kullanımı raporu üst kısmını zaman çizelgeleri CPU işleme etkinlik, GPU işleme etkinliği ve GPU kopyalama etkinliği için görüntüler. Bu zaman çizelgeleri görüntünün vsync temsil eden açık gri, dikey çubuklar ayrılır; yenileme hızı görüntüler birinin çubukları sıklığını eşleşir (kullanarak seçili **görünen** açılır), GPU kullanımı verileri toplandığı. Uygulamanızın performans hedef değerinden daha yüksek bir yenileme hızı görünen olabileceğinden vsync elde etmek için uygulamanızı istediğiniz kare hızı arasında bir 1-1 ilişkisi olmayabilir. Performans hedefine karşılamak için bir uygulama olmalıdır tüm işlemleri tamamlamak, işleme gerçekleştirmek ve hedeflenen kare hızı Present() çağrı yapmak, ancak sonra Present() kareyi sonraki vsync'e kadar görüntülenmez.  

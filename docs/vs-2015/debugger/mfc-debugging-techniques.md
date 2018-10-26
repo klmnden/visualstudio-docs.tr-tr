@@ -32,12 +32,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b311954172038d20327ab92283812a8b157a0d06
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac5c208478147e0b264165383df7deea23720c1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303920"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867903"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC Hata Ayıklama Teknikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,23 +51,23 @@ MFC programı hata ayıklaması yapıyorsanız, bu hata ayıklama teknikleri yar
   
  [Bellek MFC'de sızıntılarını algılama](#BKMK_Memory_leak_detection_in_MFC)  
   
--   [Bellek ayırma izleme](#BKMK_Tracking_memory_allocations)  
+- [Bellek ayırma izleme](#BKMK_Tracking_memory_allocations)  
   
--   [Bellek tanılamayı etkinleştirme](#BKMK_Enabling_memory_diagnostics)  
+- [Bellek tanılamayı etkinleştirme](#BKMK_Enabling_memory_diagnostics)  
   
--   [Bellek anlık görüntü alma](#BKMK_Taking_memory_snapshots)  
+- [Bellek anlık görüntü alma](#BKMK_Taking_memory_snapshots)  
   
--   [Bellek istatistikleri görüntüleme](#BKMK_Viewing_memory_statistics)  
+- [Bellek istatistikleri görüntüleme](#BKMK_Viewing_memory_statistics)  
   
--   [Alma nesne dökümünü yapar](#BKMK_Taking_object_dumps)  
+- [Alma nesne dökümünü yapar](#BKMK_Taking_object_dumps)  
   
-    -   [Bellek yorumlama dökümünü yapar](#BKMK_Interpreting_memory_dumps)  
+  - [Bellek yorumlama dökümünü yapar](#BKMK_Interpreting_memory_dumps)  
   
-    -   [Özelleştirme nesnenin dökümünü yapar](#BKMK_Customizing_object_dumps)  
+  - [Özelleştirme nesnenin dökümünü yapar](#BKMK_Customizing_object_dumps)  
   
-     [Bir MFC hata ayıklama derleme boyutunu küçültme](#BKMK_Reducing_the_size_of_an_MFC_Debug_build)  
+    [Bir MFC hata ayıklama derleme boyutunu küçültme](#BKMK_Reducing_the_size_of_an_MFC_Debug_build)  
   
-    -   [Seçili modüller için hata ayıklama bilgileri içeren bir MFC uygulaması oluşturma](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
+  - [Seçili modüller için hata ayıklama bilgileri içeren bir MFC uygulaması oluşturma](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
 ##  <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
  MFC sağlayan özel bir [AfxDebugBreak](http://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) işlevi kaynak kodunda kesme kodlamak için:  
@@ -145,62 +145,62 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  **Etkinleştirme veya devre dışı Bellek Tanılama**  
   
--   Genel işlev çağrısı [AfxEnableMemoryTracking](http://msdn.microsoft.com/library/0a40e0c4-855d-46e2-9577-a8f2346f47db) etkinleştirme veya devre dışı tanılama bellek ayırıcısı. Bellek Tanılama üzerinde varsayılan olarak hata ayıklama kitaplığı olduğundan, genellikle programı yürütme hızını artırır ve tanılama çıkışı azaltan geçici olarak devre dışı kapatmak için bu işlevi kullanın.  
+- Genel işlev çağrısı [AfxEnableMemoryTracking](http://msdn.microsoft.com/library/0a40e0c4-855d-46e2-9577-a8f2346f47db) etkinleştirme veya devre dışı tanılama bellek ayırıcısı. Bellek Tanılama üzerinde varsayılan olarak hata ayıklama kitaplığı olduğundan, genellikle programı yürütme hızını artırır ve tanılama çıkışı azaltan geçici olarak devre dışı kapatmak için bu işlevi kullanın.  
   
- **AfxMemDF ile özel bellek tanılama özellikleri seçmek için**  
+  **AfxMemDF ile özel bellek tanılama özellikleri seçmek için**  
   
--   Bellek Tanılama özellikleri üzerinde daha kesin denetim istiyorsanız, seçmeli olarak tek tek Bellek Tanılama özellikleri açıp MFC genel değişkeninin değerini ayarlayarak kapatabilirsiniz [afxMemDF](http://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086). Bu değişken bir listeden seçimli türü tarafından belirtilen aşağıdaki değerleri içerebilir **afxMemDF**.  
+- Bellek Tanılama özellikleri üzerinde daha kesin denetim istiyorsanız, seçmeli olarak tek tek Bellek Tanılama özellikleri açıp MFC genel değişkeninin değerini ayarlayarak kapatabilirsiniz [afxMemDF](http://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086). Bu değişken bir listeden seçimli türü tarafından belirtilen aşağıdaki değerleri içerebilir **afxMemDF**.  
   
-    |Değer|Açıklama|  
-    |-----------|-----------------|  
-    |**allocMemDF**|Tanılama bellek ayırıcısı (varsayılan) üzerinde açın.|  
-    |**delayFreeMemDF**|Gecikme çağırırken bellek boşaltma `delete` veya `free` kadar programdan çıkılır. Bu, olası maksimum bellek miktarı ayrılacak programınızı neden olur.|  
-    |**checkAlwaysMemDF**|Çağrı [AfxCheckMemory](http://msdn.microsoft.com/library/4644da71-7d14-41dc-adc0-ee9558fd7a28) bellek tahsis veya serbest her zaman.|  
+  |Değer|Açıklama|  
+  |-----------|-----------------|  
+  |**allocMemDF**|Tanılama bellek ayırıcısı (varsayılan) üzerinde açın.|  
+  |**delayFreeMemDF**|Gecikme çağırırken bellek boşaltma `delete` veya `free` kadar programdan çıkılır. Bu, olası maksimum bellek miktarı ayrılacak programınızı neden olur.|  
+  |**checkAlwaysMemDF**|Çağrı [AfxCheckMemory](http://msdn.microsoft.com/library/4644da71-7d14-41dc-adc0-ee9558fd7a28) bellek tahsis veya serbest her zaman.|  
   
-     Bu değerleri birlikte bir mantıksal OR işlemi gerçekleştirerek burada gösterildiği gibi kullanılabilir:  
+   Bu değerleri birlikte bir mantıksal OR işlemi gerçekleştirerek burada gösterildiği gibi kullanılabilir:  
   
-    ```cpp  
-    afxMemDF = allocMemDF | delayFreeMemDF | checkAlwaysMemDF;  
-    ```  
+  ```cpp  
+  afxMemDF = allocMemDF | delayFreeMemDF | checkAlwaysMemDF;  
+  ```  
   
- [Bu konudaki](#BKMK_In_this_topic)  
+  [Bu konudaki](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> Bellek anlık görüntü alma  
   
-1.  Oluşturma bir [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) nesne ve çağrı [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) üye işlevi. Bu ilk bellek anlık görüntüsünü oluşturur.  
+1. Oluşturma bir [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) nesne ve çağrı [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) üye işlevi. Bu ilk bellek anlık görüntüsünü oluşturur.  
   
-2.  Programınızı bellek ayırmayı ve ayırmayı kaldırma işlemlerini gerçekleştirdikten sonra başka bir oluşturma `CMemoryState` nesne ve çağrı `Checkpoint` bu nesne. Bu, ikinci bir bellek kullanımı anlık görüntüsünü alır.  
+2. Programınızı bellek ayırmayı ve ayırmayı kaldırma işlemlerini gerçekleştirdikten sonra başka bir oluşturma `CMemoryState` nesne ve çağrı `Checkpoint` bu nesne. Bu, ikinci bir bellek kullanımı anlık görüntüsünü alır.  
   
-3.  Bir üçüncü oluşturma `CMemoryState` nesne ve çağrı kendi [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) üye işlevi, önceki iki bağımsız değişken olarak sağlama `CMemoryState` nesneleri. İki bellek durumu arasında bir fark varsa `Difference` işlevi sıfır olmayan bir değer döndürür. Bu, bazı bellek blokları serbest olduğunu gösterir.  
+3. Bir üçüncü oluşturma `CMemoryState` nesne ve çağrı kendi [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) üye işlevi, önceki iki bağımsız değişken olarak sağlama `CMemoryState` nesneleri. İki bellek durumu arasında bir fark varsa `Difference` işlevi sıfır olmayan bir değer döndürür. Bu, bazı bellek blokları serbest olduğunu gösterir.  
   
-     Bu örnek kodu nasıl göründüğünü gösterir:  
+    Bu örnek kodu nasıl göründüğünü gösterir:  
   
-    ```  
-    // Declare the variables needed  
-    #ifdef _DEBUG  
-        CMemoryState oldMemState, newMemState, diffMemState;  
-        oldMemState.Checkpoint();  
-    #endif  
+   ```  
+   // Declare the variables needed  
+   #ifdef _DEBUG  
+       CMemoryState oldMemState, newMemState, diffMemState;  
+       oldMemState.Checkpoint();  
+   #endif  
   
-        // Do your memory allocations and deallocations.  
-        CString s("This is a frame variable");  
-        // The next object is a heap object.  
-       CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );  
+       // Do your memory allocations and deallocations.  
+       CString s("This is a frame variable");  
+       // The next object is a heap object.  
+      CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );  
   
-    #ifdef _DEBUG  
-        newMemState.Checkpoint();  
-        if( diffMemState.Difference( oldMemState, newMemState ) )  
-        {  
-            TRACE( "Memory leaked!\n" );  
-        }  
-    #endif  
-    ```  
+   #ifdef _DEBUG  
+       newMemState.Checkpoint();  
+       if( diffMemState.Difference( oldMemState, newMemState ) )  
+       {  
+           TRACE( "Memory leaked!\n" );  
+       }  
+   #endif  
+   ```  
   
-     Bellek denetimi deyimleri tarafından köşeli parantez içindeki bildirimi `#ifdef` [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** yalnızca programınızın hata ayıklama sürümleri derlenmiş engeller.  
+    Bellek denetimi deyimleri tarafından köşeli parantez içindeki bildirimi `#ifdef` [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** yalnızca programınızın hata ayıklama sürümleri derlenmiş engeller.  
   
-     Bir bellek sızıntısı olduğunu bildiğiniz, başka bir üye işlevi kullanabilirsiniz [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) yardımcı olacak bulun.  
+    Bir bellek sızıntısı olduğunu bildiğiniz, başka bir üye işlevi kullanabilirsiniz [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) yardımcı olacak bulun.  
   
- [Bu konudaki](#BKMK_In_this_topic)  
+   [Bu konudaki](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Viewing_memory_statistics"></a> Bellek istatistikleri görüntüleme  
  [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) işlevi iki bellek durumu nesnede arar ve yığın başlangıcını ve bitişini durumlar arasında öğesinden serbest değil herhangi bir nesne algılar. Bellek anlık görüntüler ve bunları karşılaştırıldığında sonra kullanarak `CMemoryState::Difference`, çağırabilirsiniz [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) serbest nesneler hakkında bilgi almak için.  
@@ -424,72 +424,72 @@ pMyPerson->Dump( afxDump );
 ##  <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Bir MFC hata ayıklama derleme boyutunu küçültme  
  Büyük bir MFC uygulaması için hata ayıklama bilgileri bir çok disk alanı kaplar. Boyutunu azaltmak için aşağıdaki yordamlardan birini kullanabilirsiniz:  
   
-1.  MFC kitaplıklarını kullanarak yeniden [/z7, / zi, /zı (hata ayıklama bilgileri biçimi)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) seçeneği yerine **/z7**. Bu seçenekler, tüm kitaplığı yedeklilik azaltarak ve alanından tasarruf etme, hata ayıklama bilgilerini içeren tek bir program veritabanı (PDB) dosyası oluşturun.  
+1. MFC kitaplıklarını kullanarak yeniden [/z7, / zi, /zı (hata ayıklama bilgileri biçimi)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) seçeneği yerine **/z7**. Bu seçenekler, tüm kitaplığı yedeklilik azaltarak ve alanından tasarruf etme, hata ayıklama bilgilerini içeren tek bir program veritabanı (PDB) dosyası oluşturun.  
   
-2.  Hata ayıklama bilgileri olmadan MFC kitaplıkları yeniden (hiçbir [/z7, / zi, /zı (hata ayıklama bilgileri biçimi)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) seçeneği). Bu durumda, hata ayıklama bilgileri eksikliği MFC kitaplık kodu içinde birçok hata ayıklayıcı tesislerini kullanmanızı engeller ancak MFC kitaplıklarını hata ayıklama zaten kapsamlı olduğundan, bu bir sorun olmayabilir.  
+2. Hata ayıklama bilgileri olmadan MFC kitaplıkları yeniden (hiçbir [/z7, / zi, /zı (hata ayıklama bilgileri biçimi)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) seçeneği). Bu durumda, hata ayıklama bilgileri eksikliği MFC kitaplık kodu içinde birçok hata ayıklayıcı tesislerini kullanmanızı engeller ancak MFC kitaplıklarını hata ayıklama zaten kapsamlı olduğundan, bu bir sorun olmayabilir.  
   
-3.  Seçili modüller için hata ayıklama bilgileri ile kendi uygulamanızı yalnızca aşağıda açıklandığı gibi oluşturun.  
+3. Seçili modüller için hata ayıklama bilgileri ile kendi uygulamanızı yalnızca aşağıda açıklandığı gibi oluşturun.  
   
- [Bu konudaki](#BKMK_In_this_topic)  
+   [Bu konudaki](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> Seçili modüller için hata ayıklama bilgileri içeren bir MFC uygulaması oluşturma  
  MFC hata ayıklama kitaplıkları ile seçilen modüllerini oluşturmak, Adımlama kullanmanıza ve bu modüllerdeki diğer hata ayıklama özellikleri sağlar. Bu yordam hem bir hata ayıklama yararlanır ve bu nedenle aşağıdaki adımları (ve tam bir yayın yapısı gerekli olduğunda, gerekli yapmayı bir "tümünü yeniden derle" da) açıklanan değişiklikleri araya Visual C++ derleme görevleri modları bırakın.  
   
-1.  Çözüm Gezgini'nde projeyi seçin.  
+1. Çözüm Gezgini'nde projeyi seçin.  
   
-2.  Gelen **görünümü** menüsünde **özellik sayfaları**.  
+2. Gelen **görünümü** menüsünde **özellik sayfaları**.  
   
-3.  İlk olarak, yeni bir proje yapılandırması oluşturur.  
+3. İlk olarak, yeni bir proje yapılandırması oluşturur.  
   
-    1.  İçinde  **\<Proje > özellik sayfaları** iletişim kutusu, tıklayın **Configuration Manager** düğmesi.  
+   1.  İçinde  **\<Proje > özellik sayfaları** iletişim kutusu, tıklayın **Configuration Manager** düğmesi.  
   
-    2.  İçinde [Configuration Manager iletişim kutusu](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b), kılavuz projenizi bulun. İçinde **yapılandırma** sütunundaki  **\<yeni … >**.  
+   2.  İçinde [Configuration Manager iletişim kutusu](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b), kılavuz projenizi bulun. İçinde **yapılandırma** sütunundaki  **\<yeni … >**.  
   
-    3.  İçinde [yeni proje yapılandırması iletişim kutusu](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), "Kısmi Debug" gibi yeni yapılandırma için bir ad yazın **proje yapılandırması adı** kutusu.  
+   3.  İçinde [yeni proje yapılandırması iletişim kutusu](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), "Kısmi Debug" gibi yeni yapılandırma için bir ad yazın **proje yapılandırması adı** kutusu.  
   
-    4.  İçinde **Ayarları Şuradan Kopyala:** listesinde **yayın**.  
+   4.  İçinde **Ayarları Şuradan Kopyala:** listesinde **yayın**.  
   
-    5.  Tıklayın **Tamam** kapatmak için **yeni proje yapılandırması**iletişim kutusu.  
+   5.  Tıklayın **Tamam** kapatmak için **yeni proje yapılandırması**iletişim kutusu.  
   
-    6.  Kapat **Configuration Manager** iletişim kutusu.  
+   6.  Kapat **Configuration Manager** iletişim kutusu.  
   
-4.  Şimdi, seçenekleri tüm proje için ayarlanır.  
+4. Şimdi, seçenekleri tüm proje için ayarlanır.  
   
-    1.  İçinde **özellik sayfaları** iletişim kutusunun **yapılandırma özellikleri** klasörüne **genel** kategorisi.  
+   1.  İçinde **özellik sayfaları** iletişim kutusunun **yapılandırma özellikleri** klasörüne **genel** kategorisi.  
   
-    2.  Proje ayarları kılavuzunda genişletin **Proje Varsayılanları** (gerekirse).  
+   2.  Proje ayarları kılavuzunda genişletin **Proje Varsayılanları** (gerekirse).  
   
-    3.  Altında **Proje Varsayılanları**, bulma **MFC kullanımı**. Geçerli ayarı kılavuz sağ sütunda görüntülenir. Geçerli ayarını'a tıklayın ve değiştirmek için **MFC'yi statik kitaplıkta**.  
+   3.  Altında **Proje Varsayılanları**, bulma **MFC kullanımı**. Geçerli ayarı kılavuz sağ sütunda görüntülenir. Geçerli ayarını'a tıklayın ve değiştirmek için **MFC'yi statik kitaplıkta**.  
   
-    4.  Sol bölmesinde **özellikler sayfaları** açık iletişim kutusunu **C/C++** klasörü ve select **önişlemci**. Özellik kılavuzunda Bul **önişlemci tanımları** ve "NDEBUG" "_DEBUG" ile değiştirin.  
+   4.  Sol bölmesinde **özellikler sayfaları** açık iletişim kutusunu **C/C++** klasörü ve select **önişlemci**. Özellik kılavuzunda Bul **önişlemci tanımları** ve "NDEBUG" "_DEBUG" ile değiştirin.  
   
-    5.  Sol bölmesinde **özellikler sayfaları** açık iletişim kutusunu **bağlayıcı** klasörü ve select **giriş** kategorisi. Özellik kılavuzunda Bul **ek bağımlılıklar**. İçinde **ek bağımlılıklar** ayarını "NAFXCWD. yazın LIB"ve"LIBCMT."  
+   5.  Sol bölmesinde **özellikler sayfaları** açık iletişim kutusunu **bağlayıcı** klasörü ve select **giriş** kategorisi. Özellik kılavuzunda Bul **ek bağımlılıklar**. İçinde **ek bağımlılıklar** ayarını "NAFXCWD. yazın LIB"ve"LIBCMT."  
   
-    6.  Tıklayın **Tamam** yeni derleme seçenekleri kaydedip kapatmak için **özellik sayfaları** iletişim kutusu.  
+   6.  Tıklayın **Tamam** yeni derleme seçenekleri kaydedip kapatmak için **özellik sayfaları** iletişim kutusu.  
   
-5.  Gelen **derleme** menüsünde **yeniden**. Bu, tüm hata ayıklama bilgileri, modüllerden kaldırır ancak MFC Kitaplığı etkilemez.  
+5. Gelen **derleme** menüsünde **yeniden**. Bu, tüm hata ayıklama bilgileri, modüllerden kaldırır ancak MFC Kitaplığı etkilemez.  
   
-6.  Artık, hata ayıklama bilgileri geri seçili modüller için uygulamanıza eklemeniz gerekir. Kesme noktaları ayarlayın ve yalnızca hata ayıklama bilgileri ile derlenmiş modülleri'nde diğer hata ayıklayıcı işlevleri gerçekleştirmek unutmayın. Dahil etmek istediğiniz her proje dosyası için hata ayıklama bilgileri, aşağıdaki adımları izleyin:  
+6. Artık, hata ayıklama bilgileri geri seçili modüller için uygulamanıza eklemeniz gerekir. Kesme noktaları ayarlayın ve yalnızca hata ayıklama bilgileri ile derlenmiş modülleri'nde diğer hata ayıklayıcı işlevleri gerçekleştirmek unutmayın. Dahil etmek istediğiniz her proje dosyası için hata ayıklama bilgileri, aşağıdaki adımları izleyin:  
   
-    1.  Çözüm Gezgini'nde açın **kaynak dosyaları** klasörünün altında projenizin.  
+   1.  Çözüm Gezgini'nde açın **kaynak dosyaları** klasörünün altında projenizin.  
   
-    2.  Hata ayıklama bilgileri için ayarlamak istediğiniz dosyayı seçin.  
+   2.  Hata ayıklama bilgileri için ayarlamak istediğiniz dosyayı seçin.  
   
-    3.  Gelen **görünümü** menüsünde **özellik sayfaları**.  
+   3.  Gelen **görünümü** menüsünde **özellik sayfaları**.  
   
-    4.  İçinde **özellik sayfaları** iletişim kutusunun **yapılandırma ayarlarını** açık klasör **C/C++** klasör seçip **genel** Kategori.  
+   4.  İçinde **özellik sayfaları** iletişim kutusunun **yapılandırma ayarlarını** açık klasör **C/C++** klasör seçip **genel** Kategori.  
   
-    5.  Özellik kılavuzunda Bul **hata ayıklama bilgi biçimi.**  
+   5.  Özellik kılavuzunda Bul **hata ayıklama bilgi biçimi.**  
   
-    6.  Tıklayın **hata ayıklama bilgi biçimi** ayarları ve istediğiniz seçeneği işaretleyin (genellikle **/zi**) için hata ayıklama bilgileri.  
+   6.  Tıklayın **hata ayıklama bilgi biçimi** ayarları ve istediğiniz seçeneği işaretleyin (genellikle **/zi**) için hata ayıklama bilgileri.  
   
-    7.  Bir uygulama Sihirbazı tarafından oluşturulan bir uygulama kullanarak veya önceden derlenmiş üst bilgiler, önceden derlenmiş üstbilgileri devre dışı bırakın veya diğer modüller derlenmeden önce yeniden derlemeniz gerekir. Aksi takdirde, uyarı C4650 ve C2855 hata iletisi alırsınız. Önceden derlenmiş üst bilgiler değiştirerek etkinleştirebilirsiniz **önceden derlenmiş üst bilgi Oluştur/Kullan** ayarı  **\<Proje > Özellikleri** iletişim kutusu (**yapılandırma özellikleri**  klasöründe **C/C++** alt, **önceden derlenmiş üst bilgiler** kategorisi).  
+   7.  Bir uygulama Sihirbazı tarafından oluşturulan bir uygulama kullanarak veya önceden derlenmiş üst bilgiler, önceden derlenmiş üstbilgileri devre dışı bırakın veya diğer modüller derlenmeden önce yeniden derlemeniz gerekir. Aksi takdirde, uyarı C4650 ve C2855 hata iletisi alırsınız. Önceden derlenmiş üst bilgiler değiştirerek etkinleştirebilirsiniz **önceden derlenmiş üst bilgi Oluştur/Kullan** ayarı  **\<Proje > Özellikleri** iletişim kutusu (**yapılandırma özellikleri**  klasöründe **C/C++** alt, **önceden derlenmiş üst bilgiler** kategorisi).  
   
-7.  Gelen **derleme** menüsünde **derleme** eski proje dosyalarını yeniden oluşturmak için.  
+7. Gelen **derleme** menüsünde **derleme** eski proje dosyalarını yeniden oluşturmak için.  
   
- Alternatif yöntem için bu konuda açıklandığı gibi her dosya için tek tek seçenek tanımlamak için dış bir derleme görevleri dosyası kullanabilirsiniz. Bu durumda, MFC hata ayıklama kitaplıklarıyla bağlamak için tanımlamalısınız [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) her bir modül için bayrak. MFC sürüm kitaplıkları kullanmak istiyorsanız, NDEBUG tanımlamanız gerekir. Dış derleme görevleri dosyası yazma ile ilgili daha fazla bilgi için bkz: [NMAKE başvurusu](http://msdn.microsoft.com/library/0421104d-8b7b-4bf3-86c1-928d9b7c1a8c).  
+   Alternatif yöntem için bu konuda açıklandığı gibi her dosya için tek tek seçenek tanımlamak için dış bir derleme görevleri dosyası kullanabilirsiniz. Bu durumda, MFC hata ayıklama kitaplıklarıyla bağlamak için tanımlamalısınız [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) her bir modül için bayrak. MFC sürüm kitaplıkları kullanmak istiyorsanız, NDEBUG tanımlamanız gerekir. Dış derleme görevleri dosyası yazma ile ilgili daha fazla bilgi için bkz: [NMAKE başvurusu](http://msdn.microsoft.com/library/0421104d-8b7b-4bf3-86c1-928d9b7c1a8c).  
   
- [Bu konudaki](#BKMK_In_this_topic)  
+   [Bu konudaki](#BKMK_In_this_topic)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual C++ hata ayıklama](../debugger/debugging-native-code.md)

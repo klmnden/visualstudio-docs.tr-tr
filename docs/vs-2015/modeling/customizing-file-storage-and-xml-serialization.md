@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 012805e83e0fa3fae2a58274bfa400818d6d22fd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 574fad0cdccd0112d7d078e86486569d16919a75
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183026"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867454"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Dosya Depolamayı ve XML Serileştirmeyi Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,26 +105,26 @@ Kullanıcı bir örneği kaydettiğinde veya *modeli*, içinde bir etki alanına
 ## <a name="understanding-monikers"></a>Adlar anlama  
  Adlar, model ve şema dosyalarını farklı kısımlarını arasında çapraz temsil etmek için kullanılır. Ayrıca kullanıldığına `.diagram` model dosyası düğümler başvurmak için dosya. Bilinen ad iki tür vardır:  
   
--   *Kimliği adlar* teklif hedef öğenin GUİD'si. Örneğin:  
+- *Kimliği adlar* teklif hedef öğenin GUİD'si. Örneğin:  
   
-    ```  
-    <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
+  ```  
+  <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
   
-    ```  
+  ```  
   
--   *Nitelikli adlar anahtar* hedef öğenin bilinen ad anahtarı adlı bir atanan etki alanı özellik değeri tarafından tanımlayın. Bilinen ad hedef öğenin bilinen ad öğesi ilişkileri ekleme ağacında üst öğesi tarafından önekidir.  
+- *Nitelikli adlar anahtar* hedef öğenin bilinen ad anahtarı adlı bir atanan etki alanı özellik değeri tarafından tanımlayın. Bilinen ad hedef öğenin bilinen ad öğesi ilişkileri ekleme ağacında üst öğesi tarafından önekidir.  
   
-     Aşağıdaki örnekler adlandırılmış şarkı sınıfı gömme ilişkisi bir etki alanına sahip albümü, adlandırılmış alan sınıfı DSL, var olan alınmıştır:  
+   Aşağıdaki örnekler adlandırılmış şarkı sınıfı gömme ilişkisi bir etki alanına sahip albümü, adlandırılmış alan sınıfı DSL, var olan alınmıştır:  
   
-    ```  
-    <albumMoniker title="/My Favorites/Jazz after Teatime" />  
-    <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />  
+  ```  
+  <albumMoniker title="/My Favorites/Jazz after Teatime" />  
+  <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />  
   
-    ```  
+  ```  
   
-     Tam anahtar adlar, hedef sınıfın kendisi için bir alan özelliği varsa kullanılacak seçeneği **olduğu bilinen ad anahtarı** ayarlanır `true` içinde **Xml serileştirme davranışı**. Örnekte, "Title", "Albümü" ve "Şarkı" etki alanı sınıfları adlı etki alanı özellikleri için bu seçeneği ayarlayın.  
+   Tam anahtar adlar, hedef sınıfın kendisi için bir alan özelliği varsa kullanılacak seçeneği **olduğu bilinen ad anahtarı** ayarlanır `true` içinde **Xml serileştirme davranışı**. Örnekte, "Title", "Albümü" ve "Şarkı" etki alanı sınıfları adlı etki alanı özellikleri için bu seçeneği ayarlayın.  
   
- Tam anahtar takma ad kimliği adlar daha kolay okunuyor. Kişiler tarafından okunacak XML modeli dosyalarınızın düşündüğünüz anahtar nitelenmiş adlar kullanmayı düşünün. Ancak, aynı ad anahtarı için birden fazla öğe ayarlanacak kullanıcı için mümkündür. Yinelenen anahtarlar dosyasının doğru şekilde yeniden değil neden olabilir. Bu nedenle, anahtar nitelenmiş adlar kullanarak başvurulan bir alan sınıfına tanımlarsanız, kullanıcı yinelenen adlar sahip bir dosyayı kaydetmelerini engelleyerek yolları göz önünde bulundurmalısınız.  
+  Tam anahtar takma ad kimliği adlar daha kolay okunuyor. Kişiler tarafından okunacak XML modeli dosyalarınızın düşündüğünüz anahtar nitelenmiş adlar kullanmayı düşünün. Ancak, aynı ad anahtarı için birden fazla öğe ayarlanacak kullanıcı için mümkündür. Yinelenen anahtarlar dosyasının doğru şekilde yeniden değil neden olabilir. Bu nedenle, anahtar nitelenmiş adlar kullanarak başvurulan bir alan sınıfına tanımlarsanız, kullanıcı yinelenen adlar sahip bir dosyayı kaydetmelerini engelleyerek yolları göz önünde bulundurmalısınız.  
   
 #### <a name="to-set-a-domain-class-to-be-referenced-by-id-monikers"></a>Bir etki alanı sınıfı kimliği takma adlarıyla başvurulmak üzere ayarlamak için  
   

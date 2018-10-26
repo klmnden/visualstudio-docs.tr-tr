@@ -24,12 +24,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cfa1f6fa49c8fab1bd93a0d2a38b85ec958a6fed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b138b9ad49a0fd1a406e698aafd121478e95f4a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275710"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935412"
 ---
 # <a name="relationships-in-datasets"></a>Veri kümelerindeki ilişkiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,33 +39,33 @@ ms.locfileid: "49275710"
   
  <xref:System.Data.DataRelation> Nesne iki işlevleri gerçekleştirir:  
   
--   Kullanılabilir çalıştığınız bir kayıtla ilgili kayıtların yapabilirsiniz. Bir üst kayıt varsa alt kayıtları sağlar. (<xref:System.Data.DataRow.GetChildRows%2A>) ve bir alt kaydı ile çalışıyorsanız üst kaydı (<xref:System.Data.DataRow.GetParentRow%2A>).  
+- Kullanılabilir çalıştığınız bir kayıtla ilgili kayıtların yapabilirsiniz. Bir üst kayıt varsa alt kayıtları sağlar. (<xref:System.Data.DataRow.GetChildRows%2A>) ve bir alt kaydı ile çalışıyorsanız üst kaydı (<xref:System.Data.DataRow.GetParentRow%2A>).  
   
--   Bu, üst kaydını sildiğinizde ilgili alt kayıtları silme gibi başvurusal bütünlük kısıtlamaları zorunlu kılabilir.  
+- Bu, üst kaydını sildiğinizde ilgili alt kayıtları silme gibi başvurusal bütünlük kısıtlamaları zorunlu kılabilir.  
   
- Doğru bir birleştirme ve işlevi arasındaki farkı anlamak önemlidir bir <xref:System.Data.DataRelation> nesne. Doğru bir birleştirme işleminde kayıtlarını üst ve alt tablolarından alınan ve tek, düz bir kayıt yerleştirin. Kullandığınızda, bir <xref:System.Data.DataRelation> nesne hiçbir yeni bir kayıt oluşturulur. Bunun yerine, DataRelation tablolar arasında ilişki izler ve üst ve alt kayıtları uyumlu kalmasını sağlar.  
+  Doğru bir birleştirme ve işlevi arasındaki farkı anlamak önemlidir bir <xref:System.Data.DataRelation> nesne. Doğru bir birleştirme işleminde kayıtlarını üst ve alt tablolarından alınan ve tek, düz bir kayıt yerleştirin. Kullandığınızda, bir <xref:System.Data.DataRelation> nesne hiçbir yeni bir kayıt oluşturulur. Bunun yerine, DataRelation tablolar arasında ilişki izler ve üst ve alt kayıtları uyumlu kalmasını sağlar.  
   
 ## <a name="datarelation-objects-and-constraints"></a>DataRelation nesneleri ve kısıtlamalar  
  A <xref:System.Data.DataRelation> nesnesi oluşturun ve aşağıdaki kısıtlamalar uygulamak için de kullanılır:  
   
--   Bir tablo sütununda yinelenen değer yok içerdiğini garanti eder, benzersiz kısıtlama.  
+- Bir tablo sütununda yinelenen değer yok içerdiğini garanti eder, benzersiz kısıtlama.  
   
--   Bir veri kümesindeki bir üst ve alt tablo arasında bilgi tutarlılığını korumak için kullanılan bir yabancı anahtar kısıtlaması.  
+- Bir veri kümesindeki bir üst ve alt tablo arasında bilgi tutarlılığını korumak için kullanılan bir yabancı anahtar kısıtlaması.  
   
- Belirttiğiniz kısıtlamaları bir <xref:System.Data.DataRelation> nesne otomatik olarak uygun nesneleri oluşturma veya özelliklerini ayarlama uygulanır. Bir yabancı anahtar kısıtlaması kullanarak oluşturursanız <xref:System.Data.DataRelation> nesnesi, örneklerini <xref:System.Data.ForeignKeyConstraint> sınıfı eklenir <xref:System.Data.DataRelation> nesnenin <xref:System.Data.DataRelation.ChildKeyConstraint%2A> özelliği.  
+  Belirttiğiniz kısıtlamaları bir <xref:System.Data.DataRelation> nesne otomatik olarak uygun nesneleri oluşturma veya özelliklerini ayarlama uygulanır. Bir yabancı anahtar kısıtlaması kullanarak oluşturursanız <xref:System.Data.DataRelation> nesnesi, örneklerini <xref:System.Data.ForeignKeyConstraint> sınıfı eklenir <xref:System.Data.DataRelation> nesnenin <xref:System.Data.DataRelation.ChildKeyConstraint%2A> özelliği.  
   
- Benzersiz kısıtlama uygulanan yalnızca ayarlayarak ya da <xref:System.Data.DataColumn.Unique%2A> bir veri sütununun özellik `true` veya örneği ekleyerek <xref:System.Data.UniqueConstraint> sınıfının <xref:System.Data.DataRelation> nesnenin <xref:System.Data.DataRelation.ParentKeyConstraint%2A> özelliği. Bir veri kümesinde kısıtlamaları askıya alma hakkında daha fazla bilgi için bkz. [bir veri kümesini doldururken kısıtlamaları kapatma kapatma](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
+  Benzersiz kısıtlama uygulanan yalnızca ayarlayarak ya da <xref:System.Data.DataColumn.Unique%2A> bir veri sütununun özellik `true` veya örneği ekleyerek <xref:System.Data.UniqueConstraint> sınıfının <xref:System.Data.DataRelation> nesnenin <xref:System.Data.DataRelation.ParentKeyConstraint%2A> özelliği. Bir veri kümesinde kısıtlamaları askıya alma hakkında daha fazla bilgi için bkz. [bir veri kümesini doldururken kısıtlamaları kapatma kapatma](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
   
 ### <a name="referential-integrity-rules"></a>Bilgi tutarlılığı kuralları  
  Yabancı anahtar kısıtlamasının bir parçası olarak üç noktalarda uygulanan tutarlılığını kuralları belirtebilirsiniz:  
   
--   Üst kayıt güncelleştirildiğinde  
+- Üst kayıt güncelleştirildiğinde  
   
--   Bir üst kaydı silindiğinde  
+- Bir üst kaydı silindiğinde  
   
--   Bir değişiklik olduğunda kabul veya reddedildi  
+- Bir değişiklik olduğunda kabul veya reddedildi  
   
- Yapabileceğiniz kuralları belirtilen <xref:System.Data.Rule> sabit listesi ve bu aşağıdaki tabloda listelenen.  
+  Yapabileceğiniz kuralları belirtilen <xref:System.Data.Rule> sabit listesi ve bu aşağıdaki tabloda listelenen.  
   
 |Yabancı anahtar kısıtlaması kuralı|Eylem|  
 |----------------------------------|------------|  

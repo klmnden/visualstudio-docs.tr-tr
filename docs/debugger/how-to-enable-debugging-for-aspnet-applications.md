@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 28dbf874ab5f7f80d7f67f789e8122bcff1a2fa6
-ms.sourcegitcommit: 56f3c31f1a06f6a6d2a8793b1abfa60cdf482497
+ms.openlocfilehash: 41da2eb360bac4c50f85bd908f980f5ee3c1d141
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48817340"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813433"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Visual Studio'da ASP.NET veya ASP.NET Core uygulamalarının hatalarını ayıklama
 
@@ -121,29 +121,29 @@ ASP.NET projeleri *web.config* dosyaları varsayılan olarak, hata ayıklama aya
   
 3. Emin olun `debug` özniteliğini `compilation` ayarlanır `true`. (Varsa `compilation` öğesi içermediğinden bir `debug` özniteliği, ekleyin ve değerini `true`.) 
   
-  Yerel IIS yerine varsayılan IIS Express sunucusu kullanıyorsanız, emin `targetFramework` öznitelik değeri `compilation` IIS sunucusundaki framework öğeyle eşleşir.
+   Yerel IIS yerine varsayılan IIS Express sunucusu kullanıyorsanız, emin `targetFramework` öznitelik değeri `compilation` IIS sunucusundaki framework öğeyle eşleşir.
   
-  `compilation` Öğesinin *web.config* dosya, aşağıdaki örnekteki gibi görünmelidir:
+   `compilation` Öğesinin *web.config* dosya, aşağıdaki örnekteki gibi görünmelidir:
 
-  > [!NOTE]
-  > Bu örnekte, bir kısmi *web.config* dosya. Genellikle ek XML bölümlerinde vardır `configuration` ve `system.web` öğeleri ve `compilation` öğe ayrıca diğer öznitelikler ve öğeler içerebilir.
+   > [!NOTE]
+   > Bu örnekte, bir kısmi *web.config* dosya. Genellikle ek XML bölümlerinde vardır `configuration` ve `system.web` öğeleri ve `compilation` öğe ayrıca diğer öznitelikler ve öğeler içerebilir.
   
-  ```xml
-  <configuration>  
+   ```xml
+   <configuration>  
       ...  
       <system.web>  
           <compilation  debug="true"  targetFramework="4.6.1" ... > 
              ...  
           </compilation>  
       </system.web>  
-  </configuration>  
-  ```
+   </configuration>  
+   ```
 
 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] otomatik olarak herhangi bir değişiklik algıladığında *web.config* dosyaları ve yeni yapılandırma ayarlarını uygular. Bilgisayar ya da değişikliklerin etkili olması IIS sunucusunu yeniden başlatmanız gerekmez.  
   
 Bir Web sitesi ile içerebilir birkaç sanal dizinler ile alt dizinleri, *web.config* dosyalarında her biri. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] uygulamaları aracılığıyla yapılandırma ayarlarınızı devralır *web.config* URL yolunda daha yüksek düzeylerde dosyaları. Hiyerarşik *web.config* dosyası ayarlarını uygulamak için tüm [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] hiyerarşideki bunları aşağıda uygulamalar. Farklı bir yapılandırma ayarı bir *web.config* hiyerarşide daha düşük bir dosya, daha yüksek dosyasındaki ayarları geçersiz kılar.  
   
-Örneğin belirtirseniz `debug="true"` içinde *www.microsoft.com/aaa/web.config*, herhangi bir uygulamada *aaa* klasör veya herhangi bir alt *aaa* bu ayarı devralır Bu uygulamalardan birini kendi ayarı geçersiz kılarsa dışındaki *web.config* dosya.  
+Örneğin belirtirseniz `debug="true"` içinde <em>www.microsoft.com/aaa/web.config</em>, herhangi bir uygulamada *aaa* klasör veya herhangi bir alt *aaa* bu ayarı devralır Bu uygulamalardan birini kendi ayarı geçersiz kılarsa dışındaki *web.config* dosya.  
   
 ## <a name="publish-in-debug-mode-using-the-file-system"></a>Dosya sistemi kullanılarak hata ayıklama modunda yayımlama
 

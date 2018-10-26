@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90acef8176910d724a0b5419c0e91d685ca2d43e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: c8e1be72076fe1d13ef9f0c4144ce097d0743305
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078218"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825874"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup öğesi (MSBuild)
 Kullanıcı tanımlı bir dizi içeren [öğesi](../msbuild/item-element-msbuild.md) öğeleri. Kullanılan her öğe bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] alt öğesi olarak proje belirtilen bir `ItemGroup` öğesi.  
@@ -59,10 +59,10 @@ Kullanıcı tanımlı bir dizi içeren [öğesi](../msbuild/item-element-msbuild
   
 ### <a name="parent-elements"></a>Üst öğeler  
   
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası.|  
-|[Hedef](../msbuild/target-element-msbuild.md)|.NET Framework 3.5 ile başlayan `ItemGroup` öğe içindeki görünebilir bir `Target` öğesi. Daha fazla bilgi için [hedefleri](../msbuild/msbuild-targets.md).|  
+| Öğe | Açıklama |
+| - | - |
+| [Project](../msbuild/project-element-msbuild.md) | Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası. |
+| [Hedef](../msbuild/target-element-msbuild.md) | .NET Framework 3.5 ile başlayan `ItemGroup` öğe içindeki görünebilir bir `Target` öğesi. Daha fazla bilgi için [hedefleri](../msbuild/msbuild-targets.md). |
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod örneği kullanıcı tarafından tanımlanan öğe koleksiyonlarını gösterir `Res` ve `CodeFiles` içinde bildirilen bir `ItemGroup` öğesi. Her bir öğe içinde `Res` içeren kullanıcı tanımlı bir alt öğe koleksiyonu [Itemmetadata](../msbuild/itemmetadata-element-msbuild.md) öğesi.  

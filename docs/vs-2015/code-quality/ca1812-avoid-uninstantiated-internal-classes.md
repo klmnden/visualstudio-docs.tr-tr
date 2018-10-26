@@ -20,15 +20,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 250a22c29c359ac099df237bd9a33e4522ee39ba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5236fd2dd4635b88ce82b993ebbc15a25e767df1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287306"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899792"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Örneklendirilmemiş iç sınıflardan kaçının
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AvoidUninstantiatedInternalClasses|
@@ -44,21 +45,21 @@ ms.locfileid: "49287306"
 
  Aşağıdaki türleri bu kural tarafından incelenir değil:
 
--   Değer türleri
+- Değer türleri
 
--   Soyut türler
+- Soyut türler
 
--   Numaralandırmalar
+- Numaralandırmalar
 
--   Temsilciler
+- Temsilciler
 
--   Derleyici yayılan dizi türleri
+- Derleyici yayılan dizi türleri
 
--   Olamaz başlatılamaz ve tanımlayan türler `static` (`Shared` Visual Basic'te) yalnızca yöntemleri.
+- Olamaz başlatılamaz ve tanımlayan türler `static` (`Shared` Visual Basic'te) yalnızca yöntemleri.
 
- Uygularsanız, <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> analiz ediliyor. derlemeye olarak işaretlenmiş tüm oluşturucular üzerinde bu kural gerçekleşmez `internal` alana bir başkası tarafından kullanılıp kullanılmadığını bildiremez çünkü `friend` derleme.
+  Uygularsanız, <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> analiz ediliyor. derlemeye olarak işaretlenmiş tüm oluşturucular üzerinde bu kural gerçekleşmez `internal` alana bir başkası tarafından kullanılıp kullanılmadığını bildiremez çünkü `friend` derleme.
 
- İçinde bu sınırlamaya geçici bir çözüm çalışamaz olsa bile [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kod analizi, dış tek başına FxCop oluşacak iç oluşturucularda her varsa `friend` analiz derleme varsa.
+  İçinde bu sınırlamaya geçici bir çözüm çalışamaz olsa bile [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kod analizi, dış tek başına FxCop oluşacak iç oluşturucularda her varsa `friend` analiz derleme varsa.
 
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
  Bu kural ihlalini düzeltmek için türünü kaldırın veya onu kullanan kodu ekleyin. Tür yalnızca statik yöntemler içeriyorsa, derleyici varsayılan bir ortak örnek oluşturucusu yayma gelen önlemek için türü için aşağıdakilerden birini ekleyin:
@@ -70,32 +71,32 @@ ms.locfileid: "49287306"
 ## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
  Bu kuraldan bir uyarıyı bastırmak güvenlidir. Aşağıdaki durumlarda bu uyarının gösterilmemesi gerektiğini öneririz:
 
--   Sınıfı gibi geç bağlanan yansıma yöntemleri ile oluşturulan <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
+- Sınıfı gibi geç bağlanan yansıma yöntemleri ile oluşturulan <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
--   Sınıfı çalışma zamanı tarafından otomatik olarak oluşturulan veya [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Örneğin, uygulayan sınıflar <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> veya <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- Sınıfı çalışma zamanı tarafından otomatik olarak oluşturulan veya [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Örneğin, uygulayan sınıflar <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> veya <xref:System.Web.IHttpHandler?displayProperty=fullName>.
 
--   Sınıfının yeni bir kısıtlamaya sahip bir genel tür parametresi geçirilir. Örneğin, aşağıdaki örnekte, bu kural oluşturacak.
+- Sınıfının yeni bir kısıtlamaya sahip bir genel tür parametresi geçirilir. Örneğin, aşağıdaki örnekte, bu kural oluşturacak.
 
-    ```csharp
-    internal class MyClass
-    {
-        public DoSomething()
-        {
-        }
-    }
-    public class MyGeneric<T> where T : new()
-    {
-        public T Create()
-        {
-            return new T();
-        }
-    }
-    // [...]
-    MyGeneric<MyClass> mc = new MyGeneric<MyClass>();
-    mc.Create();
-    ```
+  ```csharp
+  internal class MyClass
+  {
+      public DoSomething()
+      {
+      }
+  }
+  public class MyGeneric<T> where T : new()
+  {
+      public T Create()
+      {
+          return new T();
+      }
+  }
+  // [...]
+  MyGeneric<MyClass> mc = new MyGeneric<MyClass>();
+  mc.Create();
+  ```
 
- Bu durumda, bu uyarının gösterilmemesi önerilir.
+  Bu durumda, bu uyarının gösterilmemesi önerilir.
 
 ## <a name="related-rules"></a>İlgili kuralları
  [CA1811: Çağrılmayan özel kodlardan kaçının](../code-quality/ca1811-avoid-uncalled-private-code.md)

@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 79ceb9393291f6197cd68743dffdfd314776e717
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 58a6c33449162665c10c6fa1d2c96f665c904a98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219420"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915034"
 ---
 # <a name="define-packages-and-namespaces"></a>Paketleri ve ad alanlarını tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,20 +78,20 @@ Visual Studio'da bir *paket* UML öğelerini sınıfları, kullanım örnekleri 
   
 #### <a name="to-create-a-package-in-uml-model-explorer"></a>UML Model Gezgini'nde bir paketi oluşturmak için  
   
-1.  Açık **UML Model Gezgini**. Üzerinde **mimarisi** menüsünde **Windows**ve ardından **UML Model Gezgini**.  
+1. Açık **UML Model Gezgini**. Üzerinde **mimarisi** menüsünde **Windows**ve ardından **UML Model Gezgini**.  
   
-2.  Yeni bir paket eklemek istediğiniz bir modeli veya bir pakete sağ tıklayın.  
+2. Yeni bir paket eklemek istediğiniz bir modeli veya bir pakete sağ tıklayın.  
   
-    > [!NOTE]
-    >  Bir paketi başka bir paket içinde iç içe yerleştirebilirsiniz.  
+   > [!NOTE]
+   >  Bir paketi başka bir paket içinde iç içe yerleştirebilirsiniz.  
   
-3.  İşaret **Ekle** ve ardından **paket**.  
+3. İşaret **Ekle** ve ardından **paket**.  
   
-     Modelde yeni bir paket görünür.  
+    Modelde yeni bir paket görünür.  
   
-4.  Paket için yeni bir ad yazın.  
+4. Paket için yeni bir ad yazın.  
   
- UML Model Gezgini'nde bir paketi oluşturduysanız, bir UML sınıf diyagramında görüntüleyebilirsiniz. Ayrıca, bir paket birden fazla UML sınıf diyagramında görüntüleyebilirsiniz.  
+   UML Model Gezgini'nde bir paketi oluşturduysanız, bir UML sınıf diyagramında görüntüleyebilirsiniz. Ayrıca, bir paket birden fazla UML sınıf diyagramında görüntüleyebilirsiniz.  
   
 #### <a name="to-show-an-existing-package-on-a-uml-class-diagram"></a>Bir UML sınıf diyagramı üzerinde varolan paketi göstermek için  
   
@@ -103,15 +103,15 @@ Visual Studio'da bir *paket* UML öğelerini sınıfları, kullanım örnekleri 
 ##  <a name="Elements"></a> Model öğelerini paketleri içinde oluşturma  
  Bir paket içinde model öğeleri yerleştirmek dört yolu vardır:  
   
--   UML Model Gezgini'nde bir pakete yeni bir öğe ekleyin.  
+- UML Model Gezgini'nde bir pakete yeni bir öğe ekleyin.  
   
--   Sınıfları ve diğer türleri UML sınıf diyagramında paketleri ekleyin.  
+- Sınıfları ve diğer türleri UML sınıf diyagramında paketleri ekleyin.  
   
--   Ayarlama **LinkedPackage** diyagramın özelliğini yeni öğeler diyagram üzerinde oluşturulan yerleştirilir belirttiğiniz paketin. Sınıf diyagramları, Bileşen diyagramları ve kullanım örneği diyagramları bu şekilde bir pakete bağlanabilir.  
+- Ayarlama **LinkedPackage** diyagramın özelliğini yeni öğeler diyagram üzerinde oluşturulan yerleştirilir belirttiğiniz paketin. Sınıf diyagramları, Bileşen diyagramları ve kullanım örneği diyagramları bu şekilde bir pakete bağlanabilir.  
   
--   İçine veya dışına UML Model Gezgini'nde bir paket öğeleri Taşı.  
+- İçine veya dışına UML Model Gezgini'nde bir paket öğeleri Taşı.  
   
- UML Model Gezgini'nde paket altında bir paket içindeki bir öğenin görünür ve tam adı, paket tam adı ile başlar. Herhangi bir öğenin tam adı görmek için öğeye sağ tıklayın ve ardından **özellikleri**. **Tam adı** özellik görünür **özellikleri** penceresi.  
+  UML Model Gezgini'nde paket altında bir paket içindeki bir öğenin görünür ve tam adı, paket tam adı ile başlar. Herhangi bir öğenin tam adı görmek için öğeye sağ tıklayın ve ardından **özellikleri**. **Tam adı** özellik görünür **özellikleri** penceresi.  
   
 #### <a name="to-create-an-element-in-a-package-in-uml-model-explorer"></a>UML Model Gezgini'nde bir paket içinde bir öğe oluşturmak için  
   

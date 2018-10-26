@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c333d38dde1d440d5bac10770d0b3386f82ad4ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1210d95a73038ea21c0455e944eb46b1791b426
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626152"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844522"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>İzlenecek yol: bir SharePoint proje öğesi türünü genişletme
   Kullanabileceğiniz **iş verileri bağlantı modeli** SharePoint'te İş Verileri Bağlantısı (BDC) hizmeti için bir model oluşturmak için proje öğesi. Varsayılan olarak, bu proje öğesini kullanarak model oluşturduğunuzda modeldeki veriler kullanıcılara görüntülenmez. Ayrıca, kullanıcıların verileri görüntülemesini sağlamak için SharePoint'te bir dış liste oluşturmanız gerekir.  
@@ -42,24 +42,24 @@ ms.locfileid: "42626152"
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için geliştirme bilgisayarında aşağıdaki bileşenler ihtiyacınız vardır:  
   
--   Microsoft Windows, SharePoint ve Visual Studio'nun desteklenen sürümleri.  
+- Microsoft Windows, SharePoint ve Visual Studio'nun desteklenen sürümleri.  
   
--   [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Bu izlenecek yolda **VSIX projesi** proje öğesini dağıtmak üzere bir VSIX paketi oluşturmak için SDK'sı şablonunda. Daha fazla bilgi için [Visual Studio'da SharePoint araçlarını genişletmek](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Bu izlenecek yolda **VSIX projesi** proje öğesini dağıtmak üzere bir VSIX paketi oluşturmak için SDK'sı şablonunda. Daha fazla bilgi için [Visual Studio'da SharePoint araçlarını genişletmek](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Aşağıdaki kavramları bilgisi yardımcı, ancak gerekli değildir, bu izlenecek yolu tamamlamak için:  
+  Aşağıdaki kavramları bilgisi yardımcı, ancak gerekli değildir, bu izlenecek yolu tamamlamak için:  
   
--   BDC hizmeti [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]. Daha fazla bilgi için [BDC mimarisi](http://go.microsoft.com/fwlink/?LinkId=177798).  
+- BDC hizmeti [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]. Daha fazla bilgi için [BDC mimarisi](http://go.microsoft.com/fwlink/?LinkId=177798).  
   
--   BDC modelleri için XML şeması. Daha fazla bilgi için [BDC modeli altyapısı](http://go.microsoft.com/fwlink/?LinkId=177799).  
+- BDC modelleri için XML şeması. Daha fazla bilgi için [BDC modeli altyapısı](http://go.microsoft.com/fwlink/?LinkId=177799).  
   
 ## <a name="create-the-projects"></a>Projeleri oluşturma
  Bu izlenecek yolu tamamlamak için iki proje oluşturmanız gerekir:  
   
--   Proje öğesi uzantısını dağıtmak için VSIX paketi oluşturmak üzere bir VSIX projesi.  
+- Proje öğesi uzantısını dağıtmak için VSIX paketi oluşturmak üzere bir VSIX projesi.  
   
--   Proje öğesi uzantısını uygulayan sınıf kitaplığı projesi.  
+- Proje öğesi uzantısını uygulayan sınıf kitaplığı projesi.  
   
- İzlenecek yol, proje oluşturmaya başlayın.  
+  İzlenecek yol, proje oluşturmaya başlayın.  
   
 #### <a name="to-create-the-vsix-project"></a>VSIX projesi oluşturmak için  
   

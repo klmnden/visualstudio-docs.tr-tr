@@ -9,12 +9,12 @@ description: Visual Studio abonelikleri dahil öncelikli destek teklifi hakkınd
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9377302cdee771e282ab622df0b76ecf2ca3460b
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: e58b316d0fc26ec4c01e50c23e3cdc7b0632b72c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49074045"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866746"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri öncelikli destek
 
@@ -37,7 +37,7 @@ Seçili Visual Studio abonelikleri olan aboneler aracılığıyla çok sayıda �
 
 ### <a name="microsoft-azure"></a>Microsoft Azure
    - [Bulut Hizmetleri (Web ve çalışan rolleri)](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc)
-   
+
    - [Azure SQL veritabanı](https://social.msdn.microsoft.com/Forums/en-US/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)
 
    - [Azure Depolama](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)
@@ -229,6 +229,7 @@ Seçili Visual Studio abonelikleri olan aboneler aracılığıyla çok sayıda �
 
 
 ## <a name="eligibility"></a>Uygunluk
+
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standart, yıllık bulut)   | VL, Azure, perakende, seçili NFR<sup>1</sup> | Dahil edilen       |  Evet          |

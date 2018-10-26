@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cdae4a3c4c64eb991ff6e1a51108c707503d2721
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 64e197e3f6f34cc46d91c330b4d5f80b3c6ce578
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236788"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848637"
 ---
 # <a name="step-3-set-your-form-properties"></a>3. Adım: Form Özelliklerinizi Ayarlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,50 +30,50 @@ Ardından, kullandığınız **özellikleri** penceresini kullanarak formunuzun 
   
 ### <a name="to-set-your-form-properties"></a>Form özelliklerinizi ayarlamak için  
   
-1.  Windows Forms Designer'a baktığınızdan emin olun. Visual Studio tümleşik geliştirme ortamında (IDE) seçin **Form1.cs [Design]** sekme (veya **Form1.vb [Design]** Visual Basic sekmesini).  
+1. Windows Forms Designer'a baktığınızdan emin olun. Visual Studio tümleşik geliştirme ortamında (IDE) seçin **Form1.cs [Design]** sekme (veya **Form1.vb [Design]** Visual Basic sekmesini).  
   
-2.  Form içinde herhangi bir yeri seçin **Form1** seçin. Bakmak **özellikleri** şimdi form özelliklerini gösteren penceresinde. Formlar çeşitli özelliklere sahiptir. Örneğin, ön plan ve arka plan rengi, görünen başlık metnini ayarlayabileceğiniz formun üst kısmında, form ve diğer özellikleri boyutunu.  
+2. Form içinde herhangi bir yeri seçin **Form1** seçin. Bakmak **özellikleri** şimdi form özelliklerini gösteren penceresinde. Formlar çeşitli özelliklere sahiptir. Örneğin, ön plan ve arka plan rengi, görünen başlık metnini ayarlayabileceğiniz formun üst kısmında, form ve diğer özellikleri boyutunu.  
   
-    > [!NOTE]
-    >  Varsa **özellikleri** penceresi görünmüyorsa, kare seçerek programınızı durdurmak **hata ayıklamayı Durdur** düğme araç çubuğundan veya pencereyi kapatmanız yeterlidir. Program durdurulursa ve hala görmüyorsanız **özellikleri** menü çubuğunda, pencere **görünümü**, **Özellikler penceresi**.  
+   > [!NOTE]
+   >  Varsa **özellikleri** penceresi görünmüyorsa, kare seçerek programınızı durdurmak **hata ayıklamayı Durdur** düğme araç çubuğundan veya pencereyi kapatmanız yeterlidir. Program durdurulursa ve hala görmüyorsanız **özellikleri** menü çubuğunda, pencere **görünümü**, **Özellikler penceresi**.  
   
-3.  Form seçildikten sonra bulma **metin** özelliğinde **özellikleri** penceresi. Listenin nasıl sıralandığına bağlı olarak aşağı kaydırmanız gerekebilir. Seçin **metin**, türü **resim görüntüleyici**ve ardından ENTER TUŞUNA basın.  Formunuzda şimdi metin olmalıdır **resim görüntüleyici** , başlık çubuğunda ve **özellikleri** penceresi aşağıdaki resme benzer görünmelidir.  
+3. Form seçildikten sonra bulma **metin** özelliğinde **özellikleri** penceresi. Listenin nasıl sıralandığına bağlı olarak aşağı kaydırmanız gerekebilir. Seçin **metin**, türü **resim görüntüleyici**ve ardından ENTER TUŞUNA basın.  Formunuzda şimdi metin olmalıdır **resim görüntüleyici** , başlık çubuğunda ve **özellikleri** penceresi aşağıdaki resme benzer görünmelidir.  
   
-     ![Özellikler penceresi](../ide/media/express-edittextproperty.png "Express_EditTextProperty")  
-Özellik penceresi  
+    ![Özellikler penceresi](../ide/media/express-edittextproperty.png "Express_EditTextProperty")  
+   Özellik penceresi  
   
-    > [!NOTE]
-    >  Özellikler, kategorilere ayrılmış veya alfabetik görünüm ile sıralanabilir. Düğmeleri kullanarak bu iki görünüm arasında geçiş yapabilirsiniz **özellikleri** penceresi. Bu öğreticide, özellikleri alfabetik görünüm aracılığıyla bulmak daha kolay olur.  
+   > [!NOTE]
+   >  Özellikler, kategorilere ayrılmış veya alfabetik görünüm ile sıralanabilir. Düğmeleri kullanarak bu iki görünüm arasında geçiş yapabilirsiniz **özellikleri** penceresi. Bu öğreticide, özellikleri alfabetik görünüm aracılığıyla bulmak daha kolay olur.  
   
-4.  Windows Forms Tasarımcısı'na geri dönün. Formun alt sağ altındaki küçük beyaz kare olan ve aşağıdaki gibi görünür, formun sağ alt sürükleme işleyicisini seçin.  
+4. Windows Forms Tasarımcısı'na geri dönün. Formun alt sağ altındaki küçük beyaz kare olan ve aşağıdaki gibi görünür, formun sağ alt sürükleme işleyicisini seçin.  
   
-     ![Sürükleme tutamacı](../ide/media/express-bottomrt-drag.png "Express_BottomRT_Drag")  
-Sürükleme tutamacı  
+    ![Sürükleme tutamacı](../ide/media/express-bottomrt-drag.png "Express_BottomRT_Drag")  
+   Sürükleme tutamacı  
   
-     Böylece form daha geniş ve daha uzun formu yeniden boyutlandırmak için tutamacı sürükleyin.  
+    Böylece form daha geniş ve daha uzun formu yeniden boyutlandırmak için tutamacı sürükleyin.  
   
-5.  Bakmak **özellikleri** penceresinde dikkat **boyutu** özelliği değişti. **Boyutu** her zaman formun yeniden boyutlandırma özelliğini değiştirir. Bir form boyuta gören yaklaşık 550, yeniden boyutlandırmak için formun tutamacını sürüklemeyi deneyin 350 (tam olmasına gerek yoktur), bu proje için iyi çalışmalıdır. Alternatif olarak, doğrudan değerler girebilirsiniz **boyutu** özelliği ve ardından ENTER tuşuna basın.  
+5. Bakmak **özellikleri** penceresinde dikkat **boyutu** özelliği değişti. **Boyutu** her zaman formun yeniden boyutlandırma özelliğini değiştirir. Bir form boyuta gören yaklaşık 550, yeniden boyutlandırmak için formun tutamacını sürüklemeyi deneyin 350 (tam olmasına gerek yoktur), bu proje için iyi çalışmalıdır. Alternatif olarak, doğrudan değerler girebilirsiniz **boyutu** özelliği ve ardından ENTER tuşuna basın.  
   
-6.  Programınızı tekrar çalıştırın. Unutmayın, programınızı çalıştırmak için aşağıdaki yöntemlerden herhangi birini kullanabilirsiniz.  
+6. Programınızı tekrar çalıştırın. Unutmayın, programınızı çalıştırmak için aşağıdaki yöntemlerden herhangi birini kullanabilirsiniz.  
   
-    -   Seçin **F5** anahtarı.  
+   - Seçin **F5** anahtarı.  
   
-    -   Menü çubuğunda, **hata ayıklama**, **hata ayıklamayı Başlat**.  
+   - Menü çubuğunda, **hata ayıklama**, **hata ayıklamayı Başlat**.  
   
-    -   Araç çubuğunda **hata ayıklamayı Başlat** gibi görünen bir düğme.  
+   - Araç çubuğunda **hata ayıklamayı Başlat** gibi görünen bir düğme.  
   
-         ![Hata ayıklama araç çubuğu düğmesini Başlat](../ide/media/express-icondebug.png "Express_IconDebug")  
-Hata ayıklama araç çubuğu düğmesini Başlat  
+      ![Hata ayıklama araç çubuğu düğmesini Başlat](../ide/media/express-icondebug.png "Express_IconDebug")  
+     Hata ayıklama araç çubuğu düğmesini Başlat  
   
      Tıpkı daha önce IDE oluşturur ve programınızı çalıştırır ve bir pencere görüntülenir.  
   
-7.  Sonraki adıma geçmeden önce programınızı durdurmak, IDE izin vermeyeceğinden çalışırken programınızı değiştirin. Unutmayın, programınızı durdurmak için aşağıdaki yöntemlerden herhangi birini kullanabilirsiniz.  
+7. Sonraki adıma geçmeden önce programınızı durdurmak, IDE izin vermeyeceğinden çalışırken programınızı değiştirin. Unutmayın, programınızı durdurmak için aşağıdaki yöntemlerden herhangi birini kullanabilirsiniz.  
   
-    -   Araç çubuğunda **hata ayıklamayı Durdur** düğmesi.  
+   -   Araç çubuğunda **hata ayıklamayı Durdur** düğmesi.  
   
-    -   Menü çubuğunda, **hata ayıklama**, **hata ayıklamayı Durdur**.  
+   -   Menü çubuğunda, **hata ayıklama**, **hata ayıklamayı Durdur**.  
   
-    -   Üst köşesinde X düğmesini **Form1** penceresi.  
+   -   Üst köşesinde X düğmesini **Form1** penceresi.  
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   

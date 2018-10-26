@@ -20,29 +20,29 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 08cf57bb90ba85df8a818da92cfd5615c62c3468
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae619be498fcb1c48bbea8b706f0b0b5fa4db54c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292948"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950673"
 ---
 # <a name="troubleshooting-broken-references"></a>Bozuk Başvurularda Sorun Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Uygulamanızı kırık referans kullanmaya çalışırsa, bir özel durum hatası oluşturulur. Yükleyememesine başvurulan bileşen bulmak için hatanın birincil tetikleyici olmakla birlikte bozuk bir referans kabul edilebilir birkaç durum mevcuttur. Aşağıdaki listede bu örnekler gösterilmektedir:  
   
--   Proje başvuru yolu yanlış veya eksik.  
+- Proje başvuru yolu yanlış veya eksik.  
   
--   Başvurulan dosya silindi.  
+- Başvurulan dosya silindi.  
   
--   Başvurulan dosya yeniden adlandırıldı.  
+- Başvurulan dosya yeniden adlandırıldı.  
   
--   Ağ bağlantısı veya kimlik doğrulaması başarısız oldu.  
+- Ağ bağlantısı veya kimlik doğrulaması başarısız oldu.  
   
--   Bilgisayarda yüklü olmayan bir COM bileşenine başvuru yapılır.  
+- Bilgisayarda yüklü olmayan bir COM bileşenine başvuru yapılır.  
   
- Bu sorunları çözümler aşağıda verilmiştir.  
+  Bu sorunları çözümler aşağıda verilmiştir.  
   
 > [!NOTE]
 >  Derlemelerde dosyaları, proje dosyasındaki mutlak yollar ile başvurulur. Bu nedenle, başvurulan bir derlemenin yerel ortamlarında eksik geliþtiricili ortamında çalışan kullanıcıların mümkündür. Bu hataları önlemek için projeden projeye başvurular eklemek için bu gibi durumlarda daha iyi olur. Daha fazla bilgi için [nasıl NIB: başvurular ekleme veya kaldırma Başvurusu Ekle iletişim kutusunu kullanarak](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) ve [Derlemelerle programlama](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  

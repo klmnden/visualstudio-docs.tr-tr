@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad9cd6c3356d38184b24a7e2ecfa06ca954bfbb0
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ebff9aaeb49d99b26b92d1908e22397b9ab0a20d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499883"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868696"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Özellikleri, görev listesi, çıktı ve Seçenekler pencerelerini genişletme
 Visual Studio'da herhangi bir araç penceresine erişebilirsiniz. Bu izlenecek yol, araç penceresi hakkında bilgi yeni bir tümleştirme işlemi açıklanır **seçenekleri** sayfası ve yeni bir ayar **özellikleri** sayfası ve nasıl için yazacağınız **görevlistesi** ve **çıkış** windows.  
@@ -98,33 +98,33 @@ Visual Studio'da herhangi bir araç penceresine erişebilirsiniz. Bu izlenecek y
 ## <a name="create-an-options-page"></a>Seçenekler sayfası oluşturma  
  Bir sayfada sağladığınız **seçenekleri** iletişim kutusunu kullanıcılar araç penceresi ayarlarını değiştirebilirsiniz. Seçenekler sayfası oluşturma seçenekleri ve bir girişi tanımlayan iki sınıfı gerektirir *TodoListPackage.cs* veya *TodoListPackage.vb* dosya.  
   
-1.  Adlı bir sınıf ekleyin `ToolsOptions.cs`. Olun `ToolsOptions` sınıf türünden devralınır <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
+1. Adlı bir sınıf ekleyin `ToolsOptions.cs`. Olun `ToolsOptions` sınıf türünden devralınır <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
   
-    ```csharp  
-    class ToolsOptions : DialogPage  
-    {  
-    }  
-    ```  
+   ```csharp  
+   class ToolsOptions : DialogPage  
+   {  
+   }  
+   ```  
   
-2.  Aşağıdaki using deyimi:  
+2. Aşağıdaki using deyimi:  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Shell;  
-    ```  
+   ```csharp  
+   using Microsoft.VisualStudio.Shell;  
+   ```  
   
-3.  Bu kılavuzda açıklanan seçenekler sayfası DaysAhead adlı yalnızca bir seçenek sağlar. Adlı bir özel alan eklemek **daysAhead** ve adlı bir özellik **DaysAhead** için `ToolsOptions` sınıfı:  
+3. Bu kılavuzda açıklanan seçenekler sayfası DaysAhead adlı yalnızca bir seçenek sağlar. Adlı bir özel alan eklemek **daysAhead** ve adlı bir özellik **DaysAhead** için `ToolsOptions` sınıfı:  
   
-    ```csharp  
-    private double daysAhead;  
+   ```csharp  
+   private double daysAhead;  
   
-    public double DaysAhead  
-    {  
-        get { return daysAhead; }  
-        set { daysAhead = value; }  
-    }  
-    ```  
+   public double DaysAhead  
+   {  
+       get { return daysAhead; }  
+       set { daysAhead = value; }  
+   }  
+   ```  
   
- Şimdi, projeyi Bu seçenekler sayfası farkında olmanız gerekir.  
+   Şimdi, projeyi Bu seçenekler sayfası farkında olmanız gerekir.  
   
 ### <a name="make-the-options-page-available-to-users"></a>Seçenekler sayfası kullanıcılar için kullanılabilir yap  
   

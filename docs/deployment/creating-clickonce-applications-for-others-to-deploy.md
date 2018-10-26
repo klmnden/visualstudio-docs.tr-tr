@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da9941ab179234b9afae95a63dcaaacd66daf7fa
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b74e8a988505c5386b444df27f7726a8ceb51a62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512154"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870789"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>Başkalarının dağıtmak ClickOnce uygulamaları oluşturma
 Uygulamaları dağıtmak ClickOnce dağıtımı oluşturan tüm geliştiricilerin planlayın. Çoğu yalnızca ClickOnce kullanarak uygulama paketini ve ardından dosyaları kapatma gibi büyük bir kuruluşa bir müşteriye el. Müşteri, bir alt ağı üzerinde uygulamayı barındırmak için sorumlu olur. Bu konu, .NET Framework sürüm 3.5 önceki sürümlerinde bu tür dağıtımlarda devralınan sorunlardan bazılarını açıklar. Ardından, .NET Framework 3. 5'yeni "bildirimi için güven kullan" özelliğini kullanarak sağlanan yeni bir çözüm açıklanmaktadır. Son olarak, ClickOnce dağıtımları için yine de .NET Framework'ün eski sürümlerini kullanan müşteriler oluşturmak için önerilen stratejiler ile sonlanır.  
@@ -86,13 +86,13 @@ Uygulamaları dağıtmak ClickOnce dağıtımı oluşturan tüm geliştiricileri
   
  Müşteri bu durumda dağıtım bildirimi imzalamak için üç yol vardır:  
   
-1.  Müşteri, bir sertifika yetkilisi (CA) tarafından verilen geçerli bir sertifika kullanabilirsiniz.  
+1. Müşteri, bir sertifika yetkilisi (CA) tarafından verilen geçerli bir sertifika kullanabilirsiniz.  
   
-2.  Bu yaklaşım, alternatif olarak, dağıtım bildirimini otomatik olarak imzalanan bir sertifika ile imzalamak müşteri seçebilirsiniz. Bu bir dezavantajı, kullanıcı bu yüklemeyi yeniden sorulduğunda "Bilinmeyen Yayımcı" sözcüklerini görüntülenecek uygulama neden olmasıdır. Ancak, gerekli bir sertifika yetkilisi tarafından verilmiş bir sertifika için para ve zaman harcamak zorunda kalmaktan daha küçük müşteriler engellediğini avantajdır.  
+2. Bu yaklaşım, alternatif olarak, dağıtım bildirimini otomatik olarak imzalanan bir sertifika ile imzalamak müşteri seçebilirsiniz. Bu bir dezavantajı, kullanıcı bu yüklemeyi yeniden sorulduğunda "Bilinmeyen Yayımcı" sözcüklerini görüntülenecek uygulama neden olmasıdır. Ancak, gerekli bir sertifika yetkilisi tarafından verilmiş bir sertifika için para ve zaman harcamak zorunda kalmaktan daha küçük müşteriler engellediğini avantajdır.  
   
-3.  Son olarak, geliştirici kendi kendinden imzalı bir sertifika Kurulum paketine dahil edebilirsiniz. Bu, bu konunun önceki kısımlarında açıklanan uygulama kimliği ile ilgili olası sorunları ortaya çıkarır.  
+3. Son olarak, geliştirici kendi kendinden imzalı bir sertifika Kurulum paketine dahil edebilirsiniz. Bu, bu konunun önceki kısımlarında açıklanan uygulama kimliği ile ilgili olası sorunları ortaya çıkarır.  
   
- Kurulumu dağıtım projesi yöntemi dezavantajı, özel bir dağıtım uygulaması oluşturmak için gereken zaman ve ' dir.  
+   Kurulumu dağıtım projesi yöntemi dezavantajı, özel bir dağıtım uygulaması oluşturmak için gereken zaman ve ' dir.  
   
 ### <a name="have-customer-generate-deployment-manifest"></a>Dağıtım bildirimi oluşturmak müşteriniz varsa  
  Üçüncü bir olası dağıtım stratejisini el olduğundan yalnızca uygulamanın müşteriye dosyaları ve uygulama bildirimi. Bu senaryoda, oluşturmak ve dağıtım bildirimi imzalamak için .NET Framework SDK'sını kullanarak müşteri sorumludur.  

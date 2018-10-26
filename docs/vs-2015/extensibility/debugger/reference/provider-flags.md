@@ -17,12 +17,12 @@ ms.assetid: 8cbd2312-ed2f-4477-b192-c3f25c6098c3
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: deabc703c73d10060f3633139aae7a8fdc22fc66
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a431060f54567a443a0aa12137a06ce8227e9f00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302672"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866278"
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -81,13 +81,13 @@ public enum enum_PROVIDER_FLAGS {
 ## <a name="remarks"></a>Açıklamalar  
  Bu bayrak, aşağıdaki yöntemi geçirilir:  
   
--   [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)  
+- [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)  
   
--   [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
+- [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
   
--   [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)  
+- [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)  
   
- Bu değerler, bit düzeyinde ile birleştirilebilir `OR`.  
+  Bu değerler, bit düzeyinde ile birleştirilebilir `OR`.  
   
 ## <a name="requirements"></a>Gereksinimler  
  Üstbilgi: msdbg.h  

@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3743c31aeca3c6e34afa84ed8c9ee3ddd59d98a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f27cbc54839318674ae41385bd39876c6c513f1b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300410"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836963"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>9. Adım: Kodunuzu Gözden Geçirme, Açıklama ve Test Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,29 +28,29 @@ Sonraki kod bir açıklama ekleyin. Bir yorum, programın davranışını deği�
   
  Çalışır bir şey yalnızca yerleşik ve henüz yapılmaz olsa da, zaten bir resim yüklüyor olabilir. Bir açıklamayı kodunuza ekleyin ve test için önce aşağıdaki kavramları sıkça kullanacağınız için kod kavramlarını gözden geçirmek için zaman ayırın:  
   
--   Ne zaman tıklattığınız **resim Göster** düğmesini Windows Form Tasarımcısı'nda, IDE otomatik olarak eklenen bir *yöntemi* program kodunuza için.  
+- Ne zaman tıklattığınız **resim Göster** düğmesini Windows Form Tasarımcısı'nda, IDE otomatik olarak eklenen bir *yöntemi* program kodunuza için.  
   
--   Yöntemlerdir nasıl kodunuzu düzenleme şeklinizdir: nasıl kodunuzun gruplandırılma şeklidir.  
+- Yöntemlerdir nasıl kodunuzu düzenleme şeklinizdir: nasıl kodunuzun gruplandırılma şeklidir.  
   
--   Çoğu zaman bir yöntem bir küçük birçok şeyi nasıl gibi belirli bir sırayla yapar, `showButton_Click()` yöntemi bir iletişim kutusu gösterir ve bir resim yükler.  
+- Çoğu zaman bir yöntem bir küçük birçok şeyi nasıl gibi belirli bir sırayla yapar, `showButton_Click()` yöntemi bir iletişim kutusu gösterir ve bir resim yükler.  
   
--   Bir yöntem kodunu yapılır *deyimleri*, ya da kod satırlarını. Yöntemi, kod deyimlerini paket için bir yol olarak düşünün.  
+- Bir yöntem kodunu yapılır *deyimleri*, ya da kod satırlarını. Yöntemi, kod deyimlerini paket için bir yol olarak düşünün.  
   
--   Bir yöntem yürütüldüğünde veya *adlı*, yöntemdeki deyimler birbiri ardına, ilkinden başlayarak sırayla yürütülür.  
+- Bir yöntem yürütüldüğünde veya *adlı*, yöntemdeki deyimler birbiri ardına, ilkinden başlayarak sırayla yürütülür.  
   
-     Bir deyim örneği verilmiştir.  
+   Bir deyim örneği verilmiştir.  
   
-    ```csharp  
-    pictureBox1.Load(openFileDialog1.FileName);  
-    ```  
+  ```csharp  
+  pictureBox1.Load(openFileDialog1.FileName);  
+  ```  
   
-    ```vb  
-    pictureBox1.Load(openFileDialog1.FileName)  
-    ```  
+  ```vb  
+  pictureBox1.Load(openFileDialog1.FileName)  
+  ```  
   
-     Deyimleri ne programlarınızın şeyler yaptıran şeydir. Visual C# içinde bir ifade her zaman noktalı virgülle biter. Visual Basic'te, bir satırın sonuna bir deyimin sonudur. (Visual Basic'de noktalı virgül gerekiyor.) Önceki deyim söyler, `PictureBox` ile kullanıcının seçtiği dosyayı yüklemek için Denetim **OpenFileDialog** bileşeni.  
+   Deyimleri ne programlarınızın şeyler yaptıran şeydir. Visual C# içinde bir ifade her zaman noktalı virgülle biter. Visual Basic'te, bir satırın sonuna bir deyimin sonudur. (Visual Basic'de noktalı virgül gerekiyor.) Önceki deyim söyler, `PictureBox` ile kullanıcının seçtiği dosyayı yüklemek için Denetim **OpenFileDialog** bileşeni.  
   
- ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo")bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 5 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205216) veya [öğretici 1: Resim Görüntüleyici C# ' - oluşturma Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.  
+  ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo")bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 5 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205216) veya [öğretici 1: Resim Görüntüleyici C# ' - oluşturma Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.  
   
 ### <a name="to-add-comments"></a>Yorum eklemek için  
   

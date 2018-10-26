@@ -17,12 +17,12 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89526f799c0b4e260bba140c413f2c89e573a701
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 327d312ec13e449f0e116a11f920f17a439f569c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223740"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818113"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Bir Alt Menüye Son Kullanılanlar Listesi Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ Bu izlenecek yol tanıtımlar geliştirir [menüye alt menü ekleme](../extensib
   
 ## <a name="creating-an-extension"></a>Bir uzantı oluşturma  
   
--   Konusundaki yordamları izleyin [menüye alt menü ekleme](../extensibility/adding-a-submenu-to-a-menu.md) değiştirilen alt aşağıdaki yordamlarda oluşturmak için.  
+- Konusundaki yordamları izleyin [menüye alt menü ekleme](../extensibility/adding-a-submenu-to-a-menu.md) değiştirilen alt aşağıdaki yordamlarda oluşturmak için.  
   
- Bu kılavuzdaki yordamları VSPackage'ı adı olduğunu varsayın `TopLevelMenu`, kullanılan adı [Visual Studio menü çubuğuna menü ekleme](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
+  Bu kılavuzdaki yordamları VSPackage'ı adı olduğunu varsayın `TopLevelMenu`, kullanılan adı [Visual Studio menü çubuğuna menü ekleme](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
   
 ## <a name="creating-a-dynamic-item-list-command"></a>Bir dinamik öğe Listele komutu oluşturma  
   

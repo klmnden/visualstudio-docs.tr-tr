@@ -15,29 +15,29 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab478d6a007081787d8b076e906f5094caea8b2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d0f89d02d0fcccc66ddd1f66b411f6b3f542cff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206927"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939273"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Araç Penceresine Arama Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Uzantınızı bir araç penceresi güncelle, Visual Studio'da başka bir yerde görünür aynı arama işlevleri ekleyebilirsiniz. Bu işlev, aşağıdaki özellikleri içerir:  
   
--   Her zaman özel bir araç çubuğu alanında bulunan bir arama kutusu.  
+- Her zaman özel bir araç çubuğu alanında bulunan bir arama kutusu.  
   
--   Arama kutusuna kendisini yayılan bir İlerleme göstergesi.  
+- Arama kutusuna kendisini yayılan bir İlerleme göstergesi.  
   
--   Her bir karakter (hızlı arama) girilmez veya Enter tuşuna (isteğe bağlı arama) yalnızca seçtiğiniz sonra sonuçları göstermek için yeteneği.  
+- Her bir karakter (hızlı arama) girilmez veya Enter tuşuna (isteğe bağlı arama) yalnızca seçtiğiniz sonra sonuçları göstermek için yeteneği.  
   
--   Koşulları, size en yakın zamanda araştırdık gösteren bir liste.  
+- Koşulları, size en yakın zamanda araştırdık gösteren bir liste.  
   
--   Aramaları belirli alanlar veya arama hedefleri yönlerini göre filtreleme özelliği.  
+- Aramaları belirli alanlar veya arama hedefleri yönlerini göre filtreleme özelliği.  
   
- Bu izlenecek yolu takip ederek, aşağıdaki görevlerin nasıl gerçekleştirileceğini öğreneceksiniz:  
+  Bu izlenecek yolu takip ederek, aşağıdaki görevlerin nasıl gerçekleştirileceğini öğreneceksiniz:  
   
 1.  VSPackage projesi oluşturun.  
   

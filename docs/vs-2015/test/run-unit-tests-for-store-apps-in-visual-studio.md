@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: cba96af95aaab2416d12a3791df2165f2f8d4102
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a1091231fd934669547348a183de98b15e53dff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228520"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900494"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Visual Studio'da Store uygulamaları için birim testleri çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,32 +28,32 @@ Bu konu, Microsoft Visual Studio ile Test Gezgini'ni kullanarak birim testlerini
   
 > [!NOTE]
 >  Bu bölümdeki konular, Visual Studio Express Windows 8 için işlevselliğini açıklar. Visual Studio Community, Enterprise ve Professional birim testi için ek özellikler sağlar.  
->   
->  -   Bir eklenti bağdaştırıcısı Microsoft Test Gezgini için oluşturduğu tüm üçüncü taraf veya açık kaynak birim testi çerçevesini kullanın. Ayrıca, analiz ve testleriniz için kod kapsamı bilgileri görüntüleyebilirsiniz.  
-> -   Her derlemeden sonra testlerinizi çalıştırın. Microsoft Fakes, testlerinizi, sistem ve üçüncü taraf işlevselliği için test kodu değiştirerek kendi kodlarına odaklanmasını yönetilen kod için bir yalıtım çerçevesi de kullanabilirsiniz.  
->   
->  Daha fazla bilgi için [Birim Test kodunuzu](../test/unit-test-your-code.md) MSDN Kitaplığı'nda.  
+> 
+> - Bir eklenti bağdaştırıcısı Microsoft Test Gezgini için oluşturduğu tüm üçüncü taraf veya açık kaynak birim testi çerçevesini kullanın. Ayrıca, analiz ve testleriniz için kod kapsamı bilgileri görüntüleyebilirsiniz.  
+>   -   Her derlemeden sonra testlerinizi çalıştırın. Microsoft Fakes, testlerinizi, sistem ve üçüncü taraf işlevselliği için test kodu değiştirerek kendi kodlarına odaklanmasını yönetilen kod için bir yalıtım çerçevesi de kullanabilirsiniz.  
+> 
+>   Daha fazla bilgi için [Birim Test kodunuzu](../test/unit-test-your-code.md) MSDN Kitaplığı'nda.  
   
 ##  <a name="BKMK_In_this_topic"></a> Bu konudaki  
  [Birim test çerçeveler ve test projeleri](#BKMK_Unit_test_frameworks_and_test_projects)  
   
  [Testleri Test Gezgini'nde çalıştırma](#BKMK_Running_tests_in_Test_Explorer)  
   
--   [Testleri çalıştırma](#BKMK_Running_tests)  
+- [Testleri çalıştırma](#BKMK_Running_tests)  
   
- [Test sonuçlarını görüntüleme](#BKMK_Viewing_test_results)  
+  [Test sonuçlarını görüntüleme](#BKMK_Viewing_test_results)  
   
--   [Test ayrıntılarını görüntüleme](#BKMK_Viewing_test_details)  
+- [Test ayrıntılarını görüntüleme](#BKMK_Viewing_test_details)  
   
--   [Test yönteminin kaynak kodunu görüntüleme](#BKMK_Viewing_the_source_code_of_a_test_method)  
+- [Test yönteminin kaynak kodunu görüntüleme](#BKMK_Viewing_the_source_code_of_a_test_method)  
   
- [Test listesini düzenleme](#BKMK_Organizing_the_test_list)  
+  [Test listesini düzenleme](#BKMK_Organizing_the_test_list)  
   
--   [Testlerinizin gruplandırılması](#BKMK_Grouping_tests)  
+- [Testlerinizin gruplandırılması](#BKMK_Grouping_tests)  
   
--   [Aramayı ve filtrelemeyi test listesi](#BKMK_Searching_and_filtering_the_test_list)  
+- [Aramayı ve filtrelemeyi test listesi](#BKMK_Searching_and_filtering_the_test_list)  
   
- [Hata ayıklama birim testleri](#BKMK_Debugging_unit_tests)  
+  [Hata ayıklama birim testleri](#BKMK_Debugging_unit_tests)  
   
 ##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Birim test çerçeveler ve test projeleri  
  Visual Studio Express for Windows Store Apps yönetilen ve yerel C++ kod için Microsoft birim testi çerçevelerini içerir. Test Gezgini, bir çözümde birden çok test projesini ve üretim kodu projelerin bir parçası olan test sınıflarından testleri çalıştırabilirsiniz. Visual C# ve Visual Basic birim testi çerçeveleri veya test projeleri Visual C++ herhangi bir birleşimi olabilir. Test altındaki kod .NET Framework için yazıldığında, test projesi hedef kodun dili ne olursa olsun herhangi bir .NET Framework dilde yazılabilir. Yerel C/C++ kod projeleri, bir C++ birim test çerçevesi kullanılarak test edilmelidir.  
@@ -72,13 +72,13 @@ Bu konu, Microsoft Visual Studio ile Test Gezgini'ni kullanarak birim testlerini
 ###  <a name="BKMK_Running_tests"></a> Testleri çalıştırma  
  Tüm testler, Çözümdeki tüm testleri bir grup veya seçtiğiniz test kümesini çalıştırabilirsiniz. Aşağıdakilerden birini yapın:  
   
--   Bir çözümdeki tüm testleri çalıştırmak için tercih **tümünü Çalıştır**.  
+- Bir çözümdeki tüm testleri çalıştırmak için tercih **tümünü Çalıştır**.  
   
--   Varsayılan bir grupta tüm testleri çalıştırmak için tercih **Çalıştır...**  ve sonra menüde grubu seçin.  
+- Varsayılan bir grupta tüm testleri çalıştırmak için tercih **Çalıştır...**  ve sonra menüde grubu seçin.  
   
--   Seçilmiş test için kısayol menüsünü açın ve ardından çalıştırmak istediğiniz testleri tek tek seçin **seçili Testleri Çalıştır**.  
+- Seçilmiş test için kısayol menüsünü açın ve ardından çalıştırmak istediğiniz testleri tek tek seçin **seçili Testleri Çalıştır**.  
   
- Testler çalışırken Test Gezgini penceresinin en üstündeki geçer/başarısız çubuğunda animasyon görünür. Tüm testler başarılı ya da herhangi bir test başarısız olursa kırmızıya döner test çalışması kılavuzumuzun geçer/başarısız çubuğu yeşile döner.  
+  Testler çalışırken Test Gezgini penceresinin en üstündeki geçer/başarısız çubuğunda animasyon görünür. Tüm testler başarılı ya da herhangi bir test başarısız olursa kırmızıya döner test çalışması kılavuzumuzun geçer/başarısız çubuğu yeşile döner.  
   
 ##  <a name="BKMK_Viewing_test_results"></a> Test sonuçlarını görüntüleme  
  Test Gezgini çalıştırma, yazma ve testlerinizi yeniden çalıştırın gibi sonuçları gruplarında görüntüler. **başarısız testler**, **başarılı testler**, **Atlanan testler** ve **çalıştırma Testleri**. Test Gezgini görüntüler altındaki ayrıntılar bölmesi test özeti çalıştırın.  
@@ -88,17 +88,17 @@ Bu konu, Microsoft Visual Studio ile Test Gezgini'ni kullanarak birim testlerini
   
  Test ayrıntıları bölmesinde aşağıdaki bilgileri görüntüler:  
   
--   Kaynak dosya adı ve test yönteminin satır sayısı.  
+- Kaynak dosya adı ve test yönteminin satır sayısı.  
   
--   Testin durumu.  
+- Testin durumu.  
   
--   Test yöntemini çalıştırmak için geçen geçen süre.  
+- Test yöntemini çalıştırmak için geçen geçen süre.  
   
- Test başarısız olursa, Ayrıntılar bölmesinde de görüntüler:  
+  Test başarısız olursa, Ayrıntılar bölmesinde de görüntüler:  
   
--   Test için birim test çerçevesi tarafından döndürülen ileti.  
+- Test için birim test çerçevesi tarafından döndürülen ileti.  
   
--   Yığın izleme zaman test başarısız oldu.  
+- Yığın izleme zaman test başarısız oldu.  
   
 ###  <a name="BKMK_Viewing_the_source_code_of_a_test_method"></a> Test yönteminin kaynak kodunu görüntüleme  
  Visual Studio düzenleyicisinde bir test yöntemi için kaynak kodunu görüntülemek için testi seçin ve ardından **testi Aç** kısayol menüsünde (klavye: F12).  
@@ -120,14 +120,14 @@ Bu konu, Microsoft Visual Studio ile Test Gezgini'ni kullanarak birim testlerini
 ##  <a name="BKMK_Debugging_unit_tests"></a> Hata ayıklama birim testleri  
  Test Gezgini, testleriniz için hata ayıklama oturumu başlatmak için kullanabilirsiniz. Kodunuzu Visual Studio hata ayıklayıcısı ile sorunsuz bir şekilde Adımlama, İleri ve geri birim testleri ve test altındaki projeye arasında sürer. Hata ayıklamayı başlatmak için:  
   
-1.  Visual Studio düzenleyicisinde, hatalarını ayıklamak istediğiniz bir veya daha fazla test yöntemlerinde kesme noktası ayarlayın.  
+1. Visual Studio düzenleyicisinde, hatalarını ayıklamak istediğiniz bir veya daha fazla test yöntemlerinde kesme noktası ayarlayın.  
   
-    > [!NOTE]
-    >  Test yöntemleri herhangi bir sırada çalışabileceğinden, hata ayıklamak istediğiniz tüm test yöntemlerinde kesme noktalarını ayarlayın.  
+   > [!NOTE]
+   >  Test yöntemleri herhangi bir sırada çalışabileceğinden, hata ayıklamak istediğiniz tüm test yöntemlerinde kesme noktalarını ayarlayın.  
   
-2.  Test Gezgini'nde test yöntemlerini seçin ve ardından **seçilen Testlerde Hata Ayıkla** kısayol menüsünde.  
+2. Test Gezgini'nde test yöntemlerini seçin ve ardından **seçilen Testlerde Hata Ayıkla** kısayol menüsünde.  
   
- Hata ayıklayıcısı hakkında daha fazla bilgi için bkz. [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md).
+   Hata ayıklayıcısı hakkında daha fazla bilgi için bkz. [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md).
 
 
 

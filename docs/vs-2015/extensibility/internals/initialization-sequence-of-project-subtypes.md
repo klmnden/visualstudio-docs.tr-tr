@@ -15,12 +15,12 @@ ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8352e97659ad3daeac5f5e36987bfef3565e42bf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9fb0ec95622df96110ec17aa1408c2298b6ec3ce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224087"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883503"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Proje Alt Türlerinin Başlatılma Sırası
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,40 +30,40 @@ Ortam, temel proje fabrikası uygulamasını çağırarak bir proje oluşturur <
 ## <a name="environments-initialization-of-project-subtypes"></a>Proje alt türlerinin başlatılma ortamın başlatma  
  Aşağıdaki yordam başlatma sırası için bir proje sistemi birden çok proje alt türleri tarafından toplanan ayrıntılı olarak açıklanmaktadır.  
   
-1.  Temel projenin ortam çağırır <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>, ve proje, proje dosyası Ayrıştırma sırasında toplama proje türü GUID listesi olmadığını bulur `null`. Proje, doğrudan kendi proje oluşturma sona erdirir.  
+1. Temel projenin ortam çağırır <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>, ve proje, proje dosyası Ayrıştırma sırasında toplama proje türü GUID listesi olmadığını bulur `null`. Proje, doğrudan kendi proje oluşturma sona erdirir.  
   
-2.  Proje çağrıları `QueryService` üzerinde <xref:Microsoft.VisualStudio.Shell.Interop.SVsCreateAggregateProject> ortamın uygulamasını kullanarak bir proje alt türü oluşturmak için hizmet <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> yöntemi. Bu yöntem içinde ortamı özyinelemeli işlev çağrıları, uygulamalarına hale <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>, `M:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject(System.Object)` ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A> GUID'leri, en dıştaki proje alt türü ile başlayarak, proje listesi walking sırasında yöntemlerin yazın.  
+2. Proje çağrıları `QueryService` üzerinde <xref:Microsoft.VisualStudio.Shell.Interop.SVsCreateAggregateProject> ortamın uygulamasını kullanarak bir proje alt türü oluşturmak için hizmet <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> yöntemi. Bu yöntem içinde ortamı özyinelemeli işlev çağrıları, uygulamalarına hale <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>, `M:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject(System.Object)` ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A> GUID'leri, en dıştaki proje alt türü ile başlayarak, proje listesi walking sırasında yöntemlerin yazın.  
   
-     Başlatma adımları açıklanmaktadır.  
+    Başlatma adımları açıklanmaktadır.  
   
-    1.  Ortamın uygulaması <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> yöntem çağrıları ' HrCreateInnerProj'' ' aşağıdaki işlev bildirimi ile yöntemi:  
+   1.  Ortamın uygulaması <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> yöntem çağrıları ' HrCreateInnerProj'' ' aşağıdaki işlev bildirimi ile yöntemi:  
   
-        ```  
-        HRESULT HrCreateInnerProj  
-        (  
-            WCHAR *pwszGuids,  
-            IUnknown *pOuter,  
-            IVsAggregatableProject *pOwner,  
-            LPCOLESTR pszFilename,  
-            LPCOLESTR pszLocation,  
-            LPCOLESTR pszName,  
-            VSCREATEPROJFLAGS grfCreateFlags,  
-            IUnknown **ppInner,  
-            BOOL *pfCancelled  
-        )  
-        ```  
+       ```  
+       HRESULT HrCreateInnerProj  
+       (  
+           WCHAR *pwszGuids,  
+           IUnknown *pOuter,  
+           IVsAggregatableProject *pOwner,  
+           LPCOLESTR pszFilename,  
+           LPCOLESTR pszLocation,  
+           LPCOLESTR pszName,  
+           VSCREATEPROJFLAGS grfCreateFlags,  
+           IUnknown **ppInner,  
+           BOOL *pfCancelled  
+       )  
+       ```  
   
-         Ne zaman bu işlev çağrılır ilk kez, diğer bir deyişle, en dıştaki proje alt türü için parametreler `pOuter` ve `pOwner` olarak geçirilir `null` ve işlevin en dıştaki proje alt ayarlar `IUnknown` için `pOuter`.  
+        Ne zaman bu işlev çağrılır ilk kez, diğer bir deyişle, en dıştaki proje alt türü için parametreler `pOuter` ve `pOwner` olarak geçirilir `null` ve işlevin en dıştaki proje alt ayarlar `IUnknown` için `pOuter`.  
   
-    2.  Sonraki ortam çağırır `HrCreateInnerProj` listede ikinci proje türü GUID ile işlevi. Bu GUID, temel proje toplama dizideki doğru Adımlama ikinci iç proje alt karşılık gelir.  
+   2.  Sonraki ortam çağırır `HrCreateInnerProj` listede ikinci proje türü GUID ile işlevi. Bu GUID, temel proje toplama dizideki doğru Adımlama ikinci iç proje alt karşılık gelir.  
   
-    3.  `pOuter` Artık işaret `IUnknown` , en dıştaki proje alt türü ve `HrCreateInnerProj` uygulamanıza çağırır <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> uygulamanız için bir çağrı tarafından izlenen <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>. İçinde <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> geçirdiğiniz denetleme yöntemi `IUnknown` , en dıştaki proje alt `pOuter`. Sahip olunan proje (iç proje alt türü), toplama proje nesne oluşturmak gerekir. İçinde <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> geçirdiğiniz bir işaretçiye yöntem uygulaması `IUnknown` toplanmakta olan iç projenin. Bu iki yöntem toplama nesnesi oluşturun ve proje alt türü bir başvuru sayısı kendisine tutarak bitmiyor emin olmak için COM toplama kurallarını izleyin, uygulamaları gerekir.  
+   3.  `pOuter` Artık işaret `IUnknown` , en dıştaki proje alt türü ve `HrCreateInnerProj` uygulamanıza çağırır <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> uygulamanız için bir çağrı tarafından izlenen <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>. İçinde <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> geçirdiğiniz denetleme yöntemi `IUnknown` , en dıştaki proje alt `pOuter`. Sahip olunan proje (iç proje alt türü), toplama proje nesne oluşturmak gerekir. İçinde <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> geçirdiğiniz bir işaretçiye yöntem uygulaması `IUnknown` toplanmakta olan iç projenin. Bu iki yöntem toplama nesnesi oluşturun ve proje alt türü bir başvuru sayısı kendisine tutarak bitmiyor emin olmak için COM toplama kurallarını izleyin, uygulamaları gerekir.  
   
-    4.  `HrCreateInnerProj` Uygulamanız, çağıran <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>. Bu yöntemi başlatma işini proje alt türü yapar. Örneğin, çözüm olayları kaydedebilirsiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>.  
+   4.  `HrCreateInnerProj` Uygulamanız, çağıran <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>. Bu yöntemi başlatma işini proje alt türü yapar. Örneğin, çözüm olayları kaydedebilirsiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>.  
   
-    5.  `HrCreateInnerProj` Son GUID (Temel Proje) listesinde tarihe kadar yinelemeli olarak adlandırılır. Her biri bu çağrılar için adımları, c d yinelenir. `pOuter` en dıştaki proje alt türü için işaret `IUnknown` her düzeyi bir toplama.  
+   5.  `HrCreateInnerProj` Son GUID (Temel Proje) listesinde tarihe kadar yinelemeli olarak adlandırılır. Her biri bu çağrılar için adımları, c d yinelenir. `pOuter` en dıştaki proje alt türü için işaret `IUnknown` her düzeyi bir toplama.  
   
- Aşağıdaki örnekte, yaklaşık bir temsilini programlı işlemde ayrıntıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> yöntemi olarak, ortamı tarafından gerçekleştirilir. Kodu yalnızca örnek olarak verilmiştir; derlenecek tasarlanmamıştır ve açıklık için tüm hata denetimi kaldırıldı.  
+   Aşağıdaki örnekte, yaklaşık bir temsilini programlı işlemde ayrıntıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> yöntemi olarak, ortamı tarafından gerçekleştirilir. Kodu yalnızca örnek olarak verilmiştir; derlenecek tasarlanmamıştır ve açıklık için tüm hata denetimi kaldırıldı.  
   
 ## <a name="example"></a>Örnek  
   

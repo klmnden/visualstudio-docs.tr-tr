@@ -4,17 +4,19 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b50ea1ae20f6d8a03609dfd37a080108ca2e58e
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: ab45a6867fd94294746c03560dc49eeda9e68af0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384207"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853525"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens ile kod değişikliklerini ve diğer geçmişi bulma
 
@@ -162,7 +164,7 @@ Yerel sürümünüzle birlikte gelen bir değişikliği tuşlarına basarak kar�
 Simge **dal** sütun bildirir dal nasıl ilişkili olduğunu içinde çalışmakta olduğunuz dalı için.
 
 |**Simgesi**|**Değişiklik geldiği:**|
-|--------------|-----------------------------------------|
+|--------------| - |
 |![CodeLens: geçerli dal simgesini değiştirme](../ide/media/codelensbranchcurrenticon.png)|Geçerli dal|
 |![CodeLens: üst dalı simgesini değiştirme](../ide/media/codelensbranchparenticon.png)|Üst dal|
 |![CodeLens: alt öğe dalı simgesini değiştirme](../ide/media/codelensbranchchildicon.png)|Bir alt öğe dalı|

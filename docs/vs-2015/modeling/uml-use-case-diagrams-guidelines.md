@@ -18,12 +18,12 @@ caps.latest.revision: 38
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4abd008584732955bdac982dbaa0a629bd9ef90e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ece8d5de78ff5910d2624479c2d79eaa827b4759
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214246"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862001"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>UML Kullanım Durumu Diyagramları: Yönergeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,31 +36,31 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
  Bir kullanım durumu diyagramı yardımıyla iletişim tartışmak ve:  
   
--   Senaryoları, sistem veya uygulama kişiler, kuruluşlar veya dış sistemlerle etkileşim içinde.  
+- Senaryoları, sistem veya uygulama kişiler, kuruluşlar veya dış sistemlerle etkileşim içinde.  
   
--   Bu aktörlerin başarmasına yardımcı olan hedefler.  
+- Bu aktörlerin başarmasına yardımcı olan hedefler.  
   
--   Sisteminizin kapsam.  
+- Sisteminizin kapsam.  
   
- Ayrıntılı kullanım örneklerinin bir kullanım durumu diyagramı göstermiyor: Bu yalnızca bazı kullanım örnekleri, aktörler ve sistemler arasındaki ilişkileri özetlenmektedir. Özellikle, diyagram, her kullanım örneği hedeflere ulaşmak için adımlar gerçekleştirildiği sırada göstermez. Bu ayrıntıları başka diyagramları ve her kullanım örneğine bağlayabilirsiniz belgelerini tanımlayabilirsiniz. Daha fazla bilgi için [kullanım örneklerini açıklayan ayrıntılı](#Details) bu konuda.  
+  Ayrıntılı kullanım örneklerinin bir kullanım durumu diyagramı göstermiyor: Bu yalnızca bazı kullanım örnekleri, aktörler ve sistemler arasındaki ilişkileri özetlenmektedir. Özellikle, diyagram, her kullanım örneği hedeflere ulaşmak için adımlar gerçekleştirildiği sırada göstermez. Bu ayrıntıları başka diyagramları ve her kullanım örneğine bağlayabilirsiniz belgelerini tanımlayabilirsiniz. Daha fazla bilgi için [kullanım örneklerini açıklayan ayrıntılı](#Details) bu konuda.  
   
- Kullanım durumları için sağladığınız açıklamaları sistem çalıştığı, satış, menü, müşteri ve benzeri gibi etki alanı ile ilgili çeşitli koşulları kullanır. Bu hüküm ve aralarındaki ilişkiler açıkça tanımlamak önemlidir ve UML sınıf diyagramı yardımıyla bunu yapabilirsiniz. Daha fazla bilgi için [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md).  
+  Kullanım durumları için sağladığınız açıklamaları sistem çalıştığı, satış, menü, müşteri ve benzeri gibi etki alanı ile ilgili çeşitli koşulları kullanır. Bu hüküm ve aralarındaki ilişkiler açıkça tanımlamak önemlidir ve UML sınıf diyagramı yardımıyla bunu yapabilirsiniz. Daha fazla bilgi için [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md).  
   
- Kullanım örnekleri, yalnızca bir sistem işlevsel gereksinimlerini de ilgilidir. İş kuralları, hizmet gereksinimleri ve uygulama kısıtlamaları kalitesi gibi diğer gereksinimleri ayrı ayrı gösterilmelidir. Mimari ve dahili ayrıntılar da ayrı olarak tanımlanmış olmalıdır. Kullanıcı gereksinimlerini tanımlama hakkında daha fazla bilgi için bkz. [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).  
+  Kullanım örnekleri, yalnızca bir sistem işlevsel gereksinimlerini de ilgilidir. İş kuralları, hizmet gereksinimleri ve uygulama kısıtlamaları kalitesi gibi diğer gereksinimleri ayrı ayrı gösterilmelidir. Mimari ve dahili ayrıntılar da ayrı olarak tanımlanmış olmalıdır. Kullanıcı gereksinimlerini tanımlama hakkında daha fazla bilgi için bkz. [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).  
   
- Bu konuda kullanılan örnekler müşterilerin yerel restoranlar gelen yemek sipariş edebilirsiniz bir Web sitesi ilgilidir.  
+  Bu konuda kullanılan örnekler müşterilerin yerel restoranlar gelen yemek sipariş edebilirsiniz bir Web sitesi ilgilidir.  
   
- ![Bir kullanım durumu diyagramı öğeleri](../modeling/media/uml-ucovactor.png "UML_UCOvActor")  
+  ![Bir kullanım durumu diyagramı öğeleri](../modeling/media/uml-ucovactor.png "UML_UCOvActor")  
   
--   Bir *aktör* (1) bir kişi, kuruluş, cihaz veya sisteminizin ile etkileşime giren dış yazılım bileşeni sınıfıdır. Örnek aktörler **müşteri**, **Restoran**, **sıcaklık algılayıcısı**, **kredi kartı Yetkilendiricisi.**  
+- Bir *aktör* (1) bir kişi, kuruluş, cihaz veya sisteminizin ile etkileşime giren dış yazılım bileşeni sınıfıdır. Örnek aktörler **müşteri**, **Restoran**, **sıcaklık algılayıcısı**, **kredi kartı Yetkilendiricisi.**  
   
--   A *kullanım* (2) içinde takip belirli bir hedef, bir veya daha fazla aktör tarafından gerçekleştirilen eylemleri gösterir. Örnek kullanım örnekleri **Yemek Sipariş Et**, **güncelleştirme menü**, **işlem ödemesi**.  
+- A *kullanım* (2) içinde takip belirli bir hedef, bir veya daha fazla aktör tarafından gerçekleştirilen eylemleri gösterir. Örnek kullanım örnekleri **Yemek Sipariş Et**, **güncelleştirme menü**, **işlem ödemesi**.  
   
-     Bir kullanım durumu diyagramında kullanım örnekleri, bunları gerçekleştiren aktörleri ile ilişkili (3) ' dir.  
+   Bir kullanım durumu diyagramında kullanım örnekleri, bunları gerçekleştiren aktörleri ile ilişkili (3) ' dir.  
   
--   *Sistem (4)* geliştirdiğiniz olduğu. Aktörleri yalnızca diğer yazılım bileşenleri olan küçük bir yazılım bileşeni olabilir; veya tam bir uygulamayı olabilir; veya büyük dağıtılmış birçok bilgisayarları ve cihazları dağıtılan uygulamalar dizisi olabilir. Örnek alt sistemleridir **Yemek Sipariş Web sitesi**, **yiyecek teslim iş**, **Web sitesi sürüm 2**.  
+- *Sistem (4)* geliştirdiğiniz olduğu. Aktörleri yalnızca diğer yazılım bileşenleri olan küçük bir yazılım bileşeni olabilir; veya tam bir uygulamayı olabilir; veya büyük dağıtılmış birçok bilgisayarları ve cihazları dağıtılan uygulamalar dizisi olabilir. Örnek alt sistemleridir **Yemek Sipariş Web sitesi**, **yiyecek teslim iş**, **Web sitesi sürüm 2**.  
   
-     Hangi kullanım örnekleri sisteminize veya onun alt sistemleri tarafından desteklenen bir kullanım durumu diyagramı gösterebilirsiniz.  
+   Hangi kullanım örnekleri sisteminize veya onun alt sistemleri tarafından desteklenen bir kullanım durumu diyagramı gösterebilirsiniz.  
   
 ##  <a name="BasicSteps"></a> Kullanım örneği diyagramları çizmek için temel adımlar  
   
@@ -173,31 +173,31 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
  ![Birçok çokluğunu gösteren kullanım](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")  
   
--   Aynı sınıfın birkaç aktörleri kullanım örneği tek bir oluşumunu yer alabilir durumuna ilişkilendirmesine aktör sonunda çokluğu ayarlamak **1..\*** .  
+- Aynı sınıfın birkaç aktörleri kullanım örneği tek bir oluşumunu yer alabilir durumuna ilişkilendirmesine aktör sonunda çokluğu Ayarla ** 1... \\***.  
   
-     Çizimde, bir veya daha fazla restoranlar aynı yemek siparişi yerine getirmesini yer alabilir.  
+   Çizimde, bir veya daha fazla restoranlar aynı yemek siparişi yerine getirmesini yer alabilir.  
   
--   Her aktör birkaç kez kullanım örneğinin aynı anda katılabilir göstermek için ilişkilendirme büyük/küçük harf kullanımı sonunda çokluğu ayarlayın **\***.  
+- Her aktör birkaç kez kullanım örneğinin aynı anda katılabilir göstermek için ilişkilendirme büyük/küçük harf kullanımı sonunda çokluğu Ayarla **\\***.  
   
-     Çizimde, aynı anda birden fazla siparişi yerine getirmek için her bir restoran çalışabilir.  
+   Çizimde, aynı anda birden fazla siparişi yerine getirmek için her bir restoran çalışabilir.  
   
 ##### <a name="to-set-multiplicities-on-an-association"></a>Bir ilişkinin üzerinde Çeşitlilikler ayarlamak için  
   
-1.  İlişkilendirme sağ tıklayın ve ardından **özellikleri**.  
+1. İlişkilendirme sağ tıklayın ve ardından **özellikleri**.  
   
-2.  Ya da genişletin **ilk rol** veya **ikinci rol**.  
+2. Ya da genişletin **ilk rol** veya **ikinci rol**.  
   
-     *Rol* ilişkilendirmenin bir ucunda öğe anlamına gelir.  
+    *Rol* ilişkilendirmenin bir ucunda öğe anlamına gelir.  
   
-3.  Listeden seçerek Multiplicity özelliği ayarlayın:  
+3. Listeden seçerek Multiplicity özelliği ayarlayın:  
   
-    -   **1** bu rolün tam olarak bir örneğini belirtin. her bağlantıya katılan.  
+   - **1** bu rolün tam olarak bir örneğini belirtin. her bağlantıya katılan.  
   
-    -   **1..\***  bu rol bir veya daha fazla örneği katıldığını her bağlantıyı belirtir.  
+   - **1..\\*** bu rol bir veya daha fazla örneği katıldığını her bağlantıyı belirtir.  
   
-    -   **0..1** katılım isteğe bağlı olduğunu belirtir.  
+   - **0..1** katılım isteğe bağlı olduğunu belirtir.  
   
-    -   **\*** Bu rolün sıfır veya daha fazla örneğini bağlantıya katılan durumu.  
+   - **\\*** Bu rolün sıfır veya daha fazla örneğini bağlantıya katılan durumu.  
   
 > [!NOTE]
 >  Birçok ekip varsayılan değer olan 1 çeşitliliği bırakarak kullanım örneği diyagramları çoğulluk bilgi yerleştirmeyin. Bunun yerine, kullanım örneklerini ayrı açıklamalarını bilgileri sağlar. Bu durumda, tüm kullanım örneği diyagramları Çeşitlilikler gizlenir.  
@@ -223,23 +223,23 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
 ##  <a name="Details"></a> Açıklayan ayrıntılı kullanım örnekleri  
  Kullanım örneği temsil eder:  
   
--   Bir hedef sistem gibi kullanarak aktörün **yemek satın**; ve  
+- Bir hedef sistem gibi kullanarak aktörün **yemek satın**; ve  
   
--   Bir veya daha fazla *senaryoları*, diğer bir deyişle, test adımları gerçekleştirilen hedef gibi sürdürdüğünü: {**yemek siparişi, ödeme, teslim**}. Başarı senaryoların yanı sıra olabilir birkaç özel durum veya hata senaryoları gibi **kredi kartı reddedildi**.  
+- Bir veya daha fazla *senaryoları*, diğer bir deyişle, test adımları gerçekleştirilen hedef gibi sürdürdüğünü: {**yemek siparişi, ödeme, teslim**}. Başarı senaryoların yanı sıra olabilir birkaç özel durum veya hata senaryoları gibi **kredi kartı reddedildi**.  
   
- Kullanım örneği farklı ayrıntı düzeyleri içinde tanımlanabilir. Erken bir aşamada tasarımının, yalnızca adı kullanım durumu diyagramı üzerinde yeterli olur.  Daha sonra senaryoları daha ayrıntılı açıklamaları yazılabilir.  
+  Kullanım örneği farklı ayrıntı düzeyleri içinde tanımlanabilir. Erken bir aşamada tasarımının, yalnızca adı kullanım durumu diyagramı üzerinde yeterli olur.  Daha sonra senaryoları daha ayrıntılı açıklamaları yazılabilir.  
   
- Visual Studio Ultimate içinde bir kullanım örneği ayrı olarak veya birlikte kullanılabilecek çeşitli yollarla tanımlayabilirsiniz:  
+  Visual Studio Ultimate içinde bir kullanım örneği ayrı olarak veya birlikte kullanılabilecek çeşitli yollarla tanımlayabilirsiniz:  
   
--   Kullanım örneği başka bir diyagramı veya diyagramları projedeki bağlayın.  
+- Kullanım örneği başka bir diyagramı veya diyagramları projedeki bağlayın.  
   
-    -   Etkinlik diyagramı daha karmaşık bir işlem açıklayan yardımcı olan döngü, dal ve paralel iş parçacığı olduğu. Ayrıca, işlem bölümleri arasındaki veri akışını da gösterebilirsiniz. Daha fazla bilgi için [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md).  
+  -   Etkinlik diyagramı daha karmaşık bir işlem açıklayan yardımcı olan döngü, dal ve paralel iş parçacığı olduğu. Ayrıca, işlem bölümleri arasındaki veri akışını da gösterebilirsiniz. Daha fazla bilgi için [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md).  
   
-    -   Sıralı diyagram, farklı aktör arasındaki etkileşimler karmaşık bir dizi açıklayan yardımcı olur. Sistem her kullanım örneğine yanıt içinde neler göstermek için de kullanabilirsiniz. Daha fazla bilgi için [UML sıralı diyagramlar: yönergeler](../modeling/uml-sequence-diagrams-guidelines.md).  
+  -   Sıralı diyagram, farklı aktör arasındaki etkileşimler karmaşık bir dizi açıklayan yardımcı olur. Sistem her kullanım örneğine yanıt içinde neler göstermek için de kullanabilirsiniz. Daha fazla bilgi için [UML sıralı diyagramlar: yönergeler](../modeling/uml-sequence-diagrams-guidelines.md).  
   
--   Kullanım örneği bir OneNote sayfası, bölüm veya ayrıntılı kullanım örneğini açıklanacak paragraf bağlayın.  
+- Kullanım örneği bir OneNote sayfası, bölüm veya ayrıntılı kullanım örneğini açıklanacak paragraf bağlayın.  
   
--   Kullanım örneği, metin, ekran görüntüleri ve benzeri kullanım örneği senaryolarının tanımlamak için kullandığınız bir Word belgesi için bağlayın. Daha fazla bilgi için [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).  
+- Kullanım örneği, metin, ekran görüntüleri ve benzeri kullanım örneği senaryolarının tanımlamak için kullandığınız bir Word belgesi için bağlayın. Daha fazla bilgi için [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).  
   
 #### <a name="to-link-a-use-case-to-a-diagram-or-file-in-the-same-solution"></a>Bir kullanım durumu diyagramı veya aynı çözüm içindeki dosya bağlamak için  
   
@@ -333,13 +333,13 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
  Etkinlik diyagramı kullandığınızda bu adlandırma kuralları dikkat edin:  
   
--   Tüm etkinlik adı dahil olmak üzere kullanım örneği ile aynıdır.  
+- Tüm etkinlik adı dahil olmak üzere kullanım örneği ile aynıdır.  
   
--   Etkinlik diyagramı eylemleri, kullanım örnekleri dahil olarak aynı ada sahip.  
+- Etkinlik diyagramı eylemleri, kullanım örnekleri dahil olarak aynı ada sahip.  
   
- Daha fazla bilgi için [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md).  
+  Daha fazla bilgi için [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md).  
   
- ![Bağlı etkinlik diyagramında gösterilen kullanım örneği adımları](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")  
+  ![Bağlı etkinlik diyagramında gösterilen kullanım örneği adımları](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")  
   
 ###  <a name="Inheritance"></a> Hedefleri Genelleştirme ile paylaşma  
  Genelleştirme ilişkisine gösteren kullanılacağını bir *özelleştirilmiş* kullanım örneği olan başka bir ifade hedeflere ulaşmak için belirli bir şekilde *genel* kullanım örneği. Açık ok ucu daha genel kullanım örneğine işaret etmelidir.  
@@ -383,26 +383,26 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
 ##### <a name="to-separate-a-use-case-into-main-and-extending-parts"></a>Kullanım örneği ana ve genişletme parçalara ayırmak için  
   
-1.  Yeni uzantı adı kullanım örneği ve oluşturun.  
+1. Yeni uzantı adı kullanım örneği ve oluşturun.  
   
-2.  Oluşturma bir **Genişlet** genişletilmiş kullanım örneğine işaret eden bir ok ile ilişkisi.  
+2. Oluşturma bir **Genişlet** genişletilmiş kullanım örneğine işaret eden bir ok ile ilişkisi.  
   
-    1.  Tıklayın **Genişlet** araç.  
+   1.  Tıklayın **Genişlet** araç.  
   
-    2.  Genişletme kullanım örneğine tıklayın (**yeni kullanıcı Kaydet** örnekte).  
+   2.  Genişletme kullanım örneğine tıklayın (**yeni kullanıcı Kaydet** örnekte).  
   
-    3.  Genişletilmiş kullanım örneğine tıklayın (**oturum açma** örnekte).  
+   3.  Genişletilmiş kullanım örneğine tıklayın (**oturum açma** örnekte).  
   
-        > [!NOTE]
-        >  Diyagramda Genişlet ilişkileri döngüsünü oluşturmaktan kaçının. Bu, kendisinin bir uzantı bir kullanım örneği için doğru değil.  
+       > [!NOTE]
+       >  Diyagramda Genişlet ilişkileri döngüsünü oluşturmaktan kaçının. Bu, kendisinin bir uzantı bir kullanım örneği için doğru değil.  
   
-3.  Genişletilmiş kullanım örneği senaryoları zaten oluşturduysanız, uzantının senaryoya ilgili adımları taşıyın.  
+3. Genişletilmiş kullanım örneği senaryoları zaten oluşturduysanız, uzantının senaryoya ilgili adımları taşıyın.  
   
-4.  Uzantı açıklamasını (**yeni kullanıcı Kaydet** örnekte) bu gerçekleşir ana kullanım örneği senaryoları ve hangi koşullar altında ayrıntıları burada içermelidir. Bunu ana durumun açıklaması değiştirme olarak düşünün.  
+4. Uzantı açıklamasını (**yeni kullanıcı Kaydet** örnekte) bu gerçekleşir ana kullanım örneği senaryoları ve hangi koşullar altında ayrıntıları burada içermelidir. Bunu ana durumun açıklaması değiştirme olarak düşünün.  
   
- Uzantı kullanım örneği, aksi durumda ana kullanım örneği senaryolarının parçası olacak senaryo adımları temsil eder. Senaryo ve hedef uzantısı her zaman ana kullanım örneği bağlamında bu nedenle bağımsız olarak yararlı olmak zorunda değildir okunacak.  
+   Uzantı kullanım örneği, aksi durumda ana kullanım örneği senaryolarının parçası olacak senaryo adımları temsil eder. Senaryo ve hedef uzantısı her zaman ana kullanım örneği bağlamında bu nedenle bağımsız olarak yararlı olmak zorunda değildir okunacak.  
   
- Uzantıları ayırmak bu durumlar açıklamak için yararlı olabilir:  
+   Uzantıları ayırmak bu durumlar açıklamak için yararlı olabilir:  
   
 -   Yalnızca uzantı kullanım örneğine katılan olan ek aktör vardır. Örneğin, bir yönetici, bir müşterinin kayıt Web sitesinde onaylamak için gereklidir.  
   
@@ -415,17 +415,17 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
 #### <a name="to-draw-a-subsystem-boundary"></a>Bir alt sistem sınırının çizmek için  
   
-1.  Araç kutusunda tıklayın **alt**, diyagram'ye tıklayın.  
+1. Araç kutusunda tıklayın **alt**, diyagram'ye tıklayın.  
   
-     Bir alt diyagramda görünür.  
+    Bir alt diyagramda görünür.  
   
-2.  Boyutunu ayarlamak için alt sistemi köşelerini sürükleyin.  
+2. Boyutunu ayarlamak için alt sistemi köşelerini sürükleyin.  
   
-3.  Var olan kullanım örneklerini içine veya dışına içindekileri ayarlamak için alt sistemi sürükleyin.  
+3. Var olan kullanım örneklerini içine veya dışına içindekileri ayarlamak için alt sistemi sürükleyin.  
   
- \- veya -  
+   \- veya -  
   
- Doğrudan alt sistemde yeni bir kullanım örneği oluşturmak için tıklayın **kullanım örneği** araç kutusundan alt sistemin içine'ye tıklayın.  
+   Doğrudan alt sistemde yeni bir kullanım örneği oluşturmak için tıklayın **kullanım örneği** araç kutusundan alt sistemin içine'ye tıklayın.  
   
 > [!NOTE]
 >  **Konuları** kullanım özelliği bulunan içinde hangi alt sistemi belirtir.  

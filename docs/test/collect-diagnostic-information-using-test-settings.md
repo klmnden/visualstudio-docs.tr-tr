@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 370bb8d9194ff442a3e8674a95b67f4eec595d60
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 0b2d44d0fa50a4d733f62845d54116cceb2f2016
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370763"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865355"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>Test ayarlarını kullanarak tanılama bilgileri Topla
 
@@ -42,7 +42,7 @@ Birim çalıştırmak için kodlanmış UI, web performansı ve yük testlerini 
 Aşağıdaki tabloda, tanılama veri bağdaştırıcılarını yerel veya uzaktan makine rolleriyle kullanılmak üzere yapılandırılabilir çeşitli yollarına genel bakış sağlar.
 
 |Test ayarlarında kullanılan tanılama veri bağdaştırıcısı|Yerel makinede el ile testler|Otomatik testler|El ile testler: roller ve bir ortam kümesi kullanarak veri toplama|Notlar|
-|----------------------------------------------------------|-----------------------------------|---------------------|------------------------------------------------------------------------------|-----------|
+|-|-|-|-|-|
 |**ASP.NET İstemci Proxy for IntelliTrace and Test Impact:** bu proxy, IntelliTrace ve Test etkisi tanılama veri bağdaştırıcısı için bir web sunucusuna istemciden gelen http çağrıları ile ilgili bilgi toplamanıza olanak tanır.|Evet|Evet|Evet|-Bunu yalnızca bir istemci rolü için IntelliTrace veya Test etkisi tanılama veri bağdaştırıcıları seçili olduğunda kullanın.|
 |**ASP.NET profiler:** ASP.NET web uygulamalarına performans verileri toplayan ASP.NET Profil içeren bir test ayarı oluşturabilirsiniz.|Hayır|Evet (bkz. Notlar)|Hayır|-Bu tanılama veri bağdaştırıcısı yalnızca Visual Studio'dan yük testleri çalıştırdığınızda desteklenir.|
 |**Kod kapsamı:** testlerin, kodunuzun ne kadarını kapsadığını araştırmak için kullanılan kod kapsam bilgilerini içeren bir test ayarı oluşturabilirsiniz.|Hayır|Evet (bkz. Notlar)|Hayır|Visual Studio'da otomatikleştirilmiş bir testi çalıştırdığınızda kod kapsamı-kullanabilirsiniz veya *mstest.exe*ve yalnızca testi çalıştıran makineden. Uzak koleksiyon desteklenmez.<br />-IntelliTrace bilgisi toplamak için yapılandırılmış test ayarına sahipseniz kod kapsam verisi toplama çalışmaz. **Not:** Bu tanılama veri bağdaştırıcısı yalnızca Visual Studio test ayarları için geçerlidir. Microsoft Test Yöneticisi'nde test ayarları için kullanılmaz. Ayrıca, bu bağdaştırıcı Visual Studio 2010 test projeleriyle uyumluluk içindir. **Not:** otomatik testler Microsoft Test Yöneticisi'nden veya uzak bir Test aracısından Visual Studio'dan eski MSTest Çalıştırıcısı kullanılarak çalıştırıldığında kod kapsamı uyumluluk için geçerlidir.|

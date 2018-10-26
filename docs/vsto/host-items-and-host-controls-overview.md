@@ -39,12 +39,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 96cd626e283e9cf86b1a24a63a1939e717cab7b4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 48ce311a767d68ce1402961d2ddf4cf8b673637c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676740"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937505"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Konak öğelerine ve denetimlerine genel bakış
   Konak denetimlerinin ve konak öğelerinin programlama modeli için Visual Studio'da Office geliştirme araçları kullanılarak oluşturulan Office çözümlerini sağlamaya yardımcı türleridir. Konak denetimlerinin ve konak öğelerinin Microsoft Office Word ve Microsoft Office Excel, COM, Windows Forms denetimleri gibi yönetilen nesnelerle etkileşim gibi daha fazla alan nesne modelleri ile etkileşim kurma olun.  
@@ -54,21 +54,21 @@ ms.locfileid: "35676740"
 ## <a name="host-items"></a>Konak öğeleri  
  Konak öğeleri, üst nesne modeli hiyerarşi Office projelerinde türlerdir. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Word ve Excel çözümleri için aşağıdaki konak öğelerini tanımlar:  
   
--   <xref:Microsoft.Office.Tools.Word.Document>  
+- <xref:Microsoft.Office.Tools.Word.Document>  
   
--   <xref:Microsoft.Office.Tools.Excel.Workbook>  
+- <xref:Microsoft.Office.Tools.Excel.Workbook>  
   
--   <xref:Microsoft.Office.Tools.Excel.Worksheet>  
+- <xref:Microsoft.Office.Tools.Excel.Worksheet>  
   
--   <xref:Microsoft.Office.Tools.Excel.ChartSheet>  
+- <xref:Microsoft.Office.Tools.Excel.ChartSheet>  
   
- Bu türlerinin her biri yerel olarak adlandırılan Word veya Excel nesne modelinde, var olan bir nesneyi genişletir bir *yerel Office nesne*. Örneğin, <xref:Microsoft.Office.Tools.Word.Document> konak öğesi genişletir <xref:Microsoft.Office.Interop.Word.Document> Word için birincil birlikte çalışma derlemesi içinde tanımlanan nesne.  
+  Bu türlerinin her biri yerel olarak adlandırılan Word veya Excel nesne modelinde, var olan bir nesneyi genişletir bir *yerel Office nesne*. Örneğin, <xref:Microsoft.Office.Tools.Word.Document> konak öğesi genişletir <xref:Microsoft.Office.Interop.Word.Document> Word için birincil birlikte çalışma derlemesi içinde tanımlanan nesne.  
   
- Konak öğeleri genellikle karşılık gelen Office nesnelerinde ile aynı temel işlevlere sahip, ancak aşağıdaki özelliklerle geliştirilmiştir:  
+  Konak öğeleri genellikle karşılık gelen Office nesnelerinde ile aynı temel işlevlere sahip, ancak aşağıdaki özelliklerle geliştirilmiştir:  
   
--   Konak denetimlerinin ve Windows Forms denetimleri de dahil olmak üzere yönetilen denetimleri barındırma olanağı.  
+- Konak denetimlerinin ve Windows Forms denetimleri de dahil olmak üzere yönetilen denetimleri barındırma olanağı.  
   
--   Daha fazla olay modeli. Bazı belge, çalışma kitabının ve çalışma olayları yerel Word ve Excel nesne modelleri yalnızca uygulama düzeyinde oluşturulur. Konak öğeleri belirli bir belge için olaylarını işlemek daha kolay bu olaylar belge düzeyinde sağlayın.  
+- Daha fazla olay modeli. Bazı belge, çalışma kitabının ve çalışma olayları yerel Word ve Excel nesne modelleri yalnızca uygulama düzeyinde oluşturulur. Konak öğeleri belirli bir belge için olaylarını işlemek daha kolay bu olaylar belge düzeyinde sağlayın.  
   
 ### <a name="understand-host-items-in-document-level-projects"></a>Belge düzeyi projelerine konak öğeleri anlama  
  Belge düzeyi projelerine konak öğeleri, kodunuz için giriş noktası sağlar ve tasarımcılar çözümünüzü geliştirmenize yardımcı olabilirler.  
@@ -89,31 +89,31 @@ ms.locfileid: "35676740"
   
  Aşağıdaki konak denetimleri Excel projeleri için kullanılabilir:  
   
--   [Grafik denetimi](../vsto/chart-control.md)  
+- [Grafik denetimi](../vsto/chart-control.md)  
   
--   [ListObject denetimi](../vsto/listobject-control.md)  
+- [ListObject denetimi](../vsto/listobject-control.md)  
   
--   [NamedRange denetimi](../vsto/namedrange-control.md)  
+- [NamedRange denetimi](../vsto/namedrange-control.md)  
   
--   [XmlMappedRange denetimi](../vsto/xmlmappedrange-control.md)  
+- [XmlMappedRange denetimi](../vsto/xmlmappedrange-control.md)  
   
- Aşağıdaki konak denetimleri Word projeleri için kullanılabilir:  
+  Aşağıdaki konak denetimleri Word projeleri için kullanılabilir:  
   
--   [Yer işareti denetimi](../vsto/bookmark-control.md)  
+- [Yer işareti denetimi](../vsto/bookmark-control.md)  
   
--   [İçerik denetimleri](../vsto/content-controls.md)  
+- [İçerik denetimleri](../vsto/content-controls.md)  
   
--   [XMLNode denetimi](../vsto/xmlnode-control.md)  
+- [XMLNode denetimi](../vsto/xmlnode-control.md)  
   
--   [XMLNodes denetimi](../vsto/xmlnodes-control.md)  
+- [XMLNodes denetimi](../vsto/xmlnodes-control.md)  
   
- Office belgeleri için eklenen konak denetimleri, yerel Office nesneleri gibi davranırlar; Ancak, olayları ve veri bağlama becerileri gibi ek işlevler konak denetimleri vardır. Örneğin, istediğinizde yerel olaylarını yakalamak <xref:Microsoft.Office.Interop.Excel.Range> Excel'de gereken ilk ele değişiklik olayı çalışma sayfası nesnesi. İçinde değişikliğinin olup olmadığını belirlemeniz gerekir sonra <xref:Microsoft.Office.Interop.Excel.Range>. Buna karşılık, <xref:Microsoft.Office.Tools.Excel.NamedRange> konak kontrolünde bir <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> doğrudan işleyen olayı.  
+  Office belgeleri için eklenen konak denetimleri, yerel Office nesneleri gibi davranırlar; Ancak, olayları ve veri bağlama becerileri gibi ek işlevler konak denetimleri vardır. Örneğin, istediğinizde yerel olaylarını yakalamak <xref:Microsoft.Office.Interop.Excel.Range> Excel'de gereken ilk ele değişiklik olayı çalışma sayfası nesnesi. İçinde değişikliğinin olup olmadığını belirlemeniz gerekir sonra <xref:Microsoft.Office.Interop.Excel.Range>. Buna karşılık, <xref:Microsoft.Office.Tools.Excel.NamedRange> konak kontrolünde bir <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> doğrudan işleyen olayı.  
   
- Konak denetimlerinin ve konak öğesi arasındaki ilişki, bir Windows formu ve Windows Forms denetimlerinde arasındaki ilişkiye benzer. Bir Windows formunda metin kutusu denetimi yerleştirin gibi yerleştirdiğiniz bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi bir <xref:Microsoft.Office.Tools.Excel.Worksheet> konak öğesi. Konak denetimlerinin ve konak öğeleri arasındaki ilişki aşağıda gösterilmiştir.  
+  Konak denetimlerinin ve konak öğesi arasındaki ilişki, bir Windows formu ve Windows Forms denetimlerinde arasındaki ilişkiye benzer. Bir Windows formunda metin kutusu denetimi yerleştirin gibi yerleştirdiğiniz bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi bir <xref:Microsoft.Office.Tools.Excel.Worksheet> konak öğesi. Konak denetimlerinin ve konak öğeleri arasındaki ilişki aşağıda gösterilmiştir.  
   
- ![Konak denetimlerinin ve konak öğeleri arasındaki ilişki](../vsto/media/hostitemscontrols.png "konak denetimlerinin ve konak öğeleri arasındaki ilişki")  
+  ![Konak denetimlerinin ve konak öğeleri arasındaki ilişki](../vsto/media/hostitemscontrols.png "konak denetimlerinin ve konak öğeleri arasındaki ilişki")  
   
- Windows Forms denetimleri, Office çözümlerinde doğrudan Word ve Excel belge yüzeyine ekleyerek de kullanabilirsiniz. Daha fazla bilgi için [Windows Forms denetimleri Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+  Windows Forms denetimleri, Office çözümlerinde doğrudan Word ve Excel belge yüzeyine ekleyerek de kullanabilirsiniz. Daha fazla bilgi için [Windows Forms denetimleri Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 > [!NOTE]  
 >  Bir Word alt konak veya Windows Forms denetimleri ekleme desteklenmiyor.  
@@ -121,31 +121,31 @@ ms.locfileid: "35676740"
 ### <a name="add-host-controls-to-your-documents"></a>Konak denetimleri, belgelere ekleme  
  Belge düzeyinde projelerde, konak denetimleri Word belgelerine veya Excel çalışma sayfaları için tasarım zamanında aşağıdaki yollarla ekleyebilirsiniz:  
   
--   Konak denetimleri ekleme belgenize aynı şekilde tasarım zamanında bir yerel nesne eklersiniz.  
+- Konak denetimleri ekleme belgenize aynı şekilde tasarım zamanında bir yerel nesne eklersiniz.  
   
--   Konak denetimleri sürükleyin **araç kutusu** belgeler ve çalışma. Excel konak denetimleri kullanılabilir **Excel denetimleri** Excel projeleri ve Word konak denetimleri kullanılabilir sekmede **Word denetimleri** Word projelerinde sekmesi.  
+- Konak denetimleri sürükleyin **araç kutusu** belgeler ve çalışma. Excel konak denetimleri kullanılabilir **Excel denetimleri** Excel projeleri ve Word konak denetimleri kullanılabilir sekmede **Word denetimleri** Word projelerinde sekmesi.  
   
--   Konak denetimleri sürükleyin **veri kaynakları** penceresinden belgelerinizi ve çalışma. Bu, zaten verilere bağlı denetimler eklemenizi sağlar. Daha fazla bilgi için [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md).  
+- Konak denetimleri sürükleyin **veri kaynakları** penceresinden belgelerinizi ve çalışma. Bu, zaten verilere bağlı denetimler eklemenizi sağlar. Daha fazla bilgi için [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- Belge düzeyi ve VSTO eklentisi projeleri, belgelere, çalışma zamanında bazı konak denetimleri de ekleyebilirsiniz. Daha fazla bilgi için [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+  Belge düzeyi ve VSTO eklentisi projeleri, belgelere, çalışma zamanında bazı konak denetimleri de ekleyebilirsiniz. Daha fazla bilgi için [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- Konak denetimleri belgelere ekleme hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
+  Konak denetimleri belgelere ekleme hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [Nasıl yapılır: çalışma sayfalarına Grafik denetimleri ekleme](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+- [Nasıl yapılır: çalışma sayfalarına Grafik denetimleri ekleme](../vsto/how-to-add-chart-controls-to-worksheets.md)  
   
--   [Nasıl yapılır: çalışma sayfalarına ListObject denetimleri ekleme](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
+- [Nasıl yapılır: çalışma sayfalarına ListObject denetimleri ekleme](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
   
--   [Nasıl yapılır: çalışma sayfalarına NamedRange denetimleri ekleme](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
+- [Nasıl yapılır: çalışma sayfalarına NamedRange denetimleri ekleme](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
   
--   [Nasıl yapılır: çalışma sayfalarına XMLMappedRange denetimleri ekleme](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
+- [Nasıl yapılır: çalışma sayfalarına XMLMappedRange denetimleri ekleme](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
   
--   [Nasıl yapılır: Word belgelerine yer işareti denetimi ekleme](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
+- [Nasıl yapılır: Word belgelerine yer işareti denetimi ekleme](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
   
--   [Nasıl yapılır: içerik ekleme denetimlerine Word belgeleri](../vsto/how-to-add-content-controls-to-word-documents.md)  
+- [Nasıl yapılır: içerik ekleme denetimlerine Word belgeleri](../vsto/how-to-add-content-controls-to-word-documents.md)  
   
--   [Nasıl yapılır: Word belgelerine XMLNode denetimleri ekleme](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
+- [Nasıl yapılır: Word belgelerine XMLNode denetimleri ekleme](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
   
--   [Nasıl yapılır: Word belgelerine XMLNodes denetimleri ekleme](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
+- [Nasıl yapılır: Word belgelerine XMLNodes denetimleri ekleme](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
   
 ### <a name="name-host-controls"></a>Adı konak denetimleri  
  Bir konak denetimi sürüklediğinizde **araç kutusu** belgenize denetimi otomatik olarak denetim türü, sonunda artan bir sayı ile kullanarak olarak adlandırılır. Örneğin, yer işaretleri adlandırılır **bookmark1**, **bookmark2**ve benzeri. Denetim eklemek için yerel bir işlev Word veya Excel kullanıyorsanız, kodu oluşturduğunuz sırada belirli bir ad verebilirsiniz. Değerini değiştirerek denetimlerinizi de yeniden adlandırabilirsiniz **adı** özelliğinde **özellikleri** penceresi.  

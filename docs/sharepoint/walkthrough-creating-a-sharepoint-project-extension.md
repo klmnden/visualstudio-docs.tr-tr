@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8620a51480868302fc840bffea5bbdb427c48f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 44bafccdb3c99032678a808ba3f82f9f14558b3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635622"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893435"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>İzlenecek yol: bir SharePoint proje uzantısı oluşturma
   Bu izlenecek yol, bir SharePoint proje uzantısı oluşturma işlemini gösterir. Bir proje ne zaman eklenmiş, silinmiş veya yeniden adlandırılmış gibi proje düzeyinde olaylara yanıt vermek için bir proje uzantısı'nı kullanabilirsiniz. Ayrıca, özel özellikler ekleme veya bir özellik değeri değiştiğinde yanıt. Proje öğesi uzantıları, proje uzantılarını belirli bir SharePoint proje türüyle ilişkilendirilemez. Bir proje uzantısı oluşturma, herhangi bir türden SharePoint projesi açıldığında uzantınızı yüklediği [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -53,11 +53,11 @@ ms.locfileid: "42635622"
 ## <a name="create-the-projects"></a>Projeleri oluşturma
  Bu izlenecek yolu tamamlamak için iki proje oluşturmanız gerekir:  
   
--   Proje uzantısını dağıtmak için VSIX paketi oluşturmak üzere bir VSIX projesi.  
+- Proje uzantısını dağıtmak için VSIX paketi oluşturmak üzere bir VSIX projesi.  
   
--   Proje uzantısını uygulayan sınıf kitaplığı projesi.  
+- Proje uzantısını uygulayan sınıf kitaplığı projesi.  
   
- İzlenecek yol, proje oluşturmaya başlayın.  
+  İzlenecek yol, proje oluşturmaya başlayın.  
   
 #### <a name="to-create-the-vsix-project"></a>VSIX projesi oluşturmak için  
   

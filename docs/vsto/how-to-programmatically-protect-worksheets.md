@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b737fc8b589d746a5fa733c835d64c4af30a221b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 819a1f4e07397720d806d887408b9e45aeda9ea5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677886"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867188"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Nasıl yapılır: çalışma sayfalarını program aracılığıyla koruma
   Microsoft Office Excel koruma özelliği, kullanıcıları ve kod çalışma sayfasındaki nesneleri değiştirmesini önlemeye yardımcı olur. Korumayı etkinleştirme sonra varsayılan olarak, tüm hücreler kilitlenir.  
@@ -39,11 +39,11 @@ ms.locfileid: "35677886"
   
 ### <a name="to-protect-a-worksheet-in-the-designer"></a>Tasarımcıda bir çalışma sayfasını korumak için  
   
-1.  İçinde **değişiklikleri** grubunu **gözden geçirme** sekmesinde **koruma sayfası**.  
+1. İçinde **değişiklikleri** grubunu **gözden geçirme** sekmesinde **koruma sayfası**.  
   
-     **Koruma sayfası** iletişim kutusu görüntülenir. Bir parola ayarlamanız ve isteğe bağlı olarak kullanıcıların çalışma sayfası hücreleri biçimlendirme gibi ile gerçekleştirmek veya satır eklemek için izin verilen eylemlerin belirtin.  
+    **Koruma sayfası** iletişim kutusu görüntülenir. Bir parola ayarlamanız ve isteğe bağlı olarak kullanıcıların çalışma sayfası hücreleri biçimlendirme gibi ile gerçekleştirmek veya satır eklemek için izin verilen eylemlerin belirtin.  
   
- Ayrıca, korumalı çalışma sayfalarında belirli aralıkları düzenlenecek kullanıcılar izin verebilirsiniz.  
+   Ayrıca, korumalı çalışma sayfalarında belirli aralıkları düzenlenecek kullanıcılar izin verebilirsiniz.  
   
 ### <a name="to-allow-editing-in-specific-ranges"></a>Belirli aralıkları düzenlemeye izin vermek için  
   

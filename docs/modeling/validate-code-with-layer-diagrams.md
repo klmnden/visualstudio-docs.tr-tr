@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d1d2ea051097f297c3fdeb07d166cbbc182a4c99
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 17b0cfb4ecc1809098670b0b9d3e831b5bc75a62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860010"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835715"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Bağımlılık diyagramları ile kod doğrulama
 
@@ -115,41 +115,41 @@ Katmanları Web sitelerine, Office belgeleri, düz metin dosyaları ve birden ç
 
 ### <a name="validate-code-at-the-command-prompt"></a>Komut isteminde kodu doğrulama
 
-1.  Visual Studio komut istemi açın.
+1. Visual Studio komut istemi açın.
 
-2.  Aşağıdakilerden birini seçin:
+2. Aşağıdakilerden birini seçin:
 
-    - Çözümde belirli modelleme projesine karşı kodu doğrulamak için aşağıdaki özel özelliğiyle MSBuild'ı çalıştırın.
+   - Çözümde belirli modelleme projesine karşı kodu doğrulamak için aşağıdaki özel özelliğiyle MSBuild'ı çalıştırın.
 
-        ```
-        msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true
+       ```
 
-         - veya -
+     - veya -
 
-         Gözat modelleme projesi (.modelproj) içeren klasörü için dosya ve bağımlılık Diyagram ve aşağıdaki özel özelliğiyle MSBuild çalıştırın:
+       Gözat modelleme projesi (.modelproj) içeren klasörü için dosya ve bağımlılık Diyagram ve aşağıdaki özel özelliğiyle MSBuild çalıştırın:
 
-        ```
-        msbuild /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild /p:ValidateArchitecture=true
+       ```
 
-    - Kodu Çözümdeki tüm modelleme projelerine karşı doğrulamak için aşağıdaki özel özelliğiyle MSBuild çalıştır:
+   - Kodu Çözümdeki tüm modelleme projelerine karşı doğrulamak için aşağıdaki özel özelliğiyle MSBuild çalıştır:
 
-        ```
-        msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true
+       ```
 
-         - veya -
+     - veya -
 
-         Bağımlılık diyagramı içeren modelleme projesini içermesi gerekir ve ardından aşağıdaki özel özelliğiyle MSBuild Çalıştır çözüm klasörüne göz atın:
+       Bağımlılık diyagramı içeren modelleme projesini içermesi gerekir ve ardından aşağıdaki özel özelliğiyle MSBuild Çalıştır çözüm klasörüne göz atın:
 
-        ```
-        msbuild /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild /p:ValidateArchitecture=true
+       ```
 
      Oluşan hatalar listelenecektir. MSBuild hakkında daha fazla bilgi için bkz. [MSBuild](../msbuild/msbuild.md) ve [MSBuild görevi](../msbuild/msbuild-task.md).
 
- Doğrulama hataları hakkında daha fazla bilgi için bkz. [katman doğrulama hatalarını anlama ve çözme](#UnderstandingValidationErrors).
+   Doğrulama hataları hakkında daha fazla bilgi için bkz. [katman doğrulama hatalarını anlama ve çözme](#UnderstandingValidationErrors).
 
 ### <a name="manage-validation-errors"></a>Doğrulama hatalarını yönetme
 
@@ -165,7 +165,7 @@ Geliştirme işlemi sırasında, doğrulama esnasında bildirilen çakışmalar�
 Doğrulama hatalarını yönetmek için bu görevleri kullanın **hata listesi** penceresi:
 
 |**Hedef**|**Aşağıdaki adımları izleyin**|
-|------------|----------------------------|
+|-|-|
 |Doğrulama sırasında seçili hataları gizleme|Bir veya birden çok seçili hataya sağ tıklayın, fareyle **doğrulama hatalarını Yönet**ve ardından **Hataları Gizle**.<br /><br /> Gizlenen hatalar üstü çizili biçimde görünür. Doğrulamayı daha sonra çalıştırdığınızda bu hatalar görünmez.<br /><br /> Gizlenen hatalar bir karşılık gelen bağımlılık diyagramı dosyası için .gizlenenler dosyasında izlenir.|
 |Seçili hataların gizlenmesini durdurma|Seçili gizlenen hata veya hatalara sağ tıklayın, fareyle **doğrulama hatalarını Yönet**ve ardından **hataları gizlemeyi Durdur**.<br /><br /> Doğrulamayı daha sonra çalıştırdığınızda seçili gizlenen hatalar görünecektir.|
 |Tüm gizlenmiş hataları geri yükleme **hata listesi** penceresi|Herhangi bir yere sağ **hata listesi** penceresi **doğrulama hatalarını Yönet**ve ardından **tüm gizlenmiş hataları göster**.|
@@ -204,7 +204,7 @@ Hata Listesi penceresindeki hataları yönetmek için bkz: [doğrulama hataları
 Aşağıdaki tabloda katman doğrulama sorunları ve bunların çözümü açıklanmaktadır. Bu sorunlar, kod ve tasarım arasındaki çakışmalarla sonuçlanan hatalardan ayrılır. Bu hatalar hakkında daha fazla bilgi için bkz. [katman doğrulama hatalarını anlama ve çözme](#UnderstandingValidationErrors).
 
 |**Sorunu**|**Olası nedeni**|**Çözümleme**|
-|---------------|------------------------|--------------------|
+|-|-|-|
 |Doğrulama hataları beklendiği gibi gerçekleşmez.|Doğrulama, Çözüm Gezgini'ndeki diğer bağımlılık diyagramlarından kopyalanmış ve aynı modelleme projesinde olan bağımlılık diyagramları üzerinde çalışmaz. Bu şekilde kopyalanan bağımlılık diyagramları, orijinal bağımlılık diyagram aynı başvuruları içerir.|Yeni bir bağımlılık diyagramı modelleme projesine ekleyin.<br /><br /> Öğeleri kaynak bağımlılık diyagramından yeni diyagrama kopyalayın.|
 
 ## <a name="resolve-layer-validation-errors"></a>Katman doğrulama hatalarını çözme
@@ -220,20 +220,20 @@ Bu hataları çözmek için doğrulama sırasında daha fazla hata görünmeyene
 Aşağıdaki bölümde, bu hatalarda kullanılan sözdizimi belirtilmekte, bu hataların anlamı açıklanmakta ve bunları çözmek veya yönetmek için yapabilecekleriniz önerilmektedir.
 
 |**Söz dizimi**|**Açıklama**|
-|----------------|---------------------|
+|-|-|
 |*ArtifactN*(*ArtifactTypeN*)|*ArtifactN* bağımlılık diyagramında bir katman ile ilişkilendirilmiş bir yapıdır.<br /><br /> *ArtifactTypeN* türü *ArtifactN*, gibi bir **sınıfı** veya **yöntemi**, örneğin:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
 |*NamespaceNameN*|Bir ad alanının adı.|
 |*LayerNameN*|Bağımlılık diyagramındaki katmanın adı.|
 |*DependencyType*|Arasındaki bağımlılık ilişkisinin türü *Artifact1* ve *Artifact2*. Örneğin, *Artifact1* sahip bir **çağrıları** ilişkisine sahip *Artifact2*.|
 
-|**Hata sözdizimi**|**Hata açıklaması**|
-|----------------------|---------------------------|
-|DV0001: **Geçersiz bağımlılık**|Bu sorun, bir kod öğesi (ad alanı, tür, üye) başka bir katmana eşlenmiş bir kod öğesi için bir katman başvuruları eşlenmiş, ancak bu bu katmanları içeren bağımlılık doğrulama diyagramı Katmanlar arasındaki bağımlılık ok yok bildirilir. Bir bağımlılık kısıtlama ihlali budur.|
-|DV1001: **geçersiz ad alanı adı**|Bu sorun, "Namespace adlarına izin" özelliği bu kod öğe tanımlandığı ad alanı içermeyen bir katman ile ilişkili bir kod öğesinin bildirilir. Bir adlandırma kısıtlaması ihlali budur. "Namespace adlarına izin" söz dizimi ad alanları hangi kod öğeleri ile ilişkili katmandır noktalı virgülle ayrılmış listesi olacak Not tanımlanacak verilir.|
-|DV1002: **başvurulamayan ad alanında bağımlılık**|Bu sorun, bir katman ile ilişkili ve Katmanı "Başvurulamayan Namespace" özelliğinde tanımlanan bir ad alanında tanımlanan başka bir kod öğe başvuran bir kod öğesinin bildirilir. Bir adlandırma kısıtlaması ihlali budur. "Başvurulamayan ad alanları" özelliği bir noktalı virgülle ayrılmış liste içinde bu katman ile ilişkili kod öğelerine başvurulmaması gereken ad alanları olarak tanımlandığını aklınızda bulundurun.|
-|DV1003: **izin verilmeyen ad alanı adı**|Bu sorun, bu kod öğe tanımlandığı ad alanı "Namespace ad izin verilmeyen" özelliği içeren bir katman ile ilişkili bir kod öğesinin bildirilir. Bir adlandırma kısıtlaması ihlali budur. "Ad alanı adı izin verilmeyen" özelliği ad alanları hangi kod öğeleri bu katman ile ilişkili değil tanımlanmalıdır noktalı virgülle ayrılmış listesi olarak tanımlandığını aklınızda bulundurun.|
-|DV3001: **Missing LINK**|Katman '*LayerName*'bağlantı'*Yapıt*' bulunamıyor. Eksik bir derleme başvurunuz mu var?|*LayerName* , bulunamayan bir yapıya bağlanır. Örneğin, sınıfla kurulan bir bağlantı kayıp olabilir; çünkü modelleme projesinde sınıfı içeren derlemeye yapılan bir başvuru yoktur.|
-|DV9001: **mimari çözümleme iç hatalar buldu**|Sonuçlar tamamlanmamış olabilir. Daha fazla bilgi için ayrıntılı yapı olay günlüğü veya çıkış penceresine bakın.|Daha fazla ayrıntı için yapı olay günlüğü veya çıkış penceresine bakın.|
+| **Hata sözdizimi** | **Hata açıklaması** |
+|-|-|
+| DV0001: **Geçersiz bağımlılık** | Bu sorun, bir kod öğesi (ad alanı, tür, üye) başka bir katmana eşlenmiş bir kod öğesi için bir katman başvuruları eşlenmiş, ancak bu bu katmanları içeren bağımlılık doğrulama diyagramı Katmanlar arasındaki bağımlılık ok yok bildirilir. Bir bağımlılık kısıtlama ihlali budur. |
+| DV1001: **geçersiz ad alanı adı** | Bu sorun, "Namespace adlarına izin" özelliği bu kod öğe tanımlandığı ad alanı içermeyen bir katman ile ilişkili bir kod öğesinin bildirilir. Bir adlandırma kısıtlaması ihlali budur. "Namespace adlarına izin" söz dizimi ad alanları hangi kod öğeleri ile ilişkili katmandır noktalı virgülle ayrılmış listesi olacak Not tanımlanacak verilir. |
+| DV1002: **başvurulamayan ad alanında bağımlılık** | Bu sorun, bir katman ile ilişkili ve Katmanı "Başvurulamayan Namespace" özelliğinde tanımlanan bir ad alanında tanımlanan başka bir kod öğe başvuran bir kod öğesinin bildirilir. Bir adlandırma kısıtlaması ihlali budur. "Başvurulamayan ad alanları" özelliği bir noktalı virgülle ayrılmış liste içinde bu katman ile ilişkili kod öğelerine başvurulmaması gereken ad alanları olarak tanımlandığını aklınızda bulundurun. |
+| DV1003: **izin verilmeyen ad alanı adı** | Bu sorun, bu kod öğe tanımlandığı ad alanı "Namespace ad izin verilmeyen" özelliği içeren bir katman ile ilişkili bir kod öğesinin bildirilir. Bir adlandırma kısıtlaması ihlali budur. "Ad alanı adı izin verilmeyen" özelliği ad alanları hangi kod öğeleri bu katman ile ilişkili değil tanımlanmalıdır noktalı virgülle ayrılmış listesi olarak tanımlandığını aklınızda bulundurun. |
+| DV3001: **Missing LINK** | Katman '*LayerName*'bağlantı'*Yapıt*' bulunamıyor. Eksik bir derleme başvurunuz mu var? |
+| DV9001: **mimari çözümleme iç hatalar buldu** | Sonuçlar tamamlanmamış olabilir. Daha fazla bilgi için ayrıntılı yapı olay günlüğü veya çıkış penceresine bakın. |
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

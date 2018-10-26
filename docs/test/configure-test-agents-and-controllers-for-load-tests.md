@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a0da0ca3fb5c36a0c878e641121312b2773b8215
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: abc993d13752cdae00ea75c1eba8e39901f562c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321118"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942991"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Test aracıları yapılandırmak ve test denetleyicilerini yükleme testlerini çalıştırmak için
 
@@ -35,25 +35,25 @@ Visual Studio istemci, test denetleyicisi ve test aracılarını yükleme benzet
 
 Bu mimari aşağıdaki avantajları sağlar:
 
--   Ek test aracısı test denetleyicisine ekleyerek, yük oluşturmanın ölçeğini genişletebilir yeteneği.
+- Ek test aracısı test denetleyicisine ekleyerek, yük oluşturmanın ölçeğini genişletebilir yeteneği.
 
--   İstemcisini yüklemeye yönelik esneklik, test denetleyicisi ve test aracısı yazılımını aynı veya farklı bilgisayarlarda. Örneğin:
+- İstemcisini yüklemeye yönelik esneklik, test denetleyicisi ve test aracısı yazılımını aynı veya farklı bilgisayarlarda. Örneğin:
 
-     **Yerel yapılandırma:**
+   **Yerel yapılandırma:**
 
-    -   Machine1: Visual Studio, denetleyici, aracı.
+  - Machine1: Visual Studio, denetleyici, aracı.
 
-     ![Denetleyici ve Aracı'nı kullanarak yerel makine](./media/load-test-configa.png)
+    ![Denetleyici ve Aracı'nı kullanarak yerel makine](./media/load-test-configa.png)
 
-     **Tipik Uzaktan yapılandırma:**
+    **Tipik Uzaktan yapılandırma:**
 
-    -   Machine1 ve 2: Visual Studio (birden çok test eden aynısı kullanabilirsiniz).
+  - Machine1 ve 2: Visual Studio (birden çok test eden aynısı kullanabilirsiniz).
 
-    -   Makine3: Denetleyici (çok, yüklü aracıları olabilir).
+  - Makine3: Denetleyici (çok, yüklü aracıları olabilir).
 
-    -   Machine4-n: aracısı veya MAKİNE3 denetleyiciyle ilişkili tüm aracıları.
+  - Machine4-n: aracısı veya MAKİNE3 denetleyiciyle ilişkili tüm aracıları.
 
-     ![Uzak makinede denetleyicisi ve aracıları kullanma](./media/load-test-configb.png)
+    ![Uzak makinede denetleyicisi ve aracıları kullanma](./media/load-test-configb.png)
 
 Bir test denetleyicisi genellikle birkaç test aracısını yönetir olsa da, bir aracı yalnızca tek bir denetleyici ile ilişkili olabilir. Her test aracısı, geliştiricilerin ekibi tarafından paylaşılabilir. Bu mimari, böylece daha büyük yükleri oluşturmak, test aracıları sayısını artırmak kolaylaştırır.
 

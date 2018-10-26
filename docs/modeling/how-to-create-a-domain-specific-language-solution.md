@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8684f85c7e5ccb8b4ca93ccc51a24c17ac40f633
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 339b0e9a3637ef375ee3ceee8c5fb84c2670c34f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859620"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838250"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Nasıl yapılır: Etki Alanına Özgü Dil Çözümü Oluşturma
 Bir etki alanına özgü dil (DSL) özel bir Visual Studio çözümünü kullanarak oluşturulur.
@@ -28,12 +28,12 @@ Bir etki alanına özgü dil (DSL) özel bir Visual Studio çözümünü kullana
 ## <a name="prerequisites"></a>Önkoşullar
  Bu yordama başlamadan önce bu bileşenleri yüklemelisiniz:
 
-|||
-|-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|Visual Studio Görselleştirme ve modelleme SDK'sı||
 
+| | |
+|-|-|
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
+| Visual Studio Görselleştirme ve modelleme SDK'sı | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -42,43 +42,43 @@ Bir etki alanına özgü dil (DSL) özel bir Visual Studio çözümünü kullana
 
 #### <a name="to-create-a-domain-specific-language-solution"></a>Bir etki alanına özgü dil çözümü oluşturma
 
-1.  DSL Sihirbazı'nı başlatın.
+1. DSL Sihirbazı'nı başlatın.
 
-    1.  Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.
+   1. Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.
 
-    2.  **Yeni proje** iletişim kutusu görüntülenir.
+   2. **Yeni proje** iletişim kutusu görüntülenir.
 
-    3.  Altında **proje türleri**, genişletme **diğer proje türleri** düğüm seçeneğine tıklayıp **genişletilebilirlik**.
+   3. Altında **proje türleri**, genişletme **diğer proje türleri** düğüm seçeneğine tıklayıp **genişletilebilirlik**.
 
-    4.  Tıklayın **etki alanına özgü dil tasarımcısını**.
+   4. Tıklayın **etki alanına özgü dil tasarımcısını**.
 
-    5.  İçinde **adı** çözüm için bir ad yazın. **Tamam**'ı tıklatın.
+   5. İçinde **adı** çözüm için bir ad yazın. **Tamam**'ı tıklatın.
 
-         **Etki alanına özgü dil Tasarımcısı Sihirbazı** görünür.
+       **Etki alanına özgü dil Tasarımcısı Sihirbazı** görünür.
 
-        > [!NOTE]
-        >  Tercihen, kodu oluşturmak için kullanılabilir olmadığından geçerli bir Visual C# tanımlayıcısı, yazdığınız ad olmalıdır.
+      > [!NOTE]
+      >  Tercihen, kodu oluşturmak için kullanılabilir olmadığından geçerli bir Visual C# tanımlayıcısı, yazdığınız ad olmalıdır.
 
-     ![DSL iletişim kutusu oluşturma](../modeling/media/create_dsldialog.png)
+      ![DSL iletişim kutusu oluşturma](../modeling/media/create_dsldialog.png)
 
-2.  Bir DSL şablonu seçin.
+2. Bir DSL şablonu seçin.
 
-     Üzerinde **etki alanına özgü dil seçenekleri** sayfasında, çözüm şablonları gibi birini **Minimal dil**. Oluşturmak istediğiniz DSL için benzer bir şablon seçin.
+    Üzerinde **etki alanına özgü dil seçenekleri** sayfasında, çözüm şablonları gibi birini **Minimal dil**. Oluşturmak istediğiniz DSL için benzer bir şablon seçin.
 
-     Çözüm şablonları hakkında daha fazla bilgi için bkz: [bir etki alanına özgü dil çözümü şablonu seçme](../modeling/choosing-a-domain-specific-language-solution-template.md).
+    Çözüm şablonları hakkında daha fazla bilgi için bkz: [bir etki alanına özgü dil çözümü şablonu seçme](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
-3.  Bir dosya adı uzantısı girin **dosya uzantısı** sayfası. Bilgisayarınızın benzersiz olmalıdır ve DSL yüklemek istediğiniz tüm bilgisayarlara içinde. Şu iletiyi görürsünüz **bu uygulamaları ya da Visual Studio düzenleyicileri kullanın**.
+3. Bir dosya adı uzantısı girin **dosya uzantısı** sayfası. Bilgisayarınızın benzersiz olmalıdır ve DSL yüklemek istediğiniz tüm bilgisayarlara içinde. Şu iletiyi görürsünüz **bu uygulamaları ya da Visual Studio düzenleyicileri kullanın**.
 
-    -   Tam olarak yüklenmemiş önceki Deneysel DSL içinde dosya adı uzantısı'nı kullandıysanız, bunları dışarı kullanarak temizleyebilir **Deneysel örneğini sıfırlama** aracı, Visual Studio SDK menüsünde bulunabilir.
+   -   Tam olarak yüklenmemiş önceki Deneysel DSL içinde dosya adı uzantısı'nı kullandıysanız, bunları dışarı kullanarak temizleyebilir **Deneysel örneğini sıfırlama** aracı, Visual Studio SDK menüsünde bulunabilir.
 
-    -   Bu dosya uzantısı kullanan başka bir Visual Studio uzantısı tam olarak bilgisayarınızda yüklüyse kaldırmayı göz önünde bulundurun. Üzerinde **Araçları** menüsünde tıklatın **Uzantı Yöneticisi**.
+   -   Bu dosya uzantısı kullanan başka bir Visual Studio uzantısı tam olarak bilgisayarınızda yüklüyse kaldırmayı göz önünde bulundurun. Üzerinde **Araçları** menüsünde tıklatın **Uzantı Yöneticisi**.
 
-4.  İnceleyin ve gerekirse ayarlayın, sihirbazın kalan sayfalarında alanları. Seçimlerden memnun olduğunuzda tıklayın **son**. Ayarlar hakkında daha fazla bilgi için bkz. [DSL Tasarımcısı Sihirbazı sayfaları](#settings).
+4. İnceleyin ve gerekirse ayarlayın, sihirbazın kalan sayfalarında alanları. Seçimlerden memnun olduğunuzda tıklayın **son**. Ayarlar hakkında daha fazla bilgi için bkz. [DSL Tasarımcısı Sihirbazı sayfaları](#settings).
 
-     Sihirbaz, adlandırılmış iki proje içeren bir çözüm oluşturur. **Dsl** ve **DslPackage**.
+    Sihirbaz, adlandırılmış iki proje içeren bir çözüm oluşturur. **Dsl** ve **DslPackage**.
 
-    > [!NOTE]
-    >  Güvenilmeyen kaynaklardan metin şablonlarını çalıştırmak için değil uyaran bir ileti görürseniz **Tamam**. Bu ileti yeniden görünür değil ayarlayabilirsiniz.
+   > [!NOTE]
+   >  Güvenilmeyen kaynaklardan metin şablonlarını çalıştırmak için değil uyaran bir ileti görürseniz **Tamam**. Bu ileti yeniden görünür değil ayarlayabilirsiniz.
 
 ## <a name="settings"></a> DSL Tasarımcısı Sihirbazı sayfaları
  Bazı alanlar, varsayılan değerleri değiştirmeden bırakabilirsiniz. Ancak, dosya uzantısı alanın ayarlanmış emin olun.

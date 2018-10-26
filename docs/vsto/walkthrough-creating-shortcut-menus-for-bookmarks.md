@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8153f0120259eec8ad284b0717e58be750e3b99d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ff261fd6032f3c666dfa3d745508586ffede6504
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783848"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884088"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>İzlenecek yol: yer işaretleri için kısayol menüleri oluşturma
   Bu izlenecek yol için kısayol menüleri oluşturma işlemini gösterir <xref:Microsoft.Office.Tools.Word.Bookmark> Word için belge düzeyi özelleştirmesinde denetimleri. Kullanıcı yer işaretindeki metnin tıkladığında bir kısayol menü görünür ve metni biçimlendirmek için kullanıcı seçeneklerini sunar.  
@@ -32,15 +32,15 @@ ms.locfileid: "38783848"
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
--   [Projeyi oluşturmak](#BKMK_CreateProject).  
+- [Projeyi oluşturmak](#BKMK_CreateProject).  
   
--   [Belgeye metin ve yer işaretleri eklemek](#BKMK_addtextandbookmarks).  
+- [Belgeye metin ve yer işaretleri eklemek](#BKMK_addtextandbookmarks).  
   
--   [Bir kısayol menüsüne komut ekleme](#BKMK_AddCmndsShortMenu).  
+- [Bir kısayol menüsüne komut ekleme](#BKMK_AddCmndsShortMenu).  
   
--   [Yer işareti metni biçimlendirebilir](#BKMK_formattextbkmk).  
+- [Yer işareti metni biçimlendirebilir](#BKMK_formattextbkmk).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
@@ -69,22 +69,22 @@ ms.locfileid: "38783848"
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>Belgenize Bookmark denetimi eklemek için  
   
-1.  İçinde **araç kutusu**, gelen **Word denetimleri** sekmesinde, sürükleyin bir <xref:Microsoft.Office.Tools.Word.Bookmark> belgenize denetimi.  
+1. İçinde **araç kutusu**, gelen **Word denetimleri** sekmesinde, sürükleyin bir <xref:Microsoft.Office.Tools.Word.Bookmark> belgenize denetimi.  
   
-     **Yer işareti Denetimi Ekle** iletişim kutusu görüntülenir.  
+    **Yer işareti Denetimi Ekle** iletişim kutusu görüntülenir.  
   
-2.  "Metnin sağ tıklattığınızda bir kısayol menü oluşturma" sözcükler seçin ve ardından **Tamam**.  
+2. "Metnin sağ tıklattığınızda bir kısayol menü oluşturma" sözcükler seçin ve ardından **Tamam**.  
   
-     `bookmark1` belgeye eklenir.  
+    `bookmark1` belgeye eklenir.  
   
-3.  Başka bir <xref:Microsoft.Office.Tools.Word.Bookmark> "yer işaretindeki metnin sağ" sözcükleri denetimi.  
+3. Başka bir <xref:Microsoft.Office.Tools.Word.Bookmark> "yer işaretindeki metnin sağ" sözcükleri denetimi.  
   
-     `bookmark2` belgeye eklenir.  
+    `bookmark2` belgeye eklenir.  
   
-    > [!NOTE]  
-    >  "Metnin sağ tıklayın", olan hem de sözcükler `bookmark1` ve `bookmark2`.  
+   > [!NOTE]  
+   >  "Metnin sağ tıklayın", olan hem de sözcükler `bookmark1` ve `bookmark2`.  
   
- Tasarım zamanında, bir belge için bir yer işareti eklediğinizde bir <xref:Microsoft.Office.Tools.Word.Bookmark> denetim oluşturulur. Yer işareti birkaç olaylarına karşı programlama yapabilirsiniz. Kod yazabileceğiniz <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> olay işaretinin kullanıcı yer imi metinde tıklattığında kısayol menüsü görüntülenir.  
+   Tasarım zamanında, bir belge için bir yer işareti eklediğinizde bir <xref:Microsoft.Office.Tools.Word.Bookmark> denetim oluşturulur. Yer işareti birkaç olaylarına karşı programlama yapabilirsiniz. Kod yazabileceğiniz <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> olay işaretinin kullanıcı yer imi metinde tıklattığında kısayol menüsü görüntülenir.  
   
 ##  <a name="BKMK_AddCmndsShortMenu"></a> Bir kısayol menüsüne komut ekleme  
  Düğmeler, belge sağ tıkladığınızda görüntülenen kısayol menüsüne ekleyin.  

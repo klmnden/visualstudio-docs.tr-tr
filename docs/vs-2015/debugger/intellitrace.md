@@ -27,12 +27,12 @@ caps.latest.revision: 142
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 882b8bd2e44bb630f70efe93a1338b8dd21dc501
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f96b0df5028974317be46fed7c727b3141e8b64
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228585"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912987"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +41,13 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [IntelliTrace](https://docs
   
 Kodunuzun yürütme geçmişini izlemek ve kaydetmek için IntelliTrace kullandığınızda, uygulamanızın hata ayıklama daha az zaman ayırabilirsiniz. IntelliTrace aşağıdakileri yapmanıza olanak sağladığından hataları kolayca bulabilirsiniz:  
   
--   Kayıt belirli olayları  
+- Kayıt belirli olayları  
   
-     İlgili kodu, görünen verileri incelemek **Yereller** penceresi sırasında hata ayıklayıcı olayları ve çağrı bilgileri işlevi  
+   İlgili kodu, görünen verileri incelemek **Yereller** penceresi sırasında hata ayıklayıcı olayları ve çağrı bilgileri işlevi  
   
--   Yeniden oluşturulması zor olan veya dağıtımda gerçekleşen hataları hata ayıklama  
+- Yeniden oluşturulması zor olan veya dağıtımda gerçekleşen hataları hata ayıklama  
   
- IntelliTrace, Visual Studio Enterprise edition (ancak Professional veya Community sürümlerini değil) kullanabilirsiniz.  
+  IntelliTrace, Visual Studio Enterprise edition (ancak Professional veya Community sürümlerini değil) kullanabilirsiniz.  
   
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?  
   
@@ -78,92 +78,92 @@ Kodunuzun yürütme geçmişini izlemek ve kaydetmek için IntelliTrace kulland�
   
  Bu kaynaklardan IntelliTrace verisi kaydedebilirsiniz:  
   
--   Visual Studio 2015 Enterprise veya Visual Studio Ultimate'nın önceki sürümlerini bir IntelliTrace oturumu.  
+- Visual Studio 2015 Enterprise veya Visual Studio Ultimate'nın önceki sürümlerini bir IntelliTrace oturumu.  
   
--   Microsoft Test Yöneticisi'nde bir sınama oturumu  
+- Microsoft Test Yöneticisi'nde bir sınama oturumu  
   
--   IIS'de barındırılan ASP.NET web uygulamaları ya da Microsoft Monitoring Agent kullandığınızda dağıtımda tek başına ya da System Center 2012 ile birlikte çalışan SharePoint 2010 ve SharePoint 2013 uygulamaları. Bkz: [IntelliTrace collector kullanarak](../debugger/using-the-intellitrace-stand-alone-collector.md) ve [Microsoft Monitoring Agent ile izleme](http://technet.microsoft.com/library/dn465153.aspx).  
+- IIS'de barındırılan ASP.NET web uygulamaları ya da Microsoft Monitoring Agent kullandığınızda dağıtımda tek başına ya da System Center 2012 ile birlikte çalışan SharePoint 2010 ve SharePoint 2013 uygulamaları. Bkz: [IntelliTrace collector kullanarak](../debugger/using-the-intellitrace-stand-alone-collector.md) ve [Microsoft Monitoring Agent ile izleme](http://technet.microsoft.com/library/dn465153.aspx).  
   
- IntelliTrace'in hata ayıklamada yardımcı olması ile ilgili bazı örnekler aşağıdadır:  
+  IntelliTrace'in hata ayıklamada yardımcı olması ile ilgili bazı örnekler aşağıdadır:  
   
--   Uygulamanız bir veri dosyasını bozdu, ancak bu olayın nerede meydana geldiğini bilmiyorsunuz.  
+- Uygulamanız bir veri dosyasını bozdu, ancak bu olayın nerede meydana geldiğini bilmiyorsunuz.  
   
-     IntelliTrace olmadan, tüm olası dosya erişimlerini bulmanız, bu erişimlere kesme noktaları yerleştirmek için kodu aracılığıyla bakmamız gerekiyor ve sorunun nerede meydana geldiğini bulmak için uygulamanızı yeniden çalıştırın. Her olay meydana geldiğinde IntelliTrace ile tüm toplanan dosya erişimi olaylarını ve belirli ayrıntıları hakkında uygulamanızı görebilirsiniz.  
+   IntelliTrace olmadan, tüm olası dosya erişimlerini bulmanız, bu erişimlere kesme noktaları yerleştirmek için kodu aracılığıyla bakmamız gerekiyor ve sorunun nerede meydana geldiğini bulmak için uygulamanızı yeniden çalıştırın. Her olay meydana geldiğinde IntelliTrace ile tüm toplanan dosya erişimi olaylarını ve belirli ayrıntıları hakkında uygulamanızı görebilirsiniz.  
   
--   Bir özel durum gerçekleşir.  
+- Bir özel durum gerçekleşir.  
   
-     IntelliTrace olmadan, bir özel durum hakkında bir ileti alırsınız ama özel duruma yol açan olaylar hakkında fazla bilgi almazsınız. Özel duruma yol açan çağrı zincirini görmek için çağrı yığınını inceleyebilirsiniz ancak bu çağrılar sırasında gerçekleşen olayların sırasını göremezsiniz. IntelliTrace ile özel durumdan önce meydana gelen olayları inceleyebilirsiniz.  
+   IntelliTrace olmadan, bir özel durum hakkında bir ileti alırsınız ama özel duruma yol açan olaylar hakkında fazla bilgi almazsınız. Özel duruma yol açan çağrı zincirini görmek için çağrı yığınını inceleyebilirsiniz ancak bu çağrılar sırasında gerçekleşen olayların sırasını göremezsiniz. IntelliTrace ile özel durumdan önce meydana gelen olayları inceleyebilirsiniz.  
   
--   Uygulamanız sınama bilgisayarında çöküyor ancak geliştirme bilgisayarında başarıyla çalışır.  
+- Uygulamanız sınama bilgisayarında çöküyor ancak geliştirme bilgisayarında başarıyla çalışır.  
   
-     Microsoft Test Yöneticisi'nden IntelliTrace verisi toplayabilir, verileri .iTrace dosyasına kaydedebilir ve bu dosyayı daha sonra incelemek için Team Foundation Server çalışma öğesine ekleyebilirsiniz. Bkz: [el ile testlerde daha fazla tanılama verisi toplama](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2) ve [kayıtlı IntelliTrace verilerini kullanma](../debugger/using-saved-intellitrace-data.md).  
+   Microsoft Test Yöneticisi'nden IntelliTrace verisi toplayabilir, verileri .iTrace dosyasına kaydedebilir ve bu dosyayı daha sonra incelemek için Team Foundation Server çalışma öğesine ekleyebilirsiniz. Bkz: [el ile testlerde daha fazla tanılama verisi toplama](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2) ve [kayıtlı IntelliTrace verilerini kullanma](../debugger/using-saved-intellitrace-data.md).  
   
--   Dağıtılan bir uygulamada hata veya kilitlenme oluşur.  
+- Dağıtılan bir uygulamada hata veya kilitlenme oluşur.  
   
-     Uygulamayı yayımlamadan önce Microsoft Azure tabanlı uygulamalar için IntelliTrace veri toplamayı yapılandırabilirsiniz. Uygulamanız çalışırken, IntelliTrace veriyi bir .iTrace dosyasına kaydeder. Bkz: [IntelliTrace ve Visual Studio ile yayımlanan bulut hizmeti hata ayıklama](http://go.microsoft.com/fwlink/?LinkID=262248).  
+   Uygulamayı yayımlamadan önce Microsoft Azure tabanlı uygulamalar için IntelliTrace veri toplamayı yapılandırabilirsiniz. Uygulamanız çalışırken, IntelliTrace veriyi bir .iTrace dosyasına kaydeder. Bkz: [IntelliTrace ve Visual Studio ile yayımlanan bulut hizmeti hata ayıklama](http://go.microsoft.com/fwlink/?LinkID=262248).  
   
-     IIS 7.0, 7.5 ve 8.0'da barındırılan ASP.NET web uygulamaları ve SharePoint 2010 ya da SharePoint 2013 uygulamalarında, IntelliTrace verisini bir .iTrace dosyasına kaydetmek için Microsoft İzleme Aracısı'nı tek başına ya da System Center 2012 ile birlikte kullanın.  
+   IIS 7.0, 7.5 ve 8.0'da barındırılan ASP.NET web uygulamaları ve SharePoint 2010 ya da SharePoint 2013 uygulamalarında, IntelliTrace verisini bir .iTrace dosyasına kaydetmek için Microsoft İzleme Aracısı'nı tek başına ya da System Center 2012 ile birlikte kullanın.  
   
-     Bu, dağıtımdaki uygulamalarla ilgili sorunları tanılamak istediğinizde kullanışlıdır. Bkz: [IntelliTrace collector kullanarak](../debugger/using-the-intellitrace-stand-alone-collector.md).  
+   Bu, dağıtımdaki uygulamalarla ilgili sorunları tanılamak istediğinizde kullanışlıdır. Bkz: [IntelliTrace collector kullanarak](../debugger/using-the-intellitrace-stand-alone-collector.md).  
   
 ##  <a name="WhatData"></a> IntelliTrace hangi verileri toplar?  
  **Olay bilgilerini toplama**  
   
  Varsayılan olarak, IntelliTrace yalnızca IntelliTrace olayları kaydeder: hata ayıklayıcı olayları, özel durumlar, .NET Framework olayları ve hata ayıklamaya yardımcı olabilecek diğer sistem olaylarıdır. Hata ayıklayıcı olayları ve her zaman toplanan özel durumlar dışında toplamak istediğiniz IntelliTrace olaylarının türlerini seçebilirsiniz. Bkz: [IntelliTrace yapılandırma](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
--   **Hata ayıklayıcı olayları**  
+- **Hata ayıklayıcı olayları**  
   
-     IntelliTrace her zaman Visual Studio hata ayıklayıcıda gerçekleşen olayları kaydeder. Örneğin, uygulamanızın başlatma bir hata ayıklayıcı olayıdır. Diğer hata ayıklayıcı olayları, uygulamanızın yürütmeyi kesmesine neden olan Durma olaylarıdır. Örneğin, programınız bir kesme noktasına denk gelir, bir izleme noktasına denk veya yürüten bir **adım** komutu.  
+   IntelliTrace her zaman Visual Studio hata ayıklayıcıda gerçekleşen olayları kaydeder. Örneğin, uygulamanızın başlatma bir hata ayıklayıcı olayıdır. Diğer hata ayıklayıcı olayları, uygulamanızın yürütmeyi kesmesine neden olan Durma olaylarıdır. Örneğin, programınız bir kesme noktasına denk gelir, bir izleme noktasına denk veya yürüten bir **adım** komutu.  
   
-     IntelliTrace, performansa yardımcı olmak için bir hata ayıklayıcı olayında olası her değeri kaydetmez. Bunun yerine, bu değerleri kaydeder:  
+   IntelliTrace, performansa yardımcı olmak için bir hata ayıklayıcı olayında olası her değeri kaydetmez. Bunun yerine, bu değerleri kaydeder:  
   
-    -   Değerler **Yereller** penceresi. Tutun **Yereller** penceresinde bu değerleri görmek için açık.  
+  -   Değerler **Yereller** penceresi. Tutun **Yereller** penceresinde bu değerleri görmek için açık.  
   
-    -   Değerler **Otolar** penceresi **Otolar** penceresini aç  
+  -   Değerler **Otolar** penceresi **Otolar** penceresini aç  
   
-    -   Kaynak penceresinde değerini görmek için bir değişkenin üzerine fare işaretçisini getirdiğinizde görüntülenen DataTips değerleri. IntelliTrace sabitlenmiş DataTips değerlerini toplamaz.  
+  -   Kaynak penceresinde değerini görmek için bir değişkenin üzerine fare işaretçisini getirdiğinizde görüntülenen DataTips değerleri. IntelliTrace sabitlenmiş DataTips değerlerini toplamaz.  
   
--   **Özel Durumlar**  
+- **Özel Durumlar**  
   
-     IntelliTrace özel durum türünü ve iletisini bu tür özel durumlar için kaydeder:  
+   IntelliTrace özel durum türünü ve iletisini bu tür özel durumlar için kaydeder:  
   
-    -   Özel durumun ortaya çıktığı ve yakalandığı yönetilen özel durumlar  
+  -   Özel durumun ortaya çıktığı ve yakalandığı yönetilen özel durumlar  
   
-    -   Yönetilmeyen özel durumlar  
+  -   Yönetilmeyen özel durumlar  
   
--   **.NET framework olayları**  
+- **.NET framework olayları**  
   
-     Varsayılan olarak, IntelliTrace en sık görülen .NET Framework olaylarını kaydeder. Örneğin:  
+   Varsayılan olarak, IntelliTrace en sık görülen .NET Framework olaylarını kaydeder. Örneğin:  
   
-    -   Bir dosya erişim olayında IntelliTrace dosya adını toplar.  
+  -   Bir dosya erişim olayında IntelliTrace dosya adını toplar.  
   
-    -   Bir Onay Kutusu Denetimi olayında IntelliTrace onay kutusunun durumunu ve metnini toplar.  
+  -   Bir Onay Kutusu Denetimi olayında IntelliTrace onay kutusunun durumunu ve metnini toplar.  
   
--   **SharePoint 2010 ve SharePoint 2013 uygulama olayları**  
+- **SharePoint 2010 ve SharePoint 2013 uygulama olayları**  
   
-     Kullanıcı profili olayları ve SharePoint 2010 ile Visual Studio dışında çalışan 2013 uygulamaları için birleşik Günlük Kaydetme Sistemi (ULS) olaylarının alt kümesini kaydedebilirsiniz. Bu olayları bir .iTrace dosyasına kaydedebilirsiniz. Visual Studio Enterprise 2015, Visual Studio Ultimate, bir önceki sürümünü gerektirir veya [Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384) çalışan **izleme** modu.  
+   Kullanıcı profili olayları ve SharePoint 2010 ile Visual Studio dışında çalışan 2013 uygulamaları için birleşik Günlük Kaydetme Sistemi (ULS) olaylarının alt kümesini kaydedebilirsiniz. Bu olayları bir .iTrace dosyasına kaydedebilirsiniz. Visual Studio Enterprise 2015, Visual Studio Ultimate, bir önceki sürümünü gerektirir veya [Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384) çalışan **izleme** modu.  
   
-     .iTrace dosyasını açtığınızda, eşleşen web isteğini bulmak için bir SharePoint bağıntı kimliği girin, kayıtlı olayları görüntüleyin ve belirli bir olaydan hata ayıklamaya başlayın. Dosya işlenmeyen özel durumlar içeriyorsa, bir bağıntı kimliği seçerek bir özel durumu hata ayıklamaya başlayabilirsiniz.  
+   .iTrace dosyasını açtığınızda, eşleşen web isteğini bulmak için bir SharePoint bağıntı kimliği girin, kayıtlı olayları görüntüleyin ve belirli bir olaydan hata ayıklamaya başlayın. Dosya işlenmeyen özel durumlar içeriyorsa, bir bağıntı kimliği seçerek bir özel durumu hata ayıklamaya başlayabilirsiniz.  
   
-     Bkz.  
+   Bkz.  
   
-    -   [IntelliTrace tek başına toplayıcısını kullanma](../debugger/using-the-intellitrace-stand-alone-collector.md)  
+  -   [IntelliTrace tek başına toplayıcısını kullanma](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
-    -   [Kayıtlı IntelliTrace verilerini kullanma](../debugger/using-saved-intellitrace-data.md)  
+  -   [Kayıtlı IntelliTrace verilerini kullanma](../debugger/using-saved-intellitrace-data.md)  
   
-    -   [İzlenecek yol: IntelliTrace'i Kullanarak SharePoint Uygulamasında Hata Ayıklama](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  -   [İzlenecek yol: IntelliTrace'i Kullanarak SharePoint Uygulamasında Hata Ayıklama](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
- **İşlev çağrısı bilgilerini toplama**  
+  **İşlev çağrısı bilgilerini toplama**  
   
- İşlev çağrı bilgilerini toplamak için IntelliTrace'i yapılandırabilirsiniz. Bu bilgiler çağrı yığını geçmişini görmenizi sağlar ve koddaki çağrılarda geri veya ileri hareket edebilmenize izin verir. Her işlev çağrısı için IntelliTrace bu verileri kaydeder:  
+  İşlev çağrı bilgilerini toplamak için IntelliTrace'i yapılandırabilirsiniz. Bu bilgiler çağrı yığını geçmişini görmenizi sağlar ve koddaki çağrılarda geri veya ileri hareket edebilmenize izin verir. Her işlev çağrısı için IntelliTrace bu verileri kaydeder:  
   
--   İşlev adı  
+- İşlev adı  
   
--   İşlev giriş noktalarında parametre olarak gönderilen ve işlev çıkış noktalarında döndürülen temel veri türlerinin değerleri  
+- İşlev giriş noktalarında parametre olarak gönderilen ve işlev çıkış noktalarında döndürülen temel veri türlerinin değerleri  
   
--   Okunduklarında veya değiştirildiklerinde otomatik özelliklerin değerleri  
+- Okunduklarında veya değiştirildiklerinde otomatik özelliklerin değerleri  
   
--   Birinci düzey alt nesnelerin işaretçileri, ancak değerleri yalnızca boş veya değil şeklinde verilir  
+- Birinci düzey alt nesnelerin işaretçileri, ancak değerleri yalnızca boş veya değil şeklinde verilir  
   
 > [!NOTE]
 >  IntelliTrace yalnızca dizilerdeki ilk 256 nesneyi ve dizelerdeki ilk 256 karakteri toplar.  

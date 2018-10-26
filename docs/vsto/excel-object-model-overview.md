@@ -22,33 +22,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4c5dee963faaf52b6e1511d0b689ebe6ee5554e2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8ca93cae45eed272b683275896efcf83229ca9a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677762"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880799"
 ---
 # <a name="excel-object-model-overview"></a>Excel nesne modeline genel bakış
   Microsoft Office Excel kullanan çözümleri geliştirmek için Excel nesne modeli tarafından sağlanan nesneler ile etkileşim kurabilirsiniz. Bu konuda en önemli nesneleri sunar:  
   
--   <xref:Microsoft.Office.Interop.Excel.Application>  
+- <xref:Microsoft.Office.Interop.Excel.Application>  
   
--   <xref:Microsoft.Office.Interop.Excel.Workbook>  
+- <xref:Microsoft.Office.Interop.Excel.Workbook>  
   
--   <xref:Microsoft.Office.Interop.Excel.Worksheet>  
+- <xref:Microsoft.Office.Interop.Excel.Worksheet>  
   
--   <xref:Microsoft.Office.Interop.Excel.Range>  
+- <xref:Microsoft.Office.Interop.Excel.Range>  
   
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
+  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Nesne modeli, kullanıcı arabirimi yakından takip eder. <xref:Microsoft.Office.Interop.Excel.Application> Nesnesini temsil eden tüm uygulama ve her <xref:Microsoft.Office.Interop.Excel.Workbook> nesneyi içeren koleksiyonu `Worksheet` nesneleri. Burada, hücreleri temsil eden ana soyutlamadır <xref:Microsoft.Office.Interop.Excel.Range> tek tek veya grup hücre ile çalışmanıza olanak sağlayan nesne.  
+  Nesne modeli, kullanıcı arabirimi yakından takip eder. <xref:Microsoft.Office.Interop.Excel.Application> Nesnesini temsil eden tüm uygulama ve her <xref:Microsoft.Office.Interop.Excel.Workbook> nesneyi içeren koleksiyonu `Worksheet` nesneleri. Burada, hücreleri temsil eden ana soyutlamadır <xref:Microsoft.Office.Interop.Excel.Range> tek tek veya grup hücre ile çalışmanıza olanak sağlayan nesne.  
   
- Excel nesne modeline ek olarak, Visual Studio'da Office projeleri sağlamak *konak öğelerini* ve *konak denetimlerini* Excel nesne modelinde bazı nesneler genişletin. Konak denetimlerinin ve konak öğelerinin bunlar genişletmek Excel nesneleri gibi davranırlar fakat aynı zamanda veri bağlama becerileri ve ek olaylar gibi ek işlevlere sahiptirler. Daha fazla bilgi için [otomatikleştirmek genişletilmiş nesneleri kullanarak Excel](../vsto/automating-excel-by-using-extended-objects.md) ve [konak öğelerini ve denetimlerine genel bakış için ana bilgisayar](../vsto/host-items-and-host-controls-overview.md).  
+  Excel nesne modeline ek olarak, Visual Studio'da Office projeleri sağlamak *konak öğelerini* ve *konak denetimlerini* Excel nesne modelinde bazı nesneler genişletin. Konak denetimlerinin ve konak öğelerinin bunlar genişletmek Excel nesneleri gibi davranırlar fakat aynı zamanda veri bağlama becerileri ve ek olaylar gibi ek işlevlere sahiptirler. Daha fazla bilgi için [otomatikleştirmek genişletilmiş nesneleri kullanarak Excel](../vsto/automating-excel-by-using-extended-objects.md) ve [konak öğelerini ve denetimlerine genel bakış için ana bilgisayar](../vsto/host-items-and-host-controls-overview.md).  
   
- Bu konu Excel nesne modeline kısa bir genel bakış sağlar. Kaynaklar nerede edinebilirsiniz tüm Excel nesne modeli hakkında daha fazla bilgi için bkz [Excel nesne modeli belgeleri kullanın](#ExcelOMDocumentation).  
+  Bu konu Excel nesne modeline kısa bir genel bakış sağlar. Kaynaklar nerede edinebilirsiniz tüm Excel nesne modeli hakkında daha fazla bilgi için bkz [Excel nesne modeli belgeleri kullanın](#ExcelOMDocumentation).  
   
- ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [bunu nasıl yaparım: kullanım olay işleyicileri içinde bir Excel 2007 Eklentisi?](http://go.microsoft.com/fwlink/?LinkID=130291), ve [bunu nasıl yaparım kullanım şekilleri kabarcık grafiği oluşturmak için Excel'de? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
+  ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [bunu nasıl yaparım: kullanım olay işleyicileri içinde bir Excel 2007 Eklentisi?](http://go.microsoft.com/fwlink/?LinkID=130291), ve [bunu nasıl yaparım kullanım şekilleri kabarcık grafiği oluşturmak için Excel'de? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="access-objects-in-an-excel-project"></a>Bir Excel projesinde nesnelere erişme  
  Excel için yeni bir VSTO eklenti projesi oluşturduğunuzda, Visual Studio otomatik olarak oluşturur bir *ThisAddIn.vb* veya *ThisAddIn.cs* kod dosyası. Uygulama nesnesi kullanarak erişebileceğiniz `Me.Application` veya `this.Application`.  
@@ -69,15 +69,15 @@ ms.locfileid: "35677762"
   
  Verileri bir Excel belgesi ileri düzeyde yapılandırılmış olduğundan, hiyerarşik ve Basit Nesne modeli. Excel ile etkileşim kurmak isteyebilirsiniz nesneyi sağlar, ancak nesne modelinde iyi bir başlangıç kullanılabilir nesneler küçük bir kısmı odaklanarak alabilirsiniz. Bu nesneler aşağıdaki dört içerir:  
   
--   Uygulama  
+- Uygulama  
   
--   Çalışma Kitabı  
+- Çalışma Kitabı  
   
--   Çalışma Sayfası  
+- Çalışma Sayfası  
   
--   Aralık  
+- Aralık  
   
- Excel ile çalışmanın çoğunu, bu dört nesneleri ve üyeleri ortalar.  
+  Excel ile çalışmanın çoğunu, bu dört nesneleri ve üyeleri ortalar.  
   
 ### <a name="application-object"></a>Uygulama nesnesi  
  Excel <xref:Microsoft.Office.Interop.Excel.Application> nesne Excel uygulamasını temsil eder. <xref:Microsoft.Office.Interop.Excel.Application> Nesnesi, çalışan bir uygulama, bu örneğe uygulanan seçenekleri hakkında bilgi büyük ölçüde kullanıma sunar ve geçerli kullanıcı nesnelerini örneğinde açın.  

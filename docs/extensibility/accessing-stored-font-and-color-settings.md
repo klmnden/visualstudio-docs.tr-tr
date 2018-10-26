@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 553f183eff03ae6437e7db37102005a5e901c0a4
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 953f74b309d8dc147d04d86b843f138002de972f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081650"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910686"
 ---
 # <a name="access-stored-font-and-color-settings"></a>Yazı tipi ve renk ayarlarını erişim depolanan
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Tümleşik geliştirme ortamı (IDE) depolar değiştirilen ayarların yazı tipi ve renkler kayıt defterinde. Kullanabileceğiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> bu ayarlara erişmek için arabirim.
@@ -49,17 +49,17 @@ ms.locfileid: "39081650"
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>Yazı tipleri ve renkler durumu kalıcılığını kullanmak için
  Kalıcı yazı tipleri ve renkler içerir:
 
--   Kayıt defterinde depolanan ayarlarla IDE ayarları eşitleniyor.
+- Kayıt defterinde depolanan ayarlarla IDE ayarları eşitleniyor.
 
--   Kayıt defteri değişikliği bilgilerini yayılıyor.
+- Kayıt defteri değişikliği bilgilerini yayılıyor.
 
--   Ayarlama ve kayıt defterinde depolanan ayarları alınıyor.
+- Ayarlama ve kayıt defterinde depolanan ayarları alınıyor.
 
- IDE ayarları ile depolama ayarını eşitleme büyük ölçüde saydamdır. Temel IDE için güncelleştirilmiş ayarları otomatik olarak Yazar **görünen öğeler** kategoriler kayıt defteri girişleri.
+  IDE ayarları ile depolama ayarını eşitleme büyük ölçüde saydamdır. Temel IDE için güncelleştirilmiş ayarları otomatik olarak Yazar **görünen öğeler** kategoriler kayıt defteri girişleri.
 
- Birden çok VSPackages belirli bir kategoriye paylaşıyorsanız, VSPackage olaylar oluşturulur gerektirmelidir olduğunda yöntemlerinin <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> arabirimi depolanmış kayıt defteri ayarlarını değiştirmek için kullanılır.
+  Birden çok VSPackages belirli bir kategoriye paylaşıyorsanız, VSPackage olaylar oluşturulur gerektirmelidir olduğunda yöntemlerinin <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> arabirimi depolanmış kayıt defteri ayarlarını değiştirmek için kullanılır.
 
- Varsayılan olarak, olay oluşturma etkin değil. Olay oluşturma etkinleştirmek için bir kategori kullanarak açılmalıdır <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>. Bir kategori açma neden uygun çağırmak IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> bir VSPackage'ı uygulayan bir yöntem.
+  Varsayılan olarak, olay oluşturma etkin değil. Olay oluşturma etkinleştirmek için bir kategori kullanarak açılmalıdır <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>. Bir kategori açma neden uygun çağırmak IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> bir VSPackage'ı uygulayan bir yöntem.
 
 > [!NOTE]
 >  Değişiklikleri **yazı tipi ve renk** özellik sayfası oluşturma bağımsız olayları <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>. Kullanabileceğiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> yöntemleri çağrılmadan önce önbelleğe alınmış yazı tipi ve renk ayarlarını güncelleştirmesi gerekli olup olmadığını belirlemek için arabirim <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> sınıfı.

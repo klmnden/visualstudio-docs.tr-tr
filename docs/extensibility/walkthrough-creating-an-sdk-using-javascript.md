@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a1db47703c2a78a4a5163671146c3817e94e0dc
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 1be1cf15e1f43af5999d4d65a5342d9c7b46da25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495914"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884075"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>İzlenecek yol: JavaScript kullanarak SDK oluşturma
 Bu izlenecek yol, bir basit matematik SDK'sı bir Visual Studio Uzantısı (VSIX) olarak oluşturmak için JavaScript kullanmayı öğretir.  İzlenecek yol, şu bölümlere ayrılmıştır:  
   
--   [SimpleMathVSIX uzantı SDK projesi oluşturmak için](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSimpleMathVSIX)  
+- [SimpleMathVSIX uzantı SDK projesi oluşturmak için](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSimpleMathVSIX)  
   
--   [SDK'sını kullanan örnek bir uygulama oluşturmak için](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSampleApp)  
+- [SDK'sını kullanan örnek bir uygulama oluşturmak için](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSampleApp)  
   
- JavaScript için sınıf kitaplığı proje türü yoktur. Bu kılavuzda, örnek *arithmetic.js* doğrudan içinde VSIX projesi dosyası oluşturulur. Uygulamada, öncelikle yapı ve Windows Store uygulaması olarak JavaScript ve CSS dosyaları test öneririz — kullanarak örneğin, **boş uygulama** şablonu — bir VSIX projesinde almadan önce.  
+  JavaScript için sınıf kitaplığı proje türü yoktur. Bu kılavuzda, örnek *arithmetic.js* doğrudan içinde VSIX projesi dosyası oluşturulur. Uygulamada, öncelikle yapı ve Windows Store uygulaması olarak JavaScript ve CSS dosyaları test öneririz — kullanarak örneğin, **boş uygulama** şablonu — bir VSIX projesinde almadan önce.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolda takip etmek için Visual Studio SDK'yı yüklemeniz gerekir. Daha fazla bilgi için [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
@@ -143,57 +143,57 @@ Bu izlenecek yol, bir basit matematik SDK'sı bir Visual Studio Uzantısı (VSIX
   
 ##  <a name="createSampleApp"></a> SDK'sını kullanan örnek bir uygulama oluşturmak için  
   
-1.  Menü çubuğunda, **dosya** > **yeni** > **proje**.  
+1. Menü çubuğunda, **dosya** > **yeni** > **proje**.  
   
-2.  Şablon kategoriler listesinde altında **JavaScript**seçin **Windows Store**ve ardından **boş uygulama** şablonu.  
+2. Şablon kategoriler listesinde altında **JavaScript**seçin **Windows Store**ve ardından **boş uygulama** şablonu.  
   
-3.  İçinde **adı** kutusunda, belirtin `ArithmeticUI`. Seçin **Tamam** düğmesi.  
+3. İçinde **adı** kutusunda, belirtin `ArithmeticUI`. Seçin **Tamam** düğmesi.  
   
-4.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **ArithmeticUI** proje ve ardından **Ekle** > **başvuru**.  
+4. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **ArithmeticUI** proje ve ardından **Ekle** > **başvuru**.  
   
-5.  Altında **Windows**, seçin **uzantıları**, dikkat **basit matematik** görüntülenir.  
+5. Altında **Windows**, seçin **uzantıları**, dikkat **basit matematik** görüntülenir.  
   
-6.  Seçin **basit matematik** onay kutusunu işaretleyin ve ardından **Tamam** düğmesi.  
+6. Seçin **basit matematik** onay kutusunu işaretleyin ve ardından **Tamam** düğmesi.  
   
-7.  İçinde **Çözüm Gezgini**altında **başvuruları**, dikkat **basit matematik** başvuru görüntülenir. Genişletin ve fark bir **\js\**  içeren klasör **arithmetic.js**. Açabileceğiniz **arithmetic.js** kaynak kodunuzu yüklendiğini doğrulamak için.  
+7. İçinde **Çözüm Gezgini**altında **başvuruları**, dikkat **basit matematik** başvuru görüntülenir. Genişletin ve fark bir **\js\\**  içeren klasör **arithmetic.js**. Açabileceğiniz **arithmetic.js** kaynak kodunuzu yüklendiğini doğrulamak için.  
   
-8.  İçeriğini değiştirmek için aşağıdaki kodu kullanın *default.htm*.  
+8. İçeriğini değiştirmek için aşağıdaki kodu kullanın *default.htm*.  
   
-    ```html  
-    <!DOCTYPE html>  
-    <html>  
-    <head>  
-        <meta charset="utf-8" />  
-        <title>ArithmeticUI</title>  
+   ```html  
+   <!DOCTYPE html>  
+   <html>  
+   <head>  
+       <meta charset="utf-8" />  
+       <title>ArithmeticUI</title>  
   
-        <!-- WinJS references -->  
-        <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />  
-        <script src="//Microsoft.WinJS.1.0/js/base.js"></script>  
-        <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>  
+       <!-- WinJS references -->  
+       <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />  
+       <script src="//Microsoft.WinJS.1.0/js/base.js"></script>  
+       <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>  
   
-        <!-- ArithmeticUI references -->  
-        <link href="/css/default.css" rel="stylesheet" />  
-        <script src="/js/default.js"></script>  
-        <script src="/SimpleMath/js/arithmetic.js"></script>  
-    </head>  
-    <body>  
-        <form>  
-        <div id="calculator" class="ms-grid">  
-            <input name="firstNumber" id="firstNumber" type="number" step="any">  
-            <div id="operators">  
-                <button class="operator" type="button">+</button>  
-                <button class="operator" type="button">-</button>  
-                <button class="operator" type="button">*</button>  
-                <button class="operator" type="button">/</button>  
-            </div>  
-            <input id="secondNumber" type="number">  
-            <button class="calculate" type="button">=</button>  
-            <input id="result" type="number" name="result" disabled="" readonly="">  
-        </div>  
-        </form>  
-    </body>  
-    </html>  
-    ```  
+       <!-- ArithmeticUI references -->  
+       <link href="/css/default.css" rel="stylesheet" />  
+       <script src="/js/default.js"></script>  
+       <script src="/SimpleMath/js/arithmetic.js"></script>  
+   </head>  
+   <body>  
+       <form>  
+       <div id="calculator" class="ms-grid">  
+           <input name="firstNumber" id="firstNumber" type="number" step="any">  
+           <div id="operators">  
+               <button class="operator" type="button">+</button>  
+               <button class="operator" type="button">-</button>  
+               <button class="operator" type="button">*</button>  
+               <button class="operator" type="button">/</button>  
+           </div>  
+           <input id="secondNumber" type="number">  
+           <button class="calculate" type="button">=</button>  
+           <input id="result" type="number" name="result" disabled="" readonly="">  
+       </div>  
+       </form>  
+   </body>  
+   </html>  
+   ```  
   
 9. İçeriğini değiştirmek için aşağıdaki kodu kullanın *\js\default.js*.  
   

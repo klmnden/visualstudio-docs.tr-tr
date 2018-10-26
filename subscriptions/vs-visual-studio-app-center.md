@@ -9,12 +9,12 @@ description: Visual Studio abonelikleri dahil Visual Studio App Center teklifi h
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e6d8e53d01892dc22de8ce48f37f0df6a506ae3b
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 112597455bbabe9f42cc2834bd06bf5c52d7cc9f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073838"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940989"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio Abonelikleri, Visual Studio App Center
 
@@ -41,6 +41,7 @@ Visual Studio App Center ile kullanmaya kolayca başlayabilirsiniz.
     > ![VS App Center portalı](_img/vs-app-center/vs-app-center-portal.png)
 
 ## <a name="eligibility"></a>Uygunluk
+
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standart, yıllık bulut, aylık bulut)   | VL, Azure, perakende, NFR<sup>1</sup> | Dahil edilen       |  Evet          |

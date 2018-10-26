@@ -16,12 +16,12 @@ ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 39cf7c116e1f05629f738ec536a9dab38100718f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a946eb1d8891bfb11179c480fde6369781fdd57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260136"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911453"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Visual Studio Hata Ayıklayıcısı Sözlüğü
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -65,31 +65,31 @@ ms.locfileid: "49260136"
  bekleyen kesme noktası  
  Önce sırasında ve sonrasında kesme noktaları için bir Özet sağlar kodudur yüklenir ve kesme noktaları sanallaştırmak için yol. Bir bekleyen kesme noktası:  
   
--   Bir veya daha fazla program kodunda bir kesme noktası bağlamak için gerekli tüm bilgileri içerir.  
+- Bir veya daha fazla program kodunda bir kesme noktası bağlamak için gerekli tüm bilgileri içerir.  
   
--   Bir veya daha fazla program içinde birden çok kod konumlara bağlayabilirsiniz.  
+- Bir veya daha fazla program içinde birden çok kod konumlara bağlayabilirsiniz.  
   
--   Hiçbir zaman kendisi koduna bağlar.  
+- Hiçbir zaman kendisi koduna bağlar.  
   
- Her zaman kod yükler, bir programdaki tüm bekleyen kesme noktalarını bunlar bağlayabilirsiniz olmadığını görmek için denetlenir. Bir bekleyen kesme noktasının, bağlanan tüm bağımlı kesme noktalarını içerecek şekilde bildirilir.  
+  Her zaman kod yükler, bir programdaki tüm bekleyen kesme noktalarını bunlar bağlayabilirsiniz olmadığını görmek için denetlenir. Bir bekleyen kesme noktasının, bağlanan tüm bağımlı kesme noktalarını içerecek şekilde bildirilir.  
   
- process  
- Fiziksel bir Win32 işlemi. Bir işlem birden çok programları içerebilir. Ayrıca bkz: *program*.  
+  process  
+  Fiziksel bir Win32 işlemi. Bir işlem birden çok programları içerebilir. Ayrıca bkz: *program*.  
   
- program  
- Belirli bir çalışma zamanı mimarisi içinde çalışan tek bir ad. Ayrıca bkz: *işlem*.  
+  program  
+  Belirli bir çalışma zamanı mimarisi içinde çalışan tek bir ad. Ayrıca bkz: *işlem*.  
   
- oturum hata ayıklama Yöneticisi (SDM)  
- Herhangi bir sayıda herhangi bir sayıda makine üzerinde birden çok işlem programlarında hata ayıklama hata ayıklama altyapısı herhangi bir sayıda yönetir. Temel düzeyde, SDM çoğaltıcı hata ayıklama altyapısını ' dir. Ayrıca, SDM IDE hata ayıklama oturumu birleşik bir görünümünü sağlar.  
+  oturum hata ayıklama Yöneticisi (SDM)  
+  Herhangi bir sayıda herhangi bir sayıda makine üzerinde birden çok işlem programlarında hata ayıklama hata ayıklama altyapısı herhangi bir sayıda yönetir. Temel düzeyde, SDM çoğaltıcı hata ayıklama altyapısını ' dir. Ayrıca, SDM IDE hata ayıklama oturumu birleşik bir görünümünü sağlar.  
   
- yığın çerçevesi  
- Belirli bir çerçeve olan hesaplamayı durumunu ve iç içe geçmiş işlev çağrıları belirli düzeyini temsil eder.  
+  yığın çerçevesi  
+  Belirli bir çerçeve olan hesaplamayı durumunu ve iç içe geçmiş işlev çağrıları belirli düzeyini temsil eder.  
   
- thread  
- En az bir programda yığın tabanlı yönerge yürütme genelleştirilmiş kavramı.  
+  thread  
+  En az bir programda yığın tabanlı yönerge yürütme genelleştirilmiş kavramı.  
   
- Uyarı kesme noktası  
- Bir bekleyen kesme noktasının bir uyarı tanımlamak için bir Özet. Bir uyarı kesme noktası neden bekleyen kesme noktası henüz bir kod konuma bağlı olmayan bir nedeni açıklanmaktadır. Bu kodun henüz bekleyen kesme noktasının tarafından açıklanan konumu veya başka bir nedenle yüklememiş emin olabilir.  
+  Uyarı kesme noktası  
+  Bir bekleyen kesme noktasının bir uyarı tanımlamak için bir Özet. Bir uyarı kesme noktası neden bekleyen kesme noktası henüz bir kod konuma bağlı olmayan bir nedeni açıklanmaktadır. Bu kodun henüz bekleyen kesme noktasının tarafından açıklanan konumu veya başka bir nedenle yüklememiş emin olabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio Hata Ayıklayıcı Genişletilebilirliği](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e57a42846833024fefb4bf73660484123474d00a
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 6f2f53e801df70345e34c14c15d4456e39561623
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029059"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847637"
 ---
 # <a name="shader-designer"></a>Gölgelendirici Tasarımcısı
 
@@ -31,7 +31,7 @@ Kullanabileceğiniz **gölgelendirici Tasarımcısı** üst düzey gölgelendiri
 **Gölgelendirici Tasarımcısı** bu gölgelendirici biçimlerini destekler:
 
 |Biçim Adı|Dosya Uzantısı|Desteklenen işlemler (görüntüleme, düzenleme, dışarı aktarma)|
-|-----------------|--------------------|-------------------------------------------------|
+|-----------------| - | - |
 |Yönlü graf gölgelendirici dili|*.dgsl*|Görüntüle, Düzenle|
 |HLSL gölgelendirici (kaynak kodu)|*.hlsl*|Dışarı aktarma|
 |HLSL gölgelendirici (bayt)|*.CSO*|Dışarı aktarma|
@@ -177,7 +177,7 @@ Gölgelendiricileri dışarı aktarma hakkında daha fazla bilgi için bkz. [nas
 ## <a name="keyboard-shortcuts"></a>Klavye kısayolları
 
 |Komut|Klavye kısayolları|
-|-------------|------------------------|
+|-------------| - |
 |Geçiş **seçin** modu|**CTRL**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
 |Geçiş **yakınlaştırma** modu|**CTRL**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
 |Geçiş **Pan** modu|**CTRL**+**G**, **Ctrl**+**P**<br /><br /> **K**|

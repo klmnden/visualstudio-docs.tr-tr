@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c977578a01c6d0af62f328e44a617ff2e00fe128
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: e0057d51256f9cddff7c30056d4c669e9f2f2dd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39150862"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895463"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions öğesi (MSBuild)
 Sağlar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyalarını içerecek olmayan[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bilgileri. Herhangi bir şey içinde bir `ProjectExtensions` öğesi tarafından yoksayılacak [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -52,9 +52,9 @@ Sağlar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild
 
 ### <a name="parent-elements"></a>Üst öğeler  
 
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası.|  
+| Öğe | Açıklama |
+| - | - |
+| [Project](../msbuild/project-element-msbuild.md) | Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası. |
 
 ## <a name="remarks"></a>Açıklamalar  
  Yalnızca bir `ProjectExtensions` öğesi olarak kullanılabilir bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje.  

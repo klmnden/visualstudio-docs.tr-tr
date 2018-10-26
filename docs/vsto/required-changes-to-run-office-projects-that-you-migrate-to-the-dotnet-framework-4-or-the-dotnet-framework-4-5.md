@@ -15,25 +15,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 10c21ef1ced2e5237ac0cf940d7561d39e863d4f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 675831a8e094728a142bebf0432838030ae8791d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677740"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883490"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz Office projelerini çalıştırmak için gereken değişiklikler
   Bir Office projesi hedef Framework'ü değiştirilirse [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha önceki .NET Framework sürümünden çözüm geliştirme bilgisayarında ve son kullanıcı bilgisayarlarında çalışabildiğinden emin olmak için aşağıdaki görevleri gerçekleştirmeniz gerekir:  
   
--   Kaldırma <xref:System.Security.SecurityTransparentAttribute> Visual Studio 2008'den yükseltilmiş ise projesi.  
+- Kaldırma <xref:System.Security.SecurityTransparentAttribute> Visual Studio 2008'den yükseltilmiş ise projesi.  
   
--   Gerçekleştirmek bir **temiz** çalıştırın veya geliştirme bilgisayarında projede hata ayıklamak için Visual Studio'da komutu.  
+- Gerçekleştirmek bir **temiz** çalıştırın veya geliştirme bilgisayarında projede hata ayıklamak için Visual Studio'da komutu.  
   
--   .NET Framework projesi için önkoşul güncelleştirin.  
+- .NET Framework projesi için önkoşul güncelleştirin.  
   
--   Hedef Çerçeve değiştirilmeden önce ClickOnce kullanarak, daha önce dağıttıysanız, son kullanıcılar ayrıca çözüm yeniden yüklemeniz gerekir.  
+- Hedef Çerçeve değiştirilmeden önce ClickOnce kullanarak, daha önce dağıttıysanız, son kullanıcılar ayrıca çözüm yeniden yüklemeniz gerekir.  
   
- Bu görevlerin her biri hakkında daha fazla bilgi için aşağıdaki karşılık gelen bölümlere bakın.  
+  Bu görevlerin her biri hakkında daha fazla bilgi için aşağıdaki karşılık gelen bölümlere bakın.  
   
 ## <a name="remove-the-securitytransparent-attribute-from-projects-that-you-upgrade-from-visual-studio-2008"></a>Visual Studio 2008'den yükseltme projeleri SecurityTransparent özniteliğini kaldırın  
  Visual Studio 2008 ve hedef Framework'ü Office projesini yükseltirseniz, projeyi daha sonra değişikliklerini [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra kaldırmalısınız <xref:System.Security.SecurityTransparentAttribute> proje. Visual Studio otomatik olarak bu özniteliği sizin için kaldırmaz. Bu öznitelik kaldırmazsanız, projeyi derlerken bir hata iletisi alırsınız.  

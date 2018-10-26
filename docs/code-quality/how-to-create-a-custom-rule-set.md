@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 727c11e24eb3409de89fe211c6a37691dfec298c
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: dce43c02f4976b51bab61a48f615fb0307102fc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204121"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884192"
 ---
 # <a name="customize-a-rule-set"></a>Bir kural kümesi özelleştirme
 
 Kod Analizi için belirli proje gereksinimlerini karşılamak için özel bir kural oluşturabilirsiniz.
 
-## <a name="create-a-custom-rule-set"></a>Bir özel kural kümesi oluşturma
+## <a name="create-a-custom-rule-set"></a>Özel kural kümesi oluşturma
 
 Özel bir kural oluşturmak için yerleşik bir kural kümesi açabilirsiniz **kural kümesi düzenleyici**. Burada, ekleme veya kaldırma belirli kurallar ve kural ihlal edildiğinde gerçekleşen eylemi değiştirebilirsiniz&mdash;Örneğin, bir uyarı veya hata gösterir.
 
@@ -34,11 +34,11 @@ Kod Analizi için belirli proje gereksinimlerini karşılamak için özel bir ku
 
 3. İçinde **bu kural kümesini Çalıştır** aşağı açılan listesinde, aşağıdakilerden birini yapın:
 
-    - Özelleştirmek istediğiniz kural kümesi seçin.
+   - Özelleştirmek istediğiniz kural kümesi seçin.
 
      \- veya -
 
-    - Seçin  **\<Gözat … >** mevcut bir kuralı kümesini belirlemek için listesinde değil.
+   - Seçin  **\<Gözat … >** mevcut bir kuralı kümesini belirlemek için listesinde değil.
 
 4. Seçin **açık** kuralları kural kümesi Düzenleyicisi'nde görüntülemek için.
 

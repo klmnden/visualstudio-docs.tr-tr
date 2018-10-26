@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f6c23ea3ad48c361c12912926e0642f35f853a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 396a516efb166f382c7c9a9c76c30a874db7155a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283463"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938272"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Dil sunucusu Protokolü uzantısı ekleme
 
@@ -132,10 +132,10 @@ LSP diller için metin renklendirmesi nasıl belirtimi içermez. Uzantı gelişt
 
 4. Oluşturma bir *.pkgdef* dosya ve şuna benzer bir satır ekleyin:
 
-  ```xml
-  [$RootKey$\TextMate\Repositories]
-  "MyLang"="$PackageFolder$\Grammars"
-  ```
+   ```xml
+   [$RootKey$\TextMate\Repositories]
+   "MyLang"="$PackageFolder$\Grammars"
+   ```
 
 5. Sağ tıklatın ve dosyaları **özellikleri**. Değişiklik **derleme** eyleme **içerik** ve **VSIX Ekle** özelliği true.
 
@@ -295,40 +295,40 @@ LSP dil hizmeti uzantınızı ayarları için destek eklemek için aşağıdaki 
 
 1. Bir JSON dosyası ekleyin (örneğin, *MockLanguageExtensionSettings.json*) projenizdeki ayarları ve kendi varsayılan değerlerini içerir. Örneğin:
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": -1
-  }
-  ```
+   }
+   ```
 2. JSON dosya sağ tıklayıp **özellikleri**. Değişiklik **derleme** eylem "İçerik" ve "VSIX Ekle ' özelliğini true.
 
 3. Uygulama ConfigurationSections ve JSON dosyasında tanımlanan ayarlara yönelik önekleri listesini döndürür (Visual Studio kodu, bu eşleme Package.json'da yapılandırma bölümü adı):
 
-  ```csharp
-  public IEnumerable<string> ConfigurationSections
-  {
+   ```csharp
+   public IEnumerable<string> ConfigurationSections
+   {
       get
       {
           yield return "foo";
       }
-  }
-  ```
+   }
+   ```
 4. .Pkgdef dosyası projeye ekleyin (yeni metin dosyası ekleyin ve .pkgdef için dosya uzantısı değiştirme). Pkgdef bu dosya, bu bilgileri içermelidir:
 
-  ```xml
+   ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
-  ```
+   ```
 
 5. .pkgdef dosyasını sağ tıklatın ve seçin **özellikleri**. Değişiklik **derleme** eyleme **içerik** ve **VSIX Ekle** özelliği true.
 
 6. Açık yukarı *source.extension.vsixmanifest* dosyası ve bir varlığı ekleyin **varlık** sekmesinde:
 
-  ![VSPackage varlığı Düzenle](media/lsp-add-vspackage-asset.png)
+   ![VSPackage varlığı Düzenle](media/lsp-add-vspackage-asset.png)
 
-  * **Tür**: Microsoft.VisualStudio.VsPackage
-  * **Kaynak**: FileSystem'daki
-  * **Yol**: [yolu, *.pkgdef* dosyası]
+   * **Tür**: Microsoft.VisualStudio.VsPackage
+   * **Kaynak**: FileSystem'daki
+   * **Yol**: [yolu, *.pkgdef* dosyası]
 
 ### <a name="user-editing-of-settings-for-a-workspace"></a>Kullanıcı, bir çalışma alanı ayarlarını düzenleme
 
@@ -336,16 +336,16 @@ LSP dil hizmeti uzantınızı ayarları için destek eklemek için aşağıdaki 
 2. Kullanıcı bir dosyayı ekler *.vs* adlı bir klasör *VSWorkspaceSettings.json*.
 3. Kullanıcı için bir satır ekler *VSWorkspaceSettings.json* dosyası için bir ayar sunucu sağlar. Örneğin:
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": 10
-  }
-  ```
-### <a name="enabling-diagnostics-tracing"></a>Tanılama izlemeyi etkinleştirme
-Tanılama izleme, sorunları hata ayıklama sırasında yararlı olabilecek sunucu ve istemci arasındaki tüm iletiler çıkarmasını etkinleştirilebilir.  Tanılama izlemesini etkinleştirmek için aşağıdakileri yapın:
+   }
+   ```
+   ### <a name="enabling-diagnostics-tracing"></a>Tanılama izlemeyi etkinleştirme
+   Tanılama izleme, sorunları hata ayıklama sırasında yararlı olabilecek sunucu ve istemci arasındaki tüm iletiler çıkarmasını etkinleştirilebilir.  Tanılama izlemesini etkinleştirmek için aşağıdakileri yapın:
 
-1. Çalışma ayarları dosyasını oluşturun veya açın *VSWorkspaceSettings.json* ("Kullanıcı, bir çalışma alanı ayarlarını düzenleme" bakın).
-2. Ayarları json dosyasında aşağıdaki satırı ekleyin:
+4. Çalışma ayarları dosyasını oluşturun veya açın *VSWorkspaceSettings.json* ("Kullanıcı, bir çalışma alanı ayarlarını düzenleme" bakın).
+5. Ayarları json dosyasında aşağıdaki satırı ekleyin:
 
 ```json
 {

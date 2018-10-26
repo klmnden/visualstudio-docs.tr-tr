@@ -17,12 +17,12 @@ caps.latest.revision: 64
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 21b014e4b13544a7fe2a672674bccc34320d0083
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 27fb58e0219dd05c623a553c65e577834ee4a05f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196137"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833492"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Kodunuz aracılığıyla katman diyagramları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,9 +111,9 @@ Yazılım sisteminizin üst düzey, mantıksal mimarisini görselleştirmek içi
 > [!NOTE]
 >  Bağımlılıklarda belirli türdeki yapılar için ters mühendislik uygulanamaz. Örneğin, hiçbir bağımlılıkta metin dosyasına bağlı katmandan veya katmana ters mühendislik uygulanmaz. Hangi yapıların ters mühendislik uygulayabileceğiniz bağımlılıkları olduğunu görmek için bir veya daha fazla katmanın kısayol menüsünü açın ve ardından **bağlantıları görüntüle**. İçinde **Katman Gezgini**, inceleyin **doğrulamayı destekler** sütun. Bağımlılıklar, bu sütunda görüntülenir yapıtlar için ters mühendislik olmayacak **False**.  
   
--   Bir veya birden fazla katman seçin, seçilen katmanın kısayol menüsünü açın ve ardından **Bağımlılıklar Oluştur**.  
+- Bir veya birden fazla katman seçin, seçilen katmanın kısayol menüsünü açın ve ardından **Bağımlılıklar Oluştur**.  
   
- Genellikle var olmaması gereken bazı bağımlılıklar göreceksiniz. Bu bağımlılıkları hedeflenen tasarım ile uyumlu hale getirmek için düzenleyebilirsiniz.  
+  Genellikle var olmaması gereken bazı bağımlılıklar göreceksiniz. Bu bağımlılıkları hedeflenen tasarım ile uyumlu hale getirmek için düzenleyebilirsiniz.  
   
 ##  <a name="EditDependencies"></a> Katmanları ve bağımlılıkları hedeflenen tasarımı göstermek için düzenleme  
  Sisteminizde veya hedeflenen mimaride yapmayı planladığınız değişiklikleri açıklamak için katman diyagramını düzenleyin:  

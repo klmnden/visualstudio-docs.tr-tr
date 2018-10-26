@@ -15,12 +15,12 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: db689d1d8fdb7d60cba232685ee0c8f22ca9cbb2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d167559a442e351c6256d07943092825deef288a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243831"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839433"
 ---
 # <a name="project-subtypes-design"></a>Proje Alt Türleri Tasarımı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Proje alt türleri kılan Microsoft Build Engine (MSBuild) üzerinde temel proje
 ## <a name="project-subtype-design"></a>Proje alt tasarımı  
  Bir proje alt başlatma ana toplayarak sağlanır <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> nesneleri. Bu toplama geçersiz kılabilir veya en temel projenin yeteneklerini geliştirmek bir proje alt sağlar. Proje alt türleri alma özelliklerini kullanarak işlemek için ilk şans <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>, komutları kullanarak <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>ve proje öğesi Yönetimi'ni kullanarak <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>. Proje alt türleri de genişletebilirsiniz:  
   
--   Proje yapılandırma nesneleri.  
+- Proje yapılandırma nesneleri.  
   
--   Yapılandırma bağımlı nesneler.  
+- Yapılandırma bağımlı nesneler.  
   
--   Bağımsız yapılandırma Gözat nesneleri.  
+- Bağımsız yapılandırma Gözat nesneleri.  
   
--   Proje Otomasyon nesneleri.  
+- Proje Otomasyon nesneleri.  
   
--   Proje Otomasyon özellik koleksiyonları.  
+- Proje Otomasyon özellik koleksiyonları.  
   
- Proje alt türleri tarafından genişletilebilirlik hakkında daha fazla bilgi için bkz. [özellikleri ve yöntemleri genişletilmiş proje alt türleri tarafından](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md).  
+  Proje alt türleri tarafından genişletilebilirlik hakkında daha fazla bilgi için bkz. [özellikleri ve yöntemleri genişletilmiş proje alt türleri tarafından](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md).  
   
 ##### <a name="policy-files"></a>İlke dosyaları  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Ortamı ile bir proje alt ilke dosyaları uygulamaya temel proje sistemini genişletme örneği sağlar. Bir ilke dosyası, şekillendirme sağlar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Solution Explorer dahil özelliklerini yönetme tarafından ortam **Proje Ekle** iletişim kutusu, **Yeni Öğe Ekle** iletişim kutusu ve  **Özellikleri** iletişim kutusu. İlke alt geçersiz kılar ve bu özellikleri aracılığıyla geliştirir <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg>, `IOleCommandTarget` ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> uygulamaları.  

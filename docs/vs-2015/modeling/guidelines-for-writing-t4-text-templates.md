@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f4d0b435544ffd77292e8cad217247733cac4075
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c3ed1415572dc00509abf36e7cb84311f95e4805
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272239"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812765"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>T4 Metin Şablonları Yazma Yönergeleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,31 +48,31 @@ Aşağıdaki genel yönergeleri program kodu veya diğer uygulama kaynakları ol
  İzin vermek için özel kod: Kısmi sınıflar oluşturun.  
  El ile ayrıca için oluşturulan kodu yazdığınız kodu için izin verin. Ortaya çıkabilecek tüm olası farklılıklara hesap bir kod oluşturma düzeni için olağandışıdır. Bu nedenle, ekleme veya bazı oluşturulan kod geçersiz kılmak beklemeniz gerekir. Oluşturulan malzemenin olduğu bir .NET dilinde gibi [!INCLUDE[csprcs](../includes/csprcs-md.md)] veya [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], iki stratejileri özellikle kullanışlıdır:  
   
--   Oluşturulan sınıflar, kısmi olmalıdır. Bu içerik için oluşturulan kod eklemenize olanak sağlar.  
+- Oluşturulan sınıflar, kısmi olmalıdır. Bu içerik için oluşturulan kod eklemenize olanak sağlar.  
   
--   Çiftler, biri diğerinden devralma sınıfları yeniden oluşturulması gerekir. Oluşturulan yöntemler ve Özellikler taban sınıf içermelidir ve yalnızca oluşturucuları türetilmiş bir sınıf içermelidir. Bu, elle yazılmış kodunuzu oluşturulan yöntemleri geçersiz kılmak sağlar.  
+- Çiftler, biri diğerinden devralma sınıfları yeniden oluşturulması gerekir. Oluşturulan yöntemler ve Özellikler taban sınıf içermelidir ve yalnızca oluşturucuları türetilmiş bir sınıf içermelidir. Bu, elle yazılmış kodunuzu oluşturulan yöntemleri geçersiz kılmak sağlar.  
   
- XML gibi diğer oluşturulan dillerde, kullanın `<#@include#>` elle yazılmış ve oluşturulan içerik basit birleşimlerini yapmak yönergesi. Daha karmaşık durumlarda elle yazılmış dosyalarla birlikte oluşturulan dosyanın birleştiren bir sonradan işleme adımı yazmak zorunda kalabilirsiniz.  
+  XML gibi diğer oluşturulan dillerde, kullanın `<#@include#>` elle yazılmış ve oluşturulan içerik basit birleşimlerini yapmak yönergesi. Daha karmaşık durumlarda elle yazılmış dosyalarla birlikte oluşturulan dosyanın birleştiren bir sonradan işleme adımı yazmak zorunda kalabilirsiniz.  
   
- Ortak malzeme dosyaları veya çalışma zamanı şablonları taşıyın  
- Metin ve birden fazla şablon içinde kod bloklarını benzer tekrarlamayı önlemek üzere kullanmak `<#@ include #>` yönergesi. Daha fazla bilgi için [T4 dahil yönergesi](../modeling/t4-include-directive.md).  
+  Ortak malzeme dosyaları veya çalışma zamanı şablonları taşıyın  
+  Metin ve birden fazla şablon içinde kod bloklarını benzer tekrarlamayı önlemek üzere kullanmak `<#@ include #>` yönergesi. Daha fazla bilgi için [T4 dahil yönergesi](../modeling/t4-include-directive.md).  
   
- Ayrıca ayrı proje çalışma zamanı metin şablonları oluşturun ve ardından bunları tasarım zamanı şablonu çağırmak. Bunu yapmak için `<#@ assembly #>` ayrı proje erişmeye yönergesi. Örnekler için bkz ["Devralma içinde metin şablonlarında" Gareth Jones'un Blogundaki](http://go.microsoft.com/fwlink/?LinkId=208373).  
+  Ayrıca ayrı proje çalışma zamanı metin şablonları oluşturun ve ardından bunları tasarım zamanı şablonu çağırmak. Bunu yapmak için `<#@ assembly #>` ayrı proje erişmeye yönergesi. Örnekler için bkz ["Devralma içinde metin şablonlarında" Gareth Jones'un Blogundaki](http://go.microsoft.com/fwlink/?LinkId=208373).  
   
- Büyük kod bloklarının ayrı bir derleme içine taşımayı düşünün.  
- Büyük kod blokları ve sınıf özelliği bloklarını varsa, bu kod bazıları ayrı bir projede derleme yöntemlerde taşımak kullanışlı olabilir. Kullanabileceğiniz `<#@ assembly #>` yönergesi şablonu kodda erişmek için. Daha fazla bilgi için [T4 derleme yönergesi](../modeling/t4-assembly-directive.md).  
+  Büyük kod bloklarının ayrı bir derleme içine taşımayı düşünün.  
+  Büyük kod blokları ve sınıf özelliği bloklarını varsa, bu kod bazıları ayrı bir projede derleme yöntemlerde taşımak kullanışlı olabilir. Kullanabileceğiniz `<#@ assembly #>` yönergesi şablonu kodda erişmek için. Daha fazla bilgi için [T4 derleme yönergesi](../modeling/t4-assembly-directive.md).  
   
- Şablon devralabilir soyut bir sınıf yöntemleri koyabilirsiniz. Soyut sınıf devralmalıdır <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Daha fazla bilgi için [T4 şablon yönergesi](../modeling/t4-template-directive.md).  
+  Şablon devralabilir soyut bir sınıf yöntemleri koyabilirsiniz. Soyut sınıf devralmalıdır <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Daha fazla bilgi için [T4 şablon yönergesi](../modeling/t4-template-directive.md).  
   
- Kod, yapılandırma dosyalarını oluşturma  
- Değişken uygulama yazmanın bir yöntemi, bir yapılandırma dosyası kabul eden genel program kod yazmaktır. Bu şekilde yazılmış bir uygulama, çok esnektir ve iş gereksinimleri değiştiğinde uygulama derlenmeden yapılandırılabilen. Ancak, bu yaklaşımın bir dezavantajı, uygulama daha belirli bir uygulamadan daha az iyi gerçekleştirir olur. Ayrıca, kısmen her zaman en genel türlerle dağıtılacak olduğundan, program kodu okuma ve bakımı daha zor olacaktır.  
+  Kod, yapılandırma dosyalarını oluşturma  
+  Değişken uygulama yazmanın bir yöntemi, bir yapılandırma dosyası kabul eden genel program kod yazmaktır. Bu şekilde yazılmış bir uygulama, çok esnektir ve iş gereksinimleri değiştiğinde uygulama derlenmeden yapılandırılabilen. Ancak, bu yaklaşımın bir dezavantajı, uygulama daha belirli bir uygulamadan daha az iyi gerçekleştirir olur. Ayrıca, kısmen her zaman en genel türlerle dağıtılacak olduğundan, program kodu okuma ve bakımı daha zor olacaktır.  
   
- Bunun aksine, değişken olan bölümleri derleme önce oluşturulan uygulama türü kesin belirlenmiş. Bu yazılım çok daha kolay ve daha güvenilir bir elle yazılmış kod yazma ve oluşturulan ile tümleştirmek için bölümleri sağlar.  
+  Bunun aksine, değişken olan bölümleri derleme önce oluşturulan uygulama türü kesin belirlenmiş. Bu yazılım çok daha kolay ve daha güvenilir bir elle yazılmış kod yazma ve oluşturulan ile tümleştirmek için bölümleri sağlar.  
   
- Kod oluşturma tüm avantajlarını elde etmek için program kodu yerine yapılandırma dosyalarını oluşturmak deneyin.  
+  Kod oluşturma tüm avantajlarını elde etmek için program kodu yerine yapılandırma dosyalarını oluşturmak deneyin.  
   
- Oluşturulan kod klasörü kullanın  
- Şablonlar ve oluşturulan dosyalar adlı bir proje klasörüne yerleştirin **oluşturulan kodu**, bunu yapmak için bunları doğrudan düzenlenemez dosyaların olmadığını temizleyin. Oluşturulan sınıfları eklemek veya geçersiz kılmak için özel kod oluşturursanız, bu sınıflar adlı bir klasöre yerleştirin **özel kod**. Tipik bir proje yapısını şöyle görünür:  
+  Oluşturulan kod klasörü kullanın  
+  Şablonlar ve oluşturulan dosyalar adlı bir proje klasörüne yerleştirin **oluşturulan kodu**, bunu yapmak için bunları doğrudan düzenlenemez dosyaların olmadığını temizleyin. Oluşturulan sınıfları eklemek veya geçersiz kılmak için özel kod oluşturursanız, bu sınıflar adlı bir klasöre yerleştirin **özel kod**. Tipik bir proje yapısını şöyle görünür:  
   
 ```  
 MyProject  

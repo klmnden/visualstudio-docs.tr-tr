@@ -15,33 +15,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97e2e745b59a22110f6392e2cd6fec1aea0a667a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: aec22a1312ec4b3ee404b9f701f1f34264d79dff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750239"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894748"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003: Pek çok çekirdek örneği
+
 |||  
 |-|-|  
 |Kural Kimliği|DA0003|  
 |Kategori|Profil oluşturma araçları kullanım|  
 |Profil oluşturma yöntemleri|Örnekleme|  
-|İleti|Yüksek oranda örnekleri çekirdek modunda sahip. Bu, g/ç etkinliğini hacmi yüksek veya yüksek oranda bir içerik geçişi gösterebilir. Profil oluşturma araçları modunu kullanarak yeniden uygulamanız göz önünde bulundurun.|  
+|İleti|Çekirdek modunda bir yüksek oranda örnekleri var. Bu, yüksek hacimli g/ç etkinliğinin veya yüksek oranda bağlam belirtebilir. Uygulamanızı Instrumentation Mode kullanarak yeniden profil oluşturmayı göz önünde bulundurun.|  
 |Kural türü|Bilgiler|  
-  
+
 ## <a name="cause"></a>Sebep  
- Uygulama için toplanan çağrı yığını örnekleri önemli bir kısmının çekirdek modunda yürütülüyor. Farklı bir profil oluşturma yöntemi kullanarak uygulamanızı profil göz önünde bulundurun.  
-  
+ Uygulama için toplanan çağrı yığını örnekleri önemli bir kısmı çekirdek modunda yürütülüyor. Farklı bir profil oluşturma yöntemini kullanarak uygulamanızın profilini oluşturmanız göz önünde bulundurun.  
+
 ## <a name="rule-description"></a>Kural açıklaması  
- Windows, çekirdek modu veya kullanıcı modunda kod çalıştırılabilir. (Çekirdek modu da ayrıcalıklı modu olarak adlandırılır.) Bir aygıt sürücüsü gibi alt düzey sistem kodu yalnızca çekirdek modunda çalışır. Bir kullanıcı modu uygulaması için iş parçacığı veya işlem eşitleme temelleri bekleyin ya da sistem çağrıları yapmak için g/ç işlemleri gerçekleştirmek için çekirdek moduna geçiş yapabilir.  
-  
- Profil oluşturma çoğu kullanıcı modunda çalışarak zamanlarının harcamanız uygulamaları örnekleme en etkilidir. Uygulama çekirdek modunda yürütülürken toplanan örnek sayısını sık g/ç işlemleri belirtebilir veya anahtarları oluşan bu bağlamı gösterebilir. Bu işlemlerin hiçbiri örnekleme yöntemini kullanarak araştırılması. Çok fazla sayıda çekirdek modu örneği alınır, örnekleme verileri istatistiksel olarak önemli olacak yeterli kullanıcı modu örnek içerebilir.  
-  
-## <a name="how-to-fix-violations"></a>İhlallerini düzeltmek nasıl  
- Aşağıdaki seçeneklerden birini kullanarak yeniden uygulamanız profil göz önünde bulundurun:  
-  
--   İzleme metodunu kullanarak profil.  
-  
--   Daha fazla örnekleri kullanıcı modunda toplanacak denemek için örnekleme hızını artırır.
+ Windows çekirdek modu veya kullanıcı modu kod çalıştırılabilir. (Çekirdek modu da ayrıcalıklı modu olarak adlandırılır.) Bir aygıt sürücüsü gibi alt düzey sistem kodu yalnızca çekirdek modunda çalışır. Bir kullanıcı modu uygulaması için iş parçacığı veya işlem eşitleme temellerine bekleyin ya da sistem çağrıları yapmak için g/ç işlemleri gerçekleştirmek için çekirdek moduna geçiş yapabilirsiniz.  
+
+ Örnekleme, kullanıcı modunda çalışmayı yapan zamanlarının çoğunu harcama uygulamaları profil oluştururken en etkili olur. Uygulama çekirdek modunda yürütülürken toplanan örneklerin sayısı sık g/ç işlemleri belirtebilir veya anahtarlarının oluşan bu bağlamı gösterebilir. Bu işlemlerin hiçbiri örnekleme metodu kullanılarak araştırılabilir. Çok fazla sayıda çekirdek modu örneği alınır, örnekleme verileri istatistiksel açıdan anlamlı olması için yeterli kullanıcı modu örnekleri içerebilir.  
+
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?  
+ Uygulamanız aşağıdaki seçeneklerden birini kullanarak yeniden profil oluşturmayı göz önünde bulundurun:  
+
+-   İzleme metodunu kullanarak profili.  
+
+-   Daha fazla örnek kullanıcı modunda toplanacak denemek için örnekleme hızını artırın.

@@ -20,12 +20,12 @@ caps.latest.revision: 59
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: afe7f71508de6dca3d29afeead23258eccbc667b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75ec3e300b0d85b066692a9d67c1bcce39198a79
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247188"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867383"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio'daki Klavye Kısayolları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -799,113 +799,113 @@ Visual Studio'da uygun klavye kısayolunu kullanarak çeşitli komutlara ve penc
   
 ##  <a name="bkmk_TextEditor"></a> Metin Düzenleyici  
   
-|Komutlar|Klavye Kısayolları|  
-|--------------|------------------------|  
-|Edit.BreakLine|Enter<br /><br /> veya<br /><br /> Shift+Enter|  
-|Edit.CharLeft|Sol Ok|  
-|Edit.CharLeftExtend|Shift+Sol Ok|  
-|Edit.CharLeftExtendColumn|Shift+Alt+Sol Ok|  
-|Edit.CharRight|Sağ Ok|  
-|Edit.CharRightExtend|Shift+Sağ Ok|  
-|Edit.CharRightExtendColumn|Shift+Alt+Sağ Ok|  
-|Edit.CharTranspose|Ctrl+T|  
-|Edit.ClearBookmarks|Ctrl+K, Ctrl+L|  
-|Edit.CollapseAllOutlining|Ctrl+M, Ctrl+A|  
-|Edit.CollapseCurrentRegion|Ctrl+M, Ctrl+S|  
-|Edit.CollapseTag|Ctrl+M, Ctrl+T|  
-|Edit.CollapsetoDefinitions|Ctrl+M, Ctrl+O|  
-|Edit.CommentSelection|Ctrl+K, Ctrl+C|  
-|Edit.CompleteWord|Ctrl+Ara Çubuğu<br /><br /> veya<br /><br /> Alt+Sağ Ok|  
-|Edit.CopyParameterTip|Ctrl+Shift+Alt+C|  
-|Edit.DecreaseFilterLevel|Alt+,|  
-|Edit.DeleteBackwards|Geri Al tuşu<br /><br /> veya<br /><br /> Shift+Geri Al tuşu|  
-|Edit.DeleteHorizontalWhiteSpace|Ctrl+K, Ctrl+\|  
-|Edit.DocumentEnd|Ctrl+End|  
-|Edit.DocumentEndExtend|Ctrl+Shift+End|  
-|Edit.DocumentStart|Ctrl+Home|  
-|Edit.DocumentStartExtend|Ctrl+Shift+Home|  
-|Edit.ExpandAllOutlining|Ctrl+M, Ctrl+X|  
-|Edit.ExpandCurrentRegion|Ctrl+M, Ctrl+E|  
-|Edit.FormatDocument|Ctrl+K, Ctrl+D|  
-|Edit.FormatSelection|Ctrl+K, Ctrl+F|  
-|Edit.GotoBrace|Ctrl+]|  
-|Edit.GotoBraceExtend|Ctrl+Shift+]|  
-|Edit.HideSelection|Ctrl+M, Ctrl+H|  
-|Edit.IncreaseFilterLevel|Alt+.|  
-|Edit.IncrementalSearch|Ctrl+I|  
-|Edit.InsertTab|Tab|  
-|Edit.LineCut|Ctrl+L|  
-|Edit.LineDelete|Ctrl+Shift+L|  
-|Edit.LineDown|Aşağı Ok|  
-|Edit.LineDownExtend|Shift+Aşağı Ok|  
-|Edit.LineDownExtendColumn|Shift+Alt+Aşağı Ok|  
-|Edit.LineEnd|End|  
-|Edit.LineEndExtend|Shift+End|  
-|Edit.LineEndExtendColumn|Shift+Alt+End|  
-|Edit.LineOpenAbove|Ctrl+Enter|  
-|Edit.LineOpenBelow|Ctrl+Shift+Enter|  
-|Edit.LineStart|Ana Sayfası|  
-|Edit.LineStartExtend|Shift+Home|  
-|Edit.LineStartExtendColumn|Shift+Alt+Home|  
-|Edit.LineTranspose|Shift+Alt+T|  
-|Edit.LineUp|Yukarı Ok|  
-|Edit.LineUpExtend|Shift+Yukarı Ok|  
-|Edit.LineUpExtendColumn|Shift+Alt+Yukarı Ok|  
-|Edit.ListMembers|Ctrl+J|  
-|Edit.MakeLowercase|Ctrl+U|  
-|Edit.MakeUppercase|Ctrl+Shift+U|  
-|Edit.MoveSelectedLinesDown|Alt+Aşağı Ok|  
-|Edit.MoveSelectedLinesUp|Alt+Yukarı Ok|  
-|Edit.NextHighlightedReference|Ctrl+Shift+Aşağı Ok|  
-|Edit.OvertypeMode|Ekleme|  
-|Edit.PageDown|PgDn|  
-|Edit.PageDownExtend|Shift+PgDn|  
-|Edit.PageUp|PgUp|  
-|Edit.PageUpExtend|Shift+PgUp|  
-|Edit.ParameterInfo|Ctrl+Shift+Ara Çubuğu|  
-|Edit.PasteParameterTip|Ctrl+Shift+Alt+P|  
-|Edit.PeekBackward|Ctrl+Alt+-|  
-|Edit.PeekDefinition|Alt+F12|  
-|Edit.PeekForward|Ctrl+Alt+=|  
-|Edit.PreviousHighlightedReference|Ctrl+Shift+Yukarı Ok|  
-|Edit.QuickInfo|Ctrl+K, Ctrl+I|  
-|Edit.ReverseIncrementalSearch|Ctrl+Shift+I|  
-|Edit.ScrollLineDown|Ctrl+Aşağı Ok|  
-|Edit.ScrollLineUp|Ctrl+Yukarı Ok|  
-|Edit.SelectCurrentWord|Ctrl+W|  
-|Edit.SelectionCancel|Esc|  
-|Edit.SelectToLastGoBack|Ctrl+=|  
-|Edit.ShowCodeLensMenu|Alt+`|  
-|Edit.StopHidingCurrent|Ctrl+M, Ctrl+U|  
-|Edit.StopOutlining|Ctrl+M, Ctrl+P|  
-|Edit.SwapAnchor|Ctrl+K, Ctrl+A|  
-|Edit.TabLeft|Shift+Sekme Tuşu|  
-|Edit.ToggleAllOutlining|Ctrl+M, Ctrl+L|  
-|Edit.ToggleBookmark|Ctrl+K, Ctrl+K|  
-|Edit.ToggleCompletionMode|Ctrl+Alt+Ara Çubuğu|  
-|Edit.ToggleOutliningExpansion|Ctrl+M, Ctrl+M|  
-|Edit.ToggleTaskListShortcut|Ctrl+K, Ctrl+H|  
-|Edit.ToggleWordWrap|Ctrl+E, Ctrl+W|  
-|Edit.UncommentSelection|Ctrl+K, Ctrl+U|  
-|Edit.ViewBottom|Ctrl+PgDn|  
-|Edit.ViewBottomExtend|Ctrl+Shift+PgDn|  
-|Edit.ViewTop|Ctrl+PgUp|  
-|Edit.ViewTopExtend|Ctrl+Shift+PgUp|  
-|Edit.ViewWhiteSpace|Ctrl+R, Ctrl+W|  
-|Edit.WordDeleteToEnd|Ctrl+Delete|  
-|Edit.WordDeleteToStart|Ctrl+Geri Al tuşu|  
-|Edit.WordNext|Ctrl+Sağ Ok|  
-|Edit.WordNextExtend|Ctrl+Shift+Sağ Ok|  
-|Edit.WordNextExtendColumn|Ctrl+Shift+Alt+Sağ Ok|  
-|Edit.WordPrevious|Ctrl+Sol Ok|  
-|Edit.WordPreviousExtend|Ctrl+Shift+Sol Ok|  
-|Edit.WordPreviousExtendColumn|Ctrl+Shift+Alt+Sol Ok|  
-|Edit.WordTranspose|Ctrl+Shift+T|  
-|EditorContextMenus.CodeWindow.ExecuteInInteractive|Alt+Enter|  
-|EditorContextMenus.CodeWindow.ExecuteLineInInteractive|Alt+'|  
-|OtherContextMenus.HTMLContext.ViewinPageInspector|Ctrl+K, Ctrl+G|  
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion|Alt+PgDn|  
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion|Alt+PgUp|  
+|                             Komutlar                              |                  Klavye Kısayolları                   |
+|-------------------------------------------------------------------|-------------------------------------------------------|
+|                          Edit.BreakLine                           |     Enter<br /><br /> veya<br /><br /> Shift+Enter      |
+|                           Edit.CharLeft                           |                      Sol Ok                       |
+|                        Edit.CharLeftExtend                        |                   Shift+Sol Ok                    |
+|                     Edit.CharLeftExtendColumn                     |                 Shift+Alt+Sol Ok                  |
+|                          Edit.CharRight                           |                      Sağ Ok                      |
+|                       Edit.CharRightExtend                        |                   Shift+Sağ Ok                   |
+|                    Edit.CharRightExtendColumn                     |                 Shift+Alt+Sağ Ok                 |
+|                        Edit.CharTranspose                         |                        Ctrl+T                         |
+|                        Edit.ClearBookmarks                        |                    Ctrl+K, Ctrl+L                     |
+|                     Edit.CollapseAllOutlining                     |                    Ctrl+M, Ctrl+A                     |
+|                    Edit.CollapseCurrentRegion                     |                    Ctrl+M, Ctrl+S                     |
+|                         Edit.CollapseTag                          |                    Ctrl+M, Ctrl+T                     |
+|                    Edit.CollapsetoDefinitions                     |                    Ctrl+M, Ctrl+O                     |
+|                       Edit.CommentSelection                       |                    Ctrl+K, Ctrl+C                     |
+|                         Edit.CompleteWord                         | Ctrl+Ara Çubuğu<br /><br /> veya<br /><br /> Alt+Sağ Ok |
+|                       Edit.CopyParameterTip                       |                   Ctrl+Shift+Alt+C                    |
+|                     Edit.DecreaseFilterLevel                      |                         Alt+,                         |
+|                       Edit.DeleteBackwards                        |   Geri Al tuşu<br /><br /> veya<br /><br /> Shift+Geri Al tuşu   |
+|                  Edit.DeleteHorizontalWhiteSpace                  |                    Ctrl+K, Ctrl+\                     |
+|                         Edit.DocumentEnd                          |                       Ctrl+End                        |
+|                      Edit.DocumentEndExtend                       |                    Ctrl+Shift+End                     |
+|                        Edit.DocumentStart                         |                       Ctrl+Home                       |
+|                     Edit.DocumentStartExtend                      |                    Ctrl+Shift+Home                    |
+|                      Edit.ExpandAllOutlining                      |                    Ctrl+M, Ctrl+X                     |
+|                     Edit.ExpandCurrentRegion                      |                    Ctrl+M, Ctrl+E                     |
+|                        Edit.FormatDocument                        |                    Ctrl+K, Ctrl+D                     |
+|                       Edit.FormatSelection                        |                    Ctrl+K, Ctrl+F                     |
+|                          Edit.GotoBrace                           |                        Ctrl+]                         |
+|                       Edit.GotoBraceExtend                        |                     Ctrl+Shift+]                      |
+|                        Edit.HideSelection                         |                    Ctrl+M, Ctrl+H                     |
+|                     Edit.IncreaseFilterLevel                      |                         Alt+.                         |
+|                      Edit.IncrementalSearch                       |                        Ctrl+I                         |
+|                          Edit.InsertTab                           |                          Tab                          |
+|                           Edit.LineCut                            |                        Ctrl+L                         |
+|                          Edit.LineDelete                          |                     Ctrl+Shift+L                      |
+|                           Edit.LineDown                           |                      Aşağı Ok                       |
+|                        Edit.LineDownExtend                        |                   Shift+Aşağı Ok                    |
+|                     Edit.LineDownExtendColumn                     |                 Shift+Alt+Aşağı Ok                  |
+|                           Edit.LineEnd                            |                          End                          |
+|                        Edit.LineEndExtend                         |                       Shift+End                       |
+|                     Edit.LineEndExtendColumn                      |                     Shift+Alt+End                     |
+|                        Edit.LineOpenAbove                         |                      Ctrl+Enter                       |
+|                        Edit.LineOpenBelow                         |                   Ctrl+Shift+Enter                    |
+|                          Edit.LineStart                           |                         Ana Sayfası                          |
+|                       Edit.LineStartExtend                        |                      Shift+Home                       |
+|                    Edit.LineStartExtendColumn                     |                    Shift+Alt+Home                     |
+|                        Edit.LineTranspose                         |                      Shift+Alt+T                      |
+|                            Edit.LineUp                            |                       Yukarı Ok                        |
+|                         Edit.LineUpExtend                         |                    Shift+Yukarı Ok                     |
+|                      Edit.LineUpExtendColumn                      |                  Shift+Alt+Yukarı Ok                   |
+|                         Edit.ListMembers                          |                        Ctrl+J                         |
+|                        Edit.MakeLowercase                         |                        Ctrl+U                         |
+|                        Edit.MakeUppercase                         |                     Ctrl+Shift+U                      |
+|                    Edit.MoveSelectedLinesDown                     |                    Alt+Aşağı Ok                     |
+|                     Edit.MoveSelectedLinesUp                      |                     Alt+Yukarı Ok                      |
+|                   Edit.NextHighlightedReference                   |                 Ctrl+Shift+Aşağı Ok                 |
+|                         Edit.OvertypeMode                         |                        Ekleme                         |
+|                           Edit.PageDown                           |                         PgDn                          |
+|                        Edit.PageDownExtend                        |                      Shift+PgDn                       |
+|                            Edit.PageUp                            |                         PgUp                          |
+|                         Edit.PageUpExtend                         |                      Shift+PgUp                       |
+|                        Edit.ParameterInfo                         |                  Ctrl+Shift+Ara Çubuğu                  |
+|                      Edit.PasteParameterTip                       |                   Ctrl+Shift+Alt+P                    |
+|                         Edit.PeekBackward                         |                      Ctrl+Alt+-                       |
+|                        Edit.PeekDefinition                        |                        Alt+F12                        |
+|                         Edit.PeekForward                          |                      Ctrl+Alt+=                       |
+|                 Edit.PreviousHighlightedReference                 |                  Ctrl+Shift+Yukarı Ok                  |
+|                          Edit.QuickInfo                           |                    Ctrl+K, Ctrl+I                     |
+|                   Edit.ReverseIncrementalSearch                   |                     Ctrl+Shift+I                      |
+|                        Edit.ScrollLineDown                        |                    Ctrl+Aşağı Ok                    |
+|                         Edit.ScrollLineUp                         |                     Ctrl+Yukarı Ok                     |
+|                      Edit.SelectCurrentWord                       |                        Ctrl+W                         |
+|                       Edit.SelectionCancel                        |                        Esc                         |
+|                      Edit.SelectToLastGoBack                      |                        Ctrl+=                         |
+|                       Edit.ShowCodeLensMenu                       |                        Alt +\`                         |
+|                      Edit.StopHidingCurrent                       |                    Ctrl+M, Ctrl+U                     |
+|                        Edit.StopOutlining                         |                    Ctrl+M, Ctrl+P                     |
+|                          Edit.SwapAnchor                          |                    Ctrl+K, Ctrl+A                     |
+|                           Edit.TabLeft                            |                       Shift+Sekme Tuşu                       |
+|                      Edit.ToggleAllOutlining                      |                    Ctrl+M, Ctrl+L                     |
+|                        Edit.ToggleBookmark                        |                    Ctrl+K, Ctrl+K                     |
+|                     Edit.ToggleCompletionMode                     |                    Ctrl+Alt+Ara Çubuğu                     |
+|                   Edit.ToggleOutliningExpansion                   |                    Ctrl+M, Ctrl+M                     |
+|                    Edit.ToggleTaskListShortcut                    |                    Ctrl+K, Ctrl+H                     |
+|                        Edit.ToggleWordWrap                        |                    Ctrl+E, Ctrl+W                     |
+|                      Edit.UncommentSelection                      |                    Ctrl+K, Ctrl+U                     |
+|                          Edit.ViewBottom                          |                       Ctrl+PgDn                       |
+|                       Edit.ViewBottomExtend                       |                    Ctrl+Shift+PgDn                    |
+|                           Edit.ViewTop                            |                       Ctrl+PgUp                       |
+|                        Edit.ViewTopExtend                         |                    Ctrl+Shift+PgUp                    |
+|                        Edit.ViewWhiteSpace                        |                    Ctrl+R, Ctrl+W                     |
+|                       Edit.WordDeleteToEnd                        |                      Ctrl+Delete                      |
+|                      Edit.WordDeleteToStart                       |                    Ctrl+Geri Al tuşu                     |
+|                           Edit.WordNext                           |                   Ctrl+Sağ Ok                    |
+|                        Edit.WordNextExtend                        |                Ctrl+Shift+Sağ Ok                 |
+|                     Edit.WordNextExtendColumn                     |              Ctrl+Shift+Alt+Sağ Ok               |
+|                         Edit.WordPrevious                         |                    Ctrl+Sol Ok                    |
+|                      Edit.WordPreviousExtend                      |                 Ctrl+Shift+Sol Ok                 |
+|                   Edit.WordPreviousExtendColumn                   |               Ctrl+Shift+Alt+Sol Ok               |
+|                        Edit.WordTranspose                         |                     Ctrl+Shift+T                      |
+|        EditorContextMenus.CodeWindow.ExecuteInInteractive         |                       Alt+Enter                       |
+|      EditorContextMenus.CodeWindow.ExecuteLineInInteractive       |                         Alt+'                         |
+|         OtherContextMenus.HTMLContext.ViewinPageInspector         |                    Ctrl+K, Ctrl+G                     |
+|   TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion   |                       Alt+PgDn                        |
+| TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion |                       Alt+PgUp                        |
   
 ##  <a name="bkmk_UMLactivityDiagram"></a> UML etkinlik diyagramı  
   

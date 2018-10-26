@@ -20,12 +20,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: f91fa126c066d3c028cb7e634468ab8b455c8e30
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a7f39e3210d898e07f96f3ff787915953148e008
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250724"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833609"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Bir Windows Evrensel uygulaması CPU kullanımını analiz etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,27 +55,27 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 ##  <a name="BKMK_Collect_CPU_usage_data"></a> CPU kullanım verileri toplama  
  ![Uygulamanın bir yayın derlemesinin simulator'da çalıştırmak](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
-1.  Visual Studio'da dağıtım hedefini ayarlamak **simülatör** ve çözüm yapılandırması için **yayın**.  
+1. Visual Studio'da dağıtım hedefini ayarlamak **simülatör** ve çözüm yapılandırması için **yayın**.  
   
-    -   Uygulama simülatörde çalıştırılan uygulama ve Visual Studio IDE arasında kolayca geçiş olanak tanır.  
+   -   Uygulama simülatörde çalıştırılan uygulama ve Visual Studio IDE arasında kolayca geçiş olanak tanır.  
   
-    -   Bu uygulamayı çalışır durumda **yayın** modu gerçek uygulamanızın performansını daha iyi bir görünümünü sağlar.  
+   -   Bu uygulamayı çalışır durumda **yayın** modu gerçek uygulamanızın performansını daha iyi bir görünümünü sağlar.  
   
-2.  Üzerinde **hata ayıklama** menüsünde seçin **performans Profiler...** .  
+2. Üzerinde **hata ayıklama** menüsünde seçin **performans Profiler...** .  
   
-3.  Performans ve tanılama hub'ı seçin **CPU kullanımı** seçip **Başlat**.  
+3. Performans ve tanılama hub'ı seçin **CPU kullanımı** seçip **Başlat**.  
   
-     ![CpuUsage Tanılama oturumu başlatmak](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
+    ![CpuUsage Tanılama oturumu başlatmak](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
   
-4.  Uygulama başlatıldığında tıklayın **alma sınırı**. Çıkış görüntülendikten sonra ikinci bir bekleyin ve ardından **alma en fazla sayı Async**. Düğme tıklamaları yapar bekleyen düğme yalıtmak daha kolay tıklayın tanılama raporu yordamları.  
+4. Uygulama başlatıldığında tıklayın **alma sınırı**. Çıkış görüntülendikten sonra ikinci bir bekleyin ve ardından **alma en fazla sayı Async**. Düğme tıklamaları yapar bekleyen düğme yalıtmak daha kolay tıklayın tanılama raporu yordamları.  
   
-5.  İkinci çıktı satırı göründükten sonra seçin **toplamasını Durdur** performans ve tanılama hub'ında.  
+5. İkinci çıktı satırı göründükten sonra seçin **toplamasını Durdur** performans ve tanılama hub'ında.  
   
- ![CpuUsage veri toplamayı Durdur](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![CpuUsage veri toplamayı Durdur](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
   
- CPU kullanımı aracı verileri çözümler ve rapor görüntüler.  
+   CPU kullanımı aracı verileri çözümler ve rapor görüntüler.  
   
- ![CpuUsage rapor](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
+   ![CpuUsage rapor](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
 ##  <a name="BKMK_Analyze_the_CPU_Usage_report"></a> CPU kullanımı raporunu analiz etme  
   

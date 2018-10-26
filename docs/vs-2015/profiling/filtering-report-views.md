@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79df08496cfa0e15f2caa648afcb1ee78c636d56
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2054181bfd34e9f9382391c879030e147ce2b8d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238296"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878459"
 ---
 # <a name="filtering-report-views"></a>Rapor Görünümlerini Filtreleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,19 +53,19 @@ Profil oluşturma performans raporu görünümlerde görüntülenmesi ve rapor d
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Bir profil oluşturucu rapor filtresi işaretleri rapor görünümünde oluşturmak için  
   
-1.  Seçin **işaretleri** gelen **Geçerli Görünüm** performans raporu Görünüm araç çubuğundaki listesi.  
+1. Seçin **işaretleri** gelen **Geçerli Görünüm** performans raporu Görünüm araç çubuğundaki listesi.  
   
-     İşaretler profil oluşturucu rapor görüntülenir.  
+    İşaretler profil oluşturucu rapor görüntülenir.  
   
-2.  ETW ve örnekleme bile, raporun başlangıç noktası olarak kullanmak istediğiniz seçin.  
+2. ETW ve örnekleme bile, raporun başlangıç noktası olarak kullanmak istediğiniz seçin.  
   
-3.  Tuşuna basın ve CTRL basılı tutun ve raporun bitiş noktası olarak kullanmak istediğiniz bir etkinliğe tıklayın.  
+3. Tuşuna basın ve CTRL basılı tutun ve raporun bitiş noktası olarak kullanmak istediğiniz bir etkinliğe tıklayın.  
   
-4.  Sağ tıklayın ve sonra aşağıdaki seçeneklerden birine tıklayın:  
+4. Sağ tıklayın ve sonra aşağıdaki seçeneklerden birine tıklayın:  
   
-    -   **Filtre işaretlerini Ekle** işareti sütunu Filtre alanını kullanan filtre yan tümcesi oluşturur.  
+   - **Filtre işaretlerini Ekle** işareti sütunu Filtre alanını kullanan filtre yan tümcesi oluşturur.  
   
-    -   **Üzerinde zaman damgalarına Filtre Ekle** içindeki zaman damgası milisaniye sütun filtresi alan olarak kullanan bir filtre yan tümcesi oluşturur.  
+   - **Üzerinde zaman damgalarına Filtre Ekle** içindeki zaman damgası milisaniye sütun filtresi alan olarak kullanan bir filtre yan tümcesi oluşturur.  
   
      İki seçenek, aynı başlangıç ve bitiş noktalarını geçerli veri dosyası filtreleyin. İki seçenekten birini diğer raporlarda kullanmak için filtreyi dışarı aktarırsanız daha iyi olabilir.  
   

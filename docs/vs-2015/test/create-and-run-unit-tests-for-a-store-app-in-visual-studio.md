@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: ea2cf8293a0969a152e38304b469e0b4042073c0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dc5c40fbabcba4e9f8aab230f21449cabba2a622
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249515"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891238"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Oluşturma ve Visual Studio'da bir Store uygulaması için birim testleri çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,12 +30,12 @@ Visual Studio 2012 Express Windows 8 için birim testi araçları, geliştiricil
   
 > [!NOTE]
 >  Bu bölümdeki konular, Visual Studio 2012 Express Windows 8 için işlevselliğini açıklar. Visual Studio Ultimate, VS Premium ve Professional VS birim testi için ek özellikler sağlar.  
->   
->  -   VS Ultimate, Premium VS ve VS Professional içinde bir eklenti bağdaştırıcısı Microsoft Test Gezgini için oluşturduğu tüm üçüncü taraf veya açık kaynak birim testi çerçevesini kullanabilirsiniz. Ayrıca, analiz ve testlerinizi ile VS Ultimate ve VS Premium için kod kapsamı bilgileri görüntüleyebilirsiniz.  
-> -   VS Ultimate içinde testlerinizi her yapıdan sonra çalıştırabilirsiniz. Microsoft Fakes, testlerinizi, sistem ve üçüncü taraf işlevselliği için test kodu değiştirerek kendi kodlarına odaklanmasını yönetilen kod için bir yalıtım çerçevesi de kullanabilirsiniz.  
-> -   **JavaScript**. JavaScript birim testi, IDE, Visual Studio Express için Windows 8'den kullanılamıyor. JavaScript birim testi çerçevelerini Visual Studio Professional, Premium ve Ultimate, Visual Studio Galerisi uzantıları olarak kullanılabilir. Ayrıca, bağımsız üçüncü taraf birini kullanarak JavaScript kodu test veya kaynak JavaScript birim testi çerçevelerini açın.  
->   
->  Daha fazla bilgi için [Birim Test kodunuzu](../test/unit-test-your-code.md) MSDN Kitaplığı'nda.  
+> 
+> - VS Ultimate, Premium VS ve VS Professional içinde bir eklenti bağdaştırıcısı Microsoft Test Gezgini için oluşturduğu tüm üçüncü taraf veya açık kaynak birim testi çerçevesini kullanabilirsiniz. Ayrıca, analiz ve testlerinizi ile VS Ultimate ve VS Premium için kod kapsamı bilgileri görüntüleyebilirsiniz.  
+>   -   VS Ultimate içinde testlerinizi her yapıdan sonra çalıştırabilirsiniz. Microsoft Fakes, testlerinizi, sistem ve üçüncü taraf işlevselliği için test kodu değiştirerek kendi kodlarına odaklanmasını yönetilen kod için bir yalıtım çerçevesi de kullanabilirsiniz.  
+>   -   **JavaScript**. JavaScript birim testi, IDE, Visual Studio Express için Windows 8'den kullanılamıyor. JavaScript birim testi çerçevelerini Visual Studio Professional, Premium ve Ultimate, Visual Studio Galerisi uzantıları olarak kullanılabilir. Ayrıca, bağımsız üçüncü taraf birini kullanarak JavaScript kodu test veya kaynak JavaScript birim testi çerçevelerini açın.  
+> 
+>   Daha fazla bilgi için [Birim Test kodunuzu](../test/unit-test-your-code.md) MSDN Kitaplığı'nda.  
   
 ## <a name="in-this-section"></a>Bu bölümde  
  [C# birim testi sınıfı](../test/unit-testing-visual-csharp-code-in-a-store-app.md)  

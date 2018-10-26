@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 124516b0e214f1999792f40425976441bf3c9313
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3f1169ff5bc9487fc062ab7cbc6e2adb01151a19
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283500"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926156"
 ---
 # <a name="codeindex-command"></a>Codeındex komutu
 
@@ -41,13 +41,13 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 ### <a name="parameters"></a>Parametreler
 
 |**Bağımsız değişken**|**Açıklama**|
-|------------------|---------------------|
+|------------------| - |
 |`CollectionName`|Proje koleksiyonunun adını belirtir. Ad boşluk içeriyorsa, tırnak işaretleri, örneğin, "Fabrikam Web sitesi" adıyla alın.|
 |`CollectionId`|Proje koleksiyonunun kimlik numarasını belirtir.|
 |`ServerPath`|Bir kod dosyası yolunu belirtir.|
 
 |**Seçeneği**|**Açıklama**|
-|----------------|---------------------|
+|----------------| - |
 |**/indexingStatus**|Kod dizin oluşturma hizmeti yapılandırmasını ve durumunu gösterir.|
 |**/ setındexing:**[üzerinde &#124; kapalı &#124; keepuponly seçeneğinin belirtilmesini]|-   **üzerinde**: tüm değişiklik kümelerini dizine almayı Başlat.<br />-   **Kapalı**: tüm değişiklik kümelerini dizine almayı sonlandır.<br />-   **keepuponly seçeneğinin belirtilmesini**: daha önce oluşturulan değişiklik kümelerinin dizinini oluşturmayı durdurmak ve yalnızca yeni değişiklik kümelerini dizine almayı Başlat.|
 |**/ ignorelist:**[ekleme &#124; Kaldır &#124; removeAll &#124; görünümü] `ServerPath`<br /><br /> Başlangıç, bitiş veya her iki ucunda da sunucu yolu joker karakter (*) kullanabilirsiniz.|Kod dosyaları ve dizinli istemediğiniz yollarının listesini belirtir.<br /><br /> -   **ekleme**: istemediğiniz dosya dizini yok sayılan dosya listesine ekleyin.<br />-   **kaldırma**: dizinli yoksayılan dosyalar listesinden istediğiniz dosya kaldırma.<br />-   **removeAll**: yoksayılan dosya listesini temizleyin ve tüm dosyaları dizine almaya başlayın.<br />-   **Görünüm**: dizine alınmamış tüm dosyalarına bakın.|

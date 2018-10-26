@@ -28,12 +28,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1691c8cd10e74f5d139fefa5b57471c86f9e6e6c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bda1af9a47d512d2d35f509aee96cc71964a47ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193563"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912038"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Visual Studio'da Projeler ve Çözümler Oluşturma ve Temizleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,33 +70,33 @@ Bu konudaki yordamları kullanarak, derleme, yeniden veya tüm veya bazı projel
   
 ### <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Başlangıç projesi ve bağımlılıklarını oluşturma  
   
-1.  Menü çubuğunda, **Araçları**, **seçenekleri**.  
+1. Menü çubuğunda, **Araçları**, **seçenekleri**.  
   
-2.  İçinde **seçenekleri** iletişim kutusunda **projeler ve çözümler** düğümünü seçip **derleme ve çalıştırma** sayfası.  
+2. İçinde **seçenekleri** iletişim kutusunda **projeler ve çözümler** düğümünü seçip **derleme ve çalıştırma** sayfası.  
   
-     **Derleme ve çalıştırma, projeler ve çözümler, Seçenekler** iletişim kutusu açılır.  
+    **Derleme ve çalıştırma, projeler ve çözümler, Seçenekler** iletişim kutusu açılır.  
   
-3.  Seçin **çalıştırıldığında yalnızca başlangıç projelerini ve bağımlılıkları derle** onay kutusu.  
+3. Seçin **çalıştırıldığında yalnızca başlangıç projelerini ve bağımlılıkları derle** onay kutusu.  
   
-     Bu onay kutusu işaretli olduğunda, aşağıdaki adımlardan birini gerçekleştirdiğinizde yalnızca geçerli başlangıç projesi ve bağımlılıklarını oluşturulur:  
+    Bu onay kutusu işaretli olduğunda, aşağıdaki adımlardan birini gerçekleştirdiğinizde yalnızca geçerli başlangıç projesi ve bağımlılıklarını oluşturulur:  
   
-    -   Menü çubuğunda, **hata ayıklama**, **Başlat** (F5).  
+   - Menü çubuğunda, **hata ayıklama**, **Başlat** (F5).  
   
-    -   Menü çubuğunda, **derleme**, **Çözümü Derle** (CTRL + SHIFT + B).  
+   - Menü çubuğunda, **derleme**, **Çözümü Derle** (CTRL + SHIFT + B).  
   
      Bu onay kutusunun işareti kaldırıldığında, önceki komutlardan birini çalıştırdığınızda tüm projeler, bağımlılıklarını ve çözüm dosyaları oluşturulur. Varsayılan olarak, bu onay kutusu işaretli değildir.  
   
 ### <a name="to-build-only-the-selected-visual-c-project"></a>Yalnızca seçilen Visual C++ projesi oluşturmak için  
   
-1.  Seçin bir [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] proje ve ardından, menü çubuğunda, **derleme**, **yalnızca proje**ve aşağıdaki komutlardan birini:  
+1. Seçin bir [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] proje ve ardından, menü çubuğunda, **derleme**, **yalnızca proje**ve aşağıdaki komutlardan birini:  
   
-    -   **Yalnızca derleme** *ProjectName*  
+   - **Yalnızca derleme** *ProjectName*  
   
-    -   **Yalnızca yeniden** *ProjectName*  
+   - **Yalnızca yeniden** *ProjectName*  
   
-    -   **Temizleme yalnızca** *ProjectName*  
+   - **Temizleme yalnızca** *ProjectName*  
   
-    -   **Yalnızca bağlantı** *ProjectName*  
+   - **Yalnızca bağlantı** *ProjectName*  
   
      Bu komutlar yalnızca uygulanacak [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] oluşturma, yeniden oluşturma, temizlenmesi veya herhangi bir proje bağımlılıkları veya çözüm dosyaları bağlama olmadan seçtiğiniz proje. Sürümünüze bağlı [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], **yalnızca proje** alt daha fazla komut içerebilir.  
   

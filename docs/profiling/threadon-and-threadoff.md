@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19a183b9285e53a93f6fe6e44c94f5dcd14957e5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2aa23601ff1f85aa4e2d28be5664c4bccb8d2eff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677861"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828402"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn ve ThreadOff
 *VSPerfCmd.exe* **ThreadOff** ve **ThreadOn** alt komutları şüpheli işlem yöntemini kullanan komut satırı profil oluşturma oturumunda kullanılabilir yalnızca. **ThreadOff** ve **ThreadOn** duraklatma ve sürdürme belirtilen iş parçacığı profil oluşturma. **ThreadOff** iş parçacığı profil oluşturmayı durdurur ve **ThreadOn** iş parçacığı profil oluşturmaya başlar.  
@@ -26,11 +26,11 @@ ms.locfileid: "35677861"
   
  **ThreadOff** ve **ThreadOn** alt komutları da profil oluşturucu API işlevleri tarafından yönlendirilen iş parçacığı Başlat/Durdur sayısını etkiler.  
   
--   **ThreadOff** hemen iş parçacığı Başlat/Durdur sayısı 0 olarak ayarlar ve bu nedenle profil oluşturma duraklatır.  
+- **ThreadOff** hemen iş parçacığı Başlat/Durdur sayısı 0 olarak ayarlar ve bu nedenle profil oluşturma duraklatır.  
   
--   **ThreadOn** hemen iş parçacığı Başlat/Durdur sayısını 1 olarak ayarlar ve bu nedenle sürdürür profil oluşturma.  
+- **ThreadOn** hemen iş parçacığı Başlat/Durdur sayısını 1 olarak ayarlar ve bu nedenle sürdürür profil oluşturma.  
   
- Daha fazla bilgi için [Profil Araçları API'leri](../profiling/profiling-tools-apis.md).  
+  Daha fazla bilgi için [Profil Araçları API'leri](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   

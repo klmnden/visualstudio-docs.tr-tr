@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 888d446d82a2f7b5fb6d8638a1c7472378b014de
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e70c468a70d37d1d8e261844c004af785a68eb54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379266"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827941"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Nasıl yapılır: test denetleyicileri için zaman aşımı sürelerini belirtme ve test aracıları
 
@@ -29,7 +29,7 @@ Test denetleyicisi ve test aracısını hem ne kadar bunlar birbirinden veya bir
 -   Test denetleyicisi: *QTController.exe.config*
 
     |Anahtar adı|Açıklama|Değer|
-    |--------------|-----------------|-----------|
+    |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|Bağlantının kaybedildiğini düşünmeden önce aracının ping isteği için beklenecek saniye sayısını kaybolur.|"n" saniye.|
     |AgentSyncTimeoutInSeconds|Bir eşitleme test çalışması çalıştırma iptal edilmeden önce eşitlemek tüm aracılar için beklenecek saniye sayısını başlattığınızda.|"n" saniye.|
     |AgentInitializeTimeout|Test çalıştırması iptal edilmeden önce tüm aracıların beklenecek saniye ve veri toplayıcılarının testinin başında başlatmak için çalıştırın. Bu değer, veri toplayıcıları kullanıyorsanız oldukça büyük olmalıdır.|"n" saniye. Varsayılan: "120" (iki dakika).|
@@ -38,7 +38,7 @@ Test denetleyicisi ve test aracısını hem ne kadar bunlar birbirinden veya bir
 -   Test aracısı: *QTAgentService.exe.config*
 
     |Anahtar adı|Açıklama|Değer|
-    |--------------|-----------------|-----------|
+    |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|Denetleyiciyi bağlama girişimleri arasında saniye sayısı.|"n" saniye. Varsayılan: "30" (otuz saniye).|
     |RemotingTimeoutSeconds|En uzun süreyi saniye cinsinden bir çağrının sürebileceği dayanabilir.|"n" saniye. Varsayılan: "600" (on dakika).|
     |StopTestRunCallTimeoutInSeconds|Çağrının testi durdurması için beklenen saniye sayısı'nı çalıştırın.|"n" saniye. Varsayılan: "120" (iki dakika).|

@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fa0e7899e2f6e52536e2296519a1697e27a3643
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ae7b54e6311a58d93c5cc11cfc073c4032df32dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637074"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855995"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem öğesi (Visual Studio öğe şablonları)
 Öğe şablonunda içeren bir dosyayı belirtir.  
@@ -51,13 +51,13 @@ ms.locfileid: "39637074"
   
 ### <a name="attributes"></a>Öznitelikler  
   
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|`SubType`|İsteğe bağlı öznitelik.<br /><br /> Çok dosyalı öğe şablonunda alt öğenin türünü belirtir. Bu değer Düzenleyicisi belirlemek için kullanılır, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] öğesini açmak için kullanır.|  
-|`CustomTool`|İsteğe bağlı öznitelik.<br /><br /> Proje dosyasında CustomTool öğe için ayarlar.|  
-|`ItemType`|İsteğe bağlı öznitelik.<br /><br /> Öğe için Itemtype proje dosyasında ayarlar.|  
-|`ReplaceParameters`|İsteğe bağlı öznitelik.<br /><br /> Öğe bir proje şablondan oluşturulduğunda değiştirilmelidir parametre değerleri içerip içermediğini belirten bir Boole değeri. Varsayılan değer `false`.|  
-|`TargetFileName`|İsteğe bağlı öznitelik.<br /><br /> Şablondan oluşturulan öğenin adını belirtir. Bu öznitelik, bir öğe adı oluşturmak için parametre değiştirme kullanmak için kullanışlıdır.|  
+| Öznitelik | Açıklama |
+|---------------------| - |
+| `SubType` | İsteğe bağlı öznitelik.<br /><br /> Çok dosyalı öğe şablonunda alt öğenin türünü belirtir. Bu değer Düzenleyicisi belirlemek için kullanılır, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] öğesini açmak için kullanır. |
+| `CustomTool` | İsteğe bağlı öznitelik.<br /><br /> Proje dosyasında CustomTool öğe için ayarlar. |
+| `ItemType` | İsteğe bağlı öznitelik.<br /><br /> Öğe için Itemtype proje dosyasında ayarlar. |
+| `ReplaceParameters` | İsteğe bağlı öznitelik.<br /><br /> Öğe bir proje şablondan oluşturulduğunda değiştirilmelidir parametre değerleri içerip içermediğini belirten bir Boole değeri. Varsayılan değer `false`. |
+| `TargetFileName` | İsteğe bağlı öznitelik.<br /><br /> Şablondan oluşturulan öğenin adını belirtir. Bu öznitelik, bir öğe adı oluşturmak için parametre değiştirme kullanmak için kullanışlıdır. |
   
 ### <a name="child-elements"></a>Alt öğeleri  
  Yok.  

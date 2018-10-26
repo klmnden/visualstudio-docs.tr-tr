@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: 10ea620f357c40e3e549d58f1d9df4fd0809cac9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 69ba9f13b9fc651fc68c4ed36f704abc17c5ad76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174011"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899935"
 ---
 # <a name="create-an-android-native-activity-app"></a>Android Yerel Etkinlik Uygulaması Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,19 +41,19 @@ Visual C++ platformlar arası mobil geliştirme seçeneği için yükleme sıras
   
 #### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
   
-1.  Visual Studio'yu açın. Menü çubuğunda, **dosya**, **yeni**, **proje**.  
+1. Visual Studio'yu açın. Menü çubuğunda, **dosya**, **yeni**, **proje**.  
   
-2.  İçinde **yeni proje** iletişim kutusunun **şablonları**, seçin **Visual C++**, **Çoklu Platform**ve ardından  **Native-Activity uygulaması (Android)** şablonu.  
+2. İçinde **yeni proje** iletişim kutusunun **şablonları**, seçin **Visual C++**, **Çoklu Platform**ve ardından  **Native-Activity uygulaması (Android)** şablonu.  
   
-3.  Uygulama gibi bir ad verin `MyAndroidApp`ve ardından **Tamam**.  
+3. Uygulama gibi bir ad verin `MyAndroidApp`ve ardından **Tamam**.  
   
-     ![Yerel etkinlik proje oluşturma](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
+    ![Yerel etkinlik proje oluşturma](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
   
-     Visual Studio, yeni bir çözüm oluşturur ve Çözüm Gezgini açılır.  
+    Visual Studio, yeni bir çözüm oluşturur ve Çözüm Gezgini açılır.  
   
-     ![Çözüm Gezgini'nde yerel etkinlik proje](../cross-platform/media/cppmdd-rc-na-solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
+    ![Çözüm Gezgini'nde yerel etkinlik proje](../cross-platform/media/cppmdd-rc-na-solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
   
- Yeni Android yerel etkinlik uygulaması çözümü iki proje içerir:  
+   Yeni Android yerel etkinlik uygulaması çözümü iki proje içerir:  
   
 -   **MyAndroidApp.NativeActivity** Birleştirici kodlar için uygulamanızı Android'de gibi yerel bir etkinlik çalışmasına ve başvurular içerir. Giriş noktaları tutkal kodun uygulamasını Main.cpp öğesi içinde var. Önceden derlenmiş üst bilgiler pch.h içinde var. Bu yerel etkinlik uygulaması projesi paketleme projesi tarafından devralındığında paylaşılan kitaplık bir .so dosyası derlenir.  
   

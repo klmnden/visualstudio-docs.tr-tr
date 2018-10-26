@@ -20,12 +20,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 87cd108d3225b87b39121684217c93510f95f140
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4a130a04be7a0645fef44ff6c8ae9dcc31b55dcf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264088"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867240"
 ---
 # <a name="application-page-project-designer-c"></a>Uygulama Sayfası, Proje Tasarımcısı (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -94,16 +94,16 @@ Kullanım **uygulama** sayfasının **Proje Tasarımcısı** projenin uygulama a
  **Bildirimi**  
  Windows Vista kullanıcı hesabı denetimi (UAC altında) uygulama çalışırken bir bildirim üretme seçeneğini belirler. Bu seçenek, aşağıdaki değerlere sahip olabilir:  
   
--   **Varsayılan ayarlarla bildirimi katıştırmak**. Windows Güvenlik bilgisini uygulamanın yürütülebilir dosyasına katıştırma için olan belirten Windows Vista'da, Visual Studio çalıştığı zamanki destekler `requestedExecutionLevel` olması `AsInvoker`. Varsayılan seçenek budur.  
+- **Varsayılan ayarlarla bildirimi katıştırmak**. Windows Güvenlik bilgisini uygulamanın yürütülebilir dosyasına katıştırma için olan belirten Windows Vista'da, Visual Studio çalıştığı zamanki destekler `requestedExecutionLevel` olması `AsInvoker`. Varsayılan seçenek budur.  
   
--   **Bir bildirim olmadan uygulama oluşturma**. Bu yöntem olarak da bilinen *sanallaştırma*. Eski uygulamalarla uyumluluk için bu seçeneği kullanın.  
+- **Bir bildirim olmadan uygulama oluşturma**. Bu yöntem olarak da bilinen *sanallaştırma*. Eski uygulamalarla uyumluluk için bu seçeneği kullanın.  
   
--   **Properties\app.manifest**. Bu seçenek, ClickOnce veya Registration-Free COM tarafından dağıtılan uygulamalar için gereklidir Bir uygulamayı ClickOnce dağıtımını kullanarak yayımlarsanız **bildirim** için bu seçenek otomatik olarak ayarlanır.  
+- **Properties\app.manifest**. Bu seçenek, ClickOnce veya Registration-Free COM tarafından dağıtılan uygulamalar için gereklidir Bir uygulamayı ClickOnce dağıtımını kullanarak yayımlarsanız **bildirim** için bu seçenek otomatik olarak ayarlanır.  
   
- **Kaynak dosyası**  
- Proje için kaynak dosyası sağlarken bu radyo düğmesini seçin. Bu seçeneği devre dışı bırakır **simgesi** ve **bildirim** seçenekleri.  
+  **Kaynak dosyası**  
+  Proje için kaynak dosyası sağlarken bu radyo düğmesini seçin. Bu seçeneği devre dışı bırakır **simgesi** ve **bildirim** seçenekleri.  
   
- Bir yol adı girin veya Gözat düğmesini kullanın (**...** ) bir Win32 kaynak dosyası projeye eklenecek.  
+  Bir yol adı girin veya Gözat düğmesini kullanın (**...** ) bir Win32 kaynak dosyası projeye eklenecek.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [Uygulama özelliklerini yönetme](../../ide/application-properties.md)  

@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0e2b3452f64e97d56cae56a2575caa6fea00d1f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4dbb96ffcca47303a90b1ff4c71643a63f6b4aa5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296037"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830751"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML Düzenleyicisi IntelliSense Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ XML Düzenleyicisi Visual Studio'da sağlanan diğer dil düzenleyicilere karş�
 ## <a name="intellisense-in-an-xslt-document"></a>XSLT belge Intellisense'te  
  Adlandırılmış bir şablon ya da bir öznitelik XSLT belgenize ekledikten sonra aşağıdaki eklemek için IntelliSense kullanabilirsiniz:  
   
--   Öznitelik adları ayarlayın.  
+- Öznitelik adları ayarlayın.  
   
--   Şablon mod.  
+- Şablon mod.  
   
--   Şablon adları.  
+- Şablon adları.  
   
--   Belirli bir mod için parametre adları.  
+- Belirli bir mod için parametre adları.  
   
--   Belirtilen adlandırılmış bir şablon parametresi adları.  
+- Belirtilen adlandırılmış bir şablon parametresi adları.  
   
- Daha fazla bilgi için [izlenecek yol: XSLT IntelliSense kullanarak](../xml-tools/walkthrough-using-xslt-intellisense.md) konu.  
+  Daha fazla bilgi için [izlenecek yol: XSLT IntelliSense kullanarak](../xml-tools/walkthrough-using-xslt-intellisense.md) konu.  
   
 ## <a name="auto-completion"></a>Otomatik Tamamlama  
  XML Düzenleyicisi'ni de gerekli XML sözdiziminde doldurarak daha kolay XML düzenleme olmasını sağlar. Örneğin aşağıdaki başlangıç etiketi yazın:  
@@ -72,19 +72,19 @@ XML Düzenleyicisi Visual Studio'da sağlanan diğer dil düzenleyicilere karş�
   
  Benzer şekilde, XML Düzenleyicisi'ni de aşağıdaki XML sözdizimini otomatik olarak ekler:  
   
--   Son bir işlem yönergesi:  `?>`  
+- Son bir işlem yönergesi:  `?>`  
   
--   [[CDATA bloğunun sonu: `]]>`  
+- [[CDATA bloğunun sonu: `]]>`  
   
--   Bir açıklama sonu: `-->`  
+- Bir açıklama sonu: `-->`  
   
--   Son DTD bildirimi: `>`  
+- Son DTD bildirimi: `>`  
   
- XML Düzenleyicisi'ni bir ad alanı Ekle özelliğine de sahiptir bildirimi bir ad alanı tam öğesi seçin veya bir IntelliSense listesi ve bu öğe veya öznitelik için ad alanı özniteliği henüz kapsam içinde değil.  
+  XML Düzenleyicisi'ni bir ad alanı Ekle özelliğine de sahiptir bildirimi bir ad alanı tam öğesi seçin veya bir IntelliSense listesi ve bu öğe veya öznitelik için ad alanı özniteliği henüz kapsam içinde değil.  
   
- Örneğin, `e:Book` nerede bağlı öneki için IntelliSense listesinden öğe `http://books` XML Düzenleyicisi'ni ekler, gerekli ad alanı bildirimi belge içinde bildirilmedi ad alanı. Sonuçta elde edilen XML metni aşağıda verilmiştir:  
+  Örneğin, `e:Book` nerede bağlı öneki için IntelliSense listesinden öğe `http://books` XML Düzenleyicisi'ni ekler, gerekli ad alanı bildirimi belge içinde bildirilmedi ad alanı. Sonuçta elde edilen XML metni aşağıda verilmiştir:  
   
- `<e:Book xmlns:e="http://books"`  
+  `<e:Book xmlns:e="http://books"`  
   
 ## <a name="brace-matching"></a>Ayraç eşleştirme  
  XML Düzenleyicisi'ni küme parantezi vurgulama kapalı öğelerde size anında geri bildirim sağlar. Klavye kısayolu (CTRL +]), bir küme ayracı eşleşen Ayraca atlamak için de kullanabilirsiniz.  

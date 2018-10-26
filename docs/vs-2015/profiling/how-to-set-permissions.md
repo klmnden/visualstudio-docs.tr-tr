@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41641a0c5b24ea9492b2980fac998155b8ea5332
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d33c99ba2bbca5c7e99d73c9c8168e08674b499e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187562"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905271"
 ---
 # <a name="how-to-set-permissions"></a>Nasıl yapılır: izinleri ayarlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Bu konu nasıl bir bilgisayarın yönetici bir kullanıcı veya bu bilgisayar ü
   
  **Gereksinimler**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Users grubunun üyeleri, diskteki diğer takım üyeleri ile paylaşılan dosyaları ve klasörleri erişimi gerekir. "Paylaşılan proje dosyalarına erişim vermek için" ikinci yordam o erişim açıklar.  
+  Users grubunun üyeleri, diskteki diğer takım üyeleri ile paylaşılan dosyaları ve klasörleri erişimi gerekir. "Paylaşılan proje dosyalarına erişim vermek için" ikinci yordam o erişim açıklar.  
   
- Bir yöneticinin bunları profil oluşturma araçları için yazılım sürücü erişim verirse Users grubunun üyeleri profil oluşturma araçları çalıştırabilirsiniz. "Profil oluşturma sürücüsü, erişim vermek için" son yordamı Bu sürücü erişim açıklar.  
+  Bir yöneticinin bunları profil oluşturma araçları için yazılım sürücü erişim verirse Users grubunun üyeleri profil oluşturma araçları çalıştırabilirsiniz. "Profil oluşturma sürücüsü, erişim vermek için" son yordamı Bu sürücü erişim açıklar.  
   
 > [!NOTE]
 >  Bu yordamlardaki adımları için yönetici izinlerine ihtiyacınız var.  
@@ -89,47 +89,47 @@ Bu konu nasıl bir bilgisayarın yönetici bir kullanıcı veya bu bilgisayar ü
   
 ### <a name="to-grant-access-to-the-profiling-driver"></a>Profil oluşturma sürücü erişim vermek için  
   
-1.  Yönetici olarak bir komut istemi açın.  
+1. Yönetici olarak bir komut istemi açın.  
   
-2.  Dizine değiştirin:  
+2. Dizine değiştirin:  
   
-    ```  
-    <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
-    ```  
+   ```  
+   <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
+   ```  
   
-3.  Şu komutu çalıştırın:  
+3. Şu komutu çalıştırın:  
   
-    ```  
-    vsperfcmd /admin:driver,start /admin:service,start  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,start /admin:service,start  
+   ```  
   
-     Bu komut, yükler ve profil oluşturma araçlarından sürücüsünü başlatır.  
+    Bu komut, yükler ve profil oluşturma araçlarından sürücüsünü başlatır.  
   
-     Bu komut, yönetici olmayan kullanıcılar, kendi kullanıcı işlem alanında kullanılabilir olan profil oluşturma özelliklerini kullanabilir, böylece profil oluşturma sürücü ve hizmeti başlatır. Yalnızca bir yönetici komut çalıştırabilirsiniz; ve yönetici olmayan kullanıcılar için başarısız olur.  
+    Bu komut, yönetici olmayan kullanıcılar, kendi kullanıcı işlem alanında kullanılabilir olan profil oluşturma özelliklerini kullanabilir, böylece profil oluşturma sürücü ve hizmeti başlatır. Yalnızca bir yönetici komut çalıştırabilirsiniz; ve yönetici olmayan kullanıcılar için başarısız olur.  
   
-     Bu adım etkilerini sonra geri bildirimi bilgisayarı yeniden başlatır, bu yordamda ayrıca son adım gerçekleştirmediğiniz sürece.  
+    Bu adım etkilerini sonra geri bildirimi bilgisayarı yeniden başlatır, bu yordamda ayrıca son adım gerçekleştirmediğiniz sürece.  
   
-4.  Sürücü işlevleri bir kullanıcı veya bilgisayarda yönetici erişimi yok grubu tarafından profil oluşturma için erişime izin vermek için komutu çalıştırın:  
+4. Sürücü işlevleri bir kullanıcı veya bilgisayarda yönetici erişimi yok grubu tarafından profil oluşturma için erişime izin vermek için komutu çalıştırın:  
   
-    ```  
-    vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
-    ```  
+   ```  
+   vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
+   ```  
   
-     Bu komut verir \<kullanıcı adı > veya \<grubu adı > Hesap profil oluşturma araçları için erişim. \<Doğru > seçeneğini belirler profil oluşturma işlevselliğini kullanıcı erişebilir. \<Doğru > seçeneği, bir veya daha fazla aşağıdaki değerlerden biri olabilir:  
+    Bu komut verir \<kullanıcı adı > veya \<grubu adı > Hesap profil oluşturma araçları için erişim. \<Doğru > seçeneğini belirler profil oluşturma işlevselliğini kullanıcı erişebilir. \<Doğru > seçeneği, bir veya daha fazla aşağıdaki değerlerden biri olabilir:  
   
-    -   FullAccess - hizmetlerinden, performans verileri toplama dahil olmak üzere tüm profil oluşturma yöntemleri erişim örnekleme sağlar ve profil oluşturma oturumunu arası.  
+   -   FullAccess - hizmetlerinden, performans verileri toplama dahil olmak üzere tüm profil oluşturma yöntemleri erişim örnekleme sağlar ve profil oluşturma oturumunu arası.  
   
-    -   SampleProfiling - örnek profil oluşturma yöntemlerini erişim sağlar  
+   -   SampleProfiling - örnek profil oluşturma yöntemlerini erişim sağlar  
   
-    -   CrossSession - çapraz oturum profil oluşturma hizmetleri için gerekli olan profil oluşturma erişim sağlar.  
+   -   CrossSession - çapraz oturum profil oluşturma hizmetleri için gerekli olan profil oluşturma erişim sağlar.  
   
-5.  (İsteğe bağlı) Bilgisayar yeniden başlatıldıktan sonra önceki adımlardan herhangi birini sonuçlarını korumak için aşağıdaki komutu çalıştırın:  
+5. (İsteğe bağlı) Bilgisayar yeniden başlatıldıktan sonra önceki adımlardan herhangi birini sonuçlarını korumak için aşağıdaki komutu çalıştırın:  
   
-    ```  
-    vsperfcmd /admin:driver,autostart,on  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,autostart,on  
+   ```  
   
- Belirtilen kullanıcıların oturum açma sonra artık yönetici izinleri olmayan profil oluşturma araçlarını kullanmanız mümkün olacaktır.  
+   Belirtilen kullanıcıların oturum açma sonra artık yönetici izinleri olmayan profil oluşturma araçlarını kullanmanız mümkün olacaktır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)   

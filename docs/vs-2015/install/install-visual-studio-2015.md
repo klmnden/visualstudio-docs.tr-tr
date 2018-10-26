@@ -23,12 +23,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3d44834fe02f873007e7461c789fb94f98c9208e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: df09e647908b264ade467b8fafd4487641d3be6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301872"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841110"
 ---
 # <a name="install-visual-studio-2015"></a>Visual Studio 2015'i yükleyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,17 +135,17 @@ Bu sayfa yükleme ile yardımcı olacak ayrıntılı bilgiler içerir **Visual S
   
 #### <a name="to-install-or-uninstall-help-content"></a>Yardım içeriğini yüklemek veya kaldırmak için  
   
-1.  Üzerinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menü çubuğundan **yardımcı**, **kaldırmak Yardım içeriğini Ekle ve**.  
+1. Üzerinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menü çubuğundan **yardımcı**, **kaldırmak Yardım içeriğini Ekle ve**.  
   
-2.  Üzerinde **içeriği Yönet** sekmesinde **Microsoft Yardım Görüntüleyici**, Yardım içerik yükleme kaynağını seçin.  
+2. Üzerinde **içeriği Yönet** sekmesinde **Microsoft Yardım Görüntüleyici**, Yardım içerik yükleme kaynağını seçin.  
   
-3.  İçin belirli bir Yardım koleksiyonunu arıyorsanız, ad veya bir anahtar sözcük girin **arama** metin kutusuna yazıp ENTER tuşuna **Enter**.  
+3. İçin belirli bir Yardım koleksiyonunu arıyorsanız, ad veya bir anahtar sözcük girin **arama** metin kutusuna yazıp ENTER tuşuna **Enter**.  
   
-4.  Seçmek istediğiniz Yardım koleksiyonunun adının yanında, **Ekle** veya **Kaldır** bağlantı.  
+4. Seçmek istediğiniz Yardım koleksiyonunun adının yanında, **Ekle** veya **Kaldır** bağlantı.  
   
-5.  Tıklayın **güncelleştirme** düğmesi.  
+5. Tıklayın **güncelleştirme** düğmesi.  
   
- Yükleme veya çevrimdışı Yardım dağıtma hakkında daha fazla bilgi için bkz. [Yardım Görüntüleyicisi Yönetici Kılavuzu'na](../ide/help-viewer-administrator-guide.md).  
+   Yükleme veya çevrimdışı Yardım dağıtma hakkında daha fazla bilgi için bkz. [Yardım Görüntüleyicisi Yönetici Kılavuzu'na](../ide/help-viewer-administrator-guide.md).  
   
 ##  <a name="serviceReleases"></a> Hizmet sürümlerini ve ürün güncelleştirmelerini denetleme  
  Tüm uzantıları uyumlu olduğu için önceki sürümlerinden yükselttiğinizde, Visual Studio uzantıları otomatik olarak yükseltmez. Uzantılar'dan yeniden yüklemeniz gerekir [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkId=178891) veya yazılım yayımcısı.  

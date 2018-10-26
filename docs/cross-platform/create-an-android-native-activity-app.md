@@ -12,12 +12,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: a94490c60a8b2ccb4513cf3c6c5c9d0de1a6f392
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 0b8a2622c0b4d55376ecb0f3bc6641d41c524962
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233119"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845451"
 ---
 # <a name="create-an-android-native-activity-app"></a>Android Yerel Etkinlik Uygulaması Oluşturma
 Visual C++ platformlar arası mobil geliştirme seçeneği için yükleme sırasında Visual Studio 2015, tam olarak işlevsel Android yerel etkinlik uygulamaları oluşturmak için kullanılabilir. Android yerel Geliştirme Seti (NDK) çoğu saf bir C/C++ kod kullanarak Android uygulamanızı uygulama olanak tanıyan bir araç setidir. Bazı Java JNI kod ile Android'e etkileşim kurmak C/C++ kod izin vermek için bağlantılı görür. Android NDK ile Android API Düzey 9 yerel etkinlik uygulamaları oluşturma olanağı sundu. Yerel etkinlik kod Unreal Engine'i veya OpenGL kullanan oyunlar ve grafik kullanımı yoğun uygulamalar oluşturmak için yaygın olarak kullanılır. Bu konu OpenGL kullanan basit bir yerel etkinlik uygulaması oluşturulmasını adım yol gösterir. Ek konular, düzenleme, derleme, hata ayıklama ve yerel etkinlik kod dağıtma, geliştirici yaşam döngüsü ile yol.  
@@ -34,19 +34,19 @@ Visual C++ platformlar arası mobil geliştirme seçeneği için yükleme sıras
   
 #### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
   
-1.  Visual Studio'yu açın. Menü çubuğunda, **dosya** > **yeni** > **proje**.  
+1. Visual Studio'yu açın. Menü çubuğunda, **dosya** > **yeni** > **proje**.  
   
-2.  İçinde **yeni proje** iletişim kutusunun **şablonları**, seçin **Visual C++** > **Çoklu Platform**seçin **Native-Activity uygulaması (Android)** şablonu.  
+2. İçinde **yeni proje** iletişim kutusunun **şablonları**, seçin **Visual C++** > **Çoklu Platform**seçin **Native-Activity uygulaması (Android)** şablonu.  
   
-3.  Uygulama gibi bir ad verin `MyAndroidApp`ve ardından **Tamam**.  
+3. Uygulama gibi bir ad verin `MyAndroidApp`ve ardından **Tamam**.  
   
-     ![Yerel etkinlik proje oluşturma](../cross-platform/media/cppmdd_newproject.PNG "CppMDD_NewProject")  
+    ![Yerel etkinlik proje oluşturma](../cross-platform/media/cppmdd_newproject.PNG "CppMDD_NewProject")  
   
-     Visual Studio, yeni bir çözüm oluşturur ve Çözüm Gezgini açılır.  
+    Visual Studio, yeni bir çözüm oluşturur ve Çözüm Gezgini açılır.  
   
-     ![Çözüm Gezgini'nde yerel etkinlik proje](../cross-platform/media/cppmdd_rc_na_solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
+    ![Çözüm Gezgini'nde yerel etkinlik proje](../cross-platform/media/cppmdd_rc_na_solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
   
- Yeni Android yerel etkinlik uygulaması çözümü iki proje içerir:  
+   Yeni Android yerel etkinlik uygulaması çözümü iki proje içerir:  
   
 -   `MyAndroidApp.NativeActivity` birleştirici kodlar için uygulamanızı Android'de gibi yerel bir etkinlik çalışmasına ve başvurular içerir. Giriş noktaları tutkal kodun uygulaması olan *Main.cpp öğesi*. Önceden derlenmiş üst bilgiler bulunduğunuz *pch.h*. Bu yerel etkinlik uygulaması projesi paylaşılan kitaplığa derlenir *.so* paketleme projesi tarafından devralındığında dosyası.  
   

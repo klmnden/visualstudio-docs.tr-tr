@@ -16,12 +16,12 @@ ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e7b6324112bed6d201ca57fd3fb5c77696a528f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bf98c263f3452e0383f5891116849e85140b763
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305792"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818769"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Kayıt ve Seçim (Kaynak Denetimi VSPackage’ı)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Kaynak denetimi VSPackage'ı kayıtlı, kendisine kullanıma sunmak için [!INCL
 ### <a name="registry-entries"></a>Kayıt defteri girdileri  
  Bir kaynak denetim paketi üç özel GUID'leri gerekir:  
   
--   Paket GUID'si: (Bu bölümde ID_Package olarak adlandırılır) kaynak denetimi uyarlamasını içeren paket için ana GUID budur.  
+- Paket GUID'si: (Bu bölümde ID_Package olarak adlandırılır) kaynak denetimi uyarlamasını içeren paket için ana GUID budur.  
   
--   Kaynak Denetim GUID'i: Bu kaynak denetimi VSPackage'ı ile Visual Studio kaynak denetimi saplama kaydetmek için kullanılan bir GUID değeridir ve ayrıca komut UI bağlamı GUID olarak kullanılır. Kaynak denetimi hizmetini GUID GUID kaynak denetiminde kayıtlı. Örnekte, kaynak denetim GUID'i ID_SccProvider çağrılır.  
+- Kaynak Denetim GUID'i: Bu kaynak denetimi VSPackage'ı ile Visual Studio kaynak denetimi saplama kaydetmek için kullanılan bir GUID değeridir ve ayrıca komut UI bağlamı GUID olarak kullanılır. Kaynak denetimi hizmetini GUID GUID kaynak denetiminde kayıtlı. Örnekte, kaynak denetim GUID'i ID_SccProvider çağrılır.  
   
--   Kaynak denetimi hizmeti GUID: özel hizmet (Bu bölümde SID_SccPkgService olarak adlandırılır) Visual Studio tarafından kullanılan GUID budur. Buna ek olarak, diğer GUID'leri VSPackages, araç pencerelerini tanımlamak ve benzeri kaynak denetim paketi gerekir.  
+- Kaynak denetimi hizmeti GUID: özel hizmet (Bu bölümde SID_SccPkgService olarak adlandırılır) Visual Studio tarafından kullanılan GUID budur. Buna ek olarak, diğer GUID'leri VSPackages, araç pencerelerini tanımlamak ve benzeri kaynak denetim paketi gerekir.  
   
- Aşağıdaki kayıt defteri girdilerini kaynak denetimi VSPackage'ı tarafından yapılması gerekir:  
+  Aşağıdaki kayıt defteri girdilerini kaynak denetimi VSPackage'ı tarafından yapılması gerekir:  
   
 |Anahtar adı|Girdileri|  
 |--------------|-------------|  
@@ -58,13 +58,13 @@ Kaynak denetimi VSPackage'ı kayıtlı, kendisine kullanıma sunmak için [!INCL
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Aşağıdaki işlemlerden biri gerçekleştirilirken bir kaynak denetimi VSPackage'ı yükler:  
   
--   Çözüm (Çözüm kaynak denetimi altında olduğunda) açılır.  
+- Çözüm (Çözüm kaynak denetimi altında olduğunda) açılır.  
   
-     IDE bir çözüm veya proje kaynak denetimi altında açıldığında kaynak denetimi bu çözüm için yüklenecek belirlendiyse VSPackage'ı neden olur.  
+   IDE bir çözüm veya proje kaynak denetimi altında açıldığında kaynak denetimi bu çözüm için yüklenecek belirlendiyse VSPackage'ı neden olur.  
   
--   Herhangi bir kaynak denetimi VSPackage'ı menü komutlarını yürütülür.  
+- Herhangi bir kaynak denetimi VSPackage'ı menü komutlarını yürütülür.  
   
- Kaynak denetimi VSPackage'ı yalnızca bunlar gerçekten olacak gerektiğinde tüm bileşenleri yüklenecektir (Gecikmeli yüklemeyi aksi bilinen) kullanılır.  
+  Kaynak denetimi VSPackage'ı yalnızca bunlar gerçekten olacak gerektiğinde tüm bileşenleri yüklenecektir (Gecikmeli yüklemeyi aksi bilinen) kullanılır.  
   
 ### <a name="automatic-solution-based-vspackage-swapping"></a>Otomatik çözüm tabanlı VSPackage değiştirme  
  Kaynak denetimi VSPackage'ları el ile takas edebilirsiniz aracılığıyla [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **seçenekleri** iletişim kutusunun altında **kaynak denetimi** kategorisi. Bu çözüm açıldığında belirli bir çözüm için belirlenmiş bir kaynak denetim paketi otomatik olarak etkin olarak ayarlandığında otomatik çözüm tabanlı paket değiştirme anlamına gelir. Her kaynak denetim paketi uygulamalıdır <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] her ikisi arasında geçiş yapma işleme kaynağı (kaynak denetimi eklentisi API uygulama) denetimi eklentileri ve kaynak denetimi VSPackage'ları.  
@@ -76,15 +76,15 @@ Kaynak denetimi VSPackage'ı kayıtlı, kendisine kullanıma sunmak için [!INCL
 ### <a name="visual-studio-ui-for-package-selection-and-switching"></a>Visual Studio Paket seçimi ve geçişi için kullanıcı Arabirimi  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Kaynak denetimi VSPackage'ı için kullanıcı Arabirimi ve Eklenti Seçimi sağlar **seçenekleri** iletişim kutusunun altında **kaynak denetimi** kategorisi. VSPackage ve etkin kaynak denetimi eklentisi seçmesini sağlar. Aşağı açılan liste aşağıdakileri içerir:  
   
--   Tüm kaynak denetimi paketleri yüklü  
+- Tüm kaynak denetimi paketleri yüklü  
   
--   Tüm kaynak denetimi eklentileri yüklü  
+- Tüm kaynak denetimi eklentileri yüklü  
   
--   "none", hangi kaynak kodu denetimi devre dışı bırakır seçeneği  
+- "none", hangi kaynak kodu denetimi devre dışı bırakır seçeneği  
   
- Yalnızca kullanıcı Arabirimi etkin kaynak denetimi seçimi için görünür durumdadır. VSPackage Seçimi önceki VSPackage için kullanıcı arabirimini gizler ve yeni bir kullanıcı Arabiriminde gösterilir. Kullanıcı başına esasına göre etkin VSPackage'ı seçilmedi. Bir kullanıcının birden çok kopyasını varsa [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] eşzamanlı olarak açın, her biri farklı bir etkin VSPackage potansiyel olarak kullanabilirsiniz. Birden çok kullanıcı aynı bilgisayarda oturum açtıysanız, her kullanıcının ayrı örneklerini olabilir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] açın, her biri farklı bir etkin VSPackage. Zaman birden çok örneğini [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kaynak denetimi için varsayılan kaynak denetimi VSPackage yeniden etkin olarak ayarlanması, son açık çözüme dönüşür etkindi VSPackage bir kullanıcı tarafından kapatıldı.  
+  Yalnızca kullanıcı Arabirimi etkin kaynak denetimi seçimi için görünür durumdadır. VSPackage Seçimi önceki VSPackage için kullanıcı arabirimini gizler ve yeni bir kullanıcı Arabiriminde gösterilir. Kullanıcı başına esasına göre etkin VSPackage'ı seçilmedi. Bir kullanıcının birden çok kopyasını varsa [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] eşzamanlı olarak açın, her biri farklı bir etkin VSPackage potansiyel olarak kullanabilirsiniz. Birden çok kullanıcı aynı bilgisayarda oturum açtıysanız, her kullanıcının ayrı örneklerini olabilir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] açın, her biri farklı bir etkin VSPackage. Zaman birden çok örneğini [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kaynak denetimi için varsayılan kaynak denetimi VSPackage yeniden etkin olarak ayarlanması, son açık çözüme dönüşür etkindi VSPackage bir kullanıcı tarafından kapatıldı.  
   
- Önceki sürümlerinden farklı olarak [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], bir IDE yeniden başlatma artık kaynak denetimi VSPackage'ları geçiş yapmak için tek yoludur. VSPackage seçimi otomatik olarak yapılır. Paketleri geçiş Windows kullanıcı ayrıcalıkları (yönetici veya İleri kullanıcı) gerektirir.  
+  Önceki sürümlerinden farklı olarak [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], bir IDE yeniden başlatma artık kaynak denetimi VSPackage'ları geçiş yapmak için tek yoludur. VSPackage seçimi otomatik olarak yapılır. Paketleri geçiş Windows kullanıcı ayrıcalıkları (yönetici veya İleri kullanıcı) gerektirir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>   

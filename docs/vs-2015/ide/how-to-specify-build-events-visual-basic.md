@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7c9c6c937d0426170854ef3a9de04348005fc0cd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f80067224be1cc5dfa72b23dbfb7414b023f793a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298902"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897647"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Nasıl Yapılır: Derleme Olayları Belirtme (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,66 +68,66 @@ Visual Basic'te derleme olayları, betikleri, makroları veya başka eylemler de
   
 #### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Uygulama bildirimini değiştirmek için bir .exe komutu oluşturmak için  
   
-1.  Komut için bir konsol uygulaması oluşturun. Gelen **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.  
+1. Komut için bir konsol uygulaması oluşturun. Gelen **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.  
   
-2.  İçinde **yeni proje** iletişim kutusundaki **Visual Basic** düğümünü **Windows** ardından **konsol uygulaması** şablonu. Projeyi adlandırın `ChangeOSVersionVB`.  
+2. İçinde **yeni proje** iletişim kutusundaki **Visual Basic** düğümünü **Windows** ardından **konsol uygulaması** şablonu. Projeyi adlandırın `ChangeOSVersionVB`.  
   
-3.  Module1.vb içinde aşağıdaki satırı ekleyin `Imports` deyimini dosyanın üst:  
+3. Module1.vb içinde aşağıdaki satırı ekleyin `Imports` deyimini dosyanın üst:  
   
-    ```  
-    Imports System.Xml  
-    ```  
+   ```  
+   Imports System.Xml  
+   ```  
   
-4.  Aşağıdaki kodu ekleyin `Sub Main`:  
+4. Aşağıdaki kodu ekleyin `Sub Main`:  
   
-    ```  
-    Sub Main()  
-       Dim applicationManifestPath As String  
-       applicationManifestPath = My.Application.CommandLineArgs(0)  
-       Console.WriteLine("Application Manifest Path: " & applicationManifestPath.ToString)  
+   ```  
+   Sub Main()  
+      Dim applicationManifestPath As String  
+      applicationManifestPath = My.Application.CommandLineArgs(0)  
+      Console.WriteLine("Application Manifest Path: " & applicationManifestPath.ToString)  
   
-       'Get version name  
-       Dim osVersion As Version  
-       If My.Application.CommandLineArgs.Count >= 2 Then  
-          osVersion = New Version(My.Application.CommandLineArgs(1).ToString)  
-       Else  
-          Throw New ArgumentException("OS Version not specified.")  
-       End If  
-       Console.WriteLine("Desired OS Version: " & osVersion.ToString())  
+      'Get version name  
+      Dim osVersion As Version  
+      If My.Application.CommandLineArgs.Count >= 2 Then  
+         osVersion = New Version(My.Application.CommandLineArgs(1).ToString)  
+      Else  
+         Throw New ArgumentException("OS Version not specified.")  
+      End If  
+      Console.WriteLine("Desired OS Version: " & osVersion.ToString())  
   
-       Dim document As XmlDocument  
-       Dim namespaceManager As XmlNamespaceManager  
-       namespaceManager = New XmlNamespaceManager(New NameTable())  
-       With namespaceManager  
-          .AddNamespace("asmv1", "urn:schemas-microsoft-com:asm.v1")  
-          .AddNamespace("asmv2", "urn:schemas-microsoft-com:asm.v2")  
-       End With  
+      Dim document As XmlDocument  
+      Dim namespaceManager As XmlNamespaceManager  
+      namespaceManager = New XmlNamespaceManager(New NameTable())  
+      With namespaceManager  
+         .AddNamespace("asmv1", "urn:schemas-microsoft-com:asm.v1")  
+         .AddNamespace("asmv2", "urn:schemas-microsoft-com:asm.v2")  
+      End With  
   
-       document = New XmlDocument()  
-       document.Load(applicationManifestPath)  
+      document = New XmlDocument()  
+      document.Load(applicationManifestPath)  
   
-       Dim baseXPath As String  
-       baseXPath = "/asmv1:assembly/asmv2:dependency/asmv2:dependentOS/asmv2:osVersionInfo/asmv2:os"  
+      Dim baseXPath As String  
+      baseXPath = "/asmv1:assembly/asmv2:dependency/asmv2:dependentOS/asmv2:osVersionInfo/asmv2:os"  
   
-       'Change minimum required OS Version.  
-       Dim node As XmlNode  
-       node = document.SelectSingleNode(baseXPath, namespaceManager)  
-       node.Attributes("majorVersion").Value = osVersion.Major.ToString()  
-       node.Attributes("minorVersion").Value = osVersion.Minor.ToString()  
-       node.Attributes("buildNumber").Value = osVersion.Build.ToString()  
-       node.Attributes("servicePackMajor").Value = osVersion.Revision.ToString()  
+      'Change minimum required OS Version.  
+      Dim node As XmlNode  
+      node = document.SelectSingleNode(baseXPath, namespaceManager)  
+      node.Attributes("majorVersion").Value = osVersion.Major.ToString()  
+      node.Attributes("minorVersion").Value = osVersion.Minor.ToString()  
+      node.Attributes("buildNumber").Value = osVersion.Build.ToString()  
+      node.Attributes("servicePackMajor").Value = osVersion.Revision.ToString()  
   
-       document.Save(applicationManifestPath)  
-    End Sub  
-    ```  
+      document.Save(applicationManifestPath)  
+   End Sub  
+   ```  
   
-     Komut iki bağımsız değişkeni alır. İlk bağımsız değişkeni uygulama bildirimini yoludur (diğer bir deyişle, klasör derleme işlemi genellikle Projectname.publish bildirimi oluşturur). İkinci bağımsız değişkeni yeni bir işletim sistemi sürümüdür.  
+    Komut iki bağımsız değişkeni alır. İlk bağımsız değişkeni uygulama bildirimini yoludur (diğer bir deyişle, klasör derleme işlemi genellikle Projectname.publish bildirimi oluşturur). İkinci bağımsız değişkeni yeni bir işletim sistemi sürümüdür.  
   
-5.  Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
+5. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
   
-6.  .Exe dosyası gibi bir dizine kopyalayın `C:\TEMP\ChangeOSVersionVB.exe`.  
+6. .Exe dosyası gibi bir dizine kopyalayın `C:\TEMP\ChangeOSVersionVB.exe`.  
   
- Ardından, uygulama bildirimini değiştirmek için bu komutu bir derleme sonrası olay çağırın.  
+   Ardından, uygulama bildirimini değiştirmek için bu komutu bir derleme sonrası olay çağırın.  
   
 #### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Uygulama bildirimini değiştirmek için bir derleme sonrası olay çağırmak için  
   

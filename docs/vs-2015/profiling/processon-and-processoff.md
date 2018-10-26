@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 377031abf3ebcada283df8447cd1c695e1f797e5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7595d48d0f08fc16bed00385094167b1d65efc8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255093"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849410"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn ve ProcessOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ VSPerfCmd.exe **ProcessOff** ve **ProcessOn** alt komutları duraklatma ve komut
   
  **ProcessOff** ve **ProcessOn** alt komutları da profil oluşturucu API işlevleri tarafından yönetilen işlemi Başlat/Durdur sayısını etkiler.  
   
--   **ProcessOff** hemen işlem Başlat/Durdur sayısı 0 olarak ayarlar ve bu nedenle profil oluşturma duraklatır.  
+- **ProcessOff** hemen işlem Başlat/Durdur sayısı 0 olarak ayarlar ve bu nedenle profil oluşturma duraklatır.  
   
--   **ProcessOn** hemen işlem Başlat/Durdur sayısı 1 olarak ayarlar ve bu nedenle sürdürür profil oluşturma.  
+- **ProcessOn** hemen işlem Başlat/Durdur sayısı 1 olarak ayarlar ve bu nedenle sürdürür profil oluşturma.  
   
- Daha fazla bilgi için [Profil Araçları API'leri](../profiling/profiling-tools-apis.md).  
+  Daha fazla bilgi için [Profil Araçları API'leri](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   

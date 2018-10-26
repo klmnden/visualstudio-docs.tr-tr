@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 299abef4d60b6bdc6fdf07cb8257034a6ee22d10
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4befc49fab1d1b53d70f1b79ee1a2bbe96be11f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207863"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913416"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Bir Simgenin veya Dekoratörün Görünürlüğünü Denetleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,37 +29,37 @@ A *dekoratör* bir simge ya da bir etki alanına özgü dil (DSL) şeklinde gör
   
 #### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>Bir simge veya metin dekoratörün görünürlüğünü denetleme için  
   
-1.  DSL tanım diyagramı simgeler veya görünmesini istediğiniz metin dekoratörleri şekli sınıfına ekleyin.  
+1. DSL tanım diyagramı simgeler veya görünmesini istediğiniz metin dekoratörleri şekli sınıfına ekleyin.  
   
-    1.  Şekil sınıfı sağ tıklatın, **Ekle**ve ardından dekoratör gerekli türüne tıklayın.  
+   1.  Şekil sınıfı sağ tıklatın, **Ekle**ve ardından dekoratör gerekli türüne tıklayın.  
   
-    2.  Dekoratörün ait ayarlamak **konumu** özelliği. Aynı konumda birden fazla dekoratöre sahip olabilir. Örneğin erkek aynı konum paylaşımı kadın için simgeler olabilir.  
+   2.  Dekoratörün ait ayarlamak **konumu** özelliği. Aynı konumda birden fazla dekoratöre sahip olabilir. Örneğin erkek aynı konum paylaşımı kadın için simgeler olabilir.  
   
-    3.  Ayarlama **varsayılan simge** bir simge dekoratörünün özelliği.  
+   3.  Ayarlama **varsayılan simge** bir simge dekoratörünün özelliği.  
   
-2.  Şekil sınıfı DSL tanım diyagramı üzerinde alan sınıfı arasındaki gri çizgidir diyagram öğesi eşlemesi'ni seçin.  
+2. Şekil sınıfı DSL tanım diyagramı üzerinde alan sınıfı arasındaki gri çizgidir diyagram öğesi eşlemesi'ni seçin.  
   
-3.  DSL Ayrıntıları penceresinde de **Dekoratör eşlemeleri** sekmesinde, bir dekoratör seçin. Örneğin, MaleDecorator.  
+3. DSL Ayrıntıları penceresinde de **Dekoratör eşlemeleri** sekmesinde, bir dekoratör seçin. Örneğin, MaleDecorator.  
   
-4.  Denetleme **görünürlük filtresini** kutusu.  
+4. Denetleme **görünürlük filtresini** kutusu.  
   
-5.  Hemen etki alanı sınıfı üzerinde görünürlük kontrol domain özelliği ise bırakın **filtre özelliğinin yolu** boş.  
+5. Hemen etki alanı sınıfı üzerinde görünürlük kontrol domain özelliği ise bırakın **filtre özelliğinin yolu** boş.  
   
-     Aksi takdirde, açılan menüsüne tıklayın ve ilişki veya özelliği olduğu sınıf gidin.  
+    Aksi takdirde, açılan menüsüne tıklayın ve ilişki veya özelliği olduğu sınıf gidin.  
   
-    -   Bir hata raporu önlemek için ile işaretlenmiş bir ilişki gezinmek değil "*" Gezinti aracında.  
+   -   Bir hata raporu önlemek için ile işaretlenmiş bir ilişki gezinmek değil "*" Gezinti aracında.  
   
-6.  Ayarlama **filtre özelliği** bir alan özelliği için. Örneğin, cinsiyeti.  
+6. Ayarlama **filtre özelliği** bir alan özelliği için. Örneğin, cinsiyeti.  
   
-7.  İçinde **görünürlük girdileri** listesinde, bu etki alanı özelliğinin dekoratörün görünür olacağı değerleri ekleyin. Örneğin, erkek.  
+7. İçinde **görünürlük girdileri** listesinde, bu etki alanı özelliğinin dekoratörün görünür olacağı değerleri ekleyin. Örneğin, erkek.  
   
-8.  Her simge için adımları yineleyin.  
+8. Her simge için adımları yineleyin.  
   
 9. **Tüm Şablonları dönüştürme**, derleme ve çalıştırma ve test diyagramı açın.  
   
 10. Denetleme özellik değeri değiştiğinde dekoratörler kaybolur ve görünür.  
   
- Sık, daha karmaşık bir formül daha basit bir değerler kümesi tarafından denetlenmesi için görünürlük istersiniz. Örneğin, belirli türde bir bağlantı sayısına bağlı olarak bir simgesi vardır ya da bir olup olmadığına göre bağlı sağlamak için belirli bir aralıkta bir sayı olabilir. Bu durumda, aşağıdaki yordamı kullanın.  
+    Sık, daha karmaşık bir formül daha basit bir değerler kümesi tarafından denetlenmesi için görünürlük istersiniz. Örneğin, belirli türde bir bağlantı sayısına bağlı olarak bir simgesi vardır ya da bir olup olmadığına göre bağlı sağlamak için belirli bir aralıkta bir sayı olabilir. Bu durumda, aşağıdaki yordamı kullanın.  
   
 #### <a name="to-control-the-visibility-of-a-decorator-based-on-a-formula"></a>Bir formüle göre bir dekoratörün görünürlüğünü denetleme için  
   

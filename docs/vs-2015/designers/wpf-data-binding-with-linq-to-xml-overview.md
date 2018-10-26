@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 985dfb5193082f22431db3384cc6a652f36cfb2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 457a097d46f9af409580d3784bb577090db0c535
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247279"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852420"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>LINQ to XML genel bakış ile WPF verilerini bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Bu konu, dinamik veri bağlama özellikleri tanıtır <xref:System.Xml.Linq> ad 
   
  XAML ve LINQ to XML etkileşim kurabilir, geniş iki yolu vardır:  
   
--   XAML dosyaları doğru biçimlendirilmiş olduğundan, XML, sorgulanabilen ve LINQ to XML gibi XML teknolojileri aracılığıyla yönetilebilir.  
+- XAML dosyaları doğru biçimlendirilmiş olduğundan, XML, sorgulanabilen ve LINQ to XML gibi XML teknolojileri aracılığıyla yönetilebilir.  
   
--   LINQ to XML sorgularında temsil ettiği için bir veri kaynağı, bu sorgular için veri bağlama WPF kullanıcı Arabirimi öğeleri için bir veri kaynağı olarak kullanılabilir.  
+- LINQ to XML sorgularında temsil ettiği için bir veri kaynağı, bu sorgular için veri bağlama WPF kullanıcı Arabirimi öğeleri için bir veri kaynağı olarak kullanılabilir.  
   
- Bu belgede, ikinci senaryo açıklanmaktadır.  
+  Bu belgede, ikinci senaryo açıklanmaktadır.  
   
 ## <a name="data-binding-in-the-windows-presentation-foundation"></a>Veri Windows Presentation Foundation'da bağlama  
  WPF verilerini bağlama özelliklerinden birine bir veri kaynağı ile ilişkilendirmek bir kullanıcı Arabirimi öğesi sağlar. Bu basit örnekte bir <xref:System.Windows.Controls.Label> metni bir genel özelliğinin değeri bir kullanıcı tanımlı nesne sunar. WPF verilerini bağlama hakkında aşağıdaki bileşenleri kullanır:  
@@ -52,13 +52,13 @@ Bu konu, dinamik veri bağlama özellikleri tanıtır <xref:System.Xml.Linq> ad 
 ### <a name="dynamic-data-binding-in-wpf"></a>Dinamik veri bağlama ' WPF'de  
  Varsayılan olarak, veri bağlama, yalnızca hedef UI öğesi başlatıldığında gerçekleşir. Bu adlandırılır *tek seferlik* bağlama. Birçok amaç için yetersiz budur; genellikle bir veri bağlama çözüm değişiklikleri aşağıdakilerden birini kullanarak çalışma zamanında dinamik olarak dağıtılmasını gerektirir:  
   
--   *Tek yönlü* bağlama otomatik olarak dağıtılmasını bir tarafı değişiklikleri neden olur. En yaygın olarak, hedef kaynak değişiklikler yansıtılır, ancak tersi bazı durumlarda yararlı olabilir.  
+- *Tek yönlü* bağlama otomatik olarak dağıtılmasını bir tarafı değişiklikleri neden olur. En yaygın olarak, hedef kaynak değişiklikler yansıtılır, ancak tersi bazı durumlarda yararlı olabilir.  
   
--   İçinde *iki yönlü* bağlamayı kaynağında yapılan değişiklikler hedefte otomatik olarak yayılır ve hedefte yapılan değişiklikler kaynağı için otomatik olarak yayılır.  
+- İçinde *iki yönlü* bağlamayı kaynağında yapılan değişiklikler hedefte otomatik olarak yayılır ve hedefte yapılan değişiklikler kaynağı için otomatik olarak yayılır.  
   
- Tek veya çift yönlü gerçekleşmesi için bağlama için kaynak değişikliği bildirim mekanizması, örneğin uygulayarak uygulamalıdır <xref:System.ComponentModel.INotifyPropertyChanged> kullanarak veya arabirim bir *PropertyNameChanged* desteklenen her bir özellik için bir desen.  
+  Tek veya çift yönlü gerçekleşmesi için bağlama için kaynak değişikliği bildirim mekanizması, örneğin uygulayarak uygulamalıdır <xref:System.ComponentModel.INotifyPropertyChanged> kullanarak veya arabirim bir *PropertyNameChanged* desteklenen her bir özellik için bir desen.  
   
- WPF veri bağlama hakkında daha fazla bilgi için bkz: [veri bağlama (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e).  
+  WPF veri bağlama hakkında daha fazla bilgi için bkz: [veri bağlama (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e).  
   
 ## <a name="dynamic-properties-in-linq-to-xml-classes"></a>LINQ to XML sınıfları dinamik özellikleri  
  Çoğu LINQ to XML sınıfları uygun WPF dinamik veri kaynağı olarak uygun değil: bazı faydalı bilgiler, yalnızca yöntemler (ve özellikleri) kullanılabilir ve bu sınıflar özelliklerinde değişiklik bildirimleri uygulamayın. LINQ to XML WPF verilerini bağlama desteklemek için bir dizi kullanıma sunan *Dinamik Özellikler*.  
@@ -71,13 +71,13 @@ Bu konu, dinamik veri bağlama özellikleri tanıtır <xref:System.Xml.Linq> ad 
 ### <a name="accessing-dynamic-properties"></a>Dinamik özelliklerine erişme  
  Dinamik Özellikler <xref:System.Xml.Linq.XAttribute> ve <xref:System.Xml.Linq.XElement> sınıflar gibi standart özelliklere erişilemez. Örneğin, C# gibi CLR uyumlu dilde bunlar olamaz:  
   
--   Doğrudan derleme zamanında erişilir. Dinamik özellikler, derleyici ve Visual Studio IntelliSense için görünmez.  
+- Doğrudan derleme zamanında erişilir. Dinamik özellikler, derleyici ve Visual Studio IntelliSense için görünmez.  
   
--   .NET yansıma kullanarak bulunan veya erişilen, çalışma zamanı. Bile çalışma zamanında, temel CLR algılama özellikleri değiller.  
+- .NET yansıma kullanarak bulunan veya erişilen, çalışma zamanı. Bile çalışma zamanında, temel CLR algılama özellikleri değiller.  
   
- C# içinde dinamik özellikler yalnızca çalışma zamanında tarafından sağlanan özellikleri aracılığıyla erişilebilir <xref:System.ComponentModel> ad alanı.  
+  C# içinde dinamik özellikler yalnızca çalışma zamanında tarafından sağlanan özellikleri aracılığıyla erişilebilir <xref:System.ComponentModel> ad alanı.  
   
- Buna karşılık, ancak bir XML kaynağı dinamik özellikleri basit bir gösterim aşağıdaki biçimde aracılığıyla erişilebilir:  
+  Buna karşılık, ancak bir XML kaynağı dinamik özellikleri basit bir gösterim aşağıdaki biçimde aracılığıyla erişilebilir:  
   
 ```  
 <object>.<dynamic-property>  

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bdb8719174b4a5fb66dcf79db04d2ea3ea565381
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 00abfd827bf98d79e74ecbaf9a01efdc7761c3ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203796"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881709"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Nasıl yapılır: sanal kullanıcı etkinlik grafiğini kullanarak yük testi sırasında sanal kullanıcıların ne yaptıklarını çözümleme
 
@@ -39,67 +39,67 @@ Aşağıdaki yordamlar nasıl görüntüleneceğini göstermektedir **sanal kull
 
 ## <a name="to-investigate-a-specific-users-activity-in-the-virtual-user-activity-chart"></a>Sanal kullanıcı aktivite grafiği, belirli bir kullanıcının etkinlik incelemek için
 
-1.  Zaman dönemi aracına yakınlaştırma alt kısmında kullanmak **sanal kullanıcı aktivite grafiği** istediğiniz belirli bir kullanıcı ayrıntılarını incelemek için grafik üzerinde bir alanı seçin.
+1. Zaman dönemi aracına yakınlaştırma alt kısmında kullanmak **sanal kullanıcı aktivite grafiği** istediğiniz belirli bir kullanıcı ayrıntılarını incelemek için grafik üzerinde bir alanı seçin.
 
-2.  Graftaki bir ayrıntı üzerinde gezdirin. Aşağıdaki bilgiler, araç ipucunda görüntülendiğini görürsünüz:
+2. Graftaki bir ayrıntı üzerinde gezdirin. Aşağıdaki bilgiler, araç ipucunda görüntülendiğini görürsünüz:
 
-    -   **Kullanıcı Kimliği**
+   - **Kullanıcı Kimliği**
 
-    -   **Senaryo**
+   - **Senaryo**
 
-    -   **Test**
+   - **Test**
 
-    -   **URL** (bir test veya işlem göstermez)
+   - **URL** (bir test veya işlem göstermez)
 
-    -   **Sonucu**
+   - **Sonucu**
 
-    -   **Tarayıcı** (bir test veya işlem göstermez)
+   - **Tarayıcı** (bir test veya işlem göstermez)
 
-    -   **Ağ**
+   - **Ağ**
 
-    -   **Başlangıç saati**
+   - **Başlangıç saati**
 
-    -   **Süresi**
+   - **Süresi**
 
-    -   **Aracı**
+   - **Aracı**
 
-    -   **Test günlüğü** (test günlüğü bağlantı)
+   - **Test günlüğü** (test günlüğü bağlantı)
 
-        > [!NOTE]
-        > Seçerseniz, uygulamanızın hata ayıklamaya yardımcı olmak için **Test günlüğü** bağlantı, web testi sonucu veya birim test sonucu açık günlükle ilişkilendirilmiş.
+     > [!NOTE]
+     > Seçerseniz, uygulamanızın hata ayıklamaya yardımcı olmak için **Test günlüğü** bağlantı, web testi sonucu veya birim test sonucu açık günlükle ilişkilendirilmiş.
 
      Ardından, filtreleme ve vurgulama işlemleri bulunan kullanabilirsiniz **sanal kullanıcı aktivite grafiği**.
 
 ## <a name="to-use-filtering-options-in-the-virtual-user-activity-chart"></a>Sanal kullanıcı aktivite grafiği filtreleme seçeneklerini kullanmak için
 
-1.  İçinde **ayrıntı göstergesi**, ya da seçmek için açılan listeyi kullanın **Test**, **sayfa**, veya **işlem**.
+1. İçinde **ayrıntı göstergesi**, ya da seçmek için açılan listeyi kullanın **Test**, **sayfa**, veya **işlem**.
 
-     **Ayrıntı göstergesi panel**
+    **Ayrıntı göstergesi panel**
 
-     ![Ayrıntı göstergesi panel](../test/media/ltest_detailslegend.png)
+    ![Ayrıntı göstergesi panel](../test/media/ltest_detailslegend.png)
 
-2.  Hatalar, günlükleri, test, arama ve yük testi ile ilişkili aspx sayfaları için onay kutularının işaretini kaldırın veya seçin.
+2. Hatalar, günlükleri, test, arama ve yük testi ile ilişkili aspx sayfaları için onay kutularının işaretini kaldırın veya seçin.
 
-     **Sanal kullanıcı aktivite grafiği** uygun şekilde güncelleştirir.
+    **Sanal kullanıcı aktivite grafiği** uygun şekilde güncelleştirir.
 
-     **Sanal kullanıcı aktivite grafiği** testler, sayfalar ve işlemleri birkaç farklı ölçütlere göre filtreleme olanağı sağlar. Görünümden belirli testleri kaldırın veya tüm başarılı testleri kaldırın veya bazı hatalarla başarısız testleri Kaldır. Ayrıca, günlükleri olmayan tüm testleri de kaldırabilirsiniz.
+    **Sanal kullanıcı aktivite grafiği** testler, sayfalar ve işlemleri birkaç farklı ölçütlere göre filtreleme olanağı sağlar. Görünümden belirli testleri kaldırın veya tüm başarılı testleri kaldırın veya bazı hatalarla başarısız testleri Kaldır. Ayrıca, günlükleri olmayan tüm testleri de kaldırabilirsiniz.
 
-     Örneğin, seçebileceğiniz **(hataları vurgula)** tüm hataları grafikte görüntüleyen seçeneği kırmızı renkli. Belirleyebilirsiniz **(Günlüklü sonuçları vurgula)** grafikteki yeşil renkli günlükleri olan tüm test sonuçlarını görüntüleyen seçeneği.
+    Örneğin, seçebileceğiniz **(hataları vurgula)** tüm hataları grafikte görüntüleyen seçeneği kırmızı renkli. Belirleyebilirsiniz **(Günlüklü sonuçları vurgula)** grafikteki yeşil renkli günlükleri olan tüm test sonuçlarını görüntüleyen seçeneği.
 
-     **Sonuçlar paneli Filtrele**
+    **Sonuçlar paneli Filtrele**
 
-     ![Sonuçlar paneli Filtrele](../test/media/ltest_filterresults.png)
+    ![Sonuçlar paneli Filtrele](../test/media/ltest_filterresults.png)
 
-3.  İçinde **sonuçlarını filtreleme**seçin veya aşağıdaki filtre seçenekleri için onay kutularını temizleyin:
+3. İçinde **sonuçlarını filtreleme**seçin veya aşağıdaki filtre seçenekleri için onay kutularını temizleyin:
 
-    -   **Yalnızca Günlüklü sonuçları göster** yalnızca test test günlüklerinin ilişkili olan sonuçları görüntüler.
+   - **Yalnızca Günlüklü sonuçları göster** yalnızca test test günlüklerinin ilişkili olan sonuçları görüntüler.
 
-    -   **Başarılı sonuçları göster** başarılı sonuçları görüntüler.
+   - **Başarılı sonuçları göster** başarılı sonuçları görüntüler.
 
-    -   **Hatalı sonuçları göster** hata ayıklamaya yardımcı olabilecek hatalı sonuçları görüntüler.
+   - **Hatalı sonuçları göster** hata ayıklamaya yardımcı olabilecek hatalı sonuçları görüntüler.
 
-        > [!NOTE]
-        > Altında listelenen hata türleri listesi **hatalı sonuçları göster** düğüm daha fazla araştırılması seçerek **tabloları** düğmesine **Web Performans Test Sonuçları Görüntüleyicisi** araç çubuğu. Daha fazla bilgi için [yük testi sonuçlarını ve hatalarını Tablo görünümünde çözümlemek](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+     > [!NOTE]
+     > Altında listelenen hata türleri listesi **hatalı sonuçları göster** düğüm daha fazla araştırılması seçerek **tabloları** düğmesine **Web Performans Test Sonuçları Görüntüleyicisi** araç çubuğu. Daha fazla bilgi için [yük testi sonuçlarını ve hatalarını Tablo görünümünde çözümlemek](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
      **Sanal kullanıcı aktivite grafiği** uygun şekilde güncelleştirir.
 

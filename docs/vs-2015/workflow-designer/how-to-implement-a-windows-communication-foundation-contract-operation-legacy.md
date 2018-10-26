@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 97e6e72a7de4a9da7dc5086a2fecaea2b378b553
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a3c3d76257f27023beca6cd480137114b0161b12
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264166"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813552"
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Nasıl yapılır: bir Windows Communication Foundation sözleşme işlemi (eski) uygulama
 Bu konu nasıl uygulanacağını açıklar bir [!INCLUDE[indigo1](../includes/indigo1-md.md)] sözleşme işlemi kullanılarak [!INCLUDE[wfd1](../includes/wfd1-md.md)] hedefleyen [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -26,31 +26,31 @@ Bu konu nasıl uygulanacağını açıklar bir [!INCLUDE[indigo1](../includes/in
   
 ### <a name="to-implement-a-wcf-contract-operation"></a>Bir WCF sözleşmesi işlemini uygulamak için  
   
-1.  Çift **ReceiveActivity** etkinlik Tasarımcısı'nda veya yanındaki üç noktaya tıklayın **ServiceOperationInfo** özelliğinde **özellikleri** bölmesi.  
+1. Çift **ReceiveActivity** etkinlik Tasarımcısı'nda veya yanındaki üç noktaya tıklayın **ServiceOperationInfo** özelliğinde **özellikleri** bölmesi.  
   
-2.  Aşağıdakilerden birini yapın:  
+2. Aşağıdakilerden birini yapın:  
   
-    -   Tıklayın **ekleme Sözleşme** iletişim kutusunun sağ alt köşesindeki. Bu yeni bir oluşturur [!INCLUDE[indigo2](../includes/indigo2-md.md)] sözleşme ve sizin için işlem.  
+   - Tıklayın **ekleme Sözleşme** iletişim kutusunun sağ alt köşesindeki. Bu yeni bir oluşturur [!INCLUDE[indigo2](../includes/indigo2-md.md)] sözleşme ve sizin için işlem.  
   
-         veya  
+      veya  
   
-    -   Tıklayın **alma** iletişim kutusunun sağ alt köşesindeki. [Göz atın ve bir .NET türünü seç iletişim kutusu (eski)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md) açılır. Bir derleme veya istediğiniz sözleşme içeren proje arayın. Sözleşme seçin ve tıklayın **Tamam**.  
+   - Tıklayın **alma** iletişim kutusunun sağ alt köşesindeki. [Göz atın ve bir .NET türünü seç iletişim kutusu (eski)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md) açılır. Bir derleme veya istediğiniz sözleşme içeren proje arayın. Sözleşme seçin ve tıklayın **Tamam**.  
   
      Bir sözleşme oluşturulan veya içeri sonra oluşturulan veya içeri aktarılan anlaşması için yeni işlemleri ekleyebilirsiniz. Yeni işlem eklemek, sözleşmeyi seçin ve **ekleme işlemi** iletişim kutusunun sağ alt köşesindeki. Ekleme işlemleri tamamladığınızda, 3. adıma geçin.  
   
-3.  İle ilişkilendirmek istediğiniz işlemi seçin **ReceiveActivity** etkinlik. İşlemi tanımı, işlem adı, parametreleri, özellikleri ve izin ayarlarını değiştirerek değiştirebilirsiniz.  
+3. İle ilişkilendirmek istediğiniz işlemi seçin **ReceiveActivity** etkinlik. İşlemi tanımı, işlem adı, parametreleri, özellikleri ve izin ayarlarını değiştirerek değiştirebilirsiniz.  
   
-     Adı değiştirmek için yeni adı girin. **işlem adı** metin kutusu.  
+    Adı değiştirmek için yeni adı girin. **işlem adı** metin kutusu.  
   
-     Tıklayın **parametreleri** işlemin parametrelerinin erişmek için sekmesinde. Adı, türü veya parametre yönünü değiştirme yanı sıra ekleyebilir veya işlemi parametreleri silebilirsiniz.  
+    Tıklayın **parametreleri** işlemin parametrelerinin erişmek için sekmesinde. Adı, türü veya parametre yönünü değiştirme yanı sıra ekleyebilir veya işlemi parametreleri silebilirsiniz.  
   
-     Tıklayın **özellikleri** işlemin işlem koruma düzeyi ve desteklenen ileti exchange işlevine erişmek için sekmesinde.  
+    Tıklayın **özellikleri** işlemin işlem koruma düzeyi ve desteklenen ileti exchange işlevine erişmek için sekmesinde.  
   
-     Tıklayın **izinleri** işlemini uygulamak için hangi grupları izin verildiğini belirtmek için sekmesinde.  
+    Tıklayın **izinleri** işlemini uygulamak için hangi grupları izin verildiğini belirtmek için sekmesinde.  
   
-4.  Tıklayın **Tamam** ve **ReceiveActivity** etkinlik, işlem adı uyguladığı işlemi için görüntülenir.  
+4. Tıklayın **Tamam** ve **ReceiveActivity** etkinlik, işlem adı uyguladığı işlemi için görüntülenir.  
   
-5.  Bu işlem içinde uygulanması için kullanılacak seçeceğiz iş akışı etkinliklerin **ReceiveActivity** etkinlik.  
+5. Bu işlem içinde uygulanması için kullanılacak seçeceğiz iş akışı etkinliklerin **ReceiveActivity** etkinlik.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İşlem iletişim kutusu (eski) seçin](../workflow-designer/choose-operation-dialog-box-legacy.md)   

@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5425dc16b40495d1a9ab9010ac90fe6b552d02e9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 2db812268b991d6160e515da5a3922ef47bb7a13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858008"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886532"
 ---
 # <a name="t4-parameter-directive"></a>T4 Parametre Yönergesi
 
@@ -40,7 +40,6 @@ Visual Studio metin şablonunda, `parameter` yönergesine geçirilen dış bağl
 <# for (int i = 0; i < TimesToRepeat; i++) { #>
 Line <#= i #>
 <# } #>
-
 ```
 
 ## <a name="passing-parameter-values-to-a-template"></a>Bir şablon parametre değerlerini geçirme
@@ -59,7 +58,6 @@ session["TimesToRepeat"] = 5;
 // Process a text template:
 string result = t4.ProcessTemplate("MyTemplateFile.t4",
   System.IO.File.ReadAllText("MyTemplateFile.t4"));
-
 ```
 
 ## <a name="passing-values-in-the-call-context"></a>Değerleri çağrı bağlamında geçirme
@@ -84,7 +82,6 @@ string result = t4.ProcessTemplate("",
 
 // Result value is:
 //     Test 32 test
-
 ```
 
 ## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Değerlerin bir çalışma zamanı (önceden işlenmiş) metin şablonu
@@ -99,7 +96,6 @@ t.Session["TimesToRepeat"] = 5;
 // Add other parameter values to t.Session here.
 t.Initialize(); // Must call this to transfer values.
 string resultText = t.TransformText();
-
 ```
 
 ## <a name="obtaining-arguments-from-texttemplateexe"></a>Bağımsız değişkenler TextTemplate.exe edinme

@@ -13,12 +13,12 @@ ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a818bf9b1975692c220b2be82b2fed7ca97fad13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a8a1336ca880a3824e16f432c07ccf0caa769f60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255755"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872544"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Görüntüler ve Visual Studio için simgeler
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,21 +45,21 @@ ms.locfileid: "49255755"
 ### <a name="overview"></a>Genel Bakış  
  Visual Studio temiz geometri ve olumlu/olumsuz (Açık/Koyu) 50/50 dengesi ve doğrudan, anlaşılır metaphors kullanan modern stili simgeleri kullanır. Anlaşılabilir olması adına, basitleştirme ve bağlam önemli simgesi tasarım noktaları Merkezi.  
   
--   **Anlaşılabilir olması adına:** bireyselliğinizi ve anlamı bir simge sağlayan çekirdek benzetimini odaklanın.  
+- **Anlaşılabilir olması adına:** bireyselliğinizi ve anlamı bir simge sağlayan çekirdek benzetimini odaklanın.  
   
--   **Basitleştirme:** simgesi çekirdek anlamını azaltmak – yalnızca gerekli öğe ve hiçbir frills temayı alın.  
+- **Basitleştirme:** simgesi çekirdek anlamını azaltmak – yalnızca gerekli öğe ve hiçbir frills temayı alın.  
   
--   **Bağlam:** simgesinin çekirdek benzetimini hangi öğelerin oluşturan verirken önemli kavram geliştirme sırasında bir simgenin rolü tüm yönlerini göz önünde bulundurun.  
+- **Bağlam:** simgesinin çekirdek benzetimini hangi öğelerin oluşturan verirken önemli kavram geliştirme sırasında bir simgenin rolü tüm yönlerini göz önünde bulundurun.  
   
- Simgeler ile birkaç önlemek için tasarım noktaları vardır:  
+  Simgeler ile birkaç önlemek için tasarım noktaları vardır:  
   
--   Uygun olduğunda kullanıcı Arabirimi öğeleri hariç geldiğiniz simgeler kullanmayın. Kullanıcı Arabirimi öğesi ne ortak, yetkisiz değiştirmeye karşı korumalı veya benzersiz değil daha soyut veya sembolik bir yaklaşım belirleyin.  
+- Uygun olduğunda kullanıcı Arabirimi öğeleri hariç geldiğiniz simgeler kullanmayın. Kullanıcı Arabirimi öğesi ne ortak, yetkisiz değiştirmeye karşı korumalı veya benzersiz değil daha soyut veya sembolik bir yaklaşım belirleyin.  
   
--   Belgeler, klasörleri, oklar ve Büyüteç gibi sık kullanılan öğeleri aşırı yok. Bu öğeler simgenin anlamı için yalnızca gerekli olduğunda kullanın. Örneğin, sağ taraftaki Büyüteç yalnızca arama belirtmelidir göz atın ve bulun.  
+- Belgeler, klasörleri, oklar ve Büyüteç gibi sık kullanılan öğeleri aşırı yok. Bu öğeler simgenin anlamı için yalnızca gerekli olduğunda kullanın. Örneğin, sağ taraftaki Büyüteç yalnızca arama belirtmelidir göz atın ve bulun.  
   
--   Bazı eski simge öğeleri perspektif kullanımını korumak olsa da, yeni simgeler olmadan netlik öğesi eksik sürece perspektif ile oluşturmayın.  
+- Bazı eski simge öğeleri perspektif kullanımını korumak olsa da, yeni simgeler olmadan netlik öğesi eksik sürece perspektif ile oluşturmayın.  
   
--   Çok fazla simge bilgileri borçlarını yok. Kolayca tanınan veya tanınabilir bir sembol öğrenilen basit bir görüntü çok daha fazla karmaşık bir görüntüden daha kullanışlıdır. Yazının tamamını bir simge bildiremez.  
+- Çok fazla simge bilgileri borçlarını yok. Kolayca tanınan veya tanınabilir bir sembol öğrenilen basit bir görüntü çok daha fazla karmaşık bir görüntüden daha kullanışlıdır. Yazının tamamını bir simge bildiremez.  
   
 ### <a name="icon-creation"></a>Simge oluşturma  
   
@@ -266,19 +266,19 @@ ms.locfileid: "49255755"
 ### <a name="icon-construction"></a>Simge oluşturma  
  Visual Studio'da küçük simge boyutu 16 x 16'dır. En büyük ortak 32 x 32 kullanılır. Tüm 16 x 16, 24 x 24 veya 32 x 32 çerçevesi simge tasarlarken değil doldurmaya göz önünde bulundurun. Kullanıcı tanımayı okunaklı ve Tekdüzen bir simge oluşturma gereklidir. Aşağıdaki noktalara simgeler derlerken uyar.  
   
--   Simgeler, NET, anlaşılır ve tutarlı olması gerekir.  
+- Simgeler, NET, anlaşılır ve tutarlı olması gerekir.  
   
--   Durum bildirim öğeleri tek simgeler olarak kullanın ve bunları yığın üzerine bir simge temel öğe değil için iyidir. Belirli bağlamlarda Bu, temel bir öğe ile eşleştirmeye durum öğesi kullanıcı Arabirimi gerektirebilir.  
+- Durum bildirim öğeleri tek simgeler olarak kullanın ve bunları yığın üzerine bir simge temel öğe değil için iyidir. Belirli bağlamlarda Bu, temel bir öğe ile eşleştirmeye durum öğesi kullanıcı Arabirimi gerektirebilir.  
   
--   Proje simgeleri genellikle, çeşitli boyutlarda içeren .ico dosyalardır. Yalnızca 16 x 16, 24 x 24 ve 32 x 32 simgeler güncelleştiriliyor. Çoğu 16 x 16 ve 24 x 24 simgeleri aynı öğeleri içerir. 32 x 32 simgeler, uygun olduğunda proje dil türü de dahil olmak üzere daha fazla ayrıntı içerir.  
+- Proje simgeleri genellikle, çeşitli boyutlarda içeren .ico dosyalardır. Yalnızca 16 x 16, 24 x 24 ve 32 x 32 simgeler güncelleştiriliyor. Çoğu 16 x 16 ve 24 x 24 simgeleri aynı öğeleri içerir. 32 x 32 simgeler, uygun olduğunda proje dil türü de dahil olmak üzere daha fazla ayrıntı içerir.  
   
--   32 x 32 simgelerini temel öğeler, genellikle 2-piksel çizgi kalınlığı sahiptir. 1 veya 2 piksel çizgi kalınlığı ayrıntı öğeler için kullanılabilir. Sağduyunuzu en iyi, daha uygun olduğunu belirlemek için kullanın.  
+- 32 x 32 simgelerini temel öğeler, genellikle 2-piksel çizgi kalınlığı sahiptir. 1 veya 2 piksel çizgi kalınlığı ayrıntı öğeler için kullanılabilir. Sağduyunuzu en iyi, daha uygun olduğunu belirlemek için kullanın.  
   
--   En az 1 piksel aralığı 24 x 24 simgeler ile öğeler için 16 x 16 arasındaki vardır. 2-piksel aralığı ve değiştiricisi ile temel öğe öğeleri arasındaki 32 x 32 simgelerini kullanın.  
+- En az 1 piksel aralığı 24 x 24 simgeler ile öğeler için 16 x 16 arasındaki vardır. 2-piksel aralığı ve değiştiricisi ile temel öğe öğeleri arasındaki 32 x 32 simgelerini kullanın.  
   
- ![Öğe aralığı için 16 x 16, 24 x 24 ve 32 x 32 bir simge](../../extensibility/ux-guidelines/media/0404-47-elementspacing.png "0404 47_ElementSpacing")  
+  ![Öğe aralığı için 16 x 16, 24 x 24 ve 32 x 32 bir simge](../../extensibility/ux-guidelines/media/0404-47-elementspacing.png "0404 47_ElementSpacing")  
   
- **Öğe aralığı simgeler için 16 x 16, 24 x 24 ve 32 x 32 boyutu**  
+  **Öğe aralığı simgeler için 16 x 16, 24 x 24 ve 32 x 32 boyutu**  
   
 #### <a name="color-and-accessibility"></a>Renk ve erişilebilirlik  
  Visual Studio uyumluluk yönergelerine üründeki tüm simgeleri renk ve karşıtlık erişilebilirlik gereksinimleri geçmesi gerekir. Bu simge tersine çevirme sağlanır ve tasarlarken, bunlar program aracılığıyla ürününde çevrilmemesi farkında olmalıdır.  

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf5d738751a4873858aaa1ad80179663d9a7b767
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 3c65f827af864a32bb13a90a0ba9818467298527
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495953"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835168"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>İzlenecek yol: C# veya Visual Basic kullanarak SDK oluşturma
 Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak oluşturma ve sonra bir Visual Studio Uzantısı (VSIX) olarak SDK paketini öğreneceksiniz. Aşağıdaki yordamları tamamlamanız:  
@@ -31,29 +31,29 @@ Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak ol
   
 ##  <a name="createClassLibrary"></a> SimpleMath Windows çalışma zamanı bileşeni oluşturma  
   
-1.  Menü çubuğunda, **dosya** > **yeni** > **yeni proje**.  
+1. Menü çubuğunda, **dosya** > **yeni** > **yeni proje**.  
   
-2.  Şablonlar listesinde genişletin **Visual C#** veya **Visual Basic**, seçin **Windows Store** düğümünü seçip **Windows çalışma zamanı bileşeni** şablonu.  
+2. Şablonlar listesinde genişletin **Visual C#** veya **Visual Basic**, seçin **Windows Store** düğümünü seçip **Windows çalışma zamanı bileşeni** şablonu.  
   
-3.  İçinde **adı** kutusunda, belirtin **SimpleMath**ve ardından **Tamam** düğmesi.  
+3. İçinde **adı** kutusunda, belirtin **SimpleMath**ve ardından **Tamam** düğmesi.  
   
-4.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **SimpleMath** proje düğümünü ve ardından **özellikleri**.  
+4. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **SimpleMath** proje düğümünü ve ardından **özellikleri**.  
   
-5.  Yeniden adlandırma **Class1.cs** için **Arithmetic.cs** ve aşağıdaki kodu eşleşecek şekilde güncelleştirin:  
+5. Yeniden adlandırma **Class1.cs** için **Arithmetic.cs** ve aşağıdaki kodu eşleşecek şekilde güncelleştirin:  
   
-     [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
-     [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
+    [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
+    [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
   
-6.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **çözüm 'SimpleMath'** düğümünü seçip **Configuration Manager**.  
+6. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **çözüm 'SimpleMath'** düğümünü seçip **Configuration Manager**.  
   
-     **Configuration Manager** iletişim kutusu açılır.  
+    **Configuration Manager** iletişim kutusu açılır.  
   
-7.  İçinde **etkin çözüm yapılandırması** listesinde **yayın**.  
+7. İçinde **etkin çözüm yapılandırması** listesinde **yayın**.  
   
-8.  İçinde **yapılandırma** sütun doğrulayın **SimpleMath** satır kümesine **yayın**ve ardından **Kapat** kabul etmek için düğmeyi değiştirin.  
+8. İçinde **yapılandırma** sütun doğrulayın **SimpleMath** satır kümesine **yayın**ve ardından **Kapat** kabul etmek için düğmeyi değiştirin.  
   
-    > [!IMPORTANT]
-    >  Yalnızca bir yapılandırma SimpleMath bileşeni için SDK'sı içerir. Bu yapılandırma sürüm yapısı olmanız veya bileşen kullanan uygulamalar olmaz sertifika için geçirmeniz[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].  
+   > [!IMPORTANT]
+   >  Yalnızca bir yapılandırma SimpleMath bileşeni için SDK'sı içerir. Bu yapılandırma sürüm yapısı olmanız veya bileşen kullanan uygulamalar olmaz sertifika için geçirmeniz[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].  
   
 9. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **SimpleMath** proje düğümünü ve ardından **yapı**.  
   
@@ -154,23 +154,23 @@ Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak ol
   
 ##  <a name="createSample"></a> Sınıf kitaplığı kullanan örnek bir uygulama oluşturmak için  
   
-1.  Menü çubuğunda, **dosya** > **yeni** > **yeni proje**.  
+1. Menü çubuğunda, **dosya** > **yeni** > **yeni proje**.  
   
-2.  Şablonlar listesinde genişletin **Visual C#** veya **Visual Basic**ve ardından **Windows Store** düğümü.  
+2. Şablonlar listesinde genişletin **Visual C#** veya **Visual Basic**ve ardından **Windows Store** düğümü.  
   
-3.  Seçin **boş uygulama** şablon, proje adı **ArithmeticUI**ve ardından **Tamam** düğmesi.  
+3. Seçin **boş uygulama** şablon, proje adı **ArithmeticUI**ve ardından **Tamam** düğmesi.  
   
-4.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **ArithmeticUI** proje ve ardından **Ekle** > **başvuru**.  
+4. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **ArithmeticUI** proje ve ardından **Ekle** > **başvuru**.  
   
-5.  Başvuru türlerinin listesinde, **Windows**ve ardından **uzantıları**.  
+5. Başvuru türlerinin listesinde, **Windows**ve ardından **uzantıları**.  
   
-6.  Ayrıntılar bölmesinde **basit matematik SDK** uzantısı.  
+6. Ayrıntılar bölmesinde **basit matematik SDK** uzantısı.  
   
-     SDK'nızı hakkında ek bilgiler görüntülenir. Seçebileceğiniz **daha fazla bilgi** açmak için bağlantıyı https://msdn.microsoft.com/, bu kılavuzda daha önce açıklanan SDKManifest.xml dosyasında belirtildiği gibi.  
+    SDK'nızı hakkında ek bilgiler görüntülenir. Seçebileceğiniz **daha fazla bilgi** açmak için bağlantıyı https://msdn.microsoft.com/, bu kılavuzda daha önce açıklanan SDKManifest.xml dosyasında belirtildiği gibi.  
   
-7.  İçinde **başvuru Yöneticisi** iletişim kutusunda **basit matematik SDK** onay kutusunu işaretleyin ve ardından **Tamam** düğmesi.  
+7. İçinde **başvuru Yöneticisi** iletişim kutusunda **basit matematik SDK** onay kutusunu işaretleyin ve ardından **Tamam** düğmesi.  
   
-8.  Menü çubuğunda, **görünümü** > **Nesne Tarayıcısı**.  
+8. Menü çubuğunda, **görünümü** > **Nesne Tarayıcısı**.  
   
 9. İçinde **Gözat** listesinde **basit matematik**.  
   
@@ -239,7 +239,7 @@ Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak ol
   
      Doğru sonucu görünür.  
   
- Başarıyla oluşturulan ve bir uzantı SDK'sı kullanılıyor.  
+    Başarıyla oluşturulan ve bir uzantı SDK'sı kullanılıyor.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [İzlenecek yol: C++ kullanarak SDK oluşturma](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   

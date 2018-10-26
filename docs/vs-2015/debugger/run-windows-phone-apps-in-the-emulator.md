@@ -19,12 +19,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e17d1af4af50981b1c816d52444f3028162345c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5027c9d40d37aeaee6186662567a009fb051900e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237074"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812616"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Öykünücüde Windows Phone uygulamaları çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ Windows Phone öykünücü hata ayıklama ve fiziksel bir cihaz olmadan bilgisay
   
  Bir Windows Phone uygulaması Windows Phone öykünücüsü ilk kez çalıştırdığınızda, aşağıdaki olaylar gerçekleşir:  
   
-1.  Öykünücü başlatılır.  
+1. Öykünücü başlatılır.  
   
-2.  Öykünücüyü Windows Phone işletim sistemi yükler.  
+2. Öykünücüyü Windows Phone işletim sistemi yükler.  
   
-3.  Öykünücüyü Windows Phone başlangıç ekranı görüntüler.  
+3. Öykünücüyü Windows Phone başlangıç ekranı görüntüler.  
   
-4.  Uygulamanızı öykünücüde dağıtılır.  
+4. Uygulamanızı öykünücüde dağıtılır.  
   
-5.  Uygulamanızı öykünücü üzerinde çalışır.  
+5. Uygulamanızı öykünücü üzerinde çalışır.  
   
- Seçilen öykünücü zaten çalışıyorsa, uygulamanızı dağıtılan ve çalışan öykünücüde başlatıldı. Her öykünücü yalnızca bir örneği aynı anda çalıştırabilirsiniz.  
+   Seçilen öykünücü zaten çalışıyorsa, uygulamanızı dağıtılan ve çalışan öykünücüde başlatıldı. Her öykünücü yalnızca bir örneği aynı anda çalıştırabilirsiniz.  
   
 > [!TIP]
 >  Emulator'da uygulamanızı test ederken öykünücü açık olarak bırakın ve yeniden hızlı bir şekilde uygulamanızı çalıştırabilmeniz için hata ayıklama oturumları arasında.  
@@ -75,13 +75,13 @@ Windows Phone öykünücü hata ayıklama ve fiziksel bir cihaz olmadan bilgisay
   
 ##### <a name="to-stop-a-running-app"></a>Çalışan uygulamayı durdurmak için  
   
--   Çalışan uygulamayı durdurmak için aşağıdakilerden birini yapın:  
+- Çalışan uygulamayı durdurmak için aşağıdakilerden birini yapın:  
   
-    -   Visual Studio'da üzerinde **hata ayıklama** menüsünde tıklatın **hata ayıklamayı Durdur**, veya Shift + F5 tuşlarına basın.  
+  - Visual Studio'da üzerinde **hata ayıklama** menüsünde tıklatın **hata ayıklamayı Durdur**, veya Shift + F5 tuşlarına basın.  
   
-    -   Öykünücüde basın **geri** uygulamadan çıkmak için düğme. Uygulamanın etkin sayfa uygulama başlangıç sayfası başarısız olduysa, basmanız gerekebilir **geri** birden çok kez düğmesi.  
+  - Öykünücüde basın **geri** uygulamadan çıkmak için düğme. Uygulamanın etkin sayfa uygulama başlangıç sayfası başarısız olduysa, basmanız gerekebilir **geri** birden çok kez düğmesi.  
   
-     Uygulama çıkışından ve başlangıç ekranı açılır. Bu, geçerli hata ayıklama oturumu sona erer.  
+    Uygulama çıkışından ve başlangıç ekranı açılır. Bu, geçerli hata ayıklama oturumu sona erer.  
   
 ##### <a name="to-restart-an-app-without-debugging"></a>Hata ayıklama olmadan bir uygulamayı yeniden başlatmanız  
   
@@ -122,21 +122,21 @@ Windows Phone öykünücü hata ayıklama ve fiziksel bir cihaz olmadan bilgisay
 ##  <a name="BKMK_buttons"></a> Öykünücü üzerinde sanal donanım düğmeleri kullanın  
  Bir telefonun donanım düğmelerinin kullanımını öykünücü ekranın sağ tarafında sanal donanım düğmeleri kullanarak benzetimini yapar.  
   
--   Tıklayın **güç** görünen açılıp kapatılması benzetimini yapmak için düğme. ' A tıklayın ve telefon kapatma benzetimini yapmak için basılı tutun.  
+- Tıklayın **güç** görünen açılıp kapatılması benzetimini yapmak için düğme. ' A tıklayın ve telefon kapatma benzetimini yapmak için basılı tutun.  
   
--   Tıklayın **birim yukarı** veya **birim aşağı** telefon aramaları ve bildirimler için telefonun Konuşmacı hacmi değiştirme benzetimini yapmak için düğme.  
+- Tıklayın **birim yukarı** veya **birim aşağı** telefon aramaları ve bildirimler için telefonun Konuşmacı hacmi değiştirme benzetimini yapmak için düğme.  
   
--   **Kamera** düğme kamera uygulamayı başlatır. Bir fotoğraf veya bir video kamera uygulamada denetimler kullanılarak alma benzetimini yapabilirsiniz.  
+- **Kamera** düğme kamera uygulamayı başlatır. Bir fotoğraf veya bir video kamera uygulamada denetimler kullanılarak alma benzetimini yapabilirsiniz.  
   
- Aşağıdaki ekran görüntüsünde sanal donanım düğmeleri gösterilir.  
+  Aşağıdaki ekran görüntüsünde sanal donanım düğmeleri gösterilir.  
   
-1.  Sol resmi öykünücü üzerinde başlangıç ekranı görüntüler.  
+1. Sol resmi öykünücü üzerinde başlangıç ekranı görüntüler.  
   
-2.  Ortadaki görüntü dokunma sonra öykünücüyü görüntüler **güç** ekranı kapatmak için düğme.  
+2. Ortadaki görüntü dokunma sonra öykünücüyü görüntüler **güç** ekranı kapatmak için düğme.  
   
-3.  Doğru görüntüye dokunma sonra öykünücü ekranında görüntüler **birim yukarı** birim artırmak için düğme.  
+3. Doğru görüntüye dokunma sonra öykünücü ekranında görüntüler **birim yukarı** birim artırmak için düğme.  
   
- ![Windows Phone öykünücüsü düğmelerini](../debugger/media/wp-emulator-buttons.png "WP_Emulator_buttons")  
+   ![Windows Phone öykünücüsü düğmelerini](../debugger/media/wp-emulator-buttons.png "WP_Emulator_buttons")  
   
 ##  <a name="BKMK_tasks_kbd"></a> Öykünücü ile bilgisayar klavyeyi kullanma  
  Öykünücü, geliştirme bilgisayarınızda bir Windows Phone klavyede donanım klavye eşleme destekler. Anahtarları davranışını bir Windows Phone cihazında aynıdır.  
@@ -175,21 +175,21 @@ Windows Phone öykünücü hata ayıklama ve fiziksel bir cihaz olmadan bilgisay
   
  Örneğin, uygulamanızı birkaç kişi gerektiriyorsa, kişi kayıtlarını bir kez oluşturun ve bir anlık görüntüsünü öykünücüsü. Aksi takdirde öykünücü her başlattığınızda kişi kayıtlarını yeniden oluşturmanız gerekir.  
   
--   Tıklayın **yeni bir kontrol noktası** öykünücü ile verileri ve uygulamanızı daha sonra yeniden test etmek için gereken ayarları durumunun yeni bir anlık görüntü yakalamak için. Yeni bir kontrol noktası eklenen **kontrol noktaları** listesi.  
+- Tıklayın **yeni bir kontrol noktası** öykünücü ile verileri ve uygulamanızı daha sonra yeniden test etmek için gereken ayarları durumunun yeni bir anlık görüntü yakalamak için. Yeni bir kontrol noktası eklenen **kontrol noktaları** listesi.  
   
-     Öykünücüde hata ayıklayıcı bağlıyken bir denetim noktası yakalama gerçekleştiremez.  
+   Öykünücüde hata ayıklayıcı bağlıyken bir denetim noktası yakalama gerçekleştiremez.  
   
--   Bir denetim noktasında seçin **kontrol noktaları** denetim noktası hakkında bilgileri görüntülemek için liste.  
+- Bir denetim noktasında seçin **kontrol noktaları** denetim noktası hakkında bilgileri görüntülemek için liste.  
   
--   Radyo düğmesini işaretleyin **varsayılan** kaydedilmiş bir denetim noktası etkin ve öykünücüsü için varsayılan denetim noktası yapmak için sütun.  
+- Radyo düğmesini işaretleyin **varsayılan** kaydedilmiş bir denetim noktası etkin ve öykünücüsü için varsayılan denetim noktası yapmak için sütun.  
   
--   Tıklayın **geri** öykünücüyü Windows Phone işletim sisteminde yeniden başlatmak ve seçili anlık görüntü yüklemek için.  
+- Tıklayın **geri** öykünücüyü Windows Phone işletim sisteminde yeniden başlatmak ve seçili anlık görüntü yüklemek için.  
   
--   Tıklayın **Sil** artık ihtiyacınız olmayan bir anlık görüntü silinemedi.  
+- Tıklayın **Sil** artık ihtiyacınız olmayan bir anlık görüntü silinemedi.  
   
- Özgün öykünücü görüntüsü, listedeki ilk öğe olarak her zaman görünür **kontrol noktaları** listelemek ve silinmiş veya değiştirilemez. Ancak, başka bir anlık görüntü varsayılan öykünücü görüntüsü seçebilirsiniz.  
+  Özgün öykünücü görüntüsü, listedeki ilk öğe olarak her zaman görünür **kontrol noktaları** listelemek ve silinmiş veya değiştirilemez. Ancak, başka bir anlık görüntü varsayılan öykünücü görüntüsü seçebilirsiniz.  
   
- ![Windows Phone öykünücüsü'nü kontrol noktaları sekmesinde](../debugger/media/wp-emulator-checkpoints.png "WP_Emulator_checkpoints")  
+  ![Windows Phone öykünücüsü'nü kontrol noktaları sekmesinde](../debugger/media/wp-emulator-checkpoints.png "WP_Emulator_checkpoints")  
   
 ##  <a name="BKMK_tasks_shot"></a> Ekran görüntüleri öykünücüsünde yakalama  
  Windows Phone uygulamalarınızın ekran görüntülerini ek araçlar penceresinden ekran aracını kullanarak oluşturabilirsiniz. Aracı, çalışan öykünücüsü çözümleme eşleşen PNG dosyaları oluşturur.  
@@ -198,27 +198,27 @@ Windows Phone öykünücü hata ayıklama ve fiziksel bir cihaz olmadan bilgisay
   
 #### <a name="to-create-an-app-screenshot-by-using-the-built-in-emulator-screenshot-tool"></a>Yerleşik öykünücü ekran aracını kullanarak bir uygulama ekran görüntüsü oluşturmak için  
   
-1.  Ekran görüntüleri kalitesini iyileştirmek için öykünücü yakınlaştırma seviyesini yüzde 100 olarak ayarlayın. Daha yüksek ekran kalitesini iyi yakınlaştırma düzeyini ayarlayın.  
+1. Ekran görüntüleri kalitesini iyileştirmek için öykünücü yakınlaştırma seviyesini yüzde 100 olarak ayarlayın. Daha yüksek ekran kalitesini iyi yakınlaştırma düzeyini ayarlayın.  
   
-2.  Uygulamanızı öykünücüde başlatın.  
+2. Uygulamanızı öykünücüde başlatın.  
   
-3.  Öykünücü araç çubuğunda açmak için genişletme düğmesini **ek araçlar** penceresi.  
+3. Öykünücü araç çubuğunda açmak için genişletme düğmesini **ek araçlar** penceresi.  
   
-4.  Tıklayın **ekran** sekmesi.  
+4. Tıklayın **ekran** sekmesi.  
   
-5.  Uygulama hazır olduğunda tıklayın **yakalama** düğmesi.  
+5. Uygulama hazır olduğunda tıklayın **yakalama** düğmesi.  
   
-     Ekran çalışma alanında görüntülenir.  
+    Ekran çalışma alanında görüntülenir.  
   
-6.  Tıklayın **Kaydet** açmak için düğmeyi **Kaydet** iletişim kutusu.  
+6. Tıklayın **Kaydet** açmak için düğmeyi **Kaydet** iletişim kutusu.  
   
-7.  Konum seçin ve **dosya adı** ve ardından **Kaydet**.  
+7. Konum seçin ve **dosya adı** ve ardından **Kaydet**.  
   
-8.  İsteğe bağlı olarak, uygulamanızda diğer sayfalara gidin ve ek ekran görüntüleri yakalama.  
+8. İsteğe bağlı olarak, uygulamanızda diğer sayfalara gidin ve ek ekran görüntüleri yakalama.  
   
 9. Farklı ekran çözünürlüğü farklı bir çözüm aynı ekran yakalamak için bir öykünücü başlatın. Uygulamanızı hata ayıklama ile çalıştırdıysanız, başka bir öykünücü üzerinde yeniden çalıştırmadan önce hata ayıklamayı durdurmak zorunda.  
   
- Ekran görüntüleri için Windows Phone Store gönderilecek yakalamadan önce öykünücü ekranında kare oranı sayaçları devre dışı bırakın.  
+   Ekran görüntüleri için Windows Phone Store gönderilecek yakalamadan önce öykünücü ekranında kare oranı sayaçları devre dışı bırakın.  
   
 #### <a name="to-disable-frame-rate-counters-in-the-emulator-before-capturing-screenshots"></a>Kare hızı sayaçları öykünücüsünde ekran görüntüleri yakalamayı önce devre dışı bırakmak için  
   

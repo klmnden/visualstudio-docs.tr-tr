@@ -17,12 +17,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f97202daa4626f0060a53781f609382bf082c17
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa1ffdc982fa3f9773770957a0dbb177ad3d4156
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283276"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872453"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>VSPackage’ların Kullanıcı Arabirimi Öğeleri Eklemesi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -94,15 +94,15 @@ VSPackage kullanıcı arabirimi (UI) öğeleri, örneğin, menüler, araç çubu
 #### <a name="menus"></a>Menüler  
  Her menüye olarak tanımlanan bir [menü öğesi](../../extensibility/menu-element.md) içinde `Menus` bölümü. Menüler olmalıdır `guid`, `id`, ve `priority` öznitelikleri ve `Parent` öğesini ve ayrıca aşağıdaki ek öznitelikleri ve alt öğeleri:  
   
--   A `type` menü IDE'deki bir menü veya araç çubuğu olarak görüntülenip görüntülenmeyeceğini belirten özniteliği.  
+- A `type` menü IDE'deki bir menü veya araç çubuğu olarak görüntülenip görüntülenmeyeceğini belirten özniteliği.  
   
--   A [Strings öğesi](../../extensibility/strings-element.md) içeren bir [ButtonText öğesi](../../extensibility/buttontext-element.md), IDE'de menünün başlığını belirtir ve bir [CommandName öğesi](../../extensibility/commandname-element.md), adını belirtir kullanılan **komut** menüye erişmek için penceresi.  
+- A [Strings öğesi](../../extensibility/strings-element.md) içeren bir [ButtonText öğesi](../../extensibility/buttontext-element.md), IDE'de menünün başlığını belirtir ve bir [CommandName öğesi](../../extensibility/commandname-element.md), adını belirtir kullanılan **komut** menüye erişmek için penceresi.  
   
--   İsteğe bağlı bayraklar. A [Command Flag öğesi](../../extensibility/command-flag-element.md) görünüşünü veya IDE'de davranışını değiştirmek için bir menü tanımı görünebilir.  
+- İsteğe bağlı bayraklar. A [Command Flag öğesi](../../extensibility/command-flag-element.md) görünüşünü veya IDE'de davranışını değiştirmek için bir menü tanımı görünebilir.  
   
- Her `Menu` öğesi içermelidir bir grubu kendi üst öğesi olarak gibi bir araç çubuğunun yerleştirilebilir bir öğesi olmadığı sürece. Yerleştirilebilir bir menü kendi üst öğesidir. Menüler ve değerleri hakkında daha fazla bilgi için `type` özniteliği için bkz: [menü öğesi](../../extensibility/menu-element.md) belgeleri.  
+  Her `Menu` öğesi içermelidir bir grubu kendi üst öğesi olarak gibi bir araç çubuğunun yerleştirilebilir bir öğesi olmadığı sürece. Yerleştirilebilir bir menü kendi üst öğesidir. Menüler ve değerleri hakkında daha fazla bilgi için `type` özniteliği için bkz: [menü öğesi](../../extensibility/menu-element.md) belgeleri.  
   
- Aşağıdaki örnek, Visual Studio menü çubuğunda, yanındaki açılan menü gösterir **Araçları** menüsü.  
+  Aşağıdaki örnek, Visual Studio menü çubuğunda, yanındaki açılan menü gösterir **Araçları** menüsü.  
   
 ```xml  
 <Menu guid="guidTopLevelMenuCmdSet"  
@@ -163,11 +163,11 @@ priority="0x0100" type="Menu">
 ##### <a name="combos"></a>Combos  
  Combos tanımlanmış `Combos` bölümü. Her `Combo` öğesi, IDE'yi bir açılan liste kutusunda temsil eder. Liste kutusu olabilir veya değerine bağlı olarak, kullanıcılar tarafından yazılabilir olmayabilir `type` birleşik giriş özniteliği. Combos aynı öğeleri varsa ve düğme davranışı sahip ve aşağıdaki ek öznitelikleri de sahip olabilir:  
   
--   A `defaultWidth` piksel genişliği belirten özniteliği.  
+- A `defaultWidth` piksel genişliği belirten özniteliği.  
   
--   Bir `idCommandList` liste kutusunda görüntülenen öğeler içeren bir liste belirten özniteliği. Komut listesi aynı şekilde bildirilmelidir `GuidSymbol` birleşik giriş içeren düğümü.  
+- Bir `idCommandList` liste kutusunda görüntülenen öğeler içeren bir liste belirten özniteliği. Komut listesi aynı şekilde bildirilmelidir `GuidSymbol` birleşik giriş içeren düğümü.  
   
- Aşağıdaki örnek, bir combos öğesi tanımlar.  
+  Aşağıdaki örnek, bir combos öğesi tanımlar.  
   
 ```xml  
 <Combos>  

@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 606f0129d49e8d5b8f07e6c8fac60fa5029a4828
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a2fdbbd98833ff43e07b17f605b6c3a105eb3efe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294053"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940588"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Visual Studio'da Tam Zamanında Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,19 +62,19 @@ Visual Studio Just-ın-Time gördüğünüzde sürecektir eylemleri hata ayıkla
   
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>Etkinleştirme veya devre dışı bırakma, Just-ın-Time hata ayıklama  
   
-1.  Visual Studio'yu açın. Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.  
+1. Visual Studio'yu açın. Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.  
   
-2.  İçinde **seçenekleri** iletişim kutusunda **hata ayıklama** klasör.  
+2. İçinde **seçenekleri** iletişim kutusunda **hata ayıklama** klasör.  
   
-3.  İçinde **hata ayıklama** klasörüne **Just-ın-Time** sayfası.  
+3. İçinde **hata ayıklama** klasörüne **Just-ın-Time** sayfası.  
   
-4.  İçinde **temizleyintypes bu tür kod hata ayıklama** kutusunda seçin veya ilgili program türünü: **yönetilen**, **yerel**, veya **betik**.  
+4. İçinde **temizleyintypes bu tür kod hata ayıklama** kutusunda seçin veya ilgili program türünü: **yönetilen**, **yerel**, veya **betik**.  
   
-     Tam zamanında etkinleştirildikten sonra hata ayıklama devre dışı bırakmak için yönetici ayrıcalıklarıyla çalıştırıyor olmalısınız. Etkinleştirme Just-ın-Time hata ayıklama, bir kayıt defteri anahtarı ayarlar ve bu anahtarı değiştirmek için yönetici ayrıcalıkları gerekir.  
+    Tam zamanında etkinleştirildikten sonra hata ayıklama devre dışı bırakmak için yönetici ayrıcalıklarıyla çalıştırıyor olmalısınız. Etkinleştirme Just-ın-Time hata ayıklama, bir kayıt defteri anahtarı ayarlar ve bu anahtarı değiştirmek için yönetici ayrıcalıkları gerekir.  
   
-5.  **Tamam**'ı tıklatın.  
+5. **Tamam**'ı tıklatın.  
   
- Visual Studio artık bilgisayarınızda yüklü olsa bile just-In-Time hata ayıklamayı hala etkin. Visual Studio yüklü değil, tam zamanında Visual Studio'dan hata ayıklama devre dışı bırakamazsınız **seçenekleri** iletişim kutusu. Bu durumda, tam zamanında hata ayıklama Windows kayıt defterini düzenleyerek devre dışı bırakabilirsiniz.  
+   Visual Studio artık bilgisayarınızda yüklü olsa bile just-In-Time hata ayıklamayı hala etkin. Visual Studio yüklü değil, tam zamanında Visual Studio'dan hata ayıklama devre dışı bırakamazsınız **seçenekleri** iletişim kutusu. Bu durumda, tam zamanında hata ayıklama Windows kayıt defterini düzenleyerek devre dışı bırakabilirsiniz.  
   
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>Kayıt defterini düzenleyerek devre dışı bırakma, Just-ın-Time hata ayıklama  
   

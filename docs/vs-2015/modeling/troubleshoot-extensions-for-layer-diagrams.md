@@ -15,12 +15,12 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c8ea8f4e6b102dd9bb4a84154096d5cef906eeab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8b4d7dbe7fc11a41d44063aab558389555a4b7af
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250074"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879109"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>Katman diyagramları için uzantı sorunlarını giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,22 +29,22 @@ Bu konuda, katman model uzantıları oluştururken karşılaşabileceğiniz baz�
   
 #### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-includevsprvsincludesvsprvs-mdmd"></a>Uzantımı ayıklamak için F5 tuşuna bastığımda, komutları, hareket işleyicileri, doğrulama uzantıları veya özel özellikler deneysel örneğinde katman diyagramlarında görünmez. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
-1.  Uzantı çözümünüzü deneysel örneğinde açın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ve **derleme** menüsünde tıklatın **çözümü yeniden derle**.  
+1. Uzantı çözümünüzü deneysel örneğinde açın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ve **derleme** menüsünde tıklatın **çözümü yeniden derle**.  
   
-2.  Tuşuna **F5** veya **CTRL + F5** Deneysel örneğini başlatmak için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Bir katman diyagramı açın ve uzantınızı sınayın.  
+2. Tuşuna **F5** veya **CTRL + F5** Deneysel örneğini başlatmak için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Bir katman diyagramı açın ve uzantınızı sınayın.  
   
- Gerekirse, sonraki yordama geçin.  
+   Gerekirse, sonraki yordama geçin.  
   
 #### <a name="an-old-version-of-my-extension-runs"></a>Uzantım eski bir sürümünü çalıştırır.  
   
-1.  Emin olun, Deneysel örnek yok [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çalışıyor.  
+1. Emin olun, Deneysel örnek yok [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çalışıyor.  
   
-2.  Aşağıdaki klasörü silin: %LocalAppData%\Microsoft\VisualStudio\\[sürüm] \ComponentModelCache  
+2. Aşağıdaki klasörü silin: %LocalAppData%\Microsoft\VisualStudio\\[sürüm] \ComponentModelCache  
   
-    > [!NOTE]
-    >  % LocalAppData %, genellikle *DriveName*: \Users\\*kullanıcıadı*\AppData\Local.  
+   > [!NOTE]
+   >  % LocalAppData %, genellikle *DriveName*: \Users\\*kullanıcıadı*\AppData\Local.  
   
- Gerekirse, sonraki yordama geçin.  
+   Gerekirse, sonraki yordama geçin.  
   
 #### <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>Doğrulama sonuçlarımın eski bir sürümü görünüyor veya doğrulama Yöntemim çağrılmıyor.  
   

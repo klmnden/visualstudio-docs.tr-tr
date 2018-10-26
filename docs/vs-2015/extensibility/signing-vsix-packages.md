@@ -19,12 +19,12 @@ ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 091edab3b3fad6707058ff7d35918176854c02f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ab10152afbefbdc49f0934f3fd062a74a2a1f30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263892"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915600"
 ---
 # <a name="signing-vsix-packages"></a>VSIX Paketlerini İmzalama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ Uzantı derlemelerini Visual Studio'da çalışabilirler, ancak bunu yapmak içi
   
 #### <a name="to-use-the-vsixsigntool"></a>VSIXSignTool kullanmak için  
   
-1.  Kendi VSIX bir projeye ekleyin.  
+1. Kendi VSIX bir projeye ekleyin.  
   
-2.  Çözüm Gezgini'nde proje düğümüne sağ tıklayın seçerek **Ekle &#124; NuGet paketlerini Yönet**.  NuGet ve NuGet ekleme hakkında daha fazla bilgi için bkz: paketleri [NuGet genel bakış](http://docs.nuget.org/) ve [yönetme NuGet paketlerini kullanarak iletişim](http://docs.nuget.org/Consume/Package-Manager-Dialog).  
+2. Çözüm Gezgini'nde proje düğümüne sağ tıklayın seçerek **Ekle &#124; NuGet paketlerini Yönet**.  NuGet ve NuGet ekleme hakkında daha fazla bilgi için bkz: paketleri [NuGet genel bakış](http://docs.nuget.org/) ve [yönetme NuGet paketlerini kullanarak iletişim](http://docs.nuget.org/Consume/Package-Manager-Dialog).  
   
-3.  VSIXSignTool VisualStudioExtensibility gelen arayın ve NuGet paketini yükleyin.  
+3. VSIXSignTool VisualStudioExtensibility gelen arayın ve NuGet paketini yükleyin.  
   
-4.  Şimdi, VSIXSignTool projenin yerel paketleri konumundan çalıştırabilirsiniz. İmzalama senaryonuz için Aracı'nın komut satırı yardımına bakın (VSIXSignTool.exe /?).  
+4. Şimdi, VSIXSignTool projenin yerel paketleri konumundan çalıştırabilirsiniz. İmzalama senaryonuz için Aracı'nın komut satırı yardımına bakın (VSIXSignTool.exe /?).  
   
- Örneğin: bir parola korumalı bir sertifika dosyası ile imzala  
+   Örneğin: bir parola korumalı bir sertifika dosyası ile imzala  
   
- VSIXSignTool.exe oturum /f \<certfile > /p \<parola > \<VSIXfile >  
+   VSIXSignTool.exe oturum /f \<certfile > /p \<parola > \<VSIXfile >  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio Uzantıları Gönderme](../extensibility/shipping-visual-studio-extensions.md)

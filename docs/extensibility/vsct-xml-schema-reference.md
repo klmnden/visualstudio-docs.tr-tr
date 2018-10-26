@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73267319733dd6e31b21a0a47796f9766250bb89
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 51be3e86f1f19cc3701dd456b3085d3e8993b7a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586840"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915561"
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML Şeması Başvurusu
 Komut tablosu derleyici şema öğelerinin bir tablo ile izin verilen alt öğeler ve öznitelikler için her sağlar.  
@@ -36,11 +36,11 @@ Komut tablosu derleyici şema öğelerinin bir tablo ile izin verilen alt öğel
   
  Simgesel adlar kullanarak tüm GUID ve ID değerleri tanımlanması gerekir. Bu adlar üstbilgi dosyalarında veya VSCT tanımlanabilir \<sembolleri > bölümler. Simgesel adlar aracılığıyla dahil yerel olmalıdır \<Ekle > öğelerini, veya başvurulan \<Extern > öğeleri. Bir simgesel ad içinde belirtilen bir üstbilgi dosyasından içeri aktarılan bir \<Extern > basit desenini izliyorsa öğesi #define SEMBOL değeri. Bu sembol önceden tanımlanmış olduğu sürece değeri başka bir sembol olabilir. GUID tanımları OLE ya da C++ biçimi izlemelidir. Kimliği değerleri aşağıdaki satırlarda gösterilen ondalık basamak veya 0 x tarafından öncelenen onaltılık basamak olabilir:  
   
--   {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
+- {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
   
--   {0x6d484634, 0xe53d 0x4a2c, {0xad, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8}}  
+- {0x6d484634, 0xe53d 0x4a2c, {0xad, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8}}  
   
- XML açıklamaları kullanılabilir, ancak bunları atmak gidiş dönüş grafik kullanıcı arabirimi (GUI) araçları. İçeriğini \<ek açıklama > öğeleri biçim bağımsız olarak korunmasını garanti edilir.  
+  XML açıklamaları kullanılabilir, ancak bunları atmak gidiş dönüş grafik kullanıcı arabirimi (GUI) araçları. İçeriğini \<ek açıklama > öğeleri biçim bağımsız olarak korunmasını garanti edilir.  
   
 ## <a name="schema-hierarchy"></a>Şema hiyerarşisi  
  .Vsct dosyası şu temel öğelere sahiptir.  

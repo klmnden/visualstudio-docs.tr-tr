@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 07675d7d6d592a83848b8af02031a573350c35f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 01e583db3bb5b5aff6608b4028636823b4ca857c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244770"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844715"
 ---
 # <a name="switchlttgt-activity-designer"></a>Anahtar&lt;T&gt; etkinlik Tasarımcısı
 <xref:System.Activities.Statements.Switch%601> Etkinlik belirtilen ifadeyi hesaplar ve ilişkili anahtarı değerlendirmesinden gelen alınan değer eşleşen etkinlikler koleksiyonundan bir etkinliği yürütür.  
@@ -50,11 +50,11 @@ ms.locfileid: "49244770"
   
  Servis talebi silmek için 2 yolu vardır:  
   
-1.  Select case ve silin.  
+1. Select case ve silin.  
   
-2.  Seçin bağlam menüsünü görüntülemek ve seçmek için büyük/küçük harf, sağ tıklatın **Sil**.  
+2. Seçin bağlam menüsünü görüntülemek ve seçmek için büyük/küçük harf, sağ tıklatın **Sil**.  
   
- Durumun kendisini silmek için seçmelisiniz unutmayın. Seçme ve etkinliği bir durum içinde silme yalnızca durum etkinlik siler.  
+   Durumun kendisini silmek için seçmelisiniz unutmayın. Seçme ve etkinliği bir durum içinde silme yalnızca durum etkinlik siler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Denetim Akışı](../workflow-designer/control-flow-activity-designers.md)

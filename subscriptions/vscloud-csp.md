@@ -9,12 +9,12 @@ description: Satın alma ve müşterileriniz için Visual Studio bulut abonelikl
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9d040d2f586e2c47a6f904f06d483fe484a57429
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 50f4cfeaa6d0f530a70729155f0e81065359281d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899467"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Satın alma ve müşterileriniz için Visual Studio bulut Abonelikleri Yönetme
 
@@ -75,6 +75,7 @@ Bir abone, Visual Studio aboneliğini şifrenizin henüz yapmadıysanız, davet 
 CSP iş ortakları için Visual Studio fiyatlandırma görüntülemek için oturum [iş ortağı Merkezi](https://partnercenter.microsoft.com).  Seçin **fiyatlandırma ve teklifler** sol gezinti bölmesinde  Geçerli ay altında dosya fiyatlandırma seçin **kullanım tabanlı Hizmetleri** sağ üst köşedeki. Excel elektronik tabloyu karşıdan sonra Git **Azure fiyat listesi** sayfası ve filtre **ölçüm kategorisi** sütuna **Visual Studio**.
 
 Bu elektronik tabloda gördüğünüz yorumlama şöyledir:
+
 | Ölçüm kategorisi    |   Ad                 |  Birimleri                                |           Bu nedir                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Enterprise             |  Abonelik                         | Visual Studio Enterprise-aylık abonelik   |

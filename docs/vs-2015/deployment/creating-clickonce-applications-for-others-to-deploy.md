@@ -30,12 +30,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 5afabc774165ac001545c084a77cba6d165cf88b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2b7bb6c990567a483ab28d215019fe1b259d166
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181525"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862092"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Başkalarının Dağıtması için ClickOnce Uygulamaları Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,13 +92,13 @@ Uygulamaları dağıtmak ClickOnce dağıtımı oluşturan tüm geliştiricileri
   
  Müşteri bu durumda dağıtım bildirimi imzalamak için üç yol vardır:  
   
-1.  Müşteri, bir sertifika yetkilisi (CA) tarafından verilen geçerli bir sertifika kullanabilirsiniz.  
+1. Müşteri, bir sertifika yetkilisi (CA) tarafından verilen geçerli bir sertifika kullanabilirsiniz.  
   
-2.  Bu yaklaşım, alternatif olarak, dağıtım bildirimini otomatik olarak imzalanan bir sertifika ile imzalamak müşteri seçebilirsiniz. Bu bir dezavantajı, kullanıcı bu yüklemeyi yeniden sorulduğunda "Bilinmeyen Yayımcı" sözcüklerini görüntülenecek uygulama neden olmasıdır. Ancak, gerekli bir sertifika yetkilisi tarafından verilmiş bir sertifika için para ve zaman harcamak zorunda kalmaktan daha küçük müşteriler engellediğini avantajdır.  
+2. Bu yaklaşım, alternatif olarak, dağıtım bildirimini otomatik olarak imzalanan bir sertifika ile imzalamak müşteri seçebilirsiniz. Bu bir dezavantajı, kullanıcı bu yüklemeyi yeniden sorulduğunda "Bilinmeyen Yayımcı" sözcüklerini görüntülenecek uygulama neden olmasıdır. Ancak, gerekli bir sertifika yetkilisi tarafından verilmiş bir sertifika için para ve zaman harcamak zorunda kalmaktan daha küçük müşteriler engellediğini avantajdır.  
   
-3.  Son olarak, geliştirici kendi kendinden imzalı bir sertifika Kurulum paketine dahil edebilirsiniz. Bu, bu konunun önceki kısımlarında açıklanan uygulama kimliği ile ilgili olası sorunları ortaya çıkarır.  
+3. Son olarak, geliştirici kendi kendinden imzalı bir sertifika Kurulum paketine dahil edebilirsiniz. Bu, bu konunun önceki kısımlarında açıklanan uygulama kimliği ile ilgili olası sorunları ortaya çıkarır.  
   
- Kurulumu dağıtım projesi yöntemi dezavantajı, özel bir dağıtım uygulaması oluşturmak için gereken zaman ve ' dir.  
+   Kurulumu dağıtım projesi yöntemi dezavantajı, özel bir dağıtım uygulaması oluşturmak için gereken zaman ve ' dir.  
   
 ### <a name="have-customer-generate-deployment-manifest"></a>Müşteri oluşturma sahip dağıtım bildirimi  
  Üçüncü bir olası dağıtım stratejisini el yalnızca uygulama dosyaları ve uygulama bildirimi müşteriye kapalıdır. Bu senaryoda, oluşturmak ve dağıtım bildirimi imzalamak için .NET Framework SDK'sını kullanarak müşteri sorumludur.  

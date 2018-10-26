@@ -18,12 +18,12 @@ ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b5738f3119a8e5f1f6c1d8cb3ee47d64df1541d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6c7e3c0804fb354bc1f17fa4769ce118e13b3352
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195487"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939559"
 ---
 # <a name="project-type-design-decisions"></a>Proje Türü Tasarım Kararları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,13 +48,13 @@ Yeni bir proje türü oluşturmadan önce proje türü ile ilgili çeşitli tasa
   
  Öğeler, projenizdeki için Kalıcılık ile ilgili dikkate alınması gereken birkaç seçeneğiniz vardır. Aşağıdaki seçeneklerden herhangi birini gerçekleştirebilirsiniz:  
   
--   Her dosyayı ayrı ayrı da değiştirildiğinde kaydedin.  
+- Her dosyayı ayrı ayrı da değiştirildiğinde kaydedin.  
   
--   Pek çok işlem tek bir yakalama **Kaydet** işlemi.  
+- Pek çok işlem tek bir yakalama **Kaydet** işlemi.  
   
--   Dosyaları yerel olarak kaydedin ve ardından bir sunucuda yayımlayın veya uzak bir nesne için bir veri bağlantısı öğesi temsil ettiğinde proje öğeleri kaydedilirken başka bir yaklaşım kullanın.  
+- Dosyaları yerel olarak kaydedin ve ardından bir sunucuda yayımlayın veya uzak bir nesne için bir veri bağlantısı öğesi temsil ettiğinde proje öğeleri kaydedilirken başka bir yaklaşım kullanın.  
   
- Kalıcılık hakkında daha fazla bilgi için bkz: [proje kalıcılığı](../../extensibility/internals/project-persistence.md) ve [açma ve kaydetme proje öğeleri](../../extensibility/internals/opening-and-saving-project-items.md).  
+  Kalıcılık hakkında daha fazla bilgi için bkz: [proje kalıcılığı](../../extensibility/internals/project-persistence.md) ve [açma ve kaydetme proje öğeleri](../../extensibility/internals/opening-and-saving-project-items.md).  
   
 ## <a name="project-commitment-model"></a>Proje taahhüt modeli  
  Kalıcı veri nesneleri açılacak doğrudan modu veya hizmetteki modunda?  

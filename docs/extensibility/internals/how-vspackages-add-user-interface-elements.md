@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c595018dc588b6b6fbb014e074c737a53ea2013
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 8b498f9df752fd5ac1f1212649aa5b8bb62d27fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512128"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839121"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>VSPackage kullanıcı arabirimi öğelerini nasıl eklenir
 VSPackage örnek, menüleri ve araç çubukları için kullanıcı arabirimi (UI) öğeleri ekleyebilir ve araç penceresi, Visual Studio yoluyla *.vsct* dosya.  
@@ -90,15 +90,15 @@ VSPackage örnek, menüleri ve araç çubukları için kullanıcı arabirimi (UI
 #### <a name="menus"></a>Menüler  
  Her menüye olarak tanımlanan bir [menü öğesi](../../extensibility/menu-element.md) içinde `Menus` bölümü. Menüler olmalıdır `guid`, `id`, ve `priority` öznitelikleri ve `Parent` öğesini ve ayrıca aşağıdaki ek öznitelikleri ve alt öğeleri:  
   
--   A `type` menü IDE'deki bir menü veya araç çubuğu olarak görüntülenip görüntülenmeyeceğini belirten özniteliği.  
+- A `type` menü IDE'deki bir menü veya araç çubuğu olarak görüntülenip görüntülenmeyeceğini belirten özniteliği.  
   
--   A [Strings öğesi](../../extensibility/strings-element.md) içeren bir [ButtonText öğesi](../../extensibility/buttontext-element.md), IDE'de menünün başlığını belirtir ve bir [CommandName öğesi](../../extensibility/commandname-element.md), adını belirtir kullanılan **komut** menüye erişmek için penceresi.  
+- A [Strings öğesi](../../extensibility/strings-element.md) içeren bir [ButtonText öğesi](../../extensibility/buttontext-element.md), IDE'de menünün başlığını belirtir ve bir [CommandName öğesi](../../extensibility/commandname-element.md), adını belirtir kullanılan **komut** menüye erişmek için penceresi.  
   
--   İsteğe bağlı bayraklar. A [CommandFlag öğesi](../../extensibility/command-flag-element.md) görünüşünü veya IDE'de davranışını değiştirmek için bir menü tanımı görünebilir.  
+- İsteğe bağlı bayraklar. A [CommandFlag öğesi](../../extensibility/command-flag-element.md) görünüşünü veya IDE'de davranışını değiştirmek için bir menü tanımı görünebilir.  
   
- Her `Menu` öğesi içermelidir bir grubu kendi üst öğesi olarak gibi bir araç çubuğunun yerleştirilebilir bir öğesi olmadığı sürece. Yerleştirilebilir bir menü kendi üst öğesidir. Menüler ve değerleri hakkında daha fazla bilgi için `type` özniteliği için bkz: [menü öğesi](../../extensibility/menu-element.md) belgeleri.  
+  Her `Menu` öğesi içermelidir bir grubu kendi üst öğesi olarak gibi bir araç çubuğunun yerleştirilebilir bir öğesi olmadığı sürece. Yerleştirilebilir bir menü kendi üst öğesidir. Menüler ve değerleri hakkında daha fazla bilgi için `type` özniteliği için bkz: [menü öğesi](../../extensibility/menu-element.md) belgeleri.  
   
- Aşağıdaki örnek, Visual Studio menü çubuğunda, yanındaki açılan menü gösterir **Araçları** menüsü.  
+  Aşağıdaki örnek, Visual Studio menü çubuğunda, yanındaki açılan menü gösterir **Araçları** menüsü.  
   
 ```xml  
 <Menu guid="guidTopLevelMenuCmdSet"  
@@ -159,11 +159,11 @@ priority="0x0100" type="Menu">
 ##### <a name="combos"></a>Combos  
  Combos tanımlanmış `Combos` bölümü. Her `Combo` öğesi, IDE'yi bir açılan liste kutusunda temsil eder. Liste kutusu olabilir veya değerine bağlı olarak, kullanıcılar tarafından yazılabilir olmayabilir `type` birleşik giriş özniteliği. Combos aynı öğeleri varsa ve düğme davranışı sahip ve aşağıdaki ek öznitelikleri de sahip olabilir:  
   
--   A `defaultWidth` piksel genişliği belirten özniteliği.  
+- A `defaultWidth` piksel genişliği belirten özniteliği.  
   
--   Bir `idCommandList` liste kutusunda görüntülenen öğeler içeren bir liste belirten özniteliği. Komut listesi aynı şekilde bildirilmelidir `GuidSymbol` birleşik giriş içeren düğümü.  
+- Bir `idCommandList` liste kutusunda görüntülenen öğeler içeren bir liste belirten özniteliği. Komut listesi aynı şekilde bildirilmelidir `GuidSymbol` birleşik giriş içeren düğümü.  
   
- Aşağıdaki örnek, bir combos öğesi tanımlar.  
+  Aşağıdaki örnek, bir combos öğesi tanımlar.  
   
 ```xml  
 <Combos>  
@@ -192,7 +192,7 @@ priority="0x0100" type="Menu">
  Aşağıdaki kurallar, bir öğe başka bir öğe üst öğe olarak nasıl çağırabilirsiniz kapsar.  
   
 |Öğe|Bu komut tablosu bölümünde tanımlanan|Bulunabilecek (üst öğe olarak veya yerleşimden `CommandPlacements` bölüm veya her ikisi)|İçerebilir (üst öğe olarak adlandırılır)|  
-|-------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------|  
+|-------------| - | - | - |  
 |Grup|[Groups öğesi](../../extensibility/groups-element.md), IDE, diğer VSPackage'ları|Bir menü, bir Grup öğesi|Menüleri, gruplar ve komutlar|  
 |Menü|[Menus öğesi](../../extensibility/menus-element.md), IDE, diğer VSPackage'ları|1 *n* grupları|0 olarak *n* grupları|  
 |Araç Çubuğu|[Menus öğesi](../../extensibility/menus-element.md), IDE, diğer VSPackage'ları|Öğesi|0 olarak *n* grupları|  
@@ -290,17 +290,17 @@ priority="0x0100" type="Menu">
 ## <a name="interface-element-appearance"></a>Arabirim öğesi görünümü  
  Seçme ve komut öğeleri konumlandırma konuları aşağıdaki gibidir:  
   
--   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] farklı yerleştirme bağlı olarak görünen birçok kullanıcı Arabirimi öğeleri sunar.  
+- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] farklı yerleştirme bağlı olarak görünen birçok kullanıcı Arabirimi öğeleri sunar.  
   
--   Tarafından tanımlanan bir kullanıcı Arabirimi öğesi `DefaultInvisible` bayrağı görüntülenmeyecek IDE'de ya da kendi VSPackage uygulaması tarafından görüntülenen olmadığı sürece <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> yöntemi veya belirli bir kullanıcı Arabirimi bağlamda ilişkili `VisibilityConstraints` bölümü.  
+- Tarafından tanımlanan bir kullanıcı Arabirimi öğesi `DefaultInvisible` bayrağı görüntülenmeyecek IDE'de ya da kendi VSPackage uygulaması tarafından görüntülenen olmadığı sürece <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> yöntemi veya belirli bir kullanıcı Arabirimi bağlamda ilişkili `VisibilityConstraints` bölümü.  
   
--   Başarıyla konumlandırılmış bir komut görüntülenmeyebilir. Bu IDE otomatik olarak gizler veya VSPackage'ı (veya değil) arabirimler bağlı olarak bazı komutlar görüntüler için uygulanır. Örneğin, bazı VSPackage'nın uygulama yapı arabirimleri nedenleri derlemeyle ilgili menü öğeleri otomatik olarak gösterilecek.  
+- Başarıyla konumlandırılmış bir komut görüntülenmeyebilir. Bu IDE otomatik olarak gizler veya VSPackage'ı (veya değil) arabirimler bağlı olarak bazı komutlar görüntüler için uygulanır. Örneğin, bazı VSPackage'nın uygulama yapı arabirimleri nedenleri derlemeyle ilgili menü öğeleri otomatik olarak gösterilecek.  
   
--   Uygulama `CommandWellOnly` UI öğesinin tanımını bayrağı anlamına gelir komutu yalnızca özelleştirme tarafından eklenebilir.  
+- Uygulama `CommandWellOnly` UI öğesinin tanımını bayrağı anlamına gelir komutu yalnızca özelleştirme tarafından eklenebilir.  
   
--   IDE Tasarım görünümünde olduğunda yalnızca bir iletişim kutusu görüntülendiğinde, komutları yalnızca belirli kullanıcı Arabirimi bağlamlarda Bu, örneğin, kullanılabilir olabilir.  
+- IDE Tasarım görünümünde olduğunda yalnızca bir iletişim kutusu görüntülendiğinde, komutları yalnızca belirli kullanıcı Arabirimi bağlamlarda Bu, örneğin, kullanılabilir olabilir.  
   
--   IDE içinde görüntülenecek belirli UI öğeleri neden olmak için bir veya daha fazla arabirimi uygulayan veya biraz kod yazalım.  
+- IDE içinde görüntülenecek belirli UI öğeleri neden olmak için bir veya daha fazla arabirimi uygulayan veya biraz kod yazalım.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Menüler ve komutlar genişletme](../../extensibility/extending-menus-and-commands.md)

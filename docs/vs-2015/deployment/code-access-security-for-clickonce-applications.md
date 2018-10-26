@@ -29,12 +29,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: e5cfc8ad2be56965f691b2c114d3908172f0edfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ea1f91a50180dce6edec17afead5649ecd3e1f50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197983"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816072"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce Uygulamaları İçin Kod Erişimi Güvenliği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,14 +46,14 @@ ClickOnce uygulamaları, .NET Framework tabanlı ve kod erişim güvenliği sın
 ## <a name="default-clickonce-code-access-security"></a>Varsayılan ClickOnce kod erişimi güvenliği  
  Yüklendiğinde veya bir istemci bilgisayarda varsayılan olarak, ClickOnce uygulaması tam güven izinleri alır.  
   
--   Tam güven izinleri olan bir uygulama, dosya sistemini ve kayıt defteri gibi kaynaklara erişim varmazlar. Bu büyük olasılıkla uygulamanızı (ve son kullanıcının sistem) kötü amaçlı kod tarafından kullanılmasına izin verir.  
+- Tam güven izinleri olan bir uygulama, dosya sistemini ve kayıt defteri gibi kaynaklara erişim varmazlar. Bu büyük olasılıkla uygulamanızı (ve son kullanıcının sistem) kötü amaçlı kod tarafından kullanılmasına izin verir.  
   
--   Bir uygulama tam güven izinleri gerektirdiğinde, son kullanıcının uygulama izinlerini vermek için istenebilir. Bu uygulamayı gerçek anlamda bir ClickOnce deneyimi sağlamaz ve istemi potansiyel olarak daha az deneyimli kullanıcılar için kafa karıştırıcı olabilir anlamına gelir.  
+- Bir uygulama tam güven izinleri gerektirdiğinde, son kullanıcının uygulama izinlerini vermek için istenebilir. Bu uygulamayı gerçek anlamda bir ClickOnce deneyimi sağlamaz ve istemi potansiyel olarak daha az deneyimli kullanıcılar için kafa karıştırıcı olabilir anlamına gelir.  
   
-    > [!NOTE]
-    >  Bir uygulamayı bir CD-ROM gibi çıkarılabilir medyadan yüklemek, kullanıcıya sorulmaz. Ayrıca, böylece kullanıcılar uygulamanın güvenilir bir kaynaktan yüklediklerinde istenmez bir ağ yöneticisi ağ ilkesi yapılandırabilirsiniz. Daha fazla bilgi için [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+  > [!NOTE]
+  >  Bir uygulamayı bir CD-ROM gibi çıkarılabilir medyadan yüklemek, kullanıcıya sorulmaz. Ayrıca, böylece kullanıcılar uygulamanın güvenilir bir kaynaktan yüklediklerinde istenmez bir ağ yöneticisi ağ ilkesi yapılandırabilirsiniz. Daha fazla bilgi için [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
- ClickOnce uygulaması için izinleri kısıtlamak için uygulamanızın gerektirdiği izinler için en uygun bölgeyi istemek için uygulamanıza kod erişim güvenlik izinlerini değiştirebilirsiniz. Çoğu durumda, uygulamanın dağıtıldığı bölge seçebilirsiniz. Örneğin, uygulamanız bir kuruluş uygulaması ise, kullanabileceğiniz **yerel Intranet** bölge. Uygulamanız bir Internet uygulaması ise, kullanabileceğiniz **Internet** bölge.  
+  ClickOnce uygulaması için izinleri kısıtlamak için uygulamanızın gerektirdiği izinler için en uygun bölgeyi istemek için uygulamanıza kod erişim güvenlik izinlerini değiştirebilirsiniz. Çoğu durumda, uygulamanın dağıtıldığı bölge seçebilirsiniz. Örneğin, uygulamanız bir kuruluş uygulaması ise, kullanabileceğiniz **yerel Intranet** bölge. Uygulamanız bir Internet uygulaması ise, kullanabileceğiniz **Internet** bölge.  
   
 ## <a name="configuring-security-permissions"></a>Güvenlik izinlerini yapılandırma  
  Her zaman, kod erişimi güvenliği izinleri sınırlamak için uygun bölgeyi istemek için ClickOnce uygulamanızı yapılandırmanız gerekir. Güvenlik izinlerini yapılandırabilirsiniz **güvenlik** sayfasının **Proje Tasarımcısı**.  
@@ -80,23 +80,23 @@ ClickOnce uygulamaları, .NET Framework tabanlı ve kod erişim güvenliği sın
 ## <a name="security-permissions-for-browser-hosted-applications"></a>Tarayıcıda tutulan uygulamalar için güvenlik izinleri  
  Visual Studio, Windows Presentation Foundation (WPF) uygulamaları için aşağıdaki proje türlerini sağlar:  
   
--   WPF Windows uygulaması  
+- WPF Windows uygulaması  
   
--   WPF Web tarayıcı uygulaması  
+- WPF Web tarayıcı uygulaması  
   
--   WPF Özel Denetim Kitaplığı  
+- WPF Özel Denetim Kitaplığı  
   
--   WPF Hizmet Kitaplığı  
+- WPF Hizmet Kitaplığı  
   
- Bu proje türleri yalnızca WPF Web tarayıcı uygulamaları bir Web tarayıcısında barındırılan ve bu nedenle özel dağıtımı ve güvenlik ayarları gerektirir. Bu uygulamalar için varsayılan güvenlik ayarlarını aşağıdaki gibidir:  
+  Bu proje türleri yalnızca WPF Web tarayıcı uygulamaları bir Web tarayıcısında barındırılan ve bu nedenle özel dağıtımı ve güvenlik ayarları gerektirir. Bu uygulamalar için varsayılan güvenlik ayarlarını aşağıdaki gibidir:  
   
--   **ClickOnce güvenlik ayarlarını etkinleştirme**  
+- **ClickOnce güvenlik ayarlarını etkinleştirme**  
   
--   **Kısmi güven uygulamasıdır**  
+- **Kısmi güven uygulamasıdır**  
   
--   **Internet bölgesi** (WPF Web tarayıcı seçili uygulamalar için varsayılan izin ile)  
+- **Internet bölgesi** (WPF Web tarayıcı seçili uygulamalar için varsayılan izin ile)  
   
- İçinde **Gelişmiş güvenlik ayarları** iletişim kutusu, **bu uygulama için seçili izin kümesi ile hata ayıklama** onay kutusu işaretli ve devre dışı. Bölge içinde hata ayıklama için tarayıcıda tutulan uygulamalar devre dışı bırakılamaz. olmasıdır.  
+  İçinde **Gelişmiş güvenlik ayarları** iletişim kutusu, **bu uygulama için seçili izin kümesi ile hata ayıklama** onay kutusu işaretli ve devre dışı. Bölge içinde hata ayıklama için tarayıcıda tutulan uygulamalar devre dışı bırakılamaz. olmasıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce uygulamalarının güvenliğini sağlama](../deployment/securing-clickonce-applications.md)   

@@ -9,33 +9,34 @@ description: Beceri bana seçili Visual Studio aboneliğine dahildir Opsgility e
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscriptions
-ms.openlocfilehash: 8f62fdb14847048f212c055017b1461085e3529b
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 7bf23407207493e4e74a61fe29d695379d6d0975
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073720"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943030"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Yetenek bana yukarı - Opsgility eğitimi avantajı olarak Visual Studio abonelikleri tarafından desteklenir
 
 Seçili Visual Studio Abonelikleri, en fazla altı ay erişimle uzman, isteğe bağlı eğitim için laboratuvar ortamlarını ve öğrenme yolları sertifika Canlı içerir.
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
-1.  Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2.  Beceri bana yukarı teklifinizi kullanmak için tıklayın **kodunu Al** avantajı kutucuğun alt kısmındaki bağlantı.   Kupon kodu başarılı bir şekilde alınmış bir bildirim alacaksınız.  Tıklayın **etkinleştirme** devam etmek için.
-    > [!div class="mx-imgBorder"]
-    > ![Opsgility avantajı kutucuğu](_img\vs-opsgility\vs-opsgility-tile.png)
+2. Beceri bana yukarı teklifinizi kullanmak için tıklayın **kodunu Al** avantajı kutucuğun alt kısmındaki bağlantı.   Kupon kodu başarılı bir şekilde alınmış bir bildirim alacaksınız.  Tıklayın **etkinleştirme** devam etmek için.
+   > [!div class="mx-imgBorder"]
+   > ![Opsgility avantajı kutucuğu](_img/vs-opsgility/vs-opsgility-tile.png)
 
 
-3.  Uygun beceri bana giriş sayfası, aboneliğinize ilişkin AYARLAMAK üzere yönlendirilirsiniz.  (, Bir destek uzmanı ile bir sohbet oturumu başlatmak için bir fırsat sunulabilir.  Bir sohbet başlatmak istemiyorsanız, bu pencerenin en aza indirebilirsiniz.)  İstenen kişi bilgileri doldurun, kutusuna hüküm ve koşulları kabul eden denetleyin ve ardından tıklayın **kaydetme**.
-    > [!div class="mx-imgBorder"]
-    > ![Opsgility avantajı giriş sayfası](_img\vs-opsgility\vs-vse-landing-page.png)
+3. Uygun beceri bana giriş sayfası, aboneliğinize ilişkin AYARLAMAK üzere yönlendirilirsiniz.  (, Bir destek uzmanı ile bir sohbet oturumu başlatmak için bir fırsat sunulabilir.  Bir sohbet başlatmak istemiyorsanız, bu pencerenin en aza indirebilirsiniz.)  İstenen kişi bilgileri doldurun, kutusuna hüküm ve koşulları kabul eden denetleyin ve ardından tıklayın **kaydetme**.
+   > [!div class="mx-imgBorder"]
+   > ![Opsgility avantajı giriş sayfası](_img/vs-opsgility/vs-vse-landing-page.png)
 
-4.  Tüm İşte bu kadar kolay!  Öğrenme başlamaya hazırsınız!  
+4. Tüm İşte bu kadar kolay!  Öğrenme başlamaya hazırsınız!  
 
 
 ## <a name="eligibility"></a>Uygunluk
+
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standart, yıllık bulut)   | VL, Azure, perakende | 6 ay       |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir          |

@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba9cd561c80aec7a0b1b47b98f75ff8046d8a1b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b41416ea923e8f14aa39bf1607ad7c349e0b149c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081315"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880684"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Oyununuzda veya uygulamanızda 3B varlıklar kullanma
 
@@ -41,7 +41,7 @@ Bu makalede, 3B varlıkları işlemek ve bunları derlemelerinize dahil etmek i�
 2.  Altında **kullanılabilir yapı özelleştirme dosyaları**, aşağıdaki tabloda açıklandığı şekilde, projenizde kullanmak istediğiniz varlık türlerine karşılık gelen onay kutularını işaretleyin:
 
     |Varlık türü|Özelleştirme adı oluştur|
-    |----------------|------------------------------|
+    |----------------| - |
     |Dokularla ve görüntülerle|**ImageContentTask (.targets, .props)**|
     |3B modeller|**MeshContentTask (.targets, .props)**|
     |Gölgelendiricileri|**ShaderGraphContentTask (.targets, .props)**|
@@ -67,7 +67,7 @@ Bu makalede, 3B varlıkları işlemek ve bunları derlemelerinize dahil etmek i�
 Aşağıda, üç içeriği ardışık düzeni öğe türleri ve bunların ilişkili kaynakları ve çıktı dosya türleri.
 
 |Öğe türü|Kaynak dosya türleri|Çıkış dosyası biçimi|
-|---------------|-----------------------|------------------------|
+|---------------| - | - |
 |**Görüntü içeriği ardışık düzeni**|Taşınabilir Ağ Grafikleri (*.png*)<br /><br /> JPEG (*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Doğrudan çizim yüzeyi (*.dds*)<br /><br /> Grafik Değişim Biçimi (*.gif*)<br /><br /> Bit eşlem (*.bmp*, *.dib*)<br /><br /> Etiketli Resim dosyası biçimi (*.tif*, *.tiff*)<br /><br /> Targa (*.tga*)|DirectDraw Surface (*.dds*)|
 |**Ağ içeriği ardışık düzeni**|AutoDesk FBX değişim dosyası (*.fbx*)<br /><br /> Collada DAE dosyası (*.dae*)<br /><br /> Wavefront OBJ dosyası (*.obj*)|3B mesh dosyası (*.cmo*)|
 |**Gölgelendirici içerik ardışık düzeni**|Görsel gölgelendirici grafiği (*.dgsl*)|Derlenmiş gölgelendirici çıktısı (*.cso*)|

@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56d191d8019b4b87cc31e0e383637515a10f4147
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 05eeae4901af8780927e0ce0577b385ee9ffa371
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497618"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950909"
 ---
 # <a name="create-custom-editors-and-designers"></a>Özel düzenleyiciler ve tasarımcılar oluşturma
 Visual Studio tümleşik geliştirme ortamı (IDE), farklı türde bir düzenleyici barındırabilirsiniz:  
   
--   Visual Studio çekirdek Düzenleyicisi  
+- Visual Studio çekirdek Düzenleyicisi  
   
--   Özel düzenleyiciler  
+- Özel düzenleyiciler  
   
--   Dış düzenleyiciler  
+- Dış düzenleyiciler  
   
--   Tasarımcılar  
+- Tasarımcılar  
   
- Aşağıdaki bilgileri Düzenleyicisi ihtiyacınız türünü seçmenize yardımcı olur.  
+  Aşağıdaki bilgileri Düzenleyicisi ihtiyacınız türünü seçmenize yardımcı olur.  
   
 ## <a name="types-of-editor"></a>Düzenleyici türleri  
  Visual Studio çekirdek Düzenleyicisi hakkında daha fazla bilgi için bkz. [düzenleyici ve dil hizmetlerini genişletme](../extensibility/extending-the-editor-and-language-services.md).  
@@ -52,25 +52,25 @@ Visual Studio tümleşik geliştirme ortamı (IDE), farklı türde bir düzenley
 ## <a name="editor-design-decisions"></a>Düzenleyicisi tasarım kararları  
  Aşağıdaki tasarım soruları uygulamanıza uygun en iyi Düzenleyicisi türünü seçmenize yardımcı olur:  
   
--   Uygulamanız kendi veri dosyalarında veya tasarruf edeceksiniz? Dosya verilerini kaydeder, özel veya standart bir biçimde olacak mı?  
+- Uygulamanız kendi veri dosyalarında veya tasarruf edeceksiniz? Dosya verilerini kaydeder, özel veya standart bir biçimde olacak mı?  
   
-     Standart bir dosya biçimi kullanıyorsanız, projenize yanı sıra diğer proje türleri açabilir ve okuma/veri kendisine Yazma olacaktır. Ancak, bir özel dosya biçimi kullanırsanız, yalnızca proje türünüzü açabilir ve okuma/veri kendisine Yazma devam edecektir.  
+   Standart bir dosya biçimi kullanıyorsanız, projenize yanı sıra diğer proje türleri açabilir ve okuma/veri kendisine Yazma olacaktır. Ancak, bir özel dosya biçimi kullanırsanız, yalnızca proje türünüzü açabilir ve okuma/veri kendisine Yazma devam edecektir.  
   
-     Proje dosyaları kullanıyorsa, standart Düzenleyici özelleştirmeniz gerekir. Projenizi dosyalarını kullanmaz, ancak bunun yerine bir veritabanı veya başka bir depodan öğelerinde kullanır, özel bir düzenleyici oluşturmanız gerekir.  
+   Proje dosyaları kullanıyorsa, standart Düzenleyici özelleştirmeniz gerekir. Projenizi dosyalarını kullanmaz, ancak bunun yerine bir veritabanı veya başka bir depodan öğelerinde kullanır, özel bir düzenleyici oluşturmanız gerekir.  
   
--   Düzenleyici ActiveX denetimlerini barındırma gerekiyor mu?  
+- Düzenleyici ActiveX denetimlerini barındırma gerekiyor mu?  
   
-     Düzenleyici ActiveX denetimlerini barındırıyorsa, bir yerinde etkinleştirme Düzenleyici açıklandığı gibi uygulamak [yerinde etkinleştirme](../extensibility/in-place-activation.md). ActiveX denetimleri barındırmıyorsa, ardından basitleştirilmiş bir gömme düzenleyicisi kullanın veya özelleştirme [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] varsayılan düzenleyici.  
+   Düzenleyici ActiveX denetimlerini barındırıyorsa, bir yerinde etkinleştirme Düzenleyici açıklandığı gibi uygulamak [yerinde etkinleştirme](../extensibility/in-place-activation.md). ActiveX denetimleri barındırmıyorsa, ardından basitleştirilmiş bir gömme düzenleyicisi kullanın veya özelleştirme [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] varsayılan düzenleyici.  
   
--   Düzenleyici, birden çok görünüm desteklenecek? Görünümleri düzenleyiciniz aynı zamanda varsayılan düzenleyici görünür olmasını istiyorsanız, birden çok görünüm desteklemesi gerekir.  
+- Düzenleyici, birden çok görünüm desteklenecek? Görünümleri düzenleyiciniz aynı zamanda varsayılan düzenleyici görünür olmasını istiyorsanız, birden çok görünüm desteklemesi gerekir.  
   
-     Düzenleyici birden çok görünüm desteklemesi gerekiyorsa, belge Düzenleyicisi için Görünüm nesneleri ve belge verilerini ayrı nesnelerin olması gerekir. Daha fazla bilgi için [birden çok belge görünümünü desteklemek](../extensibility/supporting-multiple-document-views.md).  
+   Düzenleyici birden çok görünüm desteklemesi gerekiyorsa, belge Düzenleyicisi için Görünüm nesneleri ve belge verilerini ayrı nesnelerin olması gerekir. Daha fazla bilgi için [birden çok belge görünümünü desteklemek](../extensibility/supporting-multiple-document-views.md).  
   
-     Birden çok görünüm düzenleyiciniz destekliyorsa, kullanmayı planlıyor musunuz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] düzenleyicinin metin arabelleği uygulaması çekirdek (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> nesne) belge veri nesneniz için? Diğer bir deyişle, düzenleyici görünümü yan yana ile destek istiyorsunuz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çekirdek Düzenleyicisi? Bunu yapmak için özelliği Form Tasarımcısı'nın temelini...  
+   Birden çok görünüm düzenleyiciniz destekliyorsa, kullanmayı planlıyor musunuz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] düzenleyicinin metin arabelleği uygulaması çekirdek (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> nesne) belge veri nesneniz için? Diğer bir deyişle, düzenleyici görünümü yan yana ile destek istiyorsunuz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çekirdek Düzenleyicisi? Bunu yapmak için özelliği Form Tasarımcısı'nın temelini...  
   
--   İçinde bir dış düzenleyici barındırmak gereksinim duyarsanız, düzenleyici eklenebilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]?  
+- İçinde bir dış düzenleyici barındırmak gereksinim duyarsanız, düzenleyici eklenebilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]?  
   
-     Gömülü olması, bir ana penceresi için dış düzenleyici oluşturma ve sonra çağrı gerekir <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> yöntemi ve kümesi <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> numaralandırma değerini `DP_External`. Düzenleyici eklenemiyor, IDE otomatik olarak için ayrı bir pencere oluşturur.  
+   Gömülü olması, bir ana penceresi için dış düzenleyici oluşturma ve sonra çağrı gerekir <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> yöntemi ve kümesi <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> numaralandırma değerini `DP_External`. Düzenleyici eklenemiyor, IDE otomatik olarak için ayrı bir pencere oluşturur.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [İzlenecek yol: özel düzenleyici oluşturma](../extensibility/walkthrough-creating-a-custom-editor.md)  

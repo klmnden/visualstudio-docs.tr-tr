@@ -16,33 +16,33 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5e420adb00bc8972aead555eb281826db689914
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 60ad2462d5b5331401384f528c7baf93d91851df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276269"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844634"
 ---
 # <a name="introducing-spy"></a>Spy++'a Giriş
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Spy ++ aşağıdaki görevleri gerçekleştirmenize olanak sağlar:  
   
--   Sistem nesneleri arasındaki ilişkileri grafik ağacını görüntüler. Bunlar [işlemleri](../debugger/processes-view.md), [iş parçacıkları](../debugger/threads-view.md), ve [windows](../debugger/windows-view.md).  
+- Sistem nesneleri arasındaki ilişkileri grafik ağacını görüntüler. Bunlar [işlemleri](../debugger/processes-view.md), [iş parçacıkları](../debugger/threads-view.md), ve [windows](../debugger/windows-view.md).  
   
--   Belirtilen arama [windows](../debugger/how-to-search-for-a-window-in-windows-view.md), [iş parçacıkları](../debugger/how-to-search-for-a-thread-in-threads-view.md), [işlemleri](../debugger/how-to-search-for-a-process-in-processes-view.md), veya [iletileri](../debugger/how-to-search-for-a-message-in-messages-view.md).  
+- Belirtilen arama [windows](../debugger/how-to-search-for-a-window-in-windows-view.md), [iş parçacıkları](../debugger/how-to-search-for-a-thread-in-threads-view.md), [işlemleri](../debugger/how-to-search-for-a-process-in-processes-view.md), veya [iletileri](../debugger/how-to-search-for-a-message-in-messages-view.md).  
   
--   Özelliklerini görüntülemek seçili [windows](../debugger/how-to-display-window-properties.md), [iş parçacıkları](../debugger/how-to-display-thread-properties.md), [işlemleri](../debugger/how-to-display-process-properties.md), veya [iletileri](../debugger/how-to-display-message-properties.md).  
+- Özelliklerini görüntülemek seçili [windows](../debugger/how-to-display-window-properties.md), [iş parçacıkları](../debugger/how-to-display-thread-properties.md), [işlemleri](../debugger/how-to-display-process-properties.md), veya [iletileri](../debugger/how-to-display-message-properties.md).  
   
--   Bir pencere, iş parçacığı, işlem veya ileti görünümünde doğrudan'ı seçin.  
+- Bir pencere, iş parçacığı, işlem veya ileti görünümünde doğrudan'ı seçin.  
   
--   Kullanım [Bulucu Aracı](../debugger/how-to-use-the-finder-tool.md) fare işaretçisini konumlandırma tarafından bir pencere seçmek için.  
+- Kullanım [Bulucu Aracı](../debugger/how-to-use-the-finder-tool.md) fare işaretçisini konumlandırma tarafından bir pencere seçmek için.  
   
--   Ayarlama **iletisi seçenekleri** karmaşık ileti günlüğü seçimi parametreleri kullanarak.  
+- Ayarlama **iletisi seçenekleri** karmaşık ileti günlüğü seçimi parametreleri kullanarak.  
   
- Spy ++ araç çubuğu ve daha hızlı çalışmanıza yardımcı olmak için köprüler sahiptir. Ayrıca sağlar bir **Yenile** etkin Görünümü güncelleştirmek için komut bir **pencere Bulucu Aracı** yayılırlar daha kolay hale getirmek için ve bir **yazı tipi** görünümü windows özelleştirmek için iletişim kutusu. Ayrıca, Spy ++, kaydetme ve kullanıcı tercihlerini geri yükleme sağlar.  
+  Spy ++ araç çubuğu ve daha hızlı çalışmanıza yardımcı olmak için köprüler sahiptir. Ayrıca sağlar bir **Yenile** etkin Görünümü güncelleştirmek için komut bir **pencere Bulucu Aracı** yayılırlar daha kolay hale getirmek için ve bir **yazı tipi** görünümü windows özelleştirmek için iletişim kutusu. Ayrıca, Spy ++, kaydetme ve kullanıcı tercihlerini geri yükleme sağlar.  
   
- Çeşitli Spy ++ windows, sık kullanılan komutlar bir kısayol menüsünü görüntülemek için sağ tıklayabilirsiniz. Hangi komutlar işaretçi nerede olduğuna bağlıdır. Örneğin, pencere görünümünde bir girişi sağ tıklatın ve Seçili pencerenin görünür olup, ardından **vurgulayın** kısayol menüsünde, daha kolay bulunabilir yükleyebilmeleri için seçilen pencere kenarlığını neden olur.  
+  Çeşitli Spy ++ windows, sık kullanılan komutlar bir kısayol menüsünü görüntülemek için sağ tıklayabilirsiniz. Hangi komutlar işaretçi nerede olduğuna bağlıdır. Örneğin, pencere görünümünde bir girişi sağ tıklatın ve Seçili pencerenin görünür olup, ardından **vurgulayın** kısayol menüsünde, daha kolay bulunabilir yükleyebilmeleri için seçilen pencere kenarlığını neden olur.  
   
 > [!NOTE]
 >  Spy ++ benzeyen iki diğer yardımcı programları vardır: işlemler, iş parçacıkları ve DDESPY ayrıntılarını gösteren PView. EXE, dinamik veri değişimi (DDE) iletileri izlemenize izin verir.  

@@ -1,5 +1,5 @@
 ---
-title: Klavye ve Fare kısayolları Sınıf Tasarımcısı
+title: Klavye ve Fare kısayolları için Sınıf Tasarımcısı
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,93 +15,93 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db39f9c58c0fa2f0ea57d94cd1be404173720088
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 87b447c3cf2fbba77584675edf3d34f44a98cb64
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957320"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848507"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Sınıf diyagramında ve sınıf Ayrıntıları penceresinde klavye ve Fare kısayolları
 
-Fare yanı sıra klavye gezinme eylemleri gerçekleştirmek için kullanabileceğiniz **Sınıf Tasarımcısı** ve **sınıfı ayrıntıları** penceresi.
+Klavye, fare yanı sıra gezinme eylemleri gerçekleştirmek için kullanabileceğiniz **Sınıf Tasarımcısı** ve **sınıf ayrıntıları** penceresi.
 
 ## <a name="use-the-mouse-in-class-designer"></a>Sınıf Tasarımcısı'nda fare kullanma
 
 Sınıf diyagramları aşağıdaki fare eylemleri desteklenir:
 
 |Fare birleşimi|Bağlam|Açıklama|
-|-----------------------|-------------|-----------------|
-|Çift tıklatın|Şekil öğeleri|Kod Düzenleyicisi açılır.|
-|Çift tıklatın|Lolipop Bağlayıcısı|Genişlet/Daralt Lolipop.|
-|Çift tıklatın|Lolipop bağlayıcı etiketi|Çağırır **Göster arabirimi** komutu.|
-|Fare tekerleği|Sınıf diyagramı|Dikey kaydırın.|
+| - |-------------|-----------------|
+|Çift tıklayın|Şekil öğeleri|Kod Düzenleyicisi açılır.|
+|Çift tıklayın|Lolipop Bağlayıcısı|Genişlet/Daralt lollipop.|
+|Çift tıklayın|Lolipop bağlayıcı etiketi|Çağıran **Göster arabirimi** komutu.|
+|Fare tekerleği|Sınıf diyagramı|Dikey kaydırma.|
 |**Shift** + fare tekerleği|Sınıf diyagramı|Yatay kaydırma.|
 |**CTRL** + fare tekerleği|Sınıf diyagramı|Yakınlaştırma.|
-|**CTRL**+**Shift** +'a tıklayın|Sınıf diyagramı|Yakınlaştırma.|
+|**CTRL**+**Shift** + tıklayın|Sınıf diyagramı|Yakınlaştırma.|
 
 ## <a name="use-the-mouse-in-the-class-details-window"></a>Sınıf Ayrıntıları penceresinde fare kullanma
 
-Fare kullanarak görünümünü değiştirebilirsiniz **sınıfı ayrıntıları** penceresi ve aşağıdaki yollarla görüntülediği verileri:
+Fareyi kullanarak görünümünü değiştirebilirsiniz **sınıf ayrıntıları** penceresi ve verileri aşağıdaki yollarla gösterir:
 
-- Düzenlenebilir bir hücre tıklatarak bu hücrenin içeriğini düzenlemenize olanak tanır. Değişikliklerinizi verileri depolanır veya görüntülenen tüm konumları yansıtılır dahil olmak üzere **özellikleri** penceresi ve kaynak kodu.
+- Düzenlenebilir bir hücreye tıklayıp söz konusu hücrenin içeriğini düzenlemenize olanak tanır. Değişikliklerinizi veri depolanan veya görüntülenen tüm konumları yansıtılır dahil olmak üzere **özellikleri** penceresi ve kaynak kodu.
 
-- Bir satırın herhangi bir hücreyi tıklatıldığında **özellikleri** satır tarafından temsil edilen öğesi özelliklerini görüntülemek için penceresi.
+- Bir satırın herhangi bir hücreyi tıklatıldığında **özellikleri** satır tarafından temsil edilen öğeyi özelliklerini görüntülemek için pencere.
 
-- Bir sütunun genişliği değiştirmek için sütun istediğiniz genişliğe gelinceye kadar sınır sütun başlığını sağ tarafta sürükleyin.
+- Bir sütunun genişliğini değiştirmek için sütun genişliğini istediğiniz kadar sınır sütun başlığını sağ tarafında sürükleyin.
 
-- Genişletin veya satırın sol ok simgeleri tıklayarak bölme ya da özellik düğümleri daraltın.
+- Genişletme veya satır solundaki oka simgeleri tıklayarak bölme ya da özellik düğümleri Daralt.
 
-- **Sınıfı ayrıntıları** penceresi sunar geçerli sınıfında yeni üyeler oluşturmak ve üyelerin bölmeler arasında gezinme için birçok düğme **sınıfı ayrıntıları** penceresi kılavuz.
+- **Sınıf ayrıntıları** penceresi sunar yeni üyeler geçerli sınıftaki oluşturmak ve üyelerin bölmeler arasında gezinmek için çeşitli düğmeler **sınıf ayrıntıları** pencere kılavuzunun.
 
 ## <a name="use-the-keyboard-in-class-designer"></a>Sınıf Tasarımcısı'nda klavyeyi kullanma
 
-Aşağıdaki klavye eylemleri sınıf diyagramlarını desteklenir:
+Sınıf diyagramları aşağıdaki klavye eylemleri desteklenir:
 
 |Anahtar|Bağlam|Açıklama|
 |---------|-------------|-----------------|
-|**Ok tuşları**|İç tür şekilleri|Ağaç-style Gezinti bölmesinde şekli içeriği de (kaydırma şekli geçici desteklenir). Sol ve sağ anahtarları Genişlet/geçerli öğe Genişletilebilir ise Daralt ve üst öğeye gidin değilse (ayrıntılı davranışı için ağaç görünümü Gezinti bakın).|
-|**Ok tuşları**|Üst düzey şekiller|Şekilleri diyagramı taşıma.|
-|**Shift**+**ok tuşları**|İç tür şekilleri|Yapı sürekli Seçimi şekil öğelerine üyeleri, iç içe geçmiş türler veya bölmeler gibi oluşan. Bu kısayolların çevresinde kaydırma desteklemez.|
-|**Giriş**|İç tür şekilleri|Üst düzey şekil başlık gidin.|
-|**Giriş**|Üst düzey şekiller|Diyagramda ilk şekli gidin.|
-|**Bitiş**|İç tür şekilleri|Şekil içinde son görünür öğesine gidin.|
-|**Bitiş**|Üst düzey şekiller|Son şekil diyagramdan gidin.|
-|**Shift**+**giriş**|İç türü şekli|Geçerli öğe ile başlayıp ile aynı şekilde en üst öğede şekil öğeleri seçer.|
-|**Shift**+**bitiş**|İç türü şekli|Aynı **Shift**+**giriş** ancak yukarıdan aşağı yönde.|
-|**Girin**|Tüm bağlamları|Aynı zamanda çift kullanılabilir olan şekil varsayılan eylemini çağırır. Çoğu durumda bu görünümü kodu, ancak bazı öğeler farklı tanımlayın (elma şekerleri, bölme üstbilgileri, Lolipop etiket).|
-|**+** Ve **-**|Tüm bağlamları|O anda odaklanılan öğeyi Genişletilebilir ise, bu anahtarlar Genişlet veya daralt öğesi.|
-|**>**|Tüm bağlamları|Daraltılmış ve ilk alt öğesi olarak gider olan öğelerde bu öğeyi genişletir.|
-|**<**|Tüm bağlamları|Üst öğeye gider.|
-|**Alt**+**Shift**+**m**|Tür şekilleri içinde + tür şekilleri.|Varsa, seçili şekli Lolipop için gider.|
-|**Alt**+**Shift**+**B**|Tür şekilleri içinde + tür şekilleri.|Temel tür listesi türü şekil üzerinde gösterilen ve birden çok öğe varsa, bu listenin (daraltma/genişletme) genişletme durumunu değiştirir.|
-|**Sil**|Tür ve açıklama şekilleri|Çağırır **diyagramdan Kaldır** komutu.|
-|**Sil**|Şey üzerinde.|Çağırır **koddan silme** komutu (üyeleri, parametreleri, ilişkileri, devralma, Lolipop etiket).|
-|**CTRL**+**Sil**|Tüm bağlamları|Çağırır **koddan silme** seçimini komutu.|
-|**Sekmesi**|Tüm bağlamları|Sonraki alt (kaydırma destekler) aynı üst içindeki gider.|
-|**Shift**+**sekmesi**|Tüm bağlamları|Önceki alt (kaydırma destekler) aynı üst içindeki gider.|
-|**Boşluk çubuğu**|Tüm bağlamları|Geçerli öğe seçimini değiştirir.|
+|**Ok tuşları**|İç tür şekilleri|Şekil içeriği ağaç stili ezinti (Şekil çevresinde kaydırma desteklenir). Sol ve sağ tuşlarını Genişlet/geçerli öğe Genişletilebilir ise Daralt ve üst öğeye gidin değilse (ayrıntılı davranışı için ağaç görünümü Gezinti bakın).|
+|**Ok tuşları**|Üst düzey şekiller|Şekilleri diyagram üzerinde taşınıyor.|
+|**Shift**+**ok tuşları**|İç tür şekilleri|Şekil öğelerine üyeleri, iç içe geçmiş türler veya bölmeleri gibi oluşan yapı sürekli seçimi. Bu kısayollar çevresinde kaydırma desteklemez.|
+|**Giriş**|İç tür şekilleri|Üst düzey şekli başlığı gidin.|
+|**Giriş**|Üst düzey şekiller|Diyagram üzerinde ilk şekli gidin.|
+|**Son**|İç tür şekilleri|Şekil içinde son görünür öğesine gidin.|
+|**Son**|Üst düzey şekiller|Son şekli diyagram üzerinde gidin.|
+|**Shift**+**giriş**|İç tür şeklini|Geçerli öğe ile başlayan ve aynı şekilde en üst öğede ile biten bir şeklin içindeki öğeleri seçer.|
+|**Shift**+**bitiş**|İç tür şeklini|Aynı **Shift**+**giriş** yukarıdan aşağı yönde.|
+|**Girin**|Tüm bağlamları|Ayrıca çift kullanılabilir olan şekil varsayılan eylemini çağırır. Çoğu durumda bu kodu görüntüle ancak bazı öğelerin farklı tanımlayın (elma şekerleri, bölme üstbilgileri, lollipop etiketlerini).|
+|**+** ve **-**|Tüm bağlamları|O anda odaklanılan öğeyi Genişletilebilir ise, bu anahtarları genişletin veya öğe daraltın.|
+|**>**|Tüm bağlamları|Daraltılmış ve ilk alt öğesine gider öğelerde alt öğe içeren bu öğe genişletir.|
+|**<**|Tüm bağlamları|Üst öğesine gider.|
+|**Alt**+**Shift**+**m**|Tür şekillerini içinde + tür şekilleri.|Varsa, şu anda Seçilen şekil lolipopa gider.|
+|**Alt**+**Shift**+**B**|Tür şekillerini içinde + tür şekilleri.|Temel tür listesi tür şeklini gösterilir ve birden fazla öğe varsa, bu listenin (daraltma/genişletme) genişletme durumunu değiştirir.|
+|**Delete**|Diyagramdaki şekilleri türü ve açıklama|Çağıran **diyagramdan Kaldır** komutu.|
+|**Delete**|Diğer her şey üzerinde.|Çağıran **koddan Sil** komut (üyeleri, parametreleri, ilişkilendirmeler, devralma, lollipop etiketlerini).|
+|**CTRL**+**Sil**|Tüm bağlamları|Çağıran **koddan Sil** seçimi komutu.|
+|**sekmesi**|Tüm bağlamları|Sonraki alt (kaydırma destekler) aynı üst içinde gider.|
+|**Shift**+**sekmesi**|Tüm bağlamları|Önceki alt (kaydırma destekler) aynı üst içinde gider.|
+|**Ara çubuğu**|Tüm bağlamları|Seçim geçerli öğe yapar.|
 
-## <a name="use-the-keyboard-in-the-class-details-window"></a>Sınıf Ayrıntıları penceresinde klavye kullanma
+## <a name="use-the-keyboard-in-the-class-details-window"></a>Sınıf Ayrıntıları penceresinde klavye kullanın
 
 > [!NOTE]
-> Aşağıdaki anahtar bağlama için özel kod yazmaya deneyimi taklit edecek şekilde seçilmiştir.
+> Aşağıdaki anahtar bağlamaları için özel kod yazma deneyimi taklit edecek şekilde seçilmiştir.
 
-Gitmek için aşağıdaki tuşlarını **sınıfı ayrıntıları** penceresi:
+Gitmek için aşağıdaki anahtarları kullanmak **sınıf ayrıntıları** penceresi:
 
 |||
 |-|-|
 |Anahtar|Sonuç|
-|**,** (virgül)|İmleci bir parametre satırda ise, virgül yazarak imleci sonraki parametrenin adı alanına taşır. İmleç bir yöntem son parametre satırda ise, imleci için taşır \<parametresini ekleyin > Yeni bir parametre oluşturmak için kullanabileceğiniz alan.<br /><br /> İmleç başka bir yerde ise **sınıfı ayrıntıları** penceresinde, virgül yazarak tam anlamıyla ekler virgül geçerli alanda.|
-|**;**  (noktalı virgül) veya **)** (parantez kapatma)|Ad alanı içindeki sonraki üye satırın imleci gitme **sınıfı ayrıntıları** penceresi kılavuz.|
-|**Sekmesi**|İmleci ilk sağdan sola ve ardından en alta taşıma sonraki alana taşır. İmleç metin, yazdığınız alandan taşınsa **sınıfı ayrıntıları** metnin işler ve bir hata vermezse depolar.<br /><br /> İmleç üzerinde boş alan gibi olup olmadığını \<parametresini ekleyin >, sekme, sonraki satıra ilk alanına taşır.|
-|**Boşluk çubuğu**|İmleci ilk sağdan sola ve ardından en alta taşıma sonraki alana taşır. İmleç üzerinde boş alan gibi olup olmadığını \<parametresini ekleyin >, sonraki satıra ilk alanına taşır. Unutmayın \<alanı > virgül hemen yoksayılır sonra belirtilmiş.<br /><br /> İmleç Özet alanında ise, bir boşluk yazarak bir boşluk karakteri ekler.<br /><br /> İmleci belirli bir satır Gizle sütununda ise, bir boşluk yazarak Gizle onay kutusu değerini değiştirir.|
-|**CTRL**+**sekmesi**|Başka bir belge penceresine geçiş yap. Örneğin, geçiş **sınıfı ayrıntıları** açık kod dosyası penceresine.|
-|**ESC**|Bir alanda metin yazmak başlamıştır, ESC tuşuna basarak alanın içeriği önceki değerine geri döndürülürken bir geri alma anahtarı gibi davranır. Sınıf Ayrıntıları penceresi genel odağa sahip, ancak belirli bir hücre odaklanmış, ESC tuşuna basarak odağı merkezden taşır **sınıfı ayrıntıları** penceresi.|
-|**Yukarı ok** ve **aşağı ok**|Bu anahtarları imleci satır satır dikey olarak taşımak **sınıfı ayrıntıları** penceresi kılavuz.|
-|**Sol Ok**|İmleç Ad sütununda ise (açıksa) sol ok tuşuna basarak hiyerarşide geçerli düğüm daraltır.|
-|**Sağ ok**|İmleç Ad sütununda ise (daraltılmışsa) sağ ok tuşuna basarak hiyerarşide geçerli düğüm genişletir.|
+|**,** (virgül)|İmleç bir parametre satırındaki içinde ise, virgül yazma imleci sonraki parametre adı alanına taşır. İmleç bir yöntem içinde son parametre satırı varsa imleci hareket \<parametre Ekle > Yeni bir parametre oluşturmak için kullanabileceğiniz bir alan.<br /><br /> İmleç başka bir yerde ise **sınıf ayrıntıları** penceresinde virgül yazarak tam anlamıyla ekler virgül geçerli alanda.|
+|**;**  (noktalı virgül) veya **)** (kapanış ayracı)|İmleci sonraki üye satırda adı alanına taşımak **sınıf ayrıntıları** pencere kılavuzunun.|
+|**sekmesi**|İmleç ilk soldan sağa ve yukarıdan ardından üst taşıma sonraki alana taşır. İmleç metin içinde yazdığınız alandan taşıyorsanız **sınıf ayrıntıları** metni işleyen ve bir hata vermezse depolar.<br /><br /> İmleç bir boş alanı gibi olup olmadığını \<parametre Ekle >, sekme, sonraki satırda ilk alanına taşır.|
+|**Ara çubuğu**|İmleç ilk soldan sağa ve yukarıdan ardından üst taşıma sonraki alana taşır. İmleç bir boş alanı gibi olup olmadığını \<parametre Ekle >, sonraki satırda ilk alanına taşır. Unutmayın \<alanı > hemen virgül göz ardı edilir sonra türü belirtilmiş.<br /><br /> İmleç Özet alanında ise, bir boşluk girerek bir boşluk karakteri ekler.<br /><br /> İmleci belirli bir satır Gizle sütununda ise, bir boşluk tuşlarına basarak Gizle onay kutusu değerini değiştirir.|
+|**CTRL**+**sekmesi**|Başka bir belge penceresine geçiş yapar. Örneğin, geçiş **sınıf ayrıntıları** penceresi bir açık kod dosyası.|
+|**ESC**|Bir alana metin yazmak başlamıştır, ESC tuşuna basarak alanın içeriğini önceki değerine dönüştürme, bir geri alma anahtar görevi görür. Sınıf Ayrıntıları penceresi genel odağa sahip, ancak belirli hiçbir hücre odaklanmış, ESC tuşuna basarak odağı UZAĞINIZDA taşır **sınıf ayrıntıları** penceresi.|
+|**Yukarı ok** ve **aşağı ok**|Bu anahtarları satır satır içinde dikey imleç **sınıf ayrıntıları** pencere kılavuzunun.|
+|**Sol Ok**|İmleç Ad sütununda ise (açıksa) sol ok tuşlarına hiyerarşideki geçerli düğüm daraltır.|
+|**Sağ ok**|İmleç Ad sütununda ise (daraltılmışsa) basarak oka hiyerarşideki geçerli düğüm genişletir.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Oluşturma ve tür üyeleri yapılandırma](creating-and-configuring-type-members.md)
+- [Tür üyeleri oluşturma ve yapılandırma](creating-and-configuring-type-members.md)

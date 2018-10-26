@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7a79ddd1644103d3e60f42c909706f2a3d771e9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 933c18a43cb8ebacd32914cb487fb0216b538b25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860517"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942484"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Senaryo: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme
 
@@ -82,7 +82,7 @@ Team Foundation Server hakkında daha fazla bilgi için bkz:
 Aşağıdaki tablo bu araçların yazılım geliştirme yaşam döngüsünün çoklu ve çeşitli aşamaları sırasında oynayabileceği roller açıklanmıştır:
 
 ||**Kullanıcı gereksinimlerini modelleme**|**İş Süreci Modelleme**|**Sistem Mimarisi ve tasarımı**|**Kodu görselleştirme ve keşfetme**|**Doğrulama**|
-|------|------------------------------------|-----------------------------------|--------------------------------------|------------------------------------------|----------------------|
+|------|-|-|-|-|-|
 |Etki alanına özgü dil (DSL) diyagramı|Evet|Evet|Evet|||
 |Bağımlılık diyagramı, katman doğrulama|||Evet|Evet|Evet|
 |Kod Haritası|||Evet|Evet|Evet|
@@ -145,7 +145,7 @@ Ekipler yaptıkları değişiklikleri kaydetmeden önce bağımlılık doğrulam
 Şimdi Akşam Yemeği yeni gereksinimi Karşılama maliyetini tahmin etmek gerekir. Bu kısmen değişikliğin sistemin diğer bölümlerini etkileme derecesine bağlıdır. Bunu anlamalarına yardımcı olmak için Dinner Now geliştiricilerinden biri bu eşlemeleri ve diyagramları mevcut koddan oluşturur:
 
 |**Harita veya diyagram**|**Gösterir**|
-|------------------------|---------------|
+|-|-|
 |*Kod Haritası*<br /><br /> Bkz.<br /><br /> - [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)<br />- [Gözat ve kod haritaları bunları yeniden düzenleme](../modeling/browse-and-rearrange-code-maps.md)<br />- [DGML dosyalarını düzenleyerek kod haritalarını özelleştirme](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Bağımlılıklar ve diğer koddaki ilişkileri.<br /><br /> Örneğin, Şimdi Akşam Yemeği derlemeler ve bağımlılıklarına bir genel bakış için derleme kod haritaları gözden geçirilmesiyle başlayabilir. Ad alanlarını ve sınıfları bu derlemelerde bulunan keşfetmek için haritalarını halinde inebilir.<br /><br /> Şimdi Akşam Yemeği aynı zamanda belirli alanları ve diğer tür kod içindeki ilişkileri keşfetmek için maps oluşturabilirsiniz. Bunlar, bulmak ve onları ilgilendiren ilişkileri ve alanları seçmek için Çözüm Gezgini'ni kullanın.|
 |*Kod tabanlı sınıf diyagramı*<br /><br /> Bkz: [nasıl yapılır: sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Kod üzerinde varolan sınıflar|
 
@@ -166,14 +166,14 @@ Ekipler yaptıkları değişiklikleri kaydetmeden önce bağımlılık doğrulam
  Sistemin bileşenler veya etkileşimler gibi öbür parçalarına değişiklikleri açıklamak için takım bu öğeleri panolara çizebilir. Ayrıntılar yakalanan, yönetilen ve her iki takım tarafından anlaşılabilsin diye, bunlar aşağıdaki diyagramları Visual Studio'da çizebilir:
 
 |**Diyagramları**|**Açıklar**|
-|------------------|-------------------|
+|-|-|
 |*Kod tabanlı sınıf diyagramı*<br /><br /> Bkz: [nasıl yapılır: sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Kod üzerinde varolan sınıflar.|
 
 ### <a name="ValidatingCode"></a> Kodun tasarımla tutarlılığını korumak
  Şimdi Akşam Yemeği güncelleştirilen kodun tasarım ile tutarlı kalmasını sağlayın. Bunlar sistemde işlevselliğe ilişkin katmanları açıklamak, bu katmanlara bunları ve ilişkilendirme çözüm yapılarına izin verilen bağımlılıkları belirtin bağımlılık diyagramları oluşturur.
 
 |**Diyagramı**|**Açıklar**|
-|-----------------|-------------------|
+|-|-|
 |*Bağımlılık diyagramı*<br /><br /> Bkz.<br /><br /> - [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Bağımlılık diyagramları: başvuru](../modeling/layer-diagrams-reference.md)<br />- [Bağımlılık diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md)<br />- [Bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)|Kodun mantıksal mimarisi.<br /><br /> Bir bağımlılık diyagram düzenler ve yapıtlar bir Visual Studio çözümünde adı verilen soyut gruplarla eşleştirir *katmanları*. Bu katmanlar, roller, görevlerin veya bu yapıların sistemde gerçekleştirdiği işlevleri tanımlayın.<br /><br /> Katman diyagramları, sistemin amaçlanan tasarımını açıklayan ve tasarımda gelişen kodu doğrulamak için kullanışlıdır.<br /><br /> Katmanlar oluşturmak için Çözüm Gezgini, kod Haritaları, sınıf görünümü ve Nesne Tarayıcısı'ndan öğeleri sürükleyin. Yeni Katmanlar çizmek için araç kutusunu kullanın veya diyagram yüzeyine sağ tıklayın.<br /><br /> Varolan bağımlılıkları görüntülemek için katman diyagramı yüzeyine sağ tıklayın ve ardından **Bağımlılıklar Oluştur**. Hedeflenen bağımlılıklarını belirtmek için yeni bağımlıklar çizin.|
 
  Örneğin, aşağıdaki bağımlılık diyagramı katmanlar ve her bir katman ile ilişkili yapıların sayısı arasındaki bağımlılıkları tanımlar:
@@ -330,7 +330,7 @@ Bu harita, PaymentApprover sınıfının artık DinnerNow.Business ad alanında 
 #### <a name="relationship-to-other-diagrams"></a>Diğer Diyagramlarla İlişki
 
 |**Diyagramı**|**Açıklar**|
-|-----------------|-------------------|
+|-|-|
 |Bağımlılık diyagramı|Sistemin mantıksal mimarisi. Bağımlılık doğrulama kodu tasarım ile tutarlı kalmasını sağlamak için kullanın.<br /><br /> Mevcut dependencys veya hedeflenen dependencys tanımlamanıza yardımcı olması için bir kod Haritası oluşturun ve ilişkili öğeleri gruplayın. Bir bağımlılık diyagramı oluşturmak için bkz:<br /><br /> - [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Bağımlılık diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md)|
 |Sınıf diyagramı (kod tabanlı)|Belirli bir proje için kod üzerinde varolan sınıflar.<br /><br /> Görselleştirme ve kod içinde varolan bir sınıf değiştirmek için Sınıf Tasarımcısı'nı kullanın.<br /><br /> Bkz: [nasıl yapılır: sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|
 
@@ -369,11 +369,11 @@ Bir sınıf diyagramı aşağıdaki önemli özelliklere sahiptir:
 
 - Bir *ilişkilendirme* tür iki sınıflandırıcı arasındaki ilişkiyi gösterir.
 
-    - Bir *toplama* sınıflandırıcılar arasındaki ortak mülkiyeti gösteren bir ilişkilendirmedir.
+  - Bir *toplama* sınıflandırıcılar arasındaki ortak mülkiyeti gösteren bir ilişkilendirmedir.
 
-    - A *bileşim* bir sınıflandırıcılar arasındaki bütün parça ilişkisini gösteren bir ilişkilendirmedir.
+  - A *bileşim* bir sınıflandırıcılar arasındaki bütün parça ilişkisini gösteren bir ilişkilendirmedir.
 
-     Toplamaları veya birleşimleri göstermek için **toplama** ilişkilendirme özelliği. **Paylaşılan** toplamaları gösterir ve **bileşik** bileşimleri gösterir.
+    Toplamaları veya birleşimleri göstermek için **toplama** ilişkilendirme özelliği. **Paylaşılan** toplamaları gösterir ve **bileşik** bileşimleri gösterir.
 
 - A *bağımlılık* bir sınıflandırıcı tanımını değiştirerek başka bir sınıflandırıcı tanımını değiştirebileceğini gösterir.
 
@@ -399,7 +399,7 @@ Keşfedin ve var olan sınıfları tartışmak için başlangıç noktası olara
 #### <a name="relationship-to-other-diagrams"></a>Diğer Diyagramlarla İlişki
 
 |**Diyagramı**|**Açıklama**|
-|-----------------|---------------------|
+|-|-|
 |Bağımlılık diyagramı|Sınıflarla bağlantılı olarak sistemin mantıksal mimarisini tanımlayın.<br /><br /> Bağımlılık doğrulama kodu tasarım ile tutarlı kalmasını sağlamak için kullanın.<br /><br /> Bkz.<br /><br /> - [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Bağımlılık diyagramları: başvuru](../modeling/layer-diagrams-reference.md)<br />- [Bağımlılık diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md)<br />- [Bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)|
 |Kod Haritası|Kuruluş ve mevcut koddaki ilişkileri görselleştirin.<br /><br /> Sınıfları, ilişkilerini ve yöntemlerini tanımlamak için bu öğeleri gösteren bir kod Haritası oluşturun.<br /><br /> Bkz.<br /><br /> - [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)|
 
@@ -440,13 +440,13 @@ Bir bağımlılık diyagramı aşağıdaki önemli özelliklere sahiptir:
 
      Bir katmandaki sayı katmana bağlı olan yapıların sayısını gösterir. Bu yapılar ad alanları, projeler, sınıflar, yöntemler vb. olabilir. Bir katmandaki yapı sayısını yorumladığınızda aşağıdakileri unutmayın:
 
-    - Bir katman diğer yapıları içeren bir yapıya bağlanırsa, ancak katman doğrudan diğer yapılara bağlanmazsa, sayı yalnızca bağlı yapıyı içerir. Bununla birlikte, diğer yapılar katman doğrulanırken analiz için alınır.
+  - Bir katman diğer yapıları içeren bir yapıya bağlanırsa, ancak katman doğrudan diğer yapılara bağlanmazsa, sayı yalnızca bağlı yapıyı içerir. Bununla birlikte, diğer yapılar katman doğrulanırken analiz için alınır.
 
-         Örneğin, bir katman tek bir ad alanına bağlanırsa, ad alanı sınıflar içerse bile, bağlı yapıların sayısı 1'dir. Katmanın ad alanındaki her bir sınıfa da bağlantıları bulunuyorsa, sayı bağlantılı sınıfları da içerecektir.
+       Örneğin, bir katman tek bir ad alanına bağlanırsa, ad alanı sınıflar içerse bile, bağlı yapıların sayısı 1'dir. Katmanın ad alanındaki her bir sınıfa da bağlantıları bulunuyorsa, sayı bağlantılı sınıfları da içerecektir.
 
-    - Bir katman yapılarla bağlantılı diğer katmanları içeriyorsa, kapsayıcı katman da üzerindeki sayı bu yapıları içermese bile bu yapılara bağlıdır.
+  - Bir katman yapılarla bağlantılı diğer katmanları içeriyorsa, kapsayıcı katman da üzerindeki sayı bu yapıları içermese bile bu yapılara bağlıdır.
 
-     Bir katmana bağlı yapıların listesini görmek için bağımlılık sağ tıklayın ve ardından **bağlantıları görüntüle** açmak için **Katman Gezgini**.
+    Bir katmana bağlı yapıların listesini görmek için bağımlılık sağ tıklayın ve ardından **bağlantıları görüntüle** açmak için **Katman Gezgini**.
 
 - A *bağımlılık* bir katmanın işlevselliği kullanabileceğini belirtir başka bir katmanda ancak tersi doğru değildir. A *çift yönlü bağımlılık* bir katmanın işlevselliği kullanabileceğini belirtir başka bir katmanda ve bunun tersi de geçerlidir.
 
@@ -473,13 +473,13 @@ Bağımlılık diyagramları yardımcı olur:
 #### <a name="relationship-to-other-diagrams"></a>Diğer Diyagramlarla İlişki
 
 |**Diyagramı**|**Açıklama**|
-|-----------------|---------------------|
+|-|-|
 |Kod Haritası|Kuruluş ve mevcut koddaki ilişkileri görselleştirin.<br /><br /> Katmanlar oluşturmak için kod haritası oluşturmak ve sonra harita üzerinde öğeleri olası Katmanlar olarak gruplayın. Grupları eşlemesinden bağımlılık diyagrama sürükleyin.<br /><br /> Bkz.<br /><br /> - [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)<br />- [Gözat ve kod haritaları bunları yeniden düzenleme](../modeling/browse-and-rearrange-code-maps.md)|
 
 ## <a name="external-resources"></a>Dış Kaynaklar
 
 |**Kategori**|**Bağlantılar**|
-|------------------|---------------|
+|-|-|
 |**Forumları**|- [Visual Studio Görselleştirme ve Modelleme Araçları](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Görselleştirme ve modelleme SDK'sını (DSL araçları)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 
 ## <a name="see-also"></a>Ayrıca bkz.

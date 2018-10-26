@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ccffb796b32313f9b7e48e1a61e5625085d3078
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 84556a47fe352054255a331c2e689d519c217f63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256626"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891855"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>Nasıl yapılır: Profil Oluşturma Araçları ETW Raporu Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ Bir performans oturumu içinde kaydedilen ETW olayları için olay izleme Window
 > [!NOTE]
 >  Arabirimdeki ETW raporları görüntüleyemez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   Arabirimi kullanarak ETW veri toplama hakkında bilgi için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], bkz: [nasıl yapılır: veri toplamak için olay izleme Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
+- Arabirimi kullanarak ETW veri toplama hakkında bilgi için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], bkz: [nasıl yapılır: veri toplamak için olay izleme Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
   
--   Bir komut istemi'nden ETW veri toplama hakkında daha fazla bilgi için bkz: [VSPerfCmd](../profiling/vsperfcmd.md) ve [olayları](../profiling/events-vsperfcmd.md).  
+- Bir komut istemi'nden ETW veri toplama hakkında daha fazla bilgi için bkz: [VSPerfCmd](../profiling/vsperfcmd.md) ve [olayları](../profiling/events-vsperfcmd.md).  
   
- Kullanarak ETW raporu oluşturma **VSReport / summary: etw** komutu. ETW verilerini içeren .etl, profil oluşturma veri (.vsp veya .vsps) dosyası olarak aynı dizinde olmalıdır. Varsayılan olarak, bir virgülle ayrılmış değer (.csv) dosyası olarak rapor oluşturulur. Daha fazla bilgi için [VSPerfReport](../profiling/vsperfreport.md).  
+  Kullanarak ETW raporu oluşturma **VSReport / summary: etw** komutu. ETW verilerini içeren .etl, profil oluşturma veri (.vsp veya .vsps) dosyası olarak aynı dizinde olmalıdır. Varsayılan olarak, bir virgülle ayrılmış değer (.csv) dosyası olarak rapor oluşturulur. Daha fazla bilgi için [VSPerfReport](../profiling/vsperfreport.md).  
   
 ### <a name="to-generate-an-etw-report"></a>ETW raporu oluşturmak için  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 52f9c4ffef27b7b17bbcb75d734b4d0b7e41a3ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a57f84901f2ac6bc691c50fa6d1e3c8b94db6c50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271654"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939912"
 ---
 # <a name="ltfieldgt-javascript"></a>&lt;alan&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,44 +52,44 @@ Bir alan veya bir nesne üzerinde tanımlanan üyesi için bir açıklama da dah
  `type`  
  İsteğe bağlı. Alanın veri türü. Tür aşağıdakilerden biri olabilir:  
   
--   ECMAScript dil yazın, ECMAScript 5 açıklamasında gibi `Number` ve `Object`.  
+- ECMAScript dil yazın, ECMAScript 5 açıklamasında gibi `Number` ve `Object`.  
   
--   Gibi bir DOM nesnesi `HTMLElement`, `Window`, ve `Document`.  
+- Gibi bir DOM nesnesi `HTMLElement`, `Window`, ve `Document`.  
   
--   Bir JavaScript oluşturucu işlevi.  
+- Bir JavaScript oluşturucu işlevi.  
   
- `integer`  
- İsteğe bağlı. Varsa `type` olduğu `Number`, alanı bir tamsayı olup olmadığını belirtir. Kümesine `true` alanı bir tamsayı; olduğunu belirtmek için Aksi takdirde, kümesine `false`. Bu öznitelik, IntelliSense bilgilerini sağlamak için Visual Studio tarafından kullanılmaz.  
+  `integer`  
+  İsteğe bağlı. Varsa `type` olduğu `Number`, alanı bir tamsayı olup olmadığını belirtir. Kümesine `true` alanı bir tamsayı; olduğunu belirtmek için Aksi takdirde, kümesine `false`. Bu öznitelik, IntelliSense bilgilerini sağlamak için Visual Studio tarafından kullanılmaz.  
   
- `domElement`  
- İsteğe bağlı. Bu öznitelik kullanım dışı; `type` özniteliği bu öznitelik göre önceliklidir. Bu öznitelik, belgelenmiş alanın bir DOM öğesi olup olmadığını belirtir. Kümesine `true` alan bir DOM öğesi; olduğunu belirtmek için Aksi takdirde, kümesine `false`. Varsa `type` özniteliği ayarlanmamıştır ve `domElement` ayarlanır `true`, IntelliSense belgelenmiş alan olarak değerlendirir bir `HTMLElement` deyim tamamlama gerçekleştirirken.  
+  `domElement`  
+  İsteğe bağlı. Bu öznitelik kullanım dışı; `type` özniteliği bu öznitelik göre önceliklidir. Bu öznitelik, belgelenmiş alanın bir DOM öğesi olup olmadığını belirtir. Kümesine `true` alan bir DOM öğesi; olduğunu belirtmek için Aksi takdirde, kümesine `false`. Varsa `type` özniteliği ayarlanmamıştır ve `domElement` ayarlanır `true`, IntelliSense belgelenmiş alan olarak değerlendirir bir `HTMLElement` deyim tamamlama gerçekleştirirken.  
   
- `mayBeNull`  
- İsteğe bağlı. Belgelenen alanın ayarlayıp ayarlayamayacağını belirler null. Kümesine `true` alan ayarlanabilir, aksi takdirde çok belirtmek için ayarlanmış `false`. Varsayılan değer `false` şeklindedir. Bu öznitelik, IntelliSense bilgilerini sağlamak için Visual Studio tarafından kullanılmaz.  
+  `mayBeNull`  
+  İsteğe bağlı. Belgelenen alanın ayarlayıp ayarlayamayacağını belirler null. Kümesine `true` alan ayarlanabilir, aksi takdirde çok belirtmek için ayarlanmış `false`. Varsayılan değer `false` şeklindedir. Bu öznitelik, IntelliSense bilgilerini sağlamak için Visual Studio tarafından kullanılmaz.  
   
- `elementType`  
- İsteğe bağlı. Varsa `type` olduğu `Array`, bu öznitelik, dizideki öğelerin türünü belirtir.  
+  `elementType`  
+  İsteğe bağlı. Varsa `type` olduğu `Array`, bu öznitelik, dizideki öğelerin türünü belirtir.  
   
- `elementInteger`  
- İsteğe bağlı. Varsa `type` olduğu `Array` ve `elementType` olduğu `Number`, bu öznitelik, dizideki öğelerin tamsayılar olup olmadığını belirtir. Kümesine `true` göstermek için dizideki öğelerin tamsayılardır; Aksi takdirde, kümesine `false`. Bu öznitelik, IntelliSense bilgilerini sağlamak için Visual Studio tarafından kullanılmaz.  
+  `elementInteger`  
+  İsteğe bağlı. Varsa `type` olduğu `Array` ve `elementType` olduğu `Number`, bu öznitelik, dizideki öğelerin tamsayılar olup olmadığını belirtir. Kümesine `true` göstermek için dizideki öğelerin tamsayılardır; Aksi takdirde, kümesine `false`. Bu öznitelik, IntelliSense bilgilerini sağlamak için Visual Studio tarafından kullanılmaz.  
   
- `elementDomElement`  
- İsteğe bağlı. Bu öznitelik kullanım dışı; `elementType` özniteliği bu öznitelik göre önceliklidir. Varsa `type` olduğu `Array`, bu öznitelik, dizideki öğelerin DOM öğeleri olup olmadığını belirtir. Kümesine `true` belirtmek için öğeleri DOM öğeleri; Aksi takdirde, kümesine `false`. Varsa `elementType` özniteliği ayarlanmamıştır ve `elementDomElement` ayarlanır `true`, IntelliSense her öğe dizisi değerlendirir bir `HTMLElement` deyim tamamlama gerçekleştirirken.  
+  `elementDomElement`  
+  İsteğe bağlı. Bu öznitelik kullanım dışı; `elementType` özniteliği bu öznitelik göre önceliklidir. Varsa `type` olduğu `Array`, bu öznitelik, dizideki öğelerin DOM öğeleri olup olmadığını belirtir. Kümesine `true` belirtmek için öğeleri DOM öğeleri; Aksi takdirde, kümesine `false`. Varsa `elementType` özniteliği ayarlanmamıştır ve `elementDomElement` ayarlanır `true`, IntelliSense her öğe dizisi değerlendirir bir `HTMLElement` deyim tamamlama gerçekleştirirken.  
   
- `elementMayBeNull`  
- İsteğe bağlı. Varsa `type` olduğu `Array`, dizideki öğelerin ayarlayıp ayarlayamayacağını belirler null. Kümesine `true` dizideki öğelerin ayarlanabilir, aksi takdirde çok belirtmek için ayarlanmış `false`. Varsayılan değer `false` şeklindedir. Bu öznitelik, IntelliSense bilgilerini sağlamak için Visual Studio tarafından kullanılmaz.  
+  `elementMayBeNull`  
+  İsteğe bağlı. Varsa `type` olduğu `Array`, dizideki öğelerin ayarlayıp ayarlayamayacağını belirler null. Kümesine `true` dizideki öğelerin ayarlanabilir, aksi takdirde çok belirtmek için ayarlanmış `false`. Varsayılan değer `false` şeklindedir. Bu öznitelik, IntelliSense bilgilerini sağlamak için Visual Studio tarafından kullanılmaz.  
   
- `helpKeyword`  
- İsteğe bağlı. F1 Yardım anahtar sözcüğü.  
+  `helpKeyword`  
+  İsteğe bağlı. F1 Yardım anahtar sözcüğü.  
   
- `locid`  
- İsteğe bağlı. Yerelleştirme alanı hakkında bilgi için tanımlayıcı. Tanımlayıcıdır ya da bir üye kimliği veya karşılık gelen `name` öznitelik değeri bir ileti paketteki OpenAjax meta verileri tarafından tanımlanır. Belirtilen biçim tanımlayıcı türü bağımlı [ \<loc >](../ide/loc-javascript.md) etiketi.  
+  `locid`  
+  İsteğe bağlı. Yerelleştirme alanı hakkında bilgi için tanımlayıcı. Tanımlayıcıdır ya da bir üye kimliği veya karşılık gelen `name` öznitelik değeri bir ileti paketteki OpenAjax meta verileri tarafından tanımlanır. Belirtilen biçim tanımlayıcı türü bağımlı [ \<loc >](../ide/loc-javascript.md) etiketi.  
   
- `value`  
- İsteğe bağlı. İşlev kodunun kendisi yerine IntelliSense tarafından kullanılmak üzere değerlendirilmelidir kodu belirtir. İçin `<field>`, bu öznitelik, oluşturucu işlevleri için desteklenir, ancak nesne sabit değeri için desteklenmiyor. Bu alan türü tanımlanmamış olduğunda tür bilgisini sağlaması özniteliktir. Örneğin, kullanabileceğiniz `value=’1’` alan türünün sayı olarak değerlendirilecek.  
+  `value`  
+  İsteğe bağlı. İşlev kodunun kendisi yerine IntelliSense tarafından kullanılmak üzere değerlendirilmelidir kodu belirtir. İçin `<field>`, bu öznitelik, oluşturucu işlevleri için desteklenir, ancak nesne sabit değeri için desteklenmiyor. Bu alan türü tanımlanmamış olduğunda tür bilgisini sağlaması özniteliktir. Örneğin, kullanabileceğiniz `value=’1’` alan türünün sayı olarak değerlendirilecek.  
   
- `description`  
- İsteğe bağlı. Alan için bir açıklama.  
+  `description`  
+  İsteğe bağlı. Alan için bir açıklama.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `name` Özniteliği, bir oluşturucu işlevi bir alanda belgeleme durumlarda gereklidir. Diğer tüm senaryolar için tüm öznitelikler için `<field>` öğe isteğe bağlıdır.  

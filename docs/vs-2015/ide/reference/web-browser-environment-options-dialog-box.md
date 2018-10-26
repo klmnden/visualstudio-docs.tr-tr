@@ -29,12 +29,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 76abbde711e73598eb8c7bcfde052335222d0822
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa793fa91667dd360c301442ccb0831d11122473
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175610"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931844"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Web Tarayıcısı, Ortam, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,14 +57,14 @@ ms.locfileid: "49175610"
  Kaynağı şurada görüntüle  
  Düzenleyicisi'ni seçtiğinizde, bir Web sayfası açmak için kullanılan ayarlar **kaynağı görüntüle** iç Web tarayıcısından sayfasında.  
   
--   **Kaynak Düzenleyicisi** kaynakta görüntülemek için seçin [kod yazma](../../ide/writing-code-in-the-code-and-text-editor.md).  
+- **Kaynak Düzenleyicisi** kaynakta görüntülemek için seçin [kod yazma](../../ide/writing-code-in-the-code-and-text-editor.md).  
   
--   **HTML Düzenleyicisi** kaynakta görüntülemek için seçin [HTML Tasarımcısı](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). İki görünüm birinde Web sayfasını düzenlemek için bu seçimi kullanın: Tasarım görünümü veya standart metin tabanlı kaynak görünümü.  
+- **HTML Düzenleyicisi** kaynakta görüntülemek için seçin [HTML Tasarımcısı](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). İki görünüm birinde Web sayfasını düzenlemek için bu seçimi kullanın: Tasarım görünümü veya standart metin tabanlı kaynak görünümü.  
   
--   **Dış düzenleyici** kaynak başka bir düzenleyicide görüntülemek için seçin. Seçtiğiniz herhangi bir düzenleyiciye Örneğin, Notepad.exe yolunu belirtin.  
+- **Dış düzenleyici** kaynak başka bir düzenleyicide görüntülemek için seçin. Seçtiğiniz herhangi bir düzenleyiciye Örneğin, Notepad.exe yolunu belirtin.  
   
- Internet Explorer Seçenekleri  
- Internet Explorer seçeneklerini değiştirmek için tıklayın **Internet Özellikleri** iletişim kutusu. Bu iletişim kutusunda yapılan değişiklikler, iç Web tarayıcısı ve Internet Explorer'ın dışında (örneğin, Başlat menüsünden) Visual Studio IDE başlatılan örneklerini etkiler.  
+  Internet Explorer Seçenekleri  
+  Internet Explorer seçeneklerini değiştirmek için tıklayın **Internet Özellikleri** iletişim kutusu. Bu iletişim kutusunda yapılan değişiklikler, iç Web tarayıcısı ve Internet Explorer'ın dışında (örneğin, Başlat menüsünden) Visual Studio IDE başlatılan örneklerini etkiler.  
   
 > [!NOTE]
 >  Farklı, harici bir Web tarayıcısı kullanarak Internet Explorer'ın bir sürümü olan Visual Studio iç Web tarayıcısı, değiştirilecek şununla Gözat iletişim kutusunu kullanın.  

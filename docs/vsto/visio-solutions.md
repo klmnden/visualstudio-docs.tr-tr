@@ -20,56 +20,56 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c583108d1cc7aca35b8df4f20d787571c865e400
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 248fa3051a3d639798f37270dc7957a759e20d6e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767822"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941990"
 ---
 # <a name="visio-solutions"></a>Visio çözümleri
-  Visual Studio Proje şablonları, Microsoft Office Visio için VSTO eklentileri oluşturmak için kullanabileceğiniz sağlar. VSTO eklentileri Visio otomatikleştirmek, Visio özelliklerini genişletmek veya Visio kullanıcı arabirimi (UI) özelleştirmek için kullanabilirsiniz.  
+  Visual Studio, Microsoft Office Visio için VSTO eklentileri oluşturmak için kullanabileceğiniz proje şablonları sağlar. VSTO eklentileri, Visio otomatikleştirmek, Visio özellikleri genişletmek veya Visio kullanıcı arabirimini (UI) özelleştirmek için kullanabilirsiniz.  
   
- VSTO eklentileri hakkında daha fazla bilgi için bkz: [VSTO eklentileri programlamaya başlamak](../vsto/getting-started-programming-vsto-add-ins.md) ve [mimarisi, VSTO eklentileri](../vsto/architecture-of-vsto-add-ins.md). Microsoft Office ile programlamada yeniyseniz, bkz: [başlama &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md).  
+ VSTO eklentileri hakkında daha fazla bilgi için bkz. [VSTO eklentileri programlama başlama](../vsto/getting-started-programming-vsto-add-ins.md) ve [mimarisi, VSTO eklentileri](../vsto/architecture-of-vsto-add-ins.md). Microsoft Office ile programlamada yeniyseniz, bkz. [başlama &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md).  
   
- **Uygulandığı öğe:** Bu konu başlığı altındaki bilgiler Visio 2010 VSTO eklentisi projelerine yöneliktir. Daha fazla bilgi için bkz: [Office uygulaması ve proje türüne göre kullanılabilen özellikler](../vsto/features-available-by-office-application-and-project-type.md).  
+ **İçin geçerlidir:** Bu konu başlığı altındaki bilgiler Visio 2010 VSTO eklentisi projelerine yöneliktir. Daha fazla bilgi edinmek için bkz. [Office Uygulaması ve Proje Türüne Göre Kullanılabilen Özellikler](../vsto/features-available-by-office-application-and-project-type.md).  
   
 > [!NOTE]  
->  Office deneyimi boyunca genişletmek çözümleri geliştirirken ilgileniyor [birden çok platform](https://dev.office.com/add-in-availability)? Yeni [Office eklentileri modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). VSTO eklentilerini ve çözümlerle karşılaştırıldığında küçük bir yer Office eklentileri sahip ve teknoloji, HTML5, JavaScript, CSS3 ve XML gibi programlama neredeyse her web kullanarak oluşturabilirsiniz.  
+>  Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümlerle karşılaştırıldığında küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.  
   
-## <a name="automate-visio-by-using-the-visio-object-model"></a>Visio nesne modelini kullanarak Visio otomatikleştirme  
- Visio nesne modeline kuruluş şemaları, akış çizelgeleri, proje zaman çizelgeleri, ağ şemaları, office alanları ve daha fazlası için diyagramlar oluşturmak için Visio otomatikleştirmek için kullanabileceğiniz birçok sınıf sağlar. API, ortak görevleri gerçekleştirmek için kod yazmanıza olanak sağlar:  
+## <a name="automate-visio-by-using-the-visio-object-model"></a>Visio nesne modelini kullanarak Visio otomatikleştirin  
+ Visio nesne modeline Visio diyagramları kuruluş şemaları, akış çizelgeleri, proje zaman çizelgesi, ağ şemaları, office alanları ve daha fazlasını oluşturmak için otomatik hale getirmek için kullanabileceğiniz çok sayıda sınıfa kullanıma sunar. API ortak görevleri gerçekleştirmek için kod yazmanıza olanak tanır:  
   
--   Oluşturun ve şekil ve metinler diyagramlarda getirin.  
+- Yapısı ve konumu şekilleri ve diyagramları metni.  
   
--   İş mantığına göre şekil davranışını ve kullanıcı girişi yönetin.  
+- İş mantığı temelinde şekil davranışını ve kullanıcı girişi yönetin.  
   
--   Kaydırma ve yakınlaştırma gibi diyagramı görselleştirme denetler.  
+- Diyagram görselleştirme kaydırma ve yakınlaştırma gibi denetleyin.  
   
--   Uygulama kullanıcı Arabirimi özelleştirin.  
+- Uygulama kullanıcı Arabirimi özelleştirin.  
   
--   Visio'ya dış veri almak, şekillere bağlama ve grafik bir sayfada görüntüleme.  
+- Dış veri Visio'ya içeri aktarma, şekilleri Bağla ve bir sayfada grafiksel olarak görüntüleyebilirsiniz.  
   
- Adım adım yordamlar görüntülemek ve kod belgeler ve şekiller çalışmak için Visio nesne modelini kullanma örnekleri [Visio belgeleriyle çalışma](../vsto/working-with-visio-documents.md) ve [Visio şekilleri ile çalışma](../vsto/working-with-visio-shapes.md).  
+  Adım adım yordamları ve kod örnekleri, belgeler ve şekiller çalışmak için Visio nesne modeline kullanma [Visio belgeleriyle çalışma](../vsto/working-with-visio-documents.md) ve [Visio şekilleri ile çalışma](../vsto/working-with-visio-shapes.md).  
   
- Bir VSTO eklentiden Visio nesne modeline erişmek için `Application` alanını `ThisAddIn` projenizdeki sınıfı. `Application` Alan döndürür bir `Microsoft.Office.Interop.Visio.Application` Visio geçerli örneği temsil eden nesne. Daha fazla bilgi için bkz: [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md).  
+  Visio nesne modeline bir VSTO eklentisi erişmek için `Application` alanını `ThisAddIn` projenizdeki sınıfı. `Application` Alan döndürür bir `Microsoft.Office.Interop.Visio.Application` Visio'nün geçerli örneğini temsil eden nesne. Daha fazla bilgi için [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md).  
   
- Visio nesne modeline çağırdığınızda, Visio için birincil birlikte çalışma derlemesi (PIA) sağlanan türleri kullanabilirsiniz. PIA yönetilen kod için VSTO eklentisi ve Visio'da COM nesne modeli arasında köprü gibi davranır. Visio PIA içindeki tüm türler tanımlanan `Microsoft.Office.Interop.Visio` ad alanı. Birincil birlikte çalışma derlemeleri hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) ve [Office birincil birlikte çalışma derlemeleri](../vsto/office-primary-interop-assemblies.md).  
+  Visio nesne modeline çağrı, Visio için birincil birlikte çalışma derlemesi (PIA) türleri kullanın. PIA, yönetilen kodda VSTO eklentisi ve Visio COM nesne modeli arasında bir köprü görevi görür. Visio PIA tüm türlerinde tanımlanan `Microsoft.Office.Interop.Visio` ad alanı. Birincil birlikte çalışma derlemeleri hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) ve [Office birincil birlikte çalışma derlemelerini](../vsto/office-primary-interop-assemblies.md).  
   
 ## <a name="visio-object-model-overview"></a>Visio nesne modeline genel bakış  
  Visio nesne modeline genel bakış bulabilirsiniz [Visio nesne modeline genel bakış](../vsto/visio-object-model-overview.md), Visio nesne modeli başvurusu ve SDK'ları bağlantılar içerir.  
   
 ## <a name="customize-the-user-interface-of-visio"></a>Visio kullanıcı arabirimini özelleştirme  
- Visio UI aşağıdaki özelleştirme seçenekleri vardır.  
+ Visio UI şu özelleştirme seçeneklerini içerir.  
   
 |Görev|Daha fazla bilgi için|  
 |----------|--------------------------|  
-|Şerit özelleştirin.|[Şeride Genel Bakış](../vsto/ribbon-overview.md)|  
+|Şeridi özelleştirme.|[Şeride Genel Bakış](../vsto/ribbon-overview.md)|  
   
- UI özelleştirme hakkında daha fazla bilgi için VBA başvuru belgelerine bakın [Visio.UIObject](https://msdn.microsoft.com/library/office/ff765763.aspx) sınıfı.  
+ UI özelleştirme hakkında daha fazla bilgi için bkz: VBA başvuru belgelerine [Visio.UIObject](https://msdn.microsoft.com/library/office/ff765763.aspx) sınıfı.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [VSTO eklentileri programlama kullanmaya başlama](../vsto/getting-started-programming-vsto-add-ins.md)   
+ [VSTO eklentileri programlama kullanmaya başlayın](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [VSTO eklentileri mimarisi](../vsto/architecture-of-vsto-add-ins.md)   
  [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)   

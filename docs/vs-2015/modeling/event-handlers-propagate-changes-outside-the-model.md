@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 38958aae1c2449145107faa7abe00a2d86baaa9a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bfddc0903c520469833a0f160444202edf07c32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303205"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823703"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Değişiklikleri Modelin Dışına Yayan Olay İşleyicileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,23 +31,23 @@ Görselleştirme ve modelleme SDK'sı, mağaza içi değişkenler, dosyalar, ba�
   
 ### <a name="to-define-a-store-event"></a>Bir depolama olayı tanımlamak için  
   
-1.  İzlemek istediğiniz olay türünü seçin. Tam bir listesi için özelliklerine bakmak <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Her bir özellik bir olay türüne karşılık gelir. En sık olay türleri kullanılır:  
+1. İzlemek istediğiniz olay türünü seçin. Tam bir listesi için özelliklerine bakmak <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Her bir özellik bir olay türüne karşılık gelir. En sık olay türleri kullanılır:  
   
-    -   `ElementAdded` – bir model öğesini tetiklenir, ilişki bağlantısı, Şekil veya bağlayıcının oluşturulur.  
+   -   `ElementAdded` – bir model öğesini tetiklenir, ilişki bağlantısı, Şekil veya bağlayıcının oluşturulur.  
   
-    -   Tetiklenen ElementPropertyChanged – değerini bir `Normal` etki alanı özelliği. Yalnızca eski ve yeni değerler eşit değilse, olay tetiklenir. Olay, hesaplanan ve özel depolama özellikleri için uygulanamaz.  
+   -   Tetiklenen ElementPropertyChanged – değerini bir `Normal` etki alanı özelliği. Yalnızca eski ve yeni değerler eşit değilse, olay tetiklenir. Olay, hesaplanan ve özel depolama özellikleri için uygulanamaz.  
   
-         İlişki bağlantılarını karşılık gelen rol özellikleri için uygulanamaz. Bunun yerine, `ElementAdded` etki alanı ilişkisi izlemek için.  
+        İlişki bağlantılarını karşılık gelen rol özellikleri için uygulanamaz. Bunun yerine, `ElementAdded` etki alanı ilişkisi izlemek için.  
   
-    -   `ElementDeleted` – bir model öğesini sonra tetiklenen, ilişki, Şekil veya bağlayıcının silindi. Öğesinin özellik değerlerini erişmeye devam edebilirsiniz, ancak hiçbir ilişki diğer öğelere sahip olacaktır.  
+   -   `ElementDeleted` – bir model öğesini sonra tetiklenen, ilişki, Şekil veya bağlayıcının silindi. Öğesinin özellik değerlerini erişmeye devam edebilirsiniz, ancak hiçbir ilişki diğer öğelere sahip olacaktır.  
   
-2.  İçin bir parçalı sınıf tanımı ekleyin _YourDsl_**DocData** ayrı bir kod dosyasında **DslPackage** proje.  
+2. İçin bir parçalı sınıf tanımı ekleyin _YourDsl_**DocData** ayrı bir kod dosyasında **DslPackage** proje.  
   
-3.  Aşağıdaki örnekte olduğu gibi bir yöntem olarak olayın kodu yazın. Bu olabilir `static`erişmek istediğiniz sürece `DocData`.  
+3. Aşağıdaki örnekte olduğu gibi bir yöntem olarak olayın kodu yazın. Bu olabilir `static`erişmek istediğiniz sürece `DocData`.  
   
-4.  Geçersiz kılma `OnDocumentLoaded()` işleyicisini kaydetmek için. Birden fazla işleyici varsa, bunların tümü aynı yerde kaydedebilirsiniz.  
+4. Geçersiz kılma `OnDocumentLoaded()` işleyicisini kaydetmek için. Birden fazla işleyici varsa, bunların tümü aynı yerde kaydedebilirsiniz.  
   
- Kayıt kodu konumunu kritik değildir. `DocView.LoadView()` Alternatif bir konumdur.  
+   Kayıt kodu konumunu kritik değildir. `DocView.LoadView()` Alternatif bir konumdur.  
   
 ```  
 using System;  

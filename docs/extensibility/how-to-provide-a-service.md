@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbad09a19aeaf297505de215566b14df067c760a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2408eace3ecea447c9b49ff17c729e3f4661b5d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639594"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942562"
 ---
 # <a name="how-to-provide-a-service"></a>Nasıl yapılır: bir hizmeti sağlama
 VSPackage diğer VSPackages kullanan hizmetleri sağlar. Bir hizmeti sağlamak amacıyla bir VSPackage hizmeti Visual Studio ile kaydedin ve hizmet eklemeniz gerekir.  
@@ -32,50 +32,50 @@ VSPackage diğer VSPackages kullanan hizmetleri sağlar. Bir hizmeti sağlamak a
   
 ## <a name="implement-a-service"></a>Bir hizmet ekleme  
   
-1.  VSIX projesi oluşturun (**dosya** > **yeni** > **proje** > **Visual C#**  >  **Genişletilebilirlik** > **VSIX projesi**).  
+1. VSIX projesi oluşturun (**dosya** > **yeni** > **proje** > **Visual C#**  >  **Genişletilebilirlik** > **VSIX projesi**).  
   
-2.  Bir VSPackage'ı projeye ekleyin. ' Nde proje düğümüne seçin **Çözüm Gezgini** tıklatıp **Ekle** > **yeni öğe** > **Visual C# öğeleri**  >  **Genişletilebilirlik** > **Visual Studio paket**.  
+2. Bir VSPackage'ı projeye ekleyin. ' Nde proje düğümüne seçin **Çözüm Gezgini** tıklatıp **Ekle** > **yeni öğe** > **Visual C# öğeleri**  >  **Genişletilebilirlik** > **Visual Studio paket**.  
   
-3.  Bir hizmeti uygulamak için üç tür oluşturmanız gerekir:  
+3. Bir hizmeti uygulamak için üç tür oluşturmanız gerekir:  
   
-    -   Hizmeti tanımlayan bir arabirim. Bu arabirimlerin çoğu boştur, diğer bir deyişle, bunlar hiçbir yöntemleri vardır.  
+   - Hizmeti tanımlayan bir arabirim. Bu arabirimlerin çoğu boştur, diğer bir deyişle, bunlar hiçbir yöntemleri vardır.  
   
-    -   Hizmet arabirimi açıklayan bir arabirim. Bu arabirim, uygulanacak yöntemleri içerir.  
+   - Hizmet arabirimi açıklayan bir arabirim. Bu arabirim, uygulanacak yöntemleri içerir.  
   
-    -   Hem hizmet hem de hizmet arabirimi uygulayan bir sınıf.  
+   - Hem hizmet hem de hizmet arabirimi uygulayan bir sınıf.  
   
      Aşağıdaki örnek, üç temel bir uygulamasını gösterir. Hizmet sınıfının oluşturucusu, hizmet sağlayıcısı ayarlamanız gerekir.  
   
-    ```csharp  
-    public class MyService : SMyService, IMyService  
-    {  
-        private Microsoft.VisualStudio.OLE.Interop.IServiceProvider serviceProvider;  
-        private string myString;  
-        public MyService(Microsoft.VisualStudio.OLE.Interop.IServiceProvider sp)  
-        {  
-            Trace.WriteLine(  
-                   "Constructing a new instance of MyService");  
-            serviceProvider = sp;  
-        }  
-        public void Hello()  
-        {  
-            myString = "hello";  
-        }  
-        public string Goodbye()  
-        {  
-           return "goodbye";  
-        }  
-    }  
-    public interface SMyService  
-    {  
-    }  
-    public interface IMyService  
-    {  
-        void Hello();  
-        string Goodbye();  
-    }  
+   ```csharp  
+   public class MyService : SMyService, IMyService  
+   {  
+       private Microsoft.VisualStudio.OLE.Interop.IServiceProvider serviceProvider;  
+       private string myString;  
+       public MyService(Microsoft.VisualStudio.OLE.Interop.IServiceProvider sp)  
+       {  
+           Trace.WriteLine(  
+                  "Constructing a new instance of MyService");  
+           serviceProvider = sp;  
+       }  
+       public void Hello()  
+       {  
+           myString = "hello";  
+       }  
+       public string Goodbye()  
+       {  
+          return "goodbye";  
+       }  
+   }  
+   public interface SMyService  
+   {  
+   }  
+   public interface IMyService  
+   {  
+       void Hello();  
+       string Goodbye();  
+   }  
   
-    ```  
+   ```  
   
 ### <a name="register-a-service"></a>Bir hizmeti kaydedin  
   

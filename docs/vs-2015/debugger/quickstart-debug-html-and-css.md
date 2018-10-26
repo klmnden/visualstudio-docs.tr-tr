@@ -26,12 +26,12 @@ caps.latest.revision: 104
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2896d88ee5730482aeca737f89e5b5340070be7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9ba8f8be0d078856833b807f5d0f6ca29f346c22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225491"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873935"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,23 +44,23 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
  Bu konuda:  
   
--   [Dinamik DOM'u inceleniyor](#InspectingDOM)  
+- [Dinamik DOM'u inceleniyor](#InspectingDOM)  
   
--   [Öğeleri seçme](#SelectingElements)  
+- [Öğeleri seçme](#SelectingElements)  
   
- DOM Gezgini kullanma hakkında ek bilgi için aşağıdaki konulara bakın:  
+  DOM Gezgini kullanma hakkında ek bilgi için aşağıdaki konulara bakın:  
   
--   [DOM Gezgini'ni kullanarak CSS stillerinde hata ayıklama](../debugger/debug-css-styles-using-dom-explorer.md)  
+- [DOM Gezgini'ni kullanarak CSS stillerinde hata ayıklama](../debugger/debug-css-styles-using-dom-explorer.md)  
   
--   [DOM Gezgini'ni kullanarak düzen hatalarını ayıklama](../debugger/debug-layout-using-dom-explorer.md)  
+- [DOM Gezgini'ni kullanarak düzen hatalarını ayıklama](../debugger/debug-layout-using-dom-explorer.md)  
   
--   [DOM olayı dinleyicilerini görüntüleme](../debugger/view-dom-event-listeners.md)  
+- [DOM olayı dinleyicilerini görüntüleme](../debugger/view-dom-event-listeners.md)  
   
--   [Uygulamayı yenileme (JavaScript)](../debugger/refresh-an-app-javascript.md)  
+- [Uygulamayı yenileme (JavaScript)](../debugger/refresh-an-app-javascript.md)  
   
--   [WebView denetiminde hata ayıklama](../debugger/debug-a-webview-control.md)  
+- [WebView denetiminde hata ayıklama](../debugger/debug-a-webview-control.md)  
   
- Diğer JavaScript kullanarak JavaScript Konsolu penceresi ve kesme noktaları, ayarlama gibi özellikler, hata ayıklama hakkında bilgi için bkz. [hızlı başlangıç: JavaScript hata ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md) ve [uygulamaları Visual Studio'da hata ayıklama](../debugger/debug-store-apps-in-visual-studio.md).  
+  Diğer JavaScript kullanarak JavaScript Konsolu penceresi ve kesme noktaları, ayarlama gibi özellikler, hata ayıklama hakkında bilgi için bkz. [hızlı başlangıç: JavaScript hata ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md) ve [uygulamaları Visual Studio'da hata ayıklama](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ##  <a name="InspectingDOM"></a> Dinamik DOM'u inceleniyor  
  DOM Gezgini işlenen sayfanın bir görünümü gösterir ve değerleri değiştirebilir ve sonuçları hemen görmek için DOM Gezgini'ni kullanabilirsiniz. Bu, hata ayıklayıcıyı durdurup yeniden olmadan değişiklikleri test etmek sağlar. Bu yöntemi kullanarak sayfa ile etkileşim kurduğunuzda, kaynak kodu, projenizdeki değişmez istenen kod düzeltmeleri bulduğunuzda, kaynak kodunuzda değişiklikler yaparsınız.  
@@ -70,13 +70,13 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
  DOM Gezgini kullanabilirsiniz:  
   
--   DOM öğesi alt ağacı gidin ve İşlenmiş HTML, CSS ve JavaScript kodu inceleyin.  
+- DOM öğesi alt ağacı gidin ve İşlenmiş HTML, CSS ve JavaScript kodu inceleyin.  
   
--   Öznitelikler ve CSS stilleri işlenen öğeler için dinamik olarak düzenleme ve sonuçları hemen görün.  
+- Öznitelikler ve CSS stilleri işlenen öğeler için dinamik olarak düzenleme ve sonuçları hemen görün.  
   
--   CSS stilleri sayfa öğeleri için nasıl uygulanmış incelemenize ve henüz uygulanmamış kuralları izleme.  
+- CSS stilleri sayfa öğeleri için nasıl uygulanmış incelemenize ve henüz uygulanmamış kuralları izleme.  
   
- Hata ayıklama uygulamaları, genellikle DOM Gezgini'nde öğeleri seçmeniz gerekir. Bir öğe seçtiğinizde, DOM Gezgini sağ tarafındaki sekmeler otomatik olarak görünen değerlerin DOM Gezgini'nde seçilen öğenin yansıtacak şekilde güncelleştirin. Sekmeleri şunlardır: **stilleri**, **hesaplanan**, **Düzen**. Windows Store apps de destek **olayları** ve **değişiklikleri** sekmeler. Öğeleri seçme hakkında daha fazla bilgi için bkz. [öğeleri seçme](#SelectingElements).  
+  Hata ayıklama uygulamaları, genellikle DOM Gezgini'nde öğeleri seçmeniz gerekir. Bir öğe seçtiğinizde, DOM Gezgini sağ tarafındaki sekmeler otomatik olarak görünen değerlerin DOM Gezgini'nde seçilen öğenin yansıtacak şekilde güncelleştirin. Sekmeleri şunlardır: **stilleri**, **hesaplanan**, **Düzen**. Windows Store apps de destek **olayları** ve **değişiklikleri** sekmeler. Öğeleri seçme hakkında daha fazla bilgi için bkz. [öğeleri seçme](#SelectingElements).  
   
 > [!TIP]
 >  DOM Gezgini penceresi kapatılırsa seçin **hata ayıklama**>**Windows** > **DOM Gezgini** yeniden açın. Pencere, yalnızca bir betik hata ayıklama oturumu sırasında görünür.  
@@ -88,100 +88,100 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>Dinamik DOM'u inceleyerek hata ayıklamak için  
   
-1.  Seçerek Visual Studio'da yeni bir çözüm oluşturma **dosya** > **yeni proje**.  
+1. Seçerek Visual Studio'da yeni bir çözüm oluşturma **dosya** > **yeni proje**.  
   
-2.  Seçin **JavaScript** > **Store**, seçin ya da **Windows uygulamaları** veya **Windows Phone uygulamaları**, seçin **Boş uygulama**.  
+2. Seçin **JavaScript** > **Store**, seçin ya da **Windows uygulamaları** veya **Windows Phone uygulamaları**, seçin **Boş uygulama**.  
   
-3.  Proje için bir ad yazın `FlipViewApp`ve **Tamam** uygulamayı oluşturmak için.  
+3. Proje için bir ad yazın `FlipViewApp`ve **Tamam** uygulamayı oluşturmak için.  
   
-4.  Default.html gövde öğesi içinde bu kodu ekleyin:  
+4. Default.html gövde öğesi içinde bu kodu ekleyin:  
   
-    ```html  
-    <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
-             style="display:none">  
-        <div class="fixedItem" >  
-            <img src="#" data-win-bind="src: flipImg" />  
-        </div>  
-    </div>  
-    <div id="fView" style="width:100px;height:100px"  
-        data-win-control="WinJS.UI.FlipView" data-win-options="{  
-        itemDataSource: Data.items.dataSource, itemTemplate: flipTemplate }">  
-    </div>  
-    ```  
+   ```html  
+   <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
+            style="display:none">  
+       <div class="fixedItem" >  
+           <img src="#" data-win-bind="src: flipImg" />  
+       </div>  
+   </div>  
+   <div id="fView" style="width:100px;height:100px"  
+       data-win-control="WinJS.UI.FlipView" data-win-options="{  
+       itemDataSource: Data.items.dataSource, itemTemplate: flipTemplate }">  
+   </div>  
+   ```  
   
-5.  Default.css açın ve aşağıdaki CSS ekleyin:  
+5. Default.css açın ve aşağıdaki CSS ekleyin:  
   
-    ```css  
-    #fView {  
-        background-color:#0094ff;  
-        height: 100%;  
-        width: 100%;  
-        margin: 25%;  
-    }  
-    ```  
+   ```css  
+   #fView {  
+       background-color:#0094ff;  
+       height: 100%;  
+       width: 100%;  
+       margin: 25%;  
+   }  
+   ```  
   
-6.  Default.js dosyasında kodu şu kodla değiştirin:  
+6. Default.js dosyasında kodu şu kodla değiştirin:  
   
-    ```javascript  
-    (function () {  
-        "use strict";  
+   ```javascript  
+   (function () {  
+       "use strict";  
   
-        var app = WinJS.Application;  
-        var activation = Windows.ApplicationModel.Activation;  
+       var app = WinJS.Application;  
+       var activation = Windows.ApplicationModel.Activation;  
   
-        var myData = [];  
-        for (var x = 0; x < 4; x++) {  
-            myData[x] = { flipImg: "/images/logo.png" }  
-        };  
+       var myData = [];  
+       for (var x = 0; x < 4; x++) {  
+           myData[x] = { flipImg: "/images/logo.png" }  
+       };  
   
-        var pages = new WinJS.Binding.List(myData, { proxy: true });  
+       var pages = new WinJS.Binding.List(myData, { proxy: true });  
   
-        app.onactivated = function (args) {  
-            if (args.detail.kind === activation.ActivationKind.launch) {  
-                if (args.detail.previousExecutionState !==  
-                activation.ApplicationExecutionState.terminated) {  
-                    // TODO: . . .  
-                } else {  
-                    // TODO: . . .  
-                }  
-                args.setPromise(WinJS.UI.processAll());  
+       app.onactivated = function (args) {  
+           if (args.detail.kind === activation.ActivationKind.launch) {  
+               if (args.detail.previousExecutionState !==  
+               activation.ApplicationExecutionState.terminated) {  
+                   // TODO: . . .  
+               } else {  
+                   // TODO: . . .  
+               }  
+               args.setPromise(WinJS.UI.processAll());  
   
-                updateImages();  
-            }  
-        };  
+               updateImages();  
+           }  
+       };  
   
-        function updateImages() {  
+       function updateImages() {  
   
-            pages.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-            pages.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-            pages.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
-        };  
+           pages.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
+           pages.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
+           pages.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+       };  
   
-        app.oncheckpoint = function (args) {  
-        };  
+       app.oncheckpoint = function (args) {  
+       };  
   
-        app.start();  
+       app.start();  
   
-        var publicMembers = {  
-            items: pages  
-        };  
+       var publicMembers = {  
+           items: pages  
+       };  
   
-        WinJS.Namespace.define("Data", publicMembers);  
+       WinJS.Namespace.define("Data", publicMembers);  
   
-    })();  
-    ```  
+   })();  
+   ```  
   
-     Bu uygulamayı (Simülatörde benzer görünür) Phone öykünücüsü çalıştırıyoruz, görmek istediğimiz aşağıda gösterilmiştir. Ancak uygulama bu duruma getirmek için size bir dizi hataları düzelttikten gerekecektir.  
+    Bu uygulamayı (Simülatörde benzer görünür) Phone öykünücüsü çalıştırıyoruz, görmek istediğimiz aşağıda gösterilmiştir. Ancak uygulama bu duruma getirmek için size bir dizi hataları düzelttikten gerekecektir.  
   
-     ![Beklenen sonuçları gösteren FlipView uygulama](../debugger/media/js-dom-appfixed.png "JS_DOM_AppFixed")  
+    ![Beklenen sonuçları gösteren FlipView uygulama](../debugger/media/js-dom-appfixed.png "JS_DOM_AppFixed")  
   
-7.  Seçin ya da **simülatör** veya **öykünücüsü 8.1 WVGA 4 inç 512MB** listesinde yanındaki açılan listeden **hata ayıklamayı Başlat** düğmesini **hataayıklama**araç çubuğu:  
+7. Seçin ya da **simülatör** veya **öykünücüsü 8.1 WVGA 4 inç 512MB** listesinde yanındaki açılan listeden **hata ayıklamayı Başlat** düğmesini **hataayıklama**araç çubuğu:  
   
-     ![Select hata ayıklama hedef liste](../debugger/media/js-select-target.png "JS_Select_Target")  
+    ![Select hata ayıklama hedef liste](../debugger/media/js-select-target.png "JS_Select_Target")  
   
-8.  Seçin **hata ayıklama** > **hata ayıklamayı Başlat**, veya uygulamanızı hata ayıklama modunda çalıştırmak için F5 tuşuna basın.  
+8. Seçin **hata ayıklama** > **hata ayıklamayı Başlat**, veya uygulamanızı hata ayıklama modunda çalıştırmak için F5 tuşuna basın.  
   
-     Bu uygulama simülatör telefonda veya Phone öykünücüsünde çalışır, ancak stil birkaç hataların olmadığı için çoğunlukla boş bir ekran görürsünüz. İlk `FlipView` görüntü Orta ekranın yanında küçük bir kare görünür.  
+    Bu uygulama simülatör telefonda veya Phone öykünücüsünde çalışır, ancak stil birkaç hataların olmadığı için çoğunlukla boş bir ekran görürsünüz. İlk `FlipView` görüntü Orta ekranın yanında küçük bir kare görünür.  
   
 9. Uygulama Simulator'da çalıştırıyorsanız, seçin **değiştirme çözümleme** 1280 x 800 ekran çözünürlüğü yapılandırmak için simülatör sağındaki araç çubuğu komutuna. Bu, aşağıdaki adımlarda gösterilen değerler Simülatörde gördüğünüz eşleştiğini garanti eder.  
   
@@ -234,15 +234,15 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
      İçinde **Düzen** sekmesinde, aşağıdaki değerleri görürsünüz:  
   
-    -   Simülatör için: 320px (kaydırma) ve 320px (kenar boşluğu).  
+    - Simülatör için: 320px (kaydırma) ve 320px (kenar boşluğu).  
   
-    -   Phone öykünücüsü: 100px (kaydırma) ve 100px (kenar boşluğu).  
+    - Phone öykünücüsü: 100px (kaydırma) ve 100px (kenar boşluğu).  
   
-     Aşağıdaki çizimde gösterildiği nasıl **Düzen** sekmesi, Phone öykünücüsü (100px uzaklığı ve kenar boşluğu) kullanıyorsanız, arar.  
+      Aşağıdaki çizimde gösterildiği nasıl **Düzen** sekmesi, Phone öykünücüsü (100px uzaklığı ve kenar boşluğu) kullanıyorsanız, arar.  
   
-     ![DOM Gezgini Düzen sekmesini](../debugger/media/js-dom-explorer-layout.png "JS_DOM_Explorer_Layout")  
+      ![DOM Gezgini Düzen sekmesini](../debugger/media/js-dom-explorer-layout.png "JS_DOM_Explorer_Layout")  
   
-     Doğru görünüyor. **Hesaplanan** sekmesi de aynı kenar boşluğu değerleri gösterir.  
+      Doğru görünüyor. **Hesaplanan** sekmesi de aynı kenar boşluğu değerleri gösterir.  
   
 21. Seçin **stilleri** bulun ve sekme `#fView` CSS Seçici. % 25'için bir değer, burada gördüğünüz **kenar boşluğu** özelliği.  
   
@@ -267,23 +267,23 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 ##  <a name="SelectingElements"></a> Öğeleri seçme  
  Bir uygulamanın hataları ayıklanırken üç yolla DOM öğeleri seçebilirsiniz:  
   
--   Öğelerini doğrudan DOM Gezgini penceresinde (veya ok tuşlarını kullanarak) tıklayarak.  
+- Öğelerini doğrudan DOM Gezgini penceresinde (veya ok tuşlarını kullanarak) tıklayarak.  
   
--   Kullanarak **öğe seçin** düğmesine (Ctrl + B).  
+- Kullanarak **öğe seçin** düğmesine (Ctrl + B).  
   
--   Kullanarak `select` biri olan komut, [JavaScript Konsolu komutları](../debugger/javascript-console-commands.md).  
+- Kullanarak `select` biri olan komut, [JavaScript Konsolu komutları](../debugger/javascript-console-commands.md).  
   
- Öğeleri seçin ve bir öğe üzerinde fare işaretçisini DOM Gezgini penceresi kullandığınızda, karşılık gelen öğe çalışan uygulamada vurgulanır. Öğesindeki DOM Gezgini'nde seçmek için tıklatın veya vurgulayın ve öğeleri seçmek için ok tuşlarını kullanabilirsiniz. Kullanarak öğeleri DOM Gezgini'nde de seçebilirsiniz **Select öğesi** düğmesi. Aşağıdaki çizimde gösterildiği **öğe seçin** düğmesi.  
+  Öğeleri seçin ve bir öğe üzerinde fare işaretçisini DOM Gezgini penceresi kullandığınızda, karşılık gelen öğe çalışan uygulamada vurgulanır. Öğesindeki DOM Gezgini'nde seçmek için tıklatın veya vurgulayın ve öğeleri seçmek için ok tuşlarını kullanabilirsiniz. Kullanarak öğeleri DOM Gezgini'nde de seçebilirsiniz **Select öğesi** düğmesi. Aşağıdaki çizimde gösterildiği **öğe seçin** düğmesi.  
   
- ![DOM Gezgini'nde öğe düğmesini seçme](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
+  ![DOM Gezgini'nde öğe düğmesini seçme](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
- Tıkladığınızda **Select öğesi** (veya Ctrl + B tuşlarına basın) çalışan uygulamada tıklayarak DOM Gezgini'nde öğeyi seçebilir böylece bu seçim modu değişir. Modu tek tıklatmadan sonra geri normal seçim moduyla değiştirir. Tıkladığınızda **Select öğesi**, uygulama ön plana gelir ve imleci değişikliklerini yeni seçim modunu gösterecek. Anahatları belirlenmiş öğe'e tıkladığınızda DOM Gezgini ön plana seçili belirtilen öğeyi döndürür.  
+  Tıkladığınızda **Select öğesi** (veya Ctrl + B tuşlarına basın) çalışan uygulamada tıklayarak DOM Gezgini'nde öğeyi seçebilir böylece bu seçim modu değişir. Modu tek tıklatmadan sonra geri normal seçim moduyla değiştirir. Tıkladığınızda **Select öğesi**, uygulama ön plana gelir ve imleci değişikliklerini yeni seçim modunu gösterecek. Anahatları belirlenmiş öğe'e tıkladığınızda DOM Gezgini ön plana seçili belirtilen öğeyi döndürür.  
   
- Seçtiğiniz önce **öğe seçin**, çalışmakta olan uygulamayla öğelerinde getirerek vurgulamak belirtebilirsiniz **web sayfasında öne çıkan özellikleri görüntülemek** düğmesi. Aşağıdaki çizim, bu düğmeyi gösterir. Öne çıkan özellikleri varsayılan olarak görüntülenir.  
+  Seçtiğiniz önce **öğe seçin**, çalışmakta olan uygulamayla öğelerinde getirerek vurgulamak belirtebilirsiniz **web sayfasında öne çıkan özellikleri görüntülemek** düğmesi. Aşağıdaki çizim, bu düğmeyi gösterir. Öne çıkan özellikleri varsayılan olarak görüntülenir.  
   
- ![Web Sayfa Görüntüle düğmesini vurgular](../debugger/media/js-dom-display-highlights-button.png "JS_DOM_Display_Highlights_Button")  
+  ![Web Sayfa Görüntüle düğmesini vurgular](../debugger/media/js-dom-display-highlights-button.png "JS_DOM_Display_Highlights_Button")  
   
- Öğeleri vurgulama seçtiğinizde, Simülatörde üzerine öğeler vurgulanmıştır. Görünür kutu modeli vurgulanan öğelerle eşleme için renk **Düzen** DOM Gezgini sekmesi.  
+  Öğeleri vurgulama seçtiğinizde, Simülatörde üzerine öğeler vurgulanmıştır. Görünür kutu modeli vurgulanan öğelerle eşleme için renk **Düzen** DOM Gezgini sekmesi.  
   
 > [!NOTE]
 >  Üzerine gelerek öğeleri vurgulama, Windows Phone öykünücüsü'nde kısmen desteklenir.  
@@ -293,13 +293,13 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 ##  <a name="BrowserSupport"></a> Tarayıcı ve Platform desteği  
  JavaScript ve DOM Gezgini JavaScript Konsolu penceresi için Visual Studio Araçları, aşağıdaki platformlarda desteklenir:  
   
--   [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] JavaScript ve HTML kullanarak Windows Phone Store uygulamaları  
+- [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] JavaScript ve HTML kullanarak Windows Phone Store uygulamaları  
   
--   Internet Explorer 11'in üzerinde çalışan [!INCLUDE[win81](../includes/win81-md.md)]  
+- Internet Explorer 11'in üzerinde çalışan [!INCLUDE[win81](../includes/win81-md.md)]  
   
--   Üzerinde çalışan Internet Explorer 10 [!INCLUDE[win8](../includes/win8-md.md)]  
+- Üzerinde çalışan Internet Explorer 10 [!INCLUDE[win8](../includes/win8-md.md)]  
   
- Git [burada](http://go.microsoft.com/fwlink/?LinkID=232448) indirmek için [!INCLUDE[win8](../includes/win8-md.md)] ve Visual Studio.  
+  Git [burada](http://go.microsoft.com/fwlink/?LinkID=232448) indirmek için [!INCLUDE[win8](../includes/win8-md.md)] ve Visual Studio.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da uygulamalarının hatalarını ayıklama](../debugger/debug-store-apps-in-visual-studio.md)   

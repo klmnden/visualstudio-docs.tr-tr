@@ -15,12 +15,12 @@ ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ceb59310597cd0481007ec9c08f5312a8d75090
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8f26f37a945ce9ec665e924662d117f43e49ab77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280589"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839342"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>İzlenecek Yol: Deyim Tamamlamayı Görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,48 +152,48 @@ Dil tabanlı deyim tamamlama tamamlama sağlamak istediğiniz tanımlayıcılar�
   
 #### <a name="to-implement-the-completion-command-handler"></a>Tamamlama komut işleyici uygulamak için  
   
-1.  Adlı bir sınıf ekleyin `TestCompletionCommandHandler` uygulayan <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
+1. Adlı bir sınıf ekleyin `TestCompletionCommandHandler` uygulayan <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
   
-     [!code-csharp[VSSDKCompletionTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#15)]
-     [!code-vb[VSSDKCompletionTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#15)]  
+    [!code-csharp[VSSDKCompletionTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#15)]
+    [!code-vb[VSSDKCompletionTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#15)]  
   
-2.  Sonraki komut işleyici (kendisine geçirdiğiniz komutu), metin görünümünü (çeşitli hizmetlere erişim sağlayan) komut işleyicisi sağlayıcı özel alanlar ekleyin ve bir tamamlama oturumu:  
+2. Sonraki komut işleyici (kendisine geçirdiğiniz komutu), metin görünümünü (çeşitli hizmetlere erişim sağlayan) komut işleyicisi sağlayıcı özel alanlar ekleyin ve bir tamamlama oturumu:  
   
-     [!code-csharp[VSSDKCompletionTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#16)]
-     [!code-vb[VSSDKCompletionTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#16)]  
+    [!code-csharp[VSSDKCompletionTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#16)]
+    [!code-vb[VSSDKCompletionTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#16)]  
   
-3.  Metin görünümünü ve sağlayıcı alanları ayarlar ve komut, komut zinciri ekler. bir oluşturucu ekleyin:  
+3. Metin görünümünü ve sağlayıcı alanları ayarlar ve komut, komut zinciri ekler. bir oluşturucu ekleyin:  
   
-     [!code-csharp[VSSDKCompletionTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#17)]
-     [!code-vb[VSSDKCompletionTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#17)]  
+    [!code-csharp[VSSDKCompletionTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#17)]
+    [!code-vb[VSSDKCompletionTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#17)]  
   
-4.  Uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> boyunca komutu geçirerek yöntemi:  
+4. Uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> boyunca komutu geçirerek yöntemi:  
   
-     [!code-csharp[VSSDKCompletionTest#18](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#18)]
-     [!code-vb[VSSDKCompletionTest#18](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#18)]  
+    [!code-csharp[VSSDKCompletionTest#18](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#18)]
+    [!code-vb[VSSDKCompletionTest#18](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#18)]  
   
-5.  Uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> yöntemi. Bu yöntem bir tuş vuruşu aldığında, bunlardan birini yapmanız gerekir:  
+5. Uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> yöntemi. Bu yöntem bir tuş vuruşu aldığında, bunlardan birini yapmanız gerekir:  
   
-    -   Karakter arabelleği için yazılmış ve ardından tetikleyin veya tamamlama filtre izin verir. (Bunu yazdırma karakter yapın.)  
+   - Karakter arabelleği için yazılmış ve ardından tetikleyin veya tamamlama filtre izin verir. (Bunu yazdırma karakter yapın.)  
   
-    -   İşleme tamamlandığında, ancak arabelleğe yazılacak karakter izin verme. (Bir tamamlama oturumu görüntülendiğinde, boşluk, sekme ve Enter bunu.)  
+   - İşleme tamamlandığında, ancak arabelleğe yazılacak karakter izin verme. (Bir tamamlama oturumu görüntülendiğinde, boşluk, sekme ve Enter bunu.)  
   
-    -   Bir sonraki işleyici geçirilmesi için komuta izin. (Tüm diğer komutlar.)  
+   - Bir sonraki işleyici geçirilmesi için komuta izin. (Tüm diğer komutlar.)  
   
      Bu yöntem Arabirim görüntüleyebilir de görüntülenmeyebilir olduğundan, çağrı <xref:Microsoft.VisualStudio.Shell.VsShellUtilities.IsInAutomationFunction%2A> bir Otomasyon bağlamda çağrılmaz emin olmak için:  
   
      [!code-csharp[VSSDKCompletionTest#19](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#19)]
      [!code-vb[VSSDKCompletionTest#19](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#19)]  
   
-6.  Bu kod tamamlama oturumu tetikleyen özel bir yöntemdir:  
+6. Bu kod tamamlama oturumu tetikleyen özel bir yöntemdir:  
   
-     [!code-csharp[VSSDKCompletionTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#20)]
-     [!code-vb[VSSDKCompletionTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#20)]  
+    [!code-csharp[VSSDKCompletionTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#20)]
+    [!code-vb[VSSDKCompletionTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#20)]  
   
-7.  Sonraki örnekte gelen abonelikten çıkma özel bir yöntemdir <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> olay:  
+7. Sonraki örnekte gelen abonelikten çıkma özel bir yöntemdir <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> olay:  
   
-     [!code-csharp[VSSDKCompletionTest#21](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#21)]
-     [!code-vb[VSSDKCompletionTest#21](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#21)]  
+    [!code-csharp[VSSDKCompletionTest#21](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#21)]
+    [!code-vb[VSSDKCompletionTest#21](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#21)]  
   
 ## <a name="building-and-testing-the-code"></a>Oluşturma ve kod test etme  
  Bu kodu test etmek için CompletionTest Çözümü derleyin ve deneysel örneğinde çalıştırın.  

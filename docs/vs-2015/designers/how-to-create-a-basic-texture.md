@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 143bf4f094a603c20e12b52adb452b193fb57a33
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2312b82fbcb6f4cd4ed00b288cb87283538cb372
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292805"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855839"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Nasıl Yapılır: Temel Doku Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,24 +49,24 @@ Bu belge temel bir doku oluşturmak için görüntü Düzenleyicisi nasıl yapı
   
 #### <a name="to-create-a-bullseye-target-texture"></a>Bir "hedef merkezi" hedef dokusu oluşturmak için  
   
-1.  Çalışmak için bir doku oluşturun. Projenize doku ekleme hakkında daha fazla bilgi için bkz. Başlarken bölümünde [Resim Düzenleyicisi](../designers/image-editor.md).  
+1. Çalışmak için bir doku oluşturun. Projenize doku ekleme hakkında daha fazla bilgi için bkz. Başlarken bölümünde [Resim Düzenleyicisi](../designers/image-editor.md).  
   
-2.  Görüntü boyutu 512 x 512 piksel olarak ayarlayın. İçinde **özellikleri** penceresinde değerlerini ayarlayın **genişliği** ve **yükseklik** özelliklerine `512`.  
+2. Görüntü boyutu 512 x 512 piksel olarak ayarlayın. İçinde **özellikleri** penceresinde değerlerini ayarlayın **genişliği** ve **yükseklik** özelliklerine `512`.  
   
-3.  Görüntü Düzenleyicisi araç çubuğunda **dolgu** aracı. **Özellikleri** penceresi özelliklerini görüntüler **dolgu** aracından görüntü özelliklerini birlikte.  
+3. Görüntü Düzenleyicisi araç çubuğunda **dolgu** aracı. **Özellikleri** penceresi özelliklerini görüntüler **dolgu** aracından görüntü özelliklerini birlikte.  
   
-4.  Ön plan rengini tamamen saydam siyah olarak ayarlar. İçinde **özellikleri** penceresi içinde **renkleri** özellik grubu, select **ön plan**. Değerlerini ayarlayın **R**, **G**, **B**, ve **A** yanındaki Renk Seçici için Özellikler `0`.  
+4. Ön plan rengini tamamen saydam siyah olarak ayarlar. İçinde **özellikleri** penceresi içinde **renkleri** özellik grubu, select **ön plan**. Değerlerini ayarlayın **R**, **G**, **B**, ve **A** yanındaki Renk Seçici için Özellikler `0`.  
   
-5.  Görüntü Düzenleyicisi araç çubuğunda **dolgu** aracı tuşuna basın ve Shift tuşunu basılı tutun ve herhangi bir noktaya görüntüyü seçin. Shift tuşunu kullanarak görüntüde rengini değiştirmek için dolgu rengi alfa değeri neden olur; Aksi takdirde, alfa değeri dolgu rengi renk görüntünün birlikte karıştırmak için kullanılır.  
+5. Görüntü Düzenleyicisi araç çubuğunda **dolgu** aracı tuşuna basın ve Shift tuşunu basılı tutun ve herhangi bir noktaya görüntüyü seçin. Shift tuşunu kullanarak görüntüde rengini değiştirmek için dolgu rengi alfa değeri neden olur; Aksi takdirde, alfa değeri dolgu rengi renk görüntünün birlikte karıştırmak için kullanılır.  
   
-    > [!IMPORTANT]
-    >  Bu adımda, önceki adımda, renk seçimi ile birlikte, temel görüntü için çizim "hedef merkezi" hedef dokuyu hazırlanır sağlar. Resmin saydam siyah doldurulur olduğunda — ve hedef kenarlığını siyah olduğundan — yumuşatma yapıt hedefi geçici bir çözüm olacaktır.  
+   > [!IMPORTANT]
+   >  Bu adımda, önceki adımda, renk seçimi ile birlikte, temel görüntü için çizim "hedef merkezi" hedef dokuyu hazırlanır sağlar. Resmin saydam siyah doldurulur olduğunda — ve hedef kenarlığını siyah olduğundan — yumuşatma yapıt hedefi geçici bir çözüm olacaktır.  
   
-6.  Görüntü Düzenleyicisi araç çubuğunda **elipsin** aracı.  
+6. Görüntü Düzenleyicisi araç çubuğunda **elipsin** aracı.  
   
-7.  Ön plan rengini tamamen opak siyah olarak ayarlar. Değerlerini ayarlayın **R**, **G**, ve **B** özelliklerine `0` değeri **A** özelliğini `255`.  
+7. Ön plan rengini tamamen opak siyah olarak ayarlar. Değerlerini ayarlayın **R**, **G**, ve **B** özelliklerine `0` değeri **A** özelliğini `255`.  
   
-8.  Arka plan rengi tamamen opak beyaz olarak ayarlar. İçinde **özellikleri** penceresi içinde **renkleri** özellik grubu, select **arka plan**. Değerlerini ayarlayın **R**, **G**, **B**, ve **A** özelliklerine `255`.  
+8. Arka plan rengi tamamen opak beyaz olarak ayarlar. İçinde **özellikleri** penceresi içinde **renkleri** özellik grubu, select **arka plan**. Değerlerini ayarlayın **R**, **G**, **B**, ve **A** özelliklerine `255`.  
   
 9. Elipsin ana hattın genişliği ayarlayın. İçinde **özellikleri** penceresi içinde **Görünüm** özellik grubu ayarlayın **genişliği** özelliğini `8`.  
   
@@ -89,11 +89,11 @@ Bu belge temel bir doku oluşturmak için görüntü Düzenleyicisi nasıl yapı
   
 17. Piksel koordinat başka bir daire çizin `(192, 192)` piksel koordinat için `(320, 320)`.  
   
- "Hedef merkezi" hedef dokuyu tamamlanmıştır. Saydamlık ile gösterilen son görüntü aşağıda verilmiştir.  
+    "Hedef merkezi" hedef dokuyu tamamlanmıştır. Saydamlık ile gösterilen son görüntü aşağıda verilmiştir.  
   
- ![Tam "hedef"merkezi hedef doku](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")  
+    ![Tam "hedef"merkezi hedef doku](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")  
   
- Bir sonraki adım, bu dokunun MIP düzeyleri oluşturabilirsiniz. Bilgi için [nasıl yapılır: oluşturma ve değiştirme MIP düzeyleri](../designers/how-to-create-and-modify-mip-levels.md).  
+    Bir sonraki adım, bu dokunun MIP düzeyleri oluşturabilirsiniz. Bilgi için [nasıl yapılır: oluşturma ve değiştirme MIP düzeyleri](../designers/how-to-create-and-modify-mip-levels.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görüntü Düzenleyicisi](../designers/image-editor.md)

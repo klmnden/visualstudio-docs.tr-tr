@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a99899f9a909ead3db7d925cd703612a7f68bcf2
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e1d0139463f468ed6d909658bb143412dc122020
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858712"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856190"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Visual Studio'da hata ayıklarken çağrı yığınında eşleştirme yöntemleri
 Hata ayıklarken çağrı yığınını görsel olarak izlemek için bir kod Haritası oluşturun. Hataları bulmaya odaklanabilmeniz amacıyla kodun ne yaptığını izlemek için harita üzerine not alabilirsiniz.
@@ -44,27 +44,27 @@ Hata ayıklarken çağrı yığınını görsel olarak izlemek için bir kod Har
 
  Şunları yapmanız gerekir:
 
--   [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
--   Visual C#, Visual Basic, C++, JavaScript veya X ++ gibi hatalarını ayıklayabileceğiniz kod
+- Visual C#, Visual Basic, C++, JavaScript veya X ++ gibi hatalarını ayıklayabileceğiniz kod
 
- Bkz.
+  Bkz.
 
--   [Video: (kanal 9) kod Haritası hata ayıklayıcı Tümleştirmesi ile görsel olarak hata ayıklama](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [Video: (kanal 9) kod Haritası hata ayıklayıcı Tümleştirmesi ile görsel olarak hata ayıklama](http://go.microsoft.com/fwlink/?LinkId=293418)
 
--   [Çağrı yığınını eşleme](#MapStack)
+- [Çağrı yığınını eşleme](#MapStack)
 
--   [Kodla ilgili notlar alın](#MakeNotes)
+- [Kodla ilgili notlar alın](#MakeNotes)
 
--   [Sonraki çağrı yığını ile eşlemeyi güncelleyin](#UpdateMap)
+- [Sonraki çağrı yığını ile eşlemeyi güncelleyin](#UpdateMap)
 
--   [Eşlemeye ilgili kodu ekleyin](#AddRelatedCode)
+- [Eşlemeye ilgili kodu ekleyin](#AddRelatedCode)
 
--   [Eşlemeyi kullanarak hataları bulun](#FindBugs)
+- [Eşlemeyi kullanarak hataları bulun](#FindBugs)
 
--   [SORU- CEVAP](#QA)
+- [SORU- CEVAP](#QA)
 
- Komutlar ve kod haritaları ile çalışırken kullanabileceğiniz eylemler için bilgi [göz atma ve yeniden düzenleme kod eşlemeleri](../modeling/browse-and-rearrange-code-maps.md).
+  Komutlar ve kod haritaları ile çalışırken kullanabileceğiniz eylemler için bilgi [göz atma ve yeniden düzenleme kod eşlemeleri](../modeling/browse-and-rearrange-code-maps.md).
 
 ## <a name="MapStack"></a> Çağrı yığınını eşleme
 
@@ -129,63 +129,63 @@ Hata ayıklarken çağrı yığınını görsel olarak izlemek için bir kod Har
 
 ## <a name="QA"></a> SORU- CEVAP
 
--   **Aramaların tümü haritada görünmez. Neden?**
+- **Aramaların tümü haritada görünmez. Neden?**
 
-     Varsayılan olarak, yalnızca kendi kodunuzu harita üzerinde görüntülenir. Harici kodu görmek için de açın **çağrı yığını** penceresi:
+   Varsayılan olarak, yalnızca kendi kodunuzu harita üzerinde görüntülenir. Harici kodu görmek için de açın **çağrı yığını** penceresi:
 
-     ![Çağrı yığını penceresini kullanarak dış kod görüntüle](../debugger/media/debuggermap_callstackmenu.png)
+   ![Çağrı yığını penceresini kullanarak dış kod görüntüle](../debugger/media/debuggermap_callstackmenu.png)
 
-     ya da devre dışı **yalnızca benim kodumu etkinleştir** Visual Studio hata ayıklama seçeneklerinde:
+   ya da devre dışı **yalnızca benim kodumu etkinleştir** Visual Studio hata ayıklama seçeneklerinde:
 
-     ![Seçenekler iletişim kutusunu kullanarak dış Kodu Göster](../debugger/media/debuggermap_debugoptions.png)
+   ![Seçenekler iletişim kutusunu kullanarak dış Kodu Göster](../debugger/media/debuggermap_debugoptions.png)
 
--   **Haritanın değiştirilmesi kodu etkiler mi?**
+- **Haritanın değiştirilmesi kodu etkiler mi?**
 
-     Haritanın değiştirilmesi kodu herhangi bir şekilde etkilemez. Haritadaki herhangi bir şeyi rahatça yeniden adlandırabilir, taşıyabilir veya kaldırabilirsiniz.
+   Haritanın değiştirilmesi kodu herhangi bir şekilde etkilemez. Haritadaki herhangi bir şeyi rahatça yeniden adlandırabilir, taşıyabilir veya kaldırabilirsiniz.
 
--   **Bu ileti ne anlama gelir: "diyagram kodu daha eski bir sürümünü temel alıyor olabilir"?**
+- **Bu ileti ne anlama gelir: "diyagram kodu daha eski bir sürümünü temel alıyor olabilir"?**
 
-     Kod, haritayı son güncelleştirmenizden sonra değişmiş olabilir. Örneğin, harita üzerindeki bir çağrı artık kodda bulunmayabilir. İletiyi kapatın ve haritayı yeniden güncelleştirmeden önce çözümü yeniden oluşturmayı deneyin.
+   Kod, haritayı son güncelleştirmenizden sonra değişmiş olabilir. Örneğin, harita üzerindeki bir çağrı artık kodda bulunmayabilir. İletiyi kapatın ve haritayı yeniden güncelleştirmeden önce çözümü yeniden oluşturmayı deneyin.
 
--   **Haritanın düzenini nasıl denetlerim?**
+- **Haritanın düzenini nasıl denetlerim?**
 
-     Açık **Düzen** menüsünü harita araç çubuğunda:
+   Açık **Düzen** menüsünü harita araç çubuğunda:
 
-    -   Ekran düzenini değiştirin.
+  -   Ekran düzenini değiştirin.
 
-    -   Eşlemeyi otomatik olarak yeniden düzenleme durdurmak için devre dışı **otomatik olarak hata ayıklama sırasında Düzen**.
+  -   Eşlemeyi otomatik olarak yeniden düzenleme durdurmak için devre dışı **otomatik olarak hata ayıklama sırasında Düzen**.
 
-    -   Öğeleri eklediğinizde, eşlemeyi olabildiğince az yeniden düzenlemek için devre dışı **artan düzen**.
+  -   Öğeleri eklediğinizde, eşlemeyi olabildiğince az yeniden düzenlemek için devre dışı **artan düzen**.
 
--   **Ben haritayı başkalarıyla paylaşabilir miyim?**
+- **Ben haritayı başkalarıyla paylaşabilir miyim?**
 
-     Haritayı dışarı aktarabilir, Microsoft Outlook'unuz varsa ya da kaynak denetimine iade için çözümünüze kaydedebilir başkalarına gönderebilir.
+   Haritayı dışarı aktarabilir, Microsoft Outlook'unuz varsa ya da kaynak denetimine iade için çözümünüze kaydedebilir başkalarına gönderebilir.
 
-     ![Başkalarıyla paylaşımı çağrı yığınını kod Haritası](../debugger/media/debuggermap_sharewithothers.png)
+   ![Başkalarıyla paylaşımı çağrı yığınını kod Haritası](../debugger/media/debuggermap_sharewithothers.png)
 
--   **Eşlemeyi otomatik olarak yeni çağrı yığınları eklemesini nasıl durdururum?**
+- **Eşlemeyi otomatik olarak yeni çağrı yığınları eklemesini nasıl durdururum?**
 
-     Seçin ![düğmesi &#45; Show çağrı yığınını kod haritasında otomatik olarak](../debugger/media/debuggermap_automaticupdateicon.gif) harita araç çubuğunda. Geçerli çağrı yığınını eşlemeye el ile eklemek için basın **Ctrl** + **Shift** + **`**.
+   Seçin ![düğmesi &#45; Show çağrı yığınını kod haritasında otomatik olarak](../debugger/media/debuggermap_automaticupdateicon.gif) harita araç çubuğunda. Geçerli çağrı yığınını eşlemeye el ile eklemek için basın **Ctrl** + **Shift** + **`**.
 
-     Eşleme, hata ayıklarken eşlemede varolan çağrı yığınlarını vurgulamaya devam edecektir.
+   Eşleme, hata ayıklarken eşlemede varolan çağrı yığınlarını vurgulamaya devam edecektir.
 
--   **Öğe simgeleri ve okları ne anlama gelir?**
+- **Öğe simgeleri ve okları ne anlama gelir?**
 
-     Bir öğe hakkında daha fazla bilgi almak için fare işaretçisini üzerine taşıyın ve öğenin ipucuna bakın. Ayrıca bakabilirsiniz **gösterge** her simgenin ne anlama geldiğini öğrenebilirsiniz.
+   Bir öğe hakkında daha fazla bilgi almak için fare işaretçisini üzerine taşıyın ve öğenin ipucuna bakın. Ayrıca bakabilirsiniz **gösterge** her simgenin ne anlama geldiğini öğrenebilirsiniz.
 
-     ![Çağrı yığınını kod Haritası simgeleri ne anlama gelir?](../debugger/media/debuggermap_showlegend.png)
+   ![Çağrı yığınını kod Haritası simgeleri ne anlama gelir?](../debugger/media/debuggermap_showlegend.png)
 
- Bkz.
+  Bkz.
 
--   [Çağrı yığınını eşleme](#MapStack)
+- [Çağrı yığınını eşleme](#MapStack)
 
--   [Kodla ilgili notlar alın](#MakeNotes)
+- [Kodla ilgili notlar alın](#MakeNotes)
 
--   [Sonraki çağrı yığını ile eşlemeyi güncelleyin](#UpdateMap)
+- [Sonraki çağrı yığını ile eşlemeyi güncelleyin](#UpdateMap)
 
--   [Eşlemeye ilgili kodu ekleyin](#AddRelatedCode)
+- [Eşlemeye ilgili kodu ekleyin](#AddRelatedCode)
 
--   [Eşlemeyi kullanarak hataları bulun](#FindBugs)
+- [Eşlemeyi kullanarak hataları bulun](#FindBugs)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

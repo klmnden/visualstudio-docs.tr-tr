@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d343139a23453af12555b4ffbec8e3de7e2a827
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2b3aed9e2504011a61fe13acdf4a836cb41f8df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230892"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859674"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Çalıştırılacak C++ Kurallarını Belirtmek için Kural Kümeleri Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +32,19 @@ ms.locfileid: "49230892"
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Var olan tek kural kümesinden özel bir kural oluşturmak için  
   
-1.  Çözüm Gezgini'nde, proje için kısayol menüsünü açın ve ardından **özellikleri**.  
+1. Çözüm Gezgini'nde, proje için kısayol menüsünü açın ve ardından **özellikleri**.  
   
-2.  Üzerinde **özellikleri** sekmesini, **Kod Analizi**.  
+2. Üzerinde **özellikleri** sekmesini, **Kod Analizi**.  
   
-3.  İçinde **kural kümesi** aşağı açılan listesinde, aşağıdakilerden birini yapın:  
+3. İçinde **kural kümesi** aşağı açılan listesinde, aşağıdakilerden birini yapın:  
   
-    -   Özelleştirmek istediğiniz kural kümesi seçin.  
+   - Özelleştirmek istediğiniz kural kümesi seçin.  
   
      \- veya -  
   
-    -   Seçin  **\<Gözat … >** mevcut bir kuralı kümesini belirlemek için listesinde değil.  
+   - Seçin  **\<Gözat … >** mevcut bir kuralı kümesini belirlemek için listesinde değil.  
   
-4.  Seçin **açık** kuralları kural kümesi Düzenleyicisi'nde görüntülemek için.  
+4. Seçin **açık** kuralları kural kümesi Düzenleyicisi'nde görüntülemek için.  
   
 #### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Bir kuralı değiştirmek için kural kümesi Düzenleyicisi'nde ayarlayın.  
   

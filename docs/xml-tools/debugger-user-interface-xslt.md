@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df50443a4a86e1524f20fa61275364b7c6603fdf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6c2cedf1a07307b8494e6a6b810e9590f347c9f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176030"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847389"
 ---
 # <a name="debugger-user-interface-xslt"></a>Hata ayıklayıcı kullanıcı arabirimi (XSLT)
 
@@ -41,7 +41,7 @@ Daha fazla bilgi için [kullanıcı arabirim başvurusunda hata ayıklama](../de
  Yerel öğeler penceresinde de XSLT dönüşümü bağlamında izleyen önceden tanımlanmış bağlam değişkenlerini görüntüler. XSLT hata ayıklayıcısı tarafından kullanılan önceden tanımlanmış bağlam değişkenleri aşağıdaki tabloda açıklanmaktadır.
 
 |Ad|Açıklama|
-|----------|-----------------|
+|-|-----------------|
 |`last()`|İçerik boyutu.|
 |`position()`|Konumu veya dizin sayısı, bağlam düğümü göre içerik boyutu.|
 |`self::node()`|Bağlam düğümünün değeri.|

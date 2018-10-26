@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a125223521bf73012944841c6fcf531df3a9ae8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed64d9dde53b31cfe5f52ce708e4ee96d91fe8ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242768"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861370"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ kod parçacıkları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ Visual Studio'da kod parçacıkları, kod sık kullanılan C++ kod dosyalarını
 ## <a name="inserting-a-code-snippet"></a>Kod parçacığını eklemek  
  Kod parçacığı eklemek için bir C++ kod dosyası (.cpp veya .h) açın, içinde dosya bir yere tıklayın ve aşağıdakilerden birini yapın:  
   
--   Bağlam menüsü alma ve seçmek için sağ tıklama **kod parçacığı Ekle**  
+- Bağlam menüsü alma ve seçmek için sağ tıklama **kod parçacığı Ekle**  
   
--   İçinde **Düzenle / IntelliSense** menüsünde **kod parçacığı Ekle**  
+- İçinde **Düzenle / IntelliSense** menüsünde **kod parçacığı Ekle**  
   
--   Kısayol tuşlarını kullanın: **CTRL + K + X**  
+- Kısayol tuşlarını kullanın: **CTRL + K + X**  
   
- Sürümünden itibaren seçenekleri listesini görmelisiniz **#if**. Seçtiğinizde, **#if**, dosyaya eklenen aşağıdaki kodu görmeniz gerekir:  
+  Sürümünden itibaren seçenekleri listesini görmelisiniz **#if**. Seçtiğinizde, **#if**, dosyaya eklenen aşağıdaki kodu görmeniz gerekir:  
   
 ```cpp  
 #if 0  
@@ -50,13 +50,13 @@ Visual Studio'da kod parçacıkları, kod sık kullanılan C++ kod dosyalarını
 ## <a name="using-a-code-snippet-to-surround-selected-code"></a>Kod kapsamak için kod parçacığını kullanarak seçili  
  Seçili kod kapsamak için kod parçacığı kullanmak için bir satır (veya birden fazla satır) seçin ve aşağıdakilerden birini yapın:  
   
-1.  Bağlam menüsü alma ve seçmek için sağ tıklama **Surround With**  
+1. Bağlam menüsü alma ve seçmek için sağ tıklama **Surround With**  
   
-2.  İçinde **Düzenle / IntelliSense** menüsünde **Surround With**  
+2. İçinde **Düzenle / IntelliSense** menüsünde **Surround With**  
   
-3.  Kısayol tuşlarını kullanın: **CTRL + K + S**  
+3. Kısayol tuşlarını kullanın: **CTRL + K + S**  
   
- Seçin **#if**. Bunun gibi bir şey görmeniz gerekir:  
+   Seçin **#if**. Bunun gibi bir şey görmeniz gerekir:  
   
 ```cpp  
 #if 0  

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2b85d2d20f4400e252cbfd19ea169c7b27b2aecf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 229097b12e5b32e6be6af6b9614a628346780063
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176885"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921489"
 ---
 # <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>Grafikler görünümünde ve Tablolar görünümünde Sayaçlar panelini kullanma
 
@@ -54,7 +54,7 @@ Sayaçlar paneli aşağıdaki özellikleri sağlar:
 ## <a name="tasks"></a>Görevler
 
 |Görevler|İlişkili konular|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Daha fazla performans sayaçlarının Grafik görünümünde bir grafik ekleyin:** içinde **sayaçları** panelinde ekleyebileceğiniz farklı türlerde veri bir yük testi grafiği için grafik üzerinde daha fazla performans sayaçlarını ekleyerek.|-   [Nasıl yapılır: grafiklerde sayaç ekleme ve silme](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**İhlal edildi yük testi içinde belirtilen eşikler analiz:** **sayaçları** paneli, tablolar ve grafikler daha fazla analiz için daha sonra ekleyebilirsiniz Eşik ihlallerini temsil eden bir simge görüntüler.|-   [Nasıl yapılır: Sayaçlar panelini kullanılarak Eşik ihlallerini çözümleme](../test/analyze-threshold-rule-violations-in-load-tests.md)|
 |**Yük testi çalıştırması sırasında algılanan hataları çözümleyin:** **sayaçları** paneli, hata kategorileri ve alt kategorileri gibi grafikler için hata eklemek için kullanabileceğiniz HTTP hataları içeren bir hata düğümü içerir Daha fazla analiz.|-   [Nasıl yapılır: Sayaçlar panelini kullanarak hataları çözümleme](../test/how-to-analyze-errors-using-the-counters-panel.md)|
@@ -66,7 +66,7 @@ Sayaçlar paneli aşağıdaki özellikleri sağlar:
 Örnek hızlara ait bazı Kılavuzlar şunlardır:
 
 |Yük testi süresi|Önerilen örnek hız|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 saat|5 saniye|
 |1 - 8 saat|15 saniye|
 |8 - 24 saat|30 saniye|

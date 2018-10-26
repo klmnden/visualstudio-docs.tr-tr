@@ -12,40 +12,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c8aadb3c452a59f1b44cd030331164384d23bb
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 4a87c5c9ebe1b3eed2c3c569e508c5b76ce6845d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758343"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818997"
 ---
 # <a name="flowdecision-activity-designer"></a>FlowDecision Etkinlik Tasarımcısı
 
-<xref:System.Activities.Statements.FlowDecision> Sağlayan bir dal için denetim akışı iki alternatifleri olup belirtilen bir koşul yerine getirildiği dayalı birine koşullu bir düğüm düğümdür. Akış ikiden fazla dalları gerektiriyorsa, kullanın <xref:System.Activities.Statements.FlowSwitch%601> yerine.
+<xref:System.Activities.Statements.FlowDecision> Sağlayan bir dal denetim akışı için belirtilen bir koşulu gerçekleşmiş demektir göre iki alternatifleri birine koşullu bir düğümü düğümüdür. Akış ikiden fazla dalları gerektiriyorsa, kullanın <xref:System.Activities.Statements.FlowSwitch%601> yerine.
 
 ## <a name="the-flowdecision-node"></a>FlowDecision düğümü
 
-Kullanım <xref:System.Activities.Statements.FlowDecision> zaman akış dallandırılmış iki yolu. A <xref:System.Activities.Statements.FlowDecision> düğüm bir <xref:System.Activities.Statements.FlowDecision.Condition%2A> ve <xref:System.Activities.Statements.FlowNode> her iki olası sonucunu ile ilişkilendirilmiş: <xref:System.Activities.Statements.FlowDecision.True%2A> veya <xref:System.Activities.Statements.FlowDecision.False%2A>. <xref:System.Activities.Statements.FlowDecision.Condition%2A> Değerlendirilir ve değerin Bu değerlendirme sonraki belirler <xref:System.Activities.Statements.FlowNode> içinde işlenmek üzere <xref:System.Activities.Statements.Flowchart>.
+Kullanım <xref:System.Activities.Statements.FlowDecision> zaman akışı dallandırılmış iki yola. A <xref:System.Activities.Statements.FlowDecision> düğüme sahip bir <xref:System.Activities.Statements.FlowDecision.Condition%2A> ve <xref:System.Activities.Statements.FlowNode> her iki sonuçtan ile ilişkilendirilmiş: <xref:System.Activities.Statements.FlowDecision.True%2A> veya <xref:System.Activities.Statements.FlowDecision.False%2A>. <xref:System.Activities.Statements.FlowDecision.Condition%2A> Değerlendirilir ve sonraki Bu değerlendirme değeri belirler <xref:System.Activities.Statements.FlowNode> içinde işlenecek <xref:System.Activities.Statements.Flowchart>.
 
 ### <a name="using-the-flowdecision-designer"></a>FlowDecision Tasarımcısı'nı kullanarak
 
-**FlowDecision** Tasarımcısı bulunabilir **akış çizelgesi** kategorisini **araç**, hangi tıklayarak erişildiğinde **araç** İş Akışı Tasarımcısı sekmesinde. Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya tuşuna **Ctrl**+**Alt** + **X**.
+**FlowDecision** Tasarımcısı bulunabilir **akış** kategorisi **araç kutusu**, hangi erişilen tıklayarak **araç kutusu** İş Akışı Tasarımcısı sekmesindeki. Alternatif olarak, seçin **araç kutusu** gelen **görünümü** tuşuna basın veya menü **Ctrl**+**Alt** + **X**.
 
-**FlowDecision** Tasarımcısı'ndan sürüklenebilir **araç** ve iş akışı Tasarımcısı yüzeyini içinde açın bırakılan bir **akış çizelgesi** etkinlik Tasarımcısı. Bu oluşturur bir <xref:System.Activities.Statements.FlowDecision> etiketli **karar** içinde <xref:System.Activities.Statements.Flowchart> etkinlik. Fare Tasarımcı üzerine ve **True** ve **False** iki dalı için kare işleyicilerin görünür.
+**FlowDecision** Tasarımcısı'ndan sürüklenebilir **araç kutusu** ve iş akışı Tasarımcısı yüzeyine içinde açın bırakılan bir **akış** etkinlik Tasarımcısı. Bu, oluşturur bir <xref:System.Activities.Statements.FlowDecision> etiketli **karar** içinde <xref:System.Activities.Statements.Flowchart> etkinlik. Tasarımcı üzerinde fare ve **True** ve **False** kare tanıtıcıları için iki dal görüntülenir.
 
-Sürükleme sonra **FlowDecision** Tasarımcısı ve diğer tasarımcılar üzerine **akış çizelgesi**, düğümleri bağlı birlikte yürütme sırasını belirtmek için. Bir kaynak düğüm arasında bir bağlantı oluşturmak için (de dahil olmak üzere **True** ve **False** , dallandırır **FlowDecision**) ve hedef düğüm, kaynak düğüm designer üzerinden fare ve bunu her bir tarafta kare tanıtıcıları görünür. Kare tanıtıcıları birini tıklatın ve üzerine fare yükleyen hedef düğüm geçici benzer şekilde görünen tanıtıcıları birine fare düğmesini basılı tutarak sürükleyin. Fare düğmesini bırakın ve bir bağlantı arasındaki bir ok olarak kaynağı Tasarımcısı'ndan hedef Designer'a temsil edilen bu iki düğüm oluşturulur.
+Sürükleme sonra **FlowDecision** Tasarımcısı ve diğer tasarımcılar üzerine **akış**, düğümleri bağlı birlikte yürütme sırası belirtmek için. Kaynak düğüm arasında bir bağlantı oluşturmak için (dahil olmak üzere **True** ve **False** , dallar **FlowDecision**) ve bir hedef düğümü kaynak düğüm tasarımcının üzerine fare ve bunu her bir tarafta kare tutamaçları görünür. Kare tutamaçlarından birinin tıklayıp üzerine fare yükleyen hedef düğüme etrafında benzer şekilde görünür tutamaçlarından birinin için fare düğmesini basılı tutarak sürükleyin. Fare düğmesini bırakın ve bağlantı hedef tasarımcıya kaynağı Tasarımcısı'ndan bir ok olarak temsil edilen bu iki düğüm arasında oluşturulur.
 
-Durumları ifade <xref:System.Activities.Statements.FlowDecision.Condition%2A> yazılabilir **koşulu** kutusunun **özellikleri** burada ipucu metnini bildiren "Girin VB ifade" tıklayarak penceresi.
+Durumları ifade <xref:System.Activities.Statements.FlowDecision.Condition%2A> yazılabilir **koşul** kutusunun **özellikleri** tıklayarak penceresi ipucu metnini burada Yazan "VB ifadesi girin".
 
 ### <a name="the-flowdecision-properties"></a>FlowDecision özellikleri
 
-Aşağıdaki tabloda <xref:System.Activities.Statements.FlowDecision> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikler, özellik kılavuzu veya tasarımcı yüzeyine düzenlenebilir.
+Aşağıdaki tabloda <xref:System.Activities.Statements.FlowDecision> özellikleri Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikler, özellik kılavuzunda veya tasarımcı yüzeyinde düzenlenebilir.
 
 |Özellik adı|Gerekli|Kullanım|
-|-------------------|--------------|-----------|
-|<xref:System.Activities.Statements.FlowDecision.Condition%2A>|Doğru|Hangi yolu belirler koşul akış denetimi alır.|
-|<xref:System.Activities.Statements.FlowDecision.True%2A>|False|Varsa akış denetimi tarafından alınan yolu <xref:System.Activities.Statements.FlowDecision.Condition%2A> memnun kalır.|
-|<xref:System.Activities.Statements.FlowDecision.False%2A>|False|Varsa akış denetimi tarafından alınan yolu <xref:System.Activities.Statements.FlowDecision.Condition%2A> memnun değil.|
+|-|--------------|-|
+|<xref:System.Activities.Statements.FlowDecision.Condition%2A>|Doğru|Hangi yolu belirleyen koşul akış denetimi gerçekleştirir.|
+|<xref:System.Activities.Statements.FlowDecision.True%2A>|False|Yolun, akış denetimi tarafından gerçekleştirilen <xref:System.Activities.Statements.FlowDecision.Condition%2A> karşılanmadı.|
+|<xref:System.Activities.Statements.FlowDecision.False%2A>|False|Yolun, akış denetimi tarafından gerçekleştirilen <xref:System.Activities.Statements.FlowDecision.Condition%2A> karşılanmadı.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

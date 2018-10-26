@@ -23,12 +23,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e945a3a55f1ea4f9e68b96209e350c843324c30
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4e2b39aa13316b1b9ca47c5587ffabf6f6a14e68
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294521"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843060"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Nasıl Yapılır: Projeleri Hedef Platformlar İçin Yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,22 +40,22 @@ ms.locfileid: "49294521"
   
 #### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Bir 64 bit platformları hedefleyen bir proje yapılandırma  
   
-1.  Menü çubuğunda, **derleme**, **Configuration Manager**.  
+1. Menü çubuğunda, **derleme**, **Configuration Manager**.  
   
-2.  İçinde **etkin çözüm platformu** listesinde, hedef çözümü için 64 bit platform seçin ve ardından **Kapat** düğmesi.  
+2. İçinde **etkin çözüm platformu** listesinde, hedef çözümü için 64 bit platform seçin ve ardından **Kapat** düğmesi.  
   
-    1.  İstediğiniz platform görünmüyorsa **etkin çözüm platformu** listesinde **yeni**.  
+   1.  İstediğiniz platform görünmüyorsa **etkin çözüm platformu** listesinde **yeni**.  
   
-         **Yeni çözüm platformu** iletişim kutusu görüntülenir.  
+        **Yeni çözüm platformu** iletişim kutusu görüntülenir.  
   
-    2.  İçinde **yazın veya seçin yeni platformu** listesinde **x64**.  
+   2.  İçinde **yazın veya seçin yeni platformu** listesinde **x64**.  
   
-        > [!NOTE]
-        >  Yapılandırmanızı yeni bir ad verin, ayarlarını değiştirmeniz gerekebilir **Proje Tasarımcısı** doğru platformunu hedeflemek için.  
+       > [!NOTE]
+       >  Yapılandırmanızı yeni bir ad verin, ayarlarını değiştirmeniz gerekebilir **Proje Tasarımcısı** doğru platformunu hedeflemek için.  
   
-    3.  Geçerli bir platform yapılandırmasını ayarlar kopyalamak istiyorsanız, bunu seçin ve ardından **Tamam** düğmesi.  
+   3.  Geçerli bir platform yapılandırmasını ayarlar kopyalamak istiyorsanız, bunu seçin ve ardından **Tamam** düğmesi.  
   
- 64-bit platformu hedefleyen tüm projeler için özellikler güncelleştirilir ve projenin sonraki derleme için 64-bit platformlarda iyileştirilir.  
+   64-bit platformu hedefleyen tüm projeler için özellikler güncelleştirilir ve projenin sonraki derleme için 64-bit platformlarda iyileştirilir.  
   
 ## <a name="targeting-platforms-in-the-project-designer"></a>Proje Tasarımcısı'nda platformlarını hedefleyen  
  Proje Tasarımcısı, ayrıca projenizle farklı platformları hedeflemek için bir yol sağlar. Listede bulunan platformlardan birini seçilirken **yeni çözüm platformu** iletişim kutusunda, çözümünüz için çalışmıyor, özel yapılandırma adı oluşturmak ve ayarlarını değiştirmeyi **Proje Tasarımcısı**  doğru platformunu hedeflemek için.  

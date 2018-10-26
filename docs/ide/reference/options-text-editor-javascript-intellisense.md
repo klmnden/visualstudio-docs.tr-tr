@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 584f2496e676b37b23afbe9b4e135f475a73d8df
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f870468852b7de53d22a66683bc7c8f64ffcc174
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179755"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848533"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Seçenekler, Metin Düzenleyici, JavaScript, IntelliSense
 Kullanım **IntelliSense** sayfasının **seçenekleri** JavaScript için IntelliSense'in davranışını etkileyen ayarları değiştirmek için iletişim kutusu. Erişebildiğiniz **IntelliSense** seçerek sayfası **Araçları**, **seçenekleri** menü çubuğu ve ardından genişletme **metin düzenleyici**,  **JavaScript**, **IntelliSense.**
@@ -67,13 +67,13 @@ Kullanım **IntelliSense** sayfasının **seçenekleri** JavaScript için Intell
 
  Belirli IntelliSense .js dosyalarının farklı JavaScript projeleri için kapsamda olduğunu belirtmek için önceden tanımlı başvuru gruplarını kullanabilirsiniz. Dört başvuru grubu mevcuttur:
 
--   Örtük (Windows *sürüm*), için [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] JavaScript kullanan uygulamalar. Bu grupta yer alan dosyalar, Kod Düzenleyicisi'nde için açılan her .js dosyası için kapsama [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] JavaScript kullanan uygulamalar.
+- Örtük (Windows *sürüm*), için [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] JavaScript kullanan uygulamalar. Bu grupta yer alan dosyalar, Kod Düzenleyicisi'nde için açılan her .js dosyası için kapsama [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] JavaScript kullanan uygulamalar.
 
--   Örtük (Web); HTML5 projeleri için. Bu grupta yer alan dosyalar, bu proje türleri için Kod Düzenleyicisi'nde açılan her .js dosyası için kapsama girer.
+- Örtük (Web); HTML5 projeleri için. Bu grupta yer alan dosyalar, bu proje türleri için Kod Düzenleyicisi'nde açılan her .js dosyası için kapsama girer.
 
--   Adanmış çalışan başvuru grupları; HTML5 web çalışanları. Bu grupta belirtilen dosyalar, bir adanmış çalışan başvuru grubuna dair açık başvuru içeren .js dosyaları için kapsama girer.
+- Adanmış çalışan başvuru grupları; HTML5 web çalışanları. Bu grupta belirtilen dosyalar, bir adanmış çalışan başvuru grubuna dair açık başvuru içeren .js dosyaları için kapsama girer.
 
--   Genel; diğer JavaScript proje türleri için.
+- Genel; diğer JavaScript proje türleri için.
 
 **Eklenen dosyalar**
 

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dc83fc859e99a86b1057a02b7cfb9ff2e1232af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3adb481ba06c086db3a272c026543464018b542
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635531"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926208"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>DebuggerDisplay özniteliğini kullanma
 <xref:System.Diagnostics.DebuggerDisplayAttribute> Hata ayıklayıcı değişken pencerelerinde bir nesne, özelliği veya alanı nasıl görüntüleneceğini denetler. Bu öznitelik türleri, temsilciler, özellikleri, alanları ve derlemeler için uygulanabilir.  
@@ -36,7 +36,7 @@ ms.locfileid: "42635531"
  Aşağıdaki tablo olası bazı kullanımlarını gösterir `DebuggerDisplay` özniteliği ve örnek çıktı.  
   
 |Öznitelik|Değer sütununda görünen çıkış|  
-|---------------|------------------------------------------------|  
+|---------------| - |  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Bir türü alanları ile kullanılan `x` ve `y`.|`x = 5 y = 18`|  
 |`[DebuggerDisplay("String value is {getString()}")]`Parametresi söz dizimi diller arasında değişebilir. Bu nedenle dikkatli kullanın.|`String value is [5, 6, 6]`|  
   
@@ -65,13 +65,13 @@ csc /t:library autoexp.cs
   
  DebuggerDisplay içinde ifadeleri kullanarak aşağıdaki sorunlarına yol açabilir:  
   
--   İfadeleri değerlendirme en pahalı işleminde hata ayıklayıcı ve ifade, görüntülenen her zaman değerlendirilir. Bu kod içerisinde ilerlemeye performans sorunlarına neden olabilir. Örneğin, bir koleksiyon veya listedeki değerleri görüntülemek için kullanılan karmaşık bir ifade öğe sayısı büyük olduğunda çok yavaş olabilir.  
+- İfadeleri değerlendirme en pahalı işleminde hata ayıklayıcı ve ifade, görüntülenen her zaman değerlendirilir. Bu kod içerisinde ilerlemeye performans sorunlarına neden olabilir. Örneğin, bir koleksiyon veya listedeki değerleri görüntülemek için kullanılan karmaşık bir ifade öğe sayısı büyük olduğunda çok yavaş olabilir.  
   
--   İfadeler, geçerli yığın çerçevesi dilinin ifade değerlendiricisi tarafından ve değerlendirme ifadesi yazıldığı dili tarafından değerlendirilir. Dilleri farklı olduğunda bu öngörülemeyen sonuçlara neden olabilir.  
+- İfadeler, geçerli yığın çerçevesi dilinin ifade değerlendiricisi tarafından ve değerlendirme ifadesi yazıldığı dili tarafından değerlendirilir. Dilleri farklı olduğunda bu öngörülemeyen sonuçlara neden olabilir.  
   
--   Bir ifadenin değerlendirilmesi, uygulama durumunu değiştirebilirsiniz. Örneğin, bir özelliğinin değerini ayarlayan bir ifade kodu yürütürken özellik değeri değiştirdiği.  
+- Bir ifadenin değerlendirilmesi, uygulama durumunu değiştirebilirsiniz. Örneğin, bir özelliğinin değerini ayarlayan bir ifade kodu yürütürken özellik değeri değiştirdiği.  
   
- İfade değerlendirmesinin olası sorunları azaltmak yollarından biri, işlemi gerçekleştiren ve bir dize döndürür bir özel özellik oluşturmaktır. DebuggerDisplay özniteliği, bu özel özellik değerini daha sonra görüntüleyebilirsiniz. Aşağıdaki örnek bu düzeni uygular:  
+  İfade değerlendirmesinin olası sorunları azaltmak yollarından biri, işlemi gerçekleştiren ve bir dize döndürür bir özel özellik oluşturmaktır. DebuggerDisplay özniteliği, bu özel özellik değerini daha sonra görüntüleyebilirsiniz. Aşağıdaki örnek bu düzeni uygular:  
   
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  

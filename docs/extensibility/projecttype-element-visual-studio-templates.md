@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0452f6bbee3232c757c2a5483d9c08fca220ad01
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 14726d5338830eb4044d22778d886241cfd0cd83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636772"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921138"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType öğesi (Visual Studio şablonları)
 Belirtilen grubun altında görünmesi proje şablonu kategorilere ayırır **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.  
@@ -58,11 +58,11 @@ Belirtilen grubun altında görünmesi proje şablonu kategorilere ayırır **ye
   
  Bu değer, türde bir proje şablonu oluşturur ve aşağıdaki değerlerden birini içermelidir belirtir:  
   
--   `CSharp`: Belirtir şablon oluşturur, bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] proje veya öğe.  
+- `CSharp`: Belirtir şablon oluşturur, bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] proje veya öğe.  
   
--   `VisualBasic`: Belirtir şablon oluşturur, bir [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] proje veya öğe.  
+- `VisualBasic`: Belirtir şablon oluşturur, bir [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] proje veya öğe.  
   
--   `Web`: Belirtir şablon bir Web proje veya öğe oluşturur. Varsa `ProjectType` öğesi içerir, bu değer, dil proje veya öğe içinde tanımlanan [ProjectSubType öğesi (Visual Studio şablonları)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
+- `Web`: Belirtir şablon bir Web proje veya öğe oluşturur. Varsa `ProjectType` öğesi içerir, bu değer, dil proje veya öğe içinde tanımlanan [ProjectSubType öğesi (Visual Studio şablonları)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
   
 ## <a name="remarks"></a>Açıklamalar  
  `ProjectType` gerekli alt öğesi olan `TemplateData`.  

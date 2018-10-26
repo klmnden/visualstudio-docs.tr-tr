@@ -13,51 +13,51 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de351e019c4daacc61bbbdd2757b0f0d9a46e584
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a2c189afe9051d0f85c7f5f24a928d475d0eaca9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942847"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872856"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Arama ifadelerindeki mantıksal ve Gelişmiş işleçler
 
-Mantıksal işleçler ve Gelişmiş arama işleçleri aramanızı Yardım içeriğinin için kullanabileceğiniz **Yardım Görüntüleyici**.
+Yardım içerik, aramanızı daraltmak için mantıksal işleçler ve Gelişmiş arama işleçleri kullanabilirsiniz **Yardım Görüntüleyici**.
 
 ## <a name="logical-operators"></a>Mantıksal işleçler
 
-Mantıksal işleçler birden çok arama terimleri bir arama sorgusu birleştirilmelidir belirtin. Aşağıdaki tabloda, mantıksal işleçler AND, OR gösterir değil ve YAKININDA.
+Mantıksal işleçler, arama sorgusu birden çok arama terimlerini birleştirilmelidir belirtin. Aşağıdaki tabloda, mantıksal AND, OR işleçlerini gösterir değil ve NEREDEYSE.
 
 |Aramak için|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|Örnek|Sonuç|
 |-------------------|---------|-------------|------------|
-|Her iki terim aynı makaledeki|AND|DIB ve paleti|"DIB" ve "paleti" içeren konulardır.|
-|Bir makalede her iki terim|VEYA|Izgara veya vektör|"Izgara" veya "vektör" içeren konular.|
-|Aynı makalenin ikinci vadede olmadan ilk terimi|DEĞİL|"işletim sistemi" değil DOS|"İşletim sistemi" ancak değil "DOS" içeren konulardır.|
-|Birbirine yakın bir makaledeki her iki terim|YAKIN|Kullanıcı çekirdek yakın|İçindeki "kullanıcı" içeren konuları "çekirdek" yakınlığını kapatın.|
+|Aynı makalede bulunan her iki terim|AND|DIB ve paleti|Hem "DIB" ve "palet" içeren konulardır.|
+|Bir makalede her iki terim|VEYA|Izgara veya vektör|"Tarama" veya "vektör" içeren konulardır.|
+|Aynı makalede bulunan ikinci terimi olmadan ilk terimi|DEĞİL|"işletim sistemi" DOS değil|"İşletim sistemi" ancak değil "DOS" içeren konulardır.|
+|Birbirine yakın bir makaledeki her iki terim|YAKIN|Kullanıcı yakın çekirdek|Yakınlık "çekirdek" içinde "kullanıcı" içeren konuların kapatın.|
 
 > [!IMPORTANT]
-> Mantıksal işleçler bunları tanıyabilmesi arama motoru için tümü büyük harfle girmeniz gerekir.
+> Mantıksal işleçler tanıması arama motoru için tüm büyük harfler girmeniz gerekir.
 
-## <a name="advanced-operators"></a>Gelişmiş işleçler
+## <a name="advanced-operators"></a>Gelişmiş operatörler
 
-Gelişmiş arama işleçleri için arama terimi aramak için bir makalede where belirterek içerik için aramanızı daraltın. Aşağıdaki tabloda dört kullanılabilen gelişmiş arama işleçleri açıklar.
+Gelişmiş arama işleçleri, ilişkin arama terimi aramak için bir makaledeki nerede belirterek içerik için aramanızı daraltın. Aşağıdaki tabloda dört kullanılabilir gelişmiş arama işleçleri açıklanmaktadır.
 
 |Aramak için|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|Örnek|Sonuç|
 |-------------------|---------|-------------|------------|
-|Makale başlığı'nda terim|`title:`|`title:binaryreader`|Başlıklarında "binaryreader" içeren konulardır.|
-|Kod örneğinde bir terim|`code:`|`code:readdouble`|Kod örneğinde "readdouble" içeren konulardır.|
-|Belirli bir programlama dili örneği vadede|`code:vb:`|`code:vb:string`|Visual Basic kod örneğinde "dize" içeren konulardır.|
-|Özel dizin anahtar sözcüğü ile ilişkili bir makale|`keyword:`|`keyword:readbyte`|"Readbyte" dizin anahtar sözcüğü ile ilgili konular.|
+|Bir terimi makalesinin başlığı|`title:`|`title:binaryreader`|Kendi başlıklarında "binaryreader" içeren konulardır.|
+|Bir kod örneği bir terimi|`code:`|`code:readdouble`|Bir kod örneğinde "readdouble" içeren konulardır.|
+|Bir terimi belirli bir programlama dili örneği|`code:vb:`|`code:vb:string`|Visual Basic kod örneğinde "dize" içeren konulardır.|
+|Belirli bir dizin anahtar sözcüğüyle ilişkili olan bir makale|`keyword:`|`keyword:readbyte`|"Readbyte" dizin anahtar sözcüğü ile ilgili konular.|
 
 > [!IMPORTANT]
-> Bunları tanıyabilmesi için Gelişmiş arama işleçleri son iki nokta üst üste ve iki nokta üst üste arama motoru için önce boşluk olmaması ile girmeniz gerekir.
+> Son iki nokta üst üste ve arama motoru için iki noktadan önce boşluk olmaması Gelişmiş arama işleçleri tanıması için girmeniz gerekir.
 
 ### <a name="programming-languages-for-code-examples"></a>Kod örnekleri için programlama dilleri
 
-Kullanabileceğiniz `code:` çeşitli programlama dillerini hiçbirini hakkında içeriği bulmak için işleci. Belirli bir programlama dili için örnekler döndürmek için aşağıdaki programlama dili değerlerden birini kullanın:
+Kullanabileceğiniz `code:` çeşitli programlama dillerini ilgili içeriği bulmak için işleci. Belirli bir programlama dili için örnekler döndürmek için programlama dili aşağıdaki değerlerden birini kullanın:
 
-|Programlama dili|Arama işleci sözdizimi|
-|--------------------|---------|
+|Programlama dili|Arama işleci söz dizimi|
+| - |---------|
 |Visual Basic|`code:vb`<br/>`code:visualbasic`|
 |C#|`code:c#`<br/>`code:csharp`|
 |C++|`code:cpp`<br/>`code:c++`<br/>`code:cplusplus`|
@@ -66,7 +66,7 @@ Kullanabileceğiniz `code:` çeşitli programlama dillerini hiçbirini hakkında
 |XAML|`code:xaml`|
 
 > [!NOTE]
-> `code:` İşleci yalnızca genel kodu olarak işaretlenmiş içerik aksine bir programlama dili etiketi ile işaretlenmiş içerik bulur.
+> `code:` İşleci yalnızca genel kodu olarak işaretlenmiş içerik aksine bir programlama dili etiketi ile işaretlenmiş içeriği bulur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

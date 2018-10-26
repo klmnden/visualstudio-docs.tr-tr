@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bd227c94b81babab262a6a7210aabd68ca1e143e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 74ca7eb25aac26eb66628ea76be502e4a244a2bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239142"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923374"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild Hedef Çerçevesi ve Hedef Platformu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,25 +32,25 @@ ms.locfileid: "49239142"
   
  Şu anda, .NET Framework'ün aşağıdaki sürümler kullanılabilir duruma gelir:  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] (Visual Studio 2005'te dahil) 2.0  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] (Visual Studio 2005'te dahil) 2.0  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 3.0 (dahil [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 3.0 (dahil [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)])  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 3.5 (dahil [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 3.5 (dahil [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)])  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4 (Visual Studio 2010'da dahildir)  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4 (Visual Studio 2010'da dahildir)  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5 (dahil [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5 (dahil [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)])  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.1 (dahil [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.1 (dahil [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)])  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.2  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.2  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.6 (dahil [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.6 (dahil [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)])  
   
- .NET Framework sürümleri her başvurmak kullanılabilir hale derlemeler listesi içinde birbirinden farklı. Örneğin, projeniz .NET Framework sürüm 3.0 hedefleyen sürece veya yukarıda Windows Presentation Foundation (WPF) uygulamaları oluşturamaz.  
+  .NET Framework sürümleri her başvurmak kullanılabilir hale derlemeler listesi içinde birbirinden farklı. Örneğin, projeniz .NET Framework sürüm 3.0 hedefleyen sürece veya yukarıda Windows Presentation Foundation (WPF) uygulamaları oluşturamaz.  
   
- Hedef Framework'ü belirtilen `TargetFrameworkVersion` proje dosyasındaki özellik. Visual Studio tümleşik geliştirme ortamında (IDE) proje özellik sayfalarını kullanarak bir proje için hedef çerçeveyi değiştirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: .NET Framework sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Kullanılabilir değerler için `TargetFrameworkVersion` olan `v2.0`, `v3.0`, `v3.5`, `v4.0`, `v4.5`, `v4.5.1`, `v4.5.2`, ve `v4.6`.  
+  Hedef Framework'ü belirtilen `TargetFrameworkVersion` proje dosyasındaki özellik. Visual Studio tümleşik geliştirme ortamında (IDE) proje özellik sayfalarını kullanarak bir proje için hedef çerçeveyi değiştirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: .NET Framework sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Kullanılabilir değerler için `TargetFrameworkVersion` olan `v2.0`, `v3.0`, `v3.5`, `v4.0`, `v4.5`, `v4.5.1`, `v4.5.2`, ve `v4.6`.  
   
 ```  
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>  
@@ -68,11 +68,11 @@ ms.locfileid: "49239142"
 ## <a name="target-platform"></a>Hedef Platform  
  A *platform* , belirli bir çalışma zamanı ortamı tanımlayan donanım ve yazılım birleşimidir. Örneğin,  
   
--   `x86` Intel 80 x 86 işlemcisi ya da eşdeğerine çalışan 32 bit Windows işletim sistemi belirtir.  
+- `x86` Intel 80 x 86 işlemcisi ya da eşdeğerine çalışan 32 bit Windows işletim sistemi belirtir.  
   
--   `Xbox` Xbox 360'ı Microsoft Platformu belirtir.  
+- `Xbox` Xbox 360'ı Microsoft Platformu belirtir.  
   
- A *hedef platform* projenizi çalıştırmak için oluşturulmuştur belirli platformudur. Hedef platform belirtilen `Platform` özelliğinde bir proje dosyası oluşturun. Hedef platform proje özelliği sayfalarından kullanarak değiştirebileceğiniz veya **Configuration Manager** IDE.  
+  A *hedef platform* projenizi çalıştırmak için oluşturulmuştur belirli platformudur. Hedef platform belirtilen `Platform` özelliğinde bir proje dosyası oluşturun. Hedef platform proje özelliği sayfalarından kullanarak değiştirebileceğiniz veya **Configuration Manager** IDE.  
   
 ```  
 <PropertyGroup>  

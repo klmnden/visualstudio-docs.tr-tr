@@ -16,39 +16,39 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bd8eff41b0e76816114e9c634f5ad61b6db58baf
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 810f65cbb021845c4fa659cd785e83e8c979376d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676848"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888677"
 ---
 # <a name="how-to-programmatically-extend-ranges-in-documents"></a>Nasıl yapılır: belgelerde aralıkları program aracılığıyla genişletme
   Tanımladıktan sonra bir <xref:Microsoft.Office.Interop.Word.Range> değiştirmeniz, başlangıç ve bitiş noktalarını kullanarak bir Microsoft Office Word belgesinde nesne <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> ve <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> yöntemleri. <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> Ve <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> yöntemleri aynı iki bağımsız değişkeni alır *birim* ve *sayısı*. *Sayısı* değişkendir taşımak için birim sayısını ve *birim* bağımsız değişkeni, aşağıdakilerden biri olabilir <xref:Microsoft.Office.Interop.Word.WdUnits> değerleri:  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdCharacter>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdCharacter>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdWord>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdWord>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdSentence>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdSentence>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdParagraph>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdParagraph>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdSection>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdSection>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdStory>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdStory>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdCell>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdCell>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdColumn>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdColumn>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdRow>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdRow>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdTable>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdTable>  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- Aşağıdaki örnek, bir yedi karakter aralığı tanımlar. Özgün konum başlattığınızda ardından yedi aralığın karakter başlangıç konumunu taşır. Aralığın bitiş konumu da yedi karakterini başlangıç konumundan sonra olduğundan, sonuç sıfır karakterden oluşan bir aralıktır. Kod, ardından geçerli bitiş konumu sonra bitiş konumu yedi karakterini taşır.  
+  Aşağıdaki örnek, bir yedi karakter aralığı tanımlar. Özgün konum başlattığınızda ardından yedi aralığın karakter başlangıç konumunu taşır. Aralığın bitiş konumu da yedi karakterini başlangıç konumundan sonra olduğundan, sonuç sıfır karakterden oluşan bir aralıktır. Kod, ardından geçerli bitiş konumu sonra bitiş konumu yedi karakterini taşır.  
   
 ## <a name="to-extend-a-range"></a>Bir aralığı genişletmek için  
   

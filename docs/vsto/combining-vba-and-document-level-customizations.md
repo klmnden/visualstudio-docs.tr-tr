@@ -27,12 +27,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c61e155cd1dc70a747c6161de3aeb0fd57752816
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2243a3e03ed84325523f62d77ae3cc6d20f83bbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676869"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878082"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>VBA ve belge düzeyi özelleştirmelerini birleştirme
   Visual Basic for Applications (VBA) kodu Microsoft Office Word veya Microsoft Office Excel için belge düzeyi özelleştirmesinde parçası olan bir belgeyi kullanabilirsiniz. Özelleştirme bütünleştirilmiş koddan belgedeki VBA kodu çağırabilir veya özelleştirme derlemede kod çağırmak için belgedeki VBA kodu etkinleştirmek için projenizi yapılandırabilirsiniz.  
@@ -47,17 +47,17 @@ ms.locfileid: "35676869"
 ## <a name="call-vba-code-from-the-customization-assembly"></a>Özelleştirme bütünleştirilmiş koddan VBA kodu çağırma  
  Word belgelerinde makroları çağırabilir ve Excel çalışma kitaplarını makrolar ve İşlevler çağırabilir. Bunu yapmak için aşağıdaki yöntemlerden birini kullanın:  
   
--   Sözcük için arama <xref:Microsoft.Office.Interop.Word._Application.Run%2A>yöntemi <xref:Microsoft.Office.Interop.Word.Application> sınıfı.  
+- Sözcük için arama <xref:Microsoft.Office.Interop.Word._Application.Run%2A>yöntemi <xref:Microsoft.Office.Interop.Word.Application> sınıfı.  
   
--   Excel için çağrı <xref:Microsoft.Office.Interop.Excel._Application.Run%2A> yöntemi <xref:Microsoft.Office.Interop.Excel.Application> sınıfı.  
+- Excel için çağrı <xref:Microsoft.Office.Interop.Excel._Application.Run%2A> yöntemi <xref:Microsoft.Office.Interop.Excel.Application> sınıfı.  
   
- Her bir yöntemin ilk parametre makro veya çağırmak istediğiniz işlevin adını tanımlar ve diğer isteğe bağlı parametreler makrosu veya işleve geçirilecek parametreler belirtin. İlk parametre, Word ve Excel için farklı biçimlerde olabilir:  
+  Her bir yöntemin ilk parametre makro veya çağırmak istediğiniz işlevin adını tanımlar ve diğer isteğe bağlı parametreler makrosu veya işleve geçirilecek parametreler belirtin. İlk parametre, Word ve Excel için farklı biçimlerde olabilir:  
   
--   Word için ilk parametre şablonunu, modül ve makro adı herhangi bir birleşimi olabilir bir dizedir. Belge adı belirtirseniz, kodunuzu yalnızca makroları geçerli bağlamla ilgili belgelerde çalıştırabilirsiniz; herhangi bir belgedeki yalnızca hiçbir makrosu.  
+- Word için ilk parametre şablonunu, modül ve makro adı herhangi bir birleşimi olabilir bir dizedir. Belge adı belirtirseniz, kodunuzu yalnızca makroları geçerli bağlamla ilgili belgelerde çalıştırabilirsiniz; herhangi bir belgedeki yalnızca hiçbir makrosu.  
   
--   Excel için ilk parametre makro adını belirten bir dize olabilir bir <xref:Microsoft.Office.Interop.Excel.Range> işlevi olduğu veya bir kayıt kimliği için kayıtlı bir DLL (XLL) işlev gösterir. Bir dize geçirirseniz, dize etkin sayfa bağlamında değerlendirilir.  
+- Excel için ilk parametre makro adını belirten bir dize olabilir bir <xref:Microsoft.Office.Interop.Excel.Range> işlevi olduğu veya bir kayıt kimliği için kayıtlı bir DLL (XLL) işlev gösterir. Bir dize geçirirseniz, dize etkin sayfa bağlamında değerlendirilir.  
   
- Aşağıdaki kod örneğinde adlı bir makro çağrısı gösterilmiştir `MyMacro` bir Excel için belge düzeyi projesi. Bu örnek olduğunu varsayar `MyMacro` tanımlanan `Sheet1`.  
+  Aşağıdaki kod örneğinde adlı bir makro çağrısı gösterilmiştir `MyMacro` bir Excel için belge düzeyi projesi. Bu örnek olduğunu varsayar `MyMacro` tanımlanan `Sheet1`.  
   
 ```vb  
 Globals.Sheet1.Application.Run("MyMacro")  
@@ -77,11 +77,11 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 ## <a name="call-code-in-document-level-customizations-from-vba"></a>Belge düzeyi özelleştirmelerdeki VBA'dan Kod Çağırma  
  Visual Basic for Applications (VBA) kod belgedeki özelleştirme derlemede kod çağırabilmek Word veya Excel için belge düzeyi projesi yapılandırabilirsiniz. Aşağıdaki senaryolarda kullanışlıdır:  
   
--   Belge düzeyi özelleştirmesinde aynı belge ile ilişkilendirilen özellikleri kullanarak mevcut bir belgedeki VBA kodunu genişletme istiyorsunuz.  
+- Belge düzeyi özelleştirmesinde aynı belge ile ilişkilendirilen özellikleri kullanarak mevcut bir belgedeki VBA kodunu genişletme istiyorsunuz.  
   
--   Geliştirme Hizmetleri belge düzeyi özelleştirmesinde kullanılabilir son kullanıcılar, hizmetler, belgedeki VBA kodu yazarak erişebilir yapmak istiyorsunuz.  
+- Geliştirme Hizmetleri belge düzeyi özelleştirmesinde kullanılabilir son kullanıcılar, hizmetler, belgedeki VBA kodu yazarak erişebilir yapmak istiyorsunuz.  
   
- Visual Studio'da Office geliştirme araçları, VSTO eklentileri için benzer bir özellik sağlar. Bir VSTO eklentisi geliştiriyorsanız, kod içinde VSTO eklenti diğer Microsoft Office Çözümlerinden çağırabilirsiniz. Daha fazla bilgi için [çağrı kod VSTO eklentileri diğer Office Çözümlerinden](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
+  Visual Studio'da Office geliştirme araçları, VSTO eklentileri için benzer bir özellik sağlar. Bir VSTO eklentisi geliştiriyorsanız, kod içinde VSTO eklenti diğer Microsoft Office Çözümlerinden çağırabilirsiniz. Daha fazla bilgi için [çağrı kod VSTO eklentileri diğer Office Çözümlerinden](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
   
 > [!NOTE]  
 >  Bu özellik Word şablonu projelerinde kullanılamaz. Yalnızca Word belgesi, Excel çalışma kitabı veya Excel şablon projelerinde kullanılabilir.  
@@ -106,21 +106,21 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 ## <a name="enable-vba-code-to-call-into-the-customization-assembly"></a>VBA kodunu özelleştirme bütünleştirilmiş kod içine çağırmak için etkinleştirme  
  Belgedeki VBA kodu özelleştirme derlemeye üyeleri getirebilir iki farklı yolu vardır:  
   
--   Bir konak öğesi sınıfında üyeleri ortaya koyabileceğiniz bir [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] VBA projesi. Bunu yapmak için ayarlanmış **EnableVbaCallers** konak öğesi özelliği **True** içinde **özellikleri** penceresi sırasında (diğer bir deyişle, belge, çalışma sayfası veya çalışma kitabı) konak öğesi Tasarımcıda açık. Visual Studio otomatik olarak tüm sınıf üyelerini çağırmak VBA kodunu etkinleştirmek için gerekli işlemleri gerçekleştirir.  
+- Bir konak öğesi sınıfında üyeleri ortaya koyabileceğiniz bir [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] VBA projesi. Bunu yapmak için ayarlanmış **EnableVbaCallers** konak öğesi özelliği **True** içinde **özellikleri** penceresi sırasında (diğer bir deyişle, belge, çalışma sayfası veya çalışma kitabı) konak öğesi Tasarımcıda açık. Visual Studio otomatik olarak tüm sınıf üyelerini çağırmak VBA kodunu etkinleştirmek için gerekli işlemleri gerçekleştirir.  
   
--   Visual C# projesinde herhangi bir genel sınıf üyeleri getirebilir ya da konak olmayan üyeler sınıfta öğesi bir [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] VBA projesi. Bu seçenek, hangi sınıflar için VBA kullanıma seçme özgürlüğü sağlar, ancak ayrıca daha fazla el ile yapılacak adımlar gerektirir.  
+- Visual C# projesinde herhangi bir genel sınıf üyeleri getirebilir ya da konak olmayan üyeler sınıfta öğesi bir [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] VBA projesi. Bu seçenek, hangi sınıflar için VBA kullanıma seçme özgürlüğü sağlar, ancak ayrıca daha fazla el ile yapılacak adımlar gerektirir.  
   
-     Bunu yapmak için aşağıdaki temel adımları gerçekleştirmeniz gerekir:  
+   Bunu yapmak için aşağıdaki temel adımları gerçekleştirmeniz gerekir:  
   
-    1.  Vystavit sınıfı  
+  1.  Vystavit sınıfı  
   
-    2.  Geçersiz kılma **GetAutomationObject** gösterme sınıfının bir örneğini dönmek için projenizdeki ana bilgisayar öğesi sınıfının yöntemi.  
+  2.  Geçersiz kılma **GetAutomationObject** gösterme sınıfının bir örneğini dönmek için projenizdeki ana bilgisayar öğesi sınıfının yöntemi.  
   
-    3.  Ayarlama **ReferenceAssemblyFromVbaProject** projede herhangi bir ana bilgisayar öğesi sınıf özelliği **True**. Bu özelleştirme bütünleştirilmiş kodun tür kitaplığını derlemeye gömer ve belgedeki VBA projesine tür kitaplığına bir başvuru ekler.  
+  3.  Ayarlama **ReferenceAssemblyFromVbaProject** projede herhangi bir ana bilgisayar öğesi sınıf özelliği **True**. Bu özelleştirme bütünleştirilmiş kodun tür kitaplığını derlemeye gömer ve belgedeki VBA projesine tür kitaplığına bir başvuru ekler.  
   
- Ayrıntılı yönergeler için bkz. [nasıl yapılır: Visual Basic projesinde kodu VBA kullanımına sunma](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) ve [nasıl yapılır: kodu Visual c VBA kullanımına sunma&#35; proje](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
+  Ayrıntılı yönergeler için bkz. [nasıl yapılır: Visual Basic projesinde kodu VBA kullanımına sunma](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) ve [nasıl yapılır: kodu Visual c VBA kullanımına sunma&#35; proje](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
   
- **EnableVbaCallers** ve **ReferenceAssemblyFromVbaProject** özellikleri yalnızca **özellikleri** penceresi; tasarım zamanında çalışma zamanında kullanılamaz . Özelliklerini görüntülemek için bir ana öğe Tasarımcısı'nı açın [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Visual Studio bu özellikleri ayarladığınızda gerçekleştiren belirli görevler hakkında daha fazla bilgi için bkz. [konak öğesi özellikleri tarafından gerçekleştirilen görevler](#PropertyTasks).  
+  **EnableVbaCallers** ve **ReferenceAssemblyFromVbaProject** özellikleri yalnızca **özellikleri** penceresi; tasarım zamanında çalışma zamanında kullanılamaz . Özelliklerini görüntülemek için bir ana öğe Tasarımcısı'nı açın [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Visual Studio bu özellikleri ayarladığınızda gerçekleştiren belirli görevler hakkında daha fazla bilgi için bkz. [konak öğesi özellikleri tarafından gerçekleştirilen görevler](#PropertyTasks).  
   
 > [!NOTE]  
 >  Çalışma kitabı veya belge VBA kodu zaten içermiyor veya belgedeki VBA kodu çalıştırmak için güvenilir değilse, ayarlarken bir hata iletisi alırsınız **EnableVbaCallers** veya **ReferenceAssemblyFromVbaProject**  özelliğini **True**. Bu durum, Visual Studio, bu durumda belgedeki VBA projesine değiştirilemiyor çünkü.  
@@ -128,11 +128,11 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 ## <a name="use-members-in-vba-code-to-call-into-the-customization-assembly"></a>Üyelerinin VBA kodu özelleştirme bütünleştirilmiş kod içine çağırmak için kullanın.  
  VBA kodunu özelleştirme bütünleştirilmiş kod içine çağırmak için etkinleştirmek için projenizi yapılandırdıktan sonra Visual Studio aşağıdaki üyeleri belgedeki VBA projesine ekler:  
   
--   Tüm projeler için Visual Studio adlı bir genel yöntem ekler `GetManagedClass`.  
+- Tüm projeler için Visual Studio adlı bir genel yöntem ekler `GetManagedClass`.  
   
--   İçin [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] bir konak üyeleri ortaya projeleri öğe sınıfı kullanarak **EnableVbaCallers** özelliği, Visual Studio ayrıca adlı bir özellik ekler `CallVSTOAssembly` için `ThisDocument`, `ThisWorkbook`, `Sheet1`, `Sheet2`, veya `Sheet3` VBA projesinde modülü.  
+- İçin [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] bir konak üyeleri ortaya projeleri öğe sınıfı kullanarak **EnableVbaCallers** özelliği, Visual Studio ayrıca adlı bir özellik ekler `CallVSTOAssembly` için `ThisDocument`, `ThisWorkbook`, `Sheet1`, `Sheet2`, veya `Sheet3` VBA projesinde modülü.  
   
- Kullanabileceğiniz `CallVSTOAssembly` özelliği veya `GetManagedClass` genel projesinde kodu VBA maruz sınıf üyelerine erişmek için yöntemi.  
+  Kullanabileceğiniz `CallVSTOAssembly` özelliği veya `GetManagedClass` genel projesinde kodu VBA maruz sınıf üyelerine erişmek için yöntemi.  
   
 > [!NOTE]  
 >  Geliştirdiğinizde ve dağıttığınızda, çözümünüzün vardır belge birkaç farklı kopyalarını burada VBA kodu ekleyebilirsiniz. Daha fazla bilgi için [kod belgeye VBA ekleme yönergeleri](#Guidelines).  
@@ -210,37 +210,37 @@ GetManagedClass(pdispInteropObject Object) As Object
 ### <a name="enablevbacallers"></a>EnableVbaCallers  
  Ayarladığınızda **EnableVbaCallers** konak öğesi özelliği **True** Visual Basic projesinde, Visual Studio aşağıdaki görevleri gerçekleştirir:  
   
-1.  Ekler <xref:Microsoft.VisualBasic.ComClassAttribute> ve <xref:System.Runtime.InteropServices.ComVisibleAttribute> öznitelikleri için konak öğesi sınıfı.  
+1. Ekler <xref:Microsoft.VisualBasic.ComClassAttribute> ve <xref:System.Runtime.InteropServices.ComVisibleAttribute> öznitelikleri için konak öğesi sınıfı.  
   
-2.  Onu geçersiz kılar **GetAutomationObject** konak öğesi sınıfının yöntemi.  
+2. Onu geçersiz kılar **GetAutomationObject** konak öğesi sınıfının yöntemi.  
   
-3.  Bu ayarlar **ReferenceAssemblyFromVbaProject** konak öğesi özelliği **True**.  
+3. Bu ayarlar **ReferenceAssemblyFromVbaProject** konak öğesi özelliği **True**.  
   
- Ayarladığınızda **EnableVbaCallers** özelliğini yeniden **False**, Visual Studio aşağıdaki görevleri gerçekleştirir:  
+   Ayarladığınızda **EnableVbaCallers** özelliğini yeniden **False**, Visual Studio aşağıdaki görevleri gerçekleştirir:  
   
-1.  Kaldırır <xref:Microsoft.VisualBasic.ComClassAttribute> ve <xref:System.Runtime.InteropServices.ComVisibleAttribute> özniteliklerini `ThisDocument` sınıfı.  
+4. Kaldırır <xref:Microsoft.VisualBasic.ComClassAttribute> ve <xref:System.Runtime.InteropServices.ComVisibleAttribute> özniteliklerini `ThisDocument` sınıfı.  
   
-2.  Kaldırır **GetAutomationObject** konak öğesi sınıfından yöntemi.  
+5. Kaldırır **GetAutomationObject** konak öğesi sınıfından yöntemi.  
   
-    > [!NOTE]  
-    >  Visual Studio otomatik olarak ayarlamazsa **ReferenceAssemblyFromVbaProject** özelliğini yeniden **False**. Bu özelliği ayarlamak **False** kullanarak el ile **özellikleri** penceresi.  
+   > [!NOTE]  
+   >  Visual Studio otomatik olarak ayarlamazsa **ReferenceAssemblyFromVbaProject** özelliğini yeniden **False**. Bu özelliği ayarlamak **False** kullanarak el ile **özellikleri** penceresi.  
   
 ### <a name="referenceassemblyfromvbaproject"></a>ReferenceAssemblyFromVbaProject  
  Zaman **ReferenceAssemblyFromVbaProject** özelliği herhangi bir Visual Basic veya Visual C# projesinde ana öğesinin **True**, Visual Studio aşağıdaki görevleri gerçekleştirir:  
   
-1.  Bu özelleştirme derlemesi için bir tür kitaplığı üretir ve tür kitaplığını derlemeye gömer.  
+1. Bu özelleştirme derlemesi için bir tür kitaplığı üretir ve tür kitaplığını derlemeye gömer.  
   
-2.  Belgedeki VBA projesinde aşağıdaki tür kitaplıkları için bir başvuru ekler:  
+2. Belgedeki VBA projesinde aşağıdaki tür kitaplıkları için bir başvuru ekler:  
   
-    -   Derlemenizi özelleştirme için tür kitaplığı.  
+   -   Derlemenizi özelleştirme için tür kitaplığı.  
   
-    -   Office yürütme altyapısı 9.0 tür kitaplığı için Microsoft Visual Studio Araçları. Bu tür kitaplığı dahil [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
+   -   Office yürütme altyapısı 9.0 tür kitaplığı için Microsoft Visual Studio Araçları. Bu tür kitaplığı dahil [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
   
- Zaman **ReferenceAssemblyFromVbaProject** ayarlanırsa geri **False**, Visual Studio aşağıdaki görevleri gerçekleştirir:  
+   Zaman **ReferenceAssemblyFromVbaProject** ayarlanırsa geri **False**, Visual Studio aşağıdaki görevleri gerçekleştirir:  
   
-1.  Belgedeki VBA projesine tür kitaplığı başvurularını kaldırır.  
+3. Belgedeki VBA projesine tür kitaplığı başvurularını kaldırır.  
   
-2.  Gömülü tür kitaplığını bütünleştirilmiş koddan kaldırır.  
+4. Gömülü tür kitaplığını bütünleştirilmiş koddan kaldırır.  
   
 ## <a name="troubleshoot"></a>Sorun giderme
  Aşağıdaki tabloda, bazı yaygın hatalar ve hataları düzeltmek için önerileri listeler.  

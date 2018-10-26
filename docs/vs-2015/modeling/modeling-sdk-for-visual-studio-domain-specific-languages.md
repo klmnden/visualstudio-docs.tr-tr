@@ -17,12 +17,12 @@ caps.latest.revision: 79
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 384592f89df9537300c11cdf3e8cea622d8c9c63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1a294c9c1eaeb0c59f8c2e9c58c75a161c0d61e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224737"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883334"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Visual Studio için Modelleme SDK'sı - Etki Alanına Özgü Diller
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ ms.locfileid: "49224737"
   
  MSDK, etki alanına özgü dil (DSL) biçiminde bir modeli hızlı bir şekilde geliştirmenize olanak sağlar. Graf gösterimli bir şema veya soyut sözdizimi tanımlamak için özelleştirilmiş bir düzenleyici kullanarak başlarsanız. Bu tanımından, VMSDK şunları oluşturur:  
   
--   İşlem tabanlı bir depoda çalışan, türü kesin belirlenmiş bir API ile model uygulaması.  
+- İşlem tabanlı bir depoda çalışan, türü kesin belirlenmiş bir API ile model uygulaması.  
   
--   Ağaç tabanlı bir gezgin.  
+- Ağaç tabanlı bir gezgin.  
   
--   Kullanıcıların tanımladığınız modeli veya bölümlerini görüntüleyebildiği bir grafik düzenleyici.  
+- Kullanıcıların tanımladığınız modeli veya bölümlerini görüntüleyebildiği bir grafik düzenleyici.  
   
--   Modellerinizi okunabilir XML biçiminde kaydeden serileştirme yöntemleri.  
+- Modellerinizi okunabilir XML biçiminde kaydeden serileştirme yöntemleri.  
   
--   Metin şablonu kullanarak program kodu ve diğer yapıları üretmek için olanaklar.  
+- Metin şablonu kullanarak program kodu ve diğer yapıları üretmek için olanaklar.  
   
- Bu özelliklerin tümünü özelleştirebilir ve genişletebilirsiniz. Uzantılarınız, DSL tanımını hala güncelleştirebileceğiniz ve uzantılarınızı kaybetmeden özellikleri yeniden üretebileceğiniz bir şekilde tümleştirilir.  
+  Bu özelliklerin tümünü özelleştirebilir ve genişletebilirsiniz. Uzantılarınız, DSL tanımını hala güncelleştirebileceğiniz ve uzantılarınızı kaybetmeden özellikleri yeniden üretebileceğiniz bir şekilde tümleştirilir.  
   
 ## <a name="samples-and-the-latest-information"></a>Örnekler ve En Son Bilgiler  
  [Modelleme Visual Studio 2015 için SDK'sını indirin](http://www.microsoft.com/download/details.aspx?id=48148)  

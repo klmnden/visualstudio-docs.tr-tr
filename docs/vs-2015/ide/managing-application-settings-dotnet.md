@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb2623c9122b987d8e0fe781b62127cd65bde0dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac4f670b813970d027925b681a2e3211e1898e1a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289516"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866135"
 ---
 # <a name="managing-application-settings-net"></a>Uygulama Ayarlarını Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ Uygulama ayarları, uygulama bilgilerini dinamik olarak depolamanıza olanak sa�
   
  Uygulama ayarları kapsamına göre iki tür vardır:  
   
--   Uygulama kapsamlı ayarlar, bir Web hizmeti veya veritabanı bağlantı dizesi için URL gibi bilgilere için kullanılabilir. Bu değerler uygulamayla ilişkilendirilir. Bu nedenle, kullanıcılar bunları çalışma zamanında değiştiremez.  
+- Uygulama kapsamlı ayarlar, bir Web hizmeti veya veritabanı bağlantı dizesi için URL gibi bilgilere için kullanılabilir. Bu değerler uygulamayla ilişkilendirilir. Bu nedenle, kullanıcılar bunları çalışma zamanında değiştiremez.  
   
--   Kullanıcı kapsamlı ayarları, son konum bir form veya bir yazı tipi tercihini kalıcı yapma gibi bilgileri için kullanılabilir. Kullanıcılar, çalışma zamanında bu değerleri değiştirebilir.  
+- Kullanıcı kapsamlı ayarları, son konum bir form veya bir yazı tipi tercihini kalıcı yapma gibi bilgileri için kullanılabilir. Kullanıcılar, çalışma zamanında bu değerleri değiştirebilir.  
   
- Bir ayarın türünü kullanarak değiştirebileceğiniz **kapsam** özelliği.  
+  Bir ayarın türünü kullanarak değiştirebileceğiniz **kapsam** özelliği.  
   
- Proje sistemi uygulama ayarlarını iki XML dosyasında depolar: ilk uygulama ayarını oluşturduğunuzda tasarım zamanında oluşturulan bir app.config dosyası ve uygulamayı çalıştıran kullanıcının herhangi bir kullanıcı ayarı değerini değiştiğinde çalışma zamanında oluşturulan bir user.config dosyası. Kullanıcı ayarlarındaki değişikliklerin, uygulama özellikle Bunu yapmak için bir yöntem çağırmadığı sürece diske yazılmadığına dikkat edin.  
+  Proje sistemi uygulama ayarlarını iki XML dosyasında depolar: ilk uygulama ayarını oluşturduğunuzda tasarım zamanında oluşturulan bir app.config dosyası ve uygulamayı çalıştıran kullanıcının herhangi bir kullanıcı ayarı değerini değiştiğinde çalışma zamanında oluşturulan bir user.config dosyası. Kullanıcı ayarlarındaki değişikliklerin, uygulama özellikle Bunu yapmak için bir yöntem çağırmadığı sürece diske yazılmadığına dikkat edin.  
   
 ## <a name="creating-application-settings-at-design-time"></a>Tasarım zamanında uygulama ayarları oluşturma  
  Tasarım zamanında uygulama ayarları iki şekilde oluşturabilirsiniz: kullanarak **ayarları** sayfasının **Proje Tasarımcısı**, kullanarak veya **özellikleri** penceresi için bir form veya Denetim ayarı bir özelliğe bağlayabileceğiniz olanak tanır.  

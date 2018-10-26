@@ -26,12 +26,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: af1eb1b42281e001bb56f9556c2b0eb21d859758
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4529b44014b209bdef1fc919ac413b61d77407c1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178262"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902145"
 ---
 # <a name="find-in-files"></a>Dosyalarda Bul
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Find dosyalar ** belirtilen bir dosya kümesi aramanıza olanak sağlar. Eşleş
   
 ### <a name="to-display-find-in-files"></a>Dosyalarda Bul görüntülemek için  
   
-1.  Menü çubuğunda, **Düzenle**, **Bul ve Değiştir**.  
+1. Menü çubuğunda, **Düzenle**, **Bul ve Değiştir**.  
   
-2.  Seçin **dosyalarda Bul**.  
+2. Seçin **dosyalarda Bul**.  
   
- Bulma işlemi iptal etmek için CTRL + BREAK tuşlarına basın.  
+   Bulma işlemi iptal etmek için CTRL + BREAK tuşlarına basın.  
   
 > [!NOTE]
 >  Bul ve Değiştir araç dizinlerle aramaz `Hidden` veya `System` öznitelik kümesi.  

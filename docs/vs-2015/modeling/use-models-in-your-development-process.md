@@ -16,12 +16,12 @@ caps.latest.revision: 31
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 94185303eeb1d9efef32adf814b23d8cb21360b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e731803e58ac641034699719a9fb0cbfe3cb6f13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286006"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872290"
 ---
 # <a name="use-models-in-your-development-process"></a>Geliştirme sürecinizde modelleri kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ Visual Studio'da anlamanıza ve sistem, uygulama veya bileşen değiştirme yard
 ## <a name="how-to-use-models"></a>Modelleri kullanma  
  Modelleri, çeşitli şekillerde yardımcı olabilir:  
   
--   Modelleme diyagramları çizmek gereksinimleri, mimari ve üst düzey tasarım kavramları açıklamak yardımcı olur. Daha fazla bilgi için [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).  
+- Modelleme diyagramları çizmek gereksinimleri, mimari ve üst düzey tasarım kavramları açıklamak yardımcı olur. Daha fazla bilgi için [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).  
   
--   Modellerle çalışma gereksinimleri tutarsızlıklar kullanıma yardımcı olabilir.  
+- Modellerle çalışma gereksinimleri tutarsızlıklar kullanıma yardımcı olabilir.  
   
--   Modelleri ile iletişim kurulurken önemli kavramlar iletişim kurmasına yardımcı değerinden muğlak doğal dil. Daha fazla bilgi için [uygulama Mimarinizi modelleme](../modeling/model-your-app-s-architecture.md).  
+- Modelleri ile iletişim kurulurken önemli kavramlar iletişim kurmasına yardımcı değerinden muğlak doğal dil. Daha fazla bilgi için [uygulama Mimarinizi modelleme](../modeling/model-your-app-s-architecture.md).  
   
--   Modelleri, kod veya veritabanı şemalarını veya belgeler gibi diğer yapıları üretmek için bazen kullanabilirsiniz. Örneğin, modelleme bileşenlerini [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] modelden oluşturulur.  Daha fazla bilgi için [oluşturur ve uygulamanızı modeller aracılığıyla yapılandırma](../modeling/generate-and-configure-your-app-from-models.md).  
+- Modelleri, kod veya veritabanı şemalarını veya belgeler gibi diğer yapıları üretmek için bazen kullanabilirsiniz. Örneğin, modelleme bileşenlerini [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] modelden oluşturulur.  Daha fazla bilgi için [oluşturur ve uygulamanızı modeller aracılığıyla yapılandırma](../modeling/generate-and-configure-your-app-from-models.md).  
   
- Çok çeşitli işlemlerden aşırı yüksek Çevik seremoni modellerinde kullanabilirsiniz.  
+  Çok çeşitli işlemlerden aşırı yüksek Çevik seremoni modellerinde kullanabilirsiniz.  
   
 ### <a name="use-models-to-reduce-ambiguity"></a>Belirsizliği azaltmak için modelleri kullanır.  
  Dil modelleme, doğal dil daha az belirsiz ve genellikle yazılım geliştirme sırasında gerekli fikirleri ifade etmek için tasarlanmıştır.  

@@ -16,12 +16,12 @@ ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d46bbe3c9898fae2974b482e1ead607ea486fef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eacde73ded992eb72396cdb5f84dc01b145cf874
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252474"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949272"
 ---
 # <a name="command-design"></a>Komut Tasarımı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,15 +48,15 @@ Bir komut için bir VSPackage'ı eklediğinizde, görüntülenecek olduğu, kull
 ### <a name="command-organization"></a>Komut kuruluş  
  Ortam, grubu, öncelik ve menü komutları yerleştirir.  
   
--   Grupları mantıksal koleksiyonlarıdır ilgili komutlar, örneğin, **Kes**, **kopyalama**, ve **Yapıştır** komut grubu. Menülerde görünür komutları gruplarıdır.  
+- Grupları mantıksal koleksiyonlarıdır ilgili komutlar, örneğin, **Kes**, **kopyalama**, ve **Yapıştır** komut grubu. Menülerde görünür komutları gruplarıdır.  
   
--   Öncelik grubundaki tek tek komutlarla menüsünde görünme sırasını belirler.  
+- Öncelik grubundaki tek tek komutlarla menüsünde görünme sırasını belirler.  
   
--   Menü grupları için kapsayıcı görevi görür.  
+- Menü grupları için kapsayıcı görevi görür.  
   
- Ortamın bazı komutlar, grupları ve menüler önceden belirler. Daha fazla bilgi için [varsayılan komut, Grup ve araç çubuğu yerleştirme](../../extensibility/internals/default-command-group-and-toolbar-placement.md).  
+  Ortamın bazı komutlar, grupları ve menüler önceden belirler. Daha fazla bilgi için [varsayılan komut, Grup ve araç çubuğu yerleştirme](../../extensibility/internals/default-command-group-and-toolbar-placement.md).  
   
- Bir komutu bir birincil grubu olarak atanabilir. Ana menü yapısı ve komut konumunu birincil grup denetimleri **Özelleştir** iletişim kutusu. Bir komutu birden çok grupta yer görünebilir; Örneğin, bir komut ana menüsündeki kısayol menüsünde ve araç çubuğundaki olabilir. Daha fazla bilgi için [nasıl VSPackages Ekle kullanıcı arabirimi öğeleri](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
+  Bir komutu bir birincil grubu olarak atanabilir. Ana menü yapısı ve komut konumunu birincil grup denetimleri **Özelleştir** iletişim kutusu. Bir komutu birden çok grupta yer görünebilir; Örneğin, bir komut ana menüsündeki kısayol menüsünde ve araç çubuğundaki olabilir. Daha fazla bilgi için [nasıl VSPackages Ekle kullanıcı arabirimi öğeleri](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
   
 ### <a name="command-routing"></a>Komut Yönlendirme  
  Nesne örneklerinde metotları çağırma işleminin çağırma ve komutları Vspackage'lar için yönlendirme işlemi farklıdır.  

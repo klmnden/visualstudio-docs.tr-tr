@@ -19,12 +19,12 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e28a411ff5ef70cfd32e846edb0b70caa82c4764
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 15d8d4cfb1f3a9067d3fc18933a508ecf60794e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849053"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio yalıtılmış Kabuğu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,17 +44,17 @@ Visual Studio yalıtılmış Kabuğu yan yana çalıştırabileceğiniz tek baş
 ## <a name="working-with-the-isolated-shell"></a>Yalıtılmış Kabuk ile çalışma  
  Visual Studio yalıtılmış Kabuk uygulaması, Visual Studio services tam erişimi olduğundan ve özel özelleştirme ve markalama destekler. Yalıtılmış Kabuk uygulaması özelleştirebilirsiniz birkaç yolu vardır:  
   
--   VSPackages ve Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşen parçalarına yalnızca bunları başka bir Visual Studio Uzantısında kullandığınız gibi yalıtılmış Kabuk uygulaması genişletmek için kullanabilirsiniz. Daha fazla bilgi için [yalıtılmış Kabuğu genişletme](../extensibility/extending-the-isolated-shell.md).  
+- VSPackages ve Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşen parçalarına yalnızca bunları başka bir Visual Studio Uzantısında kullandığınız gibi yalıtılmış Kabuk uygulaması genişletmek için kullanabilirsiniz. Daha fazla bilgi için [yalıtılmış Kabuğu genişletme](../extensibility/extending-the-isolated-shell.md).  
   
--   Visual Studio özellikleri ve menü komut gruplarını kullanılabilir veya kullanılamaz hale getirmek için uygulamanın kullanıcı arabirimini (UI) projede .vsct dosyası güncelleştirin.  
+- Visual Studio özellikleri ve menü komut gruplarını kullanılabilir veya kullanılamaz hale getirmek için uygulamanın kullanıcı arabirimini (UI) projede .vsct dosyası güncelleştirin.  
   
--   Kaldırılacak **seçenekleri** sayfaları veya Visual Studio shell bileşenlerini uygulamadan güncelleştirme uygulamanın .pkgundef dosyası.  
+- Kaldırılacak **seçenekleri** sayfaları veya Visual Studio shell bileşenlerini uygulamadan güncelleştirme uygulamanın .pkgundef dosyası.  
   
--   Diğer yönleri görünümü veya kabuk davranışını değiştirmek için uygulamanın .pkgdef dosyası güncelleştirin.  
+- Diğer yönleri görünümü veya kabuk davranışını değiştirmek için uygulamanın .pkgdef dosyası güncelleştirin.  
   
--   Uygulama başlatıldığında Kabuk bazı yönlerini de belirtilebilir. Bunu yapmak için yapılan çağrıda appenvstub.dll başlangıç giriş noktası parametreleri güncelleştirin.  
+- Uygulama başlatıldığında Kabuk bazı yönlerini de belirtilebilir. Bunu yapmak için yapılan çağrıda appenvstub.dll başlangıç giriş noktası parametreleri güncelleştirin.  
   
- Özelleştirebileceğiniz farklı öğeler hakkında daha fazla bilgi için bkz. [yalıtılmış kabuğun öğeleri](../extensibility/elements-of-the-isolated-shell.md).  
+  Özelleştirebileceğiniz farklı öğeler hakkında daha fazla bilgi için bkz. [yalıtılmış kabuğun öğeleri](../extensibility/elements-of-the-isolated-shell.md).  
   
 ## <a name="standard-features-of-the-isolated-shell"></a>Yalıtılmış Kabuk standart özellikler  
  Aşağıdaki özellikleri, Visual Studio'nun tüm sürümleri için standarttır.  

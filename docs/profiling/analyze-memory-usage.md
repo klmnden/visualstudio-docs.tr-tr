@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 578d698a90ba231e58e78cadec20242da9906cca
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: d8971f26881e522c81f2c111098f09a94133072d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859581"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948921"
 ---
 # <a name="analyze-memory-usage"></a>Bellek kullanımını analiz etme
 Hata ayıklayıcıyla tümleştirilmiş kullanın **bellek kullanımı** Tanılama aracını bellek sızıntılarını ve verimsiz bellek kullanımını bulun. Bir veya daha fazla atmanız bellek kullanımı aracı sağlar *anlık görüntüleri* yönetilen ve yerel bellek yığın. .NET, ASP.NET, yerel veya karma mod (.NET ve yerel) uygulamaları, anlık toplayabilirsiniz.  
@@ -29,9 +29,9 @@ Windows 7 ve daha sonra hata ayıklayıcı olmadan profil oluşturma araçları 
   
 ## <a name="blogs-and-videos"></a>Bloglar ve videolar  
 
-|         |         |
+| | |
 |---------|---------|
-|  ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin")  |    [Bir video izleyin](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) bellek kullanımı ve Visual Studio 2017'de CPU kullanımını analiz etme gösteren tanılama araçlarını kullanma. |
+| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | [Bir video izleyin](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) bellek kullanımı ve Visual Studio 2017'de CPU kullanımını analiz etme gösteren tanılama araçlarını kullanma. |
 
  [Hata ayıklama sırasında CPU ve bellek çözümleme](https://blogs.msdn.microsoft.com/visualstudio/2016/02/15/analyze-cpu-memory-while-debugging/)  
   

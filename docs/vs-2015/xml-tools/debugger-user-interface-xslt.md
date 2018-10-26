@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f0117053e47ee9238ee225b9265865b34c6f2140
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 02ba962a3410b2e964e7653fcb6308b9209def44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300189"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891862"
 ---
 # <a name="debugger-user-interface-xslt"></a>Hata Ayıklayıcı Kullanıcı Arabirimi (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,13 +90,13 @@ Bu konu, hata ayıklayıcı pencereleri ve iletişim kutuları açıklar. Yalnı
   
  Aşağıdaki listede, XPath ifadesi değerlendirmesi üzerinde bazı kısıtlamaları açıklamaktadır.  
   
--   Yerleşik XPath işlevleri izin verilir.  
+- Yerleşik XPath işlevleri izin verilir.  
   
--   Yerleşik XSLT işlevleri gibi `document()`, `key()`ve benzeri izin verilmez.  
+- Yerleşik XSLT işlevleri gibi `document()`, `key()`ve benzeri izin verilmez.  
   
--   Kullanıcı tanımlı işlevlerde izin verilmez.  
+- Kullanıcı tanımlı işlevlerde izin verilmez.  
   
- Daha fazla bilgi için [nasıl yapılır: bir XPath ifadesini değerlendirme](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
+  Daha fazla bilgi için [nasıl yapılır: bir XPath ifadesini değerlendirme](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
   
 ## <a name="disassembly-window"></a>Ayrıştırma penceresi  
  Ayrıştırılmış kod penceresini XSLT derleyici tarafından oluşturulan bütünleştirilmiş kodu gösterir. Bu pencerede diğer Visual Studio çözümünü windows ile aynı şekilde kullanılabilir.  

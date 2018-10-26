@@ -13,31 +13,31 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20565c798e9c94cb40a39deb4a80f9a83d67e161
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 943b75c9c5f9c0c32ab02b5e73c07282728e0beb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174945"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864737"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>İzlenecek yol: LINQ tek tablolu devralma (O/R Tasarımcısı) kullanarak SQL sınıfları oluşturma
 [LINQ to SQL araçları Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md) ilişkisel sistemlerde genellikle uygulandığı şekilde tek tablolu devralmayı destekler. Bu kılavuzda sağlanan genel adımları sırasında genişletir [nasıl yapılır: O/R Tasarımcısı kullanarak devralmayı yapılandırma](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) konu ve devralma kullanımını göstermek için gerçek bazı veriler sağlar [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
 
  Bu kılavuz boyunca aşağıdaki görevleri gerçekleştirin:
 
--   Bir veritabanı tablosu oluşturun ve verilerini ekleyin.
+- Bir veritabanı tablosu oluşturun ve verilerini ekleyin.
 
--   Bir Windows Forms uygulaması oluşturun.
+- Bir Windows Forms uygulaması oluşturun.
 
--   Ekleme bir [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] bir projeye.
+- Ekleme bir [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] bir projeye.
 
--   Yeni varlık sınıfları oluşturun.
+- Yeni varlık sınıfları oluşturun.
 
--   Varlık sınıflarının devralma kullanmak için yapılandırın.
+- Varlık sınıflarının devralma kullanmak için yapılandırın.
 
--   Devralınan sınıf sorgulayın.
+- Devralınan sınıf sorgulayın.
 
--   Bir Windows formunda veri görüntüleme.
+- Bir Windows formunda veri görüntüleme.
 
 ## <a name="create-a-table-to-inherit-from"></a>Verileri devralmak için tablo oluşturma
  Devralma nasıl çalıştığını görmek için küçük bir oluşturma `Person` tablo, bir temel sınıf olarak kullanın ve ardından oluşturmak bir `Employee` devralan bir nesne.
@@ -191,6 +191,6 @@ ms.locfileid: "37174945"
 
 - [Visual Studio'da LINQ to SQL araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [İzlenecek yol:, (O R Designer) SQL sınıflarına LINQ oluşturma](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [Nasıl yapılır: güncelleştirme, ekleme ve silme (O/R Tasarımcısı) gerçekleştirmek için saklı yordamlar atama](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Nasıl yapılır: Güncelleştirme, ekleme ve silme işlemleri gerçekleştirmek için saklı yordamlar atama (O/R Tasarımcısı)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Nasıl yapılır: Visual Basic veya C# içinde nesne modeli oluşturma](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

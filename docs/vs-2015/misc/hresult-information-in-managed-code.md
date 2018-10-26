@@ -15,31 +15,31 @@ helpviewer_keywords:
 ms.assetid: 0795ee94-17a8-4327-bf57-27cd5e312a4c
 caps.latest.revision: 29
 manager: douge
-ms.openlocfilehash: b629f856bcdba13523c094b5d3fd32b6848ec23f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 08d14f1155838e53321224280a69e7a76bf07b52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256080"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911856"
 ---
 # <a name="hresult-information-in-managed-code"></a>Yönetilen kodda HRESULT bilgileri
 HRESULT dönüş değerlerini karşılaştığında, yönetilen kodda COM arasındaki etkileşimi sorunlara neden olabilir.  
   
  Bir COM arabirimi içinde bu rolleri HRESULT dönüş değerini yürütebilirsiniz:  
   
--   Hata bilgisi sunar (örneğin, <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>).  
+- Hata bilgisi sunar (örneğin, <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>).  
   
--   Programın normal davranış hakkında durum bilgileri sağlar.  
+- Programın normal davranış hakkında durum bilgileri sağlar.  
   
- HRESULT'ları, COM yönetilen kodu çağırdığında, bu sorunlara neden olabilir:  
+  HRESULT'ları, COM yönetilen kodu çağırdığında, bu sorunlara neden olabilir:  
   
--   HRESULT değerleri dönüş küçüktür sıfır (hata kodları) COM İşlevler, özel durum oluşturur.  
+- HRESULT değerleri dönüş küçüktür sıfır (hata kodları) COM İşlevler, özel durum oluşturur.  
   
--   Dönüş düzenli olarak iki veya daha fazla farklı başarı kodları, örneğin, COM yöntemleri <xref:Microsoft.VisualStudio.VSConstants.S_OK> veya <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>, ayırt edici olamaz.  
+- Dönüş düzenli olarak iki veya daha fazla farklı başarı kodları, örneğin, COM yöntemleri <xref:Microsoft.VisualStudio.VSConstants.S_OK> veya <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>, ayırt edici olamaz.  
   
- Çünkü çoğu [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] HRESULT değerlerini değerinden, sıfır veya farklı bir başarı kodu döndürür ya da dönüş COM işlevleri [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] birlikte çalışma derlemelerini yazılı böylece yöntem imzaları korunur. Tüm [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] birlikte çalışma yöntemlerdir `int` türü. HRESULT değerleri, birlikte çalışma katmanı değişikliğinin ve özel durumların olmadan aracılığıyla geçirilir.  
+  Çünkü çoğu [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] HRESULT değerlerini değerinden, sıfır veya farklı bir başarı kodu döndürür ya da dönüş COM işlevleri [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] birlikte çalışma derlemelerini yazılı böylece yöntem imzaları korunur. Tüm [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] birlikte çalışma yöntemlerdir `int` türü. HRESULT değerleri, birlikte çalışma katmanı değişikliğinin ve özel durumların olmadan aracılığıyla geçirilir.  
   
- Bir COM işlev çağıran yönetilen yönteme HRESULT döndürdüğünden, çağıran Metoda HRESULT denetleyin ve gerekirse özel durumlar gerekir.  
+  Bir COM işlev çağıran yönetilen yönteme HRESULT döndürdüğünden, çağıran Metoda HRESULT denetleyin ve gerekirse özel durumlar gerekir.  
   
 ## <a name="handling-hresults-returned-to-managed-code-from-com"></a>Yönetilen kod için COM'dan döndürülen HRESULTs işleme  
  Yönetilen koddan bir COM arabirimi çağırdığınızda HRESULT değerini inceleyin ve gerekirse bir özel durum. <xref:Microsoft.VisualStudio.ErrorHandler> Sınıfı içeren <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> HRESULT değerine bağlı olarak bir COM özel durumu oluşturan yöntem kendisine geçirilen.  

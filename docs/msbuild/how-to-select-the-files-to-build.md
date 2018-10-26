@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64e9d438547ee27588c08fb522a027cd85432094
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 8ef956b94ca263dac5ce57c7b122576060bb7a05
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079705"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820674"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Nasıl yapılır: derleme dosyaları seçin
 Bir proje oluşturduğunuzda bazı dosyaları içeren, her dosya proje dosyasında ayrı olarak listeleyebilirsiniz veya tüm dosyaları bir dizin veya iç içe geçmiş bir dizinler kümesi eklemek için joker karakterler kullanabilirsiniz.  
@@ -40,7 +40,7 @@ Bir proje oluşturduğunuzda bazı dosyaları içeren, her dosya proje dosyasın
      `<VBFile Include="form1.vb"/>`  
   
     > [!NOTE]
-    >  Proje dosyası ile aynı dizinde bir öğe koleksiyonu öğeleri emin değilseniz, öğenin tam veya göreli yol belirtmeniz gerekir. Örneğin: `Include="..\..\form2.cs"`.  
+    >  Proje dosyası ile aynı dizinde bir öğe koleksiyonu öğeleri emin değilseniz, öğenin tam veya göreli yol belirtmeniz gerekir. Örneğin: `Include="..\..\form2.cs"`  
   
 #### <a name="to-declare-multiple-items"></a>Birden çok öğe bildirmek için  
   
@@ -100,7 +100,7 @@ Bir proje oluşturduğunuzda bazı dosyaları içeren, her dosya proje dosyasın
   
 > [!NOTE]
 >  Bir derleme için girişler belirtmek için öğeleriyle joker karakterler kullanmanız gerekir; kullanarak girişleri belirtemezsiniz `Sources` özniteliğini [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] gibi görevleri [Csc](../msbuild/csc-task.md) veya [Vbc](../msbuild/vbc-task.md). Aşağıdaki örnek bir proje dosyasında geçerli değil:  
->   
+> 
 >  `<CSC Sources="*.cs">...</CSC>`  
   
 ## <a name="example"></a>Örnek  
@@ -173,4 +173,4 @@ Bir proje oluşturduğunuzda bazı dosyaları içeren, her dosya proje dosyasın
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Nasıl yapılır: dosyaları derlemeden dışlama](../msbuild/how-to-exclude-files-from-the-build.md)   
- [Öğeleri](../msbuild/msbuild-items.md)
+ [Öğeler](../msbuild/msbuild-items.md)

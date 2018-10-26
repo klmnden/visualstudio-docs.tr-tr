@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce17a44a6680288a31d80993a11d59eaa95f1a31
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1d48f2a104505e6b6ea9942847d8cd4dd2f3e669
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676873"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900481"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>İzlenecek yol: bir Windows formu kullanarak veri toplayabilir.
   Bu izlenecek yol, bir Windows Form Microsoft Office Excel için belge düzeyi özelleştirmesinde açın, kullanıcıdan bilgi toplar ve bu bilgileri çalışma sayfası hücresine yazma gösterilmektedir.  
@@ -70,41 +70,41 @@ ms.locfileid: "35676873"
   
 ### <a name="to-add-a-windows-form"></a>Bir Windows formu eklemek için  
   
-1.  Projeyi seçin **girdiWinFormu** içinde **Çözüm Gezgini**.  
+1. Projeyi seçin **girdiWinFormu** içinde **Çözüm Gezgini**.  
   
-2.  Üzerinde **proje** menüsünde tıklatın **Windows formu eklemek**.  
+2. Üzerinde **proje** menüsünde tıklatın **Windows formu eklemek**.  
   
-3.  Form adı **GetInputString.vb** veya **GetInputString.cs olarak**ve ardından **Ekle**.  
+3. Form adı **GetInputString.vb** veya **GetInputString.cs olarak**ve ardından **Ekle**.  
   
-     Yeni form Tasarımcısı'nda açılır.  
+    Yeni form Tasarımcısı'nda açılır.  
   
-4.  Ekleme bir <xref:System.Windows.Forms.TextBox> ve <xref:System.Windows.Forms.Button> form.  
+4. Ekleme bir <xref:System.Windows.Forms.TextBox> ve <xref:System.Windows.Forms.Button> form.  
   
-5.  Düğmeyi seçin, özelliğini bulun **metin** içinde **özellikleri** penceresinde metni değiştirip **Tamam**.  
+5. Düğmeyi seçin, özelliğini bulun **metin** içinde **özellikleri** penceresinde metni değiştirip **Tamam**.  
   
- Ardından, kod ekleyin `ThisWorkbook.vb` veya `ThisWorkbook.cs` kullanıcının bilgilerini toplamak için.  
+   Ardından, kod ekleyin `ThisWorkbook.vb` veya `ThisWorkbook.cs` kullanıcının bilgilerini toplamak için.  
   
 ## <a name="display-the-windows-form-and-collecting-information"></a>Windows Form ve toplama bilgileri görüntüleme  
  Bir örneğini oluşturmak `GetInputString` Windows formu görüntülemek ve ardından çalışma sayfasındaki bir hücreye kullanıcının bilgileri yazın.  
   
 #### <a name="to-display-the-form-and-collect-information"></a>Görüntüleme formu ve bilgi toplamak için  
   
-1.  Sağ **ThisWorkbook.vb** veya **ThisWorkbook.cs** içinde **Çözüm Gezgini**ve ardından **Kodu Görüntüle**.  
+1. Sağ **ThisWorkbook.vb** veya **ThisWorkbook.cs** içinde **Çözüm Gezgini**ve ardından **Kodu Görüntüle**.  
   
-2.  İçinde <xref:Microsoft.Office.Tools.Excel.Workbook.Open> olay işleyicisine `ThisWorkbook`, form için bir değişken bildirmek için aşağıdaki kodu ekleyin `GetInputString` ve formu gösterin.  
+2. İçinde <xref:Microsoft.Office.Tools.Excel.Workbook.Open> olay işleyicisine `ThisWorkbook`, form için bir değişken bildirmek için aşağıdaki kodu ekleyin `GetInputString` ve formu gösterin.  
   
-    > [!NOTE]  
-    >  C# içinde bir olay işleyicisi gösterildiği eklemelisiniz <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> aşağıdaki olay. Olay işleyicileri oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Office projelerinde olay işleyicileri oluşturma](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+   > [!NOTE]  
+   >  C# içinde bir olay işleyicisi gösterildiği eklemelisiniz <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> aşağıdaki olay. Olay işleyicileri oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Office projelerinde olay işleyicileri oluşturma](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
+    [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
+    [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
   
-3.  Adlı bir yöntem oluşturma `WriteStringToCell` , adlandırılmış bir aralığa metin yazar. Bu yöntem formdan olarak adlandırılır ve kullanıcının girişi geçirilir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi `formInput`, hücre **A1**.  
+3. Adlı bir yöntem oluşturma `WriteStringToCell` , adlandırılmış bir aralığa metin yazar. Bu yöntem formdan olarak adlandırılır ve kullanıcının girişi geçirilir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi `formInput`, hücre **A1**.  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
+    [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
+    [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
   
- Ardından, forma düğmenin click işlemek için kod ekleyin olay.  
+   Ardından, forma düğmenin click işlemek için kod ekleyin olay.  
   
 ## <a name="send-information-to-the-worksheet"></a>Çalışma sayfasına bilgileri Gönder  
   

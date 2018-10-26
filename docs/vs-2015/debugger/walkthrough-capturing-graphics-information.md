@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f81009d942a7d77bfe34d3bcc3ae16b1c824b75b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d76c3e2b6caada74deb6d7c99dead93b0cf7e65c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273019"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825340"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>İzlenecek Yol: Grafik Bilgilerini Yakalama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,23 +43,23 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir [!INCLUDE[vsprvs](../inc
   
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>Bir proje veya çözüm yüklemeden grafik bilgilerini yakalamayı etkinleştirme  
   
-1.  Menü çubuğunda, **dosya**, **açık**, **proje/çözüm**. **Açık proje** iletişim kutusu görüntülenir.  
+1. Menü çubuğunda, **dosya**, **açık**, **proje/çözüm**. **Açık proje** iletişim kutusu görüntülenir.  
   
-2.  Yürütülebilir dosya, grafik bilgilerini yakalamak ve ardından istediğiniz uygulama için bir proje veya çözüm dosyası yerine belirtin **açık**.  
+2. Yürütülebilir dosya, grafik bilgilerini yakalamak ve ardından istediğiniz uygulama için bir proje veya çözüm dosyası yerine belirtin **açık**.  
   
-3.  Menü çubuğunda, **hata ayıklama**, **grafik**, **tanılamayı Başlat**.  
+3. Menü çubuğunda, **hata ayıklama**, **grafik**, **tanılamayı Başlat**.  
   
- Uygulamayı başlatın ve işleme çerçeveler olduktan sonra grafik bilgilerini yakalayabilir.  
+   Uygulamayı başlatın ve işleme çerçeveler olduktan sonra grafik bilgilerini yakalayabilir.  
   
 #### <a name="to-capture-graphics-information"></a>Grafik bilgilerini yakalamak için  
   
--   Grafik tanılama araç çubuğunda **yakalama** düğmesi. ![Grafik yakalama düğmesinin simgesi](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
+- Grafik tanılama araç çubuğunda **yakalama** düğmesi. ![Grafik yakalama düğmesinin simgesi](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
   
-     veya  
+   veya  
   
-     Odak uygulamayla basın **Print Screen**.  
+   Odak uygulamayla basın **Print Screen**.  
   
- Her zaman bir kare hakkında bilgi yakalama grafik tanılama Direct3D olayları ve ilişkili durumu kaydeder ve bu verileri bir grafik günlüğüne ekler. Yeni bir grafik günlüğü, her bir grafik Tanılama oturumu için oluşturulur. Grafik günlükleri hakkında daha fazla bilgi için bkz: [genel bakış](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
+  Her zaman bir kare hakkında bilgi yakalama grafik tanılama Direct3D olayları ve ilişkili durumu kaydeder ve bu verileri bir grafik günlüğüne ekler. Yeni bir grafik günlüğü, her bir grafik Tanılama oturumu için oluşturulur. Grafik günlükleri hakkında daha fazla bilgi için bkz: [genel bakış](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
  Bu izlenecek yol, grafik bilgilerini elle yakalama gösterilmiştir. Sonraki adım olarak, bu seçenek göz önünde bulundurun:  

@@ -16,55 +16,55 @@ ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f19165a5941f62fd5594a715c8812c065b371608
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 879d9e2cc40ebce42565d5eb8c607502ae17c2df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247705"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830762"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>Yalıtılmış Kabuk giriş noktası parametreleri (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio shell tabanlı bir uygulama başladığında Visual Studio Kabuğu başlangıç giriş noktası çağırır. Aşağıdaki ayarlar, kabuk başlangıç giriş noktası çağrısında kılınabilir. Her ayarın bir açıklaması için bkz: [. Pkgdef dosyaları](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md).  
   
--   AddinsAllowed  
+- AddinsAllowed  
   
--   AllowsDroppedFilesOnMainWindow  
+- AllowsDroppedFilesOnMainWindow  
   
--   AppName  
+- AppName  
   
--   CommandLineLogo  
+- CommandLineLogo  
   
--   DefaultHomePage  
+- DefaultHomePage  
   
--   DefaultProjectsLocation  
+- DefaultProjectsLocation  
   
--   DefaultSearchPage  
+- DefaultSearchPage  
   
--   DefaultUserFilesFolderRoot  
+- DefaultUserFilesFolderRoot  
   
--   DisableOutputWindow  
+- DisableOutputWindow  
   
--   HideMiscellaneousFilesByDefault  
+- HideMiscellaneousFilesByDefault  
   
--   HideSolutionConcept  
+- HideSolutionConcept  
   
--   NewProjDlgInstalledTemplatesHdr  
+- NewProjDlgInstalledTemplatesHdr  
   
--   NewProjDlgSlnTreeNodeTitle  
+- NewProjDlgSlnTreeNodeTitle  
   
--   SolutionFileCreatorIdentifier  
+- SolutionFileCreatorIdentifier  
   
--   SolutionFileExt  
+- SolutionFileExt  
   
--   UserFilesSubFolderName  
+- UserFilesSubFolderName  
   
--   UserOptsFileExt  
+- UserOptsFileExt  
   
- Visual Studio Kabuğu yalıtılmış şablona bir kaynak dosyası oluşturur *solutionName*.cpp, burada *solutionName* uygulama için çözüm adı. Bu dosya _tWinMain işlevi uygulamanın ana giriş noktasını tanımlar. Bu işlev, kabuk başlangıç giriş noktası çağırır.  
+  Visual Studio Kabuğu yalıtılmış şablona bir kaynak dosyası oluşturur *solutionName*.cpp, burada *solutionName* uygulama için çözüm adı. Bu dosya _tWinMain işlevi uygulamanın ana giriş noktasını tanımlar. Bu işlev, kabuk başlangıç giriş noktası çağırır.  
   
- Uygulama davranışını, uygulama başlatıldığında, bu ayarları değiştirerek değiştirebilirsiniz.  
+  Uygulama davranışını, uygulama başlatıldığında, bu ayarları değiştirerek değiştirebilirsiniz.  
   
 ## <a name="parameters"></a>Parametreler  
  Visual Studio Kabuğu başlangıç giriş noktası beş parametreleri tanımlar. İlk dört parametre değiştirmeyin. Beşinci parametrenin ayarları geçersiz kılma listesini alır. Kabuk başlangıç giriş noktası bir uygulamanın ana giriş noktasından çağrılır.  

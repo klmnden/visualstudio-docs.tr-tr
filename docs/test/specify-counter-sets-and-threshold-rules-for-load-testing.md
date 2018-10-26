@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4277935750aa4d0ba081f5117806892bbf948556
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 95aa0b7545ab7f326779b24475c8f7593ede27a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382376"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879855"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Sayaç kümelerini ve eşik kurallarını bilgisayarlar için bir yük testi içinde belirtin.
 
@@ -38,7 +38,7 @@ Sayaçları toplamak bilgisayara listesine test altındaki sunucular eklemek ön
 ## <a name="tasks"></a>Görevler
 
 |Görevler|İlişkili Konular|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Yük testiniz için sayaç kümelerini Yönet:** yük testinizi oluşturduktan sonra sayaç kümesi Yük Testi Düzenleyicisi'ni düzenleyebilirsiniz. Sayaç kümelerini yönetme, performans verilerini toplamak istediğiniz bilgisayar kümesini seçme ve atama her bir bilgisayardan toplamak için sayaç kümeleri kümesini içerir. Sayaçlarınızı Yükleme Testi Düzenleyicisi'nde yönettiğiniz.|-   [Nasıl yapılır: sayaç kümelerini Yönet](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
 |**Sayaç kümeleri, yük testinize ekleyin:** ile bir yük testi oluşturduğunuzda, **Yeni Yük Testi Sihirbazı**, bir başlangıç sayaç kümesini ekleyin. Bu, Yük testiniz için ön tanımlı sayaç kümeleri kümesini sunar. Bir yük testi oluşturduktan sonra Yük Testi Düzenleyicisi'ni kullanarak mevcut sayaç kümeleri yeni sayaçları ekleyebilirsiniz.|-   [Nasıl yapılır: sayaç kümelerine sayaç ekleme](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Nasıl yapılır: özel sayaç kümeleri ekleme](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
 |**Yük testiniz için sayaçlarını kullanarak bir eşik kuralı belirtin:** bir eşik kuralı bir tek performans sayacı üzerinde bir yük testi sırasında sistem kaynak kullanımını izlemek için ayarlanmış bir kuraldır. Sayaç kümesi tanımları, birçok önemli performans sayaçları için önceden tanımlanmış eşik kuralları içerir. Yük testlerindeki eşik kuralları, bir performans sayacı değeri bir sabit değer ya da başka bir performans sayacı değeri ile karşılaştırın.|-   [Nasıl yapılır: bir eşik kuralı ekleme](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
@@ -67,7 +67,7 @@ Uygun bir değer seçin **örnek hızı** özelliği yük testinde çalışma ay
 Örnek hızlara ait bazı Kılavuzlar şunlardır:
 
 |Yük testi süresi|Önerilen örnek hız|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 saat|5 saniye|
 |1−8 saat|15 saniye|
 |8−24 saat|30 saniye|

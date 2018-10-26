@@ -15,12 +15,12 @@ ms.assetid: acfcabed-9f2f-436c-ad18-7ca2f45d631b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 13c7206bfdf97e5833c78d4010ecca547a0d83ba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 783e996ce0a2b1d1761bc765f7748794487364c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199088"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827618"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>Kesme Noktaları (Visual Studio SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,27 +29,27 @@ Kesme noktaları üç tür vardır: beklemede, bağlama ve hata.
   
  **Bir bekleyen kesme noktası:**  
   
--   Bir kesme noktası veya daha fazla program bir veya daha fazla kod bağlamlarda bağlamak için gerekli tüm bilgileri içeren bir soyutlamadır. Her bir program olan yüklemeye neden kodu hata ayıklaması, hata ayıklama altyapısı bunlar bağlanabilir, görmek için tüm bekleyen kesme noktalarını denetler.  
+- Bir kesme noktası veya daha fazla program bir veya daha fazla kod bağlamlarda bağlamak için gerekli tüm bilgileri içeren bir soyutlamadır. Her bir program olan yüklemeye neden kodu hata ayıklaması, hata ayıklama altyapısı bunlar bağlanabilir, görmek için tüm bekleyen kesme noktalarını denetler.  
   
-     Bir bekleyen kesme hiçbir zaman kod, bağlar ancak bunun yerine toplar ve onu oluşturan tüm bağlı kesme noktalarını içeren kabul edilir.  
+   Bir bekleyen kesme hiçbir zaman kod, bağlar ancak bunun yerine toplar ve onu oluşturan tüm bağlı kesme noktalarını içeren kabul edilir.  
   
--   Tarafından temsil edilen bir [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) arabirimi.  
+- Tarafından temsil edilen bir [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) arabirimi.  
   
- **İlişkili bir kesme noktası:**  
+  **İlişkili bir kesme noktası:**  
   
--   Bir kesme noktası için bir soyutlamayı ile ilişkili veya tek bir kod bağlamına bağlı. Her bağlı Kesme noktasının yanıt bekleyen bir kesme noktası olarak oluşturulur. Ancak, bir bekleyen kesme noktasının birden fazla bağlı Kesme noktasının oluşturabilirsiniz.  
+- Bir kesme noktası için bir soyutlamayı ile ilişkili veya tek bir kod bağlamına bağlı. Her bağlı Kesme noktasının yanıt bekleyen bir kesme noktası olarak oluşturulur. Ancak, bir bekleyen kesme noktasının birden fazla bağlı Kesme noktasının oluşturabilirsiniz.  
   
-     Kod kaldırıldığında, ilişkili bir kesme noktası ilişkisiz ve atıldı.  
+   Kod kaldırıldığında, ilişkili bir kesme noktası ilişkisiz ve atıldı.  
   
--   Tarafından temsil edilen bir [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) arabirimi.  
+- Tarafından temsil edilen bir [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) arabirimi.  
   
- **Bir hata kesme noktası:**  
+  **Bir hata kesme noktası:**  
   
--   Bir kod bağlamı için bir bekleyen kesme noktasının bağlama girişimi sırasında bir hata tanımlamak için bir soyutlamadır. Bir hata kesme noktası ya da bir hata konumu veya kesme noktası ifadesi açıklar. Daha fazla bilgi için [kesme noktaları bağlama](../../extensibility/debugger/binding-breakpoints.md).  
+- Bir kod bağlamı için bir bekleyen kesme noktasının bağlama girişimi sırasında bir hata tanımlamak için bir soyutlamadır. Bir hata kesme noktası ya da bir hata konumu veya kesme noktası ifadesi açıklar. Daha fazla bilgi için [kesme noktaları bağlama](../../extensibility/debugger/binding-breakpoints.md).  
   
-     Bir hata veya uyarı kesme Notası hatası olabilir.  
+   Bir hata veya uyarı kesme Notası hatası olabilir.  
   
--   Tarafından temsil edilen bir [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) arabirimi.  
+- Tarafından temsil edilen bir [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) arabirimi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Programlar](../../extensibility/debugger/programs.md)   

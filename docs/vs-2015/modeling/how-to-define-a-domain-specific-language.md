@@ -21,12 +21,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 018b14a3bd52cf097e5afa81fd3703d9ba46e087
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b3c83ded60359bff2f84d35aec41eb387227022a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295184"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880747"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Nasıl yapılır: Etki Alanına Özgü bir Dili Tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,52 +48,52 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
   
 #### <a name="to-create-a-dsl-solution"></a>Bir DSL çözüm oluşturmak için  
   
-1.  Bir Çözümle oluşturun **etki alanına özgü dil** altında bulunan şablon **diğer proje türleri/genişletilebilirlik** içinde **yeni proje** iletişim kutusu.  
+1. Bir Çözümle oluşturun **etki alanına özgü dil** altında bulunan şablon **diğer proje türleri/genişletilebilirlik** içinde **yeni proje** iletişim kutusu.  
   
-     ![DSL iletişim oluşturma](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
+    ![DSL iletişim oluşturma](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
-     Tıkladığınızda **Tamam**, **etki alanına özgü dil Sihirbazı** açılır ve şablon DSL çözümlerinin bir listesini görüntüler.  
+    Tıkladığınızda **Tamam**, **etki alanına özgü dil Sihirbazı** açılır ve şablon DSL çözümlerinin bir listesini görüntüler.  
   
-2.  Her şablon açıklamasını görmek için tıklayın. Oluşturmak istediğiniz en çok benzeyen bir çözüm seçin.  
+2. Her şablon açıklamasını görmek için tıklayın. Oluşturmak istediğiniz en çok benzeyen bir çözüm seçin.  
   
-     Her bir DSL şablonu temel çalışan bir DSL tanımlar. Bu DSL kendi gereksinimlerinize uyacak şekilde düzenleyeceksiniz.  
+    Her bir DSL şablonu temel çalışan bir DSL tanımlar. Bu DSL kendi gereksinimlerinize uyacak şekilde düzenleyeceksiniz.  
   
-     Daha fazla bilgi için her örnek'e tıklayın.  
+    Daha fazla bilgi için her örnek'e tıklayın.  
   
-    -   Seçin **Görev akışı** Kulvarlar sahip bir DSL oluşturmak için. Kulvarlar diyagramın dikey veya yatay bölümlerdir.  
+   -   Seçin **Görev akışı** Kulvarlar sahip bir DSL oluşturmak için. Kulvarlar diyagramın dikey veya yatay bölümlerdir.  
   
-    -   Seçin **bileşeni modelleri** bağlantı noktası içeren bir DSL oluşturmak için. Daha büyük bir şekil kenarında küçük şekiller bağlantı noktalarıdır.  
+   -   Seçin **bileşeni modelleri** bağlantı noktası içeren bir DSL oluşturmak için. Daha büyük bir şekil kenarında küçük şekiller bağlantı noktalarıdır.  
   
-    -   Seçin **sınıf diyagramları** bölme şekilleri sahip bir DSL tanımlamak için. Bölme şekilleri öğeleri listesini içerir.  
+   -   Seçin **sınıf diyagramları** bölme şekilleri sahip bir DSL tanımlamak için. Bölme şekilleri öğeleri listesini içerir.  
   
-    -   Seçin **Minimal dil** diğer durumlarda, veya emin değilseniz.  
+   -   Seçin **Minimal dil** diğer durumlarda, veya emin değilseniz.  
   
-        > [!NOTE]
-        >  Bir sınıf diyagramında veya bileşen diyagramı oluşturmak istiyorsanız, UML modelleri kullanarak göz önünde bulundurun. UML modelleme araçlarının tek bir model tümleşik diyagramları kümesi sağlar. Bunlar genişletilebilir ve ModelBus kullanarak DSL'nizi ile tümleştirilebilir. Daha fazla bilgi için [uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md).  
+       > [!NOTE]
+       >  Bir sınıf diyagramında veya bileşen diyagramı oluşturmak istiyorsanız, UML modelleri kullanarak göz önünde bulundurun. UML modelleme araçlarının tek bir model tümleşik diyagramları kümesi sağlar. Bunlar genişletilebilir ve ModelBus kullanarak DSL'nizi ile tümleştirilebilir. Daha fazla bilgi için [uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md).  
   
-    -   Seçin **Minimal WinForm Tasarımcısı** veya **en az bir WPF Tasarımcısı** bir Windows Formları ya da WPF yüzeyinde görüntülenen bir DSL oluşturmak için. Düzenleyici tanımlamak için kod yazmanız gerekir. Daha fazla bilgi için aşağıdaki konulara bakın:  
+   -   Seçin **Minimal WinForm Tasarımcısı** veya **en az bir WPF Tasarımcısı** bir Windows Formları ya da WPF yüzeyinde görüntülenen bir DSL oluşturmak için. Düzenleyici tanımlamak için kod yazmanız gerekir. Daha fazla bilgi için aşağıdaki konulara bakın:  
   
-         [Windows Forms Tabanlı Etki Alanına Özgü Dil Oluşturma](../modeling/creating-a-windows-forms-based-domain-specific-language.md)  
+        [Windows Forms Tabanlı Etki Alanına Özgü Dil Oluşturma](../modeling/creating-a-windows-forms-based-domain-specific-language.md)  
   
-         [WPF Tabanlı Etki Alanına Özgü Dil Oluşturma](../modeling/creating-a-wpf-based-domain-specific-language.md)  
+        [WPF Tabanlı Etki Alanına Özgü Dil Oluşturma](../modeling/creating-a-wpf-based-domain-specific-language.md)  
   
-3.  Uygun Sihirbazı sayfasında DSL'nizi için bir dosya adı uzantısını girin. Bu örnekleri DSL'nizi içeren dosyalar kullanacağınız uzantısıdır.  
+3. Uygun Sihirbazı sayfasında DSL'nizi için bir dosya adı uzantısını girin. Bu örnekleri DSL'nizi içeren dosyalar kullanacağınız uzantısıdır.  
   
-    -   Bilgisayarınızda veya DSL yüklemek istediğiniz herhangi bir bilgisayarda herhangi bir uygulama ile ilişkilendirilmemiş bir dosya adı uzantısı'nı seçin. Örneğin, **docx** ve **htm** kabul edilemez bir dosya adı uzantıları olacaktır.  
+   -   Bilgisayarınızda veya DSL yüklemek istediğiniz herhangi bir bilgisayarda herhangi bir uygulama ile ilişkilendirilmemiş bir dosya adı uzantısı'nı seçin. Örneğin, **docx** ve **htm** kabul edilemez bir dosya adı uzantıları olacaktır.  
   
-    -   Girdiğiniz uzantısı DSL kullanılıp kullanılmadığını, sihirbaz sizi uyarır. Farklı dosya adı uzantısını kullanmayı düşünün. Eski Deneysel tasarımcıları temizlemek için Visual Studio SDK deneysel örneği de sıfırlayabilirsiniz. Tıklayın **Başlat**, tıklayın **tüm programlar**, **Microsoft Visual Studio 2010 SDK**, **Araçları**, ardından **Microsoft sıfırlama Visual Studio 2010 deneysel örneği**.  
+   -   Girdiğiniz uzantısı DSL kullanılıp kullanılmadığını, sihirbaz sizi uyarır. Farklı dosya adı uzantısını kullanmayı düşünün. Eski Deneysel tasarımcıları temizlemek için Visual Studio SDK deneysel örneği de sıfırlayabilirsiniz. Tıklayın **Başlat**, tıklayın **tüm programlar**, **Microsoft Visual Studio 2010 SDK**, **Araçları**, ardından **Microsoft sıfırlama Visual Studio 2010 deneysel örneği**.  
   
-4.  Diğer sayfalardaki ayarları değiştirebilir veya varsayılan değerleri değiştirmeyin.  
+4. Diğer sayfalardaki ayarları değiştirebilir veya varsayılan değerleri değiştirmeyin.  
   
-5.  **Son**'a tıklayın.  
+5. **Son**'a tıklayın.  
   
-     Sihirbaz, iki veya üç projeleri içeren ve DSL tanımını kod oluşturur bir çözüm oluşturur.  
+    Sihirbaz, iki veya üç projeleri içeren ve DSL tanımını kod oluşturur bir çözüm oluşturur.  
   
- Kullanıcı arabirimi artık aşağıdaki resme benzer.  
+   Kullanıcı arabirimi artık aşağıdaki resme benzer.  
   
- ![DSL Tasarımcısı](../modeling/media/dsl-designer.png "dsl_designer")  
+   ![DSL Tasarımcısı](../modeling/media/dsl-designer.png "dsl_designer")  
   
- Bu çözüm, bir etki alanına özgü dil tanımlar. Daha fazla bilgi için [etki alanına özgü dil araçları kullanıcı arabirimine genel bakış](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).  
+   Bu çözüm, bir etki alanına özgü dil tanımlar. Daha fazla bilgi için [etki alanına özgü dil araçları kullanıcı arabirimine genel bakış](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).  
   
 ### <a name="test-the-solution"></a>Çözüm test  
  Şablon, çalışan bir değiştirdiğinizde ya da olduğu gibi kullanın, DSL çözümüdür.  
@@ -118,26 +118,26 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
   
  Bu sınıfların tutmak kullanışlıdır:  
   
--   Kök sınıf DSL tanımı diyagramı sol altında görünür **sınıflar ve ilişkiler**. DSL farklı bir adla yeniden adlandırın. Örneğin, adında bir DSL **MusicLibrary** adlı bir kök sınıfı olabilir **müzik**.  
+- Kök sınıf DSL tanımı diyagramı sol altında görünür **sınıflar ve ilişkiler**. DSL farklı bir adla yeniden adlandırın. Örneğin, adında bir DSL **MusicLibrary** adlı bir kök sınıfı olabilir **müzik**.  
   
--   DSL tanım diyagramı, alt sağ tarafta görünür diyagramı sınıf **diyagram öğelerine** sütun. Bunu görmek için sağa kaydırmanız gerekebilir. Genellikle adlı _YourDsl_**diyagram**.  
+- DSL tanım diyagramı, alt sağ tarafta görünür diyagramı sınıf **diyagram öğelerine** sütun. Bunu görmek için sağa kaydırmanız gerekebilir. Genellikle adlı _YourDsl_**diyagram**.  
   
--   Kullandıysanız **Görev akışı** şablon ve istediğiniz ile Kulvarlar diyagramları oluşturmak, korumak ve ActorSwimlane şekli ve aktör etki alanı sınıfı yeniden adlandırın.  
+- Kullandıysanız **Görev akışı** şablon ve istediğiniz ile Kulvarlar diyagramları oluşturmak, korumak ve ActorSwimlane şekli ve aktör etki alanı sınıfı yeniden adlandırın.  
   
- Silin veya diğer sınıflar gereksinimlerinize uyacak şekilde yeniden adlandırın.  
+  Silin veya diğer sınıflar gereksinimlerinize uyacak şekilde yeniden adlandırın.  
   
 ##  <a name="patterns"></a> Bir DSL tanımlama desenleri  
  Bir DSL ekleyerek veya aynı anda bir veya iki özellik ayarlama geliştirme öneririz. Özellik ekleme, DSL çalıştırın ve test ve ardından bir veya iki daha fazla özellik ekleyin. Tipik bir özellik, DSL'nin olabilir:  
   
--   Bir etki alanı sınıfı öğelerini model şekli Diyagram ve kullanıcıların olanak sağlayan öğe araç o sınıfı öğelerini görüntülemek için gerekli öğe bağlandığı gömme ilişkisi oluşturun.  
+- Bir etki alanı sınıfı öğelerini model şekli Diyagram ve kullanıcıların olanak sağlayan öğe araç o sınıfı öğelerini görüntülemek için gerekli öğe bağlandığı gömme ilişkisi oluşturun.  
   
--   Bir etki alanı sınıfı ve şekli görüntüler dekoratörler etki alanı özellikleri.  
+- Bir etki alanı sınıfı ve şekli görüntüler dekoratörler etki alanı özellikleri.  
   
--   Başvuru ilişkisi ve Diyagram ve kullanıcıların sağlayan bağlayıcı aracını görüntüler bağlayıcı bağlantılar oluşturun.  
+- Başvuru ilişkisi ve Diyagram ve kullanıcıların sağlayan bağlayıcı aracını görüntüler bağlayıcı bağlantılar oluşturun.  
   
--   Doğrulama kısıtlaması veya bir menü komutu gibi program kodu gerektirir özelleştirme.  
+- Doğrulama kısıtlaması veya bir menü komutu gibi program kodu gerektirir özelleştirme.  
   
- Aşağıdaki bölümlerde, DSL özellikleri en kullanışlı türlerini oluşturmak nasıl açıklanmaktadır. Bir DSL ile oluşturulabilir birçok desen vardır ancak bunlar en sık kullanılır.  
+  Aşağıdaki bölümlerde, DSL özellikleri en kullanışlı türlerini oluşturmak nasıl açıklanmaktadır. Bir DSL ile oluşturulabilir birçok desen vardır ancak bunlar en sık kullanılır.  
   
 > [!NOTE]
 >  Özelliği ekledikten sonra tıklamayı değil **tüm Şablonları Dönüştür** DSL'nizi çalıştıran ve Çözüm Gezgini araç çubuğunda, önce oluşturun.  
@@ -240,96 +240,96 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
   
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>Bir sınıf diyagramında şekilleri olarak görüntülenen öğelerin tanımlamak için  
   
-1.  **Tanımlayın ve test bölümünde anlatıldığı gibi bir etki alanı sınıfı**[alan sınıfları tanımlama](#classes) **.**  
+1. **Tanımlayın ve test bölümünde anlatıldığı gibi bir etki alanı sınıfı**[alan sınıfları tanımlama](#classes) **.**  
   
-    -   Üst sınıf kök sınıfı olmalıdır. Diğer bir deyişle, kök sınıfı ile yeni alan sınıfı arasındaki gömme ilişkisi olmalıdır.  
+   -   Üst sınıf kök sınıfı olmalıdır. Diğer bir deyişle, kök sınıfı ile yeni alan sınıfı arasındaki gömme ilişkisi olmalıdır.  
   
-    -   Diyagram Kulvarlar varsa, üst etki alanı sınıfı, bir kulvara eşlenen olabilir. Bu yordama devam etmeden önce bkz [Kulvarlar sahip bir DSL tanımlama](#swimlanes).  
+   -   Diyagram Kulvarlar varsa, üst etki alanı sınıfı, bir kulvara eşlenen olabilir. Bu yordama devam etmeden önce bkz [Kulvarlar sahip bir DSL tanımlama](#swimlanes).  
   
-2.  **Bir şekil Sınıf Ekle** model diyagram üzerindeki öğeleri göstermek için. DSL tanım diyagramı üzerine aşağıdaki araçlardan birini sürükleyin:  
+2. **Bir şekil Sınıf Ekle** model diyagram üzerindeki öğeleri göstermek için. DSL tanım diyagramı üzerine aşağıdaki araçlardan birini sürükleyin:  
   
-    -   **Geometri şekli** dikdörtgen veya elips sağlar.  
+   - **Geometri şekli** dikdörtgen veya elips sağlar.  
   
-    -   **Görüntü şekli** sağlayan bir resim görüntüler.  
+   - **Görüntü şekli** sağlayan bir resim görüntüler.  
   
-    -   **Bölme şekli** bir veya daha fazla öğe listesini içeren bir dikdörtgen.  
+   - **Bölme şekli** bir veya daha fazla öğe listesini içeren bir dikdörtgen.  
   
      DSL tanım diyagramı, şekilleri ve bağlayıcıları altında sağ tarafında görünür şeklini sınıfı yeniden adlandırın.  
   
-3.  **Bir resim şekli oluşturduysanız, bir görüntünün tanımlamak**.  
+3. **Bir resim şekli oluşturduysanız, bir görüntünün tanımlamak**.  
   
-    1.  Her boyuttaki bir görüntü dosyası oluşturun. BMP, JPEG, GIF ve EMF biçimleri desteklenir.  
+   1.  Her boyuttaki bir görüntü dosyası oluşturun. BMP, JPEG, GIF ve EMF biçimleri desteklenir.  
   
-    2.  Çözüm Gezgini'nde dosyayı Dsl\Resources altında çözüme ekleyin.  
+   2.  Çözüm Gezgini'nde dosyayı Dsl\Resources altında çözüme ekleyin.  
   
-    3.  DSL tanım diyagramı için geri dönün ve yeni görüntüyü şeklin sınıfını seçin.  
+   3.  DSL tanım diyagramı için geri dönün ve yeni görüntüyü şeklin sınıfını seçin.  
   
-    4.  Özellikler penceresinde tıklayın **görüntü** özelliği.  
+   4.  Özellikler penceresinde tıklayın **görüntü** özelliği.  
   
-    5.  İçinde **görüntü Seç** iletişim kutusunda, altındaki açılan menüye tıklayın **dosya adı**ve görüntüyü seçin.  
+   5.  İçinde **görüntü Seç** iletişim kutusunda, altındaki açılan menüye tıklayın **dosya adı**ve görüntüyü seçin.  
   
-4.  **Metin dekoratörleri etki alanı özelliklerini görüntülemek için şekle ekleyin.**  
+4. **Metin dekoratörleri etki alanı özelliklerini görüntülemek için şekle ekleyin.**  
   
-     Görünen adı veya başlığının model öğesi için büyük olasılıkla en az bir metin dekoratör gerekir.  
+    Görünen adı veya başlığının model öğesi için büyük olasılıkla en az bir metin dekoratör gerekir.  
   
-     Shape sınıfının üst bilgisine sağ tıklayın, fareyle **Ekle**ve ardından **metin Dekoratör**. Dekoratörün ve Özellikler penceresinde kümesinin adını ayarlayın, **konumu**.  
+    Shape sınıfının üst bilgisine sağ tıklayın, fareyle **Ekle**ve ardından **metin Dekoratör**. Dekoratörün ve Özellikler penceresinde kümesinin adını ayarlayın, **konumu**.  
   
-5.  **Her bir şeklin görüntülemelidir alan sınıfına bir diyagram öğesi eşlemesi ile bağlanma**.  
+5. **Her bir şeklin görüntülemelidir alan sınıfına bir diyagram öğesi eşlemesi ile bağlanma**.  
   
-     Tıklayın **diyagram öğesi eşlemesi** aracı, sonra etki alanı sınıfı, ardından shape sınıfı tıklatın.  
+    Tıklayın **diyagram öğesi eşlemesi** aracı, sonra etki alanı sınıfı, ardından shape sınıfı tıklatın.  
   
-6.  **Metin dekoratörleri için harita özellikleri.**  
+6. **Metin dekoratörleri için harita özellikleri.**  
   
-    1.  Diyagram öğesi eşlemesi temsil eden şekle sınıfı ile alan sınıfı arasındaki gri satırı seçin.  
+   1. Diyagram öğesi eşlemesi temsil eden şekle sınıfı ile alan sınıfı arasındaki gri satırı seçin.  
   
-    2.  İçinde **DSL ayrıntıları** penceresinde tıklayın **Dekoratör eşlemeleri** sekmesi. Görmüyorsanız, **DSL ayrıntıları** penceresi, **görünümü** menüsünde **diğer Windows** ve ardından **DSL ayrıntıları**. Tüm içeriği görmek için bu pencerenin en üstünü yükseltmek sıklıkla gereklidir.  
+   2. İçinde **DSL ayrıntıları** penceresinde tıklayın **Dekoratör eşlemeleri** sekmesi. Görmüyorsanız, **DSL ayrıntıları** penceresi, **görünümü** menüsünde **diğer Windows** ve ardından **DSL ayrıntıları**. Tüm içeriği görmek için bu pencerenin en üstünü yükseltmek sıklıkla gereklidir.  
   
-    3.  Bir dekoratör adını seçin. Altında **görüntü özelliği**, etki alanı sınıfı, bir özelliğin adını seçin. Bu, her dekoratör için yineleyin.  
+   3. Bir dekoratör adını seçin. Altında **görüntü özelliği**, etki alanı sınıfı, bir özelliğin adını seçin. Bu, her dekoratör için yineleyin.  
   
-         Bir özellik ilgili bir öğe görüntülemek istiyorsanız, aşağı açılan ağaç Gezgin altında tıklayın **görüntü özelliğinin yolu**.  
+       Bir özellik ilgili bir öğe görüntülemek istiyorsanız, aşağı açılan ağaç Gezgin altında tıklayın **görüntü özelliğinin yolu**.  
   
-    4.  Her dekoratör adının bir onay işareti göründüğünden emin olun.  
+   4. Her dekoratör adının bir onay işareti göründüğünden emin olun.  
   
-     ![Şekil eşlemeleri ve DSL Ayrıntıları penceresi](../modeling/media/dsldetailswindow.png "DslDetailsWindow")  
+      ![Şekil eşlemeleri ve DSL Ayrıntıları penceresi](../modeling/media/dsldetailswindow.png "DslDetailsWindow")  
   
-7.  **Alan sınıfının öğe oluşturmaya yönelik bir araç kutusu öğesi olun.**  
+7. **Alan sınıfının öğe oluşturmaya yönelik bir araç kutusu öğesi olun.**  
   
-    1.  İçinde **DSL Gezgini**, genişletme **Düzenleyicisi** düğümü ve tüm alt düğümleri.  
+   1.  İçinde **DSL Gezgini**, genişletme **Düzenleyicisi** düğümü ve tüm alt düğümleri.  
   
-    2.  Düğümü altında **araç kutusu sekmeleri** örneğin MusicLibrary DSL'nizi aynı ada sahip. Tıklayın **öğesi aracı Ekle**.  
+   2.  Düğümü altında **araç kutusu sekmeleri** örneğin MusicLibrary DSL'nizi aynı ada sahip. Tıklayın **öğesi aracı Ekle**.  
   
-        > [!NOTE]
-        >  Sağ varsa **Araçları** düğümünü görmezsiniz **öğesi aracı ekleme**. Bunun yerine, yukarıdaki düğüme tıklayın.  
+       > [!NOTE]
+       >  Sağ varsa **Araçları** düğümünü görmezsiniz **öğesi aracı ekleme**. Bunun yerine, yukarıdaki düğüme tıklayın.  
   
-    3.  Yeni öğe aracı seçiliyken Özellikler penceresinde ayarlayın **sınıfı** son eklediğiniz etki alanı sınıfı için.  
+   3.  Yeni öğe aracı seçiliyken Özellikler penceresinde ayarlayın **sınıfı** son eklediğiniz etki alanı sınıfı için.  
   
-    4.  Ayarlama **açıklamalı alt yazı** ve **araç ipucu**.  
+   4.  Ayarlama **açıklamalı alt yazı** ve **araç ipucu**.  
   
-    5.  Ayarlama **araç kutusu simgesi** araç kutusunda görüntülenecek simge. Rapordaki yeni simge veya başka bir aracı için zaten kullanılan bir simge ayarlayabilirsiniz.  
+   5.  Ayarlama **araç kutusu simgesi** araç kutusunda görüntülenecek simge. Rapordaki yeni simge veya başka bir aracı için zaten kullanılan bir simge ayarlayabilirsiniz.  
   
-         Rapordaki yeni simge oluşturmak için de Dsl\Resources açın **Çözüm Gezgini**. Kopyalayın ve var olan öğe araç BMP dosyaları birini yapıştırın. Yapıştırılan kopyalama yeniden adlandırın ve düzenlemek için çift tıklayın.  
+        Rapordaki yeni simge oluşturmak için de Dsl\Resources açın **Çözüm Gezgini**. Kopyalayın ve var olan öğe araç BMP dosyaları birini yapıştırın. Yapıştırılan kopyalama yeniden adlandırın ve düzenlemek için çift tıklayın.  
   
-         Dönüş DSL tanım diyagramı için Aracı'nı seçin ve Özellikler penceresinde tıklayın **[...]**  içinde **araç kutusu simgesi**. İçinde **bit eşlem seçin** Seç iletişim kutusunda. Aşağı açılan menüden BMP dosyası.  
+        Dönüş DSL tanım diyagramı için Aracı'nı seçin ve Özellikler penceresinde tıklayın **[...]**  içinde **araç kutusu simgesi**. İçinde **bit eşlem seçin** Seç iletişim kutusunda. Aşağı açılan menüden BMP dosyası.  
   
- Daha fazla bilgi için [geometrik şekiller özellikleri](../modeling/properties-of-geometry-shapes.md) ve [resim şekilleri özellikleri](../modeling/properties-of-image-shapes.md).  
+   Daha fazla bilgi için [geometrik şekiller özellikleri](../modeling/properties-of-geometry-shapes.md) ve [resim şekilleri özellikleri](../modeling/properties-of-image-shapes.md).  
   
 #### <a name="to-test-shapes"></a>Şekiller test etmek için  
   
-1.  **Tüm Şablonları Dönüştür'e tıklayın** DSL Tasarımcısı kodunu oluşturmak için Çözüm Gezgini araç çubuğundaki.  
+1. **Tüm Şablonları Dönüştür'e tıklayın** DSL Tasarımcısı kodunu oluşturmak için Çözüm Gezgini araç çubuğundaki.  
   
-2.  **Oluşturup DSL çalıştırın.** Yeni bir örneğini çalıştırmak için F5'e ya da CTRL + F5 tuşuna basın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Deneysel modda. Deneysel örneğinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], DSL'nin dosya adı uzantısına sahip bir dosya oluşturun veya açın.  
+2. **Oluşturup DSL çalıştırın.** Yeni bir örneğini çalıştırmak için F5'e ya da CTRL + F5 tuşuna basın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Deneysel modda. Deneysel örneğinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], DSL'nin dosya adı uzantısına sahip bir dosya oluşturun veya açın.  
   
-3.  **Öğe araçlarını araç göründüğünü doğrulayın.**  
+3. **Öğe araçlarını araç göründüğünü doğrulayın.**  
   
-4.  **Şekiller oluşturma** aracından model diyagram üzerine sürükleyerek.  
+4. **Şekiller oluşturma** aracından model diyagram üzerine sürükleyerek.  
   
-5.  **Her metin dekoratör göründüğünü doğrulayın** ve:  
+5. **Her metin dekoratör göründüğünü doğrulayın** ve:  
   
-    1.  Ayarlamış olduğunuz sürece, düzenleyebilirsiniz **kullanıcı Arabirimi salt okunur** domain özelliği bayrağı.  
+   1.  Ayarlamış olduğunuz sürece, düzenleyebilirsiniz **kullanıcı Arabirimi salt okunur** domain özelliği bayrağı.  
   
-    2.  Özelliği, Özellikler penceresinde veya dekoratörün düzenlediğinizde, diğer görünümdeki güncelleştirilir.  
+   2.  Özelliği, Özellikler penceresinde veya dekoratörün düzenlediğinizde, diğer görünümdeki güncelleştirilir.  
   
- Bir şeklin ilk test ettikten sonra bazı özelliklerini ayarlamak ve bazı daha gelişmiş özellikler eklemek isteyebilirsiniz. Daha fazla bilgi için [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).  
+   Bir şeklin ilk test ettikten sonra bazı özelliklerini ayarlamak ve bazı daha gelişmiş özellikler eklemek isteyebilirsiniz. Daha fazla bilgi için [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
 ##  <a name="references"></a> Başvuru ilişkileri tanımlama  
  Tüm kaynak etki alanı sınıfı ve hiçbir hedef alan sınıfı arasındaki bir başvuru ilişkisi tanımlayabilirsiniz. Başvuru ilişkilerini satırlar şekiller arasında bağlayıcıları, bir diyagram üzerinde genellikle görüntülenir.  
@@ -391,27 +391,27 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
   
 ##### <a name="to-test-a-reference-relationship-and-connector"></a>Başvuru ilişkisi ve Bağlayıcısı'nı Test etmek için  
   
-1.  **Tüm Şablonları Dönüştür'e tıklayın** DSL Tasarımcısı kodunu oluşturmak için Çözüm Gezgini araç çubuğundaki.  
+1. **Tüm Şablonları Dönüştür'e tıklayın** DSL Tasarımcısı kodunu oluşturmak için Çözüm Gezgini araç çubuğundaki.  
   
-2.  **Oluşturup DSL çalıştırın.** Yeni bir örneğini çalıştırmak için F5'e ya da CTRL + F5 tuşuna basın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Deneysel modda. Deneysel örneğinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], DSL'nin dosya adı uzantısına sahip bir dosya oluşturun veya açın.  
+2. **Oluşturup DSL çalıştırın.** Yeni bir örneğini çalıştırmak için F5'e ya da CTRL + F5 tuşuna basın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Deneysel modda. Deneysel örneğinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], DSL'nin dosya adı uzantısına sahip bir dosya oluşturun veya açın.  
   
-3.  **Bağlantı aracını araç göründüğünü doğrulayın.**  
+3. **Bağlantı aracını araç göründüğünü doğrulayın.**  
   
-4.  **Şekiller oluşturma** aracından model diyagram üzerine sürükleyerek.  
+4. **Şekiller oluşturma** aracından model diyagram üzerine sürükleyerek.  
   
-5.  **Bağlantıları oluşturma** şekiller arasında. Bağlayıcı Aracı'nı tıklatın, bir şekle tıklayın ve ardından başka bir şekle tıklayın.  
+5. **Bağlantıları oluşturma** şekiller arasında. Bağlayıcı Aracı'nı tıklatın, bir şekle tıklayın ve ardından başka bir şekle tıklayın.  
   
-6.  **Uygun olmayan sınıflar arasında bağlantı oluşturamazsınız doğrulayın.** Örneğin, ilişkiniz Albümler ve sanatçıların arasındaysa için Sanatçılar Sanatçılar bağlayamazsınız doğrulayın.  
+6. **Uygun olmayan sınıflar arasında bağlantı oluşturamazsınız doğrulayın.** Örneğin, ilişkiniz Albümler ve sanatçıların arasındaysa için Sanatçılar Sanatçılar bağlayamazsınız doğrulayın.  
   
-7.  **Çeşitlilikler doğru olduğundan emin olun. Örneğin, bir kişinin birden fazla Manager'a bağlanamıyor doğrulayın.**  
+7. **Çeşitlilikler doğru olduğundan emin olun. Örneğin, bir kişinin birden fazla Manager'a bağlanamıyor doğrulayın.**  
   
-8.  **Her metin dekoratör göründüğünü doğrulayın** ve:  
+8. **Her metin dekoratör göründüğünü doğrulayın** ve:  
   
-    1.  Ayarlamış olduğunuz sürece, düzenleyebilirsiniz **kullanıcı Arabirimi salt okunur** domain özelliği bayrağı.  
+   1.  Ayarlamış olduğunuz sürece, düzenleyebilirsiniz **kullanıcı Arabirimi salt okunur** domain özelliği bayrağı.  
   
-    2.  Özelliği, Özellikler penceresinde veya dekoratörün düzenlediğinizde, diğer görünümdeki güncelleştirilir.  
+   2.  Özelliği, Özellikler penceresinde veya dekoratörün düzenlediğinizde, diğer görünümdeki güncelleştirilir.  
   
- Bir bağlayıcı ilk test ettikten sonra bazı özelliklerini ayarlamak ve bazı daha gelişmiş özellikler eklemek isteyebilirsiniz. Daha fazla bilgi için [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).  
+   Bir bağlayıcı ilk test ettikten sonra bazı özelliklerini ayarlamak ve bazı daha gelişmiş özellikler eklemek isteyebilirsiniz. Daha fazla bilgi için [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
 ##  <a name="compartments"></a> Liste içeren şekilleri tanımlama: bölme şekilleri  
  Bir veya daha fazla öğe listeleri içeren bir bölme şekli içeriyor. Örneğin, bir müzik kitaplığı DSL müzik Albümler temsil etmek için bölme şekilleri kullanabilirsiniz. Her albüm içinde şarkıya bir listesi bulunur.  
@@ -492,27 +492,27 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
   
 #### <a name="to-test-a-compartment-shape"></a>Bölme şekli test etmek için  
   
-1.  **Tüm Şablonları Dönüştür'e tıklayın** DSL Tasarımcısı kodunu oluşturmak için Çözüm Gezgini araç çubuğundaki.  
+1. **Tüm Şablonları Dönüştür'e tıklayın** DSL Tasarımcısı kodunu oluşturmak için Çözüm Gezgini araç çubuğundaki.  
   
-2.  **Oluşturup DSL çalıştırın.** Yeni bir örneğini çalıştırmak için F5'e ya da CTRL + F5 tuşuna basın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Deneysel modda. Deneysel örneğinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], DSL'nin dosya adı uzantısına sahip bir dosya oluşturun veya açın.  
+2. **Oluşturup DSL çalıştırın.** Yeni bir örneğini çalıştırmak için F5'e ya da CTRL + F5 tuşuna basın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Deneysel modda. Deneysel örneğinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], DSL'nin dosya adı uzantısına sahip bir dosya oluşturun veya açın.  
   
-3.  **Aracı araç göründüğünü doğrulayın.**  
+3. **Aracı araç göründüğünü doğrulayın.**  
   
-4.  Araç modeli diyagram üzerine sürükleyin. Bir şekil oluşturulur.  
+4. Araç modeli diyagram üzerine sürükleyin. Bir şekil oluşturulur.  
   
-     Öğe adı görüntülenir ve otomatik olarak varsayılan bir değere ayarlanmış olduğunu doğrulayın.  
+    Öğe adı görüntülenir ve otomatik olarak varsayılan bir değere ayarlanmış olduğunu doğrulayın.  
   
-5.  Yeni şeklin üst bilgisine sağ tıklayın ve Ekle'yi tıklatın *bilgisayarınızı liste öğesi.* Örnekte, ekleme şarkı bir komuttur.  
+5. Yeni şeklin üst bilgisine sağ tıklayın ve Ekle'yi tıklatın *bilgisayarınızı liste öğesi.* Örnekte, ekleme şarkı bir komuttur.  
   
-     Yeni bir ada sahip ve bir öğe listesinde göründüğünü doğrulayın.  
+    Yeni bir ada sahip ve bir öğe listesinde göründüğünü doğrulayın.  
   
-6.  Liste öğeleri birine tıklayın ve Özellikler penceresini inceleyin. Liste öğeleri özelliklerini görmeniz gerekir.  
+6. Liste öğeleri birine tıklayın ve Özellikler penceresini inceleyin. Liste öğeleri özelliklerini görmeniz gerekir.  
   
-7.  Dil Gezgini açın. İçindeki liste madde düğümleri ile kapsayıcı düğümlerini görebildiğinizi doğrulayın.  
+7. Dil Gezgini açın. İçindeki liste madde düğümleri ile kapsayıcı düğümlerini görebildiğinizi doğrulayın.  
   
- ![DSL oluşturulan explorer](../modeling/media/music-explorer.png "Music_Explorer")  
+   ![DSL oluşturulan explorer](../modeling/media/music-explorer.png "Music_Explorer")  
   
- Bölme şekli ilk test ettikten sonra bazı özelliklerini ayarlamak ve bazı daha gelişmiş özellikler eklemek isteyebilirsiniz. Daha fazla bilgi için [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).  
+   Bölme şekli ilk test ettikten sonra bazı özelliklerini ayarlamak ve bazı daha gelişmiş özellikler eklemek isteyebilirsiniz. Daha fazla bilgi için [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
 ### <a name="displaying-a-reference-link-in-a-compartment"></a>Bir referans bağlantı bir bölme içinde görüntüleme  
  Genellikle, bir bölme içinde görüntülenen bir bölme şekli tarafından temsil edilen öğesinin bir alt öğesidir. Ancak bazı durumlarda, ona bir başvuru ilişkisi ile bağlı bir öğe görüntülemek istiyorsanız.  
@@ -548,21 +548,21 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
   
  Bağlantı noktası kullanan bir örnek görmek için seçin **bileşen diyagramı** DSL yeni bir çözüm oluşturduğunuzda, şablon. Aşağıdaki örnek, bağlantı noktaları tanımlarken göz önünde ana noktaları göstermektedir:  
   
--   Bağlantı noktalarının, kapsayıcıyı temsil eden bir alan sınıfına yoktur `Component`.  
+- Bağlantı noktalarının, kapsayıcıyı temsil eden bir alan sınıfına yoktur `Component`.  
   
--   Bağlantı noktalarını temsil eden bir etki alanı sınıfı yoktur. Bu örnekte, olan `ComponentPort`.  
+- Bağlantı noktalarını temsil eden bir etki alanı sınıfı yoktur. Bu örnekte, olan `ComponentPort`.  
   
--   Bağlantı noktası etki alanı sınıfı için kapsayıcı etki alanı sınıfından gömme ilişkisi yoktur. Daha fazla bilgi için [alan sınıfları tanımlama](#classes).  
+- Bağlantı noktası etki alanı sınıfı için kapsayıcı etki alanı sınıfından gömme ilişkisi yoktur. Daha fazla bilgi için [alan sınıfları tanımlama](#classes).  
   
--   Bağlantı noktası aynı kapsayıcı üzerinde karma için farklı türde isterseniz, bağlantı noktası etki alanı sınıfı alt sınıfları oluşturabilirsiniz. Örnekte, `InPort` ve `OutPort` devralınacak `ComponentPort`.  
+- Bağlantı noktası aynı kapsayıcı üzerinde karma için farklı türde isterseniz, bağlantı noktası etki alanı sınıfı alt sınıfları oluşturabilirsiniz. Örnekte, `InPort` ve `OutPort` devralınacak `ComponentPort`.  
   
--   Kapsayıcı etki alanı sınıfı, herhangi bir türden şekil eşlenebilir. Örnek, `ComponentShape`. Daha fazla bilgi için [tanımlama şekiller](#shapes).  
+- Kapsayıcı etki alanı sınıfı, herhangi bir türden şekil eşlenebilir. Örnek, `ComponentShape`. Daha fazla bilgi için [tanımlama şekiller](#shapes).  
   
--   Bağlantı noktası etki alanı sınıfları için bağlantı noktası şekiller eşlenir. Bağlantı noktası şekil sınıflarını ayırmak için türetilmiş sınıfları harita veya bir bağlantı noktası şekli sınıfı için temel sınıf eşleyin.  
+- Bağlantı noktası etki alanı sınıfları için bağlantı noktası şekiller eşlenir. Bağlantı noktası şekil sınıflarını ayırmak için türetilmiş sınıfları harita veya bir bağlantı noktası şekli sınıfı için temel sınıf eşleyin.  
   
- Diğer açılardan, bağlantı noktası şekiller açıklandığı gibi davranır [tanımlama şekiller](#shapes).  
+  Diğer açılardan, bağlantı noktası şekiller açıklandığı gibi davranır [tanımlama şekiller](#shapes).  
   
- Daha fazla bilgi için [bağlantı noktası özellikleri şekiller](../modeling/properties-of-port-shapes.md).  
+  Daha fazla bilgi için [bağlantı noktası özellikleri şekiller](../modeling/properties-of-port-shapes.md).  
   
 ##  <a name="swimlanes"></a> Kulvarlar sahip bir DSL tanımlama  
  Kulvarlar diyagramının bir yatay veya dikey bölüm var. Kulvar her model öğesine karşılık gelir. DSL tanımını bir etki alanı sınıfı Kulvar öğeleri gerektirir.  

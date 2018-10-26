@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: abb606712365108c869ee0cfe705359ad6064228
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 911c7dd0ff70029a3ca83ded9008472269dceaed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860413"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829475"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma
 Tasarım zamanı T4 metin şablonları program kodu ve diğer dosyaları, Visual Studio projenize oluşturmanıza olanak tanır. Genellikle, böylece verileri göre hazırlanmasının kod farklılık şablonları yazma bir *model*. Bir dosya veya uygulama gereksinimleri hakkında önemli bilgiler içeren veritabanı modelidir.
@@ -40,103 +40,102 @@ Tasarım zamanı T4 metin şablonları program kodu ve diğer dosyaları, Visual
 
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Visual Studio'da bir tasarım zamanı T4 şablonu oluşturmak için
 
-1.  Visual Studio projesi oluşturun veya mevcut bir açın.
+1. Visual Studio projesi oluşturun veya mevcut bir açın.
 
-     Örneğin, **dosya** menüsünde seçin **yeni** > **proje**.
+    Örneğin, **dosya** menüsünde seçin **yeni** > **proje**.
 
-2.  Bir metin şablonu dosyasını projenize ekleyin ve uzantısına sahip bir ad verin **.tt**.
+2. Bir metin şablonu dosyasını projenize ekleyin ve uzantısına sahip bir ad verin **.tt**.
 
-     Bunu yapmak için **Çözüm Gezgini**, projenizin kısayol menüsünde **Ekle** > **yeni öğe**. İçinde **Yeni Öğe Ekle** iletişim kutusu seç **metin şablonu** Orta bölmeden.
+    Bunu yapmak için **Çözüm Gezgini**, projenizin kısayol menüsünde **Ekle** > **yeni öğe**. İçinde **Yeni Öğe Ekle** iletişim kutusu seç **metin şablonu** Orta bölmeden.
 
-     Dikkat **özel araç** dosyanın özelliği **TextTemplatingFileGenerator**.
+    Dikkat **özel araç** dosyanın özelliği **TextTemplatingFileGenerator**.
 
-3.  Dosyasını açın. Ayrıca, aşağıdaki yönergeleri zaten içerecektir:
+3. Dosyasını açın. Ayrıca, aşağıdaki yönergeleri zaten içerecektir:
 
-    ```
-    <#@ template hostspecific="false" language="C#" #>
-    <#@ output extension=".txt" #>
-    ```
+   ```
+   <#@ template hostspecific="false" language="C#" #>
+   <#@ output extension=".txt" #>
+   ```
 
-     Şablona eklediyseniz bir [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projesi dil özniteliği olacaktır "`VB`".
+    Şablona eklediyseniz bir [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projesi dil özniteliği olacaktır "`VB`".
 
-4.  Metin, dosyanın sonuna ekleyin. Örneğin:
+4. Metin, dosyanın sonuna ekleyin. Örneğin:
 
-    ```
-    Hello, world!
-    ```
+   ```
+   Hello, world!
+   ```
 
-5.  Dosyayı kaydedin.
+5. Dosyayı kaydedin.
 
-     Görebileceğiniz bir **Güvenlik Uyarısı** şablonu çalıştırmak istediğinizi onaylamanızı isteyen bir ileti kutusu. **Tamam**'ı tıklatın.
+    Görebileceğiniz bir **Güvenlik Uyarısı** şablonu çalıştırmak istediğinizi onaylamanızı isteyen bir ileti kutusu. **Tamam**'ı tıklatın.
 
-6.  İçinde **Çözüm Gezgini**, şablon dosyası düğümünü genişletin ve uzantıya sahip bir dosyayı bulabilirsiniz **.txt**. Metin şablonundan oluşturulan bir dosya içerir.
+6. İçinde **Çözüm Gezgini**, şablon dosyası düğümünü genişletin ve uzantıya sahip bir dosyayı bulabilirsiniz **.txt**. Metin şablonundan oluşturulan bir dosya içerir.
 
-    > [!NOTE]
-    >  Projenizi Visual Basic projesi ise,'a tıklamalıdır **tüm dosyaları göster** çıktı dosyasını görmek için.
+   > [!NOTE]
+   >  Projenizi Visual Basic projesi ise,'a tıklamalıdır **tüm dosyaları göster** çıktı dosyasını görmek için.
 
 ### <a name="regenerating-the-code"></a>Kod oluşturma işlemi sürüyor
  Aşağıdaki durumlarda hiçbirinde paketinizle dosyası oluşturmanın bir şablon yürütülecek:
 
--   Şablon düzenleyin ve sonra farklı bir Visual Studio penceresine odak değiştirin.
+- Şablon düzenleyin ve sonra farklı bir Visual Studio penceresine odak değiştirin.
 
--   Şablonu kaydedin.
+- Şablonu kaydedin.
 
--   Tıklayın **tüm Şablonları Dönüştür** içinde **derleme** menüsü. Bu, Visual Studio çözümünde tüm şablonları dönüştürme.
+- Tıklayın **tüm Şablonları Dönüştür** içinde **derleme** menüsü. Bu, Visual Studio çözümünde tüm şablonları dönüştürme.
 
--   İçinde **Çözüm Gezgini**, kısayol menüsünden herhangi dosya öğesini **özel aracı Çalıştır**. Seçili şablonları kümesini dönüştürmek için bu yöntemi kullanın.
+- İçinde **Çözüm Gezgini**, kısayol menüsünden herhangi dosya öğesini **özel aracı Çalıştır**. Seçili şablonları kümesini dönüştürmek için bu yöntemi kullanın.
 
- Böylece şablonları okurlar veri dosyalar değiştiğinde yürütülen bir Visual Studio projesi de ayarlayabilirsiniz. Daha fazla bilgi için [kodu otomatik olarak yeniden](#Regenerating).
+  Böylece şablonları okurlar veri dosyalar değiştiğinde yürütülen bir Visual Studio projesi de ayarlayabilirsiniz. Daha fazla bilgi için [kodu otomatik olarak yeniden](#Regenerating).
 
 ## <a name="generating-variable-text"></a>Değişken metin oluşturma
  Metin şablonları oluşturulan dosyanın içeriğini değiştirmek için program kodu kullanmanıza izin verir.
 
 #### <a name="to-generate-text-by-using-program-code"></a>Program kodu kullanarak metin oluşturmak için
 
-1.  İçeriğini değiştirme `.tt` dosyası:
+1. İçeriğini değiştirme `.tt` dosyası:
 
-    ```csharp
-    <#@ template hostspecific="false" language="C#" #>
-    <#@ output extension=".txt" #>
-    <#int top = 10;
+   ```csharp
+   <#@ template hostspecific="false" language="C#" #>
+   <#@ output extension=".txt" #>
+   <#int top = 10;
 
-    for (int i = 0; i<=top; i++)
-    { #>
+   for (int i = 0; i<=top; i++)
+   { #>
+      The square of <#= i #> is <#= i*i #>
+   <# } #>
+   ```
+
+   ```vb
+   <#@ template hostspecific="false" language="VB" #>
+   <#@ output extension=".txt" #>
+   <#Dim top As Integer = 10
+
+   For i As Integer = 0 To top
+   #>
        The square of <#= i #> is <#= i*i #>
-    <# } #>
-    ```
+   <#
+   Next
+   #>
+   ```
 
-    ```vb
-    <#@ template hostspecific="false" language="VB" #>
-    <#@ output extension=".txt" #>
-    <#Dim top As Integer = 10
+2. .Tt dosyasını kaydedin ve yeniden oluşturulmuş bir .txt dosyasını inceleyin. 0 sayıların 10 kareleri listeler.
 
-    For i As Integer = 0 To top
-    #>
-        The square of <#= i #> is <#= i*i #>
-    <#
-    Next
-    #>
+   Deyimleri içinde alındığına dikkat edin `<#...#>`ve tek bir ifade içinde `<#=...#>`. Daha fazla bilgi için [T4 metin şablonu yazma](../modeling/writing-a-t4-text-template.md).
 
-    ```
-
-2.  .Tt dosyasını kaydedin ve yeniden oluşturulmuş bir .txt dosyasını inceleyin. 0 sayıların 10 kareleri listeler.
-
- Deyimleri içinde alındığına dikkat edin `<#...#>`ve tek bir ifade içinde `<#=...#>`. Daha fazla bilgi için [T4 metin şablonu yazma](../modeling/writing-a-t4-text-template.md).
-
- Kod yazarsanız [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], `template` yönergesi içermelidir `language="VB"`. `"C#"` varsayılandır.
+   Kod yazarsanız [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], `template` yönergesi içermelidir `language="VB"`. `"C#"` varsayılandır.
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>Tasarım zamanı T4 metin şablonuna ilişkin hata ayıklama
  Bir metin şablonunda hata ayıklama için:
 
--   INSERT `debug="true"` içine `template` yönergesi. Örneğin:
+- INSERT `debug="true"` içine `template` yönergesi. Örneğin:
 
-     `<#@ template debug="true" hostspecific="false" language="C#" #>`
+   `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
--   Kesme noktaları şablonda, sıradan bir kod için yaptığınız şekilde ayarlayın.
+- Kesme noktaları şablonda, sıradan bir kod için yaptığınız şekilde ayarlayın.
 
--   Seçin **T4 şablonunda Hata Ayıkla** Çözüm Gezgini'ndeki metin şablonu dosyasının kısayol menüsünden.
+- Seçin **T4 şablonunda Hata Ayıkla** Çözüm Gezgini'ndeki metin şablonu dosyasının kısayol menüsünden.
 
- Şablon çalıştırın ve kesme noktalarında durdurun. Değişkenleri incelemek ve her zamanki yolla kodda adım adım.
+  Şablon çalıştırın ve kesme noktalarında durdurun. Değişkenleri incelemek ve her zamanki yolla kodda adım adım.
 
 > [!TIP]
 >  `debug="true"` oluşturulan kodun daha doğru bir şekilde daha fazla satır yönergeleri oluşturulan koda numaralandırmasını ekleyerek metin şablonu için eşleme sağlar. Teslim değiştirmeden bırakırsanız, kesme noktaları durumu yanlış çalıştırmasında durabilir.
@@ -203,13 +202,13 @@ Tasarım zamanı T4 metin şablonları program kodu ve diğer dosyaları, Visual
 ### <a name="structuring-text-templates"></a>Metin şablonları yapılandırma
  Birkaç iyi uygulama, biz şablon kodunu iki bölüme ayırın eğilimi gösterir:
 
--   Bir yapılandırma veya değişkenleri değerleri ayarlar, ancak metin blokları içermiyor veri toplama bölümü. Önceki örnekte, bu başlatma parçasıdır `properties`.
+- Bir yapılandırma veya değişkenleri değerleri ayarlar, ancak metin blokları içermiyor veri toplama bölümü. Önceki örnekte, bu başlatma parçasıdır `properties`.
 
-     Mağaza modeli oluşturur ve genellikle bir model dosyasını okuyan buna bazen "modeli" bölümünde verilir.
+   Mağaza modeli oluşturur ve genellikle bir model dosyasını okuyan buna bazen "modeli" bölümünde verilir.
 
--   Metin oluşturma bölümü (`foreach(...){...}` örnekte), değişkenlerin değerleri kullanır.
+- Metin oluşturma bölümü (`foreach(...){...}` örnekte), değişkenlerin değerleri kullanır.
 
- Bu gerekli bir ayrım değildir, ancak şablon metni içeren bölümü karmaşıklığını azaltmayı tarafından okunacak kolaylaştıran bir stili.
+  Bu gerekli bir ayrım değildir, ancak şablon metni içeren bölümü karmaşıklığını azaltmayı tarafından okunacak kolaylaştıran bir stili.
 
 ## <a name="reading-files-or-other-sources"></a>Okuma dosyaları veya diğer kaynaklar
  Bir model dosyası veya veritabanına erişmek için şablon kodunuz derlemeleri System.XML gibi kullanabilirsiniz. Bu derlemeler erişim kazanmak için şunlar gibi yönergeleri eklemeniz gerekir:
@@ -236,7 +235,6 @@ Tasarım zamanı T4 metin şablonları program kodu ve diğer dosyaları, Visual
 <# For Each propertyName As String In
              File.ReadLines("C:\\propertyList.txt")
 #>
-
 ```
 
 ### <a name="opening-a-file-with-a-relative-pathname"></a>Göreli bir yol adına sahip bir dosyayı açma
@@ -244,7 +242,6 @@ Tasarım zamanı T4 metin şablonları program kodu ve diğer dosyaları, Visual
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
-
 ```
 
  Ardından, örneğin yazabilirsiniz:
@@ -256,7 +253,6 @@ Tasarım zamanı T4 metin şablonları program kodu ve diğer dosyaları, Visual
 ...
 <#  foreach (string propertyName in properties { #>
 ...
-
 ```
 
 ```vb
@@ -267,7 +263,6 @@ Tasarım zamanı T4 metin şablonları program kodu ve diğer dosyaları, Visual
 <#   For Each propertyName As String In properties
 ...
 #>
-
 ```
 
  Ayrıca `this.Host.TemplateFile`, geçerli şablon dosyasına adını tanımlar.
@@ -287,7 +282,6 @@ Tasarım zamanı T4 metin şablonları program kodu ve diğer dosyaları, Visual
 #>
 
 Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
-
 ```
 
 > [!TIP]
@@ -326,37 +320,39 @@ Warning("A warning message");
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Var olan bir dosya için bir tasarım zamanı şablonu dönüştürmek için
 
-1.  Visual Studio projenize eklemek gibi oluşturmak istediğiniz türde bir dosya bir `.cs`, `.vb`, veya `.resx` dosya.
+1. Visual Studio projenize eklemek gibi oluşturmak istediğiniz türde bir dosya bir `.cs`, `.vb`, veya `.resx` dosya.
 
-2.  Yeni dosyanın çalıştığından emin olmak için test edin.
+2. Yeni dosyanın çalıştığından emin olmak için test edin.
 
-3.  Çözüm Gezgini'nde dosya adı uzantısı için değiştirme **.tt**.
+3. Çözüm Gezgini'nde dosya adı uzantısı için değiştirme **.tt**.
 
-4.  Aşağıdaki özelliklerini doğrulamanızı **.tt** dosyası:
+4. Aşağıdaki özelliklerini doğrulamanızı **.tt** dosyası:
 
-    |||
-    |-|-|
-    |**Özel araç =**|**TextTemplatingFileGenerator**|
-    |**Build Action =**|**Yok**|
 
-5.  Dosyanın başına aşağıdaki satırları ekleyin:
+   | | |
+   |-|-|
+   | **Özel araç =** | **TextTemplatingFileGenerator** |
+   | **Build Action =** | **Yok** |
 
-    ```
-    <#@ template debug="false" hostspecific="false" language="C#" #>
-    <#@ output extension=".cs" #>
-    ```
 
-     Şablonunuzda oluşturma kodunu yazmak isterseniz [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]ayarlayın `language` özniteliğini `"VB"` yerine `"C#"`.
+5. Dosyanın başına aşağıdaki satırları ekleyin:
 
-     Ayarlama `extension` , örneğin oluşturmak istediğiniz dosya türünü dosya adı uzantısı özniteliği `.cs`, `.resx`, veya `.xml`.
+   ```
+   <#@ template debug="false" hostspecific="false" language="C#" #>
+   <#@ output extension=".cs" #>
+   ```
 
-6.  Dosyayı kaydedin.
+    Şablonunuzda oluşturma kodunu yazmak isterseniz [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]ayarlayın `language` özniteliğini `"VB"` yerine `"C#"`.
 
-     Belirtilen uzantı ile paketinizle bir dosya oluşturulur. Özellikleri, dosya türü için doğrudur. Örneğin, **derleme eylemi** .cs dosyası özelliğini olacak **derleme**.
+    Ayarlama `extension` , örneğin oluşturmak istediğiniz dosya türünü dosya adı uzantısı özniteliği `.cs`, `.resx`, veya `.xml`.
 
-     Oluşturulan dosyanın özgün dosyayla aynı içerik içerdiğini doğrulayın.
+6. Dosyayı kaydedin.
 
-7.  Değiştirmek için istediğiniz dosya belirleyin. Örneğin, yalnızca belirli koşullar altında görünür bir bölümü veya bir bölümü, yinelenen veya belirli değerlerin nereden değişir. Oluşturma kodunu ekleyin. Dosyayı kaydedin ve dosyası doğru şekilde oluşturulduğunu doğrulayın. Bu adımı yineleyin.
+    Belirtilen uzantı ile paketinizle bir dosya oluşturulur. Özellikleri, dosya türü için doğrudur. Örneğin, **derleme eylemi** .cs dosyası özelliğini olacak **derleme**.
+
+    Oluşturulan dosyanın özgün dosyayla aynı içerik içerdiğini doğrulayın.
+
+7. Değiştirmek için istediğiniz dosya belirleyin. Örneğin, yalnızca belirli koşullar altında görünür bir bölümü veya bir bölümü, yinelenen veya belirli değerlerin nereden değişir. Oluşturma kodunu ekleyin. Dosyayı kaydedin ve dosyası doğru şekilde oluşturulduğunu doğrulayın. Bu adımı yineleyin.
 
 ## <a name="guidelines-for-code-generation"></a>Kod oluşturma için yönergeler
  Lütfen [için T4 metin şablonları yazma yönergeleri](../modeling/guidelines-for-writing-t4-text-templates.md).
@@ -364,7 +360,7 @@ Warning("A warning message");
 ## <a name="next-steps"></a>Sonraki adımlar
 
 |Sonraki adım|Konu|
-|---------------|-----------|
+|-|-|
 |Yardımcı işlevleri, dahil edilen dosyalar ve dış veri kullanan kod ile daha gelişmiş bir metin şablonunda hata ayıklama ve yazabilirsiniz.|[T4 Metin Şablonu Yazma](../modeling/writing-a-t4-text-template.md)|
 |Belgelere, çalışma zamanında şablon oluşturma.|[T4 Metin Şablonları İle Çalışma Süresi Metni Oluşturma](../modeling/run-time-text-generation-with-t4-text-templates.md)|
 |Visual Studio dışında metin oluşturma çalıştırın.|[TextTransform Yardımcı Programı ile Dosya Oluşturma](../modeling/generating-files-with-the-texttransform-utility.md)|

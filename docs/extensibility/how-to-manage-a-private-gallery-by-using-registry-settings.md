@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72e4648643e60939fb74d69f960342d14b8a5d1b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2351c048576d6cf0e93515df8bdce34eef09bfc8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638889"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854669"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Nasıl yapılır: kayıt defteri ayarlarını kullanarak özel bir galeriyi yönetme
 Bir yönetici veya Geliştirici yalıtılmış kabuk uzantısı, denetimleri, şablonlar ve araçlar Visual Studio Galerisi, Örnekler Galerisi veya özel galeriler erişimi denetleyebilirsiniz. Bir galeri kullanılabilir veya kullanılamaz hale getirmek için oluşturma bir *.pkgdef* değiştirilen kayıt defteri anahtarları ve değerlerini açıklayan dosyası.  
@@ -41,17 +41,17 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
  `Repositories` Anahtar etkin veya devre dışı bırakılacak Galerisine başvuruyor. Visual Studio Galerisi'ne ve Örnekler Galerisi GUID'lerini aşağıdaki depoyu kullanın:  
   
--   Visual Studio Galerisi: 0F45E408-7995-4375-9485-86B8DB553DC9  
+- Visual Studio Galerisi: 0F45E408-7995-4375-9485-86B8DB553DC9  
   
--   Örnekler Galerisi: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
+- Örnekler Galerisi: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
   
- `Disabled` Değeri, isteğe bağlıdır. Varsayılan olarak, bir galeri etkinleştirilir.  
+  `Disabled` Değeri, isteğe bağlıdır. Varsayılan olarak, bir galeri etkinleştirilir.  
   
- `Priority` Değeri içinde Galerilerde listelenir sırasını belirleyen **seçenekleri** iletişim kutusu. Visual Studio Galerisi 10 öncelikli ve öncelik 20 Örnekler Galerisi sahiptir. Özel galeriler 100 öncelikli olarak başlatın. Birkaç galeriler aynı öncelik değeri varsa, bunların yerelleştirilmiş değerini göründükleri sırayla belirlenir `DisplayName` öznitelikleri.  
+  `Priority` Değeri içinde Galerilerde listelenir sırasını belirleyen **seçenekleri** iletişim kutusu. Visual Studio Galerisi 10 öncelikli ve öncelik 20 Örnekler Galerisi sahiptir. Özel galeriler 100 öncelikli olarak başlatın. Birkaç galeriler aynı öncelik değeri varsa, bunların yerelleştirilmiş değerini göründükleri sırayla belirlenir `DisplayName` öznitelikleri.  
   
- `Protocol` Atom veya SharePoint tabanlı galerileri değeri gereklidir.  
+  `Protocol` Atom veya SharePoint tabanlı galerileri değeri gereklidir.  
   
- Ya da `DisplayName`, veya her ikisini de `DisplayNameResourceID` ve `DisplayNamePackageGuid`, belirtilmesi gerekir. Tüm belirtilirse, ardından `DisplayNameResourceID` ve `DisplayNamePackageGuid` çifti kullanılır.  
+  Ya da `DisplayName`, veya her ikisini de `DisplayNameResourceID` ve `DisplayNamePackageGuid`, belirtilmesi gerekir. Tüm belirtilirse, ardından `DisplayNameResourceID` ve `DisplayNamePackageGuid` çifti kullanılır.  
   
 ## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>Visual Studio Galerisi .pkgdef dosyası kullanarak devre dışı bırak  
  Galeride devre dışı bırakabilirsiniz bir *.pkgdef* dosya. Şu giriş, Visual Studio Galerisi devre dışı bırakır:  

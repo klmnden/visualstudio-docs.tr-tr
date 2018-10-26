@@ -13,12 +13,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 819f64b9d526cc307f0f9fbd0a35db5d4e7bd1ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a566a6aa73ef9b1e3729248b14b0f3879f21d21c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176572"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898785"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü Sistem Gereksinimleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,76 +50,76 @@ Android için Visual Studio öykünücü Hyper-V sanallaştırma teknolojisini W
   
  Sistem gereksinimleri  
   
--   Hyper-V desteği (Hyper-V gereksinimler için aşağıya bakın)  
+- Hyper-V desteği (Hyper-V gereksinimler için aşağıya bakın)  
   
--   6 GB veya daha fazla RAM.  
+- 6 GB veya daha fazla RAM.  
   
--   Pro sürümü Windows 8, Windows 8.1, Windows 10 veya üzerinin 64 bit sürümü  
+- Pro sürümü Windows 8, Windows 8.1, Windows 10 veya üzerinin 64 bit sürümü  
   
--   SSSE3 destekleyen bir işlemci veya üzeri.  
+- SSSE3 destekleyen bir işlemci veya üzeri.  
   
- Ağ gereksinimleri  
+  Ağ gereksinimleri  
   
--   DHCP  
+- DHCP  
   
--   Otomatik olarak yapılandırılan DNS ve ağ geçidi ayarları  
+- Otomatik olarak yapılandırılan DNS ve ağ geçidi ayarları  
   
- Hyper-V gereksinimleri  
+  Hyper-V gereksinimleri  
   
--   Aşağıdaki özellikler BIOS'ta desteklenmesi gerekir:  
+- Aşağıdaki özellikler BIOS'ta desteklenmesi gerekir:  
   
-    -   Donanım destekli sanallaştırma  
+  -   Donanım destekli sanallaştırma  
   
-    -   İkinci düzey adres çevirisi (SLAT)  
+  -   İkinci düzey adres çevirisi (SLAT)  
   
-    -   Donanım tabanlı Veri Yürütme Engellemesi (DEP)  
+  -   Donanım tabanlı Veri Yürütme Engellemesi (DEP)  
   
--   Windows Hyper-V etkinleştirilmiş ve çalışıyor olması gerekir.  
+- Windows Hyper-V etkinleştirilmiş ve çalışıyor olması gerekir.  
   
--   Yerel Hyper-V Yöneticileri grubunun bir üyesi olmanız gerekir.  
+- Yerel Hyper-V Yöneticileri grubunun bir üyesi olmanız gerekir.  
   
 ##  <a name="System"></a> Sistem gereksinimleri  
  Bilgisayarınız, aşağıdaki gereksinimleri karşılamalıdır:  
   
--   Hyper-V desteği (bkz [Hyper-V gereksinimleri](#HyperV))  
+- Hyper-V desteği (bkz [Hyper-V gereksinimleri](#HyperV))  
   
--   6 GB veya daha fazla RAM.  
+- 6 GB veya daha fazla RAM.  
   
--   Windows 8, Windows 8.1, Windows 10 veya daha yüksek Pro sürümü 64-bit sürümü.  
+- Windows 8, Windows 8.1, Windows 10 veya daha yüksek Pro sürümü 64-bit sürümü.  
   
- RAM ve Denetim Masası ' nda Windows gereksinimleri denetlemek için sistem ve güvenlik seçin ve ardından sistemi seçin.  
+  RAM ve Denetim Masası ' nda Windows gereksinimleri denetlemek için sistem ve güvenlik seçin ve ardından sistemi seçin.  
   
- ![Sistem gereksinimlerini doğrulayın](../cross-platform/media/android-emu-system-requirements.png "Android_Emu_System_Requirements")  
+  ![Sistem gereksinimlerini doğrulayın](../cross-platform/media/android-emu-system-requirements.png "Android_Emu_System_Requirements")  
   
 ##  <a name="Network"></a> Ağ gereksinimleri  
  Ağınızda aşağıdaki gereksinimleri karşılaması gerekir:  
   
--   DHCP  
+- DHCP  
   
-     Kendi IP adresini ağ üzerinde ayrı bir cihaz olarak kendisini yapılandırır için öykünücü DHCP gerektirir.  
+   Kendi IP adresini ağ üzerinde ayrı bir cihaz olarak kendisini yapılandırır için öykünücü DHCP gerektirir.  
   
--   Otomatik olarak yapılandırılan DNS ve ağ geçidi ayarları  
+- Otomatik olarak yapılandırılan DNS ve ağ geçidi ayarları  
   
-     Öykünücü için el ile DNS ve ağ geçidi ayarlarını yapılandırmak mümkün değildir.  
+   Öykünücü için el ile DNS ve ağ geçidi ayarlarını yapılandırmak mümkün değildir.  
   
- Öykünücü'de ağ sorunlarını gidermek için aşağıdaki konulara bakın:  
+  Öykünücü'de ağ sorunlarını gidermek için aşağıdaki konulara bakın:  
   
--   [Android için Visual Studio Öykünücüsü’nde Sorun Giderme](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
+- [Android için Visual Studio Öykünücüsü’nde Sorun Giderme](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
   
 ##  <a name="HyperV"></a> Hyper-V gereksinimleri  
  BIOS'u Hyper-V gereksinimleri  
   
  Bilgisayarınızın BIOS aşağıdaki gereksinimleri desteklemesi gerekir ve etkinleştirilmesi gerekir:  
   
--   Donanım destekli sanallaştırma  
+- Donanım destekli sanallaştırma  
   
--   İkinci düzey adres çevirisi (SLAT)  
+- İkinci düzey adres çevirisi (SLAT)  
   
--   Donanım tabanlı Veri Yürütme Engellemesi (DEP)  
+- Donanım tabanlı Veri Yürütme Engellemesi (DEP)  
   
- Windows Hyper-V gereksinimleri  
+  Windows Hyper-V gereksinimleri  
   
- Bilgisayar ve BIOS ayarları zaten Hyper-V desteklemek üzere yapılandırıldığında, Kurulum programını sağlar ve Hyper-V başlatır. Aksi takdirde bu gereksinimleri el ile etkinleştirmeniz gerekebilir.  
+  Bilgisayar ve BIOS ayarları zaten Hyper-V desteklemek üzere yapılandırıldığında, Kurulum programını sağlar ve Hyper-V başlatır. Aksi takdirde bu gereksinimleri el ile etkinleştirmeniz gerekebilir.  
   
 |Gereksinim|Denetleyin ve bu gereksinim etkinleştirme|  
 |-----------------|----------------------------------------------|  
@@ -147,15 +147,15 @@ Android için Visual Studio öykünücü Hyper-V sanallaştırma teknolojisini W
 ##  <a name="Files"></a> Hyper-V sıkıştırılmamış ve şifrelenmemiş dosyaları gerektirir.  
  Bir sabit sürücüde NTFS dosya sistemi ile yapılandırılmış Hyper-V tarafından kullanılan sanal sabit disk dosyalarını sıkıştırılmamış ve şifrelenmemiş. Aşağıdaki dizinler sıkıştırılmış veya şifrelenmiş değil, emin olun:  
   
--   %localappdata%\Microsoft\XDE  
+- %localappdata%\Microsoft\XDE  
   
--   C:\Program dosyaları (x86) \Microsoft öykünücü yöneticisi  
+- C:\Program dosyaları (x86) \Microsoft öykünücü yöneticisi  
   
--   C:\Program Files (x86)\Microsoft Visual Studio Emulator for Android  
+- C:\Program Files (x86)\Microsoft Visual Studio Emulator for Android  
   
--   %localappdata%\Microsoft\VisualStudioEmulator  
+- %localappdata%\Microsoft\VisualStudioEmulator  
   
- ReFS dosya sistemi sanal sabit disk dosyalarını bütünlüğü bit kümesi olmamalıdır.  
+  ReFS dosya sistemi sanal sabit disk dosyalarını bütünlüğü bit kümesi olmamalıdır.  
   
 ## <a name="hardware-graphics-forwarding-opengl-es-support-requirements"></a>Donanım gereksinimleri grafik iletme (OpenGL ES desteği)  
  OpenGL ES tarafından kullanılanlar gibi GPU çağrıları benzetmek öykünücüsü makinenize DirectX uyumlu GPU'ya uygun DirectX sürücüleri yüklü olması gerekir.  

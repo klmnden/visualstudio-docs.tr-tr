@@ -1,5 +1,5 @@
 ---
-title: İş Akışı Tasarımcısı - çekme etkinlik Tasarımcısı
+title: İş Akışı Tasarımcısı - Pick etkinlik Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,34 +12,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb12deec8bba5ac7974b0aa730726f309f1c9c46
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 5bd37c78567ea11d53899bcbaefb2e3809a00057
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757757"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826017"
 ---
 # <a name="pick-activity-designer"></a>Pick Etkinlik Tasarımcısı
 
-<xref:System.Activities.Statements.Pick> Olay tabanlı denetim akışı etkinliği sağlar. Etkinlik birçok dalı birini tetikleyici bir olaya yanıt olarak yürütür.
+<xref:System.Activities.Statements.Pick> Olay tabanlı denetim akış etkinliği sağlar. Etkinlik birden fazla dalları birini bir tetikleyici olaya yanıt olarak yürütür.
 
-## <a name="the-pick-activity"></a>Çekme Etkinlik
+## <a name="the-pick-activity"></a>Pick etkinliği
 
-A <xref:System.Activities.Statements.Pick> etkinlik içeren bir koleksiyonu <xref:System.Activities.Statements.PickBranch> nesneleri, bunlardan biri <xref:System.Activities.Statements.Pick> etkinlik tetikleyici olarak hizmet veren bazı gelen olayı nedeniyle yürütebilir. Bu şekilde, olay tabanlı denetim akışı modelleme iş akışı Tasarımcısı sağlar. Her <xref:System.Activities.Statements.PickBranch> içeren bir <xref:System.Activities.Statements.PickBranch.Trigger%2A> ve bir <xref:System.Activities.Statements.PickBranch.Action%2A>. Başında bir <xref:System.Activities.Statements.Pick> etkinliğin yürütme, tüm tetikleyici etkinliklerini <xref:System.Activities.Statements.PickBranch> öğeleri zamanlanır. İlk etkinlik tamamlandıktan sonra karşılık gelen eylem etkinlik zamanlanır ve diğer tüm tetikleyici etkinlikleri iptal edilir.
+A <xref:System.Activities.Statements.Pick> etkinliği içeren bir koleksiyonu <xref:System.Activities.Statements.PickBranch> nesneler, biri <xref:System.Activities.Statements.Pick> etkinlik, bir tetikleyici olarak hizmet veren bazı gelen bir olay nedeniyle yürütebilir. Bu şekilde, iş akışı Tasarımcısı olay tabanlı denetim akış modelleme sağlar. Her <xref:System.Activities.Statements.PickBranch> içeren bir <xref:System.Activities.Statements.PickBranch.Trigger%2A> ve <xref:System.Activities.Statements.PickBranch.Action%2A>. Başında bir <xref:System.Activities.Statements.Pick> etkinliğin yürütme, tüm tetikleyici etkinliklerini <xref:System.Activities.Statements.PickBranch> öğeleri zamanlanır. İlk etkinlik tamamlandıktan sonra karşılık gelen eylem etkinliği zamanlandı ve diğer tetikleyici etkinlikleri iptal edilir.
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>Çekme Etkinlik Tasarımcısı kullanma
 
-Erişim **çekme** etkinlik Tasarımcısı'nda **akış denetimi** kategorisini **araç**. **Çekme** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve etkinlik tasarımcıları normalde, örneğin içine yerleştirilen her yerde iş akışı Tasarımcısı yüzeyini açın bırakılan bir  **Sıra** etkinlik Tasarımcısı. İş Akışı Tasarımcısı'na bırakarak sonra oluşturduğu bir <xref:System.Activities.Statements.Pick> içeren varsayılan olarak iki boş etkinlik <xref:System.Activities.Statements.PickBranch> etkinlikleri ile öğeleri olarak Branch1 ve Branch2 adlarını görüntüler. Bu ilgili <xref:System.Activities.Statements.PickBranch.DisplayName%2A> özellik değerlerini düzenlenebilir **PickBranch** etkinlik Tasarımcısı üstbilgisi veya içinde **özellikleri** her dal için penceresi.
+Erişim **çekme** etkinlik Tasarımcısı'nda **akış denetimi** kategorisi **araç kutusu**. **Çekme** etkinlik Tasarımcısı, gelen sürüklenebilir **araç kutusu** ve etkinlik tasarımcıları normalde, örneğin içine yerleştirilen her yerde iş akışı Tasarımcısı yüzeyine açın bırakılan bir  **Dizisi** etkinlik Tasarımcısı. İş Akışı Tasarımcısı'na bırakarak sonra oluşturduğu bir <xref:System.Activities.Statements.Pick> içeren varsayılan olarak iki boş etkinlik <xref:System.Activities.Statements.PickBranch> etkinlikleri öğelerle olarak görünen adlar Branch1 ve Branch2. Bu ilgili <xref:System.Activities.Statements.PickBranch.DisplayName%2A> özellik değerlerini düzenlenebilir **PickBranch** etkinlik Tasarımcısı üst bilgi veya içinde **özellikleri** her dal için penceresi.
 
-Eklemek için iki yolla <xref:System.Activities.Statements.PickBranch> etkinlikler koleksiyonu için bir <xref:System.Activities.Statements.Pick> nesne: sürükleme ve bırakma **PickBranch** gelen Tasarımcı **araç kutusu** veya bağlam menüsünden kullanarak içinde **çekme** tasarım yüzeyi. Ayrıntılar için bkz [PickBranch](../workflow-designer/pickbranch-activity-designer.md) konu. İçinde yalnızca öğesini bildirimi yerleştirilebilen bir **çekme** etkinlik Tasarımcısı bir **PickBranch** etkinlik Tasarımcısı.
+Eklemek için iki yolu vardır <xref:System.Activities.Statements.PickBranch> etkinlikleri koleksiyonuna bir <xref:System.Activities.Statements.Pick> nesne: sürükleme ve bırakma **PickBranch** nden Tasarımcı **araç kutusu** veya bağlam menüsünden kullanarak içinde **çekme** tasarım yüzeyi. Ayrıntılar için bkz [PickBranch](../workflow-designer/pickbranch-activity-designer.md) konu. Yalnızca öğesini dikkat edin, içine yerleştirilebilir bir **çekme** etkinlik Tasarımcısı bir **PickBranch** etkinlik Tasarımcısı.
 
-### <a name="pick-activity-properties-in-the-workflow-designer"></a>İş Akışı Tasarımcısı'nda etkinlik özellikleri seçin
+### <a name="pick-activity-properties-in-the-workflow-designer"></a>İş akışı tasarımcısında etkinlik özellikleri seçin
 
-Aşağıdaki tabloda <xref:System.Activities.Statements.Pick> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikler, özellik kılavuzu veya tasarımcı yüzeyine düzenlenebilir.
+Aşağıdaki tabloda <xref:System.Activities.Statements.Pick> özellikleri Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikler, özellik kılavuzu veya tasarımcı yüzeyine düzenlenebilir.
 
 |Özellik adı|Gerekli|Kullanım|
-|-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Kolay adı belirtir <xref:System.Activities.Statements.Pick> etkinlik Tasarımcısı'nda başlığı. Çekme varsayılan değerdir. Değeri, özellik kılavuzu veya etkinlik Tasarımcısı başlığındaki doğrudan düzenlenebilir.<br /><br /> Ancak <xref:System.Activities.Activity.DisplayName%2A> kesinlikle gerekli değil kullanmak için en iyi bir uygulamadır.|
+|-|--------------|-|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Kolay adı belirtir <xref:System.Activities.Statements.Pick> üst bilgisindeki etkinlik Tasarımcısı. Seçim varsayılan değerdir. Değer özellik kılavuzunda veya etkinlik Tasarımcısı başlığındaki doğrudan düzenleyebilirsiniz.<br /><br /> Ancak <xref:System.Activities.Activity.DisplayName%2A> kati şekilde gerekli değil kullanmak için en iyi bir uygulamadır.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

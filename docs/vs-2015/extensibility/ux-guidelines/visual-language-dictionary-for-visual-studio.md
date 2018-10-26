@@ -13,12 +13,12 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 250e7c80e47b9ea53306697d57b305fdcc9c645c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f5a8ec02368c5a05587665f1e41b55b2daba409
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267637"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886402"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Visual Studio için görsel dil sözlüğü
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
   
  **Genel yönergeler**  
   
--   Görsel bu kavramları kendi sözlükten ile tutarlı bir şekilde kullanılması gerekir. Aksi takdirde, kafa karıştırıcı beklediğiniz tutarlı anlamları için ortak öğeler, kullanıcılar, risk.  
+- Görsel bu kavramları kendi sözlükten ile tutarlı bir şekilde kullanılması gerekir. Aksi takdirde, kafa karıştırıcı beklediğiniz tutarlı anlamları için ortak öğeler, kullanıcılar, risk.  
   
--   Böylece tanımayı NET ve kolay ayırt etmek yalnızca en ilgili ve önemli kavramlar kullanmak için simgeleri seçin.  
+- Böylece tanımayı NET ve kolay ayırt etmek yalnızca en ilgili ve önemli kavramlar kullanmak için simgeleri seçin.  
   
--   Her bir resim, yalnızca bir veya iki kavramları kullanın.  
+- Her bir resim, yalnızca bir veya iki kavramları kullanın.  
   
--   Tasarlama simgeler için daha fazla stratejileri için bkz [simgesi tasarım](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign).  
+- Tasarlama simgeler için daha fazla stratejileri için bkz [simgesi tasarım](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign).  
   
- **Bölümüne atla:**  
+  **Bölümüne atla:**  
   
 1.  [Kavramları A-Z](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDConcepts)  
   

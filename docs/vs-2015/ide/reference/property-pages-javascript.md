@@ -22,12 +22,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3753c11851c1ab4f5e9e32df55c37f0b22d2f3bc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 586ad4352dfdf88aef87d4f9c815a776f85a6a82
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206836"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904199"
 ---
 # <a name="property-pages-javascript"></a>Özellik Sayfaları, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -73,26 +73,26 @@ ms.locfileid: "49206836"
  **Hata ayıklayıcıyı başlatmak için**  
  Hata ayıklayıcı için varsayılan ana bilgisayar belirtir.  
   
--   Seçin **yerel makine** Visual Studio ana bilgisayarda uygulamayı başlatmak için. Daha fazla bilgi için [yerel makine üzerinde çalışan uygulamalar](http://go.microsoft.com/fwlink/?LinkId=234912).  
+- Seçin **yerel makine** Visual Studio ana bilgisayarda uygulamayı başlatmak için. Daha fazla bilgi için [yerel makine üzerinde çalışan uygulamalar](http://go.microsoft.com/fwlink/?LinkId=234912).  
   
--   Seçin **simülatör** Simulator'da uygulamayı başlatmak için. Daha fazla bilgi için [uygulamaları simülatörde çalıştırılan](http://go.microsoft.com/fwlink/?LinkId=234913).  
+- Seçin **simülatör** Simulator'da uygulamayı başlatmak için. Daha fazla bilgi için [uygulamaları simülatörde çalıştırılan](http://go.microsoft.com/fwlink/?LinkId=234913).  
   
--   Seçin **uzak makine** uzak bir bilgisayarda uygulamayı başlatmak için. Uzaktan hata ayıklama hakkında daha fazla bilgi için bkz. [uzak makinede çalışan uygulamalar](http://go.microsoft.com/fwlink/?LinkId=234914).  
+- Seçin **uzak makine** uzak bir bilgisayarda uygulamayı başlatmak için. Uzaktan hata ayıklama hakkında daha fazla bilgi için bkz. [uzak makinede çalışan uygulamalar](http://go.microsoft.com/fwlink/?LinkId=234914).  
   
- **Uygulamayı Başlat**  
- F5 tuşuna basın veya tıklayın uygulamanın başlatılıp başlatılmayacağını belirtir **hata ayıklama**, **hata ayıklamayı Başlat**. Seçin **Evet** için uygulamayı başlatın; Aksi takdirde seçin **Hayır**. Seçerseniz **Hayır**, başlatmak için farklı bir yöntem kullanıyorsanız yine de uygulamayı ayıklayabilirsiniz.  
+  **Uygulamayı Başlat**  
+  F5 tuşuna basın veya tıklayın uygulamanın başlatılıp başlatılmayacağını belirtir **hata ayıklama**, **hata ayıklamayı Başlat**. Seçin **Evet** için uygulamayı başlatın; Aksi takdirde seçin **Hayır**. Seçerseniz **Hayır**, başlatmak için farklı bir yöntem kullanıyorsanız yine de uygulamayı ayıklayabilirsiniz.  
   
- **Hata ayıklayıcı türü**  
- Hata ayıklanacak kod türlerini belirtir. Seçin **yalnızca betik** JavaScript kod hatası ayıklamak için. Seçin **yalnızca yönetilen** ortak dil çalışma zamanı tarafından yönetilen kodda hata ayıklamak için. Seçin **yalnızca yerel** C++ kod hatalarını ayıklamak için. Seçin **betik ile yerel** C++ ve JavaScript hata ayıklama. Seçin **(yönetilen ve yerel) karışık** yönetilen hatasını ayıklamak ve C++ kodu.  
+  **Hata ayıklayıcı türü**  
+  Hata ayıklanacak kod türlerini belirtir. Seçin **yalnızca betik** JavaScript kod hatası ayıklamak için. Seçin **yalnızca yönetilen** ortak dil çalışma zamanı tarafından yönetilen kodda hata ayıklamak için. Seçin **yalnızca yerel** C++ kod hatalarını ayıklamak için. Seçin **betik ile yerel** C++ ve JavaScript hata ayıklama. Seçin **(yönetilen ve yerel) karışık** yönetilen hatasını ayıklamak ve C++ kodu.  
   
- **Yerel ağ geri döngüsüne izin ver**  
- Uygulamayı test etmek için IP Geridöngü adresine erişime izin verilip verilmediğini belirtir. Seçin **Evet** istemci uygulaması aynı makinede ise, aksi takdirde çalışan sunucu uygulaması olduğu geri döngü adresinin kullanımına izin vermek için seçin **Hayır**. Bu özellik yalnızca **başlatmak için hata ayıklayıcı** özelliği **uzak makine**.  
+  **Yerel ağ geri döngüsüne izin ver**  
+  Uygulamayı test etmek için IP Geridöngü adresine erişime izin verilip verilmediğini belirtir. Seçin **Evet** istemci uygulaması aynı makinede ise, aksi takdirde çalışan sunucu uygulaması olduğu geri döngü adresinin kullanımına izin vermek için seçin **Hayır**. Bu özellik yalnızca **başlatmak için hata ayıklayıcı** özelliği **uzak makine**.  
   
- **Makine adı**  
- Hata ayıklayıcıyı barındıracak uzak bilgisayarın adını belirtir. Bu özellik yalnızca **başlatmak için hata ayıklayıcı** ayarlanır **uzak makine**.  
+  **Makine adı**  
+  Hata ayıklayıcıyı barındıracak uzak bilgisayarın adını belirtir. Bu özellik yalnızca **başlatmak için hata ayıklayıcı** ayarlanır **uzak makine**.  
   
- **Kimlik doğrulaması gerektir**  
- Uzak bilgisayarın kimlik doğrulaması gerektirip gerektirmediğini belirtir. Bu özellik yalnızca **başlatmak için hata ayıklayıcı** ayarlanır **uzak makine**.
+  **Kimlik doğrulaması gerektir**  
+  Uzak bilgisayarın kimlik doğrulaması gerektirip gerektirmediğini belirtir. Bu özellik yalnızca **başlatmak için hata ayıklayıcı** ayarlanır **uzak makine**.
 
 
 

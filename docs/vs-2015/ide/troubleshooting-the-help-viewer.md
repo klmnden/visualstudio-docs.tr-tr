@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 29c7ee223bbfbeb2dd7b262c33d6c00ea3c41411
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a3497d46ed4c9c5a04d8f40cc3056ea282593884
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245550"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934242"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Yardım Görüntüleyici'de Sorun Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,9 +50,9 @@ Bu konuda Yardım Görüntüleyici ile karşılaşabileceğiniz sorunlar açıkl
 ## <a name="additional-resources"></a>Ek Kaynaklar  
  Daha fazla bilgi edinin ve şu kaynakları kullanarak Yardım Görüntüleyici hakkında geri bildirim sağlayın:  
   
--   Geri bildirim sağlamak için bkz: [Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983) Microsoft Web sitesi veya gönderme e-posta için [ hlpfdbk@microsoft.com ](mailto:hlpfdbk@microsoft.com).  
+- Geri bildirim sağlamak için bkz: [Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983) Microsoft Web sitesi veya gönderme e-posta için [ hlpfdbk@microsoft.com ](mailto:hlpfdbk@microsoft.com).  
   
--   Daha fazla bilgi için [Developer Documentation and Help System](http://go.microsoft.com/fwlink/?LinkId=232741) Forumu ve [The Help Guy](http://go.microsoft.com/fwlink/?LinkId=232743) blogu.  
+- Daha fazla bilgi için [Developer Documentation and Help System](http://go.microsoft.com/fwlink/?LinkId=232741) Forumu ve [The Help Guy](http://go.microsoft.com/fwlink/?LinkId=232743) blogu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yardım Görüntüleyici 2.1 Yönetici Kılavuzu](http://go.microsoft.com/fwlink/?LinkId=243985)

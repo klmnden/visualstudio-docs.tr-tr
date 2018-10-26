@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50d5876f38b7c539beb33d5918387a06f45b193b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a04993581be6edae89633bcda901a8d85ff6c765
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321274"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849547"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Visual Studio uzantıları geliştirmeye başlama
 Visual Studio uzantısı önce hiçbir zaman yazdıysanız, muhtemelen bazı sorular vardır. Biz burada en yaygın olanlarından bazıları listelediğiniz. Aradığınız bilgileri görmüyorsanız, geri bildirim düğmeleri kullanın (**bu sayfa yardımcı oldu?** ekranın alt kısmındaki), istediğiniz için isteyebilir.
@@ -30,13 +30,13 @@ Visual Studio uzantısı önce hiçbir zaman yazdıysanız, muhtemelen bazı sor
 ## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>Visual Studio uzantıları ile ne tür bir şeyler yapabilirim?
  Farklı Visual Studio uzantıları imagining için söz konusu olduğunda sky sınırı güçlendirin. Elbette, uzantıların çoğu kod yazma ile yapmak için bir şey vardır ancak, böyle olması gerekmez. Tür uzantıları oluşturabileceğinizi bazı örnekleri aşağıda verilmiştir:
 
--   Visual Studio'da söz dizimi renklendirme, IntelliSense ve derleyici ve hata ayıklama desteği bulunmayan diller için destek
+- Visual Studio'da söz dizimi renklendirme, IntelliSense ve derleyici ve hata ayıklama desteği bulunmayan diller için destek
 
--   Çekirdek genişleten üretkenlik araçları, IDE deneyimi ek şablonlar, kodu yeniden düzenleme, yeni iletişim kutuları veya araç pencereleri
+- Çekirdek genişleten üretkenlik araçları, IDE deneyimi ek şablonlar, kodu yeniden düzenleme, yeni iletişim kutuları veya araç pencereleri
 
--   Veri tasarım ya da bulut desteği gibi senaryolar için etki alanına özel tasarımcılar
+- Veri tasarım ya da bulut desteği gibi senaryolar için etki alanına özel tasarımcılar
 
- Uzantıları örnekleri için kullanıma [Visual Studio Market](https://marketplace.visualstudio.com/vs). Birçok uzantının kaynaklanan açık olan ve Market'te kendi GitHub deposunu bağlantılarını içerir.
+  Uzantıları örnekleri için kullanıma [Visual Studio Market](https://marketplace.visualstudio.com/vs). Birçok uzantının kaynaklanan açık olan ve Market'te kendi GitHub deposunu bağlantılarını içerir.
 
 ## <a name="which-visual-studio-features-can-i-extend"></a>Hangi Visual Studio özellikleri miyim uzatabilir miyim?
  Teorik olarak, Visual Studio neredeyse tüm parçası genişletebilirsiniz: menüleri, araç çubukları, komutları, windows, çözümler, projeler, düzenleyiciler ve benzeri.

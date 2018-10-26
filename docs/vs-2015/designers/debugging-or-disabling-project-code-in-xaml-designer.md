@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4a52b63dc5605dfae533a4108e11a43ed0c62ed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2507b509ee33957845f010f7c18404d257ad4a38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306377"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837587"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>XAML Tasarımcısı'nda proje kodu devre dışı bırakma veya hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,17 +25,17 @@ ms.locfileid: "49306377"
   
  Proje kodu içerir:  
   
--   Özel denetimler ve kullanıcı denetimleri  
+- Özel denetimler ve kullanıcı denetimleri  
   
--   Sınıf kitaplıkları  
+- Sınıf kitaplıkları  
   
--   Değer dönüştürücüler  
+- Değer dönüştürücüler  
   
--   Proje koddan oluşturulan tasarım zamanı verilerine karşı bağlamaları  
+- Proje koddan oluşturulan tasarım zamanı verilerine karşı bağlamaları  
   
- Visual Studio Proje kodunu devre dışı bırakıldığında, yer tutucuları gösterir veriler kullanılabildiği artık; bir bağlama için özellik adı gibi veya artık çalışan bir denetim için bir yer tutucu.  
+  Visual Studio Proje kodunu devre dışı bırakıldığında, yer tutucuları gösterir veriler kullanılabildiği artık; bir bağlama için özellik adı gibi veya artık çalışan bir denetim için bir yer tutucu.  
   
- ![İşlenmeyen özel durum iletişim](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")  
+  ![İşlenmeyen özel durum iletişim](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")  
   
 #### <a name="to-determine-if-project-code-is-causing-an-exception"></a>Proje kodu bir özel durum neden olup olmadığını belirlemek için  
   

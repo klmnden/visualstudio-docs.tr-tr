@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c320400ee7337ec3f4ac3b6a77f1863b732c99c5
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6311526df299da860c829520a2087ecc8d786600
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499971"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930654"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>İzlenecek yol: C++ kullanarak SDK oluşturma
 Bu izlenecek yol, yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı (VSIX) olarak SDK paketi oluşturma ve bir uygulama oluşturmak için kullanmak gösterir. İzlenecek yol, bu adımları ayrılmıştır:  
@@ -142,25 +142,25 @@ Bu izlenecek yol, yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı
   
 ##  <a name="createSample"></a> Sınıf kitaplığı kullanan örnek bir uygulama oluşturmak için  
   
-1.  Menü çubuğunda, **dosya** > **yeni** > **proje**.  
+1. Menü çubuğunda, **dosya** > **yeni** > **proje**.  
   
-2.  Şablonlar listesinde genişletin **Visual C++** > **Windows Evrensel** seçip **boş uygulama**. İçinde **adı** kutusunda, belirtin **NativeMathSDKSample**ve ardından **Tamam** düğmesi.  
+2. Şablonlar listesinde genişletin **Visual C++** > **Windows Evrensel** seçip **boş uygulama**. İçinde **adı** kutusunda, belirtin **NativeMathSDKSample**ve ardından **Tamam** düğmesi.  
   
-3.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **NativeMathSDKSample** proje ve ardından **Ekle** > **başvurusu**.  
+3. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **NativeMathSDKSample** proje ve ardından **Ekle** > **başvurusu**.  
   
-4.  İçinde **Başvuru Ekle** iletişim kutusunda, başvuru türleri listesini genişletin **Evrensel Windows**ve ardından **uzantıları**. Son olarak, seçin **yerel matematik SDK** onay kutusunu işaretleyin ve ardından **Tamam** düğmesi.
+4. İçinde **Başvuru Ekle** iletişim kutusunda, başvuru türleri listesini genişletin **Evrensel Windows**ve ardından **uzantıları**. Son olarak, seçin **yerel matematik SDK** onay kutusunu işaretleyin ve ardından **Tamam** düğmesi.
   
-5.  Proje özellikleri için NativeMathSDKSample görüntüler.  
+5. Proje özellikleri için NativeMathSDKSample görüntüler.  
   
-     İçinde tanımlanan özellikler *NativeMathSDK.props* başvuru eklendiğinde uygulandı. Nesnenin özelliklerini inceleyerek uygulandığını doğrulayabilirsiniz **VC ++ dizinleri** projeye ait özellik **yapılandırma özellikleri**.  
+    İçinde tanımlanan özellikler *NativeMathSDK.props* başvuru eklendiğinde uygulandı. Nesnenin özelliklerini inceleyerek uygulandığını doğrulayabilirsiniz **VC ++ dizinleri** projeye ait özellik **yapılandırma özellikleri**.  
   
-6.  İçinde **Çözüm Gezgini**açın **MainPage.xaml**ve ardından içeriğini değiştirmek için aşağıdaki XAML kullanın:  
+6. İçinde **Çözüm Gezgini**açın **MainPage.xaml**ve ardından içeriğini değiştirmek için aşağıdaki XAML kullanın:  
   
-     [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../extensibility/codesnippet/Xaml/walkthrough-creating-an-sdk-using-cpp_8.xaml)]  
+    [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../extensibility/codesnippet/Xaml/walkthrough-creating-an-sdk-using-cpp_8.xaml)]  
   
-7.  Güncelleştirme *Mainpage.xaml.h* bu kodu eşleştirmek için:  
+7. Güncelleştirme *Mainpage.xaml.h* bu kodu eşleştirmek için:  
   
-     [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_9.h)]  
+    [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_9.h)]  
   
 8. Güncelleştirme *MainPage.xaml.cpp* bu kodu eşleştirmek için:  
   
@@ -172,7 +172,7 @@ Bu izlenecek yol, yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı
   
      Doğru sonucu görünür.  
   
- Bu izlenecek yolda gösterilen oluşturun ve çağırmak için bir uzantı SDK kullanma bir [!INCLUDE[wrt](../extensibility/includes/wrt_md.md)] kitaplığı ve olmayan bir[!INCLUDE[wrt](../extensibility/includes/wrt_md.md)] kitaplığı.  
+    Bu izlenecek yolda gösterilen oluşturun ve çağırmak için bir uzantı SDK kullanma bir [!INCLUDE[wrt](../extensibility/includes/wrt_md.md)] kitaplığı ve olmayan bir[!INCLUDE[wrt](../extensibility/includes/wrt_md.md)] kitaplığı.  
   
 ## <a name="next-steps"></a>Sonraki adımlar  
   

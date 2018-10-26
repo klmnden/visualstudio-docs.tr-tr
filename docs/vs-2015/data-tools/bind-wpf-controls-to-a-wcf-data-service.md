@@ -21,12 +21,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fdd13647eb485fa20da9c95a1c67ccc3e5f38cc9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 341ada0250c03776ab51ba62efcb98fb987088bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251842"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812432"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Bir WCF veri hizmetine WPF denetimleri bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,36 +36,36 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
--   Bir varlık veri modeli oluşturma, AdventureWorksLT örnek veritabanı bulunan verilerden oluşturulur.  
+- Bir varlık veri modeli oluşturma, AdventureWorksLT örnek veritabanı bulunan verilerden oluşturulur.  
   
--   Oluşturma bir [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] , varlık veri modeline WPF uygulaması verileri kullanıma sunar.  
+- Oluşturma bir [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] , varlık veri modeline WPF uygulaması verileri kullanıma sunar.  
   
--   Öğe sürükleyerek veriye bağlı denetimler kümesini oluşturma **veri kaynakları** penceresinden WPF tasarımcısına.  
+- Öğe sürükleyerek veriye bağlı denetimler kümesini oluşturma **veri kaynakları** penceresinden WPF tasarımcısına.  
   
--   Müşteri kayıtlarında ileriye ve geriye doğru gezinmek düğmeleri oluşturuluyor.  
+- Müşteri kayıtlarında ileriye ve geriye doğru gezinmek düğmeleri oluşturuluyor.  
   
--   Denetimleri verilere değişiklikleri kaydeder. bir düğme oluşturma [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] ve temel alınan veri kaynağı.  
+- Denetimleri verilere değişiklikleri kaydeder. bir düğme oluşturma [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] ve temel alınan veri kaynağı.  
   
-     [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
--   Çalışan bir SQL Server veya SQL Server bağlı AdventureWorksLT örnek veritabanı içeren bir Express örneğine erişim. AdventureWorksLT veritabanı indirebileceğiniz [CodePlex Web site](http://go.microsoft.com/fwlink/?linkid=87843).  
+- Çalışan bir SQL Server veya SQL Server bağlı AdventureWorksLT örnek veritabanı içeren bir Express örneğine erişim. AdventureWorksLT veritabanı indirebileceğiniz [CodePlex Web site](http://go.microsoft.com/fwlink/?linkid=87843).  
   
- Aşağıdaki kavramları bilgisi de faydalıdır, ancak izlenecek yolu tamamlamak için gerekli değil:  
+  Aşağıdaki kavramları bilgisi de faydalıdır, ancak izlenecek yolu tamamlamak için gerekli değil:  
   
--   WCF Veri Hizmetleri. Daha fazla bilgi için [genel bakış](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
+- WCF Veri Hizmetleri. Daha fazla bilgi için [genel bakış](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
   
--   Veri modelleri de [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].  
+- Veri modelleri de [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].  
   
--   Varlık veri modelleri ve ADO.NET varlık çerçevesi. Daha fazla bilgi için [Entity Framework'e Genel Bakış](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
+- Varlık veri modelleri ve ADO.NET varlık çerçevesi. Daha fazla bilgi için [Entity Framework'e Genel Bakış](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
--   WPF Tasarımcısı ile çalışma. Daha fazla bilgi için [WPF ve Silverlight Tasarımcısı genel bakış](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- WPF Tasarımcısı ile çalışma. Daha fazla bilgi için [WPF ve Silverlight Tasarımcısı genel bakış](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
--   WPF veri bağlaması. Daha fazla bilgi için [Data Binding Overview](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- WPF veri bağlaması. Daha fazla bilgi için [Data Binding Overview](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="create-the-service-project"></a>Hizmet projesi oluşturma  
  Bu izlenecek yol için bir proje oluşturarak başlayın bir [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
@@ -207,39 +207,39 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
   
 #### <a name="to-create-the-data-bound-controls"></a>Verilere bağlı denetimler oluşturmak için  
   
-1.  İçinde **veri kaynakları** penceresinde açılan menüsüne tıklayın **SalesOrderHeaders** düğüm ve select **ayrıntıları**.  
+1. İçinde **veri kaynakları** penceresinde açılan menüsüne tıklayın **SalesOrderHeaders** düğüm ve select **ayrıntıları**.  
   
-2.  Genişletin **SalesOrderHeaders** düğümü.  
+2. Genişletin **SalesOrderHeaders** düğümü.  
   
-3.  Bu örnekte, bazı alanlar görüntülenmez, bu nedenle aşağıdaki düğümler yanındaki açılır menüyü tıklayın ve seçin **hiçbiri**:  
+3. Bu örnekte, bazı alanlar görüntülenmez, bu nedenle aşağıdaki düğümler yanındaki açılır menüyü tıklayın ve seçin **hiçbiri**:  
   
-    -   **CreditCardApprovalCode**  
+   - **CreditCardApprovalCode**  
   
-    -   **ModifiedDate**  
+   - **ModifiedDate**  
   
-    -   **OnlineOrderFlag**  
+   - **OnlineOrderFlag**  
   
-    -   **RevisionNumber**  
+   - **RevisionNumber**  
   
-    -   **ROWGUID**  
+   - **ROWGUID**  
   
      Bu eylem, Visual Studio, bir sonraki adımda bu düğümler için verilere bağlı denetimler oluşturmanızı engeller. Bu kılavuz için son kullanıcı bu verileri görme gerekmez varsayılır.  
   
-4.  Gelen **veri kaynakları** penceresinde Sürükle **SalesOrderHeaders** kılavuz satırı düğmeleri içeren satırı altında düğüm.  
+4. Gelen **veri kaynakları** penceresinde Sürükle **SalesOrderHeaders** kılavuz satırı düğmeleri içeren satırı altında düğüm.  
   
-     Visual Studio, XAML ve verilere bağlı denetimler kümesini oluşturan kodu oluşturur **ürün** tablo. Oluşturulan XAML ve kod hakkında daha fazla bilgi için bkz. [Visual Studio'da veri bağlama WPF denetimleri](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
+    Visual Studio, XAML ve verilere bağlı denetimler kümesini oluşturan kodu oluşturur **ürün** tablo. Oluşturulan XAML ve kod hakkında daha fazla bilgi için bkz. [Visual Studio'da veri bağlama WPF denetimleri](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-5.  Tasarımcıda metin kutusunun yanındaki tıklatın **Müşteri Kimliği** etiketi.  
+5. Tasarımcıda metin kutusunun yanındaki tıklatın **Müşteri Kimliği** etiketi.  
   
-6.  İçinde **özellikleri** yanındaki onay kutusunu penceresinde **IsReadOnly** özelliği.  
+6. İçinde **özellikleri** yanındaki onay kutusunu penceresinde **IsReadOnly** özelliği.  
   
-7.  Ayarlama **IsReadOnly** özelliği her biri aşağıdaki metin kutuları için:  
+7. Ayarlama **IsReadOnly** özelliği her biri aşağıdaki metin kutuları için:  
   
-    -   **Sipariş numarası**  
+   -   **Sipariş numarası**  
   
-    -   **Satış siparişi kodu**  
+   -   **Satış siparişi kodu**  
   
-    -   **Sipariş numarası**  
+   -   **Sipariş numarası**  
   
 ## <a name="load-the-data-from-the-service"></a>Verileri hizmetten yükleme  
  Satış verileri hizmetten yükleme için hizmet proxy nesnesi kullanın. Veri kaynağı için döndürülen verileri atamak <xref:System.Windows.Data.CollectionViewSource> WPF penceresinde.  

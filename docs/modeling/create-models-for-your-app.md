@@ -23,37 +23,37 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 820e4f78bb96da3c76a7309d44de27aa351471a9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e508dc838fd7bf8ff3dab493aa2d5d52c747d180
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948554"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849456"
 ---
 # <a name="create-models-for-your-app"></a>Uygulamanız için model oluşturma
 
-Modelleme diyagramları anlamak, açıklamak ve kodunuzu ve yazılım sisteminizin desteklemelidir kullanıcı gereksinimleri hakkında fikir iletişim yardımcı olur.
+Modelleme diyagramları kodunuz ve yazılım sisteminizin desteklemesi gereken kullanıcı gereksinimleri hakkında fikirleri anlamanıza, açıklamak ve yardımcı olur.
 
-Visual Studio hangi sürümlerinin her diyagram türü desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Visual Studio'nun hangi sürümlerinin her diyagram türü desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-Bir sistem veya var olan kodu mimarisini görselleştirmek için aşağıdaki diyagramlarda oluşturun:
+Bir sistem veya var olan kod mimarisini görselleştirmek için aşağıdaki diyagramları oluşturur:
 
 |**Diyagramı**|**Gösterir**|
-|-----------------|---------------|
+|-|-|
 |[Bağımlılık Diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Bağımlılık Diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)|Sistemin üst düzey mimarisi|
-|Kod haritaları<br /><br /> [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Kod haritası çözümleyicilerini kullanarak olası sorunları bulma](../modeling/find-potential-problems-using-code-map-analyzers.md)|Bağımlılıklar ve var olan kodda diğer ilişkiler|
-|Oluşturulan kodda sınıf diyagramları<br /><br /> [Sınıf Diyagramları ile Çalışma (Sınıf Tasarımcısı)](../ide/working-with-class-diagrams-class-designer.md)|Türleri ve ilişkilerini .NET kodda|
+|Kod haritaları<br /><br /> [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Kod haritası çözümleyicilerini kullanarak olası sorunları bulma](../modeling/find-potential-problems-using-code-map-analyzers.md)|Bağımlılıklar ve diğer mevcut koddaki ilişkileri|
+|Kod tarafından oluşturulan sınıf diyagramları<br /><br /> [Sınıf Diyagramları ile Çalışma (Sınıf Tasarımcısı)](../ide/working-with-class-diagrams-class-designer.md)|Türlerini ve ilişkilerini .NET kod|
 
-## <a name="related-tasks"></a>İlgili görevleri
+## <a name="related-tasks"></a>İlişkili görevler
 
 |**Konu**|**Görev**|
-|---------------|--------------|
-|[Kodu görselleştirme](../modeling/visualize-code.md)|Kod haritaları oluşturun ve yabancı kodu bağımlılık diyagramları daha iyi anlamak.|
-|[Kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md)|Modelleri açıklamak ve kullanıcıların ihtiyaçlarını iletişim kurmak için kullanın.|
-|[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|Modelleri genel yapısını ve sisteminizin davranışını açıklamak için ve kullanıcıların gereksinimlerini karşıladığından emin olmak için kullanın.|
-|[Geliştirme sırasında sisteminizi doğrulama](../modeling/validate-your-system-during-development.md)|Yazılım, kullanıcıların ihtiyaçlarını ve sisteminizin genel mimarisi ile tutarlı kaldığından emin olun.|
-|[Geliştirme sürecinizde modelleri kullanma](../modeling/use-models-in-your-development-process.md)<br /><br /> [Çevik Geliştirme modelleri kullanma](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Modelleri anlamak ve kendi geliştirme sırasında sisteminizi değiştirmenize yardımcı olması için kullanın.|
-|[Modelleme çözümünüzün yapısını oluşturma](../modeling/structure-your-modeling-solution.md)|Büyük ve orta ölçekli bir proje modelleri düzenleyin.|
+|-|-|
+|[Kodu görselleştirme](../modeling/visualize-code.md)|Kod haritaları oluşturmak ve görselleştirerek tanımadıkları kodlarla bağımlılık diyagramlarına daha iyi anlayın.|
+|[Kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md)|Kullanıcıların ihtiyaçlarını açıklamak ve modelleri kullanır.|
+|[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|Genel yapısı ve sisteminizin davranışını tanımlamak ve kullanıcıların ihtiyaçlarını karşıladığından emin olmak için modelleri kullanır.|
+|[Geliştirme sırasında sisteminizi doğrulama](../modeling/validate-your-system-during-development.md)|Yazılımınızı kullanıcılarınızın ihtiyaçlarını ve sisteminizin genel mimarisi ile tutarlı kalmasını sağlayın.|
+|[Geliştirme sürecinizde modelleri kullanma](../modeling/use-models-in-your-development-process.md)<br /><br /> [Çevik Yazılım geliştirmede modeller kullanma](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Anlama ve kendi geliştirme sırasında sisteminizi değiştirme yardımcı olması için modelleri kullanır.|
+|[Modelleme çözümünüzün yapısını oluşturma](../modeling/structure-your-modeling-solution.md)|Büyük ve orta ölçekli projelerde modelleri düzenleyin.|
 
 ## <a name="resources"></a>Kaynaklar
 

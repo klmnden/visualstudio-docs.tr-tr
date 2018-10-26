@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f9a150760636fd5717c427324688c564b80aca30
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: aa8f773ba6f9d0722eb4e07e9c795d0d43860ebb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859763"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869996"
 ---
 # <a name="debugging-a-t4-text-template"></a>Bir T4 Metin Şablonuna İlişkin Hata Ayıklama
 Metin şablonlarında kesme noktaları ayarlayabilirsiniz. Tasarım zamanı metin şablonunda hata ayıklama için metin şablonu dosyasını kaydedin ve ardından **T4 şablonunda Hata Ayıkla** Çözüm Gezgini içinde dosyanın kısayol menüsünde. Bir çalışma zamanı metin şablonunda hata ayıklama için yalnızca ait olduğu uygulama hata ayıklama.
@@ -25,7 +25,7 @@ Metin şablonlarında kesme noktaları ayarlayabilirsiniz. Tasarım zamanı meti
  Bir metin şablonunda hata ayıklama için şablonu dönüştürme süreci adımları anlamanız gerekir. Her bir adımın çeşitli hatalar oluşabilir. Adımlar aşağıdaki gibidir.
 
 |Adım|Tasarım zamanı şablonu: ne olur?|Çalışma zamanı şablon: ne olur?|
-|----------|--------------------------------------------|-----------------------------------------|
+|-|-|-|
 |Metin şablonundan kod oluşturulur.<br /><br /> Hataları yönergelerinde, eşleşmeyen veya disordered `<#...#>` etiketler.|Olduğunda şablonu kaydetmek veya metin dönüştürmeyi çağırma.|Olduğunda şablonu kaydetmek veya metin dönüştürmeyi çağırma.|
 |Oluşturulan kod derlenir.<br /><br /> Şablon kodunuzda derleme hataları.|Hemen önceki adımdan sonra.|Uygulama kodunuzun yanı sıra.|
 |Kodu çalıştırır.<br /><br /> Şablon kodunuzdaki çalışma zamanı hataları.|Hemen önceki adımdan sonra.|Ne zaman uygulamanızı çalışır ve şablon kodunu çağırır.|
@@ -38,21 +38,21 @@ Metin şablonlarında kesme noktaları ayarlayabilirsiniz. Tasarım zamanı meti
  Aşağıdaki tabloda, en sık karşılaşılan hataların ve bunların düzeltmeleri listelenmektedir.
 
 |Hata İletisi|Açıklama|Çözüm|
-|-------------------|-----------------|--------------|
+|-|-|-|
 |Temel sınıfı yüklenemedi{0}' sınıf hangi dönüştürme devralır.|Belirtilen temel sınıf bulamazsanız gerçekleşir `inherits` parametresinde bir şablon yönergesi. İleti şablonu yönergenin satır numarası sağlar.|Belirtilen sınıfın var ve var. Bu derlemeyi bir derleme yönergesinde belirtildiğinden emin olun.|
 |Çözümlenemedi dosya için metni ekleyin:{0}|Dahil edilen bir şablon bulamazsanız oluşur. İleti istenen içerme dosyasının adını sağlar.|Özgün şablon yolu göreli dosya yolu olduğunu veya dosyanın konağı ile kayıtlı bir konumda olduğunu ya da dosyanın tam yolunu olduğundan emin olun.|
 |Dönüştürme nesnesi başlatılırken hatalar oluşturuldu. Dönüştürme çalışmaz.|Dönüştürme sınıfı 'Initialize()' başarısız oldu veya false döndürdü gerçekleşir.|Belirtilen temel dönüştürme sınıfına Initialize() işlevdeki kod geldiği \<#@template#> yönerge ve yönerge işlemcilerine. Başlatma, büyük olasılıkla başarısız olmasına neden olan hata hata listede bulunuyor. Neden başarısız olduğun araştırın. Bir şablonu hata ayıklama yordamları izleyerek Initialize() için gerçek üretilen koda bakabilirsiniz.|
 |Derleme '{0}'for 'yönerge işlemcisi{1}' FullTrust izin kümesi verilmedi. Sadece güvenilir bütünleştirilmiş kodların yönerge işlemcileri sağlamanıza izin verilir. Bu yönerge işlemcisi yüklenmeyecek.|Sistem bir yönerge işlemcisini içeren derleme için FullTrust izinlerini verin değil oluşur. İleti, derlemenin adı ve yönerge işlemcisinin adını sağlar.|Yalnızca yerel makinede güvenilir derlemeler, kullandığınızdan emin olun.|
 |Yol '{0}' Bu bilgisayarda yerel veya güvenilen bölgenizin bir parçası olmalıdır.|Yerel makinenizde olmayan veya ağınızın Güvenilir Bölge bir dosya yönergeniz veya derleme yönergesi başvuruda bulunduğunda oluşur.|Yönergeniz veya derleme yönergeleri bulunduğu dizin, güvenilen bir bölgede olduğundan emin olun. Internet Explorer aracılığıyla güvenilen bölgenizin bir ağ dizinine ekleyebilirsiniz.|
 |"Geçersiz belirteç ' catch'" veya "bir ad alanı doğrudan üyeleri içeremez" gibi birden çok sözdizimi hataları|Şablon kodunuz içinde çok fazla kapatma küme. Derleyici, standart nesil koduyla kafa karıştırıcı olduğu.|Küme parantezleri ve köşeli ayraçlar içinde kod sınırlayıcılar kapatma sayısını denetleyin.|
-|Döngüler veya derlenmiş değil veya düzgün şekilde yürütmesi koşullular. Örneğin: `<#if (i>10)#> Number is: <#= i #>`.<br /><br /> Bu kod, her zaman değerini çıkarır ediyorum. Yalnızca "sayıdır:" koşullu değil.|C# içinde her zaman küme ayraçları denetim deyimlerinde katıştırılmış metin blokları kapsamak için kullanın.|Küme ayracı Ekle: `<#if (i>10) { #>    Number is: <#= i #><# } #>`.|
+|Döngüler veya derlenmiş değil veya düzgün şekilde yürütmesi koşullular. Örneğin: `<#if (i>10)#> Number is: <#= i #>`<br /><br /> Bu kod, her zaman değerini çıkarır ediyorum. Yalnızca "sayıdır:" koşullu değil.|C# içinde her zaman küme ayraçları denetim deyimlerinde katıştırılmış metin blokları kapsamak için kullanın.|Küme ayracı Ekle: `<#if (i>10) { #>    Number is: <#= i #><# } #>`.|
 |"İfade çok karmaşık", bir tasarım zamanı şablonu işleme veya bir çalışma zamanı (önceden işlenmiş) şablonu derleniyor.<br /><br /> Visual Studio, bir çalışma zamanı şablon tarafından oluşturulan kodu incelemek çalışırken çalışmayı durduruyor.|Metin bloğu çok uzun. T4 metin blokları her bir şablon satır için bir dize içeren bir dize birleştirme ifadesi dönüştürür. Çok uzun metin blokları, derleyicinin boyut sınırları çağırdığınızdan.|Uzun metin bloğu gibi bir ifade bloğu ile bölmeniz:<br /><br /> `<#= "" #>`|
 
 ## <a name="warning-descriptions-and-fixes"></a>Uyarı açıklaması ve düzeltme
  Aşağıdaki tabloda, varsa en yaygın uyarılar düzeltmeleri birlikte listeler.
 
 |Uyarı iletisi|Açıklama|Çözüm|
-|---------------------|-----------------|--------------|
+|-|-|-|
 |İçerme dosyası yüklenirken '{0}' null veya boş dize döndürdü.|Eklenen metin şablonuna boşsa gerçekleşir. İleti eklenen dosyanın dosya adı sağlar.|INCLUDE yönergesi kaldırın ya da bazı içerik dosyası olduğundan emin olun.|
 |Dönüştürme derleniyor:|Tüm hata veya uyarı dönüşümü derlediğinde derleyicinin kaynaklanan bu dizesine ekler. Bu dize, derleyici bir hata veya uyarı oluşturdu anlamına gelir.|DLL bulunurken bir sorun varsa, DLL GAC'de ise tam yolunu ya da tam tanımlayıcı adı sağlamanız gerekebilir.|
 |Parametre '{0}' yönergesinde zaten mevcut. Yinelenen parametre yoksayılacak.|Parametre birden çok kez bir yönergesinde belirtilen oluşur. İleti parametre ve satır numarası yönergesi adı sağlar.|Yinelenen parametre belirtimini kaldırın.|

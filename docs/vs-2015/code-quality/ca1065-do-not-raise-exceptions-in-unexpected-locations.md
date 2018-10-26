@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 56f51fb381a65060fd81a3e25f1cc989c8974de8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 142322360d4ba1ffed6ef893bf02254548ee2705
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284693"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887613"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Beklenmedik konumlarda özel durumlar harekete geçirmeyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
@@ -42,27 +43,27 @@ ms.locfileid: "49284693"
 ## <a name="rule-description"></a>Kural Tanımı
  Özel durum oluşturması beklenmiyor yöntemleri gibi kategorilere ayrılabilir:
 
--   Özellik Get yöntemleri
+- Özellik Get yöntemleri
 
--   Olay erişimci metotları
+- Olay erişimci metotları
 
--   Equals yöntemi
+- Equals yöntemi
 
--   GetHashCode yöntemleri
+- GetHashCode yöntemleri
 
--   ToString yöntemi
+- ToString yöntemi
 
--   Statik Oluşturucular
+- Statik Oluşturucular
 
--   Sonlandırıcılar
+- Sonlandırıcılar
 
--   Dispose yöntemi
+- Dispose yöntemi
 
--   Eşitlik İşleçleri
+- Eşitlik İşleçleri
 
--   Örtük dönüştürme işleçleri
+- Örtük dönüştürme işleçleri
 
- Aşağıdaki bölümlerde, bu yöntem türleri açıklanmaktadır.
+  Aşağıdaki bölümlerde, bu yöntem türleri açıklanmaktadır.
 
 ### <a name="property-get-methods"></a>Özellik Get yöntemleri
  Özellikler, temelde akıllı alanlardır. Bu nedenle, bir alan mümkün olduğunca gibi davranırlar. Alanlar, özel durum oluşturması beklenmiyor ve birinin diğerinden özellikleri gerekir. Özel durum oluşturan bir özellik varsa, bu bir yöntem yapmayı göz önüne alın.
@@ -91,22 +92,22 @@ ms.locfileid: "49284693"
 ### <a name="equals-methods"></a>Equals yöntemi
  Aşağıdaki **eşittir** yöntemleri, özel durum oluşturmamalıdır:
 
--   <xref:System.Object.Equals%2A?displayProperty=fullName>
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
 
--   [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
+- [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
 
- Bir **eşittir** yöntemi döndürmelidir `true` veya `false` yerine bir özel durum. Örneğin, eşittir geçirilir, eşleşmeyen iki tür yalnızca döndürmelidir `false` oluşturmak yerine bir <xref:System.ArgumentException>.
+  Bir **eşittir** yöntemi döndürmelidir `true` veya `false` yerine bir özel durum. Örneğin, eşittir geçirilir, eşleşmeyen iki tür yalnızca döndürmelidir `false` oluşturmak yerine bir <xref:System.ArgumentException>.
 
 ### <a name="gethashcode-methods"></a>GetHashCode yöntemleri
  Aşağıdaki **GetHashCode** yöntemleri genellikle özel durum oluşturmamalıdır:
 
--   <xref:System.Object.GetHashCode%2A>
+- <xref:System.Object.GetHashCode%2A>
 
--   [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
 
- **GetHashCode** her zaman bir değer döndürmesi gerekir. Aksi takdirde karma tablosundaki öğeleri kaybedebilir.
+  **GetHashCode** her zaman bir değer döndürmesi gerekir. Aksi takdirde karma tablosundaki öğeleri kaybedebilir.
 
- Sürümleri **GetHashCode** bağımsız değişken throw süren bir <xref:System.ArgumentException>. Ancak, **Object.GetHashCode** hiçbir zaman özel bir durum oluşturmamalıdır.
+  Sürümleri **GetHashCode** bağımsız değişken throw süren bir <xref:System.ArgumentException>. Ancak, **Object.GetHashCode** hiçbir zaman özel bir durum oluşturmamalıdır.
 
 ### <a name="tostring-methods"></a>ToString yöntemi
  Hata ayıklayıcı kullanan <xref:System.Object.ToString%2A?displayProperty=fullName> dize biçiminde nesneleri hakkındaki bilgileri görüntülemek amacıyla. Bu nedenle, **ToString** bir nesne durumunu değiştirmemesi gerekir ve özel durum oluşturmamalıdır.

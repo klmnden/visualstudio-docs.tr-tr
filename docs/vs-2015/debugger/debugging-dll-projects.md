@@ -24,59 +24,59 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb1d8cf355aee56797b5c814341255cb47cf4f9b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fff87db239d023dbb5aa8f13757f7af42a969dd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267390"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814565"
 ---
 # <a name="debugging-dll-projects"></a>DLL Projelerinde Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aşağıdaki şablonlar DLL'ler oluşturur:  
   
--   (C++, C# ve Visual Basic) Sınıf kitaplığı  
+- (C++, C# ve Visual Basic) Sınıf kitaplığı  
   
--   (C++, C# ve Visual Basic): Windows Forms Denetim Kitaplığı  
+- (C++, C# ve Visual Basic): Windows Forms Denetim Kitaplığı  
   
-     Bir Windows Denetim Kitaplığı hata ayıklama, bir sınıf kitaplığı projesinin hatalarının ayıklanmasına benzer. Çoğu durumda, Windows denetimini başka bir projeden çağıracaksınız. Arama projesinde hata ayıklaması yaparken, Windows denetiminizin koduna adım, kesme noktaları ayarlayın ve diğer hata ayıklama işlemlerini gerçekleştirebilirsiniz. Daha fazla bilgi için [Windows Forms denetimleri](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a).  
+   Bir Windows Denetim Kitaplığı hata ayıklama, bir sınıf kitaplığı projesinin hatalarının ayıklanmasına benzer. Çoğu durumda, Windows denetimini başka bir projeden çağıracaksınız. Arama projesinde hata ayıklaması yaparken, Windows denetiminizin koduna adım, kesme noktaları ayarlayın ve diğer hata ayıklama işlemlerini gerçekleştirebilirsiniz. Daha fazla bilgi için [Windows Forms denetimleri](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a).  
   
--   (C# ve Visual Basic): Web Denetim Kitaplığı  
+- (C# ve Visual Basic): Web Denetim Kitaplığı  
   
-     Daha fazla bilgi için [Web denetim kitaplığı (yönetilen kod)](../debugger/web-control-library-managed-code.md).  
+   Daha fazla bilgi için [Web denetim kitaplığı (yönetilen kod)](../debugger/web-control-library-managed-code.md).  
   
--   (C++): MFC ActiveX denetimi ve MFC Smart Device ActiveX denetimi  
+- (C++): MFC ActiveX denetimi ve MFC Smart Device ActiveX denetimi  
   
-     ActiveX denetimleri, bir istemci bilgisayara Internet üzerinden indirilebilir ve görüntülenen ve Web sayfalarında etkinleştirilmiş denetimlerdir.  
+   ActiveX denetimleri, bir istemci bilgisayara Internet üzerinden indirilebilir ve görüntülenen ve Web sayfalarında etkinleştirilmiş denetimlerdir.  
   
-     ActiveX denetimlerinin hatalarının ayıklanması, çünkü bunlar bağımsız olarak çalıştırılamaz, ancak bir HTML Web sayfasına gömülmesi diğer denetim türlerinin hatalarının ayıklanmasına benzer. Daha fazla bilgi için [nasıl yapılır: ActiveX denetiminde hata ayıklama](../debugger/how-to-debug-an-activex-control.md).  
+   ActiveX denetimlerinin hatalarının ayıklanması, çünkü bunlar bağımsız olarak çalıştırılamaz, ancak bir HTML Web sayfasına gömülmesi diğer denetim türlerinin hatalarının ayıklanmasına benzer. Daha fazla bilgi için [nasıl yapılır: ActiveX denetiminde hata ayıklama](../debugger/how-to-debug-an-activex-control.md).  
   
--   (C++): MFC akıllı cihaz DLL  
+- (C++): MFC akıllı cihaz DLL  
   
-     Daha fazla bilgi için [MFC hata ayıklama teknikleri](../debugger/mfc-debugging-techniques.md).  
+   Daha fazla bilgi için [MFC hata ayıklama teknikleri](../debugger/mfc-debugging-techniques.md).  
   
- Bu bölüm aşağıdaki konular hakkında bilgi de içerir:  
+  Bu bölüm aşağıdaki konular hakkında bilgi de içerir:  
   
--   [Nasıl Yapılır: DLL Projesinde Hata Ayıklama](../debugger/how-to-debug-from-a-dll-project.md)  
+- [Nasıl Yapılır: DLL Projesinde Hata Ayıklama](../debugger/how-to-debug-from-a-dll-project.md)  
   
--   [Nasıl Yapılır: Karışık Modda Hata Ayıklama](../debugger/how-to-debug-in-mixed-mode.md)  
+- [Nasıl Yapılır: Karışık Modda Hata Ayıklama](../debugger/how-to-debug-in-mixed-mode.md)  
   
- Bu konu, hata ayıklama sınıf kitaplıklarının hazırlanması hakkında dikkat edilecek noktalar sağlayan aşağıdaki bölümleri içerir:  
+  Bu konu, hata ayıklama sınıf kitaplıklarının hazırlanması hakkında dikkat edilecek noktalar sağlayan aşağıdaki bölümleri içerir:  
   
--   [Hata ayıklama sürümü oluşturma](#vxtskdebuggingdllprojectsbuildingadebugversion)  
+- [Hata ayıklama sürümü oluşturma](#vxtskdebuggingdllprojectsbuildingadebugversion)  
   
--   [Karışık mod hata ayıklama](#vxtskdebuggingdllprojectsmixedmodedebugging)  
+- [Karışık mod hata ayıklama](#vxtskdebuggingdllprojectsmixedmodedebugging)  
   
--   [Varsayılan yapılandırmaları değiştirme](#vxtskdebuggingdllprojectschangingdefaultconfigurations)  
+- [Varsayılan yapılandırmaları değiştirme](#vxtskdebuggingdllprojectschangingdefaultconfigurations)  
   
--   [DLL hatalarını ayıklamanın yolları](#vxtskdebuggingdllprojectswaystodebugthedll)  
+- [DLL hatalarını ayıklamanın yolları](#vxtskdebuggingdllprojectswaystodebugthedll)  
   
--   [Arama uygulaması](#vxtskdebuggingdllprojectsthecallingapplication)  
+- [Arama uygulaması](#vxtskdebuggingdllprojectsthecallingapplication)  
   
--   [Bir Web sayfasındaki denetimler](#vxtskdebuggingdllprojectscontrolsonawebpage)  
+- [Bir Web sayfasındaki denetimler](#vxtskdebuggingdllprojectscontrolsonawebpage)  
   
--   [Komut penceresi](#vxtskdebuggingdllprojectstheimmediatewindow)  
+- [Komut penceresi](#vxtskdebuggingdllprojectstheimmediatewindow)  
   
 ##  <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Hata ayıklama sürümü oluşturma  
  Nasıl hata ayıklamaya başladığınızda ne olursa olsun, DLL hata ayıklama sürümünü derlediğinizden ve hata ayıklama sürümü burada uygulama onu bulmayı beklediği konumda olduğundan emin olun emin olun. Bu belirgin görünebilir, ancak bu adımı unutursanız, uygulama farklı bir DLL sürümünü bulup ve yükleyebilir. Program neden kesme noktasına hiç isabet edilmediğini düşünürsünüz çalışmaya devam eder. Hata ayıklama, hangi DLL'lerin hata ayıklayıcı'nın açarak, programınızın yüklediğini doğrulayabilirsiniz **modülleri** penceresi. **Modülleri** penceresi, her bir DLL veya EXE ayıkladığınız işlemde yüklü listeler. Daha fazla bilgi için [nasıl yapılır: modüller penceresini kullanma](../debugger/how-to-use-the-modules-window.md).  
@@ -103,15 +103,15 @@ Aşağıdaki şablonlar DLL'ler oluşturur:
 ###  <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Çağıran uygulamanın hatalarını ayıklama  
  Bir DLL'de hata ayıklamak için çağıran uygulama, genellikle bir EXE veya bir Web uygulaması hata ayıklayarak başlayın. Hata ayıklamanın birkaç yolu vardır.  
   
--   Çağıran uygulama için bir proje varsa, bu projeyi açmak ve yürütmeyi başlatabilirsiniz **hata ayıklama** menüsü. Daha fazla bilgi için [nasıl yapılır: yürütme başlangıç](http://msdn.microsoft.com/en-us/b0fe0ce5-900e-421f-a4c6-aa44ddae453c).  
+- Çağıran uygulama için bir proje varsa, bu projeyi açmak ve yürütmeyi başlatabilirsiniz **hata ayıklama** menüsü. Daha fazla bilgi için [nasıl yapılır: yürütme başlangıç](http://msdn.microsoft.com/en-us/b0fe0ce5-900e-421f-a4c6-aa44ddae453c).  
   
--   Çağıran uygulama zaten bir test veya üretim bilgisayarına dağıtılmış var olan bir programsa ve zaten çalışıyorsa buna ekleyebilirsiniz. DLL, Internet Explorer tarafından barındırılan denetimse veya Web sayfası denetiminde ise bu yöntemi kullanın. Daha fazla bilgi için [nasıl yapılır: çalışan bir işleme eklenme](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).  
+- Çağıran uygulama zaten bir test veya üretim bilgisayarına dağıtılmış var olan bir programsa ve zaten çalışıyorsa buna ekleyebilirsiniz. DLL, Internet Explorer tarafından barındırılan denetimse veya Web sayfası denetiminde ise bu yöntemi kullanın. Daha fazla bilgi için [nasıl yapılır: çalışan bir işleme eklenme](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).  
   
--   DLL projesinden ayıklayabilirsiniz. Daha fazla bilgi için [nasıl yapılır: DLL projesinde hata ayıklama](../debugger/how-to-debug-from-a-dll-project.md).  
+- DLL projesinden ayıklayabilirsiniz. Daha fazla bilgi için [nasıl yapılır: DLL projesinde hata ayıklama](../debugger/how-to-debug-from-a-dll-project.md).  
   
--   Buradan hata ayıklama [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **hemen** penceresi. Bu durumda, **hemen** penceresi uygulamanın uygulamanın rolünü üstlenir.  
+- Buradan hata ayıklama [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **hemen** penceresi. Bu durumda, **hemen** penceresi uygulamanın uygulamanın rolünü üstlenir.  
   
- Çağıran uygulamanın hatalarını ayıklamaya başlamadan önce genellikle sınıf kitaplığında bir kesme noktası ayarlamak istersiniz. Daha fazla bilgi için [kesme noktaları ve izleme noktaları](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Kesme noktası isabet edildiğinde sorunu yalıtana kadar her bir satırdaki eylemi gözleme kodda adım adım. Daha fazla bilgi için [kodu Adımlama genel bakış](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9).  
+  Çağıran uygulamanın hatalarını ayıklamaya başlamadan önce genellikle sınıf kitaplığında bir kesme noktası ayarlamak istersiniz. Daha fazla bilgi için [kesme noktaları ve izleme noktaları](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Kesme noktası isabet edildiğinde sorunu yalıtana kadar her bir satırdaki eylemi gözleme kodda adım adım. Daha fazla bilgi için [kodu Adımlama genel bakış](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9).  
   
 ###  <a name="vxtskdebuggingdllprojectscontrolsonawebpage"></a> Bir Web sayfasındaki denetimler  
  Bir Web sayfası denetiminde hata ayıklamak için oluşturun bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] böyle bir sayfa zaten mevcut değilse, onu katıştıran bir sayfa. Denetim kodunun yanı sıra Web sayfasının koduna ardından kesme noktaları yerleştirin. Daha sonra Web sayfasından çağırmanız [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

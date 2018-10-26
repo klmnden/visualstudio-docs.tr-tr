@@ -12,41 +12,41 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 34568cc24253eb2c0288fd7ba4311b5f33964df0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e3a8cdd6d8551a4ea399a2ef387d383acca136c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205077"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873675"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>UML uzantılarında birim testleri çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kodunuzu art arda gelen değişiklikler ile tutarlı olmasını sağlamak için birim testleri yazma ve normal yapı işleminin parçası olarak bunları gerçekleştirmek öneririz. Daha fazla bilgi için [Birim Test kodunuzu](../test/unit-test-your-code.md). Testleri Visual Studio modelleme uzantıları ayarlamak için bazı temel bilgi parçasını gerekir. Özet:  
   
--   [VSIX uzantıları için bir birim testi ayarlama](#Host)  
+- [VSIX uzantıları için bir birim testi ayarlama](#Host)  
   
-     VS IDE ana bilgisayar bağdaştırıcısı ile testleri çalıştırın. Her test yönteminin önüne `[HostType("VS IDE")]`. Bu konak bağdaştırıcısı başlar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] testlerinizi çalıştırdığınızda.  
+   VS IDE ana bilgisayar bağdaştırıcısı ile testleri çalıştırın. Her test yönteminin önüne `[HostType("VS IDE")]`. Bu konak bağdaştırıcısı başlar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] testlerinizi çalıştırdığınızda.  
   
--   [DTE ve ModelStore erişme](#DTE)  
+- [DTE ve ModelStore erişme](#DTE)  
   
-     Genellikle, bir model ve diyagramları ve erişim açmak zorunda olacaksınız `IModelStore` test başlatma.  
+   Genellikle, bir model ve diyagramları ve erişim açmak zorunda olacaksınız `IModelStore` test başlatma.  
   
--   [Bir modeli diyagramı açma](#Opening)  
+- [Bir modeli diyagramı açma](#Opening)  
   
-     Atayabilirsiniz `EnvDTE.ProjectItem` kitaplıklarından `IDiagramContext`.  
+   Atayabilirsiniz `EnvDTE.ProjectItem` kitaplıklarından `IDiagramContext`.  
   
--   [UI iş parçacığında değişikliklerini gerçekleştirme](#UiThread)  
+- [UI iş parçacığında değişikliklerini gerçekleştirme](#UiThread)  
   
-     Model deposu için değişiklik testleri UI iş parçacığında gerçekleştirilmesi gerekir. Kullanabileceğiniz `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` bu.  
+   Model deposu için değişiklik testleri UI iş parçacığında gerçekleştirilmesi gerekir. Kullanabileceğiniz `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` bu.  
   
--   [Komutlar ve hareketler diğer MEF Bileşenleri test etme](#MEF)  
+- [Komutlar ve hareketler diğer MEF Bileşenleri test etme](#MEF)  
   
-     MEF Bileşenleri test etmek için açıkça içeri aktarılan özellikleri için değerleri bağlanmanız gerekir.  
+   MEF Bileşenleri test etmek için açıkça içeri aktarılan özellikleri için değerleri bağlanmanız gerekir.  
   
- Bu noktaları aşağıdaki bölümlerde ayrıntılandırılmıştır.  
+  Bu noktaları aşağıdaki bölümlerde ayrıntılandırılmıştır.  
   
- Birim test UML Uzantısı örnek kod Örnekler Galerisi bulunabilir [UML – hızlı kullanarak metin girişi](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).  
+  Birim test UML Uzantısı örnek kod Örnekler Galerisi bulunabilir [UML – hızlı kullanarak metin girişi](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).  
   
 ## <a name="requirements"></a>Gereksinimler  
  Bkz: [gereksinimleri](../modeling/extend-uml-models-and-diagrams.md#Requirements).  

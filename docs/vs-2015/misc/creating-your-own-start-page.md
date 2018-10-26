@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: douge
-ms.openlocfilehash: dc3c19d7a2756e3716e76846ac468433d00cc1d5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 005f9597abd1ce688724af9fcb167a626e4cd885
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232082"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815045"
 ---
 # <a name="creating-your-own-start-page"></a>Kendi başlangıç sayfası oluşturma
 Başlangıç sayfası proje şablonunu kullanarak ya da boş bir başlangıç sayfası oluşturarak, özel bir başlangıç sayfası oluşturabilirsiniz.  
@@ -57,52 +57,52 @@ Başlangıç sayfası proje şablonunu kullanarak ya da boş bir başlangıç sa
   
 #### <a name="to-create-a-blank-start-page-by-using-the-start-page-project-template"></a>Başlangıç sayfası proje şablonu kullanarak boş bir başlangıç sayfası oluşturmak için  
   
-1.  Başlangıç sayfası proje başlangıç sayfası proje şablonunu kullanarak önceki yordamda açıklandığı gibi oluşturun.  
+1. Başlangıç sayfası proje başlangıç sayfası proje şablonunu kullanarak önceki yordamda açıklandığı gibi oluşturun.  
   
-2.  StartPage.xaml açın.  
+2. StartPage.xaml açın.  
   
-3.  Tüm sayfa içeriğinin yalnızca dış xml öğeleri ve içeren kılavuz bırakarak kaldırın <xref:System.Windows.Controls.Grid> öğesi, böylece, .xaml dosyasını aşağıdaki örneğe benzer.  
+3. Tüm sayfa içeriğinin yalnızca dış xml öğeleri ve içeren kılavuz bırakarak kaldırın <xref:System.Windows.Controls.Grid> öğesi, böylece, .xaml dosyasını aşağıdaki örneğe benzer.  
   
-    ```xaml
-       <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-                 xmlns:sp="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.StartPage"
-                 xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.10.0"
-                 xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.10.0"
-             mc:Ignorable="d" 
-                 d:DesignHeight="600" d:DesignWidth="800">
-        <Grid>
-            <!--Add content here.-->
-        </Grid>
-    </Grid>
-    ```
+   ```xaml
+      <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                xmlns:sp="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.StartPage"
+                xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.10.0"
+                xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.10.0"
+            mc:Ignorable="d" 
+                d:DesignHeight="600" d:DesignWidth="800">
+       <Grid>
+           <!--Add content here.-->
+       </Grid>
+   </Grid>
+   ```
       
-4.  Kullanmak istemediğiniz tüm destekleyici dosyaları kaldırın.  
+4. Kullanmak istemediğiniz tüm destekleyici dosyaları kaldırın.  
   
-     Dağıtım amaçları için .vsix ve .pkgdef dosyaları tutmanız gerekir.  
+    Dağıtım amaçları için .vsix ve .pkgdef dosyaları tutmanız gerekir.  
   
- Alternatif olarak, Visual Studio tarafından tanınması için doğru etiketi yapıya sahip bir XAML dosyası oluşturarak, boş bir başlangıç sayfası oluşturabilirsiniz. Ardından, biçimlendirme ve istenen Görünüm ve işlevselliği elde etmek için gerideki kod ekleyebilirsiniz. Daha fazla bilgi için [bir özel başlangıç sayfası oluşturma](../extensibility/creating-a-custom-start-page.md).  
+   Alternatif olarak, Visual Studio tarafından tanınması için doğru etiketi yapıya sahip bir XAML dosyası oluşturarak, boş bir başlangıç sayfası oluşturabilirsiniz. Ardından, biçimlendirme ve istenen Görünüm ve işlevselliği elde etmek için gerideki kod ekleyebilirsiniz. Daha fazla bilgi için [bir özel başlangıç sayfası oluşturma](../extensibility/creating-a-custom-start-page.md).  
   
 ## <a name="testing-and-applying-the-custom-start-page"></a>Test ve özel uygulama başlangıç sayfası  
  Özel başlangıç sayfası değil kilitlenme doğrulayana kadar çalıştırmak için birincil örneğine ayarlı değil. Özel başlangıç sayfası sınandığında birincil Visual Studio örneğinde bu yordamın son üç adımı yineleyerek sisteminize uygulayabilirsiniz.  
   
 #### <a name="to-test-a-custom-start-page"></a>Özel başlangıç sayfası test etmek için  
   
-1.  F5 tuşuna basın.  
+1. F5 tuşuna basın.  
   
-     Visual Studio'nun deneysel örneğinde yeni başlangıç yüklendi, ancak seçili sayfası ile açılır.  
+    Visual Studio'nun deneysel örneğinde yeni başlangıç yüklendi, ancak seçili sayfası ile açılır.  
   
-2.  Visual Studio'nun Deneysel örneğinin üzerinde **Araçları** menüsünde tıklatın **seçenekleri**.  
+2. Visual Studio'nun Deneysel örneğinin üzerinde **Araçları** menüsünde tıklatın **seçenekleri**.  
   
-3.  İçinde **seçenekleri** iletişim kutusunun **ortam**seçin **başlangıç**. Ardından **başlangıç sayfasını Özelleştir** listesinde, .xaml dosyanızı seçin ve tıklayın **Tamam**.  
+3. İçinde **seçenekleri** iletişim kutusunun **ortam**seçin **başlangıç**. Ardından **başlangıç sayfasını Özelleştir** listesinde, .xaml dosyanızı seçin ve tıklayın **Tamam**.  
   
-4.  Üzerinde **görünümü** menüsünü tıklatın **başlangıç sayfası**.  
+4. Üzerinde **görünümü** menüsünü tıklatın **başlangıç sayfası**.  
   
-     Çalışan başlangıç sayfası görüntülenir. Deneysel örneği kapatın, yeniden değişen tüm dosyaları kopyalayın ve ardından yeni değişiklikleri görmek için deneysel örneğinde yeniden açın gerekir.  
+    Çalışan başlangıç sayfası görüntülenir. Deneysel örneği kapatın, yeniden değişen tüm dosyaları kopyalayın ve ardından yeni değişiklikleri görmek için deneysel örneğinde yeniden açın gerekir.  
   
- Özel başlangıç sayfası için bin\debug dizininizden .vsix dosyasını karşıya yükleyerek paylaşabilirsiniz [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkID=123847) Web sitesini veya başka bir Web sitesi veya intranet paylaşın. Daha fazla bilgi için [özel başlangıç sayfaları dağıtma](../extensibility/deploying-custom-start-pages.md).  
+   Özel başlangıç sayfası için bin\debug dizininizden .vsix dosyasını karşıya yükleyerek paylaşabilirsiniz [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkID=123847) Web sitesini veya başka bir Web sitesi veya intranet paylaşın. Daha fazla bilgi için [özel başlangıç sayfaları dağıtma](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Başlangıç sayfasını özelleştirme](../ide/customizing-the-start-page-for-visual-studio.md)   

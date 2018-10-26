@@ -21,28 +21,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: fd660ea2cdeaaae5d37811406221a7d150ab9bef
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 754d196ba49e97ed0a70ca988d4ae65aed001bdc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056667"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949584"
 ---
 # <a name="error-aspnet-not-installed"></a>Hata: ASP.NET Yüklü Değil
-Bu hata oluştuğunda, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] doğru hata ayıklamaya çalıştığınız bilgisayarda yüklü değil. Bu, anlamına gelebilir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] hiç yüklenmemiştir veya [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ilk olarak yüklendiği ve IIS daha sonra yüklendi.  
+Bu hata oluştuğunda, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] doğru hata ayıklamaya çalıştığınız bilgisayarda yüklü değil. Bu gelebilir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] hiç yüklenmemiş ya da [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ilk yüklenen ve IIS daha sonra yüklendi.  
   
 ### <a name="to-reinstall-aspnet"></a>ASP.NET yeniden yüklemek için  
   
-1.  Bir komut istemi penceresinden aşağıdaki komutu çalıştırın:  
+1. Bir komut istemi penceresinden aşağıdaki komutu çalıştırın:  
   
-    ```cmd
-    \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i  
-    ```  
+   ```cmd
+   \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i  
+   ```  
   
-     Burada *sürüm* v1.0.370 gibi bilgisayarınızda yüklü .NET Framework sürüm numarasını temsil eder. Framework sürümü bakarak belirleyebilirsiniz `\WINDOWS\Microsoft.NET\Framework` dizin.  
+    Burada *sürüm* v1.0.370 gibi bilgisayarınızda yüklü .NET Framework sürüm numarasını temsil eder. Framework sürümü bakarak belirleyebilirsiniz `\WINDOWS\Microsoft.NET\Framework` dizin.  
   
-    > [!NOTE]
-    >  Windows Server 2003, yüklediğiniz [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] kullanarak **Program Ekle veya Kaldır** Denetim Masası'nda.  
+   > [!NOTE]
+   >  Windows Server 2003 ile yükleyebileceğiniz [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] kullanarak **Program Ekle veya Kaldır** Denetim Masası'nda.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Web uygulamalarında hata ayıklama: Hatalar ve sorun giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Web Uygulamalarında Hata Ayıklama: Hatalar ve Sorun Giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

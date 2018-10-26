@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60f73089c2894bd04c877302e87f11b77928048e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: fde39c346313dc66d5d94a5beb0e9e3b256ea436
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510359"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920228"
 ---
 # <a name="configuration-options-overview"></a>Yapılandırma seçeneklerine genel bakış
 Projelerinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] oluşturulabilir, hatası ayıklanmış, çalıştırma ve/veya dağıtılan birden fazla yapılandırmaları destekler. Açıklanan özellikler, genellikle derleyici anahtarları ve dosya konumlarını adlandırılmış kümesi ile bir yapı türünü bir yapılandırmadır. Varsayılan olarak, yeni çözümleri iki yapılandırması içeren *hata ayıklama* ve *yayın*. Bu yapılandırmalar, kendi varsayılan ayarları kullanarak veya değiştirilmiş çözüm veya proje belirli gereksinimlerinizi karşılamak için uygulanabilir. Bazı paketler iki şekilde oluşturulabilir: yerinde bileşeni olarak veya bir ActiveX Düzenleyici. Projeleri birden çok yapılandırmada ancak destek gerekmez. Kullanılabilir tek yapılandırması varsa, bu yapılandırma tüm çözüm yapılandırmaları eşlenir.  
@@ -56,21 +56,21 @@ Yapılandırma arabirimleri
   
  Önceki diyagramda ilgili birkaç Not:  
   
--   `IDispatch` İsteğe bağlı yapılandırma nesnesi olarak işaretlenir. Özellikle, göz atma nesne üzerinde yapılandırma arabirime sahip isteğe bağlıdır.  
+- `IDispatch` İsteğe bağlı yapılandırma nesnesi olarak işaretlenir. Özellikle, göz atma nesne üzerinde yapılandırma arabirime sahip isteğe bağlıdır.  
   
--   `IVsDebuggableProjectCfg` Yapılandırma nesnesi isteğe bağlı olarak işaretlenmiş, ancak hata ayıklama desteği için gereklidir.  
+- `IVsDebuggableProjectCfg` Yapılandırma nesnesi isteğe bağlı olarak işaretlenmiş, ancak hata ayıklama desteği için gereklidir.  
   
--   `IVsProjectCfg2` Yapılandırma nesnesi isteğe bağlı olarak işaretlenmiş, ancak çıkış destek gruplandırma için gereklidir.  
+- `IVsProjectCfg2` Yapılandırma nesnesi isteğe bağlı olarak işaretlenmiş, ancak çıkış destek gruplandırma için gereklidir.  
   
--   Yapılandırma sağlayıcısı nesne isteğe bağlı bir nesne olarak işaretlenmiş ancak seçeneğini uygulamak yerdir. Proje nesne veya ayrı bir nesne üzerinde nesne uygulayabilir.  
+- Yapılandırma sağlayıcısı nesne isteğe bağlı bir nesne olarak işaretlenmiş ancak seçeneğini uygulamak yerdir. Proje nesne veya ayrı bir nesne üzerinde nesne uygulayabilir.  
   
--   `IVsCfgProvider2` platform desteği ve yapılandırmasını düzenleme için gereklidir. `IVsCfgProvider` Bu işlevselliği uygulamak, yeterli olur.  
+- `IVsCfgProvider2` platform desteği ve yapılandırmasını düzenleme için gereklidir. `IVsCfgProvider` Bu işlevselliği uygulamak, yeterli olur.  
   
--   Aşağıdaki diyagramda ayrı nesneler aynı sınıfına pratik olduğunda birleştirilebilir olarak gösterilen bu nesnelerin bazıları belirli tasarım gereksinimlerinize göre. Bu bölümdeki diğer konulara göz ancak nesneleri ve bu nesnelerle ilişkili arabirimi Diyagramda gösterilen senaryoya göre açıklanmıştır.  
+- Aşağıdaki diyagramda ayrı nesneler aynı sınıfına pratik olduğunda birleştirilebilir olarak gösterilen bu nesnelerin bazıları belirli tasarım gereksinimlerinize göre. Bu bölümdeki diğer konulara göz ancak nesneleri ve bu nesnelerle ilişkili arabirimi Diyagramda gösterilen senaryoya göre açıklanmıştır.  
   
--   Belirli nesneleri ayrı ayrı uygulanır. Örneğin, ayrı iş parçacığı ve nesne derleme olduğu yapı yapılandırmasını tanımlayan nesne ayrı olarak yönetmek için proje ve çözüm oluşturma oluşur.  
+- Belirli nesneleri ayrı ayrı uygulanır. Örneğin, ayrı iş parçacığı ve nesne derleme olduğu yapı yapılandırmasını tanımlayan nesne ayrı olarak yönetmek için proje ve çözüm oluşturma oluşur.  
   
- Önceki diyagramda yapılandırma sağlayıcısı nesnesi arabirimleri ve yapılandırma nesnesi arabirimleri hakkında daha fazla bilgi için bkz. [proje yapılandırması nesnesi](../../extensibility/internals/project-configuration-object.md). Ayrıca, [derleme için proje yapılandırması](../../extensibility/internals/project-configuration-for-building.md) nesnesi arabirimleri yapılandırma oluşturucusu ve yapı bağımlılığını daha fazla bilgi sağlar ve [dağıtımını yönetmek için proje yapılandırması](../../extensibility/internals/project-configuration-for-managing-deployment.md) Daha fazla yapılandırma dağıtıcı ve dağıtım bağımlılık nesneleri bağlı arabirimler açıklanmaktadır. Son olarak, [çıkış için proje yapılandırması](../../extensibility/internals/project-configuration-for-output.md) görüntülemek ve yapılandırmaya bağlı özellikleri ayarlamak için çıkış grubu ve çıkış nesnesi arabirimleri ve özellik sayfaları kullanımını açıklar.  
+  Önceki diyagramda yapılandırma sağlayıcısı nesnesi arabirimleri ve yapılandırma nesnesi arabirimleri hakkında daha fazla bilgi için bkz. [proje yapılandırması nesnesi](../../extensibility/internals/project-configuration-object.md). Ayrıca, [derleme için proje yapılandırması](../../extensibility/internals/project-configuration-for-building.md) nesnesi arabirimleri yapılandırma oluşturucusu ve yapı bağımlılığını daha fazla bilgi sağlar ve [dağıtımını yönetmek için proje yapılandırması](../../extensibility/internals/project-configuration-for-managing-deployment.md) Daha fazla yapılandırma dağıtıcı ve dağıtım bağımlılık nesneleri bağlı arabirimler açıklanmaktadır. Son olarak, [çıkış için proje yapılandırması](../../extensibility/internals/project-configuration-for-output.md) görüntülemek ve yapılandırmaya bağlı özellikleri ayarlamak için çıkış grubu ve çıkış nesnesi arabirimleri ve özellik sayfaları kullanımını açıklar.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>   

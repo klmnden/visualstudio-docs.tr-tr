@@ -14,27 +14,27 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e621d8bccdb8dceb1a6516ff0c070393962cea11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ce995687f304579c7a4f3a95b971dcc86e28f050
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303803"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878043"
 ---
 # <a name="refactoring-in-visual-studio"></a>Visual Studio'da yeniden düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Yeniden düzenleme, anlama ve genişletmek daha kolay hale getirmek için kod değiştirme, ancak davranışını değiştirmeden işlemidir. Bazı ortak *yeniden düzenlemeler* içerir:  
   
-1.  uzun işlevler küçük parçalara ayırma  
+1. uzun işlevler küçük parçalara ayırma  
   
-2.  değişkenleri, türler, İşlevler veya parametreler yeniden adlandırma  
+2. değişkenleri, türler, İşlevler veya parametreler yeniden adlandırma  
   
-3.  parametreleri yeniden sıralama  
+3. parametreleri yeniden sıralama  
   
-4.  kaldırma veya yönergeleri kullanarak yeniden sıralama  
+4. kaldırma veya yönergeleri kullanarak yeniden sıralama  
   
- Yeniden düzenleme, logic yakından dili sözdizimine bağlı olmadığından, her dil hizmeti Visual Studio'da yeniden düzenleme özelliklerini sağlar. Daha fazla bilgi için şu sayfalara bakın:  
+   Yeniden düzenleme, logic yakından dili sözdizimine bağlı olmadığından, her dil hizmeti Visual Studio'da yeniden düzenleme özelliklerini sağlar. Daha fazla bilgi için şu sayfalara bakın:  
   
 ### <a name="refactoring-in-c"></a>C# yeniden düzenleme  
  [Yeniden Düzenleme (C#)](../csharp-ide/refactoring-csharp.md)  

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e278eeb486d2a2d0150fb3ffd44176d17edbdc33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c617bb84a3d7aad10769ef5dbceec657e49aa21
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42624454"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927352"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>İzlenecek yol: IntelliTrace'i kullanarak SharePoint uygulamasında hata ayıklama
 
@@ -46,7 +46,7 @@ IntelliTrace'i kullanarak SharePoint çözümleri daha kolay ayıklayabilirsiniz
 
 - [SharePoint çözümünü düzeltmek ve hata ayıklama](#BKMK_DebugSolution)
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -265,15 +265,15 @@ Ardından, özellik alıcısı içindeki iki yöntem için kodu ekleyin: `Featur
 
 3. Bu özellik aşağıdaki adımları gerçekleştirerek devre dışı bırakın:
 
-    1. Üzerinde **Site eylemleri** SharePoint menüsünde **Site Ayarları**.
+   1. Üzerinde **Site eylemleri** SharePoint menüsünde **Site Ayarları**.
 
-    2. Altında **Site eylemleri**, seçin **site özelliklerini Yönet** bağlantı.
+   2. Altında **Site eylemleri**, seçin **site özelliklerini Yönet** bağlantı.
 
-    3. Yanındaki **IntelliTraceTest özellik1**, seçin **devre dışı bırak** düğmesi.
+   3. Yanındaki **IntelliTraceTest özellik1**, seçin **devre dışı bırak** düğmesi.
 
-    4. Uyarı sayfasında, **bu özelliği devre dışı** bağlantı.
+   4. Uyarı sayfasında, **bu özelliği devre dışı** bağlantı.
 
-     FeatureDeactivating() olay işleyicisi, bir hata oluşturur.
+      FeatureDeactivating() olay işleyicisi, bir hata oluşturur.
 
 ## <a name="collect-intellitrace-data-by-using-microsoft-monitoring-agent"></a>Microsoft Monitoring Agent'ı kullanarak IntelliTrace verilerini toplama
 
@@ -286,19 +286,19 @@ Microsoft Monitoring Agent'ı SharePoint çalıştıran sisteminde yükleme yap�
 
 2. Özelliği devre dışı bırakın:
 
-    1. Üzerinde **Site eylemleri** SharePoint menüsünde **Site Ayarları**.
+   1. Üzerinde **Site eylemleri** SharePoint menüsünde **Site Ayarları**.
 
-    2. Altında **Site eylemleri**, seçin **site özelliklerini Yönet** bağlantı.
+   2. Altında **Site eylemleri**, seçin **site özelliklerini Yönet** bağlantı.
 
-    3. Yanındaki **IntelliTraceTest özellik1**, seçin **devre dışı bırak** düğmesi.
+   3. Yanındaki **IntelliTraceTest özellik1**, seçin **devre dışı bırak** düğmesi.
 
-    4. Uyarı sayfasında, **bu özelliği devre dışı** bağlantı.
+   4. Uyarı sayfasında, **bu özelliği devre dışı** bağlantı.
 
-     (Bu durumda, söz konusu FeatureDeactivating() olay işleyicisi hata) nedeniyle bir hata oluşur.
+      (Bu durumda, söz konusu FeatureDeactivating() olay işleyicisi hata) nedeniyle bir hata oluşur.
 
 3. PowerShell penceresinde çalıştırın [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) SharePoint çözümünüzü yeniden .iTrace dosyası oluşturun ve izlemeyi durdurmak için komutu.
 
-     **Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"* 
+     **Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"*
 
 ## <a name="debug-and-fix-the-sharepoint-solution"></a>SharePoint çözümünü düzeltmek ve hata ayıklama
 

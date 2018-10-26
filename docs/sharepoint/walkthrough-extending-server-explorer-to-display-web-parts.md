@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 84060ed018059f4b067b4744465bf4116f72841b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc6b015058445ddf35e5d247847a40d01e691047
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634744"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915821"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>İzlenecek yol: Sunucu Gezgini, web bölümlerini görüntülemek üzere genişletme
   Visual Studio'da kullanabileceğiniz **SharePoint bağlantıları** düğümünün **Sunucu Gezgini** bileşenleri SharePoint sitelerinde görüntülemek için. Ancak, **Sunucu Gezgini** bazı bileşenler varsayılan olarak görüntülemez. Bu kılavuzda, genişletme **Sunucu Gezgini** böylece Web Bölümü Galerisi'ne görüntüler her SharePoint sitesine bağlı.  
@@ -48,26 +48,26 @@ ms.locfileid: "42634744"
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için geliştirme bilgisayarında aşağıdaki bileşenler ihtiyacınız vardır:  
   
--   Windows, SharePoint ve Visual Studio'nun desteklenen sürümleri.  
+- Windows, SharePoint ve Visual Studio'nun desteklenen sürümleri.  
   
--   Visual Studio SDK. Bu izlenecek yolda **VSIX projesi** proje öğesini dağıtmak üzere bir VSIX paketi oluşturmak için SDK'sı şablonunda. Daha fazla bilgi için [Visual Studio'da SharePoint araçlarını genişletmek](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- Visual Studio SDK. Bu izlenecek yolda **VSIX projesi** proje öğesini dağıtmak üzere bir VSIX paketi oluşturmak için SDK'sı şablonunda. Daha fazla bilgi için [Visual Studio'da SharePoint araçlarını genişletmek](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Aşağıdaki kavramları bilgisi yardımcı, ancak gerekli değildir, bu izlenecek yolu tamamlamak için:  
+  Aşağıdaki kavramları bilgisi yardımcı, ancak gerekli değildir, bu izlenecek yolu tamamlamak için:  
   
--   Sunucu nesne modeli için SharePoint kullanma. Daha fazla bilgi için [SharePoint Foundation Sunucu tarafı nesne modeli kullanarak](http://go.microsoft.com/fwlink/?LinkId=177796).  
+- Sunucu nesne modeli için SharePoint kullanma. Daha fazla bilgi için [SharePoint Foundation Sunucu tarafı nesne modeli kullanarak](http://go.microsoft.com/fwlink/?LinkId=177796).  
   
--   SharePoint çözümlerinde Web Bölümleri. Daha fazla bilgi için [Web bölümlerine genel bakış](http://go.microsoft.com/fwlink/?LinkId=177803).  
+- SharePoint çözümlerinde Web Bölümleri. Daha fazla bilgi için [Web bölümlerine genel bakış](http://go.microsoft.com/fwlink/?LinkId=177803).  
   
 ## <a name="create-the-projects"></a>Projeleri oluşturma
  Bu izlenecek yolu tamamlamak için üç projeleri oluşturmanız gerekir:  
   
--   Uzantıyı dağıtmak için VSIX paketi oluşturmak amacıyla bir VSIX projesi.  
+- Uzantıyı dağıtmak için VSIX paketi oluşturmak amacıyla bir VSIX projesi.  
   
--   Uzantısını uygulayan sınıf kitaplığı projesi. Bu projenin .NET Framework 4.5 hedeflemesi gerekir.  
+- Uzantısını uygulayan sınıf kitaplığı projesi. Bu projenin .NET Framework 4.5 hedeflemesi gerekir.  
   
--   Özel SharePoint komutları tanımlayan bir sınıf kitaplığı projesi. Bu projenin.NET Framework 3.5 hedeflemesi gerekir.  
+- Özel SharePoint komutları tanımlayan bir sınıf kitaplığı projesi. Bu projenin.NET Framework 3.5 hedeflemesi gerekir.  
   
- İzlenecek yol, proje oluşturmaya başlayın.  
+  İzlenecek yol, proje oluşturmaya başlayın.  
   
 #### <a name="to-create-the-vsix-project"></a>VSIX projesi oluşturmak için  
   

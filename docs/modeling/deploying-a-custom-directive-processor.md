@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3f4af12b7c73aa2da7f580b11b1984aa2c8238b7
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 16ee7eae30d947e6a83444c8e744cbaca398bf94
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566833"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894824"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Özel Yönerge İşlemcisi Dağıtma
 
@@ -164,30 +164,30 @@ Bir .vsix dosyası oluşturmanın birkaç yolu vardır. Aşağıdaki yordam bir 
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Bir kayıt defteri anahtarı ayarlayarak bir yönerge işlemcisi kaydetmek için
 
-1.  Çalıştırma `regedit`.
+1. `regedit`'i çalıştırın.
 
-2.  Regedit içinde şuraya gidin:
+2. Regedit içinde şuraya gidin:
 
-     **Hkey_local_machıne\software\microsoft\visualstudio\\\*.0\TextTemplating\DirectiveProcessors**
+    **Hkey_local_machıne\software\microsoft\visualstudio\\\*.0\TextTemplating\DirectiveProcessors**
 
-     Visual Studio Deneysel sürümüne yönerge işlemcisi eklemek isterseniz "11.0" "sonuna Exp" ekleyin.
+    Visual Studio Deneysel sürümüne yönerge işlemcisi eklemek isterseniz "11.0" "sonuna Exp" ekleyin.
 
-3.  Yönerge işlemcisi sınıfıyla aynı ada sahip bir kayıt defteri anahtarı ekleyin.
+3. Yönerge işlemcisi sınıfıyla aynı ada sahip bir kayıt defteri anahtarı ekleyin.
 
-    -   Kayıt defteri ağacında sağ **DirectiveProcessors** düğümüne **yeni**ve ardından **anahtar**.
+   -   Kayıt defteri ağacında sağ **DirectiveProcessors** düğümüne **yeni**ve ardından **anahtar**.
 
-4.  Yeni düğümünde, Sınıf ve CodeBase veya Derleme için dize değerlerini aşağıdaki tablolara göre ekleyin.
+4. Yeni düğümünde, Sınıf ve CodeBase veya Derleme için dize değerlerini aşağıdaki tablolara göre ekleyin.
 
-    1.  Oluşturduğunuz düğüme sağ tıklayın, fareyle **yeni**ve ardından **dize değeri**.
+   1.  Oluşturduğunuz düğüme sağ tıklayın, fareyle **yeni**ve ardından **dize değeri**.
 
-    2.  Değerin adını düzenleyin.
+   2.  Değerin adını düzenleyin.
 
-    3.  Adı çift tıklatın ve verileri düzenleyin.
+   3.  Adı çift tıklatın ve verileri düzenleyin.
 
- Özel yönerge işlemcisi GAC'de değilse, kayıt defteri alt anahtarları aşağıdaki tabloda gibi görünmelidir:
+   Özel yönerge işlemcisi GAC'de değilse, kayıt defteri alt anahtarları aşağıdaki tabloda gibi görünmelidir:
 
 |Ad|Tür|Veri|
-|----------|----------|----------|
+|-|-|-|
 |(Varsayılan)|REG_SZ|(değer ayarlı değil)|
 |örneği|REG_SZ|**\<Namespace adı >. \<Sınıf adı >**|
 |CodeBase|REG_SZ|**\<Path >\\< derleme adınız\>**|
@@ -195,7 +195,7 @@ Bir .vsix dosyası oluşturmanın birkaç yolu vardır. Aşağıdaki yordam bir 
  Derleme GAC'deyse, kayıt defteri alt anahtarları aşağıdaki tabloda gibi görünmelidir:
 
 |Ad|Tür|Veri|
-|----------|----------|----------|
+|-|-|-|
 |(Varsayılan)|REG_SZ|(değer ayarlı değil)|
 |örneği|REG_SZ|\<**Tam nitelikli sınıf adınız**>|
 |Derleme|REG_SZ|\<**GAC'deki derleme adınız**>|

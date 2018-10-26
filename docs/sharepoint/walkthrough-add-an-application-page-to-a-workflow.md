@@ -18,25 +18,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 841257a03e257b92b728d33751869a02e2c40db6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4bdb01e5cbb45b9986e61a99e18b5984e92d37dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774594"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866902"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>İzlenecek yol: bir uygulama sayfasını bir iş akışına ekleme
   Bu izlenecek yol, bir iş akışı projesine bir iş akışından türetilen veriyi görüntüleyen bir uygulama sayfasını nasıl ekleneceğini gösterir. Bu konu başlığı altında açıklanan projede derlemeler [izlenecek yol: İlişkilendirme ve başlatma formları ile iş akışı oluşturma](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
  Bu izlenecek yol aşağıdaki görevleri gösterir:
 
--   ASPX uygulama sayfası, bir SharePoint iş akışı projesine ekleniyor.
+- ASPX uygulama sayfası, bir SharePoint iş akışı projesine ekleniyor.
 
--   İş akışı projeden veri edinme ve bu işleme.
+- İş akışı projeden veri edinme ve bu işleme.
 
--   Uygulama sayfasında bir tablodaki verileri görüntüleme.
+- Uygulama sayfasında bir tablodaki verileri görüntüleme.
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
@@ -305,23 +305,23 @@ ms.locfileid: "43774594"
 
 #### <a name="to-test-the-application-page"></a>Uygulama sayfasını sınamak için
 
-1.  Seçin **F5** çalıştırmak ve SharePoint için projeyi dağıtmak için anahtar.
+1. Seçin **F5** çalıştırmak ve SharePoint için projeyi dağıtmak için anahtar.
 
-2.  Seçin **giriş** düğmesine ve ardından **paylaşılan belgeler** SharePoint sitesinde paylaşılan belgelerin listesini görüntülemek için Hızlı Başlat çubuğunda bağlantı.
+2. Seçin **giriş** düğmesine ve ardından **paylaşılan belgeler** SharePoint sitesinde paylaşılan belgelerin listesini görüntülemek için Hızlı Başlat çubuğunda bağlantı.
 
-3.  Bu örneğin gider raporlarını temsil etmek için bazı yeni belgeler belgelerin listesine seçerek karşıya **belgeleri** bağlantısını **LibraryTools** sayfası ve seçereküstkısmındakisekme **Belgeyi Karşıya Yükle** araç şeridinde düğmesi.
+3. Bu örneğin gider raporlarını temsil etmek için bazı yeni belgeler belgelerin listesine seçerek karşıya **belgeleri** bağlantısını **LibraryTools** sayfası ve seçereküstkısmındakisekme **Belgeyi Karşıya Yükle** araç şeridinde düğmesi.
 
-4.  Bazı belgeler karşıya yüklenmesinin ardından, seçerek iş akışı örneği **Kitaplığı** bağlantısını **LibraryTools** sayfasını seçerek ve ardından üst kısmındaki sekme **kitaplık ayarları**araç şeridinde düğmesi.
+4. Bazı belgeler karşıya yüklenmesinin ardından, seçerek iş akışı örneği **Kitaplığı** bağlantısını **LibraryTools** sayfasını seçerek ve ardından üst kısmındaki sekme **kitaplık ayarları**araç şeridinde düğmesi.
 
-5.  İçinde **belge kitaplığı ayarlarını** sayfasında **iş akışı ayarları** bağlantısını **izinler ve Yönetim** bölümü.
+5. İçinde **belge kitaplığı ayarlarını** sayfasında **iş akışı ayarları** bağlantısını **izinler ve Yönetim** bölümü.
 
-6.  İçinde **iş akışı ayarları** sayfasında **bir iş akışı Ekle** bağlantı.
+6. İçinde **iş akışı ayarları** sayfasında **bir iş akışı Ekle** bağlantı.
 
-7.  İçinde **bir iş akışı Ekle** sayfasında **ExpenseReport - Workflow1** iş akışı, iş akışı için bir ad girin **ExpenseTest**, seçin**Sonraki** düğmesi.
+7. İçinde **bir iş akışı Ekle** sayfasında **ExpenseReport - Workflow1** iş akışı, iş akışı için bir ad girin **ExpenseTest**, seçin**Sonraki** düğmesi.
 
-     İş akışı ilişkilendirme formu görüntülenir. Harcama sınırı miktarını bildirmek için kullanın.
+    İş akışı ilişkilendirme formu görüntülenir. Harcama sınırı miktarını bildirmek için kullanın.
 
-8.  İlişkilendirme biçiminde girin **1000** içine **otomatik onay sınırı** kutusuna ve ardından **iş akışı ilişkilendirme** düğmesi.
+8. İlişkilendirme biçiminde girin **1000** içine **otomatik onay sınırı** kutusuna ve ardından **iş akışı ilişkilendirme** düğmesi.
 
 9. Seçin **giriş** düğmesini SharePoint giriş sayfasına dönün.
 
@@ -337,7 +337,7 @@ ms.locfileid: "43774594"
 
 14. Diğer belgelerle paylaşılan belgeler listesinde 11-13 adımları yineleyin. (Belgelerin tam sayı önemli değildir.)
 
-15. Aşağıdaki URL'ye bir Web tarayıcısında açarak harcama raporu Özet uygulama sayfası görüntüleme: **http://**_SystemName_**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
+15. Aşağıdaki URL'ye bir Web tarayıcısında açarak harcama raporu Özet uygulama sayfası görüntüleme: **http://**<em>SystemName</em>**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
      Harcama raporu Özet sayfası, tüm ayrılan miktarı aşan gider raporlarını, tarafından aşıldı miktarını ve toplam tutarı tüm raporların listeler.
 

@@ -9,12 +9,12 @@ description: En iyi Visual Studio aboneliklerinizi dışında almayı öğrenin
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 409b5a98990f3dedc8ed321f085615c1d542ed7f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 84e3f62bfb0939bdb30f562629c84a092cd02f4b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283437"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822169"
 ---
 # <a name="managing-subscriptions"></a>Abonelikleri Yönetme
 
@@ -72,14 +72,14 @@ Visual Studio abonelikleri portalında tüm Visual Studio abonelikleri ve progra
 
 Avantajlar sayfasında, kullanımdaki abonelik göze çarpacak şekilde mavi renkli bir başlık görüntülenir. Ayrıca,-sağ üst kısmındaki sayfası da görüntülenir.
 > [!div class="mx-imgBorder"]
-> ![Etkin aboneliği](_img\manage-vs-subscriptions\current-subscription-cropped.png)
+> ![Etkin aboneliği](_img/manage-vs-subscriptions/current-subscription-cropped.png)
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Abonelikler arasında geçiş yapmak için şunları yapabilirsiniz:
 
 - Sağ üst açılan tıklayın ve listeden aboneliği seçin
 - Abonelikler sekmesine tıklayın ve ardından istediğiniz aboneliğe tıklayın.
-> [!div class="mx-imgBorder"]
-> ![Abonelik geçiş](_img\manage-vs-subscriptions\change-subscription-resized.png)
+  > [!div class="mx-imgBorder"]
+  > ![Abonelik geçiş](_img/manage-vs-subscriptions/change-subscription-resized.png)
 
 ### <a name="if-your-subscription-is-not-visible"></a>Aboneliğinizi görünür değilse...
 
@@ -124,8 +124,8 @@ Kişi bilgileri ve tercihleri profilinizde kolaylıkla değiştirebilirsiniz.
 4. Değişikliklerinizi getirdiğinizi, tıklayın **Kaydet**.
 5. Tarayıcınızın tıklayın **geri** düğmesi avantajları sayfaya geri dönün.
 
-    > [!div class="mx-imgBorder"]
-    > ![Profil bilgilerini düzenleme](_img\manage-vs-subscriptions\edit-profile-resized.png)
+   > [!div class="mx-imgBorder"]
+   > ![Profil bilgilerini düzenleme](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>My mevcut Azure DevOps hizmetlere aboneliği veya Azure aboneliği bağlama
 
@@ -140,8 +140,8 @@ Alternatif hesap eklemek için:
 3. Altında **ilgili bağlantılar**, seçin **alternatif hesap ekleme**.
 4. İş/Okul hesabımın e-posta adresinizi girip __iade **Ekle**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Alternatif hesap](_img\manage-vs-subscriptions\alternate-account-resized.png)
+   > [!div class="mx-imgBorder"]
+   > ![Alternatif hesap](_img/manage-vs-subscriptions/alternate-account-resized.png)
 
 Alternatif hesap ekledikten sonra güncelleştirme veya tıklayarak dilediğiniz zaman Kaldır **abonelikleri** sekmesi ve uygun seçeneği seçerek **ilgili bağlantılar** bölümü.
 

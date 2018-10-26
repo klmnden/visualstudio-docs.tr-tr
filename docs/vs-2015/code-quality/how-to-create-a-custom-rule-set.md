@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e4b6c401b602575b34fb80ab98b31bb4ebcd1620
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5d8a5cb7e29cfd900ce81fa5f4b6253f0c49014
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255508"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812471"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Nasıl yapılır: Özel Kural Kümesi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ ms.locfileid: "49255508"
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Var olan tek kural kümesinden özel bir kural oluşturmak için  
   
-1.  Çözüm Gezgini'nde projeye sağ tıklayın ve ardından **özellikleri**.  
+1. Çözüm Gezgini'nde projeye sağ tıklayın ve ardından **özellikleri**.  
   
-2.  Üzerinde **özellikleri** sekmesinde **Kod Analizi**.  
+2. Üzerinde **özellikleri** sekmesinde **Kod Analizi**.  
   
-3.  İçinde **kural kümesi** aşağı açılan listesinde, aşağıdakilerden birini yapın:  
+3. İçinde **kural kümesi** aşağı açılan listesinde, aşağıdakilerden birini yapın:  
   
-    -   Özelleştirmek istediğiniz kural kümesi seçin.  
+   - Özelleştirmek istediğiniz kural kümesi seçin.  
   
      \- veya -  
   
-    -   Seçin  **\<Gözat … >** mevcut bir kuralı kümesini belirlemek için listesinde değil.  
+   - Seçin  **\<Gözat … >** mevcut bir kuralı kümesini belirlemek için listesinde değil.  
   
-4.  Tıklayın **açık** kuralları kural kümesi Düzenleyicisi'nde görüntülemek için.  
+4. Tıklayın **açık** kuralları kural kümesi Düzenleyicisi'nde görüntülemek için.  
   
 #### <a name="to-create-a-custom-rule-set-from-multiple-existing-rule-sets"></a>Özel bir kural oluşturmak için var olan birden çok kural kümelerinden ayarlayın.  
   

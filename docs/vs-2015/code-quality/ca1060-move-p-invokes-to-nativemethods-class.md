@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ac0e1d9ca251e4d12dbdfb59fbfaf115cbdd348d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 026f568d71c80af95d2d4bee640dc11d1042713f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228884"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913871"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: P/Invokes öğesini NativeMethods sınıfına taşıyın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|MovePInvokesToNativeMethodsClass|
@@ -42,13 +43,13 @@ ms.locfileid: "49228884"
 ## <a name="rule-description"></a>Kural Tanımı
  Platform çağırma yöntemleri kullanarak işaretlenenler gibi <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> özniteliği veya kullanılarak tanımlanan yöntemleri `Declare` anahtar sözcüğünü [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], yönetilmeyen koda erişebilirsiniz. Bu yöntemler aşağıdaki sınıflar biri olmalıdır:
 
--   **NativeMethods** -Bu sınıf, yönetilmeyen kod iznini için yığın Yürüyüşü engellemez. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> bu sınıfa uygulanmadığından.) Yığın ilerlemesi gerçekleştirilecek çünkü her yerde kullanılabilir yöntemler için sınıftır.
+- **NativeMethods** -Bu sınıf, yönetilmeyen kod iznini için yığın Yürüyüşü engellemez. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> bu sınıfa uygulanmadığından.) Yığın ilerlemesi gerçekleştirilecek çünkü her yerde kullanılabilir yöntemler için sınıftır.
 
--   **SafeNativeMethods** -yığın Yürüyüşü yönetilmeyen kod iznini için bu sınıf bastırır. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> bu sınıfa uygulanır.) Bu sınıf, herkesin çağırmak güvenlidir yöntemleri içindir. Bu yöntemlerin çağıranlar yöntemleri için herhangi bir çağırıcı zararsız olduğundan kullanım güvenli olduğundan emin olmak için tam bir güvenlik incelemesi gerçekleştirme gerekli değildir.
+- **SafeNativeMethods** -yığın Yürüyüşü yönetilmeyen kod iznini için bu sınıf bastırır. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> bu sınıfa uygulanır.) Bu sınıf, herkesin çağırmak güvenlidir yöntemleri içindir. Bu yöntemlerin çağıranlar yöntemleri için herhangi bir çağırıcı zararsız olduğundan kullanım güvenli olduğundan emin olmak için tam bir güvenlik incelemesi gerçekleştirme gerekli değildir.
 
--   **UnsafeNativeMethods** -yığın Yürüyüşü yönetilmeyen kod iznini için bu sınıf bastırır. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> bu sınıfa uygulanır.) Potansiyel olarak tehlikeli yöntemleri sınıftır. Bu yöntemlerin herhangi bir çağıran hiçbir yığın ilerlemesi gerçekleştirilecek çünkü kullanım güvenli olduğundan emin olmak için tam bir güvenlik incelemesi gerçekleştirmeniz gerekir.
+- **UnsafeNativeMethods** -yığın Yürüyüşü yönetilmeyen kod iznini için bu sınıf bastırır. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> bu sınıfa uygulanır.) Potansiyel olarak tehlikeli yöntemleri sınıftır. Bu yöntemlerin herhangi bir çağıran hiçbir yığın ilerlemesi gerçekleştirilecek çünkü kullanım güvenli olduğundan emin olmak için tam bir güvenlik incelemesi gerçekleştirmeniz gerekir.
 
- Bu sınıflar olarak bildirilen `internal` (`Friend`, Visual Basic'te) ve yeni örnekleri oluşturulmasını engellemek için özel bir oluşturucu bildirin. Bu sınıfların yöntemleri olmalıdır `static` ve `internal` (`Shared` ve `Friend` Visual Basic'te).
+  Bu sınıflar olarak bildirilen `internal` (`Friend`, Visual Basic'te) ve yeni örnekleri oluşturulmasını engellemek için özel bir oluşturucu bildirin. Bu sınıfların yöntemleri olmalıdır `static` ve `internal` (`Shared` ve `Friend` Visual Basic'te).
 
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
  Bu kural ihlalini düzeltmek için uygun move yöntemi **NativeMethods** sınıfı. Çoğu uygulama için P/Invoke'lar adlı yeni bir sınıf taşıma **NativeMethods** yeterlidir.

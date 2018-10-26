@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d169e4b53850fc4c63a838fdd8936c2f3d4820be
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 533cbf2e6c971da709818343089d13a78d99a997
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298551"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912272"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>İletiler Sekmesi, İleti Seçenekleri İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,18 +38,18 @@ Kullanım **iletileri** listesine ileti türlerini seçmek için sekmesinde [ile
  **İleti grupları**  
  İleti gruplarını görüntülemek için seçin. Kullanılabilir gruplar şunlardır:  
   
--   WM_USER: bir kod ile büyüktür veya eşittir WM_USER  
+- WM_USER: bir kod ile büyüktür veya eşittir WM_USER  
   
--   Kayıtlı: kayıtlı **RegisterWindowMessage** çağırın  
+- Kayıtlı: kayıtlı **RegisterWindowMessage** çağırın  
   
--   Bilinmiyor: Bilinmeyen iletileri 0 aralığındaki (WM_USER – 1)  
+- Bilinmiyor: Bilinmeyen iletileri 0 aralığındaki (WM_USER – 1)  
   
- Unutmayın bu **ileti grupları** altında belirli girdiler için eşlemeyin **iletiler için görünümü**. Bir grubu seçtiğinizde, doğrudan ileti akışına seçimi uygulanır.  
+  Unutmayın bu **ileti grupları** altında belirli girdiler için eşlemeyin **iletiler için görünümü**. Bir grubu seçtiğinizde, doğrudan ileti akışına seçimi uygulanır.  
   
- Gri bir onay kutusu içinde **ileti grupları** belirten **iletiler için görünümü** liste kutusu, o gruptaki iletileri değiştirildi; ileti türlerini o gruptaki tüm seçilir.  
+  Gri bir onay kutusu içinde **ileti grupları** belirten **iletiler için görünümü** liste kutusu, o gruptaki iletileri değiştirildi; ileti türlerini o gruptaki tüm seçilir.  
   
- **Ayarları varsayılan olarak Kaydet**  
- Daha sonra kullanmak için geçerli ayarları ileti arama seçenekleri kaydedin. Bu ayarlar, ayrıca Spy ++ çıkarken kaydedilir.
+  **Ayarları varsayılan olarak Kaydet**  
+  Daha sonra kullanmak için geçerli ayarları ileti arama seçenekleri kaydedin. Bu ayarlar, ayrıca Spy ++ çıkarken kaydedilir.
 
 
 

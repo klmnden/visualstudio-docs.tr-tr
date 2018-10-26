@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da bir sınıf veya türü oluşturma
+title: Visual Studio'da bir sınıf veya tür oluşturun
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,14 +14,14 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35c5854afe5363641979e0f79af70c2d3b925b05
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 67e6e8744672c35bdf13e30269297dcc52c50a04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37116994"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929614"
 ---
-# <a name="generate-a-class-or-type-in-visual-studio"></a>Visual Studio'da bir sınıf veya türü oluşturma
+# <a name="generate-a-class-or-type-in-visual-studio"></a>Visual Studio'da bir sınıf veya tür oluşturun
 
 Bu kod oluşturma için geçerlidir:
 
@@ -29,66 +29,66 @@ Bu kod oluşturma için geçerlidir:
 
 - Visual Basic
 
-**Ne:** hemen bir sınıf veya türü için kod oluşturmanıza olanak sağlar.
+**Ne:** hemen bir sınıf veya tür için kod oluşturmanıza olanak tanır.
 
-**Ne zaman:** yeni bir sınıf veya türü getirir ve düzgün bir şekilde, otomatik olarak bildirmek istiyor.
+**Ne zaman:** yeni bir sınıf veya tür sunmak ve düzgün bir şekilde, otomatik olarak bildirmek istiyor.
 
-**Neden:** ancak, bu özellik sınıfı oluşturmak veya otomatik olarak yazın, kullanmadan önce sınıf veya tür bildirebilirsiniz.
+**Neden:** ancak bu özellik sınıfı oluşturun veya otomatik olarak yazın, kullanmadan önce sınıf veya tür bildirebilirsiniz.
 
 ## <a name="how-to"></a>Nasıl Yapılır Konuları
 
-1. İmlecinizi satıra yerleştirin kırmızı dalgalı olduğu. Kırmızı dalgalı henüz mevcut olmayan bir sınıfı gösterir.
+1. İmlecinizi satıra Yerleştir kırmızı dalgalı olduğu. Kırmızı dalgalı çizgi henüz mevcut olmayan bir sınıfı gösterir.
 
-   - C# ' TA:
+   - C# İÇİN:
 
-    ![Vurgulanmış kodu C#](media/class-highlight-cs.png)
+       ![Vurgulanmış kodu C#](media/class-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Vurgulanmış kodu VB](media/class-highlight-vb.png)
+       ![Vurgulanmış kodu VB](media/class-highlight-vb.png)
 
-1. Ardından, aşağıdakilerden birini yapın:
+2. Ardından, aşağıdakilerden birini yapın:
 
    - **Klavye**
-     - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
+      - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
    - **Fare**
-     - Sağ tıklatıp **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
-     - Kırmızı dalgalı getirin ve'ı tıklatın ![Ampul](media/bulb-cs.png) görüntülenen simge.
-     - &nbsp; ![Ampul](media/bulb-cs.png) metin imleci kırmızı dalgalı satırıyla açıksa sol kenar boşluğunda görüntülenen simgesine.
+      - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
+      - Kırmızı dalgalı çizgi gelin ve tıklayın ![Ampul](media/bulb-cs.png) görüntülenen simge.
+      - &nbsp; ![Ampul](media/bulb-cs.png) kırmızı dalgalı çizgi içeren satırda metin imleci ise, sol kenar boşluğunda görünür simge.
 
-    ![Sınıf Önizleme oluşturma](media/class-preview-cs.png)
+      ![Sınıf Önizleme oluşturma](media/class-preview-cs.png)
 
-1. Aşağı açılır menüden seçeneklerden birini seçin:
+3. Aşağı açılan menüden seçeneklerden birini belirleyin:
 
-   - Sınıfı oluşturmak*TypeName*' yeni dosyasında&mdash;adlı bir sınıf oluşturur *TypeName* adlı bir dosyaya *TypeName*.cs/.vb
-   - Sınıfı oluşturmak*TypeName*'&mdash;adlı bir sınıf oluşturur *TypeName* geçerli dosyasında.
-   - İç içe geçmiş sınıf oluşturmak*TypeName*'&mdash;adlı bir sınıf oluşturur *TypeName* geçerli sınıf içinde iç içe geçmiş.
-   - Yeni türü oluştur... &mdash;Belirttiğiniz özelliklerin tümünü yeni bir sınıf veya yapı oluşturur.
+   - Sınıf*TypeName*' yeni dosyasında&mdash;adlı bir sınıf oluşturur *TypeName* adındaki bir dosyaya *TypeName*.cs/.vb
+   - Sınıf*TypeName*'&mdash;adlı bir sınıf oluşturur *TypeName* geçerli dosyadaki.
+   - İç içe geçmiş sınıf*TypeName*'&mdash;adlı bir sınıf oluşturur *TypeName* geçerli sınıf içinde iç içe geçmiş.
+   - Yeni tür üret... &mdash;Yeni bir sınıf veya yapının tüm belirttiğiniz özelliklerini oluşturur.
 
    > [!TIP]
-   > Kullanım **Önizleme değişiklikleri** önizleme penceresinin altındaki bağlantıyı [tüm değişiklikleri görmek için](../../ide/preview-changes.md) , oluşturulacak seçiminizi yaptıktan önce.
+   > Kullanım **değişiklik önizlemesi** Önizleme pencerenin alt kısmındaki bağlantı [tüm değişiklikleri görmek için](../../ide/preview-changes.md) , oluşturulacak, seçim yapmadan önce.
 
-1. Seçtiyseniz **yeni türü** öğesi, **oluşturmak türü** iletişim kutusu açılır. Erişilebilirlik, türü ve konumu yeni türünün yapılandırın.
+4. Seçtiyseniz **yeni tür oluşturma** öğesini **oluşturma türü** iletişim kutusu açılır. Erişilebilirlik, tür ve yeni türü konumunu yapılandırın.
 
-   ![Türü](media/class-newtype-cs.png)
+   ![Tür oluşturma](media/class-newtype-cs.png)
 
    Seçim | Açıklama
    --- | ---
-   Access | Sahip türünü ayarlayın *varsayılan*, *dahili* veya *ortak* erişim.
-   türü | Bu olarak ayarlanabilir *sınıfı* veya *yapısı*.
-   Ad | Bu değiştirilemez ve zaten yazdığınız ad olacaktır.
-   Proje | Çözümünüz içinde birden çok proje varsa, dinamik sınıf/yapı istediğiniz seçebilirsiniz.
+   Access | Türü için ayarlanmış *varsayılan*, *dahili* veya *genel* erişim.
+   tür | Bu, olarak ayarlanabilir *sınıfı* veya *yapı*.
+   Ad | Bu değiştirilemez ve yazdığınız adı olacaktır.
+   Proje | Çözümünüz içinde birden çok proje varsa Canlı sınıf/yapı istediğiniz seçebilirsiniz.
    Dosya Adı | Yeni bir dosya oluşturabilir veya varolan bir dosyaya türü ekleyebilirsiniz.
 
-Sınıf veya yapı oluşturulur. C# ' ta bir oluşturucu da oluşturulur.
+Sınıfın veya yapının oluşturulur. İçin C#, bir yapıcı da oluşturulur.
 
 - C#
 
-   ![Sınıf sonuç C# oluştur](media/class-result-cs.png)
+   ![Sınıf sonucu oluşturC#](media/class-result-cs.png)
 
 - Visual Basic
 
-   ![Sınıf sonuç VB oluştur](media/class-result-vb.png)
+   ![VB sınıf sonucu oluştur](media/class-result-vb.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -38,12 +38,12 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05fda0b130d765d5028e9c257102100708908dca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 37b815543332ff61a275fed8fdfba06c91a433b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285928"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813680"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Özel Durumları Hata Ayıklayıcısı ile Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,86 +78,86 @@ Bir özel durum bir program yürütüldüğü sırada gerçekleşen bir hata dur
   
  Belirli bir özel durum işaretlerseniz, olup, işlenmiş işlenmemiş veya bağımsız olarak özel durum her yerde hata ayıklayıcı yürütmeyi keser. Bu noktada bir özel durum bir ilk fırsat özel durum olarak adlandırılır. Örneğin, birkaç senaryo şunlardır:  
   
-1.  Aşağıdaki C# konsol uygulamasında, Main yöntemi oluşturur bir **AccessViolationException** içinde bir `try/catch` engelle:  
+1. Aşağıdaki C# konsol uygulamasında, Main yöntemi oluşturur bir **AccessViolationException** içinde bir `try/catch` engelle:  
   
-    ```csharp  
-    static void Main(string[] args)  
-    {  
-        try  
-        {  
-            throw new AccessViolationException();  
-            Console.WriteLine("here");  
-        }  
-        catch (Exception e)  
-        {  
-            Console.WriteLine("caught exception");  
-        }  
-        Console.WriteLine("goodbye");  
-    }  
-    ```  
+   ```csharp  
+   static void Main(string[] args)  
+   {  
+       try  
+       {  
+           throw new AccessViolationException();  
+           Console.WriteLine("here");  
+       }  
+       catch (Exception e)  
+       {  
+           Console.WriteLine("caught exception");  
+       }  
+       Console.WriteLine("goodbye");  
+   }  
+   ```  
   
-     Varsa **AccessViolationException** iade **özel durum ayarları**, hata ayıklayıcı yürütme bu kodu çalıştırdığınızda üzerinde bozar `throw` satır. Ardından, yürütme devam edebilirsiniz. Konsol, iki satır görüntülenmesi gerekir:  
+    Varsa **AccessViolationException** iade **özel durum ayarları**, hata ayıklayıcı yürütme bu kodu çalıştırdığınızda üzerinde bozar `throw` satır. Ardından, yürütme devam edebilirsiniz. Konsol, iki satır görüntülenmesi gerekir:  
   
-    ```  
-    caught exception  
-    goodbye  
-    ```  
+   ```  
+   caught exception  
+   goodbye  
+   ```  
   
-     ancak dotnetclıtools'u görüntülemiyor `here` satır.  
+    ancak dotnetclıtools'u görüntülemiyor `here` satır.  
   
-2.  Bir C# konsol uygulaması iki yöntem, bir özel durum oluşturur ve bunu işleyen bir yöntem ve bir ikinci yöntem aynı özel durum oluşturur ve onu işlemiyor sahip bir sınıf ile bir sınıf kitaplığı başvuruyor:  
+2. Bir C# konsol uygulaması iki yöntem, bir özel durum oluşturur ve bunu işleyen bir yöntem ve bir ikinci yöntem aynı özel durum oluşturur ve onu işlemiyor sahip bir sınıf ile bir sınıf kitaplığı başvuruyor:  
   
-    ```vb  
-    public class Class1  
-    {  
-        public void ThrowHandledException()  
-        {  
-            try  
-            {  
-                throw new AccessViolationException();  
-            }  
-            catch (AccessViolationException ave)  
-            {  
-                Console.WriteLine("caught exception" + ave.Message);  
-            }  
-        }  
+   ```vb  
+   public class Class1  
+   {  
+       public void ThrowHandledException()  
+       {  
+           try  
+           {  
+               throw new AccessViolationException();  
+           }  
+           catch (AccessViolationException ave)  
+           {  
+               Console.WriteLine("caught exception" + ave.Message);  
+           }  
+       }  
   
-        public void ThrowUnhandledException()  
-        {  
-            throw new AccessViolationException();  
-        }  
-    }  
-    ```  
+       public void ThrowUnhandledException()  
+       {  
+           throw new AccessViolationException();  
+       }  
+   }  
+   ```  
   
-     Konsol uygulaması Main() yöntemi aşağıda verilmiştir:  
+    Konsol uygulaması Main() yöntemi aşağıda verilmiştir:  
   
-    ```csharp  
-    static void Main(string[] args)  
-    {  
-        Class1 class1 = new Class1();  
-        class1.ThrowHandledException();  
-        class1.ThrowUnhandledException();  
-    }  
-    ```  
+   ```csharp  
+   static void Main(string[] args)  
+   {  
+       Class1 class1 = new Class1();  
+       class1.ThrowHandledException();  
+       class1.ThrowUnhandledException();  
+   }  
+   ```  
   
-     Varsa **AccessViolationException** iade **özel durum ayarları**, hata ayıklayıcı yürütme bu kodu çalıştırdığınızda üzerinde bozar `throw` hem de satır  **ThrowHandledException()** ve **ThrowUnhandledException()**.  
+    Varsa **AccessViolationException** iade **özel durum ayarları**, hata ayıklayıcı yürütme bu kodu çalıştırdığınızda üzerinde bozar `throw` hem de satır  **ThrowHandledException()** ve **ThrowUnhandledException()**.  
   
- Özel durum ayarlarını varsayılan ayarlara geri yüklemek istiyorsanız, tıklayabilirsiniz **geri** araç çubuğunda:  
+   Özel durum ayarlarını varsayılan ayarlara geri yüklemek istiyorsanız, tıklayabilirsiniz **geri** araç çubuğunda:  
   
- ![Özel durum Ayarları'nda Varsayılanları Geri Yükle](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
+   ![Özel durum Ayarları'nda Varsayılanları Geri Yükle](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
 ###  <a name="BKMK_UserUnhandled"></a> Kullanıcı tarafından işlenmeyen özel durumları devam etmek için hata ayıklayıcı ayarlama  
  .NET veya JavaScript kodu ile hata ayıklaması yapıyorsanız [yalnızca kendi kodum](../debugger/just-my-code.md), başka bir yere işlenir ancak kullanıcı kodunda işlenmemiş özel durumları değil hata ayıklayıcının işlemi durdurmasını sağlayabilirsiniz.  
   
-1.  İçinde **özel durum ayarları** penceresinde penceresinde sağ tıklatıp ardından seçerek, bağlam menüsünü açın **sütunları göster**. (Kapalı durumunda **yalnızca kendi kodum**, bu komut görmezsiniz.)  
+1. İçinde **özel durum ayarları** penceresinde penceresinde sağ tıklatıp ardından seçerek, bağlam menüsünü açın **sütunları göster**. (Kapalı durumunda **yalnızca kendi kodum**, bu komut görmezsiniz.)  
   
-2.  Adlı ikinci bir sütun görmelisiniz **ek eylemler**. Bu sütunda görüntülenir **kullanıcı kodu tarafından işlenmediğinde devam** belirli özel durumlarda, bu özel durum kullanıcı kodunda işlenmemiş ancak harici kod işlenir, hata ayıklayıcı kesmez anlamına gelir.  
+2. Adlı ikinci bir sütun görmelisiniz **ek eylemler**. Bu sütunda görüntülenir **kullanıcı kodu tarafından işlenmediğinde devam** belirli özel durumlarda, bu özel durum kullanıcı kodunda işlenmemiş ancak harici kod işlenir, hata ayıklayıcı kesmez anlamına gelir.  
   
-3.  Ya da belirli bir özel durum için bu ayarı değiştirebilirsiniz (özel durum, sağ tıklatın ve seçin ve seçimini seçin **kullanıcı kodunda işlenmediğinde devam**) veya özel durumlar (örneğin, tüm ortak bir tüm kategorisi Dil çalışma zamanı özel durumları).  
+3. Ya da belirli bir özel durum için bu ayarı değiştirebilirsiniz (özel durum, sağ tıklatın ve seçin ve seçimini seçin **kullanıcı kodunda işlenmediğinde devam**) veya özel durumlar (örneğin, tüm ortak bir tüm kategorisi Dil çalışma zamanı özel durumları).  
   
- Örneğin, ASP.NET web uygulamaları için bir HTTP 500 durum kodu dönüştürerek özel durumları işleme ([özel durum işleme ASP.NET API](http://www.asp.net/web-api/overview/error-handling/exception-handling)), hangi değil yardımcı olabilir, özel durumun kaynağı belirlemek için. Aşağıdaki örnekte, kullanıcı kodu çağrıda `String.Format()` oluşturan bir <xref:System.FormatException>. Yürütme aşağıdaki gibi ayırır:  
+   Örneğin, ASP.NET web uygulamaları için bir HTTP 500 durum kodu dönüştürerek özel durumları işleme ([özel durum işleme ASP.NET API](http://www.asp.net/web-api/overview/error-handling/exception-handling)), hangi değil yardımcı olabilir, özel durumun kaynağı belirlemek için. Aşağıdaki örnekte, kullanıcı kodu çağrıda `String.Format()` oluşturan bir <xref:System.FormatException>. Yürütme aşağıdaki gibi ayırır:  
   
- ![Kullanıcı keser&#45;unhanlded özel durum](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+   ![Kullanıcı keser&#45;unhanlded özel durum](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ### <a name="adding-and-deleting-exceptions"></a>Ekleme ve özel durumları silme  
  Ekleme ve özel durumları silebilirsiniz. Herhangi bir türde özel durum özel'i seçip tıklayarak herhangi bir kategoride silebilirsiniz **Sil** düğmesine (eksi işareti) **özel durum ayarları** araç çubuğunu veya özel durum sağ tıklayın ve seçme **Sil** bağlam menüsünden. Bir özel durum siliniyor, bu durum oluştuğunda hata ayıklayıcının kesintiye uğratacağını değil denetlenmeyen, özel durum olarak aynı etkiye sahiptir.  

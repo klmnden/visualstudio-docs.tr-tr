@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d2a3b785f79d7b0b1fe038ec6c9280161ad909d
-ms.sourcegitcommit: b45daa3c4f0820b69f9e702c8c1f352ef6856b4d
+ms.openlocfilehash: 48cdb36294f027fcd2e47fca8d903caf5856c236
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43289286"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906071"
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Visual Studio 2017 için en son sürüme güncelleştirme
 
@@ -42,7 +42,7 @@ Bir güncelleştirme olduğunda, Visual Studio ile ilgili bir bildirim bayrağı
 
 2. Bildirim bayrağına açmak için seçin **bildirimleri** hub'ı ve ardından yüklemek istediğiniz güncelleştirmeyi seçin.
 
-  ![Bildirim hub'ı kullanarak Visual Studio 2017 güncelleştirmesi](media/vs-install-notifications-hub-15dot6.png "bildirim Merkezi'nde Visual Studio 2017")
+   ![Bildirim hub'ı kullanarak Visual Studio 2017 güncelleştirmesi](media/vs-install-notifications-hub-15dot6.png "bildirim Merkezi'nde Visual Studio 2017")
 
 3. Zaman **güncelleştirme** iletişim kutusu açılır öğesini **Şimdi Güncelleştir**.
 
@@ -82,14 +82,14 @@ Visual Studio 2017 önceki sürümlerinde olduğu gibi bir güncelleştirmeyi y�
 
 2. Yükleyici açın. Visual Studio yükleyicisi, devam etmeden önce güncelleştirme gerektirebilir.
 
-  > [!NOTE]
-  > Windows 10 çalıştıran bir bilgisayarda, yükleyici harfi altında bulabilirsiniz **V** olarak **Visual Studio yükleyicisi**, veya harf altında **M** olarak  **Microsoft Visual Studio yükleyicisi**.
+   > [!NOTE]
+   > Windows 10 çalıştıran bir bilgisayarda, yükleyici harfi altında bulabilirsiniz **V** olarak **Visual Studio yükleyicisi**, veya harf altında **M** olarak  **Microsoft Visual Studio yükleyicisi**.
 
-2. Üzerinde **ürün** Yükleyicisi'nde arama Visual Studio'nun sürümü yüklü olduğu için sayfa.
+3. Üzerinde **ürün** Yükleyicisi'nde arama Visual Studio'nun sürümü yüklü olduğu için sayfa.
 
-3. Bir güncelleştirme varsa, gördüğünüz bir **güncelleştirme** düğmesi. (Bir güncelleştirme kullanılabilir olup olmadığını belirlemek yükleyici için birkaç saniye sürebilir.)
+4. Bir güncelleştirme varsa, gördüğünüz bir **güncelleştirme** düğmesi. (Bir güncelleştirme kullanılabilir olup olmadığını belirlemek yükleyici için birkaç saniye sürebilir.)
 
-  Seçin **güncelleştirme** güncelleştirmeleri yüklemek için düğme.
+   Seçin **güncelleştirme** güncelleştirmeleri yüklemek için düğme.
 
      ![Visual Studio Yükleyicisi'ni kullanarak Visual Studio 2017 güncelleştirmesi](media/update-visual-studio.png "güncelleştirme Visual Studio 2017 Visual Studio Yükleyicisi'ni kullanarak")
 
@@ -101,19 +101,19 @@ Visual Studio 2017 önceki sürümlerinde olduğu gibi bir güncelleştirmeyi y�
 
 1. Güncelleştirmeler olduğunda, Visual Studio ile ilgili bir bildirim bayrağı yok.
 
-  ![Bildirim hub'ı kullanarak Visual Studio 2017 güncelleştirmesi](media/notification-flag.png "Visual Studio'daki bildirim bayrağı güncelleştirmenin")
+   ![Bildirim hub'ı kullanarak Visual Studio 2017 güncelleştirmesi](media/notification-flag.png "Visual Studio'daki bildirim bayrağı güncelleştirmenin")
 
-  Bildirim bayrağına açmak için seçin **bildirimleri** hub.
+   Bildirim bayrağına açmak için seçin **bildirimleri** hub.
 
-  ![Bildirim hub'ı kullanarak Visual Studio 2017 güncelleştirmesi](media/notifications-hub.png "bildirim Merkezi'nde Visual Studio")
+   ![Bildirim hub'ı kullanarak Visual Studio 2017 güncelleştirmesi](media/notifications-hub.png "bildirim Merkezi'nde Visual Studio")
 
 2. Seçin **"Visual Studio güncelleştirme" kullanılabilir**, açan **Uzantılar ve güncelleştirmeler** iletişim kutusu.
 
-  ![Bildirim hub'ı kullanarak Visual Studio 2017 güncelleştirmesi](media/notifications-hub-select.png "bildirim Merkezi'nde Visual Studio")
+   ![Bildirim hub'ı kullanarak Visual Studio 2017 güncelleştirmesi](media/notifications-hub-select.png "bildirim Merkezi'nde Visual Studio")
 
 3. İçinde **Uzantılar ve güncelleştirmeler** iletişim kutusunda **güncelleştirme** düğmesi.
 
-  ![Bildirim hub'ı kullanarak Visual Studio 2017 güncelleştirmesi](media/notifications-extensions-and-updates.png "Visual Studio'da Uzantılar ve güncelleştirmeler iletişim kutusu")
+   ![Bildirim hub'ı kullanarak Visual Studio 2017 güncelleştirmesi](media/notifications-extensions-and-updates.png "Visual Studio'da Uzantılar ve güncelleştirmeler iletişim kutusu")
 
 #### <a name="more-about-visual-studio-notifications"></a>Visual Studio bildirimleri hakkında daha fazla bilgi
 
@@ -135,14 +135,14 @@ Bir bildirim yoksaymayı seçerseniz, Visual Studio göstermeyi durdurur. Yoksay
 
 1. Yükleyici açın. Yükleyici, devam etmeden önce güncelleştirmeniz gerekebilir. Bu durumda, bunu yapmak istenir.
 
-  > [!NOTE]
-  > Windows 10 çalıştıran bir bilgisayarda, yükleyici harfi altında bulabilirsiniz **V** olarak **Visual Studio yükleyicisi**, veya harf altında **M** olarak  **Microsoft Visual Studio yükleyicisi**.
+   > [!NOTE]
+   > Windows 10 çalıştıran bir bilgisayarda, yükleyici harfi altında bulabilirsiniz **V** olarak **Visual Studio yükleyicisi**, veya harf altında **M** olarak  **Microsoft Visual Studio yükleyicisi**.
 
 2. Üzerinde **ürün** Yükleyicisi'nde arama Visual Studio'nun sürümü yüklü olduğu için sayfa.
 
 3. Bir güncelleştirme varsa, gördüğünüz bir **güncelleştirme** düğmesi. (Bir güncelleştirme kullanılabilir olup olmadığını belirlemek yükleyici için birkaç saniye sürebilir.)
 
-  Seçin **güncelleştirme** güncelleştirmeleri yüklemek için düğme.
+   Seçin **güncelleştirme** güncelleştirmeleri yüklemek için düğme.
 
      ![Visual Studio Yükleyicisi'ni kullanarak Visual Studio 2017 güncelleştirmesi](media/update-visual-studio.png "güncelleştirme Visual Studio 2017 Visual Studio Yükleyicisi'ni kullanarak")
 

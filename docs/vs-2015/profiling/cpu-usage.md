@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a25c50eaf3f0f5e31e6a3085967f0b6bd5f1055c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f49ab702a411c1d5205be8c626ce1032e57ab4ce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208705"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876522"
 ---
 # <a name="cpu-usage"></a>CPU kullanımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,33 +34,33 @@ Uygulamanızdaki performans sorunlarını araştırmak gerektiğinde başlatmak 
   
 ##  <a name="BKMK_Collect_CPU_usage_data"></a> CPU kullanım verileri toplama  
   
-1.  Visual Studio'da çözüm yapılandırması ayarlanmış **yayın** ve dağıtım hedefini seçin.  
+1. Visual Studio'da çözüm yapılandırması ayarlanmış **yayın** ve dağıtım hedefini seçin.  
   
-     ![Yayın ve yerel makine seçin](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
+    ![Yayın ve yerel makine seçin](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
-    -   Uygulamayı çalışır durumda **yayın** modu gerçek uygulamanızın performansını daha iyi bir görünümünü sağlar.  
+   -   Uygulamayı çalışır durumda **yayın** modu gerçek uygulamanızın performansını daha iyi bir görünümünü sağlar.  
   
-    -   Uygulamayı yerel makinede en iyi çalışan yüklü uygulama yürütülmesini çoğaltır.  
+   -   Uygulamayı yerel makinede en iyi çalışan yüklü uygulama yürütülmesini çoğaltır.  
   
-    -   Uzak bir CİHAZDAN veri topluyorsanız, uygulamayı doğrudan cihazda ve Uzak Masaüstü bağlantısı kullanarak değil çalıştırın.  
+   -   Uzak bir CİHAZDAN veri topluyorsanız, uygulamayı doğrudan cihazda ve Uzak Masaüstü bağlantısı kullanarak değil çalıştırın.  
   
-    -   Windows Phone uygulamaları için doğrudan veri toplama **cihaz** en doğru veriler sağlar.  
+   -   Windows Phone uygulamaları için doğrudan veri toplama **cihaz** en doğru veriler sağlar.  
   
-2.  Üzerinde **hata ayıklama** menüsünde seçin **performans Profiler...** .  
+2. Üzerinde **hata ayıklama** menüsünde seçin **performans Profiler...** .  
   
-3.  Seçin **CPU kullanımı** seçip **Başlat**.  
+3. Seçin **CPU kullanımı** seçip **Başlat**.  
   
-     ![CPU kullanımı seçin](../profiling/media/cpuuse-lib-choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
+    ![CPU kullanımı seçin](../profiling/media/cpuuse-lib-choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
   
-4.  Uygulama başlatıldığında tıklayın **alma sınırı**. Çıkış görüntülendikten sonra ikinci bir bekleyin ve ardından **alma en fazla sayı Async**. Düğme tıklamaları yapar bekleyen düğme yalıtmak daha kolay tıklayın tanılama raporu yordamları.  
+4. Uygulama başlatıldığında tıklayın **alma sınırı**. Çıkış görüntülendikten sonra ikinci bir bekleyin ve ardından **alma en fazla sayı Async**. Düğme tıklamaları yapar bekleyen düğme yalıtmak daha kolay tıklayın tanılama raporu yordamları.  
   
-5.  İkinci çıktı satırı göründükten sonra seçin **toplamasını Durdur** performans ve tanılama hub'ında.  
+5. İkinci çıktı satırı göründükten sonra seçin **toplamasını Durdur** performans ve tanılama hub'ında.  
   
- ![CpuUsage veri toplamayı Durdur](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![CpuUsage veri toplamayı Durdur](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
   
- CPU kullanımı aracı verileri çözümler ve rapor görüntüler.  
+   CPU kullanımı aracı verileri çözümler ve rapor görüntüler.  
   
- ![CpuUsage rapor](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
+   ![CpuUsage rapor](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
 ## <a name="analyze-the-cpu-usage-report"></a>CPU kullanımı raporunu analiz etme  
   

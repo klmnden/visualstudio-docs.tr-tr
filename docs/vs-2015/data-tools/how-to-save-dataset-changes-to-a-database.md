@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: a197952bcc392f84db3f612a158817237e077d36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 60bb855202cfb333820fe2292fedc0b31608c5c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202286"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949025"
 ---
 # <a name="how-to-save-dataset-changes-to-a-database"></a>Nasıl yapılır: Veri Kümesi Değişikliklerini Veritabanına Kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,15 +69,15 @@ Veri kümenizdeki verileri değiştiren ve doğrulanmış sonra büyük olasıl�
 ## <a name="updating-two-related-tables-in-a-dataset"></a>Bir veri kümesindeki iki ilişkili tablolar güncelleştiriliyor  
  Veri kümesinde ilişkili tablolardaki güncelleştirirken başvurusal bütünlük kısıtlamalarını ihlal olasılığını azaltmak için doğru sırada güncelleştirilmesi önemlidir. Komut yürütme sırası dizin de izleyeceği <xref:System.Data.DataRowCollection> kümesindeki. Yaratılmasına veri bütünlüğü hatalarını önlemek için aşağıdaki sırayla veritabanını güncellemek için en iyi yöntem olacaktır:  
   
-1.  Alt tablo: kayıtları silin.  
+1. Alt tablo: kayıtları silin.  
   
-2.  Üst tablo: ekleme, güncelleştirme ve kayıtları silin.  
+2. Üst tablo: ekleme, güncelleştirme ve kayıtları silin.  
   
-3.  Alt tablo: ekleme ve güncelleştirme kaydeder.  
+3. Alt tablo: ekleme ve güncelleştirme kaydeder.  
   
- Birden çok tablodan veri kaydetme ile ilgili ayrıntılı bilgi için bkz [veritabanına (birden çok tablo) veri kaydetme](../data-tools/save-data-to-a-database-multiple-tables.md).  
+   Birden çok tablodan veri kaydetme ile ilgili ayrıntılı bilgi için bkz [veritabanına (birden çok tablo) veri kaydetme](../data-tools/save-data-to-a-database-multiple-tables.md).  
   
- İki veya daha fazla ilgili tablo güncelleştiriyorsanız, bir işlem içinde tüm güncelleştirme mantığı eklemeniz gerekir. Bir işlem herhangi bir değişiklik yapmadan önce tüm ilgili değişiklikler veritabanına başarıyla garantiler bir işlemdir. Daha fazla bilgi edinmek, [işlemler ve eşzamanlılık](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
+   İki veya daha fazla ilgili tablo güncelleştiriyorsanız, bir işlem içinde tüm güncelleştirme mantığı eklemeniz gerekir. Bir işlem herhangi bir değişiklik yapmadan önce tüm ilgili değişiklikler veritabanına başarıyla garantiler bir işlemdir. Daha fazla bilgi edinmek, [işlemler ve eşzamanlılık](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
   
 #### <a name="to-update-two-related-tables-using-a-tableadapter"></a>Bir TableAdapter kullanarak iki ilişkili tablolar güncelleştirilemedi  
   

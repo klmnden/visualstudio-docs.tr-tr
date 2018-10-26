@@ -19,12 +19,12 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aebac5a95a6d1b1ab6aa0d4230094003de2a2062
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2886e454e9986e63cbc3496d3ef5b0664e85dede
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221266"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851601"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>UML’yi genişletmek için profil tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Tanımlayabileceğiniz bir *UML profili* belirli amaçlar için standart model �
   
  Uyum ve kendi iş alanınız veya Mimariniz için UML genişletmek amacıyla kendi profilinizi tanımlayabilirsiniz. Örneğin:  
   
--   Sık sık Web siteleri tanımlıyorsanız, sınıf diyagramlardaki sınıflara uygulanabilecek «WebSayfası» stereotipi sağlayan kendi profilinizi tanımlayabilirsiniz. Ardından, bir Web sitesi planlamak için sınıf diyagramlarını kullanabilirsiniz. Her «Websayfası» sınıfının sayfa içeriği, stili ve benzerleri için ek özelliklere sahip olması gerekir.  
+- Sık sık Web siteleri tanımlıyorsanız, sınıf diyagramlardaki sınıflara uygulanabilecek «WebSayfası» stereotipi sağlayan kendi profilinizi tanımlayabilirsiniz. Ardından, bir Web sitesi planlamak için sınıf diyagramlarını kullanabilirsiniz. Her «Websayfası» sınıfının sayfa içeriği, stili ve benzerleri için ek özelliklere sahip olması gerekir.  
   
--   Bankacılık yazılımı geliştiriyorsanız, «Hesap» stereotipi sağlayan bir profil tanımlayabilirsiniz. Ardından, hesabın farklı türlerini tanımlamak ve onlar arasındaki ilişkileri göstermek için sınıf diyagramlarını kullanabilirsiniz.  
+- Bankacılık yazılımı geliştiriyorsanız, «Hesap» stereotipi sağlayan bir profil tanımlayabilirsiniz. Ardından, hesabın farklı türlerini tanımlamak ve onlar arasındaki ilişkileri göstermek için sınıf diyagramlarını kullanabilirsiniz.  
   
- Kendi profillerinizi ekibinize dağıtabilirsiniz. Her ekip üyesi profilinizi yükleyebilir. Bu, bunları düzenlemek ve stereotiplerini kullanan modelleri oluşturmak sağlar.  
+  Kendi profillerinizi ekibinize dağıtabilirsiniz. Her ekip üyesi profilinizi yükleyebilir. Bu, bunları düzenlemek ve stereotiplerini kullanan modelleri oluşturmak sağlar.  
   
 > [!NOTE]
 >  Bir profil düzenleme ve model diğer kişilerle paylaşın, bir modelde stereotipleri uygularsanız, bunlar aynı profili kendi bilgisayarlarına yüklemeniz gerekir. Aksi halde, kullandığınız stereotipleri görme olanakları olmayacaktır.  
@@ -83,56 +83,56 @@ Tanımlayabileceğiniz bir *UML profili* belirli amaçlar için standart model �
   
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>Yeni bir Visual Studio Uzantısında bir profil tanımlamak için  
   
-1.  Visual Studio uzantı projesi oluşturun.  
+1. Visual Studio uzantı projesi oluşturun.  
   
-    > [!NOTE]
-    >  Yüklemiş olmanız gerekir [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] için bu yordamı kullanın.  
+   > [!NOTE]
+   >  Yüklemiş olmanız gerekir [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] için bu yordamı kullanın.  
   
-    1.  Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
+   1.  Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
   
-    2.  İçinde **yeni proje** iletişim kutusunda, **yüklü şablonlar**, genişletin **Visual C#**, tıklayın **genişletilebilirlik**ve ardından tıklayın **VSIX projesi**. Proje adını ayarlayın ve tıklayın **Tamam**.  
+   2.  İçinde **yeni proje** iletişim kutusunda, **yüklü şablonlar**, genişletin **Visual C#**, tıklayın **genişletilebilirlik**ve ardından tıklayın **VSIX projesi**. Proje adını ayarlayın ve tıklayın **Tamam**.  
   
-2.  Profilinizi projeye ekleyin.  
+2. Profilinizi projeye ekleyin.  
   
-    -   Çözüm Gezgini'nde projeye sağ tıklayın, fareyle **Ekle**ve ardından **var olan öğe**. İletişim kutusunda profil dosyanızı bulun.  
+   -   Çözüm Gezgini'nde projeye sağ tıklayın, fareyle **Ekle**ve ardından **var olan öğe**. İletişim kutusunda profil dosyanızı bulun.  
   
-3.  Profil dosyanızın ayarlamak **çıktıya Kopyala** özelliği.  
+3. Profil dosyanızın ayarlamak **çıktıya Kopyala** özelliği.  
   
-    1.  Çözüm Gezgini profil dosyasına sağ tıklayın ve ardından **özellikleri**.  
+   1.  Çözüm Gezgini profil dosyasına sağ tıklayın ve ardından **özellikleri**.  
   
-    2.  Özellikler penceresinde ayarlayın **çıkış dizinine Kopyala** özelliğini **her zaman Kopyala**.  
+   2.  Özellikler penceresinde ayarlayın **çıkış dizinine Kopyala** özelliğini **her zaman Kopyala**.  
   
-4.  Çözüm Gezgini'nde açın `source.extension.vsixmanifest`.  
+4. Çözüm Gezgini'nde açın `source.extension.vsixmanifest`.  
   
-     Dosya, uzantı bildirim düzenleyicisinde açılır.  
+    Dosya, uzantı bildirim düzenleyicisinde açılır.  
   
-5.  Üzerinde **varlıklar** sayfasında, profili açıklayan bir satır ekleyin:  
+5. Üzerinde **varlıklar** sayfasında, profili açıklayan bir satır ekleyin:  
   
-    -   **Yeni**'yi tıklatın. Alanlar kümesinde **yeni varlık Ekle** aşağıdaki gibi iletişim.  
+   -   **Yeni**'yi tıklatın. Alanlar kümesinde **yeni varlık Ekle** aşağıdaki gibi iletişim.  
   
-    -   Ayarlama **türü** için `Microsoft.VisualStudio.UmlProfile`  
+   -   Ayarlama **türü** için `Microsoft.VisualStudio.UmlProfile`  
   
-         Bu açılan seçeneklerden biri değil. Klavyeden bu adı girin.  
+        Bu açılan seçeneklerden biri değil. Klavyeden bu adı girin.  
   
-    -   Tıklayın **FileSystem'daki** ve örneğin profil dosyanızın adını seçin `MyProfile.profile`  
+   -   Tıklayın **FileSystem'daki** ve örneğin profil dosyanızın adını seçin `MyProfile.profile`  
   
-6.  Projeyi oluşturun.  
+6. Projeyi oluşturun.  
   
-7.  **Hata ayıklama, profil için**, F5 tuşuna basın.  
+7. **Hata ayıklama, profil için**, F5 tuşuna basın.  
   
-     Visual Studio deneysel örneği açılır. Bu örnekte, bir modelleme projesi açın. UML Gezgini'nde, modelin ve Özellikler penceresinde kök öğe seçin, profilinizi seçin. Ardından model içinde öğeleri seçin ve onlar için tanımladığınız stereotipleri ayarlayın.  
+    Visual Studio deneysel örneği açılır. Bu örnekte, bir modelleme projesi açın. UML Gezgini'nde, modelin ve Özellikler penceresinde kök öğe seçin, profilinizi seçin. Ardından model içinde öğeleri seçin ve onlar için tanımladığınız stereotipleri ayarlayın.  
   
-8.  **VSIX'i dağıtım için ayıklamak için**  
+8. **VSIX'i dağıtım için ayıklamak için**  
   
-    1.  Windows Gezgini'nde klasörü açın **.\bin\Debug** veya **.\bin\Release** bulunacak **.vsix** dosya. Bu bir [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] uzantı dosyası. Bilgisayarınızda yüklü ve diğer Visual Studio kullanıcılarına gönderilebilir.  
+   1.  Windows Gezgini'nde klasörü açın **.\bin\Debug** veya **.\bin\Release** bulunacak **.vsix** dosya. Bu bir [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] uzantı dosyası. Bilgisayarınızda yüklü ve diğer Visual Studio kullanıcılarına gönderilebilir.  
   
-    2.  Uzantıyı yüklemek için:  
+   2.  Uzantıyı yüklemek için:  
   
-        1.  Çift `.vsix` dosya. Visual Studio Uzantı Yükleyicisi başlayacaktır.  
+       1.  Çift `.vsix` dosya. Visual Studio Uzantı Yükleyicisi başlayacaktır.  
   
-        2.  Visual Studio'nun çalışan örneklerini yeniden başlatın.  
+       2.  Visual Studio'nun çalışan örneklerini yeniden başlatın.  
   
- Yüklememişseniz aşağıdaki alternatif yordam küçük uzantılar için kullanılabilir [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
+   Yüklememişseniz aşağıdaki alternatif yordam küçük uzantılar için kullanılabilir [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
   
 #### <a name="to-define-a-profile-extension-without-using-visual-studio-sdk"></a>Visual Studio SDK kullanmadan bir profil uzantısı tanımlamak için  
   
@@ -348,24 +348,24 @@ Tanımlayabileceğiniz bir *UML profili* belirli amaçlar için standart model �
  UML modelini açtığımda aşağıdaki hata görünür: **VS1707: seri hale getirme hata oluştuğu için aşağıdaki profilleri yüklenemiyor: MyProfile.profile**  
  1.  Profili, temel XML sözdiziminin doğru olduğundan emin olun.  
   
-2.  Her Takma adın form/ProfileName/nodename içinde olduğundan emin olun. ProfileName kök profil düğümündeki ad özniteliğinin değeridir. NodeName metaclass, externalType veya enumerationType ad özniteliğinin değeridir.  
+2. Her Takma adın form/ProfileName/nodename içinde olduğundan emin olun. ProfileName kök profil düğümündeki ad özniteliğinin değeridir. NodeName metaclass, externalType veya enumerationType ad özniteliğinin değeridir.  
   
-3.  Burada açıklandığı ve gösterildiği şekilde bir söz dizimi olduğundan emin olun _sürücü_**: \Program Visual Studio [sürüm] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .  
+3. Burada açıklandığı ve gösterildiği şekilde bir söz dizimi olduğundan emin olun _sürücü_**: \Program Visual Studio [sürüm] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .  
   
-4.  Hatalı uzantıyı kaldırın. Üzerinde **Araçları** menüsünü tıklatın **Uzantılar ve güncelleştirmeler**.  
+4. Hatalı uzantıyı kaldırın. Üzerinde **Araçları** menüsünü tıklatın **Uzantılar ve güncelleştirmeler**.  
   
-    -   Uzantı görünmüyorsa sonraki öğeye bakın.  
+   -   Uzantı görünmüyorsa sonraki öğeye bakın.  
   
-5.  VSIX dosyasını yeniden oluşturun ve tekrar yüklemek için Windows Gezgini'nde açın. Yeniden [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+5. VSIX dosyasını yeniden oluşturun ve tekrar yüklemek için Windows Gezgini'nde açın. Yeniden [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Uzantı, Uzantı Yöneticisi'nde görünmez, ancak yeniden yüklemeye çalıştığınızda, aşağıdaki ileti görünür: **uzantı zaten uygun tüm ürünler için yüklü.**  
- 1.  Uzantı dosyasını kaldırın, bir alt *LocalAppData*\Microsoft\VisualStudio\\[sürüm] \Extensions\  
+   Uzantı, Uzantı Yöneticisi'nde görünmez, ancak yeniden yüklemeye çalıştığınızda, aşağıdaki ileti görünür: **uzantı zaten uygun tüm ürünler için yüklü.**  
+   1.  Uzantı dosyasını kaldırın, bir alt *LocalAppData*\Microsoft\VisualStudio\\[sürüm] \Extensions\  
   
-    -   Görmek için *LocalAppData*, Windows Gezgini Klasör Seçenekleri'nin Görünüm sekmesinde gizli dosyaları göster ayarlamanız gerekir.  
+   -   Görmek için *LocalAppData*, Windows Gezgini Klasör Seçenekleri'nin Görünüm sekmesinde gizli dosyaları göster ayarlamanız gerekir.  
   
-    -   *LocalAppData* genellikle C:\Users içinde olduğu\\*kullanıcıadı*\AppData\Local\  
+   -   *LocalAppData* genellikle C:\Users içinde olduğu\\*kullanıcıadı*\AppData\Local\  
   
-2.  Yeniden [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6. Yeniden [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Model öğelerine stereotipler ekleme](../modeling/add-stereotypes-to-uml-model-elements.md)   

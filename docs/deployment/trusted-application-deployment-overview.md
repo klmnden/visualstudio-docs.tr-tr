@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f99bd0188c89110796f4d082e803f35ce10da867
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: c1be49bb015334ed37326fbe301ac2035a6f3269
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152688"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848793"
 ---
 # <a name="trusted-application-deployment-overview"></a>Güvenilir Uygulama dağıtımına genel bakış
 Bu konu nasıl dağıtılacağı hakkında genel bakış sağlar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] güvenilir uygulama dağıtımı teknolojisini kullanarak yükseltilmiş izinlere sahip uygulamalar.  
@@ -51,21 +51,21 @@ Bu konu nasıl dağıtılacağı hakkında genel bakış sağlar [!INCLUDE[ndpte
   
  Daha büyük kuruluşlarda yayımcı ve dağıtıcı sık iki ayrı varlık şunlardır:  
   
--   Yayımcı oluşturan grubudur [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama.  
+- Yayımcı oluşturan grubudur [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama.  
   
--   Dağıtıcı dağıtan genellikle bilgi teknolojisi (BT) departmanı, grubudur [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] kurumsal masaüstü bilgisayarlar için uygulama.  
+- Dağıtıcı dağıtan genellikle bilgi teknolojisi (BT) departmanı, grubudur [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] kurumsal masaüstü bilgisayarlar için uygulama.  
   
 Güvenilir uygulama dağıtımı yararlanmak için şu adımları izlemelisiniz:  
   
-1.  Yayımcı için bir sertifika edinin.  
+1. Yayımcı için bir sertifika edinin.  
   
-2.  Yayımcı tüm istemcilerde Güvenilen Yayımcılar deposuna ekleyin.  
+2. Yayımcı tüm istemcilerde Güvenilen Yayımcılar deposuna ekleyin.  
   
-3.  Oluşturma, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama.  
+3. Oluşturma, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama.  
   
-4.  Dağıtım bildirimi yayımcının sertifika ile oturum açın.  
+4. Dağıtım bildirimi yayımcının sertifika ile oturum açın.  
   
-5.  Uygulama dağıtımı, istemci bilgisayarlar için yayımlayın.  
+5. Uygulama dağıtımı, istemci bilgisayarlar için yayımlayın.  
   
 ### <a name="obtain-a-certificate-for-the-publisher"></a>Yayımcı için bir sertifika alın  
  Dijital sertifikalar Microsoft Authenticode kimlik doğrulama ve güvenlik sistemi temel bileşenidir. Authenticode, Windows işletim sistemi, standart bir parçasıdır. Tüm [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamaları güvenilir uygulama dağıtımı'na katılıp katılmadığına bağımsız olarak bir dijital sertifika ile imzalanmalıdır. Authenticode'ile nasıl çalıştığına ilişkin tam açıklama için [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], bkz: [ClickOnce ve Authenticode](../deployment/clickonce-and-authenticode.md).  

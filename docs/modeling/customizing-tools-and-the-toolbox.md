@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c7c526c9e5f850ea71a1e31ea0364fcb19a2bcb5
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: c840ed268e8e5aaa70dcc83eb9a0eeff3a2eb33f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860452"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815579"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Araçları ve Araç Kutusunu Özelleştirme
 
@@ -139,7 +139,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
         {
             return base.CreateElementToolPrototype(store, domainClassId);
 }  }    }
-
 ```
 
 ## <a name="connections"></a> Bağlantı araçlarını özelleştirme
@@ -167,15 +166,15 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ### <a name="custom-code-for-connection-builders"></a>Bağlantı oluşturucular için özel kod
  Bağlantı oluşturucular özelleştirmesini farklı türlerini tanımlamak dört onay kutuları kullanıcı arabiriminde bulunur:
 
--   **özel kabul** bir kaynak veya hedef rol yönergesi onay kutusu
+- **özel kabul** bir kaynak veya hedef rol yönergesi onay kutusu
 
--   **özel bağlanma** bir kaynak veya hedef rol yönergesi onay kutusu
+- **özel bağlanma** bir kaynak veya hedef rol yönergesi onay kutusu
 
--   **özel bağlantı kullanan** onay kutusunu bağlanma yönergesi
+- **özel bağlantı kullanan** onay kutusunu bağlanma yönergesi
 
--   **olan özel** bağlantı oluşturucunun özelliği
+- **olan özel** bağlantı oluşturucunun özelliği
 
- Bu özelleştirmeler için bazı program kodu sağlamanıza gerek. Hangi kod sağlamanız gerekir bulmak için bu kutularından birini işaretleyin, tüm Şablonları Dönüştür'e tıklayın ve ardından çözümünüzü oluşturun. Bir hata raporu neden olur. Eklemeniz gerekir, hangi kod anlatan bir açıklama görmek için hata raporuna çift tıklayın.
+  Bu özelleştirmeler için bazı program kodu sağlamanıza gerek. Hangi kod sağlamanız gerekir bulmak için bu kutularından birini işaretleyin, tüm Şablonları Dönüştür'e tıklayın ve ardından çözümünüzü oluşturun. Bir hata raporu neden olur. Eklemeniz gerekir, hangi kod anlatan bir açıklama görmek için hata raporuna çift tıklayın.
 
 > [!NOTE]
 >  Özel kod eklemek için bir parçalı sınıf tanımı bir kod dosyasında GeneratedCode klasörlerdeki kod dosyalarından ayrı oluşturun. İş kaybını önlemek için oluşturulan kod dosyaları düzenleme yapmamanız gerekir. Daha fazla bilgi için [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).

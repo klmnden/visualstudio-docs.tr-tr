@@ -15,12 +15,12 @@ ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c8fe37de7db5a09e9c0e81f25b09e9b4ff345c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c217426d4186477f22a21c9348ff30e181faa840
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237659"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863288"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>İzlenecek Yol: HızlıBilgi Araç İpuçlarını Görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ Hızlıbilgi yöntem imzaları görüntüleyen bir IntelliSense özelliğidir ve
   
  Bu kılavuzda Hızlıbilgi örnek, bir kullanıcı, bir yöntem adı işaretçiyi hareket ettirdiğinde araç ipuçları görüntüler. Bu tasarım, dört bu arabirimlerin uygulanma gerektirir:  
   
--   Kaynak arabirimi  
+- Kaynak arabirimi  
   
--   Kaynak sağlayıcı arabirimi  
+- Kaynak sağlayıcı arabirimi  
   
--   denetleyici arabirimi  
+- denetleyici arabirimi  
   
--   Denetleyici sağlayıcı arabirimi  
+- Denetleyici sağlayıcı arabirimi  
   
- Kaynak ve denetleyici sağlayıcıları, Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşeni bölümleri ve kaynak ve denetleyici sınıflarını dışarı aktarmak için sorumludur ve içeri aktarma ve Hizmetleri gibi aracıları <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, araç ipucu metni oluşturur Arabellek ve <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, Hızlıbilgi oturumu tetikler.  
+  Kaynak ve denetleyici sağlayıcıları, Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşeni bölümleri ve kaynak ve denetleyici sınıflarını dışarı aktarmak için sorumludur ve içeri aktarma ve Hizmetleri gibi aracıları <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, araç ipucu metni oluşturur Arabellek ve <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, Hızlıbilgi oturumu tetikler.  
   
- Bu örnekte, yöntem adları ve açıklamaları, sabit kodlanmış listesini Hızlıbilgi kaynak kullanır, ancak dil hizmeti ve dil belgeleri tam uygulamalarında, bu içeriği sağlamaktan sorumlu.  
+  Bu örnekte, yöntem adları ve açıklamaları, sabit kodlanmış listesini Hızlıbilgi kaynak kullanır, ancak dil hizmeti ve dil belgeleri tam uygulamalarında, bu içeriği sağlamaktan sorumlu.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik olarak eklenmiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'sını yükleme](../extensibility/installing-the-visual-studio-sdk.md).  

@@ -14,12 +14,12 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6f2b97f2b7f3db141bbbbe17d5cf1ab63212be81
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: da21c3b8646ef69432259e4430b940824ad05dd8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176546"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920672"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>UML modelleri için doğrulama kısıtlamaları tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,24 +51,24 @@ Modelin belirttiğiniz koşulu karşılayıp karşılamadığını test eden do�
   
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>Kendi VSIX'inde bir doğrulama uzantısı oluşturmak için  
   
-1.  İçinde **yeni proje** iletişim kutusunun **modelleme projeleri**seçin **doğrulama uzantısı**.  
+1. İçinde **yeni proje** iletişim kutusunun **modelleme projeleri**seçin **doğrulama uzantısı**.  
   
-2.  Açık **.cs** yeni projeye dosya ve doğrulama kısıtlamanızı uygulamak için sınıfı değiştirin.  
+2. Açık **.cs** yeni projeye dosya ve doğrulama kısıtlamanızı uygulamak için sınıfı değiştirin.  
   
-     Daha fazla bilgi için [doğrulama kısıtlamayı değerlendirme](#Implementing).  
+    Daha fazla bilgi için [doğrulama kısıtlamayı değerlendirme](#Implementing).  
   
-    > [!IMPORTANT]
-    >  Emin olun, **.cs** dosyalarınızda aşağıdaki `using` deyimi:  
-    >   
-    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
+   > [!IMPORTANT]
+   >  Emin olun, **.cs** dosyalarınızda aşağıdaki `using` deyimi:  
+   >   
+   >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
-3.  Yeni yöntemler tanımlayarak ek sınırlamalar ekleyebilirsiniz. Bir yöntemi doğrulama yöntemi olarak tanımlamak için bu özniteliklerle ilk doğrulama yöntemi olarak aynı şekilde etiketlenmelidir.  
+3. Yeni yöntemler tanımlayarak ek sınırlamalar ekleyebilirsiniz. Bir yöntemi doğrulama yöntemi olarak tanımlamak için bu özniteliklerle ilk doğrulama yöntemi olarak aynı şekilde etiketlenmelidir.  
   
-4.  F5 tuşuna basarak kısıtlamaları test edin. Daha fazla bilgi için [doğrulama kısıtlaması yürütme](#Executing).  
+4. F5 tuşuna basarak kısıtlamaları test edin. Daha fazla bilgi için [doğrulama kısıtlaması yürütme](#Executing).  
   
-5.  Menü komut dosyasını kopyalayarak başka bir bilgisayara yükleyin. **bin\\\*\\\*.vsix** projeniz tarafından oluşturulmuş. Daha fazla bilgi için [yükleme ve kaldırma uzantı](#Installing).  
+5. Menü komut dosyasını kopyalayarak başka bir bilgisayara yükleyin. **bin\\\*\\\*.vsix** projeniz tarafından oluşturulmuş. Daha fazla bilgi için [yükleme ve kaldırma uzantı](#Installing).  
   
- Eklediğinizde, diğer **.cs** dosyaları, genellikle aşağıdaki gerektirecek `using` ifadeleri:  
+   Eklediğinizde, diğer **.cs** dosyaları, genellikle aşağıdaki gerektirecek `using` ifadeleri:  
   
 ```csharp  
 using System.Collections.Generic;  
@@ -272,13 +272,13 @@ public void ValidateSomething
   
  `context.LogError("error string", errorCode, elementsWithError);`  
   
--   `"error string"` görünür [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] hata listesi  
+- `"error string"` görünür [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] hata listesi  
   
--   `errorCode` hatanın benzersiz tanımlayıcısı olması dizedir  
+- `errorCode` hatanın benzersiz tanımlayıcısı olması dizedir  
   
--   `elementsWithError` modeldeki öğeleri tanımlar. Kullanıcı hata raporuna çift tıkladığında, bu öğeyi gösteren şekil seçilecektir.  
+- `elementsWithError` modeldeki öğeleri tanımlar. Kullanıcı hata raporuna çift tıkladığında, bu öğeyi gösteren şekil seçilecektir.  
   
- `LogError(),` `LogWarning()` ve `LogMessage()` iletileri hata listesinin farklı bölümlerine yerleştirin.  
+  `LogError(),` `LogWarning()` ve `LogMessage()` iletileri hata listesinin farklı bölümlerine yerleştirin.  
   
 ## <a name="how-validation-methods-are-applied"></a>Doğrulama yöntemleri nasıl uygulanır  
  Doğrulama modelindeki ilişkileri ve sınıf öznitelikleri ve işlem parametreleri gibi büyük öğelerin parçaları dahil olmak üzere her öğeye uygulanır.  
@@ -389,15 +389,15 @@ context.LogError(... , usecase);
   
 #### <a name="to-uninstall-an-extension"></a>Bir uzantıyı kaldırmak için  
   
-1.  Üzerinde **Araçları** menüsünde seçin **Uzantılar ve güncelleştirmeler**.  
+1. Üzerinde **Araçları** menüsünde seçin **Uzantılar ve güncelleştirmeler**.  
   
-2.  Genişletin **yüklü uzantıları**.  
+2. Genişletin **yüklü uzantıları**.  
   
-3.  Uzantıyı seçin ve ardından **kaldırma**.  
+3. Uzantıyı seçin ve ardından **kaldırma**.  
   
- Nadiren, hatalı bir uzantı yüklemede başarısız olur ve hata penceresinde bir rapor oluşturur ancak Uzantı Yöneticisi'nde görünmez. Bu durumda, dosya şu konumdan silerek uzantıyı kaldırabilirsiniz burada *% LocalAppData %* genellikle *DriveName*: \Users\\*kullanıcıadı*\AppData\Local:  
+   Nadiren, hatalı bir uzantı yüklemede başarısız olur ve hata penceresinde bir rapor oluşturur ancak Uzantı Yöneticisi'nde görünmez. Bu durumda, dosya şu konumdan silerek uzantıyı kaldırabilirsiniz burada *% LocalAppData %* genellikle *DriveName*: \Users\\*kullanıcıadı*\AppData\Local:  
   
- *% LocalAppData %* **\Microsoft\VisualStudio\\[sürüm] \Extensions**  
+   *% LocalAppData %* **\Microsoft\VisualStudio\\[sürüm] \Extensions**  
   
 ##  <a name="Example"></a> Örnek  
  Bu örnekte, öğeler arasındaki bağımlılık ilişkisindeki döngüleri bulur.  

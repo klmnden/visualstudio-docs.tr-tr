@@ -16,12 +16,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fea3271ed628455d53a927fd5993e887564d27ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7260ba1dd2f5485c42c25dd3319f0aeb00ff9f05
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236190"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927209"
 ---
 # <a name="vsix-project-template"></a>VSIX Proje Şablonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Bir veya daha fazla Visual Studio uzantıları içinde VSIX projesi sarmalamak i
 ## <a name="uses-of-the-vsix-project-template"></a>VSIX proje şablonunu kullanır  
  VSIX proje şablonu, iki temel kullanım sahiptir:  
   
--   Proje şablonları, öğe şablonları ve VSIX desteği olmayan diğer uzantılar dağıtmak için.  
+- Proje şablonları, öğe şablonları ve VSIX desteği olmayan diğer uzantılar dağıtmak için.  
   
--   Birden fazla uzantı çıkışları bir dağıtım paketi sarmalamak için.  
+- Birden fazla uzantı çıkışları bir dağıtım paketi sarmalamak için.  
   
- VSPackage veya başka tür bir VSIX desteği olan uzantıları dağıtmak için VSIX proje şablonu kullanmak zorunda değil.  
+  VSPackage veya başka tür bir VSIX desteği olan uzantıları dağıtmak için VSIX proje şablonu kullanmak zorunda değil.  
   
 ## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>Uzantı boş bir VSIX projesinde paketleme  
  Mevcut bir uzantı veya VSIX desteği, boş bir VSIX projesinde sarmalama tarafından zaten sahip olmayan bir uzantı paketleyebilirsiniz. Sarmalamak için uzantı tarafından desteklenen bir türde olmalıdır [VSIX şema](../extensibility/vsix-extension-schema-2-0-reference.md).  

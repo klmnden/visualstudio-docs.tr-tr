@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b3cd83a16ff3d497bd9e6a46f3a66a3d99506a1f
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
+ms.openlocfilehash: 0f18aaff185e6591d43f10c979c00b654d5608a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582401"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949389"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Bir WCF veri hizmetine WPF denetimleri bağlama
 
@@ -52,13 +52,13 @@ Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vard�
 
 Aşağıdaki kavramları bilgisi de faydalıdır, ancak izlenecek yolu tamamlamak için gerekli değil:
 
--   WCF Veri Hizmetleri. Daha fazla bilgi için [genel bakış](/dotnet/framework/data/wcf/wcf-data-services-overview).
+- WCF Veri Hizmetleri. Daha fazla bilgi için [genel bakış](/dotnet/framework/data/wcf/wcf-data-services-overview).
 
--   Veri modelleri de [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
+- Veri modelleri de [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
 
--   Varlık veri modelleri ve ADO.NET varlık çerçevesi. Daha fazla bilgi için [Entity Framework genel bakış](/dotnet/framework/data/adonet/ef/overview).
+- Varlık veri modelleri ve ADO.NET varlık çerçevesi. Daha fazla bilgi için [Entity Framework genel bakış](/dotnet/framework/data/adonet/ef/overview).
 
--   WPF veri bağlaması. Daha fazla bilgi için [veri bağlama genel bakış](/dotnet/framework/wpf/data/data-binding-overview).
+- WPF veri bağlaması. Daha fazla bilgi için [veri bağlama genel bakış](/dotnet/framework/wpf/data/data-binding-overview).
 
 ## <a name="create-the-service-project"></a>Hizmet projesi oluşturma
 
@@ -171,23 +171,23 @@ WCF veri hizmeti verileri görüntülemek için hizmetini temel alan bir veri ka
 
 Çeşitli düğmeler, XAML içinde WPF Tasarımcısı değiştirerek pencereye ekleyin. Bu kılavuzda daha sonra kullanıcıların bu düğmeleri kullanarak satış kayıtları görüntüleyin ve olanak sağlayan bir kod ekleyeceksiniz.
 
-1.  İçinde **Çözüm Gezgini**, çift **MainWindow.xaml**.
+1. İçinde **Çözüm Gezgini**, çift **MainWindow.xaml**.
 
-     WPF Tasarımcısı'nda penceresi açılır.
+    WPF Tasarımcısı'nda penceresi açılır.
 
-2.  İçinde [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] görüntülemek tasarımcısına, arasına aşağıdaki kodu ekleyin `<Grid>` etiketler:
+2. İçinde [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] görüntülemek tasarımcısına, arasına aşağıdaki kodu ekleyin `<Grid>` etiketler:
 
-    ```xaml
-    <Grid.RowDefinitions>
-        <RowDefinition Height="75" />
-        <RowDefinition Height="525" />
-    </Grid.RowDefinitions>
-    <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
-    <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
-    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
-    ```
+   ```xaml
+   <Grid.RowDefinitions>
+       <RowDefinition Height="75" />
+       <RowDefinition Height="525" />
+   </Grid.RowDefinitions>
+   <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
+   <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
+   <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
+   ```
 
-3.  Projeyi oluşturun.
+3. Projeyi oluşturun.
 
 ## <a name="create-the-data-bound-controls"></a>Verilere bağlı denetimler oluşturma
 

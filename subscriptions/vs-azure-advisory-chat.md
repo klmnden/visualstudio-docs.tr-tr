@@ -9,12 +9,12 @@ description: Visual Studio aboneliklerine dahil edilen Azure Danışmanı Sohbet
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0ce99a05ae29f7533d0a0f98206263872d047d31
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 84eb6c7021a4e64b65c6e5390ef43833dd6c7fea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49074006"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896009"
 ---
 # <a name="azure-advisory-chat"></a>Azure Danışmanı Sohbeti
 
@@ -39,13 +39,14 @@ Azure Danışmanı Sohbeti kullanarak kolay bir işlemdir.
 
 ## <a name="eligibility"></a>Uygunluk
 
-| Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standart, yıllık bulut)   | VL, Azure, perakende   | Bir yıl      |  Evet          |
-| Visual Studio Professional (standart, yıllık bulut, aylık bulut) Visual Studio Enterprise (NFR aylık bulut<sup>1</sup>) | Tümü                                      | Yok                                                            |  Hayır          |
-| Visual Studio Test Professional (standart)                         | Tümü                                              | Yok                                             |  Hayır          |
-| MSDN platformları (standart)                                          | Tümü                                              |Yok                                              |  Hayır          |
-| Visual Studio Dev Essentials                                          | Yok                                              |Yok                                              |  Hayır          |
+|                                                      Abonelik düzeyi                                                      |     Kanallar      |    Faydası    | Yenilenebilir? |
+|------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
+|                                      Visual Studio Enterprise (standart, yıllık bulut)                                       | VL, Azure, perakende |   Bir yıl    |    Evet     |
+| Visual Studio Professional (standart, yıllık bulut, aylık bulut) Visual Studio Enterprise (NFR aylık bulut<sup>1</sup>) |        Tümü        | Yok |     Hayır     |
+|                                          Visual Studio Test Professional (standart)                                          |        Tümü        | Yok |     Hayır     |
+|                                                  MSDN platformları (standart)                                                   |        Tümü        | Yok |     Hayır     |
+|                                                 Visual Studio Dev Essentials                                                 |        Yok        | Yok |     Hayır     |
+
 <sup>1</sup>*içerir: değil satışıyla (NFR), Microsoft değerli Professional (MVP), bölge Yöneticisi (RD) için Visual Studio Endüstri ortağı (VSIP), BizSpark, Imagine, MCT* 
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.

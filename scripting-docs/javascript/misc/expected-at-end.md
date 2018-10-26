@@ -1,5 +1,5 @@
 ---
-title: Beklenen &#39; @end&#39; | Microsoft Docs
+title: Beklenen &#39; @end &#39; | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,20 +20,20 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5900f8fe930d8b46f9a26d5dc5fea1404ffa0462
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8a510fd034d1053e010a13d28c480f1b0ceb9017
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788864"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857984"
 ---
-# <a name="expected-39end39"></a>Beklenen &#39; @end&#39;
-Koşullu olarak derlenmiş bir kod bloğu oluşturmaya çalıştı, ancak içermediği  **@end**  sonunda deyimi. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]deyimleri koşullu derlenmesi bunların içinde kapsayan bir  **@if/ @end**  bloğu.  
+# <a name="expected-39end39"></a>Bekleniyor&#39;@end&#39;
+Koşullu olarak derlenmiş bir kod bloğu oluşturulmaya çalışıldı, ancak içermediği <strong>@end</strong> sonunda deyimi. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] deyimleri koşullu olarak derlenmesi içinde kapsayan tarafından bir <strong>@if/ @end</strong> blok.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Karşılık gelen eklemek  **@end**  deyimi.  
+- Buna karşılık gelen ekleme <strong>@end</strong> deyimi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Koşullu derleme](../../javascript/advanced/conditional-compilation-javascript.md)   
- [Koşullu derleme değişkenleri](../../javascript/advanced/conditional-compilation-variables-javascript.md)
+ [Koşullu Derleme Değişkenleri](../../javascript/advanced/conditional-compilation-variables-javascript.md)

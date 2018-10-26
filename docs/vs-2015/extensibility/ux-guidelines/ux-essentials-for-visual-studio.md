@@ -13,12 +13,12 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bda4e23fc98210ddf35bd81efee6ca41c2d945b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f70950e616a4ce0cc2e355205b65b5da7ec7ce88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303328"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848663"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio için UX temel bileşenleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -168,15 +168,15 @@ ms.locfileid: "49303328"
 ### <a name="hyperlink-anti-patterns"></a>Köprü ters desenler  
  Aşağıdaki örnek, iki ters desenler içerir.  
   
-1.  Üzerine gelindiğinde kırmızı kapatma ön doğru paylaşılan rengi yazı tipi hizmetinde kullanılmadığı anlamına gelir.  
+1. Üzerine gelindiğinde kırmızı kapatma ön doğru paylaşılan rengi yazı tipi hizmetinde kullanılmadığı anlamına gelir.  
   
-2.  "Daha fazla bilgi edinin" değil bir kavramsal konuya bağlantısını için uygun metni. Kullanıcının hedef daha kendi seçtikleri etkilerini öğrenmektir değil öğrenmektir.  
+2. "Daha fazla bilgi edinin" değil bir kavramsal konuya bağlantısını için uygun metni. Kullanıcının hedef daha kendi seçtikleri etkilerini öğrenmektir değil öğrenmektir.  
   
- ![Kötü amaçlı yazılımdan koruma köprü&#45;desenleri](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")  
+   ![Kötü amaçlı yazılımdan koruma köprü&#45;desenleri](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")  
   
- **Renk hizmet yoksayılıyor ve "daha fazla bilgi edinmek için köprüler" kullanarak Visual Studio ters desenler var.**  
+   **Renk hizmet yoksayılıyor ve "daha fazla bilgi edinmek için köprüler" kullanarak Visual Studio ters desenler var.**  
   
- **Daha iyi bir çözüm:** anın bağlantıya tıklayarak soru konusunda sizi uyarmayı.  
+   **Daha iyi bir çözüm:** anın bağlantıya tıklayarak soru konusunda sizi uyarmayı.  
   
 -   Windows Azure hizmetleri nasıl çalışır?  
   

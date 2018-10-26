@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 534398e57c1a8111f2b1f83a61322a581539c962
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9d877eae119c922939ea61007a845e5bd7049076
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808271"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933163"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>İzlenecek yol: önbellekteki veri kümesini kullanarak bir ana ayrıntı ilişkisi oluşturma
   Bu izlenecek yol, bir çalışma sayfasına bir ana/ayrıntı ilişkisi oluşturma ve böylece bu çözüm çevrimdışı kullanılabilir verileri önbelleğe alma gösterir.  
@@ -57,34 +57,34 @@ ms.locfileid: "38808271"
   
 ### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
   
-1.  Adlı bir Excel çalışma kitabı projesi oluşturun **My ana öğe-ayrıntı**, Visual Basic veya C# kullanarak. Emin olun **yeni belge oluşturma** seçilir. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Adlı bir Excel çalışma kitabı projesi oluşturun **My ana öğe-ayrıntı**, Visual Basic veya C# kullanarak. Emin olun **yeni belge oluşturma** seçilir. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
- Visual Studio tasarımcıda yeni Excel çalışma kitabını açar ve ekler **My ana öğe-ayrıntı** için proje **Çözüm Gezgini**.  
+   Visual Studio tasarımcıda yeni Excel çalışma kitabını açar ve ekler **My ana öğe-ayrıntı** için proje **Çözüm Gezgini**.  
   
 ## <a name="create-the-data-source"></a>Veri kaynağı oluşturma  
  Kullanım **veri kaynakları** penceresinin bir türü belirtilmiş veri kümesi projenize ekleyin.  
   
 ### <a name="to-create-the-data-source"></a>Veri kaynağı oluşturmak için  
   
-1.  Varsa **veri kaynakları** penceresi görünür değilse, bunu, menü çubuğundan seçme görüntüleyebilir **görünümü** > **diğer Windows**  >   **Veri kaynakları**.  
+1. Varsa **veri kaynakları** penceresi görünür değilse, bunu, menü çubuğundan seçme görüntüleyebilir **görünümü** > **diğer Windows**  >   **Veri kaynakları**.  
   
-2.  Seçin **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı Yapılandırma Sihirbazı**.  
+2. Seçin **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı Yapılandırma Sihirbazı**.  
   
-3.  Seçin **veritabanı** ve ardından **sonraki**.  
+3. Seçin **veritabanı** ve ardından **sonraki**.  
   
-4.  Northwind örnek SQL Server veritabanıyla kurulan veri bağlantısı seçin veya yeni bir bağlantı kullanarak eklemek **yeni bağlantı** düğmesi.  
+4. Northwind örnek SQL Server veritabanıyla kurulan veri bağlantısı seçin veya yeni bir bağlantı kullanarak eklemek **yeni bağlantı** düğmesi.  
   
-5.  Seçtikten veya bir bağlantıyı oluşturduktan sonra tıklayın **sonraki**.  
+5. Seçtikten veya bir bağlantıyı oluşturduktan sonra tıklayın **sonraki**.  
   
-6.  Seçili olduğunda görüntüleyeceği bağlantı kaydetme seçeneğini ve ardından temizlemek **sonraki**.  
+6. Seçili olduğunda görüntüleyeceği bağlantı kaydetme seçeneğini ve ardından temizlemek **sonraki**.  
   
-7.  Genişletin **tabloları** düğümünde **veritabanı nesnelerinin** penceresi.  
+7. Genişletin **tabloları** düğümünde **veritabanı nesnelerinin** penceresi.  
   
-8.  Seçin **siparişler** tablo ve **sipariş ayrıntıları** tablo.  
+8. Seçin **siparişler** tablo ve **sipariş ayrıntıları** tablo.  
   
 9. **Son**'a tıklayın.  
   
- Sihirbaz iki tabloya ekler **veri kaynakları** penceresi. Projenize görünür olan bir türü belirtilmiş veri kümesi de ekler **Çözüm Gezgini**.  
+   Sihirbaz iki tabloya ekler **veri kaynakları** penceresi. Projenize görünür olan bir türü belirtilmiş veri kümesi de ekler **Çözüm Gezgini**.  
   
 ## <a name="add-controls-to-the-worksheet"></a>Çalışma sayfasına denetimler ekleme  
  Bu adımda, ilk çalışma sayfası için bir adlandırılmış aralık, Liste nesnesine ve iki düğme ekleyeceksiniz. İlk olarak, adlandırılmış aralık ve liste nesneden ekleyin **veri kaynakları** penceresi otomatik olarak bir veri kaynağına bağlı olacak şekilde. Düğmelerden ekleyeceğimize **araç kutusu**.  
@@ -109,30 +109,30 @@ ms.locfileid: "38808271"
   
 ### <a name="to-add-two-buttons"></a>İki düğme eklemek için  
   
-1.  Gelen **ortak denetimleri** sekmesinde **araç kutusu**, ekleme bir <xref:System.Windows.Forms.Button> hücre denetimi **A3** çalışma sayfası.  
+1. Gelen **ortak denetimleri** sekmesinde **araç kutusu**, ekleme bir <xref:System.Windows.Forms.Button> hücre denetimi **A3** çalışma sayfası.  
   
-     Bu düğme adlı `Button1`.  
+    Bu düğme adlı `Button1`.  
   
-2.  Başka bir <xref:System.Windows.Forms.Button> hücre denetimi **B3** çalışma sayfası.  
+2. Başka bir <xref:System.Windows.Forms.Button> hücre denetimi **B3** çalışma sayfası.  
   
-     Bu düğme adlı `Button2`.  
+    Bu düğme adlı `Button2`.  
   
- Ardından, veri kümesini önbelleğe alınacak işaretleyin.  
+   Ardından, veri kümesini önbelleğe alınacak işaretleyin.  
   
 ## <a name="cache-the-dataset"></a>Veri kümesini önbelleğe al  
  Veri kümesini veri kümesi genel ve ayar yaparak belgede önbelleğe işaretlemek **CacheInDocument** özelliği.  
   
 ### <a name="to-cache-the-dataset"></a>Veri kümesi önbelleğe almak için  
   
-1.  Seçin **NorthwindDataSet** bileşen tepsisinde.  
+1. Seçin **NorthwindDataSet** bileşen tepsisinde.  
   
-2.  İçinde **özellikleri** penceresinde değişiklik **değiştiriciler** özelliğini **genel**.  
+2. İçinde **özellikleri** penceresinde değişiklik **değiştiriciler** özelliğini **genel**.  
   
-     Önbelleğe alma etkinleştirmeden önce veri kümeleri ortak olmalıdır.  
+    Önbelleğe alma etkinleştirmeden önce veri kümeleri ortak olmalıdır.  
   
-3.  Değişiklik **CacheInDocument** özelliğini **True**.  
+3. Değişiklik **CacheInDocument** özelliğini **True**.  
   
- Sonraki adımda, düğmelerin metin ekleyin ve C# dilinde olay işleyicileri ' bağlamak için kodu ekleyin sağlamaktır.  
+   Sonraki adımda, düğmelerin metin ekleyin ve C# dilinde olay işleyicileri ' bağlamak için kodu ekleyin sağlamaktır.  
   
 ## <a name="initialize-the-controls"></a>Denetimleri başlatılamıyor  
  Düğme metnini ayarlayın ve ekleme sırasında olay işleyicileri <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> olay.  

@@ -14,25 +14,25 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 25b957db194065b53ae69e7a5542aca79d723366
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93ce8f97f32ac41c4724db3c4cc08389f052f1ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252037"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923387"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>4. Adım: Her Etikete Click Olay İşleyicisi Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Eşleştirme oyunu aşağıdaki gibi çalışır:  
   
-1.  Oyuncu gizli simge içeren karelerden birini seçtiğinde, program simge rengini siyaha dönüştürerek bu simgeyi oyuncuya gösterir.  
+1. Oyuncu gizli simge içeren karelerden birini seçtiğinde, program simge rengini siyaha dönüştürerek bu simgeyi oyuncuya gösterir.  
   
-2.  Oyuncu daha sonra başka bir gizli simge seçer.  
+2. Oyuncu daha sonra başka bir gizli simge seçer.  
   
-3.  Simgeler eşleşirse görünür olarak kalırlar. Aksi takdirde iki simge de tekrar gizlenir.  
+3. Simgeler eşleşirse görünür olarak kalırlar. Aksi takdirde iki simge de tekrar gizlenir.  
   
- Programınızın bu şekilde çalışmasını sağlamak için, seçilen etiketin rengini değiştiren bir Tıklama olayı işleyicisi eklersiniz.  
+   Programınızın bu şekilde çalışmasını sağlamak için, seçilen etiketin rengini değiştiren bir Tıklama olayı işleyicisi eklersiniz.  
   
 ### <a name="to-add-a-click-event-handler-to-each-label"></a>Her etikete bir Tıklama olayı işleyicisi eklemek için  
   

@@ -15,12 +15,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: da8a33d454b5c406e43fa04157ae154a709cfe1e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: adeca654f14fd068c7ce1cb042e57dbc3891cbf4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253179"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834064"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Ne Kadar Kodun Test Edildiğini Belirlemek için Kod Kapsamını Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,13 +49,13 @@ Proje kodunuzun ne oranda aslında birim testleri gibi kodlanmış testler taraf
   
 > [!TIP]
 >  Doğru sonuçlar elde etmek için:  
->   
->  -   Bu derleyici optimizasyonunun kapalı olduğundan emin olun.  
->   
->      Yönetilmeyen (yerel) kod ile çalışıyorsanız, bir hata ayıklama yapısı kullanın.  
-> -   Her derleme için .pdb (simge) dosyaları oluşturduğunuzdan emin olun.  
->   
->  Beklediğiniz sonuçları alamazsanız, bkz. [kod kapsamı sorunlarını giderme](../test/troubleshooting-code-coverage.md). biçimindeki telefon numarasıdır. Kod kapsamını kod güncelleştirdikten sonra çalıştırmayı unutmayın. Kodunuzu değiştirdikten sonra veya testleri çalıştırdığınızda kapsam sonuçları ve kod renklendirme otomatik olarak güncelleştirilmez.  
+> 
+> - Bu derleyici optimizasyonunun kapalı olduğundan emin olun.  
+> 
+>   Yönetilmeyen (yerel) kod ile çalışıyorsanız, bir hata ayıklama yapısı kullanın.  
+>   -   Her derleme için .pdb (simge) dosyaları oluşturduğunuzdan emin olun.  
+> 
+>   Beklediğiniz sonuçları alamazsanız, bkz. [kod kapsamı sorunlarını giderme](../test/troubleshooting-code-coverage.md). biçimindeki telefon numarasıdır. Kod kapsamını kod güncelleştirdikten sonra çalıştırmayı unutmayın. Kodunuzu değiştirdikten sonra veya testleri çalıştırdığınızda kapsam sonuçları ve kod renklendirme otomatik olarak güncelleştirilmez.  
   
 ## <a name="reporting-in-blocks-or-lines"></a>Bloklarda veya satırlarda raporlama  
  Kod kapsamı sayılır *blokları*. Bir blok, tek bir giriş ve çıkış noktası kodu parçasıdır.  Programın denetim akışı bir test çalışması sırasında bir blok geçerse, o blok anlatıldığı gibi sayılır. Blok kullanılma sayısının sonuç üzerinde etkisi yoktur.  
@@ -255,19 +255,19 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="analyzing-code-coverage-in-the-build-service"></a>Yapı hizmetindeki kod kapsamı çözümleme  
  Kodunuzda denetlediğinizde, testiniz diğer ekip üyelerinden gelen diğer tüm testlerle birlikte yapı sunucusunda çalışır. (, Zaten bu ayarları yapmadıysanız bkz [yapı işleminizde testler](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) Tüm projeye en güncel ve en kapsamlı resmi sağladığından, kod kapsamını yapı hizmetinde çözümlemek yararlıdır. Otomatik sistem testleri ve geliştirme makinelerinde genellikle çalıştırmadığınız kodlanmış diğer testleri de içerecektir.  
   
-1.  Takım Gezgini'nde açın **yapılar**ve ardından eklemek veya bir yapı tanımını düzenleyin.  
+1. Takım Gezgini'nde açın **yapılar**ve ardından eklemek veya bir yapı tanımını düzenleyin.  
   
-2.  Üzerinde **işlem** sayfasında **otomatik testler**, **Test kaynağı**, **çalıştırma ayarları**. Ayarlama **çalışma ayarları dosya türü** için **kod kapsamı etkinleştirmesiyle**.  
+2. Üzerinde **işlem** sayfasında **otomatik testler**, **Test kaynağı**, **çalıştırma ayarları**. Ayarlama **çalışma ayarları dosya türü** için **kod kapsamı etkinleştirmesiyle**.  
   
-     Birden fazla Test Kaynağı tanımı varsa, her biri için bu adımı yineleyin.  
+    Birden fazla Test Kaynağı tanımı varsa, her biri için bu adımı yineleyin.  
   
-    -   *Adlı bir alan yoktur ancak **türü çalışma ayarları dosya**.*  
+   - <em>Adlı bir alan yoktur ancak **türü çalışma ayarları dosya</em>*. *  
   
-         Altında **otomatik testler**seçin **Test derlemesi** ve üç nokta düğmesini **[...]**  satırın sonunda. İçinde **Test çalışmasını Ekle/Düzenle** iletişim kutusunun **Test Çalıştırıcısı**, seçin **Visual Studio Test Çalıştırıcısı**.  
+      Altında **otomatik testler**seçin **Test derlemesi** ve üç nokta düğmesini **[...]**  satırın sonunda. İçinde **Test çalışmasını Ekle/Düzenle** iletişim kutusunun **Test Çalıştırıcısı**, seçin **Visual Studio Test Çalıştırıcısı**.  
   
- ![Derleme tanımı için kod kapsamı ayarlama](../test/media/codecoverage-plaincc.png "CodeCoverage plainCC")  
+   ![Derleme tanımı için kod kapsamı ayarlama](../test/media/codecoverage-plaincc.png "CodeCoverage plainCC")  
   
- Yapı çalıştıktan sonra kod kapsamı sonuçları test çalıştırmasına eklenir ve yapı özet olarak görünür.  
+   Yapı çalıştıktan sonra kod kapsamı sonuçları test çalıştırmasına eklenir ve yapı özet olarak görünür.  
   
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>Komut Satırında Kod Kapsamı Çözümleme  
  Komut satırından testleri çalıştırmak için vstest.console.exe kullanın. Kod kapsamı, bu yardımcı programın bir seçeneğidir. Daha fazla bilgi için [VSTest.Console.exe komut satırı seçenekleri](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11).  

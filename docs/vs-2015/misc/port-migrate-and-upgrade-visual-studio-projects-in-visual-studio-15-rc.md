@@ -21,12 +21,12 @@ caps.latest.revision: 6
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a9a57cacc8d8d37c13e7380f5b68c800c5c31075
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ee4eb0490e68f2ea4f83c728ed684b1e939467b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226193"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893759"
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects-in-visual-studio-quot15quot-rc"></a>Taşıma, geçirme ve yükseltme Visual Studio Projeleri Visual Studio'da &quot;15&quot; RC
 Visual Studio'nun daha yeni bir sürüme taşıdığınızda, çözümler, projeler, dosyalar ve oluşturduğunuz diğer varlıklar hiçbirini değiştirmelisiniz olmadığını bilmek isteyeceğiniz [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], veya [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ya da bunları çalıştırmadan önce [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] veya [!INCLUDE[vs_dev15_md](../includes/vs-dev15-md.md)]. Bu sayfa ile yardımcı olabilir. 
@@ -88,19 +88,19 @@ Visual Studio'nun daha yeni bir sürüme taşıdığınızda, çözümler, proje
 ## <a name="troubleshooting-project-compatibility-issues"></a>Proje uyumluluk sorunlarını giderme  
  Yapabileceğiniz bir proje içinde açılmadığında yapabileceklerinizden bazıları şunlardır [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] veya [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]:  
   
--   İçinde desteklenmeyen bir projeyi açmayı denerseniz [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] veya [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] ve ilişkili Visual Studio sürümü yüklü değilse için Proje türünün desteklenmediğine dair bir ileti ekrana gelebilir ve proje türü içinde listelenebilir **Proje ve çözüm değişikliklerini gözden** iletişim kutusunun altında **desteklenmeyen projeler**. Bu sorunu çözmek için Windows programlar ve Özellikler sayfasını açın **Denetim Masası**seçin **Visual Studio**ve ardından **değişiklik**, **Onar** . Bunun ardından eksik sürümü yükleyebilirsiniz.  
+- İçinde desteklenmeyen bir projeyi açmayı denerseniz [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] veya [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] ve ilişkili Visual Studio sürümü yüklü değilse için Proje türünün desteklenmediğine dair bir ileti ekrana gelebilir ve proje türü içinde listelenebilir **Proje ve çözüm değişikliklerini gözden** iletişim kutusunun altında **desteklenmeyen projeler**. Bu sorunu çözmek için Windows programlar ve Özellikler sayfasını açın **Denetim Masası**seçin **Visual Studio**ve ardından **değişiklik**, **Onar** . Bunun ardından eksik sürümü yükleyebilirsiniz.  
   
--   İçinde bir masaüstü uygulaması için bir projeyi açmayı denerseniz [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)], bir hata oluşur ve bu iletilerden biri görüntülenir: "Visual Studio'nun bu sürümü yalnızca destekler [!INCLUDE[win81](../includes/win81-md.md)] uygulamalar" veya "Bu proje, geçerli Visual Studio sürümü ile uyumlu değil." [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] geliştirme, test ve Windows 8.1 için tasarlanan Windows Store uygulamalarının dağıtımı için sınırlıdır. Bir masaüstü uygulaması projesini açmak için, bu proje türünü destekleyen bir Visual Studio sürümünü kullanmanız gerekir.  
+- İçinde bir masaüstü uygulaması için bir projeyi açmayı denerseniz [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)], bir hata oluşur ve bu iletilerden biri görüntülenir: "Visual Studio'nun bu sürümü yalnızca destekler [!INCLUDE[win81](../includes/win81-md.md)] uygulamalar" veya "Bu proje, geçerli Visual Studio sürümü ile uyumlu değil." [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] geliştirme, test ve Windows 8.1 için tasarlanan Windows Store uygulamalarının dağıtımı için sınırlıdır. Bir masaüstü uygulaması projesini açmak için, bu proje türünü destekleyen bir Visual Studio sürümünü kullanmanız gerekir.  
   
-     Visual Studio sürümleri hakkında daha fazla bilgi için bkz. [Microsoft Visual Studio ürünleri](http://go.microsoft.com/fwlink/?LinkId=254332)  
+   Visual Studio sürümleri hakkında daha fazla bilgi için bkz. [Microsoft Visual Studio ürünleri](http://go.microsoft.com/fwlink/?LinkId=254332)  
   
--   Windows Store uygulaması projesinde açmayı denerseniz [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Masaüstü, bir hata oluşur. [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Masaüstü, Windows Store apps oluşturmak için kullanılamaz. Windows Store apps oluşturmak istiyorsanız, da yükleyebilirsiniz [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]. Ya da tüm Microsoft platformlarına ve web'e yönelik uygulamalar geliştirmek için, Visual Studio Professional 2013'ü deneyin.  
+- Windows Store uygulaması projesinde açmayı denerseniz [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Masaüstü, bir hata oluşur. [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Masaüstü, Windows Store apps oluşturmak için kullanılamaz. Windows Store apps oluşturmak istiyorsanız, da yükleyebilirsiniz [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]. Ya da tüm Microsoft platformlarına ve web'e yönelik uygulamalar geliştirmek için, Visual Studio Professional 2013'ü deneyin.  
   
--   Bir projeye özgü özellikler gerektiriyorsa, [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], önceki bir sürümde açılamaz.  
+- Bir projeye özgü özellikler gerektiriyorsa, [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], önceki bir sürümde açılamaz.  
   
--   Kullanıyorsanız [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ve içinde oluşturulmuş bir projeyi açmak istediğiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], proje sistemi özelliklerini özelleştirmek aktarmanızı [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz. [yapmadan özel projeler sürümü kullanan](../misc/making-custom-projects-version-aware.md).  
+- Kullanıyorsanız [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ve içinde oluşturulmuş bir projeyi açmak istediğiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], proje sistemi özelliklerini özelleştirmek aktarmanızı [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz. [yapmadan özel projeler sürümü kullanan](../misc/making-custom-projects-version-aware.md).  
   
- Ek sorun giderme bilgileri için bkz. [Visual Studio 2013 uyumluluğu](http://support.microsoft.com/kb/2863286) KB makalesi.  
+  Ek sorun giderme bilgileri için bkz. [Visual Studio 2013 uyumluluğu](http://support.microsoft.com/kb/2863286) KB makalesi.  
   
 ##  <a name="file"></a> Dosyaları  
  Aşağıdaki listede tanımlar olup olmadığını [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] her bir dosya türünü destekleyip dosyasında açabileceğiniz desteklemediğini [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ve Visual Studio 2010 SP1 ve uyumluluğu sağlamak için değiştirmeniz gerekip gerekmediğini belirtir.  

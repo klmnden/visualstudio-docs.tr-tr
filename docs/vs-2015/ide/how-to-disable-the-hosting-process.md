@@ -17,12 +17,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4ad3742befbf564c7924c520fb560e69037004c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4251e5aac5042b610ed32f95a13ba5d6ffb9d4eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281404"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848495"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>Nasıl Yapılır: Barındırma Sürecini Devre Dışı Bırakma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ Barındırma işlemi etkinleştirildiğinde bazı API'lere giden çağrıların 
   
 ### <a name="to-disable-the-hosting-process"></a>Barındırma işlemini devre dışı bırakmak için  
   
-1.  Yürütülebilir bir proje açın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Yürütülebilir dosyalar (örneğin, sınıf kitaplığı veya hizmeti projeleri) üretmez projeleri, bu seçeneği yoktur.  
+1. Yürütülebilir bir proje açın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Yürütülebilir dosyalar (örneğin, sınıf kitaplığı veya hizmeti projeleri) üretmez projeleri, bu seçeneği yoktur.  
   
-2.  Üzerinde **proje** menüsünü tıklatın **özellikleri**.  
+2. Üzerinde **proje** menüsünü tıklatın **özellikleri**.  
   
-3.  Tıklayın **hata ayıklama** sekmesi.  
+3. Tıklayın **hata ayıklama** sekmesi.  
   
-4.  NET **Visual Studio barındırma işlemini etkinleştir** onay kutusu.  
+4. NET **Visual Studio barındırma işlemini etkinleştir** onay kutusu.  
   
- Barındırma işlemini devre dışı bırakıldığında, birçok hata ayıklama özellikleri kullanılamaz veya düşük performansla karşılaşabilirsiniz. Daha fazla bilgi için [hata ayıklama ve barındırma işlemi](../debugger/debugging-and-the-hosting-process.md).  
+   Barındırma işlemini devre dışı bırakıldığında, birçok hata ayıklama özellikleri kullanılamaz veya düşük performansla karşılaşabilirsiniz. Daha fazla bilgi için [hata ayıklama ve barındırma işlemi](../debugger/debugging-and-the-hosting-process.md).  
   
- Genel olarak, ne zaman barındırma işlemini devre dışı bırakılır:  
+   Genel olarak, ne zaman barındırma işlemini devre dışı bırakılır:  
   
 -   Hata ayıklamayı başlatmak için gereken süre [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] uygulamaları artar.  
   

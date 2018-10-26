@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8f5f13915d248ff59e7a3ca1bde8ad4ee92c201e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: d54c599d812bfff393cbc4ccf330aa35b902f38f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380364"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950023"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Yük testi sonuçları deposu içindeki yük testi sonuçlarını yönetme
 
@@ -44,7 +44,7 @@ Yük testlerinizi çalıştırdığınızda, yük testi çalıştırması sıras
 ## <a name="load-test-analyzer-tasks"></a>Yük Testi Çözümleyicisi görevleri
 
 |Görevler|İlişkili konular|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Kurulum yük testi sonuçları deposu:** bir SQL veritabanında bir yük testi sonuçları deposu ayarlayabilirsiniz. **Not:** bir test denetleyicisi yüklediğinizde yük testi deposu da oluşturulabilir. Daha fazla bilgi için [yüklemek ve test denetleyicisilerinin](../test/lab-management/install-configure-test-agents.md).||
 |**Seçme ve sonuçları deposu görüntüleme:** belirli bir sonuç havuzunu seçebilirsiniz. Bir yerel sonuç deposuyla sınırlı değildir. Sık, yük testleri Aracı bilgisayarların bir uzak kümesi üzerinde çalıştırılır. Test sonuçları, aracılarınız veya yerel bilgisayarınız bir yük testi sonuçları deposu oluşturmuş olduğunuz herhangi bir SQL Server'a kaydedilebilir. Her iki durumda da kullanarak yük testi sonuçlarınızın depolanacağı konumu tanımlamalısınız **Test Denetleyicilerini Yönet** penceresi.|-   [Nasıl yapılır: bir yük testi sonuçları deposunu seçme](../test/how-to-select-a-load-test-results-repository.md)<br />-   [Nasıl yapılır: erişim yük testi sonuçlarını çözümleme](../test/how-to-access-load-test-results-for-analysis.md)|
 |**Depodan bir yükleme testi sonucu silme:** yük testi sonucunu kaldırabilirsiniz **Yük Testi Düzenleyicisi** kullanarak **açık ve yük testi sonuçlarını yönetme** iletişim kutusu.|-   [Nasıl yapılır: bir depodan silme yük testi sonuçları](../test/how-to-delete-load-test-results-from-a-repository.md)|

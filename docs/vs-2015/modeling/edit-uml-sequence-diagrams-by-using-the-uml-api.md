@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b2c826174f65155e2a832ec55471246ffad9568b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0711a16206ae1f6fc1efba0b3422c650c993396d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185509"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942003"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>UML API kullanarak sıralama diyagramlarını düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -121,13 +121,13 @@ public void Execute (IMenuCommand command)
 ## <a name="updating-an-interaction-and-its-layout"></a>Etkileşim ve powerapps'in Düzen güncelleştiriliyor  
  Her zaman etkileşim güncelleştirdiğinizde, bağlantı işlemi aşağıdaki yöntemlerden birini kullanarak düzenini güncelleştirerek Bitir:  
   
--   `ISequenceDiagram.UpdateShapePositions()` en son eklenen veya taşınan şekiller ve onların komşu şekillerinin konumunu ayarlar.  
+- `ISequenceDiagram.UpdateShapePositions()` en son eklenen veya taşınan şekiller ve onların komşu şekillerinin konumunu ayarlar.  
   
--   `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` tüm diyagramı yeniden çizer. Parametresi, yaşam çizgilerini, iletileri veya her ikisini de yeniden konumlandırma belirtmek için kullanabilirsiniz.  
+- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` tüm diyagramı yeniden çizer. Parametresi, yaşam çizgilerini, iletileri veya her ikisini de yeniden konumlandırma belirtmek için kullanabilirsiniz.  
   
- Yeni öğeler eklediğinizde veya mevcut öğeleri Taşı özellikle önemlidir. Bu işlemlerden birini gerçekleştirene kadar diyagram üzerinde doğru konumlarda olmayacaktır. Yalnızca bir kez sonunda bir dizi değişikliği, bu işlemlerin çağırmak gerekir.  
+  Yeni öğeler eklediğinizde veya mevcut öğeleri Taşı özellikle önemlidir. Bu işlemlerden birini gerçekleştirene kadar diyagram üzerinde doğru konumlarda olmayacaktır. Yalnızca bir kez sonunda bir dizi değişikliği, bu işlemlerin çağırmak gerekir.  
   
- Komutunuz sonra geri alma gerçekleştiren kullanıcının aklının karışmasını önlemek için bir `ILinkedUndoTransaction` yaptığınız değişiklikleri ve en son kapsamak için `Layout()` veya `UpdateShapePositions()` operations. Örneğin:  
+  Komutunuz sonra geri alma gerçekleştiren kullanıcının aklının karışmasını önlemek için bir `ILinkedUndoTransaction` yaptığınız değişiklikleri ve en son kapsamak için `Layout()` veya `UpdateShapePositions()` operations. Örneğin:  
   
 ```  
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))  

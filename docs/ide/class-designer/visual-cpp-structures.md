@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36d9e78a1944817d9384d0c55b9584e58a758ccc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 79b4adcfbcacc8cf342b5fc4183ae4fe27431b09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925087"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864777"
 ---
-# <a name="visual-c-structures-in-class-designer"></a>Sınıf tasarımcısında Visual C++ yapıları
+# <a name="visual-c-structures-in-class-designer"></a>Sınıf tasarımcısında Visual C++ yapılandırmaları
 
-**Sınıf Tasarımcısı** anahtar sözcüğüyle bildirilen C++ yapılarını destekler `struct`. Aşağıda bir örnek verilmiştir:
+**Sınıf Tasarımcısı** anahtar sözcüğü ile bildirilen C++ yapıları destekleyen `struct`. Bir örneği verilmiştir:
 
 ```cpp
 struct MyStructure
@@ -32,12 +32,12 @@ struct MyStructure
 };
 ```
 
-Kullanma hakkında daha fazla bilgi için `struct` yazın, bkz: [yapısı](/cpp/cpp/struct-cpp).
+Kullanma hakkında daha fazla bilgi için `struct` yazın, bkz: [yapı](/cpp/cpp/struct-cpp).
 
-Sınıf diyagramında C++ yapısı Şekil arar ve etiket okur dışında bir sınıf şekli gibi çalışır **yapısı** ve yuvarlak köşeleri yerine kare köşeleri sahiptir.
+Sınıf diyagramında C++ yapı şeklinde görünür ve etiketi dışında sınıf şeklinin gibi çalışır **yapı** ve yuvarlak köşeler yerine dörtgen köşelerine sahiptir.
 
 |Kod öğesi|Sınıf Tasarımcısı görünümü|
-|------------------|-------------------------|
+|------------------| - |
 |`struct StructureName {};`|**StructureName**<br /><br /> Yapı|
 
 ## <a name="see-also"></a>Ayrıca bkz.

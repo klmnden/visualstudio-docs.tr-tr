@@ -15,12 +15,12 @@ ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6d45431d2d6757169c225136620124d94a6e75dd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7a421ba2278c177eeb0fdba8571497e50ba71b39
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223112"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894241"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Yeni Öğe Ekleme İletişim Kutularına Öğe Ekleme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,15 +72,15 @@ ms.locfileid: "49223112"
 ## <a name="filtering-project-items"></a>Proje öğeleri filtreleme  
  `IVsFilterAddProjectItemDlg2` öğe ağacında (sol bölmede) ve proje dosyaları (sağ bölme) aşağıdaki yollarla filtreleme için sağlar:  
   
--   Yerelleştirilmiş adlarıyla (.vsdir dosyada bulunan iletişim kutusunda görüntülenen açıklamalı alt yazılar) tarafından sağlanan `IVsFilterAddProjectItemDlg`.  
+- Yerelleştirilmiş adlarıyla (.vsdir dosyada bulunan iletişim kutusunda görüntülenen açıklamalı alt yazılar) tarafından sağlanan `IVsFilterAddProjectItemDlg`.  
   
--   Dosya ve klasörleri diskte gerçek adlarını tarafından (yerelleştirilmemiş — .vsdir dosya) tarafından sağlanan `IVsFilterAddProjectItemDlg`.  
+- Dosya ve klasörleri diskte gerçek adlarını tarafından (yerelleştirilmemiş — .vsdir dosya) tarafından sağlanan `IVsFilterAddProjectItemDlg`.  
   
--   Tarafından sağlanan kategoriye `IVsFilterAddProjectItemDlg2`.  
+- Tarafından sağlanan kategoriye `IVsFilterAddProjectItemDlg2`.  
   
- Kategoriye göre filtrelemek için bir "Web formu" gibi .vsdir dosyasındaki öğenin veya "İstemci öğesi" Visual Basic'te bir kategori dize sağlayın. İletişim kutusu kodu kategori sınıflandırma .vsdir dosyasından alır ve size geçirir. Uygulamanız için bu bilgileri geçirebilirsiniz `IVsFilterAddProjectItemDlg2` filtrelemek için **Yeni Öğe Ekle** kategorilere göre iletişim kutusu. Ayrıca, Web sayfaları veya istemci Win32 uygulama çalışmaları olarak öğeleri filtreleyebilirsiniz. Ayrıca, tanımlayabilirsiniz [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] öğeleri Microsoft Foundation Classes (MFC) veya Etkin Şablon kitaplığı (ATL) öğeleri olarak etiketlenir. Bu öğeleri tespit ederken, proje sistemi sistem kategorilerini ve sınıflandırmalarını göre filtrelenebilir. böylece kendi sınıflandırmaları tanımlayabilirsiniz.  
+  Kategoriye göre filtrelemek için bir "Web formu" gibi .vsdir dosyasındaki öğenin veya "İstemci öğesi" Visual Basic'te bir kategori dize sağlayın. İletişim kutusu kodu kategori sınıflandırma .vsdir dosyasından alır ve size geçirir. Uygulamanız için bu bilgileri geçirebilirsiniz `IVsFilterAddProjectItemDlg2` filtrelemek için **Yeni Öğe Ekle** kategorilere göre iletişim kutusu. Ayrıca, Web sayfaları veya istemci Win32 uygulama çalışmaları olarak öğeleri filtreleyebilirsiniz. Ayrıca, tanımlayabilirsiniz [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] öğeleri Microsoft Foundation Classes (MFC) veya Etkin Şablon kitaplığı (ATL) öğeleri olarak etiketlenir. Bu öğeleri tespit ederken, proje sistemi sistem kategorilerini ve sınıflandırmalarını göre filtrelenebilir. böylece kendi sınıflandırmaları tanımlayabilirsiniz.  
   
- Bu filtre işlevi uygularsanız, gizlenmelidir her öğenin bir tablo eşleme gerekmez. Yalnızca, tür olarak öğeleri sınıflandırmak ve .vsdir dosya veya dosyalar sınıflandırmalar yerleştirin. Ardından arabirimi uygulanarak belirli bir sınıflandırma olan öğelerden biri gizleyebilirsiniz. Bu şekilde, öğeleri yapabileceğiniz **Yeni Öğe Ekle** iletişim kutusu dinamik tabanlı proje içindeki durumu.  
+  Bu filtre işlevi uygularsanız, gizlenmelidir her öğenin bir tablo eşleme gerekmez. Yalnızca, tür olarak öğeleri sınıflandırmak ve .vsdir dosya veya dosyalar sınıflandırmalar yerleştirin. Ardından arabirimi uygulanarak belirli bir sınıflandırma olan öğelerden biri gizleyebilirsiniz. Bu şekilde, öğeleri yapabileceğiniz **Yeni Öğe Ekle** iletişim kutusu dinamik tabanlı proje içindeki durumu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   

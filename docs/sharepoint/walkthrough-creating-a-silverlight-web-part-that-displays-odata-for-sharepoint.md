@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 504ec33ef2cf6e0e691c00e3cf1cc013ece5ce81
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 58f03bc18c2e851bb7732b54ff334e6e3332f74e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626171"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878192"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>İzlenecek yol: SharePoint için OData görüntüleyen bir Silverlight web bölümü oluşturma
   SharePoint 2010 listesi verilerini OData yoluyla kullanıma sunar. SharePoint'te, OData hizmeti ListData.svc RESTful hizmeti tarafından uygulanır. Bu izlenecek yol, bir Silverlight uygulamasını barındıran bir SharePoint web bölümü oluşturma işlemi gösterilmektedir. Silverlight uygulaması ListData.svc kullanarak SharePoint duyuru listesi bilgilerini görüntüler. Daha fazla bilgi için [SharePoint Foundation REST arabirimi](http://go.microsoft.com/fwlink/?LinkId=225999) ve [açık veri Protokolü](http://go.microsoft.com/fwlink/?LinkId=226000).  
@@ -42,25 +42,25 @@ ms.locfileid: "42626171"
   
 #### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>Bir Silverlight uygulaması ve Silverlight web bölümü oluşturmak için
   
-1.  Menü çubuğunda, **dosya** > **yeni** > **proje** görüntülenecek **yeni proje** iletişim kutusu.  
+1. Menü çubuğunda, **dosya** > **yeni** > **proje** görüntülenecek **yeni proje** iletişim kutusu.  
   
-2.  Genişletin **SharePoint** ya da düğümünde **Visual C#** veya **Visual Basic**ve ardından **2010** düğümü.  
+2. Genişletin **SharePoint** ya da düğümünde **Visual C#** veya **Visual Basic**ve ardından **2010** düğümü.  
   
-3.  Şablonlar bölmesinde seçin **SharePoint 2010 Silverlight Web Bölümü** şablonu.  
+3. Şablonlar bölmesinde seçin **SharePoint 2010 Silverlight Web Bölümü** şablonu.  
   
-4.  İçinde **adı** kutusuna **SLWebPartTest** seçip **Tamam** düğmesi.  
+4. İçinde **adı** kutusuna **SLWebPartTest** seçip **Tamam** düğmesi.  
   
-     **SharePoint Özelleştirme Sihirbazı** iletişim kutusu görüntülenir.  
+    **SharePoint Özelleştirme Sihirbazı** iletişim kutusu görüntülenir.  
   
-5.  Üzerinde **hata ayıklama için site ve güvenlik düzeyini belirtin** sayfasında, site tanımı hata ayıklamak istediğiniz sunucu için SharePoint sitesi URL'sini girin veya varsayılan konumu kullanın (http://*sistem adı*/) .  
+5. Üzerinde **hata ayıklama için site ve güvenlik düzeyini belirtin** sayfasında, site tanımı hata ayıklamak istediğiniz sunucu için SharePoint sitesi URL'sini girin veya varsayılan konumu kullanın (http://<em>sistem adı</em>/) .  
   
-6.  İçinde **bu SharePoint çözümünün güven düzeyi nedir?** bölümünde, seçin **Grup çözümü olarak Dağıt** seçenek düğmesini.  
+6. İçinde **bu SharePoint çözümünün güven düzeyi nedir?** bölümünde, seçin **Grup çözümü olarak Dağıt** seçenek düğmesini.  
   
-     Bu örnek Grup çözümü kullansa da, Silverlight web bölümü proje grubu ya da korumalı çözüm olarak dağıtılabilir. Korumalı çözümler ve Grup çözümleri hakkında daha fazla bilgi için bkz. [korumalı çözümle ilgili konular](../sharepoint/sandboxed-solution-considerations.md).  
+    Bu örnek Grup çözümü kullansa da, Silverlight web bölümü proje grubu ya da korumalı çözüm olarak dağıtılabilir. Korumalı çözümler ve Grup çözümleri hakkında daha fazla bilgi için bkz. [korumalı çözümle ilgili konular](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  İçinde **nasıl Silverlight Web Bölümü ilişkilendirmek istiyorsunuz** bölümünü **Silverlight yapılandırma bilgilerini belirtmek** sayfasında **yeni bir Silverlight projesi oluşturma ve web bölümüyle ilişkilendir** seçenek düğmesini.  
+7. İçinde **nasıl Silverlight Web Bölümü ilişkilendirmek istiyorsunuz** bölümünü **Silverlight yapılandırma bilgilerini belirtmek** sayfasında **yeni bir Silverlight projesi oluşturma ve web bölümüyle ilişkilendir** seçenek düğmesini.  
   
-8.  Değişiklik **adı** için **SLApplication**ayarlayın **dil** ya da **Visual Basic** veya **Visual C#**, ve ardından **Silverlight sürümü** için **Silverlight 4.0**.  
+8. Değişiklik **adı** için **SLApplication**ayarlayın **dil** ya da **Visual Basic** veya **Visual C#**, ve ardından **Silverlight sürümü** için **Silverlight 4.0**.  
   
 9. Seçin **son** düğmesi. Projeleri görünür **Çözüm Gezgini**.  
   

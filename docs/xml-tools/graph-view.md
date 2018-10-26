@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6ad12c823d0a29bb2d4211f03010e484e79257
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 603c0849d22f658800776e8a1e4cb1f429990e00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "34751708"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894631"
 ---
 # <a name="graph-view"></a>Graf görünümü
 
@@ -48,7 +48,7 @@ Bir grafik gösterimi genel şeması düğümlerin ve düğümler arasındaki il
  Aşağıdaki tabloda, graf görünümünü tasarım yüzeyinde tüm düğümler için kullanılabilir seçenekleri açıklar.
 
 |Seçenek|Açıklama|
-|------------|-----------------|
+|-|-----------------|
 |**XML şema Gezgini'nde Göster**|Şema Gezgini'ni odak getirir ve şema kümesi düğümü vurgular.|
 |**Graf görünümünde göster**|Graf görünümünü (gri) geçer.|
 |**Örnek XML oluşturma**|Yalnızca genel öğeler için kullanılabilir. Genel öğe için bir örnek XML dosyası oluşturur.|
@@ -63,7 +63,7 @@ Bir grafik gösterimi genel şeması düğümlerin ve düğümler arasındaki il
  Yukarıda açıklanan genel seçeneklerinin yanı sıra genel öğeler için bağlam menüsünü de aşağıdaki seçeneklere sahiptir:
 
 |Seçenek|Açıklama|
-|------------|-----------------|
+|-|-----------------|
 |**Tür tanımı Ekle**|Temel türü diyagrama ekler.|
 |**Tüm başvuruları Ekle**|Öğeye başvurmak ve bunlar arasındaki ilişkileri göstermek için okları çizer tüm düğümleri ekler.|
 |**Değiştirme grubu üyeleri Ekle**|Tüm değiştirme grubu üyelerini ekler. Öğesi head veya değiştirme grubu üyesi ise, bu seçenek Görünümü'nde görüntülenir.|
@@ -72,7 +72,7 @@ Bir grafik gösterimi genel şeması düğümlerin ve düğümler arasındaki il
  Yukarıda açıklanan genel seçeneklerinin yanı sıra genel basit ve genel karmaşık türler için bağlam menüsünü de aşağıdaki seçeneklere sahiptir:
 
 |Seçenek|Açıklama|
-|------------|-----------------|
+|-|-----------------|
 |**Temel tür ekleyin**|Seçilen tür genel bir türden türetilirse seçili türün temel türünü ekler.|
 |**Tüm başvuruları Ekle**|Seçili türdeki tüm başvuruları ekler. Bu öğeler ve öznitelikler seçili türü ve seçilen türden türetilmiş türleri içerir.|
 |**Tüm türetilen türleri Ekle**|Doğrudan ve dolaylı olarak seçilen türünden türetilen tüm türler ekler.|
@@ -81,14 +81,14 @@ Bir grafik gösterimi genel şeması düğümlerin ve düğümler arasındaki il
  Yukarıda açıklanan genel seçeneklerinin yanı sıra hem genel öznitelik grupları için bağlam menüsünü de aşağıdaki seçeneklere sahiptir:
 
 |Seçenek|Açıklama|
-|------------|-----------------|
+|-|-----------------|
 |**Tüm başvuruları Ekle**|Gruba bakın ve bunlar arasındaki ilişkileri göstermek için okları çizer tüm düğümleri ekler.|
 |**Tüm üyeleri Ekle**|Grubun tüm üyelerinin ekler ve bunlar arasındaki ilişkileri göstermek için okları çizer.|
 
  Yukarıda açıklanan genel seçenekleri gateway'e ek olarak, genel öznitelikler için bağlam menüsünü de aşağıdaki seçeneklere sahiptir:
 
 |Seçenek|Açıklama|
-|------------|-----------------|
+|-|-----------------|
 |**Tüm başvuruları Ekle**|Gruba bakın ve bunlar arasındaki ilişkileri göstermek için okları çizer tüm düğümleri ekler.|
 
 ## <a name="properties-window"></a>Özellik penceresi
@@ -102,7 +102,7 @@ Bir grafik gösterimi genel şeması düğümlerin ve düğümler arasındaki il
  ![XML şema Tasarımcısı araç çubuğu](../xml-tools/media/xsdgraphviewtoolbar.gif)
 
 |Seçenek|Açıklama|
-|------------|-----------------|
+|-|-----------------|
 |**Başlangıç görünümü göster**|Ağınızdan [başlangıç görünümü](../xml-tools/start-view.md). Bu görünüm, klavye kısayolunu kullanarak erişilebilir: **Ctrl**+**1**.|
 |**İçerik modeli görünümünü göster**|Ağınızdan [içerik modeli görünümünü](../xml-tools/content-model-view.md). Bu görünüm, klavye kısayolunu kullanarak erişilebilir: **Ctrl**+**2**.|
 |**Graf görünümünü göster**|Ağınızdan [grafik görünümü](../xml-tools/graph-view.md). Bu görünüm, klavye kısayolunu kullanarak erişilebilir: **Ctrl**+**3**.|

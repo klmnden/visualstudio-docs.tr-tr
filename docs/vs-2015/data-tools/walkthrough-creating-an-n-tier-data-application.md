@@ -20,12 +20,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bbe14f4eec069b7a7a65beb8c5ff2e2085b17e11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 37876502a464e263ebd6803216b29bd62b65af5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274618"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890185"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>İzlenecek Yol: N Katmanlı Bir Veri Uygulaması Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,25 +39,25 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
   
  Bu kılavuzda aşağıdaki adımları gerçekleştireceksiniz:  
   
--   Birden fazla proje içeren yeni bir n katmanlı çözüm oluşturma.  
+- Birden fazla proje içeren yeni bir n katmanlı çözüm oluşturma.  
   
--   N katmanlı çözüme iki sınıf kitaplığı ekleme.  
+- N katmanlı çözüme iki sınıf kitaplığı ekleme.  
   
--   Kullanarak bir türü belirtilmiş veri kümesi oluşturma **veri kaynağı Yapılandırma Sihirbazı**.  
+- Kullanarak bir türü belirtilmiş veri kümesi oluşturma **veri kaynağı Yapılandırma Sihirbazı**.  
   
--   Oluşturulan ayrı [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) ve veri kümesi kodunu farklı projelere.  
+- Oluşturulan ayrı [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) ve veri kümesi kodunu farklı projelere.  
   
--   Veri erişim katmanına çağrı göndermek için bir Windows Communication Foundation (WCF) hizmeti oluşturma.  
+- Veri erişim katmanına çağrı göndermek için bir Windows Communication Foundation (WCF) hizmeti oluşturma.  
   
--   Veri erişim katmanından veri almak için hizmet içinde işlevler oluşturma.  
+- Veri erişim katmanından veri almak için hizmet içinde işlevler oluşturma.  
   
--   Sunu katmanı olarak hizmet verecek bir Windows Forms uygulaması oluşturma.  
+- Sunu katmanı olarak hizmet verecek bir Windows Forms uygulaması oluşturma.  
   
--   Veri kaynağına bağlanan Windows Forms denetimleri oluşturma.  
+- Veri kaynağına bağlanan Windows Forms denetimleri oluşturma.  
   
--   Veri tablolarını doldurmak için kod yazma.  
+- Veri tablolarını doldurmak için kod yazma.  
   
- ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo") bu konunun video sürümü için bkz: [Video nasıl yapılır: bir N katmanlı veri uygulaması oluşturma](http://go.microsoft.com/fwlink/?LinkId=115188).  
+  ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo") bu konunun video sürümü için bkz: [Video nasıl yapılır: bir N katmanlı veri uygulaması oluşturma](http://go.microsoft.com/fwlink/?LinkId=115188).  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu kılavuzu tamamlamak için gerekenler:  
@@ -144,17 +144,17 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
   
 #### <a name="to-separate-the-tableadapters-from-the-dataset"></a>TableAdapter Bağdaştırıcılarını Veri Kümesinden ayırmak için  
   
-1.  Çift **NorthwindDataSet.xsd** içinde **Çözüm Gezgini** açmak için **veri kümesi Tasarımcısı**.  
+1. Çift **NorthwindDataSet.xsd** içinde **Çözüm Gezgini** açmak için **veri kümesi Tasarımcısı**.  
   
-2.  Tasarımcı üzerinde boş bir alana tıklayın.  
+2. Tasarımcı üzerinde boş bir alana tıklayın.  
   
-3.  Bulun **DataSet projesi** düğümünde **özellikleri** penceresi.  
+3. Bulun **DataSet projesi** düğümünde **özellikleri** penceresi.  
   
-4.  İçinde **DataSet projesi** listesinde **DataEntityTier**.  
+4. İçinde **DataSet projesi** listesinde **DataEntityTier**.  
   
-5.  Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
+5. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
   
- Veri kümesi ve TableAdapter bağdaştırıcıları iki sınıf kitaplığı projesine ayrılır. Başlangıçta tüm veri kümesini (DataAccessTier) içeren projede şimdi yalnızca TableAdapter bağdaştırıcıları bulunur. Proje **DataSet projesi** özelliği (DataEntityTier) türü belirtilmiş veri kümesi içerir: NorthwindDataSet.Dataset.Designer.vb (veya NorthwindDataSet.Dataset.Designer.cs).  
+   Veri kümesi ve TableAdapter bağdaştırıcıları iki sınıf kitaplığı projesine ayrılır. Başlangıçta tüm veri kümesini (DataAccessTier) içeren projede şimdi yalnızca TableAdapter bağdaştırıcıları bulunur. Proje **DataSet projesi** özelliği (DataEntityTier) türü belirtilmiş veri kümesi içerir: NorthwindDataSet.Dataset.Designer.vb (veya NorthwindDataSet.Dataset.Designer.cs).  
   
 > [!NOTE]
 >  Veri kümelerini ve TableAdapter bağdaştırıcılarını ayırdığınızda (ayarlayarak **DataSet projesi** özelliği), projedeki varolan kısmi veri kümesi sınıfları taşınmaz otomatik olarak. Mevcut veri kümesi kısmi sınıflarının veri kümesi projesine el ile taşınması gerekir.  

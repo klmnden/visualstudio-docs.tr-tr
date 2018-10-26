@@ -29,12 +29,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5522c9da025b76a3892d3923cdd7397b8ed5ce5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fbe323d5c8939ee5a4088436c906b99b4696254e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207499"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872934"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Tam Zamanında, Hata Ayıklama, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,13 +43,13 @@ Erişim için **Just-ın-Time** sayfasında, Git **Araçları** menüsüne ve ar
   
  Tam zamanında hata ayıklama Bu program türleri için etkinleştirebilirsiniz:  
   
--   Yönetilen  
+- Yönetilen  
   
--   Yerel  
+- Yerel  
   
--   Komut Dosyası  
+- Komut Dosyası  
   
- Just-In-Time hata ayıklama dışında başlatılan bir program hata ayıklama için bir yöntem olan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Oluşturulan bir programı çalıştırdığınız [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dışında [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ortam. Tam zamanında hata ayıklama etkinleştirilirse, bir kilitlenme hatalarını ayıklama isteyip istemediğinizi soran bir iletişim kutusu görüntülenir.  
+  Just-In-Time hata ayıklama dışında başlatılan bir program hata ayıklama için bir yöntem olan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Oluşturulan bir programı çalıştırdığınız [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dışında [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ortam. Tam zamanında hata ayıklama etkinleştirilirse, bir kilitlenme hatalarını ayıklama isteyip istemediğinizi soran bir iletişim kutusu görüntülenir.  
   
 ## <a name="associated-warnings"></a>İlişkili uyarıları  
  Bu sayfa, ziyaret ettiğinizde **seçenekleri** iletişim kutusu, şöyle bir uyarı iletisi görebilirsiniz:  

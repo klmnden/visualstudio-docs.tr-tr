@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d76cf493c20966a989d559b89da20cf5e24247e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d140fed32ac3816b75e13496dc3507fc728f7d26
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081341"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916536"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Bir en son kullanılan bir alt menüye listesi Ekle
 Bu izlenecek yol tanıtımlar geliştirir [menüye alt menü ekleme](../extensibility/adding-a-submenu-to-a-menu.md)ve dinamik bir listesi için bir alt menü ekleme işlemi gösterilmektedir. Dinamik listesi en son kullanılanlar (MRU) listesini oluşturmak için temelini oluşturur.  
@@ -38,9 +38,9 @@ Bu izlenecek yol tanıtımlar geliştirir [menüye alt menü ekleme](../extensib
   
 ## <a name="create-an-extension"></a>Bir uzantı oluşturma  
   
--   Konusundaki yordamları izleyin [menüye alt menü ekleme](../extensibility/adding-a-submenu-to-a-menu.md) değiştirilen alt aşağıdaki yordamlarda oluşturmak için.  
+- Konusundaki yordamları izleyin [menüye alt menü ekleme](../extensibility/adding-a-submenu-to-a-menu.md) değiştirilen alt aşağıdaki yordamlarda oluşturmak için.  
   
- Bu kılavuzdaki yordamları VSPackage'ı adı olduğunu varsayın `TopLevelMenu`, kullanılan adı [Visual Studio menü çubuğuna menü ekleme](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
+  Bu kılavuzdaki yordamları VSPackage'ı adı olduğunu varsayın `TopLevelMenu`, kullanılan adı [Visual Studio menü çubuğuna menü ekleme](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
   
 ## <a name="create-a-dynamic-item-list-command"></a>Bir dinamik öğe listesi komutu oluştur  
   

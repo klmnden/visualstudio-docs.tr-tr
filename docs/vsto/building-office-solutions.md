@@ -29,12 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 081a3dfd809cc936f11d436e593d2be258452f85
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4d69322360a83a6d615efcaf8de077de80e64398
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677738"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847584"
 ---
 # <a name="build-office-solutions"></a>Office çözümleri oluşturun
   Genel olarak, derleme ve hata ayıklama Office projeleri derleme ve Windows Forms gibi Visual Studio'da proje türlerinde hata ayıklama ile aynı olur. Bu bölümdeki konular, mevcut farkları açıklamaktadır. Uygulamaları oluşturma hakkında genel bilgi için bkz. [derlemek ve oluşturmak Visual Studio'da](/visualstudio/ide/compiling-and-building-in-visual-studio).  
@@ -64,23 +64,23 @@ ms.locfileid: "35677738"
 ### <a name="application-level-projects"></a>Uygulama düzeyi projeleri  
  Bir VSTO eklenti projesi oluşturduğunuzda, proje çıktısına aşağıdakiler dahildir:  
   
--   Sahip başvurulmuş tüm Derlemelerle ve proje derlemesi kendi **Yereli Kopyala** özelliğini **true**.  
+- Sahip başvurulmuş tüm Derlemelerle ve proje derlemesi kendi **Yereli Kopyala** özelliğini **true**.  
   
--   Dosya adı uzantısına sahip uygulama bildirimini *.manifest*. Daha fazla bilgi için [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md).  
+- Dosya adı uzantısına sahip uygulama bildirimini *.manifest*. Daha fazla bilgi için [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md).  
   
--   Dosya adı uzantısına sahip olan dağıtım bildirimi *.vsto*. Daha fazla bilgi için [Office çözümleri için dağıtım bildirimleri](../vsto/deployment-manifests-for-office-solutions.md).  
+- Dosya adı uzantısına sahip olan dağıtım bildirimi *.vsto*. Daha fazla bilgi için [Office çözümleri için dağıtım bildirimleri](../vsto/deployment-manifests-for-office-solutions.md).  
   
--   Bir program veritabanı (*PDB*) dosyası proje derlemesi için.  
+- Bir program veritabanı (*PDB*) dosyası proje derlemesi için.  
   
- VSTO eklentisi projeleri için derleme işlemi, ayrıca geliştirme bilgisayarında VSTO eklenti yüklemek için gerekli kayıt defteri girdileri kümesini oluşturur. Daha fazla bilgi için [VSTO eklentileri için kayıt defteri girdileri](../vsto/registry-entries-for-vsto-add-ins.md).  
+  VSTO eklentisi projeleri için derleme işlemi, ayrıca geliştirme bilgisayarında VSTO eklenti yüklemek için gerekli kayıt defteri girdileri kümesini oluşturur. Daha fazla bilgi için [VSTO eklentileri için kayıt defteri girdileri](../vsto/registry-entries-for-vsto-add-ins.md).  
   
- Form bölgeleri içeren bir Outlook VSTO eklentisi projesi oluşturun, derleme işlemi aşağıdaki ek bilgileri kayıt defterine ekler:  
+  Form bölgeleri içeren bir Outlook VSTO eklentisi projesi oluşturun, derleme işlemi aşağıdaki ek bilgileri kayıt defterine ekler:  
   
--   Bir veya daha fazla form bölgeleri ile ilişkili her ileti sınıfı için bir anahtar.  
+- Bir veya daha fazla form bölgeleri ile ilişkili her ileti sınıfı için bir anahtar.  
   
--   Her form bölgesi ve Outlook VSTO eklentisi adını temsil eden bir ilişkili değer için bir giriş.  
+- Her form bölgesi ve Outlook VSTO eklentisi adını temsil eden bir ilişkili değer için bir giriş.  
   
- Outlook form bölgeleri yüklemek için bu bilgiler gerekiyor.  
+  Outlook form bölgeleri yüklemek için bu bilgiler gerekiyor.  
   
 ## <a name="referenced-assemblies"></a>Başvurulan derlemeler  
  Office çözümleri oluşturma projenizden (sınıf kitaplığı projeleri dahil) derlemelere başvurabilir. Her başvurulan derleme adında bir özelliğe sahiptir **Yereli Kopyala**. **Yerele Kopyala** derleme çıktı dizinine kopyalanır belirtir. Varsayılan olarak ayarlanmış **true**. Olan her başvurulan derleme **Yereli Kopyala** kümesine **true** çıkış dizinine kopyalanır.  

@@ -18,12 +18,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0c8bf9d1f293895c762348752b64c7be8cf6d510
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b9d6aba5997182578b43ac9edd3c889bcfc365e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217491"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912896"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>İzlenecek yol: Kod Kusurları için Yönetilen Kodu Analiz Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,81 +98,81 @@ Bu kılavuzda, Kod Analizi aracını kullanarak kod kusurları için yönetilen 
   
 4.  Uyarıları gidermek için aşağıdakileri kullanın:  
   
--   [CA1014: Derlemeleri CLSCompliantAttribute ile işaretle](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: 'Tanıtım' CLSCompliantAttribute ile işaretlenmemelidir ve değeri true olmalıdır.  
+- [CA1014: Derlemeleri CLSCompliantAttribute ile işaretle](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: 'Tanıtım' CLSCompliantAttribute ile işaretlenmemelidir ve değeri true olmalıdır.  
   
-    -   Kod ekleme `using``System;` AssemblyInfo.cs dosyası için.  
+  -   Kod ekleme `using``System;` AssemblyInfo.cs dosyası için.  
   
-         Ardından, kod ekleme `[assembly: CLSCompliant(true)]` AssemblyInfo.cs dosyasını sonuna.  
+       Ardından, kod ekleme `[assembly: CLSCompliant(true)]` AssemblyInfo.cs dosyasını sonuna.  
   
-         Projeyi yeniden derleyin.  
+       Projeyi yeniden derleyin.  
   
--   [CA1032: Standart özel durum oluşturucuları uygulayın](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Bu sınıfına aşağıdaki oluşturucuyu ekleyin: Genel demo(String)  
+- [CA1032: Standart özel durum oluşturucuları uygulayın](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Bu sınıfına aşağıdaki oluşturucuyu ekleyin: Genel demo(String)  
   
-    -   Oluşturucu Ekle `public demo (String s) : base(s) { }` sınıfa `demo`.  
+  -   Oluşturucu Ekle `public demo (String s) : base(s) { }` sınıfa `demo`.  
   
--   [CA1032: Standart özel durum oluşturucuları uygulayın](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Bu sınıfına aşağıdaki oluşturucuyu ekleyin: Genel Tanıtım (dize, özel durum)  
+- [CA1032: Standart özel durum oluşturucuları uygulayın](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Bu sınıfına aşağıdaki oluşturucuyu ekleyin: Genel Tanıtım (dize, özel durum)  
   
-    -   Oluşturucu Ekle `public demo (String s, Exception e) : base(s, e) { }` sınıfa `demo`.  
+  -   Oluşturucu Ekle `public demo (String s, Exception e) : base(s, e) { }` sınıfa `demo`.  
   
--   [CA1032: Standart özel durum oluşturucuları uygulayın](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Bu sınıfına aşağıdaki oluşturucuyu ekleyin: tanıtım (SerializationInfo, StreamingContext) korumalı  
+- [CA1032: Standart özel durum oluşturucuları uygulayın](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Bu sınıfına aşağıdaki oluşturucuyu ekleyin: tanıtım (SerializationInfo, StreamingContext) korumalı  
   
-    -   Kod ekleme `using System.Runtime.Serialization;` Class1.cs dosyasının başına.  
+  -   Kod ekleme `using System.Runtime.Serialization;` Class1.cs dosyasının başına.  
   
-         Ardından, oluşturucu Ekle `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`  
+       Ardından, oluşturucu Ekle `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`  
   
-         Projeyi yeniden derleyin.  
+       Projeyi yeniden derleyin.  
   
--   [CA1032: Standart özel durum oluşturucuları uygulayın](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Bu sınıfına aşağıdaki oluşturucuyu ekleyin: Genel demo()  
+- [CA1032: Standart özel durum oluşturucuları uygulayın](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Bu sınıfına aşağıdaki oluşturucuyu ekleyin: Genel demo()  
   
-    -   Oluşturucu Ekle `public demo () : base() { }` sınıfa `demo` **.**  
+  -   Oluşturucu Ekle `public demo () : base() { }` sınıfa `demo` **.**  
   
-         Projeyi yeniden derleyin.  
+       Projeyi yeniden derleyin.  
   
--   [CA1709: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: 'TestCode için' değiştirerek ad alanı adı 'testCode' büyük küçük harfleri düzeltin.  
+- [CA1709: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: 'TestCode için' değiştirerek ad alanı adı 'testCode' büyük küçük harfleri düzeltin.  
   
-    -   Ad alanı büyük küçük harfleri değiştirme `testCode` için `TestCode`.  
+  -   Ad alanı büyük küçük harfleri değiştirme `testCode` için `TestCode`.  
   
--   [CA1709: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: 'Tanıtıma' değiştirerek tür adı 'Tanıtım' büyük küçük harfleri düzeltin.  
+- [CA1709: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: 'Tanıtıma' değiştirerek tür adı 'Tanıtım' büyük küçük harfleri düzeltin.  
   
-    -   Üye adını değiştirmek `Demo`.  
+  -   Üye adını değiştirmek `Demo`.  
   
--   [CA1709: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: 'Öğesine' değiştirerek üyesi adı 'öğesini' büyük küçük harfleri düzeltin.  
+- [CA1709: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: 'Öğesine' değiştirerek üyesi adı 'öğesini' büyük küçük harfleri düzeltin.  
   
-    -   Üye adını değiştirmek `Item`.  
+  -   Üye adını değiştirmek `Item`.  
   
--   [CA1710: Tanımlayıcıların sonekleri doğru soneki olmalıdır](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: '' özel durum' sonlandırmak için yeniden adlandırma testCode.demo'.  
+- [CA1710: Tanımlayıcıların sonekleri doğru soneki olmalıdır](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: '' özel durum' sonlandırmak için yeniden adlandırma testCode.demo'.  
   
-    -   Sınıfı için kendi oluşturucular adını değiştirip `DemoException`.  
+  -   Sınıfı için kendi oluşturucular adını değiştirip `DemoException`.  
   
--   [CA2210: Derlemelerin geçerli tanımlayıcı adları olmalıdır](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): 'ManagedDemo' bir tanımlayıcı ad anahtarıyla imzalayın.  
+- [CA2210: Derlemelerin geçerli tanımlayıcı adları olmalıdır](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): 'ManagedDemo' bir tanımlayıcı ad anahtarıyla imzalayın.  
   
-    -   Üzerinde **proje** menüsünü tıklatın **ManagedDemo özellikleri**.  
+  -   Üzerinde **proje** menüsünü tıklatın **ManagedDemo özellikleri**.  
   
-         Proje özellikleri görüntülenir.  
+       Proje özellikleri görüntülenir.  
   
-         Tıklayın **imzalama**.  
+       Tıklayın **imzalama**.  
   
-         Seçin **derlemeyi imzalamayı** onay kutusu.  
+       Seçin **derlemeyi imzalamayı** onay kutusu.  
   
-         İçinde **dize ad anahtar dosyası seç** listesinden  **\<yeni … >**.  
+       İçinde **dize ad anahtar dosyası seç** listesinden  **\<yeni … >**.  
   
-         **Katı ad anahtarı oluştur** iletişim kutusu görüntülenir.  
+       **Katı ad anahtarı oluştur** iletişim kutusu görüntülenir.  
   
-         İçinde **anahtar dosya adını**, TestKey yazın.  
+       İçinde **anahtar dosya adını**, TestKey yazın.  
   
-         Bir parola girin ve ardından **Tamam**.  
+       Bir parola girin ve ardından **Tamam**.  
   
-         Üzerinde **dosya** menüsünde tıklatın **seçili öğeleri Kaydet**ve özellik sayfaları kapatın.  
+       Üzerinde **dosya** menüsünde tıklatın **seçili öğeleri Kaydet**ve özellik sayfaları kapatın.  
   
-         Projeyi yeniden derleyin.  
+       Projeyi yeniden derleyin.  
   
--   [CA2237: ISerializable türleri SerializableAttribute ile](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Bu türü ISerializable uyguladığı 'gösteri' türüne [Serializable] özniteliğini ekleyin.  
+- [CA2237: ISerializable türleri SerializableAttribute ile](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Bu türü ISerializable uyguladığı 'gösteri' türüne [Serializable] özniteliğini ekleyin.  
   
-    -   Ekleme `[Serializable ()]` öznitelik sınıfına `demo`.  
+  -   Ekleme `[Serializable ()]` öznitelik sınıfına `demo`.  
   
-         Projeyi yeniden derleyin.  
+       Projeyi yeniden derleyin.  
   
- Değişiklikleri tamamladıktan sonra Class1.cs dosyasını aşağıdaki gibi görünmelidir:  
+  Değişiklikleri tamamladıktan sonra Class1.cs dosyasını aşağıdaki gibi görünmelidir:  
   
 ```  
 //CodeAnalysisManagedDemo  
@@ -202,17 +202,17 @@ namespace TestCode
   
 #### <a name="to-exclude-code-defect-warnings"></a>Kod hata uyarılarını hariç tutmak için  
   
-1.  Her kalan uyarılar için aşağıdakileri yapın:  
+1. Her kalan uyarılar için aşağıdakileri yapın:  
   
-    1.  Kod Analizi penceresinde uyarıyı seçin.  
+   1. Kod Analizi penceresinde uyarıyı seçin.  
   
-    2.  Seçin **eylemleri**, ardından **ileti Gizle**ve ardından **proje gizleme dosyası**.  
+   2. Seçin **eylemleri**, ardından **ileti Gizle**ve ardından **proje gizleme dosyası**.  
   
-     Daha fazla bilgi için [nasıl yapılır: menü öğesini kullanarak uyarıları bastırma](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
+      Daha fazla bilgi için [nasıl yapılır: menü öğesini kullanarak uyarıları bastırma](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
   
-2.  Projeyi yeniden derleyin.  
+2. Projeyi yeniden derleyin.  
   
-     Projeyi herhangi bir uyarı veya hata derler.
+    Projeyi herhangi bir uyarı veya hata derler.
 
 
 

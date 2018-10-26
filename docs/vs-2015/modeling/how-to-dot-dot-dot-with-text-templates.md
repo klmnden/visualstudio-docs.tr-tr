@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2dc895d6922197c3bba43b84f874d591ac75d54f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8e6a580a906ea228f04f8ec81b15eee6c143c6a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231510"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903822"
 ---
 # <a name="how-to--with-text-templates"></a>Nasıl yapılır ... Metin Şablonları ile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,21 +54,21 @@ Metin şablonlarında [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] herhangi bir 
 ### <a name="invoke-methods-from-a-template"></a>Bir şablondan yöntemleri çağırma  
  Yöntemleri, örneğin, standart zaten varsa [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] sınıflar:  
   
--   Kullanma \<#@assembly#> bütünleştirilmiş kod yükleme ve kullanma yönergesi \<#@import#> ad alanı bağlamını ayarlamak için. Daha fazla bilgi için [T4 içe aktarma yönergesi](../modeling/t4-import-directive.md).  
+- Kullanma \<#@assembly#> bütünleştirilmiş kod yükleme ve kullanma yönergesi \<#@import#> ad alanı bağlamını ayarlamak için. Daha fazla bilgi için [T4 içe aktarma yönergesi](../modeling/t4-import-directive.md).  
   
-     Sık aynı derleme kullanan ve içeri aktarma yönergeleri, yönerge işlemcisi yazma göz önünde bulundurun. Her şablon, derlemeler ve model dosyaları yüklemek ve ad alanı bağlamını ayarlayın ve yönerge işlemcisinin çağırabilirsiniz. Daha fazla bilgi için [özel T4 metin şablonu yönerge işlemcileri oluşturma](../modeling/creating-custom-t4-text-template-directive-processors.md).  
+   Sık aynı derleme kullanan ve içeri aktarma yönergeleri, yönerge işlemcisi yazma göz önünde bulundurun. Her şablon, derlemeler ve model dosyaları yüklemek ve ad alanı bağlamını ayarlayın ve yönerge işlemcisinin çağırabilirsiniz. Daha fazla bilgi için [özel T4 metin şablonu yönerge işlemcileri oluşturma](../modeling/creating-custom-t4-text-template-directive-processors.md).  
   
- Yöntemleri kendinize yazıyorsanız:  
+  Yöntemleri kendinize yazıyorsanız:  
   
--   Bir çalışma zamanı metin şablonu yazıyorsanız, çalışma zamanı metin şablonu ile aynı ada sahip bir kısmi sınıf tanımını yazın. Ek yöntemleri bu sınıfına ekleyin.  
+- Bir çalışma zamanı metin şablonu yazıyorsanız, çalışma zamanı metin şablonu ile aynı ada sahip bir kısmi sınıf tanımını yazın. Ek yöntemleri bu sınıfına ekleyin.  
   
--   Bir sınıf özelliği denetim bloğu yazma `<#+ ... #>` içinde yöntemler, özellikler ve özel sınıflar bildirebilirsiniz. Metin şablonu derlendiğinde, bir sınıfa dönüştürülür. Standart denetim blokları `<#...#>` metin için tek bir yöntem dönüştürülür ve sınıf özelliği bloklarını, ayrı üyeleri olarak eklenir. Daha fazla bilgi için [metin şablonu denetim blokları](../modeling/text-template-control-blocks.md).  
+- Bir sınıf özelliği denetim bloğu yazma `<#+ ... #>` içinde yöntemler, özellikler ve özel sınıflar bildirebilirsiniz. Metin şablonu derlendiğinde, bir sınıfa dönüştürülür. Standart denetim blokları `<#...#>` metin için tek bir yöntem dönüştürülür ve sınıf özelliği bloklarını, ayrı üyeleri olarak eklenir. Daha fazla bilgi için [metin şablonu denetim blokları](../modeling/text-template-control-blocks.md).  
   
-     Sınıf özellikleri de katıştırılmış metin blokları içerebilir olarak tanımlanan yöntemleri.  
+   Sınıf özellikleri de katıştırılmış metin blokları içerebilir olarak tanımlanan yöntemleri.  
   
-     Sınıf özellikleri yapabileceğiniz ayrı bir dosyada yerleştirmeyi düşünün `<#@include#>` bir veya daha fazla şablon dosyalarına.  
+   Sınıf özellikleri yapabileceğiniz ayrı bir dosyada yerleştirmeyi düşünün `<#@include#>` bir veya daha fazla şablon dosyalarına.  
   
--   Ayrı bir derlemede (sınıf kütüphanesi) yöntemleri yazmak ve bunları şablonunuzdan çağırın. Kullanım `<#@assembly#>` derlemeyi yüklemek için yönergesi ve `<#@import#>` ad alanı bağlamını ayarlamak için. Derleme, bu hata ayıklama sırasında yeniden için durdurmanız ve yeniden başlatmanız gerekebilir, Not [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Daha fazla bilgi için [T4 metin şablonu yönergeleri](../modeling/t4-text-template-directives.md).  
+- Ayrı bir derlemede (sınıf kütüphanesi) yöntemleri yazmak ve bunları şablonunuzdan çağırın. Kullanım `<#@assembly#>` derlemeyi yüklemek için yönergesi ve `<#@import#>` ad alanı bağlamını ayarlamak için. Derleme, bu hata ayıklama sırasında yeniden için durdurmanız ve yeniden başlatmanız gerekebilir, Not [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Daha fazla bilgi için [T4 metin şablonu yönergeleri](../modeling/t4-text-template-directives.md).  
   
 ### <a name="generate-many-files-from-one-model-schema"></a>Çok sayıda dosya bir model şemadan oluştur  
  Dosyaları genellikle aynı XML veya veritabanı şeması modellerinden oluşturursanız:  

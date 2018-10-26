@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aff486d906c340bf79939cbe5b43cbc2447d26f5
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 512675f0752f675bd393f324220eece87301af8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153835"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914833"
 ---
 # <a name="task-element-msbuild"></a>Görev öğesi (MSBuild)
 Oluşturur ve yürütür örneği bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] görev. Öğe adı, oluşturulan görev adına göre belirlenir.  
@@ -60,9 +60,9 @@ Oluşturur ve yürütür örneği bir [!INCLUDE[vstecmsbuild](../extensibility/i
 
 ### <a name="parent-elements"></a>Üst öğeler  
 
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|[Hedef](../msbuild/target-element-msbuild.md)|İçin kapsayıcı öğe [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] görevleri.|  
+| Öğe | Açıklama |
+| - | - |
+| [Hedef](../msbuild/target-element-msbuild.md) | İçin kapsayıcı öğe [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] görevleri. |
 
 ## <a name="remarks"></a>Açıklamalar  
  A `Task` öğesinde bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası bir görev örneği oluşturur, özellikleri ayarlayan ve yürütür. `Output` Öğesi, özellikler veya başka bir proje dosyasında kullanılacak öğeleri çıkış parametreleri depolar.  

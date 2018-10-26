@@ -16,12 +16,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0317b4d641cb965b5f92ad31cfab6d3580db30a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0cc3395f065d211c2d8e7d4f68a6b3ec8c25474d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225569"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949322"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage Sorunlarını Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,19 +116,19 @@ ms.locfileid: "49225569"
   
 ### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>VSPackage'ı eksik ya da bağımlılıklarından biri sorun giderme  
   
-1.  Yönetilen kod için başvuru yolları doğru olduğundan emin olun.  
+1. Yönetilen kod için başvuru yolları doğru olduğundan emin olun.  
   
-    1.  Üzerinde **proje** menüsünü tıklatın **özellikleri**.  
+   1.  Üzerinde **proje** menüsünü tıklatın **özellikleri**.  
   
-    2.  Seçin **başvuruları** sekmesinde **özellik sayfaları** iletişim kutusu ve emin tüm yolları doğru. Alternatif olarak, **Nesne Tarayıcısı** başvurulan nesneleri gidin.  
+   2.  Seçin **başvuruları** sekmesinde **özellik sayfaları** iletişim kutusu ve emin tüm yolları doğru. Alternatif olarak, **Nesne Tarayıcısı** başvurulan nesneleri gidin.  
   
-         Yönetilen kod için kullanabileceğiniz [Fuslogvw.exe (Derleme bağlaması Günlük Görüntüleyici)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) başarısız derleme yüklerini ayrıntılarını görüntülemek için.  
+        Yönetilen kod için kullanabileceğiniz [Fuslogvw.exe (Derleme bağlaması Günlük Görüntüleyici)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) başarısız derleme yüklerini ayrıntılarını görüntülemek için.  
   
-2.  Yönetilmeyen kod için CLSID değeri içinde VSPackage'ı bulma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID kayıt defteri düğümü:  
+2. Yönetilmeyen kod için CLSID değeri içinde VSPackage'ı bulma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID kayıt defteri düğümü:  
   
-     HKLM\Software\Microsoft\Visual Studio\\*\<sürüm >* \CLSID  
+    HKLM\Software\Microsoft\Visual Studio\\*\<sürüm >* \CLSID  
   
- Inprocserver32 giriş VSPackage dll'nin doğru yol olduğundan emin olun.  
+   Inprocserver32 giriş VSPackage dll'nin doğru yol olduğundan emin olun.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [VSPackage’lar](../extensibility/internals/vspackages.md)

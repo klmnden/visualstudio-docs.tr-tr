@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ea9df0bac68f9c16f5442d04fa4229f21bb29b2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c3f85c2568e9066384d65027ff69e8cd4c16c13e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638498"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942107"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Nasıl yapılır: Atom akışı için özel bir galeri oluşturun
 Bir Atom (uzantıları içeren ve akışa ekleme bir intranet konumu için RSS akışı) oluşturabileceğiniz **Uzantılar ve güncelleştirmeler** özel bir galeri olarak. Daha fazla bilgi için [özel galeriler](../extensibility/private-galleries.md).  
@@ -27,17 +27,17 @@ Bir Atom (uzantıları içeren ve akışa ekleme bir intranet konumu için RSS a
 ## <a name="create-an-atom-feed"></a>Bir Atom akışı oluşturma  
  Atom akışı özel bir galeri oluşturmak için öncelikle uzantılarınızı toplayın (*.vsix* dosyaları) bir klasöre kopyalar. İsterseniz, alt klasörler halinde düzenleyebilirsiniz. Ayrıca, aşağıdaki kaynakları gerekir:  
   
--   Bir *atom.xml* uzantıları özel bir galeride kullanıma sunduğu dosya. Bağlanma hakkında daha fazla bilgi için *atom.xml* dosyasını **Uzantılar ve güncelleştirmeler**, bkz: [özel galeriler](../extensibility/private-galleries.md).  
+- Bir *atom.xml* uzantıları özel bir galeride kullanıma sunduğu dosya. Bağlanma hakkında daha fazla bilgi için *atom.xml* dosyasını **Uzantılar ve güncelleştirmeler**, bkz: [özel galeriler](../extensibility/private-galleries.md).  
   
--   (Örneğin, ekran görüntüleri) extensions ayıklanan herhangi bir görüntü dosyalarını içeren bir klasör. *Atom.xml* dosya içeren görüntü yollarında göreli bağlantıları yer alır, böylece **Uzantılar ve güncelleştirmeler**.  
+- (Örneğin, ekran görüntüleri) extensions ayıklanan herhangi bir görüntü dosyalarını içeren bir klasör. *Atom.xml* dosya içeren görüntü yollarında göreli bağlantıları yer alır, böylece **Uzantılar ve güncelleştirmeler**.  
   
- Örneğin, bir klasöre toplanan aşağıdaki iki uzantıları varsayın:  
+  Örneğin, bir klasöre toplanan aşağıdaki iki uzantıları varsayın:  
   
--   *Template_Wizard_239.vsix*, bu değer boş bir VSIX proje şablonu.  
+- *Template_Wizard_239.vsix*, bu değer boş bir VSIX proje şablonu.  
   
--   *SelectionHighlight.vsix*, seçili sözcüğün tüm örneklerinin vurgulamak için aracı.  
+- *SelectionHighlight.vsix*, seçili sözcüğün tüm örneklerinin vurgulamak için aracı.  
   
- İçeriğini *atom.xml* dosya, aşağıdaki örnekte benzer:  
+  İçeriğini *atom.xml* dosya, aşağıdaki örnekte benzer:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>   

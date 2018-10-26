@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d48c0e1921c57923021e88a2a4a5bb5f89763ef1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 05d7c3cc2c391eee6ceeba492cd083efd3c00015
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677756"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916757"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>İzlenecek yol: içerik denetimlerini özel XML bölümlerine bağlama
   Bu yönerge, içerik denetimleri belge içinde depolanan XML verilerini Word için belge düzeyi özelleştirmesinde bağlamak nasıl gösterir.  
@@ -36,19 +36,19 @@ ms.locfileid: "35677756"
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
--   Tasarım zamanında, Word belgesine bir belge düzeyi projede içerik denetimleri ekleme.  
+- Tasarım zamanında, Word belgesine bir belge düzeyi projede içerik denetimleri ekleme.  
   
--   XML veri dosyası ve içerik denetimlerine bağlama öğeleri tanımlayan bir XML şeması oluşturma.  
+- XML veri dosyası ve içerik denetimlerine bağlama öğeleri tanımlayan bir XML şeması oluşturma.  
   
--   XML Şeması belge tasarım zamanında iliştiriliyor.  
+- XML Şeması belge tasarım zamanında iliştiriliyor.  
   
--   Özel bir XML parçasına zamanında belgedeki XML dosyasının içeriğini ekleme.  
+- Özel bir XML parçasına zamanında belgedeki XML dosyasının içeriğini ekleme.  
   
--   İçerik denetimlerini özel XML parçasına öğeleri bağlama.  
+- İçerik denetimlerini özel XML parçasına öğeleri bağlama.  
   
--   Bağlama bir <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> XML şemasında tanımlanan değerleri bir dizi.  
+- Bağlama bir <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> XML şemasında tanımlanan değerleri bir dizi.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
@@ -71,36 +71,36 @@ ms.locfileid: "35677756"
   
 ### <a name="to-add-content-controls-to-the-document"></a>İçerik denetimleri belgeye eklemek için  
   
-1.  Barındırılan Word belgesinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tasarımcısı Şerit üzerindeki **Ekle** sekmesi.  
+1. Barındırılan Word belgesinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tasarımcısı Şerit üzerindeki **Ekle** sekmesi.  
   
-2.  İçinde **tabloları** Grup öğesini **tablo**ve 2 sütun ve 3 satır içeren bir tablo ekleyin.  
+2. İçinde **tabloları** Grup öğesini **tablo**ve 2 sütun ve 3 satır içeren bir tablo ekleyin.  
   
-3.  Aşağıdaki sütun benzeyecek şekilde ilk sütunundaki metni yazın:  
+3. Aşağıdaki sütun benzeyecek şekilde ilk sütunundaki metni yazın:  
   
-    ||  
-    |-|  
-    |**Çalışan adı**|  
-    |**İşe Alınma Tarihi**|  
-    |**Başlık**|  
+   ||  
+   |-|  
+   |**Çalışan adı**|  
+   |**İşe Alınma Tarihi**|  
+   |**Başlık**|  
   
-4.  İlk satırı tablo ikinci sütunda seçin (yanındaki **çalışan adı**).  
+4. İlk satırı tablo ikinci sütunda seçin (yanındaki **çalışan adı**).  
   
-5.  Şerit üzerinde **Geliştirici** sekmesi.  
+5. Şerit üzerinde **Geliştirici** sekmesi.  
   
-    > [!NOTE]  
-    >  Varsa **Geliştirici** sekme görünür değilse, önce görünür olmalıdır. Daha fazla bilgi için [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+   > [!NOTE]  
+   >  Varsa **Geliştirici** sekme görünür değilse, önce görünür olmalıdır. Daha fazla bilgi için [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  İçinde **denetimleri** Grup öğesini **metin** düğmesi ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") bir eklemekiçin<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>ilk hücreye.  
+6. İçinde **denetimleri** Grup öğesini **metin** düğmesi ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") bir eklemekiçin<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>ilk hücreye.  
   
-7.  İkinci satır tablonun ikinci sütunda seçin (yanındaki **işe giriş tarihi**).  
+7. İkinci satır tablonun ikinci sütunda seçin (yanındaki **işe giriş tarihi**).  
   
-8.  İçinde **denetimleri** Grup öğesini **tarih seçici** düğmesi ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") bir eklemekiçin<xref:Microsoft.Office.Tools.Word.DatePickerContentControl> ikinci hücreye.  
+8. İçinde **denetimleri** Grup öğesini **tarih seçici** düğmesi ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") bir eklemekiçin<xref:Microsoft.Office.Tools.Word.DatePickerContentControl> ikinci hücreye.  
   
 9. Üçüncü satır tablonun ikinci sütunda seçin (yanındaki **başlık**).  
   
 10. İçinde **denetimleri** Grup öğesini **açılır listede** düğmesi ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") eklemek için bir <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> son hücreye.  
   
- Bu proje için tüm kullanıcı arabirimi olmasıdır. Projeyi çalıştırmak, artık ilk satırında bir metin yazın ve ikinci satırında bir tarih seçin. Sonraki adım, belgenin bir XML dosyasında görüntülemek istediğiniz veri eklemektir.  
+    Bu proje için tüm kullanıcı arabirimi olmasıdır. Projeyi çalıştırmak, artık ilk satırında bir metin yazın ve ikinci satırında bir tarih seçin. Sonraki adım, belgenin bir XML dosyasında görüntülemek istediğiniz veri eklemektir.  
   
 ## <a name="create-the-xml-data-file"></a>XML veri dosyası oluşturma  
  Genellikle, bir dosya veya veritabanı gibi bir dış kaynaktan özel bir XML parçasına depolamak için XML verileri elde edersiniz. Bu kılavuzda, belgede içerik denetimlerine bağlama öğeleri tarafından işaretlenen çalışan verilerini içeren bir XML dosyası oluşturun. Verileri çalışma zamanında kullanılabilir hale getirmek için XML dosyasını özelleştirme derlemede bir kaynak olarak ekleyin.  
@@ -189,7 +189,7 @@ ms.locfileid: "35677756"
 ## <a name="attach-the-xml-schema-to-the-document"></a>XML Şeması belge ekleme  
  Belgenin bağlamak için XML şeması ekleme <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> geçerli değerlerine `title` öğesi.  
   
-### <a name="to-attach-the-xml-schema-to-the-document-includeword15shortvstoincludesword-15-short-mdmd"></a>XML Şeması belgeye ([!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
+### <a name="to-attach-the-xml-schema-to-the-document--includeword15shortvstoincludesword-15-short-mdmd"></a>XML Şeması belgeye ( [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
   
 1.  Etkinleştirme **ÇalışanDenetimleri.docx'i** Tasarımcısı'nda.  
   

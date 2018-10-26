@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e898620fe7b319b785e8e0d337cc04192b206bd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b4a3c0e60dc9211baf0b8568b3804b1df7f82765
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227753"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812172"
 ---
 # <a name="network-usage"></a>Ağ kullanımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Visual Studio **ağ** Tanılama aracını kullanarak gerçekleştirilen ağ işl
 ## <a name="collecting-network-tool-data"></a>Ağ aracı verileri toplama  
  Çalıştırmalısınız **ağ** aracı ile Visual Studio bilgisayarda açık bir Visual Studio projesi.  
   
-1.  Projeyi Visual Studio'da açın.  
+1. Projeyi Visual Studio'da açın.  
   
-2.  Menüsünde **hata ayıklama / performans Profiler...** . Seçin **ağ**ve ardından **Başlat**.  
+2. Menüsünde **hata ayıklama / performans Profiler...** . Seçin **ağ**ve ardından **Başlat**.  
   
-3.  Ağ aracına, uygulamanızın HTTP trafiğini toplamaya başlar.  
+3. Ağ aracına, uygulamanızın HTTP trafiğini toplamaya başlar.  
   
-     Uygulamanızı çalıştırma gibi Özet görünümü sol bölmesinde otomatik olarak yakalanan HTTP işlemlerini listesini görüntüler. Özet görünümünde ayrıntılar bölmesini sağ bölmede, daha fazla bilgi görmek için bir öğe seçin.  
+    Uygulamanızı çalıştırma gibi Özet görünümü sol bölmesinde otomatik olarak yakalanan HTTP işlemlerini listesini görüntüler. Özet görünümünde ayrıntılar bölmesini sağ bölmede, daha fazla bilgi görmek için bir öğe seçin.  
   
-4.  Seçin **Durdur** uygulamayı kapatmak için.  
+4. Seçin **Durdur** uygulamayı kapatmak için.  
   
- Rapor penceresini aşağıdaki gibi görünmelidir:  
+   Rapor penceresini aşağıdaki gibi görünmelidir:  
   
- ![Ağ pencerenin](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
+   ![Ağ pencerenin](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyzing-data"></a>Verileri çözümleme  
  Uygulamanız çalışırken veya bile uygulama, Özet görünümünde görüntülenen ağ işlemlerden birini seçerek kapatıldıktan sonra yakalanan HTTP trafiği analiz edebilirsiniz.  

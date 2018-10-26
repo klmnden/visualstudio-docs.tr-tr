@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98dbffecc51b19a40b1b54cc9afc654fb850155b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bbecb481d96df1071388e834d44f8f712def2935
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176134"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924206"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>WPF uygulamalarında arama tabloları oluşturma
 Terim *arama tablosu* (olarak da adlandırılan bir *arama bağlama*) bir veri tablosundaki başka bir tablodaki bir yabancı anahtar alanının değeri temel bilgileri görüntüleyen bir denetimi açıklar. Bir üst tablonun ana düğüm sürükleyerek arama tablosu oluşturma veya nesnesine **veri kaynakları** penceresinden bir sütun veya ilgili alt tabloda özelliği zaten bağlı bir denetim.
@@ -83,7 +83,7 @@ Terim *arama tablosu* (olarak da adlandırılan bir *arama bağlama*) bir veri t
      Visual Studio arama yapılandırmak için Denetim bazı özelliklerini ayarlar. Aşağıdaki tabloda, Visual Studio değiştirir özellikleri listeler. Gerekirse, bu özellikler, XAML veya değiştirebileceğiniz, **özellikleri** penceresi.
 
     |Özellik|Ayar açıklaması|
-    |--------------|----------------------------|
+    |--------------| - |
     |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Bu özellik, koleksiyon veya denetimde görüntülenen verileri almak için kullanılan bağlama belirtir. Visual Studio bu özelliği ayarlar <xref:System.Windows.Data.CollectionViewSource> denetime sürüklediğiniz üst veriler için.|
     |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|Bu özellik, veri öğesi denetiminde görüntülenen yolunu belirtir. Visual Studio bu özellik bir dize veri türü olan birincil anahtar sonra ilk sütuna veya üst veri özelliğini ayarlar.<br /><br /> Farklı bir sütun veya özellik üst verileri görüntülemek istiyorsanız, bu özellik için farklı bir özellik yolunu değiştirin.|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio bu özellik sütun veya alt verilerin tasarımcıya sürüklediğiniz özelliği bağlar. Üst verileri için yabancı anahtarı budur.|
@@ -92,5 +92,5 @@ Terim *arama tablosu* (olarak da adlandırılan bir *arama bağlama*) bir veri t
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio'da verilere WPF denetimleri bağlama](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
-- [WPF uygulamalarında ilgili verileri görüntüleme](../data-tools/display-related-data-in-wpf-applications.md)
+- [WPF uygulamalarındaki ilgili verileri görüntüleme](../data-tools/display-related-data-in-wpf-applications.md)
 - [İzlenecek yol: WPF uygulamasında ilgili verileri görüntüleme](../data-tools/display-related-data-in-wpf-applications.md)

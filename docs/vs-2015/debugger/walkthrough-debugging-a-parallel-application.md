@@ -27,12 +27,12 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c46fbd570765d8843c9e6d87f37a5395c5b0133
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 613b3580d863e7d09ae62cb41182bd997f65df58
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279779"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823664"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>İzlenecek Yol: Paralel Uygulamada Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,25 +68,25 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
   
 #### <a name="to-create-the-sample-project"></a>Örnek proje oluşturmak için  
   
-1.  Visual Studio'da üzerinde **dosya** menüsünde **yeni** ve ardından **proje**.  
+1. Visual Studio'da üzerinde **dosya** menüsünde **yeni** ve ardından **proje**.  
   
-2.  İçinde **yüklü şablonlar** bölmesinde, hem Visual C#, Visual Basic veya Visual C++'ı seçin. Yönetilen diller için emin [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] framework kutusunda görüntülenir.  
+2. İçinde **yüklü şablonlar** bölmesinde, hem Visual C#, Visual Basic veya Visual C++'ı seçin. Yönetilen diller için emin [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] framework kutusunda görüntülenir.  
   
-3.  Seçin **konsol uygulaması** ve ardından **Tamam**. Varsayılan hata ayıklama yapılandırmasında kalır.  
+3. Seçin **konsol uygulaması** ve ardından **Tamam**. Varsayılan hata ayıklama yapılandırmasında kalır.  
   
-4.  Projede .cpp, .cs veya .vb kod dosyasını açın. Boş bir kod dosyası oluşturmak için içeriğini silin.  
+4. Projede .cpp, .cs veya .vb kod dosyasını açın. Boş bir kod dosyası oluşturmak için içeriğini silin.  
   
-5.  Aşağıdaki kod, seçtiğiniz dilde için boş bir kod dosyasına yapıştırın.  
+5. Aşağıdaki kod, seçtiğiniz dilde için boş bir kod dosyasına yapıştırın.  
   
- [!code-cpp[Debugger#1](../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp#1)]
- [!code-csharp[Debugger#1](../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs#1)]
- [!code-vb[Debugger#1](../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb#1)]  
+   [!code-cpp[Debugger#1](../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp#1)]
+   [!code-csharp[Debugger#1](../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs#1)]
+   [!code-vb[Debugger#1](../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb#1)]  
   
-1.  Üzerinde **dosya** menüsünü tıklatın **Tümünü Kaydet**.  
+6. Üzerinde **dosya** menüsünü tıklatın **Tümünü Kaydet**.  
   
-2.  Üzerinde **derleme** menüsünde tıklatın **çözümü yeniden derle**.  
+7. Üzerinde **derleme** menüsünde tıklatın **çözümü yeniden derle**.  
   
-     Dört çağrıları olduğunu fark `Debugger.Break` (`DebugBreak` C++ örneğinde) bu nedenle, kesme noktaları eklemek gerekmez; yalnızca uygulamayı çalıştıran neden olur, en fazla dört kez hata ayıklayıcıda ayırmak.  
+    Dört çağrıları olduğunu fark `Debugger.Break` (`DebugBreak` C++ örneğinde) bu nedenle, kesme noktaları eklemek gerekmez; yalnızca uygulamayı çalıştıran neden olur, en fazla dört kez hata ayıklayıcıda ayırmak.  
   
 ## <a name="using-the-parallel-stacks-window-threads-view"></a>Kullanarak Paralel Yığınlar penceresi: iş parçacıkları görünümü  
  Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat**. İlk kesme noktasına isabet tamamlanmasını bekleyin.  
@@ -153,33 +153,33 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
   
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>Üçüncü kesme noktasına kadar yürütme devam etmek için  
   
-1.  Üçüncü kesme noktasına, üzerinde isabet kadar yürütme devam etmek için **hata ayıklama** menüsünü tıklatın **devam**.  
+1. Üçüncü kesme noktasına, üzerinde isabet kadar yürütme devam etmek için **hata ayıklama** menüsünü tıklatın **devam**.  
   
-     Yöntemi, birden çok iş parçacığı aynı yöntemi olan ancak yöntem çağrı yığınının başında değil, farklı kutusunda görünür. Üç iş parçacığı vardır ve üç kutularında görünen S.L geçerli kesme noktasında örnektir. R. çift tıklayın  
+    Yöntemi, birden çok iş parçacığı aynı yöntemi olan ancak yöntem çağrı yığınının başında değil, farklı kutusunda görünür. Üç iş parçacığı vardır ve üç kutularında görünen S.L geçerli kesme noktasında örnektir. R. çift tıklayın  
   
-     ![Paralel Yığınlar penceresini yürütme yolu](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
+    ![Paralel Yığınlar penceresini yürütme yolu](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
   
-     Else göründüğü görebilmeniz için S.L diğer iki kutulara kalın olduğuna dikkat edin. Görmek istiyorsanız S.L çağrısına çerçeveler ve hangi çerçeveleri, çağrıları **yöntemi görünüme Değiştir** araç çubuğunda. Yöntem görünümü aşağıdaki çizimde **Paralel Yığınlar** penceresi.  
+    Else göründüğü görebilmeniz için S.L diğer iki kutulara kalın olduğuna dikkat edin. Görmek istiyorsanız S.L çağrısına çerçeveler ve hangi çerçeveleri, çağrıları **yöntemi görünüme Değiştir** araç çubuğunda. Yöntem görünümü aşağıdaki çizimde **Paralel Yığınlar** penceresi.  
   
-     ![Paralel Yığınlar penceresini yöntemi görünümünde](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
+    ![Paralel Yığınlar penceresini yöntemi görünümünde](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
   
-     Nasıl diyagramda seçilen metodunda özetlenmiş ve kendi kutusunda görünümün ortasında yerleştirilmiş dikkat edin. Çağıranlar ve çağrılanlar üst ve alt görünür. Tıklayın **yöntemi görünüme Değiştir** düğmesine tekrar bu modda bırakın.  
+    Nasıl diyagramda seçilen metodunda özetlenmiş ve kendi kutusunda görünümün ortasında yerleştirilmiş dikkat edin. Çağıranlar ve çağrılanlar üst ve alt görünür. Tıklayın **yöntemi görünüme Değiştir** düğmesine tekrar bu modda bırakın.  
   
-     Kısayol menüsünde, **Paralel Yığınlar** penceresine ayrıca aşağıdaki sahip diğer öğeleri.  
+    Kısayol menüsünde, **Paralel Yığınlar** penceresine ayrıca aşağıdaki sahip diğer öğeleri.  
   
-    -   **Onaltılık gösterim** araç ipuçları arasında ondalık ve onaltılık sayıları değiştirir.  
+   - **Onaltılık gösterim** araç ipuçları arasında ondalık ve onaltılık sayıları değiştirir.  
   
-    -   **Sembol yükleme bilgisi** ve **sembol ayarları** ilgili iletişim kutusunu açın.  
+   - **Sembol yükleme bilgisi** ve **sembol ayarları** ilgili iletişim kutusunu açın.  
   
-    -   **Kaynak koda Git** ve **Ayrıştırılımış** düzenleyicide seçilen yöntemine gidin.  
+   - **Kaynak koda Git** ve **Ayrıştırılımış** düzenleyicide seçilen yöntemine gidin.  
   
-    -   **Dış Kodu Göster** kullanıcı kodunda olmasa bile tüm çerçeveleri görüntüler. Genişletme (simgeler için erişiminiz yok olduğu için soluk) ek çerçeveler uyum sağlamak için bir diyagram görmeniz için deneyin.  
+   - **Dış Kodu Göster** kullanıcı kodunda olmasa bile tüm çerçeveleri görüntüler. Genişletme (simgeler için erişiminiz yok olduğu için soluk) ek çerçeveler uyum sağlamak için bir diyagram görmeniz için deneyin.  
   
      Sahip olduğunuz büyük diyagramları ve sonraki kesme noktasına adım, geçerli iş parçacığının etkin yığın çerçevesine otomatik Kaydır görünümüne isteyebilirsiniz; diğer bir deyişle, ilk kesme noktasına isabet iş parçacığı. İçinde **Paralel Yığınlar** penceresinde emin **geçerli yığın çerçevesine otomatik Kaydır** araç çubuğunda açıktır.  
   
      ![Paralel Yığınlar penceresinde Autoscrolling](../debugger/media/pdb-walkthrough-4a.png "PDB_Walkthrough_4A")  
   
-2.  Buna devam etmeden önce **Paralel Yığınlar** penceresinde, tüm yol sola ve tüm aşağı kaydırın.  
+2. Buna devam etmeden önce **Paralel Yığınlar** penceresinde, tüm yol sola ve tüm aşağı kaydırın.  
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Dördüncü kesme noktasına kadar yürütme devam etmek için  
   

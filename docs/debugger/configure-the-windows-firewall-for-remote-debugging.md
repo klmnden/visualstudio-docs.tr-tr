@@ -10,35 +10,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9688948ebe2fa5e045578ee808e068d59450d748
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 7f6904313ff585b8099c993f83e90bacb91a4ba2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433397"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847961"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Uzaktan hata ayıklama için Windows Güvenlik duvarını yapılandırma
 Bu konu, aşağıdaki işletim sistemlerini çalıştıran bilgisayarlarda uzaktan hata ayıklamayı etkinleştirmek için Güvenlik Duvarı'nı yapılandırmak açıklar:  
   
--   Windows 10  
+- Windows 10  
   
--   Windows 8/8.1  
+- Windows 8/8.1  
   
--   Windows 7   
+- Windows 7   
   
--   Windows Server 2012 R2  
+- Windows Server 2012 R2  
 
--   Windows Server 2012
+- Windows Server 2012
   
--   Windows Server 2008 R2 
+- Windows Server 2008 R2 
   
- Bu yapılandırma üzerinde hata ayıklaması yapıyorsanız ağ güvenlik duvarı tarafından korumalı değilse gereksizdir. Aksi takdirde, hem Visual Studio barındıran bilgisayarda hem de ayıklanacak uzak bilgisayarda güvenlik duvarı yapılandırması değişiklikleri gerektirir.  
+  Bu yapılandırma üzerinde hata ayıklaması yapıyorsanız ağ güvenlik duvarı tarafından korumalı değilse gereksizdir. Aksi takdirde, hem Visual Studio barındıran bilgisayarda hem de ayıklanacak uzak bilgisayarda güvenlik duvarı yapılandırması değişiklikleri gerektirir.  
   
- **IPSec** ağınız iletişimin gerektiriyorsa olması IPSec kullanarak gerçekleştirilen, hem Visual Studio ana bilgisayar hem de uzak bilgisayara ek bağlantı noktalarını açmanız gerekir.  
+  **IPSec** ağınız iletişimin gerektiriyorsa olması IPSec kullanarak gerçekleştirilen, hem Visual Studio ana bilgisayar hem de uzak bilgisayara ek bağlantı noktalarını açmanız gerekir.  
   
- **Web sunucusu** uzak bir Web sunucusunda hata ayıklaması yapıyorsanız, uzak bilgisayardaki ek bir bağlantı noktası açmanız gerekir. (IIS için bağlantı noktası 80 açık olması gerekir.)  
+  **Web sunucusu** uzak bir Web sunucusunda hata ayıklaması yapıyorsanız, uzak bilgisayardaki ek bir bağlantı noktası açmanız gerekir. (IIS için bağlantı noktası 80 açık olması gerekir.)  
   
- Her iki bilgisayar aynı işletim sistemini çalıştırmak olmadığını unutmayın. Örneğin, Visual Studio bilgisayarı, Windows 10 çalıştırabilirsiniz ve Windows Server 2012 R2 Uzak bilgisayarda çalıştırabilirsiniz.      
+  Her iki bilgisayar aynı işletim sistemini çalıştırmak olmadığını unutmayın. Örneğin, Visual Studio bilgisayarı, Windows 10 çalıştırabilirsiniz ve Windows Server 2012 R2 Uzak bilgisayarda çalıştırabilirsiniz.      
   
 ## <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>Uzak bilgisayarda uzaktan hata ayıklamayı etkinleştirme bağlantı  
   
@@ -120,4 +120,4 @@ Hata ayıklayıcı için Uyumluluk modu kullanıyorsanız (**Araçlar > Seçenek
 |80|Giden|TCP|Web sunucusu hata ayıklama için gereklidir.|
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Uzaktan hata ayıklama](../debugger/remote-debugging.md)
+ [Uzaktan Hata Ayıklama](../debugger/remote-debugging.md)

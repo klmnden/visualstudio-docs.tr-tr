@@ -16,15 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f3ce3aee4a7a498600da4eb0c99210c9c20d00f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 57d6c8c7821df8bd22723900ebd011c110a1857f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703425"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815188"
 ---
 # <a name="list-memory-command"></a>Belleği Listele Komutu
-Belirtilen aralığı bellek içeriğini görüntüler.
+Belirtilen bellek aralığının içeriklerini görüntüler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,43 +41,43 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ## <a name="switches"></a>Anahtarlar
  / ANSI&#124;Unicode
 
- İsteğe bağlı. Bellek, bellek, ANSI veya Unicode bayt için karşılık gelen karakter olarak görüntüleyin.
+ İsteğe bağlı. Bellek, bellek, ANSI veya Unicode bayt için karşılık gelen karakter olarak görüntüler.
 
  / Sayısı:`number`
 
- İsteğe bağlı. Kaç tane bayt görüntülemek için bellek başlayarak belirler `expression`.
+ İsteğe bağlı. Başlangıç belleği görüntülemek için kaç bayt belirler `expression`.
 
  / Biçimi:`formattype`
 
- İsteğe bağlı. Biçim türü bellek bilgileri görüntülemek için **bellek** olabilir; penceresi OneByte, TwoBytes, FourBytes, EightBytes, Float (32 bit) veya çift (64 bit). OneByte kullanılırsa, `/Unicode` kullanılamıyor.
+ İsteğe bağlı. Biçim türü bellek bilgileri görüntülemek için **bellek** penceresi; Mayıs OneByte, TwoBytes, FourBytes, EightBytes olabilir, Float (32-bit) veya çift (64-bit). OneByte kullanılıyorsa `/Unicode` kullanılamıyor.
 
- / Onaltılık&#124;imzalı&#124;imzalanmamış
+ / Onaltılık&#124;imzalı&#124;işaretsiz
 
- İsteğe bağlı. Numaralarını görüntüleme için kullanılacak biçimi belirtir: olarak imzalanmış, imzasız veya onaltılık.
+ İsteğe bağlı. Numaraları görüntüleme biçimini belirtir: olarak işaretli, imzasız veya onaltılık.
 
 ## <a name="remarks"></a>Açıklamalar
- Bir tam yazmak yerine **Debug.ListMemory** komutu tüm anahtarlarla çağırmak için belirtilen değerler önceden belirli anahtarları ile önceden tanımlanmış diğer adları kullanarak komutu. Örneğin, girmek yerine:
+ Eksiksiz bir yazmak yerine **Debug.ListMemory** komut tüm anahtarların ile önceden tanımlanmış diğer adlar için belirtilen değerler önceden belirli anahtarları komutu çağırır. Örneğin, girmek yerine:
 
 ```cmd
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
- Şunu yazabilirsiniz:
+ şunu yazabilirsiniz:
 
 ```cmd
 >df /Count:30 /Unicode
 ```
 
- İşte bir listesi için kullanılabilir diğer adların **Debug.ListMemory** komutu:
+ İşte bir listesi için kullanılabilir diğer adlar, **Debug.ListMemory** komutu:
 
 |Alias|Komut ve anahtarlar|
-|-----------|--------------------------|
+|-----------| - |
 |**d**|Debug.ListMemory|
 |**da**|Debug.ListMemory /Ansi|
 |**DB**|Debug.ListMemory /Format:OneByte|
 |**DC**|Debug.ListMemory /Format:FourBytes /Ansi|
 |**dd**|Debug.ListMemory /Format:FourBytes|
-|**DF**|Debug.ListMemory /Format:Float|
+|**SD**|Debug.ListMemory /Format:Float|
 |**dq**|Debug.ListMemory /Format:EightBytes|
 |**DU**|Debug.ListMemory / Unicode|
 
@@ -93,5 +93,5 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 - [İş Parçacıklarını Listele Komutu](../../ide/reference/list-threads-command.md)
 - [Visual Studio Komutları](../../ide/reference/visual-studio-commands.md)
 - [Komut Penceresi](../../ide/reference/command-window.md)
-- [Bul/komut kutusu](../../ide/find-command-box.md)
+- [Bul/Komut Kutusu](../../ide/find-command-box.md)
 - [Visual Studio Komut Diğer Adları](../../ide/reference/visual-studio-command-aliases.md)

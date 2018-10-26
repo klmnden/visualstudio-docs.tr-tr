@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0c1ab7a2e304fcaede2a51a1047691343f34783
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 49867ddc897a9c1a1241a891a3ba3de866d84688
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080792"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899246"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Paket&gt; öğesi (Önyükleyici)
 `Package` En üst düzey XML öğesi bir paket dosyası içinde bir öğedir.  
-  
+
 ## <a name="syntax"></a>Sözdizimi  
-  
+
 ```xml  
 <Package  
     Culture  
@@ -75,7 +75,7 @@ ms.locfileid: "39080792"
             SearchDepth  
         />  
     </InstallChecks>  
-  
+
     <Commands  
         Reboot  
     >  
@@ -111,7 +111,7 @@ ms.locfileid: "39080792"
             </ExitCodes>  
         </Command>  
     </Commands>  
-  
+
     <PackageFiles  
         CopyAllComponents  
     >  
@@ -122,14 +122,14 @@ ms.locfileid: "39080792"
             PublicKey  
         />  
     </PackageFiles>  
-  
+
     <Strings>  
         <String  
             Name  
         >  
         </String>  
     </Strings>  
-  
+
     <Schedules>  
         <Schedule  
             Name  
@@ -141,33 +141,34 @@ ms.locfileid: "39080792"
     </Schedules>  
 </Package>  
 ```  
-  
+
 ## <a name="elements-and-attributes"></a>Öğeler ve öznitelikler  
  `Package` Öğesi gereklidir. Bunu, aşağıdaki özniteliklere sahiptir.  
-  
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|`Culture`|Gerekli. Kullanılacak dili belirler. Bu paket için kültür tanımlar. Bu öznitelik içine bir anahtardır `Strings` öğesi, yükleme sırasında ürün adları ve hata iletileri için kültüre özgü dizeleri listeler.|  
-|`Name`|Gerekli. Gibi bir araç geliştiriciye görüntülenen paketten adını [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Bu öznitelik içine bir anahtardır `Strings` içermesi gereken öğesi bir `String` öğeyle `Name` ve `Culture` özelliklerini ayarlama eşleştirilecek `Name` ve `Culture` özelliklerini `Package`.|  
-|`LicenseAgreement`|İsteğe bağlı. Son Kullanıcı Lisans Sözleşmesi (EULA) içeren dağıtım paketi dosyasının adını belirtir.  Bu dosya ya da düz metin olabilir (*.txt*) veya zengin metin biçimi. (*.rtf*)|  
-  
+
+
+| Öznitelik | Açıklama |
+|--------------------| - |
+| `Culture` | Gerekli. Kullanılacak dili belirler. Bu paket için kültür tanımlar. Bu öznitelik içine bir anahtardır `Strings` öğesi, yükleme sırasında ürün adları ve hata iletileri için kültüre özgü dizeleri listeler. |
+| `Name` | Gerekli. Gibi bir araç geliştiriciye görüntülenen paketten adını [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Bu öznitelik içine bir anahtardır `Strings` içermesi gereken öğesi bir `String` öğeyle `Name` ve `Culture` özelliklerini ayarlama eşleştirilecek `Name` ve `Culture` özelliklerini `Package`. |
+| `LicenseAgreement` | İsteğe bağlı. Son Kullanıcı Lisans Sözleşmesi (EULA) içeren dağıtım paketi dosyasının adını belirtir.  Bu dosya ya da düz metin olabilir (*.txt*) veya zengin metin biçimi. (*.rtf*) |
+
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod örneği dağıtma için tam bir paket dosyası gösterir [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].  
-  
+
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
-  
+
 <Package  
   xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
   Name="DisplayName"  
   Culture="Culture"  
   LicenseAgreement="eula.rtf"  
 >  
-  
+
     <PackageFiles>  
         <PackageFile Name="eula.rtf"/>  
     </PackageFiles>  
-  
+
     <!-- Defines a localizable string table for error messages-->  
     <Strings>  
         <String Name="DisplayName">.NET Framework 2.0</String>  
@@ -185,9 +186,9 @@ ms.locfileid: "39080792"
         <String Name="InstMsiAExe">http://go.microsoft.com/fwlink/?LinkId=37285</String>  
         <String Name="Msi30Exe">http://go.microsoft.com/fwlink/?LinkId=37287</String>  
     </Strings>  
-  
+
 </Package>  
 ```  
-  
+
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Ürün ve paket şema başvurusu](../deployment/product-and-package-schema-reference.md)

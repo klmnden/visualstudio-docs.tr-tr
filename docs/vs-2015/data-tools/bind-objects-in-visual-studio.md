@@ -22,12 +22,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: da31c33288489c3dbaef8a51b5c3fe2fe96d818b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c832686cbe56bb9d2a3b9f31206dada8043e7b44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241507"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918642"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Visual Studio'da nesne bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,11 +64,11 @@ Visual Studio, uygulamanızdaki veri kaynağı olarak özel nesneler ile çalı�
 ### <a name="loaddata-into-objects"></a>LoadData nesnelere  
  Bu örnek için TableAdapter'ı kullanarak, nesneleri verileri yükleyin. Varsayılan olarak, TableAdapter bağdaştırıcıları veritabanından veri getirir ve veri tablolarını doldurmak yöntemleri iki tür oluşturulur.  
   
--   `TableAdapter.Fill` Yöntemi, mevcut bir veri tablosu döndürülen verilerle doldurur.  
+- `TableAdapter.Fill` Yöntemi, mevcut bir veri tablosu döndürülen verilerle doldurur.  
   
--   `TableAdapter.GetData` Yöntemi verilerle doldurulmuş yeni bir veri tablosu döndürür.  
+- `TableAdapter.GetData` Yöntemi verilerle doldurulmuş yeni bir veri tablosu döndürür.  
   
- Özel nesnelerinizi veri yüklemek için en kolay yolu çağırmaktır `TableAdapter.GetData` yöntemi döndürülen veri tablosundaki satır koleksiyonu aracılığıyla döngü ve her satırdaki değerlerin her nesnesiyle doldurur. Oluşturabileceğiniz bir `GetData` doldurulmuş veri tablosunu TableAdapter bağdaştırıcısına eklenen herhangi bir sorgu için döndüren yöntem.  
+  Özel nesnelerinizi veri yüklemek için en kolay yolu çağırmaktır `TableAdapter.GetData` yöntemi döndürülen veri tablosundaki satır koleksiyonu aracılığıyla döngü ve her satırdaki değerlerin her nesnesiyle doldurur. Oluşturabileceğiniz bir `GetData` doldurulmuş veri tablosunu TableAdapter bağdaştırıcısına eklenen herhangi bir sorgu için döndüren yöntem.  
   
 > [!NOTE]
 >  Visual Studio adları TableAdapter sorguları `Fill` ve `GetData` varsayılan olarak, ancak bu adları için herhangi bir geçerli yöntem adı değiştirilebilir.  

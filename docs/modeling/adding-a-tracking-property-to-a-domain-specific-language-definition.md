@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b9641ccc9064f576f471c7e75d59c3d5b8f0db6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 473cc26a9d3e7b7bc5ec97d1608706aea2ca3009
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859932"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898726"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Alana Özgü Dil Tanımına İzleme Özelliği ekleme
 
@@ -30,29 +30,30 @@ A *etki alanı izleme* özellik kullanıcı tarafından güncelleştirilebilir, 
 
 Bu kılavuzda, modelin varsayılan Namespace özelliği temelinde bir varsayılan değere sahip özellik izleme bir Namespace sahip bir etki alanına özgü dil (DSL) oluşturun. İzleme özellikleri hakkında daha fazla bilgi için bkz. [izleme özellikleri tanımlama](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
 
--   Özellik tanımlayıcılarının izleme DSL araçları desteği. Ancak, DSL Tasarımcısı izleme özelliği için bir dil eklemek için kullanılamaz. Bu nedenle, izleme özelliği tanımlaması ve özel kod eklemeniz gerekir.
+- Özellik tanımlayıcılarının izleme DSL araçları desteği. Ancak, DSL Tasarımcısı izleme özelliği için bir dil eklemek için kullanılamaz. Bu nedenle, izleme özelliği tanımlaması ve özel kod eklemeniz gerekir.
 
- İki durumlu bir izleme özelliği vardır: izleme ve kullanıcı tarafından güncelleştirilmiş. İzleme özellikleri, aşağıdaki özelliklere sahiptir:
+  İki durumlu bir izleme özelliği vardır: izleme ve kullanıcı tarafından güncelleştirilmiş. İzleme özellikleri, aşağıdaki özelliklere sahiptir:
 
--   İzleme durumda olduğu zaman, izleme özelliğinin değeri hesaplanır ve değeri, model değişikliği diğer özellikleri olarak güncelleştirilir.
+- İzleme durumda olduğu zaman, izleme özelliğinin değeri hesaplanır ve değeri, model değişikliği diğer özellikleri olarak güncelleştirilir.
 
--   Güncelleştirilmiş durumlarda kullanıcı durumuna göre izleme özelliğinin değeri, kullanıcının son özellik değer kümesi korur.
+- Güncelleştirilmiş durumlarda kullanıcı durumuna göre izleme özelliğinin değeri, kullanıcının son özellik değer kümesi korur.
 
--   İçinde **özellikleri** penceresinde **sıfırlama** özelliği güncelleştirilmiş içinde olduğunda yalnızca izleme özelliği etkinleştirilmişse komut kullanıcı durumuna göre. **Sıfırlama** komut izleme özelliği ayarlar durumunu izleme.
+- İçinde **özellikleri** penceresinde **sıfırlama** özelliği güncelleştirilmiş içinde olduğunda yalnızca izleme özelliği etkinleştirilmişse komut kullanıcı durumuna göre. **Sıfırlama** komut izleme özelliği ayarlar durumunu izleme.
 
--   İçinde **özellikleri** normal bir yazı tipinde izleme özelliği değeri izleme durumunda olduğunda penceresinde görüntülenir.
+- İçinde **özellikleri** normal bir yazı tipinde izleme özelliği değeri izleme durumunda olduğunda penceresinde görüntülenir.
 
--   İçinde **özellikleri** izleme özelliği güncelleştirilmiş olduğunda penceresi kullanıcı durumuna göre bir kalın yazı tipinde değeri görüntülenir.
+- İçinde **özellikleri** izleme özelliği güncelleştirilmiş olduğunda penceresi kullanıcı durumuna göre bir kalın yazı tipinde değeri görüntülenir.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
 Bu kılavuzda başlamadan önce bu bileşenleri yüklemelisiniz:
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
+| [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581) |
 
 ## <a name="create-the-project"></a>Projeyi oluşturma
 
@@ -718,33 +719,33 @@ XML serileştirme için özel yükleme sonrası davranışı desteklemek için k
 
 Sonraki adım yeni bir örneğini DSL Tasarımcısı oluşturmak ve çalıştırmaktır [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] böylece izleme özelliği doğru şekilde çalışıp çalışmadığını doğrulayabilirsiniz.
 
-1.  Üzerinde **derleme** menüsünde tıklatın **çözümü yeniden derle**.
+1. Üzerinde **derleme** menüsünde tıklatın **çözümü yeniden derle**.
 
-2.  Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat**.
+2. Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat**.
 
-     Deneysel yapısını [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] açılır **hata ayıklama** boş test dosyasını içeren çözüm.
+    Deneysel yapısını [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] açılır **hata ayıklama** boş test dosyasını içeren çözüm.
 
-3.  İçinde **Çözüm Gezgini**Test.trackingPropertyDsl tasarımcıda açmak için dosyaya çift tıklayın ve tasarım yüzeyine'ye tıklayın.
+3. İçinde **Çözüm Gezgini**Test.trackingPropertyDsl tasarımcıda açmak için dosyaya çift tıklayın ve tasarım yüzeyine'ye tıklayın.
 
-     Dikkat **özellikleri** penceresinde diyagramın **varsayılan Namespace** özelliği **DefaultNamespace**ve **özelöğeler** özelliği **0/0**.
+    Dikkat **özellikleri** penceresinde diyagramın **varsayılan Namespace** özelliği **DefaultNamespace**ve **özelöğeler** özelliği **0/0**.
 
-4.  Sürükleme bir **ExampleElement** öğesinden **araç kutusu** diyagramı yüzeyine bırakın.
+4. Sürükleme bir **ExampleElement** öğesinden **araç kutusu** diyagramı yüzeyine bırakın.
 
-5.  İçinde **özellikleri** pencere öğesi, select için **öğesi Namespace** özelliği ve değerini **DefaultNamespace** için  **OtherNamespace**.
+5. İçinde **özellikleri** pencere öğesi, select için **öğesi Namespace** özelliği ve değerini **DefaultNamespace** için  **OtherNamespace**.
 
-     Dikkat değerini **öğesi Namespace** artık kalın olarak gösterilir.
+    Dikkat değerini **öğesi Namespace** artık kalın olarak gösterilir.
 
-6.  İçinde **özellikleri** penceresinde sağ **öğesi Namespace**ve ardından **sıfırlama**.
+6. İçinde **özellikleri** penceresinde sağ **öğesi Namespace**ve ardından **sıfırlama**.
 
-     Özelliğinin değeri olarak değiştirilir **DefaultNamespace**, ve değer normal bir yazı tipinde gösterilir.
+    Özelliğinin değeri olarak değiştirilir **DefaultNamespace**, ve değer normal bir yazı tipinde gösterilir.
 
-     Sağ **öğesi Namespace** yeniden. **Sıfırlama** komutu artık devre dışı özelliği şu anda, izleme durumunda olduğundan.
+    Sağ **öğesi Namespace** yeniden. **Sıfırlama** komutu artık devre dışı özelliği şu anda, izleme durumunda olduğundan.
 
-7.  Başka bir sürükleyin **ExampleElement** gelen **araç kutusu** diyagramı yüzeyine bırakın ve değişiklik kendi **öğesi Namespace** için **OtherNamespace**.
+7. Başka bir sürükleyin **ExampleElement** gelen **araç kutusu** diyagramı yüzeyine bırakın ve değişiklik kendi **öğesi Namespace** için **OtherNamespace**.
 
-8.  Tasarım yüzeyine tıklayın.
+8. Tasarım yüzeyine tıklayın.
 
-     İçinde **özellikleri** penceresinde diyagramın değerini **özel öğeleri** artık **1/2**.
+    İçinde **özellikleri** penceresinde diyagramın değerini **özel öğeleri** artık **1/2**.
 
 9. Değişiklik **varsayılan Namespace** diyagramdan için **DefaultNamespace** için **NewNamespace**.
 

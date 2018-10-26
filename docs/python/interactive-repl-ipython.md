@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c4d9d7f03f8703bd549cf9e1098327a2fb59a497
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 28fb0bdb181b1f4f2c08112e40d6236db22b7a08
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008222"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918928"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Etkileşimli pencerede Ipython kullanın
 
@@ -29,30 +29,30 @@ Bu kılavuz için olmalıdır [Anaconda](https://www.continuum.io) Ipython ve ge
 
 1. Visual Studio'yu açın, geçiş **Python ortamları** penceresi (**görünümü** > **diğer Windows** > **Python ortamları** ) ve Anaconda ortamı seçin.
 
-1. İncelemek **paketleri (Conda)** sekme (olarak görünür **pip** veya **paketleri**) emin olmak bu ortam için `ipython` ve `matplotlib` listelenir. Aksi durumda, buraya yükleyin. (Bkz [Python ortamları windows - paketleri sekmesinde](python-environments-window-tab-reference.md).)
+2. İncelemek **paketleri (Conda)** sekme (olarak görünür **pip** veya **paketleri**) emin olmak bu ortam için `ipython` ve `matplotlib` listelenir. Aksi durumda, buraya yükleyin. (Bkz [Python ortamları windows - paketleri sekmesinde](python-environments-window-tab-reference.md).)
 
-1. Seçin **genel bakış** sekmenize **kullanım Ipython etkileşimli mod**. (Visual Studio 2015'te seçin **etkileşimli seçenekleri yapılandırın** açmak için **seçenekleri** iletişim kutusunda, ardından **etkileşimli mod** için **Ipython**seçip **Tamam**).
+3. Seçin **genel bakış** sekmenize **kullanım Ipython etkileşimli mod**. (Visual Studio 2015'te seçin **etkileşimli seçenekleri yapılandırın** açmak için **seçenekleri** iletişim kutusunda, ardından **etkileşimli mod** için **Ipython**seçip **Tamam**).
 
-1. Seçin **açık etkileşimli pencere** ortaya çıkarmak için **etkileşimli** Ipython modunda penceresi. Etkileşimli mod yalnızca değişmişse penceresi sıfırlamanız gerekebilir; basmanız gerekebilir **Enter** yalnızca bir >>> istemi görünür, böylece bir komut istemi beğeni almak **[2]**.
+4. Seçin **açık etkileşimli pencere** ortaya çıkarmak için **etkileşimli** Ipython modunda penceresi. Etkileşimli mod yalnızca değişmişse penceresi sıfırlamanız gerekebilir; basmanız gerekebilir **Enter** yalnızca bir >>> istemi görünür, böylece bir komut istemi beğeni almak **[2]**.
 
     ![Etkileşimli pencerede Ipython modu](media/ipython-repl-03.png)
 
-1. Aşağıdaki kodu girin:
+5. Aşağıdaki kodu girin:
 
-  ```python
-  import matplotlib.pyplot as plt
-  import numpy as np
+   ```python
+   import matplotlib.pyplot as plt
+   import numpy as np
   
-  x = np.linspace(0, 5, 10)
-  y = x ** 2
-  plt.plot(x, y, 'r', x, x ** 3, 'g', x, x ** 4, 'b')
-  ```
+   x = np.linspace(0, 5, 10)
+   y = x ** 2
+   plt.plot(x, y, 'r', x, x ** 3, 'g', x, x ** 4, 'b')
+   ```
 
-1. Son satırı girdikten sonra bir satır içi graf (Bu, isterseniz sağ alt köşesindeki üzerinde sürükleyerek yeniden boyutlandırabilirsiniz) görmeniz gerekir.
+6. Son satırı girdikten sonra bir satır içi graf (Bu, isterseniz sağ alt köşesindeki üzerinde sürükleyerek yeniden boyutlandırabilirsiniz) görmeniz gerekir.
 
     ![Etkileşimli pencerede satır içi grafiği](media/ipython-repl-04.png)
 
-1. Kod Düzenleyicisi'nde yazabilirsiniz REPL'de yazmak yerine seçin, sağ tıklatın ve seçin **etkileşime Gönder** komutu (veya basın **Ctrl**+**Enter**). Aşağıdaki kod düzenleyicisinde ile seçerek yeni bir dosyaya yapıştırmayı deneyin **Ctrl**+**A**, ardından gönderme **etkileşimli** penceresi. (Visual Studio kodu Ara ya da kısmi grafikleri vermeyi önlemek için bir birim olarak gönderir. Python projesi yoksa açıp seçili, farklı bir ortam ile Visual Studio açılır bir **etkileşimli** için hangi ortamı varsayılan olarak seçili penceresi **Python ortamları**penceresi.)
+7. Kod Düzenleyicisi'nde yazabilirsiniz REPL'de yazmak yerine seçin, sağ tıklatın ve seçin **etkileşime Gönder** komutu (veya basın **Ctrl**+**Enter**). Aşağıdaki kod düzenleyicisinde ile seçerek yeni bir dosyaya yapıştırmayı deneyin **Ctrl**+**A**, ardından gönderme **etkileşimli** penceresi. (Visual Studio kodu Ara ya da kısmi grafikleri vermeyi önlemek için bir birim olarak gönderir. Python projesi yoksa açıp seçili, farklı bir ortam ile Visual Studio açılır bir **etkileşimli** için hangi ortamı varsayılan olarak seçili penceresi **Python ortamları**penceresi.)
 
     ```python
     from mpl_toolkits.mplot3d import Axes3D
@@ -77,7 +77,7 @@ Bu kılavuz için olmalıdır [Anaconda](https://www.continuum.io) Ipython ve ge
 
     ![Kod Düzenleyicisi'nden etkileşimli pencereye göndermek.](media/ipython-repl-05.png)
 
-1. Dışında grafiklerini görmek için **etkileşimli** penceresi, bunun yerine kullanarak kod çalıştırın **hata ayıklama** > **hata ayıklama olmadan Başlat** komutu.
+8. Dışında grafiklerini görmek için **etkileşimli** penceresi, bunun yerine kullanarak kod çalıştırın **hata ayıklama** > **hata ayıklama olmadan Başlat** komutu.
 
 Ipython kaçış sistem Kabuk değişkeni değiştirme gibi başka birçok yararlı özellik yakalama çıkış, vb. vardır. Başvurmak [Ipython belgeleri](http://ipython.org/documentation.html) daha fazla bilgi için.
 

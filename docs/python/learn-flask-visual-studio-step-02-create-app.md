@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 61a7b36892e5cec36a4641c154227df8621c6602
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 92b34ed0abbef18473ab9ccf6b85c236111822f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776161"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812627"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Adım 2: görünümler ve sayfa şablonları ile bir Flask uygulaması oluşturma
 
@@ -36,7 +36,7 @@ Bu adımda, daha fazla bilgi için nasıl:
 
 1. Proje klasörünüzdeki adlı bir uygulama klasör oluşturma `HelloFlask` ('nde projeye sağ **Çözüm Gezgini** seçip **Ekle** > **yeni klasör** .)
 
-1. İçinde *HelloFlask* klasöründe adlı bir dosya oluşturun  *\_ \_init\_\_.py* oluşturan aşağıdaki içeriklerle `Flask` örnek ve uygulamanın görünümleri (sonraki adımda oluşturulan) yükler:
+2. İçinde *HelloFlask* klasöründe adlı bir dosya oluşturun  *\_ \_init\_\_.py* oluşturan aşağıdaki içeriklerle `Flask` örnek ve uygulamanın görünümleri (sonraki adımda oluşturulan) yükler:
 
     ```python
     from flask import Flask
@@ -45,7 +45,7 @@ Bu adımda, daha fazla bilgi için nasıl:
     import HelloFlask.views
     ```
 
-1. İçinde *HelloFlask* klasöründe adlı bir dosya oluşturun *views.py* aşağıdaki içeriğe sahip. Adı *views.py* önemlidir, çünkü kullandığınız `import HelloFlask.views` içinde  *\_ \_init\_\_.py*; çalışma zamanında bir hata görürsünüz adları eşleşmiyor.
+3. İçinde *HelloFlask* klasöründe adlı bir dosya oluşturun *views.py* aşağıdaki içeriğe sahip. Adı *views.py* önemlidir, çünkü kullandığınız `import HelloFlask.views` içinde  *\_ \_init\_\_.py*; çalışma zamanında bir hata görürsünüz adları eşleşmiyor.
 
     ```python
     from flask import Flask
@@ -59,9 +59,9 @@ Bu adımda, daha fazla bilgi için nasıl:
 
     Rotaya ve işlevi yeniden adlandırma yanı sıra `home`, bu kod sayfası işleme kodunu *app.py* ve içeri aktarır `app` bölümünde bildirilen nesne  *\_ \_init\_\_.py*.
 
-1. Bir alt klasöre oluşturma *HelloFlask* adlı *şablonları*, hangi kalan boş şimdilik.
+4. Bir alt klasöre oluşturma *HelloFlask* adlı *şablonları*, hangi kalan boş şimdilik.
 
-1. Projenin kök klasöründe, yeniden adlandırma *app.py* için *runserver.py*ve aşağıdaki kodu eşleşen içeriği yapın:
+5. Projenin kök klasöründe, yeniden adlandırma *app.py* için *runserver.py*ve aşağıdaki kodu eşleşen içeriği yapın:
 
     ```python
     import os
@@ -77,17 +77,17 @@ Bu adımda, daha fazla bilgi için nasıl:
 
         app.run(HOST, PORT)
     ```
-1. Proje yapısı aşağıdaki gibi görünmelidir:
+6. Proje yapısı aşağıdaki gibi görünmelidir:
 
     ![Kodu yeniden düzenlemeye sonra proje yapısı](media/flask/step02-project-structure.png)
 
-1. Seçin **hata ayıklama** > **hata ayıklamayı Başlat** (**F5**) veya **Web sunucusu** (Mayıs gördüğünüz tarayıcısı araç çubuğu düğmesi bir tarayıcı açın ve uygulamayı başlatmak için değişir). Her iki / ve/URL rotaları giriş.
+7. Seçin **hata ayıklama** > **hata ayıklamayı Başlat** (**F5**) veya **Web sunucusu** (Mayıs gördüğünüz tarayıcısı araç çubuğu düğmesi bir tarayıcı açın ve uygulamayı başlatmak için değişir). Her iki / ve/URL rotaları giriş.
 
-1. Ayrıca, çeşitli bölümlerini kod kesme noktaları ayarlayın ve başlatma sırası izlemek için uygulamayı yeniden başlatın. Örneğin, ilk satır üzerinde bir kesme noktası ayarlamak *runserver.py* ve *HelloFlask\__init__.py*ve `return "Hello Flask!"` satırında*views.py*. Sonra uygulamayı yeniden başlatın (**hata ayıklama** > **yeniden**, **Ctrl**+**F5**, ya da aşağıda gösterilen araç çubuğu düğmesi) ve adım adım (**F10**) her bir kesme noktası kullanarak çalıştırın veya kod **F5**.
+8. Ayrıca, çeşitli bölümlerini kod kesme noktaları ayarlayın ve başlatma sırası izlemek için uygulamayı yeniden başlatın. Örneğin, ilk satır üzerinde bir kesme noktası ayarlamak *runserver.py* ve *HelloFlask\_* init_*.py*ve `return "Hello Flask!"` satırında*views.py*. Sonra uygulamayı yeniden başlatın (**hata ayıklama** > **yeniden**, **Ctrl**+**F5**, ya da aşağıda gösterilen araç çubuğu düğmesi) ve adım adım (**F10**) her bir kesme noktası kullanarak çalıştırın veya kod **F5**.
 
     ![Visual Studio'da hata ayıklama araç çubuğundan yeniden başlatın](media/debugging-restart-toolbar-button.png)
 
-1. İşiniz bittiğinde uygulamayı durdurun.
+9. İşiniz bittiğinde uygulamayı durdurun.
 
 ### <a name="commit-to-source-control"></a>Kaynak denetimine işleme
 

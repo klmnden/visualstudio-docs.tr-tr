@@ -24,12 +24,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55d10e779ebd949f3f229e0abc4822b7a2da64e0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f171c337f73db495b7b71aded24f669b6e613a07
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195693"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887793"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Nasıl Yapılır: Yapılandırmaları Oluşturma ve Düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,14 +43,14 @@ Birkaç derleme yapılandırmaları bir çözüm için oluşturabilirsiniz. Örn
   
 #### <a name="to-open-the-configuration-manager-dialog-box"></a>Configuration Manager iletişim kutusunu açmak için  
   
--   İçinde **Çözüm Gezgini**, çözüm için kısayol menüsünü açın ve ardından **Configuration Manager**.  
+- İçinde **Çözüm Gezgini**, çözüm için kısayol menüsünü açın ve ardından **Configuration Manager**.  
   
-    > [!NOTE]
-    >  Varsa **Configuration Manager** komutu görünmezse kısayol menüsünde, arama altında **derleme** menü çubuğundaki menü. Seçin ya da menü çubuğunda, burada görünmüyorsa **Araçları**, **seçenekleri**ve ardından sol bölmesinde **seçenekleri** iletişim kutusunda **projeler ve Çözümleri**, **genel**, sağ bölmede seçip **Show Gelişmiş derleme yapılandırmaları** onay kutusu.  
+  > [!NOTE]
+  >  Varsa **Configuration Manager** komutu görünmezse kısayol menüsünde, arama altında **derleme** menü çubuğundaki menü. Seçin ya da menü çubuğunda, burada görünmüyorsa **Araçları**, **seçenekleri**ve ardından sol bölmesinde **seçenekleri** iletişim kutusunda **projeler ve Çözümleri**, **genel**, sağ bölmede seçip **Show Gelişmiş derleme yapılandırmaları** onay kutusu.  
   
-     İçinde **Configuration Manager** kullanabileceğiniz iletişim kutusu, **etkin çözüm yapılandırması** aşağı açılan listesinin bir çözüm çapında yapı yapılandırması, mevcut bir değiştirme veya yeni oluşturun yapılandırma. Kullanabileceğiniz **etkin çözüm platformu** platform yapılandırma hedefler, mevcut bir değiştirin veya yeni platform Ekle seçmek için aşağı açılan listesi. **Proje bağlamları** bölmesinde çözüm içindeki projeleri listeler. Her proje için bir projeye özgü yapılandırma ve platform seçebilir, var olanları düzenleyin veya yeni bir yapılandırma oluşturmak veya yeni bir platform Ekle. Derleme veya dağıtım çözümü için çözüm genelindeki bir yapılandırma kullandığınızda her proje dahil olup olmadığını gösteren onay kutularını de seçebilirsiniz.  
+   İçinde **Configuration Manager** kullanabileceğiniz iletişim kutusu, **etkin çözüm yapılandırması** aşağı açılan listesinin bir çözüm çapında yapı yapılandırması, mevcut bir değiştirme veya yeni oluşturun yapılandırma. Kullanabileceğiniz **etkin çözüm platformu** platform yapılandırma hedefler, mevcut bir değiştirin veya yeni platform Ekle seçmek için aşağı açılan listesi. **Proje bağlamları** bölmesinde çözüm içindeki projeleri listeler. Her proje için bir projeye özgü yapılandırma ve platform seçebilir, var olanları düzenleyin veya yeni bir yapılandırma oluşturmak veya yeni bir platform Ekle. Derleme veya dağıtım çözümü için çözüm genelindeki bir yapılandırma kullandığınızda her proje dahil olup olmadığını gösteren onay kutularını de seçebilirsiniz.  
   
- İstediğiniz yapılandırmaları ayarladıktan sonra bu yapılandırmaları için uygun olan proje özellikleri ayarlayabilirsiniz.  
+  İstediğiniz yapılandırmaları ayarladıktan sonra bu yapılandırmaları için uygun olan proje özellikleri ayarlayabilirsiniz.  
   
 #### <a name="to-set-properties-based-on-configurations"></a>Yapılandırmalarına göre özelliklerini ayarlamak için  
   

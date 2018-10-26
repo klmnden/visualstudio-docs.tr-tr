@@ -18,12 +18,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6f64f5510974af133100a355656bf3689d928869
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd910b0e0295ca12807b96af189032ffec766429
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261592"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949831"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Gelişmiş Derleme Ayarları İletişim Kutusu (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ Kullanım **AdvancedCompiler ayarları** iletişim kutusunun **Proje Tasarımcı
   
 ### <a name="to-access-this-dialog-box"></a>Bu iletişim kutusuna erişmek için  
   
-1.  İçinde **Çözüm Gezgini**, bir proje düğümü seçin (değil **çözüm** düğümü).  
+1. İçinde **Çözüm Gezgini**, bir proje düğümü seçin (değil **çözüm** düğümü).  
   
-2.  Üzerinde **proje** menüsünü tıklatın **özellikleri**. Zaman **Proje Tasarımcısı** görünen tıklayın **derleme** sekmesi.  
+2. Üzerinde **proje** menüsünü tıklatın **özellikleri**. Zaman **Proje Tasarımcısı** görünen tıklayın **derleme** sekmesi.  
   
-3.  Üzerinde [derleme sayfası, Proje Tasarımcısı (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)seçin **yapılandırma** ve **Platform**. Basitleştirilmiş yapı yapılandırmaları **yapılandırma** ve **Platform** listeleri görüntülenmez. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+3. Üzerinde [derleme sayfası, Proje Tasarımcısı (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)seçin **yapılandırma** ve **Platform**. Basitleştirilmiş yapı yapılandırmaları **yapılandırma** ve **Platform** listeleri görüntülenmez. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
   
-4.  Tıklayın **Gelişmiş derleme seçenekleri**.  
+4. Tıklayın **Gelişmiş derleme seçenekleri**.  
   
- [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
   
 ## <a name="optimizations"></a>En iyi duruma getirme  
  Bazı durumlarda bir program dosyası küçültmek, bir program daha hızlı çalıştırın veya derleme sürecinize hız yapmadan en iyi duruma getirme aşağıdaki seçenekleri belirtin.  

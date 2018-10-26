@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3190aebd98270dee4bb5148868c04a4f5e430781
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f777c9bdd0cf2ea300d2df8e7cbfbc8900c25c2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269567"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929536"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Visual C++ Kodu ile Çalışma (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,23 +68,23 @@ Sınıf Tasarımcısı görüntüler olarak adlandırılan bir görsel tasarım 
 ### <a name="type-resolution-issues"></a>Tür çözümlemesi sorunları  
  Sınıf Tasarımcısı, türleri aşağıdaki nedenlerden dolayı çözmek mümkün olmayabilir:  
   
--   Bir proje veya sınıf diyagramı içeren bir projeden başvurulan değil derleme türüdür. Bu hatayı düzeltmek için proje ya da türünü içeren derlemeyi bir başvuru ekleyin. Daha fazla bilgi için [nasıl NIB: başvurular ekleme veya kaldırma Başvurusu Ekle iletişim kutusunu kullanarak](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Bir proje veya sınıf diyagramı içeren bir projeden başvurulan değil derleme türüdür. Bu hatayı düzeltmek için proje ya da türünü içeren derlemeyi bir başvuru ekleyin. Daha fazla bilgi için [nasıl NIB: başvurular ekleme veya kaldırma Başvurusu Ekle iletişim kutusunu kullanarak](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
--   Sınıf Tasarımcısı bulamazsanız şekilde türü doğru kapsamda değil. Kodu eksik olmadığından emin olun bir `using`, `imports`, veya `#include` deyimi. Ayrıca, türü (veya ilişkili bir türün) içinde bulunduğu orijinal yere ad alanı dışında taşınmış değil, emin olun.  
+- Sınıf Tasarımcısı bulamazsanız şekilde türü doğru kapsamda değil. Kodu eksik olmadığından emin olun bir `using`, `imports`, veya `#include` deyimi. Ayrıca, türü (veya ilişkili bir türün) içinde bulunduğu orijinal yere ad alanı dışında taşınmış değil, emin olun.  
   
--   Türü yok (veya açıklama satırı). Bu hatayı düzeltmek için bilgisayarınızda değil yorum veya türü silinmiş olması emin olun.  
+- Türü yok (veya açıklama satırı). Bu hatayı düzeltmek için bilgisayarınızda değil yorum veya türü silinmiş olması emin olun.  
   
--   Türü bir #import yönergesi tarafından başvurulan bir kitaplıkta yer alır. İçin oluşturulan kodu (.tlh dosyası) el ile eklemek için olası bir geçici çözüm olan bir # üstbilgi dosyasına include yönergesi.  
+- Türü bir #import yönergesi tarafından başvurulan bir kitaplıkta yer alır. İçin oluşturulan kodu (.tlh dosyası) el ile eklemek için olası bir geçici çözüm olan bir # üstbilgi dosyasına include yönergesi.  
   
- Tür çözümleme sorunu için görmek en olası hata **kodu sınıf diyagramına bir veya daha fazla şekilleri için bulunamadı '\<öğesi >'**. Bu hata iletisini kodunuzu hatadır gelmeyebilir. Bu, Sınıf Tasarımcısı yalnızca kodunuzu görüntüleyemedi gösterir. Aşağıdaki ölçüleri deneyin.  
+  Tür çözümleme sorunu için görmek en olası hata **kodu sınıf diyagramına bir veya daha fazla şekilleri için bulunamadı '\<öğesi >'**. Bu hata iletisini kodunuzu hatadır gelmeyebilir. Bu, Sınıf Tasarımcısı yalnızca kodunuzu görüntüleyemedi gösterir. Aşağıdaki ölçüleri deneyin.  
   
--   Türü olduğundan emin olun. Yanlışlıkla değil yorum veya kaynak kodu silinmiş olduğundan emin olun.  
+- Türü olduğundan emin olun. Yanlışlıkla değil yorum veya kaynak kodu silinmiş olduğundan emin olun.  
   
--   Sınıf Tasarımcısı, girdiğiniz türünü desteklediğinden emin olun. Bkz: [C++ kod öğeleri için kısıtlamalar](#limitations).  
+- Sınıf Tasarımcısı, girdiğiniz türünü desteklediğinden emin olun. Bkz: [C++ kod öğeleri için kısıtlamalar](#limitations).  
   
--   Türü çözmeye çalışın. Bir proje ya da sınıf diyagramı içeren bir projeden başvurulan değil derleme türü olabilir. Bu hatayı düzeltmek için proje ya da türünü içeren derlemeyi bir başvuru ekleyin. Daha fazla bilgi için [nasıl NIB: başvurular ekleme veya kaldırma Başvurusu Ekle iletişim kutusunu kullanarak](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Türü çözmeye çalışın. Bir proje ya da sınıf diyagramı içeren bir projeden başvurulan değil derleme türü olabilir. Bu hatayı düzeltmek için proje ya da türünü içeren derlemeyi bir başvuru ekleyin. Daha fazla bilgi için [nasıl NIB: başvurular ekleme veya kaldırma Başvurusu Ekle iletişim kutusunu kullanarak](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
--   Sınıf Tasarımcısı bulabilmesi türü doğru kapsamda olduğundan emin olun. Kodu eksik olmadığından emin olun bir `using`, `imports`, veya `#include` deyimi. Ayrıca, türü (veya ilişkili bir türün) içinde bulunduğu orijinal yere ad alanı dışında taşınmış değil, emin olun.  
+- Sınıf Tasarımcısı bulabilmesi türü doğru kapsamda olduğundan emin olun. Kodu eksik olmadığından emin olun bir `using`, `imports`, veya `#include` deyimi. Ayrıca, türü (veya ilişkili bir türün) içinde bulunduğu orijinal yere ad alanı dışında taşınmış değil, emin olun.  
   
 ### <a name="troubleshooting-other-error-messages"></a>Diğer hata iletileri sorunları giderme  
  Microsoft Developer Network (MSDN) ortak forumlarında sorun giderme hataları ve Uyarıları ile ilgili Yardım bulabilirsiniz. Bkz: [Visual Studio Sınıf Tasarımcısı Forumu](http://go.microsoft.com/fwlink/?linkid=160754).  

@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: 871b4d2fdd180481bdd496aa45ef960a24b1ef18
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 6cf5c2529d54637e1e6ad4a111c3d3c456e6fae1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278328"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882398"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Azure Batch AI, yapay ZEKA modellerini eğitme
 
@@ -27,16 +27,15 @@ Dinamik olarak Azure eğitimi modellerini ölçeği genişletebilirsiniz için y
 
 1. Visual Studio'yu başlatın. Açık **Sunucu Gezgini** açarak **yapay ZEKA Araçları** menü ve seçme **kümesi seçin**
 
-    ![Küme Seçici](media\train-model\select-cluster.png)
-
+    ![Küme Seçici](media/train-model/select-cluster.png)
 
 2. Genişletin **yapay ZEKA Araçları**. Sahip olduğunuz herhangi bir Batch AI kaynağını otomatik olarak algılanır ve sunucu Gezgini'nde görünür.
 
-    ![Örnek Galerisi](media\train-model\batchai.png)
+    ![Örnek Galerisi](media/train-model/batchai.png)
 
 3. Seçin **Görüntüle > Takım Gezgini...**  açmak için **Takım Gezgini** penceresi içinde GitHub veya Azure DevOps bağlanabilir, ya da bir depoyu kopyalayın.
 
-    ![Azure DevOps, GitHub'ı gösteren ve bir depo kopyalama Takım Gezgini penceresi](media\train-model\team-explorer.png)
+    ![Azure DevOps, GitHub'ı gösteren ve bir depo kopyalama Takım Gezgini penceresi](media/train-model/team-explorer.png)
 
 4. Altında alanına **yerel Git depoları**, girin `https://github.com/Microsoft/samples-for-ai`, kopyalanan dosyalar için bir klasör girin ve seçin **kopya**.
 
@@ -45,20 +44,19 @@ Dinamik olarak Azure eğitimi modellerini ölçeği genişletebilirsiniz için y
 
 5. Kopyalama tamamlandıktan sonra tıklayın **Dosya > çözüm Aç > Proje / çözüm**
 
-    ![Örnek Galerisi](media\train-model\open-solution.png)
+    ![Örnek Galerisi](media/train-model/open-solution.png)
 
-5. Açık **samples-for-ai\TensorFlowExamples\TensorFlowExamples.sln** dizinde kopyaladığınız depo
+6. Açık **samples-for-ai\TensorFlowExamples\TensorFlowExamples.sln** dizinde kopyaladığınız depo
 
-    ![Örnek Galerisi](media\train-model\tensorflowexamples.png)
+    ![Örnek Galerisi](media/train-model/tensorflowexamples.png)
 
-5. Kümesi MNIST projesi olarak ** başlangıç projesi **
+7. Kümesi MNIST projesi olarak ** başlangıç projesi **
 
-    ![Örnek Galerisi](media\train-model\mnist-startup.png)
+    ![Örnek Galerisi](media/train-model/mnist-startup.png)
 
-1. ** Sağ tıklayın ** MNIST proje **işi Gönder**
+8. <strong>Sağ tıklayın ** MNIST proje ** işi Gönder</strong>
 
-    ![Örnek Galerisi](media\train-model\submit-job.png)
+    ![Örnek Galerisi](media/train-model/submit-job.png)
+9. Seçin, **Azure Batch AI** küme'a tıklayın **alma**. Seçin `AzureBatchAI_TF_MNIST.json` hızlı bir şekilde kullanmak için hangi Docker görüntüsü gibi bazı varsayılan değerler doldurmak için dosya. Ardından **Gönder**
 
-1. Seçin, **Azure Batch AI** küme'a tıklayın **alma**. Seçin `AzureBatchAI_TF_MNIST.json` hızlı bir şekilde kullanmak için hangi Docker görüntüsü gibi bazı varsayılan değerler doldurmak için dosya. Ardından **Gönder**
-
-    ![Örnek Galerisi](media\train-model\submit-batch.png)
+    ![Örnek Galerisi](media/train-model/submit-batch.png)

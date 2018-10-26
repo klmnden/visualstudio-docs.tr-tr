@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eaa8ae8c5e073d4c83ae6489cd32953b0959072f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c656a9e83e3ec50c24e6bb7006bbdc4d102e9f6e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223706"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919123"
 ---
 # <a name="collecting-performance-statistics-by-using-sampling"></a>Örnekleme Kullanarak Performans İstatistikleri Toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,9 +47,9 @@ Varsayılan olarak, [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] profil 
 ## <a name="common-tasks"></a>Ortak Görevler  
  Ek seçenekler belirtebilirsiniz _performans oturumu_**özellik sayfaları** performans oturumunun iletişim kutusu. Bu iletişim kutusunu açmak için:  
   
--   İçinde **performans Gezgini**performans oturumu adına sağ tıklayın ve ardından **özellikleri**.  
+- İçinde **performans Gezgini**performans oturumu adına sağ tıklayın ve ardından **özellikleri**.  
   
- Aşağıdaki tabloda görevler belirleyebilirsiniz seçenekleri açıklanmıştır _performans oturumu_**özellik sayfaları** iletişim kutusuna örnekleme yöntemiyle profili.  
+  Aşağıdaki tabloda görevler belirleyebilirsiniz seçenekleri açıklanmıştır _performans oturumu_**özellik sayfaları** iletişim kutusuna örnekleme yöntemiyle profili.  
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  

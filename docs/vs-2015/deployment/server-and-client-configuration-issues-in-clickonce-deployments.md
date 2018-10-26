@@ -23,12 +23,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 58a7c92cab0f7bbf410d28cc1bc86dd6ce4f13df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8cf7a6db209bb6bbed1d8044bbdc3ed106e64836
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231536"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948947"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce Dağıtımlarında Sunucu ve İstemci Yapılandırma Sorunları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız
   
  Bazı Web sunucuları gibi .mdf .dll ve .config uzantılı dosyaları engelleyebilir. Windows tabanlı uygulamaları genellikle bazı uzantılara sahip dosyaları içerir. Bir kullanıcı çalıştırmayı denerse bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] erişen bir Web sunucusunda engellenen bir dosya uygulama hataya neden olur. Tüm dosya uzantıları, kaldırma yerine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ".deploy" dosya uzantısına sahip her bir uygulama dosyası varsayılan olarak yayımlar. Bu nedenle, yöneticinin yalnızca aşağıdaki üç dosya uzantılarını engelini kaldırmak için Web sunucusunu yapılandırma gerekir:  
   
--   .Application  
+- .Application  
   
--   .manifest  
+- .manifest  
   
--   .deploy  
+- .deploy  
   
- Ancak, bu seçeneğin işaretini kaldırarak devre dışı bırakabilirsiniz **".deploy" dosya uzantısı** seçeneğini [Yayımlama Seçenekleri iletişim kutusu](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), bu durumda, tüm dosya uzantılarını engelini kaldırmak için Web sunucusu yapılandırmanız gerekir uygulamada kullanılır.  
+  Ancak, bu seçeneğin işaretini kaldırarak devre dışı bırakabilirsiniz **".deploy" dosya uzantısı** seçeneğini [Yayımlama Seçenekleri iletişim kutusu](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), bu durumda, tüm dosya uzantılarını engelini kaldırmak için Web sunucusu yapılandırmanız gerekir uygulamada kullanılır.  
   
- IIS olmayan yüklü kullanıyorsanız .manifest ve .application .deploy, örneğin, yapılandırma gerekecektir [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], veya başka bir Web sunucusu (örn. Apache) kullanıyorsanız.  
+  IIS olmayan yüklü kullanıyorsanız .manifest ve .application .deploy, örneğin, yapılandırma gerekecektir [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], veya başka bir Web sunucusu (örn. Apache) kullanıyorsanız.  
   
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce ve Güvenli Yuva Katmanı (SSL)  
  A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama düzgün çalışır, SSL üzerinden SSL sertifikası hakkında bir istem zaman Internet Explorer görüntülemesi dışında. Bir zaman site adları eşleşmiyor gibi sertifika veya sertifika ile bu sorun süresi dolmuş olduğunda istemi yükseltilebilir. Yapmak [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bir SSL bağlantısı üzerinden çalışma, sertifikanın güncel olduğunu ve site verileri eşleşen sertifika veri emin olun.  
@@ -122,11 +122,11 @@ Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız
   
  Bir IIS sunucusu kullanarak dağıtırsanız, inetmgr.exe çalıştırın ve yeni dosya türleri için varsayılan Web Sayfası Ekle:  
   
--   .Application ve .manifest uzantıları için MIME türü "application/x-ms-application." olmalıdır. Diğer dosya türleri için MIME türü "application/octet-stream." olmalıdır.  
+- .Application ve .manifest uzantıları için MIME türü "application/x-ms-application." olmalıdır. Diğer dosya türleri için MIME türü "application/octet-stream." olmalıdır.  
   
--   Bir MIME türü uzantı oluşturursanız, "*" ve MIME türü "application/octet-stream" yüklenmek üzere engellenmemiş dosya türlerinin sağlayacaktır. (Ancak, .aspx ve .asmx gibi türleri indirilen dosya engelledi.)  
+- Bir MIME türü uzantı oluşturursanız, "*" ve MIME türü "application/octet-stream" yüklenmek üzere engellenmemiş dosya türlerinin sağlayacaktır. (Ancak, .aspx ve .asmx gibi türleri indirilen dosya engelledi.)  
   
- Windows Server'da MIME türleri yapılandırılıyor ayrıntılı yönergeler için Microsoft Bilgi Bankası makalesi KB326965, "IIS 6.0 mu değil hizmet bilinmeyen MIME türleri" başvurun [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
+  Windows Server'da MIME türleri yapılandırılıyor ayrıntılı yönergeler için Microsoft Bilgi Bankası makalesi KB326965, "IIS 6.0 mu değil hizmet bilinmeyen MIME türleri" başvurun [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
   
 ## <a name="content-type-mappings"></a>İçerik türü eşlemeleri  
  HTTP üzerinden yayımlarken, içerik türü (MIME türü olarak da bilinir) .application dosya "application/x-ms-application." olmalıdır Varsa [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] sunucuda yüklüyse, bu sizin için otomatik olarak ayarlanır. Bu yüklü değil ve ardından bir MIME türü ilişkilendirmesini oluşturmak için ihtiyacınız varsa [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama vroot (veya tüm sunucu).  

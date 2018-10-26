@@ -12,23 +12,23 @@ ms.topic: article
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: douge
-ms.openlocfilehash: ad93bfe700c881977130ba6651bd3e271207a56f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d10d0e49389b43a288826adf2043c603aeff36a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269314"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925844"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Nasıl yapılır: el ile bir uzantı (VSIX dağıtımı) paketi
 Sarmak için bir VSIX paketi oluşturmak bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dağıtım için uzantısı. Paketi oluşturmak için üç yolu vardır:  
   
--   Dahil edilen genişletilebilirlik şablonlarından birini kullanarak bir VSIX paket projesi oluşturun [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK. Bu, çoğu senaryo için en kolay seçenektir.  
+- Dahil edilen genişletilebilirlik şablonlarından birini kullanarak bir VSIX paket projesi oluşturun [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK. Bu, çoğu senaryo için en kolay seçenektir.  
   
--   İçinde boş bir uzantı projenizin çıktısını kaydırma [VSIX projesi](../extensibility/vsix-project-template.md). Şablonları, desteklenmeyen derlemelerini ve özel türler için bu seçeneği öneririz.  
+- İçinde boş bir uzantı projenizin çıktısını kaydırma [VSIX projesi](../extensibility/vsix-project-template.md). Şablonları, desteklenmeyen derlemelerini ve özel türler için bu seçeneği öneririz.  
   
--   El ile bir VSIX paketi oluşturun. Yalnızca diğer iki seçenek kullanılabilir olmadığında bu seçeneği öneririz.  
+- El ile bir VSIX paketi oluşturun. Yalnızca diğer iki seçenek kullanılabilir olmadığında bu seçeneği öneririz.  
   
- Bu belgede, üçüncü bir seçenek açıklanmaktadır.  
+  Bu belgede, üçüncü bir seçenek açıklanmaktadır.  
   
 ## <a name="creating-a-vsix-package"></a>VSIX paketi oluşturma  
  El ile bir uzantı paketini için extension.manifest dosya ve uzantı projesini bir [Content_Types] .xml dosyasına koymak bunları derleme çıkışınızı birlikte sıkıştırılmış bir dosya ekleyin ve böylece bir .vsix dosya adı uzantısına sahip sıkıştırılmış dosyayı yeniden adlandırın. Paketlenmiş uzantı tarafından desteklenen bir türde olmalıdır [VSIX şema](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  

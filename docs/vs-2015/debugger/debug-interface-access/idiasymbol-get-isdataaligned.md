@@ -18,12 +18,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06016472ee627134fb5eb328cf82d0c3de1b5365
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4e01ab9de41bd8ead1348eb58308008e55e6323e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251127"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891980"
 ---
 # <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ HRESULT get_isDataAligned(
 >  Dönüş değeri `S_FALSE` özelliği simge için mevcut olmadığı anlamına gelir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu özellik, yürütülebilir dosya dışındaki veri hizalama ile derlendiğinde genellikle ayarlanır. Örneğin, Microsoft C++ derleyici komut satırı seçeneği ile veri hizalama değiştirebilirsiniz /Zp*#* burada *#* bayt değeridir.  
+ Bu özellik, yürütülebilir dosya dışındaki veri hizalama ile derlendiğinde genellikle ayarlanır. Örneğin, Microsoft C++ derleyici komut satırı seçeneği ile veri hizalama değiştirebilirsiniz /Zp<em>#</em>burada *#* bayt değeridir.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

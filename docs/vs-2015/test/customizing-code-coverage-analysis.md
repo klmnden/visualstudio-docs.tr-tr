@@ -13,12 +13,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9188cf2039249f5207685217719bc41d25abd0a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8a0b09bf2e67813548865b6ed56fee0b0170cc5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281755"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890172"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Kod Kapsamı Çözümlemeyi Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,40 +27,40 @@ Varsayılan olarak, Visual Studio kod kapsamı aracını birim testleri sırası
   
  Kod kapsamı davranışını özelleştirmeden önce bazı alternatifleri düşünün:  
   
--   *Kod kapsamı sonuçları test kodu hariç ve yalnızca uygulama kodu dahil etmesini istiyor.*  
+- *Kod kapsamı sonuçları test kodu hariç ve yalnızca uygulama kodu dahil etmesini istiyor.*  
   
-     Ekleme `ExcludeFromCodeCoverage Attribute` test sınıfınıza.  
+   Ekleme `ExcludeFromCodeCoverage Attribute` test sınıfınıza.  
   
--   *Çözümüm parçası olmayan derlemeler eklemek istiyorsunuz.*  
+- *Çözümüm parçası olmayan derlemeler eklemek istiyorsunuz.*  
   
-     Bu derlemeler için .pdb dosyalarını alın ve bunları derleme .dll dosyaları gibi aynı klasöre kopyalayın.  
+   Bu derlemeler için .pdb dosyalarını alın ve bunları derleme .dll dosyaları gibi aynı klasöre kopyalayın.  
   
- Kod kapsamı davranışını özelleştirmek için kopyalama [bu konunun sonundaki örnek](#sample) ve dosya uzantısı .runsettings kullanarak çözümünüze ekleyin. Kendi ihtiyaçlarınıza göre ve ardından Düzenle **Test** menüsünde seçin **Test ayarları**, **Test ayarlarını seçin** dosya. Bu konunun geri kalanını bu yordam daha ayrıntılı biçimde açıklar.  
+  Kod kapsamı davranışını özelleştirmek için kopyalama [bu konunun sonundaki örnek](#sample) ve dosya uzantısı .runsettings kullanarak çözümünüze ekleyin. Kendi ihtiyaçlarınıza göre ve ardından Düzenle **Test** menüsünde seçin **Test ayarları**, **Test ayarlarını seçin** dosya. Bu konunun geri kalanını bu yordam daha ayrıntılı biçimde açıklar.  
   
 ## <a name="the-runsettings-file"></a>.runsettings dosyası  
  Gelişmiş kod kapsamı ayarları .runsettings dosyasında belirtilir. Bu, birim test etme araçları tarafından kullanılan yapılandırma dosyasıdır. Kopyaladığınız öneririz [bu konunun sonundaki örnek](#sample) ve kendi gereksinimlerinize uyacak şekilde düzenleyin.  
   
--   *Visual Studio 2010'da kullandığım .testsettings dosyasına ne oldu?*  
+- *Visual Studio 2010'da kullandığım .testsettings dosyasına ne oldu?*  
   
-     Visual Studio 2010'da .testsettings dosyası MSTest çerçevesine dayalı birim testleri için geçerlidir. Visual Studio 2012'de test araçları yalnızca MSTest için değil aynı zamanda NUnit ve xUnit.net gibi diğer çerçeveler için de uygulanır. .testsettings dosyası bu işe yaramaz. .runsettings dosyası, tüm test çerçeveleri ile çalışacak şekilde test araçlarını özelleştirmek için tasarlanmıştır.  
+   Visual Studio 2010'da .testsettings dosyası MSTest çerçevesine dayalı birim testleri için geçerlidir. Visual Studio 2012'de test araçları yalnızca MSTest için değil aynı zamanda NUnit ve xUnit.net gibi diğer çerçeveler için de uygulanır. .testsettings dosyası bu işe yaramaz. .runsettings dosyası, tüm test çerçeveleri ile çalışacak şekilde test araçlarını özelleştirmek için tasarlanmıştır.  
   
- Kod kapsamını özelleştirmek için çözümünüze bir .runsettings dosyası eklemeniz gerekir:  
+  Kod kapsamını özelleştirmek için çözümünüze bir .runsettings dosyası eklemeniz gerekir:  
   
-1.  Bir .xml dosya uzantısı ile çözüm öğesi olarak ekleyin `.runsettings`:  
+1. Bir .xml dosya uzantısı ile çözüm öğesi olarak ekleyin `.runsettings`:  
   
-     Çözüm Gezgini'nde, çözümünüzün kısayol menüsünden seçin **Ekle**, **yeni öğe**seçip **XML dosyası**. Dosyayı gibi sonlanan bir adla kaydedin `CodeCoverage.runsettings`  
+    Çözüm Gezgini'nde, çözümünüzün kısayol menüsünden seçin **Ekle**, **yeni öğe**seçip **XML dosyası**. Dosyayı gibi sonlanan bir adla kaydedin `CodeCoverage.runsettings`  
   
-2.  Bu konunun sonundaki örnekte verilen içerik ekleyin ve sonra gereksinimleriniz için aşağıdaki bölümlerde açıklandığı şekilde özelleştirin.  
+2. Bu konunun sonundaki örnekte verilen içerik ekleyin ve sonra gereksinimleriniz için aşağıdaki bölümlerde açıklandığı şekilde özelleştirin.  
   
-3.  Üzerinde **Test** menüsünde seçin **Test ayarları**, **Test ayarları dosyasını Seç** ve dosyayı seçin.  
+3. Üzerinde **Test** menüsünde seçin **Test ayarları**, **Test ayarları dosyasını Seç** ve dosyayı seçin.  
   
-4.  Artık çalıştırdığınızda **kod kapsamı analizi**bu `.runsettings` dosyası davranışını denetler. Kod kapsamını yeniden çalıştırmanız gerektiğini unutmayın: testleri çalıştırdığınızda veya kodunuzu güncelleştirdiğinizde önceki kapsam sonuçları ve kod renklendirme otomatik olarak gizli değildir.  
+4. Artık çalıştırdığınızda **kod kapsamı analizi**bu `.runsettings` dosyası davranışını denetler. Kod kapsamını yeniden çalıştırmanız gerektiğini unutmayın: testleri çalıştırdığınızda veya kodunuzu güncelleştirdiğinizde önceki kapsam sonuçları ve kod renklendirme otomatik olarak gizli değildir.  
   
-5.  Özel ayarlar kapatın ve açın, seçimini kaldırın veya dosyayı seçin **Test**, **Test ayarları** menüsü.  
+5. Özel ayarlar kapatın ve açın, seçimini kaldırın veya dosyayı seçin **Test**, **Test ayarları** menüsü.  
   
- ![Özel ayarlar dosya ile test ayarları menüsünde](../test/media/codecoverage-settingsfile.png "CodeCoverage settingsFile")  
+   ![Özel ayarlar dosya ile test ayarları menüsünde](../test/media/codecoverage-settingsfile.png "CodeCoverage settingsFile")  
   
- Birim testlerinin diğer yönleri aynı .runsettings dosyasında yapılandırılabilir. Daha fazla bilgi için [Birim Test kodunuzu](../test/unit-test-your-code.md).  
+   Birim testlerinin diğer yönleri aynı .runsettings dosyasında yapılandırılabilir. Daha fazla bilgi için [Birim Test kodunuzu](../test/unit-test-your-code.md).  
   
 ### <a name="specifying-symbol-search-paths"></a>Simge arama yolu belirtme  
  Kod kapsamı bulunan derlemeler için simgeleri (.pdb dosyaları) gerektirir. Çözümünüz tarafından oluşturulmuş derlemeler için, simge dosyaları genellikle ikili dosyalarda bulunur ve kod kapsamı otomatik olarak çalışır. Ancak bazı durumlarda, kod kapsamı çözümlemenizde başvurulmuş derlemeleri eklemek isteyebilirsiniz. Bu gibi durumlarda .pdb dosyaları ikili bitişik olmayabilir, ancak .runsettings dosyasında simge arama yolu belirtebilirsiniz.  
@@ -106,21 +106,21 @@ Varsayılan olarak, Visual Studio kod kapsamı aracını birim testleri sırası
 ### <a name="regular-expressions"></a>Normal ifadeler  
  Dahil ve hariç düğümler normal ifadeler kullanır. Daha fazla bilgi için [Visual Studio'da normal ifadeler kullanarak](../ide/using-regular-expressions-in-visual-studio.md). Normal ifadeler joker karakterler ile aynı değildir. Özellikle:  
   
-1.  **\.\*** bir dizenin herhangi bir karakter ile eşleşir  
+1. **\.\\*** herhangi bir karakter dizesi ile eşleşir.  
   
-2.  **\\.** eşleşen bir nokta ".")  
+2. **\\.** eşleşen bir nokta ".")  
   
-3.  **\\( \\)** eşleşen parantez "(")  
+3. **\\( \\)** eşleşen parantez "(")  
   
-4.  **\\\\** eşleşen bir dosya yolu sınırlayıcı "\\"  
+4. **\\\\** eşleşen bir dosya yolu sınırlayıcı "\\"  
   
-5.  **^** dizenin başlangıcıyla eşleşir  
+5. **^** dizenin başlangıcıyla eşleşir  
   
-6.  **$** Dize sonu ile eşleşir  
+6. **$** Dize sonu ile eşleşir  
   
- Tüm eşlemeler büyük/küçük harf duyarsızdır.  
+   Tüm eşlemeler büyük/küçük harf duyarsızdır.  
   
- Örneğin:  
+   Örneğin:  
   
 ```xml  
 <ModulePaths>  
@@ -144,25 +144,25 @@ Varsayılan olarak, Visual Studio kod kapsamı aracını birim testleri sırası
 ### <a name="other-ways-to-include-or-exclude-elements"></a>Öğeleri içerecek veya dışlayacak diğer yollar  
  Bkz: [bu konunun sonundaki örnek](#sample) örnekler.  
   
--   `ModulePath` – Derleme dosyası yolu tarafından belirtilen derleme.  
+- `ModulePath` – Derleme dosyası yolu tarafından belirtilen derleme.  
   
--   `CompanyName` – Şirket özniteliği tarafından derlemeler eşleşir.  
+- `CompanyName` – Şirket özniteliği tarafından derlemeler eşleşir.  
   
--   `PublicKeyToken` – İmzalı derlemeler ortak anahtar belirteci tarafından eşleşir. Örneğin, tüm Visual Studio bileşenleri ve uzantıları uyan `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>`.  
+- `PublicKeyToken` – İmzalı derlemeler ortak anahtar belirteci tarafından eşleşir. Örneğin, tüm Visual Studio bileşenleri ve uzantıları uyan `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>`.  
   
--   `Source` – Bunlar tanımlandığı kaynak dosyasının yolu adıyla eşleşen öğeler.  
+- `Source` – Bunlar tanımlandığı kaynak dosyasının yolu adıyla eşleşen öğeler.  
   
--   `Attribute` – belirli bir özniteliği bağlı öğeleri ile eşleşir. Adın sonunda "Öznitelik" dahil özniteliğin tam adını belirtin.  
+- `Attribute` – belirli bir özniteliği bağlı öğeleri ile eşleşir. Adın sonunda "Öznitelik" dahil özniteliğin tam adını belirtin.  
   
--   `Function` – yordamları, işlevleri veya yöntemleri tam adıyla eşleştirir.  
+- `Function` – yordamları, işlevleri veya yöntemleri tam adıyla eşleştirir.  
   
- **Bir işlev adı eşleştirme**  
+  **Bir işlev adı eşleştirme**  
   
- Normal ifadenizin tam ad alanı, sınıf adı, yöntemin adı ve parametre listesi de dahil olmak üzere, işlev adıyla eşleşmesi gerekir. Örneğin,  
+  Normal ifadenizin tam ad alanı, sınıf adı, yöntemin adı ve parametre listesi de dahil olmak üzere, işlev adıyla eşleşmesi gerekir. Örneğin,  
   
--   C# veya Visual Basic: `Fabrikam.Math.LocalMath.SquareRoot(double)`  
+- C# veya Visual Basic: `Fabrikam.Math.LocalMath.SquareRoot(double)`  
   
--   C++:  `Fabrikam::Math::LocalMath::SquareRoot(double)`  
+- C++:  `Fabrikam::Math::LocalMath::SquareRoot(double)`  
   
 ```xml  
 <Functions>  
@@ -201,17 +201,17 @@ Varsayılan olarak, Visual Studio kod kapsamı aracını birim testleri sırası
   
  ![Bir derleme tanımında runsettings belirtme](../test/media/codecoverage-buildrunsettings.png "CodeCoverage buildRunsettings")  
   
-1.  .runsettings dosyanızın işaretli olduğundan emin olun.  
+1. .runsettings dosyanızın işaretli olduğundan emin olun.  
   
-2.  Takım Gezgini'nde açın **yapılar**ve ardından eklemek veya bir yapı tanımını düzenleyin.  
+2. Takım Gezgini'nde açın **yapılar**ve ardından eklemek veya bir yapı tanımını düzenleyin.  
   
-3.  Üzerinde **işlem** sayfasında **otomatik testler**, **Test kaynağı**, **çalıştırma ayarları**. Seçin, **.runsettings** dosya.  
+3. Üzerinde **işlem** sayfasında **otomatik testler**, **Test kaynağı**, **çalıştırma ayarları**. Seçin, **.runsettings** dosya.  
   
-    -   *Ancak **Test derlemesi** yerine görünür **Test kaynağı**. Ayarlamaya çalıştığımda **çalıştırma ayarları** alan yalnızca seçtiğim .testsettings dosyaları.*  
+   - <em>Ancak **Test derlemesi</em>* yerine görünür **Test kaynağı**. Ayarlamaya çalıştığımda **çalıştırma ayarları** alan yalnızca seçtiğim .testsettings dosyaları.*  
   
-         Altında **otomatik testler**seçin **Test derlemesi**ve **[...]**  satırın sonunda. İçinde **Test çalışmasını Ekle/Düzenle** iletişim kutusu, kümesi **Test Çalıştırıcısı** için **Visual Studio Test Çalıştırıcısı**.  
+      Altında **otomatik testler**seçin **Test derlemesi**ve **[...]**  satırın sonunda. İçinde **Test çalışmasını Ekle/Düzenle** iletişim kutusu, kümesi **Test Çalıştırıcısı** için **Visual Studio Test Çalıştırıcısı**.  
   
- Sonuçlar yapı raporunun özet bölümünde görünürdür.  
+   Sonuçlar yapı raporunun özet bölümünde görünürdür.  
   
 ##  <a name="sample"></a> Örnek .runsettings dosyası  
  Bu kodu kopyalayın ve kendi gereksinimlerinize göre düzenleyin. Bu varsayılan .runsettings dosyasıdır.  

@@ -19,12 +19,12 @@ caps.latest.revision: 58
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be81688429d6a7d9d8d2cc5fa3e1e1a5662d1263
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 33450d7f904cebd79259c30245cf07e23ca1aba1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274488"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896152"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>İzlenecek yol: Performans sorunlarını tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Bu izlenecek yol, performans sorunlarını belirlemek için bir uygulamanın pro
   
 ## <a name="prerequisites"></a>Önkoşullar  
   
--   C# Ara anlama.  
+- C# Ara anlama.  
   
--   Bir kopyasını [PeopleTrax örneği](../profiling/peopletrax-sample-profiling-tools.md).  
+- Bir kopyasını [PeopleTrax örneği](../profiling/peopletrax-sample-profiling-tools.md).  
   
- Profil oluşturma tarafından sağlanan bilgiler ile çalışmak için hata ayıklama sembol bilgisi kullanılabilir olması en iyisidir.  
+  Profil oluşturma tarafından sağlanan bilgiler ile çalışmak için hata ayıklama sembol bilgisi kullanılabilir olması en iyisidir.  
   
 ## <a name="profiling-by-using-the-sampling-method"></a>Örnekleme yöntemiyle profili oluşturma  
  Örnekleme tarafından söz konusu işlemi düzenli aralıklarla etkin işlev belirlemek için yoklanabileceği bir profil oluşturma yöntemidir. Sonuçta elde edilen veriler işlem örneklendiğinde ne sıklıkta söz konusu işlev çağrı yığının en üstünde olan sayısına sağlar.  
@@ -139,29 +139,29 @@ Bu izlenecek yol, performans sorunlarını belirlemek için bir uygulamanın pro
   
 #### <a name="to-analyze-instrumented-profiling-results"></a>İzleme eklenmiş profil oluşturma sonuçları analiz etmek için  
   
-1.  Zaman Çizelgesi grafiği **özeti** rapor görünümünü programının CPU kullanımı, profil oluşturma süresi boyunca çalışma gösterir. Verileri dışarı aktarma işlemi, büyük yoğun veya grafiğin sağ tarafında bir platoya olması gerekir. Biz görüntülemek ve dışarı aktarma işleminde toplanan verileri çözümlemek için performans oturumu filtreleyebilirsiniz. Noktası solundaki veri dışarı aktarma işleminin başladığı grafiğe tıklayın. İşlemi sağ tarafına tekrar tıklayın. Ardından **seçime göre filtre** zaman çizelgesinin sağdaki bağlantılar listesinde.  
+1. Zaman Çizelgesi grafiği **özeti** rapor görünümünü programının CPU kullanımı, profil oluşturma süresi boyunca çalışma gösterir. Verileri dışarı aktarma işlemi, büyük yoğun veya grafiğin sağ tarafında bir platoya olması gerekir. Biz görüntülemek ve dışarı aktarma işleminde toplanan verileri çözümlemek için performans oturumu filtreleyebilirsiniz. Noktası solundaki veri dışarı aktarma işleminin başladığı grafiğe tıklayın. İşlemi sağ tarafına tekrar tıklayın. Ardından **seçime göre filtre** zaman çizelgesinin sağdaki bağlantılar listesinde.  
   
-     **Etkin yolu** ağacını Göster <xref:System.String.Concat%2A> PeopleTrax.Form1.ExportData yöntemi tarafından çağrılan yöntem zaman büyük bir yüzdesini kullanıyor. Çünkü **System.String.Concat** ayrıca üst kısmında, **işlevleri ile en bireysel işleri** işlevde harcanan zamanı azaltmak listesinde olan büyük olasılıkla bir nokta iyileştirme.  
+    **Etkin yolu** ağacını Göster <xref:System.String.Concat%2A> PeopleTrax.Form1.ExportData yöntemi tarafından çağrılan yöntem zaman büyük bir yüzdesini kullanıyor. Çünkü **System.String.Concat** ayrıca üst kısmında, **işlevleri ile en bireysel işleri** işlevde harcanan zamanı azaltmak listesinde olan büyük olasılıkla bir nokta iyileştirme.  
   
-2.  Çift **System.String.Concat** işlev Ayrıntıları görünümünde daha fazla bilgi için Özet tabloların her ikisinde.  
+2. Çift **System.String.Concat** işlev Ayrıntıları görünümünde daha fazla bilgi için Özet tabloların her ikisinde.  
   
-3.  PeopleTrax.Form1.ExportData Concat çağıran tek bir yöntem olduğunu görebilirsiniz. Tıklayın **PeopleTrax.Form1.ExportData** içinde **çağıran fonksiyonları** olan işlev Ayrıntıları görünümünde hedefi olarak yöntemi seçin.  
+3. PeopleTrax.Form1.ExportData Concat çağıran tek bir yöntem olduğunu görebilirsiniz. Tıklayın **PeopleTrax.Form1.ExportData** içinde **çağıran fonksiyonları** olan işlev Ayrıntıları görünümünde hedefi olarak yöntemi seçin.  
   
-4.  İşlev kod Görünümü penceresi yönteminde inceleyin. Değişmez değer çağrı olduğunu fark **System.String.Concat**. Bunun yerine, derleyici çağrıları değiştirir işlenenin += çeşitli kullanımları vardır **System.String.Concat**. .NET Framework içindeki dize herhangi bir değişiklik, ayrılması yeni bir dize neden. .NET Framework'ü içeren bir <xref:System.Text.StringBuilder> dize birleştirme için en iyi duruma getirilmiş sınıfı  
+4. İşlev kod Görünümü penceresi yönteminde inceleyin. Değişmez değer çağrı olduğunu fark **System.String.Concat**. Bunun yerine, derleyici çağrıları değiştirir işlenenin += çeşitli kullanımları vardır **System.String.Concat**. .NET Framework içindeki dize herhangi bir değişiklik, ayrılması yeni bir dize neden. .NET Framework'ü içeren bir <xref:System.Text.StringBuilder> dize birleştirme için en iyi duruma getirilmiş sınıfı  
   
-5.  Bu sorunun görüldüğü alan ile en iyi duruma getirilmiş kodu değiştirmek için bir koşullu derleme simgesi olarak OPTIMIZED_EXPORTDATA PeopleTrax projeye ekleyin.  
+5. Bu sorunun görüldüğü alan ile en iyi duruma getirilmiş kodu değiştirmek için bir koşullu derleme simgesi olarak OPTIMIZED_EXPORTDATA PeopleTrax projeye ekleyin.  
   
-6.  Çözüm Gezgini'nde PeopleTrax projeye sağ tıklayın ve ardından **özellikleri**.  
+6. Çözüm Gezgini'nde PeopleTrax projeye sağ tıklayın ve ardından **özellikleri**.  
   
-     PeopleTrax proje özellikleri formu görüntülenir.  
+    PeopleTrax proje özellikleri formu görüntülenir.  
   
-7.  Tıklayın **derleme** sekmesi.  
+7. Tıklayın **derleme** sekmesi.  
   
-8.  İçinde **koşullu derleme simgeleri** metin kutusunda, **OPTIMIZED_EXPORTDATA**.  
+8. İçinde **koşullu derleme simgeleri** metin kutusunda, **OPTIMIZED_EXPORTDATA**.  
   
 9. Proje özelliği formu kapatmak ve seçin **Tümünü Kaydet** sorulduğunda.  
   
- Uygulamayı yeniden çalıştırdığınızda, işaretli performans geliştirmeleri göreceksiniz. Görünür kullanıcı performans iyileştirmeleri olsa bile, profil oluşturma oturumunu yeniden çalıştırmanız önerilir. Bir sorunu düzelttikten sonra verileri gözden geçirmek, ilk sorun başka bir sorun gizlememeniz çünkü önemlidir.  
+   Uygulamayı yeniden çalıştırdığınızda, işaretli performans geliştirmeleri göreceksiniz. Görünür kullanıcı performans iyileştirmeleri olsa bile, profil oluşturma oturumunu yeniden çalıştırmanız önerilir. Bir sorunu düzelttikten sonra verileri gözden geçirmek, ilk sorun başka bir sorun gizlememeniz çünkü önemlidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Genel bakış](../profiling/overviews-performance-tools.md)   

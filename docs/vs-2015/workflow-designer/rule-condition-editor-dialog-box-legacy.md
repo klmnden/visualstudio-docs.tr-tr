@@ -16,33 +16,33 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: a604ce47b6a96182d7e362d5d1dbcb00f052cf85
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0503f6ca9a209c62f842c9428cf1af9fe2a07ccc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231100"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838549"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Kural Koşulu Düzenleyicisi İletişim Kutusu (Eski)
 Bu konu açıklar nasıl **Kural Koşulu Düzenleyicisi** eski iletişim kutusunda [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Kullanarak bildirim temelli bir kural koşulları oluşturup **Kural Koşulu Düzenleyicisi** iletişim kutusu. Bu kural koşulları, aşağıdaki Windows Workflow Foundation out-of-box etkinlikleri özellikleri olarak sunulur:  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
--   [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
+- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
   
--   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
+- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
   
- Size erişim **Kural Koşulu Düzenleyicisi** iletişim kutusunu kullanarak [seçin koşul iletişim kutusu (eski)](../workflow-designer/select-condition-dialog-box-legacy.md).  
+  Size erişim **Kural Koşulu Düzenleyicisi** iletişim kutusunu kullanarak [seçin koşul iletişim kutusu (eski)](../workflow-designer/select-condition-dialog-box-legacy.md).  
   
- Aşağıdaki tabloda kullanıcı arabirimi (UI) öğelerini açıklar **Kural Koşulu Düzenleyicisi** iletişim kutusu.  
+  Aşağıdaki tabloda kullanıcı arabirimi (UI) öğelerini açıklar **Kural Koşulu Düzenleyicisi** iletişim kutusu.  
   
 |Arabirim Öğesi|Açıklama|  
 |----------------|-----------------|  
@@ -56,33 +56,33 @@ Bu konu açıklar nasıl **Kural Koşulu Düzenleyicisi** eski iletişim kutusun
   
  Kural Koşulu Düzenleyicisi aşağıdaki işleçleri destekler:  
   
--   İlişkisel işleçleri: ==, =,! =  
+- İlişkisel işleçleri: ==, =,! =  
   
--   Karşılaştırma işleçleri: <, \<=, >, > =  
+- Karşılaştırma işleçleri: <, \<=, >, > =  
   
--   Aritmetik işleçler: +, -, *, /, MOD  
+- Aritmetik işleçler: +, -, *, /, MOD  
   
--   Mantıksal işleçler: ve, & &, OR &#124; &#124;değil,!  
+- Mantıksal işleçler: ve, & &, OR &#124; &#124;değil,!  
   
--   Bit düzeyinde işleçler: &,&#124;  
+- Bit düzeyinde işleçler: &,&#124;  
   
- İfadenin İşleç önceliği, C# İşleç önceliği kurallarını izler.  
+  İfadenin İşleç önceliği, C# İşleç önceliği kurallarını izler.  
   
- Kural Koşulu Düzenleyicisi aşağıdaki sayısal ifadeler destekler:  
+  Kural Koşulu Düzenleyicisi aşağıdaki sayısal ifadeler destekler:  
   
- this.i == 1 D (1.0 çözümler)  
+  this.i == 1 D (1.0 çözümler)  
   
- this.i 1E1 == (10.0 için çözümler)  
+  this.i 1E1 == (10.0 için çözümler)  
   
- this.i == 1 L (çözümler uzun olarak)  
+  this.i == 1 L (çözümler uzun olarak)  
   
- this.i == 1 M (ondalık olarak çözümler)  
+  this.i == 1 M (ondalık olarak çözümler)  
   
- this.i 1F == (tek bir çözümler)  
+  this.i 1F == (tek bir çözümler)  
   
- this.i 1U == (bir'unsigned int çözümler)  
+  this.i 1U == (bir'unsigned int çözümler)  
   
- Koşullar hakkında daha fazla bilgi için bkz. [iş akışlarını kullanarak koşullarında](http://go.microsoft.com/fwlink?LinkID=65009).  
+  Koşullar hakkında daha fazla bilgi için bkz. [iş akışlarını kullanarak koşullarında](http://go.microsoft.com/fwlink?LinkID=65009).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65033)   

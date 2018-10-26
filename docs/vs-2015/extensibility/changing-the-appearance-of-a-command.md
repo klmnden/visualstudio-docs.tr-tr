@@ -17,12 +17,12 @@ ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 832a6732789d8e218a739b03fb5aa6541ec8276f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 53b4470a3df4a1501145b476991a475bddae6813
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294729"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834259"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Bir Komutun Görünümünü Değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ Bir komutun görünümünü değiştirmek için kullanıcı geri bildirim sağla
   
  Bir komutun görünümünü değiştirmek için aşağıdaki eylemlerden birini gerçekleştirin:  
   
--   Uygun bayrakları komut tablosu dosyasındaki komut tanımı belirtin.  
+- Uygun bayrakları komut tablosu dosyasındaki komut tanımı belirtin.  
   
--   Kullanım <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> hizmeti.  
+- Kullanım <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> hizmeti.  
   
--   Uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirim ve ham komut nesneleri değiştirebilirsiniz.  
+- Uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirim ve ham komut nesneleri değiştirebilirsiniz.  
   
- Aşağıdaki adımlarda, bulmak ve yönetilen paket Framework (MPF) kullanarak bir komutun görünümünü güncelleştirmek gösterilmektedir.  
+  Aşağıdaki adımlarda, bulmak ve yönetilen paket Framework (MPF) kullanarak bir komutun görünümünü güncelleştirmek gösterilmektedir.  
   
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>Bir menü komutu görünümünü değiştirmek için  
   

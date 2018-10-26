@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b11757990a17a867776376454142e5b84ee82510
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: b6885968385725f4aa7d991309902ca712849c8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008274"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941197"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook nesne modeline genel bakış
   Microsoft Office Outlook için VSTO eklentileri geliştirmek için Outlook nesne modeli tarafından sağlanan nesneler ile etkileşim kurabilir. Outlook nesne modeline sınıflar ve kullanıcı arabirimi öğelerini temsil eden arabirim sağlar. Örneğin, <xref:Microsoft.Office.Interop.Outlook.Application> nesnesini temsil eder tüm uygulama <xref:Microsoft.Office.Interop.Outlook.Folder> nesne e-posta veya diğer öğeleri içeren bir klasörü temsil eder ve <xref:Microsoft.Office.Interop.Outlook.MailItem> nesnesi, bir e-posta iletisini temsil eder.  
@@ -59,13 +59,13 @@ ms.locfileid: "40008274"
 ### <a name="application-object"></a>Uygulama nesnesi  
  <xref:Microsoft.Office.Interop.Outlook.Application> Nesnesini temsil eden Outlook uygulaması ve Outlook nesne modelinde en üst düzey nesnedir. Bu nesnenin en önemli üyeleri bazıları şunlardır:  
   
--   [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) bir e-posta iletisi, görev veya randevu gibi yeni bir öğe oluşturmak için kullanabileceğiniz yöntemi.  
+- [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) bir e-posta iletisi, görev veya randevu gibi yeni bir öğe oluşturmak için kullanabileceğiniz yöntemi.  
   
--   <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> Özelliği Outlook kullanıcı arabiriminde (UI) görüntüleyen bir klasörün içeriğini windows erişmek için kullanabilirsiniz.  
+- <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> Özelliği Outlook kullanıcı arabiriminde (UI) görüntüleyen bir klasörün içeriğini windows erişmek için kullanabilirsiniz.  
   
--   <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> Özelliği gibi bir e-posta iletisi veya toplantı isteği tek bir öğenin içeriğini görüntüleyen pencerelerin erişmek için kullanabilirsiniz.  
+- <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> Özelliği gibi bir e-posta iletisi veya toplantı isteği tek bir öğenin içeriğini görüntüleyen pencerelerin erişmek için kullanabilirsiniz.  
   
- Bir kopyasını almak için <xref:Microsoft.Office.Interop.Outlook.Application> nesne, uygulama alanın kullanın `ThisAddIn` projenizdeki sınıfı. Daha fazla bilgi için [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md).  
+  Bir kopyasını almak için <xref:Microsoft.Office.Interop.Outlook.Application> nesne, uygulama alanın kullanın `ThisAddIn` projenizdeki sınıfı. Daha fazla bilgi için [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md).  
   
 > [!NOTE]  
 >  Outlook nesne özelliklerini ve Outlook nesne modeli Koruması tarafından engellenen yöntemlerini kullandığınızda güvenlik uyarılarını önlemek için uygulama alanından Al `ThisAddIn` sınıfı. Daha fazla bilgi için [Office çözümleriyle ilgili belirli güvenlik konuları](../vsto/specific-security-considerations-for-office-solutions.md).  

@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a84c87ecc3c5ca0ab1d2fe52e1ff56265c9365d
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 37e34d01d2488ad5345ff65237cd708c06764661
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816691"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcıda kesme noktaları kullanma
 Kesme noktaları, geliştirici araç kutusundaki en önemli hata ayıklama tekniklerinden biridir. Hata ayıklayıcı yürütme duraklatmak istediğiniz yere kesme noktalarını ayarlayın. Örneğin, belirli bir kesme noktası çağrı yığınına bakın veya kod değişkenleri durumunu görmek isteyebilirsiniz.  
@@ -203,15 +203,15 @@ Etiketleri kesme noktaları listesini filtrelemek ve sıralamak için kullanabil
 
 **Bir kesme noktası koşulu ayarlamak için:**
 
-1.  Kesme noktası sembolü sağ tıklayıp **koşullar**. Veya select kesme noktası simgenin üzerine geldiğinizde **ayarları** simgesine tıklayın ve ardından **koşullar** içinde **kesme noktası ayarları** penceresi.  
+1. Kesme noktası sembolü sağ tıklayıp **koşullar**. Veya select kesme noktası simgenin üzerine geldiğinizde **ayarları** simgesine tıklayın ve ardından **koşullar** içinde **kesme noktası ayarları** penceresi.  
 
-    De koşulları ayarlayabilirsiniz **kesme noktaları** penceresinde bir kesme noktasına sağ tıklayıp seçerek **ayarları**seçip **koşullar**. 
+   De koşulları ayarlayabilirsiniz **kesme noktaları** penceresinde bir kesme noktasına sağ tıklayıp seçerek **ayarları**seçip **koşullar**. 
   
-  ![Kesme noktası ayarları](../debugger/media/breakpointsettings.png "BreakpointSettings")  
+   ![Kesme noktası ayarları](../debugger/media/breakpointsettings.png "BreakpointSettings")  
   
-1. Açılır menüden seçin **koşullu ifade**, **Hit Count**, veya **filtre**ve buna göre ayarlayın. 
+2. Açılır menüden seçin **koşullu ifade**, **Hit Count**, veya **filtre**ve buna göre ayarlayın. 
   
-1. Seçin **kapatmak** veya basın **Ctrl**+**Enter** kapatmak için **kesme noktası ayarları** penceresi. Veya **kesme noktaları** penceresinde **Tamam** iletişim kutusunu kapatmak için. 
+3. Seçin **kapatmak** veya basın **Ctrl**+**Enter** kapatmak için **kesme noktası ayarları** penceresi. Veya **kesme noktaları** penceresinde **Tamam** iletişim kutusunu kapatmak için. 
 
 Koşullar kümesiyle kesme noktaları ile görünür bir **+** sembol kaynak kodunda ve **kesme noktaları** windows. 
 

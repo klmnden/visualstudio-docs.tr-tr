@@ -14,12 +14,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fa5e2f46f3fa5cce9a795c2353148d2bd3f47351
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 977594493279d52154de3cb5ef7bce56d4d8f985
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293117"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836846"
 ---
 # <a name="properties-of-domain-properties"></a>Etki Alanı Özelliklerinin Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ A *domain özelliği* değer tutan bir model öğesi olan bir özelliktir. Örne
   
  Çoğu etki alanı özellikleri sıradan CLR özellikleri olarak uygulanır. Ancak, bir programlama açısından bakıldığında, etki alanı özellikleri daha zengin işlevsellik sıradan program özellikleri vardır:  
   
--   Kurallar ve bir özelliğinin durumu izleme olayları tanımlayabilirsiniz. Daha fazla bilgi için [yanıt verme ve değişiklikleri yayma](../modeling/responding-to-and-propagating-changes.md).  
+- Kurallar ve bir özelliğinin durumu izleme olayları tanımlayabilirsiniz. Daha fazla bilgi için [yanıt verme ve değişiklikleri yayma](../modeling/responding-to-and-propagating-changes.md).  
   
--   İşlem, özel olarak tutarsız durumları önlemeye yardımcı olur. Daha fazla bilgi için [gezinme ve güncelleştirme Program kodundaki modeli](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+- İşlem, özel olarak tutarsız durumları önlemeye yardımcı olur. Daha fazla bilgi için [gezinme ve güncelleştirme Program kodundaki modeli](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
- Bir diyagram veya DSL Gezgini'nde bir etki alanı özelliğini seçtiğinizde, aşağıdaki öğeleri Özellikler penceresinde görebilirsiniz. Bu öğelerin nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).  
+  Bir diyagram veya DSL Gezgini'nde bir etki alanı özelliğini seçtiğinizde, aşağıdaki öğeleri Özellikler penceresinde görebilirsiniz. Bu öğelerin nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
 |Özellik|Açıklama|Varsayılan Değer|  
 |--------------|-----------------|-------------------|  

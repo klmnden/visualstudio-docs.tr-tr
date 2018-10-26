@@ -12,26 +12,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8850671c3c6e7fa93d4734c47c8052451ad74b4f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 32a2923342fd62428095babdaecc5bd9c5cac06e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154456"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850067"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>IDE içinden derleme Başlat
 Özel proje sistemleri kullanmalıdır <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> yapıları başlatmak için. Bu makalede, bu gereksinim nedenlerini açıklar ve yordamı açıklar.  
-  
+
 ## <a name="parallel-builds-and-threads"></a>Paralel yapılar ve iş parçacıkları  
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Ortak kaynaklara erişim için dolayımlama gerektiren paralel yapılar sağlar. Proje sistemleri çalıştırabilirsiniz yapıları zaman uyumsuz olarak, ancak bu tür sistemleri çağrı içinden yapı işlevlerini çağırmamalıdır telefonla geri yapı yöneticisine sağlanan.  
-  
+
  Proje sistemi ortam değişkenlerini değiştiriyorsa, yapı Outofproc olarak ayarlaması gerekir. Bu gereksinim, bunlar işlemde düğüm gerektirdiklerinden, ana bilgisayar nesnelerini kullanamayacağınız anlamına gelir.  
-  
+
 ## <a name="use-ivsbuildmanageraccessor"></a>Ivsbuildmanageraccessor kullanma  
  Aşağıdaki kod, proje sistemi bir derlemeyi başlatmak için kullanabileceğiniz bir yöntemin anahatlarını vermektedir:  
-  
+
 ```csharp
-  
+
 public bool Build(Project project, bool isDesignTimeBuild)  
 {  
     // Get the accessor from the IServiceProvider interface for the   
@@ -118,5 +118,4 @@ public bool Build(Project project, bool isDesignTimeBuild)
          }  
      }  
 }  
-  
 ```

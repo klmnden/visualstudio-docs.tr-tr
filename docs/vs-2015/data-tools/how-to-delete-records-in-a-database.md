@@ -26,12 +26,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: aff5a67d54376488ccce2bca5dd67b84d6c73949
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 87ab5ccde2c1100fbd0efc5f4272efe27803b717
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210190"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938623"
 ---
 # <a name="how-to-delete-records-in-a-database"></a>Nasıl yapılır: Veritabanındaki Kayıtları Silme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,12 +49,12 @@ Kayıtlarını veritabanından silmek için kullanın `TableAdapter.Update` yön
   
 #### <a name="to-delete-records-from-a-database-using-the-tableadapterupdate-method"></a>TableAdapter.Update yöntemi kullanarak bir veritabanındaki kayıtları silme  
   
--   İstenen kayıtları silme <xref:System.Data.DataTable> silerek <xref:System.Data.DataRow> tablosundan nesneleri. Daha fazla bilgi için [nasıl yapılır: bir DataTable tablosundaki satırları silme](http://msdn.microsoft.com/library/add481e5-08c7-4923-9276-f036ae29d31e). Satırları gelen silindikten sonra <xref:System.Data.DataTable>, çağrı `TableAdapter.Update` yöntemi. Tüm geçirerek güncelleştirmek için veri miktarını denetleyebilirsiniz <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, bir dizi <xref:System.Data.DataRow>s ya da tek bir <xref:System.Data.DataRow>. Aşağıdaki kod, bir kaydı silmek gösterilmiştir bir <xref:System.Data.DataTable> ve sonra çağrı `TableAdapter.Update` Değiştir iletişim kurmak ve satır veritabanından silmek için yöntemi. (Bu örnekte Northwind veritabanının `Region` tablo.)  
+- İstenen kayıtları silme <xref:System.Data.DataTable> silerek <xref:System.Data.DataRow> tablosundan nesneleri. Daha fazla bilgi için [nasıl yapılır: bir DataTable tablosundaki satırları silme](http://msdn.microsoft.com/library/add481e5-08c7-4923-9276-f036ae29d31e). Satırları gelen silindikten sonra <xref:System.Data.DataTable>, çağrı `TableAdapter.Update` yöntemi. Tüm geçirerek güncelleştirmek için veri miktarını denetleyebilirsiniz <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, bir dizi <xref:System.Data.DataRow>s ya da tek bir <xref:System.Data.DataRow>. Aşağıdaki kod, bir kaydı silmek gösterilmiştir bir <xref:System.Data.DataTable> ve sonra çağrı `TableAdapter.Update` Değiştir iletişim kurmak ve satır veritabanından silmek için yöntemi. (Bu örnekte Northwind veritabanının `Region` tablo.)  
   
-     [!code-csharp[VbRaddataSaving#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#20)]
-     [!code-vb[VbRaddataSaving#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#20)]  
+   [!code-csharp[VbRaddataSaving#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#20)]
+   [!code-vb[VbRaddataSaving#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#20)]  
   
- Uygulamanız, uygulamanızda verileri depolamak için nesneleri kullanıyorsa, verileri doğrudan veritabanından silmek için TableAdapter bağdaştırıcısının DBDirect yöntemleri kullanabilirsiniz. Çağırma `Delete` yöntemi veritabanından geçirilen parametre değerlerini temel alarak kayıtları kaldırır.  
+  Uygulamanız, uygulamanızda verileri depolamak için nesneleri kullanıyorsa, verileri doğrudan veritabanından silmek için TableAdapter bağdaştırıcısının DBDirect yöntemleri kullanabilirsiniz. Çağırma `Delete` yöntemi veritabanından geçirilen parametre değerlerini temel alarak kayıtları kaldırır.  
   
 #### <a name="to-delete-records-from-a-database-using-the-tableadapterdelete-method"></a>TableAdapter.Delete yöntemi kullanarak bir veritabanındaki kayıtları silme  
   

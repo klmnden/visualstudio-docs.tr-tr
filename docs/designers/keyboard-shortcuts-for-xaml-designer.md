@@ -10,21 +10,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6eda8e27f5fbb6132027eeca87a0e6872be2415f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 86c7eea623401edbce5638c9385dc3a5d082548f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978169"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855449"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>XAML Tasarımcısı için klavye kısayolları
+
 Klavye kısayolları XAML Tasarımcısı'nda, bir tek klavye kısayolu birden çok fare düğmesi tıklama gerektiren bir eylem azaltarak çalışmanızı hızlandırabilirsiniz.
 
 ## <a name="element-shortcuts"></a>Öğesi kısayolları
- Bu tabloda öğelerle çalışma yüzeyi üzerinde çalışmak için kullanılabilen kısayollar listelenmektedir.
+
+Bu tabloda öğelerle çalışma yüzeyi üzerinde çalışmak için kullanılabilen kısayollar listelenmektedir.
 
 |**Bu eylemi gerçekleştirmek için**|**Bunu yapmak**|
-|--------------------------------|-----------------|
+| - |-----------------|
 |Bir öğe oluşturun|Tuşuna **Ctrl**+**N**|
 |Yinelenen bir öğe|Basılı **Alt** ve OK tuşuna basın.|
 |Denetimdeki metin Düzenle|Basın **F2** (basın **Esc** çıkmak için)|
@@ -39,10 +41,11 @@ Klavye kısayolları XAML Tasarımcısı'nda, bir tek klavye kısayolu birden ç
 |Bir öğe için bir özellik seçin|Seçili bir öğe ve Özellikler penceresinde odağı ile basın **sekmesini**. (Kullanım **Ctrl**+**sekmesini** ve Özellikler penceresinde odağı değiştirilecek.) Aşağı açılan listelerden özellik değerlerini seçmek için ok tuşlarını kullanabilirsiniz.|
 
 ## <a name="document-outline-window-shortcuts"></a>Belge Anahattı penceresi kısayolları
- Belge Anahattı penceresi öğeleri ile çalışırken, aşağıdaki tabloda kullanılabilir kısayolları listeler.
+
+Belge Anahattı penceresi öğeleri ile çalışırken, aşağıdaki tabloda kullanılabilir kısayolları listeler.
 
 |**Bu eylemi gerçekleştirmek için**|**Bunu yapmak**|
-|--------------------------------|-----------------|
+| - |-----------------|
 |Belge Anahattı penceresi üzerinde odak modundayken, çalışma yüzeyinde nesneleri Gizle|**CTRL**+**H**|
 |Belge Anahattı penceresi üzerinde odak modundayken, çalışma yüzeyinde nesneleri göster|**Shift**+**Ctrl**+**H**|
 |Belge Anahattı penceresi üzerinde odak modundayken çalışma yüzeyinde nesneleri Kilitle|**CTRL**+**m**|
@@ -50,4 +53,4 @@ Klavye kısayolları XAML Tasarımcısı'nda, bir tek klavye kısayolu birden ç
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [XAML Tasarımcısı'nı kullanarak kullanıcı Arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+- [XAML Tasarımcısı’nı kullanarak bir kullanıcı arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

@@ -18,12 +18,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b77bf4e0892b81d276836f7bad45272adf338b48
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c9ee879bec628628a19914a6fbc6236cad3fb5c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306156"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879122"
 ---
 # <a name="performance-session-properties"></a>Performans Oturum Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ A **performans oturumu** nasıl uygulama profili oluşturulmuş belirleyen ayarl
   
  **Gereksinimler**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Oluşturduğunuz bir **performans oturumu** çalıştırarak **performans Sihirbazı** veya el ile bir oturumu oluşturma. **Performans oturumu** görüntülenen **performans Gezgini** sonra **performans oturumu** oluşturuldu.  
+  Oluşturduğunuz bir **performans oturumu** çalıştırarak **performans Sihirbazı** veya el ile bir oturumu oluşturma. **Performans oturumu** görüntülenen **performans Gezgini** sonra **performans oturumu** oluşturuldu.  
   
- Görüntülemek için **performans oturumu** özellikler, oturumun adı **performans Gezgini**, sağ tıklayın ve ardından **özellikleri**.  
+  Görüntülemek için **performans oturumu** özellikler, oturumun adı **performans Gezgini**, sağ tıklayın ve ardından **özellikleri**.  
   
- Performans oturumu aşağıdaki özellik sayfaları sahiptir:  
+  Performans oturumu aşağıdaki özellik sayfaları sahiptir:  
   
 ## <a name="general"></a>Genel  
  Yöntemi, .NET nesne koleksiyonu ve yaşam süresi verisi eklemek ve varsayılan rapor konumu belirtmek için profil oluşturma ve adlandırma seçmek bu ayarları etkinleştirmeniz kuralları.  
@@ -59,17 +59,17 @@ A **performans oturumu** nasıl uygulama profili oluşturulmuş belirleyen ayarl
 ## <a name="sampling"></a>Örnekleme  
  Bu ayarlar, örnekleme profil oluşturma yöntemi olarak kullanıldığında, örnek olay ve örnekleme aralığı seçmenize olanak sağlar. Örnek olay, belirtilen zaman aralığı profil oluşturma verilerini toplamak için kullanılır. Örneğin, saat döngüleri örnek olayı olduğu ve örnekleme aralığı için profil oluşturma verilerini 10,000,000 ayarlanırsa sonra her 10 milyon toplanır saat döngüleri. Örnek olay aşağıdaki dört türleri kullanılabilir:  
   
--   Saat döngüsü - CPU sorunlarını bağlı.  
+- Saat döngüsü - CPU sorunlarını bağlı.  
   
--   Sayfa hataları - bellek ile ilgili sorunlar  
+- Sayfa hataları - bellek ile ilgili sorunlar  
   
--   Sistem çağrıları - g/ç için ilgili sorunlar  
+- Sistem çağrıları - g/ç için ilgili sorunlar  
   
--   -Alt düzey performans sorunları, performans sayaçları  
+- -Alt düzey performans sorunları, performans sayaçları  
   
--   Ek örnek olaylar ulaşılabilir performans sayaçları tabanlı belirtilebilir.  
+- Ek örnek olaylar ulaşılabilir performans sayaçları tabanlı belirtilebilir.  
   
- Daha fazla bilgi için [nasıl yapılır: örnekleme olayları seçin](../profiling/how-to-choose-sampling-events.md)  
+  Daha fazla bilgi için [nasıl yapılır: örnekleme olayları seçin](../profiling/how-to-choose-sampling-events.md)  
   
 ## <a name="binary"></a>İkili  
  Bu ayarlar, başka bir konuma işaretlenmiş ikilileri yeniden Yerleştir isteyip istemediğinizi belirtmek etkinleştirin. Örneğin, My.DLL profil ve işaretlenmiş ikilileri yeniden Yerleştir değil tercih My.Orig.DLL adlı My.DLL yedek bir kopyası oluşturulur. My.DLL verileri toplamak için araştırmalar ekleyerek daha sonra değiştirildi. İşaretlenmiş ikilileri yeniden Yerleştir karar verirseniz, özgün ikiliyi yeniden adlandırılmaz ve izleme eklenmiş ikili izleme sırasında kullanım için belirtilen konuma kopyalanır.  

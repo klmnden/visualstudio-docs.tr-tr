@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22ba120513d188f0a945ff18331b37062c08018f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 602525666e62a5eaa6e8db13c6e7029d8773bc8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677158"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917188"
 ---
 # <a name="design-and-create-office-solutions"></a>Office çözümleri oluşturma ve tasarlama
   Visual Studio, birkaç farklı türde Office çözümleri oluşturmak için kullanabileceğiniz proje şablonları sağlar. Belgelerinin bu bölümü, proje şablonlarını açıklar ve Office projeleri oluşturma hakkında yönergeler sağlar. Projenizi oluşturduktan sonra kodun ve kullanıcı arabirimi özelleştirmelerinin gerçekleştirme hakkında daha fazla bilgi için bkz. [geliştirme Office çözümleri](../vsto/developing-office-solutions.md).  
@@ -41,19 +41,19 @@ ms.locfileid: "35677158"
 ## <a name="choose-a-net-framework-version"></a>Bir .NET Framework sürümünü seçin  
  Gereksinimlerinize en uygun proje türü seçtikten sonra hangi geliştirme sürecinizde kullanmak için .NET Framework sürümünü seçebilirsiniz. Office projelerinde aşağıdaki .NET Framework sürümlerini hedef:  
   
--   [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]  
+- [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]  
   
--   [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
+- [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
   
--   [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
+- [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
   
- Projeniz için seçtiğiniz .NET Framework sürümü, çözümünüzün çalışması için son kullanıcı bilgisayarlarında gereklidir. Örneğin, projenizin hedeflediği [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] son kullanıcı bilgisayarlarında gereklidir. Son kullanıcı bilgisayarlarında yüklü .NET Framework 3.5, yalnızca bu örnekte, çözümünüzü çalışmaz.  
+  Projeniz için seçtiğiniz .NET Framework sürümü, çözümünüzün çalışması için son kullanıcı bilgisayarlarında gereklidir. Örneğin, projenizin hedeflediği [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] son kullanıcı bilgisayarlarında gereklidir. Son kullanıcı bilgisayarlarında yüklü .NET Framework 3.5, yalnızca bu örnekte, çözümünüzü çalışmaz.  
   
- .NET Framework 3.5 hedefleyen bir VSTO eklenti projesinde geçirirseniz, Visual Studio projeniz için hedef Framework'ü değişiklikleri [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri yüklü olan Office sürümüne bağlı olarak.  
+  .NET Framework 3.5 hedefleyen bir VSTO eklenti projesinde geçirirseniz, Visual Studio projeniz için hedef Framework'ü değişiklikleri [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri yüklü olan Office sürümüne bağlı olarak.  
   
- Ancak, hedef Framework'ü Visual Studio değiştirdikten sonra belirli özellikleri kullanıyorsa, kodu projenizdeki bazı değiştirmeniz gerekebilir. Hedef Framework'ü değiştirme hakkında daha fazla bilgi için bkz. [nasıl yapılır: .NET Framework sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Projenizde yapmak ihtiyaç duyabilirsiniz değişiklikler hakkında daha fazla bilgi için bkz. [geçirme Office çözümlerini .NET Framework 4 veya sonraki bir sürüme](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
+  Ancak, hedef Framework'ü Visual Studio değiştirdikten sonra belirli özellikleri kullanıyorsa, kodu projenizdeki bazı değiştirmeniz gerekebilir. Hedef Framework'ü değiştirme hakkında daha fazla bilgi için bkz. [nasıl yapılır: .NET Framework sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Projenizde yapmak ihtiyaç duyabilirsiniz değişiklikler hakkında daha fazla bilgi için bkz. [geçirme Office çözümlerini .NET Framework 4 veya sonraki bir sürüme](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
   
- Visual Studio projeniz için hedef .NET Framework değiştirir ve çözümünüzü dağıtmak için ClickOnce'ı kullanıyorsanız, aynı zamanda ilgili .NET Framework sürümünü seçtiğinizden emin **önkoşulları** iletişim kutusu. Projeniz için hedef Framework'ü değiştirdiğinizde, bu seçenek otomatik olarak değiştirmez. Daha fazla bilgi için [nasıl yapılır: son kullanıcı bilgisayarlarında Office çözümlerinin çalışması için Önkoşulları Yükleme](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+  Visual Studio projeniz için hedef .NET Framework değiştirir ve çözümünüzü dağıtmak için ClickOnce'ı kullanıyorsanız, aynı zamanda ilgili .NET Framework sürümünü seçtiğinizden emin **önkoşulları** iletişim kutusu. Projeniz için hedef Framework'ü değiştirdiğinizde, bu seçenek otomatik olarak değiştirmez. Daha fazla bilgi için [nasıl yapılır: son kullanıcı bilgisayarlarında Office çözümlerinin çalışması için Önkoşulları Yükleme](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 > [!NOTE]  
 >  .NET Framework 3.5 veya Office projelerinde kullanarak oluşturduğunuz önceki hedefleyemez [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Kullanarak oluşturduğunuz office projeleri [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] sürümünde ilk yapılan özellikleri gerektirir [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  

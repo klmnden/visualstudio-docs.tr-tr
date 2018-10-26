@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 68e6fa138d2b6026a8831362d41cc7e8b407c471
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: d0a3311c90638b3fd34b9d651b89af2bed07f421
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382558"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817406"
 ---
 # <a name="load-test-run-settings-properties"></a>Yük testi çalıştırma ayarları özellikleri
 
@@ -28,7 +28,7 @@ ms.locfileid: "39382558"
 ## <a name="general-properties"></a>Genel Özellikler
 
 |Özellik|Tanım|
-|--------------|----------------|
+|-|----------------|
 |**Açıklama**|Çalıştırma ayarları açıklaması.|
 |**Tür başına en fazla hata**|Yük testi için kaydedilecek türü başına hatalarının sayısı.<br /><br /> Sahip olduğunuz, ancak bunun yapılması ayrıca boyutu ve yük testi sonucu işlem süresi artar, bu sayıyı artırabilirsiniz.|
 |**Raporlanan en yüksek istek URL'si**|Benzersiz web performans testi sayısı, bu yük testi sonuçlarında bildirmek URL'leri isteyin.<br /><br /> Sahip olduğunuz, ancak bunun yapılması ayrıca boyutu ve yük testi sonucu işlem süresi artar, bu sayıyı artırabilirsiniz.|
@@ -40,7 +40,7 @@ ms.locfileid: "39382558"
 ## <a name="logging-properties"></a>Günlüğe kaydetme özellikleri
 
 |Özellik|Tanım|
-|--------------|----------------|
+|-|----------------|
 |**En yüksek Test günlüğü**|Yük testi için kaydedilecek test günlüklerinin sayısını belirtir. Maksimum sayısı için girilen değer test günlüklerinin ulaşıldığında, yük testi günlükleri toplamayı durdurur. Bu nedenle, günlükleri, test, son başında toplanacak. Yük testi tamamlanana kadar çalışmaya devam eder.|
 |**Tamamlanmış Testler'in günlükleme sıklığı Kaydet**|Test günlüğü yazılacak sıklığını belirtir. Girilen her test sayısı yetersiz bir test günlüğüne kaydedilecek sayıyı belirtir. Örneğin, on değerinin girilmesi onda, 20, otuzuncu ve benzeri test günlüğüne yazılacağını belirtir. Değer 0 olarak ayarlandığında, hiçbir test günlüğü kaydedilecek belirtir.<br /><br /> Daha fazla bilgi için [nasıl yapılır: test günlüklerinin hangi sıklıkla kaydedileceğini belirtme](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
 |**Test başarısızlıkları Günlüğü Kaydet**|Belirleyen bir Boole değeri olup olmadığını test günlüklerinin bir yük testi içinde bir test başarısız olursa kaydettiyseniz. Varsayılan, `True` değeridir.<br /><br /> Daha fazla bilgi için [nasıl yapılır: test başarısızlıklarının test günlüklerini kaydedilip kaydedilmediği belirleme](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
@@ -50,14 +50,14 @@ ms.locfileid: "39382558"
 ## <a name="results-properties"></a>Sonuçları Özellikleri
 
 |Özellik|Tanım|
-|--------------|----------------|
+|-|----------------|
 |**Depolama türü**|Bir yük testinde elde edilen performans sayaçları saklanacağı yol. Seçenekleri aşağıdaki gibidir:<br /><br /> -   **Veritabanı** -içeren bir SQL veritabanını gerektiren bir **yük testi sonuçları Store**.<br />-   **Hiçbiri**.|
 |**Zamanlama Ayrıntıları Deposu**|Bu ayrıntılar barındırılacaktır belirlemek için kullanılan **yük testi sonuçları Store**. Üç değerler kullanılabilir:<br /><br /> -   **AllIndividualDetails** - toplamak ve her test, hareket ve sayfa çalıştırılmış veya yük testi sırasında verilen kişisel zamanlama değerlerini depolamak **yük testi sonuçları Store**. Kullanmayı planlıyorsanız gereklidir **sanal kullanıcı aktivite grafiği** içinde **Yük Testi Çözümleyicisi**.<br />     Daha fazla bilgi için [Ayrıntılar görünümünde sanal kullanıcı etkinliğini çözümleme](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **Hiçbiri** -herhangi bir kişisel zamanlama değerlerini toplamaz. Visual Studio 2013 Update 4 ve sonraki sürümleri için varsayılan değer budur.<br />-   **StatisticsOnly** - toplamak ve her test, hareket ve yürütülen veya yük testi sırasında verilen sayfa için kişisel zamanlama değerlerini depolamak yerine yalnızca istatistiklerini depolamak **yük testi sonuçları Store**.<br /><br /> Daha fazla bilgi için [nasıl yapılır: zamanlama ayrıntıları depolama özelliğini belirtme](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).|
 
 ## <a name="sql-tracing-properties"></a>SQL izleme özellikleri
 
 |Özellik|Tanım|
-|--------------|----------------|
+|-|----------------|
 |**İzlenen SQL işlemleri'nin en düşük süresi**|Milisaniye cinsinden SQL izleme tarafından yakalanması için bir SQL işleminin en düşük süre. Örneğin, bu, yük altındayken yavaş SQL işlemleri bulmak çalışıyorsanız, hızlı bir şekilde tamamlamak işlemleri yoksay olanak sağlar.|
 |**SQL izleme bağlantı dizesi**|İzlenecek veritabanına erişmek için kullanılan bağlantı dizesi.|
 |**SQL izleme dizini**|Konum izleme sona erdikten sonra SQL izleme dosyasının nereye yerleştirilir. Bu dizin, SQL Server için yazma izinlerine sahip ve denetleyici için okuma izni gerekir.|
@@ -66,7 +66,7 @@ ms.locfileid: "39382558"
 ## <a name="test-iterations-properties"></a>Test Yinelemeleri özellikleri
 
 |Özellik|Tanım|
-|--------------|----------------|
+|-|----------------|
 |**Test yinelemeleri**|Yük testi tamamlanmadan önce çalıştırılacak testlerin toplam sayısını belirtir. Bu özellik yalnızca özelliği "Test Yinelemeleri Kullan" olduğunda geçerlidir `True`.|
 |**Test Yinelemeleri Kullan**|Test Yinelemeleri Kullan ise `True`, yükleme testi yük testi içinde tamamlanmış tek tek testlerin sayısı "Test Yinelemeleri" özelliği tarafından belirtilen sayı ulaşıncaya kadar çalışır. Bu durumda, süre, çalışma süresi ve soğuma süresi olan zamana bağlı ayarları sıcak göz ardı edilir. "Test Yinelemeleri Kullan" ise `False`, tüm zamanlama ayarları uygulamak ve "Test Yinelemeleri" göz ardı edilir.|
 
@@ -75,7 +75,7 @@ ms.locfileid: "39382558"
 ## <a name="timing-properties"></a>Zamanlama özellikleri
 
 |Özellik|Tanım|
-|--------------|----------------|
+|-|----------------|
 |**Soğuma süresi**|Test soğuma döneminin süresi ss biçiminde ifade edilir. Yük testi çalışmayı tamamladıktan sonra Yük testi içinde tek tek testlerin hala çalışıyor olabilir. Bekleme dönemi boyunca, bu testler tamamlandıktan veya soğuma döneminin sonuna ulaşılana kadar devam edebilirsiniz. Varsayılan olarak, hiçbir bekleme süresi yoktur ve bireysel testler yük testi çalıştırma süresi ayarına göre tamamlandığında sonlandırılır.|
 |**Çalıştırma süresi**|Ss biçimindeki test uzunluğu.|
 |**Örnek hızı**|Aralığı ss biçimindeki performans sayacı değerlerini yakalamak.<br /><br /> Daha fazla bilgi için [nasıl yapılır: örnek hızı belirtme](../test/how-to-specify-the-sample-rate-for-a-load-test.md).|
@@ -84,7 +84,7 @@ ms.locfileid: "39382558"
 ## <a name="webtest-connections-properties"></a>WebTest bağlantıları özellikleri
 
 |Özellik|Tanım|
-|--------------|----------------|
+|-|----------------|
 |**WebTest Bağlantı modeli**|Bu, web sunucusu çalıştıran bir yük testi içinde web performans testleri için yük test aracısından bağlantı kullanımını denetler. Üç web performans testi bağlantı modeli seçenekleri kullanılabilir:<br /><br /> - **Kullanıcı başına bağlantı** model gerçek bir tarayıcı kullanarak bir kullanıcının davranışını taklit eder. Internet Explorer 6 ya da Internet Explorer 7 simülasyonu yapıldığında, bir web performans testi çalıştıran her bir sanal kullanıcı web sunucusuna bir veya iki adanmış bağlantıları kullanır. İlk istek web performans testinde verildiğinde, ilk bağlantı kurulur. İkinci bir bağlantı içeren bir sayfada birden fazla bağımlı istek olduğunda kullanılabilir. Bu istekler, iki bağlantı kullanarak paralel olarak verilir. Bu bağlantılar, web performans testinde istekler için yeniden kullanılır. Web performans testi tamamlandığında bağlantıları kapatılır. Bu model bir dezavantajı, aracı bilgisayarında açık tutulması bağlantı sayısı (iki kez kullanıcı yükü en fazla) yüksek olabilir ' dir. Sonuç olarak, bu yüksek bağlantı sayısını desteklemek için gerekli kaynakları tek yük test aracısından kullanıcı yükü sınırlayabilir. Internet Explorer 8 simülasyonu yapıldığında, altı adet eş zamanlı bağlantı desteklenir.<br />- **Bağlantı havuzu** modeli, web sunucusunun birden çok sanal web performans testi kullanıcıları arasında bağlantı paylaşarak kaynaklar üzerinde yük testi aracısı korur. Kullanıcı yükü bağlantı havuzu boyutundan daha büyükse, farklı sanal kullanıcılar tarafından çalıştırılan web performans testleri bir bağlantıyı paylaşır. Bu, bir web performans testini başka bir web performans testi bağlantısı kullanılırken bir isteği bildirmeden önce beklemeniz gerekebilir gelebilir. Yük testi başarım sayacı Ortalama bağlantı bekleme süresi tarafından izlenen bir istek gönderdiğinde, web performans testi ortalama süreyi bekler. Bu sayı, bir sayfa için ortalama yanıt süresi değerinden küçük olmalıdır. Yüklü değilse, bağlantı havuzu boyutu büyük olasılıkla çok küçük.<br />- **Test Yinelemesi başına bağlantı** modeli, her test yinelemesine için adanmış bağlantıları kullanımını belirtir.|
 |**WebTest Bağlantı havuzu boyutu**|Bu, yük testi aracısı ve Web sunucusu arasında bağlantı maksimum sayısını belirtir. Bu yalnızca geçerlidir **bağlantı havuzu** modeli.|
 

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7901c0acaf9500673b9b6cfc551ed3151e1b3c5b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1a37dcac9d75cbd773894b3d708dd4931f77b4ce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637769"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888417"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>Özellikler ve özellik penceresini kullanıma sunma
 Bu izlenecek yol için bir nesnenin genel özellikleri gösterir **özellikleri** penceresi. Bu özellikler, yaptığınız değişiklikler yansıtılır **özellikleri** penceresi.  
@@ -33,72 +33,72 @@ Bu izlenecek yol için bir nesnenin genel özellikleri gösterir **özellikleri*
   
 ### <a name="to-expose-properties-to-the-properties-window"></a>Özellikler ve özellik penceresini kullanıma sunmak için  
   
-1.  Her Visual Studio uzantısı, uzantı varlıkları içeren bir VSIX dağıtım projesi ile başlar. Oluşturma bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] adlı VSIX projesi `MyObjectPropertiesExtension`. VSIX proje şablonunda bulabilirsiniz **yeni proje** iletişim altında **Visual C#** > **genişletilebilirlik**.  
+1. Her Visual Studio uzantısı, uzantı varlıkları içeren bir VSIX dağıtım projesi ile başlar. Oluşturma bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] adlı VSIX projesi `MyObjectPropertiesExtension`. VSIX proje şablonunda bulabilirsiniz **yeni proje** iletişim altında **Visual C#** > **genişletilebilirlik**.  
   
-2.  Adlı bir özel araç penceresi öğe şablonu ekleyerek bir araç penceresi `MyToolWindow`. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle** > **yeni öğe**. İçinde **Yeni Öğe Ekle iletişim**Git **Visual C# öğeleri** > **genişletilebilirlik** seçip **özel araç penceresi**. İçinde **adı** iletişim kutusunun altındaki alan, için dosya adını değiştirerek *MyToolWindow.cs*. Özel araç penceresi oluşturma hakkında daha fazla bilgi için bkz. [araç penceresi içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md).  
+2. Adlı bir özel araç penceresi öğe şablonu ekleyerek bir araç penceresi `MyToolWindow`. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle** > **yeni öğe**. İçinde **Yeni Öğe Ekle iletişim**Git **Visual C# öğeleri** > **genişletilebilirlik** seçip **özel araç penceresi**. İçinde **adı** iletişim kutusunun altındaki alan, için dosya adını değiştirerek *MyToolWindow.cs*. Özel araç penceresi oluşturma hakkında daha fazla bilgi için bkz. [araç penceresi içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-3.  Açık *MyToolWindow.cs* ve aşağıdaki deyimi kullanarak:  
+3. Açık *MyToolWindow.cs* ve aşağıdaki deyimi kullanarak:  
   
-    ```csharp  
-    using System.Collections;  
-    using System.ComponentModel;  
-    using Microsoft.VisualStudio.Shell.Interop;  
-    ```  
+   ```csharp  
+   using System.Collections;  
+   using System.ComponentModel;  
+   using Microsoft.VisualStudio.Shell.Interop;  
+   ```  
   
-4.  Şimdi aşağıdaki alanları ekleyin `MyToolWindow` sınıfı.  
+4. Şimdi aşağıdaki alanları ekleyin `MyToolWindow` sınıfı.  
   
-    ```csharp  
-    private ITrackSelection trackSel;  
-    private SelectionContainer selContainer;  
+   ```csharp  
+   private ITrackSelection trackSel;  
+   private SelectionContainer selContainer;  
   
-    ```  
+   ```  
   
-5.  Aşağıdaki kodu ekleyin `MyToolWindow` sınıfı.  
+5. Aşağıdaki kodu ekleyin `MyToolWindow` sınıfı.  
   
-    ```csharp  
-    private ITrackSelection TrackSelection  
-    {  
-        get  
-        {  
-            if (trackSel == null)  
-                trackSel =  
-                   GetService(typeof(STrackSelection)) as ITrackSelection;  
-            return trackSel;  
-        }  
-    }  
+   ```csharp  
+   private ITrackSelection TrackSelection  
+   {  
+       get  
+       {  
+           if (trackSel == null)  
+               trackSel =  
+                  GetService(typeof(STrackSelection)) as ITrackSelection;  
+           return trackSel;  
+       }  
+   }  
   
-    public void UpdateSelection()  
-    {  
-        ITrackSelection track = TrackSelection;  
-        if (track != null)  
-            track.OnSelectChange((ISelectionContainer)selContainer);  
-    }  
+   public void UpdateSelection()  
+   {  
+       ITrackSelection track = TrackSelection;  
+       if (track != null)  
+           track.OnSelectChange((ISelectionContainer)selContainer);  
+   }  
   
-    public void SelectList(ArrayList list)  
-    {  
-        selContainer = new SelectionContainer(true, false);  
-        selContainer.SelectableObjects = list;  
-        selContainer.SelectedObjects = list;  
-        UpdateSelection();  
-    }  
+   public void SelectList(ArrayList list)  
+   {  
+       selContainer = new SelectionContainer(true, false);  
+       selContainer.SelectableObjects = list;  
+       selContainer.SelectedObjects = list;  
+       UpdateSelection();  
+   }  
   
-    public override void OnToolWindowCreated()  
-    {  
-        ArrayList listObjects = new ArrayList();  
-        listObjects.Add(this);  
-        SelectList(listObjects);  
-    }  
-    ```  
+   public override void OnToolWindowCreated()  
+   {  
+       ArrayList listObjects = new ArrayList();  
+       listObjects.Add(this);  
+       SelectList(listObjects);  
+   }  
+   ```  
   
-     `TrackSelection` Özelliği kullanan `GetService` almak için bir `STrackSelection` sağlayan hizmetini bir <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> arabirimi. `OnToolWindowCreated` Olay işleyicisi ve `SelectList` yöntem birlikte yalnızca aracı penceresi bölmesi nesnenin kendisini içeren bir seçili nesnelerin listesi oluşturun. `UpdateSelection` Yöntemi söyler **özellikleri** penceresi araç penceresi bölmesi genel özelliklerini görüntülemek için.  
+    `TrackSelection` Özelliği kullanan `GetService` almak için bir `STrackSelection` sağlayan hizmetini bir <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> arabirimi. `OnToolWindowCreated` Olay işleyicisi ve `SelectList` yöntem birlikte yalnızca aracı penceresi bölmesi nesnenin kendisini içeren bir seçili nesnelerin listesi oluşturun. `UpdateSelection` Yöntemi söyler **özellikleri** penceresi araç penceresi bölmesi genel özelliklerini görüntülemek için.  
   
-6.  Projeyi oluşturmak ve hata ayıklamaya başlayın. Visual Studio'nun deneysel örneğinde görüntülenmesi gerekir.  
+6. Projeyi oluşturmak ve hata ayıklamaya başlayın. Visual Studio'nun deneysel örneğinde görüntülenmesi gerekir.  
   
-7.  Varsa **özellikleri** penceresi görünür değilse, tuşlarına basarak açın **F4**.  
+7. Varsa **özellikleri** penceresi görünür değilse, tuşlarına basarak açın **F4**.  
   
-8.  Açık **MyToolWindow** penceresi. İçinde bulabilirsiniz **görünümü** > **diğer Windows**.  
+8. Açık **MyToolWindow** penceresi. İçinde bulabilirsiniz **görünümü** > **diğer Windows**.  
   
-     Penceresi açar ve genel özelliklerini pencere bölmesi görünür **özellikleri** penceresi.  
+    Penceresi açar ve genel özelliklerini pencere bölmesi görünür **özellikleri** penceresi.  
   
 9. Değişiklik **açıklamalı alt yazı** özelliğinde **özellikleri** penceresine **My nesne özellikleri**.  
   

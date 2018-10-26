@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fdc37c35d2563780804c38fb6a74e1574cfaa6ad
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 02fdc0d7cd8a16ec7a00191a364def22ad2d8192
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546686"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939403"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>5. adım: Python ortamınızda paketleri yükleme
 
@@ -26,29 +26,29 @@ Python Geliştirici topluluğu kendi projelerine birleştirebilirsiniz yararlı 
 
 1. Seçin **görünümü** > **diğer Windows** > **Python ortamları** menü komutu. **Python ortamları** penceresi açılır bir eşler arası olarak **Çözüm Gezgini** ve farklı ortamlar için gösterilir. Bu liste, yüklediğiniz Visual Studio Yükleyicisi ve ayrı olarak yüklenenler kullanarak her iki ortama içerir. Yeni projeler için kullanılan varsayılan ortam kalın ortamıdır.
 
-  ![Python ortamları penceresi](media/environments-default-view-blue.png)
+   ![Python ortamları penceresi](media/environments-default-view-blue.png)
 
-1. Ortamın **genel bakış** sekmesi, hızlı erişim sağlar bir **etkileşimli** konusu ortamın ortam yükleme klasörü ve yorumlayıcılarını birlikte penceresi. Örneğin, **açık etkileşimli pencere** ve bir **etkileşimli** penceresi, belirli bir ortam için Visual Studio'da görünür.
+2. Ortamın **genel bakış** sekmesi, hızlı erişim sağlar bir **etkileşimli** konusu ortamın ortam yükleme klasörü ve yorumlayıcılarını birlikte penceresi. Örneğin, **açık etkileşimli pencere** ve bir **etkileşimli** penceresi, belirli bir ortam için Visual Studio'da görünür.
 
-1. Seçin **paketleri** sekmesine tıkladığınızda ortamda şu anda yüklü olan paketleri listesini görürsünüz.
+3. Seçin **paketleri** sekmesine tıkladığınızda ortamda şu anda yüklü olan paketleri listesini görürsünüz.
 
-  ![Bir ortamda yüklü paketler](media/environments-installed-packages-blue.png)
+   ![Bir ortamda yüklü paketler](media/environments-installed-packages-blue.png)
 
-1. Yükleme `matplotlib` arama alanına adı girerek, ardından **pip yükleme**
+4. Yükleme `matplotlib` arama alanına adı girerek, ardından **pip yükleme**
 
-  ![Matplotlib ortama yükleme](media/environments-add-matplotlib1.png)
+   ![Matplotlib ortama yükleme](media/environments-add-matplotlib1.png)
 
-1. Bunu yapmak isteyip istemediğiniz sorulduğunda yükseltmesi için onay vermiş olursunuz.
+5. Bunu yapmak isteyip istemediğiniz sorulduğunda yükseltmesi için onay vermiş olursunuz.
 
-1. Paket yüklendikten sonra görünür **Python ortamları** penceresi. **X** paket sağında da kaldırır.
+6. Paket yüklendikten sonra görünür **Python ortamları** penceresi. **X** paket sağında da kaldırır.
 
-  ![Ortamda matplotlib yükleme tamamlama](media/environments-add-matplotlib2.png)
+   ![Ortamda matplotlib yükleme tamamlama](media/environments-add-matplotlib2.png)
 
-  Visual Studio yeni yüklenen paket için IntelliSense veritabanını oluşturuyor belirtmek için ortamı altındaki küçük ilerleme çubuğu görünür. **IntelliSense** sekme ayrıca gösterir daha ayrıntılı bilgiler. Veritabanı işlemi tamamlanana kadar IntelliSense özelliklerini otomatik tamamlama ve sözdizimi denetimi gibi Not Düzenleyici o paket için etkin olmayacaktır.
+   Visual Studio yeni yüklenen paket için IntelliSense veritabanını oluşturuyor belirtmek için ortamı altındaki küçük ilerleme çubuğu görünür. **IntelliSense** sekme ayrıca gösterir daha ayrıntılı bilgiler. Veritabanı işlemi tamamlanana kadar IntelliSense özelliklerini otomatik tamamlama ve sözdizimi denetimi gibi Not Düzenleyici o paket için etkin olmayacaktır.
 
-  Unutmayın **Visual Studio 2017 sürüm 15.6** daha sonra IntelliSense ile çalışmak için farklı ve daha hızlı bir yöntemi kullanır ve açık belirlememişse bu bağlamda bir ileti görüntüler **IntelliSense** sekmesi.
+   Unutmayın **Visual Studio 2017 sürüm 15.6** daha sonra IntelliSense ile çalışmak için farklı ve daha hızlı bir yöntemi kullanır ve açık belirlememişse bu bağlamda bir ileti görüntüler **IntelliSense** sekmesi.
 
-1. Kullanarak yeni bir proje oluşturun **dosya** > **yeni** > **proje**u seçerek **Python uygulaması** şablonu. Görünen kod dosyasında, yalnızca bu kez grafik olarak çizilen bir cosine wave gibi önceki öğretici adımlarını oluşturan aşağıdaki kodu yapıştırın:
+7. Kullanarak yeni bir proje oluşturun **dosya** > **yeni** > **proje**u seçerek **Python uygulaması** şablonu. Görünen kod dosyasında, yalnızca bu kez grafik olarak çizilen bir cosine wave gibi önceki öğretici adımlarını oluşturan aşağıdaki kodu yapıştırın:
 
     ```python
     from math import radians
@@ -63,9 +63,9 @@ Python Geliştirici topluluğu kendi projelerine birleştirebilirsiniz yararlı 
     main()
     ```
 
-1. Programı çalıştırın (**F5**) veya hata ayıklayıcı olmadan (**Ctrl**+**F5**) çıktıyı görmek için:
+8. Programı çalıştırın (**F5**) veya hata ayıklayıcı olmadan (**Ctrl**+**F5**) çıktıyı görmek için:
 
-  ![Matplotlib örnek çıktısı](media/environments-add-matplotlib3.png)
+   ![Matplotlib örnek çıktısı](media/environments-add-matplotlib3.png)
 
 ## <a name="next-step"></a>Sonraki adım
 

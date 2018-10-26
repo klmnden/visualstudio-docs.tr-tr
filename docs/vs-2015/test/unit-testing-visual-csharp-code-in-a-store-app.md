@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 593ef51a9c9462253c77a9ca91d3d5460cd65f5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae41a5a646860526cbc5b3f6e3c04bfbf7612e2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245446"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901560"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Visual C# kod bir Store uygulaması birim testi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,12 +32,12 @@ Bu konuda, Visual C# sınıfı için birim testleri bir Windows Store uygulamas�
   
 > [!NOTE]
 >  Visual Studio Community, Kurumsal. ve Professional birim testi için ek özellikler sağlar.  
->   
->  -   Bir eklenti bağdaştırıcısı Microsoft Test Gezgini için oluşturduğu tüm üçüncü taraf ve açık kaynak birim testi çerçevesini kullanın. Ayrıca, analiz ve testler için kod kapsamı bilgileri görüntüleyebilirsiniz.  
-> -   Her derlemeden sonra testlerinizi çalıştırın.  
-> -   VS Enterprise Microsoft Fakes, testlerinizi, sistem ve üçüncü taraf işlevselliği için test kodu değiştirerek kendi kodlarına odaklanmasını yardımcı olan yönetilen kod için bir yalıtım çerçevesi de içerir.  
->   
->  Daha fazla bilgi için [doğrulama kodunu kullanarak birim testleri tarafından](http://msdn.microsoft.com/library/dd264975.aspx) MSDN Kitaplığı'nda.  
+> 
+> - Bir eklenti bağdaştırıcısı Microsoft Test Gezgini için oluşturduğu tüm üçüncü taraf ve açık kaynak birim testi çerçevesini kullanın. Ayrıca, analiz ve testler için kod kapsamı bilgileri görüntüleyebilirsiniz.  
+>   -   Her derlemeden sonra testlerinizi çalıştırın.  
+>   -   VS Enterprise Microsoft Fakes, testlerinizi, sistem ve üçüncü taraf işlevselliği için test kodu değiştirerek kendi kodlarına odaklanmasını yardımcı olan yönetilen kod için bir yalıtım çerçevesi de içerir.  
+> 
+>   Daha fazla bilgi için [doğrulama kodunu kullanarak birim testleri tarafından](http://msdn.microsoft.com/library/dd264975.aspx) MSDN Kitaplığı'nda.  
   
 ##  <a name="BKMK_In_this_topic"></a> Bu konudaki  
  [Çözüm ve birim testi projesi oluşturma](#BKMK_Create_the_solution_and_the_unit_test_project)  
@@ -152,48 +152,48 @@ Bu konuda, Visual C# sınıfı için birim testleri bir Windows Store uygulamas�
   
 ##  <a name="BKMK_Couple_the_test_project_to_the_app_project"></a> Birkaç uygulama projesi için test projesi  
   
-1.  Matematik uygulama başvuru RooterTests projeye ekleyin.  
+1. Matematik uygulama başvuru RooterTests projeye ekleyin.  
   
-    1.  Çözüm Gezgini'nde **RooterTests** proje ve ardından **Başvuru Ekle...**  kısayol menüsünde.  
+   1.  Çözüm Gezgini'nde **RooterTests** proje ve ardından **Başvuru Ekle...**  kısayol menüsünde.  
   
-    2.  Üzerinde **Başvuru Ekle - RooterTests** iletişim kutusunda **çözüm** ve **projeleri**. Ardından **matematik** öğesi.  
+   2.  Üzerinde **Başvuru Ekle - RooterTests** iletişim kutusunda **çözüm** ve **projeleri**. Ardından **matematik** öğesi.  
   
-         ![Matematik projeye bir başvuru ekleyin](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")  
+        ![Matematik projeye bir başvuru ekleyin](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")  
   
-2.  Kullanarak bir ekleme UnitTest1.cs dosyasını deyimi:  
+2. Kullanarak bir ekleme UnitTest1.cs dosyasını deyimi:  
   
-    1.  Açık **UnitTest1.cs**.  
+   1.  Açık **UnitTest1.cs**.  
   
-    2.  Aşağıdaki bu kod ekleme `using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;` satırı:  
+   2.  Aşağıdaki bu kod ekleme `using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;` satırı:  
   
-        ```csharp  
-        using Maths;  
-        ```  
+       ```csharp  
+       using Maths;  
+       ```  
   
-3.  Rooter işlevini kullanan bir test ekleyin. Aşağıdaki kodu ekleyin **UnitTest1.cpp**:  
+3. Rooter işlevini kullanan bir test ekleyin. Aşağıdaki kodu ekleyin **UnitTest1.cpp**:  
   
-    ```csharp  
-    [TestMethod]  
-    public void BasicTest()  
-    {  
-        Maths.Rooter rooter = new Rooter();  
-        double expected = 0.0;  
-        double actual = rooter.SquareRoot(expected * expected);  
-        double tolerance = .001;  
-        Assert.AreEqual(expected, actual, tolerance);  
-    }  
+   ```csharp  
+   [TestMethod]  
+   public void BasicTest()  
+   {  
+       Maths.Rooter rooter = new Rooter();  
+       double expected = 0.0;  
+       double actual = rooter.SquareRoot(expected * expected);  
+       double tolerance = .001;  
+       Assert.AreEqual(expected, actual, tolerance);  
+   }  
   
-    ```  
+   ```  
   
-4.  Çözümü oluşturun.  
+4. Çözümü oluşturun.  
   
-     Yeni test Test Gezgini'nde görünür **çalıştırılmamış testler** düğümü.  
+    Yeni test Test Gezgini'nde görünür **çalıştırılmamış testler** düğümü.  
   
-5.  Test Gezgini'nde seçin **tümünü Çalıştır**.  
+5. Test Gezgini'nde seçin **tümünü Çalıştır**.  
   
-     ![Temel Test geçirilen](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
+    ![Temel Test geçirilen](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
   
- Test ve kod projelerini ayarlama sahiptir ve doğrulandı, kod projesinde işlevleri çalıştırmak testlerini çalıştırabilirsiniz. Şimdi gerçek test ve kod yazmaya başlayabilirsiniz.  
+   Test ve kod projelerini ayarlama sahiptir ve doğrulandı, kod projesinde işlevleri çalıştırmak testlerini çalıştırabilirsiniz. Şimdi gerçek test ve kod yazmaya başlayabilirsiniz.  
   
 ##  <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Yinelemeli olarak testleri genişletme ve onları geçirin  
   
@@ -256,70 +256,70 @@ Bu konuda, Visual C# sınıfı için birim testleri bir Windows Store uygulamas�
   
 ##  <a name="BKMK_Debug_a_failing_test"></a> Başarısız bir test hatalarını ayıklama  
   
-1.  Başka bir test eklemek **UnitTest1.cs**:  
+1. Başka bir test eklemek **UnitTest1.cs**:  
   
-    ```csharp  
-    // Verify that negative inputs throw an exception.  
-    [TestMethod]  
-    public void NegativeRangeTest()  
-    {  
-        string message;  
-        Rooter rooter = new Rooter();  
-        for (double v = -0.1; v > -3.0; v = v - 0.5)  
-        {  
-            try  
-            {  
-                // Should raise an exception:  
-                double actual = rooter.SquareRoot(v);  
+   ```csharp  
+   // Verify that negative inputs throw an exception.  
+   [TestMethod]  
+   public void NegativeRangeTest()  
+   {  
+       string message;  
+       Rooter rooter = new Rooter();  
+       for (double v = -0.1; v > -3.0; v = v - 0.5)  
+       {  
+           try  
+           {  
+               // Should raise an exception:  
+               double actual = rooter.SquareRoot(v);  
   
-                message = String.Format("No exception for input {0}", v);  
-                Assert.Fail(message);  
-            }  
-            catch (ArgumentOutOfRangeException ex)  
-            {  
-                continue; // Correct exception.  
-            }  
-            catch (Exception e)  
-            {  
-                message = String.Format("Incorrect exception for {0}", v);  
-                Assert.Fail(message);  
-            }  
-        }  
-    }  
+               message = String.Format("No exception for input {0}", v);  
+               Assert.Fail(message);  
+           }  
+           catch (ArgumentOutOfRangeException ex)  
+           {  
+               continue; // Correct exception.  
+           }  
+           catch (Exception e)  
+           {  
+               message = String.Format("Incorrect exception for {0}", v);  
+               Assert.Fail(message);  
+           }  
+       }  
+   }  
   
-    ```  
+   ```  
   
-2.  Test Gezgini'nde seçin **tümünü Çalıştır**.  
+2. Test Gezgini'nde seçin **tümünü Çalıştır**.  
   
-     Test başarısız olur. Test adı, Test Gezgini'nde seçin. Onaylama başarısız vurgulanır. Hata iletisi, Test Gezgini ayrıntı bölmesinde görünür.  
+    Test başarısız olur. Test adı, Test Gezgini'nde seçin. Onaylama başarısız vurgulanır. Hata iletisi, Test Gezgini ayrıntı bölmesinde görünür.  
   
-     ![Başarısız NegativeRangeTests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
+    ![Başarısız NegativeRangeTests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
   
-3.  Testin neden başarısız görmek için işlev adım:  
+3. Testin neden başarısız görmek için işlev adım:  
   
-    1.  Başında bir kesme noktası ayarlamak `SquareRoot` işlevi.  
+   1.  Başında bir kesme noktası ayarlamak `SquareRoot` işlevi.  
   
-    2.  Başarısız test kısayol menüsünde **seçilen Testlerde Hata Ayıkla**.  
+   2.  Başarısız test kısayol menüsünde **seçilen Testlerde Hata Ayıkla**.  
   
-         Kesme noktasında çalıştırma sona erdiğinde, kodda adım adım.  
+        Kesme noktasında çalıştırma sona erdiğinde, kodda adım adım.  
   
-    3.  Özel durumu yakalamak için Rooter yöntemine kod ekleyin:  
+   3.  Özel durumu yakalamak için Rooter yöntemine kod ekleyin:  
   
-        ```csharp  
-        public double SquareRoot(double x)  
-        {  
-            if (x < 0.0)  
-            {  
-                throw new ArgumentOutOfRangeException();  
-        }  
+       ```csharp  
+       public double SquareRoot(double x)  
+       {  
+           if (x < 0.0)  
+           {  
+               throw new ArgumentOutOfRangeException();  
+       }  
   
-        ```  
+       ```  
   
-    1.  Test Gezgini'nde seçin **tümünü Çalıştır** test düzeltilmiş yöntemi ve bir regresyon sunulan henüz emin olun.  
+   1.  Test Gezgini'nde seçin **tümünü Çalıştır** test düzeltilmiş yöntemi ve bir regresyon sunulan henüz emin olun.  
   
- Artık tüm sınamaları geçmesi.  
+   Artık tüm sınamaları geçmesi.  
   
- ![Tüm sınamaları geçmesi](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
+   ![Tüm sınamaları geçmesi](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
 ##  <a name="BKMK_Refactor_the_code_"></a> Kodu yeniden düzenleyin  
  **Merkezi hesaplamaya SquareRoot işlevi basitleştirin.**  

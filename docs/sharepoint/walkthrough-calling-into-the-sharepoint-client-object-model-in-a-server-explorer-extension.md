@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 966f9dd422137b2966deb23a7c29e328a21957a5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef2a2800ecb46f12f9dde4357bf54711a1df8797
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635274"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934684"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>İzlenecek yol: bir sunucu Gezgini uzantısında SharePoint istemcisi nesne modelini çağırma
   Bu izlenecek yol için bir uzantı SharePoint istemci nesne modelini nasıl çağırılacağını **SharePoint bağlantıları** düğümünde **Sunucu Gezgini**. SharePoint istemci nesne modelini kullanma hakkında daha fazla bilgi için bkz. [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -57,11 +57,11 @@ Aşağıdaki kavramları bilgisi yardımcı, ancak gerekli değildir, bu izlenec
 ## <a name="create-the-projects"></a>Projeleri oluşturma
  Bu izlenecek yolu tamamlamak için iki proje oluşturmanız gerekir:  
   
--   Dağıtmak için VSIX paketi oluşturmak üzere bir VSIX projesi **Sunucu Gezgini** uzantısı.  
+- Dağıtmak için VSIX paketi oluşturmak üzere bir VSIX projesi **Sunucu Gezgini** uzantısı.  
   
--   Uygulayan bir sınıf kitaplığı projesi **Sunucu Gezgini** uzantısı.  
+- Uygulayan bir sınıf kitaplığı projesi **Sunucu Gezgini** uzantısı.  
   
- İzlenecek yol, proje oluşturmaya başlayın.  
+  İzlenecek yol, proje oluşturmaya başlayın.  
   
 #### <a name="to-create-the-vsix-project"></a>VSIX projesi oluşturmak için  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f0ad5f409b6f7da852abbf2872bf01ef678b7a5d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8de721b7f26152cd4e7f5df1ee7eb4d04770511
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233993"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835949"
 ---
 # <a name="t4-include-directive"></a>T4 Include Yönergesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,31 +30,31 @@ Metin şablonunda, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], kullanarak baş
 <#@ include file="filePath" [once="true"] #>  
 ```  
   
--   `filePath` mutlak ya da geçerli şablon dosyasına bağıl olabilir.  
+- `filePath` mutlak ya da geçerli şablon dosyasına bağıl olabilir.  
   
-     Ayrıca belirli [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uzantıları, ekleme kodu dosyalarında aranacak kendi dizinlerini belirtebilir. Örneğin, Görselleştirme ve modelleme SDK'sını (DSL araçları) yüklediğinizde aşağıdaki klasör listeyi içermek için eklenir: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.  
+   Ayrıca belirli [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uzantıları, ekleme kodu dosyalarında aranacak kendi dizinlerini belirtebilir. Örneğin, Görselleştirme ve modelleme SDK'sını (DSL araçları) yüklediğinizde aşağıdaki klasör listeyi içermek için eklenir: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.  
   
-     Bu ek içerme klasörleri içeren dosyanın dosya uzantısına bağlı olabilir. Örneğin DSL araçları dahil etme klasörü, yalnızca dosya uzantısına sahip dosyalar dahil olmak üzere erişilebilir `.tt`  
+   Bu ek içerme klasörleri içeren dosyanın dosya uzantısına bağlı olabilir. Örneğin DSL araçları dahil etme klasörü, yalnızca dosya uzantısına sahip dosyalar dahil olmak üzere erişilebilir `.tt`  
   
--   `filePath` "%" ile sınırlandırılan ortam değişkenleri içerebilir. Örneğin:  
+- `filePath` "%" ile sınırlandırılan ortam değişkenleri içerebilir. Örneğin:  
   
-    ```  
-    <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  
-    ```  
+  ```  
+  <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  
+  ```  
   
--   Eklenen bir dosya adı uzantısının kullanılması gerekmez `".tt"`.  
+- Eklenen bir dosya adı uzantısının kullanılması gerekmez `".tt"`.  
   
-     Gibi başka bir uzantı kullanmak isteyebilirsiniz `".t4"` eklenen dosyalar için. Eklediğinizde, çünkü bir `.tt` bir projeye [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] otomatik olarak ayarlar, **özel araç** özelliğini `TextTemplatingFileGenerator`. Tek tek dönüştürülecek dosyaları genellikle eklemek istemezsiniz.  
+   Gibi başka bir uzantı kullanmak isteyebilirsiniz `".t4"` eklenen dosyalar için. Eklediğinizde, çünkü bir `.tt` bir projeye [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] otomatik olarak ayarlar, **özel araç** özelliğini `TextTemplatingFileGenerator`. Tek tek dönüştürülecek dosyaları genellikle eklemek istemezsiniz.  
   
-     Diğer taraftan, bazı durumlarda, dosya uzantısının ek klasörlerin hangi include dosyalarının aranacağını etkilediğinin farkında olmalısınız. Diğer dosyaları içeren eklediğiniz bir dosya varsa, bu önemli olabilir.  
+   Diğer taraftan, bazı durumlarda, dosya uzantısının ek klasörlerin hangi include dosyalarının aranacağını etkilediğinin farkında olmalısınız. Diğer dosyaları içeren eklediğiniz bir dosya varsa, bu önemli olabilir.  
   
--   Eklenen içerik ekleyen metin şablonunun hemen hemen parçasıymış gibi işlenir. Ancak, bir sınıf özelliği bloğu içeren bir dosya dahil edebilirsiniz `<#+...#>` bile `include` yönergesi ve standart denetim blokları ile izlense ardından.  
+- Eklenen içerik ekleyen metin şablonunun hemen hemen parçasıymış gibi işlenir. Ancak, bir sınıf özelliği bloğu içeren bir dosya dahil edebilirsiniz `<#+...#>` bile `include` yönergesi ve standart denetim blokları ile izlense ardından.  
   
--   Kullanım `once="true"` birden fazla başka ekleme dosyasından çağrılırsa bile şablonun yalnızca bir kez eklendiğinden emin olmak için.  
+- Kullanım `once="true"` birden fazla başka ekleme dosyasından çağrılırsa bile şablonun yalnızca bir kez eklendiğinden emin olmak için.  
   
-     Bu özellik yapar, ekleyebileceğiniz yeniden kullanılabilir T4 kod parçacıkları kitaplığını ayarlama kolayca, endişelenmenize gerek kalmadan çalışır başka bir kod parçacığı zaten bunları eklemiştir.  Örneğin, şablon işleme ve C# oluşturma ile ilgili çok ayrıntılı kod parçacıkları içeren bir kitaplık olduğunu varsayalım.  Buna karşılık, bunlar daha sonra daha uygulamaya özgü şablonlardan kullanabilirsiniz özel durumların gibi bazı daha göreve özel yardımcı programları tarafından kullanılır. Bağımlılık grafiği çizerseniz, bazı iş parçacıklarının birkaç kez dahil edildiğini görürsünüz. Ancak `once` parametresi sonraki eklemeleri engeller.  
+   Bu özellik yapar, ekleyebileceğiniz yeniden kullanılabilir T4 kod parçacıkları kitaplığını ayarlama kolayca, endişelenmenize gerek kalmadan çalışır başka bir kod parçacığı zaten bunları eklemiştir.  Örneğin, şablon işleme ve C# oluşturma ile ilgili çok ayrıntılı kod parçacıkları içeren bir kitaplık olduğunu varsayalım.  Buna karşılık, bunlar daha sonra daha uygulamaya özgü şablonlardan kullanabilirsiniz özel durumların gibi bazı daha göreve özel yardımcı programları tarafından kullanılır. Bağımlılık grafiği çizerseniz, bazı iş parçacıklarının birkaç kez dahil edildiğini görürsünüz. Ancak `once` parametresi sonraki eklemeleri engeller.  
   
- **MyTextTemplate.tt:**  
+  **MyTextTemplate.tt:**  
   
 ```  
 <#@ output extension=".txt" #>  

@@ -80,12 +80,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a97054db575d1d92f2077efe46d89573fba02dfd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 900127801a232ed41f119def930f8bbfe8e93550
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297754"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923010"
 ---
 # <a name="crt-debug-heap-details"></a>CRT Hata Ayıklama Öbeği Ayrıntıları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -214,19 +214,19 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  **Hata ayıklama yığınını kullanmak için**  
   
--   Uygulamanızı hata ayıklama yapısını C çalışma zamanı kitaplığı hata ayıklama sürümü ile bağlayın.  
+- Uygulamanızı hata ayıklama yapısını C çalışma zamanı kitaplığı hata ayıklama sürümü ile bağlayın.  
   
- **Bir veya birden çok _crtDbgFlag bit alanını değiştirmek ve yeni bir bayrak durumu oluşturmak için**  
+  **Bir veya birden çok _crtDbgFlag bit alanını değiştirmek ve yeni bir bayrak durumu oluşturmak için**  
   
-1.  Çağrı `_CrtSetDbgFlag` ile `newFlag` parametresini `_CRTDBG_REPORT_FLAG` (geçerli edinme `_crtDbgFlag` durumu) ve döndürülen değer, geçici bir değişkende depolayın.  
+1. Çağrı `_CrtSetDbgFlag` ile `newFlag` parametresini `_CRTDBG_REPORT_FLAG` (geçerli edinme `_crtDbgFlag` durumu) ve döndürülen değer, geçici bir değişkende depolayın.  
   
-2.  Tüm kapatma `OR`- ing (bit düzeyinde &#124; sembol) (uygulama kodunda bildirim sabitleriyle gösterilir) karşılık gelen bit maskesi ile geçici değişken.  
+2. Tüm kapatma `OR`- ing (bit düzeyinde &#124; sembol) (uygulama kodunda bildirim sabitleriyle gösterilir) karşılık gelen bit maskesi ile geçici değişken.  
   
-3.  Diğer bitleri tarafından devre dışı bırakın `AND`- ing (bit düzeyinde & sembol) değişkenle bir `NOT` (bit düzeyinde ~ sembol), uygun bir bit maskesi.  
+3. Diğer bitleri tarafından devre dışı bırakın `AND`- ing (bit düzeyinde & sembol) değişkenle bir `NOT` (bit düzeyinde ~ sembol), uygun bir bit maskesi.  
   
-4.  Çağrı `_CrtSetDbgFlag` ile `newFlag` yeni durumu oluşturmak üzere parametre ayarlamak geçici değişkende depolanan değere `_crtDbgFlag`.  
+4. Çağrı `_CrtSetDbgFlag` ile `newFlag` yeni durumu oluşturmak üzere parametre ayarlamak geçici değişkende depolanan değere `_crtDbgFlag`.  
   
- Örneğin, aşağıdaki kod satırları otomatik sızıntı algılamayı açar ve tür bloklarının denetimini kapatır `_CRT_BLOCK`:  
+   Örneğin, aşağıdaki kod satırları otomatik sızıntı algılamayı açar ve tür bloklarının denetimini kapatır `_CRT_BLOCK`:  
   
 ```  
 // Get current flag  

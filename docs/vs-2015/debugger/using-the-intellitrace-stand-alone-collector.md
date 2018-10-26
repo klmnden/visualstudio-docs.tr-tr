@@ -18,12 +18,12 @@ caps.latest.revision: 111
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b35b6b42126bb0a1b159e3bf90e67aee15dd540
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 69fd91f60750da0f6301527bb7a7c4a9ba97bb6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267481"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938922"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>IntelliTrace tek başına toplayıcıyı kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,22 +39,22 @@ ms.locfileid: "49267481"
   
  **Gereksinimler**  
   
--   .NET framework 3.5, 4 veya 4.5  
+- .NET framework 3.5, 4 veya 4.5  
   
--   Visual Studio .iTrace dosyalarını açmak için Kurumsal (ancak değil Professional veya Community sürümlerini) bir geliştirme bilgisayarı ya da diğer bilgisayar üzerinde  
+- Visual Studio .iTrace dosyalarını açmak için Kurumsal (ancak değil Professional veya Community sürümlerini) bir geliştirme bilgisayarı ya da diğer bilgisayar üzerinde  
   
-    > [!NOTE]
-    >  Sembol (.pdb) dosyalarını kaydettiğinizden emin olun. IntelliTrace ile hata ayıklamak ve kodunuz içinde adım adım için eşleşen kaynak dosyaları ve sembol dosyalarınız olmalıdır. Bkz: [dağıtımdan sonra sorunları tanılama](../debugger/diagnose-problems-after-deployment.md).  
+  > [!NOTE]
+  >  Sembol (.pdb) dosyalarını kaydettiğinizden emin olun. IntelliTrace ile hata ayıklamak ve kodunuz içinde adım adım için eşleşen kaynak dosyaları ve sembol dosyalarınız olmalıdır. Bkz: [dağıtımdan sonra sorunları tanılama](../debugger/diagnose-problems-after-deployment.md).  
   
- **SSS**  
+  **SSS**  
   
--   [Hangi uygulamalar Toplayıcı ile çalışıyor?](#WhatApps)  
+- [Hangi uygulamalar Toplayıcı ile çalışıyor?](#WhatApps)  
   
--   [Nasıl kullanmaya başlarım?](#GetStarted)  
+- [Nasıl kullanmaya başlarım?](#GetStarted)  
   
--   [En çok veriyi without slowing down my app nasıl alabilirim?](#Minimizing)  
+- [En çok veriyi without slowing down my app nasıl alabilirim?](#Minimizing)  
   
--   [IntelliTrace verisini başka nereden alabilirim?](#WhereElse)  
+- [IntelliTrace verisini başka nereden alabilirim?](#WhereElse)  
   
 ##  <a name="WhatApps"></a> Hangi uygulamalar Toplayıcı ile çalışıyor?  
   
@@ -84,40 +84,40 @@ ms.locfileid: "49267481"
   
 ##  <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> Toplayıcı yükleyin  
   
-1.  Uygulamanızın sunucusunda, örneğin Toplayıcı dizini oluşturun: **C:\IntelliTraceCollector**  
+1. Uygulamanızın sunucusunda, örneğin Toplayıcı dizini oluşturun: **C:\IntelliTraceCollector**  
   
-2.  Toplayıcıyı Microsoft Download Center veya 2103 Visual Studio güncelleştirme 3'ü yükleme klasöründen alın. [Visual Studio 2013 Update 4 için IntelliTrace Collector](https://www.microsoft.com/download/details.aspx?id=44909)::  
+2. Toplayıcıyı Microsoft Download Center veya 2103 Visual Studio güncelleştirme 3'ü yükleme klasöründen alın. [Visual Studio 2013 Update 4 için IntelliTrace Collector](https://www.microsoft.com/download/details.aspx?id=44909)::  
   
-    -   **Microsoft İndirme Merkezi**:  
+   - **Microsoft İndirme Merkezi**:  
   
-        1.  Yanındaki **IntelliTraceCollector.exe**, seçin **indirme**.  
+     1. Yanındaki **IntelliTraceCollector.exe**, seçin **indirme**.  
   
-        2.  Toplayıcı dizini için IntelliTraceCollector.exe kaydedin, örneğin: **C:\IntelliTraceCollector**  
+     2. Toplayıcı dizini için IntelliTraceCollector.exe kaydedin, örneğin: **C:\IntelliTraceCollector**  
   
-        3.  IntelliTraceCollector.exe çalıştırın. Bu Intellitracecollection.cab dosyasını çıkartır.  
+     3. IntelliTraceCollector.exe çalıştırın. Bu Intellitracecollection.cab dosyasını çıkartır.  
   
-         \- veya -  
+        \- veya -  
   
-    -   **Visual Studio yükleme klasörü**:  
+   - **Visual Studio yükleme klasörü**:  
   
-        1.  Intellitracecollection.cab dosyasını aşağıdaki klasörden kopyalayın:  
+     1.  Intellitracecollection.cab dosyasını aşağıdaki klasörden kopyalayın:  
   
-             **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**  
+          **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**  
   
-        2.  Intellitracecollection.cab dosyasını Toplayıcı dizinine örneğin yerleştirin: **C:\IntelliTraceCollector**  
+     2.  Intellitracecollection.cab dosyasını Toplayıcı dizinine örneğin yerleştirin: **C:\IntelliTraceCollector**  
   
-3.  Intellitracecollection.cab dosyasını genişletin:  
+3. Intellitracecollection.cab dosyasını genişletin:  
   
-    1.  Uygulamanızın sunucusunda, yönetici olarak bir komut istemi penceresi açın.  
+   1.  Uygulamanızın sunucusunda, yönetici olarak bir komut istemi penceresi açın.  
   
-    2.  Örneğin, Toplayıcı dizini için Gözat: **C:\IntelliTraceCollector**  
+   2.  Örneğin, Toplayıcı dizini için Gözat: **C:\IntelliTraceCollector**  
   
-    3.  Kullanım **genişletin** nokta dahil, komut (**.**) ıntellitracecollection.cab dosyasını genişletmek için sonunda:  
+   3.  Kullanım **genişletin** nokta dahil, komut (**.**) ıntellitracecollection.cab dosyasını genişletmek için sonunda:  
   
-         `expand  /f:* IntelliTraceCollection.cab .`  
+        `expand  /f:* IntelliTraceCollection.cab .`  
   
-        > [!NOTE]
-        >  Süre (**.**) yerelleştirilmiş toplama planlarını içeren alt klasörleri korur.  
+       > [!NOTE]
+       >  Süre (**.**) yerelleştirilmiş toplama planlarını içeren alt klasörleri korur.  
   
 ##  <a name="ConfigurePermissionsRunningCollector"></a> Toplayıcı dizini için izinleri ayarla  
   
@@ -173,47 +173,47 @@ ms.locfileid: "49267481"
   
 ##  <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> .İTrace dosya dizini için izinleri ayarla  
   
-1.  Uygulamanızın sunucusunda, .iTrace dosya dizini, örneğin oluşturun: **C:\IntelliTraceLogFiles**  
+1. Uygulamanızın sunucusunda, .iTrace dosya dizini, örneğin oluşturun: **C:\IntelliTraceLogFiles**  
   
-    > [!NOTE]
-    >  -   Uygulamanızı yavaşlatmayı önlemek için çok etkin değil yerel bir yüksek hızlı disk üzerinde bir konum seçin.  
-    > -   .İTrace dosyalarını ve Toplayıcı dosyalarını aynı yere koyabilirsiniz. Ancak, bir Web uygulaması ya da SharePoint uygulaması varsa, buranın uygulamayı barındıran dizin dışında olduğundan emin olun.  
+   > [!NOTE]
+   > - Uygulamanızı yavaşlatmayı önlemek için çok etkin değil yerel bir yüksek hızlı disk üzerinde bir konum seçin.  
+   >   -   .İTrace dosyalarını ve Toplayıcı dosyalarını aynı yere koyabilirsiniz. Ancak, bir Web uygulaması ya da SharePoint uygulaması varsa, buranın uygulamayı barındıran dizin dışında olduğundan emin olun.  
+   > 
+   > [!IMPORTANT]
+   > - .İTrace dosya dizinini yalnızca toplayıcıyla çalışması gereken kimliklerle kısıtlayın. Bir .iTrace dosyası, çünkü IntelliTrace method parametrelerine ya da dönüş değeri olarak geçirir her veriyi kaydedebilir veri kullanıcıları, veritabanları, diğer kaynak konumları ve bağlantı dizeleri gibi hassas bilgileri içeriyor olabilir.  
+   >   -   .İTrace dosyalarını açabilen kişilere hassas verileri görüntüleyebilecek yetkiye sahip olduğunuzdan emin olun. .İTrace dosyaları paylaşırken dikkatli olun. Diğer kişilerin erişim gereksinimi olduğunda dosyaları paylaşılan güvenli bir konuma kopyalayın.  
   
-    > [!IMPORTANT]
-    >  -   .İTrace dosya dizinini yalnızca toplayıcıyla çalışması gereken kimliklerle kısıtlayın. Bir .iTrace dosyası, çünkü IntelliTrace method parametrelerine ya da dönüş değeri olarak geçirir her veriyi kaydedebilir veri kullanıcıları, veritabanları, diğer kaynak konumları ve bağlantı dizeleri gibi hassas bilgileri içeriyor olabilir.  
-    > -   .İTrace dosyalarını açabilen kişilere hassas verileri görüntüleyebilecek yetkiye sahip olduğunuzdan emin olun. .İTrace dosyaları paylaşırken dikkatli olun. Diğer kişilerin erişim gereksinimi olduğunda dosyaları paylaşılan güvenli bir konuma kopyalayın.  
+2. Web uygulaması yada SharePoint uygulaması için uygulama havuzlarına .iTrace dosya dizini için tam izinleri verin. Windows kullanabileceğiniz **icacls** komutunu ya da Windows Explorer (veya dosya Gezgini) kullanın.  
   
-2.  Web uygulaması yada SharePoint uygulaması için uygulama havuzlarına .iTrace dosya dizini için tam izinleri verin. Windows kullanabileceğiniz **icacls** komutunu ya da Windows Explorer (veya dosya Gezgini) kullanın.  
+    Örneğin:  
   
-     Örneğin:  
+   - Windows ile izinleri ayarlamak için **icacls** komutu:  
   
-    -   Windows ile izinleri ayarlamak için **icacls** komutu:  
+     - İçinde bir Web uygulaması için **DefaultAppPool** uygulama havuzu:  
   
-        -   İçinde bir Web uygulaması için **DefaultAppPool** uygulama havuzu:  
+        `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\DefaultAppPool":F`  
   
-             `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\DefaultAppPool":F`  
+     - Bir SharePoint uygulaması için **SharePoint - 80** uygulama havuzu:  
   
-        -   Bir SharePoint uygulaması için **SharePoint - 80** uygulama havuzu:  
+        `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`  
   
-             `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`  
+       veya  
   
-         veya  
+   - Windows Explorer'ı (ya da File Explorer) ile izinleri ayarlamak için:  
   
-    -   Windows Explorer'ı (ya da File Explorer) ile izinleri ayarlamak için:  
+     1.  Açık **özellikleri** .iTrace dosya dizini için.  
   
-        1.  Açık **özellikleri** .iTrace dosya dizini için.  
+     2.  Üzerinde **güvenlik** sekmesini, **Düzenle**, **Ekle**.  
   
-        2.  Üzerinde **güvenlik** sekmesini, **Düzenle**, **Ekle**.  
+     3.  Emin **yerleşik güvenlik esasları** görünür **bu nesne türünü seç** kutusu. Bunu sahip değil, seçerseniz **nesne türlerini** ekleyin.  
   
-        3.  Emin **yerleşik güvenlik esasları** görünür **bu nesne türünü seç** kutusu. Bunu sahip değil, seçerseniz **nesne türlerini** ekleyin.  
+     4.  Yerel bilgisayarınıza emin görünür **bu konumdan** kutusu. Bunu sahip değil, seçerseniz **konumları** değiştirmek için.  
   
-        4.  Yerel bilgisayarınıza emin görünür **bu konumdan** kutusu. Bunu sahip değil, seçerseniz **konumları** değiştirmek için.  
+     5.  İçinde **Seçilecek nesne adlarını girin** kutusunda, Web uygulaması ya da SharePoint uygulaması için uygulama havuzunu ekleyin.  
   
-        5.  İçinde **Seçilecek nesne adlarını girin** kutusunda, Web uygulaması ya da SharePoint uygulaması için uygulama havuzunu ekleyin.  
+     6.  Seçin **Adları Denetle** adı çözümlenemedi. Seçin **Tamam**.  
   
-        6.  Seçin **Adları Denetle** adı çözümlenemedi. Seçin **Tamam**.  
-  
-        7.  Uygulama havuzu olduğundan emin olun **tam denetim**.  
+     7.  Uygulama havuzu olduğundan emin olun **tam denetim**.  
   
 ##  <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> Bir Web uygulaması ya da SharePoint uygulamasından veri topla  
   
@@ -297,92 +297,92 @@ ms.locfileid: "49267481"
   
  Uygulamanızı yavaşlatmadan en çok veriyi almak için bazı yollar şunlardır:  
   
--   Toplayıcı yalnızca bir sorun olduğunu düşündüğünüz veya sorunu yeniden oluşturabileceğinizi düşündüğünüzde çalıştırın.  
+- Toplayıcı yalnızca bir sorun olduğunu düşündüğünüz veya sorunu yeniden oluşturabileceğinizi düşündüğünüzde çalıştırın.  
   
-     Koleksiyonu Başlat, sorunu yeniden oluşturun ve toplama işlemini durdurun. Visual Studio Enterprise'da .iTrace dosyasını açın ve verileri inceleyin. Bkz: [.iTrace dosyasını açın Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files).  
+   Koleksiyonu Başlat, sorunu yeniden oluşturun ve toplama işlemini durdurun. Visual Studio Enterprise'da .iTrace dosyasını açın ve verileri inceleyin. Bkz: [.iTrace dosyasını açın Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files).  
   
--   Web uygulamaları ve SharePoint uygulamaları için toplayıcı belirtilen uygulama havuzunu paylaşan her uygulama için veri kaydeder. Bir koleksiyon planı içinde yalnızca tek bir uygulama için modüller belirleyebilirsiniz olsa bile bu aynı uygulama havuzunu paylaşan herhangi bir uygulamayı yavaşlatabilir.  
+- Web uygulamaları ve SharePoint uygulamaları için toplayıcı belirtilen uygulama havuzunu paylaşan her uygulama için veri kaydeder. Bir koleksiyon planı içinde yalnızca tek bir uygulama için modüller belirleyebilirsiniz olsa bile bu aynı uygulama havuzunu paylaşan herhangi bir uygulamayı yavaşlatabilir.  
   
-     Toplayıcının diğer uygulamaları yavaşlatmasını önlemek için her uygulamayı kendi uygulama havuzunda barındırın.  
+   Toplayıcının diğer uygulamaları yavaşlatmasını önlemek için her uygulamayı kendi uygulama havuzunda barındırın.  
   
--   Intellitrace'in veri topladığı toplama planındaki olayları inceleyin. Uygun olmayan veya sizi İlginiz dahilinde olmayan olayları devre dışı bırakmak için toplama planını düzenleyin.  
+- Intellitrace'in veri topladığı toplama planındaki olayları inceleyin. Uygun olmayan veya sizi İlginiz dahilinde olmayan olayları devre dışı bırakmak için toplama planını düzenleyin.  
   
-     Bir olayı devre dışı bırakmak için ayarlanmış `enabled` özniteliğini `<DiagnosticEventSpecification>` öğesine `false`:  
+   Bir olayı devre dışı bırakmak için ayarlanmış `enabled` özniteliğini `<DiagnosticEventSpecification>` öğesine `false`:  
   
-     `<DiagnosticEventSpecification enabled="false">`  
+   `<DiagnosticEventSpecification enabled="false">`  
   
-     Varsa `enabled` öznitelik yoksa, olay etkinleştirilmiştir.  
+   Varsa `enabled` öznitelik yoksa, olay etkinleştirilmiştir.  
   
-     *Bu performansı nasıl iyileştirir?*  
+   *Bu performansı nasıl iyileştirir?*  
   
-    -   Uygulama için uygun olmayan olayları devre dışı bırakarak başlatma süresini azaltabilirsiniz. Örneğin, Windows Workflow kullanmayan uygulamalar için Windows Workflow olaylarını devre dışı bırakın.  
+  -   Uygulama için uygun olmayan olayları devre dışı bırakarak başlatma süresini azaltabilirsiniz. Örneğin, Windows Workflow kullanmayan uygulamalar için Windows Workflow olaylarını devre dışı bırakın.  
   
-    -   Kayıt defterine erişen ancak kayıt defteri ayarlarında sorun göstermeyen uygulamalar için kayıt defteri olaylarını devre dışı bırakarak hem Başlangıç hem de çalışma zamanı performansını artırabilir.  
+  -   Kayıt defterine erişen ancak kayıt defteri ayarlarında sorun göstermeyen uygulamalar için kayıt defteri olaylarını devre dışı bırakarak hem Başlangıç hem de çalışma zamanı performansını artırabilir.  
   
--   Intellitrace'in veri topladığı toplama planındaki modülleri inceleyin. Toplama planını yalnızca ilginizi çeken modülleri içerecek şekilde düzenleyin:  
+- Intellitrace'in veri topladığı toplama planındaki modülleri inceleyin. Toplama planını yalnızca ilginizi çeken modülleri içerecek şekilde düzenleyin:  
   
-    1.  Toplama planını açın. Bulma `<ModuleList>` öğesi.  
+  1. Toplama planını açın. Bulma `<ModuleList>` öğesi.  
   
-    2.  İçinde `<ModuleList>`ayarlayın `isExclusionList` özniteliğini `false`.  
+  2. İçinde `<ModuleList>`ayarlayın `isExclusionList` özniteliğini `false`.  
   
-    3.  Kullanım `<Name>` her modülü aşağıdakileri biri ile belirtmek için öğe: dosya adı, adında, dize veya ortak anahtar içeren her modülü içermek için dize değeri.  
+  3. Kullanım `<Name>` her modülü aşağıdakileri biri ile belirtmek için öğe: dosya adı, adında, dize veya ortak anahtar içeren her modülü içermek için dize değeri.  
   
      Örneğin, yalnızca ana Web modülünden Fabrikam Fiber Web uygulamasının veri toplamak için aşağıdakine benzer bir liste oluşturun:  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>FabrikamFiber.Web.dll</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>FabrikamFiber.Web.dll</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     Adı "Fabrikam" içeren modüllerden veri toplamak için aşağıdakine benzer bir liste oluşturun:  
+   Adı "Fabrikam" içeren modüllerden veri toplamak için aşağıdakine benzer bir liste oluşturun:  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>Fabrikam</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>Fabrikam</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     Kendi ortak anahtar belirteçlerini belirterek modüllerden veri toplamak için aşağıdakine benzer bir liste oluşturun:  
+   Kendi ortak anahtar belirteçlerini belirterek modüllerden veri toplamak için aşağıdakine benzer bir liste oluşturun:  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>PublicKeyToken:B77A5C561934E089</Name>  
-       <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>  
-       <Name>PublicKeyToken:31BF3856AD364E35</Name>  
-       <Name>PublicKeyToken:89845DCD8080CC91</Name>  
-       <Name>PublicKeyToken:71E9BCE111E9429C</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>PublicKeyToken:B77A5C561934E089</Name>  
+     <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>  
+     <Name>PublicKeyToken:31BF3856AD364E35</Name>  
+     <Name>PublicKeyToken:89845DCD8080CC91</Name>  
+     <Name>PublicKeyToken:71E9BCE111E9429C</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     *Bu performansı nasıl iyileştirir?*  
+   *Bu performansı nasıl iyileştirir?*  
   
-     Bu yöntem çağrı bilgisi ve uygulama başladığında ve çalışır olduğunda Intellitrace'in topladığı diğer araç verilerinin miktarını azaltır. Bu veriler şunları yapmanızı sağlar:  
+   Bu yöntem çağrı bilgisi ve uygulama başladığında ve çalışır olduğunda Intellitrace'in topladığı diğer araç verilerinin miktarını azaltır. Bu veriler şunları yapmanızı sağlar:  
   
-    -   Veri toplamanın ardından kodda adım adım.  
+  - Veri toplamanın ardından kodda adım adım.  
   
-    -   Geçirilen ve işlev çağrıları döndürülen değerleri inceleyin.  
+  - Geçirilen ve işlev çağrıları döndürülen değerleri inceleyin.  
   
-     *Neden bunun yerine modülleri hariç?*  
+    *Neden bunun yerine modülleri hariç?*  
   
-     Varsayılan olarak ayarlayarak toplama planlarını modülleri hariç `isExclusionList` özniteliğini `true`. Ancak, modüllerin hariç tutulması yine de listenin ölçütlerine uymayan ve, üçüncü taraf veya açık kaynak modüller gibi İlginiz dahilinde olmayan modüllerden veri toplanmasına neden olabilir.  
+    Varsayılan olarak ayarlayarak toplama planlarını modülleri hariç `isExclusionList` özniteliğini `true`. Ancak, modüllerin hariç tutulması yine de listenin ölçütlerine uymayan ve, üçüncü taraf veya açık kaynak modüller gibi İlginiz dahilinde olmayan modüllerden veri toplanmasına neden olabilir.  
   
--   *Intellitrace'in toplamadığı herhangi bir veri var mı?*  
+- *Intellitrace'in toplamadığı herhangi bir veri var mı?*  
   
-     Evet, performans etkisini azaltmak için IntelliTrace geçirilen ve geçirilen ve yöntemlerden döndürülen en üst düzey nesneler üzerinde yöntemleri ve alanları temel veri türlerinin değerleri için döndürülen ilkel veri türleri değerlerinin veri toplamasını kısıtlar.  
+   Evet, performans etkisini azaltmak için IntelliTrace geçirilen ve geçirilen ve yöntemlerden döndürülen en üst düzey nesneler üzerinde yöntemleri ve alanları temel veri türlerinin değerleri için döndürülen ilkel veri türleri değerlerinin veri toplamasını kısıtlar.  
   
-     Örneğin, sahip olduğunuz varsayalım. bir `AlterEmployee` kabul eden bir tamsayı yöntem imzası `id` ve `Employee` nesne `oldemployee`:  
+   Örneğin, sahip olduğunuz varsayalım. bir `AlterEmployee` kabul eden bir tamsayı yöntem imzası `id` ve `Employee` nesne `oldemployee`:  
   
-     `public Employee AlterEmployee(int id, Employee oldemployee)`  
+   `public Employee AlterEmployee(int id, Employee oldemployee)`  
   
-     `Employee` Türü şu öznitelikler bulunur: `Id`, `Name`, ve `HomeAddress`. Arasında bir ilişkilendirme ilişkisi var. `Employee` ve `Address` türü.  
+   `Employee` Türü şu öznitelikler bulunur: `Id`, `Name`, ve `HomeAddress`. Arasında bir ilişkilendirme ilişkisi var. `Employee` ve `Address` türü.  
   
-     ![Çalışan ve adresi arasındaki ilişkiyi](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
+   ![Çalışan ve adresi arasındaki ilişkiyi](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
   
-     Toplayıcı, değerleri kaydeder `id`, `Employee.Id`, `Employee.Name` ve `Employee` döndürülen nesne `AlterEmployee` yöntemi. Toplayıcı hakkında bilgi ancak kaydetmez `Address` değil null olup dışındaki nesne. Toplayıcı ayrıca yerel değişkenler hakkında daha fazla veri kaydetmez `AlterEmployee` yöntemi hangi noktada onların yöntem parametreleri olarak parametre olarak, diğer yöntemler bu yerel değişkenleri kullanmadığınız sürece.  
+   Toplayıcı, değerleri kaydeder `id`, `Employee.Id`, `Employee.Name` ve `Employee` döndürülen nesne `AlterEmployee` yöntemi. Toplayıcı hakkında bilgi ancak kaydetmez `Address` değil null olup dışındaki nesne. Toplayıcı ayrıca yerel değişkenler hakkında daha fazla veri kaydetmez `AlterEmployee` yöntemi hangi noktada onların yöntem parametreleri olarak parametre olarak, diğer yöntemler bu yerel değişkenleri kullanmadığınız sürece.  
   
 ##  <a name="WhereElse"></a> IntelliTrace verisini başka nereden alabilirim?  
   

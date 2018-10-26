@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6ca9fd11e56631061d86c35f9e6bd686b8750b50
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 61c71b67c02493ac77a2fd1c21bb47e78122a1d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859386"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928665"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>TextTransform yardımcı programı ile dosya oluşturma
 
@@ -51,11 +51,11 @@ TextTransform [<options>] <templateName>
 ### <a name="parameters"></a>Parametreler
 
 |**Bağımsız değişken**|**Açıklama**|
-|------------------|---------------------|
+|-|-|
 |`templateName`|Dönüştürmek istediğiniz şablon dosyasının adını tanımlar.|
 
 |**Seçeneği**|**Açıklama**|
-|----------------|---------------------|
+|-|-|
 |**-out** \<dosya adı >|Dönüşümün çıkış yazıldığı dosya.|
 |**-r** \<derleme >|Derleme ve metin şablonu çalıştırmak için kullanılan derleme.|
 |**-u** \<ad alanı >|Şablon derlemek için kullanılan bir ad alanı.|
@@ -68,7 +68,7 @@ TextTransform [<options>] <templateName>
 ## <a name="related-topics"></a>İlgili konular
 
 |Görev|Konu|
-|----------|-----------|
+|-|-|
 |Visual Studio çözümü içinde dosyaları oluşturur.|[T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
 |Kendi veri kaynaklarınızı dönüştürmek için yönerge işlemcileri yazın.|[T4 Metin Dönüştürmeyi Özelleştirme](../modeling/customizing-t4-text-transformation.md)|
 |Kendi uygulamanızı metin şablonlarını çağırmak izin veren bir metin şablonu oluşturma barındırıcısı yazın.|[Bir Özel Konak kullanarak Metin Şablonlarını İşleme](../modeling/processing-text-templates-by-using-a-custom-host.md)|

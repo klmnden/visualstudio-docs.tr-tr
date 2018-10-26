@@ -15,12 +15,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c8230b8d37e0a853b22ac58fe1701a98728e41d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7d15c1991ee70a0b1a163c8968e42fe450b7919
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246908"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833531"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Nasıl yapılır: Kısayol Menüsüne Komut Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Kullanıcılarınız için DSL'nizi özel görevleri gerçekleştirebilmeleri i�
   
  Özet olarak, adımları DslPackage projesinde aşağıdaki gibi gerçekleştirilir:  
   
-1.  [Komut içinde Commands.vsct bildirme](#VSCT)  
+1. [Komut içinde Commands.vsct bildirme](#VSCT)  
   
-2.  [Package.tt paketinin sürüm numarasını güncelleştirmek](#version). Commands.vsct değiştirdiğinizde, bunu yapmak sahip olduğunuz  
+2. [Package.tt paketinin sürüm numarasını güncelleştirmek](#version). Commands.vsct değiştirdiğinizde, bunu yapmak sahip olduğunuz  
   
-3.  [CommandSet sınıfı yöntemleri yazma](#CommandSet) komutu görünür yapmak ve komut yapmak istediğinizi tanımlayabilirsiniz.  
+3. [CommandSet sınıfı yöntemleri yazma](#CommandSet) komutu görünür yapmak ve komut yapmak istediğinizi tanımlayabilirsiniz.  
   
- Örnekler için bkz: [Görselleştirme ve modelleme SDK'sı Web sitesi](http://go.microsoft.com/fwlink/?LinkID=185579).  
+   Örnekler için bkz: [Görselleştirme ve modelleme SDK'sı Web sitesi](http://go.microsoft.com/fwlink/?LinkID=185579).  
   
 > [!NOTE]
 >  Kesme, yapıştırma, Tümünü Seç ve yazdırma gibi bazı mevcut komutları davranışını CommandSet.cs yöntemleri geçersiz kılarak de değiştirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: bir standart menü komutunu değiştirme](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
@@ -45,15 +45,15 @@ Kullanıcılarınız için DSL'nizi özel görevleri gerçekleştirebilmeleri i�
   
  Yöntemi, bu konudaki kullanın:  
   
-1.  Sağ tıklama kısayol menüsünü dışında menülerde menü komutları tanımlamak istersiniz.  
+1. Sağ tıklama kısayol menüsünü dışında menülerde menü komutları tanımlamak istersiniz.  
   
-2.  Komutları belirli gruplandırmalarını menüde tanımlamak istersiniz.  
+2. Komutları belirli gruplandırmalarını menüde tanımlamak istersiniz.  
   
-3.  Diğerleri kendi komutlarla DSL genişletmek etkinleştirmek istediğiniz değil.  
+3. Diğerleri kendi komutlarla DSL genişletmek etkinleştirmek istediğiniz değil.  
   
-4.  Yalnızca tek bir komutta tanımlamak istersiniz.  
+4. Yalnızca tek bir komutta tanımlamak istersiniz.  
   
- Aksi takdirde, komutları tanımlamak için MEF yöntemi kullanmayı düşünün. Daha fazla bilgi için [MEF kullanarak DSL'nizi genişletme](../modeling/extend-your-dsl-by-using-mef.md).  
+   Aksi takdirde, komutları tanımlamak için MEF yöntemi kullanmayı düşünün. Daha fazla bilgi için [MEF kullanarak DSL'nizi genişletme](../modeling/extend-your-dsl-by-using-mef.md).  
   
 ##  <a name="VSCT"></a> Komut içinde Commands.Vsct bildirme  
  Menü komutları DslPackage\Commands.vsct bildirilir. Bu tanımları, etiket menü öğelerinin ve menülerde göründüğü belirtin.  
@@ -226,21 +226,21 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
   
  Aşağıdaki parçası sık OnStatus yöntemleri kullanışlıdır:  
   
--   `this.CurrentSelection`. Kullanıcı sağ şekli, her zaman bu listede bulunuyor. Diyagram kullanıcı diyagramın boş bir kısmına tıklarsa, listeyi yalnızca üyesidir.  
+- `this.CurrentSelection`. Kullanıcı sağ şekli, her zaman bu listede bulunuyor. Diyagram kullanıcı diyagramın boş bir kısmına tıklarsa, listeyi yalnızca üyesidir.  
   
--   `this.IsDiagramSelected()` - `true` Kullanıcı diyagramın boş bir kısmına tıkladıysanız.  
+- `this.IsDiagramSelected()` - `true` Kullanıcı diyagramın boş bir kısmına tıkladıysanız.  
   
--   `this.IsCurrentDiagramEmpty()`  
+- `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()` -Kullanıcı birden çok nesne seçin  
+- `this.IsSingleSelection()` -Kullanıcı birden çok nesne seçin  
   
--   `this.SingleSelection` -Şekil veya kullanıcı sağ diyagramı  
+- `this.SingleSelection` -Şekil veya kullanıcı sağ diyagramı  
   
--   `shape.ModelElement as MyLanguageElement` -bir şekil tarafından temsil edilen model öğesi.  
+- `shape.ModelElement as MyLanguageElement` -bir şekil tarafından temsil edilen model öğesi.  
   
- Genel bir kural olarak olun `Visible` özelliği ne seçili olursa bağlıdır ve olun `Enabled` özelliği, seçilen öğeleri durumuna bağlıdır.  
+  Genel bir kural olarak olun `Visible` özelliği ne seçili olursa bağlıdır ve olun `Enabled` özelliği, seçilen öğeleri durumuna bağlıdır.  
   
- OnStatus yöntemi Store durumunu değiştirmemesi gerekir.  
+  OnStatus yöntemi Store durumunu değiştirmemesi gerekir.  
   
 ### <a name="define-what-the-command-does"></a>Komutun yaptığı tanımlayın  
  Her komut için tanımlayan bir `OnMenu...` kullanıcı komutu tıkladığında, gerekli bir eylem gerçekleştiren yöntemi.  
@@ -338,29 +338,29 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="troubleshooting"></a>Sorun giderme  
  **Komutu, menüde görünmez:**  
   
--   Komutu DSL paketini yüklemek kadar yalnızca Visual Studio örneklerini hata ayıklama içinde görünür. Daha fazla bilgi için [etki alanına özgü dil çözümlerini dağıtma](../modeling/deploying-domain-specific-language-solutions.md).  
+- Komutu DSL paketini yüklemek kadar yalnızca Visual Studio örneklerini hata ayıklama içinde görünür. Daha fazla bilgi için [etki alanına özgü dil çözümlerini dağıtma](../modeling/deploying-domain-specific-language-solutions.md).  
   
--   Deneysel örneğinizi bu DSL için doğru dosya adı uzantısına sahip olduğundan emin olun. Dosya adı uzantısı denetlemek için Visual Studio ana örneğine DslDefinition.dsl açın. Ardından Düzenleyici düğüm DSL Gezgini içinde sağ tıklayın ve ardından Özellikler seçeneğine tıklayın. Özellikler penceresinde FileExtension özelliğini inceleyin.  
+- Deneysel örneğinizi bu DSL için doğru dosya adı uzantısına sahip olduğundan emin olun. Dosya adı uzantısı denetlemek için Visual Studio ana örneğine DslDefinition.dsl açın. Ardından Düzenleyici düğüm DSL Gezgini içinde sağ tıklayın ve ardından Özellikler seçeneğine tıklayın. Özellikler penceresinde FileExtension özelliğini inceleyin.  
   
--   Yaptığınız [paketinin sürüm numarasını Artır](#version)?  
+- Yaptığınız [paketinin sürüm numarasını Artır](#version)?  
   
--   OnStatus yönteminizin başlangıcında bir kesme noktası ayarlayın. Diyagram üzerinde herhangi bir bölümünü tıkladığında sonu.  
+- OnStatus yönteminizin başlangıcında bir kesme noktası ayarlayın. Diyagram üzerinde herhangi bir bölümünü tıkladığında sonu.  
   
-     **OnStatus yönteminin çağrılmaması**:  
+   **OnStatus yönteminin çağrılmaması**:  
   
-    -   GUID'leri ve kimlikleri CommandSet kodunuzda Commands.vsct sembolleri bölümünde eşleştiğinden emin olun.  
+  -   GUID'leri ve kimlikleri CommandSet kodunuzda Commands.vsct sembolleri bölümünde eşleştiğinden emin olun.  
   
-    -   Commands.vsct içinde GUID ve ID her üst düğümünde doğru üst grup tanımlayın emin olun.  
+  -   Commands.vsct içinde GUID ve ID her üst düğümünde doğru üst grup tanımlayın emin olun.  
   
-    -   Bir Visual Studio komut istemi devenv /rootsuffix exp/Setup yazın. Ardından Visual Studio hata ayıklama örneğini yeniden başlatın.  
+  -   Bir Visual Studio komut istemi devenv /rootsuffix exp/Setup yazın. Ardından Visual Studio hata ayıklama örneğini yeniden başlatın.  
   
--   Bu komut doğrulamak için OnStatus yöntemi aracılığıyla adım. Görünür ve komutu. Etkin ayarlanmıştır true.  
+- Bu komut doğrulamak için OnStatus yöntemi aracılığıyla adım. Görünür ve komutu. Etkin ayarlanmıştır true.  
   
- **Yanlış menü metni görünür veya komut yanlış yere görünür**:  
+  **Yanlış menü metni görünür veya komut yanlış yere görünür**:  
   
--   GUID ve ID birleşimi bu komut için benzersiz olduğundan emin olun.  
+- GUID ve ID birleşimi bu komut için benzersiz olduğundan emin olun.  
   
--   Önceki paket sürümleri kaldırdığınızdan emin olun.  
+- Önceki paket sürümleri kaldırdığınızdan emin olun.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bir etki alanına özgü dili özelleştirmek için kod yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)   

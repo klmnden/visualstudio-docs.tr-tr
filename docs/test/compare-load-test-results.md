@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c360061e48b983007958042fd50e1e8cdcf0ac9f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8829644e34c169f8992959013f70d453a70d41b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176336"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834293"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Rapor yük testi sonuçlarını test karşılaştırmaları veya eğilim analizi
 
@@ -38,7 +38,7 @@ Ayrıca, elektronik tablo dosyasını, hissedarların raporu görmek için verit
 ## <a name="tasks"></a>Görevler
 
 |Görevler|İlişkili konular|
-|-----------|-----------------------|
+|-|-|
 |**Performans ve stres rapor oluşturma:** Microsoft Excel kullanarak yük ve web performans testlerinizi üzerinde raporlar oluşturabilirsiniz.|- [Nasıl yapılır: oluşturma yük testi başarım raporları kullanarak Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
 |**El ile Microsoft Word'ı kullanarak performans ve stres rapor oluşturma:** raporları, yük ve web performans testleri el ile özeti, tablo ve graf verilerini bir Microsoft Word belgesine yapıştırarak oluşturabilirsiniz.|- [Nasıl yapılır: Microsoft Word kullanılarak bir yük testi başarım raporunu el ile oluşturma](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 

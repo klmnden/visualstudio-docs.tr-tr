@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0f2149c1645639111e9e050b88632ed911d1157b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b83a9e86aea02e27242a0c1f02ca3f8459152214
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248579"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870191"
 ---
 # <a name="command-window"></a>Komut Penceresi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,22 +101,22 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
   
  Bu örnekte,  
   
--   `Edit.ReplaceInFiles` Bu komut  
+- `Edit.ReplaceInFiles` Bu komut  
   
--   `/case` ve `/pattern:regex` olan anahtarları (eğik çizgi [/] karakteriyle başlar)  
+- `/case` ve `/pattern:regex` olan anahtarları (eğik çizgi [/] karakteriyle başlar)  
   
--   `regex` değeri `/pattern` geçin; `/case` anahtar değere sahip değil  
+- `regex` değeri `/pattern` geçin; `/case` anahtar değere sahip değil  
   
--   `var[1-3]+` ve `oldpar` parametreleri  
+- `var[1-3]+` ve `oldpar` parametreleri  
   
-    > [!NOTE]
-    >  Komutu, parametre, anahtar veya boşluk içeren değer iki tarafında çift tırnak işareti olmalıdır.  
+  > [!NOTE]
+  >  Komutu, parametre, anahtar veya boşluk içeren değer iki tarafında çift tırnak işareti olmalıdır.  
   
- Anahtarlar ve parametreleri konumunu serbestçe dışında komut satırında deyimleri [Kabuk](../../ide/reference/shell-command.md) komutu, belirli bir sırayla parametreler ve anahtarlar gerektirir.  
+  Anahtarlar ve parametreleri konumunu serbestçe dışında komut satırında deyimleri [Kabuk](../../ide/reference/shell-command.md) komutu, belirli bir sırayla parametreler ve anahtarlar gerektirir.  
   
- Neredeyse tüm anahtar komutu tarafından desteklenen iki biçimi vardır: bir kısa (bir karakter) formunu ve uzun biçimi. Bir gruba birden çok kısa biçimli anahtar birleştirilebilir. Örneğin, `/p /g /m` dönüşümlü olarak ifade edilebilir `/pgm`.  
+  Neredeyse tüm anahtar komutu tarafından desteklenen iki biçimi vardır: bir kısa (bir karakter) formunu ve uzun biçimi. Bir gruba birden çok kısa biçimli anahtar birleştirilebilir. Örneğin, `/p /g /m` dönüşümlü olarak ifade edilebilir `/pgm`.  
   
- Kısa form anahtarları bir gruba birleştirilir ve verilen bir değer, bu değer her geçiş için geçerlidir. Örneğin, `/pgm:123` karşılık gelir `/p:123 /g:123 /m:123`. Herhangi bir grup anahtarları kabul etmiyor, değeri bir hata meydana gelir.  
+  Kısa form anahtarları bir gruba birleştirilir ve verilen bir değer, bu değer her geçiş için geçerlidir. Örneğin, `/pgm:123` karşılık gelir `/p:123 /g:123 /m:123`. Herhangi bir grup anahtarları kabul etmiyor, değeri bir hata meydana gelir.  
   
 ## <a name="escape-characters"></a>Kaçış karakterleri  
  Aşağıdaki yerine birebir yorumlandığı bir denetim karakteri olarak yorumlanır hemen komut satırında bir şapka (^) karakter, karakter anlamına gelir. Bu anahtar adları dışında bir parametre veya anahtar değerine düz tırnak ("), boşluk, önde gelen eğik çizgiler, düzeltme işaretleri veya diğer bir hazır bilgi karakterleri katıştırmak için kullanılabilir. Örneğin,  

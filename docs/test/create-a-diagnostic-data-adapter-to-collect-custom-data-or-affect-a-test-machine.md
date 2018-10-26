@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0839bbf95b701f1104ab5c9fb1c66318ac4707c9
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: e0a7815b57fa49239a0895e6733a13c5c83e99e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321235"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860899"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Özel veri toplayan veya test makinesini etkileyen tanılama veri bağdaştırıcısı oluşturma
 
@@ -31,7 +31,7 @@ Testlerinizi Visual Studio'dan çalıştırıyorsanız, bunları ayarlamalısın
  Tanılama veri bağdaştırıcıları oluşturmanıza yardımcı olması için aşağıdaki konulara bakın:
 
 |Görevler|İlişkili Konular|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Tanılama veri bağdaştırıcısı oluşturma:** bir sınıf kitaplığı oluşturarak tanılama veri bağdaştırıcısı oluşturmak ve ardından istediğiniz veya testlerinizi çalıştırmak için kullandığınız bir test sistemini etkilemek bilgilerini toplamak için tanılama veri bağdaştırıcısı API'leri kullanın.|-   [Nasıl yapılır: tanılama veri bağdaştırıcısı oluşturma](../test/how-to-create-a-diagnostic-data-adapter.md)|
 |**Özel tanılama veri bağdaştırıcısı yükleme:** tanılama veri bağdaştırıcınızı veya doğru dizinde oturum kopyalayarak başkası tarafından sağlanan bir bağdaştırıcı yükleyebilirsiniz.|-   [Nasıl yapılır: özel tanılama veri bağdaştırıcısı yükleme](../test/how-to-install-a-custom-diagnostic-data-adapter.md)|
 |**Özel tanılama veri bağdaştırıcısı kullanan testler için seçme çalıştırılır:** bağdaştırıcı, testlerinizi çalıştırdığınızda kullanılır, böylece hangi tanılama veri bağdaştırıcısı test ayarlarınız için kullanmayı seçebilirsiniz.|-   [(Azure Test planları) test sırasında tanılama verilerini toplayın](/azure/devops/test/collect-diagnostic-data?view=vsts)<br />-   [El ile testlerde (Azure Test planları) tanılama verilerini toplayın](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|

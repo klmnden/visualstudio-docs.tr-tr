@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d75ce507b34337c6311fe66c95732c6f6cd044ba
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 0a7da7d09bf9bcb419ba174a4eb60fe370e83cda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131992"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877120"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Hızlı Başlangıç: Visual Studio kullanarak ilk Python web uygulamanızı oluşturma
 
@@ -124,19 +124,19 @@ Python kodu en az bir web uygulamasını uygulamak için biraz eklemek artık ha
 
     ![Çözüm Gezgini'nde bir proje için başlangıç dosyası ayarı](media/quickstart-python-05-set-as-startup-file.png)
 
-1. Projeye sağ **Çözüm Gezgini** seçip **özellikleri**. Ardından **hata ayıklama** ayarlayın ve sekme **bağlantı noktası numarası** özelliğini `4449`. Visual Studio ile bir tarayıcı başlatır, bu adım sağlar `localhost:4449` eşleştirilecek `app.run` koddaki bağımsız değişkenler.
+2. Projeye sağ **Çözüm Gezgini** seçip **özellikleri**. Ardından **hata ayıklama** ayarlayın ve sekme **bağlantı noktası numarası** özelliğini `4449`. Visual Studio ile bir tarayıcı başlatır, bu adım sağlar `localhost:4449` eşleştirilecek `app.run` koddaki bağımsız değişkenler.
 
-1. Seçin **hata ayıklama > hata ayıklama olmadan Başlat** (**Ctrl**+**F5**), dosyaları değişiklikleri kaydeder ve uygulamayı çalıştırır.
+3. Seçin **hata ayıklama > hata ayıklama olmadan Başlat** (**Ctrl**+**F5**), dosyaları değişiklikleri kaydeder ve uygulamayı çalıştırır.
 
-1. İletinin bir komut penceresi görünür "* çalışan https://localhost:4449/", ve bir tarayıcı penceresi açılmalıdır `localhost:4449` iletisini gördüğünüz yerde "Hello, Python!" GET isteği, durumu 200 olan komut penceresinde de görünür.
+4. İletinin bir komut penceresi görünür "* çalışan <https://localhost:4449/>", ve bir tarayıcı penceresi açılmalıdır `localhost:4449` iletisini gördüğünüz yerde "Hello, Python!" GET isteği, durumu 200 olan komut penceresinde de görünür.
 
     Bir tarayıcı otomatik olarak açılmazsa, tercih ettiğiniz tarayıcıyı başlatın ve gidin `localhost:4449`.
 
     Yalnızca Python etkileşimli Kabuk komut penceresinde görürseniz veya o pencereyi kısaca ekranda yanıp, ayarladığınız olun *app.py* yukarıdaki 1. adımda başlangıç dosyası olarak.
 
-1. Gidin `localhost:4449/hello` , test etmek için dekoratör `/hello` kaynak de çalışır. Komut penceresinde durumu 200 olan yeniden GET isteği görüntülenir. 404 durum kodu komut penceresinde Göster görmek için bazı diğer URL'sini de deneyin çekinmeyin.
+5. Gidin `localhost:4449/hello` , test etmek için dekoratör `/hello` kaynak de çalışır. Komut penceresinde durumu 200 olan yeniden GET isteği görüntülenir. 404 durum kodu komut penceresinde Göster görmek için bazı diğer URL'sini de deneyin çekinmeyin.
 
-1. Uygulamayı durdurmak için komut penceresini kapatın, ardından tarayıcı penceresini kapatın.
+6. Uygulamayı durdurmak için komut penceresini kapatın, ardından tarayıcı penceresini kapatın.
 
 **Soru: Hata ayıklama olmadan Başlat komutu ve hata ayıklamayı Başlat arasındaki fark nedir?**
 

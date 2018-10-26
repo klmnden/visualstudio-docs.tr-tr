@@ -27,12 +27,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2364fa5ed202f9821ab276fb5cfbb9346a4b258c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4d841456ab95d06a7b586f7a8566f8530acbb021
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298148"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897504"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Visual Studio'da Çok İş Parçacıklı Uygulamalarda Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,16 +99,16 @@ Bir iş parçacığı, işletim sisteminin işlemci süresi ayırdığı yönerg
  [Kesme Noktalarını Kullanma](../debugger/using-breakpoints.md)  
  -   Tek bir iş parçacığında bir kesme noktası yerleştirmek istediğinizde kesme noktası filtrelerini kullanın.  
   
--   İzleme noktaları olmadan, programınızın yürütülmesini izlemek için etkinleştirin. Bu, kilitlenmeler gibi sorunları incelemek için yararlı olabilir.  
+- İzleme noktaları olmadan, programınızın yürütülmesini izlemek için etkinleştirin. Bu, kilitlenmeler gibi sorunları incelemek için yararlı olabilir.  
   
- [İş parçacığı oluşturma](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)  
- İş parçacığı kavramları [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] programlama, örnek kod dahil.  
+  [İş parçacığı oluşturma](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)  
+  İş parçacığı kavramları [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] programlama, örnek kod dahil.  
   
- [Bileşenlerinde çoklu iş parçacığı kullanımı](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
- Nasıl kullanılacağını parçacığı [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] bileşenleri.  
+  [Bileşenlerinde çoklu iş parçacığı kullanımı](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
+  Nasıl kullanılacağını parçacığı [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] bileşenleri.  
   
- [Eski Kod için Çoklu İş Parçacığı Kullanma Desteği (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)  
- MFC kullanan C++ programcıları için iş parçacığı oluşturma kavramları ve örnek kod.  
+  [Eski Kod için Çoklu İş Parçacığı Kullanma Desteği (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)  
+  MFC kullanan C++ programcıları için iş parçacığı oluşturma kavramları ve örnek kod.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İş parçacıklarında ve işlemlerde hata ayıklama](../debugger/debug-threads-and-processes.md)   

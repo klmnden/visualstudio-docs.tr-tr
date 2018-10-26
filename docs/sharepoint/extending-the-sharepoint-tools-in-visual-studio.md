@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 312c216f3670599653ddc6833f3e8f0e5cf5a8d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f360982f26cf2eb9ffe26678743bb514d9606ae7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42625930"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890681"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>SharePoint araçlarını Visual Studio'da genişletme
   Visual Studio'da SharePoint araçları birçok uygulama geliştirme senaryosu gereksinimlerini karşılayın. Ancak, bunlar burada, sizin veya diğer geliştiriciler gerektiren işlevleri sağlamaz çalışmaları fark edebilirsiniz. Bu durumlarda, ihtiyacınız olan işlevleri oluşturmak için SharePoint araçları genişletebilirsiniz.
@@ -38,11 +38,11 @@ ms.locfileid: "42625930"
 ### <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme
  Visual Studio'da kullanabileceğiniz **SharePoint bağlantıları** düğümünde **Sunucu Gezgini** birçok bileşenlerin bir veya daha fazla yerel SharePoint sitelerine bir hiyerarşik ağaç görünümünde görüntülemek için pencere. Ayrıca genişletebilirsiniz **SharePoint bağlantıları** aşağıdaki yollarla düğüm:
 
--   Kendi düğüm ekleyerek. Bu, varsayılan olarak görüntülenmez SharePoint siteleri bileşenlerinin görüntülemek istiyorsanız kullanışlıdır.
+- Kendi düğüm ekleyerek. Bu, varsayılan olarak görüntülenmez SharePoint siteleri bileşenlerinin görüntülemek istiyorsanız kullanışlıdır.
 
--   Var olan düğümleri genişleterek. Örneğin, var olan bir düğüme yeni bir alt düğüm ekleyebilirsiniz veya bir düğüm için bir kısayol menü öğesi ekleme ve bir geliştirici menü öğesini tıkladığında görevleri.
+- Var olan düğümleri genişleterek. Örneğin, var olan bir düğüme yeni bir alt düğüm ekleyebilirsiniz veya bir düğüm için bir kısayol menü öğesi ekleme ve bir geliştirici menü öğesini tıkladığında görevleri.
 
- Daha fazla bilgi için [Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+  Daha fazla bilgi için [Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
 ## <a name="development-computer-requirements"></a>Geliştirme bilgisayar gereksinimleri
  SharePoint araçları için uzantıları oluşturmak için geliştirme bilgisayarınıza Visual Studio'da SharePoint çözümleri oluşturmak için aynı gereksinimleri karşılamalıdır.

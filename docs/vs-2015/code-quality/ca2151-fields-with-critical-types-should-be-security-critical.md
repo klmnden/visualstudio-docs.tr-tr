@@ -14,15 +14,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e2627c13f496623d281ed5e3c486592b2a4de6e2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bbd3e62d58717b5c7d617960afe1d6f490dd2b44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253537"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951372"
 ---
 # <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151: Kritik türler içeren alanlar güvenlik açısından kritik olmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName||
@@ -43,7 +44,6 @@ ms.locfileid: "49253537"
    {
       Type1 m_field; // CA2151, transparent field of critical type
    }
-
 ```
 
  Bu örnekte, `m_field` güvenlik açısından kritik olan bir türü bir güvenlik saydam alanı.
@@ -77,7 +77,6 @@ ms.locfileid: "49253537"
       [SecurityCritical]
       Type1 m_field; // Fixed: critical type, critical field
    }
-
 ```
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında

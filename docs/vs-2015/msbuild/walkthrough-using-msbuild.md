@@ -16,12 +16,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d5970c7612e38b33e1f25d8e19b63a1042a9b6b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 56d8ea0c4b79764c1326c96b42748b8291349ac2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266701"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841428"
 ---
 # <a name="walkthrough-using-msbuild"></a>İzlenecek Yol: MSBuild Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "49266701"
   
 MSBuild, Microsoft ve Visual Studio için bir yapı platformudur. Bu izlenecek yol MSBuild'ın yapı taşlarını tanıtır ve MSBuild projelerini nasıl yazacağınızı, değiştireceğinizi ve hatalarını ayıklayacağınızı gösterir. Şu konularda bilgi edineceksiniz:  
   
--   Bir proje dosyasını oluşturma ve işleme.  
+- Bir proje dosyasını oluşturma ve işleme.  
   
--   Yapı özelliklerinin kullanılması  
+- Yapı özelliklerinin kullanılması  
   
--   Yapı öğelerinin kullanılması.  
+- Yapı öğelerinin kullanılması.  
   
- MSBuild'ı Visual Stuido'dan veya Komut Penceresi'nden çalıştırabilirsiniz. Bu izlenecek yolda, Visual Studio kullanarak bir MSBuild proje dosyası oluşturun. Visual Studio'da proje dosyasını düzenleyin ve projeyi oluşturmak ve sonuçları incelemek için bir Komut Penceresi kullanın.  
+  MSBuild'ı Visual Stuido'dan veya Komut Penceresi'nden çalıştırabilirsiniz. Bu izlenecek yolda, Visual Studio kullanarak bir MSBuild proje dosyası oluşturun. Visual Studio'da proje dosyasını düzenleyin ve projeyi oluşturmak ve sonuçları incelemek için bir Komut Penceresi kullanın.  
   
 ## <a name="creating-an-msbuild-project"></a>MSBuild Projesi Oluşturma  
  Visual Studio proje sistemi MSBuild'i temel alır. Bu, Visual Studio kullanarak yeni bir proje dosyası oluşturmayı kolaylaştırır. Bu bölümde, bir Visual C# proje dosyası oluşturun. Bunun yerine bir Visual Basic proje dosyası oluşturmayı seçebilirsiniz. Bu anlatım bağlamında, iki proje dosyası arasındaki fark önemsizdir.  
@@ -77,20 +77,20 @@ MSBuild, Microsoft ve Visual Studio için bir yapı platformudur. Bu izlenecek y
   
  Bir uygulama oluşturma işi yapılır [hedef](../msbuild/target-element-msbuild.md) ve [görev](../msbuild/task-element-msbuild.md) öğeleri.  
   
--   Görev, işin en küçük birimdir; başka bir deyişle yapının "atom" öğesidir. Görevler, girdileri ve çıktıları olabilen bağımsız yürütülebilir bileşenlerdir. Şu anda proje dosyasında başvurulan veya tanımlanan görev yoktur. Aşağıdaki bölümlerde proje dosyasına görevler ekleyin. Daha fazla bilgi için [görevleri](../msbuild/msbuild-tasks.md) konu.  
+- Görev, işin en küçük birimdir; başka bir deyişle yapının "atom" öğesidir. Görevler, girdileri ve çıktıları olabilen bağımsız yürütülebilir bileşenlerdir. Şu anda proje dosyasında başvurulan veya tanımlanan görev yoktur. Aşağıdaki bölümlerde proje dosyasına görevler ekleyin. Daha fazla bilgi için [görevleri](../msbuild/msbuild-tasks.md) konu.  
   
--   Hedef, görevlerin adlandırılmış bir dizisidir. Şu anda, proje dosyasının sonunda HTML yorumlarında bulunan iki hedef vardır: BeforeBuild ve AfterBuild.  
+- Hedef, görevlerin adlandırılmış bir dizisidir. Şu anda, proje dosyasının sonunda HTML yorumlarında bulunan iki hedef vardır: BeforeBuild ve AfterBuild.  
   
-    ```  
-    <Target Name="BeforeBuild">  
-    </Target>  
-    <Target Name="AfterBuild">  
-    </Target>  
-    ```  
+  ```  
+  <Target Name="BeforeBuild">  
+  </Target>  
+  <Target Name="AfterBuild">  
+  </Target>  
+  ```  
   
-     Daha fazla bilgi için [hedefleri](../msbuild/msbuild-targets.md) konu.  
+   Daha fazla bilgi için [hedefleri](../msbuild/msbuild-targets.md) konu.  
   
- Proje düğümü, oluşturulacak olan varsayılan hedefi seçen isteğe bağlı bir DefaultTargets özniteliğine sahiptir, bu durumda bu öznitelik Yapı'dır.  
+  Proje düğümü, oluşturulacak olan varsayılan hedefi seçen isteğe bağlı bir DefaultTargets özniteliğine sahiptir, bu durumda bu öznitelik Yapı'dır.  
   
 ```  
 <Project ToolsVersion="12.0" DefaultTargets="Build" ...  
@@ -111,28 +111,28 @@ MSBuild, Microsoft ve Visual Studio için bir yapı platformudur. Bu izlenecek y
   
 #### <a name="to-add-a-target-and-a-task"></a>Bir hedef ve bir görev eklemek için  
   
-1.  İçeri aktarma deyiminden hemen sonra proje dosyanıza şu satırları ekleyin:  
+1. İçeri aktarma deyiminden hemen sonra proje dosyanıza şu satırları ekleyin:  
   
-    ```  
-    <Target Name="HelloWorld">  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+   </Target>  
+   ```  
   
-     Bu, HelloWorld adlı bir hedef oluşturur. Proje dosyasını düzenlerken, IntelliSense desteğine sahip olduğunuzdan emin olun.  
+    Bu, HelloWorld adlı bir hedef oluşturur. Proje dosyasını düzenlerken, IntelliSense desteğine sahip olduğunuzdan emin olun.  
   
-2.  Sonuç bölümün aşağıdaki şekilde gözükmesi için HelloWorld hedefine satırlar ekleyin:  
+2. Sonuç bölümün aşağıdaki şekilde gözükmesi için HelloWorld hedefine satırlar ekleyin:  
   
-    ```  
-    <Target Name="HelloWorld">  
-      <Message Text="Hello"></Message>  <Message Text="World"></Message>  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+     <Message Text="Hello"></Message>  <Message Text="World"></Message>  
+   </Target>  
+   ```  
   
-3.  Proje dosyasını kaydedin.  
+3. Proje dosyasını kaydedin.  
   
- İleti görevi, MSBuild ile birlikte gelen birçok görevden biridir. Kullanılabilir görevlerin ve kullanım bilgilerinin tam listesi için bkz: [görev başvurusu](../msbuild/msbuild-task-reference.md).  
+   İleti görevi, MSBuild ile birlikte gelen birçok görevden biridir. Kullanılabilir görevlerin ve kullanım bilgilerinin tam listesi için bkz: [görev başvurusu](../msbuild/msbuild-task-reference.md).  
   
- İleti görevi Metin özniteliğinin dize değerini girdi olarak alır ve bu değeri çıktı cihazında gösterir. HelloWorld hedefi İleti görevini iki kere yürütür: ilki "Hello" iletisini ve diğeri ise "World" iletisini görüntülemek için.  
+   İleti görevi Metin özniteliğinin dize değerini girdi olarak alır ve bu değeri çıktı cihazında gösterir. HelloWorld hedefi İleti görevini iki kere yürütür: ilki "Hello" iletisini ve diğeri ise "World" iletisini görüntülemek için.  
   
 ## <a name="building-the-target"></a>Hedefi Oluşturma  
  Nden Msbuild'i çalıştırın **Visual Studio komut istemi** yukarıda tanımlanan HelloWorld hedefini oluşturmak için. Hedefi seçmek için /target veya /t komut satırı anahtarını kullanın.  
@@ -257,19 +257,19 @@ $(PropertyName)
   
 #### <a name="to-set-a-property-value-from-the-command-line"></a>Komut satırından bir özellik değerini ayarlamak için  
   
-1.  Gelen **komut penceresi**girin ve bu satırı yürütün:  
+1. Gelen **komut penceresi**girin ve bu satırı yürütün:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release  
+   ```  
   
-2.  Çıktıyı inceleyin. Şu satırı görmeniz gerekir:  
+2. Çıktıyı inceleyin. Şu satırı görmeniz gerekir:  
   
-    ```  
-    Configuration is Release.  
-    ```  
+   ```  
+   Configuration is Release.  
+   ```  
   
- MSBuild, Yapılandırma özelliğini oluşturur ve bu özelliğe "Yayın" değerini verir.  
+   MSBuild, Yapılandırma özelliğini oluşturur ve bu özelliğe "Yayın" değerini verir.  
   
 ## <a name="special-characters"></a>Özel Karakterler  
  Belirli karakterlerin MSBuild proje dosyalarında özel anlamı vardır. Bu karakterler örnekleri noktalı virgülleri (;) ve yıldız işaretlerini (*) içerir. Bu özel karakterlerin bir proje dosyasında sabit değer olarak kullanılması için, xx'in ASCII onaltılık değerini temsil ettiği %xx söz dizimi kullanılarak belirtilmeleri gerekir.  
@@ -278,27 +278,27 @@ $(PropertyName)
   
 #### <a name="to-use-special-characters-in-the-message-task"></a>İleti görevinde özel karakterler kullanmak için  
   
-1.  Kod düzenleyicisinden her iki İleti görevini şu satır ile değiştirin:  
+1. Kod düzenleyicisinden her iki İleti görevini şu satır ile değiştirin:  
   
-    ```  
-    <Message Text="%24(Configuration) is %22$(Configuration)%22" />  
-    ```  
+   ```  
+   <Message Text="%24(Configuration) is %22$(Configuration)%22" />  
+   ```  
   
-2.  Proje dosyasını kaydedin.  
+2. Proje dosyasını kaydedin.  
   
-3.  Gelen **komut penceresi**girin ve bu satırı yürütün:  
+3. Gelen **komut penceresi**girin ve bu satırı yürütün:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Çıktıyı inceleyin. Şu satırı görmeniz gerekir:  
+4. Çıktıyı inceleyin. Şu satırı görmeniz gerekir:  
   
-    ```  
-    $(Configuration) is "Debug"  
-    ```  
+   ```  
+   $(Configuration) is "Debug"  
+   ```  
   
- Daha fazla bilgi için [MSBuild özel karakterleri](../msbuild/msbuild-special-characters.md).  
+   Daha fazla bilgi için [MSBuild özel karakterleri](../msbuild/msbuild-special-characters.md).  
   
 ## <a name="build-items"></a>Yapı Öğeleri  
  Öğe, yapı sistemine girdi olarak kullanılan ve genellikle bir dosya adı olan bir bilgi parçasıdır. Örneğin, kaynak dosyalarını temsil eden bir öğe koleksiyonu öğeleri bir araya derlemek için Derleme adlı bir göreve geçirilebilir.  
@@ -338,31 +338,31 @@ $(PropertyName)
   
 #### <a name="to-examine-item-type-values"></a>Öğe türü değerlerini incelemek için  
   
-1.  Kod düzenleyicisinden HelloWorld hedef görevini şu kodla değiştirin:  
+1. Kod düzenleyicisinden HelloWorld hedef görevini şu kodla değiştirin:  
   
-    ```  
-    <Target Name="HelloWorld">  
-      <Message Text="Compile item type contains @(Compile)" />  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+     <Message Text="Compile item type contains @(Compile)" />  
+   </Target>  
+   ```  
   
-2.  Proje dosyasını kaydedin.  
+2. Proje dosyasını kaydedin.  
   
-3.  Gelen **komut penceresi**girin ve bu satırı yürütün:  
+3. Gelen **komut penceresi**girin ve bu satırı yürütün:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Çıktıyı inceleyin. Şu uzun satırı görmeniz gerekir:  
+4. Çıktıyı inceleyin. Şu uzun satırı görmeniz gerekir:  
   
-    ```  
-    Compile item type contains Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs  
-    ```  
+   ```  
+   Compile item type contains Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs  
+   ```  
   
- Bir öğe türünün değerleri varsayılan olarak virgüllerle ayrılır.  
+   Bir öğe türünün değerleri varsayılan olarak virgüllerle ayrılır.  
   
- Bir öğe türünün ayracını değiştirmek için, ItemType'ın öğe türü ve Ayırıcı'nın bir veya daha fazla ayırma karakterinin dizesi olduğu aşağıdaki söz dizimini kullanın:  
+   Bir öğe türünün ayracını değiştirmek için, ItemType'ın öğe türü ve Ayırıcı'nın bir veya daha fazla ayırma karakterinin dizesi olduğu aşağıdaki söz dizimini kullanın:  
   
 ```  
 @(ItemType, Separator)  
@@ -491,62 +491,62 @@ $(PropertyName)
   
 #### <a name="to-examine-item-metadata"></a>Öğenin meta verilerini incelemek için  
   
-1.  Kod düzenleyicisinden İleti görevini şu satır ile değiştirin:  
+1. Kod düzenleyicisinden İleti görevini şu satır ile değiştirin:  
   
-    ```  
-    <Message Text="Compile.DependentUpon: %(Compile.DependentUpon)" />  
-    ```  
+   ```  
+   <Message Text="Compile.DependentUpon: %(Compile.DependentUpon)" />  
+   ```  
   
-2.  Proje dosyasını kaydedin.  
+2. Proje dosyasını kaydedin.  
   
-3.  Gelen **komut penceresi**girin ve bu satırı yürütün:  
+3. Gelen **komut penceresi**girin ve bu satırı yürütün:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Çıktıyı inceleyin. Şu satırları görmeniz gerekir:  
+4. Çıktıyı inceleyin. Şu satırları görmeniz gerekir:  
   
-    ```  
-    Compile.DependentUpon:  
-    Compile.DependentUpon: Form1.cs  
-    Compile.DependentUpon: Resources.resx  
-    Compile.DependentUpon: Settings.settings  
-    ```  
+   ```  
+   Compile.DependentUpon:  
+   Compile.DependentUpon: Form1.cs  
+   Compile.DependentUpon: Resources.resx  
+   Compile.DependentUpon: Settings.settings  
+   ```  
   
- "Compile.DependentUpon" ifadesinin birkaç kez nasıl görüntülendiğine dikkat edin. Meta verilerin hedef içinde bu söz dizimi ile kullanımı "toplu işleme" ile sonuçlanır. Toplu işleme, hedef içindeki görevlerin her bir benzersiz meta veri değeri için bir kez çalıştırıldığı anlamına gelir. Bu ise ortak "for döngüsü" programlama yapısına eşdeğer olan MSBuild komut dosyasıdır. Daha fazla bilgi için [toplu işleme](../msbuild/msbuild-batching.md).  
+   "Compile.DependentUpon" ifadesinin birkaç kez nasıl görüntülendiğine dikkat edin. Meta verilerin hedef içinde bu söz dizimi ile kullanımı "toplu işleme" ile sonuçlanır. Toplu işleme, hedef içindeki görevlerin her bir benzersiz meta veri değeri için bir kez çalıştırıldığı anlamına gelir. Bu ise ortak "for döngüsü" programlama yapısına eşdeğer olan MSBuild komut dosyasıdır. Daha fazla bilgi için [toplu işleme](../msbuild/msbuild-batching.md).  
   
 ### <a name="well-known-metadata"></a>İyi Bilinen Meta Veriler  
  Öğe bir öğe listesine eklendiğinde bu öğe, bazı iyi bilinen meta verilere atanır. Örneğin, %(Filename) herhangi bir öğenin dosya adını döndürür. İyi bilinen meta verilerin tam bir listesi için bkz. [tanınmış öğe meta verileri](../msbuild/msbuild-well-known-item-metadata.md).  
   
 ##### <a name="to-examine-well-known-metadata"></a>İyi bilinen meta verileri incelemek için  
   
-1.  Kod düzenleyicisinden İleti görevini şu satır ile değiştirin:  
+1. Kod düzenleyicisinden İleti görevini şu satır ile değiştirin:  
   
-    ```  
-    <Message Text="Compile Filename: %(Compile.Filename)" />  
-    ```  
+   ```  
+   <Message Text="Compile Filename: %(Compile.Filename)" />  
+   ```  
   
-2.  Proje dosyasını kaydedin.  
+2. Proje dosyasını kaydedin.  
   
-3.  Gelen **komut penceresi**girin ve bu satırı yürütün:  
+3. Gelen **komut penceresi**girin ve bu satırı yürütün:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Çıktıyı inceleyin. Şu satırları görmeniz gerekir:  
+4. Çıktıyı inceleyin. Şu satırları görmeniz gerekir:  
   
-    ```  
-    Compile Filename: Form1  
-    Compile Filename: Form1.Designer  
-    Compile Filename: Program  
-    Compile Filename: AssemblyInfo  
-    Compile Filename: Resources.Designer  
-    Compile Filename: Settings.Designer  
-    ```  
+   ```  
+   Compile Filename: Form1  
+   Compile Filename: Form1.Designer  
+   Compile Filename: Program  
+   Compile Filename: AssemblyInfo  
+   Compile Filename: Resources.Designer  
+   Compile Filename: Settings.Designer  
+   ```  
   
- Yukarıdaki iki örneği karşılaştırarak, Derleme öğe türündeki her öğe DependentUpon meta verisine sahip değilken tüm öğelerin iyi bilinen Dosya Adı meta verisine sahip olduğunu görebilirsiniz.  
+   Yukarıdaki iki örneği karşılaştırarak, Derleme öğe türündeki her öğe DependentUpon meta verisine sahip değilken tüm öğelerin iyi bilinen Dosya Adı meta verisine sahip olduğunu görebilirsiniz.  
   
 ### <a name="metadata-transformations"></a>Meta Veri Dönüşümleri  
  Öğe listeleri yeni öğe listelerine dönüştürülebilir. Bir öğe listesini dönüştürmek için ItemType'ın öğe türünün adı olduğu ve MetadataName'in meta veri adı olduğu aşağıdaki söz dizimini kullanın:  
@@ -559,27 +559,27 @@ $(PropertyName)
   
 ##### <a name="to-transform-items-using-metadata"></a>Meta verileri kullanarak öğeleri dönüştürmek için  
   
-1.  Kod düzenleyicisinden İleti görevini şu satır ile değiştirin:  
+1. Kod düzenleyicisinden İleti görevini şu satır ile değiştirin:  
   
-    ```  
-    <Message Text="Backup files: @(Compile->'%(filename).bak')" />  
-    ```  
+   ```  
+   <Message Text="Backup files: @(Compile->'%(filename).bak')" />  
+   ```  
   
-2.  Proje dosyasını kaydedin.  
+2. Proje dosyasını kaydedin.  
   
-3.  Gelen **komut penceresi**girin ve bu satırı yürütün:  
+3. Gelen **komut penceresi**girin ve bu satırı yürütün:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Çıktıyı inceleyin. Şu satırı görmeniz gerekir:  
+4. Çıktıyı inceleyin. Şu satırı görmeniz gerekir:  
   
-    ```  
-    Backup files: Form1.bak;Form1.Designer.bak;Program.bak;AssemblyInfo.bak;Resources.Designer.bak;Settings.Designer.bak  
-    ```  
+   ```  
+   Backup files: Form1.bak;Form1.Designer.bak;Program.bak;AssemblyInfo.bak;Resources.Designer.bak;Settings.Designer.bak  
+   ```  
   
- Bu söz diziminde ifade edilen meta verilerin toplu işlemeye neden olmadığını unutmayın.  
+   Bu söz diziminde ifade edilen meta verilerin toplu işlemeye neden olmadığını unutmayın.  
   
 ## <a name="whats-next"></a>Sırada ne var?  
  Basit bir proje dosyası bir adım teker teker oluşturmayı öğrenmek için denemenin [izlenecek yol: sıfırdan bir MSBuild proje dosyası oluşturma](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  

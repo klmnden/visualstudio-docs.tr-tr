@@ -15,12 +15,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 75df1e1f2bbc5bc5c3bdd56b8c16f0587f18751b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 30a29c9b8921d72f717aea21ed202766f0874389
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263646"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950810"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Etki Alanına Özgü bir Dilde Doğrulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,17 +37,17 @@ Bir etki alanına özgü dil (DSL) yazarı, kullanıcı tarafından oluşturulan
 ## <a name="running-validation"></a>Doğrulama çalışıyor  
  Diğer bir deyişle, bir kullanıcı bir model düzenlerken, aşağıdaki eylemleri doğrulama, etki alanına özgü dil örneğini çalıştırabilirsiniz:  
   
--   Diyagrama sağ tıklayıp **doğrulama tüm**.  
+- Diyagrama sağ tıklayıp **doğrulama tüm**.  
   
--   DSL ve select Gezgini'nde üst düğümünü sağ tıklatın **tüm doğrulama**  
+- DSL ve select Gezgini'nde üst düğümünü sağ tıklatın **tüm doğrulama**  
   
--   Modeli kaydedin.  
+- Modeli kaydedin.  
   
--   Model açın.  
+- Model açın.  
   
--   Buna ek olarak, doğrulama, örneğin, bir menü komutu ya da bir değişikliğe yanıt olarak bir parçası olarak çalışan program kodu yazabilirsiniz.  
+- Buna ek olarak, doğrulama, örneğin, bir menü komutu ya da bir değişikliğe yanıt olarak bir parçası olarak çalışan program kodu yazabilirsiniz.  
   
- Tüm doğrulama hatalarını görünür **hata listesi** penceresi. Kullanıcı, bir hata iletisi, hatanın nedenini model öğelerini seçmek için çift tıklayabilirsiniz.  
+  Tüm doğrulama hatalarını görünür **hata listesi** penceresi. Kullanıcı, bir hata iletisi, hatanın nedenini model öğelerini seçmek için çift tıklayabilirsiniz.  
   
 ## <a name="defining-validation-constraints"></a>Doğrulama kısıtlamaları tanımlama  
  Doğrulama yöntemlerinin alan sınıfları veya ilişkileri, DSL'nin ekleyerek, doğrulama kısıtlamaları tanımlama. Doğrulama kullanıcı tarafından veya program denetiminin altında çalıştırıldığında bazılarını veya tümünü doğrulama yöntemlerinin yürütülür. Her yöntem sınıfının her örneği için uygulanır ve her sınıfta çeşitli doğrulama yöntemleri olabilir.  
@@ -59,37 +59,37 @@ Bir etki alanına özgü dil (DSL) yazarı, kullanıcı tarafından oluşturulan
   
 #### <a name="to-define-a-validation-constraint"></a>Doğrulama kısıtlaması tanımlamak için  
   
-1.  Doğrulamayı etkinleştirmek **Editor\Validation** düğüm:  
+1. Doğrulamayı etkinleştirmek **Editor\Validation** düğüm:  
   
-    1.  Açık **Dsl\DslDefinition.dsl**.  
+   1.  Açık **Dsl\DslDefinition.dsl**.  
   
-    2.  DSL Gezgini'nde **Düzenleyicisi** düğümünü seçip alt **doğrulama**.  
+   2.  DSL Gezgini'nde **Düzenleyicisi** düğümünü seçip alt **doğrulama**.  
   
-    3.  Özellikler penceresinde ayarlayın **kullanan** özelliklerine `true`. Tüm bu özellikleri ayarlamak oldukça kullanışlıdır.  
+   3.  Özellikler penceresinde ayarlayın **kullanan** özelliklerine `true`. Tüm bu özellikleri ayarlamak oldukça kullanışlıdır.  
   
-    4.  Tıklayın **tüm Şablonları Dönüştür** Çözüm Gezgini araç.  
+   4.  Tıklayın **tüm Şablonları Dönüştür** Çözüm Gezgini araç.  
   
-2.  Bir veya daha fazla alan sınıfları veya etki alanı ilişkileri için kısmi sınıf tanımları yazma. Yeni bir kod dosyasında bu tanımları yazma **Dsl** proje.  
+2. Bir veya daha fazla alan sınıfları veya etki alanı ilişkileri için kısmi sınıf tanımları yazma. Yeni bir kod dosyasında bu tanımları yazma **Dsl** proje.  
   
-3.  Bu öznitelik her sınıfıyla ön ek:  
+3. Bu öznitelik her sınıfıyla ön ek:  
   
-    ```csharp  
-    [ValidationState(ValidationState.Enabled)]  
-    ```  
+   ```csharp  
+   [ValidationState(ValidationState.Enabled)]  
+   ```  
   
-    -   Varsayılan olarak, bu öznitelik de türetilmiş sınıflar için doğrulama sağlayacaktır. Belirli bir türetilmiş sınıf için doğrulama devre dışı bırakmak isterseniz, kullanabileceğiniz `ValidationState.Disabled`.  
+   -   Varsayılan olarak, bu öznitelik de türetilmiş sınıflar için doğrulama sağlayacaktır. Belirli bir türetilmiş sınıf için doğrulama devre dışı bırakmak isterseniz, kullanabileceğiniz `ValidationState.Disabled`.  
   
-4.  Doğrulama yöntemlerinin sınıfları ekleyin. Her doğrulama yöntemi herhangi bir ada sahip ancak türünde bir parametreye sahip <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.  
+4. Doğrulama yöntemlerinin sınıfları ekleyin. Her doğrulama yöntemi herhangi bir ada sahip ancak türünde bir parametreye sahip <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.  
   
-     Bir veya daha fazla eklenmelidir `ValidationMethod` öznitelikleri:  
+    Bir veya daha fazla eklenmelidir `ValidationMethod` öznitelikleri:  
   
-    ```csharp  
-    [ValidationMethod (ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Menu ) ]  
-    ```  
+   ```csharp  
+   [ValidationMethod (ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Menu ) ]  
+   ```  
   
-     Yöntemi zaman yürütülür ValidationCategories belirtin.  
+    Yöntemi zaman yürütülür ValidationCategories belirtin.  
   
- Örneğin:  
+   Örneğin:  
   
 ```csharp  
 using Microsoft.VisualStudio.Modeling;  
@@ -132,21 +132,21 @@ public partial class ParentsHaveChildren
   
  Bu kod hakkında aşağıdaki noktalara dikkat edin:  
   
--   Doğrulama yöntemlerinin alan sınıfları veya etki alanı ilişkileri ekleyebilirsiniz. Bu tür için kodu **Dsl\Generated Code\Domain\*.cs**.  
+- Doğrulama yöntemlerinin alan sınıfları veya etki alanı ilişkileri ekleyebilirsiniz. Bu tür için kodu **Dsl\Generated Code\Domain\*.cs**.  
   
--   Her doğrulama yöntemi, sınıf ve alt sınıflarından her örneği için uygulanır. Bir etki alanı ilişkisi söz konusu olduğunda, her iki model öğeleri arasında bir bağlantı örneğidir.  
+- Her doğrulama yöntemi, sınıf ve alt sınıflarından her örneği için uygulanır. Bir etki alanı ilişkisi söz konusu olduğunda, her iki model öğeleri arasında bir bağlantı örneğidir.  
   
--   Doğrulama yöntemlerinin belirtilen herhangi bir sırada uygulanmaz ve her bir yöntemin herhangi bir sırada öngörülebilir kendi sınıfının örneklerine uygulanmaz.  
+- Doğrulama yöntemlerinin belirtilen herhangi bir sırada uygulanmaz ve her bir yöntemin herhangi bir sırada öngörülebilir kendi sınıfının örneklerine uygulanmaz.  
   
--   Bu tutarsız sonuçlara neden deposu içeriği güncelleştirmek bir doğrulama yöntemi için genellikle hatalı bir uygulama olmasıdır. Yöntem herhangi bir hata çağırarak bunun yerine, bildirmelisiniz `context.LogError`, `LogWarning` veya `LogInfo`.  
+- Bu tutarsız sonuçlara neden deposu içeriği güncelleştirmek bir doğrulama yöntemi için genellikle hatalı bir uygulama olmasıdır. Yöntem herhangi bir hata çağırarak bunun yerine, bildirmelisiniz `context.LogError`, `LogWarning` veya `LogInfo`.  
   
--   LogError çağrısında, model öğeleri veya kullanıcı hata iletisini çift tıkladığında seçilir ilişki bağlantılar listesini sağlayabilirsiniz.  
+- LogError çağrısında, model öğeleri veya kullanıcı hata iletisini çift tıkladığında seçilir ilişki bağlantılar listesini sağlayabilirsiniz.  
   
--   Program kodundaki modeli okuma hakkında daha fazla bilgi için bkz: [gezinme ve güncelleştirme Program kodundaki modeli](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+- Program kodundaki modeli okuma hakkında daha fazla bilgi için bkz: [gezinme ve güncelleştirme Program kodundaki modeli](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
- Örneğin, aşağıdaki etki alanı modeli için geçerlidir. ParentsHaveChildren ilişkisi, alt ve üst adlı rol yok.  
+  Örneğin, aşağıdaki etki alanı modeli için geçerlidir. ParentsHaveChildren ilişkisi, alt ve üst adlı rol yok.  
   
- ![DSL tanım diyagramı &#45; ailesi ağaç modeli](../modeling/media/familyt-person.png "FamilyT_Person")  
+  ![DSL tanım diyagramı &#45; ailesi ağaç modeli](../modeling/media/familyt-person.png "FamilyT_Person")  
   
 ## <a name="validation-categories"></a>Doğrulama kategorileri  
  İçinde <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> özniteliği, belirttiğiniz doğrulama yöntemi yeniden çalıştırıldığında.  
@@ -202,7 +202,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
   
  1 alan ilişkisine ait bir rolün çokluğu ayarlarsanız.. * veya 1..1, ancak kullanıcı oluşturmaz, bu ilişkinin bir bağlantı bir doğrulama hata iletisi görüntülenir.  
   
- DSL'nizi varsa, örneğin, kişi ve şehir ve ilişkisi olan bir ilişki PersonLivesInTown sınıfları **1..\***  belediye rolde hiçbir belediye sahip her kişi için bir hata iletisi görünür.  
+ DSL'nizi varsa, örneğin, kişi ve şehir ve ilişkisi olan bir ilişki PersonLivesInTown sınıfları **1..\\** * belediye rolde hiçbir belediye sahip her kişi için bir hata iletisi görünür.  
   
 ## <a name="running-validation-from-program-code"></a>Program kodundan çalışan doğrulama  
  Doğrulama erişme veya bir ValidationController oluşturarak çalıştırabilirsiniz. Kullanıcıya hata penceresinde görüntülenecek hataları için diyagramın DocData bağlı ValidationController kullanın. Örneğin, bir menü komutu yazıyorsanız `CurrentDocData.ValidationController` komut kümesi sınıfta kullanılabilir:  

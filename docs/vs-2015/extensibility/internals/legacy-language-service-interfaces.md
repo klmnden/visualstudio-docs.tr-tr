@@ -16,12 +16,12 @@ ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 654a0d7de3ad75c541d14a38a2a897adb731ea7a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d64ff7ec1aea24a5e98b3f37339639440e31bf42
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249216"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837249"
 ---
 # <a name="legacy-language-service-interfaces"></a>Eski Dil Hizmeti Arabirimleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ Belirli bir programlama dili için aynı anda bir dil hizmeti yalnızca bir örn
   
  Ayrı sınıfları herhangi bir sayıda çekirdek dil hizmeti arabirimleri uygulayabilir. Ancak, yaygın bir yaklaşım tek bir sınıfta aşağıdaki arayüzleri uygulamak yazmaktır:  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (isteğe bağlı)  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (isteğe bağlı)  
   
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Tüm dil hizmetlerinde arabirimi uygulanır. Dil hizmeti ve nasıl bir Renklendirici almak ilişkili dosya adı uzantıları dil yerelleştirilmiş adı gibi dil hizmeti hakkında bilgi sağlar.  
+  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Tüm dil hizmetlerinde arabirimi uygulanır. Dil hizmeti ve nasıl bir Renklendirici almak ilişkili dosya adı uzantıları dil yerelleştirilmiş adı gibi dil hizmeti hakkında bilgi sağlar.  
   
 ## <a name="additional-language-service-interfaces"></a>Ek dil Hizmeti Arabirimleri  
  Diğer arabirimleri dil hizmetinizle sağlanabilir. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] metin arabelleğinin her örneği için bu arabirimler ayrı bir örneğini ister. Bu nedenle, bu arabirimlerin her biri kendi nesne üzerinde uygulamalıdır. Aşağıdaki tabloda, metin arabelleği örneği başına tek örnek gerekli arabirimleri gösterir.  

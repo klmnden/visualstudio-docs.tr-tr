@@ -13,12 +13,12 @@ ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25296e78c0525b6bf3a39b808f64d26376e70bfe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cd1eefc0cab26f54ef7b1491c234d1187f5f79c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196514"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905941"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menüler ve komutlar için Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -191,29 +191,29 @@ ms.locfileid: "49196514"
   
  **Genel araç yönergeleri:**  
   
--   Her araç 24 piksel ortak denetimleri (kavrayıcı, taşma) sahiptir.  
+- Her araç 24 piksel ortak denetimleri (kavrayıcı, taşma) sahiptir.  
   
--   Her araç çubuğu düğmesi 22 doldurma dahil olmak üzere geniş pikseldir. Bölünmüş düğme simgesi yapma, başka bir 11 piksel genişliği ekler.  
+- Her araç çubuğu düğmesi 22 doldurma dahil olmak üzere geniş pikseldir. Bölünmüş düğme simgesi yapma, başka bir 11 piksel genişliği ekler.  
   
--   Çoğaltma komut araç çubukları arasında izin verilir.  
+- Çoğaltma komut araç çubukları arasında izin verilir.  
   
- **Belge özel araç çubukları** belirli bir dosya türü etkin olduğunda görünür ve farklı bir dosya türü etkin olduğunda kaybolur.  
+  **Belge özel araç çubukları** belirli bir dosya türü etkin olduğunda görünür ve farklı bir dosya türü etkin olduğunda kaybolur.  
   
--   Belge özel araç çubukları 12'den fazla düğmeleri olmayabilir.  
+- Belge özel araç çubukları 12'den fazla düğmeleri olmayabilir.  
   
--   Araç toplam genişliği 300 piksel aşamaz.  
+- Araç toplam genişliği 300 piksel aşamaz.  
   
--   Her dosya türü, bir gömülü araç veya belge özgü bir genel araç ancak ikisini birden sahip olabilir.  
+- Her dosya türü, bir gömülü araç veya belge özgü bir genel araç ancak ikisini birden sahip olabilir.  
   
- **Bağlama özel araç çubukları** belirli bir içerik görünmez kümesidir ve uzun süre etkin kalır eğilimindedir.  
+  **Bağlama özel araç çubukları** belirli bir içerik görünmez kümesidir ve uzun süre etkin kalır eğilimindedir.  
   
--   Tüm bağlama özel araç çubukları için düğme 18 sınırdır.  
+- Tüm bağlama özel araç çubukları için düğme 18 sınırdır.  
   
--   Ardından bağlam etkin olduğunda kullanıcıların çoğu bu araç çubuğunun komutları tutarlı bir şekilde görevlendirmek olmaz, bu araç bir bağlamı ile ilişkilendirme.  
+- Ardından bağlam etkin olduğunda kullanıcıların çoğu bu araç çubuğunun komutları tutarlı bir şekilde görevlendirmek olmaz, bu araç bir bağlamı ile ilişkilendirme.  
   
--   Araç içerik çıkarken kaybolur emin olun. Bu araç çubukları hiçbiri, başlangıçta görüntülenmesi gerekir.  
+- Araç içerik çıkarken kaybolur emin olun. Bu araç çubukları hiçbiri, başlangıçta görüntülenmesi gerekir.  
   
- **Hiçbir bağlam çubuklarıyla** hiçbir zaman otomatik olarak görünür. Bu, yalnızca, kullanıcı bunları etkinleştirir gösterir. Maksimum genişliğini 200 piksel altında tutun.  
+  **Hiçbir bağlam çubuklarıyla** hiçbir zaman otomatik olarak görünür. Bu, yalnızca, kullanıcı bunları etkinleştirir gösterir. Maksimum genişliğini 200 piksel altında tutun.  
   
 ### <a name="general-organization-and-shell-defined-groups"></a>Genel kuruluş ve Kabuk tanımlı grupları  
  Mevcut paylaşılan komutları ve komut gruplarını menüleri kullanın. Yeni bir komut tanımlanmış olması gerekiyorsa, mevcut bir paylaşılan komut grubunda yerleştirmeyi deneyin. Yeni bir grup tanımlanmış olması gerekiyorsa, ilgili komut grubu yakın var olan bir paylaşılan menüsündeki yeni bir üst düzey menü oluşturmadan önce yerleştirmeyi deneyin. Bu, IDE'de tutarlı komut yerleştirme sağlarken komut karmaşıklığı azaltır.  
@@ -278,19 +278,19 @@ ms.locfileid: "49196514"
   
  Kısayolları tanımlarken bu kuralları izleyin:  
   
--   **Denetim (Ctrl) ve anahtar dizileri işlevi (Fn) kullanın.**  
+- **Denetim (Ctrl) ve anahtar dizileri işlevi (Fn) kullanın.**  
   
--   **Sık kullanılan kısayollarını koruma.** En popüler kısayolları korur.  
+- **Sık kullanılan kısayollarını koruma.** En popüler kısayolları korur.  
   
--   **Düzenleyici kısayolları yazmak kolay hale getirir.** Geliştiricilerin çoğu kod yazarken gereken komutları türü kolay kısayolları bağlayın. Örneğin, **Edit.InvokeSmartTag** Ctrl gibi hızlı kısayol tuşu gerek duyduğu +/ ve olmayan Alt + Shift + F10.  
+- **Düzenleyici kısayolları yazmak kolay hale getirir.** Geliştiricilerin çoğu kod yazarken gereken komutları türü kolay kısayolları bağlayın. Örneğin, **Edit.InvokeSmartTag** Ctrl gibi hızlı kısayol tuşu gerek duyduğu +/ ve olmayan Alt + Shift + F10.  
   
--   **Tutarlı bir şekilde temalı kısayolları çaba harcar.**  
+- **Tutarlı bir şekilde temalı kısayolları çaba harcar.**  
   
--   **Uygulamaları hangi değiştirici tuşları belirlemek için Windows yönergeleri izleyin.** Belgenin tamamına Uygula komutlar gibi büyük ölçekli etkileri komutları için CTRL tuş birleşimlerini kullanın. Shift tuş birleşimleri genişletin veya standart bir kısayol tuşu eylemlerini tamamlamak için komutları kullanın. Ctrl + Alt birleşimleri kullanmayın.  
+- **Uygulamaları hangi değiştirici tuşları belirlemek için Windows yönergeleri izleyin.** Belgenin tamamına Uygula komutlar gibi büyük ölçekli etkileri komutları için CTRL tuş birleşimlerini kullanın. Shift tuş birleşimleri genişletin veya standart bir kısayol tuşu eylemlerini tamamlamak için komutları kullanın. Ctrl + Alt birleşimleri kullanmayın.  
   
--   **Fazlalık kısayolları kaldırın.** Eski bir özellik varsa, bir erişim anahtarı aynı komutu hızlı erişim sağlıyorsa, aşırı infrequency (az 10 kez gelen CEIP verilerini) veya Orta infrequency (daha az 100 kat daha CEIP verileri) ile kullanılan kısayollar kaldırılıyor göz önünde bulundurun. Örneğin: Alt H, C, Yardım/Contents açılır.  
+- **Fazlalık kısayolları kaldırın.** Eski bir özellik varsa, bir erişim anahtarı aynı komutu hızlı erişim sağlıyorsa, aşırı infrequency (az 10 kez gelen CEIP verilerini) veya Orta infrequency (daha az 100 kat daha CEIP verileri) ile kullanılan kısayollar kaldırılıyor göz önünde bulundurun. Örneğin: Alt H, C, Yardım/Contents açılır.  
   
- Kısayol kullanılabilirliğini denetlemek için basit bir yol değil. Bir kısayol eklemek istiyorsanız, şu adımları izleyin:  
+  Kısayol kullanılabilirliğini denetlemek için basit bir yol değil. Bir kısayol eklemek istiyorsanız, şu adımları izleyin:  
   
 1.  Listesini kontrol edin [Visual Studio 2013 kısayolları](http://visualstudioshortcuts.com/2013/) türlerinizle gruplandırmak için benzer komutları olup olmadığını belirlemek için.  
   

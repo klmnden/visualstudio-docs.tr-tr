@@ -28,12 +28,12 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69027b99d1c7db25f1d01e91d8e6d5c05141a2d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c5b7f053a2a63830e80247eeeeadcf34e2a6a351
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250490"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926104"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>UML modelleme projeleri ve diyagramları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,29 +50,29 @@ UML anlamanıza, tartışın ve tasarım yazılım sistemlerinin Yardım modelle
   
 #### <a name="to-create-a-diagram-and-add-it-to-a-project"></a>Bir diyagram oluşturma ve bunu projeye ekleyin  
   
-1.  Üzerinde **mimarisi** menüsünde seçin **yeni UML veya katman diyagramı**.  
+1. Üzerinde **mimarisi** menüsünde seçin **yeni UML veya katman diyagramı**.  
   
-2.  İçinde **Yeni Diyagram Ekle** iletişim kutusunda, istediğiniz modelleme diyagramında türüne tıklayın.  
+2. İçinde **Yeni Diyagram Ekle** iletişim kutusunda, istediğiniz modelleme diyagramında türüne tıklayın.  
   
-     ![Yeni Diyagram Ekle iletişim kutusu](../modeling/media/uml-adddiagram.png "UML_AddDiagram")  
+    ![Yeni Diyagram Ekle iletişim kutusu](../modeling/media/uml-adddiagram.png "UML_AddDiagram")  
   
-3.  Yeni Diyagram için bir ad yazın.  
+3. Yeni Diyagram için bir ad yazın.  
   
-4.  İçinde **modelleme projesine Ekle** kutusunda:  
+4. İçinde **modelleme projesine Ekle** kutusunda:  
   
-    -   Çözümünüzde zaten bir modelleme projesi seçin ve ardından **Tamam**.  
+   - Çözümünüzde zaten bir modelleme projesi seçin ve ardından **Tamam**.  
   
      \- veya -  
   
-    1.  Seçin **yeni modelleme projesi oluşturma**ve ardından **Tamam**.  
+   1.  Seçin **yeni modelleme projesi oluşturma**ve ardından **Tamam**.  
   
-    2.  İçinde **yeni modelleme projesi** iletişim kutusu, bir ad ve yeni proje için bir konum yazın ve ardından **Tamam**.  
+   2.  İçinde **yeni modelleme projesi** iletişim kutusu, bir ad ve yeni proje için bir konum yazın ve ardından **Tamam**.  
   
-         ![Yeni modelleme projesi oluştur iletişim kutusu](../modeling/media/uml-createmodel.png "UML_CreateModel")  
+        ![Yeni modelleme projesi oluştur iletişim kutusu](../modeling/media/uml-createmodel.png "UML_CreateModel")  
   
-         Çözümünüzü açık değilse, yeni projesi çözüme eklenir. Açık çözümünüz varsa, yeni bir çözüm için bir ad yazabilirsiniz.  
+        Çözümünüzü açık değilse, yeni projesi çözüme eklenir. Açık çözümünüz varsa, yeni bir çözüm için bir ad yazabilirsiniz.  
   
- Bir modelleme projesi zaten varsa, aşağıdaki yordamı kullanabilirsiniz.  
+   Bir modelleme projesi zaten varsa, aşağıdaki yordamı kullanabilirsiniz.  
   
 #### <a name="to-add-a-diagram-to-an-existing-modeling-project"></a>Varolan bir modelleme projesine bir diyagramı eklemek için  
   

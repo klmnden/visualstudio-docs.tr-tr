@@ -14,23 +14,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0cbbcbc57d07eaf6273545f5520e461c7578977
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 2e1faf28c05dec58117e5d34e21e7c8020ad3a4d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879091"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894293"
 ---
 # <a name="build-loggers"></a>Günlükçüleri derleme
 Günlükçüleri derleme çıkışını özelleştirebilir ve belirli bir yapı olaylarına yanıt olarak iletileri, hata veya uyarı görüntülemek bir yol sağlar. Her bir Günlükçü uygulayan bir .NET sınıfı uygulanır <xref:Microsoft.Build.Framework.ILogger> tanımlanan arabirimi *Microsoft.Build.Framework.dll* derleme.  
   
  Günlükçü uygularken kullanabileceğiniz iki yaklaşım vardır:  
   
--   Uygulama <xref:Microsoft.Build.Framework.ILogger> doğrudan arabirim.  
+- Uygulama <xref:Microsoft.Build.Framework.ILogger> doğrudan arabirim.  
   
--   Sınıfınıza Yardımcısı sınıfından türetilen <xref:Microsoft.Build.Utilities.Logger>, tanımlanan *Microsoft.Build.Utilities.dll* derleme. <xref:Microsoft.Build.Utilities.Logger> uygulayan <xref:Microsoft.Build.Framework.ILogger> ve bazı varsayılan uygulamalarını sağlar <xref:Microsoft.Build.Framework.ILogger> üyeleri.  
+- Sınıfınıza Yardımcısı sınıfından türetilen <xref:Microsoft.Build.Utilities.Logger>, tanımlanan *Microsoft.Build.Utilities.dll* derleme. <xref:Microsoft.Build.Utilities.Logger> uygulayan <xref:Microsoft.Build.Framework.ILogger> ve bazı varsayılan uygulamalarını sağlar <xref:Microsoft.Build.Framework.ILogger> üyeleri.  
   
- Bu konuda, türetilen bir basit bir Günlükçü yazılacağı nasıl açıklayacak <xref:Microsoft.Build.Utilities.Logger>, ve derleme olaylarını konsolunda belirli yanıt iletileri görüntüler.  
+  Bu konuda, türetilen bir basit bir Günlükçü yazılacağı nasıl açıklayacak <xref:Microsoft.Build.Utilities.Logger>, ve derleme olaylarını konsolunda belirli yanıt iletileri görüntüler.  
   
 ## <a name="register-for-events"></a>Olayları için kaydolun  
  Günlükçü amacı, yapı altyapısı tarafından raporlanan yapı ilerlemesini bilgi toplamak ve daha sonra bu bilgileri faydalı bir şekilde rapor sağlamaktır. Tüm günlükçüleri kılmalı <xref:Microsoft.Build.Utilities.Logger.Initialize%2A> Günlükçü olayları için kaydettiği olan yöntem. Bu örnekte Günlükçü için kayıtları <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>, <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted>, ve <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished> olayları.  

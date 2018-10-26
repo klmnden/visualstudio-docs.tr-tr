@@ -15,23 +15,23 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: susanno
 manager: douge
-ms.openlocfilehash: 210fb8ced645250789c9c1da0339abe0814656ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f33b9e82ee1248988c949a9edea9f09de0d368df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288398"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812575"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>.NET Framework bellek sorunlarını çözümleme
 Visual Studio tarafından yönetilen bellek çözümleyicisini kullanarak .NET Framework kodu içindeki bellek sızıntılarını ve verimsiz bellek kullanımını bulun. En düşük .NET Framework sürümü hedef kodun .NET Framework 4. 5 ' dir.  
   
  Bellek analizi aracı bilgileri analiz eder *düküm dosyalarında yığın verisine sahip* , bir uygulamanın belleğindeki nesnelerin bir kopyasını. Döküm (.dmp) dosyalarını Visual Studio IDE'den veya diğer sistem araçlarını kullanarak toplayabilirsiniz.  
   
--   Nesne türlerinin bellek kullanımı üzerindeki göreli etkisini anlamak ve uygulamanızda belleği verimsiz kullanan kodu bulmak için tek bir anlık görüntüyü anailz edebilirsiniz.  
+- Nesne türlerinin bellek kullanımı üzerindeki göreli etkisini anlamak ve uygulamanızda belleği verimsiz kullanan kodu bulmak için tek bir anlık görüntüyü anailz edebilirsiniz.  
   
--   Ayrıca karşılaştırabilirsiniz (*fark*) zaman içinde bellek neden iki anlık görüntü alanlar kodunuzda bulmak için bir uygulamanın kullanın.  
+- Ayrıca karşılaştırabilirsiniz (*fark*) zaman içinde bellek neden iki anlık görüntü alanlar kodunuzda bulmak için bir uygulamanın kullanın.  
   
- Yönetilen bellek çözümleyicisinin bir kılavuz için bkz. [üretimde .NET bellek sorunlarını tanılamak için Visual Studio 2013 kullanarak](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx) Visual Studio ALM + Team Foundation Server blog'daki.  
+  Yönetilen bellek çözümleyicisinin bir kılavuz için bkz. [üretimde .NET bellek sorunlarını tanılamak için Visual Studio 2013 kullanarak](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx) Visual Studio ALM + Team Foundation Server blog'daki.  
   
 ##  <a name="BKMK_Contents"></a> İçeriği  
  [.NET Framework uygulamalarında bellek kullanımı](#BKMK_Memory_use_in__NET_Framework_apps)  
@@ -68,32 +68,32 @@ Visual Studio tarafından yönetilen bellek çözümleyicisini kullanarak .NET F
   
  **Visual Studio'dan bir döküm toplamak için**  
   
-1.  Visual Studio projesinden başlatılan bir işlem için bir döküm dosyası oluşturabilirsiniz, veya hata ayıklayıcıyı çalışan bir işleme ekleyebilirsiniz. Bkz: [çalıştırma işlemleri iliştirme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+1. Visual Studio projesinden başlatılan bir işlem için bir döküm dosyası oluşturabilirsiniz, veya hata ayıklayıcıyı çalışan bir işleme ekleyebilirsiniz. Bkz: [çalıştırma işlemleri iliştirme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
-2.  Yürütmeyi durdurun. Hata ayıklayıcıyı durdurur seçtiğinizde **tümünü Kes** üzerinde **hata ayıklama** menüsünden veya bir özel durumda veya bir kesme noktası  
+2. Yürütmeyi durdurun. Hata ayıklayıcıyı durdurur seçtiğinizde **tümünü Kes** üzerinde **hata ayıklama** menüsünden veya bir özel durumda veya bir kesme noktası  
   
-3.  Üzerinde **hata ayıklama** menüsünde seçin **dökümü Farklı Kaydet**. İçinde **dökümü Farklı Kaydet** iletişim kutusunda bir konum belirtin ve emin **yığınlı** (varsayılan) seçili olduğundan **farklı kaydetme türü** listesi.  
+3. Üzerinde **hata ayıklama** menüsünde seçin **dökümü Farklı Kaydet**. İçinde **dökümü Farklı Kaydet** iletişim kutusunda bir konum belirtin ve emin **yığınlı** (varsayılan) seçili olduğundan **farklı kaydetme türü** listesi.  
   
- **İki bellek anlık görüntüsünü karşılaştırmak için**  
+   **İki bellek anlık görüntüsünü karşılaştırmak için**  
   
- Bir uygulamanın bellek kullanımındaki artışı analiz etmek için, uygulamanın tek bir örneğinden iki döküm dosyası toplayın.  
+   Bir uygulamanın bellek kullanımındaki artışı analiz etmek için, uygulamanın tek bir örneğinden iki döküm dosyası toplayın.  
   
- ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
+   ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
   
 ##  <a name="BKMK_Analyze_memory_use"></a> Bellek kullanımını analiz etme  
  [Nesne listesini filtreleme](#BKMK_Filter_the_list_of_objects) **&#124;** [tek bir anlık görüntüden bellek verileri analiz etme](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [iki bellek karşılaştırın anlık görüntüleri](#BKMK_Compare_two_memory_snapshots)  
   
  Bellek kullanımı sorunları için bir döküm dosyasını analiz etmek amacıyla:  
   
-1.  Visual Studio'da **dosya**, **açık** ve döküm dosyasını belirtin.  
+1. Visual Studio'da **dosya**, **açık** ve döküm dosyasını belirtin.  
   
-2.  Üzerinde **mini döküm dosya özeti** sayfasında **yönetilen bellekte Hata Ayıkla**.  
+2. Üzerinde **mini döküm dosya özeti** sayfasında **yönetilen bellekte Hata Ayıkla**.  
   
-     ![Bilgi döküm Özet sayfası dosya](../misc/media/mngdmem-dumpfilesummary.png "MNGDMEM_DumpFileSummary")  
+    ![Bilgi döküm Özet sayfası dosya](../misc/media/mngdmem-dumpfilesummary.png "MNGDMEM_DumpFileSummary")  
   
- Bellek çözümleyicisi, dosyayı analiz etmek için bir hata ayıklama oturumu başlatır ve sonuçları Yığın Görünümü sayfasında görüntüler:  
+   Bellek çözümleyicisi, dosyayı analiz etmek için bir hata ayıklama oturumu başlatır ve sonuçları Yığın Görünümü sayfasında görüntüler:  
   
- ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
+   ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
   
 ###  <a name="BKMK_Filter_the_list_of_objects"></a> Nesne listesini filtreleme  
  Varsayılan olarak, bellek çözümleyicisi, bir bellek anlık görüntüsündeki nesne listesini yalnızca kullanıcı kodundaki türleri ve örnekleri gösterecek şekilde ve yalnızca toplam kapsamalı boyutu toplam yığın boyutunun bir eşik yüzdesini geçen türleri gösterecek şekilde filtreler. Bu seçenekleri değiştirebilirsiniz **görünüm ayarlarını** listesi:  
@@ -117,28 +117,28 @@ Visual Studio tarafından yönetilen bellek çözümleyicisini kullanarak .NET F
 #### <a name="object-type-table"></a>Nesne türü tablosu  
  Üstteki tabloda, bellekte tutulan nesne türleri listelenir.  
   
--   **Sayısı** anlık görüntüde türün örneklerinin sayısını gösterir.  
+- **Sayısı** anlık görüntüde türün örneklerinin sayısını gösterir.  
   
--   **Boyut (bayt)** başvurularını tuttuğu nesnelerin boyutunu hariç, türünün tüm örneklerini boyutudur. Bu  
+- **Boyut (bayt)** başvurularını tuttuğu nesnelerin boyutunu hariç, türünün tüm örneklerini boyutudur. Bu  
   
--   **Kapsamlı boyut (bayt)** başvurulan nesnelerin boyutunu içerir.  
+- **Kapsamlı boyut (bayt)** başvurulan nesnelerin boyutunu içerir.  
   
- Örnekler simgesi seçebilirsiniz (![nesne türü sütun örneği simgeye](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) içinde **nesne türü** örneklerinin listesini görüntülemek için sütun yazın.  
+  Örnekler simgesi seçebilirsiniz (![nesne türü sütun örneği simgeye](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) içinde **nesne türü** örneklerinin listesini görüntülemek için sütun yazın.  
   
 #### <a name="instance-table"></a>Örneği tablosu  
  ![Örnek tablo](../misc/media/dbg-mma-instancestable.png "DBG_MMA_InstancesTable")  
   
--   **Örnek** nesnesinin nesne tanımlayıcısı görev yapan nesnenin bellek konumu  
+- **Örnek** nesnesinin nesne tanımlayıcısı görev yapan nesnenin bellek konumu  
   
--   **Değer** değer türlerinin gerçek değeri gösterir. Veri değerlerini bir veri ipucunda görüntülemek için bir başvuru türü adının üzerine gelebilirsiniz.  
+- **Değer** değer türlerinin gerçek değeri gösterir. Veri değerlerini bir veri ipucunda görüntülemek için bir başvuru türü adının üzerine gelebilirsiniz.  
   
-     ![Örnek bir veri ipucunda değerleri](../misc/media/dbg-mma-instancevaluesindatatip.png "DBG_MMA_InstanceValuesInDataTip")  
+   ![Örnek bir veri ipucunda değerleri](../misc/media/dbg-mma-instancevaluesindatatip.png "DBG_MMA_InstanceValuesInDataTip")  
   
--   **Boyut (bayt)** başvurularını tuttuğu nesnelerin boyutunu hariç nesnenin boyutu. Bu  
+- **Boyut (bayt)** başvurularını tuttuğu nesnelerin boyutunu hariç nesnenin boyutu. Bu  
   
--   **Kapsamlı boyut (bayt)** başvurulan nesnelerin boyutunu içerir.  
+- **Kapsamlı boyut (bayt)** başvurulan nesnelerin boyutunu içerir.  
   
- Varsayılan olarak, göre sıralanır türlerinin ve örneklerinin **kapsamlı boyut (bayt)**. Sıralama düzenini değiştirmek için listede bir sütun başlığı seçin.  
+  Varsayılan olarak, göre sıralanır türlerinin ve örneklerinin **kapsamlı boyut (bayt)**. Sıralama düzenini değiştirmek için listede bir sütun başlığı seçin.  
   
 #### <a name="paths-to-root"></a>Kök yolları  
   
@@ -148,17 +148,17 @@ Visual Studio tarafından yönetilen bellek çözümleyicisini kullanarak .NET F
   
 #### <a name="referenced-types--referenced-objects"></a>Başvurulan türleri / başvurulan nesneler  
   
--   Bir tür seçildiği için **nesne türü** tablo **başvurulan türleri** sekmesi seçili türdeki tüm nesneler tarafından tutulan başvurulan türlerin sayısı ve boyutu gösterir.  
+- Bir tür seçildiği için **nesne türü** tablo **başvurulan türleri** sekmesi seçili türdeki tüm nesneler tarafından tutulan başvurulan türlerin sayısı ve boyutu gösterir.  
   
--   Bir türün seçili bir örneği için **başvurulan nesneleri** seçilen örnek tarafından tutulan nesneleri gösterir. Veri değerlerini bir veri ipucunda görüntülemek için ada üzerine getirin.  
+- Bir türün seçili bir örneği için **başvurulan nesneleri** seçilen örnek tarafından tutulan nesneleri gösterir. Veri değerlerini bir veri ipucunda görüntülemek için ada üzerine getirin.  
   
- **Döngüsel başvurular**  
+  **Döngüsel başvurular**  
   
- Bir nesne, ilk nesneye doğrudan veya dolaylı olarak bir başvuru tutan ikinci bir nesneye başvurabilir. Bellek Çözümleyicisi bu durumla karşılaştığında başvuru yolunu genişletmeyi durdurur ve ekler bir **[döngü algılandı]** döküm ek açıklama ilk nesne ve durur.  
+  Bir nesne, ilk nesneye doğrudan veya dolaylı olarak bir başvuru tutan ikinci bir nesneye başvurabilir. Bellek Çözümleyicisi bu durumla karşılaştığında başvuru yolunu genişletmeyi durdurur ve ekler bir **[döngü algılandı]** döküm ek açıklama ilk nesne ve durur.  
   
- **Kök türleri**  
+  **Kök türleri**  
   
- Bellek çözümleyicisi, kök nesnelerine, tutulmakta olan başvuru türünü açıklayan ek açıklamalar ekler:  
+  Bellek çözümleyicisi, kök nesnelerine, tutulmakta olan başvuru türünü açıklayan ek açıklamalar ekler:  
   
 |Ek Açıklama|Açıklama|  
 |----------------|-----------------|  
@@ -176,17 +176,17 @@ Visual Studio tarafından yönetilen bellek çözümleyicisini kullanarak .NET F
 ###  <a name="BKMK_Compare_two_memory_snapshots"></a> İki bellek anlık görüntüsünü karşılaştırma  
  Bellek sızıntılarının kaynağı olabilecek nesneler bulmak üzere bir işlemin iki döküm dosyasını karşılaştırabilirsiniz. İlk (önceki) ve ikinci (sonraki) dosyanın toplanması arasındaki aralık, sızan nesne sayısı artışı kolayca görülebilecek kadar büyük olmalıdır. İki dosyayı karşılaştırmak için:  
   
-1.  İkinci döküm dosyasını açın ve ardından **yönetilen bellekte Hata Ayıkla** üzerinde **mini döküm dosya özeti** sayfası.  
+1. İkinci döküm dosyasını açın ve ardından **yönetilen bellekte Hata Ayıkla** üzerinde **mini döküm dosya özeti** sayfası.  
   
-2.  Bellek analizi raporu sayfasında açın **Select temel** listeleyin ve ardından **Gözat** ilk döküm dosyasını belirtin.  
+2. Bellek analizi raporu sayfasında açın **Select temel** listeleyin ve ardından **Gözat** ilk döküm dosyasını belirtin.  
   
- Çözümleyici sütunları arasındaki farkı görüntüler raporun üst bölmesine ekler **sayısı**, **boyutu**, ve **kapsamlı boyut** bu değerlere türleri Önceki anlık görüntü.  
+   Çözümleyici sütunları arasındaki farkı görüntüler raporun üst bölmesine ekler **sayısı**, **boyutu**, ve **kapsamlı boyut** bu değerlere türleri Önceki anlık görüntü.  
   
- ![Fark sütun türü listesinde](../misc/media/mngdmem-diffcolumns.png "MNGDMEM_DiffColumns")  
+   ![Fark sütun türü listesinde](../misc/media/mngdmem-diffcolumns.png "MNGDMEM_DiffColumns")  
   
- A **başvuru sayısı farkı** sütunu da eklenir **kök yolları** tablo.  
+   A **başvuru sayısı farkı** sütunu da eklenir **kök yolları** tablo.  
   
- ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
+   ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [VS ALM TFS Blog: Üretimde .NET bellek sorunlarını tanılamak için Visual Studio 2013 kullanarak.](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)   

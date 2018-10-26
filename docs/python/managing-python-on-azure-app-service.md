@@ -1,7 +1,7 @@
 ---
-title: Azure App Service'te Python'u yapılandırma
+title: (Windows) Azure App Service'te Python'ı yapılandırma
 description: Nasıl Azure App Service ve yapılandırma web uygulamaları için bu yorumlayıcı düzgün bir şekilde başvurmak için bir Python yorumlayıcısı ve kütüphaneler yükleyin.
-ms.date: 07/26/2018
+ms.date: 10/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 96c3ce9a8272493b66607ab9513ce1bb7f46817e
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 10da39ca8074148ac11e69be559af8da9931213e
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228909"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459874"
 ---
-# <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Azure App Service'te bir Python ortamını kurma
+# <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>(Windows) Azure App Service'te bir Python ortamını kurma
 
 > [!Important]
-> Microsoft, Python uzantıları için App Service Linux üzerinde App Service'e bir doğrudan dağıtım yerine bu makalede açıklanan şekilde kullanımdan kaldırmaya planlamaktadır. Uzantılar, yine de sırada çalışmaya devam eder. Linux üzerinde App Service'e dağıtmak için bkz. [Linux üzerinde Azure App Service'te bir Python web uygulaması oluşturma](/azure/app-service/containers/quickstart-python).
+> Microsoft kullanım dışı Python uzantıları için Windows üzerinde App Service'te doğrudan bir dağıtım için kullanıldığından bu makalede açıklanan şekilde [Linux üzerinde App Service'te](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 [Azure App Service](https://azure.microsoft.com/services/app-service/) REST API'leri kullanarak kendi istemciler veya olayla tetiklenen işlem tarafından kullanılan bir tarayıcı aracılığıyla erişilen siteleri oldukları olup, hizmet olarak platform sunan web uygulamaları için. App Service uygulamaları uygulamak için Python'ı kullanarak tam olarak destekler.
 

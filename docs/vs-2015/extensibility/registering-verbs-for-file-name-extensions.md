@@ -15,12 +15,12 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73555abcc1a3c6afebf6528cc493e62a403ad00a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d81916910eb4769801ae330c10edde24cb52f52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196332"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923413"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Dosya Adı Uzantıları için Fiil Kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ Bir uygulama bir dosya adı uzantısı ilişkilendirme genellikle bir kullanıc�
 ## <a name="registering-standard-verbs"></a>Standart fiiller kaydediliyor  
  İşletim sistemi, aşağıdaki standart fiiller tanır:  
   
--   Open  
+- Open  
   
--   Düzenle  
+- Düzenle  
   
--   Yürütme  
+- Yürütme  
   
--   Yazdırma  
+- Yazdırma  
   
--   Önizleme  
+- Önizleme  
   
- Mümkün olduğunda, standart bir fiil kaydedin. Açık bir fiil en yaygın seçenektir. Dosyayı açıp dosyayı düzenlemeye arasında NET bir fark varsa düzenleme fiili kullanın. Bir .htm dosyasının düzenleme bir HTML Düzenleyicisi başlatılır ancak örneğin, bir .htm dosyasının açma tarayıcı içinde görüntüler. Standart fiiller ile işletim sistemi yerel yerelleştirilmiştir.  
+  Mümkün olduğunda, standart bir fiil kaydedin. Açık bir fiil en yaygın seçenektir. Dosyayı açıp dosyayı düzenlemeye arasında NET bir fark varsa düzenleme fiili kullanın. Bir .htm dosyasının düzenleme bir HTML Düzenleyicisi başlatılır ancak örneğin, bir .htm dosyasının açma tarayıcı içinde görüntüler. Standart fiiller ile işletim sistemi yerel yerelleştirilmiştir.  
   
 > [!NOTE]
 >  Standart fiiller kaydederken açık anahtar için varsayılan değer ayarlı değil. Varsayılan değer menüsünde görüntü dizesini içerir. Bu dize standart fiiller için işletim sistemi sağlar.  

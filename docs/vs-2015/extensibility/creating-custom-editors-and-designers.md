@@ -16,27 +16,27 @@ ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1abb0905e276c2e9a2c5fc99b7d77edffedbb2d7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3067f9d54a91c02df63d3c22afda19da3b5707ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242601"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818022"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Özel Düzenleyiciler ve Tasarımcılar Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio tümleşik geliştirme ortamı (IDE), farklı türde bir düzenleyici barındırabilirsiniz:  
   
--   Visual Studio çekirdek Düzenleyicisi  
+- Visual Studio çekirdek Düzenleyicisi  
   
--   Özel düzenleyiciler  
+- Özel düzenleyiciler  
   
--   Dış düzenleyiciler  
+- Dış düzenleyiciler  
   
--   Tasarımcılar  
+- Tasarımcılar  
   
- Aşağıdaki bilgileri Düzenleyicisi ihtiyacınız türünü seçmenize yardımcı olur.  
+  Aşağıdaki bilgileri Düzenleyicisi ihtiyacınız türünü seçmenize yardımcı olur.  
   
 ## <a name="types-of-editor"></a>Düzenleyici türleri  
  Visual Studio çekirdek Düzenleyicisi hakkında daha fazla bilgi için bkz. [düzenleyiciyi ve dil hizmetlerini genişletme](../extensibility/extending-the-editor-and-language-services.md).  
