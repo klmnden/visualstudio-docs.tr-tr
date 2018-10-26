@@ -49,13 +49,13 @@ Zaten Visual Studio 2017'niz yüklüyse veya el ile yüklemeyi tercih ederseniz,
 
 1. [Visual Studio yükleyicisini indirin](/visualstudio/install/install-visual-studio), veya zaten yüklüyse açın.
 
-1. İstenen Visual Studio sürümünüz için **Değiştir**e (zaten yüklüyse) veya **Yükle**ye (yeni yüklemeler için) tıklayın.
+2. İstediğiniz Visual Studio sürümü için **Değiştir**e (zaten yüklüyse) veya **Yükle**ye (yeni yüklemeler için) tıklayın.
 
-1. **İşlemler** sekmesinden, **Mobil ve Oyun**a geçin ve **Unity ile oyun geliştirme** işlemini seçin.
+3. **İşlemler** sekmesinden, **Mobil ve Oyun**a geçin ve **Unity ile oyun geliştirme** işlemini seçin.
 
     ![Unity işlemi](media/vstu_unity-workload.png)
 
-1. Yükleyici penceresinin sağ alt köşesindeki **Değiştir**e (zaten yüklüyse) veya **Yükle**ye (yeni yüklemeler için) tıklayın.
+4. Yükleyici penceresinin sağ alt köşesindeki **Değiştir**e (zaten yüklüyse) veya **Yükle**ye (yeni yüklemeler için) tıklayın.
 
 ## <a name="configure-unity-for-use-with-visual-studio"></a>Unity'i Visual Studio ile kullanılacak şekilde yapılandırma
 
@@ -65,19 +65,19 @@ Zaten Visual Studio 2017'niz yüklüyse veya el ile yüklemeyi tercih ederseniz,
 
   ![Tercihleri seçin](media/vstu_unity-preferences.png)
 
-1. Tercihler iletişim kutusunda, **Dış Araçlar** sekmesini seçin.
+2. Tercihler iletişim kutusunda **Dış Araçlar** sekmesini seçin.
 
-1. Gelen **Harici Kod Düzenleyicisi** listesinden, istediğiniz Visual Studio sürümü listelenmişse seçin, aksi takdirde **Gözat...** .
+3. Gelen **Harici Kod Düzenleyicisi** listesinden, istediğiniz Visual Studio sürümü listelenmişse seçin, aksi takdirde **Gözat...** .
 
   ![Visual Studio'yu seçin](media/vstu_unity-external-tools.png)
 
-1. **Gözat...** seçili ise Visual Studio yükleme dizininin içindeki **Common7/IDE** klasörüne gidin ve **devenv.exe**yi seçin. Ardından **Aç**a tıklayın.
+4. **Gözat...** seçildiyse Visual Studio yükleme dizininin içindeki **Common7/IDE** klasörüne gidin ve **devenv.exe**yi seçin. Ardından **Aç**a tıklayın.
 
   ![Aç'ı seçin](media/vstu_browse-for-application.png)
 
-1. Visual Studio **Harici Kod Düzenleyicisi** listesinde seçildikten sonra, **Düzenleyici Ekleme** onay kutusunun seçili olduğundan emin olun.
+5. Visual Studio **Harici Kod Düzenleyicisi** listesinde seçildikten sonra, **Düzenleyici Ekleme** onay kutusunun seçili olduğundan emin olun.
 
-1. Yapılandırma işlemini tamamlamak için **Tercihler** penceresini kapatın.
+6. Yapılandırma işlemini tamamlamak için **Tercihler** penceresini kapatın.
 
 ## <a name="support-for-older-versions"></a>Eski sürümler için destek
 
@@ -88,7 +88,7 @@ Zaten Visual Studio 2017'niz yüklüyse veya el ile yüklemeyi tercih ederseniz,
    [Unity için Visual Studio 2015 Araçları'nı indirin](https://marketplace.visualstudio.com/items?itemName=SebastienLebreton.VisualStudio2015ToolsforUnity)
 
 > [!NOT]
-> Unity için Visual Studio Araçları Unity 5.2 ve üstünü, ayrıca Visual Studio Community, Professional, Premium veya Enterprise gibi uzantıları destekleyen bir Visual Studio sürmü gerektirir. Unity için Visual Studio Araçları'nın Unity yüklemenizde etkinleştirildiğini doğrulamak için **Yardım** menüsünde **Unity Hakkında**yı seçin ve pencerenin sol alt kısmında "Microsoft Visual Studio Araçları ve Unity için etkin" metninin varlığını kontrol edin.
+> Unity için Visual Studio Araçları Unity 5.2 ve üstünü, ayrıca Visual Studio Community, Professional, Premium veya Enterprise gibi uzantıları destekleyen bir Visual Studio sürmünü gerektirir. Unity için Visual Studio Araçları'nın Unity yüklemenizde etkinleştirildiğini doğrulamak için **Yardım** menüsünde **Unity Hakkında**yı seçin ve pencerenin sol alt kısmında "Microsoft Visual Studio Araçları ve Unity için etkin" metninin varlığını kontrol edin.
 > ![Unity hakkında](media/vstu_about-unity.png)
 
 ## <a name="next-steps"></a>Sonraki adımlar
