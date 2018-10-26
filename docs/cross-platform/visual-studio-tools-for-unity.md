@@ -25,7 +25,7 @@ Unity için Visual Studio Araçları, Visual Studio'yu Unity ile birlikte platfo
 
 Unity düzenleyicisi, oyun dünyanızı ortaya koymak için mükemmel olsa da bu düzenleyicide kod yazamazsınız. Unity için Visual Studio Araçları ile Unity projeniz için C# kullanarak düzenleyici ve oyun betikleri oluşturmak üzere Visual Studio'nun alışık olduğunuz kod düzenleme, hata ayıklama ve üretkenlik özelliklerini kullanabilir ve Visual Studio'nun güçlü hata ayıklama özelliklerini kullanarak hata ayıklayabilirsiniz.
 
-Ancak, birden fazla Unity için Visual Studio Araçları, Ayrıca Unity editor ile kapsamlı tümleştirme sahiptir; böylece sürekli basit görevleri gerçekleştirmek için daha az zaman geçiş geçireceksiniz, Unity özgü üretkenlik iyileştirmeleri sağlar ve Unity belgeleri parmaklarınızın ucunda koyar.
+Ancak Unity için Visual Studio Araçları bunlarla sınırlı değil. Unity düzenleyicisiyle kapsamlı bir tümleştirmeye de sahip olduğundan, basit görevleri gerçekleştirmek için bile daha az zaman harcamanıza ve Unity'ye özel üretkenlik geliştirmelerinden yararlanmanıza olanak sağlamanın yanı sıra Unity belgelerini parmaklarınızın ucuna getirir. 
 
 ## <a name="overview"></a>Genel Bakış
 
@@ -37,7 +37,7 @@ Unity geliştirmelerinde Visual Studio kullanmanın avantajlarına ilişkin gene
 
 ### <a name="intellisense-for-unity-messages"></a>Unity özellikleri için IntelliSense
 
-IntelliSense kod tamamlama, hızlı ve kolay hale getirir [API Unity iletilerini Uygula](using-visual-studio-tools-for-unity.md#intellisense-for-unity-api-messages) gibi `OnCollisionEnter`, kendi parametrelerini dahil.
+IntelliSense kod tamamlama özelliği, `OnCollisionEnter` gibi [Unity API iletilerini uygulamayı](using-visual-studio-tools-for-unity.md#intellisense-for-unity-api-messages) (parametrelerini dahil ederek) hızlı ve kolay hale getirir.
 
 ### <a name="superior-debugging"></a>Üst düzey hata ayıklama
 
