@@ -476,7 +476,7 @@ items:
               href: allocation-hooks-and-c-run-time-memory-allocations.md
           - name: Kanca işlevlerini raporlama
             href: report-hook-functions.md
-        - name: CRT Kitaplığını kullanarak bellek sızıntılarını bulma
+        - name: CRT kitaplığı ile bellek sızıntılarını bulma
           href: finding-memory-leaks-using-the-crt-library.md
       - name: Yerel kodda hata ayıklama SSS
         href: debugging-native-code-faqs.md
@@ -832,9 +832,9 @@ items:
   items:
   - name: Visual Studio’da hata ayıklayıcısı yenilikleri
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 96117c4b066013a5581d25abc10f0f08d78de274
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
+ms.openlocfilehash: cc81f388e27fff52376d384af8c45546ef2b13c4
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382837"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050384"
