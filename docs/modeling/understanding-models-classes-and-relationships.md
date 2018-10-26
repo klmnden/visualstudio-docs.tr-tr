@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 12363adb78c4fca7d5ef3416a2642a68a7c3eab7
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e1101a3e21fa75a180ec2421cdce37aa40bc9656
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860530"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861286"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Modelleri, Sınıfları ve İlişkileri Anlama
 Bir etki alanına özgü dil (DSL) yazma herhangi bir özel program kodu ile birlikte, DSL tanımı dosyası tarafından tanımlanır. DSL çözüm program kodunda çoğu bu dosyadan oluşturulur.
@@ -135,7 +135,7 @@ Bir etki alanına özgü dil (DSL) yazma herhangi bir özel program kodu ile bir
  Diyagram üzerine yazarak veya değiştirerek bir rolün çokluğu yapılandırma `Multiplicity` özelliğinde **özellikleri** penceresi. Aşağıdaki tabloda, bu özellik için ayarları açıklar.
 
 |Çokluk türü|Açıklama|
-|-----------------------|-----------------|
+|-|-|
 |0.. * (sıfır-çok)|Etki alanı sınıfın her örneğini birden fazla ilişki veya ilişki örneği olabilir.|
 |0..1 (bire sıfır)|Etki alanı sınıfın her örneğini birden fazla örneğini bir ilişki veya ilişki örneği olabilir.|
 |1..1 (bir tane)|Her etki alanı sınıf örneği, bir ilişkinin örneğini olabilir. Rol sınıfın herhangi bir örneğinden Bu ilişkinin birden fazla örneğini oluşturamazsınız. Doğrulama etkinse, rol sınıfın örneklerini ilişki örneğine sahip olduğunda doğrulama hatası görünür.|

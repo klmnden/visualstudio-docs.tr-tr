@@ -24,12 +24,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3c58bed9dd25cc9d25ad122b4c4c42f72ddf60f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0bf63fb2eedc03b62af46f3ecdf746aaee6dde09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848676"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Nasıl Yapılır: GPU İş Parçacıkları Penceresini Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,25 +38,25 @@ GPU iş parçacıkları penceresinde inceleyin ve uygulamada hata ayıklaması y
   
  GPU iş parçacıkları penceresi, her satır tüm sütunları aynı değerleri içeren GPU iş parçacıkları kümesini temsil eden bir tablo içeriyor. Sıralama, yeniden sıralama, kaldırmak ve sütunları olan öğeleri gruplayın. Bayrak, işaretsiz dondurma, (askıya alma) ve GPU iş parçacıkları penceresinden (devam) iş parçacıklarını çözme. Aşağıdaki sütunlar, GPU iş parçacıkları penceresinde görüntülenir:  
   
--   Özel dikkat edilmesi gereken istediğiniz bir iş parçacığını işaretle Bayrak sütunu.  
+- Özel dikkat edilmesi gereken istediğiniz bir iş parçacığını işaretle Bayrak sütunu.  
   
--   Sarı okun etkin bir iş parçacığı gösteren etkin iş parçacığı sütunu. Bir ok, burada hata ayıklayıcıya yürütmeyi kesmeden bir iş parçacığı belirtir.  
+- Sarı okun etkin bir iş parçacığı gösteren etkin iş parçacığı sütunu. Bir ok, burada hata ayıklayıcıya yürütmeyi kesmeden bir iş parçacığı belirtir.  
   
--   **İş parçacığı sayısı** sütunuyla aynı konumda iş parçacığı sayısını görüntüler.  
+- **İş parçacığı sayısı** sütunuyla aynı konumda iş parçacığı sayısını görüntüler.  
   
--   **Satırı** her iş parçacığı grubunun bulunduğu kod satırını görüntülüyor sütunu.  
+- **Satırı** her iş parçacığı grubunun bulunduğu kod satırını görüntülüyor sütunu.  
   
--   **Adresi** her iş parçacığı grubunun bulunduğu yönerge adresini görüntüleyen bir sütun. Bu sütun varsayılan olarak gizlidir.  
+- **Adresi** her iş parçacığı grubunun bulunduğu yönerge adresini görüntüleyen bir sütun. Bu sütun varsayılan olarak gizlidir.  
   
--   **Konumu** kaynak kodu konumu olan sütun.  
+- **Konumu** kaynak kodu konumu olan sütun.  
   
--   **Durumu** iş parçacığının etkin, engellenmiş, başlatılmamış veya tam olup olmadığını gösteren bir sütun.  
+- **Durumu** iş parçacığının etkin, engellenmiş, başlatılmamış veya tam olup olmadığını gösteren bir sütun.  
   
--   **Döşeme** satırdaki iş parçacıkları için döşeme dizinini gösteren sütunu.  
+- **Döşeme** satırdaki iş parçacıkları için döşeme dizinini gösteren sütunu.  
   
- Tablo üstbilgisinin kutucuğu ve iş parçacığı görüntülenmesini gösterir.  
+  Tablo üstbilgisinin kutucuğu ve iş parçacığı görüntülenmesini gösterir.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-display-the-gpu-threads-window"></a>GPU iş parçacıkları penceresini görüntülemek için  
   

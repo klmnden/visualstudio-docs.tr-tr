@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 7da550c3091be24ba8b7be008f0695038c2b2056
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e3cce1fcda4ccc9a4e61b5a02d719e1ceaa1d77d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244367"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816501"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Bir Visual C++ DLL Store uygulamaları için birim testi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -154,56 +154,56 @@ Bu konuda, Windows Store apps RooterLib DLL gösterir için unutmayacağınız b
   
 ##  <a name="BKMK_Couple_the_test_project_to_the_dll_project"></a> Birkaç dll projesi için test projesi  
   
-1.  RooterLib RooterLibTests projeye ekleyin.  
+1. RooterLib RooterLibTests projeye ekleyin.  
   
-    1.  Çözüm Gezgini'nde **RooterLibTests** proje ve ardından **başvuruları...**  kısayol menüsünde.  
+   1.  Çözüm Gezgini'nde **RooterLibTests** proje ve ardından **başvuruları...**  kısayol menüsünde.  
   
-    2.  RooterLib Proje Özellikleri iletişim kutusunda, genişletme **ortak özellikler** ve **çerçeve ve başvurular**.  
+   2.  RooterLib Proje Özellikleri iletişim kutusunda, genişletme **ortak özellikler** ve **çerçeve ve başvurular**.  
   
-    3.  Seçin **Yeni Başvuru Ekle...**  
+   3.  Seçin **Yeni Başvuru Ekle...**  
   
-    4.  İçinde **Başvuru Ekle** iletişim kutusunda **çözüm** seçip **projeleri**. Ardından **RouterLib** öğesi.  
+   4.  İçinde **Başvuru Ekle** iletişim kutusunda **çözüm** seçip **projeleri**. Ardından **RouterLib** öğesi.  
   
-2.  RooterLib üstbilgi dosyasına eklenecek **unittest1.cpp**.  
+2. RooterLib üstbilgi dosyasına eklenecek **unittest1.cpp**.  
   
-    1.  Açık **unittest1.cpp**.  
+   1.  Açık **unittest1.cpp**.  
   
-    2.  Bu kod için aşağıdaki ekleme `#include "CppUnitTest.h"` satırı:  
+   2.  Bu kod için aşağıdaki ekleme `#include "CppUnitTest.h"` satırı:  
   
-        ```cpp  
-        #include "..\RooterLib\RooterLib.h"  
-        ```  
+       ```cpp  
+       #include "..\RooterLib\RooterLib.h"  
+       ```  
   
-3.  İçeri aktarılan işlevini kullanan bir test ekleyin. Aşağıdaki kodu ekleyin **unittest1.cpp**:  
+3. İçeri aktarılan işlevini kullanan bir test ekleyin. Aşağıdaki kodu ekleyin **unittest1.cpp**:  
   
-    ```  
-    TEST_METHOD(BasicTest)  
-    {  
-        CRooterLib rooter;  
-        Assert::AreEqual(  
-            // Expected value:  
-            0.0,   
-            // Actual value:  
-            rooter.SquareRoot(0.0),   
-            // Tolerance:  
-            0.01,  
-            // Message:  
-            L"Basic test failed",  
-            // Line number - used if there is no PDB file:  
-            LINE_INFO());  
-    }  
+   ```  
+   TEST_METHOD(BasicTest)  
+   {  
+       CRooterLib rooter;  
+       Assert::AreEqual(  
+           // Expected value:  
+           0.0,   
+           // Actual value:  
+           rooter.SquareRoot(0.0),   
+           // Tolerance:  
+           0.01,  
+           // Message:  
+           L"Basic test failed",  
+           // Line number - used if there is no PDB file:  
+           LINE_INFO());  
+   }  
   
-    ```  
+   ```  
   
-4.  Çözümü oluşturun.  
+4. Çözümü oluşturun.  
   
-     Yeni test Test Gezgini'nde görünür **çalıştırılmamış testler** düğümü.  
+    Yeni test Test Gezgini'nde görünür **çalıştırılmamış testler** düğümü.  
   
-5.  Test Gezgini'nde seçin **tümünü Çalıştır**.  
+5. Test Gezgini'nde seçin **tümünü Çalıştır**.  
   
-     ![Temel Test geçirilen](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
+    ![Temel Test geçirilen](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
   
- Test ve kod projelerini ayarlama sahiptir ve doğrulandı, kod projesinde işlevleri çalıştırmak testlerini çalıştırabilirsiniz. Şimdi gerçek test ve kod yazmaya başlayabilirsiniz.  
+   Test ve kod projelerini ayarlama sahiptir ve doğrulandı, kod projesinde işlevleri çalıştırmak testlerini çalıştırabilirsiniz. Şimdi gerçek test ve kod yazmaya başlayabilirsiniz.  
   
 ##  <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Yinelemeli olarak testleri genişletme ve onları geçirin  
   
@@ -268,73 +268,73 @@ Bu konuda, Windows Store apps RooterLib DLL gösterir için unutmayacağınız b
   
 ##  <a name="BKMK_Debug_a_failing_test"></a> Başarısız bir test hatalarını ayıklama  
   
-1.  Başka bir test eklemek **unittest1.cpp**:  
+1. Başka bir test eklemek **unittest1.cpp**:  
   
-    ```  
-    // Verify that negative inputs throw an exception.  
-     TEST_METHOD(NegativeRangeTest)  
-     {  
-       wchar_t message[200];  
-       CRooterLib rooter;  
-       for (double v = -0.1; v > -3.0; v = v - 0.5)  
-       {  
-         try   
-         {  
-           // Should raise an exception:  
-           double result = rooter.SquareRoot(v);  
-  
-           swprintf_s(message, L"No exception for input %g", v);  
-           Assert::Fail(message, LINE_INFO());  
-         }  
-         catch (std::out_of_range ex)  
-         {  
-           continue; // Correct exception.  
-         }  
-         catch (...)  
-         {  
-           swprintf_s(message, L"Incorrect exception for %g", v);  
-           Assert::Fail(message, LINE_INFO());  
-         }  
-       }  
-    };  
-  
-    ```  
-  
-2.  Test Gezgini'nde seçin **tümünü Çalıştır**.  
-  
-     Test başarısız olur. Test adı, Test Gezgini'nde seçin. Onaylama başarısız vurgulanır. Hata iletisi, Test Gezgini ayrıntı bölmesinde görünür.  
-  
-     ![Başarısız NegativeRangeTests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
-  
-3.  Testin neden başarısız görmek için işlev adım:  
-  
-    1.  Başında bir kesme noktası ayarlamak `SquareRoot` işlevi.  
-  
-    2.  Başarısız test kısayol menüsünde **seçilen Testlerde Hata Ayıkla**.  
-  
-         Kesme noktasında çalıştırma sona erdiğinde, kodda adım adım.  
-  
-    3.  Kodu **RooterLib.cpp** istisna yakalamak için:  
-  
-        ```  
-        #include <stdexcept>  
-        ...  
-        double CRooterLib::SquareRoot(double v)  
+   ```  
+   // Verify that negative inputs throw an exception.  
+    TEST_METHOD(NegativeRangeTest)  
+    {  
+      wchar_t message[200];  
+      CRooterLib rooter;  
+      for (double v = -0.1; v > -3.0; v = v - 0.5)  
+      {  
+        try   
         {  
-            //Validate the input parameter:  
-            if (v < 0.0)   
-            {  
-              throw std::out_of_range("Can't do square roots of negatives");  
-            }  
-        ...  
+          // Should raise an exception:  
+          double result = rooter.SquareRoot(v);  
   
-        ```  
+          swprintf_s(message, L"No exception for input %g", v);  
+          Assert::Fail(message, LINE_INFO());  
+        }  
+        catch (std::out_of_range ex)  
+        {  
+          continue; // Correct exception.  
+        }  
+        catch (...)  
+        {  
+          swprintf_s(message, L"Incorrect exception for %g", v);  
+          Assert::Fail(message, LINE_INFO());  
+        }  
+      }  
+   };  
   
-    1.  Test Gezgini'nde seçin **tümünü Çalıştır** test düzeltilmiş yöntemi ve bir regresyon sunulan henüz emin olun.  
+   ```  
   
- Artık tüm sınamaları geçmesi.  
+2. Test Gezgini'nde seçin **tümünü Çalıştır**.  
   
- ![Tüm sınamaları geçmesi](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
+    Test başarısız olur. Test adı, Test Gezgini'nde seçin. Onaylama başarısız vurgulanır. Hata iletisi, Test Gezgini ayrıntı bölmesinde görünür.  
+  
+    ![Başarısız NegativeRangeTests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
+  
+3. Testin neden başarısız görmek için işlev adım:  
+  
+   1.  Başında bir kesme noktası ayarlamak `SquareRoot` işlevi.  
+  
+   2.  Başarısız test kısayol menüsünde **seçilen Testlerde Hata Ayıkla**.  
+  
+        Kesme noktasında çalıştırma sona erdiğinde, kodda adım adım.  
+  
+   3.  Kodu **RooterLib.cpp** istisna yakalamak için:  
+  
+       ```  
+       #include <stdexcept>  
+       ...  
+       double CRooterLib::SquareRoot(double v)  
+       {  
+           //Validate the input parameter:  
+           if (v < 0.0)   
+           {  
+             throw std::out_of_range("Can't do square roots of negatives");  
+           }  
+       ...  
+  
+       ```  
+  
+   1.  Test Gezgini'nde seçin **tümünü Çalıştır** test düzeltilmiş yöntemi ve bir regresyon sunulan henüz emin olun.  
+  
+   Artık tüm sınamaları geçmesi.  
+  
+   ![Tüm sınamaları geçmesi](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
 ##  <a name="BKMK_Refactor_the_code_without_changing_tests"></a> Testleri değiştirmeden kodu yeniden düzenleme  
   

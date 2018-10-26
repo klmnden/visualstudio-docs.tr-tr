@@ -23,12 +23,12 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3fe8a0d33b0e9be8eecdc55ac68d23138f6506d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eed16e010c4fc070b9cc8be57731c97c2f03b2ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177846"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862287"
 ---
 # <a name="uml-activity-diagrams-reference"></a>UML Etkinlik Diyagramları: Başvuru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ Bir *etkinlik diyagramı* yazılım işlem veya iş sürecini, bir dizi eylem i�
   
  Etkinlik diyagramı, aşağıdaki örneklerde gibi çeşitli türlerde işlemleri tanımlamak için kullanabilirsiniz:  
   
--   Bir iş sürecini veya kullanıcıların sisteminizi arasındaki iş akışı. Daha fazla bilgi için [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).  
+- Bir iş sürecini veya kullanıcıların sisteminizi arasındaki iş akışı. Daha fazla bilgi için [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).  
   
--   Bir kullanım örneği, adımların. Daha fazla bilgi için [UML Kullanım durumu diyagramları: yönergeler](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Bir kullanım örneği, adımların. Daha fazla bilgi için [UML Kullanım durumu diyagramları: yönergeler](../modeling/uml-use-case-diagrams-guidelines.md).  
   
--   Yazılım protokol, diğer bir deyişle, izin verilen dizileri bileşenleri arasındaki etkileşimler dizesi.  
+- Yazılım protokol, diğer bir deyişle, izin verilen dizileri bileşenleri arasındaki etkileşimler dizesi.  
   
--   Bir yazılım algoritması.  
+- Bir yazılım algoritması.  
   
- Bu konuda, etkinlik diyagramlarını kullanabilirsiniz öğeleri açıklar. Daha ayrıntılı etkinlik çizim hakkında bilgi için bkz [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md). UML etkinlik diyagramı oluşturmak için **mimarisi** menüsünü tıklatın **yeni UML veya katman diyagramı**. Genel olarak modelleme diyagramları çizmek hakkında daha fazla bilgi için bkz. [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
+  Bu konuda, etkinlik diyagramlarını kullanabilirsiniz öğeleri açıklar. Daha ayrıntılı etkinlik çizim hakkında bilgi için bkz [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md). UML etkinlik diyagramı oluşturmak için **mimarisi** menüsünü tıklatın **yeni UML veya katman diyagramı**. Genel olarak modelleme diyagramları çizmek hakkında daha fazla bilgi için bkz. [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
   
 ## <a name="reading-activity-diagrams"></a>Etkinlik diyagramları okuma  
  Aşağıdaki bölümlerde tablolar etkinlik diyagramı ve ana özelliklerini kullandığınız öğeleri açıklar. Öğelerin özelliklerinin tam listesi için bkz. [etkinlik diyagramlarındaki öğelerin özellikleri](../modeling/properties-of-elements-on-uml-activity-diagrams.md).  

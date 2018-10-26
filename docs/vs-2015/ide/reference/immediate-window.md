@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 87f8cd822dcd67ff7837dcaa31e47c23e0a0550b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: be77104c4570068cbebf6c25801f600757a6ee0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203677"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850431"
 ---
 # <a name="immediate-window"></a>Komut Penceresi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,31 +58,31 @@ ms.locfileid: "49203677"
   
 #### <a name="to-execute-a-function-at-design-time"></a>Tasarım zamanında bir işlevi yürütmek için  
   
-1.  Aşağıdaki kodu kopyalayın bir [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] konsol uygulaması:  
+1. Aşağıdaki kodu kopyalayın bir [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] konsol uygulaması:  
   
-    ```  
-    Module Module1  
+   ```  
+   Module Module1  
   
-        Sub Main()  
-            MyFunction(5)  
-        End Sub  
+       Sub Main()  
+           MyFunction(5)  
+       End Sub  
   
-        Function MyFunction(ByVal input as Integer) As Integer  
-            Return input * 2  
-        End Function  
+       Function MyFunction(ByVal input as Integer) As Integer  
+           Return input * 2  
+       End Function  
   
-    End Module  
-    ```  
+   End Module  
+   ```  
   
-2.  Üzerinde **hata ayıklama** menüsünü tıklatın **Windows**ve ardından **hemen**.  
+2. Üzerinde **hata ayıklama** menüsünü tıklatın **Windows**ve ardından **hemen**.  
   
-3.  Tür `?MyFunction(2)` içinde **hemen** penceresi ve Enter tuşuna basın.  
+3. Tür `?MyFunction(2)` içinde **hemen** penceresi ve Enter tuşuna basın.  
   
-     **Hemen** penceresi çalıştırılacağı `MyFunction` ve görüntüleme `4`.  
+    **Hemen** penceresi çalıştırılacağı `MyFunction` ve görüntüleme `4`.  
   
- İşlev veya alt yordam bir kesme noktası içeriyorsa [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] uygun noktada yürütmeyi keser. Ardından, programınızın durumunu incelemek için hata ayıklayıcı penceresini kullanabilirsiniz. Daha fazla bilgi için [izlenecek yol: tasarım zamanında hata ayıklama](../../debugger/walkthrough-debugging-at-design-time.md).  
+   İşlev veya alt yordam bir kesme noktası içeriyorsa [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] uygun noktada yürütmeyi keser. Ardından, programınızın durumunu incelemek için hata ayıklayıcı penceresini kullanabilirsiniz. Daha fazla bilgi için [izlenecek yol: tasarım zamanında hata ayıklama](../../debugger/walkthrough-debugging-at-design-time.md).  
   
- Bir yürütme ortamı gerektiren proje türlerinde tasarım zamanı ifade değerlendirmesi kullanamazsınız dahil olmak üzere [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)] projeleri, Web projeleri, akıllı cihaz projeleri ve SQL projeleri.  
+   Bir yürütme ortamı gerektiren proje türlerinde tasarım zamanı ifade değerlendirmesi kullanamazsınız dahil olmak üzere [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)] projeleri, Web projeleri, akıllı cihaz projeleri ve SQL projeleri.  
   
 ### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>Çoklu proje çözümlerinde tasarım zamanı ifade değerlendirmesi  
  Tasarım zamanı ifade değerlendirmesi için bağlamı oluşturulurken [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Çözüm Gezgini'nde seçili olan projeye başvurur. Çözüm Gezgini'nde proje seçtiyseniz [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] başlangıç projesine karşı işlevi değerlendirmeye çalışır. İşlev geçerli bağlamda değerlendirilemezse, bir hata iletisi alırsınız. Çözümün başlangıç projesi olmayan bir projede bir işlevi değerlendirmeye çalışıyorsanız ve bir hata alırsanız, Çözüm Gezgini'nde projeyi seçmeyi deneyin ve değerlendirmeyi yeniden deneyin.  

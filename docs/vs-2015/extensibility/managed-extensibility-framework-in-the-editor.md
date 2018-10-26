@@ -15,12 +15,12 @@ ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7fb7214f4cd9d338c06e9f1eba5f1cc2c50fbc0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 65e3c544fc5e571368afb9872e6e13fda128e79a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215676"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877588"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Düzenleyicide Managed Extensibility Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Düzenleyici, Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşenleri kul
 ### <a name="component-parts-and-composition-containers"></a>Bileşen parçalarına ve kapsayıcıları oluşturma  
  Bir sınıf veya bir (veya her ikisi) birini yapmak için bir sınıf üyesi bir bileşenin bir parçasıdır:  
   
--   Başka bir bileşeni kullanma  
+- Başka bir bileşeni kullanma  
   
--   Başka bir bileşen tarafından tüketilen  
+- Başka bir bileşen tarafından tüketilen  
   
- Örneğin, bir ambar envanteri bileşeni tarafından sağlanan ürün kullanılabilirlik verileri bağlı olduğu bir giriş üretilmekte olan alışveriş bir uygulama düşünün. MEF bağlamında, Envanter bölümü için *dışarı* ürün kullanılabilirlik verileri ve sipariş girişi bölümü can *alma* veri. Sipariş girişi ve envanter bölümlerini diğer hakkında bilmeniz gerekmez; *kapsayıcının* (konak uygulama tarafından sağlanan) dışarı aktarmaları kümesi bakımını yapma ve dışarı aktarmaları çözümleme sorumludur ve içeri aktarır.  
+  Örneğin, bir ambar envanteri bileşeni tarafından sağlanan ürün kullanılabilirlik verileri bağlı olduğu bir giriş üretilmekte olan alışveriş bir uygulama düşünün. MEF bağlamında, Envanter bölümü için *dışarı* ürün kullanılabilirlik verileri ve sipariş girişi bölümü can *alma* veri. Sipariş girişi ve envanter bölümlerini diğer hakkında bilmeniz gerekmez; *kapsayıcının* (konak uygulama tarafından sağlanan) dışarı aktarmaları kümesi bakımını yapma ve dışarı aktarmaları çözümleme sorumludur ve içeri aktarır.  
   
- Kapsayıcının <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>, genellikle ana bilgisayar tarafından sahiplenilir. Kapsayıcının tutan bir *Kataloğu* dışarı aktarılan bileşen bölümleri.  
+  Kapsayıcının <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>, genellikle ana bilgisayar tarafından sahiplenilir. Kapsayıcının tutan bir *Kataloğu* dışarı aktarılan bileşen bölümleri.  
   
 ### <a name="exporting-and-importing-component-parts"></a>Bileşen parçalarına alma ve verme  
  Bir ortak sınıf ya da genel bir sınıf (özellik veya yöntem) üyesi uygulanan sürece, herhangi bir işlevi dışa aktarabilirsiniz. Bileşen Bölümü'nden türetilen gerekmez <xref:System.ComponentModel.Composition.Primitives.ComposablePart>. Bunun yerine, eklemelisiniz bir <xref:System.ComponentModel.Composition.ExportAttribute> özniteliği sınıf veya dışarı aktarmak istediğiniz sınıf üyesi. Bu öznitelik belirtir *sözleşme* hangi başka bir bileşen tarafından bölümü işlevinizi içeri aktarabilirsiniz.  

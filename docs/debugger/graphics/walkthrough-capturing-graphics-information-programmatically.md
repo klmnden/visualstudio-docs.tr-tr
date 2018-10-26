@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50bf9d042cd89a8f53cf63208c485682d46e68f4
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 659e370d664b3db2c3624d73164b4489cc2680a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510432"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933293"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>İzlenecek Yol: Grafik Bilgilerini Programla Yakalama
 Kullanabileceğiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] grafik tanılama Direct3D uygulamadan grafik bilgilerini programla yakalama.  
@@ -69,24 +69,24 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>IDXGraphicsAnalysis arabirimi almak için  
   
--   DXGI hata ayıklama arabirimine IDXGraphicsAnalysis arabirimi bağlama için aşağıdaki kodu kullanın.  
+- DXGI hata ayıklama arabirimine IDXGraphicsAnalysis arabirimi bağlama için aşağıdaki kodu kullanın.  
   
-    ```cpp
-    IDXGraphicsAnalysis* pGraphicsAnalysis;  
-    HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
-    ```  
+  ```cpp
+  IDXGraphicsAnalysis* pGraphicsAnalysis;  
+  HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
+  ```  
   
-     Kontrol ettiğinizden emin olun `HRESULT` tarafından döndürülen [DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1) kullanmadan önce geçerli bir arabirim başlamanızı sağlamak için:  
+   Kontrol ettiğinizden emin olun `HRESULT` tarafından döndürülen [DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1) kullanmadan önce geçerli bir arabirim başlamanızı sağlamak için:  
   
-    ```cpp
-    if (FAILED(getAnalysis))  
-    {  
-        // Abort program or disable programmatic capture in your app.  
-    }  
-    ```  
+  ```cpp
+  if (FAILED(getAnalysis))  
+  {  
+      // Abort program or disable programmatic capture in your app.  
+  }  
+  ```  
   
-    > [!NOTE]
-    >  Varsa `DXGIGetDebugInterface1` döndürür `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), uygulamayı grafik tanılama altında çalıştığından emin olun (Alt + F5 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).  
+  > [!NOTE]
+  >  Varsa `DXGIGetDebugInterface1` döndürür `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), uygulamayı grafik tanılama altında çalıştığından emin olun (Alt + F5 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).  
   
 ### <a name="capturing-graphics-information"></a>Graf bilgilerini yakalama  
  Geçerli bir sahip olduğunuza göre `IDXGraphicsAnalysis` kullanabileceğiniz arabirimi `BeginCapture` ve `EndCapture` grafik bilgilerini yakalamak için.  

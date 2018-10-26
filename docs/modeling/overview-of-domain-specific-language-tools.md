@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 873c377b4b2262df6b12f581f1cdac901d27ffce
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 6942511e325b77aaa3d646b6e84cd833b8b55ab2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859441"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871751"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Etki Alanına Özgü Dil Araçlarına Genel Bakış
 Visual Studio'da barındırılan, etki alanına özgü dil Araçları (DSL araçları), bir etki alanına özgü dil tasarlayın ve kullanıcıların diline dayalı modeller oluşturmak için gereken her şeyi oluşturmak olanak tanır.
@@ -34,31 +34,31 @@ Visual Studio'da barındırılan, etki alanına özgü dil Araçları (DSL araç
 ## <a name="the-dsl-tools-solution"></a>DSL araçları çözümü
  Etki alanına özgü Tasarımcısı Sihirbazı'nı aşağıdaki çözüm şablonlarını sunar:
 
--   Görev akışı
+- Görev akışı
 
--   Sınıf diyagramları
+- Sınıf diyagramları
 
--   Minimal dil
+- Minimal dil
 
--   Bileşen modelleri
+- Bileşen modelleri
 
--   En az bir WPF
+- En az bir WPF
 
--   En az Windows.Forms
+- En az Windows.Forms
 
--   DSL kitaplığı
+- DSL kitaplığı
 
- Daha fazla bilgi için [bir etki alanına özgü dil çözümü şablonu seçme](../modeling/choosing-a-domain-specific-language-solution-template.md).
+  Daha fazla bilgi için [bir etki alanına özgü dil çözümü şablonu seçme](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
- Sihirbaz aşağıdaki projeleri içeren bir Visual Studio çözümü oluşturur:
+  Sihirbaz aşağıdaki projeleri içeren bir Visual Studio çözümü oluşturur:
 
--   DSL
+- DSL
 
-     Dsl projesi, etki alanına özgü dil ve işlemek ve düzenleme araçları tanımlar.
+   Dsl projesi, etki alanına özgü dil ve işlemek ve düzenleme araçları tanımlar.
 
--   **DslPackage**
+- **DslPackage**
 
-     Dil araçları Visual Studio ile tümleştirmek DslPackage proje belirler.
+   Dil araçları Visual Studio ile tümleştirmek DslPackage proje belirler.
 
 ## <a name="the-dsl-tools-graphical-interface"></a>DSL araçları grafik arabirimi
  DSL araçları grafik arabirim öğeleri ve ilişkileri için etki alanına özgü dil eklemek için kullanabilirsiniz. Öğeleri ekledikten sonra bunları şekillere eşleme renkleri özelleştirme ve dekoratörler ekleme görünümleri tanımlayabilirsiniz. Araç kutusu öğeleri de ekleyebilirsiniz.

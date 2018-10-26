@@ -13,12 +13,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b7a032db42003c62fbd96dc6e2ba54bb152d7e78
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc12f77a8f1c3443606537dd6f818e9ee6625327
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182189"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853195"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Birim testi için uygulamanızın parçalarını birbirinden yalıtmak üzere saplamalar kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,13 +125,13 @@ End Function
   
  Arabirim eklemeye aşağıdaki kural uygulanır:  
   
--   Uygulamanızı herhangi bir bileşeninin kodu asla açıkça bir bildirim veya başka bir bileşendeki bir sınıfa başvurmalıdır bir `new` deyimi. Bunun yerine, değişkenler ve parametreler arabirimleriyle bildirilmesi gerekir. Bileşen örnekleri yalnızca bileşen kapsayıcı tarafından oluşturulmalıdır.  
+- Uygulamanızı herhangi bir bileşeninin kodu asla açıkça bir bildirim veya başka bir bileşendeki bir sınıfa başvurmalıdır bir `new` deyimi. Bunun yerine, değişkenler ve parametreler arabirimleriyle bildirilmesi gerekir. Bileşen örnekleri yalnızca bileşen kapsayıcı tarafından oluşturulmalıdır.  
   
-     "Bileşeni" tarafından bu durumda bir sınıf veya geliştirdiğiniz ve birlikte güncelleştirdiğiniz sınıflar grubunu demek isteriz. Genellikle, bir bileşen Visual Studio projesindeki koddur. Aynı zamanda güncelleştirildiğinden sınıfları bir bileşen içinde ayırmak daha az önemlidir.  
+   "Bileşeni" tarafından bu durumda bir sınıf veya geliştirdiğiniz ve birlikte güncelleştirdiğiniz sınıflar grubunu demek isteriz. Genellikle, bir bileşen Visual Studio projesindeki koddur. Aynı zamanda güncelleştirildiğinden sınıfları bir bileşen içinde ayırmak daha az önemlidir.  
   
-     Ayrıca bileşenlerinizi System.dll gibi göreceli olarak tutarlı platform sınıflardan ayırmak çok önemli değildir. Bu sınıfların arabirimlerini yazmak kodunuzu dağıtabilir.  
+   Ayrıca bileşenlerinizi System.dll gibi göreceli olarak tutarlı platform sınıflardan ayırmak çok önemli değildir. Bu sınıfların arabirimlerini yazmak kodunuzu dağıtabilir.  
   
- StockAnalyzer kodu, StockFeed böyle bir arabirim kullanarak bağlantıyı kesme tarafından geliştirilebilir:  
+  StockAnalyzer kodu, StockFeed böyle bir arabirim kullanarak bağlantıyı kesme tarafından geliştirilebilir:  
   
 ```csharp  
 public interface IStockFeed  

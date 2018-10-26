@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a415d49770b003c15d4394e4635a138a795cb55
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2df7031baffcdcfcac07f4b2054ff2aeb9ab81ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627321"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885766"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Kullanıcı izinleri ve Visual Studio
 
@@ -31,7 +31,7 @@ Güvenlik nedenleriyle, Visual Studio normal kullanıcı mümkün olduğunca ola
 Normal bir kullanıcı olarak Visual Studio IDE içinde hemen her şeyi yapabilirsiniz. Aşağıdaki görevleri tamamlamak için yönetici izinlerine ihtiyacınız vardır:
 
 |Alan|Görev|Daha fazla bilgi için|
-|----------|----------|--------------------------|
+|----------|----------| - |
 |Yükleme|Visual Studio'yu yükleyin.|[Visual Studio'yu yükleyin](../install/install-visual-studio.md)|
 ||Yüklemek, güncelleştirmek veya yerel Yardım içeriğini kaldırın.|[Yerel Yardım içeriği yükleme ve yönetme](../ide/install-and-manage-local-content.md)|
 |Araç Kutusu|Klasik COM denetimleri ekleme **araç kutusu**.|[Araç Kutusu](../ide/reference/toolbox.md)|

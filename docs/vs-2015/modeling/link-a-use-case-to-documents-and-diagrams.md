@@ -17,29 +17,29 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1e97c514ea861b74cfb66eeba00da97799b956c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2137863e48fbedfff4736588a6f3a177786aac57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232537"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824509"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Kullanım örneğini belgelere ve diyagramlara bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir kullanım örneği bir kullanım durumu diyagramı, başka bir diyagrama veya belge bağlayabilirsiniz. Örneğin, aşağıdaki diyagramları ve belgeler için kullanım örneği bağlayabilirsiniz:  
   
--   Kullanıcılar ve sistem veya ana bileşenleri arasındaki etkileşimler tarafından kullanım örneğinin hedeflerini nasıl gerçekleştirildiğini gösteren bir sıralı diyagram.  
+- Kullanıcılar ve sistem veya ana bileşenleri arasındaki etkileşimler tarafından kullanım örneğinin hedeflerini nasıl gerçekleştirildiğini gösteren bir sıralı diyagram.  
   
--   Kullanım örneği gerçekleştirdikleri sırada ayrıntılı eylemler veya kullanıcıları ve sistemin ana bileşenlerini gösteren bir etkinlik diyagramı.  
+- Kullanım örneği gerçekleştirdikleri sırada ayrıntılı eylemler veya kullanıcıları ve sistemin ana bileşenlerini gösteren bir etkinlik diyagramı.  
   
--   Bir OneNote sayfası veya ayrıntılı kullanım örneğini açıklanacak paragraf.  
+- Bir OneNote sayfası veya ayrıntılı kullanım örneğini açıklanacak paragraf.  
   
--   Bir Word belgesi veya ayrıntılı kullanım örneğini açıklanacak PowerPoint sunusu. Bu tür belgeleri çözümü veya bir konumda bir SharePoint sitesi gibi ekip için erişilebilir kalmasını sağlayabilirsiniz.  
+- Bir Word belgesi veya ayrıntılı kullanım örneğini açıklanacak PowerPoint sunusu. Bu tür belgeleri çözümü veya bir konumda bir SharePoint sitesi gibi ekip için erişilebilir kalmasını sağlayabilirsiniz.  
   
- Kullanım örneği, belgeye bağlamak için kullanım durumu diyagramında bir yapı oluşturmak ve yapıya kullanım örneğine bağlanın. Yapı'nın Özellikleri'nde bir diyagram veya belge dosya yolunu ayarlayın. Yapıt, diğer diyagram veya belge çift tıkladığınızda açılır.  
+  Kullanım örneği, belgeye bağlamak için kullanım durumu diyagramında bir yapı oluşturmak ve yapıya kullanım örneğine bağlanın. Yapı'nın Özellikleri'nde bir diyagram veya belge dosya yolunu ayarlayın. Yapıt, diğer diyagram veya belge çift tıkladığınızda açılır.  
   
- İstediğiniz kadar çok sayıda yapıtları her kullanım örneği bağlanabilirsiniz. Öğe bir kullanım durumu diyagramı üzerindeki diğer türlerdeki yapıtları bağlayabilirsiniz.  
+  İstediğiniz kadar çok sayıda yapıtları her kullanım örneği bağlanabilirsiniz. Öğe bir kullanım durumu diyagramı üzerindeki diğer türlerdeki yapıtları bağlayabilirsiniz.  
   
 ### <a name="to-open-a-document-associated-with-an-artifact"></a>Bir yapı ile ilişkilendirilmiş bir belgeyi açmak için  
   

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c589e58fb1e5b6a63706889de666d4e622f0ceb5
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 67398d5a4b2b33ace2d3ba3c74d63693861e586e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180249"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837145"
 ---
 # <a name="edit-load-test-scenarios"></a>Yük testi senaryolarını düzenleme
 
@@ -46,7 +46,7 @@ Kullanarak düzenleyebileceğiniz diğer bazı özellikleri senaryosunda **Yük 
 ## <a name="tasks"></a>Görevler
 
 |Görevler|İlişkili Konular|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Senaryonuza yapay insan etkileşimi duraklamaları ekleyin:** Düşünme süreleri, insanların bir Web sitesiyle etkileşimleri ile arasında beklemesine neden olan insan davranışını benzetmekte kullanılır. Düşünme süreleri, bir web performans testindeki istekleri ve bir yük testi senaryosunda test tekrarları arasında oluşur. Bir yük testinde Düşünme süreleri kullanarak daha kesin yükleme benzetimleri oluşturmak yararlı olabilir.|-   [Web sitesi insan etkileşimi gecikmelerini benzetmek için Düşünme zamanlarını düzenleme](../test/edit-think-times-in-load-test-scenarios.md)|
 |**Senaryonuz için sanal kullanıcı sayısını belirtin:** yük deseni özellikleri benzetimli kullanıcı yükünün yük testi boyunca nasıl ayarlandığını belirlemek için yapılandırabilirsiniz. Üç yerleşik yükleme düzeni Al: Sabit, adım ve hedef temelli. Yük desenini seçin ve yük testi hedefleriniz için uygun düzeylere özellikleri ayarlayın.|-   [Model sanal kullanıcı etkinlikleri için yük desenlerini düzenleme](../test/edit-load-patterns-to-model-virtual-user-activities.md)|
 |**Bu senaryoda bir testi çalıştıran sanal kullanıcı olasılığını yapılandırın:** bir yük testi senaryosunda belirli bir testi çalıştıran sanal kullanıcı olasılığını belirleyen test karışımını kullanabilirsiniz. Bu, yükü daha gerçekçi bir benzetimini sağlar. Uygulamalarınız boyunca yalnızca bir iş akışı sahip olmak yerine, son kullanıcıların uygulamalarınızla nasıl etkileşmeleri hakkında daha yakın bir benzetim olan birkaç iş olabilir.|-   [Metin karışımı modellerini düzenleme](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)|

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ed7c1ec10b6cc6b2eac450ea33beceaaf58bc06
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 2149410782587d8472faff678cbc20bf1ea577c1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029127"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878382"
 ---
 # <a name="image-editor"></a>Görüntü düzenleyicisi
 
@@ -30,7 +30,7 @@ Kullanabileceğiniz **Resim Düzenleyicisi** DirectX uygulaması geliştirmede k
 **Resim Düzenleyicisi** aşağıdaki görüntü biçimlerini destekler:
 
 |Biçim adı|Dosya Adı Uzantısı|
-|-----------------|-------------------------|
+|-----------------| - |
 |Taşınabilir Ağ Grafikleri|*.PNG*|
 |JPEG|*.jpg*, *.jpeg*, *.jpe*, *.jfif*|
 |Doğrudan çizim yüzeyi|*.DDS*|
@@ -245,7 +245,7 @@ Aşağıdaki tabloda, araç özellikleri açıklanmaktadır:
 ## <a name="keyboard-shortcuts"></a>Klavye kısayolları
 
 |Komut|Klavye kısayolları|
-|-------------|------------------------|
+|-------------| - |
 |Geçiş **seçin** modu|**S**|
 |Geçiş **yakınlaştırma** modu|**Z**|
 |Geçiş **Pan** modu|**K**|

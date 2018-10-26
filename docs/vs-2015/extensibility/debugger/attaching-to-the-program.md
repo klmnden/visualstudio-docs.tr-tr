@@ -15,12 +15,12 @@ ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eb4709c0f6e158919b67a53d374bbefee8d152f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9beb92c67e196f76d8a59559825a844f0e0c8a7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275164"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849027"
 ---
 # <a name="attaching-to-the-program"></a>Programa Ekleme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,25 +30,25 @@ Programlarınızın uygun bağlantı noktası ile kaydettikten sonra hata ayıkl
 ## <a name="choosing-how-to-attach"></a>Nasıl ekleneceği seçme  
  Oturum hata ayıklama Yöneticisi (SDM) hata ayıklaması yapılan programa ekleme çalışır üç yolu vardır.  
   
-1.  Hata ayıklama altyapısı tarafından başlatılan program için [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) SDM yöntem (örneğin, yorumlanan dil tipik) edinir [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) gelen arabirimi [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) için iliştirilmekte programı ilişkili nesne. SDM elde `IDebugProgramNodeAttach2` SDM arabirimini, çağırır ve ardından [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) yöntemi. `IDebugProgramNodeAttach2::OnAttach` Yöntemi döndürür `S_OK` programa eklemediniz ve denemeleri programa eklemek için yapılabilir.  
+1. Hata ayıklama altyapısı tarafından başlatılan program için [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) SDM yöntem (örneğin, yorumlanan dil tipik) edinir [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) gelen arabirimi [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) için iliştirilmekte programı ilişkili nesne. SDM elde `IDebugProgramNodeAttach2` SDM arabirimini, çağırır ve ardından [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) yöntemi. `IDebugProgramNodeAttach2::OnAttach` Yöntemi döndürür `S_OK` programa eklemediniz ve denemeleri programa eklemek için yapılabilir.  
   
-2.  SDM elde [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md) arabirim SDM çağrıları iliştirilmekte programdan [iliştirme](../../extensibility/debugger/reference/idebugprogramex2-attach.md) yöntemi. Bu yaklaşım, uzaktan bağlantı noktası sağlayıcısı tarafından başlatılan programlar tipik bir durumdur.  
+2. SDM elde [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md) arabirim SDM çağrıları iliştirilmekte programdan [iliştirme](../../extensibility/debugger/reference/idebugprogramex2-attach.md) yöntemi. Bu yaklaşım, uzaktan bağlantı noktası sağlayıcısı tarafından başlatılan programlar tipik bir durumdur.  
   
-3.  Program aracılığıyla eklenemez, `IDebugProgramNodeAttach2::OnAttach` veya `IDebugProgramEx2::Attach` yöntemleri SDM yükler (henüz yüklü değilse) hata ayıklama altyapısı çağırarak `CoCreateInstance` işlevi ve ardından aramaları [iliştirme](../../extensibility/debugger/reference/idebugengine2-attach.md) yöntemi. Bu yaklaşım, yerel olarak bağlantı noktası sağlayıcısı tarafından başlatılan programlar tipik bir durumdur.  
+3. Program aracılığıyla eklenemez, `IDebugProgramNodeAttach2::OnAttach` veya `IDebugProgramEx2::Attach` yöntemleri SDM yükler (henüz yüklü değilse) hata ayıklama altyapısı çağırarak `CoCreateInstance` işlevi ve ardından aramaları [iliştirme](../../extensibility/debugger/reference/idebugengine2-attach.md) yöntemi. Bu yaklaşım, yerel olarak bağlantı noktası sağlayıcısı tarafından başlatılan programlar tipik bir durumdur.  
   
-     Ayrıca çağırmak özel bağlantı noktası sağlayıcısı için olası `IDebugEngine2::Attach` yöntemi özel bir bağlantı noktası tedarikçi uygulamasında `IDebugProgramEx2::Attach` yöntemi. Genellikle bu durumda, özel bağlantı noktası sağlayıcısı uzak makinede hata ayıklama altyapısı başlatır.  
+    Ayrıca çağırmak özel bağlantı noktası sağlayıcısı için olası `IDebugEngine2::Attach` yöntemi özel bir bağlantı noktası tedarikçi uygulamasında `IDebugProgramEx2::Attach` yöntemi. Genellikle bu durumda, özel bağlantı noktası sağlayıcısı uzak makinede hata ayıklama altyapısı başlatır.  
   
- Oturum hata ayıklama Yöneticisi (SDM) çağırdığında eki elde [iliştirme](../../extensibility/debugger/reference/idebugengine2-attach.md) yöntemi.  
+   Oturum hata ayıklama Yöneticisi (SDM) çağırdığında eki elde [iliştirme](../../extensibility/debugger/reference/idebugengine2-attach.md) yöntemi.  
   
- Sizin DE ayıklanacak uygulamayla aynı işlemde çalıştırmak sonra aşağıdaki yöntemleri uygulamalıdır [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md):  
+   Sizin DE ayıklanacak uygulamayla aynı işlemde çalıştırmak sonra aşağıdaki yöntemleri uygulamalıdır [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md):  
   
--   [GetHostName](../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md),  
+- [GetHostName](../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md),  
   
--   [GetHostPid](../../extensibility/debugger/reference/idebugprogramnode2-gethostpid.md)  
+- [GetHostPid](../../extensibility/debugger/reference/idebugprogramnode2-gethostpid.md)  
   
--   [GetProgramName](../../extensibility/debugger/reference/idebugprogramnode2-getprogramname.md)  
+- [GetProgramName](../../extensibility/debugger/reference/idebugprogramnode2-getprogramname.md)  
   
- Sonra `IDebugEngine2::Attach` yöntemi çağrıldığında, uygulamanızda adımları `IDebugEngine2::Attach` yöntemi:  
+  Sonra `IDebugEngine2::Attach` yöntemi çağrıldığında, uygulamanızda adımları `IDebugEngine2::Attach` yöntemi:  
   
 1.  Gönderme bir [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) SDM olay nesnesiyle. Daha fazla bilgi için [olayları gönderme](../../extensibility/debugger/sending-events.md).  
   

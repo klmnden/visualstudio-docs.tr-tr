@@ -17,12 +17,12 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09f2a3b03c09ffd3f215c0fc404f027601c8b549
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6eb4a1822d0be86d19f25bfaa46e296abc7a73a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176013"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811756"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>MSBuild ile Derleme Günlükleri Alma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ MSBuild ile anahtarlarını kullanarak, gözden geçirme ve yapı verileri bir v
 ## <a name="setting-the-level-of-detail"></a>Ayrıntı düzeyini ayarlama  
  MSBuild ayrıntı düzeyini belirtmeden kullanarak bir proje oluşturduğunuzda çıkış günlüğünde aşağıdaki bilgiler görüntülenir:  
   
--   Hataları, uyarıları ve iletileri son derece önemli olarak sınıflandırılmış.  
+- Hataları, uyarıları ve iletileri son derece önemli olarak sınıflandırılmış.  
   
--   Bazı durumu olayları.  
+- Bazı durumu olayları.  
   
--   Derleme özeti.  
+- Derleme özeti.  
   
- Kullanarak **/verbosity** (**/v**) geçiş, ne kadar veri çıkış günlüğünde görünür denetleyebilirsiniz. Sorun giderme için bir ayrıntı düzeyini ya da kullanmak `detailed` (`d`) veya `diagnostic` (`diag`), en çok bilgi sağlar.  
+  Kullanarak **/verbosity** (**/v**) geçiş, ne kadar veri çıkış günlüğünde görünür denetleyebilirsiniz. Sorun giderme için bir ayrıntı düzeyini ya da kullanmak `detailed` (`d`) veya `diagnostic` (`diag`), en çok bilgi sağlar.  
   
- Ayarladığınızda yapı işleminin daha yavaş olabilir **/verbosity** için `detailed` ve ayarladığınızda bile yavaş **/verbosity** için `diagnostic`.  
+  Ayarladığınızda yapı işleminin daha yavaş olabilir **/verbosity** için `detailed` ve ayarladığınızda bile yavaş **/verbosity** için `diagnostic`.  
   
 ```  
 msbuild MyProject.proj /t:go /v:diag  

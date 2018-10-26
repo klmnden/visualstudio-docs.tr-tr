@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9ca1917d71ff2ef0961e9f5c99839759c7decff3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a3e0d12aa7d5537b9dd11f1b7d4c3daedc68a84
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176056"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926754"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Nasıl yapılır: Şekil veya Dekoratörde bir Click için Araya Girme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,17 +126,17 @@ public partial class MyShape // change
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Kesintiye tıklar ve CompartmentShape listelerde sürüklediğinde  
  Aşağıdaki örnek, kullanıcıların sürükleyerek bir bölme şeklindeki öğeleri yeniden sıralamak sağlar. Bu kodu çalıştırmak için:  
   
-1.  Kullanarak yeni bir DSL çözüm oluşturma **sınıf diyagramları** çözüm şablonu.  
+1. Kullanarak yeni bir DSL çözüm oluşturma **sınıf diyagramları** çözüm şablonu.  
   
-     Ayrıca, bölme şekilleri içeren bir çözüm kendi ile de çalışabilir. Bu kod, Şekil tarafından temsil edilen modeli ve bölme listesi öğelerinde gösterilen öğeler arasındaki gömme ilişkisi olduğunu varsayar.  
+    Ayrıca, bölme şekilleri içeren bir çözüm kendi ile de çalışabilir. Bu kod, Şekil tarafından temsil edilen modeli ve bölme listesi öğelerinde gösterilen öğeler arasındaki gömme ilişkisi olduğunu varsayar.  
   
-2.  Ayarlama **Generates Double Derived** özelliği bölme şekli.  
+2. Ayarlama **Generates Double Derived** özelliği bölme şekli.  
   
-3.  Bu kod bir dosyaya eklemek **Dsl** proje.  
+3. Bu kod bir dosyaya eklemek **Dsl** proje.  
   
-4.  Etki alanı sınıfı ve şekli adlarını bu kodda, kendi DSL eşleşecek şekilde ayarlayın.  
+4. Etki alanı sınıfı ve şekli adlarını bu kodda, kendi DSL eşleşecek şekilde ayarlayın.  
   
- Özet olarak, kod aşağıdaki gibi çalışır. Bu örnekte, `ClassShape` bölme şekli adıdır.  
+   Özet olarak, kod aşağıdaki gibi çalışır. Bu örnekte, `ClassShape` bölme şekli adıdır.  
   
 -   Oluşturulduğunda bir dizi fare olay işleyicileri her bölme örneğine eklenir.  
   

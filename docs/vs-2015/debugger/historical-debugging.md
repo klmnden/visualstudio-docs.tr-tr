@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c38affa6611f716b6d66eebcc16d5d82c2a8ae6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e10387a775c13fd67218b0a52626b4537b01273a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293884"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938480"
 ---
 # <a name="historical-debugging"></a>Geçmiş Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,29 +69,29 @@ private static int AddInt(int add)
   
  Biz varsayacağız beklenen değeri `resultInt` arama sonra `AddAll()` 20'dir (artan sonucunu `testInt` 20 kez). (Şu hatayı göremez varsayacağız `AddInt()`). Ancak, gerçekte 44 sonucudur. Nasıl biz bulabilir hatayı aracılığıyla atlamadan `AddAll()` 10 kez? Geçmiş hata ayıklama hatayı daha hızlı ve daha kolay bulmak için kullanabiliriz. İşte nasıl:  
   
-1.  Araçlar / Seçenekler / IntelliTrace / genel olarak, IntelliTrace etkinleştirilmiş ve IntelliTrace olayları seçin ve çağrı bilgisi seçeneğini emin olun. Bu seçeneği belirlemezseniz, gezinti kanalını (aşağıda açıklandığı gibi) görmeniz mümkün olmayacaktır.  
+1. Araçlar / Seçenekler / IntelliTrace / genel olarak, IntelliTrace etkinleştirilmiş ve IntelliTrace olayları seçin ve çağrı bilgisi seçeneğini emin olun. Bu seçeneği belirlemezseniz, gezinti kanalını (aşağıda açıklandığı gibi) görmeniz mümkün olmayacaktır.  
   
-2.  Bir kesme noktası ayarlamak `Console.WriteLine(resultInt);` satır.  
+2. Bir kesme noktası ayarlamak `Console.WriteLine(resultInt);` satır.  
   
-3.  Hata ayıklama başlatılamıyor. Kesme noktasına kodu yürütür. İçinde **Yereller** penceresinde gördüğünüz gibi değerini `resultInt` 44 olduğu.  
+3. Hata ayıklama başlatılamıyor. Kesme noktasına kodu yürütür. İçinde **Yereller** penceresinde gördüğünüz gibi değerini `resultInt` 44 olduğu.  
   
-4.  Açık **tanılama araçları** penceresi (**Göster / hata ayıklama tanılama araçları**). Kod penceresi şu şekilde görünmelidir:  
+4. Açık **tanılama araçları** penceresi (**Göster / hata ayıklama tanılama araçları**). Kod penceresi şu şekilde görünmelidir:  
   
-     ![Kod penceresinde kesme noktasında](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
+    ![Kod penceresinde kesme noktasında](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
   
-5.  Bir çift ok kesme noktası hemen üzerinde sol kenar boşluğu yanındaki görmeniz gerekir. Bu alan gezinti cilt payını çağrılır ve geçmiş hata ayıklama için kullanılır. Oka tıklayın.  
+5. Bir çift ok kesme noktası hemen üzerinde sol kenar boşluğu yanındaki görmeniz gerekir. Bu alan gezinti cilt payını çağrılır ve geçmiş hata ayıklama için kullanılır. Oka tıklayın.  
   
-     Kod penceresinde durumunda olduklarını görmüş olmalısınız önceki kod satırının (`int resultInt = AddIterative(testInt);`) pembe renklendirilmiştir. Pencerenin geçmiş hata ayıklama artık, bir ileti görmeniz gerekir.  
+    Kod penceresinde durumunda olduklarını görmüş olmalısınız önceki kod satırının (`int resultInt = AddIterative(testInt);`) pembe renklendirilmiştir. Pencerenin geçmiş hata ayıklama artık, bir ileti görmeniz gerekir.  
   
-     Kod penceresi artık şöyle görünür:  
+    Kod penceresi artık şöyle görünür:  
   
-     ![Geçmiş hata ayıklama modunda kod penceresinde](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
+    ![Geçmiş hata ayıklama modunda kod penceresinde](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
-6.  İçine adımla artık `AddAll()` yöntemi (**F11**, veya **içine adımla** Gezinti cilt payını düğmesi. İleri adım atın (**F10**, veya **sonraki çağrı Git** Gezinti cilt payını. Pembe satır şu anda etkin `j = AddInt(j);` satır. **F10** bu durumda, sonraki kod satırına girmez. Bunun yerine, bir sonraki işlev çağrısı için adımlar. Geçmiş hata ayıklama çağrı çağrı gider ve bir işlev çağrısı içermez kod satırlarını atlar.  
+6. İçine adımla artık `AddAll()` yöntemi (**F11**, veya **içine adımla** Gezinti cilt payını düğmesi. İleri adım atın (**F10**, veya **sonraki çağrı Git** Gezinti cilt payını. Pembe satır şu anda etkin `j = AddInt(j);` satır. **F10** bu durumda, sonraki kod satırına girmez. Bunun yerine, bir sonraki işlev çağrısı için adımlar. Geçmiş hata ayıklama çağrı çağrı gider ve bir işlev çağrısı içermez kod satırlarını atlar.  
   
-7.  Artık adımla `AddInt()` yöntemi. Bu kodda hata hemen görmeniz gerekir.  
+7. Artık adımla `AddInt()` yöntemi. Bu kodda hata hemen görmeniz gerekir.  
   
- Bu yordam, yalnızca geçmiş hata ayıklama ile yapabilecekleriniz yüzey çizik. Farklı ayarlar ve gezinti cilt payını farklı düğmeler etkileri hakkında daha fazla bilgi için bkz: [IntelliTrace özellikleri](../debugger/intellitrace-features.md).
+   Bu yordam, yalnızca geçmiş hata ayıklama ile yapabilecekleriniz yüzey çizik. Farklı ayarlar ve gezinti cilt payını farklı düğmeler etkileri hakkında daha fazla bilgi için bkz: [IntelliTrace özellikleri](../debugger/intellitrace-features.md).
 
 
 

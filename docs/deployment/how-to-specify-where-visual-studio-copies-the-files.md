@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b2a4d642bc551127f34fe7a64ec01665b7ace70
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 1cc4e6b3ad623497f50f60b5eb3c0d7c8b00b1cd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078634"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869593"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Nasıl yapılır: Visual Studio'nun dosyaları nereye kopyalayacağını belirtme
 ClickOnce kullanarak bir uygulamayı yayımladığınızda `Publish Location` özelliği burada bildirimini ve uygulama dosyalarını isimlerine konumunu belirtir. Bu, bir dosya yolu veya bir FTP sunucusuna bir yolu olabilir.  
@@ -34,15 +34,15 @@ ClickOnce kullanarak bir uygulamayı yayımladığınızda `Publish Location` ö
   
 ### <a name="to-specify-a-publishing-location"></a>Bir yayımlama konumu belirtmek için  
   
-1.  Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.  
+1. Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.  
   
-2.  Tıklayın **Yayımla** sekmesi.  
+2. Tıklayın **Yayımla** sekmesi.  
   
-3.  İçinde **yayımlama konumu** aşağıdaki biçimlerden birini kullanarak Yayınlama konumu girin:  
+3. İçinde **yayımlama konumu** aşağıdaki biçimlerden birini kullanarak Yayınlama konumu girin:  
   
-    -   Bir dosya paylaşımını veya disk yolu yayımlamak için bir UNC yolu kullanılarak yolunu girin (*\\\Server\ApplicationName*) veya bir dosya yolu (*C:\Deploy\ApplicationName*).  
+   - Bir dosya paylaşımını veya disk yolu yayımlamak için bir UNC yolu kullanılarak yolunu girin (*\\\Server\ApplicationName*) veya bir dosya yolu (*C:\Deploy\ApplicationName*).  
   
-    -   FTP sunucusuna yayımlamak için yol biçimi kullanarak girin *ftp://ftp.microsoft.com/\<ApplicationName >*.  
+   - FTP sunucusuna yayımlamak için yol biçimi kullanarak girin <em>ftp://ftp.microsoft.com/\<ApplicationName ></em>.  
   
      Metin mevcut olması gerektiğini unutmayın **yayımlama konumu** Gözat sırayla kutusuna (**...** ) çalışmaya düğmesi.  
   

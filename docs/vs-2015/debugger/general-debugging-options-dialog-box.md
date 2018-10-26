@@ -27,12 +27,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 222cd90f73611aa40980679795debf4cb5eb2c0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dab045b147b4ce929106c26befcae58c80b99239
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306897"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854331"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Genel, Hata Ayıklama, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,55 +139,55 @@ ms.locfileid: "49306897"
  **Yönetilen Uyumluluk modunu kullan**  
  Varsayılan hata ayıklama altyapısı bu senaryoları sağlamak için eski bir sürüm ile değiştirir:  
   
--   C#, VB veya F kendi ifade değerlendiricisi sağlayan # dışındaki bir .NET Framework dili kullanıyorsunuz (buna C + dahildir +/ CLI).  
+- C#, VB veya F kendi ifade değerlendiricisi sağlayan # dışındaki bir .NET Framework dili kullanıyorsunuz (buna C + dahildir +/ CLI).  
   
--   Karışık modda hata ayıklarken C++ projeleri için Düzenle ve Devam Et'i etkinleştirmek istediğiniz.  
+- Karışık modda hata ayıklarken C++ projeleri için Düzenle ve Devam Et'i etkinleştirmek istediğiniz.  
   
- Yönetilen uyumluluk modu yalnızca hata ayıklama altyapısı varsayılan uygulanan bazı özellikleri devre dışı olduğunu unutmayın.  
+  Yönetilen uyumluluk modu yalnızca hata ayıklama altyapısı varsayılan uygulanan bazı özellikleri devre dışı olduğunu unutmayın.  
   
- **Yerel Uyumluluk modunu kullan**  
- Bu seçenek belirlendiğinde, hata ayıklayıcı, Visual Studio 2010 yerel hata ayıklayıcı yerine yeni yerel hata ayıklayıcı kullanır.  
+  **Yerel Uyumluluk modunu kullan**  
+  Bu seçenek belirlendiğinde, hata ayıklayıcı, Visual Studio 2010 yerel hata ayıklayıcı yerine yeni yerel hata ayıklayıcı kullanır.  
   
- .NET C++ kodunu ayıklarken yeni hata ayıklama motoru değerlendirilirken .NET C++ deyimleri desteklemediğinden, bu seçeneği kullanmanız gerekir. Ancak, çalışması için geçerli hata ayıklayıcı mantığınız bağımlı birçok özelliği yerel uyumluluk modu etkinleştirme devre dışı bırakır. Örneğin, yerleşik türler ister için eski motoru birçok görselleştiriciler eksik `std::string` Visual Studio 2015 projelerinde.   Bu gibi durumlarda en iyi hata ayıklama deneyimi için lütfen Visual Studio 2013 projelerine kullanın.  
+  .NET C++ kodunu ayıklarken yeni hata ayıklama motoru değerlendirilirken .NET C++ deyimleri desteklemediğinden, bu seçeneği kullanmanız gerekir. Ancak, çalışması için geçerli hata ayıklayıcı mantığınız bağımlı birçok özelliği yerel uyumluluk modu etkinleştirme devre dışı bırakır. Örneğin, yerleşik türler ister için eski motoru birçok görselleştiriciler eksik `std::string` Visual Studio 2015 projelerinde.   Bu gibi durumlarda en iyi hata ayıklama deneyimi için lütfen Visual Studio 2013 projelerine kullanın.  
   
- **Eski C# ve VB ifade değerlendiricilerini kullan**  
- Hata ayıklayıcı, Visual Studio 2013'ün C# /VB ifade değerlendiricilerini yerine Visual Studio 2015 Roslyn tabanlı ifade değerlendiricilerini kullanacak.  
+  **Eski C# ve VB ifade değerlendiricilerini kullan**  
+  Hata ayıklayıcı, Visual Studio 2013'ün C# /VB ifade değerlendiricilerini yerine Visual Studio 2015 Roslyn tabanlı ifade değerlendiricilerini kullanacak.  
   
- **(Sadece yönetilen) güvenli olmayan işlemlere karşı özel hata ayıklama görselleştiricileri kullanıldığında uyar**  
- Güvenli olmayan kod çalıştırdığınızdan kod hata ayıklanan işlemde çalışan bir özel hata ayıklama görselleştiricisi kullanırken visual Studio, sizi uyarır.  
+  **(Sadece yönetilen) güvenli olmayan işlemlere karşı özel hata ayıklama görselleştiricileri kullanıldığında uyar**  
+  Güvenli olmayan kod çalıştırdığınızdan kod hata ayıklanan işlemde çalışan bir özel hata ayıklama görselleştiricisi kullanırken visual Studio, sizi uyarır.  
   
- **Windows hata ayıklama yığın ayırıcısını (yalnızca yerel) etkinleştir**  
- Yığın tanılamayı geliştirme amacıyla windows hata ayıklama yığınındaki sağlar. Bu seçenek etkinleştirildiğinde, hata ayıklama performansını etkiler.  
+  **Windows hata ayıklama yığın ayırıcısını (yalnızca yerel) etkinleştir**  
+  Yığın tanılamayı geliştirme amacıyla windows hata ayıklama yığınındaki sağlar. Bu seçenek etkinleştirildiğinde, hata ayıklama performansını etkiler.  
   
- **Kullanıcı Arabirimi için XAML hata ayıklama araçlarını etkinleştir**  
- Desteklenen proje türü (F5) hata ayıklaması başlattığınızda, Live Visual Tree ve Live özellik keşfedin windows görünür. Daha fazla bilgi için [hata ayıklama sırasında XAML İnceleme özellikleri](../debugger/inspect-xaml-properties-while-debugging.md).  
+  **Kullanıcı Arabirimi için XAML hata ayıklama araçlarını etkinleştir**  
+  Desteklenen proje türü (F5) hata ayıklaması başlattığınızda, Live Visual Tree ve Live özellik keşfedin windows görünür. Daha fazla bilgi için [hata ayıklama sırasında XAML İnceleme özellikleri](../debugger/inspect-xaml-properties-while-debugging.md).  
   
- **Seçilen öğeleri Canlı görsel ağaç Önizleme**  
- XAML öğesi bağlamı seçili de seçili olduğundan **Live Visual Tree** penceresi.  
+  **Seçilen öğeleri Canlı görsel ağaç Önizleme**  
+  XAML öğesi bağlamı seçili de seçili olduğundan **Live Visual Tree** penceresi.  
   
- **Çalışma zamanı araçlarını uygulamada Göster**  
- Gösterir **Live Visual Tree** ayıklanmakta olan XAML uygulamanın ana pencere bir araç komutları. Bu seçenek, Visual Studio 2015 güncelleştirme 2'de sunulmuştur.  
+  **Çalışma zamanı araçlarını uygulamada Göster**  
+  Gösterir **Live Visual Tree** ayıklanmakta olan XAML uygulamanın ana pencere bir araç komutları. Bu seçenek, Visual Studio 2015 güncelleştirme 2'de sunulmuştur.  
   
- **Hata ayıklama sırasında tanılama araçlarını etkinleştir**  
- **Tanılama araçları** ayıklarken penceresi görüntülenir. Daha fazla bilgi için [hata ayıklayıcısıyla tümleştirilmiş profil oluşturma](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
+  **Hata ayıklama sırasında tanılama araçlarını etkinleştir**  
+  **Tanılama araçları** ayıklarken penceresi görüntülenir. Daha fazla bilgi için [hata ayıklayıcısıyla tümleştirilmiş profil oluşturma](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
   
- **Hata ayıklama sırasında PerfTip geçen süresini göster**  
- Hata ayıklaması yapıyorsanız Kod penceresi belirtilen yöntem çağrısının geçen süreyi görüntüler.  
+  **Hata ayıklama sırasında PerfTip geçen süresini göster**  
+  Hata ayıklaması yapıyorsanız Kod penceresi belirtilen yöntem çağrısının geçen süreyi görüntüler.  
   
- **Etkinleştirme Düzenle ve devam et**  
- Düzenleme ve hata ayıklama sırasında işlevselliği devam kullanabilirsiniz.  
+  **Etkinleştirme Düzenle ve devam et**  
+  Düzenleme ve hata ayıklama sırasında işlevselliği devam kullanabilirsiniz.  
   
- **Yerel etkinleştirme Düzenle ve devam et**  
- Düzen ve yerel C++ kodunu ayıklarken İşlevselliği devam edebilirsiniz. Daha fazla bilgi için [Düzenle ve devam et (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
+  **Yerel etkinleştirme Düzenle ve devam et**  
+  Düzen ve yerel C++ kodunu ayıklarken İşlevselliği devam edebilirsiniz. Daha fazla bilgi için [Düzenle ve devam et (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
   
- **Değişiklikleri Uygula (yalnızca yerel) üzerinde devam**  
- Visual Studio otomatik olarak derler ve bir kesme durumuna işlemine devam etmek, yapmış olduğunuz tüm bekleyen kod değişiklikleri uygular. Seçilmezse, hata ayıklama menüsünün altında "Kod değişikliklerini uygulama" öğesini kullanarak değişiklikleri uygulamak seçebilirsiniz.  
+  **Değişiklikleri Uygula (yalnızca yerel) üzerinde devam**  
+  Visual Studio otomatik olarak derler ve bir kesme durumuna işlemine devam etmek, yapmış olduğunuz tüm bekleyen kod değişiklikleri uygular. Seçilmezse, hata ayıklama menüsünün altında "Kod değişikliklerini uygulama" öğesini kullanarak değişiklikleri uygulamak seçebilirsiniz.  
   
- **(Yalnızca yerel) eski kod hakkında uyar**  
- Eski kod hakkında uyarı alın.  
+  **(Yalnızca yerel) eski kod hakkında uyar**  
+  Eski kod hakkında uyarı alın.  
   
- **İzin ver (yalnızca yerel) önceden derleme**  
- Önceden derleme izin verilir.  
+  **İzin ver (yalnızca yerel) önceden derleme**  
+  Önceden derleme izin verilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio’da hata ayıklama](../debugger/debugging-in-visual-studio.md)

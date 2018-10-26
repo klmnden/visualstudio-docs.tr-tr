@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8449abf6fe178225f84aa65caa4d027df5021d4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f62018eb3e58f69758bd07faebc7bd77fb26b33b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290439"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845855"
 ---
 # <a name="performance-report-overview"></a>Performans Raporuna Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,13 +48,13 @@ Bir performans oturumu profil oluşturma verilerini görüntüleyebilirsiniz **p
 ### <a name="callercallee-view"></a>Arayan/Aranan görünümü  
  Arayan/Aranan görünümü tek bir işlevi için çağrı ağacı görüntüler. Görünüm, üç bölüme ayrılır:  
   
--   Hedef işlevi ortasında görünümü görüntülenir.  
+- Hedef işlevi ortasında görünümü görüntülenir.  
   
--   ' % S'işlevi (arayanlar) olarak adlandırılan işlevler hedef işlevi görüntülenir.  
+- ' % S'işlevi (arayanlar) olarak adlandırılan işlevler hedef işlevi görüntülenir.  
   
--   (Çağrılanlar) hedef işlev tarafından çağrılmış işlevler hedefin altında görüntülenir.  
+- (Çağrılanlar) hedef işlev tarafından çağrılmış işlevler hedefin altında görüntülenir.  
   
- Çağrılan listesi veya çağrılan listenin herhangi bir işlevde çift tıklayarak farklı bir işlev seçebilirsiniz. Daha fazla bilgi için [arayan/Aranan görünümü](../profiling/caller-callee-view.md).  
+  Çağrılan listesi veya çağrılan listenin herhangi bir işlevde çift tıklayarak farklı bir işlev seçebilirsiniz. Daha fazla bilgi için [arayan/Aranan görünümü](../profiling/caller-callee-view.md).  
   
 ### <a name="call-tree-view"></a>Çağrı Ağacı Görünümü  
  Çağrı ağacı görünümü, profili oluşturulan uygulamada geçiş işlev yürütme yollarını görüntüler. Ağacının kökü, uygulamanın veya bileşenin içine giriş noktasıdır. Her işlev düğüm, tüm bu işlev çağrıları ile ilgili performans verilerini ve onu çağıran işlevlerini listeler.  

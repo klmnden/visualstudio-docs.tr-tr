@@ -13,12 +13,12 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 350a379e14e526385776b815ce7e356a437d12af
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bb802aa9dd797004b61ab856dda7b7670f204c79
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303823"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908250"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI metni ve Visual Studio için Yardım
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -319,15 +319,15 @@ ms.locfileid: "49303823"
   
  Bu çözüm, hatalara neden olabilecek dört varsayımlarda bulunur:  
   
--   İletişim kutusunun Yardım düğmesi **IDHELP** (9).  
+- İletişim kutusunun Yardım düğmesi **IDHELP** (9).  
   
--   Yardım düğmesi gizlenir doğru iletişim kutusu görünür.  
+- Yardım düğmesi gizlenir doğru iletişim kutusu görünür.  
   
--   İletişim kutusu, kendi winproc yerine değil.  
+- İletişim kutusu, kendi winproc yerine değil.  
   
--   İletişim kutusu içinde başka bir iletişim kutusu ekli değil.  
+- İletişim kutusu içinde başka bir iletişim kutusu ekli değil.  
   
- İletişim msenv içinde bulunur ve kullanmayan **VBDialogBoxParam**, yararlanarak araştırmak **VBDialogBoxParam** kendi işleyicinizi uygulamadan önce.  
+  İletişim msenv içinde bulunur ve kullanmayan **VBDialogBoxParam**, yararlanarak araştırmak **VBDialogBoxParam** kendi işleyicinizi uygulamadan önce.  
   
 ##### <a name="dialogs-created-through-other-packages"></a>Diğer paketler aracılığıyla oluşturulan iletişim kutuları  
  Msenv dışında bulunan iletişim kutuları için kendi çözümünüzü uygulayabilirsiniz. İçinde VSPackage paylaşılan iletişim kutusu sınıfı için için başlık çubuğu düğmesini taşıma veya bir işleyici her iletişim kutusunda uygulama göz önünde bulundurun. Aşağıdaki kod, başlamanıza yardımcı olmak için bir uygulama bir skeleton şöyledir:  

@@ -10,12 +10,12 @@ ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e44ea1c267d9fe57c3f32ddad876b412f69ea24
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9137510f8d6949271a255b14b293f59366048f77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221162"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923452"
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-15"></a>Visual Studio "15" için özel Proje ve öğe şablonlarını yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,24 +181,24 @@ VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.c
 ## <a name="upgrades-for-extensions-installed-with-an-msi"></a>Uzantıları yükseltme ile yüklenen bir. MSI  
  Bazı MSI tabanlı uzantılar şablonları yaygın şablon konumları aşağıdaki gibi dağıtın:  
   
--   **\<Visual Studio yükleme dizini > \Common7\IDE\\< ProjectTemplates/öğe şablonları >**  
+- **\<Visual Studio yükleme dizini > \Common7\IDE\\< ProjectTemplates/öğe şablonları >**  
   
--   **\<Visual Studio yükleme dizini > \Common7\IDE\Extensions\\< ExtensionName\>\\< proje/öğe şablonları >**  
+- **\<Visual Studio yükleme dizini > \Common7\IDE\Extensions\\< ExtensionName\>\\< proje/öğe şablonları >**  
   
- Uzantınızı MSI tabanlı bir dağıtım gerçekleştiriyorsa, şablon bildirimi el ile oluşturun ve uzantı kurulumunda yer aldığından emin olun gerekir. Yukarıda listelenen .vstman örnekler karşılaştırmanız gerekir ve [Visual Studio şablon bildirim şeması başvurusu](../extensibility/visual-studio-template-manifest-schema-reference.md). ne kadar eklemeniz gerekir  
+  Uzantınızı MSI tabanlı bir dağıtım gerçekleştiriyorsa, şablon bildirimi el ile oluşturun ve uzantı kurulumunda yer aldığından emin olun gerekir. Yukarıda listelenen .vstman örnekler karşılaştırmanız gerekir ve [Visual Studio şablon bildirim şeması başvurusu](../extensibility/visual-studio-template-manifest-schema-reference.md). ne kadar eklemeniz gerekir  
   
- Proje ve öğe şablonları için ayrı bildirimler oluşturmanız gerekir ve kök şablon dizini için belirtilen yukarıdaki işaret etmelidir. Uzantı ve yerel ayar başına bir bildirim oluşturmalısınız.  
+  Proje ve öğe şablonları için ayrı bildirimler oluşturmanız gerekir ve kök şablon dizini için belirtilen yukarıdaki işaret etmelidir. Uzantı ve yerel ayar başına bir bildirim oluşturmalısınız.  
   
 ## <a name="troubleshooting-template-installation"></a>Şablon yükleme sorunlarını giderme  
  Proje veya öğe şablonlarınızın dağıtımı sorunlarla karşılaşırsanız, tanılama günlük kaydını etkinleştirebilirsiniz.  
   
-1.  Günlüğe kaydetmeyi etkinleştirmek için kayıt defteri anahtarını ayarlamak için aşağıdaki komutu çalıştırın:  
+1. Günlüğe kaydetmeyi etkinleştirmek için kayıt defteri anahtarını ayarlamak için aşağıdaki komutu çalıştırın:  
   
-     **reg HKCU\software\microsoft\visualstudio\15.0_Config\VSTemplate /v EnableTemplateDiscoveryLog /t REG_DWORD /d 1 Ekle**  
+    **reg HKCU\software\microsoft\visualstudio\15.0_Config\VSTemplate /v EnableTemplateDiscoveryLog /t REG_DWORD /d 1 Ekle**  
   
-2.  Visual Studio'yu başlatın ve her iki şablon ağaçları başlatmak için yeni proje ve yeni öğe iletişim kutularında başlatın. Şablon günlük görüntülenir **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0\VsTemplateDiagnosticsList.csv**. Her şablon ağaç başlatma için bu günlük girdileri ekler.  
+2. Visual Studio'yu başlatın ve her iki şablon ağaçları başlatmak için yeni proje ve yeni öğe iletişim kutularında başlatın. Şablon günlük görüntülenir **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0\VsTemplateDiagnosticsList.csv**. Her şablon ağaç başlatma için bu günlük girdileri ekler.  
   
- Günlük dosyası şu sütunları içerir:  
+   Günlük dosyası şu sütunları içerir:  
   
 -   **FullPathToTemplate**, aşağıdaki değerleri vardır:  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cebb5624471277717395bd11c76e717692600977
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f061382ab5df74b7a94d8578624fb5a0f2dc71f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240454"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816611"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Visual Studio'da C++ Kullanmaya Başlarken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,23 +52,23 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
   
 #### <a name="to-create-a-console-app"></a>Bir konsol uygulaması oluşturmak için  
   
-1.  Menü çubuğunda, **dosya**, **yeni**, **proje**.  
+1. Menü çubuğunda, **dosya**, **yeni**, **proje**.  
   
-     ![Menü çubuğunda, dosya, yeni seçin, proje](../ide/media/exploreide-filenewproject.png "ExploreIDE FileNewProject")  
+    ![Menü çubuğunda, dosya, yeni seçin, proje](../ide/media/exploreide-filenewproject.png "ExploreIDE FileNewProject")  
   
-2.  İçinde **Visual C++** kategorisi seçin **Win32 konsol uygulaması** şablonu ve ardından ad proje `GreetingsConsoleApp`.  
+2. İçinde **Visual C++** kategorisi seçin **Win32 konsol uygulaması** şablonu ve ardından ad proje `GreetingsConsoleApp`.  
   
-     ![Win32 konsol uygulaması şablonu](../ide/media/c-ide-newprojectdlg.png "C ++ IDE_NewProjectDlg")  
+    ![Win32 konsol uygulaması şablonu](../ide/media/c-ide-newprojectdlg.png "C ++ IDE_NewProjectDlg")  
   
-3.  Win32 Uygulama Sihirbazı'nı göründüğünde **son** düğmesi.  
+3. Win32 Uygulama Sihirbazı'nı göründüğünde **son** düğmesi.  
   
-     ![Win32 Konsol Uygulama Sihirbazı'nı](../ide/media/c-ide-win32consoleappwizard.png "C ++ IDE_Win32ConsoleAppWizard")  
+    ![Win32 Konsol Uygulama Sihirbazı'nı](../ide/media/c-ide-win32consoleappwizard.png "C ++ IDE_Win32ConsoleAppWizard")  
   
- GreetingsConsoleApp projeyi ve çözümü, bir Win32 konsol uygulaması için temel dosyalar oluşturulur ve otomatik olarak yüklenen **Çözüm Gezgini**. GreetingsConsoleApp.cpp dosyası Kod Düzenleyicisi'nde açılır. Aşağıdaki öğeler görünür **Çözüm Gezgini**:  
+   GreetingsConsoleApp projeyi ve çözümü, bir Win32 konsol uygulaması için temel dosyalar oluşturulur ve otomatik olarak yüklenen **Çözüm Gezgini**. GreetingsConsoleApp.cpp dosyası Kod Düzenleyicisi'nde açılır. Aşağıdaki öğeler görünür **Çözüm Gezgini**:  
   
- Şekil 4: Proje öğeleri  
+   Şekil 4: Proje öğeleri  
   
- ![Çözüm Gezgini'nde çözüm dosyalarını](../ide/media/c-ide-solutioncontents.png "C ++ IDE_SolutionContents")  
+   ![Çözüm Gezgini'nde çözüm dosyalarını](../ide/media/c-ide-solutioncontents.png "C ++ IDE_SolutionContents")  
   
 ##  <a name="BKMK_AddCode"></a> Uygulamanıza kod eklemek  
  Ardından konsol penceresinde "Hello" word görüntülenecek kod ekleyeceksiniz.  
@@ -117,40 +117,40 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
   
 #### <a name="to-add-a-breakpoint"></a>Bir kesme noktası eklemek için  
   
-1.  Menü çubuğundan satırında bir kesme noktası ekleyin `return 0;`. Ayrıca, bir kesme noktası ayarlamak için sol kenar boşluğunda tıklayabilirsiniz.  
+1. Menü çubuğundan satırında bir kesme noktası ekleyin `return 0;`. Ayrıca, bir kesme noktası ayarlamak için sol kenar boşluğunda tıklayabilirsiniz.  
   
-     ![Kesme noktası komutu hata ayıklama menüsünden geçiş](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE ToggleBreakpoint")  
+    ![Kesme noktası komutu hata ayıklama menüsünden geçiş](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE ToggleBreakpoint")  
   
-     Düzenleyici penceresinin en sol kenar boşluğunda, kod satırının yanında kırmızı bir daire görünür.  
+    Düzenleyici penceresinin en sol kenar boşluğunda, kod satırının yanında kırmızı bir daire görünür.  
   
-2.  Hata ayıklamayı başlatmak için F5 tuşuna basın.  
+2. Hata ayıklamayı başlatmak için F5 tuşuna basın.  
   
-     Hata ayıklayıcıyı başlatır, word gösteren bir konsol penceresi görünür **Hello**.  
+    Hata ayıklayıcıyı başlatır, word gösteren bir konsol penceresi görünür **Hello**.  
   
-     ![Merhaba Windows Komut İstemi penceresindeki metin](../ide/media/c-ide-hellocommandwindow.png "C ++ IDE_HelloCommandWindow")  
+    ![Merhaba Windows Komut İstemi penceresindeki metin](../ide/media/c-ide-hellocommandwindow.png "C ++ IDE_HelloCommandWindow")  
   
-3.  SHIFT + hata ayıklamayı durdurmak için F5 tuşuna basın.  
+3. SHIFT + hata ayıklamayı durdurmak için F5 tuşuna basın.  
   
- Daha fazla bilgi için [konsol projeleri](../debugger/debugging-preparation-console-projects.md).  
+   Daha fazla bilgi için [konsol projeleri](../debugger/debugging-preparation-console-projects.md).  
   
 ##  <a name="BKMK_BuildRelease"></a> Uygulama sürümü oluşturma  
  Her şeyin çalıştığını doğruladığınıza göre artık, uygulamanın bir yayın derlemesini hazırlayabilirsiniz.  
   
 #### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Çözüm dosyalarını temizlemek ve yayın sürümünü oluşturmak için  
   
-1.  Menü çubuğundan ara dosyaları ve önceki derlemeler sırasında oluşturulan çıktı dosyalarını silin.  
+1. Menü çubuğundan ara dosyaları ve önceki derlemeler sırasında oluşturulan çıktı dosyalarını silin.  
   
-     ![Yapı menüsünde çözümü Temizle komutunu](../ide/media/exploreide-cleansolution.png "ExploreIDE CleanSolution")  
+    ![Yapı menüsünde çözümü Temizle komutunu](../ide/media/exploreide-cleansolution.png "ExploreIDE CleanSolution")  
   
-2.  GreetingsConsoleApp için yapı yapılandırmasını değiştirme **hata ayıklama** için **yayın**.  
+2. GreetingsConsoleApp için yapı yapılandırmasını değiştirme **hata ayıklama** için **yayın**.  
   
-     ![Uygulamanın yayın sürümünü oluşturmak](../ide/media/c-ide-changingbuildtorelease.png "C ++ IDE_ChangingBuildtoRelease")  
+    ![Uygulamanın yayın sürümünü oluşturmak](../ide/media/c-ide-changingbuildtorelease.png "C ++ IDE_ChangingBuildtoRelease")  
   
-3.  Çözümü oluşturun.  
+3. Çözümü oluşturun.  
   
-     ![Derleme çözümü komutu yapı menüsünde](../ide/media/exploreide-buildsolution.png "ExploreIDE BuildSolution")  
+    ![Derleme çözümü komutu yapı menüsünde](../ide/media/exploreide-buildsolution.png "ExploreIDE BuildSolution")  
   
- Tebrikler, bu izlenecek yolu tamamladınız! Daha fazla örnek keşfetmek isterseniz bkz [Visual Studio örnekleri](../ide/visual-studio-samples.md).  
+   Tebrikler, bu izlenecek yolu tamamladınız! Daha fazla örnek keşfetmek isterseniz bkz [Visual Studio örnekleri](../ide/visual-studio-samples.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: basit bir uygulama oluşturma](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)   

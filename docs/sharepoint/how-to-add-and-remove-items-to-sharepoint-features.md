@@ -19,45 +19,45 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ffc5d7e9c2ed492357dea01151e32b301b4d177e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 2ead6b7ba57afa2adeabbbe04bc27583b2ad1593
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756252"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854838"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Nasıl yapılır: SharePoint özelliklerine öğe ekleyip
-  Bir SharePoint çözüm oluşturduğunuzda, Visual Studio, özellik için varsayılan SharePoint Proje öğeleri ekler. Dağıtım öncesinde ekleyin ve SharePoint özelliğini değiştirmek için SharePoint Proje öğeleri kaldırın.  
+  Bir SharePoint çözüm oluşturduğunuzda, Visual Studio varsayılan SharePoint Proje öğeleri için bir özellik ekler. Dağıtımdan önce ekleyebilir ve SharePoint özelliği değiştirmek için SharePoint Proje öğeleri kaldırın.  
   
 ## <a name="add-sharepoint-project-items-to-a-feature"></a>SharePoint Proje öğeleri için özellik ekleme  
   
-#### <a name="to-add-sharepoint-project-items-with-the-feature-designer"></a>SharePoint Proje öğeleri özelliği Designer ile eklemek için  
+#### <a name="to-add-sharepoint-project-items-with-the-feature-designer"></a>Özellik Tasarımcısı ile SharePoint Proje öğeleri eklemek için  
   
-1.  Özellik Tasarımcısı'nı açın.  
+1. Özellik Tasarımcısı'nı açın.  
   
-     Daha fazla bilgi için bkz: [nasıl yapılır: bir SharePoint özelliğini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+    Daha fazla bilgi için [nasıl yapılır: bir SharePoint özelliğini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
-2.  Bir veya daha fazla öğelerinden eklemek **çözüm öğeleri** listesinin **öğeleri özelliğindeki** bir veya daha fazla aşağıdaki adımları gerçekleştirerek listesi:  
+2. Bir veya daha fazla öğeyi Ekle **Çözümdeki öğelere** listesindeki **özellik öğeleri** bir veya daha fazla aşağıdaki adımları gerçekleştirerek listesi:  
   
-    -   Eklemek istediğiniz her bir öğeyi çift tıklatın.  
+   - Eklemek istediğiniz her bir öğeye çift tıklayın.  
   
-    -   Ekleyin ve ardından istediğiniz öğeyi seçin **Ekle** düğmesini (>).  
+   - Ekleyin ve ardından istediğiniz öğeyi seçin **Ekle** düğmesine (>).  
   
-    -   Seçin **Tümünü Ekle** düğmesi (>>).  
+   - Seçin **Ekle** düğmesine (>>).  
   
-     SharePoint Proje öğeleri görünür **öğeleri özelliğindeki** listesi.  
+     SharePoint Proje öğeleri görünür **özellik öğeleri** listesi.  
   
-## <a name="remove-sharepoint-project-items-from-a-feature"></a>SharePoint Proje öğeleri bir özelliğini Kaldır  
+## <a name="remove-sharepoint-project-items-from-a-feature"></a>SharePoint Proje öğeleri bir özellikten kaldırın  
   
 #### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>Özellik Tasarımcısı ile SharePoint öğeleri kaldırmak için
   
-1.  Bir veya daha fazla öğe seçin **öğeleri özelliğindeki** listesi.  
+1.  Bir veya daha fazla öğe seçin **özellik öğeleri** listesi.  
   
-2.  Seçin **kaldırmak** düğmesini (<) aynı anda bir öğeyi kaldırın veya seçin **Tümünü Kaldır** düğmesi (<<) tüm öğeleri kaldırmak için.  
+2.  Seçin **Kaldır** düğmesine (<) aynı anda bir öğeyi kaldırın veya seçin **Tümünü Kaldır** düğmesine (<<) tüm öğeleri kaldırmak için.  
   
-     SharePoint Proje öğeleri görünür **çözümü öğelerde** listesi.  
+     SharePoint Proje öğeleri görünür **Çözümdeki öğelere** listesi.  
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint özellikleri oluşturma](../sharepoint/creating-sharepoint-features.md)   
- [Paket ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+ [Paketleme ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   

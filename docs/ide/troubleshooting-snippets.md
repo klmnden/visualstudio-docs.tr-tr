@@ -14,28 +14,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dea93f5c575afc96af188ab2e92e2ee12b929549
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 61485e50c61580b69c1dfcb5434849ea9122bde7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32064054"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942341"
 ---
 # <a name="troubleshoot-snippets"></a>Kod parçacıkları sorunlarını giderme
 
-IntelliSense kod parçacıkları sorunlarını genellikle iki sorunlarından neden: bozuk parçacık dosyasını veya parçacığı dosyasında hatalı içeriği.
+IntelliSense kod parçacıkları ile ilgili sorunlar genellikle iki sorunları neden: hatalı kod parçacığı dosyasının içeriğini ya da bozuk kod parçacığı dosyası.
 
-## <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>Kod parçacığını dosya Gezgini'nden bir Visual Studio kaynak dosyaya sürüklediğiniz olamaz
+## <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>Kod parçacığı bir Visual Studio kaynak dosyası için dosya Gezgini'nden sürüklenemez
 
--   Kod parçacığında dosyasındaki XML bozulmuş olabilir. **XML Düzenleyicisi** içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sorunları XML yapısı içinde bulabilirsiniz.
+- XML kod parçacığı dosyası bozulmuş olabilir. **XML Düzenleyicisi** içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sorunları XML yapısı içinde bulabilirsiniz.
 
--   Parçacık dosyasını parçacığı şemaya uygun olmayabilir. **XML Düzenleyicisi** içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sorunları XML yapısı içinde bulabilirsiniz.
+- Kod parçacığı dosyasını kod parçacığı şemaya uygun olmayabilir. **XML Düzenleyicisi** içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sorunları XML yapısı içinde bulabilirsiniz.
 
-## <a name="the-code-has-compiler-errors-that-are-not-highlighted"></a>Kod değil vurgulanmıştır derleyici hataları var
+## <a name="the-code-has-compiler-errors-that-are-not-highlighted"></a>Kodu değil vurgulanan derleyici hataları var
 
--   Proje başvurusu eksik olabilir. Kod parçacığını ilgili belgelere inceleyin. Referans bilgisayarda bulunmazsa yüklemeniz gerekir. Parçacık ekleme projeye gerekli tüm başvuruları eklemeniz gerekir. Kod parçacığını başvuru bilgileri eksikse, hata olarak parçacığı oluşturan bildirilebilir.
+-   Bir proje başvurusu eksik olabilir. Kod parçacığı hakkında belgeleri inceleyin. Referans bilgisayarda bulunmazsa yüklemeniz gerekir. Bir kod parçacığı eklemeden, gerekli tüm başvuruları projeye eklemeniz gerekir. Kod parçacığı başvuru bilgileri eksikse, hata olarak için kod parçacığı Oluşturucu bildirilebilir.
 
--   Bir değişken tanımlanmamış olabilir. Tanımsız değişkenlerde parçacık vurgulanmış olması gerekir. Aksi durumda, hata olarak parçacığı oluşturucusu olarak bildirilebilir.
+-   Bir değişken tanımlanmamış olabilir. Tanımlanmamış bir kod parçacığı değişkenlerinde vurgulanmış olmalıdır. Aksi durumda, kod parçacığı oluşturan hata olarak bildirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

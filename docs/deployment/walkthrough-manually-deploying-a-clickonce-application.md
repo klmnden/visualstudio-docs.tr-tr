@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f01b4cb17dd51c9da3e74620f9c25b7a3764566
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: e9f25c0e0b60a3b0f52df534db8f3593a26a435a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155496"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902892"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>İzlenecek yol: ClickOnce uygulamasını el ile dağıtma
 Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama veya gelişmiş dağıtım özelliklerini kullanması gereken güvenilen uygulama dağıtımı gibi kullanmalısınız *Mage.exe* , oluşturmakiçinkomutsatırıaracı[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bildirimleri. Bu izlenecek yolda nasıl oluşturulacağını açıklar bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] komut satırı sürümünü kullanarak dağıtımı (*Mage.exe*) veya grafik sürümünü (*MageUI.exe*) bildirim oluşturma ve Düzenleme aracı.  
@@ -35,76 +35,76 @@ Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../de
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu kılavuzda, bazı önkoşulları ve dağıtım oluşturulmadan önce seçmek için gereken seçenekler vardır.  
   
--   Yükleme *Mage.exe* ve *MageUI.exe*.  
+- Yükleme *Mage.exe* ve *MageUI.exe*.  
   
-     *Mage.exe* ve *MageUI.exe* parçası olan [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Ya da olmalıdır [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] yüklü sürümünü veya [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] Visual Studio'ya dahil edildi. Daha fazla bilgi için [Windows SDK'sı](http://go.microsoft.com/fwlink/?LinkId=158044) MSDN'de.  
+   *Mage.exe* ve *MageUI.exe* parçası olan [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Ya da olmalıdır [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] yüklü sürümünü veya [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] Visual Studio'ya dahil edildi. Daha fazla bilgi için [Windows SDK'sı](http://go.microsoft.com/fwlink/?LinkId=158044) MSDN'de.  
   
--   Dağıtmak üzere bir uygulama sağlar.  
+- Dağıtmak üzere bir uygulama sağlar.  
   
-     Bu izlenecek yol, dağıtım için hazır olan bir Windows uygulaması sahibi olduğunuzu varsayar. Bu uygulama AppToDeploy olarak anılacaktır.  
+   Bu izlenecek yol, dağıtım için hazır olan bir Windows uygulaması sahibi olduğunuzu varsayar. Bu uygulama AppToDeploy olarak anılacaktır.  
   
--   Dağıtımın nasıl dağıtılacağı belirleyin.  
+- Dağıtımın nasıl dağıtılacağı belirleyin.  
   
-     Dağıtım seçenekleri şunları içerir: Web, dosya paylaşımı veya CD. Daha fazla bilgi için [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md).  
+   Dağıtım seçenekleri şunları içerir: Web, dosya paylaşımı veya CD. Daha fazla bilgi için [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md).  
   
--   Uygulama yükseltilmiş bir güven düzeyi isteyip istemediğini belirler.  
+- Uygulama yükseltilmiş bir güven düzeyi isteyip istemediğini belirler.  
   
-     Uygulamanız gerekiyorsa tam güven — Örneğin, tam erişim kullanıcının sistem — kullanabilirsiniz `-TrustLevel` seçeneği *Mage.exe* bunu ayarlamak için. Uygulamanız için özel bir izin tanımlamak istiyorsanız, Internet veya intranet izni bölümü başka bir bildirimden kopyalayabilir, gereksinimlerinize uyacak şekilde değiştirin ve bir metin düzenleyicisi kullanarak uygulama bildirimine ekleyin veya  *MageUI.exe*. Daha fazla bilgi için [güvenilir uygulama dağıtımına genel bakış](../deployment/trusted-application-deployment-overview.md).  
+   Uygulamanız gerekiyorsa tam güven — Örneğin, tam erişim kullanıcının sistem — kullanabilirsiniz `-TrustLevel` seçeneği *Mage.exe* bunu ayarlamak için. Uygulamanız için özel bir izin tanımlamak istiyorsanız, Internet veya intranet izni bölümü başka bir bildirimden kopyalayabilir, gereksinimlerinize uyacak şekilde değiştirin ve bir metin düzenleyicisi kullanarak uygulama bildirimine ekleyin veya  *MageUI.exe*. Daha fazla bilgi için [güvenilir uygulama dağıtımına genel bakış](../deployment/trusted-application-deployment-overview.md).  
   
--   Authenticode sertifikası alın.  
+- Authenticode sertifikası alın.  
   
-     Dağıtımınızı Authenticode sertifikası ile imzalaması gerekir. Visual Studio kullanarak bir test sertifika oluşturabileceğiniz gibi *MageUI.exe*, veya *MakeCert.exe* ve *Pvk2Pfx.exe* araçları veya elde edebilirsiniz bir sertifika bir sertifika Yetkilisi (CA). Güvenilir uygulama dağıtımını kullanmayı tercih ederseniz, tek seferlik bir sertifikayı tüm istemci bilgisayarlara yüklenmesini de gerçekleştirmeniz gerekir. Daha fazla bilgi için [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+   Dağıtımınızı Authenticode sertifikası ile imzalaması gerekir. Visual Studio kullanarak bir test sertifika oluşturabileceğiniz gibi *MageUI.exe*, veya *MakeCert.exe* ve *Pvk2Pfx.exe* araçları veya elde edebilirsiniz bir sertifika bir sertifika Yetkilisi (CA). Güvenilir uygulama dağıtımını kullanmayı tercih ederseniz, tek seferlik bir sertifikayı tüm istemci bilgisayarlara yüklenmesini de gerçekleştirmeniz gerekir. Daha fazla bilgi için [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
-    > [!NOTE]
-    >  Ayrıca, dağıtımınızı bir sertifika yetkilisinden elde edebilirsiniz bir CNG sertifikasıyla oturum açabilirsiniz.  
+  > [!NOTE]
+  >  Ayrıca, dağıtımınızı bir sertifika yetkilisinden elde edebilirsiniz bir CNG sertifikasıyla oturum açabilirsiniz.  
   
--   Uygulama UAC bilgilerini içeren bir bildirimi yok emin olun.  
+- Uygulama UAC bilgilerini içeren bir bildirimi yok emin olun.  
   
-     Uygulamanızı bir bildirim, kullanıcı hesabı denetimi (UAC) bilgilerle gibi içerip içermediğini belirlemek gereken bir `<dependentAssembly>` öğesi. Bir uygulama bildirimi incelemek için Windows Sysinternals'dan kullanabilirsiniz [Sigcheck](http://go.microsoft.com/fwlink/?LinkId=158035) yardımcı programı.  
+   Uygulamanızı bir bildirim, kullanıcı hesabı denetimi (UAC) bilgilerle gibi içerip içermediğini belirlemek gereken bir `<dependentAssembly>` öğesi. Bir uygulama bildirimi incelemek için Windows Sysinternals'dan kullanabilirsiniz [Sigcheck](http://go.microsoft.com/fwlink/?LinkId=158035) yardımcı programı.  
   
-     Uygulamanız bir bildirim UAC ayrıntıları içeriyorsa UAC bilgisi olmadan yeniden oluşturmalısınız. Bir C# projesi için Visual Studio'da proje özelliklerini açın ve uygulama sekmesini seçin. İçinde **bildirim** aşağı açılan listesinden **bildirim olmadan uygulama oluşturma**. Visual Studio'da Visual Basic projesi için proje özelliklerini açın, uygulama sekmesini seçin ve tıklayın **UAC ayarları görüntüle**. Açık bildirim dosyasında tüm öğeleri tek kaldırın `<asmv1:assembly>` öğesi.  
+   Uygulamanız bir bildirim UAC ayrıntıları içeriyorsa UAC bilgisi olmadan yeniden oluşturmalısınız. Bir C# projesi için Visual Studio'da proje özelliklerini açın ve uygulama sekmesini seçin. İçinde **bildirim** aşağı açılan listesinden **bildirim olmadan uygulama oluşturma**. Visual Studio'da Visual Basic projesi için proje özelliklerini açın, uygulama sekmesini seçin ve tıklayın **UAC ayarları görüntüle**. Açık bildirim dosyasında tüm öğeleri tek kaldırın `<asmv1:assembly>` öğesi.  
   
--   Uygulamanın istemci bilgisayarda önkoşullar gerekli olup olmadığını belirler.  
+- Uygulamanın istemci bilgisayarda önkoşullar gerekli olup olmadığını belirler.  
   
-     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Visual Studio'dan dağıtılan uygulamaları, bir önkoşul önyükleyicisi içerebilir (*setup.exe*) dağıtımınız ile. Bu izlenecek yol için gerekli iki bildirim oluşturur bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım. Bir önkoşul önyükleyici kullanarak oluşturabileceğiniz [GenerateBootstrapper görevi](../msbuild/generatebootstrapper-task.md).  
+   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Visual Studio'dan dağıtılan uygulamaları, bir önkoşul önyükleyicisi içerebilir (*setup.exe*) dağıtımınız ile. Bu izlenecek yol için gerekli iki bildirim oluşturur bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım. Bir önkoşul önyükleyici kullanarak oluşturabileceğiniz [GenerateBootstrapper görevi](../msbuild/generatebootstrapper-task.md).  
   
 ### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>Komut satırı aracı Mage.exe ile bir uygulamayı dağıtmak için  
   
-1.  Depolayacağınız bir dizin oluşturun, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım dosyaları.  
+1. Depolayacağınız bir dizin oluşturun, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım dosyaları.  
   
-2.  Yeni oluşturduğunuz dağıtım dizininde bir sürüm dizin oluşturun. Bu uygulamayı ilk kez ise, sürüm alt ad **1.0.0.0**.  
+2. Yeni oluşturduğunuz dağıtım dizininde bir sürüm dizin oluşturun. Bu uygulamayı ilk kez ise, sürüm alt ad **1.0.0.0**.  
   
-    > [!NOTE]
-    >  Sürüm dağıtımınızın, uygulamanızın sürümünden farklı olabilir.  
+   > [!NOTE]
+   >  Sürüm dağıtımınızın, uygulamanızın sürümünden farklı olabilir.  
   
-3.  Tüm uygulama dosyalarını, yürütülebilir dosyalar, derlemeleri, kaynakları ve veri dosyaları dahil olmak üzere sürüm alt dizinine kopyalayın. Gerekirse, ek dosyaları içeren ek alt dizinleri oluşturabilirsiniz.  
+3. Tüm uygulama dosyalarını, yürütülebilir dosyalar, derlemeleri, kaynakları ve veri dosyaları dahil olmak üzere sürüm alt dizinine kopyalayın. Gerekirse, ek dosyaları içeren ek alt dizinleri oluşturabilirsiniz.  
   
-4.  Açık [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] veya Visual Studio komut istemi ve sürüm alt dizinine geçin.  
+4. Açık [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] veya Visual Studio komut istemi ve sürüm alt dizinine geçin.  
   
-5.  Bir çağrı ile bir uygulama bildirimi oluşturun *Mage.exe*. Aşağıdaki deyim x86 Intel işlemci üzerinde çalıştırmak için derlenen kod için bir uygulama bildirimi oluşturur.  
+5. Bir çağrı ile bir uygulama bildirimi oluşturun *Mage.exe*. Aşağıdaki deyim x86 Intel işlemci üzerinde çalıştırmak için derlenen kod için bir uygulama bildirimi oluşturur.  
   
-    ```cmd
-    mage -New Application -Processor x86 -ToFile AppToDeploy.exe.manifest -name "My App" -Version 1.0.0.0 -FromDirectory .   
-    ```  
+   ```cmd
+   mage -New Application -Processor x86 -ToFile AppToDeploy.exe.manifest -name "My App" -Version 1.0.0.0 -FromDirectory .   
+   ```  
   
-    > [!NOTE]
-    >  Nokta (.) eklediğinizden emin olun `-FromDirectory` seçeneğinden geçerli dizinini gösterir. Nokta eklemezseniz uygulama dosyalarınızı yolunu belirtmeniz gerekir.  
+   > [!NOTE]
+   >  Nokta (.) eklediğinizden emin olun `-FromDirectory` seçeneğinden geçerli dizinini gösterir. Nokta eklemezseniz uygulama dosyalarınızı yolunu belirtmeniz gerekir.  
   
-6.  Uygulama bildirimini Authenticode sertifikanızla imzalayın. Değiştirin *mycert.pfx* ile sertifika dosyanızın yolu. Değiştirin *parola* , sertifika dosyası parolası ile.  
+6. Uygulama bildirimini Authenticode sertifikanızla imzalayın. Değiştirin *mycert.pfx* ile sertifika dosyanızın yolu. Değiştirin *parola* , sertifika dosyası parolası ile.  
   
-    ```cmd
-    mage -Sign AppToDeploy.exe.manifest -CertFile mycert.pfx -Password passwd  
-    ```  
+   ```cmd
+   mage -Sign AppToDeploy.exe.manifest -CertFile mycert.pfx -Password passwd  
+   ```  
   
-    Visual Studio ve Windows SDK'sı ile dağıtılır, .NET Framework 4.6.2 SDK ile başlayarak *mage.exe* bildirimleri CNG ile yanı sıra Authenticode sertifikalar ile imzalar. Authenticode sertifikalarla gibi aynı komut satırı parametrelerini kullanın.
+   Visual Studio ve Windows SDK'sı ile dağıtılır, .NET Framework 4.6.2 SDK ile başlayarak *mage.exe* bildirimleri CNG ile yanı sıra Authenticode sertifikalar ile imzalar. Authenticode sertifikalarla gibi aynı komut satırı parametrelerini kullanın.
     
-7.  Dağıtım dizini kök dizinine değiştirin.  
+7. Dağıtım dizini kök dizinine değiştirin.  
   
-8.  Bir çağrıyla dağıtım bildirimi oluşturmak *Mage.exe*. Varsayılan olarak, *Mage.exe* işaretler, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım yüklü bir uygulama, BT'nin hem çevrimiçi çalıştırabilmeniz için ve çevrimdışı olarak. Kullanıcının çevrimiçi olduğunda uygulama kullanılabilir yapmak için `-Install` değerini seçeneğiyle `false`. Varsayılan değer kullandığınız ve kullanıcıların bir Web sitesi veya dosya paylaşımından uygulamanızı yükleme, emin olun değerini `-ProviderUrl` seçeneği noktaları uygulamanın konumuna bildirimi Web sunucusu veya paylaşımı.  
+8. Bir çağrıyla dağıtım bildirimi oluşturmak *Mage.exe*. Varsayılan olarak, *Mage.exe* işaretler, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım yüklü bir uygulama, BT'nin hem çevrimiçi çalıştırabilmeniz için ve çevrimdışı olarak. Kullanıcının çevrimiçi olduğunda uygulama kullanılabilir yapmak için `-Install` değerini seçeneğiyle `false`. Varsayılan değer kullandığınız ve kullanıcıların bir Web sitesi veya dosya paylaşımından uygulamanızı yükleme, emin olun değerini `-ProviderUrl` seçeneği noktaları uygulamanın konumuna bildirimi Web sunucusu veya paylaşımı.  
   
-    ```cmd  
-    mage -New Deployment -Processor x86 -Install true -Publisher "My Co." -ProviderUrl "\\myServer\myShare\AppToDeploy.application" -AppManifest 1.0.0.0\AppToDeploy.exe.manifest -ToFile AppToDeploy.application  
-    ```  
+   ```cmd  
+   mage -New Deployment -Processor x86 -Install true -Publisher "My Co." -ProviderUrl "\\myServer\myShare\AppToDeploy.application" -AppManifest 1.0.0.0\AppToDeploy.exe.manifest -ToFile AppToDeploy.application  
+   ```  
   
 9. Dağıtım bildirimini Authenticode veya CNG sertifikanızla imzalayın.  
   
@@ -118,28 +118,28 @@ Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../de
   
 ### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>MageUI.exe grafik aracını kullanarak bir uygulamayı dağıtmak için  
   
-1.  Depolayacağınız bir dizin oluşturun, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım dosyaları.  
+1. Depolayacağınız bir dizin oluşturun, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım dosyaları.  
   
-2.  Yeni oluşturduğunuz dağıtım dizininde bir sürüm dizin oluşturun. Bu uygulamayı ilk kez ise, sürüm alt ad **1.0.0.0**.  
+2. Yeni oluşturduğunuz dağıtım dizininde bir sürüm dizin oluşturun. Bu uygulamayı ilk kez ise, sürüm alt ad **1.0.0.0**.  
   
-    > [!NOTE]
-    >  Dağıtımınızın sürümünden büyük olasılıkla uygulamanızı sürümünden farklıdır.  
+   > [!NOTE]
+   >  Dağıtımınızın sürümünden büyük olasılıkla uygulamanızı sürümünden farklıdır.  
   
-3.  Tüm uygulama dosyalarını, yürütülebilir dosyalar, derlemeleri, kaynakları ve veri dosyaları dahil olmak üzere sürüm alt dizinine kopyalayın. Gerekirse, ek dosyaları içeren ek alt dizinleri oluşturabilirsiniz.  
+3. Tüm uygulama dosyalarını, yürütülebilir dosyalar, derlemeleri, kaynakları ve veri dosyaları dahil olmak üzere sürüm alt dizinine kopyalayın. Gerekirse, ek dosyaları içeren ek alt dizinleri oluşturabilirsiniz.  
   
-4.  Başlangıç *MageUI.exe* grafik aracıdır.  
+4. Başlangıç *MageUI.exe* grafik aracıdır.  
   
-    ```cmd  
-    MageUI.exe  
-    ```  
+   ```cmd  
+   MageUI.exe  
+   ```  
   
-5.  Seçerek yeni bir uygulama bildirimi oluşturmak **dosya**, **yeni**, **uygulama bildirimi** menüsünde.  
+5. Seçerek yeni bir uygulama bildirimi oluşturmak **dosya**, **yeni**, **uygulama bildirimi** menüsünde.  
   
-6.  Varsayılan **adı** sekmesinde, bu dağıtımın adını ve sürüm numarasını yazın. Ayrıca belirtin **İşlemci** , uygulamanız için x86 gibi oluşturulmuştur.  
+6. Varsayılan **adı** sekmesinde, bu dağıtımın adını ve sürüm numarasını yazın. Ayrıca belirtin **İşlemci** , uygulamanız için x86 gibi oluşturulmuştur.  
   
-7.  Seçin **dosyaları** sekmesine ve üç nokta simgesine tıklayın (**...** ) düğmesinin yanındaki **uygulama dizini** metin kutusu. A **klasöre Gözat** iletişim kutusu görüntülenir.  
+7. Seçin **dosyaları** sekmesine ve üç nokta simgesine tıklayın (**...** ) düğmesinin yanındaki **uygulama dizini** metin kutusu. A **klasöre Gözat** iletişim kutusu görüntülenir.  
   
-8.  Uygulama dosyalarınızı içeren sürüm alt seçin ve ardından **Tamam**.  
+8. Uygulama dosyalarınızı içeren sürüm alt seçin ve ardından **Tamam**.  
   
 9. Internet Information Services (IIS) dağıtacaksınız, seçin **doldurma eklediğinizde .deploy uzantısını yok herhangi bir dosyaya** onay kutusu.  
   

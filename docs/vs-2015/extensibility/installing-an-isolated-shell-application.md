@@ -16,34 +16,34 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3c19f48ffe00f3c824dc5085910b0319bc3c184
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7722132a81c63902450edd85ef90bde94ad94744
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257354"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880517"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Yalıtılmış Kabuk uygulaması yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir kabuk uygulaması yüklemek için aşağıdaki adımları gerçekleştirmeniz gerekir.  
   
--   Çözümünüzü hazırlayın.  
+- Çözümünüzü hazırlayın.  
   
--   Uygulamanız için bir Windows Installer (MSI) paketi oluşturun.  
+- Uygulamanız için bir Windows Installer (MSI) paketi oluşturun.  
   
--   Kurulum önyükleyici oluşturun.  
+- Kurulum önyükleyici oluşturun.  
   
- Tüm örnek kodlar bu belgedeki geldiği [Shell dağıtım örnek](http://go.microsoft.com/fwlink/?LinkId=262245), MSDN Web sitesinde kod Galerisi'nden indirebilirsiniz. Örnek, bu adımların her biri gerçekleştirme sonuçlarını gösterir.  
+  Tüm örnek kodlar bu belgedeki geldiği [Shell dağıtım örnek](http://go.microsoft.com/fwlink/?LinkId=262245), MSDN Web sitesinde kod Galerisi'nden indirebilirsiniz. Örnek, bu adımların her biri gerçekleştirme sonuçlarını gösterir.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu konuda açıklanan işlemleri gerçekleştirmek için aşağıdaki araçları bilgisayarınızda yüklü olmalıdır.  
   
--   Visual Studio SDK'sı  
+- Visual Studio SDK'sı  
   
--   [Windows Installer XML araç takımı](http://go.microsoft.com/fwlink/?LinkId=82720) sürümü 3.6  
+- [Windows Installer XML araç takımı](http://go.microsoft.com/fwlink/?LinkId=82720) sürümü 3.6  
   
- Örnek ayrıca Microsoft Visualization ve tüm Kabukları gerektiren modelleme SDK gerektirir.  
+  Örnek ayrıca Microsoft Visualization ve tüm Kabukları gerektiren modelleme SDK gerektirir.  
   
 ## <a name="preparing-your-solution"></a>Çözümünüzü hazırlama  
  Varsayılan olarak, VSIX paketlerini Kabuk şablonları oluşturun, ancak bu davranış, öncelikli olarak hata ayıklama amacıyla tasarlanmıştır. Bir kabuk uygulaması dağıttığınızda, yükleme sırasında yeniden başlatılır ve kayıt defteri erişimi için izin vermek için MSI paketleri kullanmanız gerekir. Uygulamanız MSI dağıtım için hazırlamak için aşağıdaki adımları gerçekleştirin.  

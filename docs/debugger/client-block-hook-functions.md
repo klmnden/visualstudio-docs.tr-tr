@@ -23,32 +23,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 837307ac97cf52ff8d7073eaab54ec934d446eab
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e9de7c0533d3ea55e7b78ca645735a60f84e66df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279316"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938025"
 ---
 # <a name="client-block-hook-functions"></a>İstemci Blok Kanca İşlevleri
 Doğrulama veya depolanan veriler içeriğini rapor istiyorsanız `_CLIENT_BLOCK` engeller, özellikle bu amaç için bir işlev yazabilirsiniz. Yazdığınız işlevi CRTDBG içinde tanımlanan bir prototip aşağıdakine benzer olması gerekir. Y:  
-  
+
 ```cpp
 void YourClientDump(void *, size_t)  
-  
 ```  
-  
+
  Diğer bir deyişle, kanca işlevini kabul etmelidir bir **void** işaretçi ile birlikte ayırma bloğunun başlangıcına bir **size_t** ayırma boyutunu belirten bir değer yazın ve dönüş`void`. İçeriği size bağlıdır.  
-  
+
  Kanca işlevini kullanarak yükledikten sonra [_CrtSetDumpClient](/cpp/c-runtime-library/reference/crtsetdumpclient), her zaman çağrılacağı bir `_CLIENT_BLOCK` blok yazılan. Ardından [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype) türü veya alt Dökümü alınan bloğu hakkında bilgi edinmek için.  
-  
+
  Geçirdiğiniz, işlev işaretçisi `_CrtSetDumpClient` türünde **_crt_dump_clıent**CRTDBG içinde tanımlanan gibi. Y:  
-  
+
 ```cpp
 typedef void (__cdecl *_CRT_DUMP_CLIENT)  
    (void *, size_t);  
 ```  
-  
+
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklama kanca işlevi yazma](../debugger/debug-hook-function-writing.md)   
  [crt_dbg2 örnek](https://msdn.microsoft.com/library/21e1346a-6a17-4f57-b275-c76813089167)   

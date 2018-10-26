@@ -27,12 +27,12 @@ caps.latest.revision: 43
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 890c69a4cde928e645dd2ede9fbbb27f66a44794
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cad1f9d5e0e4cefe6e0fba6ec4e919e78f00dd4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220135"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855865"
 ---
 # <a name="uml-class-diagrams-reference"></a>UML Sınıf Diyagramları: Başvuru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,30 +49,30 @@ Bir UML sınıf diyagramı nesne ve hem iç hem de kullanıcılar ile iletişim 
 ## <a name="reading-class-diagrams"></a>Sınıf diyagramları okuma  
  Bu bölümde yer alan tabloda bir UML sınıf diyagramında gördüğünüz öğeleri açıklar. Bu öğelerin özellikleri hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [UML sınıf diyagramlarındaki türlerin özellikleri](../modeling/properties-of-types-on-uml-class-diagrams.md)  
+- [UML sınıf diyagramlarındaki türlerin özellikleri](../modeling/properties-of-types-on-uml-class-diagrams.md)  
   
--   [UML sınıf diyagramlarındaki özniteliklerin özellikleri](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+- [UML sınıf diyagramlarındaki özniteliklerin özellikleri](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [UML sınıf diyagramlarındaki işlemlerin özellikleri](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+- [UML sınıf diyagramlarındaki işlemlerin özellikleri](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
--   [UML sınıf diyagramlarındaki ilişkilendirmelerin özellikleri](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
+- [UML sınıf diyagramlarındaki ilişkilendirmelerin özellikleri](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
   
- ![Üç ilişkileri gösteren ve Özellikler sınıfları](../modeling/media/uml-classovreading.png "UML_ClassOvReading")  
+  ![Üç ilişkileri gösteren ve Özellikler sınıfları](../modeling/media/uml-classovreading.png "UML_ClassOvReading")  
   
-|**Şekil**|**Öğe**|**Açıklama**|  
-|---------------|-----------------|---------------------|  
-|1.|**Sınıfı**|Yapısal veya davranışsal özellikleri paylaşan nesnelerin tanımıdır. Daha fazla bilgi için [özellikleri türleri UML sınıf diyagramları](../modeling/properties-of-types-on-uml-class-diagrams.md).|  
-|1.|Sınıflandırıcısı|Bir sınıf, arabirim veya numaralandırma genel adı. Bileşenler, kullanım örnekleri ve aktörler de sınıflandırıcıdır.|  
-|2|Daraltma / genişletme denetimi|Sınıflandırıcı ayrıntılarını göremiyorsanız, genişletici sınıflandırıcı sol konumunda tıklayın. Öğesine tıklamanız her bir kesim üzerinde [+] olabilir.|  
-|3|**Öznitelik**|Her bir sınıflandırıcı örneğine bağlı türü belirtilmiş bir değer.<br /><br /> Bir öznitelik eklemek için tıklatın **öznitelikleri** bölüm ve tuşuna **ENTER**. Öznitelik imzası yazın. Daha fazla bilgi için [özelliklerini öznitelikleri UML sınıf diyagramları](../modeling/properties-of-attributes-on-uml-class-diagrams.md).|  
-|4|**İşlemi**|Bir yöntem veya işlev, sınıflandırıcı örneklerinin tarafından gerçekleştirilebilir. Bir işlem eklemek için tıklatın **işlemleri** bölüm ve tuşuna **ENTER**. İşlemin imzasını yazın. Daha fazla bilgi için [UML işlemlerin özellikleri sınıf diyagramları](../modeling/properties-of-operations-on-uml-class-diagrams.md).|  
-|5|**İlişkilendirme**|Üyeleri, iki sınıflandırıcı arasındaki ilişki. Daha fazla bilgi için [UML İlişkilendirmelerin Özellikleri sınıf diyagramları](../modeling/properties-of-associations-on-uml-class-diagrams.md).|  
-|5a|**Toplama**|Paylaşılan sahiplik ilişkisini gösteren bir ilişkilendirmedir. **Toplama** özelliği sahip rolünün **paylaşılan**.|  
-|5b|**Oluşturma**|Bütün parça ilişkisini gösteren bir ilişkilendirmedir. **Toplama** özelliği sahip rolünün **bileşik**.|  
-|6|**İlişkilendirme adı**|Bir ilişkilendirmenin adı. Ad boş bırakılabilir.|  
-|7|**Rol adı**|Diğer bir deyişle, bir ilişki sonu bir rolün adı. İlişkili nesneye başvurmak için kullanılabilir. Önceki çizimde, herhangi bir sırada `O`, `O.ChosenMenu` kendi ilişkili menü.<br /><br /> Her rol ilişkilendirmenin özellikleri altında listelenen, kendi özelliklerine sahiptir.|  
-|8|**Çokluk**|Bu nesnelerin kaç son gösterir diğer her nesneye bağlı. Örnekte, her bir Order tam olarak bir menüye bağlanması gerekir.<br /><br /> **\*** yapılabilir bağlantılarının sayısı için üst sınır yoktur anlamına gelir.|  
-|9|**Genelleştirme**|*Belirli* sınıflandırıcının kendi tanımının bir parçası devralan *genel* sınıflandırıcı. Bağlayıcının ok sonunda genel sınıflandırıcıdır. Öznitelikler, ilişkileri ve işlemleri belirli bir sınıflandırıcının tarafından devralınır.<br /><br /> Kullanım **devralma** Genelleştirme iki sınıflandırıcı arasındaki oluşturmak için aracı.|  
+| **Şekil** |       **Öğe**        |                                                                                                                                                             **Açıklama**                                                                                                                                                              |
+|-----------|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     1.     |        **Sınıfı**         |                                                           Yapısal veya davranışsal özellikleri paylaşan nesnelerin tanımıdır. Daha fazla bilgi için [özellikleri türleri UML sınıf diyagramları](../modeling/properties-of-types-on-uml-class-diagrams.md).                                                            |
+|     1.     |        Sınıflandırıcısı        |                                                                                                             Bir sınıf, arabirim veya numaralandırma genel adı. Bileşenler, kullanım örnekleri ve aktörler de sınıflandırıcıdır.                                                                                                             |
+|     2     | Daraltma / genişletme denetimi |                                                                                         Sınıflandırıcı ayrıntılarını göremiyorsanız, genişletici sınıflandırıcı sol konumunda tıklayın. Öğesine tıklamanız her bir kesim üzerinde [+] olabilir.                                                                                         |
+|     3     |      **Öznitelik**       |   Her bir sınıflandırıcı örneğine bağlı türü belirtilmiş bir değer.<br /><br /> Bir öznitelik eklemek için tıklatın **öznitelikleri** bölüm ve tuşuna **ENTER**. Öznitelik imzası yazın. Daha fazla bilgi için [özelliklerini öznitelikleri UML sınıf diyagramları](../modeling/properties-of-attributes-on-uml-class-diagrams.md).   |
+|     4     |      **İşlemi**       | Bir yöntem veya işlev, sınıflandırıcı örneklerinin tarafından gerçekleştirilebilir. Bir işlem eklemek için tıklatın **işlemleri** bölüm ve tuşuna **ENTER**. İşlemin imzasını yazın. Daha fazla bilgi için [UML işlemlerin özellikleri sınıf diyagramları](../modeling/properties-of-operations-on-uml-class-diagrams.md). |
+|     5     |     **İlişkilendirme**      |                                                                  Üyeleri, iki sınıflandırıcı arasındaki ilişki. Daha fazla bilgi için [UML İlişkilendirmelerin Özellikleri sınıf diyagramları](../modeling/properties-of-associations-on-uml-class-diagrams.md).                                                                   |
+|    5a     |     **Toplama**      |                                                                                                    Paylaşılan sahiplik ilişkisini gösteren bir ilişkilendirmedir. **Toplama** özelliği sahip rolünün **paylaşılan**.                                                                                                     |
+|    5b     |     **Oluşturma**      |                                                                                                      Bütün parça ilişkisini gösteren bir ilişkilendirmedir. **Toplama** özelliği sahip rolünün **bileşik**.                                                                                                      |
+|     6     |   **İlişkilendirme adı**   |                                                                                                                                         Bir ilişkilendirmenin adı. Ad boş bırakılabilir.                                                                                                                                          |
+|     7     |      **Rol adı**       |                       Diğer bir deyişle, bir ilişki sonu bir rolün adı. İlişkili nesneye başvurmak için kullanılabilir. Önceki çizimde, herhangi bir sırada `O`, `O.ChosenMenu` kendi ilişkili menü.<br /><br /> Her rol ilişkilendirmenin özellikleri altında listelenen, kendi özelliklerine sahiptir.                       |
+|     8     |     **Çokluk**     |                                         Bu nesnelerin kaç son gösterir diğer her nesneye bağlı. Örnekte, her bir Order tam olarak bir menüye bağlanması gerekir.<br /><br /> **\\**\* yapılabilir bağlantılarının sayısı için üst sınır yoktur anlamına gelir.                                         |
+|     9     |    **Genelleştirme**    |  *Belirli* sınıflandırıcının kendi tanımının bir parçası devralan *genel* sınıflandırıcı. Bağlayıcının ok sonunda genel sınıflandırıcıdır. Öznitelikler, ilişkileri ve işlemleri belirli bir sınıflandırıcının tarafından devralınır.<br /><br /> Kullanım **devralma** Genelleştirme iki sınıflandırıcı arasındaki oluşturmak için aracı.   |
   
  ![Arabirim ve sabit listesi içeren paket](../modeling/media/uml-classovpackage.png "UML_ClassOvPackage")  
   

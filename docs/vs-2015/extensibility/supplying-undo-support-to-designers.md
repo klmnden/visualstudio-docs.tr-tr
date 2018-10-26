@@ -15,12 +15,12 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5ca68d0046e7dc46087fa6de3835bd6246bc58e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 07fb73b5a469cca5afc39160feae96f18ee37d86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267364"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873441"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Tasarımcılara Geri Alma Desteği Sağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ Tasarımcılar, düzenleyiciler gibi genellikle kullanıcılar, bir kod öğesi 
   
  Tasarımcı için geri alma özelliğini desteklemek için gereken uygulamaları:  
   
--   Soyut temel sınıf uygulayarak geri Yönetimi sağlayın. <xref:System.ComponentModel.Design.UndoEngine>  
+- Soyut temel sınıf uygulayarak geri Yönetimi sağlayın. <xref:System.ComponentModel.Design.UndoEngine>  
   
--   Kalıcılık sağlar ve CodeDOM desteği uygulayarak <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> ve <xref:System.ComponentModel.Design.IComponentChangeService> sınıfları.  
+- Kalıcılık sağlar ve CodeDOM desteği uygulayarak <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> ve <xref:System.ComponentModel.Design.IComponentChangeService> sınıfları.  
   
- Tasarımcılar kullanarak yazma hakkında daha fazla bilgi için [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], bkz: [tasarım zamanı desteğini genişletmek](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+  Tasarımcılar kullanarak yazma hakkında daha fazla bilgi için [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], bkz: [tasarım zamanı desteğini genişletmek](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
   
- [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Varsayılan geri alma altyapısı tarafından sağlar:  
+  [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Varsayılan geri alma altyapısı tarafından sağlar:  
   
--   Sağlama, Yönetim uygulamaları aracılığıyla geri <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> ve <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> sınıfları.  
+- Sağlama, Yönetim uygulamaları aracılığıyla geri <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> ve <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> sınıfları.  
   
--   Kalıcılığı ve varsayılan aracılığıyla CodeDOM desteği sağlayan <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> ve <xref:System.ComponentModel.Design.IComponentChangeService> uygulamaları.  
+- Kalıcılığı ve varsayılan aracılığıyla CodeDOM desteği sağlayan <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> ve <xref:System.ComponentModel.Design.IComponentChangeService> uygulamaları.  
   
 ## <a name="obtaining-undo-support-automatically"></a>Otomatik olarak geri alma desteği alma  
  Oluşturduğunuz herhangi bir tasarımcı [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] otomatik ve tam geri desteğine sahip ise, Tasarımcı:  
@@ -68,44 +68,44 @@ Tasarımcılar, düzenleyiciler gibi genellikle kullanıcılar, bir kod öğesi 
   
  Visual Studio Tasarımcı geri alma için aşağıdaki özellik sağlar:  
   
--   Birden çok tasarımcılar arasında bağlantılı geri alma işlevselliği.  
+- Birden çok tasarımcılar arasında bağlantılı geri alma işlevselliği.  
   
--   Bir tasarımcı içinde alt birimleri uygulayarak ebeveynleri ile çalışabilirler <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> ve <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> üzerinde <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>.  
+- Bir tasarımcı içinde alt birimleri uygulayarak ebeveynleri ile çalışabilirler <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> ve <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> üzerinde <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>.  
   
- Ortamı SDK'sı CodeDOM ve Kalıcılık sağlanarak destek sağlar:  
+  Ortamı SDK'sı CodeDOM ve Kalıcılık sağlanarak destek sağlar:  
   
--   <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> bir uygulamaları olarak <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+- <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> bir uygulamaları olarak <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
- A <xref:System.ComponentModel.Design.IComponentChangeService> tarafından sağlanan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]'' tasarım ana bilgisayar.  
+  A <xref:System.ComponentModel.Design.IComponentChangeService> tarafından sağlanan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]'' tasarım ana bilgisayar.  
   
 ## <a name="using-the-environment-sdk-features-to-supply-undo-support"></a>Geri alma desteği sağlamak için ortamı SDK özelliklerini kullanma  
  Geri alma desteği elde etmek için bir tasarımcı uygulayan bir nesne gerekir:  
   
--   Örneği oluşturmak ve bir örneğini başlatır <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> geçerli bir sınıfla <xref:System.IServiceProvider> uygulaması.  
+- Örneği oluşturmak ve bir örneğini başlatır <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> geçerli bir sınıfla <xref:System.IServiceProvider> uygulaması.  
   
--   Bu <xref:System.IServiceProvider> sınıfı aşağıdaki hizmetleri sağlar:  
+- Bu <xref:System.IServiceProvider> sınıfı aşağıdaki hizmetleri sağlar:  
   
-    -   <xref:System.ComponentModel.Design.IDesignerHost>.  
+  -   <xref:System.ComponentModel.Design.IDesignerHost>.  
   
-    -   <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+  -   <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
-         Tasarımcılar kullanarak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CodeDOM serileştirme kullanmayı seçebilir <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> ile sağlanan [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] uygulaması olarak <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>.  
+       Tasarımcılar kullanarak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CodeDOM serileştirme kullanmayı seçebilir <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> ile sağlanan [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] uygulaması olarak <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>.  
   
-         Bu durumda, <xref:System.IServiceProvider> sınıfı için sağlanan <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> Oluşturucusu uygulaması bu nesne döndürmelidir <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> sınıfı.  
+       Bu durumda, <xref:System.IServiceProvider> sınıfı için sağlanan <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> Oluşturucusu uygulaması bu nesne döndürmelidir <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> sınıfı.  
   
-    -   <xref:System.ComponentModel.Design.IComponentChangeService>  
+  -   <xref:System.ComponentModel.Design.IComponentChangeService>  
   
-         Varsayılan değeri kullanmanın tasarımcıları <xref:System.ComponentModel.Design.DesignSurface> tarafından sağlanan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tasarım konak varsayılan bir uygulama olmasını garanti edilir <xref:System.ComponentModel.Design.IComponentChangeService> sınıfı.  
+       Varsayılan değeri kullanmanın tasarımcıları <xref:System.ComponentModel.Design.DesignSurface> tarafından sağlanan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tasarım konak varsayılan bir uygulama olmasını garanti edilir <xref:System.ComponentModel.Design.IComponentChangeService> sınıfı.  
   
- Uygulama tasarımcıları bir <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> tabanlı geri alma mekanizması, değişiklikleri otomatik olarak izler:  
+  Uygulama tasarımcıları bir <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> tabanlı geri alma mekanizması, değişiklikleri otomatik olarak izler:  
   
--   Özellik değişiklikleri aracılığıyla yapılan <xref:System.ComponentModel.TypeDescriptor> nesne.  
+- Özellik değişiklikleri aracılığıyla yapılan <xref:System.ComponentModel.TypeDescriptor> nesne.  
   
--   <xref:System.ComponentModel.Design.IComponentChangeService> kabul edilen geri alınamaz bir değişiklik olduğunda olayları el ile oluşturulur.  
+- <xref:System.ComponentModel.Design.IComponentChangeService> kabul edilen geri alınamaz bir değişiklik olduğunda olayları el ile oluşturulur.  
   
--   Tasarımcı değişikliği bağlamı içinde oluşturulmuş bir <xref:System.ComponentModel.Design.DesignerTransaction>.  
+- Tasarımcı değişikliği bağlamı içinde oluşturulmuş bir <xref:System.ComponentModel.Design.DesignerTransaction>.  
   
--   Açıkça kullanarak geri alma birimi uygulaması tarafından sağlanan standart geri alma birimi oluşturmak Tasarımcı seçer <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> veya Visual Studio özel uygulama <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>, öğesinden türetildiğini <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> ve aynı zamanda sağlayan bir Her iki uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> ve <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit>.  
+- Açıkça kullanarak geri alma birimi uygulaması tarafından sağlanan standart geri alma birimi oluşturmak Tasarımcı seçer <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> veya Visual Studio özel uygulama <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>, öğesinden türetildiğini <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> ve aynı zamanda sağlayan bir Her iki uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> ve <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit>.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.ComponentModel.Design.UndoEngine>   

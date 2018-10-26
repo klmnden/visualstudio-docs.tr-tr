@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55a5c6eada52cead60abb830a5a873cc71cac194
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c6550e4d9af994be1b703b56ab91cb33e6fdf5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238595"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824227"
 ---
 # <a name="utilization-navigator"></a>Kullanım Gezgini
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Kullanım Gezgini ve seçilen bir zaman çerçevesi
   
  Görüntülenen zaman aralığını değiştirmek için kullanım Gezgini nasıl kullanabileceğinizi aşağıda verilmiştir:  
   
--   Thumb sağa veya sola sürükleyerek kaydırabilirsiniz. (Klavye: odağı taşımak için thumb ve ardından sol veya sağ ok tuşuna basın.)  
+- Thumb sağa veya sola sürükleyerek kaydırabilirsiniz. (Klavye: odağı taşımak için thumb ve ardından sol veya sağ ok tuşuna basın.)  
   
--   Aralık kapsamını tutamaçlarını sürükleyerek değiştirebilirsiniz. (Klavye: odağı taşımak için bir tanıtıcı ve ardından sağ veya sol ok tuşuna basın.)  
+- Aralık kapsamını tutamaçlarını sürükleyerek değiştirebilirsiniz. (Klavye: odağı taşımak için bir tanıtıcı ve ardından sağ veya sol ok tuşuna basın.)  
   
- Aralık farklı bir eşzamanlılık görselleştiricisi yakınlaştırma denetimi kullanılarak değiştirirseniz, değişikliği yansıtacak şekilde kullanım Gezgini güncelleştirir.
+  Aralık farklı bir eşzamanlılık görselleştiricisi yakınlaştırma denetimi kullanılarak değiştirirseniz, değişikliği yansıtacak şekilde kullanım Gezgini güncelleştirir.
 
 
 

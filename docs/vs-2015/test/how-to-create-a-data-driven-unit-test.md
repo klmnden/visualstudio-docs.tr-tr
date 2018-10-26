@@ -20,12 +20,12 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6b8831493b9d065c8a87157dbb8c38bf0b06f0cb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eeb7efb0c7faa9a2493cfd3f91f6cc4e72408f4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177677"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889366"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Nasıl Yapılır: Veri Temelli Birim Testi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ Yönetilen kod için Microsoft birim testi çerçevesini kullanarak bir veri kay
   
  Bu konu aşağıdaki bölümleri içermektedir:  
   
--   [Test altındaki yöntemi](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)  
+- [Test altındaki yöntemi](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)  
   
--   [Veri kaynağı oluşturma](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)  
+- [Veri kaynağı oluşturma](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)  
   
--   [Test sınıfı için bir TestContext ekleme](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)  
+- [Test sınıfı için bir TestContext ekleme](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)  
   
--   [Test yönteminin yazma](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
+- [Test yönteminin yazma](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
   
-    -   [DataSourceAttribute belirtme](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
+  -   [DataSourceAttribute belirtme](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
   
-    -   [Verilere erişmek için TestContext.DataRow kullanma](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
+  -   [Verilere erişmek için TestContext.DataRow kullanma](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
   
--   [Test çalıştırma ve sonuçları görüntüleme](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
+- [Test çalıştırma ve sonuçları görüntüleme](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
   
- Veri temelli birim testi oluşturma, aşağıdaki adımları içerir:  
+  Veri temelli birim testi oluşturma, aşağıdaki adımları içerir:  
   
 1.  Test yöntemi kullanan değerleri içeren bir veri kaynağı oluşturun. Veri kaynağı, testi çalıştıran makinede kayıtlı herhangi bir tür olabilir.  
   
@@ -61,17 +61,17 @@ Yönetilen kod için Microsoft birim testi çerçevesini kullanarak bir veri kay
 ##  <a name="BKMK_The_method_under_test"></a> Test altındaki yöntemi  
  Örneğin, biz oluşturduğunuzu varsayalım:  
   
-1.  Bir çözüm olarak `MyBank` kabul eder ve farklı hesap türlerinin hareketlerini işler.  
+1. Bir çözüm olarak `MyBank` kabul eder ve farklı hesap türlerinin hareketlerini işler.  
   
-2.  Bir projede `MyBank` adlı `BankDb` , hesapları için işlemleri yönetir.  
+2. Bir projede `MyBank` adlı `BankDb` , hesapları için işlemleri yönetir.  
   
-3.  Bir sınıfa `Maths` içinde `DbBank` herhangi bir işlem bankaya avantajlı olduğundan emin olmak için matematiksel işlevler gerçekleştiren bir proje.  
+3. Bir sınıfa `Maths` içinde `DbBank` herhangi bir işlem bankaya avantajlı olduğundan emin olmak için matematiksel işlevler gerçekleştiren bir proje.  
   
-4.  Bir birim test projesi adlı `BankDbTests` davranışını test etmek için `BankDb` bileşeni.  
+4. Bir birim test projesi adlı `BankDbTests` davranışını test etmek için `BankDb` bileşeni.  
   
-5.  Bir birim testi sınıf adı verilen `MathsTests` davranışını doğrulamak için `Maths` sınıfı.  
+5. Bir birim testi sınıf adı verilen `MathsTests` davranışını doğrulamak için `Maths` sınıfı.  
   
- Biz bir yöntemde sınayacak `Maths` bir döngü kullanarak iki tamsayı ekler:  
+   Biz bir yöntemde sınayacak `Maths` bir döngü kullanarak iki tamsayı ekler:  
   
 ```  
 public int AddIntegers(int first, int second)  

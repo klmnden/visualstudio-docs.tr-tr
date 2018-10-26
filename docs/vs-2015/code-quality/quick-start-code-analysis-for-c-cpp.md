@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a9cb92b601fa8ba03e11d64e66bd24f9b9cca26
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d841150a35e88a1ac5bf8a300f9c74fc8bbdf99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241780"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851068"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>Hızlı Başlangıç: C/C++ İçin Kod Çözümleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,15 +81,15 @@ Kod Analizi düzenli olarak C veya C++ kodu çalıştırarak uygulamanızı kali
   
  Bir çözüm üzerinde kod analizi çalıştırmak için:  
   
--   Üzerinde **derleme** menüsünde seçin **çözüm üzerinde kod analizini Çalıştır**.  
+- Üzerinde **derleme** menüsünde seçin **çözüm üzerinde kod analizini Çalıştır**.  
   
- Bir proje üzerinde kod analizi çalıştırmak için:  
+  Bir proje üzerinde kod analizi çalıştırmak için:  
   
--   Çözüm Gezgini'nde proje adını seçin.  
+- Çözüm Gezgini'nde proje adını seçin.  
   
--   Üzerinde **derleme** menüsünde seçin **kod çözümlemeyi Çalıştır** *proje adı*.  
+- Üzerinde **derleme** menüsünde seçin **kod çözümlemeyi Çalıştır** *proje adı*.  
   
- Proje veya çözüm derlenir ve Kod Analizi çalıştırır. Sonuçları Kod Analizi penceresinde görünür.  
+  Proje veya çözüm derlenir ve Kod Analizi çalıştırır. Sonuçları Kod Analizi penceresinde görünür.  
   
 ##  <a name="BKMK_Analyze"></a> Analiz ve kod çözümleme uyarıları çözün  
  Belirli bir uyarıyı çözümlemek için Kod Analizi penceresi içinde uyarı başlığı seçin. Sorun hakkında ek bilgileri görüntülemek için uyarı genişletir. Mümkün olduğunda, kod analizi, uyarıya yol açan analiz mantığı ve satır numaralarını görüntüler. Sorun için olası çözümleri dahil olmak üzere uyarı hakkında ayrıntılı bilgi için Yardım konusuna ileti MSND Kitaplığı'nda görüntülenecek Uyarı Kimliği'ni seçin.  
@@ -106,13 +106,13 @@ Kod Analizi düzenli olarak C veya C++ kodu çalıştırarak uygulamanızı kali
   
  Bir uyarıyı bastırmak için:  
   
-1.  Ayrıntılı bilgi görüntülenmiyorsa genişletmek için uyarı başlığı seçin.  
+1. Ayrıntılı bilgi görüntülenmiyorsa genişletmek için uyarı başlığı seçin.  
   
-2.  Seçin **eylemleri** Uyarı alt kısmındaki bağlantı.  
+2. Seçin **eylemleri** Uyarı alt kısmındaki bağlantı.  
   
-3.  Seçin **ileti Gizle** seçip **içinde kaynak**.  
+3. Seçin **ileti Gizle** seçip **içinde kaynak**.  
   
- Bir ileti gizleme ekler `#pragma warning (disable:` *WarningId* `)` , kod satırının için uyarı bastırır.  
+   Bir ileti gizleme ekler `#pragma warning (disable:` *WarningId* `)` , kod satırının için uyarı bastırır.  
   
 ##  <a name="BKMK_Creating_work_items_for_code_analysis_warnings"></a> İş öğeleri için kod çözümleme uyarıları oluşturma  
  Visual Studio içinden hatalardan oturum iş öğesi izleme özelliğini kullanabilirsiniz. Bu özelliği kullanmak için Team Foundation Server'ın bir örneğine bağlanmak gerekir.  

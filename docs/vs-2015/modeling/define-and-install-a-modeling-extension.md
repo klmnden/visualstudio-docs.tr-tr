@@ -15,12 +15,12 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e550d7c34640b1c4b436f6a2e098a3f3ee494757
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c6ed7f72a8125d2307b91cd829bd6f474145fa78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234409"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827486"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Modelleme uzantısı tanımlama ve yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ Visual Studio'da modelleme diyagramları için uzantı tanımlayabilirsiniz. Bu 
 ## <a name="creating-a-modeling-extension-solution"></a>Modelleme Uzantısı çözümü oluşturma  
  Bir modelleme uzantısı tanımlamak için bu projeleri içeren bir çözüm oluşturmanız gerekir:  
   
--   A [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Tümleştirme Uzantısı (VSIX) projesi. Bu, uzantınızın bileşenleri için yükleyici olarak davranan bir dosya oluşturur.  
+- A [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Tümleştirme Uzantısı (VSIX) projesi. Bu, uzantınızın bileşenleri için yükleyici olarak davranan bir dosya oluşturur.  
   
--   Gerekli bileşenleri için program kodunu içeren bir sınıf kitaplığı projesi.  
+- Gerekli bileşenleri için program kodunu içeren bir sınıf kitaplığı projesi.  
   
- Çeşitli bileşenlerini içeren bir uzantı yapmak istiyorsanız, tek bir çözümde geliştirebilirsiniz. Yalnızca bir VSIX projesi ihtiyacınız vardır.  
+  Çeşitli bileşenlerini içeren bir uzantı yapmak istiyorsanız, tek bir çözümde geliştirebilirsiniz. Yalnızca bir VSIX projesi ihtiyacınız vardır.  
   
- Özel araç kutusu öğeleri ve özel UML profilleri gibi bir kod gerektirmeyen bileşenleri doğrudan VSIX projesine ayrı bir sınıf kitaplığı projeleri kullanmadan eklenebilir. Program kodu gerektiren bileşenler daha kolay bir ayrı bir sınıf kitaplığı projesinde tanımlanır. Kod gerektiren bileşenler hareket işleyicileri, menü komutlarını ve doğrulama kodu içerir.  
+  Özel araç kutusu öğeleri ve özel UML profilleri gibi bir kod gerektirmeyen bileşenleri doğrudan VSIX projesine ayrı bir sınıf kitaplığı projeleri kullanmadan eklenebilir. Program kodu gerektiren bileşenler daha kolay bir ayrı bir sınıf kitaplığı projesinde tanımlanır. Kod gerektiren bileşenler hareket işleyicileri, menü komutlarını ve doğrulama kodu içerir.  
   
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Menü komutları, hareket işleyicileri veya doğrulama için bir sınıf kitaplığı projesi oluşturmak için  
   
@@ -133,15 +133,15 @@ Visual Studio'da modelleme diyagramları için uzantı tanımlayabilirsiniz. Bu 
   
 #### <a name="to-uninstall-an-extension"></a>Bir uzantıyı kaldırmak için  
   
-1.  Üzerinde **Araçları** menüsünü tıklatın **Uzantılar ve güncelleştirmeler**.  
+1. Üzerinde **Araçları** menüsünü tıklatın **Uzantılar ve güncelleştirmeler**.  
   
-2.  Genişletin **yüklü uzantıları**.  
+2. Genişletin **yüklü uzantıları**.  
   
-3.  Uzantıyı seçin ve ardından **kaldırma**.  
+3. Uzantıyı seçin ve ardından **kaldırma**.  
   
- Nadiren, hatalı bir uzantı yüklemede başarısız olur ve hata penceresinde bir rapor oluşturur ancak Uzantı Yöneticisi'nde görünmez. Bu durumda, dosya şu konumdan silerek uzantıyı kaldırabilirsiniz burada *% LocalAppData %* genellikle *DriveName*: \Users\\*kullanıcıadı*\AppData\Local:  
+   Nadiren, hatalı bir uzantı yüklemede başarısız olur ve hata penceresinde bir rapor oluşturur ancak Uzantı Yöneticisi'nde görünmez. Bu durumda, dosya şu konumdan silerek uzantıyı kaldırabilirsiniz burada *% LocalAppData %* genellikle *DriveName*: \Users\\*kullanıcıadı*\AppData\Local:  
   
- *% LocalAppData %* **\Microsoft\VisualStudio\\[sürüm] \Extensions**  
+   *% LocalAppData %* **\Microsoft\VisualStudio\\[sürüm] \Extensions**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML genişletmek için profil tanımlama](../modeling/define-a-profile-to-extend-uml.md)   

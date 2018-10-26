@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b8fd24f6c1e9b0427746296efa9a839bf46ed7ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca80111415c869543297ed24707ae27f0490f07b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220096"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924895"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>İzlenecek yol: Modele Erişen Metin Şablonunda Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +30,15 @@ Kaynak kodu veya oluşturulan kodun derlediğinde şablon altyapısı dönüşt�
 ## <a name="creating-a-domain-specific-language-solution"></a>Bir etki alanına özgü dil çözümü oluşturma  
  Bu yordamda aşağıdaki özelliklere sahip bir etki alanına özgü dil çözümü oluşturun:  
   
--   Ad: DebuggingTestLanguage  
+- Ad: DebuggingTestLanguage  
   
--   Çözüm şablonu: en az bir dil  
+- Çözüm şablonu: en az bir dil  
   
--   Dosya uzantısı: .ddd  
+- Dosya uzantısı: .ddd  
   
--   Şirket adı: Fabrikam  
+- Şirket adı: Fabrikam  
   
- Bir etki alanına özgü dil çözümü oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: bir etki alanına özgü dil çözümü oluşturma](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+  Bir etki alanına özgü dil çözümü oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: bir etki alanına özgü dil çözümü oluşturma](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 ## <a name="creating-a-text-template"></a>Bir metin şablonu oluşturma  
  Bir metin şablonu çözümünüze ekleyin.  

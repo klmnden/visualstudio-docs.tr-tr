@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08b6c27bdd3f6806545551a766d92550622001ee
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: bc43329070795415962cf18068f8320ae7458604
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500413"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905423"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Visual Studio SDK'da olayları kullanıma sunma
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sağlar Otomasyon kullanarak olayları kaynağı. Projeleri ve proje öğeleri için olayları kaynağı öneririz.  
@@ -28,23 +28,23 @@ ms.locfileid: "39500413"
   
  VSPackage özgü olaylar nasıl döndürülür aşağıdaki işlem açıklanmaktadır.  
   
-1.  Ortamı başlatır.  
+1. Ortamı başlatır.  
   
-2.  Tüm değer adlarla kayıt defterinden okuma **Otomasyon**, **AutomationEvents**, ve **AutomationProperties** tüm VSPackages ve bu adları depoları anahtarlarını bir Tablo.  
+2. Tüm değer adlarla kayıt defterinden okuma **Otomasyon**, **AutomationEvents**, ve **AutomationProperties** tüm VSPackages ve bu adları depoları anahtarlarını bir Tablo.  
   
-3.  Bu örnekte, bir Otomasyon tüketicisi, çağıran `DTE.Events.AutomationProjectsEvents` veya `DTE.Events.AutomationProjectItemsEvents`.  
+3. Bu örnekte, bir Otomasyon tüketicisi, çağıran `DTE.Events.AutomationProjectsEvents` veya `DTE.Events.AutomationProjectItemsEvents`.  
   
-4.  Ortam dize parametresi tabloda bulur ve karşılık gelen VSPackage'ı yükler.  
+4. Ortam dize parametresi tabloda bulur ve karşılık gelen VSPackage'ı yükler.  
   
-5.  Ortam çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> yöntemi çağrısında; Bu örnekte, geçirilen adı kullanarak `AutomationProjectsEvents` veya `AutomationProjectItemsEvents`.  
+5. Ortam çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> yöntemi çağrısında; Bu örnekte, geçirilen adı kullanarak `AutomationProjectsEvents` veya `AutomationProjectItemsEvents`.  
   
-6.  VSPackage'ı yöntemleri gibi bir kök nesnesi oluşturur `get_AutomationProjectsEvents` ve `get_AutomationProjectItemEvents` ve IDispatch işaretçinin nesneyi döndürür.  
+6. VSPackage'ı yöntemleri gibi bir kök nesnesi oluşturur `get_AutomationProjectsEvents` ve `get_AutomationProjectItemEvents` ve IDispatch işaretçinin nesneyi döndürür.  
   
-7.  Ortam Otomasyon çağrısına geçirilen adı esas alarak uygun yöntemini çağırır.  
+7. Ortam Otomasyon çağrısına geçirilen adı esas alarak uygun yöntemini çağırır.  
   
-8.  `get_` Yöntemi oluşturur hem de uygulayan başka bir olay IDispatch tabanlı nesne `IConnectionPointContainer` arabirimi ve `IConnectionPoint` arabirimi ve döndürür bir `IDispatchpointer` nesneye.  
+8. `get_` Yöntemi oluşturur hem de uygulayan başka bir olay IDispatch tabanlı nesne `IConnectionPointContainer` arabirimi ve `IConnectionPoint` arabirimi ve döndürür bir `IDispatchpointer` nesneye.  
   
- Otomasyon kullanarak bir olay kullanıma sunmak için yanıt gerekir <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> ve kayıt defterine ekleyin dizelerin izleyin. Temel Proje örnekte dizelerdir *BscProjectsEvents* ve *BscProjectItemsEvents*.  
+   Otomasyon kullanarak bir olay kullanıma sunmak için yanıt gerekir <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> ve kayıt defterine ekleyin dizelerin izleyin. Temel Proje örnekte dizelerdir *BscProjectsEvents* ve *BscProjectItemsEvents*.  
   
 ## <a name="registry-entries-from-the-basic-project-sample"></a>Temel Proje örnekteki kayıt defteri girdileri  
  Bu bölümde, kayıt defterine Otomasyon olay değerleri ekleyebileceğimi gösterilir.  

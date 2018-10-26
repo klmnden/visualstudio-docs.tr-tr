@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d2ee44fd277766cb206f3e1e71ed52be6d406a08
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: b7d7592d1bdbce0a5a80b304a89c7eaa28875502
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381074"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816061"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Nasıl yapılır: Dağıtılmış yük testi için bir test ayarı oluşturun
 
@@ -124,7 +124,7 @@ Oluşturun ve Visual Studio'dan çalıştırmayı planladığınız yük testler
      **Yük testleri için tanılama veri bağdaştırıcıları**
 
     |Tanılama veri bağdaştırıcısı|Yük testlerinde kullanma|İlişkili konu|
-    |-----------------------------|-------------------------|----------------------|
+    |-|-------------------------|-|
     |**ASP.NET İstemci Proxy for IntelliTrace and Test Impact:** bu proxy, IntelliTrace ve Test etkisi tanılama veri bağdaştırıcısı için bir web sunucusuna istemciden gelen http çağrıları ile ilgili bilgi toplamanıza olanak tanır.|![Bilgi simgesi](../test/media/vc364f4.gif)<br /><br /> Test aracısı makinelerden sistem bilgilerini toplamak için özel bir ihtiyacınız yoksa, bu bağdaştırıcıyı dahil etmeyin. **Dikkat:** yük testlerinde IntelliTrace bağdaştırıcısının kullanımını büyük toplanan veri miktarı nedeniyle oluşan sorunlar nedeniyle önermiyoruz. <br /><br /> Test etkisi verisi, yük testleri kullanılarak toplanmaz.||
     |**IntelliTrace:** günlük dosyasında depolanan belirli tanı izleme bilgilerini yapılandırabilirsiniz. Bir günlük dosyası uzantısına sahip *.tdlog*. Test ve bir test adımı başarısız çalıştırdığınızda, bir hata oluşturabilirsiniz. Tanılama izlemesini içeren günlük dosyası otomatik olarak bu hataya eklenir. Günlük dosyasında toplanan veri, kodda bir hata yeniden oluşturmak için gerekli olan zamanı azaltarak hata ayıklama verimliliğini artırır. Bu günlük dosyasından dosya yerel oturumun başka bir bilgisayarda yeniden oluşturulabilir. Bu hatanın tekrar oluşturulamama riskini azaltır.<br /><br /> Daha fazla bilgi için [toplamak IntelliTrace verilerini](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Önemli simgesi](../test/media/vc364f3.gif)<br /><br /> Yük testlerinde IntelliTrace bağdaştırıcısının kullanımını büyük toplanan ve günlüğe kaydedilen veri miktarı nedeniyle oluşan sorunlar nedeniyle önermiyoruz. Çok sayıda test aracısı kullanmayan ve uzun çalıştırmayan yük testlerinde IntelliTrace bağdaştırıcısının kullanılacağını denemelidir.|[Nasıl yapılır: hata ayıklama zorluklarını çözmeye yardımcı olmak için IntelliTrace verilerini toplama](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
     |**ASP.NET Profiler:** ASP.NET web uygulamalarına performans verileri toplayan ASP.NET Profil içeren bir test ayarı oluşturabilirsiniz.|Bir geliştirme web sunucusuna karşı çalışmaması ASP.NET profiler tanılama veri bağdaştırıcısı Internet Information Services (IIS) işleminin profilini. Yük testinizde Web sitesinin profilini çıkarmak için IIS'in çalıştığı makineye bir test aracısı yüklemek zorunda. Test aracısı yük oluşturmayacak ancak yalnızca koleksiyon aracı olacak. Daha fazla bilgi için [yüklemek ve test denetleyicisilerinin](../test/lab-management/install-configure-test-agents.md).|[Nasıl yapılır: test ayarlarını kullanarak yük testleri için ASP.NET profil oluşturucuyu yapılandırma](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|

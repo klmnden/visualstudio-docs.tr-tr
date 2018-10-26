@@ -21,27 +21,27 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2d37ca55dfd701aaeba2af729511a5ae6a4fa5f4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788843"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841825"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>Kodu çözülecek URI geçerli bir kodlamada değil
-Hatalı biçimlendirilmiş bir URI (Tekdüzen Kaynak Tanımlayıcısı) kod çözme girişiminde bulunuldu. URI'ler özel bir sözdizimi vardır; bir URI kullanılmadan önce çoğu alfasayısal olmayan karakter kodlanmış olması gerekir. Kullanabileceğiniz `encodeURI` ve `encodeURIComponent` bir normal bir URI oluşturmak için yöntem [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] dize.  
+Düzensiz biçimlendirilmiş bir URI (Tekdüzen Kaynak Tanımlayıcısı) kod çözme çalışıldı. URI, özel bir sözdizimi vardır; bir URI ile kullanılabilmesi için çoğu alfasayısal olmayan karakter kodlanmış olması gerekir. Kullanabileceğiniz `encodeURI` ve `encodeURIComponent` bir normal bir URI oluşturmak için yöntemleri [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] dize.  
   
- Tam bir URI, bileşenleri ve ayırıcılar bir dizi oluşur. Genel biçimi şöyledir:  
+ Tam bir URI bileşenlerini ayırıcıları ve bir dizi oluşur. Genel formu şöyledir:  
   
 ```JavaScript  
 <Scheme>:<first>/<second>;<third>?<fourth>  
 ```  
   
- Köşeli adlarında bileşenleri temsil eder ve ":", "/", ";" ve "?" ayırıcı olarak kullanılan ayrılmış karakterler.  
+ Açılı ayraçlar adlarında bileşenleri temsil eder ve ":", "/", ";" ve "?" ayırıcı olarak kullanılan ayrılmış karakterler.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Yalnızca geçerli URI'ler çözmeye çalıştığınız emin olun. Normal çözülemiyor [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] dizeleri gibi geçersiz karakterler içeriyor olabilir.  
+-   Geçerli bir URI'leri çözmeye çalıştığınız emin olun. Normal çözülemiyor [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] dizeleri gibi geçersiz karakterler içeriyor olabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [decodeURI işlevi](../../javascript/reference/decodeuri-function-javascript.md)   
- [Decodeurıcomponent işlevi](../../javascript/reference/decodeuricomponent-function-javascript.md)
+ [decodeURIComponent İşlevi](../../javascript/reference/decodeuricomponent-function-javascript.md)

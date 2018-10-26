@@ -17,12 +17,12 @@ caps.latest.revision: 41
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5551a982b7f7135235c116cde28c71a0695874db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3c149558f53effff29d15bfce0d05f0dada0f7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301840"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847077"
 ---
 # <a name="extend-layer-diagrams"></a>Katman diyagramlarını genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ Katman diyagramları oluşturmak için ve programı kodunuzu Visual Studio'da ka
 ##  <a name="prereqs"></a> Gereksinimleri  
  Aşağıdaki katman uzantılarınızı geliştirmek istediğiniz bilgisayarda yüklü olması gerekir:  
   
--   Visual Studio  
+- Visual Studio  
   
--   [Visual Studio SDK](../extensibility/visual-studio-sdk.md)  
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)  
   
--   [Visual Studio 2015 için modelleme SDK](http://www.microsoft.com/download/details.aspx?id=48148)  
+- [Visual Studio 2015 için modelleme SDK](http://www.microsoft.com/download/details.aspx?id=48148)  
   
- Katman uzantılarınızı çalıştırmak istediğiniz bilgisayarda yüklü Visual Studio'nun uygun bir sürüm olmalıdır. Daha fazla bilgi için [bir katman modeli uzantısı dağıtma](../modeling/deploy-a-layer-model-extension.md).  
+  Katman uzantılarınızı çalıştırmak istediğiniz bilgisayarda yüklü Visual Studio'nun uygun bir sürüm olmalıdır. Daha fazla bilgi için [bir katman modeli uzantısı dağıtma](../modeling/deploy-a-layer-model-extension.md).  
   
- Katman diyagramları Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  Katman diyagramları Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Katman diyagramlarına komut ve hareket ekleme](../modeling/add-commands-and-gestures-to-layer-diagrams.md)  

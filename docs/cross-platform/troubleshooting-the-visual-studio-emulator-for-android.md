@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 4740ec0dea2e92737980df33051d29ff5832dab8
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 2ce99d472c2499d773e48ba90d20844b1cfae8f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880454"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819621"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü’nde Sorun Giderme
 Bu konuda, Android için Visual Studio öykünücüsü'nü kullanırken karşılaşabileceğiniz sorunları çözmenize yardımcı olacak bilgiler içerir.  
@@ -94,11 +94,11 @@ Bu konuda, Android için Visual Studio öykünücüsü'nü kullanırken karşıl
 ##  <a name="ManualNetworkConfig"></a> Ağ ayarlarını el ile yapılandırma gerektirdiğinde Ağ Hedefe bağlanamıyor  
  Öykünücüsünden ağ hedeflerine bağlamak için ağınıza aşağıdaki gereksinimleri karşılaması gerekir:  
   
--   DHCP. Kendi IP adresini ağ üzerinde ayrı bir cihaz olarak kendisini yapılandırır için öykünücü DHCP gerektirir.  
+- DHCP. Kendi IP adresini ağ üzerinde ayrı bir cihaz olarak kendisini yapılandırır için öykünücü DHCP gerektirir.  
   
--   Otomatik olarak yapılandırılan DNS ve ağ geçidi ayarları. Öykünücü için el ile DNS ve ağ geçidi ayarlarını yapılandırmak mümkün değildir.  
+- Otomatik olarak yapılandırılan DNS ve ağ geçidi ayarları. Öykünücü için el ile DNS ve ağ geçidi ayarlarını yapılandırmak mümkün değildir.  
   
- Ağınız el ile yapılandırılan ayarların gerektiriyorsa ve öykünücüsü için ağ bağlantısını nasıl olanak sağlayabileceğiniz belirlemek için BT yöneticinize danışın.  
+  Ağınız el ile yapılandırılan ayarların gerektiriyorsa ve öykünücüsü için ağ bağlantısını nasıl olanak sağlayabileceğiniz belirlemek için BT yöneticinize danışın.  
   
 ##  <a name="SlowStart"></a> Öykünücü yavaş, zaman aşımı nedeniyle başlatmak için başarısız başlatılır veya uygulama dağıtımı başarısız oluyor  
  Belirli koşullar altında öykünücü başlatmak için birkaç dakika sürer veya bir zaman aşımı nedeniyle başlatılamıyor. Öykünücü başlatmak başarısız olduğunda, aşağıdaki iletiyi görürsünüz: `App deployment failed. Please try again`. Aşağıdaki koşullar Bu hataya neden.  
@@ -141,131 +141,131 @@ Bu konuda, Android için Visual Studio öykünücüsü'nü kullanırken karşıl
 ##  <a name="NoStart"></a> Öykünücü (ilk kullanımda) başlatılamıyor.  
  Öykünücü başlatılmazsa belirlemek ve sorunu gidermek için aşağıdaki görevleri gidin.  
   
--   En düşük donanım gereksinimleri karşılandıktan ve BIOS ayarları doğru olduğundan emin olun.  
+- En düşük donanım gereksinimleri karşılandıktan ve BIOS ayarları doğru olduğundan emin olun.  
   
-     Öykünücü ve Windows 8 Hyper-V, ikinci düzey adres çevirisi (SLAT) ile 64-bit işlemci gerektirir. Intel, temelde çekirdek ı3 i5 veya i7 işlemci (ya da birçok Xeon birini) gerekir. AMD yongaları listesi kullanılabilir [burada](http://support.amd.com/en-us).  
+   Öykünücü ve Windows 8 Hyper-V, ikinci düzey adres çevirisi (SLAT) ile 64-bit işlemci gerektirir. Intel, temelde çekirdek ı3 i5 veya i7 işlemci (ya da birçok Xeon birini) gerekir. AMD yongaları listesi kullanılabilir [burada](http://support.amd.com/en-us).  
   
-    1.  Bilgisayar karşıladığından emin olun [sistem gereksinimleri](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).  
+  1. Bilgisayar karşıladığından emin olun [sistem gereksinimleri](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).  
   
-    2.  Doğrulayın [SLAT aracı](https://slatstatuscheck.codeplex.com/) bilgisayarınızı SLAT özellikli olduğunu bildirir.  
+  2. Doğrulayın [SLAT aracı](https://slatstatuscheck.codeplex.com/) bilgisayarınızı SLAT özellikli olduğunu bildirir.  
   
-    3.  Bilgisayarınızın BIOS ayarları içinde tüm sanallaştırma teknolojisini etkin olduğundan emin olun. Tam BIOS açıklamaları için her bir donanım üreticisinin farklılık gösterebilir. Genel olarak, ilgili özellikleri sağlar:  
+  3. Bilgisayarınızın BIOS ayarları içinde tüm sanallaştırma teknolojisini etkin olduğundan emin olun. Tam BIOS açıklamaları için her bir donanım üreticisinin farklılık gösterebilir. Genel olarak, ilgili özellikleri sağlar:  
   
-        -   SLAT (ikinci düzey adres çevirisi)  
+     -   SLAT (ikinci düzey adres çevirisi)  
   
-        -   (Genişletilmiş sayfa tabloları) kabul et (Intel)  
+     -   (Genişletilmiş sayfa tabloları) kabul et (Intel)  
   
-        -   NPT (iç içe sayfa tabloları) (AMD)  
+     -   NPT (iç içe sayfa tabloları) (AMD)  
   
-        -   (Hızlı sanallaştırma dizini) RVI (AMD)  
+     -   (Hızlı sanallaştırma dizini) RVI (AMD)  
   
-        -   VMX (bir Intel harflendirme belirten donanım Yardımlı sanallaştırma desteği)  
+     -   VMX (bir Intel harflendirme belirten donanım Yardımlı sanallaştırma desteği)  
   
-        -   SVM (donanım Yardımlı sanallaştırma desteği belirten bir AMD kısaltması)  
+     -   SVM (donanım Yardımlı sanallaştırma desteği belirten bir AMD kısaltması)  
   
-        -   XD (yürütmeyi devre dışı bırak) (Intel); Bu etkinleştirilmelidir  
+     -   XD (yürütmeyi devre dışı bırak) (Intel); Bu etkinleştirilmelidir  
   
-        -   NX (Execute)(AMD) yok; Bu etkinleştirilmesi gerekir.  
+     -   NX (Execute)(AMD) yok; Bu etkinleştirilmesi gerekir.  
   
-    4.  Aşağıdaki seçenekler BIOS'ta varsa, bunları devre dışı bırakın.  
+  4. Aşağıdaki seçenekler BIOS'ta varsa, bunları devre dışı bırakın.  
   
-        -   Intel VT-d devre dışı bırak  
+     - Intel VT-d devre dışı bırak  
   
-        -   Güvenilir yürütme devre dışı bırak  
+     - Güvenilir yürütme devre dışı bırak  
   
-         Bu makalede daha fazla bilgi için bkz: Technet: Hyper-V: nasıl düzeltme BIOS hataları etkinleştirme Hyper-V'ye  
+       Bu makalede daha fazla bilgi için bkz: Technet: Hyper-V: nasıl düzeltme BIOS hataları etkinleştirme Hyper-V'ye  
   
-    5.  En az 4 GB sistem belleği ve bunu diğer yoğun kaynak programlar ve süreçler tarafından Tüketilmekte olan değil, sahip olduğunuzdan emin olun.  
+  5. En az 4 GB sistem belleği ve bunu diğer yoğun kaynak programlar ve süreçler tarafından Tüketilmekte olan değil, sahip olduğunuzdan emin olun.  
   
-    6.  Daha iyi veya Windows 8 Professional çalıştırdığınızdan emin olun (Windows Server 2008 desteklenmez). Windows Server 2012 desteklenir, ancak masaüstü deneyimi etkinleştirmeniz gerekir.  
+  6. Daha iyi veya Windows 8 Professional çalıştırdığınızdan emin olun (Windows Server 2008 desteklenmez). Windows Server 2012 desteklenir, ancak masaüstü deneyimi etkinleştirmeniz gerekir.  
   
      Hiper yönetici hataları olup olmadığını görmek için Olay Görüntüleyicisi'ni inceleyebilirsiniz. Bunu yapmak için Olay Görüntüleyicisini açın (**başlangıç anahtarı**+**R**, yazın `eventvwr`) ve ardından **Windows Günlükleri**, **sistem**. Daha sonra kaynak ayarını günlük, olay kaynağına göre filtre **Hyper-V-hiper yönetici**. Kök nedeni belirlemenize yardımcı olması hata olup olmadığını denetleyin.  
   
      En düşük gereksinimler ancak hiper yönetici hala başarısız, işlemci karşıladığını gerçekleştiriliyorsa, bulma olmadığını öğrenmek için bilgisayarınızın BIOS yükseltme yok. Varsa, yükseltme, üreticinin tüm önlemler (örneğin, BIOS üretici yazılımı yükseltme BIOS kalıcı olarak bozabilir ve güç kaybı tarafından engellenmez sağlamaktan) BIOS yükseltirken gözlemlemek mutlaka seçin.  
   
--   En az 4 GB sistem belleği ve bunu diğer yoğun kaynak programlar ve süreçler tarafından Tüketilmekte olan değil, sahip olduğunuzdan emin olun.  
+- En az 4 GB sistem belleği ve bunu diğer yoğun kaynak programlar ve süreçler tarafından Tüketilmekte olan değil, sahip olduğunuzdan emin olun.  
   
--   Kaldır/devre dışı bırak üçüncü taraf sürücüler veya yazılımlar ile sanal ağ iletişimi engelliyor olabilir.  
+- Kaldır/devre dışı bırak üçüncü taraf sürücüler veya yazılımlar ile sanal ağ iletişimi engelliyor olabilir.  
   
-     Ağ sürücüleri/Hyper-V ağ yığınını ile tam olarak uyumlu olmayan protokolleri gibi Windows 8'altında yüklü 3 bazı taraf ürünler ile ilgili bazı bilinen sorunlar vardır.  
+   Ağ sürücüleri/Hyper-V ağ yığınını ile tam olarak uyumlu olmayan protokolleri gibi Windows 8'altında yüklü 3 bazı taraf ürünler ile ilgili bazı bilinen sorunlar vardır.  
   
-     Genel olarak, geliştiricilerin bu ürün Windows 8 ve Hyper-V ile uyumlu olacak şekilde, yazılım güncelleştirme kadar olacaktır.  
+   Genel olarak, geliştiricilerin bu ürün Windows 8 ve Hyper-V ile uyumlu olacak şekilde, yazılım güncelleştirme kadar olacaktır.  
   
-     Aşağıdaki ürünler için Windows 8 Uyumluluk yükseltme gerektirebilir: VirtualBox, sanal bilgisayar 7, VMWare, bazı VPN istemcileri yazılım güvenlik duvarları, Cisco VPN istemcileri ve diğer sanallaştırma sistemlerinin bazı sürümlerinde. Windows 8 ve Hyper-V ile uyumlu hale getirmek için yazılım yükseltmelerini teşvik etmek için sorgulanabilir sanallaştırma yazılımı geliştiricisi çalışın.  
+   Aşağıdaki ürünler için Windows 8 Uyumluluk yükseltme gerektirebilir: VirtualBox, sanal bilgisayar 7, VMWare, bazı VPN istemcileri yazılım güvenlik duvarları, Cisco VPN istemcileri ve diğer sanallaştırma sistemlerinin bazı sürümlerinde. Windows 8 ve Hyper-V ile uyumlu hale getirmek için yazılım yükseltmelerini teşvik etmek için sorgulanabilir sanallaştırma yazılımı geliştiricisi çalışın.  
   
-     Olarak bir *geçici çözüm*, tüm üçüncü taraf sürücüler ve Visual Studio ile iletişim kurmak için öykünücüsü tarafından kullanılan sanal ağ ile engelliyor uygulamalar devre dışı bırakabilirsiniz. Bu uygulamalar şunları içerebilir:  
+   Olarak bir *geçici çözüm*, tüm üçüncü taraf sürücüler ve Visual Studio ile iletişim kurmak için öykünücüsü tarafından kullanılan sanal ağ ile engelliyor uygulamalar devre dışı bırakabilirsiniz. Bu uygulamalar şunları içerebilir:  
   
-    -   (Ağ yığınına kanca) virüsten koruma uygulamaları  
+  - (Ağ yığınına kanca) virüsten koruma uygulamaları  
   
-    -   Ağ izleme araçları  
+  - Ağ izleme araçları  
   
-    -   Ağ günlük araçları  
+  - Ağ günlük araçları  
   
-    -   Diğer sistem izleme yazılımı  
+  - Diğer sistem izleme yazılımı  
   
-     Heyecan verici ürünlerle ilgilenmeleri kaldırma kısıtlıysa, başka bir olası çözüm soru (ve güncelleştirilmiş bir sürümünü yayımlamayı ürün Geliştirici isteyen), aşağıdaki adımları sağlamaktır.  
+    Heyecan verici ürünlerle ilgilenmeleri kaldırma kısıtlıysa, başka bir olası çözüm soru (ve güncelleştirilmiş bir sürümünü yayımlamayı ürün Geliştirici isteyen), aşağıdaki adımları sağlamaktır.  
   
-    1.  Ağ bağlantıları Yöneticisi'ni başlatın (başlangıç ekranından yazın `View Network Connections` ve ağ bağlantılarını görüntülemek için bu seçeneği belirleyin.)  
+  1. Ağ bağlantıları Yöneticisi'ni başlatın (başlangıç ekranından yazın `View Network Connections` ve ağ bağlantılarını görüntülemek için bu seçeneği belirleyin.)  
   
-    2.  VEthernet (dahili Ethernet bağlantı noktası Windows Phone öykünücüsü iç anahtar) bağdaştırıcısı için seçim yapın **özellikleri** bağlam menüsünden.  
+  2. VEthernet (dahili Ethernet bağlantı noktası Windows Phone öykünücüsü iç anahtar) bağdaştırıcısı için seçim yapın **özellikleri** bağlam menüsünden.  
   
-         ![Sanal bağdaştırıcı Hyper tarafından kullanılan&#45;V](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")  
+      ![Sanal bağdaştırıcı Hyper tarafından kullanılan&#45;V](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")  
   
-         Bağdaştırıcı özellikleri burada gösterilir.  
+      Bağdaştırıcı özellikleri burada gösterilir.  
   
-         ![Sanal bağdaştırıcı özellikleri](../cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")  
+      ![Sanal bağdaştırıcı özellikleri](../cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")  
   
-    3.  Bu bağdaştırıcı, altında seçilmelidir yalnızca öğeler için **Bu bağlantı aşağıdaki öğeleri kullanır** aşağıdaki gibi olmalıdır:  
+  3. Bu bağdaştırıcı, altında seçilmelidir yalnızca öğeler için **Bu bağlantı aşağıdaki öğeleri kullanır** aşağıdaki gibi olmalıdır:  
   
-        -   Microsoft Ağları için istemci  
+     -   Microsoft Ağları için istemci  
   
-        -   QoS Paket Zamanlayıcısı  
+     -   QoS Paket Zamanlayıcısı  
   
-        -   Dosya ve yazıcı paylaşımı Microsoft Ağları için  
+     -   Dosya ve yazıcı paylaşımı Microsoft Ağları için  
   
-        -   Microsoft LLDP protokol sürücüsüne  
+     -   Microsoft LLDP protokol sürücüsüne  
   
-        -   Bağlantı-katman Topoloji Bulma Eşleyicisi g/ç sürücüsü  
+     -   Bağlantı-katman Topoloji Bulma Eşleyicisi g/ç sürücüsü  
   
-        -   Bağlantı-katman Topoloji Bulma Yanıtlayıcı  
+     -   Bağlantı-katman Topoloji Bulma Yanıtlayıcı  
   
-        -   Internet Protokolü sürüm 6 (TCP/IPv6)  
+     -   Internet Protokolü sürüm 6 (TCP/IPv6)  
   
-        -   Internet Protokolü sürüm 4 (TCP/IPv4)  
+     -   Internet Protokolü sürüm 4 (TCP/IPv4)  
   
-    4.  Diğer öğeleri kaldırın.  
+  4. Diğer öğeleri kaldırın.  
   
      İçin bu teknik kullanılarak dezavantajı, dilediğiniz zaman yeni bir 3. taraf ürün desteklenmeyen sürücüleri yükler veya öykünücü yüklendikten, dilediğiniz zaman bu adımları yinelenmesi gerekir ' dir.  
   
      Üçüncü taraf ürünleri kaldırıldıktan sonra Windows Phone öykünücüsü iç anahtar geri yüklemek gerekebilir. Bunu yapmak için:  
   
-    -   Hyper V açın ve sanal Anahtar Yöneticisi'ne gidin. "Windows Phone öykünücüsü iç geçiş" adlı bir sanal anahtar oluşturma ve bağlantı türünü ayarlamak **iç ağ**.  
+  - Hyper V açın ve sanal Anahtar Yöneticisi'ne gidin. "Windows Phone öykünücüsü iç geçiş" adlı bir sanal anahtar oluşturma ve bağlantı türünü ayarlamak **iç ağ**.  
   
-         ![Sanal Anahtar Yöneticisi](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")  
+     ![Sanal Anahtar Yöneticisi](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")  
   
-     Artık öykünücüyü başlatın. Çalışmalıdır.  
+    Artık öykünücüyü başlatın. Çalışmalıdır.  
   
 ##  <a name="NoBoot"></a> Öykünücü yüklendikten sonra önyükleme bilgisayar başarısız  
  Aşağıdaki koşullar doğru olduğunda bu sorun oluşabilir:  
   
--   Bilgisayarınızda bir gigabayt anakart vardır.  
+- Bilgisayarınızda bir gigabayt anakart vardır.  
   
--   USB3 anakart üzerinde etkindir.  
+- USB3 anakart üzerinde etkindir.  
   
- Bu sorunu çözmek için USB3 anakart BIOS ayarları devre dışı bırakın ve bilgisayarı yeniden başlatın. Daha sonra gigabayt, anakart ait BIOS için bir güncelleştirme yayımladı olup olmadığını denetleyin.  
+  Bu sorunu çözmek için USB3 anakart BIOS ayarları devre dışı bırakın ve bilgisayarı yeniden başlatın. Daha sonra gigabayt, anakart ait BIOS için bir güncelleştirme yayımladı olup olmadığını denetleyin.  
   
- Daha fazla bilgi için aşağıdaki Bilgi Bankası makalesine bakın: [önyükleme hatası sonra gigabayt sistemlerinde Hyper-V rolünün yüklenmesi](https://support.microsoft.com/en-us/kb/2693144).  
+  Daha fazla bilgi için aşağıdaki Bilgi Bankası makalesine bakın: [önyükleme hatası sonra gigabayt sistemlerinde Hyper-V rolünün yüklenmesi](https://support.microsoft.com/en-us/kb/2693144).  
   
 ##  <a name="ADB"></a> Visual Studio öykünücüsü için uygulama dağıtılmaya çalışılırken takılı veya öykünücü diğer IDE içinde hata ayıklama hedefi olarak görünmüyor  
  Öykünücünün çalıştığından, ancak ADB (Android hata ayıklama köprüsü) bağlanması görünmez ya da (örneğin, Android Studio veya Eclipse) ADB kullanan Android araçları görünmüyor öykünücü için ADB nerede arar ayarlamak gerekebilir. Öykünücü, Android SDK'nızı temel konumunu tanımlamak için bir kayıt defteri anahtarını kullanır ve bu dizin altında \platform-tools\adb.exe dosyasını arar. Öykünücüsü tarafından kullanılan Android SDK yolu değiştirmek için:  
   
--   Kayıt Defteri Düzenleyicisi'ni seçerek açın **çalıştırma** başlangıç düğmeleri bağlam menüsünden yazarak `regedit` iletişim kutusunda seçip **Tamam**.  
+- Kayıt Defteri Düzenleyicisi'ni seçerek açın **çalıştırma** başlangıç düğmeleri bağlam menüsünden yazarak `regedit` iletişim kutusunda seçip **Tamam**.  
   
--   Gidin *HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools* Soldaki klasör ağacında.  
+- Gidin *HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools* Soldaki klasör ağacında.  
   
--   Değiştirme **yolu** Android SDK'nızı yolunu eşleştirmek için kayıt defteri değişkeni.  
+- Değiştirme **yolu** Android SDK'nızı yolunu eşleştirmek için kayıt defteri değişkeni.  
   
- Öykünücü yeniden başlatın ve artık öykünücü ADB bağlı ve Android araçları ilişkili görüyor olmanız gerekir.  
+  Öykünücü yeniden başlatın ve artık öykünücü ADB bağlı ve Android araçları ilişkili görüyor olmanız gerekir.  
   
 ##  <a name="XamarinPlayer"></a> UDP bağlantı noktası ' ayarlanamadı çünkü öykünücü yanıt vermemeye başlıyor  
  Xamarin Player ile uyumsuzluğu nedeniyle bu sorunla karşılaşabilirsiniz. Öykünücü askıda görünüyorsa ya da bu hata iletisini görürseniz, "öykünücü cihazın işletim sisteminde bağlanamıyor: UDP bağlantı noktası ' ayarlanamadı.  Bazı işlevler devre dışı bırakılabilir", bu sorunu yaşıyor olabilirsiniz. Aşağıdaki adımları uygulayın.  

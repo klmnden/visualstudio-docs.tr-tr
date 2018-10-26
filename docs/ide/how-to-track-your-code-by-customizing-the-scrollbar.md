@@ -4,17 +4,19 @@ ms.date: 09/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.Scroll_Bars
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f60d7f573ed275ff4d827e0a4209f21444ee64c
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: fca9b8dd8f4c3cd17ee6ca7f23b3622fc1a9e4ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228792"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897062"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>Nasıl yapılır: kaydırma çubuğunu özelleştirme
 

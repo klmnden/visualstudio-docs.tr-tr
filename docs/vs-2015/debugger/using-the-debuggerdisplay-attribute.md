@@ -23,12 +23,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e2dd3a45092c4a1a638fe6316df0dde36eb0ceb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82f72dba6b40f5b09ccc71007eb577c19cf7358e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299423"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827746"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>DebuggerDisplay özniteliğini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,13 +76,13 @@ csc /t:library autoexp.cs
   
  DebuggerDisplay içinde ifadeleri kullanarak aşağıdaki sorunlarına yol açabilir:  
   
--   İfadeleri değerlendirme en pahalı işleminde hata ayıklayıcı ve ifade, görüntülenen her zaman değerlendirilir. Bu kod içerisinde ilerlemeye performans sorunlarına neden olabilir. Örneğin, bir koleksiyon veya listedeki değerleri görüntülemek için kullanılan karmaşık bir ifade öğe sayısı büyük olduğunda çok yavaş olabilir.  
+- İfadeleri değerlendirme en pahalı işleminde hata ayıklayıcı ve ifade, görüntülenen her zaman değerlendirilir. Bu kod içerisinde ilerlemeye performans sorunlarına neden olabilir. Örneğin, bir koleksiyon veya listedeki değerleri görüntülemek için kullanılan karmaşık bir ifade öğe sayısı büyük olduğunda çok yavaş olabilir.  
   
--   İfadeler, geçerli yığın çerçevesi dilinin ifade değerlendiricisi tarafından ve değerlendirme ifadesi yazıldığı dili tarafından değerlendirilir. Dilleri farklı olduğunda bu öngörülemeyen sonuçlara neden olabilir.  
+- İfadeler, geçerli yığın çerçevesi dilinin ifade değerlendiricisi tarafından ve değerlendirme ifadesi yazıldığı dili tarafından değerlendirilir. Dilleri farklı olduğunda bu öngörülemeyen sonuçlara neden olabilir.  
   
--   Bir ifadenin değerlendirilmesi, uygulama durumunu değiştirebilirsiniz. Örneğin, bir özelliğinin değerini ayarlayan bir ifade kodu yürütürken özellik değeri değiştirdiği.  
+- Bir ifadenin değerlendirilmesi, uygulama durumunu değiştirebilirsiniz. Örneğin, bir özelliğinin değerini ayarlayan bir ifade kodu yürütürken özellik değeri değiştirdiği.  
   
- İfade değerlendirmesinin olası sorunları azaltmak yollarından biri, işlemi gerçekleştiren ve bir dize döndürür bir özel özellik oluşturmaktır. DebuggerDisplay özniteliği, bu özel özellik değerini daha sonra görüntüleyebilirsiniz. Aşağıdaki örnek bu düzeni uygular:  
+  İfade değerlendirmesinin olası sorunları azaltmak yollarından biri, işlemi gerçekleştiren ve bir dize döndürür bir özel özellik oluşturmaktır. DebuggerDisplay özniteliği, bu özel özellik değerini daha sonra görüntüleyebilirsiniz. Aşağıdaki örnek bu düzeni uygular:  
   
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  

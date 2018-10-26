@@ -16,12 +16,12 @@ ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7916e954079d627340a1ca41faeeadf7555acfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 49a787dd67691c581383713a7c98a80816762599
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274254"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832725"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Yazı tipi ve metin renklendirmesi için renk bilgilerini alma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ ms.locfileid: "49274254"
   
  VSPackage renklendirmeye geçerli edinmeniz gerekir **yazı tipleri ve renkler** ayarları. VSPackage, kendi ihtiyaçlarına bağlı olarak aşağıdaki yollarla bu görevleri gerçekleştirebilirsiniz:  
   
--   Yazı tipi ve renk Kalıcılık mekanizması depolanmış veya geçerli durumunu almak için kullanın. Daha fazla bilgi için [erişme depolanan yazı tipi ve renk ayarlarını](../extensibility/accessing-stored-font-and-color-settings.md).  
+- Yazı tipi ve renk Kalıcılık mekanizması depolanmış veya geçerli durumunu almak için kullanın. Daha fazla bilgi için [erişme depolanan yazı tipi ve renk ayarlarını](../extensibility/accessing-stored-font-and-color-settings.md).  
   
--   Kullanım <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> örneğini almak için yazı tipi ve renk verileri sağlayan bir hizmet arabiriminin <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, VSPackage'ı da yazı tipini ve rengini sağlayıcısı değil.  
+- Kullanım <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> örneğini almak için yazı tipi ve renk verileri sağlayan bir hizmet arabiriminin <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, VSPackage'ı da yazı tipini ve rengini sağlayıcısı değil.  
   
--   Uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> arabirimi.  
+- Uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> arabirimi.  
   
- Emin olmak için yoklama işlemi tarafından elde edilen sonucu güncel olan, kullanılacak yararlı olabilir <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> alma yöntemleri çağrılmadan önce bir güncelleştirme gerekip gerekmediğini belirlemek için arabirimi <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> arabirimi.  
+  Emin olmak için yoklama işlemi tarafından elde edilen sonucu güncel olan, kullanılacak yararlı olabilir <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> alma yöntemleri çağrılmadan önce bir güncelleştirme gerekip gerekmediğini belirlemek için arabirimi <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> arabirimi.  
   
- Sonra yazı tipi ve renk bilgilerini aldıysanız, renklendirme gerektiren öğeleri tanımlamak için görüntülenecek metni ayrıştırılamadı ve ardından metni uygun yazı tipleri ve renkler kullanarak pencereyi görüntülemek.  
+  Sonra yazı tipi ve renk bilgilerini aldıysanız, renklendirme gerektiren öğeleri tanımlamak için görüntülenecek metni ayrıştırılamadı ve ardından metni uygun yazı tipleri ve renkler kullanarak pencereyi görüntülemek.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   

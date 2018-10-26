@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d77cd34345055f6bcb4b8ea19631aa9a3a6780e3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 76bcd13fcee2f8b0bda775cc3ae241d7a363658e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499692"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928457"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Nasıl yapılır: sihirbazları proje şablonlarıyla kullanma
 Visual Studio sağlar <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> uygulandığında, arabirim, kullanıcı bir şablondan proje oluşturduğu zaman özel kod çalıştırmanıza olanak sağlar.  
@@ -34,194 +34,194 @@ Visual Studio sağlar <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> uygul
 ## <a name="create-a-project-template-project-with-a-vsix-project"></a>Bir VSIX projesi ile bir proje şablonu projesi oluşturun  
  Bir özel şablonu proje şablonu proje Visual Studio SDK'ın bir parçası. ile oluşturmaya başlayın. Bu yordamda bir C# proje şablonu projesi kullanacağız, ancak Visual Basic proje şablonu projesi de mevcuttur. Ardından bir VSIX projesi içeren proje şablonu projesi çözüme ekleyin.  
   
-1.  Bir C# proje şablonu projesi oluşturma (Visual Studio'da **dosya** > **yeni** > **proje** > **Visual C#**   >  **Genişletilebilirlik** > **C# proje şablonu**). Adlandırın **MyProjectTemplate**.  
+1. Bir C# proje şablonu projesi oluşturma (Visual Studio'da **dosya** > **yeni** > **proje** > **Visual C#**   >  **Genişletilebilirlik** > **C# proje şablonu**). Adlandırın **MyProjectTemplate**.  
   
-    > [!NOTE]
-    >  Visual Studio SDK'yı yüklemeyi istenebilir. Daha fazla bilgi için [Visual Studio SDK'sını yükleme](../extensibility/installing-the-visual-studio-sdk.md).  
+   > [!NOTE]
+   >  Visual Studio SDK'yı yüklemeyi istenebilir. Daha fazla bilgi için [Visual Studio SDK'sını yükleme](../extensibility/installing-the-visual-studio-sdk.md).  
   
-2.  Yeni projeye VSIX ekleme (**dosya** > **yeni** > ** Project > **Visual C#** > ** genişletilebilirlik > **VSIX projesi**) Proje şablonu projesi olarak aynı çözüm içindeki (içinde **Çözüm Gezgini**, çözüm düğümüne sağ tıklayın ve Seç'i seçin **Ekle** > **yeni proje** ). Adlandırın **MyProjectWizard.**  
+2. Yeni projeye VSIX ekleme (**dosya** > **yeni** > <strong>Proje > ** Visual C#</strong>   >  <strong>genişletilebilirliği > ** VSIX projesi</strong>) proje şablonu projesi olarak aynı çözüm içindeki (içinde **Çözüm Gezgini**, çözüm düğümüne sağ tıklayın ve Seç'i seçin **Ekle**  >  **Yeni proje**). Adlandırın **MyProjectWizard.**  
   
-3.  VSIX projesini başlangıç projesi olarak ayarlayın. İçinde **Çözüm Gezgini**, VSIX proje düğümünü sağ tıklatın ve seçin seçin **başlangıç projesi olarak ayarla**.  
+3. VSIX projesini başlangıç projesi olarak ayarlayın. İçinde **Çözüm Gezgini**, VSIX proje düğümünü sağ tıklatın ve seçin seçin **başlangıç projesi olarak ayarla**.  
   
-4.  Şablonu projesi VSIX projesinin bir varlık ekleyin. İçinde **Çözüm Gezgini**, VSIX proje düğümü altında bulun *source.extension.vsixmanifest* dosya. Bildirim Düzenleyicisi'nde açmak için çift tıklayın.  
+4. Şablonu projesi VSIX projesinin bir varlık ekleyin. İçinde **Çözüm Gezgini**, VSIX proje düğümü altında bulun *source.extension.vsixmanifest* dosya. Bildirim Düzenleyicisi'nde açmak için çift tıklayın.  
   
-5.  Bildirim düzenleyicisinde **varlıklar** pencerenin sol tarafındaki sekmesi.  
+5. Bildirim düzenleyicisinde **varlıklar** pencerenin sol tarafındaki sekmesi.  
   
-6.  İçinde **varlıklar** sekmesinde **yeni**. İçinde **yeni varlık Ekle** türü alanı, Seç penceresinde **Microsoft.VisualStudio.ProjectTemplate**. İçinde **kaynak** alanın, Seç **mevcut çözümde bir proje**. İçinde **proje** alanın, Seç **MyProjectTemplate**. Sonra **Tamam**'a tıklayın.  
+6. İçinde **varlıklar** sekmesinde **yeni**. İçinde **yeni varlık Ekle** türü alanı, Seç penceresinde **Microsoft.VisualStudio.ProjectTemplate**. İçinde **kaynak** alanın, Seç **mevcut çözümde bir proje**. İçinde **proje** alanın, Seç **MyProjectTemplate**. Sonra **Tamam**'a tıklayın.  
   
-7.  Çözümü derleyin ve hata ayıklamaya başlayın. Visual Studio ikinci bir örneğini görünür. (Bu işlem birkaç dakika sürebilir.)  
+7. Çözümü derleyin ve hata ayıklamaya başlayın. Visual Studio ikinci bir örneğini görünür. (Bu işlem birkaç dakika sürebilir.)  
   
-8.  Yeni şablonunuzu yeni bir proje oluşturmak Visual Studio'nun ikinci örneğini deneyin. (**Dosya** > **yeni** > **Proje > Visual C#** > **MyProject şablon**). Yeni Proje adlı bir sınıf ile görünmelidir **Class1**. Özel proje şablonu oluşturdunuz! Şimdi hata ayıklamayı durdurun.  
+8. Yeni şablonunuzu yeni bir proje oluşturmak Visual Studio'nun ikinci örneğini deneyin. (**Dosya** > **yeni** > **Proje > Visual C#** > **MyProject şablon**). Yeni Proje adlı bir sınıf ile görünmelidir **Class1**. Özel proje şablonu oluşturdunuz! Şimdi hata ayıklamayı durdurun.  
   
 ## <a name="create-a-custom-template-wizard"></a>Bir özel şablon Sihirbazı oluşturma  
  Bu konuda, proje oluşturulmadan önce bir Windows formu açan özel bir sihirbazın nasıl oluşturulacağını gösterir. Form, kullanıcıların proje oluşturma sırasında kaynak koduna eklenen bir özel parametre değeri eklemesine olanak sağlar.  
   
-1.  Bir derleme oluşturmak izin vermek için VSIX projesi ayarlayın.  
+1. Bir derleme oluşturmak izin vermek için VSIX projesi ayarlayın.  
   
-2.  İçinde **Çözüm Gezgini**, VSIX proje düğümünü seçin. Çözüm Gezgini görmelisiniz **özellikleri** penceresi. Bunu yapmazsanız seçin **görünümü** > **Özellikler penceresi**, veya basın **F4**. İçinde **özellikleri** aşağıdaki alanlar için penceresinde `true`:  
+2. İçinde **Çözüm Gezgini**, VSIX proje düğümünü seçin. Çözüm Gezgini görmelisiniz **özellikleri** penceresi. Bunu yapmazsanız seçin **görünümü** > **Özellikler penceresi**, veya basın **F4**. İçinde **özellikleri** aşağıdaki alanlar için penceresinde `true`:  
   
-    -   **IncludeAssemblyInVSIXContainer**  
+   -   **IncludeAssemblyInVSIXContainer**  
   
-    -   **IncludeDebugSymbolsInVSIXContainer**  
+   -   **IncludeDebugSymbolsInVSIXContainer**  
   
-    -   **IncludeDebugSymbolsInLocalVSIXDeployment**  
+   -   **IncludeDebugSymbolsInLocalVSIXDeployment**  
   
-3.  Bütünleştirilmiş kod bir varlık VSIX projesine ekleyin. Açık *source.extension.vsixmanifest* seçin ve dosya **varlıklar** sekmesi. İçinde **yeni varlık Ekle** penceresinde için **türü** seçin **Microsoft.VisualStudio.Assembly**, için **kaynak** seçin **A Geçerli çözümde proje**ve **proje** seçin **MyProjectWizard**.  
+3. Bütünleştirilmiş kod bir varlık VSIX projesine ekleyin. Açık *source.extension.vsixmanifest* seçin ve dosya **varlıklar** sekmesi. İçinde **yeni varlık Ekle** penceresinde için **türü** seçin **Microsoft.VisualStudio.Assembly**, için **kaynak** seçin **A Geçerli çözümde proje**ve **proje** seçin **MyProjectWizard**.  
   
-4.  VSIX projesinde aşağıdaki başvuruları ekleyin. (İçinde **Çözüm Gezgini**, VSIX altında düğüm seçin proje **başvuruları**, sağ tıklatın ve seçin **Başvuru Ekle**.) İçinde **Başvuru Ekle** iletişim, **Framework** sekmesinde, bulmak **System.Windows Forms** derlemesi ve bu seçeneği belirleyin. Şimdi seçtiğiniz **uzantıları** sekmesini Bul **EnvDTE** derleme ve bu seçeneği belirleyin. Ayrıca **Microsoft.VisualStudio.TemplateWizardInterface** derlemesi ve bu seçeneği belirleyin. **Tamam**'ı tıklatın.  
+4. VSIX projesinde aşağıdaki başvuruları ekleyin. (İçinde **Çözüm Gezgini**, VSIX altında düğüm seçin proje **başvuruları**, sağ tıklatın ve seçin **Başvuru Ekle**.) İçinde **Başvuru Ekle** iletişim, **Framework** sekmesinde, bulmak **System.Windows Forms** derlemesi ve bu seçeneği belirleyin. Şimdi seçtiğiniz **uzantıları** sekmesini Bul **EnvDTE** derleme ve bu seçeneği belirleyin. Ayrıca **Microsoft.VisualStudio.TemplateWizardInterface** derlemesi ve bu seçeneği belirleyin. **Tamam**'ı tıklatın.  
   
-5.  Sihirbaz uygulamasını için bir sınıf, VSIX projesine ekleyin. (İçinde **Çözüm Gezgini**, VSIX proje düğümünü sağ tıklatın ve seçin **Ekle**, ardından **yeni öğe**, ardından **sınıfı**.) Sınıf adı **WizardImplementation**.  
+5. Sihirbaz uygulamasını için bir sınıf, VSIX projesine ekleyin. (İçinde **Çözüm Gezgini**, VSIX proje düğümünü sağ tıklatın ve seçin **Ekle**, ardından **yeni öğe**, ardından **sınıfı**.) Sınıf adı **WizardImplementation**.  
   
-6.  Değiştirin *WizardImplementationClass.cs* dosyasındaki kodu aşağıdaki kodla:  
+6. Değiştirin *WizardImplementationClass.cs* dosyasındaki kodu aşağıdaki kodla:  
   
-    ```csharp  
-    using System;  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.TemplateWizard;  
-    using System.Windows.Forms;  
-    using EnvDTE;  
+   ```csharp  
+   using System;  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.TemplateWizard;  
+   using System.Windows.Forms;  
+   using EnvDTE;  
   
-    namespace MyProjectWizard  
-    {  
-        public class WizardImplementation:IWizard  
-        {  
-            private UserInputForm inputForm;  
-            private string customMessage;  
+   namespace MyProjectWizard  
+   {  
+       public class WizardImplementation:IWizard  
+       {  
+           private UserInputForm inputForm;  
+           private string customMessage;  
   
-            // This method is called before opening any item that   
-            // has the OpenInEditor attribute.  
-            public void BeforeOpeningFile(ProjectItem projectItem)  
-            {  
-            }  
+           // This method is called before opening any item that   
+           // has the OpenInEditor attribute.  
+           public void BeforeOpeningFile(ProjectItem projectItem)  
+           {  
+           }  
   
-            public void ProjectFinishedGenerating(Project project)  
-            {  
-            }  
+           public void ProjectFinishedGenerating(Project project)  
+           {  
+           }  
   
-            // This method is only called for item templates,  
-            // not for project templates.  
-            public void ProjectItemFinishedGenerating(ProjectItem   
-                projectItem)  
-            {  
-            }  
+           // This method is only called for item templates,  
+           // not for project templates.  
+           public void ProjectItemFinishedGenerating(ProjectItem   
+               projectItem)  
+           {  
+           }  
   
-            // This method is called after the project is created.  
-            public void RunFinished()  
-            {  
-            }  
+           // This method is called after the project is created.  
+           public void RunFinished()  
+           {  
+           }  
   
-            public void RunStarted(object automationObject,  
-                Dictionary<string, string> replacementsDictionary,  
-                WizardRunKind runKind, object[] customParams)  
-            {  
-                try  
-                {  
-                    // Display a form to the user. The form collects   
-                    // input for the custom message.  
-                    inputForm = new UserInputForm();  
-                    inputForm.ShowDialog();  
+           public void RunStarted(object automationObject,  
+               Dictionary<string, string> replacementsDictionary,  
+               WizardRunKind runKind, object[] customParams)  
+           {  
+               try  
+               {  
+                   // Display a form to the user. The form collects   
+                   // input for the custom message.  
+                   inputForm = new UserInputForm();  
+                   inputForm.ShowDialog();  
   
-                    customMessage = UserInputForm.CustomMessage;  
+                   customMessage = UserInputForm.CustomMessage;  
   
-                    // Add custom parameters.  
-                    replacementsDictionary.Add("$custommessage$",   
-                        customMessage);  
-                }  
-                catch (Exception ex)  
-                {  
-                    MessageBox.Show(ex.ToString());  
-                }  
-            }  
+                   // Add custom parameters.  
+                   replacementsDictionary.Add("$custommessage$",   
+                       customMessage);  
+               }  
+               catch (Exception ex)  
+               {  
+                   MessageBox.Show(ex.ToString());  
+               }  
+           }  
   
-            // This method is only called for item templates,  
-            // not for project templates.  
-            public bool ShouldAddProjectItem(string filePath)  
-            {  
-                return true;  
-            }          
-        }  
-    }  
-    ```  
+           // This method is only called for item templates,  
+           // not for project templates.  
+           public bool ShouldAddProjectItem(string filePath)  
+           {  
+               return true;  
+           }          
+       }  
+   }  
+   ```  
   
-     **Userınputform** bu başvurulan kod uygulanmasını daha sonra.  
+    **Userınputform** bu başvurulan kod uygulanmasını daha sonra.  
   
-     `WizardImplementation` Sınıfı her üyesi için yöntem uygulamaları içermektedir <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>. Bu örnekte, yalnızca <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> yöntemi bir görev gerçekleştirir. Tüm diğer yöntemler birşey yapmazlar veya dönüş `true`.  
+    `WizardImplementation` Sınıfı her üyesi için yöntem uygulamaları içermektedir <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>. Bu örnekte, yalnızca <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> yöntemi bir görev gerçekleştirir. Tüm diğer yöntemler birşey yapmazlar veya dönüş `true`.  
   
-     <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> Yöntemi dört parametre kabul eder:  
+    <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> Yöntemi dört parametre kabul eder:  
   
-    -   Bir <xref:System.Object> kök dönüştürülebilen parametresi <xref:EnvDTE._DTE> sizi projeyi özelleştirmek üzere etkinleştirmek için nesne.  
+   - Bir <xref:System.Object> kök dönüştürülebilen parametresi <xref:EnvDTE._DTE> sizi projeyi özelleştirmek üzere etkinleştirmek için nesne.  
   
-    -   A <xref:System.Collections.Generic.Dictionary%602> şablonda tüm önceden tanımlanan parametrelerin bir koleksiyonunu içeren bir parametre. Şablon parametreleri hakkında daha fazla bilgi için bkz. [şablon parametreleri](../ide/template-parameters.md).  
+   - A <xref:System.Collections.Generic.Dictionary%602> şablonda tüm önceden tanımlanan parametrelerin bir koleksiyonunu içeren bir parametre. Şablon parametreleri hakkında daha fazla bilgi için bkz. [şablon parametreleri](../ide/template-parameters.md).  
   
-    -   A <xref:Microsoft.VisualStudio.TemplateWizard.WizardRunKind> ne tür şablon kullanıldığına bilgi içeren bir parametre.  
+   - A <xref:Microsoft.VisualStudio.TemplateWizard.WizardRunKind> ne tür şablon kullanıldığına bilgi içeren bir parametre.  
   
-    -   Bir <xref:System.Object> parametreler kümesi içeren bir dizi için Sihirbazı'nı Visual Studio tarafından geçirilen.  
+   - Bir <xref:System.Object> parametreler kümesi içeren bir dizi için Sihirbazı'nı Visual Studio tarafından geçirilen.  
   
      Bu örnek için kullanıcı giriş formundan bir parametre değeri ekler <xref:System.Collections.Generic.Dictionary%602> parametresi. Her bir örneğini `$custommessage$` projedeki parametresi, kullanıcı tarafından girilen metinle değiştirilecektir. Aşağıdaki derlemeleri projenize eklemelisiniz: **sistem** ve **System.Drawing**.
   
-7.  Şimdi oluşturmak **Userınputform**. İçinde *WizardImplementation.cs* sonunda aşağıdaki kodu ekleyin `WizardImplementation` sınıfı.  
+7. Şimdi oluşturmak **Userınputform**. İçinde *WizardImplementation.cs* sonunda aşağıdaki kodu ekleyin `WizardImplementation` sınıfı.  
   
-    ```csharp  
-    public partial class UserInputForm : Form  
-        {  
-            private static string customMessage;  
-            private TextBox textBox1;  
-            private Button button1;  
+   ```csharp  
+   public partial class UserInputForm : Form  
+       {  
+           private static string customMessage;  
+           private TextBox textBox1;  
+           private Button button1;  
   
-            public UserInputForm()  
-            {  
-                this.Size = new System.Drawing.Size(155, 265);   
+           public UserInputForm()  
+           {  
+               this.Size = new System.Drawing.Size(155, 265);   
   
-                button1 = new Button();  
-                button1.Location = new System.Drawing.Point(90, 25);  
-                button1.Size = new System.Drawing.Size(50, 25);  
-                button1.Click += button1_Click;  
-                this.Controls.Add(button1);  
+               button1 = new Button();  
+               button1.Location = new System.Drawing.Point(90, 25);  
+               button1.Size = new System.Drawing.Size(50, 25);  
+               button1.Click += button1_Click;  
+               this.Controls.Add(button1);  
   
-                textBox1 = new TextBox();  
-                textBox1.Location = new System.Drawing.Point(10, 25);  
-                textBox1.Size = new System.Drawing.Size(70, 20);  
-                this.Controls.Add(textBox1);  
-            }  
-            public static string CustomMessage  
-            {  
-                get  
-                {  
-                    return customMessage;  
-                }  
-                set  
-                {  
-                    customMessage = value;  
-                }     
-            }  
-            private void button1_Click(object sender, EventArgs e)  
-            {  
-                customMessage = textBox1.Text;  
-                this.Close();
-            }  
-        }  
-    ```  
+               textBox1 = new TextBox();  
+               textBox1.Location = new System.Drawing.Point(10, 25);  
+               textBox1.Size = new System.Drawing.Size(70, 20);  
+               this.Controls.Add(textBox1);  
+           }  
+           public static string CustomMessage  
+           {  
+               get  
+               {  
+                   return customMessage;  
+               }  
+               set  
+               {  
+                   customMessage = value;  
+               }     
+           }  
+           private void button1_Click(object sender, EventArgs e)  
+           {  
+               customMessage = textBox1.Text;  
+               this.Close();
+           }  
+       }  
+   ```  
   
-     Kullanıcı giriş formu, bir özel parametre girmek için basit bir form sağlar. Adlı bir metin kutusu formu içeren `textBox1` adlı bir düğme `button1`. Düğme tıklandığında metin kutusundaki metin depolanan `customMessage` parametresi.  
+    Kullanıcı giriş formu, bir özel parametre girmek için basit bir form sağlar. Adlı bir metin kutusu formu içeren `textBox1` adlı bir düğme `button1`. Düğme tıklandığında metin kutusundaki metin depolanan `customMessage` parametresi.  
   
 ## <a name="connect-the-wizard-to-the-custom-template"></a>Sihirbaz özel şablonuna Bağla  
  Özel Sihirbazı kullanmak, özel bir proje şablonu Sihirbazı derlemeyi imzalamak ve sihirbaz uygulamasını yeni bir proje oluşturulduğunda nerede bulacağını biliyor izin vermek için özel Proje şablonunuza bazı satırlar eklemek gerekir.  
   
-1.  Derlemeyi imzalayın. İçinde **Çözüm Gezgini**, VSIX projesi, sağ tıklatın ve seçin seçin **proje özellikleri**.  
+1. Derlemeyi imzalayın. İçinde **Çözüm Gezgini**, VSIX projesi, sağ tıklatın ve seçin seçin **proje özellikleri**.  
   
-2.  İçinde **proje özellikleri** penceresinde **imzalama** sekmesindeki **imzalama** sekmesinde, onay **derlemeyi imzalamayı**. İçinde **bir tanımlayıcı ad anahtar dosyası seç** alanın, Seç  **\<yeni >**. İçinde **katı ad anahtarı oluştur** penceresi içinde **anahtar dosya adı** alanına **key.snk**. Onay kutusunu temizleyin **anahtar dosyamı bir parolayla korumak** alan.  
+2. İçinde **proje özellikleri** penceresinde **imzalama** sekmesindeki **imzalama** sekmesinde, onay **derlemeyi imzalamayı**. İçinde **bir tanımlayıcı ad anahtar dosyası seç** alanın, Seç  **\<yeni >**. İçinde **katı ad anahtarı oluştur** penceresi içinde **anahtar dosya adı** alanına **key.snk**. Onay kutusunu temizleyin **anahtar dosyamı bir parolayla korumak** alan.  
   
-3.  İçinde **Çözüm Gezgini**, VSIX projesini seçin ve bulma **özellikleri** penceresi.  
+3. İçinde **Çözüm Gezgini**, VSIX projesini seçin ve bulma **özellikleri** penceresi.  
   
-4.  Ayarlama **kopyalama çıkış için çıktı dizinine** alanı **true**. Bu çözümü yeniden oluşturulduğunda çıkış dizinine kopyalanacak derleme sağlar. Yine de içeren `.vsix` dosya. Derleme imza anahtarıyla bulmak amacıyla görmek gerekir.  
+4. Ayarlama **kopyalama çıkış için çıktı dizinine** alanı **true**. Bu çözümü yeniden oluşturulduğunda çıkış dizinine kopyalanacak derleme sağlar. Yine de içeren `.vsix` dosya. Derleme imza anahtarıyla bulmak amacıyla görmek gerekir.  
   
-5.  Çözümü yeniden derleyin.  
+5. Çözümü yeniden derleyin.  
   
-6.  Artık key.snk dosya MyProjectWizard proje dizininde bulabilirsiniz (*\<disk konumunuz > \MyProjectTemplate\MyProjectWizard\key.snk*). Kopyalama *key.snk* dosya.  
+6. Artık key.snk dosya MyProjectWizard proje dizininde bulabilirsiniz (*\<disk konumunuz > \MyProjectTemplate\MyProjectWizard\key.snk*). Kopyalama *key.snk* dosya.  
   
-7.  Çıkış dizinine gidin ve derleme bulunamadı (*\<disk konumunuz > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Yapıştırma *key.snk* Buraya dosya. (Bu kesinlikle gerekli değildir, ancak aşağıdaki adımları daha kolay hale getirir.)  
+7. Çıkış dizinine gidin ve derleme bulunamadı (*\<disk konumunuz > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Yapıştırma *key.snk* Buraya dosya. (Bu kesinlikle gerekli değildir, ancak aşağıdaki adımları daha kolay hale getirir.)  
   
-8.  Bir komut penceresi açın ve derleme oluşturulduktan dizine geçin.  
+8. Bir komut penceresi açın ve derleme oluşturulduktan dizine geçin.  
   
 9. Bulma *sn.exe* imzalama aracı. Örneğin, bir Windows 10 64-bit işletim sisteminde tipik bir yol şu olacaktır:  
   
@@ -261,17 +261,17 @@ Visual Studio sağlar <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> uygul
 ## <a name="add-the-custom-parameter-to-the-template"></a>Özel parametre şablonuna ekleme  
  Bu örnekte, şablon olarak kullanılan proje özel sihirbazın kullanıcı giriş formunda belirtilen iletiyi görüntüler.  
   
-1.  İçinde **Çözüm Gezgini**Git **MyProjectTemplate** açın ve proje *Class1.cs*.  
+1. İçinde **Çözüm Gezgini**Git **MyProjectTemplate** açın ve proje *Class1.cs*.  
   
-2.  İçinde `Main` uygulama yöntemini aşağıdaki kod satırını ekleyin.  
+2. İçinde `Main` uygulama yöntemini aşağıdaki kod satırını ekleyin.  
   
-    ```csharp  
-    Console.WriteLine("$custommessage$");  
-    ```  
+   ```csharp  
+   Console.WriteLine("$custommessage$");  
+   ```  
   
-     Parametre `$custommessage$` bir proje şablondan oluşturulduğunda kullanıcı giriş formuna girilen metin ile değiştirilir.  
+    Parametre `$custommessage$` bir proje şablondan oluşturulduğunda kullanıcı giriş formuna girilen metin ile değiştirilir.  
   
- Bir şablona aktarılmadan önce tam kod dosyasını aşağıdadır.  
+   Bir şablona aktarılmadan önce tam kod dosyasını aşağıdadır.  
   
 ```csharp  
 using System;  

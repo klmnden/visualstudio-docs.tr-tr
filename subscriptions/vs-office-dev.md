@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil Office 365 Geliştirici teklifi 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9c77062873704f6e92d04aa4e949f1db3c1c71f7
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: d75c64c3d8902432adde846badabe18a820a16b0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073980"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858348"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio Abonelikleri, Office 365 Geliştirici aboneliği teklifi
 
@@ -29,32 +29,32 @@ Seçili Visual Studio Enterprise abonelikleri olan aboneler, Office 365 Gelişti
 3. Oturum açma işlemi tamamlandıktan sonra abonelik avantajlarını sayfası görmeniz gerekir.  Birden fazla aboneliğiniz varsa, sağ üst köşesinde, siyah Şeridin altında aşağı açılan oka tıklayarak abonelikler arasında geçiş yapabilirsiniz.  Office 365 Geliştirici aboneliği teklifi döşeme Araçları kategorisindedir.  Kutucuk satırının sağındaki oku, Office kutucuğuna görünene kadar kaydırın için kullanın.
 
 4. Tıklayarak **etkinleştirme** avantajı kutucuğun alt kısmındaki bağlantı.   
-    > [!div class="mx-imgBorder"]
-    > ![Office 365 geliştirme avantajı kutucuğu](_img\vs-office-dev\vs-office-dev-tile.png)
+   > [!div class="mx-imgBorder"]
+   > ![Office 365 geliştirme avantajı kutucuğu](_img/vs-office-dev/vs-office-dev-tile.png)
 
-5.  Sonraki adım, bir hesap oluşturmaktır.  Ad ve oturum açma e-posta adresi görüntülenir.  
-- Ülkenizi seçin.
-- Şirketinizin adını girin. 
-- Hüküm ve koşulları kabul etmek için onay kutusuna tıklayın. 
-- **İleri**'ye tıklayın.
-    > [!div class="mx-imgBorder"]
-    > ![Office 365 geliştirme kaydolma](_img\vs-office-dev\vs-office-dev-signup.png)
-    
-6.  Tercihlerinizi ve ilgi alanlarını belirtin ve tıklayın **bir aboneliği etkinleştirin**.   
-    > [!div class="mx-imgBorder"]
-    > ![Office 365 geliştirme tercihleri](_img\vs-office-dev\vs-office-dev-preferences.png)
+5. Sonraki adım, bir hesap oluşturmaktır.  Ad ve oturum açma e-posta adresi görüntülenir.  
+6. Ülkenizi seçin.
+7. Şirketinizin adını girin. 
+8. Hüküm ve koşulları kabul etmek için onay kutusuna tıklayın. 
+9. **İleri**'ye tıklayın.
+   > [!div class="mx-imgBorder"]
+   > ![Office 365 geliştirme kaydolma](_img/vs-office-dev/vs-office-dev-signup.png)
 
-7.  Ardından, ülkenizi/bölgenizi doğrulamak ve kullanıcı adınızı, etki alanı ve parola oluşturun.
+10. Tercihlerinizi ve ilgi alanlarını belirtin ve tıklayın **bir aboneliği etkinleştirin**.   
     > [!div class="mx-imgBorder"]
-    > ![Office 365 geliştirme kullanıcı adı ve etki alanı](_img\vs-office-dev\vs-office-dev-domain.png)
+    > ![Office 365 geliştirme tercihleri](_img/vs-office-dev/vs-office-dev-preferences.png)
 
-8.  Telefon numaranızı girin ve tıklayın **kod Gönder**.  Bu hesabı gerçek bir kişi tarafından oluşturulan olun yardımcı olur. 
+11. Ardından, ülkenizi/bölgenizi doğrulamak ve kullanıcı adınızı, etki alanı ve parola oluşturun.
     > [!div class="mx-imgBorder"]
-    > ![Office 365 geliştirme telefon doğrulama](_img\vs-office-dev\vs-office-dev-send-code.png)
+    > ![Office 365 geliştirme kullanıcı adı ve etki alanı](_img/vs-office-dev/vs-office-dev-domain.png)
 
-9.  Kodu alma ve tıklayın girin **ayarlanan**.
+12. Telefon numaranızı girin ve tıklayın **kod Gönder**.  Bu hesabı gerçek bir kişi tarafından oluşturulan olun yardımcı olur. 
     > [!div class="mx-imgBorder"]
-    > ![Office 365 geliştirme kod doğrulama](_img\vs-office-dev\vs-office-dev-setup.png)
+    > ![Office 365 geliştirme telefon doğrulama](_img/vs-office-dev/vs-office-dev-send-code.png)
+
+13. Kodu alma ve tıklayın girin **ayarlanan**.
+    > [!div class="mx-imgBorder"]
+    > ![Office 365 geliştirme kod doğrulama](_img/vs-office-dev/vs-office-dev-setup.png)
 
 İşte bu kadar!  Tercihlerinize göre bilgi görüntüleyen bir sayfa görürsünüz.  
 
@@ -65,6 +65,7 @@ Office 365 Geliştirici aboneliği hakkında daha fazla bilgi için kullanıma [
 
 
 ## <a name="eligibility"></a>Uygunluk
+
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standart, yıllık bulut)   | VL, Azure, perakende, seçili NFR<sup>1</sup> | Dahil edilen      |  Evet          |

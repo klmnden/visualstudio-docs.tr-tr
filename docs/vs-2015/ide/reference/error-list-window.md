@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e3e87a2786e2eb5ffafda2924920eaad7640039
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0ecec77428d32512ec1b5fcf3822933c1c619b7f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232290"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873713"
 ---
 # <a name="error-list-window"></a>Hata Listesi Penceresi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,23 +37,23 @@ ms.locfileid: "49232290"
   
  Kullanarak uygulamalarınızı daha hızlı geliştirebilirsiniz **hata listesi** penceresi. Örneğin, aşağıdaki görevleri gerçekleştirebilirsiniz:  
   
--   Hatalar, uyarılar ve kod yazdığınız sırada üretilen iletileri görüntüleyin.  
+- Hatalar, uyarılar ve kod yazdığınız sırada üretilen iletileri görüntüleyin.  
   
--   IntelliSense tarafından fark edilen sözdizimi hatalarını bulur.  
+- IntelliSense tarafından fark edilen sözdizimi hatalarını bulur.  
   
--   Bulma dağıtım hatalarını, belirli statik analiz hatalarını ve kurumsal şablon ilkeleri uygulanırken saptanan hataları.  
+- Bulma dağıtım hatalarını, belirli statik analiz hatalarını ve kurumsal şablon ilkeleri uygulanırken saptanan hataları.  
   
--   Burada sorun ortaya çıkar ve hata konumuna gitmek dosyayı açmak için hata iletisini çift tıklayın.  
+- Burada sorun ortaya çıkar ve hata konumuna gitmek dosyayı açmak için hata iletisini çift tıklayın.  
   
--   Hangi girişlerin görüntüleneceğini ve her giriş için hangi bilgi sütunlarını görünür filtreleyin.  
+- Hangi girişlerin görüntüleneceğini ve her giriş için hangi bilgi sütunlarını görünür filtreleyin.  
   
--   Özel terimleri arayın ve yalnızca geçerli proje veya belgeyi aramayı kapsamına.  
+- Özel terimleri arayın ve yalnızca geçerli proje veya belgeyi aramayı kapsamına.  
   
- Görüntülenecek **hata listesi**, tıklayın **görünüm / hata listesinde**, veya **CTRL +\\+ E**.  
+  Görüntülenecek **hata listesi**, tıklayın **görünüm / hata listesinde**, veya **CTRL +\\+ E**.  
   
- Seçebileceğiniz **hataları**, **uyarıları**, ve **iletileri** farklı düzeylerde bilgileri görmek için sekmeler.  
+  Seçebileceğiniz **hataları**, **uyarıları**, ve **iletileri** farklı düzeylerde bilgileri görmek için sekmeler.  
   
- Listeyi sıralamak için herhangi bir sütun başlığına tıklayın. Başka bir sütuna göre yeniden sıralamak için SHIFT tuşunu basılı tutun ve başka bir sütun başlığına tıklayın. Hangi sütunların görüntülenip hangilerinin gizlendiğini seçmek için seçin **sütunları göster** kısayol menüsünden. Sütunların görüntülenme sırasını değiştirmek için herhangi bir sütun başlığını sola veya sağa sürükleyin.  
+  Listeyi sıralamak için herhangi bir sütun başlığına tıklayın. Başka bir sütuna göre yeniden sıralamak için SHIFT tuşunu basılı tutun ve başka bir sütun başlığına tıklayın. Hangi sütunların görüntülenip hangilerinin gizlendiğini seçmek için seçin **sütunları göster** kısayol menüsünden. Sütunların görüntülenme sırasını değiştirmek için herhangi bir sütun başlığını sola veya sağa sürükleyin.  
   
 > [!NOTE]
 >  İletişim kutuları ve menü komutları gördüğünüz, etkin ayarlarınıza ve sürüm bağlı olarak burada açıklananlar farklılık gösterebilir. Ayarlarınızı değiştirmek için tıklayın **Araçlar / içe ve dışa aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -63,18 +63,18 @@ ms.locfileid: "49232290"
   
  Analiz etmek ve hata grupları üzerinde hareket için arama kapsamını sınırlandırabilirsiniz. Örneğin, bir projenin derlenmesini önleyen çekirdek hatalarına odaklanmak isteyebilirsiniz. Kapsam belirleme seçenekleri şunlardır:  
   
-1.  **Belgeleri açma**: hatalar, uyarılar ve açık belgelerin iletileri göster.  
+1. **Belgeleri açma**: hatalar, uyarılar ve açık belgelerin iletileri göster.  
   
-2.  **Geçerli proje**: Göster hataları, uyarıları ve iletileri seçilmiş belgenin projesinden **Düzenleyicisi** veya seçilen projede **Çözüm Gezgini**.  
+2. **Geçerli proje**: Göster hataları, uyarıları ve iletileri seçilmiş belgenin projesinden **Düzenleyicisi** veya seçilen projede **Çözüm Gezgini**.  
   
-    > [!NOTE]
-    >  Şu anda seçili olan belgenin projesi seçili projeden farklıysa, filtrelenmiş liste hataları, uyarıları ve iletileri değiştirecek **Çözüm Gezgini**.  
+   > [!NOTE]
+   >  Şu anda seçili olan belgenin projesi seçili projeden farklıysa, filtrelenmiş liste hataları, uyarıları ve iletileri değiştirecek **Çözüm Gezgini**.  
   
-3.  **Geçerli belge**: hatalar, uyarılar ve şu anda seçili belgedeki iletilerini göster **Düzenleyicisi** veya **Çözüm Gezgini**.  
+3. **Geçerli belge**: hatalar, uyarılar ve şu anda seçili belgedeki iletilerini göster **Düzenleyicisi** veya **Çözüm Gezgini**.  
   
- Bir filtre o anda arama sonucuna uygulanırsa, filtrenin adını görünür **hata listesi** başlık çubuğu. **Hataları**, **uyarıları**, ve **iletileri** düğmeleri sonra toplam öğe sayısının yanı sıra gösterilen filtrelenmiş öğe sayısını da görüntüler; örneğin, düğme Göster x / y hata. Hiçbir filtre uygulanmamışsa başlık çubuğunda yalnızca "hata listesi" yazar.  
+   Bir filtre o anda arama sonucuna uygulanırsa, filtrenin adını görünür **hata listesi** başlık çubuğu. **Hataları**, **uyarıları**, ve **iletileri** düğmeleri sonra toplam öğe sayısının yanı sıra gösterilen filtrelenmiş öğe sayısını da görüntüler; örneğin, düğme Göster x / y hata. Hiçbir filtre uygulanmamışsa başlık çubuğunda yalnızca "hata listesi" yazar.  
   
- Araç çubuğunun sağ tarafındaki listenin (bir yapı işleminden kaynaklanan hatalar) derleme hatalarından gösterilip gösterilmeyeceğini belirtir veya IntelliSense (bir derleme çalıştırmadan önce algılanan hataları) veya her ikisi de.  
+   Araç çubuğunun sağ tarafındaki listenin (bir yapı işleminden kaynaklanan hatalar) derleme hatalarından gösterilip gösterilmeyeceğini belirtir veya IntelliSense (bir derleme çalıştırmadan önce algılanan hataları) veya her ikisi de.  
   
 ## <a name="search"></a>Ara  
  Kullanım **arama hatası listesi** metin kutusunun sağ alt tarafında **hata listesi** hata Listesi'nde belirli hataları bulmak için araç çubuğu. Hata listesindeki görünen herhangi bir sütunda arama yapabilirsiniz ve arama sonuçları her zaman sorgu veya uygulanan filtre yerine sıralama önceliği olan sütun göre sıralanır. Seçerseniz **Esc** odak modundayken anahtar **hata listesi**, arama terimini temizleyebilir ve arama sonuçlarını filtrelersiniz. Ayrıca **X** temizleyin metin kutusunun sağ tarafındaki.  

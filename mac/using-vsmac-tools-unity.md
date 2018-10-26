@@ -5,12 +5,12 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: cd368c6b6bfd8d38817ef1b7014e9f1c91cac2ab
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: f91651d72cff067bcc0e679fa66f250a8a1a55d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37889950"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898830"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Visual Studio için Unity için Mac araçları kullanarak
 
@@ -33,31 +33,31 @@ Unity altyapısı MonoBehaviour betikleri, geliştiricilerin OnMouseDown, OnTrig
 
 Ancak, Visual Studio için Unity için Mac araçları Unity iletileri için IntelliSense işlevselliği genişletir. Unity iletilerini Uygula MonoBehaviour betiklerde daha kolay hale getirir ve Unity API öğrenmeye yardımcı olur. Unity iletileri için IntelliSense kullanmak için:
 
-1.  MonoBehaviour türetilen bir sınıfın gövdesi içinde yeni bir satıra imleci yerleştirin.
+1. MonoBehaviour türetilen bir sınıfın gövdesi içinde yeni bir satıra imleci yerleştirin.
 
-2.  Gibi bir Unity adını yazmaya başlama iletisi `OnTriggerEnter`.
+2. Gibi bir Unity adını yazmaya başlama iletisi `OnTriggerEnter`.
 
-3.  Harf "**ont**" bir IntelliSense Öneri listesi görünür girilmiş.
+3. Harf "**ont**" bir IntelliSense Öneri listesi görünür girilmiş.
 
-  ![IntelliSense Kullanma](media/using-vsmac-tools-unity-image2.png)
+   ![IntelliSense Kullanma](media/using-vsmac-tools-unity-image2.png)
 
-4.  Seçim listesindeki üç yolla değiştirilebilir:
+4. Seçim listesindeki üç yolla değiştirilebilir:
 
-    * İle **yukarı** ve **aşağı** ok tuşları.
+   * İle **yukarı** ve **aşağı** ok tuşları.
 
-    * İstenen öğe üzerinde fare ile tıklayarak.
+   * İstenen öğe üzerinde fare ile tıklayarak.
 
-    * İstenen öğe adı devam ederek.
+   * İstenen öğe adı devam ederek.
 
-5.  IntelliSense, tüm gerekli parametreleri de dahil olmak üzere seçili Unity ileti ekleyebilirsiniz:
+5. IntelliSense, tüm gerekli parametreleri de dahil olmak üzere seçili Unity ileti ekleyebilirsiniz:
 
-    * Tuşuna basarak **sekmesini**.
+   * Tuşuna basarak **sekmesini**.
 
-    * Tuşuna basarak **dönüş**.
+   * Tuşuna basarak **dönüş**.
 
-    * Seçili öğeyi çift tıklayarak.
+   * Seçili öğeyi çift tıklayarak.
 
-  ![Unity iletisi IntelliSense'de Ekle](media/using-vsmac-tools-unity-image3.png)
+   ![Unity iletisi IntelliSense'de Ekle](media/using-vsmac-tools-unity-image3.png)
 
 ## <a name="adding-new-unity-files-and-folders"></a>Yeni Unity dosyaları ve klasörleri ekleme
 
@@ -93,22 +93,22 @@ Mac için Visual Studio ile Unity projeleri ayıklanabilir
 
 Hata ayıklamayı başlatmak için:
 
-1.  Tıklayarak, Unity için Visual Studio connect **Play** düğmesini veya türü **Command + Return**, veya **F5**.
+1. Tıklayarak, Unity için Visual Studio connect **Play** düğmesini veya türü **Command + Return**, veya **F5**.
 
-  ![Visual Studio'da Yürüt'e tıklayın](media/using-vsmac-tools-unity-image5.png)
+   ![Visual Studio'da Yürüt'e tıklayın](media/using-vsmac-tools-unity-image5.png)
 
-2.  Geçiş'i tıklatın ve Unity ile **Play** Düzenleyici'de oyuna çalıştırmak için düğme.
+2. Geçiş'i tıklatın ve Unity ile **Play** Düzenleyici'de oyuna çalıştırmak için düğme.
 
-  ![Unity Yürüt'e tıklayın](media/using-vsmac-tools-unity-image6.png)
+   ![Unity Yürüt'e tıklayın](media/using-vsmac-tools-unity-image6.png)
 
-3.  Oyun bağlıyken, Visual Studio için Unity Düzenleyicisi'nde çalışırken karşılaşılan herhangi bir kesme noktası oyun yürütülmesini Duraklat ve burada oyun Mac için Visual Studio'da kesme noktası isabet kod satırının getirecek
+3. Oyun bağlıyken, Visual Studio için Unity Düzenleyicisi'nde çalışırken karşılaşılan herhangi bir kesme noktası oyun yürütülmesini Duraklat ve burada oyun Mac için Visual Studio'da kesme noktası isabet kod satırının getirecek
 
 ### <a name="stop-debugging"></a>Hata ayıklamayı Durdur
 
 Hata ayıklamayı durdurmak için:
 
-1.  Tıklayın **Durdur** düğmesine basın veya Mac için Visual Studio'daki **Shift + Command + dönüş**.
+1. Tıklayın **Durdur** düğmesine basın veya Mac için Visual Studio'daki **Shift + Command + dönüş**.
 
-  ![Visual Studio'da Durdur'u tıklatın](media/using-vsmac-tools-unity-image7.png)
+   ![Visual Studio'da Durdur'u tıklatın](media/using-vsmac-tools-unity-image7.png)
 
 Mac için Visual Studio'da hata ayıklama hakkında daha fazla bilgi için bkz: [hata ayıklayıcıyı kullanma](https://docs.microsoft.com/visualstudio/mac/debugging).

@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 36cc776f18990e7cc97b1583267c9f9f9b9c95eb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 276ec679525682486db5a579ac34f52cec5081f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381152"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885669"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Alana Özgü Dilleri Kullanmaya Başlama
 
@@ -43,11 +43,12 @@ Bu genel bakışta geri kalanı, oluşturma ve bir etki alanına özgü dil Visu
 
 Bir DSL tanımlamak için aşağıdaki bileşenler yüklemiş olmanız gerekir:
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio için modelleme SDK'sı||
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| Visual Studio için modelleme SDK'sı | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -143,7 +144,7 @@ Deneysel Visual Studio, aşağıdaki örneğe benzer:
 
 ### <a name="the-content-of-a-model"></a>Modelin içeriğine
 
-Bir DSL örneği olan bir dosyanın içeriğini adlı bir *model*. Modeli içeren *modeli ** öğeleri* ve *bağlantıları* olan öğeler arasında. Ne tür bir model öğelerini DSL tanımını belirtir ve modelde bağlantılar bulunabilir. Örneğin, en az bir dil şablondan oluşturulan bir DSL içinde var. bir model öğesi türünü ve bir bağlantı türü
+Bir DSL örneği olan bir dosyanın içeriğini adlı bir *model*. Modeli içeren *modeli*<em>öğeleri</em> ve *bağlantıları* olan öğeler arasında. Ne tür bir model öğelerini DSL tanımını belirtir ve modelde bağlantılar bulunabilir. Örneğin, en az bir dil şablondan oluşturulan bir DSL içinde var. bir model öğesi türünü ve bir bağlantı türü
 
 DSL tanımını modelin diyagram üzerinde nasıl görüneceğini belirleyebilirsiniz. Stilleri şekillerin ve bağlayıcıların çeşitli arasından seçim yapabilirsiniz. Bazı şekiller içindeki diğer şekiller görünür belirtebilirsiniz.
 
@@ -246,39 +247,39 @@ Mevcut etki alanı sınıfları ve ilişkileri yeniden adlandırın. Örneğin, 
 
 ##### <a name="to-add-properties-and-display-them"></a>Özellikleri ekleyin ve bunları görüntülemek için
 
-1.  Özellikleri ekleyin.
+1. Özellikleri ekleyin.
 
-    1.  DSL tanım diyagramı içinde sağ **kişi** etki alanı sınıfı, noktasına **Ekle**ve ardından **Domain özelliği**.
+   1.  DSL tanım diyagramı içinde sağ **kişi** etki alanı sınıfı, noktasına **Ekle**ve ardından **Domain özelliği**.
 
-    2.  Yeni özellik adlarının bir listesini yazın **Doğum** ve **ölüm**. Tuşuna **Enter** sonra her biri.
+   2.  Yeni özellik adlarının bir listesini yazın **Doğum** ve **ölüm**. Tuşuna **Enter** sonra her biri.
 
-2.  Özellikleri şeklinde görüntüler dekoratörler ekleyin.
+2. Özellikleri şeklinde görüntüler dekoratörler ekleyin.
 
-    1.  Kişinin etki alanı diyagramı diğer tarafında sınıftan gri çizgi izleyin. Diyagram öğesi eşlemesi budur. Bu etki alanı sınıfı bir şekil sınıfına bağlar.
+   1.  Kişinin etki alanı diyagramı diğer tarafında sınıftan gri çizgi izleyin. Diyagram öğesi eşlemesi budur. Bu etki alanı sınıfı bir şekil sınıfına bağlar.
 
-    2.  Bu şeklin sınıf sağ tıklatın, **Ekle**ve ardından **metin Dekoratör**.
+   2.  Bu şeklin sınıf sağ tıklatın, **Ekle**ve ardından **metin Dekoratör**.
 
-    3.  Adlara sahip iki dekoratörler gibi ekleme **BirthDecorator** ve **DeathDecorator**.
+   3.  Adlara sahip iki dekoratörler gibi ekleme **BirthDecorator** ve **DeathDecorator**.
 
-    4.  Her yeni dekoratör seçin ve Özellikler penceresinde ayarlayın **konumu** alan. Bu, etki alanı özellik değeri şeklin üzerinde nerede görüntüleneceğini belirler. Örneğin, **InnerBottomLeft** ve **InnerBottomRight**.
+   4.  Her yeni dekoratör seçin ve Özellikler penceresinde ayarlayın **konumu** alan. Bu, etki alanı özellik değeri şeklin üzerinde nerede görüntüleneceğini belirler. Örneğin, **InnerBottomLeft** ve **InnerBottomRight**.
 
-         ![Bölme şekli tanımı](../modeling/media/familyt_compartment.png)
+        ![Bölme şekli tanımı](../modeling/media/familyt_compartment.png)
 
-3.  Dekoratörler özelliklerine eşlenir.
+3. Dekoratörler özelliklerine eşlenir.
 
-    1.  DSL ayrıntıları penceresini açın. Genellikle bir sekmede çıkış penceresi yanındaki olur. Üzerinde göremiyorsanız, **görünümü** menüsünde **diğer Windows**ve ardından **DSL ayrıntıları**.
+   1.  DSL ayrıntıları penceresini açın. Genellikle bir sekmede çıkış penceresi yanındaki olur. Üzerinde göremiyorsanız, **görünümü** menüsünde **diğer Windows**ve ardından **DSL ayrıntıları**.
 
-    2.  DSL tanım diyagramı üzerinde bağlanan çizgi **kişi** shape sınıfı için etki alanı sınıfı.
+   2.  DSL tanım diyagramı üzerinde bağlanan çizgi **kişi** shape sınıfı için etki alanı sınıfı.
 
-    3.  İçinde **DSL ayrıntıları**, **Dekoratör eşlemeleri** sekmesinde, eşlenmemiş bir dekoratör onay kutusuna tıklayın. İçinde **görüntüleme özelliği**, istediğiniz, eşlenmiş etki alanı özelliğini seçin. Örneğin, harita **BirthDecorator** için **Doğum**.
+   3.  İçinde **DSL ayrıntıları**, **Dekoratör eşlemeleri** sekmesinde, eşlenmemiş bir dekoratör onay kutusuna tıklayın. İçinde **görüntüleme özelliği**, istediğiniz, eşlenmiş etki alanı özelliğini seçin. Örneğin, harita **BirthDecorator** için **Doğum**.
 
-4.  DSL kaydedin, tüm Şablonları Dönüştür'e tıklayın ve F5 tuşuna basın.
+4. DSL kaydedin, tüm Şablonları Dönüştür'e tıklayın ve F5 tuşuna basın.
 
-5.  Örnek model diyagramda, seçtiğiniz konumları tıklayın artık ve bunları değerleri yazın doğrulayın. Ayrıca, seçtiğinizde bir **kişi** şeklini, Özellikler penceresinde Doğum ve ölüm yeni özellikleri gösterir.
+5. Örnek model diyagramda, seçtiğiniz konumları tıklayın artık ve bunları değerleri yazın doğrulayın. Ayrıca, seçtiğinizde bir **kişi** şeklini, Özellikler penceresinde Doğum ve ölüm yeni özellikleri gösterir.
 
-6.  .Tt dosyasında, her kişi özelliklerini alır kod ekleyebilirsiniz.
+6. .Tt dosyasında, her kişi özelliklerini alır kod ekleyebilirsiniz.
 
- ![Aile ağaç görünümünü, araç ve Gezgini](../modeling/media/familyt_instance.png)
+   ![Aile ağaç görünümünü, araç ve Gezgini](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>Yeni sınıflar tanımlayın
  Bir model için etki alanı sınıfları ve ilişkileri ekleyebilirsiniz. Örneğin, şehir ve bir kişi bir piyasada orada yaşıyordum temsil etmek için yeni bir ilişki temsil etmek için yeni bir sınıf oluşturabilirsiniz.

@@ -25,12 +25,12 @@ caps.latest.revision: 52
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cfff3a7267d23e424214f49fed5b0577860c0a4a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a8d8bd033c79257336b71e3f62099bd3eaf3808
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269106"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937583"
 ---
 # <a name="html-ui-responsiveness"></a>HTML kullanıcı Arabirimi yanıt hızı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -211,36 +211,36 @@ if (performance.mark && performance.measure) {
   
  Bu grafiğe kullanın:  
   
--   Genel sorunlu alanları tanımlayın.  
+- Genel sorunlu alanları tanımlayın.  
   
--   Zaman Çizelgesi ayrıntıları grafikte görüntülemek için belirli bir süre seçin. Bir zaman dilimi seçmek için grafiğin parçası seçin ve seçim yapmak için işaretçiyi sürükleyin.  
+- Zaman Çizelgesi ayrıntıları grafikte görüntülemek için belirli bir süre seçin. Bir zaman dilimi seçmek için grafiğin parçası seçin ve seçim yapmak için işaretçiyi sürükleyin.  
   
--   Seçerek seçili bir döneme ait daha ayrıntılı bir görünüm elde **yakınlaştırmak** düğmesi.  
+- Seçerek seçili bir döneme ait daha ayrıntılı bir görünüm elde **yakınlaştırmak** düğmesi.  
   
- Grafik kullanma hakkında daha fazla bilgi için bkz. [bir kullanıcı Arabirimi yanıt hızı sorununu gidermek](#Workflow) bu konuda.  
+  Grafik kullanma hakkında daha fazla bilgi için bkz. [bir kullanıcı Arabirimi yanıt hızı sorununu gidermek](#Workflow) bu konuda.  
   
 ###  <a name="VisualThroughput"></a> Görünüm görsel üretilen iş (FPS)  
  Görsel üretilen iş grafiklerini süreler içinde kare hızı bırakılan tanımlamanızı sağlar. Bu, saniyedeki kare (FPS) uygulama sayısını gösterir. Bu grafik oyunları ve zengin medya uygulamaları geliştirme için en kullanışlıdır.  
   
  Görüntülenen FPS değerini gerçek kare hızı farklı olabilir. Bu graf verileri incelerken, bu bilgileri göz önünde bulundurun:  
   
--   Grafik FPS uygulama herhangi bir belirli zamanda elde etmek kapasitesine sahip olduğunu gösterir. Uygulama boşta olduğunda FPS İzleyici yenileme hızı ile aynıdır.  
+- Grafik FPS uygulama herhangi bir belirli zamanda elde etmek kapasitesine sahip olduğunu gösterir. Uygulama boşta olduğunda FPS İzleyici yenileme hızı ile aynıdır.  
   
--   Grafik uygulaması görsel güncelleştirmeleri gerektiren iş yapıyor, gerçek FPS gösterir.  
+- Grafik uygulaması görsel güncelleştirmeleri gerektiren iş yapıyor, gerçek FPS gösterir.  
   
--   Çerçeve bırakılma durumunda grafik sıfır değeri gösterir.  
+- Çerçeve bırakılma durumunda grafik sıfır değeri gösterir.  
   
- Bu örnek, görsel üretilen iş grafiklerini nasıl göründüğünü gösterir:  
+  Bu örnek, görsel üretilen iş grafiklerini nasıl göründüğünü gösterir:  
   
- ![Görsel üretilen iş grafiklerini](../profiling/media/js-htmlvizprof-vizthru.png "JS_HTMLVizProf_VizThru")  
+  ![Görsel üretilen iş grafiklerini](../profiling/media/js-htmlvizprof-vizthru.png "JS_HTMLVizProf_VizThru")  
   
- Görsel üretilen iş grafiğe kullanın:  
+  Görsel üretilen iş grafiğe kullanın:  
   
--   Genel sorunlu alanları tanımlayın.  
+- Genel sorunlu alanları tanımlayın.  
   
--   Zaman Çizelgesi ayrıntıları grafikte görüntülemek için belirli bir süre seçin. Bir zaman dilimi seçmek için grafiğin parçası seçin ve seçim yapmak için işaretçiyi sürükleyin.  
+- Zaman Çizelgesi ayrıntıları grafikte görüntülemek için belirli bir süre seçin. Bir zaman dilimi seçmek için grafiğin parçası seçin ve seçim yapmak için işaretçiyi sürükleyin.  
   
--   Seçerek seçili bir döneme ait daha ayrıntılı bir görünüm elde **yakınlaştırmak** düğmesi.  
+- Seçerek seçili bir döneme ait daha ayrıntılı bir görünüm elde **yakınlaştırmak** düğmesi.  
   
 ###  <a name="TimelineDetails"></a> Zaman Çizelgesi ayrıntıları görüntüle  
  Zaman Çizelgesi ayrıntıları grafik kullanıcı Arabirimi yanıtlama hızı Profiler alt bölmede görünür. En yüksek CPU zamanının Seçilen süreler sırasında tüketilen olaylar hakkında sıralı ve hiyerarşik bilgilere yer verilmiştir. Bu grafiği, belirli bir olay neyin tetiklediği belirlemenize yardımcı olur ve bazı olaylar için kaynak koda geri olay nasıl eşlendiğini. Bu grafik, ayrıca ekranında visual güncelleştirmeleri boyamak için gereken süreyi belirlemenize yardımcı olur.  
@@ -317,23 +317,23 @@ if (performance.mark && performance.measure) {
 ##  <a name="ProfilerEvents"></a> Profiler etkinliği başvurusu  
  Profiler olaylar kategorilere ve renk kodlu kullanıcı Arabirimi yanıtlama hızı Profiler içinde. Olay kategorileri şunlardır:  
   
--   **Yükleniyor.** Uygulamayı ilk kez yüklediğinde alınırken uygulama kaynakları ve ayrıştırma HTML ve CSS harcanan zamanı belirtir. Bu işlem, ağ isteklerini içerebilir.  
+- **Yükleniyor.** Uygulamayı ilk kez yüklediğinde alınırken uygulama kaynakları ve ayrıştırma HTML ve CSS harcanan zamanı belirtir. Bu işlem, ağ isteklerini içerebilir.  
   
--   **Komut dosyası.** Harcanan süre ayrıştırma ve JavaScript çalıştırma gösterir. Bu, DOM olaylarını, zamanlayıcıları, betik yorumlamalarını ve animasyon çerçeve iş içerir. Bu, kullanıcı kodu hem kitaplık kodu içerir.  
+- **Komut dosyası.** Harcanan süre ayrıştırma ve JavaScript çalıştırma gösterir. Bu, DOM olaylarını, zamanlayıcıları, betik yorumlamalarını ve animasyon çerçeve iş içerir. Bu, kullanıcı kodu hem kitaplık kodu içerir.  
   
--   **GC.** Çöp toplama üzerinde harcanan zamanı gösterir.  
+- **GC.** Çöp toplama üzerinde harcanan zamanı gösterir.  
   
--   **Stil.** CSS ayrıştırma ve hesaplama öğe sunumunu ve yerleşimini harcanan zamanı belirtir.  
+- **Stil.** CSS ayrıştırma ve hesaplama öğe sunumunu ve yerleşimini harcanan zamanı belirtir.  
   
--   **İşleme.** Saati gösteren ekran boyama harcanan.  
+- **İşleme.** Saati gösteren ekran boyama harcanan.  
   
--   **Görüntü kodu çözme.** Resimlerin genişletilmesine ve kod harcanan zamanı belirtir.  
+- **Görüntü kodu çözme.** Resimlerin genişletilmesine ve kod harcanan zamanı belirtir.  
   
- Betik ve stil kategorileri için kullanıcı Arabirimi yanıtlama hızı Profiler zaman çizelgesi ayrıntıları grafikte üzerinde işlem yapabileceğiniz veri sağlayabilir. Bir sorun kodlama sorunları tanımlamak, CPU örnekleme Profil Oluşturucu ile kullanıcı Arabirimi yanıtlama hızı Profiler çalıştırabilirsiniz. Alternatif olarak, ayrıntılı verileri almak için Visual Studio işlevi Profiler'ı kullanabilirsiniz. Daha fazla bilgi için bkz. [JavaScript işlev zamanlaması analiz verileri](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
+  Betik ve stil kategorileri için kullanıcı Arabirimi yanıtlama hızı Profiler zaman çizelgesi ayrıntıları grafikte üzerinde işlem yapabileceğiniz veri sağlayabilir. Bir sorun kodlama sorunları tanımlamak, CPU örnekleme Profil Oluşturucu ile kullanıcı Arabirimi yanıtlama hızı Profiler çalıştırabilirsiniz. Alternatif olarak, ayrıntılı verileri almak için Visual Studio işlevi Profiler'ı kullanabilirsiniz. Daha fazla bilgi için bkz. [JavaScript işlev zamanlaması analiz verileri](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
   
- Diğer olay kategorileri için Özellikler'ı uygulamanıza eklemek neden platform yan etkileri belirlemek mümkün olabilir, ancak bu durumda, kullanıcı Arabirimi yanıtlama hızı Profiler'ı kullanarak belirli performans sorunlarını çözmek mümkün olmayabilir.  
+  Diğer olay kategorileri için Özellikler'ı uygulamanıza eklemek neden platform yan etkileri belirlemek mümkün olabilir, ancak bu durumda, kullanıcı Arabirimi yanıtlama hızı Profiler'ı kullanarak belirli performans sorunlarını çözmek mümkün olmayabilir.  
   
- Bu tablo, olayları ve açıklamalarının gösterir:  
+  Bu tablo, olayları ve açıklamalarının gösterir:  
   
 |Olay|Olay kategorisi|Gerçekleşir,|  
 |-----------|--------------------|-----------------|  

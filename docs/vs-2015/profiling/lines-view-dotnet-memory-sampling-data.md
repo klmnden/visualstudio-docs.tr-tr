@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b77a262edcbf55f7c1f14c36d35a8618f5b788dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: edc922b2d96776d38de1b55ab2226be0d2c10f85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243028"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815734"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Satırlar Görünümü - .NET Bellek Örnekleme Verileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ Satırlar görünümü örnekleme yöntemini kullanan .NET bellek ayırma profil
   
  Bir deyimi aşağıdaki tarafından tanımlanır:  
   
--   Function deyimi içeren kaynak dosyası.  
+- Function deyimi içeren kaynak dosyası.  
   
--   Deyimi içeren işlev.  
+- Deyimi içeren işlev.  
   
--   Deyim başladığı kaynak satırı.  
+- Deyim başladığı kaynak satırı.  
   
--   Deyim başladığı kaynak satırı karakter.  
+- Deyim başladığı kaynak satırı karakter.  
   
--   Kaynak satırı başlangıçtan deyimini sonlandırır.  
+- Kaynak satırı başlangıçtan deyimini sonlandırır.  
   
--   Deyim erdiği kaynak satırı karakter.  
+- Deyim erdiği kaynak satırı karakter.  
   
- Satır adı sütunu tanımlayıcısı veri sıralanabilir bir birleşimini sağlar.  
+  Satır adı sütunu tanımlayıcısı veri sıralanabilir bir birleşimini sağlar.  
   
- Tanımı gereği, diğer işlevler bir deyim çağırmaz. Bu nedenle, yalnızca özel değerler listelenmiştir.  
+  Tanımı gereği, diğer işlevler bir deyim çağırmaz. Bu nedenle, yalnızca özel değerler listelenmiştir.  
   
 |Sütun|Açıklama|  
 |------------|-----------------|  

@@ -13,12 +13,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 346362a6812882bd795b6180ac735e51f13e3530
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e450cd333c01e4e2e557013ef106337fe5a80a71
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303764"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937284"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Kodlanmış UI Testleriyle SharePoint 2010 Uygulamalarını Test Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,15 +107,15 @@ uiGridKeyboardInputEdit.Text=value;
   
 #### <a name="setting-up-your-machine"></a>Makinenizi ayarlarken  
   
-1.  Daha sonra yüklenen veya sahip olduğunuz Visual Studio 2012.1 emin olun.  
+1. Daha sonra yüklenen veya sahip olduğunuz Visual Studio 2012.1 emin olun.  
   
-2.  Yükleme [Silverlight için Microsoft Visual Studio UI Test Eklentisi](http://visualstudiogallery.msdn.microsoft.com/28312a61-9451-451a-990c-c9929b751eb4).  
+2. Yükleme [Silverlight için Microsoft Visual Studio UI Test Eklentisi](http://visualstudiogallery.msdn.microsoft.com/28312a61-9451-451a-990c-c9929b751eb4).  
   
-3.  Yükleme [Fiddler](http://www.fiddler2.com/fiddler2/). Bu, yakalar ve HTTP trafiği günlükleri yalnızca bir araçtır.  
+3. Yükleme [Fiddler](http://www.fiddler2.com/fiddler2/). Bu, yakalar ve HTTP trafiği günlükleri yalnızca bir araçtır.  
   
-4.  İndirme [fiddlerXap proje](http://blogs.msdn.com/cfs-file.ashx/__key/communityserver-components-postattachments/00-10-36-48-70/FiddlerXapProxy.zip). Sıkıştırılmış dosyayı derleyin ve Fiddler Aracı'nı kullandığınızda, Silverlight web bölümleri test etmek için gereken DLL Yardımcısı'nı yüklemek için "CopySLHelper.bat" komut dosyasını çalıştırın.  
+4. İndirme [fiddlerXap proje](http://blogs.msdn.com/cfs-file.ashx/__key/communityserver-components-postattachments/00-10-36-48-70/FiddlerXapProxy.zip). Sıkıştırılmış dosyayı derleyin ve Fiddler Aracı'nı kullandığınızda, Silverlight web bölümleri test etmek için gereken DLL Yardımcısı'nı yüklemek için "CopySLHelper.bat" komut dosyasını çalıştırın.  
   
- Uygulamanızı SharePoint 2010 Silverlight web bölümleri içeren test başlatmak için makinenizi kurmak ayarladıktan sonra aşağıdaki adımları izleyin:  
+   Uygulamanızı SharePoint 2010 Silverlight web bölümleri içeren test başlatmak için makinenizi kurmak ayarladıktan sonra aşağıdaki adımları izleyin:  
   
 #### <a name="testing-silverlight-web-parts"></a>Silverlight web bölümleri test etme  
   

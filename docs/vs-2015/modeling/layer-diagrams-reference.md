@@ -25,12 +25,12 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c44ad4b225b3fd52f0e25369777b1a4f6df8c95e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b1136cc4e55ebbdf3a5ff1b38b5802b058e9c69c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248319"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895749"
 ---
 # <a name="layer-diagrams-reference"></a>Katman Diyagramları: Başvuru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,15 +43,15 @@ Visual Studio'da kullanabileceğiniz bir *katman diyagramı* sisteminizin üst d
   
  Bir katman diyagramı, aşağıdaki görevleri gerçekleştirmenize yardımcı olması için kullanın:  
   
--   Sisteminizde varolan veya hedeflenen mantıksal mimarisi iletişim kurar.  
+- Sisteminizde varolan veya hedeflenen mantıksal mimarisi iletişim kurar.  
   
--   Mevcut kodunuzu ve hedeflenen mimariyi arasında çakışmalar keşfedin.  
+- Mevcut kodunuzu ve hedeflenen mimariyi arasında çakışmalar keşfedin.  
   
--   Yeniden düzenleyin, güncelleştirin veya sisteminizin evrim Geçiren hedeflenen mimari üzerindeki değişikliklerin etkisini görselleştirin.  
+- Yeniden düzenleyin, güncelleştirin veya sisteminizin evrim Geçiren hedeflenen mimari üzerindeki değişikliklerin etkisini görselleştirin.  
   
--   İadeniz doğrulama dahil ederek geliştirme ve kodunuzun bakım sırasında hedeflenen mimariyi güçlendirmek ve yapı işlemleri.  
+- İadeniz doğrulama dahil ederek geliştirme ve kodunuzun bakım sırasında hedeflenen mimariyi güçlendirmek ve yapı işlemleri.  
   
- Bu konuda, bir katman diyagramı üzerinde kullanabileceğiniz öğeleri açıklar. Oluşturun ve katman diyagramları çizmek için bkz hakkında daha ayrıntılı bilgi için [katman diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md). Katman desenleri hakkında daha fazla bilgi için ziyaret [desenler ve uygulamalar site](http://go.microsoft.com/fwlink/?LinkId=145794).  
+  Bu konuda, bir katman diyagramı üzerinde kullanabileceğiniz öğeleri açıklar. Oluşturun ve katman diyagramları çizmek için bkz hakkında daha ayrıntılı bilgi için [katman diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md). Katman desenleri hakkında daha fazla bilgi için ziyaret [desenler ve uygulamalar site](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 ## <a name="reading-layer-diagrams"></a>Katman diyagramları okuma  
  ![Katman diyagramlarındaki öğeler](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")  
@@ -69,17 +69,17 @@ Visual Studio'da kullanabileceğiniz bir *katman diyagramı* sisteminizin üst d
 ##  <a name="Explorer"></a> Katman Gezgini  
  Her katman, çözümünüzdeki projeler, sınıflar, ad alanları, proje dosyaları ve diğer bölümlerini yazılım gibi yapıtları bağlayabilirsiniz. Bir katmandaki sayı katmana bağlı olan yapıların sayısını gösterir. Ancak, bir katmandaki yapı sayısını okurken aşağıdakileri unutmayın:  
   
--   Bir katman diğer yapıları içeren bir yapıya bağlanırsa, ancak katman doğrudan diğer yapılara bağlanmazsa, sayı yalnızca bağlı yapıyı içerir. Bununla birlikte, diğer yapılar katman doğrulanırken analiz için alınır.  
+- Bir katman diğer yapıları içeren bir yapıya bağlanırsa, ancak katman doğrudan diğer yapılara bağlanmazsa, sayı yalnızca bağlı yapıyı içerir. Bununla birlikte, diğer yapılar katman doğrulanırken analiz için alınır.  
   
-     Örneğin, bir katman tek bir ad alanına bağlanırsa, ad alanı sınıflar içerse bile, bağlı yapıların sayısı 1'dir. Katmanın ad alanındaki her bir sınıfa da bağlantıları bulunuyorsa, sayı bağlantılı sınıfları da içerecektir.  
+   Örneğin, bir katman tek bir ad alanına bağlanırsa, ad alanı sınıflar içerse bile, bağlı yapıların sayısı 1'dir. Katmanın ad alanındaki her bir sınıfa da bağlantıları bulunuyorsa, sayı bağlantılı sınıfları da içerecektir.  
   
--   Bir katman yapılarla bağlantılı diğer katmanları içeriyorsa, kapsayıcı katman da üzerindeki sayı bu yapıları içermese bile bu yapılara bağlıdır.  
+- Bir katman yapılarla bağlantılı diğer katmanları içeriyorsa, kapsayıcı katman da üzerindeki sayı bu yapıları içermese bile bu yapılara bağlıdır.  
   
- Katmanlar ve yapılar bağlama hakkında daha fazla bilgi için bkz:  
+  Katmanlar ve yapılar bağlama hakkında daha fazla bilgi için bkz:  
   
--   [Katman Diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)  
+- [Katman Diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)  
   
--   [Kodunuz aracılığıyla katman diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)  
+- [Kodunuz aracılığıyla katman diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)  
   
 #### <a name="to-examine-the-linked-artifacts"></a>Bağlı yapıtlar incelemek için  
   

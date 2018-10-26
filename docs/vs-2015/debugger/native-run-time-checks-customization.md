@@ -31,31 +31,31 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 906aca3071c9abc6bd06ac1f0dc4d75bd1920a61
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 396778e87732d73462a7ecc2a420ea22a00936b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300891"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856607"
 ---
 # <a name="native-run-time-checks-customization"></a>Yerel Çalışma Zamanı Denetimlerini Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Derleme yaptığınızda **/RTC** (çalışma zamanı denetimleri) veya `runtime_checks` pragması, C çalışma zamanı kitaplığı, yerel çalışma zamanı denetimleri sağlar. Bazı durumlarda, çalışma zamanı denetimi özelleştirmek isteyebilirsiniz:  
   
--   Bir dosya ya da varsayılan dışındaki hedef çalışma zamanı denetimi iletileri yönlendirmek için.  
+- Bir dosya ya da varsayılan dışındaki hedef çalışma zamanı denetimi iletileri yönlendirmek için.  
   
--   Hedef çalışma zamanı için bir çıktı belirtmek için üçüncü taraf hata ayıklayıcı altında iletileri denetleyin.  
+- Hedef çalışma zamanı için bir çıktı belirtmek için üçüncü taraf hata ayıklayıcı altında iletileri denetleyin.  
   
--   Çalışma zamanı denetimi iletileri yayın sürümü C çalışma zamanı kitaplığı ile derlenmiş bir programdan bildirmek için. Kitaplık sürümleri kullanmayın `_CrtDbgReportW` çalışma zamanı hatalarını raporlamak için. Bunun yerine, görüntüledikleri bir **Assert** her bir çalışma zamanı hata iletişim kutusu.  
+- Çalışma zamanı denetimi iletileri yayın sürümü C çalışma zamanı kitaplığı ile derlenmiş bir programdan bildirmek için. Kitaplık sürümleri kullanmayın `_CrtDbgReportW` çalışma zamanı hatalarını raporlamak için. Bunun yerine, görüntüledikleri bir **Assert** her bir çalışma zamanı hata iletişim kutusu.  
   
- Çalışma zamanı hata denetimi özelleştirmek için şunları yapabilirsiniz:  
+  Çalışma zamanı hata denetimi özelleştirmek için şunları yapabilirsiniz:  
   
--   Çalışma zamanı hata raporlama işlevi yazma. Daha fazla bilgi için [nasıl yapılır: bir çalışma zamanı hata raporlama işlevi yazma](../debugger/how-to-write-a-run-time-error-reporting-function.md).  
+- Çalışma zamanı hata raporlama işlevi yazma. Daha fazla bilgi için [nasıl yapılır: bir çalışma zamanı hata raporlama işlevi yazma](../debugger/how-to-write-a-run-time-error-reporting-function.md).  
   
--   Hata iletisi hedef özelleştirin.  
+- Hata iletisi hedef özelleştirin.  
   
--   Sorgu çalıştırma hakkında bilgi için hataları kontrol edin.  
+- Sorgu çalıştırma hakkında bilgi için hataları kontrol edin.  
   
 ## <a name="customize-the-error-message-destination"></a>Hata iletisi hedef özelleştirme  
  Kullanırsanız `_CrtDbgReportW` hatalarını raporlamak için kullanabileceğiniz `_CrtSetReportMode` hata iletileri hedefini belirlemek için.  

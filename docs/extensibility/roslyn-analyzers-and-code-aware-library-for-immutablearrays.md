@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82f96af18400aa6a9f659144fb874c32feaf08ed
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 075f3391a155938082847c708f831d0587cf54fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495927"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907488"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn Çözümleyicileri ve kod algılayan kitaplık Immutablearray'ler için
 
 [.NET derleyici platformu](https://github.com/dotnet/roslyn) ("Roslyn") kullanan kod kitaplıkları oluşturmanıza yardımcı olur.  Bir kod algılayan kitaplık en iyi şekilde veya hatalarını önlemek için kullanabileceğiniz işlevsellik ve kitaplığı kullanmanıza yardımcı olması için (Roslyn Çözümleyicileri) araçları sağlar.  Bu konuda kullanırken sık karşılaşılan hataları yakalamak için gerçek dünya Roslyn çözümleyicinizi oluşturma gösterilmektedir [gt;System.Collections.Immutable](https://www.nuget.org/packages/System.Collections.Immutable) NuGet paketi.  Örnek ayrıca çözümleyici tarafından bulunan bir kodu sorun için bir kod düzeltme sağlamak nasıl gösterir.  Kullanıcılar, Visual Studio ampul UI içinde kod düzeltmeleri görmek ve bir düzeltme kod için otomatik olarak uygulanabilir.
 
-## <a name="get-started"></a>Başlarken
+## <a name="get-started"></a>Kullanmaya başlayın
 
 Bu örneği oluşturmak için gerekenler:
 
@@ -82,7 +82,6 @@ C# kodunda'i hedefleyen Visual Basic kullanarak bir çözümleyici uygulayabilir
 
 ```csharp
 public override void Initialize(AnalysisContext context) {}
-
 ```
 
 Bu bağlamda yöntemi ve türü"." yeni bir satır Aç Bir IntelliSense tamamlanma listesini görmek için.  Tamamlanma listesine dâhil kullanabileceğiniz birçok gördüğünüz `Register...` çeşitli olayları işlemek için yöntemleri.  Örneğin, ilk öğe `RegisterCodeBlockAction`, kodunuz, genellikle kod kaşlı ayraçlar arasında olan bir blok için geri çağrı.  Bir bloğu için kaydetme de geri kodunuza bir alan, bir öznitelik için belirtilen değer ya da isteğe bağlı bir parametre değeri için Başlatıcı çağırır.
@@ -225,7 +224,6 @@ namespace ImmutableArrayAnalyzer
     [ExportCodeFixProvider(LanguageNames.CSharp)]
     class BuildCodeFixProvider : CodeFixProvider
     {}
-
 ```
 
 **Saplama kullanıma üyeler türetilmiş.** Artık, düzenleyici giriş işaretini bir tanımlayıcıda yerleştirin `CodeFixProvider` basın **Ctrl**+**.** (Bu Özet temel sınıf uygulamasını kullanıma saptama için nokta).  Bu özellik ve yöntem sizin için oluşturur.

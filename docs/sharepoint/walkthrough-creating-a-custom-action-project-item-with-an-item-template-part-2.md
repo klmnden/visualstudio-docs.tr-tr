@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3ca011f519c53924681d2c1a7042f25dcfaad208
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 19792a9804072e7c6ade836b408951e2cfadd070
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635206"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910972"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>İzlenecek yol: bir öğe şablonu, bölüm 2 ile özel bir eylem proje öğesi oluşturma
   Özel bir SharePoint proje öğesi türünü tanımlar ve Visual Studio'da bir öğe şablonunu ilişkilendirmek sonra şablon için bir sihirbaz sağlamak isteyebilirsiniz. Sihirbaz, şablonunuzu yeni bir proje öğesi örneğini bir projeye eklemek için kullandıkları, kullanıcılardan bilgi toplamak için kullanabilirsiniz. Topladığınız bilgiler, proje öğesini başlatmak için kullanılabilir.  
@@ -44,15 +44,15 @@ ms.locfileid: "42635206"
   
  Bu izlenecek yolu tamamlamak için geliştirme bilgisayarında aşağıdaki bileşenler de aşağıdakiler gerekir:  
   
--   Windows, SharePoint ve Visual Studio'nun desteklenen sürümleri.
+- Windows, SharePoint ve Visual Studio'nun desteklenen sürümleri.
   
--   Visual Studio SDK. Bu izlenecek yolda **VSIX projesi** proje öğesini dağıtmak üzere bir VSIX paketi oluşturmak için SDK'sı şablonunda. Daha fazla bilgi için [Visual Studio'da SharePoint araçlarını genişletmek](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- Visual Studio SDK. Bu izlenecek yolda **VSIX projesi** proje öğesini dağıtmak üzere bir VSIX paketi oluşturmak için SDK'sı şablonunda. Daha fazla bilgi için [Visual Studio'da SharePoint araçlarını genişletmek](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Aşağıdaki kavramları bilgisi yardımcı, ancak gerekli değildir, bu izlenecek yolu tamamlamak için:  
+  Aşağıdaki kavramları bilgisi yardımcı, ancak gerekli değildir, bu izlenecek yolu tamamlamak için:  
   
--   Visual Studio'da proje ve öğe şablonlarını sihirbazları. Daha fazla bilgi için [nasıl yapılır: Proje şablonlarıyla kullanma sihirbazları](../extensibility/how-to-use-wizards-with-project-templates.md) ve <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> arabirimi.  
+- Visual Studio'da proje ve öğe şablonlarını sihirbazları. Daha fazla bilgi için [nasıl yapılır: Proje şablonlarıyla kullanma sihirbazları](../extensibility/how-to-use-wizards-with-project-templates.md) ve <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> arabirimi.  
   
--   SharePoint özel eylemler. Daha fazla bilgi için [özel eylem](http://go.microsoft.com/fwlink/?LinkId=177800).  
+- SharePoint özel eylemler. Daha fazla bilgi için [özel eylem](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
 ## <a name="create-the-wizard-project"></a>Sihirbazı proje oluşturma
  Bu izlenecek yolu tamamlamak için bir proje oluşturduğunuz CustomActionProjectItem çözüme eklemelisiniz [izlenecek yol: bir öğe şablonu, bölüm 1 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). U uygulayacaksınız <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> arabirim ve kullanıcı Arabirimi Sihirbazı bu projeyi tanımlayın.  

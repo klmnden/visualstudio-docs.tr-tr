@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 6898fb890828a01f286f321f14de3999fdf1ca64
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: aafa410352be27084f2febecc734c68e4f316d6f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42623946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827967"
 ---
 # <a name="setting-up-a-git-repository"></a>Bir Git deposu ayarlama
 
@@ -38,7 +38,7 @@ Bir Git deposu ayarlama için aşağıdaki adımları uygulayın:
 
     ![görüntüleme ve kopyalama adresi](media/version-control-git3.png)
 
-  Mac için bu depoya noktası Visual Studio için HTTPS adresi gerekir.
+   Mac için bu depoya noktası Visual Studio için HTTPS adresi gerekir.
 
 
 ## <a name="publishing-an-existing-project"></a>Mevcut bir projeyi yayımlama
@@ -108,7 +108,7 @@ Yerel makinenizde olmayan uzak yalnızca var olan bir GitHub deposu ile çalış
 5. Depoyu kopyalamak ve basın istediğiniz dizini girin **kullanıma alma**.
 
 > [!NOTE]
-Depo 4 GB boyutunda ise sorunlarla karşılaşabilirsiniz.
+> Depo 4 GB boyutunda ise sorunlarla karşılaşabilirsiniz.
 
 ## <a name="troubleshooting"></a>Sorun giderme
 

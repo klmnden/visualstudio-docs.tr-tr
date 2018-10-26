@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ee20be802884e20b885e232da43f2ade9f96dbfb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5053910e4f5760648eef989162eb31e3c3cc5c9e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236879"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896334"
 ---
 # <a name="xml-editor"></a>XML Düzenleyicisi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,27 +27,27 @@ ms.locfileid: "49236879"
   
 XML Düzenleyicisi'ni temel alır [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio Metin Düzenleyicisi ve XML diller için ek destek içerir. XML Düzenleyicisi'ni aşağıdaki özellikleri içerir:  
   
--   XML 1.0 sözdizimi denetimi.  
+- XML 1.0 sözdizimi denetimi.  
   
--   Siz yazarken şema doğrulaması.  
+- Siz yazarken şema doğrulaması.  
   
--   Şema tarafından oluşturulan kod parçacıkları dahil olmak üzere XML kod parçacıklarını destekler.  
+- Şema tarafından oluşturulan kod parçacıkları dahil olmak üzere XML kod parçacıklarını destekler.  
   
--   Belge türü tanımı (DTD'nin) için destek.  
+- Belge türü tanımı (DTD'nin) için destek.  
   
--   XML Şeması Tanım Dili (XSD) şemaya desteği.  
+- XML Şeması Tanım Dili (XSD) şemaya desteği.  
   
--   Bir XML şeması bir XML örneği belge oluşturma.  
+- Bir XML şeması bir XML örneği belge oluşturma.  
   
--   Bir DTD'nin veya XML verileri azaltılmış (XDR) şema, bir XML şemasına dönüştürülüyor.  
+- Bir DTD'nin veya XML verileri azaltılmış (XDR) şema, bir XML şemasına dönüştürülüyor.  
   
--   XSLT 1.0 sözdizimi denetimi.  
+- XSLT 1.0 sözdizimi denetimi.  
   
--   Anahat oluşturma, böylece öğeler daraltılabilir ve Genişletilebilir belgeleyin.  
+- Anahat oluşturma, böylece öğeler daraltılabilir ve Genişletilebilir belgeleyin.  
   
--   İle tümleştirme [XML Şeması Gezgini](../xml-tools/xml-schema-explorer.md). Bu XML şemaları Cerberus bir görünümünü sağlar.  
+- İle tümleştirme [XML Şeması Gezgini](../xml-tools/xml-schema-explorer.md). Bu XML şemaları Cerberus bir görünümünü sağlar.  
   
- XML Düzenleyicisi'ni, .xml, .xsd, .xsl ve .config gibi iyi bilinen dosya uzantıları için çağrılır. XML içeren dosyanın görünüyorsa herhangi bilinmeyen dosya uzantısına göre de çağrılır. Kullanarak XML Düzenleyicisi ile herhangi bir dosyayı açabilirsiniz **birlikte Aç** seçeneği ve XML Düzenleyicisi'ni listeden seçerek.  
+  XML Düzenleyicisi'ni, .xml, .xsd, .xsl ve .config gibi iyi bilinen dosya uzantıları için çağrılır. XML içeren dosyanın görünüyorsa herhangi bilinmeyen dosya uzantısına göre de çağrılır. Kullanarak XML Düzenleyicisi ile herhangi bir dosyayı açabilirsiniz **birlikte Aç** seçeneği ve XML Düzenleyicisi'ni listeden seçerek.  
   
 ## <a name="express-editions"></a>Express sürümleri  
  Aşağıdaki XML Düzenleyicisi özelliklerini Visual Studio Express sürümlerinde kullanılamaz:  

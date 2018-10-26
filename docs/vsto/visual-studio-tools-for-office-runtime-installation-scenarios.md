@@ -15,23 +15,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f286acae2996451688b0e1a40c4d758c4de8caf6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 145bc3c4301b337a0f882b3893910ad5bb2fc2ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677150"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857854"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Office çalışma zamanı yükleme senaryoları için Visual Studio Araçları
   Office çalışma zamanı için Visual Studio 2010 Araçları üç şekilde yükleyebilirsiniz:  
   
--   Visual Studio yüklediğinizde.  
+- Visual Studio yüklediğinizde.  
   
--   Microsoft Office yüklediğinizde.  
+- Microsoft Office yüklediğinizde.  
   
--   Office çalışma zamanı yeniden dağıtılabilir için Visual Studio 2010 araçları yüklediğinizde.  
+- Office çalışma zamanı yeniden dağıtılabilir için Visual Studio 2010 araçları yüklediğinizde.  
   
- Yüklü çalışma zamanı bileşenleri bilgisayarın ve yükleme senaryosu yapılandırmasına bağlıdır.  
+  Yüklü çalışma zamanı bileşenleri bilgisayarın ve yükleme senaryosu yapılandırmasına bağlıdır.  
   
 ## <a name="runtime-components-that-are-installed-in-each-installation-scenario"></a>Her yükleme senaryosunda yüklü çalışma zamanı bileşenleri  
  Office çalışma zamanı için Visual Studio 2010 Araçları üç bileşeni vardır: Office çözüm yükleyicisini ve .NET Framework 3.5 için Office uzantıları için Office uzantılarını [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri. Office çözüm yükleyicisini, her zaman çalışma zamanını yüklediğinizde yüklenir. .NET Framework için Office uzantılarının yüklenmesini bilgisayarın ve yükleme senaryosu yapılandırmasına bağlıdır. Çalışma zamanı ilk yüklendiğinde bir Office uzantılarının yüklenemez, belirli gereksinimleri karşılandığında çalışma zamanı otomatik olarak eksik Office uzantıları daha sonra yüklenir. Bu özellik çalışma zamanının adlı *isteğe bağlı yükleme*.  
@@ -39,7 +39,7 @@ ms.locfileid: "35677150"
  Aşağıdaki tabloda, varsayılan olarak her çalışma zamanı yükleme senaryoları hangi çalışma zamanı bileşenlerinin yüklendiğini gösterir. Her senaryo hakkında daha fazla bilgi daha sonra görünür.  
   
 |Çalışma zamanı yükleme senaryoları|Office çözüm yükleyicisi|.NET Framework 3.5 için Office uzantıları|İçin Office uzantıları [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]|İçin Office uzantıları [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]|  
-|-----------------------------------|----------------------------|--------------------------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------|  
+|-----------------------------------|----------------------------|--------------------------------------------------| - |---------------------------------------------------------------------------|  
 |İle [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] ve üzeri|Evet|.NET Framework 3.5 yüklü ise, Evet.|Evet|Evet|  
 |ile [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Evet|.NET Framework 3.5 yüklü ise, Evet.|Hayır|Hayır|  
 |Office 2010 Service Pack 1 (SP1) veya üzeri|Evet|.NET Framework 3.5 yüklü ise, Evet.|Evet, varsa [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] zaten yüklü.|Hayır|  

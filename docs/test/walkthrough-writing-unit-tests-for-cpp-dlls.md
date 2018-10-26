@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6cc733d3d926581801391a086c7886db3cec1bcc
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9458fd6886243102f6479166fb9df21f9e4869fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382828"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877263"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Nasıl yapılır: C++ DLL'leri için birim testleri yazma
 
@@ -117,53 +117,53 @@ Bu izlenecek yolda, önce test yöntemi kullanarak yerel bir C++ DLL geliştirme
 
 ##  <a name="make_functions_visible"></a> Birkaç DLL projesi için test projesi
 
-1.  DLL projesi için test projesinin proje başvurularını ekleyin:
+1. DLL projesi için test projesinin proje başvurularını ekleyin:
 
-    1.  Test proje özelliklerini açın ve seçin **ortak özellikler** > **çerçeve ve başvurular**.
+   1.  Test proje özelliklerini açın ve seçin **ortak özellikler** > **çerçeve ve başvurular**.
 
-         ![C++ proje özelliklerini | Çerçeve ve başvurular](../test/media/utecpp08.png)
+        ![C++ proje özelliklerini | Çerçeve ve başvurular](../test/media/utecpp08.png)
 
-    2.  Seçin **Yeni Başvuru Ekle**.
+   2.  Seçin **Yeni Başvuru Ekle**.
 
-         İçinde **Başvuru Ekle** iletişim kutusunda, DLL projesi seçip **Ekle**.
+        İçinde **Başvuru Ekle** iletişim kutusunda, DLL projesi seçip **Ekle**.
 
-         ![C++ proje özelliklerini | Yeni Başvuru Ekle](../test/media/utecpp09.png)
+        ![C++ proje özelliklerini | Yeni Başvuru Ekle](../test/media/utecpp09.png)
 
-2.  Asıl birim testinde *.cpp* dosya, dahil *.h* DLL kod dosyası:
+2. Asıl birim testinde *.cpp* dosya, dahil *.h* DLL kod dosyası:
 
-    ```cpp
-    #include "..\RootFinder\RootFinder.h"
-    ```
+   ```cpp
+   #include "..\RootFinder\RootFinder.h"
+   ```
 
-3.  Dışarı aktarılan işlevin kullanan temel bir test ekleyin:
+3. Dışarı aktarılan işlevin kullanan temel bir test ekleyin:
 
-    ```cpp
-    TEST_METHOD(BasicTest)
-    {
-       CRootFinder rooter;
-       Assert::AreEqual(
-          // Expected value:
-          0.0,
-          // Actual value:
-          rooter.SquareRoot(0.0),
-          // Tolerance:
-          0.01,
-         // Message:
-         L"Basic test failed",
-         // Line number - used if there is no PDB file:
-         LINE_INFO());
-    }
-    ```
+   ```cpp
+   TEST_METHOD(BasicTest)
+   {
+      CRootFinder rooter;
+      Assert::AreEqual(
+         // Expected value:
+         0.0,
+         // Actual value:
+         rooter.SquareRoot(0.0),
+         // Tolerance:
+         0.01,
+        // Message:
+        L"Basic test failed",
+        // Line number - used if there is no PDB file:
+        LINE_INFO());
+   }
+   ```
 
-4.  Çözümü oluşturun.
+4. Çözümü oluşturun.
 
-     Yeni test görünür **Test Gezgini**.
+    Yeni test görünür **Test Gezgini**.
 
-5.  İçinde **Test Gezgini**, seçin **tümünü Çalıştır**.
+5. İçinde **Test Gezgini**, seçin **tümünü Çalıştır**.
 
-     ![Birim Test Gezgini &#45; temel testi geçildi](../test/media/utecpp10.png)
+    ![Birim Test Gezgini &#45; temel testi geçildi](../test/media/utecpp10.png)
 
- Test ve kod projelerini ayarlama sahiptir ve doğrulandı, kod projesinde işlevleri çalıştırmak testlerini çalıştırabilirsiniz. Şimdi gerçek test ve kod yazmaya başlayabilirsiniz.
+   Test ve kod projelerini ayarlama sahiptir ve doğrulandı, kod projesinde işlevleri çalıştırmak testlerini çalıştırabilirsiniz. Şimdi gerçek test ve kod yazmaya başlayabilirsiniz.
 
 ##  <a name="iterate"></a> Yinelemeli olarak testleri genişletme ve onları geçirin
 
@@ -330,7 +330,7 @@ Bu izlenecek yolda, önce test yöntemi kullanarak yerel bir C++ DLL geliştirme
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Mevcut C++ uygulamalarına birim testleri ekleme](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
-- [Microsoft.VisualStudio.TestTools.CppUnitTestFramework kullanma](how-to-use-microsoft-test-framework-for-cpp.md)
+- [Microsoft.VisualStudio.TestTools.CppUnitTestFramework Kullanma](how-to-use-microsoft-test-framework-for-cpp.md)
 - [Yerel kodda hata ayıklama](../debugger/debugging-native-code.md)
 - [İzlenecek yol: Oluşturma ve kullanarak bir dinamik bağlantı kitaplığı (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [İçeri ve dışarı aktarma](/cpp/build/importing-and-exporting)

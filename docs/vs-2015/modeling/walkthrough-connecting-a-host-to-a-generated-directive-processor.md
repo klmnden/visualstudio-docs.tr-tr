@@ -15,12 +15,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 486d41927e45dc8c99fda06c29d14871008d7066
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 329cb0a6008824b23d7188c0ea6c4cf5e524476d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817879"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>İzlenecek yol: Üretilen bir Yönerge İşlemcisine Ana Bilgisayar Bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,34 +56,34 @@ Metin şablonlarını işleme kendi ana bilgisayar yazabilirsiniz. Temel özel b
   
 #### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>Bir etki alanı modeline dayalı bir yönerge işlemcisi oluşturmak için etki alanına özgü dil araçları kullanmak için  
   
-1.  Aşağıdaki özelliklere sahip bir etki alanına özgü dil çözümü oluşturun:  
+1. Aşağıdaki özelliklere sahip bir etki alanına özgü dil çözümü oluşturun:  
   
-    -   Ad: DSLMinimalTest  
+   - Ad: DSLMinimalTest  
   
-    -   Çözüm şablonu: en az bir dil  
+   - Çözüm şablonu: en az bir dil  
   
-    -   Dosya uzantısı: en düşük  
+   - Dosya uzantısı: en düşük  
   
-    -   Şirket adı: Fabrikam  
+   - Şirket adı: Fabrikam  
   
      Bir etki alanına özgü dil çözümü oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: bir etki alanına özgü dil çözümü oluşturma](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
-2.  Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
+2. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
   
-    > [!IMPORTANT]
-    >  Bu adım, yönerge işlemcisi oluşturur ve anahtar için bunu kayıt defterine ekler.  
+   > [!IMPORTANT]
+   >  Bu adım, yönerge işlemcisi oluşturur ve anahtar için bunu kayıt defterine ekler.  
   
-3.  Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat**.  
+3. Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat**.  
   
-     İkinci bir örneğini [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] açılır.  
+    İkinci bir örneğini [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] açılır.  
   
-4.  Deneysel yapı içinde **Çözüm Gezgini**, dosyayı çift **sample.min**.  
+4. Deneysel yapı içinde **Çözüm Gezgini**, dosyayı çift **sample.min**.  
   
-     Dosyası tasarımcıda açılır. Model iki öğe, ExampleElement1 ve ExampleElement2 ve bunlar arasında bir bağlantı olduğuna dikkat edin.  
+    Dosyası tasarımcıda açılır. Model iki öğe, ExampleElement1 ve ExampleElement2 ve bunlar arasında bir bağlantı olduğuna dikkat edin.  
   
-5.  İkinci örneğini kapatın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+5. İkinci örneğini kapatın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-6.  Çözüm kaydedin ve ardından etki alanına özgü dil tasarımcısını kapatın.  
+6. Çözüm kaydedin ve ardından etki alanına özgü dil tasarımcısını kapatın.  
   
 ## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>Özel metin şablonu ana bilgisayar bir yönerge işlemcisine bağlama  
  Yönerge işlemcisini ve oluşturduğunuz özel metin şablonu konağı yönerge işlemcisini oluşturduktan sonra bağlandığınız [izlenecek yol: bir özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md).  

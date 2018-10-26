@@ -9,12 +9,12 @@ description: Seçili Visual Studio abonelikleri dahil bir LinkedIn Premium abone
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9b40d11112497a46982440f98820dba69179486c
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 8424e42923474284e45abba62bd13a0038263d90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073928"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942250"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>LinkedIn Learning avantaj olarak Visual Studio abonelikleri
 
@@ -28,70 +28,71 @@ LinkedIn Premium aboneliğiniz ve LinkedIn Learning avantajı etkinleştirmek i�
 1. Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Eğitim kategorisinde LinkedIn Learning kutucuğu bulun ve tıklatın **alma kodu** bağlantı.
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning avantajı kutucuğu](_img\vs-linkedin\vs-linkedin-3-month-tile.png)
+   > [!div class="mx-imgBorder"]
+   > ![LinkedIn Learning avantajı kutucuğu](_img/vs-linkedin/vs-linkedin-3-month-tile.png)
 
 
 3. Bir LinkedIn hesabınız zaten varsa ve otomatik olarak oturum açmadıysanız, LinkedIn Learning avantajı etkinleştirme sayfasına hemen gidersiniz.  Bir LinkedIn hesabınız varsa, ancak otomatik olarak oturum açmadıysanız, yalnızca kullanıcı adı ve parola girin ve ardından **oturum**.  Lütfen atlamak [bu adımı](#activate-your-offer) teklifinizi etkinleştirin.
 
 ### <a name="create-a-linkedin-account"></a>Bir LinkedIn hesabı oluşturun
 4. Bir LinkedIn hesabınız yoksa, tıklayın **şimdi katılın**.
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning artık birleştirme](_img\vs-linkedin\vs-linkedin-join-now.png)
+   > [!div class="mx-imgBorder"]
+   > ![LinkedIn Learning artık birleştirme](_img/vs-linkedin/vs-linkedin-join-now.png)
 
 5. Kişisel bilgilerinizi girin, bir kullanıcı adı ve parola seçin ve tıklayın **şimdi katılın**.
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning hesap oluştur](_img\vs-linkedin\vs-linkedin-create-account.png)
+   > [!div class="mx-imgBorder"]
+   > ![LinkedIn Learning hesap oluştur](_img/vs-linkedin/vs-linkedin-create-account.png)
 
 6. Ülke ve posta kodu belirtin ve ardından tıklayın **sonraki**.
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning konum ayarlama](_img\vs-linkedin\vs-linkedin-set-location.png)
+   > [!div class="mx-imgBorder"]
+   > ![LinkedIn Learning konum ayarlama](_img/vs-linkedin/vs-linkedin-set-location.png)
 
 7. Sonra profiliniz için kendiniz hakkında bazı bilgiler sağlanacaktır.  Bir öğrenci ve, en son iş unvanı, şirket ve sektör sağlama olup olmadığını gösterir.
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning rolü](_img\vs-linkedin\vs-linkedin-role.png)
+   > [!div class="mx-imgBorder"]
+   > ![LinkedIn Learning rolü](_img/vs-linkedin/vs-linkedin-role.png)
 
 8. Bu adımda, ilginizi çeken alanları tanımlamak için bir şans sahip olacaksınız.  Hesap oluşturma işlemi hızlandırmak için tıklatın **bilmiyor henüz.  Açık istiyorum!**  (Daha sonra ilgi alanlarına göre tanımlayabilirsiniz.)
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning ilgi alanları](_img\vs-linkedin\vs-linkedin-interests.png)
+   > [!div class="mx-imgBorder"]
+   > ![LinkedIn Learning ilgi alanları](_img/vs-linkedin/vs-linkedin-interests.png)
 
-9.  E-posta adresinizi sağlandığında, bir onay kodu içeren bir ileti gönderildi.  "LinkedIn iletilerden" iletisidir.  Gelen kutunuzda bulamazsanız, lütfen gereksiz posta klasörlerinizi denetleyin.  İleti kodu girin ve tıklatın **doğrulama**.
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning doğrulayın](_img\vs-linkedin\vs-linkedin-verify.png)
+9. E-posta adresinizi sağlandığında, bir onay kodu içeren bir ileti gönderildi.  "LinkedIn iletilerden" iletisidir.  Gelen kutunuzda bulamazsanız, lütfen gereksiz posta klasörlerinizi denetleyin.  İleti kodu girin ve tıklatın **doğrulama**.
+   > [!div class="mx-imgBorder"]
+   > ![LinkedIn Learning doğrulayın](_img/vs-linkedin/vs-linkedin-verify.png)
 
 10. Daha önce girdiğiniz e-posta hesabından kişileri almak istiyorsanız, artık bunu yapabilirsiniz.  ' A tıklayıp **atla**. (Bu adımı atlamak tercih ederseniz, seçiminizi onaylamak için istenir.  Tıklayın **Evet**.)
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning kişiler](_img\vs-linkedin\vs-linkedin-contacts.png)
+   > [!div class="mx-imgBorder"]
+   > ![LinkedIn Learning kişiler](_img/vs-linkedin/vs-linkedin-contacts.png)
 
 11. İş uyarıları bölgenizdeki sizin için uygun olabilir işleri bildirilmesini sağlar.  İşi bir uyarı artık ayarlamak veya hesabınızı oluşturmaya devam etmek için bu adımı atlamak seçebilirsiniz.
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning iş uyarıları](_img\vs-linkedin\vs-linkedin-job-alerts.png)
+   > [!div class="mx-imgBorder"]
+   > ![LinkedIn Learning iş uyarıları](_img/vs-linkedin/vs-linkedin-job-alerts.png)
 
 12. Tercihleri ve şimdiye kadarki sağladığınız Kişisel bilgiler bağlı olarak, bir seçim ağınızı oluşturmaya başlamak için önerilen bağlantıları görürsünüz.  Bağlantı ekleme veya bu adımı atlayın seçebilirsiniz.
 
 13. Profiliniz için bir fotoğraf eklemek için tıklatın **karşıya fotoğraf**.  Aksi takdirde, bu adımı atlayabilirsiniz.  (Her zaman bir fotoğraf daha sonra ekleyebilirsiniz.)
     > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning karşıya fotoğraf](_img\vs-linkedin\vs-linkedin-photo.png)
+    > ![LinkedIn Learning karşıya fotoğraf](_img/vs-linkedin/vs-linkedin-photo.png)
 
 14. LinkedIn uygulaması, telefonunuza ağınızdaki her yerden erişmesini indirebilirsiniz.  Telefonunuza bir bağlantı gönderme veya doğrudan App Store veya Google Play'den indirin.  Ayrıca **sonraki** artık bu adımı atlayın ve daha sonra uygulamayı indirin.
     > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning karşıya fotoğraf](_img\vs-linkedin\vs-linkedin-app.png)
+    > ![LinkedIn Learning karşıya fotoğraf](_img/vs-linkedin/vs-linkedin-app.png)
 
 ### <a name="activate-your-offer"></a>Teklifinizi etkinleştirin
 15. LinkedIn hesabınız oturum ya da yeni bir tane oluşturulan göre Premium aboneliğinizi etkinleştirin ve LinkedIn Learning yararlanmaya başlamak hazırsınız.  Tıklayın **teklifinizi etkinleştirin**.
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning etkinleştir](_img\vs-linkedin\vs-linkedin-Activate1.png)
+   > [!div class="mx-imgBorder"]
+   > ![LinkedIn Learning etkinleştir](_img/vs-linkedin/vs-linkedin-Activate1.png)
 
 
 16. İlginizi çeken becerileri keşfetmeye başlayabilirsiniz.  Öneriler, diğer becerileri arama listesinden seçin veya tıklatın **atla** becerileri seçme olmadan devam etmek için.
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning beceriler](_img\vs-linkedin\vs-linkedin-skills.png)
+   > [!div class="mx-imgBorder"]
+   > ![LinkedIn Learning beceriler](_img/vs-linkedin/vs-linkedin-skills.png)
 
 17. Premium aboneliği başarıyla etkinleştirdiniz ve LinkedIn Learning ve diğer avantajlar Premium kullanarak artık başlayabilirsiniz!
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning giriş](_img\vs-linkedin\vs-linkedin-learning-home.png)
+   > [!div class="mx-imgBorder"]
+   > ![LinkedIn Learning giriş](_img/vs-linkedin/vs-linkedin-learning-home.png)
 
 ## <a name="eligibility"></a>Uygunluk
+
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standart, yıllık bulut)   | VL, Azure, perakende, seçili NFR<sup>1</sup> | 6 ay       |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir          |

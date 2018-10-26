@@ -15,12 +15,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b089794cc9135d8658a47d61d3d40c3feef7451a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1ab7e4e0cf46d90a437f4239798c0ec8a0a28e74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227012"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862768"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Dil Hizmeti ve Düzenleyici Uzantılarıyla Çalışmaya Başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,17 +48,17 @@ Programlama diliniz veya herhangi bir içerik türü için anahat oluşturma, ay
   
  Düzenleyici uzantıları temel tür bazıları şunlardır:  
   
--   Kenar boşlukları ve kaydırma çubukları  
+- Kenar boşlukları ve kaydırma çubukları  
   
--   Etiketler  
+- Etiketler  
   
--   Kenarlıklar  
+- Kenarlıklar  
   
--   Seçenekler  
+- Seçenekler  
   
--   IntelliSense  
+- IntelliSense  
   
- Düzenleyici uzantı noktaları hakkında daha fazla bilgi için bkz: [dil hizmeti ve düzenleyici uzantı noktaları](../extensibility/language-service-and-editor-extension-points.md).  
+  Düzenleyici uzantı noktaları hakkında daha fazla bilgi için bkz: [dil hizmeti ve düzenleyici uzantı noktaları](../extensibility/language-service-and-editor-extension-points.md).  
   
 ## <a name="deploying-editor-extensions"></a>Düzenleyici uzantıları dağıtma  
  Visual Studio'da çözüme çözümü source.extension.vsixmanifest adlı bir meta veri dosyası ekleyerek ve ardından ikili dosyaları ve bildirimi bir kopyasını bilinen bir klasörde Visual Studio'ya ekleme Düzenleyici uzantılarını dağıtın. Bildirim dosyası, uzantıyı (örneğin, adı, yazar, sürüm ve içerik türünü) hakkındaki temel gerçekleri tanımlar. VSIX bildirim dosyası ve uzantılarını dağıtma hakkında daha fazla bilgi için bkz. [sevkiyat Visual Studio uzantıları](../extensibility/shipping-visual-studio-extensions.md).  

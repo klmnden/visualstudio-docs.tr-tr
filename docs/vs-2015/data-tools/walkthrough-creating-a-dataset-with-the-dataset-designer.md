@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 1a9d47431497f05fd5538510b39b44298587dd0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d77d63cc82b7af6281183b3eae67d09b0454fffb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287371"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868267"
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>İzlenecek Yol: Veri Kümesi Tasarımcısı ile Veri Kümesi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Bu izlenecek yolda, kullanarak bir veri kümesi oluşturacaksınız **veri küme
   
  Bu kılavuzda gösterilen görevler aşağıdakileri içerir:  
   
--   Yeni bir oluşturma **Windows uygulama** proje.  
+- Yeni bir oluşturma **Windows uygulama** proje.  
   
--   Boş bir ekleme **veri kümesi** projeye öğe.  
+- Boş bir ekleme **veri kümesi** projeye öğe.  
   
--   Oluşturma ve bir veri kaynağı ile bir veri kümesi oluşturarak uygulamanızda yapılandırma **veri kümesi Tasarımcısı**.  
+- Oluşturma ve bir veri kaynağı ile bir veri kümesi oluşturarak uygulamanızda yapılandırma **veri kümesi Tasarımcısı**.  
   
--   Northwind veritabanına bir bağlantı oluşturma **Sunucu Gezgini**.  
+- Northwind veritabanına bir bağlantı oluşturma **Sunucu Gezgini**.  
   
--   Tablo TableAdapter ile veritabanı tablolarında göre veri kümesinde oluşturma.  
+- Tablo TableAdapter ile veritabanı tablolarında göre veri kümesinde oluşturma.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için şunlar gerekir:  

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 990879ca953a2d43a6dee66424fdff2e2dd3c274
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: fae4a6cc21264e62c5a12db79c8a937f0a366314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778376"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843541"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>İzlenecek yol: CheckBox denetimlerini kullanarak çalışma sayfası biçimlendirmesini değiştirme
   Bu izlenecek yol, onay kutularını biçimini değiştirmek için bir Microsoft Office Excel çalışma sayfasında kullanmanın temellerini gösterir. Oluşturma ve kod projenize eklemek için Visual Studio'da Office geliştirme araçlarını kullanın. Sonuç tamamlanmış bir örnek görmek için Excel denetimleri örneğine bakın [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -101,24 +101,24 @@ ms.locfileid: "38778376"
   
 #### <a name="to-add-text-to-a-namedrange-control"></a>Metin NamedRange denetimine eklemek için  
   
-1.  Gelen **Excel denetimleri** Sürükle araç kutusu sekmesi bir <xref:Microsoft.Office.Tools.Excel.NamedRange> hücre denetimi **B9**.  
+1. Gelen **Excel denetimleri** Sürükle araç kutusu sekmesi bir <xref:Microsoft.Office.Tools.Excel.NamedRange> hücre denetimi **B9**.  
   
-2.  Doğrulayın **$B$ 9** düzenlenebilir metin kutusu ve söz konusu hücrenin görünür **B9** seçilir. Yüklü değilse, hücreyi tıklatın **B9** seçin.  
+2. Doğrulayın **$B$ 9** düzenlenebilir metin kutusu ve söz konusu hücrenin görünür **B9** seçilir. Yüklü değilse, hücreyi tıklatın **B9** seçin.  
   
-3.  **Tamam**'ı tıklatın.  
+3. **Tamam**'ı tıklatın.  
   
-4.  Hücre **B9** adında bir aralığa dönüşür `NamedRange1`.  
+4. Hücre **B9** adında bir aralığa dönüşür `NamedRange1`.  
   
-     Çalışma sayfasında görünür bir gösterge yoktur ancak `NamedRange1` görünür **adı kutusuna** (hemen üstüne çalışma sol tarafta), hücre **B9** seçilir.  
+    Çalışma sayfasında görünür bir gösterge yoktur ancak `NamedRange1` görünür **adı kutusuna** (hemen üstüne çalışma sol tarafta), hücre **B9** seçilir.  
   
-5.  Olduğundan emin olun **NamedRange1** nesne adı liste kutusunda görülebilir **özellikleri** penceresinde ve aşağıdaki özellikleri değiştirin:  
+5. Olduğundan emin olun **NamedRange1** nesne adı liste kutusunda görülebilir **özellikleri** penceresinde ve aşağıdaki özellikleri değiştirin:  
   
-    |Özellik|Değer|  
-    |--------------|-----------|  
-    |**Ad**|**textFont**|  
-    |**Value2**|**Bu metin biçimini değiştirmek için bir onay kutusuna tıklayın.**|  
+   |Özellik|Değer|  
+   |--------------|-----------|  
+   |**Ad**|**textFont**|  
+   |**Value2**|**Bu metin biçimini değiştirmek için bir onay kutusuna tıklayın.**|  
   
- Ardından, bir seçenek belirlendiğinde, metni biçimlendirmek için kod yazın.  
+   Ardından, bir seçenek belirlendiğinde, metni biçimlendirmek için kod yazın.  
   
 ## <a name="format-the-text-when-an-option-is-selected"></a>Bir seçenek belirlendiğinde, metin biçimlendirme  
  Bu bölümde, böylece kullanıcı biçimlendirme seçeneği seçtiğinde, çalışma sayfasındaki metin biçimi değiştirilir kod yazacaksınız.  

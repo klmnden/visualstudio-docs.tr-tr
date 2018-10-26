@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c53db386ee9eb0815ebb27f82794118035d6cba6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b91c12807482f411783ed6ef5f50e29716612ffd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254741"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921944"
 ---
 # <a name="lines-view---contention-data"></a>Satırlar Görünümü - Çakışma Verileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ ms.locfileid: "49254741"
   
  Bir ifade, aşağıdaki veriler tarafından tanımlanır:  
   
--   Function deyimi içeren kaynak dosyası.  
+- Function deyimi içeren kaynak dosyası.  
   
--   Deyimi içeren işlev.  
+- Deyimi içeren işlev.  
   
--   Deyim başladığı kaynak satırı.  
+- Deyim başladığı kaynak satırı.  
   
--   Deyim başladığı kaynak satırı karakter.  
+- Deyim başladığı kaynak satırı karakter.  
   
--   Kaynak satırı başlangıçtan deyimini sonlandırır.  
+- Kaynak satırı başlangıçtan deyimini sonlandırır.  
   
--   Deyim erdiği kaynak satırı karakter.  
+- Deyim erdiği kaynak satırı karakter.  
   
- Satır adı sütunu tanımlayıcısı veri sıralanabilir bir birleşimini sağlar.  
+  Satır adı sütunu tanımlayıcısı veri sıralanabilir bir birleşimini sağlar.  
   
- Satırlar görünümü raporun sütunları aşağıdaki tabloda açıklanmaktadır.  
+  Satırlar görünümü raporun sütunları aşağıdaki tabloda açıklanmaktadır.  
   
 |Sütun|Açıklama|  
 |------------|-----------------|  

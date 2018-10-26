@@ -15,12 +15,12 @@ caps.latest.revision: 36
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0aa5eef915aea0eea01e9d6195228cddf8e974ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 26a60151d89ffaa89338601c4992f9c2f41b099a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248090"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812978"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Modelleme diyagramında hareket işleyicisi tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,167 +43,167 @@ Visual Studio'da, kullanıcı çift tıkladığında veya öğeleri bir UML diya
   
 #### <a name="to-create-a-gesture-handler-in-its-own-vsix"></a>Kendi VSIX'inde bir hareket işleyicisi oluşturmak için  
   
-1.  İçinde **yeni proje** iletişim kutusunun **modelleme projeleri**seçin **hareket uzantısı**.  
+1. İçinde **yeni proje** iletişim kutusunun **modelleme projeleri**seçin **hareket uzantısı**.  
   
-2.  Açık **.cs** yeni projeye dosya ve değiştirme `GestureExtension` hareket işleyicinizi uygulamak için sınıfı.  
+2. Açık **.cs** yeni projeye dosya ve değiştirme `GestureExtension` hareket işleyicinizi uygulamak için sınıfı.  
   
-     Daha fazla bilgi için [jest işleyici uygulama](#Implementing).  
+    Daha fazla bilgi için [jest işleyici uygulama](#Implementing).  
   
-3.  F5 tuşuna basarak hareket işleyicisini test edin. Daha fazla bilgi için [hareket işlecini yürütme](#Executing).  
+3. F5 tuşuna basarak hareket işleyicisini test edin. Daha fazla bilgi için [hareket işlecini yürütme](#Executing).  
   
-4.  Hareket işleyicisini dosyasını kopyalayarak başka bir bilgisayara yükleyin. **bin\\\*\\\*.vsix** projeniz tarafından oluşturulmuş. Daha fazla bilgi için [yükleme ve kaldırma uzantı](#Installing).  
+4. Hareket işleyicisini dosyasını kopyalayarak başka bir bilgisayara yükleyin. **bin\\\*\\\*.vsix** projeniz tarafından oluşturulmuş. Daha fazla bilgi için [yükleme ve kaldırma uzantı](#Installing).  
   
- Alternatif yordam şöyledir:  
+   Alternatif yordam şöyledir:  
   
 #### <a name="to-create-a-separate-class-library-dll-project-for-the-gesture-handler"></a>Hareket işleyicisi için ayrı bir sınıf kitaplığı (DLL) projesi oluşturmak için  
   
-1.  Bir sınıf kitaplığı projesini yeni bir oluşturma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çözümü ya da var olan bir çözümde.  
+1. Bir sınıf kitaplığı projesini yeni bir oluşturma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çözümü ya da var olan bir çözümde.  
   
-    1.  Üzerinde **dosya** menüsünde seçin **yeni**, **proje**.  
+   1.  Üzerinde **dosya** menüsünde seçin **yeni**, **proje**.  
   
-    2.  Altında **yüklü şablonlar**, genişletme **Visual C#** veya **Visual Basic**, ardından Orta sütundaki seçin **sınıf kitaplığı**.  
+   2.  Altında **yüklü şablonlar**, genişletme **Visual C#** veya **Visual Basic**, ardından Orta sütundaki seçin **sınıf kitaplığı**.  
   
-2.  Projenize aşağıdaki başvuruları ekleyin.  
+2. Projenize aşağıdaki başvuruları ekleyin.  
   
-     `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
+    `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
   
-     `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]`  
+    `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]`  
   
-     `Microsoft.VisualStudio.ArchitectureTools.Extensibility`  
+    `Microsoft.VisualStudio.ArchitectureTools.Extensibility`  
   
-     `Microsoft.VisualStudio.Uml.Interfaces`  
+    `Microsoft.VisualStudio.Uml.Interfaces`  
   
-     `System.ComponentModel.Composition`  
+    `System.ComponentModel.Composition`  
   
-     `System.Windows.Forms`  
+    `System.Windows.Forms`  
   
-     `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` Yalnızca katman diyagramlarını genişletirken – bu gereksinim. Daha fazla bilgi için [katman diyagramlarını genişletme](../modeling/extend-layer-diagrams.md).  
+    `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` Yalnızca katman diyagramlarını genişletirken – bu gereksinim. Daha fazla bilgi için [katman diyagramlarını genişletme](../modeling/extend-layer-diagrams.md).  
   
-3.  Projeye bir sınıf dosyası ekleyin ve içeriğini aşağıdaki koda göre ayarlayın.  
+3. Projeye bir sınıf dosyası ekleyin ve içeriğini aşağıdaki koda göre ayarlayın.  
   
-    > [!NOTE]
-    >  Ad alanını ve sınıf adını tercihinize göre değiştirin.  
+   > [!NOTE]
+   >  Ad alanını ve sınıf adını tercihinize göre değiştirin.  
   
-    ```  
-    using System.ComponentModel.Composition;  
-    using System.Linq;  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.Modeling.Diagrams;  
-    using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;  
-    using Microsoft.VisualStudio.Modeling.ExtensionEnablement;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;  
-    using Microsoft.VisualStudio.Uml.AuxiliaryConstructs;  
-    using Microsoft.VisualStudio.Modeling;  
-    using Microsoft.VisualStudio.Uml.Classes;  
-    // ADD other UML namespaces if required  
+   ```  
+   using System.ComponentModel.Composition;  
+   using System.Linq;  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.Modeling.Diagrams;  
+   using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;  
+   using Microsoft.VisualStudio.Modeling.ExtensionEnablement;  
+   using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;  
+   using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;  
+   using Microsoft.VisualStudio.Uml.AuxiliaryConstructs;  
+   using Microsoft.VisualStudio.Modeling;  
+   using Microsoft.VisualStudio.Uml.Classes;  
+   // ADD other UML namespaces if required  
   
-    namespace MyGestureHandler // CHANGE  
-    {  
-      // DELETE any of these attributes if the handler  
-      // should not work with some types of diagram.  
-      [ClassDesignerExtension]  
-      [ActivityDesignerExtension]  
-      [ComponentDesignerExtension]  
-      [SequenceDesignerExtension]  
-      [UseCaseDesignerExtension]  
-      // [LayerDesignerExtension]  
+   namespace MyGestureHandler // CHANGE  
+   {  
+     // DELETE any of these attributes if the handler  
+     // should not work with some types of diagram.  
+     [ClassDesignerExtension]  
+     [ActivityDesignerExtension]  
+     [ComponentDesignerExtension]  
+     [SequenceDesignerExtension]  
+     [UseCaseDesignerExtension]  
+     // [LayerDesignerExtension]  
   
-      // Gesture handlers must export IGestureExtension:  
-      [Export(typeof(IGestureExtension))]  
-      // CHANGE class name  
-      public class MyGesture1 : IGestureExtension  
-      {  
-        [Import]  
-        public IDiagramContext DiagramContext { get; set; }  
+     // Gesture handlers must export IGestureExtension:  
+     [Export(typeof(IGestureExtension))]  
+     // CHANGE class name  
+     public class MyGesture1 : IGestureExtension  
+     {  
+       [Import]  
+       public IDiagramContext DiagramContext { get; set; }  
   
-        /// <summary>  
-        /// Called when the user double-clicks on the diagram  
-        /// </summary>  
-        /// <param name="targetElement"></param>  
-        /// <param name="diagramPointEventArgs"></param>  
-        public void OnDoubleClick(ShapeElement targetElement, DiagramPointEventArgs diagramPointEventArgs)  
-        {  
-          // CHANGE THIS CODE FOR YOUR APPLICATION.  
+       /// <summary>  
+       /// Called when the user double-clicks on the diagram  
+       /// </summary>  
+       /// <param name="targetElement"></param>  
+       /// <param name="diagramPointEventArgs"></param>  
+       public void OnDoubleClick(ShapeElement targetElement, DiagramPointEventArgs diagramPointEventArgs)  
+       {  
+         // CHANGE THIS CODE FOR YOUR APPLICATION.  
   
-          // Get the target shape, if any. Null if the target is the diagram.  
-          IShape targetIShape = targetElement.CreateIShape();  
+         // Get the target shape, if any. Null if the target is the diagram.  
+         IShape targetIShape = targetElement.CreateIShape();  
   
-          // Do something...  
-        }  
+         // Do something...  
+       }  
   
-        /// <summary>  
-        /// Called repeatedly when the user drags from anywhere on the screen.  
-        /// Return value should indicate whether a drop here is allowed.  
-        /// </summary>  
-        /// <param name="targetMergeElement">References the element to be dropped on.</param>  
-        /// <param name="diagramDragEventArgs">References the element to be dropped.</param>  
-        /// <returns></returns>  
-        public bool CanDragDrop(ShapeElement targetMergeElement, DiagramDragEventArgs diagramDragEventArgs)  
-        {  
-          // CHANGE THIS CODE FOR YOUR APPLICATION.  
+       /// <summary>  
+       /// Called repeatedly when the user drags from anywhere on the screen.  
+       /// Return value should indicate whether a drop here is allowed.  
+       /// </summary>  
+       /// <param name="targetMergeElement">References the element to be dropped on.</param>  
+       /// <param name="diagramDragEventArgs">References the element to be dropped.</param>  
+       /// <returns></returns>  
+       public bool CanDragDrop(ShapeElement targetMergeElement, DiagramDragEventArgs diagramDragEventArgs)  
+       {  
+         // CHANGE THIS CODE FOR YOUR APPLICATION.  
   
-          // Get the target element, if any. Null if the target is the diagram.  
-          IShape targetIShape = targetMergeElement.CreateIShape();  
+         // Get the target element, if any. Null if the target is the diagram.  
+         IShape targetIShape = targetMergeElement.CreateIShape();  
   
-          // This example allows drag of any UML elements.  
-          return GetModelElementsFromDragEvent(diagramDragEventArgs).Count() > 0;  
-        }  
+         // This example allows drag of any UML elements.  
+         return GetModelElementsFromDragEvent(diagramDragEventArgs).Count() > 0;  
+       }  
   
-        /// <summary>  
-        /// Execute the action to be performed on the drop.  
-        /// </summary>  
-        /// <param name="targetDropElement"></param>  
-        /// <param name="diagramDragEventArgs"></param>  
-        public void OnDragDrop(ShapeElement targetDropElement, DiagramDragEventArgs diagramDragEventArgs)  
-        {  
-          // CHANGE THIS CODE FOR YOUR APPLICATION.  
-        }  
+       /// <summary>  
+       /// Execute the action to be performed on the drop.  
+       /// </summary>  
+       /// <param name="targetDropElement"></param>  
+       /// <param name="diagramDragEventArgs"></param>  
+       public void OnDragDrop(ShapeElement targetDropElement, DiagramDragEventArgs diagramDragEventArgs)  
+       {  
+         // CHANGE THIS CODE FOR YOUR APPLICATION.  
+       }  
   
-        /// <summary>  
-        /// Retrieves UML IElements from drag arguments.  
-        /// Works for drags from UML diagrams.  
-        /// </summary>  
-        private IEnumerable<IElement> GetModelElementsFromDragEvent  
-                (DiagramDragEventArgs dragEvent)  
-        {  
-          //ElementGroupPrototype is the container for  
-          //dragged and copied elements and toolbox items.  
-          ElementGroupPrototype prototype =  
-             dragEvent.Data.  
-             GetData(typeof(ElementGroupPrototype))  
-                  as ElementGroupPrototype;  
-          // Locate the originals in the implementation store.  
-          IElementDirectory implementationDirectory =  
-             dragEvent.DiagramClientView.Diagram.Store.ElementDirectory;  
+       /// <summary>  
+       /// Retrieves UML IElements from drag arguments.  
+       /// Works for drags from UML diagrams.  
+       /// </summary>  
+       private IEnumerable<IElement> GetModelElementsFromDragEvent  
+               (DiagramDragEventArgs dragEvent)  
+       {  
+         //ElementGroupPrototype is the container for  
+         //dragged and copied elements and toolbox items.  
+         ElementGroupPrototype prototype =  
+            dragEvent.Data.  
+            GetData(typeof(ElementGroupPrototype))  
+                 as ElementGroupPrototype;  
+         // Locate the originals in the implementation store.  
+         IElementDirectory implementationDirectory =  
+            dragEvent.DiagramClientView.Diagram.Store.ElementDirectory;  
   
-          return prototype.ProtoElements.Select(  
-            prototypeElement =>  
-            {  
-              ModelElement element = implementationDirectory  
-                .FindElement(prototypeElement.ElementId);  
-              ShapeElement shapeElement = element as ShapeElement;  
-              if (shapeElement != null)  
-              {  
-                // Dragged from a diagram.  
-                return shapeElement.ModelElement as IElement;  
-              }  
-              else  
-              {  
-                // Dragged from UML Model Explorer.  
-                return element as IElement;  
-              }  
-            });  
-        }  
+         return prototype.ProtoElements.Select(  
+           prototypeElement =>  
+           {  
+             ModelElement element = implementationDirectory  
+               .FindElement(prototypeElement.ElementId);  
+             ShapeElement shapeElement = element as ShapeElement;  
+             if (shapeElement != null)  
+             {  
+               // Dragged from a diagram.  
+               return shapeElement.ModelElement as IElement;  
+             }  
+             else  
+             {  
+               // Dragged from UML Model Explorer.  
+               return element as IElement;  
+             }  
+           });  
+       }  
   
-      }  
-    }  
+     }  
+   }  
   
-    ```  
+   ```  
   
-     Yöntemlere konulacaklar hakkında daha fazla bilgi için bkz. [jest işleyici uygulama](#Implementing).  
+    Yöntemlere konulacaklar hakkında daha fazla bilgi için bkz. [jest işleyici uygulama](#Implementing).  
   
- Menü komutunuzu komutu yüklemek için bir kapsayıcı görevi gören bir VSIX projesine eklemeniz gerekir. İsterseniz, aynı VSIX içine diğer bileşenleri dahil edebilirsiniz.  
+   Menü komutunuzu komutu yüklemek için bir kapsayıcı görevi gören bir VSIX projesine eklemeniz gerekir. İsterseniz, aynı VSIX içine diğer bileşenleri dahil edebilirsiniz.  
   
 #### <a name="to-add-a-separate-gesture-handler-to-a-vsix-project"></a>Bir VSIX projesine ayrı bir hareket işleyici eklemek için  
   
@@ -238,25 +238,25 @@ Visual Studio'da, kullanıcı çift tıkladığında veya öğeleri bir UML diya
   
 #### <a name="to-test-the-gesture-handler"></a>Hareket işleyicisini test etmek için  
   
-1.  Tuşuna **F5**, veya **hata ayıklama** menüsünde tıklatın **hata ayıklamayı Başlat**.  
+1. Tuşuna **F5**, veya **hata ayıklama** menüsünde tıklatın **hata ayıklamayı Başlat**.  
   
-     Deneysel örneği [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] başlatır.  
+    Deneysel örneği [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] başlatır.  
   
-     **Sorun giderme**: yeni [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] başlamıyor:  
+    **Sorun giderme**: yeni [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] başlamıyor:  
   
-    -   Birden fazla projeniz varsa, VSIX projesinin çözümün başlangıç projesi olarak ayarlandığından emin olun.  
+   -   Birden fazla projeniz varsa, VSIX projesinin çözümün başlangıç projesi olarak ayarlandığından emin olun.  
   
-    -   Çözüm Gezgini'nde başlatmanın veya yalnızca projenin kısayol menüsünde Özellikler'i seçin. Proje Özellikleri düzenleyicisinden seçin **hata ayıklama** sekmesi. Emin olun dizesinde **harici program Başlat** alandır tam yol adını [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], genellikle:  
+   -   Çözüm Gezgini'nde başlatmanın veya yalnızca projenin kısayol menüsünde Özellikler'i seçin. Proje Özellikleri düzenleyicisinden seçin **hata ayıklama** sekmesi. Emin olun dizesinde **harici program Başlat** alandır tam yol adını [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], genellikle:  
   
-         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
+        `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  Deneysel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], açın veya bir modelleme projesi oluşturmak ve açmak veya bir modelleme diyagramı oluşturun. Hareket işleyici sınıfınızın özniteliklerinde listelenen türlerden ait bir diyagram kullanın.  
+2. Deneysel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], açın veya bir modelleme projesi oluşturmak ve açmak veya bir modelleme diyagramı oluşturun. Hareket işleyici sınıfınızın özniteliklerinde listelenen türlerden ait bir diyagram kullanın.  
   
-3.  Herhangi bir diyagram üzerine çift tıklayın. Çift tıklatma işleyiciniz çağrılmalıdır.  
+3. Herhangi bir diyagram üzerine çift tıklayın. Çift tıklatma işleyiciniz çağrılmalıdır.  
   
-4.  Bir öğe, UML Gezgini'nde diyagram üzerine sürükleyin. Sürükleme işleyiciniz çağrılmalıdır.  
+4. Bir öğe, UML Gezgini'nde diyagram üzerine sürükleyin. Sürükleme işleyiciniz çağrılmalıdır.  
   
- **Sorun giderme**: hareket işleyicisi çalışmıyorsa emin olun:  
+   **Sorun giderme**: hareket işleyicisi çalışmıyorsa emin olun:  
   
 -   Hareket işleyicisi projesini MEF Bileşeni olarak listelenir **varlıklar** sekmesinde **source.extensions.manifest** VSIX projesinde.  
   
@@ -374,15 +374,15 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
 #### <a name="to-uninstall-an-extension"></a>Bir uzantıyı kaldırmak için  
   
-1.  Üzerinde **Araçları** menüsünde seçin **Uzantılar ve güncelleştirmeler**.  
+1. Üzerinde **Araçları** menüsünde seçin **Uzantılar ve güncelleştirmeler**.  
   
-2.  Genişletin **yüklü uzantıları**.  
+2. Genişletin **yüklü uzantıları**.  
   
-3.  Uzantıyı seçin ve ardından **kaldırma**.  
+3. Uzantıyı seçin ve ardından **kaldırma**.  
   
- Nadiren, hatalı bir uzantı yüklemede başarısız olur ve hata penceresinde bir rapor oluşturur ancak Uzantı Yöneticisi'nde görünmez. Bu durumda, dosyayı şuradan silerek uzantıyı kaldırabilirsiniz:  
+   Nadiren, hatalı bir uzantı yüklemede başarısız olur ve hata penceresinde bir rapor oluşturur ancak Uzantı Yöneticisi'nde görünmez. Bu durumda, dosyayı şuradan silerek uzantıyı kaldırabilirsiniz:  
   
- *% LocalAppData %* **\Local\Microsoft\VisualStudio\\[sürüm] \Extensions**  
+   *% LocalAppData %* **\Local\Microsoft\VisualStudio\\[sürüm] \Extensions**  
   
 ##  <a name="DragExample"></a> Örnek  
  Aşağıdaki örnek nasıl oluştuğunu bileşen diyagramdan sürüklenen bileşenin bağlantı noktalarını ve parçaları temel bir sıralı diyagramda yaşam çizgilerini oluşturulacağını gösterir.  

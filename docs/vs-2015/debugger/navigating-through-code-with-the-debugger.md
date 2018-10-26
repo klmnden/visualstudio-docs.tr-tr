@@ -26,12 +26,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d91d99b6eaa33f3aae84ecd3510bf08fe194f101
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f37674f1899ab710d4612eb2b9cd89764ce74634
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186166"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898154"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Hata Ayıklayıcısı ile Kodlarda gezinme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,25 +63,25 @@ Hata ayıklayıcısı koda gitmek için komutlar ve kısayolları hakkında bilg
   
  Davranışı hakkında bazı Ayrıntılar **içine adımla**:  
   
--   Bir iç içe geçmiş işlev çağrısında **içine adımla** en derin yuvalanmış işlevi adımlar. Kullanırsanız **içine adımla** gibi bir çağrıda `Func1(Func2())`, hata ayıklayıcı adımları işleve `Func2`.  
+- Bir iç içe geçmiş işlev çağrısında **içine adımla** en derin yuvalanmış işlevi adımlar. Kullanırsanız **içine adımla** gibi bir çağrıda `Func1(Func2())`, hata ayıklayıcı adımları işleve `Func2`.  
   
--   Hata ayıklayıcı gerçekte fiziksel satırlar yerine kod deyimlerini adımlar. Örneğin bir `if` yan tümcesi bir satıra yazılabilir:  
+- Hata ayıklayıcı gerçekte fiziksel satırlar yerine kod deyimlerini adımlar. Örneğin bir `if` yan tümcesi bir satıra yazılabilir:  
   
-    ```csharp  
-    int x = 42;  
-    string s = "Not answered";  
-    if( int x == 42) s = "Answered!";  
-    ```  
+  ```csharp  
+  int x = 42;  
+  string s = "Not answered";  
+  if( int x == 42) s = "Answered!";  
+  ```  
   
-    ```vb  
-    Dim x As Integer = 42  
-    Dim s As String = "Not answered"  
-    If x = 42 Then s = "Answered!"  
-    ```  
+  ```vb  
+  Dim x As Integer = 42  
+  Dim s As String = "Not answered"  
+  If x = 42 Then s = "Answered!"  
+  ```  
   
-     Bu satır adımladığınızda hata ayıklayıcı koşulu bir adım ve başka bir sonucu olarak değerlendirir. (Bu örnekte, koşul true olduğu).  
+   Bu satır adımladığınızda hata ayıklayıcı koşulu bir adım ve başka bir sonucu olarak değerlendirir. (Bu örnekte, koşul true olduğu).  
   
- İşlevlere adımlamayla girerken çağrı yığınını görsel olarak izlemek için bkz: [hata ayıklarken çağrı yığınında yöntemler harita](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+  İşlevlere adımlamayla girerken çağrı yığınını görsel olarak izlemek için bkz: [hata ayıklarken çağrı yığınında yöntemler harita](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
 ##  <a name="BKMK_Step_over_Step_out"></a> İşlevleri atlanıyor kodda adım adım  
  Hata ayıklayıcıda kod çalıştırma, genellikle, belirli bir işlevde ne olacağına bakalım gerekmez fark edeceksiniz (Bu konuda umursamaz veya biliyorsanız gibi çalışır, iyi sınanmış kitaplık kodu). Kod atlamak için bu komutları kullanmak (işlevler yine de, yürütme, ancak bunlar üzerinde hata ayıklayıcı atlar).  
@@ -146,20 +146,20 @@ Hata ayıklayıcısı koda gitmek için komutlar ve kısayolları hakkında bilg
   
 > [!CAUTION]
 >  Sonraki deyimin ayarlanması program sayacının doğrudan yeni konuma atlamasına neden olur. Bu komutu dikkatli kullanın:  
->   
->  -   Eski ve yeni yürütme noktaları arasındaki talimatlar hariç tutulur.  
-> -   Yürütme noktasını geriye taşırsanız, müdahaleci talimatlar geri alınmaz.  
-> -   Sonraki deyimi başka bir işleve ya da kapsama taşınması genelde bir çalışma zamanı hatası ya da özel durum neden Çağrı Yığını Bozulması ile sonuçlanır. Sonraki deyimi başka bir kapsama geçmeden çalışırsanız, hata ayıklayıcı bir uyarı ile bir iletişim kutusu açılır ve işlemi iptal etmek için bir şans verir. Visual Basic'te sonraki deyimi başka bir kapsam ya da işleve taşıyamazsınız.  
-> -   Çalışma zamanı kontrolleriniz etkinse, yerel C++'da, sonraki deyimi ayarlamak bir özel yürütme yöntemin sonuna ulaştığında durum neden olabilir.  
-> -   Düzenle ve devam et etkinken, **sonraki deyimi Ayarla** , Düzenle ve devam et düzenlemeler yaptıysanız başarısız hemen yeniden eşleyemeyeceği. Bir catch bloğu içinde kod düzenlediyseniz, örneğin, ortaya çıkabilir. Bu durumda, bir işlem desteklenen söyleyen bir hata iletisi görürsünüz.  
-  
+> 
+> - Eski ve yeni yürütme noktaları arasındaki talimatlar hariç tutulur.  
+>   -   Yürütme noktasını geriye taşırsanız, müdahaleci talimatlar geri alınmaz.  
+>   -   Sonraki deyimi başka bir işleve ya da kapsama taşınması genelde bir çalışma zamanı hatası ya da özel durum neden Çağrı Yığını Bozulması ile sonuçlanır. Sonraki deyimi başka bir kapsama geçmeden çalışırsanız, hata ayıklayıcı bir uyarı ile bir iletişim kutusu açılır ve işlemi iptal etmek için bir şans verir. Visual Basic'te sonraki deyimi başka bir kapsam ya da işleve taşıyamazsınız.  
+>   -   Çalışma zamanı kontrolleriniz etkinse, yerel C++'da, sonraki deyimi ayarlamak bir özel yürütme yöntemin sonuna ulaştığında durum neden olabilir.  
+>   -   Düzenle ve devam et etkinken, **sonraki deyimi Ayarla** , Düzenle ve devam et düzenlemeler yaptıysanız başarısız hemen yeniden eşleyemeyeceği. Bir catch bloğu içinde kod düzenlediyseniz, örneğin, ortaya çıkabilir. Bu durumda, bir işlem desteklenen söyleyen bir hata iletisi görürsünüz.  
+> 
 > [!NOTE]
 >  Yönetilen kodda aşağıdaki koşullarda sonraki deyimi taşıyamazsınız:  
->   
->  -   Sonraki deyimi başka bir yöntem geçerli deyimden bileşenidir.  
-> -   Hata ayıklama başlatıldı Just-ın-Time kullanarak hata ayıklama.  
-> -   Geriye doğru bir callstack sürüyor.  
-> -   Bir System.StackOverflowException ya da System.Threading.ThreadAbortException özel durumu oluşturuldu.  
+> 
+> - Sonraki deyimi başka bir yöntem geçerli deyimden bileşenidir.  
+>   -   Hata ayıklama başlatıldı Just-ın-Time kullanarak hata ayıklama.  
+>   -   Geriye doğru bir callstack sürüyor.  
+>   -   Bir System.StackOverflowException ya da System.Threading.ThreadAbortException özel durumu oluşturuldu.  
   
  Uygulamanız etkin olarak çalışırken sonraki deyimi ayarlayamazsınız. Sonraki deyimi ayarlamak için hata ayıklayıcının kesme modunda olması gerekir.  
   

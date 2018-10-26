@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 852bf01278829616a2e8592a8c6ffcbaa87d3628
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 72f638a17fd6d49157f13d54a6ec1deba0e2bf27
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232472"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891199"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Nasıl Yapılır: Görevlerdeki Hataları Yoksayma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ Bazen bir derleme hatalarının bazı görevler dayanıklı olmasını istersini
   
  `ContinueOnError` Öznitelik aşağıdaki değerlerden birini içerebilir:  
   
--   **WarnAndContinue** veya **true**. Bir görev başarısız olduğunda, sonraki görevlerinde [hedef](../msbuild/target-element-msbuild.md) öğesi ile derleme devam yürütülecek ve görevin tüm hataları uyarı olarak kabul edilir.  
+- **WarnAndContinue** veya **true**. Bir görev başarısız olduğunda, sonraki görevlerinde [hedef](../msbuild/target-element-msbuild.md) öğesi ile derleme devam yürütülecek ve görevin tüm hataları uyarı olarak kabul edilir.  
   
--   **ErrorAndContinue**. Bir görev başarısız olduğunda, sonraki görevlerinde `Target` öğesi ile derleme devam yürütmek ve tüm hataları görev hata olarak kabul edilir.  
+- **ErrorAndContinue**. Bir görev başarısız olduğunda, sonraki görevlerinde `Target` öğesi ile derleme devam yürütmek ve tüm hataları görev hata olarak kabul edilir.  
   
--   **ErrorAndStop** veya **false** (varsayılan). Bir görev başarısız olduğunda, listesindeki kalan görevlere `Target` olmayan öğe ve derleme yürütülür ve tüm `Target` öğesi ve yapı başarısız olduğu değerlendirilir.  
+- **ErrorAndStop** veya **false** (varsayılan). Bir görev başarısız olduğunda, listesindeki kalan görevlere `Target` olmayan öğe ve derleme yürütülür ve tüm `Target` öğesi ve yapı başarısız olduğu değerlendirilir.  
   
- .NET Framework 4.5 yalnızca desteklenen önce sürümleri `true` ve `false` değerleri.  
+  .NET Framework 4.5 yalnızca desteklenen önce sürümleri `true` ve `false` değerleri.  
   
- Varsayılan değer olan `ContinueOnError` olduğu `ErrorAndStop`. Öznitelik ayarlamanız `ErrorAndStop`, davranışı açık proje dosyasını okuyan herkese yapmanızı ister.  
+  Varsayılan değer olan `ContinueOnError` olduğu `ErrorAndStop`. Öznitelik ayarlamanız `ErrorAndStop`, davranışı açık proje dosyasını okuyan herkese yapmanızı ister.  
   
 #### <a name="to-ignore-an-error-in-a-task"></a>Bir görevdeki bir hatayı yok saymak için  
   

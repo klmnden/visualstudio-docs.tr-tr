@@ -32,12 +32,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3d080945edc13d0f4542fdd9c981037af108325c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cae9f5af0c6b8df6594a78bc7601ac123c349dc5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220728"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949441"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Yazı Tipleri ve Renkler, Ortam, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,47 +53,47 @@ ms.locfileid: "49220728"
  **Ayarlarını göster**  
  Yazı tipi ve renk düzenleri değiştirebileceğiniz tüm kullanıcı arabirimi öğeleri listeler. Bu listeden bir öğeyi seçtikten sonra seçili öğe için renk ayarlarını özelleştirebilirsiniz **görüntü öğeleri**.  
   
--   **Metin Düzenleyici**  
+- **Metin Düzenleyici**  
   
-     Yazı tipi stili, boyutu ve rengi görüntü ayarlarını Metin Düzenleyicisi için yapılan değişiklikler varsayılan metin düzenleyicinizde metin görünümünü etkiler. IDE dışında bir metin düzenleyicisinde açık belgeler, bu ayarları tarafından etkilenmez.  
+   Yazı tipi stili, boyutu ve rengi görüntü ayarlarını Metin Düzenleyicisi için yapılan değişiklikler varsayılan metin düzenleyicinizde metin görünümünü etkiler. IDE dışında bir metin düzenleyicisinde açık belgeler, bu ayarları tarafından etkilenmez.  
   
--   **Yazıcı**  
+- **Yazıcı**  
   
-     Yazı tipi stili, boyutu ve rengi görüntü ayarları yazıcı için yapılan değişiklikler, yazdırılan belgelerde metin görünümünü etkiler.  
+   Yazı tipi stili, boyutu ve rengi görüntü ayarları yazıcı için yapılan değişiklikler, yazdırılan belgelerde metin görünümünü etkiler.  
   
-    > [!NOTE]
-    >  Gerektiği gibi yazdırma, görüntü ve metin düzenleyicisindeki için farklı varsayılan yazı tipi seçebilirsiniz. Tek baytlı hem çift baytlık karakterler içeren kod yazdırırken bu yararlı olabilir.  
+  > [!NOTE]
+  >  Gerektiği gibi yazdırma, görüntü ve metin düzenleyicisindeki için farklı varsayılan yazı tipi seçebilirsiniz. Tek baytlı hem çift baytlık karakterler içeren kod yazdırırken bu yararlı olabilir.  
   
--   **Deyim tamamlama**  
+- **Deyim tamamlama**  
   
-     Deyim tamamlama açılır Düzenleyicisi'nde görüntülenen metnin boyutunu ve yazı tipi stili değiştirir.  
+   Deyim tamamlama açılır Düzenleyicisi'nde görüntülenen metnin boyutunu ve yazı tipi stili değiştirir.  
   
--   **Düzenleyici araç ipucu**  
+- **Düzenleyici araç ipucu**  
   
-     Düzenleyici'de gösterilen ipuçlarında görüntülenen metin boyutunu ve yazı tipi stili değiştirir.  
+   Düzenleyici'de gösterilen ipuçlarında görüntülenen metin boyutunu ve yazı tipi stili değiştirir.  
   
--   **Ortam yazı tipi**  
+- **Ortam yazı tipi**  
   
-     Yazı tipi stili ve boyutu için zaten ayrı bir seçenek olmayan tüm IDE kullanıcı arabirimi öğelerini değiştirir **ayarlarını göster.** Örneğin, bu seçenek için geçerlidir **başlangıç sayfası** ancak değil etkileyecek **çıkış** penceresi.  
+   Yazı tipi stili ve boyutu için zaten ayrı bir seçenek olmayan tüm IDE kullanıcı arabirimi öğelerini değiştirir **ayarlarını göster.** Örneğin, bu seçenek için geçerlidir **başlangıç sayfası** ancak değil etkileyecek **çıkış** penceresi.  
   
--   **[Tüm metin aracı Windows]**  
+- **[Tüm metin aracı Windows]**  
   
-     Yazı tipi stili, boyutu ve rengi değişiklikler, çıkış bölmeleri sahip IDE'de araç pencereleri, bu öğeyi etkileyen metin görünümünü için ayarları görüntüleyin. Örneğin, çıkış penceresine, komut penceresinde, komut penceresi, vb.  
+   Yazı tipi stili, boyutu ve rengi değişiklikler, çıkış bölmeleri sahip IDE'de araç pencereleri, bu öğeyi etkileyen metin görünümünü için ayarları görüntüleyin. Örneğin, çıkış penceresine, komut penceresinde, komut penceresi, vb.  
   
-    > [!NOTE]
-    >  Değişiklikleri için metni **[tüm metin aracı Windows]** öğeleri etkili olmaz, yaptığınız bunları oturumu sırasında. Visual Studio'nun başka bir örneğini açarak bu tür değişiklikleri değerlendirebilirsiniz.  
+  > [!NOTE]
+  >  Değişiklikleri için metni **[tüm metin aracı Windows]** öğeleri etkili olmaz, yaptığınız bunları oturumu sırasında. Visual Studio'nun başka bir örneğini açarak bu tür değişiklikleri değerlendirebilirsiniz.  
   
- **Varsayılanları Kullan**  
- Yazı tipi ve renk değerleri seçili liste öğesini sıfırlar **ayarlarını göster**. **Kullanım** diğer ekran düzenleri seçim için kullanılabilir hale geldiğinde düğmesi görünür. Örneğin, yazıcı için iki düzeni seçebilirsiniz.  
+  **Varsayılanları Kullan**  
+  Yazı tipi ve renk değerleri seçili liste öğesini sıfırlar **ayarlarını göster**. **Kullanım** diğer ekran düzenleri seçim için kullanılabilir hale geldiğinde düğmesi görünür. Örneğin, yazıcı için iki düzeni seçebilirsiniz.  
   
- **Yazı tipi (kalın tür sabit-genişlikli yazı gösterir)**  
- Sisteminizde yüklü tüm yazı tiplerini listeler. Aşağı açılan menüyü ilk görüntülendiğinde, seçili öğe için geçerli yazı tipi **ayarlarını göster** alan vurgulanır. Yazı tipleri sabit — düzenleyicide hizalamak daha kolay olan — kalın yazı tipinde görünür.  
+  **Yazı tipi (kalın tür sabit-genişlikli yazı gösterir)**  
+  Sisteminizde yüklü tüm yazı tiplerini listeler. Aşağı açılan menüyü ilk görüntülendiğinde, seçili öğe için geçerli yazı tipi **ayarlarını göster** alan vurgulanır. Yazı tipleri sabit — düzenleyicide hizalamak daha kolay olan — kalın yazı tipinde görünür.  
   
- **Boyutu**  
- Kullanılabilen listelerini vurgulanan yazı tipi boyutlarını gelin. Yazı tipi boyutunu değiştirme, etkilediği tüm **görüntü öğeleri** için **ayarlarını göster** seçimi.  
+  **Boyutu**  
+  Kullanılabilen listelerini vurgulanan yazı tipi boyutlarını gelin. Yazı tipi boyutunu değiştirme, etkilediği tüm **görüntü öğeleri** için **ayarlarını göster** seçimi.  
   
- **Öğeleri görüntüle**  
- Ön ve arka plan rengi değiştirebileceğiniz öğeler listelenir.  
+  **Öğeleri görüntüle**  
+  Ön ve arka plan rengi değiştirebileceğiniz öğeler listelenir.  
   
 > [!NOTE]
 >  **Düz metin** varsayılan görünen öğedir. Özellikler bu nedenle, atanan **düz metin** diğer görüntü öğelerine atanan özellikler tarafından geçersiz kılınır. Örneğin, mavi renk atarsanız **düz metin** ve için yeşil renk **tanımlayıcısı**, tüm tanımlayıcılar yeşil renkte görünür. Bu örnekte, **tanımlayıcı** özelliklerini geçersiz kılma **düz metin** özellikleri.  

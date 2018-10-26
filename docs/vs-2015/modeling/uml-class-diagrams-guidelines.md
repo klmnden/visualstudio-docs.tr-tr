@@ -20,12 +20,12 @@ caps.latest.revision: 56
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a9c7b5f5a88e8563930615c883c6911956932d17
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cba454162cb9116dc1d2946a5c136b377354d7d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181785"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852186"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML Sınıf Diyagramları: Yönergeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,17 +122,17 @@ Visual Studio'da kullanabileceğiniz bir *UML sınıf diyagramı* veri türlerin
   
  ![Bir sınıf, bir numaralandırma ve bir arabirim](../modeling/media/uml-classguidetypes.png "UML_ClassGuideTypes")  
   
--   Kullanım **sınıfları** birçok amaç için veri veya nesne türlerini temsil etmek için (1).  
+- Kullanım **sınıfları** birçok amaç için veri veya nesne türlerini temsil etmek için (1).  
   
--   Kullanım **arabirimleri** (2) saf arabirimler ve iç uygulamaları olan somut sınıflar arasında ayırt etmek için sahip olduğu bir bağlam içinde. Bu fark, diyagramın amacının bir yazılım uygulamasını açıklamak olduğunda yararlıdır. Bu, edilgen veri tanımladığınız zaman veya kullanıcı gereksinimlerini tanımlamak için kavramlar tanımladığınız yerde daha az yararlıdır.  
+- Kullanım **arabirimleri** (2) saf arabirimler ve iç uygulamaları olan somut sınıflar arasında ayırt etmek için sahip olduğu bir bağlam içinde. Bu fark, diyagramın amacının bir yazılım uygulamasını açıklamak olduğunda yararlıdır. Bu, edilgen veri tanımladığınız zaman veya kullanıcı gereksinimlerini tanımlamak için kavramlar tanımladığınız yerde daha az yararlıdır.  
   
--   Kullanım bir **numaralandırma** (örneğin sınırlı sayıda değişmez değeri olan bir türü temsil etmek için 3) `Stop` ve `Go`.  
+- Kullanım bir **numaralandırma** (örneğin sınırlı sayıda değişmez değeri olan bir türü temsil etmek için 3) `Stop` ve `Go`.  
   
-    -   Sabit listesine değişmez değerleri ekleyin. Her birine ayrı bir ad verin.  
+  -   Sabit listesine değişmez değerleri ekleyin. Her birine ayrı bir ad verin.  
   
-    -   İsterseniz her değişmez değer için sayısal bir değer de sağlayabilirsiniz. Açık listesinde değişmez değerin kısayol menüsünü seçin **özellikleri**, bir sayı yazın **değer** alanındaki **özellikleri** penceresi.  
+  -   İsterseniz her değişmez değer için sayısal bir değer de sağlayabilirsiniz. Açık listesinde değişmez değerin kısayol menüsünü seçin **özellikleri**, bir sayı yazın **değer** alanındaki **özellikleri** penceresi.  
   
- Her türe benzersiz bir ad verin.  
+  Her türe benzersiz bir ad verin.  
   
 ### <a name="getting-types-from-other-diagrams"></a>Diğer Diyagramlardan Türleri Alma  
  Diğer diyagramdaki türleri UML sınıf diyagramınızda görünür yapabilirsiniz.  
@@ -166,7 +166,7 @@ Visual Studio'da kullanabileceğiniz bir *UML sınıf diyagramı* veri türlerin
   
  Özelliklerini görmek için özniteliğin veya işlemin kısayol menüsünü açın ve ardından **özellikleri**. Özellikleri görünür **özellikleri** penceresi.  
   
- Bir işlemin parametrelerinin özelliklerini görmek için **[...]** içinde **parametreleri** özelliği. Yeni özellikler iletişim kutusu görünür.  
+ Bir işlemin parametrelerinin özelliklerini görmek için <strong>[...]</strong> içinde **parametreleri** özelliği. Yeni özellikler iletişim kutusu görünür.  
   
  Ayarlayabileceğiniz tüm özellikler hakkında ayrıntılı bilgi için bkz.  
   
@@ -177,15 +177,15 @@ Visual Studio'da kullanabileceğiniz bir *UML sınıf diyagramı* veri türlerin
 ### <a name="types-of-attributes-and-operations"></a>Öznitelik ve İşlemlerin Türleri  
  Her *türü* bir öznitelik veya işlem ve her bir parametre türü, aşağıdakilerden biri olabilir:  
   
--   **(hiçbiri)**  -Türü önceki iki gt;(yok) imzada belirtilmemiş bırakabilirsiniz (`:`).  
+- **(hiçbiri)**  -Türü önceki iki gt;(yok) imzada belirtilmemiş bırakabilirsiniz (`:`).  
   
--   Standart basit türlerden biri: **Boole**, **tamsayı**, **dize**.  
+- Standart basit türlerden biri: **Boole**, **tamsayı**, **dize**.  
   
--   Modelinizde tanımlı bir tür.  
+- Modelinizde tanımlı bir tür.  
   
--   Şablon yazılmış bir şablon türünün parametreli değeri\<parametresi >. Bkz: [şablonu türleri](#Templates).  
+- Şablon yazılmış bir şablon türünün parametreli değeri\<parametresi >. Bkz: [şablonu türleri](#Templates).  
   
- Henüz modelinizde tanımlamadığınız bir türün adını da yazabilirsiniz. Adı altında listelenen **belirtilmemiş türler** UML Model Gezgini'nde.  
+  Henüz modelinizde tanımlamadığınız bir türün adını da yazabilirsiniz. Adı altında listelenen **belirtilmemiş türler** UML Model Gezgini'nde.  
   
 > [!NOTE]
 >  Modelinizde o adın sınıfını veya arabirimini daha sonra tanımlarsanız, eski öznitelikler ve işlemler hala Belirtilmemiş Türler'deki öğeye başvuracaktır. Yeni sınıfa başvurmak için onları değiştirmek istiyorsanız, her özniteliği veya işlemi ziyaret etmeli ve aşağı açılan menüden yeni sınıfı seçerek türü sıfırlamalısınız.  
@@ -343,15 +343,15 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  Her rolün bazı özellikleri doğrudan diyagramda görülebilir. Bunlar şu şekildedir:  
   
--   Rol adı. Bu, diyagramda ilişkilendirmenin uygun sonunda görünür. Diyagramda veya içinde ayarlayabilirsiniz **özellikleri** penceresi.  
+- Rol adı. Bu, diyagramda ilişkilendirmenin uygun sonunda görünür. Diyagramda veya içinde ayarlayabilirsiniz **özellikleri** penceresi.  
   
--   **Çokluk**, bunun varsayılan **1**. Bu da diyagramda ilişkilendirmenin uygun sonunun yakınında görünür.  
+- **Çokluk**, bunun varsayılan **1**. Bu da diyagramda ilişkilendirmenin uygun sonunun yakınında görünür.  
   
--   **Toplama**. Bu, bağlayıcının bir ucunda elmas şeklinde görünür. Bunu, toplama rolündeki örneklerin diğerlerinin örneklerini içerdiğini veya onlara sahip olduğunu göstermek için kullanabilirsiniz.  
+- **Toplama**. Bu, bağlayıcının bir ucunda elmas şeklinde görünür. Bunu, toplama rolündeki örneklerin diğerlerinin örneklerini içerdiğini veya onlara sahip olduğunu göstermek için kullanabilirsiniz.  
   
--   **Gezinebilir**. Yalnızca tek bir rol için true ise, gezinebilir yönde bir ok görünür. Bunu, yazılımda bağlantıların ve veritabanı ilişkilerinin gezinebilirliğini göstermek için kullanabilirsiniz.  
+- **Gezinebilir**. Yalnızca tek bir rol için true ise, gezinebilir yönde bir ok görünür. Bunu, yazılımda bağlantıların ve veritabanı ilişkilerinin gezinebilirliğini göstermek için kullanabilirsiniz.  
   
- Bunlar ve diğer özelliklerin tam ayrıntıları için bkz. [UML İlişkilendirmelerin Özellikleri sınıf diyagramları](../modeling/properties-of-associations-on-uml-class-diagrams.md).  
+  Bunlar ve diğer özelliklerin tam ayrıntıları için bkz. [UML İlişkilendirmelerin Özellikleri sınıf diyagramları](../modeling/properties-of-associations-on-uml-class-diagrams.md).  
   
 ### <a name="navigability"></a>Gezinebilirlik  
  Bir ilişkilendirme çizdiğinizde, ilişkilendirmenin bir ucunda, ilişkilendirmenin o yönde gezilebilir olduğunu gösteren bir ok olur. Bu, sınıf diyagramınız yazılım sınıflarını ve ilişkilendirmeler işaretçileri veya başvuruları temsil ediyorsa yararlıdır. Ancak varlıkları ve ilişkileri ya da iş kavramlarını göstermek için bir sınıf diyagramı kullandığınızda, gezinebilirliği göstermek pek uygun olmayacaktır. Bu durumda, oklar olmadan ilişkilendirmeler çizmeyi tercih edebilirsiniz. Bunu ayarlayarak yapabilirsiniz **gezilebilir** özelliği True olarak ilişkilendirmenin her iki ucunda. Bunu kolaylaştırmak için kod örneğini indirebilirsiniz [etki alanı UML modelleme](http://code.msdn.microsoft.com/UML-Domain-Modeling-6df6f7f4).  
@@ -368,13 +368,13 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 ##  <a name="Inheritance"></a> Devralma  
  Kullanım **devralma** aşağıdaki ilişkileri oluşturmak için aracı:  
   
--   A *Genelleştirme* uzmanlaşmış bir türü ve genel bir tür arasındaki ilişki  
+- A *Genelleştirme* uzmanlaşmış bir türü ve genel bir tür arasındaki ilişki  
   
-     \- veya -  
+   \- veya -  
   
--   A *gerçekleştirme* bir sınıf ve uyguladığı arabirimin arasındaki ilişki.  
+- A *gerçekleştirme* bir sınıf ve uyguladığı arabirimin arasındaki ilişki.  
   
- Devralma ilişkilerinde döngüler oluşturamazsınız.  
+  Devralma ilişkilerinde döngüler oluşturamazsınız.  
   
 ### <a name="generalization"></a>Genelleştirme  
  Genelleştirme, özelleştirilmiş veya türetilmiş türün öznitelikleri, işlemleri ve genel veya taban türün ilişkilendirmelerini devralması anlamına gelir.  
@@ -385,17 +385,17 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 ##### <a name="to-override-an-operations-definition-in-a-specializing-type"></a>Özelleştirilmiş türden bir işlemin tanımını geçersiz kılmak için  
   
-1.  Genelleştirme ilişkisine tıklayın.  
+1. Genelleştirme ilişkisine tıklayın.  
   
-     Vurgulu olarak görünür ve yanında bir Eylem etiketi görünür.  
+    Vurgulu olarak görünür ve yanında bir Eylem etiketi görünür.  
   
-2.  Eylem etiketine ve ardından **işlemleri geçersiz kıl**.  
+2. Eylem etiketine ve ardından **işlemleri geçersiz kıl**.  
   
-     **İşlemleri geçersiz kıl** iletişim kutusu görüntülenir.  
+    **İşlemleri geçersiz kıl** iletişim kutusu görüntülenir.  
   
-3.  Özelleştirilmiş türde görünür ve ardından istediğiniz işlemleri seçin **Tamam**.  
+3. Özelleştirilmiş türde görünür ve ardından istediğiniz işlemleri seçin **Tamam**.  
   
- Şimdi seçtiğiniz işlemler özelleştirilmiş türde görünür.  
+   Şimdi seçtiğiniz işlemler özelleştirilmiş türde görünür.  
   
 ### <a name="realization"></a>Gerçekleştirme  
  Gerçekleştirme, bir sınıfın arabirim tarafından belirtilen öznitelikler ve işlemleri uygulaması anlamına gelir. Arabirim bağlayıcının ok ucundadır.  
@@ -417,23 +417,23 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 #### <a name="to-create-a-template-type"></a>Bir şablon türü oluşturmak için  
   
-1.  Bir sınıf veya arabirim oluşturun. Bu, sizin şablon türünüz olacaktır. Örneğin, buna göre ad `Dictionary`.  
+1. Bir sınıf veya arabirim oluşturun. Bu, sizin şablon türünüz olacaktır. Örneğin, buna göre ad `Dictionary`.  
   
-2.  Yeni türün kısayol menüsünü açın ve ardından **özellikleri**.  
+2. Yeni türün kısayol menüsünü açın ve ardından **özellikleri**.  
   
-3.  İçinde **özellikleri** penceresinde tıklayın **[...]**  içinde **şablon parametreleri** alan.  
+3. İçinde **özellikleri** penceresinde tıklayın **[...]**  içinde **şablon parametreleri** alan.  
   
-     **Şablon parametre Koleksiyonu Düzenleyicisi** iletişim kutusu görüntülenir.  
+    **Şablon parametre Koleksiyonu Düzenleyicisi** iletişim kutusu görüntülenir.  
   
-4.  Seçin **ekleme**.  
+4. Seçin **ekleme**.  
   
-5.  Örneğin, name özelliği şablon türünüz için parametre adına ayarlayın `Key`.  
+5. Örneğin, name özelliği şablon türünüz için parametre adına ayarlayın `Key`.  
   
-6.  Ayarlama **parametre türü**. Varsayılan değer **sınıfı**.  
+6. Ayarlama **parametre türü**. Varsayılan değer **sınıfı**.  
   
-7.  Belirli bir taban sınıfın yalnızca türetilmiş sınıflarını kabul etmek için parametre istiyorsanız ayarlayın **kısıtlanmış değer** istediğiniz temel sınıf.  
+7. Belirli bir taban sınıfın yalnızca türetilmiş sınıflarını kabul etmek için parametre istiyorsanız ayarlayın **kısıtlanmış değer** istediğiniz temel sınıf.  
   
-8.  Ardından, ihtiyacınız kadar parametre ekleyin **Tamam**.  
+8. Ardından, ihtiyacınız kadar parametre ekleyin **Tamam**.  
   
 9. Diğer sınıflar için yaptığınız gibi öznitelikleri ve işlemleri şablon türüne ekleyin.  
   
@@ -443,9 +443,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
      Bir parametre türü kullanabileceğiniz **tamsayı** çoklukta bağımlı olarak. Örneğin, en büyük parametre tamsayısı öznitelik olarak çokluğu tanımlamak için kullanılabilir `[0..max]`.  
   
- Şablon türlerini oluşturduğunuz zaman, onları şablon bağlarını tanımlamak için kullanabilirsiniz:  
+   Şablon türlerini oluşturduğunuz zaman, onları şablon bağlarını tanımlamak için kullanabilirsiniz:  
   
- ![Bir sınıf bağlı sözlük şablonundan](../modeling/media/uml-classguidetemplate2.png "UML_ClassGuideTemplate2")  
+   ![Bir sınıf bağlı sözlük şablonundan](../modeling/media/uml-classguidetemplate2.png "UML_ClassGuideTemplate2")  
   
 #### <a name="to-use-a-template-type"></a>Bir şablon türü kullanmak için  
   

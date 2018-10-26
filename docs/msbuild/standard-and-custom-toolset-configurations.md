@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5161f7b4878c6ef381dc26aa4689c4fe7b7cb961
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 2e9f851734a4066e1f6ab7956d124478e0cde76c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152093"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815487"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Standart ve özel araç takımı yapılandırmaları
 Bir MSBuild araç takımı, görevleri ve hedefleri uygulaması projesi oluşturmak için kullanabileceğiniz araçları başvurular içerir. Standart bir araç takımı MSBuild içerir, ancak özel araç takımları de oluşturabilirsiniz. Bir araç takımı belirtme hakkında daha fazla bilgi için bkz: [araç takımı (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
@@ -27,7 +27,7 @@ Bir MSBuild araç takımı, görevleri ve hedefleri uygulaması projesi oluştur
  MSBuild 15.0 aşağıdaki standart araç takımları içerir:  
   
 |ToolsVersion|Araç yolu (olarak MSBuildToolsPath veya MSBuildBinPath derleme özelliğinde belirtilen)|  
-|------------------|--------------------------------------------------------------------------------------------|  
+|------------------| - |  
 |2,0|*\<Windows yükleme yolu > \Microsoft.Net\Framework\v2.0.50727\\*|  
 |3.5|*\<Windows yükleme yolu > \Microsoft.NET\Framework\v3.5\\*|  
 |4.0|*\<Windows yükleme yolu > \Microsoft.NET\Framework\v4.0.30319\\*|  
@@ -39,9 +39,9 @@ Bir MSBuild araç takımı, görevleri ve hedefleri uygulaması projesi oluştur
   
 |Kayıt defteri anahtarı|Anahtar adı|Dize anahtar değeri|  
 |------------------|--------------|----------------------|  
-|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\\**  |**MSBuildToolsPath**|**.NET framework 2.0 yükleme yolu**|  
-|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\\**  |**MSBuildToolsPath**|**.NET framework 3.5 yükleme yolu**|  
-|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\\**  |**MSBuildToolsPath**|**.NET framework 4 yükleme yolu**|  
+|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\\** |**MSBuildToolsPath**|**.NET framework 2.0 yükleme yolu**|  
+|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\\** |**MSBuildToolsPath**|**.NET framework 3.5 yükleme yolu**|  
+|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\\** |**MSBuildToolsPath**|**.NET framework 4 yükleme yolu**|  
   
 ### <a name="sub-toolsets"></a>Alt araç takımları  
  Önceki tablodaki kayıt defteri anahtarı bir alt varsa, MSBuild araç takımı üst yolu geçersiz kılan bir sub-araç yolu belirlemek için kullanır. Aşağıdaki alt anahtarını bir örnek verilmiştir:  
@@ -91,11 +91,11 @@ Bir MSBuild araç takımı, görevleri ve hedefleri uygulaması projesi oluştur
   
  Aşağıdaki özellikler değerine belirli `ToolsVersion` diğer bir deyişle kullanılan projeleri:  
   
--   **$(MSBuildBinPath)** ayarlanır `ToolsPath` kayıt defteri veya yapılandırma dosyasında belirtilen değeri burada `ToolsVersion` tanımlanır. `$(MSBuildToolsPath)` Kayıt defteri veya yapılandırma dosyası ayarı core görevleri ve hedefleri konumunu belirtir. Proje dosyasında bu $(MSBuildBinPath) özelliğine ve $(MSBuildToolsPath) özelliğine eşler.  
+- **$(MSBuildBinPath)** ayarlanır `ToolsPath` kayıt defteri veya yapılandırma dosyasında belirtilen değeri burada `ToolsVersion` tanımlanır. `$(MSBuildToolsPath)` Kayıt defteri veya yapılandırma dosyası ayarı core görevleri ve hedefleri konumunu belirtir. Proje dosyasında bu $(MSBuildBinPath) özelliğine ve $(MSBuildToolsPath) özelliğine eşler.  
   
--   `$(MSBuildToolsPath)` yapılandırma dosyasında belirtilen MSBuildToolsPath özelliği tarafından sağlanan ayrılmış bir özelliktir. (Bu özellik değiştirir `$(MSBuildBinPath)`. Ancak, `$(MSBuildBinPath)` İleri Uyumluluk için gerçekleştirilir.) Özel bir araç takımı ya da tanımlamanız gerekir `$(MSBuildToolsPath)` veya `$(MSBuildBinPath)` ancak ikisi birden değil, her ikisi de aynı değere sahip.  
+- `$(MSBuildToolsPath)` yapılandırma dosyasında belirtilen MSBuildToolsPath özelliği tarafından sağlanan ayrılmış bir özelliktir. (Bu özellik değiştirir `$(MSBuildBinPath)`. Ancak, `$(MSBuildBinPath)` İleri Uyumluluk için gerçekleştirilir.) Özel bir araç takımı ya da tanımlamanız gerekir `$(MSBuildToolsPath)` veya `$(MSBuildBinPath)` ancak ikisi birden değil, her ikisi de aynı değere sahip.  
   
- MSBuildToolsPath özelliği eklemek için kullandığınız aynı sözdizimini kullanarak yapılandırma dosyasına, ToolsVersion özgü özel özellikleri de ekleyebilirsiniz. Bu özel özelliklerin proje dosyasının kullanılabilir hale getirmek için yapılandırma dosyasında belirtilen değerin adıyla aynı adı kullanın. Yapılandırma dosyasında araç takımları ancak sub-takımları tanımlayabilir.  
+  MSBuildToolsPath özelliği eklemek için kullandığınız aynı sözdizimini kullanarak yapılandırma dosyasına, ToolsVersion özgü özel özellikleri de ekleyebilirsiniz. Bu özel özelliklerin proje dosyasının kullanılabilir hale getirmek için yapılandırma dosyasında belirtilen değerin adıyla aynı adı kullanın. Yapılandırma dosyasında araç takımları ancak sub-takımları tanımlayabilir.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Araç Takımı (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

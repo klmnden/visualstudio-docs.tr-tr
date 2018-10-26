@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d7f16422b8282daa1f94011adf1e4a7df5cf387
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4ba62fc129674bd25f97037efdfcdbf7396ea3a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824938"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio Grafik Tanılama’ya Başlarken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Bu bölümde, grafik Tanılama'yı ilk kez kullanmak hazırlarsınız ve ardınd
 ## <a name="requirements"></a>Gereksinimler  
  Visual Studio 2015'te grafik tanılama kullanmak için şu sürümlerden birine sahip olmalıdır:  
   
--   Visual Studio 2015 Enterprise  
+- Visual Studio 2015 Enterprise  
   
--   Visual Studio 2015 Professional  
+- Visual Studio 2015 Professional  
   
--   Visual Studio 2015 Community  
+- Visual Studio 2015 Community  
   
- [!INCLUDE[downloadvs](../includes/downloadvs-md.md)]  
+  [!INCLUDE[downloadvs](../includes/downloadvs-md.md)]  
   
 ### <a name="windows-10-prerequisites"></a>Windows 10 önkoşulları  
  İsteğe bağlı bir Windows özelliği *grafik araçları* grafik tanılama Windows 10 tarafından gerekli yakalama ve kayıttan yürütme altyapısı sağlar.  
@@ -54,17 +54,17 @@ Bu bölümde, grafik Tanılama'yı ilk kez kullanmak hazırlarsınız ve ardınd
   
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Windows 10 için grafik araçları yüklemek için  
   
-1.  Üzerinde **Başlat** menüsünde seçin **ayarları**. **Ayarları** iletişim kutusu görüntülenir.  
+1. Üzerinde **Başlat** menüsünde seçin **ayarları**. **Ayarları** iletişim kutusu görüntülenir.  
   
-2.  İçinde **ayarları** iletişim kutusunda seçin **sistem**, ardından **yüklenen uygulamalar** sistem ayarları listesinden.  
+2. İçinde **ayarları** iletişim kutusunda seçin **sistem**, ardından **yüklenen uygulamalar** sistem ayarları listesinden.  
   
-3.  Sağ tarafındaki **ayarları** iletişim kutusunda seçin **isteğe bağlı özellikleri Yönet** altında **yüklü uygulamalar ve Özellikler**. **İsteğe bağlı özellikleri Yönet** iletişim kutusu görüntülenir.  
+3. Sağ tarafındaki **ayarları** iletişim kutusunda seçin **isteğe bağlı özellikleri Yönet** altında **yüklü uygulamalar ve Özellikler**. **İsteğe bağlı özellikleri Yönet** iletişim kutusu görüntülenir.  
   
-4.  İçinde **isteğe bağlı özellikleri Yönet** iletişim kutusunda seçin **özellik ekleme**. Yükleyebileceğiniz isteğe bağlı özelliklerin bir listesi görüntülenir.  
+4. İçinde **isteğe bağlı özellikleri Yönet** iletişim kutusunda seçin **özellik ekleme**. Yükleyebileceğiniz isteğe bağlı özelliklerin bir listesi görüntülenir.  
   
-5.  Seçin **grafik araçları** özellikler listesinden seçin **yükleme**.  
+5. Seçin **grafik araçları** özellikler listesinden seçin **yükleme**.  
   
- Grafik araçları özelliğinin de, Windows 10 SDK'yı yüklediğinizde otomatik olarak yüklenir.  
+   Grafik araçları özelliğinin de, Windows 10 SDK'yı yüklediğinizde otomatik olarak yüklenir.  
   
 > [!TIP]
 >  Windows 10 'un isteğe bağlı grafik araçları özelliğinin basit yakalama ve kayıttan yürütme işlevlerini sağlar — komut satırı yakalama program gibi **dxcap.exe**— desteği, test etme ve tanılama senaryoları kullanılabilir makineler, geliştirici araçları yüklü değil. Daha fazla bilgi için [komut satırı Yakalama aracı](../debugger/command-line-capture-tool.md) konu.  
@@ -75,11 +75,11 @@ Bu bölümde, grafik Tanılama'yı ilk kez kullanmak hazırlarsınız ve ardınd
 ### <a name="1---create-a-direct3d-app"></a>1 - bir Direct3D uygulaması oluşturma  
  Grafik Tanılama, harika keşfetmek için kendi Direct3D uygulaması zaten var! Aksi durumda mevcut Direct3D örneklerden birini üzerinde kod Galerisi kullanabilirsiniz.  
   
--   Grafik tanılama Direct3D 12 Visual Studio 2015'i kullanarak Windows 10 ile denemek için deneyin [Direct3D 12 UAP örnek](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) Windows 10 için.  
+- Grafik tanılama Direct3D 12 Visual Studio 2015'i kullanarak Windows 10 ile denemek için deneyin [Direct3D 12 UAP örnek](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) Windows 10 için.  
   
--   Grafik tanılama Direct3D 11 Windows 10 veya Windows 8.1 ile denemek için kullanabileceğiniz **DirectX uygulaması (Evrensel Windows)** veya **DirectX uygulaması (Windows 8.1)** proje şablonları. Veya, bir şey daha ilgi çekici, deneyin [DirectX marble maze oyun örneği](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345) Windows 8.1 için.  
+- Grafik tanılama Direct3D 11 Windows 10 veya Windows 8.1 ile denemek için kullanabileceğiniz **DirectX uygulaması (Evrensel Windows)** veya **DirectX uygulaması (Windows 8.1)** proje şablonları. Veya, bir şey daha ilgi çekici, deneyin [DirectX marble maze oyun örneği](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345) Windows 8.1 için.  
   
- Geçmeden önce uygulamanın oluşturduğunuzdan emin olun.  
+  Geçmeden önce uygulamanın oluşturduğunuzdan emin olun.  
   
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2 - bir grafik Tanılama oturumu başlatın  
  Artık ilk grafik tanılama oturumunuzu başlamak hazırsınız. Visual Studio'da ana menüde seçin **hata ayıklama, grafik tanılamayı Başlat**, veya tuşuna basarak **Alt + F5 tuşlarına**. Bu, uygulamanızı grafik tanılama altında başlar ve Visual Studio'da Tanılama oturumu windows görüntüler.  
@@ -96,11 +96,11 @@ Bu bölümde, grafik Tanılama'yı ilk kez kullanmak hazırlarsınız ve ardınd
   
 ##### <a name="to-capture-a-sequence-of-frames"></a>Bir dizi kare yakalamak için  
   
--   Tanılama oturumu penceresinde, Visual Studio'da ayarlayın **Yakalanacak çerçeve** sonra istediğiniz sırayla Yakalanacak çerçeve sayısı için yukarıda açıklanan tek çerçeve yakalama için yöntemlerden birini kullanarak dizisi yakalayın.  
+- Tanılama oturumu penceresinde, Visual Studio'da ayarlayın **Yakalanacak çerçeve** sonra istediğiniz sırayla Yakalanacak çerçeve sayısı için yukarıda açıklanan tek çerçeve yakalama için yöntemlerden birini kullanarak dizisi yakalayın.  
   
-     Tek kare yeniden yakalamak için **Yakalanacak çerçeve** için `1`.  
+   Tek kare yeniden yakalamak için **Yakalanacak çerçeve** için `1`.  
   
- Çerçeve yakalamayı yalnızca işiniz bittiğinde, uygulamadan çıkmak veya tercih **Durdur** tanılama oturum penceresi ve Grafik araç çubuğu düğmesinden.  
+  Çerçeve yakalamayı yalnızca işiniz bittiğinde, uygulamadan çıkmak veya tercih **Durdur** tanılama oturum penceresi ve Grafik araç çubuğu düğmesinden.  
   
 ### <a name="4--examine-captured-frames-in-the-graphics-analyzer"></a>4 – Grafik Çözümleyicisi yakalanan karelerde inceleyin  
  Artık yalnızca yakalanan çerçeveleri incelemek hazırsınız. Çerçeveyi analiz etmeye başlamak için tanılama oturumu penceresinden incelemek istediğiniz çerçeve çerçeve sayısını seçin. Bu çerçeve içinde açılır **grafik Çözümleyicisi**, Direct3D uygulamanızı işleme izlemek için nasıl kullandığını incelemek için grafik tanılama araçları kullanın, veya reddedebileceğiniz kullanın **çerçeve analizi** aracı performansını anlayın.  

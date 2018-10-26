@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c5cfc94bef15e34deaec9d07a4b66021cb4fc39
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5be66c8a762d7d690ec30a7658c59bcff75c3d53
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176312"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877497"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Nasıl yapılır: Dinamik Olarak Derlenmiş ASP.NET Web Uygulamalarını İzlemek ve Profilini Oluşturmak için Web.Config Dosyalarını Değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dinamik olarak 
   
  Kök web.config dosyasının **yapılandırma** öğesi. İzleme ve dinamik olarak derlenmiş bir profil için [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web uygulaması, aşağıdaki öğeleri eklediğinizde veya gerekir:  
   
--   A **yapılandırma/çalışma zamanı/assemblyBinding/dependentAssembly** profil oluşturma denetleyen Microsoft.VisualStudio.Enterprise.ASPNetHelper derleme tanımlayan öğesi. **DependentAssembly** öğesi iki alt öğeleri içerir: **assemblyIdentity** ve **codeBase**.  
+- A **yapılandırma/çalışma zamanı/assemblyBinding/dependentAssembly** profil oluşturma denetleyen Microsoft.VisualStudio.Enterprise.ASPNetHelper derleme tanımlayan öğesi. **DependentAssembly** öğesi iki alt öğeleri içerir: **assemblyIdentity** ve **codeBase**.  
   
--   A **configuration/system.web/compilation** hedef bütünleştirilmiş kod profil oluşturucu işlem sonrası bir derleme adımı tanımlayan öğesi.  
+- A **configuration/system.web/compilation** hedef bütünleştirilmiş kod profil oluşturucu işlem sonrası bir derleme adımı tanımlayan öğesi.  
   
--   İki **ekleme** profil oluşturma Araçlar konumunu tanımlayan öğeleri eklenir **configuration/appSettings** bölümü.  
+- İki **ekleme** profil oluşturma Araçlar konumunu tanımlayan öğeleri eklenir **configuration/appSettings** bölümü.  
   
- Uygulama yapılandırmasını geri yüklemek için kullanabileceğiniz özgün web.config dosyasının bir kopyasını oluşturmanızı öneririz.  
+  Uygulama yapılandırmasını geri yüklemek için kullanabileceğiniz özgün web.config dosyasının bir kopyasını oluşturmanızı öneririz.  
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Yapılandırma/çalışma zamanı/assemblyBinding/dependentAssembly öğesi olarak ASPNetHelper derleme eklemek için  
   

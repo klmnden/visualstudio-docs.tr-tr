@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb4788e872e18d5db9c6d7c4452defc415290188
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: d009351efdd36e0d415d0e2e457f7974608ab665
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566570"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886506"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>İzlenecek yol: Düzenleyici uzantısı ile kısayol tuşu kullanma
 Kısayol tuşları için düzenleyici uzantı yanıt verebilir. Aşağıdaki örneklerde, bir kısayol tuşu kullanarak görünüm kenarlığı metin görünümü ekleme işlemi gösterilmektedir. Bu izlenecek yol, Görünüm penceresi kenarlığı Düzenleyicisi şablonunu temel alıyorsa ve kenarlığı kullanarak eklemek imkan + karakter.  
@@ -28,21 +28,21 @@ Kısayol tuşları için düzenleyici uzantı yanıt verebilir. Aşağıdaki ör
   
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Yönetilen Genişletilebilirlik Çerçevesi (MEF) proje oluşturma  
   
-1.  Bir C# VSIX projesi oluşturun. (İçinde **yeni proje** iletişim kutusunda **Visual C# / genişletilebilirlik**, ardından **VSIX projesi**.) Çözüm adı `KeyBindingTest`.  
+1. Bir C# VSIX projesi oluşturun. (İçinde **yeni proje** iletişim kutusunda **Visual C# / genişletilebilirlik**, ardından **VSIX projesi**.) Çözüm adı `KeyBindingTest`.  
   
-2.  Bir düzenleyici metin kenarlığı öğe şablonu projeye ekleyin ve adlandırın `KeyBindingTest`. Daha fazla bilgi için [bir düzenleyici öğesi şablonuyla uzantı oluşturma](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Bir düzenleyici metin kenarlığı öğe şablonu projeye ekleyin ve adlandırın `KeyBindingTest`. Daha fazla bilgi için [bir düzenleyici öğesi şablonuyla uzantı oluşturma](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Aşağıdaki başvuruları ekleyin ve ayarlama **CopyLocal** için `false`:  
+3. Aşağıdaki başvuruları ekleyin ve ayarlama **CopyLocal** için `false`:  
   
-     Microsoft.VisualStudio.Editor  
+    Microsoft.VisualStudio.Editor  
   
-     Microsoft.VisualStudio.OLE.Interop  
+    Microsoft.VisualStudio.OLE.Interop  
   
-     Microsoft.VisualStudio.Shell.14.0  
+    Microsoft.VisualStudio.Shell.14.0  
   
-     Microsoft.VisualStudio.TextManager.Interop  
+    Microsoft.VisualStudio.TextManager.Interop  
   
- KeyBindingTest sınıf dosyasında PurpleCornerBox için sınıf adını değiştirin. Görüntülenen ampul sol kenar boşluğunda uygun bir değişiklik yapmak için kullanın. Oluşturucu içinde kenarlığı katmandan adını değiştirmek **KeyBindingTest** için **PurpleCornerBox**:  
+   KeyBindingTest sınıf dosyasında PurpleCornerBox için sınıf adını değiştirin. Görüntülenen ampul sol kenar boşluğunda uygun bir değişiklik yapmak için kullanın. Oluşturucu içinde kenarlığı katmandan adını değiştirmek **KeyBindingTest** için **PurpleCornerBox**:  
   
 ```csharp  
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");  
@@ -204,73 +204,73 @@ Visual Studio 2017 sürüm 15.6 Düzenleyici uzantısı komutları işlemek içi
 
 Komut işleyici uygulamasıdır <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601>, hangi işleme komut kenarlığı oluşturarak.  
   
-1.  Bir sınıf dosyası ekleyin ve adlandırın `KeyBindingCommandHandler`.  
+1. Bir sınıf dosyası ekleyin ve adlandırın `KeyBindingCommandHandler`.  
   
-2.  Aşağıdaki using deyimlerini.  
+2. Aşağıdaki using deyimlerini.  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Commanding;
-    using Microsoft.VisualStudio.Text.Editor;
-    using Microsoft.VisualStudio.Text.Editor.Commanding.Commands;
-    using Microsoft.VisualStudio.Utilities;
-    using System.ComponentModel.Composition;   
-    ```  
+   ```csharp  
+   using Microsoft.VisualStudio.Commanding;
+   using Microsoft.VisualStudio.Text.Editor;
+   using Microsoft.VisualStudio.Text.Editor.Commanding.Commands;
+   using Microsoft.VisualStudio.Utilities;
+   using System.ComponentModel.Composition;   
+   ```  
   
-3.  KeyBindingCommandHandler adlı sınıfını alması gerektiğini `ICommandHandler<TypeCharCommandArgs>`ve olarak dışarı aktarın <xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
+3. KeyBindingCommandHandler adlı sınıfını alması gerektiğini `ICommandHandler<TypeCharCommandArgs>`ve olarak dışarı aktarın <xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
   
-    ```csharp  
-    [Export(typeof(ICommandHandler))]
-    [ContentType("text")]
-    [Name("KeyBindingTest")]
-    internal class KeyBindingCommandHandler : ICommandHandler<TypeCharCommandArgs>  
-    ```  
+   ```csharp  
+   [Export(typeof(ICommandHandler))]
+   [ContentType("text")]
+   [Name("KeyBindingTest")]
+   internal class KeyBindingCommandHandler : ICommandHandler<TypeCharCommandArgs>  
+   ```  
   
-4.  Komut işleyici görünen adını ekleyin:  
+4. Komut işleyici görünen adını ekleyin:  
   
-    ```csharp  
-    public string DisplayName => "KeyBindingTest";
-    ```  
+   ```csharp  
+   public string DisplayName => "KeyBindingTest";
+   ```  
     
-5.  Uygulama `GetCommandState()` yöntemini aşağıdaki şekilde. Bu komut işleyici çekirdek Düzenleyici TYPECHAR komutu gerçekleştirdiğinden, komut çekirdek düzenleyici için etkinleştirme devredebilirsiniz.
+5. Uygulama `GetCommandState()` yöntemini aşağıdaki şekilde. Bu komut işleyici çekirdek Düzenleyici TYPECHAR komutu gerçekleştirdiğinden, komut çekirdek düzenleyici için etkinleştirme devredebilirsiniz.
   
-    ```csharp  
-    public CommandState GetCommandState(TypeCharCommandArgs args)
-    {
-        return CommandState.Unspecified;
-    } 
-    ```  
+   ```csharp  
+   public CommandState GetCommandState(TypeCharCommandArgs args)
+   {
+       return CommandState.Unspecified;
+   } 
+   ```  
   
-6.  Uygulama `ExecuteCommand()` bir artı işareti, BT'nin mor kutusu görünümüne ekler, böylece yöntemi (**+**) karakter türü. 
+6. Uygulama `ExecuteCommand()` bir artı işareti, BT'nin mor kutusu görünümüne ekler, böylece yöntemi (**+**) karakter türü. 
   
-    ```csharp  
-    public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
-    {
-        if (args.TypedChar == '+')
-        {
-            bool alreadyAdorned = args.TextView.Properties.TryGetProperty(
-                "KeyBindingTextAdorned", out bool adorned) && adorned;
-            if (!alreadyAdorned)
-            {
-                new PurpleCornerBox((IWpfTextView)args.TextView);
-                args.TextView.Properties.AddProperty("KeyBindingTextAdorned", true);
-            }
-        }
+   ```csharp  
+   public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
+   {
+       if (args.TypedChar == '+')
+       {
+           bool alreadyAdorned = args.TextView.Properties.TryGetProperty(
+               "KeyBindingTextAdorned", out bool adorned) && adorned;
+           if (!alreadyAdorned)
+           {
+               new PurpleCornerBox((IWpfTextView)args.TextView);
+               args.TextView.Properties.AddProperty("KeyBindingTextAdorned", true);
+           }
+       }
 
-        return false;
-    }
-    ```  
- 7. Kenarlığı katman tanımından kopyalama *KeyBindingTestTextViewCreationListener.cs* dosyasını *KeyBindingCommandHandler.cs* ve delete  *KeyBindingTestTextViewCreationListener.cs* dosyası:
+       return false;
+   }
+   ```  
+   7. Kenarlığı katman tanımından kopyalama *KeyBindingTestTextViewCreationListener.cs* dosyasını *KeyBindingCommandHandler.cs* ve delete  *KeyBindingTestTextViewCreationListener.cs* dosyası:
  
-    ```csharp  
-    /// <summary>
-    /// Defines the adornment layer for the adornment. This layer is ordered
-    /// after the selection layer in the Z-order.
-    /// </summary>
-    [Export(typeof(AdornmentLayerDefinition))]
-    [Name("PurpleCornerBox")]
-    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]
-    private AdornmentLayerDefinition editorAdornmentLayer;    
-    ```  
+   ```csharp  
+   /// <summary>
+   /// Defines the adornment layer for the adornment. This layer is ordered
+   /// after the selection layer in the Z-order.
+   /// </summary>
+   [Export(typeof(AdornmentLayerDefinition))]
+   [Name("PurpleCornerBox")]
+   [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]
+   private AdornmentLayerDefinition editorAdornmentLayer;    
+   ```  
 
 ## <a name="make-the-adornment-appear-on-every-line"></a>Her satırda kenarlığı olun  
 

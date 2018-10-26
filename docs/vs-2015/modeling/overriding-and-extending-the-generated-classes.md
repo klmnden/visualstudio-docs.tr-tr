@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b74929d741b166d30762d7a84bf001a0ea7ba429
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5aef90403babfd7a30812cac59b8c0c5acff79f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268177"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933436"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Üretilen Sınıfları Geçersiz Kılma ve Genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ DSL tanımınızı güçlü bir etki alanına özgü dil tabanlı araçlar küme
   
  Örneğin, örnekte Library.dsl, `CirculationBook` etki alanı sınıfında `Generates``Double Derived` özelliğini `true`. Bu etki alanı sınıfı için oluşturulan kod, iki sınıf içerir:  
   
--   `CirculationBookBase`, bir soyut olduğu ve tüm yöntemleri ve özellikleri içerir.  
+- `CirculationBookBase`, bir soyut olduğu ve tüm yöntemleri ve özellikleri içerir.  
   
--   `CirculationBook`, türetilen `CirculationBookBase`. Kendi oluşturucular dışında boş.  
+- `CirculationBook`, türetilen `CirculationBookBase`. Kendi oluşturucular dışında boş.  
   
- Herhangi bir yöntemi geçersiz kılmak için kısmi türetilmiş bir sınıf tanımlaması gibi oluşturduğunuz `CirculationBook`. Hem oluşturulan ve modelleme framework devralınan yöntemleri geçersiz kılabilirsiniz.  
+  Herhangi bir yöntemi geçersiz kılmak için kısmi türetilmiş bir sınıf tanımlaması gibi oluşturduğunuz `CirculationBook`. Hem oluşturulan ve modelleme framework devralınan yöntemleri geçersiz kılabilirsiniz.  
   
- Öğe, model öğelerini, ilişkileri, şekiller, Diyagram ve bağlayıcılar dahil olmak üzere tüm türleri bu yöntemi kullanabilirsiniz. Ayrıca, oluşturulan diğer sınıfların yöntemleri geçersiz kılabilirsiniz. Bazı, ToolboxHelper gibi her zaman çift türetilmiş sınıfları oluşturulur.  
+  Öğe, model öğelerini, ilişkileri, şekiller, Diyagram ve bağlayıcılar dahil olmak üzere tüm türleri bu yöntemi kullanabilirsiniz. Ayrıca, oluşturulan diğer sınıfların yöntemleri geçersiz kılabilirsiniz. Bazı, ToolboxHelper gibi her zaman çift türetilmiş sınıfları oluşturulur.  
   
 ### <a name="custom-constructors"></a>Özel oluşturucular  
  Bir oluşturucu geçersiz kılamaz. Bile çift türetilmiş sınıflarda, türetilmiş bir sınıf içindeki Oluşturucu olması gerekir.  

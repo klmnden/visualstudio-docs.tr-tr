@@ -9,12 +9,12 @@ description: Seçili Visual Studio abonelikleriyle dahil DataCamp eğitim abonel
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 81dea4c5da7b6fe6b6c6cfe000ae953f98e6e83f
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: cd0b92d8515e488d74cc124c888bb0e8ca9537e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073824"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863918"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>DataCamp eğitim avantajı olarak Visual Studio abonelikleri
 
@@ -27,15 +27,15 @@ Visual Studio aboneliğinizi DataCamp Avantajı'nızı süresi bağlıdır.
 1. Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. "Profesyonel geliştirme" kategorisinde DataCamp avantajı kutucuğu bulun ve tıklayarak **etkinleştirme**.
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp avantajı kutucuğu](_img\vs-datacamp\vs-datacamp-tile-2.png)
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp avantajı kutucuğu](_img/vs-datacamp/vs-datacamp-tile-2.png)
 
 3. DataCamp sayfasında, yeni bir hesap oluşturabilirsiniz.  Bir e-posta adresinizi ve parolanızı girin veya mevcut Facebook, LinkedIn ve Google hesaplarını kullanarak oturum seçebilirsiniz.  Oturum açma bilgilerinizi sağladıktan sonra tıklayın **Başlarken**.
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp yeni hesap oluştur](_img\vs-datacamp\vs-datacamp-create-account.png)
-
-    > [!NOTE]
-    > Hesabınızı oluşturmaya başladığınızda, aşağıdaki hata iletisini alabilirsiniz: "hata!  Promosyon kodunuzu geçersiz veya süresi dolmuş."  Promosyon kodunuzu oluşturulduğunda, birkaç dakika sonra süresi dolacak çünkü bu gerçekleşir.  Bu iletiyi alırsanız, yalnızca dönmek [avantajları](https://my.visualstudio.com/benefits) sayfasında ve tıklayın **etkinleştirme** DataCamp avantajı kutucuğuna bağlantı.
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp yeni hesap oluştur](_img/vs-datacamp/vs-datacamp-create-account.png)
+   > 
+   > [!NOTE]
+   > Hesabınızı oluşturmaya başladığınızda, aşağıdaki hata iletisini alabilirsiniz: "hata!  Promosyon kodunuzu geçersiz veya süresi dolmuş."  Promosyon kodunuzu oluşturulduğunda, birkaç dakika sonra süresi dolacak çünkü bu gerçekleşir.  Bu iletiyi alırsanız, yalnızca dönmek [avantajları](https://my.visualstudio.com/benefits) sayfasında ve tıklayın **etkinleştirme** DataCamp avantajı kutucuğuna bağlantı.
 
 4. Hesabınız oluşturulduktan sonra öğrenme yolu seçebilirsiniz.  Seçenekler şunlardır:
     - Veri bilimi için R öğrenme
@@ -43,28 +43,30 @@ Visual Studio aboneliğinizi DataCamp Avantajı'nızı süresi bağlıdır.
     - Veri bilimi becerilerinizi geliştirin
 
 
-    Başlamak için seçilen yolun tıklamanız yeterlidir.
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp yolu seçin](_img\vs-datacamp\vs-datacamp-choose-path.png)
+~~~
+Just click on your chosen path to get started.
+> [!div class="mx-imgBorder"]
+> ![DataCamp Choose Path](_img\vs-datacamp\vs-datacamp-choose-path.png)
+~~~
 
 5. Yolunuza seçtikten sonra bir hedef seçerek daha fazla öğrenme yolunuzu iyileştirebilirsiniz.  Örneğin, "Geliştirme your veri bilimi beceri kümesi" yolu seçerseniz, aşağıdaki seçenekleri görürsünüz. Bir seçenek seçin veya tıklatın **eminim değil.  Tüm kariyer yollarını göster** daha geniş bir yol oluşturmak için.
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp veri bilimi beceri kümesi](_img\vs-datacamp\vs-datacamp-datascience.png)
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp veri bilimi beceri kümesi](_img/vs-datacamp/vs-datacamp-datascience.png)
 
 
 6. Yol ve Seçenekler, seçtiğiniz bağlı olarak, kariyer parçaları seçimi görürsünüz.  Tıklayarak **kaydetme** tercih ettiğiniz İzle düğmesi.
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp kariyer İzle](_img\vs-datacamp\vs-datacamp-all-tracks.png)
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp kariyer İzle](_img/vs-datacamp/vs-datacamp-all-tracks.png)
 
 7. İlk kursun bu izleme, izleme kaydedildikten sonra açılır.  Kurs alıştırmalar tamamlanıyor ve gezinti dahil olmak üzere, kurs ile etkileşim kurmayı açıklayan bir öğretici görürsünüz.
 
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp kullanmaya başlama](_img\vs-datacamp\vs-datacamp-getting-started.png)
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp kullanmaya başlama](_img/vs-datacamp/vs-datacamp-getting-started.png)
 
 Herhangi bir noktada durdurmak ve eğitim sonraki oturumunuzda sürdürün.  Yalnızca ziyaret [ http://www.datacamp.com ](http://www.datacamp.com)ve oturum açın.  Burada duraklatıldı eğitim hakkınız devam edebilir ve panonuz göreceksiniz. Tıklamanız yeterlidir **devam izleme**.
 
 > [!div class="mx-imgBorder"]   
-> ![DataCamp devam eğitim](_img\vs-datacamp\vs-datacamp-continue-training.png)
+> ![DataCamp devam eğitim](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Uygunluk
 

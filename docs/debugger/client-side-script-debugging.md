@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa5a21a60ab95b6dbc9aeb27a0c7d6e27ab32773
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a42ee63b863393c3cc2bad789d14404def8d1f5d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283125"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894995"
 ---
 # <a name="client-side-script-debugging"></a>İstemci Tarafı Betikte Hata Ayıklama
 Visual Studio hata ayıklayıcı, bulma ve ASP.NET sayfaları istemci tarafı betiklerde hataları düzeltmek için kapsamlı bir hata ayıklama ortamı sağlar.  
@@ -41,17 +41,17 @@ Sunucu tarafı ve istemci tarafı komut dosyası belgeleri listesini görebilirs
   
  Aşağıdaki şeylerden biri meydana geldiğinde hata ayıklayıcı komut dosyasına otomatik olarak ekler:  
   
--   Komut dosyasında bir kesme noktasına gidersiniz.  
+- Komut dosyasında bir kesme noktasına gidersiniz.  
   
--   Bir VBScript `Stop` deyimi veya JScript `debugger` betik kodunuzu deyiminde.  
+- Bir VBScript `Stop` deyimi veya JScript `debugger` betik kodunuzu deyiminde.  
   
--   Tarayıcı veya sunucu bir söz dizimi karşılaşır veya betiğinizde çalıştırma hatası. Bu durumda, bir iletişim kutusu görünür ve hata ayıklamayı başlatmak için seçeneğiniz vardır.  
+- Tarayıcı veya sunucu bir söz dizimi karşılaşır veya betiğinizde çalıştırma hatası. Bu durumda, bir iletişim kutusu görünür ve hata ayıklamayı başlatmak için seçeneğiniz vardır.  
   
- El ile betiğe ekleme, betik işlem şekilde durduruluncaya kadar çalışmaya devam eder. Seçerek durdurabilirsiniz **sonu** üzerinde **hata ayıklama** menüsü.  
+  El ile betiğe ekleme, betik işlem şekilde durduruluncaya kadar çalışmaya devam eder. Seçerek durdurabilirsiniz **sonu** üzerinde **hata ayıklama** menüsü.  
   
- Hata ayıklayıcı otomatik olarak ekler, satırında komut dosyası yürütme durdurulur nerede kesme noktası `Stop` deyimi veya `debugger` ifadesinin veya hatanın oluştuğu veya Internet Explorer'da hata ayıklamayı başlatmayı seçtiğiniz noktada.  
+  Hata ayıklayıcı otomatik olarak ekler, satırında komut dosyası yürütme durdurulur nerede kesme noktası `Stop` deyimi veya `debugger` ifadesinin veya hatanın oluştuğu veya Internet Explorer'da hata ayıklamayı başlatmayı seçtiğiniz noktada.  
   
- Bu noktada, hata ayıklamayı başlatmak için normal hata ayıklayıcı tesislerini kullanabilirsiniz. Örneğin, kullanabileceğiniz **adım** satır satır kodunuzu yürütmeye devam etmek için komutları. Kullanabileceğiniz **çağrı yığını** komut akışını görüntülemek ve denetlemek için penceresi. Değişken pencerelerini kullanabilirsiniz veya **hemen** penceresi değişkenleri ve özellikleri görüntülemek veya değiştirmek için.  
+  Bu noktada, hata ayıklamayı başlatmak için normal hata ayıklayıcı tesislerini kullanabilirsiniz. Örneğin, kullanabileceğiniz **adım** satır satır kodunuzu yürütmeye devam etmek için komutları. Kullanabileceğiniz **çağrı yığını** komut akışını görüntülemek ve denetlemek için penceresi. Değişken pencerelerini kullanabilirsiniz veya **hemen** penceresi değişkenleri ve özellikleri görüntülemek veya değiştirmek için.  
   
 ## <a name="enhanced-error-messages-for-script-debugging"></a>Betik hata ayıklama için geliştirilmiş hata iletileri  
  Visual Studio genel betik hata ayıklama sorunları için Gelişmiş hata iletileri sağlar. Internet Explorer'ı el ile eklemediğiniz sürece bu iletiler görüntülenmez. Internet Explorer otomatik olarak açıldığında bir hata koşuluyla karşılaşırsanız, hata iletilerini görebilmeniz için el ile eklemeyi deneyin.  

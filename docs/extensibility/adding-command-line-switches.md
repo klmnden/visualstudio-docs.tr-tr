@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb6b739d91bfe5931d1af853ec01e145a0cb2c85
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9ebfc937ee5cf6025761bb9da5d5f6589caf77d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153304"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901053"
 ---
 # <a name="add-command-line-switches"></a>Komut satırı anahtarları ekleme
 Uygulamak için VSPackage'ı komut satırı anahtarları eklediğiniz zaman *devenv.exe* yürütülür. Kullanım <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> adını anahtar ve özelliklerini bildirmek için. Bu örnekte, MySwitch anahtar VSPackage adlı bir alt sınıfı için eklenen **AddCommandSwitchPackage** bağımsız değişken olmadan ile otomatik olarak yüklenecek VSPackage'ı.  
@@ -36,7 +36,7 @@ Uygulamak için VSPackage'ı komut satırı anahtarları eklediğiniz zaman *dev
 |-|-|-|-|
 | Parametre | Açıklama|
 | Arguments | Anahtar için bağımsız değişken sayısı. Olabilir "*", veya bağımsız değişkenlerinin listesi. |
-| DemandLoad |  Bu 1, aksi durumda 0 olarak ayarlayın, ayarlanırsa VSPackage'ı otomatik olarak yükleyin. |  
+| DemandLoad | Bu 1, aksi durumda 0 olarak ayarlayın, ayarlanırsa VSPackage'ı otomatik olarak yükleyin. |  
 | HelpString | Görüntülemek için Yardım dizesi veya kaynak kimliği dizesi **devenv /?**. |
 | Ad | Anahtar. |
 | PackageGuid | Paket GUID'si. |  
@@ -54,11 +54,11 @@ Uygulamak için VSPackage'ı komut satırı anahtarları eklediğiniz zaman *dev
 ## <a name="retrieve-command-line-switches"></a>Komut satırı anahtarları alma  
  Paketiniz yüklendiğinde, aşağıdaki adımları tamamlayarak komut satırı anahtarları alabilirsiniz.  
   
-1.  İçinde VSPackage'nın <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> uygulaması, çağrı `QueryService` üzerinde <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> almak için <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> arabirimi.  
+1. İçinde VSPackage'nın <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> uygulaması, çağrı `QueryService` üzerinde <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> almak için <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> arabirimi.  
   
-2.  Çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> kullanıcı girilen komut satırı anahtarları alınamadı.  
+2. Çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> kullanıcı girilen komut satırı anahtarları alınamadı.  
   
- Aşağıdaki kod MySwitch komut satırı anahtarı olup kullanıcı tarafından girilen kullanıma nasıl gösterir:  
+   Aşağıdaki kod MySwitch komut satırı anahtarı olup kullanıcı tarafından girilen kullanıma nasıl gösterir:  
   
 ```csharp  
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));  

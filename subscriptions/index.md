@@ -10,12 +10,12 @@ Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: d55e21a7324143b5bbb60ed714b9c2dc070828ce
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 083522aae47abdfdec37d5add756457f18590953
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279251"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856840"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio Abonelikleri
 
@@ -174,7 +174,7 @@ Aboneliğinize daha kullanışlı hale getirmek için ekleme ve abonelik avantaj
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Azure DevOps Hizmetleri</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-vsts">Azure DevOps Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-office-dev">Office 365 geliştiricisi aboneliği</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-pbi">Windows Geliştirici Hesabı</a></li>
                             <li>PowerBI Pro</li>

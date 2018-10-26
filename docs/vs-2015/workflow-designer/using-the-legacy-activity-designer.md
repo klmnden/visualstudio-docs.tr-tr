@@ -19,12 +19,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 4c71fa8d901653babd8c3558da7eff8ff16058c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a6c8aafe9eac26080bfbf57d06c7d512d1e1e62d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296835"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843437"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Eski Etkinlik Tasarımcısını Kullanma
 Bu konuda, etkinlik Tasarımcısı içinde eski kullanmayı açıklar [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Eski Tasarımcı hedeflenirken kullanın [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -34,17 +34,17 @@ Bu konuda, etkinlik Tasarımcısı içinde eski kullanmayı açıklar [!INCLUDE[
 ## <a name="creating-a-custom-activity"></a>Özel etkinlik oluşturma  
  Etkinlik Tasarımcısı'nı kullanarak özel bir etkinlik oluşturmak için aşağıdaki adımları izleyin:  
   
-1.  Üzerinde **proje** menüsünü tıklatın **etkinlik Ekle**.  
+1. Üzerinde **proje** menüsünü tıklatın **etkinlik Ekle**.  
   
-2.  Seçin **etkinlik** veya **etkinlik (kod ayırma ile)** şablonu.  
+2. Seçin **etkinlik** veya **etkinlik (kod ayırma ile)** şablonu.  
   
-    1.  Kullanım **etkinlik** etkinlik tanımı ve kullanıcı kodu aynı kod dosyasında olan etkinlik oluşturmak için şablon.  
+   1.  Kullanım **etkinlik** etkinlik tanımı ve kullanıcı kodu aynı kod dosyasında olan etkinlik oluşturmak için şablon.  
   
-    2.  Kullanım **etkinlik (kod ayırma ile)** bir etkinlik iş akışı biçimlendirmesi ve kullanıcı kodu ayrı bir kod dosyasında olarak ifade edilen etkinlik tanımı oluşturmak için şablon.  
+   2.  Kullanım **etkinlik (kod ayırma ile)** bir etkinlik iş akışı biçimlendirmesi ve kullanıcı kodu ayrı bir kod dosyasında olarak ifade edilen etkinlik tanımı oluşturmak için şablon.  
   
-3.  Bir etkinlik adı yazın veya varsayılan adı bırakın ve ardından **Ekle**.  
+3. Bir etkinlik adı yazın veya varsayılan adı bırakın ve ardından **Ekle**.  
   
- Yeni bir proje türünde oluşturarak özel etkinlikler kümesi oluşturabilirsiniz **iş akışı etkinlik Kitaplığı**. Bu proje türü hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir iş akışı etkinlik kitaplığı oluşturma (eski)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
+   Yeni bir proje türünde oluşturarak özel etkinlikler kümesi oluşturabilirsiniz **iş akışı etkinlik Kitaplığı**. Bu proje türü hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir iş akışı etkinlik kitaplığı oluşturma (eski)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
   
 ## <a name="configuring-an-activity"></a>Bir etkinlik yapılandırma  
  Etkinlik Tasarımcısı etkin olsa da, aşağıdaki tabloda listelenen özellikleri yapılandırmak için özellik tarayıcısı kullanabilirsiniz.  

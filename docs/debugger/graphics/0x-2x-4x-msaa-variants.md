@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1540e66893aeb99c4932c4667fa384b837e15a7
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: cb5e20697e5dc5364fbcbac7a1d3052790a123a2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433321"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872661"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0 x / 2 x / 4 x MSAA çeşitleri
 Geçersiz kılmalar birden çok örnek düzgünleştirme (MSAA) ayarları tüm işleme hedefleri ve takas zincirleri.  
@@ -33,23 +33,23 @@ Geçersiz kılmalar birden çok örnek düzgünleştirme (MSAA) ayarları tüm i
 ## <a name="remarks"></a>Açıklamalar  
  Örnek sayısı ve örnek kalitesi bağımsız değişkenler için çağrılar üzerinde bu çeşitleri geçersiz kılma `ID3DDevice::CreateTexture2D` işleme hedefleri oluşturun. Özellikle, bu parametreleri geçersiz olduğunda:  
   
--   `D3D11_TEXTURE2D_DESC` Geçirilen nesne `pDesc` olan bir işleme hedefi; açıklar:  
+- `D3D11_TEXTURE2D_DESC` Geçirilen nesne `pDesc` olan bir işleme hedefi; açıklar:  
   
-    -   BindFlags üyesi D3D11_BIND_TARGET bayrağı veya D3D11_BIND_DEPTH_STENCIL bayrağı ayarlanmış sahiptir.  
+  -   BindFlags üyesi D3D11_BIND_TARGET bayrağı veya D3D11_BIND_DEPTH_STENCIL bayrağı ayarlanmış sahiptir.  
   
-    -   Kullanım üye D3D11_USAGE_DEFAULT için ayarlanır.  
+  -   Kullanım üye D3D11_USAGE_DEFAULT için ayarlanır.  
   
-    -   CPUAccessFlags üye 0 olarak ayarlanır.  
+  -   CPUAccessFlags üye 0 olarak ayarlanır.  
   
-    -   MipLevels üye 1 olarak ayarlayın.  
+  -   MipLevels üye 1 olarak ayarlayın.  
   
--   İstenen işleme tarafından belirlenen şekilde hedef biçimi (D3D11_TEXTURE2D_DESC::Format üyesi) için cihaz istenen örnek sayısı (0, 2 veya 4) ve örnek kalitesi (0) destekler. `ID3D11Device::CheckMultisampleQualityLevels`.  
+- İstenen işleme tarafından belirlenen şekilde hedef biçimi (D3D11_TEXTURE2D_DESC::Format üyesi) için cihaz istenen örnek sayısı (0, 2 veya 4) ve örnek kalitesi (0) destekler. `ID3D11Device::CheckMultisampleQualityLevels`.  
   
- Daha sonra D3D11_TEXTURE2D_DESC::BindFlags üye ayarlanmış D3D_BIND_SHADER_RESOUCE veya D3D11_BIND_UNORDERED_ACCESS bayrağı varsa, doku iki sürümü oluşturulur; işleme hedefi olarak kullanılmak üzere işaretli Bu bayraklar ilk vardır ve diğer MSAA olmayan doku ilk sürümü için Çözümle arabellek olarak görev yapacak dokunulmadan Bu bayraklar. Sırasız erişim için veya bir gölgelendirici kaynak olarak bir MSAA doku kullanarak geçerli olmayacaktır, çünkü bu gereklidir; Örneğin, bir MSAA olmayan doku beklediğiniz gibi olduğundan hatalı sonuçlar üzerinde çalışan bir gölgelendirici karşılaşırsınız. Ardından değişken MSAA olmayan ikincil doku oluşturduysa MSAA işleme hedef cihaz bağlamında unset olduğunda içeriği MSAA olmayan doku çözümlenir. Benzer şekilde, MSAA işleme her hedef bir gölgelendirici kaynak olarak bağlı veya bir sırasız erişim Görünümü'nde kullanılır, çözümlenen MSAA olmayan doku yerine bağlıdır.  
+  Daha sonra D3D11_TEXTURE2D_DESC::BindFlags üye ayarlanmış D3D_BIND_SHADER_RESOUCE veya D3D11_BIND_UNORDERED_ACCESS bayrağı varsa, doku iki sürümü oluşturulur; işleme hedefi olarak kullanılmak üzere işaretli Bu bayraklar ilk vardır ve diğer MSAA olmayan doku ilk sürümü için Çözümle arabellek olarak görev yapacak dokunulmadan Bu bayraklar. Sırasız erişim için veya bir gölgelendirici kaynak olarak bir MSAA doku kullanarak geçerli olmayacaktır, çünkü bu gereklidir; Örneğin, bir MSAA olmayan doku beklediğiniz gibi olduğundan hatalı sonuçlar üzerinde çalışan bir gölgelendirici karşılaşırsınız. Ardından değişken MSAA olmayan ikincil doku oluşturduysa MSAA işleme hedef cihaz bağlamında unset olduğunda içeriği MSAA olmayan doku çözümlenir. Benzer şekilde, MSAA işleme her hedef bir gölgelendirici kaynak olarak bağlı veya bir sırasız erişim Görünümü'nde kullanılır, çözümlenen MSAA olmayan doku yerine bağlıdır.  
   
- Ayrıca geçersiz kılma kullanılarak oluşturulan tüm takas zincirleri MSAA ayarlarını bu çeşitleri `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition`, ve `ID3D11CreateDeviceAndSwapChain`.  
+  Ayrıca geçersiz kılma kullanılarak oluşturulan tüm takas zincirleri MSAA ayarlarını bu çeşitleri `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition`, ve `ID3D11CreateDeviceAndSwapChain`.  
   
- Bu değişikliklerin net etkisiyle tüm işleme bir MSAA işleme hedefi gerçekleştirilir ancak uygulamanızın bunlardan birini kullanıp kullanmadığını işleme hedefler ya da takas zinciri arabellekler gölgelendirici kaynağı görünümü veya sırasız erişim görünümü olarak ve ardından veri örneklenen olan çözümlenen gelen , işleme hedefinin MSAA olmayan kopyalama.  
+  Bu değişikliklerin net etkisiyle tüm işleme bir MSAA işleme hedefi gerçekleştirilir ancak uygulamanızın bunlardan birini kullanıp kullanmadığını işleme hedefler ya da takas zinciri arabellekler gölgelendirici kaynağı görünümü veya sırasız erişim görünümü olarak ve ardından veri örneklenen olan çözümlenen gelen , işleme hedefinin MSAA olmayan kopyalama.  
   
 ## <a name="restrictions-and-limitations"></a>Kısıtlamalar ve sınırlamalar  
  Direct3D11 içinde MSAA dokular MSAA olmayan dokular daha büyük/küçük harf kısıtlanır. Örneğin, çağıramazsınız `ID3D11DeviceContext::UpdateSubresource` MSAA doku ve arama `ID3D11DeviceContext::CopySubresourceRegion` kaynak kaynak ve hedef kaynak örnek kalitesini ve örnek sayısı, bu değişken bir MSAA ayarları geçersiz kılan kurduğunuzda gerçekleşebilir eşleşmezse başarısız Kaynak ancak diğer.  

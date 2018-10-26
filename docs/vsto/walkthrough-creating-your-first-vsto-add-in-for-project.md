@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bc935c50a00efea7d3124eb7d1fb3246248f0b91
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a1c6e96815c69ad6a05b3c8bc55e22f13c212e24
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676888"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884868"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>İzlenecek yol: ilk VSTO eklentinizi projesi oluşturma
   Bu kılavuzda, Microsoft Office Project için VSTO eklentisi oluşturma işlemini göstermektedir. Bu tür bir çözüm içinde oluşturduğunuz özellikler uygulamanın kendisinin projeleri açık olan bağımsız olarak kullanılabilir. Daha fazla bilgi için [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -32,15 +32,15 @@ ms.locfileid: "35676888"
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
--   Bir proje VSTO eklentisi projesi oluşturma.  
+- Bir proje VSTO eklentisi projesi oluşturma.  
   
--   Yeni bir proje için bir görev eklemek için proje nesne modeli kullanan kod yazma.  
+- Yeni bir proje için bir görev eklemek için proje nesne modeli kullanan kod yazma.  
   
--   Geliştirme ve test etmek için proje çalıştırma.  
+- Geliştirme ve test etmek için proje çalıştırma.  
   
--   Tamamlanmış projeyi VSTO eklentisi artık otomatik olarak geliştirme bilgisayarınızda çalıştırılır, böylece temizleme.  
+- Tamamlanmış projeyi VSTO eklentisi artık otomatik olarak geliştirme bilgisayarınızda çalıştırılır, böylece temizleme.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
@@ -78,14 +78,14 @@ ms.locfileid: "35676888"
   
 ### <a name="to-add-a-task-to-a-new-project"></a>Yeni bir proje için bir görev eklemek için  
   
-1.  ThisAddIn kod dosyasında, aşağıdaki kodu ekleyin `ThisAddIn` sınıfı. Bu kod için bir olay işleyicisi tanımlar `NewProject` olayı `Microsoft.Office.Interop.MSProject.Application` sınıfı.  
+1. ThisAddIn kod dosyasında, aşağıdaki kodu ekleyin `ThisAddIn` sınıfı. Bu kod için bir olay işleyicisi tanımlar `NewProject` olayı `Microsoft.Office.Interop.MSProject.Application` sınıfı.  
   
-     Kullanıcı yeni bir proje oluşturduğu zaman, bu olay işleyicisi, projeye bir görev ekler.  
+    Kullanıcı yeni bir proje oluşturduğu zaman, bu olay işleyicisi, projeye bir görev ekler.  
   
-     [!code-vb[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#1)]  
   
- Proje değiştirmek için aşağıdaki nesneler bu kod örneği kullanır:  
+   Proje değiştirmek için aşağıdaki nesneler bu kod örneği kullanır:  
   
 -   `Application` Alanını `ThisAddIn` sınıfı. `Application` Alan döndürür bir `Microsoft.Office.Interop.MSProject.Application` proje geçerli örneği temsil eden nesne.  
   

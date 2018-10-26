@@ -24,12 +24,12 @@ caps.latest.revision: 86
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 52d83911da0f8c1a54618a389db3cff6bbcbab1e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fafbccdae03c604e4d9b150b5745a75792833681
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245831"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834584"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>UML modellerini ve diyagramları düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,22 +77,22 @@ Oluşturun ve birkaç farklı türde diyagram tarafından sağlanan görünümle
   
 ##  <a name="Creating"></a> UML modelleme diyagramları oluşturma  
   
-1.  Üzerinde **mimarisi** Visual Studio'da menüsünü **yeni UML veya katman diyagramı**.  
+1. Üzerinde **mimarisi** Visual Studio'da menüsünü **yeni UML veya katman diyagramı**.  
   
-2.  Seçin ve diyagram adlandırın.  
+2. Seçin ve diyagram adlandırın.  
   
-3.  İçinde **modelleme projesine Ekle**, varolan modelleme projesini seçin ya da seçin **yeni modelleme projesi oluşturma**.  
+3. İçinde **modelleme projesine Ekle**, varolan modelleme projesini seçin ya da seçin **yeni modelleme projesi oluşturma**.  
   
-    > [!NOTE]
-    >  Modelleme diyagramında bir modelleme projesinin içinde olmalıdır.  
+   > [!NOTE]
+   >  Modelleme diyagramında bir modelleme projesinin içinde olmalıdır.  
   
- Diyagram, Çözüm Gezgini'nde bir modelleme projesine de ekleyebilirsiniz. Modelleme projesine sağ tıklayın, fareyle **Ekle**ve ardından **yeni öğe**.  
+   Diyagram, Çözüm Gezgini'nde bir modelleme projesine de ekleyebilirsiniz. Modelleme projesine sağ tıklayın, fareyle **Ekle**ve ardından **yeni öğe**.  
   
 #### <a name="to-create-an-empty-uml-modeling-project"></a>Boş bir UML modelleme projesi oluşturmak için  
   
--   Üzerinde **dosya** menüsünde **yeni**, tıklayın **proje**ve **yeni proje** iletişim kutusunda, çift **modelleme Projeleri**.  
+- Üzerinde **dosya** menüsünde **yeni**, tıklayın **proje**ve **yeni proje** iletişim kutusunda, çift **modelleme Projeleri**.  
   
- Modelleme projeleri yönetme hakkında daha fazla bilgi için bkz. [oluşturma UML modelleme projeleri ve diyagramları](../modeling/create-uml-modeling-projects-and-diagrams.md).  
+  Modelleme projeleri yönetme hakkında daha fazla bilgi için bkz. [oluşturma UML modelleme projeleri ve diyagramları](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
 ##  <a name="Drawing"></a> UML modelleme diyagramları çizme  
  Modelleme Diyagramında ilişkileriyle bağlantılı model öğelerinin bir koleksiyonunu görüntüler. Her öğenin bir şekil olarak görüntülenir ve her ilişki iki şekil arasında bir bağlayıcı olarak görüntülenir.  
@@ -104,21 +104,21 @@ Oluşturun ve birkaç farklı türde diyagram tarafından sağlanan görünümle
   
 #### <a name="to-create-elements-and-relationships-in-a-uml-modeling-diagram"></a>UML modelleme diyagramında öğeleri ve ilişkileri oluşturmak için  
   
-1.  Bir model öğesini oluşturmak için araç kutusu öğe aracına tıklayın ve görünmesini istediğiniz yerde Diyagramı'ye tıklayın. Öğe oluşturduktan sonra boyutu ve şekli tutamaçlarını sürükleyerek ayarlayın.  
+1. Bir model öğesini oluşturmak için araç kutusu öğe aracına tıklayın ve görünmesini istediğiniz yerde Diyagramı'ye tıklayın. Öğe oluşturduktan sonra boyutu ve şekli tutamaçlarını sürükleyerek ayarlayın.  
   
-     Bazı durumlarda, yeni bir öğe başka bir öğenin içine yerleştirebilirsiniz. Örneğin, bir UML sınıf diyagramı üzerinde bir sınıf içinde paket yerleştirebilirsiniz.  
+    Bazı durumlarda, yeni bir öğe başka bir öğenin içine yerleştirebilirsiniz. Örneğin, bir UML sınıf diyagramı üzerinde bir sınıf içinde paket yerleştirebilirsiniz.  
   
-    > [!NOTE]
-    >  Araç kutusunu göremiyorsanız, tıklayın **araç kutusu** üzerinde **görünümü** menüsü.  
+   > [!NOTE]
+   >  Araç kutusunu göremiyorsanız, tıklayın **araç kutusu** üzerinde **görünümü** menüsü.  
   
-2.  Bir ilişki oluşturmak için bir ilişki Aracı'nı tıklatın, ilişkiyi başlatmak istediğiniz öğeye tıklayın ve ardından son istediğiniz öğeye tıklayın.  
+2. Bir ilişki oluşturmak için bir ilişki Aracı'nı tıklatın, ilişkiyi başlatmak istediğiniz öğeye tıklayın ve ardından son istediğiniz öğeye tıklayın.  
   
-     Farklı türlerde ilişkiler başlatabilir veya farklı türde öğeler üzerinde bitmelidir. Örneğin, bir UML sınıf diyagramı üzerinde bir ilişkilendirme ilişkisi başlayamaz veya açıklama öğesi üzerinde bitemez.  
+    Farklı türlerde ilişkiler başlatabilir veya farklı türde öğeler üzerinde bitmelidir. Örneğin, bir UML sınıf diyagramı üzerinde bir ilişkilendirme ilişkisi başlayamaz veya açıklama öğesi üzerinde bitemez.  
   
-    > [!NOTE]
-    >  Aynı aracı birkaç kez kullanmak için araca çift tıklayın. İşiniz bittiğinde tıklayın **işaretçi** aracı.  
+   > [!NOTE]
+   >  Aynı aracı birkaç kez kullanmak için araca çift tıklayın. İşiniz bittiğinde tıklayın **işaretçi** aracı.  
   
- Bazı tür diyagramlar Basit şekiller çizebilirsiniz. Bu şekilleri modelinin bir parçası değildir ancak dikkat çekmek için diyagramın parçalarını veya farklı alanlara bölmek için bunları kullanabilirsiniz.  
+   Bazı tür diyagramlar Basit şekiller çizebilirsiniz. Bu şekilleri modelinin bir parçası değildir ancak dikkat çekmek için diyagramın parçalarını veya farklı alanlara bölmek için bunları kullanabilirsiniz.  
   
 ##  <a name="Editing"></a> Şekilleri ve bağlayıcıları düzenleme  
  Yeniden boyutlandırmak veya bir şekil renk veya bir bağlayıcıyı yeniden yönlendir, temel alınan model üzerinde hiçbir etkisi yoktur. Ancak, bir şekil diyagramda veya UML Model Gezgini'nde yeniden adlandırdığınızda, karşılık gelen öğe o öğeyi sunan başka bir diyagramları ve UML Model Gezgini'nde yeniden adlandırılır.  
@@ -139,17 +139,17 @@ Oluşturun ve birkaç farklı türde diyagram tarafından sağlanan görünümle
   
 #### <a name="to-move-one-end-of-a-connector-to-another-shape"></a>Başka bir şekle bir bağlayıcı ucunu taşımak için  
   
-1.  Aşağıdakilerden birini yapın:  
+1. Aşağıdakilerden birini yapın:  
   
-    -   Tuşuna **CTRL** ve sona taşıyın.  
+   - Tuşuna **CTRL** ve sona taşıyın.  
   
      \- veya -  
   
-    -   Bağlayıcı sağ tıklayın ve ardından **Reconnect**.  
+   - Bağlayıcı sağ tıklayın ve ardından **Reconnect**.  
   
-2.  Taşımak istediğiniz bağlayıcıyı sonuna tıklayın.  
+2. Taşımak istediğiniz bağlayıcıyı sonuna tıklayın.  
   
-3.  Bağlayıcısına taşımak istediğiniz şekle tıklayın.  
+3. Bağlayıcısına taşımak istediğiniz şekle tıklayın.  
   
 #### <a name="to-change-color-or-other-properties-of-an-element-relationship-or-diagram"></a>Rengini veya öğenin, ilişki, diğer özelliklerini değiştirin veya diyagram  
   
@@ -267,11 +267,11 @@ Oluşturun ve birkaç farklı türde diyagram tarafından sağlanan görünümle
   
 #### <a name="to-copy-an-entire-diagram"></a>Tüm bir diyagram kopyalamak için  
   
-1.  Yeni bir diyagram oluşturun.  
+1. Yeni bir diyagram oluşturun.  
   
-2.  Tüm öğeleri mevcut bir diyagramı, kopyalamak ve bunları yeni bir tane yapıştırın.  
+2. Tüm öğeleri mevcut bir diyagramı, kopyalamak ve bunları yeni bir tane yapıştırın.  
   
- Çözüm Gezgini'nde yapıştırarak diyagram çoğaltamazsınız.  
+   Çözüm Gezgini'nde yapıştırarak diyagram çoğaltamazsınız.  
   
 ##  <a name="Deleting"></a> Bir Model öğesi veya görünümlerini silme  
  Bazı tür öğeler, özellikle sınıflandırıcılar, diyagramdan modelden silmeden kaldırılabilir. Sınıflandırıcılar, kullanım örneği diyagramları ve sınıf diyagramları, Bileşen diyagramları görüntülenir başlıca öğeleridir. Bunlar, birden çok diyagramda görünebilir. Bu tür öğeler için iki ayrı komutlar vardır: **diyagramdan Kaldır** ve **modelden silmek**.  
@@ -283,15 +283,15 @@ Oluşturun ve birkaç farklı türde diyagram tarafından sağlanan görünümle
   
 #### <a name="to-remove-a-classifiers-view-from-a-diagram"></a>Sınıflandırıcının görünümünü diyagramdan kaldırmak için  
   
--   Diyagramdaki bir öğeye sağ tıklayın ve ardından **diyagramdan Kaldır**.  
+- Diyagramdaki bir öğeye sağ tıklayın ve ardından **diyagramdan Kaldır**.  
   
- \- veya -  
+  \- veya -  
   
--   Diyagram üzerinde öğenin tıklayın ve sonra basın **Sil** anahtarı.  
+- Diyagram üzerinde öğenin tıklayın ve sonra basın **Sil** anahtarı.  
   
-    -   Bu öğenin görünümünü kaybolur. Ancak öğe modelde kalır ve yine de içinde bulabilirsiniz **UML Model Gezgini**. Ayrıca aynı öğenin diğer görünümlere kalır.  
+  -   Bu öğenin görünümünü kaybolur. Ancak öğe modelde kalır ve yine de içinde bulabilirsiniz **UML Model Gezgini**. Ayrıca aynı öğenin diğer görünümlere kalır.  
   
-    -   Bu şekilde sonlanan her bir bağlayıcının diyagramı, ancak kalan modelinde temsil ettiği ilişkisi kaldırılır. İlişkide gördüğünüz **UML Model Gezgini** altında **ilişkileri**, bağladığı her öğe altında.  
+  -   Bu şekilde sonlanan her bir bağlayıcının diyagramı, ancak kalan modelinde temsil ettiği ilişkisi kaldırılır. İlişkide gördüğünüz **UML Model Gezgini** altında **ilişkileri**, bağladığı her öğe altında.  
   
 #### <a name="to-delete-an-element-from-the-model"></a>Modelden bir öğeyi silmek için  
   

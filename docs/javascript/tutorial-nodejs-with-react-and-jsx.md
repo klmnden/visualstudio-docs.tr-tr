@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1d02922d4d28f41ced952c9ef8c990d55f78a226
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 3cc92ba28246358f819e6086d19141b2a68072f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548211"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823742"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Öğretici: Visual Studio'da Node.js ve React uygulaması oluşturma
 
@@ -354,27 +354,27 @@ Her zaman yaptığınız değişiklikleri *app.tsx*, Web komutu çalıştırman�
 
 1. Tüm Chrome pencerelerini kapatın.
 
-1. Açık **çalıştırma** Windows komutunu **Başlat** düğmesine (sağ tıklatın ve seçin **çalıştırma**) ve aşağıdaki komutu girin:
+2. Açık **çalıştırma** Windows komutunu **Başlat** düğmesine (sağ tıklatın ve seçin **çalıştırma**) ve aşağıdaki komutu girin:
 
     `chrome.exe --remote-debugging-port=9222`
 
     Bu, Chrome etkin hata ayıklama ile başlatır.
 
-1. Bir kesme noktası ayarlayın ve Visual Studio'ya *uygulama bundle.js* kod `render()` işlev aşağıdaki çizimde gösterildiği gibi:
+3. Bir kesme noktası ayarlayın ve Visual Studio'ya *uygulama bundle.js* kod `render()` işlev aşağıdaki çizimde gösterildiği gibi:
 
     ![Bir kesme noktası ayarlayın](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     Bulunacak `render()` işlevi *uygulama bundle.js*, kullanın **Ctrl**+**F** (**Düzenle**  >   **Bul ve Değiştir** > **Hızlı Bul**).
 
-1. Visual Studio'da hata ayıklama hedefi olarak seçilen Chrome ile basın **Ctrl**+**F5** (**hata ayıklama** > **hata ayıklama olmadan Başlat** ) tarayıcı içinde uygulamayı çalıştırmak için.
+4. Visual Studio'da hata ayıklama hedefi olarak seçilen Chrome ile basın **Ctrl**+**F5** (**hata ayıklama** > **hata ayıklama olmadan Başlat** ) tarayıcı içinde uygulamayı çalıştırmak için.
 
     Uygulama yeni bir tarayıcı sekmesinde açılır.
 
-1. Seçin **hata ayıklama** > **işleme**.
+5. Seçin **hata ayıklama** > **işleme**.
 
-1. İçinde **iliştirme** iletişim kutusunda **Webkit kod** içinde **ekleme** alanına **chrome** filtrelemek için filtre kutusundaki arama sonucu.
+6. İçinde **iliştirme** iletişim kutusunda **Webkit kod** içinde **ekleme** alanına **chrome** filtrelemek için filtre kutusundaki arama sonucu.
 
-1. Doğru konak Chrome işlemle (Bu örnekte 1337) bağlantı noktası seçin seçip **iliştirme**.
+7. Doğru konak Chrome işlemle (Bu örnekte 1337) bağlantı noktası seçin seçip **iliştirme**.
 
     ![İşleme](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
@@ -383,20 +383,20 @@ Her zaman yaptığınız değişiklikleri *app.tsx*, Web komutu çalıştırman�
     > [!NOTE]
     > Hata ayıklayıcıyı iliştirmek değil "işleme yüklenemiyor. iletiyi görürseniz Bir işlem geçerli durumu geçerli değil. ", Görev Yöneticisi'ni kullanarak hata ayıklama modu Chrome başlatmadan önce Chrome tüm örneklerini kapatın. Chrome uzantıları çalıştıran ve tam hata ayıklama modu engelliyor.
 
-1. Kesme noktası koduyla zaten yürütüldü olduğundan, kesme noktasına isabet için tarayıcı sayfanızı yenileyin.
+8. Kesme noktası koduyla zaten yürütüldü olduğundan, kesme noktasına isabet için tarayıcı sayfanızı yenileyin.
 
     Hata ayıklayıcıda duraklatıldığı sırada değişkenlerin gelin ve hata ayıklayıcı penceresini kullanarak, uygulama durumunu inceleyebilirsiniz. Hata ayıklayıcı kod içerisinde ilerlemeye tarafından ilerletebilirsiniz (**F5**, **F10**, ve **F11**).
 
     Herhangi bir kesme noktası isabet *uygulama bundle.js* veya eşlenmiş konumunda *app.tsx*ortamı ve tarayıcı durumunuzu bağlı olarak. Her iki durumda da, kod içinde gezinebilmek ve değişkenleri inceleyin.
 
-    * Kod içinde kesme gerekiyorsa *app.tsx* ve bunu, kullanmanız doğrulanamıyor **iliştirme** hata ayıklayıcıyı iliştirmek için önceki adımlarda açıklandığı gibi. Dinamik olarak üretilen açılacağını *app.tsx* açarak dosya Çözüm Gezgini'nden **betik belgelerini** > **app.tsx**, bir kesme noktası ayarlayın ve Yenile tarayıcınızda sayfa (kesme noktaları, gibi veren kod satırında kesme noktası ayarlamak `return` deyimi veya bir `var` bildirimi).
+   * Kod içinde kesme gerekiyorsa *app.tsx* ve bunu, kullanmanız doğrulanamıyor **iliştirme** hata ayıklayıcıyı iliştirmek için önceki adımlarda açıklandığı gibi. Dinamik olarak üretilen açılacağını *app.tsx* açarak dosya Çözüm Gezgini'nden **betik belgelerini** > **app.tsx**, bir kesme noktası ayarlayın ve Yenile tarayıcınızda sayfa (kesme noktaları, gibi veren kod satırında kesme noktası ayarlamak `return` deyimi veya bir `var` bildirimi).
 
-        Alternatif olarak, kod içinde kesme gerekiyorsa *app.tsx* ve bunu, kullanmayı deneyin `debugger;` deyiminde *app.tsx*, veya Chrome geliştirici araçları kesme noktaları ayarlayın.
+       Alternatif olarak, kod içinde kesme gerekiyorsa *app.tsx* ve bunu, kullanmayı deneyin `debugger;` deyiminde *app.tsx*, veya Chrome geliştirici araçları kesme noktaları ayarlayın.
 
-    * Kod içinde kesme gerekiyorsa *uygulama bundle.js* ve bunu, kaynak eşleme dosyası Kaldır *uygulama bundle.js.map*.
+   * Kod içinde kesme gerekiyorsa *uygulama bundle.js* ve bunu, kaynak eşleme dosyası Kaldır *uygulama bundle.js.map*.
 
-    > [!TIP]
-    > Aşağıdaki adımları izleyerek ilk kez eklediğiniz işleme sonra hızlı bir şekilde Visual Studio 2017'de aynı işlemi seçerek iliştirebilirsiniz **hata ayıklama** > **İliştir**.
+     > [!TIP]
+     > Aşağıdaki adımları izleyerek ilk kez eklediğiniz işleme sonra hızlı bir şekilde Visual Studio 2017'de aynı işlemi seçerek iliştirebilirsiniz **hata ayıklama** > **İliştir**.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

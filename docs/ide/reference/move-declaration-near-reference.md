@@ -11,12 +11,12 @@ dev_langs:
 - csharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc6ee94cbebb1cb35dd524017f22bd8ab3812468
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: e8587b7bd94f85f40371a211af82661030e3f288
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124963"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908193"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>Başvuru yeniden düzenleme yakın bildirimi taşıma
 
@@ -37,9 +37,9 @@ Bu yeniden düzenleme için geçerlidir:
 1. Ardından, aşağıdakilerden birini yapın:
 
    - **Klavye**
-     - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menü ve select **bildirimi başvurunun yanına taşıma** gelen önizleme penceresi açılır.
+      - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menü ve select **bildirimi başvurunun yanına taşıma** gelen önizleme penceresi açılır.
    - **Fare**
-     - Kod sağ tıklayın, **hızlı Eylemler ve yeniden düzenlemeler** menü ve select **bildirimi başvurunun yanına taşıma** gelen önizleme penceresi açılır.
+      - Kod sağ tıklayın, **hızlı Eylemler ve yeniden düzenlemeler** menü ve select **bildirimi başvurunun yanına taşıma** gelen önizleme penceresi açılır.
 
 1. Değişiklik ile tamamladığınızda basın **Enter** veya düzeltmeyi menüsünde tıklatın ve değişiklikler uygulanır.
 

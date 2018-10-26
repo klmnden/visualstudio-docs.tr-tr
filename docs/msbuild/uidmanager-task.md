@@ -21,23 +21,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22274c37abe31f4212a921633f9b53729ce70bd8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 59bcb413ab391f74f9d2713fe87b4384e30cc0c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179001"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844568"
 ---
 # <a name="uidmanager-task"></a>UidManager görevi
 <xref:Microsoft.Build.Tasks.Windows.UidManager> Görev denetler, güncelleştirir veya tüm yerelleştirmek için benzersiz tanımlayıcıları (Uıd'leri) kaldırır [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] kaynakta bulunan öğeleri [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] dosyaları.  
   
 ## <a name="task-parameters"></a>Görev parametreleri  
   
-|Parametre|Açıklama|  
-|---------------|-----------------|  
-|`IntermediateDirectory`|İsteğe bağlı **dize** parametresi.<br /><br /> Kaynağını yedeklemeye kullanılacak dizini belirtir [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] tarafından belirtilen dosyalarını **MarkupFiles** parametresi.|  
-|`MarkupFiles`|Gerekli **Itaskıtem []** parametresi.<br /><br /> Kaynak belirtir [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] için denetleme, güncelleştirme veya kaldırma UID dahil edilecek dosyalar.|  
-|`Task`|Gerekli **dize** parametresi.<br /><br /> Gerçekleştirmek istediğiniz UID yönetim görevini belirtir. Geçerli seçenekler **denetleyin**, **güncelleştirme**, veya **Kaldır**.|  
+| Parametre | Açıklama |
+|-------------------------| - |
+| `IntermediateDirectory` | İsteğe bağlı **dize** parametresi.<br /><br /> Kaynağını yedeklemeye kullanılacak dizini belirtir [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] tarafından belirtilen dosyalarını **MarkupFiles** parametresi. |
+| `MarkupFiles` | Gerekli **Itaskıtem []** parametresi.<br /><br /> Kaynak belirtir [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] için denetleme, güncelleştirme veya kaldırma UID dahil edilecek dosyalar. |
+| `Task` | Gerekli **dize** parametresi.<br /><br /> Gerçekleştirmek istediğiniz UID yönetim görevini belirtir. Geçerli seçenekler **denetleyin**, **güncelleştirme**, veya **Kaldır**. |
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnekte <xref:Microsoft.Build.Tasks.Windows.UidManager> denetlemek için görev belirtilen kaynak [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] dosyaları içeren [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] uygun Uıd'leri olan öğeler.  

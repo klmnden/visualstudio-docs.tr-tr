@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e79546c9961af6bf87eb9e7f3b90ebb96150b978
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 235f5d7a686f431555f34e232f6cc1af8195cc41
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382242"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890198"
 ---
 # <a name="load-test-scenario-properties"></a>Yük testi senaryosu özellikleri
 
@@ -25,13 +25,13 @@ Yük testi senaryo özellik ayarları Visual Studio Yük testi gereksinimlerini 
 ## <a name="general"></a>Genel
 
 |Özellik|Tanım|
-|--------------|----------------|
+|-|----------------|
 |**Ad**|Senaryonun adı.|
 
 ## <a name="mix"></a>Karışımı
 
 |Özellik|Tanım|
-|--------------|----------------|
+|-|----------------|
 |**Tarayıcı karışımı**|Yük testi için web tarayıcısı karışımını belirtir. Farklı bir web tarayıcı türleri ve yük dağılımını belirtebilirsiniz.<br /><br />Üç noktayı seçin **(...)**  açmak için düğmeyi **Tarayıcı Karışımını Düzenle** iletişim ve kullanım **Ekle** ve **Kaldır** yük testinde web tarayıcısı türlerini seçmek için.<br /><br />Daha fazla bilgi için [web tarayıcısı türlerini belirtmek](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).|
 |**Ağ karışımı**|Yük testi için ağ karışımını belirtir. Dahil etmek için hangi ağ türlerini ve bunların yük dağıtımı belirtebilirsiniz.<br /><br />Üç noktayı seçin **(...)**  açmak için düğmeyi **Ağ Karışımını Düzenle** iletişim kutusu ve kullanım **Ekle** ve **Kaldır** yük testinde ağ türlerini seçin.<br /><br />Daha fazla bilgi için [sanal ağ türlerini belirtme](../test/specify-virtual-network-types-in-a-load-test-scenario.md).|
 |**Test karışımı**|Web performans ve birim karışımı yük testi için test belirtir. Hangi testlerin ekleneceğini ve bunların yük dağıtımı belirtebilirsiniz.<br /><br />Üç noktayı seçin **(...)**  açmak için düğmeyi **Test Karışımını Düzenle** iletişim kutusu ve kullanım **Ekle** ve **Kaldır** yük testinde testleri seçmek için.<br /><br />Daha fazla bilgi için [bir yük testi senaryosu için test karışımını Düzenle](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).|
@@ -40,7 +40,7 @@ Yük testi senaryo özellik ayarları Visual Studio Yük testi gereksinimlerini 
 ## <a name="options"></a>Seçenekler
 
 |Özellik|Tanım|
-|--------------|----------------|
+|-|----------------|
 |**Kullanılacak Aracılar**|Senaryonuz yükü çalıştırıyorsanız kullanmak istediğiniz aracıları uzaktan test belirtir. Örneğin, performans eğilimlerini analiz ederken tutarlılık sağlamak için belirli bir aracı kümesi belirtmek isteyebilirsiniz. Ayrıca, hangi betiklerin arasında çalıştırdığı ve aracıyı bulunduğu benzeşim yani aracıları coğrafi olarak dağıtılabilir.<br /><br />Aracıları ayrılmalıdır virgüllerle, örneğin "**agent1'e, birim testi Agent2, Aracı3**". Özellik boş bırakılırsa, senaryo kullanılabilir tüm aracılar kullanması gerektiğini belirtir.<br /><br />Daha fazla bilgi için [nasıl yapılır: belirtin test aracıları kullanmayı](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md).|
 |**Adım Gecikmesine dağıtımı Uygula**|Test karışımı modeli Adımlama kullanıcının tipik dağıtım gecikmelerine isteyip istemediğinizi belirtmek için kullanılan Boole değeri. Bu özellik yalnızca geçerlidir **Test karışımı türü** özelliği **kullanıcı adımı tabanlı**.<br /><br />Daha fazla bilgi için [nasıl yapılır: Adım Gecikmesine dağıtımı Uygula](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 |**IP geçişi**|IP geçişi kullanılıp kullanılmadığını belirtmek için kullanılan Boole değeri.<br /><br />IP geçişi, bir dizi farklı IP adreslerini kullanarak bir sunucuya istek göndermek bir test aracısı sağlar. Bu, farklı istemci bilgisayarlardan gelen çağrıların benzetimini yapar. Yük dengeli web grubu karşı test ettiğinizde, IP geçişi önemlidir. Çoğu yük dengeleyicileri, istemcinin IP adresini kullanarak bir istemci ve belirli bir web sunucusu arasında benzeşim kurar. Tüm istekler tek bir istemciden geliyor gibi görünüyorsa, yük dengeleyicisi yükü dengelemez. Web grubunda iyi bir yük dengesi edinmek için istekleri bir dizi IP adreslerinden geldiğini önemlidir.<br /><br />IP geçişi, yalnızca test aracısı ile kullanılabilir.|
@@ -51,7 +51,7 @@ Yük testi senaryo özellik ayarları Visual Studio Yük testi gereksinimlerini 
 ## <a name="timing"></a>Zamanlama
 
 |Özellik|Tanım|
-|--------------|----------------|
+|-|----------------|
 |**Gecikme başlangıcı zamanı**|Kaç saat, dakika ve saniye cinsinden gecikme yükleme sonrası senaryoyu başlatmadan başladığında test belirten bir zaman değeri. Varsa **Isınma sırasında devre dışı bırak** özelliği **True**, beklenecek zaman miktarı Isınma döneminin tamamlanmasından sonra uygulanır.<br /><br />Daha fazla bilgi için [Senaryo Başlatma Gecikmelerini Yapılandırma](../test/configure-scenario-start-delays.md).|
 |**Isınma sırasında devre dışı bırak**|Senaryo çalışıp çalışmaması gerektiğini sırasında değil belirtmek için kullanılan bir Boole değeri **Isınma Süresi** yük testi içinde belirtilen özellik zaman değeri ayarı çalıştırmasını.<br /><br />Yük testi çalıştırma ayarı özellikleri hakkında daha fazla bilgi için bkz. [yük testi çalıştırma ayarları özellikleri](../test/load-test-run-settings-properties.md).<br /><br />Daha fazla bilgi için [Senaryo Başlatma Gecikmelerini Yapılandırma](../test/configure-scenario-start-delays.md).|
 |**Test Yinelemeleri Arasındaki Düşünme**|Test yinelemeleri arasındaki saniyeler içinde bekleme süresini belirtmek için kullanılan sayısal değer.<br /><br />Daha fazla bilgi için [Web sitesi insan etkileşimi gecikmelerini benzetmek için düşünme düzenleme kez](../test/edit-think-times-in-load-test-scenarios.md).|

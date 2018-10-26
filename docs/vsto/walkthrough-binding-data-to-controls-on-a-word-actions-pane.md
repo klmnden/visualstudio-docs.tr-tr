@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4202b14fce4c914737989e4a408cd74040c4d0a
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 17daf186920be45a70200cd896a390ab74c4c6d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781938"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873896"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>İzlenecek yol: Word eylemler bölmesindeki denetimlere veri bağlama
   Bu yönerge, Word eylemler bölmesindeki denetimlere veri bağlama gösterir. Bir SQL Server veritabanındaki tablolar arasında bir ana/ayrıntı ilişkisi denetimleri gösterir.  
@@ -78,28 +78,28 @@ ms.locfileid: "38781938"
   
 ### <a name="to-add-a-data-source-to-the-project"></a>Bir veri kaynağı projeye eklemek için  
   
-1.  Varsa **veri kaynakları** penceresi görünür değilse, bunu, menü çubuğundan seçme görüntüleyebilir **görünümü** > **diğer Windows**  >   **Veri kaynakları**.  
+1. Varsa **veri kaynakları** penceresi görünür değilse, bunu, menü çubuğundan seçme görüntüleyebilir **görünümü** > **diğer Windows**  >   **Veri kaynakları**.  
   
-    > [!NOTE]  
-    >  Varsa **veri kaynaklarını Göster** kullanılabilir değil, Word belgesi tıklayın ve sonra tekrar denetleyin.  
+   > [!NOTE]  
+   >  Varsa **veri kaynaklarını Göster** kullanılabilir değil, Word belgesi tıklayın ve sonra tekrar denetleyin.  
   
-2.  Tıklayın **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı Yapılandırma Sihirbazı**.  
+2. Tıklayın **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı Yapılandırma Sihirbazı**.  
   
-3.  Seçin **veritabanı** ve ardından **sonraki**.  
+3. Seçin **veritabanı** ve ardından **sonraki**.  
   
-4.  Northwind örnek SQL Server veritabanıyla kurulan veri bağlantısı seçin veya yeni bir bağlantı kullanarak eklemek **yeni bağlantı** düğmesi.  
+4. Northwind örnek SQL Server veritabanıyla kurulan veri bağlantısı seçin veya yeni bir bağlantı kullanarak eklemek **yeni bağlantı** düğmesi.  
   
-5.  **İleri**'ye tıklayın.  
+5. **İleri**'ye tıklayın.  
   
-6.  Seçili olduğunda görüntüleyeceği bağlantı kaydetme seçeneğini ve ardından temizlemek **sonraki**.  
+6. Seçili olduğunda görüntüleyeceği bağlantı kaydetme seçeneğini ve ardından temizlemek **sonraki**.  
   
-7.  Genişletin **tabloları** düğümünde **veritabanı nesnelerinin** penceresi.  
+7. Genişletin **tabloları** düğümünde **veritabanı nesnelerinin** penceresi.  
   
-8.  Yanındaki onay kutusunu işaretleyin **tedarikçileri** ve **ürünleri** tablolar.  
+8. Yanındaki onay kutusunu işaretleyin **tedarikçileri** ve **ürünleri** tablolar.  
   
 9. **Son**'a tıklayın.  
   
- Sihirbaz ekler **tedarikçileri** tablo ve **ürünleri** tablo **veri kaynakları** penceresi. Projenize görünür olan bir türü belirtilmiş veri kümesi de ekler **Çözüm Gezgini**.  
+   Sihirbaz ekler **tedarikçileri** tablo ve **ürünleri** tablo **veri kaynakları** penceresi. Projenize görünür olan bir türü belirtilmiş veri kümesi de ekler **Çözüm Gezgini**.  
   
 ### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Veri bağlantılı Windows Forms denetimleri için Eylemler bölmesi denetimi eklemek için  
   

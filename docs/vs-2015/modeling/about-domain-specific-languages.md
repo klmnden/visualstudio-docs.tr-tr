@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0a9d3b89e91e0540766621f0889a12482291740a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6cddf51705758d046ab66319d6ac6295f3a4b057
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175272"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894527"
 ---
 # <a name="about-domain-specific-languages"></a>Etki Alanına Özgü Diller Hakkında
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ C# veya UML gibi genel amaçlı bir dil, bir etki alanına özgü dil (DSL), bel
   
  İşletmenizi ve projenize DSL ile açıklanan kavramlar özel kümeleri de ilgilidir. Örneğin, bu uygulamaların biri için bir DSL tanımlayabilirsiniz:  
   
--   Bir Web sitesinde gezinti yolları planı.  
+- Bir Web sitesinde gezinti yolları planı.  
   
--   Bağlantı şemaları elektronik bileşenleri için.  
+- Bağlantı şemaları elektronik bileşenleri için.  
   
--   Taşıyıcı bantları bagaj havaalanı ekipman işleme ve ağlar.  
+- Taşıyıcı bantları bagaj havaalanı ekipman işleme ve ağlar.  
   
- Bir DSL tasarlarken, tanımladığınız bir *etki alanı sınıfı* her etki alanında, bir Web sayfası, lamp veya havaalanı iade masasına gibi önemli kavramları. Tanımladığınız *etki alanı ilişkileri* köprü, hat üzeri ya da kavramları birbirine bağlamak için bir taşıyıcı bandı gibi.  
+  Bir DSL tasarlarken, tanımladığınız bir *etki alanı sınıfı* her etki alanında, bir Web sayfası, lamp veya havaalanı iade masasına gibi önemli kavramları. Tanımladığınız *etki alanı ilişkileri* köprü, hat üzeri ya da kavramları birbirine bağlamak için bir taşıyıcı bandı gibi.  
   
- Kullanıcılar, DSL'nin oluşturma *modelleri.* Modelleri *örnekleri* , DSL. Örneğin, bunlar belirli bir Web sitesi ya da belirli bir cihaz ya da belirli bir Havalimanı sistemindeki işleme bagaj kablolama açıklanmaktadır.  
+  Kullanıcılar, DSL'nin oluşturma *modelleri.* Modelleri *örnekleri* , DSL. Örneğin, bunlar belirli bir Web sitesi ya da belirli bir cihaz ya da belirli bir Havalimanı sistemindeki işleme bagaj kablolama açıklanmaktadır.  
   
- Kullanıcıların bir modeli bir diyagram veya bir Windows form olarak görüntüleyebilirsiniz. Modelleri, XML olarak nasıl depolandığını olduğu de görüntülenebilir. Bir DSL tanımlarken, her bir etki alanı sınıfı ve ilişki örnekleri kullanıcının ekranda görüntülenme şeklini tanımlar. Tipik bir DSL simgeleri veya dikdörtgenler oklarla bağlı koleksiyonu olarak görüntülenir.  
+  Kullanıcıların bir modeli bir diyagram veya bir Windows form olarak görüntüleyebilirsiniz. Modelleri, XML olarak nasıl depolandığını olduğu de görüntülenebilir. Bir DSL tanımlarken, her bir etki alanı sınıfı ve ilişki örnekleri kullanıcının ekranda görüntülenme şeklini tanımlar. Tipik bir DSL simgeleri veya dikdörtgenler oklarla bağlı koleksiyonu olarak görüntülenir.  
   
- Aşağıdaki şekilde grafiksel bir DSL içinde küçük bir modeli gösterilmektedir:  
+  Aşağıdaki şekilde grafiksel bir DSL içinde küçük bir modeli gösterilmektedir:  
   
- ![Tudor Aile Ağacı Modeli](../modeling/media/tudor-familytreemodel.png "Tudor_FamilyTreeModel")  
+  ![Tudor Aile Ağacı Modeli](../modeling/media/tudor-familytreemodel.png "Tudor_FamilyTreeModel")  
   
 ## <a name="what-you-can-do-with-dsls"></a>DSL ile yapabilecekleriniz  
  Program kodu veya diğer yapıları üretmek için DSL'nin tipik bir uygulamasıdır. DSL'nizi tanımladığınızda, tanımlayabileceğiniz *metin şablonlarını* DSL modeli okumak ve metin dosyaları oluşturur.  

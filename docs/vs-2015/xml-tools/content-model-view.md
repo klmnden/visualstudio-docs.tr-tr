@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 406c870f099d2dbb1e60b0088a68e5a5c252b907
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a535a97835491f4a109ed0893d20a4330b218801
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274410"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860311"
 ---
 # <a name="content-model-view"></a>İçerik Modeli Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,11 +110,11 @@ Yerel ve genel şema düğümlerini ve basit ve karmaşık türler, öğe, model
   
  Yakınlaştırma, aşağıdaki yollarla denetlenebilir:  
   
--   CTRL tuşunu basılı tutarak ve fare içerik modeli görünümünü yüzeyi gelindiğinde, fare tekerleğini dönen.  
+- CTRL tuşunu basılı tutarak ve fare içerik modeli görünümünü yüzeyi gelindiğinde, fare tekerleğini dönen.  
   
--   Kaydırıcı denetimi kullanarak. Kaydırıcı geçerli yakınlaştırma düzeyini gösterir.  
+- Kaydırıcı denetimi kullanarak. Kaydırıcı geçerli yakınlaştırma düzeyini gösterir.  
   
- Bunu, üzerine geldiğinizde seçin veya CTRL yakınlaştırma için fare tekerleğini ile kullanın. yakınlaştırma kaydırıcısı donuk olur; diğer her zaman saydamdır.  
+  Bunu, üzerine geldiğinizde seçin veya CTRL yakınlaştırma için fare tekerleğini ile kullanın. yakınlaştırma kaydırıcısı donuk olur; diğer her zaman saydamdır.  
   
 ## <a name="xml-editor-integration"></a>XML Düzenleyicisi tümleştirme  
  Bağlam menüsünü kullanarak XSD Tasarımcısı ile XML Düzenleyicisi arasında ileri ve geri geçebilirsiniz.  

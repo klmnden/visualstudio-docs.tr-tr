@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1455c0e1d4d5ff0aae952294ef3ee127a0d325a3
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: ba5c208e6354e0588f939074ac73a49c5b24b049
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859906"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929978"
 ---
 # <a name="customizing-the-model-explorer"></a>Model Gezginini Özelleştirme
 İçin etki alanına özgü dil Tasarımcısı görünümünü ve davranışını Gezginin şu şekilde değiştirebilirsiniz:
@@ -42,23 +42,23 @@ ms.locfileid: "47859906"
 
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>Bir Gezgini düğümü için bir simge eklemek için
 
-1.  Oluşturma bir [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Görev akışı çözüm şablonunu kullanarak çözüm.
+1. Oluşturma bir [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Görev akışı çözüm şablonunu kullanarak çözüm.
 
-2.  Bir 16 x 16 piksel simgesi içeren bir .bmp dosyası yerleştirme **Dsl\Resources** çözüm klasöründe.
+2. Bir 16 x 16 piksel simgesi içeren bir .bmp dosyası yerleştirme **Dsl\Resources** çözüm klasöründe.
 
-3.  İçinde **DSL Gezgini**, sağ **Gezgin davranışı** ve ardından **ekleme Yeni Gezgin düğümü ayarlarını**.
+3. İçinde **DSL Gezgini**, sağ **Gezgin davranışı** ve ardından **ekleme Yeni Gezgin düğümü ayarlarını**.
 
-     Bir **ExplorerNodeSettings** düğümü altında görünür **özel düğüm ayarları** düğümü.
+    Bir **ExplorerNodeSettings** düğümü altında görünür **özel düğüm ayarları** düğümü.
 
-4.  Seçin **ExplorerNodeSettings**ve ardından **özellikleri** penceresinde **sınıfı** için **aktör**.
+4. Seçin **ExplorerNodeSettings**ve ardından **özellikleri** penceresinde **sınıfı** için **aktör**.
 
-5.  Ayarlama **görüntülenecek simge** simge dosyasının yolu.
+5. Ayarlama **görüntülenecek simge** simge dosyasının yolu.
 
-6.  Tüm Şablonları Dönüştür ve derleme ve çözümü çalıştırın.
+6. Tüm Şablonları Dönüştür ve derleme ve çözümü çalıştırın.
 
-7.  Oluşturulan tasarımcıda örnek diyagramı açın.
+7. Oluşturulan tasarımcıda örnek diyagramı açın.
 
-     Gezgin üç göstermelidir **aktör** simge olan düğümleri.
+    Gezgin üç göstermelidir **aktör** simge olan düğümleri.
 
 > [!NOTE]
 >  Oluşturulan Gezgini'nde görüntülenen herhangi bir öğe için bir düğüm simgesi ayarlarsanız, tüm Gezgini düğümleri simgesi görüntüler. Herhangi bir simge ayarlarsanız düğümleri varsayılan simge görüntüler.

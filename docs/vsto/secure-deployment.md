@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f0ed351bf15ec257f79e226958b38e46ac769d0e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 81d6aefcf98b43524e7ffa1e0965e6a5df9189fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676688"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865732"
 ---
 # <a name="secure-deployment"></a>Güvenli dağıtım
   Bir Office çözümü oluşturduğunuzda, geliştirme bilgisayarınıza kod projenize çalışmasına izin vermek için otomatik olarak güncelleştirilir. Ancak, çözümünüzü dağıtırken kanıt güven kararı çözümü ile bir sertifika imzalama veya kullanarak temel sağlamalısınız [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] güven istemi anahtarı. Daha fazla bilgi için [Office çözümlerine güven verme](../vsto/granting-trust-to-office-solutions.md).  
@@ -35,17 +35,17 @@ ms.locfileid: "35676688"
 ## <a name="prevent-office-solutions-from-running-code"></a>Office çözümlerinde kod çalıştırmasını engelleyebilir.  
  Yöneticiler, tüm Office çözümlerini bir bilgisayar üzerinde çalışmasını önlemek için kayıt defteri kullanabilirsiniz. Yönetilen kod uzantıları bir Office çözümü açıldığında, Office çalışma zamanı denetimleri için Visual Studio Araçları bir giriş olmadığını adıyla `Disabled` bilgisayara aşağıdaki kayıt defteri anahtarlarından biri altında bulunmaktadır:  
   
--   **HKEY_CURRENT_USER\Software\Microsoft\VSTO**  
+- **HKEY_CURRENT_USER\Software\Microsoft\VSTO**  
   
--   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\vsto**  
+- **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\vsto**  
   
- Office çözümlerinde kod çalıştırılmasını engellemek için oluşturun bir `Disabled` giriş birine veya ikisine de bu kayıt defteri anahtarları altında ve aşağıdaki veri türlerini ve değerlerini belirtin `Disabled`:  
+  Office çözümlerinde kod çalıştırılmasını engellemek için oluşturun bir `Disabled` giriş birine veya ikisine de bu kayıt defteri anahtarları altında ve aşağıdaki veri türlerini ve değerlerini belirtin `Disabled`:  
   
--   REG_SZ veya "0" (sıfır) dışında herhangi bir dize olarak ayarlanmış REG_EXPAND_SZ.  
+- REG_SZ veya "0" (sıfır) dışında herhangi bir dize olarak ayarlanmış REG_EXPAND_SZ.  
   
--   0 (sıfır) dışında herhangi bir değere ayarlanmış REG_DWORD.  
+- 0 (sıfır) dışında herhangi bir değere ayarlanmış REG_DWORD.  
   
- Office çözümlerini kod etkinleştirmek için her ikisi de ayarlayın `Disabled` 0 (sıfır) girişleri veya kayıt defteri girdilerini silin.  
+  Office çözümlerini kod etkinleştirmek için her ikisi de ayarlayın `Disabled` 0 (sıfır) girişleri veya kayıt defteri girdilerini silin.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md)   

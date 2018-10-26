@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b46be8e9ad7a4a437f1009eb30407428f31b425b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7e468f75abbadbe46ea973a5c04d2e286fcfaca5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279160"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867708"
 ---
 # <a name="edit-and-continue-visual-c"></a>Düzenle ve Devam Et (Visual C++)
 Visual C++ projelerinde, Düzenle ve devam et kullanabilirsiniz. Bkz: [desteklenen kod değişiklikleri (C++)](../debugger/supported-code-changes-cpp.md) Düzenle ve devam et sınırlamaları hakkında bilgi için.
@@ -41,17 +41,17 @@ Visual Studio 2015 güncelleştirme 3'ü iyileştirmeleri hakkında daha fazla b
 > [!IMPORTANT]
 > Gerekli yapılandırma ayarlarını ve diğer özellik uyumluluğu hakkında bilgi için [C++ Düzenle ve devam et Visual Studio 2015 güncelleştirme 3'te] konusuna bakın (https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/.
   
-1.  Hata ayıklama oturumunda varsa, hata ayıklamayı Durdur (**Shift + F5 tuşlarına basarak**).
+1. Hata ayıklama oturumunda varsa, hata ayıklamayı Durdur (**Shift + F5 tuşlarına basarak**).
 
 2. Üzerinde **Araçları** menüsünde seçin **seçenekleri**.
   
-3.  İçinde **seçenekleri** iletişim kutusunda **hata ayıklama > Genel**.
+3. İçinde **seçenekleri** iletişim kutusunda **hata ayıklama > Genel**.
 
-4.  Etkinleştirmek için seçin **etkinleştirme Düzenle ve devam et**. Devre dışı bırakmak için onay kutusunu temizleyin.
+4. Etkinleştirmek için seçin **etkinleştirme Düzenle ve devam et**. Devre dışı bırakmak için onay kutusunu temizleyin.
   
-5.  İçinde **Düzenle ve devam et** grubu seçin veya temizleyin **etkinleştirme yerel Düzenle ve devam et** onay kutusu.  
+5. İçinde **Düzenle ve devam et** grubu seçin veya temizleyin **etkinleştirme yerel Düzenle ve devam et** onay kutusu.  
   
- Bu ayarı değiştirmeden üzerinde çalışan tüm projeleri etkiler. Bu ayarı değiştirdikten sonra uygulamanızı yeniden gerekmez. Ayarlarsanız uygulamanızı bir derleme görevleri dosyası veya komut satırından derleme, ancak Visual Studio ortamında Hata Ayıkla, Düzenle ve devam et kullanmaya devam edebilirsiniz **/zi** seçeneği.  
+   Bu ayarı değiştirmeden üzerinde çalışan tüm projeleri etkiler. Bu ayarı değiştirdikten sonra uygulamanızı yeniden gerekmez. Ayarlarsanız uygulamanızı bir derleme görevleri dosyası veya komut satırından derleme, ancak Visual Studio ortamında Hata Ayıkla, Düzenle ve devam et kullanmaya devam edebilirsiniz **/zi** seçeneği.  
   
 ##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Kod değişikliklerini açıkça uygulama  
  Visual C++'da, Düzenle ve devam et, iki yolla kod değişiklikleri uygulayabilirsiniz. Kod değişiklikleri uygulanabilir örtük olarak, bir yürütme komutu seçtiğinizde veya açıkça kullanarak **kod değişikliklerini uygulama** komutu.  
@@ -65,11 +65,11 @@ Visual Studio 2015 güncelleştirme 3'ü iyileştirmeleri hakkında daha fazla b
   
  Kod değişiklikleri uygulanırken durdurmak için:  
   
--   Üzerinde **hata ayıklama** menüsünde seçin **kod değişikliklerini uygulamayı Durdur'u**.  
+- Üzerinde **hata ayıklama** menüsünde seçin **kod değişikliklerini uygulamayı Durdur'u**.  
   
- Bu menü öğesi, yalnızca kod değişiklikleri uygulanıyor bile görülebilir.  
+  Bu menü öğesi, yalnızca kod değişiklikleri uygulanıyor bile görülebilir.  
   
- Bu seçeneği seçerseniz, hiçbir kod değişikliği kabul edilir.  
+  Bu seçeneği seçerseniz, hiçbir kod değişikliği kabul edilir.  
   
 ##  <a name="BKMK_How_to_reset_the_point_of_execution"></a> Yürütme noktası sıfırlama  
  Bazı kod değişiklikleri, Düzenle ve devam et değişiklikleri uygulandığında, yeni bir konuma taşımak için yürütme noktasını neden olabilir. Düzenle ve devam et yerleştirir yürütme noktası olarak doğru bir şekilde, ancak sonuçları her durumda doğru olmayabilir.  

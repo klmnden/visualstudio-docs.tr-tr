@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b68330e4cfb8e1d403caa1c48d26ad29aacc19f7
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: e80252582f93c995330f9c586a56e2f8f2c4e6a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880558"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897179"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Nasıl yapılır: farklı seçeneklerle aynı kaynak dosyaları derleme
 Projeleri oluşturduğunuzda, farklı bir derleme seçenekleri ile aynı bileşenleri sık derleyin. Örneğin, sembol bilgisi veya bir yayın yapısı sembol bilgisi ancak iyileştirmeler ile hata ayıklama derlemesi oluşturabilirsiniz. Veya, x86 gibi belirli bir platformda çalıştırmak için bir proje oluşturabilirsiniz veya [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. Bu durumlarda, aynı derleme seçeneklerin çoğu kalır; yalnızca birkaç seçeneği, derleme yapılandırmasını kontrol etmek için değiştirilir. İle [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], özellikleri ve koşulları farklı derleme yapılandırmalarında oluşturmak için kullanın.  
@@ -68,23 +68,23 @@ Projeleri oluşturduğunuzda, farklı bir derleme seçenekleri ile aynı bileşe
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Komut satırında birden fazla proje özelliği belirtmek için  
   
--   Kullanma **-özellik** veya **-p** özellik ve özellik değerleri ile birden çok kez geçin veya kullanın **-özellik** veya **-p** geçiş ve birden çok özellik noktalı virgülle (;) ayırın. Örneğin:  
+- Kullanma **-özellik** veya **-p** özellik ve özellik değerleri ile birden çok kez geçin veya kullanın **-özellik** veya **-p** geçiş ve birden çok özellik noktalı virgülle (;) ayırın. Örneğin:  
   
-    ```cmd  
-    msbuild file.proj -p:Flavor=Debug;Platform=x86  
-    ```  
+  ```cmd  
+  msbuild file.proj -p:Flavor=Debug;Platform=x86  
+  ```  
   
-    veya
+  veya
   
-    ```cmd  
-    msbuild file.proj -p:Flavor=Debug -p:Platform=x86  
-    ```  
+  ```cmd  
+  msbuild file.proj -p:Flavor=Debug -p:Platform=x86  
+  ```  
   
- Ortam değişkenlerini de özellik olarak kabul edilir ve tarafından otomatik olarak eklenen [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Ortam değişkenlerini kullanma hakkında daha fazla bilgi için bkz. [nasıl yapılır: derlemede ortam değişkenlerini kullanma](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+  Ortam değişkenlerini de özellik olarak kabul edilir ve tarafından otomatik olarak eklenen [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Ortam değişkenlerini kullanma hakkında daha fazla bilgi için bkz. [nasıl yapılır: derlemede ortam değişkenlerini kullanma](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
- Komut satırında belirtilen özellik değeri, aynı özelliği proje dosyasında ayarlanır ve değer proje dosyasında bir ortam değişkeni değeri önceliklidir herhangi bir değer daha önceliklidir.  
+  Komut satırında belirtilen özellik değeri, aynı özelliği proje dosyasında ayarlanır ve değer proje dosyasında bir ortam değişkeni değeri önceliklidir herhangi bir değer daha önceliklidir.  
   
- Kullanarak bu davranışı değiştirebilirsiniz `TreatAsLocalProperty` öznitelik bir proje etiketinde. Bu öznitelik ile listelenen özellik adları için komut satırında belirtilen özellik değeri değer proje dosyasında öncelikli değil. Bu konuda daha sonra bir örnek bulabilirsiniz.  
+  Kullanarak bu davranışı değiştirebilirsiniz `TreatAsLocalProperty` öznitelik bir proje etiketinde. Bu öznitelik ile listelenen özellik adları için komut satırında belirtilen özellik değeri değer proje dosyasında öncelikli değil. Bu konuda daha sonra bir örnek bulabilirsiniz.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod örneği, "Hello World" projenin hata ayıklama derleme ve yayın derlemesi oluşturmak için kullanılan iki yeni özellik gruplarını içerir.  

@@ -19,12 +19,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e50cfc446bf13e93258e28877f9706a3ccd86ae7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50d8190f386a4923fd05cbfaec137791bd9f2b5a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270640"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874507"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>İzlenecek yol: Yönetilen Kod için Birim Testleri Oluşturma ve Çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,17 +39,17 @@ Bu izlenecek yol oluşturma, çalıştırma ve yönetilen kod ve Visual Studio T
   
  [Test sınıfı oluşturun](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_the_test_class)  
   
--   [Test sınıfı gereksinimleri](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Test_class_requirements)  
+- [Test sınıfı gereksinimleri](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Test_class_requirements)  
   
- [İlk test yöntemini oluştur](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_the_first_test_method)  
+  [İlk test yöntemini oluştur](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_the_first_test_method)  
   
--   [Test yöntemi gereksinimleri](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Test_method_requirements)  
+- [Test yöntemi gereksinimleri](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Test_method_requirements)  
   
- [Derleme ve test çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Build_and_run_the_test)  
+  [Derleme ve test çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Build_and_run_the_test)  
   
- [Kodunuzu düzeltin ve testlerinizi yeniden çalıştırın](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Fix_your_code_and_rerun_your_tests)  
+  [Kodunuzu düzeltin ve testlerinizi yeniden çalıştırın](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Fix_your_code_and_rerun_your_tests)  
   
- [Kodunuzu geliştirmek için birim testleri kullanın](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)  
+  [Kodunuzu geliştirmek için birim testleri kullanın](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)  
   
 > [!NOTE]
 >  Bu izlenecek yol, yönetilen kod için Microsoft birim testi çerçevesini kullanır. Test Gezgini testleri Test Gezgini için bağdaştırıcıları olan test çerçevelerini üçüncü parti birim çalıştırabilirsiniz. Daha fazla bilgi için [üçüncü taraf birim testi çerçevelerini yükleme](../test/install-third-party-unit-test-frameworks.md)  
@@ -63,37 +63,37 @@ Bu izlenecek yol oluşturma, çalıştırma ve yönetilen kod ve Visual Studio T
   
 ##  <a name="BKMK_Prepare_the_walkthrough"></a> İzlenecek yol hazırla  
   
-1.  Visual Studio'yu açın.  
+1. Visual Studio'yu açın.  
   
-2.  Üzerinde **dosya** menüsünde **yeni** ve ardından **proje**.  
+2. Üzerinde **dosya** menüsünde **yeni** ve ardından **proje**.  
   
-     **Yeni proje** iletişim kutusu görüntülenir.  
+    **Yeni proje** iletişim kutusu görüntülenir.  
   
-3.  Altında **yüklü şablonlar**, tıklayın **Visual C#**.  
+3. Altında **yüklü şablonlar**, tıklayın **Visual C#**.  
   
-4.  Uygulama türleri listesinde tıklayın **sınıf kitaplığı**.  
+4. Uygulama türleri listesinde tıklayın **sınıf kitaplığı**.  
   
-5.  İçinde **adı** kutusuna `Bank` ve ardından **Tamam**.  
+5. İçinde **adı** kutusuna `Bank` ve ardından **Tamam**.  
   
-    > [!NOTE]
-    >  "Banka" zaten kullanılıyorsa proje için başka bir ad seçin.  
+   > [!NOTE]
+   >  "Banka" zaten kullanılıyorsa proje için başka bir ad seçin.  
   
-     Yeni Banka projesi oluşturulur ve Çözüm Gezgini'nde Class1.cs dosyası Kod Düzenleyicisi'nde görüntülenir.  
+    Yeni Banka projesi oluşturulur ve Çözüm Gezgini'nde Class1.cs dosyası Kod Düzenleyicisi'nde görüntülenir.  
   
-    > [!NOTE]
-    >  Class1.cs dosyası Kod Düzenleyicisi'nde açık değilse, açmak için Çözüm Gezgini'nde Class1.cs dosyasını çift tıklayın.  
+   > [!NOTE]
+   >  Class1.cs dosyası Kod Düzenleyicisi'nde açık değilse, açmak için Çözüm Gezgini'nde Class1.cs dosyasını çift tıklayın.  
   
-6.  Kaynak kodundan kopyalama [birim testleri oluşturmak için örnek proje](../test/sample-project-for-creating-unit-tests.md).  
+6. Kaynak kodundan kopyalama [birim testleri oluşturmak için örnek proje](../test/sample-project-for-creating-unit-tests.md).  
   
-7.  Orijinal Class1.cs içeriğini koddan değiştirin [birim testleri oluşturmak için örnek proje](../test/sample-project-for-creating-unit-tests.md).  
+7. Orijinal Class1.cs içeriğini koddan değiştirin [birim testleri oluşturmak için örnek proje](../test/sample-project-for-creating-unit-tests.md).  
   
-8.  Dosyayı BankAccount.cs olarak kaydedin.  
+8. Dosyayı BankAccount.cs olarak kaydedin.  
   
 9. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
   
- Artık banka olarak adlandırılan bir projeniz var. Bu, test etmek için kaynak kodu ve bunu test etmek için Araçlar içerir. Banka için ad alanı **BankAccountNS**, genel sınıfını içeren **BankAccount**, aşağıdaki yordamlarda test edeceğiniz yöntemleri.  
+   Artık banka olarak adlandırılan bir projeniz var. Bu, test etmek için kaynak kodu ve bunu test etmek için Araçlar içerir. Banka için ad alanı **BankAccountNS**, genel sınıfını içeren **BankAccount**, aşağıdaki yordamlarda test edeceğiniz yöntemleri.  
   
- Bu hızlı başlangıçta odaklanıyoruz `Debit` yöntemi. Para çekildiğinde banka yöntem çağrılır bir hesap ve aşağıdaki kodu içerir:  
+   Bu hızlı başlangıçta odaklanıyoruz `Debit` yöntemi. Para çekildiğinde banka yöntem çağrılır bir hesap ve aşağıdaki kodu içerir:  
   
 ```csharp  
 // method under test  
@@ -171,52 +171,52 @@ using BankAccountNS;
 ###  <a name="BKMK_Test_class_requirements"></a> Test sınıfı gereksinimleri  
  Bir test sınıfı için en düşük gereksinimler aşağıda verilmiştir:  
   
--   `[TestClass]` Özniteliği, kod herhangi sınıflar, Test Gezgini'nde de çalıştırmak istediğiniz birim test yöntemlerini içeren Microsoft birim testi çerçevesi ile yönetilen için gereklidir.  
+- `[TestClass]` Özniteliği, kod herhangi sınıflar, Test Gezgini'nde de çalıştırmak istediğiniz birim test yöntemlerini içeren Microsoft birim testi çerçevesi ile yönetilen için gereklidir.  
   
--   Test Gezgini'nin çalıştırmasını istediğiniz her test yönteminin olmalıdır `[TestMethod]`özniteliği.  
+- Test Gezgini'nin çalıştırmasını istediğiniz her test yönteminin olmalıdır `[TestMethod]`özniteliği.  
   
- Sahip olmadığınız diğer birim testi projesi sınıflarda olabilir `[TestClass]` özniteliği ve diğer yöntemler bulunabilir sahip olmayan test sınıflarında `[TestMethod]` özniteliği. Diğer sınıfları ve yöntemleri test yöntemlerinizde kullanabilirsiniz.  
+  Sahip olmadığınız diğer birim testi projesi sınıflarda olabilir `[TestClass]` özniteliği ve diğer yöntemler bulunabilir sahip olmayan test sınıflarında `[TestMethod]` özniteliği. Diğer sınıfları ve yöntemleri test yöntemlerinizde kullanabilirsiniz.  
   
 ##  <a name="BKMK_Create_the_first_test_method"></a> İlk test yöntemini oluştur  
  Bu yordamda, biz birim testi davranışını doğrulamak için yöntem yazacak `Debit` yöntemi `BankAccount` sınıfı. Yöntem yukarıda listelenmiştir.  
   
  Test altındaki yöntemi çözümleyerek, denetlenmesi gereken en az üç davranış olduğu belirleriz:  
   
-1.  Çağırılıyorsa yöntem bir [üretiliyor] (<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) borç tutarı bakiyeden büyükse.  
+1. Çağırılıyorsa yöntem bir [üretiliyor] (<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) borç tutarı bakiyeden büyükse.  
   
-2.  Ayrıca `ArgumentOutOfRangeException` borç tutarını küçükse sıfır.  
+2. Ayrıca `ArgumentOutOfRangeException` borç tutarını küçükse sıfır.  
   
-3.  Eğer 1 denetimlerinde.) ve 2.) maddelerindeki yöntem hesap bakiyesini tutardan çıkarır.  
+3. Eğer 1 denetimlerinde.) ve 2.) maddelerindeki yöntem hesap bakiyesini tutardan çıkarır.  
   
- İlk testimizde, hesaptan geçerli bir tutarın (birisi hesap bakiyesinden daha az olan ve sıfırdan büyük) doğru bir tutar testimizde doğrulayın.  
+   İlk testimizde, hesaptan geçerli bir tutarın (birisi hesap bakiyesinden daha az olan ve sıfırdan büyük) doğru bir tutar testimizde doğrulayın.  
   
 #### <a name="to-create-a-test-method"></a>Bir test yöntemi oluşturmak için  
   
-1.  Kullanarak bir ekleme `BankAccountNS;` BankAccountTests.cs dosyasına deyimi.  
+1. Kullanarak bir ekleme `BankAccountNS;` BankAccountTests.cs dosyasına deyimi.  
   
-2.  Aşağıdaki yöntemi ekleyin `BankAccountTests` sınıfı:  
+2. Aşağıdaki yöntemi ekleyin `BankAccountTests` sınıfı:  
   
-    ```csharp  
-    // unit test code  
-    [TestMethod]  
-    public void Debit_WithValidAmount_UpdatesBalance()  
-    {  
-        // arrange  
-        double beginningBalance = 11.99;  
-        double debitAmount = 4.55;  
-        double expected = 7.44;  
-        BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);  
+   ```csharp  
+   // unit test code  
+   [TestMethod]  
+   public void Debit_WithValidAmount_UpdatesBalance()  
+   {  
+       // arrange  
+       double beginningBalance = 11.99;  
+       double debitAmount = 4.55;  
+       double expected = 7.44;  
+       BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);  
   
-        // act  
-        account.Debit(debitAmount);  
+       // act  
+       account.Debit(debitAmount);  
   
-        // assert  
-        double actual = account.Balance;  
-        Assert.AreEqual(expected, actual, 0.001, "Account not debited correctly");  
-    }  
-    ```  
+       // assert  
+       double actual = account.Balance;  
+       Assert.AreEqual(expected, actual, 0.001, "Account not debited correctly");  
+   }  
+   ```  
   
- Yöntem oldukça basittir. Yeni bir ayarladığımız `BankAccount` nesnesi bir Başlangıç bakiyesi ve geçerli bir süre sonra geri alma. Yönetilen kod için Microsoft birim test çerçevesi kullandığımız <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> yöntemi, beklediğimiz bitiş bakiyesini olduğundan emin olun.  
+   Yöntem oldukça basittir. Yeni bir ayarladığımız `BankAccount` nesnesi bir Başlangıç bakiyesi ve geçerli bir süre sonra geri alma. Yönetilen kod için Microsoft birim test çerçevesi kullandığımız <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> yöntemi, beklediğimiz bitiş bakiyesini olduğundan emin olun.  
   
 ###  <a name="BKMK_Test_method_requirements"></a> Test yöntemi gereksinimleri  
  Bir test yönteminin aşağıdaki gereksinimleri karşılaması gerekir:  
@@ -242,7 +242,7 @@ using BankAccountNS;
 ##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Kodunuzu düzeltin ve testlerinizi yeniden çalıştırın  
  **Test sonuçlarını çözümleme**  
   
- Test sonucu hatayı açıklayan bir ileti içerir. İçin `AreEquals` yöntemi iletiyi görüntüler, ne bekleniyordu ((**beklenen\<*XXX*>** parametresi) ve hangi gerçekten alındı ( **Gerçek\<*YYY* >** parametresi). Biz başlangıç bakiyesinden azalmasını bekliyorduk, ancak bunun yerine artırmıştır oranda arttı.  
+ Test sonucu hatayı açıklayan bir ileti içerir. İçin `AreEquals` yöntemi iletiyi görüntüler, ne bekleniyordu ((<strong>beklenen\<*XXX*></strong>parametresi) ve hangi gerçekten alındı ( **Gerçek\<*YYY* >** parametresi). Biz başlangıç bakiyesinden azalmasını bekliyorduk, ancak bunun yerine artırmıştır oranda arttı.  
   
  Debit kodunun, birim testi hata bulma konusunda başarılı olduğunu gösterir. Çekilen miktarın azaltılması, gerektiğinde hesap bakiyesine eklendi.  
   
@@ -271,13 +271,13 @@ m_balance -= amount;
   
  Onaylamak için bir test yöntemi oluşturulduktan sonra geçerli bir tutarın doğru bir şekilde düşürüldüğünü `Debit` yöntemi, biz kapatabilir kalan durumlara bizim orijinal çözümlememizdeki içinde:  
   
-1.  Çağırılıyorsa yöntem bir `ArgumentOutOfRangeException` borç tutarı bakiyeden büyükse.  
+1. Çağırılıyorsa yöntem bir `ArgumentOutOfRangeException` borç tutarı bakiyeden büyükse.  
   
-2.  Ayrıca `ArgumentOutOfRangeException` borç tutarını küçükse sıfır.  
+2. Ayrıca `ArgumentOutOfRangeException` borç tutarını küçükse sıfır.  
   
- **Test yöntemleri oluşturun**  
+   **Test yöntemleri oluşturun**  
   
- Bu sorunları ele almak için bir test yöntemi oluşturmaya bir ilk denemesi umut verici görünüyor:  
+   Bu sorunları ele almak için bir test yöntemi oluşturmaya bir ilk denemesi umut verici görünüyor:  
   
 ```csharp  
 //unit test method  
@@ -300,21 +300,21 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
   
  Kullandığımız <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> doğru özel durumun oluşturulmasını onaylamak için özniteliği. Öznitelik, testin başarısız olmasına neden olan bir `ArgumentOutOfRangeException` oluşturulur. Her iki pozitif ve negatif bir testi çalıştırmadan `debitAmount` değerleri ve geçici olarak bir genel oluşturmasına, test altındaki yöntemi değiştirme <xref:System.ApplicationException> zaman tutarı sıfırdan küçüktür, doğru davrandığını gösterecek. Çekilen miktarın bakiyeden büyük olduğunu test etmek için tüm yapmanız gereken şöyledir:  
   
-1.  Adlı yeni bir test yöntemi oluşturun `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange`.  
+1. Adlı yeni bir test yöntemi oluşturun `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange`.  
   
-2.  Kopyalama yöntemi gövdesinden `Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange` yeni yönteme.  
+2. Kopyalama yöntemi gövdesinden `Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange` yeni yönteme.  
   
-3.  Ayarlama `debitAmount` bakiyeden büyük bir sayı.  
+3. Ayarlama `debitAmount` bakiyeden büyük bir sayı.  
   
- **Testleri çalıştırın**  
+   **Testleri çalıştırın**  
   
- İçin farklı değerlerle iki yöntemi çalıştırmak `debitAmount` testleri yeterince bizim kalan durumlarla işlendiğini göstermektedir. Çalışan üç testi bizim orijinal çözümlememizdeki tüm durumlarda doğru şekilde ele alındığını doğrulayın.  
+   İçin farklı değerlerle iki yöntemi çalıştırmak `debitAmount` testleri yeterince bizim kalan durumlarla işlendiğini göstermektedir. Çalışan üç testi bizim orijinal çözümlememizdeki tüm durumlarda doğru şekilde ele alındığını doğrulayın.  
   
- **Çözümlemeye devam edin**  
+   **Çözümlemeye devam edin**  
   
- Bununla birlikte, son iki test yöntemi ayrıca yorucudur. Şu testler çalıştırılırken test altındaki kodun hangi koşulda oluşturur belirli olamaz. Bazı yolu iki koşul farklılaştırılması yardımcı olacaktır. Olarak düşünme hakkında daha fazla sorun, hangi koşulun ihlâl edildiğini bilmenin bizim güvenle testlerinde artacaktır belirgin olur. Bu bilgiler, ayrıca çok büyük olasılıkla test altındaki yöntemi tarafından oluştuğunda özel durumu işleyen üretim mekanizmasına yardımcı olacaktır. Yöntem tüm endişeleri gidermeye yardımcı olur, daha fazla bilgi üretme ancak `ExpectedException` özniteliği, bu bilgileri sağlayamaz...  
+   Bununla birlikte, son iki test yöntemi ayrıca yorucudur. Şu testler çalıştırılırken test altındaki kodun hangi koşulda oluşturur belirli olamaz. Bazı yolu iki koşul farklılaştırılması yardımcı olacaktır. Olarak düşünme hakkında daha fazla sorun, hangi koşulun ihlâl edildiğini bilmenin bizim güvenle testlerinde artacaktır belirgin olur. Bu bilgiler, ayrıca çok büyük olasılıkla test altındaki yöntemi tarafından oluştuğunda özel durumu işleyen üretim mekanizmasına yardımcı olacaktır. Yöntem tüm endişeleri gidermeye yardımcı olur, daha fazla bilgi üretme ancak `ExpectedException` özniteliği, bu bilgileri sağlayamaz...  
   
- Test altındaki yöntemi yeniden bakarak, her iki koşullu deyimin kullanmak görüyoruz bir `ArgumentOutOfRangeException` adı bağımsız değişkeni bir parametre olarak alan oluşturucu:  
+   Test altındaki yöntemi yeniden bakarak, her iki koşullu deyimin kullanmak görüyoruz bir `ArgumentOutOfRangeException` adı bağımsız değişkeni bir parametre olarak alan oluşturucu:  
   
 ```csharp  
 throw new ArgumentOutOfRangeException("amount");  
@@ -353,13 +353,13 @@ public const string DebitAmountLessThanZeroMessage = "Debit amount less than zer
   
  Bizim test yönteminde, biz öncelikle kaldırmanız `ExpectedException` özniteliği. Bunun yerine oluşan özel durumları yakalamalı ve onu doğru koşul ifadesinde oluşturulduğunu doğrulamalıyız. Ancak biz artık kalan koşullarımızı doğrulamak için iki seçenek arasında karar vermeliyiz. Örneğin `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` yöntemi, biz alabilir aşağıdaki eylemlerden birini:  
   
--   Assert, `ActualValue` özelliği özel durumun (ikinci parametresi `ArgumentOutOfRangeException` Oluşturucu) başlangıç bakiyesinden büyük. Bu seçenek, test ederiz gerektirir `ActualValue` özelliği karşı olan özel durumun `beginningBalance` test yönteminin değişken ve ayrıca olduğunu doğrulamayı gerektirir `ActualValue` sıfırdan büyük.  
+- Assert, `ActualValue` özelliği özel durumun (ikinci parametresi `ArgumentOutOfRangeException` Oluşturucu) başlangıç bakiyesinden büyük. Bu seçenek, test ederiz gerektirir `ActualValue` özelliği karşı olan özel durumun `beginningBalance` test yönteminin değişken ve ayrıca olduğunu doğrulamayı gerektirir `ActualValue` sıfırdan büyük.  
   
--   İletinin (oluşturucunun üçüncü parametresi) içerdiğini `DebitAmountExceedsBalanceMessage` tanımlanan `BankAccount` sınıfı.  
+- İletinin (oluşturucunun üçüncü parametresi) içerdiğini `DebitAmountExceedsBalanceMessage` tanımlanan `BankAccount` sınıfı.  
   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> Bize ilk seçeneğin gerekli olan hesaplamalar olmadan ikinci seçeneği doğrulamak Microsoft birim test çerçevesi yöntemi sağlar.  
+  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> Bize ilk seçeneğin gerekli olan hesaplamalar olmadan ikinci seçeneği doğrulamak Microsoft birim test çerçevesi yöntemi sağlar.  
   
- Düzeltmenin ikinci denemesi `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` aşağıdaki gibi görünmelidir:  
+  Düzeltmenin ikinci denemesi `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` aşağıdaki gibi görünmelidir:  
   
 ```csharp  
 [TestMethod]  
@@ -387,15 +387,15 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
   
  Biz, biz test yöntemlerini farklı değerlerle yeniden test et, aşağıdakilerle karşılaşırız:  
   
-1.  Assert kullanarak size doğru hata catch, burada `debitAmount` bakiyeden büyük `Contains` onayı geçer, özel durum yok sayılır ve bu nedenle test yöntemi geçirilir. İstediğimiz davranış budur.  
+1. Assert kullanarak size doğru hata catch, burada `debitAmount` bakiyeden büyük `Contains` onayı geçer, özel durum yok sayılır ve bu nedenle test yöntemi geçirilir. İstediğimiz davranış budur.  
   
-2.  Biz kullanıyorsanız bir `debitAmount` 0'dan küçük olan, yanlış hata iletisi döndürüldüğünden assert başarısız olur. Biz geçici belirtiyorsak onay ayrıca başarısız olur `ArgumentOutOfRange` test kod yolu altındaki yöntemin içindeki diğer noktada özel durum. Bu çok iyi.  
+2. Biz kullanıyorsanız bir `debitAmount` 0'dan küçük olan, yanlış hata iletisi döndürüldüğünden assert başarısız olur. Biz geçici belirtiyorsak onay ayrıca başarısız olur `ArgumentOutOfRange` test kod yolu altındaki yöntemin içindeki diğer noktada özel durum. Bu çok iyi.  
   
-3.  Varsa `debitAmount` değerdir geçerli (yani, ama, sıfırdan büyükse bakiyeden küçükse hiçbir özel durum yakalanmaz, yani onay asla yakalanmaz. Test yöntemi geçirilir. Test yöntemi özel durum oluşturmazsa başarısız istediğimizden bu iyi değildir.  
+3. Varsa `debitAmount` değerdir geçerli (yani, ama, sıfırdan büyükse bakiyeden küçükse hiçbir özel durum yakalanmaz, yani onay asla yakalanmaz. Test yöntemi geçirilir. Test yöntemi özel durum oluşturmazsa başarısız istediğimizden bu iyi değildir.  
   
- Üçüncü bir olgu, bizim test yönteminde bir hatadır. Sorunu çözmeyi denemek için eklediğimiz bir <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> nerede hiçbir özel durum durumu işlemek için test yönteminin sonunda onay.  
+   Üçüncü bir olgu, bizim test yönteminde bir hatadır. Sorunu çözmeyi denemek için eklediğimiz bir <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> nerede hiçbir özel durum durumu işlemek için test yönteminin sonunda onay.  
   
- Ancak çözülüp doğru özel durum yakalandığında testin başarısız olduğunu gösterir. Catch deyimi özel durumu sıfırlar ve yeni onaylama işleminde başarısız yöntem yürütme devam eder. Yeni sorunu gidermek için eklediğimiz bir `return` deyiminden sonra `StringAssert`. Yeniden test yapmak, bizim sorunları düzelttik onaylar. Son `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` aşağıdaki gibi görünür:  
+   Ancak çözülüp doğru özel durum yakalandığında testin başarısız olduğunu gösterir. Catch deyimi özel durumu sıfırlar ve yeni onaylama işleminde başarısız yöntem yürütme devam eder. Yeni sorunu gidermek için eklediğimiz bir `return` deyiminden sonra `StringAssert`. Yeniden test yapmak, bizim sorunları düzelttik onaylar. Son `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` aşağıdaki gibi görünür:  
   
 ```csharp  
 [TestMethod]  

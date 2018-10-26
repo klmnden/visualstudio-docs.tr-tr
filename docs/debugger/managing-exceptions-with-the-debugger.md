@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71d45145da27d019b0750202a38c24ecb1e147d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f19bbbfbde9a111c6edea112b7250fca934ac7f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203950"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881696"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Özel durumlar Visual Studio hata ayıklayıcısı ile yönetme
 
@@ -217,7 +217,7 @@ Koşullu özel durumlar eklemek için:
 
    ![Ek koşullar için bir özel durum](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Koşul her satır için modül adını yazın ve karşılaştırma işleci listeye değiştirmek **eşittir** veya **eşit değildir**. Joker karakterler belirtebilirsiniz (**\***) birden çok modül belirtmek için bir ad.
+3. Koşul her satır için modül adını yazın ve karşılaştırma işleci listeye değiştirmek **eşittir** veya **eşit değildir**. Joker karakterler belirtebilirsiniz (**\\***) birden çok modül belirtmek için bir ad.
 
 4. Bir koşulu silmek istiyorsanız seçin **X** koşul satırın sonunda.
 

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc824c11bca3202ecce915144909b527a2f6946a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2ead4834f1d29baff099eedbf464c1ba6344ca6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639567"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950205"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>Bir çözümde proje yüklemeyi yönetme
 Visual Studio çözümleri, çok sayıda proje içerebilir. Varsayılan Visual Studio çözüm açıldığında bir çözümdeki tüm projeleri yüklemek ve bunların tümünü yükleme işlemini tamamlayana kadar projelerinden herhangi birinin erişmek kullanıcı izin vermeyecek şekilde davranışıdır. Proje yükleme işlemi iki dakikadan fazla en son, yüklenen projelerin sayısını ve projeleri toplam sayısını gösteren bir ilerleme çubuğu görüntülenir. Bir çözümde birden çok proje ile çalışırken, kullanıcı projeleri kaldırma, ancak bu yordamı bazı dezavantajları vardır: bir çözümü yeniden derle komutunu bir parçası olarak yüklenmemiş projeler oluşturulmadı ve IntelliSense açıklamaları türleri ve üyeleri kapalı projeleri görüntülenmez.  
@@ -77,20 +77,20 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 ## <a name="detect-and-manage-solution-and-project-loading"></a>Algılama ve çözüm ve proje yüklemeyi yönetme  
  Projeler ve çözümler yükleme durumunu saptamak amacıyla çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> aşağıdaki değerlerle:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` döndürür `true` çözüm ve tüm projeleri, aksi takdirde yüklü olduğunda `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` döndürür `true` çözüm ve tüm projeleri, aksi takdirde yüklü olduğunda `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` döndürür `true` projelerin bir batch şu anda arka planda, aksi takdirde yüklenirken, `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` döndürür `true` projelerin bir batch şu anda arka planda, aksi takdirde yüklenirken, `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` döndürür `true` projelerin bir batch şu anda zaman uyumlu olarak kullanıcı komutu ya da diğer açık yük sonucunda Aksi takdirde yüklenirken, `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` döndürür `true` projelerin bir batch şu anda zaman uyumlu olarak kullanıcı komutu ya da diğer açık yük sonucunda Aksi takdirde yüklenirken, `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` döndürür `true` çözümü şu anda, aksi takdirde kapatılıyorsa `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` döndürür `true` çözümü şu anda, aksi takdirde kapatılıyorsa `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` döndürür `true` çözüm şu anda, aksi takdirde açıldığında `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` döndürür `true` çözüm şu anda, aksi takdirde açıldığında `false`.  
   
- Ayrıca projeler ve çözümler aşağıdaki yöntemlerden birini çağırarak yüklendiğinden emin olun:  
+  Ayrıca projeler ve çözümler aşağıdaki yöntemlerden birini çağırarak yüklendiğinden emin olun:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: Bu yöntemin çağrılması yöntemi döndürmeden önce yüklemek için bir çözüm içindeki projeleri zorlar.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: Bu yöntemin çağrılması yöntemi döndürmeden önce yüklemek için bir çözüm içindeki projeleri zorlar.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>: Bu yöntemi çağırmadan zorlayan projelerde `guidProject` yöntemi döndürmeden önce yüklenecek.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>: Bu yöntemi çağırmadan zorlayan projelerde `guidProject` yöntemi döndürmeden önce yüklenecek.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: Bu yöntemi çağırmadan, projede zorlar `guidProjectID` yöntemi döndürmeden önce yüklenecek.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: Bu yöntemi çağırmadan, projede zorlar `guidProjectID` yöntemi döndürmeden önce yüklenecek.  

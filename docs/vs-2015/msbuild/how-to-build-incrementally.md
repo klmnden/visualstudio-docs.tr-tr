@@ -18,12 +18,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fba24434b10a9606c800c1453d31d7d3b52b234
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 88ad4f984af2be6884005c5ec3c7dec4d7b5c6aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275060"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844631"
 ---
 # <a name="how-to-build-incrementally"></a>Nasıl Yapılır: Artımlı Olarak Derleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ Büyük bir proje oluşturduğunuzda, daha önce hala güncel olan bileşenleri 
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Giriş ve çıkışları hedef belirtmek için  
   
--   Kullanım `Inputs` ve `Outputs` özniteliklerini `Target` öğesi. Örneğin:  
+- Kullanım `Inputs` ve `Outputs` özniteliklerini `Target` öğesi. Örneğin:  
   
-    ```  
-    <Target Name="Build"  
-        Inputs="@(CSFile)"  
-        Outputs="hello.exe">  
-    ```  
+  ```  
+  <Target Name="Build"  
+      Inputs="@(CSFile)"  
+      Outputs="hello.exe">  
+  ```  
   
- [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] Giriş dosyaları zaman damgaları ve çıkış dosyalarının zaman damgalı karşılaştırın ve karar atlayın, yapı ya da kısmi bir hedefe yeniden kullanabilirsiniz. Aşağıdaki örnekte herhangi dosyası varsa `@(CSFile)` öğe listesi hello.exe Dosya yeniyse [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] hedef çalışır; Aksi takdirde atlanacak:  
+  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] Giriş dosyaları zaman damgaları ve çıkış dosyalarının zaman damgalı karşılaştırın ve karar atlayın, yapı ya da kısmi bir hedefe yeniden kullanabilirsiniz. Aşağıdaki örnekte herhangi dosyası varsa `@(CSFile)` öğe listesi hello.exe Dosya yeniyse [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] hedef çalışır; Aksi takdirde atlanacak:  
   
 ```  
 <Target Name="Build"   
@@ -67,13 +67,13 @@ Büyük bir proje oluşturduğunuzda, daha önce hala güncel olan bileşenleri 
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek, Yardım dosyaları kuramsal bir Yardım sistemine için oluşturan bir proje kullanır. Proje, kaynak .txt dosyaları Yardım sistemi tarafından kullanılan son .help dosyası üretmek için XML meta veri dosyaları ile birleştirilen Ara .content dosyaları dönüştürerek çalışır. Proje aşağıdaki kuramsal görevleri kullanır:  
   
--   `GenerateContentFiles`: .txt dosyaları .content dosyalarına dönüştürür.  
+- `GenerateContentFiles`: .txt dosyaları .content dosyalarına dönüştürür.  
   
--   `BuildHelp`: .content ve son .help dosyasını oluşturmak için XML meta veri dosyaları birleştirir.  
+- `BuildHelp`: .content ve son .help dosyasını oluşturmak için XML meta veri dosyaları birleştirir.  
   
- Proje dönüşümler girdi arasında bire bir eşleme oluşturmak için kullanır ve içinde çıkaran `GenerateContentFiles` görev. Daha fazla bilgi için [dönüştüren](../msbuild/msbuild-transforms.md). Ayrıca, `Output` öğesi çıkışları otomatik olarak kullanmak üzere ayarlanmış `GenerateContentFiles` görevi için girişler olarak `BuildHelp` görev.  
+  Proje dönüşümler girdi arasında bire bir eşleme oluşturmak için kullanır ve içinde çıkaran `GenerateContentFiles` görev. Daha fazla bilgi için [dönüştüren](../msbuild/msbuild-transforms.md). Ayrıca, `Output` öğesi çıkışları otomatik olarak kullanmak üzere ayarlanmış `GenerateContentFiles` görevi için girişler olarak `BuildHelp` görev.  
   
- Bu proje dosyasını içeren `Convert` ve `Build` hedefler. `GenerateContentFiles` Ve `BuildHelp` görevleri yerleştirildiğinde `Convert` ve `Build` her hedef artımlı olarak derlenebilir, sırasıyla hedefler. Kullanarak `Output` öğesinde, çıkışlarına `GenerateContentFiles` görev yerleştirildiğinde `ContentFile` öğesi listesinin nerede bunlar kullanılabilir için girdi olarak `BuildHelp` görev. Kullanarak `Output` öğesi bu şekilde otomatik olarak sağlar bir görev çıkışları girdi olarak başka bir görev için bireysel öğeleri listelemek veya her bir görevin elle listelerinde öğe sahip değil.  
+  Bu proje dosyasını içeren `Convert` ve `Build` hedefler. `GenerateContentFiles` Ve `BuildHelp` görevleri yerleştirildiğinde `Convert` ve `Build` her hedef artımlı olarak derlenebilir, sırasıyla hedefler. Kullanarak `Output` öğesinde, çıkışlarına `GenerateContentFiles` görev yerleştirildiğinde `ContentFile` öğesi listesinin nerede bunlar kullanılabilir için girdi olarak `BuildHelp` görev. Kullanarak `Output` öğesi bu şekilde otomatik olarak sağlar bir görev çıkışları girdi olarak başka bir görev için bireysel öğeleri listelemek veya her bir görevin elle listelerinde öğe sahip değil.  
   
 > [!NOTE]
 >  Ancak `GenerateContentFiles` hedef artımlı olarak oluşturabilirsiniz, hedefleyen tüm çıkışları için girdi olarak her zaman gereklidir `BuildHelp` hedef. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] kullanırken bir hedef tüm çıktılarını başka bir hedef için girdi olarak otomatik olarak sağlar `Output` öğesi.  

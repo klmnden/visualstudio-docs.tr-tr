@@ -18,12 +18,12 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96f689d6a0b93ef91c181e536624bb09856c2f35
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af377c3f0ff5e49e43d00395d8f08bf4498e6636
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257913"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883983"
 ---
 # <a name="making-commands-available"></a>Komutları Kullanılabilir Yapma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,29 +69,29 @@ Visual Studio için birden çok VSPackages eklendiğinde, kullanıcı arabirimi 
   
  Beşinci bir ana içerik alanı IDE'nin UI durumudur. UI bağlamı etkin komut bağlam tarafından tanımlanan `GUID`s, aşağıdaki gibi:  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Dragging_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Dragging_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
   
- Bu Guıd'lar, etkin veya devre dışı, IDE geçerli durumuna bağlı olarak işaretlenir. Aynı anda birden fazla UI bağlamı etkin olabilir.  
+  Bu Guıd'lar, etkin veya devre dışı, IDE geçerli durumuna bağlı olarak işaretlenir. Aynı anda birden fazla UI bağlamı etkin olabilir.  
   
 ### <a name="hiding-and-displaying-commands-based-on-context"></a>Bağlama göre komutları görüntüleme ve gizleme  
  Görüntüleyebilir ya da bir paket komut IDE'de paketi yüklenmeden gizleyebilirsiniz. Bunu yapmak için komut içinde paket .vsct dosyası kullanarak tanımlarsınız `DefaultDisabled`, `DefaultInvisible`, ve `DynamicVisibility` komut bayrakları ve ekleyerek bir veya daha fazla [Visibilityıtem](../../extensibility/visibilityitem-element.md) öğelerine [ VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) bölümü. Belirtilen komut bağlam olduğunda `GUID` olur etkin komut paketi yüklenmeden görüntülenir.  
@@ -113,13 +113,13 @@ Visual Studio için birden çok VSPackages eklendiğinde, kullanıcı arabirimi 
   
  Komutu, etkinleştirilmeli ve çözüm bulunduğunda gösterilen şekilde ayarlayın; diğer bir deyişle, zaman, aşağıdaki komut bağlam GUID'leri biridir etkin:  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>  
   
- Örnekte, her komut bayrağı ayrı bir fark [komut bayrağı](../../extensibility/command-flag-element.md) öğesi.  
+  Örnekte, her komut bayrağı ayrı bir fark [komut bayrağı](../../extensibility/command-flag-element.md) öğesi.  
   
 ```  
 <Button guid="guidDynamicVisibilityCmdSet" id="cmdidMyCommand"   

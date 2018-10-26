@@ -21,12 +21,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 96cde88c86552b7fad16a58839dc190d421b2bde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ce258af87dc9a7732200b410113ee778e0bfbccb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190885"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857867"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Kapsamı kaybetmeden önce verileri atın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,17 +81,17 @@ ms.locfileid: "49190885"
   
  OpenPort2 yönteminde bildirilmiş ve ayarlanmış null iki çevirmek için SerialPort nesneleri şunlardır:  
   
--   `tempPort`, yöntemi işlemleri başarılı olduğunu test etmek için kullanılır.  
+- `tempPort`, yöntemi işlemleri başarılı olduğunu test etmek için kullanılır.  
   
--   `port`, yöntemin dönüş değeri için kullanılır.  
+- `port`, yöntemin dönüş değeri için kullanılır.  
   
- `tempPort` Oluşturulur ve açılır bir `try` blok ve diğer gerekli iş aynı gerçekleştirilir `try` blok. Sonunda `try` blok, açılan bağlantı noktası atanır `port` döndürülecek nesne ve `tempPort` nesne ayarlandığında `null`.  
+  `tempPort` Oluşturulur ve açılır bir `try` blok ve diğer gerekli iş aynı gerçekleştirilir `try` blok. Sonunda `try` blok, açılan bağlantı noktası atanır `port` döndürülecek nesne ve `tempPort` nesne ayarlandığında `null`.  
   
- `finally` Blok değerini denetler `tempPort`. Null değilse, yöntem bir işlem başarısız oldu, ve `tempPort` tüm kaynakları serbest bırakıldığından emin olmak için kapatılır. Döndürülen bağlantı nesnesi yöntemi işlemleri başarılı ya da bir işlem başarısız olursa null olacaktır açılmış çevirmek için SerialPort nesne içerir.  
+  `finally` Blok değerini denetler `tempPort`. Null değilse, yöntem bir işlem başarısız oldu, ve `tempPort` tüm kaynakları serbest bırakıldığından emin olmak için kapatılır. Döndürülen bağlantı nesnesi yöntemi işlemleri başarılı ya da bir işlem başarısız olursa null olacaktır açılmış çevirmek için SerialPort nesne içerir.  
   
- [!code-csharp[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/cs/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.cs#1)]
- [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vb#1)]
- [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vboverflow.vb#1)]  
+  [!code-csharp[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/cs/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.cs#1)]
+  [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vb#1)]
+  [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vboverflow.vb#1)]  
   
 ## <a name="example"></a>Örnek  
  Varsayılan olarak, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] derleyici sahip tüm aritmetik işleçler için taşmayı denetle. Bu nedenle, herhangi bir Visual Basic aritmetik işlem fırlatabilir bir <xref:System.OverflowException>. Bu kurallar CA2000 gibi beklenmeyen ihlallerini neden olabilir. Örneğin, Visual Basic Derleyicisi, yönerge değil çıkarılması StreamReader neden olan bir özel durum oluşturabilir eklenmesi için denetimi taşma yayma çünkü aşağıdaki CreateReader1 işlevi bir CA2000 ihlaline neden olur.  

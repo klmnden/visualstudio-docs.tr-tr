@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36d001a14815e5e8e8639ba0937506a1c06d3fc2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1a7ed5322c131bd9f3b758b31169676865880fd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280577"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826498"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 genişletilebilirlik değişiklikleri
 
@@ -59,13 +59,14 @@ Visual Studio işlemi içinde çalışan kod, Visual Studio ayarları Yöneticis
 > [INSTALLDİR] Visual Studio yükleme kök dizini aşağıda gösterir. *VSIXInstaller.exe* Otomatik Doldur ancak özel dağıtım kod yazmak için lütfen okuma [Visual Studio'yu bulma](locating-visual-studio.md).
 
 * Yalnızca GAC içine yüklenen derlemeler:
-  * Bu derlemeleri artık altında yüklü * [INSTALLDIR] \Common7\IDE\*, *[INSTALLDIR] \Common7\IDE\PublicAssemblies* veya *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*. Bu klasör, Visual Studio işlemin algılama yolları bir parçasıdır.
+  * Bu derlemeleri artık altında yüklü <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> veya *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*. Bu klasör, Visual Studio işlemin algılama yolları bir parçasıdır.
+
 * Yoklama olmayan bir yol ve GAC'ye yüklenmiş derlemeleri:
   * GAC içindeki kopyalama Kurulum'dan kaldırıldı.
   * A *.pkgdef* dosyası, derleme için bir kod temel giriş belirtmek için eklenmiştir.
 
     Örneğin:
-    
+
     ```xml
     [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
     "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
@@ -81,7 +82,7 @@ Visual Studio işlemi içinde çalışan kod, Visual Studio ayarları Yöneticis
   * Kodunuzu Visual Studio çekirdek derlemeleri bulmak mümkün olacaktır.
   * Kullanmayı bir *.pkgdef* gerekirse derlemelerinizin bir yol belirtmek için dosya.
 * Visual Studio işlemi dışında uzantınızı çalışıyorsa:
-  * Visual Studio çekirdek derlemeler aranıyor göz önünde bulundurun * [INSTALLDIR] \Common7\IDE\*, *[INSTALLDIR] \Common7\IDE\PublicAssemblies* veya *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*yapılandırma dosyası veya bütünleştirilmiş kod çözücü kullanma.
+  * Visual Studio çekirdek derlemeler aranıyor göz önünde bulundurun <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> veya *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*yapılandırma dosyası veya bütünleştirilmiş kod çözücü kullanma.
 
 ## <a name="change-reduce-registry-impact"></a>Değişiklik: kayıt defteri etkiyi azaltmak
 

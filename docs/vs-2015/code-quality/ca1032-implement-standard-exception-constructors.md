@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 871381e1013face4531e90b06d680d194955e3c0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: efef441e84c4f1d51c633e3fdcb2da8d1ba3e963
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193602"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868618"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Standart özel durum oluşturucuları uygulayın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ImplementStandardExceptionConstructors|
@@ -42,15 +43,15 @@ ms.locfileid: "49193602"
 ## <a name="rule-description"></a>Kural Tanımı
  Özel durum türleri şu oluşturuculardan uygulamanız gerekir:
 
--   Genel NewException()
+- Genel NewException()
 
--   Genel NewException(string)
+- Genel NewException(string)
 
--   Genel NewException (dize, özel durum)
+- Genel NewException (dize, özel durum)
 
--   korumalı veya özel NewException (SerializationInfo, StreamingContext)
+- korumalı veya özel NewException (SerializationInfo, StreamingContext)
 
- Yapıcıların tüm ayarlamasını sağlamaktaki başarısızlık, istisnalarla başa çıkmayı zorlaştırabilir. Örneğin, bir imzaya sahip Oluşturucu `NewException(string, Exception)` diğer özel durumların neden olduğu bir özel durum oluşturmak için kullanılır. Oluşturma ve bir iç (yuvalanmış) özel durum içeren, özel durum örneği harekete Bu oluşturucu, yönetilen kod böyle bir durumda yapmalısınız olduğu. Kural gereği, ilk üç özel durum oluşturucuları ortaktır. Dördüncü Oluşturucu, mühürsüz sınıflar olarak korumalı ve korumalı sınıflardaki özel. Daha fazla bilgi için [CA2229: Serileştirme oluşturucularını uygulayın](../code-quality/ca2229-implement-serialization-constructors.md)
+  Yapıcıların tüm ayarlamasını sağlamaktaki başarısızlık, istisnalarla başa çıkmayı zorlaştırabilir. Örneğin, bir imzaya sahip Oluşturucu `NewException(string, Exception)` diğer özel durumların neden olduğu bir özel durum oluşturmak için kullanılır. Oluşturma ve bir iç (yuvalanmış) özel durum içeren, özel durum örneği harekete Bu oluşturucu, yönetilen kod böyle bir durumda yapmalısınız olduğu. Kural gereği, ilk üç özel durum oluşturucuları ortaktır. Dördüncü Oluşturucu, mühürsüz sınıflar olarak korumalı ve korumalı sınıflardaki özel. Daha fazla bilgi için [CA2229: Serileştirme oluşturucularını uygulayın](../code-quality/ca2229-implement-serialization-constructors.md)
 
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
  Bu kural ihlalini düzeltmek için eksik oluşturucular özel durumu ekleyin ve doğru erişilebilirlik sahip olduğunuzdan emin olun.

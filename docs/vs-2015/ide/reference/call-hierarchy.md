@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 07d4cdc8551f7c8a8dbbcc14f682001a4bc8d83a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86cf4e12f412e6448f4a4b7c38af8268f10d9c56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260091"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851133"
 ---
 # <a name="call-hierarchy"></a>Çağrı Hiyerarşisi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,24 +41,24 @@ ms.locfileid: "49260091"
  ![Çağrı hiyerarşisi açık bir düğümle](../../ide/reference/media/onenode.png "OneNode")  
 Çağrı hiyerarşisi penceresi  
   
--   Genişletirseniz **çağrıları için** düğüm, tüm üyeleri seçilen üyenin çağrı görüntülenir.  
+- Genişletirseniz **çağrıları için** düğüm, tüm üyeleri seçilen üyenin çağrı görüntülenir.  
   
--   Genişletirseniz **gelen çağrıları** düğümü, seçilen üye tarafından çağrılan tüm üyeleri görüntülenir.  
+- Genişletirseniz **gelen çağrıları** düğümü, seçilen üye tarafından çağrılan tüm üyeleri görüntülenir.  
   
- Ardından her biri bu alt düğüm üyeleri genişletebilirsiniz **çağrıları için** ve **gelen çağrıları** düğümleri. Bu, Arayanların, yığına gitmek aşağıdaki çizimde gösterildiği gibi sağlar.  
+  Ardından her biri bu alt düğüm üyeleri genişletebilirsiniz **çağrıları için** ve **gelen çağrıları** düğümleri. Bu, Arayanların, yığına gitmek aşağıdaki çizimde gösterildiği gibi sağlar.  
   
- ![Çağrı hiyerarşisi birden çok düğüm açık](../../ide/media/multiplenodes.png "MultipleNodes")  
-Çağrı hiyerarşisi penceresi  
+  ![Çağrı hiyerarşisi birden çok düğüm açık](../../ide/media/multiplenodes.png "MultipleNodes")  
+  Çağrı hiyerarşisi penceresi  
   
- Sanal veya soyut olarak tanımlanan üyeler için bir **geçersiz kılmaları yöntem adı** düğümü görüntülenir. Arabirim üyeleri için bir **uygulayan yöntem adı** düğümü görüntülenir. Bu Genişletilebilir düğümler aynı seviyede görünür **çağrıları için** ve **gelen çağrıları** düğümleri.  
+  Sanal veya soyut olarak tanımlanan üyeler için bir **geçersiz kılmaları yöntem adı** düğümü görüntülenir. Arabirim üyeleri için bir **uygulayan yöntem adı** düğümü görüntülenir. Bu Genişletilebilir düğümler aynı seviyede görünür **çağrıları için** ve **gelen çağrıları** düğümleri.  
   
- **Arama kapsamı** araç çubuğundaki seçenekleri içeren **My çözüm**, **geçerli proje**, ve **geçerli belge**.  
+  **Arama kapsamı** araç çubuğundaki seçenekleri içeren **My çözüm**, **geçerli proje**, ve **geçerli belge**.  
   
- Bir alt üye seçtiğinizde **çağrı hiyerarşisi** ağaç görünümü bölmesinde:  
+  Bir alt üye seçtiğinizde **çağrı hiyerarşisi** ağaç görünümü bölmesinde:  
   
--   **Çağrı hiyerarşisi** Ayrıntılar bölmesinde, tüm alt üyenin üst üyesi çağrıldığında kod satırlarını görüntüler.  
+- **Çağrı hiyerarşisi** Ayrıntılar bölmesinde, tüm alt üyenin üst üyesi çağrıldığında kod satırlarını görüntüler.  
   
--   **Kod tanımı penceresi**, açıksa, kod için seçilen üyenin adını görüntüler. Bu pencere, C# ve C++ dillerinde kullanılabilir. Bu pencere hakkında daha fazla bilgi için bkz. [Structure of Code görüntüleme](../../ide/viewing-the-structure-of-code.md).  
+- **Kod tanımı penceresi**, açıksa, kod için seçilen üyenin adını görüntüler. Bu pencere, C# ve C++ dillerinde kullanılabilir. Bu pencere hakkında daha fazla bilgi için bkz. [Structure of Code görüntüleme](../../ide/viewing-the-structure-of-code.md).  
   
 > [!NOTE]
 >  Çağrı hiyerarşisi grubu başvuruları burada bir yöntem bir olay işleyicisi eklenir veya bir temsilciye atanmış basamak içeren yöntemi bulmaz. Bir yöntem için tüm başvuruları Bul için kullanabileceğiniz **tüm başvuruları Bul** komutu.  

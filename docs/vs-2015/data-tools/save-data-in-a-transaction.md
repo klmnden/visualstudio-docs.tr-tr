@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 60f3014707fe9b06818bf9a47745ca8b253290d4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bade19778c64b6338c29db1eef8eb09a0d95fa3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208910"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874650"
 ---
 # <a name="save-data-in-a-transaction"></a>Bir işlemde veri kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,14 +112,14 @@ Bu izlenecek yol kullanarak bir işlemde veri kaydetme gösterilmektedir <xref:S
   
 #### <a name="to-modify-the-auto-generated-save-code"></a>Otomatik olarak oluşturulan kodu Kaydet değiştirmek için  
   
-1.  Seçin **Kaydet** düğmesini **CustomersBindingNavigator** (düğme disket simgesi ile).  
+1. Seçin **Kaydet** düğmesini **CustomersBindingNavigator** (düğme disket simgesi ile).  
   
-2.  Değiştirin `CustomersBindingNavigatorSaveItem_Click` yöntemini aşağıdaki kod ile:  
+2. Değiştirin `CustomersBindingNavigatorSaveItem_Click` yöntemini aşağıdaki kod ile:  
   
-     [!code-csharp[VbRaddataSaving#4](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#4)]
-     [!code-vb[VbRaddataSaving#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#4)]  
+    [!code-csharp[VbRaddataSaving#4](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#4)]
+    [!code-vb[VbRaddataSaving#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#4)]  
   
- İlgili veri değişiklikleri mutabık kılma sırasını aşağıdaki gibidir:  
+   İlgili veri değişiklikleri mutabık kılma sırasını aşağıdaki gibidir:  
   
 -   Alt kayıtları silin. (Bu durumda, kayıtları silme `Orders` tablo.)  
   

@@ -9,12 +9,12 @@ description: Edinmek ve ürün anahtarlarınızı Visual Studio aboneliklerini y
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7726470eaaec90ba5138a84901745bbde61201bd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 88fb704df9858572581d205a8c5d457203488ee3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637844"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900858"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri ürün anahtarlarını kullanma
 
@@ -79,11 +79,11 @@ Yalnızca abonelikleri etkin olan aboneler ürünleri indirebilir ve ürün anah
 
 
 Bir ürün anahtarı talep etmek için:
-1.  Visual Studio aboneliğinizde oturum açın.  Ürünleri karşıdan veya ürün anahtarlarını talep oturum açmanız gerekir.
-2.  Tıklayarak [ürün anahtarlarını](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) sekmesi.
-3.  Ürün anahtarları, ürün adına göre alfabetik olarak listelenir.  Sayfanın en üstündeki arama çubuğunu kullanarak ara veya istenen ürün adını ya da kaydırın kullanabilirsiniz.
-    > [!div class="mx-imgBorder"]
-    > ![Ürün anahtarını arayın](_img\product-keys\visio-product-key-cropped.png)
+1. Visual Studio aboneliğinizde oturum açın.  Ürünleri karşıdan veya ürün anahtarlarını talep oturum açmanız gerekir.
+2. Tıklayarak [ürün anahtarlarını](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) sekmesi.
+3. Ürün anahtarları, ürün adına göre alfabetik olarak listelenir.  Sayfanın en üstündeki arama çubuğunu kullanarak ara veya istenen ürün adını ya da kaydırın kullanabilirsiniz.
+   > [!div class="mx-imgBorder"]
+   > ![Ürün anahtarını arayın](_img/product-keys/visio-product-key-cropped.png)
 
 Bu örnekte, Visio 2010 için bir ürün anahtarını bulmak için arama çubuğuna kullandık.
 Gördüğünüz gibi Visio 2010 listelenen birkaç sürümü vardır.  Bir anahtar zaten Visio standart 2010 ve Premium 2010 Visio için istenmişti ve her ikisi de kalan dört anahtarlara sahip.  Talep anahtarlar hem Perakende anahtarları ve sayfada görüntülenir.  Talep edilen anahtarları hakkında kısa bir not kaydedebilirsiniz fark **notları** sütun.  Bu tarih ile birlikte kullanabileceğiniz **Claimed** talep anahtarları izlemek için sütun.  Örneğin, ürün anahtarı kullanarak yüklemesini etkinleştirdiğinizde notları hale getirebilir.

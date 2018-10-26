@@ -22,12 +22,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 883c2ce82dc1c4b1d8d17d9be57ced0e598840e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4e48bac812f8d87b7e65b6a2a5832a7a36e4f95c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293689"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860363"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Veri Kaynakları penceresinden sürüklendiğinde denetimin oluşturulmasını ayarlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49293689"
   
 #### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>Veri tabloları veya nesneler için oluşturulacak denetimleri ayarlamak için  
   
-1.  WPF Tasarımcısı ya da Windows Form Tasarımcısı açık olduğundan emin olun.  
+1. WPF Tasarımcısı ya da Windows Form Tasarımcısı açık olduğundan emin olun.  
   
-2.  İçinde **veri kaynakları** penceresinde veri tablosunu temsil eden bir öğe seçin ya da ayarlamak istediğiniz nesne.  
+2. İçinde **veri kaynakları** penceresinde veri tablosunu temsil eden bir öğe seçin ya da ayarlamak istediğiniz nesne.  
   
-3.  Öğeyi aşağı açılan menüsüne tıklayın ve ardından menüde aşağıdaki öğeleri biri:  
+3. Öğeyi aşağı açılan menüsüne tıklayın ve ardından menüde aşağıdaki öğeleri biri:  
   
-    -   Her veri alanı ayrı bir denetimde görüntülemek için tıklatın **ayrıntıları**. Bu eylem, veri öğesi tasarımcıya sürüklediğinizde, her bir sütun veya üst veri tablosu veya nesnenin her denetim için etiket özelliği için farklı bir veriye bağlı denetim oluşturacaksınız.  
+   - Her veri alanı ayrı bir denetimde görüntülemek için tıklatın **ayrıntıları**. Bu eylem, veri öğesi tasarımcıya sürüklediğinizde, her bir sütun veya üst veri tablosu veya nesnenin her denetim için etiket özelliği için farklı bir veriye bağlı denetim oluşturacaksınız.  
   
-    -   Tüm verileri tek bir denetimde görüntülemek için farklı bir denetim listesinde, gibi seçin **DataGrid** veya **listesi** bir WPF uygulamasında veya **DataGridView** Windows Forms'ta uygulama.  
+   - Tüm verileri tek bir denetimde görüntülemek için farklı bir denetim listesinde, gibi seçin **DataGrid** veya **listesi** bir WPF uygulamasında veya **DataGridView** Windows Forms'ta uygulama.  
   
      Mevcut denetimlerin listesinin hangi tasarımcıda sahip olduğunuz açık, .NET Framework'ün hangi sürümünün projenizin hedeflediği bağlıdır ve olup özel eklediğiniz bağlama söz konusu destek veri denetimleri **araç kutusu**. Oluşturmak istediğiniz denetim mevcut denetimlerin listesinin içinde ise, denetim listesine ekleyebilirsiniz. Daha fazla bilgi için [veri kaynakları penceresine özel denetimler ekleme](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   

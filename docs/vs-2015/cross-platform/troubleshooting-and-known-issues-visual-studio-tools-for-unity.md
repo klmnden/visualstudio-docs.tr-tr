@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 1dffa349aa94c5221e359633c7a8b4ef2e4fdde5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3fc044d7b59a1d9bfa48139c479625e47440b5e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250626"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928691"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Sorun Giderme ve Bilinen Sorunlar (Unity için Visual Studio Araçları)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,21 +64,21 @@ Bu bölümde, bilinen sorunların açıklamalarını Unity için Visual Studio A
   
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>Visual Studio Unity için Visual Studio Araçları ile hata ayıklama sırasında donuyor bildirmek için  
   
-1.  Visual Studio'nun yeni bir örneğini açın.  
+1. Visual Studio'nun yeni bir örneğini açın.  
   
-2.  İşleme İliştir'iletişim kutusunda açın. Yeni Visual Studio örneğinde ana menüsündeki seçin **hata ayıklama**, **iliştirme**.  
+2. İşleme İliştir'iletişim kutusunda açın. Yeni Visual Studio örneğinde ana menüsündeki seçin **hata ayıklama**, **iliştirme**.  
   
-3.  Hata ayıklayıcı, Visual Studio dondurulmuş örneğine ekleyin. İçinde **iliştirme** iletişim kutusunda, Visual Studio'dan dondurulmuş örneğini seçin **kullanılabilir işlemler** tablosuna ve sonra seçin **iliştirme** düğmesi.  
+3. Hata ayıklayıcı, Visual Studio dondurulmuş örneğine ekleyin. İçinde **iliştirme** iletişim kutusunda, Visual Studio'dan dondurulmuş örneğini seçin **kullanılabilir işlemler** tablosuna ve sonra seçin **iliştirme** düğmesi.  
   
-4.  Hata ayıklayıcı duraklatın. Yeni Visual Studio örneğinde ana menüsündeki seçin **hata ayıklama**, **tümünü Kes** veya tuşuna basarak **Ctrl + Alt + Break**.  
+4. Hata ayıklayıcı duraklatın. Yeni Visual Studio örneğinde ana menüsündeki seçin **hata ayıklama**, **tümünü Kes** veya tuşuna basarak **Ctrl + Alt + Break**.  
   
-5.  Bir iş parçacığı dökümü oluşturun. Komut penceresinde komut enter tuşuna basarak aşağıdaki **Enter**.  
+5. Bir iş parçacığı dökümü oluşturun. Komut penceresinde komut enter tuşuna basarak aşağıdaki **Enter**.  
   
-    ```powershell  
-    Debug.ListCallStack /AllThreads /ShowExternalCode  
-    ```  
+   ```powershell  
+   Debug.ListCallStack /AllThreads /ShowExternalCode  
+   ```  
   
-     Yapmanız gerekebilecek **komut** pencere ilk görünür. Visual Studio'da ana menüde seçin **görünümü**, **diğer Windows**, **komut penceresi**.  
+    Yapmanız gerekebilecek **komut** pencere ilk görünür. Visual Studio'da ana menüde seçin **görünümü**, **diğer Windows**, **komut penceresi**.  
   
-6.  Son olarak, iş parçacığı-dökümü gönderme [ vstusp@microsoft.com ](mailto:vstusp@microsoft.com), ne zaman yapmakta olduğunuz açıklaması ile birlikte Visual Studio dondurulmuş hale geldi.
+6. Son olarak, iş parçacığı-dökümü gönderme [ vstusp@microsoft.com ](mailto:vstusp@microsoft.com), ne zaman yapmakta olduğunuz açıklaması ile birlikte Visual Studio dondurulmuş hale geldi.
 

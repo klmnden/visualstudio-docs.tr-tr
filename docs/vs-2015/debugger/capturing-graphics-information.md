@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aef056176df4f760941cc6775faab7b232892520
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a66d13e9fef647432f05dc01ce60732a0c40b16
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289386"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855410"
 ---
 # <a name="capturing-graphics-information"></a>Grafik Bilgilerini Yakalama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,30 +35,30 @@ ms.locfileid: "49289386"
   
 #### <a name="to-run-your-app-under-graphics-diagnostics"></a>Uygulamanızı Grafik Tanılama altında çalıştırmak için  
   
--   Menü çubuğunda, **hata ayıklama**, **grafik**, **tanılamayı Başlat**. (Klavye: Alt+F5 tuşlarına basın)  
+- Menü çubuğunda, **hata ayıklama**, **grafik**, **tanılamayı Başlat**. (Klavye: Alt+F5 tuşlarına basın)  
   
--   Üzerinde **grafik** araç seçin **tanılamayı Başlat** düğmesi.  
+- Üzerinde **grafik** araç seçin **tanılamayı Başlat** düğmesi.  
   
- Bir uygulama Grafik Tanılama altında çalışırken, belirli grafik bilgisi türleri sürekli olarak yakalanır; bunlar cihaz kurulumu, takas zincirinin oluşturulması, grafik nesnelerinin ve kaynakların oluşturulması ve birden fazla kareyi etkileyen diğer önemli olayları içerir. Aynı zamanda, belirli kareler hakkında ayrıntılı bilgiler yakalayabilirsiniz; Direct3D nesneleri ve bunları destekleyen kaynaklar ile birlikte çizim çağrıları ve hesaplayıcı-gölgelendirici sevkleri buna dahildir.  
+  Bir uygulama Grafik Tanılama altında çalışırken, belirli grafik bilgisi türleri sürekli olarak yakalanır; bunlar cihaz kurulumu, takas zincirinin oluşturulması, grafik nesnelerinin ve kaynakların oluşturulması ve birden fazla kareyi etkileyen diğer önemli olayları içerir. Aynı zamanda, belirli kareler hakkında ayrıntılı bilgiler yakalayabilirsiniz; Direct3D nesneleri ve bunları destekleyen kaynaklar ile birlikte çizim çağrıları ve hesaplayıcı-gölgelendirici sevkleri buna dahildir.  
   
 #### <a name="to-capture-a-frame"></a>Bir kareyi yakalamak için  
   
--   Visual Studio'da üzerinde **grafik** araç seçin **kare Yakala** düğmesi![grafik yakalama düğmesinin simgesi](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
+- Visual Studio'da üzerinde **grafik** araç seçin **kare Yakala** düğmesi![grafik yakalama düğmesinin simgesi](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
   
--   Klavyede Print Screen tuşuna basın.  
+- Klavyede Print Screen tuşuna basın.  
   
-    > [!NOTE]
-    >  Bir uygulama altında çalışırken **grafik tanılama**, Print Screen tuşu yalnızca grafik bilgisi karesi yakalamak için kullanılabilir; normal işlevini gerçekleştirmez. Başka bir uygulama odakta olsa bile, grafik bilgilerini yakalamayı durduruncaya kadar (genellikle hata ayıklamayı durdurarak veya uygulamadan normal yolla çıkarak) bu durum devam eder.  
+  > [!NOTE]
+  >  Bir uygulama altında çalışırken **grafik tanılama**, Print Screen tuşu yalnızca grafik bilgisi karesi yakalamak için kullanılabilir; normal işlevini gerçekleştirmez. Başka bir uygulama odakta olsa bile, grafik bilgilerini yakalamayı durduruncaya kadar (genellikle hata ayıklamayı durdurarak veya uygulamadan normal yolla çıkarak) bu durum devam eder.  
   
--   Visual Studio yakalama arabiriminde seçtiğiniz **kare Yakala** düğmesi bulunan yukarıda **Tanılama oturumu** zaman çizelgesi veya büyük seçin **kare Yakala** düğmesi Aşağıda bulunan **Saniyedeki** yüzme kulvarı ve daha önce yakalanan çerçeve sağındaki. Her iki düğme, aşağıdaki resimde vurgulanmıştır.  
+- Visual Studio yakalama arabiriminde seçtiğiniz **kare Yakala** düğmesi bulunan yukarıda **Tanılama oturumu** zaman çizelgesi veya büyük seçin **kare Yakala** düğmesi Aşağıda bulunan **Saniyedeki** yüzme kulvarı ve daha önce yakalanan çerçeve sağındaki. Her iki düğme, aşağıdaki resimde vurgulanmıştır.  
   
-     ![GPU kullanımı aracı kullanarak çerçevelerini yakalayın. ](../debugger/media/pix-gpu-usage-tool-capture-frame.png "pix_gpu_usage_tool_capture_frame")  
+   ![GPU kullanımı aracı kullanarak çerçevelerini yakalayın. ](../debugger/media/pix-gpu-usage-tool-capture-frame.png "pix_gpu_usage_tool_capture_frame")  
   
-     Çerçeveleri incelemek hazır olduğunuzda, yakalanan, başlangıç **Visual Studio grafik Çözümleyicisi** izleyerek **çerçeve...** Görüntü küçük resimleri üstüne ya da küçük resim çift tıklayarak bağlayın.  
+   Çerçeveleri incelemek hazır olduğunuzda, yakalanan, başlangıç **Visual Studio grafik Çözümleyicisi** izleyerek **çerçeve...** Görüntü küçük resimleri üstüne ya da küçük resim çift tıklayarak bağlayın.  
   
- Yalnızca tam kareler yakalanabilir; bu nedenle bir yakalama başlattığınızda, kaydedilen aslında bir sonraki karenin grafik bilgileridir. Kayıt, yakalama işlemini başlattığınız kare sunulduktan hemen sonra başlar ve yakalanan kare sunulduğunda sona erer. Uygulama Grafik Tanılama altında çalışırken istediğiniz sayıda kare yakalayabilirsiniz. Hiçbir kare yakalamazsanız, grafik günlüğü atılır.  
+  Yalnızca tam kareler yakalanabilir; bu nedenle bir yakalama başlattığınızda, kaydedilen aslında bir sonraki karenin grafik bilgileridir. Kayıt, yakalama işlemini başlattığınız kare sunulduktan hemen sonra başlar ve yakalanan kare sunulduğunda sona erer. Uygulama Grafik Tanılama altında çalışırken istediğiniz sayıda kare yakalayabilirsiniz. Hiçbir kare yakalamazsanız, grafik günlüğü atılır.  
   
- Çerçeve yakalama sırasında Visual Studio Tanılama oturumu (.diagsession) penceresinde görüntüler. Bu pencereyi kapatın, hata ayıklamayı durdurmak veya uygulamayı kapatmak, bu günlüğe başka kareler yakalayamazsınız. Daha fazla grafik bilgisi yakalamak için uygulamayı yeni bir tanılama oturumu yeniden başlatmak için grafik tanılama altında çalıştırmak sahip.  
+  Çerçeve yakalama sırasında Visual Studio Tanılama oturumu (.diagsession) penceresinde görüntüler. Bu pencereyi kapatın, hata ayıklamayı durdurmak veya uygulamayı kapatmak, bu günlüğe başka kareler yakalayamazsınız. Daha fazla grafik bilgisi yakalamak için uygulamayı yeni bir tanılama oturumu yeniden başlatmak için grafik tanılama altında çalıştırmak sahip.  
   
 ### <a name="graphics-diagnostics-capture-options"></a>Grafik tanılama yakalama seçenekleri  
  Tüm grafik olaylarını veya sınırlı bir alt kümesi için çağrı yığınlarını Topla, baş üstü, yakalama devre dışı bırakma ve etkinleştirme veya devre dışı yakalama uyumluluk modu yakalama özelliğini yapılandırabilirsiniz.  

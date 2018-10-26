@@ -15,12 +15,12 @@ ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ae3c50d33cefe6074f42e5923b5a0bf49cc2f22
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1b707e92c3d7b576368b5d00459c2b329928a242
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213778"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843177"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>İç içe Projeler için Komut İşlemesi Uygulama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,27 +36,27 @@ IDE geçirilecek komutları geçirebilirsiniz <xref:Microsoft.VisualStudio.Shell
   
 #### <a name="to-implement-command-handling"></a>Komut işleme uygulamak için  
   
-1.  Kullanıcı bir iç içe proje ya da bir düğüm iç içe geçmiş bir projede seçtiğinde:  
+1. Kullanıcı bir iç içe proje ya da bir düğüm iç içe geçmiş bir projede seçtiğinde:  
   
-    1.  IDE çağrıları <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> yöntemi.  
+   1. IDE çağrıları <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> yöntemi.  
   
-     — veya —  
+      — veya —  
   
-    1.  Çözüm Gezgini'nde, bir kısayol menü komutu gibi bir hiyerarşi penceresinde komut geldiyse IDE çağırır <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> projenin üst yöntemi.  
+   2. Çözüm Gezgini'nde, bir kısayol menü komutu gibi bir hiyerarşi penceresinde komut geldiyse IDE çağırır <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> projenin üst yöntemi.  
   
-2.  Ana proje geçirilecek parametreler inceleyebilirsiniz `QueryStatus`, gibi `pguidCmdGroup` ve `prgCmds`, ana proje komutları filtre olup olmadığını belirlemek için. Ana proje komutları filtrelemek için uygulanmışsa ayarlamanız gerekir:  
+2. Ana proje geçirilecek parametreler inceleyebilirsiniz `QueryStatus`, gibi `pguidCmdGroup` ve `prgCmds`, ana proje komutları filtre olup olmadığını belirlemek için. Ana proje komutları filtrelemek için uygulanmışsa ayarlamanız gerekir:  
   
-    ```  
-    prgCmds[0].cmdf = OLECMDF_SUPPORTED;  
-    // make sure it is disabled  
-    prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;  
-    ```  
+   ```  
+   prgCmds[0].cmdf = OLECMDF_SUPPORTED;  
+   // make sure it is disabled  
+   prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;  
+   ```  
   
-     Ana proje döndürmelidir sonra `S_OK`.  
+    Ana proje döndürmelidir sonra `S_OK`.  
   
-     Ana proje komutu filtrelemez varsa, yalnızca döndürmelidir `S_OK`. Bu durumda, IDE alt projeye komutu otomatik olarak yönlendirir.  
+    Ana proje komutu filtrelemez varsa, yalnızca döndürmelidir `S_OK`. Bu durumda, IDE alt projeye komutu otomatik olarak yönlendirir.  
   
-     Komut alt projeye yönlendirmek ana proje yok. IDE, bu görevi gerçekleştiren...  
+    Komut alt projeye yönlendirmek ana proje yok. IDE, bu görevi gerçekleştiren...  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   

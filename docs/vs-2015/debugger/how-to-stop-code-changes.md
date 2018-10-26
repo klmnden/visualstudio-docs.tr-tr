@@ -25,12 +25,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ebe9a7d566c1e5b7748f02817564a58fa7eae934
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6d869e3e6be26db871deb3afc7bc398025cc15d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306351"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862365"
 ---
 # <a name="how-to-stop-code-changes"></a>Nasıl Yapılır: Kod Değişikliklerini Durdurma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Düzenle ve devam ederken kod değişikliklerini uygulama sürecinde, işlemi du
   
 ### <a name="to-stop-applying-code-changes"></a>Kod değişiklikleri uygulanırken durdurmak için  
   
--   Seçin **kod değişikliklerini uygulamayı Durdur'u** gelen **hata ayıklama** menüsü.  
+- Seçin **kod değişikliklerini uygulamayı Durdur'u** gelen **hata ayıklama** menüsü.  
   
- Bu menü öğesi, yalnızca kod değişiklikleri uygulanıyor bile görülebilir.  
+  Bu menü öğesi, yalnızca kod değişiklikleri uygulanıyor bile görülebilir.  
   
- Bu seçeneği seçerseniz, hiçbir kod değişikliği kabul edilir.  
+  Bu seçeneği seçerseniz, hiçbir kod değişikliği kabul edilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Düzenle ve devam et](../debugger/edit-and-continue.md)   

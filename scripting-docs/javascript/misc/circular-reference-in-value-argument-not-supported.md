@@ -21,21 +21,21 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d25489065ceece41108a75c9d3763a95e4adb924
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788774"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949430"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>Değer bağımsız değişkeninde döngüsel başvuru desteklenmez
-Çağırmak için bir girişimde bulunuldu `JSON.stringify` geçersiz bir değere sahip. `value` Bağımsız değişkeni, bir dizi veya nesne, döngüsel başvuru içeriyor.  
+Çağırmak için bir girişimde bulunuldu `JSON.stringify` , geçerli olmayan bir değere sahip. `value` Bağımsız değişkeni, bir dizi veya nesne, döngüsel başvuru içeriyor.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
 -   Döngüsel başvuru bağımsız değişkende kaldırın.  
   
 ## <a name="example"></a>Örnek  
- Bu örnek kodda bir çalışma zamanı hatası neden olur `john` başvuruyor `mary` ve `mary` başvuruyor `john`. Döngüsel başvuru kaldırmak için aşağıdakilerden birini kaldırın veya unset özelliği `brother` gelen `mary` nesne veya `sister` özelliğinden `john` nesnesi.  
+ Bu örnekteki kod bir çalışma zamanı hatasına neden olur `john` bir başvuru içeriyor `mary` ve `mary` bir başvuru içeriyor `john`. Döngüsel başvuru kaldırmak için ya da kaldırın veya ayarlama özelliği `brother` gelen `mary` nesne veya `sister` özelliğinden `john` nesne.  
   
 ```JavaScript  
 var john = new Object();  
@@ -50,4 +50,4 @@ var error = JSON.stringify(john);
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [JSON nesnesi](../../javascript/reference/json-object-javascript.md)   
  [JSON.parse işlevi](../../javascript/reference/json-parse-function-javascript.md)   
- [JavaScript çalışma zamanı hataları](../../javascript/reference/javascript-run-time-errors.md)
+ [JavaScript Çalışma zamanı Hataları](../../javascript/reference/javascript-run-time-errors.md)

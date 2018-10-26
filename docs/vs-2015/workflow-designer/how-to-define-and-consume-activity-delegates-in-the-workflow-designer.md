@@ -12,33 +12,33 @@ caps.latest.revision: 3
 author: steved0x
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 5f7b69d0fb1ccd547d522d65fab803bd79a10ed2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f99816153870884f868a6b229068bdc281408337
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183384"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865498"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Nasıl yapılır: tanımlama ve iş akışı tasarımcısında etkinlik temsilcileri kullanma
 [!INCLUDE[net_v45](../includes/net-v45-md.md)] için yeni bir out-of-box Tasarımcı içerir <xref:System.Activities.Statements.InvokeDelegate> etkinlik. Bu tasarımcı, türetilen etkinlik temsilcileri atamak için kullanılabilir <xref:System.Activities.ActivityDelegate>, gibi <xref:System.Activities.ActivityAction> veya <xref:System.Activities.ActivityFunc%601>.  
   
 ### <a name="define-an-activity-delegate"></a>Bir etkinlik temsilci tanımlama  
   
-1.  İçinde [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]seçin **dosya**, **yeni**, **proje**. Seçin **iş akışı** solda, düğüm ve **iş akışı konsol uygulaması** sağdaki şablonu. (İstenirse) Projeyi adlandırın ve tıklayın **Tamam**.  
+1. İçinde [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]seçin **dosya**, **yeni**, **proje**. Seçin **iş akışı** solda, düğüm ve **iş akışı konsol uygulaması** sağdaki şablonu. (İstenirse) Projeyi adlandırın ve tıklayın **Tamam**.  
   
-2.  Projeye sağ tıklayarak **Çözüm Gezgini** seçip **Ekle**, **yeni öğe...** . Seçin **iş akışı** solda, düğüm ve **etkinlik** sağdaki şablonu. Yeni Etkinlik adı **MyForEach.xaml** tıklatıp **Tamam**. Etkinlik iş akışı Tasarımcısı'nda açılır.  
+2. Projeye sağ tıklayarak **Çözüm Gezgini** seçip **Ekle**, **yeni öğe...** . Seçin **iş akışı** solda, düğüm ve **etkinlik** sağdaki şablonu. Yeni Etkinlik adı **MyForEach.xaml** tıklatıp **Tamam**. Etkinlik iş akışı Tasarımcısı'nda açılır.  
   
-3.  İş Akışı Tasarımcısı'nda tıklatın **bağımsız değişkenleri** sekmesi.  
+3. İş Akışı Tasarımcısı'nda tıklatın **bağımsız değişkenleri** sekmesi.  
   
-4.  Tıklayın **bağımsız değişken oluşturma**. Yeni bağımsız değişken adı **öğeleri**.  
+4. Tıklayın **bağımsız değişken oluşturma**. Yeni bağımsız değişken adı **öğeleri**.  
   
-5.  İçinde **bağımsız değişken türü** sütunundaki **[T] dizi**.  
+5. İçinde **bağımsız değişken türü** sütunundaki **[T] dizi**.  
   
-6.  Tür tarayıcıda seçin **nesne**. Tıklayın **Tamam**.  
+6. Tür tarayıcıda seçin **nesne**. Tıklayın **Tamam**.  
   
-7.  Tıklayın **bağımsız değişken oluşturma** yeniden. Yeni bağımsız değişken adı **gövdesi**. İçinde **yönü** yeni bağımsız değişken için seçim sütunu **özelliği**.  
+7. Tıklayın **bağımsız değişken oluşturma** yeniden. Yeni bağımsız değişken adı **gövdesi**. İçinde **yönü** yeni bağımsız değişken için seçim sütunu **özelliği**.  
   
-8.  Bağımsız değişken türü sütununda seçin **vyhledat Typy...**  
+8. Bağımsız değişken türü sütununda seçin **vyhledat Typy...**  
   
 9. Tür tarayıcıya girmek **ActivityAction** içinde **tür adı** alan. Seçin **ActivityAction\<T >** ağaç görünümünde. Seçin **nesne** atamak üzere görünen açılan menüdeki **ActivityAction\<Nesne >** bağımsız değişkeni.  
   
@@ -64,23 +64,23 @@ ms.locfileid: "49183384"
   
 20. Ayarlama **için** özelliği <xref:System.Activities.Statements.Assign> etkinliğini **dizin**. Ayarlama **değer** özelliği **atama** etkinliğini **dizini + 1**.  
   
- Özel **MyForEach** etkinliği artık içine geçirilen her değerin bir kez rastgele bir etkinlik çağırma **öğeleri** etkinliği için girdi olarak toplama değerleri koleksiyonu.  
+    Özel **MyForEach** etkinliği artık içine geçirilen her değerin bir kez rastgele bir etkinlik çağırma **öğeleri** etkinliği için girdi olarak toplama değerleri koleksiyonu.  
   
 ### <a name="use-the-custom-activity-in-a-workflow"></a>Bir iş akışında özel etkinlik kullanma  
   
-1.  Tuşuna basarak projeyi oluşturun **Ctrl + Shift + B**.  
+1. Tuşuna basarak projeyi oluşturun **Ctrl + Shift + B**.  
   
-2.  İçinde **Çözüm Gezgini**açın **Workflow1.xaml** Tasarımcısı'nda.  
+2. İçinde **Çözüm Gezgini**açın **Workflow1.xaml** Tasarımcısı'nda.  
   
-3.  Sürükleme bir **MyForEach** araç kutusundan bir etkinlik Tasarımcı yüzeyine bırakın. Etkinlik araç kutusunu projeyle aynı ada sahip bir bölümünde olacaktır.  
+3. Sürükleme bir **MyForEach** araç kutusundan bir etkinlik Tasarımcı yüzeyine bırakın. Etkinlik araç kutusunu projeyle aynı ada sahip bir bölümünde olacaktır.  
   
-4.  Ayarlama **öğeleri** özelliği **MyForEach** etkinliğini **yeni Object [] {1, "abc"}**.  
+4. Ayarlama **öğeleri** özelliği **MyForEach** etkinliğini **yeni Object [] {1, "abc"}**.  
   
-5.  Sürükleme bir <xref:System.Activities.Statements.WriteLine> etkinliğinden **Temelleri** araç kutusuna bölümünü **temsilci: gövdesi** bölümünü **MyForEach** etkinlik.  
+5. Sürükleme bir <xref:System.Activities.Statements.WriteLine> etkinliğinden **Temelleri** araç kutusuna bölümünü **temsilci: gövdesi** bölümünü **MyForEach** etkinlik.  
   
-6.  Ayarlama **metin** özelliği <xref:System.Activities.Statements.WriteLine> etkinliğini **Argument.ToString()**.  
+6. Ayarlama **metin** özelliği <xref:System.Activities.Statements.WriteLine> etkinliğini **Argument.ToString()**.  
   
- İş akışı yürütüldüğünde, konsolda şunu verecektir:  
+   İş akışı yürütüldüğünde, konsolda şunu verecektir:  
   
- **1**   
-**abc**
+   **1**   
+   **abc**

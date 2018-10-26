@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0e924acf48af293fedae2e9c47347e336ed6450f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14421b6baede8f946a9bdfd86759e78657e1e603
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222904"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817437"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Nasıl Yapılır: İşlemler Görünümünde İşlem Arama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,24 +31,24 @@ Belirli bir işlem işlemler görünümünde işlem kimliği veya modül dizesi 
   
 ### <a name="to-search-for-a-process-in-processes-view"></a>İşlemler görünümünde işlem aramak için  
   
-1.  Bu nedenle pencereleri bu Spy ++ ve etkin bir [işlemler görünümü](../debugger/processes-view.md) penceresi görünür.  
+1. Bu nedenle pencereleri bu Spy ++ ve etkin bir [işlemler görünümü](../debugger/processes-view.md) penceresi görünür.  
   
-2.  Gelen **arama** menüsünde seçin **bulma işlemi**  
+2. Gelen **arama** menüsünde seçin **bulma işlemi**  
   
-     [İşlem arama iletişim kutusu](../debugger/process-search-dialog-box.md) açılır.  
+    [İşlem arama iletişim kutusu](../debugger/process-search-dialog-box.md) açılır.  
   
-3.  İşlem kimliği veya modül dizesi arama ölçütü olarak yazın.  
+3. İşlem kimliği veya modül dizesi arama ölçütü olarak yazın.  
   
-4.  Değerleri belirtmek istediğiniz değil herhangi bir alanı temizleyin.  
+4. Değerleri belirtmek istediğiniz değil herhangi bir alanı temizleyin.  
   
-    > [!TIP]
-    >  Bulma modülü tarafından sahip olunan tüm işlemler için temizleyin **işlem** kutusuna ve modül adı yazın **Modülü** kutusu. Ardından **Sonrakini Bul** işlemleri için aramaya devam etmek için.  
+   > [!TIP]
+   >  Bulma modülü tarafından sahip olunan tüm işlemler için temizleyin **işlem** kutusuna ve modül adı yazın **Modülü** kutusu. Ardından **Sonrakini Bul** işlemleri için aramaya devam etmek için.  
   
-5.  Seçin **yukarı** veya **aşağı** için ilk arama yönünü.  
+5. Seçin **yukarı** veya **aşağı** için ilk arama yönünü.  
   
-6.  **Tamam**'ı tıklatın.  
+6. **Tamam**'ı tıklatın.  
   
- Eşleşen işlem bulunamadı, içinde vurgulanır **işlem görünümü** penceresi.
+   Eşleşen işlem bulunamadı, içinde vurgulanır **işlem görünümü** penceresi.
 
 
 

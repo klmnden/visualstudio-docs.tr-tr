@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0da7118d1ee420e5e4a415ea8f32d9ba8f1771e6
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 7e87b1a71cde4d6fb37e05fa99698b636ff87bf4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880103"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876730"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] Uygulamaları oluşturmaya yönelik bir platformdur. MSBuild olarak da bilinen olduğundan, bu altyapı, yapı platformunu nasıl işler ve yazılım yapıları denetleyen bir proje dosyası için bir XML Şeması sağlar. Visual Studio MSBuild kullanır, ancak Visual Studio'ya bağımlı değildir. Çağırarak *msbuild.exe* proje veya çözüm dosya düzenlemek ve Visual Studio'nun yüklü olmayan ortamlarda ürünler oluşturun.
@@ -170,19 +170,19 @@ Daha fazla bilgi için [çoklu hedefleme](../msbuild/msbuild-multitargeting-over
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-|Başlık|Açıklama|
-|-----------|-----------------|
-|[İzlenecek yol: sıfırdan bir MSBuild proje dosyası oluşturma](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Basit bir proje dosyasının aşamalı olarak, yalnızca bir metin düzenleyicisi kullanarak oluşturmanız gösterilmektedir.|
-|[İzlenecek Yol: MSBuild Kullanma](../msbuild/walkthrough-using-msbuild.md)|MSBuild'in yapı bloklarını tanıtır ve MSBuild projelerinin Visual Studio IDE kapatılmadan hata ayıklama yazma ve düzenleme işlemi gösterilmektedir.|
-|[MSBuild kavramları](../msbuild/msbuild-concepts.md)|MSBuild'in dört yapı bloğunu sunar: özellikler, öğeleri, hedefler ve görevler.|
-|[Öğeler](../msbuild/msbuild-items.md)|Ardındaki genel kavramları açıklar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dosya biçimi ve nasıl parçaları bir araya getireceğinizi.|
-|[MSBuild özellikleri](../msbuild/msbuild-properties.md)|Özellikler ve özellik koleksiyonları tanıtır. Özellikler, yapıları yapılandırmak için kullanılan anahtar/değer çiftleri olur.|
-|[Hedefler](../msbuild/msbuild-targets.md)|Belirli bir sırada görevleri gruplandırın ve komut satırında çağrılacak yapı işlemi bölümlerinin etkinleştirme açıklanmaktadır.|
-|[Görevler](../msbuild/msbuild-tasks.md)|Tarafından kullanılan yürütülebilir kod biriminin nasıl oluşturulacağını gösterir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] CAN atomik yapı işlemleri gerçekleştirmek için.|
-|[Koşullar](../msbuild/msbuild-conditions.md)|Nasıl kullanılacağı ele alınmaktadır `Condition` özniteliğinin bir MSBuild öğesinde.|
-|[Gelişmiş kavramlar](../msbuild/msbuild-advanced-concepts.md)|Toplu işleme, dönüşümler, çoklu hedefleme ve diğer gelişmiş teknikleri gerçekleştirmek sunar.|
-|[MSBuild'de Günlük Kaydı](../msbuild/logging-in-msbuild.md)|Yapı olaylarının, iletilerin ve hataların günlüğünün nasıl açıklar.|
-|[Ek kaynaklar](../msbuild/additional-msbuild-resources.md)|MSBuild hakkında daha fazla bilgi için topluluk ve destek kaynaklarını listeler.|
+| Başlık | Açıklama |
+| - | - |
+| [İzlenecek yol: sıfırdan bir MSBuild proje dosyası oluşturma](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Basit bir proje dosyasının aşamalı olarak, yalnızca bir metin düzenleyicisi kullanarak oluşturmanız gösterilmektedir. |
+| [İzlenecek Yol: MSBuild Kullanma](../msbuild/walkthrough-using-msbuild.md) | MSBuild'in yapı bloklarını tanıtır ve MSBuild projelerinin Visual Studio IDE kapatılmadan hata ayıklama yazma ve düzenleme işlemi gösterilmektedir. |
+| [MSBuild kavramları](../msbuild/msbuild-concepts.md) | MSBuild'in dört yapı bloğunu sunar: özellikler, öğeleri, hedefler ve görevler. |
+| [Öğeler](../msbuild/msbuild-items.md) | Ardındaki genel kavramları açıklar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dosya biçimi ve nasıl parçaları bir araya getireceğinizi. |
+| [MSBuild özellikleri](../msbuild/msbuild-properties.md) | Özellikler ve özellik koleksiyonları tanıtır. Özellikler, yapıları yapılandırmak için kullanılan anahtar/değer çiftleri olur. |
+| [Hedefler](../msbuild/msbuild-targets.md) | Belirli bir sırada görevleri gruplandırın ve komut satırında çağrılacak yapı işlemi bölümlerinin etkinleştirme açıklanmaktadır. |
+| [Görevler](../msbuild/msbuild-tasks.md) | Tarafından kullanılan yürütülebilir kod biriminin nasıl oluşturulacağını gösterir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] CAN atomik yapı işlemleri gerçekleştirmek için. |
+| [Koşullar](../msbuild/msbuild-conditions.md) | Nasıl kullanılacağı ele alınmaktadır `Condition` özniteliğinin bir MSBuild öğesinde. |
+| [Gelişmiş kavramlar](../msbuild/msbuild-advanced-concepts.md) | Toplu işleme, dönüşümler, çoklu hedefleme ve diğer gelişmiş teknikleri gerçekleştirmek sunar. |
+| [MSBuild'de Günlük Kaydı](../msbuild/logging-in-msbuild.md) | Yapı olaylarının, iletilerin ve hataların günlüğünün nasıl açıklar. |
+| [Ek kaynaklar](../msbuild/additional-msbuild-resources.md) | MSBuild hakkında daha fazla bilgi için topluluk ve destek kaynaklarını listeler. |
 
 ## <a name="reference"></a>Başvuru
  [MSBuild başvurusu](../msbuild/msbuild-reference.md) başvuru bilgilerini içeren konulara bağlantılar.

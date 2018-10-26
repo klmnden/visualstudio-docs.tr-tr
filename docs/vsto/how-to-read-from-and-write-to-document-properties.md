@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 14cecb63e7f96e58b17672bbb5cb67a345b9ece8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: de9ae85156f9d272901893c74c5d2c9729a0a3dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677862"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924234"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>Nasıl yapılır: gelen okuma ve yazma için belge özellikleri
   Bir belge yanı sıra belge özellikleri depolayabilirsiniz. Office uygulamaları birkaç yazar, başlık ve konu gibi yerleşik özellikler sağlar. Bu konu, Microsoft Office Excel ve Microsoft Office Word belgesi özelliklerini ayarlamak gösterilmektedir.  
@@ -35,13 +35,13 @@ ms.locfileid: "35677862"
 ## <a name="set-document-properties-in-excel"></a>Excel belge özelliklerini ayarlama  
  Yerleşik özellikler Excel'de çalışmak için aşağıdaki özellikleri kullanın:  
   
--   Bir belge düzeyi projede kullanmak <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> özelliği `ThisWorkbook` sınıfı.  
+- Bir belge düzeyi projede kullanmak <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> özelliği `ThisWorkbook` sınıfı.  
   
--   Bir VSTO eklenti projesinde kullanmak <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> özelliği bir <xref:Microsoft.Office.Interop.Excel.Workbook> nesne.  
+- Bir VSTO eklenti projesinde kullanmak <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> özelliği bir <xref:Microsoft.Office.Interop.Excel.Workbook> nesne.  
   
- Bu özellikleri döndürür bir <xref:Microsoft.Office.Core.DocumentProperties> bir koleksiyon nesne, <xref:Microsoft.Office.Core.DocumentProperty> nesneleri. Kullanabileceğiniz `Item` adı veya dizin koleksiyonundaki belirli bir özelliği almak için koleksiyonun özelliği.  
+  Bu özellikleri döndürür bir <xref:Microsoft.Office.Core.DocumentProperties> bir koleksiyon nesne, <xref:Microsoft.Office.Core.DocumentProperty> nesneleri. Kullanabileceğiniz `Item` adı veya dizin koleksiyonundaki belirli bir özelliği almak için koleksiyonun özelliği.  
   
- Aşağıdaki kod örneği, yerleşik değiştirileceği gösterilmektedir **düzeltme numarası** bir belge düzeyi projede özelliği.  
+  Aşağıdaki kod örneği, yerleşik değiştirileceği gösterilmektedir **düzeltme numarası** bir belge düzeyi projede özelliği.  
   
 ### <a name="to-change-the-revision-number-property-in-excel"></a>Özelliğindeki düzeltme numarasını değiştirmek için  
   
@@ -58,13 +58,13 @@ ms.locfileid: "35677862"
 ## <a name="set-document-properties-in-word"></a>Word'de belge özelliklerini ayarlama  
  Word yerleşik özellikleri ile çalışmak için aşağıdaki özellikleri kullanın:  
   
--   Bir belge düzeyi projede kullanmak <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> özelliği `ThisDocument` sınıfı.  
+- Bir belge düzeyi projede kullanmak <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> özelliği `ThisDocument` sınıfı.  
   
--   Bir VSTO eklenti projesinde kullanmak <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> özelliği bir <xref:Microsoft.Office.Interop.Word.Document> nesne.  
+- Bir VSTO eklenti projesinde kullanmak <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> özelliği bir <xref:Microsoft.Office.Interop.Word.Document> nesne.  
   
- Bu özellikleri döndürür bir <xref:Microsoft.Office.Core.DocumentProperties> bir koleksiyon nesne, <xref:Microsoft.Office.Core.DocumentProperty> nesneleri. Kullanabileceğiniz `Item` adı veya dizin koleksiyonundaki belirli bir özelliği almak için koleksiyonun özelliği.  
+  Bu özellikleri döndürür bir <xref:Microsoft.Office.Core.DocumentProperties> bir koleksiyon nesne, <xref:Microsoft.Office.Core.DocumentProperty> nesneleri. Kullanabileceğiniz `Item` adı veya dizin koleksiyonundaki belirli bir özelliği almak için koleksiyonun özelliği.  
   
- Aşağıdaki kod örneği, yerleşik değiştirileceği gösterilmektedir **konu** bir belge düzeyi projede özelliği.  
+  Aşağıdaki kod örneği, yerleşik değiştirileceği gösterilmektedir **konu** bir belge düzeyi projede özelliği.  
   
 ### <a name="to-change-the-subject-property"></a>Konu özelliğini değiştirmek için  
   

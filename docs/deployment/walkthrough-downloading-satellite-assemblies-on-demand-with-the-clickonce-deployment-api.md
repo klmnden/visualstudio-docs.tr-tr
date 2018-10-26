@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d7226726bc2eb9bbc53afa8920a26d342983af6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 506495f8be0b552f35bed0610e9fb43a77efb151
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281227"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883035"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>İzlenecek yol: ClickOnce dağıtım API'si ile uydu derlemelerini indirme
 Windows Forms uygulamaları için uydu derlemelerini kullanarak birden çok kültürde yapılandırılabilir. A *uydu derleme* uygulamanın varsayılan kültürünü dışındaki bir kültür için uygulama kaynaklarını içeren bir derlemedir.  
@@ -45,24 +45,24 @@ Windows Forms uygulamaları için uydu derlemelerini kullanarak birden çok kül
   
 ### <a name="to-download-satellite-assemblies-on-demand"></a>Uydu derlemelerini yüklemek için  
   
-1.  Uygulamanızı isteğe bağlı uydu derlemelerinin indirilmesini etkinleştirmek için aşağıdaki kodu ekleyin.  
+1. Uygulamanızı isteğe bağlı uydu derlemelerinin indirilmesini etkinleştirmek için aşağıdaki kodu ekleyin.  
   
-     [!code-csharp[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
-     [!code-vb[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]  
+    [!code-csharp[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
+    [!code-vb[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]  
   
-2.  Uygulamanız için uydu derlemeleri oluşturmak [Resgen.exe (kaynak dosya oluşturucu)](/dotnet/framework/tools/resgen-exe-resource-file-generator) veya [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+2. Uygulamanız için uydu derlemeleri oluşturmak [Resgen.exe (kaynak dosya oluşturucu)](/dotnet/framework/tools/resgen-exe-resource-file-generator) veya [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-3.  Bir uygulama bildirimi oluşturmak veya mevcut uygulama bildiriminizi kullanarak açmak *MageUI.exe*. Bu araç hakkında daha fazla bilgi için bkz. [MageUI.exe (bildirim üretme ve düzenleme aracı, grafik istemci)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).  
+3. Bir uygulama bildirimi oluşturmak veya mevcut uygulama bildiriminizi kullanarak açmak *MageUI.exe*. Bu araç hakkında daha fazla bilgi için bkz. [MageUI.exe (bildirim üretme ve düzenleme aracı, grafik istemci)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).  
   
-4.  Tıklayın **dosyaları** sekmesi.  
+4. Tıklayın **dosyaları** sekmesi.  
   
-5.  Tıklayın **üç nokta** düğmesine (**...** ) ve tüm uygulamanızın derlemeleri ve oluşturulan kullanarak uydu derlemeleri dahil dosyaları içeren dizini seçin *Resgen.exe*. (Bir uydu derlemesine biçiminde bir ada sahip olacaktır  *\<isoCode > \ApplicationName.resources.dll*burada \<isoCode > RFC 1766 biçiminde bir dil tanımlayıcısı.)  
+5. Tıklayın **üç nokta** düğmesine (**...** ) ve tüm uygulamanızın derlemeleri ve oluşturulan kullanarak uydu derlemeleri dahil dosyaları içeren dizini seçin *Resgen.exe*. (Bir uydu derlemesine biçiminde bir ada sahip olacaktır  *\<isoCode > \ApplicationName.resources.dll*burada \<isoCode > RFC 1766 biçiminde bir dil tanımlayıcısı.)  
   
-6.  Tıklayın **Doldur** dosyaları dağıtıma eklenecek.  
+6. Tıklayın **Doldur** dosyaları dağıtıma eklenecek.  
   
-7.  Seçin **isteğe bağlı** her bir uydu derleme için onay kutusu.  
+7. Seçin **isteğe bağlı** her bir uydu derleme için onay kutusu.  
   
-8.  Her bir uydu derlemesi için ISO dil tanımlayıcısını grup alanını ayarlayın. Örneğin, Japonca uydu derlemesi için bir yükleme grubunun adını belirtirsiniz `ja-JP`. Bu, kullanıcının bağlı olarak uygun uydu derlemesini indirmek için 1. adımda eklediğiniz kodun olanak tanıyacak <xref:System.Threading.Thread.CurrentUICulture%2A> özellik ayarı.  
+8. Her bir uydu derlemesi için ISO dil tanımlayıcısını grup alanını ayarlayın. Örneğin, Japonca uydu derlemesi için bir yükleme grubunun adını belirtirsiniz `ja-JP`. Bu, kullanıcının bağlı olarak uygun uydu derlemesini indirmek için 1. adımda eklediğiniz kodun olanak tanıyacak <xref:System.Threading.Thread.CurrentUICulture%2A> özellik ayarı.  
   
 ## <a name="next-steps"></a>Sonraki adımlar  
  Bir üretim ortamında, büyük olasılıkla ayarlar aşağıdaki kod örneğinde şu satırı kaldırın gerekir <xref:System.Threading.Thread.CurrentUICulture%2A> belirli bir değere istemci makinelere doğru değerine ayarlanmış olduğundan varsayılan olarak. Japonca istemci makine üzerinde örneğin, uygulamanız çalıştığında zaman <xref:System.Threading.Thread.CurrentUICulture%2A> olacaktır `ja-JP` varsayılan olarak. Bu değer programlı olarak ayarlama, uydu bütünleştirilmiş kodlarınızı Uygulamanızı dağıtmadan önce test etmek için iyi bir yoludur.  

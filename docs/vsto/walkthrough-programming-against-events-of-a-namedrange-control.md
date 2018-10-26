@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab9810ba5086d3de8f5d3ad91bc2c62e0d30d349
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3f8b55cda9576a0203857b3fdaeccbb205b42168
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677824"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812524"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>İzlenecek yol: Program NamedRange denetimi olaylarına karşı
   Bu izlenecek yolda nasıl ekleneceğini gösterir. bir <xref:Microsoft.Office.Tools.Excel.NamedRange> Microsoft Office Excel çalışma ve Visual Studio'da Office geliştirme araçlarını kullanarak olaylarına karşı programlama denetimi.  
@@ -87,15 +87,15 @@ ms.locfileid: "35677824"
   
 ### <a name="to-add-text-to-your-worksheet"></a>Çalışma sayfanızda metin eklemek için  
   
-1.  Hücredeki **A1**, aşağıdaki metni yazın:  
+1. Hücredeki **A1**, aşağıdaki metni yazın:  
   
-     **NamedRange denetimi örneği budur.**  
+    **NamedRange denetimi örneği budur.**  
   
-2.  Hücredeki **A3** (sol tarafındaki `namedRange2`), aşağıdaki metni yazın:  
+2. Hücredeki **A3** (sol tarafındaki `namedRange2`), aşağıdaki metni yazın:  
   
-     **Olayları:**  
+    **Olayları:**  
   
- Aşağıdaki bölümlerde, metin ekleyen bir kod yazacaksınız `namedRange2` ve özelliklerini değiştirir `namedRange2` yanıt olarak Denetim <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>, <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>, ve <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> olayları `namedRange1`.  
+   Aşağıdaki bölümlerde, metin ekleyen bir kod yazacaksınız `namedRange2` ve özelliklerini değiştirir `namedRange2` yanıt olarak Denetim <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>, <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>, ve <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> olayları `namedRange1`.  
   
 ## <a name="add-code-to-respond-to-the-beforedoubleclick-event"></a>BeforeDoubleClick olaya yanıt vermek için kod ekleyin  
   

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1c5044479ca08933f5088101cc088ea3011b4c4
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 73d1462cd6a5dacf57939ae06e7b490235483a60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495550"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843138"
 ---
 # <a name="windows-installer-basics"></a>Temel Windows Installer Bilgileri
 Windows Installer yükler ve uygulamalar veya yazılım ürünlerinin bir kullanıcının bilgisayarında Windows Yükleyici bileşenlerini (bazen WICs veya yalnızca bileşenleri olarak adlandırılır) olarak adlandırılan birimler içinde bu görevleri gerçekleştirmeye kaldırır. Bir GUID, yükleme ve başvuru sayımı Windows Installer kullanarak ayarları için temel birimdir her WIC tanımlar.  
@@ -29,17 +29,17 @@ Windows Installer yükler ve uygulamalar veya yazılım ürünlerinin bir kullan
 ## <a name="authoring-a-vspackage"></a>VSPackage geliştirme  
  Windows Installer, Windows Installer yükleme, kaldırma veya bir ürünü onarın ve Kurulum kullanıcı arabirimi (UI) çalıştırmak için gereken bilgileri içeren yükleme paketleri kullanır. Her yükleme paketini yükleme veritabanı, Özet bilgi akışı ve veri akışları için yükleme çeşitli kısımlarını içeren bir .msi dosyasını içerir. Yükleyici kullanmak için bir yükleme yazmanız gerekir. Yükleyici bileşenlerini kavramı çevresinde yüklemeleri düzenler ve yükleme hakkında bilgi ilişkisel bir veritabanında depolar için geniş bir yükleme paketi yazma işlemi aşağıdaki adımları kapsar:  
   
-1.  Sürüm oluşturma ve yan yana stratejileri desteklemek için yazma kurulumunuzu planlayın.  
+1. Sürüm oluşturma ve yan yana stratejileri desteklemek için yazma kurulumunuzu planlayın.  
   
-2.  Kullanıcılara sunulması için özellikleri tanımlayın.  
+2. Kullanıcılara sunulması için özellikleri tanımlayın.  
   
-3.  VSPackage'ı ve bağımlılıkları bileşenlerine düzenleyin.  
+3. VSPackage'ı ve bağımlılıkları bileşenlerine düzenleyin.  
   
-4.  Yükleme veritabanı bilgileri ile doldurun.  
+4. Yükleme veritabanı bilgileri ile doldurun.  
   
-5.  Yükleme paketini doğrula.  
+5. Yükleme paketini doğrula.  
   
- Bu belge, öncelikli olarak birinci ve üçüncü adımlarla işleminin ilgilidir. Sürüm oluşturma ve hizmet sunma stratejisi sonraki sürümleri için hesap için çerçeve için bu adımları sırasında VSPackage özelliklerinizi WICs düzenlemenize [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Kalan üç adımı ayrıntılı olarak Windows Installer Platform SDK belgelerinde ele alınmaktadır.  
+   Bu belge, öncelikli olarak birinci ve üçüncü adımlarla işleminin ilgilidir. Sürüm oluşturma ve hizmet sunma stratejisi sonraki sürümleri için hesap için çerçeve için bu adımları sırasında VSPackage özelliklerinizi WICs düzenlemenize [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Kalan üç adımı ayrıntılı olarak Windows Installer Platform SDK belgelerinde ele alınmaktadır.  
   
 ## <a name="key-terms"></a>Önemli terimler  
  İçin Windows Yükleyici teknolojisi ilgili anahtar terimlerin tanımları aşağıda verilmiştir.  

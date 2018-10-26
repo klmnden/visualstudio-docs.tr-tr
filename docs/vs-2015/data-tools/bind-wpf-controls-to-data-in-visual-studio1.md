@@ -25,12 +25,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c71181a939ae91986ed31e2518456002f5bb417c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3852a02015ba175b49a8e94adf8991003707a497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237022"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914690"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio'da verilere WPF denetimleri bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,26 +68,26 @@ Bağlayarak uygulamanızın kullanıcılarına veri gösterebilirsiniz [!INCLUDE
 ### <a name="datasets"></a>Veri kümeleri  
  Bir tabloyu veya sütunu sürüklediğinizde **veri kaynakları** penceresinden tasarımcıya, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oluşturur [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] aşağıdakileri yapar:  
   
--   Veri kümesi ve yeni bir ekler <xref:System.Windows.Data.CollectionViewSource> öğeyi sürüklediğiniz kapsayıcının kaynaklarına için. <xref:System.Windows.Data.CollectionViewSource> Gidin ve veri kümesindeki verileri görüntülemek için kullanılan bir nesnedir.  
+- Veri kümesi ve yeni bir ekler <xref:System.Windows.Data.CollectionViewSource> öğeyi sürüklediğiniz kapsayıcının kaynaklarına için. <xref:System.Windows.Data.CollectionViewSource> Gidin ve veri kümesindeki verileri görüntülemek için kullanılan bir nesnedir.  
   
--   Denetim için bir veri bağlama oluşturur. Öğeyi tasarımcıda varolan bir denetime sürüklerseniz, XAML denetimi öğeye bağlar. Öğeyi bir kapsayıcıya sürüklerseniz, XAML sürüklenen öğe için seçilmiş olan denetimi oluşturur ve denetimi öğeye bağlar. Denetim içinde yeni oluşturulan <xref:System.Windows.Controls.Grid>.  
+- Denetim için bir veri bağlama oluşturur. Öğeyi tasarımcıda varolan bir denetime sürüklerseniz, XAML denetimi öğeye bağlar. Öğeyi bir kapsayıcıya sürüklerseniz, XAML sürüklenen öğe için seçilmiş olan denetimi oluşturur ve denetimi öğeye bağlar. Denetim içinde yeni oluşturulan <xref:System.Windows.Controls.Grid>.  
   
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] arka plan kod dosyasında aşağıdaki değişiklikleri de yapar:  
+  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] arka plan kod dosyasında aşağıdaki değişiklikleri de yapar:  
   
--   Oluşturur bir <xref:System.Windows.FrameworkElement.Loaded> için olay işleyicisi [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] denetimi içeren öğe. Olay işleyicisi tabloyu verilerle alır doldurur <xref:System.Windows.Data.CollectionViewSource> kapsayıcının kaynakları ve yapar sonra ilk veri öğesini geçerli öğe. Varsa bir <xref:System.Windows.FrameworkElement.Loaded> olay işleyicisi zaten var, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bu kodu varolan olay işleyicisine ekler.  
+- Oluşturur bir <xref:System.Windows.FrameworkElement.Loaded> için olay işleyicisi [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] denetimi içeren öğe. Olay işleyicisi tabloyu verilerle alır doldurur <xref:System.Windows.Data.CollectionViewSource> kapsayıcının kaynakları ve yapar sonra ilk veri öğesini geçerli öğe. Varsa bir <xref:System.Windows.FrameworkElement.Loaded> olay işleyicisi zaten var, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bu kodu varolan olay işleyicisine ekler.  
   
 ### <a name="entity-data-models"></a>Varlık veri modelleri  
  Bir varlığı veya varlık özelliğini sürüklediğinizde **veri kaynakları** penceresinden tasarımcıya, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oluşturur [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] aşağıdakileri yapar:  
   
--   Yeni bir ekler <xref:System.Windows.Data.CollectionViewSource> öğeyi sürüklediğiniz kapsayıcının kaynaklarına için. <xref:System.Windows.Data.CollectionViewSource> Gidin ve varlıktaki verileri görüntülemek için kullanılan bir nesnedir.  
+- Yeni bir ekler <xref:System.Windows.Data.CollectionViewSource> öğeyi sürüklediğiniz kapsayıcının kaynaklarına için. <xref:System.Windows.Data.CollectionViewSource> Gidin ve varlıktaki verileri görüntülemek için kullanılan bir nesnedir.  
   
--   Denetim için bir veri bağlama oluşturur. Öğeyi tasarımcıda varolan bir denetime sürüklerseniz [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] denetimi öğeye bağlar. Öğeyi bir kapsayıcıya sürüklerseniz [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] denetimi oluşturur sürüklenen öğe için seçilmiş ve denetimi öğeye bağlar. Denetim içinde yeni oluşturulan <xref:System.Windows.Controls.Grid>.  
+- Denetim için bir veri bağlama oluşturur. Öğeyi tasarımcıda varolan bir denetime sürüklerseniz [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] denetimi öğeye bağlar. Öğeyi bir kapsayıcıya sürüklerseniz [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] denetimi oluşturur sürüklenen öğe için seçilmiş ve denetimi öğeye bağlar. Denetim içinde yeni oluşturulan <xref:System.Windows.Controls.Grid>.  
   
- Visual Studio arka plan kod dosyasında aşağıdaki değişiklikleri de yapar:  
+  Visual Studio arka plan kod dosyasında aşağıdaki değişiklikleri de yapar:  
   
--   Tasarımcıya sürüklediğiniz varlık (veya tasarımcıya sürüklediğiniz özelliği içeren varlık) için bir sorgu döndüren yeni bir yöntem ekler. Yeni yöntemin adı Get sahip*EntityName*sorgu, burada *EntityName* varlığın adıdır.  
+- Tasarımcıya sürüklediğiniz varlık (veya tasarımcıya sürüklediğiniz özelliği içeren varlık) için bir sorgu döndüren yeni bir yöntem ekler. Yeni yöntemin adı Get sahip*EntityName*sorgu, burada *EntityName* varlığın adıdır.  
   
--   Oluşturur bir <xref:System.Windows.FrameworkElement.Loaded> için olay işleyicisi [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] denetimi içeren öğe. Olay işleyicisi Get çağrıları*EntityName*sorgu varlığı alır olan verilerle doldurmak için yöntemi <xref:System.Windows.Data.CollectionViewSource> kapsayıcının kaynakları ve yapar sonra ilk veri öğesini geçerli öğe. Varsa bir <xref:System.Windows.FrameworkElement.Loaded> olay işleyicisi zaten var, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bu kodu varolan olay işleyicisine ekler.  
+- Oluşturur bir <xref:System.Windows.FrameworkElement.Loaded> için olay işleyicisi [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] denetimi içeren öğe. Olay işleyicisi Get çağrıları*EntityName*sorgu varlığı alır olan verilerle doldurmak için yöntemi <xref:System.Windows.Data.CollectionViewSource> kapsayıcının kaynakları ve yapar sonra ilk veri öğesini geçerli öğe. Varsa bir <xref:System.Windows.FrameworkElement.Loaded> olay işleyicisi zaten var, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bu kodu varolan olay işleyicisine ekler.  
   
 ### <a name="services"></a>Hizmetler  
  Bir hizmet nesnesini veya özelliği sürüklediğinizde **veri kaynakları** penceresinden tasarımcıya, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oluşturur [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] verilere bağlı bir denetim oluşturur (veya varolan bir denetimi nesneye veya özelliğe bağlar). Ancak, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proxy hizmeti nesnesini verilerle dolduran kod oluşturmaz. Bu kodu kendiniz yazmalısınız. Bunun nasıl yapılacağını gösteren bir örnek için bkz: [denetimleri bir WCF veri hizmetine WPF bağlama](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).  

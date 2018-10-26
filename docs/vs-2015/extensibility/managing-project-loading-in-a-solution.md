@@ -15,12 +15,12 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 465adc1c7804582767415c3e9e5311c2379c7b8b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9f7df8c667753c13a5b69935a31755a72d232a96
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281391"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914263"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Bir Çözümde Proje Yüklemeyi Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,23 +100,23 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
 ## <a name="detecting-and-managing-solution-and-project-loading"></a>Algılama ve çözüm ve proje yüklemeyi yönetme  
  Projeler ve çözümler yükleme durumunu saptamak amacıyla çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> aşağıdaki değerlerle:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` döndürür `true` çözüm ve tüm projeleri, aksi takdirde yüklü olduğunda `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` döndürür `true` çözüm ve tüm projeleri, aksi takdirde yüklü olduğunda `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` döndürür `true` projelerin bir batch şu anda yüklenir, arka planda, aksi takdirde `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` döndürür `true` projelerin bir batch şu anda yüklenir, arka planda, aksi takdirde `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` döndürür `true` projelerin bir batch şu anda yüklenir, zaman uyumlu olarak kullanıcı komutu ya da diğer açık yük sonucunda aksi `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` döndürür `true` projelerin bir batch şu anda yüklenir, zaman uyumlu olarak kullanıcı komutu ya da diğer açık yük sonucunda aksi `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` döndürür `true` çözümü şu anda, aksi takdirde kapatılıyorsa `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` döndürür `true` çözümü şu anda, aksi takdirde kapatılıyorsa `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` döndürür `true` çözüm şu anda, aksi takdirde açıldığında `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` döndürür `true` çözüm şu anda, aksi takdirde açıldığında `false`.  
   
- De (ne proje yükleme öncelikleri olursa olsun) projeler ve çözümler yüklenen aşağıdaki yöntemlerden birini çağırarak emin olabilirsiniz:  
+  De (ne proje yükleme öncelikleri olursa olsun) projeler ve çözümler yüklenen aşağıdaki yöntemlerden birini çağırarak emin olabilirsiniz:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: Bu yöntemin çağrılması yöntemi döndürmeden önce yüklemek için bir çözüm içindeki projeleri zorlar.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: Bu yöntemin çağrılması yöntemi döndürmeden önce yüklemek için bir çözüm içindeki projeleri zorlar.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>: Bu yöntemi çağırmadan zorlayan projelerde `guidProject` yöntemi döndürmeden önce yüklenecek.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>: Bu yöntemi çağırmadan zorlayan projelerde `guidProject` yöntemi döndürmeden önce yüklenecek.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: Bu yöntemi çağırmadan, projede zorlar `guidProjectID` yöntemi döndürmeden önce yüklenecek.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: Bu yöntemi çağırmadan, projede zorlar `guidProjectID` yöntemi döndürmeden önce yüklenecek.  
   
 > [!NOTE]
 >  biçimindeki telefon numarasıdır. Varsayılan olarak yalnızca isteğe bağlı olan projelerin yüklenmesi ve arka plan yük öncelikleri yüklenir, ancak <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> bayrağı yönteme geçirilir, açıkça yüklemek için işaretlenmiş olanlar dışında tüm projeleri yüklenir.

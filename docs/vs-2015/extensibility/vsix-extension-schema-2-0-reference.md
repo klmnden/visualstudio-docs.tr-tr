@@ -16,12 +16,12 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cacd0c1cd2a1e36e7c160902c93c6bcc6bfc0cdd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c12ee9593bb7baadfbaf29ebade142f142e8f40a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181213"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893890"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX Uzantı Şeması 2.0 Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,31 +166,31 @@ VSIX dağıtım bildirimi dosyası, bir VSIX paketinin içeriğini açıklar. Do
 ### <a name="assets-element"></a>Varlıklar öğesi  
  Bu öğe bir listesini içeren `<Asset>` uzantısı ya da içerik her öğe için etiketleri, bu paket tarafından ortaya.  
   
--   `<Asset>` -Bu öğe aşağıdaki öznitelikler ve öğeler içeriyor:  
+- `<Asset>` -Bu öğe aşağıdaki öznitelikler ve öğeler içeriyor:  
   
-    -   `Type` – Uzantısı ya da bu öğe tarafından temsil edilen içerik türü budur. Her `<Asset>` tek bir öğe olmalıdır `Type`, ancak birden çok `<Asset>` öğeleri aynı olabilir `Type`. Bu öznitelik ad alanı kurallarına göre tam bir ad temsil edilebilir. Bilinen türleri şunlardır:  
+  - `Type` – Uzantısı ya da bu öğe tarafından temsil edilen içerik türü budur. Her `<Asset>` tek bir öğe olmalıdır `Type`, ancak birden çok `<Asset>` öğeleri aynı olabilir `Type`. Bu öznitelik ad alanı kurallarına göre tam bir ad temsil edilebilir. Bilinen türleri şunlardır:  
   
-        1.  Microsoft.VisualStudio.VsPackage  
+    1. Microsoft.VisualStudio.VsPackage  
   
-        2.  Microsoft.VisualStudio.MefComponent  
+    2. Microsoft.VisualStudio.MefComponent  
   
-        3.  Microsoft.VisualStudio.ToolboxControl  
+    3. Microsoft.VisualStudio.ToolboxControl  
   
-        4.  Microsoft.VisualStudio.Samples  
+    4. Microsoft.VisualStudio.Samples  
   
-        5.  Microsoft.VisualStudio.ProjectTemplate  
+    5. Microsoft.VisualStudio.ProjectTemplate  
   
-        6.  Microsoft.VisualStudio.ItemTemplate  
+    6. Microsoft.VisualStudio.ItemTemplate  
   
-        7.  Microsoft.VisualStudio.Assembly  
+    7. Microsoft.VisualStudio.Assembly  
   
-         Kendi türlerinizi oluşturmak ve bunları benzersiz adlar verin. Visual Studio içindeki çalışma zamanında kodunuzu listeleme ve Uzantı Yöneticisi API aracılığıyla bu özel tür erişim.  
+       Kendi türlerinizi oluşturmak ve bunları benzersiz adlar verin. Visual Studio içindeki çalışma zamanında kodunuzu listeleme ve Uzantı Yöneticisi API aracılığıyla bu özel tür erişim.  
   
-    -   Yol-dosya veya klasörün varlığı içeren paket içindeki göreli yolu.  
+  - Yol-dosya veya klasörün varlığı içeren paket içindeki göreli yolu.  
   
-    -   `AnyAttribute*` – Çalışma zamanında bir ad-değer çiftinin sözlüğü olarak sunulan öznitelikleri açık uçlu bir dizi.  
+  - `AnyAttribute*` – Çalışma zamanında bir ad-değer çiftinin sözlüğü olarak sunulan öznitelikleri açık uçlu bir dizi.  
   
-         `<AnyElement>*` – Yapılandırılmış herhangi bir içerik arasında izin verilen bir `<Asset>` başlar ve bitiş etiketi. Tüm öğeleri XmlElement nesnelerin bir listesini sunulur. VSIX uzantılarını yapısal türe özgü meta veriler bildirim dosyasında tanımlayabilir ve bunları çalışma zamanında numaralandırır.  
+     `<AnyElement>*` – Yapılandırılmış herhangi bir içerik arasında izin verilen bir `<Asset>` başlar ve bitiş etiketi. Tüm öğeleri XmlElement nesnelerin bir listesini sunulur. VSIX uzantılarını yapısal türe özgü meta veriler bildirim dosyasında tanımlayabilir ve bunları çalışma zamanında numaralandırır.  
   
 ### <a name="sample-manifest"></a>Örnek bildirimi  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e14da45b7c4f6064685cc4dbd88cd26aca3b0ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bdae912e1eb43d3fa323850fa9dae35f2c56f18
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198386"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923218"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>Nasıl Yapılır: Microsoft Office Belgesine Sınıf Diyagramı Öğeleri Kopyalama (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ Diğer belgeler için bir .NET sınıf diyagramı (.cd dosyası) şekiller kopya
   
 ### <a name="to-copy-all-the-elements-in-a-class-diagram"></a>Tüm öğeleri bir sınıf diyagramında kopyalamak için  
   
-1.  Diyagram yüzeyine sağ tıklayın ve seçin **Tümünü Seç**. (Klavye: **Ctrl + A**)  
+1. Diyagram yüzeyine sağ tıklayın ve seçin **Tümünü Seç**. (Klavye: **Ctrl + A**)  
   
-2.  Üzerinde **Düzenle** menüsünde **görüntüsünü kopyalama**.  
+2. Üzerinde **Düzenle** menüsünde **görüntüsünü kopyalama**.  
   
- Ayrıca seçebilirsiniz **kopyalama** yerine **görüntüsünü kopyalama**. **Kopyalama** görüntüyü normal bir bit eşlem olarak kopyalar. **Görüntü Kopyala** olarak da çoğu Office uygulamaları için daha iyi bir vektör tabanlı görüntü, görüntü kopyalar.  
+   Ayrıca seçebilirsiniz **kopyalama** yerine **görüntüsünü kopyalama**. **Kopyalama** görüntüyü normal bir bit eşlem olarak kopyalar. **Görüntü Kopyala** olarak da çoğu Office uygulamaları için daha iyi bir vektör tabanlı görüntü, görüntü kopyalar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: sınıf diyagramlarını yazdırma (Sınıf Tasarımcısı)](../ide/how-to-print-class-diagrams-class-designer.md)   

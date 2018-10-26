@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a30659fcfd1b373360dc7bf9e9e53ae442ac4992
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 06b2d1e537152020b42fdff38fab1200b9cf7668
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510155"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908543"
 ---
 # <a name="mip-map-generation-variant"></a>Mip-map Oluşturma Çeşidi
 Mip eşlemeleri hedefleri işlenmeyebilir dokular üzerinde sağlar.  
@@ -30,19 +30,19 @@ Mip eşlemeleri hedefleri işlenmeyebilir dokular üzerinde sağlar.
 ## <a name="remarks"></a>Açıklamalar  
  Mip-map oluşturma yapılan her çağrı üzerinde zorunlu `ID3D11Device::CreateTexture2D` kaynak doku oluşturur. Mip-map oluşturma D3D11_TEXTURE2D_DESC nesneden olduğunda özellikle zorlanır `pDesc` olan değişmeyen bir gölgelendirici kaynak; açıklar:  
   
--   Yalnızca D3D11_BIND_SHADER_RESOURCE bayrağı ayarlanmış BindFlags üye var.  
+- Yalnızca D3D11_BIND_SHADER_RESOURCE bayrağı ayarlanmış BindFlags üye var.  
   
--   Kullanım üye D3D11_USAGE_DEFAULT ya da D3D11_USAGE_IMMUTABLE ayarlanır.  
+- Kullanım üye D3D11_USAGE_DEFAULT ya da D3D11_USAGE_IMMUTABLE ayarlanır.  
   
--   CPUAccessFlags üyesi (CPU erişim yok) 0 olarak ayarlanır.  
+- CPUAccessFlags üyesi (CPU erişim yok) 0 olarak ayarlanır.  
   
--   (Hiçbir çok örnekli düzgünleştirme (MSAA)) 1 olarak ayarlayın, sayım üyesi SampleDesc üye var.  
+- (Hiçbir çok örnekli düzgünleştirme (MSAA)) 1 olarak ayarlayın, sayım üyesi SampleDesc üye var.  
   
--   MipLevels üyesi (hiçbir mevcut mip-map) 1 olarak ayarlanır.  
+- MipLevels üyesi (hiçbir mevcut mip-map) 1 olarak ayarlanır.  
   
- İlk veri uygulama tarafından sağlandığında, doku biçimiyle otomatik mip-map oluşturma desteklemesi gerekir — D3D11_FORMAT_SUPPORT_MIP_AUTOGEN tarafından belirlenen şekilde — biçimi BC1, BC2 veya BC3; olmadığı sürece Aksi halde doku değiştirilmez ve ilk veri sağlandığında mip eşlemeleri oluşturulur.  
+  İlk veri uygulama tarafından sağlandığında, doku biçimiyle otomatik mip-map oluşturma desteklemesi gerekir — D3D11_FORMAT_SUPPORT_MIP_AUTOGEN tarafından belirlenen şekilde — biçimi BC1, BC2 veya BC3; olmadığı sürece Aksi halde doku değiştirilmez ve ilk veri sağlandığında mip eşlemeleri oluşturulur.  
   
- Mip eşlemeleri bir doku için otomatik olarak oluşturulmuş, çağrılar `ID3D11Device::CreateShaderResourceView` MIP zinciri doku Örnekleme sırasında kullanılacak kayıttan yürütme sırasında değiştirilir.  
+  Mip eşlemeleri bir doku için otomatik olarak oluşturulmuş, çağrılar `ID3D11Device::CreateShaderResourceView` MIP zinciri doku Örnekleme sırasında kullanılacak kayıttan yürütme sırasında değiştirilir.  
   
 ## <a name="example"></a>Örnek  
  **Mip-map oluşturma** değişken bu kodu kullanarak yeniden oluşturduğunuzda:  
@@ -72,4 +72,4 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 >  Kendi MIP düzeyi içeriği otomatik olarak üretmek yerine sağlamak istiyorsanız, doku bir görüntü kullanarak MIP eşlemeli dokular destekleyen Düzenleyicisi'ni ve ardından dosyayı yüklemek oluşturup gerekir MIP düzeylerine geçirmek `CreateTexture2D`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yarı/Çeyrek doku boyutları çeşidi](half-quarter-texture-dimensions-variant.md)
+ [Yarı/Çeyrek Doku Boyutları Çeşidi](half-quarter-texture-dimensions-variant.md)

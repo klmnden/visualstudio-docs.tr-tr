@@ -10,12 +10,12 @@ ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 03b8892eb78184aab237f926e20bfef59418e532
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3c7bbd359bb44d30424b1095e14f00094265990f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213622"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921762"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Visual Studio'da Xamarin.Forms ile uygulama oluşturmaya yönelik temel bilgileri öğrenin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -295,115 +295,115 @@ Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-in
 ##  <a name="finish"></a> Yerel bir görünüme kullanıcı Arabirimiyle platformlar arasında son  
  Uygulamanızı otomatik olarak yerel bir görünümüne sahip olacak şekilde Xamarin.Forms her platform için yerel kullanıcı Arabirimi denetimleri oluşturur. Bunu görmek için daha net bir şekilde, bir posta kodu için giriş alanını kullanıcı Arabirimiyle şimdi son ve ardından hizmetten döndürülen hava durumu verilerini görüntüleyebilirsiniz.  
   
-1.  Öğesinin içeriğini değiştirin **WeatherPage.xaml** aşağıdaki kod ile. Kullanarak, her öğe adlandırdığınız Not **x: Name** öznitelik öğe koddan başvurulabilir, böylece daha önce açıklandığı gibi. Xamarin.Forms da çok sayıda sunar [düzen seçeneklerini](http://developer.xamarin.com/guides/xamarin-forms/controls/layouts/) (xamarin.com); burada WeatherPage kullanıyor [StackLayout](http://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) (xamarin.com).  
+1. Öğesinin içeriğini değiştirin **WeatherPage.xaml** aşağıdaki kod ile. Kullanarak, her öğe adlandırdığınız Not **x: Name** öznitelik öğe koddan başvurulabilir, böylece daha önce açıklandığı gibi. Xamarin.Forms da çok sayıda sunar [düzen seçeneklerini](http://developer.xamarin.com/guides/xamarin-forms/controls/layouts/) (xamarin.com); burada WeatherPage kullanıyor [StackLayout](http://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) (xamarin.com).  
   
-    ```xaml  
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"  
-           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
-           x:Class="WeatherApp.WeatherPage">  
+   ```xaml  
+   <?xml version="1.0" encoding="utf-8" ?>  
+   <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"  
+          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
+          x:Class="WeatherApp.WeatherPage">  
   
-      <ContentPage.Resources>  
-        <ResourceDictionary>  
-          <Style x:Key="labelStyle" TargetType="Label">  
-            <Setter Property="TextColor" Value="#a8a8a8" />  
-            <Setter Property="FontSize" Value="Small" />  
-          </Style>  
-          <Style x:Key="fieldStyle" TargetType="Label">  
-            <Setter Property="TextColor">  
-              <OnPlatform x:TypeArguments="Color" iOS="Black" Android="White" WinPhone="White" />  
-            </Setter>  
-            <Setter Property="FontSize" Value="Medium" />  
-          </Style>  
-          <Style x:Key="fieldView" TargetType="ContentView">  
-            <Setter Property="Padding" Value="10,0,0,0" />  
-          </Style>  
-        </ResourceDictionary>  
-      </ContentPage.Resources>  
+     <ContentPage.Resources>  
+       <ResourceDictionary>  
+         <Style x:Key="labelStyle" TargetType="Label">  
+           <Setter Property="TextColor" Value="#a8a8a8" />  
+           <Setter Property="FontSize" Value="Small" />  
+         </Style>  
+         <Style x:Key="fieldStyle" TargetType="Label">  
+           <Setter Property="TextColor">  
+             <OnPlatform x:TypeArguments="Color" iOS="Black" Android="White" WinPhone="White" />  
+           </Setter>  
+           <Setter Property="FontSize" Value="Medium" />  
+         </Style>  
+         <Style x:Key="fieldView" TargetType="ContentView">  
+           <Setter Property="Padding" Value="10,0,0,0" />  
+         </Style>  
+       </ResourceDictionary>  
+     </ContentPage.Resources>  
   
-      <ContentPage.Content>  
-        <ScrollView>  
-          <StackLayout>  
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  
-                  BackgroundColor="#545454">  
-              <StackLayout Padding="10,10,10,10" HorizontalOptions="Start">  
-                <Label Text="Search by Zip Code" TextColor="White" FontAttributes="Bold"  
-                    FontSize="Medium" />  
-                <Label x:Name="zipCodeLabel" Text="Zip Code" Style="{StaticResource labelStyle}" />  
-                <Entry x:Name="zipCodeEntry" />  
-              </StackLayout>  
-              <StackLayout Padding="0,0,0,10" VerticalOptions="End">  
-                <Button x:Name="getWeatherBtn" Text="Get Weather" WidthRequest="185" BorderWidth="1" >  
-                  <!-- Set iOS colors; use defaults on other platforms -->  
-                  <Button.TextColor>  
-                    <OnPlatform x:TypeArguments="Color" iOS="White"/>  
-                  </Button.TextColor>  
-                  <Button.BorderColor>  
-                    <OnPlatform x:TypeArguments="Color" iOS="White"/>  
-                  </Button.BorderColor>  
-                </Button>  
-              </StackLayout>  
-            </StackLayout>  
-            <StackLayout Padding="10,10,10,10" HorizontalOptions="Start">  
-              <Label Text="Location" Style="{StaticResource labelStyle}" />  
-              <ContentView Style="{StaticResource fieldView}">  
-                <Label Text="{Binding Title}" Style="{StaticResource fieldStyle}" />  
-              </ContentView>  
-              <Label Text="Temperature" Style="{StaticResource labelStyle}" />  
-              <ContentView Style="{StaticResource fieldView}">  
-                <Label x:Name="tempLabel" Text="{Binding Temperature}"  
-                    Style="{StaticResource fieldStyle}" />  
-              </ContentView>  
-              <Label Text="Wind Speed" Style="{StaticResource labelStyle}" />  
-              <ContentView Style="{StaticResource fieldView}">  
-                <Label x:Name="windLabel" Text="{Binding Wind}" Style="{StaticResource fieldStyle}" />  
-              </ContentView>  
-              <Label Text="Humidity" Style="{StaticResource labelStyle}" />  
-              <ContentView Style="{StaticResource fieldView}">  
-                <Label x:Name="humidityLabel" Text="{Binding Humidity}"  
-                    Style="{StaticResource fieldStyle}" />  
-              </ContentView>  
-              <Label Text="Visibility" Style="{StaticResource labelStyle}" />  
-              <ContentView Style="{StaticResource fieldView}">  
-                <Label x:Name="visibilitylabel" Text="{Binding Visibility}"  
-                    Style="{StaticResource fieldStyle}" />  
-              </ContentView>  
-              <Label Text="Time of Sunrise" Style="{StaticResource labelStyle}" />  
-              <ContentView Style="{StaticResource fieldView}">  
-                <Label x:Name="sunriseLabel" Text="{Binding Sunrise}"  
-                    Style="{StaticResource fieldStyle}" />  
-              </ContentView>  
-              <Label Text="Time of Sunset" Style="{StaticResource labelStyle}" />  
-              <ContentView Style="{StaticResource fieldView}">  
-                <Label x:Name="sunsetLabel" Text="{Binding Sunset}"  
-                    Style="{StaticResource fieldStyle}" />  
-              </ContentView>  
-            </StackLayout>  
-          </StackLayout>  
-        </ScrollView>  
-      </ContentPage.Content>  
-    </ContentPage>  
-    ```  
+     <ContentPage.Content>  
+       <ScrollView>  
+         <StackLayout>  
+           <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  
+                 BackgroundColor="#545454">  
+             <StackLayout Padding="10,10,10,10" HorizontalOptions="Start">  
+               <Label Text="Search by Zip Code" TextColor="White" FontAttributes="Bold"  
+                   FontSize="Medium" />  
+               <Label x:Name="zipCodeLabel" Text="Zip Code" Style="{StaticResource labelStyle}" />  
+               <Entry x:Name="zipCodeEntry" />  
+             </StackLayout>  
+             <StackLayout Padding="0,0,0,10" VerticalOptions="End">  
+               <Button x:Name="getWeatherBtn" Text="Get Weather" WidthRequest="185" BorderWidth="1" >  
+                 <!-- Set iOS colors; use defaults on other platforms -->  
+                 <Button.TextColor>  
+                   <OnPlatform x:TypeArguments="Color" iOS="White"/>  
+                 </Button.TextColor>  
+                 <Button.BorderColor>  
+                   <OnPlatform x:TypeArguments="Color" iOS="White"/>  
+                 </Button.BorderColor>  
+               </Button>  
+             </StackLayout>  
+           </StackLayout>  
+           <StackLayout Padding="10,10,10,10" HorizontalOptions="Start">  
+             <Label Text="Location" Style="{StaticResource labelStyle}" />  
+             <ContentView Style="{StaticResource fieldView}">  
+               <Label Text="{Binding Title}" Style="{StaticResource fieldStyle}" />  
+             </ContentView>  
+             <Label Text="Temperature" Style="{StaticResource labelStyle}" />  
+             <ContentView Style="{StaticResource fieldView}">  
+               <Label x:Name="tempLabel" Text="{Binding Temperature}"  
+                   Style="{StaticResource fieldStyle}" />  
+             </ContentView>  
+             <Label Text="Wind Speed" Style="{StaticResource labelStyle}" />  
+             <ContentView Style="{StaticResource fieldView}">  
+               <Label x:Name="windLabel" Text="{Binding Wind}" Style="{StaticResource fieldStyle}" />  
+             </ContentView>  
+             <Label Text="Humidity" Style="{StaticResource labelStyle}" />  
+             <ContentView Style="{StaticResource fieldView}">  
+               <Label x:Name="humidityLabel" Text="{Binding Humidity}"  
+                   Style="{StaticResource fieldStyle}" />  
+             </ContentView>  
+             <Label Text="Visibility" Style="{StaticResource labelStyle}" />  
+             <ContentView Style="{StaticResource fieldView}">  
+               <Label x:Name="visibilitylabel" Text="{Binding Visibility}"  
+                   Style="{StaticResource fieldStyle}" />  
+             </ContentView>  
+             <Label Text="Time of Sunrise" Style="{StaticResource labelStyle}" />  
+             <ContentView Style="{StaticResource fieldView}">  
+               <Label x:Name="sunriseLabel" Text="{Binding Sunrise}"  
+                   Style="{StaticResource fieldStyle}" />  
+             </ContentView>  
+             <Label Text="Time of Sunset" Style="{StaticResource labelStyle}" />  
+             <ContentView Style="{StaticResource fieldView}">  
+               <Label x:Name="sunsetLabel" Text="{Binding Sunset}"  
+                   Style="{StaticResource fieldStyle}" />  
+             </ContentView>  
+           </StackLayout>  
+         </StackLayout>  
+       </ScrollView>  
+     </ContentPage.Content>  
+   </ContentPage>  
+   ```  
   
-     Kullanımına dikkat edin **OnPlatform** Xamarin.Forms etiketi. **OnPlatform** uygulamanın üzerinde çalıştığı geçerli platforma özgü bir özellik değeri seçer (bkz [dış XAML söz dizimi](http://developer.xamarin.com/guides/xamarin-forms/user-interface/xaml-basics/essential_xaml_syntax/) (xamarin.com). Buraya bir veri alanları farklı metin rengini ayarlamak için kullanıyoruz: Android ve Windows Phone, iOS siyah beyaz. Kullanabileceğiniz **OnPlatform** özeliklerini ve tüm veri türleri, XAML içinde herhangi bir platforma özgü ayarlamaları yapmak için. Arka plan kod dosyasında kullanabileceğiniz [Device.OnPlatform API](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) aynı amaçla.  
+    Kullanımına dikkat edin **OnPlatform** Xamarin.Forms etiketi. **OnPlatform** uygulamanın üzerinde çalıştığı geçerli platforma özgü bir özellik değeri seçer (bkz [dış XAML söz dizimi](http://developer.xamarin.com/guides/xamarin-forms/user-interface/xaml-basics/essential_xaml_syntax/) (xamarin.com). Buraya bir veri alanları farklı metin rengini ayarlamak için kullanıyoruz: Android ve Windows Phone, iOS siyah beyaz. Kullanabileceğiniz **OnPlatform** özeliklerini ve tüm veri türleri, XAML içinde herhangi bir platforma özgü ayarlamaları yapmak için. Arka plan kod dosyasında kullanabileceğiniz [Device.OnPlatform API](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) aynı amaçla.  
   
-2.  İçinde **WeatherPage.xaml.cs**, değiştirin **GetWeatherBtn_Clicked** aşağıdaki kod ile olay işleyicisi. Bu kod, girişi alanında bir posta kodu, posta kodu için verileri alır, sonuçta elde edilen hava durumu örneği için tam ekran bağlama bağlamı ayarlar ve ardından "Tekrar arama." düğme metnini ayarlar doğrular. Kullanıcı arabiriminde her etiket bir özelliğe hava durumu sınıfının şekilde ne zaman bağlar, Not ekranın bağlama bağlamını ayarlamak bir **hava durumu** etiketlerin örneği, güncelleştirme otomatik olarak.  
+2. İçinde **WeatherPage.xaml.cs**, değiştirin **GetWeatherBtn_Clicked** aşağıdaki kod ile olay işleyicisi. Bu kod, girişi alanında bir posta kodu, posta kodu için verileri alır, sonuçta elde edilen hava durumu örneği için tam ekran bağlama bağlamı ayarlar ve ardından "Tekrar arama." düğme metnini ayarlar doğrular. Kullanıcı arabiriminde her etiket bir özelliğe hava durumu sınıfının şekilde ne zaman bağlar, Not ekranın bağlama bağlamını ayarlamak bir **hava durumu** etiketlerin örneği, güncelleştirme otomatik olarak.  
   
-    ```csharp  
-    private async void GetWeatherBtn_Clicked(object sender, EventArgs e)  
-    {  
-        if (!String.IsNullOrEmpty(zipCodeEntry.Text))  
-        {  
-            Weather weather = await Core.GetWeather(zipCodeEntry.Text);  
-            this.BindingContext = weather;  
-            getWeatherBtn.Text = "Search Again";  
-        }  
-    }  
-    ```  
+   ```csharp  
+   private async void GetWeatherBtn_Clicked(object sender, EventArgs e)  
+   {  
+       if (!String.IsNullOrEmpty(zipCodeEntry.Text))  
+       {  
+           Weather weather = await Core.GetWeather(zipCodeEntry.Text);  
+           this.BindingContext = weather;  
+           getWeatherBtn.Text = "Search Again";  
+       }  
+   }  
+   ```  
   
-3.  Uygulamayı üç tüm platformlarda çalıştırın; Android, iOS ve Windows Phone — uygun projeye sağ, başlangıç projesi olarak Ayarla'i seçerek ve uygulamayı bir cihaz veya öykünücü veya benzetici başlatılıyor. Geçerli bir Amerika Birleşik Devletleri posta kodu (örneğin, 60601) girin ve aşağıda gösterildiği gibi bu bölge için hava durumu verileri görüntülemek için hava durumu Al düğmesine basın. Elbette, Visual Studio iOS projesi için ağınızdaki bir Mac OS X bilgisayara bağlı olması gerekir.  
+3. Uygulamayı üç tüm platformlarda çalıştırın; Android, iOS ve Windows Phone — uygun projeye sağ, başlangıç projesi olarak Ayarla'i seçerek ve uygulamayı bir cihaz veya öykünücü veya benzetici başlatılıyor. Geçerli bir Amerika Birleşik Devletleri posta kodu (örneğin, 60601) girin ve aşağıda gösterildiği gibi bu bölge için hava durumu verileri görüntülemek için hava durumu Al düğmesine basın. Elbette, Visual Studio iOS projesi için ağınızdaki bir Mac OS X bilgisayara bağlı olması gerekir.  
   
-     ![Android, iOS ve Windows Phone hava durumu uygulaması örneği](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")  
+    ![Android, iOS ve Windows Phone hava durumu uygulaması örneği](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")  
   
- Bu proje için tam kaynak kodu [xamarin forms örnekleri GitHub deposunda](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).
+   Bu proje için tam kaynak kodu [xamarin forms örnekleri GitHub deposunda](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).
 

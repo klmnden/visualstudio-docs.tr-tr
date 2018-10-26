@@ -13,12 +13,12 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb915f7d17070d78e5749834c325bfee4e8a6879
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 56f1afba0db8ba213a601835ca7a8df39d56f171
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224048"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860766"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio için yaygın denetim desenleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -218,23 +218,23 @@ ms.locfileid: "49224048"
   
 ##### <a name="visual-style"></a>Görsel stili  
   
--   Filigranlar yatay olarak pencere içinde ortalanmış.  
+- Filigranlar yatay olarak pencere içinde ortalanmış.  
   
--   Filigranlar sola hizalı değil, merkezi hizalı olmalıdır.  
+- Filigranlar sola hizalı değil, merkezi hizalı olmalıdır.  
   
--   Filigranlar dikey ortalanmış veya alanının üst kısımda yerleştirilmiş. Alanın üst kısımda yer alan, böylece Filigran belirginleştirmek yukarıdaki yeterli alan olmalıdır.  
+- Filigranlar dikey ortalanmış veya alanının üst kısımda yerleştirilmiş. Alanın üst kısımda yer alan, böylece Filigran belirginleştirmek yukarıdaki yeterli alan olmalıdır.  
   
--   Kullanım `Environment.GrayText` belirteç ve standart bir ortam. yazı tipi rengi. Köprüler, paylaşılan standart köprü belirteçleri kullanmalıdır: `Environment.PanelHyperlink`, `Environment.PanelHyperlinkHover`, `Environment.PanelHyperlinkPressed`, ve `Environment.PanelHyperlinkDisabled`.  
+- Kullanım `Environment.GrayText` belirteç ve standart bir ortam. yazı tipi rengi. Köprüler, paylaşılan standart köprü belirteçleri kullanmalıdır: `Environment.PanelHyperlink`, `Environment.PanelHyperlinkHover`, `Environment.PanelHyperlinkPressed`, ve `Environment.PanelHyperlinkDisabled`.  
   
--   Arka planda filigranlar seçilemez.  
+- Arka planda filigranlar seçilemez.  
   
--   Mümkünse, filigran başlama kullanıcının yardımcı olmak için bağlantılar içerir.  
+- Mümkünse, filigran başlama kullanıcının yardımcı olmak için bağlantılar içerir.  
   
- ![Filigran metni Tasarımcı penceresindeki](../../extensibility/ux-guidelines/media/070702-05-watermark1.png "070702 05_Watermark1")  
+  ![Filigran metni Tasarımcı penceresindeki](../../extensibility/ux-guidelines/media/070702-05-watermark1.png "070702 05_Watermark1")  
   
- ![Filigran araç penceresindeki metin](../../extensibility/ux-guidelines/media/070702-06-watermark2.png "070702 06_Watermark2")  
+  ![Filigran araç penceresindeki metin](../../extensibility/ux-guidelines/media/070702-06-watermark2.png "070702 06_Watermark2")  
   
- **Filigran metni Visual Studio Örnekleri**  
+  **Filigran metni Visual Studio Örnekleri**  
   
 ##  <a name="BKMK_ButtonsAndHyperlinks"></a> Düğmeler ve köprüleri  
   
@@ -246,25 +246,25 @@ ms.locfileid: "49224048"
   
  Ne zaman komut düğmeleri kullanın:  
   
--   Birincil komutları  
+- Birincil komutları  
   
--   Giriş toplamak için kullanılan windows görüntüleme veya ikincil komutları olsalar bile, seçenekleri yapma  
+- Giriş toplamak için kullanılan windows görüntüleme veya ikincil komutları olsalar bile, seçenekleri yapma  
   
--   Yıkıcı veya geri alınamaz eylemleri  
+- Yıkıcı veya geri alınamaz eylemleri  
   
--   Sihirbazlar ve sayfa içinde taahhüt düğme akışları  
+- Sihirbazlar ve sayfa içinde taahhüt düğme akışları  
   
- Komut düğmeleri araç pencerelerindeki önlemek veya ikiden fazla sözcük etiketi gerekiyorsa. Bağlantılar, uzun bir etiket olabilir.  
+  Komut düğmeleri araç pencerelerindeki önlemek veya ikiden fazla sözcük etiketi gerekiyorsa. Bağlantılar, uzun bir etiket olabilir.  
   
- Ne zaman bağlantıları kullanın:  
+  Ne zaman bağlantıları kullanın:  
   
--   Başka bir pencere, belge veya web sayfasına gitme  
+- Başka bir pencere, belge veya web sayfasına gitme  
   
--   Bir uzun etiket ya da eylem amacı açıklamak için kısa bir cümle gerektiren durumlar  
+- Bir uzun etiket ya da eylem amacı açıklamak için kısa bir cümle gerektiren durumlar  
   
--   Kullanıcı Arabirimi, bir düğme burada doldurmaya sıkı alanları sağlanan eylemi yıkıcı veya geri alınamaz değil  
+- Kullanıcı Arabirimi, bir düğme burada doldurmaya sıkı alanları sağlanan eylemi yıkıcı veya geri alınamaz değil  
   
--   İkincil komutları durumlarda devre dışı bırakma emphasizing komutların çoğu olduğu  
+- İkincil komutları durumlarda devre dışı bırakma emphasizing komutların çoğu olduğu  
   
 #### <a name="examples"></a>Örnekler  
  ![Bilgi çubuğu komut bağlantıları bir durum iletisi](../../extensibility/ux-guidelines/media/070703-01-commandlinkinfobar.png "070703 01_CommandLinkInfobar")  
@@ -307,19 +307,19 @@ ms.locfileid: "49224048"
   
  Ne zaman yalnızca üç nokta kısa düğmesini kullanın:  
   
--   Varsa birden fazla uzun **[Gözat...]**  göz atmak için çeşitli alanları ne zaman izin gibi bir iletişim kutusu düğmesi. Kısa kullanın **[...]**  düğmesini her bu durum tarafından oluşturulan kafa karıştırıcı erişim anahtarlarını önlemek için (**& Gözat** ve **B & özat** aynı iletişim kutusunda).  
+- Varsa birden fazla uzun **[Gözat...]**  göz atmak için çeşitli alanları ne zaman izin gibi bir iletişim kutusu düğmesi. Kısa kullanın **[...]**  düğmesini her bu durum tarafından oluşturulan kafa karıştırıcı erişim anahtarlarını önlemek için (**& Gözat** ve **B & özat** aynı iletişim kutusunda).  
   
--   Sıkı bir iletişim kutusu veya uzun düğmesi koymak için makul bir yerde olduğunda.  
+- Sıkı bir iletişim kutusu veya uzun düğmesi koymak için makul bir yerde olduğunda.  
   
--   Bir grid denetiminin düğmesi görünür değilse.  
+- Bir grid denetiminin düğmesi görünür değilse.  
   
- Düğmeyi kullanarak yönergeleri:  
+  Düğmeyi kullanarak yönergeleri:  
   
--   Bir erişim anahtarı kullanmayın. Klavyeyi kullanarak erişmek için kullanıcı bitişik denetiminden sekme gerekir. Herhangi bir Gözat düğmesi hemen doldurur alan sonra kalan, sekme sırasını olduğundan emin olun. İlk dönemden altında bir alt çizgi hiçbir zaman kullanmayın.  
+- Bir erişim anahtarı kullanmayın. Klavyeyi kullanarak erişmek için kullanıcı bitişik denetiminden sekme gerekir. Herhangi bir Gözat düğmesi hemen doldurur alan sonra kalan, sekme sırasını olduğundan emin olun. İlk dönemden altında bir alt çizgi hiçbir zaman kullanmayın.  
   
--   Microsoft etkin erişilebilirliği (MSAA) kümesi **adı** özelliğini **Gözat...**  ekranında, bu nedenle (üç nokta dahil olmak üzere) okuyucular bunu "Gözatma türü" ve değil "dot nokta nokta" veya "Dönem Dönem-süresi." olarak okur Yönetilen denetimleri için bu ayarı anlamına gelir **AccessibleName** özelliği.  
+- Microsoft etkin erişilebilirliği (MSAA) kümesi **adı** özelliğini **Gözat...**  ekranında, bu nedenle (üç nokta dahil olmak üzere) okuyucular bunu "Gözatma türü" ve değil "dot nokta nokta" veya "Dönem Dönem-süresi." olarak okur Yönetilen denetimleri için bu ayarı anlamına gelir **AccessibleName** özelliği.  
   
--   Üç nokta kullanmamanız **[...]**  Gözat eylemi dışındaki düğmesi. Örneğin, gerekirse bir **[yeni...]**  düğmesini ancak iletişim kutusunun tasarlanması gerekir sonra metin için yeterli alan yok.  
+- Üç nokta kullanmamanız **[...]**  Gözat eylemi dışındaki düğmesi. Örneğin, gerekirse bir **[yeni...]**  düğmesini ancak iletişim kutusunun tasarlanması gerekir sonra metin için yeterli alan yok.  
   
 ##### <a name="sizing-and-spacing"></a>Boyutlandırma ve aralık  
  ![Boyutlandırma &#91;Gözat... &#93; düğmeleri](../../extensibility/ux-guidelines/media/070703-06-browsesizing.png "070703 06_BrowseSizing")  
@@ -442,13 +442,13 @@ ms.locfileid: "49224048"
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid (ağaç görünümü ve ızgara görünümü)  
  Bir grid'in içindeki ağaç görünümünde içeren karmaşık bir denetim trid denetimidir. Ağaç görünümünde, aşağıdaki eklemelerle olarak aynı klavye komutlarını ağacında doğru genişletme ve daraltma saygı:  
   
--   **Sağ ok:** bir düğümünü genişletin. Düğüm genişletildikten sonra en yakın sütuna sağ taraftaki gezinme devam etmelidir. Gezinti satırının sonundaki durdurmanız gerekir.  
+- **Sağ ok:** bir düğümünü genişletin. Düğüm genişletildikten sonra en yakın sütuna sağ taraftaki gezinme devam etmelidir. Gezinti satırının sonundaki durdurmanız gerekir.  
   
--   **Sekmesi:** yakın hücrenin sağ taraftaki gitmenizi sağlar.  Satırın sonunda, gezinti ve bir sonraki satıra devam eder.  
+- **Sekmesi:** yakın hücrenin sağ taraftaki gitmenizi sağlar.  Satırın sonunda, gezinti ve bir sonraki satıra devam eder.  
   
--   **SHIFT + Tab:** yakın hücrenin soldaki gitmenizi sağlar.  Satırın başlangıcında, gezinti önceki satırdaki en sağındaki hücreyi devam eder.  
+- **SHIFT + Tab:** yakın hücrenin soldaki gitmenizi sağlar.  Satırın başlangıcında, gezinti önceki satırdaki en sağındaki hücreyi devam eder.  
   
- ![Visual Studio'da Trid denetimi](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705 6_Trid")  
+  ![Visual Studio'da Trid denetimi](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705 6_Trid")  
   
- **Visual Studio'da bir trid denetimi**
+  **Visual Studio'da bir trid denetimi**
 

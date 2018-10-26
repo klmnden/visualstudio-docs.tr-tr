@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21e2b1a7a90df2baef48483647c692c8b986c59f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f8555d1edae8d22acd6a34a14c66f4e432b39e61
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676750"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917108"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Office çözümleri hatalarında sorun giderme
   Visual Studio'da Office çözümleri geliştirirken, aşağıdaki görevleri gerçekleştirirken sorunlarla karşılaşabilirsiniz:  
@@ -139,11 +139,11 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  Bu kod, aşağıdaki derleme hataları oluşur:  
   
--   Visual Basic: "derlemesi yok PIA modunu kullanarak bağlandığında başvuru 'belge sınıfı' sınıfına izin verilmiyor."  
+- Visual Basic: "derlemesi yok PIA modunu kullanarak bağlandığında başvuru 'belge sınıfı' sınıfına izin verilmiyor."  
   
--   Visual C#: "'Microsoft.Office.Interop.Word.DocumentClass' katıştırılmış birlikte çalışma türü. Uygulanabilir arabirimi kullanın."  
+- Visual C#: "'Microsoft.Office.Interop.Word.DocumentClass' katıştırılmış birlikte çalışma türü. Uygulanabilir arabirimi kullanın."  
   
- Bu hatayı gidermek için bunun yerine karşılık gelen arabirimi başvurmak için kodu değiştirin. Örneğin, başvurusu yerine bir <xref:Microsoft.Office.Interop.Word.DocumentClass> nesne, örneği başvuru <xref:Microsoft.Office.Interop.Word.Document> bunun yerine arabirimi.  
+  Bu hatayı gidermek için bunun yerine karşılık gelen arabirimi başvurmak için kodu değiştirin. Örneğin, başvurusu yerine bir <xref:Microsoft.Office.Interop.Word.DocumentClass> nesne, örneği başvuru <xref:Microsoft.Office.Interop.Word.Document> bunun yerine arabirimi.  
   
 ```vb  
 Dim document As Word.Document = Globals.ThisAddIn.Application.ActiveDocument  

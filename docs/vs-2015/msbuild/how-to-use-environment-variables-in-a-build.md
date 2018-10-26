@@ -18,12 +18,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7a03b706957d6308dce90fb9f0dd2284338e7609
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 463acc185a73b9a483bf74c98d4bde1cf0f42494
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294620"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877510"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Nasıl Yapılır: Derlemede Ortam Değişkenlerini Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ Projeler derlerken genellikle proje dosyası veya proje oluşturan dosyaların d
   
 #### <a name="to-use-an-environment-variable-in-an-msbuild-project"></a>İçinde bir MSBuild Projesi bir ortam değişkenini kullanmak için  
   
--   Ortam değişkeni, proje dosyasında bildirilen bir değişken olduğu gibi başvuru. Örneğin, aşağıdaki kodu BIN_PATH ortam değişkeni başvuruyor:  
+- Ortam değişkeni, proje dosyasında bildirilen bir değişken olduğu gibi başvuru. Örneğin, aşağıdaki kodu BIN_PATH ortam değişkeni başvuruyor:  
   
-     `<FinalOutput>$(BIN_PATH)\MyAssembly.dll</FinalOutput>`  
+   `<FinalOutput>$(BIN_PATH)\MyAssembly.dll</FinalOutput>`  
   
- Kullanabileceğiniz bir `Condition` ortam değişkeni ayarlanmamış olması halinde bir özellik için varsayılan bir değer sağlamak için özniteliği.  
+  Kullanabileceğiniz bir `Condition` ortam değişkeni ayarlanmamış olması halinde bir özellik için varsayılan bir değer sağlamak için özniteliği.  
   
 #### <a name="to-provide-a-default-value-for-a-property"></a>Bir özellik için varsayılan bir değer sağlamak için  
   

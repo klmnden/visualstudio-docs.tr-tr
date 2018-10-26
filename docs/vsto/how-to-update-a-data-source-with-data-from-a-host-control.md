@@ -18,23 +18,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 23fbe0a7563dbb1ebb3832dbe5c340e67dacac72
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3a31bac6b3cbd13fcff8c841c9947e8c14f8984a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677872"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839771"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Nasıl yapılır: konak kontrolü verileriyle veri kaynağını güncelleme
   Konak kontrolü bir veri kaynağına bağlama ve veri kaynağını denetimi verilerde yapılan değişikliklerle güncelleştirin. Bu işlemde iki ana adım vardır:  
   
-1.  Bellek içi veri kaynağına denetiminde değiştirilen verileri ile güncelleştirin. Genellikle, bellek içi veri kaynağı, bir <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, veya başka bir veri nesnesi.  
+1. Bellek içi veri kaynağına denetiminde değiştirilen verileri ile güncelleştirin. Genellikle, bellek içi veri kaynağı, bir <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, veya başka bir veri nesnesi.  
   
-2.  Veritabanı, bellek içi veri kaynağı değiştirilmiş verileri güncelleştirin. Bu seçenek, yalnızca veri kaynağı bir SQL Server veya Microsoft Office Access veritabanı gibi bir arka uç veritabanı bağlıysa geçerlidir.  
+2. Veritabanı, bellek içi veri kaynağı değiştirilmiş verileri güncelleştirin. Bu seçenek, yalnızca veri kaynağı bir SQL Server veya Microsoft Office Access veritabanı gibi bir arka uç veritabanı bağlıysa geçerlidir.  
   
- Konak denetimleri ve veri bağlama hakkında daha fazla bilgi için bkz. [konak öğelerini ve denetimlerine genel bakış için ana bilgisayar](../vsto/host-items-and-host-controls-overview.md) ve [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md).  
+   Konak denetimleri ve veri bağlama hakkında daha fazla bilgi için bkz. [konak öğelerini ve denetimlerine genel bakış için ana bilgisayar](../vsto/host-items-and-host-controls-overview.md) ve [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
+   [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
 ## <a name="update-the-in-memory-data-source"></a>Bellek içi veri kaynağını güncelleştirme  
  Varsayılan olarak, basit veri bağlama (örneğin, içerik denetimleri bir Word belgesi veya Excel çalışma sayfasındaki bir adlandırılmış aralık denetimi) etkinleştirme konak denetimleri bellek içi veri kaynağına veri değişikliklerini kaydetmeyin. Diğer bir deyişle, son kullanıcı konak kontrolü değeri değiştirir ve ardından bir denetimin dışındaki bir yere gider, yeni değer denetiminde veri kaynağı için otomatik olarak kaydedilmez.  
@@ -57,14 +57,14 @@ ms.locfileid: "35677872"
   
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>Kod kullanarak bellek içi veri kaynağı otomatik olarak güncelleştirilecek bir denetimi ayarlama  
   
-1.  ' In modunu kullanmak <xref:System.Windows.Forms.Binding> nesnesini denetimi veri kaynağına bağlar. Veri kaynağını güncelleştirmek için iki seçenek vardır:  
+1. ' In modunu kullanmak <xref:System.Windows.Forms.Binding> nesnesini denetimi veri kaynağına bağlar. Veri kaynağını güncelleştirmek için iki seçenek vardır:  
   
-    -   Denetim doğrulandığında, veri kaynağını güncelleştirmek için System.Windows.Forms.DataSourceUpdateMode.OnValidation bu özelliği ayarlayın.  
+   - Denetim doğrulandığında, veri kaynağını güncelleştirmek için System.Windows.Forms.DataSourceUpdateMode.OnValidation bu özelliği ayarlayın.  
   
-    -   Denetimin veriye bağlı özelliğinin değeri değiştiğinde veri kaynağını güncelleştirmek için System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged bu özelliği ayarlayın.  
+   - Denetimin veriye bağlı özelliğinin değeri değiştiğinde veri kaynağını güncelleştirmek için System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged bu özelliği ayarlayın.  
   
-        > [!NOTE]  
-        >  Word Belge değişikliği veya denetim değişikliği bildirimleri gerçekleştirdiğinden System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged seçeneği Word konak denetimleri için geçerli değildir. Ancak, bu seçenek, Word belgelerine Windows Forms denetimleri için kullanılabilir.  
+     > [!NOTE]  
+     >  Word Belge değişikliği veya denetim değişikliği bildirimleri gerçekleştirdiğinden System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged seçeneği Word konak denetimleri için geçerli değildir. Ancak, bu seçenek, Word belgelerine Windows Forms denetimleri için kullanılabilir.  
   
      Aşağıdaki örnek yapılandırır bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetiminde değeri değiştiğinde otomatik olarak veri kaynağını güncelleştirmek için denetimi. Bu örnekte, sahibi olduğunuzu varsayar bir <xref:Microsoft.Office.Tools.Excel.NamedRange> adlı Denetim `namedRange1` ile kendi <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> özelliğe bir veri kaynağında bir alan için.  
   

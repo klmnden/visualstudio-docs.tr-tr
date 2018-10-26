@@ -25,12 +25,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96235df516a7d02f63c79f897ec053c787b0cf45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d8ece4edf9ee91446565f2790392bd6d478fd3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205523"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818334"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Hızlı Başlangıç: Konsolu kullanarak JavaScript hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,27 +41,27 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
  JavaScript Konsolu penceresi sağlar:  
   
--   Nesneleri, değer ve iletileri uygulamanızdan konsol penceresine Gönder.  
+- Nesneleri, değer ve iletileri uygulamanızdan konsol penceresine Gönder.  
   
--   Görüntüleyebilir ve çalışan uygulamada yerel ve genel değişkenlerin değerlerini değiştirebilirsiniz.  
+- Görüntüleyebilir ve çalışan uygulamada yerel ve genel değişkenlerin değerlerini değiştirebilirsiniz.  
   
--   Görünüm nesnesi görselleştiriciler.  
+- Görünüm nesnesi görselleştiriciler.  
   
--   Geçerli betik bağlamı içinde yürütülen bir JavaScript kodu çalıştırın.  
+- Geçerli betik bağlamı içinde yürütülen bir JavaScript kodu çalıştırın.  
   
--   JavaScript hataları ve belge nesne modeli (DOM) ve Windows çalışma zamanı özel durumlarının yanı sıra özel durumları görüntüleyin.  
+- JavaScript hataları ve belge nesne modeli (DOM) ve Windows çalışma zamanı özel durumlarının yanı sıra özel durumları görüntüleyin.  
   
--   Ekranı temizleme gibi diğer görevleri gerçekleştirin. Bkz: [JavaScript Konsolu komutları](../debugger/javascript-console-commands.md) komutların tam listesi için.  
+- Ekranı temizleme gibi diğer görevleri gerçekleştirin. Bkz: [JavaScript Konsolu komutları](../debugger/javascript-console-commands.md) komutların tam listesi için.  
   
- Bu konuda:  
+  Bu konuda:  
   
--   [JavaScript Konsolu penceresi kullanarak hata ayıklama](#InteractiveConsole)  
+- [JavaScript Konsolu penceresi kullanarak hata ayıklama](#InteractiveConsole)  
   
--   [Etkileşimli hata ayıklama ve kesme modu](#InteractiveDebuggingBreakMode)  
+- [Etkileşimli hata ayıklama ve kesme modu](#InteractiveDebuggingBreakMode)  
   
--   [Tek satır modu ve JavaScript Konsolu penceresi çok satırlı modu](#SinglelineMultilineMode)  
+- [Tek satır modu ve JavaScript Konsolu penceresi çok satırlı modu](#SinglelineMultilineMode)  
   
--   [Betik yürütme bağlamını değiştirme](#Switching)  
+- [Betik yürütme bağlamını değiştirme](#Switching)  
   
 > [!TIP]
 >  JavaScript Konsolu penceresi kapatılırsa seçin **hata ayıklama**>**Windows** > **JavaScript Konsolu** yeniden açın. Betik hata ayıklama oturumu yalnızca sırasında penceresi görünür.  

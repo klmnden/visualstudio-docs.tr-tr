@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49ba65f92143f47432cac874ebfd539f9b2da0f5
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 538a518d1186dc50a9e5e89635af0a07c2542041
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495587"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893279"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>[Content_types].xml Dosyasının Yapısı
 Bir VSIX paketi, içerik türleri hakkındaki bilgileri içerir. Visual Studio paketi yüklemek için [Content_Types] .xml dosyasını kullanır, ancak dosyayı yüklemez.  
@@ -46,9 +46,9 @@ Bir VSIX paketi, içerik türleri hakkındaki bilgileri içerir. Visual Studio p
   
 ### <a name="attribute-name-attribute"></a>{Öznitelik adı} Özniteliği  
   
-|Değer|Açıklama|  
-|-----------|-----------------|  
-|http://schemas.openformats.org/package/2006/content-types|İçerik türleri şema konumu.|  
+| Değer | Açıklama |
+| - | - |
+| http://schemas.openformats.org/package/2006/content-types | İçerik türleri şema konumu. |
   
 ### <a name="child-elements"></a>Alt Öğeler  
  `Types` Herhangi bir sayıda öğe içerebilir `Default` öğeleri.  

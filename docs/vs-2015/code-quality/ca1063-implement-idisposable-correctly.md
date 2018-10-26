@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e80857ae1cfafdc6733af3eec78735dc249f4905
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 94d13514800bac80723031c6bba7920d28ac83e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287488"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877302"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable'ı doğru uygulayın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
@@ -39,23 +40,23 @@ ms.locfileid: "49287488"
 ## <a name="cause"></a>Sebep
  `IDisposable` doğru uygulanmadı. Bu sorun için bazı nedenler aşağıda listelenmiştir:
 
--   IDisposable sınıfta yeniden uygulanmış olur.
+- IDisposable sınıfta yeniden uygulanmış olur.
 
--   Sonlandırma yeniden geçersiz kılınır.
+- Sonlandırma yeniden geçersiz kılınır.
 
--   Dispose geçersiz kılınır.
+- Dispose geçersiz kılınır.
 
--   Dispose() public değil korumalı ya da Dispose adlı.
+- Dispose() public değil korumalı ya da Dispose adlı.
 
--   Dispose(bool) korumalı, sanal veya korumasız değil.
+- Dispose(bool) korumalı, sanal veya korumasız değil.
 
--   Korumasız türlerinde Dispose(true) Dispose() çağırmalıdır.
+- Korumasız türlerinde Dispose(true) Dispose() çağırmalıdır.
 
--   Mühürlenmemiş türler için her ikisi de Dispose(bool) veya büyük/küçük harf Sonlandırıcıları Finalize uygulama çağırmaz.
+- Mühürlenmemiş türler için her ikisi de Dispose(bool) veya büyük/küçük harf Sonlandırıcıları Finalize uygulama çağırmaz.
 
- Bu desenleri herhangi birinin ihlali bu uyarıyı tetikleyecektir.
+  Bu desenleri herhangi birinin ihlali bu uyarıyı tetikleyecektir.
 
- Kendi korumalı sanal void Dispose(bool) yönteminin her korumasız kök IDisposable tür sağlamanız gerekir. Dipose(true) Dispose() çağırmalıdır ve Finalize Dispose(false) yöntemini çağırması gerekir. Bir korumasız kök IDisposable tür oluşturuyorsanız, Dispose(bool) tanımlayın ve bunu çağırmanız gerekir. Daha fazla bilgi için [Cleaning Up Unmanaged Resources](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) içinde [çerçeve tasarım yönergeleri](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) .NET Framework belgelerinin bölümü.
+  Kendi korumalı sanal void Dispose(bool) yönteminin her korumasız kök IDisposable tür sağlamanız gerekir. Dipose(true) Dispose() çağırmalıdır ve Finalize Dispose(false) yöntemini çağırması gerekir. Bir korumasız kök IDisposable tür oluşturuyorsanız, Dispose(bool) tanımlayın ve bunu çağırmanız gerekir. Daha fazla bilgi için [Cleaning Up Unmanaged Resources](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) içinde [çerçeve tasarım yönergeleri](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) .NET Framework belgelerinin bölümü.
 
 ## <a name="rule-description"></a>Kural Tanımı
  Tüm IDisposable türleri Dispose kalıbını doğru uygulamalıdır.

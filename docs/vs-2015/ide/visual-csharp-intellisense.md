@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3169ba8aaa348a6db698b968e7bec4e8273dfada
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d094a0272e5c90afa1a83a42543dd464f219a17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303400"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862209"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Visual C# IntelliSense, kodlama Düzenleyicisi'nde ve siz hata ayıklama sıras�
 ## <a name="completion-lists"></a>Tamamlanma listeleri  
  IntelliSense tamamlanma listelerinde Visual C# ' ta belirteçleri üyeleri listeleme, tam sözcük ve daha fazlasını içerir. Hızlı erişim sağlar:  
   
--   Üyeleri bir tür veya ad alanı  
+- Üyeleri bir tür veya ad alanı  
   
--   Değişkenleri, komutlar ve İşlevler adları  
+- Değişkenleri, komutlar ve İşlevler adları  
   
--   [Kod parçacıkları](#CodeSnippets),  
+- [Kod parçacıkları](#CodeSnippets),  
   
--   [Dil anahtar sözcükleri](#Keywords),  
+- [Dil anahtar sözcükleri](#Keywords),  
   
--   [Genişletme Yöntemleri](#ExtensionMethods)  
+- [Genişletme Yöntemleri](#ExtensionMethods)  
   
- Tamamlanma listesine dâhil C# ilgisiz belirteçleri filtrelemek ve bağlamına dayalı bir belirteç önceden seçmek akıllı. Daha fazla bilgi için [C# ' de filtrelenmiş tamamlanma listeleri](../misc/filtered-completion-lists-in-csharp.md) ve [Pre-selected tamamlanma listesi öğeleri, C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
+  Tamamlanma listesine dâhil C# ilgisiz belirteçleri filtrelemek ve bağlamına dayalı bir belirteç önceden seçmek akıllı. Daha fazla bilgi için [C# ' de filtrelenmiş tamamlanma listeleri](../misc/filtered-completion-lists-in-csharp.md) ve [Pre-selected tamamlanma listesi öğeleri, C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
 ###  <a name="CodeSnippets"></a> Kod parçacıkları tamamlanma listeleri  
  Visual C# içinde önceden tanımlanmış gövdeleri kodu programınıza kolayca eklemenize yardımcı olmak için kod parçacıkları tamamlanma listesi içerir. Kod parçacığının olarak tamamlama listede görünür [Shortcut öğesi (IntelliSense kod parçacıkları)](http://msdn.microsoft.com/en-us/052cc97a-5c70-42f8-b398-4c3adf670cfa).  Varsayılan olarak Visual C# dilinde kullanılabilir kod parçacıkları hakkında daha fazla bilgi için bkz: [Visual C# kod parçacıkları](../ide/visual-csharp-code-snippets.md).  
@@ -123,23 +123,23 @@ Visual C# IntelliSense, kodlama Düzenleyicisi'nde ve siz hata ayıklama sıras�
   
  Uygun seçenekleri görüntülemek için aşağıdaki yordamlardan birini kullanabilirsiniz:  
   
--   Tanımlanmamış tanımlayıcı tıklayın. Bir kısa çizgi, en soldaki karakterin altında görünür. Fare işaretçisini üzerinde kısa çizgi ve bir akıllı etiket (simge) görüntülenir. Akıllı etiket tıklayın.  
+- Tanımlanmamış tanımlayıcı tıklayın. Bir kısa çizgi, en soldaki karakterin altında görünür. Fare işaretçisini üzerinde kısa çizgi ve bir akıllı etiket (simge) görüntülenir. Akıllı etiket tıklayın.  
   
--   Tanımlanmamış tanımlayıcı tıklayın ve ardından CTRL tuşuna basın. (nokta).  
+- Tanımlanmamış tanımlayıcı tıklayın ve ardından CTRL tuşuna basın. (nokta).  
   
--   Tanımlanmamış tanımlayıcı sağ tıklayın ve ardından **Oluştur**.  
+- Tanımlanmamış tanımlayıcı sağ tıklayın ve ardından **Oluştur**.  
   
- Görünen seçenekler şunları içerebilir:  
+  Görünen seçenekler şunları içerebilir:  
   
--   **Özellik taslağı oluşturmak**  
+- **Özellik taslağı oluşturmak**  
   
--   **Alan taslağı üret**  
+- **Alan taslağı üret**  
   
--   **Metot taslağı üret**  
+- **Metot taslağı üret**  
   
--   **Sınıfı oluşturun**  
+- **Sınıfı oluşturun**  
   
--   **Yeni tür oluşturma** (için bir sınıf, yapı, arabirim veya numaralandırma)  
+- **Yeni tür oluşturma** (için bir sınıf, yapı, arabirim veya numaralandırma)  
   
 ## <a name="generate-event-handlers"></a>Olay işleyicileri oluşturma  
  Kod düzenleyicisinde, IntelliSense yöntemleri (olay işleyicileri) olay alanlarını kanca yardımcı olabilir.  

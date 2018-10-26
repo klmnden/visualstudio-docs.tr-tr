@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 955e942f3e2215fa20a95b2e25c6abddc355fd6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 409a39dc889970ee7ad0eff3354fa43de15b7dbe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267806"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895346"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>İş Akışı Tasarımcısında Klavye Kısayolları
 Tüm temel işlevlerini [!INCLUDE[wfd1](../includes/wfd1-md.md)] klavye tarafından erişilebilir.  
@@ -49,29 +49,29 @@ Tüm temel işlevlerini [!INCLUDE[wfd1](../includes/wfd1-md.md)] klavye tarafın
 ### <a name="flowchart"></a>Akış Çizelgesi  
  Aşağıdaki liste, bir akış oluşturmak için klavye tarafından kullanılan hareketlerini gösterir. Kalan olduğu gibi [!INCLUDE[wfd2](../includes/wfd2-md.md)], etkinlikleri ile sağlanan genel araç kısayolları kullanılarak Tasarımcı yüzeyine eklenir [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
   
--   Bir etkinlik taşımak için etkinliği seçin ve bunu yeniden konumlandırmak için ok tuşlarını kullanın.  
+- Bir etkinlik taşımak için etkinliği seçin ve bunu yeniden konumlandırmak için ok tuşlarını kullanın.  
   
--   Bir akış yeniden boyutlandırmak için ok tuşlarını kullanarak akış geçerli kenarlığını geçmiş etkinlik taşıyın. Akış otomatik olarak yeniden boyutlandırılır.  
+- Bir akış yeniden boyutlandırmak için ok tuşlarını kullanarak akış geçerli kenarlığını geçmiş etkinlik taşıyın. Akış otomatik olarak yeniden boyutlandırılır.  
   
--   Etkinlik Başlangıç düğümü olarak ayarlamak için kullanın **BaşlangıçDüğümü ayarlamak** bağlam menüsündeki komutu.  
+- Etkinlik Başlangıç düğümü olarak ayarlamak için kullanın **BaşlangıçDüğümü ayarlamak** bağlam menüsündeki komutu.  
   
--   Etkinlikleri bağlanmak için:  
+- Etkinlikleri bağlanmak için:  
   
-    1.  Kaynak etkinliği için etkinlik sekmelerle seçin.  
+  1.  Kaynak etkinliği için etkinlik sekmelerle seçin.  
   
-    2.  CTRL + E, hedef etkinliğe klavye odağı taşımak için gerekli sayıda M tuşuna basın.  
+  2.  CTRL + E, hedef etkinliğe klavye odağı taşımak için gerekli sayıda M tuşuna basın.  
   
-    3.  CTRL + E, seçime hedef etkinlik eklemek için S tuşuna basın.  
+  3.  CTRL + E, seçime hedef etkinlik eklemek için S tuşuna basın.  
   
-    4.  CTRL + E, bağlayıcı kaynaktan hedefe eklemek için F tuşuna basın.  
+  4.  CTRL + E, bağlayıcı kaynaktan hedefe eklemek için F tuşuna basın.  
   
- Etkinlikleri tarafından klavye bağlama hakkında notlar:  
+  Etkinlikleri tarafından klavye bağlama hakkında notlar:  
   
--   CTRL + E, f tuşuna basarak önce seçime daha fazla etkinlikler ekleyerek aynı anda birden çok bağlantı yapabilirsiniz Bağlantılar, etkinlikleri seçimi eklendiğini sırada yapılır.  
+- CTRL + E, f tuşuna basarak önce seçime daha fazla etkinlikler ekleyerek aynı anda birden çok bağlantı yapabilirsiniz Bağlantılar, etkinlikleri seçimi eklendiğini sırada yapılır.  
   
--   Kaynak etkinliği giden bir bağlantı zaten varsa, örneğin bir çift etkinlikleri bağlanamaz, seçimdeki etkinlikler arasında diğer bağlantılar hala mümkün olduğunca yapılır.  
+- Kaynak etkinliği giden bir bağlantı zaten varsa, örneğin bir çift etkinlikleri bağlanamaz, seçimdeki etkinlikler arasında diğer bağlantılar hala mümkün olduğunca yapılır.  
   
--   Olduğunda bir **FlowDecision** seçime dahil ve **FlowDecision** giden bağlayıcı yok, bağlayıcı yerleştirildiği **True** dal.  
+- Olduğunda bir **FlowDecision** seçime dahil ve **FlowDecision** giden bağlayıcı yok, bağlayıcı yerleştirildiği **True** dal.  
   
 ### <a name="expression-editing"></a>İfade düzenleme  
  Varsayılan olarak, varsayılan klavye kısayolları [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ifade Düzenleyicisi'nde içinde uygulama metni düzenleme [!INCLUDE[wfd2](../includes/wfd2-md.md)], aşağıdaki kısıtlamalarla:  

@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e19c2ab969de8f3e1e24cf789ae3979d2c15809b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 249799bc9daf13992bd9fe03dff8c86263f91263
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626508"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851484"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>İzlenecek yol: bir SharePoint Tasarımcısı yeniden kullanılabilir iş akışını Visual Studio'ya içeri aktarma
   Bu kılavuzda SharePoint Designer 2010 içinde oluşturulan bir yeniden kullanılabilir iş akışını içeri aktarma gösteren bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint iş akışı projesi.  
@@ -38,17 +38,17 @@ ms.locfileid: "42626508"
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
--   Basit, yeniden kullanılabilir iş akışı, SharePoint Tasarımcısı'nda oluşturma.  
+- Basit, yeniden kullanılabilir iş akışı, SharePoint Tasarımcısı'nda oluşturma.  
   
--   SharePoint Designer yeniden kullanılabilir iş akışını dışarı aktarma bir *.wsp* dosya ve SharePoint içinde.  
+- SharePoint Designer yeniden kullanılabilir iş akışını dışarı aktarma bir *.wsp* dosya ve SharePoint içinde.  
   
--   İçeri aktarma *.wsp* doyasını [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] içeri aktarma yeniden kullanılabilir iş akışı projesi kullanarak.  
+- İçeri aktarma *.wsp* doyasını [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] içeri aktarma yeniden kullanılabilir iş akışı projesi kullanarak.  
   
--   Kod ekleyerek iş akışını değiştirme.  
+- Kod ekleyerek iş akışını değiştirme.  
   
--   İçeri aktarılan iş akışı, bir SharePoint sitesinde kullanma.  
+- İçeri aktarılan iş akışı, bir SharePoint sitesinde kullanma.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
@@ -64,21 +64,21 @@ ms.locfileid: "42626508"
   
 #### <a name="to-create-sharepoint-subsites"></a>SharePoint alt siteleri oluşturmak için  
   
-1.  SharePoint Designer 2010'da, menü çubuğunda, **dosya** > **yeni boş bir Web sitesi**.  
+1. SharePoint Designer 2010'da, menü çubuğunda, **dosya** > **yeni boş bir Web sitesi**.  
   
-2.  İçinde **yeni boş bir Web sitesi** iletişim kutusunda, istediğiniz iş akışı oluşturmak veya http:// değerini kullanmak için bir SharePoint sitesine*SystemName*/ seçip **Tamam** düğmesi.  
+2. İçinde **yeni boş bir Web sitesi** iletişim kutusunda, istediğiniz iş akışı oluşturmak veya http:// değerini kullanmak için bir SharePoint sitesine<em>SystemName</em>/ seçip **Tamam** düğmesi.  
   
-     Giriş sayfası görüntülenir.  
+    Giriş sayfası görüntülenir.  
   
-3.  İçinde **alt** bölümünde, seçin **yeni** düğmesi.  
+3. İçinde **alt** bölümünde, seçin **yeni** düğmesi.  
   
-4.  İçinde **yeni** iletişim kutusunda **SharePoint şablonları** sol bölmedeki listeden seçip **ekip sitesi** sağ bölmedeki listeden.  
+4. İçinde **yeni** iletişim kutusunda **SharePoint şablonları** sol bölmedeki listeden seçip **ekip sitesi** sağ bölmedeki listeden.  
   
-5.  İçinde **Web sitesi konumunu belirtin** kutusunda, sözcüğü değiştirmek **alt** ile URL'deki **SPD1**ve ardından **Tamam** düğmesi.  
+5. İçinde **Web sitesi konumunu belirtin** kutusunda, sözcüğü değiştirmek **alt** ile URL'deki **SPD1**ve ardından **Tamam** düğmesi.  
   
-     Bu, SharePoint Tasarımcısı içinde yeni alt açar. SharePoint Designer'ın bu örneği kapatın ve ilk örneğine (üst düzey site) geri dönün.  
+    Bu, SharePoint Tasarımcısı içinde yeni alt açar. SharePoint Designer'ın bu örneği kapatın ve ilk örneğine (üst düzey site) geri dönün.  
   
-6.  İkinci alt sözcüğü değiştirerek bu kez oluşturmak için 3-5 arasındaki adımları yineleyin **alt** içinde [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] ile **SPD2**.  
+6. İkinci alt sözcüğü değiştirerek bu kez oluşturmak için 3-5 arasındaki adımları yineleyin **alt** içinde [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] ile **SPD2**.  
   
 ## <a name="create-a-sharepoint-designer-reusable-workflow"></a>Bir SharePoint Tasarımcısı yeniden kullanılabilir iş akışını oluşturma
  SharePoint Bu örnek için kullanabileceğiniz tüm yeniden kullanılabilir iş akışlarını içermediğinden, bir oluşturacaksınız. Bir kullanıcı belirli bir başlığa sahip görev listesine yeni bir görev girdiğinde bu basit bir iş akışında, görev, kullanıcıya atanır.  
@@ -158,32 +158,32 @@ ms.locfileid: "42626508"
   
 #### <a name="to-import-a-workflow-from-a-wsp-file-and-modify-it"></a>Bir iş akışını .wsp dosyasından içeri aktarmak ve değiştirmek için  
   
-1.  İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], menü çubuğunda, **dosya** > **yeni** > **proje**.  
+1. İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], menü çubuğunda, **dosya** > **yeni** > **proje**.  
   
-2.  İçinde **yeni proje** iletişim kutusunda **SharePoint** ya da düğümünde **Visual C#** veya **Visual Basic**, seçin**2010** düğümü.  
+2. İçinde **yeni proje** iletişim kutusunda **SharePoint** ya da düğümünde **Visual C#** veya **Visual Basic**, seçin**2010** düğümü.  
   
-3.  İçinde **şablonları** bölmesinde seçin **yeniden kullanılabilir SharePoint 2010 iş akışını içeri aktar** şablon adı projenin bırakın **WorkflowImportProject1**seçin **Tamam** düğmesi.  
+3. İçinde **şablonları** bölmesinde seçin **yeniden kullanılabilir SharePoint 2010 iş akışını içeri aktar** şablon adı projenin bırakın **WorkflowImportProject1**seçin **Tamam** düğmesi.  
   
-     SharePoint Özelleştirme Sihirbazı görünür.  
+    SharePoint Özelleştirme Sihirbazı görünür.  
   
-4.  Üzerinde **hata ayıklama için site ve güvenlik düzeyini belirtin** want [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] daha önce oluşturduğunuz ikinci SharePoint alt site için: http://*sistem adı*/SPD2.  
+4. Üzerinde **hata ayıklama için site ve güvenlik düzeyini belirtin** want [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] daha önce oluşturduğunuz ikinci SharePoint alt site için: http://<em>sistem adı</em>/SPD2.  
   
-5.  İçinde **bu SharePoint çözümünün güven düzeyi nedir?** bölümünde, seçin **Grup çözümü olarak Dağıt** seçenek düğmesini ve ardından **sonraki** düğmesi.  
+5. İçinde **bu SharePoint çözümünün güven düzeyi nedir?** bölümünde, seçin **Grup çözümü olarak Dağıt** seçenek düğmesini ve ardından **sonraki** düğmesi.  
   
-     Korumalı hakkında daha fazla bilgi için küme çözümleri bkz [korumalı çözümle ilgili konular](../sharepoint/sandboxed-solution-considerations.md).  
+    Korumalı hakkında daha fazla bilgi için küme çözümleri bkz [korumalı çözümle ilgili konular](../sharepoint/sandboxed-solution-considerations.md).  
   
-6.  İçinde **yeni proje kaynağını belirtin** sayfasında, daha önce kaydettiğiniz konuma gidin sistem üzerindeki *.wsp* dosya, dosyayı açın ve ardından **sonraki** düğmesi.  
+6. İçinde **yeni proje kaynağını belirtin** sayfasında, daha önce kaydettiğiniz konuma gidin sistem üzerindeki *.wsp* dosya, dosyayı açın ve ardından **sonraki** düğmesi.  
   
-    > [!NOTE]  
-    >  Seçin **son** içindeki kullanılabilir tüm öğeleri içe aktarmak için düğmeyi *.wsp* dosya.  
+   > [!NOTE]  
+   >  Seçin **son** içindeki kullanılabilir tüm öğeleri içe aktarmak için düğmeyi *.wsp* dosya.  
   
-     Bu, yeniden kullanılabilir iş akışlarını içeri aktarma için kullanılabilir bir listesini görüntüler.  
+    Bu, yeniden kullanılabilir iş akışlarını içeri aktarma için kullanılabilir bir listesini görüntüler.  
   
-7.  İçinde **içeri aktarılacak öğeleri seçin** kutusunda **SPD görev iş akışı** iş akışı ve ardından **son** düğmesi.  
+7. İçinde **içeri aktarılacak öğeleri seçin** kutusunda **SPD görev iş akışı** iş akışı ve ardından **son** düğmesi.  
   
-     İçeri aktarma işlemi tamamlandıktan sonra bir proje adlı **WorkflowImportProject1** adlı bir iş akışı içeren oluşturulan **SPD_Workflow_TestFT**. İş akışının tanımı dosyası bu klasörde olduğu *Elements.xml* ve iş akışı Tasarımcısı dosyası (*.xoml*). Tasarımcı iki dosya içerir: kurallar dosyası (.rules) ve arka plan kod dosyası (ya da *.cs* veya *.vb*projenizin programlama diline bağlı olarak).  
+    İçeri aktarma işlemi tamamlandıktan sonra bir proje adlı **WorkflowImportProject1** adlı bir iş akışı içeren oluşturulan **SPD_Workflow_TestFT**. İş akışının tanımı dosyası bu klasörde olduğu *Elements.xml* ve iş akışı Tasarımcısı dosyası (*.xoml*). Tasarımcı iki dosya içerir: kurallar dosyası (.rules) ve arka plan kod dosyası (ya da *.cs* veya *.vb*projenizin programlama diline bağlı olarak).  
   
-8.  İçinde **Çözüm Gezgini**, silme **diğer içeri aktarılan dosyaları** klasör.  
+8. İçinde **Çözüm Gezgini**, silme **diğer içeri aktarılan dosyaları** klasör.  
   
 9. İçinde *Elements.xml* dosya, silme `InstantiationURL="_layouts/IniErkflIP.sspx"`.  
   
@@ -203,11 +203,11 @@ ms.locfileid: "42626508"
   
 13. İçinde **Windows iş akışı v3.0** düğümünün **araç kutusu**, aşağıdaki adımlardan birini gerçekleştirin:  
   
-    -   Kısayol menüsünü açın **kod** etkinliğini seçip **kopyalama**. İş Akışı Tasarımcısı'nda altındaki kısayol menüsünü açın **SequenceActivity1** etkinliğini seçip **Yapıştır**.  
+    - Kısayol menüsünü açın **kod** etkinliğini seçip **kopyalama**. İş Akışı Tasarımcısı'nda altındaki kısayol menüsünü açın **SequenceActivity1** etkinliğini seçip **Yapıştır**.  
   
-    -   Sürükleme **kod** etkinliğinden **araç kutusu** iş akışı Tasarımcısı için ve altındaki satıra bağlayın **SequenceActivity1** etkinlik.  
+    - Sürükleme **kod** etkinliğinden **araç kutusu** iş akışı Tasarımcısı için ve altındaki satıra bağlayın **SequenceActivity1** etkinlik.  
   
-     Bu etkinlik adlı iş akışı Tasarımcısı için ekler **CodeActivity1**. Bu etkinlik, kullanıcı iş akışı başladığında duyuruları listesinde bir duyuru oluşturur kod bir eylem ekleyeceksiniz.  
+      Bu etkinlik adlı iş akışı Tasarımcısı için ekler **CodeActivity1**. Bu etkinlik, kullanıcı iş akışı başladığında duyuruları listesinde bir duyuru oluşturur kod bir eylem ekleyeceksiniz.  
   
 14. Aşağıdaki adım kümelerinden birini uygulayın:  
   

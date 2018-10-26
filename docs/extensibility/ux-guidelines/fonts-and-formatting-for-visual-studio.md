@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ea4b3a0ed5f041b2f09c3f3e57f334bf11777f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1a758c1e44f9f78f7dc2a225e641d91f97db72cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273097"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942835"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Yazı tipleri ve Visual Studio için biçimlendirme
 ##  <a name="BKMK_TheEnvironmentFont"></a> Ortam yazı tipi
@@ -325,13 +325,13 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>İlk harfler büyük  
  Başlık, hangi çoğunu veya tümünü bir tümce içinde bir kelimelerin ilk harflerini büyük harfe stil durumdur. Visual Studio'da ilk harfler büyük dahil olmak üzere birçok öğeleri için kullanılır:  
   
--   **Araç ipuçları.** Örnek: "Seçili öğelerin önizlemesini görüntüle"  
+- **Araç ipuçları.** Örnek: "Seçili öğelerin önizlemesini görüntüle"  
   
--   **Sütun üstbilgileri.** Örnek: "Sistem"yanıtı  
+- **Sütun üstbilgileri.** Örnek: "Sistem"yanıtı  
   
--   **Menü öğeleri.** Örnek: "Tümünü Kaydet"  
+- **Menü öğeleri.** Örnek: "Tümünü Kaydet"  
   
- İlk harfler büyük kullanırken zaman sözcükler büyük harf ve bunları küçük bırakmak ne zaman için yönergeler şunlardır:  
+  İlk harfler büyük kullanırken zaman sözcükler büyük harf ve bunları küçük bırakmak ne zaman için yönergeler şunlardır:  
   
 |Büyük harfe|Açıklamalar ve örnekler|  
 |---------------|---------------------------|  

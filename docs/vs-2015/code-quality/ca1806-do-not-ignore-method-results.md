@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5d28ca688bbad0054f7522034bfe309dcb1fe698
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e6b7bdd99500f0be29c8101ef9993b565914300
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250113"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830593"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Yöntem sonuçlarını yoksaymayın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ ms.locfileid: "49250113"
 ## <a name="cause"></a>Sebep  
  Bu uyarı için birkaç olası nedeni vardır:  
   
--   Yeni bir nesne oluşturulur, ancak hiç kullanılmadı.  
+- Yeni bir nesne oluşturulur, ancak hiç kullanılmadı.  
   
--   Oluşturur ve yeni bir dize döndüren bir yöntem olarak adlandırılır ve yeni bir dize hiçbir zaman kullanılmaz.  
+- Oluşturur ve yeni bir dize döndüren bir yöntem olarak adlandırılır ve yeni bir dize hiçbir zaman kullanılmaz.  
   
--   Bir HRESULT ya da hata kodunu döndüren bir COM veya P/Invoke yöntemi hiçbir zaman kullanılmaz. Kural Tanımı  
+- Bir HRESULT ya da hata kodunu döndüren bir COM veya P/Invoke yöntemi hiçbir zaman kullanılmaz. Kural Tanımı  
   
- Gereksiz nesne oluşturma ve kullanılmayan nesnenin ilişkili çöp toplama performansını düşürebilir.  
+  Gereksiz nesne oluşturma ve kullanılmayan nesnenin ilişkili çöp toplama performansını düşürebilir.  
   
- Dizeleri sabittir ve yöntemleri String.ToUpper gibi bir dize yöntemi çağrılırken dizesinde örneğini değiştirmek yerine yeni bir örneğini döndürür.  
+  Dizeleri sabittir ve yöntemleri String.ToUpper gibi bir dize yöntemi çağrılırken dizesinde örneğini değiştirmek yerine yeni bir örneğini döndürür.  
   
- HRESULT ya da hata kodu yoksayılıyor beklenmeyen davranışlara hata koşullarında ya da düşük kaynak koşulları yol açabilir.  
+  HRESULT ya da hata kodu yoksayılıyor beklenmeyen davranışlara hata koşullarında ya da düşük kaynak koşulları yol açabilir.  
   
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
  Bir yöntemi hiçbir zaman kullanılmaz B nesnesinin yeni bir örneğini oluşturur, örneği bir bağımsız değişken olarak başka yönteme geçirin veya örneği bir değişkene atayın. Nesne oluşturma gereksizse kaldıramazsınız- veya -  

@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 6ef92d907b34705e0a0461d06827f5504b0e61c3
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 207e4c2d6e7db9dd40288306b3a87086c4568f76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978316"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827720"
 ---
 # <a name="set-up-remote-workspaces"></a>Uzak çalışma alanlarını ayarlayın
 
@@ -97,15 +97,15 @@ Avantajları ve riskleri otomatik olarak imzalanan sertifika kullanarak Windows 
 Kendiniz otomatik olarak imzalanan bir sertifika vermek için:
 
 1. SSH veya Linux makinenizde oturum açın.
-1. Yükleme `ssl-cert` paket:
+2. Yükleme `ssl-cert` paket:
     ```sh
     sudo apt-get install ssl-cert
     ```
-1. Çalıştırma `make-ssl-cert` varsayılan otomatik olarak imzalanan SSL sertifikasını oluşturmak için:
+3. Çalıştırma `make-ssl-cert` varsayılan otomatik olarak imzalanan SSL sertifikasını oluşturmak için:
     ```sh
     sudo make-ssl-cert generate-default-snakeoil --force-overwrite
     ```
-1. PEM dosyaları ve oluşturulan anahtarı PFX dosyasına dönüştürün. Oluşturulan PFX giriş klasörünüzde olmalıdır:
+4. PEM dosyaları ve oluşturulan anahtarı PFX dosyasına dönüştürün. Oluşturulan PFX giriş klasörünüzde olmalıdır:
     ```sh
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```
@@ -135,12 +135,12 @@ R kodu çalıştırmak için Uzak bilgisayar gibi yüklü R yorumlayıcıya sahi
 
 1. İndirin ve aşağıdakilerden birini yükleyin:
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
-    - [Windows için CRAN R](https://cran.r-project.org/bin/windows/base/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [Windows için CRAN R](https://cran.r-project.org/bin/windows/base/)
 
-    Her ikisi de aynı işlevselliğe sahiptir, ancak ek donanım Microsoft R Open avantajlar sağladığı için doğrusal Cebir kitaplıkları hızlandırılmış [Intel matematik çekirdek Kitaplığı](https://software.intel.com/intel-mkl).
+     Her ikisi de aynı işlevselliğe sahiptir, ancak ek donanım Microsoft R Open avantajlar sağladığı için doğrusal Cebir kitaplıkları hızlandırılmış [Intel matematik çekirdek Kitaplığı](https://software.intel.com/intel-mkl).
 
-1. Çalıştırma [R Hizmetleri yükleyicisi](https://aka.ms/rtvs-services) ve istendiğinde yeniden başlatın. Yükleyici şunları yapar:
+2. Çalıştırma [R Hizmetleri yükleyicisi](https://aka.ms/rtvs-services) ve istendiğinde yeniden başlatın. Yükleyici şunları yapar:
 
     - Bir klasörde oluşturmak *%PROGRAMFILES%\R araçları Visual Studio\1.0\\*  ve gerekli tüm ikili dosyaları kopyalayın.
     - Yükleme `RHostBrokerService` ve `RUserProfileService` ve otomatik olarak başlayacak şekilde yapılandırın.
@@ -160,12 +160,12 @@ R kodu çalıştırmak için Uzak bilgisayar gibi yüklü R yorumlayıcıya sahi
 
 1. İndirin ve aşağıdakilerden birini yükleyin:
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
-    - [Windows için CRAN R](https://cran.r-project.org/bin/linux/ubuntu/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [Windows için CRAN R](https://cran.r-project.org/bin/linux/ubuntu/)
 
-    Her ikisi de aynı işlevselliğe sahiptir, ancak ek donanım Microsoft R Open avantajlar sağladığı için doğrusal Cebir kitaplıkları hızlandırılmış [Intel matematik çekirdek Kitaplığı](https://software.intel.com/intel-mkl).
+     Her ikisi de aynı işlevselliğe sahiptir, ancak ek donanım Microsoft R Open avantajlar sağladığı için doğrusal Cebir kitaplıkları hızlandırılmış [Intel matematik çekirdek Kitaplığı](https://software.intel.com/intel-mkl).
 
-1. Yönergeleri takip edin [Linux için Uzak R hizmeti](setting-up-remote-r-service-on-linux.md), fiziksel Ubuntu bilgisayarlar, Azure Ubuntu Vm'leri, Linux (WSL) ve Azure Container havuzda çalışan dahil olmak üzere, Docker kapsayıcıları için Windows alt sistemi kapsar.
+2. Yönergeleri takip edin [Linux için Uzak R hizmeti](setting-up-remote-r-service-on-linux.md), fiziksel Ubuntu bilgisayarlar, Azure Ubuntu Vm'leri, Linux (WSL) ve Azure Container havuzda çalışan dahil olmak üzere, Docker kapsayıcıları için Windows alt sistemi kapsar.
 
 ## <a name="configure-r-services"></a>R services'ı yapılandırma
 

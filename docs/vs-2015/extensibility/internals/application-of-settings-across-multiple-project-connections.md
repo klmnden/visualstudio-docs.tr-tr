@@ -15,12 +15,12 @@ ms.assetid: 2116d3d0-c46c-4d0a-b482-08a178584f46
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81d6a1f540314863e4e24b3b91c7f4112e0af8f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7f848c64072ebd77dfa3494b5dfc390c34855948
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197619"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940859"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Birden Çok Proje Bağlantısında Ayarların Uygulanması
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Kaynak Denetimi Eklentisi Kaynak Denetimi Eklentisi API 1.2 kullanılarak oluşt
 ## <a name="new-functions"></a>Yeni işlevleri  
  Toplu işlem aşağıdaki yeni işlevleri destekler:  
   
--   [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)  
+- [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)  
   
--   [SccEndBatch](../../extensibility/sccendbatch-function.md)  
+- [SccEndBatch](../../extensibility/sccendbatch-function.md)  
   
- `SCCBeginBatch` İşlevi, bir grup kaynak denetimi işlemleri başlatır. `SccEndBatch` Grup kapatır. Grupları bulunmayabilir.  
+  `SCCBeginBatch` İşlevi, bir grup kaynak denetimi işlemleri başlatır. `SccEndBatch` Grup kapatır. Grupları bulunmayabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak Denetimi Eklentisi API Sürümü 1.2’deki Yenilikler](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

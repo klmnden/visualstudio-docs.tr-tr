@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 334a0b964033282458c211d69af30aad20dbd6bc
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4677380081aaa0ac79f589ea7594f19f78750613
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781951"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844113"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Uzaktan hata ayıklama Visual Studio'da Visual C++ projesi
 Farklı bir bilgisayarda bir Visual Studio uygulamasında hata ayıklama, yükleme ve uygulamanızı dağıtacağınız bilgisayarda Uzak araçları çalıştırmak için projenizi Visual Studio'dan uzak bilgisayara bağlanın ve ardından dağıtmak ve uygulamanızı çalıştırmak için yapılandırın.
@@ -56,50 +56,50 @@ Desteklenen Windows 7 ve daha yeni uzaktan hata ayıklayıcı (telefon değil) v
 ## <a name="remote_cplusplus"></a> Visual C++ projesinin hatalarını uzaktan ayıklama  
  Aşağıdaki yordamda projesinin yolunu ve adını C:\remotetemp\MyMfc ve uzak bilgisayarın adını **MJO DL**.  
   
-1.  Adlı bir MFC uygulaması oluşturmak **mymfc.**  
+1. Adlı bir MFC uygulaması oluşturmak **mymfc.**  
   
-2.  Herhangi bir kolayca, örnekte için ulaşıldığında uygulamada bir kesme noktası ayarlayın **MainFrm.cpp**, başlangıcında `CMainFrame::OnCreate`.  
+2. Herhangi bir kolayca, örnekte için ulaşıldığında uygulamada bir kesme noktası ayarlayın **MainFrm.cpp**, başlangıcında `CMainFrame::OnCreate`.  
   
-3.  Çözüm Gezgini'nde sağ tıklatın ve proje **özellikleri**. Açık **hata ayıklama** sekmesi.  
+3. Çözüm Gezgini'nde sağ tıklatın ve proje **özellikleri**. Açık **hata ayıklama** sekmesi.  
   
-4.  Ayarlama **başlatmak için hata ayıklayıcı** için **uzaktan Windows hata ayıklayıcı**.  
+4. Ayarlama **başlatmak için hata ayıklayıcı** için **uzaktan Windows hata ayıklayıcı**.  
   
-     ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")  
+    ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")  
   
-5.  Aşağıdaki özelliklerde değişiklik:  
+5. Aşağıdaki özelliklerde değişiklik:  
   
-    |Ayar|Değer|
-    |-|-|  
-    |Uzaktan komut|C:\remotetemp\mymfc.exe|  
-    |Çalışma dizini|C:\remotetemp|  
-    |Uzak sunucu adı|MJO DL:*BağlantıNoktasıNumarası*|  
-    |bağlantı|Windows kimlik doğrulaması ile uzaktan|  
-    |Hata ayıklayıcı türü|Yalnızca yerel|  
-    |Dağıtım dizini|C:\remotetemp.|  
-    |Dağıtılacak ek dosyalar|C:\data\mymfcdata.txt.|  
+   |Ayar|Değer|
+   |-|-|  
+   |Uzaktan komut|C:\remotetemp\mymfc.exe|  
+   |Çalışma dizini|C:\remotetemp|  
+   |Uzak sunucu adı|MJO DL:*BağlantıNoktasıNumarası*|  
+   |bağlantı|Windows kimlik doğrulaması ile uzaktan|  
+   |Hata ayıklayıcı türü|Yalnızca yerel|  
+   |Dağıtım dizini|C:\remotetemp.|  
+   |Dağıtılacak ek dosyalar|C:\data\mymfcdata.txt.|  
   
-     (İsteğe bağlı) ek dosyaları dağıtmak istiyorsanız her iki makinelerde klasörü bulunmalıdır.  
+    (İsteğe bağlı) ek dosyaları dağıtmak istiyorsanız her iki makinelerde klasörü bulunmalıdır.  
   
-6.  Çözüm Gezgini'nde çözüme sağ tıklayıp seçin **Configuration Manager**.  
+6. Çözüm Gezgini'nde çözüme sağ tıklayıp seçin **Configuration Manager**.  
   
-7.  İçin **hata ayıklama** yapılandırma, select **Dağıt** onay kutusu.  
+7. İçin **hata ayıklama** yapılandırma, select **Dağıt** onay kutusu.  
   
-     ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
+    ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
   
-8.  Hata Ayıklamayı Başlat (**hata ayıklama > hata ayıklamayı Başlat**, veya **F5**).  
+8. Hata Ayıklamayı Başlat (**hata ayıklama > hata ayıklamayı Başlat**, veya **F5**).  
   
 9. Yürütülebilir dosyayı uzak bilgisayara otomatik olarak dağıtılır.  
   
 10. İstenirse, uzak makineye bağlanmak için ağ kimlik bilgilerini girin.  
   
-     Gerekli kimlik bilgilerinin, ağınızın güvenlik yapılandırması'nı özgüdür. Örneğin, bir etki alanı bilgisayarında güvenlik sertifikasını seçin veya etki alanı adınızı ve parolanızı girin. Bir etki alanı olmayan makinede, makine adı ve geçerli kullanıcı hesabı adı gibi girebilirsiniz **MJO-DL\name@something.com**, doğru parola ile birlikte.  
+     Gerekli kimlik bilgilerinin, ağınızın güvenlik yapılandırması'nı özgüdür. Örneğin, bir etki alanı bilgisayarında güvenlik sertifikasını seçin veya etki alanı adınızı ve parolanızı girin. Bir etki alanı olmayan makinede, makine adı ve geçerli kullanıcı hesabı adı gibi girebilirsiniz <strong>MJO-DL\name@something.com</strong>, doğru parola ile birlikte.  
   
 11. Visual Studio bilgisayarda yürütme kesme noktasında durdurulduğunu görmeniz gerekir.  
   
     > [!TIP]
     >  Alternatif olarak, dosyaların ayrı bir adım olarak dağıtabilirsiniz. İçinde **Çözüm Gezgini** sağ **mymfc** düğümünü seçip **Dağıt**.  
   
- Uygulama tarafından kullanılması gereken kod dışı dosyalara varsa, bunları Visual Studio projenize eklemeniz gerekir. Ek dosyalar için bir proje klasörü oluşturun (içinde **Çözüm Gezgini**, tıklayın **Ekle > Yeni klasör**.) Dosyaları klasöre eklersiniz (içinde **Çözüm Gezgini**, tıklayın **Ekle > var olan öğe**, ardından dosyaları seçin). Üzerinde **özellikleri** sayfasında her dosya için **çıkış dizinine Kopyala** için **her zaman Kopyala**.
+    Uygulama tarafından kullanılması gereken kod dışı dosyalara varsa, bunları Visual Studio projenize eklemeniz gerekir. Ek dosyalar için bir proje klasörü oluşturun (içinde **Çözüm Gezgini**, tıklayın **Ekle > Yeni klasör**.) Dosyaları klasöre eklersiniz (içinde **Çözüm Gezgini**, tıklayın **Ekle > var olan öğe**, ardından dosyaları seçin). Üzerinde **özellikleri** sayfasında her dosya için **çıkış dizinine Kopyala** için **her zaman Kopyala**.
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>Uzak simgeleri ile hata ayıklamayı kurma 
 
@@ -110,5 +110,5 @@ Desteklenen Windows 7 ve daha yeni uzaktan hata ayıklayıcı (telefon değil) v
  [Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)   
  [Uzaktan hata ayıklama için Windows Güvenlik duvarını yapılandırma](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [Uzaktan hata ayıklayıcı bağlantı noktası atamaları](../debugger/remote-debugger-port-assignments.md)   
- [Uzaktan hata ayıklama Uzak IIS bilgisayarında ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)  
- [Uzaktan hata ayıklama ve sorun giderme](../debugger/remote-debugging-errors-and-troubleshooting.md)
+ [Uzak IIS Bilgisayarında Uzaktan ASP.NET ile Hata Ayıklama](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)  
+ [Uzaktan Hata Ayıklama Hataları ve Sorun Giderme](../debugger/remote-debugging-errors-and-troubleshooting.md)

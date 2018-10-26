@@ -16,12 +16,12 @@ ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3e03ea9985840d20c812f56d7a0f9cae66420cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ff386c2f333d3558aa6631dd2e4c13f8bfd595c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261823"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838757"
 ---
 # <a name="test-area-6-delete"></a>Test Alanı 6: Silme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Bu kaynak denetimi eklentisi test alanı silme eylemleri kapsar.
   
  Silinebilir öğe listesi aşağıda verilmiştir:  
   
--   Dosyalar  
+- Dosyalar  
   
--   Klasörleri  
+- Klasörleri  
   
--   Proje  
+- Proje  
   
- Seçeneğini projenin türüne bağlı olarak olabilir **kaldırmak** (dosyaları diskte kalır) proje veya **Sil** (kaldırır, diskteki dosyaları) projesi. Her iki işlem proje veya öğe kaldırır **Çözüm Gezgini**.  
+  Seçeneğini projenin türüne bağlı olarak olabilir **kaldırmak** (dosyaları diskte kalır) proje veya **Sil** (kaldırır, diskteki dosyaları) projesi. Her iki işlem proje veya öğe kaldırır **Çözüm Gezgini**.  
   
 ## <a name="expected-behavior"></a>Beklenen davranış  
  Test çalışmalarının silme test alanındaki beklenen davranıştır:  

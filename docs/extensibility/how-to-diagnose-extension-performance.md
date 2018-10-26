@@ -11,12 +11,12 @@ ms.author: bertaygu
 manager: douge
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 8ef7b61eca40c1a5c74deeb0b3e61de0df8a6be1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d1f2942c9f5987a686226c94e9764b8ab6300050
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637581"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934931"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Başlangıç uzantısı etkileri ölçme
 
@@ -169,11 +169,11 @@ Görünümü artık yalnızca uzantısı ilgili derlemeleri ile ilişkili olan m
 
 1. GÇ kullanarak `System.IO` sınıfı: Bu kareler kapsamlı maliyetini izlemede çok pahalı olmayabilir ancak dosya g/ç hızı makineden makineye farklılık gösterir, soruna neden olabilir olduğundan.
 
-  ![Sistem g/ç çerçeveler](media/perfview-system-io-frames.png)
+   ![Sistem g/ç çerçeveler](media/perfview-system-io-frames.png)
 
 2. Diğer zaman uyumsuz işler, bekleyen çağrılar engelleme: kapsamlı süre bu durumda, ana iş parçacığı, zaman uyumsuz iş tamamlanma engellendi süreyi temsil eder.
 
-  ![engelleme çağrı çerçeveler](media/perfview-blocking-call-frames.png)
+   ![engelleme çağrı çerçeveler](media/perfview-blocking-call-frames.png)
 
 Diğer görünümlerde etkisini belirlemek yararlı olacak izleme biri olacak **görüntü yük yığınları**. Aynı Filtreler uygulanmış olarak uygulayabilirsiniz **iş parçacığı zamanı yığınları** görüntülemek ve otomatik yüklenen paketi tarafından çalıştırılan koda nedeniyle yüklenmiş tüm derlemeleri bulabilirsiniz.
 

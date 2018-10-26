@@ -19,12 +19,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d59798e5ecf503b1dcb6b76e9d0d8fb448cc1e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e362ca665d7012e52d7ed49cce66adc4632b013
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295034"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937895"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Visual Studio’da XAML Tasarımcısı’nı kullanarak kullanıcı arabirimi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,31 +133,31 @@ Visual Studio'da XAML Tasarımcısı, XAML tabanlı Windows Store, Windows Phone
 ## <a name="document-outline-window"></a>Belge Anahattı penceresi  
  Belge Anahattı penceresi XAML Tasarımcısı'nda bu görevleri gerçekleştirmenize yardımcı olur:  
   
--   Çalışma yüzeyinde tüm öğeleri hiyerarşik yapısını görüntüleyin.  
+- Çalışma yüzeyinde tüm öğeleri hiyerarşik yapısını görüntüleyin.  
   
--   Öğeleri seçin, böylece bunları (hiyerarşisinde etrafında onları çalışma yüzeyinde değiştirin, özelliklerini Özellikler penceresinde ayarlayın ve benzeri taşıma) değiştirebilirsiniz. Daha fazla bilgi için bkz. [XAML Tasarımcısı'nda öğelerle çalışma](../designers/working-with-elements-in-xaml-designer.md)  
+- Öğeleri seçin, böylece bunları (hiyerarşisinde etrafında onları çalışma yüzeyinde değiştirin, özelliklerini Özellikler penceresinde ayarlayın ve benzeri taşıma) değiştirebilirsiniz. Daha fazla bilgi için bkz. [XAML Tasarımcısı'nda öğelerle çalışma](../designers/working-with-elements-in-xaml-designer.md)  
   
--   Denetimleri olan öğeler için şablonları oluşturup yeniden açın.  
+- Denetimleri olan öğeler için şablonları oluşturup yeniden açın.  
   
--   Seçilen öğeler için bağlam menüsünü kullanın. Aynı menüyü, çalışma yüzeyinde seçilen öğeleri için de kullanılabilir.  
+- Seçilen öğeler için bağlam menüsünü kullanın. Aynı menüyü, çalışma yüzeyinde seçilen öğeleri için de kullanılabilir.  
   
- Belge Anahattı penceresini görüntülemek için menü çubuğunda **görünümü**, **diğer Windows**, **belge anahattı**.  
+  Belge Anahattı penceresini görüntülemek için menü çubuğunda **görünümü**, **diğer Windows**, **belge anahattı**.  
   
- ![Belge Anahattı penceresi](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")  
+  ![Belge Anahattı penceresi](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")  
   
- Belge Anahattı penceresindeki Seçenekler şunlardır:  
+  Belge Anahattı penceresindeki Seçenekler şunlardır:  
   
- **Belge Anahattı**  
- Belge Anahattı penceresi ana görünümünde bir belge hiyerarşisini bir ağaç yapısında görüntüler. Farklı düzeylerde, belge inceleme ve kilitleme ve öğeleri tek veya grup gizlemek için Belge Anahattı hiyerarşik yapısını kullanabilirsiniz.  
+  **Belge Anahattı**  
+  Belge Anahattı penceresi ana görünümünde bir belge hiyerarşisini bir ağaç yapısında görüntüler. Farklı düzeylerde, belge inceleme ve kilitleme ve öğeleri tek veya grup gizlemek için Belge Anahattı hiyerarşik yapısını kullanabilirsiniz.  
   
- **Göster/Gizle**  
- Görüntüler veya belge ana hattı öğelere karşılık gelen çalışma yüzeyine öğeleri gizler. Kullanım **Göster/Gizle** düğmeleri, gösterilen göz önünde bir sembolü görüntülemek veya öğeleri gizlemek için CTRL + H ve bunları görüntülemek için SHIFT + CTRL + H tuşuna basın.  
+  **Göster/Gizle**  
+  Görüntüler veya belge ana hattı öğelere karşılık gelen çalışma yüzeyine öğeleri gizler. Kullanım **Göster/Gizle** düğmeleri, gösterilen göz önünde bir sembolü görüntülemek veya öğeleri gizlemek için CTRL + H ve bunları görüntülemek için SHIFT + CTRL + H tuşuna basın.  
   
- **Kilitle/Kilidini Aç**  
- Kilitler veya belge ana hattı öğelere karşılık gelen çalışma yüzeyine öğeleri kilidini açar. Kilitli öğeler değiştirilemez. Kullanım **Kilitle/Kilidini Aç** asma kilide görüntüleyen düğmeleri, kilitli olduğunda simge veya kilidini açmak için CTRL + L kilit öğelere ve SHIFT + CTRL + L tuşlarına basın.  
+  **Kilitle/Kilidini Aç**  
+  Kilitler veya belge ana hattı öğelere karşılık gelen çalışma yüzeyine öğeleri kilidini açar. Kilitli öğeler değiştirilemez. Kullanım **Kilitle/Kilidini Aç** asma kilide görüntüleyen düğmeleri, kilitli olduğunda simge veya kilidini açmak için CTRL + L kilit öğelere ve SHIFT + CTRL + L tuşlarına basın.  
   
- **Kapsamı için pageRoot Döndür**  
- Yukarı ok simgesi gösterir, belge ana hattı penceresinin üst kısmındaki seçeneğini belge anahattı önceki kapsama döndürür. Üst kapsama gitme yalnızca bir stil veya şablon kapsamı içinde olduğunuzda geçerlidir.  
+  **Kapsamı için pageRoot Döndür**  
+  Yukarı ok simgesi gösterir, belge ana hattı penceresinin üst kısmındaki seçeneğini belge anahattı önceki kapsama döndürür. Üst kapsama gitme yalnızca bir stil veya şablon kapsamı içinde olduğunuzda geçerlidir.  
   
 ## <a name="properties-window"></a>Özellik penceresi  
  Özellikler penceresinde denetimlerinde özellik değerlerini ayarlamanıza imkan sağlar. İşte bu şekilde görünür:  

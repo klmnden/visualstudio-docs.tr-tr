@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b6c0bffb2ce6db081a0c8ddf82c6b603a5dddd9
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: dd42bc89eb853a5d65f8e15eab3fdf2cd054f278
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495264"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927807"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Dosya adı uzantıları için fiil kaydetme
 Bir uygulama bir dosya adı uzantısı ilişkilendirme genellikle bir kullanıcı bir dosyayı çift tıkladığında gerçekleşen tercih edilen bir eylem vardır. Bu eyleme karşılık gelen bir fiil, örneğin açık eylem bağlandığı tercih edilir.  
@@ -28,17 +28,17 @@ Bir uygulama bir dosya adı uzantısı ilişkilendirme genellikle bir kullanıc�
 ## <a name="register-standard-verbs"></a>Standart fiiller kaydetme  
  İşletim sistemi, aşağıdaki standart fiiller tanır:  
   
--   Open  
+- Open  
   
--   Düzenle  
+- Düzenle  
   
--   Yürütme  
+- Yürütme  
   
--   Yazdırma  
+- Yazdırma  
   
--   Önizleme  
+- Önizleme  
   
- Mümkün olduğunda, standart bir fiil kaydedin. Açık bir fiil en yaygın seçenektir. Dosyayı açıp dosyayı düzenlemeye arasında NET bir fark varsa düzenleme fiili kullanın. Örneğin, açma bir *.htm* dosyayı görüntüler, tarayıcı içinde düzenleme ise bir *.htm* dosyasını bir HTML Düzenleyicisi'ni başlatır. Standart fiiller ile işletim sistemi yerel yerelleştirilmiştir.  
+  Mümkün olduğunda, standart bir fiil kaydedin. Açık bir fiil en yaygın seçenektir. Dosyayı açıp dosyayı düzenlemeye arasında NET bir fark varsa düzenleme fiili kullanın. Örneğin, açma bir *.htm* dosyayı görüntüler, tarayıcı içinde düzenleme ise bir *.htm* dosyasını bir HTML Düzenleyicisi'ni başlatır. Standart fiiller ile işletim sistemi yerel yerelleştirilmiştir.  
   
 > [!NOTE]
 >  Standart fiiller kaydederken açık anahtar için varsayılan değer ayarlı değil. Varsayılan değer menüsünde görüntü dizesini içerir. Bu dize standart fiiller için işletim sistemi sağlar.  

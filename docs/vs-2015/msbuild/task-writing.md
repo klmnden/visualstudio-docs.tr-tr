@@ -18,12 +18,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4b15434c75fb4cd2a295789794f6c9f8eb882bb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8cc7968664f201482647861a031a27c850611c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254903"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914716"
 ---
 # <a name="task-writing"></a>Görev Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Görevler, derleme işlemi sırasında çalışan kodu sağlar. Görevleri hedef
   
  Bir görev uygularken kullanabileceğiniz iki yaklaşım vardır:  
   
--   Uygulama <xref:Microsoft.Build.Framework.ITask> doğrudan arabirim.  
+- Uygulama <xref:Microsoft.Build.Framework.ITask> doğrudan arabirim.  
   
--   Sınıfınıza Yardımcısı sınıfından türetilen <xref:Microsoft.Build.Utilities.Task>, Microsoft.Build.Utilities.dll derlemesinde tanımlanmıştır. Görev ITask uygular ve bazı ITask üyeleri varsayılan uygulamalarını sağlar. Ayrıca, günlük kaydı daha kolay olur.  
+- Sınıfınıza Yardımcısı sınıfından türetilen <xref:Microsoft.Build.Utilities.Task>, Microsoft.Build.Utilities.dll derlemesinde tanımlanmıştır. Görev ITask uygular ve bazı ITask üyeleri varsayılan uygulamalarını sağlar. Ayrıca, günlük kaydı daha kolay olur.  
   
- Her iki durumda da adlı bir yöntem sınıfa eklemelisiniz `Execute`, görev çalıştırıldığında çağrılan yöntemi. Bu yöntem parametre almayan ve döndüren bir `Boolean` değer: `true` görev başarılı olursa veya `false` başarısız olduğunda. Aşağıdaki örnek, hiçbir eylem gerçekleştirmeyen ve döndüren bir görevi gösterir `true`.  
+  Her iki durumda da adlı bir yöntem sınıfa eklemelisiniz `Execute`, görev çalıştırıldığında çağrılan yöntemi. Bu yöntem parametre almayan ve döndüren bir `Boolean` değer: `true` görev başarılı olursa veya `false` başarısız olduğunda. Aşağıdaki örnek, hiçbir eylem gerçekleştirmeyen ve döndüren bir görevi gösterir `true`.  
   
 ```  
 using System;  

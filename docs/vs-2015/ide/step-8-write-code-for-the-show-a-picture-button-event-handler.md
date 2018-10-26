@@ -14,25 +14,25 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 37d47adff9bf8bc364e1972a6ab588a3591c120b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6172188fb7d06122cdcc178889b2a5b37ca1bb0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203274"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933553"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>8. Adım: Resim Göster Düğmesi Olay İşleyicisi için Kod Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu adımda yaptığınız **resim Göster** şöyle çalışan düğmesi:  
   
--   Bir kullanıcı bu düğmeyi seçtiğinde program açılır bir **açık dosya** iletişim kutusu.  
+- Bir kullanıcı bu düğmeyi seçtiğinde program açılır bir **açık dosya** iletişim kutusu.  
   
--   Bir kullanıcı bir resim dosyasını açarsa, program o resmi PictureBox içinde gösterir.  
+- Bir kullanıcı bir resim dosyasını açarsa, program o resmi PictureBox içinde gösterir.  
   
- IDE kod yazmanıza yardımcı olacak, IntelliSense adında güçlü bir araç vardır. Kodun girerken IDE, girdiğiniz kısmi sözcükler için önerilen tamamlamaları içeren bir kutu açar. Sonra yapmak istediğinizi belirlemeye çalışır ve otomatik olarak öğeyi listeden seçtiğiniz son atlar. Yukarı veya aşağı taşımak için okları veya seçimleri daraltmak için de mektup yazmaya devam edebilirsiniz. İstediğiniz seçeneği gördüğünüzde, seçmek için SEKME tuşunu seçin. Alternatif olarak, gerekli değilse, önerileri yok sayabilirsiniz.  
+  IDE kod yazmanıza yardımcı olacak, IntelliSense adında güçlü bir araç vardır. Kodun girerken IDE, girdiğiniz kısmi sözcükler için önerilen tamamlamaları içeren bir kutu açar. Sonra yapmak istediğinizi belirlemeye çalışır ve otomatik olarak öğeyi listeden seçtiğiniz son atlar. Yukarı veya aşağı taşımak için okları veya seçimleri daraltmak için de mektup yazmaya devam edebilirsiniz. İstediğiniz seçeneği gördüğünüzde, seçmek için SEKME tuşunu seçin. Alternatif olarak, gerekli değilse, önerileri yok sayabilirsiniz.  
   
- ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo")bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 4 Resim Görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205215) veya [öğretici 1: Resim Görüntüleyici C# ' - oluşturma Video 4](http://go.microsoft.com/fwlink/?LinkId=205203). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.  
+  ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo")bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 4 Resim Görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205215) veya [öğretici 1: Resim Görüntüleyici C# ' - oluşturma Video 4](http://go.microsoft.com/fwlink/?LinkId=205203). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.  
   
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Bir resim düğme olayı işleyicisi Göster kod yazmak için  
   

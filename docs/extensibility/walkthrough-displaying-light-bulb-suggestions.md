@@ -11,33 +11,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 717e8f721b57ec3d7bde04deed167fa2d6461517
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 16b9d56daab6eda1ef1cd9c31d8cc4d720f9a08e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500520"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875898"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>İzlenecek yol: ampul önerilerini görüntüleme
 Ampuller Visual Studio düzenleyicisinde bir dizi eylemi, örneğin, yerleşik kod Çözümleyicileri veya kodu yeniden düzenleme tarafından tanımlanan sorunlar için düzeltmeler gösterecek şekilde genişletmek simgeler ' dir.  
   
  Visual C# ve Visual Basic düzenleyicilerde yazma ve kendi kod Çözümleyicileri otomatik olarak ampuller görüntüleyen eylemlerle paketlemek için .NET derleyici Platformu ("Roslyn") kullanabilirsiniz. Daha fazla bilgi için bkz.:  
   
--   [Nasıl yapılır: bir C# tanılama ve kod düzeltmenizi yazın](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [Nasıl yapılır: bir C# tanılama ve kod düzeltmenizi yazın](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
--   [Nasıl yapılır: Visual Basic tanılama ve kod düzeltmenizi yazın](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [Nasıl yapılır: Visual Basic tanılama ve kod düzeltmenizi yazın](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
- Diğer diller C++ gibi ampuller gibi bir öneri, bu işlevin bir saplama uygulaması oluşturmak için bazı hızlı eylemler için de sağlar.  
+  Diğer diller C++ gibi ampuller gibi bir öneri, bu işlevin bir saplama uygulaması oluşturmak için bazı hızlı eylemler için de sağlar.  
   
- İşte bir ampul gibi görünüyor. Geçersiz olduğunda bir Visual Basic veya Visual C# projesinde, kırmızı dalgalı bir değişken adı altında görünür. Geçersiz tanımlayıcı fare imleci bir ampul görünür.  
+  İşte bir ampul gibi görünüyor. Geçersiz olduğunda bir Visual Basic veya Visual C# projesinde, kırmızı dalgalı bir değişken adı altında görünür. Geçersiz tanımlayıcı fare imleci bir ampul görünür.  
   
- ![Ampul](../extensibility/media/lightbulb.png "ampul")  
+  ![Ampul](../extensibility/media/lightbulb.png "ampul")  
   
- Ampul tarafından aşağı oka tıklayın, bir dizi önerilen eylemi, seçili eylem önizlemesi ile birlikte görüntülenir. Bu durumda, eylem çalışırsa, kodunuzda yapılan değişiklikleri gösterir.  
+  Ampul tarafından aşağı oka tıklayın, bir dizi önerilen eylemi, seçili eylem önizlemesi ile birlikte görüntülenir. Bu durumda, eylem çalışırsa, kodunuzda yapılan değişiklikleri gösterir.  
   
- ![Ampul Önizleme](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
+  ![Ampul Önizleme](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
- Ampuller kendi önerilen eylemler sağlamak için kullanabilirsiniz. Örneğin, açma küme ayraçları yeni bir satıra Taşı veya bunları önceki satır sonuna taşı eylemleri sağlayabilir. Aşağıdaki örneklerde, geçerli sözcüğü görünür bir ampul oluşturma işlemi gösterilmektedir ve iki sahip önerilen eylemler: **büyük harfe Dönüştür** ve **küçük harfe Dönüştür**.  
+  Ampuller kendi önerilen eylemler sağlamak için kullanabilirsiniz. Örneğin, açma küme ayraçları yeni bir satıra Taşı veya bunları önceki satır sonuna taşı eylemleri sağlayabilir. Aşağıdaki örneklerde, geçerli sözcüğü görünür bir ampul oluşturma işlemi gösterilmektedir ve iki sahip önerilen eylemler: **büyük harfe Dönüştür** ve **küçük harfe Dönüştür**.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Visual Studio 2015'ten başlayarak, Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik eklemiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'yı yükleme](../extensibility/installing-the-visual-studio-sdk.md).  

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05faacee77496f8d25ca926e4a1d441819cd9d9d
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 638cfc29ed2aa05a8576a2244b81f0625453076d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816707"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio düzeni
 Visual Studio iletişim kutularını etkinleştirildiklerinde [yardımcı iletişim düzeni](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), bu izleme standart iletişim kutuları unthemed olduğu [Windows Masaüstü iletişim düzeni ilkeleri](/windows/desktop/uxguide/win-dialog-box). Visual Studio kullanıcı arabirimini yenilemek hareket ettikçe daha belirgin iletişim kutularının bunları olarak ürün tanımlama deneyimler oluşturur, yeni bir tasarım vardır. Bunlar [temalı iletişim düzeni](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) konulu bir görünüme sahip.  
@@ -56,19 +56,19 @@ Visual Studio iletişim kutularını etkinleştirildiklerinde [yardımcı ileti�
   
 #### <a name="command-buttons"></a>Komut düğmeleri  
   
--   Komut düğmeleri içeriği değil, iletişim kutusu çerçevesi üzerinde çalışır. Bunlar, altta sağ yerleştirilmesi gerektiğini ve düğmeleri sonuçlanmaz ayrı ayarlamak için yukarıdaki değişken yeterli alana sahip olmalıdır.  
+- Komut düğmeleri içeriği değil, iletişim kutusu çerçevesi üzerinde çalışır. Bunlar, altta sağ yerleştirilmesi gerektiğini ve düğmeleri sonuçlanmaz ayrı ayarlamak için yukarıdaki değişken yeterli alana sahip olmalıdır.  
   
--   İletişim kutusu içinde çalışan yatay düğmeler varsa, diğer komut düğmesi yapılandırması sağ üst dikey bir yığınıdır. Bkz: [iç komut düğmeleri](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) aşağıda.  
+- İletişim kutusu içinde çalışan yatay düğmeler varsa, diğer komut düğmesi yapılandırması sağ üst dikey bir yığınıdır. Bkz: [iç komut düğmeleri](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) aşağıda.  
   
--   Sol (alt sol/Merkezi iletişim) komut düğmesi alanı "bant" iletişim işlemi denetimlerinin bir parçası olarak kabul edilir. Bu alan intrude tek şey, genel görev ya da iletişim ile ilgili Yardım bağlantısıdır.  
+- Sol (alt sol/Merkezi iletişim) komut düğmesi alanı "bant" iletişim işlemi denetimlerinin bir parçası olarak kabul edilir. Bu alan intrude tek şey, genel görev ya da iletişim ile ilgili Yardım bağlantısıdır.  
   
--   Komut düğmeleri, 75 x 23 piksel olmalıdır.  
+- Komut düğmeleri, 75 x 23 piksel olmalıdır.  
   
--   Komut düğmeleri uzaklıkta 6 piksel olmalıdır.  
+- Komut düğmeleri uzaklıkta 6 piksel olmalıdır.  
   
- ![Temel düğme hizalaması](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 c_ButtonAlign")  
+  ![Temel düğme hizalaması](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 c_ButtonAlign")  
   
- **Şekil 08.01-c: Temel düğme hizalaması**  
+  **Şekil 08.01-c: Temel düğme hizalaması**  
   
 #### <a name="labels"></a>Etiketler  
   
@@ -106,19 +106,19 @@ Visual Studio iletişim kutularını etkinleştirildiklerinde [yardımcı ileti�
 ####  <a name="BKMK_InteriorCommandButtons"></a> İç komut düğmeleri  
  Daha karmaşık iletişim kutularında, bir iç denetim iletişim kutusunun yürütme düğmeleri bulunduğu yere şeklinizi etkileyebilecek olan ilgili kendi düğmeleri olabilir.  
   
--   İç bir dikey hizalama (sütun) düğmelerini kullanın **Tamam**/**iptal** sağ alt köşede yatay olarak yerleştirilir.  
+- İç bir dikey hizalama (sütun) düğmelerini kullanın **Tamam**/**iptal** sağ alt köşede yatay olarak yerleştirilir.  
   
--   Düğmeleri yatay hizalama (satır), iç kullanım **Tamam**/**iptal** sağ üst köşedeki dikey olarak yerleştirilir. Bu durum daha az yaygındır.  
+- Düğmeleri yatay hizalama (satır), iç kullanım **Tamam**/**iptal** sağ üst köşedeki dikey olarak yerleştirilir. Bu durum daha az yaygındır.  
   
--   İç düğme boyutu, 75 x 23 piksel cinsinden boyutu ile eşleşen standart düğme boyutu hedef **Tamam**/**iptal** mümkün olduğunda düğme. Bir düğme etiketi standart düğme boyutu aşan düğmesi yaparsa bu kümedeki diğer düğmeleri, daha geniş bir boyutu ile hizalamanız gerekir.  
+- İç düğme boyutu, 75 x 23 piksel cinsinden boyutu ile eşleşen standart düğme boyutu hedef **Tamam**/**iptal** mümkün olduğunda düğme. Bir düğme etiketi standart düğme boyutu aşan düğmesi yaparsa bu kümedeki diğer düğmeleri, daha geniş bir boyutu ile hizalamanız gerekir.  
   
- ![Yatay Tamam ve İptal düğmeleri](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")  
+  ![Yatay Tamam ve İptal düğmeleri](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")  
   
- **Şekil 08.01-f: Dikey iç yatay Tamam/iptal düğmesi**  
+  **Şekil 08.01-f: Dikey iç yatay Tamam/iptal düğmesi**  
   
- ![Dikey Tamam ve İptal düğmeleri](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")  
+  ![Dikey Tamam ve İptal düğmeleri](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")  
   
- **Şekil 08.01-g: Yatay iç düğmeleriyle dikey Tamam/iptal**  
+  **Şekil 08.01-g: Yatay iç düğmeleriyle dikey Tamam/iptal**  
   
 #### <a name="browse-button"></a>[Gözat...] Düğme  
  **[Gözat...]**  izleyen bir metin kutusu düğmeleri nokta dahil olmak üzere, tam olarak "Gözat..." Yazım. Alanı sıkı veya birden fazla varsa **[Gözat...]**  ekrandaki düğmeye düğmeleri yalnızca üç nokta sınırlı.  

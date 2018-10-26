@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5896eccbee65450ab6206dd26a8f76d3fc48d5c
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 1347e6170b5cf58a4e88365d7c1653389cfb6607
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46135622"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950660"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Azure Test planları yerine Laboratuvar Yönetimi otomatik test için kullanma
 
@@ -27,7 +27,7 @@ Yapı-dağıtma-test Otomasyonu veya otomatikleştirilmiş test için Microsoft 
 MTM ve Laboratuvar Yönetimi, yapı, dağıtım ve uygulamalarınızın test otomatikleştirmek için bir XAML derleme tanımı üzerinde kullanır. XAML derleme çeşitli yapıları MTM laboratuvar ortamı, test paketlerini ve test ayarları gibi oluşturulan ve bir yapı denetleyicisi, yapı aracısı, Test denetleyicisi ve bu hedefe ulaşmak için Test aracıları gibi çeşitli altyapı bileşenlerini kullanır. Aynı derleme veya yayın yönetimini TFS ve Azure işlem hatları kullanarak daha az adım ile gerçekleştirebilirsiniz.
 
 | Adımlar | XAML derleme ile | Derleme veya sürüm yönetimi ile |
-|-------|----------------------|-----------------|
+|-------|-|-----------------|
 | Yapıya dağıtmak ve testleri çalıştırmak için makineleri belirleyin. | Standart laboratuar ortamı MTM bu makinelerle oluşturun. | yok |
 | Çalıştırılacak testleri tanımlayın. | MTM içinde bir test paketi oluşturun, test çalışmaları oluşturun ve Otomasyon her test çalışmasıyla ilişkilendirme. Testlerin çalıştırılması laboratuvar ortamında makine rolü tanımlayan MTM test ayarları oluşturun. | Test planları test yönetmeyi planlıyorsanız otomatik test paketi içindeki aynı şekilde oluşturun. Alternatif olarak, doğrudan derlemelerinizi tarafından üretilen test ikililerinin gelen testleri çalıştırmak istiyorsanız, bunu atlayabilirsiniz. Test ayarları her iki durumda da oluşturmaya gerek yoktur. |
 | Dağıtım ve test otomatikleştirin. | LabDefaultTemplate.*.xaml kullanarak bir XAML derleme tanımı oluşturun. Derleme, test paketlerini ve laboratuvar ortamı derleme tanımında belirtin. | Oluşturma bir [derleme veya yayın işlem hattı](/azure/devops/pipelines/index?view=vsts) tek bir ortam ile. Komut satırı görevi kullanılarak aynı dağıtım komut dosyası (XAML derleme tanımı) çalıştırın ve Test aracısı dağıtımı ve işlevsel testleri çalıştırma görevini kullanarak otomatikleştirilmiş testleri çalıştırın. Bu görevler için girdi olarak makine ve kimlik bilgilerini bir listesini belirtin. |
@@ -58,7 +58,7 @@ Ancak, daha zengin ortak ve özel bulut gelişimi yönetim sistemleri gibi veril
 (Test veya dağıtım olmaları durumunda Laboratuvar Merkezi ve bunları SCVMM ya da Azure (altyapı yönetimi etkinlikleri olmaları durumunda) veya TFS ve Azure DevOps Hizmetleri yoluyla nasıl gerçekleştirebileceğiniz gerçekleştirdiğiniz tipik etkinlikler aşağıdaki tabloda özetlenmiştir. etkinlikler):
 
 | Adımlar | Laboratuvar Merkezi ile | Derleme veya sürüm yönetimi ile |
-|-------|----------------------|-----------------|
+|-------|-|-----------------|
 | Ortam şablonlarını içeren bir kitaplık yönetin. | Bir laboratuvar ortamı oluşturun. Sanal makinelerde gerekli yazılımı yükleyin. Sysprep ve depolama ortamı Şablon kitaplığı olarak. | Doğrudan oluşturup sanal makine şablonları veya hizmet şablonları yönetmek için SCVMM Yönetim konsolunu kullanın. Azure kullanırken birini [Azure hızlı başlangıç şablonları](https://azure.microsoft.com/resources/templates/). |
 | Bir laboratuvar ortamı oluşturun. | Kitaplıkta bir ortam şablonu seçin ve dağıtın. Sanal makine yapılandırmaları özelleştirmek için gerekli parametreleri belirtin. | Doğrudan şablonlardan VM'ler veya hizmet örnekleri oluşturmak için SCVMM Yönetim konsolunu kullanın. Doğrudan kaynakları oluşturmak için Azure portalını kullanın. Veya bir yayın tanımına sahip bir ortam oluşturun. Azure kullanım görevler veya gelen görevleri [SCVMM Tümleştirme Uzantısı](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) yeni sanal makineler oluşturmak için. Bu tanımın yeni yayın oluşturulması, Laboratuvar Merkezi'nde yeni bir ortam oluşturmaya eşdeğerdir. |
 | Makinelere bağlanın. | Laboratuvar ortamı, Ortam Görüntüleyicisi'nde açın. | Sanal makinelere doğrudan bağlanmak için SCVMM Yönetim konsolunu kullanın. Alternatif olarak, uzak masaüstü oturumları açmak için sanal makinelerin DNS adları ve IP adresi kullanın. |

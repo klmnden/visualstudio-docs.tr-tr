@@ -17,12 +17,12 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b174145561f6005e9498384190800945e36af078
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 40d508a11807fe90981104e0cc7e6557577da103
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259993"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855605"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Başlangıç Sayfasına Kullanıcı Denetimi Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -141,41 +141,41 @@ Bu izlenecek yol, özel bir başlangıç sayfası için bir DLL başvurusu eklem
 ## <a name="adding-the-user-control-to-the-start-page"></a>Başlangıç sayfasına kullanıcı denetimi ekleme  
  Bu denetim başlangıç sayfası proje dosyasında başlangıç sayfası projenin kullanılabilir hale getirmek için yeni denetim kitaplığına bir başvuru ekleyin. Ardından, başlangıç sayfası XAML biçimlendirme denetimi ekleyebilirsiniz.  
   
-1.  İçinde **Çözüm Gezgini**, başlangıç sayfası projeye sağ **başvuruları** ve ardından **Başvuru Ekle**.  
+1. İçinde **Çözüm Gezgini**, başlangıç sayfası projeye sağ **başvuruları** ve ardından **Başvuru Ekle**.  
   
-2.  Üzerinde **projeleri** sekmesinde **WebUserControl** ve ardından **Tamam**.  
+2. Üzerinde **projeleri** sekmesinde **WebUserControl** ve ardından **Tamam**.  
   
-3.  Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
+3. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
   
-     Çözümü derledikten kullanıcı denetimi için IntelliSense çözümdeki diğer dosyalar için kullanılabilmesini sağlar.  
+    Çözümü derledikten kullanıcı denetimi için IntelliSense çözümdeki diğer dosyalar için kullanılabilmesini sağlar.  
   
- Başlangıç sayfası XAML biçimlendirme denetimi eklemek için bir ad alanı derlemesine başvuru ekleyin ve denetimi sayfasına yerleştirin.  
+   Başlangıç sayfası XAML biçimlendirme denetimi eklemek için bir ad alanı derlemesine başvuru ekleyin ve denetimi sayfasına yerleştirin.  
   
 #### <a name="to-add-the-control-to-the-markup"></a>Denetim için biçimlendirme eklemek için  
   
-1.  İçinde **Çözüm Gezgini**, başlangıç sayfası .xaml dosyasını açın.  
+1. İçinde **Çözüm Gezgini**, başlangıç sayfası .xaml dosyasını açın.  
   
-2.  İçinde **XAML** bölmesinde, aşağıdaki ad alanı bildirimi için üst düzey ekleme <xref:System.Windows.Controls.Grid> öğesi.  
+2. İçinde **XAML** bölmesinde, aşağıdaki ad alanı bildirimi için üst düzey ekleme <xref:System.Windows.Controls.Grid> öğesi.  
   
-    ```xml  
-    xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
-    ```  
+   ```xml  
+   xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
+   ```  
   
-3.  İçinde **XAML** bölmesinde gidin \<kılavuz > bölümü.  
+3. İçinde **XAML** bölmesinde gidin \<kılavuz > bölümü.  
   
-     Bölüm içeren bir <xref:System.Windows.Controls.TabControl> öğesinde bir <xref:System.Windows.Controls.Grid> öğesi.  
+    Bölüm içeren bir <xref:System.Windows.Controls.TabControl> öğesinde bir <xref:System.Windows.Controls.Grid> öğesi.  
   
-4.  Ekleme bir \<TabControl > öğesini içeren bir \<TabItem >, kullanıcı denetiminiz bir başvuru içeriyor.  
+4. Ekleme bir \<TabControl > öğesini içeren bir \<TabItem >, kullanıcı denetiminiz bir başvuru içeriyor.  
   
-    ```xml  
+   ```xml  
   
-    <TabItem Header="Web" Height="Auto">  
-        <vsc:UserControl1 />  
-    </TabItem>  
+   <TabItem Header="Web" Height="Auto">  
+       <vsc:UserControl1 />  
+   </TabItem>  
   
-    ```  
+   ```  
   
- Artık denetim test edebilirsiniz.  
+   Artık denetim test edebilirsiniz.  
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>Testi el ile oluşturulan özel bir başlangıç sayfası  
   

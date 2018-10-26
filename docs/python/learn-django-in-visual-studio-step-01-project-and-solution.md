@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3db94813f6d6b87d29744be2d1f53e26c3b80f26
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 882a355742a100f7a105abab541832f86740afe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280174"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942770"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Öğretici: Visual Studio'da Django web çerçevesi ile çalışmaya başlama
 
@@ -163,16 +163,16 @@ Proje oluşturma işlemi tamamlandıktan sonra ortak Django proje kodu inceleyin
 
     ![Bir Python Django komutları proje bağlam menüsü](media/django/step01-django-commands-menu.png)
 
-1. Projenizde bir klasör proje ile aynı adlandırılır. Bu temel Django proje dosyalarını içerir:
+2. Projenizde bir klasör proje ile aynı adlandırılır. Bu temel Django proje dosyalarını içerir:
 
-    - *__init.PY*: Python bu klasör bir Python paketi olduğunu söyler. boş bir dosya.
-    - *wsgi.PY*: hizmet projenizi WSGI uyumlu web sunucuları için bir giriş noktası. Genellikle bu dosyanın şu şekilde bırakın-web sunucuları için üretim kancaları sağladığı aynıdır.
-    - *Settings.PY*: bir web uygulaması geliştirme sırasında değiştiren Django projesi için ayarları içerir.
-    - *URLs.PY*: geliştirme sırasında da değiştirmeniz Django projesi için içindekiler tablosu içerir.
+   - *__init.PY*: Python bu klasör bir Python paketi olduğunu söyler. boş bir dosya.
+   - *wsgi.PY*: hizmet projenizi WSGI uyumlu web sunucuları için bir giriş noktası. Genellikle bu dosyanın şu şekilde bırakın-web sunucuları için üretim kancaları sağladığı aynıdır.
+   - *Settings.PY*: bir web uygulaması geliştirme sırasında değiştiren Django projesi için ayarları içerir.
+   - *URLs.PY*: geliştirme sırasında da değiştirmeniz Django projesi için içindekiler tablosu içerir.
 
-    ![Çözüm Gezgini'nde proje dosyaları Django](media/django/step01-django-project-in-solution-explorer.png)
+     ![Çözüm Gezgini'nde proje dosyaları Django](media/django/step01-django-project-in-solution-explorer.png)
 
-1. Daha önce belirtildiği gibi Visual Studio şablonu da ekler bir *requirements.txt* dosyası projenize Django paket bağımlılığı belirterek. Bu dosyanın varlığını ilk proje oluştururken bir sanal ortam oluşturmak için davet ' dir.
+3. Daha önce belirtildiği gibi Visual Studio şablonu da ekler bir *requirements.txt* dosyası projenize Django paket bağımlılığı belirterek. Bu dosyanın varlığını ilk proje oluştururken bir sanal ortam oluşturmak için davet ' dir.
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Soru: Ben diğer paketler yüklendikten sonra Visual Studio requirements.txt dosyasını bir sanal ortam oluşturabilir?
 

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddd64829f1e9f04c1e7634537818f3b6a081db8f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 96b280221ba7efdefd3023f015bd4075b8c03aaa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280616"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910505"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Başlangıç sayfasına kullanıcı denetimi Ekle
 Bu izlenecek yol, özel bir başlangıç sayfası için bir DLL başvurusu ekleme işlemi gösterilmektedir. Örnek bir kullanıcı denetimi çözüme ekler, kullanıcı denetimi oluşturur ve ardından derlemesi başlangıç sayfasından başvuran *.xaml* dosya. Yeni bir sekmede temel bir Web tarayıcısı olarak işlevler kullanıcı denetimi barındırır.  
@@ -137,41 +137,41 @@ Bu izlenecek yol, özel bir başlangıç sayfası için bir DLL başvurusu eklem
 ## <a name="add-the-user-control-to-the-start-page"></a>Başlangıç sayfasına kullanıcı denetimi Ekle  
  Bu denetim başlangıç sayfası proje dosyasında başlangıç sayfası projenin kullanılabilir hale getirmek için yeni denetim kitaplığına bir başvuru ekleyin. Ardından, başlangıç sayfası XAML biçimlendirme denetimi ekleyebilirsiniz.  
   
-1.  İçinde **Çözüm Gezgini**, başlangıç sayfası projeye sağ **başvuruları** ve ardından **Başvuru Ekle**.  
+1. İçinde **Çözüm Gezgini**, başlangıç sayfası projeye sağ **başvuruları** ve ardından **Başvuru Ekle**.  
   
-2.  Üzerinde **projeleri** sekmesinde **WebUserControl** ve ardından **Tamam**.  
+2. Üzerinde **projeleri** sekmesinde **WebUserControl** ve ardından **Tamam**.  
   
-3.  Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
+3. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
   
-     Çözümü derledikten kullanıcı denetimi için IntelliSense çözümdeki diğer dosyalar için kullanılabilmesini sağlar.  
+    Çözümü derledikten kullanıcı denetimi için IntelliSense çözümdeki diğer dosyalar için kullanılabilmesini sağlar.  
   
- Başlangıç sayfası XAML biçimlendirme denetimi eklemek için bir ad alanı derlemesine başvuru ekleyin ve denetimi sayfasına yerleştirin.  
+   Başlangıç sayfası XAML biçimlendirme denetimi eklemek için bir ad alanı derlemesine başvuru ekleyin ve denetimi sayfasına yerleştirin.  
   
 ### <a name="to-add-the-control-to-the-markup"></a>Denetim için biçimlendirme eklemek için  
   
-1.  İçinde **Çözüm Gezgini**, başlangıç sayfasını açmak *.xaml* dosya.  
+1. İçinde **Çözüm Gezgini**, başlangıç sayfasını açmak *.xaml* dosya.  
   
-2.  İçinde **XAML** bölmesinde, aşağıdaki ad alanı bildirimi için üst düzey ekleme <xref:System.Windows.Controls.Grid> öğesi.  
+2. İçinde **XAML** bölmesinde, aşağıdaki ad alanı bildirimi için üst düzey ekleme <xref:System.Windows.Controls.Grid> öğesi.  
   
-    ```xml  
-    xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
-    ```  
+   ```xml  
+   xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
+   ```  
   
-3.  İçinde **XAML** bölmesinde gidin \<kılavuz > bölümü.  
+3. İçinde **XAML** bölmesinde gidin \<kılavuz > bölümü.  
   
-     Bölüm içeren bir <xref:System.Windows.Controls.TabControl> öğesinde bir <xref:System.Windows.Controls.Grid> öğesi.  
+    Bölüm içeren bir <xref:System.Windows.Controls.TabControl> öğesinde bir <xref:System.Windows.Controls.Grid> öğesi.  
   
-4.  Ekleme bir \<TabControl > öğesini içeren bir \<TabItem >, kullanıcı denetiminiz bir başvuru içeriyor.  
+4. Ekleme bir \<TabControl > öğesini içeren bir \<TabItem >, kullanıcı denetiminiz bir başvuru içeriyor.  
   
-    ```xml  
+   ```xml  
   
-    <TabItem Header="Web" Height="Auto">  
-        <vsc:UserControl1 />  
-    </TabItem>  
+   <TabItem Header="Web" Height="Auto">  
+       <vsc:UserControl1 />  
+   </TabItem>  
   
-    ```  
+   ```  
   
- Artık denetim test edebilirsiniz.  
+   Artık denetim test edebilirsiniz.  
   
 ## <a name="test-a-manually-created-custom-start-page"></a>Testi el ile oluşturulan özel bir başlangıç sayfası  
   

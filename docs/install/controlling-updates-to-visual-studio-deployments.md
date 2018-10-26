@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e4f3843b7f3f8f19f0f375d6880d5d8be10bbd2
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 9cfc35698ce87027192031ef453a4c42ecc3c199
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139320"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830437"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Ağ tabanlı Visual Studio dağıtımlarına yönelik güncelleştirmeleri denetleme
 
@@ -31,40 +31,40 @@ Varsayılan olarak, Visual Studio yükleme bir ağ paylaşımından olsa bile g�
 
 Visual Studio güncelleştirmeleri nerede arar üzerinde doğrudan denetim istiyorsanız, nerede göründüğüne konumu değiştirebilirsiniz. Kullanıcılarınız için güncelleştirilmiş sürümü de denetleyebilirsiniz. Bunu yapmak için aşağıdaki adımları izleyin:
 
- 1. Çevrimdışı bir düzen oluşturma:
-    ```cmd
-    vs_enterprise.exe --layout C:\vs2017offline --lang en-US
-    ```
- 2. Sitemi barındırmak istediğiniz dosya paylaşımına kopyalayın:
-    ```cmd
-    xcopy /e C:\vs2017offline \\server\share\VS2017
-    ```
- 3. Düzeni ve değişiklik response.json dosyasında değişiklik `channelUri` yönetim denetimleri channelManifest.json bir kopyasına işaret edecek şekilde değeri.
+1. Çevrimdışı bir düzen oluşturma:
+   ```cmd
+   vs_enterprise.exe --layout C:\vs2017offline --lang en-US
+   ```
+2. Sitemi barındırmak istediğiniz dosya paylaşımına kopyalayın:
+   ```cmd
+   xcopy /e C:\vs2017offline \\server\share\VS2017
+   ```
+3. Düzeni ve değişiklik response.json dosyasında değişiklik `channelUri` yönetim denetimleri channelManifest.json bir kopyasına işaret edecek şekilde değeri.
 
-  Aşağıdaki örnekte olduğu gibi değeri ters eğik çizgi kaçış emin olun:
+   Aşağıdaki örnekte olduğu gibi değeri ters eğik çizgi kaçış emin olun:
 
-  ```json
-    "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
-  ```
+   ```json
+   "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
+   ```
 
- Artık son kullanıcılara bu paylaşımdan Visual Studio'yu yüklemek için kurulumu çalıştırabilirsiniz.
-    ```cmd
-    \\server\share\VS2017\vs_enterprise.exe
-    ```
+   Artık son kullanıcılara bu paylaşımdan Visual Studio'yu yüklemek için kurulumu çalıştırabilirsiniz.
+   ```cmd
+   \\server\share\VS2017\vs_enterprise.exe
+   ```
 
 Kuruluş Yöneticisi Visual Studio'nun daha yeni bir sürüme güncelleştirmek kullanıcıları için zaman olduğunu belirlediğinde, yapabilirler [düzen konumunu güncelleştirme](update-a-network-installation-of-visual-studio.md) güncelleştirilmiş dosyaları gibi birleştirmek için.
 
- 1. Aşağıdaki komutu benzeyen bir komut kullanın:
-    ```cmd
-    vs_enterprise.exe --layout \\server\share\VS2017 --lang en-US
-    ```
- 2. Güncelleştirilmiş düzenini response.json dosyasında yine de özellikle Channelurı değişiklik, özelleştirmelerinizi gibi içerdiğinden emin olun:
-    ```json
-    "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
-    ```
- Varolan bir Visual Studio yükler güncelleştirmeleri bu düzen arayın gelen `\\server\share\VS2017\ChannelManifest.json`. Visual Studio channelManifest.json kullanıcı yüklü olduğu daha yeniyse, bir güncelleştirme kullanılabilir kullanıcıya bildirir.
+1. Aşağıdaki komutu benzeyen bir komut kullanın:
+   ```cmd
+   vs_enterprise.exe --layout \\server\share\VS2017 --lang en-US
+   ```
+2. Güncelleştirilmiş düzenini response.json dosyasında yine de özellikle Channelurı değişiklik, özelleştirmelerinizi gibi içerdiğinden emin olun:
+   ```json
+   "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
+   ```
+   Varolan bir Visual Studio yükler güncelleştirmeleri bu düzen arayın gelen `\\server\share\VS2017\ChannelManifest.json`. Visual Studio channelManifest.json kullanıcı yüklü olduğu daha yeniyse, bir güncelleştirme kullanılabilir kullanıcıya bildirir.
 
- Yeni yüklemeler, düzenden doğrudan Visual Studio'nun güncelleştirilmiş sürümü otomatik olarak yükler.
+   Yeni yüklemeler, düzenden doğrudan Visual Studio'nun güncelleştirilmiş sürümü otomatik olarak yükler.
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>Visual Studio IDE'de bildirimleri denetleme
 

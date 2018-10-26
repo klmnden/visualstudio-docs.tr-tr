@@ -13,12 +13,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: d05a04aedfc5ded6232016a0c5216306a7cf84ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2f1971f2c9ed3cb7742c7144cf35708789f4a92
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193524"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879317"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Visual Studio’da Xamarin kullanarak yerel kullanıcı arabirimi ile uygulama oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,62 +42,62 @@ Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-in
   
 > [!TIP]
 >  Bu proje için tam kaynak kodunu bulabilirsiniz [github'daki mobil-samples deposuna](https://github.com/xamarin/mobile-samples/tree/master/Weather).
->
+> 
 >   Güçlük veya hatalarla karşılaşırsanız lütfen hakkında sorularınızı [forums.xamarin.com](http://forums.xamarin.com). Birçok hataları açıklanan olan en son SDK Xamarin tarafından gerekli güncelleştirerek çözülebilir [Xamarin sürüm notları](https://developer.xamarin.com/releases/) her platform için.    
-  
+> 
 > [!NOTE]
 >  Xamarin Geliştirici belgeleri, aşağıda listelenen birkaç izlenecek yollar hem hızlı başlangıç hem de yakından bölümleri ile de sunar. Tüm bu sayfalarda "Visual Studio" Visual Studio özel Kılavuzlar görmek için sağ üst köşede sayfanın seçili olduğundan emin olun.  
->   
->  -   Xamarin uygulamaları yerel UI ile:  
->   
->      -   [Hello, Android](https://developer.xamarin.com/guides/android/getting_started/hello,android/) (tek ekranlı basit uygulama)  
->     -   [Hello, Android çoklu ekranı](https://developer.xamarin.com/guides/android/getting_started/hello,android_multiscreen/) (ekranlar arasında gezintiyi uygulamayla)  
->     -   [Android parçaları izlenecek](http://developer.xamarin.com/guides/android/platform_features/fragments/fragments_walkthrough/) (diğer özelliklerin yanı sıra ana/ayrıntı ekranları için kullanılır)  
->     -   [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)  
->     -   [Çok Ekranlı Hello, iOS ](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS_multiscreen/)  
-> -   Xamarin.Forms (paylaşılan UI) ile Xamarin uygulamaları  
->   
->      -   [Hello, Xamarin.Forms](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/)  
->     -   [Hello, Xamarin.Forms Multiscreen](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms-multiscreen/)  
+> 
+> - Xamarin uygulamaları yerel UI ile:  
+> 
+>   -   [Hello, Android](https://developer.xamarin.com/guides/android/getting_started/hello,android/) (tek ekranlı basit uygulama)  
+>   -   [Hello, Android çoklu ekranı](https://developer.xamarin.com/guides/android/getting_started/hello,android_multiscreen/) (ekranlar arasında gezintiyi uygulamayla)  
+>   -   [Android parçaları izlenecek](http://developer.xamarin.com/guides/android/platform_features/fragments/fragments_walkthrough/) (diğer özelliklerin yanı sıra ana/ayrıntı ekranları için kullanılır)  
+>   -   [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)  
+>   -   [Çok Ekranlı Hello, iOS ](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS_multiscreen/)  
+>   -   Xamarin.Forms (paylaşılan UI) ile Xamarin uygulamaları  
+> 
+>   -   [Hello, Xamarin.Forms](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/)  
+>   -   [Hello, Xamarin.Forms Multiscreen](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms-multiscreen/)  
   
 ##  <a name="solution"></a> Çözümünüzü ayarlama  
  Bu adımlar paylaşılan kod için bir PCL ve iki eklenen NuGet paketi içeren yerel UI ile bir Xamarin çözümü oluşturun.  
   
-1.  Visual Studio'da yeni bir oluşturma **boş uygulama (yerel taşınabilir)** çözüm ve adlandırın **WeatherApp**. Girerek bu şablon en bir kolayca bulabilirsiniz **yerel taşınabilir** arama alanına.  
+1. Visual Studio'da yeni bir oluşturma **boş uygulama (yerel taşınabilir)** çözüm ve adlandırın **WeatherApp**. Girerek bu şablon en bir kolayca bulabilirsiniz **yerel taşınabilir** arama alanına.  
   
-     Yoksa, olabilir Xamarin'i yükleyin veya Visual Studio 2015 özelliğini etkinleştirmek için bkz: [Kurulum ve yükleme](../cross-platform/setup-and-install.md).  
+    Yoksa, olabilir Xamarin'i yükleyin veya Visual Studio 2015 özelliğini etkinleştirmek için bkz: [Kurulum ve yükleme](../cross-platform/setup-and-install.md).  
   
-2.  Çözümü oluşturmak için Tamam'a tıkladıktan sonra bir dizi ayrı projeler gerekir:  
+2. Çözümü oluşturmak için Tamam'a tıkladıktan sonra bir dizi ayrı projeler gerekir:  
   
-    -   **WeatherApp (taşınabilir)**: Burada, dahil olmak üzere genel iş mantığı ve UI kodunu kullanarak Xamarin.Forms ile platformlar arasında paylaşılan kod yazma PCL.  
+   - **WeatherApp (taşınabilir)**: Burada, dahil olmak üzere genel iş mantığı ve UI kodunu kullanarak Xamarin.Forms ile platformlar arasında paylaşılan kod yazma PCL.  
   
-    -   **WeatherApp.Droid**: projenin yerel Android kodunu içerir. Bu, varsayılan başlangıç projesi olarak ayarlanır.  
+   - **WeatherApp.Droid**: projenin yerel Android kodunu içerir. Bu, varsayılan başlangıç projesi olarak ayarlanır.  
   
-    -   **WeatherApp.iOS**: yerel iOS kodu içeren bir proje.  
+   - **WeatherApp.iOS**: yerel iOS kodu içeren bir proje.  
   
-    -   **(Windows Phone 8.1) WeatherApp.WinPhone**: yerel Windows Phone kod içeren bir proje.  
+   - **(Windows Phone 8.1) WeatherApp.WinPhone**: yerel Windows Phone kod içeren bir proje.  
   
      Her yerel proje içinde karşılık gelen bir platform için yerel Tasarımcı erişimi vardır ve platform belirli ekranları uygulayabilirsiniz.  
   
-3.  Ekleme **Newtonsoft.Json** ve hava durumu verileri hizmetten alınan bilgi işlem için kullanacağınız PCL projesine NuGet paketi:  
+3. Ekleme **Newtonsoft.Json** ve hava durumu verileri hizmetten alınan bilgi işlem için kullanacağınız PCL projesine NuGet paketi:  
   
-    -   Sağ **çözüm 'WeatherApp'** Çözüm Gezgini seçip **çözüm için NuGet paketlerini Yönet...** .  
+   -   Sağ **çözüm 'WeatherApp'** Çözüm Gezgini seçip **çözüm için NuGet paketlerini Yönet...** .  
   
-         NuGet penceresinde **Gözat** sekmesinde ve arama **Newtonsoft**.  
+        NuGet penceresinde **Gözat** sekmesinde ve arama **Newtonsoft**.  
   
-    -   Seçin **Newtonsoft.Json**.  
+   -   Seçin **Newtonsoft.Json**.  
   
-    -   Pencerenin sağ tarafında denetleyin **WeatherApp** (Bu, gerektiği paketini yüklemek yalnızca proje) projesi.  
+   -   Pencerenin sağ tarafında denetleyin **WeatherApp** (Bu, gerektiği paketini yüklemek yalnızca proje) projesi.  
   
-    -   Olun **sürüm** ayarlanmış **en son kararlı** sürümü.  
+   -   Olun **sürüm** ayarlanmış **en son kararlı** sürümü.  
   
-    -   **Yükle**'ye tıklatın.  
+   -   **Yükle**'ye tıklatın.  
   
-    -   ![Bulma ve Newtonsoft.Json NuGet paketini yükleme](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")  
+   -   ![Bulma ve Newtonsoft.Json NuGet paketini yükleme](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")  
   
-4.  Bulmak ve yüklemek için 3. adımı yineleyin **Microsoft.Net.Http** paket.  
+4. Bulmak ve yüklemek için 3. adımı yineleyin **Microsoft.Net.Http** paket.  
   
-5.  Çözümünüzü oluşturun ve herhangi bir yapı hatası olmadığını doğrulayın.  
+5. Çözümünüzü oluşturun ve herhangi bir yapı hatası olmadığını doğrulayın.  
   
 ##  <a name="dataservice"></a> Paylaşılan veri hizmeti kod yazma  
  **WeatherApp (taşınabilir)** projedir burada tüm platformlar arasında paylaşılan taşınabilir sınıf kitaplığı (PCL) kod yazacaksınız. PCL otomatik olarak derlenmiş iOS, Android ve Windows Phone uygulama paketleri dahil edilir.  

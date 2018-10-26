@@ -19,12 +19,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 048ea406fd9237640976f3a44bb5e53504276e0c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b2d84ba17fb3fd866dcd73cd2821289c40153b6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279376"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872674"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Yönetilen Kod için Kod Çözümlemesine Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,11 +63,11 @@ Yönetilen kod için kod analizi, yönetilen derlemeleri çözümler ve derlemel
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>İade ilkesinin parçası olarak kod analizini Çalıştır  
  Bir kuruluş olarak tüm iade etmelerin bazı ilkeleri karşılamasını zorunlu isteyebilirsiniz. Özellikle, aşağıdaki ilkeleri uyguladığınızdan emin olmanız gerekir:  
   
--   Teslim edilen kodda derleme hataları vardı.  
+- Teslim edilen kodda derleme hataları vardı.  
   
--   Kod Analizi en son derlemenin bir parçası çalıştırıldı.  
+- Kod Analizi en son derlemenin bir parçası çalıştırıldı.  
   
- Bu iade etme ilkeleri belirterek gerçekleştirebilirsiniz. Daha fazla bilgi için [takım projesi iade ilkeleriyle kod kalitesini geliştirme](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
+  Bu iade etme ilkeleri belirterek gerçekleştirebilirsiniz. Daha fazla bilgi için [takım projesi iade ilkeleriyle kod kalitesini geliştirme](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
   
 ## <a name="team-build-integration"></a>Ekip Oluşturma entegrasyonu  
  Analiz aracı yapı işleminin bir parçası olarak çalıştırmak için derleme sisteminin tümleşik özelliklerini kullanabilirsiniz. Daha fazla bilgi için [uygulamayı derleyin](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  

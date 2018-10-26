@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7a28e8ea14d27eb96100a4f1f67a875746dc5f6
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4e94d93d407f7499afbd43c8af2b7532ca1b4d8e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499269"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934567"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>XML komut tablosu (.vsct) dosyaları tasarlama
 Bir XML komut tablosu (*.vsct*) dosya VSPackage için komut öğelerin Görünüm ve düzeninin açıklar. Düğmeler, birleşik giriş kutuları, menüler, araç çubukları ve grupları komut öğelerinin komut öğeler içerir. Bu makalede, XML komut tablosu dosyaları, komut öğeleri ve menüler nasıl etkilediklerini ve bunların nasıl oluşturulacağı açıklanır.
@@ -33,37 +33,37 @@ Bir XML komut tablosu (*.vsct*) dosya VSPackage için komut öğelerin Görünü
 ## <a name="differences-between-ctc-and-vsct-files"></a>.Ctc ve .vsct dosyaları arasındaki farklar
  Anlamı XML arkasında bulunan etiketleri sırada bir *.vsct* dosya, bu etiketler artık kullanım dışı olarak aynı *.ctc* dosya biçimi, geliştirdikleri biraz farklıdır:
 
--   Yeni  **\<extern >** etikettir burada diğer başvuru *.h* dosyaları için bu dosyaları gibi derlenecek [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] araç çubuğu.
+- Yeni  **\<extern >** etikettir burada diğer başvuru *.h* dosyaları için bu dosyaları gibi derlenecek [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] araç çubuğu.
 
--   Sırada *.vsct* destek dosyaları **/ include** deyimi olarak *.ctc* dosyaları, ayrıca yeni özellikleri  **\<Al >** öğe. Fark, **/ include** getirir *tüm* bilgileri sırada  **\<Al >** adları yalnızca getirir.
+- Sırada *.vsct* destek dosyaları **/ include** deyimi olarak *.ctc* dosyaları, ayrıca yeni özellikleri  **\<Al >** öğe. Fark, **/ include** getirir *tüm* bilgileri sırada  **\<Al >** adları yalnızca getirir.
 
--   Sırada *.ctc* dosyalar gerektirir, önişlemci yönergeleri tanımladığınız bir başlık dosyası, gerekli değil *.vsct* dosyaları. Bunun yerine, yönergeleri bulunan sembol tablosu yerleştirin  **\<Sembol >** alt kısmında bulunan öğeleri *.vsct* dosya.
+- Sırada *.ctc* dosyalar gerektirir, önişlemci yönergeleri tanımladığınız bir başlık dosyası, gerekli değil *.vsct* dosyaları. Bunun yerine, yönergeleri bulunan sembol tablosu yerleştirin  **\<Sembol >** alt kısmında bulunan öğeleri *.vsct* dosya.
 
--   *.vsct* dosyaları özelliği bir  **\<ek açıklama >** istediğiniz notları veya hatta resimler gibi herhangi bir bilgi eklemeye izin veren bir etiket.
+- *.vsct* dosyaları özelliği bir  **\<ek açıklama >** istediğiniz notları veya hatta resimler gibi herhangi bir bilgi eklemeye izin veren bir etiket.
 
--   Değerler, öğenin öznitelikleri olarak depolanır.
+- Değerler, öğenin öznitelikleri olarak depolanır.
 
--   Komut bayrakları ayrı ayrı depolanır veya yığın.  Ancak, IntelliSense, yığılmış komut bayrakları çalışmaz. Komut bayrakları hakkında daha fazla bilgi için bkz: [CommandFlag öğesi](../../extensibility/command-flag-element.md).
+- Komut bayrakları ayrı ayrı depolanır veya yığın.  Ancak, IntelliSense, yığılmış komut bayrakları çalışmaz. Komut bayrakları hakkında daha fazla bilgi için bkz: [CommandFlag öğesi](../../extensibility/command-flag-element.md).
 
--   Bölünmüş bırakmalar, combos vb. gibi birden çok tür belirtebilirsiniz.
+- Bölünmüş bırakmalar, combos vb. gibi birden çok tür belirtebilirsiniz.
 
--   GUID'ler doğrulamaz.
+- GUID'ler doğrulamaz.
 
--   Her kullanıcı Arabirimi öğesi ile görüntülenen metinleri temsil eden bir dize var.
+- Her kullanıcı Arabirimi öğesi ile görüntülenen metinleri temsil eden bir dize var.
 
--   Üst isteğe bağlıdır. Atlanırsa, değer *grubu bilinmeyen* kullanılır.
+- Üst isteğe bağlıdır. Atlanırsa, değer *grubu bilinmeyen* kullanılır.
 
--   *Simgesi* bağımsız değişken isteğe bağlıdır.
+- *Simgesi* bağımsız değişken isteğe bağlıdır.
 
--   Bölüm bit eşlem: Bu bölüm aynı olan bir *.ctc* artık bir dosya adı tarafından çekilir içinde Href aracılığıyla belirtebilirsiniz dışında dosya *vsct.exe* derleyici derleme zamanında.
+- Bölüm bit eşlem: Bu bölüm aynı olan bir *.ctc* artık bir dosya adı tarafından çekilir içinde Href aracılığıyla belirtebilirsiniz dışında dosya *vsct.exe* derleyici derleme zamanında.
 
--   ResID: Eski kimliği kullanılan ve hala çalıştığı aynı olabilir kaynak bit eşlem *.ctc* dosyaları.
+- ResID: Eski kimliği kullanılan ve hala çalıştığı aynı olabilir kaynak bit eşlem *.ctc* dosyaları.
 
--   HRef: bit eşlem kaynağı için bir dosya adı belirtmek izin veren yeni bir yöntem. Kullanılan bölümüne atlayabilirsiniz. böylece tüm kullanılan olduğunu varsayar. Derleyicinin varsayılan dosya, sonra tüm ağ paylaşımları üzerindeki yerel kaynakları için arar ve tüm kaynakları tarafından tanımlanan **/I** geçin.
+- HRef: bit eşlem kaynağı için bir dosya adı belirtmek izin veren yeni bir yöntem. Kullanılan bölümüne atlayabilirsiniz. böylece tüm kullanılan olduğunu varsayar. Derleyicinin varsayılan dosya, sonra tüm ağ paylaşımları üzerindeki yerel kaynakları için arar ve tüm kaynakları tarafından tanımlanan **/I** geçin.
 
--   Tuş: Artık bir öykünücü belirtmeniz gerekir. Bir belirtirseniz, derleyicinin düzenleyici ve öykünücü aynı olduğu varsayılır.
+- Tuş: Artık bir öykünücü belirtmeniz gerekir. Bir belirtirseniz, derleyicinin düzenleyici ve öykünücü aynı olduğu varsayılır.
 
--   Keychord: Keychord bırakıldı. Yeni biçim *Key1, Değişiklik1, Key2, Mod2*.  Bir karakter, onaltılık veya VK sabiti belirtebilirsiniz.
+- Keychord: Keychord bırakıldı. Yeni biçim *Key1, Değişiklik1, Key2, Mod2*.  Bir karakter, onaltılık veya VK sabiti belirtebilirsiniz.
        
 Yeni derleyici *vsct.exe*, her ikisi de derler *.ctc* ve *.vsct* dosyaları. Eski *ctc.exe* derleyici, ancak tanımıyor veya derleme *.vsct* dosyaları.
 

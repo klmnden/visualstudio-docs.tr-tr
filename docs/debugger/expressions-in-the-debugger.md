@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a29c9cd7c1c80ca27ea3e72b4aab3e881bb8d480
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4df9ae5c8b525ff75985ff7aff071d2b2e86e1cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626038"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926195"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısındaki ifadeler
 Visual Studio hata ayıklayıcı bir ifade girdiğinizde çalışan ifade değerlendiricilerini içerir **QuickWatch** iletişim kutusu, **Watch** penceresinde veya **hemen** penceresi. İş yerinizde de ifade değerlendiricilerini olan **kesme noktaları** penceresi ve hata ayıklayıcı içindeki diğer pek çok yerde.
@@ -91,13 +91,13 @@ int main()
   
  Hata ayıklayıcı iç işlevleri:  
   
--   Güvenli olması garanti: hata ayıklayıcı iç işlev yürütülürken bozuk olmadıklarından ayıklanmakta olan işlem.  
+- Güvenli olması garanti: hata ayıklayıcı iç işlev yürütülürken bozuk olmadıklarından ayıklanmakta olan işlem.  
   
--   Hatta burada yan etkileri ve işlev değerlendirmesi izin verilmeyen senaryolarda tüm ifadelerde izin verilir.  
+- Hatta burada yan etkileri ve işlev değerlendirmesi izin verilmeyen senaryolarda tüm ifadelerde izin verilir.  
   
--   Normal işlev çağrıları bir mini döküm hata ayıklama gibi mümkün olmadığı senaryolarda çalışır.  
+- Normal işlev çağrıları bir mini döküm hata ayıklama gibi mümkün olmadığı senaryolarda çalışır.  
   
- Hata ayıklayıcı iç işlevleri da değerlendirilirken ifadeleri daha kullanışlı hale getirebilirsiniz. Örneğin, `strncmp(str, "asd")` bir kesme noktası koşulu yazmak kolaydır `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )  
+  Hata ayıklayıcı iç işlevleri da değerlendirilirken ifadeleri daha kullanışlı hale getirebilirsiniz. Örneğin, `strncmp(str, "asd")` bir kesme noktası koşulu yazmak kolaydır `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )  
   
 |Alan|İç işlevleri|  
 |----------|-------------------------|  

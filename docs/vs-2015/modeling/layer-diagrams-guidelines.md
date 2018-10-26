@@ -17,12 +17,12 @@ caps.latest.revision: 57
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2307bb0bfbc366ab1d2d1636f5e289ac0f4b4bfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: faa6c3a39b7aa8a0ca7b2788cd9946421cfe6b7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202585"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844165"
 ---
 # <a name="layer-diagrams-guidelines"></a>Katman Diyagramları: Yönergeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,9 +92,9 @@ Uygulamanızın yüksek bir düzeyde oluşturarak mimarisini *katman diyagramlar
   
 #### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>Katmanlar arasında ters mühendislik Varolan bağımlılıkları için  
   
--   Tek veya birden fazla katman seçin, seçilen katmanın sağ tıklayın ve ardından **Bağımlılıklar Oluştur**.  
+- Tek veya birden fazla katman seçin, seçilen katmanın sağ tıklayın ve ardından **Bağımlılıklar Oluştur**.  
   
- Genellikle var olmaması gereken bazı bağımlılıklar göreceksiniz. Bu bağımlılıkları hedeflenen tasarım ile uyumlu hale getirmek için düzenleyebilirsiniz.  
+  Genellikle var olmaması gereken bazı bağımlılıklar göreceksiniz. Bu bağımlılıkları hedeflenen tasarım ile uyumlu hale getirmek için düzenleyebilirsiniz.  
   
 ##  <a name="EditArchitecture"></a> Katmanları ve bağımlılıkları hedeflenen tasarımı göstermek için düzenleme  
  İçin sisteminizde veya hedeflenen mimaride yapmayı planladığınız değişiklikleri açıklamak için katman diyagramı düzenlemek için aşağıdaki adımları kullanın. Kod yapısını genişletmeden önce iyileştirmek için yeniden düzenleme bazı değişiklikler de göz önünde bulundurabilirsiniz. Bkz: [kod yapısını iyileştirme](#Improving).  
@@ -151,11 +151,11 @@ Uygulamanızın yüksek bir düzeyde oluşturarak mimarisini *katman diyagramlar
 ##  <a name="UpdateCode"></a> Yeni mimarinize uygun olması için kodu güncelleştirme  
  Genellikle, hata kodu güncellenmiş katman diyagramına karşı doğrulamak ilk kez görünür. Bu hatalar, birkaç nedeni olabilir:  
   
--   Yapı yanlış katmana atanmış. Bu durumda, yapıyı taşıyın.  
+- Yapı yanlış katmana atanmış. Bu durumda, yapıyı taşıyın.  
   
--   Sınıf gibi bir yapı, başka bir sınıfı mimarinizle çakışacak şekilde kullanıyor. Bu durumda, bağımlılığı kaldırmak için kodu yeniden düzenleyin.  
+- Sınıf gibi bir yapı, başka bir sınıfı mimarinizle çakışacak şekilde kullanıyor. Bu durumda, bağımlılığı kaldırmak için kodu yeniden düzenleyin.  
   
- Bu hataları çözmek için doğrulama sırasında daha fazla hata görünmeyene kadar kodu güncelleştirin. Bu genellikle yinelemeli bir işlemdir. Bu hatalar hakkında daha fazla bilgi için bkz. [katman diyagramları ile kodu doğrulama](../modeling/validate-code-with-layer-diagrams.md).  
+  Bu hataları çözmek için doğrulama sırasında daha fazla hata görünmeyene kadar kodu güncelleştirin. Bu genellikle yinelemeli bir işlemdir. Bu hatalar hakkında daha fazla bilgi için bkz. [katman diyagramları ile kodu doğrulama](../modeling/validate-code-with-layer-diagrams.md).  
   
 > [!NOTE]
 >  Geliştirme veya kodu yeniden düzenleyin, katman diyagramına bağlamak için yeni yapılar olabilir. Ancak, var olan ad alanları temsil eden katmanlarına sahip olduğunda bu örneğin, gerekli olmayabilir ve yeni kod, daha fazla malzeme yalnızca bu ad alanlarına ekler.  

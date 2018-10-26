@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 51ac98095f8b0dc6e303a0fc4135e022e9de5011
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ee38f210585124f8492f6aed9f062003602f287
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272161"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895326"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Nasıl yapılır: ekleme ve ayırma işlemleri çalıştırmak için performans araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,13 +39,13 @@ Profil Oluşturucu ekleme veya örnekleme ve toplar performans verilerini daha k
   
  Profili için kullanılabilir olan işlemleri, bilgisayarın yönetici tarafından ayarlanan kullanıcı erişimi izinleri bağlıdır. Örneğin, bir kullanıcı hesabı izni aşağıdakilerden herhangi biri olabilir:  
   
--   Gelişmiş Özellikler, sürücü ve hizmeti başlatmak için yöneticiniz tarafından belirlenen zaman profil oluşturma.  
+- Gelişmiş Özellikler, sürücü ve hizmeti başlatmak için yöneticiniz tarafından belirlenen zaman profil oluşturma.  
   
--   Yalnızca (etki alanı kullanıcı) profil oluşturma örneği.  
+- Yalnızca (etki alanı kullanıcı) profil oluşturma örneği.  
   
--   Herkes için profil oluşturma için erişimi engeller.  
+- Herkes için profil oluşturma için erişimi engeller.  
   
- Daha fazla bilgi için [profil oluşturma ve Windows Vista Güvenliği](../profiling/profiling-and-windows-vista-security.md) ve yönetim seçeneklerini [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Daha fazla bilgi için [profil oluşturma ve Windows Vista Güvenliği](../profiling/profiling-and-windows-vista-security.md) ve yönetim seçeneklerini [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-attach-to-a-running-process"></a>Çalışan bir işleme iliştirmek için  
   

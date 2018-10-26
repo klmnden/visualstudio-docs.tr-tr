@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 957add624e8efa7542991cc03ca48d6835e497f0
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 26ea23c6091910a83ddec41194aa43ae93c9b9eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857579"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820780"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Visual Studio tasarımındaki yenilikler
 
@@ -70,7 +70,7 @@ Daha fazla ayrıntı için [bu blog gönderisini](https://blogs.msdn.microsoft.c
 Visual Studio 2017 birçok sürümlerinde kullanılabilir. Bunların tümü, mimari ve Modelleme Araçları için destek sağlar. Aşağıdaki tabloda her bir aracı kullanılabilirliğini gösterir.
 
 |**Özelliği**|**Enterprise edition**|**Professional sürümü**|**Community sürümü**|
-|-----------------|--------------------|----------------------|-------------------|
+|-|-|-|-|
 |**Kod haritaları**|Evet|Yalnızca okuma kod haritalarını destekler, kod filtreleme, yeni genel düğüm ekleme ve seçimden yeni yönlendirilmiş grafik oluşturma eşler.|-|
 |**Bağımlılık diyagramları**|Evet|Yalnızca bağımlılık diyagramlarını okuma destekler.|Yalnızca bağımlılık diyagramlarını okuma destekler.|
 |**Yönlendirilmiş grafikleri** (DGML diyagramları)|Evet|Evet|Evet|

@@ -15,23 +15,23 @@ ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c82100a544a9f59fbb64af8b78d51314b39690f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 91becc7afb7c236ebe9d6e08c1b8a221cb9f90fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282708"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826551"
 ---
 # <a name="supporting-multiple-document-views"></a>Birden Çok Belge Görünümünü Destekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Düzenleyiciniz için ayrı bir belge verileri ve belge görünümü nesneleri oluşturarak, bir belgenin birden fazla görünümü sağlayabilirsiniz. Ek belge görünümü yararlı olabilecek bazı durumlar şunlardır:  
   
--   Yeni pencere desteği: düzenleyiciniz aynı türde iki veya daha fazla görünümlerini sağlamak istediğiniz düzenleyicide açık bir pencere zaten olan bir kullanıcı seçerek yeni bir pencere açabilmek **yeni pencere** komutunu **penceresi** menüsü.  
+- Yeni pencere desteği: düzenleyiciniz aynı türde iki veya daha fazla görünümlerini sağlamak istediğiniz düzenleyicide açık bir pencere zaten olan bir kullanıcı seçerek yeni bir pencere açabilmek **yeni pencere** komutunu **penceresi** menüsü.  
   
--   Form ve kod görüntüleme desteği: düzenleyiciniz farklı görünümlerini sağlamak istiyor. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], örneğin, bir form görünümü hem de bir kod görünümü sağlar.  
+- Form ve kod görüntüleme desteği: düzenleyiciniz farklı görünümlerini sağlamak istiyor. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], örneğin, bir form görünümü hem de bir kod görünümü sağlar.  
   
- Bunun hakkında daha fazla bilgi için Visual Studio Paket şablon tarafından oluşturulan özel düzenleyici proje EditorFactory.cs dosyasında CreateEditorInstance yordamına bakın. Bu proje hakkında daha fazla bilgi için bkz. [izlenecek yol: özel düzenleyici oluşturma](../extensibility/walkthrough-creating-a-custom-editor.md).  
+  Bunun hakkında daha fazla bilgi için Visual Studio Paket şablon tarafından oluşturulan özel düzenleyici proje EditorFactory.cs dosyasında CreateEditorInstance yordamına bakın. Bu proje hakkında daha fazla bilgi için bkz. [izlenecek yol: özel düzenleyici oluşturma](../extensibility/walkthrough-creating-a-custom-editor.md).  
   
 ## <a name="synchronizing-views"></a>Eşitleme görünümleri  
  Birden çok görünüm uyguladığınızda, belge veri nesnesinin veri ile eşitlenen tüm görünümleri tutmak için sorumludur. Olay arabirimleri üzerinde işleme kullanabileceğiniz <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> verilerle birden çok görünüm eşitlenecek.  

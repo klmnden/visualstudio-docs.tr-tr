@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 262dfd7860c5bd16c210e7305599eeb1003372fe
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: b7e282ed6aa93189ab15e608a5b3abe0c56411b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860075"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863340"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Bağımlılık diyagramları: yönergeler
 
@@ -105,7 +105,7 @@ Genellikle var olmaması gereken bazı bağımlılıklar göreceksiniz. Bu bağ�
 İçin sisteminizde veya hedeflenen mimaride yapmayı planladığınız değişiklikleri açıklamak için bağımlılık diyagramı düzenlemek için aşağıdaki adımları kullanın. Kod yapısını genişletmeden önce iyileştirmek için yeniden düzenleme bazı değişiklikler de göz önünde bulundurabilirsiniz. Bkz: [kod yapısını iyileştirme](#Improving).
 
 |**Hedef**|**Aşağıdaki adımları gerçekleştirin**|
-|------------|-----------------------------|
+|-|-|
 |Var olmaması gereken bir bağımlılık Sil|Bağımlılık tıklatın ve sonra basın **Sil**.|
 |Bağımlılık yönünü değiştirme veya kısıtlama|Ayarlama, **yönü** özelliği.|
 |Yeni bağımlılıklar oluşturma|Kullanım **bağımlılık** ve **çift yönlü bağımlılık** araçları.<br /><br /> Çoklu bağımlılıklar çizmek için araca çift tıklayın. İşlemi tamamladığınızda, tıklayın **işaretçi** aracını veya ENTER tuşuna **ESC** anahtarı.|

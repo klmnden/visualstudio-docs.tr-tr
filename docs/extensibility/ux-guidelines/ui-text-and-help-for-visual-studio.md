@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 202ba0f384fb658efd45ec446b27a385c98c37d4
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 52260b2cd401f8cdbd3a94704ab29db2f64fdc6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511789"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842241"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI metni ve Visual Studio için Yardım
 ##  <a name="BKMK_UITextAndTerminology"></a> UI metni ve terminoloji  
@@ -315,15 +315,15 @@ ms.locfileid: "39511789"
   
  Bu çözüm, hatalara neden olabilecek dört varsayımlarda bulunur:  
   
--   İletişim kutusunun Yardım düğmesi **IDHELP** (9).  
+- İletişim kutusunun Yardım düğmesi **IDHELP** (9).  
   
--   Yardım düğmesi gizlenir doğru iletişim kutusu görünür.  
+- Yardım düğmesi gizlenir doğru iletişim kutusu görünür.  
   
--   İletişim kutusu, kendi winproc yerine değil.  
+- İletişim kutusu, kendi winproc yerine değil.  
   
--   İletişim kutusu içinde başka bir iletişim kutusu ekli değil.  
+- İletişim kutusu içinde başka bir iletişim kutusu ekli değil.  
   
- İletişim msenv içinde bulunur ve kullanmayan **VBDialogBoxParam**, yararlanarak araştırmak **VBDialogBoxParam** kendi işleyicinizi uygulamadan önce.  
+  İletişim msenv içinde bulunur ve kullanmayan **VBDialogBoxParam**, yararlanarak araştırmak **VBDialogBoxParam** kendi işleyicinizi uygulamadan önce.  
   
 ##### <a name="dialogs-created-through-other-packages"></a>Diğer paketler aracılığıyla oluşturulan iletişim kutuları  
  Msenv dışında bulunan iletişim kutuları için kendi çözümünüzü uygulayabilirsiniz. İçinde VSPackage paylaşılan iletişim kutusu sınıfı için için başlık çubuğu düğmesini taşıma veya bir işleyici her iletişim kutusunda uygulama göz önünde bulundurun. Aşağıdaki kod, başlamanıza yardımcı olmak için bir uygulama bir skeleton şöyledir:  
@@ -430,4 +430,4 @@ public class HelpForm : Form
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yazı tipleri ve Visual Studio için biçimlendirme](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)   
  [Visual Studio düzeni](../../extensibility/ux-guidelines/layout-for-visual-studio.md)   
- [Bildirimler ve Visual Studio için ilerleme durumu](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
+ [Visual Studio İçin Bildirimler ve İlerleme Durumu](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)

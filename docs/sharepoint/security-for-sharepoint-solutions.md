@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3febd2a9a3d2450740b08cac4ad8d3c891386c9a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b014c3b4ada42982c41928ca17472e3f585af3ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626139"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878771"
 ---
 # <a name="security-for-sharepoint-solutions"></a>SharePoint çözümleri için güvenlik
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint uygulamaları güvenliğini iyileştirmenize yardımcı olacak aşağıdaki özellikleri içerir.
@@ -34,7 +34,7 @@ ms.locfileid: "42626139"
 ## <a name="allowpartiallytrustedcallers-attribute"></a>AllowPartiallyTrustedCallers özniteliği
  Varsayılan olarak, yalnızca uygulamalar çalışma zamanı kod erişim güvenliği (CAS) sistemi tarafından tam güvenilir bir paylaşılan yönetilen kod derleme erişebilirsiniz. AllowPartiallyTrustedCallers özniteliği ile tam olarak güvenilen bir derlemede işaretleme erişmek kısmen güvenilir derlemeler sağlar.
 
- Sistemin genel derleme önbelleğine dağıtılmaz herhangi bir SharePoint çözümü AllowPartiallyTrustedCallers özniteliği eklenir ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Bu, korumalı alana alınan çözümler ya da SharePoint uygulaması Bin dizinine dağıtılan çözümleri içerir. Daha fazla bilgi için [için Microsoft .NET Framework sürüm 1 güvenlik değişikliklerini](http://go.microsoft.com/fwlink/?LinkId=177515) ve [dağıtma Web Bölümleri SharePoint Foundation'da](http://go.microsoft.com/fwlink/?LinkId=177509).
+ Sistemin genel derleme önbelleğine dağıtılmaz herhangi bir SharePoint çözümü AllowPartiallyTrustedCallers özniteliği eklenir ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Bu, korumalı alana alınan çözümler ya da SharePoint uygulaması Bin dizinine dağıtılan çözümleri içerir. Daha fazla bilgi için [için Microsoft .NET Framework sürüm 1 güvenlik değişikliklerini](http://go.microsoft.com/fwlink/?LinkId=177515) ve [dağıtma Web Bölümleri SharePoint Foundation'da](http://go.microsoft.com/fwlink/?LinkId=177509).
 
 ## <a name="safe-against-script-property"></a>Betik özelliğinde karşı güvenli
  *Betik ekleme* kötü amaçlı olabilecek kod ekleme denetimleri veya Web sayfaları. SharePoint 2010 sitelerine betik ekleme karşı korumaya yardımcı olmak için katkıda bulunanlar görüntüleyemez veya varsayılan olarak Web Bölümleri veya özelliklerini düzenleyin. Bu davranışı SafeAgainstScript adlı SafeControl bir öznitelik tarafından denetlenir. İçinde [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)], bu öznitelik bir proje öğesinin ayarlayın **güvenli denetim girdileri** alt özellik **karşı güvenli betik**. Daha fazla bilgi için [proje öğelerinde paketleme ve dağıtım bilgileri sağlayan](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) ve [nasıl yapılır: denetimleri güvenli denetim olarak işaretleme](../sharepoint/how-to-mark-controls-as-safe-controls.md).

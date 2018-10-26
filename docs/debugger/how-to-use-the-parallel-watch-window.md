@@ -19,28 +19,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a142b512c5bbaf5d93dc0302aa39db92fb7c7ae
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: e9381479fdfa3d64f3504e947f49411b99d53e2d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808080"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857958"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Visual Studio'da paralel iş parçacıklarında değişkenleri bir izleme ayarlayın
 Paralel İzleme penceresinde aynı anda birden çok iş parçacığında bir ifade tutan değerleri görüntüleyebilirsiniz. Her satır bir uygulama içinde çalışan bir iş parçacığını temsil eder, ancak bir iş parçacığı içinde birden çok satır gösterilebilir. Daha açık belirtmek gerekirse her satır, işlev imzası geçerli yığın çerçevesinde işlevi eşleşen bir işlev çağrısını temsil eder. Sıralama, yeniden sıralama, kaldırmak ve sütunları olan öğeleri gruplayın. Bayrak, işaretsiz dondurma, (askıya) ve (devam) iş parçacıklarını çözme. Aşağıdaki sütunlar görüntülenir **paralel izleme** penceresi:  
   
--   Özel dikkat edilmesi gereken istediğiniz bir iş parçacığını işaretle Bayrak sütunu.  
+- Özel dikkat edilmesi gereken istediğiniz bir iş parçacığını işaretle Bayrak sütunu.  
   
--   Sarı bir ok geçerli iş parçacığı gösterir geçerli iş parçacığı sütunu (kıvrık kuyruklu yeşil bir ok, geçerli olmayan bir iş parçacığı geçerli hata ayıklayıcı bağlam olduğunu gösterir).  
+- Sarı bir ok geçerli iş parçacığı gösterir geçerli iş parçacığı sütunu (kıvrık kuyruklu yeşil bir ok, geçerli olmayan bir iş parçacığı geçerli hata ayıklayıcı bağlam olduğunu gösterir).  
   
--   Makine, işlem, döşeme, görev ve iş parçacığı görüntüleyebilirsiniz yapılandırılabilir bir sütun.  
+- Makine, işlem, döşeme, görev ve iş parçacığı görüntüleyebilirsiniz yapılandırılabilir bir sütun.  
   
-    > [!TIP]
-    >  Değiştirilen Görev bilgilerine **paralel izleme** penceresinde ilk açmanız gerektiğini **görev** penceresi.  
+  > [!TIP]
+  >  Değiştirilen Görev bilgilerine **paralel izleme** penceresinde ilk açmanız gerektiğini **görev** penceresi.  
   
--   Boş *izleme Ekle* izlemek için ifadeleri, girebileceğiniz sütun.  
+- Boş *izleme Ekle* izlemek için ifadeleri, girebileceğiniz sütun.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ### <a name="to-display-the-parallel-watch-window"></a>Paralel İzleme penceresini görüntülemek için  
   

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 6d890676-7016-458c-8a6a-95cc0a068612
 caps.latest.revision: 13
 manager: douge
-ms.openlocfilehash: a456b9b48ce9ba0817070fb5f04b5c9f80ffb149
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c37c6f69c52677c1bd029f5e6c60d15313425abc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223333"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950956"
 ---
 # <a name="determining-the-default-namespace-of-a-project"></a>Bir projenin varsayılan Namespace belirleme
 İçin [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], `CustomToolNamespace` özelliği değeri, ardından giriş dosyası ayarlanmış `CustomToolNamespace` geçirilen varsayılan ad alanı parametre değeri <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> yöntemi. Aksi takdirde, `wszDefaultNamespace` geçirilen `Generate` her zaman kök ad alanına eşittir. Ad alanları hakkında daha fazla bilgi için bkz. [Namespace anahtar sözcükleri](http://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b).  
@@ -28,11 +28,11 @@ ms.locfileid: "49223333"
   
  Hiyerarşi zincirini Web başvuru klasörü içeriyorsa bu kural için bir özel durum oluşur. Örneğin, varsa:  
   
--   FolderC Web başvuru klasörü, ad alanı olacaktır **CL9. FolderC**.  
+- FolderC Web başvuru klasörü, ad alanı olacaktır **CL9. FolderC**.  
   
--   FolderB Web başvuru klasörü, ad alanı olacaktır **CL9. FolderB.FolderC**.  
+- FolderB Web başvuru klasörü, ad alanı olacaktır **CL9. FolderB.FolderC**.  
   
- Diğer bir deyişle, ad alanına aşağıdaki biçimdedir:  
+  Diğer bir deyişle, ad alanına aşağıdaki biçimdedir:  
   
 ```  
 rootNamespace.webReferenceFolder.containedFolder.containedFolder ...  

@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c9e29131c4ecf4f476a30da94ec67676d6bea347
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788759"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836183"
 ---
 # <a name="expected-hexadecimal-digit"></a>Beklenen onaltılık basamak
-Yanlış bir Unicode kaçış sırası oluşturuldu. Unicode kaçış sıraları tam olarak dört onaltılık basamak tarafından (daha fazla ve en az) ve ardından \u başlayın. Unicode onaltılık basamak yalnızca sayı 0-9, A-F pın'de büyük harf ve küçük harf a-f içerebilir. Aşağıdaki örnek, doğru biçimlendirilmiş bir Unicode kaçış sırası gösterir.  
+Yanlış bir Unicode kaçış dizisi oluşturduğunuz. Unicode kaçış dizileri \u, tam olarak dört onaltılık basamağın (daha fazla ve en az) geldiği başlar. Unicode onaltılık basamak yalnızca sayı 0-9, A-F büyük harf ve küçük harf a-f içerebilir. Aşağıdaki örnek, doğru biçimlendirilmiş bir Unicode çıkış dizisi gösterir.  
   
 ```JavaScript  
 z = "\u1A5F";  
@@ -36,10 +36,10 @@ z = "\u1A5F";
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Unicode onaltılık basamak \u ile başlamak için yalnızca 0-9, A-F, küçük harf a-f pın'de büyük harf sayıları içeren emin olun; ve dört basamak gruplandırılır.  
+-   Unicode onaltılık basamak \u ile başlamak için yalnızca 0-9, A-F, küçük harf a-f büyük harf sayıları içeren emin olun; ve dört basamak gruplandırılır.  
   
     > [!NOTE]
-    >  Bir dizede metin \u kullanın, sonra iki ters eğik çizgi - kullanmak istiyorsanız (\\\u)-bir ilk ters eğik çizgi kaçınmak için.  
+    >  Bir dizede metin \u kullanın, ardından iki ters eğik çizgi - kullanmak istiyorsanız (\\\u)-ilk ters eğik çizgi kaçış için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri türleri](../../javascript/data-types-javascript.md)
+ [Veri Türleri](../../javascript/data-types-javascript.md)

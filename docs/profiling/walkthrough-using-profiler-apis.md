@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6c6d4a5fce3bbd3d050d3aaae4908b59d745596
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 6e5baebb527c09d833e405a98bd701ad02b7fe86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468216"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928067"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>İzlenecek yol: Profil oluşturucu API'ler Kullanma
 
@@ -123,19 +123,19 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Toplamak ve Visual Studio IDE içinde verileri görüntülemek için  
   
-1.  Açık [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Oturum **Çözümle** menüsünde **Profiler**ve ardından **yeni performans oturumu**.  
+1. Açık [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Oturum **Çözümle** menüsünde **Profiler**ve ardından **yeni performans oturumu**.  
   
-2.  Derlenmiş ikili dosyanız için ekleme **hedefleri** listesinde **performans Gezgini** penceresi. Sağ **hedefleri**ve ardından **hedef ikili Ekle**. İkili dosyada bulun **hedef ikili Ekle** iletişim kutusunu ve ardından **açık**.  
+2. Derlenmiş ikili dosyanız için ekleme **hedefleri** listesinde **performans Gezgini** penceresi. Sağ **hedefleri**ve ardından **hedef ikili Ekle**. İkili dosyada bulun **hedef ikili Ekle** iletişim kutusunu ve ardından **açık**.  
   
-3.  Seçin **izleme** gelen **yöntemi** listesini **performans Gezgini** araç çubuğu.  
+3. Seçin **izleme** gelen **yöntemi** listesini **performans Gezgini** araç çubuğu.  
   
-4.  Tıklayın **başlatma profil oluşturma ile**.  
+4. Tıklayın **başlatma profil oluşturma ile**.  
   
-     Profil Oluşturucu izleme ve ikili yürütür ve bir performans raporu dosyası oluşturun. Performans Raporu dosyası görünür **raporları** düğümünün **performans Gezgini**.  
+    Profil Oluşturucu izleme ve ikili yürütür ve bir performans raporu dosyası oluşturun. Performans Raporu dosyası görünür **raporları** düğümünün **performans Gezgini**.  
   
-5.  Ortaya çıkan performans raporu dosyası açın.  
+5. Ortaya çıkan performans raporu dosyası açın.  
   
- Profil Oluşturucu başlatıldığında, varsayılan olarak, profil oluşturucu genel düzeyde veri toplar. Aşağıdaki kod programın başında, profil oluşturma genel kapatır.  
+   Profil Oluşturucu başlatıldığında, varsayılan olarak, profil oluşturucu genel düzeyde veri toplar. Aşağıdaki kod programın başında, profil oluşturma genel kapatır.  
   
 ```csharp  
 DataCollection.StopProfile(  

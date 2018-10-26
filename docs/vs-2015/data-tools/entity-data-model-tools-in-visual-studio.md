@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3a3d64aed3834d517cb916bfbbed47a263eb8619
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a3fffb36d7070701b99382c320e3a2d23b9a2b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290478"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893409"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Varlık veri modeli Visual Studio Araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,20 +38,20 @@ Entity Framework, .NET geliştiricilerinin etki alanına özel nesneler kullanar
   
  Varlık veri modeli araçları Visual Studio 2015'te oluşturan özel araçlar şunlardır:  
   
--   Kullanabileceğiniz [!INCLUDE[vstecado](../includes/vstecado-md.md)]  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] Tasarımcısı** (**varlık Tasarımcısı**) görsel olarak oluşturma ve varlıklar, ilişkilendirmeleri, eşlemeler ve devralma ilişkilerinin değiştirin. **Varlık Tasarımcısı** ayrıca oluşturur [!INCLUDE[TLA#tla_cshrp](../includes/tlasharptla-cshrp-md.md)] veya [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] nesne katmanı kodu.  
+- Kullanabileceğiniz [!INCLUDE[vstecado](../includes/vstecado-md.md)]  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] Tasarımcısı** (**varlık Tasarımcısı**) görsel olarak oluşturma ve varlıklar, ilişkilendirmeleri, eşlemeler ve devralma ilişkilerinin değiştirin. **Varlık Tasarımcısı** ayrıca oluşturur [!INCLUDE[TLA#tla_cshrp](../includes/tlasharptla-cshrp-md.md)] veya [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] nesne katmanı kodu.  
   
--   Kullanabileceğiniz  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] Sihirbazı** varolan bir veritabanından kavramsal model oluşturmak ve veritabanı bağlantı bilgilerini uygulamanıza ekleyin.  
+- Kullanabileceğiniz  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] Sihirbazı** varolan bir veritabanından kavramsal model oluşturmak ve veritabanı bağlantı bilgilerini uygulamanıza ekleyin.  
   
--   Kullanabileceğiniz **Veritabanı Oluşturma Sihirbazı'nı** ilk kavramsal model oluşturun ve ardından modelini destekleyen bir veritabanı oluşturun.  
+- Kullanabileceğiniz **Veritabanı Oluşturma Sihirbazı'nı** ilk kavramsal model oluşturun ve ardından modelini destekleyen bir veritabanı oluşturun.  
   
--   Kullanabileceğiniz **güncelleştirme modeli Sihirbazı** temel alınan veritabanına değişiklikler yapıldığında, kavramsal model, depolama model ve eşleme güncelleştirilecek.  
+- Kullanabileceğiniz **güncelleştirme modeli Sihirbazı** temel alınan veritabanına değişiklikler yapıldığında, kavramsal model, depolama model ve eşleme güncelleştirilecek.  
   
-    > [!NOTE]
-    >  Visual Studio 2010 ile başlayarak [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] araçları desteklemez [!INCLUDE[ss2k](../includes/ss2k-md.md)].  
+  > [!NOTE]
+  >  Visual Studio 2010 ile başlayarak [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] araçları desteklemez [!INCLUDE[ss2k](../includes/ss2k-md.md)].  
   
- Araçlar oluşturmak veya bir .edmx dosyasını değiştirin. Bu dosya, bunları arasındaki eşlemeleri kavramsal model ve depolama modeli açıklayan bilgileri içerir. Daha fazla bilgi için [EDMX](https://msdn.microsoft.com/data/jj650889.aspx).  
+  Araçlar oluşturmak veya bir .edmx dosyasını değiştirin. Bu dosya, bunları arasındaki eşlemeleri kavramsal model ve depolama modeli açıklayan bilgileri içerir. Daha fazla bilgi için [EDMX](https://msdn.microsoft.com/data/jj650889.aspx).  
   
- Entity Framework güç araçları varlık veri modeli kullanan uygulamalar oluşturmanıza yardımcı olur. Araçları bir kavramsal model oluşturmak, mevcut bir model doğrulama, kavramsal model temelinde nesne sınıfları içeren kaynak kodu dosyaları üretmek ve modeli oluşturur görünümleri içeren kaynak kodu dosyaları üretir. Ayrıntılı bilgi için bkz. [Pre-Generated eşleme görünümleri](https://msdn.microsoft.com/data/dn469601.aspx).  
+  Entity Framework güç araçları varlık veri modeli kullanan uygulamalar oluşturmanıza yardımcı olur. Araçları bir kavramsal model oluşturmak, mevcut bir model doğrulama, kavramsal model temelinde nesne sınıfları içeren kaynak kodu dosyaları üretmek ve modeli oluşturur görünümleri içeren kaynak kodu dosyaları üretir. Ayrıntılı bilgi için bkz. [Pre-Generated eşleme görünümleri](https://msdn.microsoft.com/data/dn469601.aspx).  
   
 ## <a name="related-topics"></a>İlgili konular  
   

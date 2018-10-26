@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1b111aad6da99f54edfe8dc4fd4b63ff7a495f34
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c2a0ccc4ee9f002a6c0f335aed590d3b8bb79a7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179667"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928678"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Yük testi sonuçlarını ve hatalarını Yük Testi Çözümleyicisinin Tablo görünümünde çözümleyin
 
@@ -51,7 +51,7 @@ Performans sayaçları için bir tabloda gösterilen Çoğu sayısal değer tüm
  Aşağıdaki tabloda, yük testi çalışmaları çözümlemek için kullanılabilir olan tabloları listeler.
 
 |Tablo adı|Açıklama|
-|----------------|-----------------|
+|-|-|
 |Hatalar|Yük testi çalıştırması sırasında oluşan hataların listesini görüntüler. Daha fazla bilgi için [hataları tablosu](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) bu konuda, ve [Çözümle yük testi sonuçları](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
 |Sayfaları|Yük testi çalıştırması sırasında erişilen sayfalarının bir listesini görüntüler. Yalnızca bir yük testi tamamlandıktan sonra bu tabloya bazı veriler kullanılabilir. Daha fazla bilgi için [nasıl yapılır: web sayfası yanıtını görüntüleme](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
 |İstekleri|Bir yük testi sırasında verilen tek tek isteklerin ayrıntılarını görüntüler. Bu, tüm HTTP isteklerini ve resimler gibi bağımlı istekleri içerir. Daha fazla bilgi için [Requests tablosuna](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) bu konuda.|
@@ -73,7 +73,7 @@ Performans sayaçları için bir tabloda gösterilen Çoğu sayısal değer tüm
  Aşağıdaki tablo sütunları listeler **istekleri** tablosu:
 
 |Sütun|Açıklama|Varsayılan olarak görünür|
-|------------|-----------------|------------------------|
+|-|-|-|
 |**İstek**|İsteğin URL'si. Örneğin, *home.html*, veya *turuncu arrow.gif*.|Evet|
 |**Senaryo**|Senaryonun adı.|Evet|
 |**Test**|Testin adı.|Evet|
@@ -95,7 +95,7 @@ Performans sayaçları için bir tabloda gösterilen Çoğu sayısal değer tüm
  Aşağıdaki tablo sütunları listeler **testleri** tablo.
 
 |Sütun|Açıklama|Varsayılan olarak görünür|
-|------------|-----------------|------------------------|
+|-|-|-|
 |**Test**|Testin adı.|Evet|
 |**Senaryo**|Senaryonun adı.|Evet|
 |**Toplam**|Test senaryosunda çalıştırılma sayısı. Bu, test başarılı ve başarısız olma sayısı içerir.|Evet|
@@ -119,7 +119,7 @@ Performans sayaçları için bir tabloda gösterilen Çoğu sayısal değer tüm
 > Tüm sütunları görüntülemek için etkin çalışma ayarı ile ilişkili Zamanlama Ayrıntıları Deposu özelliğini etkinleştirmeniz gerekir. Daha fazla bilgi için [nasıl yapılır: zamanlama ayrıntıları depolama özelliğini belirtme](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 |Sütun|Açıklama|Zamanlama Ayrıntıları olmadan da görünür|
-|------------|-----------------|------------------------------------|
+|-|-|-|
 |**İşlem**|İşlemin adı.|Evet|
 |**Senaryo**|Senaryonun adı.|Evet|
 |**Test**|Testin adı.|Evet|
@@ -145,7 +145,7 @@ Performans sayaçları için bir tabloda gösterilen Çoğu sayısal değer tüm
  Hataları tablo şu sütunları içerir:
 
 |Sütun|Açıklama|Varsayılan olarak görünür|
-|------------|-----------------|------------------------|
+|-|-|-|
 |Tür|Hata türü. Örneğin, HTTP hatası.|Evet|
 |SubType|Hatanın alt türü. Örneğin, LoadTestException.|Evet|
 |Sayısı|Bu türdeki yük testi sırasında oluşan hataları sayısı. Bu sütun girişleri köprü olarak gösteriliyor. Hataları ayrı ayrı bir listesini görüntülemek için herhangi bir köprüye seçebilirsiniz.|Evet|
@@ -163,7 +163,7 @@ Hata türü ve alt hata türüne göre gruplandırır tablo. Hataları ayrı ayr
 **Yük testi hataları** tablo şu sütunları içerir:
 
 |Sütun|Açıklama|
-|------------|-----------------|
+|-|-|
 |**saat**|Hatanın gerçekleştiği süre boyunca yük test edin.|
 |**Aracı**|Hatanın gerçekleştiği aracı bilgisayar adı. Test denetleyicileri ve test aracılarını kullanarak yük testi çalıştırdığınızda, bu önemlidir. Daha fazla bilgi için [yüklemek ve test denetleyicisilerinin](../test/lab-management/install-configure-test-agents.md).|
 |**Test**|Web performans adını test, bir hata oluştu.|

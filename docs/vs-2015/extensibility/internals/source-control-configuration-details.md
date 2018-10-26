@@ -15,12 +15,12 @@ ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c0c663e521e113de69e749a68bf3d81bfd523687
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bc4d7caefe0d0db2cdadf684702ec7e0d800c9c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297823"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884166"
 ---
 # <a name="source-control-configuration-details"></a>Kaynak Denetimi Yapılandırma Ayrıntıları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Kaynak denetimi uygulamak için proje sistemi ya da aşağıdakileri yapmak içi
   
  Yanıt olarak `IVsQueryEditQuerySave2::QueryEditFiles` çağrısı, ortam aşağıdakileri yapabilirsiniz:  
   
--   Düzenleyici ya da proje çalışması değişmeden (temiz) durumda kalması gereken değiştirmek için çağrı reddeder.  
+- Düzenleyici ya da proje çalışması değişmeden (temiz) durumda kalması gereken değiştirmek için çağrı reddeder.  
   
--   Belge verilerini yüklenmesi belirtir. Bir proje için proje verileri ortamı yeniden yükler. Bir düzenleyici üzerinden disk verileri yeniden yüklemeniz gerekir, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> uygulaması. Verileri yeniden yüklendiğinde, her iki durumda da proje veya düzenleyici bağlam değiştirebilirsiniz.  
+- Belge verilerini yüklenmesi belirtir. Bir proje için proje verileri ortamı yeniden yükler. Bir düzenleyici üzerinden disk verileri yeniden yüklemeniz gerekir, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> uygulaması. Verileri yeniden yüklendiğinde, her iki durumda da proje veya düzenleyici bağlam değiştirebilirsiniz.  
   
- Uygun yükseltmek için karmaşık ve zor bir görev olduğundan `IVsQueryEditQuerySave2::QueryEditFiles` varolan bir kod tabanına üzerine çağırır. Sonuç olarak, bu çağrılar Düzenleyicisi ve proje oluşturma sırasında tümleştirilmesi gerekir.  
+  Uygun yükseltmek için karmaşık ve zor bir görev olduğundan `IVsQueryEditQuerySave2::QueryEditFiles` varolan bir kod tabanına üzerine çağırır. Sonuç olarak, bu çağrılar Düzenleyicisi ve proje oluşturma sırasında tümleştirilmesi gerekir.  
   
 ## <a name="request-permission-to-save-a-file"></a>Bir dosyayı kaydetmeye izin iste  
  Bir proje veya düzenleyen bir dosyayı kaydetmeden önce çağırmalıdır <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> veya <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>. Proje dosyaları için bu çağrılar zaman bir proje dosyasını kaydetmeyi bilir çözümü tarafından otomatik olarak doldurulur. Düzenleyiciler sürece bu çağrıları yapmaktan sorumlu Düzenleyicisi uygulamasını `IVsPersistDocData2` yardımcı işlevini kullanan <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>. Düzenleyici uyguluyorsa `IVsPersistDocData2` bu şekilde, ardından çağrısı içinde `IVsQueryEditQuerySave2::QuerySaveFile` veya `IVsQueryEditQuerySave2::QuerySaveFiles` sizin yerinize yapılır.  

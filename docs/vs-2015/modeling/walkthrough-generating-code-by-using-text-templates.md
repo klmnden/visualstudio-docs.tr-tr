@@ -15,12 +15,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 37fe948838a5263eca2107e2e868e2dc49cdf2a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd360e07ca555bb7cb2c482970ab9a202f7bb630
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229378"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932559"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>İzlenecek Yol: Metin Şablonları Kullanarak Kod Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,15 +100,15 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-add-an-xml-file"></a>Bir XML dosyası eklemek için  
   
-1.  İçinde **Çözüm Gezgini**, projeye sağ tıklayın, **Ekle** ve ardından **yeni öğe**.  
+1. İçinde **Çözüm Gezgini**, projeye sağ tıklayın, **Ekle** ve ardından **yeni öğe**.  
   
-2.  İçinde **Yeni Öğe Ekle** iletişim kutusunda **XML dosyası** gelen **şablonları** bölmesi.  
+2. İçinde **Yeni Öğe Ekle** iletişim kutusunda **XML dosyası** gelen **şablonları** bölmesi.  
   
-3.  Örnek içerik dosyasına ekleyin.  
+3. Örnek içerik dosyasına ekleyin.  
   
-4.  Bu kılavuz için dosya adı `exampleXml.xml`. Önceki bölümde gösterilenle XML olarak dosyanın içeriği ayarlayın.  
+4. Bu kılavuz için dosya adı `exampleXml.xml`. Önceki bölümde gösterilenle XML olarak dosyanın içeriği ayarlayın.  
   
- .  
+   .  
   
 ### <a name="add-a-test-code-file"></a>Bir test kod dosyasına ekleyin  
  Projenize bir C# dosyası ekleyin ve içinde yazma yazabiliyor olmasını istediğiniz kod bir örnek. Örneğin:  
@@ -140,33 +140,33 @@ namespace MyProject
   
 ##### <a name="to-add-a-text-template-file-to-your-project"></a>Bir metin şablonu dosyasını projenize eklemek için  
   
-1.  İçinde **Çözüm Gezgini**, projeye sağ tıklayın, **Ekle**ve ardından **yeni öğe**.  
+1. İçinde **Çözüm Gezgini**, projeye sağ tıklayın, **Ekle**ve ardından **yeni öğe**.  
   
-2.  İçinde **Yeni Öğe Ekle** iletişim kutusu seç **metin şablonu** gelen **şablonları** bölmesi.  
+2. İçinde **Yeni Öğe Ekle** iletişim kutusu seç **metin şablonu** gelen **şablonları** bölmesi.  
   
-    > [!NOTE]
-    >  Bir metin şablonu ve değil önceden işlenmiş metin şablonu eklediğinizden emin olun.  
+   > [!NOTE]
+   >  Bir metin şablonu ve değil önceden işlenmiş metin şablonu eklediğinizden emin olun.  
   
-3.  Şablon yönergesinde dosyasını değiştirmek `hostspecific` özniteliğini `true`.  
+3. Şablon yönergesinde dosyasını değiştirmek `hostspecific` özniteliğini `true`.  
   
-     Bu değişiklik, erişim elde etmek şablon kodunu etkinleştirir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Hizmetleri.  
+    Bu değişiklik, erişim elde etmek şablon kodunu etkinleştirir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Hizmetleri.  
   
-4.  Çıktı yönergesinde, uzantı özniteliğine ".cs" değiştirin, böylece şablon bir C# dosyası oluşturur. Bir Visual Basic projesinde ".vb" için değiştirirsiniz.  
+4. Çıktı yönergesinde, uzantı özniteliğine ".cs" değiştirin, böylece şablon bir C# dosyası oluşturur. Bir Visual Basic projesinde ".vb" için değiştirirsiniz.  
   
-5.  Dosyayı kaydedin. Bu aşamada, metin şablonu dosyasını bu satırlar içermelidir:  
+5. Dosyayı kaydedin. Bu aşamada, metin şablonu dosyasını bu satırlar içermelidir:  
   
-    ```  
-    <#@ template debug="false" hostspecific="true" language="C#" #>  
-    <#@ output extension=".cs" #>  
-    ```  
+   ```  
+   <#@ template debug="false" hostspecific="true" language="C#" #>  
+   <#@ output extension=".cs" #>  
+   ```  
   
- biçimindeki telefon numarasıdır.  
+   biçimindeki telefon numarasıdır.  
   
- Bir .cs dosyası Çözüm Gezgini'nde bir yan kuruluşu olan şablon dosyası göründüğüne dikkat edin. [+]'i tıklatarak şablon dosyasının adının yanında görebileceğiniz. Bu dosya, kaydedin veya şablon dosyası uzağa odağı Taşı şablon dosyasından oluşturulur. Oluşturulan dosyanın, projenizin bir parçası olarak derlenir.  
+   Bir .cs dosyası Çözüm Gezgini'nde bir yan kuruluşu olan şablon dosyası göründüğüne dikkat edin. [+]'i tıklatarak şablon dosyasının adının yanında görebileceğiniz. Bu dosya, kaydedin veya şablon dosyası uzağa odağı Taşı şablon dosyasından oluşturulur. Oluşturulan dosyanın, projenizin bir parçası olarak derlenir.  
   
- Siz kolaylık sağlamak için şablon dosyası geliştirme, böylece bunları birbirinin yanına görebilirsiniz pencereleri şablon dosyası ve oluşturulan dosya. Bu çıkış şablonunuzun hemen görmenize olanak sağlar. Ayrıca, şablonunuzu geçersiz C# kodu oluşturduğunda, hatalar hata iletisi penceresinde görünür fark edeceksiniz.  
+   Siz kolaylık sağlamak için şablon dosyası geliştirme, böylece bunları birbirinin yanına görebilirsiniz pencereleri şablon dosyası ve oluşturulan dosya. Bu çıkış şablonunuzun hemen görmenize olanak sağlar. Ayrıca, şablonunuzu geçersiz C# kodu oluşturduğunda, hatalar hata iletisi penceresinde görünür fark edeceksiniz.  
   
- Şablon dosyasını kaydettiğinizde doğrudan oluşturulan dosyada gerçekleştirdiğiniz düzenlemeler kaybedilir. Bu nedenle oluşturulan dosyayı düzenlemekten kaçının, veya yalnızca kısa denemeleri için düzenleyin. Bazen, IntelliSense işlemde olduğu dosyanın oluşturulan kodda kısa bir parçasını deneyin ve ardından şablon dosyasına kopyalama kullanışlıdır.  
+   Şablon dosyasını kaydettiğinizde doğrudan oluşturulan dosyada gerçekleştirdiğiniz düzenlemeler kaybedilir. Bu nedenle oluşturulan dosyayı düzenlemekten kaçının, veya yalnızca kısa denemeleri için düzenleyin. Bazen, IntelliSense işlemde olduğu dosyanın oluşturulan kodda kısa bir parçasını deneyin ve ardından şablon dosyasına kopyalama kullanışlıdır.  
   
 ## <a name="developing-the-text-template"></a>Metin şablonu geliştirme  
  En iyi öneri Çevik Geliştirme test kodu şekilde sıkışmalı ve kadar her artış hatalarını bazıları temizleme biz küçük adımlar, şablonda geliştireceksiniz.  
@@ -408,17 +408,17 @@ namespace MyProject
 ## <a name="conclusion"></a>Sonuç  
  Bu izlenecek yol çeşitli teknikler ve kod oluşturma avantajlarını göstermektedir:  
   
--   *Kod oluşturma* oluşturulmasını uygulamanızdan kaynak kodunun bir parçası olan bir *model*. Model, uygulama etki alanı için uygun bir biçimde bilgileri içerir ve uygulama ömrü boyunca değişebilir.  
+- *Kod oluşturma* oluşturulmasını uygulamanızdan kaynak kodunun bir parçası olan bir *model*. Model, uygulama etki alanı için uygun bir biçimde bilgileri içerir ve uygulama ömrü boyunca değişebilir.  
   
--   Güçlü bir kod avantajdır. Model bilgileri kullanıcıya daha uygun bir biçimde temsil ederken, oluşturulan kod bilgilerle türleri kümesi kullanarak çıkılacağını uygulamanın diğer bölümlerini sağlar.  
+- Güçlü bir kod avantajdır. Model bilgileri kullanıcıya daha uygun bir biçimde temsil ederken, oluşturulan kod bilgilerle türleri kümesi kullanarak çıkılacağını uygulamanın diğer bölümlerini sağlar.  
   
--   IntelliSense ve derleyicinin yeni kod yazdığınızda hem şemayı güncelleştirildiğinde modelinin şemasıyla uyumluysa kod oluşturmanıza yardımcı olur.  
+- IntelliSense ve derleyicinin yeni kod yazdığınızda hem şemayı güncelleştirildiğinde modelinin şemasıyla uyumluysa kod oluşturmanıza yardımcı olur.  
   
--   Bir tek eylemlerin şablon dosyası bir projeye eklenmesi, bu avantajlar sağlayabilir.  
+- Bir tek eylemlerin şablon dosyası bir projeye eklenmesi, bu avantajlar sağlayabilir.  
   
--   Bir metin şablonu geliştirilen ve hızlı bir şekilde ve artımlı olarak test.  
+- Bir metin şablonu geliştirilen ve hızlı bir şekilde ve artımlı olarak test.  
   
- Bu izlenecek yolda, program kodu modeli, temsili bir örnek uygulamanın işlem XML dosyalarının bir örnekten gerçekten oluşturulur. Daha resmi bir yaklaşım, XML şeması .xsd dosyasını veya etki alanına özgü dil tanımıma biçiminde şablonu girişi olacaktır. Bu yaklaşım, bir ilişkinin çoğulluk gibi özellikleri belirlemek şablon kolaylaştırmak.  
+  Bu izlenecek yolda, program kodu modeli, temsili bir örnek uygulamanın işlem XML dosyalarının bir örnekten gerçekten oluşturulur. Daha resmi bir yaklaşım, XML şeması .xsd dosyasını veya etki alanına özgü dil tanımıma biçiminde şablonu girişi olacaktır. Bu yaklaşım, bir ilişkinin çoğulluk gibi özellikleri belirlemek şablon kolaylaştırmak.  
   
 ## <a name="troubleshooting-the-text-template"></a>Metin şablonu sorunlarını giderme  
  Şablonu dönüştürme veya derleme hatalarıyla gördüyseniz **hata listesi**, veya çıktı dosyası doğru şekilde oluşturulmadı, açıklanan olan tekniklerle metin şablonunun giderebilirsiniz [oluşturma TextTransform yardımcı programı ile dosya](../modeling/generating-files-with-the-texttransform-utility.md).  

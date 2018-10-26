@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6567be5a82d4b344b3850a1a66e0b5b23f1b8f9d
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 7f2a22a39b30d6a1910a95d5c30992bbd14dbc9a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859100"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828684"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Salt Okunur Kesimler Oluşturmak için Kilitleme İlkesi Tanımlama
 Visual Studio Görselleştirme ve modelleme SDK'sı Değiştirilemezlik API, böylece okunan ancak değiştirilmemiş bölümünü veya tümünü bir etki alanına özgü dil (DSL) modeli kilitlemek bir program sağlar. Bu salt okunur seçeneği, örneğin, bir kullanıcı iş arkadaşlarınızı Not ekleme ve bir DSL model gözden geçirmek isteyebilirsiniz ancak bunları özgün değiştirmesini engelleyebilirsiniz kullanılabilir.
@@ -71,14 +71,14 @@ partition.SetLocks(Locks.Delete);
 ## <a name="lock-values"></a>Kilit değerler
  Kilitleri Store, bölüm veya bireysel ModelElement ayarlayabilirsiniz. Kilitler olduğu bir `Flags` numaralandırma: kullanarak değerleri birleştirebilirsiniz '&#124;'.
 
--   Bir ModelElement kilitler, kilitler, bölümün her zaman ekleyin.
+- Bir ModelElement kilitler, kilitler, bölümün her zaman ekleyin.
 
--   Bir bölümün kilitleri her zaman Store kilitler ekleyin.
+- Bir bölümün kilitleri her zaman Store kilitler ekleyin.
 
- Bölüm üzerinde bir kilit ayarlayın veya depolar ve aynı anda tek bir öğe üzerinde kilit devre dışı olamaz.
+  Bölüm üzerinde bir kilit ayarlayın veya depolar ve aynı anda tek bir öğe üzerinde kilit devre dışı olamaz.
 
 |Değer|Yani `IsLocked(Value)` geçerlidir|
-|-----------|------------------------------------------|
+|-|-|
 |Yok.|Kısıtlama yok.|
 |Özellik|Öğelerin etki alanı özellikleri değiştirilemez. Bu rolü ilişkisinde bir etki alanı sınıfı tarafından oluşturulan özellikler için geçerli değildir.|
 |Ekle|Bir bölümde yeni öğeleri ve bağlantılarına oluşturulamıyor veya depolar.<br /><br /> Uygulanamaz `ModelElement`.|
@@ -142,7 +142,6 @@ namespace Company.YourDsl.DslPackage // Change
       return Environment.UserName == "aUser"
            ? proposedLocks : Locks.All;
     }
-
 ```
 
  Diğer kod olsa bile kullanıcılar öğeleri her zaman silebilir emin olmak için `SetLocks(Lock.Delete):`

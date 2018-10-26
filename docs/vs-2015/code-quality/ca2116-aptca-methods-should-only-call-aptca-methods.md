@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 50e75f4855079666130e063d3c2b516f317e90f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 766de62f4781dc7ce164155a2090ffabac913a22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217899"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819556"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116Ç APTCA yöntemleri yalnızca APTCA yöntemlerini çağırmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AptcaMethodsShouldOnlyCallAptcaMethods|
@@ -44,13 +45,13 @@ ms.locfileid: "49217899"
 
  APTCA özniteliği tam olarak güvenilen bir derlemede yapılandırıldığında ve derleme, kodu kısmen güvenilmeyen çağrıcılara izin vermeyen başka bir derlemede yürütür, güvenlik yararlanması mümkündür. İki yöntem `M1` ve `M2` aşağıdaki koşullara uyması, zararlı çağıranlar yöntemi kullanabileceğiniz `M1` korur örtük tam güven bağlantı talebi atlamak için `M2`:
 
--   `M1` Genel bir yöntem APTCA özniteliği tam olarak güvenilen bir derlemede bildirilmiş.
+- `M1` Genel bir yöntem APTCA özniteliği tam olarak güvenilen bir derlemede bildirilmiş.
 
--   `M1` bir yöntemi çağıran `M2` dışında `M1`ait derleme.
+- `M1` bir yöntemi çağıran `M2` dışında `M1`ait derleme.
 
--   `M2`kişinin derleme APTCA özniteliği yok ve bu nedenle, kısmen güvenilen Arayanların tarafınıza sağladığı veya müşteriler yürütülmemesi.
+- `M2`kişinin derleme APTCA özniteliği yok ve bu nedenle, kısmen güvenilen Arayanların tarafınıza sağladığı veya müşteriler yürütülmemesi.
 
- Kısmen güvenilen bir çağıranın `X` yöntemi çağırabilirsiniz `M1`, neden `M1` çağrılacak `M2`. Çünkü `M2` APTCA özniteliği veya onun şu anki çağırıcı sahip değil (`M1`); tam güven için bağlantı talebi karşılamalıdır `M1` tam güvene sahip ve bu nedenle bu denetimi karşılar. Güvenlik riski çünkü `X` korur bağlantı talebi karşılamadığınızı içinde yer almaz `M2` güvenilmeyen çağıranlar öğesinden. Bu nedenle, özniteliğine sahip olmayan yöntemleri APTCA özniteliğine sahip yöntemleri çağırmamalıdır.
+  Kısmen güvenilen bir çağıranın `X` yöntemi çağırabilirsiniz `M1`, neden `M1` çağrılacak `M2`. Çünkü `M2` APTCA özniteliği veya onun şu anki çağırıcı sahip değil (`M1`); tam güven için bağlantı talebi karşılamalıdır `M1` tam güvene sahip ve bu nedenle bu denetimi karşılar. Güvenlik riski çünkü `X` korur bağlantı talebi karşılamadığınızı içinde yer almaz `M2` güvenilmeyen çağıranlar öğesinden. Bu nedenle, özniteliğine sahip olmayan yöntemleri APTCA özniteliğine sahip yöntemleri çağırmamalıdır.
 
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
  APCTA öznitelik gerekliyse, isteğe bağlı tam güven bütünleştirilmiş koda çağıran yöntemin korumak için kullanın. Tam izinler yönteminizi tarafından sunulan işlevselliği, isteğe bağlıdır. Mümkünse, alttaki işlevsellik kısmen güvenilen arayanlara gösterilmez emin olmak tam güven için talep yöntemi koruyun. Bu mümkün değilse, etkili bir şekilde sunulan işlevlerini koruyan bir izin kümesi seçin. Talepleri hakkında daha fazla bilgi için bkz: [taleplerini](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48).

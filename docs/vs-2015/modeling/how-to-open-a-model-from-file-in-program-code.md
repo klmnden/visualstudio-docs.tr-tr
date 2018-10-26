@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8f3397cb520014ee9997a116ebbbfbc1c20dc9f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c084e756492a03abc86f7281728222632e12ec1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190508"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940872"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Nasıl yapılır: Program Kodunda Dosyadan Model Açma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,13 +63,13 @@ DSL model herhangi bir uygulama açabilirsiniz.
 ## <a name="reading-from-a-file"></a>Bir dosyadan okuma  
  Aşağıdaki örnek, önemli sınıfları aşağıdaki gibi olan bir DSL okumak için tasarlanmıştır:  
   
--   FamilyTreeModel  
+- FamilyTreeModel  
   
--   FamilyTreeSerializationHelper  
+- FamilyTreeSerializationHelper  
   
--   FamilyTreeDomainModel  
+- FamilyTreeDomainModel  
   
- Bu DSL içinde diğer etki alanı sınıfı kişi anlamına gelir.  
+  Bu DSL içinde diğer etki alanı sınıfı kişi anlamına gelir.  
   
 ```  
 using System;  

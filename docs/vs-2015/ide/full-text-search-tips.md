@@ -19,12 +19,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9e05c7aa16d689dd037546fe9a199f43a80b0401
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 85770dfd3c610f92bcb190b7a2c151b40cd31a4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303439"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850054"
 ---
 # <a name="full-text-search-tips"></a>Tam Metin Araması İpuçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,8 +47,8 @@ Konumlama bilgileri Yardım için daha kullanışlı yöntemler tam metin aramas
  Bu dize, "sözcük1 sözcük2" gibi birden çok sözcük içeren bir arama dizesi belirtirseniz yazmakla eşdeğerdir: "sözcük1 sözcük2 ve", tüm arama dizesindeki kelimeler içeren konuların döndürür.  
   
 > [!IMPORTANT]
->  1.  Deyim aramaları desteklenmiyor. Arama dizesinde birden fazla belirtmeniz durumunda döndürülen konuları tüm belirttiğiniz sözcükleri ancak mutlaka belirttiğiniz terimin içerir.  
-> 2.  Mantıksal işleçler, Boole sözcükler arasındaki ilişki belirtmek için kullanın. AND, OR, NOT, gibi mantıksal işleçler içerir ve yakında, daha fazla için aramanızı daraltın. Örneğin, "UNION bildirmek için" arama yaparsanız, arama sonuçlarını sözcükler "bildirim" ve "birleşim" en fazla birkaç sözcük birbirlerinden içeren konuları içerir. Daha fazla bilgi için [arama ifadelerindeki mantıksal işleçler](../ide/logical-operators-in-search-expressions.md).  
+> 1. Deyim aramaları desteklenmiyor. Arama dizesinde birden fazla belirtmeniz durumunda döndürülen konuları tüm belirttiğiniz sözcükleri ancak mutlaka belirttiğiniz terimin içerir.  
+>    2.  Mantıksal işleçler, Boole sözcükler arasındaki ilişki belirtmek için kullanın. AND, OR, NOT, gibi mantıksal işleçler içerir ve yakında, daha fazla için aramanızı daraltın. Örneğin, "UNION bildirmek için" arama yaparsanız, arama sonuçlarını sözcükler "bildirim" ve "birleşim" en fazla birkaç sözcük birbirlerinden içeren konuları içerir. Daha fazla bilgi için [arama ifadelerindeki mantıksal işleçler](../ide/logical-operators-in-search-expressions.md).  
   
 ### <a name="filters"></a>FilTReleri  
  Gelişmiş arama işleçleri kullanarak, arama sonuçlarını daha fazla kısıtlayabilirsiniz. Yardımı, tam metin arama sonuçlarını filtrelemek için kullanabileceğiniz üç kategorileri içerir: Başlık, kod ve anahtar sözcüğü. Daha fazla bilgi için [arama ifadelerindeki Gelişmiş arama işleçleri](../ide/advanced-search-operators-in-search-expressions.md).  

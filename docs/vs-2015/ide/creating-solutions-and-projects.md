@@ -23,12 +23,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c3ffd5a4d341b8a194dee9f6d8600a75999df38d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 336fb41ee6a4c90e7065187b2805aefe9e6e6df7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248540"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893708"
 ---
 # <a name="creating-solutions-and-projects"></a>Çözümler ve Projeler Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,15 +74,15 @@ Projeleri, uygulamanızı oluşturmak için gerekli olan her şey için mantıks
   
 #### <a name="to-create-an-empty-solution"></a>Boş bir çözüm oluşturmak için  
   
-1.  Üzerinde **dosya** menüsünü tıklatın **yeni** ve ardından **yeni proje**.  
+1. Üzerinde **dosya** menüsünü tıklatın **yeni** ve ardından **yeni proje**.  
   
-2.  Sol bölmede seçin **yüklü**seçin **diğer proje türleri**ve ardından **Visual Studio çözümleri** genişletilmiş listeden.  
+2. Sol bölmede seçin **yüklü**seçin **diğer proje türleri**ve ardından **Visual Studio çözümleri** genişletilmiş listeden.  
   
-3.  Orta bölmede seçin **boş çözüm**.  
+3. Orta bölmede seçin **boş çözüm**.  
   
-4.  Ayarlama **adı** ve **konumu** değerleri, çözümünüz ardından **Tamam**.  
+4. Ayarlama **adı** ve **konumu** değerleri, çözümünüz ardından **Tamam**.  
   
- Boş bir çözüm oluşturduktan sonra yeni veya var olan proje veya öğe tıklayarak ekleyebilirsiniz **Yeni Öğe Ekle** veya **varolan öğeyi Ekle** üzerinde **proje** menüsü.  
+   Boş bir çözüm oluşturduktan sonra yeni veya var olan proje veya öğe tıklayarak ekleyebilirsiniz **Yeni Öğe Ekle** veya **varolan öğeyi Ekle** üzerinde **proje** menüsü.  
   
 ### <a name="deleting-solutions"></a>Çözüm siliniyor  
  Bir çözüm kalıcı olarak silebilirsiniz ancak kullanarak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Bir çözüm silmeden önce başka bir çözüm içinde yeniden kullanmak isteyebileceğiniz herhangi bir projeyi taşıyın. Ardından .sln ve .suo çözüm dosyalarını içeren dizini silmek için dosya Gezgini'ni kullanın.  

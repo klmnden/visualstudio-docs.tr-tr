@@ -15,17 +15,17 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1cc8f2b2efc6c538af84d54cb487a8e35dbba6f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ee1a6ebfdcad2f9ec50c5a76d5c14cd44028eeb7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304232"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817281"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>İzlenecek yol: Özel Metin Şablonu Konağı Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A *metin şablonu**konak* sağlayan bir ortam sağlar *metin şablonu dönüştürme altyapısı* çalıştırmak için. Ana bilgisayar, motorun dosya sistemiyle etkileşimini yönetmekten sorumludur. Altyapı veya *yönerge işlemcisi* , gerekli bir dosya veya bir derlemenin kaynak konaktan talep edebilir. Böylece, ana bilgisayar, istenen kaynağın yerini belirlemek amacıyla dizinlerde ve genel derleme önbelleğinde arama yapabilir. Daha fazla bilgi için [metin şablonu dönüştürme süreci](../modeling/the-text-template-transformation-process.md).  
+A *metin şablonu*<em>konak</em> bir ortam sağlayan *metin şablonu dönüştürme motoru* çalıştırılacak. Ana bilgisayar, motorun dosya sistemiyle etkileşimini yönetmekten sorumludur. Altyapı veya *yönerge işlemcisi* , gerekli bir dosya veya bir derlemenin kaynak konaktan talep edebilir. Böylece, ana bilgisayar, istenen kaynağın yerini belirlemek amacıyla dizinlerde ve genel derleme önbelleğinde arama yapabilir. Daha fazla bilgi için [metin şablonu dönüştürme süreci](../modeling/the-text-template-transformation-process.md).  
   
  Kullanmak istiyorsanız özel bir ana bilgisayar yazabilirsiniz *metin şablonu dönüştürme* işlevi dışında [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] veya bu işlevi özel araçlarla tümleştirmek istiyorsanız. Özel bir ana bilgisayar oluşturmak için devralınan bir sınıf oluşturmanız gerekir <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Her bir yöntem için belgelere bakın <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   

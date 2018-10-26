@@ -15,12 +15,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 142e39a9d1b826edaaf519eea2ecaf8dfb72b5ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: abb37b7bdfbc01affea63aa90d35b3702dcb4719
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208656"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907930"
 ---
 # <a name="code-generation-in-a-build-process"></a>Derleme Sürecinde Kod Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,11 +160,11 @@ Oluşturma işleminde diğer görevlerden önce metin dönüştürme gerçekleş
 
 İçinde `AfterTransform`, dosyaların listelerine başvurabilirsiniz:
 
--   GeneratedFiles - işlem tarafından yazılan dosyaların listesi. Varolan salt okunur dosyaların üzerine yazan bu dosyalar için, %(GeneratedFiles.ReadOnlyFileOverwritten) doğru olacaktır. Bu dosyalar kaynak denetiminden denetlenebilir.
+- GeneratedFiles - işlem tarafından yazılan dosyaların listesi. Varolan salt okunur dosyaların üzerine yazan bu dosyalar için, %(GeneratedFiles.ReadOnlyFileOverwritten) doğru olacaktır. Bu dosyalar kaynak denetiminden denetlenebilir.
 
--   NonGeneratedFiles - üzerine yazılmamış, salt okunur dosyaların listesi.
+- NonGeneratedFiles - üzerine yazılmamış, salt okunur dosyaların listesi.
 
- Örneğin, GeneratedFiles'ı kullanıma almak için bir görev tanımlarsınız.
+  Örneğin, GeneratedFiles'ı kullanıma almak için bir görev tanımlarsınız.
 
 ## <a name="outputfilepath-and-outputfilename"></a>OutputFilePath ve OutputFileName
 
@@ -255,7 +255,6 @@ Proje özelliği tanımlamak için .csproj veya .vbproj dosyanızı düzenleyin.
       <Value>$(myLibFolder)</Value>
     </T4ParameterValues>
   </ItemGroup>
-
 ```
 
 Artık derlemede ve ekleme yönergelerinde proje özelliklerini kullanabilirsiniz:

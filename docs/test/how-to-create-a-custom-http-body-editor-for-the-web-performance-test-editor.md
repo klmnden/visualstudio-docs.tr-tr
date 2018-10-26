@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 187822c0217e6aca4f8828c82274520a35e8afe2
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 338aade9ddef3c4ef571ea2a5bffc67064c81869
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380661"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862469"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Nasıl yapılır: bir özel HTTP Gövde Düzenleyicisi için Web Performans Testi Düzenleyicisi oluşturma
 
@@ -33,31 +33,31 @@ Bu arabirimler bulunan <xref:Microsoft.VisualStudio.TestTools.WebTesting> ad ala
 
 ### <a name="create-a-user-control-by-using-a-windows-control-library-project"></a>Bir Windows Denetim Kitaplığı projesi kullanarak bir kullanıcı denetimi oluşturma
 
-1.  Visual Studio'da üzerinde **dosya** menüsünde seçin **yeni** seçip **proje**.
+1. Visual Studio'da üzerinde **dosya** menüsünde seçin **yeni** seçip **proje**.
 
-     **Yeni proje** iletişim kutusu görüntülenir.
+    **Yeni proje** iletişim kutusu görüntülenir.
 
-2.  Altında **yüklü şablonlar**, şunlardan birini seçin **Visual Basic** veya **Visual C#** programlama tercihinize göre ve ardından **Windows**.
+2. Altında **yüklü şablonlar**, şunlardan birini seçin **Visual Basic** veya **Visual C#** programlama tercihinize göre ve ardından **Windows**.
 
-    > [!NOTE]
-    > Bu örnek, Visual C# kullanmaktadır.
+   > [!NOTE]
+   > Bu örnek, Visual C# kullanmaktadır.
 
-3.  Şablonlar listesinde seçin **Windows Forms Denetim Kitaplığı**.
+3. Şablonlar listesinde seçin **Windows Forms Denetim Kitaplığı**.
 
-4.  İçinde **adı** metin kutusuna bir ad, örneğin, türü `MessageEditors`ve **Tamam**.
+4. İçinde **adı** metin kutusuna bir ad, örneğin, türü `MessageEditors`ve **Tamam**.
 
-    > [!NOTE]
-    > Bu örnek, MessageEditors kullanmaktadır.
+   > [!NOTE]
+   > Bu örnek, MessageEditors kullanmaktadır.
 
-     Proje yeni çözüme eklenir ve <xref:System.Windows.Forms.UserControl> adlı *UserControl1.cs* Tasarımcı içinde sunulur.
+    Proje yeni çözüme eklenir ve <xref:System.Windows.Forms.UserControl> adlı *UserControl1.cs* Tasarımcı içinde sunulur.
 
-5.  Gelen **araç kutusu**altında **ortak denetimleri** kategorisi bir <xref:System.Windows.Forms.RichTextBox> UserControl1 yüzeyine sürükleyin.
+5. Gelen **araç kutusu**altında **ortak denetimleri** kategorisi bir <xref:System.Windows.Forms.RichTextBox> UserControl1 yüzeyine sürükleyin.
 
-6.  Eylem etiket karakterini seçin (![akıllı etiket karakterini](../test/media/vs_winformsmttagglyph.gif)) sağ üst köşesindeki <xref:System.Windows.Forms.RichTextBox> denetlemek ve ardından seçin ve **üst kapsayıcıya Yerleştir**.
+6. Eylem etiket karakterini seçin (![akıllı etiket karakterini](../test/media/vs_winformsmttagglyph.gif)) sağ üst köşesindeki <xref:System.Windows.Forms.RichTextBox> denetlemek ve ardından seçin ve **üst kapsayıcıya Yerleştir**.
 
-7.  İçinde **Çözüm Gezgini**, Windows Forms kitaplık projesini sağ tıklatın ve seçin **özellikleri**.
+7. İçinde **Çözüm Gezgini**, Windows Forms kitaplık projesini sağ tıklatın ve seçin **özellikleri**.
 
-8.  İçinde **özellikleri**seçin **uygulama** sekmesi.
+8. İçinde **özellikleri**seçin **uygulama** sekmesi.
 
 9. İçinde **hedef Framework'ü** aşağı açılan listesinden **.NET Framework 4**.
 
@@ -95,9 +95,9 @@ Bu arabirimler bulunan <xref:Microsoft.VisualStudio.TestTools.WebTesting> ad ala
 
 18. Alma ve RichTextBox1 metni ayarlama etkinleştirmek için aşağıdaki özellikleri ekleyin. <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> Arabirimi EditString ve <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> EditByteArray öğesini kullanır:
 
-   ```csharp
-   public String EditString
-   {
+    ```csharp
+    public String EditString
+    {
        get
        {
            return this.richTextBox1.Text;
@@ -106,10 +106,10 @@ Bu arabirimler bulunan <xref:Microsoft.VisualStudio.TestTools.WebTesting> ad ala
        {
            this.richTextBox1.Text = value;
        }
-   }
+    }
 
-   public byte[] EditByteArray
-   {
+    public byte[] EditByteArray
+    {
        get
        {
            return System.Convert.FromBase64String(richTextBox1.Text);
@@ -118,8 +118,8 @@ Bu arabirimler bulunan <xref:Microsoft.VisualStudio.TestTools.WebTesting> ad ala
        {
            richTextBox1.Text = System.Convert.ToBase64String(value, 0, value.Length);
        }
-   }
-   ```
+    }
+    ```
 
 ## <a name="add-a-class-to-the-windows-control-library-project"></a>Windows Denetim Kitaplığı projesine bir sınıf ekleyin
 

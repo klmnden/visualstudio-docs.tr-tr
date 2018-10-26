@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0445ad1cb92e2206a3e37e76a6f55c9a42ca1558
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f3694c23f52a1c34cd99d8391b14cc92ac939813
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282373"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903679"
 ---
 # <a name="how-to-stop-code-changes"></a>Nasıl Yapılır: Kod Değişikliklerini Durdurma
 Düzenle ve devam ederken kod değişikliklerini uygulama sürecinde, işlemi durdurabilirsiniz.  
@@ -34,11 +34,11 @@ Düzenle ve devam ederken kod değişikliklerini uygulama sürecinde, işlemi du
   
 ### <a name="to-stop-applying-code-changes"></a>Kod değişiklikleri uygulanırken durdurmak için  
   
--   Seçin **kod değişikliklerini uygulamayı Durdur'u** gelen **hata ayıklama** menüsü.  
+- Seçin **kod değişikliklerini uygulamayı Durdur'u** gelen **hata ayıklama** menüsü.  
   
- Bu menü öğesi, yalnızca kod değişiklikleri uygulanıyor bile görülebilir.  
+  Bu menü öğesi, yalnızca kod değişiklikleri uygulanıyor bile görülebilir.  
   
- Bu seçeneği seçerseniz, hiçbir kod değişikliği kabul edilir.  
+  Bu seçeneği seçerseniz, hiçbir kod değişikliği kabul edilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Düzenle ve devam et](../debugger/edit-and-continue.md)   

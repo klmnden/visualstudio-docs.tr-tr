@@ -3,23 +3,23 @@ layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
 ms.author: gewarren
-title: Veri çözümleri geliştirmek için Visual Studio'da veri araçlarını kullanın
+title: Veri araçları, veri çözümleri geliştirmek üzere Visual Studio'da kullanın.
 description: Visual Studio'da veri çözümleri için araçları hakkında bilgi edinin.
 ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: 87a928f1d987d496bee40c4236f53b5e14cb034d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bb2a5c33f0cdfe75f6e2bf6713ab92e36b588986
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691072"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948414"
 ---
-# <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Veri çözümleri geliştirmek için Visual Studio'da veri araçlarını kullanın
+# <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Veri araçları, veri çözümleri geliştirmek üzere Visual Studio'da kullanın.
 
-Geliştirmek ve SQL Server, Azure Data Lake veya Hadoop kullanarak veri çözümleri test etmek için Visual Studio'da veri araçlarını kullanmayı öğrenin.
+SQL Server, Azure Data Lake veya Hadoop kullanarak veri çözümlerini test etmek ve geliştirmek için Visual Studio'da veri araçlarını kullanmayı öğrenin.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -33,7 +33,7 @@ Geliştirmek ve SQL Server, Azure Data Lake veya Hadoop kullanarak veri çözüm
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual Studio hakkında bilgi edinin ve .NET Framework'ün araçları ve API veri uygulamaları geliştirmek için destek</h3>
+                        <h3>Visual Studio ve .NET Framework hakkında bilgi edinin&#39;s araçları ve API desteği veri uygulamaları geliştirmek için</h3>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@ Geliştirmek ve SQL Server, Azure Data Lake veya Hadoop kullanarak veri çözüm
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Veritabanları SQL Server veri araçları ile koruma tasarlama ve dağıtma hakkında bilgi edinin</h3>
+                        <h3>Tasarlama, dağıtma ve SQL Server veri araçları ile veritabanlarını koruma hakkında bilgi edinin</h3>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@ Geliştirmek ve SQL Server, Azure Data Lake veya Hadoop kullanarak veri çözüm
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Azure Hdınsight'ta Hadoop ile Hive sorguları çalıştırma hakkında bilgi edinin</h3>
+                        <h3>Azure HDInsight üzerinde Hadoop ile Hive sorguları çalıştırma hakkında bilgi edinin</h3>
                     </div>
                 </div>
             </div>

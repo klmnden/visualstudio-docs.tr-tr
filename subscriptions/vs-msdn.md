@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil MSDN Magazine aboneliği almak i
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 65c1b2a37c11c70ab8cc8f67be21bc3ef9a35d60
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: e51a928e00d97b801d112d426a9ba414d1c44f04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073954"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941275"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>MSDN Magazine avantaj olarak Visual Studio abonelikleri
 
@@ -31,23 +31,24 @@ Dijital sürüm, Visual Studio Dev Essentials üyeleri için kullanılabilir.
 2.  MSDN Magazine kutucuk profesyonel geliştirme bölümünde bulun ve tıklatın **erişim**.
 
 ### <a name="printed-edition"></a>Yazdırılabilir sürüm
-1.  İçin MSDN Magazine aboneliği almaya başlamak için oturum açın [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-2.  MSDN Magazine kutucuk profesyonel geliştirme bölümünü bulun ve tıklayın **abone ol** MSDN Magazine aboneliği kutucuğundaki. (Tıklayın "!" içinde dijital baskı erişmek için kutucuğun sağ üst köşesindeki.)
-    > [!div class="mx-imgBorder"]
-    > ![MSDN Magazine avantajı kutucuğu](_img\vs-msdn\vs-msdn-tile.png)
+1. İçin MSDN Magazine aboneliği almaya başlamak için oturum açın [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+2. MSDN Magazine kutucuk profesyonel geliştirme bölümünü bulun ve tıklayın **abone ol** MSDN Magazine aboneliği kutucuğundaki. (Tıklayın "!" içinde dijital baskı erişmek için kutucuğun sağ üst köşesindeki.)
+   > [!div class="mx-imgBorder"]
+   > ![MSDN Magazine avantajı kutucuğu](_img/vs-msdn/vs-msdn-tile.png)
 
 
-3.  MSDN Magazine sayfasında, tercih edilen abonelik türü seçin.  Dijital sürüm nerede olursa olsun ücretsiz olarak seçebilirsiniz.  Yazdırılabilir sürüm ABD vatandaşlar için ücretsiz olarak kullanılabilir.  Yazdırılan sürümleri ABD dışı adreslere gönderilen iade sevkiyat ücretleri uygulanır.
-    > [!div class="mx-imgBorder"]
-    > ![MSDN Magazine avantajı abonelikleri](_img\vs-msdn\vs-msdn-subs-page-resized.png)
+3. MSDN Magazine sayfasında, tercih edilen abonelik türü seçin.  Dijital sürüm nerede olursa olsun ücretsiz olarak seçebilirsiniz.  Yazdırılabilir sürüm ABD vatandaşlar için ücretsiz olarak kullanılabilir.  Yazdırılan sürümleri ABD dışı adreslere gönderilen iade sevkiyat ücretleri uygulanır.
+   > [!div class="mx-imgBorder"]
+   > ![MSDN Magazine avantajı abonelikleri](_img/vs-msdn/vs-msdn-subs-page-resized.png)
 
-4.  İstenen kişi bilgilerini sağlayın ve tıklayın **Gönder**.  (Seçtiğiniz magazine sürümünü Magazine aboneliği bölümünde görünür.  Yazdırılan sürümü seçerseniz, ilk seçenek okuyacaksa **Evet!  Ücretsiz MSDN dergisi (12 sorunları) 1 yıllık almak istiyorum**.)
-    > [!div class="mx-imgBorder"]
-    > ![MSDN Magazine avantajı profili](_img\vs-msdn\vs-msdn-profile.png)
+4. İstenen kişi bilgilerini sağlayın ve tıklayın **Gönder**.  (Seçtiğiniz magazine sürümünü Magazine aboneliği bölümünde görünür.  Yazdırılan sürümü seçerseniz, ilk seçenek okuyacaksa **Evet!  Ücretsiz MSDN dergisi (12 sorunları) 1 yıllık almak istiyorum**.)
+   > [!div class="mx-imgBorder"]
+   > ![MSDN Magazine avantajı profili](_img/vs-msdn/vs-msdn-profile.png)
 
-5.  Tüm İşte bu kadar kolay.  Seçtiğiniz magazine sürümüne bağlı olarak, yazdırılan dergi veya sonraki sürümü ile çevrimiçi en son sürümlerine bağlantılarını e-posta teslim alma ya da başlarsınız.  Keyfini çıkarın!
+5. Tüm İşte bu kadar kolay.  Seçtiğiniz magazine sürümüne bağlı olarak, yazdırılan dergi veya sonraki sürümü ile çevrimiçi en son sürümlerine bağlantılarını e-posta teslim alma ya da başlarsınız.  Keyfini çıkarın!
 
 ## <a name="eligibility"></a>Uygunluk
+
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standart, yıllık bulut)   | VL, Azure, perakende, seçili NFR<sup>1</sup> |Yazdırılabilir sürüm       |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir          |

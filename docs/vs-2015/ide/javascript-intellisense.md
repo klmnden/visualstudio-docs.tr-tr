@@ -31,12 +31,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e1daa2681b52f8e052d2868135d028bbbe0092fe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 215bebb071ce707e2997e934fd58901ec2d56b8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194720"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816345"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,27 +45,27 @@ IntelliSense, kodu oluşturduğunuz sırada size bilgi sağlayarak daha hızlı 
   
  IntelliSense aşağıdaki görevleri tamamlamayı kolaylaştırır:  
   
--   Üye bilgilerini bulun.  
+- Üye bilgilerini bulun.  
   
--   Dil öğelerini doğrudan kodunuza ekleyin.  
+- Dil öğelerini doğrudan kodunuza ekleyin.  
   
--   Kod düzenleyicisinden çıkmak zorunda kalmadan bağlamınızı koruyun.  
+- Kod düzenleyicisinden çıkmak zorunda kalmadan bağlamınızı koruyun.  
   
--   XML belgeleri yorumları ve JavaScript IntelliSense genişletilebilirlik özelliği ile özel IntelliSense'i destekleyin.  
+- XML belgeleri yorumları ve JavaScript IntelliSense genişletilebilirlik özelliği ile özel IntelliSense'i destekleyin.  
   
- Bu konu aşağıdaki bölümleri içermektedir:  
+  Bu konu aşağıdaki bölümleri içermektedir:  
   
--   [IntelliSense bağlamını belirleme](#DeterminingIntelliSenseContext)  
+- [IntelliSense bağlamını belirleme](#DeterminingIntelliSenseContext)  
   
--   [IntelliSense bilgilerini işleme](#ProcessingIntelliSenseInformation)  
+- [IntelliSense bilgilerini işleme](#ProcessingIntelliSenseInformation)  
   
--   [JavaScript IntelliSense özellikleri](#Features)  
+- [JavaScript IntelliSense özellikleri](#Features)  
   
--   [JavaScript IntelliSense genişletilebilirliği](#Extensibility)  
+- [JavaScript IntelliSense genişletilebilirliği](#Extensibility)  
   
--   [JavaScript doğrulaması](#Validation)  
+- [JavaScript doğrulaması](#Validation)  
   
- IntelliSense işlevselliği hakkında daha fazla bilgi için [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], bkz: [IntelliSense kullanarak](../ide/using-intellisense.md).  
+  IntelliSense işlevselliği hakkında daha fazla bilgi için [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], bkz: [IntelliSense kullanarak](../ide/using-intellisense.md).  
   
 ##  <a name="DeterminingIntelliSenseContext"></a> IntelliSense bağlamını belirleme  
  JavaScript IntelliSense, geçerli komut dosyası bağlamınızla alakalı tüm komut dosyalarını temel alarak kodlama seçenekleri sağlar. Geçerli dosyadaki betik oluşturma öğeleri de buna dahildir. Ayrıca, komut dosyası başvuruları, derleme komut dosyası başvuruları, hizmet başvuruları ve sayfayla ilişkili başvurular gibi, komut dosyanızın doğrudan ya da dolaylı olarak başvurduğu her kodu içerir.  
@@ -103,25 +103,25 @@ IntelliSense, kodu oluşturduğunuz sırada size bilgi sağlayarak daha hızlı 
 ##  <a name="Features"></a> JavaScript IntelliSense özellikleri  
  JavaScript IntelliSense aşağıdaki nesneleri destekler:  
   
--   [Belge nesne modeli (DOM) öğeleri](#HTMLDom)  
+- [Belge nesne modeli (DOM) öğeleri](#HTMLDom)  
   
--   [İç nesneler](#IntrinsicObjects)  
+- [İç nesneler](#IntrinsicObjects)  
   
--   [Kullanıcı tanımlı değişkenler, İşlevler ve nesneler](#UserDefined)  
+- [Kullanıcı tanımlı değişkenler, İşlevler ve nesneler](#UserDefined)  
   
--   Gibi başvurular kullanarak dış dosyalarda tanımlanan nesneler [komut dosyası başvuruları](#Script), [başvuru yönergeleri](#ReferenceDirectives), ve [başvuru grupları](#ReferenceGroups).  
+- Gibi başvurular kullanarak dış dosyalarda tanımlanan nesneler [komut dosyası başvuruları](#Script), [başvuru yönergeleri](#ReferenceDirectives), ve [başvuru grupları](#ReferenceGroups).  
   
--   Uzak dosyalarda tanımlı olup Visual Studio tarafından indirilen nesneler.  
+- Uzak dosyalarda tanımlı olup Visual Studio tarafından indirilen nesneler.  
   
--   Belirtilen nesneler [XML belgeleri yorumları](#XMLDocComments), parametreler ve alanlar gibi.  
+- Belirtilen nesneler [XML belgeleri yorumları](#XMLDocComments), parametreler ve alanlar gibi.  
   
--   Standart JavaScript açıklama etiketleri (//) kullanılarak açıklanan nesneler. Daha fazla bilgi için [JavaScript IntelliSense genişletme](../ide/extending-javascript-intellisense.md).  
+- Standart JavaScript açıklama etiketleri (//) kullanılarak açıklanan nesneler. Daha fazla bilgi için [JavaScript IntelliSense genişletme](../ide/extending-javascript-intellisense.md).  
   
--   Kullanılarak desteklenen nesneler [JavaScript IntelliSense genişletilebilirlik](#Extensibility) mekanizması. Daha fazla bilgi için [JavaScript IntelliSense genişletme](../ide/extending-javascript-intellisense.md).  
+- Kullanılarak desteklenen nesneler [JavaScript IntelliSense genişletilebilirlik](#Extensibility) mekanizması. Daha fazla bilgi için [JavaScript IntelliSense genişletme](../ide/extending-javascript-intellisense.md).  
   
--   [ASP.NET AJAX nesneleri](#ASPNet)  
+- [ASP.NET AJAX nesneleri](#ASPNet)  
   
- IntelliSense bir nesnenin türünü belirleyemediğinde, etkin belgedeki tanımlayıcıları kullanarak deyim tamamlama seçenekleri sunar. Daha fazla bilgi için [tanımlayıcılar için ifade tamamlama](../ide/statement-completion-for-identifiers.md).  
+  IntelliSense bir nesnenin türünü belirleyemediğinde, etkin belgedeki tanımlayıcıları kullanarak deyim tamamlama seçenekleri sunar. Daha fazla bilgi için [tanımlayıcılar için ifade tamamlama](../ide/statement-completion-for-identifiers.md).  
   
 ###  <a name="HTMLDom"></a> HTML DOM öğeleri  
  JavaScript IntelliSense programlama başvuruları gibi dinamik HTML (DHTML) DOM öğeleri için sağlar `body`, `form`, ve `div`. IntelliSense yalnızca, geçerli belgede ve ana sayfada yer alan öğeleri görüntüler. JavaScript IntelliSense de destekler `window` ve `document` nesneleri ve üyeleri.  
@@ -227,15 +227,15 @@ IntelliSense, kodu oluşturduğunuz sırada size bilgi sağlayarak daha hızlı 
 ####  <a name="ReferenceGroups"></a> Başvuru grupları  
  Belirli IntelliSense .js dosyalarının farklı JavaScript projeleri için kapsamda olduğunu belirtmek için önceden tanımlı başvuru gruplarını kullanabilirsiniz. Aşağıdaki başvuru grubu türleri kullanılabilir:  
   
--   Örtük (Windows) için [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] JavaScript kullanan uygulamalar. Bu grupta yer alan dosyalar, belirtilen türdeki proje için Kod Düzenleyicisi'nde açılan her .js dosyası için kapsama girer.  
+- Örtük (Windows) için [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] JavaScript kullanan uygulamalar. Bu grupta yer alan dosyalar, belirtilen türdeki proje için Kod Düzenleyicisi'nde açılan her .js dosyası için kapsama girer.  
   
--   Örtük (Web); HTML5 projeleri için. Bu grupta yer alan dosyalar, bu proje türleri için Kod Düzenleyicisi'nde açılan her .js dosyası için kapsama girer.  
+- Örtük (Web); HTML5 projeleri için. Bu grupta yer alan dosyalar, bu proje türleri için Kod Düzenleyicisi'nde açılan her .js dosyası için kapsama girer.  
   
--   Adanmış çalışan başvuru grupları; HTML5 Web Çalışanları için. Bu grupta belirtilen dosyalar, bir adanmış çalışan başvuru grubuna dair açık başvuru içeren .js dosyaları için kapsama girer.  
+- Adanmış çalışan başvuru grupları; HTML5 Web Çalışanları için. Bu grupta belirtilen dosyalar, bir adanmış çalışan başvuru grubuna dair açık başvuru içeren .js dosyaları için kapsama girer.  
   
--   Genel; diğer JavaScript proje türleri için.  
+- Genel; diğer JavaScript proje türleri için.  
   
- Çoğu senaryoda başvuru gruplarını değiştirmeniz gerekmez. Ancak, değişiklikler yapmak istiyorsanız, başvuru gruplarında yer alan dosyaları belirtmek için JavaScript Kodu Düzenleyicisi'ne ilişkin yapılandırma seçeneklerini kullanabilirsiniz. Bu özelliğin kullanımı hakkında yönergeler için bkz: [seçenekler, metin düzenleyici, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).  
+  Çoğu senaryoda başvuru gruplarını değiştirmeniz gerekmez. Ancak, değişiklikler yapmak istiyorsanız, başvuru gruplarında yer alan dosyaları belirtmek için JavaScript Kodu Düzenleyicisi'ne ilişkin yapılandırma seçeneklerini kullanabilirsiniz. Bu özelliğin kullanımı hakkında yönergeler için bkz: [seçenekler, metin düzenleyici, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).  
   
 > [!TIP]
 >  IntelliSense başvuruları normalde IntelliSense ve genel nesneler için IntelliSense desteği sağlamak için kullanılan [uzantıları](#Extensibility). Bu seçeneği ayrıca, komut dosyası yükleyici kullanılarak çalışma zamanında yüklenmesi gereken komut dosyaları için de kullanabilirsiniz.  
@@ -256,13 +256,13 @@ IntelliSense, kodu oluşturduğunuz sırada size bilgi sağlayarak daha hızlı 
   
  IntelliSense XML belgeleri yorumlarını şu senaryolarda görüntüleyebilir:  
   
--   Başka bir .js dosyasına başvuruda bulunan .js dosyası.  
+- Başka bir .js dosyasına başvuruda bulunan .js dosyası.  
   
--   Bir .aspx dosyasına başvuruda bulunan .js dosyası.  
+- Bir .aspx dosyasına başvuruda bulunan .js dosyası.  
   
--   Bir .js dosyasına başvuruda bulunan .aspx dosyası.  
+- Bir .js dosyasına başvuruda bulunan .aspx dosyası.  
   
- Bir .aspx dosyası başka bir .aspx dosyasına başvurduğunda IntelliSense kullanılamaz.  
+  Bir .aspx dosyası başka bir .aspx dosyasına başvurduğunda IntelliSense kullanılamaz.  
   
 ###  <a name="ASPNet"></a> ASP.NET AJAX nesneleri  
  ASP.NET AJAX da JavaScript IntelliSense'i destekler. ASP.NET AJAX, ECMAScript (JavaScript) içinde kullanılabilen standart türlerin kapsamını genişleten bir istemci çerçevesi içerir. ASP.NET AJAX nesneleri hakkında daha fazla ayrıntı sağlamak JavaScript IntelliSense sağlamak için XML belge açıklamaları boyunca eklenen [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)]. ASP.NET AJAX Kitaplığı'nda yer alan türleri ve üyeleri kullandığınızda bu XML belgeleri yorumları görüntülenir.  

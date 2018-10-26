@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1029ff61c7833ae03ab513ef486ecbd1edb1f295
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 179cf5fab5a1b2690cb4b46160f7a5c3342fe7bc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676855"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914222"
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>Nasıl yapılır: çalışma sayfalarında verileri programlamayla sıralama
   Çalışma zamanında çalışma sayfası aralıklarına ve listelerinde bulunan verileri sıralayabilirsiniz. Aşağıdaki kodu adlı bir çok sütunlu aralık sıralar `Fruits` ilk sütunundaki verileri ve ardından ikinci sütundaki verileri.  
@@ -34,12 +34,12 @@ ms.locfileid: "35676855"
   
 ### <a name="to-sort-data-in-a-namedrange-control"></a>NamedRange denetimi verileri sıralama  
   
-1.  Çağrı <xref:Microsoft.Office.Tools.Excel.NamedRange.Sort%2A> yöntemi <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi. Aşağıdaki örnek gerektiren bir <xref:Microsoft.Office.Tools.Excel.NamedRange> adlı Denetim `Fruits` çalışma sayfasında. Bu kod, bir sayfa sınıfında değil yerleştirilmelidir `ThisWorkbook` sınıfı.  
+1. Çağrı <xref:Microsoft.Office.Tools.Excel.NamedRange.Sort%2A> yöntemi <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi. Aşağıdaki örnek gerektiren bir <xref:Microsoft.Office.Tools.Excel.NamedRange> adlı Denetim `Fruits` çalışma sayfasında. Bu kod, bir sayfa sınıfında değil yerleştirilmelidir `ThisWorkbook` sınıfı.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#78)]
-     [!code-vb[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#78)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#78)]
+    [!code-vb[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#78)]  
   
- Aşağıdaki kodda yerleştirin *Sheet1.vb* veya *Sheet1.cs* verileri sıralamak için bir <xref:Microsoft.Office.Tools.Excel.ListObject> denetimi. Kod, olduğunu varsayar bir <xref:Microsoft.Office.Tools.Excel.ListObject> adlı Denetim `fruitList` adlı çalışma sayfasındaki `Sheet1`.  
+   Aşağıdaki kodda yerleştirin *Sheet1.vb* veya *Sheet1.cs* verileri sıralamak için bir <xref:Microsoft.Office.Tools.Excel.ListObject> denetimi. Kod, olduğunu varsayar bir <xref:Microsoft.Office.Tools.Excel.ListObject> adlı Denetim `fruitList` adlı çalışma sayfasındaki `Sheet1`.  
   
 ### <a name="to-sort-data-in-a-listobject-control"></a>ListObject denetiminde verileri sıralama  
   

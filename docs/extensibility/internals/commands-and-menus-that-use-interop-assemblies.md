@@ -16,23 +16,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f67419240b8632c3032bd3877894d871245e55e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 2212d9eb38487bf824fd8df3c497d9f256379c10
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513448"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907813"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>Komutlar ve menüler birlikte çalışma bütünleştirilmiş kodları kullanın
 Birlikte çalışma derlemelerini kullanarak menü ve araç çubuğu komutlarını uygulayan bir VSPackage'ı gerekir:  
   
--   Bildirmek [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE), desteklediği komutlar ve bunlar şu anda etkinleştirilip etkinleştirilmediği.  
+- Bildirmek [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE), desteklediği komutlar ve bunlar şu anda etkinleştirilip etkinleştirilmediği.  
   
--   Komutları işlemek için kuralları (sözleşme) izliyor.  
+- Komutları işlemek için kuralları (sözleşme) izliyor.  
   
--   Açıkça komut işleme kullanarak uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> veya <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> arabirimi.  
+- Açıkça komut işleme kullanarak uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> veya <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> arabirimi.  
   
- Aşağıdaki bölümde bu görevlerin nasıl yapılacağını açıklar.  
+  Aşağıdaki bölümde bu görevlerin nasıl yapılacağını açıklar.  
   
 ## <a name="in-this-section"></a>Bu bölümde  
  [Birlikte çalışma bütünleştirilmiş kodları kullanarak komut durumunu belirleme](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  

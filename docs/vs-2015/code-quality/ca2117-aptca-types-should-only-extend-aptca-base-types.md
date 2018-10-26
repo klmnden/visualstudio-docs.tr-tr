@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 409133c173f497b1f21b36c7d8c4c89561c0aa15
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b069674827ab266b4a4b7a99f81e039d487f6da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171463"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922659"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: APTCA türleri yalnızca APTCA taban türlerini genişletmelidir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AptcaTypesShouldOnlyExtendAptcaBaseTypes|
@@ -44,15 +45,15 @@ ms.locfileid: "49171463"
 
  APTCA özniteliği tam olarak güvenilen bir derlemede yapılandırıldığında ve derlemedeki tür, kısmen güvenilmeyen çağrıcılara izin vermeyen tür tarafından devralındığında güvenlik yararlanması mümkündür. İki yazdığında `T1` ve `T2` zararlı çağıranlar türü kullanabilir, aşağıdaki koşullara uyması `T1` korur örtük tam güven devralma talebi atlamak için `T2`:
 
--   `T1` bir genel türü APTCA özniteliği tam olarak güvenilen bir derlemede bildirilmiş.
+- `T1` bir genel türü APTCA özniteliği tam olarak güvenilen bir derlemede bildirilmiş.
 
--   `T1` bir tür tarafından devralındığında `T2` kendi derlemesi dışında.
+- `T1` bir tür tarafından devralındığında `T2` kendi derlemesi dışında.
 
--   `T2`kişinin derleme APTCA özniteliği yok ve bu nedenle, kısmen güvenilen derlemelerde türlerine göre devralınabilir olmamalıdır.
+- `T2`kişinin derleme APTCA özniteliği yok ve bu nedenle, kısmen güvenilen derlemelerde türlerine göre devralınabilir olmamalıdır.
 
- Kısmen güvenilen bir tür `X` öğesinden devralabilir `T1`, sağlayan, erişim için bildirilen devralınan üyeleri `T2`. Çünkü `T2` APTCA özniteliği, hemen türetilmiş türü yok (`T1`) için tam güven; bir devralma talebi karşılayamaz hale gerekir `T1` tam güvene sahip ve bu nedenle bu denetimi karşılar. Güvenlik riski çünkü `X` koruyan bir devralma talebi karşılamadığınızı içinde yer almaz `T2` güvenilmeyen sınıflara öğesinden. Bu nedenle, APTCA özniteliği türleriyle özniteliğine sahip olmayan türleri geçmemelidir.
+  Kısmen güvenilen bir tür `X` öğesinden devralabilir `T1`, sağlayan, erişim için bildirilen devralınan üyeleri `T2`. Çünkü `T2` APTCA özniteliği, hemen türetilmiş türü yok (`T1`) için tam güven; bir devralma talebi karşılayamaz hale gerekir `T1` tam güvene sahip ve bu nedenle bu denetimi karşılar. Güvenlik riski çünkü `X` koruyan bir devralma talebi karşılamadığınızı içinde yer almaz `T2` güvenilmeyen sınıflara öğesinden. Bu nedenle, APTCA özniteliği türleriyle özniteliğine sahip olmayan türleri geçmemelidir.
 
- Başka bir güvenlik sorunu ve belki de daha yaygın bir tane, türetilmiş bir tür olan (`T1`) Programcı hata, tam güven gerektiren türünden korumalı üyeler açığa çıkarabilir (`T2`). Bu durumda, güvenilmeyen çağıranlar yalnızca tam olarak güvenilen türleri için kullanması gereken bilgilere erişin.
+  Başka bir güvenlik sorunu ve belki de daha yaygın bir tane, türetilmiş bir tür olan (`T1`) Programcı hata, tam güven gerektiren türünden korumalı üyeler açığa çıkarabilir (`T2`). Bu durumda, güvenilmeyen çağıranlar yalnızca tam olarak güvenilen türleri için kullanması gereken bilgilere erişin.
 
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
  Bir derlemede APTCA özniteliği gerektirmez ihlali tarafından bildirilen türü ise kaldırın.

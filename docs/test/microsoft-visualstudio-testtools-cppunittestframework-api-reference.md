@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 8309ee96b0948739124e0e23c4a57dd136f63362
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: b2225ec5db308b290e932cb9d29d1c50e32d4608
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280928"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820271"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API Başvurusu
 
@@ -29,72 +29,73 @@ Bu konu genel üyeleri listeler `Microsoft::VisualStudio::CppUnitTestFramework` 
 ##  <a name="In_this_topic"></a> Bu konudaki
  [CppUnitTest.h](#cppUnitTest_h)
 
--   [Test sınıflar ve yöntemler oluşturma](#create_test_classes_and_methods)
+- [Test sınıflar ve yöntemler oluşturma](#create_test_classes_and_methods)
 
--   [Başlatma ve temizleme](#Initialize_and_cleanup)
+- [Başlatma ve temizleme](#Initialize_and_cleanup)
 
-    -   [Test yöntemleri](#test_methods)
+  -   [Test yöntemleri](#test_methods)
 
-    -   [Test sınıfları](#test_classes)
+  -   [Test sınıfları](#test_classes)
 
-    -   [Test modülleri](#test_modules)
+  -   [Test modülleri](#test_modules)
 
--   [Test öznitelikleri oluşturma](#create_test_attributes)
+- [Test öznitelikleri oluşturma](#create_test_attributes)
 
-    -   [Test yöntemi öznitelikleri](#test_method_attributes)
+  - [Test yöntemi öznitelikleri](#test_method_attributes)
 
-    -   [Test sınıfı öznitelikler](#test_class_attributes)
+  - [Test sınıfı öznitelikler](#test_class_attributes)
 
-    -   [Test modül öznitelikleri](#test_module_attributes)
+  - [Test modül öznitelikleri](#test_module_attributes)
 
-    -   [Önceden tanımlı öznitelikleri](#pre_defined_attributes)
+  - [Önceden tanımlı öznitelikleri](#pre_defined_attributes)
 
-     [CppUnitTestAssert.h](#cppUnitTestAssert_h)
+    [CppUnitTestAssert.h](#cppUnitTestAssert_h)
 
-    -   [Genel onaylar](#general_asserts)
+  - [Genel onaylar](#general_asserts)
 
-        -   [Eşit](#general_are_equal)
+    -   [Eşit](#general_are_equal)
 
-        -   [Eşit değildir](#general_are_not_equal)
+    -   [Eşit değildir](#general_are_not_equal)
 
-        -   [Aynı](#general_are_same)
+    -   [Aynı](#general_are_same)
 
-        -   [Aynı değil](#general_are_not_same)
+    -   [Aynı değil](#general_are_not_same)
 
-        -   [Null](#general_is_null)
+    -   [Null](#general_is_null)
 
-        -   [Null değil](#general_is_not_null)
+    -   [Null değil](#general_is_not_null)
 
-        -   [Geçerlidir](#general_is_True)
+    -   [Geçerlidir](#general_is_True)
 
-        -   [Yanlış](#general_is_false)
+    -   [Yanlış](#general_is_false)
 
-        -   [Başarısız](#general_Fail)
+    -   [Başarısız](#general_Fail)
 
-    -   [Windows çalışma zamanı onaylar](#winrt_asserts)
+  - [Windows çalışma zamanı onaylar](#winrt_asserts)
 
-        -   [Eşit](#winrt_are_equal)
+    -   [Eşit](#winrt_are_equal)
 
-        -   [Aynı](#winrt_are_same)
+    -   [Aynı](#winrt_are_same)
 
-        -   [Eşit değildir](#winrt_are_not_equal)
+    -   [Eşit değildir](#winrt_are_not_equal)
 
-        -   [Aynı değil](#winrt_are_not_same)
+    -   [Aynı değil](#winrt_are_not_same)
 
-        -   [Null](#winrt_is_null)
+    -   [Null](#winrt_is_null)
 
-        -   [Null değil](#winrt_is_not_null)
+    -   [Null değil](#winrt_is_not_null)
 
-    -   [Özel durum onaylar](#exception_asserts)
+  - [Özel durum onaylar](#exception_asserts)
 
-        -   [Özel durum beklediğiniz](#expect_exception)
+    - [Özel durum beklediğiniz](#expect_exception)
 
-         [CppUnitTestLogger.h](#cppunittestlogger_h)
+      [CppUnitTestLogger.h](#cppunittestlogger_h)
 
-        -   [Günlükçü](#logger)
+    - [Günlükçü](#logger)
 
-        -   [İleti Yaz](#write_message)
-    -    [Kullanım örneği](#example)
+    - [İleti Yaz](#write_message)
+
+  - [Kullanım örneği](#example)
 
 ##  <a name="cppUnitTest_h"></a> CppUnitTest.h
 
@@ -111,7 +112,6 @@ TEST_METHOD(methodName)
 {
     // test method body
 }
-
 ```
 
  Tanımlar *methodName* bir test yöntemi olarak. `TEST_METHOD` yöntemin sınıf kapsamı içinde bildirilmesi gerekir.
@@ -125,7 +125,6 @@ TEST_METHOD_INITIALIZE(methodName)
 {
     // method initialization code
 }
-
 ```
 
  Tanımlar *methodName* her test yönteminin çalıştırılmadan önce çalışan bir yöntem olarak. `TEST_METHOD_INITIALIZE` yalnızca bir kez bir test sınıfında tanımlanabilir ve test sınıfta tanımlanmalıdır.
@@ -135,7 +134,6 @@ TEST_METHOD_CLEANUP(methodName)
 {
     // test method cleanup  code
 }
-
 ```
 
  Tanımlar *methodName* her test yönteminin çalıştırdıktan sonra çalıştırılan bir yöntem olarak. `TEST_METHOD_CLEANUP` yalnızca bir kez bir test sınıfında tanımlanabilir ve test sınıfı kapsamında tanımlanmış olması gerekir.

@@ -21,12 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 2b4393758b4c246af0da830b6ed8d8e20eb8ff40
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3f64fa378029546f7a3126b324c282f6a91d7231
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191132"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897640"
 ---
 # <a name="how-to-connect-to-the-northwind-database"></a>Nasıl yapılır: Northwind Veritabanına Bağlanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,29 +38,29 @@ Visual Studio kullanarak veritabanı uygulamaları oluşturmayı öğrenin gibi 
   
 #### <a name="to-create-a-data-connection-to-the-northwind-database-sql-server"></a>Northwind veritabanı (SQL Server) için bir veri bağlantısı oluşturmak için  
   
-1.  Üzerinde **görünümü** menüsünde seçin **Sunucu Gezgini**/**veritabanı Gezgini**.  
+1. Üzerinde **görünümü** menüsünde seçin **Sunucu Gezgini**/**veritabanı Gezgini**.  
   
-2.  İçinde **Sunucu Gezgini**/**veritabanı Gezgini**, kısayol menüsünü açın **veri bağlantıları** ve **Add Connection**.  
+2. İçinde **Sunucu Gezgini**/**veritabanı Gezgini**, kısayol menüsünü açın **veri bağlantıları** ve **Add Connection**.  
   
-     Seçtiğiniz sonra **Bağlantı Ekle**, ya da **veri kaynağı Seç** iletişim kutusu veya **Bağlantı Ekle** iletişim kutusu görüntülenir.  
+    Seçtiğiniz sonra **Bağlantı Ekle**, ya da **veri kaynağı Seç** iletişim kutusu veya **Bağlantı Ekle** iletişim kutusu görüntülenir.  
   
-3.  Varsa **veri kaynağı Seç** iletişim kutusu görüntülenirse, seçin **Microsoft SQL Server**ve ardından **Tamam**.  
+3. Varsa **veri kaynağı Seç** iletişim kutusu görüntülenirse, seçin **Microsoft SQL Server**ve ardından **Tamam**.  
   
-     Varsa **Bağlantı Ekle** iletişim kutusu görünür ve **veri kaynağı** değil **Microsoft SQL Server (SqlClient)**, seçin **değişiklik** açmak için düğmeyi **değişimi veri kaynağı** iletişim kutusunda **Microsoft SQL Server**ve ardından **Tamam** düğmesi.  
+    Varsa **Bağlantı Ekle** iletişim kutusu görünür ve **veri kaynağı** değil **Microsoft SQL Server (SqlClient)**, seçin **değişiklik** açmak için düğmeyi **değişimi veri kaynağı** iletişim kutusunda **Microsoft SQL Server**ve ardından **Tamam** düğmesi.  
   
-4.  İçinde **sunucu adı** listesinde, Northwind veritabanının bulunduğu sunucunun adını belirtin.  
+4. İçinde **sunucu adı** listesinde, Northwind veritabanının bulunduğu sunucunun adını belirtin.  
   
-5.  Sürümünüz SQL Server ve Northwind veritabanının gereksinimlerine bağlı olarak seçin ya da **Windows kimlik doğrulamasını kullan** veya **SQL Server kimlik doğrulamasını kullan** ve bir kullanıcı adı girin ve SQL Server çalıştıran bilgisayarda oturum açmak için parola.  
+5. Sürümünüz SQL Server ve Northwind veritabanının gereksinimlerine bağlı olarak seçin ya da **Windows kimlik doğrulamasını kullan** veya **SQL Server kimlik doğrulamasını kullan** ve bir kullanıcı adı girin ve SQL Server çalıştıran bilgisayarda oturum açmak için parola.  
   
-6.  Northwind veritabanındaki seçin **bir veritabanı adı seçin veya girin** listesi.  
+6. Northwind veritabanındaki seçin **bir veritabanı adı seçin veya girin** listesi.  
   
-7.  Seçin **Test Bağlantısı** Northwind veritabanı bağlantısını doğrulamak için.  
+7. Seçin **Test Bağlantısı** Northwind veritabanı bağlantısını doğrulamak için.  
   
-8.  Seçin **Tamam**.  
+8. Seçin **Tamam**.  
   
-     Bir veri bağlantısı Northwind veritabanına eklenir **Sunucu Gezgini**/**veritabanı Gezgini**.  
+    Bir veri bağlantısı Northwind veritabanına eklenir **Sunucu Gezgini**/**veritabanı Gezgini**.  
   
- Uzak bir SQL Server veritabanı örneğine bağlanma yanı sıra veritabanı içeren doğrudan gerçek dosyalarına da bağlanabilirsiniz. Bu, veritabanı dosyalarını doğrudan uygulamanın bir parçası bunlar burada dağıtılabilir projesine eklemenize olanak sağlar. Aşağıdaki yerel veritabanı dosyaları şu anda desteklenen: SQL Server Compact veritabanı dosyaları (.sdf) [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] ve SQL Server Express veritabanı dosyaları (.mdf) ve Microsoft Access veritabanı dosyaları (.mdb veya .accdb).  
+   Uzak bir SQL Server veritabanı örneğine bağlanma yanı sıra veritabanı içeren doğrudan gerçek dosyalarına da bağlanabilirsiniz. Bu, veritabanı dosyalarını doğrudan uygulamanın bir parçası bunlar burada dağıtılabilir projesine eklemenize olanak sağlar. Aşağıdaki yerel veritabanı dosyaları şu anda desteklenen: SQL Server Compact veritabanı dosyaları (.sdf) [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] ve SQL Server Express veritabanı dosyaları (.mdf) ve Microsoft Access veritabanı dosyaları (.mdb veya .accdb).  
   
 #### <a name="to-create-a-data-connection-to-the-northwind-databasesql-server-database-file-mdf"></a>Northwind veritabanına bir veri bağlantısı oluşturmak için: SQL Server veritabanı dosyasına (.mdf)  
   

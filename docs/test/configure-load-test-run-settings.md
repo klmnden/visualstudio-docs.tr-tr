@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fb1f9ad69ebe012151a911bf8d7c02ded6af5e11
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2171912d3542049564f23ea69b06186cd1846943
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283339"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813868"
 ---
 # <a name="configure-load-test-run-settings"></a>Yük testi çalıştırma ayarlarını yapılandırma
 
@@ -30,7 +30,7 @@ Bir yük testinde çalışma ayarları, ancak tek çalışma etkin olabilir, bir
 ## <a name="tasks"></a>Görevler
 
 |Görevler|İlişkili Konular|
-|-----------|-----------------------|
+|-|-|
 |**Yük testiniz için daha fazla çalıştırma ayarları ekleme:** çalıştırdığınızda oluşturduğunuz çalışma ayarı yanı sıra **Yeni Yük Testi Sihirbazı**, daha fazla çalıştırma ayarları yük testinize altındaki farklı test çalıştırabilmek ekleyebilirsiniz. koşullar.|-   [Nasıl yapılır: bir yük testine ek çalışma ayarları ekleme](../test/how-to-add-additional-run-settings-to-a-load-test.md)|
 |**Etkin yük testi ile kullanmak için ayarı çalışma belirlemek:** Yük Testi Düzenleyicisini kullanarak yük testi ile kullanmak istediğiniz çalışma ayarını seçebilirsiniz. Etkin çalışma ayarı, "[etkin]" soneki ile tanımlanır.|-   [Nasıl yapılır: etkin çalışma yük testi için ayarı seçin](../test/how-to-select-the-active-run-setting-for-a-load-test.md)|
 |**Çalıştırma ayarı Özellikleri Düzenle:** çalıştırmanız düzenleyebileceğiniz özelliklerini gibi şeyler günlüğe kaydetme seçeneklerini ayarlama (daha aşağıda, test, Isınma Süresi, en fazla hata sayısı uzunluğunu belirleyen bakın), örnekleme hızını, bağlantı bildirilen ayrıntıları Modeli (yalnızca web performans testleri), sonuç depolama türü, doğrulama düzeyi ve SQL izleme. Çalıştırma ayarları yük testinizin hedeflerini yansıtmalıdır.|-   [Yük testi çalıştırma ayarları özellikleri](../test/load-test-run-settings-properties.md)<br />-   [Çalışma ayarı özelliklerini değiştirme](../test/load-test-run-settings-properties.md#change-run-setting-properties)|

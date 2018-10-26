@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea8abd11f3af8be510e88579651fb0a7f92e075b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: a4ffdef238aaa628d0b72bcc945cf3dc1754fd8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638472"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833973"
 ---
 # <a name="directory-status-code-enumerator"></a>Dizin durumu kod numaralandırıcısı
 `SccDirStatus` Numaralandırıcı kaynak denetimi Sistemi'nde bir dizin durumunu belirten adlandırılmış sabit değerleri içerir. Bu sabit listesi tarafından kullanılan [Sccdirqueryınfo](../extensibility/sccdirqueryinfo-function.md). Bu kaynak denetimi eklentisi API 1.2 sürümünde kullanıma sunulmuştur.  
@@ -50,4 +50,4 @@ enum SccDirStatus {
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Kaynak denetimi eklentileri](../extensibility/source-control-plug-ins.md)   
- [Sccdirqueryınfo](../extensibility/sccdirqueryinfo-function.md)
+ [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)

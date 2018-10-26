@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2f4e486ad1e19a85bc0f7c64a56db9303bb70960
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 550963966b45ed2d8024b36735f17ff24b6701fc
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677863"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050215"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Office çalışma zamanı için Visual Studio araçlarındaki derlemeler
   Bir Office projesi oluşturduğunuzda, Visual Studio başvuruları otomatik olarak ekler. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] proje türü ve hedef projenin .NET Framework için kullanılan derlemeler. .NET Framework 3.5 için Office uzantılarındaki derlemeler farklı vardır [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], ve [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Office uzantıları hakkında daha fazla bilgi için bkz. [Office çalışma zamanına genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
@@ -59,7 +59,7 @@ ms.locfileid: "35677863"
 |Microsoft.Office.Tools.Word.v9.0.dll|Konak denetimlerinin ve konak öğelerinin Word çözümleri sağlar. Daha fazla bilgi için [otomatikleştirmek genişletilmiş nesneleri kullanarak Word'ü](../vsto/automating-word-by-using-extended-objects.md).|  
 |Microsoft.Office.Tools.v9.0.dll|Aşağıdaki türlerini sağlar:<br /><br /> - [RemoteBindableComponent](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb546360(v=vs.90)) konak denetimlerinde belge düzeyi özelleştirmelerini için veri bağlama özellikleri sağlayan sınıf.<br />-Office çalışma zamanı altyapısı için Visual Studio Araçları'nın bir parçasıdır ve doğrudan kodunuzdan kullanılmaya yönelik değildir diğer türleri.|  
 |Microsoft.VisualStudio.Tools.Applications.Runtime.v9.0.dll|Aşağıdaki türlerini sağlar:<br /><br /> - <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> Özniteliği ve <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ICachedType> belge düzeyi özelleştirmesinde önbellek veri nesneleri için kullanabileceğiniz bir arabirim. Daha fazla bilgi için [veriyi önbelleğe alma](../vsto/caching-data.md).<br />-Office çalışma zamanı için Visual Studio Araçları tarafından oluşturulan özel durumlar.<br />-Office çalışma zamanı altyapısı için Visual Studio Araçları'nın bir parçasıdır ve doğrudan kodunuzdan kullanılmaya yönelik değildir diğer türleri.|  
-|Microsoft.VisualStudio.Tools.Applications.Runtime.v10.0.dll|Sağlar <xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction> arabirimi, bir Office çözümü için ClickOnce yükleyicisi'nin son adım olarak ek yükleme adımlarını çalıştırmayı uygulayabilirsiniz. Daha fazla bilgi için [Gelişmiş Office çözümü dağıtımında](http://msdn.microsoft.com/9147b6f6-849f-4cb1-b2c5-e22658d74b02).|  
+|Microsoft.VisualStudio.Tools.Applications.Runtime.v10.0.dll|Sağlar <xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction> arabirimi, bir Office çözümü için ClickOnce yükleyicisi'nin son adım olarak ek yükleme adımlarını çalıştırmayı uygulayabilirsiniz. Daha fazla bilgi için [Gelişmiş Office çözümü dağıtımında](/previous-versions/visualstudio/visual-studio-2010/dd234217(v=vs.100)).|  
 |Microsoft.VisualStudio.Tools.Applications.ServerDocument.v10.0.dll|Aşağıdaki türlerini sağlar:<br /><br /> - <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Özelleştirme derlemeleri program aracılığıyla belgelere iliştirmek ve belgeleri önbelleğe alınan verilere erişmek için kullanabileceğiniz sınıfı. Daha fazla bilgi için [ServerDocument sınıfını kullanarak bir sunucu üzerinde belgeleri yönetme](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md).<br />-Belge düzeyi özelleştirmesinde veri hiyerarşisini temsil eden birden fazla sınıf önbelleğe. Daha fazla bilgi için [sunucudaki belgelerde verilere erişme](../vsto/accessing-data-in-documents-on-the-server.md).|  
 |Microsoft.VisualStudio.Tools.Office.Runtime.v10.0.dll|Aşağıdaki türlerini sağlar:<br /><br /> -Kullanıcı ekleme, Office için güven kazandırmak için Liste girişlerini oluşturmak için kullanabileceğiniz Microsoft.VisualStudio.Tools.Office.Runtime.Security.AddInSecurityEntry ve Microsoft.VisualStudio.Tools.Office.Runtime.Security.UserInclusionList sınıfları .NET Framework 3.5 kullanan çözümler.<br />-Office çalışma zamanı altyapısı için Visual Studio Araçları'nın bir parçasıdır ve doğrudan kodunuzdan kullanılmaya yönelik değildir diğer türleri.|  
   

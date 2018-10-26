@@ -17,27 +17,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d3c7ed095d0efe756e7a23409cd5a54f9e6dcda8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: c4ebf998dc7c278fda1e605d18198945958a7fed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808663"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933189"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>İzlenecek yol: VSTO eklenti projesinde bir hizmetten verilere bağlama
   Verileri, VSTO eklentisi projelerine konak denetimlere bağlayabilirsiniz. Bu izlenecek yol, bir Microsoft Office Word belgesi için denetimler ekleme, MSDN içerik hizmetinden alınan verilere denetimler bağlama ve çalışma zamanında olaylara yanıt gösterilmektedir.  
   
- **İçin geçerlidir:** Bu konu başlığı altındaki bilgiler Word 2010 için uygulama düzeyi projelere yöneliktir. Daha fazla bilgi için [Office uygulaması ve proje türüne göre kullanılabilen özellikler](../vsto/features-available-by-office-application-and-project-type.md).  
+ **İçin geçerlidir:** Bu konu başlığı altındaki bilgiler Word 2010 için uygulama düzeyi projelere yöneliktir. Daha fazla bilgi edinmek için bkz. [Office Uygulaması ve Proje Türüne Göre Kullanılabilen Özellikler](../vsto/features-available-by-office-application-and-project-type.md).  
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
--   Ekleme bir <xref:Microsoft.Office.Tools.Word.RichTextContentControl> belgeye çalışma zamanında denetim.  
+- Ekleme bir <xref:Microsoft.Office.Tools.Word.RichTextContentControl> belgeye çalışma zamanında denetim.  
   
--   Bağlama <xref:Microsoft.Office.Tools.Word.RichTextContentControl> bir web hizmetinden veri denetimi.  
+- Bağlama <xref:Microsoft.Office.Tools.Word.RichTextContentControl> bir web hizmetinden veri denetimi.  
   
--   Yanıtlama <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> olayı bir <xref:Microsoft.Office.Tools.Word.RichTextContentControl> denetimi.  
+- Yanıtlama <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> olayı bir <xref:Microsoft.Office.Tools.Word.RichTextContentControl> denetimi.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  

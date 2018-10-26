@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil Windows Geliştirici hesabı hak
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 73a0d9b9cfb8056f78c03387754807e7ffe81552
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: be7a740e22201a230658dec0803a8523f7716462
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073785"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832413"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Windows Geliştirici hesabı
 
@@ -29,27 +29,28 @@ Bu işlem için bir "özel" tarayıcı penceresi oluşturmanızı öneririz.  Ö
 1. Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Windows Geliştirici hesabı kutucuk Araçlar bölümünde bulun ve tıklayarak **kodunu Al** avantajı kutucuğun alt kısmındaki bağlantı.  Kodunu panonuza kopyalayın ve ardından tıklayın **etkinleştirme**.
-    > [!div class="mx-imgBorder"]
-    > ![Windows Geliştirici teklifi kutucuğu](_img\vs-windows-dev\vs-windows-dev-tile.png)
+   > [!div class="mx-imgBorder"]
+   > ![Windows Geliştirici teklifi kutucuğu](_img/vs-windows-dev/vs-windows-dev-tile.png)
 
-2. Üzerinde [ https://developer.microsoft.com ](https://developer.microsoft.com) site kayıt işlemine başlayabilirsiniz.  Tıklayın **kaydolun** devam etmek için.
-    > [!div class="mx-imgBorder"]
-    > ![Windows Geliştirici teklifi kayıt](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
+3. Üzerinde [ https://developer.microsoft.com ](https://developer.microsoft.com) site kayıt işlemine başlayabilirsiniz.  Tıklayın **kaydolun** devam etmek için.
+   > [!div class="mx-imgBorder"]
+   > ![Windows Geliştirici teklifi kayıt](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png)
 
-3. Aboneliğinizde oturum açın.  Birden çok hesabı varsa, Kurumsal aboneliğinizle ilişkili bir'ı seçin.
-4. Sonraki sayfada, yaşadığınız yerde veya işinizin bulunduğu ülke veya bölgeyi seçin ve ardından **sonraki**.
-5. Seçin **bireysel** hesap türünüz olarak.
-6. Yayımcı görünen adınızı oluşturun.  Bu uygulamaları, eklentileri ve Hizmetleri ile ilişkili müşterilerinizin görürsünüz benzersiz adı olacaktır.
-7. Tercih edilen e-posta dili ve ilgili kişi bilgilerini sağlayın, sonra tıklayın **sonraki**.
-8. Parolanızı doğrulamanız istenebilir.  Girip __iade **oturum**.
-9. Kayıt – ödeme sayfasında, promosyon kodu alanına daha önce kopyaladığınız kodu yapıştırın.  Sayfa, göstermek için güncelleştirilir *hiçbir ödenmelidir*.  **İleri**'ye tıklayın.
+4. Aboneliğinizde oturum açın.  Birden çok hesabı varsa, Kurumsal aboneliğinizle ilişkili bir'ı seçin.
+5. Sonraki sayfada, yaşadığınız yerde veya işinizin bulunduğu ülke veya bölgeyi seçin ve ardından **sonraki**.
+6. Seçin **bireysel** hesap türünüz olarak.
+7. Yayımcı görünen adınızı oluşturun.  Bu uygulamaları, eklentileri ve Hizmetleri ile ilişkili müşterilerinizin görürsünüz benzersiz adı olacaktır.
+8. Tercih edilen e-posta dili ve ilgili kişi bilgilerini sağlayın, sonra tıklayın **sonraki**.
+9. Parolanızı doğrulamanız istenebilir.  Girip __iade **oturum**.
+10. Kayıt – ödeme sayfasında, promosyon kodu alanına daha önce kopyaladığınız kodu yapıştırın.  Sayfa, göstermek için güncelleştirilir *hiçbir ödenmelidir*.  **İleri**'ye tıklayın.
     > [!div class="mx-imgBorder"]
-    > ![Windows Geliştirici teklifi kayıt](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
+    > ![Windows Geliştirici teklifi kayıt](_img/vs-windows-dev/vs-windows-dev-promo-cropped.png)
 
-10. Hesap bilgilerinizi gözden geçirin, uygulama geliştiricisi sözleşmesini gözden geçirin ve hüküm ve koşulları kabulünüz belirten onay kutusuna tıklayın.  Ardından **son**.
-11. Tıklayın **panoya Git** Windows Geliştirici hesabınızı kullanmaya başlamak için!
+11. Hesap bilgilerinizi gözden geçirin, uygulama geliştiricisi sözleşmesini gözden geçirin ve hüküm ve koşulları kabulünüz belirten onay kutusuna tıklayın.  Ardından **son**.
+12. Tıklayın **panoya Git** Windows Geliştirici hesabınızı kullanmaya başlamak için!
 
 ## <a name="eligibility"></a>Uygunluk
+
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standart, yıllık bulut)   | VL, Azure, perakende, seçili NFR<sup>1</sup> | Dahil edilen       |  Evet|

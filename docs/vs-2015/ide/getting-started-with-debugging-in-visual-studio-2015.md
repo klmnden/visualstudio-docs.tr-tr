@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 293df108dd0fc8671c1d11a2b336af32369aa9f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fe051a37c610fcfd3c99f2ab762982065c5caf56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281456"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824444"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Visual Studio 2015'te Hata Ayıklamaya Başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,15 +153,15 @@ Visual Studio 2015 proje derleme ve hata ayıklama araçları, güçlü tümleş
   
  Kesme noktaları için yaygın kullanımları şunlardır:  
   
-1.  Bir kilitlenme veya kapanma kaynağını daraltmak için bunları boyunca ve hataya neden olduğunu düşündüğünüz yöntem çağrısının kod etrafında dağılım. Kodunuz içinde adım adım olarak, kaldırmak ve kod geçemediğinde bulana kadar yakın kesme noktaları birlikte sıfırlayın.  
+1. Bir kilitlenme veya kapanma kaynağını daraltmak için bunları boyunca ve hataya neden olduğunu düşündüğünüz yöntem çağrısının kod etrafında dağılım. Kodunuz içinde adım adım olarak, kaldırmak ve kod geçemediğinde bulana kadar yakın kesme noktaları birlikte sıfırlayın.  
   
-2.  Yeni kod yapılırsa ve beklendiği gibi davrandığından emin olmak için kodu adımlayın başında bir kesme noktası ayarlayın.  
+2. Yeni kod yapılırsa ve beklendiği gibi davrandığından emin olmak için kodu adımlayın başında bir kesme noktası ayarlayın.  
   
-3.  Karmaşık bir davranış uygulanırsa, program böldüğünde veri ve değişken değerlerini inceleyebilirsiniz. Bu nedenle algoritmik kodu için kesme noktaları ayarlayın.  
+3. Karmaşık bir davranış uygulanırsa, program böldüğünde veri ve değişken değerlerini inceleyebilirsiniz. Bu nedenle algoritmik kodu için kesme noktaları ayarlayın.  
   
-4.  Bunu C veya C++ koduna kodunu durdurmak için kullanım kesme noktaları yazıyorsanız, bellekle ilgili hataları için hata ayıklama sırasında adres değerlerini (NULL arayın) ve başvuru sayısı inceleyebilirsiniz.  
+4. Bunu C veya C++ koduna kodunu durdurmak için kullanım kesme noktaları yazıyorsanız, bellekle ilgili hataları için hata ayıklama sırasında adres değerlerini (NULL arayın) ve başvuru sayısı inceleyebilirsiniz.  
   
- Kesme noktaları kullanma hakkında daha fazla bilgi için okuma [kesme noktaları kullanma](../debugger/using-breakpoints.md)  
+   Kesme noktaları kullanma hakkında daha fazla bilgi için okuma [kesme noktaları kullanma](../debugger/using-breakpoints.md)  
   
 ### <a name="setting-conditional-breakpoints"></a>Koşullu kesme noktaları ayarlama  
  Bir döngüde veya özyinelemede içinde bir kesme noktası varsa veya çok sık adım adım kesme noktaları varsa, koşullu kesme noktası yalnızca belirli koşullar karşılandığında kodunuzu askıya alındığından emin olmak için kullanın. Aksi takdirde, F11 awful bir çok tuşuna basarak.  

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e55a214d2b35e26dcc1a3b381f74a7ccd021c864
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3608399613063a0fa572fe4de12b77187f8b4b41
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811509"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Nasıl yapılır: ListObject denetimlerinin boyutunu değiştirme
   Boyutunu ayarlamak bir <xref:Microsoft.Office.Tools.Excel.ListObject> Microsoft Office Excel çalışma kitabına eklediğinizde denetimi; ancak daha sonraki bir zamanda yeniden boyutlandırmak isteyebilirsiniz. Örneğin, iki sütunlu bir liste için üç sütun değiştirmek isteyebilirsiniz.  
@@ -32,15 +32,15 @@ ms.locfileid: "35677187"
   
  Bu konuda, aşağıdaki görevleri açıklanmaktadır:  
   
--   [Tasarım zamanında ListObject denetimlerinin boyutunu değiştirme](#designtime)  
+- [Tasarım zamanında ListObject denetimlerinin boyutunu değiştirme](#designtime)  
   
--   [Çalışma zamanında bir belge düzeyi projede ListObject denetimlerinin boyutunu değiştirme](#runtimedoclevel)  
+- [Çalışma zamanında bir belge düzeyi projede ListObject denetimlerinin boyutunu değiştirme](#runtimedoclevel)  
   
--   [Çalışma zamanında VSTO eklenti projesinde ListObject denetimlerinin boyutunu değiştirme](#runtimeaddin)  
+- [Çalışma zamanında VSTO eklenti projesinde ListObject denetimlerinin boyutunu değiştirme](#runtimeaddin)  
   
- Hakkında daha fazla bilgi için <xref:Microsoft.Office.Tools.Excel.ListObject> denetimlerini, [ListObject denetimine](../vsto/listobject-control.md).  
+  Hakkında daha fazla bilgi için <xref:Microsoft.Office.Tools.Excel.ListObject> denetimlerini, [ListObject denetimine](../vsto/listobject-control.md).  
   
- ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [ı: ekleme sütunları zamanında verilere bağlı bir liste nesnesi için bunu nasıl?](http://go.microsoft.com/fwlink/?LinkID=130318).  
+  ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [ı: ekleme sütunları zamanında verilere bağlı bir liste nesnesi için bunu nasıl?](http://go.microsoft.com/fwlink/?LinkID=130318).  
   
 ##  <a name="designtime"></a> ListObject denetimi tasarım zamanında yeniden boyutlandırma  
  Listeyi yeniden boyutlandırmak için tıklayın ve boyutlandırma tutamaçlarından birinin sürükleyin veya boyutunda tanımlayabilirsiniz **listeyi yeniden boyutlandır** iletişim kutusu.  

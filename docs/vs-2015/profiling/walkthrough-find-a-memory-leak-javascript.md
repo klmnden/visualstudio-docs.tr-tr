@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7feaa8629078be9e5e7a915fe3c09a9599a8f292
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 17bb1aaaae10c5c23968634ae06773909c27ffcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234201"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929575"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>İzlenecek yol: Bellek sızıntısını bulma (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,44 +139,44 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
 ### <a name="analyzing-the-memory-usage"></a>Bellek kullanımını analiz etme  
   
-1.  Üzerinde **hata ayıklama** araç, **hata ayıklamayı Başlat** listesinde, güncelleştirilmiş proje için hata ayıklama hedefi seçin: Windows Phone Öykünücüleri birini veya **simülatör**.  
+1. Üzerinde **hata ayıklama** araç, **hata ayıklamayı Başlat** listesinde, güncelleştirilmiş proje için hata ayıklama hedefi seçin: Windows Phone Öykünücüleri birini veya **simülatör**.  
   
-    > [!TIP]
-    >  Bir Windows Store uygulaması için de seçebilirsiniz **yerel makine** veya **uzak makine** bu listede. Ancak, bir öykünücü veya benzetici kullanmanın avantajı yanındaki Visual Studio yerleştirin ve çalıştırılan uygulama ve JavaScript bellek Çözümleyicisi arasında kolayca geçiş ' dir. Daha fazla bilgi için bkz. [Visual Studio'dan uygulamaları çalıştırma](../debugger/run-store-apps-from-visual-studio.md) ve [uzak bir makinede çalıştırma Windows Store apps](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+   > [!TIP]
+   >  Bir Windows Store uygulaması için de seçebilirsiniz **yerel makine** veya **uzak makine** bu listede. Ancak, bir öykünücü veya benzetici kullanmanın avantajı yanındaki Visual Studio yerleştirin ve çalıştırılan uygulama ve JavaScript bellek Çözümleyicisi arasında kolayca geçiş ' dir. Daha fazla bilgi için bkz. [Visual Studio'dan uygulamaları çalıştırma](../debugger/run-store-apps-from-visual-studio.md) ve [uzak bir makinede çalıştırma Windows Store apps](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
-2.  Üzerinde **hata ayıklama** menüsünde seçin **performans Profiler...** .  
+2. Üzerinde **hata ayıklama** menüsünde seçin **performans Profiler...** .  
   
-3.  İçinde **kullanılabilir Araçları**, seçin **JavaScript belleği**ve ardından **Başlat**.  
+3. İçinde **kullanılabilir Araçları**, seçin **JavaScript belleği**ve ardından **Başlat**.  
   
-     Bu öğreticide, bellek Çözümleyicisi başlangıç projesine iliştirmekte. Bellek Çözümleyicisi yüklü bir uygulama ekleme gibi diğer seçenekleri hakkında daha fazla bilgi için bkz. [JavaScript belleği](../profiling/javascript-memory.md).  
+    Bu öğreticide, bellek Çözümleyicisi başlangıç projesine iliştirmekte. Bellek Çözümleyicisi yüklü bir uygulama ekleme gibi diğer seçenekleri hakkında daha fazla bilgi için bkz. [JavaScript belleği](../profiling/javascript-memory.md).  
   
-     Bellek Çözümleyicisi'ni başlattığınızda, Vsetwcollector.exe'yi çalıştırmak için izninizi isteyen bir kullanıcı hesabı denetimi görebilirsiniz. Seçin **Evet**.  
+    Bellek Çözümleyicisi'ni başlattığınızda, Vsetwcollector.exe'yi çalıştırmak için izninizi isteyen bir kullanıcı hesabı denetimi görebilirsiniz. Seçin **Evet**.  
   
-4.  Seçin **bellek sızıntısı** düğmesini dört kez art arda.  
+4. Seçin **bellek sızıntısı** düğmesini dört kez art arda.  
   
-     Düğme, olay işleme kodunu bir bellek sızıntısı neden olabilecek default.js yoksa iş seçtiğinizde. Bu tanılama amacıyla kullanacaksınız.  
+    Düğme, olay işleme kodunu bir bellek sızıntısı neden olabilecek default.js yoksa iş seçtiğinizde. Bu tanılama amacıyla kullanacaksınız.  
   
-    > [!TIP]
-    >  Bir bellek sızıntısı için test etmek istediğiniz senaryoyu yinelenen öbek için uygulama başlatma sırasında veya bir sayfa yüklenirken eklenen nesneleri gibi sizi ilgilendirmeyen bilgilerini filtrelemek kolaylaştırır.  
+   > [!TIP]
+   >  Bir bellek sızıntısı için test etmek istediğiniz senaryoyu yinelenen öbek için uygulama başlatma sırasında veya bir sayfa yüklenirken eklenen nesneleri gibi sizi ilgilendirmeyen bilgilerini filtrelemek kolaylaştırır.  
   
-5.  Çalışan uygulamayı, Visual Studio (Alt + Sekme) geçin.  
+5. Çalışan uygulamayı, Visual Studio (Alt + Sekme) geçin.  
   
-     JavaScript bellek Çözümleyicisi, Visual Studio'da yeni bir sekmede bilgileri görüntüler.  
+    JavaScript bellek Çözümleyicisi, Visual Studio'da yeni bir sekmede bilgileri görüntüler.  
   
-     Bu Özet görünümü gösterir işlem bellek kullanımı zamanla bellek grafiği. Görünüm, ayrıca gibi komutlar sağlar **yığın. anlık görüntü Al**. Anlık görüntü, belirli bir zamandaki bellek kullanımı hakkında ayrıntılı bilgiler sağlar. Daha fazla bilgi için bkz. [JavaScript belleği](../profiling/javascript-memory.md).  
+    Bu Özet görünümü gösterir işlem bellek kullanımı zamanla bellek grafiği. Görünüm, ayrıca gibi komutlar sağlar **yığın. anlık görüntü Al**. Anlık görüntü, belirli bir zamandaki bellek kullanımı hakkında ayrıntılı bilgiler sağlar. Daha fazla bilgi için bkz. [JavaScript belleği](../profiling/javascript-memory.md).  
   
-6.  Seçin **yığın. anlık görüntü Al**.  
+6. Seçin **yığın. anlık görüntü Al**.  
   
-7.  Uygulamasına geçin ve seçin **bellek sızıntısı**.  
+7. Uygulamasına geçin ve seçin **bellek sızıntısı**.  
   
-8.  Seçin ve Visual Studio'ya **yığın. anlık görüntü Al** yeniden.  
+8. Seçin ve Visual Studio'ya **yığın. anlık görüntü Al** yeniden.  
   
-     Bu örnekte temel anlık görüntü (#1) ve anlık görüntü #2 gösterilmiştir.  
+    Bu örnekte temel anlık görüntü (#1) ve anlık görüntü #2 gösterilmiştir.  
   
-     ![Temel anlık görüntü ve anlık görüntü 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
+    ![Temel anlık görüntü ve anlık görüntü 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
   
-    > [!NOTE]
-    >  Windows Phone öykünücüsü, anlık görüntünün alındığı zaman uygulama görüntüsü göstermez.  
+   > [!NOTE]
+   >  Windows Phone öykünücüsü, anlık görüntünün alındığı zaman uygulama görüntüsü göstermez.  
   
 9. Uygulamasına geçin ve seçin **bellek sızıntısı** düğmesini tekrar.  
   
@@ -193,18 +193,18 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
 12. Visual Studio'da anlık görüntüleri karşılaştırın. Anlık görüntü #2 aşağıda gösterilmiştir:  
   
-    -   (Kırmızı yukarı ok sol tarafından gösterilen) yığın boyutu birkaç KB anlık görüntü # 1'e kıyasla arttı.  
+    - (Kırmızı yukarı ok sol tarafından gösterilen) yığın boyutu birkaç KB anlık görüntü # 1'e kıyasla arttı.  
   
-        > [!IMPORTANT]
-        >  Tam bellek kullanım değerlerini yığın boyutu için hata ayıklama hedefi üzerinde bağlıdır.  
+      > [!IMPORTANT]
+      >  Tam bellek kullanım değerlerini yığın boyutu için hata ayıklama hedefi üzerinde bağlıdır.  
   
-    -   (Yukarı ok sağda kırmızı tarafından gösterilen) yığındaki nesnelerin sayısı, anlık görüntü #1 kıyasla arttı. Bir nesne (+ 1) eklendi ve hiçbir nesne kaldırıldı (-0).  
+    - (Yukarı ok sağda kırmızı tarafından gösterilen) yığındaki nesnelerin sayısı, anlık görüntü #1 kıyasla arttı. Bir nesne (+ 1) eklendi ve hiçbir nesne kaldırıldı (-0).  
   
-     Anlık görüntü #3 aşağıda gösterilmiştir:  
+      Anlık görüntü #3 aşağıda gösterilmiştir:  
   
-    -   Yığın boyutu, anlık görüntü # 2'ye kıyasla birkaç yüz bayt olarak yeniden arttı.  
+    - Yığın boyutu, anlık görüntü # 2'ye kıyasla birkaç yüz bayt olarak yeniden arttı.  
   
-    -   Yığındaki nesnelerin sayısı, tekrar anlık görüntü # 2'ye kıyasla arttı. Bir nesne (+ 1) eklendi ve hiçbir nesne kaldırıldı (-0).  
+    - Yığındaki nesnelerin sayısı, tekrar anlık görüntü # 2'ye kıyasla arttı. Bir nesne (+ 1) eklendi ve hiçbir nesne kaldırıldı (-0).  
   
 13. Anlık görüntü # 3'te, bağlantı metnini sağdaki + 1 değerini gösteren seçin / - 0 yanında kırmızı yukarı ok.  
   
@@ -220,76 +220,76 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
      Bu görünüm aşağıdaki gibi bir bellek sızıntısı hakkında yararlı bilgiler gösterir:  
   
-    -   Bu görünüm Kimliğine sahip bir DIV öğesine gösterir `item`, ve nesnesinin tutulan boyut birkaç yüz bayt (tam değeri değişir).  
+    - Bu görünüm Kimliğine sahip bir DIV öğesine gösterir `item`, ve nesnesinin tutulan boyut birkaç yüz bayt (tam değeri değişir).  
   
-    -   Bu nesne anlık görüntü # 2 arta kalan bir nesne ve olası bellek sızıntısı temsil eder.  
+    - Bu nesne anlık görüntü # 2 arta kalan bir nesne ve olası bellek sızıntısı temsil eder.  
   
-     Uygulamayı biraz bilgi bu noktada yardımcı olur: seçme **bellek sızıntısı** düğmesi bir DIV öğesine kaldırmak ve kod sağ çalışıyor gibi görünüyor bir öğe ekleyin (diğer bir deyişle, bellek sızıntıları). Sonraki bölümde bunu düzeltelim açıklanmaktadır.  
+      Uygulamayı biraz bilgi bu noktada yardımcı olur: seçme **bellek sızıntısı** düğmesi bir DIV öğesine kaldırmak ve kod sağ çalışıyor gibi görünüyor bir öğe ekleyin (diğer bir deyişle, bellek sızıntıları). Sonraki bölümde bunu düzeltelim açıklanmaktadır.  
   
     > [!TIP]
     >  Bazı durumlarda, bir nesne olarak bulma `Global` nesne, nesneyi tanımlamak yardımcı olabilir. Bunu yapmak için tanımlayıcısı için kısayol menüsünü açın ve ardından **kök görünümünde göster**.  
   
 ##  <a name="FixingMemory"></a> Bellek sorunu düzeltme  
   
-1.  Profil Oluşturucu tarafından ortaya verileri kullanarak "Item" Kimliğine sahip DOM öğeleri kaldırmak için sorumlu kodu inceleyin. İçinde oluşan `initialize()` işlevi.  
+1. Profil Oluşturucu tarafından ortaya verileri kullanarak "Item" Kimliğine sahip DOM öğeleri kaldırmak için sorumlu kodu inceleyin. İçinde oluşan `initialize()` işlevi.  
   
-    ```javascript  
-    function initialize() {  
+   ```javascript  
+   function initialize() {  
   
-        if (wrapper != null) {  
-            elem.removeNode(true);  
-        }  
-    }  
-    ```  
+       if (wrapper != null) {  
+           elem.removeNode(true);  
+       }  
+   }  
+   ```  
   
-     `elem.removeNode(true)` belki de düzgün çalışmıyor. Kod DOM öğesi nasıl önbelleğe alma inceleyin ve bir sorun bulunamadı; önbelleğe alınan öğeye başvuru güncelleştirilmiyor.  
+    `elem.removeNode(true)` belki de düzgün çalışmıyor. Kod DOM öğesi nasıl önbelleğe alma inceleyin ve bir sorun bulunamadı; önbelleğe alınan öğeye başvuru güncelleştirilmiyor.  
   
-2.  İçinde default.js, yük işlevi çağırmadan önce yalnızca aşağıdaki kod satırını ekleyin `appendChild`:  
+2. İçinde default.js, yük işlevi çağırmadan önce yalnızca aşağıdaki kod satırını ekleyin `appendChild`:  
   
-    ```javascript  
-    elem = newDiv;  
-    ```  
+   ```javascript  
+   elem = newDiv;  
+   ```  
   
-     Öğe seçtiğinizde doğru kaldırılır, böylece bu kod önbelleğe alınan öğeye başvuru güncelleştirmeleri **bellek sızıntısı** düğmesi. Tüm kod yükleme işlevi için artık şöyle görünür:  
+    Öğe seçtiğinizde doğru kaldırılır, böylece bu kod önbelleğe alınan öğeye başvuru güncelleştirmeleri **bellek sızıntısı** düğmesi. Tüm kod yükleme işlevi için artık şöyle görünür:  
   
-    ```javascript  
-    function load() {  
+   ```javascript  
+   function load() {  
   
-        wrapper = document.querySelector(".wrapper");  
+       wrapper = document.querySelector(".wrapper");  
   
-        var newDiv = document.createElement("div");  
+       var newDiv = document.createElement("div");  
   
-        newDiv.style.zIndex = "-1";  
-        newDiv.id = "item";  
-        elem = newDiv;  
+       newDiv.style.zIndex = "-1";  
+       newDiv.id = "item";  
+       elem = newDiv;  
   
-        wrapper.appendChild(newDiv);  
-    }  
-    ```  
+       wrapper.appendChild(newDiv);  
+   }  
+   ```  
   
-3.  Üzerinde **hata ayıklama** menüsünde seçin **performans ve tanılama**.  
+3. Üzerinde **hata ayıklama** menüsünde seçin **performans ve tanılama**.  
   
-4.  İçinde **kullanılabilir Araçları**, seçin **JavaScript belleği**ve ardından **Başlat**.  
+4. İçinde **kullanılabilir Araçları**, seçin **JavaScript belleği**ve ardından **Başlat**.  
   
-5.  Üç anlık görüntülerini almak için önce yordamın aynısını izleyin. Adımlar burada özetlenmektedir:  
+5. Üç anlık görüntülerini almak için önce yordamın aynısını izleyin. Adımlar burada özetlenmektedir:  
   
-    1.  Uygulamada, seçin **bellek sızıntısı** düğmesini dört kez art arda.  
+   1. Uygulamada, seçin **bellek sızıntısı** düğmesini dört kez art arda.  
   
-    2.  Seçin ve Visual Studio'ya **yığın. anlık görüntü Al** temel anlık görüntü için.  
+   2. Seçin ve Visual Studio'ya **yığın. anlık görüntü Al** temel anlık görüntü için.  
   
-    3.  Uygulamada, seçin **bellek sızıntısı** düğmesi.  
+   3. Uygulamada, seçin **bellek sızıntısı** düğmesi.  
   
-    4.  Seçin ve Visual Studio'ya **yığın. anlık görüntü Al** ikinci bir anlık görüntü.  
+   4. Seçin ve Visual Studio'ya **yığın. anlık görüntü Al** ikinci bir anlık görüntü.  
   
-    5.  Uygulamada, seçin **bellek sızıntısı** düğmesi.  
+   5. Uygulamada, seçin **bellek sızıntısı** düğmesi.  
   
-    6.  Seçin ve Visual Studio'ya **yığın. anlık görüntü Al** üçüncü anlık görüntü.  
+   6. Seçin ve Visual Studio'ya **yığın. anlık görüntü Al** üçüncü anlık görüntü.  
   
-     Anlık görüntü #3 yığın boyutu olarak gösterdiğini **artış yok** anlık görüntü #2 ve nesne sayısı + 1 / -1, nesneleri bir gösteren eklenmiş olan ve bir nesne kaldırıldı. İstenen davranışı budur.  
+      Anlık görüntü #3 yığın boyutu olarak gösterdiğini **artış yok** anlık görüntü #2 ve nesne sayısı + 1 / -1, nesneleri bir gösteren eklenmiş olan ve bir nesne kaldırıldı. İstenen davranışı budur.  
   
-     Anlık görüntü #2 ve anlık görüntü #3 aşağıda gösterilmiştir.  
+      Anlık görüntü #2 ve anlık görüntü #3 aşağıda gösterilmiştir.  
   
-     ![Anlık görüntüleri gösteren sabit bir bellek sızıntısı](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
+      ![Anlık görüntüleri gösteren sabit bir bellek sızıntısı](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [JavaScript Belleği](../profiling/javascript-memory.md)

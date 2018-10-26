@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1b886346a43e75d38a8ea8b6ed7a8b8d7391293
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9085861418f11ed63f76a6493a6927c63530759b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152467"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918798"
 ---
 # <a name="target-element-msbuild"></a>Hedef öğe (MSBuild)
 İçin görevler kümesini içeren [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ardışık olarak yürütmek için.  
@@ -73,18 +73,18 @@ ms.locfileid: "39152467"
 
 ### <a name="child-elements"></a>Alt öğeleri  
 
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|[Görev](../msbuild/task-element-msbuild.md)|Oluşturur ve yürütür örneği bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] görev. Bir hedef olarak sıfır veya daha fazla görev olabilir.|  
-|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Kullanıcı tanımlı bir dizi içeren `Property` öğeleri. .NET Framework 3.5 başlayan bir `Target` öğesi içerebilir `PropertyGroup` öğeleri.|  
-|[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Kullanıcı tanımlı bir dizi içeren `Item` öğeleri. .NET Framework 3.5 başlayan bir `Target` öğesi içerebilir `ItemGroup` öğeleri. Daha fazla bilgi için [öğeleri](../msbuild/msbuild-items.md).|  
-|[OnError](../msbuild/onerror-element-msbuild.md)|Neden olursa yürütülmek üzere bir veya daha fazla hedef `ContinueOnError` özniteliktir ErrorAndStop (veya `false`) için başarısız bir görev. Sıfır veya daha fazla olabilir `OnError` hedef öğelerinde. Varsa `OnError` öğeler, bunlar içerisinde son öğe olmalıdır `Target` öğesi.<br /><br /> Hakkında bilgi için `ContinueOnError` özniteliği için bkz: [görev öğesi (MSBuild)](../msbuild/task-element-msbuild.md).|  
+| Öğe | Açıklama |
+| - | - |
+| [Görev](../msbuild/task-element-msbuild.md) | Oluşturur ve yürütür örneği bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] görev. Bir hedef olarak sıfır veya daha fazla görev olabilir. |
+| [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | Kullanıcı tanımlı bir dizi içeren `Property` öğeleri. .NET Framework 3.5 başlayan bir `Target` öğesi içerebilir `PropertyGroup` öğeleri. |
+| [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | Kullanıcı tanımlı bir dizi içeren `Item` öğeleri. .NET Framework 3.5 başlayan bir `Target` öğesi içerebilir `ItemGroup` öğeleri. Daha fazla bilgi için [öğeleri](../msbuild/msbuild-items.md). |
+| [OnError](../msbuild/onerror-element-msbuild.md) | Neden olursa yürütülmek üzere bir veya daha fazla hedef `ContinueOnError` özniteliktir ErrorAndStop (veya `false`) için başarısız bir görev. Sıfır veya daha fazla olabilir `OnError` hedef öğelerinde. Varsa `OnError` öğeler, bunlar içerisinde son öğe olmalıdır `Target` öğesi.<br /><br /> Hakkında bilgi için `ContinueOnError` özniteliği için bkz: [görev öğesi (MSBuild)](../msbuild/task-element-msbuild.md). |
 
 ### <a name="parent-elements"></a>Üst öğeler  
 
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası.|  
+| Öğe | Açıklama |
+| - | - |
+| [Project](../msbuild/project-element-msbuild.md) | Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası. |
 
 ## <a name="remarks"></a>Açıklamalar  
  İlk hedef yürütmek için çalışma zamanında belirtilir. Hedefleri diğer hedefler üzerinde bağımlılıkları olabilir. Örneğin, dağıtım için hedef derleme hedefi bağlıdır. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Altyapısı bağımlılıkları göründükleri içinde sırayla yürütür `DependsOnTargets` soldan sağa doğru öznitelik. Daha fazla bilgi için [hedefleri](../msbuild/msbuild-targets.md).  

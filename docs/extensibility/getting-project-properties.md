@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58967c87b86eff8ab00e343ee872637e18ee57ed
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1d254ebc5d1dad42527ec2ef3b6acee242976207
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497761"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876444"
 ---
 # <a name="get-project-properties"></a>Proje özelliklerini alma
 Bu izlenecek yol gösteren bir araç penceresinde proje özellikleri görüntüler.  
@@ -29,11 +29,11 @@ Bu izlenecek yol gösteren bir araç penceresinde proje özellikleri görüntül
   
 ### <a name="to-create-a-vsix-project-and-add-a-tool-window"></a>VSIX projesi oluşturun ve bir araç penceresi eklemek için  
   
-1.  Her Visual Studio uzantısı, uzantı varlıkları içeren bir VSIX dağıtım projesi ile başlar. Oluşturma bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] adlı VSIX projesi `ProjectPropertiesExtension`. VSIX proje şablonunda bulabilirsiniz **yeni proje** iletişim altında **Visual C#** > **genişletilebilirlik**.  
+1. Her Visual Studio uzantısı, uzantı varlıkları içeren bir VSIX dağıtım projesi ile başlar. Oluşturma bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] adlı VSIX projesi `ProjectPropertiesExtension`. VSIX proje şablonunda bulabilirsiniz **yeni proje** iletişim altında **Visual C#** > **genişletilebilirlik**.  
   
-2.  Adlı bir özel araç penceresi öğe şablonu ekleyerek bir araç penceresi `ProjectPropertiesToolWindow`. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle** > **yeni öğe**. İçinde **Yeni Öğe Ekle iletişim**Git **Visual C# öğeleri** > **genişletilebilirlik** seçip **özel araç penceresi**. İçinde **adı** iletişim kutusunun altındaki alan, için dosya adını değiştirerek `ProjectPropertiesToolWindow.cs`. Özel araç penceresi oluşturma hakkında daha fazla bilgi için bkz. [araç penceresi içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md).  
+2. Adlı bir özel araç penceresi öğe şablonu ekleyerek bir araç penceresi `ProjectPropertiesToolWindow`. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle** > **yeni öğe**. İçinde **Yeni Öğe Ekle iletişim**Git **Visual C# öğeleri** > **genişletilebilirlik** seçip **özel araç penceresi**. İçinde **adı** iletişim kutusunun altındaki alan, için dosya adını değiştirerek `ProjectPropertiesToolWindow.cs`. Özel araç penceresi oluşturma hakkında daha fazla bilgi için bkz. [araç penceresi içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-3.  Çözümü derleyin ve hata olmadan derlediğinden emin olun.  
+3. Çözümü derleyin ve hata olmadan derlediğinden emin olun.  
   
 ### <a name="to-display-project-properties-in-a-tool-window"></a>Araç penceresine proje özelliklerini görüntülemek için  
   

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9bed7d523d91b43abe5455ea19567da5647f468c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: bba978da26a2aa7b7263fa5d2e88fa8acdc272f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774671"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886009"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Office çözümü dağıtımında sorunlarını giderme
   Bu konuda, Office çözümleri dağıtırken karşılaşabileceğiniz genel sorunları nasıl çözeceğinizi hakkında bilgi içerir.  
@@ -35,11 +35,11 @@ ms.locfileid: "43774671"
 ## <a name="change-the-assembly-name-causes-conflicts"></a>Değişiklik derleme adı çakışmalarına neden olur.  
  Değiştirirseniz **derleme adı** değerini **uygulama** sayfasının **Proje Tasarımcısı** zaten bir çözüm dağıttıktan sonra yayımlama araçları değiştirir İçin bir Kurulum paketini *Setup.exe* dosya ve iki dağıtım bildirimleri. İki bildirim dosyalarını dağıtırsanız, aşağıdaki durumlardan ortaya çıkabilir:  
   
--   Son kullanıcı her iki sürümü yüklerse, uygulama her iki VSTO eklentileri yükler.  
+- Son kullanıcı her iki sürümü yüklerse, uygulama her iki VSTO eklentileri yükler.  
   
--   VSTO eklenti bütünleştirilmiş kod adı değiştirilmeden önce yüklenmişse, son kullanıcı asla güncelleştirmeleri alırsınız.  
+- VSTO eklenti bütünleştirilmiş kod adı değiştirilmeden önce yüklenmişse, son kullanıcı asla güncelleştirmeleri alırsınız.  
   
- Bu koşullar önlemek için çözümün değişmez **derleme adı** çözümü dağıttıktan sonra değeri.  
+  Bu koşullar önlemek için çözümün değişmez **derleme adı** çözümü dağıttıktan sonra değeri.  
   
 ## <a name="check-for-updates-takes-a-long-time"></a>Güncelleştirmeleri alan uzun olup olmadığını denetleyin  
  Visual Studio 2010 Tools for Office runtime Yöneticiler için bildirimler ve çözümü indirme zaman aşımı değerini ayarlamak için kullanabileceğiniz bir kayıt defteri girişi sağlar.  
@@ -63,7 +63,7 @@ ms.locfileid: "43774671"
  .NET Framework, eklediğiniz [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]ve Office birincil birlikte çalışma derlemelerini kurulum paketi Office çözümünüzü ile dağıtılan bir önkoşul olarak. Birincil birlikte çalışma derlemelerini yükleme hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/configuring-a-computer-to-develop-office-solutions.md) ve [nasıl yapılır: yükleme Office birincil birlikte çalışma derlemelerini](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
 ## <a name="publish-using-localhost-can-cause-installation-problems"></a>Kullanarak Yayımla 'Localhost' yükleme sorunlara neden olabilir  
- Kullandığınızda, "http://localhost" için belge düzeyi çözümleri yayımlama ya da yükleme konumu olarak **Yayımlama Sihirbazı** dize gerçek bilgisayar adını dönüştürmez. Bu durumda, çözüm geliştirme bilgisayarına yüklenmesi gerekir. Geliştirme bilgisayarınızda IIS kullanan dağıtılmış çözümlere yapmak için localhost yerine tüm HTTP/HTTPS/FTP konumlar için tam ad kullanın.  
+ Kullandığınızda, "<http://localhost>" için belge düzeyi çözümleri yayımlama ya da yükleme konumu olarak **Yayımlama Sihirbazı** dize gerçek bilgisayar adını dönüştürmez. Bu durumda, çözüm geliştirme bilgisayarına yüklenmesi gerekir. Geliştirme bilgisayarınızda IIS kullanan dağıtılmış çözümlere yapmak için localhost yerine tüm HTTP/HTTPS/FTP konumlar için tam ad kullanın.  
   
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>Önbelleğe alınmış derlemeler yerine güncelleştirilmiş derlemeleri yüklenir  
  Fusion, .NET Framework derleme yükleyicisi, proje çıktı yolu bir ağ dosya paylaşımında olduğunda, derleme, tanımlayıcı ad ile imzalanması ve özelleştirmenin derleme sürümünü değiştirmez derlemeleri önbelleğe alınmış kopyasını yükler. Bu koşullara uyan bir derlemeyi güncelleştirirseniz, güncelleştirme, önbelleğe alınmış kopyayı yüklendiği için projeyi çalıştırın sonraki sefer görünmez.  
@@ -72,13 +72,13 @@ ms.locfileid: "43774671"
   
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>Önbelleğe alınan kopyaları yükleme yerine derlemeleri yüklemek için  
   
-1.  Menü çubuğunda, **proje**, _ProjectName_**özellikleri**.  
+1. Menü çubuğunda, **proje**, _ProjectName_**özellikleri**.  
   
-2.  Üzerinde **uygulama** sayfasında **derleme bilgileri**.  
+2. Üzerinde **uygulama** sayfasında **derleme bilgileri**.  
   
-3.  İlk **derleme sürümü** kutusunda, bir yıldız işareti girin (\*) ve ardından **Tamam** düğmesi.  
+3. İlk **derleme sürümü** kutusunda, bir yıldız işareti girin (\*) ve ardından **Tamam** düğmesi.  
   
- Derleme sürümü değiştirdikten sonra derlemeyi bir katı adla imzalamak devam edebilirsiniz ve Fusion özelleştirme en son sürümünü yükler.  
+   Derleme sürümü değiştirdikten sonra derlemeyi bir katı adla imzalamak devam edebilirsiniz ve Fusion özelleştirme en son sürümünü yükler.  
   
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>URI US-ASCII olmayan karakterler içeriyorsa yüklemesi başarısız olur.  
  Yolu, HTTP/HTTPS/FTP konumu için bir Office çözümü yayımladığınızda, US-ASCII olmayan Unicode karakterlerini sahip olamaz. Bu tür karakterler, Kurulum programına tutarsız davranışa neden olabilir. US-ASCII karakterlerini, yükleme yolu için kullanın.  
@@ -91,15 +91,15 @@ ms.locfileid: "43774671"
 ## <a name="uncaught-exception-or-method-not-found-error-when-you-install-a-solution"></a>Bir çözüm yüklediğinizde Yakalanmayan Özel durum veya yöntem bulunamadı hatası  
  Dağıtım bildirimini açarak Office çözümleri yüklerken (bir *.vsto* dosyası), aşağıdaki koşulların Office uygulama, belge veya çalışma kitabı, hata iletileri görünebilir:  
   
--   Metoda nebyla nalezena.  
+- Metoda nebyla nalezena.  
   
--   MissingMethodException.  
+- MissingMethodException.  
   
--   Yakalanmayan Özel durum.  
+- Yakalanmayan Özel durum.  
   
- Bu hata iletilerini önlemek için Kurulum programını çalıştırarak çözümü yükleyin.  
+  Bu hata iletilerini önlemek için Kurulum programını çalıştırarak çözümü yükleyin.  
   
- Kurulum programını çalıştırmadan çözüm yüklediğinizde, yükleyici değil olup olmadığını denetleyin veya önkoşulları yükleyin. Kurulum programı, Önkoşullar için doğru sürümünü denetler ve bunları gerektiği şekilde yükler.  
+  Kurulum programını çalıştırmadan çözüm yüklediğinizde, yükleyici değil olup olmadığını denetleyin veya önkoşulları yükleyin. Kurulum programı, Önkoşullar için doğru sürümünü denetler ve bunları gerektiği şekilde yükler.  
   
 ## <a name="manifest-registry-keys-for-add-ins-change-after-an-installshield-limited-edition-project-is-built"></a>Bir InstallShield Limited Edition projesi oluşturulduktan sonra kayıt defteri anahtarları için Add-Ins değişiklik bildirimi  
  Bir VSTO eklenti kurulumunun bir parçası olan bildirim kayıt defteri anahtarı program bazen değişikliklerden *.vsto* için *. dll.manifest* bir InstallShield Limited Edition projesi oluşturduğunuzda.  

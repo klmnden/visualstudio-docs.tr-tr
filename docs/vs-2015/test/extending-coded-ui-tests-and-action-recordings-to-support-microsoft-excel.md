@@ -13,12 +13,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 304b01564f067206a8995662a4f3711cf041116b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 705604153a0f24eb7ae6b2ff5924a600ddbff54e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202897"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872986"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Kodlanmış Kullanıcı Arabirimi Testlerini ve Eylem Kayıtlarını Microsoft Excel'i Desteklemek için Genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,25 +27,25 @@ Kodlanmış UI testleri ve eylem kayıtları için test çerçevesi, her olası 
   
  **Gereksinimler**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
- Bu bölümde, kaydedebilir ve Excel çalışma sayfalarında testleri kayıttan yürütme kodlanmış bir UI testi uzantısı gösterir. Her bir parçasının uzantısı yalnızca böyle bir uzantı oluşturmak isteyen geliştiriciler için bu bölümdeki ve kod yorumlarında açıklanmıştır.  
+  Bu bölümde, kaydedebilir ve Excel çalışma sayfalarında testleri kayıttan yürütme kodlanmış bir UI testi uzantısı gösterir. Her bir parçasının uzantısı yalnızca böyle bir uzantı oluşturmak isteyen geliştiriciler için bu bölümdeki ve kod yorumlarında açıklanmıştır.  
   
- ![UI Test mimarisi](../test/media/ui-testarch.png "UI_TestArch")  
-Mimariye genel bakış  
+  ![UI Test mimarisi](../test/media/ui-testarch.png "UI_TestArch")  
+  Mimariye genel bakış  
   
 ## <a name="download-the-sample"></a>Örneği indirin  
  Dört projelerinde örnek oluşan `CodedUIExtensibilitySample.sln` çözümü:  
   
--   CodedUIExtensibilitySample  
+- CodedUIExtensibilitySample  
   
--   ExcelCodedUIAddinHelper  
+- ExcelCodedUIAddinHelper  
   
--   ExcelUICommunicationHelper  
+- ExcelUICommunicationHelper  
   
--   SampleTestProject  
+- SampleTestProject  
   
- Bu örnek edinin [blog gönderisi](http://go.microsoft.com/fwlink/?LinkID=185592).  
+  Bu örnek edinin [blog gönderisi](http://go.microsoft.com/fwlink/?LinkID=185592).  
   
 > [!NOTE]
 >  Örnek Microsoft Excel 2010 ile kullanıma yöneliktir. Örnek Microsoft Excel diğer sürümleri de çalışabilir fakat şu anda desteklenmiyor.  

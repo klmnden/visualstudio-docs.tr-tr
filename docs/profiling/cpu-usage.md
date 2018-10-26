@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1409431b0cdaec775ecd420fb9b6ea1ded0868de
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 1f63e4f43db3f8c4b24b43bda02cf00b52befc94
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624001"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842189"
 ---
 # <a name="analyze-cpu-usage"></a>CPU kullanımını analiz etme
 Uygulamanızdaki performans sorunlarını araştırmak gerektiğinde başlatmak için iyi bir yerdir, CPU kullanma anlamaktır. **CPU kullanımı** aracı gösterir, burada CPU, Visual C++, Visual C# ' ı yürütürken zaman harcadığı yerleri / Visual Basic ve JavaScript kodu. Visual Studio 2015 güncelleştirme 1'de başlayarak, hata ayıklayıcı çıkmadan bir işlev başına kırılımını CPU kullanımının görebilirsiniz. Hata ayıklama sırasında CPU açıp profil açın ve yürütme, örneğin bir kesme noktasında kesildiğinde sonuçları görüntüleyin.  
@@ -28,33 +28,33 @@ Windows 7 veya üzeri olan bu makalede gösterilen profil oluşturma aracı kull
   
 ##  <a name="collect-cpu-usage-data"></a>CPU kullanım verileri toplama  
   
-1.  Visual Studio'da çözüm yapılandırması ayarlanmış **yayın** ve dağıtım hedefini seçin.  
+1. Visual Studio'da çözüm yapılandırması ayarlanmış **yayın** ve dağıtım hedefini seçin.  
   
-     ![Yayın ve yerel makine seçin](../profiling/media/cpuuse_selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
+    ![Yayın ve yerel makine seçin](../profiling/media/cpuuse_selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
-    -   Uygulamayı çalışır durumda **yayın** modu gerçek uygulamanızın performansını daha iyi bir görünümünü sağlar.  
+   -   Uygulamayı çalışır durumda **yayın** modu gerçek uygulamanızın performansını daha iyi bir görünümünü sağlar.  
   
-    -   Uygulamayı yerel makinede en iyi çalışan yüklü uygulama yürütülmesini çoğaltır.  
+   -   Uygulamayı yerel makinede en iyi çalışan yüklü uygulama yürütülmesini çoğaltır.  
   
-    -   Uzak bir CİHAZDAN veri topluyorsanız, uygulamayı doğrudan cihazda ve Uzak Masaüstü bağlantısı kullanarak değil çalıştırın.  
+   -   Uzak bir CİHAZDAN veri topluyorsanız, uygulamayı doğrudan cihazda ve Uzak Masaüstü bağlantısı kullanarak değil çalıştırın.  
   
-    -   Windows Phone uygulamaları için doğrudan veri toplama **cihaz** en doğru veriler sağlar.  
+   -   Windows Phone uygulamaları için doğrudan veri toplama **cihaz** en doğru veriler sağlar.  
   
-2.  Üzerinde **hata ayıklama** menüsünde seçin **performans Profiler**.  
+2. Üzerinde **hata ayıklama** menüsünde seçin **performans Profiler**.  
   
-3.  Seçin **CPU kullanımı** seçip **Başlat**.  
+3. Seçin **CPU kullanımı** seçip **Başlat**.  
   
-     ![CPU kullanımı seçin](../profiling/media/cpuuse_lib_choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
+    ![CPU kullanımı seçin](../profiling/media/cpuuse_lib_choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
   
-4.  Uygulama başlatıldığında tıklayın **alma sınırı**. Çıkış görüntülendikten sonra ikinci bir bekleyin ve ardından **alma en fazla sayı Async**. Düğme tıklamaları yapar bekleyen düğme yalıtmak daha kolay tıklayın tanılama raporu yordamları.  
+4. Uygulama başlatıldığında tıklayın **alma sınırı**. Çıkış görüntülendikten sonra ikinci bir bekleyin ve ardından **alma en fazla sayı Async**. Düğme tıklamaları yapar bekleyen düğme yalıtmak daha kolay tıklayın tanılama raporu yordamları.  
   
-5.  İkinci çıktı satırı göründükten sonra seçin **toplamasını Durdur** performans ve tanılama hub'ında.  
+5. İkinci çıktı satırı göründükten sonra seçin **toplamasını Durdur** performans ve tanılama hub'ında.  
   
- ![CpuUsage veri toplamayı Durdur](../profiling/media/cpu_use_wt_stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![CpuUsage veri toplamayı Durdur](../profiling/media/cpu_use_wt_stopcollection.png "CPU_USE_WT_StopCollection")  
   
- CPU kullanımı aracı verileri çözümler ve rapor görüntüler.  
+   CPU kullanımı aracı verileri çözümler ve rapor görüntüler.  
   
- ![CpuUsage rapor](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
+   ![CpuUsage rapor](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
   
 ## <a name="analyze-the-cpu-usage-report"></a>CPU kullanım raporunu analiz etme  
   

@@ -29,12 +29,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd4e1af62032920196dbd8171769f1dc079324e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ad873a4aaa71dc03a2e7cbf213d40973d73dcdf6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225361"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840993"
 ---
 # <a name="supported-code-changes-c"></a>Desteklenen Kod Değişiklikleri (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,31 +46,31 @@ Düzenle ve devam et Visual C++ için kod değişiklikleri çoğu türde işler.
 ##  <a name="BKMK_Unsupported_changes"></a> Desteklenmeyen değişiklikleri  
  Aşağıdaki değişiklikler C/C++ hata ayıklama oturumu sırasında uygulanamaz:  
   
--   Genel veya statik veri çoğu geçer.  
+- Genel veya statik veri çoğu geçer.  
   
--   Başka bir makineden kopyalanır ve yerel olarak yerleşik olmayan yürütülebilir yapılan değişiklikler.  
+- Başka bir makineden kopyalanır ve yerel olarak yerleşik olmayan yürütülebilir yapılan değişiklikler.  
   
--   Bir sınıfın veri üyelerine gibi bir nesne düzenini etkileyen değişiklikler için veri türü.  
+- Bir sınıfın veri üyelerine gibi bir nesne düzenini etkileyen değişiklikler için veri türü.  
   
--   Yeni kod veya veri fazla 64 k bayt ekleniyor.  
+- Yeni kod veya veri fazla 64 k bayt ekleniyor.  
   
--   Yönerge işaretçisi önce bir noktada bir oluşturucu gerektiren değişkenleri ekleniyor.  
+- Yönerge işaretçisi önce bir noktada bir oluşturucu gerektiren değişkenleri ekleniyor.  
   
--   Çalışma zamanı başlatma gerektiren kod etkileyen değişiklikler.  
+- Çalışma zamanı başlatma gerektiren kod etkileyen değişiklikler.  
   
--   Özel durum işleyicileri, bazı durumlarda ekleniyor.  
+- Özel durum işleyicileri, bazı durumlarda ekleniyor.  
   
--   Kaynak dosyalarda yapılan değişiklikler.  
+- Kaynak dosyalarda yapılan değişiklikler.  
   
--   Salt okunur dosyaları kodunda yapılan değişiklikler.  
+- Salt okunur dosyaları kodunda yapılan değişiklikler.  
   
--   Kod karşılık gelen bir PDB dosyası olmadan yapılan değişiklikler.  
+- Kod karşılık gelen bir PDB dosyası olmadan yapılan değişiklikler.  
   
--   Nesne dosyası sahip kod değişiklikleri.  
+- Nesne dosyası sahip kod değişiklikleri.  
   
- Bu değişikliklerden birini yapın ve ardından kod değişikliklerini uygulamayı deneyin, hata veya uyarı iletisi görünür **çıkış** penceresi.  
+  Bu değişikliklerden birini yapın ve ardından kod değişikliklerini uygulamayı deneyin, hata veya uyarı iletisi görünür **çıkış** penceresi.  
   
--   Düzenle ve devam et, statik kitaplıklar güncelleştirilmez. Statik kitaplıkta bir değişiklik yaparsanız, eski sürümü ile yürütme devam eder ve herhangi bir uyarı verilir.  
+- Düzenle ve devam et, statik kitaplıklar güncelleştirilmez. Statik kitaplıkta bir değişiklik yaparsanız, eski sürümü ile yürütme devam eder ve herhangi bir uyarı verilir.  
   
 ##  <a name="BKMK_Unsupported_scenarios"></a> Desteklenmeyen senaryolar  
  Düzenle ve devam et C/C++ için hata ayıklama aşağıdaki senaryolarda kullanılabilir:  

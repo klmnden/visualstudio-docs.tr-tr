@@ -15,25 +15,25 @@ ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 46c2a944227218db2294258081fbd1af2d5f084b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ee10719fa8f0c5c45d9b45f3b1d686f454d808a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305382"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925922"
 ---
 # <a name="command-implementation"></a>Komut Uygulama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Komut içinde bir VSPackage'ı uygulamak için aşağıdaki görevleri gerçekleştirmeniz gerekir:  
   
-1.  .Vsct dosyası bir komut grubu ayarlayın ve komut ekleyin. Daha fazla bilgi için [Visual Studio komut tablosu (. Vsct) dosyaları](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)'  
+1. .Vsct dosyası bir komut grubu ayarlayın ve komut ekleyin. Daha fazla bilgi için [Visual Studio komut tablosu (. Vsct) dosyaları](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)'  
   
-2.  Komutu, Visual Studio ile kaydedin.  
+2. Komutu, Visual Studio ile kaydedin.  
   
-3.  Komut uygulayın.  
+3. Komut uygulayın.  
   
- Aşağıdaki bölümlerde, kaydetme ve komutları uygulamak açıklanmaktadır.  
+   Aşağıdaki bölümlerde, kaydetme ve komutları uygulamak açıklanmaktadır.  
   
 ## <a name="registering-commands-with-visual-studio"></a>Visual Studio ile komutları kaydediliyor  
  Komutunuz menüde görünmesini olması durumunda eklemeniz gerekir <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> VSPackage ve menünün adını veya kaynak kimliğini değeri olarak kullanın  
@@ -68,35 +68,35 @@ if ( null != mcs )
 ## <a name="query-status-methods"></a>Sorgu durumu yöntemleri  
  Ya da uyguluyorsanız <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> yöntemi veya <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> yöntemi, denetimi Ayarla komutu ait olduğu komutun GUID ve komut kimliği. Aşağıdaki yönergeleri izleyin:  
   
--   GUID, tanınmıyor, uygulamanız her iki yöntem döndürmelidir <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+- GUID, tanınmıyor, uygulamanız her iki yöntem döndürmelidir <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
   
--   Her iki yöntem uygulamanıza GUID tanır, ancak gerçekte komutu uygulamadı durumunda yöntem döndürmelidir <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+- Her iki yöntem uygulamanıza GUID tanır, ancak gerçekte komutu uygulamadı durumunda yöntem döndürmelidir <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
   
--   Her iki yöntem uygulamanıza GUID hem komutu tanır sonra yöntem, her komut komut bayrakları alanı ayarlamanız gerekir (içinde `prgCmds` parametresi) aşağıdaki bayraklar kullanarak:  
+- Her iki yöntem uygulamanıza GUID hem komutu tanır sonra yöntem, her komut komut bayrakları alanı ayarlamanız gerekir (içinde `prgCmds` parametresi) aşağıdaki bayraklar kullanarak:  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> komut destekleniyorsa.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> komut destekleniyorsa.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> komutun görünür olmamalıdır.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> komutun görünür olmamalıdır.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Komut çubuğunda açılıp ve sahip gibi görünüyor, iade.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Komut çubuğunda açılıp ve sahip gibi görünüyor, iade.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> komut etkinse.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> komut etkinse.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> kısayol menüsünde görünen komut gizli.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> kısayol menüsünde görünen komut gizli.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> komut bir menü denetleyicisi ve etkin değil, ancak aşağı açılan listesinin boş değil ve hala kullanılabilir olması gerekir. (Bu bayrağı nadiren kullanılır.)  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> komut bir menü denetleyicisi ve etkin değil, ancak aşağı açılan listesinin boş değil ve hala kullanılabilir olması gerekir. (Bu bayrağı nadiren kullanılır.)  
   
--   Komutu ile .vsct dosyası içinde tanımlanmışsa, `TextChanges` bayrağı, aşağıdaki parametreleri ayarlayın:  
+- Komutu ile .vsct dosyası içinde tanımlanmışsa, `TextChanges` bayrağı, aşağıdaki parametreleri ayarlayın:  
   
-    -   Ayarlama `rgwz` öğesinin `pCmdText` yeni metin komut parametresi.  
+  -   Ayarlama `rgwz` öğesinin `pCmdText` yeni metin komut parametresi.  
   
-    -   Ayarlama `cwActual` öğesinin `pCmdText` komut dize boyutu parametresi.  
+  -   Ayarlama `cwActual` öğesinin `pCmdText` komut dize boyutu parametresi.  
   
- Ayrıca, komut Otomasyon işlevleri işlemek için özellikle tasarlanmıştır sürece geçerli bağlam bir Otomasyon işlevi olmadığından emin olun.  
+  Ayrıca, komut Otomasyon işlevleri işlemek için özellikle tasarlanmıştır sürece geçerli bağlam bir Otomasyon işlevi olmadığından emin olun.  
   
- Belirli bir komut desteklediğini göstermek için dönüş <xref:Microsoft.VisualStudio.VSConstants.S_OK>. Diğer tüm komutlar için iade <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+  Belirli bir komut desteklediğini göstermek için dönüş <xref:Microsoft.VisualStudio.VSConstants.S_OK>. Diğer tüm komutlar için iade <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
   
- Aşağıdaki örnekte, sorgu durumu yöntemi önce bağlamı bir Otomasyon işlev değil ve ardından komut kimliği ve doğru komut kümesi GUID bulur emin olur Komut, desteklenen ve etkinleştirilmesi için ayarlanır. Diğer bir komutlar desteklenir.  
+  Aşağıdaki örnekte, sorgu durumu yöntemi önce bağlamı bir Otomasyon işlev değil ve ardından komut kimliği ve doğru komut kümesi GUID bulur emin olur Komut, desteklenen ve etkinleştirilmesi için ayarlanır. Diğer bir komutlar desteklenir.  
   
 ```  
 public int QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  

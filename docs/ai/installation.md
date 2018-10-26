@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 444fac0e3c99733397a9d8cda39c444206c0f3a8
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 465443211d1a3f1aff8bfa63fa6cb8068b55980b
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863910"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459770"
 ---
 # <a name="installation"></a>Yükleme
 
@@ -31,7 +31,7 @@ Araçları'ndan indirebileceğiniz [Visual Studio Market](http://aka.ms/vstoolsf
 
 1. Seçin **Araçları** > **Uzantılar ve güncelleştirmeler**.
 
-   ![Uzantılar ve güncelleştirmeler menüsünde Visual Studio](media\installation\extensions.png)
+   ![Uzantılar ve güncelleştirmeler menüsünde Visual Studio](media/installation/extensions.png)
 
 2. İçinde **Uzantılar ve güncelleştirmeler** iletişim kutusunda **çevrimiçi** sol taraftaki.
 3. Sağ üst köşedeki arama kutusuna yazın veya "için yapay zeka Araçları" girin.
@@ -59,7 +59,7 @@ CUDA yüklemek için
 - CUDA çalışma zamanı kitaplıkları yüklediğinizden emin olun ve ardından CUDA ikili yolu % PATH % veya $Path ortam değişkenine ekleyin.
 - Windows üzerinde bu yol "C:\Program Files\NVIDIA GPU bilgi işlem Toolkit\CUDA\v8.0\bin" varsayılan olarak açıktır.
 
-![Windows üzerinde CUDA yükleyin](media\installation\install_cuda_win.png)
+![Windows üzerinde CUDA yükleyin](media/installation/install_cuda_win.png)
 
 ### <a name="cudnn"></a>cuDNN
 
@@ -85,7 +85,7 @@ Python, derin öğrenme uygulamaları için birincil programlama dilini olmuştu
 
 Derin öğrenme çerçeveleri, kendi yükleme için pip dayanır.
 
-![Windows üzerinde Python'ı yükleyin](media\installation\install_python_win.png)
+![Windows üzerinde Python'ı yükleyin](media/installation/install_python_win.png)
 
 Ardından, Python 3.5 doğru yüklenip yüklenmediğini doğrulayın ve pip bir terminalde aşağıdaki komutları çalıştırarak en son sürüme yükseltmek için ihtiyacımız:
 

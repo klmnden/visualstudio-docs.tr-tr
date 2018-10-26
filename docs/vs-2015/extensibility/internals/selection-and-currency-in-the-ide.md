@@ -18,12 +18,12 @@ ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fe6d5cb678cade67ef9e46e9b3c113c988bf879
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bfd8b3d6a74d4be6edce66e6d921a6c608f861ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902881"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE’de Seçim ve Para Birimi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,15 +52,15 @@ ms.locfileid: "49270941"
 ### <a name="window-types-and-selection"></a>Pencere türleri ve seçim  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE windows iki genel tür olarak düzenler:  
   
--   Hiyerarşi türü windows  
+- Hiyerarşi türü windows  
   
--   Araç ve belge pencereleri gibi çerçeve pencereleri  
+- Araç ve belge pencereleri gibi çerçeve pencereleri  
   
- Para birimi, IDE Bu pencere türlerinin her biri için farklı bir şekilde izler.  
+  Para birimi, IDE Bu pencere türlerinin her biri için farklı bir şekilde izler.  
   
- En yaygın proje türü IDE denetimleri Çözüm Gezgini'nde bir penceredir. Bir proje türü penceresi ItemId genel seçimi bağlam ve genel hiyerarşi izler ve pencerenin geçerli hiyerarşi belirlemek için kullanıcının seçimine göre kullanır. Proje türü windows için küresel hizmet ortamı sağlayan <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>temellidir hangi VSPackages açık öğeler için geçerli değerler izleyebilirsiniz. Ortamda gözatma özelliği, bu genel hizmet tarafından yönetilir.  
+  En yaygın proje türü IDE denetimleri Çözüm Gezgini'nde bir penceredir. Bir proje türü penceresi ItemId genel seçimi bağlam ve genel hiyerarşi izler ve pencerenin geçerli hiyerarşi belirlemek için kullanıcının seçimine göre kullanır. Proje türü windows için küresel hizmet ortamı sağlayan <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>temellidir hangi VSPackages açık öğeler için geçerli değerler izleyebilirsiniz. Ortamda gözatma özelliği, bu genel hizmet tarafından yönetilir.  
   
- Çerçeve pencereleri çerçeve penceresi içinde DocObject SelectionContext değeri (hiyerarşi/öğe kimliği/SelectionContainer sorularının cevabını) göndermek için diğer taraftan, kullanın. biçimindeki telefon numarasıdır. Çerçeve pencerelerini kullanma hizmet <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> bu amaç için. DocObject hiyerarşi yerel değerlerini bırakarak yalnızca seçim kapsayıcısı için değerler gönderebilir ve MDI alt belgeler için tipik olan öğe kimliği değiştirilmemiş.  
+  Çerçeve pencereleri çerçeve penceresi içinde DocObject SelectionContext değeri (hiyerarşi/öğe kimliği/SelectionContainer sorularının cevabını) göndermek için diğer taraftan, kullanın. biçimindeki telefon numarasıdır. Çerçeve pencerelerini kullanma hizmet <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> bu amaç için. DocObject hiyerarşi yerel değerlerini bırakarak yalnızca seçim kapsayıcısı için değerler gönderebilir ve MDI alt belgeler için tipik olan öğe kimliği değiştirilmemiş.  
   
 ### <a name="events-and-currency"></a>Olayları ve para birimi  
  İki tür olay ortamın para birimi kavramı etkileyen oluşabilir:  

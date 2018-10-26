@@ -10,23 +10,26 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: cf0e7aed5c8f28805d19039672c500312e44dc06
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: a219590c20e2ec2bb77cc3ffa59bb6249cc52dfc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945955"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917557"
 ---
 # <a name="understanding-sal"></a>SAL'ı Anlama
+
 Microsoft kaynak kodu ek açıklama dili (SAL) bir işlev parametrelerini ve bunlarla ilgili kolaylaştıran varsayımların tamamlandığında kolaylaştıran garanti nasıl kullandığını tanımlamak için kullanabileceğiniz ek açıklamaları sunmaktadır. Ek açıklamalar üstbilgi dosyasında tanımlanan `<sal.h>`. C++ için Visual Studio kod analizi, kendi analiz işlevleri değiştirmek için SAL ek açıklamalarını kullanır. Windows Sürücü Geliştirme için SAL 2.0 hakkında daha fazla bilgi için bkz. [SAL 2.0 ek açıklamalar için Windows sürücüleri](http://go.microsoft.com/fwlink/?LinkId=250979).
 
- Yerel olarak, C ve C++ geliştiricileri amacı ve değişmezlik terimlerinin tutarlı bir şekilde ifade etmek için yalnızca sınırlı yolları sağlayın. SAL ek açıklamalarını kullanarak bunları kullanan geliştiriciler, bunları nasıl kullanacağınızı daha iyi anlayabilmeniz işlevlerinizi daha ayrıntılı tanımlayabilirsiniz.
+Yerel olarak, C ve C++ geliştiricileri amacı ve değişmezlik terimlerinin tutarlı bir şekilde ifade etmek için yalnızca sınırlı yolları sağlayın. SAL ek açıklamalarını kullanarak bunları kullanan geliştiriciler, bunları nasıl kullanacağınızı daha iyi anlayabilmeniz işlevlerinizi daha ayrıntılı tanımlayabilirsiniz.
 
 ## <a name="what-is-sal-and-why-should-you-use-it"></a>SAL nedir ve neden kullanmalısınız?
- Kısacası, SAL kodunuzu iade derleyici izin vermek için bir Hesaplı yoludur.
+
+Kısacası, SAL kodunuzu iade derleyici izin vermek için bir Hesaplı yoludur.
 
 ### <a name="sal-makes-code-more-valuable"></a>SAL kod daha değerli hale getirir
- SAL insanlar hem kod çözümleme araçları kod tasarımınızı daha anlaşılır yapmanıza yardımcı olabilir. C çalışma zamanı işlevi gösteren Bu örnek göz önünde bulundurun `memcpy`:
+
+SAL insanlar hem kod çözümleme araçları kod tasarımınızı daha anlaşılır yapmanıza yardımcı olabilir. C çalışma zamanı işlevi gösteren Bu örnek göz önünde bulundurun `memcpy`:
 
 ```cpp
 
@@ -35,21 +38,20 @@ void * memcpy(
    const void *src,
    size_t count
 );
-
 ```
 
- Bu işlevin ne yaptığını anlayabilirsiniz? Bir işlev uygulanan ya da adlı programı doğruluğunu sağlamak için belirli özellikleri korunmalıdır. Yalnızca bir örnekteki gibi bir bildirim bakarak, bunların ne olduğunu bilmiyorum. SAL ek açıklamalar olmadan, belge veya kod açıklamaları dayalı etmesi gerekir. İçin MSDN belgelerine işte `memcpy` söylüyor:
+Bu işlevin ne yaptığını anlayabilirsiniz? Bir işlev uygulanan ya da adlı programı doğruluğunu sağlamak için belirli özellikleri korunmalıdır. Yalnızca bir örnekteki gibi bir bildirim bakarak, bunların ne olduğunu bilmiyorum. SAL ek açıklamalar olmadan, belge veya kod açıklamaları dayalı etmesi gerekir. İçin MSDN belgelerine işte `memcpy` söylüyor:
 
 > "Kopya kaynak hedefe kopyalanmaya bayt sayısı. Kaynak ve hedef çakışırsa, memcpy davranışı tanımsızdır. Çakışan bölgeleri işlemek için memcpy kullanın.
 > **Güvenlik Notu:** boyutta veya daha büyük kaynak arabelleği hedef arabellek aynı olduğundan emin olun. Daha fazla bilgi için arabellek taşmalarını bkz."
 
- Belgeler, birkaç kodunuzu program doğruluğunu sağlamak için belirli özelliklerini korumak sahip Öner bit bilgi içerir:
+Belgeler, birkaç kodunuzu program doğruluğunu sağlamak için belirli özelliklerini korumak sahip Öner bit bilgi içerir:
 
--   `memcpy` kopya `count` hedef arabelleğinin kaynak arabellekteki bayt.
+- `memcpy` kopya `count` hedef arabelleğinin kaynak arabellekteki bayt.
 
--   Hedef arabelleğinin en az kaynak arabelleği kadar büyük olmalıdır.
+- Hedef arabelleğinin en az kaynak arabelleği kadar büyük olmalıdır.
 
- Ancak, derleyici belgeleri veya resmi olmayan yorumlar okunamıyor. İki arabellek arasında bir ilişki olduğunu bilmez ve `count`, ve bu da etkin bir ilişki hakkında tahmin edilemez. SAL burada gösterildiği gibi işlev uygulaması ve özellikleri hakkında daha fazla netlik sağlayabilir:
+Ancak, derleyici belgeleri veya resmi olmayan yorumlar okunamıyor. İki arabellek arasında bir ilişki olduğunu bilmez ve `count`, ve bu da etkin bir ilişki hakkında tahmin edilemez. SAL burada gösterildiği gibi işlev uygulaması ve özellikleri hakkında daha fazla netlik sağlayabilir:
 
 ```cpp
 
@@ -60,7 +62,7 @@ void * memcpy(
 );
 ```
 
- Bu ek açıklamalar MSDN belgelerinde benzer, ancak bunlar daha kısa ve bunlar bir anlam desenini izler dikkat edin. Bu kodu okuma, bu işlevin özelliklerine ve arabellek taşması güvenlik sorunlarını önlemek nasıl hızlı bir şekilde anlayabilirsiniz. Daha da iyi SAL sağlayan semantik desenleri otomatik kod analiz araçları olası hataların erken bulma, etkinliğini ve verimliliğini artırabilir. Birisi bu çalışmalarında uygulaması Yazar Imagine `wmemcpy`:
+Bu ek açıklamalar MSDN belgelerinde benzer, ancak bunlar daha kısa ve bunlar bir anlam desenini izler dikkat edin. Bu kodu okuma, bu işlevin özelliklerine ve arabellek taşması güvenlik sorunlarını önlemek nasıl hızlı bir şekilde anlayabilirsiniz. Daha da iyi SAL sağlayan semantik desenleri otomatik kod analiz araçları olası hataların erken bulma, etkinliğini ve verimliliğini artırabilir. Birisi bu çalışmalarında uygulaması Yazar Imagine `wmemcpy`:
 
 ```cpp
 
@@ -75,10 +77,9 @@ wchar_t * wmemcpy(
    }
    return dest;
 }
-
 ```
 
- Bu uygulama, ortak bir kapalı tek hata içeriyor. Neyse ki, kod yazar SAL arabellek boyutu ek açıklama eklenen — tek başına Bu işlev analiz ederek hataya bir kod çözümleme aracı catch.
+Bu uygulama, ortak bir kapalı tek hata içeriyor. Neyse ki, kod yazar SAL arabellek boyutu ek açıklama eklenen — tek başına Bu işlev analiz ederek hataya bir kod çözümleme aracı catch.
 
 ### <a name="sal-basics"></a>SAL temelleri
  SAL dört temel tür kullanım desenine göre kategorize edilir parametreleri tanımlar.
@@ -109,7 +110,7 @@ wchar_t * wmemcpy(
 ### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>Hataları bulmak için Visual Studio Kod Analizi aracını kullanma
  Örneklerde, Visual Studio kod analizi aracı, kod hataları bulmak için SAL ek açıklamalarını ile birlikte kullanılır. Bunu nasıl yapacağınız aşağıda verilmiştir.
 
-##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Visual Studio Kod Analizi araçları ve SAL'ı kullanmak için
+#### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Visual Studio Kod Analizi araçları ve SAL'ı kullanmak için
 
 1.  Visual Studio'da SAL ek açıklamaları içeren bir C++ projesini açın.
 
@@ -120,7 +121,8 @@ wchar_t * wmemcpy(
     > **Geçersiz parametre değeri C6387** 'pInt', '0' olabilir: Bu 'InCallee' işlevinin belirtimine bağlı kalmıyor.
 
 ### <a name="example-the-in-annotation"></a>Örnek: \_içinde\_ ek açıklaması
- `_In_` Ek açıklama gösterir:
+
+`_In_` Ek açıklama gösterir:
 
 -   Parametresi, geçerli olması gerekir ve değiştirilmeyecek.
 
@@ -152,13 +154,13 @@ void BadInCaller()
    int *pInt = NULL;
    InCallee(pInt); // pInt should not be NULL
 }
-
 ```
 
- Bu örneği temel Visual Studio Kod Analizi kullanırsanız arayanlar için başlatılmış olan bir arabellek için Null olmayan bir işaretçi geçtiğini doğrular `pInt`. Bu durumda, `pInt` işaretçisi, NULL olamaz.
+Bu örneği temel Visual Studio Kod Analizi kullanırsanız arayanlar için başlatılmış olan bir arabellek için Null olmayan bir işaretçi geçtiğini doğrular `pInt`. Bu durumda, `pInt` işaretçisi, NULL olamaz.
 
 ### <a name="example-the-inopt-annotation"></a>Örnek: \_içinde\_iyileştirilmiş\_ ek açıklaması
- `_In_opt_` aynı `_In_`, giriş parametresinin NULL olmasına izin verilen ve bu nedenle, işlev bu denetlemelisiniz hariç.
+
+`_In_opt_` aynı `_In_`, giriş parametresinin NULL olmasına izin verilen ve bu nedenle, işlev bu denetlemelisiniz hariç.
 
 ```cpp
 
@@ -180,16 +182,15 @@ void InOptCaller()
    GoodInOptCallee(pInt);
    BadInOptCallee(pInt);
 }
-
 ```
 
- Visual Studio Kod Analizi arabellek erişmeden önce işlevi için NULL denetimleri doğrular.
+Visual Studio Kod Analizi arabellek erişmeden önce işlevi için NULL denetimleri doğrular.
 
 ### <a name="example-the-out-annotation"></a>Örnek: \_kullanıma\_ ek açıklaması
- `_Out_` bir öğeyi buffer'a işaret eden bir NULL olmayan işaretçi geçirilir ve işlev öğe başlatır sık karşılaşılan bir senaryodur destekler. Çağıranın çağırmadan önce arabellek başlatmak zorunda değildir; Çağrılan işlev döndürülmeden önce başlatmak üzere vaat eder.
+
+`_Out_` bir öğeyi buffer'a işaret eden bir NULL olmayan işaretçi geçirilir ve işlev öğe başlatır sık karşılaşılan bir senaryodur destekler. Çağıranın çağırmadan önce arabellek başlatmak zorunda değildir; Çağrılan işlev döndürülmeden önce başlatmak üzere vaat eder.
 
 ```cpp
-
 void GoodOutCallee(_Out_ int *pInt)
 {
    *pInt = 5;
@@ -207,16 +208,15 @@ void OutCaller()
    BadOutCallee(pInt);
    delete pInt;
 }
-
 ```
 
- Visual Studio kod analizi aracı doğrulama çağıran bir arabellek için NULL olmayan bir işaretçi geçirir `pInt` ve döndürülmeden önce arabellek işlevi tarafından başlatılır.
+Visual Studio kod analizi aracı doğrulama çağıran bir arabellek için NULL olmayan bir işaretçi geçirir `pInt` ve döndürülmeden önce arabellek işlevi tarafından başlatılır.
 
 ### <a name="example-the-outopt-annotation"></a>Örnek: \_kullanıma\_iyileştirilmiş\_ ek açıklaması
- `_Out_opt_` aynı `_Out_`, parametresi NULL olmasına izin verilen ve bu nedenle, işlev bu denetlemelisiniz hariç.
+
+`_Out_opt_` aynı `_Out_`, parametresi NULL olmasına izin verilen ve bu nedenle, işlev bu denetlemelisiniz hariç.
 
 ```cpp
-
 void GoodOutOptCallee(_Out_opt_ int *pInt)
 {
    if (pInt != NULL) {
@@ -235,19 +235,18 @@ void OutOptCaller()
    GoodOutOptCallee(pInt);
    BadOutOptCallee(pInt);
 }
-
 ```
 
- Visual Studio Kod Analizi doğrulama Bu işlev null önce denetler `pInt` referans edildi ve `pInt` döndürülmeden önce arabellek işlevi tarafından başlatılır, NULL değil.
+Visual Studio Kod Analizi doğrulama Bu işlev null önce denetler `pInt` referans edildi ve `pInt` döndürülmeden önce arabellek işlevi tarafından başlatılır, NULL değil.
 
 ### <a name="example-the-inout-annotation"></a>Örnek: \_Inout\_ ek açıklaması
- `_Inout_` işlev tarafından değiştirilebilir bir işaretçi parametresi açıklama eklemek için kullanılır. İşaretçi çağırmadan önce geçerli başlatılmış veriler işaret etmelidir ve değişiklik olsa bile, geçerli bir değer geri hala olmalıdır. Ek açıklama işlevi serbestçe okuma ve tek öğeli arabelleğe yazmak belirtir. Çağıranın arabellek sağlayın ve başlatmanız gerekir.
+
+`_Inout_` işlev tarafından değiştirilebilir bir işaretçi parametresi açıklama eklemek için kullanılır. İşaretçi çağırmadan önce geçerli başlatılmış veriler işaret etmelidir ve değişiklik olsa bile, geçerli bir değer geri hala olmalıdır. Ek açıklama işlevi serbestçe okuma ve tek öğeli arabelleğe yazmak belirtir. Çağıranın arabellek sağlayın ve başlatmanız gerekir.
 
 > [!NOTE]
->  Gibi `_Out_`, `_Inout_` değiştirilebilir bir değer için uygulamanız gerekir.
+> Gibi `_Out_`, `_Inout_` değiştirilebilir bir değer için uygulamanız gerekir.
 
 ```cpp
-
 void InOutCallee(_Inout_ int *pInt)
 {
    int i = *pInt;
@@ -267,16 +266,15 @@ void BadInOutCaller()
    int *pInt = NULL;
    InOutCallee(pInt); // 'pInt' should not be NULL
 }
-
 ```
 
- Visual Studio Kod Analizi arayanlar için başlatılmış olan bir arabellek için NULL olmayan bir işaretçi geçtiğini doğrular `pInt`ve iade önce `pInt` hala NULL olmayan ve arabellek başlatılır.
+Visual Studio Kod Analizi arayanlar için başlatılmış olan bir arabellek için NULL olmayan bir işaretçi geçtiğini doğrular `pInt`ve iade önce `pInt` hala NULL olmayan ve arabellek başlatılır.
 
 ### <a name="example-the-inoutopt-annotation"></a>Örnek: \_Inout\_iyileştirilmiş\_ ek açıklaması
- `_Inout_opt_` aynı `_Inout_`, giriş parametresinin NULL olmasına izin verilen ve bu nedenle, işlev bu denetlemelisiniz hariç.
+
+`_Inout_opt_` aynı `_Inout_`, giriş parametresinin NULL olmasına izin verilen ve bu nedenle, işlev bu denetlemelisiniz hariç.
 
 ```cpp
-
 void GoodInOutOptCallee(_Inout_opt_ int *pInt)
 {
    if(pInt != NULL) {
@@ -297,16 +295,15 @@ void InOutOptCaller()
    GoodInOutOptCallee(pInt);
    BadInOutOptCallee(pInt);
 }
-
 ```
 
- Visual Studio Kod Analizi doğrular arabellek erişmeden önce ve bu işlev için NULL denetimleri `pInt` döndürülmeden önce arabellek işlevi tarafından başlatılır, NULL değil.
+Visual Studio Kod Analizi doğrular arabellek erişmeden önce ve bu işlev için NULL denetimleri `pInt` döndürülmeden önce arabellek işlevi tarafından başlatılır, NULL değil.
 
 ### <a name="example-the-outptr-annotation"></a>Örnek: \_Outptr\_ ek açıklaması
- `_Outptr_` bir işaretçiyi döndürmek için hedeflenen bir parametreye açıklama eklemek için kullanılır.  Parametre NULL olmamalıdır ve çağrılan işlev NULL olmayan bir işaretçi döndürür ve başlatılmış veriler için bu işaretçi işaret eder.
+
+`_Outptr_` bir işaretçiyi döndürmek için hedeflenen bir parametreye açıklama eklemek için kullanılır.  Parametre NULL olmamalıdır ve çağrılan işlev NULL olmayan bir işaretçi döndürür ve başlatılmış veriler için bu işaretçi işaret eder.
 
 ```cpp
-
 void GoodOutPtrCallee(_Outptr_ int **pInt)
 {
    int *pInt2 = new int;
@@ -328,16 +325,15 @@ void OutPtrCaller()
    GoodOutPtrCallee(&pInt);
    BadOutPtrCallee(&pInt);
 }
-
 ```
 
- Visual Studio Kod Analizi doğrular çağıran bir NULL olmayan işaretçi geçtiği `*pInt`, ve döndürülmeden önce arabellek işlevi tarafından başlatılır.
+Visual Studio Kod Analizi doğrular çağıran bir NULL olmayan işaretçi geçtiği `*pInt`, ve döndürülmeden önce arabellek işlevi tarafından başlatılır.
 
 ### <a name="example-the-outptropt-annotation"></a>Örnek: \_Outptr\_iyileştirilmiş\_ ek açıklaması
- `_Outptr_opt_` aynı `_Outptr_`parametresi isteğe bağlıdır, ancak — çağıran parametresi için bir NULL işaretçi geçirebilirsiniz.
+
+`_Outptr_opt_` aynı `_Outptr_`parametresi isteğe bağlıdır, ancak — çağıran parametresi için bir NULL işaretçi geçirebilirsiniz.
 
 ```cpp
-
 void GoodOutPtrOptCallee(_Outptr_opt_ int **pInt)
 {
    int *pInt2 = new int;
@@ -361,16 +357,15 @@ void OutPtrOptCaller()
    GoodOutPtrOptCallee(ppInt);
    BadOutPtrOptCallee(ppInt);
 }
-
 ```
 
- Visual Studio Kod Analizi doğrulama Bu işlev null önce denetler `*pInt` referans edildi ve döndürülmeden önce arabellek işlevi tarafından başlatılır.
+Visual Studio Kod Analizi doğrulama Bu işlev null önce denetler `*pInt` referans edildi ve döndürülmeden önce arabellek işlevi tarafından başlatılır.
 
 ### <a name="example-the-success-annotation-in-combination-with-out"></a>Örnek: \_başarı\_ birlikte ek açıklama \_çıkış\_
- Ek açıklamalar, çoğu nesnelere uygulanabilir.  Özellikle, tam bir işlev açıklama ekleyebilirsiniz.  Bir işlev en belirgin özelliklerini, başarılı veya başarısız, biridir. Ancak bir arabellek boyutuna arasındaki ilişkiyi gibi C/C++ işlevi başarı veya başarısızlık express olamaz. Kullanarak `_Success_` ek açıklama, bir işlev için hangi başarının neye benzediğini söyleyebilirsiniz.  Parametre `_Success_` ek açıklama olduğunu da true olduğunda işlevi başarılı olduğunu belirten bir ifade. İfade, ek açıklama ayrıştırıcının işleyebilir herhangi bir şey olabilir. İşlev başarılı olduğunda işlev döndürdükten sonra ek açıklamalar etkilerini yalnızca geçerlidir. Bu örnek gösterir nasıl `_Success_` etkileşimde `_Out_` doğru şeyleri yapacakları konusunda. Anahtar sözcüğünü kullanabilirsiniz `return` dönüş değerini göstermek için.
+
+Ek açıklamalar, çoğu nesnelere uygulanabilir.  Özellikle, tam bir işlev açıklama ekleyebilirsiniz.  Bir işlev en belirgin özelliklerini, başarılı veya başarısız, biridir. Ancak bir arabellek boyutuna arasındaki ilişkiyi gibi C/C++ işlevi başarı veya başarısızlık express olamaz. Kullanarak `_Success_` ek açıklama, bir işlev için hangi başarının neye benzediğini söyleyebilirsiniz.  Parametre `_Success_` ek açıklama olduğunu da true olduğunda işlevi başarılı olduğunu belirten bir ifade. İfade, ek açıklama ayrıştırıcının işleyebilir herhangi bir şey olabilir. İşlev başarılı olduğunda işlev döndürdükten sonra ek açıklamalar etkilerini yalnızca geçerlidir. Bu örnek gösterir nasıl `_Success_` etkileşimde `_Out_` doğru şeyleri yapacakları konusunda. Anahtar sözcüğünü kullanabilirsiniz `return` dönüş değerini göstermek için.
 
 ```cpp
-
 _Success_(return != false) // Can also be stated as _Success_(return)
 bool GetValue(_Out_ int *pInt, bool flag)
 {
@@ -381,33 +376,42 @@ bool GetValue(_Out_ int *pInt, bool flag)
       return false;
    }
 }
-
 ```
 
- `_Out_` Ek açıklama neden Visual Studio kodu doğrulamak için analiz çağıran bir arabellek için NULL olmayan bir işaretçi geçirir `pInt`, ve döndürülmeden önce arabellek işlevi tarafından başlatılır.
+`_Out_` Ek açıklama neden Visual Studio kodu doğrulamak için analiz çağıran bir arabellek için NULL olmayan bir işaretçi geçirir `pInt`, ve döndürülmeden önce arabellek işlevi tarafından başlatılır.
 
 ## <a name="sal-best-practice"></a>SAL en iyi uygulama
 
 ### <a name="adding-annotations-to-existing-code"></a>Ek açıklamalar için mevcut kod ekleme
- SAL, güvenlik ve güvenilirlik kodunuzun geliştirmenize yardımcı olabilecek güçlü bir teknolojidir. SAL öğrendikten sonra günlük işleriniz için yeni yetenek uygulayabilirsiniz. Yeni kod içinde tasarıma SAL tabanlı özellikleri kullanabilirsiniz; eski kod içinde ek açıklamalar artımlı olarak ekleyebilir ve her güncelleştirdiğinizde, böylelikle avantajları artırabilirsiniz.
 
- Microsoft ortak üst bilgileri zaten açıklama. Bu nedenle, projelerinizde, önce yaprak düğümü işlevlerini ve en çok faydayı almak için Win32 API'ları çağırma işlevlerini ek açıklama, öneririz.
+SAL, güvenlik ve güvenilirlik kodunuzun geliştirmenize yardımcı olabilecek güçlü bir teknolojidir. SAL öğrendikten sonra günlük işleriniz için yeni yetenek uygulayabilirsiniz. Yeni kod içinde tasarıma SAL tabanlı özellikleri kullanabilirsiniz; eski kod içinde ek açıklamalar artımlı olarak ekleyebilir ve her güncelleştirdiğinizde, böylelikle avantajları artırabilirsiniz.
+
+Microsoft ortak üst bilgileri zaten açıklama. Bu nedenle, projelerinizde, önce yaprak düğümü işlevlerini ve en çok faydayı almak için Win32 API'ları çağırma işlevlerini ek açıklama, öneririz.
 
 ### <a name="when-do-i-annotate"></a>Ne zaman miyim açıklama?
- Bazı Kılavuzlar şunlardır:
 
--   Tüm işaretçi parametrelerini açıklama ekleyin.
+Bazı Kılavuzlar şunlardır:
 
--   Değer aralığı ek açıklamaları, böylece Kod Analizi arabellek ve işaretçi güvenliği sağlamak açıklama ekleyin.
+- Tüm işaretçi parametrelerini açıklama ekleyin.
 
--   Kilitleme kuralları ve kilitleme yan etkileri açıklama ekleyin. Daha fazla bilgi için [kilitlenme davranışını yorumlama](../code-quality/annotating-locking-behavior.md).
+- Değer aralığı ek açıklamaları, böylece Kod Analizi arabellek ve işaretçi güvenliği sağlamak açıklama ekleyin.
 
--   Sürücü özellikleri ve diğer etki alanına özgü özellikleri açıklama ekleyin.
+- Kilitleme kuralları ve kilitleme yan etkileri açıklama ekleyin. Daha fazla bilgi için [kilitlenme davranışını yorumlama](../code-quality/annotating-locking-behavior.md).
 
- Veya tüm parametreleri boyunca hedefi, düz hale getirmek ve ek açıklamalar yapılmış denetlenecek kolaylaştırmak için açıklama ekleyebilirsiniz.
+- Sürücü özellikleri ve diğer etki alanına özgü özellikleri açıklama ekleyin.
+
+Veya tüm parametreleri boyunca hedefi, düz hale getirmek ve ek açıklamalar yapılmış denetlenecek kolaylaştırmak için açıklama ekleyebilirsiniz.
 
 ## <a name="related-resources"></a>İlgili Kaynaklar
- [Kod Analizi ekip blogu](http://go.microsoft.com/fwlink/p/?LinkId=251197)
+
+[Kod Analizi ekip blogu](http://go.microsoft.com/fwlink/p/?LinkId=251197)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [C/C++ kod hatalarını azaltmak için SAL ek açıklamalarını kullanma](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [işlev parametrelerini ve dönüş değerlerini açıklama](../code-quality/annotating-function-parameters-and-return-values.md) [işlev davranışını yorumlama](../code-quality/annotating-function-behavior.md) [yapılar yorumlama ve Sınıflar](../code-quality/annotating-structs-and-classes.md) [kilitlenme davranışını yorumlama](../code-quality/annotating-locking-behavior.md) [açıklamanın ne zaman ve nereye uygulanacağını belirtme](../code-quality/specifying-when-and-where-an-annotation-applies.md) [en iyi yöntemler ve örnekler](../code-quality/best-practices-and-examples-sal.md)
+
+- [C/C++ Kod Hatalarını Azaltmak için SAL Ek Açıklamalarını Kullanma](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+- [İşlev Parametrelerini ve Dönüş Değerlerini Açıklama](../code-quality/annotating-function-parameters-and-return-values.md)
+- [İşlev Davranışını Yorumlama](../code-quality/annotating-function-behavior.md)
+- [Yapıları ve Sınıfları Yorumlama](../code-quality/annotating-structs-and-classes.md)
+- [Kilitlenme Davranışını Yorumlama](../code-quality/annotating-locking-behavior.md)
+- [Açıklamanın Ne Zaman ve Nereye Uygulanacağını Belirtme](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+- [En İyi Yöntemler ve Örnekler](../code-quality/best-practices-and-examples-sal.md)

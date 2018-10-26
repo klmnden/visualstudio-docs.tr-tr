@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f2a2979fdc836f0204dec580d49e86ae235d5c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 147d15133a2c5c682960e853defcf5965d04b1d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254702"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868033"
 ---
 # <a name="creating-portable-profiling-data-files-from-the-command-line"></a>Komut Satırından Taşınabilir Profil Oluşturma Veri Dosyaları Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,19 +37,19 @@ Profil oluşturma verilerini daha kolay paylaşım yapmak için kullanabileceği
   
 ### <a name="to-embed-the-symbols-for-a-profiling-run-into-a-profiling-data-vsp-file"></a>Bir profil oluşturma veri (.vsp) dosyasına bir profil oluşturma için simgeleri eklemek için  
   
--   Bir komut istemi penceresinde, aşağıdaki komutu yazın:  
+- Bir komut istemi penceresinde, aşağıdaki komutu yazın:  
   
-     \<Yolu >**VSPerfReport \<** VSP dosyası > **packsymbols**  
+   \<Yolu ><strong>VSPerfReport \<</strong> VSP dosyası > **packsymbols**  
   
-     Varsayılan olarak, .vsp dosyasının temel adı ile .vsps dosyası olarak adlandırılır. Kullanarak bir diğer ad belirtebilirsiniz **çıkış** seçeneği.  
+   Varsayılan olarak, .vsp dosyasının temel adı ile .vsps dosyası olarak adlandırılır. Kullanarak bir diğer ad belirtebilirsiniz **çıkış** seçeneği.  
   
 ### <a name="to-create-a-summary-profiling-data-file"></a>Özet bir profil oluşturma veri dosyasını oluşturmak için  
   
--   Bir komut istemi penceresinde, aşağıdaki komutu yazın:  
+- Bir komut istemi penceresinde, aşağıdaki komutu yazın:  
   
-     \<Yolu >**VSPerfReport \<** VSP dosyası > **/summaryfile** [**/Output:**\<dosya adı >]  
+   \<Yolu ><strong>VSPerfReport \<</strong> VSP dosyası > **/summaryfile** [**/Output:**\<dosya adı >]  
   
-     Varsayılan olarak, .vsp dosyasının temel adı ile .vsps dosyası olarak adlandırılır. Kullanarak bir diğer ad belirtebilirsiniz **çıkış** seçeneği.
+   Varsayılan olarak, .vsp dosyasının temel adı ile .vsps dosyası olarak adlandırılır. Kullanarak bir diğer ad belirtebilirsiniz **çıkış** seçeneği.
 
 
 

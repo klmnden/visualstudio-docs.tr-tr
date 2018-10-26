@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 168f89512dee8331448db1becabdc7262b5e4744
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d390ba4cd47297c6d653cb68693439fd01c16815
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774741"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853616"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>Çağrı yığınını görüntüleme ve Visual Studio hata ayıklayıcısı çağrı yığını penceresini kullanma
 
@@ -45,17 +45,17 @@ Zaman [hata ayıklama simgeleri](#bkmk_symbols) bir çağrı yığının bir bö
   
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
->  [!NOTE]
+> [!NOTE]
 > **Çağrı yığını** penceresi benzer hata ayıklama perspektifi için Eclipse gibi bazı IDE içinde. 
-
+> 
 > [!NOTE]
 >  İletişim kutuları ve menü komutları gördüğünüz, etkin ayarlarınıza ve sürüm bağlı olarak burada açıklananlar farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü.  Bkz: [IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)
   
 ## <a name="view-the-call-stack-while-in-the-debugger"></a>Hata ayıklayıcı sırasında çağrı yığınını görüntüleme 
   
--   Hata ayıklarken, buna **hata ayıklama** menüsünde **Windows > çağrı yığını**.
+- Hata ayıklarken, buna **hata ayıklama** menüsünde **Windows > çağrı yığını**.
 
- ![Çağrı yığını penceresi](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
+  ![Çağrı yığını penceresi](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
 Sarı bir ok, yürütme işaretçisinin şu anda bulunduğu yığın çerçevesini tanımlar. Varsayılan olarak, bu bilgilerini kaynakta görünen yığın çerçevesi olan **Yereller**, **Otolar**, **Watch**, ve **ayrıştırılmış kodu** windows . Yığındaki çerçeveye hata ayıklayıcı bağlamı değiştirmek istiyorsanız, bunu yapabilirsiniz [başka bir yığın çerçevesine geçme](#bkmk_switch).   
   

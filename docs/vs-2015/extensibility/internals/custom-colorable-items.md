@@ -16,12 +16,12 @@ ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd93f4e0f2d9cca4d7fd12f9c69733655cb99127
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fffb77788a4ac88f2ee607dd989de8c7aab8aebf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192094"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821935"
 ---
 # <a name="custom-colorable-items"></a>Özel Renklendirilebilir Öğeler
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,31 +45,31 @@ ms.locfileid: "49192094"
   
 ## <a name="implementing-custom-colorable-items"></a>Özel renklendirilebilir öğeler uygulama  
   
-1.  Tanımlayın örneğin anahtar sözcüğü, işleci ve tanımlayıcı, dil renklendirilmiş gerekir.  
+1. Tanımlayın örneğin anahtar sözcüğü, işleci ve tanımlayıcı, dil renklendirilmiş gerekir.  
   
-2.  Bu renklendirilebilir öğeler numaralandırması oluşturun.  
+2. Bu renklendirilebilir öğeler numaralandırması oluşturun.  
   
-3.  Bir Ayrıştırıcı veya listelenmiş değerler tarayıcıyla döndürülen belirteç türleri ilişkilendirin.  
+3. Bir Ayrıştırıcı veya listelenmiş değerler tarayıcıyla döndürülen belirteç türleri ilişkilendirin.  
   
-     Örneğin, belirteç türleri temsil eden değerleri özel renklendirilebilir öğeler aynı değerler olabilir.  
+    Örneğin, belirteç türleri temsil eden değerleri özel renklendirilebilir öğeler aynı değerler olabilir.  
   
-4.  Uygulamanızda <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> yönteminde, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> nesne, öznitelikler listesinde, özel renklendirilebilir öğeler numaralandırma ayrıştırıcı veya tarayıcıdan döndürülen belirteç türleri karşılık gelen değerlerle doldurun.  
+4. Uygulamanızda <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> yönteminde, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> nesne, öznitelikler listesinde, özel renklendirilebilir öğeler numaralandırma ayrıştırıcı veya tarayıcıdan döndürülen belirteç türleri karşılık gelen değerlerle doldurun.  
   
-5.  Uygulayan aynı sınıftaki <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> arabirim, uygulama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> arabirimi ve iki metotlarını <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> ve <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>.  
+5. Uygulayan aynı sınıftaki <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> arabirim, uygulama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> arabirimi ve iki metotlarını <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> ve <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>.  
   
-6.  Uygulama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> arabirimi.  
+6. Uygulama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> arabirimi.  
   
-7.  24-bit ya da yüksek renk değerleri desteklemek istiyorsanız, ayrıca uygulama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> arabirimi.  
+7. 24-bit ya da yüksek renk değerleri desteklemek istiyorsanız, ayrıca uygulama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> arabirimi.  
   
-8.  Dil hizmeti nesnesinde içeren bir liste oluşturun, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> nesneleri, her renklendirilebilir öğesi ayrıştırıcı veya tarayıcı belirleyebilir.  
+8. Dil hizmeti nesnesinde içeren bir liste oluşturun, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> nesneleri, her renklendirilebilir öğesi ayrıştırıcı veya tarayıcı belirleyebilir.  
   
-     Listedeki her öğeye karşılık gelen özel renklendirilebilir öğeler sabit listesi değeri kullanarak erişebilirsiniz. Sabit listesi değerleri listesine bir dizin olarak kullanın. Listedeki ilk öğeye hiç erişilebilir, varsayılan metni karşılık olmadığından, stil [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] her zaman kendini işler. Bunun için bir yer tutucu renklendirilebilir öğesi listesinin başında ekleyerek dengeleyebilirsiniz.  
+    Listedeki her öğeye karşılık gelen özel renklendirilebilir öğeler sabit listesi değeri kullanarak erişebilirsiniz. Sabit listesi değerleri listesine bir dizin olarak kullanın. Listedeki ilk öğeye hiç erişilebilir, varsayılan metni karşılık olmadığından, stil [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] her zaman kendini işler. Bunun için bir yer tutucu renklendirilebilir öğesi listesinin başında ekleyerek dengeleyebilirsiniz.  
   
 9. Uygulamanızda <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> yöntemi, özel renklendirilebilir öğeler listedeki öğe sayısını döndürür.  
   
 10. Uygulamanızda <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> yöntemi listenizden istenen renklendirilebilir öğeyi döndürür.  
   
- Nasıl uygulayacağınıza dair bir örnek <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> ve <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> arabirimleri Bkz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>.  
+    Nasıl uygulayacağınıza dair bir örnek <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> ve <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> arabirimleri Bkz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski dil hizmetinin modeli](../../extensibility/internals/model-of-a-legacy-language-service.md)   

@@ -22,25 +22,25 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6b036fdd9f75afc0c9976591ae0df23194b196d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 223e060083554169ab6ffdb95faf4979e9466d02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268911"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825627"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>Nasıl Yapılır: ASP.NET İşleminin Adını Bulma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Çalışan bir eklemek için [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] uygulama sahip adını bilmek [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] işlemi:  
   
--   IIS 6.0 veya IIS 7.0 çalıştırıyorsanız, w3wp.exe addır.  
+- IIS 6.0 veya IIS 7.0 çalıştırıyorsanız, w3wp.exe addır.  
   
--   IIS önceki bir sürümünü çalıştırıyorsanız, aspnet_wp.exe addır.  
+- IIS önceki bir sürümünü çalıştırıyorsanız, aspnet_wp.exe addır.  
   
- Kullanılarak oluşturulan uygulamalar için [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] veya sonraki sürümler [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] kod dosya sisteminde bulunan ve test sunucu WebDev.WebServer.exe altında çalıştırın. Bu durumda, yerine WebDev.WebServer.exe iliştirmeniz gerekir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] işlem. Bu senaryo, yalnızca yerel hata ayıklama için geçerlidir.  
+  Kullanılarak oluşturulan uygulamalar için [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] veya sonraki sürümler [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] kod dosya sisteminde bulunan ve test sunucu WebDev.WebServer.exe altında çalıştırın. Bu durumda, yerine WebDev.WebServer.exe iliştirmeniz gerekir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] işlem. Bu senaryo, yalnızca yerel hata ayıklama için geçerlidir.  
   
- İşlem içi çalıştırırken eski ASP uygulamalarını IIS işlemi inetinfo.exe içinde çalıştırın.  
+  İşlem içi çalıştırırken eski ASP uygulamalarını IIS işlemi inetinfo.exe içinde çalıştırın.  
   
 > [!NOTE]
 >  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

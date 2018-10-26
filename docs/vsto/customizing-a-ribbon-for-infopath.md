@@ -16,27 +16,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 250e3ed3fb548dad26bc29f83fae35b8e6727c9f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f0a6a50ca1e84d9b1f5508cccbad24607f36b3f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676857"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942068"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>InfoPath için Şerit özelleştirme
   Microsoft Office InfoPath Şeritte'nı özelleştirdiğinizde, Şerit uygulamada nerede görüneceğini dikkate almanız gerekir. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] Şerit InfoPath windows uygulaması aşağıdaki üç tür görüntüleyebilirsiniz:  
   
--   Tasarım modunda açılan bir form şablon görünen Windows.  
+- Tasarım modunda açılan bir form şablon görünen Windows.  
   
--   Görüntüleme formu şablonu temel alan bir formu Windows.  
+- Görüntüleme formu şablonu temel alan bir formu Windows.  
   
--   Baskı önizleme penceresi.  
+- Baskı önizleme penceresi.  
   
- **İçin geçerlidir:** Bu konu başlığı altındaki bilgiler InfoPath 2010 VSTO eklentisi projelerine yöneliktir. Daha fazla bilgi için [Office uygulaması ve proje türüne göre kullanılabilen özellikler](../vsto/features-available-by-office-application-and-project-type.md).  
+  **İçin geçerlidir:** Bu konu başlığı altındaki bilgiler InfoPath 2010 VSTO eklentisi projelerine yöneliktir. Daha fazla bilgi için [Office uygulaması ve proje türüne göre kullanılabilen özellikler](../vsto/features-available-by-office-application-and-project-type.md).  
   
- Kullanıcılar ve tasarımcılar form şablonu şablonu düzen ve görünümü değiştirmek için Tasarım modunda açın. Kullanıcıların içeriği eklemek için bir form şablonu temel alan form açın.  
+  Kullanıcılar ve tasarımcılar form şablonu şablonu düzen ve görünümü değiştirmek için Tasarım modunda açın. Kullanıcıların içeriği eklemek için bir form şablonu temel alan form açın.  
   
- Baskı önizleme penceresi tasarımcıları ve kullanıcıların bir form veya form şablonu sayfaları yazdırmadan önce önizleme sağlar.  
+  Baskı önizleme penceresi tasarımcıları ve kullanıcıların bir form veya form şablonu sayfaları yazdırmadan önce önizleme sağlar.  
   
 > [!NOTE]  
 >  **Eklentileri** sekmesini Baskı Önizleme penceresinde görünmez. Özel sekme Baskı Önizleme penceresinde görünmesini istiyorsanız, emin **OfficeId** sekmesinde özelliği ayarlanmadı **TabAddIns**.  

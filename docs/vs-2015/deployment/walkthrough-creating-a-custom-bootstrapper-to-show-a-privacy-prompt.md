@@ -25,12 +25,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 4184e8400c50c518b461a0877f06c54db5f84927
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8bd1101647973a7a8f206159f8910a4e633e5da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217971"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893398"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>İzlenecek yol: Bir Gizlilik İstemi Göstermek için Özel Bir Önyükleyici Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,23 +49,23 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
   
 #### <a name="to-create-a-consent-dialog-box"></a>Onay iletişim kutusu oluşturmak için  
   
-1.  Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
+1. Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
   
-2.  İçinde **yeni proje** iletişim kutusu, tıklayın **Windows**ve ardından **WindowsFormsApplication**.  
+2. İçinde **yeni proje** iletişim kutusu, tıklayın **Windows**ve ardından **WindowsFormsApplication**.  
   
-3.  İçin **adı**, türü **ConsentDialog**ve ardından **Tamam**.  
+3. İçin **adı**, türü **ConsentDialog**ve ardından **Tamam**.  
   
-4.  Form Tasarımcısı'nda tıklatın.  
+4. Form Tasarımcısı'nda tıklatın.  
   
-5.  İçinde **özellikleri** penceresinde değişiklik **metin** özelliğini **Güncelleştirme Onayı iletişim**.  
+5. İçinde **özellikleri** penceresinde değişiklik **metin** özelliğini **Güncelleştirme Onayı iletişim**.  
   
-6.  İçinde **araç kutusu**, genişletme **tüm Windows Formları**, sürükleyin bir **etiket** forma.  
+6. İçinde **araç kutusu**, genişletme **tüm Windows Formları**, sürükleyin bir **etiket** forma.  
   
-7.  Tasarımcıda etiket denetimi tıklayın.  
+7. Tasarımcıda etiket denetimi tıklayın.  
   
-8.  İçinde **özellikleri** penceresinde değişiklik **metin** özelliği altında **Görünüm** aşağıdaki:  
+8. İçinde **özellikleri** penceresinde değişiklik **metin** özelliği altında **Görünüm** aşağıdaki:  
   
-     Web üzerinde en son güncelleştirmeleri yüklemek üzere olduğunuz uygulama denetler. "Kabul ediyorum" tıklayarak denetlemek ve güncelleştirmeleri Internet'ten otomatik olarak yüklemek için uygulamayı yetkilendirme.  
+    Web üzerinde en son güncelleştirmeleri yüklemek üzere olduğunuz uygulama denetler. "Kabul ediyorum" tıklayarak denetlemek ve güncelleştirmeleri Internet'ten otomatik olarak yüklemek için uygulamayı yetkilendirme.  
   
 9. İçinde **araç kutusu**, sürükleyin bir **onay kutusu** ortaya form denetimi.  
   
@@ -118,28 +118,28 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
   
      Yalnızca Visual Basic geliştiriciler için:  
   
-    1.  İçinde **Çözüm Gezgini**, tıklayın **ConsentDialog**.  
+    1. İçinde **Çözüm Gezgini**, tıklayın **ConsentDialog**.  
   
-    2.  Üzerinde **proje** menüsünü tıklatın **Modül Ekle**ve ardından **Ekle**.  
+    2. Üzerinde **proje** menüsünü tıklatın **Modül Ekle**ve ardından **Ekle**.  
   
-    3.  Module1.vb kod dosyasında, aşağıdaki kodu ekleyin.  
+    3. Module1.vb kod dosyasında, aşağıdaki kodu ekleyin.  
   
-         [!code-vb[ConsentDialog#7](../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/module1.vb#7)]  
+        [!code-vb[ConsentDialog#7](../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/module1.vb#7)]  
   
-    4.  Üzerinde **proje** menüsünde tıklatın **ConsentDialog özellikleri**ve ardından **uygulama** sekmesi.  
+    4. Üzerinde **proje** menüsünde tıklatın **ConsentDialog özellikleri**ve ardından **uygulama** sekmesi.  
   
-    5.  Onay kutusunu temizleyin **etkinleştir uygulama çerçevesi**.  
+    5. Onay kutusunu temizleyin **etkinleştir uygulama çerçevesi**.  
   
-    6.  İçinde **Başlangıç nesnesi** açılan menüsünde, select **Module1**.  
+    6. İçinde **Başlangıç nesnesi** açılan menüsünde, select **Module1**.  
   
-        > [!NOTE]
-        >  Uygulama Framework'ü devre dışı bırakma, Windows XP görsel stilleri, uygulama olayları, giriş ekranı, tek örnek uygulama ve diğer özellikleri devre dışı bırakır. Daha fazla bilgi için [uygulama sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+       > [!NOTE]
+       >  Uygulama Framework'ü devre dışı bırakma, Windows XP görsel stilleri, uygulama olayları, giriş ekranı, tek örnek uygulama ve diğer özellikleri devre dışı bırakır. Daha fazla bilgi için [uygulama sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
-     Visual C# yalnızca geliştiriciler için:  
+       Visual C# yalnızca geliştiriciler için:  
   
-     Program.cs kod dosyasını açın ve aşağıdaki kodu ekleyin.  
+       Program.cs kod dosyasını açın ve aşağıdaki kodu ekleyin.  
   
-     [!code-csharp[ConsentDialog#5](../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/program.cs#5)]  
+       [!code-csharp[ConsentDialog#5](../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/program.cs#5)]  
   
 26. Üzerinde **derleme** menüsünde tıklatın **BuildSolution**.  
   

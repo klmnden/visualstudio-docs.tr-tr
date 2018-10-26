@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fea56cf7db42d7028856b88fb8572f5a4024fe07
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6100f6b0a793b138712250ac5451454784bc877a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498778"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876756"
 ---
 # <a name="create-an-options-page"></a>Seçenekler sayfası oluşturma
 Bu izlenecek yolda incelemek ve özelliklerini ayarlamak için bir özellik kılavuzunda kullanan basit Araçlar/Seçenekler sayfası oluşturur.  
@@ -35,9 +35,9 @@ Bu izlenecek yolda incelemek ve özelliklerini ayarlamak için bir özellik kıl
   
 ### <a name="to-create-the-vsix-project-and-add-a-vspackage"></a>VSIX projesi oluşturun ve bir VSPackage'ı eklemek için  
   
-1.  Her Visual Studio uzantısı, uzantı varlıkları içeren bir VSIX dağıtım projesi ile başlar. Oluşturma bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] adlı VSIX projesi `MyToolsOptionsExtension`. VSIX proje şablonunda bulabilirsiniz **yeni proje** iletişim altında **Visual C#** > **genişletilebilirlik**.  
+1. Her Visual Studio uzantısı, uzantı varlıkları içeren bir VSIX dağıtım projesi ile başlar. Oluşturma bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] adlı VSIX projesi `MyToolsOptionsExtension`. VSIX proje şablonunda bulabilirsiniz **yeni proje** iletişim altında **Visual C#** > **genişletilebilirlik**.  
   
-2.  VSPackage adlı bir Visual Studio Paket öğe şablonu ekleyerek `MyToolsOptionsPackage`. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle** > **yeni öğe**. İçinde **Yeni Öğe Ekle iletişim**Git **Visual C# öğeleri** > **genişletilebilirlik** seçip **Visual Studio paket**. İçinde **adı** iletişim kutusunun altındaki alan, için dosya adını değiştirerek `MyToolsOptionsPackage.cs`. VSPackage'ı oluşturma hakkında daha fazla bilgi için bkz. [VSPackage içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-vspackage.md).  
+2. VSPackage adlı bir Visual Studio Paket öğe şablonu ekleyerek `MyToolsOptionsPackage`. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle** > **yeni öğe**. İçinde **Yeni Öğe Ekle iletişim**Git **Visual C# öğeleri** > **genişletilebilirlik** seçip **Visual Studio paket**. İçinde **adı** iletişim kutusunun altındaki alan, için dosya adını değiştirerek `MyToolsOptionsPackage.cs`. VSPackage'ı oluşturma hakkında daha fazla bilgi için bkz. [VSPackage içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-vspackage.md).  
   
 ### <a name="to-create-the-tools-options-property-grid"></a>Araçlar Seçenekler özellik kılavuzu oluşturma  
   

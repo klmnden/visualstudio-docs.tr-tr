@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9edfae9eb2109a81208cd864dd992dee565f7958
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 6718c3390e26b0949d26805e24bcffb17e4c6deb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101101"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872440"
 ---
 # <a name="remote-debugging"></a>Uzaktan Hata Ayıklama
 Farklı bir bilgisayara dağıtılan bir Visual Studio uygulamada hata ayıklaması yapabilirsiniz. Bunu yapmak için Visual Studio uzaktan hata ayıklayıcıyı kullanın.
@@ -95,25 +95,25 @@ ASP.NET ve diğer sunucu ortamlarında hata ayıklama için uzaktan hata ayıkla
 
  Uzaktan hata ayıklayıcıyı bir hizmet olarak yapılandırmak istiyorsanız, aşağıdaki adımları izleyin.
 
-1.  Bulma **uzaktan hata ayıklayıcı Yapılandırma Sihirbazı'nı** (rdbgwiz.exe). (Uzaktan hata ayıklayıcı ayrı bir uygulamadan budur.) Yalnızca uzak araçları yüklediğinizde kullanılabilir. Visual Studio ile yüklü değil.
+1. Bulma **uzaktan hata ayıklayıcı Yapılandırma Sihirbazı'nı** (rdbgwiz.exe). (Uzaktan hata ayıklayıcı ayrı bir uygulamadan budur.) Yalnızca uzak araçları yüklediğinizde kullanılabilir. Visual Studio ile yüklü değil.
 
-2.  Yapılandırma Sihirbazı'nı çalıştırmaya başlayın İlk sayfasına geldiğinde tıklayın **sonraki**.
+2. Yapılandırma Sihirbazı'nı çalıştırmaya başlayın İlk sayfasına geldiğinde tıklayın **sonraki**.
 
-3.  Denetleme **Visual Studio 2015 uzaktan hata ayıklayıcı bir hizmet olarak çalıştırmak** onay kutusu.
+3. Denetleme **Visual Studio 2015 uzaktan hata ayıklayıcı bir hizmet olarak çalıştırmak** onay kutusu.
 
-4.  Parola ve hesap adını ekleyin.
+4. Parola ve hesap adını ekleyin.
 
-     Eklemeniz gerekebilir **hizmet oturum açma** sağ bu hesap için kullanıcı (Bul **yerel güvenlik ilkesi** (secpol.msc) içinde **Başlat** sayfası veya pencere (veya türü  **secpol** bir komut isteminde). Penceresi açıldığında, çift **kullanıcı hakları ataması**, ardından bulun **hizmet oturum açma** sağ bölmede. Çift tıklatın. Kullanıcı hesabına eklemek **özellikleri** penceresini açın ve **Tamam**). **İleri**'ye tıklayın.
+    Eklemeniz gerekebilir **hizmet oturum açma** sağ bu hesap için kullanıcı (Bul **yerel güvenlik ilkesi** (secpol.msc) içinde **Başlat** sayfası veya pencere (veya türü  **secpol** bir komut isteminde). Penceresi açıldığında, çift **kullanıcı hakları ataması**, ardından bulun **hizmet oturum açma** sağ bölmede. Çift tıklatın. Kullanıcı hesabına eklemek **özellikleri** penceresini açın ve **Tamam**). **İleri**'ye tıklayın.
 
-5.  Uzak araçların iletişim kurmak istediğiniz ağ türünü seçin. En az bir ağ türü seçilmelidir. Bilgisayarları bir etki alanına bağlıysanız, ilk öğe seçmeniz gerekir. Bilgisayar bir çalışma grubunda veya ev grubu bağlıysa, ikinci veya üçüncü öğe seçmeniz gerekir. **İleri**'ye tıklayın.
+5. Uzak araçların iletişim kurmak istediğiniz ağ türünü seçin. En az bir ağ türü seçilmelidir. Bilgisayarları bir etki alanına bağlıysanız, ilk öğe seçmeniz gerekir. Bilgisayar bir çalışma grubunda veya ev grubu bağlıysa, ikinci veya üçüncü öğe seçmeniz gerekir. **İleri**'ye tıklayın.
 
-6.  Hizmetin başlatılması, görürsünüz **Visual Studio uzaktan hata ayıklayıcı Yapılandırma Sihirbazı başarıyla tamamladınız**. Hizmet başlatılamazsa göreceğiniz **Visual Studio uzaktan hata ayıklayıcı Yapılandırma Sihirbazı tamamlanamadı**. Sayfa aynı zamanda hizmetin başlatılması almak için izlemeniz gereken bazı ipuçları sağlar.
+6. Hizmetin başlatılması, görürsünüz **Visual Studio uzaktan hata ayıklayıcı Yapılandırma Sihirbazı başarıyla tamamladınız**. Hizmet başlatılamazsa göreceğiniz **Visual Studio uzaktan hata ayıklayıcı Yapılandırma Sihirbazı tamamlanamadı**. Sayfa aynı zamanda hizmetin başlatılması almak için izlemeniz gereken bazı ipuçları sağlar.
 
-7.  **Son**'a tıklayın.
+7. **Son**'a tıklayın.
 
- Bu noktada uzaktan hata ayıklayıcıyı bir hizmet olarak çalışıyor. Bu sayfasına giderek kontrol **Denetim Masası > Hizmetleri** ve örnek kod **Visual Studio 2015 uzaktan hata ayıklayıcı**.
+   Bu noktada uzaktan hata ayıklayıcıyı bir hizmet olarak çalışıyor. Bu sayfasına giderek kontrol **Denetim Masası > Hizmetleri** ve örnek kod **Visual Studio 2015 uzaktan hata ayıklayıcı**.
 
- Uzaktan hata ayıklayıcı hizmetini durdurup **Denetim Masası > Hizmetleri**.
+   Uzaktan hata ayıklayıcı hizmetini durdurup **Denetim Masası > Hizmetleri**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Uzak simgeleri ile hata ayıklamayı kurma
 

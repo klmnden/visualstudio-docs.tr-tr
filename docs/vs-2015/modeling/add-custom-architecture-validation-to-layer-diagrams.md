@@ -14,12 +14,12 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2012ff0729853d365ed9bb32a9420f5b41bf47fb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 26be7c766127c1da5d7aa4f26b2fb49cf510b850
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231107"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897921"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Katman diyagramlarına özel mimari doğrulaması ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,26 +44,26 @@ Kaynak kodunun katman diyagramındaki bağımlılıklar için uygun olduğunu do
   
 #### <a name="to-define-an-extension-by-using-a-project-template"></a>Bir proje şablonunu kullanarak bir uzantısı tanımlamak için  
   
-1.  Kullanarak yeni çözümde bir proje oluşturma **yeni proje** komutunu **dosya** menüsü.  
+1. Kullanarak yeni çözümde bir proje oluşturma **yeni proje** komutunu **dosya** menüsü.  
   
-2.  İçinde **yeni proje** iletişim kutusunun **modelleme projeleri**seçin **katman Tasarımcı doğrulama uzantısı**.  
+2. İçinde **yeni proje** iletişim kutusunun **modelleme projeleri**seçin **katman Tasarımcı doğrulama uzantısı**.  
   
-     Şablon, küçük bir örnek içeren bir proje oluşturur.  
+    Şablon, küçük bir örnek içeren bir proje oluşturur.  
   
-    > [!WARNING]
-    >  Okunabilmesini sağlamak şablonu çalışmak düzgün şekilde:  
-    >   
-    >  -   Çağrılarını düzenleyin `LogValidationError` isteğe bağlı bağımsız değişkenlerini kaldırmak için `errorSourceNodes` ve `errorTargetNodes`.  
-    > -   Özel özellikleri kullanırsanız, belirtilen güncelleştirmesini [katman diyagramlarına özel özellikler ekleme](../modeling/add-custom-properties-to-layer-diagrams.md).  
+   > [!WARNING]
+   >  Okunabilmesini sağlamak şablonu çalışmak düzgün şekilde:  
+   > 
+   > - Çağrılarını düzenleyin `LogValidationError` isteğe bağlı bağımsız değişkenlerini kaldırmak için `errorSourceNodes` ve `errorTargetNodes`.  
+   >   -   Özel özellikleri kullanırsanız, belirtilen güncelleştirmesini [katman diyagramlarına özel özellikler ekleme](../modeling/add-custom-properties-to-layer-diagrams.md).  
   
-3.  Doğrulamanızı tanımlamak için kodu düzenleyin. Daha fazla bilgi için [doğrulamayı programlama](#programming).  
+3. Doğrulamanızı tanımlamak için kodu düzenleyin. Daha fazla bilgi için [doğrulamayı programlama](#programming).  
   
-4.  Uzantıyı test etmek için bkz: [katman hatalarını ayıklamayı doğrulama](#debugging).  
+4. Uzantıyı test etmek için bkz: [katman hatalarını ayıklamayı doğrulama](#debugging).  
   
-    > [!NOTE]
-    >  Yönteminiz yalnızca belirli durumlarda çağrılır ve kesme noktaları otomatik olarak çalışmaz. Daha fazla bilgi için [katman hatalarını ayıklamayı doğrulama](#debugging).  
+   > [!NOTE]
+   >  Yönteminiz yalnızca belirli durumlarda çağrılır ve kesme noktaları otomatik olarak çalışmaz. Daha fazla bilgi için [katman hatalarını ayıklamayı doğrulama](#debugging).  
   
-5.  Ana örneğine uzantıyı yüklemek için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], veya başka bir bilgisayarda Bul **.vsix** dosyası **bin\\\***. Yüklemek istediğiniz bilgisayara kopyalayın ve ardından çift tıklayın. Kaldırmak için kullanın **Uzantılar ve güncelleştirmeler** üzerinde **Araçları** menüsü.  
+5. Ana örneğine uzantıyı yüklemek için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], veya başka bir bilgisayarda Bul **.vsix** dosyası *bin\\*. Yüklemek istediğiniz bilgisayara kopyalayın ve ardından çift tıklayın. Kaldırmak için kullanın **Uzantılar ve güncelleştirmeler** üzerinde **Araçları** menüsü.  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Ayrı bir VSIX'e katman Doğrulayıcı ekleme  
  Katman doğrulayıcılarının, komutların ve diğer uzantıların bulunduğu bir VSIX oluşturmak istiyorsanız, VSIX tanımlamak için bir proje ve işleyiciler için ayrı projeler oluşturmanızı öneririz. Diğer modelleme uzantısı türleri hakkında daha fazla bilgi için bkz: [genişletmek UML modellerini ve diyagramları](../modeling/extend-uml-models-and-diagrams.md).  
@@ -127,42 +127,42 @@ Kaynak kodunun katman diyagramındaki bağımlılıklar için uygun olduğunu do
 ##  <a name="programming"></a> Programlama doğrulaması  
  Katman doğrulama uzantısı tanımlamak için aşağıdaki özelliklere sahip bir sınıf tanımlayın:  
   
--   Bildirimin genel biçimi aşağıdaki gibidir:  
+- Bildirimin genel biçimi aşağıdaki gibidir:  
   
-    ```  
+  ```  
   
-    using System.ComponentModel.Composition;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
-    using Microsoft.VisualStudio.GraphModel;  
-    ...  
-     [Export(typeof(IValidateArchitectureExtension))]  
-      public partial class Validator1Extension :  
-                      IValidateArchitectureExtension  
+  using System.ComponentModel.Composition;  
+  using Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema;  
+  using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
+  using Microsoft.VisualStudio.GraphModel;  
+  ...  
+   [Export(typeof(IValidateArchitectureExtension))]  
+    public partial class Validator1Extension :  
+                    IValidateArchitectureExtension  
+    {  
+      public void ValidateArchitecture(Graph graph)  
       {  
-        public void ValidateArchitecture(Graph graph)  
-        {  
-           GraphSchema schema = graph.DocumentSchema;  
-          ...  
-      } }  
-    ```  
+         GraphSchema schema = graph.DocumentSchema;  
+        ...  
+    } }  
+  ```  
   
--   Bir hata bulduğunuzda, bunu kullanarak bildirebilirsiniz `LogValidationError()`.  
+- Bir hata bulduğunuzda, bunu kullanarak bildirebilirsiniz `LogValidationError()`.  
   
-    > [!WARNING]
-    >  İsteğe bağlı parametreleri kullanmayın `LogValidationError`.  
+  > [!WARNING]
+  >  İsteğe bağlı parametreleri kullanmayın `LogValidationError`.  
   
- Kullanıcı ne zaman çağırır **Mimariyi Doğrula** menü komutunu, katman çalışma zamanı sistemi olmaktadır katmanları ve onların yapılarını bir grafik oluşturur. Grafik dört bölümden oluşur:  
+  Kullanıcı ne zaman çağırır **Mimariyi Doğrula** menü komutunu, katman çalışma zamanı sistemi olmaktadır katmanları ve onların yapılarını bir grafik oluşturur. Grafik dört bölümden oluşur:  
   
--   Katman modelleri [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] grafik içerisinde düğümler ve bağlantılar olarak temsil edilen çözümü.  
+- Katman modelleri [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] grafik içerisinde düğümler ve bağlantılar olarak temsil edilen çözümü.  
   
--   Kod, proje öğeleri ve çözümde tanımlanan ve düğümler ve bağlantılar analiz süreci tarafından bağımlılıkları temsil eden olarak temsil edilen diğer yapıtlar.  
+- Kod, proje öğeleri ve çözümde tanımlanan ve düğümler ve bağlantılar analiz süreci tarafından bağımlılıkları temsil eden olarak temsil edilen diğer yapıtlar.  
   
--   Katman düğümlerinden kod yapı düğümlerine bağlantılar.  
+- Katman düğümlerinden kod yapı düğümlerine bağlantılar.  
   
--   Doğrulayıcı tarafından bulunan hataları temsil eden düğümler.  
+- Doğrulayıcı tarafından bulunan hataları temsil eden düğümler.  
   
- Grafik oluşturulduğunda standart doğrulama yöntemi çağrılır. Bu tamamlandığında, yüklenen uzantı doğrulama yöntemleri belirtilmemiş sırayla çağrılır. Graf geçirilir `ValidateArchitecture` yöntemi grafiği tarar ve bulduğu tüm hataları bildirin.  
+  Grafik oluşturulduğunda standart doğrulama yöntemi çağrılır. Bu tamamlandığında, yüklenen uzantı doğrulama yöntemleri belirtilmemiş sırayla çağrılır. Graf geçirilir `ValidateArchitecture` yöntemi grafiği tarar ve bulduğu tüm hataları bildirin.  
   
 > [!NOTE]
 >  Bu UML diyagramlarına uygulanan doğrulama işlemi ile aynı değildir ve bu etki alanına özgü dillerde kullanılabilecek doğrulama işlemi ile aynı değil.  
@@ -173,25 +173,25 @@ Kaynak kodunun katman diyagramındaki bağımlılıklar için uygun olduğunu do
   
  Her düğüm ve her bağlantı, öğe veya temsil ettiği ilişki türünü belirten bir veya daha fazla kategoriye sahiptir. Tipik bir grafiğin düğümleri aşağıdaki kategorileri içerir:  
   
--   Dsl.LayerModel  
+- Dsl.LayerModel  
   
--   Dsl.Layer  
+- Dsl.Layer  
   
--   Dsl.Reference  
+- Dsl.Reference  
   
--   CodeSchema_Type  
+- CodeSchema_Type  
   
--   CodeSchema_Namespace  
+- CodeSchema_Namespace  
   
--   CodeSchema_Type  
+- CodeSchema_Type  
   
--   CodeSchema_Method  
+- CodeSchema_Method  
   
--   CodeSchema_Field  
+- CodeSchema_Field  
   
--   CodeSchema_Property  
+- CodeSchema_Property  
   
- Öğeleri kodda katmanlardan bağlantılar "Temsil" Bu kategoriye atanmış.  
+  Öğeleri kodda katmanlardan bağlantılar "Temsil" Bu kategoriye atanmış.  
   
 ##  <a name="debugging"></a> Hata ayıklama doğrulama  
  Katman doğrulama uzantınıza hata ayıklamak için CTRL + F5 tuşlarına basın. Deneysel örneği [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] açılır. Bu örnekte, bir katman modeli oluşturun veya açın. Bu model, kodu ile ilişkilendirilmiş olmalıdır ve en az bir bağımlılığı olmalıdır.  
@@ -199,11 +199,11 @@ Kaynak kodunun katman diyagramındaki bağımlılıklar için uygun olduğunu do
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Bağımlılıklar içeren bir çözümü test etme  
  Aşağıdaki özellikler olmadıkça doğrulama yürütülmez:  
   
--   Katman diyagramı üzerinde en az bir bağımlılık bağlantısı yoktur.  
+- Katman diyagramı üzerinde en az bir bağımlılık bağlantısı yoktur.  
   
--   Model kod öğeleri ile ilişkili Katmanlar vardır.  
+- Model kod öğeleri ile ilişkili Katmanlar vardır.  
   
- Deneysel örneğini Başlat ilk kez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] doğrulama uzantınızı test etmek için açın veya bu özelliklere sahip bir çözüm oluşturun.  
+  Deneysel örneğini Başlat ilk kez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] doğrulama uzantınızı test etmek için açın veya bu özelliklere sahip bir çözüm oluşturun.  
   
 ### <a name="run-clean-solution-before-validate-architecture"></a>Mimariyi önce temiz çözümü çalıştırma  
  Doğrulama kodunuzu güncellediğinizde kullanın **çözümü Temizle** komutunu **derleme** doğrulama komutunu test etmeden önce Deneysel çözümde menüsünde. Bu, doğrulama sonuçları önbelleğe alındığı için gereklidir. Test katman diyagramını veya buna ait kodu doğrulamadıysanız doğrulama yöntemleri yürütülmez.  

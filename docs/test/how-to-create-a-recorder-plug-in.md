@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 639e6dc4fb2d62258f94ca09d9f9155396748379
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3851b70f818c9cc601dbbdabce059e16fec747ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909783"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Nasıl yapılır: kaydedici eklentisi oluşturma
 
@@ -87,11 +87,11 @@ Aşağıdaki yordamlar nasıl ilkel kodunun bir kaydedici eklentisi oluşturmak,
 
 ### <a name="deploy-the-recorder-plug-in"></a>Kaydedici eklentisini dağıtın
 
-Kaydedici eklentisini derledikten sonra ortaya çıkan DLL'yi iki konumdan birine yerleştirmeniz gerekecektir:
+Kaydedici eklentisini derledikten sonra ortaya çıkan DLL'yi iki konumdan birinde yerleştirin:
 
--   *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins*
+- *% ProgramFiles (x86) %\Microsoft Visual Studio\\[sürüm]\\[sürüm] \Common7\IDE\PrivateAssemblies\WebTestPlugins*
 
--   *%USERPROFILE%\My Documents\Visual Studio \<* sürüm *> \WebTestPlugins*
+- *%USERPROFILE%\Documents\Visual studio [sürüm] \WebTestPlugins*
 
 > [!WARNING]
 > Kaydedici eklentisini iki konumdan birine kopyaladıktan sonra kaydedici eklentisinin kaydedilmesi için için Visual Studio'yu yeniden başlatmanız gerekir.
@@ -113,8 +113,8 @@ Kaydedici eklentisini derledikten sonra ortaya çıkan DLL'yi iki konumdan birin
     >
     > Eklentilerinizi birine kod değişikliği yapmanız ve yeni bir DLL sürümü oluşturursanız Bunun nedeni **(sürüm = 0.0.0.0)**, ancak eklenti hala özgün eklenti sürümüne başvuruyor. Bu sorunu gidermek için şu adımları izleyin:
     >
-    > 1.  Web performansı ve yük testi projesi içinde başvurularda bir uyarı görürsünüz. Kaldırın ve Başvuruyu eklenti DLL'nizden yeniden ekleyin.
-    > 2.  Test veya uygun konumdan eklentiyi kaldırın ve yeniden ekleyin.
+    > 1. Web performansı ve yük testi projesi içinde başvurularda bir uyarı görürsünüz. Kaldırın ve Başvuruyu eklenti DLL'nizden yeniden ekleyin.
+    > 2. Test veya uygun konumdan eklentiyi kaldırın ve yeniden ekleyin.
 
 ## <a name="example"></a>Örnek
 
@@ -123,7 +123,7 @@ Bu örnek, özelleştirilmiş web Performans Testi Kaydedicisi özel dinamik par
 > [!NOTE]
 > Örnek kod tam listesi, bu konunun altında bulunur.
 
- **Örnek kodu gözden geçirme**
+**Örnek kodu gözden geçirme**
 
 ## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>ReportSession ilk sayfayı bulmak için sonuç üzerinden yineleme yapma
 

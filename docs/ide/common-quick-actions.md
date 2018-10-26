@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 92ac0daf0f1326676e37dcddd0a493c06a19df96
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 9c6eaa3b776e7a4c4e90795265f94af2d0df994b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863679"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894020"
 ---
 # <a name="common-quick-actions"></a>Yaygın Hızlı Eylemler
 
@@ -59,8 +59,8 @@ Function MyFunction as Integer
 End Function
 ```
 
-|  Hata Kimliği | Geçerli diller |  Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
+| Hata Kimliği | Geçerli diller | Desteklenen sürüm |
+| ------- | -------------------- | ---------------- |
 | CS0103, BC30002 | C# ve Visual Basic | Visual Studio 2015 Güncelleştirme 2 |
 
 ### <a name="resolve-git-merge-conflict"></a>Git birleştirme çakışması çözümleme
@@ -89,9 +89,9 @@ private void MyMethod()
 }
 ```
 
-|  Hata Kimliği | Geçerli diller |  Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
-| CS8300, BC37284  | C# ve Visual Basic | Visual Studio 2017 sürüm 15.3 |
+| Hata Kimliği | Geçerli diller | Desteklenen sürüm |
+| ------- | -------------------- | ---------------- |
+| CS8300, BC37284 | C# ve Visual Basic | Visual Studio 2017 sürüm 15.3 |
 
 ## <a name="actions-that-remove-unnecessary-code"></a>Gereksiz kodu Kaldır eylemleri
 
@@ -99,9 +99,9 @@ private void MyMethod()
 
 **Kaldırma gereksiz kullanımları/Imports** hızlı eylem kaldırır kullanılmayan `using` ve `Import` deyimleri geçerli dosya için. Bu öğeyi seçin, kullanılmayan ad alanı içeri aktarmaları kaldırılır.
 
-|  Geçerli diller |  Desteklenen sürüm |
-|  -------------------- | ----------------  |
-|  C# ve Visual Basic | Visual Studio 2015 RTW |
+| Geçerli diller | Desteklenen sürüm |
+| -------------------- | ---------------- |
+| C# ve Visual Basic | Visual Studio 2015 RTW |
 
 ### <a name="remove-unnecessary-cast"></a>Gereksiz tür dönüştürmeyi Kaldır
 
@@ -127,8 +127,8 @@ Dim number as Integer = CType(3, Integer)
 Dim number as Integer = 3
 ```
 
-|  Tanılama kimliği | Geçerli diller |  Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
+| Tanılama kimliği | Geçerli diller | Desteklenen sürüm |
+| ------- | -------------------- | ---------------- |
 | IDE0004 | C# ve Visual Basic | Visual Studio 2015 RTW |
 
 ### <a name="remove-unused-variables"></a>Kullanılmayan değişkenler Kaldır
@@ -154,8 +154,8 @@ public MyMethod()
 }
 ```
 
-|  Tanılama kimliği | Geçerli diller |  Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
+| Tanılama kimliği | Geçerli diller | Desteklenen sürüm |
+| ------- | -------------------- | ---------------- |
 | CS0219, BC42024 | C# ve Visual Basic | Visual Studio 2017 sürüm 15.3 |
 
 ### <a name="remove-type-from-default-value-expression"></a>Varsayılan değer ifadesinden türünü Kaldır
@@ -170,11 +170,10 @@ void DoWork(CancellationToken cancellationToken = default(CancellationToken)) { 
 
 // After
 void DoWork(CancellationToken cancellationToken = default) { ... }
-
 ```
 
-|  Tanılama kimliği | Geçerli diller |  Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
+| Tanılama kimliği | Geçerli diller | Desteklenen sürüm |
+| ------- | -------------------- | ---------------- |
 | IDE0034 | C# 7.1 + | Visual Studio 2017 sürüm 15.3 |
 
 ## <a name="actions-that-add-missing-code"></a>Eksik kod ekleme eylemleri
@@ -212,8 +211,8 @@ Imports System.Diagnostics
 Debug.WriteLine("Hello")
 ```
 
-|  Tanılama kimliği | Geçerli diller |  Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
+| Tanılama kimliği | Geçerli diller | Desteklenen sürüm |
+| ------- | -------------------- | ---------------- |
 | CS0103, BC30451 | C# ve Visual Basic| Visual Studio 2015 Güncelleştirme 2 |
 
 ### <a name="add-missing-casesdefault-caseboth"></a>Eksik durumları/varsayılan durumda/hem Ekle
@@ -281,8 +280,8 @@ Select Case myEnum
 End Select
 ```
 
-|  Tanılama kimliği | Geçerli diller |  Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
+| Tanılama kimliği | Geçerli diller | Desteklenen sürüm |
+| ------- | -------------------- | ---------------- |
 | IDE0010 | C# ve Visual Basic| Visual Studio 2017 sürüm 15.3 |
 
 ### <a name="add-null-checks-for-parameters"></a>Parametre için null denetimleri Ekle
@@ -315,8 +314,8 @@ class MyClass
 }
 ```
 
-| Geçerli diller |  Desteklenen sürüm |
-| -------------------- | ----------------  |
+| Geçerli diller | Desteklenen sürüm |
+| -------------------- | ---------------- |
 | C# ve Visual Basic| Visual Studio 2017 sürüm 15.3 |
 
 ### <a name="add-argument-name"></a>Bağımsız değişken adını Ekle
@@ -331,8 +330,8 @@ var date = new DateTime(1997, 7, 8);
 var date = new DateTime(year: 1997, month: 7, day: 8);
 ```
 
-| Geçerli diller |  Desteklenen sürüm |
-| -------------------- | ----------------  |
+| Geçerli diller | Desteklenen sürüm |
+| -------------------- | ---------------- |
 | C# ve Visual Basic| Visual Studio 2017 sürüm 15.3 |
 
 ### <a name="add-braces"></a>Küme ayracı Ekle
@@ -353,8 +352,8 @@ if (true)
 }
 ```
 
-|  Tanılama kimliği | Geçerli diller |  Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
+| Tanılama kimliği | Geçerli diller | Desteklenen sürüm |
+| ------- | -------------------- | ---------------- |
 | IDE0011 | C# | Visual Studio 2017 RTW |
 
 ### <a name="add-and-order-modifiers"></a>Ekleme ve sipariş değiştiriciler
@@ -387,8 +386,8 @@ static private int thisFieldIsPublic;
 private static int thisFieldIsPublic;
 ```
 
-|  Tanılama kimliği | Geçerli diller |  Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
+| Tanılama kimliği | Geçerli diller | Desteklenen sürüm |
+| ------- | -------------------- | ---------------- |
 | IDE0036 | C# ve Visual Basic| Visual Studio 2017 sürüm 15.5 |
 | IDE0040 | C# ve Visual Basic| Visual Studio 2017 sürüm 15.5 |
 
@@ -445,8 +444,8 @@ Select Case obj
 End Select
 ```
 
-| Geçerli diller |  Desteklenen sürüm |
-| -------------------- | ----------------  |
+| Geçerli diller | Desteklenen sürüm |
+| -------------------- | ---------------- |
 | C# ve Visual Basic| Visual Studio 2017 sürüm 15.3 |
 
 ### <a name="convert-to-interpolated-string"></a>Enterpolasyonlu dizeye Dönüştür
@@ -477,8 +476,8 @@ Dim num as Integer = 3
 Dim s As String = $"My string with {num} in the middle"
 ```
 
-| Geçerli diller |  Desteklenen sürüm |
-| -------------------- | ----------------  |
+| Geçerli diller | Desteklenen sürüm |
+| -------------------- | ---------------- |
 | C# 6.0 + ve Visual Basic 14 + | Visual Studio 2017 RTW |
 
 ### <a name="use-object-initializers"></a>Nesne başlatıcıları kullanın
@@ -508,7 +507,7 @@ Dim c = New Customer() With {.Age = 21}
 ```
 
 | Tanılama kimliği | Geçerli diller | Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | IDE0017 | C# ve Visual Basic | Visual Studio 2017 RTW |
 
 ### <a name="use-collection-initializers"></a>Koleksiyon başlatıcıları kullanın
@@ -542,7 +541,7 @@ Dim list = New List(Of Integer) From {1, 2, 3}
 ```
 
 | Tanılama kimliği | Geçerli diller | Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | IDE0028 | C# ve Visual Basic | Visual Studio 2017 RTW |
 
 ### <a name="convert-auto-property-to-full-property"></a>Otomatik özellik tam özelliğe Dönüştür
@@ -582,8 +581,8 @@ Public Property Name As String
 End Property
 ```
 
-|  Geçerli diller |  Desteklenen sürüm |
-|  -------------------- | ----------------  |
+| Geçerli diller | Desteklenen sürüm |
+| -------------------- | ---------------- |
 | C# ve Visual Basic | Visual Studio 2017 sürüm 15.5 |
 
 ### <a name="convert-block-body-to-expression-bodied-member"></a>İfade gövdeli üyesi için blok gövdesi Dönüştür
@@ -635,8 +634,8 @@ class MyClass4
 }
 ```
 
-|  Tanılama kimliği | Geçerli diller |  Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
+| Tanılama kimliği | Geçerli diller | Desteklenen sürüm |
+| ------- | -------------------- | ---------------- |
 | IDE0021-27 | C# 6.0 VE ÜZERİ | Visual Studio 2017 RTW |
 
 ### <a name="convert-anonymous-function-to-local-function"></a>Anonim işlev yerel işleve dönüştürme
@@ -662,8 +661,8 @@ int fibonacci(int n)
 
 ### <a name="convert-referenceequals-to-is-null"></a>'ReferenceEquals', 'null olduğu için' Dönüştür
 
-|  Tanılama kimliği | Geçerli diller |  Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
+| Tanılama kimliği | Geçerli diller | Desteklenen sürüm |
+| ------- | -------------------- | ---------------- |
 | IDE0041 | C# 7.0 + | Visual Studio 2017 sürüm 15.5 |
 
 Bu hızlı eylem kullanımını öneren [desen eşleştirme](/dotnet/csharp/pattern-matching) yerine ```ReferenceEquals``` kodlama düzenini, mümkün olduğunda.
@@ -686,8 +685,8 @@ if (value is null)
 }
 ```
 
-|  Tanılama kimliği | Geçerli diller |  Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
+| Tanılama kimliği | Geçerli diller | Desteklenen sürüm |
+| ------- | -------------------- | ---------------- |
 | IDE0039 | C# 7.0 + | Visual Studio 2017 sürüm 15.5 |
 
 ### <a name="introduce-pattern-matching"></a>Desen eşleştirme Ekle
@@ -729,7 +728,7 @@ if (o is string s)
 ```
 
 | Tanılama kimliği | Geçerli diller | Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | IDE0020 | C# 7.0 + | Visual Studio 2017 RTW |
 | IDE0019 | C# 7.0 + | Visual Studio 2017 RTW |
 
@@ -758,7 +757,7 @@ Dim countdown As Integer = &H200000
 ```
 
 | Geçerli diller | Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | C# 7.0 + ve Visual Basic 14 + | Visual Studio 2017 sürüm 15.3 |
 
 ### <a name="insert-digit-separators-into-literals"></a>Rakam ayırıcıları değişmez değerleri Ekle
@@ -786,7 +785,7 @@ Dim countdown As Integer = 1_000_000
 ```
 
 | Geçerli diller | Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | C# 7.0 + ve Visual Basic 14 + | Visual Studio 2017 sürüm 15.3 |
 
 ### <a name="use-explicit-tuple-names"></a>Açık demet adları kullanın
@@ -818,7 +817,7 @@ Dim name = customer.name
 ```
 
 | Tanılama kimliği | Geçerli diller | Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | IDE0033 | C# 7.0 + ve Visual Basic 15 + | Visual Studio 2017 RTW |
 
 ### <a name="use-inferred-names"></a>Çıkarsanan adlar kullanın
@@ -846,7 +845,7 @@ var tuple = (age, name);
 ```
 
 | Tanılama kimliği | Geçerli diller | Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | IDE0037 | C# | Visual Studio 2017 v. 15.5 |
 | IDE0037 | C# 7.1 + | Visual Studio 2017 v. 15.5 |
 
@@ -873,7 +872,7 @@ Console.WriteLine($"{x} {y}");
 ```
 
 | Tanılama kimliği | Geçerli diller | Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | IDE0042 | C# 7.0 + | Visual Studio 2017 v. 15.5 |
 
 ### <a name="make-method-synchronous"></a>Yöntem zaman uyumlu yapın
@@ -910,8 +909,8 @@ Function MyAsyncMethod() As Integer
 End Function
 ```
 
-|  Hata Kimliği | Geçerli diller |  Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
+| Hata Kimliği | Geçerli diller | Desteklenen sürüm |
+| ------- | -------------------- | ---------------- |
 | CS1998, BC42356 | C# ve Visual Basic | Visual Studio 2015 Güncelleştirme 2 |
 
 ### <a name="make-method-asynchronous"></a>Zaman uyumsuz yöntem yapın
@@ -948,8 +947,8 @@ Async Function MyAsyncMethod() As Task(Of Integer)
 End Function
 ```
 
-|  Hata Kimliği | Geçerli diller |  Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
+| Hata Kimliği | Geçerli diller | Desteklenen sürüm |
+| ------- | -------------------- | ---------------- |
 | CS4032, BC37057 | C# ve Visual Basic | Visual Studio 2017 |
 
 ## <a name="see-also"></a>Ayrıca bkz.

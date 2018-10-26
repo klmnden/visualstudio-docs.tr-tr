@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8e7a90925c4e7a86b39ca8e3d998055d09400e7
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 67c773fcd6afe5953d47e7f563189263d1092444
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500904"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926553"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUID'leri ve kimlikleri, Visual Studio komutları
 Visual Studio tümleşik geliştirme ortamında (IDE) dahil komutların GUID ve ID değerleri Visual Studio SDK'ın bir parçası olarak yüklenen .vsct dosyaları tanımlanır. Daha fazla bilgi için [IDE tanımlı komutlar, menüler ve gruplar](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -34,23 +34,23 @@ Visual Studio tümleşik geliştirme ortamında (IDE) dahil komutların GUID ve 
   
 ### <a name="to-locate-a-command-definition"></a>Bir komut tanımı bulunamadı  
   
-1.  Aşağıdaki dosyaları Visual Studio'da açın *< Visual Studio SDK yükleme yolunu\>\VisualStudioIntegration\Common\Inc\\*  klasör: *SharedCmdDef.vsct*, *ShellCmdDef.vsct*, *VsDbgCmdUsed.vsct*, *Venusmenu.vsct*.  
+1. Aşağıdaki dosyaları Visual Studio'da açın *< Visual Studio SDK yükleme yolunu\>\VisualStudioIntegration\Common\Inc\\*  klasör: *SharedCmdDef.vsct*, *ShellCmdDef.vsct*, *VsDbgCmdUsed.vsct*, *Venusmenu.vsct*.  
   
-     Çoğu Visual Studio komutları tanımlanan *SharedCmdDef.vsct* ve *ShellCmdDef.vsct*. *VsDbgCmdUsed.vsct* hata ayıklayıcıya, ilgili komutları tanımlar ve *Venusmenu.vsct* Web geliştirmeye özgü komutlar tanımlar.  
+    Çoğu Visual Studio komutları tanımlanan *SharedCmdDef.vsct* ve *ShellCmdDef.vsct*. *VsDbgCmdUsed.vsct* hata ayıklayıcıya, ilgili komutları tanımlar ve *Venusmenu.vsct* Web geliştirmeye özgü komutlar tanımlar.  
   
-2.  Komut bir menü öğesi ise, menü öğesinin tam metin unutmayın. Araç çubuğu üzerindeki bir düğme komutsa üzerine geldiğinizde görüntülenen araç ipucu metni unutmayın.  
+2. Komut bir menü öğesi ise, menü öğesinin tam metin unutmayın. Araç çubuğu üzerindeki bir düğme komutsa üzerine geldiğinizde görüntülenen araç ipucu metni unutmayın.  
   
-3.  Tuşuna **Ctrl**+**F** açmak için **Bul** iletişim kutusu.  
+3. Tuşuna **Ctrl**+**F** açmak için **Bul** iletişim kutusu.  
   
-4.  İçinde **Aranan** 2. adımda not ettiğiniz metin yazın.  
+4. İçinde **Aranan** 2. adımda not ettiğiniz metin yazın.  
   
-5.  Doğrulayın **tüm açık belgeleri** görüntülenen **konum** kutusu.  
+5. Doğrulayın **tüm açık belgeleri** görüntülenen **konum** kutusu.  
   
-6.  Tıklayın **Sonrakini Bul** içinde metin seçilene kadar düğmesini `<Strings>` bölümünü bir [Button öğesi](../../extensibility/button-element.md).  
+6. Tıklayın **Sonrakini Bul** içinde metin seçilene kadar düğmesini `<Strings>` bölümünü bir [Button öğesi](../../extensibility/button-element.md).  
   
-     `<Button>` Komutu görünen öğedir komut tanımı.  
+    `<Button>` Komutu görünen öğedir komut tanımı.  
   
- Komut tanımı bulduğunuzda, komutu bir kopyasını başka bir menü veya araç çubuğunda oluşturarak koyabilirsiniz bir [CommandPlacement öğesi](../../extensibility/commandplacement-element.md) aynı olan `guid` ve `id` değerleri komutu. Daha fazla bilgi için [yeniden kullanılabilir düğme grupları oluşturma](../../extensibility/creating-reusable-groups-of-buttons.md).  
+   Komut tanımı bulduğunuzda, komutu bir kopyasını başka bir menü veya araç çubuğunda oluşturarak koyabilirsiniz bir [CommandPlacement öğesi](../../extensibility/commandplacement-element.md) aynı olan `guid` ve `id` değerleri komutu. Daha fazla bilgi için [yeniden kullanılabilir düğme grupları oluşturma](../../extensibility/creating-reusable-groups-of-buttons.md).  
   
 ### <a name="special-cases"></a>Özel durumlar  
  Aşağıdaki durumlarda, araç ipucu metnini ve menü metni tam olarak komut tanımında nedir eşleşmiyor olabilir.  

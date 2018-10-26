@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27cec31b775ba5f8d201c81cbd65f5b161353986
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: be9081bc2b6778d2f115ebe61078956aeace85e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252303"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842800"
 ---
 # <a name="send-diagnostic-messages-to-the-output-window"></a>Tanılama iletilerini çıkış penceresine Gönder.
 Çalışma zamanı iletileri yazabileceğiniz **çıkış** penceresini kullanarak <xref:System.Diagnostics.Debug> sınıfı veya <xref:System.Diagnostics.Trace> parçası olan bir sınıf, <xref:System.Diagnostics> sınıf kitaplığı. Kullanım <xref:System.Diagnostics.Debug> yalnızca içinde çıktıyı sınıfının *hata ayıklama* programınızın sürümü. Kullanım <xref:System.Diagnostics.Trace> hem de çıkış isterseniz sınıfı *hata ayıklama* ve *yayın* sürümleri.  
@@ -41,25 +41,25 @@ ms.locfileid: "39252303"
 ## <a name="output-methods"></a>Çıkış yöntemleri  
  <xref:System.Diagnostics.Trace> Ve <xref:System.Diagnostics.Debug> sınıfları aşağıdaki çıktı yöntemlerini sağlar:  
   
--   Çeşitli `Write` yürütme bozmadan bilgi çıkış yöntemleri. Bu yöntemler yerine `Debug.Print` Visual Basic'in önceki sürümlerinde kullanılan yöntem.  
+- Çeşitli `Write` yürütme bozmadan bilgi çıkış yöntemleri. Bu yöntemler yerine `Debug.Print` Visual Basic'in önceki sürümlerinde kullanılan yöntem.  
   
--   <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> ve <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> belirtilen bir koşulu başarısız olursa, yürütme ve çıkış bilgileri sonu yöntemleri. Varsayılan olarak, `Assert` yöntemi bilgileri iletişim kutusu içinde görüntüler. Daha fazla bilgi için [yönetilen koddaki onaylar](../debugger/assertions-in-managed-code.md).  
+- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> ve <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> belirtilen bir koşulu başarısız olursa, yürütme ve çıkış bilgileri sonu yöntemleri. Varsayılan olarak, `Assert` yöntemi bilgileri iletişim kutusu içinde görüntüler. Daha fazla bilgi için [yönetilen koddaki onaylar](../debugger/assertions-in-managed-code.md).  
   
--   <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> Ve <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> her zaman yürütmeyi keser ve bilgi yöntemleri. Varsayılan olarak, `Fail` yöntemleri bilgileri iletişim kutusu içinde görüntüler.  
+- <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> Ve <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> her zaman yürütmeyi keser ve bilgi yöntemleri. Varsayılan olarak, `Fail` yöntemleri bilgileri iletişim kutusu içinde görüntüler.  
   
- Programı, uygulamanızın yanı sıra **çıkış** penceresi hakkında bilgileri görüntüleyebilirsiniz:  
+  Programı, uygulamanızın yanı sıra **çıkış** penceresi hakkında bilgileri görüntüleyebilirsiniz:  
   
--   Modüller hata ayıklayıcı yüklü veya kaldırılmış.  
+- Modüller hata ayıklayıcı yüklü veya kaldırılmış.  
   
--   Oluşan özel durumlar.  
+- Oluşan özel durumlar.  
   
--   Çıkış işlemleri.  
+- Çıkış işlemleri.  
   
--   Çıkış iş parçacıkları.  
+- Çıkış iş parçacıkları.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
  [Çıkış penceresi](../ide/reference/output-window.md)   
  [İzleme ve İşaretleme Uygulamaları](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
  [C#, F # ve Visual Basic proje türleri](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)
+ [Yönetilen Kodda Hata Ayıklama](../debugger/debugging-managed-code.md)

@@ -18,27 +18,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d235508bb0b58ac17846d0b02db25f044c504deb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5db5e9408a64df80311667267561ee69234fd7d5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634712"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852758"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>İzlenecek yol: bir SharePoint uygulama profili
   Bu izlenecek yol, profil oluşturma araçlarını Visual Studio'da bir SharePoint uygulama performansını iyileştirmek için nasıl kullanılacağını gösterir. Örneğin, özellik olayı alıcısını performansını düşürür bir boşta döngü içeren bir SharePoint özelliği olay alıcısı uygulamasıdır. Visual Studio profil oluşturucu, bulun ve proje en pahalı (yavaş gerçekleşir) parçası olarak da bilinen ortadan sağlar *etkin yolu*.  
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
--   [Bir özellik ve özellik olayı alıcısını ekleme](#BKMK_AddFtrandFtrEvntReceiver).  
+- [Bir özellik ve özellik olayı alıcısını ekleme](#BKMK_AddFtrandFtrEvntReceiver).  
   
--   [Yapılandırma ve SharePoint uygulaması dağıtma](#BKMK_ConfigSharePointApp).  
+- [Yapılandırma ve SharePoint uygulaması dağıtma](#BKMK_ConfigSharePointApp).  
   
--   [SharePoint uygulaması çalıştıran](#BKMK_RunSPApp).  
+- [SharePoint uygulaması çalıştıran](#BKMK_RunSPApp).  
   
--   [Görüntüleme ve profil oluşturma sonuçları yorumlayarak destek sağlama](#BKMK_ViewResults).  
+- [Görüntüleme ve profil oluşturma sonuçları yorumlayarak destek sağlama](#BKMK_ViewResults).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
@@ -52,23 +52,23 @@ ms.locfileid: "42634712"
   
 #### <a name="to-create-a-sharepoint-project"></a>Bir SharePoint projesi oluşturmak için  
   
-1.  Menü çubuğunda, **dosya** > **yeni** > **proje** görüntülenecek **yeni proje** iletişim kutusu.  
+1. Menü çubuğunda, **dosya** > **yeni** > **proje** görüntülenecek **yeni proje** iletişim kutusu.  
   
-2.  Genişletin **SharePoint** ya da düğümünde **Visual C#** veya **Visual Basic**ve ardından **2010** düğümü.  
+2. Genişletin **SharePoint** ya da düğümünde **Visual C#** veya **Visual Basic**ve ardından **2010** düğümü.  
   
-3.  Şablonlar bölmesinde seçin **SharePoint 2010 projesi** şablonu.  
+3. Şablonlar bölmesinde seçin **SharePoint 2010 projesi** şablonu.  
   
-4.  İçinde **adı** kutusuna **ProfileTest**ve ardından **Tamam** düğmesi.  
+4. İçinde **adı** kutusuna **ProfileTest**ve ardından **Tamam** düğmesi.  
   
-     **SharePoint Özelleştirme Sihirbazı** görünür.  
+    **SharePoint Özelleştirme Sihirbazı** görünür.  
   
-5.  Üzerinde **hata ayıklama için site ve güvenlik düzeyini belirtin** sayfasında, site tanımı hata ayıklamak istediğiniz sunucu için SharePoint sitesi URL'sini girin veya varsayılan konumu kullanın (http://*sistem adı*/) .  
+5. Üzerinde **hata ayıklama için site ve güvenlik düzeyini belirtin** sayfasında, site tanımı hata ayıklamak istediğiniz sunucu için SharePoint sitesi URL'sini girin veya varsayılan konumu kullanın (http://<em>sistem adı</em>/) .  
   
-6.  İçinde **bu SharePoint çözümünün güven düzeyi nedir?** bölümünde, seçin **Grup çözümü olarak Dağıt** seçenek düğmesini.  
+6. İçinde **bu SharePoint çözümünün güven düzeyi nedir?** bölümünde, seçin **Grup çözümü olarak Dağıt** seçenek düğmesini.  
   
-     Şu anda, yalnızca profili Grup çözümlerini kullanabilirsiniz. Grup çözümlerini karşı korumalı çözümler hakkında daha fazla bilgi için bkz. [korumalı çözümle ilgili konular](../sharepoint/sandboxed-solution-considerations.md).  
+    Şu anda, yalnızca profili Grup çözümlerini kullanabilirsiniz. Grup çözümlerini karşı korumalı çözümler hakkında daha fazla bilgi için bkz. [korumalı çözümle ilgili konular](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  Seçin **son** düğmesi. Proje görünür **Çözüm Gezgini**.  
+7. Seçin **son** düğmesi. Proje görünür **Çözüm Gezgini**.  
   
 ## <a name="add-a-feature-and-feature-event-receiver"></a>Bir özellik ve özelliği olay alıcısı Ekle
  Ardından, bir özellik proje özelliği için bir olay alıcısı birlikte ekleyin. Bu olay alıcısı, profili oluşturulacak kodu içerecek.  

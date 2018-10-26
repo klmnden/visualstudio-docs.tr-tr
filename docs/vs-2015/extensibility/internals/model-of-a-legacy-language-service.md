@@ -15,12 +15,12 @@ ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb8b7ebc9cb5f0b1f6b2f2b313fa42418105ceec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9adeb87fe7830854ba2f7823ebb24605e072d10e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294040"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907709"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Eski Dil Hizmetinin Modeli
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,20 +32,20 @@ Dil hizmeti belirli bir dil özellikleri ve öğeleri tanımlar ve bilgileri o d
 ## <a name="a-minimal-language-service"></a>Bir Minimal dil hizmeti  
  En temel dil hizmeti, aşağıdaki iki nesne içerir:  
   
--   *Dil hizmeti* uygulayan <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> arabirimi. Bir dil hizmeti adı, dosya adı uzantıları, kod penceresi Yöneticisi ve Renklendirici dahil dil hakkında bilgi içerir.  
+- *Dil hizmeti* uygulayan <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> arabirimi. Bir dil hizmeti adı, dosya adı uzantıları, kod penceresi Yöneticisi ve Renklendirici dahil dil hakkında bilgi içerir.  
   
--   *Renklendirici* uygulayan <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> arabirimi.  
+- *Renklendirici* uygulayan <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> arabirimi.  
   
- Aşağıdaki kavramsal çizimi temel dil hizmetinin modeli gösterilmektedir.  
+  Aşağıdaki kavramsal çizimi temel dil hizmetinin modeli gösterilmektedir.  
   
- ![Dil hizmetinin Modeli grafiği](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
-Temel dil hizmetinin modeli  
+  ![Dil hizmetinin Modeli grafiği](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
+  Temel dil hizmetinin modeli  
   
- Belge penceresi konakları *belge görünümü* bu durumda düzenleyicinin [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] çekirdek Düzenleyici. Düzenleyici tarafından belge görünümü ve metin arabelleğini sahibi olur. Bu nesneler ile çalışma [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] adlı bir özel belge penceresi bir *kod penceresi*. Kod penceresi bulunan bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> oluşturulur ve IDE tarafından denetlenen nesne.  
+  Belge penceresi konakları *belge görünümü* bu durumda düzenleyicinin [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] çekirdek Düzenleyici. Düzenleyici tarafından belge görünümü ve metin arabelleğini sahibi olur. Bu nesneler ile çalışma [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] adlı bir özel belge penceresi bir *kod penceresi*. Kod penceresi bulunan bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> oluşturulur ve IDE tarafından denetlenen nesne.  
   
- Düzenleyici belirli bir uzantıya sahip bir dosya yüklendiğinde, bu uzantıyla ilişkili dil hizmeti bulur ve kod penceresinde çağırarak geçirir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> yöntemi. Dil hizmeti döndürür bir *kod penceresinde Yöneticisi*, uygulayan <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> arabirimi.  
+  Düzenleyici belirli bir uzantıya sahip bir dosya yüklendiğinde, bu uzantıyla ilişkili dil hizmeti bulur ve kod penceresinde çağırarak geçirir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> yöntemi. Dil hizmeti döndürür bir *kod penceresinde Yöneticisi*, uygulayan <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> arabirimi.  
   
- Aşağıdaki tablo modelindeki nesneler genel bir bakış sağlar.  
+  Aşağıdaki tablo modelindeki nesneler genel bir bakış sağlar.  
   
 |Bileşen|Nesne|İşlev|  
 |---------------|------------|--------------|  

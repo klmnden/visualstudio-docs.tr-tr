@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: douge
-ms.openlocfilehash: 84736e4cb4212b912d87caa7849a37bbc726ffdd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 459530726628819587a3c228910baa3b902ae865
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291024"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939104"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>İzlenecek yol: Akıllı etiketler görüntüleme
 Akıllı etiketler ampuller yerine kullanım dışı bırakılmıştır. Bkz: [izlenecek yol: ampul önerilerini görüntüleme](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
@@ -138,35 +138,35 @@ Akıllı etiketler ampuller yerine kullanım dışı bırakılmıştır. Bkz: [i
   
 #### <a name="to-implement-smart-tag-actions"></a>Akıllı etiket eylemlerini uygulamak için  
   
-1.  İki sınıf oluşturma ilk adlı `UpperCaseSmartTagAction` ve ikinci adlı `LowerCaseSmartTagAction`. Her iki sınıfları uygulayan <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagAction>.  
+1. İki sınıf oluşturma ilk adlı `UpperCaseSmartTagAction` ve ikinci adlı `LowerCaseSmartTagAction`. Her iki sınıfları uygulayan <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagAction>.  
   
-     [!code-csharp[VSSDKSmartTagTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#15)]
-     [!code-vb[VSSDKSmartTagTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#15)]  
+    [!code-csharp[VSSDKSmartTagTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#15)]
+    [!code-vb[VSSDKSmartTagTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#15)]  
   
-     [!code-csharp[VSSDKSmartTagTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#16)]
-     [!code-vb[VSSDKSmartTagTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#16)]  
+    [!code-csharp[VSSDKSmartTagTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#16)]
+    [!code-vb[VSSDKSmartTagTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#16)]  
   
- Bir çağrı dışında her iki sınıflar benzer <xref:System.String.ToUpper%2A> ve diğer çağrılar <xref:System.String.ToLower%2A>. Yalnızca büyük harf Eylem sınıfına aşağıdaki adımları kapsar, ancak her iki sınıf uygulamalıdır. Büyük harf eylem olarak küçük eylemi uygulamak için bir desen uygulamak için adımları kullanın.  
+   Bir çağrı dışında her iki sınıflar benzer <xref:System.String.ToUpper%2A> ve diğer çağrılar <xref:System.String.ToLower%2A>. Yalnızca büyük harf Eylem sınıfına aşağıdaki adımları kapsar, ancak her iki sınıf uygulamalıdır. Büyük harf eylem olarak küçük eylemi uygulamak için bir desen uygulamak için adımları kullanın.  
   
-1.  Bir özel alan kümesi bildirin.  
+2. Bir özel alan kümesi bildirin.  
   
-     [!code-csharp[VSSDKSmartTagTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#17)]
-     [!code-vb[VSSDKSmartTagTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#17)]  
+    [!code-csharp[VSSDKSmartTagTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#17)]
+    [!code-vb[VSSDKSmartTagTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#17)]  
   
-2.  Alanları ayarlayan bir oluşturucu ekleyin.  
+3. Alanları ayarlayan bir oluşturucu ekleyin.  
   
-     [!code-csharp[VSSDKSmartTagTest#18](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#18)]
-     [!code-vb[VSSDKSmartTagTest#18](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#18)]  
+    [!code-csharp[VSSDKSmartTagTest#18](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#18)]
+    [!code-vb[VSSDKSmartTagTest#18](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#18)]  
   
-3.  Özellikleri aşağıdaki gibi uygulayın.  
+4. Özellikleri aşağıdaki gibi uygulayın.  
   
-     [!code-csharp[VSSDKSmartTagTest#19](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#19)]
-     [!code-vb[VSSDKSmartTagTest#19](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#19)]  
+    [!code-csharp[VSSDKSmartTagTest#19](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#19)]
+    [!code-vb[VSSDKSmartTagTest#19](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#19)]  
   
-4.  Uygulama <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagAction.Invoke%2A> aralık içindeki metni kendi büyük harf eşdeğeri ile değiştirerek yöntemi.  
+5. Uygulama <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagAction.Invoke%2A> aralık içindeki metni kendi büyük harf eşdeğeri ile değiştirerek yöntemi.  
   
-     [!code-csharp[VSSDKSmartTagTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#20)]
-     [!code-vb[VSSDKSmartTagTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#20)]  
+    [!code-csharp[VSSDKSmartTagTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#20)]
+    [!code-vb[VSSDKSmartTagTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#20)]  
   
 ## <a name="building-and-testing-the-code"></a>Oluşturma ve kod test etme  
  Bu kodu test etmek için SmartTagTest Çözümü derleyin ve deneysel örneğinde çalıştırın.  

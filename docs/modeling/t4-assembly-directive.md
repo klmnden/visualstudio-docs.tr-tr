@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 49329dab868e5d8fb1418915a27449de3cbd1f7e
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: cd7f1f36374f3411b5a76f5df5e3e25bb52df230
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858255"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948648"
 ---
 # <a name="t4-assembly-directive"></a>T4 Derleme Yönergesi
 
@@ -34,11 +34,11 @@ Visual Studio tasarım zamanı metin şablonunda, `assembly` yönergesi bir derl
 
  Derleme adı aşağıdakilerden biri olmalıdır:
 
--   Bir derlemenin GAC'deki tanımlayıcı adı gibi `System.Xml.dll`. Uzun biçimi gibi kullanabilir `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Daha fazla bilgi için bkz. <xref:System.Reflection.AssemblyName>.
+- Bir derlemenin GAC'deki tanımlayıcı adı gibi `System.Xml.dll`. Uzun biçimi gibi kullanabilir `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Daha fazla bilgi için bkz. <xref:System.Reflection.AssemblyName>.
 
--   Derlemenin mutlak yolu
+- Derlemenin mutlak yolu
 
- Kullanabileceğiniz `$(variableName)` Visual Studio değişkenleri gibi başvurmak için `$(SolutionDir)`, ve `%VariableName%` ortam değişkenlerine başvurmak için. Örneğin:
+  Kullanabileceğiniz `$(variableName)` Visual Studio değişkenleri gibi başvurmak için `$(SolutionDir)`, ve `%VariableName%` ortam değişkenlerine başvurmak için. Örneğin:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
@@ -49,21 +49,21 @@ Visual Studio tasarım zamanı metin şablonunda, `assembly` yönergesi bir derl
 ## <a name="standard-assemblies"></a>Standart Derlemeler
  Aşağıdaki derlemeler otomatik olarak yüklenir, böylece onlar için derleme yönergelerini yazmanıza gerek yoktur:
 
--   `Microsoft.VisualStudio.TextTemplating.1*.dll`
+- `Microsoft.VisualStudio.TextTemplating.1*.dll`
 
--   `System.dll`
+- `System.dll`
 
--   `WindowsBase.dll`
+- `WindowsBase.dll`
 
- Özel bir yönerge kullanırsanız, yönerge işlemcisi ek derlemeler yükleyebilir. Örneğin, etki alanına özgü dil (DSL) için şablonlar yazarsanız, aşağıdaki derlemeler için derleme yönergeleri yazmak gerekmez:
+  Özel bir yönerge kullanırsanız, yönerge işlemcisi ek derlemeler yükleyebilir. Örneğin, etki alanına özgü dil (DSL) için şablonlar yazarsanız, aşağıdaki derlemeler için derleme yönergeleri yazmak gerekmez:
 
--   `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`
+- `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`
 
--   `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.1*.dsl`
+- `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.1*.dsl`
 
--   `Microsoft.VisualStudio.TextTemplating.Modeling.1*.dll`
+- `Microsoft.VisualStudio.TextTemplating.Modeling.1*.dll`
 
--   DSL'nizi içeren derleme.
+- DSL'nizi içeren derleme.
 
 ## <a name="msbuild"></a> Hem MSBuild hem Visual Studio'da proje özelliklerini kullanma
  $(SolutionDir) gibi Visual Studio Makroları MSBuild içinde çalışmaz. Şablonları yapı makinenizde dönüştürmek isterseniz, bunun yerine proje özelliklerini kullanmanız gerekir.
@@ -82,7 +82,6 @@ Visual Studio tasarım zamanı metin şablonunda, `assembly` yönergesi bir derl
       <Value>$(myLibFolder)</Value>
     </T4ParameterValues>
   </ItemGroup>
-
 ```
 
  Artık proje özelliğinizi metin şablonlarında kullanabilirsiniz, böylece hem Visual Studio hem de MSBuild içinde doğru dönüştürme yapılır:

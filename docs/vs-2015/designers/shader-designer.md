@@ -17,12 +17,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c1342d97d07ab44a30768e7515521c7d08b90e6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac752d0b85a45193fe4aafb55e33ec23e26aed6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182801"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942016"
 ---
 # <a name="shader-designer"></a>Gölgelendirici Tasarımcısı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,11 +125,11 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
   
 ###### <a name="to-bind-a-different-texture-to-a-texture-register-or-to-modify-other-material-parameters"></a>Bir doku kaydı için farklı bir doku bağlamak için veya diğer malzeme parametreleri değiştirmek için  
   
-1.  İçinde **seçin** modu, tasarım yüzeyinde boş bir alanı seçin. Bu neden **özellikleri** genel gölgelendirici özelliklerini görüntülemek için penceresi.  
+1. İçinde **seçin** modu, tasarım yüzeyinde boş bir alanı seçin. Bu neden **özellikleri** genel gölgelendirici özelliklerini görüntülemek için penceresi.  
   
-2.  İçinde **özellikleri** penceresinde değiştirmek istediğiniz doku ve parametre özellikleri için yeni değerler belirtin.  
+2. İçinde **özellikleri** penceresinde değiştirmek istediğiniz doku ve parametre özellikleri için yeni değerler belirtin.  
   
- Değiştirebileceğiniz gölgelendirici Parametreler şunlardır:  
+   Değiştirebileceğiniz gölgelendirici Parametreler şunlardır:  
   
 |Parametre|Özellikler|  
 |---------------|----------------|  

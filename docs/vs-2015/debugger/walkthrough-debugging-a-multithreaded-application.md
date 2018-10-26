@@ -22,12 +22,12 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47cb401bae952e8ecdfaf18848e63f9d9a320be7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 853719e66bf7cd6a258bc2df231ca04fca7a9242
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186205"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884907"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>İzlenecek Yol: Çok İş Parçacıklı Uygulamada Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,17 +105,17 @@ Thread::Sleep(3000);
   
 #### <a name="to-discover-the-thread-marker"></a>İş parçacığı işaret bulmak için  
   
-1.  Sağ **iş parçacıkları** penceresinde ardından **kaynak iş parçacıklarını Göster**.  
+1. Sağ **iş parçacıkları** penceresinde ardından **kaynak iş parçacıklarını Göster**.  
   
-2.  Pencerenin sol tarafındaki cilt payını bakın. Bu satırda iki bez iş parçacığı benzer bir simge görürsünüz. Bir iş parçacığı kırmızı ve diğer mavi şeklindedir. İş parçacığı işaretçisi, bir iş parçacığı bu konuma durdurulduğunu gösterir. Bu konumda büyük olasılıkla, iş parçacığı durduruldu.  
+2. Pencerenin sol tarafındaki cilt payını bakın. Bu satırda iki bez iş parçacığı benzer bir simge görürsünüz. Bir iş parçacığı kırmızı ve diğer mavi şeklindedir. İş parçacığı işaretçisi, bir iş parçacığı bu konuma durdurulduğunu gösterir. Bu konumda büyük olasılıkla, iş parçacığı durduruldu.  
   
-3.  İşaretçi iş parçacığı işaret gelin. Bir DataTip görünür. DataTip durdurulmuş her iş parçacığı için adı ve iş parçacığı kimlik numarasını belirtir. Bu durumda, yalnızca bir iş parçacığı adı büyük olasılıkla yoktur `<noname>`.  
+3. İşaretçi iş parçacığı işaret gelin. Bir DataTip görünür. DataTip durdurulmuş her iş parçacığı için adı ve iş parçacığı kimlik numarasını belirtir. Bu durumda, yalnızca bir iş parçacığı adı büyük olasılıkla yoktur `<noname>`.  
   
-4.  İş parçacığı işaret sağ tıklayın. Kısayol menüsündeki seçenekleri unutmayın.  
+4. İş parçacığı işaret sağ tıklayın. Kısayol menüsündeki seçenekleri unutmayın.  
   
- Bu simge bir *iş parçacığı işaret*:  
+   Bu simge bir *iş parçacığı işaret*:  
   
- ![İş parçacığı işaret](../debugger/media/threadmarker.gif "ThreadMarker")  
+   ![İş parçacığı işaret](../debugger/media/threadmarker.gif "ThreadMarker")  
   
 ## <a name="flagging-and-unflagging-threads"></a>Bayrak ekleme ve Unflagging iş parçacıkları  
  İçinde [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)], özel dikkat vermek istediğiniz iş parçacıklarının bayrağını. İş parçacıklarını işaretleme, önemli iş parçacığı izlemek ve iş parçacıkları hakkında önemli yoksaymak için iyi bir yoludur.  

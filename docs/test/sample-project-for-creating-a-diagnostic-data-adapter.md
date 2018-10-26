@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1de27441ea5d0a6af320c031e43affd2c2e14be0
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 421f49ec9cfca99a62b80ddf71073a481b3a0c7e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380776"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878212"
 ---
 # <a name="sample-project-for-creating-a-diagnostic-data-adapter"></a>Tanılama veri bağdaştırıcısı oluşturmak için örnek proje
 
@@ -321,7 +321,6 @@ Tanılama veri toplayıcısı yapılandırma düzenleyiciniz için örnek bir ya
     </DataCollector>
   </DataCollectorConfiguration>
 </configuration>
-
 ```
 
 ## <a name="compile-the-code"></a>Kod derleme

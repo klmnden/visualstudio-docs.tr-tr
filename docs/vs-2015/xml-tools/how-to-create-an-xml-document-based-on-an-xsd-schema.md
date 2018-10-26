@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54d7ead9f759e990b741ac9c5219af693d10a412
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bbecacc0729c936489c05d3bb59260341a08d314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287332"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884231"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Nasıl yapılır: bir XSD şemasını temel alan XML belgesi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ ms.locfileid: "49287332"
   
  Aşağıdaki senaryolar için bu seçeneği kullanabilirsiniz:  
   
--   Çeşitli yapılar, şema kullanımını anlamak için.  
+- Çeşitli yapılar, şema kullanımını anlamak için.  
   
--   Şema ne yaptığını onaylamak için bunu gerçekleştirmesi amaçlanmıştır.  
+- Şema ne yaptığını onaylamak için bunu gerçekleştirmesi amaçlanmıştır.  
   
- **Örnek XML oluşturmak** özelliği yalnızca genel öğeler üzerinde kullanılabilir ve geçerli bir XML şema kümesi gerektirir.  
+  **Örnek XML oluşturmak** özelliği yalnızca genel öğeler üzerinde kullanılabilir ve geçerli bir XML şema kümesi gerektirir.  
   
- Bu özellik, genellikle geçerli XML belgeleri oluşturur. Şema, bir veya daha fazlasını içeriyor, ancak örnek geçerli olmayabilir:  
+  Bu özellik, genellikle geçerli XML belgeleri oluşturur. Şema, bir veya daha fazlasını içeriyor, ancak örnek geçerli olmayabilir:  
   
--   `xs:key`, `xs:keyref`, Ve `xs:unique` kimlik kısıtlamaları.  
+- `xs:key`, `xs:keyref`, Ve `xs:unique` kimlik kısıtlamaları.  
   
--   `xs:pattern` modeller.  
+- `xs:pattern` modeller.  
   
--   Numaralandırmalar `xs:QName` türü.  
+- Numaralandırmalar `xs:QName` türü.  
   
--   `xs:ENTITY`, `xs:ENTITIES`, ve `xs:NOTATION` türleri.  
+- `xs:ENTITY`, `xs:ENTITIES`, ve `xs:NOTATION` türleri.  
   
- Ayrıca, `xs:base64Binary` içeriği yalnızca numaralandırma türü için şema oluşursa oluşturulur.  
+  Ayrıca, `xs:base64Binary` içeriği yalnızca numaralandırma türü için şema oluşursa oluşturulur.  
   
 ### <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>XSD dosyasını temel alan bir XML örneği belge oluşturmak için  
   

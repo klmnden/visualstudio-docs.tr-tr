@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea9c1739b0f1236deedcea98bcbc96e99abb404
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: ddedc1d46c82c20580575a85db92b2c8049c813e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977838"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908760"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Blend'de Kalem aracı değiştirici tuşları
 Bir yol ile oluştururken değiştirmek için kullanabileceğiniz kısayolları aşağıdaki tabloda **kalem** aracı ![Kalem aracı](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png). Ayrıca **kalem** aracı eklemek veya var olan bir yol noktalarını kaldırmak için ya da iki mevcut yollar katılın.
 
 |Bu işlemi yapma|Bunu yapın|İşaretçi|
-|-----------------------|-------------|-------------|
+| - |-------------|-------------|
 |Düz çizgi kesimi başlatmak için bir noktası oluştur|Yeni noktası oluşturmak için tıklayın|![Düz çizgi kesimi başlatmak için bir noktası oluştur](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Kalemin|
 |Bir eğik çizgi kesimi başlatmak için bir noktası oluştur|Yeni noktası oluşturmak için tıklayın ve ardından fare düğmesini bırakmadan önce tutamaçların ayarlamak için sürükleyin|![Bir eğik çizgi kesimi başlatmak için bir noktası oluştur](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Kalemin|
 |Keskin köşe yapmanızı sağlayan yumuşak kısıtlama olmadan son eğimi Ayarla|Yeni noktası oluşturmak için tıklayın ve sonra basın **Alt** fare düğmesini bırakmadan önce|![Yumuşak kısıtlama olmadan son eğimi Ayarla](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Kalem işaretçi Ayarla|

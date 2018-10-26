@@ -19,25 +19,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce7024f54eccf595fefa8fa45c438bcb2d55adf3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: fdde21ef6e65a741b7a9ac08bfc69de4dd1f9856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676861"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933449"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>VSTO Eklentileri Mimarisi
   Visual Studio'da Office geliştirme araçları kullanılarak oluşturulan VSTO eklentileri kararlılık ve güvenlik sağlayan mimari özelliklere sahiptir ve bunları Microsoft Office ile yakından çalışmaya etkinleştirin. Bu konu, VSTO eklentileri şu yönlerini açıklar:  
   
--   [VSTO eklentileri anlama](#UnderstandingAddIns)  
+- [VSTO eklentileri anlama](#UnderstandingAddIns)  
   
--   [VSTO eklentileri bileşenleri](#AddinComponents)  
+- [VSTO eklentileri bileşenleri](#AddinComponents)  
   
--   [VSTO eklentileri Microsoft Office uygulamaları ile nasıl çalışır?](#HowAddinsWork)  
+- [VSTO eklentileri Microsoft Office uygulamaları ile nasıl çalışır?](#HowAddinsWork)  
   
- [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
+  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
- VSTO eklentileri oluşturma hakkında genel bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) ve [VSTO eklentileri programlama başlama](../vsto/getting-started-programming-vsto-add-ins.md).  
+  VSTO eklentileri oluşturma hakkında genel bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) ve [VSTO eklentileri programlama başlama](../vsto/getting-started-programming-vsto-add-ins.md).  
   
 ##  <a name="UnderstandingAddIns"></a> VSTO eklentileri anlama  
  Bir VSTO eklenti oluşturmak için Visual Studio Office geliştirici araçları kullandığınızda, Microsoft Office uygulama tarafından yüklenen bir yönetilen kod derlemesi oluşturun. Derleme yüklendikten sonra VSTO Eklentisi (örneğin, bir kullanıcı bir menü öğesini tıkladığında) uygulamasında başlatılan olaylara yanıt verebilirsiniz. VSTO eklentisi ayrıca uygulamasını otomatikleştirmek ve genişletmek için nesne modeli çağırabilir ve sınıflarda birini kullanabilirsiniz [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].  

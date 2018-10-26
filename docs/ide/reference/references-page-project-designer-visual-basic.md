@@ -18,45 +18,46 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 788df6c5d7084398f5c1df1fffdf51e501cce4c6
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 719f58ff7a8fe333f43e13ddef298ba9938ad4e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180483"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815201"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Başvurular Sayfası, Proje Tasarımcısı (Visual Basic)
+
 Kullanım **başvuruları** sayfasının **Proje Tasarımcısı** başvuruları ve web başvuruları projenize içeri aktarılan ad alanlarını yönetmek için. Proje başvuruları COM bileşenlerini, XML web Hizmetleri, .NET Framework sınıf kitaplıkları veya derlemeleri ve diğer sınıf kitaplıkları için içerebilir. Başvuruları kullanma hakkında daha fazla bilgi için bkz. [bir projedeki başvuruları yönetme](../../ide/managing-references-in-a-project.md).
 
- Erişim için **başvuruları** sayfasında, bir proje düğümü seçin (değil **çözüm** düğümü) içinde **Çözüm Gezgini**. Ardından **proje**, **özellikleri** menü çubuğundaki. Proje Tasarımcısı göründüğünde tıklayın **başvuruları** sekmesi.
+Erişim için **başvuruları** sayfasında, bir proje düğümü seçin (değil **çözüm** düğümü) içinde **Çözüm Gezgini**. Ardından **proje**, **özellikleri** menü çubuğundaki. Proje Tasarımcısı göründüğünde tıklayın **başvuruları** sekmesi.
 
 ## <a name="uielement-list"></a>UIElement Listesi
- Aşağıdaki seçenekler seçin veya projenize başvurular ve içeri aktarılan ad alanlarını kaldırma olanak sağlar.
 
- **Kullanılmayan başvurular**
+Aşağıdaki seçenekler seçin veya projenize başvurular ve içeri aktarılan ad alanlarını kaldırma olanak sağlar.
 
- Erişim için bu düğmeye tıklayın **kullanılmayan başvurular** iletişim kutusu.
+**Kullanılmayan başvurular**
 
- **Kullanılmayan başvurular** iletişim kutusu, projenize dahil olan, ancak aslında kod tarafından kullanılan başvuruları kaldırın olanak tanır. Listeleyen bir kılavuz içerdiği **başvuru adı**, **yolu**, ilgili, projedeki kullanılmayan ad alanı başvuruları ve diğer bilgileri. Kılavuzda tıklatıp projenizden kaldırmak istediğiniz ad alanı başvurularını seçin **Kaldır**.
+Erişim için bu düğmeye tıklayın **kullanılmayan başvurular** iletişim kutusu.
 
- **Başvuru yolları**
+**Kullanılmayan başvurular** iletişim kutusu, projenize dahil olan, ancak aslında kod tarafından kullanılan başvuruları kaldırın olanak tanır. Listeleyen bir kılavuz içerdiği **başvuru adı**, **yolu**, ilgili, projedeki kullanılmayan ad alanı başvuruları ve diğer bilgileri. Kılavuzda tıklatıp projenizden kaldırmak istediğiniz ad alanı başvurularını seçin **Kaldır**.
 
- Erişim için bu düğmeye tıklayın **başvuru yolları** iletişim kutusu.
+**Başvuru yolları**
+
+Erişim için bu düğmeye tıklayın **başvuru yolları** iletişim kutusu.
 
 > [!NOTE]
 > Proje sistemi bir bütünleştirilmiş kod başvurusu bulduğunda, sistem aşağıdaki sırayla şu konumlarda bakarak başvuru çözer:
-
 >
->  1.  Proje klasörü. Proje klasörü dosyaları görünür **Çözüm Gezgini** olduğunda **tüm dosyaları göster** geçerli değildir.
-> 2.  İçinde belirtilen klasörler **başvuru yolları** iletişim kutusu.
-> 3.  Dosyaları görüntüleme klasörleri **Başvuru Ekle** iletişim kutusu.
-> 4.  Projenin obj klasörü. (Bir veya daha fazla derlemeleri projenize bir COM başvurusu eklediğinizde, projenin obj klasöre eklenebilir.)
+> 1. Proje klasörü. Proje klasörü dosyaları görünür **Çözüm Gezgini** olduğunda **tüm dosyaları göster** geçerli değildir.
+> 2. İçinde belirtilen klasörler **başvuru yolları** iletişim kutusu.
+> 3. Dosyaları görüntüleme klasörleri **Başvuru Ekle** iletişim kutusu.
+> 4. Projenin obj klasörü. (Bir veya daha fazla derlemeleri projenize bir COM başvurusu eklediğinizde, projenin obj klasöre eklenebilir.)
 
  **Başvurular**
 
  Bu liste, projede kullanılan tüm başvuruları gösterir veya kullanılmayan.
 
- **Ekle**
+ **Add**
 
  Bir başvuru veya web referansı eklemek için bu düğmeye tıklayın **başvuruları** listesi.
 

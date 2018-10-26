@@ -20,12 +20,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 11a3a39b1b2f4d2d00f973cbaf38620641e45ca6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 31d5ced897badded98aa82b2245e8f210517afd6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213329"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845309"
 ---
 # <a name="code-snippet-picker"></a>Kod Parçacığı Seçici
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ ms.locfileid: "49213329"
   
  Görüntülenecek yordamı **kod parçacığı Seçici** kullanmakta olduğunuz bir dile göre değişir.  
   
--   [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] -Kod kısayol menüsünü görüntülemek için Düzenleyicisi'nde istediğiniz konuma sağ tıklatın ve seçin **parçacık Ekle**.  
+- [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] -Kod kısayol menüsünü görüntülemek için Düzenleyicisi'nde istediğiniz konuma sağ tıklatın ve seçin **parçacık Ekle**.  
   
--   [!INCLUDE[csprcs](../../includes/csprcs-md.md)] -Kod kısayol menüsünü görüntülemek için Düzenleyicisi'nde istediğiniz konuma sağ tıklayın ve **parçacık Ekle** veya **Surround With**.  
+- [!INCLUDE[csprcs](../../includes/csprcs-md.md)] -Kod kısayol menüsünü görüntülemek için Düzenleyicisi'nde istediğiniz konuma sağ tıklayın ve **parçacık Ekle** veya **Surround With**.  
   
--   [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] - **Kod parçacığı Seçici** kullanılabilir değil.  
+- [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] - **Kod parçacığı Seçici** kullanılabilir değil.  
   
--   Visual F # - **kod parçacığı Seçici** kullanılabilir değil.  
+- Visual F # - **kod parçacığı Seçici** kullanılabilir değil.  
   
--   [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] --Kod kısayol menüsünü görüntülemek için Düzenleyicisi'nde istediğiniz konuma sağ tıklayın ve **parçacık Ekle** veya **Surround With**.  
+- [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] --Kod kısayol menüsünü görüntülemek için Düzenleyicisi'nde istediğiniz konuma sağ tıklayın ve **parçacık Ekle** veya **Surround With**.  
   
--   XML - kod kısayol menüsünü görüntüleyin ve Düzenleyicisi'nde istediğiniz konuma sağ **parçacık Ekle** veya **Surround With**.  
+- XML - kod kısayol menüsünü görüntüleyin ve Düzenleyicisi'nde istediğiniz konuma sağ **parçacık Ekle** veya **Surround With**.  
   
--   HTML - kod kısayol menüsünü görüntüleyin ve Düzenleyicisi'nde istediğiniz konuma sağ **parçacık Ekle** veya **Surround With**.  
+- HTML - kod kısayol menüsünü görüntüleyin ve Düzenleyicisi'nde istediğiniz konuma sağ **parçacık Ekle** veya **Surround With**.  
   
--   SQL - kod kısayol menüsünü görüntüleyin ve Düzenleyicisi'nde istediğiniz konuma sağ **parçacık Ekle**.  
+- SQL - kod kısayol menüsünü görüntüleyin ve Düzenleyicisi'nde istediğiniz konuma sağ **parçacık Ekle**.  
   
- Çoğu Visual Studio geliştirme dillerinde kullanabileceğiniz **kod parçacıkları Yöneticisi** klasörleri eklemek için **klasör listesi** , **kod parçacığı Seçici** tarar XML için kod parçacığı dosyaları. Ayrıca listeye eklemek için kendi parçacıklarınızı oluşturabilirsiniz. Daha fazla bilgi için [izlenecek yol: kod parçacığı oluşturma](../../ide/walkthrough-creating-a-code-snippet.md).  
+  Çoğu Visual Studio geliştirme dillerinde kullanabileceğiniz **kod parçacıkları Yöneticisi** klasörleri eklemek için **klasör listesi** , **kod parçacığı Seçici** tarar XML için kod parçacığı dosyaları. Ayrıca listeye eklemek için kendi parçacıklarınızı oluşturabilirsiniz. Daha fazla bilgi için [izlenecek yol: kod parçacığı oluşturma](../../ide/walkthrough-creating-a-code-snippet.md).  
   
 ## <a name="uielement-list"></a>UIElement Listesi  
  Öğe adı  

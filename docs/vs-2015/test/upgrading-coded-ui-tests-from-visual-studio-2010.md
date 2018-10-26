@@ -13,12 +13,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ec0229107b4a9ab3ef3710fb5306f1dfdcccfa44
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2475a61839e34b69d8e99e01bde32fd47b9c276
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298954"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907150"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Visual Studio 2010'dan Kodlanmış UI Testlerini Yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,17 +56,17 @@ Test projeleri oluşturulan kodlanmış UI testleri içeren [!INCLUDE[vs_dev10_l
   
  Aşağıdaki güncelleştirme uygulandıktan sonra [!INCLUDE[vs2010](../includes/vs2010-md.md)] kodlanmış UI test aracı özellikleri, Windows 8 için geliştirilir SP1:  
   
--   Windows 8 çalıştıran bir bilgisayarda Microsoft .NET Framework 4.5 tabanlı Windows Presentation Foundation (WPF) denetimleri, bir kodlanmış UI testi çalıştırabilirsiniz.  
+- Windows 8 çalıştıran bir bilgisayarda Microsoft .NET Framework 4.5 tabanlı Windows Presentation Foundation (WPF) denetimleri, bir kodlanmış UI testi çalıştırabilirsiniz.  
   
--   64-bit (x 64) Internet Explorer 10 için Windows 8 çalıştıran bir bilgisayarda bir kodlanmış UI testi çalıştırabilirsiniz.  
+- 64-bit (x 64) Internet Explorer 10 için Windows 8 çalıştıran bir bilgisayarda bir kodlanmış UI testi çalıştırabilirsiniz.  
   
- Güncelleştirme, ayrıca aşağıdaki sorunlar için düzeltmeler içerir:  
+  Güncelleştirme, ayrıca aşağıdaki sorunlar için düzeltmeler içerir:  
   
--   **Kod kapsamı:** Visual Studio 2012'de tarafından oluşturulan bir kod kapsamı dosyası (.coverage) açmak için bağlanamama [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1.  
+- **Kod kapsamı:** Visual Studio 2012'de tarafından oluşturulan bir kod kapsamı dosyası (.coverage) açmak için bağlanamama [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1.  
   
--   **Test yapıtlarını stranded:** ekibinizin Team Foundation Server (TFS) 2010 geçersiz bir kullanıcıya atanmış bir test yapıtı sahip. Örneğin, bir kullanıcı şirketten, ancak hala kendisine atanan bir test çalışması içeriyor. TFS 2010 için TFS 2012 yükseltme. Kullandığınız [!INCLUDE[TCMext](../includes/tcmext-md.md)] yükseltilen TFS sunucusuna bağlanmak için 2010. Test yapıtı kullanarak herhangi bir TFS kullanıcıya atamak mümkün değildir [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.  
+- **Test yapıtlarını stranded:** ekibinizin Team Foundation Server (TFS) 2010 geçersiz bir kullanıcıya atanmış bir test yapıtı sahip. Örneğin, bir kullanıcı şirketten, ancak hala kendisine atanan bir test çalışması içeriyor. TFS 2010 için TFS 2012 yükseltme. Kullandığınız [!INCLUDE[TCMext](../includes/tcmext-md.md)] yükseltilen TFS sunucusuna bağlanmak için 2010. Test yapıtı kullanarak herhangi bir TFS kullanıcıya atamak mümkün değildir [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.  
   
--   **Yük testi:** bir bilgisayarda yerel alan ağı (LAN) profili dışındaki bir ağ türü ile birlikte bir yük testi çalıştırdığınızda, Windows 8 çalıştıran, ağ öykünücüsü sürücüsü işletim sistemi kilitlenmesine neden olur. Daha fazla ayrıntı için [KB makalesi 2736182](http://support.microsoft.com/kb/2736182).  
+- **Yük testi:** bir bilgisayarda yerel alan ağı (LAN) profili dışındaki bir ağ türü ile birlikte bir yük testi çalıştırdığınızda, Windows 8 çalıştıran, ağ öykünücüsü sürücüsü işletim sistemi kilitlenmesine neden olur. Daha fazla ayrıntı için [KB makalesi 2736182](http://support.microsoft.com/kb/2736182).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Taşıma, geçirme ve Visual Studio projelerini yükseltme](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)   

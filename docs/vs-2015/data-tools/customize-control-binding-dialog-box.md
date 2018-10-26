@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 8cc2e591c144afeb0720cdbf05280a499d10c70c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ca2da23040f3e7a57fe5da2ff8b87cc7fc38099
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247019"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889717"
 ---
 # <a name="customize-control-binding-dialog-box"></a>Denetim Bağlamayı Özelleştir İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,22 +44,22 @@ Kullanım **denetim bağlamayı Özelleştir** iletişim kutusu, hangi denetimle
  **Veri türü**  
  Dentimleriyle ilişkilendir türlerinin bir listesini görüntüler:  
   
--   Tablo, varlıkları ve nesneler olarak gösterilir **[listesi]** türleri.  
+- Tablo, varlıkları ve nesneler olarak gösterilir **[listesi]** türleri.  
   
--   Sütun veya varlıkları ve nesneler genel özelliklerini sütunun ya da temel alınan veri deposundaki özelliği gerçek veri türü olarak temsil edilir.  
+- Sütun veya varlıkları ve nesneler genel özelliklerini sütunun ya da temel alınan veri deposundaki özelliği gerçek veri türü olarak temsil edilir.  
   
--   Kullanıcı tarafından tanımlanmış şekillerle nesneler olarak temsil edilir **[diğer]**. Örneğin, uygulamanızın bir nesnenin birden fazla özellik verileri görüntüleyen özel bir denetim varsa seçin **[diğer]** denetlemek için veri türü.  
+- Kullanıcı tarafından tanımlanmış şekillerle nesneler olarak temsil edilir **[diğer]**. Örneğin, uygulamanızın bir nesnenin birden fazla özellik verileri görüntüleyen özel bir denetim varsa seçin **[diğer]** denetlemek için veri türü.  
   
- **İlişkili denetimler**  
- Belirli veri türü ile ilişkilendirebilirsiniz denetimlerin listesini görüntüler. Seçilen veri türüne sahip bir özel denetime ilişkilendirmek istiyorsanız **veri türü** listesinde, ilgili onay kutusunu seçin. Bir ilişkiyi kaldırmak için bu onay kutusunu temizleyin. Denetimleri görünür kısayol menüsünde tarafından sunulan kullanıma **veri kaynakları** ilişkili veri türünde bir öğe için pencere.  
+  **İlişkili denetimler**  
+  Belirli veri türü ile ilişkilendirebilirsiniz denetimlerin listesini görüntüler. Seçilen veri türüne sahip bir özel denetime ilişkilendirmek istiyorsanız **veri türü** listesinde, ilgili onay kutusunu seçin. Bir ilişkiyi kaldırmak için bu onay kutusunu temizleyin. Denetimleri görünür kısayol menüsünde tarafından sunulan kullanıma **veri kaynakları** ilişkili veri türünde bir öğe için pencere.  
   
- Çeşitli veri bağlama özniteliklerini birine sahip denetimler ekleyerek denetimleri listesine ekleyebilirsiniz **araç kutusu**. Daha fazla bilgi için [veri kaynakları penceresine özel denetimler ekleme](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+  Çeşitli veri bağlama özniteliklerini birine sahip denetimler ekleyerek denetimleri listesine ekleyebilirsiniz **araç kutusu**. Daha fazla bilgi için [veri kaynakları penceresine özel denetimler ekleme](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
- **Varsayılanı Ayarla**  
- Seçili veri türü öğeler için varsayılan olarak seçili denetim türü atar. Varsayılan denetim tarafından sunulan kısayol menüsünü seçimdeki ilk olarak görünür **veri kaynakları** penceresi için bir öğe. Yalnızca bir denetim türü, bir veri türü için varsayılan olarak atanabilir.  
+  **Varsayılanı Ayarla**  
+  Seçili veri türü öğeler için varsayılan olarak seçili denetim türü atar. Varsayılan denetim tarafından sunulan kısayol menüsünü seçimdeki ilk olarak görünür **veri kaynakları** penceresi için bir öğe. Yalnızca bir denetim türü, bir veri türü için varsayılan olarak atanabilir.  
   
- **Varsayılanı Temizle**  
- Bir denetim atamasını seçili veri türü için varsayılan olarak kaldırır. Seçili veri türü için varsayılan yok ise **[Hiçbiri]** tarafından sunulan kısayol menüsünü seçimdeki ilk olarak görünür **veri kaynakları** ilişkili türünde bir öğe için pencere.  
+  **Varsayılanı Temizle**  
+  Bir denetim atamasını seçili veri türü için varsayılan olarak kaldırır. Seçili veri türü için varsayılan yok ise **[Hiçbiri]** tarafından sunulan kısayol menüsünü seçimdeki ilk olarak görünür **veri kaynakları** ilişkili türünde bir öğe için pencere.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Veri kaynakları penceresi](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)   

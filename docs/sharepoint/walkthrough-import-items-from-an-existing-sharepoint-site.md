@@ -18,25 +18,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2d9542e14f41722a2f339bfac5c3353dc2e89263
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 86256cdecd878c78c34d7128a05eb7b795067701
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635472"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909763"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>İzlenecek yol: mevcut bir SharePoint sitesinden öğeleri içeri aktarma
   Bu izlenecek yol bir SharePoint sitesinden öğeleri içeri aktarma gösterir bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint Proje.  
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
--   Özel site sütunu ekleyerek bir SharePoint sitesi özelleştirme (olarak da bilinen bir *alan*.  
+- Özel site sütunu ekleyerek bir SharePoint sitesi özelleştirme (olarak da bilinen bir *alan*.  
   
--   Bir SharePoint sitesi .wsp dosyasına aktarılıyor.  
+- Bir SharePoint sitesi .wsp dosyasına aktarılıyor.  
   
--   .Wsp dosyası içine aktararak [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .wsp Import project kullanarak SharePoint.  
+- .Wsp dosyası içine aktararak [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .wsp Import project kullanarak SharePoint.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
@@ -50,21 +50,21 @@ ms.locfileid: "42635472"
   
 #### <a name="to-create-and-customize-a-sharepoint-site"></a>Oluşturmak ve bir SharePoint sitesi özelleştirmek için  
   
-1.  Http:// gibi bir Web tarayıcısı kullanarak bir SharePoint sitesi açın*sistem adı*/SitePages/Home.aspx.  
+1. Http:// gibi bir Web tarayıcısı kullanarak bir SharePoint sitesi açın<em>sistem adı</em>/SitePages/Home.aspx.  
   
-2.  Bir alt ana SharePoint sitesi oturumu açarak oluşturmak **Site eylemleri** menüsüne ve ardından **Yeni Site**.  
+2. Bir alt ana SharePoint sitesi oturumu açarak oluşturmak **Site eylemleri** menüsüne ve ardından **Yeni Site**.  
   
-3.  Sitenin **Oluştur** iletişim kutusunda **boş Site** türü.  
+3. Sitenin **Oluştur** iletişim kutusunda **boş Site** türü.  
   
-4.  İçinde **başlık** kutusuna **Site sütunu Test 1**; **URL adı** kutusuna **columntest1**; diğer ayarları, varsayılan olarak bırakın. değerleri; ve ardından **Oluştur** düğmesi.  
+4. İçinde **başlık** kutusuna **Site sütunu Test 1**; **URL adı** kutusuna **columntest1**; diğer ayarları, varsayılan olarak bırakın. değerleri; ve ardından **Oluştur** düğmesi.  
   
-5.  Site oluşturulduktan sonra ana sitenin tarayıcıya geri gezinme http://*sistem adı*/SitePages/Home.aspx.  
+5. Site oluşturulduktan sonra ana sitenin tarayıcıya geri gezinme http://<em>sistem adı</em>/SitePages/Home.aspx.  
   
-6.  Yeniden açarak ana SharePoint site dışına boş bir alt site oluşturma **Site eylemleri** menüsünde seçerek **Yeni Site**ve ardından **boş Site** türü.  
+6. Yeniden açarak ana SharePoint site dışına boş bir alt site oluşturma **Site eylemleri** menüsünde seçerek **Yeni Site**ve ardından **boş Site** türü.  
   
-7.  İçinde **başlık** kutusuna **Site sütunu Test 2**; **URL adı** kutusuna **columntest2**; diğer ayarları, varsayılan olarak bırakın. değerleri; ve ardından **Oluştur** düğmesi.  
+7. İçinde **başlık** kutusuna **Site sütunu Test 2**; **URL adı** kutusuna **columntest2**; diğer ayarları, varsayılan olarak bırakın. değerleri; ve ardından **Oluştur** düğmesi.  
   
-8.  İlk alt siteye geri gidin http://*SystemName*/columntest1/default.aspx.  
+8. İlk alt siteye geri gidin http://<em>SystemName</em>/columntest1/default.aspx.  
   
 9. Üzerinde **Site eylemleri** menüsünde seçin **Site Ayarları** Site Ayarları sayfasında görüntülenecek.  
   
@@ -107,28 +107,28 @@ ms.locfileid: "42635472"
   
 #### <a name="to-import-a-wsp-file"></a>.Wsp dosyasını içeri aktarmak için  
   
-1.  İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], menü çubuğunda, **dosya** > **yeni** > **proje** görüntülenecek **yeni proje**iletişim kutusu. IDE'nizi menü çubuğundaki Visual Basic geliştirme ayarlarını kullanmaya ayarlanmışsa seçin **dosya** > **yeni proje**.  
+1. İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], menü çubuğunda, **dosya** > **yeni** > **proje** görüntülenecek **yeni proje**iletişim kutusu. IDE'nizi menü çubuğundaki Visual Basic geliştirme ayarlarını kullanmaya ayarlanmışsa seçin **dosya** > **yeni proje**.  
   
-2.  Genişletin **SharePoint** ya da düğümünde **Visual C#** veya **Visual Basic**ve ardından **2010** düğümü.  
+2. Genişletin **SharePoint** ya da düğümünde **Visual C#** veya **Visual Basic**ve ardından **2010** düğümü.  
   
-3.  Seçin **SharePoint 2010 çözüm paketini içeri aktar** şablonunda **şablonları** bölmesinde WspImportProject1 olarak projenin adı bırakın ve ardından **Tamam** düğmesi.  
+3. Seçin **SharePoint 2010 çözüm paketini içeri aktar** şablonunda **şablonları** bölmesinde WspImportProject1 olarak projenin adı bırakın ve ardından **Tamam** düğmesi.  
   
-     **SharePoint Özelleştirme Sihirbazı** görünür.  
+    **SharePoint Özelleştirme Sihirbazı** görünür.  
   
-4.  Üzerinde **hata ayıklama için site ve güvenlik düzeyini belirtin** want [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] daha önce oluşturduğunuz ikinci SharePoint alt site için. Yeni özel ekleyeceksiniz http:// öğesi, alan*sistem adı*/columntest2, o alt sitede.  
+4. Üzerinde **hata ayıklama için site ve güvenlik düzeyini belirtin** want [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] daha önce oluşturduğunuz ikinci SharePoint alt site için. Yeni özel ekleyeceksiniz http:// öğesi, alan<em>sistem adı</em>/columntest2, o alt sitede.  
   
-5.  İçinde **bu SharePoint çözümünün güven düzeyi nedir?** bölümünde, seçimi bırakın **bir korumalı çözüm olarak Dağıt**.  
+5. İçinde **bu SharePoint çözümünün güven düzeyi nedir?** bölümünde, seçimi bırakın **bir korumalı çözüm olarak Dağıt**.  
   
-6.  İçinde **yeni proje kaynağını belirtin** sayfasında, sistem üzerindeki kaydettiğiniz konuma *.wsp* daha önce dosya ve ardından **sonraki** düğmesi.  
+6. İçinde **yeni proje kaynağını belirtin** sayfasında, sistem üzerindeki kaydettiğiniz konuma *.wsp* daha önce dosya ve ardından **sonraki** düğmesi.  
   
-    > [!NOTE]  
-    >  Seçerseniz **son** bu sayfadaki tüm kullanılabilir öğeleri düğmesine *.wsp* dosya içeri aktarılacak.  
+   > [!NOTE]  
+   >  Seçerseniz **son** bu sayfadaki tüm kullanılabilir öğeleri düğmesine *.wsp* dosya içeri aktarılacak.  
   
-7.  İçinde **içeri aktarılacak öğeleri seçin** kutusunda, tüm dışında listesinde onay kutularını temizleyin **Test sütun**ve ardından **son** düğmesi.  
+7. İçinde **içeri aktarılacak öğeleri seçin** kutusunda, tüm dışında listesinde onay kutularını temizleyin **Test sütun**ve ardından **son** düğmesi.  
   
-     Liste çok sayıda öğe içerdiğinden, seçebileceğiniz **Ctrl**+**A** anahtarları listesinde, tüm öğeleri seçmek için onay kutularının tümünü temizlemek için boşluk tuşuna basın ve ardından yalnızca onay kutusunu seçin kutusunun yanındaki **Test sütun** öğesi.  
+    Liste çok sayıda öğe içerdiğinden, seçebileceğiniz **Ctrl**+**A** anahtarları listesinde, tüm öğeleri seçmek için onay kutularının tümünü temizlemek için boşluk tuşuna basın ve ardından yalnızca onay kutusunu seçin kutusunun yanındaki **Test sütun** öğesi.  
   
-     İçeri aktarma işlemi tamamlandığında sonra adlı yeni bir proje **WspImportProject1** oluşturulan adlı bir klasör içeren **alanları**. Özel site sütunu bu klasörde olduğu **Test sütun** ve kendi tanım dosyası *Elements.xml*.  
+    İçeri aktarma işlemi tamamlandığında sonra adlı yeni bir proje **WspImportProject1** oluşturulan adlı bir klasör içeren **alanları**. Özel site sütunu bu klasörde olduğu **Test sütun** ve kendi tanım dosyası *Elements.xml*.  
   
 ## <a name="deploy-the-project"></a>Projeyi dağıtın
  Son olarak, dağıtım **WspImportProject1** ikinci SharePoint alt site özel site sütunu görüntülemek için daha önce oluşturduğunuz.  

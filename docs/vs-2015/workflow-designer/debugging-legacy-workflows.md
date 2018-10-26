@@ -16,49 +16,49 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 8e35b16d10bf59b4ae8c91de2a5281d540c0e67c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5d835ddc84fae24130035f0664d446a73b7ac3f4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210606"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897714"
 ---
 # <a name="debugging-legacy-workflows"></a>Eski İş Akışlarında Hata Ayıklama
 Eski kullanıyorsanız [!INCLUDE[wfd1](../includes/wfd1-md.md)] içinde [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] oluşturmak için [!INCLUDE[wf](../includes/wf-md.md)] target.NET Framework 3.0 veya 3.5, başka bir programı gibi iş akışlarınızı kesme noktaları ayarlama işlemlere ekleme ve iş parçacığı İnceleme ayıklanabilmesi, uygulamaları ve çağrı yığını. Uzaktan hata ayıklama seçeneğiniz de vardır.  
   
 > [!NOTE]
 >  Visual Studio'nun birden çok sürümünü yüklediyseniz ve makinenizde kaldırılması WF3 hata ayıklama iki aşağıdaki olasılıkları biriyle başarısız olabilir:  
->   
->  -   Kesme noktalarınız ulaşılmıyor.  
-> -   Aşağıdaki ileti görüntülenir:  
->   
->  **Web sunucusunda hata ayıklama başlatılamadı. Hata ayıklayıcı düzgün yüklenmemiş.  İstenen türde kod hata ayıklaması yapılamıyor.  Yüklemek veya hata ayıklayıcı onarmak için Kurulumu çalıştırın.**  
->   
->  .NET Framework 3.0 veya 3.5 iş akışı hata ayıklama sırasında ya da bu senaryo ortaya çıkarsa sürümünü Visual Studio yüklemesi onarıp gerçekleştirin.  
+> 
+> - Kesme noktalarınız ulaşılmıyor.  
+>   -   Aşağıdaki ileti görüntülenir:  
+> 
+>   **Web sunucusunda hata ayıklama başlatılamadı. Hata ayıklayıcı düzgün yüklenmemiş.  İstenen türde kod hata ayıklaması yapılamıyor.  Yüklemek veya hata ayıklayıcı onarmak için Kurulumu çalıştırın.**  
+> 
+>   .NET Framework 3.0 veya 3.5 iş akışı hata ayıklama sırasında ya da bu senaryo ortaya çıkarsa sürümünü Visual Studio yüklemesi onarıp gerçekleştirin.  
   
  [!INCLUDE[wf2](../includes/wf2-md.md)] Aşağıdaki standart ile tümleştirilir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] windows hata ayıklama:  
   
--   **Kesme noktası**: beklendiği gibi çalışır, ancak bir etkinlik için işlev adı belirtin.  
+- **Kesme noktası**: beklendiği gibi çalışır, ancak bir etkinlik için işlev adı belirtin.  
   
--   **Çağrı yığını**: değiştirilmiş bir iş akışı örneğinde yürüttünüz etkinliklerinin bir özetini sağlamak için. Girdileri **çağrı yığını** etkinlikleri yürütmenin bir Derinlik ilk arama penceresi açılır. Seçili etkinlik odak moduna giriş dosyasına çift tıklayabilirsiniz.  
+- **Çağrı yığını**: değiştirilmiş bir iş akışı örneğinde yürüttünüz etkinliklerinin bir özetini sağlamak için. Girdileri **çağrı yığını** etkinlikleri yürütmenin bir Derinlik ilk arama penceresi açılır. Seçili etkinlik odak moduna giriş dosyasına çift tıklayabilirsiniz.  
   
--   **İş parçacığı**: örnek kimliği ayıklanmakta olan iş akışı örneği sağlar.  
+- **İş parçacığı**: örnek kimliği ayıklanmakta olan iş akışı örneği sağlar.  
   
- Visual Studio için Windows Workflow Foundation, aşağıdaki hata ayıklama özellikleri desteklemez:  
+  Visual Studio için Windows Workflow Foundation, aşağıdaki hata ayıklama özellikleri desteklemez:  
   
--   Koşullu kesme noktalarını Tasarımcı yüzeyinde.  
+- Koşullu kesme noktalarını Tasarımcı yüzeyinde.  
   
--   QuickWatch.  
+- QuickWatch.  
   
--   Sonraki deyimi ayarlayın.  
+- Sonraki deyimi ayarlayın.  
   
--   İmlece kadar Çalıştır.  
+- İmlece kadar Çalıştır.  
   
--   Düzenle ve devam et.  
+- Düzenle ve devam et.  
   
--   Just-ın-time hata ayıklama.  
+- Just-ın-time hata ayıklama.  
   
--   Karışık mod hata ayıklama.  
+- Karışık mod hata ayıklama.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Windows Workflow Foundation için Visual Studio Hata Ayıklayıcısını Çağırma (Eski)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)  

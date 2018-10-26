@@ -21,12 +21,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e497800f209c7653c1f47904df03baf604b3b134
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a3954e5d18db6585c8dbda017773969f96b33de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229404"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830983"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Nasıl Yapılır: Proje ve Öğe Şablonlarını Bulma ve Düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,26 +39,26 @@ ms.locfileid: "49229404"
 ### <a name="installed-templates"></a>Yüklü Şablonlar  
  Ürün ile birlikte yüklü şablonlar varsayılan olarak bulunur:  
   
--   \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\\*dil*\\*yerel ayar*\  
+- \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\\*dil*\\*yerel ayar*\  
   
--   \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\\*dil*\\*yerel ayar\\*  
+- \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\\*dil*\\*yerel ayar\\*  
   
- Örneğin, şu dizin içeren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] İngilizce için proje şablonları:  
+  Örneğin, şu dizin içeren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] İngilizce için proje şablonları:  
   
- C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\  
+  C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\  
   
 ### <a name="custom-templates"></a>Özel şablonlar  
  Özel şablonları varsayılan olarak bulunur:  
   
--   \My Documents\Visual studio *sürüm*\Templates\ProjectTemplates\\*dil*\  
+- \My Documents\Visual studio *sürüm*\Templates\ProjectTemplates\\*dil*\  
   
--   \My Documents\Visual studio *sürüm*\Templates\ItemTemplates\\*dil*\  
+- \My Documents\Visual studio *sürüm*\Templates\ItemTemplates\\*dil*\  
   
- Örneğin, aşağıdaki dizine özel içeren [!INCLUDE[csprcs](../includes/csprcs-md.md)] proje şablonları:  
+  Örneğin, aşağıdaki dizine özel içeren [!INCLUDE[csprcs](../includes/csprcs-md.md)] proje şablonları:  
   
- C:\Documents ve Settings\Kullanıcıadı\My belgeleri\\< Visual Studio sürümü\>\Templates\ProjectTemplates\Visual C# \  
+  C:\Documents ve Settings\Kullanıcıadı\My belgeleri\\< Visual Studio sürümü\>\Templates\ProjectTemplates\Visual C# \  
   
- Bir alt yerelleştirilmiş şablonları için özel şablonlar içermez. Özel şablonlar, varsayılan dizini değiştirebilirsiniz **seçenekleri** iletişim kutusunun **Environment\Projects ve çözümleri**.  
+  Bir alt yerelleştirilmiş şablonları için özel şablonlar içermez. Özel şablonlar, varsayılan dizini değiştirebilirsiniz **seçenekleri** iletişim kutusunun **Environment\Projects ve çözümleri**.  
   
 ## <a name="organizing-templates"></a>Şablon düzenleme  
  Kategorileri **yeni proje** ve **Yeni Öğe Ekle** iletişim kutuları, yüklü ve özel şablon konumları mevcut dizin yapılarını yansıtır. Sizin için anlamlı bir şekilde şablonlarınızı düzenlemek için bu dizin yapılarını değiştirebilirsiniz.  
@@ -73,25 +73,25 @@ ms.locfileid: "49229404"
   
 ##### <a name="to-create-new-installed-project-template-categories"></a>Yeni yüklenen proje şablonu kategoriler oluşturmak için  
   
-1.  Yüklü şablon dizini dil klasörde bir klasör oluşturun. Örneğin, bir Office kategori için oluşturmak için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proje şablonları oluşturma şu dizin:  
+1. Yüklü şablon dizini dil klasörde bir klasör oluşturun. Örneğin, bir Office kategori için oluşturmak için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proje şablonları oluşturma şu dizin:  
   
-     \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\VisualBasic\1033\Office\  
+    \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\VisualBasic\1033\Office\  
   
-2.  Bu kategori için tüm şablonları yeni klasöre yerleştirin.  
+2. Bu kategori için tüm şablonları yeni klasöre yerleştirin.  
   
-3.  Tüm örneklerini kapatın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Tüm örneklerini kapatın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  Üzerinde **Başlat** menüsünde tıklayın **çalıştırma**, türü **cmd**, tıklatıp **Tamam**.  
+4. Üzerinde **Başlat** menüsünde tıklayın **çalıştırma**, türü **cmd**, tıklatıp **Tamam**.  
   
-5.  Devenv.exe ve türü içeren dizine komut isteminde bulun **devenv /installvstemplates**.  
+5. Devenv.exe ve türü içeren dizine komut isteminde bulun **devenv /installvstemplates**.  
   
-6.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]'i çalıştırın.  
+6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]'i çalıştırın.  
   
-7.  Üzerinde **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.  
+7. Üzerinde **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.  
   
-8.  Office kategori göründüğünü doğrulayın **yeni proje** iletişim kutusundaki **proje türleri** bölmesi altında [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
+8. Office kategori göründüğünü doğrulayın **yeni proje** iletişim kutusundaki **proje türleri** bölmesi altında [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
   
- Proje öğesi şablonları kümesini özel bir klasöre de gruplandırabilirsiniz.  
+   Proje öğesi şablonları kümesini özel bir klasöre de gruplandırabilirsiniz.  
   
 ##### <a name="to-create-new-installed-item-template-categories"></a>Yeni yüklenen öğe şablonu kategoriler oluşturmak için  
   
@@ -120,17 +120,17 @@ ms.locfileid: "49229404"
   
 ##### <a name="to-create-new-custom-project-template-categories"></a>Yeni özel Proje şablonu kategoriler oluşturmak için  
   
-1.  Özel proje şablonu dizini dil klasöründe bir klasör oluşturun. Örneğin, bir HelloWorld kategorisi için oluşturmak için [!INCLUDE[csprcs](../includes/csprcs-md.md)] şablonları, şu dizin oluşturma:  
+1. Özel proje şablonu dizini dil klasöründe bir klasör oluşturun. Örneğin, bir HelloWorld kategorisi için oluşturmak için [!INCLUDE[csprcs](../includes/csprcs-md.md)] şablonları, şu dizin oluşturma:  
   
-     \My belgeleri\\< Visual Studio sürümü\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    \My belgeleri\\< Visual Studio sürümü\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
-2.  Bu kategori için tüm şablonları yeni klasöre yerleştirin.  
+2. Bu kategori için tüm şablonları yeni klasöre yerleştirin.  
   
-3.  Üzerinde **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.  
+3. Üzerinde **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.  
   
-4.  HelloWorld kategori göründüğünü doğrulayın **yeni proje** iletişim kutusundaki **proje türleri** bölmesi altında [!INCLUDE[csprcs](../includes/csprcs-md.md)].  
+4. HelloWorld kategori göründüğünü doğrulayın **yeni proje** iletişim kutusundaki **proje türleri** bölmesi altında [!INCLUDE[csprcs](../includes/csprcs-md.md)].  
   
- Özel öğe şablonları kümesini özel bir klasöre de gruplandırabilirsiniz.  
+   Özel öğe şablonları kümesini özel bir klasöre de gruplandırabilirsiniz.  
   
 ##### <a name="to-create-new-custom-item-template-categories"></a>Yeni özel öğe şablonu kategoriler oluşturmak için  
   

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65626bc483d7794c2adae141903783238a97eddd
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: bcd3a3f47af8251f6f4bfa1b5b5f08da7a1f3e3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468471"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933566"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>İzlenecek yol: Visual Studio'da iş parçacıkları penceresini kullanarak birden çok iş parçacıklı bir uygulamada hata ayıklama
 Visual Studio sağlar bir **iş parçacıkları** penceresi ve diğer kullanıcı arabirimi çok iş parçacıklı uygulamalarda hata ayıklamanıza yardımcı olması için öğeleri. Bu öğreticide nasıl kullanılacağını gösterir **iş parçacıkları** penceresi ve **hata ayıklama konumu** araç çubuğu. Diğer araçları hakkında daha fazla bilgi için bkz: [birden çok iş parçacıklı uygulamalarda hata ayıklamaya başlama](../debugger/get-started-debugging-multithreaded-apps.md). Bu öğreticide yalnızca birkaç dakika sürer, ancak bunu tamamlamaya, çok iş parçacıklı uygulamalarda hata ayıklama özellikleriyle alışmanızı.   
@@ -72,29 +72,29 @@ Bu öğreticiye başlamadan bir çok iş parçacıklı uygulaması projesi gerek
   
 #### <a name="to-start-debugging"></a>Hata ayıklamayı başlatmak için  
   
-1.  ' A tıklayın sol kanalda `Console.WriteLine` ifadesi yeni kesme noktası eklemek için.  
+1. ' A tıklayın sol kanalda `Console.WriteLine` ifadesi yeni kesme noktası eklemek için.  
   
-     Kaynak kod düzenleyicinin sol tarafındaki kanalda, kırmızı bir daire görünür. Bu, bir kesme noktası bu konumda şimdi ayarlandığını gösterir.  
+    Kaynak kod düzenleyicinin sol tarafındaki kanalda, kırmızı bir daire görünür. Bu, bir kesme noktası bu konumda şimdi ayarlandığını gösterir.  
   
-2.  Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat** (**F5**).  
+2. Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat** (**F5**).  
   
-     Hata ayıklama başladığında, çalıştırmak için konsol uygulaması başlar ve kesme noktası sonra durur.  
+    Hata ayıklama başladığında, çalıştırmak için konsol uygulaması başlar ve kesme noktası sonra durur.  
   
-3.  Konsol uygulama penceresine odak bu noktada varsa, tıklayın [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Pencere odağı döndürülecek [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+3. Konsol uygulama penceresine odak bu noktada varsa, tıklayın [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Pencere odağı döndürülecek [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-4.  Kaynak Kod Düzenleyicisi'nde aşağıdaki kodu içeren satırı bulun:  
+4. Kaynak Kod Düzenleyicisi'nde aşağıdaki kodu içeren satırı bulun:  
   
-    ```VB  
-    Thread.Sleep(5000)   
-    ```  
+   ```VB  
+   Thread.Sleep(5000)   
+   ```  
   
-    ```csharp  
-    Thread.Sleep(3000);  
-    ```  
+   ```csharp  
+   Thread.Sleep(3000);  
+   ```  
   
-    ```C++  
-    Thread::Sleep(3000);  
-    ```
+   ```C++  
+   Thread::Sleep(3000);  
+   ```
   
 #### <a name="to-discover-the-thread-marker"></a>İş parçacığı işaret bulmak için  
 
@@ -261,4 +261,4 @@ Dondurma ve çözme (askıya alma ve sürdürme) iş parçacıkları iş gerçek
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Nasıl yapılır: hata ayıklarken başka bir iş parçacığına geçiş](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+ [Nasıl Yapılır: Hata Ayıklarken Başka Bir İş Parçacığına Geçme](../debugger/how-to-switch-to-another-thread-while-debugging.md)

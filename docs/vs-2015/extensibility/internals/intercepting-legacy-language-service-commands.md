@@ -16,12 +16,12 @@ ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96a641778811d88c0087a23822ab789e72b066f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 45f0084d060e9727f30ba39233ec5b92818d9205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190014"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829891"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Eski Dil Hizmeti Komutlarını Kesme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "49190014"
   
  Komut işleme için aşağıdaki seçenekleriniz vardır:  
   
--   Komutu işlemek ve ardından sonraki komut filtre açın komut zincirinde geçirin.  
+- Komutu işlemek ve ardından sonraki komut filtre açın komut zincirinde geçirin.  
   
--   Komutu işlemek ve sonraki komutu filtre açın komutu kodum'a geçirmez.  
+- Komutu işlemek ve sonraki komutu filtre açın komutu kodum'a geçirmez.  
   
--   Komutunu işleyemez, ancak sonraki komut filtre açın komutu geçirin.  
+- Komutunu işleyemez, ancak sonraki komut filtre açın komutu geçirin.  
   
--   Komut yoksayın. Geçerli filtreye işlemez ve sıradaki filtreye açın geçirmeyin.  
+- Komut yoksayın. Geçerli filtreye işlemez ve sıradaki filtreye açın geçirmeyin.  
   
- Dil hizmetinizin hangi komutları işlemek için bilgi [dil hizmeti filtreleri için önemli komutlar](../../extensibility/internals/important-commands-for-language-service-filters.md).
+  Dil hizmetinizin hangi komutları işlemek için bilgi [dil hizmeti filtreleri için önemli komutlar](../../extensibility/internals/important-commands-for-language-service-filters.md).
 

@@ -15,12 +15,12 @@ caps.latest.revision: 40
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3985372ba8c6aa8ba198f70a3538e3062a6d89ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f70bcea2599ac318d59255a274629b5c53cea730
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223228"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889795"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Katman diyagramlarına komut ve hareket ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,25 +40,25 @@ Bağlam menüsü komutları tanımlayabilir ve hareket işleyicileri Visual Stud
   
 #### <a name="to-define-an-extension-by-using-a-project-template"></a>Bir proje şablonunu kullanarak bir uzantısı tanımlamak için  
   
-1.  Kullanarak yeni çözümde bir proje oluşturma **yeni proje** komutunu **dosya** menüsü.  
+1. Kullanarak yeni çözümde bir proje oluşturma **yeni proje** komutunu **dosya** menüsü.  
   
-2.  İçinde **yeni proje** iletişim kutusunun **modelleme projeleri**, şunlardan birini seçin **katman Tasarımcı komut uzantısı** veya **katman Tasarımcı hareket uzantısı** .  
+2. İçinde **yeni proje** iletişim kutusunun **modelleme projeleri**, şunlardan birini seçin **katman Tasarımcı komut uzantısı** veya **katman Tasarımcı hareket uzantısı** .  
   
-     Şablon, küçük bir iş örneği içeren bir proje oluşturur.  
+    Şablon, küçük bir iş örneği içeren bir proje oluşturur.  
   
-3.  Uzantıyı test etmek için basın **CTRL + F5** veya **F5**.  
+3. Uzantıyı test etmek için basın **CTRL + F5** veya **F5**.  
   
-     Deneysel örneği [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] başlatır. Bu örnekte, bir katman diyagramı oluşturun. Komut veya hareket uzantınızın Bu diyagramda çalışması gerekir.  
+    Deneysel örneği [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] başlatır. Bu örnekte, bir katman diyagramı oluşturun. Komut veya hareket uzantınızın Bu diyagramda çalışması gerekir.  
   
-4.  Deneysel örneği kapatın ve örnek kodu değiştirin. Daha fazla bilgi için [erişin ve güncelleştirme modelleri program kodunda katman](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+4. Deneysel örneği kapatın ve örnek kodu değiştirin. Daha fazla bilgi için [erişin ve güncelleştirme modelleri program kodunda katman](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-5.  Aynı projeye daha fazla komut veya hareket işleyicileri ekleyebilirsiniz. Daha fazla bilgi için aşağıdaki bölümlerden birine bakın:  
+5. Aynı projeye daha fazla komut veya hareket işleyicileri ekleyebilirsiniz. Daha fazla bilgi için aşağıdaki bölümlerden birine bakın:  
   
-     [Bir menü komutunu tanımlama](#command)  
+    [Bir menü komutunu tanımlama](#command)  
   
-     [Bir hareket işleyicisi tanımlama](#gesture)  
+    [Bir hareket işleyicisi tanımlama](#gesture)  
   
-6.  Ana örneğine uzantıyı yüklemek için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], veya başka bir bilgisayarda Bul **.vsix** dosyası **bin\\\***. Yüklemek istediğiniz bilgisayara kopyalayın ve ardından çift tıklayın. Kaldırmak için kullanın **Uzantılar ve güncelleştirmeler** üzerinde **Araçları** menüsü.  
+6. Ana örneğine uzantıyı yüklemek için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], veya başka bir bilgisayarda Bul **.vsix** dosyası *bin\\*. Yüklemek istediğiniz bilgisayara kopyalayın ve ardından çift tıklayın. Kaldırmak için kullanın **Uzantılar ve güncelleştirmeler** üzerinde **Araçları** menüsü.  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Ayrı bir VSIX'e komut veya hareket ekleme  
  Komutların, katman doğrulayıcılarının ve diğer uzantıların bulunduğu bir VSIX oluşturmak istiyorsanız, VSIX tanımlamak için bir proje ve işleyiciler için ayrı projeler oluşturmanızı öneririz. Diğer modelleme uzantısı türleri hakkında daha fazla bilgi için bkz: [genişletmek UML modellerini ve diyagramları](../modeling/extend-uml-models-and-diagrams.md).  
@@ -116,37 +116,37 @@ Bağlam menüsü komutları tanımlayabilir ve hareket işleyicileri Visual Stud
 ##  <a name="command"></a> Bir menü komutunu tanımlama  
  Varolan bir hareket ya da komut projesine daha fazla menü komutu tanımları ekleyebilirsiniz. Her komut aşağıdaki özelliklere sahip bir sınıf tarafından tanımlanır:  
   
--   Sınıf şu şekilde bildirilir:  
+- Sınıf şu şekilde bildirilir:  
   
-     `[LayerDesignerExtension]`  
+   `[LayerDesignerExtension]`  
   
-     `[Export(typeof(ICommandExtension))]`  
+   `[Export(typeof(ICommandExtension))]`  
   
-     `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`  
+   `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`  
   
--   Ad alanı ve sınıfın adı önemli değildir.  
+- Ad alanı ve sınıfın adı önemli değildir.  
   
--   Uygulayan yöntemler `ICommandExtension` aşağıdaki gibidir:  
+- Uygulayan yöntemler `ICommandExtension` aşağıdaki gibidir:  
   
-    -   `string Text {get;}` -Menüde görüntülenen etiketi.  
+  -   `string Text {get;}` -Menüde görüntülenen etiketi.  
   
-    -   `void QueryStatus(IMenuCommand command)` -Kullanıcı diyagrama ve komutun kullanıcının geçerli seçimi için görünür ve etkin olup olmayacağını belirler çağrılır.  
+  -   `void QueryStatus(IMenuCommand command)` -Kullanıcı diyagrama ve komutun kullanıcının geçerli seçimi için görünür ve etkin olup olmayacağını belirler çağrılır.  
   
-    -   `void Execute(IMenuCommand command)` -Kullanıcı komutu seçtiğinde çağrılır.  
+  -   `void Execute(IMenuCommand command)` -Kullanıcı komutu seçtiğinde çağrılır.  
   
--   Geçerli seçimi belirlemek için alabilirsiniz `IDiagramContext`:  
+- Geçerli seçimi belirlemek için alabilirsiniz `IDiagramContext`:  
   
-     `[Import]`  
+   `[Import]`  
   
-     `public IDiagramContext DiagramContext { get; set; }`  
+   `public IDiagramContext DiagramContext { get; set; }`  
   
-     `...`  
+   `...`  
   
-     `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
+   `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
   
- Daha fazla bilgi için [erişin ve güncelleştirme modelleri program kodunda katman](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+  Daha fazla bilgi için [erişin ve güncelleştirme modelleri program kodunda katman](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
- Yeni bir komut eklemek için aşağıdaki örneği içeren yeni bir kod dosyası oluşturun. Ardından test edin ve düzenleyin.  
+  Yeni bir komut eklemek için aşağıdaki örneği içeren yeni bir kod dosyası oluşturun. Ardından test edin ve düzenleyin.  
   
 ```  
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
@@ -242,30 +242,30 @@ namespace MyLayerExtensions // change to your preference
   
  Hareket işleyicilerle ilgili aşağıdaki noktalara dikkat edin:  
   
--   Üyeleri `IGestureExtension` aşağıdaki gibidir:  
+- Üyeleri `IGestureExtension` aşağıdaki gibidir:  
   
-     **OnDoubleClick** -kullanıcı diyagrama herhangi bir yeri çift tıkladığında çağrılır.  
+   **OnDoubleClick** -kullanıcı diyagrama herhangi bir yeri çift tıkladığında çağrılır.  
   
-     **CanDragDrop** - art arda kullanıcı bir öğeyi diyagram üzerine sürüklerken fareyi hareket ettirdikçe denir. Hızlı çalışması gerekir.  
+   **CanDragDrop** - art arda kullanıcı bir öğeyi diyagram üzerine sürüklerken fareyi hareket ettirdikçe denir. Hızlı çalışması gerekir.  
   
-     **OnDragDrop** -kullanıcı diyagrama bir öğe bıraktığında çağrılır.  
+   **OnDragDrop** -kullanıcı diyagrama bir öğe bıraktığında çağrılır.  
   
--   Her yöntem için ilk bağımsız değişken bir `IShape`, öğesinden, katman öğesini elde edebilirsiniz. Örneğin:  
+- Her yöntem için ilk bağımsız değişken bir `IShape`, öğesinden, katman öğesini elde edebilirsiniz. Örneğin:  
   
-    ```  
-    public void OnDragDrop(IShape target, IDataObject data)  
-    {  
-        ILayerElement element = target.GetLayerElement();  
-        if (element is ILayer)  
-        {  
-            // ...  
-        }  
-    }  
-    ```  
+  ```  
+  public void OnDragDrop(IShape target, IDataObject data)  
+  {  
+      ILayerElement element = target.GetLayerElement();  
+      if (element is ILayer)  
+      {  
+          // ...  
+      }  
+  }  
+  ```  
   
--   Bazı sürüklenen öğe türlerine ilişkin işleyiciler zaten tanımlanmış. Örneğin, kullanıcı öğeleri Çözüm Gezgini'nden bir katman diyagramına sürükleyebilirsiniz. Bu öğe türleri için sürükleme işleyicisi tanımlayamazsınız. Bu gibi durumlarda, `DragDrop` yöntemleri çağrılmaz.  
+- Bazı sürüklenen öğe türlerine ilişkin işleyiciler zaten tanımlanmış. Örneğin, kullanıcı öğeleri Çözüm Gezgini'nden bir katman diyagramına sürükleyebilirsiniz. Bu öğe türleri için sürükleme işleyicisi tanımlayamazsınız. Bu gibi durumlarda, `DragDrop` yöntemleri çağrılmaz.  
   
- Diyagram üzerine sürüklediğinizde, diğer öğelerin kodunu çözme hakkında daha fazla bilgi için bkz. [modelleme diyagramında hareket işleyicisi tanımlama](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).  
+  Diyagram üzerine sürüklediğinizde, diğer öğelerin kodunu çözme hakkında daha fazla bilgi için bkz. [modelleme diyagramında hareket işleyicisi tanımlama](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Program kodunda katman modellerini gezinme ve güncelleştirme](../modeling/navigate-and-update-layer-models-in-program-code.md)   

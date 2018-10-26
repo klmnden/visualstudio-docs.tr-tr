@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3868838c72b2d9a50f2a1b3dc8eedaa3d36ac67c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4447ab5e5c0ced7852d0cb7dae3a4c0c7e3b3e68
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498860"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928184"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>Yeniden kullanılabilir düğme grupları oluşturma
 Bir komut grubuyla, her zaman birlikte bir menü veya araç çubuğunda görünen komutlar koleksiyonudur. Herhangi bir komut grubu CommandPlacements bölümündeki farklı üst menüye atayarak yeniden kullanılabilir *.vsct* dosya.  
@@ -88,37 +88,37 @@ Bir komut grubuyla, her zaman birlikte bir menü veya araç çubuğunda görüne
   
 ## <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>Düğmeleri yeniden kullanılabilir bir grup bir menüye yerleştirmek için  
   
-1.  Girdi oluşturma `CommandPlacements` bölümü. GUID ve Kimliğini `CommandPlacement` grubunuzun, bu öğeye üst GUID ve ID bu hedef konumu ayarlayın.  
+1. Girdi oluşturma `CommandPlacements` bölümü. GUID ve Kimliğini `CommandPlacement` grubunuzun, bu öğeye üst GUID ve ID bu hedef konumu ayarlayın.  
   
-     CommandPlacements bölümü komutları Kısım sonra yerleştirilmelidir:  
+    CommandPlacements bölümü komutları Kısım sonra yerleştirilmelidir:  
   
-    ```xml  
-    <CommandTable>  
-    ...  
-      <Commands>... </Commands>  
-      <CommandPlacements>... </CommandPlacements>  
-    ...   
-    </CommandTable>  
-    ```  
+   ```xml  
+   <CommandTable>  
+   ...  
+     <Commands>... </Commands>  
+     <CommandPlacements>... </CommandPlacements>  
+   ...   
+   </CommandTable>  
+   ```  
   
-     Bir komut grubuyla birden fazla menüsünde eklenebilir. Üst menü, oluşturduğunuz tarafından sağlanan bir olabilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (açıklandığı *ShellCmdDef.vsct* veya *SharedCmdDef.vsct*), ya da başka bir VSPackage içinde tanımlanır. Üst menü sonunda bağlı olduğu sürece, ana öğe katmanları sayısı sınırsızdır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] veya VSPackage tarafından görüntülenen bir kısayol menüsü.  
+    Bir komut grubuyla birden fazla menüsünde eklenebilir. Üst menü, oluşturduğunuz tarafından sağlanan bir olabilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (açıklandığı *ShellCmdDef.vsct* veya *SharedCmdDef.vsct*), ya da başka bir VSPackage içinde tanımlanır. Üst menü sonunda bağlı olduğu sürece, ana öğe katmanları sayısı sınırsızdır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] veya VSPackage tarafından görüntülenen bir kısayol menüsü.  
   
-     Aşağıdaki örnek grubu koyar **Çözüm Gezgini** diğer düğmeleri sağındaki araç çubuğu.  
+    Aşağıdaki örnek grubu koyar **Çözüm Gezgini** diğer düğmeleri sağındaki araç çubuğu.  
   
-    ```xml  
-    <CommandPlacements>  
-        <CommandPlacement guid="guidReusableCommandPackageCmdSet" id="MyMenuGroup" priority="0xF00">  
-          <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_PROJWIN"/>  
-        </CommandPlacement>  
-    </CommandPlacements>  
-    ```  
+   ```xml  
+   <CommandPlacements>  
+       <CommandPlacement guid="guidReusableCommandPackageCmdSet" id="MyMenuGroup" priority="0xF00">  
+         <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_PROJWIN"/>  
+       </CommandPlacement>  
+   </CommandPlacements>  
+   ```  
   
-    ```xml  
-    <CommandPlacements>  
-      <CommandPlacement guid="guidButtonGroupCmdSet" id="MyMenuGroup"   
-          priority="0x605">  
-        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />  
-      </CommandPlacement>  
-    </CommandPlacements>  
+   ```xml  
+   <CommandPlacements>  
+     <CommandPlacement guid="guidButtonGroupCmdSet" id="MyMenuGroup"   
+         priority="0x605">  
+       <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />  
+     </CommandPlacement>  
+   </CommandPlacements>  
   
-    ```
+   ```

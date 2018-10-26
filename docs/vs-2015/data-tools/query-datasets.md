@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 21c509656ab32c1532bb9523d0bbc3d8cf94f0a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219304"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890575"
 ---
 # <a name="query-datasets"></a>Veri kümelerini sorgulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,13 +75,13 @@ Bir veri kümesindeki belirli kayıtları aramak için üzerinde DataTable FindB
   
  Aşağıdaki kod örnekleri, yazılan veri kümelerindeki ilişkiler yukarı ve aşağı gitmek nasıl ekleyebileceğiniz gösterilmektedir. Yazılan kod örneklerini kullanımı <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) ve oluşturulan `FindBy` *PrimaryKey* (`FindByCustomerID`) istenen satırı bulun ve ilgili kayıtları döndürmek için yöntemleri. Örnekleri derleme ve yalnızca varsa doğru bir şekilde çalıştırın:  
   
--   Adlı bir veri kümesi örneği `NorthwindDataSet` ile bir `Customers` tablo.  
+- Adlı bir veri kümesi örneği `NorthwindDataSet` ile bir `Customers` tablo.  
   
--   Bir `Orders` tablo.  
+- Bir `Orders` tablo.  
   
--   Adlı bir ilişki `FK_Orders_Customers`iki tablo, kod kapsamını ilgili  
+- Adlı bir ilişki `FK_Orders_Customers`iki tablo, kod kapsamını ilgili  
   
- Ayrıca, her iki tablonun döndürülecek herhangi bir kayıt için verilerle doldurulması gerekir.  
+  Ayrıca, her iki tablonun döndürülecek herhangi bir kayıt için verilerle doldurulması gerekir.  
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Alt seçili üst kaydının kayıtları döndürmek için  
   

@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: abb318f74c04c372aaddb520ff581e7f84128f5e
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: afee98dfd4d3192bb964c09ba4813c4469af95ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860400"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839914"
 ---
 # <a name="writing-a-t4-text-template"></a>T4 Metin Şablonu Yazma
 Bir metin şablonu, ondan oluşturulan metni içerir. Örneğin, bir web sayfası oluşturan bir şablonu içerir "\<html >..." ve tüm diğer standart bölümlerini bir HTML sayfası. Şablona eklenmiş olan *denetim blokları*, program kodu parçalarını olduğu. Denetim blokları, değişken değerlerini sağlayın ve bölümlerini koşullu ve tekrarlanan olmasını sağlar.
@@ -255,7 +255,6 @@ private void WriteSquareLine(int i)
 #>
 Content of MyFile.txt is:
 <#= myFile #>
-
 ```
 
 Ana bilgisayar tarafından sağlanan diğer hizmetlere de edinebilirsiniz. Daha fazla bilgi için [erişme Visual Studio'ya veya diğer Konaklara bir şablondan](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
@@ -272,7 +271,7 @@ Ana bilgisayar tarafından sağlanan diğer hizmetlere de edinebilirsiniz. Daha 
 ## <a name="related-topics"></a>İlgili konular
 
 |Görev|Konu|
-|----------|-----------|
+|-|-|
 |Bir şablon yazma.|[T4 Metin Şablonları Yazma Yönergeleri](../modeling/guidelines-for-writing-t4-text-templates.md)|
 |Program kodunu metin oluşturmak.|[Metin şablonu yapısı](../modeling/writing-a-t4-text-template.md)|
 |Visual Studio çözümü içinde dosyaları oluşturur.|[T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|

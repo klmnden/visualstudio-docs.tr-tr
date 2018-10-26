@@ -15,25 +15,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3c30b665a27f4e77d21744582a23555fdb899c9
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 61ba39bc8a312fb06499bed7ca94e33dc5e7153e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228779"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825997"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Bir komutun görünümünü değiştirme
 Bir komutun görünümünü değiştirmek için kullanıcı geri bildirim sağlayabilirsiniz. Örneğin, kullanılabilir olmadığında farklı aramak için bir komut isteyebilirsiniz. Komutları kullanılabilir veya kullanılamaz hale, gizleme veya bunları gösterebilir veya denetleyin veya menüde seçeneğinin işaretini kaldırın.  
   
  Bir komutun görünümünü değiştirmek için aşağıdaki eylemlerden birini gerçekleştirin:  
   
--   Uygun bayrakları komut tablosu dosyasındaki komut tanımı belirtin.  
+- Uygun bayrakları komut tablosu dosyasındaki komut tanımı belirtin.  
   
--   Kullanım <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> hizmeti.  
+- Kullanım <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> hizmeti.  
   
--   Uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirim ve ham komut nesneleri değiştirebilirsiniz.  
+- Uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirim ve ham komut nesneleri değiştirebilirsiniz.  
   
- Aşağıdaki adımlarda, bulmak ve yönetilen paket Framework (MPF) kullanarak bir komutun görünümünü güncelleştirmek gösterilmektedir.  
+  Aşağıdaki adımlarda, bulmak ve yönetilen paket Framework (MPF) kullanarak bir komutun görünümünü güncelleştirmek gösterilmektedir.  
   
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>Bir menü komutu görünümünü değiştirmek için  
   

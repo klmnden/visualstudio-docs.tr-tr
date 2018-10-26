@@ -16,37 +16,37 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0bfd7b6ef909415814bb8eff6da24ec8fef33ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a1777f2f9fbd63ba659e74d0ce471962b29b15fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242313"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811080"
 ---
 # <a name="markers-report"></a>İşaretçiler Raporu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 İşaretçiler raporu görüntülenen zaman çerçevesi içinde işaretlerinin listeler.  Yatay yakınlaştırma veya kulvarları, gizleme görünmesini veya kaybolmasını işaretçileri neden olabilir. Rapor, her işaret hakkındaki bu bilgileri içerir:  
   
--   Bu, göreli izleme başlangıcını başladığında süre.  
+- Bu, göreli izleme başlangıcını başladığında süre.  
   
--   Süresi. Süre bayrakları ve iletileri için sıfır çünkü bir anı temsil ederler.  
+- Süresi. Süre bayrakları ve iletileri için sıfır çünkü bir anı temsil ederler.  
   
--   Oluşturulan iş parçacığı kimliği.  
+- Oluşturulan iş parçacığı kimliği.  
   
--   Bu oluşturulan olay izleme için Windows (ETW) sağlayıcısı.  
+- Bu oluşturulan olay izleme için Windows (ETW) sağlayıcısı.  
   
--   İşaret serisi içinden yazılmıştır.  
+- İşaret serisi içinden yazılmıştır.  
   
--   Olayların ait kategori.  
+- Olayların ait kategori.  
   
--   Kendi önem düzeyi.  
+- Kendi önem düzeyi.  
   
--   (Aralık, bayrağı veya ileti) türü.  
+- (Aralık, bayrağı veya ileti) türü.  
   
--   Neyin temsil üst düzey açıklaması  
+- Neyin temsil üst düzey açıklaması  
   
- Seçin **dışarı** düğmesini işaretçiler raporu CSV dosyası olarak kaydedin. Diğer uygulamalar veya Araçlar CSV dosyasındaki verileri kullanabilirsiniz.  
+  Seçin **dışarı** düğmesini işaretçiler raporu CSV dosyası olarak kaydedin. Diğer uygulamalar veya Araçlar CSV dosyasındaki verileri kullanabilirsiniz.  
   
 > [!NOTE]
 >  İşaretçiler raporu 1.000 işaretleyicileri görüntüleyebilirsiniz. Tüm işaretleri görmek için bir CSV dosyasına tam raporu dışarı aktarın.

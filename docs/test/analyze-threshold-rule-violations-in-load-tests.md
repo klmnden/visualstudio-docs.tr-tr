@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Yük testlerindeki eşik kuralı ihlallerini çözümleme
+title: Visual Studio'da Yük testlerindeki eşik kuralı ihlallerini çözümleme
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,67 +17,67 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 882b2511c547837466f45578031c86e6b0df9d74
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 41837a9ff3d67f2d712352115bcb6581580b32a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234991"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813004"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Yük testi çözümleyicisini kullanarak Yük testlerindeki eşik kuralı ihlallerini çözümleme
 
-Eşik kuralları belirli bir performans sayaçları ile ilişkili olan ve bir performans sayacı aşıldı veya ayarlanan bir değeri altına düştü ihlalleri gösterir. Bir yük testi çalıştırdığınızda, önceden ayarlanmış eşik kuralları için oluşan ihlalleri çözümleyebilirsiniz.
+Eşik kuralları belirli bir performans sayaçları ile ilişkili olan ve bir performans sayacı aşıldı veya set değerin altına altına düştü ihlallerini gösterir. Bir yük testi çalıştırdığınızda, daha önce ayarladığınız eşik kuralları için oluşan ihlallerini analiz edebilirsiniz.
 
-Herhangi bir ihlal oluştuysa, bir **Eşik ihlallerini** köprü bulunur **Yük Testi Çözümleyicisi** durum çubuğu ve oluşan ihlallerinin sayısını belirtir. Eşik ihlalleri tablosunu görüntülemek için köprü seçin. Eşik ihlalleri de görüntüleyebilirsiniz **sayaçları** penceresinde ve grafik.
+Herhangi bir ihlal oluştuysa, bir **Eşik ihlallerini** köprü bulunur **Yük Testi Çözümleyicisi** durum çubuğu ve oluşan ihlallerinin sayısını belirtir. Eşik ihlalleri tablosunu görüntülemek için köprüyü seçin. Ayrıca Eşik ihlallerini görüntüleyebilirsiniz **sayaçları** penceresinde ve grafik üzerinde.
 
-## <a name="view-threshold-violations-in-the-table"></a>Tablodaki görünümü Eşik ihlalleri
+## <a name="view-threshold-violations-in-the-table"></a>Eşik ihlallerini Tablo görünümü
 
- Eşik ihlalleri tablosu ilk 1.000 ihlali görüntüler. Aşağıdaki tablo şu sütunları içerir:
+ Eşik ihlalleri tablosunu ilk 1.000 ihlalleri görüntüler. Aşağıdaki tablo şu sütunları içerir:
 
 |Sütun|Açıklama|Varsayılan olarak görünür|
-|------------|-----------------|------------------------|
+|-|-|-|
 |Zaman|İhlalin gerçekleştiği süre boyunca yük test edin.|Evet|
-|Bilgisayar|Test ihlalin oluştuğu bilgisayarın adı. **Not:** donanımlarını yük testlerini çalıştırdığınızda, bu önemlidir.|Evet|
-|Kategori|İhlalin oluştuğu performans sayacı kategorisi.|Evet|
-|Sayaç|İhlalin oluştuğu performans sayacının adı.|Evet|
+|Bilgisayar|İhlalin gerçekleştiği test edilen bilgisayar adı. **Not:** donanımlarını üzerinde yük testlerini çalıştırdığınızda bu önemlidir.|Evet|
+|Kategori|İhlalin gerçekleştiği performans sayacı kategorisi.|Evet|
+|Sayaç|İhlalin gerçekleştiği performans sayacının adı.|Evet|
 |Örnek|Performans sayacı örneği üzerinde ihlali oluştu.|Evet|
 |İleti|Eşik ihlali açıklayan ileti. Örneğin, **Kritik Eşik değeri 0 5 değerini aşıyor**.|Evet|
 
 > [!NOTE]
-> Tablo, sütun başlıklarının seçerek sıralayabilirsiniz.
+> Tablo, sütun üst bilgilerini seçerek sıralayabilirsiniz.
 
- Daha fazla bilgi için bkz: [analiz yük testi sonuçlarını ve hatalarını Tablo görünümünde](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+ Daha fazla bilgi için [yük testi sonuçlarını ve hatalarını Tablo görünümünde çözümlemek](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
-## <a name="view-threshold-violations-in-the-counters-panel"></a>Sayaç panelinde görünüm Eşik ihlalleri
+## <a name="view-threshold-violations-in-the-counters-panel"></a>Eşik ihlallerini Sayaçlar panelini görüntüle
 
- Eşik ihlallerini görüntüleyebilirsiniz **sayaçları** panelinde yük testi için performans sayaçları listeler ağacı. Simgeleri **sayaçları** Masası Eşik ihlallerini iletişim. Simge aşağıdakilerden biri olacaktır:
+ Eşik ihlallerini görüntüleyebilirsiniz **sayaçları** panelinde Yük testiniz için performans sayaçları listeler ağaç. Simgeleri **sayaçları** paneli iletişim Eşik ihlalleri. Simgesi aşağıdakilerden biri olabilir:
 
- Simge aşağıdakilerden biri olacaktır:
+ Simgesi aşağıdakilerden biri olabilir:
 
  ![Eşik ihlali yok](../test/media/icon_ltest_1.gif) Eşik ihlali yok.
 
  ![Kritik Eşik ihlalinin son aralığı](../test/media/icon_ltest_2.gif) Son aralıkta bir Kritik Eşik ihlali oluştu.
 
- ![Kritik Eşik ihlalinin önceki aralığı](../test/media/icon_ltest_3.gif) Önceki bir aralıkta bir Kritik Eşik ihlali oluştu.
+ ![Önceki bir aralıkta bir Kritik Eşik ihlali](../test/media/icon_ltest_3.gif) Önceki bir aralıkta bir Kritik Eşik ihlali oluştu.
 
  ![Uyarı eşiği ihlalinin son aralığı](../test/media/icon_ltest_4.gif) Uyarı eşiği ihlalinin son aralıkta oluştu.
 
- ![Uyarı eşiği ihlalinin önceki aralığı](../test/media/icon_ltest_5.gif) Uyarı eşiği ihlalinin önceki aralıkta oluştu.
+ ![Uyarı eşiği ihlalinin önceki aralığı](../test/media/icon_ltest_5.gif) Önceki bir aralıkta bir uyarı eşik ihlali oluştu.
 
- İsteğe bağlı olarak, Eşik İhlallerini Grafikte da gösterilebilir. Grafikte eşik ihlalinin oluştuğu veri noktasının yanındaki eşik simgesi görünür.
+ İsteğe bağlı olarak, Eşik ihlalleri grafikte de görüntülenebilir. Eşik ihlali gerçekleştiği veri noktasının yanındaki grafik üzerindeki eşik simgesi görünür.
 
- Sayaç ağacında belirli sayaç düğümünden kök düğümü kadar eşik ihlali simgesi yayılır. Bu bir ağaç genişletilmemiş çünkü ağacında görünür olmayabilir sayacı ihlali uyarır.
+ Sayaç ağaçta kök düğümü kadar belirli bir sayaç düğümünden eşik ihlali simgesine yayılır. Bu bir ihlali nedeniyle ağaç genişletilmemiş ağaçta görünür olmayabilir sayacı uyarır.
 
- Daha fazla bilgi için bkz: [grafikler görünümünde ve Tablolar görünümünde Sayaçlar panelini kullanarak](../test/counters-panel-in-load-test-analyzer.md).
+ Daha fazla bilgi için [grafikler görünümünde ve Tablolar görünümünde Sayaçlar panelini kullanarak](../test/counters-panel-in-load-test-analyzer.md).
 
-## <a name="view-threshold-violations-on-the-graph"></a>Görünüm Eşik İhlallerini Grafikte
+## <a name="view-threshold-violations-on-the-graph"></a>Grafikte Eşik ihlallerini görüntüle
 
- Grafikte Eşik ihlallerini görüntüleyebilirsiniz. Benzer şekilde **sayaçları** paneli, simgeler Eşik İhlallerini Grafikte iletişim kurar. Grafikte eşik ihlalinin oluştuğu veri noktasının yanındaki simgeleri görüntülenir. Grafikte olmayan bir sayaçta eşik ihlali meydana gelirse, bunu grafiğe ondan sürükleyerek ekleyebilirsiniz **sayaçları** grafik paneline.
+ Eşik İhlallerini Grafikte görüntüleyebilirsiniz. Benzer şekilde **sayaçları** paneli, simgeler grafikte Eşik ihlallerini iletişim kurar. Grafikte eşik ihlali gerçekleştiği veri noktasının yanındaki simge görünür. Grafikte görünmeyen bir sayaçta eşik ihlali meydana gelirse, bu grafiğe ondan sürükleyerek ekleyebileceğiniz **sayaçları** grafiğe paneli.
 
- Daha fazla bilgi için bkz: [Çözümle yük testi sonuçları grafikler görünümünde](../test/analyze-load-test-results-in-the-graphs-view.md).
+ Daha fazla bilgi için [Çözümle yük testi sonuçlarını grafik görünümünde](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Sayaç kümelerini ve eşik kurallarını bilgisayarlar için bir yük testinde belirtme](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
+- [Sayaç kümelerini ve eşik kurallarını bilgisayarlar için bir yük testi içinde belirtme](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Yük testi sonuçlarını çözümleme](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Yük testi sonuçlarını ve hatalarını Tablo görünümünde analiz eder.](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
+- [Yük testi sonuçlarını ve hatalarını Tablo görünümünde çözümleyin](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)

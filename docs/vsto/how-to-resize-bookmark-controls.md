@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 79b129a31439b175bde61f9a995abcf98a7a9708
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 57b6d6a089570c52607cf73eeed4fc00978ab251
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676708"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924843"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Nasıl yapılır: yer işareti denetimlerini yeniden boyutlandırma
   Boyutunu ayarlamak bir <xref:Microsoft.Office.Tools.Word.Bookmark> Microsoft Office Word belgesine eklediğinizde denetim. Ayrıca daha sonraki bir zamanda boyutlandırabilirsiniz.  
@@ -30,21 +30,21 @@ ms.locfileid: "35676708"
   
  Bir yer işareti yeniden boyutlandırmak için üç yolu vardır:  
   
--   Metin ekleyip <xref:Microsoft.Office.Tools.Word.Bookmark> denetimi.  
+- Metin ekleyip <xref:Microsoft.Office.Tools.Word.Bookmark> denetimi.  
   
-     Bir yer işareti olarak metin eklediğinizde, yer işareti boyutu otomatik olarak artar ve yeni metin içeren. Metin sildiğinizde, yer işareti boyutu otomatik olarak azaltır.  
+   Bir yer işareti olarak metin eklediğinizde, yer işareti boyutu otomatik olarak artar ve yeni metin içeren. Metin sildiğinizde, yer işareti boyutu otomatik olarak azaltır.  
   
--   Değişiklik <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> ve <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> özelliklerini <xref:Microsoft.Office.Tools.Word.Bookmark> denetimi.  
+- Değişiklik <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> ve <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> özelliklerini <xref:Microsoft.Office.Tools.Word.Bookmark> denetimi.  
   
-     Bu seçenek, yalnızca birkaç karakter boyutunu değiştiriyorsanız kullanışlıdır.  
+   Bu seçenek, yalnızca birkaç karakter boyutunu değiştiriyorsanız kullanışlıdır.  
   
--   Yeniden <xref:Microsoft.Office.Tools.Word.Bookmark> denetimi.  
+- Yeniden <xref:Microsoft.Office.Tools.Word.Bookmark> denetimi.  
   
-     Bir yer işaretinin konumunu ve boyutunu önemli bir değişiklik varsa, bu yararlıdır.  
+   Bir yer işaretinin konumunu ve boyutunu önemli bir değişiklik varsa, bu yararlıdır.  
   
- Belge düzeyinde projelerde eklediğiniz <xref:Microsoft.Office.Tools.Word.Bookmark> belgenin tasarım zamanında veya çalışma zamanında, projenizdeki denetimler. Projelerinde, VSTO eklentisi, eklediğiniz <xref:Microsoft.Office.Tools.Word.Bookmark> herhangi bir açık belgeye çalışma zamanında denetimler. Daha fazla bilgi için [nasıl yapılır: Word belgelerine yer işareti ekleme denetimleri](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
+  Belge düzeyinde projelerde eklediğiniz <xref:Microsoft.Office.Tools.Word.Bookmark> belgenin tasarım zamanında veya çalışma zamanında, projenizdeki denetimler. Projelerinde, VSTO eklentisi, eklediğiniz <xref:Microsoft.Office.Tools.Word.Bookmark> herhangi bir açık belgeye çalışma zamanında denetimler. Daha fazla bilgi için [nasıl yapılır: Word belgelerine yer işareti ekleme denetimleri](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="change-the-start-and-end-properties"></a>Başlangıç ve bitiş özelliklerini değiştir  
   

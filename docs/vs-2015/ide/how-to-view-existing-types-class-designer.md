@@ -20,12 +20,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9759425659d4a7e77672442ee37fd7649e7a6751
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 630902cd789fb3eec0f51ed1cfede3ae54e1ac83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305294"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846987"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Nasıl Yapılır: Varolan Türleri Görüntüleme (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ Varolan bir türünü ve üyelerini görmek için bir sınıf diyagramına şekl
   
 ### <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Projedeki türleri bir sınıf diyagramı üzerinde görmek için  
   
-1.  Çözüm Gezgini'ndeki bir projeden varolan bir sınıf diyagramı (.cd) dosyası açın. Ya da hiçbir sınıf diyagramı yoksa, projeye yeni bir sınıf diyagramı ekleyin. Bkz: [nasıl yapılır: sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).  
+1. Çözüm Gezgini'ndeki bir projeden varolan bir sınıf diyagramı (.cd) dosyası açın. Ya da hiçbir sınıf diyagramı yoksa, projeye yeni bir sınıf diyagramı ekleyin. Bkz: [nasıl yapılır: sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).  
   
-2.  Çözüm Gezgini'ndeki projeden bir kaynak kodu dosyasını sınıf diyagramına sürükleyin.  
+2. Çözüm Gezgini'ndeki projeden bir kaynak kodu dosyasını sınıf diyagramına sürükleyin.  
   
-    > [!WARNING]
-    >  Çözümünüz birden fazla uygulama kod paylaşan bir proje varsa, bir sınıf diyagramına dosyaları veya kodu yalnızca şu kaynaklardan sürükleyebilirsiniz:  
-    >   
-    >  -   Diyagramı içeren uygulama projesi  
-    > -   Uygulama projesi tarafından içeri aktarılan bir paylaşılan proje  
-    > -   Başvurulan bir proje  
-    > -   Bir derleme  
+   > [!WARNING]
+   >  Çözümünüz birden fazla uygulama kod paylaşan bir proje varsa, bir sınıf diyagramına dosyaları veya kodu yalnızca şu kaynaklardan sürükleyebilirsiniz:  
+   > 
+   > - Diyagramı içeren uygulama projesi  
+   >   -   Uygulama projesi tarafından içeri aktarılan bir paylaşılan proje  
+   >   -   Başvurulan bir proje  
+   >   -   Bir derleme  
   
-     Kaynak kodu dosyasında tanımlı türleri temsil eden şekiller, diyagram üzerinde dosyayı sürüklediğiniz konumda görünür.  
+    Kaynak kodu dosyasında tanımlı türleri temsil eden şekiller, diyagram üzerinde dosyayı sürüklediğiniz konumda görünür.  
   
- Sınıf Görünümü'ndeki proje düğümünden bir veya daha fazla türü sınıf diyagramına sürükleyerek projedeki türleri de görüntüleyebilirsiniz.  
+   Sınıf Görünümü'ndeki proje düğümünden bir veya daha fazla türü sınıf diyagramına sürükleyerek projedeki türleri de görüntüleyebilirsiniz.  
   
 > [!TIP]
 >  Sınıf Görünümü açık değilse, sınıf görünümünden açın **görünümü** menüsü. Sınıf Görünümü hakkında daha fazla bilgi için bkz: [Viewing Classes and Their Members](http://msdn.microsoft.com/en-us/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  

@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47db8dc67108e8d443e5f485babb906bd7b040f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dfe1b5fb517ed7b886e681081ac7910cfe717cc6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301944"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867175"
 ---
 # <a name="nameprofile"></a>NameProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,17 +45,17 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
  Profil oluşturma öğesinin adı. Bir ad (NameProfileA dönüş NAME_ERROR_INVALID_NAME içinde elde edilen) geçersiz ise:  
   
--   NameProfileA geçirilen işaretçi NULL bir değerdir  
+- NameProfileA geçirilen işaretçi NULL bir değerdir  
   
--   PszName dize verilerini bir sayı ile başlatılır.  
+- PszName dize verilerini bir sayı ile başlatılır.  
   
--   Bir alanı pszName dize verilerini içeriyor  
+- Bir alanı pszName dize verilerini içeriyor  
   
--   Dize verilerini pszName aşağıdaki karakterlerden herhangi birini içeren:,. ' ~! @# $% ^ & * () = []{}&#124;\\? / <>  
+- Dize verilerini pszName aşağıdaki karakterlerden herhangi birini içeren:,. ' ~! @# $% ^ & * () = []{}&#124;\\? / <>  
   
- `Level`  
+  `Level`  
   
- Hangi performans veri toplama uygulanabilir profili düzeyini gösterir. Aşağıdaki **PROFILE_CONTROL_LEVEL** değerleri için hangi performans veri toplama uygulanabilir üç düzeylerinden birini belirtmek için kullanılabilir:  
+  Hangi performans veri toplama uygulanabilir profili düzeyini gösterir. Aşağıdaki **PROFILE_CONTROL_LEVEL** değerleri için hangi performans veri toplama uygulanabilir üç düzeylerinden birini belirtmek için kullanılabilir:  
   
 |Numaralandırıcı|Açıklama|  
 |----------------|-----------------|  

@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb711763e96cf6959a71b002f09cefa1ced44734
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 6ac6fb3ae1f8c4e7fb48c9cd9a0d2b77cb875094
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42623978"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894475"
 ---
 # <a name="navigate-code"></a>Kod gidin
 
@@ -65,10 +65,10 @@ Gezinti çubuğunu gizlemek için değiştirin **gezinti çubuğu** seçeneğini
 
 Çözümde seçilen öğenin tüm başvurularını bulur. Bu, olası yan-büyük bir yeniden düzenleme etkilerini kontrol etmek için ya da "etkin" kod doğrulamak için kullanabilirsiniz. Tuşuna **F8** výsledky mezi atlamak için. Daha fazla bilgi için [kodunuzdaki başvuruları bulma](finding-references.md).
 
-Giriş        | İşlev
+Giriş | İşlev
 ------------ | ---
 **Klavye** | Metin imlecinizi yere adını yazın ve ENTER tuşuna içinde **Shift**+**F12**
-**Fare**    | Seçin **tüm başvuruları Bul** bağlam menüsünden
+**Fare** | Seçin **tüm başvuruları Bul** bağlam menüsünden
 
 ## <a name="reference-highlighting"></a>Başvuru vurgulama
 
@@ -104,37 +104,37 @@ Bu komutları hakkında daha fazla bilgi bkz [Git komutlarını kullanarak kod b
 
 Tanıma Git için seçilen öğenin açıklamasını alır. Daha fazla bilgi için [tanıma ve Özet tanım](../ide/go-to-and-peek-definition.md).
 
-Giriş        | İşlev
+Giriş | İşlev
 ------------ | ---
 **Klavye** | Metin imlecinizi yere adını yazın ve ENTER tuşuna içinde **F12**
-**Fare**    | Tür adına sağ tıklayıp **tanıma** veya basın **Ctrl** (Visual Studio 2017 sürüm 15.4 için yeni) tür adı'e tıklayın
+**Fare** | Tür adına sağ tıklayıp **tanıma** veya basın **Ctrl** (Visual Studio 2017 sürüm 15.4 için yeni) tür adı'e tıklayın
 
 ## <a name="peek-definition"></a>Tanıma göz at
 
 Tanımı görüntüler, Kod düzenleyicisinde, konumunuzu uzağa gitmeden pencerede seçili öğenin tanıma göz at. Daha fazla bilgi için [nasıl yapılır: Özet tanım'ı kullanarak kodu görüntüleme ve düzenleme](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) ve [tanıma ve Özet tanım](../ide/go-to-and-peek-definition.md).
 
-Giriş        | İşlev
+Giriş | İşlev
 ------------ | ---
 **Klavye** | Metin imlecinizi yere adını yazın ve ENTER tuşuna içinde **Alt**+**F12**
-**Fare**    | Tür adına sağ tıklayıp **Özet tanımı** veya basın **Ctrl** ve türü adına tıklayın (varsa **tanımı Özet Görünümü'nde açın** teslim seçeneği)
+**Fare** | Tür adına sağ tıklayıp **Özet tanımı** veya basın **Ctrl** ve türü adına tıklayın (varsa **tanımı Özet Görünümü'nde açın** teslim seçeneği)
 
 ## <a name="go-to-implementation"></a>Uygulamaya Git
 
 Uygulamaya Git kullanarak, bir taban sınıftan gidin veya tür, uygulamaları için. Birden fazla uygulaması varsa, bunları listelenen görürsünüz **sembol sonuçları Bul** penceresi:
 
-Giriş        | İşlev
+Giriş | İşlev
 ------------ | ---
 **Klavye** | Metin imlecinizi yere adını yazın ve ENTER tuşuna içinde **Ctrl**+**F12**
-**Fare**    | Tür adına sağ tıklayıp **uygulamaya Git**
+**Fare** | Tür adına sağ tıklayıp **uygulamaya Git**
 
 ## <a name="call-hierarchy"></a>Çağrı Hiyerarşisi
 
 Bir yöntemde gelen ve giden çağrıları görüntüleyebileceğiniz [çağrı hiyerarşisi penceresi](../ide/reference/call-hierarchy.md):
 
-Giriş        | İşlev
+Giriş | İşlev
 ------------ | ---
 **Klavye** | Metin imlecinizi yere adını yazın ve ENTER tuşuna içinde **Ctrl**+**K**, **Ctrl**+**T**
-**Fare**    | Üye adının üzerine sağ tıklayın ve **çağrı hiyerarşisini görüntüle**
+**Fare** | Üye adının üzerine sağ tıklayın ve **çağrı hiyerarşisini görüntüle**
 
 ## <a name="next-method-and-previous-method-commands-visual-basic"></a>Sonraki önceki yöntem komutları (Visual Basic)
 

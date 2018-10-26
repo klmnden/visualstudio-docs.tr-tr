@@ -22,25 +22,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3532f4e5b1fc38c25ebb462916bc7eefae9f9725
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a0188a54e500f56c9c3d947ec27d53640173837b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677182"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912636"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Belge düzeyi özelleştirmeler mimarisi
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] Microsoft Office Word ve Microsoft Office Excel için belge düzeyi özelleştirmelerini oluşturmak için projeleri içerir. Bu konu, belge düzeyinde özelleştirmeler şu yönlerini açıklar:  
   
--   [Özelleştirmeleri anlama](#UnderstandingCustomizations)  
+- [Özelleştirmeleri anlama](#UnderstandingCustomizations)  
   
--   [Özelleştirmelerin bileşenleri](#Components)  
+- [Özelleştirmelerin bileşenleri](#Components)  
   
--   [Özelleştirmeleri Microsoft Office uygulamaları ile nasıl çalışır?](#HowCustomizationsWork)  
+- [Özelleştirmeleri Microsoft Office uygulamaları ile nasıl çalışır?](#HowCustomizationsWork)  
   
- [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
+  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Belge düzeyinde özelleştirmeler oluşturma hakkında genel bilgi için bkz. [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [Wordiçinbelgedüzeyiözelleştirmeleriniprogramlamakullanmayabaşlayın](../vsto/getting-started-programming-document-level-customizations-for-word.md), ve [Excel için belge düzeyi özelleştirmelerini programlama başlama](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
+  Belge düzeyinde özelleştirmeler oluşturma hakkında genel bilgi için bkz. [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [Wordiçinbelgedüzeyiözelleştirmeleriniprogramlamakullanmayabaşlayın](../vsto/getting-started-programming-document-level-customizations-for-word.md), ve [Excel için belge düzeyi özelleştirmelerini programlama başlama](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
   
 ##  <a name="UnderstandingCustomizations"></a> Özelleştirmeleri anlama  
  Belge düzeyi özelleştirmesi oluşturmak için Visual Studio Office geliştirici araçları kullandığınızda, belirli bir belge ile ilişkilendirilen bir yönetilen kod derlemesi oluşturun. Bir belge veya çalışma kitabıyla bağlantılı bir derleme, yönetilen kod uzantıları bildirilir. Daha fazla bilgi için [tasarım ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md).  
@@ -94,11 +94,11 @@ ms.locfileid: "35677182"
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>.Xml dosya adı uzantılarına sahip Word belgeleri için destek  
  Belge düzeyi projesi şablonlarının üzerinde aşağıdaki dosya biçimlerini tabanlı projeler oluşturmaya izin verme:  
   
--   Word XML belgesi (*\*xml*).  
+- Word XML belgesi (*\*xml*).  
   
--   Word 2003 XML belgesi (*\*xml*).  
+- Word 2003 XML belgesi (*\*xml*).  
   
- Son kullanıcılarınızın bu dosya biçimlerinde özelleştirmeleri kullanmak istiyorsanız, oluşturun ve yukarıdaki tabloda belirtilen desteklenen dosya biçimleri birini kullanan bir özelleştirme dağıtın. Özelleştirme yükledikten sonra son kullanıcıların Word XML belgesinde belgeyi kaydedebilirsiniz (*\*xml*) biçimi veya Word 2003 XML belgesi (*\*xml*) biçiminde ve özelleştirme beklendiği gibi çalışmayı sürdürecektir.  
+  Son kullanıcılarınızın bu dosya biçimlerinde özelleştirmeleri kullanmak istiyorsanız, oluşturun ve yukarıdaki tabloda belirtilen desteklenen dosya biçimleri birini kullanan bir özelleştirme dağıtın. Özelleştirme yükledikten sonra son kullanıcıların Word XML belgesinde belgeyi kaydedebilirsiniz (*\*xml*) biçimi veya Word 2003 XML belgesi (*\*xml*) biçiminde ve özelleştirme beklendiği gibi çalışmayı sürdürecektir.  
   
 ##  <a name="Components"></a> Özelleştirmelerin bileşenleri  
  Temel bir özelleştirme belge ve derleme bileşenleridir. Bu bileşenlerin yanı sıra, Microsoft Office uygulamalarını keşfedin ve yükledikleri nasıl önemli bir rol oynar diğer birkaç bölümü vardır.  

@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b9a332916d1f680f403992c35a1fb5a47a6be093
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 298e649704731157164db363dfa198ff6f2cdc41
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231419"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893838"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Salt Okunur Kesimler Oluşturmak için Kilitleme İlkesi Tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,11 +74,11 @@ partition.SetLocks(Locks.Delete);
 ## <a name="lock-values"></a>Kilit değerler  
  Kilitleri Store, bölüm veya bireysel ModelElement ayarlayabilirsiniz. Kilitler olduğu bir `Flags` numaralandırma: kullanarak değerleri birleştirebilirsiniz '&#124;'.  
   
--   Bir ModelElement kilitler, kilitler, bölümün her zaman ekleyin.  
+- Bir ModelElement kilitler, kilitler, bölümün her zaman ekleyin.  
   
--   Bir bölümün kilitleri her zaman Store kilitler ekleyin.  
+- Bir bölümün kilitleri her zaman Store kilitler ekleyin.  
   
- Bölüm üzerinde bir kilit ayarlayın veya depolar ve aynı anda tek bir öğe üzerinde kilit devre dışı olamaz.  
+  Bölüm üzerinde bir kilit ayarlayın veya depolar ve aynı anda tek bir öğe üzerinde kilit devre dışı olamaz.  
   
 |Değer|Yani `IsLocked(Value)` geçerlidir|  
 |-----------|------------------------------------------|  

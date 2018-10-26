@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0555968f67d804060437df272927aa3ee89c730c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 43b17390f077238a6874784f186eb8add3819f6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379955"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883313"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Nasıl yapılır: iş akışı tasarımcısında bir iş akışı aracılığıyla açıklama ekleme
 
@@ -49,13 +49,13 @@ Daha büyük, daha karmaşık iş akışları oluşturmayı kolaylaştırmak iç
 
 ## <a name="displaying-an-annotation-in-an-activitys-designer"></a>Ek açıklamanın bir etkinliğin tasarımcıda görüntüleme
 
-1.  Bir ek açıklama dışında etkinlik görüntüleme olan bir etkinlik Tasarımcısı ile tıklayın **PIN** ek açıklama donatıcı simgesi.
+1. Bir ek açıklama dışında etkinlik görüntüleme olan bir etkinlik Tasarımcısı ile tıklayın **PIN** ek açıklama donatıcı simgesi.
 
    Ek açıklama etkinlik Tasarımcısı'nda görüntülenir. Aşağıdaki ekran görüntüsünde, ek açıklama "Başlangıç etkinliği iş akışı" etkinlik Tasarımcısı'nda görüntülenir.
 
    ![Etkinlik Tasarımcısı'nda gösterilen ek açıklaması](../workflow-designer/media/annotationindesigner.png)
 
-1. Ek açıklama etkinlik Tasarımcısı dışında görüntülemek için etkinlik Tasarımcısı'nda ek açıklama alanı üzerine gelin ve tıklayın **Unpın** simgesi
+2. Ek açıklama etkinlik Tasarımcısı dışında görüntülemek için etkinlik Tasarımcısı'nda ek açıklama alanı üzerine gelin ve tıklayın **Unpın** simgesi
 
    ![Ek açıklama görüntülenen dışında bir etkinlik Tasarımcısı](../workflow-designer/media/annotationoutsidedesigner.png)
 

@@ -13,12 +13,12 @@ ms.assetid: 7c251098-00aa-49cf-9e37-5717c0c6b3f1
 caps.latest.revision: 11
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 814431f673757c2a3f3e37aac50bf2d6b89f35da
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fb5085bdd9a79330f7c4f73fb39993af63eb0a78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179302"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811952"
 ---
 # <a name="sample-excel-extension-element-classes"></a>Örnek Excel Eklentisi: Öğe Sınıfları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "49179302"
 ## <a name="utilities-and-excelutilities-classes"></a>Yardımcı programları ve ExcelUtilities sınıfları  
  İç `ExcelUtilities` sınıfı teknoloji adı ve belirtilen pencere tanıtıcısı bir Excel çalışma sayfasına temsil edip etmediğini belirleyen bir yöntemi gibi bazı sabit değerler sağlar.  
   
- `Utilities` Sınıfında yardımcı yöntemler, çeşitli kullanıcı Arabirimi hakkında bilgiler döndürür. Dış Sistem DLL'lerini, doğrudan çağrıları gibi bazı yöntemler kullanmanız **USER32. DLL** ve **OLEACC. DLL**, kullanıcı Arabiriminden pencere işleyicileri almak için **.**  
+ `Utilities` Sınıfında yardımcı yöntemler, çeşitli kullanıcı Arabirimi hakkında bilgiler döndürür. Dış Sistem DLL'lerini, doğrudan çağrıları gibi bazı yöntemler kullanmanız **USER32. DLL** ve **OLEACC. DLL**, kullanıcı Arabiriminden pencere işleyicileri almak için<strong>.</strong>  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>   

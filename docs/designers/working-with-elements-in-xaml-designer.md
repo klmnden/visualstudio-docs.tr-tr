@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 97063229e2ba72263975247b71686492ee8c64f6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 47f6a975488adacbeffbdf0f04771131cd9a0ff9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279667"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926949"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>XAML Tasarımcısı'nda öğelerle çalışma
 Öğeleri ekleyebilirsiniz; denetimler, düzenler ve şekiller — uygulamanıza XAML, kod veya XAML Tasarımcısını kullanarak. Bu konuda, Visual Studio veya Visual Studio için Blend, XAML Tasarımcısı'nda öğelerle çalışma açıklar.
@@ -40,21 +40,21 @@ ms.locfileid: "44279667"
 
 #### <a name="to-change-the-layering-order"></a>Katman sırasını değiştirmek için
 
--   Aşağıdakilerden birini yapın:
+- Aşağıdakilerden birini yapın:
 
-    -   İçinde **belge anahattı** penceresi, istenen katman sırasını oluşturmak için aşağı veya yukarı öğeleri sürükleyin.
+  - İçinde **belge anahattı** penceresi, istenen katman sırasını oluşturmak için aşağı veya yukarı öğeleri sürükleyin.
 
-    -   Belge Anahattı penceresi veya üzerine gelin, katman sırasını değiştirmek istediğiniz çalışma yüzeyi öğe sağ **sipariş**ve sonra aşağıdakilerden birine tıklayın:
+  - Belge Anahattı penceresi veya üzerine gelin, katman sırasını değiştirmek istediğiniz çalışma yüzeyi öğe sağ **sipariş**ve sonra aşağıdakilerden birine tıklayın:
 
-        -   **Öne Getir** öğe tüm sipariş öne getirmek için.
+    -   **Öne Getir** öğe tüm sipariş öne getirmek için.
 
-        -   **Öne Getir** öğe getirmek için sırada bir düzey iletin.
+    -   **Öne Getir** öğe getirmek için sırada bir düzey iletin.
 
-        -   **Geri gönderme** öğesi geri bir düzey sıraya göndermek için.
+    -   **Geri gönderme** öğesi geri bir düzey sıraya göndermek için.
 
-        -   **Arkaya Gönder** öğe tüm sırasını geri göndermek için.
+    -   **Arkaya Gönder** öğe tüm sırasını geri göndermek için.
 
-     Değişiklik **haritadaki** özelliğinde **Düzen** Özellikler penceresindeki bölümü. Çakışan öğe için **haritadaki** özelliğini belge anahat penceresinde gösterilen öğelerin sırasını üzerinden öncelik alır. Bir daha yüksek olan bir öğeyi **haritadaki** değeri önde öğeleri çakışma halinde görünür.
+    Değişiklik **haritadaki** özelliğinde **Düzen** Özellikler penceresindeki bölümü. Çakışan öğe için **haritadaki** özelliğini belge anahat penceresinde gösterilen öğelerin sırasını üzerinden öncelik alır. Bir daha yüksek olan bir öğeyi **haritadaki** değeri önde öğeleri çakışma halinde görünür.
 
 ## <a name="changing-the-alignment-of-an-element"></a>Bir öğe hizalamasını değiştirme
  Menü komutlarını kullanarak veya dayama çizgilerine öğeleri sürükleyerek çalışma yüzeyine öğeleri getirebilirsiniz.
@@ -109,9 +109,9 @@ ms.locfileid: "44279667"
 
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>Öğe grubunu Çöz ve düzenini silmek için
 
--   Grubunu çözmek ve istediğiniz gruba sağ tıklayıp **Ungroup**.
+- Grubunu çözmek ve istediğiniz gruba sağ tıklayıp **Ungroup**.
 
- Gruplandırma veya grubu çözme öğeleri Belge Anahattı penceresi seçili öğelere sağ tıklatıp ayrıca **halinde Gruplandır** veya **Ungroup**.
+  Gruplandırma veya grubu çözme öğeleri Belge Anahattı penceresi seçili öğelere sağ tıklatıp ayrıca **halinde Gruplandır** veya **Ungroup**.
 
 ## <a name="resetting-the-element-layout"></a>Öğesi düzeni sıfırlama
  Düzeni Sıfırla komutlarını kullanarak, bir öğenin belirli düzen özellikleri için varsayılan değerleri geri yükleyebilirsiniz. Bu komutu kullanarak, tek tek veya topluca kenar boşluğu, hizalama, genişlik, yükseklik ve bir öğenin boyutunu sıfırlayabilirsiniz.

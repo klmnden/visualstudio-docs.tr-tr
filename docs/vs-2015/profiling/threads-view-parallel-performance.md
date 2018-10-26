@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c49b68e0ee595041ec6b14c9f105937bf723afa6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c0b266f9267925efb2e9e1348f7cd656a6b8be77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300254"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846635"
 ---
 # <a name="threads-view-parallel-performance"></a>İş Parçacıkları Görünümü (Paralel Performans)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ ms.locfileid: "49300254"
   
  Profil analiz sırasında tüm işletim sistemi bağlam anahtar olayları için her bir uygulama iş parçacığı eşzamanlılık görselleştiricisi inceler. Bağlam anahtarları, bunlar gibi birçok nedenden dolayı ortaya çıkabilir:  
   
--   Bir iş parçacığı eşitleme temel nesne üzerinde engellenir.  
+- Bir iş parçacığı eşitleme temel nesne üzerinde engellenir.  
   
--   İş parçacığı kuantum süresi dolar.  
+- İş parçacığı kuantum süresi dolar.  
   
--   Bir iş parçacığı, engelleyici bir g/ç isteği yapar.  
+- Bir iş parçacığı, engelleyici bir g/ç isteği yapar.  
   
- Bir iş parçacığı yürütme durdurulduğunda iş parçacıkları görünümü her içerik anahtarı için bir kategoriye atar. Kategorileri gösterge görünümü sol alt kısmında gösterilir. Eşzamanlılık görselleştiricisi, iş parçacığı çağrı yığınını iyi bilinen engelleme API'leri için arama yaparak içerik değiştirme olayları kategorilere ayırır. Çağrı yığını eşleşme, tarafından sağlanan bekleme nedeni yoksa [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] kullanılır. Ancak, [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] kategorisi üzerinde bir uygulama ayrıntısı temel olabilir ve kullanıcı amacı yansıtmayabilir. Örneğin, [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] yerel ince Okuyucu-Yazıcı kilit g/ç olarak eşitleme yerine engellemek için bekleme nedeni bildirir. Çoğu durumda, içerik anahtarı olayları için karşılık gelen çağrı yığınlarını inceleyerek engelleyen bir olayı kök nedenini tanımlayabilirsiniz.  
+  Bir iş parçacığı yürütme durdurulduğunda iş parçacıkları görünümü her içerik anahtarı için bir kategoriye atar. Kategorileri gösterge görünümü sol alt kısmında gösterilir. Eşzamanlılık görselleştiricisi, iş parçacığı çağrı yığınını iyi bilinen engelleme API'leri için arama yaparak içerik değiştirme olayları kategorilere ayırır. Çağrı yığını eşleşme, tarafından sağlanan bekleme nedeni yoksa [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] kullanılır. Ancak, [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] kategorisi üzerinde bir uygulama ayrıntısı temel olabilir ve kullanıcı amacı yansıtmayabilir. Örneğin, [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] yerel ince Okuyucu-Yazıcı kilit g/ç olarak eşitleme yerine engellemek için bekleme nedeni bildirir. Çoğu durumda, içerik anahtarı olayları için karşılık gelen çağrı yığınlarını inceleyerek engelleyen bir olayı kök nedenini tanımlayabilirsiniz.  
   
- İş Parçacıkları görünümü ayrıca iş parçacıkları arasındaki bağımlılıkları gösterir. Örneğin, bir eşitleme nesnesi üzerinde engellenen bir iş parçacığı olduğunu belirlerseniz, onu engeli kaldırılmış iş parçacığı için bakabilirsiniz ve diğerinde engellemesini zaman noktasında iş parçacığı için çağrı yığınında etkinlik inceleyebilirsiniz.  
+  İş Parçacıkları görünümü ayrıca iş parçacıkları arasındaki bağımlılıkları gösterir. Örneğin, bir eşitleme nesnesi üzerinde engellenen bir iş parçacığı olduğunu belirlerseniz, onu engeli kaldırılmış iş parçacığı için bakabilirsiniz ve diğerinde engellemesini zaman noktasında iş parçacığı için çağrı yığınında etkinlik inceleyebilirsiniz.  
   
- İş parçacığı çalıştırırken, Concurrency Visualizer örnekleri toplar. İş Parçacıkları görünümü'nde, hangi kod tarafından bir veya daha fazla iş parçacığı bir yürütme kesimi sırasında yürütülür analiz edebilirsiniz. Ayrıca, raporlar ve engelleme çağrı yığını ağacı yürütme profil raporları da inceleyebilirsiniz.  
+  İş parçacığı çalıştırırken, Concurrency Visualizer örnekleri toplar. İş Parçacıkları görünümü'nde, hangi kod tarafından bir veya daha fazla iş parçacığı bir yürütme kesimi sırasında yürütülür analiz edebilirsiniz. Ayrıca, raporlar ve engelleme çağrı yığını ağacı yürütme profil raporları da inceleyebilirsiniz.  
   
 ## <a name="usage"></a>Kullanım  
  İş Parçacıkları görünümü kullanabileceğiniz bazı yollar şunlardır:  
@@ -64,26 +64,26 @@ ms.locfileid: "49300254"
 ## <a name="examining-specific-time-intervals-and-threads"></a>Belirli zaman aralıkları ve iş parçacığı İnceleme  
  İş Parçacıkları görünümü zaman çizelgesi gösterir. Yakınlaştırma ve kaydırma belirli aralıklarla ve uygulamanızın iş parçacıklarını incelemek için zaman çizelgesi içinde. X ekseninde zaman ve y ekseninde çeşitli kanallar:  
   
--   Sistem, bir kanalı için okuma ve yazma işlemleri için bir tane her disk için iki g/ç kanal.  
+- Sistem, bir kanalı için okuma ve yazma işlemleri için bir tane her disk için iki g/ç kanal.  
   
--   İşlemdeki her iş parçacığı için bir kanal.  
+- İşlemdeki her iş parçacığı için bir kanal.  
   
--   İzlemede işaret olayları olup olmadığına işaret kanalları. İşaret kanalları, başlangıçta bu olayları oluşturan iş parçacığı kanalları altında görünür.  
+- İzlemede işaret olayları olup olmadığına işaret kanalları. İşaret kanalları, başlangıçta bu olayları oluşturan iş parçacığı kanalları altında görünür.  
   
--   GPU kanalları.  
+- GPU kanalları.  
   
- İş Parçacıkları görünümü bir gösterimi aşağıda verilmiştir:  
+  İş Parçacıkları görünümü bir gösterimi aşağıda verilmiştir:  
   
- ![İş Parçacıkları görünümü](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
-İş Parçacıkları Görünümü  
+  ![İş Parçacıkları görünümü](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
+  İş Parçacıkları Görünümü  
   
- Başlangıçta, böylece ana uygulama iş parçacığının ilk iş parçacıkları, oluşturuldukları sıraya göre sıralanır. İş parçacıkları (örneğin, çoğu yürütme çalışma tarafından) başka bir ölçüte göre sıralamak için görünümünün sol üst köşedeki sıralama seçeneği kullanabilirsiniz.  
+  Başlangıçta, böylece ana uygulama iş parçacığının ilk iş parçacıkları, oluşturuldukları sıraya göre sıralanır. İş parçacıkları (örneğin, çoğu yürütme çalışma tarafından) başka bir ölçüte göre sıralamak için görünümünün sol üst köşedeki sıralama seçeneği kullanabilirsiniz.  
   
- Sol sütun adlarını seçme ve ardından çalışma yapmadığınız bir iş parçacığı gizleyebilirsiniz **Seçili iş parçacıklarını Gizle** araç çubuğunda. Kendi istatistikleri ilgisi olmayan ve raporları clog çünkü tamamen engellenen iş parçacıklarının Gizle öneririz.  
+  Sol sütun adlarını seçme ve ardından çalışma yapmadığınız bir iş parçacığı gizleyebilirsiniz **Seçili iş parçacıklarını Gizle** araç çubuğunda. Kendi istatistikleri ilgisi olmayan ve raporları clog çünkü tamamen engellenen iş parçacıklarının Gizle öneririz.  
   
- Ek iş parçacıklarının, etkin göstergede Gizle tanımlamak için kullanılacak **başına iş parçacığı özeti** rapor **Profil raporu** sekmesi. Bu, seçili zaman aralığı için iş parçacığı durumunu gösteren yürütülme dökümünü grafiği görüntüler. Bazı yakınlaştırma düzeylerinde bazı iş parçacıkları görüntülenmeyebilir. Böyle bir durumda elipsler sağ tarafta görüntülenir.  
+  Ek iş parçacıklarının, etkin göstergede Gizle tanımlamak için kullanılacak **başına iş parçacığı özeti** rapor **Profil raporu** sekmesi. Bu, seçili zaman aralığı için iş parçacığı durumunu gösteren yürütülme dökümünü grafiği görüntüler. Bazı yakınlaştırma düzeylerinde bazı iş parçacıkları görüntülenmeyebilir. Böyle bir durumda elipsler sağ tarafta görüntülenir.  
   
- Zamanı ve bazı iş parçacıkları bir aralık içinde seçtikten sonra Performans Analizi başlayabilirsiniz.  
+  Zamanı ve bazı iş parçacıkları bir aralık içinde seçtikten sonra Performans Analizi başlayabilirsiniz.  
   
 ## <a name="analysis-tools"></a>Analiz Araçları  
  Bu bölümde, raporlar ve diğer analiz araçları açıklanmaktadır.  

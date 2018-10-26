@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b4b3eea594bbfca0701fc8e719af0cf481fa434c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fd5e4727c4352ca27d905bad608c4a1c17284f9b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194141"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930652"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF kullanarak DSL'nizi genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,141 +30,141 @@ Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanarak, etki alanına özg
   
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>MEF tarafından genişletilmesi DSL'nizi etkinleştirmek için  
   
-1.  Adlı yeni bir klasör oluşturun **MefExtension** içinde **DslPackage** proje. Aşağıdaki dosyaları ekleyin:  
+1. Adlı yeni bir klasör oluşturun **MefExtension** içinde **DslPackage** proje. Aşağıdaki dosyaları ekleyin:  
   
-     Dosya adı: `CommandExtensionVSCT.tt`  
+    Dosya adı: `CommandExtensionVSCT.tt`  
   
-    > [!IMPORTANT]
-    >  Bu dosyadaki DslPackage\GeneratedCode\Constants.tt içinde tanımlanan GUID CommandSetId aynı GUID'i ayarlayın  
+   > [!IMPORTANT]
+   >  Bu dosyadaki DslPackage\GeneratedCode\Constants.tt içinde tanımlanan GUID CommandSetId aynı GUID'i ayarlayın  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#  
-    // CmdSet Guid must be defined before master template is included  
-    // This Guid must be kept synchronized with the CommandSetId Guid in Constants.tt  
-    Guid guidCmdSet = new Guid ("00000000-0000-0000-0000-000000000000");  
-    string menuidCommandsExtensionBaseId="0x4000";  
-    #>  
-    <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#  
+   // CmdSet Guid must be defined before master template is included  
+   // This Guid must be kept synchronized with the CommandSetId Guid in Constants.tt  
+   Guid guidCmdSet = new Guid ("00000000-0000-0000-0000-000000000000");  
+   string menuidCommandsExtensionBaseId="0x4000";  
+   #>  
+   <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>  
+   ```  
   
-     Dosya adı: `CommandExtensionRegistrar.tt`  
+    Dosya adı: `CommandExtensionRegistrar.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>  
+   ```  
   
-     Dosya adı: `ValidationExtensionEnablement.tt`  
+    Dosya adı: `ValidationExtensionEnablement.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>  
+   ```  
   
-     Dosya adı: `ValidationExtensionRegistrar.tt`  
+    Dosya adı: `ValidationExtensionRegistrar.tt`  
   
-     Bu dosya eklerseniz, doğrulama DSL'nizi anahtarları en az birini kullanarak etkinleştirmelisiniz **EditorValidation** DSL Gezgini içinde.  
+    Bu dosya eklerseniz, doğrulama DSL'nizi anahtarları en az birini kullanarak etkinleştirmelisiniz **EditorValidation** DSL Gezgini içinde.  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>  
+   ```  
   
-     Dosya adı: `PackageExtensionEnablement.tt`  
+    Dosya adı: `PackageExtensionEnablement.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="DslPackage\PackageExtensionEnablement.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="DslPackage\PackageExtensionEnablement.tt" #>  
+   ```  
   
-2.  Adlı yeni bir klasör oluşturun **MefExtension** içinde **Dsl** proje. Aşağıdaki dosyaları ekleyin:  
+2. Adlı yeni bir klasör oluşturun **MefExtension** içinde **Dsl** proje. Aşağıdaki dosyaları ekleyin:  
   
-     Dosya adı: `DesignerExtensionMetaDataAttribute.tt`  
+    Dosya adı: `DesignerExtensionMetaDataAttribute.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>  
+   ```  
   
-     Dosya adı: `GestureExtensionEnablement.tt`  
+    Dosya adı: `GestureExtensionEnablement.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="Dsl\GestureExtensionEnablement.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="Dsl\GestureExtensionEnablement.tt" #>  
+   ```  
   
-     Dosya adı: `GestureExtensionController.tt`  
+    Dosya adı: `GestureExtensionController.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="Dsl\GestureExtensionController.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="Dsl\GestureExtensionController.tt" #>  
+   ```  
   
-3.  Adlı varolan dosyaya aşağıdaki satırı ekleyin **DslPackage\Commands.vsct**:  
+3. Adlı varolan dosyaya aşağıdaki satırı ekleyin **DslPackage\Commands.vsct**:  
   
-    ```  
-    <Include href="MefExtension\CommandExtensionVSCT.vsct"/>  
-    ```  
+   ```  
+   <Include href="MefExtension\CommandExtensionVSCT.vsct"/>  
+   ```  
   
-     Var olan sonra satır Ekle `<Include>` yönergesi.  
+    Var olan sonra satır Ekle `<Include>` yönergesi.  
   
-4.  `Open DslDefinition.dsl.`  
+4. `Open DslDefinition.dsl.`  
   
-5.  DSL Gezgini içinde seçin **Editor\Validation**.  
+5. DSL Gezgini içinde seçin **Editor\Validation**.  
   
-6.  Özellikler penceresinde özelliklerinden en az birini adlı emin **kullanır...**  olduğu `true`.  
+6. Özellikler penceresinde özelliklerinden en az birini adlı emin **kullanır...**  olduğu `true`.  
   
-7.  Çözüm Gezgini araç çubuğunda **tüm Şablonları Dönüştür**.  
+7. Çözüm Gezgini araç çubuğunda **tüm Şablonları Dönüştür**.  
   
-     Paketinizle dosyalar her eklediğiniz dosyaların altında görünür.  
+    Paketinizle dosyalar her eklediğiniz dosyaların altında görünür.  
   
-8.  Derleme ve hala çalıştığından emin olmak için çözümü çalıştırın.  
+8. Derleme ve hala çalıştığından emin olmak için çözümü çalıştırın.  
   
- DSL'nizi MEF özellikli sunulmuştur. Menü komutları, hareket işleyicileri ve doğrulama kısıtlamalarını MEF uzantıları yazabilirsiniz. DSL çözümünüzdeki diğer özel kod ile birlikte bu uzantıları yazabilirsiniz. Ayrıca, sizin veya diğer geliştiriciler ayrı yazabilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] DSL'nizi genişletme uzantıları.  
+   DSL'nizi MEF özellikli sunulmuştur. Menü komutları, hareket işleyicileri ve doğrulama kısıtlamalarını MEF uzantıları yazabilirsiniz. DSL çözümünüzdeki diğer özel kod ile birlikte bu uzantıları yazabilirsiniz. Ayrıca, sizin veya diğer geliştiriciler ayrı yazabilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] DSL'nizi genişletme uzantıları.  
   
 ## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>MEF özellikli bir DSL için uzantı oluşturma  
  MEF özellikli kendinize veya başka bir kullanıcı tarafından oluşturulan bir DSL erişiminiz varsa, uzantıları için yazabilirsiniz. Uzantılar, menü komutlarını, hareket işleyicileri veya doğrulama kısıtlamalarını eklemek için kullanılabilir. Bu uzantıları yazmak için kullandığınız bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uzantısı (VSIX) çözümü. Çözüm iki bölümden oluşur: bir sınıf kitaplığı projesi, kod derleme yapıları ve derleme paketleri bir VSIX projesi.  
   
 #### <a name="to-create-a-dsl-extension-vsix"></a>Bir DSL uzantısı VSIX oluşturmak için  
   
-1.  Yeni bir sınıf kitaplığı projesi oluşturun. Bunu yapmak için **yeni proje** iletişim kutusunda **Visual Basic** veya **Visual C#** seçip **sınıf kitaplığı**.  
+1. Yeni bir sınıf kitaplığı projesi oluşturun. Bunu yapmak için **yeni proje** iletişim kutusunda **Visual Basic** veya **Visual C#** seçip **sınıf kitaplığı**.  
   
-2.  Yeni sınıf kitaplığı projesinde DSL derlemeye bir başvuru ekleyin.  
+2. Yeni sınıf kitaplığı projesinde DSL derlemeye bir başvuru ekleyin.  
   
-    -   Bu derleme, genellikle ile biten bir ada sahip ". DSL.dll".  
+   - Bu derleme, genellikle ile biten bir ada sahip ". DSL.dll".  
   
-    -   DSL projesi erişiminiz varsa, derleme dosyası dizini altında bulabilirsiniz **Dsl\bin\\\***  
+   - DSL projesi erişiminiz varsa, derleme dosyası dizini altında bulabilirsiniz **Dsl\bin\\\\***  
   
-    -   DSL VSIX dosyasına erişimi varsa, derleme ".zip olarak" dosya adı uzantısı, VSIX dosyasını değiştirerek bulabilirsiniz. .Zip dosyasını açın.  
+   - DSL VSIX dosyasına erişimi varsa, derleme ".zip olarak" dosya adı uzantısı, VSIX dosyasını değiştirerek bulabilirsiniz. .Zip dosyasını açın.  
   
-3.  Aşağıdaki .NET derlemelere başvurular ekleyin:  
+3. Aşağıdaki .NET derlemelere başvurular ekleyin:  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll  
+   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll  
+   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll  
+   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll  
   
-    -   System.ComponentModel.Composition.dll  
+   -   System.ComponentModel.Composition.dll  
   
-    -   System.Windows.Forms.dll  
+   -   System.Windows.Forms.dll  
   
-4.  Aynı çözüm içinde VSIX projesi oluşturun. Bunu yapmak için **yeni proje** iletişim kutusunda **Visual Basic** veya **Visual C#**, tıklayın **genişletilebilirlik**ve ardından seçin **VSIX projesi**.  
+4. Aynı çözüm içinde VSIX projesi oluşturun. Bunu yapmak için **yeni proje** iletişim kutusunda **Visual Basic** veya **Visual C#**, tıklayın **genişletilebilirlik**ve ardından seçin **VSIX projesi**.  
   
-5.  Çözüm Gezgini'nde VSIX projesini sağ tıklayın ve ardından **başlangıç projesi olarak ayarla**.  
+5. Çözüm Gezgini'nde VSIX projesini sağ tıklayın ve ardından **başlangıç projesi olarak ayarla**.  
   
-6.  Yeni projeyi **source.extension.vsixmanifest**.  
+6. Yeni projeyi **source.extension.vsixmanifest**.  
   
-7.  Tıklayın **içeriğinizi**. İletişim kutusunda ayarlanan **içerik türü** için **MEF Bileşeni**, ve **kaynak proje** sınıf kitaplığı projenize.  
+7. Tıklayın **içeriğinizi**. İletişim kutusunda ayarlanan **içerik türü** için **MEF Bileşeni**, ve **kaynak proje** sınıf kitaplığı projenize.  
   
-8.  Bir DSL VSIX başvuru ekleyin.  
+8. Bir DSL VSIX başvuru ekleyin.  
   
-    1.  İçinde **source.extension.vsixmanifest**, tıklayın **Başvuru Ekle**  
+   1. İçinde **source.extension.vsixmanifest**, tıklayın **Başvuru Ekle**  
   
-    2.  İletişim kutusunda **eklemek yükü** DSL VSIX dosyasını bulun. VSIX dosyasını DSL çözümde içinde yerleşik **DslPackage\bin\\\***.  
+   2. İletişim kutusunda **eklemek yükü** DSL VSIX dosyasını bulun. VSIX dosyasını DSL çözümde içinde yerleşik ** DslPackage\bin\\\\***.  
   
-         Bu, kullanıcıların DSL ve uzantınızı aynı anda yüklemesine olanak sağlar. Uzantınızı yalnızca kullanıcı DSL yüklü değilse yüklenir.  
+       Bu, kullanıcıların DSL ve uzantınızı aynı anda yüklemesine olanak sağlar. Uzantınızı yalnızca kullanıcı DSL yüklü değilse yüklenir.  
   
 9. Gözden geçirmek ve güncelleştirmek, diğer alanları **source.extension.vsixmanifest**. Tıklayın **sürümleri seçin** doğrulayın doğru [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sürümleri ayarlanır.  
   

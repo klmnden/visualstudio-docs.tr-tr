@@ -8,12 +8,12 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68379a05e77e30e5717c06c336592a90d35973fa
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 75b181be5665d6416aee4f3f011d0d5d2a1d4237
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081625"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866356"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Nasıl yapılır: Visual Studio uzantıları için kural tabanlı UI bağlamı kullanma
 Visual Studio VSPackages belirli zaman yüklenmesini sağlayan iyi bilinen <xref:Microsoft.VisualStudio.Shell.UIContext>s etkinleşir. Ancak, bu UI bağlamları sertifikalarıdır, hiçbir seçenek uzantı yazarları bırakan ince değildir ancak noktasından önce etkinleştirir kullanılabilir bir UI bağlamı seçmek için gerçekten yüklenecek VSPackage'ı istedikleri. İyi bilinen UI bağlamı bir listesi için bkz. <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
@@ -25,75 +25,75 @@ Visual Studio VSPackages belirli zaman yüklenmesini sağlayan iyi bilinen <xref
   
  Kural tabanlı UI bağlamı çeşitli şekillerde kullanılabilir:  
   
-1.  Görünürlük kısıtlamaları komutları ve araç pencerelerini belirtin. UI bağlamı kural karşılanana kadar bu komutları/tools windows gizleyebilirsiniz.  
+1. Görünürlük kısıtlamaları komutları ve araç pencerelerini belirtin. UI bağlamı kural karşılanana kadar bu komutları/tools windows gizleyebilirsiniz.  
   
-2.  Otomatik yükü sınırlamaları: kural karşılandığında otomatik yükleme paketleri.  
+2. Otomatik yükü sınırlamaları: kural karşılandığında otomatik yükleme paketleri.  
   
-3.  Geciken görevi olarak: Belirtilen geçtikten ve kural hala karşılanana kadar yükleme gecikmesi.  
+3. Geciken görevi olarak: Belirtilen geçtikten ve kural hala karşılanana kadar yükleme gecikmesi.  
   
- Mekanizması herhangi bir Visual Studio uzantısı tarafından kullanılıyor olabilir.  
+   Mekanizması herhangi bir Visual Studio uzantısı tarafından kullanılıyor olabilir.  
   
 ## <a name="create-a-rule-based-ui-context"></a>Bir kural tabanlı UI bağlamı oluşturur  
  TestPackage adlı bir uzantı olduğunu varsayalım, bir menü komutu, hangi sunar yalnızca dosyalarla uygulandığı *.config* uzantısı. VS2015 önce TestPackage yüklemek için en iyi seçenek olduğu zaman <xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A> UI bağlamı etkinleştirilmediği. Bu şekilde TestPackage yükleniyor etkili değildir, bu yana yüklenen çözüm bile içermeyebilir bir *.config* dosya. Bu adımlarda nasıl kural tabanlı UI bağlamı UI bağlamı yalnızca bir dosya ile etkinleştirmek için kullanılan *.config* uzantısı seçilidir ve bu UI bağlamı etkinleştirildiğinde TestPackage yükleme.  
   
-1.  Yeni bir Uıcontext GUID tanımlayın ve VSPackage sınıfa eklemek <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> ve <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>.  
+1. Yeni bir Uıcontext GUID tanımlayın ve VSPackage sınıfa eklemek <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> ve <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>.  
   
-     Örneğin, yeni Uıcontext varsayalım "UIContextGuid" olan eklenecek. Oluşturulan GUID (tıklayarak bir GUID oluşturabilirsiniz **Araçları** > **GUID Oluştur**) "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B" olduğu. Daha sonra paket Sınıfınız içinde aşağıdaki bildirimi ekleyin:  
+    Örneğin, yeni Uıcontext varsayalım "UIContextGuid" olan eklenecek. Oluşturulan GUID (tıklayarak bir GUID oluşturabilirsiniz **Araçları** > **GUID Oluştur**) "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B" olduğu. Daha sonra paket Sınıfınız içinde aşağıdaki bildirimi ekleyin:  
   
-    ```csharp  
-    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
-    ```  
+   ```csharp  
+   public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
+   ```  
   
-     Öznitelikler için aşağıdaki değerleri ekleyin: (bu özniteliklerin ayrıntıları daha sonra verilecektir)  
+    Öznitelikler için aşağıdaki değerleri ekleyin: (bu özniteliklerin ayrıntıları daha sonra verilecektir)  
   
-    ```csharp  
-    [ProvideAutoLoad(TestPackage.UIContextGuid)]      
-    [ProvideUIContextRule(TestPackage.UIContextGuid,  
-        name: "Test auto load",   
-        expression: "DotConfig",  
-        termNames: new[] { "DotConfig" },  
-        termValues: new[] { "HierSingleSelectionName:.config$" })]  
-    ```  
+   ```csharp  
+   [ProvideAutoLoad(TestPackage.UIContextGuid)]      
+   [ProvideUIContextRule(TestPackage.UIContextGuid,  
+       name: "Test auto load",   
+       expression: "DotConfig",  
+       termNames: new[] { "DotConfig" },  
+       termValues: new[] { "HierSingleSelectionName:.config$" })]  
+   ```  
   
-     Bu meta veriler, yeni Uıcontext GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) ve tek bir terimi, "DotConfig" başvuran bir ifade tanımlayın. Geçerli seçim etkin olan hiyerarşi, normal ifade deseniyle eşleşen bir ada sahipse, "DotConfig" terimi true olarak değerlendirilen "\\.config$" (ile biten *.config*). Hata ayıklama için yararlı kuralı için isteğe bağlı bir ad (varsayılan) değerini tanımlar.  
+    Bu meta veriler, yeni Uıcontext GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) ve tek bir terimi, "DotConfig" başvuran bir ifade tanımlayın. Geçerli seçim etkin olan hiyerarşi, normal ifade deseniyle eşleşen bir ada sahipse, "DotConfig" terimi true olarak değerlendirilen "\\.config$" (ile biten *.config*). Hata ayıklama için yararlı kuralı için isteğe bağlı bir ad (varsayılan) değerini tanımlar.  
   
-     Öznitelik değerleri daha sonra derleme zamanında oluşturulan pkgdef eklenir.  
+    Öznitelik değerleri daha sonra derleme zamanında oluşturulan pkgdef eklenir.  
   
-2.  VSCT dosyasına TestPackage'nın komutları için uygun komutları için "DynamicVisibility" bayrak ekleyin:  
+2. VSCT dosyasına TestPackage'nın komutları için uygun komutları için "DynamicVisibility" bayrak ekleyin:  
   
-    ```xml  
-    <CommandFlag>DynamicVisibility</CommandFlag>  
-    ```  
+   ```xml  
+   <CommandFlag>DynamicVisibility</CommandFlag>  
+   ```  
   
-3.  VSCT görünürlüklerini kısmında yeni Uıcontext #1'de tanımlanan GUID için uygun komutları bağlayın:  
+3. VSCT görünürlüklerini kısmında yeni Uıcontext #1'de tanımlanan GUID için uygun komutları bağlayın:  
   
-    ```xml  
-    <VisibilityConstraints>   
-        <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>   
-    </VisibilityConstraints>  
-    ```  
+   ```xml  
+   <VisibilityConstraints>   
+       <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>   
+   </VisibilityConstraints>  
+   ```  
   
-4.  Semboller bölümünde Uıcontext tanımını ekleyin:  
+4. Semboller bölümünde Uıcontext tanımını ekleyin:  
   
-    ```xml  
-    <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />  
-    ```  
+   ```xml  
+   <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />  
+   ```  
   
-     Şimdi için bağlam menüsü komutları  *\*.config* dosyaları görünmeyecektir Çözüm Gezgini'nde seçili öğe olduğunda yalnızca bir *.config* dosyayı ve paket yüklenmeyecek bunlardan biri kadar komutları seçilidir.  
+    Şimdi için bağlam menüsü komutları  *\*.config* dosyaları görünmeyecektir Çözüm Gezgini'nde seçili öğe olduğunda yalnızca bir *.config* dosyayı ve paket yüklenmeyecek bunlardan biri kadar komutları seçilidir.  
   
- Ardından, bir hata ayıklayıcısı paket yalnızca zaman beklediğiniz yüklendiğini doğrulamak için kullanın. TestPackage hata ayıklamak için:  
+   Ardından, bir hata ayıklayıcısı paket yalnızca zaman beklediğiniz yüklendiğini doğrulamak için kullanın. TestPackage hata ayıklamak için:  
   
-1.  Bir kesim noktası <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> yöntemi.  
+5. Bir kesim noktası <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> yöntemi.  
   
-2.  TestPackage oluşturun ve hata ayıklamaya başlayın.  
+6. TestPackage oluşturun ve hata ayıklamaya başlayın.  
   
-3.  Bir proje oluşturun veya açın.  
+7. Bir proje oluşturun veya açın.  
   
-4.  Dışında herhangi bir dosya uzantısı seçin *.config*. Kesme noktası isabet değil.  
+8. Dışında herhangi bir dosya uzantısı seçin *.config*. Kesme noktası isabet değil.  
   
-5.  Seçin *App.Config* dosya.  
+9. Seçin *App.Config* dosya.  
   
- TestPackage yükler ve kesme noktasında durur.  
+   TestPackage yükler ve kesme noktasında durur.  
   
 ## <a name="add-more-rules-for-ui-context"></a>UI bağlamı için daha fazla kural Ekle  
  UI bağlamı kuralları Boolean ifadeler olduğundan, bir kullanıcı Arabirimi içeriği için daha kısıtlı kuralları ekleyebilirsiniz. Örneğin, yukarıdaki UI bağlamında, kural yalnızca bir proje içeren bir çözüm ne zaman yüklendi geçerli olduğunu belirtebilirsiniz. Bu şekilde, komutları, açık ise gösterilmez bir *.config* dosya projenin parçası olarak değil bir tek başına dosya olarak.  

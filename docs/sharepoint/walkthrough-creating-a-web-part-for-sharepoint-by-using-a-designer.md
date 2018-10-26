@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f569769613e4fac0b4773a755740274ec0933016
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b5cfd9afaf0c37dcf267c63641b7917efe4c249
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635238"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831822"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>İzlenecek yol: Tasarımcı kullanarak bir web bölümü SharePoint için oluşturma
 
@@ -98,9 +98,9 @@ Kullanıcının Ana Takvim görünümüne takvimler ekleme olanak tanıyan kodu 
 
 1. Aşağıdaki adım kümelerinden birini uygulayın:
 
-    - Tasarımcıda çift **güncelleştirme** düğmesi.
+   - Tasarımcıda çift **güncelleştirme** düğmesi.
 
-    - İçinde **özellikleri** penceresi **güncelleştirme** düğmesini öğesini **olayları** düğmesi. İçinde **tıklayın** özelliği girin **Button1_Click**ve ardından Enter tuşuna basın.
+   - İçinde **özellikleri** penceresi **güncelleştirme** düğmesini öğesini **olayları** düğmesi. İçinde **tıklayın** özelliği girin **Button1_Click**ve ardından Enter tuşuna basın.
 
      Kullanıcı denetimi kod dosyası Kod düzenleyicisinde açar ve `Button1_Click` olay işleyicisi görünür. Daha sonra bu olay işleyicisi için kod ekleyeceksiniz.
 
@@ -116,11 +116,11 @@ Kullanıcının Ana Takvim görünümüne takvimler ekleme olanak tanıyan kodu 
 
 4. Değiştirin `Page_Load` yöntemi `VisualWebPart1` aşağıdaki kodla sınıfı. Bu kod aşağıdaki görevleri gerçekleştirir:
 
-    - Kullanıcı denetimine aylık takvim görüntüsü ekler.
+   - Kullanıcı denetimine aylık takvim görüntüsü ekler.
 
-    - Sitede her takvim listesi için bir onay kutusu ekler.
+   - Sitede her takvim listesi için bir onay kutusu ekler.
 
-    - Takvim görünümünde görüntülenen öğesinin her türü için bir şablon belirtir.
+   - Takvim görünümünde görüntülenen öğesinin her türü için bir şablon belirtir.
 
      [!code-vb[SP_VisualWebPart#3](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#3)]
      [!code-csharp[SP_VisualWebPart#3](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#3)]

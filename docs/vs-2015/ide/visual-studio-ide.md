@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 760dc4f859de68040676439d84fea60d23602aeb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 327de2e75b089e7ba836837c3c29c0d92d9ad864
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292792"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852719"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,31 +116,31 @@ Visual Studio 2015'te yeni özellikler hakkında bilgi edinmek, bkz: [Visual Stu
 
  Metin düzenleyici, yüksek oranda (olmasını istiyorsanız) ile birçok üretkenlik yardımcı daha iyi daha hızlı kod yazmanızı etkileşimlidir. Dile göre farklı özellikler ve özelliklerini aç veya kapat için bunlardan (türü "Düzenleyicisinde" Hızlı Başlat) herhangi birini kullanmak zorunda değilsiniz: ortak üretkenlik özelliklerinden bazıları şunlardır:
 
-1.  [Yeniden düzenleme](../ide/refactoring-in-visual-studio.md) akıllı değişkenler taşıma, yeniden adlandırma kod satırlarını başka konumlara, redordering işlev parametrelerini ve daha fazla kod taşıma ayrı bir işleve seçildi. gibi işlemleri içerir.
+1. [Yeniden düzenleme](../ide/refactoring-in-visual-studio.md) akıllı değişkenler taşıma, yeniden adlandırma kod satırlarını başka konumlara, redordering işlev parametrelerini ve daha fazla kod taşıma ayrı bir işleve seçildi. gibi işlemleri içerir.
 
-2.  *IntelliSense* bir genel bir doğrudan düzenleyicide kod türü bilgilerini görüntülemek ve bazı durumlarda, küçük kod parçalarını sizin için yazma popüler özellik kümesi için bir terimdir. Bu temel belgeleri satır içi ayrı Yardım penceresinde tür bilgileri aramak zorunda kalmaktan kurtarır düzenleyicisinde gibidir. IntelliSense özellikleri dile göre değişiklik gösterir. Daha fazla bilgi için [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), [Visual Basic'e özel IntelliSense ](../ide/visual-basic-specific-intellisense.md). Aşağıdaki çizimde, iş yerinde bazı IntelliSense özelliklerini gösterir:
+2. *IntelliSense* bir genel bir doğrudan düzenleyicide kod türü bilgilerini görüntülemek ve bazı durumlarda, küçük kod parçalarını sizin için yazma popüler özellik kümesi için bir terimdir. Bu temel belgeleri satır içi ayrı Yardım penceresinde tür bilgileri aramak zorunda kalmaktan kurtarır düzenleyicisinde gibidir. IntelliSense özellikleri dile göre değişiklik gösterir. Daha fazla bilgi için [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), [Visual Basic'e özel IntelliSense ](../ide/visual-basic-specific-intellisense.md). Aşağıdaki çizimde, iş yerinde bazı IntelliSense özelliklerini gösterir:
 
-     ![Visual Studio üye listesi](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
+    ![Visual Studio üye listesi](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
 
-3.  **Dalgalı çizgiler** yazarken, hatalar veya gerçek zamanlı kodunuzdaki olası sorunlar için uyarı sağlayan hemen beklemenize gerek kalmadan çalıştırın veya derleme zamanı sırasında bulunmak hatayı düzeltmek. Dalgalı çizgi gelin, hatayla ilgili ek bilgileri görürsünüz. Bir ampul, önerileri nasıl hatayı düzeltmek sol kenar boşluğunda de görünebilir. Daha fazla bilgi için [ampullerle hızlı eylemler gerçekleştirme](../ide/perform-quick-actions-with-light-bulbs.md).
+3. **Dalgalı çizgiler** yazarken, hatalar veya gerçek zamanlı kodunuzdaki olası sorunlar için uyarı sağlayan hemen beklemenize gerek kalmadan çalıştırın veya derleme zamanı sırasında bulunmak hatayı düzeltmek. Dalgalı çizgi gelin, hatayla ilgili ek bilgileri görürsünüz. Bir ampul, önerileri nasıl hatayı düzeltmek sol kenar boşluğunda de görünebilir. Daha fazla bilgi için [ampullerle hızlı eylemler gerçekleştirme](../ide/perform-quick-actions-with-light-bulbs.md).
 
-     ![Ampul fare vurgulama ile](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
+    ![Ampul fare vurgulama ile](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
 
-4.  [Yer işaretleri](../ide/setting-bookmarks-in-code.md) etkin olarak üzerinde çalıştığınız dosyaları belirli satırları hızla gitmek sağlar.
+4. [Yer işaretleri](../ide/setting-bookmarks-in-code.md) etkin olarak üzerinde çalıştığınız dosyaları belirli satırları hızla gitmek sağlar.
 
-5.  [Çağrı hiyerarşisi](../ide/reference/call-hierarchy.md) penceresi çağırın ve göre adlandırılır yöntemleri göstermek için metin düzenleyici bağlam menüsünde çağrılacak ve giriş işaretindeki yöntemi.
+5. [Çağrı hiyerarşisi](../ide/reference/call-hierarchy.md) penceresi çağırın ve göre adlandırılır yöntemleri göstermek için metin düzenleyici bağlam menüsünde çağrılacak ve giriş işaretindeki yöntemi.
 
-6.  **Code lens** ve değiştirir, kod, bağlı hataları, iş öğeleri, kod incelemeleri ve birim testleri, düzenleyiciden çıkmadan tüm başvuruları Bul olanak sağlar. Daha fazla bilgi için [kod değişikliklerini ve diğer geçmişi bulma](../ide/find-code-changes-and-other-history-with-codelens.md).
+6. **Code lens** ve değiştirir, kod, bağlı hataları, iş öğeleri, kod incelemeleri ve birim testleri, düzenleyiciden çıkmadan tüm başvuruları Bul olanak sağlar. Daha fazla bilgi için [kod değişikliklerini ve diğer geçmişi bulma](../ide/find-code-changes-and-other-history-with-codelens.md).
 
-7.  **Özet tanım için** penceresi, geçerli Bağlamınızı uzağa gitmeden bir yöntem veya tür tanımı satır içi gösterir. Bu pencereyi şimdi XAML için çok çalışır.
+7. **Özet tanım için** penceresi, geçerli Bağlamınızı uzağa gitmeden bir yöntem veya tür tanımı satır içi gösterir. Bu pencereyi şimdi XAML için çok çalışır.
 
-8.  **Tanıma** bağlam menüsü seçeneği, doğrudan bir işlevin veya nesnenin tanımlandığı yer alır. Başka gezinme komutları da Düzenleyicisi'nde sağ tıklayarak kullanılabilir.
+8. **Tanıma** bağlam menüsü seçeneği, doğrudan bir işlevin veya nesnenin tanımlandığı yer alır. Başka gezinme komutları da Düzenleyicisi'nde sağ tıklayarak kullanılabilir.
 
 9. İlgili bir aracı [Nesne Tarayıcısı](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470)içeren görmek için .NET veya Windows çalışma zamanı derlemeleri sisteminize incelemek için türleri bunlar etkinleştirir ve yöntemleri ve özellikleri bu türler bulunur.
 
      ![Nesneyi gösteren Nesne Tarayıcısı](../ide/media/objectbrowser.png "ObjectBrowser")
 
- Düzen menüsü ve Görünüm menüsü öğelerin çoğu Kod Düzenleyicisi'nde şekilde ilgilidir. Düzenleyici hakkında daha fazla bilgi için bkz: [kod yazma](../ide/writing-code-in-the-code-and-text-editor.md) ve [kodunuzu düzenleme](https://www.visualstudio.com/features/ide-vs).
+   Düzen menüsü ve Görünüm menüsü öğelerin çoğu Kod Düzenleyicisi'nde şekilde ilgilidir. Düzenleyici hakkında daha fazla bilgi için bkz: [kod yazma](../ide/writing-code-in-the-code-and-text-editor.md) ve [kodunuzu düzenleme](https://www.visualstudio.com/features/ide-vs).
 
 ## <a name="compiling-and-building-your-code"></a>Derleme ve kod oluşturma
 

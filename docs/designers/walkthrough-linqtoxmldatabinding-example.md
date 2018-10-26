@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 567b03f9f0441e7f5eb38f4ca0e0b3a1d64cec91
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 824896a4e381a6a8d5c5e0935010b1cf224ed9b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081198"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839238"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>İzlenecek yol: LinqToXmlDataBinding örneği
 Bu izlenecek yolda LinqToXmlDataBinding örneği ve iki birincil kaynak dosyalarından daha ilgi çekici içeriğini bazıları açıklanmaktadır *L2DBForm.xaml* ve *L2DBForm.xaml.cs*.
@@ -26,19 +26,19 @@ Bu izlenecek yolda LinqToXmlDataBinding örneği ve iki birincil kaynak dosyalar
 ## <a name="remarks"></a>Açıklamalar
  Oluşan bir Windows Presentation Foundation (WPF) uygulaması C# ve XAML kaynak dosyaları LinqToXmlDataBinding programdır. Kitap listesi tanımlar ve görüntüleme, ekleme, silme ve bu girişleri düzenlemek kullanıcının sağlayan gömülü bir XML belgesi içeriyor. Bunu, aşağıdaki iki birincil kaynak dosyalardan oluşur:
 
--   *L2DBForm.XAML* ana penceresinin kullanıcı arabirimi (UI) XAML bildirimi kodunu içerir. Ayrıca, bir veri sağlayıcısı ve kitap listeleri için katıştırılmış XML belgesi tanımlayan bir pencere kaynak bölümü içerir.
+- *L2DBForm.XAML* ana penceresinin kullanıcı arabirimi (UI) XAML bildirimi kodunu içerir. Ayrıca, bir veri sağlayıcısı ve kitap listeleri için katıştırılmış XML belgesi tanımlayan bir pencere kaynak bölümü içerir.
 
--   *L2DBForm.xaml.cs* başlatma ve kullanıcı Arabirimi ile ilişkili olay işleme yöntemleri içerir.
+- *L2DBForm.xaml.cs* başlatma ve kullanıcı Arabirimi ile ilişkili olay işleme yöntemleri içerir.
 
- Ana pencereyi aşağıdaki dört dikey UI bölümlere ayrılmıştır:
+  Ana pencereyi aşağıdaki dört dikey UI bölümlere ayrılmıştır:
 
--   **XML** ham XML kaynağını katıştırılmış kitap listesi görüntüler.
+- **XML** ham XML kaynağını katıştırılmış kitap listesi görüntüler.
 
--   **Kitap listesi** defteri girdileri standart metin olarak görüntüler ve seçin ve tek tek girişleri silmek sağlar.
+- **Kitap listesi** defteri girdileri standart metin olarak görüntüler ve seçin ve tek tek girişleri silmek sağlar.
 
--   **Seçili kitap Düzenle** seçili rehberi girişiyle ilişkili değerlerini düzenlemek kullanıcının sağlar.
+- **Seçili kitap Düzenle** seçili rehberi girişiyle ilişkili değerlerini düzenlemek kullanıcının sağlar.
 
--   **Yeni kitabı ekleme** kullanıcı tarafından girilen değerleri temel alarak yeni bir kitap giriş oluşturulmasını sağlar.
+- **Yeni kitabı ekleme** kullanıcı tarafından girilen değerleri temel alarak yeni bir kitap giriş oluşturulmasını sağlar.
 
 ## <a name="in-this-section"></a>Bu bölümde
 

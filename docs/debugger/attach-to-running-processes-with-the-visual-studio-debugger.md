@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdc638bdd70e9456ea1f2c937febbfdd974f2d20
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: bdd83cb8b2d20d3e3abcacbb69d50e1a68831ca4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443642"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843268"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı ile çalıştırma işlemleri iliştirme
 Visual Studio hata ayıklayıcı bir yerel veya uzak bilgisayarda çalışan bir işleme ekleyebilirsiniz. İşlem çalışmaya başladıktan sonra seçin **hata ayıklama** > **iliştirme** veya basın **Ctrl**+**Alt** + **P** Visual Studio ve kullanım **iliştirme** işleme hata ayıklayıcı için iletişim kutusu.
@@ -54,30 +54,30 @@ Uzak bilgisayarda bir işlemde hata ayıklamak için bkz: [uzak bilgisayardaki b
 
 **Yerel bilgisayarınızda bir işleme iliştirmek için:**  
 
-1.  Visual Studio'da **hata ayıklama** > **iliştirme** (veya basın **Ctrl**+**Alt** + **P**) açmak için **iliştirme** iletişim kutusu.
+1. Visual Studio'da **hata ayıklama** > **iliştirme** (veya basın **Ctrl**+**Alt** + **P**) açmak için **iliştirme** iletişim kutusu.
   
-  **Bağlantı türü** ayarlanmalıdır **varsayılan**. **Bağlantı hedefi** , yerel makine adı olmalıdır. 
+   **Bağlantı türü** ayarlanmalıdır **varsayılan**. **Bağlantı hedefi** , yerel makine adı olmalıdır. 
   
-  ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process") 
+   ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process") 
   
-1.  İçinde **kullanılabilir işlemler** listesinde, bulmak ve işlem ya da eklemek istediğiniz işlemleri seçin.  
+2. İçinde **kullanılabilir işlemler** listesinde, bulmak ve işlem ya da eklemek istediğiniz işlemleri seçin.  
 
-  - Bir işlemi hızlı bir şekilde seçmek için adını veya ilk harfini yazın **filtreleme işlemleri** kutusu. 
+   - Bir işlemi hızlı bir şekilde seçmek için adını veya ilk harfini yazın **filtreleme işlemleri** kutusu. 
   
-  - İşlem adını bilmiyorsanız, listede göz atın veya bakın [yaygın hata ayıklama senaryoları](#BKMK_Scenarios) için bazı ortak işlem adları. 
+   - İşlem adını bilmiyorsanız, listede göz atın veya bakın [yaygın hata ayıklama senaryoları](#BKMK_Scenarios) için bazı ortak işlem adları. 
   
-  >[!TIP]
-  >İşlemler başlatabilir ve durdurabilirsiniz arka planda **iliştirme** iletişim kutusu açıkken, böylece çalışan işlemlerin listesi her zaman geçerli olmayabilir. Seçebileceğiniz **Yenile** geçerli listesini görmek için herhangi bir zamanda. 
+   >[!TIP]
+   >İşlemler başlatabilir ve durdurabilirsiniz arka planda **iliştirme** iletişim kutusu açıkken, böylece çalışan işlemlerin listesi her zaman geçerli olmayabilir. Seçebileceğiniz **Yenile** geçerli listesini görmek için herhangi bir zamanda. 
   
-1.  İçinde **ekleme** alan, hata ayıklama planladığınız kodun türünü listelendiğinden emin olun. Varsayılan **otomatik** works çoğu uygulama türleri için ayarlama. 
+3. İçinde **ekleme** alan, hata ayıklama planladığınız kodun türünü listelendiğinden emin olun. Varsayılan **otomatik** works çoğu uygulama türleri için ayarlama. 
   
-  Kod türleri el ile seçmek için:
-    1. Tıklayın **seçin**. 
-    1. İçinde **kod türünü seç** Seç iletişim kutusunda **bu tür kodlarda hata ayıklama**.
-    1. Hata ayıklamak istediğiniz kod türlerini seçin.
-    1. Seçin **Tamam**.
+   Kod türleri el ile seçmek için:
+   1. Tıklayın **seçin**. 
+   1. İçinde **kod türünü seç** Seç iletişim kutusunda **bu tür kodlarda hata ayıklama**.
+   1. Hata ayıklamak istediğiniz kod türlerini seçin.
+   1. Seçin **Tamam**.
   
-1.  Seçin **ekleme**.
+4. Seçin **ekleme**.
   
 >[!NOTE]
 >Hata ayıklama için birden fazla uygulama için bağlı, ancak bir kerede yalnızca bir uygulama hata ayıklayıcıda etkin olur. Visual Studio'da etkin uygulaması ayarlayabilirsiniz **hata ayıklama konumu** araç veya **işlemleri** penceresi.  
@@ -90,46 +90,46 @@ IIS'ye dağıtılan ASP.NET uygulamalarında hata ayıklama için daha eksiksiz 
 
 **Uzak bir bilgisayarda çalışan bir işleme iliştirmek için:**  
 
-1.  Visual Studio'da **hata ayıklama** > **iliştirme** (veya basın **Ctrl**+**Alt** + **P**) açmak için **iliştirme** iletişim kutusu.
+1. Visual Studio'da **hata ayıklama** > **iliştirme** (veya basın **Ctrl**+**Alt** + **P**) açmak için **iliştirme** iletişim kutusu.
   
-1.  **Bağlantı türü** olmalıdır **varsayılan** çoğu durum için. İçinde **bağlantı hedefi** kutusunda, aşağıdaki yöntemlerden birini kullanarak uzak bilgisayarı seçin:
+2. **Bağlantı türü** olmalıdır **varsayılan** çoğu durum için. İçinde **bağlantı hedefi** kutusunda, aşağıdaki yöntemlerden birini kullanarak uzak bilgisayarı seçin:
 
-  - Aşağı açılan oku seçin **bağlantı hedefi**, aşağı açılan listeden bilgisayar adını seçin.  
-  - Bilgisayar adını yazın **bağlantı hedefi** kutusu.
+   - Aşağı açılan oku seçin **bağlantı hedefi**, aşağı açılan listeden bilgisayar adını seçin.  
+   - Bilgisayar adını yazın **bağlantı hedefi** kutusu.
       
-      > [!NOTE]
-      > Uzak bilgisayar adını kullanarak bağlanamıyorsa, IP kullanmayı deneyin ve bağlantı noktası adresi (örneğin, `123.45.678.9:4022`). 4022 x64 Visual Studio 2017 uzaktan hata ayıklayıcı için varsayılan bağlantı noktasıdır. Diğer uzaktan hata ayıklayıcı bağlantı noktası atamaları konusuna bakın [uzaktan hata ayıklayıcı bağlantı noktası atamaları](remote-debugger-port-assignments.md).  
+     > [!NOTE]
+     > Uzak bilgisayar adını kullanarak bağlanamıyorsa, IP kullanmayı deneyin ve bağlantı noktası adresi (örneğin, `123.45.678.9:4022`). 4022 x64 Visual Studio 2017 uzaktan hata ayıklayıcı için varsayılan bağlantı noktasıdır. Diğer uzaktan hata ayıklayıcı bağlantı noktası atamaları konusuna bakın [uzaktan hata ayıklayıcı bağlantı noktası atamaları](remote-debugger-port-assignments.md).  
       
-  - Seçin **Bul** düğmesinin yanındaki **bağlantı hedefi** açılacak kutusuna **uzak bağlantıları** iletişim kutusu. **Uzak bağlantıları** iletişim kutusu, yerel alt ağda veya bilgisayarınıza doğrudan bağlı tüm cihazları listeler. Gerekebilir [açın UDP bağlantı noktası 3702](../debugger/remote-debugger-port-assignments.md) uzak cihazları bulmak için sunucuda. Bilgisayarı veya cihazı ve ardından seçin **seçin**. 
+   - Seçin **Bul** düğmesinin yanındaki **bağlantı hedefi** açılacak kutusuna **uzak bağlantıları** iletişim kutusu. **Uzak bağlantıları** iletişim kutusu, yerel alt ağda veya bilgisayarınıza doğrudan bağlı tüm cihazları listeler. Gerekebilir [açın UDP bağlantı noktası 3702](../debugger/remote-debugger-port-assignments.md) uzak cihazları bulmak için sunucuda. Bilgisayarı veya cihazı ve ardından seçin **seçin**. 
   
-  > [!NOTE]
-  > **Bağlantı türü** ayarı, hata ayıklama oturumları arasında devam ettirir. **Bağlantı hedefi** ayarı, başarılı bir hata ayıklama bağlantı hedefleyen ile oluşursa hata ayıklama oturumları arasında devam ettirir.
+   > [!NOTE]
+   > **Bağlantı türü** ayarı, hata ayıklama oturumları arasında devam ettirir. **Bağlantı hedefi** ayarı, başarılı bir hata ayıklama bağlantı hedefleyen ile oluşursa hata ayıklama oturumları arasında devam ettirir.
 
-1.  Tıklayın **Yenile** doldurmak için **kullanılabilir işlemler** listesi.
+3. Tıklayın **Yenile** doldurmak için **kullanılabilir işlemler** listesi.
      
-     >[!TIP]
-     >İşlemler başlatabilir ve durdurabilirsiniz arka planda **iliştirme** iletişim kutusu açıkken, böylece çalışan işlemlerin listesi her zaman geçerli olmayabilir. Seçebileceğiniz **Yenile** geçerli listesini görmek için herhangi bir zamanda. 
+    >[!TIP]
+    >İşlemler başlatabilir ve durdurabilirsiniz arka planda **iliştirme** iletişim kutusu açıkken, böylece çalışan işlemlerin listesi her zaman geçerli olmayabilir. Seçebileceğiniz **Yenile** geçerli listesini görmek için herhangi bir zamanda. 
      
-1.  İçinde **kullanılabilir işlemler** listesinde, bulmak ve işlem ya da eklemek istediğiniz işlemleri seçin.  
+4. İçinde **kullanılabilir işlemler** listesinde, bulmak ve işlem ya da eklemek istediğiniz işlemleri seçin.  
 
-  - Bir işlemi hızlı bir şekilde seçmek için adını veya ilk harfini yazın **filtreleme işlemleri** kutusu. 
+   - Bir işlemi hızlı bir şekilde seçmek için adını veya ilk harfini yazın **filtreleme işlemleri** kutusu. 
   
-  - İşlem adını bilmiyorsanız, listede göz atın veya bakın [yaygın hata ayıklama senaryoları](#BKMK_Scenarios) için bazı ortak işlem adları. 
+   - İşlem adını bilmiyorsanız, listede göz atın veya bakın [yaygın hata ayıklama senaryoları](#BKMK_Scenarios) için bazı ortak işlem adları. 
   
-  - Tüm kullanıcı hesapları altında çalışan işlemleri bulmak için seçin **tüm kullanıcıların işlemlerini göster** onay kutusu.
+   - Tüm kullanıcı hesapları altında çalışan işlemleri bulmak için seçin **tüm kullanıcıların işlemlerini göster** onay kutusu.
       
-      >[!NOTE]
-      >Güvenilmeyen bir kullanıcı tarafından sahip olunan bir işlem eklemeye çalışırsanız, bir güvenlik uyarısı iletişim kutusu onayı görünecektir. Daha fazla bilgi için [güvenlik uyarısı: güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme tehlikeli olabilir. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
+     >[!NOTE]
+     >Güvenilmeyen bir kullanıcı tarafından sahip olunan bir işlem eklemeye çalışırsanız, bir güvenlik uyarısı iletişim kutusu onayı görünecektir. Daha fazla bilgi için [güvenlik uyarısı: güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme tehlikeli olabilir. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
       
-1.  İçinde **ekleme** alan, hata ayıklama planladığınız kodun türünü listelendiğinden emin olun. Varsayılan **otomatik** works çoğu uygulama türleri için ayarlama. 
+5. İçinde **ekleme** alan, hata ayıklama planladığınız kodun türünü listelendiğinden emin olun. Varsayılan **otomatik** works çoğu uygulama türleri için ayarlama. 
   
-  Kod türleri el ile seçmek için:
-    1. Tıklayın **seçin**. 
-    1. İçinde **kod türünü seç** Seç iletişim kutusunda **bu tür kodlarda hata ayıklama**.
-    1. Hata ayıklamak istediğiniz kod türlerini seçin.
-    1. Seçin **Tamam**.
+   Kod türleri el ile seçmek için:
+   1. Tıklayın **seçin**. 
+   1. İçinde **kod türünü seç** Seç iletişim kutusunda **bu tür kodlarda hata ayıklama**.
+   1. Hata ayıklamak istediğiniz kod türlerini seçin.
+   1. Seçin **Tamam**.
   
-1.  Seçin **ekleme**.
+6. Seçin **ekleme**.
   
 >[!NOTE]
 >Hata ayıklama için birden fazla uygulama için bağlı, ancak bir kerede yalnızca bir uygulama hata ayıklayıcıda etkin olur. Visual Studio'da etkin uygulaması ayarlayabilirsiniz **hata ayıklama konumu** araç veya **işlemleri** penceresi.  

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 32fc3ef0684c89c422fac76550ba1fa123eb2f6b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ee123e474ad4b52b3debe6ad65bf6424388fe191
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180447"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816023"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Bir testi çalıştıran sanal kullanıcı olasılığını belirtmek için test karışımı modellerini düzenleme
 
@@ -37,7 +37,7 @@ Yük testi senaryonuzun aşağıdaki test karışımı modeli seçeneklerinden b
 ## <a name="tasks"></a>Görevler
 
 |Görevler|İlişkili Konular|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Yük testi için test karışımını belirtme:** bir yük testi oluşturduğunuzda, yük testi için ayarları belirtin **Yeni Yük Testi Sihirbazı**. İçinde **Yeni Yük Testi Sihirbazı**, ilk senaryoya eklemek için var olan web ve birim testi seçin. Testleri senaryoya ekledikten sonra test karışımını senaryosu için belirtin.<br /><br /> Bir yük testi Web sitesinin veya uygulamanın beklenen gerçek hayatta kullanımı daha doğru bir şekilde tahmin etmek için yük modelleme seçenekleri kullanın. Bir doğru yük modeli dayalı olmayan bir yük testi yanıltıcı sonuçlara neden olabilir çünkü bunu yapmak önemlidir.|-   [Web sitenize veya uygulamanıza beklenen gerçek dünya kullanımının öykünmesini](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
 |**Test karışımı modeli Düzenle:** kullanarak test karışımı modellerini birini kullanmak için bir yük testi senaryosuna değiştirebilirsiniz **Yük Testi Düzenleyicisi**.||
 |**Bir kullanıcı belirlediğiniz hızda ilerleyebileceğiniz test karışımı modeli için ilerleme gecikmesini yapılandırmak:** yük testi senaryonuzun kullanmak üzere yapılandırılmışsa **kullanıcı adım testi karışım modeli tabanlı**, ilerleme gecikme yapılandırılan dağıtım nasıl istediğinizi belirtebilirsiniz.|-   [Nasıl yapılır: kullanıcı adım testi karışım modeli kullanılırken Adım Gecikmesine dağıtımı Uygula](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|

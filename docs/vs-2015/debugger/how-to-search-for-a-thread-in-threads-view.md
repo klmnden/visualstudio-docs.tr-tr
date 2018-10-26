@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c7801cb937f2a94df92bf8ab3052e4e0e2f734d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed11edadca2f5e5e521eda824ece5ab735814125
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277452"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912181"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>Nasıl Yapılır: İş Parçacıkları Görünümünde İş Parçacığı Arama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,24 +30,24 @@ Belirli bir iş parçacığı iş parçacıkları görünümünde iş parçacı�
   
 ### <a name="to-search-for-a-thread-in-threads-view"></a>İş parçacıkları görünümünde iş parçacığı aramak için  
   
-1.  Bu nedenle pencereleri bu Spy ++ ve etkin bir [iş parçacıkları görünümü](../debugger/threads-view.md) penceresi görünür.  
+1. Bu nedenle pencereleri bu Spy ++ ve etkin bir [iş parçacıkları görünümü](../debugger/threads-view.md) penceresi görünür.  
   
-2.  Gelen **arama** menüsünde seçin **bulma iş parçacığı**.  
+2. Gelen **arama** menüsünde seçin **bulma iş parçacığı**.  
   
-     [İş parçacığı arama iletişim kutusu](../debugger/thread-search-dialog-box.md) açılır.  
+    [İş parçacığı arama iletişim kutusu](../debugger/thread-search-dialog-box.md) açılır.  
   
-3.  Arama ölçütü olarak iş parçacığı kimliği veya modül dizesi yazın.  
+3. Arama ölçütü olarak iş parçacığı kimliği veya modül dizesi yazın.  
   
-4.  Değerleri belirtmek istediğiniz değil herhangi bir alanı temizleyin.  
+4. Değerleri belirtmek istediğiniz değil herhangi bir alanı temizleyin.  
   
-    > [!TIP]
-    >  Bir modül tarafından sahip olunan tüm iş parçacıklarını bulmak için Temizle **iş parçacığı** ad metin kutusu ve modül türü olarak **Modülü** kutusu. Ardından **Sonrakini Bul** iş parçacıkları için aramaya devam etmek için.  
+   > [!TIP]
+   >  Bir modül tarafından sahip olunan tüm iş parçacıklarını bulmak için Temizle **iş parçacığı** ad metin kutusu ve modül türü olarak **Modülü** kutusu. Ardından **Sonrakini Bul** iş parçacıkları için aramaya devam etmek için.  
   
-5.  Seçin **yukarı** veya **aşağı** için ilk arama yönünü.  
+5. Seçin **yukarı** veya **aşağı** için ilk arama yönünü.  
   
-6.  **Tamam**'ı tıklatın.  
+6. **Tamam**'ı tıklatın.  
   
- Eşleşen bir iş parçacığı bulunursa iş parçacıkları Görünümü penceresinde vurgulanır.
+   Eşleşen bir iş parçacığı bulunursa iş parçacıkları Görünümü penceresinde vurgulanır.
 
 
 

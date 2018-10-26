@@ -16,12 +16,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96124b0b1dcad9be58759624e30180414eff1439
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 41ea3342f19639a7051e5c9dfb641620b1b6688b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260896"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822000"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Tasarımcıyı Başlatma ve Meta Verileri Yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,26 +49,26 @@ Bir tasarımcı veya Tasarımcısı bileşen ile ilişkili meta verileri ve filt
 ### <a name="designer-initialization-by-a-vspackage"></a>VSPackage tarafından tasarımcıyı başlatma  
  VSPackage tarafından tasarımcıyı başlatma işlemesi gerekir:  
   
-1.  Bir nesneyi uygulama oluşturma <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> sınıfı.  
+1. Bir nesneyi uygulama oluşturma <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> sınıfı.  
   
-    > [!NOTE]
-    >  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Sınıfı hiçbir zaman uygulanmasını aynı nesne üzerinde <xref:Microsoft.VisualStudio.Shell.Package> sınıfı.  
+   > [!NOTE]
+   >  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Sınıfı hiçbir zaman uygulanmasını aynı nesne üzerinde <xref:Microsoft.VisualStudio.Shell.Package> sınıfı.  
   
-2.  Sınıf uygulama kaydetme <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> örneklerini uygulayarak VSPackage'nın Tasarımcı uzantıları için destek sunarak olarak <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>, <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> ve <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> VSPackage'nın uygulaması sağlama sınıfa <xref:Microsoft.VisualStudio.Shell.Package> .  
+2. Sınıf uygulama kaydetme <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> örneklerini uygulayarak VSPackage'nın Tasarımcı uzantıları için destek sunarak olarak <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>, <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> ve <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> VSPackage'nın uygulaması sağlama sınıfa <xref:Microsoft.VisualStudio.Shell.Package> .  
   
- Herhangi bir tasarımcı veya Tasarımcısı bileşen oluşturulduğunda [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ortam:  
+   Herhangi bir tasarımcı veya Tasarımcısı bileşen oluşturulduğunda [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ortam:  
   
-1.  Her kayıtlı tasarım yüzeyi uzantısı Sağlayıcısı'na erişir.  
+3. Her kayıtlı tasarım yüzeyi uzantısı Sağlayıcısı'na erişir.  
   
-2.  Oluşturur ve her tasarım yüzeyi uzantısı sağlayıcısının bir örneğini başlatır <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> nesnesi  
+4. Oluşturur ve her tasarım yüzeyi uzantısı sağlayıcısının bir örneğini başlatır <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> nesnesi  
   
-3.  Her tasarım yüzeyi uzantısı sağlayıcısının çağırır <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnDesignerCreated%2A> yöntemi veya <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnComponentCreated%2A> yöntemi (hangisi uygunsa).  
+5. Her tasarım yüzeyi uzantısı sağlayıcısının çağırır <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnDesignerCreated%2A> yöntemi veya <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnComponentCreated%2A> yöntemi (hangisi uygunsa).  
   
- Uygularken <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> nesnesi bir VSPackage'ı bir üyesi olarak anlamak önemlidir:  
+   Uygularken <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> nesnesi bir VSPackage'ı bir üyesi olarak anlamak önemlidir:  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Ortamı, herhangi bir denetime hangi meta verileri sağlamaz veya belirli bir diğer yapılandırma ayarlarını `DesignSurfaceExtension` sağlayıcısının değiştirir. İki veya daha fazla mümkündür `DesignSurfaceExtension` aynı Tasarımcısı özelliğiyle kesin olan son değişikliği ile çakışan yollarla değiştirme sağlayıcıları. Hangi değişiklik son uygulanan da belirsiz.  
+6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Ortamı, herhangi bir denetime hangi meta verileri sağlamaz veya belirli bir diğer yapılandırma ayarlarını `DesignSurfaceExtension` sağlayıcısının değiştirir. İki veya daha fazla mümkündür `DesignSurfaceExtension` aynı Tasarımcısı özelliğiyle kesin olan son değişikliği ile çakışan yollarla değiştirme sağlayıcıları. Hangi değişiklik son uygulanan da belirsiz.  
   
-2.  Açıkça uygulaması kısıtlamak mümkündür <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> örneklerini uygulayarak belirli tasarımcıları, nesneye <xref:System.ComponentModel.ToolboxItemFilterAttribute> bu uygulama için. Daha fazla bilgi için **araç kutusu** öğesi filtreleme için bkz: <xref:System.ComponentModel.ToolboxItemFilterAttribute> ve <xref:System.ComponentModel.ToolboxItemFilterType>.  
+7. Açıkça uygulaması kısıtlamak mümkündür <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> örneklerini uygulayarak belirli tasarımcıları, nesneye <xref:System.ComponentModel.ToolboxItemFilterAttribute> bu uygulama için. Daha fazla bilgi için **araç kutusu** öğesi filtreleme için bkz: <xref:System.ComponentModel.ToolboxItemFilterAttribute> ve <xref:System.ComponentModel.ToolboxItemFilterType>.  
   
 ## <a name="additional-metadata-provisioning"></a>Ek meta veri sağlama  
  VSPackage tasarım zamanında bir tasarımcı veya dışında Tasarımcısı bileşen yapılandırmasını değiştirebilirsiniz.  
@@ -79,23 +79,23 @@ Bir tasarımcı veya Tasarımcısı bileşen ile ilişkili meta verileri ve filt
   
  Örneği tarafından sağlanan değişiklikleri <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> uygulanmasına VSPackage'nın uygulanan <xref:Microsoft.VisualStudio.Shell.Package> iki kapsamların biri olabilir:  
   
--   Genel--için belirli bir bileşenin tüm yeni örnekleri  
+- Genel--için belirli bir bileşenin tüm yeni örnekleri  
   
--   Yerel--yalnızca geçerli VSPackage'ı tarafından sağlanan bir tasarım yüzeyi üzerinde oluşturulan bileşeninin örneği tıklarsınız.  
+- Yerel--yalnızca geçerli VSPackage'ı tarafından sağlanan bir tasarım yüzeyi üzerinde oluşturulan bileşeninin örneği tıklarsınız.  
   
- `IsGlobal` Özelliği <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> uygulanmasına VSPackage'nın uygulanan örneği <xref:Microsoft.VisualStudio.Shell.Package> bu kapsamı belirler.  
+  `IsGlobal` Özelliği <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> uygulanmasına VSPackage'nın uygulanan örneği <xref:Microsoft.VisualStudio.Shell.Package> bu kapsamı belirler.  
   
- Özniteliği uygulaması için uygulama <xref:Microsoft.VisualStudio.Shell.Package> ile <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.IsGlobal%2A> özelliği <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> nesne kümesine `true`, tüm tarayıcı olarak aşağıdaki değişiklikleri [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ortam:  
+  Özniteliği uygulaması için uygulama <xref:Microsoft.VisualStudio.Shell.Package> ile <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.IsGlobal%2A> özelliği <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> nesne kümesine `true`, tüm tarayıcı olarak aşağıdaki değişiklikleri [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ortam:  
   
- `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=true`  `)]`  
+  `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=true`  `)]`  
   
- `internal class MyPackage : Package {}`  
+  `internal class MyPackage : Package {}`  
   
- Genel Bayrak olarak ayarlandı, `false`, meta veri değişikliği geçerli VSPackage'ı tarafından desteklenen geçerli Tasarımcı için yerel ise:  
+  Genel Bayrak olarak ayarlandı, `false`, meta veri değişikliği geçerli VSPackage'ı tarafından desteklenen geçerli Tasarımcı için yerel ise:  
   
- `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=false`  `)]`  
+  `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=false`  `)]`  
   
- `internal class MyPackage : Package {}`  
+  `internal class MyPackage : Package {}`  
   
 > [!NOTE]
 >  Mevcut zaman tasarım yüzeyine bileşenler oluşturma yalnızca destekler ve bu nedenle yalnızca bileşenleri yerel meta verilerine de sahip. Yukarıdaki örnekte, biz bir özelliği değiştirmek çalıştığınız `Color` özelliği bir nesne. Varsa `false` genel bayrak için geçirilen `CustomBrowser` Tasarımcı örneği asla gerçekten oluşturur çünkü hiçbir zaman görüneceği `Color`. Genel Bayrak ayarlayarak `false` denetimleri, zamanlayıcılar ve iletişim kutuları gibi bileşenleri için kullanışlıdır.  

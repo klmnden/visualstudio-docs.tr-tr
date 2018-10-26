@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4f741b8b47b4ddf5b07cec2a612173a52bf5fbd9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e1fd3b1cd19efa9032b7b92576a489e3b17373db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859789"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919346"
 ---
 # <a name="develop-tests-from-a-model"></a>Model aracılığıyla test geliştirme
 Sisteminiz ve bileşenlerinin testleri düzenlemenize yardımcı olması için gereksinimleri ve mimari modelleri kullanabilirsiniz. Bu uygulama, kullanıcıların ve diğer proje katılımcıları için önemli olan gereksinimleri test etmek ve gereklilikler değiştiğinde testleri hızlı bir şekilde güncelleştirmenize yardımcı emin olun yardımcı olur. Kullanırsanız [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], modeller ve testler arasındaki bağlantıları da sağlayabilirsiniz.
@@ -59,19 +59,19 @@ Sisteminiz ve bileşenlerinin testleri düzenlemenize yardımcı olması için g
 
 ###### <a name="to-link-tests-to-a-use-case"></a>Testleri bir kullanım örneğine bağlamak için
 
-1.  İçinde [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], bir gereksinim oluşturmanız ve bir test paketi üzerinde temel.
+1. İçinde [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], bir gereksinim oluşturmanız ve bir test paketi üzerinde temel.
 
-     Bir iş öğesinde oluşturduğunuz gereksinimi olan [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Team Foundation ile projenizin kullandığı işlem şablonuna bağlı olarak kullanıcı hikayesi, gereksinim veya kullanım örneği iş öğesi olabilir. Daha fazla bilgi için [hakkında Çevik araçları ve Çevik proje yönetimi](/azure/devops/boards/backlogs/overview?view=vsts).
+    Bir iş öğesinde oluşturduğunuz gereksinimi olan [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Team Foundation ile projenizin kullandığı işlem şablonuna bağlı olarak kullanıcı hikayesi, gereksinim veya kullanım örneği iş öğesi olabilir. Daha fazla bilgi için [hakkında Çevik araçları ve Çevik proje yönetimi](/azure/devops/boards/backlogs/overview?view=vsts).
 
-2.  Modelinizde bir veya daha fazla kullanım örnekleri için gereksinim iş öğesine bağlayın.
+2. Modelinizde bir veya daha fazla kullanım örnekleri için gereksinim iş öğesine bağlayın.
 
-     Bir kullanım durumu diyagramı, kullanım örneğine sağ tıklayın ve ardından **iş öğesine bağlantı**.
+    Bir kullanım durumu diyagramı, kullanım örneğine sağ tıklayın ve ardından **iş öğesine bağlantı**.
 
-3.  Kullanım örnekleri doğrulama test çalışmaları, test paketine ekleyin.
+3. Kullanım örnekleri doğrulama test çalışmaları, test paketine ekleyin.
 
- Genellikle, her kullanıcı hikayesi veya gereksinim çalışma öğesi, modelinizdeki çeşitli kullanım örnekleri için bağlantı içerir ve her kullanım örneği, birkaç kullanıcı hikayeleri veya gereksinimler bağlayacaksınız. Her kullanıcı öyküsü veya gereksinime çeşitli kullanım örnekleri geliştirme görevlerin kümesi sağlanmıştır olmasıdır. Örneğin, projenizin erken bir yineleme bir müşteri Kataloğu'ndan öğeleri seçin ve bunları teslim temel kullanıcı hikayesi geliştirebilir. Bir sonraki yinelemede hikayeyi malları gönderdikten sonra para sırasını ve tedarikçi Tamamlanıyor aldığında, kullanıcı öder olabilir.  Her hikayenin Sonkoşul sırasını ürün kullanım örneği için bir yan tümce ekler.
+   Genellikle, her kullanıcı hikayesi veya gereksinim çalışma öğesi, modelinizdeki çeşitli kullanım örnekleri için bağlantı içerir ve her kullanım örneği, birkaç kullanıcı hikayeleri veya gereksinimler bağlayacaksınız. Her kullanıcı öyküsü veya gereksinime çeşitli kullanım örnekleri geliştirme görevlerin kümesi sağlanmıştır olmasıdır. Örneğin, projenizin erken bir yineleme bir müşteri Kataloğu'ndan öğeleri seçin ve bunları teslim temel kullanıcı hikayesi geliştirebilir. Bir sonraki yinelemede hikayeyi malları gönderdikten sonra para sırasını ve tedarikçi Tamamlanıyor aldığında, kullanıcı öder olabilir.  Her hikayenin Sonkoşul sırasını ürün kullanım örneği için bir yan tümce ekler.
 
- Bu yan tümceleri ayrı açıklamalara kullanım durumu diyagramında yazarak Sonkoşul yan tümceyi gereksinimlerinden ayrı bağlantılar oluşturabilirsiniz. Her bir gereksinim iş öğesine bağlayın ve açıklama kullanım örneği diyagramındaki bağlayabilirsiniz.
+   Bu yan tümceleri ayrı açıklamalara kullanım durumu diyagramında yazarak Sonkoşul yan tümceyi gereksinimlerinden ayrı bağlantılar oluşturabilirsiniz. Her bir gereksinim iş öğesine bağlayın ve açıklama kullanım örneği diyagramındaki bağlayabilirsiniz.
 
 ### <a name="base-tests-on-the-requirements-types"></a>Gereksinim türleri temel testler
  Olan türler, sınıflar, arabirimler ve numaralandırmalar, gereksinimler modelini kavramlar ve kullanıcıların nasıl düşünün ve iş hakkında iletişim açısından ilişkiler açıklanmaktadır. Bu, sistemin yalnızca iç tasarımı ile ilgili türler hariç tutar.
@@ -147,15 +147,15 @@ Assert (countAfter == countBefore = 1);
 
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Testleri bir model öğe veya ilişki bağlamak için
 
-1.  İçinde [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], bir gereksinim oluşturmanız ve bir test paketi üzerinde temel.
+1. İçinde [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], bir gereksinim oluşturmanız ve bir test paketi üzerinde temel.
 
-     Bir iş öğesinde oluşturduğunuz gereksinimi olan [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Team Foundation ile projenizin kullandığı işlem şablonuna bağlı olarak kullanıcı hikayesi, gereksinim veya kullanım örneği iş öğesi olabilir. Daha fazla bilgi için [hakkında Çevik araçları ve Çevik proje yönetimi](/azure/devops/boards/backlogs/overview?view=vsts).
+    Bir iş öğesinde oluşturduğunuz gereksinimi olan [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Team Foundation ile projenizin kullandığı işlem şablonuna bağlı olarak kullanıcı hikayesi, gereksinim veya kullanım örneği iş öğesi olabilir. Daha fazla bilgi için [hakkında Çevik araçları ve Çevik proje yönetimi](/azure/devops/boards/backlogs/overview?view=vsts).
 
-2.  Bir veya daha fazla öğe modelinizdeki gereksinim iş öğesine bağlayın.
+2. Bir veya daha fazla öğe modelinizdeki gereksinim iş öğesine bağlayın.
 
-     Modelleme diyagramında bir öğe, yorum veya ilişkiye sağ tıklayın ve ardından **iş öğesine bağlantı**.
+    Modelleme diyagramında bir öğe, yorum veya ilişkiye sağ tıklayın ve ardından **iş öğesine bağlantı**.
 
-3.  Model öğe ifade gereksinim doğrulayın test çalışmalarını test paketine ekleyin.
+3. Model öğe ifade gereksinim doğrulayın test çalışmalarını test paketine ekleyin.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

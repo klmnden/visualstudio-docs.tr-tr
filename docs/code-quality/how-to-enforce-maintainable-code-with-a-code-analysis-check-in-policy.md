@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 402b8e24b68f39524a9095a6ad5b177ab963f05a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f0121efb2e226b2407eee7eea50354a80482b1cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281045"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892098"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Nasıl yapılır: bir kod analizi iade ilkesi ile Bakımı yapılabilir kodu zorlama
 
@@ -47,15 +47,15 @@ Sürüm denetimi için Team Foundation Yöneticileri, iade ilkesi gereksinimleri
 
 2. Aşağıdaki kurallar için onay kutularını seçin:
 
-    -   Devralma derinliği: **CA1501 AvoidExcessiveInheritance** -eşiği: fazla 5 düzey derinliğinde uyarı
+   - Devralma derinliği: **CA1501 AvoidExcessiveInheritance** -eşiği: fazla 5 düzey derinliğinde uyarı
 
-    -   Karmaşıklık: **CA1502 AvoidExcessiveComplexity** -eşiği: 25'den fazla uyarı
+   - Karmaşıklık: **CA1502 AvoidExcessiveComplexity** -eşiği: 25'den fazla uyarı
 
-    -   Bakım dizini: **CA1505 AvoidUnmaintainableCode** -eşiği: az 20 uyarı
+   - Bakım dizini: **CA1505 AvoidUnmaintainableCode** -eşiği: az 20 uyarı
 
-    -   Sınıf bağlantısı: **CA1506 AvoidExcessiveClassCoupling** -eşiği: bir sınıf için 80'den fazla ve 30 bir yöntem için birden fazla uyarı
+   - Sınıf bağlantısı: **CA1506 AvoidExcessiveClassCoupling** -eşiği: bir sınıf için 80'den fazla ve 30 bir yöntem için birden fazla uyarı
 
-    Ayrıca, başarılı bir derleme önlemek için bir kuralı ihlali istiyorsanız seçin **uyarı bir hata olarak değerlendir** kural açıklaması yanındaki onay kutusunu.
+     Ayrıca, başarılı bir derleme önlemek için bir kuralı ihlali istiyorsanız seçin **uyarı bir hata olarak değerlendir** kural açıklaması yanındaki onay kutusunu.
 
 3. **Tamam**'ı tıklatın. Yeni iade ilkesi artık, gelecekteki iade etme işlemleri için de geçerlidir.
 

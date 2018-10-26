@@ -13,12 +13,12 @@ ms.assetid: d1ac9188-d79f-407e-9f3a-80dbefa66317
 caps.latest.revision: 10
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cc643f8bd8addefc2bec4c62645e8091aaedc11c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 68f083bf6aa99177f6b9e697be8affa5d29804a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291245"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889613"
 ---
 # <a name="using-microsoftvisualstudiotesttoolscppunittestframework"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,71 +32,71 @@ Bu konu genel üyeleri listeler `Microsoft::VisualStudio::CppUnitTestFramework` 
 ##  <a name="BKMK_In_this_topic"></a> Bu konudaki  
  [CppUnitTest.h](#BKMK_CppUnitTest_h)  
   
--   [Test sınıflar ve yöntemler oluşturma](#BKMK_Create_test_classes_and_methods)  
+- [Test sınıflar ve yöntemler oluşturma](#BKMK_Create_test_classes_and_methods)  
   
--   [Başlatma ve temizleme](#BKMK_Initialize_and_cleanup)  
+- [Başlatma ve temizleme](#BKMK_Initialize_and_cleanup)  
   
-    -   [Test yöntemleri](#BKMK_Test_methods)  
+  -   [Test yöntemleri](#BKMK_Test_methods)  
   
-    -   [Test sınıfları](#BKMK_Test_classes)  
+  -   [Test sınıfları](#BKMK_Test_classes)  
   
-    -   [Test modülleri](#BKMK_Test_modules)  
+  -   [Test modülleri](#BKMK_Test_modules)  
   
--   [Test öznitelikleri oluşturma](#BKMK_Create_test_attributes)  
+- [Test öznitelikleri oluşturma](#BKMK_Create_test_attributes)  
   
-    -   [Test yöntemi öznitelikleri](#BKMK_Test_method_attributes)  
+  - [Test yöntemi öznitelikleri](#BKMK_Test_method_attributes)  
   
-    -   [Test sınıfı öznitelikler](#BKMK_Test_class_attributes)  
+  - [Test sınıfı öznitelikler](#BKMK_Test_class_attributes)  
   
-    -   [Test modül öznitelikleri](#BKMK_Test_module_attributes)  
+  - [Test modül öznitelikleri](#BKMK_Test_module_attributes)  
   
-    -   [Önceden tanımlı öznitelikleri](#BKMK_Pre_defined_attributes)  
+  - [Önceden tanımlı öznitelikleri](#BKMK_Pre_defined_attributes)  
   
-     [CppUnitTestAssert.h](#BKMK_CppUnitTestAssert_h)  
+    [CppUnitTestAssert.h](#BKMK_CppUnitTestAssert_h)  
   
-    -   [Genel onaylar](#BKMK_General_Asserts)  
+  - [Genel onaylar](#BKMK_General_Asserts)  
   
-        -   [Eşit](#BKMK_General_Are_Equal)  
+    -   [Eşit](#BKMK_General_Are_Equal)  
   
-        -   [Eşit değildir](#BKMK_General_Are_Not_Equal)  
+    -   [Eşit değildir](#BKMK_General_Are_Not_Equal)  
   
-        -   [Aynı](#BKMK_General_Are_Same)  
+    -   [Aynı](#BKMK_General_Are_Same)  
   
-        -   [Aynı değil](#BKMK_General_Are_Not_Same)  
+    -   [Aynı değil](#BKMK_General_Are_Not_Same)  
   
-        -   [Null](#BKMK_General_Is_Null)  
+    -   [Null](#BKMK_General_Is_Null)  
   
-        -   [Null değil](#BKMK_General_Is_Not_Null)  
+    -   [Null değil](#BKMK_General_Is_Not_Null)  
   
-        -   [Geçerlidir](#BKMK_General_Is_True)  
+    -   [Geçerlidir](#BKMK_General_Is_True)  
   
-        -   [Yanlış](#BKMK_General_Is_False)  
+    -   [Yanlış](#BKMK_General_Is_False)  
   
-        -   [Başarısız](#BKMK_General_Fail)  
+    -   [Başarısız](#BKMK_General_Fail)  
   
-    -   [Windows çalışma zamanı onaylar](#BKMK_WinRT_Asserts)  
+  - [Windows çalışma zamanı onaylar](#BKMK_WinRT_Asserts)  
   
-        -   [Eşit](#BKMK_WinRT_Are_Equal)  
+    -   [Eşit](#BKMK_WinRT_Are_Equal)  
   
-        -   [Aynı](#BKMK_WinRT_Are_Same)  
+    -   [Aynı](#BKMK_WinRT_Are_Same)  
   
-        -   [Eşit değildir](#BKMK_WinRT_Are_Not_Equal)  
+    -   [Eşit değildir](#BKMK_WinRT_Are_Not_Equal)  
   
-        -   [Aynı değil](#BKMK_WinRT_Are_Not_Same)  
+    -   [Aynı değil](#BKMK_WinRT_Are_Not_Same)  
   
-        -   [Null](#BKMK_WinRT_Is_Null)  
+    -   [Null](#BKMK_WinRT_Is_Null)  
   
-        -   [Null değil](#BKMK_WinRT_Is_Not_Null)  
+    -   [Null değil](#BKMK_WinRT_Is_Not_Null)  
   
-    -   [Özel durum onaylar](#BKMK_Exception_Asserts)  
+  - [Özel durum onaylar](#BKMK_Exception_Asserts)  
   
-        -   [Özel durum beklediğiniz](#BKMK_Expect_Exception)  
+    - [Özel durum beklediğiniz](#BKMK_Expect_Exception)  
   
-         [CppUnitTestLogger.h](#BKMK_CppUnitTestLogger_h)  
+      [CppUnitTestLogger.h](#BKMK_CppUnitTestLogger_h)  
   
-        -   [Günlükçü](#BKMK_Logger)  
+    - [Günlükçü](#BKMK_Logger)  
   
-        -   [İleti Yaz](#BKMK_Write_Message)  
+    - [İleti Yaz](#BKMK_Write_Message)  
   
 ##  <a name="BKMK_CppUnitTest_h"></a> CppUnitTest.h  
   

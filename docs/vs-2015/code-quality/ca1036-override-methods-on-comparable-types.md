@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1069316d0a027678b1161a948765bb81f1de68de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67fa52a674b9e3d77d7e3eed7493bf28c1b2514d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202832"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948794"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Karşılaştırılabilir türlerde geçersiz kılma yöntemleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|OverrideMethodsOnComparableTypes|
@@ -45,15 +46,15 @@ ms.locfileid: "49202832"
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
  Bu kural ihlalini düzeltmek için geçersiz kılın <xref:System.Object.Equals%2A>. İşleç aşırı yüklemesi programlama dilini destekler, aşağıdaki işleçleri sağlayın:
 
--   op_Equality
+- op_Equality
 
--   op_Inequality
+- op_Inequality
 
--   op_LessThan
+- op_LessThan
 
--   op_GreaterThan
+- op_GreaterThan
 
- C# içinde bu işleçler temsil etmek için kullanılan belirteçleri aşağıda belirtilmiştir: ==,! =, \<, ve >.
+  C# içinde bu işleçler temsil etmek için kullanılan belirteçleri aşağıda belirtilmiştir: ==,! =, \<, ve >.
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
  Eksik işleçleriyle ihlaline neden olur ve Visual Basic .NET ile olduğu gibi İşleç aşırı yüklemesi, programlama diliniz desteklemiyor olduğunda bu kuraldan bir uyarıyı bastırmak güvenlidir. Op_Equality işleçleri uygulamaya karar verirseniz, uygulama bağlamında mantıklı dışında eşitlik işleçlerde tetiklendiğinde için bu kuraldan bir uyarıyı bastırmak güvenlidir. Her zaman ancak op_Equality gerekir ve Object.equals'ı geçersiz kılarsanız == işleci.

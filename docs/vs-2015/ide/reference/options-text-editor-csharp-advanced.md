@@ -25,12 +25,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93ddc0af7daecaeb64586d84e210180d7025ad81
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51707a1df9c9f7144dc9a3af021262ca818f03b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301398"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850522"
 ---
 # <a name="options-text-editor-c-advanced"></a>Seçenekler, Metin Düzenleyici, C#, Gelişmiş
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,21 +49,21 @@ Düzenleyici biçimlendirme, kodu yeniden düzenlemeye ve XML belgeleri yorumlar
  Hataları düzenleyicide altı çizili  
  Kodda derleme hataları tanımlar. Bu seçenek belirlendiğinde özel anlamları renkte dalgalı alt çizgiler görünür:  
   
--   Ayrıştırma hataları kırmızı renkte görüntülenir.  
+- Ayrıştırma hataları kırmızı renkte görüntülenir.  
   
--   Derleme hatalarını, mavi.  
+- Derleme hatalarını, mavi.  
   
--   Derleme Uyarıları yeşildir.  
+- Derleme Uyarıları yeşildir.  
   
--   Geçersiz [Düzenle ve devam et](../../debugger/edit-and-continue.md) mor düzenlemeleri şunlardır.  
+- Geçersiz [Düzenle ve devam et](../../debugger/edit-and-continue.md) mor düzenlemeleri şunlardır.  
   
- Hata hakkında bilgi içeren bir araç ipucu görmek için altı çizili kod kesimi üzerine getirin.  
+  Hata hakkında bilgi içeren bir araç ipucu görmek için altı çizili kod kesimi üzerine getirin.  
   
- Canlı anlamsal hataları göster  
- Bildirme ve bilinmeyen bir tür kullanarak veya bilinmeyen bir özelliğe başvurma bazı derleme hataları açık derlemesini olmadan tanımlar.  
+  Canlı anlamsal hataları göster  
+  Bildirme ve bilinmeyen bir tür kullanarak veya bilinmeyen bir özelliğe başvurma bazı derleme hataları açık derlemesini olmadan tanımlar.  
   
- İmlecin altındaki sembole başvuruları Vurgula  
- İmleç bir sembol içinde konumlandırıldığında veya sembol tıkladığınızda, kod dosyasındaki o simgenin tüm örnekleri vurgulanır.  
+  İmlecin altındaki sembole başvuruları Vurgula  
+  İmleç bir sembol içinde konumlandırıldığında veya sembol tıkladığınızda, kod dosyasındaki o simgenin tüm örnekleri vurgulanır.  
   
 ## <a name="refactoring"></a>Yeniden Düzenle  
  Yeniden düzenleme sonuçlarını doğrulayın  

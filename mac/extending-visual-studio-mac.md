@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 10bfb61ae9e3750926dad39ad3c614d8daf8f867
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 83d5eac54560d9c0c1960808d39a909858db323d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43224968"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900676"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Mac için Visual Studio'yu genişletme
 
@@ -162,4 +162,4 @@ Geliştirme için kullanılabilir alanları kapsamı hakkında daha fazla bilgi 
 ## <a name="additional-information"></a>Ek Bilgiler
 
 > [!NOTE]
-Şu anda Mac için Visual Studio genişletilebilirlik senaryoları geliştirmeye çalışıyoruz Uzantıları oluşturma ve Ek Yardım veya bilgi gereksinim veya geri bildirim sağlamak isterseniz, lütfen doldurun [Mac uzantısı geliştirme için Visual Studio](https://aka.ms/vsmac-extensions-survey) formu.
+> Şu anda Mac için Visual Studio genişletilebilirlik senaryoları geliştirmeye çalışıyoruz Uzantıları oluşturma ve Ek Yardım veya bilgi gereksinim veya geri bildirim sağlamak isterseniz, lütfen doldurun [Mac uzantısı geliştirme için Visual Studio](https://aka.ms/vsmac-extensions-survey) formu.

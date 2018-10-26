@@ -14,19 +14,19 @@ caps.latest.revision: 14
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 35cae638c5838d098632ff244545acc749400a24
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5abb716bd562b6bd82b430f6b94251153a9abbe3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202195"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934710"
 ---
 # <a name="best-practices-and-examples-sal"></a>En İyi Yöntemler ve Örnekler (SAL)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kaynak kod ek açıklama dili (SAL) dışında en iyi şekilde yararlanmak ve bazı yaygın sorunları önlemek için bazı yollar şunlardır.  
   
-## <a name="in"></a>_In\_  
+## <a name="in"></a>\_İçinde\_
  Öğesine yazılacak işlev beklenen kullanırsanız `_Inout_` yerine `_In_`. Bu, özellikle eski makroları otomatik dönüştürme SAL'ın durumlarda geçerlidir. SAL'ın önce birçok Programcı makroları yorum olarak kullanılan — adlandırılmıştı makroları `IN`, `OUT`, `IN_OUT`, veya türevleri bu adları. Bu makrolar için SAL dönüştürmenizi öneririz ancak biz de, kod özgün prototip yazılmıştır ve eski makrosu, artık ne yaptığını gösterebilir beri değiştirilmiş olabileceğinden dönüştürme yaparken dikkatli olun bağlantısını okumanızı tavsiye. Hakkında özellikle dikkat `OPTIONAL` sık yanlış yerleştirilir çünkü makrosu açıklama — Örneğin, tarafındaki yanlış virgül.  
   
 ```cpp  
@@ -50,8 +50,8 @@ void Func2(_Inout_ PCHAR p1)
 }  
 ```  
   
-## <a name="opt"></a>_opt\_  
- Arayan bir null işaretçi geçmesine izin verilmiyor kullanırsanız `_In_` veya `_Out_` yerine `_In_opt_` veya `_Out_opt_`. Bu parametreleri denetler ve olmamalıdır, NULL ise, bir hata döndürür bile bir işlev için geçerlidir. Bir işlev için beklenmeyen NULL parametresi denetleyin ve düzgün bir şekilde dönmek zorunda savunma kodlama iyi olsa da, bu ek açıklama parametresi isteğe bağlı bir türde olabilir gelmez (_*Xxx*_opt\_).  
+## <a name="opt"></a>\_iyileştirilmiş\_  
+ Arayan bir null işaretçi geçmesine izin verilmiyor kullanırsanız `_In_` veya `_Out_` yerine `_In_opt_` veya `_Out_opt_`. Bu parametreleri denetler ve olmamalıdır, NULL ise, bir hata döndürür bile bir işlev için geçerlidir. Bir işlev için beklenmeyen NULL parametresi denetleyin ve düzgün bir şekilde dönmek zorunda savunma kodlama iyi olsa da, bu ek açıklama parametresi isteğe bağlı bir türde olabilir gelmez (\_*Xxx*_opt\_).  
   
 ```cpp  
   
@@ -69,10 +69,10 @@ void Func2(_Out_ int *p1)
   
 ```  
   
-## <a name="predefensive-and-postdefensive"></a>_Pre_defensive\_ ve _Post_defensive\_  
+## <a name="predefensive-and-postdefensive"></a>\_Pre_defensive\_ ve \_Post_defensive\_  
  Bir işlev bir güven sınırı varsa, kullanmanızı öneririz `_Pre_defensive_` ek açıklama.  "Savunma" değiştiricisi, çağrısı noktasında belirtmek için bazı ek açıklamaları değiştirir, arabirimi tamamen denetlenmesi, ancak uygulama gövdesinde hatalı parametreler geçebilir, varsaymanız gerekir. Bu durumda, `_In_ _Pre_defensive_` çağıran NULL geçirmeye çalışırsa bir hata alırsınız olsa da, sanki parametresi NULL ve işaretçi olmayan XML'deki başvuru girişimleri olabilir işlev gövdesi analiz edilir olduğunu belirtmek için bir güven sınırında tercih edilir NULL denetimi işaretlenir.  A `_Post_defensive_` ek açıklama kullanılabilir Ayrıca, burada güvenilen taraf çağıran olduğu varsayılır ve güvenilmeyen kod çağrılan kodu geri çağırmaları kullanmak için.  
   
-## <a name="outwrites"></a>_Out_writes\_  
+## <a name="outwrites"></a>\_Out_writes\_  
  Aşağıdaki örnek, bir ortak kötüye kullanımı gösterir `_Out_writes_`.  
   
 ```cpp  
@@ -106,7 +106,7 @@ void Func3(_Out_writes_(size) PSTR pb,
   
 ```  
   
-## <a name="out-pstr"></a>_Bant\_ PSTR  
+## <a name="out-pstr"></a>\_Çıkış\_ PSTR  
  Kullanımını `_Out_ PSTR` neredeyse her zaman yanlış. Bu sahip için bir karakter arabelleği işaret eden bir output parametresi olarak yorumlanır ve NULL ile sonlandırılmış.  
   
 ```cpp  
@@ -121,7 +121,7 @@ void Func2(_Out_writes_(n) PSTR wszFileName, size_t n);
   
  Ek açıklamanın ister `_In_ PCSTR` ortak ve kullanışlıdır. NULL sonlandırma sahip bir Giriş dizesinin işaret önkoşulu `_In_` NULL ile sonlandırılmış bir dize tanınmasını sağlar.  
   
-## <a name="in-wchar-p"></a>_In\_ WCHAR * p  
+## <a name="in-wchar-p"></a>\_İçinde\_ WCHAR * p  
  `_In_ WCHAR* p` Giriş bir işaretçi olduğunu söylüyor `p` işaret eden bir karakter. Ancak, çoğu durumda, kullanılmaya belirtimi budur olmayabilir. Bunun yerine, amaçlanan büyük olasılıkla NULL ile sonlandırılmış bir dizinin özelliğidir; Bunu yapmak için kullanın `_In_ PWSTR`.  
   
 ```cpp  
@@ -152,7 +152,7 @@ BOOL StrEquals2(_In_ PSTR p1, _In_ PSTR p2)
   
 ```  
   
-## <a name="outrange"></a>_Out_range\_  
+## <a name="outrange"></a>\_Out_range\_  
  Parametre bir işaretçi ise ve aralığı işaretçi tarafından kullanılacak işaret ettiği öğenin değerini ifade etmek istiyorsanız `_Deref_out_range_` yerine `_Out_range_`. Aşağıdaki örnekte, dizi * pcbFilled ifade edilir, pcbFilled değil.  
   
 ```cpp  
@@ -175,7 +175,7 @@ void Func2(
   
  `_Deref_out_range_(0, cbSize)` içinden gösterilen çünkü bazı araçları için kesinlikle gerekli değil `_Out_writes_to_(cbSize,*pcbFilled)`, ancak bütünlük açısından buraya gösterilir.  
   
-## <a name="wrong-context-in-when"></a>_Bildirim zamanı yanlış bağlamda\_  
+## <a name="wrong-context-in-when"></a>Yanlış bağlamda \_olduğunda\_  
  Başka bir yaygın hata sonrası durum değerlendirmesi için önkoşulları kullanmaktır. Aşağıdaki örnekte, `_Requires_lock_held_` koşuludur.  
   
 ```cpp  
@@ -192,7 +192,7 @@ int Func2(_In_ MyData *p, int flag);
   
  İfade `result` öncesi durumda kullanılabilir değil bir son durum değeri belirtir.  
   
-## <a name="true-in-success"></a>TRUE olarak _Success\_  
+## <a name="true-in-success"></a>TRUE olarak \_başarılı\_  
  İşlev dönüş değeri, sıfır dışında olduğunda başarılı kullanırsanız `return != 0` yerine başarı koşulu olarak `return == TRUE`. NonZero derleyici sağlayan gerçek değerine denklik mutlaka gelmez `TRUE`. Parametre `_Success_` ifade olan ve aşağıdaki ifadeler eşdeğer olarak değerlendirilir: `return != 0`, `return != false`, `return != FALSE`, ve `return` parametreleri veya karşılaştırmalar.  
   
 ```cpp  

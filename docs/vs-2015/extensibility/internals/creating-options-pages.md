@@ -16,12 +16,12 @@ ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 90a99ca6f577ed7a04c9b1623c767484e592b4eb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 555234ae1c35c496b1fb5b1361efec0100479a35
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243093"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893697"
 ---
 # <a name="creating-options-pages"></a>Seçenekler Sayfaları Oluşturma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,17 +51,17 @@ ms.locfileid: "49243093"
 ## <a name="implementing-dialogpage-class"></a>DialogPage sınıf uygulama  
  VSPackage'nın uygulamasını sağlayan bir nesne bir <xref:Microsoft.VisualStudio.Shell.DialogPage>-türetilmiş bir tür, aşağıdaki devralınan özellikler avantajlarından faydalanabilirsiniz:  
   
--   Varsayılan kullanıcı arabirimi pencere.  
+- Varsayılan kullanıcı arabirimi pencere.  
   
--   Bir ya da Eğer Kalıcılık mekanizması kullanılabilir varsayılan <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> sınıfına uygulanan veya <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A> özelliği `true` için <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> sınıfa uygulanır.  
+- Bir ya da Eğer Kalıcılık mekanizması kullanılabilir varsayılan <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> sınıfına uygulanan veya <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A> özelliği `true` için <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> sınıfa uygulanır.  
   
--   Otomasyon desteği.  
+- Otomasyon desteği.  
   
- Bir nesne uygulamak için en düşük gereksinimi bir **Araçlar Seçenekler** kullanarak sayfa <xref:Microsoft.VisualStudio.Shell.DialogPage> genel özelliklerin ektir.  
+  Bir nesne uygulamak için en düşük gereksinimi bir **Araçlar Seçenekler** kullanarak sayfa <xref:Microsoft.VisualStudio.Shell.DialogPage> genel özelliklerin ektir.  
   
- Sınıf düzgün olarak kayıtlı bir **Araçlar Seçenekler** genel özelliklerini kullanılabilir sonra sayfa sağlayıcısı **seçenekleri** bölümünü **Araçları** menü biçiminde bir Özellik Kılavuzu.  
+  Sınıf düzgün olarak kayıtlı bir **Araçlar Seçenekler** genel özelliklerini kullanılabilir sonra sayfa sağlayıcısı **seçenekleri** bölümünü **Araçları** menü biçiminde bir Özellik Kılavuzu.  
   
- Bu varsayılan özellikler geçersiz kılınabilir. Örneğin, daha karmaşık bir kullanıcı oluşturmak için arabirimi yalnızca varsayılan uygulamasını geçersiz kılma gerektirir <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>.  
+  Bu varsayılan özellikler geçersiz kılınabilir. Örneğin, daha karmaşık bir kullanıcı oluşturmak için arabirimi yalnızca varsayılan uygulamasını geçersiz kılma gerektirir <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>.  
   
 ## <a name="example"></a>Örnek  
  Aşağıda bir basit "Merhaba Dünya" bir seçenekler sayfası uygulamasıdır. Visual Studio Paket şablonla tarafından oluşturulan varsayılan projeye aşağıdaki kodu ekleyerek **menü komutu** seçeneği belirlenmiş yeterince seçeneği sayfa işlevselliği gösterir.  

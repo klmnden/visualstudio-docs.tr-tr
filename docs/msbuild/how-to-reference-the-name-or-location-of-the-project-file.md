@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f720c86f98aa484a6f83721dcf6d6c0881822b22
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: dceca1e518783f405490d3f2527156bd20bf81aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079644"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911531"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Nasıl yapılır: Proje dosyasının konumunu ve adını başvurusu
 Kendi özellik oluşturmak zorunda kalmadan proje dosyasının kendisini adına veya konumuna projenin kullanabilirsiniz. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Proje dosya adına başvuran ayrılmış özellikleri ve proje ile ilgili diğer özellikleri sağlar. Ayrılmış özellikler hakkında daha fazla bilgi için bkz. [MSBuild ayrılmış ve tanınmış özellikleri](../msbuild/msbuild-reserved-and-well-known-properties.md).  
@@ -33,15 +33,15 @@ Kendi özellik oluşturmak zorunda kalmadan proje dosyasının kendisini adına 
   
 #### <a name="to-use-the-project-properties"></a>Proje özelliklerini kullanma
   
--   Herhangi bir özellik ile olduğu gibi $ () gösterimi ile proje dosyasındaki bir özelliği başvuru. Örneğin:  
+- Herhangi bir özellik ile olduğu gibi $ () gösterimi ile proje dosyasındaki bir özelliği başvuru. Örneğin:  
   
-    ```xml  
-    <CSC Sources = "@(CSFile)"   
-        OutputAssembly = "$(MSBuildProjectName).exe"/>  
-    </CSC>  
-    ```          
+  ```xml  
+  <CSC Sources = "@(CSFile)"   
+      OutputAssembly = "$(MSBuildProjectName).exe"/>  
+  </CSC>  
+  ```          
   
- Ayrılmış bir özellik kullanmanın bir avantajı, herhangi bir değişiklik proje dosya adına otomatik olarak eklenen ' dir. Projeyi sonraki açışınızda çıkış dosyası, yapmanız gereken başka bir işlem ile yeni bir ada sahip olacaktır.  
+  Ayrılmış bir özellik kullanmanın bir avantajı, herhangi bir değişiklik proje dosya adına otomatik olarak eklenen ' dir. Projeyi sonraki açışınızda çıkış dosyası, yapmanız gereken başka bir işlem ile yeni bir ada sahip olacaktır.  
   
 > [!NOTE]
 >  Ayrılmış özellikler, proje dosyasında tanımlanamaz.  

@@ -17,38 +17,38 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 430a4b3a1c4f0d66acfd2486c44bd8eff7df1fcb
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 13b0680e9222302feab8a7cbe1ad375a1f7255be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49074071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846206"
 ---
 # <a name="secure-office-solutions"></a>Office çözümleri güvenliğini sağlama
   Office çözümleri için güvenlik modeli birçok teknoloji içerir: [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], Microsoft Office ve Internet Explorer Yasak siteler bölgesi Güven Merkezi'nde. Aşağıdaki bölümlerde, farklı güvenlik özelliklerinin nasıl çalıştığı açıklanmaktadır:  
   
--   [Office çözümlerine güven verme](#GrantingTrustToSolutions)  
+- [Office çözümlerine güven verme](#GrantingTrustToSolutions)  
   
--   [Belgelere güven verme](#GrantingTrustToDocuments)  
+- [Belgelere güven verme](#GrantingTrustToDocuments)  
   
--   [Windows Installer'ı kullanırken, güven verme](#GrantingTrustWindowsInstaller)  
+- [Windows Installer'ı kullanırken, güven verme](#GrantingTrustWindowsInstaller)  
   
--   [Office çözümleriyle ilgili belirli güvenlik konuları](#Security)  
+- [Office çözümleriyle ilgili belirli güvenlik konuları](#Security)  
   
--   [Güvenlik geliştirme sırasında](#SecurityDuringDeployment)  
+- [Güvenlik geliştirme sırasında](#SecurityDuringDeployment)  
   
--   [Office çalışma zamanı için Visual Studio Araçları](#VisualStudioToolsForOfficeRuntime)  
+- [Office çalışma zamanı için Visual Studio Araçları](#VisualStudioToolsForOfficeRuntime)  
   
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
+  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ##  <a name="GrantingTrustToSolutions"></a> Office çözümlerine güven verme  
  Office çözümlerine güven her son kullanıcıya aşağıdaki kanıta göre Office çözümünün güven güvenlik ilkesini değiştirmek anlamına gelir:  
   
--   Dağıtım bildirimi imzalamak için kullanılan sertifika.  
+- Dağıtım bildirimi imzalamak için kullanılan sertifika.  
   
--   Dağıtım bildirimi URL'si.  
+- Dağıtım bildirimi URL'si.  
   
- Daha fazla bilgi için [Office çözümlerine güven verme](../vsto/granting-trust-to-office-solutions.md).  
+  Daha fazla bilgi için [Office çözümlerine güven verme](../vsto/granting-trust-to-office-solutions.md).  
   
 ##  <a name="GrantingTrustToDocuments"></a> Belgelere güven verme  
  Belge düzeyi özelleştirmesi belge güvenli bir konuma atanan bir dizinde olması gerekir. Daha fazla bilgi için [belgelere güven verme](../vsto/granting-trust-to-documents.md).  
@@ -65,11 +65,11 @@ ms.locfileid: "49074071"
 ### <a name="document-level-solutions"></a>Belge düzeyi çözümleri  
  Aşağıdaki türlerde projeler geliştiriyorsanız bir belgenin tam yolu, Microsoft Office uygulamasının güvenilen konumlar listesine eklenmesi gerekir:  
   
--   Belge düzeyi gibi bir ağ dosya paylaşımında olan çözümler  *\\\servername\sharename*.  
+- Belge düzeyi gibi bir ağ dosya paylaşımında olan çözümler  *\\\servername\sharename*.  
   
--   Belge düzeyi çözümleri kullanmak için Word *.doc* veya *.docm* dosyaları.  
+- Belge düzeyi çözümleri kullanmak için Word *.doc* veya *.docm* dosyaları.  
   
- Sizin için belge konumunu güvenilir konumlar listesine ekleyin veya özellikle hata ayıklama ve klasörleri yapı alt dizinleri içerir. Daha fazla bilgi için Microsoft Office Çevrimiçi Yardım makalesine bakın [oluşturma, kaldırma veya değişiklik dosyalarınız için güvenilen bir konum](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
+  Sizin için belge konumunu güvenilir konumlar listesine ekleyin veya özellikle hata ayıklama ve klasörleri yapı alt dizinleri içerir. Daha fazla bilgi için Microsoft Office Çevrimiçi Yardım makalesine bakın [oluşturma, kaldırma veya değişiklik dosyalarınız için güvenilen bir konum](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
 ### <a name="temporary-certificates"></a>Geçici sertifikalar  
  İmzalama sertifikası zaten mevcut değilse visual Studio geçici bir sertifika oluşturur. Bu geçici bir sertifika yalnızca geliştirme sırasında kullanmak ve dağıtım için resmi bir sertifika satın alın.  

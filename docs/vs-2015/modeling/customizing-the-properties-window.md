@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aa690b88b5ab2d7aac3f8aea9967419dcbd43df1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab8f1e85bec4c8a12a122030d2b9487a13e826a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241741"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845751"
 ---
 # <a name="customizing-the-properties-window"></a>Özellikler Penceresini Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ ms.locfileid: "49241741"
   
  **Açıklama**. Bir etki alanı özelliğin açıklamasını iki yerde görüntülenir:  
   
--   Kullanıcı özelliği seçtiğinde Özellikler penceresinin alt. Kullanıcıya ne özelliği temsil eden açıklamak için kullanabilirsiniz.  
+- Kullanıcı özelliği seçtiğinde Özellikler penceresinin alt. Kullanıcıya ne özelliği temsil eden açıklamak için kullanabilirsiniz.  
   
--   Oluşturulan program kodu içinde. API belgeleri ayıklamak için belge özelliklerini kullanıyorsanız, bu özelliğin API açıklamasını olarak görünür.  
+- Oluşturulan program kodu içinde. API belgeleri ayıklamak için belge özelliklerini kullanıyorsanız, bu özelliğin API açıklamasını olarak görünür.  
   
- **Kategori**. Özellikler penceresinde başlık kategorisidir.  
+  **Kategori**. Özellikler penceresinde başlık kategorisidir.  
   
 ## <a name="exposing-style-features"></a>Stil özelliklerini gösterme  
  Grafik öğelerin dinamik özelliklerin bazıları temsil edilebilir veya *kullanıma sunulan* olarak etki alanı özellikleri. Bu şekilde sunulan bir özellik kullanıcı tarafından güncelleştirilebilir ve daha fazlasını kolayca program kodu tarafından güncelleştirilebilir.  
@@ -101,38 +101,38 @@ ms.locfileid: "49241741"
   
  Ancak, aşağıdaki düzenleyiciler ve türleri belirtebilirsiniz:  
   
-1.  Standart türüyle kullanılan başka bir düzenleyici. Örneğin, bir dize özelliği için bir dosya yolu Düzenleyicisi belirtebilirsiniz.  
+1. Standart türüyle kullanılan başka bir düzenleyici. Örneğin, bir dize özelliği için bir dosya yolu Düzenleyicisi belirtebilirsiniz.  
   
-2.  Etki alanı özelliği ve bunun için bir düzenleyici için dış tür.  
+2. Etki alanı özelliği ve bunun için bir düzenleyici için dış tür.  
   
-3.  Bir .NET Düzenleyicisi gibi dosya yolu Düzenleyicisi veya kendi özel özellik düzenleyici oluşturabilirsiniz.  
+3. Bir .NET Düzenleyicisi gibi dosya yolu Düzenleyicisi veya kendi özel özellik düzenleyici oluşturabilirsiniz.  
   
-     Bir dış tür ve varsayılan Düzenleyicisi olan dize gibi bir tür arasında dönüştürme.  
+    Bir dış tür ve varsayılan Düzenleyicisi olan dize gibi bir tür arasında dönüştürme.  
   
- Bir DSL içinde bir *dış tür* basit türleri (örneğin, Boole veya Int32) veya dize biri değil herhangi bir tür.  
+   Bir DSL içinde bir *dış tür* basit türleri (örneğin, Boole veya Int32) veya dize biri değil herhangi bir tür.  
   
 #### <a name="to-define-a-domain-property-that-has-an-external-type"></a>Bir dış türe sahip bir alan özelliği tanımlamak için  
   
-1.  İçinde **Çözüm Gezgini**, dış tür içeren derleme (DLL) bir başvuru ekleyin **Dsl** proje.  
+1. İçinde **Çözüm Gezgini**, dış tür içeren derleme (DLL) bir başvuru ekleyin **Dsl** proje.  
   
-     Derleme, bir .NET bütünleştirilmiş kodu ya da sizin tarafınızdan sağlanan derleme olabilir.  
+    Derleme, bir .NET bütünleştirilmiş kodu ya da sizin tarafınızdan sağlanan derleme olabilir.  
   
-2.  Türüne eklemek **etki alanı türleri** zaten yapmış sürece listesi.  
+2. Türüne eklemek **etki alanı türleri** zaten yapmış sürece listesi.  
   
-    1.  DslDefinition.dsl, açın ve **DSL Gezgini**kök düğümüne sağ tıklayın ve ardından **yeni dış türü Ekle**.  
+   1.  DslDefinition.dsl, açın ve **DSL Gezgini**kök düğümüne sağ tıklayın ve ardından **yeni dış türü Ekle**.  
   
-         Altında yeni bir giriş belirir **etki alanı türleri** düğümü.  
+        Altında yeni bir giriş belirir **etki alanı türleri** düğümü.  
   
-        > [!WARNING]
-        >  Menü öğesi DSL kök düğümde değil **etki alanı türleri** düğümü.  
+       > [!WARNING]
+       >  Menü öğesi DSL kök düğümde değil **etki alanı türleri** düğümü.  
   
-    2.  Özellikler penceresinde, adı ve yeni türünün ad alanını ayarlayın.  
+   2.  Özellikler penceresinde, adı ve yeni türünün ad alanını ayarlayın.  
   
-3.  Bir alan özelliği için bir etki alanı sınıfı, her zamanki şekilde ekleyin.  
+3. Bir alan özelliği için bir etki alanı sınıfı, her zamanki şekilde ekleyin.  
   
-     Özellikler penceresinde, aşağı açılan listeden dış türünü seçin. **türü** alan.  
+    Özellikler penceresinde, aşağı açılan listeden dış türünü seçin. **türü** alan.  
   
- Bu aşamada, kullanıcılar özelliğinin değerlerini görüntüleyebilir, ancak panoyu düzenleyemez. Görüntülenen değerleri elde edilir `ToString()` işlevi. Özelliğinin değeri, örneğin bir komut veya kuralın ayarlar program kodu yazabilirsiniz.  
+   Bu aşamada, kullanıcılar özelliğinin değerlerini görüntüleyebilir, ancak panoyu düzenleyemez. Görüntülenen değerleri elde edilir `ToString()` işlevi. Özelliğinin değeri, örneğin bir komut veya kuralın ayarlar program kodu yazabilirsiniz.  
   
 ### <a name="setting-a-property-editor"></a>Özellik Düzenleyicisi'ni ayarlama  
  Etki alanı özelliğine aşağıdaki biçimde bir CLR özniteliği ekleyin:  
@@ -178,11 +178,11 @@ ms.locfileid: "49241741"
   
  Türetilen bir sınıf yazarak bir düzenleyici tanımladığınız <xref:System.Drawing.Design.UITypeEditor>. Sınıfınıza geçersiz kılmanız gerekir:  
   
--   <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, kullanıcı ile etkileşim kurmanızı ve özellik değerini güncelleştirin.  
+- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, kullanıcı ile etkileşim kurmanızı ve özellik değerini güncelleştirin.  
   
--   <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, Düzenleyici bir iletişim kutusunu açın veya bir açılan menü sağlamak belirtmek için.  
+- <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, Düzenleyici bir iletişim kutusunu açın veya bir açılan menü sağlamak belirtmek için.  
   
- Grafik gösterimi özellik kılavuzunda görüntülenecek özelliğin değerini de sağlayabilirsiniz. Bunu yapmak için geçersiz kılma `GetPaintValueSupported`, ve `PaintValue`.  Daha fazla bilgi için bkz. <xref:System.Drawing.Design.UITypeEditor>.  
+  Grafik gösterimi özellik kılavuzunda görüntülenecek özelliğin değerini de sağlayabilirsiniz. Bunu yapmak için geçersiz kılma `GetPaintValueSupported`, ve `PaintValue`.  Daha fazla bilgi için bkz. <xref:System.Drawing.Design.UITypeEditor>.  
   
 > [!NOTE]
 >  Ayrı bir kod dosyasında kod ekleme **Dsl** proje.  

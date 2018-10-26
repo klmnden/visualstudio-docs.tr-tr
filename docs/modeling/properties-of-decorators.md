@@ -11,60 +11,60 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0521936dd155c162d045b451f4570ef9a1958c8b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8e439ae8cb73b8fdaf1bce514370a736cbd0b238
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954218"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822351"
 ---
 # <a name="properties-of-decorators"></a>Dekoratörlerin Özellikleri
-Dekoratörler simgeler, metin ya da şekiller veya bağlayıcılar diyagramda görünebilir Genişlet/Daralt ayraç ' dir. Aşağıdaki tablolar oluşturma öğesi üç tür özelliklerini göster. Bazı özelliklerin yalnızca şekli dekoratörler veya yalnızca bağlayıcı dekoratörler görünür.
+Dekoratörler simgeler, metin veya şekil veya diyagram üzerinde bağlayıcı görünebilir Genişlet/Daralt ayraç ' dir. Aşağıdaki tablolar, dekoratör üç tür özelliklerini gösterir. Bazı özellikler, yalnızca şekli dekoratörler veya yalnızca bağlayıcı dekoratörler görünür.
 
- Daha fazla bilgi için bkz: [bir etki alanına özgü dil tanımlamak nasıl](../modeling/how-to-define-a-domain-specific-language.md). Bu özellikleri kullanma hakkında daha fazla bilgi için bkz: [özelleştirme ve bir etki alanına özgü dil genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).
+ Daha fazla bilgi için [etki alanına özgü bir dili tanımlama nasıl](../modeling/how-to-define-a-domain-specific-language.md). Bu özellikler kullanma hakkında daha fazla bilgi için bkz. [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-## <a name="expandcollapse-decorator"></a>Genişlet/Daralt oluşturma öğesi
-
-|Özellik|Açıklama|Varsayılan|
-|--------------|-----------------|-------------|
-|Görünen adı|Oluşturulan Tasarımcısı'nda görüntülenen oluşturma öğesi adı.|Daraltma oluşturma öğesi genişletin|
-|Ad|Oluşturma öğesi adı.|ExpandCollapseDecorator|
-|Notlar|Bu oluşturma öğesi ile ilişkili resmi olmayan notları.|\<yok >|
-|HorizontalOffset|Oluşturma öğesi varsayılan konumunu inç göre yatay uzaklığını. (Şekiller üzerinde yalnızca.)|0|
-|VerticalOffset|Oluşturma öğesi varsayılan konumunu inç göre dikey uzaklık. (Şekiller üzerinde yalnızca.)|0|
-|OffsetFromLine|Oluşturma öğesi satırından inç varsayılan konumuna göre uzaklığı. (Bağlayıcıların yalnızca.)|0|
-|OffsetFromShape|Oluşturma öğesi inç varsayılan konumuna göre şeklin uzaklığı. (Bağlayıcıların yalnızca.)|0|
-|Konum|Oluşturma öğesi varsayılan konumu.|SourceTop|
-
-## <a name="icon-decorator"></a>Simge oluşturma öğesi
+## <a name="expandcollapse-decorator"></a>Dekoratör Genişlet/Daralt
 
 |Özellik|Açıklama|Varsayılan|
-|--------------|-----------------|-------------|
-|DefaultIcon|Görüntülenecek simge veya görüntü dosyasının yolu.|\<yok >|
-|Görünen adı|Oluşturulan Tasarımcısı'nda görüntülenecek oluşturma öğesi adı.|Simge oluşturma öğesi|
-|Ad|Oluşturma öğesi adı.|IconDecorator|
-|Notlar|Oluşturma öğesi ile ilişkili resmi olmayan notları.|\<yok >|
-|HorizontalOffset|Oluşturma öğesi varsayılan konumunu inç göre yatay uzaklığını. (Şekiller üzerinde yalnızca.)|0|
-|VerticalOffset|Oluşturma öğesi varsayılan konumunu inç göre dikey uzaklık. (Şekiller üzerinde yalnızca.)|0|
-|OffsetFromLine|Oluşturma öğesi satırından inç varsayılan konumuna göre uzaklığı. (Bağlayıcıların yalnızca.)|0|
-|OffsetFromShape|Oluşturma öğesi inç varsayılan konumuna göre şeklin uzaklığı. (Bağlayıcıların yalnızca.)|0|
-|Konum|Oluşturma öğesi varsayılan konumu.|SourceTop|
+|-|-|-|
+|displayName|Oluşturulan tasarımcıda görüntülenecek dekoratörün adı.|Daralt Dekoratör genişletin|
+|Ad|Dekoratörün adı.|ExpandCollapseDecorator|
+|Notlar|Bu dekoratör ile ilişkili resmi olmayan notlar.|\<yok >|
+|HorizontalOffset|Dekoratörün varsayılan konumuna inç cinsinden yatay uzaklık. (Şekiller üzerinde yalnızca.)|0|
+|VerticalOffset|İnç, dekoratörün varsayılan konumuna göre dikey uzaklık. (Şekiller üzerinde yalnızca.)|0|
+|OffsetFromLine|Dekoratörün satırından inç, varsayılan konumuna göre uzaklığı. (Bağlayıcı üzerinde yalnızca.)|0|
+|OffsetFromShape|Dekoratörün şekilden inç cinsinden, varsayılan konumuna göre uzaklığı. (Bağlayıcı üzerinde yalnızca.)|0|
+|Konum|Dekoratörün varsayılan konumuna.|SourceTop|
 
-## <a name="textdecorator"></a>Çizgi TextDecorator
+## <a name="icon-decorator"></a>Dekoratör simgesi
 
 |Özellik|Açıklama|Varsayılan|
-|--------------|-----------------|-------------|
-|DefaultText|Görüntülenecek varsayılan metni.|Etiketle|
-|Görünen adı|Oluşturulan Tasarımcısı'nda görüntülenecek oluşturma öğesi adı.|Etiketle|
-|FontSize|Oluşturma öğesi içinde görüntülenen metin yazı tipi boyutu.|8|
-|FontStyle|Oluşturma öğesi içinde görüntülenen metin yazı tipi stili.|Normal|
-|Ad|Oluşturma öğesi adı.|Etiketle|
-|Notlar|Oluşturma öğesi ile ilişkili resmi olmayan notları.|\<yok >|
-|HorizontalOffset|Oluşturma öğesi varsayılan konumunu inç göre yatay uzaklığını. (Şekiller üzerinde yalnızca.)|0|
-|VerticalOffset|Oluşturma öğesi varsayılan konumunu inç göre dikey uzaklık. (Şekiller üzerinde yalnızca.)|0|
-|OffsetFromLine|Oluşturma öğesi satırından inç varsayılan konumuna göre uzaklığı. (Bağlayıcıların yalnızca.)|0|
-|OffsetFromShape|Oluşturma öğesi inç varsayılan konumuna göre şeklin uzaklığı. (Bağlayıcıların yalnızca.)|0|
-|Konum|Oluşturma öğesi varsayılan konumu.|TargetBottom|
+|-|-|-|
+|DefaultIcon|Görüntülenecek simge veya resim dosyasının yolu.|\<yok >|
+|displayName|Oluşturulan tasarımcıda görüntülenecek dekoratörün adı.|Dekoratör simgesi|
+|Ad|Dekoratörün adı.|Şeklindeki Icondecorator|
+|Notlar|Dekoratör ile ilişkili resmi olmayan notlar.|\<yok >|
+|HorizontalOffset|Dekoratörün varsayılan konumuna inç cinsinden yatay uzaklık. (Şekiller üzerinde yalnızca.)|0|
+|VerticalOffset|İnç, dekoratörün varsayılan konumuna göre dikey uzaklık. (Şekiller üzerinde yalnızca.)|0|
+|OffsetFromLine|Dekoratörün satırından inç, varsayılan konumuna göre uzaklığı. (Bağlayıcı üzerinde yalnızca.)|0|
+|OffsetFromShape|Dekoratörün şekilden inç cinsinden, varsayılan konumuna göre uzaklığı. (Bağlayıcı üzerinde yalnızca.)|0|
+|Konum|Dekoratörün varsayılan konumuna.|SourceTop|
+
+## <a name="textdecorator"></a>TextDecorator
+
+|Özellik|Açıklama|Varsayılan|
+|-|-|-|
+|DefaultText|Görüntülenecek varsayılan metin.|Etiketle|
+|displayName|Oluşturulan tasarımcıda görüntülenecek dekoratörün adı.|Etiketle|
+|FontSize|Dekoratörde görüntülenen metnin yazı tipi boyutu.|8|
+|fontStyle|Dekoratörde görüntülenen metnin yazı tipi stili.|Normal|
+|Ad|Dekoratörün adı.|Etiketle|
+|Notlar|Dekoratör ile ilişkili resmi olmayan notlar.|\<yok >|
+|HorizontalOffset|Dekoratörün varsayılan konumuna inç cinsinden yatay uzaklık. (Şekiller üzerinde yalnızca.)|0|
+|VerticalOffset|İnç, dekoratörün varsayılan konumuna göre dikey uzaklık. (Şekiller üzerinde yalnızca.)|0|
+|OffsetFromLine|Dekoratörün satırından inç, varsayılan konumuna göre uzaklığı. (Bağlayıcı üzerinde yalnızca.)|0|
+|OffsetFromShape|Dekoratörün şekilden inç cinsinden, varsayılan konumuna göre uzaklığı. (Bağlayıcı üzerinde yalnızca.)|0|
+|Konum|Dekoratörün varsayılan konumuna.|TargetBottom|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

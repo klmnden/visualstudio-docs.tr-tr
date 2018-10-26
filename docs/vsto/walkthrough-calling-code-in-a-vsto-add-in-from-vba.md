@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3bc8154be515bcf0509b2458534fed7c1c520e4e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 9e46cf9032cae7d6400822be7d72394a7845314f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513650"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843827"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>İzlenecek yol: çağrı VBA'dan kod bir VSTO eklenti
   Bu yönerge, VSTO eklentisi Visual Basic for Applications (VBA) ve COM, VSTO eklentileri için dahil olmak üzere, başka bir Microsoft Office çözümü için bir nesneyi göstermek nasıl gösterir.  
@@ -37,13 +37,13 @@ ms.locfileid: "39513650"
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
--   Diğer Office Çözümlerinden kullanıma sunulabilecek bir sınıf tanımlama.  
+- Diğer Office Çözümlerinden kullanıma sunulabilecek bir sınıf tanımlama.  
   
--   Diğer Office çözümlerine sınıfı gösterme.  
+- Diğer Office çözümlerine sınıfı gösterme.  
   
--   VBA koddan sınıfının yöntemini çağırma.  
+- VBA koddan sınıfının yöntemini çağırma.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  

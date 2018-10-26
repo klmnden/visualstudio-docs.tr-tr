@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fbcb7254ad1cd417b8cdb90c3ea257868ab5a84
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 38bec6de97a0b9d38891046a1a6b57f4d31541bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203937"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818165"
 ---
 # <a name="how-to-create-xml-snippets"></a>Nasıl yapılır: XML kod parçacıkları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,13 +81,13 @@ XML Düzenleyicisi'ni yeni kod parçacıkları oluşturmak için kullanılabilir
   
  `Code` Öğesi üç değişkenler içerir.  
   
--   $name$ kullanıcı tanımlı değişkendir. Oluşturur bir `name` "adı" için varsayılan olarak düzenlenebilir bir değere sahip öğe. Kullanıcı tanımlı değişkenler, kullanılarak tanımlanır `Literal` öğesi.  
+- $name$ kullanıcı tanımlı değişkendir. Oluşturur bir `name` "adı" için varsayılan olarak düzenlenebilir bir değere sahip öğe. Kullanıcı tanımlı değişkenler, kullanılarak tanımlanır `Literal` öğesi.  
   
--   Seçili $$ önceden tanımlanmış bir değişkendir. Bu kod parçacığı çağırmadan önce XML Düzenleyicisi'nde seçili metni temsil eder. Bu değişken yerleşimini seçili metin, seçimi çevreleyen kod parçacığında nerede görüneceğini belirler.  
+- Seçili $$ önceden tanımlanmış bir değişkendir. Bu kod parçacığı çağırmadan önce XML Düzenleyicisi'nde seçili metni temsil eder. Bu değişken yerleşimini seçili metin, seçimi çevreleyen kod parçacığında nerede görüneceğini belirler.  
   
--   $end$ önceden tanımlanmış bir değişkendir. Bu değişken, kullanıcı kod parçacığı alanları düzenleme bitirmek için ENTER tuşuna bastığında şapka (^) burada taşınır belirler.  
+- $end$ önceden tanımlanmış bir değişkendir. Bu değişken, kullanıcı kod parçacığı alanları düzenleme bitirmek için ENTER tuşuna bastığında şapka (^) burada taşınır belirler.  
   
- Yukarıdaki `Code` öğe aşağıdaki XML metni ekler:  
+  Yukarıdaki `Code` öğe aşağıdaki XML metni ekler:  
   
 ```  
 <test>  

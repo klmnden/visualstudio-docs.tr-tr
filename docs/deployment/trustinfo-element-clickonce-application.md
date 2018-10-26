@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75695598c31b1dcc3a8ae4845a41249ead71236b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: d6d6f7955cb010d981b62e2b9fcdc70a092d76ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151072"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941242"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; öğesi (ClickOnce uygulaması)
 Uygulamanın istemci bilgisayarda çalışması gereken en düşük güvenlik izinleri açıklar.  
@@ -142,21 +142,21 @@ Uygulamanın istemci bilgisayarda çalışması gereken en düşük güvenlik iz
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
  İsteğe bağlı. Yürütülecek uygulamanın istekleri güvenlik düzeyini tanımlar. Bu öğenin alt öğesi yok ve aşağıdaki özniteliklere sahiptir.  
   
--   `Level`  
+- `Level`  
   
-     Gerekli. Uygulama güvenlik düzeyini isteyen gösterir. Olası değerler şunlardır:  
+   Gerekli. Uygulama güvenlik düzeyini isteyen gösterir. Olası değerler şunlardır:  
   
-     `asInvoker`, ek izinler istenmez. Bu düzey, hiçbir ek güven istemi gerektirir.  
+   `asInvoker`, ek izinler istenmez. Bu düzey, hiçbir ek güven istemi gerektirir.  
   
-     `highestAvailable`, üst işleme kullanılabilir olan en yüksek izinler isteyen.  
+   `highestAvailable`, üst işleme kullanılabilir olan en yüksek izinler isteyen.  
   
-     `requireAdministrator`, tam yönetici izinleri istiyor.  
+   `requireAdministrator`, tam yönetici izinleri istiyor.  
   
-     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamaları yalnızca bir değeri ile yükleme `asInvoker`. Başka bir değer ile yükleme başarısız olur.  
+   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamaları yalnızca bir değeri ile yükleme `asInvoker`. Başka bir değer ile yükleme başarısız olur.  
   
--   `uiAccess`  
+- `uiAccess`  
   
-     İsteğe bağlı. Uygulama erişim korumalı kullanıcı arabirimi öğeleri için gerekli olup olmadığını gösterir. Değerleri `true` veya `false`, ve varsayılan değer false'dur. Yalnızca imzalı uygulamaları true değeri olması gerekir.  
+   İsteğe bağlı. Uygulama erişim korumalı kullanıcı arabirimi öğeleri için gerekli olup olmadığını gösterir. Değerleri `true` veya `false`, ve varsayılan değer false'dur. Yalnızca imzalı uygulamaları true değeri olması gerekir.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Varsa bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama, istemci bilgisayarda varsayılan olarak, ortak dil çalışma zamanının güven yöneticisi, kullanıcı kendisi uygulamanın yükseltilmiş düzey güven vermek istemediğini sorar vereceğinden daha fazla izin sorar. Kullanıcı hayır derse, uygulama çalışmaz; Aksi takdirde istenen izinlerle çalışacaktır.  

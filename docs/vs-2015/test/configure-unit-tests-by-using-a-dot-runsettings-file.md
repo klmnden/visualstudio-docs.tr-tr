@@ -13,12 +13,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a78c73afb11f5c04ef3cc61a5efecb9d8069bac4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 806c19b7132a4541ff97c253700a5e5e980ef556
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255625"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817983"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>.runsettings dosyasını kullanarak birim testlerini yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ Visual Studio'da birim testlerini *.runsettings dosyası kullanılarak yapıland
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>Bir .runsettings dosyası ile testleri özelleştirme  
   
-1.  Visual Studio çözümünüze bir XML dosyası ekleyin ve test.runsettings için yeniden adlandırın. (Dosya adı önemli değildir, ancak .runsettings uzantısı olması gerekir.)  
+1. Visual Studio çözümünüze bir XML dosyası ekleyin ve test.runsettings için yeniden adlandırın. (Dosya adı önemli değildir, ancak .runsettings uzantısı olması gerekir.)  
   
-2.  Dosya içeriğini ile değiştirin [örnek](#example).  
+2. Dosya içeriğini ile değiştirin [örnek](#example).  
   
-     Kendi gereksinimlerine göre düzenleyin.  
+    Kendi gereksinimlerine göre düzenleyin.  
   
-3.  Üzerinde **Test** menüsünde seçin **Test ayarları**, **Test ayarları dosyasını Seç**.  
+3. Üzerinde **Test** menüsünde seçin **Test ayarları**, **Test ayarları dosyasını Seç**.  
   
- Birden fazla oluşturabilirsiniz \*.runsettings dosyası çözümünüze etkinleştirin veya onları farklı zamanlarda devre dışı bırakmak için **Test ayarları** menüsü.  
+   Birden fazla oluşturabilirsiniz \*.runsettings dosyası çözümünüze etkinleştirin veya onları farklı zamanlarda devre dışı bırakmak için **Test ayarları** menüsü.  
   
- ![Çalıştırma ayarları dosyasını etkinleştirmeden](../test/media/runsettings-1.png "RunSettings-1")  
+   ![Çalıştırma ayarları dosyasını etkinleştirmeden](../test/media/runsettings-1.png "RunSettings-1")  
   
 ##  <a name="example"></a> Bu örnek .runsettings dosyasını kopyalayın  
  Tipik *.runsettings dosyası aşağıda verilmiştir. Her değerin bir varsayılanı olduğundan, dosyanın her bir öğesi isteğe bağlıdır.  

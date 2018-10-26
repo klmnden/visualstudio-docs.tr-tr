@@ -9,41 +9,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2187e0d930195a7e40464d431d51d788dd26a119
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2c4ca03c932b86ad6f9907020b037abb1308a6f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281175"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918538"
 ---
 # <a name="address-dpi-issues"></a>DPI sorunları
 Giderek artan sayıda cihazları "yüksek çözünürlüklü" ekranlarla yayımlayan. Bu ekranları genellikle 200'den fazla inç başına piksel (ppi) sahiptir. Uygulamanın bu bilgisayarlarda çalışmak bir cihaz için normal görüntülemeye uzaklıkta içeriği görüntüleme gereksinimlerini karşılayacak şekilde ölçeklenmesine olanak içerik gerektirir. 2014'ten itibaren yüksek yoğunluklu görüntüler için birincil hedef mobil cihazlar (tabletler, clamshell dizüstü bilgisayarları ve telefonları) bilgi işlem.  
   
  Windows 8.1 ve üzeri ortamlar nerede makine hem de yüksek yoğunluklu eklenir ve aynı zamanda standart yoğunluklu görüntüler ve görüntüler ile çalışmak bu makineleri sağlamak için çeşitli özellikler içerir.  
   
--   Windows izin verebilir, Ölçek içerik "olun metni ve diğer öğeleri daha büyük veya küçük" kullanarak cihazı ayarlama (Windows XP itibaren kullanılabilir).  
+- Windows izin verebilir, Ölçek içerik "olun metni ve diğer öğeleri daha büyük veya küçük" kullanarak cihazı ayarlama (Windows XP itibaren kullanılabilir).  
   
--   Windows 8.1 ve üzeri farklı piksel densities, ekranlar arasında taşıdığınızda tutarlı olmasını uygulamalarının çoğu için içerik otomatik olarak ölçeklenir. Yüksek yoğunluklu (% 200 ölçeklendirme) birincil görüntülenir ve ikincil görüntü standart yoğunluk (% 100) olduğunda, Windows otomatik olarak uygulama penceresinin içeriği ikincil ekranda ölçeğini (1 piksel artımlı tarafından işlenen her 4 piksel görüntülenen Uygulama).  
+- Windows 8.1 ve üzeri farklı piksel densities, ekranlar arasında taşıdığınızda tutarlı olmasını uygulamalarının çoğu için içerik otomatik olarak ölçeklenir. Yüksek yoğunluklu (% 200 ölçeklendirme) birincil görüntülenir ve ikincil görüntü standart yoğunluk (% 100) olduğunda, Windows otomatik olarak uygulama penceresinin içeriği ikincil ekranda ölçeğini (1 piksel artımlı tarafından işlenen her 4 piksel görüntülenen Uygulama).  
   
--   Windows için piksel yoğunluğu ölçeklendirme ve uzaklık (Windows 7 ve üzeri, OEM yapılandırılabilir) görüntülemek için görüntüleme hakkı Varsayılan olarak atar.  
+- Windows için piksel yoğunluğu ölçeklendirme ve uzaklık (Windows 7 ve üzeri, OEM yapılandırılabilir) görüntülemek için görüntüleme hakkı Varsayılan olarak atar.  
   
--   Otomatik olarak Windows (itibariyle, Windows 8.1 S14) 280 ppi aşan yeni cihazlarda % 250 içerik oluşturan ölçeklendirebilirsiniz.  
+- Otomatik olarak Windows (itibariyle, Windows 8.1 S14) 280 ppi aşan yeni cihazlarda % 250 içerik oluşturan ölçeklendirebilirsiniz.  
   
- Windows, artan piksel sayıları yararlanmak için UI'yi ölçeklendirme ile ilgilenen bir yolu vardır. Bir uygulama bu sisteme kendisini "sistemi DPI." bildirerek kabul eder Bunu yapmazsanız uygulama, sistem tarafından ölçeklenir. Bu, uygulamanın tamamı piksel esnetilmiş eşit olduğu bir "benzer öğe" kullanıcı deneyimine neden olabilir. Örneğin:  
+  Windows, artan piksel sayıları yararlanmak için UI'yi ölçeklendirme ile ilgilenen bir yolu vardır. Bir uygulama bu sisteme kendisini "sistemi DPI." bildirerek kabul eder Bunu yapmazsanız uygulama, sistem tarafından ölçeklenir. Bu, uygulamanın tamamı piksel esnetilmiş eşit olduğu bir "benzer öğe" kullanıcı deneyimine neden olabilir. Örneğin:  
   
- ![DPI sorunlarını belirsiz](../extensibility/media/dpi-issues-fuzzy.png "DPI sorunlarını belirsiz")  
+  ![DPI sorunlarını belirsiz](../extensibility/media/dpi-issues-fuzzy.png "DPI sorunlarını belirsiz")  
   
- Visual Studio DPI ölçeklendirme uyumlu olarak kabul eder ve bu nedenle değil "sanallaştırılır."  
+  Visual Studio DPI ölçeklendirme uyumlu olarak kabul eder ve bu nedenle değil "sanallaştırılır."  
   
- Windows (ve Visual Studio) sistemi tarafından ayarlanan Etkenler ölçeklendirme ile ilgili farklı yöntemleri olan birkaç kullanıcı Arabirimi teknolojilerinden yararlanarak. Örneğin:  
+  Windows (ve Visual Studio) sistemi tarafından ayarlanan Etkenler ölçeklendirme ile ilgili farklı yöntemleri olan birkaç kullanıcı Arabirimi teknolojilerinden yararlanarak. Örneğin:  
   
--   WPF denetimlerini bir CİHAZDAN bağımsız şekilde (birim, piksel değil) ölçer. WPF kullanıcı Arabirimi için geçerli DPI otomatik olarak ölçeklendirir.  
+- WPF denetimlerini bir CİHAZDAN bağımsız şekilde (birim, piksel değil) ölçer. WPF kullanıcı Arabirimi için geçerli DPI otomatik olarak ölçeklendirir.  
   
--   UI çerçevesi bağımsız olarak tüm metin boyutları nokta olarak ifade edilir ve bu nedenle sisteminde DPI bağımsız olarak kabul edilir. Win32, WinForms ve WPF metin zaten ölçeği doğru görüntüleme cihazında çizilen olduğunda.  
+- UI çerçevesi bağımsız olarak tüm metin boyutları nokta olarak ifade edilir ve bu nedenle sisteminde DPI bağımsız olarak kabul edilir. Win32, WinForms ve WPF metin zaten ölçeği doğru görüntüleme cihazında çizilen olduğunda.  
   
--   Win32/WinForms iletişim kutuları ve windows metni (örneğin, aracılığıyla kılavuz, flow ve Tablo düzeni Panel) ile yeniden boyutlandırır Düzen etkinleştirmek için bir yola sahip. Bu yazı tipi boyutunu artırdık yükleyen ölçeklenmez sabit kodlanmış piksel konumları önleme etkinleştirin.  
+- Win32/WinForms iletişim kutuları ve windows metni (örneğin, aracılığıyla kılavuz, flow ve Tablo düzeni Panel) ile yeniden boyutlandırır Düzen etkinleştirmek için bir yola sahip. Bu yazı tipi boyutunu artırdık yükleyen ölçeklenmez sabit kodlanmış piksel konumları önleme etkinleştirin.  
   
--   Sistem tarafından sağlanan simgeler veya kaynakları (örneğin, SM_CXICON ve SM_CXSMICON) sistemi ölçümlere göre zaten yukarı ölçeklendirilemez.  
+- Sistem tarafından sağlanan simgeler veya kaynakları (örneğin, SM_CXICON ve SM_CXSMICON) sistemi ölçümlere göre zaten yukarı ölçeklendirilemez.  
   
 ## <a name="older-win32-gdi-gdi-and-winforms-based-ui"></a>Eski bir Win32 (GDI, GDI + ') ve WinForms tabanlı kullanıcı Arabirimi  
  WPF zaten DPI kullanan yüksek olsa da, Win32/GDI tabanlı kodumuz çoğunu başlangıçta aklınızda DPI tanıma ile yazılmadı. Windows DPI ölçeklendirme API'leri sağlamıştır. Win32 sorunlar için düzeltmeler bu ürün genelinde tutarlı bir şekilde kullanmanız gerekir. Visual Studio bir yardımcı sağlanan işlevselliği çoğaltma ve ürün arasında tutarlılık sağlamaya önlemek için sınıf kitaplığı.  
@@ -85,21 +85,21 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
 ## <a name="layout-issues"></a>Düzen sorunları  
  Yaygın bir düzen sorunları, öncelikle noktaları ölçeği kullanıcı arabiriminde ve birbirlerine göreli tutarak yerine Mutlak Konumlar (özellikle de piksel birimleri) kullanılarak önlenebilir. Örneğin:  
   
--   Düzen/metin konumlarını hesabına ölçeği görüntüleri için ayarlamanız gerekir.  
+- Düzen/metin konumlarını hesabına ölçeği görüntüleri için ayarlamanız gerekir.  
   
--   Izgara sütunları genişlikleri ölçeği metin için ayarlanmış olması gerekir.  
+- Izgara sütunları genişlikleri ölçeği metin için ayarlanmış olması gerekir.  
   
--   Sabit kodlanmış boyutları veya öğeler arasındaki boşluk ölçeklendirilmesi gerekiyor da gerekir. Yalnızca metin boyutlarına göre boyutları genellikle iyi olduğu yazı tipleri otomatik olarak ölçeklenir.  
+- Sabit kodlanmış boyutları veya öğeler arasındaki boşluk ölçeklendirilmesi gerekiyor da gerekir. Yalnızca metin boyutlarına göre boyutları genellikle iyi olduğu yazı tipleri otomatik olarak ölçeklenir.  
   
- Yardımcı işlevleri kullanılabilir <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> X ve Y Ekseninde ölçeklendirmeye izin vermek için sınıfı:  
+  Yardımcı işlevleri kullanılabilir <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> X ve Y Ekseninde ölçeklendirmeye izin vermek için sınıfı:  
   
--   LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (işlevler izin ölçeklendirme X / Y ekseni)  
+- LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (işlevler izin ölçeklendirme X / Y ekseni)  
   
--   int alanı DpiHelper.LogicalToDeviceUnitsX (10); =  
+- int alanı DpiHelper.LogicalToDeviceUnitsX (10); =  
   
--   int yükseklik VsUI::DpiHelper::LogicalToDeviceUnitsY(5); =  
+- int yükseklik VsUI::DpiHelper::LogicalToDeviceUnitsY(5); =  
   
- Rect, nokta ve boyutu gibi nesneleri ölçeklendirmeye izin vermek için LogicalToDeviceUnits aşırı yüklemeleri vardır.  
+  Rect, nokta ve boyutu gibi nesneleri ölçeklendirmeye izin vermek için LogicalToDeviceUnits aşırı yüklemeleri vardır.  
   
 ## <a name="using-the-dpihelper-libraryclass-to-scale-images-and-layout"></a>Ölçek görüntülerinin ve Düzen DPIHelper kitaplığı/sınıfını kullanma  
  Visual Studio DPI yardımcı kitaplık, yerel ve yönetilen biçimde sağlanır ve Visual Studio Kabuğu dışında diğer uygulamalar tarafından kullanılabilir.  
@@ -144,15 +144,15 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
  Öneriler:  
   
--   Logo görüntüsü ve başlıklar resim, varsayılan için <xref:System.Windows.Media.BitmapScalingMode> modu yeniden boyutlandırma kullanılabilir.  
+- Logo görüntüsü ve başlıklar resim, varsayılan için <xref:System.Windows.Media.BitmapScalingMode> modu yeniden boyutlandırma kullanılabilir.  
   
--   Menü öğeleri ve yansır görüntüleri <xref:System.Windows.Media.BitmapScalingMode> (en % 200 ve %300) belirsizlik ortadan kaldırmak diğer bozulma yapıtları neden olmaz olduğunda kullanılmalıdır.  
+- Menü öğeleri ve yansır görüntüleri <xref:System.Windows.Media.BitmapScalingMode> (en % 200 ve %300) belirsizlik ortadan kaldırmak diğer bozulma yapıtları neden olmaz olduğunda kullanılmalıdır.  
   
--   % 100 (örneğin, %250 veya % 350) birden çok büyük yakınlaştırma düzeyleri için çift kübik yansır görüntülerle ölçeklendirme belirsiz, soluk kullanıcı Arabiriminde sonuçlanır. İlk NearestNeighbor görüntüyle % 100 (örneğin, %200 veya % 300) en büyük birden fazla ölçekleme ve buradan çift kübik ile ölçeklendirme göre daha iyi bir sonuç elde edilir. Özel durum bakın: WPF görüntüleri için büyük DPI prescaling düzeyleri daha fazla bilgi için.  
+- % 100 (örneğin, %250 veya % 350) birden çok büyük yakınlaştırma düzeyleri için çift kübik yansır görüntülerle ölçeklendirme belirsiz, soluk kullanıcı Arabiriminde sonuçlanır. İlk NearestNeighbor görüntüyle % 100 (örneğin, %200 veya % 300) en büyük birden fazla ölçekleme ve buradan çift kübik ile ölçeklendirme göre daha iyi bir sonuç elde edilir. Özel durum bakın: WPF görüntüleri için büyük DPI prescaling düzeyleri daha fazla bilgi için.  
   
- Üye DpiHelper SAX Microsoft.VisualStudio.PlatformUI ad alanındaki <xref:System.Windows.Media.BitmapScalingMode> bağlama için kullanılabilir. Bu modu üründe DPI Ölçeklendirme çarpanı bağlı olarak aynı şekilde, ölçeklendirme bit eşlem denetlemek Visual Studio Kabuğu izin verir.  
+  Üye DpiHelper SAX Microsoft.VisualStudio.PlatformUI ad alanındaki <xref:System.Windows.Media.BitmapScalingMode> bağlama için kullanılabilir. Bu modu üründe DPI Ölçeklendirme çarpanı bağlı olarak aynı şekilde, ölçeklendirme bit eşlem denetlemek Visual Studio Kabuğu izin verir.  
   
- XAML içinde kullanmak için aşağıdakileri ekleyin:  
+  XAML içinde kullanmak için aşağıdakileri ekleyin:  
   
 ```xaml  
 xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"  

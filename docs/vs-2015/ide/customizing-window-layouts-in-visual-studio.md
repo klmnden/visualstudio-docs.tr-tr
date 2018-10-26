@@ -29,12 +29,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d1fb044d2529e2349e7c98e810adbfe62c7c654
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f1702a2b25bd0489814473f3ae2fc0073dab8497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218822"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911648"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Visual Studio’da pencere düzenlerini özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,21 +65,21 @@ Visual Studio'da, konum, boyut ve çeşitli geliştirme iş akışları için en
   
  Aşağıdaki yollarla windows düzenleyebilirsiniz:  
   
--   Belge pencerelerini sekme soluna iyice sabitleyin.  
+- Belge pencerelerini sekme soluna iyice sabitleyin.  
   
--   Düzenleme çerçevesindeki için sekmesinde dock windows.  
+- Düzenleme çerçevesindeki için sekmesinde dock windows.  
   
--   Araç Pencereleri IDE içinde bir çerçevenin kenarına yerleştir.  
+- Araç Pencereleri IDE içinde bir çerçevenin kenarına yerleştir.  
   
--   Belge veya aracı windows üzerinde veya IDE dışında yüzdürün.  
+- Belge veya aracı windows üzerinde veya IDE dışında yüzdürün.  
   
--   Araç pencerelerini IDE kenarında gizleyin.  
+- Araç pencerelerini IDE kenarında gizleyin.  
   
--   Windows, farklı monitörlerde görüntüleyin.  
+- Windows, farklı monitörlerde görüntüleyin.  
   
--   Pencere yerleşimini varsayılan düzene veya kaydedilen özel bir düzen sıfırlayın.  
+- Pencere yerleşimini varsayılan düzene veya kaydedilen özel bir düzen sıfırlayın.  
   
- Araç ve belge pencereleri düzenlenmiş, komutlar kullanılarak sürükleyerek **penceresi** menüsünde ve düzenlenmesini pencerenin başlık çubuğuna sağ tıklanarak.  
+  Araç ve belge pencereleri düzenlenmiş, komutlar kullanılarak sürükleyerek **penceresi** menüsünde ve düzenlenmesini pencerenin başlık çubuğuna sağ tıklanarak.  
   
 > [!NOTE]
 >  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

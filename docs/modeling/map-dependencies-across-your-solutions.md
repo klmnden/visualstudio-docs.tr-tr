@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5625d79221416a8799d120530d3c463041412417
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 51b03ce504b2fe8f588cf3e360882f97d61664f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341231"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896949"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Kod haritaları ile bağımlılıkları eşleştirme
 
@@ -138,15 +138,15 @@ Benzer şekilde, yeni bir kod haritası, çözümünüze seçerek eklemeden olu�
 
 10. Başka bir karmaşık çözümü Haritası içinde odaklanmak için mevcut bir haritayı seçili öğeleri içeren yeni bir eşleme oluşturmak için yoludur. Basılı **Ctrl** odaklanmak için istediğiniz öğeleri seçerken, kısayol menüsünü açın ve seçin **seçimden yeni graf**.
 
-   ![Seçili öğeleri yeni bir kod haritasında Göster](../modeling/media/codemapsshowonnewmap.png)
+    ![Seçili öğeleri yeni bir kod haritasında Göster](../modeling/media/codemapsshowonnewmap.png)
 
 11. İçeren bağlam yeni haritaya devredilir. Çözüm klasörleri ve kullanarak görmesini istemediğiniz tüm kapsayıcıları Gizle **filtreleri** bölmesi.
 
-   ![Filtre görünümü basitleştirmek için kapsayıcılar](../modeling/media/codemapsexpandnewgroups.png)
+    ![Filtre görünümü basitleştirmek için kapsayıcılar](../modeling/media/codemapsexpandnewgroups.png)
 
 12. Grupları Genişlet ve ilişkileri görmek için haritada öğeleri seçin.
 
-   ![İlişkileri görüntülemek için öğeleri seçin](../modeling/media/codemapsviewnewrelationships.png)
+    ![İlişkileri görüntülemek için öğeleri seçin](../modeling/media/codemapsviewnewrelationships.png)
 
 Ayrıca bkz:
 
@@ -242,7 +242,7 @@ Ayrıca bkz:
 
 - [Video: Visual Studio 2015 kod haritaları ile koddan tasarımı anlama](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
 - [Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma](../modeling/use-code-maps-to-debug-your-applications.md)
-- [Hata ayıklarken çağrı yığınında yöntemler eşleştirme](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
+- [Hata ayıklarken çağrı yığınında eşleştirme yöntemleri](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Kod haritası çözümleyicilerini kullanarak olası sorunları bulma](../modeling/find-potential-problems-using-code-map-analyzers.md)
 - [Kod haritalarına göz atma ve bunları yeniden düzenleme](../modeling/browse-and-rearrange-code-maps.md)
 - [DGML dosyalarını düzenleyerek kod haritalarını özelleştirme](../modeling/customize-code-maps-by-editing-the-dgml-files.md)

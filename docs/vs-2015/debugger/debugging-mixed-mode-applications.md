@@ -30,12 +30,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 00b448f84e0103d5cf98ae27c519e247ad3d0c25
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3bd033a9341975b6b785076188a53daf3e91a5a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202182"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817352"
 ---
 # <a name="debugging-mixed-mode-applications"></a>Karışık Mod Uygulamalarında Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,13 +54,13 @@ Bir karma mod uygulaması yerel kod (C++)'yı yönetilen kodla (örneğin, Visua
   
 #### <a name="to-turn-off-property-evaluation"></a>Özellik değerlendirmeyi devre dışı bırakmak için  
   
-1.  Üzerinde **Araçları** menüsünde seçin **seçenekleri**.  
+1. Üzerinde **Araçları** menüsünde seçin **seçenekleri**.  
   
-2.  İçinde **seçenekleri** açık iletişim kutusunu **hata ayıklama** klasörü ve select **genel** kategorisi.  
+2. İçinde **seçenekleri** açık iletişim kutusunu **hata ayıklama** klasörü ve select **genel** kategorisi.  
   
-3.  NET **özellik değerlendirmesini ve diğer örtük işlev çağrılarını etkinleştir** onay kutusu.  
+3. NET **özellik değerlendirmesini ve diğer örtük işlev çağrılarını etkinleştir** onay kutusu.  
   
- Yerel çağrı yığınları ve yönetilen çağrı yığınları farklı olduğundan, hata ayıklayıcı karma kod için tam çağrı yığınını her zaman sağlayamaz. Yerel kod yönetilen kodu çağırdığında, bazı tutarsızlıklar görebilirsiniz. Daha fazla bilgi için [karışık kod ve eksik bilgiler çağrı yığını penceresinde](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md).  
+   Yerel çağrı yığınları ve yönetilen çağrı yığınları farklı olduğundan, hata ayıklayıcı karma kod için tam çağrı yığınını her zaman sağlayamaz. Yerel kod yönetilen kodu çağırdığında, bazı tutarsızlıklar görebilirsiniz. Daha fazla bilgi için [karışık kod ve eksik bilgiler çağrı yığını penceresinde](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yönetilen Kodda Hata Ayıklama](../debugger/debugging-managed-code.md)

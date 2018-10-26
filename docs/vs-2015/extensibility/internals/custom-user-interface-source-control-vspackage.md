@@ -16,12 +16,12 @@ ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 551154d1990eee1d7164f3dcbf5ba9cbf4984c11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 06d23b6d936b981cf44dbff74c3a39cdf74e53ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303959"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852264"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Özel Kullanıcı Arabirimi (Kaynak Denetimi VSPackage’ı)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ VSPackage Visual Studio komut tablosu (.vsct) dosyası, menü öğelerini ve var
   
  Aşağıdaki listede, bir kaynak denetimi VSPackage'ı etkin durumunu tarafından etkilenen arabirimler gösterilir:  
   
--   Proje belgelerini olayları izleyin.  
+- Proje belgelerini olayları izleyin.  
   
--   Çözüm olayları.  
+- Çözüm olayları.  
   
--   Çözüm Kalıcılık arabirimleri. Paketleri .sln ve .suo dosyalara yazamazlar, etkin olmadığında.  
+- Çözüm Kalıcılık arabirimleri. Paketleri .sln ve .suo dosyalara yazamazlar, etkin olmadığında.  
   
--   Özellik Genişleticileri.  
+- Özellik Genişleticileri.  
   
- Gerekli <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, ve ayrıca kaynak denetimiyle ilişkili herhangi bir isteğe bağlı arabirimi değil çağrılır kaynak denetimi VSPackage'ı devre dışı olduğunda.  
+  Gerekli <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, ve ayrıca kaynak denetimiyle ilişkili herhangi bir isteğe bağlı arabirimi değil çağrılır kaynak denetimi VSPackage'ı devre dışı olduğunda.  
   
- Zaman [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE başlatıldığında [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] komut UI bağlamı için geçerli varsayılan kaynak denetimi VSPackage'ı kimliği Kimliğini ayarlar Bu, statik UI etkin kaynak denetimi VSPackage'ı yüklemeden IDE'de görünmesini VSPackage'ı neden olur. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackage'ı kaydetmek için duraklatır [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] aracılığıyla <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> önce VSPackage yapılan her çağrı yapar.  
+  Zaman [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE başlatıldığında [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] komut UI bağlamı için geçerli varsayılan kaynak denetimi VSPackage'ı kimliği Kimliğini ayarlar Bu, statik UI etkin kaynak denetimi VSPackage'ı yüklemeden IDE'de görünmesini VSPackage'ı neden olur. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackage'ı kaydetmek için duraklatır [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] aracılığıyla <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> önce VSPackage yapılan her çağrı yapar.  
   
- Aşağıdaki tabloda belirli ayrıntıları hakkında nasıl açıklar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE farklı kullanıcı Arabirimi öğeleri gizler.  
+  Aşağıdaki tabloda belirli ayrıntıları hakkında nasıl açıklar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE farklı kullanıcı Arabirimi öğeleri gizler.  
   
 |Kullanıcı Arabirimi öğesi|Açıklama|  
 |-------------|-----------------|  

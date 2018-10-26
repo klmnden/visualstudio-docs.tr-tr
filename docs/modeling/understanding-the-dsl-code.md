@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 05339a2bdc176fd44c93c744162a299809762a2e
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 490c9c3fe5724373072b2857eb0ce3da7905b172
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860297"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813331"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL Kodunu Anlama
 Bir etki alanına özgü dil (DSL) çözümü okumak ve Visual Studio DSL örneklerini güncellemek için kullanabileceğiniz bir API oluşturur. Bu API, DSL tanımını oluşturulan kodda tanımlanır. Bu konuda oluşturulan API açıklanmaktadır.
@@ -110,25 +110,25 @@ Bir etki alanına özgü dil (DSL) çözümü okumak ve Visual Studio DSL örnek
 
  Her etki alanı sınıfı içerir:
 
--   Bir özellik tanımı ve her bir etki alanı özellik için bir iç içe geçmiş bir işleyici sınıfı. OnValueChanging() ve OnValueChanged() geçersiz kılabilirsiniz. Daha fazla bilgi için [etki alanı özellik değeri değişiklik işleyicileri](../modeling/domain-property-value-change-handlers.md).
+- Bir özellik tanımı ve her bir etki alanı özellik için bir iç içe geçmiş bir işleyici sınıfı. OnValueChanging() ve OnValueChanged() geçersiz kılabilirsiniz. Daha fazla bilgi için [etki alanı özellik değeri değişiklik işleyicileri](../modeling/domain-property-value-change-handlers.md).
 
-     DSL, örnekte `Comment` sınıfı içeren bir özellik `Text` ve bir işleyici sınıfı `TextPropertyHandler`.
+   DSL, örnekte `Comment` sınıfı içeren bir özellik `Text` ve bir işleyici sınıfı `TextPropertyHandler`.
 
--   Bu etki alanı sınıfı, yer aldığı ilişkileri için erişimci özellikleri. (Rol özellikleri için hiç iç içe geçmiş sınıf yoktur.)
+- Bu etki alanı sınıfı, yer aldığı ilişkileri için erişimci özellikleri. (Rol özellikleri için hiç iç içe geçmiş sınıf yoktur.)
 
-     DSL, örnekte `Comment` sınıfına sahip gömme ilişkisi, üst modeline erişme erişimcileri `ComponentModelHasComments`.
+   DSL, örnekte `Comment` sınıfına sahip gömme ilişkisi, üst modeline erişme erişimcileri `ComponentModelHasComments`.
 
--   Oluşturucular. Bu geçersiz kılmak istediğiniz verilirse **sahip özel Oluşturucu** şirket etki alanı sınıfı.
+- Oluşturucular. Bu geçersiz kılmak istediğiniz verilirse **sahip özel Oluşturucu** şirket etki alanı sınıfı.
 
--   Öğe grubu prototip (EGP) işleyici yöntemleri. Bu kullanıcı, gerekli olan *birleştirme* (Ekle) bu sınıfın örneklerinin üzerine başka bir öğe. Genellikle kullanıcının bu öğe aracına ya da başka bir şekil sürükleyerek veya yapıştırarak yapar.
+- Öğe grubu prototip (EGP) işleyici yöntemleri. Bu kullanıcı, gerekli olan *birleştirme* (Ekle) bu sınıfın örneklerinin üzerine başka bir öğe. Genellikle kullanıcının bu öğe aracına ya da başka bir şekil sürükleyerek veya yapıştırarak yapar.
 
-     Örnekte DSL, bir giriş veya çıkış bağlantı noktasına bir bileşen üzerine birleştirilebilir. Ayrıca, bileşenler ve açıklamaları modeline birleştirilebilir. Bu
+   Örnekte DSL, bir giriş veya çıkış bağlantı noktasına bir bileşen üzerine birleştirilebilir. Ayrıca, bileşenler ve açıklamaları modeline birleştirilebilir. Bu
 
-     Bileşen sınıfı EGP işleyici yöntemleri bağlantı noktaları, ancak değil açıklamaları kabul etmek bir bileşenine izin verin. Kök model sınıfı EGP işleyicisinde yorumlar ve bileşenleri, ancak olmayan bağlantı noktalarını kabul eder.
+   Bileşen sınıfı EGP işleyici yöntemleri bağlantı noktaları, ancak değil açıklamaları kabul etmek bir bileşenine izin verin. Kök model sınıfı EGP işleyicisinde yorumlar ve bileşenleri, ancak olmayan bağlantı noktalarını kabul eder.
 
- `DomainModel.cs`
+  `DomainModel.cs`
 
- Etki alanı modeli temsil eden sınıf. Öğesinden türetilen <xref:Microsoft.VisualStudio.Modeling.DomainModel>.
+  Etki alanı modeli temsil eden sınıf. Öğesinden türetilen <xref:Microsoft.VisualStudio.Modeling.DomainModel>.
 
 > [!NOTE]
 >  Bu modelin kök sınıfı ile aynı değildir.
@@ -161,31 +161,31 @@ Bir etki alanına özgü dil (DSL) çözümü okumak ve Visual Studio DSL örnek
 
  `SerializationHelper.cs`
 
--   İki öğe aynı ad tarafından başvurulan emin olmak için bir doğrulama yöntemi. Daha fazla bilgi için [özelleştirme dosya depolamayı ve XML serileştirmeyi](../modeling/customizing-file-storage-and-xml-serialization.md).
+- İki öğe aynı ad tarafından başvurulan emin olmak için bir doğrulama yöntemi. Daha fazla bilgi için [özelleştirme dosya depolamayı ve XML serileştirmeyi](../modeling/customizing-file-storage-and-xml-serialization.md).
 
--   SerializationHelper sınıf seri hale getirme sınıfları tarafından kullanılan ortak işlevleri sağlar.
+- SerializationHelper sınıf seri hale getirme sınıfları tarafından kullanılan ortak işlevleri sağlar.
 
- `Serializer.cs`
+  `Serializer.cs`
 
- Her etki alanı sınıfı, ilişki, şekil, bağlayıcı, Diyagram ve model için seri hale getirici sınıfı.
+  Her etki alanı sınıfı, ilişki, şekil, bağlayıcı, Diyagram ve model için seri hale getirici sınıfı.
 
- Bu sınıfların özelliklerin çoğu, DSL Gezgini altında ayarlar tarafından denetlenebilir **Xml serileştirme davranışı**.
+  Bu sınıfların özelliklerin çoğu, DSL Gezgini altında ayarlar tarafından denetlenebilir **Xml serileştirme davranışı**.
 
- `Shapes.cs`
+  `Shapes.cs`
 
- DSL tanımındaki her şekil sınıfı için bir sınıf. Şekiller türetilir <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>. Daha fazla bilgi için [özelleştirme dosya depolamayı ve XML serileştirmeyi](../modeling/customizing-file-storage-and-xml-serialization.md).
+  DSL tanımındaki her şekil sınıfı için bir sınıf. Şekiller türetilir <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>. Daha fazla bilgi için [özelleştirme dosya depolamayı ve XML serileştirmeyi](../modeling/customizing-file-storage-and-xml-serialization.md).
 
- Kısmi bir sınıf kendi yöntemleri ile oluşturulan yöntemleri geçersiz kılmak için ayarlanmış **Generates Double Derived** DSL tanımındaki Bağlayıcısı. Bir Oluşturucu ile kendi kodunuzu değiştirmek için **sahip özel Oluşturucu**.
+  Kısmi bir sınıf kendi yöntemleri ile oluşturulan yöntemleri geçersiz kılmak için ayarlanmış **Generates Double Derived** DSL tanımındaki Bağlayıcısı. Bir Oluşturucu ile kendi kodunuzu değiştirmek için **sahip özel Oluşturucu**.
 
- Renk ve diğer stil özellikleri değişken, çalışma zamanında yapmak için sınıf DSL tanım diyagramı üzerinde sağ tıklayın ve fareyle **ekleme kullanıma sunulan**.
+  Renk ve diğer stil özellikleri değişken, çalışma zamanında yapmak için sınıf DSL tanım diyagramı üzerinde sağ tıklayın ve fareyle **ekleme kullanıma sunulan**.
 
- Çalışma zamanında ek stil özellikleri değişkeni gerçekleştirmek için örneğin bkz <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> ve <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>
+  Çalışma zamanında ek stil özellikleri değişkeni gerçekleştirmek için örneğin bkz <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> ve <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>
 
- `ToolboxHelper.cs`
+  `ToolboxHelper.cs`
 
- Araç kutusu öğe grubu prototipleri öğesi araçları yükleyerek ayarlar. Kullanıcı Aracı'nı çalıştırdığında bu prototipleri kopyalarını hedef öğeleri ile birleştirilir.
+  Araç kutusu öğe grubu prototipleri öğesi araçları yükleyerek ayarlar. Kullanıcı Aracı'nı çalıştırdığında bu prototipleri kopyalarını hedef öğeleri ile birleştirilir.
 
- Geçersiz kılma `CreateElementPrototype()` birkaç nesnelerin bir grup oluşturur. bir araç kutusu öğesi tanımlama. Örneğin, alt bileşenlerine sahip nesneleri temsil etmek için bir öğe tanımlayabilirsiniz. Kod değiştirdikten sonra araç kutusu önbelleği temizlemek için Visual Studio'nun deneysel örneğinde sıfırlayın.
+  Geçersiz kılma `CreateElementPrototype()` birkaç nesnelerin bir grup oluşturur. bir araç kutusu öğesi tanımlama. Örneğin, alt bileşenlerine sahip nesneleri temsil etmek için bir öğe tanımlayabilirsiniz. Kod değiştirdikten sonra araç kutusu önbelleği temizlemek için Visual Studio'nun deneysel örneğinde sıfırlayın.
 
 ## <a name="generated-files-in-the-dslpackage-project"></a>DslPackage projesindeki oluşturulan dosyalar
  DslPackage Yönetme penceresi, araç kutusu ve menü komutları, Visual Studio Kabuğu için DSL model couples. Böylece herhangi birini kendi yöntemlerini geçersiz kılabilirsiniz sınıflar türetilmiş, çift çoğu.
@@ -274,7 +274,6 @@ namespace Company.EmbedInForm
   }
 
 }
-
 ```
 
  `EditorFactory.cs`
@@ -326,7 +325,6 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 }
 }
 }
-
 ```
 
  `ModelExplorerToolWindow.cs`

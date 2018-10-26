@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78ffb4e98ce8589f20d4a0253ce675e546f15ae4
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 93bf6af51488b5609f24c5664dee040ea086c26c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078735"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867268"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Araç çubuğuna menü denetleyicisi ekleme
 Bu izlenecek yolda yapılar [araç penceresine araç çubuğu eklemek](../extensibility/adding-a-toolbar-to-a-tool-window.md) gözden geçirme ve araç penceresi araç çubuğuna menü denetleyicisi ekleme işlemi gösterilmektedir. Burada gösterilen adımları da oluşturulan araç uygulanabilir [araç ekleme](../extensibility/adding-a-toolbar.md) gözden geçirme.  
@@ -34,82 +34,82 @@ Bu izlenecek yolda yapılar [araç penceresine araç çubuğu eklemek](../extens
   
 ## <a name="create-a-menu-controller"></a>Menü denetleyicisi oluşturma  
   
-1.  Açıklanan yordamları izleyin [araç penceresine araç çubuğu eklemek](../extensibility/adding-a-toolbar-to-a-tool-window.md) araç çubuğu içeren bir araç penceresi oluşturmak için.  
+1. Açıklanan yordamları izleyin [araç penceresine araç çubuğu eklemek](../extensibility/adding-a-toolbar-to-a-tool-window.md) araç çubuğu içeren bir araç penceresi oluşturmak için.  
   
-2.  İçinde *TWTestCommandPackage.vsct*sembolleri bölümüne gidin. Adlı GuidSymbol öğesi içinde **guidTWTestCommandPackageCmdSet**, menü denetleyiciniz, menü denetleyicisi grubu ve üç menü öğelerini bildirin.  
+2. İçinde *TWTestCommandPackage.vsct*sembolleri bölümüne gidin. Adlı GuidSymbol öğesi içinde **guidTWTestCommandPackageCmdSet**, menü denetleyiciniz, menü denetleyicisi grubu ve üç menü öğelerini bildirin.  
   
-    ```xml  
-    <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
-    ```  
+   ```xml  
+   <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
+   ```  
   
-3.  Menüler bölümünde son menü girişten sonra menü denetleyicisi menü olarak tanımlayın.  
+3. Menüler bölümünde son menü girişten sonra menü denetleyicisi menü olarak tanımlayın.  
   
-    ```xml  
-    <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TWToolbarGroup" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <CommandFlag>TextChanges</CommandFlag>  
-        <CommandFlag>TextIsAnchorCommand</CommandFlag>  
-        <Strings>  
-            <ButtonText>Test Menu Controller</ButtonText>  
-            <CommandName>Test Menu Controller</CommandName>  
-        </Strings>  
-    </Menu>  
-    ```  
+   ```xml  
+   <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TWToolbarGroup" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <CommandFlag>TextChanges</CommandFlag>  
+       <CommandFlag>TextIsAnchorCommand</CommandFlag>  
+       <Strings>  
+           <ButtonText>Test Menu Controller</ButtonText>  
+           <CommandName>Test Menu Controller</CommandName>  
+       </Strings>  
+   </Menu>  
+   ```  
   
-     `TextChanges` Ve `TextIsAnchorCommand` bayrakları son seçilen komut yansıtacak şekilde menü denetleyicisi etkinleştirmek için dahil edilen olmalıdır.  
+    `TextChanges` Ve `TextIsAnchorCommand` bayrakları son seçilen komut yansıtacak şekilde menü denetleyicisi etkinleştirmek için dahil edilen olmalıdır.  
   
-4.  Gruplarda bölümü, son grup girişten sonra menü denetleyicisi grubu ekleyin.  
+4. Gruplarda bölümü, son grup girişten sonra menü denetleyicisi grubu ekleyin.  
   
-    ```xml  
-    <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" />  
-    </Group>  
-    ```  
+   ```xml  
+   <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" />  
+   </Group>  
+   ```  
   
-     Bu grupta herhangi bir komut üst menü denetleyicisi ayarlayarak menü denetleyicisi görünür. `priority` Özniteliği belirtilmemişse, varsayılan değeri 0 olarak ayarlar, yalnızca grup menü denetleyicisi üzerinde olduğundan.  
+    Bu grupta herhangi bir komut üst menü denetleyicisi ayarlayarak menü denetleyicisi görünür. `priority` Özniteliği belirtilmemişse, varsayılan değeri 0 olarak ayarlar, yalnızca grup menü denetleyicisi üzerinde olduğundan.  
   
-5.  Düğmeler bölümünde son düğme girişten sonra düğme öğesi her, menü öğelerinin ekleyin.  
+5. Düğmeler bölümünde son düğme girişten sonra düğme öğesi her, menü öğelerinin ekleyin.  
   
-    ```xml  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPic1" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 1</ButtonText>  
-            <CommandName>MC Item 1</CommandName>  
-        </Strings>  
-    </Button>  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem2" priority="0x0100" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPic2" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 2</ButtonText>  
-            <CommandName>MC Item 2</CommandName>  
-        </Strings>  
-    </Button>  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem3" priority="0x0200" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPicSearch" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 3</ButtonText>  
-            <CommandName>MC Item 3</CommandName>  
-        </Strings>  
-    </Button>  
-    ```  
+   ```xml  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPic1" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 1</ButtonText>  
+           <CommandName>MC Item 1</CommandName>  
+       </Strings>  
+   </Button>  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem2" priority="0x0100" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPic2" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 2</ButtonText>  
+           <CommandName>MC Item 2</CommandName>  
+       </Strings>  
+   </Button>  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem3" priority="0x0200" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPicSearch" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 3</ButtonText>  
+           <CommandName>MC Item 3</CommandName>  
+       </Strings>  
+   </Button>  
+   ```  
   
-6.  Bu noktada, menü denetleyicisinde bakabilirsiniz. Projeyi oluşturmak ve hata ayıklamaya başlayın. Deneysel örneği görmeniz gerekir.  
+6. Bu noktada, menü denetleyicisinde bakabilirsiniz. Projeyi oluşturmak ve hata ayıklamaya başlayın. Deneysel örneği görmeniz gerekir.  
   
-    1.  Üzerinde **görünüm / diğer Windows** menüsünde, açık **Test ToolWindow**.  
+   1. Üzerinde **görünüm / diğer Windows** menüsünde, açık **Test ToolWindow**.  
   
-    2.  Menü denetleyicisi araç penceresindeki araç çubuğunda görünür.  
+   2. Menü denetleyicisi araç penceresindeki araç çubuğunda görünür.  
   
-    3.  Üç olası komutları görmek için menü denetleyicisi sağ tarafındaki oka tıklayın.  
+   3. Üç olası komutları görmek için menü denetleyicisi sağ tarafındaki oka tıklayın.  
   
-     Bir komutu tıklattığınızda, menü denetleyicisi başlığının komut görüntülenecek değiştiğine dikkat edin. Sonraki bölümde, bu komutları etkinleştirmek için kod ekleyeceğiz.  
+      Bir komutu tıklattığınızda, menü denetleyicisi başlığının komut görüntülenecek değiştiğine dikkat edin. Sonraki bölümde, bu komutları etkinleştirmek için kod ekleyeceğiz.  
   
 ## <a name="implement-the-menu-controller-commands"></a>Menü denetleyicisi komutları uygulama  
   

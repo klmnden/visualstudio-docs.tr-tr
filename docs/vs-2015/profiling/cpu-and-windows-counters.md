@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2683f9dc520603004e71778e8498f5b2493b1895
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af0ce2e4ff9b8df28ebc0c6dd57ad5b4ebee895f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301827"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914573"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU ve Windows Sayaçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,19 +93,19 @@ Visual Studio Profiler, işletim sistemi tarafından (Windows sayaçları) oluş
   
 ##### <a name="to-view-a-list-of-a-list-of-all-cpu-counters-that-are-supported-on-the-current-platform"></a>Geçerli platformda desteklenen tüm CPU sayaçları listesini bir listesini görüntülemek için  
   
-1.  Performans Gezgini performans oturumu sağ tıklayın ve ardından **özellikleri**.  
+1. Performans Gezgini performans oturumu sağ tıklayın ve ardından **özellikleri**.  
   
-2.  Aşağıdakilerden birini yapın:  
+2. Aşağıdakilerden birini yapın:  
   
-    -   Tıklayın **örnekleme**ve ardından **performans sayacı** gelen **örnek** olay listesi. CPU sayaçları listelenen **ulaşılabilir performans sayaçları**.  
+   - Tıklayın **örnekleme**ve ardından **performans sayacı** gelen **örnek** olay listesi. CPU sayaçları listelenen **ulaşılabilir performans sayaçları**.  
   
-         **Not** tıklayın **iptal** önceki örnekleme yapılandırmaya dönmek için.  
+      **Not** tıklayın **iptal** önceki örnekleme yapılandırmaya dönmek için.  
   
      veya  
   
-    -   Seçin **CPU sayaçları**ve ardından **CPU sayaçlarını Topla**. CPU sayaçları listelenen **kullanılabilir sayaçları**.  
+   - Seçin **CPU sayaçları**ve ardından **CPU sayaçlarını Topla**. CPU sayaçları listelenen **kullanılabilir sayaçları**.  
   
-         **Not** tıklayın **iptal** önceki sayaç koleksiyonu yapılandırmaya dönmek için.  
+      **Not** tıklayın **iptal** önceki sayaç koleksiyonu yapılandırmaya dönmek için.  
   
 ##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>Geçerli platformda desteklenen penceresi sayaçları listesini bir listesini görüntülemek için  
   

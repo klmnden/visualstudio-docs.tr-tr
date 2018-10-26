@@ -65,12 +65,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 64b8af9e995dc863fe578f61e22647726da73b35
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd12cfee50db7dd085fee6c0591dfff3f579e640
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220538"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838692"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Kod ve Metin Düzenleyici'de Kod Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,19 +146,19 @@ Visual Studio Düzenleyicisi, yazmak ve kodunuzu yönetmenizi kolaylaştıran bi
 
  Gezinti çubuğunu gizlemek için değiştirin **gezinti çubuğu** seçeneği metin düzenleyici tüm diller ayarlarında (**Araçlar/Seçenekler/metin düzenleyici diller**, veya kişi için ayarları değiştirebilirsiniz diller için). Açılır liste kutularında aşağıdaki gibi gezinebilirsiniz:  
 
--   Odağı kod penceresinden Gezinti çubuğuna geçirmek için CTRL + F2 kısayol tuş bileşimine basın.  
+- Odağı kod penceresinden Gezinti çubuğuna geçirmek için CTRL + F2 kısayol tuş bileşimine basın.  
 
--   Odağı gezinti çubuğundan kod penceresine dönmek için ESC tuşuna basın.  
+- Odağı gezinti çubuğundan kod penceresine dönmek için ESC tuşuna basın.  
 
--   Odağı gezinti çubuğunda öğeden öğeye kaydırmak için TAB tuşuna basın.  
+- Odağı gezinti çubuğunda öğeden öğeye kaydırmak için TAB tuşuna basın.  
 
--   IDE'ye dönün ve odaktaysa gezinti çubuğu öğesini seçmek için ENTER tuşuna basın.  
+- IDE'ye dönün ve odaktaysa gezinti çubuğu öğesini seçmek için ENTER tuşuna basın.  
 
--   Bir sınıf veya türe gitmek için soldaki aşağı açılır menüde adını tıklayın.  
+- Bir sınıf veya türe gitmek için soldaki aşağı açılır menüde adını tıklayın.  
 
--   Bir sınıftaki bir yordama doğrudan gitmek için sağdaki aşağı açılır menüde bir prosedürü tıklayın.  
+- Bir sınıftaki bir yordama doğrudan gitmek için sağdaki aşağı açılır menüde bir prosedürü tıklayın.  
 
- Kısmi class içinde geçerli kod dosyası dışında tanımlanan üyeler gri renkte.  
+  Kısmi class içinde geçerli kod dosyası dışında tanımlanan üyeler gri renkte.  
 
 ## <a name="find-code-using-navigate-to"></a>Gezinmek için kullanarak kod bulma
 Visual Studio'nun "Gitmek için" komut belirtilen öğeleri, kod dosyaları, dosya yolları ve kod sembolleri hızlı bir şekilde bulmanıza yardımcı olmak için kodunuzun odaklanmış bir arama yapar. Aramaları gibi bulun veya dosyalarda Bul diğer metin, gezinmek için arama, dosyalar, formlar ve kod modülleri gibi gerçek kod burada bulunduğu alanlara sınırlar. Örneğin, araması yaparsanız bir ASP.NET web uygulamasını kullanarak bir dize bulun veya dosyaları bulma içinde tüm çözümde kod açıklamalarını, dizenin örnekleri dahil olmak üzere çeşitli isabet alabilirsiniz. Gezinmek için kullanarak, ancak, yalnızca tek bir işlev kodu açıklamalar dizesinde'nın tüm örneklerini yok sayılıyor alabilirsiniz.

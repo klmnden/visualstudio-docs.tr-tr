@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e2d973d1ec992002b2239383f9dbed228a0d59b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e69fe2741329ee7e8b2cae6b99dca150caa022fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859399"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824302"
 ---
 # <a name="use-models-in-your-development-process"></a>Geliştirme sürecinizde modelleri kullanma
 
@@ -123,7 +123,7 @@ Bir model çeşitli türlerde diyagramları görüntülenebilir. Modelleri ve di
 Farklı türlerdeki diyagram, farklı düzeylerde soyutlama tasarım açıklamak için yararlıdır. Çoğu diyagram türleri, birden fazla düzeyde yararlı olur. Bu tablo, her diyagram türü nasıl kullanılabileceğini gösterir.
 
 |Tasarım düzeyi|Diyagram türleri|
-|------------------|-------------------|
+|-|-|
 |İş süreci<br /><br /> Sisteminiz içinde kullanılacak bağlamı anlamak kullanıcılar bundan gerekenler anlamanıza yardımcı olur.|-Kavramsal sınıf diyagramları, iş süreci içinde kullanılan iş kavramlarını açıklar.|
 |Kullanıcı gereksinimleri<br /><br /> Kullanıcıların sisteminizi gerekenler tanımı.|-İş kuralları ve hizmet gereksinimleri kalitesini ayrı belgelerinde açıklanabilir.|
 |Üst düzey tasarım<br /><br /> Sistemin genel yapısını: ana bileşenleri ve bunların birlikte nasıl birleştirin.|-Bağımlılık diyagramları, sistemin bölümler halinde nasıl yapılandırıldığını açıklar. Program kodu mimariye uymasını sağlamak için bağımlılık diyagramlarına karşı doğrulayabilir.|
@@ -132,7 +132,7 @@ Farklı türlerdeki diyagram, farklı düzeylerde soyutlama tasarım açıklamak
 ## <a name="external-resources"></a>Dış kaynaklar
 
 |**Kategori**|**Bağlantılar**|
-|------------------|---------------|
+|-|-|
 |**Videolar**|![video bağlantısı](../data-tools/media/playvideo.gif) [videoları MSDN Nasıl Yaparım: oluşturma ve kullanma UML modellerini ve diyagramları (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![video bağlantısı](../data-tools/media/playvideo.gif) [Channel 9: Visual Studio 2010 ile UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![video bağlantısı](../data-tools/media/playvideo.gif) [MSDN nasıl yaparım serisi: UML araçları ve genişletilebilirlik (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
 |**Forumları**|- [Visual Studio Görselleştirme ve Modelleme Araçları](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Görselleştirme ve modelleme SDK'sını (DSL araçları)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Bloglar**|[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|

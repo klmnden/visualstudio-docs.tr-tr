@@ -15,12 +15,12 @@ ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1a413fd1787e4197cf46de6936523ef576016a37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3aa3daa8925c9fec79f80d4d2fa6b4e8365b15b2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300319"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929341"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Özellikler Penceresi Alanları ve Arabirimleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,25 +30,25 @@ Seçim, hangi bilgilerin görüntüleneceğini belirlemek modelin **özellikleri
 ## <a name="tracking-selection-in-the-ide"></a>IDE'de seçim izleme  
  Pencere çerçevesi veya site, IDE tarafından sahip olunan adlı bir hizmet olan <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>. Bir değişiklik nasıl bir kullanıcı başka bir açık penceresine odak değiştirme ya da farklı proje öğesinde seçerek kaynaklanan bir seçimi aşağıdaki adımları Göster **Çözüm Gezgini**, içindegörüntüleneniçerikdeğiştirmekiçinuygulanır **Özellikleri** penceresi.  
   
-1.  Seçilen pencere çağrılarında tarihli VSPackage'ı tarafından oluşturulan nesne <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> olmasını <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> çağırma <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>.  
+1. Seçilen pencere çağrılarında tarihli VSPackage'ı tarafından oluşturulan nesne <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> olmasını <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> çağırma <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>.  
   
-2.  Seçilen pencere tarafından sağlanan seçim kapsayıcısı kendi oluşturur <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> nesne. Seçim değişiklikleri VSPackage çağırdığında <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> ortamında, tüm dinleyici bildirmek için de dahil olmak üzere **özellikleri** pencerenin Değiştir. Ayrıca, yeni seçime ilgili hiyerarşi ve öğe bilgilerine erişim sağlar.  
+2. Seçilen pencere tarafından sağlanan seçim kapsayıcısı kendi oluşturur <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> nesne. Seçim değişiklikleri VSPackage çağırdığında <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> ortamında, tüm dinleyici bildirmek için de dahil olmak üzere **özellikleri** pencerenin Değiştir. Ayrıca, yeni seçime ilgili hiyerarşi ve öğe bilgilerine erişim sağlar.  
   
-3.  Çağırma <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> ve Seçili hiyerarşiyi öğeleri geçirerek `VSHPROPID_BrowseObject` parametresi doldurur <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> nesne.  
+3. Çağırma <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> ve Seçili hiyerarşiyi öğeleri geçirerek `VSHPROPID_BrowseObject` parametresi doldurur <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> nesne.  
   
-4.  Türetilen bir nesne [IDispatch](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) için döndürülen <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> İstenen öğe ve ortam içine sarmalar bir <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (bkz. aşağıdaki adım). Çağrı başarısız olursa ortam ikinci çağrıda `IVsHierarchy::GetProperty`, seçim kapsayıcısı geçirme <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> hiyerarşi öğesi veya öğelerini sağlayın.  
+4. Türetilen bir nesne [IDispatch](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) için döndürülen <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> İstenen öğe ve ortam içine sarmalar bir <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (bkz. aşağıdaki adım). Çağrı başarısız olursa ortam ikinci çağrıda `IVsHierarchy::GetProperty`, seçim kapsayıcısı geçirme <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> hiyerarşi öğesi veya öğelerini sağlayın.  
   
-     VSPackage oluşturmaz, projenizi <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> ortamı tarafından sağlanan penceresi VSPackage, onu uyguladığından (örneğin, **Çözüm Gezgini**) yapıları <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> kendi adına.  
+    VSPackage oluşturmaz, projenizi <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> ortamı tarafından sağlanan penceresi VSPackage, onu uyguladığından (örneğin, **Çözüm Gezgini**) yapıları <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> kendi adına.  
   
-5.  Ortam yöntemlerini çağırır <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> nesneleri göre almak için `IDispatch` doldurun için arabirim **özellikleri** penceresi.  
+5. Ortam yöntemlerini çağırır <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> nesneleri göre almak için `IDispatch` doldurun için arabirim **özellikleri** penceresi.  
   
- Bir değer olduğunda **özellikleri** penceresi değiştirildiğinde, VSPackages uygulamak `IVsTrackSelectionEx::OnElementValueChangeEx` ve `IVsTrackSelectionEx::OnSelectionChangeEx` değişikliği için öğe değeri bildirmek için. Ardından ortamın çağırır <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> veya <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> görüntülenen bilgileri tutmak **özellikleri** pencereyi eşzamanlı özellik değerleri. Daha fazla bilgi için [Özellikler penceresindeki özellik değerlerini güncelleştirme](../../misc/updating-property-values-in-the-properties-window.md).  
+   Bir değer olduğunda **özellikleri** penceresi değiştirildiğinde, VSPackages uygulamak `IVsTrackSelectionEx::OnElementValueChangeEx` ve `IVsTrackSelectionEx::OnSelectionChangeEx` değişikliği için öğe değeri bildirmek için. Ardından ortamın çağırır <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> veya <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> görüntülenen bilgileri tutmak **özellikleri** pencereyi eşzamanlı özellik değerleri. Daha fazla bilgi için [Özellikler penceresindeki özellik değerlerini güncelleştirme](../../misc/updating-property-values-in-the-properties-window.md).  
   
- Farklı bir seçmenin yanı sıra içinde proje öğesi **Çözüm Gezgini** öğeyle ilişkili özellikleri görüntülemek için de kullanılabilir aşağı açılan listeyi kullanarak bir form veya belge penceresi içinde farklı bir nesne seçebilirsiniz **Özellikleri** penceresi. Daha fazla bilgi için [Özellikler penceresi nesne listesi](../../extensibility/internals/properties-window-object-list.md).  
+   Farklı bir seçmenin yanı sıra içinde proje öğesi **Çözüm Gezgini** öğeyle ilişkili özellikleri görüntülemek için de kullanılabilir aşağı açılan listeyi kullanarak bir form veya belge penceresi içinde farklı bir nesne seçebilirsiniz **Özellikleri** penceresi. Daha fazla bilgi için [Özellikler penceresi nesne listesi](../../extensibility/internals/properties-window-object-list.md).  
   
- Bilgi görüntülendiği şekilde değiştirebilirsiniz **özellikleri** penceresi kılavuzdan alfabetik kategorik için ve kullanılabilir olması durumunda da seçilen bir nesne için bir özellik sayfası üzerindeuygundüğmeleretıklayarakaçabilirsiniz **Özellikleri** penceresi. Daha fazla bilgi için [Özellikler penceresi düğmeleri](../../extensibility/internals/properties-window-buttons.md) ve [özellik sayfaları](../../extensibility/internals/property-pages.md).  
+   Bilgi görüntülendiği şekilde değiştirebilirsiniz **özellikleri** penceresi kılavuzdan alfabetik kategorik için ve kullanılabilir olması durumunda da seçilen bir nesne için bir özellik sayfası üzerindeuygundüğmeleretıklayarakaçabilirsiniz **Özellikleri** penceresi. Daha fazla bilgi için [Özellikler penceresi düğmeleri](../../extensibility/internals/properties-window-buttons.md) ve [özellik sayfaları](../../extensibility/internals/property-pages.md).  
   
- Son olarak, listenin sonuna **özellikleri** penceresinde de seçilen alanın açıklaması bulunur **özellikleri** pencere kılavuzunun. Daha fazla bilgi için [alma alan açıklamaları Özellikler penceresinden](../../misc/getting-field-descriptions-from-the-properties-window.md).  
+   Son olarak, listenin sonuna **özellikleri** penceresinde de seçilen alanın açıklaması bulunur **özellikleri** pencere kılavuzunun. Daha fazla bilgi için [alma alan açıklamaları Özellikler penceresinden](../../misc/getting-field-descriptions-from-the-properties-window.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özellikleri Genişletme](../../extensibility/internals/extending-properties.md)

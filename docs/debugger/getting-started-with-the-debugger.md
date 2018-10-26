@@ -16,20 +16,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4534db0f4e85cda2cb3f0c45fdd57e768fa75ab1
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: d9cb4e6b69f88f0c3e61d17211ffe5ff464f1b17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827565"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Öğretici: Visual Studio kullanarak hata ayıklamayı öğrenin
 
 Bu makalede, Visual Studio hata ayıklayıcı adım adım kılavuzda özelliklerini tanıtır. Hata ayıklayıcısı özellikleri daha üst düzey bir görünümünü istiyorsanız bkz [hata ayıklayıcısı özellik Turu](../debugger/debugger-feature-tour.md). Olduğunda, *uygulamanızda hata ayıklama*, hata ayıklayıcısı ekli, uygulamanızın çalıştığını genellikle anlamına gelir. Bunu yaptığınızda, hata ayıklayıcı, kodunuzun ne yaptığını görmek için birçok yol sağlar. çalışırken. Kodunuzda adım adım ve değişkenlerinde depolanan değerleri bakmak, gözcüler ayarlayabilirsiniz değerleri değiştiğinde görmek için değişkenlerini kodunuzun yürütme yolunu inceleyin, bir dal kod çalıştırma, vb. olup olmadığını. Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) bu makalede geçmeden önce.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin")  |    [Bir video izleyin](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) hata ayıklamayı benzer adımları gösterilmektedir. |
+| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | [Bir video izleyin](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) hata ayıklamayı benzer adımları gösterilmektedir. |
 
 Tanıtım uygulamasını C# ve C++ olsa da, özellikleri, Visual Basic, JavaScript ve (belirtilenler dışında) Visual Studio tarafından desteklenen diğer diller için geçerlidir. Ekran görüntüleri C# ' de var.
 
@@ -329,8 +329,8 @@ Almak için en iyi yolu olduğundan bu çoğunlukla, klavye kısayollarını Bur
 
      ![Tıkla Çalıştır kullanın özellik](../debugger/media/get-started-run-to-click.png "tıklanan satıra kadar Çalıştır")
 
-    >  [!NOTE]
-    > **Tıklanan satıra kadar Çalıştır** düğmesidir yeni [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Yeşil ok düğmesini görmüyorsanız kullanın **F11** Bu örnekte bunun yerine hata ayıklayıcı doğru yere ilerlemek için.
+   > [!NOTE]
+   > **Tıklanan satıra kadar Çalıştır** düğmesidir yeni [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Yeşil ok düğmesini görmüyorsanız kullanın **F11** Bu örnekte bunun yerine hata ayıklayıcı doğru yere ilerlemek için.
 
 6. Tıklayın **tıklanan satıra kadar Çalıştır** düğmesi ![tıklanan satıra kadar Çalıştır](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
@@ -408,14 +408,14 @@ Değişkenleri incelemek özellik hata ayıklayıcının en kullanışlı özell
 
 1. İçinde duraklatıldığı sırada `foreach` döngü (`for` C++ döngüde), tıklayın **çağrı yığını** varsayılan alt sağ bölmede açık olarak penceresinde.
 
-1. Tıklayın **F11** birkaç kez duraklatmak, hata ayıklayıcı görene kadar `Circle.Draw` Kod düzenleyicisinde yöntemi. Bakmak **çağrı yığını** penceresi.
+2. Tıklayın **F11** birkaç kez duraklatmak, hata ayıklayıcı görene kadar `Circle.Draw` Kod düzenleyicisinde yöntemi. Bakmak **çağrı yığını** penceresi.
 
     ![Çağrı yığınını incelemek](../debugger/media/get-started-call-stack.png "ExamineCallStack")
 
     **Çağrı yığını** penceresi, yöntemleri ve işlevleri çağrılır sırasını gösterir. Geçerli işlev en üst satırına gösterir ( `Circle.Draw` veya `Circle::Draw` bu uygulamada yöntemi). İkinci satır gösteren `Circle.Draw` çağırıldığı `Main` yöntemi (`main` C++'ta) ve benzeri.
 
-    >  [!NOTE]
-    > **Çağrı yığını** penceresi benzer hata ayıklama perspektifi için Eclipse gibi bazı IDE içinde.
+   > [!NOTE]
+   > **Çağrı yığını** penceresi benzer hata ayıklama perspektifi için Eclipse gibi bazı IDE içinde.
 
     Çağrı yığınını inceleyebilir ve bir uygulamanın yürütme akışını anlamanıza için iyi bir yoludur.
 

@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b1be04d9cc723b2a741ba43676977854306cd03e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 10dad7382a30800675c257a4e2c8219d20e5b18b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887706"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>İzlenecek Yol: XSLT Stil Sayfasında Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,29 +36,29 @@ Bu kılavuzda açıklanan adımları XSLT hata ayıklayıcının kullanımını 
   
 #### <a name="to-start-debugging"></a>Hata ayıklamayı başlatmak için  
   
-1.  Gelen **dosya** menüsünde **açık**, tıklatıp **dosya**.  
+1. Gelen **dosya** menüsünde **açık**, tıklatıp **dosya**.  
   
-2.  BelowAvg.xsl dosyasını bulun ve tıklayın **açık**.  
+2. BelowAvg.xsl dosyasını bulun ve tıklayın **açık**.  
   
-     Stil sayfası XML Düzenleyicisi'nde açılır.  
+    Stil sayfası XML Düzenleyicisi'nde açılır.  
   
-3.  Gözat düğmesine tıklayın (**...** ) üzerinde **giriş** belge penceresinin alan.  
+3. Gözat düğmesine tıklayın (**...** ) üzerinde **giriş** belge penceresinin alan.  
   
-4.  Books.xml dosyasını bulun ve tıklatın **açık**.  
+4. Books.xml dosyasını bulun ve tıklatın **açık**.  
   
-     Bu XSLT dönüşümü için kullanılan kaynak dosyanın ayarlar.  
+    Bu XSLT dönüşümü için kullanılan kaynak dosyanın ayarlar.  
   
-5.  Sağ `xsl:if` başlangıç etiketi, işaret **kesme noktası**, tıklatıp **kesme noktası Ekle**.  
+5. Sağ `xsl:if` başlangıç etiketi, işaret **kesme noktası**, tıklatıp **kesme noktası Ekle**.  
   
-6.  Tıklayın **hata ayıklama XSL** XML Düzenleyicisi araç çubuğu düğmesi.  
+6. Tıklayın **hata ayıklama XSL** XML Düzenleyicisi araç çubuğu düğmesi.  
   
- Bu, hata ayıklama işlemi başlar ve hata ayıklayıcı tarafından kullanılan birkaç yeni pencereler açılır.  
+   Bu, hata ayıklama işlemi başlar ve hata ayıklayıcı tarafından kullanılan birkaç yeni pencereler açılır.  
   
- Giriş belgesi ve stil sayfasını görüntülemek iki pencere vardır. Hata ayıklayıcı bu windows geçerli yürütme durumunu göstermek için kullanır. Hata ayıklayıcı konumlandırılıp `xsl:if` stil sayfası ve ilk books.xml dosyasını kitap düğümünde öğesi.  
+   Giriş belgesi ve stil sayfasını görüntülemek iki pencere vardır. Hata ayıklayıcı bu windows geçerli yürütme durumunu göstermek için kullanır. Hata ayıklayıcı konumlandırılıp `xsl:if` stil sayfası ve ilk books.xml dosyasını kitap düğümünde öğesi.  
   
- Yerel öğeler penceresi, tüm yerel değişkenlerin ve geçerli değerlerini görüntüler. Bu stil sayfası ve ayrıca hata ayıklayıcı şu anda bağlam içinde olan düğümleri izlemek için kullandığı değişkenleri tanımlanan değişkenler içerir.  
+   Yerel öğeler penceresi, tüm yerel değişkenlerin ve geçerli değerlerini görüntüler. Bu stil sayfası ve ayrıca hata ayıklayıcı şu anda bağlam içinde olan düğümleri izlemek için kullandığı değişkenleri tanımlanan değişkenler içerir.  
   
- **XSL çıkış** penceresi XSL Dönüştürme çıktısını görüntüler. Bu pencere ayrıdır **Visual Studio çıkış** penceresi.  
+   **XSL çıkış** penceresi XSL Dönüştürme çıktısını görüntüler. Bu pencere ayrıdır **Visual Studio çıkış** penceresi.  
   
 ## <a name="watch-window"></a>İzleme penceresi  
   

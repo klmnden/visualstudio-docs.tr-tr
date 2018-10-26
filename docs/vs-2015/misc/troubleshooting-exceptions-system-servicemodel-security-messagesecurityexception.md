@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: douge
-ms.openlocfilehash: 304847259f9955706f345ef0f27800dfb77eddfb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 676f51b34bfc83d0a2af195da85a2c46cae08ac5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241237"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853174"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Özel Durum Sorunlarını Giderme: System.ServiceModel.Security.MessageSecurityException
 A <xref:System.ServiceModel.Security.MessageSecurityException> özel durum [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] bir ileti doğru güvenli olmayan veya oynanmış belirler. Hata, en sık aşağıdaki koşulların tümü doğru olduğunda oluşur:  
@@ -48,35 +48,35 @@ A <xref:System.ServiceModel.Security.MessageSecurityException> özel durum [!INC
   
 #### <a name="to-create-a-custom-service-binding-for-the-wcf-service-hosted-inside-the-aspnet-development-server"></a>Bağlama içinde ASP.NET Development Server'da barındırılan WCF hizmeti için özel bir hizmet oluşturmak için  
   
-1.  Özel durum oluşturan WCF hizmeti için Web.config dosyasını açın.  
+1. Özel durum oluşturan WCF hizmeti için Web.config dosyasını açın.  
   
-2.  Web.config dosyasına aşağıdaki bilgileri girin.  
+2. Web.config dosyasına aşağıdaki bilgileri girin.  
   
-    ```  
-    <bindings>  
-      <customBinding>  
-        <binding name="Service1Binding">  
-          <transactionFlow />  
-          <textMessageEncoding />  
-          <httpTransport authenticationScheme="Ntlm" />  
-        </binding>  
-      </customBinding>  
-    </bindings>  
-    ```  
+   ```  
+   <bindings>  
+     <customBinding>  
+       <binding name="Service1Binding">  
+         <transactionFlow />  
+         <textMessageEncoding />  
+         <httpTransport authenticationScheme="Ntlm" />  
+       </binding>  
+     </customBinding>  
+   </bindings>  
+   ```  
   
-3.  Web.config dosyasını kaydedip kapatın.  
+3. Web.config dosyasını kaydedip kapatın.  
   
-4.  WCF veya Web hizmeti kodunda bir uç nokta değeri şu şekilde değiştirin:  
+4. WCF veya Web hizmeti kodunda bir uç nokta değeri şu şekilde değiştirin:  
   
-    ```  
-    <endpoint address="" binding="customBinding" bindingConfiguration="Service1Binding" contract="IService1" />  
-    ```  
+   ```  
+   <endpoint address="" binding="customBinding" bindingConfiguration="Service1Binding" contract="IService1" />  
+   ```  
   
-     Bu, hizmetin özel bağlama kullanmasını sağlar.  
+    Bu, hizmetin özel bağlama kullanmasını sağlar.  
   
-5.  Hizmete erişen bir Web uygulamasında bir hizmet başvurusu ekleyin. (İçinde **hizmet Başvurusu Ekle** iletişim kutusunda, özel durum oluşturan özgün hizmetiyle yaptığınız gibi hizmetin bir başvuru ekleyin.)  
+5. Hizmete erişen bir Web uygulamasında bir hizmet başvurusu ekleyin. (İçinde **hizmet Başvurusu Ekle** iletişim kutusunda, özel durum oluşturan özgün hizmetiyle yaptığınız gibi hizmetin bir başvuru ekleyin.)  
   
- Bir WCF hizmet başvurusu ile çalışırken, NTLM güvenliğini devre dışı bırakmak için aşağıdaki adımları izleyebilirsiniz.  
+   Bir WCF hizmet başvurusu ile çalışırken, NTLM güvenliğini devre dışı bırakmak için aşağıdaki adımları izleyebilirsiniz.  
   
 > [!IMPORTANT]
 >  NTLM güvenliğin devre dışı bırakılması önerilmez ve bir güvenlik tehdidi yol açabilir.  

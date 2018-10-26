@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 4b6fb4e5ba69695389de2ad7db578488bf55ab75
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 9d924ee92258e348d5ffee1551fcde7707d711cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879807"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855215"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları ile çalışmaya başlama
 
@@ -73,7 +73,7 @@ Zaten Visual Studio 2017'niz yüklüyse veya el ile yüklemeyi tercih ederseniz,
 
 4. **Gözat...** seçildiyse Visual Studio yükleme dizininin içindeki **Common7/IDE** klasörüne gidin ve **devenv.exe**yi seçin. Ardından **Aç**a tıklayın.
 
-  ![Aç'ı seçin](media/vstu_browse-for-application.png)
+   ![Aç'ı seçin](media/vstu_browse-for-application.png)
 
 5. Visual Studio **Harici Kod Düzenleyicisi** listesinde seçildikten sonra, **Düzenleyici Ekleme** onay kutusunun seçili olduğundan emin olun.
 

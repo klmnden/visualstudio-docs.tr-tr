@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9dd371d55ee4a59baf800e26b666be28aeb6cbb3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 57c73a0da427141e4a8f94a51fa57ef7aa871019
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175754"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870061"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Yük Testi Çözümleyicisinin Grafik görünümünde yük testi sonuçlarını çözümleme
 
@@ -39,7 +39,7 @@ Birkaç yerleşik grafik sağlanır. Yerleşik kullanabileceğiniz grafikleri ol
 Yük testi sonuçlarını analiz etmek kullanılabilen yerleşik grafikler aşağıdaki tabloda listelenmektedir.
 
 |Grafik adı|Açıklama|
-|----------------|-----------------|
+|-|-|
 |Anahtar göstergesi|Kullanıcı yükü, aktarım hızı ve yanıt zamanı gibi performans sayaçları temel özelliklerini anlatan sınayın.|
 |Test yanıt süresi|Çalıştırılacak testler süre miktarı hakkında veriler yararlanın.|
 |Sayfa yanıt süresi|Web sayfaları için ortalama yanıt süresi, yükleme testi sırasında erişilir.|
@@ -63,7 +63,7 @@ Yük testi sonuçlarını analiz etmek kullanılabilen yerleşik grafikler aşa�
  Gösterge şu sütunları içerir:
 
 |Sayaç|Sayaç adı|
-|-------------|-----------------------------|
+|-|-|
 |Örnek|Sayaç örneğinin adı.|
 |Kategori|Sayacı kategori adı.|
 |Bilgisayar|İçin sayaç toplandığı bilgisayarın adı.|
@@ -77,7 +77,7 @@ Yük testi sonuçlarını analiz etmek kullanılabilen yerleşik grafikler aşa�
 ## <a name="tasks"></a>Görevler
 
 |Görevler|İlişkili konular|
-|-----------|-----------------------|
+|-|-|
 |**Grafik gösterge kullanarak özelleştirme:** grafik görünümü göstergesi, grafik ile ilişkili her performans sayacı için daha fazla bilgi görüntüler. Gösterge, performans sayaçlarını kaldırmak, performans sayaçları grafiğe vurgulayın ve çizim seçenekleri özelleştirmek için kullanabilirsiniz.|-   [Yük testlerini çözümlemek için grafik görünümü göstergesini kullanma](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
 |**Grafik üzerinde sayaçları görüntüler:** farklı türlerde veri bir yük testi sonuçları grafiği grafik üzerinde sayaçları yerleştirerek ekleyebilirsiniz.|-   [Nasıl yapılır: grafiklerde sayaç ekleme ve silme](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**Grafikler üzerinde yakınlaştırma:** bir yük testi tamamlandıktan sonra yakınlaştırmak ve kaydırmak için grafiğin bir bölgesine yakınlaştırma çubukları kullanabilirsiniz. Yakınlaştırma tarafından ince ayrıntılı olarak yük testi sırasında oluşturulan verileri inceleyebilirsiniz.|-   [Nasıl yapılır: grafiğin bir bölgesine yakınlaştırma](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|

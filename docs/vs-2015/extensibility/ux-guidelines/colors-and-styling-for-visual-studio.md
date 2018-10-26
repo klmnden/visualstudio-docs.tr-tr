@@ -13,12 +13,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b57b50672fb476cfeac3a8748202d9e7dcb47a13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51e924f14ebb8b20f193d163529096efe76318f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267416"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831764"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Renkler ve stil Visual Studio için
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,23 +26,23 @@ ms.locfileid: "49267416"
 ## <a name="using-color-in-visual-studio"></a>Visual Studio'da rengi kullanma  
  Visual Studio'da düzenleme gibi bir iletişim aracı olarak birincil renk kullanılır. Renk en düşük düzeyde kullanın ve istediğiniz durumlar için rezerve:  
   
--   Anlamı veya ilişkisi (örneğin, bir platform veya dili değiştiriciler) iletişim  
+- Anlamı veya ilişkisi (örneğin, bir platform veya dili değiştiriciler) iletişim  
   
--   Dikkatini (örneğin, bir durum değişikliği gösteren)  
+- Dikkatini (örneğin, bir durum değişikliği gösteren)  
   
--   Okunabilirliğin artırılması ve kullanıcı arabirimini gezinmek için yer işareti sağlayın  
+- Okunabilirliğin artırılması ve kullanıcı arabirimini gezinmek için yer işareti sağlayın  
   
--   Desirability artırın  
+- Desirability artırın  
   
- Visual Studio kullanıcı Arabirimi öğeleri için renk atamak için çeşitli seçenekler mevcuttur. Bazen bu şekle zor olabilir out hangi seçeneği kullanmak için beklenen olduğunuz veya doğru şekilde kullanma. Bu konuda size yardımcı olur:  
+  Visual Studio kullanıcı Arabirimi öğeleri için renk atamak için çeşitli seçenekler mevcuttur. Bazen bu şekle zor olabilir out hangi seçeneği kullanmak için beklenen olduğunuz veya doğru şekilde kullanma. Bu konuda size yardımcı olur:  
   
-1.  Visual Studio'daki renkler tanımlamak için kullanılan sistemler ve farklı Hizmetleri anlayın.  
+1. Visual Studio'daki renkler tanımlamak için kullanılan sistemler ve farklı Hizmetleri anlayın.  
   
-2.  Belirli bir öğeyi doğru seçeneğini belirleyin.  
+2. Belirli bir öğeyi doğru seçeneğini belirleyin.  
   
-3.  Doğru şekilde seçmiş olduğunuz seçeneğini kullanın.  
+3. Doğru şekilde seçmiş olduğunuz seçeneğini kullanın.  
   
- **Önemli:** asla sabit kodlamayın onaltılık, RGB veya sistem renkleri, kullanıcı Arabirimi öğeleri için. Hizmetleri kullanarak hue ayarlama esneklik sağlar. Ayrıca, hizmeti olmadan, temasını değiştirdikten yeteneklerinden yararlanmak mümkün olmayacaktır [VSColor hizmet](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
+   **Önemli:** asla sabit kodlamayın onaltılık, RGB veya sistem renkleri, kullanıcı Arabirimi öğeleri için. Hizmetleri kullanarak hue ayarlama esneklik sağlar. Ayrıca, hizmeti olmadan, temasını değiştirdikten yeteneklerinden yararlanmak mümkün olmayacaktır [VSColor hizmet](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
   
 ### <a name="methods-for-assigning-color-to-visual-studio-interface-elements"></a>Visual Studio için renk atamak için yöntemleri arabirim öğeleri  
  Kullanıcı Arabirimi öğeleri için en uygun yöntemi seçin.  
@@ -383,23 +383,23 @@ protected override void Dispose(bool disposing)
   
  Yöntemleri aracılığıyla uygulanan [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) IDE ile sağlamanız gerekir:  
   
--   Kategorideki öğeleri görüntüle listesi  
+- Kategorideki öğeleri görüntüle listesi  
   
--   Yerelleştirilebilir adlarını öğeleri görüntüle  
+- Yerelleştirilebilir adlarını öğeleri görüntüle  
   
--   Her üyesi kategori bilgilerini görüntüleme  
+- Her üyesi kategori bilgilerini görüntüleme  
   
- **Not:** her kategori en az bir görüntü öğesi içermelidir.  
+  **Not:** her kategori en az bir görüntü öğesi içermelidir.  
   
- IDE kullanır **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** çeşitli kategorileri birleşimini tanımlamak için arabirim.  
+  IDE kullanır **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** çeşitli kategorileri birleşimini tanımlamak için arabirim.  
   
- Uygulaması ile bir IDE sağlar:  
+  Uygulaması ile bir IDE sağlar:  
   
--   Belirli bir grubu oluşturan kategori listesi  
+- Belirli bir grubu oluşturan kategori listesi  
   
--   Erişim örneklerini [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) gruptaki her kategori destekleme  
+- Erişim örneklerini [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) gruptaki her kategori destekleme  
   
--   Yerelleştirilebilir grup adları  
+- Yerelleştirilebilir grup adları  
   
 #### <a name="updating-the-ide"></a>IDE güncelleştiriliyor  
  IDE yazı tipi ve renk ayarları hakkında bilgi önbelleğe alır. Bu nedenle, IDE yazı tipi ve renk yapılandırmasının her değişiklikten sonra önbelleği güncel olduğundan emin olmanın en iyi uygulamadır.  
@@ -411,13 +411,13 @@ protected override void Dispose(bool disposing)
   
  Bunu yapmak için bir VSPackage gerekir:  
   
--   **IDE tarafından oluşturulan olayları ele** uygulayarak [IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx) arabirimi. IDE yazı tipleri ve renkler sayfasının kullanıcı değişiklikleri izleyen uygun olan yöntemi çağırır. Örneğin, çağrı [OnFontChanged](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx) yeni bir yazı tipi seçtiyseniz yöntemi.  
+- **IDE tarafından oluşturulan olayları ele** uygulayarak [IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx) arabirimi. IDE yazı tipleri ve renkler sayfasının kullanıcı değişiklikleri izleyen uygun olan yöntemi çağırır. Örneğin, çağrı [OnFontChanged](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx) yeni bir yazı tipi seçtiyseniz yöntemi.  
   
- **VEYA**  
+  **VEYA**  
   
--   **IDE değişiklikleri için yoklama**. Bu sistem uygulanan yapılabilir [IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) arabirimi. Öncelikle desteği için Kalıcılık, ancak [GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) yöntemi görüntü öğeleri için yazı tipi ve renk bilgilerini elde edebilirsiniz. Yazı tipi ve renk ayarları hakkında daha fazla bilgi için bkz. MSDN makalesi [erişme depolanan yazı tipi ve renk ayarlarını](https://msdn.microsoft.com/library/bb166382.aspx).  
+- **IDE değişiklikleri için yoklama**. Bu sistem uygulanan yapılabilir [IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) arabirimi. Öncelikle desteği için Kalıcılık, ancak [GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) yöntemi görüntü öğeleri için yazı tipi ve renk bilgilerini elde edebilirsiniz. Yazı tipi ve renk ayarları hakkında daha fazla bilgi için bkz. MSDN makalesi [erişme depolanan yazı tipi ve renk ayarlarını](https://msdn.microsoft.com/library/bb166382.aspx).  
   
- **Not:** yoklama sonuçları doğru olduğundan emin olmak için kullanın [IVsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) önbellek temizleme ve güncelleştirme alma yöntemleri çağrılmadan önce gerekli olup olmadığını belirlemek için arabirimi [ IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) arabirimi.  
+  **Not:** yoklama sonuçları doğru olduğundan emin olmak için kullanın [IVsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) önbellek temizleme ve güncelleştirme alma yöntemleri çağrılmadan önce gerekli olup olmadığını belirlemek için arabirimi [ IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) arabirimi.  
   
 #### <a name="registering-custom-font-and-color-category-without-implementing-interfaces"></a>Özel yazı tipi ve renk kategorisi arabirimleri uygulama olmadan kaydetme  
  Aşağıdaki kod örneği, özel yazı tipi kaydedin ve arabirimleri uygulama olmadan kategori rengi gösterilmektedir:  

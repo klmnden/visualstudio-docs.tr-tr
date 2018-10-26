@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9ebda2068358a43ed942e25d46e58ed2f45d9733
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf13870d54de312be3e97009c07076b49785516b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635547"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913975"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>İzlenecek yol:, iş verileri kullanarak SharePoint'te dış liste oluşturma
 
@@ -232,12 +232,12 @@ Kişiler bir listede görüntülenecek BDC hizmeti etkinleştirmek için bir Bul
 
 5. İçinde `ContactService` sınıfı, yerine `ReadList` yöntemini aşağıdaki kod ile. Bu kod aşağıdaki görevleri gerçekleştirir:
 
-    - AdventureWorks veritabanının kişiler tablosundan verileri alır.
+   - AdventureWorks veritabanının kişiler tablosundan verileri alır.
 
-    - BDC hizmeti için bir kişi varlıkların listesini döndürür.
+   - BDC hizmeti için bir kişi varlıkların listesini döndürür.
 
-    > [!NOTE]
-    > Değiştirin `ServerName` alanını sunucunuzun adıyla.
+     > [!NOTE]
+     > Değiştirin `ServerName` alanını sunucunuzun adıyla.
 
      [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
      [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]

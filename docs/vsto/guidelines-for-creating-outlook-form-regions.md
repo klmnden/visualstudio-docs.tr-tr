@@ -16,78 +16,78 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dfbe02c652c53f0b7e5b2322ce76e7c022487d2e
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 535ab0329412b261b06fb2d04daefe817299dbe9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548173"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892018"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Outlook form bölgeleri oluşturma yönergeleri
-  Aşağıdaki bilgiler, form bölgeleri en iyi duruma getirme ve olası sorunları önlemenize yardımcı olabilir:  
+  Aşağıdaki bilgiler, form bölgeleri en iyi duruma getirmek ve olası sorunları önlemenize yardımcı olabilir:  
   
--   [Form bölgesi adlarını kullanın](#UsingFormRegions).  
+- [Form bölgesi adlarını kullanın](#UsingFormRegions).  
   
--   [Form bölgesi devralmayı devre dışı](#DisablingInheritance).  
+- [Form bölgesi devralmayı devre dışı bırak](#DisablingInheritance).  
   
--   [Türlerini anlamanıza ve sınıf adları iletisi](#ClassNames).  
+- [İleti sınıf adları ve türlerini anlamanız](#ClassNames).  
   
--   [Form bölgeleri okuma bölmesi için bitişik tasarım](#ReadingPane).  
+- [Form bölgeleri okuma bölmesi için bitişik tasarım](#ReadingPane).  
   
--   [En iyi simge boyutunu kullanmak](#UsingOptimal).  
+- [En iyi simgesi boyutlarını kullanın](#UsingOptimal).  
   
- Form bölgeleri hakkında daha fazla bilgi için bkz: [oluşturma Outlook form bölgeleri](../vsto/creating-outlook-form-regions.md).  
+  Form bölgeleri hakkında daha fazla bilgi için bkz. [oluşturma Outlook form bölgeleri](../vsto/creating-outlook-form-regions.md).  
   
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
+  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
 ##  <a name="UsingFormRegions"></a> Form bölgesi adlarını kullanın  
- Form bölgesini tanımlamak için kullanılan birkaç adları vardır. Bu adları ve form bölgesini nasıl etkilediklerini arasındaki farkı anlamak önemlidir. Aşağıdaki tabloda her bir adı açıklanmaktadır.  
+ Form bölgesini tanımlamak için kullanılan birkaç ad vardır. Bu adlar ve form bölgesini nasıl etkilediklerini arasındaki farkı anlamak önemlidir. Aşağıdaki tabloda, her ad açıklanmaktadır.  
   
 |Form bölgesi adı|Açıklama|  
 |----------------------|-----------------|  
-|Form bölgesi öğesi adı|İçin belirttiğiniz ad **Outlook Form bölgesi** öğesi **Yeni Öğe Ekle** iletişim kutusu. Görünür form bölgesi kod dosyası adıdır **Çözüm Gezgini**.|  
-|<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> Özelliği|Bu adı belirtmeyin **açıklayıcı metin sağlayın ve görüntüleme tercihlerini seçin** sayfasında **yeni Outlook Form bölgesi** Sihirbazı. Bu ad olarak görünür **FormRegionName** özelliğinde **özellikleri** penceresi.<br /><br /> Kullanım <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> özelliği form bölgesini Outlook kullanıcı arabiriminde (UI) tanımlayan etiketi belirtin. Ayrı form bölgeleri için bu ad Outlook öğesinin Şerit üzerindeki bir düğme olarak görünür.<br /><br /> Bitişik form bölgeleri için bu ad form bölgesini yukarıda üstbilgi metni olarak görünür.|  
-|`Microsoft.Office.Tools.Outlook.FormRegionName` Özniteliği|Eklediğinizde bir **Outlook Form bölgesi** öğe projeye, Visual Studio bu özelliğe form bölgesini tam adını ayarlar. Varsayılan tam VSTO eklenti adı noktayla form bölgesini adına bağlı adıdır — örneğin, `OutlookAddIn1.FormRegion1`.<br /><br /> Bu tam adı, form bölgesi üretici sınıfı üstündeki özniteliği olarak görünür.<br /><br /> Kullanım `Microsoft.Office.Tools.Outlook.FormRegionName` form bölgesini tüm Outlook VSTO eklentileri arasında benzersiz şekilde tanımlamak için öznitelik. Değeri değiştiremezsiniz `Microsoft.Office.Tools.Outlook.FormRegionName` özniteliği form bölgesi öğesi yeniden adlandırma veya değiştirerek <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> özelliği. Bu adını değiştirmek için değiştirmelisiniz `Microsoft.Office.Tools.Outlook.FormRegionName` form bölgesi kod dosyası özniteliği.|  
+|Form bölgesi öğesi adı|İçin belirttiğiniz ad **Outlook Form bölgesi** öğesi **Yeni Öğe Ekle** iletişim kutusu. Görüntülenen form bölgesi kod dosyası adıdır **Çözüm Gezgini**.|  
+|<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> Özelliği|Bu adla belirlediğiniz **açıklayıcı metni sağlayın ve görüntüleme tercihlerinizi seçin** sayfasının **yeni Outlook Form bölgesi** Sihirbazı. Bu ad olarak görünür **FormRegionName** özelliğinde **özellikleri** penceresi.<br /><br /> Kullanım <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> özelliğini form bölgesinin Outlook kullanıcı arabiriminde (UI) tanımlayan etiketi belirtin. Ayrı form bölgeleri için Outlook öğesinin şeridinde düğme olarak bu ad görünür.<br /><br /> Bitişik form bölgeleri için bu ad, yukarıdaki form bölgesinin üst bilgi metni olarak görünür.|  
+|`Microsoft.Office.Tools.Outlook.FormRegionName` Özniteliği|Eklediğinizde bir **Outlook Form bölgesi** öğesi projeye, Visual Studio bu özelliğe form bölgesinin tam olarak nitelenmiş adını ayarlar. Varsayılan tam adı, VSTO Eklentisi adı noktayla form bölgesinin adına bağlı. — Örneğin, `OutlookAddIn1.FormRegion1`.<br /><br /> Bu tam adı da form bölgesi fabrikası sınıfının üst özniteliği olarak görünür.<br /><br /> Kullanım `Microsoft.Office.Tools.Outlook.FormRegionName` form bölgesinin tüm Outlook VSTO eklentileri arasında benzersiz olarak tanımlamak için öznitelik. Değerini değiştiremezsiniz `Microsoft.Office.Tools.Outlook.FormRegionName` öznitelik form bölgesi öğesinin yeniden adlandırılması veya değiştirerek <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> özelliği. Bu adını değiştirmek için değiştirmelisiniz `Microsoft.Office.Tools.Outlook.FormRegionName` form bölgesi kod dosyasında özniteliği.|  
   
 ##  <a name="DisablingInheritance"></a> Form bölgesi devralmayı devre dışı bırak  
- Varsayılan olarak, özel bir ileti sınıfı temel ileti sınıfının tüm form bölgesi ilişkilendirmelerini devralır. Örneğin, bir ileti sınıfı adlı `IPM.Task.Contoso` türetilen `IPM.Task`. Bu nedenle, `IPM.Task.Contoso` form bölgesi ilişkilendirmelerini devralır `IPM.Task`.  
+ Varsayılan olarak, bir özel ileti sınıf temel ileti sınıfının tüm form bölgesi ilişkilendirmelerini devralır. Örneğin, bir ileti sınıfı adı `IPM.Task.Contoso` türetildiği `IPM.Task`. Bu nedenle, `IPM.Task.Contoso` form bölgesi ilişkilendirmelerini devralan `IPM.Task`.  
   
- Türetilen ileti sınıflarından ile ilişkilendirilmesi için form bölgesi istemiyorsanız ayarlamak <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ExactMessageClass%2A> form bölgesine özelliğinin **doğru**. Örneğin, bitişik bir form bölgesi ile ilişkilendirirseniz `IPM.Task` ve ayarlayın <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ExactMessageClass%2A> özelliğine **doğru**, form bölgesini yalnızca standart görev form sonuna eklenir. Form bölgesini özelleştirilmiş bir standart görev form sürümlerini altına eklenmemiş.  
+ Türetilen ileti sınıflarından ile ilişkilendirilecek form bölgesinin istemiyorsanız ayarlamak <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ExactMessageClass%2A> özelliği için form bölgesinin **true**. Örneğin, bitişik bir form bölgesi ile ilişkilendirirseniz `IPM.Task` ve <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ExactMessageClass%2A> özelliğini **true**, form bölgesi yalnızca standart görev formun altına eklenir. Form bölgesini standart görev formuna özelleştirilmiş tüm sürümlerini altına eklenmemiş.  
   
-##  <a name="ClassNames"></a> Türleri ve ileti sınıf adlarını anlama  
- Bir Outlook öğesi tür adını bir Outlook öğesi ileti sınıfı adından farklıdır. Örneğin, bir RSS öğesinin türü adı. `Microsoft.Office.Interop.Outlook.PostItem`. Bir RSS öğesinin ileti sınıfı adı `IPM.Post.RSS`.  
+##  <a name="ClassNames"></a> Türleri ve ileti sınıf adları anlama  
+ Bir Outlook öğesinin tür adı, bir Outlook öğesinin ileti sınıf adından farklıdır. Örneğin, bir RSS öğesinin tür adı olan `Microsoft.Office.Interop.Outlook.PostItem`. Bir RSS öğesinin ileti sınıfı adı `IPM.Post.RSS`.  
   
- Koddaki bir Outlook öğesine başvurmak için tür adı kullanın. Tür adları listesi için bkz: [form bölgesini Outlook ileti sınıfıyla ilişkilendirme](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
+ Kod bir Outlook öğesindeki başvurmak için tür adı kullanın. Tür adları listesi için bkz. [form bölgesini Outlook ileti sınıfıyla ilişkilendirme](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
   
- Outlook öğelerinde ileti sınıf adını kullanmak **yeni Outlook Form bölgesi** öğesi form bölgesini ile ilişkilendirmek için Sihirbazı. Geçerli ileti sınıfı adlarının bir listesi için bkz: [form bölgesini Outlook ileti sınıfıyla ilişkilendirme](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
+ Outlook öğelerinde ileti sınıfı adını kullanın **yeni Outlook Form bölgesi** öğesi form bölgesi ile ilişkilendirmek için Sihirbazı. Geçerli ileti sınıf adları listesi için bkz. [form bölgesini Outlook ileti sınıfıyla ilişkilendirme](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
   
-##  <a name="ReadingPane"></a> Form bölgeleri için Okuma Bölmesi bitişik tasarım  
- Outlook okuma bölmesi, bir Outlook öğesi öğeyi açmadan önizlemek için kullanabilirsiniz. Okuma bölmesi yalnızca okumak için tasarlanmıştır. Bu nedenle, bir metin kutusu gibi bitişik bir form bölgesi ekleme giriş denetimlerini ne zaman beklendiği gibi davranabilir olmayan öğe ve form bölgesi Okuma Bölmesi'nde açın.  
+##  <a name="ReadingPane"></a> Bitişik form bölgeleri okuma bölmesi için Tasarım  
+ Outlook öğesine öğesi açmadan önizlemek için Outlook Okuma Bölmesi'ni kullanabilirsiniz. Okuma bölmesi, yalnızca okumak için tasarlanmıştır. Bu nedenle, bir metin kutusu gibi bitişik bir form bölgesi ekleme giriş denetimlerinin ne zaman beklendiği gibi çalışmayabilir öğesi ve form bölgesi Okuma Bölmesi'nde açın.  
   
- Örneğin, bitişik bir form bölgesi sahip bir öğe Okuma Bölmesi'nde açık ise, aşağıdaki durum mümkündür:  
+ Örneğin, bitişik bir form bölgesi olan bir öğe Okuma Bölmesi'nde açık ise, aşağıdaki durum mümkündür:  
   
-1.  Form bölgesi üzerinde olan bir metin kutusuna bir metin seçin.  
+1. Form bölgesi üzerinde olan textbox içindeki metin seçin.  
   
-2.  Tuşuna **silmek**.  
+2. Tuşuna **Sil**.  
   
-3.  Tüm posta öğesi metni metin kutusuna yerine silinir.  
+3. Tüm posta öğesini metin yerine silinir.  
   
- Giriş denetimlerini içeren bitişik bir form bölgesi tasarlama, düzgün çalıştığından emin olmak için Okuma Bölmesi'nde denetimleri sınayın. Beklendiği gibi davranır değil denetimleri devre dışı bırakan özel kod eklemeyi düşünün.  
+   Giriş denetimlerinin bitişik bir form bölgesi tasarlıyorsanız, denetimleri düzgün çalıştığından emin olmak için Okuma Bölmesi'nde test edin. Beklendiği gibi davranmaya olmayan denetimleri devre dışı bırakan özel kod eklemeyi düşünün.  
   
- Alternatif olarak, ayarlayabileceğiniz <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ShowInspectorRead%2A> form bölgesine özelliğinin **False**. Böylece form bölgesi Okuma Bölmesi'nde kullanılamaz.  
+   Alternatif olarak, ayarlayabileceğiniz <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ShowInspectorRead%2A> özelliği için form bölgesinin **False**. Böylece form bölgesinin Okuma Bölmesi'nde kullanılamaz.  
   
-##  <a name="UsingOptimal"></a> En iyi simgesi boyutlarını kullan  
- Hangi simgeleri simgesi özellik ayarlayarak görüntülemek için form bölgesi istediğinizi belirtebilirsiniz **simgeleri** özelliği grup **özellikleri** penceresi. En iyi görsel kalite elde etmek için aşağıdaki kılavuzları kullanın:  
+##  <a name="UsingOptimal"></a> En iyi simgesi boyutlarını kullanın  
+ Hangi simgelerin simge özellik ayarlayarak görüntülemek için form bölgesinin istediğiniz belirtebilirsiniz **simgeler** özellik grubu **özellikleri** penceresi. En iyi görsel kaliteyi elde etmek için aşağıdaki yönergeleri kullanın:  
   
--   İçin **sayfa** simgesi, Taşınabilir Ağ Grafikleri (PNG) dosyası kullanın.  
+- İçin **sayfa** simgesi, Taşınabilir Ağ Grafikleri (PNG) dosyasını kullanın.  
   
--   **Pencere** simgeleri 32 x 32 piksel olmalıdır.  
+- **Pencere** simgeler 32 x 32 piksel olmalıdır.  
   
--   Diğer tüm simgeler 16 x 16 piksel olmalıdır.  
+- Diğer tüm simgeleri 16 x 16 piksel olmalıdır.  
   
- **Sayfa** ayrı, değiştirme veya tümünü değiştir form bölgeleri olan öğeler için Inspector şeridinde simgesi görünür.  
+  **Sayfa** Inspector ayrı, değiştirme ve tümünü değiştirme form bölgesi olan öğeler için Şeritteki simgesi görünür.  
   
- **Penceresi** simgesi görünür bildirim alanında hem de **Alt**+**sekmesini** Aç iletişim kutusu, bu görüntü değiştirme veya tümünü değiştir form öğeleri bölgeleri.  
+  **Penceresi** simgesi görünür bildirim alanında hem de **Alt**+**sekmesini** Aç iletişim kutusu, görüntü değiştirme veya tümünü değiştirme form öğeleri bölgeleri.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Form bölgesine çalışma zamanında erişme](../vsto/accessing-a-form-region-at-run-time.md)   

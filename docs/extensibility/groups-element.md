@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb437530e121daab218d8506bb41493c0423e826
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 816716cb269df331b17c0ef01a26dbae4a389c76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497353"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895437"
 ---
 # <a name="groups-element"></a>Groups öğesi
 VSPackage komut gruplarını tanımlar girişleri içerir.  

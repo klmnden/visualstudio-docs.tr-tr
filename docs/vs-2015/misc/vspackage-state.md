@@ -16,39 +16,39 @@ helpviewer_keywords:
 ms.assetid: 6056a9ea-e7a8-481c-9fc8-340229fa12d9
 caps.latest.revision: 25
 manager: douge
-ms.openlocfilehash: 1fee544dcf9bec9295d297f153df7f86dd464bda
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0364d7190244217bef50b50b60462d69e1fc145c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192861"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895216"
 ---
 # <a name="vspackage-state"></a>VSPackage'ı durumu
 Pek çok etken kalıcı değerleri ya da durumu, belirlemek bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uygulama.  
   
--   Projeler, proje ve yapılandırma özelliklerine sahiptir.  
+- Projeler, proje ve yapılandırma özelliklerine sahiptir.  
   
--   Çözüm özellikleri vardır.  
+- Çözüm özellikleri vardır.  
   
--   Kullanıcı ayarları, belge pencerelerini, araç pencerelerini, yerleştirme durumu ve klavye kısayolları konumunu ve boyutunu belirler.  
+- Kullanıcı ayarları, belge pencerelerini, araç pencerelerini, yerleştirme durumu ve klavye kısayolları konumunu ve boyutunu belirler.  
   
--   Uygulamalar kullanıcı seçenekleri sahip olabilir.  
+- Uygulamalar kullanıcı seçenekleri sahip olabilir.  
   
--   Uygulamanın oluşturduğu nesneler, kendi özelliklerine sahip olabilir.  
+- Uygulamanın oluşturduğu nesneler, kendi özelliklerine sahip olabilir.  
   
- Bazı yollar şunlardır, bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uygulama durumu yönetilebilir:  
+  Bazı yollar şunlardır, bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uygulama durumu yönetilebilir:  
   
--   Proje ve çözüm özellik sayfaları.  
+- Proje ve çözüm özellik sayfaları.  
   
--   Aracılığıyla **içeri ve dışarı aktarma ayarları Sihirbazı**, ayarları bir bilgisayardan diğerine taşımak bir kullanıcı etkinleştirir.  
+- Aracılığıyla **içeri ve dışarı aktarma ayarları Sihirbazı**, ayarları bir bilgisayardan diğerine taşımak bir kullanıcı etkinleştirir.  
   
--   Aracılığıyla **seçenekleri** iletişim kutusunda, uygulamalarla ilgili seçenekleri içerir.  
+- Aracılığıyla **seçenekleri** iletişim kutusunda, uygulamalarla ilgili seçenekleri içerir.  
   
--   Aracılığıyla **özellikleri** nesnelerin özelliklerini sunan penceresi.  
+- Aracılığıyla **özellikleri** nesnelerin özelliklerini sunan penceresi.  
   
--   Otomasyon sayesinde. Bir uygulama için Otomasyon karşılaştıklarını VSPackage ve nesne özelliklerine erişebilirsiniz.  
+- Otomasyon sayesinde. Bir uygulama için Otomasyon karşılaştıklarını VSPackage ve nesne özelliklerine erişebilirsiniz.  
   
- Uygulama durumunu temel uygulama durumunu geri ve kaydedilmesini sağlayan çeşitli Kalıcılık mekanizmasıdır.  
+  Uygulama durumunu temel uygulama durumunu geri ve kaydedilmesini sağlayan çeşitli Kalıcılık mekanizmasıdır.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Durum Kalıcılık desteği](../misc/support-for-state-persistence.md)  

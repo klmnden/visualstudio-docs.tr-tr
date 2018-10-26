@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f46da0c36dfdf73fc550d57e733637ec7ab1e3fb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8dcc182664832775f2aa3878fb3320e01d3901dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227930"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840109"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Nasıl yapılır: Kod Çözümleme Dizinini Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,17 +67,17 @@ Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kurallarına g
 ## <a name="custom-dictionary-elements"></a>Özel sözlük öğeleri  
  Özel sözlük aşağıdaki öğeleri iç metni olarak koşulları ekleyerek kod çözümleme dizinini davranışını değiştirebilirsiniz:  
   
--   [/ Sözcükleri/tanınan/sözcüğü](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)  
+- [/ Sözcükleri/tanınan/sözcüğü](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)  
   
--   [/ Sözcükleri/tanınmayan/sözcüğü](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)  
+- [/ Sözcükleri/tanınmayan/sözcüğü](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)  
   
--   [Sözlük/sözcükleri/kullanım dışı/terimi [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)  
+- [Sözlük/sözcükleri/kullanım dışı/terimi [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)  
   
--   [Sözlük/sözcükleri/bileşik/terimi [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)  
+- [Sözlük/sözcükleri/bileşik/terimi [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)  
   
--   [Sözlük/sözcükleri/DiscreteExceptions/terimi](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)  
+- [Sözlük/sözcükleri/DiscreteExceptions/terimi](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)  
   
--   [Sözlük/kısaltmalar/CasingExceptions/kısaltma](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
+- [Sözlük/kısaltmalar/CasingExceptions/kısaltma](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
   
 ###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> / Sözcükleri/tanınan/sözcüğü  
  Bir terim olarak doğru yazıldığından, Kod Analizi tanımlayan koşulları listesinde dahil etmek için bir sözlük/sözcükleri/Recognized/Word öğesinin iç metni terim ekleyin. Koşulları/sözcükleri/Recognized/sözcüğü öğelerinin büyük küçük harfe duyarlı değildir.  
@@ -154,11 +154,11 @@ Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kurallarına g
   
  Uyarıda önerilen alternatif bir terimi eklemek için diğer terimi öğe PreferredAlternate özniteliklerini belirtin. Alternatif önermek istemiyorsanız, öznitelik değeri boş bırakabilirsiniz.  
   
--   Sözlük/sözcükleri kullanım dışı terimini/kullanım dışı/terimi öğe büyük küçük harfe duyarlı değildir.  
+- Sözlük/sözcükleri kullanım dışı terimini/kullanım dışı/terimi öğe büyük küçük harfe duyarlı değildir.  
   
--   PreferredAlternate öznitelik değeri büyük/küçük harf duyarlıdır. Baş harfleri büyük bileşik alternatifleri için kullanın.  
+- PreferredAlternate öznitelik değeri büyük/küçük harf duyarlıdır. Baş harfleri büyük bileşik alternatifleri için kullanın.  
   
- **Örnek**  
+  **Örnek**  
   
 ```  
 <Dictionary>  
@@ -189,11 +189,11 @@ Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kurallarına g
 ###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Sözlük/sözcükleri/bileşik/terimi [@CompoundAlternate]  
  Yerleşik sözlük bazı terimi bir bileşik terimi yerine tek ve ayrık terimler olarak tanımlar. Bir terimi bir bileşik sözcük Kod Analizi tanımlayan koşulları listesini dahil etmek ve terimi doğru büyük küçük harfleri belirtmek için terim sözlüğü/sözcükleri/bileşik/terimi öğesinin iç metni ekleyin. Terim öğesinin CompoundAlternate özniteliği bileşik terimi (Pascal harf) kelimeler ilk harfi büyük harf yaparak oluşturan kelimeler belirtin. İç metni belirtilen dönem sözcükleri/sözlük/DiscreteExceptions listesine otomatik olarak eklendiğini unutmayın.  
   
--   Sözlük/sözcükleri kullanım dışı terimini/kullanım dışı/terimi öğe büyük küçük harfe duyarlı değildir.  
+- Sözlük/sözcükleri kullanım dışı terimini/kullanım dışı/terimi öğe büyük küçük harfe duyarlı değildir.  
   
--   PreferredAlternate öznitelik değeri büyük/küçük harf duyarlıdır. Baş harfleri büyük bileşik alternatifleri için kullanın.  
+- PreferredAlternate öznitelik değeri büyük/küçük harf duyarlıdır. Baş harfleri büyük bileşik alternatifleri için kullanın.  
   
- **Örnek**  
+  **Örnek**  
   
 ```  
 <Dictionary>  

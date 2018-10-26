@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: b880353b227eae86c7c35f274271fb404b62ede0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b62dc86425dcbebb225c66eecd51505f674e20ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199530"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949038"
 ---
 # <a name="how-to-update-records-in-a-database"></a>Nasıl yapılır: Veritabanındaki Kayıtları Güncelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,18 +62,18 @@ Kullanabileceğiniz `TableAdapter.Update` veritabanındaki güncelleştirin (dü
   
 #### <a name="to-update-records-in-a-database-with-the-tableadapterupdate-method-that-takes-dataset-datatable-datarow-or-datarows"></a>Veri kümesi, DataTable, DataRow veya DataRows() alan TableAdapter.Update yöntemi veritabanındaki kayıtları güncelleştirmek için  
   
-1.  Düzenlemek istediğiniz kayıtları <xref:System.Data.DataTable> doğrudan düzenleyerek <xref:System.Data.DataRow> içinde <xref:System.Data.DataTable>. Daha fazla bilgi için [nasıl yapılır: bir DataTable tablosundaki satırları düzenleme](http://msdn.microsoft.com/library/d5eea200-9bfa-4956-bf7c-08dd6fb6663c).  
+1. Düzenlemek istediğiniz kayıtları <xref:System.Data.DataTable> doğrudan düzenleyerek <xref:System.Data.DataRow> içinde <xref:System.Data.DataTable>. Daha fazla bilgi için [nasıl yapılır: bir DataTable tablosundaki satırları düzenleme](http://msdn.microsoft.com/library/d5eea200-9bfa-4956-bf7c-08dd6fb6663c).  
   
-2.  Satırları dalda düzenlendi sonra <xref:System.Data.DataTable>, çağrı `TableAdapter.Update` yöntemi. Tüm geçirerek ya da güncelleştirmek için veri miktarını denetleyebilirsiniz <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, bir dizi <xref:System.Data.DataRow>s ya da tek bir <xref:System.Data.DataRow>.  
+2. Satırları dalda düzenlendi sonra <xref:System.Data.DataTable>, çağrı `TableAdapter.Update` yöntemi. Tüm geçirerek ya da güncelleştirmek için veri miktarını denetleyebilirsiniz <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, bir dizi <xref:System.Data.DataRow>s ya da tek bir <xref:System.Data.DataRow>.  
   
-     Aşağıdaki kod, bir kaydı düzenlemek gösterilmiştir bir <xref:System.Data.DataTable> ve sonra çağrı `TableAdapter.Update` değişiklikleri veritabanına kaydetmek için yöntemi. (Bu örnekte, Northwind veritabanı bölge tablosu kullanılır.)  
+    Aşağıdaki kod, bir kaydı düzenlemek gösterilmiştir bir <xref:System.Data.DataTable> ve sonra çağrı `TableAdapter.Update` değişiklikleri veritabanına kaydetmek için yöntemi. (Bu örnekte, Northwind veritabanı bölge tablosu kullanılır.)  
   
-     [!code-csharp[VbRaddataSaving#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#17)]
-     [!code-vb[VbRaddataSaving#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#17)]  
+    [!code-csharp[VbRaddataSaving#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#17)]
+    [!code-vb[VbRaddataSaving#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#17)]  
   
- Uygulamanız, uygulamanızda verileri depolamak için nesneleri kullanıyorsa, TableAdapter bağdaştırıcısının kullanabileceğiniz `DBDirect` veri, nesneleri doğrudan veritabanına göndermek için yöntemleri. Bu yöntemlerin her bir sütunun değerlerini ayrı ayrı yöntem parametre olarak geçirmenize izin verin. Bu yöntemin çağrılması metodun Metoda geçilen sütun değerleri veritabanında varolan bir kaydı güncelleştirir.  
+   Uygulamanız, uygulamanızda verileri depolamak için nesneleri kullanıyorsa, TableAdapter bağdaştırıcısının kullanabileceğiniz `DBDirect` veri, nesneleri doğrudan veritabanına göndermek için yöntemleri. Bu yöntemlerin her bir sütunun değerlerini ayrı ayrı yöntem parametre olarak geçirmenize izin verin. Bu yöntemin çağrılması metodun Metoda geçilen sütun değerleri veritabanında varolan bir kaydı güncelleştirir.  
   
- Aşağıdaki yordam, Northwind kullanır `Region` örnek olarak bir tablo.  
+   Aşağıdaki yordam, Northwind kullanır `Region` örnek olarak bir tablo.  
   
 #### <a name="to-update-records-in-a-database-using-the-tableadapterupdate-method-that-takes-column-values"></a>Sütun değerleri alır TableAdapter.Update yöntemini kullanarak bir veritabanındaki kayıtları güncelleştirmek için  
   

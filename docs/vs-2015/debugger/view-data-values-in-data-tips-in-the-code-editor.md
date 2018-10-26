@@ -26,12 +26,12 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2da6004598d04ca91cea6e29e07ae9fcc1fb28e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: acae33e015b158c36b5e8c27b5b88131c863fc9a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273929"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949896"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Veri İpuçları'ndaki veri değerlerini kod düzenleyicide görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,16 +42,16 @@ DataTips, hata ayıklama sırasında programınızdaki değişkenleri hakkında 
   
 ### <a name="to-display-a-datatip-in-break-mode-only"></a>Bir DataTip (sadece kesme modunda) görüntülemek için  
   
-1.  Bir kaynak penceresinde, fare işaretçisini geçerli kapsamdaki herhangi bir değişken üzerine getirin.  
+1. Bir kaynak penceresinde, fare işaretçisini geçerli kapsamdaki herhangi bir değişken üzerine getirin.  
   
-     Bir DataTip görünür.  
+    Bir DataTip görünür.  
   
-    > [!NOTE]
-    >  Veri ipuçları, her zaman yürütmesi askıya alınır ve imleç değil geldiği yerde bağlamında değerlendirilir. Geçerli bağlam içinde bir değişken olarak aynı ada sahip başka bir işlev bir değişkende üzerine gelin, diğer işlev değişkenin değeri geçerli bağlamda değişkeninin değeri olarak görüntülenir.  
+   > [!NOTE]
+   >  Veri ipuçları, her zaman yürütmesi askıya alınır ve imleç değil geldiği yerde bağlamında değerlendirilir. Geçerli bağlam içinde bir değişken olarak aynı ada sahip başka bir işlev bir değişkende üzerine gelin, diğer işlev değişkenin değeri geçerli bağlamda değişkeninin değeri olarak görüntülenir.  
   
-2.  Fare işaretçisi kaldırdığınızda DataTip kaybolur. Açık kalması DataTip sabitlemek için tıklayın **kaynağına PIN** simgesi, veya  
+2. Fare işaretçisi kaldırdığınızda DataTip kaybolur. Açık kalması DataTip sabitlemek için tıklayın **kaynağına PIN** simgesi, veya  
   
-    -   Bir değişken üzerinde sağ tıklatın ve ardından **kaynağına PIN**.  
+   - Bir değişken üzerinde sağ tıklatın ve ardından **kaynağına PIN**.  
   
      Hata ayıklama oturumu sona erdiğinde sabitlenmiş DataTip kapatır.  
   

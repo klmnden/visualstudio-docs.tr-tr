@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 25bb1d9d26c9f5f4b4447af46cb48b5492429136
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: c6f25aa6aa574f856bcce7601602ed2f195e785a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549334"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949545"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Serileştirme yöntemlerini doğru uygulama
 
@@ -49,7 +49,7 @@ ms.locfileid: "45549334"
 
 - <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
 
- Serileştirme olay işleyicileri ele türünde tek bir parametre <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, dönüş `void`ve `private` görünürlük.
+  Serileştirme olay işleyicileri ele türünde tek bir parametre <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, dönüş `void`ve `private` görünürlük.
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
  Bu kural ihlalini düzeltmek için imza, dönüş türü veya seri hale getirme olay işleyicisi görünürlüğünü düzeltin.

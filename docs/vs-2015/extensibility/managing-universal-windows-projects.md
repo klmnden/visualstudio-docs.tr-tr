@@ -13,12 +13,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40d9a160d839b965c4b5f6db2413237af0af30ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd4e32c55e0e159ebaa59e0a70e41a05249bb46c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252817"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837951"
 ---
 # <a name="managing-universal-windows-projects"></a>Evrensel Windows Projelerini Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -416,116 +416,116 @@ Evrensel Windows uygulamaları, Windows 8.1 ve Windows Phone 8.1, geliştiricile
   
 ### <a name="detecting-changes-in-platform-projects-and-shared-projects"></a>Platform projeleri ve paylaşılan projeler değişiklikleri algılama  
   
-1.  Platform projelerde gibi paylaşılan projelerde değişikliklerini algılamak için hiyerarşi ve proje olayları kullanabilirsiniz. Ancak, paylaşılan proje içindeki proje öğeleri paylaşılan proje öğeleri değiştirildiğinde belirli olaylar başlatma yani görünür değildir.  
+1. Platform projelerde gibi paylaşılan projelerde değişikliklerini algılamak için hiyerarşi ve proje olayları kullanabilirsiniz. Ancak, paylaşılan proje içindeki proje öğeleri paylaşılan proje öğeleri değiştirildiğinde belirli olaylar başlatma yani görünür değildir.  
   
-     Bir projedeki bir dosyayı yeniden adlandırıldığında olayların sırasını göz önünde bulundurun:  
+    Bir projedeki bir dosyayı yeniden adlandırıldığında olayların sırasını göz önünde bulundurun:  
   
-    1.  Dosya adı diskte değişti.  
+   1. Dosya adı diskte değişti.  
   
-    2.  Proje dosyası yeni dosya adını içerecek şekilde güncelleştirilir.  
+   2. Proje dosyası yeni dosya adını içerecek şekilde güncelleştirilir.  
   
-     Hiyerarşi etkinlikleri (örneğin, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) genel olarak kullanıcı Arabiriminde görüntülenen değişiklikleri izlemek **Çözüm Gezgini**. Hiyerarşi etkinlikleri dosya silme ve ardından dosya toplama için bir dosya yeniden adlandırma işlemi göz önünde bulundurun. Ancak, hiyerarşi olay sistemi görünmeyen öğeleri değiştirildiğinde ateşlenir bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> olay ama bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> olay. Platform projesinde bir dosyayı yeniden adlandırırsanız, bu nedenle, her ikisi de size <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>, ancak paylaşılan bir proje dosyasında yeniden adlandırırsanız, yalnızca get <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>.  
+      Hiyerarşi etkinlikleri (örneğin, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) genel olarak kullanıcı Arabiriminde görüntülenen değişiklikleri izlemek **Çözüm Gezgini**. Hiyerarşi etkinlikleri dosya silme ve ardından dosya toplama için bir dosya yeniden adlandırma işlemi göz önünde bulundurun. Ancak, hiyerarşi olay sistemi görünmeyen öğeleri değiştirildiğinde ateşlenir bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> olay ama bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> olay. Platform projesinde bir dosyayı yeniden adlandırırsanız, bu nedenle, her ikisi de size <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>, ancak paylaşılan bir proje dosyasında yeniden adlandırırsanız, yalnızca get <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>.  
   
-     Proje öğelerinde değişiklikleri izlemek için DTE projesi öğesi olayları işleyebilir (olanları bulunan <xref:EnvDTE.ProjectItemsEventsClass>). Ancak, çok sayıda olayları işlemekte olduğunuz, olayları işleme daha iyi performans elde edebilirsiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>. Bu izlenecek yolda yalnızca Hiyerarşi etkinlikleri ve DTE olayları göstereceğiz. Bu yordamda, paylaşılan bir proje ve platform projesi için bir olay dinleyicisi eklersiniz. Ardından, bir paylaşılan proje dosyasında ve platform projesinde başka bir dosyaya yeniden adlandırdığınızda, her yeniden adlandırma işlemi için tetiklenen olayları görebilirsiniz.  
+      Proje öğelerinde değişiklikleri izlemek için DTE projesi öğesi olayları işleyebilir (olanları bulunan <xref:EnvDTE.ProjectItemsEventsClass>). Ancak, çok sayıda olayları işlemekte olduğunuz, olayları işleme daha iyi performans elde edebilirsiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>. Bu izlenecek yolda yalnızca Hiyerarşi etkinlikleri ve DTE olayları göstereceğiz. Bu yordamda, paylaşılan bir proje ve platform projesi için bir olay dinleyicisi eklersiniz. Ardından, bir paylaşılan proje dosyasında ve platform projesinde başka bir dosyaya yeniden adlandırdığınızda, her yeniden adlandırma işlemi için tetiklenen olayları görebilirsiniz.  
   
-     Bu yordamda, paylaşılan bir proje ve platform projesi için bir olay dinleyicisi eklersiniz. Ardından, bir paylaşılan proje dosyasında ve platform projesinde başka bir dosyaya yeniden adlandırdığınızda, her yeniden adlandırma işlemi için tetiklenen olayları görebilirsiniz.  
+      Bu yordamda, paylaşılan bir proje ve platform projesi için bir olay dinleyicisi eklersiniz. Ardından, bir paylaşılan proje dosyasında ve platform projesinde başka bir dosyaya yeniden adlandırdığınızda, her yeniden adlandırma işlemi için tetiklenen olayları görebilirsiniz.  
   
-2.  Olay dinleyicisi ekleyin. Projeye yeni bir sınıf dosyası ekleyin ve HierarchyEventListener.cs çağırın.  
+2. Olay dinleyicisi ekleyin. Projeye yeni bir sınıf dosyası ekleyin ve HierarchyEventListener.cs çağırın.  
   
-3.  HierarchyEventListener.cs dosyasını açın ve aşağıdaki using deyimlerini:  
+3. HierarchyEventListener.cs dosyasını açın ve aşağıdaki using deyimlerini:  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Shell.Interop;  
-    using Microsoft.VisualStudio;  
-    using System.IO;  
+   ```csharp  
+   using Microsoft.VisualStudio.Shell.Interop;  
+   using Microsoft.VisualStudio;  
+   using System.IO;  
   
-    ```  
+   ```  
   
-4.  Sahip `HierarchyEventListener` sınıfı uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>:  
+4. Sahip `HierarchyEventListener` sınıfı uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>:  
   
-    ```csharp  
-    class HierarchyEventListener : IVsHierarchyEvents  
-    { }  
+   ```csharp  
+   class HierarchyEventListener : IVsHierarchyEvents  
+   { }  
   
-    ```  
+   ```  
   
-5.  Üyeleri uygulamak <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>, aşağıdaki kod gibi.  
+5. Üyeleri uygulamak <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>, aşağıdaki kod gibi.  
   
-    ```csharp  
-    class HierarchyEventListener : IVsHierarchyEvents  
-    {  
-        private IVsHierarchy hierarchy;  
-        IVsOutputWindowPane output;   
+   ```csharp  
+   class HierarchyEventListener : IVsHierarchyEvents  
+   {  
+       private IVsHierarchy hierarchy;  
+       IVsOutputWindowPane output;   
   
-        internal HierarchyEventListener(IVsHierarchy hierarchy, IVsOutputWindowPane outputWindow) {  
-             this.hierarchy = hierarchy;  
-             this.output = outputWindow;  
-        }  
+       internal HierarchyEventListener(IVsHierarchy hierarchy, IVsOutputWindowPane outputWindow) {  
+            this.hierarchy = hierarchy;  
+            this.output = outputWindow;  
+       }  
   
-        int IVsHierarchyEvents.OnInvalidateIcon(IntPtr hIcon) {  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnInvalidateIcon(IntPtr hIcon) {  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnInvalidateItems(uint itemIDParent) {  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnInvalidateItems(uint itemIDParent) {  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemAdded(uint itemIDParent, uint itemIDSiblingPrev, uint itemIDAdded) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemAdded: " + itemIDAdded + "\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemAdded(uint itemIDParent, uint itemIDSiblingPrev, uint itemIDAdded) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemAdded: " + itemIDAdded + "\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemDeleted(uint itemID) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemDeleted: " + itemID + "\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemDeleted(uint itemID) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemDeleted: " + itemID + "\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemsAppended(uint itemIDParent) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemsAppended\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemsAppended(uint itemIDParent) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemsAppended\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnPropertyChanged(uint itemID, int propID, uint flags) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnPropertyChanged: item ID " + itemID + "\n");  
-            return VSConstants.S_OK;  
-        }  
-    }  
+       int IVsHierarchyEvents.OnPropertyChanged(uint itemID, int propID, uint flags) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnPropertyChanged: item ID " + itemID + "\n");  
+           return VSConstants.S_OK;  
+       }  
+   }  
   
-    ```  
+   ```  
   
-6.  Aynı sınıf içinde DTE olayı için başka bir olay işleyici ekleme <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>, her bir proje öğesini yeniden adlandırılır gerçekleşir.  
+6. Aynı sınıf içinde DTE olayı için başka bir olay işleyici ekleme <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>, her bir proje öğesini yeniden adlandırılır gerçekleşir.  
   
-    ```csharp  
-    public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)  
-    {  
-        output.OutputStringThreadSafe(string.Format("[Event] Renamed {0} to {1} in project {2}\n",  
-             oldName, Path.GetFileName(projItem.get_FileNames(1)), projItem.ContainingProject.Name));  
-    }  
-    ```  
+   ```csharp  
+   public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)  
+   {  
+       output.OutputStringThreadSafe(string.Format("[Event] Renamed {0} to {1} in project {2}\n",  
+            oldName, Path.GetFileName(projItem.get_FileNames(1)), projItem.ContainingProject.Name));  
+   }  
+   ```  
   
-7.  Hiyerarşi etkinlikleri için kaydolun. İzlediğiniz her proje için ayrı olarak kaydolmak gerekir. Aşağıdaki kodu ekleyin `ShowMessageBox`, paylaşılan proje ve diğer platformu projelerin herhangi biri için.  
+7. Hiyerarşi etkinlikleri için kaydolun. İzlediğiniz her proje için ayrı olarak kaydolmak gerekir. Aşağıdaki kodu ekleyin `ShowMessageBox`, paylaşılan proje ve diğer platformu projelerin herhangi biri için.  
   
-    ```csharp  
-    // hook up the event listener for hierarchy events on the shared project  
-    HierarchyEventListener listener1 = new HierarchyEventListener(sharedHier, output);  
-    uint cookie1;  
-    sharedHier.AdviseHierarchyEvents(listener1, out cookie1);  
+   ```csharp  
+   // hook up the event listener for hierarchy events on the shared project  
+   HierarchyEventListener listener1 = new HierarchyEventListener(sharedHier, output);  
+   uint cookie1;  
+   sharedHier.AdviseHierarchyEvents(listener1, out cookie1);  
   
-    // hook up the event listener for hierarchy events on the   
-    active project  
-    HierarchyEventListener listener2 = new HierarchyEventListener(activePlatformHier, output);  
-    uint cookie2;  
-    activePlatformHier.AdviseHierarchyEvents(listener2, out cookie2);  
-    ```  
+   // hook up the event listener for hierarchy events on the   
+   active project  
+   HierarchyEventListener listener2 = new HierarchyEventListener(activePlatformHier, output);  
+   uint cookie2;  
+   activePlatformHier.AdviseHierarchyEvents(listener2, out cookie2);  
+   ```  
   
-8.  DTE projesi öğesi etkinliğe kaydolun <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>. İkinci dinleyiciyi kanca sonra aşağıdaki kodu ekleyin.  
+8. DTE projesi öğesi etkinliğe kaydolun <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>. İkinci dinleyiciyi kanca sonra aşağıdaki kodu ekleyin.  
   
-    ```csharp  
-    // hook up DTE events for project items  
-    Events2 dteEvents = (Events2)dte.Events;  
-    dteEvents.ProjectItemsEvents.ItemRenamed += listener1.OnItemRenamed;  
+   ```csharp  
+   // hook up DTE events for project items  
+   Events2 dteEvents = (Events2)dte.Events;  
+   dteEvents.ProjectItemsEvents.ItemRenamed += listener1.OnItemRenamed;  
   
-    ```  
+   ```  
   
 9. Paylaşılan öğe değiştirin. Bir platform projesindeki paylaşılan öğeleri değiştiremez; Bunun yerine, bunları paylaşılan projede gerçek sahibi bu öğe değiştirmelisiniz. Karşılık gelen öğe kimliği ile paylaşılan projede alabileceğiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>, paylaşılan öğenin tam yolunu sunar. Ardından, paylaşılan öğeyi değiştirebilirsiniz. Değişiklik platform projelere yayılır.  
   

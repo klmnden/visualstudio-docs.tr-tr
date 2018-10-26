@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6e51fdad7d4eaaec306de396c4693d00f0b434b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 453b8b8ef4667b7f049fbd4b62dbdc582c0a84ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198867"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942887"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Visual Studio Kilidini Açma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +58,13 @@ Visual Studio Ücretsiz 30 güne kadar değerlendirebilirsiniz. IDE'de oturum a�
   
  Bu ileti aboneliğinizin hala geçerli, belirteç Visual Studio aboneliğinizi güncel tutmak için kullanır lisans yenilenmiş olmamıştır ve aşağıdakilerden biri nedeniyle süresi dolmuş olabilir ancak gösterir:  
   
-1.  Bir genişletme süre için internet bağlantısı olması veya Visual Studio kullanılan değil.  
+1. Bir genişletme süre için internet bağlantısı olması veya Visual Studio kullanılan değil.  
   
-2.  Visual Studio dışında oturumunuz.  
+2. Visual Studio dışında oturumunuz.  
   
- Lisans belirteci eski geçmeden önce Visual Studio önce yeniden kimlik bilgilerinizi girmenizi isteyen bir uyarı iletisi görünür.  
+   Lisans belirteci eski geçmeden önce Visual Studio önce yeniden kimlik bilgilerinizi girmenizi isteyen bir uyarı iletisi görünür.  
   
- Kimlik bilgilerinizi girmek değil, eski gitmek belirteç başlatır. Bu durumda, hesap ayarları iletişim kutusu, belirtecinizi tamamen süresinin dolmasına bıraktığınız kaç gün bildirir. Belirtecinizin süresi dolduktan sonra Visual Studio kullanmaya devam etmeden önce bu hesabınız veya lisansınız için kimlik bilgilerinizi başka bir yöntem ile yeniden girmeniz gerekir.  
+   Kimlik bilgilerinizi girmek değil, eski gitmek belirteç başlatır. Bu durumda, hesap ayarları iletişim kutusu, belirtecinizi tamamen süresinin dolmasına bıraktığınız kaç gün bildirir. Belirtecinizin süresi dolduktan sonra Visual Studio kullanmaya devam etmeden önce bu hesabınız veya lisansınız için kimlik bilgilerinizi başka bir yöntem ile yeniden girmeniz gerekir.  
   
 > [!IMPORTANT]
 >  Sınırlı veya internet erişimi olan ortamlarda uzun süre boyunca Visual Studio kullanıyorsanız, kesintiye uğramasını önlemek için Visual Studio kilidini açmak için bir ürün anahtarı kullanmanız gerekir.  

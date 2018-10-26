@@ -1,5 +1,5 @@
 ---
-title: İş Akışı Tasarımcısı - kalıcı etkinlik Tasarımcısı
+title: İş Akışı Tasarımcısı - Persist etkinlik Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,33 +12,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c7989f5cc37ec295f9fa778f2120dd372fd99a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 51f74b5348c7e99824659ee713171bd71c5f522e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971122"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831348"
 ---
-# <a name="persist-activity-designer"></a>Etkinlik Tasarımcısı Sürdür
+# <a name="persist-activity-designer"></a>Persist Etkinlik Tasarımcısı
 
-**Devam ettir** etkinlik Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.Activities.Statements.Persist> etkinlik.
+**Kalan** etkinlik Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.Activities.Statements.Persist> etkinlik.
 
-## <a name="the-persist-activity"></a>Etkinlik Sürdür
+## <a name="the-persist-activity"></a>Persist etkinlik
 
-<xref:System.Activities.Statements.Persist> Etkinliğini bir iş akışı Mümkünse, diske kaydeder. <xref:System.Activities.Statements.Persist> Etkinlik yürütülemez olarak, örneğin, kalıcı olmayan bölgedeki içinde bir <xref:System.Activities.Statements.TransactionScope> etkinlik. Kullanırsanız, bir <xref:System.Activities.Statements.Persist> etkinlik kalıcı olmayan kapsamında özel durum çalışma zamanında.
+<xref:System.Activities.Statements.Persist> Etkinliğini bir iş akışı mümkünse diske kaydeder. <xref:System.Activities.Statements.Persist> Etkinlik yürütülemiyor alanında bir Kalıcılık olmayan, örneğin, içinde bir <xref:System.Activities.Statements.TransactionScope> etkinlik. Kullanıyorsanız bir <xref:System.Activities.Statements.Persist> etkinlik kalıcı olmayan bir kapsam içinde bir özel durumu çalışma zamanında oluşturulur.
 
-### <a name="using-the-persist-activity-designer"></a>Kullanarak etkinlik Tasarımcısı Sürdür
+### <a name="using-the-persist-activity-designer"></a>Kullanarak Persist etkinlik Tasarımcısı
 
-**Devam ettir** etkinlik Tasarımcısı bulunabilir **çalışma zamanı** kategorisini **araç**, hangi tıklayarak erişildiğinde **araç** sekme (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
+**Kalan** etkinlik Tasarımcısı bulunabilir **çalışma zamanı** kategorisi **araç kutusu**, hangi erişilen tıklayarak **araç kutusu** sekme (Alternatif olarak, seçin **araç kutusu** gelen **görünümü** menüsünden veya CTRL + ALT + X.)
 
-**Devam ettir** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve etkinlikleri genellikle yerleştirilir olduğunda, örneğin olarak içinde açın iş akışı Tasarımcısı yüzeyini bırakılan bir <xref:System.Activities.Statements.Sequence>. Bu oluşturur bir <xref:System.Activities.Statements.Persist> varsayılan etkinlik **DisplayName** kalan. <xref:System.Activities.Activity.DisplayName%2A> Üstbilgisinde düzenlenebilir **devam ettir** etkinlik Tasarımcısı veya **DisplayName** ve özellik ızgarasının kutusu.
+**Kalan** etkinlik Tasarımcısı, gelen sürüklenebilir **araç kutusu** ve etkinlikleri genellikle yerleştirilen her yerde, gibi olarak içinde iş akışı Tasarımcısı yüzeyine açın bırakılan bir <xref:System.Activities.Statements.Sequence>. Bu, oluşturur bir <xref:System.Activities.Statements.Persist> etkinliği ile bir varsayılan **DisplayName** kalan. <xref:System.Activities.Activity.DisplayName%2A> Üst bilgisinde düzenlenebilir **kalan** etkinlik Tasarımcısı veya **DisplayName** özellik kılavuzunda kutusu.
 
-### <a name="the-persist-properties"></a>Özellikler Sürdür
+### <a name="the-persist-properties"></a>Kalıcı özellikleri
 
-Aşağıdaki tabloda <xref:System.Activities.Statements.Persist> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikleri özellik kılavuzunda düzenlenebilir ve bazı iş akışı Tasarımcısı yüzeyine düzenlenebilir.
+Aşağıdaki tabloda <xref:System.Activities.Statements.Persist> özellikleri Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikler, özellik kılavuzunda düzenlenebilir ve bunlardan bazıları iş akışı Tasarımcısı yüzeyine düzenlenebilir.
 
 |Özellik adı|Gerekli|Kullanım|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Kolay adı <xref:System.Activities.Statements.Persist> etkinlik. Kalan varsayılandır. Görünen ad kesinlikle gerekli olmamakla birlikte, bir görünen ad kullanmak için en iyi bir uygulamadır.|
 
 ## <a name="see-also"></a>Ayrıca bkz.

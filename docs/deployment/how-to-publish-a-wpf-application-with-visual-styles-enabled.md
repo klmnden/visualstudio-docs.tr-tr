@@ -10,27 +10,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c97725f4d78923384d7a3ec9f327a7dd2aca7b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: af0a07abe1cbb380acde91067e3e6252d0cd8596
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512964"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830060"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Nasıl yapılır: görsel stiller etkinken WPF uygulaması yayımlama
 Görsel stiller, kullanıcı tarafından seçilen tema göre değiştirmek için ortak denetimlerin görünümünü etkinleştirin. El ile etkinleştirmeniz gerekir, böylece varsayılan olarak, Windows Presentation Foundation (WPF) uygulamaları için görsel stillerin etkin değil. Ancak, bir WPF uygulaması için görsel stilleri etkinleştirme ve ardından çözüm yayımlama bir hataya neden olur. Bu konu, bu hatayı ve görsel stiller etkinken WPF uygulaması yayımlama işlemi açıklar. Görsel stiller hakkında daha fazla bilgi için bkz: [görsel stilleri genel bakış](/windows/desktop/Controls/visual-styles-overview). Hata iletisi hakkında daha fazla bilgi için bkz. [ClickOnce Dağıtımları içinde belirli hataları giderme](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Hatayı çözün ve Çözümü yayımlamak için aşağıdaki görevleri gerçekleştirmeniz gerekir:  
   
--   [Görsel stiller etkinken çözüm yayımlama](#publish-the-solution-without-visual-styles-enabled).  
+- [Görsel stiller etkinken çözüm yayımlama](#publish-the-solution-without-visual-styles-enabled).  
   
--   [Bir bildirim dosyası oluşturma](#create-a-manifest-file).  
+- [Bir bildirim dosyası oluşturma](#create-a-manifest-file).  
   
--   [Bildirim dosyası yayımlanmış çözüm yürütülebilir dosyasına katıştırma](#embed-the-manifest-file-into-the-executable-file-of-the-published-solution).  
+- [Bildirim dosyası yayımlanmış çözüm yürütülebilir dosyasına katıştırma](#embed-the-manifest-file-into-the-executable-file-of-the-published-solution).  
   
--   [Uygulama ve dağıtım bildirimlerini imzalamak](#sign-the-application-and-deployment-manifests).  
+- [Uygulama ve dağıtım bildirimlerini imzalamak](#sign-the-application-and-deployment-manifests).  
   
- Ardından, yayımlanan dosyaların son kullanıcıların uygulamayı yüklemek istediğiniz konuma taşıyabilirsiniz.  
+  Ardından, yayımlanan dosyaların son kullanıcıların uygulamayı yüklemek istediğiniz konuma taşıyabilirsiniz.  
   
 ##  <a name="publish-the-solution-without-visual-styles-enabled"></a>Görsel stiller etkinken çözüm yayımlama  
   
@@ -94,72 +94,72 @@ Görsel stiller, kullanıcı tarafından seçilen tema göre değiştirmek için
   
 ## <a name="embed-the-manifest-file-into-the-executable-file-of-the-published-solution"></a>Bildirim dosyası yayımlanmış çözüm yürütülebilir dosyasına katıştırma  
   
-1.  Açık **Visual Studio komut istemi**.  
+1. Açık **Visual Studio komut istemi**.  
   
-     Nasıl açılacağı hakkında daha fazla bilgi için **Visual Studio komut istemi**, bkz: [komut istemleri](/dotnet/framework/tools/developer-command-prompt-for-vs).  
+    Nasıl açılacağı hakkında daha fazla bilgi için **Visual Studio komut istemi**, bkz: [komut istemleri](/dotnet/framework/tools/developer-command-prompt-for-vs).  
   
-    > [!NOTE]
-    >  Kalan adımları, çözümünüzü hakkında aşağıdaki varsayımlar:  
-    >   
-    >  -   Çözüm adı **MyWPFProject**.  
-    > -   Çözüm, şu dizinde bulunur: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
-    >   
-    >      Çözüm şu dizine yayımlanır: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
-    > -   En son sürümü yayımlanan uygulama dosyalarını şu dizinde bulunur: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
-    >   
-    >  Adını veya yukarıda açıklanan dizin konumları kullanın gerekmez. Yukarıda açıklanan konumları ve adını yalnızca çözümünüzü yayımlamak için gerekli adımları göstermek için kullanılır.  
+   > [!NOTE]
+   >  Kalan adımları, çözümünüzü hakkında aşağıdaki varsayımlar:  
+   > 
+   > - Çözüm adı **MyWPFProject**.  
+   >   -   Çözüm, şu dizinde bulunur: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
+   > 
+   >   Çözüm şu dizine yayımlanır: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
+   >   -   En son sürümü yayımlanan uygulama dosyalarını şu dizinde bulunur: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
+   > 
+   >   Adını veya yukarıda açıklanan dizin konumları kullanın gerekmez. Yukarıda açıklanan konumları ve adını yalnızca çözümünüzü yayımlamak için gerekli adımları göstermek için kullanılır.  
   
-2.  Komut isteminde yolu yayımlanan uygulama dosyalarının en son sürümünü içeren dizine geçin. Aşağıdaki örnek, bu adım gösterir.  
+2. Komut isteminde yolu yayımlanan uygulama dosyalarının en son sürümünü içeren dizine geçin. Aşağıdaki örnek, bu adım gösterir.  
   
-    ```cmd  
-cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
-    ```  
+   ```cmd  
+   cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
+   ```  
   
-3.  Komut isteminde, bildirim dosyasını uygulama yürütülebilir dosyasına eklemek için aşağıdaki komutu çalıştırın.  
+3. Komut isteminde, bildirim dosyasını uygulama yürütülebilir dosyasına eklemek için aşağıdaki komutu çalıştırın.  
   
-    ```cmd
-    mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
-    ```  
+   ```cmd
+   mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
+   ```  
   
 ## <a name="sign-the-application-and-deployment-manifests"></a>Uygulama ve dağıtım bildirimlerini imzalama  
   
-1.  Komut isteminde kaldırmak için aşağıdaki komutu çalıştırın *.deploy* yürütülebilir dosyayı geçerli dizinde uzantı.  
+1. Komut isteminde kaldırmak için aşağıdaki komutu çalıştırın *.deploy* yürütülebilir dosyayı geçerli dizinde uzantı.  
   
-    ```cmd  
-    ren MyWPFApp.exe.deploy MyWPFApp.exe  
-    ```  
+   ```cmd  
+   ren MyWPFApp.exe.deploy MyWPFApp.exe  
+   ```  
   
-    > [!NOTE]
-    >  Bu örnek yalnızca bir dosya olan varsayar *.deploy* dosya uzantısı. Bu dizinde sahip tüm dosyaları yeniden adlandırma emin *.deploy* dosya uzantısı.  
+   > [!NOTE]
+   >  Bu örnek yalnızca bir dosya olan varsayar *.deploy* dosya uzantısı. Bu dizinde sahip tüm dosyaları yeniden adlandırma emin *.deploy* dosya uzantısı.  
   
-2.  Komut isteminde, uygulama bildirimini imzalayın için aşağıdaki komutu çalıştırın.  
+2. Komut isteminde, uygulama bildirimini imzalayın için aşağıdaki komutu çalıştırın.  
   
-    ```cmd  
-    mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```cmd  
+   mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  Bu örnek bildirim kullanarak oturum varsayar *.pfx* proje dosyası. Bildirimi imzalamak değil, atlayabilirsiniz `-cf` Bu örnekte kullanılan parametre. Parola gerektiren bir sertifika bildirimine kaydoluyorsanız belirtin `-password` seçeneği (`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`).  
+   > [!NOTE]
+   >  Bu örnek bildirim kullanarak oturum varsayar *.pfx* proje dosyası. Bildirimi imzalamak değil, atlayabilirsiniz `-cf` Bu örnekte kullanılan parametre. Parola gerektiren bir sertifika bildirimine kaydoluyorsanız belirtin `-password` seçeneği (`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`).  
   
-3.  Komut isteminde eklemek için aşağıdaki komutu çalıştırın *.deploy* bu yordamın önceki bir adımda yeniden adlandırılmış dosya adı uzantısı.  
+3. Komut isteminde eklemek için aşağıdaki komutu çalıştırın *.deploy* bu yordamın önceki bir adımda yeniden adlandırılmış dosya adı uzantısı.  
   
-    ```  
-    ren MyWPFApp.exe MyWPFApp.exe.deploy  
-    ```  
+   ```  
+   ren MyWPFApp.exe MyWPFApp.exe.deploy  
+   ```  
   
-    > [!NOTE]
-    >  Bu örnek yalnızca bir dosya varsayar sahip bir *.deploy* dosya uzantısı. Daha önce olduğu bu dizindeki tüm dosyaları yeniden adlandırma emin *.deploy* dosya adı uzantısı.  
+   > [!NOTE]
+   >  Bu örnek yalnızca bir dosya varsayar sahip bir *.deploy* dosya uzantısı. Daha önce olduğu bu dizindeki tüm dosyaları yeniden adlandırma emin *.deploy* dosya adı uzantısı.  
   
-4.  Komut isteminde, dağıtım bildirimini imzalamak için aşağıdaki komutu çalıştırın.  
+4. Komut isteminde, dağıtım bildirimini imzalamak için aşağıdaki komutu çalıştırın.  
   
-    ```  
-    mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```  
+   mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  Bu örnek bildirim kullanarak oturum varsayar *.pfx* proje dosyası. Bildirimi imzalamak değil, atlayabilirsiniz `-cf` Bu örnekte kullanılan parametre. Parola gerektiren bir sertifika bildirimine kaydoluyorsanız belirtin `-password` seçeneği, bu örnekte olduğu gibi:`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`.  
+   > [!NOTE]
+   >  Bu örnek bildirim kullanarak oturum varsayar *.pfx* proje dosyası. Bildirimi imzalamak değil, atlayabilirsiniz `-cf` Bu örnekte kullanılan parametre. Parola gerektiren bir sertifika bildirimine kaydoluyorsanız belirtin `-password` seçeneği, bu örnekte olduğu gibi:`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`.  
   
- Bu adımları gerçekleştirdikten sonra yayımlanan dosyaları son kullanıcıların uygulamayı yüklemek istediğiniz konuma taşıyabilirsiniz. Çözüm sık sık güncelleştirme yapmak istiyorsanız, bir komut dosyasına bu komutları taşıyabilir ve her seferinde yeni bir sürüm yayımlayın betiği çalıştırın.  
+   Bu adımları gerçekleştirdikten sonra yayımlanan dosyaları son kullanıcıların uygulamayı yüklemek istediğiniz konuma taşıyabilirsiniz. Çözüm sık sık güncelleştirme yapmak istiyorsanız, bir komut dosyasına bu komutları taşıyabilir ve her seferinde yeni bir sürüm yayımlayın betiği çalıştırın.  
   
 ## <a name="see-also"></a>Ayrıca bkz.
 

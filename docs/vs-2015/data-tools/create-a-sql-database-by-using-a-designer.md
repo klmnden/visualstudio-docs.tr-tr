@@ -28,12 +28,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 8a1765c142fcf039b28b2e1c2e6ad1bf7038aaa9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0ef261ec4ea803dcfc42b6151a5c828d5b03811a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220759"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860337"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Bir tasarımcı kullanarak bir SQL veritabanı oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,23 +58,23 @@ Tablo ekleme ve SQL Server Express LocalDB içinde yerel veritabanı dosyası ol
   
 #### <a name="to-create-a-project-and-a-database-file"></a>Bir proje ve yerel veritabanı dosyası oluşturmak için  
   
-1.  Adlı bir Windows Forms projesi oluşturun `SampleDatabaseWalkthrough`.  
+1. Adlı bir Windows Forms projesi oluşturun `SampleDatabaseWalkthrough`.  
   
-2.  Menü çubuğunda, seçin **proje** > **Yeni Öğe Ekle**.  
+2. Menü çubuğunda, seçin **proje** > **Yeni Öğe Ekle**.  
   
-3.  Öğe şablonları listesinde, aşağı kaydırın ve **hizmet tabanlı veritabanı**.  
+3. Öğe şablonları listesinde, aşağı kaydırın ve **hizmet tabanlı veritabanı**.  
   
-     ![Öğe şablonları iletişim kutusunda](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
+    ![Öğe şablonları iletişim kutusunda](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
   
-4.  Veritabanı adı **SampleDatabase**ve ardından **Ekle** düğmesi.  
+4. Veritabanı adı **SampleDatabase**ve ardından **Ekle** düğmesi.  
   
-5.  Varsa **veri kaynakları** penceresi açık değilse, Shift + Alt + D tuşlarını seçerek veya menü çubuğundan seçerek açın **görünümü** > **diğer Windows**  >  **Veri kaynakları**.  
+5. Varsa **veri kaynakları** penceresi açık değilse, Shift + Alt + D tuşlarını seçerek veya menü çubuğundan seçerek açın **görünümü** > **diğer Windows**  >  **Veri kaynakları**.  
   
-6.  İçinde **veri kaynakları** penceresinde **yeni veri kaynağı Ekle** bağlantı.  
+6. İçinde **veri kaynakları** penceresinde **yeni veri kaynağı Ekle** bağlantı.  
   
-7.  İçinde **veri kaynağı Yapılandırma Sihirbazı**seçin **sonraki** düğmesini dört kez varsayılan ayarları kabul edin ve ardından **son** düğmesi.  
+7. İçinde **veri kaynağı Yapılandırma Sihirbazı**seçin **sonraki** düğmesini dört kez varsayılan ayarları kabul edin ve ardından **son** düğmesi.  
   
- Veritabanı için özellikler penceresini açarak bağlantı dizesini ve birincil .mdf dosyasının konumunu görüntüleyebilirsiniz. Veritabanı dosyası proje klasöründe olduğunu görürsünüz.  
+   Veritabanı için özellikler penceresini açarak bağlantı dizesini ve birincil .mdf dosyasının konumunu görüntüleyebilirsiniz. Veritabanı dosyası proje klasöründe olduğunu görürsünüz.  
   
 -   Visual Studio'da **görünümü** > **SQL Server Nesne Gezgini** Bu pencere hala açık değilse. Özellikler penceresini genişleterek açmak **veri bağlantıları** düğüm, Sampledatabase.mdf'nin kısayol menüsünü açarak ve ardından **özellikleri**.  
   

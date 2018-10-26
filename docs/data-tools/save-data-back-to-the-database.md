@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 426377d82385cd42de5dd265b0e727a94c0b24d1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e33fa9b6047cbe470702cebdbb27f74d074e460e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177350"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916913"
 ---
 # <a name="save-data-back-to-the-database"></a>Verileri yeniden veritabanına kaydetme
 
@@ -73,21 +73,21 @@ Bir veri kümesi tarafından içeriğini güncelleştirebilirsiniz *birleştirme
 Veri kümeleri birleştirme işlemi gerçekleştirirken, Boole bir bağımsız değişken geçirebilirsiniz (`preserveChanges`) başarılı olduğunu anlatan <xref:System.Data.DataSet.Merge%2A> yöntemi mi hedef kümesindeki var olan değişiklikleri saklamak. Veri kümeleri kayıtları birden çok sürümünü korumak için birden fazla sürüm kayıtlarının birleştirilmiş olduğunu aklınızda bulundurun önemlidir. Aşağıdaki tablo, bir kayıtta iki veri kümesi nasıl birleştirileceğini gösterir:
 
 |DataRowVersion|Hedef veri kümesi|Kaynak veri kümesi|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |Özgün|James Wilson|James c Wilson|
 |Geçerli|Jim Wilson|James c Wilson|
 
 Çağırma <xref:System.Data.DataSet.Merge%2A> yöntemi ile önceki tabloda `preserveChanges=false targetDataset.Merge(sourceDataset)` sonuçları aşağıdaki verileri:
 
 |DataRowVersion|Hedef veri kümesi|Kaynak veri kümesi|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |Özgün|James c Wilson|James c Wilson|
 |Geçerli|James c Wilson|James c Wilson|
 
 Çağırma <xref:System.Data.DataSet.Merge%2A> yöntemiyle `preserveChanges = true targetDataset.Merge(sourceDataset, true)` sonuçları aşağıdaki verileri:
 
 |DataRowVersion|Hedef veri kümesi|Kaynak veri kümesi|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |Özgün|James c Wilson|James c Wilson|
 |Geçerli|Jim Wilson|James c Wilson|
 
@@ -128,7 +128,7 @@ Dataset içindeki değişiklikleri hakkında bilgi, iki yolla saklanır: Bunlar 
 Aşağıdaki tabloda olası değerlerini ayrıntıları <xref:System.Data.DataRowState> sabit listesi:
 
 |DataRowState değeri|Açıklama|
-|------------------------|-----------------|
+| - |-----------------|
 |<xref:System.Data.DataRowState.Added>|Satır için bir öğe olarak eklenmiş olan bir <xref:System.Data.DataRowCollection>. (Bunu mevcut olmadığından bu durumdaki bir satır karşılık gelen bir özgün sürümüne sahip değil, son <xref:System.Data.DataRow.AcceptChanges%2A> yöntemi çağrıldı).|
 |<xref:System.Data.DataRowState.Deleted>|Kullanarak satır silindi <xref:System.Data.DataRow.Delete%2A> , bir <xref:System.Data.DataRow> nesne.|
 |<xref:System.Data.DataRowState.Detached>|Satır oluşturuldu, ancak herhangi bir parçası değil <xref:System.Data.DataRowCollection>. A <xref:System.Data.DataRow> nesnesi oluşturulduktan sonra önce bir koleksiyonuna eklendikten hemen ve koleksiyondan kaldırıldıktan sonra bu durumda olan.|
@@ -142,7 +142,7 @@ Veri kümeleri, birden çok sürümünü kayıtları korur. <xref:System.Data.Da
 Aşağıdaki tabloda olası değerlerini ayrıntıları <xref:System.Data.DataRowVersion> sabit listesi:
 
 |DataRowVersion değeri|Açıklama|
-|--------------------------|-----------------|
+| - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|Bir kaydın geçerli sürümünü son daraltılmasından kayıt üzerinde gerçekleştirilen tüm değişiklikleri içeren <xref:System.Data.DataRow.AcceptChanges%2A> çağrıldı. Satır silinmiş olması durumunda geçerli sürümü yoktur.|
 |<xref:System.Data.DataRowVersion.Default>|Veri kümesi şemasını veya verileri kaynak tarafından tanımlanan bir kaydı, varsayılan değeri.|
 |<xref:System.Data.DataRowVersion.Original>|Son saat değişikliklerini kümesinde kaydedilmiş haliyle bir kaydın orijinal sürümünü kayıt kopyasıdır. Pratikte, bu genellikle bir kaydın okundu olarak bir veri kaynağından sürümüdür.|
@@ -276,7 +276,7 @@ UPDATE deyiminde, her iki yeni değerler (Bu kaydı için yazılır) eski değer
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio'da veri kümesi araçları](../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio'daki veri kümesi araçları](../data-tools/dataset-tools-in-visual-studio.md)
 - [TableAdapter’lar oluşturma ve yapılandırma](create-and-configure-tableadapters.md)
 - [TableAdapter kullanarak verileri güncelleştirme](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md)

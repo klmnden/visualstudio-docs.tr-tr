@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cd391cd922d32dc466a30e5ff1bf037cbd22a33
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: bc225862ee4b9fbc2c4c94aaab4f410719391ee7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371036"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926598"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Test denetleyicilerini ve test aracılarını yönetme
 
@@ -52,7 +52,7 @@ Farklı test denetleyicisine test aracısı eklemek isteyebilirsiniz veya yükl�
       2. Parolayı girin **parola**.
 
         |**Önemli kullanıcı hesabı bilgileri**|
-        |--------------------------------------------|
+        |-|
         |-Null parolalar kullanıcı hesapları için desteklenmez.|
         |IntelliTrace collector ya da ağ öykünmesini kullanmak istiyorsanız, kullanıcı hesabı Yöneticileri grubunun bir üyesi olmalıdır.|
         |-Aracı kullanıcı adı Aracı hizmeti içinde değilse, bunu eklemek test denetleyicisi üzerinde izinler gerektirir dener.|
@@ -115,7 +115,7 @@ Bir test aracısı kaldırılmadan önce çevrimdışı duruma ayarlanması gere
 Test aracısın durumu aşağıdaki değerlerden biri olabilir:
 
 |Durum|Açıklama|
-|------------|-----------------|
+|-|-----------------|
 |Çalışan Test|Testleri çalıştırma|
 |Hazır|Testleri çalıştırmak veya veri toplamak ve tanılamak kullanılabilir|
 |Çevrimdışı|Testleri çalıştırmak veya veri toplamak ve tanılamak kullanılamaz|
@@ -141,7 +141,7 @@ Durum ve diğer ayarları için aşağıdaki yordamları kullanarak test aracıs
 1. Aşağıdaki test aracısı özelliklerini gerektiği gibi değiştirin:
 
 |Test aracısı özelliği|Açıklama|
-|-------------------------|-----------------|
+|-|-----------------|
 |**Ağırlığı**|Test aracılarını farklı performans düzeyleriyle kullandığınızda yükü dağıtmak için kullanılır. Örneğin, 100 ağırlığı ile bir test aracısı, 50 ağırlığı ile bir test aracısı yükünün iki katı alır.|
 |**IP geçişi**|IP geçişini yapılandırmak için kullanılır. IP geçişi, bir IP adresi aralığı kullanarak bir sunucuya istek göndermek bir test aracısı sağlar. Bu, farklı istemci bilgisayarlardan gelen çağrıların benzetimini yapar.<br /><br /> Yük testiniz web grubuna erişiyorsa IP geçişi önemlidir. Çoğu yük dengeleyicileri, istemcinin IP adresini kullanarak bir istemci ve belirli bir web sunucusu arasında benzeşim kurar. Tüm istekler tek bir istemciden geliyor gibi görünüyorsa, yük dengeleyicisi yükü dengelemez. Web grubunda iyi bir yük dengesi edinmek için istekleri bir dizi IP adreslerinden geldiğinden emin olun. **Not:** bir ağ bağdaştırıcısı belirtebilir veya kullanın **(Tümü Atanmamış)** otomatik olarak şu anda kullanılmayan birini seçmek için. <br /><br /> IP geçiş özelliğini kullanmak için Visual Studio Test aracısı hizmetinin o aracı bilgisayar için Yöneticiler grubundaki bir kullanıcı olarak çalıştırılması gerekir. Bu kullanıcı, aracı kurulumu sırasında seçilir, ancak hizmet özelliklerini değiştirme ve yeniden başlatarak değiştirilebilir.<br /><br /> IP geçişinin düzgün çalıştığını doğrulamak için IIS web sunucusunda günlüğe kaydetmeyi etkinleştirmek için isteklerin yapılandırdığınız IP adreslerinden geldiğini doğrulamak için IIS günlüğü işlevini kullanın.|
 |**Öznitelikler**|Test aracısı seçiminde kullanılabilecek ad/değer çiftleri kümesi. Örneğin, bir test belirli bir OS gerektirebilir. Öznitelik ekleyebilirsiniz **rolleri** sekmesinde test öznitelikleri eşleşen bir test aracısı seçmek için ayarları dosyası ve bunlar kullanılabilir. Birden fazla makinede test çalıştırmak isterseniz, testlerinizi çalıştırmak üzere yapılandırılmış test ayarları rolünde bir öznitelik oluşturun ve sonra ilgili rolde kullanmak istediğiniz her test aracısı üzerinde eşleştirme özniteliğini yapılandırın... **Not:** Bu ayar yalnızca bu öznitelikler sadece Visual Studio için test ayarlarında kullanılır çünkü bir proje için kaydedilmemiş bir test denetleyicisiyle kayıtlı test aracıları için kullanılabilir.|

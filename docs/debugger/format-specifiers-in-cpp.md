@@ -1,5 +1,5 @@
 ---
-title: Biçim belirticiler hata ayıklayıcı (C++) | Microsoft Docs
+title: Biçim tanımlayıcıları (C++) hata ayıklayıcısı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -29,26 +29,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3bd99ed0a4350dbaf8c2e158f8b86464f50393c4
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 714ca84a860f01ecc0df6536adb5ea9bb60989fa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057762"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820505"
 ---
-# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısında C++ içindeki Biçim belirticileri
-İçinde bir değer görüntülenir biçimini değiştirebilirsiniz **izleme** penceresi biçim belirticilerini kullanma.  
+# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı C++ içindeki Biçim belirticileri
+İçinde bir değer görüntülenir biçimini değiştirebilirsiniz **Watch** penceresi biçim belirticilerini kullanma.  
   
- İçindeki Biçim belirticileri de kullanabilirsiniz **hemen** penceresinde **komutu** penceresi, [tracepoints](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)ve hatta kaynak windows. Bu windows deyimde üzerinde duraklatma sonucu DataTip içinde görüntülenir. DataTip görüntü biçim belirteci yansıtır.  
+ İçindeki Biçim belirticileri kullanabilirsiniz **hemen** penceresinde **komut** penceresi içinde [izleme noktaları](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)ve hatta kaynak pencerelerinde. Bu pencereler içinde bir ifade üzerinde duraklarsanız, sonuç DataTip içinde görünür. DataTip görünen biçim belirticisini yansıtır.  
   
 > [!NOTE]
->  Visual Studio yerel hata ayıklayıcı için yeni bir hata ayıklama motoru değiştirildiğinde, bazı yeni biçim belirticileri eklendi ve bazı eskilerle kaldırıldı. (Karışık yerel ve yönetilen) birlikte çalışabilirliği yaptığınızda eski hata ayıklayıcı hala kullanılan hata ayıklama C + +/ CLI. Bu konudaki aşağıdaki bölümler her hata ayıklama altyapısı için biçim belirticileri gösterir.
->   
->  -   [Biçim belirticiler](#BKMK_Visual_Studio_2012_format_specifiers) yeni hata ayıklama altyapısı içindeki Biçim belirticileri açıklar.  
-> -   [Biçim belirticiler birlikte çalışma C + ile hata ayıklama için +/ CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) eski hata ayıklama altyapısı içindeki Biçim belirticileri açıklar.  
+>  Visual Studio yerel hata ayıklayıcı için yeni bir hata ayıklama motoru değiştiğinde, bazı yeni biçimli belirteçler eklendi eklenen ve bazı eskileri kaldırıldı. (Karışık özgün ve yönetilen) birlikte çalışabilirliği bunu yaptığınızda eski hata ayıklayıcı hala kullanılmaktadır hata ayıklamayı C + +/ CLI. Bu konudaki aşağıdaki bölümler her hata ayıklama altyapısı için biçim belirteçlerini gösterir.
+> 
+> - [Biçim belirleyiciler](#BKMK_Visual_Studio_2012_format_specifiers) yeni hata ayıklama altyapısındaki biçim belirteçlerini açıklar.  
+>   -   [Biçim belirleyiciler birlikte çalışma C + ile hata ayıklama için +/ CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) eski hata ayıklama altyapısında biçimi Belirleyicileri açıklar.  
   
 ## <a name="using-format-specifiers"></a>Biçim belirticilerini kullanma  
- Aşağıdaki kodu varsa:  
+ Aşağıdaki koda sahipseniz:  
   
 ```C++  
 int main() {  
@@ -58,90 +58,90 @@ int main() {
 }  
 ```  
   
- Ekleme `my_var1` değişkenini **izleme** penceresi (hata ayıklama, **hata ayıklama > Windows > İzleme > İzleme 1**) ve görüntü onaltılık-ayarlayın (içinde **izlemek**penceresinde, değişkeni sağ tıklatın ve seçin **onaltılı görüntü**). Şimdi Gözcü penceresi 0x0065 değeri içerdiğini gösterir. Bkz. Bu değer Ad sütununda bir tamsayı yerine karakter olarak değişken adını sonra ifade karakter biçim belirticisi eklemek için **c**. **Değeri** sütun artık görünür ile **101 'e'**.  
+ Ekleme `my_var1` değişkenini **Watch** penceresi (hata ayıklarken, **hata ayıklama > Windows > İzleme > Watch 1**) ve ardından görünen onaltılığa ayarlayın (içinde **izleyin**penceresinde, değişkeni sağ tıklatın ve seçin **onaltılık gösterim**). Artık İzleme penceresinde 0x0065 değeri içerdiğini gösterir. Bir karakterin Biçim belirleyicisi bakın Ad sütununda bir tamsayı yerine bir karakter değişken adından sonra ifade bu değeri eklemek için **c**. **Değer** sütunu artık görünür ile **101 'e'**.  
   
  ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")  
   
-##  <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Biçim belirticiler  
- Aşağıdaki tablolarda, Visual Studio'da kullanabileceğiniz biçim belirticileri gösterilmektedir. Kalın yazı tipiyle tanımlayıcıları birlikte çalışma C + ile hata ayıklama için desteklenmez +/ CLI.  
+##  <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Biçim belirticileri  
+ Aşağıdaki tablolarda, Visual Studio'da kullanabileceğiniz biçim tanımlayıcıları gösterilmektedir. Kalın yazılı tanımlayıcıları birlikte çalışma C + ile hata ayıklama için desteklenmez +/ CLI.  
   
-|Belirleyici|Biçimi|Özgün izleme değeri|Görüntülenen değeri|  
+|Belirleyici|Biçimi|Özgün izleme değeri|Görüntülenen değer|  
 |---------------|------------|--------------------------|---------------------|  
-|d|ondalık tamsayı|0x00000066|102|  
-|o|İmzasız sekizlik tamsayı|0x00000066|000000000146|  
-|x<br /><br /> **h**|onaltılık tamsayı|102|0xcccccccc|  
-|X<br /><br /> **H**|onaltılık tamsayı|102|0xCCCCCCCC|  
-|c|tek bir karakter|0x0065, c|101 'e'|  
-|s|const char * dizesini|\<Konum > "hello world"|"hello world"|  
-|**sb**|const char * dizesini (tırnak işareti)|\<Konum > "hello world"|Merhaba Dünya|  
-|s8|UTF-8 dize|\<Konum > "UTF-8 Kahve fincanı â˜• olduğu"|"UTF-8 Kahve fincanı ☕ olduğu"|
-|**s8b**|UTF-8 dize (tırnak işareti)|\<Konum > "hello world"|Merhaba Dünya|  
-|Su|Unicode (UTF-16 kodlamasını) dizesi|\<Konum > L "hello world"|L "hello world"<br /><br /> "hello world" u|  
-|Sub|Unicode (UTF-16 kodlamasını) dizesi (tırnak işareti)|\<Konum > L "hello world"|Merhaba Dünya|  
-|bstr|BSTR dizesi|\<Konum > L "hello world"|L "hello world"|  
-|env|Ortam öbeği (çift null sonlandırılmış dize)|\<Konum > L "=:: =::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
-|**s32**|UTF-32 dize|\<Konum > U "hello world"|U "hello world"|  
-|**s32b**|UTF-32 dize (tırnak işareti)|\<Konum > U "hello world"|Merhaba Dünya|  
+|d|Ondalık tamsayı|0x00000066|102|  
+|o|imzalanmamış sekizlik tamsayı|0x00000066|000000000146|  
+|x<br /><br /> **h**|Onaltılık tamsayı|102|0xcccccccc|  
+|X<br /><br /> **H**|Onaltılık tamsayı|102|0xCCCCCCCC|  
+|c|tek karakter|0x0065, c|101 'e'|  
+|s|const char * dizesini|\<konumu > "hello world"|"hello world"|  
+|**sb**|const char * dizesini (tırnak işareti)|\<konumu > "hello world"|Merhaba Dünya|  
+|s8|UTF-8 dizesi|\<konumu > "Bu bir UTF-8 kahve cup â˜•"|"Bu bir UTF-8 kahve cup ☕"|
+|**s8b**|UTF-8 dizesi (tırnak işareti)|\<konumu > "hello world"|Merhaba Dünya|  
+|Su|Unicode (UTF-16 kodlaması) dizesi|\<Konum > L "Merhaba Dünya"|L "Merhaba Dünya"<br /><br /> "hello world" u|  
+|alt|Unicode (UTF-16 kodlaması) dizesi (tırnak işareti)|\<Konum > L "Merhaba Dünya"|Merhaba Dünya|  
+|bstr|BSTR dizesi|\<Konum > L "Merhaba Dünya"|L "Merhaba Dünya"|  
+|env|Ortam bloğuna (çift null sonlandırılan dize)|\<Konum > L "=:: =::\\\\"|L "=:: =::\\\\\\0 = C: C =:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
+|**s32**|UTF-32 dize|\<konumu > "hello world" U|"hello world" u|  
+|**s32b**|UTF-32 dize (tırnak işareti)|\<konumu > "hello world" U|Merhaba Dünya|  
 |**tr**|enum|Saturday(6)|Cumartesi|  
-|**hv**|İşaretçi türü - Denetlenmekte olan işaretçi değeri, dizi yığın ayırma sonucunu örneğin olduğunu gösterir `new int[3]`.|\<Konum > {\<ilk üye >}|\<Konum > {\<ilk üye >, \<ikinci üye >,...}|  
-|**na**|Bir nesne işaretçinin bellek adresi gizler.|\<Konum >, {üye = değer...}|{üye = değer...}|  
-|**ND**|Türetilen sınıflar yoksayılıyor yalnızca temel sınıf bilgileri görüntüler|`(Shape*) square` taban sınıfı içerir ve türetilmiş sınıf bilgileri|Görüntüler yalnızca temel sınıf bilgileri|  
-|İK|HRESULT veya Win32 hata kodu. (Bu belirleyici bu gibi durumlarda gerekli değil için hata ayıklayıcı şimdi HRESULTs otomatik olarak kodunu çözer.|S_OK|S_OK|  
+|**hv**|İşaretçi türü - Denetlenmekte olan işaretçi değeri bir dizi yığın ayırma sonucunu örneğin olduğunu gösterir `new int[3]`.|\<Konum > {\<ilk üye >}|\<Konum > {\<ilk üye >, \<ikinci üye >,...}|  
+|**na**|Bir işaretçinin bir nesne için bellek adresi bastırır.|\<Konum >, {üye = değer...}|{üye = değer...}|  
+|**ND**|Türetilmiş sınıfları yok yalnızca temel sınıf bilgilerini görüntüler|`(Shape*) square` temel sınıf içerir ve türetilen sınıf bilgileri|Görüntüler, yalnızca sınıf bilgileri temel|  
+|İK|HRESULT veya Win32 hata kodu. (Bu belirtici söz konusu durumlarda gerekli değil için hata ayıklayıcı artık HRESULTs otomatik olarak çözer.|S_OK|S_OK|  
 |WC|Pencere sınıfı bayrağı|0x0010|WC_DEFAULTCHAR|  
-|WM|Windows ileti numarası|16|WM_CLOSE|  
-|!|RW biçimi, veri türü görünümleri özelleştirmeler yoksayılıyor|\<gösterimi özelleştirilmiş >|4|  
+|WM|Windows ileti numaraları|16|WM_CLOSE KOMUTU|  
+|!|herhangi bir veri türü görünümü özelleştirmelerini yok sayan, ham biçim|\<gösterim özelleştirilmiş >|4|  
   
 > [!NOTE]
->  Zaman **hv** biçim belirticisi varsa, arabellek uzunluğu belirlemek ve öğeleri uygun sayısını görüntülemek hata ayıklayıcı çalışır. Her zaman bir dizi tam arabellek boyutunu bulmak için hata ayıklayıcı mümkün olmadığı için bir boyut belirticisi kullanması gereken `(pBuffer,[bufferSize])` mümkün olduğunda. **Hv** biçim belirteci arabellek boyutu kullanıma hazır olduğu senaryoları için tasarlanmıştır  
+>  Zaman **hv** Biçim belirleyicisi varsa, hata ayıklayıcı arabellek uzunluğunu belirlemek ve uygun öğelerin sayısını görüntülemek çalışır. Her zaman bir dizinin tam arabellek boyutunu bulmak hata ayıklayıcının mümkün olmadığı için belirleyici Boyutlandır kullanması gereken `(pBuffer,[bufferSize])` mümkün olduğunda. **Hv** biçim belirticisi, arabellek boyutu kullanılabilir olduğu senaryoları için tasarlanmıştır  
   
-###  <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Diziler olarak işaretçileri boyutu tanımlayıcıları  
- Bir dizi olarak görüntülemek istediğiniz bir nesne için bir işaretçi varsa, dizi öğelerinin sayısını belirlemek için bir tamsayı ya da bir deyim kullanabilirsiniz:  
+###  <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Diziler olarak işaretçiler için tanımlayıcılar boyutlandırın  
+ Bir dizi olarak görüntülemek istediğiniz bir nesne işaretçiniz varsa, dizi öğelerinin sayısını belirtmek için bir tamsayı ya da bir ifade kullanabilirsiniz:  
   
-|Belirleyici|Biçimi|Özgün izleme değeri|Görüntülenen değeri|  
+|Belirleyici|Biçimi|Özgün izleme değeri|Görüntülenen değer|  
 |---------------|------------|---------------------------|---------------------|  
-|n|Ondalık veya **onaltılık** tamsayı|pBuffer, [32]<br /><br /> pBuffer,**[0x20]**|Görüntüler `pBuffer` 32 öğesi dizi olarak.|  
-|**[exp]**|Bir tamsayı olarak değerlendirir C++ geçerli bir ifade.|pBuffer, [bufferSize]|Bir dizisi olarak pBuffer görüntüler `bufferSize` öğeleri.|  
-|**expand(n)**|Bir tamsayı olarak değerlendirir geçerli bir C++ ifade|pBuffer, expand(2)|Üçüncü öğesine görüntüler  `pBuffer`|  
+|n|Ondalık veya **onaltılık** tamsayı|pBuffer, [32]<br /><br /> pBuffer,**[0x20]**|Görüntüler `pBuffer` 32 öğe dizisi olarak.|  
+|**[exp]**|Bir tamsayı olarak değerlendirir. geçerli bir C++ ifadesi.|pBuffer, [bufferSize]|Bir dizisi olarak pBuffer görüntüler `bufferSize` öğeleri.|  
+|**expand(n)**|Geçerli bir tamsayı olarak değerlendirir bir C++ ifadesi|pBuffer, expand(2)|Üçüncü öğesine görüntüler  `pBuffer`|  
   
-##  <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Biçim belirticiler birlikte çalışma C + ile hata ayıklama için +/ CLI  
- İçindeki belirticileri **kalın** yalnızca yerel ve C + hata ayıklama için desteklenen +/ CLI kod.  
+##  <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Biçim belirleyiciler birlikte çalışma C + ile hata ayıklama için +/ CLI  
+ Belirleyicilerde **kalın** yalnızca yerel ve C + hata ayıklama için destekleniyor +/ CLI kodu.  
   
-|Belirleyici|Biçimi|Özgün izleme değeri|Görüntülenen değeri|  
+|Belirleyici|Biçimi|Özgün izleme değeri|Görüntülenen değer|  
 |---------------|------------|--------------------------|---------------------|  
-|**d, t**|imzalanmış ondalık tamsayı|0xF000F065|-268373915|  
-|**u**|İmzasız ondalık tamsayı|0x0065|101|  
-|o|İmzasız sekizlik tamsayı|0xF065|0170145|  
-|x, X|onaltılık tamsayı|61541|0x0000f065|  
-|**l, h**|uzun veya kısa önekini: d, i, u, x, o|00406042|0x0c22|  
-|**f**|kayan nokta imzalandı|(3./2.), f|1.500000|  
-|**e**|İmzalı bilimsel gösterim|(3.0/2.0)|1.500000e+000|  
-|**g**|kayan nokta veya bilimsel gösterim imzalı imzalı<br/> hangisi daha kısa|(3.0/2.0)|1,5|  
-|c|tek bir karakter|\<Konum >|101 'e'|  
+|**d, ı**|imzalanmış ondalık tamsayı|0xF000F065|-268373915|  
+|**u**|imzalanmamış ondalık tamsayı|0x0065|101|  
+|o|imzalanmamış sekizlik tamsayı|0xF065|0170145|  
+|x, X|Onaltılık tamsayı|61541|0x0000f065|  
+|**m, s**|uzun veya kısa önek: d, i, u, o, x, X|00406042|0x0c22|  
+|**f**|imzalanmış kayan nokta|(3./2.), f|1.500000|  
+|**e**|imzalanmış bilimsel gösterim|(3.0/2.0)|1.500000e+000|  
+|**g**|imzalanmış kayan nokta veya imzalanmış bilimsel gösterim<br/> hangisi daha kısaysa|(3.0/2.0)|1,5|  
+|c|tek karakter|\<Konum >|101 'e'|  
 |s|const char *|\<Konum >|"hello world"|  
-|Su|const wchar_t*<br /><br /> const char16_t\*|\<Konum >|L "hello world"|  
-|Sub|const wchar_t*<br /><br /> const char16_t\*|\<Konum >|Merhaba Dünya|  
+|Su|const wchar_t*<br /><br /> const char16_t\*|\<Konum >|L "Merhaba Dünya"|  
+|alt|const wchar_t*<br /><br /> const char16_t\*|\<Konum >|Merhaba Dünya|  
 |s8|const char *|\<Konum >|"hello world"|  
-|İK|HRESULT veya Win32 hata kodu.<br/>(Hata ayıklayıcı HRESULTs otomatik olarak kodunu çözer,<br/> Bunu belirticisi bu gibi durumlarda gerekli değildir.|S_OK|S_OK|  
+|İK|HRESULT veya Win32 hata kodu.<br/>(Hata ayıklayıcı HRESULT'ları otomatik olarak kodunu çözer,<br/> Bunu tanımlayıcısı bu gibi durumlarda gerekli değildir.|S_OK|S_OK|  
 |WC|Pencere sınıfı bayrağı.|0x00000040,|WC_DEFAULTCHAR|  
-|WM|Windows ileti numarası|0x0010|WM_CLOSE|  
-|!|RW biçimi, veri türü görünümleri özelleştirmeler yoksayılıyor|\<gösterimi özelleştirilmiş >|4|  
+|WM|Windows ileti numaraları|0x0010|WM_CLOSE KOMUTU|  
+|!|herhangi bir veri türü görünümü özelleştirmelerini yok sayan, ham biçim|\<gösterim özelleştirilmiş >|4|  
   
-###  <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Birlikte çalışma'C + ile hata ayıklama içinde tanımlayıcıları belleğinden biçimlendirmek +/ CLI  
- Aşağıdaki tabloda bellek konumları için kullanılan biçimlendirme simgeler içeriyor. Herhangi bir değer veya bir konuma değerlendirir ifade ile bellek Konum Belirleyicisi kullanabilirsiniz.  
+###  <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Biçim belirleyiciler bellek konumları'birlikte çalışma'C + ile hata ayıklama +/ CLI  
+ Aşağıdaki tablo, bellek konumları için kullanılan biçimlendirme simgeleri bulunmaktadır. Herhangi bir değer veya konumu değerlendiren bir ifade ile bellek konumu belirleyici kullanabilirsiniz.  
   
-|Simgesi|Biçimi|Özgün izleme değeri|Görüntülenen değeri|  
+|Sembol|Biçimi|Özgün izleme değeri|Görüntülenen değer|  
 |------------|------------|--------------------------|---------------------|  
-|**ma**|64 ASCII karakterleri|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|  
-|**m**|Onaltılık, 16 bayt ardından tarafından 16 ASCII karakterleri|0x0012ffac|0X0012FFAC B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00. 4... 0... ". 0W &...|  
-|**mb**|Onaltılık, 16 bayt ardından tarafından 16 ASCII karakterleri|0x0012ffac|0X0012FFAC B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00. 4... 0... ". 0W &...|  
+|**ma**|64 ASCII karakteri|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|  
+|**m**|ardından 16 ASCII karakter, onaltılık biçimde 16 bayt|0x0012ffac|0X0012FFAC B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00.... 4... 0 ". 0W &...|  
+|**mb**|ardından 16 ASCII karakter, onaltılık biçimde 16 bayt|0x0012ffac|0X0012FFAC B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00.... 4... 0 ". 0W &...|  
 |**mw**|8 sözcükler|0x0012ffac|0X0012FFAC 34B3 00CB 3084 8094 22FF 308A 2657 0000|  
 |**MD**|4 doublewords|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|  
 |**mq**|2 quadwords|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|2-bayt karakter (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Birlikte çalışma'C + ile hata ayıklama içindeki diziler olarak işaretçileri boyutu belirleyici +/ CLI  
- Bir dizi olarak görüntülemek istediğiniz bir nesne için bir işaretçi varsa, dizi öğelerinin sayısını belirlemek için bir tamsayı kullanabilirsiniz:  
+###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Birlikte çalışma'C + ile hata ayıklama diziler olarak işaretçiler için belirleyici Boyutlandır +/ CLI  
+ Bir dizi olarak görüntülemek istediğiniz bir nesne işaretçiniz varsa, dizi öğelerinin sayısını belirtmek için bir tamsayı kullanabilirsiniz:  
   
-|Belirleyici|Biçimi|İfade|Görüntülenen değeri|  
+|Belirleyici|Biçimi|İfade|Görüntülenen değer|  
 |---------------|------------|----------------|---------------------|  
-|n|ondalık tamsayı|pBuffer [32]|Görüntüler `pBuffer` 32 öğesi dizi olarak.|
+|n|Ondalık tamsayı|pBuffer [32]|Görüntüler `pBuffer` 32 öğe dizisi olarak.|

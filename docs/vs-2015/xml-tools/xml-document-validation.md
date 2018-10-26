@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a09e4346c84982bdac6fa740c53dedf6444f9268
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b765efcfc01384a14bba6eb46cbaadd915e7752
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211529"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914274"
 ---
 # <a name="xml-document-validation"></a>XML Belgesi Doğrulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ XML Düzenleyicisi'ni XML 1.0 sözdizimi denetler ve siz yazarken veri doğrulam
   
  Doğrulama kullanılan şemalar ile eşleştirerek bulundu `targetNamespace` öğenin xmlns bildirimi ile derlenmiş bir şema. Derlenen şemalar bir öncelik sırasına göre listelenen aşağıdaki konumlara yüklenir:  
   
--   Belirtilen dosya adından **şemaları** belge penceresinin alan.  
+- Belirtilen dosya adından **şemaları** belge penceresinin alan.  
   
--   Satır içi şema veya DTD'nin.  
+- Satır içi şema veya DTD'nin.  
   
--   Bir dış DTD'nin veya `xsd:schemaLocation` ve `xsd:noNamespaceSchemaLocation` özniteliği  
+- Bir dış DTD'nin veya `xsd:schemaLocation` ve `xsd:noNamespaceSchemaLocation` özniteliği  
   
--   Bir "x-schema" XDR Şema ad alanı URI.  
+- Bir "x-schema" XDR Şema ad alanı URI.  
   
- Boş hedef ad alanı şema sahip olduğunda şemaları de aşağıdaki ek konumlarda bulunabilir:  
+  Boş hedef ad alanı şema sahip olduğunda şemaları de aşağıdaki ek konumlarda bulunabilir:  
   
--   Şema içeren başka bir düzenleyici penceresi.  
+- Şema içeren başka bir düzenleyici penceresi.  
   
--   Geçerli çözümdeki şema.  
+- Geçerli çözümdeki şema.  
   
--   Şema önbellek dizini bir şema.  
+- Şema önbellek dizini bir şema.  
   
 ## <a name="xslt-files"></a>XSLT dosyaları  
  XSLT dosyası düzenlenirken, şema önbelleğinde bulunan xslt.xsd dosyasını doğrulaması için kullanılır. Doğrulama hatalarını, Mavi dalgalı çizgiler gösterilir. XSLT derleyici hatalarını, kırmızı dalgalı alt çizgiler gösterilir.  

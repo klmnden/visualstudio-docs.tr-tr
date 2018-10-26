@@ -34,12 +34,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26e3efd74d020678d6c908ccf77eb6f35349b9b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b2c5c15e9ec78efa2fa3c12c0c70d2573bd50697
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176780"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825714"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio Hata Ayıklayıcısı ile Çalıştırma İşlemleri İliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,31 +83,31 @@ Bu özellik, bir yerel veya uzak bilgisayarda çalışan uygulamaların hata ay�
 
 1. Visual Studio'da **hata ayıklama / iliştirme** (veya basın **CTRL + ALT + P**).
 
-2.  İçinde **iliştirme** uygun bağlantı türünü iletişim kutusunda **aktarım** listesi. **Varsayılan** çoğu durum için doğru ayardır.
+2. İçinde **iliştirme** uygun bağlantı türünü iletişim kutusunda **aktarım** listesi. **Varsayılan** çoğu durum için doğru ayardır.
 
-    **Aktarım** ayarı, hata ayıklama oturumları arasında devam ettirir. 
+   **Aktarım** ayarı, hata ayıklama oturumları arasında devam ettirir. 
   
-3.  Kullanım **niteleyicisi** liste kutusunda, aşağıdaki yöntemlerden birini kullanarak uzak bilgisayar adını seçmek için:  
+3. Kullanım **niteleyicisi** liste kutusunda, aşağıdaki yöntemlerden birini kullanarak uzak bilgisayar adını seçmek için:  
   
-    1.  Adı yazın **niteleyicisi** liste kutusu.
+   1. Adı yazın **niteleyicisi** liste kutusu.
     
-        >**Not** sonraki adımlarda, uzak bilgisayar adını kullanarak bağlanamazsa, IP adresini kullanın. (Bağlantı noktası numarasını otomatik olarak işlem seçtikten sonra görünebilir. Da onu el ile girebilirsiniz. Aşağıdaki çizimde, 4020 uzaktan hata ayıklayıcı için varsayılan bağlantı noktası var.)  
+      >**Not** sonraki adımlarda, uzak bilgisayar adını kullanarak bağlanamazsa, IP adresini kullanın. (Bağlantı noktası numarasını otomatik olarak işlem seçtikten sonra görünebilir. Da onu el ile girebilirsiniz. Aşağıdaki çizimde, 4020 uzaktan hata ayıklayıcı için varsayılan bağlantı noktası var.)  
   
-    2.  Eklenmiş açılan oku tıklatın **niteleyicisi** liste kutusu ve aşağı açılan listeden bilgisayar adını seçin.  
+   2. Eklenmiş açılan oku tıklatın **niteleyicisi** liste kutusu ve aşağı açılan listeden bilgisayar adını seçin.  
   
-    3.  Tıklayın **Bul** düğmesinin yanındaki**niteleyicisi** listesini açmak için **uzaktan hata ayıklayıcı bağlantısı Seç** iletişim kutusu. **Uzaktan hata ayıklayıcı bağlantısı Seç** iletişim kutusu, yerel alt ağınız tüm cihazları ve Ethernet kablosu ile bilgisayarınıza doğrudan bağlı herhangi bir CİHAZDAN listeler. ' A tıklayın ve ardından cihaz ve bilgisayar **seçin**. 
+   3. Tıklayın **Bul** düğmesinin yanındaki**niteleyicisi** listesini açmak için **uzaktan hata ayıklayıcı bağlantısı Seç** iletişim kutusu. **Uzaktan hata ayıklayıcı bağlantısı Seç** iletişim kutusu, yerel alt ağınız tüm cihazları ve Ethernet kablosu ile bilgisayarınıza doğrudan bağlı herhangi bir CİHAZDAN listeler. ' A tıklayın ve ardından cihaz ve bilgisayar **seçin**. 
   
-     **Niteleyicisi** ayarını, yalnızca bu niteleyici ile başarılı bir hata ayıklama bağlantısı oluşursa hata ayıklama oturumları arasında devam ettirir.
+      **Niteleyicisi** ayarını, yalnızca bu niteleyici ile başarılı bir hata ayıklama bağlantısı oluşursa hata ayıklama oturumları arasında devam ettirir.
      
-4.  Tıklayın **Yenile**.
+4. Tıklayın **Yenile**.
 
-      **Kullanılabilir işlemler** listesi açıldığında otomatik olarak görüntüleniyor **işlemleri** iletişim kutusu. İşlemler başlatabilir ve iletişim kutusu açıkken arka planda durdurabilirsiniz. Ancak, içeriği her zaman geçerli değildir. Listeden tıklayarak işlemlerin geçerli listesini görmek için herhangi bir zamanda yenileyebilirsiniz **Yenile**. 
+     **Kullanılabilir işlemler** listesi açıldığında otomatik olarak görüntüleniyor **işlemleri** iletişim kutusu. İşlemler başlatabilir ve iletişim kutusu açıkken arka planda durdurabilirsiniz. Ancak, içeriği her zaman geçerli değildir. Listeden tıklayarak işlemlerin geçerli listesini görmek için herhangi bir zamanda yenileyebilirsiniz **Yenile**. 
      
-4.  İçinde **iliştirme** iletişim kutusunda, iliştirmek istediğiniz programı bulun **kullanılabilir işlemler** listesi.  
+5. İçinde **iliştirme** iletişim kutusunda, iliştirmek istediğiniz programı bulun **kullanılabilir işlemler** listesi.  
   
-     İşlemi farklı bir kullanıcı hesabı altında çalışıyorsa, seçin **tüm kullanıcıların işlemlerini göster** onay kutusu.
+    İşlemi farklı bir kullanıcı hesabı altında çalışıyorsa, seçin **tüm kullanıcıların işlemlerini göster** onay kutusu.
      
-5.  Tıklayın **ekleme**.  
+6. Tıklayın **ekleme**.  
 
 ## <a name="additional-info"></a>Ek bilgi
 
@@ -164,21 +164,21 @@ Uygulamayı doğru sembol dosyaları varsa bazı yerel hata ayıklama senaryolar
   
  **Neden bir kod türü eklemenin başarısız hakkında ayrıntılı bilgi edinmek için**  
   
-1.  İşlemden ayırın. Üzerinde **hata ayıklama** menüsünü tıklatın **tümünü Ayır**.  
+1. İşlemden ayırın. Üzerinde **hata ayıklama** menüsünü tıklatın **tümünü Ayır**.  
   
-2.  Yalnızca tek bir kod türü seçerek işleme yeniden bağlayın.  
+2. Yalnızca tek bir kod türü seçerek işleme yeniden bağlayın.  
   
-    1.  İçinde **iliştirme** iletişim kutusunda, işlemi seçin **kullanılabilir işlemler** listesi.  
+   1. İçinde **iliştirme** iletişim kutusunda, işlemi seçin **kullanılabilir işlemler** listesi.  
   
-    2.  Tıklayın **seçin**.  
+   2. Tıklayın **seçin**.  
   
-    3.  İçinde **kod türünü seç** Seç iletişim kutusunda **bu tür kodlarda hata ayıklama** ve eklenemeye kod türü. Diğer kodları temizleyin.  
+   3. İçinde **kod türünü seç** Seç iletişim kutusunda **bu tür kodlarda hata ayıklama** ve eklenemeye kod türü. Diğer kodları temizleyin.  
   
-    4.  **Tamam**'ı tıklatın. **Kod türünü seç** iletişim kutusu kapanır.  
+   4. **Tamam**'ı tıklatın. **Kod türünü seç** iletişim kutusu kapanır.  
   
-    5.  İçinde **iliştirme** iletişim kutusu, tıklayın **iliştirme**.  
+   5. İçinde **iliştirme** iletişim kutusu, tıklayın **iliştirme**.  
   
-     Bu kez, iliştirme tümüyle başarısız olur ve belirli bir hata iletisi alırsınız.  
+      Bu kez, iliştirme tümüyle başarısız olur ve belirli bir hata iletisi alırsınız.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Birden çok işlemde hata ayıklama](../debugger/debug-multiple-processes.md)   

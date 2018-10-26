@@ -23,12 +23,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d11bc0743faa9e512fcd144bfef09a84a316531d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 17deca1afc78e238e098285e760a791504b61fe8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284992"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880734"
 ---
 # <a name="encodings-and-line-breaks"></a>Kodlamalar ve Satır Sonları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,19 +40,19 @@ Visual Studio'da kullanabileceğiniz **dosya/Gelişmiş kaydetme seçenekleri** 
   
  Visual Studio'da şu karakterler satır sonu yorumlanır:  
   
--   CRLF: Unicode satır başı ve satır besleme, 000 D + 000A karakterler  
+- CRLF: Unicode satır başı ve satır besleme, 000 D + 000A karakterler  
   
--   LF: Satır besleme, Unicode karakter 000A  
+- LF: Satır besleme, Unicode karakter 000A  
   
--   NEL: Sonraki satır, Unicode karakter 0085  
+- NEL: Sonraki satır, Unicode karakter 0085  
   
--   LS: Unicode karakter 2028 satır ayırıcı  
+- LS: Unicode karakter 2028 satır ayırıcı  
   
--   PS: Paragraf ayırıcı, Unicode karakter 2029  
+- PS: Paragraf ayırıcı, Unicode karakter 2029  
   
- Diğer uygulamalardan kopyaladığınız metin orijinal kodlama ve satır sonu karakterleri korur. Örneğin, Not Defteri'nden metni kopyalayın ve Visual Studio'da bir metin dosyasına yapıştırın, metni Not Defteri'nde olduğu aynı ayarları içerir.  
+  Diğer uygulamalardan kopyaladığınız metin orijinal kodlama ve satır sonu karakterleri korur. Örneğin, Not Defteri'nden metni kopyalayın ve Visual Studio'da bir metin dosyasına yapıştırın, metni Not Defteri'nde olduğu aynı ayarları içerir.  
   
- Farklı satır sonu karakterleri olan bir dosyayı açtığınızda, tutarsız satır sonu karakterleri normalleştirilmeli olup olmadığını ve hangi tür seçmek için satır sonları soran bir iletişim kutusu görebilirsiniz.
+  Farklı satır sonu karakterleri olan bir dosyayı açtığınızda, tutarsız satır sonu karakterleri normalleştirilmeli olup olmadığını ve hangi tür seçmek için satır sonları soran bir iletişim kutusu görebilirsiniz.
 
 
 

@@ -25,12 +25,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2584f56e31dea55ff7a4d67b61b8c7453ade4c10
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 987e0339f2d27405c81ce05b6a30181a1469be7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255716"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884179"
 ---
 # <a name="options-text-editor-all-languages"></a>Seçenekler, Metin Düzenleyici, Tüm Diller
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -79,11 +79,11 @@ Bu iletişim kutusu Kod Düzenleyicisi'nin varsayılan davranışını değişti
  Seçim olduğunda Kes veya Kopyala komutlarını boş satırlara Uygula  
  Bu seçenek, ekleme noktasını boş bir satıra yerleştirin, hiçbir şey seçin ve ardından kopyaladığınızda veya Kes Düzenleyicisi davranışını ayarlar.  
   
--   Bu seçenek belirlendiğinde, boş satır kopyaladığınız veya Kes. Ardından yapıştırırsanız, yeni, boş bir satır eklenir.  
+- Bu seçenek belirlendiğinde, boş satır kopyaladığınız veya Kes. Ardından yapıştırırsanız, yeni, boş bir satır eklenir.  
   
--   Bu seçenek işaretli değilse, Cut komutu boş satırları kaldırır. Ancak, Panodaki veriler korunur. Ardından Paste komutu kullanırsanız, bu nedenle, en son Pano'ya kopyalanan içeriği yapıştırılır. Daha önce hiçbir şey kopyalandı, hiçbir şey yapıştırılır.  
+- Bu seçenek işaretli değilse, Cut komutu boş satırları kaldırır. Ancak, Panodaki veriler korunur. Ardından Paste komutu kullanırsanız, bu nedenle, en son Pano'ya kopyalanan içeriği yapıştırılır. Daha önce hiçbir şey kopyalandı, hiçbir şey yapıştırılır.  
   
- Bir satır boş olmadığında bu ayar Kopyala veya Kes üzerinde etkisi yoktur. Hiçbir şey seçili ise, tüm satırı kopyaladığınız veya Kes. Ardından yapıştırırsanız, tüm satırı ve kendi endline karakter yapıştırılan metin.  
+  Bir satır boş olmadığında bu ayar Kopyala veya Kes üzerinde etkisi yoktur. Hiçbir şey seçili ise, tüm satırı kopyaladığınız veya Kes. Ardından yapıştırırsanız, tüm satırı ve kendi endline karakter yapıştırılan metin.  
   
 > [!TIP]
 >  Boşluklar, sekmeler ve uçları göstergelerini görüntüleme ve bu nedenle, tamamen boş satırları girintili satırları ayırt etmek için **Gelişmiş** gelen **Düzenle** menüsünü seçip **görünümü beyaz Alanı**.  

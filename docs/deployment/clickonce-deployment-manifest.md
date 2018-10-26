@@ -17,46 +17,47 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e36f57857376d62beffe46b2ee4ccc7e4825023d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2391888e1955c48c1baafcd62c4337916a1a5322
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077899"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820325"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce dağıtım bildirimi
 Bir dağıtım bildirimi açıklayan bir XML dosyasıdır bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] geçerli tanımlaması dahil olmak üzere, dağıtım [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtmak için uygulama sürümü.  
-  
+
  Dağıtım bildirimleri, aşağıdaki öğeleri ve öznitelikleri vardır.  
-  
-|Öğe|Açıklama|Öznitelikler|  
-|-------------|-----------------|----------------|  
-|[\<derleme > öğesi](../deployment/assembly-element-clickonce-deployment.md)|Gerekli. En üst düzey öğe.|`manifestVersion`|  
-|[\<assemblyIdentity > öğesi](../deployment/assemblyidentity-element-clickonce-deployment.md)|Gerekli. Uygulama bildirimi için tanımlar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture`|  
-|[\<Açıklama > öğesi](../deployment/description-element-clickonce-deployment.md)|Gerekli. Bir kabuk varlığı oluşturmak için kullanılan uygulama bilgilerini tanımlar ve **Program Ekle veya Kaldır** Denetim Masası'ndaki öğesi.|`publisher`<br /><br /> `product`<br /><br /> `supportUrl`|  
-|[\<Dağıtım > öğesi](../deployment/deployment-element-clickonce-deployment.md)|İsteğe bağlı. Güncelleştirmeler ve sistem maruz kalma riskinizi dağıtımı için kullanılan öznitelikleri tanımlar.|`install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters`|  
-|[\<compatibleFrameworks > öğesi](../deployment/compatibleframeworks-element-clickonce-deployment.md)|Gerekli. Burada bu uygulamayı yükleyip çalıştırabileceği bir .NET Framework sürümlerini tanımlar.|`SupportUrl`|  
-|[\<bağımlılık > öğesi](../deployment/dependency-element-clickonce-deployment.md)|Gerekli. Dağıtım için yüklemek için uygulama sürümü ve uygulama bildiriminin konumunu tanımlar.|`preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size`|  
-|[\<publisherIdentity > öğesi](../deployment/publisheridentity-element-clickonce-deployment.md)|İmzalı bildirimler için gereklidir. Bu dağıtım bildirimi imzalayan yayımcı hakkında bilgi içerir.|`Name`<br /><br /> `issuerKeyHash`|  
-|[\<İmza > öğesi](../deployment/signature-element-clickonce-deployment.md)|İsteğe bağlı. Bu dağıtım bildirimi dijital olarak imzalamak için gereken bilgileri içerir.|Yok.|  
-|[\<customErrorReporting > öğesi](../deployment/customerrorreporting-element-clickonce-deployment.md)|İsteğe bağlı. Bir hata oluştuğunda göstermek için bir URI belirtir.|URI|  
-  
+
+
+| Öğe | Açıklama | Öznitelikler |
+| - | - | - |
+| [\<derleme > öğesi](../deployment/assembly-element-clickonce-deployment.md) | Gerekli. En üst düzey öğe. | `manifestVersion` |
+| [\<assemblyIdentity > öğesi](../deployment/assemblyidentity-element-clickonce-deployment.md) | Gerekli. Uygulama bildirimi için tanımlar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
+| [\<Açıklama > öğesi](../deployment/description-element-clickonce-deployment.md) | Gerekli. Bir kabuk varlığı oluşturmak için kullanılan uygulama bilgilerini tanımlar ve **Program Ekle veya Kaldır** Denetim Masası'ndaki öğesi. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
+| [\<Dağıtım > öğesi](../deployment/deployment-element-clickonce-deployment.md) | İsteğe bağlı. Güncelleştirmeler ve sistem maruz kalma riskinizi dağıtımı için kullanılan öznitelikleri tanımlar. | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |
+| [\<compatibleFrameworks > öğesi](../deployment/compatibleframeworks-element-clickonce-deployment.md) | Gerekli. Burada bu uygulamayı yükleyip çalıştırabileceği bir .NET Framework sürümlerini tanımlar. | `SupportUrl` |
+| [\<bağımlılık > öğesi](../deployment/dependency-element-clickonce-deployment.md) | Gerekli. Dağıtım için yüklemek için uygulama sürümü ve uygulama bildiriminin konumunu tanımlar. | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
+| [\<publisherIdentity > öğesi](../deployment/publisheridentity-element-clickonce-deployment.md) | İmzalı bildirimler için gereklidir. Bu dağıtım bildirimi imzalayan yayımcı hakkında bilgi içerir. | `Name`<br /><br /> `issuerKeyHash` |
+| [\<İmza > öğesi](../deployment/signature-element-clickonce-deployment.md) | İsteğe bağlı. Bu dağıtım bildirimi dijital olarak imzalamak için gereken bilgileri içerir. | Yok. |
+| [\<customErrorReporting > öğesi](../deployment/customerrorreporting-element-clickonce-deployment.md) | İsteğe bağlı. Bir hata oluştuğunda göstermek için bir URI belirtir. | URI |
+
 ## <a name="remarks"></a>Açıklamalar  
  Dağıtım bildirimi dosyasını tanımlayan bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] geçerli sürümü ve diğer dağıtım ayarları dahil olmak üzere, uygulama dağıtımı. Bu uygulama ve dağıtım içinde yer alan dosyalar geçerli sürümünü açıklar uygulama bildirimini başvuruyor.  
-  
+
  Daha fazla bilgi için [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md).  
-  
+
 ## <a name="file-location"></a>Dosya konumu  
  Dağıtım bildirimi dosyasının doğru uygulama bildirimi geçerli uygulama sürümü için başvuruda bulunuyor. Bir uygulama dağıtımının yeni bir sürüm kullanılabilir duruma getirdiğinizde, yeni bir uygulama bildirimi başvurmak için dağıtım bildirimi güncelleştirmeniz gerekir.  
-  
+
  Dağıtım dosyası bildiriminin kesin adlandırılmış olmalıdır ve sertifikalar için yayımcı doğrulama de içerebilir.  
-  
+
 ## <a name="file-name-syntax"></a>Dosya adı sözdizimi  
  Bir dağıtım bildirimi dosyasının adı ile bitmelidir *.application* uzantısı.  
-  
+
 ## <a name="examples"></a>Örnekler  
  Aşağıdaki kod örneği, bir dağıtım bildirimi gösterir.  
-  
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"  
@@ -118,6 +119,6 @@ Bir dağıtım bildirimi açıklayan bir XML dosyasıdır bir [!INCLUDE[ndpteccl
 ...  
 </Signature></asmv1:assembly>  
 ```  
-  
+
 ## <a name="see-also"></a>Ayrıca bkz.  
  [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md)

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7af41e9e66c22e514961dc888a42153c078667cf
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 28b42e5178808a86faff33dbb887500b8979123b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857787"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811927"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Visual Studio için Modelleme SDK'sı - Etki Alanına Özgü Diller
 Visual Studio için modelleme SDK'sını kullanarak Visual Studio ile tümleştirebileceğiniz model tabanlı güçlü geliştirme araçları oluşturabilirsiniz. Aynı şekilde, bir veya daha fazla model tanımı oluşturabilir ve bir araç kümesiyle tümleştirebilirsiniz.
@@ -26,17 +26,17 @@ Visual Studio için modelleme SDK'sını kullanarak Visual Studio ile tümleşti
 
  MSDK, etki alanına özgü dil (DSL) biçiminde bir modeli hızlı bir şekilde geliştirmenize olanak sağlar. Graf gösterimli bir şema veya soyut sözdizimi tanımlamak için özelleştirilmiş bir düzenleyici kullanarak başlarsanız. Bu tanımından, VMSDK şunları oluşturur:
 
--   İşlem tabanlı bir depoda çalışan, türü kesin belirlenmiş bir API ile model uygulaması.
+- İşlem tabanlı bir depoda çalışan, türü kesin belirlenmiş bir API ile model uygulaması.
 
--   Ağaç tabanlı bir gezgin.
+- Ağaç tabanlı bir gezgin.
 
--   Kullanıcıların tanımladığınız modeli veya bölümlerini görüntüleyebildiği bir grafik düzenleyici.
+- Kullanıcıların tanımladığınız modeli veya bölümlerini görüntüleyebildiği bir grafik düzenleyici.
 
--   Modellerinizi okunabilir XML biçiminde kaydeden serileştirme yöntemleri.
+- Modellerinizi okunabilir XML biçiminde kaydeden serileştirme yöntemleri.
 
--   Metin şablonu kullanarak program kodu ve diğer yapıları üretmek için olanaklar.
+- Metin şablonu kullanarak program kodu ve diğer yapıları üretmek için olanaklar.
 
- Bu özelliklerin tümünü özelleştirebilir ve genişletebilirsiniz. Uzantılarınız, DSL tanımını hala güncelleştirebileceğiniz ve uzantılarınızı kaybetmeden özellikleri yeniden üretebileceğiniz bir şekilde tümleştirilir.
+  Bu özelliklerin tümünü özelleştirebilir ve genişletebilirsiniz. Uzantılarınız, DSL tanımını hala güncelleştirebileceğiniz ve uzantılarınızı kaybetmeden özellikleri yeniden üretebileceğiniz bir şekilde tümleştirilir.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

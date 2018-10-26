@@ -20,12 +20,12 @@ ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b2486df22db8ebcbf8a9dd40a0bd374b6d8abfe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2584c3cdd60c130183e09d2a809ff0ee1621856d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197712"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868852"
 ---
 # <a name="localizing-menu-commands"></a>Menü Komutlarını Yerelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,48 +37,48 @@ Menüsü yerelleştirilmiş metin sağlayabilir ve araç çubuğu yerelleştiril
 ## <a name="localizing-command-names"></a>Komut adlarını yerelleştirme  
  Vspackage'larda, menü komutlarını ve araç çubuğu düğmeleri .vsct dosyası içinde tanımlanır.  
   
-1.  İçinde **Çözüm Gezgini**, .vsct dosyanın adını değiştirmek *filename*için .vsct *filename*.en-US.vsct.  
+1. İçinde **Çözüm Gezgini**, .vsct dosyanın adını değiştirmek *filename*için .vsct *filename*.en-US.vsct.  
   
-2.  Bir kopyasını *filename*.en-US.vsct her bir yerelleştirme dili.  
+2. Bir kopyasını *filename*.en-US.vsct her bir yerelleştirme dili.  
   
-     Her kopya adı *filename*. *Yerel ayar*.vsct, burada *yerel ayar* belirli bir kültür adı. Kültür adı değerleri listesi için bkz. [Microsoft tarafından atanan yerel kimlikler](https://msdn.microsoft.com/library/windows/apps/jj657969.aspx).  
+    Her kopya adı *filename*. *Yerel ayar*.vsct, burada *yerel ayar* belirli bir kültür adı. Kültür adı değerleri listesi için bkz. [Microsoft tarafından atanan yerel kimlikler](https://msdn.microsoft.com/library/windows/apps/jj657969.aspx).  
   
-     Bunlar *filename*. *Yerel ayar*.vsct dosyaları paketiniz için yerelleştirilmiş menü metni içerir.  
+    Bunlar *filename*. *Yerel ayar*.vsct dosyaları paketiniz için yerelleştirilmiş menü metni içerir.  
   
-3.  Her açın *filename*. *Yerel ayar*metin yerelleştirmek için .vsct dosyası.  
+3. Her açın *filename*. *Yerel ayar*metin yerelleştirmek için .vsct dosyası.  
   
-    1.  Değiştirme [ButtonText](../extensibility/buttontext-element.md) öğe belirli bir dili için uygun değerleri.  
+   1. Değiştirme [ButtonText](../extensibility/buttontext-element.md) öğe belirli bir dili için uygun değerleri.  
   
-    2.  Yerelleştirilmiş simgeler sağlayacaksa değiştirme [bit eşlem](../extensibility/bitmap-element.md) hedef dosyalarının olduğu noktaya değerleri.  
+   2. Yerelleştirilmiş simgeler sağlayacaksa değiştirme [bit eşlem](../extensibility/bitmap-element.md) hedef dosyalarının olduğu noktaya değerleri.  
   
-     Aşağıdaki örnek, bir Aile ağacı Gezgini araç penceresi açmak bir komut için İngilizce ve İspanyolca düğme metni gösterir.  
+      Aşağıdaki örnek, bir Aile ağacı Gezgini araç penceresi açmak bir komut için İngilizce ve İspanyolca düğme metni gösterir.  
   
-     [US.vsct FamilyTree.en]  
+      [US.vsct FamilyTree.en]  
   
-    ```xml  
-    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
-      <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
-      <Icon guid="guidImages" id="bmpPic2" />  
-      <Strings>  
-        <CommandName>cmdidFamilyTree</CommandName>  
-        <ButtonText>Family Tree Explorer</ButtonText>  
-      </Strings>  
-    </Button>  
-    ```  
+   ```xml  
+   <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
+     <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
+     <Icon guid="guidImages" id="bmpPic2" />  
+     <Strings>  
+       <CommandName>cmdidFamilyTree</CommandName>  
+       <ButtonText>Family Tree Explorer</ButtonText>  
+     </Strings>  
+   </Button>  
+   ```  
   
-     [ES.vsct FamilyTree.es]  
+    [ES.vsct FamilyTree.es]  
   
-    ```xml  
-    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
-      <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
-      <Icon guid="guidImages" id="bmpPic2" />  
-      <Strings>  
-        <CommandName>cmdidFamilyTree</CommandName>  
-        <ButtonText>Explorar el arbol genealogico</ButtonText>  
-      </Strings>  
-    </Button>  
+   ```xml  
+   <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
+     <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
+     <Icon guid="guidImages" id="bmpPic2" />  
+     <Strings>  
+       <CommandName>cmdidFamilyTree</CommandName>  
+       <ButtonText>Explorar el arbol genealogico</ButtonText>  
+     </Strings>  
+   </Button>  
   
-    ```  
+   ```  
   
 ## <a name="localizing-other-text-resources"></a>Diğer metin kaynakları yerelleştirme  
  Komut adlarını dışında metin kaynaklar kaynak (.resx) dosyalarını tanımlanır.  

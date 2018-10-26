@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d028d89f149a2fe444508d09086f6bec2408889e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 220a7b7ca4fe9c6167f05ba78877994d9abe57e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511007"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854916"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Visual Studio'da bir yerel değişken ekleme
 
@@ -36,23 +36,23 @@ Bu kod oluşturma için geçerlidir:
 
    - C# İÇİN:
 
-    ![Vurgulanmış kodu C#](media/local-highlight-cs.png)
+       ![Vurgulanmış kodu C#](media/local-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Vurgulanmış kodu VB](media/local-highlight-vb.png)
+       ![Vurgulanmış kodu VB](media/local-highlight-vb.png)
 
-1. Ardından, aşağıdakilerden birini yapın:
+2. Ardından, aşağıdakilerden birini yapın:
 
    - **Klavye**
-     - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
+      - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
    - **Fare**
-     - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
-     - &nbsp; ![Ampul](media/bulb-cs.png) kırmızı dalgalı çizgi içeren satırda metin imleci ise, sol kenar boşluğunda görünür simge.
+      - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
+      - &nbsp; ![Ampul](media/bulb-cs.png) kırmızı dalgalı çizgi içeren satırda metin imleci ise, sol kenar boşluğunda görünür simge.
 
    ![Yerel Önizleme Ekle](media/local-preview-cs.png)
 
-1. Seçin **(tüm örnekleri için) bir yerel değişken Ekle '*ifade*'** aşağı açılan menüden.
+3. Seçin **(tüm örnekleri için) bir yerel değişken Ekle '*ifade*'** aşağı açılan menüden.
 
    > [!TIP]
    > Kullanım **değişiklik önizlemesi** Önizleme pencerenin alt kısmındaki bağlantı [tüm değişiklikleri görmek için](../../ide/preview-changes.md) , oluşturulacak, seçim yapmadan önce.
@@ -61,11 +61,11 @@ Bu kod oluşturma için geçerlidir:
 
    - C# İÇİN:
 
-      ![C# arabirimi sonucu uygulayın](media/local-result-cs.png)
+       ![C# arabirimi sonucu uygulayın](media/local-result-cs.png)
 
    - Visual Basic:
 
-      ![Uygulama arabirimi sonucu VB](media/local-result-vb.png)
+       ![Uygulama arabirimi sonucu VB](media/local-result-vb.png)
 
    > [!NOTE]
    > Kullanabileceğiniz **.. .all tekrarlarını...**  menü seçeneğini seçili ifadesi, yalnızca özellikle vurgulanmış bir her örneğini değiştirin.

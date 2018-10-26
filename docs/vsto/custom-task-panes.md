@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2958001bfd2f9c00689e1c44bd64a5fa3c5b4d00
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4e8384bc86bf59216c353b0f4610d3863445781
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635563"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889769"
 ---
 # <a name="custom-task-panes"></a>Özel görev bölmeleri
   Görev bölmeleri, genellikle bir Microsoft Office uygulamasının bir pencerede bir tarafı yerleştirilmiş kullanıcı arabirimi bölmeleri bulunur. Özel görev bölmeleri size kendi görev bölmesi oluşturun ve kullanıcıların çözümünüzün özelliklerine erişmek için tanıdık bir arabirim sağlamak için bir yol sağlar. Örneğin, arabirim belgeleri değiştirmek veya bir veri kaynağından verileri görüntülemek için kodu çalıştırmak denetimleri içerebilir.  
@@ -55,11 +55,11 @@ ms.locfileid: "42635563"
 ## <a name="create-a-custom-task-pane"></a>Özel görev bölmesi oluşturun  
  Temel özel görev bölmesi iki adımda oluşturabilirsiniz:  
   
-1.  Windows Forms denetimleri ekleyerek, özel görev bölmesi için bir kullanıcı arabirimi oluşturma bir <xref:System.Windows.Forms.UserControl> nesne.  
+1. Windows Forms denetimleri ekleyerek, özel görev bölmesi için bir kullanıcı arabirimi oluşturma bir <xref:System.Windows.Forms.UserControl> nesne.  
   
-2.  Özel görev bölmesi kullanıcı denetimine ileterek örneği <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> VSTO eklenti nesne. Bu koleksiyona yeni bir döndürür <xref:Microsoft.Office.Tools.CustomTaskPane> görev bölmesinde değiştirme ve kullanıcı olaylarına yanıt vermek için kullanabileceğiniz bir nesne.  
+2. Özel görev bölmesi kullanıcı denetimine ileterek örneği <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> VSTO eklenti nesne. Bu koleksiyona yeni bir döndürür <xref:Microsoft.Office.Tools.CustomTaskPane> görev bölmesinde değiştirme ve kullanıcı olaylarına yanıt vermek için kullanabileceğiniz bir nesne.  
   
- Daha fazla bilgi için [nasıl yapılır: uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
+   Daha fazla bilgi için [nasıl yapılır: uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
 ### <a name="create-the-user-interface"></a>Kullanıcı arabirimi oluşturma  
  Visual Studio'da Office geliştirme araçları kullanılarak oluşturulan tüm özel görev bölmeleri içeren bir <xref:System.Windows.Forms.UserControl> nesne. Bu kullanıcı denetimi, özel görev bölmesi, kullanıcı arabirimi sağlar. Tasarım zamanında veya çalışma zamanında kullanıcı denetimi oluşturabilirsiniz. Kullanıcı denetiminin tasarım zamanında oluşturursanız, görev bölmesinin kullanıcı arabirimi oluşturmak için Windows Form Tasarımcısı'nı kullanabilirsiniz.  
@@ -77,11 +77,11 @@ ms.locfileid: "42635563"
   
  Özel görev bölmesi hangi pencere görüntüleyeceğini belirlemek için uygun kullanın <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> görev bölmesinde oluşturduğunuzda yöntemi aşırı yüklemesi:  
   
--   Görev bölmesinde etkin pencere ile ilişkilendirilecek kullanın <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> yöntemi.  
+- Görev bölmesinde etkin pencere ile ilişkilendirilecek kullanın <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> yöntemi.  
   
--   Görev bölmesi, belirli bir pencere tarafından barındırılan bir belge ilişkilendirmek için kullanın <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> yöntemi.  
+- Görev bölmesi, belirli bir pencere tarafından barındırılan bir belge ilişkilendirmek için kullanın <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> yöntemi.  
   
- Bazı Office uygulamaları açık yönergeler oluşturmak veya birden fazla penceresi açık olduğunda, görev bölmesini görüntülemek ne zaman gerektirir. Bu görev bölmesi ile ilgili belgelerin veya öğelerin uygulamadaki görünmesini sağlamak için kodunuzu özel görev bölmesinde örneklemek nereye dikkate alınması gereken önemli sağlar. Daha fazla bilgi için [windows uygulaması içinde özel görev bölmeleri yönetme](#Managing).  
+  Bazı Office uygulamaları açık yönergeler oluşturmak veya birden fazla penceresi açık olduğunda, görev bölmesini görüntülemek ne zaman gerektirir. Bu görev bölmesi ile ilgili belgelerin veya öğelerin uygulamadaki görünmesini sağlamak için kodunuzu özel görev bölmesinde örneklemek nereye dikkate alınması gereken önemli sağlar. Daha fazla bilgi için [windows uygulaması içinde özel görev bölmeleri yönetme](#Managing).  
   
 ## <a name="access-the-application-from-the-task-pane"></a>Görev bölmesinden uygulama erişimi  
  Kullanıcı denetimi uygulamadan otomatik hale getirmek isterseniz, doğrudan nesne modelini kullanarak erişebileceğiniz `Globals.ThisAddIn.Application` kodunuzda. Statik `Globals` sınıfı erişim sağlar `ThisAddIn` nesne. `Application` Alan bu nesnenin nesne modelini uygulamanın giriş noktasıdır.  
@@ -136,11 +136,11 @@ ms.locfileid: "42635563"
   
  Aşağıdaki uygulama gruplarını farklı geliştirme gereksinimleri vardır:  
   
--   [Outlook](#Outlook)  
+- [Outlook](#Outlook)  
   
--   [Word, InfoPath ve PowerPoint](#WordAndInfoPath)  
+- [Word, InfoPath ve PowerPoint](#WordAndInfoPath)  
   
- ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [görev bölmeleri ı: yönetme Word VSTO eklentileri bunu nasıl?](http://go.microsoft.com/fwlink/?LinkId=136781).  
+  ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [görev bölmeleri ı: yönetme Word VSTO eklentileri bunu nasıl?](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
 ##  <a name="Outlook"></a> Outlook  
  Outlook için bir özel görev bölmesi oluşturduğunuzda, özel görev bölmesi, belirli bir Gezgin veya denetleyici pencere ile ilişkilidir. Gezginler bir klasörün içeriğini görüntüleyen pencereler, ve denetçiler bir e-posta iletisi veya görev gibi bir öğeyi görüntülemek windows.  
@@ -149,23 +149,23 @@ ms.locfileid: "42635563"
   
  Görev bölmesi belirli Gezgini veya Inspector ile ilişkilendirmek için <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> görev bölmesi oluşturun ve geçirmek için yöntem <xref:Microsoft.Office.Interop.Outlook.Explorer> veya <xref:Microsoft.Office.Interop.Outlook.Inspector> nesnesini *penceresi* parametresi. Özel görev bölmeleri oluşturma hakkında daha fazla bilgi için bkz. [özel görev bölmeleri genel bakış](../vsto/custom-task-panes.md).  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Activate>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Activate>  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close>  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Deactivate>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Deactivate>  
   
- Inspector Windows'un durumunu izlemek için aşağıdaki denetçisi ile ilgili olayları işleyebilir:  
+  Inspector Windows'un durumunu izlemek için aşağıdaki denetçisi ile ilgili olayları işleyebilir:  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Activate>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Activate>  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Deactivate>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Deactivate>  
   
 ### <a name="prevent-multiple-instances-of-a-custom-task-pane-in-outlook"></a>Özel görev bölmesini Outlook içinde birden çok örneğini engelle  
  Outlook windows birden fazla özel görev bölmesi görüntülenmesini engellemek için özel görev bölmesinden kaldırma açıkça `CustomTaskPanes` koleksiyonunu `ThisAddIn` her penceresi kapatıldığında sınıfı. Çağrı <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> yöntemi bir pencere, gibi kapalı olduğunda bir olayda <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> veya <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>.  

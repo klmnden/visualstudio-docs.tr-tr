@@ -17,12 +17,12 @@ ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ecd87dfc4c2993023d0c882ce581280204f99d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f28781adb2679fb70e3d45d47507cd6e6aabd994
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232368"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811022"
 ---
 # <a name="source-control-integration-essentials"></a>Kaynak Denetimini Tümleştirme Temel Bileşenleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,28 +34,28 @@ ms.locfileid: "49232368"
   
  Kaynak Denetimi Eklentisi Kaynak Denetimi Eklentisi API kullanarak uygulamak için şu adımları izleyin:  
   
-1.  Belirtilen işlevleri uygulayan bir DLL'yi oluşturmak [kaynak denetimi eklentileri](../../extensibility/source-control-plug-ins.md).  
+1. Belirtilen işlevleri uygulayan bir DLL'yi oluşturmak [kaynak denetimi eklentileri](../../extensibility/source-control-plug-ins.md).  
   
-2.  DLL'yi uygun kayıt defteri girişlerini yaparak açıklandığı kaydetme [nasıl yapılır: kaynak denetimi eklentisi yükleme](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).  
+2. DLL'yi uygun kayıt defteri girişlerini yaparak açıklandığı kaydetme [nasıl yapılır: kaynak denetimi eklentisi yükleme](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).  
   
-3.  Yardımcı bir kullanıcı Arabirimi oluşturma ve kaynak denetimi bağdaştırıcısı paketi tarafından istendiğinde görüntüleme ( [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kaynak denetimi eklentileri ile kaynak denetimi işlevlerini işleyen bileşeni).  
+3. Yardımcı bir kullanıcı Arabirimi oluşturma ve kaynak denetimi bağdaştırıcısı paketi tarafından istendiğinde görüntüleme ( [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kaynak denetimi eklentileri ile kaynak denetimi işlevlerini işleyen bileşeni).  
   
- Daha fazla bilgi için [kaynak denetimi eklentisi oluşturma](../../extensibility/internals/creating-a-source-control-plug-in.md).  
+   Daha fazla bilgi için [kaynak denetimi eklentisi oluşturma](../../extensibility/internals/creating-a-source-control-plug-in.md).  
   
 ## <a name="source-control-vspackage"></a>Kaynak denetimi VSPackage'ı  
  Kaynak denetimi VSPackage'ı uygulama özelleştirilmiş bir ardılı geliştirmenizi sağlar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kaynak UI denetimi. Bu yaklaşım, kaynak denetimi tümleştirmesi üzerinde tam denetim sağlar, ancak kullanıcı Arabirimi öğeleri sağlamak ve eklenti yaklaşım sağlanması kaynak denetimi arabirimlerini gerektirir.  
   
  Kaynak denetimi VSPackage'ı uygulamak için şunları yapmalısınız:  
   
-1.  Oluşturma ve açıklandığı gibi kendi kaynak denetimi VSPackage'ı, kaydetme [kayıt ve seçim](../../extensibility/internals/registration-and-selection-source-control-vspackage.md).  
+1. Oluşturma ve açıklandığı gibi kendi kaynak denetimi VSPackage'ı, kaydetme [kayıt ve seçim](../../extensibility/internals/registration-and-selection-source-control-vspackage.md).  
   
-2.  Varsayılan kaynak denetimi kullanıcı Arabirimi, özel kullanıcı Arabirimi ile değiştirin. Bkz: [özel kullanıcı arabirimi](../../extensibility/internals/custom-user-interface-source-control-vspackage.md).  
+2. Varsayılan kaynak denetimi kullanıcı Arabirimi, özel kullanıcı Arabirimi ile değiştirin. Bkz: [özel kullanıcı arabirimi](../../extensibility/internals/custom-user-interface-source-control-vspackage.md).  
   
-3.  Kullanılması ve işlemek için karakter belirtin **Çözüm Gezgini** glif olayları. Bkz: [karakter denetimi](../../extensibility/internals/glyph-control-source-control-vspackage.md).  
+3. Kullanılması ve işlemek için karakter belirtin **Çözüm Gezgini** glif olayları. Bkz: [karakter denetimi](../../extensibility/internals/glyph-control-source-control-vspackage.md).  
   
-4.  Sorgu düzenleme ve sorguyu kaydedin olayları, gösterildiği gibi işlemek [sorgu düzenleme sorgu kaydetme](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md).  
+4. Sorgu düzenleme ve sorguyu kaydedin olayları, gösterildiği gibi işlemek [sorgu düzenleme sorgu kaydetme](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md).  
   
- Daha fazla bilgi için [bir kaynak denetimi VSPackage'ı oluşturma](../../extensibility/internals/creating-a-source-control-vspackage.md).  
+   Daha fazla bilgi için [bir kaynak denetimi VSPackage'ı oluşturma](../../extensibility/internals/creating-a-source-control-vspackage.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Genel bakış](../../extensibility/internals/source-control-integration-overview.md)   

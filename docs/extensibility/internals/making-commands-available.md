@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd7344fe7227f6fa7afd00684a99d8172bad8736
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c1292dc3879effa53f3b4a41b87374a3a5f46ff0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510943"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857139"
 ---
 # <a name="making-commands-available"></a>Komutları Kullanılabilir Yapma
 Visual Studio için birden çok VSPackages eklendiğinde, kullanıcı arabirimi (UI) komutları ile overcrowded haline gelir. Bu sorun şu şekilde azaltmaya yardımcı olmak için paket programlama yapabilirsiniz:
@@ -54,12 +54,13 @@ Gecikmeli yüklemeyi başlatma performansını iyileştirebilir dikkat edin.
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bir proje yüklenirken veya oluşturmaya devam düzenlemesini gibi kullanıcı eylemlerini sonucunda değişiklikleri izler. Değişiklikler oldukça IDE görünümünü otomatik olarak değiştirilir. Aşağıdaki tabloda, IDE'nin dört ana bağlamları değiştirme gösterilmektedir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] izleyiciler.
 
-|İçerik türü|Açıklama|
-|---------------------|-----------------|
-|Etkin proje türü|Çoğu proje türleri için bu `GUID` değer: Proje uygulayan VSPackage GUID ile aynı. Ancak, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projeler, proje türü kullanmak `GUID` değeri.|
-|Etkin pencere|Genellikle, tuş bağlamaları geçerli UI bağlamı oluşturur son etkin belge penceresini budur. Ancak, iç Web tarayıcısı benzer bir anahtar bağlaması tablo içeren bir araç penceresi da kaynaklanıyor olabilir. HTML düzenleyicisi gibi birden çok sekmeli belge pencereleri için farklı komut bağlam her sekme sahip `GUID`.|
-|Etkin dil hizmeti|Bir metin düzenleyicisinde görüntülenmekte dosya ile ilişkilendirilmiş dil hizmeti.|
-|Etkin araç penceresi|Açıksa ve odaktaysa araç penceresi.|
+
+| İçerik türü | Açıklama |
+|-------------------------| - |
+| Etkin proje türü | Çoğu proje türleri için bu `GUID` değer: Proje uygulayan VSPackage GUID ile aynı. Ancak, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projeler, proje türü kullanmak `GUID` değeri. |
+| Etkin pencere | Genellikle, tuş bağlamaları geçerli UI bağlamı oluşturur son etkin belge penceresini budur. Ancak, iç Web tarayıcısı benzer bir anahtar bağlaması tablo içeren bir araç penceresi da kaynaklanıyor olabilir. HTML düzenleyicisi gibi birden çok sekmeli belge pencereleri için farklı komut bağlam her sekme sahip `GUID`. |
+| Etkin dil hizmeti | Bir metin düzenleyicisinde görüntülenmekte dosya ile ilişkilendirilmiş dil hizmeti. |
+| Etkin araç penceresi | Açıksa ve odaktaysa araç penceresi. |
 
  Beşinci bir ana içerik alanı IDE'nin UI durumudur. UI bağlamı etkin komut bağlam tarafından tanımlanan `GUID`s, aşağıdaki gibi:
 

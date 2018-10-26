@@ -17,12 +17,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d642c265104f490739613897e1fd5c177ac0d6f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75bc095ba4e9fc12033787b64dd516459e574b26
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263698"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859942"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Paylaşılan ve Sürümü Tutulan VSPackage’lar Arasında Seçim Yapma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ Visual Studio'nun farklı sürümleri aynı bilgisayarda bulunabilir. VSPackage'
 ## <a name="binary-compatibility"></a>İkili uyumluluğu  
  Genel olarak, Visual Studio sonraki sürümleri için Visual Studio'nun önceki sürümleriyle geliştirilmiş yerel kodlu VSPackages ikili uyumluluğu sağlar. Bununla birlikte, üç önemli özel durum vardır:  
   
--   Belirli bir ortak dil çalışma zamanı sürümü, VSPackage'ı kullanır ardından hangi sürümünde belirlemelisiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çalışır.  
+- Belirli bir ortak dil çalışma zamanı sürümü, VSPackage'ı kullanır ardından hangi sürümünde belirlemelisiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çalışır.  
   
--   VSPackage belirli bir özelliğini başka bir VSPackage'ı veya başka bir ürün üzerinde bir bağımlılık olabilir. Sonuç olarak, yalnızca bağımlılık burada sağlanırsa VSPackage'ı çalıştırabilirsiniz.  
+- VSPackage belirli bir özelliğini başka bir VSPackage'ı veya başka bir ürün üzerinde bir bağımlılık olabilir. Sonuç olarak, yalnızca bağımlılık burada sağlanırsa VSPackage'ı çalıştırabilirsiniz.  
   
--   VSPackage bir güvenlik düzeltme tarafından etkilenebilecek bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] hizmet paketi veya sonraki bir sürümü [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Bu gibi durumlarda, önceki bir sürümü ile VSPackage geliştirilen [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] sürümlerinde çalışmayabilir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] güvenlik düzeltme uygulandıktan sonra. Ancak, paketiniz sonraki bir sürümü ile yeniden oluşturun ve önceki sürümlerinde de çalıştırmak sahip.  
+- VSPackage bir güvenlik düzeltme tarafından etkilenebilecek bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] hizmet paketi veya sonraki bir sürümü [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Bu gibi durumlarda, önceki bir sürümü ile VSPackage geliştirilen [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] sürümlerinde çalışmayabilir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] güvenlik düzeltme uygulandıktan sonra. Ancak, paketiniz sonraki bir sürümü ile yeniden oluşturun ve önceki sürümlerinde de çalıştırmak sahip.  
   
- Yönetilen VSPackages bir sürümü kullanılarak oluşturulur gerekir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] hedef sürümü, eşleşen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+  Yönetilen VSPackages bir sürümü kullanılarak oluşturulur gerekir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] hedef sürümü, eşleşen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- VSPackage ikili dosyalarınız için ikili uyumluluğu için planlama yanı sıra, ayrıca çözümünü göz önünde bulundurun ve proje dosya biçimleri. Yeni bir proje türü, VSPackage oluşturur, bunu yalnızca bir sürüm veya birden çok sürümünü çalıştırıp çalıştıramayacağını karar vermelisiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Daha fazla bilgi için [özel projeleri yükseltme](../misc/upgrading-custom-projects.md).  
+  VSPackage ikili dosyalarınız için ikili uyumluluğu için planlama yanı sıra, ayrıca çözümünü göz önünde bulundurun ve proje dosya biçimleri. Yeni bir proje türü, VSPackage oluşturur, bunu yalnızca bir sürüm veya birden çok sürümünü çalıştırıp çalıştıramayacağını karar vermelisiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Daha fazla bilgi için [özel projeleri yükseltme](../misc/upgrading-custom-projects.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows Installer ile VSPackage yükleme](../extensibility/internals/installing-vspackages-with-windows-installer.md)   

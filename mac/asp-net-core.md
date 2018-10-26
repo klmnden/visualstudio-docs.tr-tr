@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 231994db8192f5c44919efcf5823e4e57342f2b1
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 694f6f10a482318f6c6a1c40e6796e09daac0913
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942952"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core kullanmaya başlama
 
@@ -64,12 +64,12 @@ public static void Main(string[] args)
 ```
 ASP.NET Core uygulaması bir web sunucusunu yapılandırarak ve bir ana bilgisayar örneği aracılığıyla başlatma kendi ana yönteminde oluşturur [ `WebHostBuilder` ](https://docs.microsoft.com/aspnet/core/fundamentals/hosting). Bu oluşturucu yapılandırılması konağın izin vermek için yöntemler sağlar. Şablon uygulaması, aşağıdaki yapılandırmaları kullanılır:
 
- * `UseKestrel`: Kestrel sunucusu uygulama tarafından kullanılacak belirtir
- * `UseContentRoot(Directory.GetCurrentDirectory())`: Web projesinin kök klasörüne uygulamanın içerik kök olarak uygulamanın bu klasörden başlattığınızda kullanır
- * `.UseIISIntegration()`: Belirtir uygulamanın IIS ile çalışması gerekir. IIS, ASP.NET Core ile iki kullanılacak `UseKestrel` ve `UseIISIntegration` belirtilmesi gerekir.
- * `.UseStartup<Startup>()`: Başlangıç sınıfı belirtir.
+* `UseKestrel`: Kestrel sunucusu uygulama tarafından kullanılacak belirtir
+* `UseContentRoot(Directory.GetCurrentDirectory())`: Web projesinin kök klasörüne uygulamanın içerik kök olarak uygulamanın bu klasörden başlattığınızda kullanır
+* `.UseIISIntegration()`: Belirtir uygulamanın IIS ile çalışması gerekir. IIS, ASP.NET Core ile iki kullanılacak `UseKestrel` ve `UseIISIntegration` belirtilmesi gerekir.
+* `.UseStartup<Startup>()`: Başlangıç sınıfı belirtir.
 
- Uygulamayı barındırmak ve bunu gelen HTTP isteklerini dinlemeye IWebHost derleme ve çalıştırma yöntemleri oluşturun.
+  Uygulamayı barındırmak ve bunu gelen HTTP isteklerini dinlemeye IWebHost derleme ve çalıştırma yöntemleri oluşturun.
 
 ### <a name="startupcs"></a>Startup.cs
 

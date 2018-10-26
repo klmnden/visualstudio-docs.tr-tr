@@ -10,12 +10,12 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 4b6580602e730ae2f8cfc6fe47366d57ce1ff7ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9390182f6fec91d049a1c080e33802aecfed305
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178821"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860701"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Xamarin ile mobil geliştirme hakkında bilgi edinin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Bu konuda, platformlar arası mobil uygulamaları geliştirmeye Xamarin ile anla
 ## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>Hakkında temel bilgiler: Visual Studio ve Xamarin ortamı genel bakış  
  *5-15 dakika*  
   
--   Visual Studio ve Xamarin ile Windows bilgisayarı iş çoğunu burada gerçekleştirirsiniz ' dir. Bu bilgisayar, doğrudan Windows ve Android uygulamaları geliştirin ve çalıştırın ve bir cihaz veya öykünücü üzerinde hata ayıklayın. Uzaktan da oluşturun, çalıştırın ve Mac aracılığıyla iOS uygulamalarının hatalarını ayıklama Visual Studio Windows bilgisayarda ayrıca iOS görsel taslak Tasarımcısı ve iOS simülatörü bağlanabilirsiniz.  
+- Visual Studio ve Xamarin ile Windows bilgisayarı iş çoğunu burada gerçekleştirirsiniz ' dir. Bu bilgisayar, doğrudan Windows ve Android uygulamaları geliştirin ve çalıştırın ve bir cihaz veya öykünücü üzerinde hata ayıklayın. Uzaktan da oluşturun, çalıştırın ve Mac aracılığıyla iOS uygulamalarının hatalarını ayıklama Visual Studio Windows bilgisayarda ayrıca iOS görsel taslak Tasarımcısı ve iOS simülatörü bağlanabilirsiniz.  
   
--   Xcode ve Xamarin ile bir Mac derleme/imzalama olarak hizmet veren iOS uygulamaları için konak ve çalışma zamanı ortamı. Derlemeler için Visual Studio içinden iOS Windows bilgisayarda, bu Mac bilgisayara verilmiş; bir iOS uygulamasını Visual Studio'dan hata ayıklama sırasında iOS simülatöründe Mac veya doğrudan bağlı Mac için bir internet paylaşımlı cihaz üzerinde çalıştığı Bu durumda üzerinde veya yakınında Mac uygulaması ile etkileşim kurmak ve Visual Studio'da hata ayıklama deneyiminizi olması.  
+- Xcode ve Xamarin ile bir Mac derleme/imzalama olarak hizmet veren iOS uygulamaları için konak ve çalışma zamanı ortamı. Derlemeler için Visual Studio içinden iOS Windows bilgisayarda, bu Mac bilgisayara verilmiş; bir iOS uygulamasını Visual Studio'dan hata ayıklama sırasında iOS simülatöründe Mac veya doğrudan bağlı Mac için bir internet paylaşımlı cihaz üzerinde çalıştığı Bu durumda üzerinde veya yakınında Mac uygulaması ile etkileşim kurmak ve Visual Studio'da hata ayıklama deneyiminizi olması.  
   
- Bu ilişkileri aşağıda gösterilmiştir ve daha fazla bilgi edinebilirsiniz üzerinde iOS uygulamalarıyla çalışma hakkında [Visual Studio için Xamarin.ios'a giriş](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) (xamarin.com).  
+  Bu ilişkileri aşağıda gösterilmiştir ve daha fazla bilgi edinebilirsiniz üzerinde iOS uygulamalarıyla çalışma hakkında [Visual Studio için Xamarin.ios'a giriş](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) (xamarin.com).  
   
- ![Xamarin ortamınızdaki Windows ve Mac'te geliştirme bilgisayarlar arasındaki ilişki](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin 1 öğrenin")  
+  ![Xamarin ortamınızdaki Windows ve Mac'te geliştirme bilgisayarlar arasındaki ilişki](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin 1 öğrenin")  
   
 ## <a name="essentials-how-projects-are-structured"></a>Temel bileşenleri: Projeleri nasıl yapılanmıştır.  
  *10-30 dakika*  
@@ -64,15 +64,15 @@ Bu konuda, platformlar arası mobil uygulamaları geliştirmeye Xamarin ile anla
   
  Önden almak için hangi yaklaşımın karar gerekmez; uygulamalar hem Xamarin.Forms, hem de Xamarin yerel bir birleşimini kullanarak uygulanabilir:  
   
--   Oturum açma bilgileri gibi platformlarda benzer kullanıcı Arabirimi ve özellikleri sağlayan genel amaçlı ekranlar oluşturmak için Xamarin.Forms kullanın forms başvurun ve arama sonuçları.  
+- Oturum açma bilgileri gibi platformlarda benzer kullanıcı Arabirimi ve özellikleri sağlayan genel amaçlı ekranlar oluşturmak için Xamarin.Forms kullanın forms başvurun ve arama sonuçları.  
   
--   Çeşitli özelleştirme özelliklerini Xamarin.Forms UI platform başına temelinde ayarlamak için kullanın. Bunlar, hem koddan kullanılabilir OnPlatform API ve özel görünüm oluşturma, var olan bir oluşturucu genişletme ve özel Oluşturucu Oluşturma XAML içerir.  
+- Çeşitli özelleştirme özelliklerini Xamarin.Forms UI platform başına temelinde ayarlamak için kullanın. Bunlar, hem koddan kullanılabilir OnPlatform API ve özel görünüm oluşturma, var olan bir oluşturucu genişletme ve özel Oluşturucu Oluşturma XAML içerir.  
   
--   Gerekirse, örneğin her platformun benzersiz kullanıcı Arabirimi özelliklerini kullanan ekranlar, yerel kamera yakalama ve görüntü işleme kullanan bir ekran oluşturmak için Xamarin yerel kullanın.  
+- Gerekirse, örneğin her platformun benzersiz kullanıcı Arabirimi özelliklerini kullanan ekranlar, yerel kamera yakalama ve görüntü işleme kullanan bir ekran oluşturmak için Xamarin yerel kullanın.  
   
- Platformlar arasında paylaşma ve platforma özgü düzenlemeler için özelleştirme özelliklerini kullanarak kullanıcı Arabirimi kodu ayarlamak için Xamarin.Forms çözümü her zaman başlamanızı öneririz. Tamamen platforma özgü ekranlar ihtiyacınız varsa, bunları ayrı ayrı Xamarin yerel kullanarak ekleyebilirsiniz.  
+  Platformlar arasında paylaşma ve platforma özgü düzenlemeler için özelleştirme özelliklerini kullanarak kullanıcı Arabirimi kodu ayarlamak için Xamarin.Forms çözümü her zaman başlamanızı öneririz. Tamamen platforma özgü ekranlar ihtiyacınız varsa, bunları ayrı ayrı Xamarin yerel kullanarak ekleyebilirsiniz.  
   
- Daha fazla bilgi için:  
+  Daha fazla bilgi için:  
   
 1.  [Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/) (xamarin.com), kısa bir genel bakış ve avantajları ve dezavantajları Xamarin.Forms ve yerel UI katmanları (diğer bir deyişle, Xamarin.iOS ve Xamarin.Android) sağlar.  
   

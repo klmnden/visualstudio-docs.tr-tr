@@ -26,12 +26,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: faeac90c92675c897774cc3650575cd60f5be991
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b242f8154f31391d168f2a41bfd00c01f037d87e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288411"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877653"
 ---
 # <a name="editing-tableadapters"></a>TableAdapters düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,21 +127,21 @@ Bazen bağdaştırıcının tablo şemasını değiştirmek isteyebilirsiniz. Bu
 ## <a name="create-new-stored-procedures"></a>Yeni saklı yordamlar oluşturma  
  Bu bölümde nasıl tamamlanacağını açıklayan **TableAdapter sorgu Yapılandırma Sihirbazı'nı** seçerken **yeni saklı yordamlar oluşturma** seçeneği.  
   
-1.  İçinde **saklı yordamlar üretmesini** sayfasında, saklı yordamı çağrılırken yürütmek için SQL deyimi girin.  
+1. İçinde **saklı yordamlar üretmesini** sayfasında, saklı yordamı çağrılırken yürütmek için SQL deyimi girin.  
   
-    > [!NOTE]
-    >  Sihirbaz erişim sağlayan **Sorgu Oluşturucu**, SQL sorguları oluşturmak için bir araç. Bunu açmak için **Sorgu Oluşturucu** düğmesi.  
+   > [!NOTE]
+   >  Sihirbaz erişim sağlayan **Sorgu Oluşturucu**, SQL sorguları oluşturmak için bir araç. Bunu açmak için **Sorgu Oluşturucu** düğmesi.  
   
-2.  İçinde **saklı yordamları oluştur** sayfasında, aşağıdakileri yapın:  
+2. İçinde **saklı yordamları oluştur** sayfasında, aşağıdakileri yapın:  
   
-    1.  Yeni saklı yordam için bir ad yazın.  
+   1. Yeni saklı yordam için bir ad yazın.  
   
-    2.  Temel alınan veritabanında saklı yordamı oluşturulup oluşturulmayacağını belirtin.  
+   2. Temel alınan veritabanında saklı yordamı oluşturulup oluşturulmayacağını belirtin.  
   
-        > [!NOTE]
-        >  Veritabanında bir saklı yordam oluşturma özelliği, belirli bir veritabanı için güvenlik ayarları tarafından belirlenir.  
+      > [!NOTE]
+      >  Veritabanında bir saklı yordam oluşturma özelliği, belirli bir veritabanı için güvenlik ayarları tarafından belirlenir.  
   
-     **Sihirbazı sonuçlarını görüntüle** sayfası TableAdapter sorgu oluşturma sonuçlarını gösterir. Bu sayfa, Sihirbazı bir sorunla karşılaşırsa, hata bilgilerini sağlar.  
+      **Sihirbazı sonuçlarını görüntüle** sayfası TableAdapter sorgu oluşturma sonuçlarını gösterir. Bu sayfa, Sihirbazı bir sorunla karşılaşırsa, hata bilgilerini sağlar.  
   
 ## <a name="use-existing-stored-procedures"></a>Mevcut saklı yordamlar kullanma  
  Bu bölümde nasıl tamamlanacağını açıklayan **TableAdapter sorgu Yapılandırma Sihirbazı'nı** seçerken **mevcut saklı yordamlar kullanma** seçeneği.  

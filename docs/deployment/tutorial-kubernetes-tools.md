@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 079ae6affd5c495136d97a00eae2ddccfa2c9066
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 8cf4192ce0f925624dbbe890381d3557f2a27223
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356788"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942939"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Visual Studio Kubernetes araçları kullanmaya başlayın
 
@@ -90,21 +90,21 @@ Bunu yapmak için önce her şeyi açıklandığı yüklediğinizi sağlayamazsa
 
    ![Menü öğesi, ekran yayımlama](media/k8s-tools-publish-project.png)
 
-1. İçinde **Yayımla** ekran öğesini **kapsayıcı kayıt defteri** Yayımla olarak hedef ve kapsayıcı kayıt defterinizde seçmek için istemleri takip edin. Bir kapsayıcı kayıt defterinde yoksa seçin **yeni Azure Container Registry oluşturma** Visual Studio'dan oluşturma. Daha fazla bilgi için [kapsayıcınızı Azure Container Registry'ye yayımlama](#publish-your-container-to-azure-container-registry).
+2. İçinde **Yayımla** ekran öğesini **kapsayıcı kayıt defteri** Yayımla olarak hedef ve kapsayıcı kayıt defterinizde seçmek için istemleri takip edin. Bir kapsayıcı kayıt defterinde yoksa seçin **yeni Azure Container Registry oluşturma** Visual Studio'dan oluşturma. Daha fazla bilgi için [kapsayıcınızı Azure Container Registry'ye yayımlama](#publish-your-container-to-azure-container-registry).
 
    ![Çekme Yayımla hedef ekran görüntüsü](media/k8s-tools-publish-to-acr.png)
 
-1. Çözüm Gezgini içinde tekrar sağ tıklayın, *çözüm* tıklatıp **Azure AKS Yayımla**.
+3. Çözüm Gezgini içinde tekrar sağ tıklayın, *çözüm* tıklatıp **Azure AKS Yayımla**.
 
    ![Ekran görüntüsü, Web'de yayımlama Azure AKS menü öğesi](media/k8s-tools-publish-solution.png)
 
-1. Aboneliğiniz ve AKS kümenizi seçin, ACR ile birlikte oluşturduğunuz profili yayımlayabilir. Sonra **Tamam**'a tıklayın.
+4. Aboneliğiniz ve AKS kümenizi seçin, ACR ile birlikte oluşturduğunuz profili yayımlayabilir. Sonra **Tamam**'a tıklayın.
 
    ![Ekran görüntüsü, Web'de yayımlama AKS ekranı](media/k8s-tools-publish-to-aks.png)
 
    Sayfasına yönlendirileceksiniz **Azure AKS Yayımla** ekran.
 
-1.  Seçin **yapılandırma Helm** Helm grafikleri sunucusuna yüklemek için kullanılan komut satırı güncelleştirmek için bir bağlantı.
+5. Seçin **yapılandırma Helm** Helm grafikleri sunucusuna yüklemek için kullanılan komut satırı güncelleştirmek için bir bağlantı.
 
    ![Yapılandırma Helm ekran bağlantı](media/k8s-tools-configure-helm.png)
 
@@ -112,7 +112,7 @@ Bunu yapmak için önce her şeyi açıklandığı yüklediğinizi sağlayamazsa
 
    ![Ekran görüntüsü, Helm ekran yapılandırın](media/k8s-tools-helm-configure-screen.png)
 
-1. Dağıtmaya hazır olduğunuzda tıklayın **Yayımla** AKS için uygulamanızı yayımlamak için düğme.
+6. Dağıtmaya hazır olduğunuzda tıklayın **Yayımla** AKS için uygulamanızı yayımlamak için düğme.
 
    ![Yayımlama Azure AKS ekrana ekran görüntüsü](media/k8s-tools-publish-screen.png)
 

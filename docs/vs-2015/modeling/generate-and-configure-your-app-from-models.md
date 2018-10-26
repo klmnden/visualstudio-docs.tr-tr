@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c236a0b0896c135035d4d20eecfe5379b62522a3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96dc292712a04b7a1049400b908bf5f678b63df3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240649"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857464"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Uygulamanızı modeller aracılığıyla oluşturma ve yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,30 +29,30 @@ Oluşturma veya modelden uygulamanızın parçalarını yapılandırın. Model, 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Bir modelde uygulamanızın kod oluşturma  
  Kod oluşturmanın en kolay yolu, metin şablonları kullanmaktır. Aynı kod oluşturabilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çözüm modeli tutun. Daha fazla bilgi için bkz.:  
   
--   [T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
+- [T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
   
--   [UML modeli aracılığıyla dosya oluşturma](../modeling/generate-files-from-a-uml-model.md)  
+- [UML modeli aracılığıyla dosya oluşturma](../modeling/generate-files-from-a-uml-model.md)  
   
--   [Etki Alanına Özgü Dilden Kod Oluşturma](../modeling/generating-code-from-a-domain-specific-language.md)  
+- [Etki Alanına Özgü Dilden Kod Oluşturma](../modeling/generating-code-from-a-domain-specific-language.md)  
   
- Bu yöntem, artımlı olarak uygulamak kolay bir işlemdir. Yalnızca özel durumunuz için çalışan bir uygulama ile başlayın ve birkaç parçalarını modelden değiştirmek için istediğiniz zaman seçin. Kaynak dosyaları bu parçaların haline gelmeden metin şablonu (.tt) dosyalarını yeniden adlandırın. Bu noktada, önceden yaptığınız gibi uygulamanın çalışması için kaynak .cs dosyaları otomatik olarak şablon dosyalarından oluşturulur.  
+  Bu yöntem, artımlı olarak uygulamak kolay bir işlemdir. Yalnızca özel durumunuz için çalışan bir uygulama ile başlayın ve birkaç parçalarını modelden değiştirmek için istediğiniz zaman seçin. Kaynak dosyaları bu parçaların haline gelmeden metin şablonu (.tt) dosyalarını yeniden adlandırın. Bu noktada, önceden yaptığınız gibi uygulamanın çalışması için kaynak .cs dosyaları otomatik olarak şablon dosyalarından oluşturulur.  
   
- Daha sonra kodun bir parçası olması ve model okur ve kaynak dosyasının bu bölümü oluşturan bir metin şablonu ifadesi ile değiştirin. Modelin en az bir değer uygulamayı tekrar çalıştırabilirsiniz ve önceki gibi çalışır, özgün kaynak oluşturmanız gerekir. Farklı bir model değerleri test ettikten sonra siz başka bir kod parçası şablon ifadeleri eklemek geçebilirsiniz.  
+  Daha sonra kodun bir parçası olması ve model okur ve kaynak dosyasının bu bölümü oluşturan bir metin şablonu ifadesi ile değiştirin. Modelin en az bir değer uygulamayı tekrar çalıştırabilirsiniz ve önceki gibi çalışır, özgün kaynak oluşturmanız gerekir. Farklı bir model değerleri test ettikten sonra siz başka bir kod parçası şablon ifadeleri eklemek geçebilirsiniz.  
   
- Bu artımlı bir yöntem, kod oluşturma genellikle düşük riskli bir yaklaşım olduğunu gösterir. Elde edilen uygulamalar genellikle el ile yazılmış bir sürümünün yanı sıra hemen gerçekleştirin.  
+  Bu artımlı bir yöntem, kod oluşturma genellikle düşük riskli bir yaklaşım olduğunu gösterir. Elde edilen uygulamalar genellikle el ile yazılmış bir sürümünün yanı sıra hemen gerçekleştirin.  
   
- Ancak, varolan bir uygulama ile başlatırsanız, çok sayıda yeniden düzenleme modeli tarafından yönetilir ve böylece bağımsız olarak değiştirilebilir farklı davranışları ayırmak için gerekli olduğunu fark edebilirsiniz. Projenizin maliyet tahmini yaparken uygulamanın bu en boy değerlendirmek öneririz.  
+  Ancak, varolan bir uygulama ile başlatırsanız, çok sayıda yeniden düzenleme modeli tarafından yönetilir ve böylece bağımsız olarak değiştirilebilir farklı davranışları ayırmak için gerekli olduğunu fark edebilirsiniz. Projenizin maliyet tahmini yaparken uygulamanın bu en boy değerlendirmek öneririz.  
   
 ## <a name="configuring-your-application-from-a-model"></a>Model aracılığıyla uygulamanızı yapılandırma  
  Çalışma zamanında uygulamanızın davranışını değiştirmek istiyorsanız, uygulama derlenmeden önce kaynak kodunu üretir ve kod oluşturma kullanamazsınız. Bunun yerine, UML veya DSL modeli okumak ve buna göre davranışını değiştirmek için uygulamanızı tasarlayabilirsiniz. Daha fazla bilgi için bkz.:  
   
--   [Program kodundaki UML modelini okuma](../modeling/read-a-uml-model-in-program-code.md)  
+- [Program kodundaki UML modelini okuma](../modeling/read-a-uml-model-in-program-code.md)  
   
--   [Nasıl yapılır: Program Kodunda Dosyadan Model Açma](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
+- [Nasıl yapılır: Program Kodunda Dosyadan Model Açma](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
- Bu yöntem aynı zamanda artımlı olarak uygulanabilir, ancak daha fazla iş başında yoktur. Modeli okumak ve değişken parçaları için erişilebilir olmasını değerleri olanak tanıyan bir altyapı ayarlamak kod yazmanız gerekir. Değişken parçaları genel yapma, kod oluşturmaktan daha pahalıdır.  
+  Bu yöntem aynı zamanda artımlı olarak uygulanabilir, ancak daha fazla iş başında yoktur. Modeli okumak ve değişken parçaları için erişilebilir olmasını değerleri olanak tanıyan bir altyapı ayarlamak kod yazmanız gerekir. Değişken parçaları genel yapma, kod oluşturmaktan daha pahalıdır.  
   
- Genel bir uygulama genellikle kendi belirli ortaklarınıza daha az iyi gerçekleştirir. Proje planınızı, performans önemliyse, bu risk değerlendirmesini içermesi gerekir.  
+  Genel bir uygulama genellikle kendi belirli ortaklarınıza daha az iyi gerçekleştirir. Proje planınızı, performans önemliyse, bu risk değerlendirmesini içermesi gerekir.  
   
 ## <a name="developing-a-derived-application"></a>Türetilen bir uygulama geliştirme  
  Aşağıdaki genel yönergeleri yararlı bulabilirsiniz.  

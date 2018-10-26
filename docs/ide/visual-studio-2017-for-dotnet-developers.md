@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 545bcaa46226b315fb338e352968c5b74dd0232f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 31800a7ec4e5a008234f7ee72b6c43bba559fbf9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495797"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928353"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# üretkenlik Kılavuzu
 
@@ -57,7 +57,7 @@ Popüler Visual Studio kısayolları şunlardır:
 > [!NOTE]
 > Bazı uzantılar, varsayılan Visual Studio tuş bağlamalarını bağlamayı Kaldır. Yukarıdaki komutları kullanmak için tuş bağlamaları Visual Studio'nun ayarlarına giderek geri yüklemek **Araçları** > **içeri ve dışarı aktarma ayarları** > **tüm ayarları sıfırla**  veya **Araçları** > **seçenekleri** > **klavye** > **sıfırlama**.
 
-Klavye kısayolları ve Visual Studio'da komutlar daha fazla bilgi [Belgelerimizi](..\ide\tips-and-tricks-for-visual-studio.md).
+Klavye kısayolları ve Visual Studio'da komutlar daha fazla bilgi [Belgelerimizi](../ide/tips-and-tricks-for-visual-studio.md).
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>Dosya veya türler için hızlıca gezinmek için bir yola ihtiyacım
 
@@ -161,7 +161,7 @@ Kod yazma daha verimli hale getirmek için düzenleyici ve üretkenlik özellikl
 | Kaynak koda dönüştürülmüş kaynaklara gezintiyi etkinleştir | Tür/üye dış kaynaklardan tanıma ver ve metot gövdeleri gösterilecek yetenek kaynak koda dönüştürücü kullanma | **Araçlar** > **seçenekleri** > **metin düzenleyici** > **C#** > **Gelişmiş**   >  **Kaynak koda dönüştürülmüş kaynaklara gezintiyi etkinleştir** |
 | Tamamlanma/öneri modu | IntelliSense--Intellij arka planlar geliştiricilere tamamlama davranışı eğilimli ayarını değiştirmek için değişiklikleri buraya varsayılan | **Menü** > **Düzenle** > **IntelliSense** > **tamamlama modunu Değiştir** |
 | [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Başvuru bilgileri kod ve değişiklik geçmişi Düzenleyicisi'nde görüntüler | **Araçlar** > **seçenekleri** > **metin düzenleyici** > **tüm diller**  >   **CodeLens** |
-| [Kod parçacıkları](../ide/visual-csharp-code-snippets.md) | Ortak Demirbaş saplama Yardım |  Bir kod parçacığı adı yazıp basın **sekmesini** iki kez. |
+| [Kod parçacıkları](../ide/visual-csharp-code-snippets.md) | Ortak Demirbaş saplama Yardım | Bir kod parçacığı adı yazıp basın **sekmesini** iki kez. |
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>Üretken veya yaşayan kötü performans sağlayan bir özellik eksik?
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae3b12ffa91b419717e91125b658f29e7d74deb6
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 67eb30f340afcd2f8e631170fc84fd00f5a9d43c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37923900"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831335"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Nasıl yapılır: mipmap'leri içeren dokuyu dışa aktarma
 
@@ -33,14 +33,14 @@ Mipeşlem, 3D oyun veya uygulamada dokulu yüzeyler için otomatik ekran alanı 
 
 ### <a name="to-export-a-texture-that-has-mipmaps"></a>Mipmap içeren bir dokuyu dışarı aktarmak için
 
-1.  Temel doku ile başlayın. Varolan bir resim dosyasını yükleyin ya da açıklandığı gibi oluşturmak [nasıl yapılır: temel doku oluşturma](../designers/how-to-create-a-basic-texture.md). Mipmap'leri desteklemek için genişliği ve yüksekliği ikinin kuvveti, örneğin, 64 x 64, 256 x 256 veya 512 x 512 aynı güç olan olan bir doku belirtin.
+1. Temel doku ile başlayın. Varolan bir resim dosyasını yükleyin ya da açıklandığı gibi oluşturmak [nasıl yapılır: temel doku oluşturma](../designers/how-to-create-a-basic-texture.md). Mipmap'leri desteklemek için genişliği ve yüksekliği ikinin kuvveti, örneğin, 64 x 64, 256 x 256 veya 512 x 512 aynı güç olan olan bir doku belirtin.
 
-2.  Görüntü içeriği ardışık düzeni tarafından işlenir böylece yeni oluşturduğunuz doku dosyasını yapılandırarak. İçinde **Çözüm Gezgini**, oluşturduğunuz doku dosyası için kısayol menüsünü açın ve ardından **özellikleri**. Üzerinde **yapılandırma özellikleri** > **genel** sayfasında **öğesi türü** özelliğini **görüntü içeriği ardışık düzeni**. Emin olun **içerik** özelliği **Evet** ve **yapıdan hariç tut** ayarlanır **Hayır**. Seçin **uygulamak**.
+2. Görüntü içeriği ardışık düzeni tarafından işlenir böylece yeni oluşturduğunuz doku dosyasını yapılandırarak. İçinde **Çözüm Gezgini**, oluşturduğunuz doku dosyası için kısayol menüsünü açın ve ardından **özellikleri**. Üzerinde **yapılandırma özellikleri** > **genel** sayfasında **öğesi türü** özelliğini **görüntü içeriği ardışık düzeni**. Emin olun **içerik** özelliği **Evet** ve **yapıdan hariç tut** ayarlanır **Hayır**. Seçin **uygulamak**.
 
    **Görüntü içeriği ardışık düzeni** yapılandırma özellik sayfası görüntülenir.
 
-3.  Mipmaps oluşturmak için görüntü içeriği ardışık yapılandırın. Üzerinde **yapılandırma özellikleri** > **görüntü içeriği ardışık düzeni** > **genel** sayfasında **Mipsüret** özelliğini **Evet (/ generatemips)**.
+3. Mipmaps oluşturmak için görüntü içeriği ardışık yapılandırın. Üzerinde **yapılandırma özellikleri** > **görüntü içeriği ardışık düzeni** > **genel** sayfasında **Mipsüret** özelliğini **Evet (/ generatemips)**.
 
-4.  Seçin **Tamam**.
+4. Seçin **Tamam**.
 
 Proje oluşturduğunuzda, görüntü içeriği ardışık düzeni kaynak görüntüyü çalışma biçiminden MIP düzeyleri de dahil olmak üzere, belirttiğiniz çıkış biçimine dönüştürür. Sonuç projenin çıkış dizinine kopyalanır.

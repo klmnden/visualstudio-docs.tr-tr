@@ -18,12 +18,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 486c8e32b577b6c794a03c080a909023b40eafde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b05c0f1782382f437a5e1d90bf19c724a05ca6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219968"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826396"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Birden Çok İşlemciye Duyarlı Günlükçüler Yazılıyor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,13 +71,13 @@ public interface INodeLogger: ILogger
   
  Dağıtılmış, aşağıdaki gibi oturum kullanmanın iki yolu vardır:  
   
--   Adlı önceden oluşturulmuş iletme Günlükçü özelleştirme <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>.  
+- Adlı önceden oluşturulmuş iletme Günlükçü özelleştirme <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>.  
   
--   Kendi özel iletme Günlükçü yazın.  
+- Kendi özel iletme Günlükçü yazın.  
   
- ConfigurableForwardingLogger gereksinimlerinize uyacak şekilde değiştirebilirsiniz. Bunu yapmak için Günlükçü komut satırında MSBuild.exe kullanarak çağırın ve Günlükçü merkezi düğüme iletmek istediğiniz derleme olayları listeler.  
+  ConfigurableForwardingLogger gereksinimlerinize uyacak şekilde değiştirebilirsiniz. Bunu yapmak için Günlükçü komut satırında MSBuild.exe kullanarak çağırın ve Günlükçü merkezi düğüme iletmek istediğiniz derleme olayları listeler.  
   
- Alternatif olarak, bir özel iletme Günlükçü oluşturabilirsiniz. Bir özel iletme Günlükçü oluşturarak Günlükçü davranışını hassas ayarlamalar yapabilirsiniz. Ancak, bir özel iletme Günlükçü oluşturuluyor yalnızca ConfigurableForwardingLogger özelleştirme daha çok daha karmaşıktır. Daha fazla bilgi için [iletme Günlükçüleri oluşturma](../msbuild/creating-forwarding-loggers.md).  
+  Alternatif olarak, bir özel iletme Günlükçü oluşturabilirsiniz. Bir özel iletme Günlükçü oluşturarak Günlükçü davranışını hassas ayarlamalar yapabilirsiniz. Ancak, bir özel iletme Günlükçü oluşturuluyor yalnızca ConfigurableForwardingLogger özelleştirme daha çok daha karmaşıktır. Daha fazla bilgi için [iletme Günlükçüleri oluşturma](../msbuild/creating-forwarding-loggers.md).  
   
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Günlüğe kaydetme için basit ConfigurableForwardingLogger kullanarak dağıtılmış  
  Bir ConfigurableForwardingLogger ya da bir özel iletme Günlükçü eklemek için kullanın `/distributedlogger` geçiş (`/dl` kısaca) MSBuild.exe komut satırı derleme. Günlükçü türlerin ve sınıfların adlarını belirtmek için aynı biçimdir `/logger` geçiş dışında dağıtılmış bir Günlükçü her zaman bir, iletme Günlükçü ve merkezi Günlükçü yerine iki günlük kaydı sınıfları içerir. XMLForwardingLogger adlı bir özel iletme Günlükçü ekleme konusunda bir örnek verilmiştir.  

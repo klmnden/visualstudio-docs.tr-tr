@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ffa0506b6a7c49cdf1ba1f3c86d865df3c59a7d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a4b163aef25972968933d3352486aab9ebbf962
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296185"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950982"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Nasıl Yapılır: Sınıf Diyagramlarını Özelleştirme (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,11 +129,11 @@ Sınıf diyagramlarının bilgileri görüntüleme biçimini değiştirebilirsin
   
 ##  <a name="DisplayAssociationAndInheritance"></a> Gizli ilişkileri gösterme  
   
-1.  Sınıf Tasarımcısı'nda bir sınıf diyagramı dosyasını açın ve seçin.  
+1. Sınıf Tasarımcısı'nda bir sınıf diyagramı dosyasını açın ve seçin.  
   
-2.  Gizli ilişkilendirmeyi veya devralmayı içeren türün adına sağ tıklayın.  
+2. Gizli ilişkilendirmeyi veya devralmayı içeren türün adına sağ tıklayın.  
   
- Tıklayın **tüm üyeleri Göster** ilişkilendirme çizgileri seçeneğine tıklayıp için **temel sınıfı Göster** veya **türetilmiş sınıfları Göster** devralım çizgileri içinse.  
+   Tıklayın **tüm üyeleri Göster** ilişkilendirme çizgileri seçeneğine tıklayıp için **temel sınıfı Göster** veya **türetilmiş sınıfları Göster** devralım çizgileri içinse.  
   
 ##  <a name="RemoveCodeAndShape"></a> Bir sınıf diyagramından şekil kaldırma  
  Türün temelini oluşturan koda etkisi olmaksızın, bir tür şeklini sınıf diyagramından kaldırabilirsiniz. Tür şekillerinin bir sınıf diyagramından kaldırılması yalnızca o diyagramı etkiler: Türü tanımlayan temel kod ve türü görüntüleyen diğer diyagramlar bundan etkilenmez.  

@@ -17,37 +17,37 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6b324e82608a79f8f57762e2538b401c794d831c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d0b2de4ce9c332b5a4f54ad41e6d3af500b49956
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304102"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843489"
 ---
 # <a name="properties-of-image-shapes"></a>Görüntü Şekillerinin Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Resim şekilleri, etki alanı sınıfları oluşturulan tasarımcıda nasıl göründüğünü belirlemek için kullanabilirsiniz. Bir resim şekli ayarlayarak tanımlarsanız `Image` önceden tanımlanmış bir görüntü dosyasına sınıfın özelliği. Aşağıdaki biçimleri desteklenir:  
   
--   .gif  
+- .gif  
   
--   .jpg  
+- .jpg  
   
--   .JPEG  
+- .JPEG  
   
--   .bmp  
+- .bmp  
   
--   .wmf  
+- .wmf  
   
--   .emf  
+- .emf  
   
--   .PNG  
+- .PNG  
   
- Görüntü dosyaları gibi tasarımcı kaynak dosyaları bulunan varsayılan olarak, **kaynakları**klasöründe **Dsl** proje.  
+  Görüntü dosyaları gibi tasarımcı kaynak dosyaları bulunan varsayılan olarak, **kaynakları**klasöründe **Dsl** proje.  
   
- Daha fazla bilgi için [etki alanına özgü bir dili tanımlama nasıl](../modeling/how-to-define-a-domain-specific-language.md). Bu özellikler kullanma hakkında daha fazla bilgi için bkz. [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).  
+  Daha fazla bilgi için [etki alanına özgü bir dili tanımlama nasıl](../modeling/how-to-define-a-domain-specific-language.md). Bu özellikler kullanma hakkında daha fazla bilgi için bkz. [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
- Resim şekilleri aşağıdaki tabloda listelenen özelliklere sahiptir.  
+  Resim şekilleri aşağıdaki tabloda listelenen özelliklere sahiptir.  
   
 |Özellik|Açıklama|Varsayılan|  
 |--------------|-----------------|-------------|  

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: d64850910d1a6a25514eb48e46f70168d245e168
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 1a13488f632e3cf1f244449b2a7a4dbfd7869428
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101100"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826517"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Bir uzak IIS bilgisayarında ASP.NET hatalarını uzaktan ayıklama
 IIS'ye dağıtılan bir ASP.NET uygulamasında hata ayıklamak için yükleme ve uzak Araçlar, uygulamanızın dağıtıldığı bilgisayarda çalıştırın ve ardından Visual Studio'dan çalışan uygulamanıza ekleyin.
@@ -47,7 +47,7 @@ Bu makalede, temel bir Windows server IIS yapılandırmasını ayarlama ve uygul
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>ASP.NET 4.5.2 oluşturun Visual Studio bilgisayardaki uygulama
   
-1. Yeni bir ASP.NET MVC uygulaması oluşturun. (**Dosya > Yeni > Proje**, ardından ** Visual C# > Web > ASP.NET Web uygulaması. İçinde **ASP.NET 4.5.2** şablonları bölümünden **MVC**. Emin olun **Docker desteğini etkinleştir** seçilmezse ve **kimlik doğrulaması** ayarlanır **kimlik doğrulaması yok**. Projeyi adlandırın **MyASPApp**.)
+1. Yeni bir ASP.NET MVC uygulaması oluşturun. (**Dosya > Yeni > Proje**, ardından <strong>Visual C# > Web > ASP.NET Web uygulaması. 4.5.2 **ASP.NET içinde</strong> şablonları bölümünden **MVC**. Emin olun **Docker desteğini etkinleştir** seçilmezse ve **kimlik doğrulaması** ayarlanır **kimlik doğrulaması yok**. Projeyi adlandırın **MyASPApp**.)
 
 2. HomeController.cs dosyasını açın ve bir kesim noktası `About()` yöntemi.
 

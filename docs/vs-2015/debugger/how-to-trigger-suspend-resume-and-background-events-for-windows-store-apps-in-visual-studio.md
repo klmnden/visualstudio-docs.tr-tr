@@ -21,12 +21,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5496e9b5122d2f2206118445a4e7316c2717bc37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 12c22b8ef7aa545e4256c8b122395a72508b94ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214766"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938389"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Visual Studio'daki Windows Mağazası uygulamaları için askıya alma, sürdürme ve arka plan olayları nasıl tetiklenir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ Ne zaman değil ayıkladığınız Windows **işlem ömrü Yönetimi** (PLM), uy
   
  [Tetikleyici arka plan görevleri](#BKMK_Trigger_background_tasks)  
   
--   [Standart hata ayıklama oturumunda bir arka plan görevi olay tetikleme](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
+- [Standart hata ayıklama oturumunda bir arka plan görevi olay tetikleme](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
   
--   [Uygulamayı çalışır durumda değilken bir arka plan görevi tetikleyin](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
+- [Uygulamayı çalışır durumda değilken bir arka plan görevi tetikleyin](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
   
- [İşlem ömrü yönetimi olaylarını tetiklemek ve arka plan görevleri yüklü bir uygulamadan](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
+  [İşlem ömrü yönetimi olaylarını tetiklemek ve arka plan görevleri yüklü bir uygulamadan](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
   
- [Arka plan görevi etkinleştirmesi hatalarını tanılama](#BKMK_Diagnosing_background_task_activation_errors)  
+  [Arka plan görevi etkinleştirmesi hatalarını tanılama](#BKMK_Diagnosing_background_task_activation_errors)  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Tetikleyici işlem ömrü Yönetimi olayları  
  Kullanıcı veya Windows düşük güç durumu girdiğinde uzağa geçtiğinde Windows uygulamanız askıya alabilirsiniz. Yanıt verebilirsiniz `Suspending` olay kalıcı depolama için ilgili uygulama ve kullanıcı verileri kaydetmeyi ve kaynaklar serbest bırakılacaksa. Ne zaman uygulama sürdürüldü gelen **askıya alındı** durum geçirilmeden **çalıştıran** durum ve askıya alındığında sırada nerede olduğu gelen devam eder. Yanıt verebilirsiniz `Resuming` geri yüklemek veya uygulama durumunu yenileyin ve kaynaklarınızı geri kazanmanız için olay.  

@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b5e57f5d7b3ab3fa7f956516879f687ff9ac7491
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2478925ecf481aaf49dbfbe5818d8839b9ad54f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286474"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844100"
 ---
 # <a name="customizing-copy-behavior"></a>Kopyalama Davranışını Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ ms.locfileid: "49286474"
   
  Kullanıcı öğelerini Pano'ya kopyalar, varsayılan olarak, aşağıdaki öğeleri de kopyalanır:  
   
--   Seçilen öğeleri ekli alt öğeleri. (Diğer bir deyişle, adresindeki kaynaklanan ilişkileri ekleme hedefleri olan öğeler öğeleri kopyaladınız.)  
+- Seçilen öğeleri ekli alt öğeleri. (Diğer bir deyişle, adresindeki kaynaklanan ilişkileri ekleme hedefleri olan öğeler öğeleri kopyaladınız.)  
   
--   Kopyalanan öğeler arasındaki ilişki bağlantılar.  
+- Kopyalanan öğeler arasındaki ilişki bağlantılar.  
   
- Bu kural, bağlantılar ve kopyalanan öğeler özyinelemeli olarak uygulanır.  
+  Bu kural, bağlantılar ve kopyalanan öğeler özyinelemeli olarak uygulanır.  
   
- ![Kopyalanır ve öğeleri yapıştırdığınız](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")  
+  ![Kopyalanır ve öğeleri yapıştırdığınız](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")  
   
- Kopyalanan öğeleri ve bağlantılarına serileştirilmiş ve depolanan bir <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP) panoya yerleştirilir.  
+  Kopyalanan öğeleri ve bağlantılarına serileştirilmiş ve depolanan bir <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP) panoya yerleştirilir.  
   
- Kopyalanan öğeler görüntüsü de panoya yerleştirilir. Bu kullanıcının Word gibi başka uygulamalara yapıştırmayı sağlar.  
+  Kopyalanan öğeler görüntüsü de panoya yerleştirilir. Bu kullanıcının Word gibi başka uygulamalara yapıştırmayı sağlar.  
   
- Kullanıcı, DSL tanımını göre öğeleri kabul edebilen bir hedef kopyalanan öğeleri yapıştırabilirsiniz. Örneğin, bileşenleri çözüm şablonundan oluşturulan bir DSL içinde kullanıcı bağlantı noktaları bileşenleri üzerine ancak değil diyagram üzerine yapıştırabilirsiniz; ve bileşenlerinin diyagram üzerine, ancak diğer bileşenlere değil üzerine yapıştırabilirsiniz.  
+  Kullanıcı, DSL tanımını göre öğeleri kabul edebilen bir hedef kopyalanan öğeleri yapıştırabilirsiniz. Örneğin, bileşenleri çözüm şablonundan oluşturulan bir DSL içinde kullanıcı bağlantı noktaları bileşenleri üzerine ancak değil diyagram üzerine yapıştırabilirsiniz; ve bileşenlerinin diyagram üzerine, ancak diğer bileşenlere değil üzerine yapıştırabilirsiniz.  
   
 ## <a name="customizing-copy-and-paste-behavior"></a>Kopyalama ve yapıştırma davranışını özelleştirme  
  Program kodu kullanarak model özelleştirme hakkında daha fazla bilgi için bkz. [gezinme ve güncelleştirme Program kodundaki modeli](../modeling/navigating-and-updating-a-model-in-program-code.md).  
@@ -227,15 +227,15 @@ partial class MyDslClipboardCommandSet // EDIT NAME
   
  Üç değer vardır:  
   
--   Kopyalama yayılmamasını  
+- Kopyalama yayılmamasını  
   
--   Yalnızca - bağlamak için kopyalama yaymak grubu yapıştırıldığında, bu bağlantı yeni kopyasını bağlantının diğer ucundaki var olan öğeye başvuracaktır.  
+- Yalnızca - bağlamak için kopyalama yaymak grubu yapıştırıldığında, bu bağlantı yeni kopyasını bağlantının diğer ucundaki var olan öğeye başvuracaktır.  
   
--   Bağlamak için kopyalama yayar ve rol oyuncusu - bağlantının diğer ucundaki öğenin bir kopyasını kopyalanan grubu içerir.  
+- Bağlamak için kopyalama yayar ve rol oyuncusu - bağlantının diğer ucundaki öğenin bir kopyasını kopyalanan grubu içerir.  
   
- ![İle PropagateCopyToLinkOnly kopyalama etkisini](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")  
+  ![İle PropagateCopyToLinkOnly kopyalama etkisini](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")  
   
- Yaptığınız değişiklikler, öğeleri hem kopyalanan görüntünün etkiler.  
+  Yaptığınız değişiklikler, öğeleri hem kopyalanan görüntünün etkiler.  
   
 ## <a name="programming-copy-and-paste-behavior"></a>Programlama Kopyala ve yapıştır davranışı  
  Birçok yönden bir DSL'nin davranış kopyalama, yapıştırma, oluşturma ve nesnelerin silinmesi ile ilgili bir örneği tarafından yönetilir <xref:Microsoft.VisualStudio.Modeling.ElementOperations> diyagrama eşleşmiş. Kendi sınıftan türetme tarafından DSL'NİZİN davranışı değiştirebilirsiniz <xref:Microsoft.VisualStudio.Modeling.ElementOperations> ve geçersiz kılma <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> diyagram sınıfınızın özelliği.  
@@ -249,13 +249,13 @@ partial class MyDslClipboardCommandSet // EDIT NAME
   
 #### <a name="to-define-your-own-elementoperations"></a>Kendi ElementOperations tanımlamak için  
   
-1.  DSL projenizde yeni bir dosyasında türetilen bir sınıf oluşturun <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.  
+1. DSL projenizde yeni bir dosyasında türetilen bir sınıf oluşturun <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.  
   
-2.  Diyagram sınıfınız için bir parçalı sınıf tanımı ekleyin. Bu sınıf adını bulunabilir **Dsl\GeneratedCode\Diagrams.cs**.  
+2. Diyagram sınıfınız için bir parçalı sınıf tanımı ekleyin. Bu sınıf adını bulunabilir **Dsl\GeneratedCode\Diagrams.cs**.  
   
-     Diyagram sınıfta geçersiz <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> , ElementOperations alt sınıf örneği dönün. Her çağrıda aynı örneği döndürmelidir.  
+    Diyagram sınıfta geçersiz <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> , ElementOperations alt sınıf örneği dönün. Her çağrıda aynı örneği döndürmelidir.  
   
- Özel bir kod dosyasında DslPackage projesinde bu kodu ekleyin:  
+   Özel bir kod dosyasında DslPackage projesinde bu kodu ekleyin:  
   
 ```csharp  
   

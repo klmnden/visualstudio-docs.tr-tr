@@ -46,12 +46,12 @@ caps.latest.revision: 63
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5fcc6803144359af25d70e68a25ffe90cf7bcca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b066ed3171ebd59d5c921fc795b1478bb9d2df32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304895"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925402"
 ---
 # <a name="using-breakpoints"></a>Kesme Noktalarını Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,15 +78,15 @@ ms.locfileid: "49304895"
 ## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> Çağrı yığını penceresinde bir kesme noktası ayarlama  
  Yönerge ya da bir kesme noktası ayarlayarak için çağıran işlevin döndürdüğü satır yürütmeyi kesebilirsiniz **çağrı yığını** penceresi. Çağrı yığını hakkında daha fazla bilgi için bkz: [nasıl yapılır: çağrı yığını penceresinde kullanmak](../debugger/how-to-use-the-call-stack-window.md). Hata ayıklayıcı, yürütmeyi durdurdu.  
   
-1.  Uygulama hata ayıklamayı başlatmak ve (örneğin, bir kesme noktasında) bekleme yürütme durduruldu. Açık **çağrı yığını** penceresi (**hata ayıklama / Windows / çağrı yığını**, veya **CTRL + ALT + C**).  
+1. Uygulama hata ayıklamayı başlatmak ve (örneğin, bir kesme noktasında) bekleme yürütme durduruldu. Açık **çağrı yığını** penceresi (**hata ayıklama / Windows / çağrı yığını**, veya **CTRL + ALT + C**).  
   
-2.  Çağıran işlevin sağ tıklayın ve ardından **kesme noktası / kesme noktası Ekle**, veya kısayol tuşunu kullanmanız yeterlidir **F9**.  
+2. Çağıran işlevin sağ tıklayın ve ardından **kesme noktası / kesme noktası Ekle**, veya kısayol tuşunu kullanmanız yeterlidir **F9**.  
   
-3.  Kesme noktası sembolü işlev çağrı adının yanında çağrı yığını, sol kenar boşluğunda görünür.  
+3. Kesme noktası sembolü işlev çağrı adının yanında çağrı yığını, sol kenar boşluğunda görünür.  
   
- İçinde **kesme noktaları** penceresi, çağrı yığını kesme noktası işlevdeki bir sonraki yürütülebilir yönergeye karşılık gelen bir bellek konumuna sahip bir adres olarak görünür. Hata ayıklayıcı yönerge yürütmeyi keser.  
+   İçinde **kesme noktaları** penceresi, çağrı yığını kesme noktası işlevdeki bir sonraki yürütülebilir yönergeye karşılık gelen bir bellek konumuna sahip bir adres olarak görünür. Hata ayıklayıcı yönerge yürütmeyi keser.  
   
- Görsel olarak kesme noktalarını izlemek için kod yürütme sırasında bkz: [hata ayıklarken çağrı yığınında yöntemler harita](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+   Görsel olarak kesme noktalarını izlemek için kod yürütme sırasında bkz: [hata ayıklarken çağrı yığınında yöntemler harita](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
 ## <a name="setting-a-breakpoint-in-the-disassembly-window"></a>Ayrıştırma penceresinde bir kesme noktası ayarlama  
  Bir derleme yönergesinde kesme noktası ayarlamak için hata ayıklayıcının kesme modunda olması gerekir.  
@@ -98,25 +98,25 @@ ms.locfileid: "49304895"
 ## <a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a> (Yalnızca yerel C++'da) veri kesme noktası ayarlama  
  Veri kesme noktaları, belirtilen bellek adresi değişiklikleri depolanan değeri olduğunda yürütmeyi Kes. Değer okunur ancak değişmemiş ise yürütme sonu gelmez. Veri kesme noktaları ayarlamak için hata ayıklayıcının kesme modunda olması gerekir.  
   
-1.  Uygulama hata ayıklamayı başlatmak ve bir kesme noktası ulaşılana kadar bekleyin. Üzerinde **hata ayıklama** menüsünde seçin **yeni kesme noktası / veri kesme noktası** (veya **kesme noktaları** penceresi ve **yeni / veri kesme noktası**.  
+1. Uygulama hata ayıklamayı başlatmak ve bir kesme noktası ulaşılana kadar bekleyin. Üzerinde **hata ayıklama** menüsünde seçin **yeni kesme noktası / veri kesme noktası** (veya **kesme noktaları** penceresi ve **yeni / veri kesme noktası**.  
   
-2.  İçinde **adresi** bir bellek adresi ya da bir bellek adresini değerlendiren bir ifade yazın. Örneğin `&avar` değiştiğinde ayırmak için değişken içeriğini `avar` değişiklikler.  
+2. İçinde **adresi** bir bellek adresi ya da bir bellek adresini değerlendiren bir ifade yazın. Örneğin `&avar` değiştiğinde ayırmak için değişken içeriğini `avar` değişiklikler.  
   
-3.  İçinde **bayt sayısı** açılır menüsünde, hata ayıklayıcının izlemesini istediğiniz bayt sayısını seçin. Örneğin, **4**, hata ayıklayıcı başlayan dört baytı izleyecek `&avar` ve bu baytlardan birini değeri değiştiğinde kesecektir.  
+3. İçinde **bayt sayısı** açılır menüsünde, hata ayıklayıcının izlemesini istediğiniz bayt sayısını seçin. Örneğin, **4**, hata ayıklayıcı başlayan dört baytı izleyecek `&avar` ve bu baytlardan birini değeri değiştiğinde kesecektir.  
   
- Belirli bellek adresleri uygulanabilirliğini üzerinde veri kesme noktaları bağımlı aklınızda bulundurun.  
+   Belirli bellek adresleri uygulanabilirliğini üzerinde veri kesme noktaları bağımlı aklınızda bulundurun.  
   
--   Değişkenin adresini, bir hata ayıklama oturumundan diğerine değiştirir. Veri kesme noktaları her hata ayıklama oturumu sonunda otomatik olarak devre dışıdır.  
+- Değişkenin adresini, bir hata ayıklama oturumundan diğerine değiştirir. Veri kesme noktaları her hata ayıklama oturumu sonunda otomatik olarak devre dışıdır.  
   
--   Üzerinde veri kesme noktası ayarlarsanız, yerel bir değişken, işlev sona erdiğinde etkinleştirilmiş kesme noktası kalır, ancak bellek adresini artık ilgili ve kesme noktası davranışı tahmin edilemez. Yerel bir değişkende veri kesme noktası ayarlarsanız, kaldırın ya da işlev sonlandırılmadan önce kesme noktasını devre dışı bırakın.  
+- Üzerinde veri kesme noktası ayarlarsanız, yerel bir değişken, işlev sona erdiğinde etkinleştirilmiş kesme noktası kalır, ancak bellek adresini artık ilgili ve kesme noktası davranışı tahmin edilemez. Yerel bir değişkende veri kesme noktası ayarlarsanız, kaldırın ya da işlev sonlandırılmadan önce kesme noktasını devre dışı bırakın.  
   
- Veri kesme noktaları bu koşullar altında çalışmaz:  
+  Veri kesme noktaları bu koşullar altında çalışmaz:  
   
--   Değil ayıklanmakta olan bir işlem bellek konumuna yazma  
+- Değil ayıklanmakta olan bir işlem bellek konumuna yazma  
   
--   Bellek konumu iki veya daha fazla işlemler arasında paylaşılır.  
+- Bellek konumu iki veya daha fazla işlemler arasında paylaşılır.  
   
--   Bellek konumu çekirdek içinde güncelleştirilir. Örneğin bellek 32-bit Windows için iletilmezse `ReadFile` işlevi, bellek çekirdek modundan güncelleştirilecek ve hata ayıklayıcı belleğe yazma sonu gelmez.  
+- Bellek konumu çekirdek içinde güncelleştirilir. Örneğin bellek 32-bit Windows için iletilmezse `ReadFile` işlevi, bellek çekirdek modundan güncelleştirilecek ve hata ayıklayıcı belleğe yazma sonu gelmez.  
   
 ## <a name="setting-a-breakpoint-with-a-memory-address-native-c-only"></a>Bir bellek adresi (yalnızca yerel C++'da) ile bir kesme noktası ayarlama  
  Bir sınıfın belirli bir örneği olarak adlandırılan bir yöntemde bir kesme noktası ayarlamak için bir nesnenin adresini de kullanabilirsiniz.  Örnek buradadır:  
@@ -147,48 +147,48 @@ ms.locfileid: "49304895"
 ## <a name="breakpoint-conditions"></a>Kesme noktası koşulları  
  Ne zaman ve nerede kesme noktası koşulları ayarlayarak yürütür denetleyebilirsiniz.  
   
-1.  Kesme noktasına sağ tıklatın, kesme noktası gelin ve Ayarlar simgesini seçin.  
+1. Kesme noktasına sağ tıklatın, kesme noktası gelin ve Ayarlar simgesini seçin.  
   
-2.  Bağlam menüsünde seçin **koşullar**. Bu açılır **kesme noktası ayarları** penceresi:  
+2. Bağlam menüsünde seçin **koşullar**. Bu açılır **kesme noktası ayarları** penceresi:  
   
- ![Kesme noktası ayarları](../debugger/media/breakpointsettings.png "BreakpointSettings")  
+   ![Kesme noktası ayarları](../debugger/media/breakpointsettings.png "BreakpointSettings")  
   
- İade **koşullar** penceresi kutusunu genişletir çeşitli koşullar göstermek için.  
+   İade **koşullar** penceresi kutusunu genişletir çeşitli koşullar göstermek için.  
   
- **Koşullu ifade:** koşullu ifade seçtiğinizde, iki koşuldan sonra seçebilirsiniz: **true** ve **değiştirildiğinde**. Seçin **true** kesmek istiyorsanız ne zaman ifadesi karşılanmadı veya seçin **değiştirildiğinde** ifade değeri değiştiğinde kesmek istiyorsanız.  
+   **Koşullu ifade:** koşullu ifade seçtiğinizde, iki koşuldan sonra seçebilirsiniz: **true** ve **değiştirildiğinde**. Seçin **true** kesmek istiyorsanız ne zaman ifadesi karşılanmadı veya seçin **değiştirildiğinde** ifade değeri değiştiğinde kesmek istiyorsanız.  
   
- Aşağıdaki örnekte biz yalnızca isabet kesme noktasını ayarlamanız değerini `testInt` olduğu **4**:  
+   Aşağıdaki örnekte biz yalnızca isabet kesme noktasını ayarlamanız değerini `testInt` olduğu **4**:  
   
- ![Kesme noktası koşulu true ise](../debugger/media/breakpointconditionistrue.png "BreakpointConditionIsTrue")  
+   ![Kesme noktası koşulu true ise](../debugger/media/breakpointconditionistrue.png "BreakpointConditionIsTrue")  
   
- Aşağıdaki örnekte biz yalnızca isabet kesme noktasını ayarlamanız değerini `testInt` değişiklikler:  
+   Aşağıdaki örnekte biz yalnızca isabet kesme noktasını ayarlamanız değerini `testInt` değişiklikler:  
   
- ![Değiştirilme zamanı kesme noktası](../debugger/media/breakpointwhenchanged.png "BreakpointWhenChanged")  
+   ![Değiştirilme zamanı kesme noktası](../debugger/media/breakpointwhenchanged.png "BreakpointWhenChanged")  
   
- Davranışı ne zaman değiştirilen alan farklı programlama dili için farklıdır. Seçerseniz **değiştirildiğinde** yerel kod için hata ayıklayıcı kesme noktası ilk değerlendirmeye yakalayamazsınız bir değişiklik olması için koşulun ilk değerlendirmesinin dikkate almaz. Seçerseniz **değiştirildiğinde** yönetilen kod için kesme noktası üzerinde sonraki ilk değerlendirmede isabet **değiştirildiğinde** seçilir.  
+   Davranışı ne zaman değiştirilen alan farklı programlama dili için farklıdır. Seçerseniz **değiştirildiğinde** yerel kod için hata ayıklayıcı kesme noktası ilk değerlendirmeye yakalayamazsınız bir değişiklik olması için koşulun ilk değerlendirmesinin dikkate almaz. Seçerseniz **değiştirildiğinde** yönetilen kod için kesme noktası üzerinde sonraki ilk değerlendirmede isabet **değiştirildiğinde** seçilir.  
   
- Geçersiz söz dizimi ile bir kesme noktası koşulu ayarlarsanız, bir uyarı iletisi görüntülenir. Geçerli sözdizimi, ancak geçersiz semantiği ile bir kesme noktası koşulu belirtirseniz kesme noktasına ilk kez bir uyarı iletisi görüntülenir. Her iki durumda da, geçersiz kesme noktasına gelindiğinde hata ayıklayıcı yürütmeyi keser. Kesme noktası yalnızca koşul geçerliyse ve değerlendirilir atlanır `false`.  
+   Geçersiz söz dizimi ile bir kesme noktası koşulu ayarlarsanız, bir uyarı iletisi görüntülenir. Geçerli sözdizimi, ancak geçersiz semantiği ile bir kesme noktası koşulu belirtirseniz kesme noktasına ilk kez bir uyarı iletisi görüntülenir. Her iki durumda da, geçersiz kesme noktasına gelindiğinde hata ayıklayıcı yürütmeyi keser. Kesme noktası yalnızca koşul geçerliyse ve değerlendirilir atlanır `false`.  
   
- Koşul, hata ayıklayıcı tarafından tanınan herhangi bir geçerli ifade olabilir. Geçerli ifadeler hakkında daha fazla bilgi için bkz. [hata ayıklayıcısındaki ifadeler](../debugger/expressions-in-the-debugger.md).  
+   Koşul, hata ayıklayıcı tarafından tanınan herhangi bir geçerli ifade olabilir. Geçerli ifadeler hakkında daha fazla bilgi için bkz. [hata ayıklayıcısındaki ifadeler](../debugger/expressions-in-the-debugger.md).  
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Nesne kimlikleri kullanarak kesme noktası durumlarını (C# ve F #)  
  Belirli bir nesneyi davranışını gözlemlemek istediğiniz zaman zamanlar vardır; Örneğin, neden bir nesne birden çok kez bir koleksiyona eklenmiş kullanıma bulmak isteyebilirsiniz. C# ve F # içinde belirli örneklerini nesne kimlikleri oluşturabilirsiniz [başvuru türleri](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) ve kesme noktası koşulları kullanabilirsiniz. Nesne Kimliği hizmetlerinde hata ayıklama ortak dil çalışma zamanı tarafından (CLR) oluşturulan ve nesnesiyle ilişkili.  Bir nesne kimliği oluşturmak için aşağıdakileri yapın:  
   
-1.  Bir kesme noktası kodda nesne oluşturulduktan sonra biraz zaman ayarlayın.  
+1. Bir kesme noktası kodda nesne oluşturulduktan sonra biraz zaman ayarlayın.  
   
-2.  Hata ayıklamayı başlatmak ve kesme yürütme sona erdiğinde, kesme noktasına Bul **Yereller** penceresinde sağ tıklatın ve seçin **nesne kimliği yap**.  
+2. Hata ayıklamayı başlatmak ve kesme yürütme sona erdiğinde, kesme noktasına Bul **Yereller** penceresinde sağ tıklatın ve seçin **nesne kimliği yap**.  
   
-     Görmelisiniz bir **$** bir sayıyı artı **Yereller** penceresi. Bu nesne kimliğidir.  
+    Görmelisiniz bir **$** bir sayıyı artı **Yereller** penceresi. Bu nesne kimliğidir.  
   
-3.  Araştırmak, örneğin koleksiyona eklenecek nesne olduğunda istediğiniz noktada yeni bir koşullu kesme noktası ekleyin.  
+3. Araştırmak, örneğin koleksiyona eklenecek nesne olduğunda istediğiniz noktada yeni bir koşullu kesme noktası ekleyin.  
   
-4.  Nesne Kimliği koşullu ifade alanında kullanın. Örneğin, bir değişken ise `item` koleksiyona eklenecek nesneye başvuran, size koyabilirsiniz **öğesi $n ==** burada **n** nesne kimliği bir sayıdır.  
+4. Nesne Kimliği koşullu ifade alanında kullanın. Örneğin, bir değişken ise `item` koleksiyona eklenecek nesneye başvuran, size koyabilirsiniz **öğesi $n ==** burada **n** nesne kimliği bir sayıdır.  
   
-     Bu nesne koleksiyona eklenecek olduğunda noktada yürütmeyi keser.  
+    Bu nesne koleksiyona eklenecek olduğunda noktada yürütmeyi keser.  
   
- Daha sonra nesne Kimliğini silmek istiyorsanız, değişkeni sağ tıklayabilirsiniz **Yereller** penceresi ve select **Nesne Kimliği Sil**.  
+   Daha sonra nesne Kimliğini silmek istiyorsanız, değişkeni sağ tıklayabilirsiniz **Yereller** penceresi ve select **Nesne Kimliği Sil**.  
   
- Nesne kimlikleri zayıf başvuru oluşturmak ve nesnenin çöp olarak toplanacak yüklenmesini engellemez unutmayın. Bunlar, yalnızca geçerli hata ayıklama oturumu için geçerli olur.  
+   Nesne kimlikleri zayıf başvuru oluşturmak ve nesnenin çöp olarak toplanacak yüklenmesini engellemez unutmayın. Bunlar, yalnızca geçerli hata ayıklama oturumu için geçerli olur.  
   
 ## <a name="hit-count"></a>İsabet sayısı  
  Kodunuzdaki döngünün belirli sayıda yinelemeden sonra yanlış davranış başlattığından şüpheleniyorsanız, bir kesme noktası isabet sayısı için belirtilen sayıda yürütmeyi durdurmak için ayarlayabileceğiniz ilişkili kod satırına, art arda zorunda yerine basın  **F5** yineleme düzeyine ulaşmak için.  
@@ -202,17 +202,17 @@ ms.locfileid: "49304895"
   
  İçinde **kesme noktası ayarı**s penceresinde ayarlanmış koşul **filtre**. Bir veya daha fazla aşağıdaki ifadeler girin.  
   
--   MachineName = "name"  
+- MachineName = "name"  
   
--   ProcessID = değer  
+- ProcessID = değer  
   
--   ProcessName "name" =  
+- ProcessName "name" =  
   
--   ThreadID = değer  
+- ThreadID = değer  
   
--   ThreadName = "name"  
+- ThreadName = "name"  
   
- Dize değerleri çift tırnak içine alın. Kullanarak ifadeleri birleştirebilirsiniz `&` (AND) `||` (veya) `!` (NOT) ve parantez.  
+  Dize değerleri çift tırnak içine alın. Kullanarak ifadeleri birleştirebilirsiniz `&` (AND) `||` (veya) `!` (NOT) ve parantez.  
   
 ##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Kesme noktası eylemleri ve izleme noktaları  
  İzleme noktası çıkış penceresine ileti yazdıran kesme noktasıdır. İzleme noktası programlama dilinde geçici trace deyimi gibi davranabilir.  

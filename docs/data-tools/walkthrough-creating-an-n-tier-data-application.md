@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 007a0a85bf9d7200860194b881a3d0505f6bee45
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 87b88c6fc8c6add2c93721b46165ffd295f4d614
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175349"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942900"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>İzlenecek yol: n katmanlı veri uygulaması oluşturma
 *N katmanlı* veri uygulamaları verilere erişen ve birden çok mantıksal katmana ayrılmış uygulamalarıdır veya *katmanları*. Uygulama bileşenlerini farklı katmanlara ayırmak uygulamanızın yönetilebilirliğini ve ölçeklenebilirliğini artırır. Bunu, tüm çözümü yeniden tasarlamanıza gerek kalmadan tek bir katmana uygulanabilen yeni teknolojilerin daha kolay benimsenmesini sağlayarak yapar. N katmanlı mimaride bir sunu katmanı, bir orta katman ve bir veri katmanı bulunur. Orta katmanda genellikle bir veri erişim katmanı, iş mantığı katmanı ve kimlik doğrulaması ve doğrulama gibi paylaşılan bileşenler bulunur. Veri katmanında ilişkisel bir veritabanı vardır. N katmanlı uygulamalar hassas bilgileri orta katmanın veri erişimi katmanında depolayarak sunu katmanına erişimi olan son kullanıcılardan uzakta tutulmasını sağlar. Daha fazla bilgi için [N katmanlı veri uygulamalarına genel bakış](../data-tools/n-tier-data-applications-overview.md).
@@ -73,7 +73,7 @@ Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını 
  Bu kılavuzun ilk adımı bir çözüm ve iki sınıf kitaplığı projesi oluşturmaktır. Birinci sınıf kitaplığı veri kümesini tutar (oluşturulan yazılan `DataSet` sınıfı ve uygulama verilerini tutacak DataTable). Bu proje uygulamanın veri varlık katmanı olarak kullanılır ve genellikle orta katmanda bulunur. Veri kümesi, ilk veri kümesi oluşturur ve otomatik olarak kod iki sınıf kitaplığına ayırır.
 
 > [!NOTE]
->  Tıklamadan önce projeyi ve çözümü doğru adlandırdığınızdan emin olun **Tamam**. Böylece bu kılavuzu tamamlamanız kolaylaşır.
+> Tıklamadan önce projeyi ve çözümü doğru adlandırdığınızdan emin olun **Tamam**. Böylece bu kılavuzu tamamlamanız kolaylaşır.
 
 ### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>N katmanlı çözüm ve DataEntityTier sınıf kitaplığı oluşturmak için
 
@@ -106,7 +106,7 @@ Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını 
  Sonraki adım türü belirtilmiş bir veri kümesi oluşturmaktır. Türü belirtilmiş veri kümeleri, her iki veri kümesi sınıfıyla oluşturulur (dahil olmak üzere `DataTables` sınıflar) ve `TableAdapter` tek bir projede sınıfları. (Tüm sınıflar tek dosyada oluşturulur.) Veri kümesi ve TableAdapters öğelerini farklı projelere ayırdığınızda, bırakarak diğer projeye taşınır dataset sınıfı olduğu `TableAdapter` sınıfları özgün projede. Bu nedenle, veri kümesini sonuçta (DataAccessTier projesi) TableAdapter bağdaştırıcılarını içerecek projede oluşturun. Kullanarak bir veri kümesi oluşturma **veri kaynağı Yapılandırma Sihirbazı**.
 
 > [!NOTE]
->  Bağlantı oluşturmak için Northwind örnek veritabanına erişiminiz olmalıdır. Northwind örnek veritabanını ayarlama hakkında daha fazla bilgi için bkz: [nasıl yapılır: örnek veritabanları yükleme](../data-tools/installing-database-systems-tools-and-samples.md).
+> Bağlantı oluşturmak için Northwind örnek veritabanına erişiminiz olmalıdır. Northwind örnek veritabanını ayarlama hakkında daha fazla bilgi için bkz: [nasıl yapılır: örnek veritabanları yükleme](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-dataset"></a>Veri kümesi oluşturma
 
@@ -129,7 +129,7 @@ Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını 
 6.  Veritabanına parola gerekiyorsa, hassas verileri eklemek ve ardından seçeneğini **sonraki**.
 
     > [!NOTE]
-    >  Bir yerel veritabanı dosyası (SQL Server'a bağlanmak yerine) seçtiyseniz projeye dosya eklemek isteyip istemediğiniz sorulabilir. Seçin **Evet** veritabanı dosyası projeye eklenecek.
+    > Bir yerel veritabanı dosyası (SQL Server'a bağlanmak yerine) seçtiyseniz projeye dosya eklemek isteyip istemediğiniz sorulabilir. Seçin **Evet** veritabanı dosyası projeye eklenecek.
 
 7.  Seçin **sonraki** üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** sayfası.
 
@@ -144,20 +144,20 @@ Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını 
 
 ### <a name="to-separate-the-tableadapters-from-the-dataset"></a>TableAdapter Bağdaştırıcılarını Veri Kümesinden ayırmak için
 
-1.  Çift **NorthwindDataSet.xsd** içinde **Çözüm Gezgini** açmak için **veri kümesi Tasarımcısı**.
+1. Çift **NorthwindDataSet.xsd** içinde **Çözüm Gezgini** açmak için **veri kümesi Tasarımcısı**.
 
-2.  Tasarımcı üzerinde boş bir alanı seçin.
+2. Tasarımcı üzerinde boş bir alanı seçin.
 
-3.  Bulun **DataSet projesi** düğümünde **özellikleri** penceresi.
+3. Bulun **DataSet projesi** düğümünde **özellikleri** penceresi.
 
-4.  İçinde **DataSet projesi** listesinden **DataEntityTier**.
+4. İçinde **DataSet projesi** listesinden **DataEntityTier**.
 
-5.  Üzerinde **derleme** menüsünde **Çözümü Derle**.
+5. Üzerinde **derleme** menüsünde **Çözümü Derle**.
 
- Veri kümesi ve TableAdapter bağdaştırıcıları iki sınıf kitaplığı projesine ayrılır. Başlangıçta tüm veri kümesini içeren proje (`DataAccessTier`) şimdi yalnızca TableAdapter bağdaştırıcıları içerir. Proje **DataSet projesi** özelliği (`DataEntityTier`) türü belirtilmiş veri kümesi içerir: *NorthwindDataSet.Dataset.Designer.vb* (veya  *NorthwindDataSet.Dataset.Designer.cs*).
+   Veri kümesi ve TableAdapter bağdaştırıcıları iki sınıf kitaplığı projesine ayrılır. Başlangıçta tüm veri kümesini içeren proje (`DataAccessTier`) şimdi yalnızca TableAdapter bağdaştırıcıları içerir. Proje **DataSet projesi** özelliği (`DataEntityTier`) türü belirtilmiş veri kümesi içerir: *NorthwindDataSet.Dataset.Designer.vb* (veya  *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
->  Veri kümelerini ve TableAdapter bağdaştırıcılarını ayırdığınızda (ayarlayarak **DataSet projesi** özelliği), projedeki varolan kısmi veri kümesi sınıfları taşınmaz otomatik olarak. Mevcut veri kümesi kısmi sınıflarının veri kümesi projesine el ile taşınması gerekir.
+> Veri kümelerini ve TableAdapter bağdaştırıcılarını ayırdığınızda (ayarlayarak **DataSet projesi** özelliği), projedeki varolan kısmi veri kümesi sınıfları taşınmaz otomatik olarak. Mevcut veri kümesi kısmi sınıflarının veri kümesi projesine el ile taşınması gerekir.
 
 ## <a name="create-a-new-service-application"></a>Yeni bir hizmet uygulaması oluşturma
 Bu izlenecek yol, bir WCF hizmetini kullanarak veri erişim katmanında erişmek için bu nedenle şimdi yeni bir WCF hizmeti uygulaması oluşturma gösterilmektedir.
@@ -224,7 +224,7 @@ Bu izlenecek yol, bir WCF hizmetini kullanarak veri erişim katmanında erişmek
  Şimdi veri erişim katmanında veri döndürme yöntemleri bulunduğuna göre, veri erişim katmanındaki yöntemleri çağırmak için veri hizmetinde yöntemler oluşturun.
 
 > [!NOTE]
->  C# projelerinde aşağıdaki kodu derlemek için `System.Data.DataSetExtensions` derlemesine bir başvuru eklemeniz gerekir.
+> C# projelerinde aşağıdaki kodu derlemek için `System.Data.DataSetExtensions` derlemesine bir başvuru eklemeniz gerekir.
 
 ### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>Veri hizmetinde GetCustomers ve GetOrders işlevlerini oluşturmak için
 
@@ -323,7 +323,7 @@ Biz belirleyeceğim **PresentationTier** sunan ve verilerle etkileşime giren ge
 3.  Seçin **Service1** ve **Tamam**.
 
     > [!NOTE]
-    >  Geçerli bilgisayarda birden çok hizmeti varsa, bu kılavuzda daha önce oluşturduğunuz hizmeti seçin (içeren hizmete `GetCustomers` ve `GetOrders` yöntemleri).
+    > Geçerli bilgisayarda birden çok hizmeti varsa, bu kılavuzda daha önce oluşturduğunuz hizmeti seçin (içeren hizmete `GetCustomers` ve `GetOrders` yöntemleri).
 
 ## <a name="add-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>Veri hizmetinin döndürdüğü verileri görüntülemek için forma DataGridView görünümleri ekleme
  Veri hizmetine hizmet başvurusunu ekledikten sonra **veri kaynakları** penceresi hizmet tarafından döndürülen verilerle otomatik olarak doldurulur.
@@ -361,7 +361,7 @@ Biz belirleyeceğim **PresentationTier** sunan ve verilerle etkileşime giren ge
 İçin varsayılan değer `maxReceivedMessageSize` hizmetinden alınan verileri tutabilecek kadar büyük değil `Customers` ve `Orders` tablolar. Aşağıdaki adımlarda değeri 6553600 artırırsınız. Hizmet başvurusu otomatik olarak güncelleştirir istemcide değerini değiştirin.
 
 > [!NOTE]
->  Varsayılan alt sınır boyutu hizmet reddi (DoS) saldırılarına maruz kalmayı sınırlamak içindir. Daha fazla bilgi için bkz. <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
+> Varsayılan alt sınır boyutu hizmet reddi (DoS) saldırılarına maruz kalmayı sınırlamak içindir. Daha fazla bilgi için bkz. <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
 
 ### <a name="to-increase-the-maxreceivedmessagesize-value"></a>MaxReceivedMessageSize değerini artırmak için
 

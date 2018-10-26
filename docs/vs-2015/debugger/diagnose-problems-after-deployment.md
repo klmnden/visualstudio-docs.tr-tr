@@ -14,12 +14,12 @@ caps.latest.revision: 66
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26a852bdf955a17dd59ffe79d29e2601362e47d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 839bfcd761ac090924b0964e99ea3d1f360cc7f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270601"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852369"
 ---
 # <a name="diagnose-problems-after-deployment"></a>Dağıtımdan sonra sorunları tanılama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,97 +47,97 @@ IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunla
 ####  <a name="TFS2013"></a> Team Foundation Server 2013  
  Derleme bildirimi (Buildınfo.config dosyası) için kaynak, yapı ve simge konumları eklemek için yapı tanımınızı ayarlayın. Team Foundation Yapısı otomatik olarak bu dosyayı oluşturur ve projenizin çıkış klasörüne yerleştirir.  
   
-1.  [Yapı tanımını düzenleyin veya yeni bir yapı tanımı oluşturun.](http://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
+1. [Yapı tanımını düzenleyin veya yeni bir yapı tanımı oluşturun.](http://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
   
-     ![Görünüm derleme tanımını TFS 2013'te](../debugger/media/ffr-tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
+    ![Görünüm derleme tanımını TFS 2013'te](../debugger/media/ffr-tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
   
-2.  Varsayılan şablon (TfvcTemplate.12.xaml) veya kendi özel şablonunuzu seçin.  
+2. Varsayılan şablon (TfvcTemplate.12.xaml) veya kendi özel şablonunuzu seçin.  
   
-     ![Derleme işlem şablonu seçme &#45; TFS 2013'ün](../debugger/media/ffr-tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
+    ![Derleme işlem şablonu seçme &#45; TFS 2013'ün](../debugger/media/ffr-tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
   
-3.  Sembol (PDB) dosyası, kaynağınız otomatik olarak endeksleyen kaydedileceği yeri belirtin.  
+3. Sembol (PDB) dosyası, kaynağınız otomatik olarak endeksleyen kaydedileceği yeri belirtin.  
   
-     Özel bir şablon kullanırsanız, şablonun kaynağınızı dizinleyecek bir aktivitesi olduğundan emin olun. Daha sonra semboller dosyalarının kaydedileceği yeri belirtmek için bir MSBuild bağımsız değişkeni de ekleyeceksiniz.  
+    Özel bir şablon kullanırsanız, şablonun kaynağınızı dizinleyecek bir aktivitesi olduğundan emin olun. Daha sonra semboller dosyalarının kaydedileceği yeri belirtmek için bir MSBuild bağımsız değişkeni de ekleyeceksiniz.  
   
-     ![TFS 2013 yapı tanımı içindeki semboller yolu ayarlama](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
+    ![TFS 2013 yapı tanımı içindeki semboller yolu ayarlama](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
-     Simgeler hakkında daha fazla bilgi için bkz. [sembol verilerini yayımlama](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6).  
+    Simgeler hakkında daha fazla bilgi için bkz. [sembol verilerini yayımlama](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6).  
   
-4.  Yapı bildirim dosyası, TFS ve simge konumları eklemek için bu MSBuild bağımsız değişkenini ekleyin:  
+4. Yapı bildirim dosyası, TFS ve simge konumları eklemek için bu MSBuild bağımsız değişkenini ekleyin:  
   
-     **/p:IncludeServerNameInBuildInfo = true**  
+    **/p:IncludeServerNameInBuildInfo = true**  
   
-     Web sunucunuza erişebilen herkes bu konumlar derleme bildiriminde görebilirsiniz. Kaynak sunucunuzun güvenli olduğundan emin olun.  
+    Web sunucunuza erişebilen herkes bu konumlar derleme bildiriminde görebilirsiniz. Kaynak sunucunuzun güvenli olduğundan emin olun.  
   
-5.  Özel bir şablon kullanırsanız, sembol dosyası kaydedileceği yeri belirtmek için bu MSBuild bağımsız değişkenini ekleyin:  
+5. Özel bir şablon kullanırsanız, sembol dosyası kaydedileceği yeri belirtmek için bu MSBuild bağımsız değişkenini ekleyin:  
   
-     **buildsymbolstorepath =**\<*sembol yolu*>  
+    **buildsymbolstorepath =**\<*sembol yolu*>  
   
-     ![Derleme def TFS 2013 yapı sunucu bilgisi dahil](../debugger/media/ffr-tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")  
+    ![Derleme def TFS 2013 yapı sunucu bilgisi dahil](../debugger/media/ffr-tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")  
   
-     Ve web proje dosyanıza (.csproj, .vbproj) bu satırları ekleyin:  
+    Ve web proje dosyanıza (.csproj, .vbproj) bu satırları ekleyin:  
   
-    ```  
-    <!-- Import the targets file. Change the folder location as necessary. -->  
-       <Import Project=""$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\BuildInfo\Microsoft.VisualStudio.ReleaseManagement.BuildInfo.targets" />  
+   ```  
+   <!-- Import the targets file. Change the folder location as necessary. -->  
+      <Import Project=""$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\BuildInfo\Microsoft.VisualStudio.ReleaseManagement.BuildInfo.targets" />  
   
-    ```  
+   ```  
   
-6.  Yeni bir yapı çalıştırın.  
+6. Yeni bir yapı çalıştırın.  
   
- **2. adım:** [2. adım: uygulamanızı dağıtın](#DeployRelease)  
+   **2. adım:** [2. adım: uygulamanızı dağıtın](#DeployRelease)  
   
 ####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 veya 2010  
  Otomatik olarak projeniz için derleme bildirimini (Buildınfo.config dosyası) oluşturun ve dosyayı projenizin çıkış klasörüne yerleştirmek için aşağıdaki adımları izleyin. Dosya olarak görünür "*ProjectName*. "Çıktı klasöründe Buildınfo.config ancak olan uygulamanızı yayımladıktan sonra dağıtım klasörü" Buildınfo.config"olarak yeniden adlandırıldı.  
   
-1.  Visual Studio 2013 (herhangi bir sürümü), Team Foundation Yapı sunucusuna yükleyin.  
+1. Visual Studio 2013 (herhangi bir sürümü), Team Foundation Yapı sunucusuna yükleyin.  
   
-2.  Yapı tanımınızda, kaynağı otomatik olarak endeksleyen simgelerin kaydedileceği konumu belirtin.  
+2. Yapı tanımınızda, kaynağı otomatik olarak endeksleyen simgelerin kaydedileceği konumu belirtin.  
   
-     Özel bir şablon kullanırsanız, şablonun kaynağınızı dizinleyecek bir aktivitesi olduğundan emin olun.  
+    Özel bir şablon kullanırsanız, şablonun kaynağınızı dizinleyecek bir aktivitesi olduğundan emin olun.  
   
-3.  Yapı tanımınıza bu MSBuild bağımsız değişkenlerini ekleyin:  
+3. Yapı tanımınıza bu MSBuild bağımsız değişkenlerini ekleyin:  
   
-    -   **/p:VisualStudioVersion 12.0 =**  
+   -   **/p:VisualStudioVersion 12.0 =**  
   
-    -   **/p:MSBuildAssemblyVersion 12.0 =**  
+   -   **/p:MSBuildAssemblyVersion 12.0 =**  
   
-    -   **/TV:12.0**  
+   -   **/TV:12.0**  
   
-    -   **/p:IncludeServerNameInBuildInfo = true**  
+   -   **/p:IncludeServerNameInBuildInfo = true**  
   
-    -   **buildsymbolstorepath =**\<*sembol yolu*>  
+   -   **buildsymbolstorepath =**\<*sembol yolu*>  
   
-4.  Yeni bir yapı çalıştırın.  
+4. Yeni bir yapı çalıştırın.  
   
- **2. adım:** [2. adım: uygulamanızı dağıtın](#DeployRelease)  
+   **2. adım:** [2. adım: uygulamanızı dağıtın](#DeployRelease)  
   
 ###  <a name="ManualBuild"></a> Visual Studio kullanarak el ile bir derleme için derleme bildirimi oluşturma  
  Otomatik olarak projeniz için derleme bildirimini (Buildınfo.config dosyası) oluşturun ve dosyayı projenizin çıkış klasörüne yerleştirmek için aşağıdaki adımları izleyin. Dosya olarak görünür "*ProjectName*. "Çıktı klasöründe Buildınfo.config ancak olan uygulamanızı yayımladıktan sonra dağıtım klasörü" Buildınfo.config"olarak yeniden adlandırıldı.  
   
-1.  İçinde **Çözüm Gezgini**, web projenizi kaldırın.  
+1. İçinde **Çözüm Gezgini**, web projenizi kaldırın.  
   
-2.  Proje (.csproj, .vbproj) dosyasını açın. Bu satırları ekleyin:  
+2. Proje (.csproj, .vbproj) dosyasını açın. Bu satırları ekleyin:  
   
-    ```xml  
-    <!-- **************************************************** -->  
-    <!-- Build info -->  
-    <PropertyGroup>  
-       <!-- Generate the BuildInfo.config file -->  
-       <GenerateBuildInfoConfigFile>True</GenerateBuildInfoConfigFile>  
-       <!-- Include server name in build info -->   
-       <IncludeServerNameInBuildInfo>True</IncludeServerNameInBuildInfo>   
-       <!-- Include the symbols path so Visual Studio can find the matching deployed code when you start debugging. -->  
-       <BuildSymbolStorePath><path to symbols></BuildSymbolStorePath>  
-    </PropertyGroup>  
-    <!-- **************************************************** -->  
-    ```  
+   ```xml  
+   <!-- **************************************************** -->  
+   <!-- Build info -->  
+   <PropertyGroup>  
+      <!-- Generate the BuildInfo.config file -->  
+      <GenerateBuildInfoConfigFile>True</GenerateBuildInfoConfigFile>  
+      <!-- Include server name in build info -->   
+      <IncludeServerNameInBuildInfo>True</IncludeServerNameInBuildInfo>   
+      <!-- Include the symbols path so Visual Studio can find the matching deployed code when you start debugging. -->  
+      <BuildSymbolStorePath><path to symbols></BuildSymbolStorePath>  
+   </PropertyGroup>  
+   <!-- **************************************************** -->  
+   ```  
   
-3.  Güncelleştirilen proje dosyasında denetleyin.  
+3. Güncelleştirilen proje dosyasında denetleyin.  
   
-4.  Yeni bir yapı çalıştırın.  
+4. Yeni bir yapı çalıştırın.  
   
- **2. adım:** [2. adım: uygulamanızı dağıtın](#DeployRelease)  
+   **2. adım:** [2. adım: uygulamanızı dağıtın](#DeployRelease)  
   
 ###  <a name="MSBuild"></a> MSBuild.exe kullanarak elle bir yapı için derleme bildirimi oluşturma  
  Bir yapı çalıştırdığınızda bu bağımsız değişkenleri ekleyin:  
@@ -251,100 +251,100 @@ IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunla
   
 3.  Dosyanın gerekli bilgileri içerdiğinden emin olun:  
   
--   **projectName**  
+- **projectName**  
   
-     Projenizi Visual Studio'da adı. Örneğin:  
+   Projenizi Visual Studio'da adı. Örneğin:  
+  
+  ```  
+  <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>  
+  ```  
+  
+- **SourceControl**  
+  
+- Kaynak Denetim sisteminizle ve bunlar hakkında bilgi özellikleri gerekli:  
+  
+  - **TFS**  
+  
+    - **ProjectCollectionUri**: Team Foundation Server ve proje koleksiyonunuz için URI  
+  
+    - **Projectıtemspec**: uygulamanızın proje dosyasına (.csproj veya .vbproj) yolu  
+  
+    - **ProjectVersionSpec**: projeniz için yeni sürümü  
+  
+      Örneğin:  
   
     ```  
-    <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>  
+    <SourceControl type="TFS">  
+       <TfsSourceControl>  
+          <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>  
+          <ProjectItemSpec>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectItemSpec>  
+          <ProjectVersionSpec>LFabrikamFiber_BuildAndPublish_20130813@$/WorkInProgress</ProjectVersionSpec>  
+       </TfsSourceControl>  
+    </SourceControl>  
     ```  
   
--   **SourceControl**  
+  - **Git**  
   
--   Kaynak Denetim sisteminizle ve bunlar hakkında bilgi özellikleri gerekli:  
+    - **GitSourceControl**: konumunu **GitSourceControl** şeması  
   
-    -   **TFS**  
+    - **RepositoryUrl**: Team Foundation Server, proje koleksiyonu ve Git deposu için URI  
   
-        -   **ProjectCollectionUri**: Team Foundation Server ve proje koleksiyonunuz için URI  
+    - **ProjectPath**: uygulamanızın proje dosyasına (.csproj veya .vbproj) yolu  
   
-        -   **Projectıtemspec**: uygulamanızın proje dosyasına (.csproj veya .vbproj) yolu  
+    - **Commitıd**: kaydınızı kimliği  
   
-        -   **ProjectVersionSpec**: projeniz için yeni sürümü  
+      Örneğin:  
   
-         Örneğin:  
+    ```  
+    <SourceControl type="Git">   
+       <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">  
+          <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>  
+          <ProjectPath>/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectPath>  
+          <CommitId>50662c96502dddaae5cd5ced962d9f14ec5bc64d</CommitId>  
+       </GitSourceControl>  
+    </SourceControl>  
+    ```  
   
-        ```  
-        <SourceControl type="TFS">  
-           <TfsSourceControl>  
-              <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>  
-              <ProjectItemSpec>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectItemSpec>  
-              <ProjectVersionSpec>LFabrikamFiber_BuildAndPublish_20130813@$/WorkInProgress</ProjectVersionSpec>  
-           </TfsSourceControl>  
-        </SourceControl>  
-        ```  
+- **Derleme**  
   
-    -   **Git**  
+   Yapı sisteminizi hakkında bilgi ya da `"TeamBuild"` veya `"MSBuild"`, ve bunlar gerekli özellikler:  
   
-        -   **GitSourceControl**: konumunu **GitSourceControl** şeması  
+  - **BuildLabel** (TeamBuild için için): derleme adı ve numarası. Bu etiket, ayrıca dağıtım olay adı olarak kullanılır. Derleme numaraları hakkında daha fazla bilgi için bkz. [kullanılan yapı numaralarını tamamlanan yapılara anlamlı adlar vermek için](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3).  
   
-        -   **RepositoryUrl**: Team Foundation Server, proje koleksiyonu ve Git deposu için URI  
+  - **SymbolPath** (önerilen): URI listesi için Sembol (PDB dosyası) konumlarınıza noktalı virgüllerle ayrılmış. Bu URI'ler URL'ler veya UNC olabilir. Bu, hatalarını ayıklamaya yardımcı olmak için eşleşen simgeleri bulmak Visual Studio için kolaylaştırır.  
   
-        -   **ProjectPath**: uygulamanızın proje dosyasına (.csproj veya .vbproj) yolu  
+  - **BuildReportUrl** (için TeamBuild için): TFS'de yapı raporunun konumu  
   
-        -   **Commitıd**: kaydınızı kimliği  
+  - **Buildıd** (için TeamBuild için): TFS'de yapı için URI ayrıntıları. Bu URI, ayrıca dağıtım Olay No olarak kullanılır. Bu kimliği TeamBuild kullanmıyorsanız, benzersiz olmalıdır gerekir.  
   
-         Örneğin:  
+  - **BuiltSolution**: Visual Studio çözüm dosyasının yolu bulmak ve eşleşen çözümü açmak için kullanır. Bu içeriği, **SolutionPath** MsBuild özelliği.  
   
-        ```  
-        <SourceControl type="Git">   
-           <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">  
-              <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>  
-              <ProjectPath>/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectPath>  
-              <CommitId>50662c96502dddaae5cd5ced962d9f14ec5bc64d</CommitId>  
-           </GitSourceControl>  
-        </SourceControl>  
-        ```  
+    Örneğin:  
   
--   **Derleme**  
+  - **TFS**  
   
-     Yapı sisteminizi hakkında bilgi ya da `"TeamBuild"` veya `"MSBuild"`, ve bunlar gerekli özellikler:  
+    ```  
+    <Build type="TeamBuild">  
+       <MsBuild>  
+          <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>  
+          <SymbolPath>\\fabrikamfiber\FabrikamFiber.CallCenter\Symbols</SymbolPath>  
+          <BuildReportUrl kind="informative, url" url="http://fabrikamfiber:8080/tfs/FabrikamFiber/_releasePipeline/FindRelease?buildUri=fabrikamfiber%3a%2f%2f%2fBuild%2fBuild%2f448">Build Report Url</BuildReportUrl>  
+          <BuildId kind="id">1c4444d2-518d-4673-a590-dce2773c7744,fabrikamfiber:///Build/Build/448</BuildId>  
+          <BuiltSolution>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>  
+       </MsBuild>  
+    </Build>  
+    ```  
   
-    -   **BuildLabel** (TeamBuild için için): derleme adı ve numarası. Bu etiket, ayrıca dağıtım olay adı olarak kullanılır. Derleme numaraları hakkında daha fazla bilgi için bkz. [kullanılan yapı numaralarını tamamlanan yapılara anlamlı adlar vermek için](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3).  
+  - **Git**  
   
-    -   **SymbolPath** (önerilen): URI listesi için Sembol (PDB dosyası) konumlarınıza noktalı virgüllerle ayrılmış. Bu URI'ler URL'ler veya UNC olabilir. Bu, hatalarını ayıklamaya yardımcı olmak için eşleşen simgeleri bulmak Visual Studio için kolaylaştırır.  
-  
-    -   **BuildReportUrl** (için TeamBuild için): TFS'de yapı raporunun konumu  
-  
-    -   **Buildıd** (için TeamBuild için): TFS'de yapı için URI ayrıntıları. Bu URI, ayrıca dağıtım Olay No olarak kullanılır. Bu kimliği TeamBuild kullanmıyorsanız, benzersiz olmalıdır gerekir.  
-  
-    -   **BuiltSolution**: Visual Studio çözüm dosyasının yolu bulmak ve eşleşen çözümü açmak için kullanır. Bu içeriği, **SolutionPath** MsBuild özelliği.  
-  
-     Örneğin:  
-  
-    -   **TFS**  
-  
-        ```  
-        <Build type="TeamBuild">  
-           <MsBuild>  
-              <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>  
-              <SymbolPath>\\fabrikamfiber\FabrikamFiber.CallCenter\Symbols</SymbolPath>  
-              <BuildReportUrl kind="informative, url" url="http://fabrikamfiber:8080/tfs/FabrikamFiber/_releasePipeline/FindRelease?buildUri=fabrikamfiber%3a%2f%2f%2fBuild%2fBuild%2f448">Build Report Url</BuildReportUrl>  
-              <BuildId kind="id">1c4444d2-518d-4673-a590-dce2773c7744,fabrikamfiber:///Build/Build/448</BuildId>  
-              <BuiltSolution>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>  
-           </MsBuild>  
-        </Build>  
-        ```  
-  
-    -   **Git**  
-  
-        ```  
-        <Build type="MSBuild">   
-           <MSBuild>  
-              <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>  
-              <BuiltSolution>/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>  
-           </MSBuild>  
-        </Build>  
-        ```  
+    ```  
+    <Build type="MSBuild">   
+       <MSBuild>  
+          <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>  
+          <BuiltSolution>/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>  
+       </MSBuild>  
+    </Build>  
+    ```  
   
 ####  <a name="IneligibleWorkspace"></a> S: neden Visual Studio seçili çalışma alanımın uygun olmadığını söylüyor?  
  **Y:** seçilen çalışma alanı, kaynak denetim klasörü ve yerel klasör arasında herhangi bir eşlemeye sahip değil. Bu çalışma alanına ilişkin bir eşleme oluşturmak için seçin **Yönet**. Aksi halde, zaten eşleşmiş bir çalışma alanı seçin veya yeni bir çalışma alanı oluşturun.  

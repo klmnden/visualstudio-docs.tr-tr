@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 563fed2a6622e56f76e604ead0da6c599e91b6db
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 6e812d60daf7e084835c0de9549cd58ff2711fea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281448"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916692"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>HTML ve CSS Visual Studio'da UWP uygulamalarında hata ayıklama
   
@@ -41,13 +41,13 @@ ms.locfileid: "44281448"
   
  DOM Gezgini kullanabilirsiniz:  
   
--   DOM öğesi alt ağacı gidin ve İşlenmiş HTML, CSS ve JavaScript kodu inceleyin.  
+- DOM öğesi alt ağacı gidin ve İşlenmiş HTML, CSS ve JavaScript kodu inceleyin.  
   
--   Öznitelikler ve CSS stilleri işlenen öğeler için dinamik olarak düzenleme ve sonuçları hemen görün.  
+- Öznitelikler ve CSS stilleri işlenen öğeler için dinamik olarak düzenleme ve sonuçları hemen görün.  
   
--   CSS stilleri sayfa öğeleri için nasıl uygulanmış incelemenize ve henüz uygulanmamış kuralları izleme.  
+- CSS stilleri sayfa öğeleri için nasıl uygulanmış incelemenize ve henüz uygulanmamış kuralları izleme.  
   
- Hata ayıklama uygulamaları, genellikle DOM Gezgini'nde öğeleri seçmeniz gerekir. Bir öğe seçtiğinizde, DOM Gezgini sağ tarafındaki sekmeler otomatik olarak görünen değerlerin DOM Gezgini'nde seçilen öğenin yansıtacak şekilde güncelleştirin. Sekmeleri şunlardır: **stilleri**, **hesaplanan**, **Düzen**. UWP uygulamaları da destek **olayları** ve **değişiklikleri** sekmeler. Öğeleri seçme hakkında daha fazla bilgi için bkz. [öğeleri seçme](#SelectingElements).  
+  Hata ayıklama uygulamaları, genellikle DOM Gezgini'nde öğeleri seçmeniz gerekir. Bir öğe seçtiğinizde, DOM Gezgini sağ tarafındaki sekmeler otomatik olarak görünen değerlerin DOM Gezgini'nde seçilen öğenin yansıtacak şekilde güncelleştirin. Sekmeleri şunlardır: **stilleri**, **hesaplanan**, **Düzen**. UWP uygulamaları da destek **olayları** ve **değişiklikleri** sekmeler. Öğeleri seçme hakkında daha fazla bilgi için bkz. [öğeleri seçme](#SelectingElements).  
   
 > [!TIP]
 >  DOM Gezgini penceresi kapatılırsa seçin **hata ayıklama**>**Windows** > **DOM Gezgini** yeniden açın. Pencere, yalnızca bir betik hata ayıklama oturumu sırasında görünür.  
@@ -59,107 +59,107 @@ ms.locfileid: "44281448"
   
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>Dinamik DOM'u inceleyerek hata ayıklamak için  
   
-1.  Seçerek Visual Studio'da yeni bir çözüm oluşturma **dosya** > **yeni proje**.  
+1. Seçerek Visual Studio'da yeni bir çözüm oluşturma **dosya** > **yeni proje**.  
   
-2.  Seçin **JavaScript** > **Windows Evrensel**ve ardından **WinJS uygulaması**.  
+2. Seçin **JavaScript** > **Windows Evrensel**ve ardından **WinJS uygulaması**.  
   
-3.  Proje için bir ad yazın `FlipViewApp`ve **Tamam** uygulamayı oluşturmak için.  
+3. Proje için bir ad yazın `FlipViewApp`ve **Tamam** uygulamayı oluşturmak için.  
   
-4.  İndex.html gövde öğesi içinde bu kodu ekleyin:  
+4. İndex.html gövde öğesi içinde bu kodu ekleyin:  
   
-    ```html  
-    <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
-             style="display:none">  
-        <div class="fixedItem" >  
-            <img src="#" data-win-bind="src: flipImg" />  
-        </div>  
-    </div>  
-    <div id="fView" style="width:100px;height:100px"  
-        data-win-control="WinJS.UI.FlipView" data-win-options="{  
-        itemDataSource: Data.items.dataSource, itemTemplate: flipTemplate }">  
-    </div>  
-    ```  
+   ```html  
+   <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
+            style="display:none">  
+       <div class="fixedItem" >  
+           <img src="#" data-win-bind="src: flipImg" />  
+       </div>  
+   </div>  
+   <div id="fView" style="width:100px;height:100px"  
+       data-win-control="WinJS.UI.FlipView" data-win-options="{  
+       itemDataSource: Data.items.dataSource, itemTemplate: flipTemplate }">  
+   </div>  
+   ```  
   
-5.  Default.css açın ve aşağıdaki CSS ekleyin:  
+5. Default.css açın ve aşağıdaki CSS ekleyin:  
   
-    ```css  
-    #fView {  
-        background-color:#0094ff;  
-        height: 100%;  
-        width: 100%;  
-        margin: 25%;  
-    }  
-    ```  
+   ```css  
+   #fView {  
+       background-color:#0094ff;  
+       height: 100%;  
+       width: 100%;  
+       margin: 25%;  
+   }  
+   ```  
   
-6.  Default.js dosyasında kodu şu kodla değiştirin:  
+6. Default.js dosyasında kodu şu kodla değiştirin:  
   
-    ```javascript  
-    (function () {  
-        "use strict";  
+   ```javascript  
+   (function () {  
+       "use strict";  
   
-        var app = WinJS.Application;  
-        var activation = Windows.ApplicationModel.Activation;  
+       var app = WinJS.Application;  
+       var activation = Windows.ApplicationModel.Activation;  
   
-        var myData = [];  
-        for (var x = 0; x < 4; x++) {  
-            myData[x] = { flipImg: "/images/logo.png" }  
-        };  
+       var myData = [];  
+       for (var x = 0; x < 4; x++) {  
+           myData[x] = { flipImg: "/images/logo.png" }  
+       };  
   
-        var pages = new WinJS.Binding.List(myData, { proxy: true });  
+       var pages = new WinJS.Binding.List(myData, { proxy: true });  
   
-        app.onactivated = function (args) {  
-            if (args.detail.kind === activation.ActivationKind.launch) {  
-                if (args.detail.previousExecutionState !==  
-                activation.ApplicationExecutionState.terminated) {  
-                    // TODO: . . .  
-                } else {  
-                    // TODO: . . .  
-                }  
-                args.setPromise(WinJS.UI.processAll());  
+       app.onactivated = function (args) {  
+           if (args.detail.kind === activation.ActivationKind.launch) {  
+               if (args.detail.previousExecutionState !==  
+               activation.ApplicationExecutionState.terminated) {  
+                   // TODO: . . .  
+               } else {  
+                   // TODO: . . .  
+               }  
+               args.setPromise(WinJS.UI.processAll());  
   
-                updateImages();  
-            }  
-        };  
+               updateImages();  
+           }  
+       };  
   
-        function updateImages() {  
+       function updateImages() {  
   
-            pages.setAt(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
-            pages.setAt(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
-            pages.setAt(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
-        };  
+           pages.setAt(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+           pages.setAt(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+           pages.setAt(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
+       };  
   
-        app.oncheckpoint = function (args) {  
-        };  
+       app.oncheckpoint = function (args) {  
+       };  
   
-        app.start();  
+       app.start();  
   
-        var publicMembers = {  
-            items: pages  
-        };  
+       var publicMembers = {  
+           items: pages  
+       };  
   
-        WinJS.Namespace.define("Data", publicMembers);  
+       WinJS.Namespace.define("Data", publicMembers);  
   
-    })();  
-    ```  
+   })();  
+   ```  
   
-     Aşağıdaki çizim, bu uygulamayı çalıştırmak, öğrenmek istiyoruz gösterir. Ancak uygulama bu duruma getirmek için size bir dizi hataları düzelttikten gerekecektir.  
+    Aşağıdaki çizim, bu uygulamayı çalıştırmak, öğrenmek istiyoruz gösterir. Ancak uygulama bu duruma getirmek için size bir dizi hataları düzelttikten gerekecektir.  
   
-     ![Beklenen sonuçları gösteren FlipView uygulama](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")  
+    ![Beklenen sonuçları gösteren FlipView uygulama](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")  
   
-7.  Seçin **yerel makine** listesinde yanındaki açılan listeden **hata ayıklamayı Başlat** düğmesini **hata ayıklama** araç çubuğu:  
+7. Seçin **yerel makine** listesinde yanındaki açılan listeden **hata ayıklamayı Başlat** düğmesini **hata ayıklama** araç çubuğu:  
   
-     ![Select hata ayıklama hedef liste](../debugger/media/js_select_target.png "JS_Select_Target")  
+    ![Select hata ayıklama hedef liste](../debugger/media/js_select_target.png "JS_Select_Target")  
   
-8.  Seçin **hata ayıklama** > **hata ayıklamayı Başlat**, veya uygulamanızı hata ayıklama modunda çalıştırmak için F5 tuşuna basın.  
+8. Seçin **hata ayıklama** > **hata ayıklamayı Başlat**, veya uygulamanızı hata ayıklama modunda çalıştırmak için F5 tuşuna basın.  
   
-     Bu uygulamayı çalıştırır, ancak stil birkaç hataların olmadığı için çoğunlukla boş bir ekran görürsünüz. İlk `FlipView` görüntü Orta ekranın yanında küçük bir kare görünür.  
+    Bu uygulamayı çalıştırır, ancak stil birkaç hataların olmadığı için çoğunlukla boş bir ekran görürsünüz. İlk `FlipView` görüntü Orta ekranın yanında küçük bir kare görünür.  
   
-10. Seçin ve Visual Studio'ya **DOM Gezgini** sekmesi.  
+9. Seçin ve Visual Studio'ya **DOM Gezgini** sekmesi.  
   
-    > [!TIP]
-    >  Çalıştırılan uygulama ve Visual Studio arasında geçiş yapmak için Alt + sekme veya F12 tuşuna basabilirsiniz.  
+   > [!TIP]
+   >  Çalıştırılan uygulama ve Visual Studio arasında geçiş yapmak için Alt + sekme veya F12 tuşuna basabilirsiniz.  
   
-11. DIV öğesi Kimliğine sahip bölüm için DOM Gezgini penceresinde seçin `"fView"`. Görüntülemek ve doğru DIV öğesinin seçmek için ok tuşlarını kullanın. (Bir öğenin alt öğelerini görüntülemek için sağ ok tuşu sağlar.)  
+10. DIV öğesi Kimliğine sahip bölüm için DOM Gezgini penceresinde seçin `"fView"`. Görüntülemek ve doğru DIV öğesinin seçmek için ok tuşlarını kullanın. (Bir öğenin alt öğelerini görüntülemek için sağ ok tuşu sağlar.)  
   
      ![DOM Gezgini](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
   
@@ -168,56 +168,56 @@ ms.locfileid: "44281448"
   
      DOM Gezgini penceresinin sağ tarafındaki sekmeler otomatik olarak görünen değerlerin geçerli öğenin DOM Gezgini'nde yansıtacak şekilde güncelleştirin.  
   
-12. Seçin **hesaplanan** sekmesinde.  
+11. Seçin **hesaplanan** sekmesinde.  
   
      Bu sekme, seçili DOM öğesinin her bir özellik için hesaplanan ya da son değeri gösterir.  
   
-13. Yükseklik CSS kuralı açın. Bir satır içi stil kümesine yükseklik değeri ayarlamak için % 100 ile tutarsız görünen 100px fark `#fView` CSS Seçici. Üstü çizili metin için `#fView` Seçici satır içi stil bu stil öncelik aldığını gösterir.  
+12. Yükseklik CSS kuralı açın. Bir satır içi stil kümesine yükseklik değeri ayarlamak için % 100 ile tutarsız görünen 100px fark `#fView` CSS Seçici. Üstü çizili metin için `#fView` Seçici satır içi stil bu stil öncelik aldığını gösterir.  
   
      Aşağıdaki çizimde gösterildiği **hesaplanan** sekmesi.  
   
      ![DOM Gezgini hesaplanan sekmesini](../debugger/media/js_dom_explorer_computed.png "JS_DOM_Explorer_Computed")  
   
-14. Satır içi stil genişliği ve yüksekliği için ana DOM Gezgini penceresinde çift `fView` DIV öğesi. Şimdi burada değerleri düzenleyebilirsiniz. Bu senaryoda, tamamen kaldırmak istiyoruz.  
+13. Satır içi stil genişliği ve yüksekliği için ana DOM Gezgini penceresinde çift `fView` DIV öğesi. Şimdi burada değerleri düzenleyebilirsiniz. Bu senaryoda, tamamen kaldırmak istiyoruz.  
   
-15. Ana penceresinde, `width: 100px;height: 100px;`, basın **Sil** anahtar ve tuşuna **Enter**. Enter tuşuna bastıktan sonra hata ayıklama oturumunuzu durdurdu henüz olsa da yeni değerleri hemen uygulamaya yansıtılır.  
+14. Ana penceresinde, `width: 100px;height: 100px;`, basın **Sil** anahtar ve tuşuna **Enter**. Enter tuşuna bastıktan sonra hata ayıklama oturumunuzu durdurdu henüz olsa da yeni değerleri hemen uygulamaya yansıtılır.  
   
     > [!IMPORTANT]
     >  DOM Gezgini penceresi özniteliklerinde güncelleştirebilirsiniz gibi görünen değerleri de güncelleştirebilirsiniz **stilleri**, **hesaplanan**, ve **Düzen** sekmeler. Daha fazla bilgi için bkz. [DOM Gezgini'ni kullanarak hata ayıklama CSS stillerinde](../debugger/debug-css-styles-using-dom-explorer.md) ve [DOM Gezgini'ni kullanarak hata ayıklama Düzen](../debugger/debug-layout-using-dom-explorer.md).  
   
-16. Uygulamaya seçerek ya da Alt + Tab tuşlarını kullanarak geçiş yapın.  
+15. Uygulamaya seçerek ya da Alt + Tab tuşlarını kullanarak geçiş yapın.  
   
      Artık `FlipView` denetimi görünür simülatör telefonda veya Phone öykünücüsünde'nın ekran boyutundan büyük. Bu, istenen sonucu değildir. Araştırmak için Visual Studio'ya geçiş yapın.  
   
-17. DOM Gezgini'nde seçin **hesaplanan** yeniden sekme ve yüksekliği kuralı açın. FView öğesi hala CSS'den beklendiği gibi % 100 değerini gösterir, ancak uygulamanın ekran yüksekliği hesaplanan değeri eşittir (örneğin, 800 piksel 667.67px veya başka bir değer), olduğu için bu uygulamayı istediğimiz değil. Sonraki adımlarda araştırmaya biz yükseklik ve genişlik Kaldır `fView` DIV öğesi.  
+16. DOM Gezgini'nde seçin **hesaplanan** yeniden sekme ve yüksekliği kuralı açın. FView öğesi hala CSS'den beklendiği gibi % 100 değerini gösterir, ancak uygulamanın ekran yüksekliği hesaplanan değeri eşittir (örneğin, 800 piksel 667.67px veya başka bir değer), olduğu için bu uygulamayı istediğimiz değil. Sonraki adımlarda araştırmaya biz yükseklik ve genişlik Kaldır `fView` DIV öğesi.  
   
-18. İçinde **stilleri** sekmesinde, yükseklik ve genişlik özelliklerini işaretini kaldırın `#fView` CSS Seçici.  
+17. İçinde **stilleri** sekmesinde, yükseklik ve genişlik özelliklerini işaretini kaldırın `#fView` CSS Seçici.  
   
      **Hesaplanan** sekmesi artık 400 piksel ölçülerinden küçük yüksekliğini gösterir. Bu değer, UI-platform CSS dosyası olan dark.css içinde belirtilen .win flipview Seçici'den gelen bilgileri gösterir.  
   
-19. Uygulamaya geri geçiş yapın.  
+18. Uygulamaya geri geçiş yapın.  
   
      Şeyler iyileştirdik. Ancak, yine de düzeltmek için bir daha fazla sorun olduğunu: kenar boşluklarını çok büyük görünür.  
   
-20. Araştırmak için Visual Studio'ya ve seçin **Düzen** öğenin kutu modelinin aramak için sekmesinde.  
+19. Araştırmak için Visual Studio'ya ve seçin **Düzen** öğenin kutu modelinin aramak için sekmesinde.  
   
      İçinde **Düzen** sekmesinde, aşağıdaki görüntüyle karşılaşırsınız:  
   
-    -   255px (kaydırma) ve 255px (kenar boşluğu) veya cihaz çözünürlüğünüz bağlı olarak benzer değerler. 
+    - 255px (kaydırma) ve 255px (kenar boşluğu) veya cihaz çözünürlüğünüz bağlı olarak benzer değerler. 
   
-     Aşağıdaki çizimde gösterildiği nasıl **Düzen** bir öykünücü 100px uzaklığı ve kenar boşluğu ile kullanıyorsanız, sekme görünür).  
+      Aşağıdaki çizimde gösterildiği nasıl **Düzen** bir öykünücü 100px uzaklığı ve kenar boşluğu ile kullanıyorsanız, sekme görünür).  
   
-     ![DOM Gezgini Düzen sekmesini](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")  
+      ![DOM Gezgini Düzen sekmesini](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")  
   
-     Doğru görünüyor. **Hesaplanan** sekmesi de aynı kenar boşluğu değerleri gösterir.  
+      Doğru görünüyor. **Hesaplanan** sekmesi de aynı kenar boşluğu değerleri gösterir.  
   
-21. Seçin **stilleri** bulun ve sekme `#fView` CSS Seçici. % 25'için bir değer, burada gördüğünüz **kenar boşluğu** özelliği.  
+20. Seçin **stilleri** bulun ve sekme `#fView` CSS Seçici. % 25'için bir değer, burada gördüğünüz **kenar boşluğu** özelliği.  
   
-22. % 25'i seçin ve için 25px değiştirin ve Enter tuşuna basın.  
+21. % 25'i seçin ve için 25px değiştirin ve Enter tuşuna basın.  
   
-23. Ayrıca **stilleri** sekmesinde .win flipview Seçici için height kuralı seçin ve 400 piksel ölçülerinden küçük 500px için değiştirin ve Enter tuşuna basın.  
+22. Ayrıca **stilleri** sekmesinde .win flipview Seçici için height kuralı seçin ve 400 piksel ölçülerinden küçük 500px için değiştirin ve Enter tuşuna basın.  
   
-24. Uygulamaya geri geçiş yapmak ve öğelerin yerleşimini doğru görüntülendiğini görürsünüz. Düzeltmeleri kaynağına ve hata ayıklayıcıyı durdurup yeniden olmadan uygulamayı yenilemek için aşağıdaki yordama bakın.  
+23. Uygulamaya geri geçiş yapmak ve öğelerin yerleşimini doğru görüntülendiğini görürsünüz. Düzeltmeleri kaynağına ve hata ayıklayıcıyı durdurup yeniden olmadan uygulamayı yenilemek için aşağıdaki yordama bakın.  
   
 #### <a name="to-refresh-your-app-while-debugging"></a>Uygulamanızı hata ayıklama sırasında yenilemek için  
   
@@ -234,23 +234,23 @@ ms.locfileid: "44281448"
 ##  <a name="SelectingElements"></a> Öğeleri seçme  
  Bir uygulamanın hataları ayıklanırken üç yolla DOM öğeleri seçebilirsiniz:  
   
--   Öğelerini doğrudan DOM Gezgini penceresinde (veya ok tuşlarını kullanarak) tıklayarak.  
+- Öğelerini doğrudan DOM Gezgini penceresinde (veya ok tuşlarını kullanarak) tıklayarak.  
   
--   Kullanarak **öğe seçin** düğmesine (Ctrl + B).  
+- Kullanarak **öğe seçin** düğmesine (Ctrl + B).  
   
--   Kullanarak `select` biri olan komut, [JavaScript Konsolu komutları](../debugger/javascript-console-commands.md).  
+- Kullanarak `select` biri olan komut, [JavaScript Konsolu komutları](../debugger/javascript-console-commands.md).  
   
- Öğeleri seçin ve bir öğe üzerinde fare işaretçisini DOM Gezgini penceresi kullandığınızda, karşılık gelen öğe çalışan uygulamada vurgulanır. Öğesindeki DOM Gezgini'nde seçmek için tıklatın veya vurgulayın ve öğeleri seçmek için ok tuşlarını kullanabilirsiniz. Kullanarak öğeleri DOM Gezgini'nde de seçebilirsiniz **Select öğesi** düğmesi. Aşağıdaki çizimde gösterildiği **öğe seçin** düğmesi.  
+  Öğeleri seçin ve bir öğe üzerinde fare işaretçisini DOM Gezgini penceresi kullandığınızda, karşılık gelen öğe çalışan uygulamada vurgulanır. Öğesindeki DOM Gezgini'nde seçmek için tıklatın veya vurgulayın ve öğeleri seçmek için ok tuşlarını kullanabilirsiniz. Kullanarak öğeleri DOM Gezgini'nde de seçebilirsiniz **Select öğesi** düğmesi. Aşağıdaki çizimde gösterildiği **öğe seçin** düğmesi.  
   
- ![DOM Gezgini'nde öğe düğmesini seçme](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")  
+  ![DOM Gezgini'nde öğe düğmesini seçme](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")  
   
- Tıkladığınızda **Select öğesi** (veya Ctrl + B tuşlarına basın) çalışan uygulamada tıklayarak DOM Gezgini'nde öğeyi seçebilir böylece bu seçim modu değişir. Modu tek tıklatmadan sonra geri normal seçim moduyla değiştirir. Tıkladığınızda **Select öğesi**, uygulama ön plana gelir ve imleci değişikliklerini yeni seçim modunu gösterecek. Anahatları belirlenmiş öğe'e tıkladığınızda DOM Gezgini ön plana seçili belirtilen öğeyi döndürür.  
+  Tıkladığınızda **Select öğesi** (veya Ctrl + B tuşlarına basın) çalışan uygulamada tıklayarak DOM Gezgini'nde öğeyi seçebilir böylece bu seçim modu değişir. Modu tek tıklatmadan sonra geri normal seçim moduyla değiştirir. Tıkladığınızda **Select öğesi**, uygulama ön plana gelir ve imleci değişikliklerini yeni seçim modunu gösterecek. Anahatları belirlenmiş öğe'e tıkladığınızda DOM Gezgini ön plana seçili belirtilen öğeyi döndürür.  
   
- Seçtiğiniz önce **öğe seçin**, çalışmakta olan uygulamayla öğelerinde getirerek vurgulamak belirtebilirsiniz **web sayfasında öne çıkan özellikleri görüntülemek** düğmesi. Aşağıdaki çizim, bu düğmeyi gösterir. Öne çıkan özellikleri varsayılan olarak görüntülenir.  
+  Seçtiğiniz önce **öğe seçin**, çalışmakta olan uygulamayla öğelerinde getirerek vurgulamak belirtebilirsiniz **web sayfasında öne çıkan özellikleri görüntülemek** düğmesi. Aşağıdaki çizim, bu düğmeyi gösterir. Öne çıkan özellikleri varsayılan olarak görüntülenir.  
   
- ![Web Sayfa Görüntüle düğmesini vurgular](../debugger/media/js_dom_display_highlights_button.png "JS_DOM_Display_Highlights_Button")  
+  ![Web Sayfa Görüntüle düğmesini vurgular](../debugger/media/js_dom_display_highlights_button.png "JS_DOM_Display_Highlights_Button")  
   
- Öğeleri vurgulama seçtiğinizde, Simülatörde üzerine öğeler vurgulanmıştır. Görünür kutu modeli vurgulanan öğelerle eşleme için renk **Düzen** DOM Gezgini sekmesi.  
+  Öğeleri vurgulama seçtiğinizde, Simülatörde üzerine öğeler vurgulanmıştır. Görünür kutu modeli vurgulanan öğelerle eşleme için renk **Düzen** DOM Gezgini sekmesi.  
   
 > [!NOTE]
 >  Üzerine gelerek öğeleri vurgulama, Windows Phone öykünücüsü'nde kısmen desteklenir.  

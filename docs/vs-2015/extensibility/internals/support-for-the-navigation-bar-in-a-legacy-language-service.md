@@ -16,12 +16,12 @@ ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b731f10a30f20e3c5a9670a91400e86be004852e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7105299956a338d0dd4a637b404f9ccad2447662
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267377"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839147"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Gezinti Çubuğu için Destek
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,11 +69,11 @@ namespace TestLanguagePackage
   
  Seçimi açılan türlerinde değiştikçe üye listesi yeni türü yansıtacak şekilde güncelleştirilmesi gerekir. Üye listesinde gösterilen olabilir:  
   
--   Geçerli tür üye listesi.  
+- Geçerli tür üye listesi.  
   
--   Tüm kullanılabilir olan üyelerin kaynak dosya, ancak geçerli türü değil, tüm üyeleri grileştirilmiş metni görüntülenir. Kullanıcı Hızlı gezinme için kullanılabilir, ancak bunlar şu anda seçili türün bir parçası olmadığını rengini belirtir. Bu nedenle grileştirilmiş üyelerini seçebilirsiniz.  
+- Tüm kullanılabilir olan üyelerin kaynak dosya, ancak geçerli türü değil, tüm üyeleri grileştirilmiş metni görüntülenir. Kullanıcı Hızlı gezinme için kullanılabilir, ancak bunlar şu anda seçili türün bir parçası olmadığını rengini belirtir. Bu nedenle grileştirilmiş üyelerini seçebilirsiniz.  
   
- Uygulanışı <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> yöntemi genellikle aşağıdaki adımları gerçekleştirir:  
+  Uygulanışı <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> yöntemi genellikle aşağıdaki adımları gerçekleştirir:  
   
 1.  Kaynak dosyası için geçerli bildirimleri bir listesini alın.  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 183c459871f991aedb3cec19c7a83105091d2706
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6103f9601c55b9b29b83866d261d889c5555c86f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183011"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894384"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Etki Alanına Özgü Dil Tanımıma İzleme Özelliği Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Bu izlenecek yol, bir etki alanı modeline izleme özelliği ekleme işlemi gös
   
  Bu kılavuzda, modelin varsayılan Namespace özelliği temelinde bir varsayılan değere sahip özellik izleme bir Namespace sahip bir etki alanına özgü dil (DSL) oluşturun. İzleme özellikleri hakkında daha fazla bilgi için bkz. [izleme özellikleri tanımlama](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
--   Özellik tanımlayıcılarının izleme DSL araçları desteği. Ancak, DSL Tasarımcısı izleme özelliği için bir dil eklemek için kullanılamaz. Bu nedenle, izleme özelliği tanımlaması ve özel kod eklemeniz gerekir.  
+- Özellik tanımlayıcılarının izleme DSL araçları desteği. Ancak, DSL Tasarımcısı izleme özelliği için bir dil eklemek için kullanılamaz. Bu nedenle, izleme özelliği tanımlaması ve özel kod eklemeniz gerekir.  
   
- İki durumlu bir izleme özelliği vardır: izleme ve kullanıcı tarafından güncelleştirilmiş. İzleme özellikleri, aşağıdaki özelliklere sahiptir:  
+  İki durumlu bir izleme özelliği vardır: izleme ve kullanıcı tarafından güncelleştirilmiş. İzleme özellikleri, aşağıdaki özelliklere sahiptir:  
   
--   İzleme durumda olduğu zaman, izleme özelliğinin değeri hesaplanır ve değeri, model değişikliği diğer özellikleri olarak güncelleştirilir.  
+- İzleme durumda olduğu zaman, izleme özelliğinin değeri hesaplanır ve değeri, model değişikliği diğer özellikleri olarak güncelleştirilir.  
   
--   Güncelleştirilmiş durumlarda kullanıcı durumuna göre izleme özelliğinin değeri, kullanıcının son özellik değer kümesi korur.  
+- Güncelleştirilmiş durumlarda kullanıcı durumuna göre izleme özelliğinin değeri, kullanıcının son özellik değer kümesi korur.  
   
--   İçinde **özellikleri** penceresinde **sıfırlama** özelliği güncelleştirilmiş içinde olduğunda yalnızca izleme özelliği etkinleştirilmişse komut kullanıcı durumuna göre. **Sıfırlama** komut izleme özelliği ayarlar durumunu izleme.  
+- İçinde **özellikleri** penceresinde **sıfırlama** özelliği güncelleştirilmiş içinde olduğunda yalnızca izleme özelliği etkinleştirilmişse komut kullanıcı durumuna göre. **Sıfırlama** komut izleme özelliği ayarlar durumunu izleme.  
   
--   İçinde **özellikleri** normal bir yazı tipinde izleme özelliği değeri izleme durumunda olduğunda penceresinde görüntülenir.  
+- İçinde **özellikleri** normal bir yazı tipinde izleme özelliği değeri izleme durumunda olduğunda penceresinde görüntülenir.  
   
--   İçinde **özellikleri** izleme özelliği güncelleştirilmiş olduğunda penceresi kullanıcı durumuna göre bir kalın yazı tipinde değeri görüntülenir.  
+- İçinde **özellikleri** izleme özelliği güncelleştirilmiş olduğunda penceresi kullanıcı durumuna göre bir kalın yazı tipinde değeri görüntülenir.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu kılavuzda başlamadan önce bu bileşenleri yüklemelisiniz:  

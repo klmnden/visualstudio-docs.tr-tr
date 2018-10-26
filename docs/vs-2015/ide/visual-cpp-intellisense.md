@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 104c85f7b23af8bfb412423ad1eeb27190a235c2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ced999c20678cc64dc5f96e86070b5f39d5ca2c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881683"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,23 +73,23 @@ Visual Studio 2015'te IntelliSense de tek bir kod dosyaları için proje dosyala
   
  Aşağıdakilere dikkat edin:  
   
--   #Else dal 8. satırda gri etkin olmayan bölge göstermek için çünkü __ANDROID\_ \_ Android projesi için tanımlanmış.  
+- #Else dal 8. satırda gri etkin olmayan bölge göstermek için çünkü `__ANDROID__` Android projesi için tanımlanmış.  
   
--   11. satırında Karşılama değişkeni mor dalgalı olan HELLO tanımlayıcısı ile başlatılır. Hiçbir tanımlayıcı HELLO şu anda etkin olmayan iOS projesinde tanımlanıp tanımlanmadığına olmasıdır. İOS, Android projesi satırı 11 derlenir, ancak böyle olmaz. Bu, bir şeyin paylaşılan kod olduğundan şu anda etkin yapılandırmada derler olsa da değiştirmeniz gerekir.  
+- 11. satırında Karşılama değişkeni mor dalgalı olan HELLO tanımlayıcısı ile başlatılır. Hiçbir tanımlayıcı HELLO şu anda etkin olmayan iOS projesinde tanımlanıp tanımlanmadığına olmasıdır. İOS, Android projesi satırı 11 derlenir, ancak böyle olmaz. Bu, bir şeyin paylaşılan kod olduğundan şu anda etkin yapılandırmada derler olsa da değiştirmeniz gerekir.  
   
--   Satırı 12 kırmızı dalgalı BYE tanımlayıcısı içeriyor; Bu tanımlayıcı, şu anda seçili etkin projedeki tanımlanmadı.  
+- Satırı 12 kırmızı dalgalı BYE tanımlayıcısı içeriyor; Bu tanımlayıcı, şu anda seçili etkin projedeki tanımlanmadı.  
   
- Şimdi, etkin proje için iOS.StaticLibrary değiştirin ve dalgalı çizgiler nasıl değiştiğine dikkat edin.  
+  Şimdi, etkin proje için iOS.StaticLibrary değiştirin ve dalgalı çizgiler nasıl değiştiğine dikkat edin.  
   
- ![iOS, etkin bir proje seçilir. ](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")  
+  ![iOS, etkin bir proje seçilir. ](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")  
   
- Aşağıdakilere dikkat edin:  
+  Aşağıdakilere dikkat edin:  
   
--   6. satırda #ifdef dal etkin olmayan bölge göstermek için çünkü gri renkli __ANDROID\_ \_ iOS projesi için tanımlı değil.  
+- 6. satırda #ifdef dal etkin olmayan bölge göstermek için çünkü gri renkli *_ANDROID\\*  \_ iOS projesi için tanımlı değil.  
   
--   11. satırında Karşılama değişkeni artık kırmızı dalgalı sahip HELLO, tanımlayıcı ile başlatılır. Hiçbir tanımlayıcı HELLO etkin iOS projesinde tanımlanıp tanımlanmadığına olmasıdır.  
+- 11. satırında Karşılama değişkeni artık kırmızı dalgalı sahip HELLO, tanımlayıcı ile başlatılır. Hiçbir tanımlayıcı HELLO etkin iOS projesinde tanımlanıp tanımlanmadığına olmasıdır.  
   
--   Satırı 12 mor dalgalı BYE tanımlayıcısı içeriyor; Bu tanımlayıcı, şu anda etkin olmayan Android.NativeActivity projesinde tanımlanmadı.  
+- Satırı 12 mor dalgalı BYE tanımlayıcısı içeriyor; Bu tanımlayıcı, şu anda etkin olmayan Android.NativeActivity projesinde tanımlanmadı.  
   
 ## <a name="single-file-intellisense"></a>Tek dosya IntelliSense  
  Tek bir dosyayı dışında herhangi bir projeyi açtığınızda, IntelliSense almaya devam. Etkinleştirebilir veya giderek belirli özellikleri devre dışı bırak **metin düzenleyici, C/C++, Gelişmiş** etkinleştirmek veya IntelliSense özelliklerini devre dışı bırakmak için. Bir projenin parçası olmayan tek dosyalar için IntelliSense yapılandırmak için Ara **IntelliSense ve gözatma proje dışı dosyalar için** içinde **Gelişmiş** bölümü. Bkz: [Visual C++ Kılavuzlu Tur](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  

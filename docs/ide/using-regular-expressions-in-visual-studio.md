@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb9186726a54099b0c75a468a99d760abd22b7f3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: bef854fd04ce8ac2ddf6fe834b3bede0f371eefe
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945552"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050306"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Visual Studio'da normal ifadeler kullanma
 
@@ -49,7 +49,8 @@ Bazı örnekler şunlardır:
 |Önünde gelen ifadenin sıfır veya daha çok tekrarı ile eşleştir (mümkün olduğu kadar az karakterle Eşleştir)|*?|`e.*?e` "eede" ile eşleşir ancak "eede" içinde "ee" ile eşleşir.|
 |Önünde gelen ifadenin bir veya daha çok tekrarı ile eşleştir (mümkün olduğu kadar az karakterle Eşleştir)|+?|`e.+?e` "Telefo" ve "erprise" ile "Kurumsal" ancak değil tüm "enterprise" kelimesinin eşleşir.|
 |Eşleşme dizesini bir satırın veya dizenin başına bağlantı|^|`^car` yalnızca satırın başında göründüğünde "car" sözcüğü eşleştirir.|
-|Eşleşme dizesini bir satırın sonuna Bağla|\r?$|`End\r?$` "yalnızca, bir satırın sonunda göründüğünde end" ile eşleşir.|
+|Eşleşme dizesini bir satırın sonuna Bağla|\r?$|`end\r?$` "yalnızca, bir satırın sonunda göründüğünde end" ile eşleşir.|
+|Eşleşme dizesini dosyanın sonuna bağlantı|$|`end$` "yalnızca bu dosyanın sonunda göründüğünde end" ile eşleşir.|
 |Bir kümedeki tek bir karakterle eşleştir|[abc]|`b[abc]` "ba", "bb" ve "bc" ile eşleşir.|
 |Karakter aralığındaki herhangi bir karakterle eşleştir|[a-f]|`be[n-t]` "içinde"between","beneath"içinde" ben"ve"bes""beside", ancak"below"bet" eşleşir.|
 |Yakalama ve parantez içinde yer alan ifadesi örtük olarak numaralandır|()|`([a-z])X\1` "aXa" ve "bXb" ancak değil "aXb" ile eşleşir. "\1", ilk ifade grubu "[a-z]" anlamına gelir.|
@@ -58,8 +59,8 @@ Bazı örnekler şunlardır:
 |Önce ifadesi veya bir sonraki eşleştirin.|&#124;|`(sponge\|mud) bath` "sponge bath" ve "mud bath" ile eşleşir|
 |Eğik çizgiyi takip eden karakterden çıkış yapın| \\ |`\^` bir karakterle eşleşir ^.|
 |Önceki karakterin veya grubun oluşum sayısını belirtin|{x}, burada x oluşum sayısıdır|`x(ab){2}x` "xababx" ile eşleşir ve `x(ab){2,3}x` "xababx" ve "xabababx ile eşleşir" ancak değil "xababababx" ile eşleşir.|
-|Metni "X" değerinin Unicode numarası olduğu bir Unicode karakter sınıfı eşleştirin. Unicode karakter sınıfları hakkında daha fazla bilgi için bkz.<br /><br /> [Unicode standart 5.2 karakter özellikleri](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}|`\p{Lu}` "T" ve "Thomas Doe" içinde "D" ile eşleşir.|
-|Bir sözcük sınırını eşleştir|`\b` (Bir karakter sınıfı dışında sözcük sınırını \b belirler ve içinde bir karakter sınıfı bir geri belirtir).|`\bin` "içinde" inside "içinde" değil "pinto" eşleşir.|
+|Bir Unicode karakter sınıfı metinde eşleştirin. Unicode karakter sınıfları hakkında daha fazla bilgi için bkz.<br /><br /> [Unicode standart 5.2 karakter özellikleri](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, "X" değerinin Unicode numarası olduğu.|`\p{Lu}` "T" ve "Thomas Doe" içinde "D" ile eşleşir.|
+|Bir sözcük sınırını eşleştir|\b (bir karakter sınıfı dışında `\b` bir sözcük sınırını belirler ve bir karakter sınıfı içinde `\b` Geri Al ile eşleşir.)|`\bin` "içinde" inside "içinde" değil "pinto" eşleşir.|
 |Satır sonu (yeni bir satır tarafından izlenen diğer bir deyişle, bir satır başı) eşleştirin.|\r?\n|`End\r?\nBegin` "Son" ve "olduğunda yalnızca"End"bir satırdaki son dizeyse ve"Begin"sonraki satırdaki ilk dizedir Begin" ile eşleşir.|
 |Herhangi bir alfasayısal karakteri eşleştir|\w|`a\wd` eşleşme "Ekle" ve "a1d ile eşleşir" ancak "a d".|
 |Bir boşluk karakteriyle Eşleştir.|(? ([^ \r\n])\s)|`Public\sInterface` ' % s'ifadesinin "Ortak arabirim" ile eşleşir.|

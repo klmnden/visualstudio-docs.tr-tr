@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: aef6236b896495f81e91cbdd7befd2923c013a33
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 3450671c32cb7cfa03ade49bffcbecea728ddacf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131966"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917533"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Bir veri kümesine WPF denetimleri bağlama
 
@@ -58,15 +58,15 @@ Aşağıdaki kavramları bilgisi de faydalıdır, ancak izlenecek yolu tamamlama
 
 Ürün kayıtları görüntülemek için yeni bir WPF projesi oluşturun.
 
-1.  Visual Studio'yu başlatın.
+1. Visual Studio'yu başlatın.
 
-2.  Üzerinde **dosya** menüsünde **yeni** > **proje**.
+2. Üzerinde **dosya** menüsünde **yeni** > **proje**.
 
-3.  Genişletin **Visual Basic** veya **Visual C#** ve ardından **Windows**.
+3. Genişletin **Visual Basic** veya **Visual C#** ve ardından **Windows**.
 
-4.  Seçin **WPF uygulaması** proje şablonu.
+4. Seçin **WPF uygulaması** proje şablonu.
 
-5.  İçinde **adı** kutusuna **AdventureWorksProductsEditor** seçip **Tamam**.
+5. İçinde **adı** kutusuna **AdventureWorksProductsEditor** seçip **Tamam**.
 
    Visual Studio AdventureWorksProductsEditor projesi oluşturur.
 
@@ -126,23 +126,23 @@ Veri kümesini verilerle doldurmak için kullanın `Fill` yöntemi `ProductTable
 
 Çeşitli düğmeler, XAML içinde WPF Tasarımcısı değiştirerek pencereye ekleyin. Bu kılavuzda daha sonra kullanıcıların bu düğmeleri kullanarak ürünleri kayıtları yapılan değişiklikleri kaydedin ve aracılığıyla kaydırma olanak sağlayan bir kod ekleyeceksiniz.
 
-1.  İçinde **Çözüm Gezgini**, çift *MainWindow.xaml*.
+1. İçinde **Çözüm Gezgini**, çift *MainWindow.xaml*.
 
-     Açılır pencere **WPF Tasarımcısı**.
+    Açılır pencere **WPF Tasarımcısı**.
 
-2.  İçinde [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] görüntülemek tasarımcısına, arasına aşağıdaki kodu ekleyin `<Grid>` etiketler:
+2. İçinde [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] görüntülemek tasarımcısına, arasına aşağıdaki kodu ekleyin `<Grid>` etiketler:
 
-    ```xaml
-    <Grid.RowDefinitions>
-        <RowDefinition Height="75" />
-        <RowDefinition Height="625" />
-    </Grid.RowDefinitions>
-    <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
-    <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
-    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
-    ```
+   ```xaml
+   <Grid.RowDefinitions>
+       <RowDefinition Height="75" />
+       <RowDefinition Height="625" />
+   </Grid.RowDefinitions>
+   <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
+   <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
+   <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
+   ```
 
-3.  Projeyi oluşturun.
+3. Projeyi oluşturun.
 
 ## <a name="create-data-bound-controls"></a>Verilere bağlı denetimler oluşturma
 
@@ -249,5 +249,5 @@ Bu kılavuzu tamamladıktan sonra aşağıdaki görevleri deneyebilirsiniz:
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio'da verilere WPF denetimleri bağlama](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
-- [Visual Studio'da veri kümesi araçları](../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio'daki veri kümesi araçları](../data-tools/dataset-tools-in-visual-studio.md)
 - [Veri Bağlamaya Genel Bakış](/dotnet/framework/wpf/data/data-binding-overview)

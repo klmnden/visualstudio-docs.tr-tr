@@ -4,6 +4,8 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.Basic.IntelliSense
 helpviewer_keywords:
 - IntelliSense [Visual Basic]
 - IntelliSense [Visual Studio], Visual Basic
@@ -12,48 +14,48 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 903bfe0a0effe87ca3f56fcfca5044afdf17e347
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 1bd68ae1996ce9ca70e2a8bf1dcb66822e1a8bb1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425038"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823287"
 ---
-# <a name="intellisense-for-visual-basic-code-files"></a>Visual Basic kodu dosyaları için IntelliSense
+# <a name="intellisense-for-visual-basic-code-files"></a>Visual Basic kod dosyaları için IntelliSense
 
-Visual Basic kaynak kod düzenleyicisinde aşağıdaki IntelliSense özellikleri sunar:
+Visual Basic kaynak kod Düzenleyicisi, IntelliSense aşağıdaki özellikleri sunar:
 
-## <a name="syntax-tips"></a>Sözdizimi ipuçları
+## <a name="syntax-tips"></a>Söz dizimi ipuçları
 
-Sözdizimi ipuçları yazmakta olduğunuz ifadesinin sözdizimi görüntüler. Bu gibi deyimleri için yararlıdır [Declare](/dotnet/visual-basic/language-reference/statements/declare-statement).
+Söz dizimi ipuçları, yazmakta olduğunuz deyimi sözdizimi görüntüler. Bu gibi deyimleri için kullanışlıdır [Declare](/dotnet/visual-basic/language-reference/statements/declare-statement).
 
 ## <a name="automatic-completion"></a>Otomatik Tamamlama
 
-- Tamamlanma çeşitli anahtar sözcükleri
+- Çeşitli anahtar sözcüklere tamamlama
 
-     Örneğin, `goto` ve bir boşluk, IntelliSense açılır menüde tanımlanan etiketler listesini görüntüler. Desteklenen diğer anahtar sözcükler dahil `Exit`, `Implements`, `Option`, ve `Declare`.
+     Örneğin, `goto` ve bir boşluk, IntelliSense, açılan menüde tanımlanan etiketler listesini görüntüler. Desteklenen diğer anahtar sözcükler içerir `Exit`, `Implements`, `Option`, ve `Declare`.
 
 - Tamamlanma `Enum` ve `Boolean`
 
-    Bir deyim bir numaralandırma üyesine başvurur, IntelliSense üyelerinin listesini görüntüler `Enum`. Ne zaman bir deyim başvurduğu bir `Boolean`, IntelliSense doğru yanlış açılır menü görüntüler.
+    Bir ifade bir sabit listesi üyesi için başvuracaktır, IntelliSense, üyelerinin listesini görüntüler. `Enum`. Ne zaman bir deyim başvurduğu bir `Boolean`, IntelliSense doğru yanlış açılan menü görüntüler.
 
-Tamamlama açılabilir varsayılan seçimini kaldırarak **otomatik listesi üyeleri** gelen **genel** özellik sayfasında **Visual Basic** klasör.
+Tamamlama kapatılabilir varsayılan seçimini kaldırarak **otomatik üyeleri Listele** gelen **genel** özellik sayfasında **Visual Basic** klasör.
 
-Üyeleri listeleme, tam sözcüğü çağırarak tamamlama el ile çalıştırabilirsiniz veya **Alt**+**sağ ok**. Daha fazla bilgi için bkz: [kullanım IntelliSense](../ide/using-intellisense.md).
+Üyeleri listeleme, tam sözcük çağırarak tamamlama el ile çağırabilirsiniz veya **Alt**+**sağ ok**. Daha fazla bilgi için [kullanım IntelliSense](../ide/using-intellisense.md).
 
 ## <a name="intellisense-in-zone"></a>Bölgedeki IntelliSense
 
-IntelliSense bölgesinde yardımcı olur aracılığıyla uygulamaları dağıtmak için ihtiyaç duyan Visual Basic geliştiricileri [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ve kısmi güven ayarlar kısıtlanmıştır. Bu özellik:
+IntelliSense bölgesinde üzerinden dağıtmak için gereken Visual Basic geliştiriciler yönetmenize yardımcı olan [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ve kısmi güven ayarlarına göre kısıtlanır. Bu özellik:
 
-- İle uygulamanın çalıştırılacağı İzinleri seçmenize olanak tanır.
+- Uygulamanın birlikte çalışacağı izinleri seçmenize olanak tanır.
 
-- Seçilen görüntü API'leri listesi üyeleri kullanılabilir olarak bölge ve ek izinler kullanılamaz olarak gerektiren API'ları görüntüleyin.
+- Seçilen görüntü API'leri, listesi üyeleri olarak kullanılabilir bölge ve gerektiren ek izinler olarak kullanılamayan API'leri görüntülemek.
 
-Daha fazla bilgi için bkz: [ClickOnce uygulamaları için kod erişimi güvenliği](../deployment/code-access-security-for-clickonce-applications.md).
+Daha fazla bilgi için [ClickOnce uygulamaları için kod erişimi güvenliği](../deployment/code-access-security-for-clickonce-applications.md).
 
 ## <a name="filtered-completion-lists"></a>Filtrelenmiş tamamlanma listeleri
 
-Visual Basic'de IntelliSense tamamlanma listeleri listeler altına bulunan iki sekme denetimleri sahip. **Ortak** varsayılan olarak seçilir, sekme, yazmakta olduğunuz deyimini tamamlamak için en sık kullanılan öğe görüntüler. **Tüm** sekmesini görüntüler için de üzerinde olanlar da dahil olmak üzere otomatik tamamlama, kullanılabilir tüm öğeleri **ortak** sekmesi.
+Visual Basic IntelliSense tamamlanma listelerinde listelerin altına bulunan iki sekme denetimleri sahip. **Ortak** varsayılan olarak seçilir, sekme, yazmakta olduğunuz deyimi tamamlamak için en sık kullanılan öğeleri görüntüler. **Tüm** sekmesi de açık olanlar dahil olmak üzere otomatik tamamlama için kullanılabilir olan tüm öğeleri görüntüler **ortak** sekmesi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
