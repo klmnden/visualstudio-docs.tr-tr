@@ -63,13 +63,13 @@ Zaten Visual Studio 2017'niz yüklüyse veya el ile yüklemeyi tercih ederseniz,
 
 1. **Tercihler**den gelen **Düzenle** menüsünü seçin.
 
-  ![Tercihleri seçin](media/vstu_unity-preferences.png)
+   ![Tercihleri seçin](media/vstu_unity-preferences.png)
 
 2. Tercihler iletişim kutusunda **Dış Araçlar** sekmesini seçin.
 
 3. Gelen **Harici Kod Düzenleyicisi** listesinden, istediğiniz Visual Studio sürümü listelenmişse seçin, aksi takdirde **Gözat...** .
 
-  ![Visual Studio'yu seçin](media/vstu_unity-external-tools.png)
+   ![Visual Studio'yu seçin](media/vstu_unity-external-tools.png)
 
 4. **Gözat...** seçildiyse Visual Studio yükleme dizininin içindeki **Common7/IDE** klasörüne gidin ve **devenv.exe**yi seçin. Ardından **Aç**a tıklayın.
 
