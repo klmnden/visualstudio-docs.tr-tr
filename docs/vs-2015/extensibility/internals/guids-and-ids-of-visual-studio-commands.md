@@ -19,12 +19,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8dc2222dd613cad4d5dad7dc70dccdbe0abfe128
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4aa34194933a63206133685b52def81b784b6154
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868592"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219841"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Visual Studio Komutlarının GUID’leri ve Kimlikleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Visual Studio tümleşik geliştirme ortamında (IDE) dahil komutların GUID ve 
   
 -   Gibi bir altı çizili karakter içeren bir menü öğelerini **yazdırma** komutunu **dosya** menüsünde, P çizilir.  
   
-     Menü öğesi adları '&' karakteri tarafından öncelenen karakter görüntülenmezse altı çizili olarak. .Vsct dosyaları, özel karakterler belirtmek için '&' karakteri kullanır ve görüntülenecek olan bir ampersan yazılmalıdır olduğunu gerektiren XML ancak yazılır olarak&amp;'. Bu nedenle, bir .vsct dosyası içinde **P**Yazdır komutu olarak görünür '&amp;yazdırma '.  
+     Menü öğesi adları '&' karakteri tarafından öncelenen karakter görüntülenmezse altı çizili olarak. .Vsct dosyaları, özel karakterler belirtmek için '&' karakteri kullanır ve görüntülenecek olan bir ampersan yazılmalıdır olduğunu gerektiren XML ancak yazılır olarak&amp;'. Bu nedenle, bir .vsct dosyası içinde **yazdırma** komutu olarak görünür '&amp;yazdırma '.  
   
 -   Dinamik metin sahip komutları **Kaydet** *geçerli dosya*ve dinamik olarak üretilen öğeler gibi menü öğeleri üzerinde **son kullanılan dosyalar** listesi.  
   

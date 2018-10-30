@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: a9daea659f1a19919da31ea57946a7b287e6c040
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: da1ee8b930ad7e7366f2f0702be2ef3a538009f5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468331"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219685"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Python için Azure bulut hizmeti projeleri
 
@@ -25,7 +25,7 @@ Visual Studio, Python kullanarak Azure bulut hizmetleri oluşturmaya yardımcı 
 
 A [bulut hizmeti](https://docs.microsoft.com/azure/cloud-services/) oluşur herhangi bir sayıda *çalışan rolleri* ve *web rolleri*, her biri kavramsal olarak ayrı bir görev gerçekleştiren ancak için ayrı olarak çoğaltılabilir arasında ölçeklendirme için gerektiği şekilde sanal makineler. Web rolleri için ön uç web uygulamalarını barındırmak sağlar. Bu tür bir uygulama yazmak için Python ilgili olduğu WSGI destekleyen herhangi bir web çerçevesi kullanılabilir (tarafından desteklenen [Web projesi şablonu](python-web-application-project-templates.md)). Çalışan rolleri, doğrudan kullanıcılar ile etkileşimde uzun süre çalışan işlemler için tasarlanmıştır. Bunlar genellikle olun ile birlikte yüklenir "azure" paketin içindeki paketleri kullanımı [ `pip install azure` ](http://pypi.org/project/azure).
 
-Bu makalede proje şablonu ve diğer destek (önceki sürümlerinde benzer, ancak bazı farklılıklar) Visual Studio 2017'de ilgili ayrıntıları içerir. Python'dan Azure ile çalışma hakkında daha fazla bilgi için ziyaret [Azure Python Geliştirici Merkezi](https://docs.microsoft.com/en-us/python/azure/?view=azure-python).
+Bu makalede proje şablonu ve diğer destek (önceki sürümlerinde benzer, ancak bazı farklılıklar) Visual Studio 2017'de ilgili ayrıntıları içerir. Python'dan Azure ile çalışma hakkında daha fazla bilgi için ziyaret [Azure Python Geliştirici Merkezi](https://docs.microsoft.com/python/azure/?view=azure-python).
 
 ## <a name="create-a-project"></a>Proje oluşturma
 

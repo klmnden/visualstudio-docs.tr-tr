@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c610ebecf48d8a21e8962a549d7114b8d13e3ad6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cf0941d1f08060bcc0c8889b3038d491dc91d1a7
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270627"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220410"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Veri aramak için Windows Form oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Sık rastlanan bir uygulama senaryosu seçilen verileri form üzerinde görünt�
   
 -   Oluşturma ve veri kaynağı ile uygulamanızda yapılandırma **veri kaynağı yapılandırması** Sihirbazı.  
   
--   İçindeki öğelerin bırakma türünü ayarlama **veri kaynakları**penceresi.  
+-   İçindeki öğelerin bırakma türünü ayarlama **veri kaynakları** penceresi.  
   
 -   Öğeleri sürükleyerek verileri görüntüleyen denetimler oluşturma **veri kaynakları** forma penceresi.  
   

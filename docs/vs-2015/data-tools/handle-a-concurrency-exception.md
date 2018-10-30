@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 616b837613e0e2c76330a68133929e6b85a94f98
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3141f2480aabc2ce6aa7b10f99991fc5cba0d05
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812939"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220423"
 ---
 # <a name="handle-a-concurrency-exception"></a>Bir eşzamanlılık özel durumunu işleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
   
 3.  İçinde **şablonları** bölmesinde **Windows uygulama**.  
   
-4.  Projeyi adlandırın `ConcurrencyWalkthrough`ve ardından**Tamam**.  
+4.  Projeyi adlandırın `ConcurrencyWalkthrough`ve ardından **Tamam**.  
   
      Visual Studio projeyi ekler **Çözüm Gezgini** ve tasarımcıda yeni bir form görüntüler.  
   
@@ -96,7 +96,7 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
   
 5.  Genişletin **tabloları** düğümünü seçip alt `Customers` tablo. Veri kümesi için varsayılan adı olması gereken `NorthwindDataSet`.  
   
-6.  Seçin**son** veri kümesini projeye eklenecek.  
+6.  Seçin **son** veri kümesini projeye eklenecek.  
   
 ## <a name="create-a-data-bound-datagridview-control"></a>DataGridView denetimine veri bağlama oluşturun  
  Bu bölümde, oluşturduğunuz bir <xref:System.Windows.Forms.DataGridView> sürükleyerek **müşteriler** öğesini **veri kaynakları** Windows formunuza penceresi.  
@@ -107,7 +107,7 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
   
 2.  İçinde **veri kaynakları** penceresini genişletin **NorthwindDataSet** düğümüne tıklayın ve ardından **müşteriler** tablo.  
   
-3.  Tablo düğümü aşağı oku seçip ardından **DataGridView**aşağı açılan listesinde.  
+3.  Tablo düğümü aşağı oku seçip ardından **DataGridView** aşağı açılan listesinde.  
   
 4.  Tablo boş bir alana formunuzu sürükleyin.  
   
@@ -118,7 +118,7 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
   
 #### <a name="to-test-the-form"></a>Formu sınamak için  
   
-1.  Seçin**F5** uygulamayı çalıştırmak için  
+1.  Seçin **F5** uygulamayı çalıştırmak için  
   
      Form görünür bir <xref:System.Windows.Forms.DataGridView> verilerle doldurulmuş denetim üzerindeki `Customers` tablo.  
   
@@ -192,7 +192,7 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
   
 #### <a name="to-test-the-form"></a>Formu sınamak için  
   
-1.  Seçin**F5** uygulamayı çalıştırın.  
+1.  Seçin **F5** uygulamayı çalıştırın.  
   
 2.  Form göründükten sonra çalışan bırakın ve geçiş yapmak için Visual Studio IDE.  
   
@@ -215,8 +215,8 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
   
      Eşzamanlılık hatası tetiklenir ve ileti kutusu görünür.  
   
-10. Seçme**Hayır** güncelleştirmeyi iptal eder ve veri kümesini veritabanında şu anda değerlerini güncelleştirir. Seçme**Evet** önerilen değeri veritabanına yazar.  
+10. Seçme **Hayır** güncelleştirmeyi iptal eder ve veri kümesini veritabanında şu anda değerlerini güncelleştirir. Seçme **Evet** önerilen değeri veritabanına yazar.
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)
+## <a name="see-also"></a>Ayrıca Bkz.
 
+- [Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)

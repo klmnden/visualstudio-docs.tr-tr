@@ -18,15 +18,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5690abe8e155c33d8e998ea0a18749e172da7e34
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: a35ee6d086153adc718a1616c0c8f0c8c606fbb7
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38797538"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220036"
 ---
 # <a name="property-pages-javascript"></a>Özellik Sayfaları, JavaScript
-**Özellik sayfaları**proje ayarlarına erişim sağlar. Görüntülenen sayfaları kullanabilirsiniz **özellik sayfaları** proje özelliklerini değiştirmek için.
+**Özellik sayfaları** proje ayarlarına erişim sağlar. Görüntülenen sayfaları kullanabilirsiniz **özellik sayfaları** proje özelliklerini değiştirmek için.
 
 Proje özelliklerine erişmek için bir proje düğümü seçin **Çözüm Gezgini**. Üzerinde **proje** menüsünü tıklatın **özellikleri**.
 

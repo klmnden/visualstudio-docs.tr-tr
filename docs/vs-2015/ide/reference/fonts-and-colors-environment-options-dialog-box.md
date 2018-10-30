@@ -32,12 +32,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cae9f5af0c6b8df6594a78bc7601ac123c349dc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dbaaab64a50a918844a8f9060ce80ee8c8e7ae00
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949441"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220241"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Yazı Tipleri ve Renkler, Ortam, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -153,7 +153,7 @@ ms.locfileid: "49949441"
 |**Anahtar sözcüğü**|Ayrılmış anahtar sözcükler belirtilen dil için. Örneğin: sınıf ve ad alanı.|  
 |**Bellek adresi**|Adres sütunu içinde görüntülemek için kullanılan metin rengi **bellek** penceresi.|  
 |**Bellek değişti**|İçinde değişen verileri görüntülemek için kullanılan metin rengi **bellek** penceresi.|  
-|**Bellek verileri**|M içindeki verileri görüntülemek için kullanılan metin rengi**ellek** penceresi.|  
+|**Bellek verileri**|İçindeki verileri görüntülemek için kullanılan metin rengi **bellek** penceresi.|  
 |**Bellek okunamaz**|İçindeki okunamaz bellek alanları görüntülemek için kullanılan metin rengi **bellek** penceresi.|  
 |**Sayı**|Bir sayı kodda gerçek bir sayısal değer temsil eder.|  
 |**İşleci**|İşleçler gibi +, -, ve! =.|  

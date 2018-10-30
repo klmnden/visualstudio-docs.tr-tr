@@ -27,12 +27,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4dd3e3b44bfdf9a3c9f0f144d984d1408046e80
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 751ae59a5a41d22728dd31f71491ec0d9a93ea19
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143339"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220267"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Yazı Tipleri ve Renkler, Ortam, Seçenekler İletişim Kutusu
 **Yazı tipleri ve renkler** sayfasının **seçenekleri** iletişim kutusu, çeşitli kullanıcı arabirimi öğeleri için özel bir yazı tipi ve renk şeması tümleşik geliştirme ortamında (IDE) oluşturmanıza olanak sağlar. Bu iletişim kutusuna tıklayarak erişebilirsiniz **Araçlar / Seçenekler**seçip **ortam / yazı tipleri ve renkler**. Bu sayfa, listede görünmüyorsa, seçin **tüm ayarları göster** içinde **seçenekleri** iletişim kutusu.
@@ -142,7 +142,7 @@ ms.locfileid: "50143339"
 |**Anahtar sözcüğü**|Ayrılmış anahtar sözcükler belirtilen dil için. Örneğin: sınıf ve ad alanı.|
 |**Bellek adresi**|Adres sütunu içinde görüntülemek için kullanılan metin rengi **bellek** penceresi.|
 |**Bellek değişti**|İçinde değişen verileri görüntülemek için kullanılan metin rengi **bellek** penceresi.|
-|**Bellek verileri**|M içindeki verileri görüntülemek için kullanılan metin rengi**ellek** penceresi.|
+|**Bellek verileri**|İçindeki verileri görüntülemek için kullanılan metin rengi **bellek** penceresi.|
 |**Bellek okunamaz**|İçindeki okunamaz bellek alanları görüntülemek için kullanılan metin rengi **bellek** penceresi.|
 |**Sayı**|Bir sayı kodda gerçek bir sayısal değer temsil eder.|
 |**İşleci**|İşleçler gibi +, -, ve! =.|

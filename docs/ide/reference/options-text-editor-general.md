@@ -49,12 +49,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4405e50a2bc264c88c073980da77fafbedf49cbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3cb2a939fb569ca9c50e6334fa7b836a6953dca4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830671"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219165"
 ---
 # <a name="options-text-editor-general"></a>Seçenekler, Metin Düzenleyici, Genel
 
@@ -94,14 +94,6 @@ Bu onay kutusu seçildiğinde, metin alanı düzenleyicinin sol kenarda dikey bi
 ### <a name="indicator-margin"></a>Belirteç kenar boşluğu
 
 Bu onay kutusu seçildiğinde, metin alanı düzenleyicinin sol kenarı dışında dikey bir kenar boşluğu görüntüler. Bu kenar boşluğu tıkladığınızda bir simge ve metin için ilgili araç ipucu görünür. Örneğin, kesme noktası veya görev listesini kısayolları gösterge kenar boşluğunda görünür. Gösterge kenar boşluğu bilgi yazdırılmaz.
-
-### <a name="vertical-scroll-bar"></a>Dikey kaydırma çubuğu
-
-Seçili olduğunda, düzenleyici görüntüleme alanı dışında kalan view öğeleri yukarı ve aşağı kaydırarak olanak tanıyan bir dikey kaydırma çubuğu görüntüler. Dikey kaydırma çubuklarının kullanılamaz, Page Up, Page Down ve imleç anahtarları kaydırmak için kullanabilirsiniz.
-
-### <a name="horizontal-scroll-bar"></a>Yatay kaydırma çubuğu
-
-Seçili olduğunda, düzenleyici görüntüleme alanı dışında kalan view öğeleri yan yana kaydırmak izin veren bir yatay kaydırma çubuğu görüntüler. Yatay kaydırma çubukları kullanılamıyorsa, kaydırmak için imleç tuşlarını kullanabilirsiniz.
 
 ### <a name="highlight-current-line"></a>Geçerli satırı Vurgula
 

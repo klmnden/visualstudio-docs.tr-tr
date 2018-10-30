@@ -11,6 +11,7 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.Wrapping
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.General
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.Formatting.General
 helpviewer_keywords:
 - formatting options [C#]
 - Text editor Options dialog box, formatting
@@ -19,14 +20,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: bcd63e9a155843d715e63fb6514e22f356847d2f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 542d14e5913b1537d5e5e6aabb7264cd15add793
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821389"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220527"
 ---
-# <a name="options-text-editor-c-formatting"></a>Seçenekler, Metin Düzenleyici, C++, Biçimlendirme
+# <a name="options-text-editor-c-code-style-formatting"></a>Seçenekler, metin düzenleyici, C#, kod stili, biçimlendirme
 
 Kullanım **biçimlendirme** seçenekler sayfası, Kod düzenleyicisinde kod biçimlendirme seçeneklerini ayarlamak için. Bu seçenekler sayfası erişmek için kendi seçtikleri **Araçları** > **seçenekleri**. İçinde **seçenekleri** iletişim kutusunda **metin düzenleyici** > **C#** > **kod stili**  >  **Biçimlendirme**.
 

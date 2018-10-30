@@ -1,7 +1,7 @@
 ---
 title: Python kodu biçimlendirme
 description: Aralık, deyimleri, sarmalama ve açıklamaları da dahil olmak üzere Visual Studio'da Python kodu otomatik olarak yeniden biçimlendirmek nasıl.
-ms.date: 06/26/2018
+ms.date: 10/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c8638f9398be823b05d2575157c1992e230674f9
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: b0ce6b5db57b4f6140fb164391ebf5c07e623baf
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008674"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219555"
 ---
 # <a name="format-python-code"></a>Python kodu biçimlendirme
 

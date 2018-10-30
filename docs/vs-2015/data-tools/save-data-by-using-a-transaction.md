@@ -22,12 +22,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d84780565d1761e75de7be9e5996a908d399f5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4c73dd654a2d48be963e592d94685c74d3a16057
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233792"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219581"
 ---
 # <a name="save-data-by-using-a-transaction"></a>Bir işlemi kullanarak veri kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Kullanarak bir işlemde veri kaydetme <xref:System.Transactions> ad alanı. Kull
   
 1.  Üzerinde **proje** menüsünde **Başvuru Ekle**.  
   
-2.  Üzerinde **.NET** sekme (**SQL Server** SQL Server projeleri için sekmesinde), select **System.Transactions**ve thenselect**Tamam**.  
+2.  Üzerinde **.NET** sekme (**SQL Server** SQL Server projeleri için sekmesinde), select **System.Transactions**ve ardından **Tamam**.  
   
      System.Transactions.dll referansı projeye eklenir.  
   

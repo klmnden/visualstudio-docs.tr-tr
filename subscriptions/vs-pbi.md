@@ -9,12 +9,12 @@ description: Seçili Visual Studio abonelikleri ile bulunan Power BI Pro aboneli
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 739598d8783a6ba0eb7930b5efff6c018eed942a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 50c9b39772e65ba00f859254df4a993870f08023
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894566"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219542"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro Visual Studio abonelikleri
 
@@ -80,7 +80,7 @@ Power BI Pro kullanmak için mevcut bir hesabı kullanarak oturum açın veya bi
 | Visual Studio Dev Essentials | Yok  | Yok |Yok|
 | Visual Studio Enterprise (aylık bulut) | Azure                                       | Yok                                  |Yok|
 
-<sup>1</sup>*içerir: değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), BizSpark, MCT yazılım ve geliştirici Hizmetleri, MCT yazılım ve hizmet için Microsoft değerli Professional (MVP), bölge Yöneticisi (RD).    Dışlar: Microsoft iş ortağı ağı (MPN) FTE, düşünün.*
+<sup>1</sup>*içerir: değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), BizSpark, MCT yazılım ve geliştirici Hizmetleri, MCT yazılım ve hizmet için Microsoft değerli Professional (MVP), bölge Yöneticisi (RD).  Dışlar: Microsoft iş ortağı ağı (MPN) FTE, düşünün.*
 
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
@@ -92,9 +92,24 @@ Y: avantajı ücretsizdir, ancak Ücretli siparişleri işlemek için kullanıla
 - Kredi kartı.  Bir kredi kartı numarası sağlarsanız, kartınız ücretlendirilmez. 
 - Fatura.  Ödeme türü olarak "Fatura" seçeneğini belirlerseniz, bir kredi kartı numarası gerekmez.  Aralık için "yıllık" de ayarlayabilirsiniz.  Böylece, size fatura sizin için hazır olduğunu bildiren tek bir e-posta alırsınız.  Fatura tutarı 0,00 ABD Doları olacaktır.  
 
-### <a name="q--can-the-power-bi-pro-benefit-included-in-my-subscription-be-used-in-a-production-environment"></a>Aboneliğimde bulunan Power BI Pro avantajı, bir üretim ortamında kullanılan miyim?
+### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>S: bir üretim ortamında kullanım için abonelik Lisanslarımı bulunan Power BI Pro teklifi var mı?
 C: Evet.  
 
+### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>S: Power BI Pro etkinleştirmek çalıştığımda "Bir iş hesabıyla zaten" bir ileti alırsınız.  Avantajı kullanabilir miyim?
+C: Evet.  İleti üzerinde bir yöneticisiniz değil etkin Office 365 kiracıları zaten olan bir etki alanına oturum olduğunu gösterir.  Power BI Pro eklemek için bir kiracı için Kiracı yönetici olması gerekir.  Bu sorunu çözmek için kendi Kiracı oluşturmak için aşağıdaki adımları izleyin.
+1.  Zaten bir iş hesabıyla sahip ileti gördüğünüzde tıklayın **yeni bir hesap oluşturun**.
+
+2.  Sonraki ekranda, iletişim bilgilerinizi girin ve tıklayın **sonraki**.
+
+3.  Kullanıcı kimliği ve parola oluşturun.  Ücretsiz tekliften yararlanabilmeniz için seçtiğinizden emin olun **. onmicrosoft.com** etki alanı olarak. Tıklayın **Hesabımı Oluştur**.
+    > [!div class="mx-imgBorder"]
+    > ![Power BI Pro avantajı özel Kiracı kimliği oluşturma](_img/vs-pbi/vs-pbi-work-userid.png)
+    
+4.  İşlemdeki adımların geri kalan adım 6 ile başlayarak, makalenin gövdesinde listelenenlerle aynıdır.
+
+
+### <a name="q--im-on-a-government-domain--can-i-use-the-benefit"></a>S: bir kamu etki alanında yaşıyorum.  Avantajı kullanabilir miyim? 
+C: Hayır.  Power BI Pro avantajı, kiracılara bir kamu etki alanındaki eklenemez. 
 
 ## <a name="support-resources"></a>Destek kaynakları
 -  Power BI Pro yardıma mı ihtiyacınız var?
@@ -103,3 +118,6 @@ C: Evet.
     - En sık karşılaşılan sorunlar keşfedin, topluluktan yardım alın veya üzerinde bir destek bileti gönderin [destek sayfasını](https://powerbi.microsoft.com/support/).
 -  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
 -  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Sonraki adımlar
+Power BI Pro avantajınızı etkinleştirmek için ziyaret edin [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)

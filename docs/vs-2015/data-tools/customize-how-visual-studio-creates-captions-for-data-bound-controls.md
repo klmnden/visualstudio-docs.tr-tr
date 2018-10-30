@@ -22,12 +22,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bf3d47c4e14606a4d3cc3006735fbe04af809600
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6906e68c74bbb718f9bfc041ab35075b3f9b0aa
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195617"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220192"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Visual Studio'nun verilere bağlı denetimler için başlık oluşturma biçimini özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,15 +83,15 @@ ms.locfileid: "49195617"
   
 10. Sağ **veri tasarımcıları** düğümünü ve yeni bir **dize değeri** adlı `SmartCaptionSuffix`.  
   
-11. Sağ **SmartCaptionExpression** öğesi ekleyin ve seçin**Değiştir**.  
+11. Sağ **SmartCaptionExpression** öğesi ekleyin ve seçin **Değiştir**.  
   
 12. İstediğiniz normal ifade girin **veri kaynakları** penceresini kullanın.  
   
-13. Sağ **SmartCaptionReplacement** öğesi ekleyin ve seçin**Değiştir**.  
+13. Sağ **SmartCaptionReplacement** öğesi ekleyin ve seçin **Değiştir**.  
   
 14. Değiştirme girin, normal ifade ile eşleşen desenlerini görüntülemek istediğiniz şekilde biçimlendirilmiş bir dize.  
   
-15. Sağ **SmartCaptionSuffix** öğesi ekleyin ve seçin**Değiştir**.  
+15. Sağ **SmartCaptionSuffix** öğesi ekleyin ve seçin **Değiştir**.  
   
 16. Açıklamalı alt yazı sonunda görünmesini istediğiniz herhangi bir karakter girin.  
   
@@ -119,11 +119,11 @@ ms.locfileid: "49195617"
   
 10. Sağ **veri tasarımcıları** düğümünü ve yeni bir **dize değeri** adlı `SmartCaptionSuffix`.  
   
-11. Sağ **SmartCaptionExpression** öğesi ekleyin ve seçin**Değiştir**.  
+11. Sağ **SmartCaptionExpression** öğesi ekleyin ve seçin **Değiştir**.  
   
 12. Girin `(.*)` değeri. Bu, tüm dizeyi eşleştirir.  
   
-13. Sağ **SmartCaptionReplacement** öğesi ekleyin ve seçin**Değiştir**.  
+13. Sağ **SmartCaptionReplacement** öğesi ekleyin ve seçin **Değiştir**.  
   
 14. Girin `$1` değeri. Bu dizenin değişmeden kalır, böylece tüm dize olan eşleşen değerle değiştirir.  
   

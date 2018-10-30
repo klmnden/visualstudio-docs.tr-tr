@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: dac26a7846f4a6b611c53e9cd537d112a8205d2f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9a9b2e248e4f10e9b5d3f045c67a9622edd2c2b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836794"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220023"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Komut Satırından ClickOnce Uygulamalarını Derleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ ms.locfileid: "49836794"
   
 5. Türü `msbuild /target:publish`  
   
-   Yukarıdaki adımları tam üretecektir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] projenizin P adlı bir alt uygulama dağıtımı**Yayımla**. CmdLineDemo.Application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım bildirimi. CmdLineDemo_1.0.0.0 klasörü CmdLineDemo.exe dosyaları CmdLineDemo.exe.manifest ve dosyalarını içeren [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi. Setup.exe olduğundan, varsayılan olarak yüklemek için yapılandırılmış önyükleyici [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. DotNetFX klasörü için yeniden dağıtılabilir dosyaları içeren [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Web üzerinden ya da UNC veya CD/DVD aracılığıyla uygulamanızı dağıtmak için gereken dosya kümesinin tamamını budur.  
+   Yukarıdaki adımları tam üretecektir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] projenizin adlı bir alt uygulama dağıtımı **Yayımla**. CmdLineDemo.Application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım bildirimi. CmdLineDemo_1.0.0.0 klasörü CmdLineDemo.exe dosyaları CmdLineDemo.exe.manifest ve dosyalarını içeren [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi. Setup.exe olduğundan, varsayılan olarak yüklemek için yapılandırılmış önyükleyici [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. DotNetFX klasörü için yeniden dağıtılabilir dosyaları içeren [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Web üzerinden ya da UNC veya CD/DVD aracılığıyla uygulamanızı dağıtmak için gereken dosya kümesinin tamamını budur.  
   
 ## <a name="publishing-properties"></a>Yayımlama özellikleri  
  Yukarıdaki yordamlarda uygulama yayımladığınızda, aşağıdaki özellikler, Yayımla Sihirbazı tarafından proje dosyanıza eklenir. Bu özellikleri doğrudan etkilemek nasıl [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama oluşturulur.  

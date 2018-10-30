@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e1210d95a73038ea21c0455e944eb46b1791b426
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 683d0e75ca5e925ccd7bf56ceffb0e28da844cc5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844522"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220332"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>İzlenecek yol: bir SharePoint proje öğesi türünü genişletme
   Kullanabileceğiniz **iş verileri bağlantı modeli** SharePoint'te İş Verileri Bağlantısı (BDC) hizmeti için bir model oluşturmak için proje öğesi. Varsayılan olarak, bu proje öğesini kullanarak model oluşturduğunuzda modeldeki veriler kullanıcılara görüntülenmez. Ayrıca, kullanıcıların verileri görüntülemesini sağlamak için SharePoint'te bir dış liste oluşturmanız gerekir.  
@@ -220,7 +220,7 @@ ms.locfileid: "49844522"
   
 5.  İçinde **adı** kutusuna **SharePointProjectTestBDC**ve ardından **Tamam** düğmesi.  
   
-6.  SharePoint Özelleştirme Sihirbazı'nda hata ayıklama için kullanmak istediğiniz sitenin URL'sini girin **Grup çözümü olarak Dağıt**ve ardından **son**düğmesi.  
+6.  SharePoint Özelleştirme Sihirbazı'nda hata ayıklama için kullanmak istediğiniz sitenin URL'sini girin **Grup çözümü olarak Dağıt**ve ardından **son** düğmesi.  
   
 7.  SharePointProjectTestBDC projesi için kısayol menüsünü açın, **Ekle**ve ardından **yeni öğe**.  
   

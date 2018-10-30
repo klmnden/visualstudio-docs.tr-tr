@@ -14,14 +14,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7e492996a194c6602af3ec412b86f7477ef233e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d69db4619aaa3b0f2dde4ab5daac0bd31e958975
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928717"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220114"
 ---
 # <a name="properties-of-image-shapes"></a>Görüntü Şekillerinin Özellikleri
+
 Resim şekilleri, etki alanı sınıfları oluşturulan tasarımcıda nasıl göründüğünü belirlemek için kullanabilirsiniz. Bir resim şekli ayarlayarak tanımlarsanız `Image` önceden tanımlanmış bir görüntü dosyasına sınıfın özelliği. Aşağıdaki biçimleri desteklenir:
 
 - .gif
@@ -38,11 +39,11 @@ Resim şekilleri, etki alanı sınıfları oluşturulan tasarımcıda nasıl gö
 
 - .PNG
 
-  Görüntü dosyaları gibi tasarımcı kaynak dosyaları bulunan varsayılan olarak, **kaynakları**klasöründe **Dsl** proje.
+Görüntü dosyaları gibi tasarımcı kaynak dosyaları bulunan varsayılan olarak, **kaynakları** klasöründe **Dsl** proje.
 
-  Daha fazla bilgi için [etki alanına özgü bir dili tanımlama nasıl](../modeling/how-to-define-a-domain-specific-language.md). Bu özellikler kullanma hakkında daha fazla bilgi için bkz. [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Daha fazla bilgi için [etki alanına özgü bir dili tanımlama nasıl](../modeling/how-to-define-a-domain-specific-language.md). Bu özellikler kullanma hakkında daha fazla bilgi için bkz. [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-  Resim şekilleri aşağıdaki tabloda listelenen özelliklere sahiptir.
+Resim şekilleri aşağıdaki tabloda listelenen özelliklere sahiptir.
 
 |Özellik|Açıklama|Varsayılan|
 |-|-|-|

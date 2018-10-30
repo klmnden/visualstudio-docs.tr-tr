@@ -12,54 +12,54 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8377ed73479441272b2f1910767fa7e2a4ff0196
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c06a2328987201198bc2d5d15a4788d2a821d7b6
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475645"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219126"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Nasıl Yapılır: .NET Framework Kaynağında Hata Ayıklama
-.NET Framework kaynak hata ayıklamak için kod simgelerini hata ayıklama için erişimi olmalıdır. Ayrıca, .NET Framework kaynağına atlama etkinleştirmeniz gerekir.  
+.NET Framework kaynağında hata ayıklamak için kod için hata ayıklama için erişimi olmalıdır. Ayrıca .NET Framework kaynağına ilerlemesine adımlamak gerekir.  
   
- .NET Framework etkinleştirebilirsiniz atlama ve içinde indirme simgesi **seçenekleri** iletişim kutusu. Sembol indirme etkinleştirdiğinizde, simgeler hemen indirin ya da daha sonra yükleme seçeneği yalnızca etkinleştirebilirsiniz seçebilirsiniz. Simgeler hemen yüklemeyin simgeleri uygulamanızın hatalarını ayıklama başlangıç sonraki saati indirilir. El ile yükleme yoluyla da yapabilirsiniz **modülleri** penceresi veya **çağrı yığını** penceresi.  
+ .NET Framework etkinleştirebilirsiniz atlama ve sembol karşıdan **seçenekleri** iletişim kutusu. Simge indirmeyi etkinleştirdiğinizde, simgeleri hemen indirmeyi veya yalnızca daha sonra indirme seçeneğini etkinleştirmek seçebilirsiniz. Simgeleri hemen karşıdan yüklemezseniz, uygulamanızın hatalarını ayıklama sonraki defa başlattığınızda semboller indirilir. Ayrıca el ile indirilerek yapabilirsiniz **modülleri** penceresi veya **çağrı yığını** penceresi.  
   
 ### <a name="to-enable-net-framework-source-debugging"></a>.NET Framework kaynak hata ayıklamayı etkinleştirmek için  
   
-1.  Üzerinde **Araçları** menüsünde tıklatın **seçeneği**s.  
+1.  Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.  
   
-2.  İçinde **seçenekleri** iletişim kutusu, tıklatın **hata ayıklama** kategorisi.  
+2.  İçinde **seçenekleri** iletişim kutusu, tıklayın **hata ayıklama** kategorisi.  
   
-3.  İçinde **genel** kutusunda, ayarlamak **etkinleştirmek .NET Framework kaynağı atlama.**  
+3.  İçinde **genel** kutusu olarak ayarlayın **etkinleştirme .NET Framework kaynak Adımlamayı.**  
   
-    1.  Etkin sadece kendi kodumu olsaydı, bir uyarı iletişim kutusu, sadece kendi kodumu şimdi devre dışı olduğunu bildirir. **Tamam**'ı tıklatın.  
+    1.  Yalnızca kendi kodum tablonuz varsa bir uyarı iletişim kutusu, yalnızca kendi kodum şimdi devre dışı olduğunu bildirir. **Tamam**'ı tıklatın.  
   
-    2.  Ayarlanmış bir simge önbellek konumu yok, başka bir uyarı iletişim kutusunda varsayılan bir simge önbellek konumu şimdi ayarlandığını söyler. **Tamam**'ı tıklatın.  
+    2.  Bir sembol önbelleği konumunun ayarlanmış yoksa başka bir uyarı iletişim kutusunda varsayılan sembol önbelleği konumunun artık ayarlanmış olduğunu bildirir. **Tamam**'ı tıklatın.  
   
-4.  Altında **hata ayıklama** kategorisini tıklatın **simgeleri**.  
+4.  Altında **hata ayıklama** kategorisini tıklatın **sembolleri**.  
   
-5.  Simgeler önbellek konumunu değiştirmek isterseniz, konumu Düzenle **önbelleğe simgeleri bu dizinde** veya'ı tıklatın **Gözat** bir konum seçmek için.  
+5.  Sembol önbellek konumunu değiştirmek istiyorsanız, içinde konumu düzenleyin **önbellek sembolleri bu dizinde** veya **Gözat** bir konum seçin.  
   
-6.  Simgeler hemen karşıdan yüklemek istiyorsanız, **yük simgeleri konumları kullanarak**.  
+6.  Simgeleri hemen karşıdan yüklemek isterseniz, **yukarıdaki konumları kullanarak simgeleri Yükle**.  
   
-     Bu düğme Tasarım modunda kullanılabilir değildir, ancak hata ayıklama sırasında kullanılabilir.  
+     Bu düğme Tasarım modunda mevcut değildir, ancak hata ayıklarken kullanılabilir.  
   
-     Simgeleri şimdi indirmek seçmezseniz simgeleri programınızı hata ayıklamayı Başlat sonraki zaman otomatik olarak yüklenir.  
+     Sembolleri şimdi karşıdan seçmezseniz, programınızın hatalarını ayıklamayı sonraki defa başlattığınızda semboller otomatik olarak indirilir.  
   
-7.  Tıklatın **Tamam** kapatmak için **seçenekleri** iletişim kutusu.  
+7.  Tıklayın **Tamam** kapatmak için **seçenekleri** iletişim kutusu.  
   
-### <a name="to-load-framework-symbols-using-the-modules-window"></a>Modüller penceresi kullanarak Framework sembol yüklemek için  
+### <a name="to-load-framework-symbols-using-the-modules-window"></a>Modüller penceresini kullanarak çerçeve simgeleri yüklemek için  
   
-1.  İçinde **modülleri** penceresi (hata ayıklama sırasında seçin **hata ayıklama** > **Windows** > **modülleri**), simgeler yüklenmez modülü sağ tıklatın. Simgeler yüklerse veya bakarak değil tarafından söyleyebilir **simgeleri durumu** sütun.  
+1.  İçinde **modülleri** penceresini (hata ayıklama sırasında seçin **hata ayıklama** > **Windows** > **modülleri**), bir modül için semboller yüklü olmadığından sağ tıklayın. Sembol yüklenmedi veya bakarak değil söyleyebilirsiniz **simge durumu** sütun.  
   
-2.  İşaret **simge ayarlarını** tıklatıp **Microsoft simge sunucuları** simgeleri Microsoft Genel semboller sunucusundan karşıdan yüklemek için. Veya modülü sağ tıklatın ve seçin **yük simgeleri** daha önce depoladığınız simgeleri bir dizinden yüklenecek.  
+2.  İşaret **sembol ayarları** tıklatıp **Microsoft sembol sunucuları** Microsoft ortak semboller sunucusundan semboller indirmek için. Modülü sağ tıklatın ve seçin **yük sembolleri** daha önce depoladığınız sembolleri bir dizinden yüklemek için.  
   
-### <a name="to-load-framework-symbols-using-the-call-stack-window"></a>Çağrı yığını penceresini kullanarak Framework sembol yüklemek için  
+### <a name="to-load-framework-symbols-using-the-call-stack-window"></a>Çağrı yığını penceresini kullanarak çerçeve simgeleri yüklemek için  
   
-1.  İçinde **çağrı yığını** penceresinde, kendisi için simgeler yüklenmedi çerçeve bir sağ tıklatın. Çerçeve çıkışı soluk.  
+1.  İçinde **çağrı yığını** penceresinde, simgelerin yüklenmediği Çerçeveyi sağ tıklatın. Çerçeve soluk görünecektir.  
   
-2.  İşaret **simge ayarlarını** tıklatıp **Microsoft simge sunucuları**, veya modülü sağ tıklatın ve seçin **simge yolu**.  
+2.  İşaret **sembol ayarları** tıklatıp **Microsoft sembol sunucuları**, modülü sağ tıklatın ve seçin **sembol yolu**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)   
- [Simge (.pdb) belirtin ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [Simge (.pdb) ve Kaynak Dosyaları Belirtme](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

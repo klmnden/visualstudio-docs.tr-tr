@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ac52f3b393c411f58c27091fbbf3940f20f5dc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1bb41fbf0fc4a41a5cf45d68f6453f2ef6ebdd6c
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930836"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219945"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC Hata Ayıklama Teknikleri
 MFC programı hata ayıklaması yapıyorsanız, bu hata ayıklama teknikleri yararlı olabilir.  
@@ -440,7 +440,7 @@ pMyPerson->Dump( afxDump );
 
    4.  İçinde **Ayarları Şuradan Kopyala:** listesinde **yayın**.  
 
-   5.  Tıklayın **Tamam** kapatmak için **yeni proje yapılandırması**iletişim kutusu.  
+   5.  Tıklayın **Tamam** kapatmak için **yeni proje yapılandırması** iletişim kutusu.  
 
    6.  Kapat **Configuration Manager** iletişim kutusu.  
 

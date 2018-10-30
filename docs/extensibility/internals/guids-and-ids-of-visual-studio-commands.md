@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67c773fcd6afe5953d47e7f563189263d1092444
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 35e2c354293679d9cb6044b0c5f21b77aadb7f52
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926553"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220166"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUID'leri ve kimlikleri, Visual Studio komutları
 Visual Studio tümleşik geliştirme ortamında (IDE) dahil komutların GUID ve ID değerleri Visual Studio SDK'ın bir parçası olarak yüklenen .vsct dosyaları tanımlanır. Daha fazla bilgi için [IDE tanımlı komutlar, menüler ve gruplar](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -57,7 +57,7 @@ Visual Studio tümleşik geliştirme ortamında (IDE) dahil komutların GUID ve 
   
 -   Gibi bir altı çizili karakter içeren bir menü öğelerini **yazdırma** komutunu **dosya** Burada, menü *P* çizilir.  
   
-     Ve işareti tarafından öncelenen karakterleri (&) karakter menü öğesi adları, görüntülenen altı çizili olarak. Ancak, *.vsct* dosyaları, özel karakterler belirtmek için (&) karakteri kullanır ve görüntülenecek ve işareti olarak yazılmalıdır olduğunu gerektiren XML'de yazılır  *&amp;amp;*. Bu nedenle bir *.vsct* dosyası **P**azdır komut görünür olarak  *&amp;amp; Yazdırma*.  
+     Ve işareti tarafından öncelenen karakterleri (&) karakter menü öğesi adları, görüntülenen altı çizili olarak. Ancak, *.vsct* dosyaları, özel karakterler belirtmek için (&) karakteri kullanır ve görüntülenecek ve işareti olarak yazılmalıdır olduğunu gerektiren XML'de yazılır  *&amp;amp;*. Bu nedenle bir *.vsct* dosyası **yazdırma** komut görünür olarak  *&amp;amp; Yazdırma*.  
   
 -   Dinamik metin sahip komutları **Kaydet** \<geçerli dosya\>ve dinamik olarak üretilen öğeler gibi menü öğeleri üzerinde **son kullanılan dosyalar** listesi.  
   

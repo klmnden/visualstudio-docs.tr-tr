@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f76c88cafd1ce0e448d32faa902f1cebcf3430f8
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: abc61f0e07ed1e22d0ec3b2c8fb15d66c9eea3cd
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151021"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220455"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Nasıl yapılır: kullanım MSBuild proje SDK'ları
 
@@ -101,7 +101,7 @@ Projenin değerlendirme sırasında [!INCLUDE[vstecmsbuild](../extensibility/int
    Bu çözümleyici proje SDK'ları gibi bulur `Microsoft.NET.Sdk` ve `Microsoft.NET.Sdk.Web` ürünün bir parçası olduğu.
 3. MSBuild ile yüklenmiş SDK'ları çözümler varsayılan çözümleyici.
 
-SDK'sı NuGet tabanlı çözümleyici destekleyen bir sürüm belirtme, [global.json](https://docs.microsoft.com/en-us/dotnet/core/tools/global-json) proje SDK sürümü tek bir yerde yerine her bir proje denetlemesine olanak sağlar:
+SDK'sı NuGet tabanlı çözümleyici destekleyen bir sürüm belirtme, [global.json](https://docs.microsoft.com/dotnet/core/tools/global-json) proje SDK sürümü tek bir yerde yerine her bir proje denetlemesine olanak sağlar:
 
 ```json
 {

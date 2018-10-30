@@ -1,7 +1,7 @@
 ---
 title: CookieCutter uzantısını Python için
 description: Visual Studio şablonları Python kodu için keşfetmek ve bu şablonlardan projeler oluşturmak için grafik Cookiecutter uzantısını da destekler.
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 841606c8b0f39f730d78a53ccaa8e1de96feb109
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: b7a040b5ab12c1f940996ea26c27a6136ab81f2f
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586478"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219698"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Cookiecutter uzantısını kullanma
 
@@ -103,7 +103,7 @@ Bu işleme hakkında ek meta verilerinde belirterek artırmak mümkündür, *coo
 | URL | URL gösteren bir araç ipucu ile bir köprü etiketi değiştirir. Köprü metnine tıklayarak, bu URL için kullanıcının varsayılan tarayıcı açılır. |
 | Seçici | Bir değişken için düzenleyicinin özelleştirme yapmanıza izin verir. Şu anda desteklenen aşağıdaki Seçici:<ul><li>`string`: Standart metin kutuları, dizeler için varsayılan.</li><li>`list`: Standart Kombo kutusu listeleri için varsayılan.</li><li>`yesno`: Arasında seçim yapma birleşik giriş kutusu `y` ve `n`, dizeleri.</li><li>`odbcConnection`: Metin kutusunda bir **...**  düğme bir veritabanı bağlantısı iletişim kutusunu açar.</li></ul> |
 
-Örnek: 
+Örnek:
 
 ```json
 {
@@ -138,7 +138,7 @@ Cookiecutter denilen bir özelliği olan *Post-Generate kancaları* dosyalar olu
 
 Bu senaryolar izin vermek için Visual Studio genişletilmiş meta verilerinde arar *cookiecutter.json* oluşturulan dosyaları kullanıcı açıldıktan sonra çalıştırılacak komutları açıklayan **Çözüm Gezgini** veya sonra dosyaları mevcut bir projeye eklenir. (Kullanıcı temizleyerek çalışan görevlerin dışında yeniden kaydolmayı seçebilirsiniz **tamamlanma ek görevleri çalıştırma** şablon seçeneklerinde.)
 
-Örnek: 
+Örnek:
 
 ```json
 "_visual_studio_post_cmds": [
@@ -190,7 +190,7 @@ Bağımsız değişkenler, diğer Cookiecutter değişkenlere başvurabilir. İ�
 
 Unutmayın `Python.InstallProjectRequirements` komut dosyaları var olan bir projeye eklerken çalışır. Bu sınırlama komutu Python projede tarafından işlendiğinden var **Çözüm Gezgini**, ve proje hata iletilerini yok **Çözüm Gezgini**  -   **Klasör görünümü**. Sınırlama win gelecek sürümlerinden kaldırılacak umuyoruz (ve daha iyi **klasör görünümü** genel destekler).
 
-## <a name="troubleshooting"></a>Sorun Giderme
+## <a name="troubleshooting"></a>Sorun giderme
 
 ### <a name="error-loading-template"></a>Hata yükleme şablonu
 

@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2d4183a5bcfac62e9f6a1ad1509078bc6e534e68
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: c01af7a02dc8d6909b878b22dc3d40d0f3e0dfce
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174403"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220345"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Bir veritabanına (birden çok tablo) veri kaydetme
 Uygulama geliştirmede en sık karşılaşılan senaryolardan biri, bir Windows uygulamasındaki bir formdaki verileri görüntülemek, verileri düzenleme ve güncelleştirilmiş veriyi veritabanına geri gönder sağlamaktır. Bu izlenecek yolda kayıtlarını düzenleyin ve değişiklikleri veritabanına geri kaydedin gösterir ve ilgili iki tablodan verileri görüntüleyen bir form oluşturur. Bu örnekte `Customers` ve `Orders` Northwind örnek veritabanındaki tablolar.
@@ -86,7 +86,7 @@ Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını 
 
 1.  Üzerinde **veri** menüsünde **veri kaynaklarını Göster**.
 
-2.  İçinde **veri kaynakları** penceresinde**yeni veri kaynağı Ekle** başlatmak için **veri kaynağı Yapılandırma Sihirbazı**.
+2.  İçinde **veri kaynakları** penceresinde **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı Yapılandırma Sihirbazı**.
 
 3.  Üzerinde **bir veri kaynağı türü seçin** ekranındayken **veritabanı**ve ardından **sonraki**.
 
@@ -102,7 +102,7 @@ Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını 
 
 6.  Üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet**seçin **sonraki**.
 
-7.  Üzerinde **veritabanı nesnelerinizi seçin**ekranında, **tabloları** düğümü.
+7.  Üzerinde **veritabanı nesnelerinizi seçin** ekranında, **tabloları** düğümü.
 
 8.  Seçin **müşteriler** ve **siparişler** tablolar ve ardından **son**.
 

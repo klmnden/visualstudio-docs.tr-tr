@@ -1,7 +1,7 @@
 ---
 title: Python eğitmen, 6. adım, iş Git ile çalışma
 description: 6. adımını bir çekirdek kılavuzun Visual Studio'nun Git ile ilgili özellikleri kapsayan Visual Studio'da Python.
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b75b87af9df8487144aa0f4f7d7a96c31d2b38a1
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e958046bb5574cb1a9b9799482fa3c96c203b013
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549291"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219412"
 ---
 # <a name="step-6-work-with-git"></a>6. adım: Git ile çalışma
 

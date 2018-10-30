@@ -24,12 +24,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 150105de459912716cd3cfccff9efb35927c7d49
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56e14d66275bd961829fc09e06f7d5e99dbcc2c4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823508"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218905"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Parametreleştirilmiş TableAdapter sorguları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,10 +67,10 @@ Parametreli bir sorgu, WHERE yan tümcesi içinde sorgu koşulları karşılayan
   
 1. Formda açın **Windows Form Tasarımcısı**.  
   
-2. Üzerinde **veri** menüsünde**Sorgu Ekle**veya**veri akıllı etiketler**.  
+2. Üzerinde **veri** menüsünde **Sorgu Ekle** veya **veri akıllı etiketler**.  
   
    > [!NOTE]
-   >  Varsa **Sorgu Ekle** kullanılamaz **veri** menüsü, görüntüler veri kaynağı, formda bir denetim için Parametreleştirme eklemek için seçin. Form verileri görüntüler, örneğin, bir <xref:System.Windows.Forms.DataGridView> denetlemek, onu seçin. Form bireysel denetimlerinde verileri görüntülüyorsa, herhangi bir veriye bağlı denetim seçin.  
+   > Varsa **Sorgu Ekle** kullanılamaz **veri** menüsü, görüntüler veri kaynağı, formda bir denetim için Parametreleştirme eklemek için seçin. Form verileri görüntüler, örneğin, bir <xref:System.Windows.Forms.DataGridView> denetlemek, onu seçin. Form bireysel denetimlerinde verileri görüntülüyorsa, herhangi bir veriye bağlı denetim seçin.  
   
 3. İçinde **Select veri kaynağı tablosu** alanı Ekle'yi seçin istediğiniz tablethat Parametreleştirme için.  
   
@@ -82,7 +82,7 @@ Parametreli bir sorgu, WHERE yan tümcesi içinde sorgu koşulları karşılayan
   
 5. İçinde **sorgu metni** parametreleri alan bir sorgu yazın.  
   
-6. Seçin**Tamam**.  
+6. Seçin **Tamam**.  
   
     Bir giriş parametresi için Denetim ve bir **yük** düğmesi, formda eklenir bir <xref:System.Windows.Forms.ToolStrip> denetimi.  
   
@@ -105,7 +105,7 @@ Parametreli bir sorgu, WHERE yan tümcesi içinde sorgu koşulları karşılayan
   
 1.  İçinde **veri kümesi Tasarımcısı**, null parametre değerlerini kabul etmesi gerekir TableAdapter sorgu seçin.  
   
-2.  İçinde **özellikleri** penceresinde**parametreleri**. Ardından üç nokta simgesine basın (**...** ) açmak için düğmeyi **parametre koleksiyon Düzenleyicisi**.  
+2.  İçinde **özellikleri** penceresinde **parametreleri**. Ardından üç nokta simgesine basın (**...** ) açmak için düğmeyi **parametre koleksiyon Düzenleyicisi**.  
   
 3.  Null değerlere izin verir parametreyi seçin ve ayarlayın **AllowDbNull** özelliğini `true`.  
   

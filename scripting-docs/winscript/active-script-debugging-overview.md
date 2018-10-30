@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 447a8faf6e62448e7e8ce9ee8d7d8097fba2dd7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d8624c1405931edefe2e1e53e579ad28a7b238f1
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919370"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220228"
 ---
 # <a name="active-script-debugging-overview"></a>Etkin Komut Dosyası Hata Ayıklamaya Genel Bakış
 Etkin betik hata ayıklama arabirimleri, dilden bağımsız, konak nötr hata ayıklamaya izin verecek ve çok çeşitli geliştirme ortamlarında destekler.  
@@ -33,31 +33,30 @@ Etkin betik hata ayıklama arabirimleri, dilden bağımsız, konak nötr hata ay
   
  Aşağıdaki alt bölümlerde, her anahtar bileşen etkin hata ayıklama ve ilişkili arabirimlerinden ele alınmıştır. Ancak, devam etmeden önce etkin hata ayıklama birkaç temel kavramları tanımlanmalıdır:  
   
- Ana bilgisayar uygulaması  
+ **Ana bilgisayar uygulaması**  
  Betik barındıran uygulama altyapıları ve kodlanabilir nesneler (veya "nesne modeli") sunmaktadır.  
   
- Dil altyapısı  
+ **Dil altyapısı**  
  Ayrıştırma, yürütme ve soyutlama belirli bir dil için hata ayıklama sağlayan bir bileşendir.  
   
- hata ayıklayıcı IDE  
+ **hata ayıklayıcı IDE**  
  Konak uygulama ve dil altyapıları ile iletişim kurarak UI hata ayıklaması sağlayan uygulama.  
   
- Makine Hata Ayıklama Yöneticisi  
- Hata ayıklanabilir uygulama işlemlerinin bir kayıt defteri tutar bileşeni.  
+ **Makine Hata Ayıklama Yöneticisi** hata ayıklanabilir uygulama işlemlerinin bir kayıt defteri tutar bir bileşen.  
   
- İşlem Hata Ayıklama Yöneticisi  
+ **İşlem Hata Ayıklama Yöneticisi**  
  Belirli bir uygulama için hata ayıklanabilir belgelerinin ağaç tutan bir bileşeni, çalışan iş parçacıkları ve benzeri izler.  
   
- Belge bağlamı  
+ **Belge bağlamı**  
  Bir belge bağlamına ana belgenin bir kaynak kodu belirli bir aralıkta temsil eden bir soyutlamadır.  
   
- Kod bağlamı  
+ **Kod bağlamı**  
  Kod bağlamı çalışan kodu belirli bir konumda bir dil altyapısı (bir "sanal yönerge işaretçisi".) temsil eder.  
   
- deyim bağlamı  
+ **deyim bağlamı**  
  İfadeleri dil altyapısı tarafından değerlendirilebilir belirli bir içeriğe (örneğin, bir yığın çerçevesi).  
   
- Nesne gözatma  
+ **Nesne gözatma**  
  Bir nesnenin adı, türü, değer ve "izleme pencesine" uygulamak için uygun alt nesneleri yapılandırılmış, dilden bağımsız gösterimini kullanıcı Arabirimi.  
   
  Her anahtar etkin hata ayıklama bileşenleri ve bu arabirimler ayrıntılarını tarafından izlenen, karşılık gelen, ilişkili arabirim genel bir bakış aşağıdadır.  

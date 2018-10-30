@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b681a5ee965ac32120f72ac2e0064a72ce7fa76
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f6cd9260f29d8e46f66e54fec8cb24ae6857eb05
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213277"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217869"
 ---
 # <a name="install-sql-server-sample-databases"></a>SQL Server örnek veritabanları yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "49213277"
   
 #### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>Visual Studio .bak dosyasından bir veritabanını geri yüklemek için  
   
-1.  Bir Microsoft SQL Server veritabanını yedeklediğinizde, .bak dosyasının sonuç olur. Bir veritabanı dosyası olarak kullanılabilir dosya yeniden .bak yapmak için bu olmalıdır *geri*. Ana menüden**görünümü** > **SQL Server Nesne Gezgini**. Görmüyorsanız, yüklemeniz gerekebilir. Git **Denetim Masası** > **programlar ve Özellikler**, Microsoft Visual Studio 2015'i bulun ve tıklayın **değişiklik** düğmesi. Yüklü bileşenlerin listesini yükleyici penceresinde göründüğünde seçin **SQL Server Nesne Gezgini**onay kutusunu işaretleyin ve ardından yükleme işlemine devam edin.  
+1.  Bir Microsoft SQL Server veritabanını yedeklediğinizde, .bak dosyasının sonuç olur. Bir veritabanı dosyası olarak kullanılabilir dosya yeniden .bak yapmak için bu olmalıdır *geri*. Ana menüden **görünümü** > **SQL Server Nesne Gezgini**. Görmüyorsanız, yüklemeniz gerekebilir. Git **Denetim Masası** > **programlar ve Özellikler**, Microsoft Visual Studio 2015'i bulun ve tıklayın **değişiklik** düğmesi. Yüklü bileşenlerin listesini yükleyici penceresinde göründüğünde seçin **SQL Server Nesne Gezgini** onay kutusunu işaretleyin ve ardından yükleme işlemine devam edin.  
   
 2.  SQL Server nesne Gezgini'nde, tüm SQL Server Veritabanı Altyapısı'nı (örneğin, localdb) sağ tıklayın ve seçin**yeni sorgu**.  
   

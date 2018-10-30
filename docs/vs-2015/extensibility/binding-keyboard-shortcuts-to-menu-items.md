@@ -19,12 +19,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7100e3fc6e18387cf8ef8cfdc2b485b610b3dc8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 009e9269961b3cd532736fd5b72e28a389a4382a
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812718"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220049"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Menü Öğelerine Klavye Kısayolları Bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +44,12 @@ ms.locfileid: "49812718"
   
 3. İçinde **kısayol tuşlarına basın** kutusuna, kullanmak istediğiniz klavye kısayolunu yazın.  
   
-    Visual Studio'da kısayol zaten kullanılıyorsa **tarafından şu anda kullanılan uygulamalarım** kısayol şu anda çağıran komut kutusu gösterir.  
+    Visual Studio'da kısayol zaten kullanılıyorsa **şu anda kullandığı kısayolunu** kısayol şu anda çağıran komut kutusu gösterir.  
   
 4. Anahtarları farklı birleşimlerini eşlenmemiş bir tane bulana kadar deneyin.  
   
    > [!NOTE]
-   >  ALT kullanan klavye kısayolları bir menüyü açabilirsiniz ve doğrudan bir komut yürütün. Bu nedenle, **tarafından şu anda kullanılan uygulamalarım** ALT içeren bir kısayol yazarken kutusu boş olabilir. Kısayol menü kapanış açmaz doğrulayabilirsiniz **seçenekleri** iletişim kutusunu ve ardından tuşlarına basarak.  
+   >  ALT kullanan klavye kısayolları bir menüyü açabilirsiniz ve doğrudan bir komut yürütün. Bu nedenle, **şu anda kullandığı kısayolunu** ALT içeren bir kısayol yazarken kutusu boş olabilir. Kısayol menü kapanış açmaz doğrulayabilirsiniz **seçenekleri** iletişim kutusunu ve ardından tuşlarına basarak.  
   
    Aşağıdaki yordamda, bir menü komutu ile var olan bir VSPackage sahibi olduğunuzu varsayar. Böylece yardıma ihtiyacınız olursa, göz atın [bir menü komutuyla uzantı oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md).  
   

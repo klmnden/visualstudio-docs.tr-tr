@@ -32,12 +32,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 199d871851a03b7fe97c640a9efa70c01c2b8c5c
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 5cd79db9b5bfc2e68dea2ff711b2da6ce55c9bc0
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143443"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220127"
 ---
 # <a name="link-task"></a>Bağlantı görevi
 Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi (COFF) nesne dosyaları ve yürütülebilir bir dosya oluşturmak için kitaplıklar bağlayıcı aracı bağlantılar (*.exe*) dosya veya dinamik bağlantı kitaplığı (DLL). Daha fazla bilgi için [bağlayıcı seçenekleri](/cpp/build/reference/linker-options).  
@@ -67,7 +67,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
   
      Yerleştirilecek öznitelikleri belirtir `dependency` bildirim dosyasının.  
   
-     Daha fazla bilgi için [/MANIFESTDEPENDENCY (bildirim bağımlılıklarını belirt)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Ayrıca bkz: [yayımcı yapılandırma dosyaları](https://docs.microsoft.com/en-us/windows/desktop/SbsCs/publisher-configuration-files).  
+     Daha fazla bilgi için [/MANIFESTDEPENDENCY (bildirim bağımlılıklarını belirt)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Ayrıca bkz: [yayımcı yapılandırma dosyaları](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files).  
   
 -   **AdditionalOptions**  
   

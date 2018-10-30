@@ -21,12 +21,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 79710dca958bbc895e5366e4ab316f1a1e4fa64c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 58f92f082ec4e7934e8eb7597832a6a58d23a1ca
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234476"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219750"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Bir TableAdapter’ın işlevselliğini genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ TableAdapter bağdaştırıcısının kısmi sınıf dosyası için kod ekleyere
   
 2.  Sınıf adını `CustomersTableAdapterExtended`.  
   
-3.  Seçin**ekleme**.  
+3.  Seçin **ekleme**.  
   
 4.  Kod aşağıdaki gibi doğru ad alanını ve projeniz için kısmi sınıf adı ile değiştirin:  
   

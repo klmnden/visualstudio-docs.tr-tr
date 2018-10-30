@@ -33,12 +33,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2f1a09cf7e4f6e15ee49ce62914b650c3622e6e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 20b27a232c0e707751f8dd8111989d761635e9e6
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894059"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220319"
 ---
 # <a name="format-specifiers-in-c"></a>C++ içindeki Biçim Belirticileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,7 +120,7 @@ int main() {
 |**m, s**|uzun veya kısa önek: d, i, u, o, x, X|00406042|0x0c22|  
 |**f**|imzalanmış kayan nokta|(3./2.), f|1.500000|  
 |**e**|imzalanmış bilimsel gösterim|(3.0/2.0)|1.500000e+000|  
-|**g**g|imzalanan kayan nokta veya imzalanmış bilimsel gösterim, hangisi daha kısaysa|(3.0/2.0)|1,5|  
+|**g**|imzalanan kayan nokta veya imzalanmış bilimsel gösterim, hangisi daha kısaysa|(3.0/2.0)|1,5|  
 |c|tek karakter|\<Konum >|101 'e'|  
 |s|const char *|\<Konum >|"hello world"|  
 |Su|const wchar_t*<br /><br /> const char16_t\*|\<Konum >|L "Merhaba Dünya"|  

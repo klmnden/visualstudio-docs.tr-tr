@@ -26,12 +26,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3a4f5a7497e24ccd8e769198938dbd20a6bdf0f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6eb85fcef78b4b856c47ccb4436d1314ae440136
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284563"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219737"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Bir veri kümesinin içine XML verileri okuma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ADO.NET ile XML verileri çalışmak için basit yöntemler sağlar. Bu kılavuz
   
 2.  Projeyi adlandırın `ReadingXML`.  
   
-3.  Seçin **Windows uygulama**ve ardından**Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Seçin **Windows uygulama**ve ardından **Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **ReadingXML** projesi oluşturulur ve eklenen **Çözüm Gezgini**.  
   
@@ -74,7 +74,7 @@ ADO.NET ile XML verileri çalışmak için basit yöntemler sağlar. Bu kılavuz
   
 1.  Üzerinde **proje** menüsünde**Yeni Öğe Ekle**.  
   
-2.  Seçin **XML dosyası**, dosya adı `authors.xml`ve ardından**Ekle**.  
+2.  Seçin **XML dosyası**, dosya adı `authors.xml`ve ardından **Ekle**.  
   
      XML dosyası tasarımcıya yükler ve düzenleme için hazırdır.  
   
@@ -187,7 +187,7 @@ ADO.NET ile XML verileri çalışmak için basit yöntemler sağlar. Bu kılavuz
   
 2.  Gelen [araç kutusu, veri sekmesinde](../ide/reference/toolbox-data-tab.md), sürükleyin bir **veri kümesi** üzerine **Form1**.  
   
-3.  İçinde **veri kümesi Ekle** iletişim kutusunda **türü belirsiz dataset**ve ardından**Tamam**.  
+3.  İçinde **veri kümesi Ekle** iletişim kutusunda **türü belirsiz dataset**ve ardından **Tamam**.  
   
      **DataSet1** bileşen tepsisine eklenir.  
   
@@ -232,7 +232,7 @@ ADO.NET ile XML verileri çalışmak için basit yöntemler sağlar. Bu kılavuz
   
 #### <a name="to-test-the-form"></a>Formu sınamak için  
   
-1.  Seçin**F5** uygulamayı çalıştırın.  
+1.  Seçin **F5** uygulamayı çalıştırın.  
   
 2.  Seçin **okuma XML** düğmesi.  
   

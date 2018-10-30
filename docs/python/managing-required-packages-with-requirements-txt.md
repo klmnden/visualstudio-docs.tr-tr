@@ -1,7 +1,7 @@
 ---
 title: Paket gereksinimlerini yönetmek için requirements.txt dosyasını kullanma
-description: Bir proje bağımlılıklarınızı yönetmek için requirements.txt dosyasını kullanabilirsiniz. Requirements.txt dosyasını içeren bir proje alırsanız, bu bağımlılıkların bir adımda kolayca yükleyebilirsiniz.
-ms.date: 06/27/2018
+description: Requirements.txt dosyası bir proje bağımlılıklarınızı açıklar. Requirements.txt dosyasını içeren bir proje alırsanız, bu bağımlılıkların bir adımda kolayca yükleyebilirsiniz.
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: efefda9fb5eb863550684511a5c0834f5d43f7fd
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 49f87ff5836188d6fefb80feac94b27902de7968
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100919"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218452"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Gerekli paketleri requirements.txt ile yönetme
 
-Proje yapı sistemini kullanarak başkalarıyla paylaşmaya ya da bir ortamınızı geri yüklemek için gerek duyduğunuz başka bir konuma dağıtmayı planlıyorsanız, proje gerektiren dış paketleri belirtmeniz gerekir. Kullanmak için önerilen yaklaşımdır bir [requirements.txt dosyasını](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) yükleyen gerekli sürümlerinden birini bağımlı paketler pip komutların listesini içerir.
+Proje başkalarıyla paylaşın, bir yapı ortamı kullanın ya da proje olduğu bir ortamı geri yüklemeniz gereken diğer bir konuma kopyalamak planlama, proje gerektiren dış paketleri belirtmeniz gerekir. Kullanmak için önerilen yaklaşımdır bir [requirements.txt dosyasını](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) yükleyen gerekli sürümlerinden birini bağımlı paketler pip komutların listesini içerir. En yaygın komut `pip freeze > requirements.txt`, ortamınızın geçerli paket listesine kayıtları *requirements.txt*.
 
 Teknik olarak, herhangi bir dosya adının gereksinimlerini izlemek için kullanılabilir (kullanarak `-r <full path to file>` paketi yüklerken), Visual Studio için belirli destek sağlar, ancak *requirements.txt*:
 
@@ -65,7 +65,7 @@ Cleaning up...
     Removing temporary dir C:\Project\env\build...
 ```
 
-### <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio'da Python ortamlarını yönetme](managing-python-environments-in-visual-studio.md)
 - [Proje için yorumlayıcıyı seçme](selecting-a-python-environment-for-a-project.md)

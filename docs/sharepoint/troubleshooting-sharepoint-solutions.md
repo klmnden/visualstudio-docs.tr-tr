@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f029cad2b0c8cb215a054502de5bc693cce5df5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b363e64cbd23bcaa05eeca9aae9c26a6d4e376b3
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928964"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219789"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint çözümlerinde sorun giderme
   SharePoint çözümlerini kullanarak hata ayıklaması yaparken aşağıdaki sorunları veya uyarılar ortaya çıkabilir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hata ayıklayıcı. Daha fazla bilgi için [hata ayıklama SharePoint 2007 iş akışı çözümleri](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -136,7 +136,7 @@ ms.locfileid: "49928964"
   
 -   [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]yükleyin.  
   
--   SharePoint Web sitesine yönetici erişimi olduğundan emin olun. Daha fazla bilgi için [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] çevrimiçi makalede [atama veya SharePoint Server yöneticileri, hizmet uygulaması kaldırma](https://docs.microsoft.com/en-us/sharepoint/administration/assign-or-remove-administrators-of-service-applications).  
+-   SharePoint Web sitesine yönetici erişimi olduğundan emin olun. Daha fazla bilgi için [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] çevrimiçi makalede [atama veya SharePoint Server yöneticileri, hizmet uygulaması kaldırma](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications).  
   
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>Site silme web olayı olay alıcısı projesinde gerçekleşmez
  Bir olay alıcısı projesi oluşturun ve "bir site silinirken gibi" belirli Web olayları seçin, olayı hiçbir zaman oluşur.  

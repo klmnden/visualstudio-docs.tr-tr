@@ -22,12 +22,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4c2daf9aa4e92ef4a017f36cbcc806abc50d6bde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dbde5651c66582b7d0536be906358d3a4446f587
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240441"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220280"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Komut Diğer Adları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "49240441"
   
 Diğer adlar bir komut ekleyip girmek için bir yol sağlamak **Bul/komut** kutusu veya **komut** komutu yürütmek için gereken metin kısaltmayı tarafından penceresi. Örneğin, girmek yerine `>File.OpenFile` görüntülemek için **Dosya Aç** iletişim kutusu, önceden tanımlanmış diğer kullanabilirsiniz `>of`.  
   
- Tür `alias` içinde **komut**geçerli diğer adlar ve tanımlarının listesini görüntülemek için pencere. Tür `>cls` içeriğini temizlemek için **komut** penceresi. Belirli bir komut için bir diğer ad görmek istiyorsanız, yazın `alias <command name>`.  
+ Tür `alias` içinde **komut** geçerli diğer adlar ve tanımlarının listesini görüntülemek için pencere. Tür `>cls` içeriğini temizlemek için **komut** penceresi. Belirli bir komut için bir diğer ad görmek istiyorsanız, yazın `alias <command name>`.  
   
  Bir Visual Studio komutları için kendi bir diğer ad (ile veya bağımsız değişkenler olmadan) kolayca oluşturabilirsiniz. Örneğin, diğer ad kullanımı için söz dizimi `File.NewFile MyFile.txt` olduğu `alias MyAlias File.NewFile MyFile.txt`. Diğer adlar ile silebilirsiniz `alias <alias name> /delete`  
   

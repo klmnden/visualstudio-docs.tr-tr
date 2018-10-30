@@ -13,14 +13,14 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 039d88fb3aac6c1f7f0880be8b0f08dcf71bff5a
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 711d7b65eb329e844fedb0148006cacb1c7a0ebf
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126561"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219101"
 ---
-# <a name="packagejson-configuration"></a>Package.JSON yapılandırma
+# <a name="packagejson-configuration"></a>package.json yapılandırması
 
 Npm paketlerini birçok ile bir Node.js uygulaması geliştiriyorsanız uyarı veya hata bir veya daha fazla paket güncelleştirilmiş projenizi oluşturduğunuzda çalıştırılacak seyrek değil. Bazı durumlarda, bir sürüm çakışması sonuçları veya paket sürümü kullanım dışıdır. Birkaç Hızlı ipucu yapılandırmanıza yardımcı olması için [package.json](https://docs.npmjs.com/files/package.json) dosya ve uyarılar veya hatalar gördüğünüzde neler olduğunu anlama. Bu tam bir kılavuz değildir *package.json* ve yalnızca npm Paket sürümü oluşturma üzerinde odaklanmıştır.
 
@@ -28,7 +28,7 @@ Npm paket sürüm oluşturma sistemi katı kurallara sahiptir. Sürüm biçimi b
 
     [major].[minor].[patch]
 
-Bir paket 5.2.1 sürümü ile uygulamanızda sahip olduğunuz varsayalım. 5 ana sürüm 2 ikincil sürüm ve düzeltme eki 1 olur.
+Bir paket 5.2.1 sürümü ile uygulamanızda sahip olduğunuz varsayalım. Ana sürüm 5'tir, alt sürüm 2'dir ve düzeltme eki 1'dir.
 
 * Bir ana sürüm güncelleştirmesinde paketi geriye doğru-önemli değişiklikler olduğu gibi uyumsuz, yeni özellikler içerir.
 * Geriye dönük uyumlu olan paket için bir ikincil sürüm güncelleştirmede yeni özellikler eklenmiştir önceki paket sürümleri.

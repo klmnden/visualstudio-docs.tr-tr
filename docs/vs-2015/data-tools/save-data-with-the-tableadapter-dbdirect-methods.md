@@ -22,12 +22,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6bb326f1cad6ea019c5d057ca24d198c28dca2a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6b7a7ec1d244f8bf711f0d1aaf4726c910846357
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220824"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219724"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>TableAdapter DBDirect metotlarıyla veri kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Bu izlenecek yol, bir TableAdapter DBDirect yöntemleri kullanılarak doğrudan 
   
 2.  Projeyi adlandırın **TableAdapterDbDirectMethodsWalkthrough**.  
   
-3.  Seçin **Windows uygulama**ve thenselect**Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Seçin **Windows uygulama**ve ardından **Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **TableAdapterDbDirectMethodsWalkthrough** projesi oluşturulur ve eklenen **Çözüm Gezgini**.  
   
@@ -70,13 +70,13 @@ Bu izlenecek yol, bir TableAdapter DBDirect yöntemleri kullanılarak doğrudan 
   
 #### <a name="to-create-the-data-source"></a>Veri kaynağı oluşturmak için  
   
-1.  Üzerinde **veri** menüsünde**veri kaynaklarını Göster**.  
+1.  Üzerinde **veri** menüsünde **veri kaynaklarını Göster**.  
   
 2.  İçinde **veri kaynakları** penceresinde **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı Yapılandırma Sihirbazı**.  
   
-3.  Üzerinde **bir veri kaynağı türü seçin**ekranındayken **veritabanı**ve ardından**sonraki**.  
+3.  Üzerinde **bir veri kaynağı türü seçin** ekranındayken **veritabanı**ve ardından **sonraki**.  
   
-4.  Üzerinde **veri bağlantınızı seçin**ekranında, aşağıdakilerden birini yapın:  
+4.  Üzerinde **veri bağlantınızı seçin** ekranında, aşağıdakilerden birini yapın:  
   
     -   Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.  
   
@@ -84,13 +84,13 @@ Bu izlenecek yol, bir TableAdapter DBDirect yöntemleri kullanılarak doğrudan 
   
     -   Seçin **yeni bağlantı** başlatmak için **Bağlantı Ekle/Değiştir** iletişim kutusu.  
   
-5.  Veritabanınız parola gerektiriyorsa, hassas verileri eklemek ve ardından seçeneğini**sonraki**.  
+5.  Veritabanınız parola gerektiriyorsa, hassas verileri eklemek ve ardından seçeneğini **sonraki**.  
   
-6.  Üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet**ekranındayken **sonraki**.  
+6.  Üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** ekranındayken **sonraki**.  
   
-7.  Üzerinde **veritabanı nesnelerinizi seçin**ekranında, **tabloları** düğümü.  
+7.  Üzerinde **veritabanı nesnelerinizi seçin** ekranında, **tabloları** düğümü.  
   
-8.  Seçin `Region` tablosuna sağ tıklayıp ardından**son**.  
+8.  Seçin `Region` tablosuna sağ tıklayıp ardından **son**.  
   
      **NorthwindDataSet** projenize eklenir ve `Region` tablo görünür **veri kaynakları** penceresi.  
   
@@ -117,7 +117,7 @@ Bu izlenecek yol, bir TableAdapter DBDirect yöntemleri kullanılarak doğrudan 
   
 #### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Veritabanına yeni kayıtlar eklemek için kod eklemek için  
   
-1.  Seçin**InsertButton** click olayı için olay işleyicisi oluşturmak ve formunuza Kod Düzenleyicisi'nde açın.  
+1.  Seçin **InsertButton** click olayı için olay işleyicisi oluşturmak ve formunuza Kod Düzenleyicisi'nde açın.  
   
 2.  Değiştirin `InsertButton_Click` olay işleyicisi aşağıdaki kod ile:  
   
@@ -135,7 +135,7 @@ Bu izlenecek yol, bir TableAdapter DBDirect yöntemleri kullanılarak doğrudan 
   
 #### <a name="to-add-code-to-delete-records-from-the-database"></a>Kayıtlarını veritabanından silmek için kod eklemek için  
   
-1.  Seçin**DeleteButton** click olayı için olay işleyicisi oluşturmak ve formunuza Kod Düzenleyicisi'nde açın.  
+1.  Seçin **DeleteButton** click olayı için olay işleyicisi oluşturmak ve formunuza Kod Düzenleyicisi'nde açın.  
   
 2.  Değiştirin `DeleteButton_Click` olay işleyicisi aşağıdaki kod ile:  
   
@@ -146,7 +146,7 @@ Bu izlenecek yol, bir TableAdapter DBDirect yöntemleri kullanılarak doğrudan 
   
 #### <a name="to-run-the-application"></a>Uygulamayı çalıştırmak için  
   
--   Seçin**F5** uygulamayı çalıştırın.  
+-   Seçin **F5** uygulamayı çalıştırın.  
   
 -   Seçin **Ekle** düğmesini ve yeni kayıt kılavuzda göründüğünü doğrulayın.  
   

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e024772e9deb5f391e057c3c66e505637765e1d
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 8055e1c11f38ab83ae9c3a0570064ca49158b886
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050098"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219035"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Test aracılarını ve test denetleyicilerini yükleme
 
@@ -44,9 +44,9 @@ Bu yükleyici, sanal makinelerde kolay yükleme yapmak için ISO dosyalarını o
 
 ## <a name="compatible-versions-of-tfs-microsoft-test-manager-the-test-controller-and-test-agent"></a>TFS, Microsoft Test Yöneticisi, test denetleyicisi ve test aracısının uyumlu sürümleri
 
-TFS, Microsoft Test Yöneticisi (MTM), test denetleyicisi ve test aracısını farklı sürümleri aşağıdaki tabloya göre karıştırabilirsiniz:
+TFS, Microsoft Test Yöneticisi, test denetleyicisi ve test aracısını farklı sürümleri aşağıdaki tabloya göre karıştırabilirsiniz:
 
-| TFS | Laboratuvar Merkezi ile MTM | Denetleyici | Aracı |
+| TFS | Microsoft Test Yöneticisi ile Laboratuvar Merkezi | Denetleyici | Aracı |
 | --- | -------------------------------------- | ---------- | ----- |
 | 2017: 2015'den yükseltme ya da yeni yükleyin | 2017 | 2017 | 2017 |
 | 2017: 2015'den yükseltme ya da yeni yükleyin | 2017 | 2013 güncelleştirme 5 | 2013 güncelleştirme 5 |

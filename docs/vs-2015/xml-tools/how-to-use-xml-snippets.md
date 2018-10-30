@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4da9c5cd5d4aaf3a99fd891a814b1f8ccef04ac
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 774a0f5639057ea5b1dc190ce475278477a7f373
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245862"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219620"
 ---
 # <a name="how-to-use-xml-snippets"></a>Nasıl yapılır: XML kod parçacıklarını kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ XML Düzenleyicisi kısayol menüsünde aşağıdaki iki komutu kullanarak XML k
   
  ENTER veya ESC tuşuna basarak alan düzenleme iptal eder ve düzenleyici normale döner.  
   
- Düzenlenebilir bir kod parçacığı alanlar için varsayılan renkleri, kod parçacığı alanı ayarı değiştirerek değiştirilebilir **yazı tipleri ve renkler** bölmesinde **seçeneği**s iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: değişiklik yazı tipleri ve renkler Düzenleyicisi'nde](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).  
+ Düzenlenebilir bir kod parçacığı alanlar için varsayılan renkleri, kod parçacığı alanı ayarı değiştirerek değiştirilebilir **yazı tipleri ve renkler** bölmesinde **seçenekleri** iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: değişiklik yazı tipleri ve renkler Düzenleyicisi'nde](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XML kod parçacıkları](../xml-tools/xml-snippets.md)   

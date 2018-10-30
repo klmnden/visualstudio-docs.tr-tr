@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10b62093f85c51ee349386ec09470228d0194e9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4a02d6dd09ec019ad05404c033889f89ed140dd1
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834001"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219503"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Proje üreteçlerini kullanarak proje örnekleri oluşturma
 Proje türlerinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kullanan bir *proje fabrikası* proje nesnelerin örneklerini oluşturmak için. Bir proje fabrikası cocreatable COM nesneleri için bir standart sınıf üreteci benzer. Ancak, proje nesnelerini cocreatable değildir; Bunlar, bir proje fabrikası kullanarak yalnızca oluşturulabilir.  
@@ -27,8 +27,6 @@ Proje türlerinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] k
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE bir kullanıcı, mevcut bir projeyi yüklediğinde veya yeni bir proje oluşturur, VSPackage içinde uygulanan proje fabrikası çağırır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Yeni proje nesne doldurmak için yeterli bilgi IDE'ye sağlar **Çözüm Gezgini**. Yeni proje nesne IDE tarafından başlatılan tüm ilgili UI eylemlerini desteklemek için gereken arabirimler de sağlar.  
   
  Uygulayabileceğiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> projenizdeki bir sınıf içinde arabirim. Genellikle, kendi modülünde yer alıyor.  
-  
- Uygulaması örneği için `IVsProjectFactory` arabirim için bkz: *PrjFac.cpp*, içinde bulunan [temel proje](https://www.microsoft.com/download/details.aspx?id=55984) örnek dizin.  
   
  Bir sahibi tarafından toplanan destekleyen projeler, proje dosyasında bir sahibi anahtarı kalıcı gerekir. Zaman <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> yöntemi bir sahibi anahtara sahip bir proje üzerinde çağrılır, sahip olunan proje sahibi anahtarıyla GUID sonra çağıran bir proje fabrikası dönüştürür `CreateProject` gerçek oluşturma yapmak için bu proje fabrika yöntemi.  
   

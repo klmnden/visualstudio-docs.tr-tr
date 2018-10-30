@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7bade19778c64b6338c29db1eef8eb09a0d95fa3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0912ffbe2a9a82ac5efbd3b2ca6ba3566ce5b02
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874650"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219308"
 ---
 # <a name="save-data-in-a-transaction"></a>Bir işlemde veri kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Bu izlenecek yol kullanarak bir işlemde veri kaydetme gösterilmektedir <xref:S
   
 2.  Projeyi adlandırın **SavingDataInATransactionWalkthrough**.  
   
-3.  Seçin **Windows uygulama**ve ardından**Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Seçin **Windows uygulama**ve ardından **Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **SavingDataInATransactionWalkthrough** projesi oluşturulur ve eklenen **Çözüm Gezgini**.  
   
@@ -61,7 +61,7 @@ Bu izlenecek yol kullanarak bir işlemde veri kaydetme gösterilmektedir <xref:S
   
 2.  İçinde **veri kaynakları** penceresinde **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı Yapılandırma Sihirbazı**.  
   
-3.  Üzerinde **bir veri kaynağı türü seçin**ekranındayken **veritabanı**ve ardından**sonraki**.  
+3.  Üzerinde **bir veri kaynağı türü seçin**ekranındayken **veritabanı**ve ardından **sonraki**.  
   
 4.  Üzerinde **veri bağlantınızı seçin**aşağıdakilerden birini ekran yapın:  
   
@@ -71,13 +71,13 @@ Bu izlenecek yol kullanarak bir işlemde veri kaydetme gösterilmektedir <xref:S
   
     -   Seçin **yeni bağlantı** başlatmak için **Bağlantı Ekle/Değiştir** iletişim kutusu ve Northwind veritabanına bağlantı oluşturun.  
   
-5.  Veritabanınız parola gerektiriyorsa, hassas verileri eklemek ve ardından seçeneğini**sonraki**.  
+5.  Veritabanınız parola gerektiriyorsa, hassas verileri eklemek ve ardından seçeneğini **sonraki**.  
   
-6.  Üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** ekranındayken**sonraki**.  
+6.  Üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** ekranındayken **sonraki**.  
   
 7.  Üzerinde **veritabanı nesnelerinizi seçin** ekranında, **tabloları** düğümü.  
   
-8.  Seçin `Customers` ve `Orders` tablolar ve ardından**son**.  
+8.  Seçin `Customers` ve `Orders` tablolar ve ardından **son**.  
   
      **NorthwindDataSet** projenize eklenir ve `Customers` ve `Orders` tablolar görünür **veri kaynakları** penceresi.  
   
@@ -103,7 +103,7 @@ Bu izlenecek yol kullanarak bir işlemde veri kaydetme gösterilmektedir <xref:S
   
 1.  Üzerinde **proje** menüsünde**Başvuru Ekle**.  
   
-2.  Seçin **System.Transactions**(üzerinde **.NET** sekmesinde) ve ardından**Tamam**.  
+2.  Seçin **System.Transactions**(üzerinde **.NET** sekmesinde) ve ardından **Tamam**.  
   
      Bir başvuru **System.Transactions** projeye eklenir.  
   
@@ -161,7 +161,7 @@ Bu izlenecek yol kullanarak bir işlemde veri kaydetme gösterilmektedir <xref:S
   
 #### <a name="to-run-the-application"></a>Uygulamayı çalıştırmak için  
   
--   Seçin**F5** uygulamayı çalıştırın.  
+-   Seçin **F5** uygulamayı çalıştırın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)

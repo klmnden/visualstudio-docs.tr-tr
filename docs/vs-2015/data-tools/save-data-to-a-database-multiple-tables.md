@@ -22,12 +22,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0580cebe97d4646074c678296c18b4caa20ce44b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 986df2d58c9a8955c9de9b45edaa5276b2e68bfb
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234487"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218434"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Bir veritabanına (birden çok tablo) veri kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Uygulama geliştirmede en sık karşılaşılan senaryolardan biri, bir Windows 
   
 2.  Projeyi adlandırın `UpdateMultipleTablesWalkthrough`.  
   
-3.  Seçin **Windows uygulama**ve ardından**Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Seçin **Windows uygulama**ve ardından **Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **UpdateMultipleTablesWalkthrough** projesi oluşturulur ve eklenen **Çözüm Gezgini**.  
   
@@ -81,7 +81,7 @@ Uygulama geliştirmede en sık karşılaşılan senaryolardan biri, bir Windows 
   
 2.  İçinde **veri kaynakları** penceresinde**yeni veri kaynağı Ekle** başlatmak için **veri kaynağı Yapılandırma Sihirbazı**.  
   
-3.  Üzerinde **bir veri kaynağı türü seçin**ekranındayken **veritabanı**ve ardından**sonraki**.  
+3.  Üzerinde **bir veri kaynağı türü seçin**ekranındayken **veritabanı**ve ardından **sonraki**.  
   
 4.  Üzerinde **veri bağlantınızı seçin**aşağıdakilerden birini ekran yapın:  
   
@@ -91,9 +91,9 @@ Uygulama geliştirmede en sık karşılaşılan senaryolardan biri, bir Windows 
   
     -   Seçin **yeni bağlantı** açmak için **Bağlantı Ekle/Değiştir** iletişim kutusu.  
   
-5.  Veritabanınız parola gerektiriyorsa, hassas verileri eklemek ve ardından seçeneğini**sonraki**.  
+5.  Veritabanınız parola gerektiriyorsa, hassas verileri eklemek ve ardından seçeneğini **sonraki**.  
   
-6.  Üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet**seçin**sonraki**.  
+6.  Üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet**seçin **sonraki**.  
   
 7.  Üzerinde **veritabanı nesnelerinizi seçin**ekranında, **tabloları** düğümü.  
   
@@ -127,7 +127,7 @@ Uygulama geliştirmede en sık karşılaşılan senaryolardan biri, bir Windows 
      A <xref:System.Windows.Forms.DataGridView> denetim ve araç şeridi (<xref:System.Windows.Forms.BindingNavigator>) Kayıtlarda gezinmek için formda görünür. Bir [orderstableadapter bağdaştırıcısına](../data-tools/tableadapter-overview.md) ve <xref:System.Windows.Forms.BindingSource> bileşen tepsisinde görünür.  
   
 ## <a name="addcode-to-update-the-database"></a>Veritabanını güncellemek için Addcode  
- Çağırarak veritabanı güncelleştirebilirsiniz `Update` yöntemlerinin **müşteriler** ve **siparişler** TableAdapter bağdaştırıcıları. Varsayılan olarak, bir olay işleyicisi için**Kaydet** düğmesini<xref:System.Windows.Forms.BindingNavigator> veritabanına güncelleştirmeleri göndermek için formun koduna eklenir. Bu yordamı doğru sırayla güncelleştirmeleri göndermek için kod değiştirir. Bu bilgi tutarlılığını hataları oluşturma olanağına ortadan kaldırır. Kod ayrıca hata güncelleştirme çağrısında bir try-catch bloğu içinde sarmalama tarafından işleme uygular. Kod, uygulamanızın ihtiyaçlarına uyacak şekilde değiştirebilirsiniz.  
+ Çağırarak veritabanı güncelleştirebilirsiniz `Update` yöntemlerinin **müşteriler** ve **siparişler** TableAdapter bağdaştırıcıları. Varsayılan olarak, bir olay işleyicisi için **Kaydet** düğmesini<xref:System.Windows.Forms.BindingNavigator> veritabanına güncelleştirmeleri göndermek için formun koduna eklenir. Bu yordamı doğru sırayla güncelleştirmeleri göndermek için kod değiştirir. Bu bilgi tutarlılığını hataları oluşturma olanağına ortadan kaldırır. Kod ayrıca hata güncelleştirme çağrısında bir try-catch bloğu içinde sarmalama tarafından işleme uygular. Kod, uygulamanızın ihtiyaçlarına uyacak şekilde değiştirebilirsiniz.  
   
 > [!NOTE]
 >  Anlaşılsın diye, bu izlenecek yol, bir işlem kullanmaz. Ancak, iki güncelleştirilmiyor ya da tabloları ilgili daha fazla işlem içindeki tüm güncelleştirme mantığı içerir. Bir işlem değişiklikleri uygulanmadan önce bir veritabanındaki tüm ilgili değişiklikler başarılı olduğunu garantiler bir işlemdir. Daha fazla bilgi için [işlemler ve eşzamanlılık](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
@@ -145,7 +145,7 @@ Uygulama geliştirmede en sık karşılaşılan senaryolardan biri, bir Windows 
   
 #### <a name="to-test-the-application"></a>Uygulamayı test etmek için  
   
-1.  Seçin**F5**.  
+1.  Seçin **F5**.  
   
 2.  Veriler her tabloda bir veya daha fazla kayıt için birkaç değişiklik yapalım.  
   

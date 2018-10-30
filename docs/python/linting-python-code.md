@@ -1,7 +1,7 @@
 ---
 title: Lint işlemi uygulanacak Python kodu PyLint kullanma
 description: Python kodu sorunlarını denetlemek için Visual Studio'da PyLint kullanma
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fa037a9e674e6086fd3d558d621f9a7d7be616aa
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: acf5ea29c83583b46aa399293acfdbf4c04433e5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468747"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219399"
 ---
 # <a name="use-pylint-to-check-python-code"></a>Python kodunu denetlemek için PyLint kullanma
 
@@ -58,4 +58,4 @@ Bir hata çift doğrudan sorunu oluşturulan kaynak koduna götürür.
 1. Kaydet *.pylintrc* dosya ve Uyarıları artık bastırılan yeniden görmek için spustit pylint.
 
 > [!Tip]
-> Kullanılacak bir *.pylintrc* adlı bir ortam değişkeni oluşturun, bir ağ paylaşımından dosya `PYLINTRC` ağ üzerinde dosya adı değerine sahip bir UNC yolu veya eşlenen sürücü harfini kullanarak paylaşın. Örneğin, `PYLINTRC=\\myshare\python\.pylintrc`.
+> Kullanılacak bir *.pylintrc* adlı bir ortam değişkeni oluşturun, bir ağ paylaşımından dosya `PYLINTRC` ağ üzerinde dosya adı değerine sahip bir UNC yolu veya eşlenen sürücü harfini kullanarak paylaşın. Örneğin: `PYLINTRC=\\myshare\python\.pylintrc`

@@ -5,7 +5,7 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
-- vs.toolsoptionspages.text_editor.file_extension
+- VS.ToolsOptionsPages.Text_Editor.File_Extension
 helpviewer_keywords:
 - file extensions, associating to editor
 - Editing Experience
@@ -17,50 +17,50 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b5fc6249477cdab9a4c13608a260820a801e081
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eacb43dfa414d29f614c1ee188c38467ba288b33
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945746"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218453"
 ---
 # <a name="options-text-editor-file-extension"></a>Seçenekler, Metin Düzenleyici, Dosya Uzantısı
-Bu seçenekler iletişim kutusu, belirli dosya uzantılarına sahip tüm dosyaların nasıl belirtmenize olanak sağlar Visual Studio tümleşik geliştirme ortamını (IDE) tarafından ele alınacaktır. Her **uzantısı** girdiğiniz, bir düzenleme deneyimi seçebilirsiniz. Bu IDE Düzenleyicisi'ni veya belirli bir türde belgeleri açılacağı Tasarımcısı seçmenize olanak sağlar. Bu seçenekleri görüntülemek için seçin **seçenekleri** gelen **Araçları** menüsünde genişletin **metin düzenleyici** düğümü ve select **dosya uzantısı**.
+Bu seçenekler iletişim kutusu belirli dosya uzantılarına sahip tüm dosyaların nasıl belirtmenize olanak tanır, Visual Studio tümleşik geliştirme ortamı (IDE) tarafından işlenir. Her **uzantısı** girdiğiniz, bir düzenleme deneyimi seçebilirsiniz. Bu IDE Düzenleyici veya belirli bir türden belgeleri açılacağı Tasarımcısı seçmenize olanak sağlar. Bu seçenekleri görüntülemek için seçin **seçenekleri** gelen **Araçları** menüsünde genişletin **metin düzenleyici** düğüm ve select **dosya uzantısı**.
 
- Bir seçenek "ile kodlama" seçtiğinizde, bu belge için bir kodlama düzeni seçmenizi sağlayan bu tür bir belgeyi açtığınızda bir iletişim kutusu görüntülenir. Bu, farklı platformlarda veya farklı hedef dillerde kullanmak için proje belgelerinizi sürümleri hazırlıyorsanız yararlı olabilir.
+ Bir seçenek "ile kodlama" seçtiğinizde, bu belge için bir kodlama düzeni seçmenize olanak sağlar, bu türdeki bir belge açtığınızda bir iletişim kutusu görüntülenir. Bu, farklı platformlarda veya farklı hedef dilde kullanmak için proje belgelerinizi sürümlerini hazırlanma istediğinizde yararlı olabilir.
 
 > [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için tercih **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
 
 
 ## <a name="uielement-list"></a>UIElement Listesi
  **Uzantı**
 
- Düzenleme deneyimi IDE tanımlamak istediğiniz dosya uzantısını yazın.
+ Dosya uzantısı olan düzenleme deneyimi IDE'de tanımlamak istediğiniz yazın.
 
  **Düzenleyici**
 
- IDE Düzenleyicisi'ni veya hangi belgelerde bu dosya uzantısı açılır Tasarımcısı seçin. Bir seçenek "ile kodlama" seçtiğinizde, bir kodlama düzeni seçmenizi sağlayan bu tür bir belge açtığınızda bir iletişim kutusu görüntülenir.
+ IDE Düzenleyici veya tasarımcı hangi belgelerde bu dosya uzantısı açılır seçin. "İle kodlama" bir seçeneği belirlediğinizde, bir kodlama düzeni seçmenize olanak sağlar böyle bir belge açtığınızda bir iletişim kutusu görüntülenir.
 
- **Ekle**
+ **Add**
 
- Belirtilen içeren bir giriş eklemeden **uzantısı** ve **düzenleme deneyimi** uzantısı listesine.
+ Belirtilen içeren bir giriş ekler **uzantısı** ve **düzenleme deneyimi** uzantı listesi.
 
  **Kaldır**
 
- Seçilen girişi uzantısı listeden siler.
+ Uzantı listeden seçilen girişi siler.
 
  **Uzantı listesi**
 
- Düzenleme deneyimi belirtilen tüm uzantılarını listeler.
+ Bir düzenleme deneyimi belirtilen tüm uzantıları listeler.
 
- **Uzantısız dosyalarına eşleme**
+ **Uzantısız dosyaları şuraya Eşle**
 
- Bir uzantısı olmayan dosyaları IDE tarafından nasıl işleneceğini belirtmek istiyorsanız bu seçeneği belirleyin.
+ Uzantısız dosyaları IDE tarafından nasıl işleneceğini belirtmek istiyorsanız bu seçeneği belirleyin.
 
  **Uzantısız dosya seçenekleri**
 
- Aynı liste olarak sağlar **Düzenleyicisi**. Belgeler dosya uzantıları olmadan açılacağı Tasarımcısı ve IDE Düzenleyicisi'ni seçin.
+ Aynı liste olarak sağlar **Düzenleyicisi**. Dosya uzantıları olmadan belgeleri açılacağı Tasarımcısı ve IDE Düzenleyicisi'ni seçin.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

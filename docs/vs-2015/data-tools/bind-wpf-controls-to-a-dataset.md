@@ -21,12 +21,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19189e63a3fb3fdfa3016cb2643cc34a193a2a52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b77e8211d8f76627f16f96abed8a61e6dae03d7
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893006"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219802"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Bir veri kümesine WPF denetimleri bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
   
 2.  İçinde **veri kaynakları** penceresinde tıklayın **yeni veri kaynağı Ekle**.  
   
-     **Veri kaynağı yapılandırması**Sihirbazı açılır.  
+     **Veri kaynağı yapılandırması** Sihirbazı açılır.  
   
 3.  Üzerinde **bir veri kaynağı türü seçin** sayfasında **veritabanı**ve ardından **sonraki**.  
   
@@ -122,7 +122,7 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
   
 2.  Tasarımcıda sağ **Fill,GetData()** seçin ve sorgu **yapılandırma**.  
   
-     **TableAdapter yapılandırma**Sihirbazı açılır.  
+     **TableAdapter yapılandırma** Sihirbazı açılır.  
   
 3.  İçinde **bir SQL deyimi girin** sayfasında, aşağıdaki WHERE yan tümcesinden sonra eklemek `SELECT` metin kutusuna deyimi.  
   

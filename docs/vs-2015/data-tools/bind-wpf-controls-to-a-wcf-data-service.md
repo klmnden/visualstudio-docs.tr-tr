@@ -21,12 +21,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 341ada0250c03776ab51ba62efcb98fb987088bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f3dbfad8655b8594301b8da7ce1dda050119206
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812432"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220384"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Bir WCF veri hizmetine WPF denetimleri bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
   
 3.  Adla değiştirin `AdventureWorksModel.edmx`, tıklatıp **Ekle**.  
   
-     **Varlık veri modeli**Sihirbazı açılır.  
+     **Varlık veri modeli** Sihirbazı açılır.  
   
 4.  Üzerinde **Choose Model Contents** sayfasında **veritabanından Oluştur**, tıklatıp **sonraki**.  
   
@@ -161,7 +161,7 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
   
 6.  İçinde **veri kaynakları** penceresinde tıklayın **yeni veri kaynağı Ekle**.  
   
-     **Veri kaynağı yapılandırması**Sihirbazı açılır.  
+     **Veri kaynağı yapılandırması** Sihirbazı açılır.  
   
 7.  İçinde **bir veri kaynağı türü seçin** seçin sayfasında **hizmet**ve ardından **sonraki**.  
   

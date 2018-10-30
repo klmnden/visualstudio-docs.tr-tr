@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd3a3f47af8251f6f4bfa1b5b5f08da7a1f3e3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f82d53d5bbc9d309ba5d7e8710f0afe2023b8965
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933566"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219893"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>İzlenecek yol: Visual Studio'da iş parçacıkları penceresini kullanarak birden çok iş parçacıklı bir uygulamada hata ayıklama
 Visual Studio sağlar bir **iş parçacıkları** penceresi ve diğer kullanıcı arabirimi çok iş parçacıklı uygulamalarda hata ayıklamanıza yardımcı olması için öğeleri. Bu öğreticide nasıl kullanılacağını gösterir **iş parçacıkları** penceresi ve **hata ayıklama konumu** araç çubuğu. Diğer araçları hakkında daha fazla bilgi için bkz: [birden çok iş parçacıklı uygulamalarda hata ayıklamaya başlama](../debugger/get-started-debugging-multithreaded-apps.md). Bu öğreticide yalnızca birkaç dakika sürer, ancak bunu tamamlamaya, çok iş parçacıklı uygulamalarda hata ayıklama özellikleriyle alışmanızı.   
@@ -37,7 +37,7 @@ Bu öğreticiye başlamadan bir çok iş parçacıklı uygulaması projesi gerek
   
      **Yeni proje** iletişim kutusu görüntülenir.  
   
-2.  İçinde **proje türü**s kutusunda, tercih ettiğiniz dili: **Visual Basic**, **Visual C#**, veya **Visual C++**.  
+2.  İçinde **proje türleri** kutusunda, tercih ettiğiniz dili: **Visual Basic**, **Visual C#** , veya **Visual C++**.  
   
 3.  Altında **Windows Masaüstü**, seçin **konsol uygulaması**.  
   

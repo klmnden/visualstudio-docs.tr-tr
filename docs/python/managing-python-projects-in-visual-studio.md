@@ -1,7 +1,7 @@
 ---
 title: Python uygulaması projeleri yönetme
 description: Visual Studio projelerinde amacı oluşturma ve Python için Python kodunda hata ayıklama ve farklı proje şablonları kullanılabilir projeleri yönetin.
-ms.date: 06/27/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6f404b10c2b0a8c237684d72f89baa58bd87a7c3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 9f5612aa166f81bf1f42983989db5bdf5422a7ef
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499025"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220475"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio'da Python projeleri
 

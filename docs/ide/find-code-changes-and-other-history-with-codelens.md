@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab45a6867fd94294746c03560dc49eeda9e68af0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e11b7458c5d26d56252b228522c53b00ebadb35b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853525"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220306"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens ile kod değişikliklerini ve diğer geçmişi bulma
 
@@ -127,7 +127,7 @@ Kodunuzu kaç kişinin değiştirdiğini ve kaç tane değişiklik tuşlarına b
 
 ### <a name="find-when-your-code-was-branched"></a>Kodunuzun ne zaman dallandırılmış Bul
 
-Kodunuzu dallandırılmış zaman bulmak için alt öğe dalı kodunuzda gidin. Ardından, **değişiklikleri** göstergesi veya tuşuna**Alt**+**6**:
+Kodunuzu dallandırılmış zaman bulmak için alt öğe dalı kodunuzda gidin. Ardından, **değişiklikleri** göstergesi veya tuşuna **Alt**+**6**:
 
 ![CodeLens: kodunuzun ne zaman dallandırılmış Bul](../ide/media/codelens-first-branch.png)
 
@@ -297,7 +297,7 @@ Klavyeyi kullanmak için:
 
 4. Basın **sekmesini** gitmek için **ayarlarını göster** listelemek ve tuşuna **aşağı ok** seçmek için **CodeLens**.
 
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>CodeLens taşıma s: `head`s yukarı görünen?
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>S: CodeLens ekran göstergesi görüntüsünü taşıyabilir miyim?
 
 **Y:** Evet, seçin ![Dock simgesi](../ide/media/codelensdockwindow.png) Codelens'i pencere olarak yerleştirmek için.
 

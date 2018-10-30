@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d89292bd3f0c3835d6d2ed809310bc2a395553f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 678a37eec7643976e689cc027922ff481a0e005f
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776099"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219386"
 ---
 # <a name="unit-testing-in-nodejs"></a>Birim testi node.js'de
 
@@ -84,7 +84,7 @@ Visual Studio 2017'de veya komut satırından testleri çalıştırabilirsiniz.
 
 ### <a name="run-tests-in-visual-studio-2017"></a>Visual Studio 2017'de testler
 
-Tıklayarak testler çalıştırabilirsiniz **tümünü Çalıştır** Test Gezgini'nde bağlantı. Veya, bir veya daha fazla testleri veya grupları'nı seçerek testleri çalıştırabilirsiniz sağ tıklatıp seçerek **seçili Testleri Çalıştır** uygulamalarım menüsünde. Arka planda testleri çalıştırmak ve Test Gezgini, otomatik olarak güncelleştirir ve sonuçları gösterilmektedir. Ayrıca, ayrıca seçili testleri seçerek ayıklanabilmesi **seçilen Testlerde Hata Ayıkla**.
+Tıklayarak testler çalıştırabilirsiniz **tümünü Çalıştır** Test Gezgini'nde bağlantı. Veya, bir veya daha fazla testleri veya grupları'nı seçerek testleri çalıştırabilirsiniz sağ tıklatıp seçerek **seçili Testleri Çalıştır** kısayol menüsünden. Arka planda testleri çalıştırmak ve Test Gezgini, otomatik olarak güncelleştirir ve sonuçları gösterilmektedir. Ayrıca, ayrıca seçili testleri seçerek ayıklanabilmesi **seçilen Testlerde Hata Ayıkla**.
 
 > [!Warning]
 > Düğüm 8 + kullanarak birim testleri hata ayıklama JavaScript için şu anda yalnızca çalışır test dosyalarını kesme noktaları isabet yapamaz TypeScript dosyaları sınayın. Geçici bir çözüm olarak kullanın `debugger` anahtar sözcüğü.

@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 994edc924d0261a7eb26c4eac6e3c9277f15a81c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b15617dce090a3aacde71ad48bf4984f5efbcac4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823885"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218931"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Gelişmiş Seçenekler, metin düzenleyici, temel (Visual Basic)
 **VB belirli** özellik sayfasında **temel** klasörü **metin düzenleyici** klasörü **seçenekleri** (**araçları** menüsü) iletişim kutusu aşağıdaki özellikleri içerir:
@@ -71,16 +71,6 @@ Metin düzenleyici, yordamların görsel kapsamını belirtir. Bir çizgi çizil
 **Interface ve MustOverride üyelerinin otomatik ekleme**
 
 İşlerseniz bir `Implements` deyimi veya bir `Inherits` ifadesi için bir sınıf, metin düzenleyici ekler prototipleri uygulanan ya da geçersiz, sırasıyla sahip üyeler için.
-
-**Yordam satır ayıraçlarını Göster**
-
-Metin düzenleyici, yordamların görsel kapsamını belirtir. Bir çizgi, aşağıdaki tabloda listelenen konumlara projenizin .vb kaynak dosyalarında çizilir:
-
-|.Vb kaynak dosya konumu|Satır konumu örneği|
-| - | - |
-|Sonra bir blok bildirimi yapısı kapatma|-Sonunda sınıfı, yapısı, modülü, arabirim veya numaralandırma<br />-Özelliği, işlev veya alt after<br />-Get ve set değil arasında bir özellikte yan tümceleri|
-|Tek satır yapıları bir dizi sonra|-İçeri aktarma deyimlerini after, önce bir sınıf dosyası içinde bir tür tanımı<br />-Bir sınıftaki tüm yordamları önce tanımlanan değişkenleri after|
-|Tek satır bildirimlerinden sonra (blok düzey bildirimleri)|-İçeri aktarma deyimlerini aşağıdaki deyimleri, değişken bildirimleri, olay bildirimleri, temsilci bildirimleri devralır ve DLL ifadeleri bildirme|
 
 **Hata düzeltme önerilerini etkinleştirmek**
 
