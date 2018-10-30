@@ -17,14 +17,14 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 07/25/2018
 ms.locfileid: "39252446"
 ---
-# <a name="program-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları'nı programla
-Bu bölümde, Unity API için Visual Studio Araçları kullanım örnekleri bulabilirsiniz.
+# <a name="program-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları'nı programlama
+Bu bölümde, Unity API'si için Visual Studio Araçları'nın kullanımına ilişkin örnekler bulabilirsiniz.
 
 ## <a name="examples"></a>Örnekler
- Unity API'leri için Visual Studio Araçları'nın nasıl kullanabileceğinizi gösteren bazı örnekler aşağıda verilmiştir.
+ Unity API'leri için Visual Studio Araçları'nı nasıl kullanabileceğinizi gösteren bazı örnekler aşağıda verilmiştir.
 
 ### <a name="customize-project-files-created-by-vstu"></a>VSTU tarafından oluşturulan proje dosyalarını özelleştirme
- Unity için Visual Studio Araçları proje dosyası oluşturma sırasında Unity stili geri çağırma sağlar. Proje dosyasını her tekrar oluşturmada nasıl değiştirebiileceğinizi öğrenmek için [Örnek: Proje dosyası oluşturma](../cross-platform/customize-project-files-created-by-vstu.md)yı inceleyin.
+ Unity için Visual Studio Araçları, proje dosyası oluşturma işlemi sırasında Unity stili geri çağırma olanağı sağlar. Proje dosyası her yeniden oluşturulduğunda dosyayı nasıl değiştirebileceğinizi öğrenmek için [Örnek: Proje dosyası oluşturma](../cross-platform/customize-project-files-created-by-vstu.md) bölümünü inceleyin.
 
-### <a name="share-the-unity-log-callback-with-vstu"></a>VSTU ile Unity log geri çağrısı paylaşma
- Unity'nin konsolunu Visual Studio'ya aktarabilmek için Unity için Visual Studio Araçları, Unity'e log geri çağrısı kaydeder. Eğer ki kod düzenleyiciniz de Unity'ye log geri çağrısı uygularsa, VSTU geri çağrısı onunla  karışabilir. Unity log geri çağrısını VSTU ile nasıl kullanabileceğini öğrenebilmek için [örnek: Log Geri Çağırma](../cross-platform/share-the-unity-log-callback-with-vstu.md)ya göz atın.
+### <a name="share-the-unity-log-callback-with-vstu"></a>VSTU ile Unity günlük geri çağrısı paylaşma
+ Unity için Visual Studio Araçları, Unity'nin konsolunu Visual Studio'ya aktarabilmek için Unity'ye bir günlük geri çağrısı kaydeder. Düzenleyici betikleriniz de Unity'ye günlük geri çağrısı kaydediyorsa VSTU geri çağrısı bununla karışabilir. Unity günlük geri çağrısını VSTU ile paylaşma hakkında bilgi edinmek için [Örnek: Günlük geri çağırma](../cross-platform/share-the-unity-log-callback-with-vstu.md) bölümüne bakın.
