@@ -9,12 +9,12 @@ description: Bazı Visual Studio abonelikleri dahil Office 365 Avantajı hakkın
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a3aa6a9dc60ea48db5e0d97b7a3c417dcb18559a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 273bba31f0b080116677e9a8dfa727af462fb7bc
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908398"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244469"
 ---
 # <a name="office-365-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Office 365
 
@@ -25,15 +25,24 @@ En iyi iş oluşturun. Her yerden, her zaman güncelleştirilir uygulamalarla ç
 İndirin ve Office 365'i etkinleştirmek için aşağıdaki adımları izleyin:
 1. Visual Studio Enterprise aboneliğinize oturum açın.  
 2. Tıklayarak **indirir** sekmesi.
-3. Öne çıkan bir listesini görürsünüz. Office listede seçin **Office Professional Plus 2019**
-0. İki listelerini görürsünüz.  Office 365 için ikinci bir listedir.  Mimari ve medya türü belirlenemiyor, ilk ve son açılan listeler okuma olduğunu doğrulayın **UNK** ve **diğer Pencereler**sırasıyla.   
-0. Office 365'i yüklemek için bir ürün anahtarı gerekir.  Tıklayarak **anahtarını Al** ikinci listenin altındaki bağlantıyı.
-0. Bir çıkış penceresinde herhangi bir anahtar zaten talep gösterilir.  Yeni bir anahtar almak için tıklayın **anahtar talep et**.
+3. Öne çıkan bir listesini görürsünüz. Office listede seçin **Office 365**. 
+   > [!div class="mx-imgBorder"]
+   > ![Office 365 yükleme](_img/vs-office365/vs-office365-downloads.png)
+0. Office 365'i yüklemek için bir ürün anahtarı gerekir.  Tıklayarak **anahtarını Al** Office 365 listenin altındaki bağlantıyı.
+   > [!div class="mx-imgBorder"]
+   > ![Office 365 ürün anahtarını Al](_img/vs-office365/vs-office365-get-key.png)
+0. Çıkış penceresi, sizin için kullanılabilir olan yanı sıra zaten talep herhangi bir anahtar gösterilmektedir.  Yeni bir anahtar almak için tıklayın **anahtar talep et** altında **Office Professional Pllus 2019** listeleme.
+   > [!div class="mx-imgBorder"]
+   > ![Office 365 talep ürün anahtarı](_img/vs-office365/vs-office365-claim-key.png)
 0. Anahtarı yalnızca istenen kaydeder. (Her zaman yeniden görmek için bu listeye de döndürebilir.)
 0. Çıkış penceresini kapatın.
 0. Tıklayın **indirme** düğmesi. 
+   > [!div class="mx-imgBorder"]
+   > ![Office 365 başlangıç indirme](_img/vs-office365/vs-office365-download-button.png)
 0. Microsoft hesabınızla oturum açın. (Henüz oturum açmadıysanız, tıklayın **sonraki**.)
 0. Ürün anahtarı, ülke veya bölge ve dil girin, ardından tıklatın **sonraki**.
+   > [!div class="mx-imgBorder"]
+   > ![Office 365 ürün anahtarı girin](_img/vs-office365/vs-office365-enter-key.png)
 0. Tıklayın **sonraki** yeniden.
 0. Tıklayın **yükleme** Office uygulamalarını yüklemek için. 
 
@@ -54,7 +63,7 @@ Office için uygulama geliştirmek üzere planlıyorsanız etkinleştirmek istey
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure | Yok | Yok |
 | Visual Studio Dev Essentials | Yok  | Yok |Yok |
 
-<sup>1</sup>*içerir: değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark için Microsoft değerli Professional (MVP), bölge Yöneticisi (RD), MCT Yazılımları ve Hizmetleri, Microsoft iş ortağı ağı düşünün.* 
+<sup>1</sup>*içerir: değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark için Microsoft değerli Professional (MVP), bölge Yöneticisi (RD), MCT Yazılımları ve Hizmetleri, Microsoft iş ortağı ağı düşünün.*
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 

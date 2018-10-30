@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e60a3c478da3e9c54dc0a43643305719c69d2fe0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b01bd342dd41d88b891a8d36cba066340f2330c8
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241195"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244443"
 ---
 # <a name="xml-editor-tasks"></a>XML Düzenleyicisi Görevleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Bu bölümde, XML Düzenleyicisi ile ortak görevleri tamamlamak açıklar.
  Yeni kod parçacıkları oluşturma işlemini gösterir.  
   
  [İzlenecek Yol: XSLT IntelliSense Kullanma](../xml-tools/walkthrough-using-xslt-intellisense.md)  
- XSLT IntelliSence özelliğinin nasıl kullanılacağı gösterilmektedir.  
+ XSLT IntelliSense özelliğini nasıl kullanacağınızı gösterir.  
   
  [İzlenecek Yol: XSLT Hiyerarşisi Kullanma](../xml-tools/walkthrough-using-xslt-hierarchy.md)  
  Başvurulan stil sayfasında hata ayıklama işlemi gösterilmektedir.  

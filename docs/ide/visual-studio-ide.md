@@ -1,6 +1,6 @@
 ---
 title: Visual Studio 2017'in genel bakış
-ms.date: 06/01/2018
+ms.date: 10/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -13,20 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cccaef2d5678bffa19e822cf537f4acb3d046cca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bc5961e2565c8618ad0f34a8c58d149e4a82c935
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907527"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244456"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Visual Studio IDE Hoş Geldiniz
 
 Visual Studio *tümleşik geliştirme ortamı* bir yaratıcı launching düzenleme, hata ayıklama ve kod oluşturmak için kullanın ve ardından bir uygulama yayımlama takımdır. Bir tümleşik geliştirme ortamı (IDE) birçok yönüyle yazılım geliştirme için kullanılabilen zengin bir programdır. Standart Düzenleyici ve hata ayıklayıcı sağladığımız çoğu IDE'ler sağlamanızı, Visual Studio yazılım geliştirme işlemini kolaylaştırmak için derleyiciler, kod tamamlama araçları, grafik tasarımcıları ve daha birçok özellik içerir.
 
-Windows ve Mac için Visual Studio kullanılabilir [Mac için Visual Studio](/visualstudio/mac/) birçok Visual Studio 2017 aynı özelliklere sahiptir ve platformlar arası ve mobil uygulamalarını geliştirmek için optimize edilmiştir.
+Windows ve Mac için Visual Studio kullanılabilir [Mac için Visual Studio](/visualstudio/mac/) birçok Visual Studio 2017 aynı özelliklere sahiptir ve platformlar arası ve mobil uygulamalarını geliştirmek için optimize edilmiştir. Bu makalede Visual Studio 2017'in Windows sürümünde odaklanır.
 
-Bu genel bakış makalesi, Windows için Visual Studio 2017'de odaklanır. Temel IDE özellikleri tanıtır. Visual Studio ile basit bir oluşturma gibi yapabileceğiniz bazı şeyleri gösterilecektir kullanan proje [IntelliSense](using-intellisense.md) bir kodlama Yardımı ve programın yürütülmesi sırasında bir değişkenin değerini görmek için bir uygulama hata ayıklama. Biz de çeşitli araç pencerelerine ilişkin tura katılın.
+Visual Studio 2017'in üç sürüm bulunur: Community, Professional ve Enterprise. Bkz: [Visual Studio 2017 IDE'lerini karşılaştırın](https://visualstudio.microsoft.com/vs/compare/) her iki sürümünde desteklenen hangi özellikler hakkında bilgi edinmek için.
+
+Bu genel bakış makalesi için temel IDE özelliklerini tanıtır. Visual Studio ile basit bir oluşturma gibi yapabileceğiniz bazı şeyleri gösterilecektir kullanan proje [IntelliSense](using-intellisense.md) bir kodlama Yardımı ve programın yürütülmesi sırasında bir değişkenin değerini görmek için bir uygulama hata ayıklama. Biz de çeşitli araç pencerelerine ilişkin tura katılın.
 
 ## <a name="install-the-visual-studio-ide"></a>Visual Studio IDE yükleyin
 

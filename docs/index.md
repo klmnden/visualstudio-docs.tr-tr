@@ -4,12 +4,12 @@ hide_bc: true
 title: Visual Studio belgeleri | Microsoft Docs
 description: Uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için tercih ettiğiniz dilde geliştirmek için Visual Studio 2017'yi kullanmayı öğrenin.
 ms.topic: hub-page
-ms.openlocfilehash: 6381432e452d78fd786bb744437627f53f433fc3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b7816ba239b0624aaf46792bcb0c62aefa4809c4
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831035"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244365"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -89,12 +89,12 @@ ms.locfileid: "49831035"
                                             <div class="cardText">
                                                 <h3>Visual Studio kullanmayı öğrenin</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="ide/visual-studio-ide.md"><img  src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />Kılavuzlu Turu Başlat</a></li>
-                                                    <li><a class="barLink" href="ide/index-writing-code.md"><img  src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="Pencil icon" />Yazma ve kod düzenleme</a></li>
-                                                    <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img  src="https://docs.microsoft.com/media/common/i_build.svg" alt="Crane icon" />Kodunuzu oluşturun</a></li>
-                                                    <li><a class="barLink" href="debugger/getting-started-with-the-debugger.md"><img  src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Debug icon" />Kodunuzdaki hataları ayıklamanıza</a></li>
-                                                    <li><a class="barLink" href="test/getting-started-with-unit-testing.md"><img  src="https://docs.microsoft.com/media/common/i_test.svg" alt="Science flask icon" />Kodunuzu test etme</a></li>
-                                                    <li><a class="barLink" href="data-tools/create-a-sql-database-by-using-a-designer.md"><img  src="https://docs.microsoft.com/media/common/i_generic-database.svg" alt="Database icon" />Verilere yerel olarak veya bulutta</a></li>
+                                                    <li><a class="barLink" href="ide/visual-studio-ide.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />Kılavuzlu Turu Başlat</a></li>
+                                                    <li><a class="barLink" href="ide/index-writing-code.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="Pencil icon" />Yazma ve kod düzenleme</a></li>
+                                                    <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_build.svg" alt="Crane icon" />Kodunuzu oluşturun</a></li>
+                                                    <li><a class="barLink" href="debugger/getting-started-with-the-debugger.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Debug icon" />Kodunuzdaki hataları ayıklamanıza</a></li>
+                                                    <li><a class="barLink" href="test/getting-started-with-unit-testing.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_test.svg" alt="Science flask icon" />Kodunuzu test etme</a></li>
+                                                    <li><a class="barLink" href="data-tools/create-a-sql-database-by-using-a-designer.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_generic-database.svg" alt="Database icon" />Verilere yerel olarak veya bulutta</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -175,6 +175,7 @@ F # </a>
                                                                     <a class="barLink" href="/visualstudio/ide/quickstart-visual-basic-console">
                                                                         <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="VB logo">
 Visual Basic </a>
+                                                                </li>
                                                             </ul>
                                                         </td>
                                                         <td style="border-top-color:transparent!important;padding-left:0;">
@@ -196,7 +197,6 @@ Node.js </a>
                                                                 </li>
                                                             </ul>
                                                         </td>
-                                                        </td>
                                                     </tr>
                                                 </table>
                                             </div>
@@ -213,7 +213,7 @@ Node.js </a>
                                         <div class="card">
                                             <div class="cardText">
                                                 <h3>Veya geliştirmek istediğinizi seçin</h3>
-                                                 <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
+                                                <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
                                                 <ul class="noBullet">
                                                     <li>
                                                         <a class="barLink" href="/visualstudio/ide/quickstart-uwp-csharp">
@@ -241,7 +241,8 @@ Unity oyununuzu</a>
                                                             <img src="https://docs.microsoft.com/media/logos/logo_NET.svg" alt=".NET logo">
 ASP.NET Core Web uygulaması</a>
                                                     </li>
-                                                </ul></td></tr></table>
+                                                </ul></td></tr>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
@@ -1034,6 +1035,8 @@ ASP.NET Core Web uygulaması</a>
                         </ul>
                     </li>
                 </ul>
+            </li>
+            </li>
             </li>
         </ul>
     </div>

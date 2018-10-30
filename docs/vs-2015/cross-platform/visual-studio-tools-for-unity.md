@@ -32,7 +32,7 @@ Bu bölümde, Unity, Visual Studio Unity ile oyunlar oluşturmaya yönelik güç
   
  Unity editor oyun dünya uygulamanızı bir araya getirilmesi için mükemmel olmakla birlikte, kodunuzun içinde yazılamıyor. İle **Unity için Visual Studio Araçları**, düzenleme, hata ayıklama ve üretkenlik özelliklerini Düzenleyicisi ve C# kullanarak Unity projeniz için oyun betikleri oluşturmak için Visual Studio'nun alışık olduğunuz kodu kullanabilirsiniz ve bunların hatalarını ayıklayın Görselini kullanma Studio'nun güçlü hata ayıklama özellikleri.  
   
- Ancak, birden fazla Unity için Visual Studio Araçları, Ayrıca Unity editor ile kapsamlı tümleştirme sahiptir; böylece sürekli basit görevleri gerçekleştirmek için daha az zaman geçiş geçireceksiniz, Unity özgü üretkenlik iyileştirmeleri sağlar ve Unity belgeleri parmaklarınızın ucunda koyar.  
+ Ancak Unity için Visual Studio Araçları bunlarla sınırlı değil. Unity düzenleyicisiyle kapsamlı bir tümleştirmeye de sahip olduğundan, basit görevleri gerçekleştirmek için bile daha az zaman harcamanıza ve Unity'ye özel üretkenlik geliştirmelerinden yararlanmanıza olanak sağlamanın yanı sıra Unity belgelerini parmaklarınızın ucuna getirir.   
   
  Devam [genel bakış](../cross-platform/overview-of-visual-studio-tools-for-unity.md) Unity teklifler veya için hangi Visual Studio Araçları hakkında daha fazla bilgi edinmek için [Başlarken](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) Unity için Visual Studio Araçları yükleme ve Unity projenizle kullanmaya başlama hakkında bilgi edinmek için.  
   

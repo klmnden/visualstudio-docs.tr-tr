@@ -2,7 +2,7 @@
 title: C# konsol uygulamaları Visual Studio ile çalışmaya başlama
 description: Visual Studio'da, adım adım C# konsol uygulaması oluşturmayı öğrenin.
 ms.custom: ''
-ms.date: 09/28/2018
+ms.date: 10/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: ad1ee95cb9cc754261502e7377cde6c91e5befce
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 3450572e4cf4959530599c5eea9efb3168485b58
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859516"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244378"
 ---
 # <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>Öğretici: Visual Studio'da C# konsol uygulaması ile çalışmaya başlama
 
@@ -61,11 +61,7 @@ Görmüyorsanız **konsol uygulaması (.NET Core)** proje şablonu, alabilirsini
 
 ## <a name="create-a-c-console-calculator-app"></a>"C# konsol hesaplayıcı" uygulaması oluşturma
 
-1. Visual Studio 2017'yi açın ve ardından üstteki menü çubuğundan **dosya** > **yeni** > **proje**.
-
-1. İçinde **yeni proje** iletişim kutusunun sol bölmesinde, **C#** ve ardından **.NET Core**. Orta bölmede seçin **konsol uygulaması (.NET Core)**. Dosya adı *hesaplayıcı*.
-
-1. Kod düzenleyicisine aşağıdaki kodu yapıştırın veya girin:
+1. Oluşturduktan sonra  **C# konsol uygulaması**kod düzenleyicisine aşağıdaki kodu yapıştırın veya girin:
 
     ```csharp
     using System;

@@ -2,7 +2,7 @@
 title: C# ve Visual Studio'da ASP.NET Core ile çalışmaya başlama
 description: Visual Studio'da C# ile adım adım ASP.NET Core web uygulaması oluşturmayı öğrenin.
 ms.custom: ''
-ms.date: 09/17/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -15,18 +15,30 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 25ddfd7c0d45666c4dbbafe98c88dc8f66aac447
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d684ecb9e29dd4c6f140ad7d6f52e301e0d0da13
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284056"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244495"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Öğretici: C# ve Visual Studio'da ASP.NET Core ile çalışmaya başlama
 
 Visual Studio kullanarak ASP.NET Core ile C# geliştirme için Bu öğreticide, bir C# ASP.NET Core web uygulaması oluşturma, değişiklik, bazı IDE özelliklerini ve sonra uygulamayı çalıştırın.
 
+## <a name="before-you-begin"></a>Başlamadan önce
+
+### <a name="install-visual-studio"></a>Visual Studio'yu yükleme
+
 Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+
+### <a name="update-visual-studio"></a>Visual Studio’yu güncelleştirme
+
+Visual Studio'yu önceden yüklediyseniz, en son sürümü çalıştırdığınızdan emin olun. Yüklemenizi güncelleştirme hakkında daha fazla bilgi için bkz. [en son sürüme Visual Studio 2017 güncelleştirme](../install/update-visual-studio.md) sayfası.
+
+### <a name="choose-your-theme-optional"></a>(İsteğe bağlı) temanızı seçin
+
+Bu öğretici, koyu Tema kullanan ekran görüntüleri içerir. Koyu tema kullanmayan ancak öğrenmek istiyorsanız [Düzenleyicisi ve Visual Studio IDE'yi kişiselleştirme](quickstart-personalize-the-ide.md) öğrenmek için sayfa nasıl.
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
@@ -46,7 +58,7 @@ Görmüyorsanız **ASP.NET Core Web uygulaması** proje şablonu, alabilirsiniz,
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>Seçenek 1: Yeni Proje iletişim kutusunu kullanın.
 
-1. Seçin **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu.
+1. Seçin **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu. (Görünen ayarlarınıza bağlı olarak, görmek için kaydırmanız gerekebilir.)
 
    ![Yeni Proje iletişim kutusundan açık Visual Studio yükleyicisi bağlantıyı seçin](../ide/media/open-visual-studio-installer-mycoreapp.png)
 
@@ -71,6 +83,9 @@ Görmüyorsanız **ASP.NET Core Web uygulaması** proje şablonu, alabilirsiniz,
 1. Doğrulayın **ASP.NET Core 2.1** üstteki açılan menüde görünür. Ardından, **Tamam**.
 
    ![Yeni ASP.NET Core Web uygulaması iletişim kutusu](../ide/media/new-project-csharp-aspnet-razor-web-app.png)
+
+   > [!NOTE]
+   > Görmüyorsanız **ASP.NET Core 2.0** veya daha sonra üstteki açılan menüden Visual Studio'nun en son sürümü çalıştırdığınızdan emin olun. Yüklemenizi güncelleştirme hakkında daha fazla bilgi için bkz. [en son sürüme Visual Studio 2017 güncelleştirme](../install/update-visual-studio.md) sayfası.
 
 ### <a name="about-your-solution"></a>Çözümünüzü hakkında
 
