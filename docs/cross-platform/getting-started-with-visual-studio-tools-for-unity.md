@@ -59,38 +59,38 @@ Visual Studio 2017 zaten yüklüyse veya el ile yüklemeyi tercih ederseniz Visu
 
 ## <a name="configure-unity-for-use-with-visual-studio"></a>Unity'yi Visual Studio ile kullanım için yapılandırma
 
- Unity 2018.1 itibarıyla Visual Studio, Unity'de varsayılan dış kod düzenleyicisi olmalıdır. Bunu onaylayabilir veya dış betik düzenleyicisini Visual Studio'nun belirli bir sürümü olarak değiştirebilirsiniz:
+Unity 2018.1 itibarıyla Visual Studio, Unity'de varsayılan dış kod düzenleyicisi olmalıdır. Bunu onaylayabilir veya dış betik düzenleyicisini Visual Studio'nun belirli bir sürümü olarak değiştirebilirsiniz:
 
 1. **Edit** (Düzenle) menüsünde **Preferences** (Tercihler) seçeneğini belirleyin.
 
    ![Tercihler'i seçme](media/vstu_unity-preferences.png)
 
-1. Tercihler iletişim kutusunda, **External Tools** (Dış Araçlar) sekmesini seçin.
+2. Tercihler iletişim kutusunda, **External Tools** (Dış Araçlar) sekmesini seçin.
 
-1. **External Script Editor** (Dış Betik Düzenleyici) listesinde istediğiniz Visual Studio sürümü listelenmişse seçin, aksi takdirde **Browse...** (Gözat...) seçeneğini belirleyin.
+3. Gelen **dış betik Düzenleyicisi** açılan listesinde, istediğiniz Visual Studio sürümünüze listelenmişse seçin, aksi takdirde **Gözat...** .
 
    ![Visual Studio'yu seçme](media/vstu_unity-external-tools.png)
 
-1. **Browse...** (Gözat...) seçili ise Visual Studio yükleme dizininizdeki **Common7/IDE** klasörüne gidin ve **devenv.exe** öğesini seçip **Aç**'a tıklayın.
+4. Varsa **Gözat...**  olan seçili gidin **Common7/IDE** seçin ve Visual Studio yükleme dizini içinde dizin **devenv.exe**. Ardından **açık**.
 
    ![Aç'ı seçin](media/vstu_browse-for-application.png)
 
-1. **External Script Editor** (Dış Betik Düzenleyici) listesinde Visual Studio seçildikten sonra, **Editor Attaching** (Düzenleyici Ekleme) onay kutusunun seçili olduğundan emin olun.
+5. **External Script Editor** (Dış Betik Düzenleyici) listesinde Visual Studio seçildikten sonra, **Editor Attaching** (Düzenleyici Ekleme) onay kutusunun seçili olduğundan emin olun.
 
-1. Yapılandırma işlemini tamamlamak için **Preferences** (Tercihler) iletişim kutusunu kapatın.
+6. Yapılandırma işlemini tamamlamak için **Preferences** (Tercihler) iletişim kutusunu kapatın.
 
 ## <a name="support-for-older-versions"></a>Eski sürümler için destek
 
- Unity için Visual Studio Araçları'nı Visual Studio Market'ten indirip yükleyin. Visual Studio sürümünüz için doğru paketi yüklemeniz gerekir.
+ İndirip Unity için Visual Studio Araçları, Visual Studio Market'ten yükleyebilirsiniz. Visual Studio sürümünüz için doğru paketi yüklemeniz gerekir.
 
 - Visual Studio 2015 Community, Visual Studio 2015 Professional veya Visual Studio 2015 Enterprise için:
 
    [Unity için Visual Studio 2015 Araçları'nı indirin](https://marketplace.visualstudio.com/items?itemName=SebastienLebreton.VisualStudio2015ToolsforUnity)
 
-> [!NOT]
+> [!NOTE]
 > Unity için Visual Studio Araçları, Unity 5.2 veya sonraki bir sürümünün yanı sıra Visual Studio Community, Professional, Premium ya da Enterprise gibi uzantıları destekleyen bir Visual Studio sürümü gerektirir. Unity yüklemenizde Unity için Visual Studio Araçları'nın etkinleştirildiğini doğrulamak için **Yardım** menüsünde **Unity Hakkında**'yı seçin ve iletişim kutusunun sol alt kısmında "Unity için Microsoft Visual Studio Araçları etkin" ifadesinin yer alıp almadığını kontrol edin.
 > ![Unity hakkında](media/vstu_about-unity.png)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
- Visual Studio'yu kullanarak Unity projenizde çalışma ve hata ayıklama hakkında bilgi edinmek için bkz. [Unity için Visual Studio Araçları](../cross-platform/using-visual-studio-tools-for-unity.md)
+ Çalışmak ve Unity projenizde Visual Studio hata ayıklama hakkında bilgi edinmek için [Unity için Visual Studio Araçları](../cross-platform/using-visual-studio-tools-for-unity.md).
