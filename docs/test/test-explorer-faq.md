@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 069150d7f441b754b21c0a3a487f5238ef94e039
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c9321c90132b026a71733dbbadc19a82db20d981
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775110"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244391"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio Test Gezgini hakkında SSS
 
@@ -84,6 +84,10 @@ ms.locfileid: "43775110"
 **Test Gezgini arama kutusuna artık "Dosya yolu" filtresi var.**
 
 Dosya yolu filtrede **Test Gezgini** arama kutusuna, Visual Studio 2017 sürüm 15.7 Önizleme 3 kaldırıldı. Bu özellik kullanımın düşük olduğu ve Test Gezgini, bu özellik hariç tutarak test yöntemlerini daha hızlı alabilir. Bu değişiklik, geliştirme akışınızı keser, lütfen hakkında geri bildirim göndererek bize [Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
+
+## <a name="remove-undocumented-interfaces"></a>Belgelenmemiş arabirimleri Kaldır
+**Bazı test ile ilgili API'ler, artık Visual Studio 2019 içinde mevcut değildir. Neler değişti?**
+Visual Studio 2019 ', bazı test penceresi daha önce genel olarak işaretlenmiş, ancak hiçbir zaman resmi olarak belgelenen API'leri kaldırılacak. Bunlar, "Visual Studio uzantısı maintainers erken bir uyarı vermek için 2017'de kullanım dışı"olarak işaretlenmiş. Bizim bilgi için çok az sayıda uzantıları bu API'leri bulundu ve bir bağımlılık bunlar üzerinde gerçekleştirilen. Bunlar `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken`, ve `SearchFilterTokenType`. Bu değişiklik uzantınızı etkiliyorsa, Lütfen hata dosyalama tarafından bize [Geliştirici topluluğu](https://developercommunity.visualstudio.com).
 
 ## <a name="test-adapter-nuget-reference"></a>Test bağdaştırıcısı NuGet başvurusu
 **Visual Studio 2017 sürüm 15,8 testlerimi bulunan, ancak yürütme yok.**
