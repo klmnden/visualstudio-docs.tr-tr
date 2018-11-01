@@ -17,12 +17,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aa426175155f45feb480b8185b5902049101f577
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1bf24c24a60a37fd8fc5859d216c34eaa2e9b4f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242729"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951276"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Kodlanmış UI Test Düzenleyicisi'ni Kullanarak Kodlanmış UI Testlerini Düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ UI eylem özelliklerini düzenleme
   
  Bir UI eylem özelliklerini değiştirmek için **UI eylemi** bölmesinde UI eylem özelliklerini yı düzenlemek istediğiniz bir UI eyleminden içeren test yöntemi genişletin ve ardından Özellikler penceresini kullanarak özelliklerini değiştirin.  
   
- Örneğin, bir sunucu kullanılamıyor ve Web tarayıcınızı ile ilişkili bir kullanıcı Arabirimi eylemine sahip belirten **Web sayfasına gidin 'http://Contoso1/default.aspx'**, URL'sine değişebilir `‘ http://Contoso2/default.aspx’`.  
+ Örneğin, bir sunucu kullanılamıyor ve Web tarayıcınızı ile ilişkili bir kullanıcı Arabirimi eylemine sahip belirten **Web sayfasına gidin '<http://Contoso1/default.aspx’>**, URL'sine değişebilir `‘ http://Contoso2/default.aspx’`.  
   
  ![Denetim Özellikleri](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Denetim özelliklerini düzenleme  
@@ -125,19 +125,19 @@ Denetim özelliklerini düzenleme
  *Başka neleri bilmeliyim?*  
  **Önemli sorunlar**  
   
--   ![Uyarı simgesi](../test/media/caution.gif "uyarı") **uyarısı:** bir metodu bölme, ayrıca bu UI hala istiyorsanız oluşturmak üzere olduğunuz yeni yöntem çağırmak için varolan bir yöntem çağırır herhangi bir kodu değiştirmeniz gerekir Eylemler dahildir. Bir metodu bölme, Microsoft Visual Studio iletişim kutusu görüntülenir. Varolan bir yöntem oluşturmak üzere olduğunuz yeni yöntemi de çağrılacak çağıran herhangi bir kodu değiştirmeniz gerekir sizi uyarır. Seçin **Evet**.  
+- ![Uyarı simgesi](../test/media/caution.gif "uyarı") **uyarısı:** bir metodu bölme, ayrıca bu UI hala istiyorsanız oluşturmak üzere olduğunuz yeni yöntem çağırmak için varolan bir yöntem çağırır herhangi bir kodu değiştirmeniz gerekir Eylemler dahildir. Bir metodu bölme, Microsoft Visual Studio iletişim kutusu görüntülenir. Varolan bir yöntem oluşturmak üzere olduğunuz yeni yöntemi de çağrılacak çağıran herhangi bir kodu değiştirmeniz gerekir sizi uyarır. Seçin **Evet**.  
   
- **İpuçları**  
+  **İpuçları**  
   
--   ![İpucu](../test/media/tip.png "İpucu") bölme geri seçin **geri** gelen **Düzenle** menüsünden veya Ctrl + Z tuşuna basın.  
+- ![İpucu](../test/media/tip.png "İpucu") bölme geri seçin **geri** gelen **Düzenle** menüsünden veya Ctrl + Z tuşuna basın.  
   
--   ![İpucu](../test/media/tip.png "İpucu") yeni yöntem yeniden adlandırabilirsiniz. UI Eylemler bölmesinde seçin ve seçin **Yeniden Adlandır** kodlanmış UI Test Düzenleyicisi araç çubuğu düğmesi.  
+- ![İpucu](../test/media/tip.png "İpucu") yeni yöntem yeniden adlandırabilirsiniz. UI Eylemler bölmesinde seçin ve seçin **Yeniden Adlandır** kodlanmış UI Test Düzenleyicisi araç çubuğu düğmesi.  
   
-     veya  
+   veya  
   
-     Yeni test yöntemi ve seçin, kısayol menüsünü açın **Yeniden Adlandır**.  
+   Yeni test yöntemi ve seçin, kısayol menüsünü açın **Yeniden Adlandır**.  
   
-     Microsoft Visual Studio iletişim kutusu görüntülenir. Bu yöntemin başvurduğu herhangi bir kodu değiştirmeniz gerekir sizi uyarır. Seçin **Evet**.  
+   Microsoft Visual Studio iletişim kutusu görüntülenir. Bu yöntemin başvurduğu herhangi bir kodu değiştirmeniz gerekir sizi uyarır. Seçin **Evet**.  
   
 ##  <a name="CodedUITestEditor_MoveMethods"></a> UIMap dosyaya özelleştirmeyi kolaylaştırmak için bir test yöntemi Taşı  
  Test yöntemleri birinin karar verirseniz kodlanmış UI test özel kod gerektirir, UIMap.cs veya UIMap.vb dosyasına taşımanız gerekir. Aksi takdirde, kodlanmış UI testi derlenmiştir her kodunuzu üzerine yazılır. Yöntem taşımayın, özel kodunuz testi derlenmiştir her seferinde üzerine yazılır.  
@@ -149,11 +149,11 @@ Denetim özelliklerini düzenleme
  *Başka neleri bilmeliyim?*  
  **Önemli sorunlar**  
   
--   ![Uyarı simgesi](../test/media/caution.gif "uyarı") **uyarısı:** bir yöntemi taşıdığınızda, artık kodlanmış UI Test düzenleyicisini kullanarak düzenleyebilirsiniz. Özel kodunuzu eklemeli ve Kod Düzenleyicisi'ni kullanarak korumalısınız. Yöntemi taşıdığınızda, Microsoft Visual Studio iletişim kutusu görüntülenir. Bu, yöntem UIMap.uitest dosyasından UIMap.cs için taşınır veya UIMap.vb dosyasını, kodlanmış UI Test Düzenleyicisi'ni kullanarak yöntemi düzenlemenin mümkün olmayacak sizi uyarır. Seçin **Evet**.  
+- ![Uyarı simgesi](../test/media/caution.gif "uyarı") **uyarısı:** bir yöntemi taşıdığınızda, artık kodlanmış UI Test düzenleyicisini kullanarak düzenleyebilirsiniz. Özel kodunuzu eklemeli ve Kod Düzenleyicisi'ni kullanarak korumalısınız. Yöntemi taşıdığınızda, Microsoft Visual Studio iletişim kutusu görüntülenir. Bu, yöntem UIMap.uitest dosyasından UIMap.cs için taşınır veya UIMap.vb dosyasını, kodlanmış UI Test Düzenleyicisi'ni kullanarak yöntemi düzenlemenin mümkün olmayacak sizi uyarır. Seçin **Evet**.  
   
- **İpuçları**  
+  **İpuçları**  
   
--   ![İpucu](../test/media/tip.png "İpucu") taşıma geri seçin **geri** gelen **Düzenle** menüsünden veya Ctrl + Z tuşuna basın. Ancak, daha sonra el ile kod UIMap.cs veya UIMap.vb dosyasından kaldırmanız gerekir.  
+- ![İpucu](../test/media/tip.png "İpucu") taşıma geri seçin **geri** gelen **Düzenle** menüsünden veya Ctrl + Z tuşuna basın. Ancak, daha sonra el ile kod UIMap.cs veya UIMap.vb dosyasından kaldırmanız gerekir.  
   
 ##  <a name="CodedUITestEditor_LocateUIControl"></a> Test edilen uygulamada bir UI denetimine bulma  
  Bazen görselleştirme denetimleri testten geçirilen uygulamanın kullanıcı Arabiriminde nerede bulunur zor olabilir. Kodlanmış UI Test Düzenleyicisi özelliklerini UI denetim eşleminde listelenen bir denetim seçin ve test edilen uygulamada konumunu görüntülemek biridir. Kullanarak **UI denetimini Bul** test edilen uygulamada özelliği de kullanılabilir bir denetime yaptığınız arama özellik değişiklikleri doğrulamak için.  
@@ -167,11 +167,11 @@ Denetim özelliklerini düzenleme
  *Başka neleri bilmeliyim?*  
  **Önemli sorunlar**  
   
--   ![Uyarı simgesi](../test/media/caution.gif "uyarı") **uyarısı:** bir UI denetimini Bul önce test ile ilişkili uygulamanın çalıştığını doğrulayın.  
+- ![Uyarı simgesi](../test/media/caution.gif "uyarı") **uyarısı:** bir UI denetimini Bul önce test ile ilişkili uygulamanın çalıştığını doğrulayın.  
   
- **İpuçları**  
+  **İpuçları**  
   
--   ![İpucu](../test/media/tip.png "İpucu") alternatif olarak, **bulun tüm** kapsayıcı altındaki tüm denetimleri bulunduğu doğru olduğunu doğrulamak için seçeneği. Bu seçenek, sonraki bölümde açıklanmıştır.  
+- ![İpucu](../test/media/tip.png "İpucu") alternatif olarak, **bulun tüm** kapsayıcı altındaki tüm denetimleri bulunduğu doğru olduğunu doğrulamak için seçeneği. Bu seçenek, sonraki bölümde açıklanmıştır.  
   
 ##  <a name="CodedUITestEditor_LocateDecendants"></a> Denetim ve alt öğelerini konumlandırma  
  Bir kapsayıcı altındaki tüm denetimleri test edilen uygulamanın kullanıcı arabiriminde doğru konumlandırılabilir doğrulayabilirsiniz. Bu, kapsayıcı üzerinde yapılan arama özellik değişiklikleri doğrulamaya yardımcı olabilir. Ayrıca, olduğunda önemli değişiklikler test edilen uygulamanın kullanıcı arabiriminde, var olan denetim arama özellikleri yine de doğru olduğunu doğrulayabilirsiniz.  
@@ -201,11 +201,11 @@ Denetim özelliklerini düzenleme
  *Başka neleri bilmeliyim?*  
  **Notlar**  
   
--   ![Prerequsite](../test/media/prereq.png "önkoşul uyarılarını gözardı et") belirli bir denetime bir UI eyleminden önce kullanılabilir olmasını sağlamak ihtiyacınız varsa, test yönteminizde uygun UITestControl.WaitForControlXXX() kullanarak özel kod eklemeyi düşünmelidir yöntem. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Kodlanmış UI yapma, kayıttan yürütme sırasında belirli olaylar için bekleme testleri](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
+- ![Prerequsite](../test/media/prereq.png "önkoşul uyarılarını gözardı et") belirli bir denetime bir UI eyleminden önce kullanılabilir olmasını sağlamak ihtiyacınız varsa, test yönteminizde uygun UITestControl.WaitForControlXXX() kullanarak özel kod eklemeyi düşünmelidir yöntem. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Kodlanmış UI yapma, kayıttan yürütme sırasında belirli olaylar için bekleme testleri](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
   
- **İpuçları**  
+  **İpuçları**  
   
--   ![İpucu](../test/media/tip.png "İpucu") Özellikler penceresi görüntülenmiyorsa, tuşunu Enter tuşuna basın veya alternatif olarak, F4 tuşuna basılı tutarak Alt.  
+- ![İpucu](../test/media/tip.png "İpucu") Özellikler penceresi görüntülenmiyorsa, tuşunu Enter tuşuna basın veya alternatif olarak, F4 tuşuna basılı tutarak Alt.  
   
 ## <a name="external-resources"></a>Dış kaynaklar  
   
