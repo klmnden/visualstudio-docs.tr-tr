@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4eb5b3a73d2b06123e7878ac90ceb5bdf21869c
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: b7f492c1a192f8c12418c679f498bf282859cbf3
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143170"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671891"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Web Tarayıcısı, Ortam, Seçenekler İletişim Kutusu
 İç Web tarayıcısı ve Internet Explorer seçeneklerini ayarlar. Bu iletişim kutusuna erişmek için tıklayın **seçenekleri** üzerinde **Araçları** menüsünü genişletin **ortam** klasörünü açın ve seçin **Web tarayıcısı**.
@@ -53,7 +53,7 @@ ms.locfileid: "50143170"
 
 -   **Kaynak Düzenleyicisi** kaynakta görüntülemek için seçin [Düzenleyicisi](../../ide/writing-code-in-the-code-and-text-editor.md).
 
--   **HTML Düzenleyicisi** kaynakta görüntülemek için seçin [HTML Tasarımcısı](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). İki görünüm birinde Web sayfasını düzenlemek için bu seçimi kullanın: Tasarım görünümü veya standart metin tabanlı kaynak görünümü.
+-   **HTML Düzenleyicisi** kaynakta görüntülemek için seçin [HTML Tasarımcısı](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). İki görünüm birinde Web sayfasını düzenlemek için bu seçimi kullanın: Tasarım görünümü veya standart metin tabanlı kaynak görünümü.
 
 -   **Dış düzenleyici** kaynak başka bir düzenleyicide görüntülemek için seçin. Seçtiğiniz herhangi bir düzenleyiciye Örneğin, Notepad.exe yolunu belirtin.
 
@@ -68,4 +68,4 @@ Internet Explorer seçeneklerini değiştirmek için tıklayın **Internet Özel
 
 - [Ortam Seçenekleri İletişim Kutusu](../../ide/reference/environment-options-dialog-box.md)
 - [Genel, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/general-environment-options-dialog-box.md)
-- [HTML Tasarımcısı](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)
+- [HTML Tasarımcısı](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)

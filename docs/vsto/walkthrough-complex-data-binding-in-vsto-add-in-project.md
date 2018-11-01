@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: da2ddc582c6555e8ec4567f4faace603f6f0f677
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: af82d74c0e0a0446b759a06a9e874a39fc57b6fd
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872492"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672529"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>İzlenecek yol: VSTO eklenti projesinde karmaşık veri bağlama
   Konak denetimlerinin ve VSTO eklentisi projeleri Windows Forms denetimlerinde verileri bağlayabilirsiniz. Bu kılavuzda, Microsoft Office Excel çalışma sayfasına denetimler ekleme ve çalışma zamanında verilere denetimler bağlama gösterilmektedir.
@@ -46,9 +46,9 @@ ms.locfileid: "49872492"
 
 -   Çalışan bir SQL Server 2005 veya SQL Server 2005 olan Express örneğine erişim `AdventureWorksLT` bağlı örnek veritabanı. İndirebileceğiniz `AdventureWorksLT` veritabanını [CodePlex Web sitesinde](http://go.microsoft.com/fwlink/?LinkId=115611). Veritabanı ekleme hakkında daha fazla bilgi için aşağıdaki konulara bakın:
 
-    -   SQL Server Management Studio veya SQL Server Management Studio Express kullanarak bir veritabanı eklemek için bkz: [nasıl yapılır: veritabanı (SQL Server Management Studio) ekleme](http://msdn.microsoft.com/b4efb0ae-cfe6-4d81-a4b4-6e4916885caa).
+    -   SQL Server Management Studio veya SQL Server Management Studio Express kullanarak bir veritabanı eklemek için bkz: [nasıl yapılır: veritabanı (SQL Server Management Studio) ekleme](/sql/relational-databases/databases/attach-a-database).
 
-    -   Komut satırını kullanarak bir veritabanı eklemek için bkz: [nasıl yapılır: SQL Server Express için bir veritabanı dosyası iliştirmek](http://msdn.microsoft.com/0f8e42b5-7a8c-4c30-8c98-7d2bdc8dcc68).
+    -   Komut satırını kullanarak bir veritabanı eklemek için bkz: [nasıl yapılır: SQL Server Express için bir veritabanı dosyası iliştirmek](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma
  İlk adım, bir Excel VSTO eklentisi projesi oluşturmaktır.

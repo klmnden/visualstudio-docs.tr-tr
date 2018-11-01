@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc99820eded646d745d54e50fb58917a2c15b094
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 3e38fb09f77d7c00d2764ca181a604b3e25c264b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321287"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672983"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Visual Studio için klavye kısayolları
 
@@ -128,4 +128,4 @@ Bu makalede klavye kısayollarını kullanarak, Visual Studio'da daha kolay gezi
 
 - [Erişilebilirlik ipuçları ve püf noktaları](../ide/reference/accessibility-tips-and-tricks.md)
 - [Klavye kısayolları (Azure DevOps Hizmetleri ve TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
-- [Visual Studio ipuçları ve püf noktaları blogu](http://blogs.msdn.com/b/zainnab)
+- [Visual Studio ipuçları ve püf noktaları blogu](https://blogs.msdn.com/b/zainnab)

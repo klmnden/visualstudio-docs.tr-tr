@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 933f31d6cbfe34846b0331d76abdc39cdf261d29
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 593d778247e3c1e6b9a09358c82b5fd7139cfbb9
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775858"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672918"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>3. adım: her etikete rasgele simge atama
 Simgeler her oyunda aynı hücrelerde gösterilirse, oyun pek de zorlu olmaz. Bunu önlemek için simgeler rasgele formunuzdaki etiket denetimlerine kullanarak Ata bir `AssignIconsToSquares()` yöntemi.
@@ -47,9 +47,9 @@ Simgeler her oyunda aynı hücrelerde gösterilirse, oyun pek de zorlu olmaz. Bu
 
      İlk satırı dönüştürür **denetimi** değişken adında bir etikete **iconLabel**. Sonraki satır bir `if` dönüştürme emin olmak için denetler deyimidir. Dönüştürme işe, deyimleri `if` deyimi çalıştırın. (Önceki öğreticilerden hatırlayabileceğiniz `if` deyimi belirttiğiniz her tür koşulu değerlendirmek için kullanılır.) İlk satırı `if` deyimi adlı bir değişken oluşturur **; randomnumber &** simgeler listesindeki öğelerden birine karşılık gelen rasgele bir sayı içerir. Bunu yapmak için kullandığı <xref:System.Random.Next> yöntemi <xref:System.Random> daha önce oluşturduğunuz bir nesne. `Next` Yöntemi rasgele sayıyı döndürür. Bu satır ayrıca kullanan <xref:System.Collections.Generic.List%601.Count> özelliği **simgeler** rasgele sayının seçileceği aralığı belirlemek için liste. Sonraki satır simge, liste öğelerine atar <xref:System.Windows.Forms.Label.Text> etiketin özelliği. Derleme dışı bırakılan satır bu konunun sonunda açıklanmaktadır. Son olarak, son satırında `if` deyimi forma eklenmiş olan simgeyi listeden kaldırır.
 
-     Kodun belirli bir bölümünün ne işe yaradığından emin olamadığınızda, fare işaretçisini kod öğesinin üzerine getirip ortaya çıkan araç ipucunu gözden geçirebileceğinizi unutmayın. Ayrıca, Visual Studio hata ayıklayıcısını kullanarak, program çalışırken kodun her satırını adım adım geçebilirsiniz. Bkz: [adım ı: Visual Studio hata ayıklayıcısı ile bunu nasıl?](http://msdn.microsoft.com/vstudio/ee672313.aspx) veya [hata ayıklayıcısı ile kodlarda gezinme](../debugger/navigating-through-code-with-the-debugger.md) daha fazla bilgi için.
+     Kodun belirli bir bölümünün ne işe yaradığından emin olamadığınızda, fare işaretçisini kod öğesinin üzerine getirip ortaya çıkan araç ipucunu gözden geçirebileceğinizi unutmayın. Ayrıca, Visual Studio hata ayıklayıcısını kullanarak, program çalışırken kodun her satırını adım adım geçebilirsiniz. Bkz: [adım ı: Visual Studio hata ayıklayıcısı ile bunu nasıl?](https://msdn.microsoft.com/vstudio/ee672313.aspx) veya [hata ayıklayıcısı ile kodlarda gezinme](../debugger/navigating-through-code-with-the-debugger.md) daha fazla bilgi için.
 
-3.  Oyun tahtasını simgelerle doldurmak için çağrılacak ihtiyacınız `AssignIconsToSquares()` program başlar başlamaz yöntemi. Visual C# kullanıyorsanız, yalnızca çağrının altına bir deyim ekleyin `InitializeComponent()` yönteminde **Form1**_Oluşturucusu_, böylece formunuz gösterilmeden önce kendini ayarlamak için yeni yönteminizi çağırır. Oluşturucular, sınıf veya yapı gibi yeni bir nesne oluşturduğunuzda çağrılır. Bkz: [oluşturucular (C# programlama Kılavuzu)](http://msdn.microsoft.com/library/ace5hbzh.aspx) veya [oluşturucuları ve yıkıcıları kullanma](http://msdn.microsoft.com/library/2z08e49e.aspx) daha fazla bilgi için Visual Basic'te.
+3.  Oyun tahtasını simgelerle doldurmak için çağrılacak ihtiyacınız `AssignIconsToSquares()` program başlar başlamaz yöntemi. Visual C# kullanıyorsanız, yalnızca çağrının altına bir deyim ekleyin `InitializeComponent()` yönteminde **Form1**_Oluşturucusu_, böylece formunuz gösterilmeden önce kendini ayarlamak için yeni yönteminizi çağırır. Oluşturucular, sınıf veya yapı gibi yeni bir nesne oluşturduğunuzda çağrılır. Bkz: [oluşturucular (C# programlama Kılavuzu)](/dotnet/csharp/programming-guide/classes-and-structs/constructors) veya [oluşturucuları ve yıkıcıları kullanma](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\)) daha fazla bilgi için Visual Basic'te.
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]
 

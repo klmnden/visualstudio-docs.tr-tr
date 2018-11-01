@@ -1,6 +1,6 @@
 ---
 title: Seçenekler, Metin Düzenleyici, JavaScript, IntelliSense
-ms.date: 11/04/2016
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,54 +14,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36ca451f4585e57c430456412e1811ddb56d8adf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 742d6394975b6920218579e1b4652bb2e99c479c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220397"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670786"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Seçenekler, Metin Düzenleyici, JavaScript, IntelliSense
-Kullanım **IntelliSense** sayfasının **seçenekleri** JavaScript için IntelliSense'in davranışını etkileyen ayarları değiştirmek için iletişim kutusu. Erişebildiğiniz **IntelliSense** seçerek sayfası **Araçları**, **seçenekleri** menü çubuğu ve ardından genişletme **metin düzenleyici**,  **JavaScript**, **IntelliSense.**
+Kullanım **IntelliSense** sayfasının **seçenekleri** JavaScript için IntelliSense'in davranışını etkileyen ayarları değiştirmek için iletişim kutusu. Erişebileceğiniz **IntelliSense** seçerek sayfası **Araçları** > **seçenekleri** menü çubuğu ve ardından genişletme **metin düzenleyici**  >  **JavaScript** > **IntelliSense.**
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 **IntelliSense** sayfası aşağıdaki bölümleri içerir:
 
-## <a name="validation"></a>Doğrulama
- JavaScript düzenleyicisinin belgenizdeki sözdizimini doğrulama şekline ilişkin tercihleri ayarlamak için bu seçenekleri kullanabilirsiniz.
-
-## <a name="uielement-list"></a>UIElement Listesi
- **Zobrazovat chyby syntaxe**
-
- Bu onay kutusu seçili olmadığında, JavaScript kod düzenleyicisi sözdizimi hatalarını göstermez. Kendi yazmadığınız kodla çalışıyorsanız ve sözdizimi hatalarını düzeltmeyi amaçlamıyorsanız, bu özellik kullanışlıdır.
-
- Bu onay kutusu işaretli olduğunda tercih yapma seçeneğine sahip **hataları uyarı olarak göster** onay kutusu.
-
- **Hataları uyarı olarak göster**
-
- Bu onay kutusu seçildiğinde, JavaScript hataları uyarı olarak gösterilir (hata listesindeki hatalar olarak değil).
-
- **Çeşitli dosyalar projeleri içindeki dosyaların uzak kaynaklarını (örneğin http://) indir**
-
- Bu onay kutusu seçiliyken ve bir projenin bağlamı dışında açılmış bir JavaScript dosyanız varsa, Visual Studio IntelliSense bilgilerini sağlamak amacıyla dosyada başvurulan uzak JavaScript dosyalarını indirir. Bu seçenek işaretliyse, JavaScript dosyanıza bir başvuru olarak eklediğiniz dosyalar indirilir.
-
-> [!NOTE]
-> Web projeleri için projenizde başvurulan uzak dosyalar varsayılan olarak yüklenir.
-
-
 ## <a name="statement-completion"></a>Deyim Tamamlama
  IntelliSense deyim tamamlama davranışını değiştirmek için bu seçenekleri kullanabilirsiniz.
 
-## <a name="uielement-list"></a>UIElement Listesi
- **Yalnızca sekmesini kullanın veya işleme için girin**
+### <a name="uielement-list"></a>UIElement Listesi
+ **Yalnızca yürütmek için sekme veya Enter kullan**
 
- Bu onay kutusu seçildiğinde, JavaScript kod düzenleyicisi deyimlere tamamlama listesinde seçilen öğeleri ancak siz Sekme veya Enter tuşuna bastıktan sonra ekler. Bu onay kutusu seçili olmadığında nokta, virgül, iki nokta üst üste, açılış parantezi ve açılış ayracı ({) da deyimlere seçili öğeleri ekleyebilir.
+ Bu onay kutusunu seçtiğinizde, JavaScript Kod Düzenleyicisi'deyimleri yalnızca seçtiğiniz sonra tamamlama listesinde seçilen öğeleri ekler. **sekmesini** veya **Enter** anahtarı. Bu onay kutusunun seçimini kaldırın, – gibi bir nokta, virgül, iki nokta üst üste, açık parantez ve açık küme ayracı ({}) – diğer karakterler deyimleri seçili öğeler de ekleyebilirsiniz.
 
 ## <a name="references"></a>Referanslar
  Farklı JavaScript projesi türleri için kapsamda olan IntelliSense .js türlerini belirtmek için bu seçenekleri kullanabilirsiniz. IntelliSense başvuruları normalde, genel nesneler için IntelliSense desteği sağlamak amacıyla kullanılır. Bu sayfayı, çalışma zamanında yüklenmesi gereken komut dosyalarının yüklenme sırasını ayarlamak ve IntelliSense uzantı dosyalarını eklemek için de kullanabilirsiniz.
 
-## <a name="uielement-list"></a>UIElement Listesi
+### <a name="uielement-list"></a>UIElement Listesi
  **Başvuru grupları**
 
  Bu seçenek başvuru grubu türünü belirtir. Üç başvuru grubu desteklenir:
@@ -87,6 +65,15 @@ Bu seçenek, dil hizmetinin bağlamına dosyaların yüklendiği sırayı belirt
 **Grup bir başvuru ekleyin**
 
 Bu seçenek, uygun dosyaların bulunduğu yere giderek ek IntelliSense .js dosyalarını eklemek için bir yol sağlar.
+
+**Çeşitli dosyalar projeleri içindeki dosyaların uzak kaynaklarını (örneğin http://) indir**
+
+Bu onay kutusu seçildiğinde ve bir projenin bağlamı dışında açılmış bir JavaScript dosyanız varsa, Visual Studio IntelliSense bilgilerini sağlamak amacıyla dosyasında başvurulan uzak JavaScript dosyalarını indirir. Bu seçenek belirlenirse, bunları JavaScript dosyanıza bir başvuru olarak eklediğiniz dosyalar indirilir.
+
+> [!NOTE]
+> Web projeleri için projenizde başvurulan uzak dosyalar varsayılan olarak yüklenir.
+
+
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -11,54 +11,54 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: feee6c95852e90fef5f3fcacf47dfb67d48255b7
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 87992bb8ab2557dbca4c8e7e3a94dd99e5de7682
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747648"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671930"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>11. adım: programınızı çalıştırma ve diğer özellikleri deneme
-Programınızı tamamlandı ve çalıştırılmaya hazır. Programınızı çalıştırma ve arka plan rengini ayarlama <xref:System.Windows.Forms.PictureBox>. Daha fazla bilgi için program formun rengini değiştirmek, düğmeler ve onay kutusu özelleştirme ve form özelliklerini değiştirme artırmak için deneyin.
+Programınız bitti ve çalıştırılmaya hazır. Programınızı çalıştırmak ve arka plan rengini ayarlama <xref:System.Windows.Forms.PictureBox>. Daha fazla bilgi için formun rengini değiştirerek, düğmeleri ve onay kutusunu özelleştirerek ve formun özelliklerini değiştirerek programı iyileştirmeyi deneyin.
 
- Tamamlanmış bir örnek sürümünü indirmek için bkz: [tam resim görüntüleyici öğretici örnek](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
+ Örnek tamamlanmış bir sürümünü indirmek için bkz [eksiksiz resim görüntüleyici Öğreticisi örneği](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
 
- ![video bağlantı](../data-tools/media/playvideo.gif)bu konuda video sürümü için bkz: [Öğreticisi 1: Visual Basic'te - Video 5 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205216) veya [Eğitmen 1: Resim Görüntüleyici C# ' - Video 5 oluşturma](http://go.microsoft.com/fwlink/?LinkId=205206). Bazı menü komutları ve diğer kullanıcı arabirimi öğeleri küçük farklar olduklarından bu videolar Visual Studio'nun önceki bir sürümünü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde geçerli sürümünde Visual Studio çalışır.
+ ![video bağlantısı](../data-tools/media/playvideo.gif)bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 5 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205216) veya [öğretici 1: içinde resim görüntüleyici oluşturma C# -Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.
 
-## <a name="to-run-your-program-and-set-the-background-color"></a>Programınızı çalıştırma ve arka plan rengini ayarlamak için
+## <a name="to-run-your-program-and-set-the-background-color"></a>Programınızı çalıştırmak ve arka plan rengini ayarlamak için
 
-1.  Seçin **F5**, veya menü çubuğunda seçin **hata ayıklama** > **hata ayıklamayı Başlat**.
+1.  Seçin **F5**, veya menü çubuğunda, **hata ayıklama** > **hata ayıklamayı Başlat**.
 
-2.  Bir resim açmadan önce seçin **arka plan rengini ayarlama** düğmesi. **Renk** iletişim kutusu açılır.
+2.  Bir resmi açmadan önce seçin **arka plan rengini ayarlamak** düğmesi. **Renk** iletişim kutusu açılır.
 
      ![Renk iletişim kutusu](../ide/media/express_colordialog.png)
 **renk** iletişim kutusu
 
-3.  PictureBox arka plan rengini ayarlamak için renk seçin. Yakından bakmak `backgroundButton_Click()` nasıl çalıştığını anlamak için yöntem.
+3.  PictureBox arka plan rengini ayarlamak için bir renk seçin. Yakından bakın `backgroundButton_Click()` nasıl çalıştığını anlamanız için yöntemi.
 
     > [!NOTE]
-    >  Kendi URL'ye yapıştırılarak Internet'ten resim yükleyebilir **Dosya Aç** iletişim kutusu. Arka plan rengini gösterecek şekilde saydam arka plan görüntüyle bulmaya çalışın.
+    >  Resim URL'sini yapıştırarak Internet'ten yükünü **açık dosya** iletişim kutusu. Arka plan renkleriniz görünsün saydam bir arka plan görüntüsüne bulmaya çalışın.
 
-4.  Seçin **resmi temizleyin** düğmesi temizlenmeden emin olun. Ardından, seçerek programdan çıkmak **Kapat** düğmesi.
+4.  Seçin **resmi Temizle** temizlendiğinden emin olmak için düğme. Sonra programdan çıkmak **Kapat** düğmesi.
 
 ## <a name="to-try-other-features"></a>Diğer özellikleri denemek için
 
--   Form ve düğmeleri kullanarak rengini **BackColor** özelliği.
+-   Kullanarak form ve düğmelerin rengini değiştirmek **BackColor** özelliği.
 
--   Düğmeler ve onay kutusunu kullanarak özelleştirme **yazı tipi** ve **ForeColor** özellikleri.
+-   Düğmeleri ve onay kutusunu kullanarak özelleştirme **yazı tipi** ve **ForeColor** özellikleri.
 
--   Formun değiştirme **FormBorderStyle** ve **ControlBox** özellikleri.
+-   Formunuzun **FormBorderStyle** ve **ControlBox** özellikleri.
 
--   Formun kullanmak **AcceptButton** ve **CancelButton** bu düğmeleri otomatik olarak seçilen şekilde zaman kullanıcının seçtiği özellikleri **Enter** veya **Esc** anahtarı. Program açık olun **Dosya Aç** kullanıcı seçtiğinde iletişim kutusu **Enter** ve kullanıcı seçtiğinde kutusunu kapatmak **Esc**.
+-   Formunuzun kullanın **AcceptButton** ve **CancelButton** düğmeler otomatik olarak seçilir, bu nedenle, kullanıcının seçtiği özellikleri **Enter** veya **Esc** anahtarı. Programa **Dosya Aç** kullanıcı seçtiğinde bir iletişim kutusu **Enter** ve kullanıcı seçtiğinde kutuyu kapatın **Esc**.
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
--   Visual Studio'da programlama hakkında daha fazla bilgi için bkz: [programlama kavramları](http://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6).
+-   Visual Studio'da programlama hakkında daha fazla bilgi için bkz. [programlama kavramları](https://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6).
 
 -   Visual Basic hakkında daha fazla bilgi için bkz: [Visual Basic ile uygulama geliştirme](/dotnet/visual-basic/developing-apps/index).
 
--   Visual C# hakkında bilgi edinmek için bkz: [C# dili ve .NET Framework Giriş](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework).
+-   Görsel hakkında daha fazla bilgi edinmek için C#, bkz: [giriş C# dili ve .NET Framework](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework).
 
--   Sonraki öğretici gitmek için bkz: [Eğitmen 2: zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).
+-   Sonraki eğitime gitmek için bkz: [öğretici 2: zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
--   Eğitmen önceki adıma dönmek için bkz: [adım 10: ek düğmeler ve onay kutusu için kod yazma](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+-   Önceki öğretici adımına dönmek için bkz: [adım 10: ek düğmeler ve onay kutusu için kod yazma](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).

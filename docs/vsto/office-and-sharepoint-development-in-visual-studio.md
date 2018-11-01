@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7217c2b3177d3eb1f591cbb6256b9e40fba23b12
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38291b46f2f9fee83ba9af0ae553cecca5ee35f6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677884"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671709"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio'da Office ve SharePoint geliştirme
   Microsoft Office ve SharePoint basit bir uygulama oluşturarak genişletebilir veya kullanıcılar indirir, eklenti [Office Store](https://store.office.com/) veya Kurumsal katalog veya yüklemek, kullanıcıların .NET Framework tabanlı bir çözüm oluşturarak bir bilgisayar.  
@@ -45,7 +45,7 @@ ms.locfileid: "35677884"
 ##  <a name="Apps"></a> Office ve SharePoint için eklentileri oluşturma  
  Office 2013 ve SharePoint 2013'ü oluşturmak, dağıtmak ve Office ve SharePoint'i genişletin eklentileri paraya yardımcı olan yeni bir eklenti modeli sunar.  Bu eklenti Office veya SharePoint Online'da çalıştırabilirsiniz ve kullanıcıların birçok cihazından bunlarla etkileşim kurabilir.  
   
- Yeni nasıl öğrenmek [Office eklenti modeli](https://msdn.microsoft.com/library/office/jj220082.aspx) Office kullanıcılarınızın deneyimini genişletmek için.  
+ Yeni nasıl öğrenmek [Office eklenti modeli](/office/dev/add-ins/overview/office-add-ins) Office kullanıcılarınızın deneyimini genişletmek için.  
   
  VSTO eklentileri ve çözümlerle karşılaştırıldığında küçük kaplama bu eklentiler sahiptir ve neredeyse tüm web teknolojisi HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.  Başlamak için Office geliştirici araçları Visual Studio içinde veya basit web tabanlı araç kullanımı Napa Office 365 geliştirme projeleri oluşturma, kod yazma ve eklentilerinizi tarayıcıda çalışan olanak sağlayan araçları, kod adıyla.  
   
@@ -64,8 +64,8 @@ ms.locfileid: "35677884"
   
 |Bitiş|Bkz. |  
 |--------|---------|  
-|Office eklentileri hakkında daha fazla bilgi edinin ve daha sonra bir oluşturabilirsiniz.|[Office eklentileri](http://msdn.microsoft.com/office/dn448457)|  
-|Farklı şekilde, Office ve genişletmek için kullanabileceğiniz, bir uygulama veya bir Office eklentisinin kullanıp kullanmadığını karar karşılaştırın.|[Office eklentileri, VSTO ve VBA için yol haritası](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
+|Office eklentileri hakkında daha fazla bilgi edinin ve daha sonra bir oluşturabilirsiniz.|[Office eklentileri](/office/dev/add-ins/publish/publish)|  
+|Farklı şekilde, Office ve genişletmek için kullanabileceğiniz, bir uygulama veya bir Office eklentisinin kullanıp kullanmadığını karar karşılaştırın.|[Office eklentileri, VSTO ve VBA için yol haritası](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|  
   
 ### <a name="build-a-sharepoint-add-in"></a>Bir SharePoint eklentisi oluşturma  
  Kullanıcılarınız için SharePoint genişletmek için bir SharePoint eklentisi oluşturun. Temel olarak, bu gereksinimi kullanıcılar ya da işletmeniz çözer bir küçük, kullanımı kolay, tek başına uygulamasıdır.  
@@ -80,9 +80,9 @@ ms.locfileid: "35677884"
   
 |Bitiş|Bkz. |  
 |--------|---------|  
-|SharePoint eklentileri hakkında daha fazla bilgi edinin ve daha sonra bir oluşturabilirsiniz.|[SharePoint eklentileri](https://msdn.microsoft.com/library/office/fp179930.aspx)|  
-|Eklentileri, SharePoint için geleneksel SharePoint çözümleri ile karşılaştırın.|[SharePoint eklentileri'nde SharePoint çözümleri ile karşılaştırılan](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Bir SharePoint eklentisi veya bir SharePoint çözümünü oluşturmak isteyip istemediğinizi seçin.|[SharePoint eklentileri ve SharePoint çözümleri arasında karar verin](https://msdn.microsoft.com/library/office/jj163114.aspx)|
+|SharePoint eklentileri hakkında daha fazla bilgi edinin ve daha sonra bir oluşturabilirsiniz.|[SharePoint eklentileri](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)|  
+|Eklentileri, SharePoint için geleneksel SharePoint çözümleri ile karşılaştırın.|[SharePoint eklentileri'nde SharePoint çözümleri ile karşılaştırılan](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|  
+|Bir SharePoint eklentisi veya bir SharePoint çözümünü oluşturmak isteyip istemediğinizi seçin.|[SharePoint eklentileri ve SharePoint çözümleri arasında karar verin](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
   
 ##  <a name="Add-ins"></a> Bir VSTO eklentisi oluşturma  
  Bir VSTO eklenti Office 2007 veya Office 2010 veya Office 2013 ve Office 2016, Office eklentileri ile olasılıklara ötesine genişletmek için oluşturun. VSTO eklentileri yalnızca masaüstünde çalışır. Kullanıcıların, VSTO eklentileri, dağıtmak ve desteklemek genellikle daha zor bulunmaları yüklemeniz gerekmez.  Ancak, VSTO eklentinizi daha yakından Office ile tümleştirilebilir. Örneğin, sekmeler ve denetimler için Office Şerit ekleyin ve belgelerin birleştirilmesi veya grafikleri değiştirme gibi gelişmiş Otomasyon görevlerini gerçekleştirmek. .NET Framework yararlanın ve C# ve Visual Basic Office nesnelerle etkileşim kurmak için kullanın.  
@@ -95,8 +95,8 @@ ms.locfileid: "35677884"
   
 |Bitiş|Oku|  
 |--------|----------|  
-|Farklı şekilde, Office ve genişletmek için kullanabileceğiniz, bir VSTO eklentisinin veya bir Office eklentisinin kullanması gerekip gerekmediğini karar karşılaştırın.|[Office eklentileri, VSTO ve VBA için yol haritası](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
-|Bir VSTO eklentisi oluşturma.|[VSTO eklentileri, Visual Studio ile derleme](https://msdn.microsoft.com/library/jj620922.aspx)|  
+|Farklı şekilde, Office ve genişletmek için kullanabileceğiniz, bir VSTO eklentisinin veya bir Office eklentisinin kullanması gerekip gerekmediğini karar karşılaştırın.|[Office eklentileri, VSTO ve VBA için yol haritası](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|  
+|Bir VSTO eklentisi oluşturma.|[VSTO eklentileri, Visual Studio ile derleme](create-vsto-add-ins-for-office-by-using-visual-studio.md)|  
   
 ##  <a name="Solutions"></a> Bir SharePoint çözümünü oluşturun  
  Hedef SharePoint Foundation 2010 ve SharePoint Server 2010 veya SharePoint 2013 ve SharePoint 2016 dışındaki bir SharePoint eklentisi ile olası şekilde genişletmek için bir SharePoint çözümünü oluşturun.  
@@ -107,7 +107,7 @@ ms.locfileid: "35677884"
   
 |Bitiş|Bkz. |  
 |--------|---------|  
-|SharePoint çözümleri SharePoint eklentileri ile karşılaştırın.|[SharePoint eklentileri'nde SharePoint çözümleri ile karşılaştırılan](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
+|SharePoint çözümleri SharePoint eklentileri ile karşılaştırın.|[SharePoint eklentileri'nde SharePoint çözümleri ile karşılaştırılan](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|  
 |Bir SharePoint çözümünü oluşturun.|[SharePoint çözümleri oluşturma](../sharepoint/create-sharepoint-solutions.md)|  
   
   

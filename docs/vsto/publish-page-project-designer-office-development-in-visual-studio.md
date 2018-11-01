@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e945dbafbf7107b616a654d952bd8690bf72788a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e4d315a00f527953500b47095ee4080b4eafd4cc
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904719"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672723"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Yayımlama Sayfası, Proje Tasarımcısı (Visual Studio'da Office Geliştirme)
   **Yayımla** sayfasının **Proje Tasarımcısı** dağıtım özelliklerini yapılandırmak için kullanılır.  
@@ -32,7 +32,7 @@ ms.locfileid: "49904719"
  Bu sayfaya erişmek için projeyi seçin **Çözüm Gezgini**ve ardından **proje** menüsünde seçin *Projectname* **özellikleri** . Varsa **Yayımla** sayfası görüntülenmez öğesini **Yayımla** sekmesi.  
   
 > [!NOTE]  
->  De Yayınlama konumu ayarlayabilirsiniz **Yayımlama Sihirbazı**. Daha fazla bilgi için [nasıl yapılır: ClickOnce kullanarak Office çözümü yayımlama](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
+>  De Yayınlama konumu ayarlayabilirsiniz **Yayımlama Sihirbazı**. Daha fazla bilgi için [nasıl yapılır: ClickOnce kullanarak Office çözümü yayımlama](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
 ## <a name="uielement-list"></a>UIElement listesi  
  **Yayımlama klasörü konumu (web sitesi, ftp sunucusu veya dosya yolu)**  
@@ -55,7 +55,7 @@ ms.locfileid: "49904719"
   
  Yükleme dosyaları belge veya Kurulum programı ilişkili bir konuma gibi CD seçeneğiyle kullanılıyorsa bu kutuyu boş bırakın.  
   
- Bu değer daha sonra yönetici tarafından atanabilir. Daha fazla bilgi için [nasıl yapılır: bir Office çözümünü yükleme yolunu değiştirmek](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+ Bu değer daha sonra yönetici tarafından atanabilir. Daha fazla bilgi için [nasıl yapılır: bir Office çözümünü yükleme yolunu değiştirmek](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
  **Önkoşullar**  
  Önkoşullar Kurulum programına dahil veya yükleme sırasında isteğe bağlı olarak indirilir.  
@@ -113,6 +113,6 @@ ms.locfileid: "49904719"
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md)   
  [ClickOnce kullanarak Office çözümü dağıtma](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Office çözüm dağıtım önkoşulları](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)  
+ [Office çözüm dağıtım önkoşulları](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)  
   
   

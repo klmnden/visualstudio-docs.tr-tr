@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d301d2a43e820f59979692071edbfb25ba1d7386
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 4c38a74a48dbac190b5f557641e10f54a0413703
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073747"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671995"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio ürün geri bildirimi
 
@@ -54,7 +54,7 @@ Microsoft destek hizmetleri, o anda geçerli olan fiyatlara, şartlara ve koşul
 
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>Geliştirici topluluğuna istiyorum
 
-Sorular ve cevaplar diğer geliştiricilerle paylaşmak istediğiniz kullanırsanız [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com) site [MSDN Forumları](http://social.msdn.microsoft.com/Forums/home), veya [StackOverflow](http://stackoverflow.com/). Ayrıca diğer geliştiricilerden gelen kod görüntüleyebilir ve kendi örneklerinizi paylaşabilirsiniz [geliştirici kodu örnekleri](http://code.msdn.microsoft.com/) site.
+Sorular ve cevaplar diğer geliştiricilerle paylaşmak istediğiniz kullanırsanız [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com) site [MSDN Forumları](https://social.msdn.microsoft.com/Forums/home), veya [StackOverflow](http://stackoverflow.com/). Ayrıca diğer geliştiricilerden gelen kod görüntüleyebilir ve kendi örneklerinizi paylaşabilirsiniz [geliştirici kodu örnekleri](https://code.msdn.microsoft.com/) site.
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Visual Studio belgelerini geliştirmeye yardımcı olmak istiyorum
 

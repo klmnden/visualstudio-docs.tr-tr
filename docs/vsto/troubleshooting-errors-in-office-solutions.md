@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f8555d1edae8d22acd6a34a14c66f4e432b39e61
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bcc5600f38e2d53244d972e4c4c7094182bfa48c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917108"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672957"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Office çözümleri hatalarında sorun giderme
   Visual Studio'da Office çözümleri geliştirirken, aşağıdaki görevleri gerçekleştirirken sorunlarla karşılaşabilirsiniz:  
@@ -124,7 +124,7 @@ ms.locfileid: "49917108"
   
  [!code-csharp[Trin_VstcoreTroubleshootingExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingExcelCS/ThisWorkbook.cs#1)]  
   
- Office PIA'ların arabirimlerde olay hakkında daha fazla bilgi için bkz. [sınıflar ve arabirimler Office birincil birlikte çalışma derlemelerindeki genel bakış](http://msdn.microsoft.com/da92dc3c-8209-44de-8095-a843659368d5).  
+ Office PIA'ların arabirimlerde olay hakkında daha fazla bilgi için bkz. [sınıflar ve arabirimler Office birincil birlikte çalışma derlemelerindeki genel bakış](/previous-versions/office/office-12//ms247299(v=office.12)).  
   
 ### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenetv40shortsharepointincludesnet-v40-short-mdmd-or-the-includenetv45vstoincludesnet-v45-mdmd"></a>Olamaz Office PIA başvurusu sınıfları projelerinde hedefleyen [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
  ' İ hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], bir Office PIA'içinde tanımlanan bir sınıfa başvuruyor kod, varsayılan olarak derlenmez. PIA'ların sınıflarda adlandırma kuralı kullanmak *objectname*gibi sınıf <xref:Microsoft.Office.Interop.Word.DocumentClass> ve <xref:Microsoft.Office.Interop.Excel.WorkbookClass>. Örneğin, Word VSTO eklenti projesindeki aşağıdaki kod derlemeyecektir.  

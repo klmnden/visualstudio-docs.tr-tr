@@ -36,12 +36,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c3466a5a448baf378cf18a00c0e987f3cbcc0cb5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e9773c06293f189e572ef84e9b10f45a1ca5d5d8
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676876"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670994"
 ---
 # <a name="write-code-in-office-solutions"></a>Office çözümlerinde kod yazma
   Visual Studio'da proje türlerinde farklı Office projelerinde kod yazma bazı yönlerini vardır. Bu farklılıkların birçoğu, Office nesne modelleri, yönetilen kod için sunulan şekilde ilgilidir. Diğer farklar Office projeleri tasarımını ilgilidir.  
@@ -62,7 +62,7 @@ ms.locfileid: "35676876"
  Office PIA'ların son kullanıcı bilgisayarlarında Office çözümlerini hedefleyen çalıştırmak için gerekli değildir [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri. Daha fazla bilgi için [tasarım ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md).  
   
 ### <a name="use-types-in-primary-interop-assemblies"></a>Birincil birlikte çalışma bütünleştirilmiş kodlarında türlerini kullanın  
- Office PIA'ların Office uygulamalarını nesne modelini açığa çıkaran türleri ve doğrudan kodunuzda kullanılması amaçlanmamıştır ek altyapı türleri birleşimini içerir. Office PIA'ların türlerinde genel bakış için bkz: [sınıflar ve arabirimler Office birincil birlikte çalışma derlemelerindeki genel bakış](http://msdn.microsoft.com/da92dc3c-8209-44de-8095-a843659368d5).  
+ Office PIA'ların Office uygulamalarını nesne modelini açığa çıkaran türleri ve doğrudan kodunuzda kullanılması amaçlanmamıştır ek altyapı türleri birleşimini içerir. Office PIA'ların türlerinde genel bakış için bkz: [sınıflar ve arabirimler Office birincil birlikte çalışma derlemelerindeki genel bakış](/previous-versions/office/office-12/ms247299\(v\=office.12\)).  
   
  Office PIA'ların türleri COM tabanlı nesne modellerinde türlere karşılık geldiğinden, bu tür şekilde genellikle diğer yönetilen türleri farklıdır. Örneğin, Office birincil birlikte çalışma derlemesi isteğe bağlı parametrelere sahip yöntemleri çağırma yolunuz projenizde kullandığınız programlama diline bağlıdır. Daha fazla bilgi için aşağıdaki konulara bakın:  
   

@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2e25ac55a1198cf15b497b7b88522be44dfddb73
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 19c7e012775ff1a761b5c267f05b8f7ff250d5c6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676718"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672232"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Office çözümleri geliştirmek için bilgisayarı yapılandırma
 
@@ -44,7 +44,7 @@ Visual Studio, .NET Framework ve Microsoft Office desteklenen bir sürümü yük
 
      Bu araçların yüklendiğinden emin olmak için Visual Studio Kurulum programını başlatın ve seçin **Değiştir** düğmesi. Seçin **Microsoft Office geliştirici araçları** onay kutusunu işaretleyin ve ardından **güncelleştirme** düğmesi.
 
-- Tıkla-Çalıştır tarafından dağıtılan Office sürümü çalıştırmadığınızı emin olun. Bkz: [nasıl yapılır: Outlook bir bilgisayardaki bir Tıkla-Çalıştır uygulaması olup olmadığını](http://msdn.microsoft.com/library/office/ff864733(v=office.14).aspx).
+- Tıkla-Çalıştır tarafından dağıtılan Office sürümü çalıştırmadığınızı emin olun. Bkz: [nasıl yapılır: Outlook bir bilgisayardaki bir Tıkla-Çalıştır uygulaması olup olmadığını](/previous-versions/office/developer/office-2010/ff864733(v=office.14)).
 
 - Microsoft Office yalnızca bir sürümü çalıştırdığınızdan emin olun.
 

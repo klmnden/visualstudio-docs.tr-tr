@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5be9417ab3140ce652535b8c0c6a5979d50ffb6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5d4aed381841d5f88209aefdcff641a2a821f01
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866434"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673087"
 ---
 # <a name="create-outlook-form-regions"></a>Outlook form bölgeleri oluşturma
   Form bölgeleri, Microsoft Office Outlook formları özelleştirmek için kullanabilirsiniz. Visual Studio tasarlamak, geliştirmek ve hata ayıklama form bölgeleri kolaylaştıran gelişmiş araçlar sağlar.  
@@ -60,7 +60,7 @@ ms.locfileid: "49866434"
   
 - Özel kullanıcı Arabirimi, okuma bölmesinde ve denetçiler görüntüleyebilirsiniz.  
   
-  Daha fazla bilgi için [özelleştirme form sayfaları ve form bölgeleri](http://msdn.microsoft.com/library/office/ff869060.aspx).  
+  Daha fazla bilgi için [özelleştirme form sayfaları ve form bölgeleri](/office/vba/outlook/Concepts/Forms/customizing-form-pages-and-form-regions).  
   
 ##  <a name="Adding"></a> Outlook form bölgesi projenize ekleyin.  
  Kullanabileceğiniz **yeni Outlook Form bölgesi** yeni bir form bölgesi tasarla ya da Outlook'ta tasarlanan form bölgesini içeri aktarma Sihirbazı. Ayrıca, Outlook VSTO eklentisi başka bir projede kullanılan bir form bölgesi varsa, var olan form bölgesinin yeniden kullanabilirsiniz.  

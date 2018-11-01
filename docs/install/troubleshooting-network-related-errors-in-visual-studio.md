@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 210a39d5392ef6ba93f4988c86850db58644ed10
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 28c92fdc09320effcb8603c42edcfca152f71248
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865790"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672320"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Visual Studio yüklediğinizde veya kullandığınızda ağ ile ilgili hataları giderme
 
@@ -69,7 +69,7 @@ Bu hata genellikle kullanıcılar bir ara sunucu üzerinden İnternet'e bağlı 
 
      VEYA
 
-- Yönergeleri de izleyebilirsiniz [kimliği doğrulanmış bir Web Proxy üzerinden bağlanma](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) Ara sunucusunu kullanacak şekilde sağlayacak kodun nasıl ekleneceği gösterilmektedir blogda.
+- Yönergeleri de izleyebilirsiniz [kimliği doğrulanmış bir Web Proxy üzerinden bağlanma](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) Ara sunucusunu kullanacak şekilde sağlayacak kodun nasıl ekleneceği gösterilmektedir blogda.
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Hata: "temel alınan bağlantı kapatıldı"
 

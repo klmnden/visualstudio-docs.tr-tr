@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f7696018ec191e851c0d5864ad36e3eeb31b599
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 160d0f283542445335496e3cbb7b98955df02b05
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941743"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672619"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Visual Studio örneklerini algılamaya ve yönetmeye yönelik araçlar
 
@@ -33,7 +33,7 @@ Kullanılabilir algılamak ve istemci makinelerde yüklü Visual Studio örnekle
 * [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): PowerShell betikleri, Visual Studio'nun yüklü örnekleri belirlemek için Kurulum yapılandırması API'yi kullanın.
 * [VS ayarlama örnekleri](https://github.com/microsoft/vs-setup-samples): Kurulum yapılandırma API'si var olan bir yüklemesini sorgulamak için nasıl kullanılacağını gösteren C# ve C++ örnekleri.
 
-Ayrıca, [kurulum yapılandırma API'si](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.setup.configuration.aspx) interrogating Visual Studio örnekleri için kendi yardımcı programlar oluşturmak isteyen geliştiriciler için arabirim sağlar.
+Ayrıca, [kurulum yapılandırma API'si](<xref:Microsoft.VisualStudio.Setup.Configuration>) interrogating Visual Studio örnekleri için kendi yardımcı programlar oluşturmak isteyen geliştiriciler için arabirim sağlar.
 
 ## <a name="using-vswhereexe"></a>Vswhere.exe kullanma
 

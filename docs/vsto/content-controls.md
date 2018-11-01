@@ -41,12 +41,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6880437616f2a1250488e5faaf910823a1b4b58a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 924f31ac38219453ae96fd573d968b18ce19c913
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940235"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672905"
 ---
 # <a name="content-controls"></a>İçerik denetimleri
   İçerik denetimleri tasarım belgeleri ve bu özelliklere sahip şablonları sağlamak sizin için bir yol:  
@@ -81,7 +81,7 @@ ms.locfileid: "49940235"
  Dokuz farklı belgelere ekleyebileceğiniz içerik denetimi türleri vardır. İçerik denetimleri çoğunu olmayan karşılık gelen türü <xref:Microsoft.Office.Tools.Word> ad alanı. Genel kullanabilirsiniz <xref:Microsoft.Office.Tools.Word.ContentControl>, hangi temsil edebilir kullanılabilir içerik denetimleri. Her kullanılabilir içerik denetimlerini nasıl kullanılacağını gösteren bir kılavuz için bkz. [izlenecek yol: içerik denetimlerini kullanarak şablon oluşturma](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
   
 ### <a name="build-block-gallery"></a>Yapı Taşı Galerisi  
- Kullanıcılar bir listesinden seçmek bir Yapı Taşı Galerisi sağlar *belge yapı taşları* belgeye eklenecek. Bir belge yapı taşı, yaygın bir kapak sayfası, biçimlendirilmiş bir tablo veya bir üst bilgisi gibi birden çok kez kullanılmak üzere oluşturulan içerik parçasıdır. Daha fazla bilgi için <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> türü. Yapı taşları hakkında daha fazla bilgi için bkz. [Word 2007'de geliştiricilerine yönelik yenilikler](http://msdn.microsoft.com/74aa6688-65b3-4167-997d-131f26ad8f84).  
+ Kullanıcılar bir listesinden seçmek bir Yapı Taşı Galerisi sağlar *belge yapı taşları* belgeye eklenecek. Bir belge yapı taşı, yaygın bir kapak sayfası, biçimlendirilmiş bir tablo veya bir üst bilgisi gibi birden çok kez kullanılmak üzere oluşturulan içerik parçasıdır. Daha fazla bilgi için <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> türü. Yapı taşları hakkında daha fazla bilgi için bkz. [Word 2007'de geliştiricilerine yönelik yenilikler](/previous-versions/office/developer/office-2007/bb266218(v=office.12)).  
   
 ### <a name="check-box"></a>Onay kutusu  
  Bir onay kutusu ikili durumunu temsil eden bir kullanıcı Arabirimi sağlar: seçilen veya temizlenen.  

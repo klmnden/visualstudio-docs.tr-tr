@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f64de3b95d21fdae87dd6b14754956381d60e9a3
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: d77bfad86024cf95ce1649498ddda5d1450a1c33
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008248"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672021"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Eğitmen 3: eşleşen bir oluşturma oyun
 
@@ -38,12 +38,12 @@ Bu öğreticiyi tamamladığınızda, programınız aşağıdaki resim gibi gör
 
 ## <a name="tutorial-links"></a>Öğretici bağlantıları
 
-Örnek tamamlanmış bir sürümünü indirmek için bkz [eksiksiz eşleştirme oyunu Öğreticisi örneği](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).
+Örnek tamamlanmış bir sürümünü indirmek için bkz [eksiksiz eşleştirme oyunu Öğreticisi örneği](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).
 
 > [!NOTE]
 > Bu öğreticide, hem Visual C# hem de Visual Basic ele alınmaktadır; bu nedenle kullandığınız programlama diline özgü bilgilere odaklanın.
 
-Bir yerde tıkanıp kalırsanız veya programlamayla ilgili sorularınız olursa, MSDN forumlarından birinde sorunuzu göndermeyi deneyin. Bkz: [Visual Basic Forumu](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral) ve [Visual C# Forumu](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral). Ayrıca, yararlanabileceğiniz harika ve ücretsiz video öğrenme kaynakları vardır. Visual Basic'te programlama hakkında daha fazla bilgi için bkz. [Visual Basic fundamentals: Development yeni başlayanlar için](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Visual C# programlama hakkında daha fazla bilgi için bkz [C# fundamentals: Development yeni başlayanlar için](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).
+Bir yerde tıkanıp kalırsanız veya programlamayla ilgili sorularınız olursa, MSDN forumlarından birinde sorunuzu göndermeyi deneyin. Bkz: [Visual Basic Forumu](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vbgeneral) ve [Visual C# Forumu](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral). Ayrıca, yararlanabileceğiniz harika ve ücretsiz video öğrenme kaynakları vardır. Visual Basic'te programlama hakkında daha fazla bilgi için bkz. [Visual Basic fundamentals: Development yeni başlayanlar için](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Visual C# programlama hakkında daha fazla bilgi için bkz [C# fundamentals: Development yeni başlayanlar için](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).
 
 ## <a name="related-topics"></a>İlgili konular
 

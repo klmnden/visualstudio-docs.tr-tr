@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c2710fae53cd860b6d67cc9f9d8c7ce61afa2b03
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6fac14df471b0dfcda1d0bf4763158280211bc33
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929861"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672474"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Office uygulaması ve proje türüne göre kullanılabilen özellikler
   Visual Studio Proje şablonları, farklı iş senaryoları aşağıdaki türleri dahil olmak üzere Microsoft Office uygulamaları için destek birçok tür içerir:  
@@ -62,9 +62,9 @@ ms.locfileid: "49929861"
 |Bir nesneyi VSTO eklentisi diğer Microsoft Office çözümleri için kullanıma sunar.|VSTO eklentisi projeleri.|[VSTO eklentilerinde diğer Office Çözümlerinden kod arama](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)|  
 |Aşağıdaki konak denetimleri:<br /><br /> -Grafik<br />-ListObject<br />-NamedRange<br />-İçerik denetimleri<br />-Yer işareti|Belge düzeyi projeler.<br /><br /> VSTO eklentisi projelerine Word ve Excel için.|[Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)|  
 |Aşağıdaki konak denetimleri:<br /><br /> -Çalışma sayfalarına XMLMappedRange<br />-XMLNode<br />-XMLNodes|Belge düzeyi projeler.|[Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)|  
-|Birden çok proje dağıtımı.|Belge düzeyi projeler.<br /><br /> VSTO eklentisi projeleri.|[İzlenecek yol: tek bir ClickOnce yükleyicisi birden çok Office çözümlerini dağıtma](http://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
+|Birden çok proje dağıtımı.|Belge düzeyi projeler.<br /><br /> VSTO eklentisi projeleri.|[İzlenecek yol: tek bir ClickOnce yükleyicisi birden çok Office çözümlerini dağıtma](https://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
 |Outlook form bölgeleri.|VSTO eklentisi projelerine Outlook.|[Outlook form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md)|  
-|Dağıtım sonrası eylemler.|Belge düzeyi projeler.<br /><br /> VSTO eklentisi projeleri.|[İzlenecek yol: bir belgeyi son kullanıcının bilgisayarına ClickOnce yükleme sonrasında Kopyala](http://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
+|Dağıtım sonrası eylemler.|Belge düzeyi projeler.<br /><br /> VSTO eklentisi projeleri.|[İzlenecek yol: bir belgeyi son kullanıcının bilgisayarına ClickOnce yükleme sonrasında Kopyala](https://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
 |Şerit özelleştirmeleri.|Belge düzeyi projeler.<br /><br /> VSTO eklentisi projeleri şu uygulamalar için:<br /><br /> -Excel<br />-InfoPath (InfoPath 2013 ve InfoPath 2010)<br />-Outlook<br />-PowerPoint<br />-Proje<br />-Visio<br />-Word|[Şerite Genel Bakış](../vsto/ribbon-overview.md)|  
 |Görsel belge Tasarımcısı.|Belge düzeyi projeler.|[Visual Studio ortamında Office projeleri](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   

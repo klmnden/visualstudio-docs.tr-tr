@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2c8c23be02f13646c8577d2672bc60b63a1d0a
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 966634ee9a71854334bdd5342326c1663b9ad16c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008687"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672164"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Öğretici 1: Resim Görüntüleyici oluşturma
 
@@ -42,7 +42,7 @@ Bu öğreticide, bir dosyadan resim yükleyen ve pencerede görüntüleyen bir p
 
 ## <a name="tutorial-links"></a>Öğretici bağlantıları
 
-Örnek tamamlanmış bir sürümünü indirmek için bkz [eksiksiz resim görüntüleyici Öğreticisi örneği](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
+Örnek tamamlanmış bir sürümünü indirmek için bkz [eksiksiz resim görüntüleyici Öğreticisi örneği](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
 
 ![video bağlantısı](../data-tools/media/playvideo.gif)bu konunun video sürümü için bkz [: oluşturma Visual Basic'te resim görüntüleyici nasıl musunuz?](http://go.microsoft.com/fwlink/?LinkId=205207) veya [bunu C# içinde resim görüntüleyici: oluşturma nasıl?](http://go.microsoft.com/fwlink/?LinkId=205198).
 

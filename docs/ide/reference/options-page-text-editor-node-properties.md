@@ -13,17 +13,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: add008f6e5728d8c53f0f4ad3c9f590ecd7dc919
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e16bdece503babe9a50bc83d64da582d390843b6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929211"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670825"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Seçenekler Sayfası, Metin Düzenleyici Düğümü Özellikleri
 Bu belgede, bazı sayfalar (veya özellik koleksiyonları) açıklanmaktadır ile ilişkili **metin düzenleyici** kategori `DTE.Properties("TextEditor", <Property Page>)`, biri **seçenekleri** iletişim kutusu. Her bir alt bölümünün başlığı kullanılan çağrıdır erişimi `Properties` toplama ve her bir alt bölümdeki tabloda koleksiyondaki özellikler listelenmektedir.
 
- Visual Basic makrolarındaki [Controlling Options Settings](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d) geçerli seçeneklerini ve her bir sayfası değerlerini görüntülemek nasıl **seçenekleri** iletişim kutusu.
+ Visual Basic makrolarındaki [Controlling Options Settings](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d) geçerli seçeneklerini ve her bir sayfası değerlerini görüntülemek nasıl **seçenekleri** iletişim kutusu.
 
 ## <a name="general"></a>Genel
  `DTE.Properties("TextEditor", "General")`
@@ -66,7 +66,7 @@ Bu belgede, bazı sayfalar (veya özellik koleksiyonları) açıklanmaktadır il
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [Seçenek ayarlarını denetleme](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
-- [Seçenekler sayfasında özellik öğelerinin adlarını belirleme](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [Seçenek ayarlarını denetleme](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [Seçenekler sayfasında özellik öğelerinin adlarını belirleme](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [Seçenekler Sayfası, Ortam Düğümü Özellikleri](../../ide/reference/options-page-environment-node-properties.md)
 - [Seçenekler Sayfası, Yazı Tipleri ve Renkler Düğümü Özellikleri](../../ide/reference/options-page-fonts-and-colors-node-properties.md)

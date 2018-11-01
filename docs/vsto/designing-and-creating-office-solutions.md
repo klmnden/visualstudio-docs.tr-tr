@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 602525666e62a5eaa6e8db13c6e7029d8773bc8b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 05cf317823d4f5853d960109bd97da77ea8a927d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917188"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671254"
 ---
 # <a name="design-and-create-office-solutions"></a>Office çözümleri oluşturma ve tasarlama
   Visual Studio, birkaç farklı türde Office çözümleri oluşturmak için kullanabileceğiniz proje şablonları sağlar. Belgelerinin bu bölümü, proje şablonlarını açıklar ve Office projeleri oluşturma hakkında yönergeler sağlar. Projenizi oluşturduktan sonra kodun ve kullanıcı arabirimi özelleştirmelerinin gerçekleştirme hakkında daha fazla bilgi için bkz. [geliştirme Office çözümleri](../vsto/developing-office-solutions.md).  
@@ -53,7 +53,7 @@ ms.locfileid: "49917188"
   
   Ancak, hedef Framework'ü Visual Studio değiştirdikten sonra belirli özellikleri kullanıyorsa, kodu projenizdeki bazı değiştirmeniz gerekebilir. Hedef Framework'ü değiştirme hakkında daha fazla bilgi için bkz. [nasıl yapılır: .NET Framework sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Projenizde yapmak ihtiyaç duyabilirsiniz değişiklikler hakkında daha fazla bilgi için bkz. [geçirme Office çözümlerini .NET Framework 4 veya sonraki bir sürüme](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
   
-  Visual Studio projeniz için hedef .NET Framework değiştirir ve çözümünüzü dağıtmak için ClickOnce'ı kullanıyorsanız, aynı zamanda ilgili .NET Framework sürümünü seçtiğinizden emin **önkoşulları** iletişim kutusu. Projeniz için hedef Framework'ü değiştirdiğinizde, bu seçenek otomatik olarak değiştirmez. Daha fazla bilgi için [nasıl yapılır: son kullanıcı bilgisayarlarında Office çözümlerinin çalışması için Önkoşulları Yükleme](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+  Visual Studio projeniz için hedef .NET Framework değiştirir ve çözümünüzü dağıtmak için ClickOnce'ı kullanıyorsanız, aynı zamanda ilgili .NET Framework sürümünü seçtiğinizden emin **önkoşulları** iletişim kutusu. Projeniz için hedef Framework'ü değiştirdiğinizde, bu seçenek otomatik olarak değiştirmez. Daha fazla bilgi için [nasıl yapılır: son kullanıcı bilgisayarlarında Office çözümlerinin çalışması için Önkoşulları Yükleme](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 > [!NOTE]  
 >  .NET Framework 3.5 veya Office projelerinde kullanarak oluşturduğunuz önceki hedefleyemez [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Kullanarak oluşturduğunuz office projeleri [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] sürümünde ilk yapılan özellikleri gerektirir [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
@@ -61,7 +61,7 @@ ms.locfileid: "49917188"
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Son kullanıcı bilgisayarlarında Office PIA'ların gerektiğinde anlama  
  Varsayılan olarak, Office birincil birlikte çalışma derlemeleri (PIA), son kullanıcı bilgisayarlarında yüklü olması gerekmez **birlikte çalışma türlerini katıştır** özelliği projedeki her Office PIA başvurusu **True**, Varsayılan değer olan. Projeyi oluşturduğunuzda bu senaryoda, çözümünüz tarafından kullanılan PIA türler için tür bilgileri çözüm derlemesine eklenir. Çalışma zamanında, Office uygulamasının COM tabanlı nesne modeline çağrı yapmak yerine PIA'ların gömülü tür bilgileri kullanılır. PIA'ların türlerinden çözümünüze nasıl katıştırılmış hakkında daha fazla bilgi için bkz. [tür eşdeğerliği ve katıştırılmış birlikte çalışma türleri](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).  
   
- Varsa **birlikte çalışma türlerini katıştır** özelliği projedeki her Office PIA başvurusu **False**, Office PIA'ların yüklenmeli ve her bir son kullanıcı bilgisayarında genel derleme önbelleğinde kayıtlı, Çözüm çalıştırır. Çoğu durumda, varsayılan Office PIA'ların yüklü, ancak PIA çözümünüz için bir önkoşul olarak yeniden dağıtılabilir'i de içerebilir. Daha fazla bilgi için [Office çözüm dağıtım önkoşullarını](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).  
+ Varsa **birlikte çalışma türlerini katıştır** özelliği projedeki her Office PIA başvurusu **False**, Office PIA'ların yüklenmeli ve her bir son kullanıcı bilgisayarında genel derleme önbelleğinde kayıtlı, Çözüm çalıştırır. Çoğu durumda, varsayılan Office PIA'ların yüklü, ancak PIA çözümünüz için bir önkoşul olarak yeniden dağıtılabilir'i de içerebilir. Daha fazla bilgi için [Office çözüm dağıtım önkoşullarını](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).  
   
 ### <a name="understand-the-client-profile"></a>İstemci profili anlama  
  .NET Framework istemci profili, tam .NET Framework'ün bir alt kümesidir. .NET Framework istemci profili .NET Framework yalnızca istemci özelliklerini kullanmanız gerekir ve Office çözümünüz için en hızlı olası dağıtım deneyimi sağlamak istiyorsanız hedefleyebilirsiniz. Daha fazla bilgi için [.NET Framework istemci profili](/dotnet/framework/deployment/client-profile).  

@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 06d91a2a9e7dc206e2303637bce013b473cf6560
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6930ce085405c010e59e13adb8a3d380cff28d0e
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839043"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672775"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Nasıl yapılır: Visual Studio'da Office projeleri oluşturma
   Kullanabileceğiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] VSTO eklentisi ve belge düzeyi özelleştirmeleri Microsoft Office uygulamaları için. Bu proje türleri hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -87,7 +87,7 @@ ms.locfileid: "49839043"
 7. Seçin **Tamam** düğmesi.
   
     > [!NOTE]  
-    >  Eklenti projeleri, oluşturulduğunda daima kaydedilir. Geçici proje olarak oluşturulamazlar. Geçici projeler hakkında daha fazla bilgi için bkz: [geçici projeler](http://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
+    >  Eklenti projeleri, oluşturulduğunda daima kaydedilir. Geçici proje olarak oluşturulamazlar. Geçici projeler hakkında daha fazla bilgi için bkz: [geçici projeler](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
   
 ### <a name="to-create-a-document-level-customization-project"></a>Belge düzeyi özelleştirme projesi oluşturmak için  
   

@@ -16,17 +16,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e27b0a19005b7076629f2848f95c8cb5749c096f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d800fbe0a6dda6fc7c5160d607d393afcb920cd9
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677769"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671579"
 ---
 # <a name="how-to-programmatically-close-visio-documents"></a>Nasıl yapılır: Visio belgelerini program aracılığıyla kapatma
   Etkin Microsoft Office Visio belgesini kullanarak kapatabilirsiniz `Microsoft.Office.Interop.Visio.Document.Close` yöntemi.  
   
- Bu yöntem hakkında daha fazla ayrıntı için VBA başvuru belgelerine bakın [Microsoft.Office.Interop.Visio.Document.Close](http://msdn.microsoft.com/library/office/ff767415.aspx) yöntemi.  
+ Bu yöntem hakkında daha fazla ayrıntı için VBA başvuru belgelerine bakın [Microsoft.Office.Interop.Visio.Document.Close](/office/vba/api/Visio.Document.Close) yöntemi.  
   
 ## <a name="close-the-active-document"></a>Etkin belgeyi Kapat  
   

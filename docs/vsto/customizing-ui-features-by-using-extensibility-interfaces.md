@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a18ad30fac44028f4eda89da72babeb36ffe24a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec1f538515c8765629e812b8d7f4070476dd95ba
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873980"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670851"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Genişletilebilirlik arabirimlerini kullanarak kullanıcı Arabirimi özelliklerini özelleştirme
   Visual Studio'da Office geliştirme araçları, sınıflar ve VSTO eklentisi içinde özel görev bölmeleri, Şerit özelleştirmeleri ve Outlook form bölgeleri oluşturma kullanıldıklarında birçok uygulama ayrıntıları işleyen tasarımcılar sağlar. Ancak, aynı zamanda uygulayabileceğiniz *genişletilebilirlik arabirimi* her özel gereksinimleriniz varsa, kendiniz özelliği.  
@@ -71,7 +71,7 @@ ms.locfileid: "49873980"
   [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
   [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
   
-  Uygulama hakkında daha fazla bilgi için <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, bkz: [2007 Office sistemi içinde özel görev bölmeleri oluşturma](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) Microsoft Office belgelerinde.  
+  Uygulama hakkında daha fazla bilgi için <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, bkz: [2007 Office sistemi içinde özel görev bölmeleri oluşturma](/previous-versions/office/developer/office-2007/aa338197(v=office.12)) Microsoft Office belgelerinde.  
   
 ### <a name="example-of-overriding-the-requestservice-method"></a>Örnek RequestService yöntemini geçersiz kılma  
  Aşağıdaki kod örneğinde nasıl geçersiz kılınacağını gösterir <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> örneği döndürülecek yöntemi `TaskPaneHelper` önceki kod örneğinde bir sınıftan. Değerini denetler *serviceGuid* hangi arabirim istenen ve ardından bu arabirimi uygulayan bir nesne döndürür belirlemek için parametre.  

@@ -11,26 +11,26 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c2f096415ccfbadfe66f18a373642cf6a5de86b
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 09d020e2d83e7e631fefcb1503eb8f1938894986
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32065253"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672125"
 ---
 # <a name="step-8-customize-the-quiz"></a>8. adım: testi özelleştirme
-Öğreticinin son bölümünde testi özelleştirme ve zaten öğrendiklerinizi üzerinde genişletmek için bazı yollar ele alacağız. Örneğin, program yanıt hiçbir zaman bir kesir olduğu rastgele bölme problemleri nasıl oluşturduğunu hakkında düşünün. Daha fazla bilgi için Aç `timeLabel` farklı bir renk denetlemek ve test alanın bir ipucu sağlar.  
+Öğreticinin son bölümünde testi özelleştirme ve zaten öğrendiklerinizi üzerinde genişletmek için bazı yollar hakkında bilgi edineceksiniz. Örneğin, programın yanıt hiçbir zaman bir kesir olduğu rastgele bölme problemleri nasıl oluşturduğunu hakkında düşünün. Daha fazla bilgi için kapatma `timeLabel` farklı bir renkte denetlemek ve sınava giren bir ipucu verir.  
 
 ## <a name="to-customize-the-quiz"></a>Test özelleştirmek için  
 
--   Yalnızca beş saniyede bir test kaldığında kapatma **timeLabel** denetim kırmızı ayarlayarak kendi **BackColor** özelliği (`timeLabel.BackColor = Color.Red;`). Test bittiğinde rengi sıfırlayın.  
+-   Yalnızca beş saniyede bir sınavda kalan zaman **timeLabel** denetiminde kırmızı renkte ayarlayarak onun **BackColor** özelliği (`timeLabel.BackColor = Color.Red;`). Test bittiğinde rengi sıfırlayın.  
   
--   Doğru yanıt içine girildiğinde ses oynatarak test alanın bir ipucu verin bir <xref:System.Windows.Forms.NumericUpDown> denetim. (Her denetim için bir olay işleyicisi yazma <xref:System.Windows.Forms.NumericUpDown.ValueChanged> test alanın denetimin değeri değiştiğinde harekete olayı.)  
+-   Sınava halinde doğru yanıtı girildiğinde ses çalma bir ipucu verir. bir <xref:System.Windows.Forms.NumericUpDown> denetimi. (Her denetim için bir olay işleyicisi yazmanız gereken <xref:System.Windows.Forms.NumericUpDown.ValueChanged> sınava denetimin değeri değiştiğinde harekete olayı,.)  
   
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Test tamamlanmış bir sürümünü indirmek için bkz: [tam matematik testi öğretici örnek](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
+-   Sınavın tamamlanmış bir sürümünü indirmek için bkz [tam matematik sınavı öğretici örneği](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
   
--   Sonraki öğretici gitmek için bkz: [öğretici 3: eşleşen bir oluşturma oyun](../ide/tutorial-3-create-a-matching-game.md).  
+-   Sonraki eğitime gitmek için bkz: [Tutorial 3: eşleşen bir oluşturma oyun](../ide/tutorial-3-create-a-matching-game.md).  
   
--   Eğitmen önceki adıma dönmek için bkz: [adım 7: çarpma ve bölme sorunları eklemek](../ide/step-7-add-multiplication-and-division-problems.md).
+-   Önceki öğretici adımına dönmek için bkz: [7. adım: çarpma ve bölme soruları ekleyin](../ide/step-7-add-multiplication-and-division-problems.md).

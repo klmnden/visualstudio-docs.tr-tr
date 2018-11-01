@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f469cf6e3dba13f1a4c7ad6ec847cf8c8190447c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e46a0bdc23ee16c4821d3da751d5a90aa62a14c3
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859375"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673074"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>ClickOnce kullanarak Office çözümü dağıtma
   ClickOnce kullanırsanız Office çözümünüzü daha az sayıda adımla dağıtabilirsiniz. Güncelleştirmeleri yayımlarsanız, çözümünüz bunları otomatik olarak algılar ve yükler. Bununla birlikte, ClickOnce, çözümünüzü bir bilgisayarın her kullanıcısı için ayrı ayrı yüklemenizi gerektirir. Bu nedenle, Windows Installer kullanmayı düşünmeniz gerekir (*.msi*) aynı bilgisayarda çözümünüzü birden fazla kullanıcı çalıştıracaksa.  
@@ -86,7 +86,7 @@ ms.locfileid: "49859375"
 9. Çözümünüz .NET Framework 4.5 hedefliyse, ayrıca seçin **Office çalışma zamanı için Visual Studio 2010 Araçları** onay kutusu.  
 
     > [!NOTE]  
-    >  Varsayılan olarak, bu onay kutusu görünmez. Bu onay kutusunu göstermek için bir Önyükleyici paketi oluşturmanız gerekir. Bkz: [Visual Studio 2012 ile bir önyükleyici paketi için bir Office 2013 VSTO eklentisi oluşturma](http://blogs.msdn.com/b/vsto/archive/2012/12/21/creating-a-bootstrapper-package-for-an-office-2013-vsto-add-in-with-visual-studio-2012.aspx).  
+    >  Varsayılan olarak, bu onay kutusu görünmez. Bu onay kutusunu göstermek için bir Önyükleyici paketi oluşturmanız gerekir. Bkz: [Visual Studio 2012 ile bir önyükleyici paketi için bir Office 2013 VSTO eklentisi oluşturma](create-vsto-add-ins-for-office-by-using-visual-studio.md).  
 
 10. Altında **Önkoşullar için yükleme konumunu belirtin**, görüntülenen ve ardından seçeneklerden birini **Tamam** düğmesi.  
 
@@ -362,7 +362,7 @@ ms.locfileid: "49859375"
 |Hata Kodu|Tanım|  
 |----------------|----------------|  
 |0|Çözüm başarıyla yüklendi ya da kaldırıldı veya VSTOInstaller Yardımı görüntülendi.|  
-|-100|Bir veya daha fazla komut satırı seçeneği geçerli değil veya bir kereden fazla ayarlandı. Daha fazla bilgi için girin "vstoinstaller /?" veya [ClickOnce Office çözümü için özel bir yükleyici oluşturma](http://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|  
+|-100|Bir veya daha fazla komut satırı seçeneği geçerli değil veya bir kereden fazla ayarlandı. Daha fazla bilgi için girin "vstoinstaller /?" veya [ClickOnce Office çözümü için özel bir yükleyici oluşturma](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|  
 |-101|Bir veya daha fazla komut satırı seçeneği geçerli değil. Daha fazla bilgi için "vstoinstaller /?" girin.|  
 |-200|Dağıtım bildirimi URI'si geçerli değil. Daha fazla bilgi için "vstoinstaller /?" girin.|  
 |-201|Dağıtım bildirimi geçerli olmadığından çözüm yüklenemedi. Bkz: [Office çözümleri için dağıtım bildirimleri](../vsto/deployment-manifests-for-office-solutions.md).|  
@@ -463,9 +463,9 @@ ms.locfileid: "49859375"
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md)   
  [Office çözümleri yayımlama](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Nasıl yapılır: ClickOnce kullanarak Office çözümü yayımlama](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
- [Nasıl yapılır: ClickOnce Office çözümünü yükle](http://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
- [Nasıl yapılır: bir belge düzeyinde Office çözümü ClickOnce kullanarak bir SharePoint sunucusuna yayımlama](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
- [Bir ClickOnce office çözümü için özel bir yükleyici oluşturma](http://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)  
+ [Nasıl yapılır: ClickOnce kullanarak Office çözümü yayımlama](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
+ [Nasıl yapılır: ClickOnce Office çözümünü yükle](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
+ [Nasıl yapılır: bir belge düzeyinde Office çözümü ClickOnce kullanarak bir SharePoint sunucusuna yayımlama](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
+ [Bir ClickOnce office çözümü için özel bir yükleyici oluşturma](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)  
 
 

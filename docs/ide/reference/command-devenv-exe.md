@@ -13,15 +13,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c21402c3b2b71372aaf170c68c65777eba4e95bf
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 1d6d2c5355fbce44bbb97a33e21ad623997ddceb
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703752"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670812"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
-Belirtilen komut başlattıktan sonra yürütür [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE).
+Başlatıldıktan sonra belirtilen komutu yürütür [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,15 +30,15 @@ devenv /command CommandName
 ```
 
 ## <a name="arguments"></a>Arguments
- `CommandName` Gerekli. Tam adını bir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] komutu ya da çift tırnak işaretleri arasına, diğer ad. Komut ve diğer adı sözdizimi hakkında daha fazla bilgi için bkz: [Visual Studio komutları](../../ide/reference/visual-studio-commands.md).
+ `CommandName` Gerekli. Tam adı bir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] komut ya da çift tırnak işareti içine alınmış, diğer ad. Komut ve diğer ad sözdizimi hakkında daha fazla bilgi için bkz: [Visual Studio komutları](../../ide/reference/visual-studio-commands.md).
 
 ## <a name="remarks"></a>Açıklamalar
- Başlatma tamamlandıktan sonra IDE adlandırılmış komutu yürütür. Bu anahtarı kullanırsanız, IDE görüntülenmez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] başlangıç başlangıç sayfasında.
+ Başlangıç tamamlandıktan sonra IDE adlandırılmış komutu yürütür. Bu anahtarı kullanırsanız, IDE aşağıdaki dotnetclıtools'u görüntülemiyor [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] başlangıcında başlangıç sayfası.
 
- Bir eklenti komutu kullanıma sunar, eklenti komut satırından başlatmak için bu anahtarı kullanın. Daha fazla bilgi için bkz: [nasıl yapılır: denetim eklentileri kullanarak Eklenti Yöneticisi](http://msdn.microsoft.com/Library/4f60444a-cb48-4cdb-8df4-941f6419aeeb).
+ Bir eklenti bir komut sunarsa, komut satırından eklentiyi başlatmak için bu anahtarı kullanabilirsiniz. Daha fazla bilgi için [nasıl yapılır: denetim eklentileri kullanarak Eklenti Yöneticisi](https://msdn.microsoft.com/Library/4f60444a-cb48-4cdb-8df4-941f6419aeeb).
 
 ## <a name="example"></a>Örnek
- Bu örnek başlatır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ve makrosu açık sık kullanılan dosyaları otomatik olarak çalıştırır.
+ Bu örnek başlatır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ve makro açık sık kullanılan dosyaları otomatik olarak çalıştırır.
 
 ```cmd
 devenv /command "Macros.MyMacros.Module1.OpenFavoriteFiles"

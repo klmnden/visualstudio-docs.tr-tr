@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b7d898f4be4a314a8f046399f9d82ca9a9a84f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0d1b72745b3bd8a24dc69a5bc4e1508c8b2f7571
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811587"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672762"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Yayımlama Sihirbazı (Visual Studio'da Office Geliştirme)
   Kullanım **Yayımlama Sihirbazı** çözüm dosyaları belirtilen bir konuma kopyalamak için bildirim dosyalarını oluşturmak ve bir Kurulum programı oluşturma.  
@@ -53,7 +53,7 @@ ms.locfileid: "49811587"
 >  Hedef bilgisayarın Windows Vista çalıştırıyorsa, daha fazla ilgili önemli noktalar vardır. Yerel yayımlama seçeneğini kullanmak için Windows Vista bilgisayarda yönetici olması gerekir. Ayrıca, her zaman varsayılan konumu: *yayımlama\\*  IIS yüklü olup olmadığından bağımsız olarak dizin.  
   
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Son kullanıcı bilgisayarlarında varsayılan yükleme yolu nedir?  
- Yükleme yolu isteğe bağlıdır. İsterseniz, yükleme yolu daha sonra ayarlayabilirsiniz. Ayrıntılar için bkz [nasıl yapılır: bir Office çözümünü yükleme yolunu değiştirmek](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+ Yükleme yolu isteğe bağlıdır. İsterseniz, yükleme yolu daha sonra ayarlayabilirsiniz. Ayrıntılar için bkz [nasıl yapılır: bir Office çözümünü yükleme yolunu değiştirmek](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
  Yükleme yolu, son kullanıcının özelleştirme yükleyecek dizindir. Ayrıca çözüm güncelleştirmeleri denetlemek için kullanacağı yoludur. **Yayımlama Sihirbazı** çözüm yolu, girdiğiniz aynı olmadığı sürece bu konuma dağıtmaz **bu uygulamayı yayımlamak için konumu belirtin** önceki sayfada kutusu.  
   

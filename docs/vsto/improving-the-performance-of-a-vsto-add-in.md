@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9269d77af38364e936f0c84c7c5a83bd58493de7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 918ff0ac0a0b7f4e16c779516c015d7b74cec415
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827291"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672658"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Bir VSTO eklentisinin performansını iyileştirme
   Office uygulamaları kapatın ve böylece bunlar, hızlı başlangıç için oluşturduğunuz VSTO Add-Ins iyileştirerek kullanıcılarınıza daha iyi bir deneyim sunmak, öğeleri ve diğer görevleri gerçekleştirebilirsiniz. Ayrıca, VSTO eklentisi için Outlook ise, VSTO eklenti olacak olasılığını azaltabilirsiniz kötü performans nedeniyle devre dışı. Aşağıdaki stratejileri uygulayarak, VSTO eklentisinin performansını artırabilirsiniz:  
@@ -117,10 +117,6 @@ ms.locfileid: "49827291"
 >  Office nesne modelini çağıran tüm kod ana iş parçacığında yürütmeniz gerekir.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Talep üzerine yükleniyor VSTO eklentileri](http://blogs.msdn.com/b/andreww/archive/2008/07/14/demand-loading-vsto-add-ins.aspx)   
- [Office eklentileri CLR'de gecikme yükleme](http://blogs.msdn.com/b/andreww/archive/2008/04/19/delay-loading-the-clr-in-office-add-ins.aspx)   
- [VSTO performans: gecikme ve yükleme (Stephen Peters)](http://blogs.msdn.com/b/vsto/archive/2010/01/07/vsto-performance-delay-loading-and-you.aspx)   
- [Performans iyileştirmeleri bir hizmet paketine yakında size (Stephen Peters) yakın](http://blogs.msdn.com/b/vsto/archive/2010/11/30/performance-improvements-coming-soon-to-a-service-pack-near-you-stephen-peters.aspx)   
- [VSTO performans: Şerit yansıma (Stephen Peters)](http://blogs.msdn.com/b/vsto/archive/2010/06/03/vsto-performance-ribbon-reflection.aspx)  
-  
-  
+ [Talep üzerine yükleniyor VSTO eklentileri](https://blogs.msdn.microsoft.com/andreww/2008/07/14/demand-loading-vsto-add-ins/)   
+ [Office eklentileri CLR'de gecikme yükleme](https://blogs.msdn.microsoft.com/andreww/2008/04/19/delay-loading-the-clr-in-office-add-ins/)   
+ [VSTO eklentilerinde Office için Visual Studio kullanarak oluşturma](create-vsto-add-ins-for-office-by-using-visual-studio.md)   

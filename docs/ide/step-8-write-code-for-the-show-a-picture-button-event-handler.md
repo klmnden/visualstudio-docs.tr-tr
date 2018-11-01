@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8f0b90ae76717ce8365bad2ef780efb51b509d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d2c76a6eb760e55659c7da4df2a1a341426f0c6e
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874676"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671813"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>8. adım: bir resim düğme olayı işleyicisi Göster için kod yazma
 
@@ -28,7 +28,7 @@ Bu adımda yaptığınız **resim Göster** şöyle çalışan düğmesi:
 
 IDE kod yazmanıza yardımcı olacak, IntelliSense adında güçlü bir araç vardır. Kodun girerken IDE, girdiğiniz kısmi sözcükler için önerilen tamamlamaları içeren bir kutu açar. Sonra yapmak istediğinizi belirlemeye çalışır ve otomatik olarak öğeyi listeden seçtiğiniz son atlar. Yukarı veya aşağı taşımak için okları veya seçimleri daraltmak için de mektup yazmaya devam edebilirsiniz. Seçeneği gördüğünüzde, seçmek istediğiniz **sekmesini** anahtarı seçin. Alternatif olarak, gerekli değilse, önerileri yok sayabilirsiniz.
 
-![video bağlantısı](../data-tools/media/playvideo.gif)bu konunun video sürümü için bkz: [öğretici 1: Resim Görüntüleyici oluşturma Visual Basic'te - Video 4](https://msdn.microsoft.com/en-us/vstudio/gg315355.aspx). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videoda, Visual Studio'nun önceki bir sürümünü kullanır. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.
+![video bağlantısı](../data-tools/media/playvideo.gif)bu konunun video sürümü için bkz: [öğretici 1: Resim Görüntüleyici oluşturma Visual Basic'te - Video 4](https://msdn.microsoft.com/vstudio/gg315355.aspx). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videoda, Visual Studio'nun önceki bir sürümünü kullanır. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.
 
 ## <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Bir resim düğme olayı işleyicisi Göster için kod yazmak için
 
@@ -48,7 +48,7 @@ IDE kod yazmanıza yardımcı olacak, IntelliSense adında güçlü bir araç va
 
     2.  **IntelliSense** penceresi açılır ve görüntüler **openFileDialog1**. Seçin **sekmesini** anahtarı seçin. (Visual Basic'te, gördüğünüz şekilde ilk bir harf ile başlar **OpenFileDialog1**. Emin **OpenFileDialog1** seçilir.)
 
-         Hakkında daha fazla bilgi edinmek için `OpenFileDialog`, bkz: [OpenFileDialog](http://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx).
+         Hakkında daha fazla bilgi edinmek için `OpenFileDialog`, bkz: [OpenFileDialog](<xref:System.Windows.Forms.OpenFileDialog>).
 
     3.  Bir nokta (`.`) (birçok Programcı bunu nokta olarak adlandırır.) Hemen sonra bir nokta yazdığınız için **openFileDialog1**e **IntelliSense** penceresi açılır; tamamının dolu **OpenFileDialog** bileşenin özellikleri ve yöntemleri. Bunlar görünen, aynı özellikleridir **özellikleri** içinde seçtiğinizde penceresi **Windows Form Tasarımcısı**. Bileşenin bir şeyler (bir iletişim kutusu açmak gibi) yöntemleri de seçebilirsiniz.
 
@@ -63,7 +63,7 @@ IDE kod yazmanıza yardımcı olacak, IntelliSense adında güçlü bir araç va
 
     4.  Yazmaya başlayın `ShowDialog` (büyük/küçük harf IntelliSense için önemsizdir). `ShowDialog()` Yöntemi gösterilir **açık dosya** iletişim kutusu. Pencerenin vurguladıysa **ShowDialog**, seçin **sekmesini** anahtarı. Ayrıca "ShowDialog" vurgulayın ve seçin **F1** Yardımı almak için anahtar.
 
-         Hakkında daha fazla bilgi edinmek için `ShowDialog()` yöntemi bkz [ShowDialog yöntemi](http://msdn.microsoft.com/library/c7ykbedk.aspx).
+         Hakkında daha fazla bilgi edinmek için `ShowDialog()` yöntemi bkz [ShowDialog yöntemi](<xref:System.Windows.Forms.Form.ShowDialog%2A>).
 
     5.  Kullandığınızda, bir yöntem bir denetim veya bileşen üzerinde (olarak adlandırılan *bir yöntemi çağırmak*), parantezler eklemeniz gerekir. Bu nedenle açılış ve kapanış ayraçlarını hemen "g sonra" girin `ShowDialog`: `()` şimdi "openFileDialog1.ShowDialog()" gibi görünmelidir.
 
@@ -79,7 +79,7 @@ IDE kod yazmanıza yardımcı olacak, IntelliSense adında güçlü bir araç va
 
     8.  DialogResult değeri açmak için bir nokta yazın **IntelliSense** penceresi. Harfini girmek `O` ve **sekmesini** eklemek için anahtar **Tamam**.
 
-         DialogResult hakkında daha fazla bilgi için bkz: [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx).
+         DialogResult hakkında daha fazla bilgi için bkz: [DialogResult](<xref:System.Windows.Forms.DialogResult>).
 
         > [!NOTE]
         >  Kodun ilk satırı tamamlanmış olmalıdır. Visual C# için aşağıdaki olmalıdır.

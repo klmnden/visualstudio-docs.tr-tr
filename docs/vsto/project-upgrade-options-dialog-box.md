@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ccdff67cc9c918818a28bf60a94ea1f1119e7d2e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c53db1dffad5c755cba699986d64786471075776
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677893"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671943"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>Proje yükseltme, Seçenekler iletişim kutusu
   Kullanım **projeyi yükseltmesine** sayfasında Visual Studio otomatik olarak geliştirme bilgisayarında yüklü Office sürümünü hedeflemek için VSTO eklentisi projelerine değişiklikler olup olmadığını belirlemek için.  
@@ -37,6 +37,6 @@ ms.locfileid: "35677893"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümlerini geçirme ve yükseltme](../vsto/upgrading-and-migrating-office-solutions.md)   
- [Nasıl yapılır: yükseltme Office çözümleri](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)  
+ [Nasıl yapılır: yükseltme Office çözümleri](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)  
   
   

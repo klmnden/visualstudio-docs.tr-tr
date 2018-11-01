@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bf00afb612e12ce6712206808897a3b851d68b3a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3f821b9769b9353fbee6379ddc1b3826f87ac2de
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676689"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671099"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>COM, VSTO ve VBA eklentileri için Office geliştirme en iyi uygulamalar
   Office için COM, VSTO veya VBA eklentileri geliştiriyorsanız, bu makalede açıklanan geliştirme en iyi uygulamaları izleyin.   Bu, olmanıza yardımcı olur:
@@ -39,12 +39,12 @@ ms.locfileid: "35676689"
 Çözümünüz .NET önceki bir sürümünü kullanıyorsa, .NET 4.0 veya sonraki sürümü kullanmak için çözümünüzün güncelleştirmenizi öneririz. .NET 4.0 veya sonraki sürümü kullanarak daha yeni sürümlerinde Windows çalışma zamanı önkoşulları azaltır.
   
 ## <a name="avoid-depending-on-specific-office-versions"></a>Bağlı olarak belirli Office sürümleri kaçının  
-Çözümünüzü yalnızca Office daha yeni sürümlerde kullanılabilir olan işlevsellik kullanıyorsa, çalışma zamanında (örneğin, özel durum işleme veya sürüm denetimi tarafından kullanarak) özelliği (Eğer Mümkünse, özellik düzeyinde) bulunduğunu doğrulayın. Nesne modelinde gibi desteklenen API'leri kullanarak, belirli sürümler yerine, en düşük sürümlerle doğrulama [Application.Version özelliği](https://msdn.microsoft.com/library/office/microsoft.office.interop.excel._application.version.aspx). Yüklemeleri, ortamlar ve sürümler arasında değiştirebilirsiniz çünkü Office ikili meta verileri, yükleme yolları veya kayıt defteri anahtarlarını kullanan önerilmemektedir.
+Çözümünüzü yalnızca Office daha yeni sürümlerde kullanılabilir olan işlevsellik kullanıyorsa, çalışma zamanında (örneğin, özel durum işleme veya sürüm denetimi tarafından kullanarak) özelliği (Eğer Mümkünse, özellik düzeyinde) bulunduğunu doğrulayın. Nesne modelinde gibi desteklenen API'leri kullanarak, belirli sürümler yerine, en düşük sürümlerle doğrulama [Application.Version özelliği](<xref:Microsoft.Office.Interop.Excel._Application.Version%2A>). Yüklemeleri, ortamlar ve sürümler arasında değiştirebilirsiniz çünkü Office ikili meta verileri, yükleme yolları veya kayıt defteri anahtarlarını kullanan önerilmemektedir.
 
 ## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>Hem 32-bit hem de 64 bit Office kullanımını etkinleştir   
 Yalnızca belirli bir bit genişliği için kullanılabilen kitaplıkları çözümünüzü bağımlı sürece, varsayılan derleme hedefini hem 32-bit (x86) hem de 64-bit (x64) desteklemelidir. Office'in 64 bit sürümü, özellikle büyük veri ortamlarda bir benimseme artmaktadır. Destek hem 32-bit hem de 64-bit, 32-bit ve 64 bit Office sürümleri arasında geçiş kullanıcılarınızın kolaylaştırır.
 
-VBA kodu yazarken kullanmak için 64-bit güvenli ifadeleri bildirme ve değişkenleri uygun'olarak Dönüştür. Ayrıca, belgeler için her bit genişliği kod sağlayarak Office 32 bit veya 64 bit sürümlerini çalıştıran kullanıcılar arasında paylaşılabilen emin olun. Daha fazla bilgi için [uygulamalara genel bakış için 64 bit Visual Basic](https://msdn.microsoft.com/library/office/gg264421.aspx).
+VBA kodu yazarken kullanmak için 64-bit güvenli ifadeleri bildirme ve değişkenleri uygun'olarak Dönüştür. Ayrıca, belgeler için her bit genişliği kod sağlayarak Office 32 bit veya 64 bit sürümlerini çalıştıran kullanıcılar arasında paylaşılabilen emin olun. Daha fazla bilgi için [uygulamalara genel bakış için 64 bit Visual Basic](/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview).
 
 ## <a name="support-restricted-environments"></a>Kısıtlı ortamlarını destekler   
 Çözümünüzü kullanıcı hesabı ayrıcalık veya yönetici ayrıcalıkları gerektirmez. Ayrıca, çözüm ayarlama veya değiştirme bağlı olmaması gerekir:

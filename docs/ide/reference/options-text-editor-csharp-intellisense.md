@@ -18,75 +18,77 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d8f6928dd09b971e2c5924d34058a1a0d5e28394
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ab871d07a8519fa6850ad3d1743a7cd1d0fa110
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947397"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672491"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Seçenekler, Metin Düzenleyici, C#, IntelliSense
 
-Kullanım **IntelliSense** davranışı IntelliSense, C# ' ta etkileyen ayarları değiştirmek için seçenekler sayfası. Bu seçenekler sayfası erişmek için kendi seçtikleri **Araçları** > **seçenekleri**ve ardından **metin düzenleyici** > **C#**  >  **IntelliSense**.
+Kullanım **IntelliSense** için IntelliSense'in davranışını etkileyen ayarları değiştirmek için seçenekler sayfası C#. Bu seçenekler sayfası erişmek için kendi seçtikleri **Araçları** > **seçenekleri**ve ardından **metin düzenleyici**  >  **C#**  >  **IntelliSense**.
 
 > [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için tercih **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
 
 **IntelliSense** seçenekleri sayfasında aşağıdaki seçenekleri içerir:
 
 ## <a name="completion-lists"></a>Tamamlanma listeleri
 
-- Bir karakter yazıldıktan sonra tamamlanma listesi göster *
+- Bir karakter girildikten sonra Tamamlama listesini göster *
 
-   Bu seçenek belirlendiğinde, yazmaya başladığınızda, IntelliSense otomatik olarak tamamlanma listesi görüntüler. Bu seçenek belirlenmediğinde, IntelliSense tamamlanma hala kullanılabilir **IntelliSense** menü basarak veya **Ctrl**+**alanı**.
+   Bu seçenek belirlendiğinde, yazmaya başladığınızda IntelliSense tamamlanma listesi otomatik olarak görüntüler. Bu seçenek seçilmezse, IntelliSense tamamlama hala kullanılabilir **IntelliSense** menü tuşuna basarak veya **Ctrl**+**alanı**.
 
-- Bir karakter silindikten sonra tamamlanma listesi göster
+- Bir karakter silindikten sonra Tamamlama listesini göster
 
-- Tamamlanma listesi öğeleri eşleşen bölümlerini vurgulayın
+- Tamamlanma listesi öğelerinin eşleşen bölümlerini vurgulama
 
-- Tamamlanma listesi filtrelerini göster
+- Tamamlanma öğesi filtrelerini göster
 
-- Ad önerilerini göster
+## <a name="snippets-behavior"></a>Kod parçacığı davranışı
 
-### <a name="snippets-behavior"></a>Kod parçacıkları davranışı
+- Hiç kod parçacıklarını dahil et
 
-- Hiçbir zaman parçacıkları içerir
+   Bu seçenek belirlendiğinde, IntelliSense için diğer adlar hiçbir zaman ekler C# kod parçacıkları için tamamlanma listesi.
 
-   Bu seçenek belirlendiğinde, IntelliSense tamamlanma listesi hiçbir zaman C# kod parçacıkları için diğer adlar ekler.
+- Her zaman kod parçacıklarını dahil et
 
-- Her zaman parçacıkları ekleyin
+   Bu seçenek belirlendiğinde, IntelliSense, C# kod parçacıkları için diğer adlar tamamlanma listesine ekler. Kod parçacığı diğer ad olduğu bir anahtar sözcüğü ile aynı örneğin, durumda [sınıfı](/dotnet/csharp/language-reference/keywords/class), anahtar sözcüğü kısayol tarafından değiştirilir. Daha fazla bilgi için [ C# kod parçacıkları](../../ide/visual-csharp-code-snippets.md).
 
-   Bu seçenek belirlendiğinde, IntelliSense, C# kod parçacıkları için diğer adlar tamamlama listesine ekler. Kod parçacığı diğer olduğu bir anahtar sözcüğü ile aynı örneğin durumda [sınıfı](/dotnet/csharp/language-reference/keywords/class), anahtar sözcüğü kısayol tarafından değiştirilir. Daha fazla bilgi için bkz: [C# kod parçacıkları](../../ide/visual-csharp-code-snippets.md).
+- Kod parçacıkları dahil olduğunda?-bir tanımlayıcıdan sonra Tab yazılırsa
 
-- Parçaları içeren zaman?-sekmesini sonra bir tanımlayıcı türü
+   Bu seçenek belirlendiğinde, IntelliSense için diğer adlar ekler C# kod parçacıkları için tamamlama listesinde **?** + **Sekmesini** bir tanımlayıcıdan sonra basıldığında
 
-   Bu seçenek belirlendiğinde, diğer adlar için C# kod parçacıkları tamamlanması için IntelliSense ekler ne zaman listesinde **?** + **Sekmesini** sonra bir tanımlayıcı basıldığında
+## <a name="enter-key-behavior"></a>Enter tuşu davranışı
 
-### <a name="enter-key-behavior"></a>Anahtar davranışı girin
+- Hiçbir zaman yeni satır Ekle enter
 
-- Hiç yeni satır Ekle üzerinde girin
+   Yeni bir satır hiçbir zaman otomatik olarak tuşuna basarak ve tamamlanma listesine dâhil bir öğeyi seçtikten sonra eklendiğini belirtir **Enter**.
 
-   Yeni bir satır hiçbir zaman otomatik olarak bir öğe tamamlama listesinde seçerek ve basarak sonra eklendiğini belirtir **Enter**.
+- Yalnızca yeni bir satır eklemek tam yazılmış kelimenin sonunda enter
 
-- Yalnızca yeni satır Ekle üzerinde tam olarak yazılan word sonunda girin
+   Tamamlama listesinde bir girişi tüm karakterler yazın ve ENTER tuşuna basın belirten **Enter**, yeni bir satır otomatik olarak eklenir ve imleç yeni satıra taşır.
 
-   Tamamlanma listesinde bir girişi tüm karakterleri yazın ve ENTER tuşuna basın belirleyen **Enter**, yeni bir satır otomatik olarak eklenir ve yeni satır imleci taşır.
-
-   Örneğin, `else` ve tuşuna basarak **Enter**, aşağıdaki Düzenleyicisi'nde görüntülenir:
+   Örneğin, `else` ve tuşuna **Enter**, aşağıdaki Düzenleyicisi'nde belirir:
 
    `else`
 
    `|` (imleç konumu)
 
-   Ancak, yalnızca yazarsanız `el` ve tuşuna basarak **Enter**, aşağıdaki Düzenleyicisi'nde görüntülenir:
+   Ancak, yalnızca yazarsanız `el` ve tuşuna **Enter**, aşağıdaki Düzenleyicisi'nde belirir:
 
    `else|` (imleç konumu)
 
-- Her zaman yeni bir satır ekleyin üzerinde girin
+- Her zaman yeni satır Ekle enter
 
-   Yazarsanız belirleyen *herhangi* ENTER tuşuna basın ve tamamlanma listesi bir girişi karakterlerin **Enter**, yeni bir satır otomatik olarak eklenir ve yeni satır imleci taşır.
+   Yazarsanız belirten *herhangi* ENTER tuşuna basın ve tamamlanma listesini bir giriş için karakter **Enter**, yeni bir satır otomatik olarak eklenir ve imleç yeni satıra taşır.
+
+## <a name="show-name-suggestions"></a>Adı önerileri göster
+
+   Otomatik nesne adı tamamlama, yakın zamanda seçtiğiniz üyeler için gerçekleştirir. 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Genel, ortam, Seçenekler iletişim kutusu](../../ide/reference/general-environment-options-dialog-box.md)
+- [Genel, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/general-environment-options-dialog-box.md)
 - [IntelliSense Kullanma](../../ide/using-intellisense.md)

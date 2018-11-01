@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c3d763209d60440066df758b6c1eca087dea9b03
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a9f065a32fc26d372b97a31eb70836451b31fa00
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906682"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670734"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>Nasıl yapılır: program aracılığıyla Visio belgelerini kaydetme
   Microsoft Office Visio belgelerini kaydetme için birkaç yol vardır:  
@@ -32,7 +32,7 @@ ms.locfileid: "49906682"
   
 - Belge, belirtilen bağımsız değişkenler ile kaydedin.  
   
-  Daha fazla bilgi için bkz: VBA başvuru belgelerine [Microsoft.Office.Interop.Visio.Document.Save](https://msdn.microsoft.com/library/office/ff766478.aspx) yöntemi [Microsoft.Office.Interop.Visio.Document.SaveAs](https://msdn.microsoft.com/library/office/ff765824.aspx) yöntemi ve [ Microsoft.Office.Interop.Visio.Document.SaveAsEx](https://msdn.microsoft.com/library/office/ff768149.aspx) yöntemi.  
+  Daha fazla bilgi için bkz: VBA başvuru belgelerine [Microsoft.Office.Interop.Visio.Document.Save](/office/vba/api/Visio.Document.Save) yöntemi [Microsoft.Office.Interop.Visio.Document.SaveAs](/office/vba/api/Visio.Document.SaveAs) yöntemi ve [ Microsoft.Office.Interop.Visio.Document.SaveAsEx](/office/vba/api/Visio.Document.SaveAsEx) yöntemi.  
   
 ## <a name="save-an-existing-document"></a>Var olan bir belgeyi Kaydet  
   

@@ -1,6 +1,6 @@
 ---
 title: Seçenekler, Metin Düzenleyici, C#, Gelişmiş
-ms.date: 11/04/2016
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 16c92111fc29071447d4af5e736b881fa7c7a769
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 7cfbc6d57e5bfd3c6a8f317967448039a9b3f5e4
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356749"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670721"
 ---
 # <a name="options-text-editor-c-advanced"></a>Seçenekler, Metin Düzenleyici, C#, Gelişmiş
 
@@ -36,7 +36,7 @@ Kullanım **Gelişmiş** Düzenleyici biçimlendirme ayarlarını değiştirmek,
 
 - Using deyimlerini sıralarken önce 'System' yönergelerini Yerleştir
 
-   Bu onay kutusu seçildiğinde, **kullanımları Kaldır ve Sırala** sağ tıklama menüsünde sıralar komutunu `using` yönergeleri ve yerler listenin üst kısmındaki 'System' ad alanları
+   Bu onay kutusu seçildiğinde, **kullanımları Kaldır ve Sırala** sağ tıklama menüsünde sıralar komutunu `using` yönergeleri ve yerde listenin üst kısmındaki 'System' ad.
 
    Sıralamadan önce:
 
@@ -89,9 +89,10 @@ Kullanım **Gelişmiş** Düzenleyici biçimlendirme ayarlarını değiştirmek,
    using System.Linq;
    ```
    
-- Başvuru bütünleştirilmiş kodları ve NuGet paketleri içinde türler için using ekleme 
+- Reference bütünleştirilmiş kodlarında türler için using Öner 
+- NuGet paketlerinde türler için using Öner 
 
-   Seçili olduğunda, bir [hızlı eylem](../quick-actions.md) NuGet paketini yüklemek ve eklemek kullanılabilir bir `using` başvurulmayan türleri için yönerge.
+   Bu seçenek seçildiğinde, bir [hızlı eylem](../quick-actions.md) NuGet paketini yüklemek ve eklemek kullanılabilir bir `using` başvurulmayan türleri için yönerge.
 
    ![Visual Studio'da NuGet paketini yüklemek için hızlı eylem](media/nuget-lightbulb.png)
   
@@ -106,6 +107,16 @@ Kullanım **Gelişmiş** Düzenleyici biçimlendirme ayarlarını değiştirmek,
 - Dosyalar açıldığında anahat moduna gir
 
    Bu onay kutusu seçildiğinde, otomatik olarak daraltılabilir kod bloklarını oluşturan kod dosyası özetlenmektedir. Bir dosya açıldığında, ilk kez #regions blokları ve etkin olmayan kod blokları daraltır.
+
+- Yordam satır ayıraçlarını Göster
+
+   Metin düzenleyici, yordamların görsel kapsamını belirtir. Bir çizgi çizilir *.vb* konumlarda projenizin kaynak dosyaları aşağıdaki tabloda listelenen:
+
+   |.Vb kaynak dosya konumu|Satır konumu örneği|
+   |---------------------------------|------------------------------|
+   |Sonra bir blok bildirimi yapısı kapatma|-Sonunda sınıfı, yapısı, modülü, arabirim veya numaralandırma<br />-Özelliği, işlev veya alt after<br />-Get ve set değil arasında bir özellikte yan tümceleri|
+   |Tek satır yapıları bir dizi sonra|-İçeri aktarma deyimlerini after, önce bir sınıf dosyası içinde bir tür tanımı<br />-Bir sınıftaki tüm yordamları önce tanımlanan değişkenleri after|
+   |Tek satır bildirimlerinden sonra (blok düzey bildirimleri)|-İçeri aktarma deyimlerini aşağıdaki deyimleri, değişken bildirimleri, olay bildirimleri, temsilci bildirimleri devralır ve DLL ifadeleri bildirme|
 
 ## <a name="editor-help"></a>Düzenleyici Yardımı
 

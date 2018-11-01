@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a1c6e96815c69ad6a05b3c8bc55e22f13c212e24
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7fb6ece309fb0c5e7c67abf039d2b27a9f04236d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884868"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671423"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>İzlenecek yol: ilk VSTO eklentinizi projesi oluşturma
   Bu kılavuzda, Microsoft Office Project için VSTO eklentisi oluşturma işlemini göstermektedir. Bu tür bir çözüm içinde oluşturduğunuz özellikler uygulamanın kendisinin projeleri açık olan bağımsız olarak kullanılabilir. Daha fazla bilgi için [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -103,7 +103,7 @@ ms.locfileid: "49884868"
   
 1.  Tuşuna **F5** oluşturup projeyi çalıştırın. Microsoft Project başlatır ve yeni boş bir proje otomatik olarak açılır.  
   
-     Proje oluşturduğunuzda, proje için yapı çıkış klasöründe bulunan bütünleştirilmiş kod derlenir. Visual Studio ayrıca bulmak ve VSTO eklentisi yüklemek projeyi etkinleştirin kayıt defteri girişleri kümesi oluşturur ve VSTO eklenti çalıştırmak, geliştirme bilgisayarının güvenlik ayarlarını yapılandırır. Daha fazla bilgi için [Office çözüm derleme işlemine genel bakış](http://msdn.microsoft.com/a9d12e4f-c9ea-4a62-a841-c42b91f831ee).  
+     Proje oluşturduğunuzda, proje için yapı çıkış klasöründe bulunan bütünleştirilmiş kod derlenir. Visual Studio ayrıca bulmak ve VSTO eklentisi yüklemek projeyi etkinleştirin kayıt defteri girişleri kümesi oluşturur ve VSTO eklenti çalıştırmak, geliştirme bilgisayarının güvenlik ayarlarını yapılandırır. Daha fazla bilgi için [Office çözüm derleme işlemine genel bakış](/previous-versions/visualstudio/visual-studio-2010/h2c9cdc0(v=vs.100)).  
   
 2.  Yeni bir görev boş projeye eklendiğini doğrulayın.  
   

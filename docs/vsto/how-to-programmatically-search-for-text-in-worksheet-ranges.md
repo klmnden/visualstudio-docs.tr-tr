@@ -17,15 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c0dcf2787706de121fba691edaf42e9971747524
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a323336979e16be376cfcd3da44cbc9b12bd73ea
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920085"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671969"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Nasıl yapılır: program aracılığıyla çalışma sayfası aralıklarında metni arayın
-  <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Yöntemi <xref:Microsoft.Office.Interop.Excel.Range> nesne aralık içinde metin araması olanak sağlar. Bu metin herhangi bir çalışma sayfası hücresinde gibi görünebilir hata dizelerini de olabilir `#NULL!` veya `#VALUE!`. Hata dizeleri hakkında daha fazla bilgi için bkz. [hücre hata değerlerini](http://msdn.microsoft.com/library/office/ff839168.aspx).  
+  <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Yöntemi <xref:Microsoft.Office.Interop.Excel.Range> nesne aralık içinde metin araması olanak sağlar. Bu metin herhangi bir çalışma sayfası hücresinde gibi görünebilir hata dizelerini de olabilir `#NULL!` veya `#VALUE!`. Hata dizeleri hakkında daha fazla bilgi için bkz. [hücre hata değerlerini](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   

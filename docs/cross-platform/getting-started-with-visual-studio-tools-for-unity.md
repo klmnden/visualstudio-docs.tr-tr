@@ -67,11 +67,11 @@ Unity 2018.1 itibarıyla Visual Studio, Unity'de varsayılan dış kod düzenley
 
 2. Tercihler iletişim kutusunda, **External Tools** (Dış Araçlar) sekmesini seçin.
 
-3. Gelen **dış betik Düzenleyicisi** açılan listesinde, istediğiniz Visual Studio sürümünüze listelenmişse seçin, aksi takdirde **Gözat...** .
+3. **External Script Editor** (Dış Betik Düzenleyici) listesinde istediğiniz Visual Studio sürümü listelenmişse seçin, aksi takdirde **Browse...** (Gözat...) seçeneğini belirleyin.
 
    ![Visual Studio'yu seçme](media/vstu_unity-external-tools.png)
 
-4. Varsa **Gözat...**  olan seçili gidin **Common7/IDE** seçin ve Visual Studio yükleme dizini içinde dizin **devenv.exe**. Ardından **açık**.
+4. **Browse...** (Gözat...) seçili ise Visual Studio yükleme dizininizdeki **Common7/IDE** klasörüne gidin ve **devenv.exe** öğesini seçip **Aç**'a tıklayın.
 
    ![Aç'ı seçin](media/vstu_browse-for-application.png)
 
@@ -81,7 +81,7 @@ Unity 2018.1 itibarıyla Visual Studio, Unity'de varsayılan dış kod düzenley
 
 ## <a name="support-for-older-versions"></a>Eski sürümler için destek
 
- İndirip Unity için Visual Studio Araçları, Visual Studio Market'ten yükleyebilirsiniz. Visual Studio sürümünüz için doğru paketi yüklemeniz gerekir.
+ Unity için Visual Studio Araçları'nı Visual Studio Market'ten indirip yükleyin. Visual Studio sürümünüz için doğru paketi yüklemeniz gerekir.
 
 - Visual Studio 2015 Community, Visual Studio 2015 Professional veya Visual Studio 2015 Enterprise için:
 
@@ -93,4 +93,4 @@ Unity 2018.1 itibarıyla Visual Studio, Unity'de varsayılan dış kod düzenley
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
- Çalışmak ve Unity projenizde Visual Studio hata ayıklama hakkında bilgi edinmek için [Unity için Visual Studio Araçları](../cross-platform/using-visual-studio-tools-for-unity.md).
+ Visual Studio'yu kullanarak Unity projenizde çalışma ve hata ayıklama hakkında bilgi edinmek için bkz. [Unity için Visual Studio Araçları](../cross-platform/using-visual-studio-tools-for-unity.md).

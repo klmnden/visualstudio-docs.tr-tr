@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2762843141d1383c1fb4f7d4925b1fbe37a9298
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 5bf6de28ff98bf7a05098cabefb86b8cd5169d27
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029114"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673041"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Hangi&#39;Visual Studio 2017'deki yenilikler
 
@@ -212,7 +212,7 @@ Yeni özel durum Yardımcısı, özel durum bilgilerini bir bakışta görmenizi
 
 ![Visual Studio'da yeni bir özel durum Yardımcısı iletişim kutusu](../ide/media/vs2017ide-ExceptionHelper.png)
 
-Daha fazla bilgi için [Visual Studio'da yeni özel durum Yardımcısı'nı kullanın](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) blog gönderisi.
+Daha fazla bilgi için [Visual Studio'da yeni özel durum Yardımcısı'nı kullanın](https://blogs.msdn.microsoft.com/devops/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) blog gönderisi.
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Anlık görüntüler ve IntelliTrace geri adım atma
 
@@ -264,7 +264,7 @@ Evrensel Windows Platformu (UWP), Windows 10 için uygulama platformudur. Tek bi
 
 Tercih ettiğiniz geliştirme dilinizi&mdash;C#, Visual Basic, C++ veya JavaScript&mdash;Windows 10 cihazları için bir evrensel Windows platformu uygulaması oluşturmak için. Visual Studio 2017 UWP uygulaması şablonu, tüm cihazlar için tek bir proje oluşturmanıza olanak tanır. her bir dilin sağlar. İş tamamlandığında, uygulama paketi üretmek ve uygulamanızı tüm Windows 10 cihazlarda müşterilere ulaşmak için Visual Studio içinden Microsoft Store için gönderin.
 
-**15.5 yeni**: Visual Studio 2017 sürüm 15.5 Windows 10 Fall Creators Update SDK (10.0.16299.0) için en iyi destek sağlar. Windows 10 Fall Creators Update, UWP geliştiricileri için birçok iyileştirme de getirir. En önemli değişikliklerden bazıları şunlardır: 
+**15.5 yeni**: Visual Studio 2017 sürüm 15.5 Windows 10 Fall Creators Update SDK (10.0.16299.0) için en iyi destek sağlar. Windows 10 Fall Creators Update, UWP geliştiricileri için birçok iyileştirme de getirir. En önemli değişikliklerden bazıları şunlardır: 
 
 * **.NET Standard 2.0 desteği**<br/>Kolaylaştırılmış uygulama dağıtımı ek olarak, Windows 10 Fall Creators Update .NET Standard 2.0 desteği sağlamak için Windows 10 'un ilk sürümdür. Etkili bir şekilde [.NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/) herhangi bir .NET platform uygulayabilirsiniz temel sınıf kitaplığı başvurusu uygulamasıdır. .NET Standard'ın üzerinde çalışmak üzere seçtikleri herhangi bir .NET platform arasında kod paylaşmak, .NET geliştiricileri için mümkün olduğu kadar kolay hale getirmek için hedeftir.
 * **En iyi hem UWP ve Win32**<br/>Windows 10 platformu ile geliştirildi [Masaüstü köprüsü](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) kendi geçerli odak UWP, WPF, Windows Forms veya Xamarin olup Windows 10 tüm .NET geliştiricileri için daha iyi hale getirmek için. Yeni Uygulama paketleme projesi türü ile Visual Studio 2017 sürüm 15.5 UWP projeleri için gibi WPF veya Windows Forms projeleri için Windows uygulama paketleri oluşturabilirsiniz. Uygulamanızı paketleme sonra tüm Windows 10 uygulamasını dağıtım avantajlarından yararlanın ve iş ve eğitim için Microsoft Store (tüketici uygulamaları için) veya Microsoft Store aracılığıyla dağıtma seçeneğine sahipsiniz. Paketlenmiş uygulamalar masaüstünde hem tam UWP API yüzeyi hem de Win32 API'ları erişime sahip olduğundan, WPF ve Windows Forms uygulamalarınızla kademeli olarak UWP API'lerine ve Windows 10 özellikleri artık modernleştirmelisiniz. Ayrıca, UWP uygulamalarınızda tüm Win32 özellikleriyle masaüstünde vurgulamasında Win32 bileşenlerinizi içerebilir.

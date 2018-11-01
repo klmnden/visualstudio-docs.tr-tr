@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c309dcfd78ae0181905f691e1c36f407e763fc93
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: b44352996c1f6cf343f8100abb4f75814765c22a
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542487"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672996"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office birincil birlikte çalışma derlemeleri
 
@@ -38,7 +38,7 @@ Bu konu, Microsoft Office PIA'ların Office projelerinde kullanılmasıyla ilgil
   
 - [Microsoft Office uygulamaları için birincil birlikte çalışma derlemelerinin tam listesi](#pialist)  
   
-Birincil birlikte çalışma derlemeleri hakkında daha fazla bilgi için bkz: [birincil birlikte çalışma derlemelerini](http://msdn.microsoft.com/b977a8be-59a0-40a0-a806-b11ffba5c080).  
+Birincil birlikte çalışma derlemeleri hakkında daha fazla bilgi için bkz: [birincil birlikte çalışma derlemelerini](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100)).  
 
 <a name="separateassemblies"></a> 
 

@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 078bbbf448b1a940461f2859601944627b7c2394
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4ae2882cbf38349eac57f1dfb731cc7d717769a4
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676681"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670864"
 ---
 # <a name="infopath-solutions"></a>InfoPath çözümleri
   Visual Studio, Microsoft Office InfoPath 2013 ve InfoPath 2010 için VSTO eklentileri oluşturmak için kullanabileceğiniz proje şablonları sağlar. InfoPath Office 2016'da kullanılamıyor.  
@@ -47,7 +47,7 @@ ms.locfileid: "35676681"
 ## <a name="automate-infopath-by-using-an-add-in"></a>InfoPath eklenti kullanarak otomatik hale getirin.  
  InfoPath nesne modelini Visual Studio'da Office geliştirme araçları kullanılarak oluşturulan Office VSTO ek bileşeni erişmek için kullanın `Application` alanını `ThisAddIn` projenizdeki sınıfı. `Application` Alan döndürür bir <xref:Microsoft.Office.Interop.InfoPath.Application> InfoPath'ün geçerli örneğini temsil eden nesne. Daha fazla bilgi için [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md).  
   
- Bir VSTO eklentisi InfoPath nesne modelini çağırdığınızda, InfoPath için birincil birlikte çalışma derlemesi türleri kullanın. Birincil birlikte çalışma derlemesi, VSTO eklentisi yönetilen kodda ve InfoPath COM nesne modeli arasında bir köprü görevi görür. InfoPath birincil birlikte çalışma derlemesi içindeki tüm türler tanımlanır <xref:Microsoft.Office.Interop.InfoPath> ad alanı. InfoPath birincil birlikte çalışma derlemesi hakkında daha fazla bilgi için bkz: [birincil birlikte çalışma derlemesi hakkında Microsoft Office InfoPath](http://msdn.microsoft.com/1b3ae03c-6951-49e4-a489-4712d3f7ba72). Genel olarak, birincil birlikte çalışma derlemeleri hakkında daha fazla bilgi için bkz [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) ve [Office birincil birlikte çalışma derlemelerini](../vsto/office-primary-interop-assemblies.md).  
+ Bir VSTO eklentisi InfoPath nesne modelini çağırdığınızda, InfoPath için birincil birlikte çalışma derlemesi türleri kullanın. Birincil birlikte çalışma derlemesi, VSTO eklentisi yönetilen kodda ve InfoPath COM nesne modeli arasında bir köprü görevi görür. InfoPath birincil birlikte çalışma derlemesi içindeki tüm türler tanımlanır <xref:Microsoft.Office.Interop.InfoPath> ad alanı. InfoPath birincil birlikte çalışma derlemesi hakkında daha fazla bilgi için bkz: [birincil birlikte çalışma derlemesi hakkında Microsoft Office InfoPath](https://msdn.microsoft.com/1b3ae03c-6951-49e4-a489-4712d3f7ba72). Genel olarak, birincil birlikte çalışma derlemeleri hakkında daha fazla bilgi için bkz [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) ve [Office birincil birlikte çalışma derlemelerini](../vsto/office-primary-interop-assemblies.md).  
   
 ## <a name="customize-the-user-interface-of-infopath-by-using-an-add-in"></a>Bir eklentiyi kullanarak InfoPath'in kullanıcı arabirimini özelleştirme  
  InfoPath için VSTO eklentisi oluşturma için birkaç farklı kullanıcı Arabirimi özelleştirme seçeneğiniz vardır. Aşağıdaki tabloda bu seçeneklerden bazıları listelenmektedir.  
@@ -60,7 +60,7 @@ ms.locfileid: "35676681"
  InfoPath ve diğer Microsoft Office uygulamaları özelleştirme hakkında daha fazla bilgi için bkz. [Office UI özelleştirmesi](../vsto/office-ui-customization.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Microsoft Office InfoPath birincil birlikte çalışma derlemesi hakkında](http://msdn.microsoft.com/1b3ae03c-6951-49e4-a489-4712d3f7ba72)   
+ [Microsoft Office InfoPath birincil birlikte çalışma derlemesi hakkında](https://msdn.microsoft.com/1b3ae03c-6951-49e4-a489-4712d3f7ba72)   
  [VSTO eklentileri programlama kullanmaya başlayın](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [VSTO eklentileri mimarisi](../vsto/architecture-of-vsto-add-ins.md)   

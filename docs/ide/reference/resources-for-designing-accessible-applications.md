@@ -16,38 +16,38 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5377b4fbca562ad41b153c72f27a6eaecc84af56
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 19642d5a327982454c9eaf4e5233451d5dba499e
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179027"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671722"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Erişilebilir uygulamalar tasarlama için kaynaklar
 
-Erişilebilir bir Windows uygulamaları ve Web siteleri geliştirmek için ipuçları ve örnekler yanı sıra erişilebilir tasarım destekleyen teknolojileri hakkında bilgi için aşağıdaki bağlantıları kullanın. Erişilebilirlik hakkında genel bilgiler bulunabilir çevrimiçine [ http://www.microsoft.com/enable/ ](http://www.microsoft.com/enable/).
+Erişilebilir bir Windows uygulamaları ve Web siteleri geliştirmek için erişilebilir tasarım yanı sıra ipuçları ve örnekleri destekleyen teknolojileri hakkında bilgi için aşağıdaki bağlantıları kullanın. Erişilebilirlik hakkında genel bilgiler bulunabilir çevrimiçine [ http://www.microsoft.com/enable/ ](http://www.microsoft.com/enable/).
 
 ## <a name="technologies"></a>Teknolojileri
 
-* **Microsoft Active Accessibility** şekilde erişilebilirliği arttırır bir COM tabanlı teknoloji Microsoft Windows üzerinde çalışan uygulamalarla iş kolaylaştırır. Bu, bir COM arabirimi yanı sıra işletim sistemi eklenen dinamik bağlantı kitaplıkları ve kullanıcı arabirimi öğeleri hakkında bilgi kullanıma sunmak için güvenilir yöntemler sağlayan bir uygulama programlama öğeleri sağlar. Daha fazla bilgi için bkz. [http://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/dd373592.aspx).
+* **Microsoft Active Accessibility** şekilde erişilebilirliği arttırır bir COM tabanlı teknoloji Microsoft Windows üzerinde çalışan uygulamalarla iş kolaylaştırır. Bu, işletim sistemi ve bir COM arabirimi eklenen dinamik bağlantı kitaplıkları sağlar. Ayrıca, kullanıcı arabirimi öğeleri hakkında bilgi kullanıma sunmak için yöntemler sağlayan bir uygulama programlama öğeleri bulunur. Daha fazla bilgi için [Microsoft etkin erişilebilirliği](/windows/desktop/WinAuto/microsoft-active-accessibility).
 
-* **Microsoft .NET konuşma teknolojileri** Microsoft .NET Speech SDK'sı Microsoft kümesidir [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] denetimler, Microsoft Internet Explorer konuşma eklentisi, örnek uygulamalar ve oluşturmak, web geliştiricilerinin sağlayan belgeler hata ayıklama ve Konuşma özellikli dağıtma [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] uygulamalar. Araçları, Microsoft Visual tanıdık geliştirme ortamını yararlanarak geliştiricilerin Studio'ya, sorunsuz bir şekilde tümleştirilmiştir. Daha fazla bilgi için bkz. [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx).
+* **Microsoft .NET konuşma teknolojileri** Microsoft .NET Speech SDK'sı Microsoft kümesi sağlar [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] denetimler, Microsoft Internet Explorer konuşma eklentisi, örnek uygulamalar ve belgeler. Web geliştiricileri, oluşturma, hata ayıklama ve konuşma özellikli dağıtmak için bu araçları kullanabilirsiniz [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] uygulamalar. Araçları, Microsoft Visual Studio'yla geliştiricilerinin aşina olduğunuz geliştirme ortamında çalışmasını sağlayan, sorunsuz bir şekilde tümleştirilmiştir. Daha fazla bilgi için [konuşma sunucu](/previous-versions/office/developer/speech-technologies/ms950383\(v\=msdn.10\)).
 
-* **LAPONCA 1.0 anlama** Microsoft eşitlenmiş erişilebilir medya değişim (SAMI) teknolojisi, ses içeriğini multimedya PC için geliştiricilere bir yol sağlar. Daha fazla bilgi için [anlama LAPONCA 1.0](http://msdn.microsoft.com/library/ms971327.aspx).
+* **LAPONCA 1.0 anlama** Microsoft eşitlenmiş erişilebilir medya değişim (SAMI) teknolojisi, ses içeriğini multimedya PC için geliştiricilere bir yol sağlar. Daha fazla bilgi için [anlama LAPONCA 1.0](/previous-versions/windows/desktop/dnacc/understanding-sami-1.0).
 
 ## <a name="windows-applications"></a>Windows uygulamaları
 
-* **[İzlenecek yol: erişilebilir bir Windows tabanlı uygulama oluşturma](http://msdn.microsoft.com/Library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b)**  bu konuda bir örnek Windows içinde "Windows için sertifikalıdır" logosunu beş erişilebilirlik gereksinimleri dahil olmak üzere adım adım yönergeler sağlar. uygulama.
+* **[İzlenecek yol: erişilebilir bir Windows tabanlı uygulama oluşturma](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)**  bu makalede bir örnek Windows "Windows için sertifikalıdır" logosunu beş erişilebilirlik gereksinimleri dahil olmak üzere adım adım yönergeler sağlar. uygulama.
 
-* **Yönergeler için klavye kullanıcı arabirimi tasarım** teknik bu makalede, bir Windows uygulaması kullanıcı arabirimi, kullanıcıların tasarım klavyeden nasıl gezinebileceğiniz açıklanır. Daha fazla bilgi için bkz. [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx).
+* **Yönergeler için klavye kullanıcı arabirimi tasarım** Bu teknik makaleye kullanıcılar klavyeden gidebilir bir Windows uygulaması tasarım açıklar. Daha fazla bilgi için [yönergeleri klavye kullanıcı arabirimi tasarımı](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design).
 
-* **Konsolu erişilebilirlik** teknik bu makalede API'leri ve Windows XP'de Konsolu erişilebilirlik yardımcılarına kullanıma sunmak için kullanılan olayları açıklar. Daha fazla bilgi için bkz. [http://msdn2.microsoft.com/library/ms971319.aspx](http://msdn2.microsoft.com/library/ms971319.aspx).
+* **Konsolu erişilebilirlik** teknik bu makalede API'leri ve Windows XP'de Konsolu erişilebilirlik yardımcılarına kullanıma sunmak için kullanılan olayları açıklar. Daha fazla bilgi için [Konsolu erişilebilirlik](/previous-versions/windows/desktop/dnacc/console-accessibility).
 
 ## <a name="websites"></a>Web siteleri
 
--   [İzlenecek yol: Görüntü denetimleri kullanarak, menü denetimleri ve AutoPostBack erişilebilirlik yönergeleri](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Bu konu örnek bir web sayfası ve bunun yanı sıra bazı erişilebilirlik tasarım ipuçları için erişilebilir denetimleri de dahil olmak üzere adım adım yönergeler sağlar. Web.
+-   [İzlenecek yol: Görüntü denetimleri kullanarak, menü denetimleri ve AutoPostBack erişilebilirlik yönergeleri](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) bu makalede örnek bir web sayfası erişilebilir denetimleri dahil etmek için adım adım yönergeler sağlar. Ayrıca bazı erişilebilirlik için Web tasarım ipuçları tanır.
 
--   **DHTML ile erişilebilir Web sayfaları oluşturma** Bu teknik makaleye erişilebilir web tasarım ipuçları yanı sıra erişilebilir HTML 4.0 öğelerini listeler. Daha fazla bilgi için bkz. [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).
+-   **DHTML ile erişilebilir Web sayfaları oluşturma** Bu teknik makaleye erişilebilir web tasarım ipuçları yanı sıra erişilebilir HTML 4.0 öğelerini listeler. Daha fazla bilgi için [DHTML ile erişilebilir web sayfaları oluşturmak](https://msdn.microsoft.com/library/ms528445.aspx).
 
 ### <a name="third-party-resources"></a>Üçüncü parti Kaynaklar
 

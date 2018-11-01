@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ceb85bbad90074a7cfb6db053398698a0a333c1a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14d35e8d6aa6209f628e38be65c9be5fbc614561
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881788"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673022"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>VSTO eklentileri için kayıt defteri girişleri
   Visual Studio kullanılarak oluşturulan VSTO Add-Ins dağıttığınızda, belirli bir kayıt defteri girdileri oluşturmanız gerekir. Bu kayıt defteri girdileri bulmak ve VSTO eklentisi yükleme Microsoft Office uygulamasını sağlayan bilgiler sağlar.  
@@ -88,7 +88,7 @@ ms.locfileid: "49881788"
   
  Projenizi yapılandırdığınızda tüm VSTO eklentileri tarafından paylaşılan diğer kayıt defteri girdilerini gibi Visual Studio form bölgesi kayıt defteri girdilerini geliştirme bilgisayarında oluşturur. VSTO eklenti dağıtmak için ClickOnce'ı kullanma, kayıt defteri girdilerini son kullanıcı bilgisayarda otomatik olarak oluşturulur. VSTO eklenti dağıtmak için Windows Installer kullanırsanız, son kullanıcı bilgisayarda kayıt defteri girişleri oluşturmak için InstallShield Limited Edition projesi yapılandırmanız gerekir.  
   
- Form bölgesi kayıt defteri girdileri hakkında daha fazla bilgi için bkz. [özel bir formu bir form bölgesinin konumunu belirtin](http://msdn.microsoft.com/library/office/ff868998.aspx). Outlook form bölgeleri hakkında daha fazla bilgi için bkz: [oluşturma Outlook form bölgeleri](../vsto/creating-outlook-form-regions.md).  
+ Form bölgesi kayıt defteri girdileri hakkında daha fazla bilgi için bkz. [özel bir formu bir form bölgesinin konumunu belirtin](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form). Outlook form bölgeleri hakkında daha fazla bilgi için bkz: [oluşturma Outlook form bölgeleri](../vsto/creating-outlook-form-regions.md).  
   
 ##  <a name="LoadBehavior"></a> LoadBehavior değerleri  
  **LoadBehavior** altında girdisi *kök*\Software\Microsoft\Office\\*uygulama adı*\Addins\\*eklentisi Kimliği* anahtar VSTO eklentisi çalışma zamanı davranışını belirten değerlerinin Bitsel bir birleşimi içerir. En düşük sıralı bitten (değerler 0 ile 1) VSTO eklentisi şu anda kaldırıldı yüklenen mı olduğunu gösterir. Uygulama için VSTO eklentisi yüklemeye çalıştığında diğer bitler gösterir.  

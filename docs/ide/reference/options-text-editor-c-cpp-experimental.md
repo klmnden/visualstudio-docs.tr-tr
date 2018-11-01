@@ -13,16 +13,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc0783ad10b01e8dcc7f5f85fa627ec142334597
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 3f5ddf5a42199c8097e982c6ddd8e559185787fb
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50218624"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672346"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Seçenekler, metin düzenleyici, C/C++, Deneysel
 
-Bu seçenekler değiştirerek, C veya C++ ortamında programlama, IntelliSense ve gözatma veritabanı ilgili davranışı değiştirebilirsiniz. Bu özellikler gerçekten Deneysel ve değiştirilebilir veya gelecekteki bir sürümde Visual Studio'dan kaldırıldı. Bu konu, Visual Studio 2017'de seçeneklerini açıklar. Visual Studio 2015 için bkz: [seçenekler, metin düzenleyici, C/C++, Deneysel](https://msdn.microsoft.com/library/mt591979.aspx)
+Bu seçenekler değiştirerek, C veya C++ ortamında programlama, IntelliSense ve gözatma veritabanı ilgili davranışı değiştirebilirsiniz. Bu özellikler gerçekten Deneysel ve değiştirilebilir veya gelecekteki bir sürümde Visual Studio'dan kaldırıldı. Bu konu, Visual Studio 2017'de seçeneklerini açıklar. Visual Studio 2015 için seçin **2015** içindekiler tablosu üzerinde Seçici içinde.
 
 Bu özellik sayfasına erişmek için basın **Control + Q** etkinleştirmek için `Quick Launch` "Deneysel" yazın. Hızlı Başlatma sonra ilk birkaç harfini sayfasında bulabilirsiniz. Seçim yaparak kendisine da edinebilirsiniz **araçları | Seçenekleri** ve genişletme **metin düzenleyici**, ardından **C/C++** ve ardından **Deneysel**.
 
@@ -57,4 +57,4 @@ Ek Metin Düzenleyicisi özelliklerinin göz atabilirsiniz [Visual Studio Market
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Dile Özgü Düzenleyici Seçeneklerini Ayarlama](../../ide/reference/setting-language-specific-editor-options.md)
-- [C++'da (VC blogunda) yeniden düzenleme](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
+- [C++'da (VC blogunda) yeniden düzenleme](https://blogs.msdn.microsoft.com/vcblog/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview/)

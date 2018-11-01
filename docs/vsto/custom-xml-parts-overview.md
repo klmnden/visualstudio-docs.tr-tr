@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b31ce44c458f7f376d98fac83670595b8a163d65
-ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
+ms.openlocfilehash: 71720ef96ee7d17bd52ea118a8c44a8f4b117cad
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49325009"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671735"
 ---
 # <a name="custom-xml-parts-overview"></a>Özel XML bölümlerine genel bakış
   Bazı Microsoft Office uygulamaları için belgelerde XML veri ekleyebilir. Bir belgedeki XML verileri ekleme, veriler adlı bir *özel XML bölümleri*.  
@@ -50,13 +50,13 @@ ms.locfileid: "49325009"
   
  Open XML ve özel XML bölümleri yapısı hakkında daha fazla bilgi için aşağıdaki makalelere bakın:  
   
--   [Office (2007) Open XML dosya biçimleri](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf)  
+-   [Office (2007) Open XML dosya biçimleri](/previous-versions/office/developer/office-2007/aa338205(v=office.12))  
   
--   [Nasıl yapılır: Açık XML Biçimleri belgelerini değiştirme](http://msdn.microsoft.com/c989d4e2-053d-4e1f-83be-257c608b343f)  
+-   [Nasıl yapılır: Açık XML Biçimleri belgelerini değiştirme](/previous-versions/office/developer/office-2007/aa982683(v=office.12))  
   
--   [İzlenecek yol: Word 2007 XML biçimi](http://msdn.microsoft.com/fc1afcb2-27fb-4608-9f29-11b7bd23ea4a)  
+-   [İzlenecek yol: Word 2007 XML biçimi](/previous-versions/office/developer/office-2007/bb266220(v=office.12))  
   
--   [Word 2007 belgelerini açık XML biçimleri kullanarak derleme](http://msdn.microsoft.com/59a46f4e-5a5a-4dac-86e5-7dfd43330766)  
+-   [Word 2007 belgelerini açık XML biçimleri kullanarak derleme](/previous-versions/office/developer/office-2007/bb264572(v=office.12))  
   
 > [!NOTE]  
 >  Ayrıca Excel, Word ve PowerPoint ikili dosya biçimlerinde kaydedilir belgelerde özel XML bölümleri kullanmanıza olanak sağlar. Ancak, ikili biçimde bir belge kaydedilirse, ekleyemez veya Microsoft Office uygulamasını başlatmadan özel XML bölümleri değiştirin.  
@@ -76,7 +76,7 @@ ms.locfileid: "49325009"
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>Office uygulamasını başlatmadan XML bölümlerini Değiştir  
  Ekleyebilir veya Excel, PowerPoint ve Word başlatmadan özel bir XML parçasına değiştirebilirsiniz. Bu, yüklü bir sunucu gibi Microsoft Office uygulamalarının yüklü olmadığı bir bilgisayarda, bir belgedeki XML verileriyle çalışmak istiyorsanız kullanışlıdır.  
   
- Microsoft Office başlatmadan özel XML bölümleri ekleme için sınıflar açık XML SDK'yı kullanın. Bu sınıflar, Office belgeleri için özel bir Open XML içeriğe erişim sağlamak üzere tasarlanmıştır. Örneğin, bir Excel çalışma kitabına özel bir XML parçasına eklemek için kullandığınız [WorkbookPart\<T >](https://msdn.microsoft.com/library/office/cc562657.aspx) yöntemi bir [AddNewPart](https://msdn.microsoft.com/library/office/documentformat.openxml.packaging.workbookpart.aspx) nesne. Daha fazla bilgi için [açık XML SDK](/office/open-xml/open-xml-sdk).  
+ Microsoft Office başlatmadan özel XML bölümleri ekleme için sınıflar açık XML SDK'yı kullanın. Bu sınıflar, Office belgeleri için özel bir Open XML içeriğe erişim sağlamak üzere tasarlanmıştır. Örneğin, bir Excel çalışma kitabına özel bir XML parçasına eklemek için kullandığınız <xref:DocumentFormat.OpenXml.Packaging.OpenXmlPartContainer.AddNewPart%2A> yöntemi bir <xref:DocumentFormat.OpenXml.Packaging.WorkbookPart> nesne. Daha fazla bilgi için [açık XML SDK](/office/open-xml/open-xml-sdk).  
   
 ## <a name="bind-custom-xml-parts-to-word-content-controls"></a>Word içerik denetimlerini özel XML bölümlerine bağlama  
  İçerik denetimleri bir sözcük çözüme özel bir XML parçasına öğeleri bağlayabilirsiniz. Bir içerik denetimi için özel bir XML parçasına bağlı olduğunda özel bir XML parçasına verileri içerik denetimi kullanıcı arabiriminde (UI) görüntülenir. Karşılık gelen XML öğesi, bir kullanıcı denetiminde metin düzenlerse, otomatik olarak güncelleştirilir. Benzer şekilde, özel XML bölümleri içindeki öğe değerlerini değiştirdiyseniz, XML öğelerine bağlanan içerik denetimlerini yeni verileri görüntüleyin. Daha fazla bilgi için [içerik denetimleri](../vsto/content-controls.md).  
@@ -87,5 +87,3 @@ ms.locfileid: "49325009"
  [Nasıl yapılır: VSTO eklentileri kullanarak belgelere özel XML bölümleri ekleme](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)   
  [İçerik denetimleri](../vsto/content-controls.md)   
  [İzlenecek yol: içerik denetimlerini özel XML bölümlerine bağlama](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
-  
-  
