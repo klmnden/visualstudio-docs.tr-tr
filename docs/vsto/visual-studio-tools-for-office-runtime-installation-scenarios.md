@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 145bc3c4301b337a0f882b3893910ad5bb2fc2ac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ebf335291246ac8c3c15d8f04fb064a3bfaa8ef7
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857854"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670903"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Office çalışma zamanı yükleme senaryoları için Visual Studio Araçları
   Office çalışma zamanı için Visual Studio 2010 Araçları üç şekilde yükleyebilirsiniz:  
@@ -60,14 +60,14 @@ ms.locfileid: "49857854"
   
  İçin Office uzantılarını [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] Office ile birlikte yüklenir. Son kullanıcılar için Office uzantılarını elde edebilirsiniz [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] bir Windows güncelleştirmesi yükleyerek.  
   
- Kullanıcılarınızın uygulamanızı kullanmak için gerekli genişletmeleri olmasını sağlamak için Office çalışma zamanı, çözümünüz için bir önkoşul olarak yeniden dağıtılabilir için Visual Studio 2010 Araçları en son sürümünü içerir. Önkoşullar hakkında daha fazla bilgi için bkz. [Office çözüm dağıtım önkoşullarını](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).  
+ Kullanıcılarınızın uygulamanızı kullanmak için gerekli genişletmeleri olmasını sağlamak için Office çalışma zamanı, çözümünüz için bir önkoşul olarak yeniden dağıtılabilir için Visual Studio 2010 Araçları en son sürümünü içerir. Önkoşullar hakkında daha fazla bilgi için bkz. [Office çözüm dağıtım önkoşullarını](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).  
   
 ### <a name="install-the-runtime-by-using-the-runtime-redistributable"></a>Çalışma zamanı yeniden dağıtılabilir çalışma zamanı'nı kullanarak yükleme  
  Office çalışma zamanı yeniden dağıtılabilir için Visual Studio 2010 Araçları el ile çalıştırarak veya bir Office çözümünü dağıttığınızda yeniden dağıtılabilir önkoşul olarak dahil olmak üzere, çalışma zamanı yükleyebilirsiniz.  
   
  Office çalışma zamanı yeniden dağıtılabilir ve .NET Framework 3.5 için Office uzantıları için Office uzantıları için Visual Studio 2010 araçları kullanarak çalışma zamanını yüklediğinizde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya sonraki sürümü, yüklü karşılık gelen .NET sürümleri Framework zaten mevcut. Çalışma zamanı yüklü olduğunda bilgisayarda .NET Framework'ün bu sürümlerinden birini eksikse, eksik sürümü .NET Framework için Office uzantılarını o anda yüklü değil. Eksik daha sonra .NET Framework sürümünü yüklerseniz, çalışma zamanı karşılık gelen Office uzantıları (çalışma zamanı dağıtıldığı bir çözüm ile yüklenmiş uzantıları gerektiren bir çözüm yüklendikten sonraki açışınızda otomatik olarak yükler. ClickOnce kullanarak) veya (çalışma zamanı, Windows Installer kullanarak dağıtılan bir çözüm ile yüklenmişse) yüklendi.  
   
- Bir ClickOnce çözümde Önkoşullar da dahil olmak üzere daha fazla bilgi için bkz: [nasıl yapılır: son kullanıcı bilgisayarlarında Office çözümlerinin çalışması için Önkoşulları Yükleme](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98). Çalışma zamanı yeniden dağıtılabilir paketi el ile yükleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları yükleme](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md).  
+ Bir ClickOnce çözümde Önkoşullar da dahil olmak üzere daha fazla bilgi için bkz: [nasıl yapılır: son kullanıcı bilgisayarlarında Office çözümlerinin çalışması için Önkoşulları Yükleme](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98). Çalışma zamanı yeniden dağıtılabilir paketi el ile yükleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları yükleme](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Office çalışma zamanına genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
