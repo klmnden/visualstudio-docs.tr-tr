@@ -4,12 +4,12 @@ hide_bc: true
 title: Visual Studio belgeleri | Microsoft Docs
 description: Uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için tercih ettiğiniz dilde geliştirmek için Visual Studio 2017'yi kullanmayı öğrenin.
 ms.topic: hub-page
-ms.openlocfilehash: b16114bd175be4c8e13c0418494c730ed58b9d12
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d458683758916e78d3773b2700fb9ab2ae3acd39
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672879"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750725"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -308,7 +308,7 @@ ASP.NET Core Web uygulaması</a>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Hata ayıklama</h3>
-                                                    <p>Araştırma ve kodunuzla ilgili sorunları giderin.</p>
+                                                    <p>Araştırma ve kodunuzda hataları düzeltin.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -402,7 +402,7 @@ ASP.NET Core Web uygulaması</a>
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Performansı Artırma</h3>
+                                                    <h3>Ölçü performans</h3>
                                                     <p>Performans sorunlarını belirleme ve tanılama araçları ile kod performansını iyileştirin.
                                                     </p>
                                                 </div>

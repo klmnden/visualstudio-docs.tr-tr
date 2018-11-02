@@ -1,30 +1,30 @@
 ---
-title: 'Nasıl yapılır: Visual Studio için gidiş geliş uzantıları | Microsoft Docs'
-ms.custom: ''
+title: Nasıl yapılır gidiş geliş uzantıları
 ms.date: 06/25/2017
 ms.technology:
 - vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
-ms.author: willbrown
+ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: cdbd8703f3aad9a32b2a86efa01ce5922ed64144
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 826089f1018bc6156cd49bab3afb19e7bb34a47d
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498691"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750738"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Nasıl yapılır: uzantıları Visual Studio 2017 ve Visual Studio 2015 ile uyumlu hale getirin
 
-Bu belgede, genişletilebilirlik projeleri Visual Studio 2015 ve Visual Studio 2017 gidiş dönüş yapmak açıklanmaktadır. Bu yükseltme işlemini tamamladıktan sonra bir proje açın, derleme, yükleme ve Visual Studio 2015 ve Visual Studio 2017 ' çalıştırmak mümkün olacaktır.  Bazı uzantılar Visual Studio 2015 ve Visual Studio 2017 arasındaki gidiş dönüş yapabilen bir başvuru olarak bulunabilir [burada](https://github.com/Microsoft/VSSDK-Extensibility-Samples) Microsoft'un genişletilebilirlik örneklerde.
+Bu belgede, genişletilebilirlik projeleri Visual Studio 2015 ve Visual Studio 2017 gidiş dönüş yapmak açıklanmaktadır. Bu yükseltme işlemini tamamladıktan sonra bir proje açın, derleme, yükleme ve Visual Studio 2015 ve Visual Studio 2017 ' çalıştırmak mümkün olacaktır. Bir başvuru, Visual Studio 2015 ve Visual Studio 2017 arasındaki gidiş dönüş yapabilen bazı uzantılar bulunabilir [VS SDK'sı genişletilebilirlik örnekleri](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
 Daha sonra başvurmak yalnızca Visual Studio 2017'de derleme, ancak Visual Studio 2015 ve Visual Studio 2017 ' çalıştırmak için VSIX çıktısının yer almasını istiyorsanız [uzantısı dokumentu migrace](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
->**Not:** sürümleri arasında Visual Studio'da değişiklikleri nedeniyle, başka bir sürümünde çalışan bazı şeyleri çalışmaz. Erişmeye çalıştığınız özellikler her iki sürümde de kullanılabilir uzantısına sahip olacaktır emin olun veya beklenmeyen sonuçlar.
+> [!NOTE]
+> Sürümleri arasında Visual Studio'da değişiklikleri nedeniyle, başka bir sürümünde çalışan bazı şeyleri çalışmaz. Erişmeye çalıştığınız özellikler her iki sürümde de kullanılabilir uzantısına sahip olacaktır olduğundan emin olun veya beklenmeyen sonuçlar.
 
 Anahat bir VSIX gidiş dönüşlü hale getirmek için bu belgedeki tamamlayacağınız gelişmiş adımlar aşağıda verilmiştir:
 
@@ -57,13 +57,13 @@ Bu belgede daha sonra biz de koşullu içeri aktarma deyimlerini ekler, **.cspro
 Projeniz varsa bir *project.json* dosyası:
 
 * Başvuruları Not *project.json*.
-* Gelen **Çözüm Gezgini**, silme *project.json* proje dosyası.
-    * Bu siler *project.json* dosya ve projeden kaldırın.
-* NuGet başvuruları projeye geri ekleyin.
+* Gelen **Çözüm Gezgini**, silme *project.json* proje dosyası. Bu siler *project.json* dosya ve projeden kaldırır.
+* NuGet başvuruları projeye geri ekleyin:
     * Sağ **çözüm** ve **çözüm için NuGet paketlerini Yönet**.
-    * Visual Studio otomatik olarak oluşturur *packages.config* dosyayı
+    * Visual Studio otomatik olarak oluşturur *packages.config* dosyayı.
 
->**Not:** projenizi EnvDTE paketler içeriyorsa, bunlar sağ tıklanarak eklenmesi gerekebilir **başvuruları** seçerek **Başvurusu Ekle** ve uygun başvurusu ekleniyor.  NuGet paketlerini kullanarak projenizi çalışılırken hatalar oluşturabilir.
+> [!NOTE]
+> Projenizi EnvDTE paketler içeriyorsa, bunlar sağ tıklanarak eklenmesi gerekebilir **başvuruları** seçerek **Başvurusu Ekle** ve uygun başvurusu ekleniyor.  NuGet paketlerini kullanarak projenizi çalışılırken hatalar oluşturabilir.
 
 ## <a name="add-appropriate-build-tools"></a>Uygun derleme araçları ekleme
 
@@ -113,7 +113,8 @@ Bunu el ile yapmak için:
 
 * Dosyayı kaydedin ve kapatın.
 
->**Not:** VSIX Tasarımcısı'nda Visual Studio 2017 ile bunu kullanmayı tercih ederseniz, Visual Studio 2017'in tüm sürümleri ile uyumlu olduğundan emin olmak için önkoşul sürümü el ile düzenlemeniz gerekir.  Tasarımcı en düşük sürüm (örneğin, 15.0.26208.0) Visual Studio'nun geçerli sürümünüzü ekleyecek olmasıdır.  Ancak, diğer kullanıcıların daha önceki bir sürümü olabileceği el ile düzenlemeniz isteyeceksiniz 15.0 için.
+> [!NOTE]
+> Visual Studio 2017'de VSIX Tasarımcısı ile bunu kullanmayı tercih ederseniz Visual Studio 2017'in tüm sürümleri ile uyumlu olduğundan emin olmak için önkoşul sürümü el ile düzenlemeniz gerekir.  Tasarımcı en düşük sürüm (örneğin, 15.0.26208.0) Visual Studio'nun geçerli sürümünüzü ekleyecek olmasıdır.  Ancak, diğer kullanıcıların daha önceki bir sürümü olabileceği el ile düzenlemeniz isteyeceksiniz 15.0 için.
 
 Bu noktada, bildirim dosyanız aşağıdakine benzer görünmelidir:
 
@@ -139,7 +140,8 @@ Bu adımı yaparken açık olan bir değiştirilmiş .csproj başvuru olması ö
 
 * Aşağıdaki etiketi Ekle `<VsixType>v3</VsixType>` özellik grubuna.
 
->**Not:** bu eklemek için önerilen aşağıda `<OutputType></OutputType>` etiketi.
+> [!NOTE]
+> Bu eklemek için önerilen aşağıda `<OutputType></OutputType>` etiketi.
 
 ### <a name="3-add-the-debugging-properties"></a>3. Hata ayıklama özellikleri ekleyin
 
@@ -211,4 +213,5 @@ Bu noktada, projenizi Visual Studio 2015 ve Visual Studio 2017'yi yükleyebilmek
 
 ![Bir VSIX Bul](media/finding-a-VSIX-example.png)
 
->**Not:** projenizi iletisiyle yanıt vermemeye başlıyor, **dosyayı açmayı**zorla Visual Studio'yu kapatın, proje dizinine gidin, gizli klasörlere Göster ve Sil *.vs* klasör.
+> [!NOTE]
+> Projenizi iletisiyle yanıt vermemeye başlıyor, **dosyayı açmayı**zorla Visual Studio'yu kapatın, proje dizinine gidin, gizli klasörlere Göster ve Sil *.vs* klasör.

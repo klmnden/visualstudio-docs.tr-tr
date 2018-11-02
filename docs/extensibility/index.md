@@ -1,19 +1,20 @@
 ---
 layout: LandingPage
-author: jasongroce
-ms.author: apexprodleads
+title: Visual Studio Genişletilebilirliği
+description: Visual Studio genişletilebilirlik hakkında bilgi edinin.
+author: gregvanl
+ms.author: gregvanl
+ms.date: 10/31/2018
 ms.technology: vs-ide-sdk
 ms.topic: landing-page
-title: Visual Studio genişletilebilirlik belgeleri | Microsoft Docs
-description: Visual Studio genişletilebilirlik hakkında bilgi edinin.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: 3e5973cf0e5bd5ac87a14a167af24797c1b3d7dc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7a86fb34eb054423127ba2f91b055585a20719b3
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842956"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750752"
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Visual Studio genişletilebilirlik belgeleri
 

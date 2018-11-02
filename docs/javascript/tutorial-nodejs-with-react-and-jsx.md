@@ -2,7 +2,7 @@
 title: Bir Node.js ve React uygulaması oluşturma
 description: Bu öğreticide, Visual Studio için Node.js araçları kullanarak uygulama oluşturma
 ms.custom: mvc
-ms.date: 09/06/2018
+ms.date: 11/01/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 3cc92ba28246358f819e6086d19141b2a68072f0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9203b07767d38443dbad8cc619a40971ca09f2c6
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823742"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750793"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Öğretici: Visual Studio'da Node.js ve React uygulaması oluşturma
 
@@ -60,7 +60,7 @@ Web paketleri JavaScript dosyaları, bir tarayıcıda çalıştırabilirsiniz. A
 
 * Visual Studio 2017 ve Node.js geliştirme iş yükü olması gerekir.
 
-    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
     Gerekirse iş yükünü yükleyin ancak zaten Visual Studio varsa, seçin **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu. Visual Studio Yükleyicisi'ni başlatır. Seçin **Node.js geliştirme** iş yükü, ardından **Değiştir**.
 
@@ -121,18 +121,18 @@ Bu uygulama düzgün şekilde çalışması için npm modüllerini sayısı gere
 
     Projenin *package.json* dosyasını, Paket sürümü dahil olmak üzere yeni paket bilgileriyle güncelleştirilir.
 
-1. İçin arama yapın ve paketleri geri kalanını eklemek için kullanıcı arabirimini kullanmak yerine teker teker yapıştırın aşağıdaki kodu package.json içinde. Bunu yapmak için bir `dependencies` bölümü bu kod ile:
+1. İçin arama yapın ve aynı anda paketleri bir geri kalanını eklemek için kullanıcı arabirimini kullanmak yerine, aşağıdaki kodu yapıştırın *package.json*. Bunu yapmak için bir `dependencies` bölümü bu kod ile:
 
     ```json
     "dependencies": {
-      "express": "~4.16.3",
+      "express": "~4.16.4",
       "path": "~0.12.7",
-      "react": "~16.4.2",
-      "react-dom": "~16.4.2",
-      "ts-loader": "~4.5.0",
-      "typescript": "~2.9.2",
-      "webpack": "~4.17.1",
-      "webpack-cli": "~2.1.5"
+      "react": "~16.6.0",
+      "react-dom": "~16.6.0",
+      "ts-loader": "~5.3.0",
+      "typescript": "~3.1.5",
+      "webpack": "~4.23.1",
+      "webpack-cli": "~3.1.2"
     }
     ```
 
@@ -202,7 +202,7 @@ Bu basit bir uygulama için proje kök dizininde yeni proje dosyalarını ekleyi
     var React = require('react');
     var ReactDOM = require('react-dom');
 
-    class Hello extends React.Component {
+    export class Hello extends React.Component {
         render() {
             return (
                 <h1>Welcome to React!!</h1>

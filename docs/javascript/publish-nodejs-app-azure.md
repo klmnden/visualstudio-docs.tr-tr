@@ -2,7 +2,7 @@
 title: Linux App Service'te bir Node.js uygulaması yayımlama
 description: Node.js uygulamalarını azure'da bir Linux App Service için Visual Studio'da oluşturulan yayımlayabilirsiniz.
 ms.custom: ''
-ms.date: 06/10/2018
+ms.date: 11/1/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cf96610abcd0cc18bdaab6177980ca04e0232642
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 8af99919fe80f1f5e2776e381d24aa8d37bad36d
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924960"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750777"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Bir Node.js uygulaması (App Service Linux) azure'a yayımlama
 
@@ -33,7 +33,7 @@ Bu öğreticide Visual Studio için Node.js araçları ile yüklenen bir şablon
 
 Bu öğreticide, şunların nasıl yapılır:
 > [!div class="checklist"]
-> * Bir Node.js projesi oluşturma
+> * Node.js projesi oluşturma
 > * Kodunuz için bir GitHub deposu oluşturma
 > * Azure'da bir Linux App Service oluşturma
 > * Linux için dağıtma
@@ -42,15 +42,19 @@ Bu öğreticide, şunların nasıl yapılır:
 
 1. Kullanarak yeni bir TypeScript Express uygulaması oluşturma **dosya** > **yeni proje** iletişim kutusu.
 
+1. Altında **TypeScript** düğümünü **temel Node.js Express 4 uygulaması**.
+
     ![Yeni bir TypeScript Express uygulaması oluşturma](../javascript/media/azure-ts-express-app.png)
 
-2. Tuşuna **F5** oluşturun ve uygulamayı çalıştırın ve her şeyin beklendiği gibi çalıştığından emin olun.
+1. Tıklayın **Tamam** Visual Studio'da proje oluşturmaktır.
 
-3. Seçin **dosya** > **kaynak denetimine Ekle** proje için yerel bir Git deposu oluşturmak için.
+1. Tuşuna **F5** oluşturun ve uygulamayı çalıştırın ve her şeyin beklendiği gibi çalıştığından emin olun.
+
+1. Seçin **dosya** > **kaynak denetimine Ekle** proje için yerel bir Git deposu oluşturmak için.
 
     Bu noktada, Node.js kullanarak bir uygulaması Express framework ile yazılmış TypeScript çalışıyor ve yerel kaynak denetimine iade edildi.
 
-4. Projenin sonraki adımlara geçmeden önce istediğiniz gibi düzenleyin.
+1. Projenin sonraki adımlara geçmeden önce istediğiniz gibi düzenleyin.
 
 ## <a name="push-code-from-visual-studio-to-github"></a>GitHub Visual Studio kodu
 
@@ -111,7 +115,7 @@ Visual Studio için GitHub'ı ayarlamak için:
 
 9. Depoyu seçin ve yayımlamak için dal ve ardından **Tamam**.
 
-    ![Linux App Service'e yayımlama](../javascript/media/azure-repo-and-branch.png)
+    ![Linux App Service’e yayımlama](../javascript/media/azure-repo-and-branch.png)
 
     **Dağıtım seçenekleri** sayfası eşitlenirken görüntülenir.
 

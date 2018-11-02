@@ -22,11 +22,11 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: f329680d4e469d5009c8659e7a2047c87f906105
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677135"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744879"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Office çözümlerinde denetimlere veri bağlama
   Windows Forms denetimlerine bağlayabilirsiniz ve *konak denetimlerini* Microsoft Office Word belgesi veya Microsoft Office Excel çalışma sayfasındaki denetimleri otomatik olarak verileri görüntülemek için bir veri kaynağı. Verileri, uygulama düzeyinde hem belge düzeyi projeler denetimlere bağlayabilirsiniz.  
