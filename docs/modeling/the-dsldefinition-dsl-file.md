@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4ced1cb0fda46a77bb9303a8f69e9f413b2e4751
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5988876bc1cdc7d186efb60d7d3875f9946bfc7d
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898557"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967525"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl Dosyası
 
@@ -298,7 +298,7 @@ Bu örnekte, InPort ComponentPort sınıfıdır ve ComponentHasPorts bir ilişki
 C# bu modelinde yazarken, tek bir adımda bir bağlantı üzerinden her, ilişkili sınıfları ilişki oluşturan özelliğini kullanarak atlayabilirsiniz:
 
 ```
-     InPort port; ...  Component c = port.Component;
+     InPort port; ...  Component c = port.Component;
 ```
 
 Ancak, iki atlama yolu sözdiziminde açıkça yapmanız gerekir. Bu gereksinimden dolayı Ara Bağlantı daha kolay erişebilirsiniz. Aşağıdaki kod, bağlantıdan atlama bileşenine tamamlar:
@@ -581,6 +581,6 @@ Bağlayıcı eşlemesi, dekoratör eşlemeleri de içerebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Etki alanına özgü dil araçları sözlüğü](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [Nasıl yapılır: Etki Alanına Özgü bir Dili Tanımlama](../modeling/how-to-define-a-domain-specific-language.md)
 - [Modelleri, Sınıfları ve İlişkileri Anlama](../modeling/understanding-models-classes-and-relationships.md)

@@ -13,10 +13,10 @@ Visual Basic ve Visual belgelerini C# , ayrı bir depoda bulunan [ http://github
 
 ## <a name="contributing-to-the-documentation"></a>Bir belgeye katkıda
 
-Bu belgelere katkıda bulunmak için lütfen bkz [katkıda Kılavuzu](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/CONTRIBUTING.md).
+Bu belgelere katkıda bulunmak için lütfen bkz [katkıda Kılavuzu](CONTRIBUTING.md).
 Biz, Visual Studio belgeleri geliştirmemize yardımcı olmak üzere Katkılarınızı Hoş Geldiniz. Bu depodaki tüm makaleler GitHub’a uygun markdown kullanır.
 
-Bu depoda kendi klasörlerine gibi birçok özellik alanı Visual Studio'nun sahip **hata ayıklayıcı** hata ayıklama, konu başlıkları **IDE** konular Visual Studio etkileşimli geliştirme ortamında (IDE) için ve diğerleri. **/Media** her klasöründeki alt konuları resim dosyalarını içerir. [Katkıda Kılavuzu](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/CONTRIBUTING.md) daha fazla bilgi bulunur.
+Bu depoda kendi klasörlerine gibi birçok özellik alanı Visual Studio'nun sahip **hata ayıklayıcı** hata ayıklama, konu başlıkları **IDE** konular Visual Studio etkileşimli geliştirme ortamında (IDE) için ve diğerleri. **/Media** her klasöründeki alt konuları resim dosyalarını içerir. [Katkıda Kılavuzu](CONTRIBUTING.md) daha fazla bilgi bulunur.
 
 Bu proje başlamıştır [Microsoft açık kaynak kullanım şartları](https://opensource.microsoft.com/codeofconduct/). Daha fazla bilgi için [Kullanım Kuralları SSS](https://opensource.microsoft.com/codeofconduct/faq/) sayfasına bakın. Başka sorularınız ya da yorumlarınız varsa bunları [opencode@microsoft.com](mailto:opencode@microsoft.com) adresine gönderebilirsiniz.
 

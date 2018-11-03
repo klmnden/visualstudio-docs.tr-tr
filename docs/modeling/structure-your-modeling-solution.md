@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 54e4be8489a4cbd2226d7980d17e31464f6e29ec
-ms.sourcegitcommit: 9e796d8a8b737ed9d5bf024db89b1abf99ea809b
+ms.openlocfilehash: 2c279da9aed4a11799004a38004f8b82dca65174
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42624378"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966719"
 ---
 # <a name="structure-your-modeling-solution"></a>Modelleme çözümünüzün yapısını oluşturma
 
@@ -106,7 +106,7 @@ Uygulamada, aynı anda tüm Visual Studio çözümleri oluşturma ancak bunları
 
 ## <a name="watch-a-video"></a>Bir video izleyin
 
-[Düzenleme ve Modellerinizi yönetme](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-9-Organizing-and-Managing-Your-Models/)
+[Düzenleme ve Modellerinizi yönetme](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

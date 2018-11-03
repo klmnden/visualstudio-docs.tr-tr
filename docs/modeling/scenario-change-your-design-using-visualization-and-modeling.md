@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 933c18a43cb8ebacd32914cb487fb0216b538b25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bc8066148b2c8612b3a07922e15422022b8c9c4d
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942484"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967512"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Senaryo: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme
 
@@ -186,11 +186,11 @@ Kod geliştirme sırasında tasarımla çakışmaların gerçekleşmez emin olma
 
 Bkz.
 
-- [Derleme işleminizi tanımlama](http://msdn.microsoft.com/Library/61593e10-d24b-492f-b19a-af4d85abea6b)
+- [Görsel tasarımcıyı kullanmak](/azure/devops/pipelines/get-started-designer)
 
-- [Değişiklikleri doğrulamak için geçişli iade derleme işlemi kullanın](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)
+- [TFVC Geçitli iade](/azure/devops/pipelines/build/triggers#gated)
 
-- [Yapı işlemi şablonunuzu özelleştirme](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
+- [Derleme ve yayın görevleri](/azure/devops/pipelines/tasks/index)
 
 ### <a name="general-tips-for-creating-and-using-models"></a>Modelleri oluşturma ve kullanma için genel ipuçları
 
@@ -220,7 +220,7 @@ Bkz.
 
 - [Grafikler, panolar ve pencere öğeleri (Azure DevOps Hizmetleri)](/azure/devops/report/dashboards/overview?view=vsts)
 
-- [Tasks using Project ve biriktirme listesi oluşturma](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
+- [Tasks using Project ve biriktirme listesi oluşturma](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
 ### <a name="TestValidateCheckInCode"></a> Kod içinde denetlediğinizde test ve doğrulama
 
@@ -486,5 +486,5 @@ Bağımlılık diyagramları yardımcı olur:
 
 - [Kodu görselleştirme](../modeling/visualize-code.md)
 - [Geliştirme sürecinizde modelleri kullanma](../modeling/use-models-in-your-development-process.md)
-- [Çevik Yazılım geliştirmede modeller kullanma](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Çevik Yazılım geliştirmede modeller kullanma](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [Geliştirme sırasında sisteminizi doğrulama](../modeling/validate-your-system-during-development.md)

@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e508dc838fd7bf8ff3dab493aa2d5d52c747d180
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf35f0d09178dd0516794ab79e8ac92239e42cd6
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849456"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966550"
 ---
 # <a name="create-models-for-your-app"></a>Uygulamanız için model oluşturma
 
@@ -52,10 +52,10 @@ Bir sistem veya var olan kod mimarisini görselleştirmek için aşağıdaki diy
 |[Kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md)|Kullanıcıların ihtiyaçlarını açıklamak ve modelleri kullanır.|
 |[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|Genel yapısı ve sisteminizin davranışını tanımlamak ve kullanıcıların ihtiyaçlarını karşıladığından emin olmak için modelleri kullanır.|
 |[Geliştirme sırasında sisteminizi doğrulama](../modeling/validate-your-system-during-development.md)|Yazılımınızı kullanıcılarınızın ihtiyaçlarını ve sisteminizin genel mimarisi ile tutarlı kalmasını sağlayın.|
-|[Geliştirme sürecinizde modelleri kullanma](../modeling/use-models-in-your-development-process.md)<br /><br /> [Çevik Yazılım geliştirmede modeller kullanma](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Anlama ve kendi geliştirme sırasında sisteminizi değiştirme yardımcı olması için modelleri kullanır.|
+|[Geliştirme sürecinizde modelleri kullanma](../modeling/use-models-in-your-development-process.md)<br /><br /> [Çevik Yazılım geliştirmede modeller kullanma](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Anlama ve kendi geliştirme sırasında sisteminizi değiştirme yardımcı olması için modelleri kullanır.|
 |[Modelleme çözümünüzün yapısını oluşturma](../modeling/structure-your-modeling-solution.md)|Büyük ve orta ölçekli projelerde modelleri düzenleyin.|
 
 ## <a name="resources"></a>Kaynaklar
 
 - [Visual Studio Görselleştirme ve Modelleme Araçları Forumu](http://go.microsoft.com/fwlink/?LinkId=184720)
-- [Visual Studio genişletilebilirlik Forumu](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsx)
+- [Visual Studio genişletilebilirlik Forumu](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)

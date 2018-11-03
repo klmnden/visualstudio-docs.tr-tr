@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 17b0cfb4ecc1809098670b0b9d3e831b5bc75a62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71eebd95db1a616d4f86866ef60fb32251634cc0
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835715"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967291"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Bağımlılık diyagramları ile kod doğrulama
 
@@ -173,7 +173,7 @@ Doğrulama hatalarını yönetmek için bu görevleri kullanın **hata listesi**
 
 ## <a name="validate-code-automatically"></a>Kodu otomatik olarak doğrulama
 
-Her yerel bir yapı çalıştırışınızda katman doğrulama gerçekleştirebilirsiniz. Azure DevOps takımınızın kullandığı ile Geçitli iade etme doğrulama hatalarını toplamak için yapı raporları kullanabilirsiniz ve özel bir MSBuild görevi oluşturarak belirtebileceğiniz işlemleri, katman doğrulama gerçekleştirebilirsiniz. Geçitli iade yapıları oluşturmak için bkz [değişiklikleri doğrulamak için geçişli iade derleme işlemi kullanın](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
+Her yerel bir yapı çalıştırışınızda katman doğrulama gerçekleştirebilirsiniz. Azure DevOps takımınızın kullandığı ile Geçitli iade etme doğrulama hatalarını toplamak için yapı raporları kullanabilirsiniz ve özel bir MSBuild görevi oluşturarak belirtebileceğiniz işlemleri, katman doğrulama gerçekleştirebilirsiniz. Geçitli iade yapıları oluşturmak için bkz [TFVC geçişli iade](/azure/devops/pipelines/build/triggers#gated).
 
 ### <a name="to-validate-code-automatically-during-a-local-build"></a>Kodu yerel yapı sırasında otomatik olarak doğrulamak için
 
@@ -237,6 +237,6 @@ Aşağıdaki bölümde, bu hatalarda kullanılan sözdizimi belirtilmekte, bu ha
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio 2017'de canlı bağımlılık doğrulama](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
+- [Visual Studio 2017'de canlı bağımlılık doğrulama](https://blogs.msdn.microsoft.com/devops/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
 - [Geliştirme sırasında sisteminizi doğrulama](../modeling/validate-your-system-during-development.md)
 - [Video: Gerçek zamanlı mimari bağımlılıklarınızı doğrula](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

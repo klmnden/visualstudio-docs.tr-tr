@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f87e408c9d1a72a8d0ed6171e7614f3f41653a3
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 1c4a692f203a0a120c2ab0da5c745aee8803badc
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880176"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967278"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild komut satırı başvurusu
 Kullanırken *MSBuild.exe* bir proje veya çözüm dosyası oluşturmak için işlem çeşitli yönlerini belirlemek için birkaç anahtar içerebilir.  
@@ -56,6 +56,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |-nologo||Başlangıç başlığını veya telif hakkı iletisini görüntülemez.|  
 |<a name="preprocess"></a> -önceden işleme [:`filepath`]|-pp [:`filepath`]|Tarafından toplanan, tek proje dosyası oluşturma inlining'i tüm sınırlarının ile bir yapı sırasında alınmayacaktır dosyalar olarak işaretlenmiş. Hangi dosyaların içeri aktarılmakta olan daha kolay belirlemek için bu anahtarı kullanın, burada dosyaları içeri aktarılmakta olan ve bu dosyaları için derleme katkıda. Bu anahtar kullandığınızda, proje oluşturulan değil.<br /><br /> Belirtirseniz bir `filepath`, çıkış dosyasının toplu proje dosyasıdır. Aksi takdirde, çıktıyı konsol penceresinde görünür.<br /><br /> Nasıl kullanılacağı hakkında daha fazla bilgi için `Import` öğesinin başka bir proje dosyasına bir proje dosyası eklemek için [içeri aktarma öğesi (MSBuild)](../msbuild/import-element-msbuild.md) ve [nasıl yapılır: birden çok proje dosyasında aynı hedefi kullanma](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).|  
 |-Özellik:`name`=`value`|/ p:`name`=`value`|Ayarlayın veya geçersiz kılma belirtilen proje düzeyi özellikleri burada `name` özellik adı ve `value` özellik değeri. Ayrı ayrı her bir özellik belirtin veya aşağıdaki örnekte gösterildiği gibi birden çok özellik ayırmak için noktalı virgül veya virgülle kullanın:<br /><br /> `-property:WarningLevel=2;OutDir=bin\Debug`|  
+|-geri yükleme|-r|Çalıştırmaları `Restore` gerçek hedefleri oluşturma önce hedef.|
 |-Hedef:`targets`|-t.`targets`|Proje belirtilen hedeflerin oluşturun. Ayrı ayrı her bir hedef belirtin veya aşağıdaki örnekte gösterildiği gibi birden çok hedef ayırmak için noktalı virgül veya virgülle kullanın:<br /><br /> `-target:Resources;Compile`<br /><br /> Bu anahtarı kullanarak tüm aracıların belirtirseniz, tüm hedeflerini yerine çalıştıkları `DefaultTargets` proje dosyasında özniteliği. Daha fazla bilgi için [hedef derleme sırası](../msbuild/target-build-order.md) ve [nasıl yapılır: ilk oluşturmak için hangi hedef belirtin](../msbuild/how-to-specify-which-target-to-build-first.md).<br /><br /> Bir hedef görevler grubudur. Daha fazla bilgi için [hedefleri](../msbuild/msbuild-targets.md).|  
 |-toolsversion:`version`|-tv:`version`|Aşağıdaki örnekte gösterildiği gibi projeyi oluşturmak için kullanılacak araç takımı sürümünü belirtir: `-toolsversion:3.5`<br /><br /> Bu anahtarı kullanarak bir projeyi oluşturun ve belirtilen sürümden farklı bir sürüm belirtin [proje öğesi (MSBuild)](../msbuild/project-element-msbuild.md). Daha fazla bilgi için [geçersiz kılma ToolsVersion ayarlarını](../msbuild/overriding-toolsversion-settings.md).<br /><br /> MSBuild 4.5 için aşağıdaki değerleri belirtebilirsiniz `version`: 2.0, 3.5 ve 4.0. 4.0 belirtirseniz `VisualStudioVersion` yapı özelliği kullanmak için hangi alt araç belirtir. Daha fazla bilgi için alt araç takımları bölümüne bakın. [araç takımı (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).<br /><br /> Bir araç takımı, görevler, hedefler ve bir uygulama oluşturmak için kullanılan araçları oluşur. Araçlar gibi derleyicileri içerir *csc.exe* ve *vbc.exe*. Araç takımları hakkında daha fazla bilgi için bkz: [araç takımı (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md), [standart ve özel araç takımı yapılandırmaları](../msbuild/standard-and-custom-toolset-configurations.md), ve [çoklu hedefleme](../msbuild/msbuild-multitargeting-overview.md). **Not:** araç takımının sürüm üzerinde bir proje oluşturulan çalıştırmak için .NET Framework sürümü hedef çerçeve ile aynı değildir. Daha fazla bilgi için [hedef çerçevesi ve hedef platformu](../msbuild/msbuild-target-framework-and-target-platform.md).|  
 |-validate: [`schema`]|-val [`schema`]|Proje dosyası doğrulamak ve doğrulama başarılı olursa, projeyi derleyin.<br /><br /> Belirtmezseniz `schema`, proje, varsayılan şemayla doğrulandı.<br /><br /> Belirtirseniz `schema`, proje, belirttiğiniz şemayla doğrulandı.<br /><br /> Aşağıdaki ayarı bir örnek verilmiştir: `-validate:MyExtendedBuildSchema.xsd`|  
