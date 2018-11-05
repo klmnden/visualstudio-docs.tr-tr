@@ -4,19 +4,19 @@ description: Windows PowerShell betikleri Visual Studio'dan yayımlamak için ge
 author: ghogen
 manager: douge
 assetId: 5fff1301-5469-4d97-be88-c85c30f837c1
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 5ee9ca92533e19b1c845242efda49aee410d264a
+ms.openlocfilehash: 9d0142c52fbe40256fc0ab6ec0d5d9fdade243b7
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000748"
+ms.locfileid: "51003657"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Windows PowerShell betiklerini kullanarak geliştirme ve test ortamlarına yayımlama
 
@@ -244,7 +244,7 @@ Projenizi oluşturma otomatikleştirmek için MSBuild'e çağıran kod ekleme `N
     }
     ```
 
-1. Değiştirin `New-WebDeployPackage` ile aşağıdaki kod ve satır oluştururken yer tutucularını değiştirin `$msbuildCmd`. Bu kod, Visual Studio 2017 için aynıdır. Visual Studio 2015 kullanıyorsanız, değiştirme **VisualStudioVersion** özelliğini `14.0` (`12.0` Visual Studio 2013 için).
+1. Değiştirin `New-WebDeployPackage` ile aşağıdaki kod ve satır oluştururken yer tutucularını değiştirin `$msbuildCmd`. Bu kod, Visual Studio 2015 için aynıdır. Visual Studio 2017'yi kullanıyorsanız, değiştirme **VisualStudioVersion** özelliğini `15.0` (`12.0` Visual Studio 2013 için).
 
     ```powershell
     function New-WebDeployPackage
@@ -257,7 +257,7 @@ Projenizi oluşturma otomatikleştirmek için MSBuild'e çağıran kod ekleme `N
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
 
-    $msbuildCmd = '"{0}" "{1}" /T:Rebuild;Package /P:VisualStudioVersion=15.0 /p:OutputPath="{2}\MSBuildOutputPath" /flp:logfile=msbuild.log,v=d' -f (Get-MSBuildCmd), $ProjectFile, $scriptDirectory
+    $msbuildCmd = '"{0}" "{1}" /T:Rebuild;Package /P:VisualStudioVersion=14.0 /p:OutputPath="{2}\MSBuildOutputPath" /flp:logfile=msbuild.log,v=d' -f (Get-MSBuildCmd), $ProjectFile, $scriptDirectory
 
     Write-VerboseWithTime ('Build-WebDeployPackage: ' + $msbuildCmd)
     ```

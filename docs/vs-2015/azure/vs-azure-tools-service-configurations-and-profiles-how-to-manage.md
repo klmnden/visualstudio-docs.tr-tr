@@ -4,19 +4,19 @@ description: Hizmet yapılandırmalarını ve profilleri yapılandırma dosyalar
 author: ghogen
 manager: douge
 assetId: 7da8c551-fb06-4057-b5c7-c77f4b39d803
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 1b520edc52c21d3edfc03b7e501a838eabe775ff
+ms.openlocfilehash: 3f7c7341b115f0899ac4c90d574a65dfdb4087bc
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000854"
+ms.locfileid: "51003699"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Hizmet yapılandırmalarını ve profillerini yönetme
 ## <a name="overview"></a>Genel Bakış

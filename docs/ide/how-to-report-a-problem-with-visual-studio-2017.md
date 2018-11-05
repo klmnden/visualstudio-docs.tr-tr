@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a059e25546abf0d1624d3c8bc08a531d3fc4b382
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f0d53ece6add1c781cb18569139fea5ffbbeca76
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36755930"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000235"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Visual Studio 2017 ile ilgili bir sorun bildirme
 
@@ -125,7 +125,7 @@ Visual Studio 2017 sürüm 15.5 sürümünde başlayarak, sorun raporları hakk�
 
 İstemediğiniz veya Visual Studio, bir sorunu bildirmek için kullanılamaz, sorun zaten bildirildi ve gönderilen çözüm üzerinde imkanı yoktur [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/) sayfası.
 
-Rapor için bir sorun yoksa, ancak ürün geri bildirim veya bir öneri sunmak istediğiniz yoktur, bir yer çok. Daha fazla bilgi için [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-ide) sayfası.
+Rapor, ancak bir özellik önermek istediğiniz bir sorun yoksa yoktur, bir yer çok. Daha fazla bilgi için [özellik önerin](https://developercommunity.visualstudio.com/content/idea/post.html?space=8) sayfası.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

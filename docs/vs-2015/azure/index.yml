@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 0cf75d793edb82d46694260add22f249efa22c61
+ms.openlocfilehash: 4e579e5a70ee74c365deb689e9cd3035ee597dfc
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000796"
+ms.locfileid: "51003667"
 documentType: LandingData
 title: Visual Studio ile Azure Geliştirme
 metadata:
@@ -12,94 +12,31 @@ metadata:
   meta.description: Tutorials and conceptual articles about connecting apps and services to Azure and developing Azure services.
   author: ghogen
   manager: douge
-  ms.prod: visual-studio-dev15
+  ms.prod: visual-studio-dev14
   ms.technology: vs-azure
   ms.topic: landing-page
-  ms.date: 10/09/2018
+  ms.date: 11/02/2018
   ms.author: ghogen
 sections:
 - title: Azure'a Yayımlama
   items:
   - type: paragraph
-    text: Visual Studio ile hazırlık veya üretim ortamları için uygulamanızı Azure'a dağıtın veya sürekli tümleştirme ve dağıtım (CI/CD) ayarlayın.
+    text: Uygulamanızı Visual Studio ile hazırlık veya üretim ortamları için Azure'a dağıtın.
   - type: list
     style: cards
     className: cardsM
     columns: 3
     items:
-    - href: https://docs.microsoft.com/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1
+    - href: vs-azure-tools-publishing-a-cloud-service.md
       html: <p></p>
       image:
-        src: https://docs.microsoft.com/media/logos/logo_NETcore.svg
-      title: Azure’a ASP.NET Core uygulaması yayımlama
-    - href: https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet-framework
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_NET.svg
-      title: Bir ASP.NET Web uygulamasını Azure'da yayımlama
-    - href: https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
-      title: Azure İşlevleri yayımlama
-    - href: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment?view=aspnetcore-2.1
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_octokitty.svg
-      title: Visual Studio ve Git ile azure'a sürekli dağıtım
-    - href: /azure/devops/pipelines/get-started-yaml?view=vsts&viewFallbackFrom=aspnetcore-2.1
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/azure/devops/_img/index/DevOpsIconPipelines96.svg
-      title: Azure Pipelines ile Azure'a sürekli dağıtım
+        src: https://docs.microsoft.com/azure/cloud-services/media/index/cloud-services.svg
+      title: Bir bulut hizmeti projesini yayımlayın
     - href: /azure/virtual-machines/windows/publish-web-app-from-visual-studio
       html: <p></p>
       image:
         src: https://docs.microsoft.com/media/common/i_vmm-cloud.svg
       title: Azure VM'ye ASP.NET Web Uygulaması yayımlama
-- title: Azure App Services ve Azure işlevleri
-  items:
-  - type: paragraph
-    text: Web uygulamaları ve Azure'da barındırılan bir sunucusuz işlev oluşturmak için öğreticiler
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
-    items:
-    - href: https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet
-      html: <p>Azure'da bir web uygulaması oluşturup</p>
-      image:
-        src: https://docs.microsoft.com/azure/media/index/AppService.svg
-      title: ASP.NET Core
-    - href: /azure/azure-functions/functions-develop-vs
-      html: <p>Sunucusuz kod ile olayları işleme</p>
-      image:
-        src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
-      title: Azure işlevleri
-    - href: https://docs.microsoft.com/dotnet/azure/?view=azure-dotnet
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_NET.svg
-      title: .NET ve .NET Core geliştiricileri için Azure SDK
-- title: Kapsayıcı geliştirme
-  items:
-  - type: paragraph
-    text: Docker kapsayıcıları ile geliştirin, Azure'da yayımlama, Kubernetes ve daha fazlasını kullanın.
-  - type: list
-    style: icon48
-    items:
-    - image:
-        src: https://docs.microsoft.com/media/common/i_categorize.svg
-      text: Kapsayıcı geliştirme
-      href: /visualstudio/containers
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_docker.svg
-      text: Visual Studio'da docker araçları
-      href: /visualstudio/docker/vs-azure-tools-docker-setup.md
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_kubernetes.svg
-      text: Kubernetes araçları
-      href: /visualstudio/deployment/tutorial-kubernetes-tools
 - title: Hata ayıklama ve performans izleme
   items:
   - type: paragraph
@@ -109,11 +46,6 @@ sections:
     className: cardsM
     columns: 3
     items:
-    - href: /visualstudio/debugger/remote-debugging-azure
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_NETcore.svg
-      title: Azure'da IIS üzerinde ASP.NET Core hatalarını ayıklama
     - href: vs-azure-tools-intellitrace-debug-published-cloud-services.md
       html: <p></p>
       image:
@@ -141,17 +73,9 @@ sections:
       text: Azure Depolama
       href: vs-azure-tools-connected-services-storage.md
     - image:
-        src: https://docs.microsoft.com/azure/media/index/KeyVault.svg
-      text: Azure anahtar kasası
-      href: /azure/key-vault/vs-key-vault-add-connected-service
-    - image:
         src: https://docs.microsoft.com/azure/media/index/ActiveDirectory.svg
       text: Azure Active Directory
       href: /azure/active-directory/develop/vs-active-directory-add-connected-service
-    - image:
-        src: https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg
-      text: Bilişsel Hizmetler
-      href: cognitive-services-connected-services.yml
 - title: Azure bulut Hizmetleri
   items:
   - type: paragraph

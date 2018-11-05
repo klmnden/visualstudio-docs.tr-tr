@@ -10,19 +10,19 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: cd23bbf09e79ac4f7763a563e361954d9cfde072
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: da2e91e15572a9904115926447523d8dba23a36a
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120685"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000732"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Değişiklik günlüğü (Unity, Windows için Visual Studio Araçları)
 Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 ## <a name="3807"></a>3.8.0.7
  Yayın Tarihi: 20 Eylül 2018
- 
+
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
 -   **Hata Ayıklayıcı:**
@@ -31,7 +31,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 ## <a name="3806"></a>3.8.0.6
  Yayın Tarihi: 27 Ağustos 2018
- 
+
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
 -   **Tümleştirme:**
@@ -40,7 +40,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 ## <a name="3805"></a>3.8.0.5
  Yayın Tarihi: 20 Ağustos 2018
- 
+
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
 -   **Tümleştirme:**
@@ -49,13 +49,13 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 ## <a name="3804"></a>3.8.0.4
  Yayın Tarihi: 14 Ağustos 2018
- 
+
 ### <a name="new-features"></a>Yeni Özellikler
 
 -   **Değerlendirme:**
 
     -   İşaretçi değerleri için destek eklendi.
-    
+
     -   Genel metotlar için desteği eklendi.
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
@@ -66,7 +66,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 ## <a name="3803"></a>3.8.0.3
  24 Temmuz 2018'de yayınlanan
- 
+
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
 -   **Proje oluşturma:**
@@ -75,24 +75,24 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 ## <a name="3802"></a>3.8.0.2
  7 Temmuz 2018'de yayınlanan
- 
+
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
 -   **Proje oluşturma:**
 
     -   Unity performans hatanın geçici çözüm: projeleri oluştururken MonoIslands önbellek.
-    
+
 ## <a name="3801"></a>3.8.0.1
  26 Haziran 2018'de yayınlanan
- 
+
 ### <a name="new-features"></a>Yeni Özellikler
 
 -   **Hata ayıklama:**
 
     -   UserLog ve UserBreak komutları için destek eklendi.
-    
+
     -   Eklenen lazy türü yükleme desteği (Ağ Yükü ve hata ayıklayıcı yanıt gecikme süresi en iyi duruma getirme).
-       
+
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
 -   **Değerlendirme:**
@@ -101,19 +101,19 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 ## <a name="3800"></a>3.8.0.0
  30 Mayıs 2018'de yayınlanan
- 
+
 ### <a name="new-features"></a>Yeni Özellikler
 
 -   **Hata ayıklama:**
 
     -   Zaman uyumsuz yapılarında değişkenler görüntülemek için destek eklendi.
-    
+
     -   İç içe geçmiş türler derleyici yapılarıyla uyarıları önlemek için kesme noktaları, ayarlarken işlemek için destek eklendi.
-    
+
 -   **Tümleştirme:**
 
     -   İçin destek eklendi textmate dil bilgisi için gölgelendiriciler (C++ iş yükünde artık gölgelendirici kod coloration için gereklidir).
-    
+
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
 -   **Proje oluşturma:**
@@ -137,15 +137,15 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   **Hata ayıklama:**
 
     -   (Birden çok oyuncuların/düzenleyici ile aynı Visual Studio oturumu hata ayıklama) düzenlenmiş hata ayıklama için destek eklendi.
-    
+
     -   Android USB player hata ayıklama için destek eklendi.
-    
+
     -   UWP/ıl2cpp player hata ayıklama için destek eklendi.
 
 -   **Değerlendirme:**
 
     -   Onaltılık tanımlayıcıları için destek eklendi.
-    
+
     -   Gelişmiş İzleme penceresinde değerlendirme deneyimi.
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
@@ -841,9 +841,9 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
--   Visual Studio temasından işlenmesini düzeltin. Daha önce siyah Temalar iletişim kutuları boş görünebilir (bağlanma sorunlarını [#932637](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/932637/) ve [#936439](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/936439/)).
+-   Visual Studio temasından işlenmesini düzeltin. Daha önce siyah Temalar iletişim kutuları boş görünebilir.
 
--   Düzeltme Unity dondurma Unity yeniden derlenmesi sırasında hata ayıklayıcı bağlanırken (bağlanma sorunlarını [#947119](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/947119/) ve [#969211](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/969211/)).
+-   Unity dondurma Unity yeniden derlenmesi sırasında hata ayıklayıcı bağlanırken, düzeltmek.
 
 -   Uzak düzenleyiciler veya başka bir sistem üzerinde derlenmiş oyuncuların hata ayıklanırken kesme noktaları düzeltin.
 
@@ -853,7 +853,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 -   Kapsam dışına görüntülenen dinamik değişkenleri önlemek için hata ayıklayıcı değişken kapsamı işlenmesini düzeltin.
 
--   Hata ayıklayıcı ifade değerlendirmesinde arama statik üyeleri düzeltme (bağlanma sorunu [#953379](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/953379/)).
+-   Statik üyeleri arama ifade değerlendirmesinde hata ayıklayıcı düzeltin.
 
 -   Statik alanlar ve Özellikler göstermek için hata ayıklayıcı ifade değerlendirmesindeki türlerini görüntüleme düzeltin.
 

@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 68470d7e8e40ad0d6d1d713e25e711da123d3233
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: b90a0dcaaafa2b3d83c949592951e564fce974f2
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673907"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000786"
 ---
-# <a name="publishing-a-cloud-service-using-visual-studio"></a>Visual Studio kullanarak bir bulut hizmeti yayımlama
+# <a name="publishing-a-cloud-service-using-visual-studio"></a>Visual Studio kullanarak bulut hizmetini yayımlama
 
 Visual Studio, Azure, bulut hizmetinin hazırlık ve üretim ortamları için destekle doğrudan uygulama yayımlayabilirsiniz. Yayımlama sırasında dağıtım ortamını ve dağıtım paketi için geçici olarak kullanılan depolama hesabı seçin.
 

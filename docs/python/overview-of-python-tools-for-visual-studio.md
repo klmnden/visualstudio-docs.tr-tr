@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2d686d51216141ccf2960a9b6cffd0ea9aafb329
-ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
+ms.openlocfilehash: ee6d8349887207a7c9eaf34ec2485d045acd4e47
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49991620"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000880"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python ile çalışma
 
@@ -151,7 +151,7 @@ Daha fazla bilgi için [Python için Azure SDK'sı](azure-sdk-for-python.md)
 
 **SORU. Python desteği, Mac için Visual Studio ile kullanılabilir?**
 
-BİR. Şu anda değil, ancak istek en fazla oy verebilirsiniz [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac). [Mac için Visual Studio](/visualstudio/mac/) belgeleri destekleyen geliştirme geçerli türlerini tanımlar. Visual Studio Code sırada, Windows, Mac ve Linux'ta [kullanılabilir uzantıları aracılığıyla Python ile de çalışır](https://code.visualstudio.com/docs/languages/python).
+BİR. Şu anda değil, ancak istek en fazla oy verebilirsiniz [Geliştirici topluluğu](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html). [Mac için Visual Studio](/visualstudio/mac/) belgeleri destekleyen geliştirme geçerli türlerini tanımlar. Visual Studio Code sırada, Windows, Mac ve Linux'ta [kullanılabilir uzantıları aracılığıyla Python ile de çalışır](https://code.visualstudio.com/docs/languages/python).
 
 **SORU. Python ile kullanıcı arabirimini derlemek için ne kullanabilirim?**
 

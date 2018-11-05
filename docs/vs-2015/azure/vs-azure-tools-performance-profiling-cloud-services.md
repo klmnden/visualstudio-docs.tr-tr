@@ -5,17 +5,18 @@ author: mikejo5000
 manager: douge
 ms.assetid: 7a5501aa-f92c-457c-af9b-92ea50914e24
 ms.topic: conceptual
-ms.workload: azure-vs
+ms.tgt_pltfrm: multiple
+ms.workload: na
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: cd846d58ed6f9236b2fd0942f8caf7755a6ff993
+ms.openlocfilehash: 25b60e5e4072a0523d17082a5c5646e5bb1ade6a
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000588"
+ms.locfileid: "51003449"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Bulut hizmetinin performansını test etme
 ## <a name="overview"></a>Genel Bakış
