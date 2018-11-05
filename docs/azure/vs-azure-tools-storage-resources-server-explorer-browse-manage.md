@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: e0ddc479d7e7095e03ebd31670ab19f8d8c8a748
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: bace670073072e5330af913b897ae477fb0ce528
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673929"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000180"
 ---
-# <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Gözat ve Sunucu Gezgini kullanarak depolama kaynaklarını yönetme
+# <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Sunucu Gezgini'ni kullanarak depolama kaynaklarına göz atma ve bu kaynakları yönetme
 
 [!INCLUDE [storage-try-azure-tools](./includes/storage-try-azure-tools.md)]
 
@@ -219,7 +219,7 @@ Sorgu Oluşturucu kullanırsanız, bir tablodaki görünen varlık kümesini öz
 1. Bitirdiğinizde, sorgu oluşturma iletişim kutusunu kapatın. Sorgu sonuç metin biçiminde metin kutusunda, WCF Veri Hizmetleri filtre olarak görünür.
 1. Sorguyu çalıştırmak için yeşil üçgeni simgesini seçin.
 
-Ayrıca, girerseniz filtre metin kutusuna doğrudan bir WCF Veri Hizmetleri filtre dizesi Tablo Tasarımcısı'nda görüntülenen varlık verilerini filtreleyebilirsiniz. Bu tür bir dize, bir SQL WHERE yan tümcesine benzer ancak sunucusu bir HTTP isteği olarak gönderilir. Filtre dizeleri oluşturmak nasıl hakkında daha fazla bilgi için bkz. [Constructing filtre dizeleri için Tablo Tasarımcısı](https://docs.microsoft.com/azure/vs-azure-tools-table-designer-construct-filter-strings).
+Ayrıca, girerseniz filtre metin kutusuna doğrudan bir WCF Veri Hizmetleri filtre dizesi Tablo Tasarımcısı'nda görüntülenen varlık verilerini filtreleyebilirsiniz. Bu tür bir dize, bir SQL WHERE yan tümcesine benzer ancak sunucusu bir HTTP isteği olarak gönderilir. Filtre dizeleri oluşturmak nasıl hakkında daha fazla bilgi için bkz. [Constructing filtre dizeleri için Tablo Tasarımcısı](vs-azure-tools-table-designer-construct-filter-strings.md).
 
 Geçerli filtre dizesinin aşağıda gösterilmiştir:
 

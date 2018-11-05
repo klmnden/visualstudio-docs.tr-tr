@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: a25658482fb29d31c19f3c63ed8222503188f6c7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 1a353caf4781a2c321a8a0b385e023686ca78cde
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673911"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000103"
 ---
-# <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Azure sanal makineleri Sunucu Gezgini'nden erişme
+# <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Sunucu Gezgini'nden Azure Sanal Makineler'e erişme
 
 Azure tarafından barındırılan sanal makineler varsa, sunucu Gezgini'nde erişebilirsiniz. İlk Azure aboneliğinize, mobil hizmetlerinizi görüntülemek için oturum açmanız gerekir. Oturum açmak için sunucu Gezgini'nde Azure düğümü için kısayol menüsünü açın ve seçin **Microsoft Azure'a bağlanma**.
 

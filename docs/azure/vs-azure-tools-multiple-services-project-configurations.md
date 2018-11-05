@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 7541b7dc6dcb2d5589833519b2f81e9be7705449
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9314f89dc6720e95db7a86eed541d555549d76cb
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673919"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000487"
 ---
-# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Azure projenizi Visual Studio'da birden fazla hizmet yapılandırması kullanmak için yapılandırma
+# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Visual Studio'da Azure projenizi birden çok hizmet yapılandırması kullanacak şekilde yapılandırma
 
 Visual Studio'da bir Azure bulut hizmeti projesi üç yapılandırma dosyalarını içerir: `ServiceDefinition.csdef`, `ServiceConfiguration.Local.cscfg`, ve `ServiceConfiguration.Cloud.cscfg`:
 

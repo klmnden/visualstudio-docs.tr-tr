@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 0b0c6954729c92382cb11ea0b7b5a4b7e9922b77
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: ccba0314e51116b58aa44bd25309b921c47c8799
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673915"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000591"
 ---
-# <a name="constructing-filter-strings-for-the-table-designer"></a>Filtre dizeleri oluşturmak için Tablo Tasarımcısı
+# <a name="constructing-filter-strings-for-the-table-designer"></a>Tablo Tasarımcısı için Filtre Dizelerini Oluşturma
 ## <a name="overview"></a>Genel Bakış
 Visual Studio içinde görüntülenen bir Azure tablosu verilere filtre uygulamak **Tablo Tasarımcısı**, bir filtre dizesi oluşturmak ve filtre alanına girin. Filtre dizesi söz dizimi WCF Veri Hizmetleri tarafından tanımlanır ve bir SQL WHERE yan tümcesine benzer, ancak tablo hizmeti bir HTTP isteği aracılığıyla gönderilir. **Tablo Tasarımcısı** uygun sizin için kodlama işler üzerinde istenen özellik değerini filtrelemek için yalnızca özellik adı, karşılaştırma işleci, ölçüt değeri ve isteğe bağlı, Boolean girmeniz filtre alanına işleci. $Filter sorgu seçeneği aracılığıyla bir tabloyu sorgulamak üzere bir URL oluştururken yaptığınız gibi dahil gerekmez [depolama hizmetleri REST API Başvurusu](http://go.microsoft.com/fwlink/p/?LinkId=400447).
 

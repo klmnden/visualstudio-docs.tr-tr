@@ -1,24 +1,20 @@
 ---
 title: Azure DevOps hizmetlerinde, Azure kaynak grubu projeleri kullanarak sürekli tümleştirme | Microsoft Docs
 description: Azure kaynak grubu dağıtım projeleri Visual Studio kullanarak Azure DevOps Hizmetleri'nde sürekli tümleştirmeyi ayarlama açıklanır.
-documentationcenter: na
 author: mlearned
-manager: erickson-doug
-editor: ''
+manager: douge
 ms.assetid: b81c172a-be87-4adc-861e-d20b94be9e38
 ms.service: azure-resource-manager
-ms.devlang: multiple
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: 5f83bd63c8650b7c7bbe0daa61a7c1cf8f70f556
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4b9304458219b262b07607bf61257e634ff2d435
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673613"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000387"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Azure DevOps hizmetlerinde, Azure kaynak grubu dağıtım projeleri kullanarak sürekli tümleştirme
 Azure şablonu dağıtmak için çeşitli aşamalarda görevler: azure'a derleme, Test, kopyalama (aynı zamanda "Hazırlama" olarak adlandırılır) ve şablonu dağıtın. Azure DevOps hizmetler için şablonları dağıtmak için iki farklı yolu vardır. Her iki yöntem de aynı sonuçları sağlar, bu nedenle, iş akışınızı en uygun olanı seçin.
@@ -182,19 +178,19 @@ Aşağıdaki yordamları, Azure DevOps yerleşik görevleri kullanarak Hizmetler
 ## <a name="next-steps"></a>Sonraki adımlar
 Okuma [Azure Resource Manager'a genel bakış](/azure-resource-manager/resource-group-overview.md) Azure Resource Manager ve Azure kaynak grupları hakkında daha fazla bilgi edinmek için.
 
-[0]: /azure/media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough1.png
-[1]: /azure/media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough2.png
-[2]: /azure/media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough3.png
-[3]: /azure/media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough4.png
-[4]: /azure/media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough5.png
-[5]: /azure/media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough6.png
-[8]: /azure/media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough9.png
-[9]: /azure/media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough10.png
-[10]: /azure/media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough11b.png
-[11]: /azure/media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough12.png
-[12]: /azure/media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough13.png
-[13]: /azure/media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough14.png
-[14]: /azure/media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough15.png
-[15]: /azure/media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough16.png
-[16]: /azure/media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough17.png
-[17]: /azure/media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough18.png
+[0]: media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough1.png
+[1]: media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough2.png
+[2]: media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough3.png
+[3]: media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough4.png
+[4]: media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough5.png
+[5]: media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough6.png
+[8]: media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough9.png
+[9]: media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough10.png
+[10]: media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough11b.png
+[11]: media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough12.png
+[12]: media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough13.png
+[13]: media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough14.png
+[14]: media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough15.png
+[15]: media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough16.png
+[16]: media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough17.png
+[17]: media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough18.png

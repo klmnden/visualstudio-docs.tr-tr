@@ -1,26 +1,23 @@
 ---
 title: Azure Cloud Services ve sanal makineler için tanılama ayarlama ayarlama | Microsoft Docs
 description: Azure cloude Hizmetleri ve sanal makineleri (VM'ler), Visual Studio'da hata ayıklama tanılama ayarlama konusunda bilgi edinin.
-documentationcenter: na
-author: mikejo
+author: ghogen
 manager: douge
-editor: ''
 ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
-ms.service: multiple
-ms.devlang: dotnet
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: multiple
+ms.topic: conceptual
+ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: c80c879a3a059af1a01a0b03dd4e0c26d6ffec5a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
+ms.openlocfilehash: 171f46efbcec7d21b281058475466f536899aa2b
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673920"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000521"
 ---
-# <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Azure Cloud Services ve sanal makineler için tanılama ayarlama ayarlayın
+# <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Azure Cloud Services ve sanal makineler için tanılamayı ayarlama
 Bir Azure bulut hizmeti veya sanal makine sorunlarını gidermek, ihtiyacınız olduğunda, Visual Studio, daha kolay Azure Tanılama'yı ayarlamak için kullanabilirsiniz. Tanılama sistemi veri ve sanal makineler ve bulut hizmetinizi çalıştıran sanal makine örneği günlük verilerini yakalar. Tanılama verileri, seçtiğiniz bir depolama hesabına aktarılır. Azure'da günlüğe kaydetme Tanılama hakkında daha fazla bilgi için bkz [Azure App Service'te Web uygulamaları için tanılama günlüğünü etkinleştirme](/azure/app-service/web-sites-enable-diagnostic-log).
 
 Bu makalede, Visual Studio'yu açın ve Azure tanılama ayarlama öncesinde ve sonrasında dağıtım ayarlamak için kullanma gösteriyoruz. Azure sanal makinelerinde tanılama ayarlama yapma, nasıl tanılama bilgilerini toplamak için türlerini seçin ve toplandıktan sonra bilgileri nasıl görüntüleyeceğinizi öğrenin.

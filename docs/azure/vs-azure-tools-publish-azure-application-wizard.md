@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: d6e3ea3ba9aebd63c3abafa95c369777d20d38ad
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 7756f501bbc06c62d44003911d56f076724b69e6
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673822"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000409"
 ---
-# <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Visual Studio kullanarak Azure Uygulama Sihirbazı yayımlama
+# <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Visual Studio Azure Uygulamasını Yayımlama Sihirbazı'nı kullanma
 
 Visual Studio'da bir web uygulaması geliştirme sonra kullanarak bir Azure bulut hizmeti için bu uygulamayı yayımlayabilirsiniz **Azure uygulamasını Yayımla** Sihirbazı.
 

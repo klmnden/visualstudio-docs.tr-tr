@@ -1,27 +1,24 @@
 ---
 title: Bir Azure bulut hizmeti Visual Studio ve IntelliTrace ile yayımlanan bir hata ayıklama | Microsoft Docs
 description: Bir bulut hizmetinde Visual Studio ve IntelliTrace ile hata ayıklama hakkında bilgi edinin
-documentationcenter: n/a
-author: mikejo
+author: mikejo5000
 manager: douge
-editor: ''
 ms.assetid: 5e6662fc-b917-43ea-bf2b-4f2fc3d213dc
-ms.service: visual-studio-online
-ms.devlang: multiple
-ms.topic: article
-ms.tgt_pltfrm: multiple
+ms.topic: conceptual
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
-ms.openlocfilehash: a66923de21f50acb078d10955587f672d9a2a171
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
+ms.openlocfilehash: 492c3ab06bc2a9c832e2eea476a14dfaeba44fcc
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673889"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000251"
 ---
-# <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Yayımlanan bir Azure bulut hizmeti Visual Studio ve IntelliTrace ile hata ayıklama
+# <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Visual Studio ve IntelliTrace ile yayımlanan bir Azure bulut hizmetinin hatalarını ayıklama
 IntelliTrace ile Azure içinde çalıştığında bir rol örneği için kapsamlı hata ayıklama bilgileri günlüğe kaydedebilirsiniz. Bir sorunun nedenini bulmak gerekiyorsa, IntelliTrace günlüklerini, Visual Studio'dan, Azure'da çalışıyormuş gibi kodunuzda adım adım ilerleyin için de kullanabilirsiniz. Aslında Azure uygulamanızın Azure'daki bir bulut hizmeti olarak çalışan ve Visual Studio'dan kaydedilen verileri yeniden yürütme olanak tanır, Intellitrace'in kaydettiği kod yürütme ve ortam verilerini anahtarı. 
 
 Visual Studio Enterprise yüklüyse IntelliTrace ve Azure uygulama hedeflerinizi .NET Framework 4 veya sonraki bir sürümünü kullanabilirsiniz. IntelliTrace rollerinizi Azure için bilgi toplar. Bu roller için sanal makinelerin her zaman 64-bit işletim sistemlerinde çalışır.

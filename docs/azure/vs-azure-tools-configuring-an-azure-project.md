@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/06/2017
 ms.author: ghogen
-ms.openlocfilehash: ac81b2ff055f5ccb181c544023c88511169b0531
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 53f7ecc53b78e4a474fb153feebed648f2aa6ca8
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673881"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000356"
 ---
-# <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>Visual Studio ile bir Azure bulut hizmeti projesi yapılandırma
+# <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>Visual Studio ile Azure bulut hizmeti projesini yapılandırma
 Bu proje için gereksinimlerinize bağlı olarak, bir Azure bulut hizmeti projesi yapılandırabilirsiniz. Aşağıdaki kategorilerde projesi için özellikleri ayarlayabilirsiniz:
 
 - **Azure'a bir bulut hizmeti yayım** -Azure'a dağıtılan var olan bir bulut hizmeti yanlışlıkla olarak silinmediğinden emin olmak için bir özelliği ayarlayabilirsiniz.

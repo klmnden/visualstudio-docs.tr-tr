@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 8c65dbc0f5a7d064d3752e47314345a0fb714b13
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 160fe5a4de39aec5d29d981202bcfb791b763d12
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673820"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000100"
 ---
-# <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Yayımlama veya Visual Studio'dan bir bulut hizmeti dağıtmak hazırlama
+# <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Visual Studio'dan bulut hizmeti yayımlamaya veya dağıtmaya hazırlanma
 
 Bir bulut hizmeti projesini yayımlamak için bu makalede açıklandığı gibi aşağıdaki hizmetleri ayarlamanız gerekir:
 
@@ -71,7 +71,7 @@ Bir bulut hizmeti Visual Studio kullanarak oluşturduysanız **bağlı hizmet Ek
 
 Bir bulut hizmeti Azure portalından oluşturduysanız, aynı adımları izleyin [Visual Studio'dan bir depolama hesabı oluşturma](#create-a-storage-account-from-visual-studio) ancak mevcut bir hesabı yeni bir tane oluşturmak yerine. Visual Studio, daha sonra sizin için yapılandırmayı güncelleştirir.
 
-Yapılandırma ayarları el ile kullanın özellik sayfaları Visual Studio'da bulut hizmeti projenizi geçerli rol için (role sağ tıklayıp **özellikleri**). Daha fazla bilgi için [bir depolama hesabı bağlantı dizesi yapılandırma](https://docs.microsoft.com/azure/vs-azure-tools-multiple-services-project-configurations#configuring-a-connection-string-to-a-storage-account).
+Yapılandırma ayarları el ile kullanın özellik sayfaları Visual Studio'da bulut hizmeti projenizi geçerli rol için (role sağ tıklayıp **özellikleri**). Daha fazla bilgi için [bir depolama hesabı bağlantı dizesi yapılandırma](vs-azure-tools-multiple-services-project-configurations.md#configuring-a-connection-string-for-a-storage-account).
 
 ### <a name="about-access-keys"></a>Erişim anahtarları hakkında
 

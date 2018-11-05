@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 14aa15d53977167a61d5570d4bc2ac7edffb197d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a986675a2fd239918c43fd2350713bfabee4f046
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511658"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000633"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Dinamik sembolik yürütme kullanarak giriş oluşturma
 
@@ -146,4 +146,4 @@ Intellitest ilginç program davranışları tetiklemek için gereken dizeler ve 
 
 ## <a name="got-feedback"></a>Geri bildirim var mı?
 
-Fikirlerinizi gönderin ve özellik istekleri [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).
+Fikirlerinizi gönderin ve özellik istekleri [Geliştirici topluluğu](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

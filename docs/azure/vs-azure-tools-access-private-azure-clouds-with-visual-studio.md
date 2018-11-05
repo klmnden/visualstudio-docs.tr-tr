@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/13/2017
 ms.author: ghogen
-ms.openlocfilehash: dd86b97c5e8c290ca5dc8dfbb11d05e3e008de29
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 23c9fa380238a489b59404e07eebdb80c6cb2ccc
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673826"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000636"
 ---
 # <a name="accessing-private-azure-clouds-with-visual-studio"></a>Visual Studio ile Azure özel bulutlara erişme
 
