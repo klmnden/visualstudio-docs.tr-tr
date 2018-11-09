@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d620ae0f93b2bbcee66419cfe9ff5e76e470c5f0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 03b5a669c0977aa35ef6943af3fa6afe6dda2aaa
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918889"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220794"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>UWP uygulamalarında ağ kullanımını analiz etme
 Visual Studio **ağ** Tanılama aracını kullanarak gerçekleştirilen ağ işlemleri hakkındaki verileri toplar [Windows.Web.Http API](/uwp/api/windows.web.http). Verileri çözümleme, erişim ve kimlik doğrulaması ile ilgili sorunlar, yanlış önbellek kullanımı ve görüntü gibi sorunları çözmek ve indirme performansını yardımcı olabilir.  
@@ -23,7 +23,7 @@ Visual Studio **ağ** Tanılama aracını kullanarak gerçekleştirilen ağ işl
  Ağ aracına yalnızca UWP uygulamaları destekler. Diğer platformlar, şu anda desteklenmiyor.  
   
 > [!NOTE]
->  Ağ aracına daha eksiksiz bir açıklaması için bkz. [Karşınızda Visual Studio'nun Ağ aracı](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studios-network-tool.aspx).  
+>  Ağ aracına daha eksiksiz bir açıklaması için bkz. [Karşınızda Visual Studio'nun Ağ aracı](https://blogs.msdn.microsoft.com/visualstudio/2015/05/04/introducing-visual-studios-network-tool/).  
   
 ## <a name="collect-network-tool-data"></a>Ağ aracı verilerini topla  
  Çalıştırmalısınız **ağ** aracı ile Visual Studio bilgisayarda açık bir Visual Studio projesi.  
@@ -75,6 +75,6 @@ Visual Studio **ağ** Tanılama aracını kullanarak gerçekleştirilen ağ işl
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Hata ayıklayıcı ile veya hata ayıklayıcı olmadan profil oluşturma araçları çalıştırma](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
  [Visual Studio blogu: Karşınızda Visual Studio'nun ağ denetçisi](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Kanal 9 Video: VS tanılama araçları - yeni ağ Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206)  
+ [Kanal 9 Video: VS tanılama araçları - yeni ağ Profiler](https://channel9.msdn.com/Series/ConnectOn-Demand/206)  
  [Visual Studio profil oluşturma](../profiling/index.md)  
  [Araçlar profil oluşturmaya ilk bakış](../profiling/profiling-feature-tour.md)
