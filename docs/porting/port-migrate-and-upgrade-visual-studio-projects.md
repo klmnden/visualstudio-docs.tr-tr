@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 0c082540632be14f7ddce94cb64ef41f03b1e1f7
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: c1ceaf0fc805ce9fb2b284de203bfde6f418a4a1
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349549"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220846"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 için proje geçiş ve yükseltme başvurusu
 
@@ -68,7 +68,7 @@ Bir proje görmüyorsanız veya dosya türü listelenen Burada, olması, başvur
 | Visual Studio genişletilebilirlik/VSIX | MinimumVersion 14.0 veya daha az projeleri, projeyi önceki Visual Studio sürümlerinde açılmasını engelleyen MinimumVersion 15.0 bildirmek için güncelleştirilir. MinimumVersion önceki sürümlerinde açmak bir proje izin vermek için kümesine `$(VisualStudioVersion)`. Ayrıca bkz: [nasıl yapılır: genişletilebilirlik projelerini Visual Studio 2017'ye geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Laboratuvar Yönetimi | Microsoft Test Yöneticisi ya da Visual Studio 2010 SP1'i kullanabilirsiniz ve daha sonra herhangi bir bu sürümüyle oluşturduğunuz ortamları açabilirsiniz. Ancak, ortamları oluşturmadan önce Microsoft Test Yöneticisi'nin sürümü Team Foundation Server sürümü için Visual Studio 2010 SP1 eşleşmelidir. |
 | Apache Cordova için Visual Studio Araçları | Projeleri Visual Studio 2017'de açılabilir ancak geriye dönük olarak uyumlu değildir. Visual Studio 2015'ten bir proje açıldığında, değişiklikler projenize izin istenir. Bu değişikliği yerine araç takımları kullanacak şekilde projeyi yükseltir bir `taco.json` Cordova kitaplığı, onun platformlar, kendi eklentiler ve düğüm/npm bağımlılıkları, sürüm oluşturmayı yönetmek için dosya. Bkz: [Geçiş Kılavuzu](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015) daha fazla bilgi için. |
-| Web dağıtımı (wdproj) | Destek için Web dağıtımı projeleri kaldırıldı Visual Studio 2012'de yayımlama profili desteği olan'ın eklenmesiyle. Visual Studio 2017'de eşdeğeri olduğundan, bu gibi projeler için otomatik geçiş yolu yoktur. Bunun yerine, wdproj dosyasını bir metin düzenleyicisinde açın ve tüm özelleştirmeleri içine pubxml kopyala-yapıştır (Yayımlama profilini) dosya çubuğunda açıklandığı [StackOverflow](https://stackoverflow.com/a/12061065/1203388). Ayrıca bkz: [planları Web sitesi ve web dağıtımı projeleri ilgili](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/). |
+| Web dağıtımı (wdproj) | Destek için Web dağıtımı projeleri kaldırıldı Visual Studio 2012'de yayımlama profili desteği olan'ın eklenmesiyle. Visual Studio 2017'de eşdeğeri olduğundan, bu gibi projeler için otomatik geçiş yolu yoktur. Bunun yerine, wdproj dosyasını bir metin düzenleyicisinde açın ve tüm özelleştirmeleri içine pubxml kopyala-yapıştır (Yayımlama profilini) dosya çubuğunda açıklandığı [StackOverflow](https://stackoverflow.com/a/12061065/1203388). Ayrıca bkz: [planları Web sitesi ve web dağıtımı projeleri (MSDN bloglarında) ilgili](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/). |
 | Windows Communication Foundation, Windows Workflow Foundation | Bu projeyi Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 ve Visual Studio 2012 açabilirsiniz |
 | Windows Presentation Foundation | Bu proje, Visual Studio 2013, Visual Studio 2012 ve Visual Studio 2010 SP1 içinde açabilirsiniz. |
 | Windows Store/telefon uygulamaları | Windows Store 8.1 ve 8.0 ve Windows Phone 8.1 ve 8.0 projeleri Visual Studio 2017'de desteklenmez. Bu uygulamaları korumak için Visual Studio 2015 kullanmaya devam edin. Windows Phone 7.x projelerini korumak için Visual Studio 2012 kullanın. |
