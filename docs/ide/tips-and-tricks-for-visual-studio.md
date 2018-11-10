@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 039d0caac98bdb574f2e42303ccb001e9600a740
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: cde519515782f453a8a60894a8bcc6dc6c714cc1
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348949"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220859"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Visual Studio için klavye kısayolları
 
@@ -22,9 +22,6 @@ Bu makalede klavye kısayollarını kullanarak, Visual Studio'da daha kolay gezi
 
 > [!TIP]
 > Burada listelenen kısayolları, kullanılabilir klavye kısayollarını yalnızca bir alt kümesidir. Daha kapsamlı bir liste için bkz. [varsayılan klavye kısayolları](../ide/default-keyboard-shortcuts-in-visual-studio.md).
-
-> [!NOTE]
-> Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [Mac için Visual Studio'da ortak klavye kısayollarının](/visualstudio/mac/keyboard-shortcuts).
 
 ## <a name="window-management"></a>Pencere Yönetimi
 
@@ -139,5 +136,4 @@ Bu makalede klavye kısayollarını kullanarak, Visual Studio'da daha kolay gezi
 
 - [Erişilebilirlik ipuçları ve püf noktaları](../ide/reference/accessibility-tips-and-tricks.md)
 - [Klavye kısayolları (Azure DevOps Hizmetleri ve TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
-- [Visual Studio ipuçları ve püf noktaları blogu](https://blogs.msdn.microsoft.com/zainnab/)
-- [Mac için Visual Studio'da ortak klavye kısayolları](/visualstudio/mac/keyboard-shortcuts)
+- [Visual Studio ipuçları ve püf noktaları blogu](https://blogs.msdn.com/b/zainnab)
