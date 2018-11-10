@@ -19,15 +19,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b363e64cbd23bcaa05eeca9aae9c26a6d4e376b3
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: f68f6e50be569df6130f7e6c6f3aa4bc7c107214
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219789"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296053"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint çözümlerinde sorun giderme
-  SharePoint çözümlerini kullanarak hata ayıklaması yaparken aşağıdaki sorunları veya uyarılar ortaya çıkabilir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hata ayıklayıcı. Daha fazla bilgi için [hata ayıklama SharePoint 2007 iş akışı çözümleri](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
+  SharePoint çözümlerini kullanarak hata ayıklaması yaparken aşağıdaki sorunları veya uyarılar ortaya çıkabilir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hata ayıklayıcı. Daha fazla bilgi için [hata ayıklama SharePoint 2007 iş akışı çözümleri](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
   
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>Korumalı bir görsel web bölümleri içindeki belirteç kısıtlamaları
  Korumalı çözümler ortamdaki görsel web bölümleri SharePoint çalışma zamanını destekleyen $SPUrl gibi standart belirteçleri işleyemiyor. Sonuç olarak, URL çözülmüş değildir ve sizin için bir betik öğesinde doğrudan gibi aşağıdaki örnekte başvuruyorsa visual web bölümü tasarımcısında Tasarım görünümünde içeriği önizlemesi görüntülenemiyor:  
@@ -105,7 +105,7 @@ ms.locfileid: "50219789"
  Yok.  
   
 ### <a name="resolution"></a>Çözüm  
- Bu sorun nedeniyle yanlış bir değere **yolu** gibi webtemp site tanımı yapılandırması için özellik dosyası *webtemp_SiteDefinitionProject1.xml*. İçinde **yolu** özelliği altında bulunan webtemp dosyası için **dağıtım konumu**, 1033 uygun yerel ayarı değiştirme [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Örneğin, kullanılacak bir Japonca yerel ayarında değerini değiştirin için 1041. Daha fazla bilgi için [Microsoft tarafından atanan yerel kimlikler](http://go.microsoft.com/fwlink/?LinkID=165561) MSDN Web sitesinde.  
+ Bu sorun nedeniyle yanlış bir değere **yolu** gibi webtemp site tanımı yapılandırması için özellik dosyası *webtemp_SiteDefinitionProject1.xml*. İçinde **yolu** özelliği altında bulunan webtemp dosyası için **dağıtım konumu**, 1033 uygun yerel ayarı değiştirme [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Örneğin, kullanılacak bir Japonca yerel ayarında değerini değiştirin için 1041. Daha fazla bilgi için [Microsoft tarafından atanan yerel kimlikler](http://go.microsoft.com/fwlink/?LinkID=165561).  
   
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>Temiz bir sistemde bir iş akışı projesi dağıtıldığında hata görüntülenir.
  Bir iş akışı projesinde dağıtırsanız, bu sorun oluşur [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] temiz bir sistemde. Yeni yüklemesini olduğu bir bilgisayarda temiz bir sistemdir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ve SharePoint, ancak dağıtılmış iş akışı projesi yok.  

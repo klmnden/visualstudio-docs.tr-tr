@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4d7de98fb6fbc8bcb5466b83ac406c0e7c98475
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8144723f68b9343c1c7d74f7a940aec569dd7969
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878069"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296131"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>İzlenecek yol: bir öğe şablonu, bölüm 1 ile özel bir eylem proje öğesi oluşturma
   Visual Studio'da SharePoint Proje sistemi kendi proje öğesi türleri oluşturarak genişletebilirsiniz. Bu kılavuzda, bir SharePoint sitesinde özel eylem oluşturmak için bir SharePoint projesine eklenen bir proje öğesi oluşturur. Bir menü öğesi özel eylemi ekler **Site eylemleri** SharePoint sitesinin menüsü.  
@@ -298,7 +298,7 @@ ms.locfileid: "49878069"
   
 1.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **source.extension.vsixmanifest** CustomActionProjectItem projeye dosya ve ardından **açın**.  
   
-     Visual Studio, dosyayı bildirim düzenleyicisinde açar. Source.extension.vsixmanifest dosyası, tüm VSIX paketleri gerektiren extension.vsixmanifest dosyasının temelidir. Bu dosya hakkında daha fazla bilgi için bkz. [VSIX Uzantı Şeması 1.0 başvurusu](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Visual Studio, dosyayı bildirim düzenleyicisinde açar. Source.extension.vsixmanifest dosyası, tüm VSIX paketleri gerektiren extension.vsixmanifest dosyasının temelidir. Bu dosya hakkında daha fazla bilgi için bkz. [VSIX Uzantı Şeması 1.0 başvurusu](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  İçinde **ürün adı** kutusuna **özel eylem proje öğesi**.  
   
@@ -313,7 +313,7 @@ ms.locfileid: "49878069"
 6.  İçinde **türü** listesinde **Microsoft.VisualStudio.ItemTemplate**.  
   
     > [!NOTE]  
-    >  Bu değer karşılık gelen `ItemTemplate` extension.vsixmanifest dosyasındaki öğesi. Bu öğe, alt proje öğesi şablon içeren VSIX paketi tanımlar. Daha fazla bilgi için [ItemTemplate öğesi (VSX şema)](http://msdn.microsoft.com/en-us/1d489e54-c1c5-4f96-a510-6c2640867ff0).  
+    >  Bu değer karşılık gelen `ItemTemplate` extension.vsixmanifest dosyasındaki öğesi. Bu öğe, alt proje öğesi şablon içeren VSIX paketi tanımlar. Daha fazla bilgi için [ItemTemplate öğesi (VSX şema)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).  
   
 7.  İçinde **kaynak** listesinde **mevcut çözümde bir proje**.  
   
@@ -326,7 +326,7 @@ ms.locfileid: "49878069"
 10. İçinde **türü** listesinde **Microsoft.VisualStudio.MefComponent**.  
   
     > [!NOTE]  
-    >  Bu değer karşılık gelen `MefComponent` extension.vsixmanifest dosyasındaki öğesi. Bu öğe VSIX paketinde bir uzantı derlemesinin adını belirtir. Daha fazla bilgi için [MEFComponent öğesi (VSX şema)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Bu değer karşılık gelen `MefComponent` extension.vsixmanifest dosyasındaki öğesi. Bu öğe VSIX paketinde bir uzantı derlemesinin adını belirtir. Daha fazla bilgi için [MEFComponent öğesi (VSX şema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 11. İçinde **kaynak** listesinde **mevcut çözümde bir proje**.  
   
@@ -420,7 +420,7 @@ ms.locfileid: "49878069"
     -   İçinde `UrlAction` öğe, ayarladığınız `Url` özniteliği aşağıdaki örnekte gösterildiği gibi:  
   
         ```xml  
-        Url="http://msdn.microsoft.com/sharepoint/default.aspx"  
+        Url="https://docs.microsoft.com/sharepoint/dev/"  
         ```  
   
 3.  Seçin **F5** anahtarı.  
@@ -430,7 +430,7 @@ ms.locfileid: "49878069"
     > [!NOTE]  
     >  Varsa **betik hata ayıklamasını devre dışı bırakılmış** iletişim kutusu görüntülenirse, seçin **Evet** proje hatalarını ayıklamaya devam etmek için düğme.  
   
-4.  Üzerinde **Site eylemleri** menüsünde seçin **SharePoint Geliştirici Merkezi**, tarayıcının Web sitesi açılır doğrulayın http://msdn.microsoft.com/sharepoint/default.aspxve ardından web tarayıcısını kapatın.  
+4.  Üzerinde **Site eylemleri** menüsünde seçin **SharePoint Geliştirici Merkezi**, tarayıcının Web sitesi açılır doğrulayın https://docs.microsoft.com/sharepoint/dev/ve ardından web tarayıcısını kapatın.  
   
 ## <a name="clean-up-the-development-computer"></a>Geliştirme bilgisayarını temizleme
  Proje öğesi testi tamamladıktan sonra proje öğesi şablonu Visual Studio'nun deneysel örneği kaldırın.  

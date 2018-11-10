@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: a6ea00e468e178f96bf0a08b5520d2f7e3d64b85
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 37c4f6c50cc5deaee1decf6fcfae5eda211018b2
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228870"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295689"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Visual Studio için Mac turu
 
@@ -56,13 +56,13 @@ Dosya kaynak kodu, kaynakları, kullanıcı arabirimi ve bağımlılıkları iç
 Projeler ve çözümler, Mac için Visual Studio kullanarak daha fazla bilgi için bkz: [projeler ve çözümler](projects-and-solutions.md) makalesi.
 
 ## <a name="assembly-references"></a>Derleme başvuruları
- 
+
 Her proje için derleme başvuruları, başvuruları klasörünün altında mevcuttur:
 
 ![Çözüm Bölmesi'nde başvurular klasörünün](media/ide-tour-image19.png)
 
 Ek başvurular kullanarak eklenir **başvuruları Düzenle** başvuruları klasörü çift tıklayarak ya da seçerek görüntülenen iletişim kutusunda **başvuruları Düzenle** kendi bağlam menüsünde eylemleri:
- 
+
 ![Başvurular iletişim Düzenle](media/ide-tour-image20.png)
 
 Başvurular, Mac için Visual Studio kullanarak daha fazla bilgi için bkz: [bir projedeki başvuruları yönetme](managing-references-in-a-project.md) makalesi.
@@ -93,7 +93,7 @@ Hata Ayıklayıcı'nın veri görselleştirmeleri hakkında daha fazla bilgi iç
 
 ## <a name="version-control"></a>Sürüm Denetimi
 
-Mac için Visual Studio, Git, Subversion kaynak denetimi sistemleriyle tümleştirilir. Kaynak denetimi altında proje, çözüm adının yanında listelenen dal ile belirtilir: 
+Mac için Visual Studio, Git, Subversion kaynak denetimi sistemleriyle tümleştirilir. Kaynak denetimi altında proje, çözüm adının yanında listelenen dal ile belirtilir:
 
 ![Kaynak denetimi altında proje belirtmek için dal adı](media/ide-tour-image22.png)
 
@@ -102,3 +102,7 @@ Dosyaları kaydedilmemiş değişikliklerle bir ek açıklama simgelerine çöz�
 ![Çözüm panelinde kaydedilmemiş dosyaları](media/ide-tour-image23.png)
 
 Visual Studio'da sürüm denetimini kullanma ile ilgili daha fazla bilgi için bkz: [sürüm denetimi](version-control.md) makalesi.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Visual Studio IDE (üzerinde Windows)](/visualstudio/ide/visual-studio-ide)

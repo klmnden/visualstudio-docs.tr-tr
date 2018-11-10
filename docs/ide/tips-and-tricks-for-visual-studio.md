@@ -1,6 +1,6 @@
 ---
 title: Visual Studio klavye kısayolları
-ms.date: 06/21/2017
+ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e38fb09f77d7c00d2764ca181a604b3e25c264b
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
-ms.translationtype: MT
+ms.openlocfilehash: cde519515782f453a8a60894a8bcc6dc6c714cc1
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672983"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220859"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Visual Studio için klavye kısayolları
 
@@ -73,6 +73,11 @@ Bu makalede klavye kısayollarını kullanarak, Visual Studio'da daha kolay gezi
 
 |Komut|Kısayol|Sürüm kullanılabilirlik|
 |-|-|-|
+|Tümüne Git|**CTRL**+**T**|
+|Son kullanılan dosyalar için Git|**CTRL**+**T**,**R**|
+|Birden çok giriş işaretini birden çok ekleme noktası|**CTRL**+**Alt**+**tıklayın**|
+|Birden çok giriş işaretini eşleşen seçimi Ekle|**Shift**+**Alt**+**bileşenleri**|
+|Belgeyi Biçimlendir|**CTRL**+**K**,**D**|Visual Studio 2017 sürüm 15,8|
 |IntelliSense Öneri Modu|**CTRL**+**Alt**+**alanı** (geçiş)||
 |IntelliSense göstermeye zorlama|**CTRL**+**J**||
 |Hızlı Eylemler|**Ctrl**+**.**||
@@ -95,6 +100,9 @@ Bu makalede klavye kısayollarını kullanarak, Visual Studio'da daha kolay gezi
 |Birden fazla gözlem tanım pencereleri arasında gezinme|**CTRL**+**Alt** + **-** ve **Ctrl**+**Alt**+**=**||
 |Birden fazla gözlem sonuçları arasında gezinin|**F8** ve **Shift**+**F8**||
 |Kod Düzenleyicisi penceresi ve Özet tanım penceresi arasında geçiş yapma|**Shift**+**Esc**||
+|Blok kapsayan için Git|**CTRL**+**Alt**+**UpArrow**|
+|Sonraki/önceki soruna gidin|**Alt**+**PgUp**/**PgDn**|
+|Bağlamsal Gezinti Menüsü|**Alt**+**`**|
 
 ## <a name="toolbars"></a>Araç Çubukları
 

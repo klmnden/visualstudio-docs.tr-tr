@@ -12,16 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 397ed4ea94aa54c8f8d31fc6ff0d08da16a93479
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 8be5d3692459c2c65d4243c831ef4de002828bb0
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42623923"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349081"
 ---
 # <a name="features-of-the-code-editor"></a>Kod Düzenleyicisi özellikleri
 
 Visual Studio Düzenleyicisi, yazma ve kod ve metin yönetmek için kolaylaştıran birçok özellik sağlar. Genişletebilir ve Anahat oluşturmayı kullanarak farklı kod bloklarından birini daraltabilirsiniz. IntelliSense, kullanarak kod hakkında daha fazla bilgi edinebilirsiniz **Nesne Tarayıcısı**ve arama hiyerarşisi. Gibi özellikleri kullanarak kod bulabilirsiniz **Git**, **tanıma**, ve **tüm başvuruları Bul**. Kod parçacıklarıyla kod blokları ekleyebilirsiniz ve kod gibi özellikleri kullanarak oluşturabileceğiniz **kullanımından Oluştur**. Visual Studio Düzenleyicisi önce hiç kullanmadıysanız, [kodunuzu düzenleyin](https://visualstudio.microsoft.com/vs/features/ide/) hızlı bir genel bakış.
+
+> [!NOTE]
+> Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [Kaynak Düzenleyicisi (Mac için Visual Studio)](/visualstudio/mac/source-editor).
 
 Kodunuzu bir dizi farklı yolla görüntüleyebilirsiniz. Varsayılan olarak, **Çözüm Gezgini** dosyalar tarafından düzenlenir kodunuzu gösterir. Tıklayabilirsiniz **sınıf görünümü** pencerenin kodunu görüntülemek için sekmesinde sınıfları tarafından düzenlenir.
 
@@ -87,6 +90,7 @@ Düzenleyiciyi özelleştirme hakkında daha fazla bilgi için bkz. [düzenleyic
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
+- [Kaynak Düzenleyicisi (Mac için Visual Studio)](/visualstudio/mac/source-editor)
 - [Visual Studio IDE](../ide/visual-studio-ide.md)
 - [Visual Studio'da C++ kullanmaya başlama](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [C# ve Visual Studio'da ASP.NET kullanmaya başlama](../ide/tutorial-csharp-aspnet-core.md)

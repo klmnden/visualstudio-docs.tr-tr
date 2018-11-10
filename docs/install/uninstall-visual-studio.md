@@ -15,16 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0760c101ce669dc2e44527ea18b8f213a12df973
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1d4e178bce3b1a74174d59b9fde701ef2d7645b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817749"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348670"
 ---
 # <a name="uninstall-visual-studio"></a>Visual Studio'yu kaldırma
 
 Bu sayfa, Visual Studio'nun tümleşik paketimiz geliştiricileri için üretkenlik aracından oluşan açıklanmaktadır.
+
+> [!NOTE]
+> Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [Mac için Visual Studio kaldırma](/visualstudio/mac/uninstall).
 
 1. Bilgisayarınızda Visual Studio yükleyicisi bulun.
 
@@ -33,7 +36,7 @@ Bu sayfa, Visual Studio'nun tümleşik paketimiz geliştiricileri için üretken
      ![Visual Studio yükleyicisi](media/vs2017-locate-the-visual-studio-installer.PNG "Microsoft Visual Studio yükleyicisi bulunamıyor")
 
    > [!NOTE]
-   >   Bazı bilgisayarlarda, Visual Studio yükleyicisi harfi altında listelenebilir **"M"** olarak **Microsoft Visual Studio yükleyicisi**.<br/><br/> Alternatif olarak, Visual Studio yükleyicisi şu konumda bulabilirsiniz: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+   > Bazı bilgisayarlarda, Visual Studio yükleyicisi harfi altında listelenebilir **"M"** olarak **Microsoft Visual Studio yükleyicisi**.<br/><br/> Alternatif olarak, Visual Studio yükleyicisi şu konumda bulabilirsiniz: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 2. Yükleyiciyi başlatmak için tıklatın ![ayrıntılara](media/vs2017uninstall-UninstallIcon.png "seçenekleri simgesini") simgesine ve ardından **kaldırma**.
 

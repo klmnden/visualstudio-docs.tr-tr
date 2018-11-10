@@ -6,14 +6,14 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: f6ec6a446b68c848885e2c08804bc49a0cf1941b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ad3154390494c3d949ceba1cc84ded87d33a3fd
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934619"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295000"
 ---
-# <a name="setup-and-install-visual-studio-for-mac"></a>Kurulum ve Mac için Visual Studio yükleme
+# <a name="set-up-and-install-visual-studio-for-mac"></a>Ayarlanmış yukarı ve Mac için Visual Studio'yu yükleyin
 
 ## <a name="setup"></a>Kurulum
 
@@ -86,7 +86,6 @@ Visual Studio'da iOS ile çalışmak için şu bilgilere ihtiyacınız vardır:
 > [!NOTE]
 > Yüklemeyin bir platform veya aracı özgün yükleme sırasında (bunu #6. adımda seçimini tarafından) seçerseniz, çalıştırmalısınız [yükleyici](https://visualstudio.microsoft.com/vs/) yeniden bileşen daha sonra eklemek istiyorsanız.
 
-
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Visual Studio Mac için bir güvenlik duvarı veya proxy sunucusunun arkasına yükleme
 
 Güvenlik duvarının arkasında Mac için Visual Studio'yu yüklemek için belirli uç noktaları, yazılım güncelleştirmeleri ve gerekli araçları indirmeye izin ver için erişilebilir yapılması gerekir.
@@ -104,7 +103,6 @@ Mac için Visual Studio yükleme, uygulamalarınız için kod yazmaya olanak tan
 1. [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
 2. [Cihaz sağlama](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning)(cihazda uygulamanızı çalıştırmak için).
 
-
 ### <a name="android"></a>Android
 
 1. [Xamarin Android SDK Yöneticisi'ni kullanma](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
@@ -114,3 +112,7 @@ Mac için Visual Studio yükleme, uygulamalarınız için kod yazmaya olanak tan
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET core uygulamaları, ASP.NET Core web uygulamaları, Unity oyun geliştirme
 
 Diğer iş yükleri için başvurmak [iş yükleri](workloads.md) sayfası.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Visual Studio 2017 (Windows) yükleyin](/visualstudio/install/install-visual-studio)

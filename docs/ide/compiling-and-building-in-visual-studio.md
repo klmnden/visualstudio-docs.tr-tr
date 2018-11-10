@@ -13,20 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce6a85ff80d8da081b0d69763ed477174de7ed4
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 9d2ad9e3e6644f3f0ffc2d4fbf163968f16065f3
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863627"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349139"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Derleme ve Visual Studio'da derleyin
 
-Bir derlemeyi çalıştırmaya derlemeler ve yürütülebilir uygulamalar herhangi bir noktada, kaynak kodunuzu geliştirme döngüsü sırasında oluşturur. Genel olarak, derleme işlemi Windows, ASP.NET, mobil uygulamalar ve diğerleri gibi birçok farklı proje türlerinde çok benzer. Derleme işlemi ayrıca C#, Visual Basic, C++ ve F # gibi programlama dilleri arasında çok benzer.
+Kaynak kodu derlerken, derleme altyapısı derlemeler ve yürütülebilir uygulamalar oluşturur. Genel olarak, derleme işlemi Windows, ASP.NET, mobil uygulamalar ve diğerleri gibi birçok farklı proje türlerinde çok benzer. Derleme işlemi ayrıca gibi programlama dillerini benzer C#, Visual Basic, C++ ve F#.
 
-Kodunuzu genellikle oluşturarak hızlı bir şekilde sözdizimi, yanlış yazılmış anahtar sözcükler gibi derleme zamanı hataları belirlemek ve uyuşmazlıkları yazın. Ayrıca hızlı bir şekilde algılayın ve sık sık oluşturma ve kod hata ayıklama sürümlerini çalıştıran mantık hataları ve anlamsal hataları gibi çalışma zamanı hataları düzeltin.
+Kodunuzu genellikle oluşturarak hızlı bir şekilde sözdizimi, yanlış yazılmış anahtar sözcükler gibi derleme zamanı hataları belirlemek ve uyuşmazlıkları yazın. Ayrıca, algılamak ve çalışma zamanı hataları, mantık hataları ve anlamsal hataları gibi oluşturma ve kod hata ayıklama sürümlerini çalıştıran düzeltin.
 
-Başarılı bir derleme, aslında bir doğrulama uygulamanın kaynak kodunu doğru söz dizimini içerir ve kitaplıkları, derlemeler ve diğer bileşenleri için tüm statik başvuruları Çözüldü ' dir. Bunun ardından uygun her ikisinde de çalışması için test edilebilir çalıştırılabilir bir uygulamaya üreten bir [ortam hata ayıklama](../debugger/index.md) ve el ile ve otomatik testler için çeşitli [kod kalitesini doğrulamak](../test/improve-code-quality.md). Uygulamanın tam olarak test sonra müşterilerinize dağıtmak için bir yayın sürümünü ardından derleyebilirsiniz. Bu işlem, giriş için bkz. [izlenecek yol: uygulama oluşturma](../ide/walkthrough-building-an-application.md).
+Uygulamanın kaynak kodunu doğru söz dizimini içerir ve kitaplıkları, derlemeler ve diğer bileşenleri için tüm statik başvuruları çözümlemek başarılı bir derleme doğrular. Çalıştırılabilir bir uygulamaya üretilen, test edilebilirler düzgün hem de çalışması için bir [ortam hata ayıklama](../debugger/index.md) ve el ile ve otomatik testler için çeşitli [kod kalitesini doğrulamak](../test/improve-code-quality.md). Uygulamanın tam olarak test sonra müşterilerinize dağıtmak için bir yayın sürümünü derleyebilirsiniz. Bu işlem, giriş için bkz. [izlenecek yol: uygulama oluşturma](../ide/walkthrough-building-an-application.md).
 
 Bir uygulama oluşturmak için aşağıdaki yöntemlerden herhangi birini kullanabilirsiniz: Visual Studio IDE, MSBuild komut satırı araçları ve Azure işlem hatları:
 
@@ -37,6 +37,9 @@ Bir uygulama oluşturmak için aşağıdaki yöntemlerden herhangi birini kullan
 | Azure işlem hatları | -Bir sürekli tümleştirme/sürekli teslim işlem hattı bir parçası olarak yapı sürecinizi otomatik hale getirin.<br />-Her derleme ile otomatik testler için geçerlidir.<br />-Yapı işlemleri için neredeyse sınırsız bulut tabanlı kaynakların paylaşmayan kullanır.<br />-Yapı iş akışını değiştirin ve ayrıntılı bir şekilde özelleştirilmiş görevleri gerçekleştirmek için yapı etkinlikleri oluşturun.|
 
 Bu bölümdeki belgeler, daha fazla IDE tabanlı yapı işleminin ayrıntılarına gider. Diğer yöntemler hakkında daha fazla bilgi için bkz. [MSBuild](../msbuild/msbuild.md) ve [Azure işlem hatları](/azure/devops/pipelines/index?view=vsts)sırasıyla.
+
+> [!NOTE]
+> Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [derlemek ve Mac için Visual Studio'da oluşturmak](/visualstudio/mac/compiling-and-building).
 
 ## <a name="overview-of-building-from-the-ide"></a>IDE'den oluşturmaya genel bakış
 
@@ -57,3 +60,4 @@ Burada, çeşitli diğer görevleri keşfedebilirsiniz:
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Web sitesi projeleri oluşturma (derleme)](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
+- [Derlemek ve oluşturmak (Mac için Visual Studio)](/visualstudio/mac/compiling-and-building)

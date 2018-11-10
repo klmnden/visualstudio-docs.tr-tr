@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da C# Equals ve GetHashCode metot geçersiz kılmaları oluşturma
+title: Oluşturma C# Equals ve GetHashCode metot geçersiz kılmaları
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9af687eb4b39afdbe9fd34df1aa03f18ce243ef8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ec552e320b0c19c5c05e145fd9c5a4588f31b4c
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903120"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295715"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Equals ve oluşturma Visual Studio'da GetHashCode metot geçersiz kılmaları
 
@@ -36,17 +36,20 @@ Bu kod oluşturma için geçerlidir:
 
 ## <a name="how-to"></a>Nasıl Yapılır Konuları
 
-1. İmlecinizi, tür bildiriminde yerleştirin.
+1. İmlecinizi, tür bildirimi satırında yere yerleştirin.
 
    ![Vurgulanmış kodu](media/overrides-highlight-cs.png)
 
+   > [!TIP]
+   > Yapmak değil çift tür adı seçin veya menü seçeneği kullanılamaz. Yeni imleç yere satıra yerleştirin.
+
 1. Ardından, aşağıdakilerden birini yapın:
 
-   - **Klavye**
-      - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
-   - **Fare**
-      - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
-      - &nbsp; ![Ampul](media/bulb-cs.png) tür bildirimi içeren satırda metin imleci ise, sol kenar boşluğunda görünür simge.
+   - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
+
+   - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
+
+   - &nbsp; ![Tornavida](../media/screwdriver-icon.png) Sol kenar boşluğunda görünür simge.
 
    ![Geçersiz kılmalar Önizleme oluşturma](media/overrides-preview-cs.png)
 
@@ -57,9 +60,9 @@ Bu kod oluşturma için geçerlidir:
     ![Geçersiz kılmalar iletişim oluştur](media/overrides-dialog-cs.png)
 
     > [!TIP]
-    > Üye listesi altındaki onay kutularını kullanarak bu iletişim kutusundan işleçleri oluşturulacak seçebilirsiniz.
+    > İletişim kutusunun alt kısmındaki onay kutusunu kullanarak bu iletişim kutusundan işleçleri oluşturulacak seçebilirsiniz.
 
-   Equals ve GetHashCode geçersiz kılmalar, varsayılan uygulamaları ile oluşturulur.
+   `Equals` Ve `GetHashCode` yöntemleri varsayılan uygulamaları ile oluşturulur.
 
    ![Metot oluştur](media/overrides-result-cs.png)
 

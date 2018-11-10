@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 49e1b465bbc964e962942304d5f8b63f8c5480b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bda1c548b4db5d7f94a1dd85befdff5645460b83
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930719"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295104"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Web performans testine veri kaynağı ekleme
 
@@ -24,7 +24,7 @@ Aynı teste farklı değerler örneğin sağlamak için parametreleri formunuza 
 
  ![Web performans testine veri bağlama](../test/media/web_test_databinding_conceptual.png)
 
- Örnek ASP.NET uygulamasını kullanmak için ekleyeceğiz. Üç *.aspx* sayfaları – varsayılan sayfa, kırmızı sayfa ve mavi sayfa. Varsayılan sayfada kırmızı veya mavi ve bir Gönder düğmesi seçmek için bir radyo denetimi vardır. Diğer iki *.aspx* sayfaları çok basittir. Birinin kırmızı adlı bir etiketi vardır ve diğer mavi adlı bir etiketi vardır. Diğer sayfalardan biri görüntüleriz varsayılan sayfada Gönder'i seçtiğinizde. İndirebileceğiniz [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) örnek ya da yalnızca kendi web uygulamanızla birlikte izleyin.
+ Örnek ASP.NET uygulamasını kullanmak için ekleyeceğiz. Üç *.aspx* sayfaları – varsayılan sayfa, kırmızı sayfa ve mavi sayfa. Varsayılan sayfada kırmızı veya mavi ve bir Gönder düğmesi seçmek için bir radyo denetimi vardır. Diğer iki *.aspx* sayfaları çok basittir. Birinin kırmızı adlı bir etiketi vardır ve diğer mavi adlı bir etiketi vardır. Diğer sayfalardan biri görüntüleriz varsayılan sayfada Gönder'i seçtiğinizde. İndirebileceğiniz [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) örnek ya da yalnızca kendi web uygulamanızla birlikte izleyin.
 
  ![Test edilecek web uygulamasını çalıştırma](../test/media/web_test_databinding_runwebapp.png)
 

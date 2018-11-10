@@ -1,5 +1,5 @@
 ---
-title: Merhaba Dünya | Microsoft Docs
+title: Hello World uzantısı Öğreticisi | Microsoft Docs
 ms.custom: ''
 ms.date: 07/10/2017
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91d9c809d16a3763bed75d5de4c03bd7112c6e8a
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: e2122a98778372690990a75269be2f3087653678
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356762"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349471"
 ---
 # <a name="create-your-first-extension-hello-world"></a>İlk uzantınızı oluşturun: Hello World
 
@@ -30,6 +30,9 @@ Bu süreçte şunları öğreneceksiniz nasıl yapılır:
 Bu örnekte, Visual C# özel menü düğmesi "Deyin. Hello World!" adlı eklemek için kullanacağınız şöyle görünür:
 
 ![Hello World komutu](media/hello-world-say-hello-world.png)
+
+> [!NOTE]
+> Bu makale, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [Mac için Visual Studio genişletilebilirlik kılavuzda](/visualstudio/mac/extending-visual-studio-mac-walkthrough).
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -133,6 +136,6 @@ Yeni özel komuttan bir çıktı görmeniz gerekir, bu durumda ekranın ortasın
 
 Visual Studio genişletilebilirliği ile çalışmanın temel bilgileri artık bildiğinize göre İşte burada daha fazla bilgi edinebilirsiniz:
 
-* [Visual Studio uzantılarını geliştirmeye başlamak](starting-to-develop-visual-studio-extensions.md) -örnekler, öğreticiler. ve uzantınızı yayımlama.
+* [Visual Studio uzantılarını geliştirmeye başlamak](starting-to-develop-visual-studio-extensions.md) -örnekler, öğreticiler. ve uzantınızı yayımlama
 * [Visual Studio 2017 SDK'daki yenilikler](what-s-new-in-the-visual-studio-2017-sdk.md) -Visual Studio 2017'de yeni genişletilebilirlik özellikleri
 * [Visual Studio SDK içinde](internals/inside-the-visual-studio-sdk.md) -Visual Studio genişletilebilirlik ayrıntılarını öğrenin

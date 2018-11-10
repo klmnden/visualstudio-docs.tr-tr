@@ -6,23 +6,22 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: 66f7b33c944ced6ab662cf8e89341be6d7a2fb8b
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: e17a423e9db6826c8cc693e1c75c75bb067a19e8
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624217"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295299"
 ---
 # <a name="debugging-with-xamarin"></a>Xamarin ile hata ayıklama
 
-
 Mac için Visual Studio yerel hata ayıklayıcı bir izin verme hata ayıklama desteği Xamarin.iOS ve Xamarin.Mac Xamarin.Android uygulamaları için sahiptir.
+
 Kullandığı Mac için Visual Studio [ *Mono geçici hata ayıklayıcı*](http://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/), tüm platformlardaki yönetilen kodda hata ayıklamak Mac için Visual Studio izin vererek Mono çalışma zamanı içinde uygulanır.
 
 ## <a name="the-debugger"></a>Hata ayıklayıcı
 
-Mac için Visual Studio Mono geçici hata ayıklayıcı tüm Xamarin uygulamaları yönetilen (C# veya F #) kodunda hata ayıklamak için kullanır. Mono geçici hata ayıklayıcı farklıdır; Mono çalışma zamanına yerleşik birlikte operative bir hata ayıklayıcı olması normal hata ayıklayıcıları oluşturulan kodun ve Mono çalışma zamanı hata ayıklama deneyimini sağlamak için IDE ile birlikte çalışır. Mono çalışma zamanı daha fazla bilgi edinebilirsiniz kablo protokolü aracılığıyla hata ayıklama işlevselliği kullanıma sunan [Mono belgelerinde](http://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
-
+Visual Studio hata ayıklamak için Mono geçici hata ayıklayıcı Mac kullanan yönetilen (C# veya F#) tüm Xamarin uygulamaları kod. Mono geçici hata ayıklayıcı farklıdır; Mono çalışma zamanına yerleşik birlikte operative bir hata ayıklayıcı olması normal hata ayıklayıcıları oluşturulan kodun ve Mono çalışma zamanı hata ayıklama deneyimini sağlamak için IDE ile birlikte çalışır. Mono çalışma zamanı daha fazla bilgi edinebilirsiniz kablo protokolü aracılığıyla hata ayıklama işlevselliği kullanıma sunan [Mono belgelerinde](http://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
 
 Sabit hata ayıklayıcıları gibi [LLDB]( http://lldb.llvm.org/index.html) veya [GDB]( https://www.gnu.org/software/gdb/), bilgi veya hata ayıklanan programın işbirliği olmadan bir programı denetleme, ancak yine de olay Xamarin uygulamalarında hata ayıklama sırasında yararlı olabilir, Yerel iOS veya Android kod hatalarını ayıklamak gerekir.
 
@@ -38,11 +37,9 @@ IDE içinde bir kesme noktası ayarlamak için düzenleyicinizi nerede kesmek is
 
 ![Kenar boşluğu kesme noktası ayarlama](media/debugging-image0.png)
 
-
 Kodunuzda giderek ayarlanan kesme noktaları görüntüleyebileceğiniz **kesme noktaları paneli**:
 
 ![Kesme noktaları listesi](media/debugging-image0a.png)
-
 
 ## <a name="start-debugging"></a>Hata Ayıklamayı Başlat
 
@@ -62,17 +59,13 @@ Hata ayıklama araçları, nesneleri değerlerini incelemek için kullanılan gi
 
 Ayrıca ayarlayabilirsiniz koşullar altında bir kesme noktası ortaya dikte kuralları, bu ekleme olarak bilinen bir *koşullu kesme noktası*. Koşullu kesme noktası ayarlamak için erişim **kesme noktası Özellikler penceresi**, hangi yapılabilir iki yolla:
 
-
 * Yeni bir koşullu kesme noktası eklemek için bir kesme noktası ayarlamak istediğiniz kod için satır numarası solundaki Düzenleyici kenar sağ tıklayın ve yeni kesme noktası seçin:
-
 
  ![Kesme noktası bağlam menüsü](media/debugging-image4.png)
 
 * Varolan bir kesme noktası için bir koşul eklemek için kesme noktasına sağ tıklatın ve **kesme noktası özelliklerini**, veya **kesme noktaları paneli**, aşağıda gösterilen kesme noktasını Düzenle düğmesini seçin:
 
-
  ![Kesme noktaları panelinde mevcut kesme noktasını Düzenle](media/debugging-image5.png)
-
 
 Daha sonra gerçekleşecek şekilde kesme noktası altında istediğiniz koşulun girebilirsiniz:
 
@@ -91,12 +84,16 @@ Dört düğme şunlardır:
 *   **İçine adımla** -Bu ayrıca sonraki kod satırına yürütülür. Sonraki satır bir işlev çağrısı ise, içine adımla işlevin ilk satır, satır satır işlevi, hata ayıklamaya devam etmenize imkan sağlar durdurur. Sonraki satır bir işlev değilse, aynı Step Over olarak davranır.
 *   **Step Out** -bu satıra burada geçerli işlev çağrıldı döndürür.
 
-
 ## <a name="debugging-monos-class-libraries"></a>Mono'nın sınıf kitaplıklarında hata ayıklama
+
 Mono'nın sınıf kitaplıkları için kaynak kodu ile Xamarin ürünleri gönderin ve hata ayıklayıcı'dan tek adım bu şeyleri nasıl başlık altında çalışmakta olduğunuz incelemek için kullanabilirsiniz.
 
 Bu özellik, hata ayıklama sırasında daha fazla bellek tüketir olduğundan, varsayılan olarak kapalıdır.
 
 Bu özelliği etkinleştirmek için Gözat **Mac için Visual Studio > Tercihler > hata ayıklayıcısı** olduğundan emin olun "**yalnızca; proje kodu hatalarını ayıklama Çerçeve kodunu adımlamadan adım değil.** " seçenek **seçilmemiş**, aşağıda gösterildiği gibi:
 
- ![Framework kod seçeneğe kodlarındaki](media/debugging-image8.png)
+![Framework kod seçeneğe kodlarındaki](media/debugging-image8.png)
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [(Windows üzerinde) Visual Studio'da hata ayıklama](/visualstudio/debugger/)

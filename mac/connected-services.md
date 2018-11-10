@@ -5,12 +5,12 @@ ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: conceptdev
 ms.author: crdun
 ms.date: 04/04/2018
-ms.openlocfilehash: bcc09fab45bf9580349675a65150319c34236f97
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 463b002ed2a511c47b518dba756f3ca4c6a5ca35
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624075"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295182"
 ---
 # <a name="connected-services-walkthrough"></a>Bağlı Hizmetleri gözden geçirme
 
@@ -18,8 +18,7 @@ Hizmet eklemek için projenizin bırakmak zorunda kalmamak için bağlı hizmetl
 
 Bu izlenecek yol, bulut veri depolama, kimlik doğrulama ve platformlar arası Xamarin.Forms taşınabilir sınıf kitaplığı (PCL) uygulamasına anında iletme bildirimleri bir Azure arka uç hizmetini nasıl ekleyeceğiniz gösterilir.
 
-
-1.  Başlangıç çift tıklayarak **bağlı hizmetler** getirir çözüm düğümünde **Hizmetleri galeri**.
+1. Başlangıç çift tıklayarak **bağlı hizmetler** getirir çözüm düğümünde **Hizmetleri galeri**.
   Uygulama türü için tüm kullanılabilir hizmetlerin listesini budur. Bir hizmet seçin (gibi **Azure App Service ile mobil arka uç**) üzerine tıklayarak.
 
     [![Mac için Visual Studio bağlı Hizmetleri düğümünde](media/connected-services-image001-sml.png "Mac için Visual Studio bağlı hizmetler düğümü")](media/connected-services-image001.png#lightbox)
@@ -71,4 +70,8 @@ Yeni bir hizmet için aşağıdaki parametreler gereklidir:
 -   **Kaynak grubu** – bir yol veya bir proje için tüm Azure kaynaklarını düzenleme. Var olanı kullan veya yeni bir tane oluşturmak için seçeneği. Bu ilk Azure hizmetinizi ise, yeni bir tane oluşturun.
 -   **Hizmet planı** – konum ve onu kullanan tüm kaynakların maliyetini belirler. Var olanı kullan veya yeni bir tane oluşturmak için seçeneği. Bu ilk Azure hizmetinizi ise, varsayılan kullanın veya ücretsiz katmanda (F1) yeni bir tane oluşturun.
 
-Ziyaret [Azure App Service belgeleri](https://azure.microsoft.com/documentation/learning-paths/appservice-mobileapps/) daha fazla bilgi için.
+Ziyaret [Mobile apps belgeleri](/azure/app-service-mobile/) daha fazla bilgi için.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Bağlı hizmetler (Windows için Visual Studio)](/visualstudio/azure/vs-azure-tools-connected-services-storage)

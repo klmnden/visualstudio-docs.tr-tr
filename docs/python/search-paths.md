@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e3a52579a5b22308c4255cbe41617bc37f47bbab
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 92185b224af50dd5cf125d62282f1e8f7b951bc6
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219984"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349006"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio, Python arama yollarını nasıl kullanır?
 
@@ -36,7 +36,7 @@ Bir arama yolu eklemek için sağ **arama yollarını** öğesi **Çözüm Gezgi
 
 Aynı arama yollarını düzenli olarak kullandığınız ve içeriği genellikle değiştirmeyin, site paket klasörünüze yüklemek için daha verimli olabilir. Arama yolu ardından analiz edilir ve IntelliSense veritabanında depolanan, her zaman istenen bir ortam ile ilişkili olduğu ve her projeye eklenecek bir arama yolu gerektirmez.
 
-### <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio'da Python ortamlarını yönetme](managing-python-environments-in-visual-studio.md)
 - [Proje için yorumlayıcıyı seçme](selecting-a-python-environment-for-a-project.md)

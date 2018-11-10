@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 87a70451799c7fc3a15eb14a9efbb0233ea2b154
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: ec3f3be069e92d52071a6b40857f7fac46e8d3e5
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220153"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51221054"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Evrensel Windows uygulamaları HTML UI yanıtlama hızını çözümleme
 Bu konu, Evrensel Windows uygulamaları için bir performans aracı kullanıcı Arabirimi yanıtlama hızı Profiler'ı kullanarak uygulamalarınızın performans sorunlarını yalıtmak açıklar.  
@@ -351,11 +351,11 @@ if (performance.mark && performance.measure) {
   
 ## <a name="additional-information"></a>Ek bilgiler  
   
--   İzleme [bu videoyu](http://channel9.msdn.com/Events/Build/2013/3-316) kullanıcı Arabirimi yanıtlama hızı Profiler hakkında derleme 2013 konferansına ait.  
+-   İzleme [bu videoyu](https://channel9.msdn.com/Events/Build/2013/3-316) kullanıcı Arabirimi yanıtlama hızı Profiler hakkında derleme 2013 konferansına ait.  
   
--   JavaScript kullanarak Windows için oluşturulan UWP uygulamaları için performans ipuçları okuyun. Daha fazla bilgi için bkz. [JavaScript kullanarak UWP uygulamaları için en iyi performans](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
+-   JavaScript kullanarak Windows için oluşturulan UWP uygulamaları için performans ipuçları okuyun. Daha fazla bilgi için bkz. [JavaScript kullanarak UWP uygulamaları için en iyi performans](/previous-versions/windows/apps/hh465194\(v\=win.10\)).  
   
--   Tek iş parçacıklı kod yürütme modeli ve performans ile ilgili daha fazla bilgi için bkz. [kodu yürüten](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
+-   Tek iş parçacıklı kod yürütme modeli ve performans ile ilgili daha fazla bilgi için bkz. [kodu yürüten](/previous-versions/windows/apps/hh781217\(v\=win.10\)).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Araçlar profil oluşturmaya ilk bakış](../profiling/profiling-feature-tour.md)

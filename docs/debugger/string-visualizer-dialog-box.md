@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 689889e98a5a9b69a49e73ccea73f30fc3c25249
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e2204f10711db96033976cf7b4f7bd3639daf422
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274319"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349094"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Visual Studio'da dize görselleştiricide dizelerini görüntüle
 
@@ -43,9 +43,9 @@ Dize Görselleştirici'ni açmak için hata ayıklama sırasında duraklatılmı
 
 ## <a name="view-string-visualizer-data"></a>Dize Görselleştirici verileri görüntüle
 
-Dize Görselleştirici penceresinde **ifade** alan değişkenin veya ifadenin, üzerine geldiğinizde gösterir ve **değer** alan dize değerini gösterir. 
+Dize Görselleştirici penceresinde **ifade** alan değişkenin veya ifadenin, üzerine geldiğinizde gösterir ve **değer** alan dize değerini gösterir.
 
-Boş bir **değer** seçilen görselleştiricisi dize tanıyamaz anlamına gelir. Örneğin, **XML Görselleştirici** boş gösterir **değer** bir metin dizesiyle XML etiket yok veya bir JSON dizesi. 
+Boş bir **değer** seçilen görselleştiricisi dize tanıyamaz anlamına gelir. Örneğin, **XML Görselleştirici** boş gösterir **değer** bir metin dizesiyle XML etiket yok veya bir JSON dizesi.
 
 Seçilen görselleştiricisi tanıyamaz dizeler görüntülemek için seçin **metin görselleştiricisi**. **Metin görselleştiricisi** düz metin gösterir.
 
@@ -67,5 +67,7 @@ Seçilen görselleştiricisi tanıyamaz dizeler görüntülemek için seçin **m
 
 ![HTML dize Görselleştirici](../debugger/media/dbg-string-visualizers-html.png "HTML dize Görselleştirici")
 
-## <a name="see-also"></a>Ayrıca bkz.  
- [Özel görselleştiriciler (C#, Visual Basic) oluşturma](../debugger/create-custom-visualizers-of-data.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Özel görselleştiriciler (C#, Visual Basic) oluşturma](../debugger/create-custom-visualizers-of-data.md)
+- [Mac için Visual Studio'da veri görselleştirmeleri](/visualstudio/mac/data-visualizations)

@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28b233f360e4a5fb066ae41b288dc0cdb2d610f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e81462b2ccb5d29a0090623d72cf78183abd6917
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820468"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348753"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>ClickOnce ile COM bileşenleri dağıtma
 Eski COM bileşenlerinin dağıtımını, geleneksel olarak zor bir görev olmuştur. Bileşenleri, genel olarak kaydedilmesi gerekir ve bu nedenle çakışan uygulamalar arasında istenmeyen yan etkilere neden olabilir. Bileşenler bir uygulama için tamamen yalıtılmış veya yan yana uyumludur. çünkü bu durum genellikle .NET Framework uygulamalarında bir sorun değildir. Visual Studio yalıtılmış COM bileşenlerini Windows XP ya da daha yüksek işletim sistemi dağıtmanıza olanak tanır.  
   
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .NET uygulamaları dağıtmak için kolay ve güvenli bir mekanizma sağlar. Ancak, uygulamalarınızı eski COM bileşenleri kullanıyorsanız, bunları dağıtmak için ek adımlar uygulamanız gerekir. Bu konuda, yalıtılmış COM bileşenlerini dağıtmak ve yerel bileşenlerin (örneğin, Visual Basic 6.0 veya Visual C++) başvuru açıklar.  
   
- Yalıtılmış COM bileşenleri dağıtma ile ilgili daha fazla bilgi için bkz. "ile uygulama dağıtımını basitleştirin [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ve Registration-Free COM" konumunda [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Yalıtılmış COM bileşenleri dağıtma ile ilgili daha fazla bilgi için bkz: [ClickOnce ve Registration-Free COM ile uygulama dağıtımını basitleştirmeye](https://web.archive.org/web/20050326005413/msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).
   
 ## <a name="registration-free-com"></a>Kayıtsız COM  
  Kayıtsız COM dağıtımı ve yalıtılmış COM bileşenlerini etkinleştirme için yeni bir teknolojidir. Bileşenin tüm tür kitaplığı ve genellikle bir bildirim adlı bir XML dosyasına sistem kayıt defterine yüklenir kayıt bilgileri koyarak çalıştığı uygulama ile aynı klasörde depolanır.  

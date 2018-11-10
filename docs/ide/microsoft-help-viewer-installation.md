@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 512a573a0d04f9459080442a2b2b01837ac37229
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: caba938f491855695ca94e5c8f4765d4ecfa8da8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942759"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348155"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Microsoft Yardım Görüntüleyicisi'ni yükleme
 
@@ -39,7 +39,7 @@ Aracılığıyla kolayca Microsoft Yardım Görüntüleyicisi'ni yüklemek için
 
    ![Hızlı Başlatma kutusu](media/help_viewer_quick_launch.png)
 
-1. Adlı sonucu seçin **Yardım Görüntüleyicisi'ni (Indiviual bileşeni)**.
+1. Adlı sonucu seçin **Yardım Görüntüleyicisi'ni (ayrı ayrı bileşen)**.
 
 1. Açılan iletişim kutusunda, seçmek **yükleme** düğmesi.
 

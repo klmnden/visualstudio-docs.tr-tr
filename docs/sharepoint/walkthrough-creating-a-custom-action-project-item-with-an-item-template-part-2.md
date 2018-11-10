@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 19792a9804072e7c6ade836b408951e2cfadd070
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c37ab6f42be8e363dcba8a3e2aa6ef78816bff0
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910972"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296248"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>İzlenecek yol: bir öğe şablonu, bölüm 2 ile özel bir eylem proje öğesi oluşturma
   Özel bir SharePoint proje öğesi türünü tanımlar ve Visual Studio'da bir öğe şablonunu ilişkilendirmek sonra şablon için bir sihirbaz sağlamak isteyebilirsiniz. Sihirbaz, şablonunuzu yeni bir proje öğesi örneğini bir projeye eklemek için kullandıkları, kullanıcılardan bilgi toplamak için kullanabilirsiniz. Topladığınız bilgiler, proje öğesini başlatmak için kullanılabilir.  
@@ -306,7 +306,7 @@ ms.locfileid: "49910972"
   
 13. İçinde **açıklama** kutusuna **SharePoint Geliştirici Merkezi Web sitesi açılır**.  
   
-14. İçinde **URL** kutusuna **http://msdn.microsoft.com/sharepoint/default.aspx**ve ardından **son** düğmesi.  
+14. İçinde **URL** kutusuna **https://docs.microsoft.com/sharepoint/dev/** ve ardından **son** düğmesi.  
   
      Visual Studio adlı bir öğe ekler **CustomAction1** açar ve proje için *Elements.xml* düzenleyicideki dosyada. Doğrulayın *Elements.xml* sihirbazda belirttiğiniz değerleri içerir.  
   
@@ -327,7 +327,7 @@ ms.locfileid: "49910972"
   
      **Listesi ayarları** sayfası görüntülenir.  
   
-4.  Altında **iletişimleri** sayfanın üst kısımda başlığı seçin **SharePoint Geliştirici Merkezi** bağlantı, tarayıcının Web sitesi açılır doğrulayın http://msdn.microsoft.com/sharepoint/default.aspxve sonra Tarayıcıyı kapatın.  
+4.  Altında **iletişimleri** sayfanın üst kısımda başlığı seçin **SharePoint Geliştirici Merkezi** bağlantı, tarayıcının Web sitesi açılır doğrulayın https://docs.microsoft.com/sharepoint/dev/ve sonra Tarayıcıyı kapatın.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Geliştirme bilgisayarını temizleme
  Proje öğesi testi tamamladıktan sonra proje öğesi şablonu Visual Studio'nun deneysel örneği kaldırın.  

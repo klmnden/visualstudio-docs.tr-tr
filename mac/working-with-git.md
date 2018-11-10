@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
-ms.openlocfilehash: bb5a91929238452041a67942cff99973637d51af
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 10d5b34ece7d093a42bafc1f0e410b670dd342f1
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624185"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296456"
 ---
 # <a name="working-with-git"></a>Git ile çalışma
 
@@ -24,7 +24,7 @@ Aşağıdaki resimde, sürüm denetimi menü öğesi tarafından Mac için Visua
 
 ![Sürüm denetimi menü öğesi](media/version-control-gitVersionControlMenu.png)
 
-## <a name="push-and-pull"></a>Gönderme ve çekme 
+## <a name="push-and-pull"></a>Gönderme ve çekme
 
 Gönderme ve çekme Git içinde en yaygın kullanılan eylemleri ikisidir. Diğer kişilerin Uzak depoya yapmış olduğunuz değişiklikleri eşitlemek için **çekme** buradan. Bu seçerek Mac için Visual Studio'da yapılır **sürüm denetimi > güncelleştirme çözümünü**.
 
@@ -54,11 +54,11 @@ Bu, aşağıdaki eylemleri izin ver:
 
     ![Günlük Sekmesi](media/version-control-gitLog.png)
 
-* **Birleştirme** -iş işleme alırken bir birleştirme çakışması varsa, bu kullanılabilir. Bu, siz ve böylece hem kod bölümlerini düzgün bir şekilde birleştirmek diğer geliştirici, tarafından yapılan değişiklikleri görsel bir temsilini gösterir. 
+* **Birleştirme** -iş işleme alırken bir birleştirme çakışması varsa, bu kullanılabilir. Bu, siz ve böylece hem kod bölümlerini düzgün bir şekilde birleştirmek diğer geliştirici, tarafından yapılan değişiklikleri görsel bir temsilini gösterir.
 
-## <a name="switching-branches"></a>Dallar arasında geçiş 
+## <a name="switching-branches"></a>Dallar arasında geçiş
 
-Varsayılan olarak, bir depoda oluşturduğunuz ilk dalı olarak bilinen **ana** dal. Hiç teknik ana dal ile diğer arasında farklı bir şey, ancak çoğunlukla geliştirme takımları 'Canlı' veya 'üretim' dalı olarak zorlayıcı bir ana daldır.
+Varsayılan olarak, bir depoda oluşturduğunuz ilk dalı olarak bilinen **ana** dal. Hiç teknik ana dal ile diğer arasında farklı bir şey, ancak çoğunlukla geliştirme takımları 'Canlı' veya 'üretim' dalı olarak zorlayıcı bir ana daldır.
 
 Bağımsız bir satırı geliştirme ana (veya başka bir daldan, sorgunuzun) kapalı dallara ayırma tarafından oluşturulabilir. Bu ana dala bir noktada yeni bir sürümü 'Canlı' nedir bağımsız olarak geliştirme için izin verme zamanında sağlar Dallar bu şekilde kullanılması genellikle yazılım geliştirme özellikleri için kullanılır
 
@@ -80,7 +80,7 @@ Geçerli dal proje adı yanında çözüm panelinde bakın:
 
  ![Çözüm panelinde görüntülenen geçerli dal](media/version-control-gitBranchName.png)
 
-## <a name="reviewing-and-committing"></a>Gözden geçirme ve işleme 
+## <a name="reviewing-and-committing"></a>Gözden geçirme ve işleme
 
 Dosyalardaki değişiklikleri gözden geçirmek için değişiklikleri, sorumluyu günlük kullanın ve bu konunun önceki kısımlarında gösterilen her bir belge sekmelerinde birleştirin.
 
@@ -90,8 +90,12 @@ Göz atarak, projenizdeki tüm değişiklikleri gözden **sürüm denetimi > İn
 
 Bu, tüm değişiklikleri geri al, bir düzeltme eki oluşturma veya işleme seçeneği projenin her bir dosyadaki izlenmesini sağlar.
 
-Dosya uzak depoya kaydetmeye basın **işleme...** bir işleme iletisi girin ve Kaydet düğmesi ile onaylayın:
+Dosya uzak depoya kaydetmeye basın **işleme**bir işleme iletisi girin ve Kaydet düğmesi ile onaylayın:
 
 ![Dosya işleniyor](media/version-control-gitCommit.png)
 
 Değişikliklerinizi tamamladıktan sonra bunları diğer kullanıcıların görebileceği izin vermek için Uzak depoya gönderin.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+* [Visual Studio 2017 ve Azure depoları Git ile kod paylaşma](/azure/devops/repos/git/share-your-code-in-git-vs-2017)

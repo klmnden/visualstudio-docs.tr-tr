@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3de51b0c984522810b174bdb1784420620ba037f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a895124effa8155ab2edb4652962b605926234d5
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858485"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349484"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Başvuru eklerken NuGet karşı uzantı SDK kullanma
 
-Bir paketi, Visual Studio için NuGet uzantısı ya da bir yazılım geliştirme seti (SDK) kullanarak Visual Studio projeleri içinde kullanılmaya sağlayabilir. Arasındaki benzerlikleri ve farkları iki mekanizma açıklayarak, bu konuda en iyi göreviniz için seçmenize yardımcı olabilir.
+NuGet veya bir yazılım geliştirme seti (SDK) kullanarak Visual Studio projeleri içinde kullanım için bir paket sağlayabilirsiniz. Arasındaki benzerlikleri ve farkları iki mekanizma açıklayarak, bu makalede, görev için en iyi seçmenize yardımcı olabilir.
 
 - NuGet, bir proje çözümde kitaplıkları ekleme işlemini basitleştiren bir açık kaynak, paket Yönetimi sistemidir. Daha fazla bilgi için [NuGet belgeleri](/nuget).
 
@@ -27,7 +27,6 @@ Bir paketi, Visual Studio için NuGet uzantısı ya da bir yazılım geliştirme
 ## <a name="which-mechanism-should-i-use"></a>Hangi mekanizması kullanmalıyım?
 
 Aşağıdaki tablo başvuru özelliklerinin bir SDK'sı NuGet başvuru özellikleriyle karşılaştırmanıza yardımcı olur.
-
 
 | Özellik | SDK desteği | SDK notları | NuGet desteği | NuGet notları |
 | - | - | - |---------------| - |
@@ -71,3 +70,4 @@ Aşağıdaki tablo başvuru özelliklerinin bir SDK'sı NuGet başvuru özellikl
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Bir projedeki başvuruları yönetme](../ide/managing-references-in-a-project.md)
+- [(Mac için Visual Studio) bir projedeki başvuruları yönetme](/visualstudio/mac/managing-references-in-a-project)

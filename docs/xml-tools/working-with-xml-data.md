@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fff2c2e16b86e32e561348c4f1cdc870f452858b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 579d535348a8f5f2b7c728aa4d8ad5fbb434bdda
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176193"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349354"
 ---
 # <a name="working-with-xml-data"></a>XML verileriyle çalışma
 
@@ -50,11 +50,11 @@ Visual Studio hata ayıklama XSLT stil sayfaları destekler. Hata ayıklayıcıy
 
 [XSLT hata ayıklama](../xml-tools/debugging-xslt.md) stil sayfaları Visual Studio hata ayıklayıcısını kullanarak hata ayıklama anlatılmaktadır.
 
-[XML standartları başvurusu](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) XML, belge türü tanımı (DTD'nin), XML Şeması Tanım Dili (XSD) ve XSLT de dahil olmak üzere, XML teknolojileri hakkında bilgi sağlar.
+[XML standartları başvurusu](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) XML, belge türü tanımı (DTD'nin), XML Şeması Tanım Dili (XSD) ve XSLT de dahil olmak üzere, XML teknolojileri hakkında bilgi sağlar.
 
 [Oluşturma ve Visual Studio'da veri kümeleri yapılandırma](../data-tools/create-and-configure-datasets-in-visual-studio.md) veri kümeleri oluşturmak için tasarım zamanı araç bir açıklama sağlar.
 
-[XML web Hizmetleri, yönetilen kodda](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) oluşturun ve XML web hizmetleri dağıtma ve XML web hizmetlerine erişmek nasıl ele alınmaktadır.
+[XML web Hizmetleri, yönetilen kodda](/previous-versions/visualstudio/visual-studio-2008/xy59yt45\(v\=vs.90\)) oluşturun ve XML web hizmetleri dağıtma ve XML web hizmetlerine erişmek nasıl ele alınmaktadır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 3aea39862ee2221454a337d7c50defd41319623b
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: ff5a7d79bf59f841aaf1957095cb2ae0e53a46c7
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42623972"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295117"
 ---
 # <a name="common-keyboard-shortcuts-in-visual-studio-for-mac"></a>Mac için Visual Studio'da ortak klavye kısayolları
 
@@ -18,17 +18,17 @@ ms.locfileid: "42623972"
 
 Bu komut, bağlamsal kod oluşturur:
 
- `⌘ + 1`
+`⌘ + 1`
 
 ![Seçili sembol için ilgili kod oluşturma için seçeneklerle bir paneli görüntülenir.](media/keyboard-shortcuts-image8.png)
 
 ## <a name="search-files-symbols-and-commands"></a>Arama dosyaları, simgeler ve komutları
 
-`control + .` 
+`control + .`
 
-## <a name="autocomplete"></a>Otomatik Tamamlama 
+## <a name="autocomplete"></a>Otomatik Tamamlama
 
-`control + /` 
+`control + /`
 
 ## <a name="quick-fixes-and-actions"></a>Hızlı düzeltmeler ve Eylemler
 
@@ -50,7 +50,7 @@ Hızlı dosyaları arasında geçişi sağlar:
 
 ## <a name="move-lines-around-in-editor"></a>Düzenleyicide satırları gezinme
 
-`alt + up/down` 
+`alt + up/down`
 
 Kullanma **alt + yukarı** geçerli satırı veya geçerli seçili satırları Taşı ve kullanmak için komutu **alt + aşağı** satırları Aşağı Taşı komutu. Dil eklentisi destekliyorsa, satır içine ve dışına kapsamı'na taşıdığınızda bağlam eşleştirilecek yeniden girintilenecek.
 
@@ -71,3 +71,7 @@ Giriş işaretini başında veya satırın sonuna taşır:
 Word, alt ifadeler, deyim ve satır üye seçimi mantıksal şekilde genişletir:
 
 `alt + shift + up` Seçilecek `alt + shift + down` seçimini kaldırmak için
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [(Windows üzerinde) Visual Studio'da klavye kısayolları](/visualstudio/ide/tips-and-tricks-for-visual-studio)

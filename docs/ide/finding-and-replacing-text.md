@@ -33,12 +33,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f6359585f13a4086a332d8a4dbcc3c435aeaa26
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 6120d1ece56e24712fd1217090159ec627f88d61
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384246"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349107"
 ---
 # <a name="find-and-replace-text"></a>Metin bulma ve değiştirme
 
@@ -93,6 +93,9 @@ Seçerek bileşen kümelerini arama Kapsamınız olarak tanımlayabilirsiniz **�
 
 ## <a name="multi-caret-selection"></a>Birden çok giriş işaretini seçimi
 
+> [!NOTE]
+> Bu bölüm, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [Blok seçimi](/visualstudio/mac/block-selection).
+
 **Yeni Visual Studio 2017 sürüm 15,8**
 
 Kullanım *birden çok giriş işaretini seçimi* aynı anda iki veya daha fazla yerde aynı düzenleme yapma. Örneğin, aynı metni ekleyin veya aynı anda birden fazla konumda mevcut metni değiştirme.
@@ -130,3 +133,4 @@ Bazı komutlar da kullanılabilir **Düzenle** menüsü altında **birden çok d
 
 - [Visual Studio'da normal ifadeler kullanma](../ide/using-regular-expressions-in-visual-studio.md)
 - [Visual Studio'da kodu yeniden düzenleyin](../ide/refactoring-in-visual-studio.md)
+- [Blok seçimi (Mac için Visual Studio)](/visualstudio/mac/block-selection)

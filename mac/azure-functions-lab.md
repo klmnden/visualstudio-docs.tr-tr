@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 80e6f3291f0f0fdc26883d8f98e90e296ee0c7c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919747"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296443"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Öğretici: Azure işlevleri ile çalışmaya başlama
 
@@ -44,12 +44,10 @@ Bu laboratuvarda, Mac için Visual Studio kullanarak Azure işlevleri geliştirm
 
     ![adlandırma ve, azure işlev projesi oluşturma](media/azure-functions-lab-image2.png)
 
-5. Ait düğümleri genişletebilirsiniz **çözüm bölmesi**. Varsayılan proje şablonu ve Newtonsoft.Json paketini yanı sıra Azure WebJobs paketleri çeşitli NuGet başvurular içerir. 
+5. Ait düğümleri genişletebilirsiniz **çözüm bölmesi**. Varsayılan proje şablonu ve Newtonsoft.Json paketini yanı sıra Azure WebJobs paketleri çeşitli NuGet başvurular içerir.
 
-     Üç dosya vardır:  
-        - **Host.JSON** konak genel yapılandırma seçenekleri tanımlamak için  
-        - **Local.Settings.JSON** hizmet ayarlarını yapılandırmak için.  
-        - Proje şablonu ayrıca bir varsayılan HttpTrigger oluşturur. Bu Laboratuvar için silmeniz gerekir **HttpTrigger.cs** proje dosyası.  
+     Ayrıca üç dosya vardır:- **host.json** genel tanımlamak için - konak yapılandırma seçenekleri **local.settings.json** hizmet ayarlarını yapılandırmak için.
+        - Proje şablonu ayrıca bir varsayılan HttpTrigger oluşturur. Bu Laboratuvar için silmeniz gerekir **HttpTrigger.cs** proje dosyası.
 
     Açık **local.settings.json**. İki boş bir bağlantı dizesi ayarlarını sahip olmak için varsayılan olarak ayarlanır.
 
@@ -58,7 +56,7 @@ Bu laboratuvarda, Mac için Visual Studio kullanarak Azure işlevleri geliştirm
 ## <a name="exercise-2-creating-an-azure-storage-account"></a>Alıştırma 2: bir Azure depolama hesabı oluşturma
 
 1. Adresindeki Azure hesabınızda oturum [ https://portal.azure.com ](https://portal.azure.com).
- 
+
 1. Altında **Sık Kullanılanlar** seçin ekranın sol tarafında bulunan, bölümünde **depolama hesapları**:
 
     ![Sık kullanılanları bölümü gösterildiği Azure portalının depolama hesapları öğesi](media/azure-functions-lab-image4.png)
@@ -91,7 +89,7 @@ Bu laboratuvarda, Mac için Visual Studio kullanarak Azure işlevleri geliştirm
 
 ## <a name="example-3-creating-and-debugging-an-azure-function"></a>Örnek 3: Oluşturma ve bir Azure işlevi hata ayıklama
 
-1. Artık kod eklemeye başlamak hazırsınız. .NET sınıf kitaplığı ile çalışırken, Azure işlevleri statik yöntemler olarak eklenir. Gelen **çözüm bölmesi**, sağ **Azureişlevleri** proje düğümünü seçip alt **Ekle > işlev Ekle...** :
+1. Artık kod eklemeye başlamak hazırsınız. .NET sınıf kitaplığı ile çalışırken, Azure işlevleri statik yöntemler olarak eklenir. Gelen **çözüm bölmesi**, sağ **Azureişlevleri** proje düğümünü seçip alt **Ekle > işlev Ekle**:
 
     ![İşlev seçeneği Ekle](media/azure-functions-lab-image11.png)
 
@@ -121,8 +119,8 @@ Bu laboratuvarda, Mac için Visual Studio kullanarak Azure işlevleri geliştirm
         return x + y;
     }
     ```
-1. Parça parça yöntemi tanımıyla atalım. 
-    
+1. Parça parça yöntemi tanımıyla atalım.
+
     İlk şey göreceksiniz **FunctionName** özniteliği, bu yöntem bir Azure işlevi olarak işaretler. Öznitelik Genel işlevin adını belirtir. Öznitelik adı gerçek yöntemi adıyla eşleşmesi gerekmez.
 
     ![Vurgulanan FunctionName özniteliği ile yeni çalışma yöntemi](media/azure-functions-lab-image13.png)
@@ -157,7 +155,7 @@ Bu laboratuvarda, Mac için Visual Studio kullanarak Azure işlevleri geliştirm
 
     ![Azure işlev API URL'si](media/azure-functions-lab-image20.png)
 
-1. Kesme noktası hemen tetiklemesi gereken. Web isteği işleve yönlendirilir ve artık ayıklanabilir. Fare üzerindeyken **x** değerini görmek için değişkeni. 
+1. Kesme noktası hemen tetiklemesi gereken. Web isteği işleve yönlendirilir ve artık ayıklanabilir. Fare üzerindeyken **x** değerini görmek için değişkeni.
 
     ![Tetiklenen kesme noktası](media/azure-functions-lab-image21.png)
 
@@ -306,7 +304,7 @@ Bu laboratuvarda, Mac için Visual Studio kullanarak Azure işlevleri geliştirm
 
 ## <a name="exercise-5-working-with-azure-storage-tables"></a>Alıştırma 5: Azure depolama tablolarla çalışma
 
-Genellikle, oluşturduğunuz hizmet ne biz şu ana kadar oluşturulmuş ve önemli miktarda zaman ve/veya yürütülecek altyapı gerektiren daha çok daha karmaşık olabilir. O durumda, bu kaynaklar kullanılabilir olduğunda işlenmek üzere kuyruğa alınan isteklerini kabul etmek etkili bulabilirsiniz, hangi Azure işlevleri için destek sağlar. Diğer durumlarda, veri merkezi olarak depolamak isteyebilirsiniz. Azure depolama tabloları, hızlı bir şekilde gerçekleştirmenize olanak tanır. 
+Genellikle, oluşturduğunuz hizmet ne biz şu ana kadar oluşturulmuş ve önemli miktarda zaman ve/veya yürütülecek altyapı gerektiren daha çok daha karmaşık olabilir. O durumda, bu kaynaklar kullanılabilir olduğunda işlenmek üzere kuyruğa alınan isteklerini kabul etmek etkili bulabilirsiniz, hangi Azure işlevleri için destek sağlar. Diğer durumlarda, veri merkezi olarak depolamak isteyebilirsiniz. Azure depolama tabloları, hızlı bir şekilde gerçekleştirmenize olanak tanır.
 
 1. Aşağıda sınıfa eklemek **Add.cs**. Ad alanı içinde ancak varolan bir sınıf dışında gitmeniz gerekir.
 
@@ -332,7 +330,7 @@ Genellikle, oluşturduğunuz hizmet ne biz şu ana kadar oluşturulmuş ve önem
         TraceWriter log)
     {
         log.Info($"Processing {x} + {y}");
-    
+
         return new TableRow()
         {
             PartitionKey = "sums",
@@ -353,7 +351,7 @@ Genellikle, oluşturduğunuz hizmet ne biz şu ana kadar oluşturulmuş ve önem
 
 1. Aynı URL'ye isteği yenilemek için tarayıcıya dönün. Bu süre bir hata görürsünüz **işlem** yöntemi. Zaten var olan bir bölüm ve satır tuş bileşimini kullanarak Azure tablo depolama tablosuna satır eklemek kod çalışıyor olmasıdır.
 
-    ``` 
+    ```
     System.Private.CoreLib: Exception while executing function: Process. Microsoft.Azure.WebJobs.Host: Error while handling parameter $return after function returned:. Microsoft.Azure.WebJobs.Host: The specified entity already exists.
     ```
 
@@ -387,7 +385,7 @@ Genellikle, oluşturduğunuz hizmet ne biz şu ana kadar oluşturulmuş ve önem
 1. Geri dönüp **Mac için Visual Studio** ve hata ayıklama oturumunu sona erdirme.
 
 <!--
-1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON. 
+1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON.
 
     ```csharp
     [FunctionName("List")]

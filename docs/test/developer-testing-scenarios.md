@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a731f7a481280d5755d72a83a4532eb8e6998f97
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 396bbfdb915d0e3ecc31f516d60eab80cca6a421
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370646"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295156"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Geliştirici test araçları, senaryoları ve yetenekleri
 
@@ -31,7 +31,7 @@ Kapsamı geliştirin ve Intellitest ile gerilemeleri önleyin. Intellitest yeni 
 ![Intellitest sürüyor](media/devtest-intellitest.png)
 
 * [Intellitest Visual Studio ile giriş](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20IntelliTest%20with%20Visual%20Studio%20Enterprise%202015.docx)
-* [Intellitest – hepsini yönetmek için bir test](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx)
+* [Intellitest – hepsini yönetmek için bir test](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/)
 * [Intellitest videoları](https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio)
 * [Intellitest ile çalışmaya başlama](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Intellitest başvuru kılavuzu](intellitest-manual/index.md)
@@ -80,7 +80,7 @@ Visual Studio ayrıca genişletilebilir ve üçüncü taraf birim test bağdaşt
 ## <a name="see-also"></a>Ayrıca bkz.
 
 * [Birim testi ile çalışmaya başlama](getting-started-with-unit-testing.md)
-* [Birim testi yürütme Team Foundation Server'da hızlandırın](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)
-* [Paralel ve bağlam hassas birim testi yürütme](https://blogs.msdn.microsoft.com/visualstudioalm/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
+* [Birim testi yürütme Team Foundation Server'da hızlandırın](https://blogs.msdn.microsoft.com/devops/2015/07/30/speeding-up-unit-test-execution-in-tfs/)
+* [Paralel ve bağlam hassas birim testi yürütme](https://blogs.msdn.microsoft.com/devops/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
 * [Birim testi, kod kapsamını ve kod kopya Analizi ile Visual Studio (Laboratuvar)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
 * [C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md)

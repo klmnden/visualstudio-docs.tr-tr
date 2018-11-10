@@ -5,14 +5,14 @@ author: dantogno
 ms.author: v-davian
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 3409bca77605bd55d0de15b38eb4812743af813e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56fb99f1748d799732f2ba44dde4980687687eef
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836352"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294909"
 ---
-# <a name="setup-visual-studio-for-mac-tools-for-unity"></a>Unity için Araçlar Mac için Visual Studio Kurulumu
+# <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Unity için Mac araçları için Visual Studio'yu ayarlama
 
 Bu bölümde, Visual Studio için Unity için Mac araçları ile çalışmaya başlamak açıklanmaktadır.
 
@@ -20,7 +20,7 @@ Bu bölümde, Visual Studio için Unity için Mac araçları ile çalışmaya ba
 
 ### <a name="unity-bundled-installation"></a>Unity paket yükleme
 
-Unity 2018.1 ile başlayarak, Mac için Visual Studio varsayılan değer C# Unity için IDE ve Unity indirme Yardımcısı, yanı sıra Unity hub'ı yükleme aracı dahil edilir. Unity'de indirme [store.unity.com](https://store.unity.com/).
+Unity 2018.1 ile başlayarak, Mac için Visual Studio varsayılan değer C# Unity için tümleşik geliştirme ortamı (IDE) ve Unity indirme Yardımcısı'nın yanı sıra Unity hub'ı yükleme aracı dahil edilir. [store.unity.com](https://store.unity.com/) adresinden Unity'yi indirin.
 
 Yükleme sırasında Mac için Visual Studio ile Unity yüklenecek bileşenlerin listesini işaretlendiğinden emin olun:
 
@@ -34,7 +34,7 @@ Yükleme sırasında Mac için Visual Studio ile Unity yüklenecek bileşenlerin
 
 #### <a name="check-for-updates-to-visual-studio-for-mac"></a>Mac için Visual Studio Güncelleştirmeleri denetle
 
-Unity yükleme işlemine dahil Mac için Visual Studio sürümü, en son olmayabilir. En son araçları ve özelliklere erişiminiz olduğundan emin olmak güncelleştirmeleri denetlemek için önerilir.
+Unity yükleme işlemine dahil Mac için Visual Studio sürümü, en son olmayabilir. En son araçlara ve özelliklere erişiminiz olduğundan emin olmak için güncelleştirmeleri denetlemeniz önerilir.
 
 * [Mac için Visual Studio güncelleştiriliyor](update.md)
 
@@ -65,17 +65,17 @@ Visual Studio için Unity uzantısı Mac araçları varsayılan olarak etkinleş
 
 ## <a name="configure-unity-for-use-with-visual-studio-for-mac"></a>Unity Mac için Visual Studio ile kullanılacak şekilde yapılandırma
 
-Visual Studio ile Unity 2018.1 başlayarak, varsayılan harici kod Düzenleyicisi'nde Unity olmalıdır. Bunu doğrulamak veya Visual Studio için dış Kod Düzenleyicisi'ni değiştirin:
+Unity 2018.1 itibarıyla Visual Studio, Unity'de varsayılan dış kod düzenleyicisi olmalıdır. Bunu doğrulamak veya Visual Studio için dış Kod Düzenleyicisi'ni değiştirin:
 
 1. Seçin **tercihleri...**  Unity menüsünde.
 
-   ![Tercihler seçin](media/setup-vsmac-tools-unity-image4.png)
+   ![Tercihler'i seçme](media/setup-vsmac-tools-unity-image4.png)
 
-2. Tercihler iletişim kutusunda, seçmek **dış Araçlar** sekmesi.
+2. Tercihler iletişim kutusunda, **External Tools** (Dış Araçlar) sekmesini seçin.
 
 3. Dış betik Düzenleyicisi açılır listeden seçin **Visual Studio** listeleniyorsa, aksi takdirde seçin **Gözat...** .
 
-   ![Visual Studio seçin](media/setup-vsmac-tools-unity-image5.png)
+   ![Visual Studio'yu seçme](media/setup-vsmac-tools-unity-image5.png)
 
 4. Varsa **Gözat...**  olduğu belirlenirse, uygulamaları dizine gidin ve Visual Studio seçin ve ardından **açık**.
 

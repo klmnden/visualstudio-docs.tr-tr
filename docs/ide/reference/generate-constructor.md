@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2e1c289ca84b4f3298aa32cc0016b3be9132263b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c6b267bee0c78de19ffa0d443f515375eeae949a
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926741"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295832"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Visual Studio'da bir oluşturucu üret
 
@@ -50,7 +50,7 @@ Bu kod oluşturma için geçerlidir:
       - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
    - **Fare**
       - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
-      - &nbsp; ![Ampul](media/bulb-cs.png) boş bir satıra sınıfında metin imleci ise, sol kenar boşluğunda görünür simge.
+      - &nbsp; ![Ampul](media/bulb-cs.png) boş bir satıra sınıfında metin imleci ise sol kenar boşluğunda görünür simge.
 
    ![Oluşturucu Önizleme oluşturma](media/constructor1-preview-cs.png)
 
@@ -81,7 +81,7 @@ Bu kod oluşturma için geçerlidir:
       - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
    - **Fare**
       - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
-      - &nbsp; ![Ampul](media/bulb-cs.png) Seçimi içeren satırda metin imleci ise, sol kenar boşluğunda görünür simge.
+      - &nbsp; ![Ampul](media/bulb-cs.png) Seçimi içeren satırda metin imleci ise sol kenar boşluğunda görünür simge.
 
       ![Oluşturucu Önizleme oluşturma](media/constructor2-preview-cs.png)
 
@@ -109,8 +109,8 @@ Bu kod oluşturma için geçerlidir:
       - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
    - **Fare**
       - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
-      - Kırmızı dalgalı çizgi gelin ve tıklayın ![Ampul](media/bulb-cs.png) görüntülenen simge.
-      - &nbsp; ![Ampul](media/bulb-cs.png) kırmızı dalgalı çizgi içeren satırda metin imleci ise, sol kenar boşluğunda görünür simge.
+      - Kırmızı dalgalı çizgi gelin ve tıklayın ![Ampul](media/bulb-cs.png) Bu simge görünür.
+      - &nbsp; ![Ampul](media/bulb-cs.png) kırmızı dalgalı çizgi içeren satırda metin imleci ise sol kenar boşluğunda görünür simge.
 
       ![Oluşturucu Önizleme oluşturma](media/constructor-preview-cs.png)
 
@@ -143,8 +143,8 @@ Bu kod oluşturma için geçerlidir:
       - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
    - **Fare**
       - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
-      - Kırmızı dalgalı çizgi gelin ve tıklayın ![Ampul](media/bulb-cs.png) görüntülenen simge.
-      - &nbsp; ![Ampul](media/bulb-cs.png) kırmızı dalgalı çizgi içeren satırda metin imleci ise, sol kenar boşluğunda görünür simge.
+      - Kırmızı dalgalı çizgi gelin ve tıklayın ![Ampul](media/bulb-cs.png) Bu simge görünür.
+      - &nbsp; ![Ampul](media/bulb-cs.png) kırmızı dalgalı çizgi içeren satırda metin imleci ise sol kenar boşluğunda görünür simge.
 
       ![Oluşturucu Önizleme oluşturma](media/constructor4-preview-cs.png)
 
@@ -170,7 +170,7 @@ Varolan bir yöntem için parametre de ekleyebilirsiniz. Daha fazla bilgi için 
       - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
    - **Fare**
       - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
-      - &nbsp; ![Ampul](media/bulb-cs.png) eklenen parametresiyle satırındaki metin imleci ise, sol kenar boşluğunda görünür simge.
+      - &nbsp; ![Ampul](media/bulb-cs.png) eklenen parametresiyle satırındaki metin imleci ise sol kenar boşluğunda görünür simge.
 
    ![Oluşturucu Önizleme oluşturma](media/constructor5-preview-cs.png)
 

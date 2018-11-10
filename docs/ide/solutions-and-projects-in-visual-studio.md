@@ -1,5 +1,5 @@
 ---
-title: Çözümler ve projeler Visual Studio'da
+title: Projeler ve çözümler
 ms.date: 10/05/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -26,52 +26,59 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7368778928384f50e96bfd8c5f3f1e107e6b411d
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: ba0ed54e8acd28be3f267d83473f9514f471ef4a
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089665"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349315"
 ---
-# <a name="solutions-and-projects-in-visual-studio"></a>Çözümler ve projeler Visual Studio'da
+# <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio'da projeler ve çözümler
+
+Bu makalede bu kavramı bir *proje* ve *çözüm* Visual Studio'da. Yeni bir proje oluşturmak nasıl de kısaca ele alınmaktadır ve **Çözüm Gezgini** araç penceresi.
+
+> [!NOTE]
+> Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [projeler ve çözümler Mac için Visual Studio'da](/visualstudio/mac/projects-and-solutions).
 
 ## <a name="projects"></a>Projeler
 
-Bir uygulama, Web sitesi, eklenti, vs. oluşturduğunuzda ile başlamanız Visual Studio'da bir *proje*. Bir mantıksal anlamda bir proje tüm kaynak kodu dosyaları, simgeler, görüntüler, veri dosyalarını, yürütülebilir dosya, kitaplığı veya Web sitesi derlenmiş vb. içerir. Bir proje ayrıca derleyici ayarları ve çeşitli hizmetler veya programınız kurduğu bileşenleri tarafından gerekebilecek diğer yapılandırma dosyalarını içerir.
+Web sitesi, eklenti, vb. bir uygulama oluşturduğunuzda, Visual Studio'da ile başlatma bir *proje*. Mantıksal bir anlamda, bir projenin tüm kaynak kodu dosyaları, simgeler, resimler, veri dosyalarını, bir yürütülebilir dosya, kitaplık veya Web sitenize derlenmiş vb. içerir. Bir proje, derleyici ayarları ve çeşitli hizmetler veya programınızın iletişim kuran bileşenler tarafından gerekebilecek diğer yapılandırma dosyalarını da içerir.
 
 > [!NOTE]
-> Çözümleri veya projeleri düzenlemek, yapı ve kodda hata ayıklama için Visual Studio'da kullanmak zorunda değilsiniz. Yalnızca Visual Studio, kaynak dosyalarını içeren klasörü açın ve düzenlemeye başlayın. Daha fazla bilgi için bkz: [projeleri veya çözümler olmadan kod Visual Studio geliştirme](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
+> Çözümlerin veya projelerin düzenlemek, yapı ve kod hatalarını ayıklamak için Visual Studio'da kullanmak zorunda değilsiniz. Yalnızca Visual Studio kaynak dosyalarını içeren klasörü açın ve düzenlemeye başlayın. Daha fazla bilgi için [kod Visual Studio'da projeler veya çözümler olmadan geliştirme](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
-Bir proje uzantılı bir XML dosyasında aşağıdaki gibi tanımlanır *.vbproj*, *.csproj*, veya *.vcxproj*. Bu dosya, bir sanal klasör hiyerarşisini ve projedeki tüm öğeleri yollara içerir. Ayrıca, yapılandırma ayarlarını içerir.
+Bir proje uzantılı bir XML dosyasında aşağıdaki gibi tanımlanır *.vbproj*, *.csproj*, veya *.vcxproj*. Bu dosya, projedeki tüm öğeleri yolları ve sanal klasör hiyerarşisi içerir. Ayrıca, yapılandırma ayarlarını içerir.
 
 > [!TIP]
-> Visual Studio Proje dosyasında içeriğini bakmak için önce projeyi Proje adı seçerek unload **Çözüm Gezgini** ve seçme **Unload proje** bağlam ya da sağ tıklatma menüsünden. Ardından bağlam menüsünden yeniden açın ve seçin **Düzenle \<projectname\>**.
+> Visual Studio'da bir proje dosyasının içeriğini bakmak için ilk proje adlarında'i seçerek projeyi **Çözüm Gezgini** seçip **kaldırma proje** bağlamı veya sağ tıklama menüsünde. Daha sonra yeniden bağlam menüsünü açın ve seçin **Düzenle \<projectname\>**.
 
-Visual Studio Proje dosyası tarafından kullanılan **Çözüm Gezgini** proje içeriği ve ayarları görüntülemek için. Projenizi derleme yaparken MSBuild altyapısı yürütülebilir dosyayı oluşturmak için proje dosyasını kullanır. Çıkış diğer tür üretmek için projeleri özelleştirebilirsiniz.
+Visual Studio'da proje dosyası tarafından kullanılan **Çözüm Gezgini** proje içeriğini ve ayarlarını görüntülemek için. Projenizi derlerken, MSBuild altyapısına yürütülebilir dosyayı oluşturmak için proje dosyasını kullanır. Çıkış diğer türleri üretmek için projeleri de özelleştirebilirsiniz.
 
 ## <a name="solutions"></a>Çözümler
 
-Bir proje kapsamında yer alan bir *çözüm*. Bir veya daha fazla ilgili projeleri, yapı bilgileri, Visual Studio penceresi ayarlarını ve belirli bir projeyle ilişkili olmayan tüm çeşitli dosyalar ile birlikte bir çözüm içerir. Bir çözümü bir metin dosyası tarafından tanımlanan (uzantısı *.sln*) kendi benzersiz biçimde; bu el ile düzenlenmesi kullanılmaya yönelik değildir.
+Bir proje içinde yer alan bir *çözüm*. Bir çözüm, bir veya daha fazla ilgili projeleri ile yapı bilgilerini, Visual Studio penceresi ayarlarını ve belirli bir proje ile ilişkili olmayan diğer tüm dosyalar içeriyor. Bir metin dosyası tarafından açıklanan bir çözüm (uzantı *.sln*) kendi benzersiz biçimde; bunu el ile düzenlenmesi kullanılmaya yönelik değildir.
 
-Visual Studio kullanan iki dosya türleri (*.sln* ve *.suo*) çözümler için ayarları saklamak için:
+Visual Studio kullanan iki dosya türleri (*.sln* ve *.suo*) çözümleri için ayarları saklamak için:
 
-|Uzantısı|Ad|Açıklama|
+|Uzantı|Ad|Açıklama|
 |---------------|----------|-----------------|
-|.sln|Visual Studio çözümü|Projeleri, proje öğeleri ve çözüm öğeleri çözümdeki düzenler.|
-|.suo|Çözüm kullanıcı seçenekleri|Kullanıcı düzeyinde ayarları ve kesme noktaları gibi özelleştirmelerini depolar.|
+|.sln|Visual Studio çözümü|Projeler, proje öğeleri ve çözümde çözüm öğeleri düzenler.|
+|.suo|Çözüm kullanıcı seçenekleri|Kullanıcı düzeyi ayarları ve kesme noktaları gibi özelleştirmelerini depolar.|
 
 ## <a name="create-new-projects"></a>Yeni projeler oluştur
 
-Belirli bir tür uygulama veya Web sitesi için bir proje şablondan yeni bir proje oluşturmak için en kolay yolu başlatmaktır. Bir proje şablonu, önceden oluşturulan kod dosyaları, yapılandırma dosyaları, varlıkları ve ayarları temel kümesinden oluşur. Uygulamasında gördüğünüz bu şablonlarıdır **yeni proje** veya **yeni Web sitesi** seçtiğinizde iletişim kutusu **dosya** > **yeni**  >  **Proje** veya **dosya** > **yeni** > **Web sitesi**. Daha fazla bilgi için bkz: [çözümler ve projeler oluşturma](../ide/creating-solutions-and-projects.md).
+Belirli bir tür uygulama veya Web sitesi için bir proje şablondan yeni bir proje oluşturmak için en kolay yolu başlatmaktır. Bir proje şablonu, önceden oluşturulan kod dosyaları, yapılandırma dosyaları, varlıkları ve ayarları temel bir kümesinden oluşur. Bu şablonları bölümüne bakın, **yeni proje** seçtiğinizde iletişim kutusu **dosya** > **yeni** > **proje**. Daha fazla bilgi için [çözümler ve projeler oluşturma](../ide/creating-solutions-and-projects.md).
 
-Özel proje ve öğe şablonları oluşturabilirsiniz. Daha fazla bilgi için bkz: [proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md).
+Özel proje ve öğe şablonlarını da oluşturabilirsiniz. Daha fazla bilgi için [proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md).
 
 ## <a name="manage-projects-in-solution-explorer"></a>Çözüm Gezgini'nde projeleri yönetme
 
-Yeni bir proje oluşturduğunuzda, kullanabileceğiniz **Çözüm Gezgini** proje ve çözüm ve bunların ilişkili öğeleri görüntülemek ve yönetmek için. Aşağıdaki çizimde gösterildiği **Çözüm Gezgini** Çözümle iki proje içeren bir C#:
+Yeni bir proje oluşturduğunuzda, kullanabileceğiniz **Çözüm Gezgini** proje ve çözüm ve onların ilişkilendirilmiş öğelerini görüntülemek ve yönetmek için. Aşağıdaki çizimde gösterildiği **Çözüm Gezgini** ile bir C# iki proje içeren bir çözümü:
 
 ![Çözüm Gezgini](../ide/media/vs2015_solution_explorer.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Projeler ve çözümler (Mac için Visual Studio)](/visualstudio/mac/projects-and-solutions)
+- [Ekleme ve kaldırma proje öğeleri (Mac için Visual Studio)](/visualstudio/mac/add-and-remove-project-items)

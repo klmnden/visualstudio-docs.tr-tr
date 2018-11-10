@@ -6,14 +6,14 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: e363d02c7d84d80a3a60d54e13ff2a5341145dc5
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 6f60b32b66dc2c33a0ecbcd71f80fd613d273b64
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624282"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294409"
 ---
-# <a name="updating-visual-studio-for-mac"></a>Mac için Visual Studio güncelleştiriliyor
+# <a name="update-visual-studio-for-mac"></a>Mac için Visual Studio güncelleştirme
 
 Mac için Visual Studio IDE ve düzenli olarak desteklenen çerçeveler için güncelleştirmeleri dağıtır. Bu güncelleştirmeler, yeni özellikler, iyileştirmeler ve hata düzeltmeleri biçiminde olabilir.
 
@@ -26,7 +26,7 @@ Mac için Visual Studio, bu en son sürümlerini almak için üç kanal sağlar:
 
 Kullanabileceğiniz **Visual Studio Güncelleştiricisi** kutusunu yeni güncelleştirmeleri denetleyin, kanalları, değiştirmek ve Güncelleştirmeleri indirmek ve yüklemek için.
 
-Açmak için **Visual Studio Güncelleştiricisi**, Gözat **Visual Studio > Güncelleştirmeleri denetle...** :
+Açmak için **Visual Studio Güncelleştiricisi**, Gözat **Visual Studio > Güncelleştirmeleri denetle**:
 
 ![Güncelleştirme seçeneği denetle](media/update-image1.png)
 
@@ -51,3 +51,7 @@ Güncelleştirmeleri yüklemeye başlamak için seçin **yeniden başlat ve gün
 ![Güncelleştirmeleri yüklemeye başlamak için düğme](media/update-image4.png)
 
 Yüklenmesi gereken bileşenleri bağlı olarak, Ek lisanslar kabul edin veya makinenizin yönetici kullanıcı adı ve parola girmeniz gerekebilir.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Güncelleştirme Visual Studio (Windows)](/visualstudio/install/update-visual-studio)

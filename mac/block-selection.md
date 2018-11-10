@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E8E0831E-E076-44B1-A82A-A325382916A6
-ms.openlocfilehash: c1c5783134b39feac0ae89d6a1b2680b0668f815
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 0b63161781f281b08e7603b3fec4a58223b1f63e
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624020"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294441"
 ---
 # <a name="block-selection"></a>Blok seçimi
 
@@ -18,4 +18,8 @@ Mac için Visual Studio seçin, kesme, kopyalama ve kod bölümlerini yapıştı
 
 Blok seçim de aynı anda birden çok iş satırlarındaki metni değiştirmek için düzenlenebilir. Sıfır genişlikli Blok seçimi giriş işaretini satır önüne tek seferde yerleştirmek için kullanılan ve aynı metni birden çok satırda yazmayı sağlar:
 
- ![Blok seçimi ve metin ekleme](media/source-editor-image16.png)
+![Blok seçimi ve metin ekleme](media/source-editor-image16.png)
+
+# <a name="see-also"></a>Ayrıca bkz.
+
+- [(Windows) Visual Studio için birden çok giriş işaretini seçin](/visualstudio/ide/finding-and-replacing-text#multi-caret-selection)

@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 86f547ae686176ab6361f44f4f0ba432c6466da9
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 077754b31b80575c4fbee78d0a2f19f87f82e481
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251581"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220898"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Sorun giderme ve bilinen sorunlar (Unity için Visual Studio Araçları)
 
@@ -90,7 +90,7 @@ Visual Studio, belirli bir kesme noktası için kaynak konumu bulamıyor ise, ke
 
 ## <a name="breakpoints-not-hit"></a>Kesme noktaları isabet değil
 
-Kullanmakta olduğunuz kodun düzgün bir şekilde yüklendi/geçerli Unity sahnede kullanılan olup olmadığını denetleyin. Hem Visual Studio ve Unity çıkın, sonra oluşturulan tüm dosyaları (*.csproj, *.sln) ve tüm kitaplık klasörünü silin.
+Kullanmakta olduğunuz kodun düzgün bir şekilde yüklendi/geçerli Unity sahnede kullanılan olup olmadığını denetleyin. Hem Visual Studio ve Unity çıkmak sonra oluşturulan tüm dosyaları silin (\*.csproj, \*.sln) ve tüm kitaplık klasörü.
 
 ## <a name="unable-to-debug-android-players"></a>Android oynatıcılarda hata ayıklaması yapılamıyor
 

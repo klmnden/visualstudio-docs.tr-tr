@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbdf9b6890613cc4ad41af77e27f7f41c6f5c9da
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 3245cd647f5da391bb0e36afc65d867137618808
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219854"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349343"
 ---
 # <a name="python-web-application-project-templates"></a>Python web uygulaması proje şablonları
 
 Visual Studio'da Python Bottle, Flask ve Django çerçeve proje şablonları ve çeşitli çerçeveler işlemek için yapılandırılabilir bir hata ayıklama başlatıcısı aracılığıyla web projelerini geliştirmeyi destekler. Bu şablonlar içeren bir *requirements.txt* gerekli bağımlılıkları bildirmek için dosya. Visual Studio bu paketleri yüklemek için bu şablonlardan birini bir proje oluştururken, ister (bkz [yüklemek proje gereksinimlerini](#install-project-requirements) bu makalenin ilerleyen bölümlerinde).
 
-Genel kullanabilirsiniz **Web projesi** Piramit gibi diğer çerçeveler için şablon. Bu durumda, çerçeve şablonla yüklenir. Bunun yerine, proje için kullanmakta olduğunuz ortamına gerekli paketleri yükleyin (bkz [yönetme Python ortamları](managing-python-environments-in-visual-studio.md)).
+Genel kullanabilirsiniz **Web projesi** Piramit gibi diğer çerçeveler için şablon. Bu durumda, çerçeve şablonla yüklenir. Bunun yerine, proje için kullanmakta olduğunuz ortamına gerekli paketleri yükleyin (bkz [Python ortamları penceresi - paket sekmesindeki](python-environments-window-tab-reference.md#packages-tab)).
 
 Python web uygulamasını Azure'a dağıtma hakkında daha fazla bilgi için bkz: [Azure App Service'e yayımlama](publishing-python-web-applications-to-azure-from-visual-studio.md).
 

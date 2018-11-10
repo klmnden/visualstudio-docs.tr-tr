@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 16ec8cdb2402546f2059053495a8e656427783e3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3adcb961e3031180054706da9d43dd04dccdedf
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937336"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348649"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Visual Studio’da XAML tasarlama
 
@@ -52,7 +52,7 @@ En temel görevler için Visual Studio IDE ve Visual Studio için Blend paylaş�
 
 - **Genel bir Çözüm Gezgini:** **Çözüm Gezgini** projelerinizi ve kendi dosyaları, hem de kendileriyle ilişkili komutların hazır erişimi düzenli bir görünümünü sağlar. Çözüm Gezgini ile büyük kurumsal projeleriyle çalışmak kolaydır. Bkz: [çözümler ve projeler](../ide/solutions-and-projects-in-visual-studio.md).
 
-- **Takım Gezgini:** projelerinizi depolarıyla takım işbirliğini kolaylaştırmak için GIT veya TFS Takım Gezgini ile yönetebilirsiniz. Bkz: [Takım Gezgini'nde iş](http://msdn.microsoft.com/Library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02).
+- **Takım Gezgini:** projelerinizi depolarıyla takım işbirliğini kolaylaştırmak için GIT veya TFS Takım Gezgini ile yönetebilirsiniz. Bkz: [Takım Gezgini'nde iş](/azure/devops/user-guide/work-team-explorer).
 
 - **NuGet:** hem Visual Studio ve Visual Studio için Blend NuGet paketlerini yönetebilirsiniz. NuGet paketleri bir çözümden kaldırılması ve yüklenmesine basitleştirir .NET Framework için bir paket yöneticisidir.
 

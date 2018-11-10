@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 683d0e75ca5e925ccd7bf56ceffb0e28da844cc5
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 756486daa709efd6ce1ff697d6d190bb7f4a2e34
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220332"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295728"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>İzlenecek yol: bir SharePoint proje öğesi türünü genişletme
   Kullanabileceğiniz **iş verileri bağlantı modeli** SharePoint'te İş Verileri Bağlantısı (BDC) hizmeti için bir model oluşturmak için proje öğesi. Varsayılan olarak, bu proje öğesini kullanarak model oluşturduğunuzda modeldeki veriler kullanıcılara görüntülenmez. Ayrıca, kullanıcıların verileri görüntülemesini sağlamak için SharePoint'te bir dış liste oluşturmanız gerekir.  
@@ -164,7 +164,7 @@ ms.locfileid: "50220332"
   
 1.  İçinde **Çözüm Gezgini**source.extension.vsixmanifest dosyası için kısayol menüsünü GenerateExternalDataLists projesi içinde açın ve ardından **açın**.  
   
-     Visual Studio, dosyayı bildirim düzenleyicisinde açar. .Vsixmanifest uzantı dosyası temeli, tüm VSIX paketleri tarafından gerekli source.extension.vsixmanifest dosyasıdır. Bu dosya hakkında daha fazla bilgi için bkz. [VSIX Uzantı Şeması 1.0 başvurusu](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Visual Studio, dosyayı bildirim düzenleyicisinde açar. .Vsixmanifest uzantı dosyası temeli, tüm VSIX paketleri tarafından gerekli source.extension.vsixmanifest dosyasıdır. Bu dosya hakkında daha fazla bilgi için bkz. [VSIX Uzantı Şeması 1.0 başvurusu](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  İçinde **ürün adı** kutusuna **dış veri listesi Oluşturucu**.  
   
@@ -179,7 +179,7 @@ ms.locfileid: "50220332"
 6.  İçinde **türü** listesinde **Microsoft.VisualStudio.MefComponent**.  
   
     > [!NOTE]  
-    >  Bu değer karşılık gelen `MefComponent` extension.vsixmanifest dosyasındaki öğesi. Bu öğe VSIX paketinde bir uzantı derlemesinin adını belirtir. Daha fazla bilgi için [MEFComponent öğesi (VSX şema)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Bu değer karşılık gelen `MefComponent` extension.vsixmanifest dosyasındaki öğesi. Bu öğe VSIX paketinde bir uzantı derlemesinin adını belirtir. Daha fazla bilgi için [MEFComponent öğesi (VSX şema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 7.  İçinde **kaynak** listesinde **mevcut çözümde bir proje**.  
   

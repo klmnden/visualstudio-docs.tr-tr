@@ -1,7 +1,7 @@
 ---
-title: Python yorumlayıcısı ve bir proje için ortam seçme
-description: Visual Studio projesi yanı sıra, sanal ortamları oluşturma yönergeleri için kullanılacak Python ortamı atama.
-ms.date: 06/27/2018
+title: Python yorumlayıcısı ve ortamınız için bir proje seçin
+description: Nasıl bir Python ortamını veya Anaconda ve sanal ortamlar da dahil olmak üzere Visual Studio projesi için kullanılacak yorumlayıcı seçin.
+ms.date: 11/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e738eb52ce8cb7cef4090dd9812f6c421a7d11fd
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 0bff5e81fbfda45908315091063833b31abbdd8c
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101140"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349458"
 ---
-# <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Hangi Python ortamını bir proje için kullanılan atama
+# <a name="how-to-select-a-python-environment-for-a-project"></a>Nasıl bir proje için bir Python ortamı seçin
 
-Python projesindeki tüm kodu belirli bir ortama bağlamında çalışır. Visual Studio hata ayıklama, içeri aktarma ve üye tamamlama, sözdizimi denetimi ve bir ortam gerektiren herhangi bir görev için de bu ortamı kullanır.
+Bir global Python ortamı, Anaconda ortamı, bir sanal ortam ya da conda ortamı gibi belirli bir ortama bağlamında bir Python projesindeki tüm kod çalıştırır. Visual Studio bu ortamda hata ayıklama, içeri aktarma ve üye tamamlama, sözdizimi denetimi ve Python sürümü ve yüklü paketleri birtakım özel dil hizmetleri gerektiren herhangi bir görev için de kullanır.
 
 Tüm yeni Python projeleri Visual Studio'da ilk altında görüntülenen varsayılan genel ortam kullanmak üzere yapılandırılmış **Python ortamları** düğümünde **Çözüm Gezgini**:
 
@@ -42,7 +42,7 @@ Bağlam menüsünde **Python ortamları** düğüm ayrıca ek komutlar sağlar:
 | --- | --- |
 | **Sanal ortam Ekle** | Projede yeni bir sanal ortam oluşturma işlemi başlar. Bkz: [sanal ortam Oluştur](#create-a-virtual-environment). |
 | **Var olan sanal ortama Ekle** | Bir sanal ortam içeren bir klasör seçmenizi ister ve altındaki listeye ekler **Python ortamları**, ancak etkinleştirmez. Bkz: [var olan bir sanal ortam etkinleştirme](#activate-an-existing-virtual-environment). |
-| **Conda ortamı oluşturma** | Ağınızdan **Python ortamları** *penceresi* , ortam için bir ad girin ve kendi temel yorumlayıcı belirtin. |
+| **Conda ortamı oluşturma** | Ağınızdan **Python ortamları** *penceresi* , ortam için bir ad girin ve kendi temel yorumlayıcı belirtin. Bkz: [Conda ortamları](managing-python-environments-in-visual-studio.md#conda-environments). |
 
 ## <a name="use-virtual-environments"></a>Sanal ortamları kullanma
 

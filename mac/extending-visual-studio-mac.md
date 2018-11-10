@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 83d5eac54560d9c0c1960808d39a909858db323d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8212039cd4f83cd9ea2b53a1050f32ed5dbad367
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900676"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295143"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Mac için Visual Studio'yu genişletme
 
@@ -23,9 +23,9 @@ Mac için Visual Studio özelleştirmek için yapıları bir uzantı paketi, Mac
 
 ![Eklenti mimarisi](media/extending-visual-studio-mac-addin1.png)
 
-Mac için Visual Studio'dan oluşturmak bir uzantı paketi için sırada Visual Studio'da genişletme noktaları Mac IDE için önceden varolan yapı uzantıları olması gerekir. Uzantı paketinin bir eklenti konak tanımlanmış bir uzantı noktası kullanır, olması bildirilir bir _bağımlılık_ üzerinde bu uzantı paketi.
+Mac için Visual Studio'dan oluşturmak bir uzantı paketi için sırada Visual Studio'da genişletme noktaları Mac IDE için önceden varolan yapı uzantıları olması gerekir. Uzantı paketinin bir eklenti konak tanımlanmış bir uzantı noktası kullanır, olması bildirilir bir _bağımlılık_ üzerinde bu uzantı paketi.
 
-Bu modüler bir tasarım avantajdır Mac için Visual Studio Genişletilebilir--bağlı özel uzantı paketleri ile oluşturulabilir birçok uzantı noktaları vardır. Geçerli uzantı paketleri örnekler C# ve F # araçlarına ve proje şablonları için destek içerir.
+Bu modüler bir tasarım avantajdır Mac için Visual Studio Genişletilebilir--bağlı özel uzantı paketleri ile oluşturulabilir birçok uzantı noktaları vardır. Geçerli uzantı paketleri örnekler için destek C# ve F#, hata ayıklayıcı, Araçlar ve proje şablonları.
 
 > [!NOTE]
 > **Not**: eklenti Oluşturucu önce 1.2 oluşturulmuş bir oluşturucu eklenti projesine sahip olmak, projenizi adımlarda belirtildiği gibi geçiş geçmeniz [burada](https://mhut.ch/addinmaker/1.2).
@@ -52,13 +52,13 @@ Ayrıca, ek başvurular proje çözüm panelinde eklenti referans düğümün ar
 
 ![Tarih ekran görüntüsü Ekle](media/extending-visual-studio-mac-addin13.png)
 
-Bunlara karşılık gelen aynı zamanda sahiptirler `assembly:AddinDependency ` başında eklenen öznitelikleri derleme zamanı. Meta veriler ve bağımlılık bildirimlerini yerinde olduktan sonra uzantı paketinin temel yapı taşlarını üzerinde odaklanabilirsiniz.
+Bunlara karşılık gelen aynı zamanda sahiptirler `assembly:AddinDependency` başında eklenen öznitelikleri derleme zamanı. Meta veriler ve bağımlılık bildirimlerini yerinde olduktan sonra uzantı paketinin temel yapı taşlarını üzerinde odaklanabilirsiniz.
 
 ## <a name="extensions-and-extension-points"></a>Uzantılar ve uzantı noktaları
 
 (Bir tür), bir veri yapısını tanımlayan yer tutucu bir uzantı noktasıdır istediğiniz uzantıyı noktasınca belirtilen bir yapıya uyan veriler uzantı tanımlar. Ne tür uzantısı kendi bildiriminde kabul edebilir, uzantı noktaları belirtin. Uzantılar, tür adları veya uzantı yolları kullanarak bildirilir. Bkz: [uzantı noktası başvuru](https://github.com/mono/mono-addins/wiki/Extension-Points) ihtiyacınız uzantı noktası oluşturma hakkında daha ayrıntılı bir açıklama için.
 
-Uzantı/uzantı noktası mimarisi, hızlı ve modüler bir Mac için Visual Studio geliştirme tutar. 
+Uzantı/uzantı noktası mimarisi, hızlı ve modüler bir Mac için Visual Studio geliştirme tutar.
 
 <!--Since there are a large number of extension types, this article focuses on the ones used in the extension package that was built in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md).-->
 
@@ -163,3 +163,7 @@ Geliştirme için kullanılabilir alanları kapsamı hakkında daha fazla bilgi 
 
 > [!NOTE]
 > Şu anda Mac için Visual Studio genişletilebilirlik senaryoları geliştirmeye çalışıyoruz Uzantıları oluşturma ve Ek Yardım veya bilgi gereksinim veya geri bildirim sağlamak isterseniz, lütfen doldurun [Mac uzantısı geliştirme için Visual Studio](https://aka.ms/vsmac-extensions-survey) formu.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [(Windows üzerinde) Visual Studio uzantıları geliştirme](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)

@@ -18,17 +18,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b9eb1de3f18c487a2e6d3cdf3d0ce7ef95e578b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25a7402a8d0464152e9b1bdd9d2edcdc66824914
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890003"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295910"
 ---
 # <a name="develop-sharepoint-solutions"></a>SharePoint çözümleri geliştirme
   Bazı SharePoint proje türü şablonları kullanılabilir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint siteleri ve site öğeleri oluşturmak için. Kullanılabilir proje türlerinin bir listesi için bkz. [SharePoint projesi ve proje öğesi şablonları](../sharepoint/sharepoint-project-and-project-item-templates.md). Öğeleri bir açıklamasını ve özelliklerini bir SharePoint projesine aşağıda verilmiştir.  
   
- SharePoint 2013 ve SharePoint eklentileri hakkında daha fazla bilgi için bkz: [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) ve [derleme SharePoint eklentileri](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).  
+ SharePoint 2013 ve SharePoint eklentileri hakkında daha fazla bilgi için bkz: [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) ve [derleme SharePoint eklentileri](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).  
   
 ## <a name="elements-of-a-sharepoint-project"></a>Bir SharePoint Proje öğeleri
  Bir SharePoint projesi altındaki düğümler olarak da bilinir *SharePoint öğeleri*. SharePoint öğeleri de denir, bir veya daha fazla alt içerebilir *SharePoint öğe dosyaları*, gibi [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] yapılandırma dosyaları, .aspx formları ve daha fazlası.  
@@ -97,10 +97,10 @@ ms.locfileid: "49890003"
   
 |Özellik adı|Açıklama|  
 |-------------------|-----------------|  
-|Derleme eylemi|Dosyanın nasıl derleme ve dağıtım işlemleriyle olan ilişkisi belirtir. Daha fazla bilgi için [dosya özelliklerini](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
-|Çıkış Dizinine Kopyala|Kaynak dosyalar çıkış dizinine mi kopyalanacağını belirtir. Aşağıdaki değerlerden biri olabilir:<br /><br /> -   *Kopyalamayın*<br />-   *Her zaman Kopyala*<br />-   *Yeniyse Kopyala*<br /><br /> Daha fazla bilgi için [dosya özelliklerini](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
-|Özel araç|Varsa, tasarım zamanında dosyayı dönüştüren ve dönüştürme çıktısını başka bir dosyaya koyar, bir aracın adını belirtir. Örneğin, bir veri kümesi (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) dosyası varsayılan bir özel araca sahiptir. Daha fazla bilgi için [dosya özelliklerini](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
-|Özel araç Namespace|İçinde özel aracın çıktısının kopyalanacağı ad alanı. Daha fazla bilgi için [dosya özelliklerini](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
+|Derleme eylemi|Dosyanın nasıl derleme ve dağıtım işlemleriyle olan ilişkisi belirtir. Daha fazla bilgi için [dosya özelliklerini](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|  
+|Çıkış Dizinine Kopyala|Kaynak dosyalar çıkış dizinine mi kopyalanacağını belirtir. Aşağıdaki değerlerden biri olabilir:<br /><br /> -   *Kopyalamayın*<br />-   *Her zaman Kopyala*<br />-   *Yeniyse Kopyala*<br /><br /> Daha fazla bilgi için [dosya özelliklerini](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|  
+|Özel araç|Varsa, tasarım zamanında dosyayı dönüştüren ve dönüştürme çıktısını başka bir dosyaya koyar, bir aracın adını belirtir. Örneğin, bir veri kümesi (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) dosyası varsayılan bir özel araca sahiptir. Daha fazla bilgi için [dosya özelliklerini](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|  
+|Özel araç Namespace|İçinde özel aracın çıktısının kopyalanacağı ad alanı. Daha fazla bilgi için [dosya özelliklerini](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|  
 |Dağıtım Konumu|Dosyanın SharePoint sunucusundaki tam yolu. Bu yol, dağıtım kökü ve dağıtım yolu alt özelliklerinden oluşur.|  
 |Dağıtım yolu|Dosyanın Workflow1 gibi SharePoint Server dosyasındaki göreli yol\\. Dosyanın tam yolunu birleştirilerek oluşturulur *dağıtım yolu* sonuna değeri *dağıtım kökü* değeri.<br /><br /> Bir değeri seçerek *RootFile* için *dağıtım türü* özellik değişiklikleri *dağıtım kökü* özelliğini \<SharePointRoot >\\, tam olarak nitelenmiş yolu imzalanmayarak \<SharePointRoot > \Workflow1\\. Daha fazla bilgi için [paketleme ve dağıtma SharePoint çözümleri](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|  
 |Dağıtım kökü|dize. Dosyanın SharePoint sunucusunda dağıtıldığı kök klasörü. Örneğin, \<SharePointRoot > \Template\Features\\\<FeatureName >\\.<br /><br /> Değerini *dağıtım kökü* özelliği tarafından belirlenir *dağıtım türü* ayarı.|  

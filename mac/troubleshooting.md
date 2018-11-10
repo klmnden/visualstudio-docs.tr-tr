@@ -1,17 +1,17 @@
 ---
-title: Sorun giderme Mac için visual Studio
+title: Sorun giderme
 description: Genel sorunlar ve çözümleri Visual Studio için Mac kullanıcıları için.
 ms.topic: troubleshooting
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: 6d8edc7942b460c4c11e20bc9a0c5cae204328cf
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 3a5ea59e6f98891cd113ccad9a74038ca52cccf8
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624022"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294649"
 ---
 # <a name="troubleshooting"></a>Sorun giderme
 
@@ -23,7 +23,7 @@ Günlükleri göz atarak bulunabilir **Yardım > açık günlük dizini** menü 
 
 ## <a name="viewing-exceptions"></a>Özel durumları görüntüleme
 
-Bir özel durum yakalandı bir özel durum Kabarcık görüntülenir. Daha fazla ayrıntı görüntülemek için seçin **ayrıntıları** düğmesi:
+Bir özel durum yakalandığında, bir özel durum Kabarcık görünür. Daha fazla ayrıntı görüntülemek için seçin **ayrıntıları** düğmesi:
 
 ![Bir özel durum hakkında daha fazla ayrıntı görüntüleyin](media/troubleshooting-image2.png)
 
@@ -45,4 +45,8 @@ Yukarıda numaralı iletişim önemli bölümleri aşağıda ayrıntılı olarak
 10. Varsayılan olarak, bu ne ayarlanır **yalnızca proje kodunda hata ayıklama** hata ayıklayıcı ayarlarında seçeneği ayarlanır. Bu kutuyu seçerek, tek bir satır olarak stacktrace daraltmak tüm kullanıcı olmayan kod olanak sağlar.
 11. Kopyalamak için Kopyala düğmesine `exception.ToString()` panoya çıktı.
 
-Özel bir iç özel duruma sahip olduğunda bu bölümlerin bazıları yalnızca görünür olacağını unutmayın.
+Özel bir iç özel duruma sahip olduğunda bu bölümlerin bazıları yalnızca görünür olduğunu unutmayın.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [(Windows için Visual Studio) IDE hatalarında sorun giderme kaynakları](/visualstudio/ide/reference/resources-for-troubleshooting-integrated-development-environment-errors)

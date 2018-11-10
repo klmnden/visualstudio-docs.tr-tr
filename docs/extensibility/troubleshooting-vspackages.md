@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92ca071c7e46325901425048417b0fd1a07607fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad5ab8a337d790af8cd6d800c7bf36ea6ff01286
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826539"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348689"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage Sorunlarını Giderme
 İle VSPackage olabilir ve bu sorunları çözmek için ipuçları yaygın sorunlar aşağıda verilmiştir.  
@@ -44,7 +44,7 @@ ms.locfileid: "49826539"
   
 3. VSPackage'ı kayıt defteri girişlerinizi kontrol edin.  
   
-    Daha fazla bilgi için [VSPackage kaydetme](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd) ve [yönetme VSPackages](../extensibility/managing-vspackages.md).  
+    Daha fazla bilgi için [VSPackage kaydetme](registering-and-unregistering-vspackages.md) ve [yönetme VSPackages](../extensibility/managing-vspackages.md).  
   
 4. Açık **çıkış** penceresi örneğinin [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage'ı yüklemek başarısız. VSPackage'ı yüklemek neden başarısız olduğunu hakkında bilgi pencerede görüntülenebilir.  
   

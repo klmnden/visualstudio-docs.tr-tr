@@ -7,17 +7,17 @@ ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 5a1d7fb7519e9402e2fa780e978fc1176702b26d
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 9cb6a466d764c85012477fb2d849c05920908f02
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542450"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295936"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Team Foundation sürüm denetimine bağlama
 
 > [!NOTE]
-> **Not**: Team Foundation sürüm denetimi desteği şu anda Önizleme aşamasındadır ve bazı işlevler henüz tam olarak çalışmıyor. Sizden geri bildirim herhangi bir sorun üzerinde isteriz [Geliştirici topluluğu](https://developercommunity.visualstudio.com/spaces/41/index.html). Daha fazla değişiklik hala gelen üzeresiniz!
+> Team Foundation sürüm denetimi desteği şu anda Önizleme aşamasındadır ve bazı işlevler henüz tam olarak çalışmıyor. Sizden geri bildirim herhangi bir sorun üzerinde isteriz [Geliştirici topluluğu](https://developercommunity.visualstudio.com/spaces/41/index.html). Daha fazla değişiklik hala gelen üzeresiniz!
 
 Azure depoları, sürüm denetimi, iki modeli sağlar: dağıtılan Git sürüm denetimi ve Team Foundation sürüm denetimi (olan TFVC), merkezi sürüm denetimi. Mac için Visual Studio ile TFVC kullanmak için bu makalede bir genel bakış ve bir başlangıç noktası sağlar
 
@@ -29,9 +29,9 @@ Azure depoları, sürüm denetimi, iki modeli sağlar: dağıtılan Git sürüm 
 
 ## <a name="installation"></a>Yükleme
 
-Mac için Visual Studio'da **Visual Studio > uzantılar...**  menüsünde. İçinde **galeri** sekmesinde **sürüm denetimi > Team Foundation sürüm denetimi için TFS ve VSTS** tıklatıp **yükle...** :
+Mac için Visual Studio'da **Visual Studio > Uzantılar** menüsünde. İçinde **galeri** sekmesinde **sürüm denetimi > Team Foundation sürüm denetimi için TFS ve VSTS** tıklatıp **yükleme**:
 
-  ![Uzantı Yöneticisi](media/tfvc-install.png)
+![Uzantı Yöneticisi](media/tfvc-install.png)
 
 Uzantıyı yüklemek için istemleri izleyin. Yüklendikten sonra IDE yeniden başlatın.
 
@@ -39,27 +39,27 @@ Uzantıyı yüklemek için istemleri izleyin. Yüklendikten sonra IDE yeniden ba
 
 TFVC uzantı güncelleştirmeleri düzenli olarak gerçekleştirilir. Güncelleştirmeleri erişmek, seçin **Visual Studio > uzantılar...**  seçin ve menüden **güncelleştirmeleri** sekmesi. Uzantı listesi ve ENTER tuşuna seçin **güncelleştirme** düğmesi:
 
-  ![Uzantı Yöneticisi'ni gösteren güncelleştirme](media/tfvc-update.png)
+![Uzantı Yöneticisi'ni gösteren güncelleştirme](media/tfvc-update.png)
 
 Tuşuna **yükleme** sonraki iletişim kutusunda eski paketi kaldırın ve yenisini yükleyin.
 
-Her sürümdeki yenilikler hakkında daha fazla bilgi için bkz: [sürüm notları](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-mac-preview-relnotes#team-foundation-version-control-extension--release-notes).
+Her sürümdeki yenilikler hakkında daha fazla bilgi için bkz: [sürüm notları](/visualstudio/releasenotes/vs2017-mac-preview-relnotes#team-foundation-version-control-extension--release-notes).
 
 ## <a name="using-the-add-in"></a>Eklenti kullanma
 
 Uzantıyı yükledikten sonra seçin **sürüm denetimi > TFS/Azure DevOps > Uzak depodan açık** menü öğesi.
 
-  ![Uzantı açmak için menü öğesi](media/tfvc-source-control-explorer-devops.png)
+![Uzantı açmak için menü öğesi](media/tfvc-source-control-explorer-devops.png)
 
 VSTS veya Team Foundation Server kullanmaya başlayın ve basın seçin **devam**:
 
-  ![Bir sunucuyla bağlanma](media/tfvc-choose-server-type-devops.png)
+![Bir sunucuyla bağlanma](media/tfvc-choose-server-type-devops.png)
 
 ### <a name="azure-repos-authentication"></a>Azure depoları kimlik doğrulaması
 
 Azure depoları üzerinde barındırılan bir proje seçtiğinizde, Microsoft hesabı ayrıntılarını girin istenir:
 
-  ![Azure depoları ile bağlanma](media/tfvc-vsts-login.png)
+![Azure depoları ile bağlanma](media/tfvc-vsts-login.png)
 
 ### <a name="tfs-authentication"></a>TFS kimlik doğrulaması
 
@@ -71,7 +71,7 @@ TFS'ye bağlanmak için sunucu ayrıntıları ve hesap kimlik bilgilerinizi giri
 
 Başarıyla kimlik doğrulaması yaptınız sonra hesabı ile ilişkili olan depolar listesini görebilirsiniz **kaynak denetiminden Aç** iletişim:
 
-  ![Kaynak denetimi iletişim kutusunda görüntülenen projeleri ile Aç](media/tfvc-vsts-projects.png)
+![Kaynak denetimi iletişim kutusunda görüntülenen projeleri ile Aç](media/tfvc-vsts-projects.png)
 
 Bu iletişim kutusunda, aşağıdaki düğümleri düzenlenmiştir:
 
@@ -188,3 +188,7 @@ Doğru ayrıcalıklara sahip değilseniz, sunucu üzerinde olan projeler görün
 - Çalışma alanı adı geçersiz karakterler markaları kullanılamaz.
 - Ad 64 karakterden kısa olmalıdır.
 - Yerel yol diğer çalışma alanları tarafından kullanılamaz.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Geliştirin ve kodunuzu Visual Studio (Windows üzerinde) kullanarak tfvc'de paylaşma](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

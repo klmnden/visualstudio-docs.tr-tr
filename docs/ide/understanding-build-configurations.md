@@ -27,16 +27,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bb8395d0e0a3b7d4295577cd86568cf15f0db3d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3e361b407d013f27f3cf76d1ff0da98aa36c3c8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901196"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349055"
 ---
 # <a name="understand-build-configurations"></a>Derleme yapılandırmalarını anlama
 
 Çözüm ve proje özelliklerini farklı türde yapılar kullanmak üzere farklı yapılandırmaları depolayabilirsiniz. Oluşturma, seçin, değiştirmek veya bir yapılandırmayı silmek için kullanabileceğiniz **Configuration Manager**. Menü çubuğundan açmak için seçin **derleme** > **Configuration Manager**, veya yazmanız yeterlidir **yapılandırma** içinde **hızlı başlatma**kutusu. Ayrıca **çözüm yapılandırmaları** listesini **standart** bir yapılandırma seçin veya açmak için araç **Configuration Manager**.
+
+> [!NOTE]
+> Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [derleme Mac için Visual Studio'da yapılandırmaları](/visualstudio/mac/configurations).
 
 > [!NOTE]
 > Çözüm, araç çubuğundan yapılandırma ayarları bulunamıyor ve erişemiyor **Configuration Manager**, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] geliştirme ayarları uygulanabilir. Daha fazla bilgi için [nasıl yapılır: Visual Basic Geliştirici ayarları uygulanmış yapılandırmalarını yönetme](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
@@ -51,7 +54,7 @@ Her giriş **proje bağlamları** bir çözüm yapılandırması kutusunda çöz
 
 > [!NOTE]
 > Ne zaman yeni bir çözüm yapılandırması tanımlama ve seçme **yeni proje yapılandırmaları oluşturma** onay kutusunu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yeni yapılandırma tüm projeleri için otomatik olarak atar. Benzer şekilde, zaman, yeni bir çözüm platformu tanımlama ve seçme **yeni proje platformları Oluştur** onay kutusunu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yeni platformu tüm projeleri için otomatik olarak atar. Ayrıca, yeni bir platformu hedefleyen bir projeye eklerseniz, Visual Studio, platform çözüm platformları listesine ekler ve tüm projeleri yeniden atar.
-> 
+>
 > Yine de her proje için ayarları değiştirebilirsiniz.
 
 Etkin çözüm yapılandırmasını, ayrıca IDE bağlamı sağlar. Örneğin, bir proje üzerinde çalışıyorsanız ve belirten yapılandırma, bir mobil cihaz için oluşturulacak **araç kutusu** bir mobil cihaz projesinde kullanılan öğeleri görüntüler.
@@ -92,3 +95,4 @@ Etkin çözüm yapılandırmasını, ayrıca IDE bağlamı sağlar. Örneğin, b
 - [Projeler ve çözümler](../ide/solutions-and-projects-in-visual-studio.md)
 - [C/C++ derleme başvurusu](/cpp/build/reference/c-cpp-building-reference)
 - [Devenv komut satırı anahtarları](../ide/reference/devenv-command-line-switches.md)
+- [Derleme yapılandırmaları (Mac için Visual Studio)](/visualstudio/mac/configurations)

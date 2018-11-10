@@ -7,18 +7,18 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: a2f813bee641b55b52ad3611c155bd273345ba73
-ms.sourcegitcommit: 9e796d8a8b737ed9d5bf024db89b1abf99ea809b
+ms.openlocfilehash: d42103d17b64ee9b3fb2a0660017824490655808
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42624105"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294025"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Oluşturma ve özel bir EditorConfig dosyasını düzenleme
 
 Mac için Visual Studio'da ekleyebileceğiniz bir [EditorConfig](http://editorconfig.org/) projenizi veya çözümünüzü tutarlı kodlama uygulamak için dosya stiller herkes kod temelinde çalışır. EditorConfig dosyasında bildirilen ayarları için Mac metin düzenleyici ayarları genel Visual Studio önceliklidir. Bir EditorConfig kullanarak projeniz dosya ya da kod tabanı, kodlama stili tercihleri ve projeniz için uyarılar ayarlamanıza olanak tanır. Dosyayı kod temelinizde bir parçası olduğundan, tüm kullanıcıların kullandıkları IDE ya da kod düzenleyicinizi bakılmaksızın, bir projenin kodlama uygulamalarını izliyor kolaylaştırır.
 
-[EditorConfig](http://editorconfig.org/) dosyaları, Visual Studio 2017'de dahil olmak üzere birçok IDE ve kod düzenleyicilerini üzerinde desteklenir. 
+[EditorConfig](http://editorconfig.org/) dosyaları, Visual Studio 2017'de dahil olmak üzere birçok IDE ve kod düzenleyicilerini üzerinde desteklenir.
 
 ## <a name="supported-settings"></a>Desteklenen ayarlar
 
@@ -33,15 +33,15 @@ Mac için Visual Studio düzenleyicisinde çekirdek kümesini destekleyen [Edito
 - `insert_final_newline`
 - `root`
 
-EditorConfig da destekler [kodlama kuralları](https://docs.microsoft.com/visualstudio/ide/editorconfig-code-style-settings-reference) C#.
+EditorConfig da destekler [kodlama kuralları](/visualstudio/ide/editorconfig-code-style-settings-reference) C#.
 
 ## <a name="add-an-editorconfig-file-to-a-project"></a>EditorConfig dosyası bir projeye ekleyin.
 
 ### <a name="adding-a-new-editorconfig-file"></a>Yeni bir EditorConfig dosya ekleme
 
-1. Mac için Visual Studio projenizi açın EditorConfig dosyasına eklemek istediğiniz çözümü veya proje düğümünü seçin. Çözüm dizinine dosya ekleme, Çözümdeki tüm projelere .editorconfig ayarlarını uygular. 
+1. Mac için Visual Studio projenizi açın EditorConfig dosyasına eklemek istediğiniz çözümü veya proje düğümünü seçin. Çözüm dizinine dosya ekleme, Çözümdeki tüm projelere .editorconfig ayarlarını uygular.
 
-2. Sağ tıklatın ve düğüm **Ekle > yeni dosya...** açmak için **yeni dosya** iletişim:
+2. Sağ tıklatın ve düğüm **Ekle > yeni dosya** açmak için **yeni dosya** iletişim:
 
     ![İçerik menü öğeleri](media/editorconfig-image0.png)
 
@@ -76,13 +76,13 @@ EditorConfig da destekler [kodlama kuralları](https://docs.microsoft.com/visual
 
 ### <a name="adding-an-existing-editorconfig-file"></a>Mevcut bir EditorConfig dosyasını ekleme
 
-Çalıştığınız bir proje veya çözüm zaten içeren bir `.editorconfig` dosya, ayarları uygulamak için gerçekleştirmeniz gereken bir şey yoktur. Yeni bir kod satırlarını EditorConfig ayarlarına göre biçimlendirilir. 
+Çalıştığınız bir proje veya çözüm zaten içeren bir `.editorconfig` dosya, ayarları uygulamak için gerçekleştirmeniz gereken bir şey yoktur. Yeni bir kod satırlarını EditorConfig ayarlarına göre biçimlendirilir.
 
 Mevcut bir yeniden kullanmak isteyebileceğiniz `.editorconfig` projenizdeki dosya. Varolan bir dosyayı eklemek için aşağıdakileri yapın:
 
-1. Seçin ve eklemek istediğiniz klasörü sağ tıklatın **Ekle > Dosya Ekle...** .
+1. Seçin ve eklemek istediğiniz klasörü sağ tıklatın **Ekle > Add Files**.
 
-2. Gerekli dosyanın dizinine gidin. 
+2. Gerekli dosyanın dizinine gidin.
 
 3. İle başlayan dosyaları `.` (gibi `.editorconfig`) gizli dosyalar macOS, bu nedenle basın **Command + Shift +.** yapmak `.editorconfig` dosya görünür.
 
@@ -104,9 +104,7 @@ Ayarları yansıtacak şekilde `.editorconfig` dosya, çözüm düğümü seçin
 
 ## <a name="editing-an-editorconfig-file"></a>EditorConfig dosyasını düzenleme
 
-
 EditorConfig dosyaları basit dosya düzeni kullanarak önceki örneğin aşağıda açıklanan ayarlarını belirtmek için kullanın:
-
 
 ```EditorConfig
 # This file is the top-most EditorConfig file
@@ -123,7 +121,7 @@ trim_trailing_whitespace = false
 csharp_new_line_before_open_brace = none
 ```
 
-Ayarı `root` için `true` bu dosya en üstteki dosyası kod tabanının ve daha olarak işaretleyecektir `.editorconfig` projesindeki dosyalar yoksayılacak, açıklandığı şekilde [EditorConfig ayarlarını geçersiz kıl](#override-editorconfig-settings) bölümü.
+Ayarı `root` için `true` en üstteki dosyası olarak kod tabanının ve daha bu dosyayı işaretler `.editorconfig` projesindeki dosyalar yok sayılır açıklandığı şekilde [EditorConfig ayarlarını geçersiz kıl](#override-editorconfig-settings) bölümü.
 
 Her bölümde kare gösterilir (**[]**) küme ayraçları ve bilgi aşağıdaki özellikleri ilgilidir dosya türlerini belirtir.
 
@@ -137,11 +135,11 @@ Yukarıdaki örnekte, projedeki tüm dosyalar için bazı ayarlar uygulanır ve 
 
 ![editorconfig ayarları uygulandıktan sonra](media/editorconfig-image5.png)
 
-EditorConfig kullanılabilir ayarlar hakkında daha fazla bilgi için bkz. [.NET kodlama kuralı ayarlarına EditorConfig için](https://docs.microsoft.com/visualstudio/ide/editorconfig-code-style-settings-reference) makale ve [desteklenen özellikleri](http://editorconfig.org/#supported-properties) resmi belgelerine bölümü.
+EditorConfig kullanılabilir ayarlar hakkında daha fazla bilgi için bkz. [.NET kodlama kuralı ayarlarına EditorConfig için](/visualstudio/ide/editorconfig-code-style-settings-reference) makale ve [desteklenen özellikleri](http://editorconfig.org/#supported-properties) resmi belgelerine bölümü.
 
 ## <a name="override-editorconfig-settings"></a>EditorConfig ayarlarını geçersiz kıl
 
-Birden fazla olması mümkündür `.editorconfig` dosyasında her bir çözüm. Visual Studio Mac okuma için `.editorconfig` çözümde alt üst dosyaları, ekleme ve bu ayarlarda geçersiz kılma gider. Ayarları buna `.editorconfig` _en yakın_ düzenlediğiniz dosya öncelikli olur. Ayarları verilerinden alınır `.editorconfig` dosyası (varsa) aynı klasörü sonra `.editorconfig` (varsa) üst klasörü, vs. Bu bulana kadar `root=true`.  
+Birden fazla olması mümkündür `.editorconfig` dosyasında her bir çözüm. Visual Studio Mac okuma için `.editorconfig` çözümde alt üst dosyaları, ekleme ve bu ayarlarda geçersiz kılma gider. Ayarları buna `.editorconfig` _en yakın_ düzenlediğiniz dosya öncelikli olur. Ayarları verilerinden alınır `.editorconfig` dosyası (varsa) aynı klasörü sonra `.editorconfig` (varsa) üst klasörü, vs. Bu bulana kadar `root=true`.
 
 Emin olmak istiyorsanız _hiçbir_ ayarlarından herhangi üst düzey `.editorconfig` dosyaları kod tabanının kısmına uygulanır, ekleme `root=true` en düşük düzeyli özelliğini `.editorconfig` dosyası:
 
@@ -149,3 +147,7 @@ Emin olmak istiyorsanız _hiçbir_ ayarlarından herhangi üst düzey `.editorco
 # top-most EditorConfig file
 root = true
 ```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [EditorConfig (Windows için Visual Studio) ile özel düzenleyici ayarları oluşturma](/visualstudio/ide/create-portable-custom-editor-options)

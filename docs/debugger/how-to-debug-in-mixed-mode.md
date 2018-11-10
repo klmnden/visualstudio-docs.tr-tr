@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: karışık modda hata ayıklama | Microsoft Docs'
 ms.custom: ''
-ms.date: 06/19/2018
+ms.date: 11/05/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a08cf3cf95073d06c1dfa350f2de86bf72837c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2ef87a1f9fd90395a9a1f5c99ad6e8090b13304e
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182682"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295481"
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>Nasıl yapılır: karışık modda hata ayıklama
 Aşağıdaki yordamlar, yönetilen ve yerel kod birlikte, olarak da bilinen karışık mod hata ayıklama için hata ayıklamayı nasıl etkinleştireceğinizi açıklar. İki karma mod hata ayıklama senaryoları şunlardır:  
@@ -58,9 +58,12 @@ Hem yönetilen hem de yerel hata ayıklayıcıları çağıran uygulama projenin
    
 1. Seçin **hata ayıklama** sekmesine tıklayın ve ardından **yerel kod hata ayıklamayı**.
    
-1. Kullanım **dosya** > **seçili öğeleri Kaydet** veya **Ctrl + S** değişiklikleri kaydedin.
+1. Değişiklikleri kaydetmek için Özellikler sayfasını kapatın.
 
    ![Yerel kod hata ayıklamayı](../debugger/media/dbg-mixed-mode-from-csharp.png "yerel kod hata ayıklamayı etkinleştir")
   
+>[!NOTE]
+>Çoğu Visual Studio 2017 sürümünde kullanmalısınız *launchSettings.json* dosya yerine bir .NET Core uygulaması yerel kod için karışık mod hata ayıklamayı etkinleştirmek için proje özellikleri. Ayrıntılar için bkz [yönetilen ve yerel kodda hata ayıklama](../debugger/how-to-debug-managed-and-native-code.md).
+
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Nasıl yapılır: DLL Projesinde hata ayıklama](../debugger/how-to-debug-from-a-dll-project.md)

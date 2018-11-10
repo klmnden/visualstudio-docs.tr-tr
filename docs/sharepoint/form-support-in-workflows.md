@@ -16,15 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b2ccffd384bd508998f2d82098a99835f59ad641
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 27e8ab6651c6838de92b8a3d83311ebd47fabcbb
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908788"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296196"
 ---
 # <a name="form-support-in-workflows"></a>İş akışlarında form desteği
-  Bir iş akışında formlarının dört türleri kullanılabilir: İlişkilendirme ve başlatma, görev ve değiştirme. Bu form türleri ASPX form ya da bir InfoPath formunu temel alabilir. Destek düzeyini [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] belirli bir form aşağıdaki tablolarda açıklanan çeşitli etkenlere bağlıdır sağlar. İş akışı form türleri hakkında daha fazla bilgi için bkz. [iş akışı Forms'a genel bakış](http://go.microsoft.com/fwlink/?LinkId=185228) MSDN Web sitesinde.  
+  Bir iş akışında formlarının dört türleri kullanılabilir: İlişkilendirme ve başlatma, görev ve değiştirme. Bu form türleri ASPX form ya da bir InfoPath formunu temel alabilir. Destek düzeyini [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] belirli bir form aşağıdaki tablolarda açıklanan çeşitli etkenlere bağlıdır sağlar. İş akışı form türleri hakkında daha fazla bilgi için bkz. [iş akışı Forms'a genel bakış](http://go.microsoft.com/fwlink/?LinkId=185228).  
   
 ## <a name="xml-refactoring"></a>XML yeniden düzenleme
  Bir ASPX ilişkilendirme veya başlatma formu eklediğinizde bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] iş akışı projesine [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] iş akışının XML otomatik olarak yeniden düzenler *Elements.xml* ilişkilendirmesine başvuran öznitelik korumak için dosya veya başlatma formu form adı veya dağıtım yolu güncelleştirildiğinde eşitlenmiş veya formun silinir. Ancak, diğer form türlerini kullandığınızda, bir görev veya değişiklik formu gibi bir iş akışında *Elements.xml* dosya yeniden değil.  

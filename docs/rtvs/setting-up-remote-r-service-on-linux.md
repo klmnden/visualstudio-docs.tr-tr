@@ -11,12 +11,12 @@ ms.reviewer: karthiknadig
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: fa985b88e5857d12324f25a5bd1581ca3f9e211e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 81a0a5c26e91056e757bc6e6f68cd217e98c7e06
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667931"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220820"
 ---
 # <a name="remote-r-service-for-linux"></a>Linux için Uzak R Hizmeti
 
@@ -108,7 +108,7 @@ Her durumda, uzak bilgisayarda yüklü aşağıdaki R yorumlayıcı birine sahip
 
 ### <a name="windows-subsystem-for-linux-wsl"></a>Linux (WSL) için Windows alt sistemi
 
-1. Ya da WSL yükleme yönergelerini izleyin [Windows 10](https://msdn.microsoft.com/commandline/wsl/install-win10) veya [Windows Server](https://msdn.microsoft.com/en-us/commandline/wsl/install-on-server).
+1. Ya da WSL yükleme yönergelerini izleyin [Windows 10](/windows/wsl/install-win10#install-the-windows-subsystem-for-linux) veya [Windows Server](/windows/wsl/install-on-server#enable-the-windows-subsystem-for-linux-wsl).
 1. Windows üzerinde bash'i başlatın ve önceki yönergeleri izleyerek bir [fiziksel Ubuntu bilgisayar](#physical-ubuntu-computer) bir özel durum. Adım 3 komutunu kullanarak hizmeti başlatın `rtvsd`yerine WSL systemd/systemctl arabirimleri şu anda desteklemediği için.
 
 ### <a name="local-or-remote-docker-container-clean-build"></a>Yerel veya uzak Docker kapsayıcısı (temiz yapı)

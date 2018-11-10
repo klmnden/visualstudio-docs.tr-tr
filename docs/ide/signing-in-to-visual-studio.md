@@ -11,16 +11,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67207d653d7300ecc5d0a7ae7a85ddea1bc0d7e9
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: e947ec99ff0d63f413e00f5602035a7baa0bd708
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542500"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348348"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio’da oturum açma
 
 Kişiselleştirin ve kişiselleştirme hesabınız IDE açarak ayarlarsanız, Visual Studio'daki geliştirme deneyiminizi en iyi duruma getirme.
+
+> [!NOTE]
+> Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [oturum açmak için Visual Studio Mac için](/visualstudio/mac/signing-in).
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Neden Visual Studio'da oturum açmam gerekiyor?
 
@@ -68,3 +71,5 @@ Oturum açma sırasında herhangi bir sorunla karşılaşırsanız, bkz. Lütfen
 
 * [Visual Studio’nun Kilidini Açma](../ide/how-to-unlock-visual-studio.md)
 * [Visual Studio IDE’ye Genel Bakış](../ide/visual-studio-ide.md)
+* [Oturum açma (Mac için Visual Studio)](/visualstudio/mac/signing-in)
+* [Etkinleştirme (Mac için Visual Studio)](/visualstudio/mac/activation)

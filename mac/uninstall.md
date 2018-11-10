@@ -1,25 +1,25 @@
 ---
-title: Mac için Visual Studio'yu kaldırma
+title: Mac için Visual Studio'yu kaldırın
 description: Mac ve ilgili araçlar için Visual Studio kaldırma yönergeleri.
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 2c74cf7ddd78bee538a3d37d7e4c4daa4556e3c9
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 4a0ecef49d8c3493ff6094be66f1d05ad588077c
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624315"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295676"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Mac için Visual Studio'yu kaldırma
 
 Mac için Visual Studio gibi tek başına uygulamalar dahil olmak üzere, platformlar arası uygulama geliştirmeyi sağlayan Xamarin ürünlerin birçok
 
-İlgili bölüme gidilerek ayrı ayrı her ürün kaldırmak için bu kılavuzu kullanın veya sağlanan betikleri kullanmaya [kaldırma betiği](#uninstall-script) her şeyi kaldırmak için bölümü.
+İlgili bölüme gidilerek ayrı ayrı her ürün kaldırmak için bu kılavuzu kullanabilirsiniz veya sağlanan betikleri kullanabilir [kaldırma betiği](#uninstall-script) her şeyi kaldırmak için bölümü.
 
-Xamarin Studio makinenizde yüklü vardı, ayrıca yönergeleri gerekebilir [kullanıcının Xamarin kaldırma](https://docs.microsoft.com/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac) Kılavuzu, aşağıdaki adımları yanı sıra.
+Xamarin Studio makinenizde yüklü vardı, ayrıca yönergeleri gerekebilir [kullanıcının Xamarin kaldırma](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac) Kılavuzu, aşağıdaki adımları yanı sıra.
 
 ## <a name="uninstall-script"></a>Betik kaldırma
 
@@ -41,7 +41,7 @@ Makalede bulabilirsiniz komutların çoğu bu kaldırma betiğini içerir. Komut
 
 Betiği çalıştırmak için aşağıdaki adımları uygulayın:
 
-1. Sağ tıklatın ve betik **Farklı Kaydet...** mac'inizde dosyayı kaydetmek için
+1. Sağ tıklatın ve betik **Kaydet** mac'inizde dosyayı kaydetmek için
 2. Terminali açın ve komut dosyasını indirdiğiniz için çalışma dizinini değiştirin:
 
     ```bash
@@ -61,7 +61,7 @@ Betiği çalıştırmak için aşağıdaki adımları uygulayın:
 
 Betiği çalıştırmak için aşağıdaki adımları uygulayın:
 
-1. Sağ tıklatın ve betik **Farklı Kaydet...** mac'inizde dosyayı kaydetmek için
+1. Sağ tıklatın ve betik **Kaydet** mac'inizde dosyayı kaydetmek için
 2. Terminali açın ve komut dosyasını indirdiğiniz için çalışma dizinini değiştirin:
 
     ```bash
@@ -81,9 +81,9 @@ Visual Studio'yu bir Mac bilgisayardan kaldırmak ilk adımı bulmaktır **Visua
 
 ![Visual Studio uygulamaya çöp Taşı](media/uninstall-image1.png)
 
-Olabilir yine de bir dosya sisteminde Xamarin için ilgili diğer dosyaları rağmen bu uygulama paketi grubu silme, Mac için Visual Studio kaldırır.
+Olabilir yine de dosya sisteminde Xamarin için ilgili diğer dosyaları rağmen bu uygulama paketi grubu silme, Mac için Visual Studio kaldırır.
 
-Mac için Visual Studio'nun tüm izlemeleri kaldırmak için terminalde aşağıdaki komutları çalıştırılmalıdır:
+Mac için Visual Studio'nun tüm izlemeleri kaldırmak için terminalde aşağıdaki komutları çalıştırın:
 
 ```bash
 sudo rm -rf "/Applications/Visual Studio.app"
@@ -136,8 +136,7 @@ Bunu zaten Mac OS X bir parçası olarak önceden paketlenmiş olarak Java SDK (
 ### <a name="uninstall-android-avd"></a>Android AVD kaldırma
 
 > [!WARNING]
-> Ayrıca Android AVD ve Android Studio gibi ek bu android bileşenlerini kullanan diğer uygulamalar Visual Studio dışında Mac için vardır.
-> Bu dizin kaldırılırken projeleri Android Studio'da kesmesine neden olabilir. 
+> Ayrıca Android AVD ve Android projeleri Android Studio'da ayırmak bu dizin neden Studio.Removing gibi ek bu android bileşenlerini kullanan diğer uygulamalar Visual Studio dışında Mac için vardır.
 
 Herhangi bir ek Android ve Android AVDs kaldırmak için bileşenleri aşağıdaki komutu kullanın:
 
@@ -151,11 +150,9 @@ Kaldırmak için yalnızca Android AVDs aşağıdaki komutu kullanın:
 rm -rf ~/.android/avd
 ```
 
- 
-
 ## <a name="uninstall-xamarinios"></a>Xamarin.iOS kaldırma
 
-Xamarin.iOS iOS C# veya F # Mac için Visual Studio ile kullanarak uygulama geliştirme sağlar.
+Xamarin.iOS sağlayan iOS kullanarak uygulama geliştirme C# veya F# Mac için Visual Studio ile
 
 Tüm Xamarin.iOS dosyaları dosya sisteminden kaldırmak için terminalde aşağıdaki komutları kullanın:
 
@@ -210,3 +207,7 @@ rm -rf ~/Library/Logs/VisualStudioInstaller/
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
 ```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [(Windows üzerinde) Visual Studio'yu kaldırın](/visualstudio/install/uninstall-visual-studio)

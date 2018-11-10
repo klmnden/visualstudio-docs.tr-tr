@@ -1,7 +1,7 @@
 ---
 title: IntelliTrace genişletilebilirliği için API Başvurusu | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/07/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03f86c1e93de5a2443a91d047c68528f3ec49b08
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 04ac7a4947576b8c06741ac2c407c35e3663acd0
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153510"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349523"
 ---
-# <a name="api-reference-for-intellitrace-extensibility"></a>IntelliTrace Genişletilebilirliği için API Başvurusu
+# <a name="api-reference-for-intellitrace-extensibility"></a>IntelliTrace genişletilebilirliği için API Başvurusu
 
 Bu bölümdeki bilgileri kullanarak, okuma ve uygulamanızda .itrace dosyaları kodlayıp kod çözebilirsiniz IntelliTrace genişletilebilirlik API'leri kullanabilirsiniz.  
   
-## <a name="in-this-section"></a>Bu Bölümde
+## <a name="in-this-section"></a>Bu bölümde
 
- Bu IntelliTrace genişletilebilirlik API'leri, bir ad alanında bulunur  
+Bu ad alanı, IntelliTrace genişletilebilirlik API'leri içerir:
   
 - <xref:Microsoft.VisualStudio.IntelliTrace>  
   
-## <a name="related-sections"></a>İlgili Bölümler
+## <a name="related-sections"></a>İlgili bölümler
 
- [IntelliTrace](../debugger/intellitrace.md)  
- IntelliTrace ile hata ayıklama hakkında bilgi sağlar.  
+[IntelliTrace](../debugger/intellitrace.md)  
+IntelliTrace ile hata ayıklama hakkında bilgi sağlar.  
   
- [MSDN Kod Galerisi](https://code.msdn.microsoft.com/)  
- IntelliTrace genişletilebilirliğin nasıl kullanılacağını gösteren bir örnek uygulama barındırır.
+[Geliştirici kodu örnekleri](https://code.msdn.microsoft.com/)  
+IntelliTrace genişletilebilirliğin nasıl kullanılacağını gösteren bir örnek uygulama barındırır.

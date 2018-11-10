@@ -19,16 +19,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eba5c5dc2ec357d9aaf6a5e8f9cdef18102b8da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7c3ba26f014b09624b1a8fec88bed8a5aefa632b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856177"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349697"
 ---
 # <a name="install-visual-studio-2017"></a>Visual Studio 2017'yi yükleyin
 
 Visual Studio'yu yüklemek için yeni bir yolunu Hoş Geldiniz! Bizim en yeni sürüm, seçin ve yalnızca gereksinim duyduğunuz özellikleri yüklemek için daha kolay bir şekilde kolaylaştırdık. Daha hızlı ve daha önce hiç olmadığı kadar sistemi daha az etkileyerek yükler, böylece biz de Visual Studio'nun minimum ayak kısalttık.
+
+> [!NOTE]
+> Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [Mac için Visual Studio](/visualstudio/mac/installation).
 
 Else bu sürümdeki yenilikler hakkında daha fazla bilgi edinmek istiyorsunuz? Bkz. bizim [sürüm notları](/visualstudio/releasenotes/vs2017-relnotes).
 
@@ -69,8 +72,7 @@ Ardından, Visual Studio Yükleyicisi'ni yüklemek için önyükleyici dosyasın
 
    Bir kullanıcı hesabı denetimi bildirim alırsanız tıklayın **Evet**.
 
-2. Microsoft onaylamak için isteriz [lisans koşulları](https://visualstudio.microsoft.com/license-terms/) ve Microsoft [gizlilik bildirimi](https://privacy.microsoft.com/privacystatement). 
-              **Devam**'a tıklayın.
+2. Microsoft onaylamak için isteriz [lisans koşulları](https://visualstudio.microsoft.com/license-terms/) ve Microsoft [gizlilik bildirimi](https://privacy.microsoft.com/privacystatement). **Devam**'a tıklayın.
 
    ![Lisans koşullarını ve gizlilik bildirimini](media/vs2017-privacy-and-license-terms.PNG "Microsoft lisans koşulları ve gizlilik bildirimi")
 
@@ -150,4 +152,4 @@ Daha fazla bilgi için [Visual Studio yükleme konumlarını değiştirme](chang
 * [Visual Studio 2017'yi kaldırın](uninstall-visual-studio.md)
 * [Visual Studio 2017'in çevrimdışı yüklemesini oluşturma](create-an-offline-installation-of-visual-studio.md)
 * [Visual Studio 2017'yi yüklemek için komut satırı parametrelerini kullanma](use-command-line-parameters-to-install-visual-studio.md)
-* [Kurulum ve Mac için Visual Studio yükleme](/visualstudio/mac/installation)
+* [Mac için Visual Studio'yu yükleyin](/visualstudio/mac/installation)

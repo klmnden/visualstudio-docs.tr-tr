@@ -12,12 +12,12 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03f6d1e6f9f8e1b19d18bb1372383d2127a3cdb5
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 4394fe8d7920f4127f5043808003d400bc991590
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750500"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220976"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe komut satırı seçenekleri
 
@@ -41,10 +41,10 @@ ms.locfileid: "50750500"
 |**/ Enablecodecoverage**|Veri tanılama bağdaştırıcısı CodeCoverage'test çalıştırması sağlar.<br />Varsayılan ayarlar kullanılır belirtilmezse ayar dosyası kullanılarak.|
 |**/ Inısolation**|Testleri yalıtılmış bir işlemde çalıştırır.<br />Bu yalıtım sağlar *vstest.console.exe* büyük olasılıkla daha az bir hata sırasında durdurulması işlemi, ancak testleri daha yavaş çalıştırabilirsiniz.|
 |**/ UseVsixExtensions**|Bu seçenek yapar *vstest.console.exe* işlem kullanın veya (varsa) test çalıştırmasında yüklü VSIX uzantılarını atlayabilirsiniz.<br />Bu seçeneği kullanım dışı bırakılmıştır. Bu seçenek, Visual Studio'nun sonraki ana sürümüne başlangıç kaldırılabilir. Bir NuGet paketi olarak sunulan uzantıları kullanma için taşıyın.<br />Örnek: `/UseVsixExtensions:true`|
-|**/ TestAdapterPath: [*yolu*]**|Zorlar *vstest.console.exe* işleminin test çalıştırmasında özel test bağdaştırıcılarını belirtilen yoldan (varsa) kullanın.<br />Örnek: `/TestAdapterPath:&lt;pathToCustomAdapters&gt;`|
+|**/ TestAdapterPath: [*yolu*]**|Zorlar *vstest.console.exe* işleminin test çalıştırmasında özel test bağdaştırıcılarını belirtilen yoldan (varsa) kullanın.<br />Örnek: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/ Platform: [*platform türü*]**|Test çalıştırması için kullanılacak hedef platform mimarisi.<br />Geçerli değerler şunlardır: x86, x64 ve ARM.|
 |**/ Framework: [*framework sürümü*]**|Test çalıştırması için kullanılacak hedef .NET Framework sürümü.<br />Geçerli değerler Framework35, Framework40 framework45'tir ve FrameworkUap10:.<br />Hedef Framework'ü olarak belirtilmişse **Framework35**, CLR 4.0 "uyumlu olacak şekilde basitleştirip modu" testleri çalıştırın.<br />Örnek: `/Framework:framework40`|
-|**/ TestCaseFilter: [*ifade*]**|Verili ifadeyle eşleşen testler çalıştırın.<br />< ifade\> biçimi, < özellik\>= < değer\>[&#124;< ifade\>].<br />Örnek: `/TestCaseFilter:"Priority=1"`<br />Örnek: `/TestCaseFilter:"TestCategory=Nightly&#124;FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/Testcasefilter** komut satırı seçeneği ile kullanılamaz **/test** komut satırı seçeneği. <br />Oluşturma ve ifadeleri kullanma hakkında daha fazla bilgi için bkz: [test çalıştırması filtresini](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
+|**/ TestCaseFilter: [*ifade*]**|Verili ifadeyle eşleşen testler çalıştırın.<br />< ifade\> biçimi, < özellik\>= < değer\>[\|< ifade\>].<br />Örnek: `/TestCaseFilter:"Priority=1"`<br />Örnek: ' / TestCaseFilter: "TestCategory = gece|FullyQualifiedName=Namespace.ClassName.MethodName"'<br />**/Testcasefilter** komut satırı seçeneği ile kullanılamaz **/test** komut satırı seçeneği. <br />Oluşturma ve ifadeleri kullanma hakkında daha fazla bilgi için bkz: [test çalıştırması filtresini](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Kullanım bilgilerini görüntüler.|
 |**/ Logger: [*URI/friendlyname*]**|Test sonuçları için bir Günlükçü belirtin.<br />Örnek: sonuçları bir Visual Studio Test sonuçları dosyası (TRX) oturum açmak için kullanmak **/Logger:trx**.<br />Örnek: Team Foundation Server test sonuçlarını yayımlamak için TfsPublisher kullanın:<br />**/Logger:TfsPublisher;**<br />**Koleksiyon = < url proje\>;**<br />**BuildName = < yapı adı\>;**<br />**TeamProject = < proje adı\>;**<br />**[; Platform = < varsayılan değer: "Herhangi bir CPU" >]**<br />**[; Flavor = < varsayılan değer: "Debug" >]**<br />**[; RunTitle = < başlık\>]**|
 |**/ ListTests: [*dosya adı*]**|Testleri verili test kapsayıcısından bulunan listeler.|

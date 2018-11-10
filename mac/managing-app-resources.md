@@ -5,16 +5,16 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
-ms.openlocfilehash: a2ae5dead3dac49938b49f7a7ee7a85679492732
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: e4182bdcc8e2a97b152d5548b07cd03a152607ff
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624157"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296378"
 ---
 # <a name="managing-app-resources"></a>Uygulama kaynaklarını yönetme
 
-Uygulama kaynak dosyaları, resimleri, metin dosyalarını ve ses dosyaları gibi uygulamanız için gerekli olan, ancak uygulama ile derlenmiş değil. Mac için Visual Studio tarafından desteklenen her platform bu kaynakları aşağıdaki yönergelerde açıklandığı gibi farklı yollarla işler:
+Uygulama kaynak dosyaları, resimleri, metin dosyalarını ve ses dosyaları gibi uygulamanız için gerekli olan ancak uygulama ile derlenmiş değil. Mac için Visual Studio tarafından desteklenen her platform bu kaynakları aşağıdaki yönergelerde açıklandığı gibi farklı yollarla işler:
 
 ## <a name="xamarinforms"></a>Xamarin.Forms
 
@@ -23,13 +23,11 @@ Her biri kendi dosya sistemi sahip birden çok platformda - Xamarin.Forms kodu �
 * [Görüntülerle Çalışma](https://developer.xamarin.com/guides/xamarin-forms/user-interface/images/)
 * [Dosyalarla Çalışma]( https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/files/)
 
-
 ## <a name="xamarinios"></a>Xamarin.iOS
 
 * [Kaynakları ile çalışma](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_resources/)
 * [Görüntülerle Çalışma](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/)
 * [Dosya sistemi ile çalışma](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_the_file_system/)
-
 
 ## <a name="xamarinandroid"></a>Xamarin.Android
 
@@ -39,4 +37,6 @@ Her biri kendi dosya sistemi sahip birden çok platformda - Xamarin.Forms kodu �
 
 * [Görüntülerle Çalışma](https://developer.xamarin.com/guides/mac/application_fundamentals/working-with-images/)
 
+## <a name="see-also"></a>Ayrıca bkz.
 
+- [(Windows için Visual Studio) uygulama kaynaklarını yönetme](/visualstudio/ide/managing-application-resources-dotnet)

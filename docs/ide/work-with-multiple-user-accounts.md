@@ -9,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0eaba2b81467c60e900aa70b633e15b81175ffc7
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 33f88444d7bbdc0b0fe85bfa5efbdbbd794fa3e4
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283476"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349401"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Birden çok kullanıcı hesabıyla çalışma
 
@@ -80,3 +80,4 @@ Artık Git **Sunucu Gezgini** tekrar sağ tıklayın **Azure** düğüm ve **yö
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio’da oturum açma](signing-in-to-visual-studio.md)
+- [Oturum açmak için Visual Studio Mac için](/visualstudio/mac/signing-in)

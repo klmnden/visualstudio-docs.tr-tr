@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93335be347e9c2ae66045bc49f9609d6cb3a929d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: deddf46a479e0ab8d4e0bebbaf3fffe4d90b622d
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379780"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51293453"
 ---
 # <a name="sample-code-for-testing"></a>Test için örnek kod
 
@@ -27,7 +27,7 @@ Bu örnek kod içeren bir sınıf *BankAccount*, çeşitli yöntemlerle ile biri
 Kod, aşağıdaki yönergelerde kullanılır:
 
 - [Yönetilen kod için birim testleri oluşturma ve çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Bu izlenecek yol, oluşturma ve birim testlerini özelleştirme, bunları çalıştırmak ve test sonuçları inceleyin adımlarında size yol gösterir.
-- [Komut satırı test yardımcı programını kullanarak](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). Bu kılavuzda, kullandığınız *MSTest.exe* testleri çalıştırmak ve sonuçları görüntülemek için komut satırı yardımcı programı.
+- [Komut satırı test yardımcı programını kullanarak](https://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). Bu kılavuzda, kullandığınız *MSTest.exe* testleri çalıştırmak ve sonuçları görüntülemek için komut satırı yardımcı programı.
 
 ## <a name="sample-code"></a>Örnek kod
 
@@ -135,4 +135,4 @@ Bu kod ile çalışmak için önce bir proje için Visual Studio içinde oluştu
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [İzlenecek yol: Oluşturma ve yönetilen kod için birim testleri çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
-- [İzlenecek yol: komut satırı test yardımcı programını kullanın.](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)
+- [İzlenecek yol: komut satırı test yardımcı programını kullanın.](https://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)

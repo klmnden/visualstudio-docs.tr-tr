@@ -95,16 +95,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bcb994c0ee79cb36e1c2e2db792346842194c73
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 5dcdcffbcf947efa7da8471a970d07a23fe90ba4
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176547"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349296"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Tümleşik yazılım geliştirme ortamı hatalarında sorun giderme kaynakları
 
 Tüm hata iletilerini belirli ilişkili bir Yardım konusu var. Hata iletisindeki bilgiler sorunu gidermenize yardımcı değil Bilgi Bankası makaleleri, Forum veya ürün desteği gibi diğer kaynaklara başvurabilirsiniz.
+
+> [!NOTE]
+> Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [Mac için Visual Studio sorunlarını giderme](/visualstudio/mac/troubleshooting).
 
 ## <a name="knowledge-base-articles"></a>Bilgi Bankası makaleleri
 
@@ -123,3 +126,4 @@ Diğer kaynakları denedikten sonra hala sorularınız varsa, ziyaret ederek Mic
 ## <a name="see-also"></a>Ayrıca bkz.
 
 * [Ağ ile ilgili sorun giderme veya Ara sunucu hataları](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
+* [Sorun giderme (Mac için Visual Studio)](/visualstudio/mac/troubleshooting)

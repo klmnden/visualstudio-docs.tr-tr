@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57898fbcfba72c67b199ea584d494cb96dfbf491
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 473f46e87ded78e134ab021b68c57248f8ac1a33
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811847"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349211"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Erişilebilirlik ipuçları ve püf noktaları için Visual Studio
 
@@ -26,6 +26,9 @@ ms.locfileid: "49811847"
 > Son erişilebilirlik güncelleştirmeleri hakkında daha fazla bilgi için bkz: [erişilebilirlik geliştirmeleri Visual Studio 2017 sürüm 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog gönderisi.
 
 Visual Studio, ekran okuyucuların ve diğer yardımcı teknolojiler ile uyumlu olan yerleşik erişilebilirlik özelliği içerir. Bu konu, yalnızca klavyeyle veya görevleri gerçekleştirmek için kullanabilirsiniz ve yüksek karşıtlıklı tema görünürlüğünü artırmak için kullanma hakkında bilgi içeren ortak kısayol tuş birleşimleri listeler. De kodunuz hakkında yararlı bilgiler açığa çıkarmak için ek açıklamalar kullanmayı gösterir ve ses ayarlama olayları oluşturma ve kesme noktası için ipuçları.
+
+> [!NOTE]
+> Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [Mac için Visual Studio için erişilebilirlik](/visualstudio/mac/accessibility).
 
 ## <a name="save-your-ide-settings"></a>IDE ayarlarınızı kaydedin
 
@@ -104,3 +107,4 @@ Ses için Visual Studio program olayları atamak için Windows Ses uygulaması k
 * [Nasıl yapılır: menüleri ve Visual Studio araç çubuklarını özelleştirme](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md)
 * [Microsoft Erişilebilirlik](https://www.microsoft.com/Accessibility)
+* [Erişilebilirlik (Mac için Visual Studio)](/visualstudio/mac/accessibility)

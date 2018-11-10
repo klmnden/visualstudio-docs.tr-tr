@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 694f6f10a482318f6c6a1c40e6796e09daac0913
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9576048cb6a62f7a4e8c93456154997af359a711
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942952"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296482"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core kullanmaya başlama
 
@@ -62,7 +62,7 @@ public static void Main(string[] args)
     host.Run();
 }
 ```
-ASP.NET Core uygulaması bir web sunucusunu yapılandırarak ve bir ana bilgisayar örneği aracılığıyla başlatma kendi ana yönteminde oluşturur [ `WebHostBuilder` ](https://docs.microsoft.com/aspnet/core/fundamentals/hosting). Bu oluşturucu yapılandırılması konağın izin vermek için yöntemler sağlar. Şablon uygulaması, aşağıdaki yapılandırmaları kullanılır:
+ASP.NET Core uygulaması bir web sunucusunu yapılandırarak ve bir ana bilgisayar örneği aracılığıyla başlatma kendi ana yönteminde oluşturur [ `WebHostBuilder` ](/aspnet/core/fundamentals/hosting). Bu oluşturucu yapılandırılması konağın izin vermek için yöntemler sağlar. Şablon uygulaması, aşağıdaki yapılandırmaları kullanılır:
 
 * `UseKestrel`: Kestrel sunucusu uygulama tarafından kullanılacak belirtir
 * `UseContentRoot(Directory.GetCurrentDirectory())`: Web projesinin kök klasörüne uygulamanın içerik kök olarak uygulamanın bu klasörden başlattığınızda kullanır
@@ -108,7 +108,7 @@ Bu başlangıç sınıfı, her zaman şu kurallara uymalıdır:
 
 `ConfigureServices` Uygulamanız tarafından kullanılan hizmetler yöntemi tanımlar.
 
-`Configure` İstek kullanarak işlem hattı oluşturmak sağlar [ara yazılım](https://docs.microsoft.com/aspnet/core/fundamentals/middleware). Bunlar içinde bir ASP.NET uygulaması ardışık düzenini isteklerini ve yanıtlarını işlemek için kullanılan bileşenlerdir. HTTP ardışık düzen isteği Temsilciler, sıralı olarak adlandırılan bir dizi oluşur. Her temsilci isteği işlemek veya sonraki bir temsilciye geçirmek seçebilirsiniz.
+`Configure` İstek kullanarak işlem hattı oluşturmak sağlar [ara yazılım](/aspnet/core/fundamentals/middleware). Bunlar içinde bir ASP.NET uygulaması ardışık düzenini isteklerini ve yanıtlarını işlemek için kullanılan bileşenlerdir. HTTP ardışık düzen isteği Temsilciler, sıralı olarak adlandırılan bir dizi oluşur. Her temsilci isteği işlemek veya sonraki bir temsilciye geçirmek seçebilirsiniz.
 
 Temsilcileri kullanarak yapılandırabilirsiniz `Run`,`Map`, ve `Use` yöntemlerde `IApplicationBuilder`, ancak `Run` yöntemi hiçbir zaman bir sonraki temsilci çağırır ve işlem hattınızı sonunda her zaman kullanılmalıdır.
 
@@ -126,7 +126,7 @@ Tercih ettiğiniz tarayıcıyı açın ve girin `http://localhost:5000/`, deği�
 
 ![Tarayıcı gösteren metin](media/asp-net-core-image7.png)
 
-## <a name="adding-a-controller"></a>Denetleyici ekleme
+## <a name="adding-a-controller"></a>Denetleyici Ekleme
 
 ASP.NET Core uygulamaları için uygulamanın her bir parçasının sorumluluklarını mantıksal bir ayrım sağlamak için Model-View-Controller (MVC) tasarım deseni kullanın. MVC aşağıdakilerden oluşur:
 
@@ -134,7 +134,7 @@ ASP.NET Core uygulamaları için uygulamanın her bir parçasının sorumlulukla
 - **Görünüm**: (çoğunlukla olduğu model verileri), uygulamanın kullanıcı arabirimini görüntüler.
 - **Denetleyici**: kullanıcı girişini ve etkileşimini tarayıcı isteklerini yürüten bir sınıf yanıt verir.
 
-MVC kullanma hakkında daha fazla bilgi için bkz [ASP.NET Core MVC genel bakış](https://docs.microsoft.com/aspnet/core/mvc/overview) Kılavuzu.
+MVC kullanma hakkında daha fazla bilgi için bkz [ASP.NET Core MVC genel bakış](/aspnet/core/mvc/overview) Kılavuzu.
 
 Bir denetleyici eklemek için aşağıdakileri yapın:
 
@@ -233,6 +233,6 @@ Başarıyla .NET Core başarıyla yüklendiğinden emin olmak için tüm dört a
 
 Bu kılavuz, bir ASP.NET Core'a giriş getirdi. Ne, ne zaman, kullanacağınız ise ve Mac için Visual Studio'da sistemlerindeki bilgileri sağlanan açıklar
 Sonraki adımlar buradan hakkında daha fazla bilgi için aşağıdaki kılavuzlara bakın:
-- [ASP.NET Core](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc) belgeleri.
-- [Yerel mobil uygulamalar için arka uç hizmetleri oluşturma](https://docs.microsoft.com/aspnet/core/mobile/native-mobile-backend), bir Xamarin.Forms uygulaması için ASP.NET Core kullanarak REST hizmeti oluşturmak nasıl gösterir.
+- [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc) belgeleri.
+- [Yerel mobil uygulamalar için arka uç hizmetleri oluşturma](/aspnet/core/mobile/native-mobile-backend), bir Xamarin.Forms uygulaması için ASP.NET Core kullanarak REST hizmeti oluşturmak nasıl gösterir.
 - [ASP.NET Core uygulamalı laboratuvarı](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
