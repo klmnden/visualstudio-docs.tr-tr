@@ -5,12 +5,12 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: f2edf4e2a502f8afd7a5cf66113ee2330f899a6d
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
-ms.translationtype: HT
+ms.openlocfilehash: b53de918f51abd03d28173bf00d83d98503e86bd
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294853"
+ms.locfileid: "51348936"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Visual Studio için Unity için Mac araçları kullanarak
 
@@ -111,4 +111,4 @@ Hata ayıklamayı durdurmak için:
 
    ![Visual Studio'da Durdur'u tıklatın](media/using-vsmac-tools-unity-image7.png)
 
-Mac için Visual Studio'da hata ayıklama hakkında daha fazla bilgi için bkz: [hata ayıklayıcıyı kullanma](/visualstudio/mac/debugging).
+Mac için Visual Studio'da hata ayıklama hakkında daha fazla bilgi için bkz: [hata ayıklayıcıyı kullanma](debugging.md).
