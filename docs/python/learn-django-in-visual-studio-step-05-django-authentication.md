@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cc238b6a8ba1a190471d25952a4d7c976ca56b9f
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: cd3dce86104343b6c10bd1329b3ee3cdb7c7ee4f
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120361"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561653"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>5. adım: Django kullanıcıların kimlik doğrulaması
 
@@ -152,24 +152,30 @@ Aşağıdaki adımlar, kimlik doğrulaması akışı alıştırma ve söz konusu
 
 1. Kimliği doğrulanmış kullanıcının belirli kaynaklara erişmek için yetkili olup olmadığını denetlemek için veritabanından kullanıcı özel izinleri gerekir. Daha fazla bilgi için [Django kimlik doğrulama sistemini kullanarak](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Django belgeleri).
 
-1. Süper kullanıcı veya yönetici, özellikle de "/admin/" göreli URL'ler kullanarak yerleşik Django yönetici arabirimi erişmek için yetkili ve "/ Yönetici/doc /". Bu arabirimler etkinleştirmek için Django projenin açın *urls.py* ve açıklamaları aşağıdaki girişlerinden kaldırın:
+1. Süper kullanıcı veya yönetici, özellikle de "/admin/" göreli URL'ler kullanarak yerleşik Django yönetici arabirimi erişmek için yetkili ve "/ Yönetici/doc /". Bu arabirimler etkinleştirmek için aşağıdakileri yapın:
 
-    ```python
-    from django.conf.urls import include
-    from django.contrib import admin
-    admin.autodiscover()
+    1. Ortamınıza docutils Python paketini yükleyin. Bunu yapmak için harika bir "docutils" eklemek için yoludur, *requirements.txt* dosya, ardından **Çözüm Gezgini**, projeyi genişletin, **Python ortamları** düğümünü, ardından bir select kullanmakta olduğunuz ortamın sağ **Requirements.txt'ten Yükle**.
 
-    # ...
-    urlpatterns = [
+    1. Django projenin açın *urls.py* ve varsayılan açıklamaları aşağıdaki girişlerinden kaldırın:
+
+        ```python
+        from django.conf.urls import include
+        from django.contrib import admin
+        admin.autodiscover()
+
         # ...
-        url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-        url(r'^admin/', include(admin.site.urls)),
-    ]
-    ```
+        urlpatterns = [
+            # ...
+            url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+            url(r'^admin/', include(admin.site.urls)),
+        ]
+        ```
 
-    Uygulamayı yeniden başlattığınızda, "/admin/ için" gidebilir ve "/ Yönetici/doc /" ve ek kullanıcı hesapları oluşturmak gibi görevler gerçekleştirebilirsiniz.
+    1. Django projenin *settings.py* gidin, dosya `INSTALLED_APPS` koleksiyonu ve ekleme `'django.contrib.admindocs'`.
 
-    ![Django yönetici arabirimi](media/django/step05-administrator-interface.png)
+    1. Uygulamayı yeniden başlattığınızda, "/admin/ için" gidebilir ve "/ Yönetici/doc /" ve ek kullanıcı hesapları oluşturma gibi görevleri gerçekleştirebilir.
+
+        ![Django yönetici arabirimi](media/django/step05-administrator-interface.png)
 
 1. Son bölümü kimlik doğrulaması akışı için oturum kapatma. İçinde gördüğünüz gibi *loginpartial.html*, **oturumunu** bağlantı göreli URL'si basitçe bir POST yapar "/ oturum açma", yerleşik görünüm tarafından işlenen `django.contrib.auth.views.logout`. Bu görünümde herhangi bir kullanıcı Arabirimi göstermez ve yalnızca giriş sayfasına gider (gösterildiği gibi *urls.py* için "^ oturum kapatma$" deseni). Oturum kapatma sayfasını görüntülemek istiyorsanız, önce şu şekilde bir "þablon_adý" özelliğini ekleyin ve "next_page" özelliği kaldırmak için URL deseni değiştirin:
 

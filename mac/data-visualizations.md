@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: f2d9e05a9325073e2844b0cdce97f2cfb480b880
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 896fa055c536f9f3ee693773ad4f4ae0edd7e7fe
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42623919"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349445"
 ---
 # <a name="data-visualizations"></a>Veri görselleştirmeleri
 
@@ -19,50 +19,46 @@ Mac için Visual Studio kullanıcı Arabirimi hata ayıklama sırasında görsel
 
 Hata ayıklama, görselleştiriciler **yerel** doldurma değeri sağında kullanıcı satırın geldiğinde görüntülenen Önizleme simgesine tıklayarak görüntülenebilir:
 
- ![Yerel paneli](media/data-visualizations-image9.png)
+![Yerel paneli](media/data-visualizations-image9.png)
 
 Mac için Visual Studio'da hata ayıklama sırasında aşağıdaki listede kullanılabilir yeni görselleştirmeler birçoğu arar
 
 ## <a name="point"></a>Noktası
 Bir nokta/noktayı gösteren PointF veya CGPoint iOS ve Mac, hata ayıklama panelinde X ve Y değerleri gösteren bir tanımlama grubu şu şekilde işlenir:
 
- ![Noktası Görselleştirme](media/data-visualizations-image10.png)
+![Noktası Görselleştirme](media/data-visualizations-image10.png)
 
 ## <a name="size"></a>Boyut
-Bir boyut/SizeF veya CGSize iOS ve Mac bir dikdörtgen işlenir. Çizildiğinde, bu noktada, en büyük boyut olarak 250px dikdörtgen ayarlayacaktır 250px, geçmiş bir boyut büyüdükçe kadar ölçeklendirme:
+Bir boyut/SizeF veya CGSize iOS ve Mac bir dikdörtgen işlenir. Çizildiğinde bir boyut 250 büyüdükçe kadar ölçeklendirme piksel, bu noktada, ayarlayacaktır dikdörtgen en büyük boyut 250 piksel:
 
-![Görselleştirme boyutu](media/data-visualizations-image11.png)
-
+[Görselleştirme boyutu](media/data-visualizations-image11.png)
 
 ## <a name="rectangle"></a>Dikdörtgen
-Bir dikdörtgen/RectangleF veya CGRect iOS ve Mac, boyutları ve özgün görüntüler. Benzer şekilde boyutu, çizildiğinde 250px bir boyutu büyüdükçe kadar ölçeklendirme:
+Bir dikdörtgen/RectangleF veya CGRect iOS ve Mac, boyutları ve özgün görüntüler. Benzer şekilde boyutu, çizildiğinde bir boyut 250 büyüdükçe kadar ölçeklendirme px:
 
- ![Dikdörtgen Görselleştirme](media/data-visualizations-image12.png)
+![Dikdörtgen Görselleştirme](media/data-visualizations-image12.png)
 
 ## <a name="coordinate"></a>Koordinatı
 Koordinatları merkezine sabitlenmiş konumunu bir haritada çizilir:
 
-![Koordinat Görselleştirme](media/data-visualizations-image13.png)
+[Koordinat Görselleştirme](media/data-visualizations-image13.png)
 
 ## <a name="color"></a>Renk
 Bu renk Önizleme, RGBA bileşenleri, Hue doygunluğu açıklık değerleri ve rengini onaltılık değerini gösteren UIColor CGColor ve renk özellikleri görüntüler:
 
 ![Renk Görselleştirme](media/data-visualizations-image14.png)
 
-
 ## <a name="images"></a>Görüntüler
 
-Medya en fazla bir 250px, maksimum boyutu için ölçeklendirme işlenir ve görüntünün 250px aştığında sığacak şekilde ölçeklendirilir:
+Medya en fazla 250 olan bir maksimum boyut için ölçeklendirme işlenecek, piksel ve görüntü 250 aştığında uyacak şekilde ayarlanacaktır piksel:
 
- ![Görüntü Görselleştirme](media/data-visualizations-image15.png)
-
+![Görüntü Görselleştirme](media/data-visualizations-image15.png)
 
 ## <a name="bezier-curves"></a>Bezier eğrileri
 
 Görselleştiriciyi görüntüleyecek bir `NSBezierPath`:
 
 ![Bezier eğrisi Görselleştirme](media/data-visualizations-image16.png)
-
 
 ## <a name="string"></a>Dize
 
@@ -78,7 +74,7 @@ Görselleştiriciyi görüntüleyecek bir `NSBezierPath`:
 
 ### <a name="editor"></a>Düzenleyen:
 
- ![Düzenleyici Görselleştirme](media/data-visualizations-image21.png)
+![Düzenleyici Görselleştirme](media/data-visualizations-image21.png)
 
 ## <a name="ienumerable"></a>IEnumerable
 
@@ -90,7 +86,7 @@ IEnumerable tüm değerleri sıralar; değerlerin her birinin tıklayarak görü
 
 Kendi satır içi görselleştiriciler de bazı diğer türleri aşağıda listelenmiştir:
 
- ![Diğer Görselleştirme](media/data-visualizations-image23.png)
+![Diğer Görselleştirme](media/data-visualizations-image23.png)
 
 *   **Temel Türler**
     *   Bu basit türü ham değeri gösterir.
@@ -104,3 +100,8 @@ Kendi satır içi görselleştiriciler de bazı diğer türleri aşağıda liste
     *   Bu tıklanabilir köprü görüntüler.
 *   **IntPtr**
     *   Bu IntPtr bir sayının onaltılık gösterimini görüntüler.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Değişkenleri Otolar ve yerel öğeler pencerelerinde (Windows için Visual Studio) denetleyin](/visualstudio/debugger/autos-and-locals-windows)
+- [(Windows için Visual Studio) görselleştiricide dizelerini görüntüle](/visualstudio/debugger/string-visualizer-dialog-box)

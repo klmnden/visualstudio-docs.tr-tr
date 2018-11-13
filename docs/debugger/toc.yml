@@ -2,7 +2,11 @@ items:
 - name: Hata ayıklayıcısı belgeleri
   href: index.md
 - name: Genel Bakış
-  href: debugger-overview.md
+  items:
+  - name: Hata ayıklama nedir?
+    href: what-is-debugging.md
+  - name: Visual Studio ile daha iyi C# kodu yazın
+    href: write-better-code-with-visual-studio.md
 - name: Hızlı Başlangıçlar
   items:
   - name: Hata ayıklayıcıya ilk bakış
@@ -832,9 +836,9 @@ items:
   items:
   - name: Visual Studio’da hata ayıklayıcısı yenilikleri
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 7e308b631a5ce56ec065fcada6b65e11d8afe4bb
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: a765e04da6e5d03c47a17e3b9d1642aec182c1f7
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751056"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561692"

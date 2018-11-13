@@ -24,7 +24,7 @@ Grafik olay çağrı yığını'nı Visual Studio grafik Çözümleyicisi sorunl
   
  Bu olay çağrı yığını penceresinde.  
   
- ![Önceki DrawIndexed olay çağrı yığını. ] (media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
+ ![Önceki DrawIndexed olay çağrı yığını. ](media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
   
 ## <a name="understanding-the-graphics-event-call-stack"></a>Grafik olay çağrı yığını anlama  
  Olay çağrı yığını, belirli bir Direct3D olaya yol açan akışını anlamak için kullanabilirsiniz. Seçili Direct3D olayın gerçekleştiği edildiğinde bulunduğu gibi geçerli iş parçacığının geçerli çağrı yığınını çalışan bir uygulamada görüntülemek yerine, çağrı yığınını görüntüler dışında Visual Studio çağrı yığını penceresini benzer. Olay çağrısı yığını, çevreleyen kod İnceleme seçili Direct3D olayın çağrı sitesini atlayabilirsiniz.  

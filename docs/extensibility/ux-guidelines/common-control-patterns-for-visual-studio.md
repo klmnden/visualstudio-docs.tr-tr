@@ -73,9 +73,9 @@ Denetimleri stillendirme yaparken dikkate alınması gereken ilk şey, denetimle
   
 -   Giriş alanlarını, bunlar gösterilir penceresinin genişliğini uygun değil ya da bir yol gibi uzun bir alan uzunluğunu rasgele eşleştirilecek içeriği sığdıracak şekilde boyutlandırılmalıdır. Uzunluğu bir göstergesi kullanıcıya karakterlerinin kaçının tutulacağını alana izin için sınırlamalar olabilir.  
   
-     ![Hatalı giriş alan uzunluğu: adı bu kadar uzun olacağını düşüktür. ] (../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl")<br />Hatalı giriş alan uzunluğu: adı bu kadar uzun olacağını düşüktür.
+     ![Hatalı giriş alan uzunluğu: adı bu kadar uzun olacağını düşüktür. ](../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl")<br />Hatalı giriş alan uzunluğu: adı bu kadar uzun olacağını düşüktür.
   
-     ![Giriş alan uzunluğu düzeltin: beklenen içeriğe için makul bir genişlik giriş alandır. ] (../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl")<br />Giriş alan uzunluğu düzeltin: beklenen içeriğe için makul bir genişlik giriş alandır.
+     ![Giriş alan uzunluğu düzeltin: beklenen içeriğe için makul bir genişlik giriş alandır. ](../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl")<br />Giriş alan uzunluğu düzeltin: beklenen içeriğe için makul bir genişlik giriş alandır.
   
 ###  <a name="BKMK_ComboBoxesAndDropDowns"></a> Birleşik giriş kutusu ve aşağı açılır listeler  
 Tipik etkileşim davranışını izleyin [açılan listeler ve birleşik giriş kutuları için Windows Masaüstü yönergeleri](/windows/desktop/uxguide/ctrl-drop).  
@@ -89,9 +89,9 @@ Tipik etkileşim davranışını izleyin [açılan listeler ve birleşik giriş 
 #### <a name="layout"></a>Düzen  
 Birleşik giriş kutularını ve açılan listeler, bunlar gösterilir penceresinin genişliğini uygun değil ya da bir yol gibi uzun bir alan uzunluğunu rasgele eşleştirilecek içeriği sığdıracak şekilde boyutlandırılmalıdır.  
   
-![Yanlış: açılan genişliğini görüntülenecek içeriği için çok uzun. ] (../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707 03_IncorrectDropDownLayout")<br />Yanlış: açılan genişliğini görüntülenecek içeriği için çok uzun.
+![Yanlış: açılan genişliğini görüntülenecek içeriği için çok uzun. ](../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707 03_IncorrectDropDownLayout")<br />Yanlış: açılan genişliğini görüntülenecek içeriği için çok uzun.
   
-![Doğru: açılan çeviri büyüme için izin ver, ancak gereksiz yere değil uzun boyutlandırılır. ] (../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707 04_CorrectDropDownLayout")<br />Doğru: açılan çeviri büyüme için izin ver, ancak gereksiz yere değil uzun boyutlandırılır. 
+![Doğru: açılan çeviri büyüme için izin ver, ancak gereksiz yere değil uzun boyutlandırılır. ](../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707 04_CorrectDropDownLayout")<br />Doğru: açılan çeviri büyüme için izin ver, ancak gereksiz yere değil uzun boyutlandırılır. 
   
 ###  <a name="BKMK_CheckBoxes"></a> Onay kutuları  
 Tipik etkileşim davranışını izleyin [Windows Masaüstü yönergeleri için onay kutularını](/windows/desktop/uxguide/ctrl-check-boxes).  
@@ -108,9 +108,9 @@ Tipik etkileşim davranışını izleyin [Windows Masaüstü yönergeleri için 
   
 -   Onay kutularını metnin ilk satırı taban çizgisi ile hizalar.  
   
-     ![Yanlış: onay kutusu metni ortalanır. ] (../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign")<br />Yanlış: onay kutusu metni ortalanır.
+     ![Yanlış: onay kutusu metni ortalanır. ](../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign")<br />Yanlış: onay kutusu metni ortalanır.
   
-     ![Doğru: onay kutusunun metnin ilk satırı ile hizalanır. ] (../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign")<br />Doğru: onay kutusunun metnin ilk satırı ile hizalanır.
+     ![Doğru: onay kutusunun metnin ilk satırı ile hizalanır. ](../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign")<br />Doğru: onay kutusunun metnin ilk satırı ile hizalanır.
   
 ###  <a name="BKMK_RadioButtons"></a> Radyo düğmeleri  
 Tipik etkileşim davranışını izleyin [radyo düğmeleri için Windows Masaüstü yönergelerini](/windows/desktop/uxguide/ctrl-radio-buttons).  
@@ -346,9 +346,9 @@ Ağaç görünümü denetimleri, genişletici tasarım Windows ve Visual Studio 
 #### <a name="selection"></a>Seçim  
 Bir düğüm ağacı görünümü içinde seçili olduğunda, vurgulama ağaç görünümü denetiminde tam genişliğine genişletmeniz gerekir. Bu, kullanıcıların seçmiş olduğunuz hangi öğe NET bir şekilde belirlemesine yardımcı olur. Renk seçimi, geçerli Visual Studio temasını yansıtmalıdır.  
   
-![Doğru: Seçili düğümün vurgulama ağaç görünümü denetiminin tüm genişliği uyar. ] (../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />Doğru: Seçili düğümün vurgulama ağaç görünümü denetiminin tüm genişliği uyar.
+![Doğru: Seçili düğümün vurgulama ağaç görünümü denetiminin tüm genişliği uyar. ](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />Doğru: Seçili düğümün vurgulama ağaç görünümü denetiminin tüm genişliği uyar.
   
-![Yanlış: ağaç görünümü denetiminin tüm genişliği vurgulama Seçili düğümün sığmıyor. ] (../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705 3_TreeViewIncorrect2")<br />Yanlış: ağaç görünümü denetiminin tüm genişliği vurgulama Seçili düğümün sığmıyor.
+![Yanlış: ağaç görünümü denetiminin tüm genişliği vurgulama Seçili düğümün sığmıyor. ](../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705 3_TreeViewIncorrect2")<br />Yanlış: ağaç görünümü denetiminin tüm genişliği vurgulama Seçili düğümün sığmıyor.
   
 #### <a name="icons"></a>Simgeler  
 Görsel öğeler arasındaki farklar tanımlanmasına yardımcı simgeleri yalnızca ağaç görünümü denetimleri kullanılmalıdır. Genel olarak, simgeleri yalnızca hangi öğelerin türlerini ayırt etmek için bilgi simgeleri taşıyan heterojen listelerinde kullanılmalıdır. Homojen bir listedeki simgeleri kullanarak gürültü sık görülebilir ve kaçınılmalıdır. Bu durumda grubu simgesi (üst) içindeki öğe türü ifade edebilir. Bu kuralın istisnası olarak, simge dinamiktir ve durumunu göstermek için kullanılan olacaktır.  
@@ -356,14 +356,14 @@ Görsel öğeler arasındaki farklar tanımlanmasına yardımcı simgeleri yaln�
 #### <a name="scroll-bars"></a>Kaydırma çubukları  
 Kaydırma çubukları, her zaman içerik ağaç görünümü denetiminin içinde sığıyorsa gizlenmelidir. Gizli veya yarı saydam kaydırılabilir bir pencerede ve ağaç görünümünde içeren pencere odaklandığında görünür veya kendisi üzerinde vurgulu ağacı görüntülemek için kaydırma çubuklarını kabul edilebilir olduğu.  
   
-![Ağaç görünümü denetiminin sınırları içeriği aştığınız için her iki yatay ve dikey kaydırma çubukları görüntülenir. ] (../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />Ağaç görünümü denetiminin sınırları içeriği aştığınız için her iki yatay ve dikey kaydırma çubukları görüntülenir.
+![Ağaç görünümü denetiminin sınırları içeriği aştığınız için her iki yatay ve dikey kaydırma çubukları görüntülenir. ](../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />Ağaç görünümü denetiminin sınırları içeriği aştığınız için her iki yatay ve dikey kaydırma çubukları görüntülenir.
   
 ###  <a name="BKMK_TreeViewInteractions"></a> Ağaç görünümü etkileşimleri  
   
 #### <a name="context-menus"></a>Bağlam menüleri  
 Bir ağaç görünümü düğümü alt menü seçenekleri bağlam menüsü ortaya çıkarabilir. Bu genellikle, bir kullanıcı bir öğeyi sağ veya seçili öğeye sahip bir Windows klavyede menü tuşuna basıldığında gerçekleşir. Düğüm odağı ve seçili önemlidir. Bu, kullanıcının alt ait hangi öğesini tanımlamaya yardımcı olur.  
   
-![Kullanıcıya bildirmek için bağlam menüsünü kazançlar odağı hangi öğesi oluştur sahip öğe seçilmedi. ] (../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705 5_ContextMenu")<br />Kullanıcıya bildirmek için bağlam menüsünü kazançlar odağı hangi öğesi oluştur sahip öğe seçilmedi.
+![Kullanıcıya bildirmek için bağlam menüsünü kazançlar odağı hangi öğesi oluştur sahip öğe seçilmedi. ](../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705 5_ContextMenu")<br />Kullanıcıya bildirmek için bağlam menüsünü kazançlar odağı hangi öğesi oluştur sahip öğe seçilmedi.
   
 #### <a name="keyboard"></a>Klavye  
 Ağaç görünümünde öğeleri seçin ve klavye kullanarak düğümlerin içerik modelini genişletme/daraltma imkanı sağlamanız gerekir. Bu gezinti bizim erişilebilirlik gereksinimlerini karşıladığını sağlar.  

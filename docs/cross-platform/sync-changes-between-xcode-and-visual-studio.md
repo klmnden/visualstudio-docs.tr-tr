@@ -32,7 +32,7 @@ Microsoft Visual C++ mobil geliştirme bileşeni için PC ve Mac arasındaki iş
 ### <a name="open-in-xcode"></a>Xcode'da Aç
  Visual Studio, XCode projesinde açmak için **uzak makine** alt seçin **Xcode'da açın** eşleştirilmiş uzak makinede Seçili projeyi açmak için. Vcremote sunucunun, Mac'te XCode açmak ve projenin bir kopyasını içeren, Mac'te oluşturulan geçici bir dizine gitmek için kullanılır. Visual Studio projesi için kullanılan geçici dizini gösteren bir iletişim kutusu görüntüler. Uzak makinede gerçekleştirilen eylemleri de gösterilir **çıkış** Visual Studio'daki. Bunları görmek için seçmeniz gerekebilir **Visual C++ uzak makine** içinde **çıktıyı Göster** en üstündeki açılan **çıkış** penceresi.
 
- ![Çıkış penceresi, uzak makine eylemleri gösterir. ] (../cross-platform/media/cppmdd_u2_remotemachine_output.png "CPPMDD_U2_RemoteMachine_Output")
+ ![Çıkış penceresi, uzak makine eylemleri gösterir. ](../cross-platform/media/cppmdd_u2_remotemachine_output.png "CPPMDD_U2_RemoteMachine_Output")
 
  Mac'inizde, kod ve kaynakları, film şeritleri ve eylemleri düzenlemek için XCode araçları kullanabilirsiniz. Visual Studio'da iOS uygulaması projenizin "Açılan içindeki değişiklikleri uzak makinede yapılabilir göstermek için XCode ile" açıklanıyor. Düzenlemeleriniz tamamlandıktan sonra uzak konumdan çekme veya artımlı çekme uzak komutlarının değişiklikleri geri Visual Studio projenize kopyalamak için kullanabilirsiniz.
 
