@@ -1,5 +1,5 @@
 ---
-title: 'Örnek XSD dosyası: ilişkileri'
+title: 'Örnek XSD dosyası: ilişkiler'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -17,9 +17,9 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 06/01/2018
 ms.locfileid: "34572780"
 ---
-# <a name="sample-xsd-file-relationships"></a>Örnek XSD dosyası: ilişkileri
+# <a name="sample-xsd-file-relationships"></a>Örnek XSD dosyası: ilişkiler
 
-Aşağıdaki XSD dosyası XSD şema Tasarımcısı belgelerinde çeşitli örnekler kullanılır. Satın alma siparişi Şeması ek açıklamalar ve belgeleri ile dosyasıdır.
+XSD şema Tasarımcısı çeşitli örneklerini aşağıdaki XSD dosyası kullanılır. Satın alma siparişi Şeması ek açıklamalar ve belgeler ile dosyasıdır.
 
 ```xml
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">

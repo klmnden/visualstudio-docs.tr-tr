@@ -5,7 +5,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 08/14/2018
+ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a3e0e89635c90585416745ae20b3c6b3b6e8ba
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 958e4e842468e871cd9aa65f0a20b87a84aeb4ca
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138538"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607867"
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Visual Studio derleme araçları 2017 bileşen dizini
 
@@ -56,7 +56,8 @@ Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure yazma araçları |
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET için Azure kitaplıkları | 15.0.26208.0 | Gerekli
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure Cloud Services derleme araçları | 15.7.27617.1 | Gerekli
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Kapsayıcı geliştirme araçları - derleme araçları | 15.7.27617.1 | Gerekli
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 15.0.26919.1 | Gerekli
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 15.9.28016.0 | Gerekli
+Microsoft.VisualStudio.Component.TypeScript.3.1 | 3.1 TypeScript SDK'sı | 15.0.28218.60 | Gerekli
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | WCF geliştirme derleme araçları | 15.6.27309.0 | Gerekli
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Web geliştirme derleme araçları | 15.8.27729.1 | Gerekli
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET framework 4.5.1 targeting pack | 15.6.27406.0 | Önerilen
@@ -67,7 +68,6 @@ Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 15.6
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET framework 4-4.6 geliştirme araçları | 15.6.27406.0 | Önerilen
 Microsoft.Net.Core.Component.SDK.2.1 | .NET core 2.1 geliştirme araçları | 15.8.27924.0 | Önerilen
 Microsoft.VisualStudio.Component.AspNet45 | Gelişmiş ASP.NET özellikleri | 15.7.27625.0 | Önerilen
-Microsoft.VisualStudio.Component.TypeScript.2.9 | TypeScript 2.9 SDK'sı | 15.0.27924.0 | Önerilen
 Microsoft.VisualStudio.Component.WebDeploy | Web Dağıtımı | 15.8.27729.1 | Önerilen
 Microsoft.Net.Component.3.5.DeveloperTools | .NET framework 3.5 geliştirme araçları | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.6.2.SDK | .NET framework 4.6.2 SDK'sı | 15.6.27406.0 | İsteğe Bağlı
@@ -108,7 +108,7 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statik analiz araçlar�
 
 **ID:** Microsoft.VisualStudio.Workload.ManagedDesktopBuildTools
 
-**Açıklama:** WPF, Windows Forms ve konsol uygulamaları C#, Visual Basic ve F # kullanarak oluşturmaya yönelik araçlar.
+**Açıklama:** WPF, Windows Forms ve konsol uygulamaları kullanarak oluşturmaya yönelik Araçlar C#, Visual Basic ve F#.
 
 ### <a name="components-included-by-this-workload"></a>Bu iş yükü tarafından bulunan bileşenler
 
@@ -117,7 +117,7 @@ Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Gerekli
 Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK'sı | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 targeting pack | 15.6.27406.0 | Gerekli
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 15.0.26919.1 | Gerekli
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 15.9.28016.0 | Gerekli
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 15.6.27309.0 | Gerekli
 Microsoft.Component.ClickOnce.MSBuild | ClickOnce derleme araçları | 15.7.27617.1 | Önerilen
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET framework 4.5.1 targeting pack | 15.6.27406.0 | Önerilen
@@ -172,7 +172,7 @@ Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
 Microsoft.Net.Core.Component.SDK.2.1 | .NET core 2.1 geliştirme araçları | 15.8.27924.0 | Gerekli
 Microsoft.NetCore.BuildTools.ComponentGroup | .NET core derleme araçları | 15.8.27906.1 | Gerekli
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 15.0.26919.1 | Gerekli
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 15.9.28016.0 | Gerekli
 Microsoft.Net.Core.Component.SDK | .NET core 2.0 geliştirme araçları | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Core.Component.SDK.1x | .NET core 1.0-1.1 geliştirme araçları | 15.6.27406.0 | İsteğe Bağlı
 
@@ -187,7 +187,7 @@ Microsoft.Net.Core.Component.SDK.1x | .NET core 1.0-1.1 geliştirme araçları |
 Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.Node.Build | Node.js MSBuild desteği | 15.8.27825.0 | Gerekli
-Microsoft.VisualStudio.Component.TypeScript.2.6 | TypeScript 2.6 SDK'sı | 15.0.27729.1 | Önerilen
+Microsoft.VisualStudio.Component.TypeScript.3.1 | 3.1 TypeScript SDK'sı | 15.0.28218.60 | Gerekli
 
 ## <a name="officesharepoint-build-tools"></a>Office/SharePoint derleme araçları
 
@@ -207,8 +207,8 @@ Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK'sı | 15.6.27406.0 
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 targeting pack | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 15.6.27406.0 | Gerekli
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 geliştirme araçları | 15.8.27825.0 | Gerekli
-Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 15.8.27825.0 | Gerekli
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 15.0.26919.1 | Gerekli
+Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 15.9.28016.0 | Gerekli
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 15.9.28016.0 | Gerekli
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 15.6.27309.0 | Gerekli
 Microsoft.VisualStudio.Component.Sharepoint.BuildTools | Office/SharePoint geliştirme derleme araçları | 15.8.27825.0 | Gerekli
 Microsoft.VisualStudio.Component.Workflow.BuildTools | Windows Workflow Foundation derleme araçları | 15.8.27906.1 | Gerekli
@@ -243,11 +243,11 @@ Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Gerekli
 Microsoft.Component.NetFX.Native | .NET Yerel | 15.0.26208.0 | Gerekli
 Microsoft.Component.VC.Runtime.OSSupport | UWP için Visual C++ çalışma zamanı | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.7.1.SDK | .NET framework 4.7.1 SDK'sı | 15.6.27406.0 | Gerekli
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 15.0.26919.1 | Gerekli
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 15.9.28016.0 | Gerekli
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 15.6.27309.0 | Gerekli
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statik analiz araçları | 15.0.26208.0 | Gerekli
 Microsoft.VisualStudio.Component.VC.Tools.ARM | ARM için Visual C++ Derleyicileri ve kitaplıkları | 15.8.27825.0 | Gerekli
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 sürüm 15,8 v14.15 en yeni v141 araçları | 15.8.27825.0 | Gerekli
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 sürüm 15.9 v14.16 en yeni v141 araçları | 15.9.28230.55 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | Evrensel Windows platformu derleme önkoşulları | 15.8.27705.0 | Gerekli
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | Önerilen
 Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240.0) | 15.6.27406.0 | İsteğe Bağlı
@@ -276,7 +276,7 @@ Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statik analiz araçları | 15.0.26208.0 | Gerekli
 Microsoft.VisualStudio.Component.VC.CoreBuildTools | Visual C++ derleme araçları temel özellikleri | 15.8.27729.1 | Gerekli
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Visual C++ 2017 yeniden dağıtılabilir güncelleştirme | 15.6.27406.0 | Gerekli
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 sürüm 15,8 v14.15 en yeni v141 araçları | 15.8.27825.0 | Gerekli
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 sürüm 15.9 v14.16 en yeni v141 araçları | 15.9.28230.55 | Gerekli
 Microsoft.VisualStudio.Component.Windows10SDK | Windows Evrensel C çalışma zamanı | 15.6.27406.0 | Gerekli
 Microsoft.VisualStudio.Component.TestTools.BuildTools | Test Araçları temel özellikleri - derleme araçları | 15.7.27625.0 | Önerilen
 Microsoft.VisualStudio.Component.VC.CMake.Project | CMake için Visual C++ Araçları | 15.8.27906.1 | Önerilen
@@ -290,7 +290,7 @@ Microsoft.VisualStudio.Component.VC.ATLMFC | X86 ve x64 için Visual C++ MFC | 1
 Microsoft.VisualStudio.Component.VC.CLI.Support | C + +/ CLI desteği | 15.6.27309.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | (Deneysel) standart kitaplık modülleri | 15.6.27309.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.Tools.ARM | ARM için Visual C++ Derleyicileri ve kitaplıkları | 15.8.27825.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | ARM64 için Visual C++ Derleyicileri ve kitaplıkları | 15.6.27309.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | ARM64 için Visual C++ Derleyicileri ve kitaplıkları | 15.9.28230.55 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240.0) | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | İsteğe Bağlı
@@ -323,7 +323,7 @@ Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK'sı | 15.6.27406.0 
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 targeting pack | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 targeting pack | 15.6.27406.0 | Gerekli
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 geliştirme araçları | 15.8.27825.0 | Gerekli
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 15.0.26919.1 | Gerekli
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 15.9.28016.0 | Gerekli
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 15.6.27309.0 | Gerekli
 Microsoft.VisualStudio.Component.VSSDKBuildTools | Visual Studio SDK derleme araçları temel | 15.8.27924.0 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.VisualStudioExtensionBuildTools.Prerequisites | Visual Studio uzantı geliştirme önkoşulları | 15.8.27729.1 | Gerekli
@@ -332,7 +332,7 @@ Microsoft.Component.VC.Runtime.OSSupport | UWP için Visual C++ çalışma zaman
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statik analiz araçları | 15.0.26208.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.ATL | X86 ve x64 için Visual C++ ATL | 15.7.27625.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.ATLMFC | X86 ve x64 için Visual C++ MFC | 15.7.27625.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 sürüm 15,8 v14.15 en yeni v141 araçları | 15.8.27825.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 sürüm 15.9 v14.16 en yeni v141 araçları | 15.9.28230.55 | İsteğe Bağlı
 
 ## <a name="web-development-build-tools"></a>Web geliştirme derleme araçları
 
@@ -347,7 +347,8 @@ Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK'sı | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 targeting pack | 15.6.27406.0 | Gerekli
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 geliştirme araçları | 15.8.27825.0 | Gerekli
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 15.0.26919.1 | Gerekli
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 15.9.28016.0 | Gerekli
+Microsoft.VisualStudio.Component.TypeScript.3.1 | 3.1 TypeScript SDK'sı | 15.0.28218.60 | Gerekli
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Web geliştirme derleme araçları | 15.8.27729.1 | Gerekli
 Microsoft.Component.ClickOnce.MSBuild | ClickOnce derleme araçları | 15.7.27617.1 | Önerilen
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET framework 4.5.1 targeting pack | 15.6.27406.0 | Önerilen
@@ -360,7 +361,6 @@ Microsoft.Net.Core.Component.SDK.2.1 | .NET core 2.1 geliştirme araçları | 15
 Microsoft.VisualStudio.Component.AspNet45 | Gelişmiş ASP.NET özellikleri | 15.7.27625.0 | Önerilen
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Kapsayıcı geliştirme araçları - derleme araçları | 15.7.27617.1 | Önerilen
 Microsoft.VisualStudio.Component.TestTools.BuildTools | Test Araçları temel özellikleri - derleme araçları | 15.7.27625.0 | Önerilen
-Microsoft.VisualStudio.Component.TypeScript.2.9 | TypeScript 2.9 SDK'sı | 15.0.27924.0 | Önerilen
 Microsoft.VisualStudio.Component.WebDeploy | Web Dağıtımı | 15.8.27729.1 | Önerilen
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | WCF geliştirme derleme araçları | 15.6.27309.0 | Önerilen
 Microsoft.Net.Component.3.5.DeveloperTools | .NET framework 3.5 geliştirme araçları | 15.6.27406.0 | İsteğe Bağlı
@@ -383,7 +383,7 @@ Microsoft.Net.Core.Component.SDK.1x | .NET core 1.0-1.1 geliştirme araçları |
 
 **ID:** Microsoft.VisualStudio.Workload.XamarinBuildTools
 
-**Açıklama:** iOS, Android ve C# ve F # kullanarak Windows için platformlar arası uygulamalar oluşturmaya yönelik araçlar.
+**Açıklama:** iOS, Android ve Windows kullanarak platformlar arası uygulamalar oluşturmaya yönelik Araçlar C# ve F#.
 
 ### <a name="components-included-by-this-workload"></a>Bu iş yükü tarafından bulunan bileşenler
 
@@ -392,10 +392,10 @@ Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Gerekli
 Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK'sı | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 targeting pack | 15.6.27406.0 | Gerekli
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 15.0.26919.1 | Gerekli
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 15.9.28016.0 | Gerekli
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 15.6.27309.0 | Gerekli
-Component.JavaJDK | Java SE Geliştirme Seti (8.0.1120.15) | 15.6.27406.0 | Önerilen
-Component.Android.SDK25 | Android SDK kurulumu (API düzeyi 25) | 15.6.27413.0 | İsteğe Bağlı
+Component.Android.SDK25 | Android SDK kurulumu (API düzeyi 25) | 15.9.28107.0 | İsteğe Bağlı
+Component.OpenJDK | Microsoft Dağıtım OpenJDK | 15.9.28125.51 | İsteğe Bağlı
 
 ## <a name="unaffiliated-components"></a>Kullanıcıyla bağlantılı olmayan bileşenleri
 
@@ -408,8 +408,11 @@ Microsoft.VisualStudio.Component.TypeScript.2.1 | TypeScript 2.1 SDK'sı | 15.8.
 Microsoft.VisualStudio.Component.TypeScript.2.2 | TypeScript 2.2 SDK'sı | 15.8.27729.1
 Microsoft.VisualStudio.Component.TypeScript.2.3 | TypeScript 2.3 SDK'sı | 15.8.27729.1
 Microsoft.VisualStudio.Component.TypeScript.2.5 | TypeScript 2.5 SDK'sı | 15.6.27406.0
+Microsoft.VisualStudio.Component.TypeScript.2.6 | TypeScript 2.6 SDK'sı | 15.0.27729.1
 Microsoft.VisualStudio.Component.TypeScript.2.7 | TypeScript 2.7 SDK'sı | 15.0.27729.1
 Microsoft.VisualStudio.Component.TypeScript.2.8 | TypeScript 2.8 SDK'sı | 15.0.27729.1
+Microsoft.VisualStudio.Component.TypeScript.2.9 | TypeScript 2.9 SDK'sı | 15.0.27924.0
+Microsoft.VisualStudio.Component.TypeScript.3.0 | 3.0 TypeScript SDK'sı | 15.0.27924.0
 Microsoft.VisualStudio.Component.VC.ATL.ARM | ARM için Visual C++ ATL | 15.7.27625.0
 Microsoft.VisualStudio.Component.VC.ATL.ARM.Spectre | Spectre azaltmaları ile ARM için Visual C++ ATL | 15.7.27625.0
 Microsoft.VisualStudio.Component.VC.ATL.ARM64 | ARM64 için Visual C++ ATL | 15.7.27625.0
@@ -421,13 +424,14 @@ Microsoft.VisualStudio.Component.VC.MFC.ARM | ARM için Visual C++ MFC | 15.7.27
 Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre | Spectre azaltmaları ile ARM için Visual C++ MFC | 15.7.27625.0
 Microsoft.VisualStudio.Component.VC.MFC.ARM64 | ARM64 için Visual C++ MFC | 15.7.27625.0
 Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre | Spectre azaltmaları ile ARM64 için Visual C++ MFC desteği | 15.7.27625.0
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | VC ++ 2017 sürüm 15,8 v14.15 kitaplıklar için Spectre (ARM) | 15.8.27825.0
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | VC ++ 2017 sürüm 15,8 v14.15 (ARM64) Spectre için kitaplıklar | 15.8.27825.0
-Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | VC ++ 2017 sürüm 15,8 v14.15 (x86 ve x64) Spectre için kitaplıklar | 15.8.27825.0
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | VC ++ 2017 sürüm 15.9 v14.16 kitaplıklar için Spectre (ARM) | 15.9.28230.55
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | VC ++ 2017 sürüm 15.9 v14.16 (ARM64) Spectre için kitaplıklar | 15.9.28230.55
+Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | VC ++ 2017 sürüm 15.9 v14.16 (x86 ve x64) Spectre için kitaplıklar | 15.9.28230.55
 Microsoft.VisualStudio.Component.VC.Tools.14.11 | VC ++ 2017 sürüm 15.4 v14.11 araç takımı | 15.0.27924.0
 Microsoft.VisualStudio.Component.VC.Tools.14.12 | VC ++ 2017 sürüm 15.5 v14.12 araç takımı | 15.0.27924.0
 Microsoft.VisualStudio.Component.VC.Tools.14.13 | VC ++ 2017 sürüm 15.6 v14.13 araç takımı | 15.0.27924.0
 Microsoft.VisualStudio.Component.VC.Tools.14.14 | VC ++ 2017 sürüm 15.7 v14.14 araç takımı | 15.0.27924.0
+Microsoft.VisualStudio.Component.VC.Tools.14.15 | VC ++ 2017 sürüm 15,8 v14.15 araç takımı | 15.0.28230.55
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

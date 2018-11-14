@@ -48,7 +48,7 @@ Yayımlama ayarları dosyası (*\*.publishsettings*) farklı bir yayımlama prof
 
 1. Visual Studio çalıştıran bilgisayarda **dosya** > **yeni proje**.
 
-1. Altında **Visual C#** veya **Visual Basic**, seçin **Web**, Orta bölmede seçin **ASP.NET Web uygulaması (.NET Framework)** veya (yalnızca C#) **ASP.NET Core Web uygulaması**ve ardından **Tamam**.
+1. Altında **Visual C#**  veya **Visual Basic**, seçin **Web**, Orta bölmede seçin **ASP.NET Web uygulaması (.NET Framework)** veya (C# yalnızca) **ASP.NET Core Web uygulaması**ve ardından **Tamam**.
 
     Belirtilen proje şablonları görmüyorsanız tıklayın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu. Visual Studio Yükleyicisi'ni başlatır. Yüklemelisiniz gerekli Visual Studio iş yüklerini tanımlamak için bu makaledeki önkoşullara bakın.
 

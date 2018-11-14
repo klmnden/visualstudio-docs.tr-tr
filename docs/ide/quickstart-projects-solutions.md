@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2995e3b71ffb46b726d17ffc2f1f7fe68f6663ff
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: dffc0344c0cd7c226ae6651679c4a8f491d8aaa3
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42623998"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607809"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Projeler ve çözümler hakkında bilgi edinin
 
@@ -100,7 +100,7 @@ Boş bir proje sahibiz. Bir kod dosyası ekleyelim.
    }
    ```
 
-   Kodun ne yaptığını anlamanıza gerek yoktur, ancak isterseniz, programı çalıştırın ve bugünün tarihini konsolunu (veya standart çıktı) penceresini yazdırır bakın.
+   Ne yaptığını anlamak gerekli değildir, ancak isterseniz tuşlarına basarak program çalışabilir **Ctrl**+**F5** ve bugünün tarihini konsolunu (veya standart çıktı) penceresini yazdırır.
 
 ## <a name="add-a-second-project"></a>İkinci bir proje ekleyin
 
@@ -148,7 +148,7 @@ Yeni birim test projesi bizim yöntemi test etmek için kullanılacak yapacağı
 
    "Dalgalı" bazı kodları altında kırmızı bir görürsünüz. Bu hatayı test projesini yaparak gidereceğiz bir [arkadaş derleme](/dotnet/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies) için **QuickDate** proje.
 
-1. Geri **QuickDate** projesini açarsanız *Calendar.cs* zaten açık değilse dosyasını bulun ve aşağıdakileri ekleyin [using deyimi](/dotnet/csharp/language-reference/keywords/using-statement) ve <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> çok özniteliği test projesi hatayı çözümleyin.
+1. Geri **QuickDate** projesini açarsanız *Calendar.cs* zaten açık değilse dosyasını bulun ve aşağıdakileri ekleyin [using deyimi](/dotnet/csharp/language-reference/keywords/using-statement) ve <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> özniteliği dön test projesini hatayı gidermek için dosyasının.
 
    ```csharp
    using System.Runtime.CompilerServices;
@@ -162,11 +162,11 @@ Yeni birim test projesi bizim yöntemi test etmek için kullanılacak yapacağı
 
 ## <a name="project-properties"></a>Proje Özellikleri
 
-Dosyadaki bir satır içeren C# kod <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> özniteliği derleme adını (dosya adı) başvuruda **QuickTest** proje. Proje adı ile aynı derleme adı her zaman olmayabilir. Proje derleme adını bulmak için proje özelliklerini açın.
+Satırda *Calendar.cs* içeren dosya <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> özniteliği derleme adını (dosya adı) başvuruda **QuickTest** proje. Proje adı ile aynı derleme adı her zaman olmayabilir. Proje derleme adını bulmak için proje özelliklerini açın.
 
 1. İçinde **Çözüm Gezgini**seçin **QuickTest** proje. Sağ tıklayın veya bağlam menüsünü seçin **özellikleri**, veya tuşuna basarak **Alt**+**Enter**.
 
-   *Özellik sayfaları* üzerinde açık proje için **uygulama** sekmesi. Özellik sayfaları, proje için çeşitli ayarları içerir. Dikkat derleme adını **QuickTest** projedir gerçekten "QuickTest". Bunu değiştirmek istiyorsanız, burada değiştirirsiniz budur. Test projesi oluşturduğunuzda, daha sonra elde edilen çalıştırılabilir dosyasının adı gelen değiştirirsiniz *QuickTest.exe* , seçtiğiniz için.
+   *Özellik sayfaları* üzerinde açık proje için **uygulama** sekmesi. Özellik sayfaları, proje için çeşitli ayarları içerir. Dikkat derleme adını **QuickTest** projedir gerçekten "QuickTest". Bunu değiştirmek istiyorsanız, burada yaptığınız budur. Test projesi oluşturduğunuzda, daha sonra elde edilen ikili dosyasının adı gelen değiştirirsiniz *QuickTest.dll* , seçtiğiniz için.
 
    ![Proje Özellikleri](media/quickstart-projects-properties.png)
 
@@ -175,6 +175,11 @@ Dosyadaki bir satır içeren C# kod <xref:System.Runtime.CompilerServices.Intern
 ## <a name="next-steps"></a>Sonraki adımlar
 
 Birim testinizi çalıştığını denetlemek istiyorsanız seçin **Test** > **çalıştırma** > **tüm testleri** menü çubuğundan. Bir pencere olarak adlandırılan **Test Gezgini** açar, görmelisiniz, **TestGetCurrentDate** test geçer.
+
+![Visual Studio geçirilen gösteren metin Gezgini'nde test](media/quickstart-projects-test-explorer.png)
+
+> [!TIP]
+> Varsa **Test Gezgini** değil, otomatik olarak Aç seçerek açın **Test** > **Windows** > **TestGezgini** menü çubuğundan.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

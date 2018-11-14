@@ -19,7 +19,7 @@ ms.locfileid: "34571939"
 ---
 # <a name="sample-xsd-files"></a>Örnek XSD dosyaları
 
-Bu bölümdeki örnek dosyaları XSD şema Tasarımcısı belgelerinde kullanılır.
+Bu bölümdeki örnek dosyaları, XSD şema Tasarımcısı belgelerinde kullanılır.
 
 > [!NOTE]
-> Bir örnek şirketler, kuruluşlar, ürünler, etki alanı adları, e-posta adresleri, logolar, kişiler, yerler ve sahiplerinin kurgusaldır. Gerçek şirket, kuruluş, ürün, etki alanı adı, e-posta adresi, logo, kişi, yerler veya olayları ile ilişki amaçlanmamıştır veya çıkarılmamalıdır.
+> Bir örnek şirketler, kuruluşlar, ürünler, etki alanı adları, e-posta adresleri, logolar, kişiler, yerler ve sahiplerinin hayal ürünüdür. Gerçek şirket, kuruluş, ürün, etki alanı adı, e-posta adresi, logo, kişi, yer veya olayları ile hiçbir ilişki amaçlanmamıştır veya çıkarılmamalıdır.

@@ -19,7 +19,7 @@ ms.locfileid: "34571819"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>Örnek XSD dosyası: satın alma siparişi şeması
 
-Aşağıdaki XSD dosyası XSD şema Tasarımcısı belgelerinde çeşitli örnekler kullanılır. Satın alma siparişi şeması dosyasıdır.
+XSD şema Tasarımcısı çeşitli örneklerini aşağıdaki XSD dosyası kullanılır. Satın alma siparişi şeması dosyasıdır.
 
 ```xml
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"

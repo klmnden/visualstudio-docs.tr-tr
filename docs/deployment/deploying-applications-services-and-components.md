@@ -47,7 +47,7 @@ Yerel bir klasöre dağıtım genellikle test etmek veya başka bir aracı son d
 
 - **Visual C++ çalışma zamanı**: Visual C++ çalışma zamanı yerel dağıtım ya da statik bağlama kullanarak dağıtabilirsiniz. Daha fazla bilgi için [yerel Masaüstü uygulamaları dağıtma (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
-## <a name="publish-to-azure"></a>Azure'da yayımlama
+## <a name="publish-to-azure"></a>Azure'a Yayımlama
 
 - **ASP.NET**, **ASP.NET Core**, **Python**, ve **Node.js**: Azure App Service veya bir Azure sanal uygulamaları hızlı bir şekilde dağıtmak için Yayımla aracı kullanabilirsiniz Makine. Çözüm Gezgini'nde projeye sağ tıklayıp seçin **Yayımla**. (Tüm yayımlama profilleri daha önce yapılandırdıysanız, ardından tıklamanız **yeni profil oluşturma**.) Yayımla iletişim kutusunda seçin **App Service** veya **Azure sanal makineler**ve ardından yapılandırma adımlarını izleyin.
 

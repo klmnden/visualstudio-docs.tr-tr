@@ -1,7 +1,7 @@
 ---
 title: Python kodu performansını ölçme
 description: Python performansını denetlemek için Visual Studio profil oluşturucu kodu nasıl ne zaman usnig CPython tabanlı yorumlayıcılarını.
-ms.date: 06/26/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4f395d146b01548d90cf74dc67b4ea8fda1bcade
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 0b5ca29b061f0ba61eec775a0344fb8d2067e08d
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551760"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607490"
 ---
 # <a name="profile-python-code"></a>Profil Python kodu
 

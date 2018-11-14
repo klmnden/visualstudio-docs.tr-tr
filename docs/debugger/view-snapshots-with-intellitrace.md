@@ -1,5 +1,5 @@
 ---
-title: IntelliTrace ile anlık görüntüleri Göster
+title: IntelliTrace ile anlık görüntüleri görüntüleme
 description: Geçmiş uygulama durumunu incelemek için IntelliTrace geri adım kullanın
 ms.custom: ''
 ms.date: 09/20/2018

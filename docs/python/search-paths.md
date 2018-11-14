@@ -1,7 +1,7 @@
 ---
 title: Python arama yollarını nasıl uygulanır
 description: Visual Studio Python ortamları hem de projeleri arama yollarını nasıl kullandığı genel bakış.
-ms.date: 10/29/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 92185b224af50dd5cf125d62282f1e8f7b951bc6
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: ab55c7cf1daa02416e6192a02a01ee3f9a35f6f0
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349006"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607907"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio, Python arama yollarını nasıl kullanır?
 
@@ -30,11 +30,17 @@ Visual Studio arama path ortam değişkenine bile tüm sistem için değişkeni 
 
 Visual Studio, bu nedenle doğrudan hem ortamları ve projelerinde arama yollarını belirtmek için bir yol sağlar. Çalıştırın ya da Visual Studio'da hata ayıklama kodu değerini arama yollarını alır `PYTHONPATH` (ve diğer eşdeğer değişkenleri). Arama yolları ekleyerek, Visual Studio o konumlardaki kitaplıkları inceler ve IntelliSense veritabanları için gerektiğinde derler (Visual Studio 2017 sürüm 15.5 ve önceki; veritabanı oluşturmak biraz zaman alabilir kitaplıkları sayısına bağlı olarak).
 
-Bir arama yolu eklemek için sağ **arama yollarını** öğesi **Çözüm Gezgini**seçin **klasörü için arama yolu Ekle**, dahil etmek için klasörü seçin. Bu yol, projeyle ilişkili her ortam için kullanılır. (Hatalar ortamı Python 3'te temel alır ve Python 2.7 modülleri için bir arama yolu eklemek çalışırsanız görebilirsiniz.)
+Bir arama yolu eklemek için Git **Çözüm Gezgini**, proje düğümünü, sağ **arama yollarını**seçin **klasörü için arama yolu Ekle**:
 
-İle dosyaları bir *.zip* veya *.egg* uzantısı eklenebilir arama yolları seçerek **Zip arşivine arama yolu Ekle**. Klasörlerle olduğu gibi bu dosyaların içeriğini taranan ve IntelliSense için kullanılabilir.
+![Çözüm Gezgini'nde arama yollarında arama yolu komutuna klasörü Ekle](media/search-paths-command.png)
 
-Aynı arama yollarını düzenli olarak kullandığınız ve içeriği genellikle değiştirmeyin, site paket klasörünüze yüklemek için daha verimli olabilir. Arama yolu ardından analiz edilir ve IntelliSense veritabanında depolanan, her zaman istenen bir ortam ile ilişkili olduğu ve her projeye eklenecek bir arama yolu gerektirmez.
+Bu komut ardından dahil etmek için klasörü seçin, bir tarayıcı görüntüler.
+
+Varsa, `PYTHONPATH` ortam değişkeni zaten istediğiniz klasörleri içeren, kullanın **ise PYTHONPATH eklemek için arama yollarını** kullanışlı bir kısayol olarak.
+
+Visual Studio bu yollar klasörleri arama yollarını eklendikten sonra projeyle ilişkili her ortam için kullanır. (Hatalar ortamı Python 3'te temel alır ve Python 2.7 modülleri için bir arama yolu eklemek çalışırsanız görebilirsiniz.)
+
+İle dosyaları bir *.zip* veya *.egg* uzantısı eklenebilir arama yolları seçerek **Zip arşivine arama yolu Ekle** komutu. Klasörlerle olduğu gibi bu dosyaların içeriğini taranan ve IntelliSense için kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

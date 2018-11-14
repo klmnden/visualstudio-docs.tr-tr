@@ -1,5 +1,5 @@
 ---
-title: 'Örnek XSD dosyası: Basit şeması'
+title: 'Örnek XSD dosyası: Basit şema'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -17,9 +17,9 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 06/01/2018
 ms.locfileid: "34572705"
 ---
-# <a name="sample-xsd-file-simple-schema"></a>Örnek XSD dosyası: Basit şeması
+# <a name="sample-xsd-file-simple-schema"></a>Örnek XSD dosyası: Basit şema
 
-Aşağıdaki XSD dosyası XSD şema Tasarımcısı belgelerinde çeşitli örnekler kullanılır. Basit satın alma siparişi şeması dosyasıdır.
+XSD şema Tasarımcısı çeşitli örneklerini aşağıdaki XSD dosyası kullanılır. Basit satınalma siparişi şeması dosyasıdır.
 
 ```xml
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
