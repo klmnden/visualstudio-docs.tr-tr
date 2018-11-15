@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31800a7ec4e5a008234f7ee72b6c43bba559fbf9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5a2158663defe02dc51e91e888d47f325db7226a
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928353"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645152"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# üretkenlik Kılavuzu
 
@@ -46,7 +46,7 @@ Popüler Visual Studio kısayolları şunlardır:
 | **Ctrl**+**.** (Ayrıca **Alt**+**girin** profilindeki C#) | Hızlı Eylemler ve Yeniden Düzenlemeler | Hangi kod düzeltmeleri görmek için İmleç konumuna veya kod seçim sırasında kod oluşturma işlemleri, yeniden düzenlemeler veya diğer hızlı Eylemler kullanılabilir |
 | **Ctrl**+**D** | Satırı Yinele | İmlecin bulunduğu kod satırının çoğaltır (kullanılabilir **Visual Studio 2017 sürüm 15.6** ve üzeri) |
 | **Shift**+**Alt**+**+**/**-** | Seçimi Genişlet/Sözleşmesi | Genişletir ya da geçerli seçimi Düzenleyicisi'nde sözleşmeler (kullanılabilir **Visual Studio 2017 sürüm 15.5** ve üzeri) |
-| **CTRL** + **Alt** + **.** | Eşleşen bir sonraki giriş işareti Ekle | Seçim ve giriş işaretini geçerli seçimi ile eşleşen bir sonraki konumda ekler (kullanılabilir **Visual Studio 2017 sürüm 15,8** ve üzeri) |
+| **Shift** + **Alt** + **.** | Eşleşen bir sonraki giriş işareti Ekle | Seçim ve giriş işaretini geçerli seçimi ile eşleşen bir sonraki konumda ekler (kullanılabilir **Visual Studio 2017 sürüm 15,8** ve üzeri) |
 | **CTRL**+**Q** | Hızlı Başlat | Tüm Visual Studio ayarları arama |
 | **F5** | Hata Ayıklamayı Başlat | Uygulamanızı hata ayıklamayı Başlat |
 | **CTRL**+**F5** | Hata ayıklama Çalıştır | Uygulamanızı yerel olarak hata ayıklama olmadan çalıştırma |

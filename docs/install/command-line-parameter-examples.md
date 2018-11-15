@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cd3c7a5b191ee74005eb79da0767223ca43de08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc0b7a9dfef0f1cf48c7ed07702694026fe14a35
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895491"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645113"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Visual Studio 2017 yüklemesi için komut satırı parametresi örnekleri
 
@@ -128,6 +128,39 @@ Bu komut satırı parametreleri **15.7 sürümündeki yeni**. Bunlar hakkında d
 * Yükleme yolu kullanarak:
 
   `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS"`
+
+## <a name="using-export"></a>Dışarı aktarma hizmetini kullanarak
+
+Bu komut satırı komutudur **15.9 yeni**. Bunun hakkında daha fazla bilgi için bkz. [Visual Studio'yu yüklemek için komut satırı parametreleri kullanmak](use-command-line-parameters-to-install-visual-studio.md) sayfası.
+
+* Bir yükleme seçimini kaydetmek için dışarı aktarma kullanarak:
+
+```cmd
+vs_enterprise.exe export --installPath "C:\VS" --config "C:\.vsconfig"
+```
+
+* Sıfırdan özel seçimini kaydetmek için dışarı aktarma kullanarak:
+
+```cmd
+vs_enterprise.exe export --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended --config "C:\.vsconfig"
+```
+
+## <a name="using---config"></a>--Config'ı kullanma
+
+Bu komut satırı parametresi **15.9 yeni**. Bunun hakkında daha fazla bilgi için bkz. [Visual Studio'yu yüklemek için komut satırı parametreleri kullanmak](use-command-line-parameters-to-install-visual-studio.md) sayfası.
+
+* Önceden kaydedilen yükleme yapılandırma dosyasından iş yüklerini ve bileşenlerini yüklemek için--config'ı kullanma:
+
+```cmd
+vs_enterprise.exe --config "C:\.vsconfig" --installPath "C:\VS"
+```
+
+* Mevcut bir yüklemeye iş yüklerinin ve bileşenlerin eklemek için--config'ı kullanma:
+
+```cmd
+vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
+```
+
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a8987354af4a0b62438cea3aab3f18f4def7bfa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2997ae4658abc383a0b9e506fc7d8ea19bffce2a
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907046"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645165"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv komut satırı anahtarları
 
@@ -31,9 +31,9 @@ Devenv, tümleşik geliştirme ortamı (IDE) için çeşitli seçenekleri yanı 
 
 ## <a name="devenv-switch-syntax"></a>Devenv anahtarı sözdizimi
 
-Varsayılan olarak, devenv komutları anahtarları devenv.com yardımcı programı geçirin. Gibi standart sistem akışları çıkışını devenv.com yardımcı program sunar `stdout` ve `stderr`. Çıktı, örneğin bir .txt dosyasına yakaladığında yardımcı programı uygun g/ç yönlendirmesi belirler.
+İle başlayan komutlar `devenv` tarafından işlenen `devenv.com` gibi standart sistem akışları çıkışını sunan yardımcı program `stdout` ve `stderr`. Çıktı, örneğin bir .txt dosyasına yakaladığında yardımcı programı uygun g/ç yönlendirmesi belirler.
 
-Öte yandan, ile başlayan komutlar `devenv.exe` aynı anahtarlar kullanabilirsiniz, ancak devenv.com yardımcı programı atlanır.
+Öte yandan, ile başlayan komutlar `devenv.exe` aynı anahtarlar kullanabilirsiniz ancak `devenv.com` yardımcı programı atlanır. Kullanarak `devenv.exe` doğrudan çıkış konsolda görüntülenmesini engeller.
 
 Sözdizimi kurallarını için `devenv` anahtarları benzer diğer DOS komut satırı yardımcı programları için olanlar. Aşağıdaki sözdizimi kurallarını tümüne uygula `devenv` anahtarlar ve bunların bağımsız değişkenleri:
 
@@ -45,7 +45,7 @@ Sözdizimi kurallarını için `devenv` anahtarları benzer diğer DOS komut sat
 
 - İlk bağımsız değişken bir çözüm veya proje değil bir dosya ise, bu dosyanın uygun düzenleyicide IDE yeni bir örneğini açar.
 
-- Bir proje dosyası adı bir çözüm dosyası adı yerine sağladığında bir `devenv` komut aynı ada sahip bir çözüm dosyası için proje dosyasının üst klasörü arar. Örneğin, komut `devenv /build myproject1.vbproj` üst klasör için "myproject1.sln" adlı bir çözüm dosyası arar.
+- Bir proje dosyası adı bir çözüm dosyası adı yerine sağladığında bir `devenv` komut aynı ada sahip bir çözüm dosyası için proje dosyasının üst klasörü arar. Örneğin, komut `devenv myproject1.vbproj /build` üst klasör için "myproject1.sln" adlı bir çözüm dosyası arar.
 
     > [!NOTE]
     > Bu projeye başvuran bir ve yalnızca bir çözüm dosyası, kendi üst klasörde bulunmalıdır. Üst klasör herhangi bir çözüm dosyası içeriyorsa bu projeye başvuran ya da üst klasör ona başvuran iki veya daha fazla çözüm dosyası içeriyorsa, ardından bir geçici çözüm dosyası oluşturulur.
@@ -78,12 +78,12 @@ Aşağıdaki komut satırı anahtarları IDE görüntülemez.
 
 |Komut satırı anahtarı|Açıklama|
 | - |-----------------|
-|[/?](../../ide/reference/q-devenv-exe.md)|Devenv anahtarları için yardımı görüntüler **komut istemi penceresi**.<br /><br /> **Devenv /?**|
-|[/Build](../../ide/reference/build-devenv-exe.md)|Belirtilen çözüm veya projeyi yapılandırmasına göre belirtilen çözümü derler.<br /><br /> **Myproj.csproj. / Build Devenv**|
-|[/Clean](../../ide/reference/clean-devenv-exe.md)|Kaynak dosyaları etkilemeden oluşturma komutu tarafından oluşturulan tüm dosyaları siler.<br /><br /> **Devenv myproj.csproj / Temizle**|
-|[/Deploy](../../ide/reference/deploy-devenv-exe.md)|Çözümleri yapılandırmasına bir dağıtım için gerekli dosyaları ile birlikte çözümü derler.<br /><br /> **Devenv myproj.csproj / dağıtma**|
+|[/?](../../ide/reference/q-devenv-exe.md)|Devenv anahtarları için yardımı görüntüler **komut istemi penceresi**.<br /><br /> `devenv /?`|
+|[/Build](../../ide/reference/build-devenv-exe.md)|Belirtilen çözüm veya projeyi yapılandırmasına göre belirtilen çözümü derler.<br /><br /> `devenv myproj.csproj /build`|
+|[/Clean](../../ide/reference/clean-devenv-exe.md)|Kaynak dosyaları etkilemeden oluşturma komutu tarafından oluşturulan tüm dosyaları siler.<br /><br /> `devenv myproj.csproj /clean`|
+|[/Deploy](../../ide/reference/deploy-devenv-exe.md)|Çözümleri yapılandırmasına bir dağıtım için gerekli dosyaları ile birlikte çözümü derler.<br /><br /> `devenv myproj.csproj /deploy`|
 |[/Diff](../../ide/reference/diff.md)|İki dosyayı karşılaştırır. Dört parametre alır: Kaynakdosya, Hedefdosya, SourceDisplayName (isteğe bağlı), TargetDisplayName (isteğe bağlı).|
-|[/Out](../../ide/reference/out-devenv-exe.md)|Oluşturma sırasında hatalar almak için bir dosya belirtmenizi sağlar.<br /><br /> **Myproj.csproj. / Build Devenv/out log.txt**|
+|[/Out](../../ide/reference/out-devenv-exe.md)|Oluşturma sırasında hatalar almak için bir dosya belirtmenizi sağlar.<br /><br /> `devenv myproj.csproj /build /out log.txt`|
 |[/Project](../../ide/reference/project-devenv-exe.md)|Projeyi oluşturmak için temizlemek veya dağıtmak. Yalnızca / Build ayrıca sağladıysanız bu anahtarı kullanabilirsiniz. / rebuild, / clean veya / deploy anahtarı.|
 |[/ProjectConfig](../../ide/reference/projectconfig-devenv-exe.md)|Derleme veya dağıtım için proje yapılandırmasını belirtir. Yalnızca/Project anahtarı da sağladıysanız bu anahtarı kullanabilirsiniz.|
 |[/Rebuild](../../ide/reference/rebuild-devenv-exe.md)|Temizler ve daha sonra belirtilen çözüm veya projeyi yapılandırmasına göre belirtilen çözümü derler.|

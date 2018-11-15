@@ -80,7 +80,7 @@ UI eylem özelliklerini düzenleme
   
  Bir UI eylem özelliklerini değiştirmek için **UI eylemi** bölmesinde UI eylem özelliklerini yı düzenlemek istediğiniz bir UI eyleminden içeren test yöntemi genişletin ve ardından Özellikler penceresini kullanarak özelliklerini değiştirin.  
   
- Örneğin, bir sunucu kullanılamıyor ve Web tarayıcınızı ile ilişkili bir kullanıcı Arabirimi eylemine sahip belirten **Web sayfasına gidin '<http://Contoso1/default.aspx’>**, URL'sine değişebilir `‘ http://Contoso2/default.aspx’`.  
+ Örneğin, bir sunucu kullanılamıyor ve Web tarayıcınızı ile ilişkili bir kullanıcı Arabirimi eylemine sahip belirten **Web sayfasına gidin '<http://Contoso1/default.aspx’>**, URL'sine değişebilir `‘http://Contoso2/default.aspx’`.  
   
  ![Denetim Özellikleri](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Denetim özelliklerini düzenleme  

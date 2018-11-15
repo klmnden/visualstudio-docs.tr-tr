@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 379291059157980a86d0379c69c0d592eee83a99
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 095e986e46332b4bf548cb84188d9f0c35324bc3
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177831"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645191"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Web performans testindeki dinamik parametreleri algılayamama sorununu çözme
 
@@ -188,7 +188,7 @@ Hem algılanabilir hem de algılanamaz bir dinamik parametre göstermek için bi
 
 3.  Web Performans Test Sonuçları Görüntüleyicisi'ne dönün ve seçin *JScriptQuery.aspx* sayfasında başarısız oldu. Daha sonra istek sekmesini seçin, ham veriyi göster onay kutusunu işaretlenmemiş olduğunu doğrulayın, aşağı kaydırın ve CustomQueryString üzerinde Hızlı Bul öğesini seçin.
 
-     ![Dinamik parametre ayırmak için Hızlı Bul'u kullanma](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
+     ![Dinamik parametreyi yalıtmak için Hızlı Bul'u kullanma](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
 4.  Test düzenleyicisine baktığımız bakarak biliyoruz, *JScriptQuery.aspx* request's CustomQueryString'in bir değeri atandı: `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl`, ve şüpheli dinamik bölümün "1v0yhyiyr0raa2w4j4pwf5zl" olduğunu. Aranan açılır listesinde, arama dizesinin şüpheli bölümünü kaldırın. Dize "CustomQueryString = jScriptQueryString___".
 

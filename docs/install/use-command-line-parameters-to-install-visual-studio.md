@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 051935a2c7022af3c6811e90a89697a08f52fa9a
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 55cf6eb2a46f707e5c0c20633ab92ac2304214ec
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050371"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645204"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Visual Studio 2017'yi yüklemek için komut satırı parametrelerini kullanma
 
@@ -55,6 +55,7 @@ Komut satırı seçenekleri, indirme işlemini başlatan küçük (yaklaşık 1 
 | `update` | Yüklü bir ürün güncelleştirir. |
 | `repair` | Yüklü bir ürün onarır. |
 | `uninstall` | Yüklü bir ürün kaldırır. |
+| `export` | **Yeni 15.9**: yükleme seçimi bir yükleme yapılandırma dosyasına dışarı aktarır. |
 
 | **Yükleme seçeneği** | **Açıklama** |
 | ----------------------- | --------------- |
@@ -74,6 +75,7 @@ Komut satırı seçenekleri, indirme işlemini başlatan küçük (yaklaşık 1 
 | `--nickname <name>` | **İsteğe bağlı**: Bu takma ad atamak için yüklü bir ürün için tanımlar. Takma ad 10 karakterden uzun olamaz.  |
 | `--productKey` | **İsteğe bağlı**: Bu ürün anahtarı yüklü bir ürün için tanımlar. Şunlardan oluşur 25 alfasayısal karakter ya da biçimi `xxxxx-xxxxx-xxxxx-xxxxx-xxxxx` veya `xxxxxxxxxxxxxxxxxxxxxxxxx`. |
 | `--help, --?, -h, -?` | Bu sayfanın çevrimdışı bir sürümünü görüntüler. |
+| `--config <path>` | **15.9, isteğe bağlı olarak yeni**: bir yükleme sırasında veya değiştirme işlemi, bu iş yükleri belirler ve bileşenleri eklemek için temel bir önceden kaydedilmiş yükleme yapılandırma dosyası. . Bu işlem eklenebilir ve bunlar dosyasında mevcut değilse herhangi bir iş yükü veya bileşen kaldırmaz. Ayrıca, ürün için geçerli olmayan öğeler eklenmeyecek. Dışa aktarma işlemi sırasında bu yükleme yapılandırma dosyasını kaydetmek istediğiniz konumu belirler. |
 
 > Not: birden çok iş yüklerinin ve bileşenlerin belirtirken, tekrarlamalısınız `--add` veya `--remove` her öğe için komut satırı anahtarı.
 
