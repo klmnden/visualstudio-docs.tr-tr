@@ -17,12 +17,12 @@ ms.assetid: 6456ab3e-1c03-4f3c-91f9-16797ab7f5e7
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40add50e343b7782e059aa726ebde4c4739366c8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7fba0809ebe99bbb8726bf69f8b71f135a4ee559
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825224"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752794"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Bu yöntem, bir nesnenin çalışma zamanı türünü belirler.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp#  
-HRESULT ResolveRuntimeType(   
+HRESULT ResolveRuntimeType(   
    IDebugObject* pObject,  
    IDebugField** ppResolved  
 );  

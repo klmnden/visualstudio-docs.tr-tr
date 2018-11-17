@@ -1,5 +1,5 @@
 ---
-title: 'Hata ayıklama hazırlığı: C#, F # ve Visual Basic proje türleri | Microsoft Docs'
+title: 'Hata ayıklama hazırlığı: C#, F#ve Visual Basic proje türleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -25,26 +25,26 @@ helpviewer_keywords:
 - debugger, settings by project type
 ms.assetid: 7a0535f6-1cd4-4b51-ad34-f4a45b9f1ce3
 caps.latest.revision: 28
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54dc950c606a78f277252b30a57e5de8c796df15
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 721d1571052c9e3acbf13e68e90bbfe3413b1b81
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274917"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800243"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Hata Ayıklama Hazırlığı: C#, F# ve Visual Basic Proje Türleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu bölümdeki konularda, C#, F #'ta, hata ayıklamak açıklanır ve [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] proje tarafından oluşturulan türleri [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proje şablonları.  
+Bu bölümdeki konular, hata ayıklama açıklayan C#, F#, ve [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] proje tarafından oluşturulan türleri [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proje şablonları.  
   
  Proje türlerine çıktılarını DLL'leri oluşturma halinde gruplandırılır Not [DLL projelerinde hata ayıklama](../debugger/debugging-dll-projects.md) paylaştıkları genel özellikleri nedeniyle.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Önerilen Özellik Ayarları](../debugger/managed-debugging-recommended-property-settings.md)  
- Bu bölümde C#, F # ve Visual Basic projeleri için hata ayıklama ile ilgili önerilen özellik ayarları açıklanmaktadır.  
+ Bu bölümde hata ayıklamayla ilgili önerilen özellik ayarları açıklanmaktadır C#, F#ve Visual Basic projeleri.  
   
  [Windows Forms Uygulamaları](../debugger/debugging-preparation-windows-forms-applications.md)  
  Bir Windows uygulaması projesi açıklar ve hata ayıklama, varsayılan hata ayıklama yapılandırmasını değiştirme ve dışında uygulama başlatma yönergeleri sağlar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve eklemeyi.  

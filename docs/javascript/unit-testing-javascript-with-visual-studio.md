@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 678a37eec7643976e689cc027922ff481a0e005f
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 071f64c4239441d3c3fd2c111d1b912175e23316
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219386"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766552"
 ---
 # <a name="unit-testing-in-nodejs"></a>Birim testi node.js'de
 
@@ -33,7 +33,7 @@ Desteklenen çerçeveler şunlardır:
 > [!WARNING]
 > Bant bir sorun, şu anda bant test çalışmasını engeller. Varsa [çekme isteği #361](https://github.com/substack/tape/pull/361) birleştirilmiş, sorunun çözülmesi gerekir.
 
-Sık kullanılan Çerçevenizi desteklenmiyorsa bkz [birim testi çerçevesi için destek ekleme](#addingFramework) desteği ekleme hakkında bilgi için. 
+Sık kullanılan Çerçevenizi desteklenmiyorsa bkz [birim testi çerçevesi için destek ekleme](#addingFramework) desteği ekleme hakkında bilgi için.
 
 ## <a name="write-unit-tests"></a>Birim testleri yazma
 
@@ -129,7 +129,7 @@ Test execution time: 1.5731 Seconds
 ```
 
 > [!NOTE]
-> Belirten bir hata alırsanız *vstest.console.exe* bulunamıyor, açık Geliştirici komut istemi ve normal bir komut istemi değil emin olun. 
+> Belirten bir hata alırsanız *vstest.console.exe* bulunamıyor, açık Geliştirici komut istemi ve normal bir komut istemi değil emin olun.
 
 ## <a name="addingFramework"></a>Bir birim testi çerçevesi için destek eklendi
 
@@ -149,7 +149,7 @@ Aşağıdaki iki işlevi dışarı aktarır. aynı ada sahip bir JavaScript dosy
 Kullanılabilir test çerçevesini bulma, Visual Studio başlangıcında gerçekleşir. Visual Studio çalışırken bir çerçeve eklenirse, framework algılamak için Visual Studio'yu yeniden başlatın. Ancak uygulamasına değişiklikler yaparken yeniden başlatmanız gerekmez.
 
 ## <a name="unit-tests-in-other-project-types"></a>Birim testleri diğer proje türleri
-Node.js projelerinizde yalnızca birim testleri yazma için sınırlı değildir. Tüm C# veya VB projesi için TestFramework ve TestRoot özelliklerini eklediğinizde, bu testleri numaralandırılan ve bunları Test Gezgini penceresini kullanarak çalıştırabilirsiniz.
+Node.js projelerinizde yalnızca birim testleri yazma için sınırlı değildir. Eklediğinizde TestFramework ve TestRoot özelliklerinin herhangi biri C# veya Visual Basic projesi bu testlerin listelenmiş ve bunları Test Gezgini penceresini kullanarak çalıştırabilirsiniz.
 
 Bunu etkinleştirmek için Çözüm Gezgini'nde proje düğümüne sağ tıklayın, **projeyi**ve ardından **Düzenle proje**. Ardından Proje dosyasında aşağıdaki iki öğeyi özellik grubuna ekleyin.
 

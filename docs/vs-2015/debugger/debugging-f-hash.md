@@ -1,5 +1,5 @@
 ---
-title: 'F # hata ayıklama | Microsoft Docs'
+title: Hata ayıklama F# | Microsoft Docs
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -19,26 +19,26 @@ helpviewer_keywords:
 - F#, debugging
 ms.assetid: 20bcd51c-2d06-4281-9a1e-ef2b91d1a779
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd722e40a0579181e3c361706f0775aaf350c341
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4cfe65671e0f3d9b3e4702c9f08740c6694286ce
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209579"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734805"
 ---
 # <a name="debugging-f"></a>F# Hata Ayıklama #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-F # hata ayıklama birkaç istisna dışında herhangi bir yönetilen dil hatalarının ayıklanmasına benzer:  
+Hata ayıklama F# birkaç istisna dışında herhangi bir yönetilen dil hatalarının ayıklanmasına benzer:  
   
--   **Otolar** pencere, F # değişkenleri görüntülemez.  
+-   **Otolar** penceresi görüntülemez F# değişkenleri.  
   
--   Düzenle ve devam et desteklenmez F # için. F # kodunda hata ayıklama oturumu sırasında düzenleme mümkündür, ancak kaçınılmalıdır. Hata ayıklama sırasında F # kod düzenleme, hata ayıklama oturumu sırasında kod değişikliklerini uygulanmamış olduğundan, kaynak kodu ve hata ayıklaması yapılan kod arasında bir uyuşmazlık neden olur.  
+-   Düzenle ve devam et desteklenmez F#. Düzenleme F# kod hata ayıklama oturumu sırasında mümkündür ancak kaçınılmalıdır. Kod değişiklikleri, hata ayıklama oturumu sırasında uygulanmaz, düzenleme F# hata ayıklama sırasında kodu kaynak kodu ve hata ayıklaması yapılan kod arasında bir uyuşmazlık neden olur.  
   
--   Hata ayıklayıcı, F # ifadelerini algılamaz. F # hata ayıklama sırasında bir hata ayıklayıcı penceresi ya da iletişim kutusunda bir ifade girmek için C# sözdizimi ifadesine Çevir gerekir. Bir F # ifadesi C# içinde Çevir, C# kullandığını hatırlamak emin olmak için eşitlik ve bu F # karşılaştırma işleci kullandığından tek = ==.  
+-   Hata ayıklayıcı tanımıyor F# ifadeler. Bir hata ayıklayıcı penceresinde veya bir iletişim kutusu sırasında bir ifade girmenizi F# Çevir gerekir, hata ayıklama ifadesine C# söz dizimi. Çevirme ne zaman bir F# ifadeye C#, unutulmaması emin olun C# kullanır ve eşitlik için karşılaştırma işleci olarak == F# tek = kullanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yönetilen Kodda Hata Ayıklama](../debugger/debugging-managed-code.md)

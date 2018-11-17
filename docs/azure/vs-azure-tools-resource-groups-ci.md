@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: 4b9304458219b262b07607bf61257e634ff2d435
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 41910f2da7a9ee3e8d3520a3d95dda96c612f4f1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000387"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730718"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Azure DevOps hizmetlerinde, Azure kaynak grubu dağıtım projeleri kullanarak sürekli tümleştirme
 Azure şablonu dağıtmak için çeşitli aşamalarda görevler: azure'a derleme, Test, kopyalama (aynı zamanda "Hazırlama" olarak adlandırılır) ve şablonu dağıtın. Azure DevOps hizmetler için şablonları dağıtmak için iki farklı yolu vardır. Her iki yöntem de aynı sonuçları sağlar, bu nedenle, iş akışınızı en uygun olanı seçin.
@@ -131,7 +131,7 @@ Aşağıdaki yordamları, Azure DevOps yerleşik görevleri kullanarak Hizmetler
 
 1. İki yeni derleme adımları eklemek için Azure DevOps Hizmetleri derleme işlem hattı düzenleyin. Derleme işlem hattı altında seçin **yapı tanımları** kategori seçip **Düzenle** bağlantı.
    
-   ![Derleme tanımı Düzenle][12]
+   ![Yapı tanımını düzenleme][12]
 2. Yeni derleme adımları kullanarak derleme işlem hattı ekleyin **derleme adımı Ekle...** düğmesi.
    
    ![Derleme adımı ekleme][13]

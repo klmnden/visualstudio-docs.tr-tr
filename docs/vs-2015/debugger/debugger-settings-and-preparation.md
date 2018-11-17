@@ -21,15 +21,15 @@ helpviewer_keywords:
 - debug builds, setting up
 ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
 caps.latest.revision: 40
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79657c6ce53bf1111eec37c1548ea3d4c61d3394
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d670470158c86fa62c860571779ec701f65a11f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225322"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766287"
 ---
 # <a name="debugger-settings-and-preparation"></a>Hata ayıklayıcı ayarları ve hazırlığı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Bu bölümde hata ayıklayıcı ile ilgili özellik ayarları ve programınızla
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Hata Ayıklayıcısı Proje Ayarları](../debugger/debugger-project-settings.md)  
- Hata ayıklayıcısı ayarlarını belirtme, hata ayıklama ve yayın yapılandırmaları nasıl ve semboller yönetme ve kaynak kodu açıklar. Ayrıca, C++, C#, F # ve Visual Basic hata ayıklama yapılandırmaları, hem de web projeleri için uygun proje ayarlarını açıklar.  
+ Hata ayıklayıcısı ayarlarını belirtme, hata ayıklama ve yayın yapılandırmaları nasıl ve semboller yönetme ve kaynak kodu açıklar. Ayrıca, C++ için uygun proje ayarlarını açıklar C#, F#ve Visual Basic hata ayıklama yapılandırmaları, hem de web projeleri.  
   
  [DLL Projelerinde Hata Ayıklama](../debugger/debugging-dll-projects.md)  
  DLL projelerinde, nasıl bir DLL projesinde hata ayıklama, nasıl karışık modda hata ayıklama ve hata ayıklama yönetilen kodu Web Denetim Kitaplığı nasıl hata ayıklama için önerilen proje ayarlarını açıklar.  

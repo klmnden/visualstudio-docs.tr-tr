@@ -17,12 +17,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 75bc095ba4e9fc12033787b64dd516459e574b26
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9fcae5b736310424f220d08aefa4e061e1f6c860
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859942"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756835"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Paylaşılan ve Sürümü Tutulan VSPackage’lar Arasında Seçim Yapma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
