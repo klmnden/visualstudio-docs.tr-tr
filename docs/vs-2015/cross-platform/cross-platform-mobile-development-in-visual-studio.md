@@ -13,12 +13,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: fae40230a75816653e8d06ab9ec7ed4f894d3fa0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 63f057d635682e9552f392e73a5c2ad67f96d66f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194109"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765365"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio’da Platformlar Arası Mobil Geliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Visual Studio kullanarak Android, iOS ve Windows cihazlar için uygulamalar olu�
 |[Android için Visual Studio öykünücüsü öğrenin](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|  
   
 ###  <a name="AndroidHTML"></a> Android, iOS ve Windows, bir tek kod tabanından hedef  
- C# veya F # (Visual Basic şu anda desteklenmiyor) kullanarak, Android, iOS ve Windows için yerel uygulamalar oluşturabilirsiniz.  Başlamak için Visual Studio 2015'i yükleyin, seçin **özel** seçeneği yükleyicide ve seçeneğinin altındaki kutuyu **platformlar arası mobil geliştirme > C# / .NET (Xamarin)**. İle başlayabilirsiniz [Xamarin yükleyici](https://www.xamarin.com/download), Xamarin için Visual Studio 2013 yüklemek için gereklidir.  
+ Kullanarak Android, iOS ve Windows için yerel uygulamalar oluşturabilirsiniz C# veya F# (Visual Basic şu anda desteklenmiyor).  Başlamak için Visual Studio 2015'i yükleyin, seçin **özel** seçeneği yükleyicide ve seçeneğinin altındaki kutuyu **platformlar arası mobil geliştirme > C# / .NET (Xamarin)**. İle başlayabilirsiniz [Xamarin yükleyici](https://www.xamarin.com/download), Xamarin için Visual Studio 2013 yüklemek için gereklidir.  
   
  Visual Studio 2015'i zaten varsa, yükleyici'den çalıştırın **Denetim Masası > Programlar ve Özellikler** ve aynı **özel** Xamarin için bir seçenek olarak yukarıdaki.  
   

@@ -43,15 +43,15 @@ helpviewer_keywords:
 - breakpoints, about breakpoints
 ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
 caps.latest.revision: 63
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b066ed3171ebd59d5c921fc795b1478bb9d2df32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d980fd2367545eb5c824bacc507d9ced9aa2d723
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925402"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765956"
 ---
 # <a name="using-breakpoints"></a>Kesme Noktalarını Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -171,8 +171,8 @@ ms.locfileid: "49925402"
   
    Koşul, hata ayıklayıcı tarafından tanınan herhangi bir geçerli ifade olabilir. Geçerli ifadeler hakkında daha fazla bilgi için bkz. [hata ayıklayıcısındaki ifadeler](../debugger/expressions-in-the-debugger.md).  
   
-## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Nesne kimlikleri kullanarak kesme noktası durumlarını (C# ve F #)  
- Belirli bir nesneyi davranışını gözlemlemek istediğiniz zaman zamanlar vardır; Örneğin, neden bir nesne birden çok kez bir koleksiyona eklenmiş kullanıma bulmak isteyebilirsiniz. C# ve F # içinde belirli örneklerini nesne kimlikleri oluşturabilirsiniz [başvuru türleri](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) ve kesme noktası koşulları kullanabilirsiniz. Nesne Kimliği hizmetlerinde hata ayıklama ortak dil çalışma zamanı tarafından (CLR) oluşturulan ve nesnesiyle ilişkili.  Bir nesne kimliği oluşturmak için aşağıdakileri yapın:  
+## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Kesme noktası koşulları nesne kimlikleri kullanarak (C# ve F#)  
+ Belirli bir nesneyi davranışını gözlemlemek istediğiniz zaman zamanlar vardır; Örneğin, neden bir nesne birden çok kez bir koleksiyona eklenmiş kullanıma bulmak isteyebilirsiniz. İçinde C# ve F#, belirli örneklerini nesne kimlikleri oluşturabilirsiniz [başvuru türleri](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) ve kesme noktası koşulları kullanabilirsiniz. Nesne Kimliği hizmetlerinde hata ayıklama ortak dil çalışma zamanı tarafından (CLR) oluşturulan ve nesnesiyle ilişkili.  Bir nesne kimliği oluşturmak için aşağıdakileri yapın:  
   
 1. Bir kesme noktası kodda nesne oluşturulduktan sonra biraz zaman ayarlayın.  
   

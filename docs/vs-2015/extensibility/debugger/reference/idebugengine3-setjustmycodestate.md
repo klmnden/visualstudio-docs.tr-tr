@@ -17,12 +17,12 @@ ms.assetid: 8ec17fbf-df93-424a-b2ed-fd1e5ee51256
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc701306166cacc1eb25881fee090c91af069589
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fa066cddbf984fcdf2b636733948b3c6d71f044c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818035"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753979"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,10 +32,10 @@ Bu yöntem, hata ayıklama altyapısı JustMyCode durumu bilgilerini söyler.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-HRESULT SetJustMyCodeState(  
-   BOOL           fUpdate,  
-   DWORD          dwModules,  
-   JMC_CODE_SPEC* rgJMCSpec  
+HRESULT SetJustMyCodeState(  
+   BOOL           fUpdate,  
+   DWORD          dwModules,  
+   JMC_CODE_SPEC* rgJMCSpec  
 );  
 ```  
   

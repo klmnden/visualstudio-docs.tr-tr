@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47ede5eebc4d7caf4fe1565c5d8b93b2524ed6ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7f3b5fd2674d63fad6398eeaee082862c4cf6476
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849365"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809135"
 ---
 # <a name="interop-activity-designer"></a>Interop Etkinlik Tasarımcısı
 
@@ -35,7 +35,7 @@ ms.locfileid: "49849365"
 
 C# projeleri için projeye sağ tıklayarak tam .NET Framework 4 kullanmak için projeyi yeniden hedefleyebilirsiniz **Çözüm Gezgini** seçerek **özellikleri**. Üzerinde **uygulama** sekmesinde **NET Framework 4** seçeneğini **hedef Framework'ü**. Seçin **Evet** bu değişikliği onaylamak için.
 
-VB projeleri için projeye sağ tıklayarak tam .NET Framework 4 kullanmak için projeyi yeniden hedefleyebilirsiniz **Çözüm Gezgini** seçerek **özellikleri**. Üzerinde **derleme** sekmesinde **Gelişmiş derleme seçenekleri** düğmesi. Seçin **.Net Framework 4** gelen **hedef çerçeve listesi**ve ardından **Tamam**. Seçin **Evet** bu değişikliği onaylamak için.
+Visual Basic projeleri için projeye sağ tıklayarak tam .NET Framework 4 kullanmak için projeyi yeniden hedefleyebilirsiniz **Çözüm Gezgini** seçerek **özellikleri**. Üzerinde **derleme** sekmesinde **Gelişmiş derleme seçenekleri** düğmesi. Seçin **.Net Framework 4** gelen **hedef çerçeve listesi**ve ardından **Tamam**. Seçin **Evet** bu değişikliği onaylamak için.
 
 **Interop** etkinlik Tasarımcısı, gelen sürüklenebilir **araç kutusu** ve etkinlikleri genellikle yerleştirilen her yerde, gibi olarak içinde iş akışı Tasarımcısı yüzeyine bırakılan bir <xref:System.Activities.Statements.Sequence>. Bırakarak **Interop** etkinlik Tasarımcısı oluşturur bir <xref:System.Activities.Statements.Interop> etkinliği ile bir varsayılan **DisplayName** , birlikte çalışabilirlik. Düzenleyebileceğiniz <xref:System.Activities.Activity.DisplayName%2A> başlığını **Interop** etkinlik Tasarımcısı veya **DisplayName** özellik kılavuzunda kutusu.
 

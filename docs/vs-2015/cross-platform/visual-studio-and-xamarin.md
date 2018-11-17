@@ -13,18 +13,18 @@ ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 704eaae88850463ba7ff251fee13500759de3286
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d43a76f6ae795017ca8e0d4dc898faca1ee2b48b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850665"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788088"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio ve Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Xamarin yerel iOS, Android ve Windows uygulamaları için mobil uygulama geliştirme platformu olan uygulamalardan genel C# / .NET kod tabanı, neredeyse % 100 yeniden kod platformlar arasında %75 elde. Xamarin ve C# ile yazılan uygulamaları, API'leri temel alınan platforma tam erişim ve yerel kullanıcı arabirimleri oluşturun ve çalışma zamanı performansı üzerinde çok az etkisi için platforma özel paketler için derleme olanağı vardır. (Not: Xamarin de destekleyen F #, ancak bu belgeler üzerinde C# yalnızca odaklanır. Visual Basic şu anda desteklenmiyor.)  
+Xamarin yerel iOS, Android ve Windows uygulamaları için mobil uygulama geliştirme platformu olan ortak bir uygulamalardan C#/.NET kod tabanı, neredeyse % 100 yeniden kod platformlar arasında %75 elde edin. Xamarin ve C# ile yazılan uygulamaları, API'leri temel alınan platforma tam erişim ve yerel kullanıcı arabirimleri oluşturun ve çalışma zamanı performansı üzerinde çok az etkisi için platforma özel paketler için derleme olanağı vardır. (Not: Xamarin de destekler F#, ancak bu belgeler üzerinde odaklanır C# yalnızca. Visual Basic şu anda desteklenmiyor.)  
   
  Yine de daha iyi geliştiriciler C#, .NET ve Visual Studio ile aynı verimlilik ve güç Xamarin ile Android, iOS ve Windows cihazlarda uzaktan hata ayıklama da dahil olmak üzere, mobil uygulamalar için çalışırken keyfini çıkarın — yerel kodlama öğrenmek zorunda kalmadan Objective-C ya da Java gibi diller. Küçük şaşkınlık ve ardından, güzel kullanıcı arabirimleri ile diğer birçok yüksek performanslı uygulamaları olan — NASCAR, Aviva ve MixRadio gibi — Xamarin kullanılarak oluşturulan.  
   

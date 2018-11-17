@@ -17,12 +17,12 @@ ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7b7f1c5f9f052253e2b18ac2f7c669b7442ac391
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 371fd4269cee5918bd0d0b623eb49e1f709a311d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294222"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781718"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Windows Forms Araç Kutusu Denetimi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,16 +81,16 @@ Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç
 3.  Aşağıdaki ortak özelliği bildirimleri oluşturun.  
   
     ```csharp  
-    public int Value {  
+    public int Value {  
         get { return currentValue; }   
     }  
   
-    public string Message {  
+    public string Message {  
         get { return displayText; }  
         set { displayText = value; }  
     }  
   
-    public bool ShowReset {  
+    public bool ShowReset {  
         get { return btnReset.Visible; }  
         set { btnReset.Visible = value; }  
     }  
@@ -102,7 +102,7 @@ Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç
 4.  Aşağıdaki kod koymak `Load` Olay denetimi.  
   
     ```csharp  
-    private void Counter_Load(object sender, EventArgs e)  
+    private void Counter_Load(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = Message + Value;  
@@ -115,7 +115,7 @@ Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç
 5.  Sayaç artırmak için aşağıdaki genel yöntem oluşturun.  
   
     ```csharp  
-    public void Increment()  
+    public void Increment()  
     {  
         currentValue++;  
         label1.Text = displayText + Value;  
@@ -127,7 +127,7 @@ Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç
 6.  Eklemek için bir bildirim `Incremented` olaya control sınıfı.  
   
     ```csharp  
-    public event EventHandler Incremented;  
+    public event EventHandler Incremented;  
     ```  
   
      Çağıranlar, sayaç değeri değişikliklere yanıt vermek için bu olay işleyicileri ekleyebilirsiniz.  
@@ -135,7 +135,7 @@ Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç
 7.  Çift tıklayın ve Tasarım görünümüne dön `Reset` oluşturmak için düğme `btnReset_Click` olay işleyicisi ve ardından buna aşağıdaki örnekte gösterildiği gibi doldurun.  
   
     ```csharp  
-    private void btnReset_Click(object sender, EventArgs e)  
+    private void btnReset_Click(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = displayText + Value;  
@@ -149,7 +149,7 @@ Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç
   
     ```csharp  
     [ProvideToolboxControl("General", false)]  
-    public partial class Counter : UserControl  
+    public partial class Counter : UserControl  
     ```  
   
 ### <a name="testing-the-control"></a>Denetimini test etme  

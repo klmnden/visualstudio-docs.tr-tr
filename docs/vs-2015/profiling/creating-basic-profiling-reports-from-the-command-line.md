@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6d73e21e-c04e-48ea-91cc-e517a5f2cd3f
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 33271a3972a0266476b9d09cba96e32a520eed88
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 30361f0f4ae147458252400a5232a657574553d4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191366"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786775"
 ---
 # <a name="creating-basic-profiling-reports-from-the-command-line"></a>Komut Satırından Temel Profil Oluşturma Raporları Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Bu konu, .vsp veya .vsps profil oluşturma veri dosyasından virgülle ayrılmı
 |**Satır**|Kaynak kod satırı tarafından profil oluşturma verilerini listeler.|-   [Örnekleme verileri](../profiling/lines-view-sampling-data.md)<br />-   [.NET bellek örnekleme verileri](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [Çakışma verileri](../profiling/lines-view-contention-data.md)|  
 |**Üst bilgi**|Profil oluşturma veri dosyasının başlık bilgileri.|Belirli dosya için.|  
 |**Mark**|Profil oluşturma işaretleri profil oluşturma çalıştırmasını toplanmadı.|-   [İşaretler görünümü](../profiling/marks-view.md)|  
-|**Modülü**|Modüller için profil oluşturma verilerini listeler.|-   [Örnekleme verileri](../profiling/modules-view-sampling-data.md)<br />-   [Ölçümlü izleme verileri](../profiling/modules-view-instrumentation-data.md)<br />-   [.NET bellek örnekleme verileri](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [.NET bellek izleme verileri](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [Çakışma verileri](../profiling/modules-view-contention-data.md)|  
+|**Module**|Modüller için profil oluşturma verilerini listeler.|-   [Örnekleme verileri](../profiling/modules-view-sampling-data.md)<br />-   [Ölçümlü izleme verileri](../profiling/modules-view-instrumentation-data.md)<br />-   [.NET bellek örnekleme verileri](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [.NET bellek izleme verileri](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [Çakışma verileri](../profiling/modules-view-contention-data.md)|  
 |**İşlem**|İşlemler için profil oluşturma verilerini listeler.|-   [İşlem görünümü](../profiling/process-view.md)<br />-   [Çakışma verileri](../profiling/process-view-contention-data.md)|  
 |**iş parçacığı**|İş parçacıkları için profil oluşturma verilerini listeler.|-   [İşlem görünümü](../profiling/process-view.md)|  
 |**Türü**|Ayırma profil oluşturma verileri türe göre listelenmektedir.|-   [Ayırma görünümü](../profiling/dotnet-memory-allocations-view.md)|  
