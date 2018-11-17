@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaLineNumber::get_columnNumberEnd method
 ms.assetid: 02fa56c1-87b6-405a-adee-3bb6bc62de2d
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9abcf09fad3a2fef00129220319490b11cd758af
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eef563cbb841f18f93905c715e401f0e2c95b792
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826388"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775660"
 ---
 # <a name="idialinenumbergetcolumnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49826388"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp#  
-HRESULT get_columnNumberEnd (   
+HRESULT get_columnNumberEnd (   
    DWORD* pRetVal  
 );  
 ```  

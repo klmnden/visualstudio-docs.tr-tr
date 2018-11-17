@@ -16,12 +16,12 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: 94d785ce55b57e35b0880537e099cbc3e03d20ab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3c1dfa0e3de06bcd6c61472a085ea3c4cdeeac27
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855826"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780795"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX Dil Paketi Şeması 2.0 başvurusu
 
@@ -31,7 +31,7 @@ VSIX Dil Paketi şeması VSIX paketlerini yerelleştirilmiş yükleme bilgilerin
 
 Dil paketi dosyasının kök öğe `<PackageLanguagePackManifest>`, özniteliğine sahip `Version`, dil paketi biçimi sürümünü olduğu. Bu makalede ayarlayarak bildiriminde belirtilen dil paketi biçiminde 2.0 sürümünü `Version` öznitelik değerine `Version="2.0.0"`. Tam olarak bir alt öğesi kök öğe içeren `<Metadata>` öğesi.
 
-### <a name="packagelangaugepackmanifest-element"></a>PackageLangaugePackManifest öğesi
+### <a name="packagelanguagepackmanifest-element"></a>PackageLanguagePackManifest öğesi
 
 İçinde `<PackageLanguagePackManifest>` öğesi şu öğe bulunmalıdır:
 

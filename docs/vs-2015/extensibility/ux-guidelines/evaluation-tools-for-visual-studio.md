@@ -13,12 +13,12 @@ ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c5a36822bc4e9a30de69fc67d072c8c40a5159d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4bf1f79cbba948f170849b6f9e89cb2421ceb9cf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292142"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806249"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Visual Studio için değerlendirme araçları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ ms.locfileid: "49292142"
   
 -   Büyütülmüş yazı tipleri nedeniyle hiçbir kırpma hata olmadığını doğrulayın. Kırpılmış yazı tipleri büyük olasılıkla sabit yükseklik denetimleri veya sabit yükseklik kapsayıcıları sonucudur.  
   
-### <a name="dialogs"></a>İletişim kutuları  
+### <a name="dialogs"></a>İletişim Kutuları  
   
 -   İletişim kutusu başlığı onu başlatan komut ile aynı olduğunu doğrulayın.  
   
