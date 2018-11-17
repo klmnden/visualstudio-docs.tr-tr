@@ -24,15 +24,15 @@ helpviewer_keywords:
 - IntelliTrace, debugging after a crash
 ms.assetid: 486bfec2-39bd-4d78-892a-42352128ee52
 caps.latest.revision: 142
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f96b0df5028974317be46fed7c727b3141e8b64
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a1cd1cc041970588cf7c90c2c6275100687e1bcb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912987"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737209"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Kodunuzun yürütme geçmişini izlemek ve kaydetmek için IntelliTrace kulland�
 |||  
 |-|-|  
 |**Desteklenen**|-.NET Framework 2.0 veya üzeri sürümleri kullanan Visual Basic ve Visual C# uygulamalar.<br />     ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows iş akışı, SharePoint 2010, SharePoint 2013 ve 64-bit uygulamalar da dahil olmak üzere çoğu uygulamada hata ayıklaması yapabilirsiniz.<br />     IntelliTrace ile SharePoint uygulamalarında hata ayıklamak için bkz: [izlenecek yol: bir SharePoint uygulaması tarafından IntelliTrace kullanarak hata ayıklama](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Microsoft Azure uygulamalarında IntelliTrace ile hata ayıklamak için bkz: [bulut hizmet yayımlanan IntelliTrace ve Visual Studio ile hata ayıklama](http://go.microsoft.com/fwlink/?LinkID=262248).|  
-|**Sınırlı destek**|-Deneysel olarak F # uygulamaları<br />-Yalnızca olaylar için desteklenen Windows Store uygulamaları|  
+|**Sınırlı destek**|- F# Deneysel olarak uygulamalar<br />-Yalnızca olaylar için desteklenen Windows Store uygulamaları|  
 |**Desteklenmiyor**|-C++, diğer diller ve komut dosyası<br />-Windows Hizmetleri, Silverlight, Xbox veya [!INCLUDE[winmobile](../includes/winmobile-md.md)] uygulamaları|  
   
 > [!NOTE]

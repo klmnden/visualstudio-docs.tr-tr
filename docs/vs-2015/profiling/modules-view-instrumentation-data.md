@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Modules view
 ms.assetid: 895b9589-1987-4160-916f-53b898a69cf0
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e2376445faa617ca592c60ee14aefcdc0270c3a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 55a01dab80d15bcd7356bc059db2be6d10f504a7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269574"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51808537"
 ---
 # <a name="modules-view---instrumentation-data"></a>Modüller Görünümü - İzleme Verileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -36,15 +36,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37e34d01d2488ad5345ff65237cd708c06764661
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bd522a5f5ff39814df3526843ae7d03578f92e86
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816691"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826849"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcıda kesme noktaları kullanma
-Kesme noktaları, geliştirici araç kutusundaki en önemli hata ayıklama tekniklerinden biridir. Hata ayıklayıcı yürütme duraklatmak istediğiniz yere kesme noktalarını ayarlayın. Örneğin, belirli bir kesme noktası çağrı yığınına bakın veya kod değişkenleri durumunu görmek isteyebilirsiniz.  
+Kesme noktaları, geliştirici araç kutusundaki en önemli hata ayıklama tekniklerinden biridir. Hata ayıklayıcı yürütme duraklatmak istediğiniz yere kesme noktalarını ayarlayın. Örneğin, belirli bir kesme noktası çağrı yığınına bakın veya kod değişkenleri durumunu görmek isteyebilirsiniz. Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) bu makalede geçmeden önce.
   
 ##  <a name="BKMK_Overview"></a> Kaynak kodunda kesme noktalarını belirleyin  
  Herhangi bir yürütülebilir kod satırında bir kesme noktası ayarlayabilirsiniz. Örneğin, aşağıdaki C# kodunda, size bir kesme noktası Değişken bildiriminde ayarlayabilirsiniz `for` döngü ya da herhangi bir kod içinde `for` döngü. Ad alanı veya sınıf bildirimlerinde ya da yöntem imzası bir kesme noktası ayarlanamıyor.  
@@ -235,8 +235,8 @@ Seçtiğinizde, **koşullu ifade**, iki koşul arasında seçim yapabilirsiniz: 
  >- Yerel kod için hata ayıklayıcı, kesme noktasına ilk değerlendirmede isabet etmez şekilde bir değişiklik, koşulun ilk değerlendirmesinin dikkate almaz. 
  >- Yönetilen kod için hata ayıklayıcı kesme noktasına sonraki ilk değerlendirmede isabet **değiştirildiğinde** seçilir.  
   
-### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>Nesne kimlikleri kullanarak koşullu ifadeler (C# ve F # yalnızca)  
- Belirli bir nesneyi davranışını gözlemlemek istediğiniz zaman zamanlar vardır. Örneğin, neden bir nesne bir koleksiyona birden fazla kez eklendi kullanıma bulmak isteyebilirsiniz. C# ve F # içinde belirli örneklerini nesne kimlikleri oluşturabilirsiniz [başvuru türleri](/dotnet/csharp/language-reference/keywords/reference-types)ve kesme noktası koşulları kullanabilirsiniz. Nesne Kimliği hizmetlerinde hata ayıklama ortak dil çalışma zamanı tarafından (CLR) oluşturulan ve nesnesiyle ilişkili.  
+### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>Nesne kimlikleri koşullu ifadeler kullanma (C# ve F# yalnızca)  
+ Belirli bir nesneyi davranışını gözlemlemek istediğiniz zaman zamanlar vardır. Örneğin, neden bir nesne bir koleksiyona birden fazla kez eklendi kullanıma bulmak isteyebilirsiniz. İçinde C# ve F#, belirli örneklerini nesne kimlikleri oluşturabilirsiniz [başvuru türleri](/dotnet/csharp/language-reference/keywords/reference-types)ve kesme noktası koşulları kullanabilirsiniz. Nesne Kimliği hizmetlerinde hata ayıklama ortak dil çalışma zamanı tarafından (CLR) oluşturulan ve nesnesiyle ilişkili.  
 
 **Bir nesne kimliği oluşturmak için:** 
   
@@ -305,5 +305,7 @@ Dize değerleri çift tırnak içine alın. Kullanarak ifadeleri birleştirebili
 İzleme noktaları görünür olarak kaynak kodunun sol kenar boşluğunda kırmızı Karo ve **kesme noktaları** windows. 
   
 ## <a name="see-also"></a>Ayrıca bkz.  
-[Visual Studio hata ayıklayıcısında kesme noktaları sorunlarını giderme](../debugger/troubleshooting-breakpoints.md)  
-[Hata ayıklayıcısı ile kodda gezinme](../debugger/navigating-through-code-with-the-debugger.md)
+ [Hata ayıklıyor?](../debugger/what-is-debugging.md)  
+ [Daha iyi yazma C# kullanarak Visual Studio code](../debugger/write-better-code-with-visual-studio.md)  
+ [Hata ayıklama ilk bakış](../debugger/debugger-feature-tour.md)  
+ [Visual Studio hata ayıklayıcısında kesme noktaları sorunlarını giderme](../debugger/troubleshooting-breakpoints.md)  
