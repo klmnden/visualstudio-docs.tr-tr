@@ -18,12 +18,12 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af377c3f0ff5e49e43d00395d8f08bf4498e6636
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 00ed8231641718b6d0dce8d535b0c43e40b83dd8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883983"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783044"
 ---
 # <a name="making-commands-available"></a>Komutları Kullanılabilir Yapma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Visual Studio için birden çok VSPackages eklendiğinde, kullanıcı arabirimi 
 ## <a name="delayed-loading"></a>Gecikmeli yükleme  
  Etkinleştirmek için tipik Gecikmeli yükleme VSPackage'ı, komutları kullanıcı Arabiriminde görüntülenir, ancak bir kullanıcı komutlardan birini tıklayana kadar paketi yüklenmedi olacağı şekilde tasarlayın yöntemdir. .Vsct dosyası içinde bunu gerçekleştirmek için komut bayraklarınız komutları oluşturun.  
   
- Aşağıdaki örnek, bir menü komutu .vsct dosyası tanımı gösterilmektedir. Bu, Visual Studio Paket şablonu tarafından oluşturulan komuttur olduğunda **menü komutu** şablondaki seçeneğinin işaretli.  
+ Aşağıdaki örnek, bir menü komutu .vsct dosyası tanımı gösterilmektedir. Bu, Visual Studio Paket şablon tarafından oluşturulan komuttur olduğunda **menü komutu** şablondaki seçeneğinin işaretli.  
   
 ```xml  
 <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">  

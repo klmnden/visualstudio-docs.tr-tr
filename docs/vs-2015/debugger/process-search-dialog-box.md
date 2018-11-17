@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Process Search
 ms.assetid: 518e8153-eec2-4db9-a6f7-416ec11d8e09
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 43f856e849974375e9360dac1844e634c9915000
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 844906e9342ae295063788a8d0d4b638c893294d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244653"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748504"
 ---
 # <a name="process-search-dialog-box"></a>İşlem Arama İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Bulmak ve belirli bir işlem düğümü seçmek için bu iletişim kutusunu kull
  **İşlem**  
  Aranacak işlem kimliği.  
   
- **Modülü**  
+ **Module**  
  Aranacak modül dizesi.  
   
  **Arama yönü yukarı veya aşağı**  

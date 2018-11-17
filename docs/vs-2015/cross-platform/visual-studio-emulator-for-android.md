@@ -13,12 +13,12 @@ ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 5d8acf315322a7dfdac70a158bd78f69aebbde15
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 22126bb5a364148c7079d59d750483a7ebc47418
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867877"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799606"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +101,7 @@ Android için Visual Studio öykünücüsü Android cihaz öykünen bir masaüst
 ##  <a name="FeaturesNonTest"></a> Öykünücüde test etme özellikleri  
  Aşağıdaki listede Android platform özellikleri açıklar, **olamaz** öykünücüsünde test edin. Bu özellikler fiziksel bir cihaz üzerinde test gerekir.  
   
--   Compass  
+-   Pusula  
   
 -   Jiroskop  
   

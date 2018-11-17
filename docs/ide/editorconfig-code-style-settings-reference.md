@@ -8,7 +8,7 @@ dev_langs:
 helpviewer_keywords:
 - coding conventions [EditorConfig]
 - EditorConfig coding conventions
-- language conventions [EditorConfig]
+- language code style rules [EditorConfig]
 - formatting conventions [EditorConfig]
 author: kuhlenh
 ms.author: gewarren
@@ -18,12 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 237651c67cd2578b2b2a2e4ffade3f4c6d180d78
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: a54a3d6b967e7652c25e24922d7bd3b49141cc17
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967551"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769747"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Kodlama kuralı ayarlarına EditorConfig için .NET
 
@@ -35,7 +35,7 @@ Bu makalenin sonuna bakın bir [örnek .editorconfig dosyasındaki](#example-edi
 
 Üç desteklenen .NET kodlama kuralı kategorisi vardır:
 
-- [Dil kuralları](#language-conventions)
+- [Dil kod stilleri](#language-code-styles)
 
    C# veya Visual Basic Dil ilişkin kurallardır. Örneğin, etrafında kullanarak kuralları belirtebilirsiniz `var` veya açık olduğunda türleri değişkenleri tanımlayan veya ifade gövdeli üyeler belgelemeyi.
 
@@ -47,13 +47,13 @@ Bu makalenin sonuna bakın bir [örnek .editorconfig dosyasındaki](#example-edi
 
    İlgili kod öğelerini adlandırma kuralları. Örneğin, belirtebilirsiniz `async` yöntemleri "Async" bitmelidir.
 
-## <a name="language-conventions"></a>Dil kuralları
+## <a name="language-code-styles"></a>Dil kod stilleri
 
-Dil kuralları için kuralları aşağıdaki biçime sahiptir:
+Dil kod stili için kuralları aşağıdaki biçime sahiptir:
 
 `options_name = false|true : none|silent|suggestion|warning|error`
 
-Her dil kuralı kuralı için belirtmeli **true** (Bu stil tercih et) veya **false** (Bu stil tercih değil) ve bir **önem derecesi**. Önem derecesi için o stilin zorlama düzeyini belirtir.
+Her dil kodu stil kuralı belirtmeli **true** (Bu stil tercih et) veya **false** (Bu stil tercih değil) ve bir **önem derecesi**. Önem derecesi için o stilin zorlama düzeyini belirtir.
 
 Olası önem derecesi değerlerini ve bunların etkileri aşağıdaki tabloda listelenmektedir:
 
@@ -65,7 +65,7 @@ Olası önem derecesi değerlerini ve bunların etkileri aşağıdaki tabloda li
 `warning` | Bu stil kuralı ihlal edildiğinde bir derleyici uyarısı gösterir.
 `error` | Bu stil kuralı ihlal edildiğinde bir derleyici hatası gösterir.
 
-Aşağıdaki listede verilen dil kuralı kuralları gösterir:
+Aşağıdaki listede verilen dil kod stili ayarları gösterilmektedir:
 
 - .NET kod stili ayarları
     - ["This." ve "Me." niteleyicileri](#this_and_me)
@@ -2244,7 +2244,7 @@ dotnet_naming_symbols.constant_fields.applicable_accessibilities  = *
 dotnet_naming_symbols.constant_fields.required_modifiers          = const
 
 ###############################
-# C# Coding Conventions       #
+# C# Code Style Rules         #
 ###############################
 
 [*.cs]
@@ -2261,7 +2261,7 @@ csharp_style_expression_bodied_properties = true:none
 csharp_style_expression_bodied_indexers = true:none
 csharp_style_expression_bodied_accessors = true:none
 
-# Pattern matching preferences
+# Pattern-matching preferences
 csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 
@@ -2314,9 +2314,9 @@ csharp_space_between_method_call_empty_parameter_list_parentheses = false
 csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
 
-###############################
-# VB Coding Conventions       #
-###############################
+##################################
+# Visual Basic Code Style Rules  #
+##################################
 
 [*.vb]
 # Modifier preferences

@@ -11,21 +11,21 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 60b8cc1d-cacc-404d-b768-77e81bc354f8
 caps.latest.revision: 4
-author: TerryGLee
-ms.author: tglee
+author: conceptdev
+ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: 9144eaf751c9e78c79d247121d34dd4365ea5414
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51e03c97326409b4c793c48e6c151b059ad38e89
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184619"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768087"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>VSTU Tarafından Oluşturulan Proje Dosyalarını Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Unity için Visual Studio Araçları proje dosyası oluşturma sırasında bir Unity stili geri çağırma sağlar. Kaydolmalı `VisualStudioIntegration.ProjectFileGeneration` yeniden oluşturuldu her proje dosyasını değiştirmek için olay.  
+Unity için Visual Studio Araçları, proje dosyası oluşturma işlemi sırasında Unity stili geri çağırma olanağı sağlar. Kaydolmalı `VisualStudioIntegration.ProjectFileGeneration` yeniden oluşturuldu her proje dosyasını değiştirmek için olay.  
   
 ## <a name="demonstrates"></a>Gösteriler  
  Unity için Visual Studio Araçları tarafından oluşturulan Visual Studio proje dosyalarını özelleştirme yapma.  

@@ -18,12 +18,12 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: d6cc66b828b07c0facb8fae19b562dc6566df420
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b01219fa0d9f3ab95fb2d64e2d3dd003557bfe51
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199907"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761246"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Visual Studio sürümlerini yan yana yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Visual Studio'nun bu sürümü zaten daha önceki bir sürümün yüklü olduğu
   
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET framework sürümleri ve yan yana yüklemeler  
   
--   Visual Basic, Visual C# ve Visual F # projeleri kullanmak **hedef Framework'ü** seçeneğini **Proje Tasarımcısı** bir projenin hangi .NET Framework sürümünü kullandığını belirtmek için. Bir C++ projesi için .vcxproj dosyasını değiştirerek hedef Framework'ü el ile değiştirebilirsiniz. Daha fazla bilgi için [sürüm uyumluluğu](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f).  
+-   Visual Basic, Visual C#, görsel ve F# projelerde kullan **hedef Framework'ü** seçeneğini **Proje Tasarımcısı** bir projenin hangi .NET Framework sürümünü kullandığını belirtmek için. Bir C++ projesi için .vcxproj dosyasını değiştirerek hedef Framework'ü el ile değiştirebilirsiniz. Daha fazla bilgi için [sürüm uyumluluğu](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f).  
   
      Bir proje oluşturduğunuzda, projenin hangi .NET Framework sürümünü hedefleyeceğini belirtebilirsiniz **.NET Framework** listesinde **yeni proje** iletişim kutusu.  
   

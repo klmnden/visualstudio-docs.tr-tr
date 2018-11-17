@@ -15,12 +15,12 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d0f89d02d0fcccc66ddd1f66b411f6b3f542cff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cd5331e433c4790a51dfb7c42b5b0b50eb26c1a6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939273"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794159"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Araç Penceresine Arama Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -131,9 +131,9 @@ Uzantınızı bir araç penceresi güncelle, Visual Studio'da başka bir yerde g
      Aramayı etkinleştirmek için geçersiz kılmanız gerekir <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> özelliği. <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> Sınıfının Implements <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch> ve arama sağlamaz bir varsayılan uygulamasını sağlar.  
   
     ```csharp  
-    public override bool SearchEnabled  
+    public override bool SearchEnabled  
     {  
-        get { return true; }  
+        get { return true; }  
     }  
     ```  
   
@@ -280,7 +280,7 @@ Uzantınızı bir araç penceresi güncelle, Visual Studio'da başka bir yerde g
 1.  TestSearch.cs dosyasına aşağıdaki kodu ekleyin `TestSearch` sınıfı. Bu kod, isteğe bağlı arama (kullanıcının ENTER'ı gerekmez anlamına gelir) yerine hızlı arama sağlar. Kodu geçersiz kılmalar `ProvideSearchSettings` yönteminde `TestSearch` varsayılan ayarları değiştirmek gerekli olan sınıf.  
   
     ```csharp  
-    public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)  
+    public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)  
     {  
         Utilities.SetValue(pSearchSettings,   
             SearchSettingsDataSource.SearchStartTypeProperty.Name,   
@@ -328,7 +328,7 @@ Uzantınızı bir araç penceresi güncelle, Visual Studio'da başka bir yerde g
   
     ```csharp  
     private IVsEnumWindowSearchOptions m_optionsEnum;  
-    public override IVsEnumWindowSearchOptions SearchOptionsEnum  
+    public override IVsEnumWindowSearchOptions SearchOptionsEnum  
     {  
         get  
         {  
@@ -408,13 +408,13 @@ Uzantınızı bir araç penceresi güncelle, Visual Studio'da başka bir yerde g
 1.  TestSearch.cs dosyasına aşağıdaki kodu ekleyin `TestSearch` sınıfı. Kod uygulayan `SearchFiltersEnum` ekleyerek bir <xref:Microsoft.VisualStudio.PlatformUI.WindowSearchSimpleFilter> yalnızca satırlar da görünecek biçimde arama sonuçlarını filtrelemek için belirtir.  
   
     ```csharp  
-    public override IVsEnumWindowSearchFilters SearchFiltersEnum  
+    public override IVsEnumWindowSearchFilters SearchFiltersEnum  
     {  
         get  
         {  
             List<IVsWindowSearchFilter> list = new List<IVsWindowSearchFilter>();  
             list.Add(new WindowSearchSimpleFilter("Search even lines only", "Search even lines only", "lines", "even"));  
-            return new WindowSearchFilterEnumerator(list) as IVsEnumWindowSearchFilters;  
+            return new WindowSearchFilterEnumerator(list) as IVsEnumWindowSearchFilters;  
         }  
     }  
   
@@ -425,19 +425,19 @@ Uzantınızı bir araç penceresi güncelle, Visual Studio'da başka bir yerde g
 2.  TestSearch.cs dosyasında, aşağıdaki yöntemi ekleyin `TestSearchTask` bulunduğu sınıfı `TestSearch` sınıfı. Şu yöntemleri destekler `OnStartSearch` yöntemi bir sonraki adımda değiştireceksiniz.  
   
     ```csharp  
-    private string RemoveFromString(string origString, string stringToRemove)  
+    private string RemoveFromString(string origString, string stringToRemove)  
     {  
         int index = origString.IndexOf(stringToRemove);  
         if (index == -1)  
             return origString;  
-        else   
+        else   
              return (origString.Substring(0, index) + origString.Substring(index + stringToRemove.Length)).Trim();  
     }  
   
-    private string[] GetEvenItems(string[] contentArr)  
+    private string[] GetEvenItems(string[] contentArr)  
     {  
         int length = contentArr.Length / 2;  
-        string[] evenContentArr = new string[length];  
+        string[] evenContentArr = new string[length];  
   
         int indexB = 0;  
         for (int index = 1; index < contentArr.Length; index += 2)  
@@ -453,13 +453,13 @@ Uzantınızı bir araç penceresi güncelle, Visual Studio'da başka bir yerde g
 3.  İçinde `TestSearchTask` sınıfı, güncelleştirme `OnStartSearch` yöntemini aşağıdaki kod ile. Bu değişiklik, filtre desteklemek için kodu güncelleştirir.  
   
     ```csharp  
-    protected override void OnStartSearch()  
+    protected override void OnStartSearch()  
     {  
-        // Use the original content of the text box as the target of the search.   
-        var separator = new string[] { Environment.NewLine };  
+        // Use the original content of the text box as the target of the search.   
+        var separator = new string[] { Environment.NewLine };  
         string[] contentArr = ((TestSearchControl)m_toolWindow.Content).SearchContent.Split(separator, StringSplitOptions.None);  
   
-        // Get the search option.   
+        // Get the search option.   
         bool matchCase = false;  
         matchCase = m_toolWindow.MatchCaseOption.Value;  
   
@@ -472,7 +472,7 @@ Uzantınızı bir araç penceresi güncelle, Visual Studio'da başka bir yerde g
         {  
             string searchString = this.SearchQuery.SearchString;  
   
-            // If the search string contains the filter string, filter the content array.   
+            // If the search string contains the filter string, filter the content array.   
             string filterString = "lines:\"even\"";  
   
             if (this.SearchQuery.SearchString.Contains(filterString))  
@@ -484,7 +484,7 @@ Uzantınızı bir araç penceresi güncelle, Visual Studio'da başka bir yerde g
                 searchString = RemoveFromString(searchString, filterString);  
             }  
   
-            // Determine the results.   
+            // Determine the results.   
             uint progress = 0;  
             foreach (string line in contentArr)  
             {  
@@ -507,7 +507,7 @@ Uzantınızı bir araç penceresi güncelle, Visual Studio'da başka bir yerde g
   
                 SearchCallback.ReportProgress(this, progress++, (uint)contentArr.GetLength(0));  
   
-                // Uncomment the following line to demonstrate the progress bar.   
+                // Uncomment the following line to demonstrate the progress bar.   
                 // System.Threading.Thread.Sleep(100);  
             }  
         }  
@@ -523,8 +523,8 @@ Uzantınızı bir araç penceresi güncelle, Visual Studio'da başka bir yerde g
             this.SearchResults = resultCount;  
         }  
   
-        // Call the implementation of this method in the base class.   
-        // This sets the task status to complete and reports task completion.   
+        // Call the implementation of this method in the base class.   
+        // This sets the task status to complete and reports task completion.   
         base.OnStartSearch();  
     }  
     ```  
