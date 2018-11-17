@@ -9,12 +9,12 @@ description: Diğer ad veya kolay adlar kullanılması durumunda oturum açma ba
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 48faa1ce2e002b6a21c3e467db627d9c08bec2e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3743cc11d5001d12ba4cd030ddc0cfc914db3131
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854474"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817444"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Visual Studio abonelikleri için oturum açarken diğer adlar kullanırken başarısız olabilir
 
@@ -24,7 +24,7 @@ Oturum açmak için kullanılan hesap türüne bağlı olarak, mevcut abonelikle
 
 "Diğer ad kullanımı" terimi farklı kimliklere sahip olmasını, kullanıcıların Windows (veya Active Directory'nizde) oturum açmak ve e-postaya erişmeye ifade eder.
 
-Diğer ad kullanımı ile bir şirket Microsoft çevrimiçi hizmeti için kendi directory oturum açma gibi olduğunda karşılaşılabilir JohnD@contoso.com, ancak kullanıcılar diğer adları veya kolay adlar gibi kullanarak e-posta hesaplarına erişim John.Doe@contoso.com.  Kendi aboneliklerini Toplu Lisanslama hizmeti Merkezi (VLSC) aracılığıyla yöneten birçok müşteri için bu bir başarısız oturum açma deneyimine e-posta adresi olarak sağlanan neden olabilir (John.Doe@contoso.com) ile dizin adresinin eşleşmiyor (JohnD@contoso.com) "İş veya Okul hesabı" seçeneği aracılığıyla başarılı kimlik doğrulaması için gereklidir.
+Diğer ad kullanımı ile bir şirket Microsoft çevrimiçi hizmeti için kendi directory oturum açma gibi olduğunda karşılaşılabilir JohnD@contoso.com, ancak kullanıcılar diğer adları veya kolay adlar gibi kullanarak e-posta hesaplarına erişim John.Doe@contoso.com. Kendi aboneliklerini Toplu Lisanslama hizmeti Merkezi (VLSC) aracılığıyla yöneten birçok müşteri için bu bir başarısız oturum açma deneyimine e-posta adresi olarak sağlanan neden olabilir (John.Doe@contoso.com) ile dizin adresinin eşleşmiyor (JohnD@contoso.com) "İş veya Okul hesabı" seçeneği aracılığıyla başarılı kimlik doğrulaması için gereklidir.
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>Yönetici olarak, hangi seçenekleri zorundayım?
 
@@ -33,15 +33,15 @@ Yönetici olarak, abonelerinize sahip başarılı bir oturum açma deneyimi sağ
 - (Daha az güvenlidir), ikinci seçenek olur (yani), "Kişisel" hesap "İş veya Okul" e-posta adresine ilişkilendirilecek abonelerinize izin vermek için Microsoft hesabı veya MSA). Başvurmak [kişisel bir hesap bir iş veya Okul hesabı tanımlama ](#defining-a-work-or-school-account-as-a-personal-account ) daha fazla ayrıntı için bu makaledeki bir bölüm.
 
 > [!NOTE]
-> Yeni Visual Studio abonelikleri için şirketinizin geçirildikten sonra [Yönetim Portalı](https://manage.visualstudio.com), bir parçası olarak sağlanacak hem dizin ve e-posta adreslerini sağlayan yeni bir yönetim deneyimi yararlanmak mümkün olacaktır abonenin profili.  Daha fazla bilgi edinin [geçiş](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).
+> Yeni Visual Studio abonelikleri için şirketinizin geçirildikten sonra [Yönetim Portalı](https://manage.visualstudio.com), bir parçası olarak sağlanacak hem dizin ve e-posta adreslerini sağlayan yeni bir yönetim deneyimi yararlanmak mümkün olacaktır abonenin profili. Daha fazla bilgi edinin [geçiş](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).
 
 ## <a name="as-a-subscriber-what-options-do-i-have"></a>Abone olarak, hangi seçenekleri zorundayım?
 
-Abone açısından bakıldığında, ilk iş yöneticinize, şirketinizin kimlik yapılandırması anlamak için önemlidir.  Gerekirse, Yönetici hesap ayarlarınızı, Yönetim Portalı'ndan güncelleştirmeniz gerekebilir veya şirket e-posta adresinizi kullanarak bir Microsoft hesabı (MSA) oluşturmanız gerekebilir.  Bir MSA oluşturmak için adımları gerçekleştirmeden önce tüm ilkeleri veya bu eylemi gerçekleştirmeden sorunları ile ilgili yöneticinizle konuşun.  Başvurmak [kişisel bir hesap bir iş veya Okul hesabı tanımlama ](#defining-a-work-or-school-account-as-a-personal-account ) daha fazla ayrıntı için bu makaledeki bir bölüm.
+Abone açısından bakıldığında, ilk iş yöneticinize, şirketinizin kimlik yapılandırması anlamak için önemlidir. Gerekirse, Yönetici hesap ayarlarınızı, Yönetim Portalı'ndan güncelleştirmeniz gerekebilir veya şirket e-posta adresinizi kullanarak bir Microsoft hesabı (MSA) oluşturmanız gerekebilir. Bir MSA oluşturmak için adımları gerçekleştirmeden önce tüm ilkeleri veya bu eylemi gerçekleştirmeden sorunları ile ilgili yöneticinizle konuşun. Başvurmak [kişisel bir hesap bir iş veya Okul hesabı tanımlama](#defining-a-work-or-school-account-as-a-personal-account) daha fazla ayrıntı için bu makaledeki bir bölüm.
 
 ## <a name="assigning-subscribers-to-a-directory-account"></a>Bir dizin hesabına abonelerin atama
 
-Tüm durumlarda, Toplu Lisanslama hizmeti Merkezi (VLSC) içinde Abonelik Yöneticisi ile dizin adresinin yeni aboneleri için kullanabilir veya "var" aboneler için e-posta adresini güncelleştirmek gerekir.  Dizin adresinin kullanarak herhangi bir yeni aboneler Hoş Geldiniz e-posta almaz ve yönetici bildirmek için bir abonelik atanmış abone gerekecek anlamına gelir olduğunu unutmayın.  Sonra aşağıdaki adımları, lütfen ayrıca e-posta araştırmalarında [şablon](#notifying-your-subscribers-with-directory-addresses) abonelerinize bildirmek ve oturum açma işleminde size yardımcı olmak için.
+Tüm durumlarda, Toplu Lisanslama hizmeti Merkezi (VLSC) içinde Abonelik Yöneticisi ile dizin adresinin yeni aboneleri için kullanabilir veya "var" aboneler için e-posta adresini güncelleştirmek gerekir. Dizin adresinin kullanarak herhangi bir yeni aboneler Hoş Geldiniz e-posta almaz ve yönetici bildirmek için bir abonelik atanmış abone gerekecek anlamına gelir olduğunu unutmayın. Sonra aşağıdaki adımları, lütfen ayrıca e-posta araştırmalarında [şablon](#notifying-your-subscribers-with-directory-addresses) abonelerinize bildirmek ve oturum açma işleminde size yardımcı olmak için.
 
 ### <a name="adding-new-subscribers"></a>Yeni aboneler ekleme
 
@@ -89,7 +89,7 @@ Hoş Geldiniz e-posta başarıyla abonenizi ulaşarak olduğundan, Lütfen kopya
 
 Hello % abone adı %
 
-Visual Studio aboneliği atandı.  Lütfen https://my.visualstudio.com, etkinleştirmek ve aboneliğinize erişmek için % dizin ADRESİNİN % adresinizi bilgilerinizle oturum açın.
+Visual Studio aboneliği atandı. Lütfen https://my.visualstudio.com, etkinleştirmek ve aboneliğinize erişmek için % dizin ADRESİNİN % adresinizi bilgilerinizle oturum açın.
 
 Sorun yaşıyorsanız, lütfen Destek ekibine başvurun (https://visualstudio.microsoft.com/subscriptions/support/).
 
@@ -100,8 +100,6 @@ Sayfanın en altında aşağıdakileri seçin:
    - İstenen Yardımlı Destek seçeneğini belirleyin
 
 ---Son kopyalama---
-
-
 
 ## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Bir iş veya Okul hesabı kişisel bir hesap tanımlama
 

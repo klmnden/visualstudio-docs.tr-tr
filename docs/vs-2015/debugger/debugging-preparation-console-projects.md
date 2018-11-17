@@ -20,15 +20,15 @@ helpviewer_keywords:
 - console applications, debugging
 ms.assetid: 9641f1d9-2d5a-48b1-8731-6525e8f67892
 caps.latest.revision: 29
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d268495f21ca9b4869d4c084d3fd6982d842e6c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 78cdf137f4804b2cdad26a21daf2dc34592ed774
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825924"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722921"
 ---
 # <a name="debugging-preparation-console-projects"></a>Hata Ayıklama Hazırlığı: Konsol Projeleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Bir konsol projesinde hata ayıklamaya hazırlanıyor, bazı ek hususlar ile bir
  [Yerel kodda hata ayıklama](../debugger/debugging-native-code.md)   
  [Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)   
  [Visual C++ proje türleri](../debugger/debugging-preparation-visual-cpp-project-types.md)   
- [C#, F # ve Visual Basic proje türleri](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [C#, F#ve Visual Basic proje türleri](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [C++ hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)
 

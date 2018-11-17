@@ -17,12 +17,12 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40d508a11807fe90981104e0cc7e6557577da103
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01510eabcb4d2d3605f38b8bb574ed3e21efebac
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855605"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736718"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Başlangıç Sayfasına Kullanıcı Denetimi Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ Bu izlenecek yol, özel bir başlangıç sayfası için bir DLL başvurusu eklem
 2.  SetButton_Click olay işleyicisi aşağıdaki gibi doldurun.  
   
     ```csharp  
-    private void SetButton_Click(object sender, RoutedEventArgs e)  
+    private void SetButton_Click(object sender, RoutedEventArgs e)  
     {  
         try  
         {  

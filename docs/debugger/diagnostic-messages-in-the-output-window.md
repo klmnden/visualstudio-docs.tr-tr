@@ -1,7 +1,7 @@
 ---
-title: Tanılama iletilerini çıkış penceresine Gönder. | Microsoft Docs
+title: İletilerini çıkış penceresine Gönder. | Microsoft Docs
 ms.custom: ''
-ms.date: 04/25/2017
+ms.date: 11/08/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -28,15 +28,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be9081bc2b6778d2f115ebe61078956aeace85e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 02bdd2c6d83e13887a8051ab4101627ba14220fa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842800"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724474"
 ---
-# <a name="send-diagnostic-messages-to-the-output-window"></a>Tanılama iletilerini çıkış penceresine Gönder.
-Çalışma zamanı iletileri yazabileceğiniz **çıkış** penceresini kullanarak <xref:System.Diagnostics.Debug> sınıfı veya <xref:System.Diagnostics.Trace> parçası olan bir sınıf, <xref:System.Diagnostics> sınıf kitaplığı. Kullanım <xref:System.Diagnostics.Debug> yalnızca içinde çıktıyı sınıfının *hata ayıklama* programınızın sürümü. Kullanım <xref:System.Diagnostics.Trace> hem de çıkış isterseniz sınıfı *hata ayıklama* ve *yayın* sürümleri.  
+# <a name="send-messages-to-the-output-window"></a>İletilerini çıkış penceresine Gönder.
+
+Çalışma zamanı iletileri yazabileceğiniz **çıkış** penceresini kullanarak <xref:System.Diagnostics.Debug> sınıfı veya <xref:System.Diagnostics.Trace> parçası olan bir sınıf, <xref:System.Diagnostics> sınıf kitaplığı. Kullanım <xref:System.Diagnostics.Debug> , yalnızca çıkış istiyorsanız sınıfı *hata ayıklama* programınızın sürümü. Kullanım <xref:System.Diagnostics.Trace> hem de çıkış isterseniz sınıfı *hata ayıklama* ve *yayın* sürümleri.  
   
 ## <a name="output-methods"></a>Çıkış yöntemleri  
  <xref:System.Diagnostics.Trace> Ve <xref:System.Diagnostics.Debug> sınıfları aşağıdaki çıktı yöntemlerini sağlar:  
@@ -45,9 +46,9 @@ ms.locfileid: "49842800"
   
 - <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> ve <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> belirtilen bir koşulu başarısız olursa, yürütme ve çıkış bilgileri sonu yöntemleri. Varsayılan olarak, `Assert` yöntemi bilgileri iletişim kutusu içinde görüntüler. Daha fazla bilgi için [yönetilen koddaki onaylar](../debugger/assertions-in-managed-code.md).  
   
-- <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> Ve <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> her zaman yürütmeyi keser ve bilgi yöntemleri. Varsayılan olarak, `Fail` yöntemleri bilgileri iletişim kutusu içinde görüntüler.  
+- <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> Ve <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> yürütme ve çıkış bilgileri her zaman Kes yöntemleri. Varsayılan olarak, `Fail` yöntemleri bilgileri iletişim kutusu içinde görüntüler.  
   
-  Programı, uygulamanızın yanı sıra **çıkış** penceresi hakkında bilgileri görüntüleyebilirsiniz:  
+**Çıkış** penceresi de görüntüleyebilir bilgi hakkında:  
   
 - Modüller hata ayıklayıcı yüklü veya kaldırılmış.  
   
@@ -57,9 +58,9 @@ ms.locfileid: "49842800"
   
 - Çıkış iş parçacıkları.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
  [Çıkış penceresi](../ide/reference/output-window.md)   
- [İzleme ve İşaretleme Uygulamaları](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
- [C#, F # ve Visual Basic proje türleri](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Yönetilen Kodda Hata Ayıklama](../debugger/debugging-managed-code.md)
+ [İzleme ve izleme uygulamaları](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
+ [C#, F#ve Visual Basic proje türleri](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)

@@ -13,12 +13,12 @@ ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 657f54b258d759d0d966f65ff40649e0fb2a0669
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f403a1001cb32376b91da472acdebaa31cc91682
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823534"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744250"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçlarına Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ Bu bölümde daha özellikleri Visual Studio Araçları Unity teklifler ve Unity
   
 - Kesme, koşullu kesme noktaları da dahil olmak üzere.  
   
-- İzleme penceresinde karmaşık ifadeleri değerlendirin.  
+- İzleme penceresinde karmaşık ifadeleri takip edin.  
   
-- İnceleyin ve değişkenleri ve bağımsız değişken değerini değiştirin.  
+- Değişkenleri ve bağımsız değişkenleri inceleyin ve değerlerini değiştirin.  
   
-- Karmaşık nesne ve verileri yapılarda detayına gidin.  
+- Karmaşık nesnelerde ve veri yapılarında detaya gidin.  
   
   Unity oyununuzu, ağınızdaki başka bir makinede çalışırken bile ayıklayabilirsiniz.  
   

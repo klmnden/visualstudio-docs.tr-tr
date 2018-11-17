@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d832753b798cc9e476b675f8791c1ab245b3adee
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: ba3da2325750fca655e0de28e13bb13da208963d
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561679"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826784"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Öğretici: Visual Studio kullanarak hata ayıklamayı öğrenin
 
@@ -297,7 +297,7 @@ Bu öğreticide şunları yapacaksınız:
 
     Kesme noktaları güvenilir hata ayıklama en temel hem de temel özelliğidir. Bir kesme noktası değişkenlerin değerleri veya bellek davranışını göz olabilmesi için Visual Studio çalışan kodunuzu nereye askıya almanız ya da bir dal kod getting run olup olmadığını gösterir. 
 
-6. Tuşuna **F5** veya **hata ayıklamayı Başlat** düğme, uygulama başlatılır ve hata ayıklayıcı, Kesme noktasının ayarlandığı kod satırına çalıştırır.
+2. Tuşuna **F5** veya **hata ayıklamayı Başlat** düğme, uygulama başlatılır ve hata ayıklayıcı, Kesme noktasının ayarlandığı kod satırına çalıştırır.
 
     ![Ayarlayın ve bir kesme noktası isabet](../debugger/media/get-started-set-breakpoint.gif)
 
@@ -325,14 +325,14 @@ Almak için en iyi yolu olduğundan bu çoğunlukla, klavye kısayollarını Bur
 
 ## <a name="navigate-code-using-run-to-click"></a>Tıkla Çalıştır'ı kullanarak kod gidin
 
-5. Kod Düzenleyicisi'nde, ekranı aşağı kaydırın ve üzerine `Console.WriteLine` yöntemi (`std::cout` C++'ta) içinde `Triangle` sınıfı yeşil kadar **tıklanan satıra kadar Çalıştır** düğmesi ![tıklanan satıra kadar Çalıştır](../debugger/media/dbg-tour-run-to-click.png " RunToClick") soldaki bölmede görünür.
+1. Kod Düzenleyicisi'nde, ekranı aşağı kaydırın ve üzerine `Console.WriteLine` yöntemi (`std::cout` C++'ta) içinde `Triangle` sınıfı yeşil kadar **tıklanan satıra kadar Çalıştır** düğmesi ![tıklanan satıra kadar Çalıştır](../debugger/media/dbg-tour-run-to-click.png " RunToClick") soldaki bölmede görünür.
 
      ![Tıkla Çalıştır kullanın özellik](../debugger/media/get-started-run-to-click.png "tıklanan satıra kadar Çalıştır")
 
    > [!NOTE]
    > **Tıklanan satıra kadar Çalıştır** düğmesidir yeni [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Yeşil ok düğmesini görmüyorsanız kullanın **F11** Bu örnekte bunun yerine hata ayıklayıcı doğru yere ilerlemek için.
 
-6. Tıklayın **tıklanan satıra kadar Çalıştır** düğmesi ![tıklanan satıra kadar Çalıştır](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+2. Tıklayın **tıklanan satıra kadar Çalıştır** düğmesi ![tıklanan satıra kadar Çalıştır](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
     Bu düğmeyi kullanarak geçici bir kesme noktası ayarlayarak benzer. **Tıklanan satıra kadar Çalıştır** (herhangi bir açık dosyayı tıklayabilirsiniz) uygulama kodu görünür bir bölge içinde hızla dolaşma için kullanışlıdır.
 
@@ -447,4 +447,4 @@ Değişkenleri incelemek özellik hata ayıklayıcının en kullanışlı özell
 Bu öğreticide, kodu adımlayın hata ayıklayıcıyı başlatın ve değişkenleri denetleyin öğrendiniz. Daha fazla bilgi için bağlantılar hata ayıklayıcı özelliklerine genel bir bakış almak isteyebilirsiniz.
 
 > [!div class="nextstepaction"]
-> [Hata ayıklayıcısı ipuçları ve püf noktaları](../debugger/debugger-tips-and-tricks.md)
+> [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)

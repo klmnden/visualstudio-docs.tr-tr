@@ -29,15 +29,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], variable evaluation
 ms.assetid: 70f9b531-44c7-4d77-980d-5eddbf2bff41
 caps.latest.revision: 30
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3254ea0197ee0b241735df9c1f437490a09da969
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf75965a9be7c8e2a9a09cc43fa6eec632d6bf90
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914324"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722225"
 ---
 # <a name="expressions-in-the-debugger"></a>Hata Ayıklayıcıdaki İfadeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,8 +46,8 @@ Visual Studio hata ayıklayıcı bir ifade girdiğinizde çalışan ifade değer
   
  Aşağıdaki bölümlerde farklı dillerde ifadeler hakkında ayrıntılar verir.  
   
-## <a name="f-expressions-are-not-supported"></a>F # ifadeleri desteklenmez.  
- F # ifadelerini tanınmıyor. F # kodunda hata ayıklaması yapıyorsanız, hata ayıklayıcı penceresini ya da iletişim kutusuna ifadeleri girmeden önce C# sözdizimi ifadelere Çevir gerekir. C#, F #'dan ifadeleri Çevir, C# kullandığını unutmayın mutlaka `==` kullanırken F # tek eşitlik için test etmek için işleci `=`.  
+## <a name="f-expressions-are-not-supported"></a>F#ifadeler desteklenmez.  
+ F#ifadeleri tanınmıyor. Hata ayıklaması yapıyorsanız F# kod, gereksinim, ifadelere çevrilecek C# deyimler bir hata ayıklayıcı penceresini ya da iletişim kutusuna ulaşmadan önce söz dizimi. Gelen ifadeleri Çevir ne zaman F# için C#, unutmayın mutlaka C# kullanır `==` eşitlik için test etmek için işleci sırada F# tek kullanır `=`.  
   
 ## <a name="c-expressions"></a>C++ deyimleri  
  C++ ifadeleri bağlamı işleçleri kullanma hakkında daha fazla bilgi için bkz: [bağlam işleci (C++)](../debugger/context-operator-cpp.md).  

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 669f3625827d923a0951caa1bb0137d38c0daacc
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 195d63e5ddb8b8536c1d0c1c4197270f5b3aa508
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637503"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826823"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Nasıl yapılır: genişletilebilirlik projelerini Visual Studio 2017'ye geçirme
 
@@ -63,7 +63,7 @@ Kullanıcının yükleme Visual Studio Uzantısı'nı çalıştırmak için gere
 * Olun `InstallationTarget` 15.0 içerir.
 * Gerekli yükleme önkoşulları (aşağıdaki örnekte gösterildiği gibi) ekleyin.
   * Yalnızca bileşen kimlikleri için yükleme önkoşulları belirlemek öneririz.
-  * Bu belgenin sonuna bakın [belirleme Bileşen kimlikleri yönergeleri](#finding-component-ids).
+  * Bu belgenin sonuna bakın [belirleme Bileşen kimlikleri yönergeleri](#find-component-ids).
 
 Örnek:
 
@@ -170,7 +170,7 @@ Uzantı türü | Görünen ad | Kimliği
 Düzenleyici | Visual Studio temel Düzenleyicisi  | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# ve Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
 WPF | Yönetilen masaüstü iş yükü Çekirdeği | Microsoft.VisualStudio.Component.ManagedDesktop.Core
-Hata ayıklayıcı | Just-In-Time hata ayıklayıcı | Microsoft.VisualStudio.Component.Debugger.JustInTime
+Hata Ayıklayıcısı | Just-In-Time hata ayıklayıcı | Microsoft.VisualStudio.Component.Debugger.JustInTime
 
 ## <a name="find-component-ids"></a>Bileşen kimliklerini bulun
 
