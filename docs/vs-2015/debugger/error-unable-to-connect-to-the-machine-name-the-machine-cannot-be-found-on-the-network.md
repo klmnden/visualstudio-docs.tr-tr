@@ -20,15 +20,15 @@ helpviewer_keywords:
 - DCOM, unable to connect error
 ms.assetid: b584b5db-ef52-45ed-8561-1314da3cc5b8
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4e2c60723827466942ea02b8881f234e38fa438
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8660b08adb0d925eb0f1b084673877734a47207
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223087"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733766"
 ---
 # <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Hata: Makineye bağlanılamıyor &lt;adı&gt;. Makine ağ üzerinde bulunamadı.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

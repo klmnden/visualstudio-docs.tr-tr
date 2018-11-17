@@ -13,38 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc5961e2565c8618ad0f34a8c58d149e4a82c935
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: de90947f175905ec89955298dc2b4b52af8ffbd4
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244456"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826810"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Visual Studio IDE Hoş Geldiniz
 
 Visual Studio *tümleşik geliştirme ortamı* bir yaratıcı launching düzenleme, hata ayıklama ve kod oluşturmak için kullanın ve ardından bir uygulama yayımlama takımdır. Bir tümleşik geliştirme ortamı (IDE) birçok yönüyle yazılım geliştirme için kullanılabilen zengin bir programdır. Standart Düzenleyici ve hata ayıklayıcı sağladığımız çoğu IDE'ler sağlamanızı, Visual Studio yazılım geliştirme işlemini kolaylaştırmak için derleyiciler, kod tamamlama araçları, grafik tasarımcıları ve daha birçok özellik içerir.
 
-Windows ve Mac için Visual Studio kullanılabilir [Mac için Visual Studio](/visualstudio/mac/) birçok Visual Studio 2017 aynı özelliklere sahiptir ve platformlar arası ve mobil uygulamalarını geliştirmek için optimize edilmiştir. Bu makalede Visual Studio 2017'in Windows sürümünde odaklanır.
-
-Visual Studio 2017'in üç sürüm bulunur: Community, Professional ve Enterprise. Bkz: [Visual Studio 2017 IDE'lerini karşılaştırın](https://visualstudio.microsoft.com/vs/compare/) her iki sürümünde desteklenen hangi özellikler hakkında bilgi edinmek için.
-
-Bu genel bakış makalesi için temel IDE özelliklerini tanıtır. Visual Studio ile basit bir oluşturma gibi yapabileceğiniz bazı şeyleri gösterilecektir kullanan proje [IntelliSense](using-intellisense.md) bir kodlama Yardımı ve programın yürütülmesi sırasında bir değişkenin değerini görmek için bir uygulama hata ayıklama. Biz de çeşitli araç pencerelerine ilişkin tura katılın.
-
-## <a name="install-the-visual-studio-ide"></a>Visual Studio IDE yükleyin
-
-Başlamak için [Visual Studio 2017'yi indirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ve sisteminize yüklenecek.
-
-Modüler yükleyici seçin ve yüklemek sağlayan *iş yükleri*, programlama dili veya tercih ettiğiniz platform için gerekli özellikler grupları olduğu. İçin adımları [bir program oluşturma](#create-a-program), seçtiğinizden emin olun **.NET Core çoklu platform geliştirme** yüklemesi sırasında iş yükü.
-
-![.NET core çoklu platform geliştirme iş yükünü Visual Studio yükleyicisi](../ide/media/dotnet-core-cross-platform-workload.png)
-
-Visual Studio'yu ilk kez başlattığınızda, isteğe bağlı olarak yapabilecekleriniz [oturum](signing-in-to-visual-studio.md) Microsoft hesabınızı veya iş veya Okul hesabınızı kullanarak.
-
-## <a name="tour-of-the-ide"></a>IDE turu
-
-Üst düzey genel bakış, Visual Studio'nun vermek için büyük olasılıkla kullanacağınız birkaç anahtar araç pencereleri ve bir Proje Aç ile Visual Studio aşağıdaki resimde gösterilmektedir:
-
 ![Visual Studio IDE](../ide/media/visualstudioide.png)
+
+Bu görüntü, büyük olasılıkla kullanacağınız birkaç anahtar araç pencereleri ve bir Proje Aç ile Visual Studio gösterir:
 
 - [**Çözüm Gezgini** ](../ide/solutions-and-projects-in-visual-studio.md) (sağ üstte) görüntüleyin, gidin ve kodu dosyalarınızdaki dosyalardan yönetmenize olanak tanır. **Çözüm Gezgini** dosyalarına gruplandırarak kodunuzu düzenleme şeklinizdir yardımcı olabilecek [çözümler ve projeler](quickstart-projects-solutions.md).
 
@@ -54,7 +36,13 @@ Visual Studio'yu ilk kez başlattığınızda, isteğe bağlı olarak yapabilece
 
 - [Takım Gezgini](/azure/devops/user-guide/work-team-explorer?view=vsts) (sağ alt) sağlar, iş öğelerini izlemek ve kod başkalarıyla paylaşmak gibi sürüm denetimi teknolojileri kullanarak [Git](https://git-scm.com/) ve [Team Foundation sürüm denetimi (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts).
 
-### <a name="popular-productivity-features"></a>Popüler üretkenlik özellikleri
+## <a name="editions"></a>Sürümler
+
+Windows ve Mac için Visual Studio kullanılabilir [Mac için Visual Studio](/visualstudio/mac/) birçok Visual Studio 2017 aynı özelliklere sahiptir ve platformlar arası ve mobil uygulamalarını geliştirmek için optimize edilmiştir. Bu makalede Visual Studio 2017'in Windows sürümünde odaklanır.
+
+Visual Studio 2017'in üç sürüm bulunur: Community, Professional ve Enterprise. Bkz: [Visual Studio 2017 IDE'lerini karşılaştırın](https://visualstudio.microsoft.com/vs/compare/) her iki sürümünde desteklenen hangi özellikler hakkında bilgi edinmek için.
+
+## <a name="popular-productivity-features"></a>Popüler üretkenlik özellikleri
 
 Visual Studio yazılım geliştirme sırasında daha üretken olmanıza yardımcı olan popüler özelliklerinden bazıları şunlardır:
 
@@ -106,9 +94,19 @@ Visual Studio yazılım geliştirme sırasında daha üretken olmanıza yardımc
 
    ![Tanıma göz at](../ide/media/peek-definition.png)
 
+## <a name="install-the-visual-studio-ide"></a>Visual Studio IDE yükleyin
+
+Bu genel bakış makalesinde basit bir proje oluşturma ve renk temasını değiştirme gibi Visual Studio ile yapabilir şeylerden bazıları çalışırken size kullanarak [IntelliSense](using-intellisense.md) bir yardımcı kodlama ve hata ayıklama değeri görmek için bir uygulama olarak bir program yürütme sırasında değişkeni. Başlamak için [Visual Studio 2017'yi indirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ve sisteminize yüklenecek.
+
+Modüler yükleyici seçin ve yüklemek sağlayan *iş yükleri*, programlama dili veya tercih ettiğiniz platform için gerekli özellikler grupları olduğu. İçin adımları [bir program oluşturma](#create-a-program), seçtiğinizden emin olun **.NET Core çoklu platform geliştirme** yüklemesi sırasında iş yükü.
+
+![.NET core çoklu platform geliştirme iş yükünü Visual Studio yükleyicisi](../ide/media/dotnet-core-cross-platform-workload.png)
+
+Visual Studio'yu ilk kez başlattığınızda, isteğe bağlı olarak yapabilecekleriniz [oturum](signing-in-to-visual-studio.md) Microsoft hesabınızı veya iş veya Okul hesabınızı kullanarak.
+
 ## <a name="create-a-program"></a>Bir program oluşturma
 
-Şimdi kolları sıvayın ve yeni, basit bir program oluşturun.
+Şimdi kolları sıvayın ve basit bir program oluşturun.
 
 1. Visual Studio'yu açın. Menüsünde **dosya** > **yeni** > **proje**.
 
@@ -276,7 +274,7 @@ Daha fazla kodlama içine dalmaya hazır değilseniz aşağıdaki dile özgü h�
 
 - [İlk C# web uygulamanızı oluşturmak için Visual Studio](quickstart-aspnet-core.md)
 
-- [İlk F # web uygulamanızı oluşturmak için Visual Studio](quickstart-fsharp.md)
+- [Visual Studio'yu ilk kez oluşturma kullanarak F# web uygulaması](quickstart-fsharp.md)
 
 - [İlk Node.js uygulamanızı oluşturmak için Visual Studio](quickstart-nodejs.md)
 
