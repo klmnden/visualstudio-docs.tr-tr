@@ -23,15 +23,15 @@ helpviewer_keywords:
 - kernel debugger
 ms.assetid: 630a7abd-3303-4aaa-888a-6de3de14bc01
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: acae508dee0e5ed0897af4914a935cc62fabff66
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eea2e7d8277bc67df75be3d05d907a8bd13c29c5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231809"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725284"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Hata: Hata ayıklama birincile&#39;olası bir çekirdek hata ayıklayıcısı sistemde etkin olduğundan t
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

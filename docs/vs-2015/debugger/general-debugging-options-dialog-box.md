@@ -24,15 +24,15 @@ helpviewer_keywords:
 - Options dialog box, debugging
 ms.assetid: b33aee0b-43c3-4c26-8ed4-bc673f491503
 caps.latest.revision: 50
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dab045b147b4ce929106c26befcae58c80b99239
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e3a9e0b8008da5b648ae156235a20964fc0952b1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854331"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742776"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Genel, Hata Ayıklama, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +139,7 @@ ms.locfileid: "49854331"
  **Yönetilen Uyumluluk modunu kullan**  
  Varsayılan hata ayıklama altyapısı bu senaryoları sağlamak için eski bir sürüm ile değiştirir:  
   
-- C#, VB veya F kendi ifade değerlendiricisi sağlayan # dışındaki bir .NET Framework dili kullanıyorsunuz (buna C + dahildir +/ CLI).  
+- Dışında bir .NET Framework dili kullanıyorsunuz C#, VB veya F# kendi ifade değerlendiricisi sağlayan (buna C + dahildir +/ CLI).  
   
 - Karışık modda hata ayıklarken C++ projeleri için Düzenle ve Devam Et'i etkinleştirmek istediğiniz.  
   
