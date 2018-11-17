@@ -17,12 +17,12 @@ ms.assetid: 21dc5246-69c1-43e3-855c-9cd4e596c0e6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a04b6b171cf2a0cf6a8759d56264c4d4201f681d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc70710ea0a811b75e6bad3098fbbc46dae0bd3b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812419"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760755"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -66,21 +66,21 @@ public struct BP_RESOLUTION_LOCATION {
  [Yalnızca C++] Bir yer tutucu.  
   
  `unionmember1`  
- [Yalnızca C#] Yorumlama konusunda açıklamalara bakın.  
+ [C# yalnızca] Yorumlama konusunda açıklamalara bakın.  
   
  `unionmember2`  
- [Yalnızca C#] Yorumlama konusunda açıklamalara bakın.  
+ [C# yalnızca] Yorumlama konusunda açıklamalara bakın.  
   
  `unionmember3`  
- [Yalnızca C#] Yorumlama konusunda açıklamalara bakın.  
+ [C# yalnızca] Yorumlama konusunda açıklamalara bakın.  
   
  `unionmember4`  
- [Yalnızca C#] Yorumlama konusunda açıklamalara bakın.  
+ [C# yalnızca] Yorumlama konusunda açıklamalara bakın.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu yapı üyesidir [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) ve [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) yapıları.  
   
- [Yalnızca C#] `unionmemberX` Üyeleri aşağıdaki tabloya göre yorumlanır. Sol sütundaki için konum `bpType` boyunca hangi her belirlemek için değer `unionmemberX` üye temsil eder ve sıralama `unionmemberX` uygun şekilde. Bu yapı C# yorumlamak bir yol için örneğe bakın.  
+ [C# yalnızca] `unionmemberX` Üyeleri aşağıdaki tabloya göre yorumlanır. Sol sütundaki için konum `bpType` boyunca hangi her belirlemek için değer `unionmemberX` üye temsil eder ve sıralama `unionmemberX` uygun şekilde. Bu yapı C# yorumlamak bir yol için örneğe bakın.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  

@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil Office 365 Geliştirici teklifi 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d75c64c3d8902432adde846badabe18a820a16b0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae195f8e132ab7d92c48a1bbc6ce04f684abe616
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858348"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758385"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio Abonelikleri, Office 365 Geliştirici aboneliği teklifi
 
@@ -28,19 +28,19 @@ Seçili Visual Studio Enterprise abonelikleri olan aboneler, Office 365 Gelişti
 
 3. Oturum açma işlemi tamamlandıktan sonra abonelik avantajlarını sayfası görmeniz gerekir.  Birden fazla aboneliğiniz varsa, sağ üst köşesinde, siyah Şeridin altında aşağı açılan oka tıklayarak abonelikler arasında geçiş yapabilirsiniz.  Office 365 Geliştirici aboneliği teklifi döşeme Araçları kategorisindedir.  Kutucuk satırının sağındaki oku, Office kutucuğuna görünene kadar kaydırın için kullanın.
 
-4. Tıklayarak **etkinleştirme** avantajı kutucuğun alt kısmındaki bağlantı.   
+4. Tıklayarak **etkinleştirme** avantajı kutucuğun alt kısmındaki bağlantı.
    > [!div class="mx-imgBorder"]
    > ![Office 365 geliştirme avantajı kutucuğu](_img/vs-office-dev/vs-office-dev-tile.png)
 
-5. Sonraki adım, bir hesap oluşturmaktır.  Ad ve oturum açma e-posta adresi görüntülenir.  
+5. Sonraki adım, bir hesap oluşturmaktır.  Ad ve oturum açma e-posta adresi görüntülenir.
 6. Ülkenizi seçin.
-7. Şirketinizin adını girin. 
-8. Hüküm ve koşulları kabul etmek için onay kutusuna tıklayın. 
+7. Şirketinizin adını girin.
+8. Hüküm ve koşulları kabul etmek için onay kutusuna tıklayın.
 9. **İleri**'ye tıklayın.
    > [!div class="mx-imgBorder"]
    > ![Office 365 geliştirme kaydolma](_img/vs-office-dev/vs-office-dev-signup.png)
 
-10. Tercihlerinizi ve ilgi alanlarını belirtin ve tıklayın **bir aboneliği etkinleştirin**.   
+10. Tercihlerinizi ve ilgi alanlarını belirtin ve tıklayın **bir aboneliği etkinleştirin**.
     > [!div class="mx-imgBorder"]
     > ![Office 365 geliştirme tercihleri](_img/vs-office-dev/vs-office-dev-preferences.png)
 
@@ -48,7 +48,7 @@ Seçili Visual Studio Enterprise abonelikleri olan aboneler, Office 365 Gelişti
     > [!div class="mx-imgBorder"]
     > ![Office 365 geliştirme kullanıcı adı ve etki alanı](_img/vs-office-dev/vs-office-dev-domain.png)
 
-12. Telefon numaranızı girin ve tıklayın **kod Gönder**.  Bu hesabı gerçek bir kişi tarafından oluşturulan olun yardımcı olur. 
+12. Telefon numaranızı girin ve tıklayın **kod Gönder**.  Bu hesabı gerçek bir kişi tarafından oluşturulan olun yardımcı olur.
     > [!div class="mx-imgBorder"]
     > ![Office 365 geliştirme telefon doğrulama](_img/vs-office-dev/vs-office-dev-send-code.png)
 
@@ -56,13 +56,13 @@ Seçili Visual Studio Enterprise abonelikleri olan aboneler, Office 365 Gelişti
     > [!div class="mx-imgBorder"]
     > ![Office 365 geliştirme kod doğrulama](_img/vs-office-dev/vs-office-dev-setup.png)
 
-İşte bu kadar!  Tercihlerinize göre bilgi görüntüleyen bir sayfa görürsünüz.  
+İşte bu kadar!  Tercihlerinize göre bilgi görüntüleyen bir sayfa görürsünüz.
 
 ## <a name="next-steps"></a>Sonraki adımlar
+
 Geliştirici aboneliğinize erişmek için şu adrese gidin [office.com](https://www.office.com) ve yeni oluşturduğunuz oturum kullanıcı kimliği ve parola.
 
-Office 365 Geliştirici aboneliği hakkında daha fazla bilgi için kullanıma [Office 365 Geliştirici programı SSS](https://docs.microsoft.com/office/developer-program/office-365-developer-program-faq). 
-
+Office 365 Geliştirici aboneliği hakkında daha fazla bilgi için kullanıma [Office 365 Geliştirici programı SSS](/office/developer-program/office-365-developer-program-faq).
 
 ## <a name="eligibility"></a>Uygunluk
 
@@ -79,9 +79,8 @@ Office 365 Geliştirici aboneliği hakkında daha fazla bilgi için kullanıma [
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
-
-
 ## <a name="support-resources"></a>Destek kaynakları
+
 -  Office geliştirici aboneliğinizle birlikte Yardım mı gerekiyor? Kullanıma [Destek](https://developer.microsoft.com/office/support) kaynaklardaki [Office Geliştirme Merkezi](https://developer.microsoft.com/office).
 -  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
 -  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

@@ -15,12 +15,12 @@ ms.assetid: ce9f4266-bb64-4c09-be88-4bd6413f60d0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e4272c6a89864f72d4f823b53283d9d18fafaae0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7215079dbfc8a8c9934f16700c0a7f466f9bc9a6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263815"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786086"
 ---
 # <a name="web-site-support"></a>Web Sitesi Desteği
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Bir Web sitesi proje sistemi Web projeleri oluşturan bir proje sistemidir. Web 
  Web sayfaları derlemek için kullanılan dil derleyici ile kaydedilmelidir [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)]. Kullanabileceğiniz [ \<derleyici > öğesi](http://msdn.microsoft.com/library/7a151659-b803-4c27-b5ce-1c4aa0d5a823) Web.config dosyasında aşağıdaki örnekte olduğu gibi derleyici kaydetmek için:  
   
 ```  
-<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>  
+<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>  
 ```  
   
 ## <a name="in-this-section"></a>Bu Bölümde  

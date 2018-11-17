@@ -15,12 +15,12 @@ ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd08e17349008760fd029887c0bc17554ef4c7d8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e68cf9d3e33ad07ab092de680078972dfaf2d70
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848689"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797461"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>İzlenecek Yol: Düzenleyici Uzantısı ile Kısayol Tuşu Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 3.  KeyBindingCommandFilter adlı sınıfını alması gerektiğini <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
     ```csharp  
-    internal class KeyBindingCommandFilter : IOleCommandTarget  
+    internal class KeyBindingCommandFilter : IOleCommandTarget  
     ```  
   
 4.  Metin görünümü için özel alanlar, sonraki komutu komut zinciri ve komut filtresi zaten eklenmiş olup olmadığını göstermek için bir bayrak ekleyin.  
@@ -79,8 +79,8 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     ```csharp  
     private IWpfTextView m_textView;  
     internal IOleCommandTarget m_nextTarget;  
-    internal bool m_added;  
-    internal bool m_adorned;  
+    internal bool m_added;  
+    internal bool m_adorned;  
     ```  
   
 5.  Metin görünümünü ayarlayan bir oluşturucu ekleyin.  
