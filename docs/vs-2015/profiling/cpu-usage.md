@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f49ab702a411c1d5205be8c626ce1032e57ab4ce
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: af6d58ac5cd87523124d567e36559a82d69ddfc6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876522"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810539"
 ---
 # <a name="cpu-usage"></a>CPU kullanımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ Uygulamanızdaki performans sorunlarını araştırmak gerektiğinde başlatmak 
 |**Kendi kendine CPU (%)**|![Kendi kendine % Denklem](../profiling/media/cpu-use-wt-selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> İşlev tarafından çağırılan işlevlerdeki etkinlik hariç bu işleve yapılan çağrılar tarafından kullanılan seçili zaman aralığındaki uygulamanın CPU etkinliği yüzdesi.|  
 |**Toplam CPU (ms)**|Seçili zaman aralığındaki işlevi ve işlev tarafından çağrılan işlevler çağrılarında harcanan milisaniye sayısı.|  
 |**Kendi kendine CPU (ms)**|Seçili zaman aralığındaki işlevi ve işlev tarafından çağrılan işlevler çağrılarında harcanan milisaniye sayısı.|  
-|**Modülü**|İşlev veya bir [harici kod] düğümünde işlevler içeren modül sayısı içeren modül adı.|  
+|**Module**|İşlev veya bir [harici kod] düğümünde işlevler içeren modül sayısı içeren modül adı.|  
   
 ###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Zaman uyumsuz işlevleri CPU kullanımına çağrı ağacı  
  Derleyici, zaman uyumsuz bir yöntem karşılaştığında, yöntemin yürütmesini denetlemek için gizli bir sınıf oluşturur. Kavramsal olarak, derleyicinin ürettiği işlevleri, özgün metodun işlemlerini zaman uyumsuz olarak çağırın ve geri çağırmaları, Zamanlayıcı ve bunları doğru gerekli yineleyiciler listesini içeren bir durum makinesindeki bir sınıftır. Özgün yöntemi tarafından bir üst yöntem çağrıldığında, çalışma zamanı üst yürütme bağlamında yöntemi kaldırır ve gizli sınıfı yöntemleri uygulamanın yürütmesini denetlemek sistem ve framework kod bağlamında çalışır. Zaman uyumsuz yöntemler genellikle, ancak her zaman, bir veya daha fazla farklı iş parçacıkları üzerinde yürütülür. Bu kod CPU kullanımı çağrı ağacında altı olarak gösterilen **[harici kod]** düğümünün üst ağaç düğümünü hemen altındaki.  

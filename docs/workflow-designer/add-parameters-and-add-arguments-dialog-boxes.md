@@ -1,5 +1,5 @@
 ---
-title: İş Akışı Tasarımcısı - parametreler ve bağımsız değişkenler iletişim kutuları ekleyin
+title: İş Akışı Tasarımcısı - parametreler ve bağımsız değişkenler iletişim kutularını ekleyin
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,28 +12,28 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 67e81423bbd14065249cf7fe91503ab280ec2d8a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1b01e08ee5579f5422e8e51562444302d685d58d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967644"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789050"
 ---
-# <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Parametreler ve bağımsız değişkenler iletişim kutuları ekleyin
+# <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Parametreler ve Bağımsız Değişkenler Ekle İletişim Kutuları
 
-Kullanıcı Arabirimi (UI) öğelerini aşağıdaki tabloda açıklanmaktadır **parametreler ekleme** tarafından kullanılan iletişim kutusunu <xref:System.Activities.Statements.InvokeMethod> Tasarımcısı:
+Aşağıdaki tabloda kullanıcı arabirimi (UI) öğelerini açıklar **parametreler ekleme** iletişim kutusu tarafından kullanılan <xref:System.Activities.Statements.InvokeMethod> Tasarımcısı:
 
 |||
 |-|-|
-|**Yönü**|Parametresi yöntemi veya her ikisi de dışında yöntemiyle veri akışını temsil edip etmediğini belirler.|
+|**Yönü**|Parametresi yöntemi veya her ikisi de dışında yöntemi içine veri akışını temsil edip etmediğini belirtir.|
 |**Türü**|Yeni bir parametre türü adı.|
-|**Değer**|Yeni parametre için varsayılan bir değer atamak için kullanılan bir VB ifadesi|
+|**Değer**|Yeni parametre bir varsayılan değer atamak için kullanılan bir Visual Basic ifadesinin|
 
-Kullanıcı Arabirimi (UI) öğelerini aşağıdaki tabloda açıklanmaktadır **bağımsız değişkenleri eklemek** tarafından kullanılan iletişim kutusunu <xref:System.Activities.Statements.InvokeDelegate> Tasarımcısı:
+Aşağıdaki tabloda kullanıcı arabirimi (UI) öğelerini açıklar **bağımsız değişkenleri eklemek** iletişim kutusu tarafından kullanılan <xref:System.Activities.Statements.InvokeDelegate> Tasarımcısı:
 
 |||
 |-|-|
-|**Ad**|Bağımsız değişken adı.|
-|**Yönü**|Bağımsız değişken temsilci ya da her ikisini de dışında temsilci içine veri akışını temsil edip etmediğini belirler.|
+|**Ad**|Bağımsız değişkenin adı.|
+|**Yönü**|Bağımsız değişken, temsilci veya her ikisini de dışında temsilci içine veri akışını temsil edip etmediğini belirtir.|
 |**Türü**|Yeni bağımsız değişken türü adı.|
 |**Değer**|Temsilci bağımsız değişkeni, bu örneği için kullanılacak değer.|

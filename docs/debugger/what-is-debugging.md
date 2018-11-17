@@ -1,5 +1,5 @@
 ---
-title: Hata ayıklıyor?
+title: Hata ayıklama nedir?
 description: Bir uygulamanın hatalarını ayıklamak geldiğini anlayın
 ms.custom: debug-experiments
 ms.date: 10/17/2018
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bece83e7e2a66499721c017932d4b498b664b459
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 7cd96d61718972c82c6002888e123003530c019c
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51562020"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826667"
 ---
-# <a name="what-is-debugging"></a>Hata ayıklıyor?
+# <a name="what-is-debugging"></a>Hata ayıklama nedir?
 
 Visual Studio hata ayıklayıcısını güçlü bir araçtır. Nasıl kullanılacağını göstereceğiz önce gibi bazı terimler hakkında konuşmak istiyoruz *hata ayıklayıcı*, *hata ayıklama*, ve *hata ayıklama modu*. Biz daha sonra bulma ve hataları düzeltme hakkında konuşurken, böylece biz hakkında aynı şeyi insanlarla konuşmalısınız.
 
@@ -49,7 +49,7 @@ Hata ayıklayıcı, uygulamalarınızda hataları bulmalarına ve önemli bir ar
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu makalede, birkaç genel hata ayıklama kavramları öğrendiniz. Ardından, Visual Studio ile hata ayıklama ve daha az hata ile kodunun nasıl yazılacağını öğrenmeye başlayabilirsiniz.
+Bu makalede, birkaç genel hata ayıklama kavramları öğrendiniz. Ardından, Visual Studio ile hata ayıklama ve daha az hata ile kodunun nasıl yazılacağını öğrenmeye başlayabilirsiniz. Şu makale gösterir C# Visual Studio tarafından desteklenen tüm dillerde kod örnekleri, ancak kavramlar geçerlidir.
 
 > [!div class="nextstepaction"]
 > [Daha iyi yazma C# kullanarak Visual Studio code](../debugger/write-better-code-with-visual-studio.md)
