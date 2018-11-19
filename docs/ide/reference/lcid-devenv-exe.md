@@ -18,15 +18,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac74f5275288cdba35d3a70f4a7813c800e4327d
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: a97874ae1267677c5055e84650a839068479fc10
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704726"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948601"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
-Metin, para birimi ve tümleşik geliştirme ortamı (IDE) içinde diğer değerler için kullanılan varsayılan dili ayarlar.
+Metin, para birimi ve diğer değerleri tümleşik geliştirme ortamında (IDE) için kullanılan varsayılan dili ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,14 +35,14 @@ devenv {/LCID|/l} LocaleID
 ```
 
 ## <a name="arguments"></a>Arguments
- `LocaleID` Gerekli. Dilin LCID (yerel ayar kimliği) belirtin.
+ `LocaleID` Gerekli. Dilin LCID (yerel ayar kimliği) belirtirsiniz.
 
 ## <a name="remarks"></a>Açıklamalar
- IDE yükler ve ortamı için varsayılan doğal dili ayarlar. Bu değişiklik oturumlar arasında kalıcı ve yansıtılan **uluslararası ayarları** bölmesinde **ortam** içinde seçenekleri **seçenekleri** IDE iletişim kutusunda.
+ IDE yükler ve ortam için varsayılan doğal dili ayarlar. Bu değişiklik oturumları arasında kalıcı ve yansıtılan **uluslararası ayarlar** bölmesinde **ortam** seçeneklerini **seçenekleri** iletişim kutusu IDE'de.
 
- Belirtilen dil kullanıcının sisteminde kullanılabilir durumda değilse, / lcid anahtar göz ardı edilir.
+ Belirtilen dil kullanıcının sisteminde kullanılabilir durumda değilse, / LCID anahtarı yok sayıldı.
 
- Tarafından desteklenen dilleri LCID'ler aşağıdaki tabloda listelenmektedir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Aşağıdaki tabloda LCID'ler tarafından desteklenen dilleri listeler [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 |Dil|LCID|
 |--------------|----------|
@@ -53,11 +53,11 @@ devenv {/LCID|/l} LocaleID
 |Almanca|1031|
 |İtalyanca|1040|
 |Japonca|1041|
-|Kore Dili|1042|
+|Korece|1042|
 |İspanyolca|3082|
 
 ## <a name="example"></a>Örnek
- Bu örnek IDE İngilizce kaynaklarını dizeleri ile yükler.
+ Bu örnekte, İngilizce kaynak dizelerini IDE'ye yükler.
 
 ```cmd
 devenv /LCID 1033
@@ -65,6 +65,6 @@ devenv /LCID 1033
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [Devenv Komut Satırı Anahtarları](../../ide/reference/devenv-command-line-switches.md)
-- [Uluslararası ayarlar, ortam, Seçenekler iletişim kutusu](../../ide/reference/international-settings-environment-options-dialog-box.md)
+- [Devenv komut satırı anahtarları](../../ide/reference/devenv-command-line-switches.md)
+- [Uluslararası Ayarlar, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/international-settings-environment-options-dialog-box.md)
 - [Pencere düzenlerini özelleştirme](../../ide/customizing-window-layouts-in-visual-studio.md)

@@ -94,6 +94,27 @@ items:
       items:
       - name: Visual Studio iş yükü ve bileşen kimlikleri
         href: install/workload-and-component-ids.md
+        items:
+        - name: Visual Studio Enterprise 2017
+          href: install/workload-component-id-vs-enterprise.md
+        - name: Visual Studio Professional 2017
+          href: install/workload-component-id-vs-professional.md
+        - name: Visual Studio Community 2017
+          href: install/workload-component-id-vs-community.md
+        - name: Visual Studio Takım Gezgini 2017
+          href: install/workload-component-id-vs-team-explorer.md
+        - name: Visual Studio Desktop Express 2017
+          href: install/workload-component-id-vs-express.md
+        - name: Visual Studio Derleme Araçları 2017
+          href: install/workload-component-id-vs-build-tools.md
+        - name: Visual Studio Test Aracısı 2017
+          href: install/workload-component-id-vs-test-agent.md
+        - name: Visual Studio Test Denetleyicisi 2017
+          href: install/workload-component-id-vs-test-controller.md
+        - name: Visual Studio Test Uzmanı 2017
+          href: install/workload-component-id-vs-test-professional.md
+        - name: Visual Studio Geri Bildirim İstemcisi 2017
+          href: install/workload-component-id-vs-feedback-client.md
       - name: Visual Studio derleme numaraları ve yayın tarihleri
         href: install/visual-studio-build-numbers-and-release-dates.md
   - name: Azure sanal makinesinden Visual Studio'yu kullanma
@@ -1081,12 +1102,13 @@ items:
       href: /visualstudio/productinfo/2017-redistribution-vs?context=visualstudio/default&contextView=vs-2017
     - name: Destek yaşam döngüsü ve bakım
       href: /visualstudio/productinfo/vs-servicing-vs?context=visualstudio/default&contextView=vs-2017
-  - name: Visual Studio ile ilgili sorun bildirme
-    href: ide/how-to-report-a-problem-with-visual-studio-2017.md
-    items:
     - name: Geliştirici Topluluğu veri gizliliği
       href: ide/developer-community-privacy.md
-  - name: Visual Studio için özellik önerin
+  - name: Visual Studio’da sorun bildirme
+    href: ide/how-to-report-a-problem-with-visual-studio-2017.md
+  - name: 'Genel bakış: Sorun bildirme'
+    href: ide/report-a-problem.md
+  - name: 'Genel bakış: Özellik önerme'
     href: ide/suggest-a-feature.md
   - name: Müşteri Deneyimi Geliştirme Programı
     href: ide/visual-studio-experience-improvement-program.md
@@ -1097,9 +1119,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Bizimle iletişime geçin
     href: ide/talk-to-us.md
-ms.openlocfilehash: 92828f8043c85d42349fde61442bc12a9604ef62
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 02c451e03d36baf818dc504c79ee5576a91c9319
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349708"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826836"

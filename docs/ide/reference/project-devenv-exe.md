@@ -1,5 +1,5 @@
 ---
-title: -Proje (devenv.exe)
+title: -Project (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -18,15 +18,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 588b56c03dbd14b1b7658b92a67b02a6dc3892eb
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 3b18e4715eb711160d0adcc95c6a19e4b90bcc94
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704083"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948224"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
-Yapı, temizleme, yeniden oluşturun veya dağıtmak için belirtilen çözüm yapılandırma içinde tek bir proje tanımlar.
+Tek bir proje oluşturmak, temizlemek, yeniden oluşturmak veya dağıtmak için belirtilen çözüm yapılandırması içindeki tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,17 +35,17 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
 ```
 
 ## <a name="arguments"></a>Arguments
- / BUILD
+ / Build
 
- Tarafından belirtilen proje derlemeler `/project` `ProjName`.
+ Tarafından belirtilen projeyi derler `/project` `ProjName`.
 
  / clean
 
- Tüm aracı dosyaları ve yapılandırma sırasında oluşturulan çıktı dizinleri temizler.
+ Tüm ara dosyaları ve derleme sırasında oluşturulan çıktı dizini temizler.
 
  / Rebuild
 
- Temizler sonra tarafından belirtilen proje derlemeler `/project` `ProjName`.
+ Temizler ve ile belirtilen projeyi oluşturur `/project` `ProjName`.
 
  / deploy
 
@@ -53,30 +53,30 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
 
  `SolnConfigName`
 
- Gerekli. Adlı çözüm için uygulanan çözüm yapılandırmasının adı `SolutionName`.
+ Gerekli. Adlı çözüm için uygulanacak çözüm yapılandırması adı `SolutionName`.
 
  `SolutionName`
 
- Gerekli. Tam yol ve çözüm dosyasının adı.
+ Gerekli. Çözüm dosyasının adını ve tam yolu.
 
  / Project `ProjName`
 
- İsteğe bağlı. Yol ve çözüm içinde proje dosyasının adı. Gelen göreli bir yol girin `SolutionName` klasörü proje dosyası veya projenin görünen adı veya tam yolunu ve proje dosyasının adı.
+ İsteğe bağlı. Çözüm içindeki bir proje dosyasının adı ve yolu. Göreli bir yol girebilirsiniz `SolutionName` klasör proje dosyası veya projenin görünen adı veya tam yolu ve proje dosyasının adı.
 
  / projectconfig `ProjConfigName`
 
- İsteğe bağlı. Bir proje adını derleme uygulanacak yapılandırma `/project` adlı.
+ İsteğe bağlı. Bir proje adını yapı uygulanacak yapılandırma `/project` adlı.
 
 ## <a name="remarks"></a>Açıklamalar
 
--   Kullanılması gereken parçası bir `devenv /build`, /`clean`, `/rebuild`, veya `/deploy` komutu.
+-   Kullanılmalıdır parçası olan bir `devenv /build`, /`clean`, `/rebuild`, veya `/deploy` komutu.
 
--   Çift tırnak işaretleri boşluk dizeler alın.
+-   Çift tırnak içine boşluk dizeleri alın.
 
--   Derlemeleri hatalar dahil olmak üzere, ilgili özet bilgileri görüntülenebilir **komutu** penceresinde veya ile belirtilen herhangi bir günlük dosyasını `/out` geçin.
+-   Hataları dahil olmak üzere, derlemeler için Özet bilgiler görüntülenebilir **komut** penceresinde veya belirtilen herhangi bir günlük dosyasını `/out` geçin.
 
 ## <a name="example"></a>Örnek
- Bu örnek proje derlemeler `CSharpConsoleApp`kullanarak `Debug` Proje yapı yapılandırması içinde `Debug` çözüm yapılandırmasını `MySolution`.
+ Bu örnek projeyi derler `CSharpConsoleApp`kullanarak `Debug` içinde proje yapı yapılandırmasını `Debug` çözüm yapılandırması `MySolution`.
 
 ```cmd
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
@@ -84,10 +84,10 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [Devenv Komut Satırı Anahtarları](../../ide/reference/devenv-command-line-switches.md)
+- [Devenv komut satırı anahtarları](../../ide/reference/devenv-command-line-switches.md)
 - [/ ProjectConfig (devenv.exe)](../../ide/reference/projectconfig-devenv-exe.md)
-- [/ Yapı (devenv.exe)](../../ide/reference/build-devenv-exe.md)
+- [/ Derleme (devenv.exe)](../../ide/reference/build-devenv-exe.md)
 - [/ Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)
 - [/ Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
 - [/ (Devenv.exe) dağıtma](../../ide/reference/deploy-devenv-exe.md)
-- [/ Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
+- [/ (Devenv.exe out)](../../ide/reference/out-devenv-exe.md)

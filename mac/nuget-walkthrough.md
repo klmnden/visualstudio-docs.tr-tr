@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: 4c945af52f4d19a1966809e905119d491cfc7432
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 0a98425ba12ae7aba16a2bc6ffa29e701c1b9f11
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295754"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948628"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Bir NuGet paketini projenize dahil
 
@@ -116,4 +116,4 @@ Dışlama hakkında ayrıntılar için belirli bir kaynak denetimi belgelerinize
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Yükle ve bir paket (Windows üzerinde) Visual Studio'da kullanın](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
+* [Yükleme ve bir paket (Windows) Visual Studio kullanma](/nuget/quickstart/install-and-use-a-package-in-visual-studio)

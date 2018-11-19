@@ -2,7 +2,7 @@
 title: Çok iş parçacıklı uygulamalarda hata ayıklamayı öğrenin
 description: Paralel Yığınlar ve paralel izleme Visual Studio kullanarak hata ayıklama
 ms.custom: H1HackMay2017
-ms.date: 08/01/2018
+ms.date: 11/16/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,45 +19,45 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66239362e454d5ab333214c444aeee3fa54b1b8a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a6ded522a917dd7207da7731850303535e19fdb
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936868"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948991"
 ---
-# <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Visual Studio'da çok iş parçacıklı uygulamalarda hata ayıklamaya başlama
-Visual Studio, çeşitli araçları ve çok iş parçacıklı uygulamalarda hata ayıklamanıza yardımcı olmak için kullanıcı arabirimi öğeleri sağlar. Bu öğreticide, iş parçacığı işaretçileri kullanmak gösterilir **Paralel Yığınlar** penceresinde **paralel izleme** pencere, koşullu kesme noktaları ve filtre kesme noktaları. Bu öğreticide yalnızca birkaç dakika sürer, ancak bunu tamamlamaya, çok iş parçacıklı uygulamalarda hata ayıklama özellikleriyle alışmanızı.
+# <a name="get-started-debugging-multithreaded-applications"></a>Çok iş parçacıklı uygulamalarda hata ayıklamaya başlama
+Visual Studio, çeşitli araçları ve çok iş parçacıklı uygulamalarda hata ayıklamanıza yardımcı olmak için kullanıcı arabirimi öğeleri sağlar. Bu öğreticide, iş parçacığı işaretçileri kullanmak gösterilir **Paralel Yığınlar** penceresinde **paralel izleme** pencere, koşullu kesme noktaları ve filtre kesme noktaları. Bu öğreticiyi tamamlamak, hata ayıklama çok iş parçacıklı uygulamalar için Visual Studio özellikleriyle alışmanızı.
 
 | | |
 |---------|---------|
 | ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | [Bir video izleyin](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) benzer adımları gösteren çok iş parçacıklı hata ayıklama. |
 
-Diğer konular, diğer birden çok iş parçacıklı hata ayıklama araçları kullanarak ek bilgileri sağlayın:
+Bu 2 konu diğer birden çok iş parçacıklı hata ayıklama araçları kullanma hakkında ek bilgiler sağlar:
 
-- İçin nasıl kullanılacağını gösteren benzer bir konu **hata ayıklama konumu** araç ve **iş parçacıkları** penceresinde görmek [izlenecek yol: birden çok iş parçacıklı bir uygulamada hata ayıklama](../debugger/how-to-use-the-threads-window.md).
+- Kullanılacak **hata ayıklama konumu** araç ve **iş parçacıkları** penceresinde görmek [izlenecek yol: birden çok iş parçacıklı bir uygulamada hata ayıklama](../debugger/how-to-use-the-threads-window.md).
 
-- Kullanan bir örnek ile benzer bir konu <xref:System.Threading.Tasks.Task> (yönetilen kod) ve Eşzamanlılık Çalışma zamanı (C++) [izlenecek yol: paralel uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md). En çok iş parçacıklı uygulama türleri için geçerli olan genel hata ayıklama ipuçları için hem bu konuda hem de bağlı konuyu okuyun.
+- Kullanan bir örnek için <xref:System.Threading.Tasks.Task> (yönetilen kod) ve Eşzamanlılık Çalışma zamanı (C++) [izlenecek yol: paralel uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md). En çok iş parçacıklı uygulama türleri için geçerli olan genel hata ayıklama ipuçları için bu konuda hem de bunu okuyun.
   
-Bu öğreticiye başlamadan bir çok iş parçacıklı uygulaması projesi gerekir. Bu projeyi oluşturmak için burada listelenen adımları izleyin.  
+Öncelikle, bir çok iş parçacıklı bir uygulama projesi de gerekir. Bir örnek aşağıda verilmiştir.  
   
-#### <a name="to-create-the-multithreaded-app-project"></a>Çok iş parçacıklı bir uygulama projesi oluşturmak için  
+## <a name="create-a-multithreaded-app-project"></a>Çok iş parçacıklı uygulaması projesi oluşturma  
   
-1.  Üzerinde **dosya** menüsünde seçin **yeni** ve ardından **proje**.  
+1.  Üzerinde **dosya** menüsünde **yeni** > **proje**.  
   
      **Yeni proje** iletişim kutusu görüntülenir.  
   
-2.  Tercih ettiğiniz dili seçin: **Visual C#**, **Visual C++**, veya **Visual Basic**.  
+2.  Bir dil seçin: **Visual C#** , **Visual C++**, veya **Visual Basic**.  
   
 3.  Altında **Windows Masaüstü**, seçin **konsol uygulaması**.  
   
-4.  İçinde **adı** kutusuna MyThreadWalkthroughApp adı yazın.  
+4.  İçinde **adı** MyThreadWalkthroughApp girin.  
   
-5.  **Tamam**'ı tıklatın.  
+5.  Seçin **Tamam**.  
   
-     Yeni bir konsol projesi görünür. Bir kaynak dosyası projeyi oluşturduğunuzda görünür. Seçtiğiniz dile bağlı olarak, kaynak dosya Program.cs, MyThreadWalkthroughApp.cpp veya Module1.vb olarak adlandırılabilir.  
+     Yeni bir konsol projesi görünür. Proje oluşturulduktan sonra bir kaynak dosyası görüntülenir. Seçtiğiniz dile bağlı olarak, kaynak dosyası olarak adlandırılabilir *Program.cs*, *MyThreadWalkthroughApp.cpp*, veya *Module1.vb*.  
   
-6.  Kaynak dosyada kod silin ve burada gösterilen örnek kod ile değiştirin.
+6.  Kaynak dosyada kod silin ve aşağıda listelendiği uygun örnek kod ile değiştirin.
 
     ```csharp
     using System;
@@ -194,11 +194,11 @@ Bu öğreticiye başlamadan bir çok iş parçacıklı uygulaması projesi gerek
     End Class
     ```
   
-7.  Üzerinde **dosya** menüsünü tıklatın **Tümünü Kaydet**.  
+7.  Üzerinde **dosya** menüsünde **Tümünü Kaydet**.  
   
-#### <a name="to-begin-the-tutorial"></a>Öğreticiyi başlamak için  
+## <a name="debug-the-multithreaded-app"></a>Çok iş parçacıklı uygulamaların hatalarını ayıklama  
   
--   Kaynak Kod Düzenleyicisi'nde aşağıdaki kodu bulun: 
+1. Kaynak Kod Düzenleyicisi'nde, aşağıdaki kod parçacıkları birini arayın: 
   
     ```csharp  
     Thread.Sleep(3000);  
@@ -214,174 +214,137 @@ Bu öğreticiye başlamadan bir çok iş parçacıklı uygulaması projesi gerek
     Thread.Sleep(3000)
     Console.WriteLine()
     ```
+
+1. Sol tıklatma sol cilt payını `Thread.Sleep` veya `this_thread::sleep_for` deyimini yeni bir kesme noktası ekleyin.  
   
-#### <a name="to-start-debugging"></a>Hata ayıklamayı başlatmak için  
+    Kanalda, kırmızı bir daire bu konumda bir kesme noktasının ayarlandığını gösterir. 
   
-1. ' A tıklayın sol kanalda `Thread.Sleep` veya `this_thread::sleep_for` ifadesi yeni kesme noktası eklemek için.  
-  
-    Kaynak kod düzenleyicinin sol tarafındaki kanalda, kırmızı bir daire görünür. Bu, bir kesme noktası bu konumda şimdi ayarlandığını gösterir. 
-  
-2. Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat** (**F5**).  
+2. Üzerinde **hata ayıklama** menüsünde **hata ayıklamayı Başlat** (**F5**).  
   
     Visual Studio çözümü oluşturur, uygulamayı hata ayıklayıcısı ekli çalıştırmaya başladığında ve uygulama kesme noktasında durur.  
   
-   > [!NOTE]
-   > Konsol penceresine odak geçiş yapıyorsanız, tıklayın [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Pencere odağı döndürülecek [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+3. Kaynak Kod Düzenleyicisi'nde kesme noktasını içeren satırı bulun.
   
-3. Kaynak Kod Düzenleyicisi'nde kesme noktasını içeren satırı bulun:  
-  
-   ```csharp  
-   Thread.Sleep(3000);  
-   ```  
-  
-   ```C++  
-   this_thread::sleep_for(chrono::seconds(3)); 
-   ```
+### <a name="ShowThreadsInSource"></a>İş parçacığı işaret keşfedin  
 
-   ```VB
-   Thread.Sleep(3000)
-   ```    
-  
-#### <a name="ShowThreadsInSource"></a>İş parçacığı işaret bulmak için  
-
-1.  Hata ayıklama araç çubuğunda **kaynak iş parçacıklarını Göster** düğmesi ![kaynak iş parçacıklarını Göster](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
+1.  Hata ayıklama araç seçin **kaynak iş parçacıklarını Göster** düğmesi ![kaynak iş parçacıklarını Göster](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
 
 2. Tuşuna **F11** hata ayıklayıcı tek satırlık bir kod ilerlemek için bir kez.
   
-3.  Pencerenin sol tarafındaki cilt payını bakın. Bu satırda göreceğiniz bir *iş parçacığı işaret* simgesi ![iş parçacığı işaret](../debugger/media/dbg-thread-marker.png "ThreadMarker") , iki bez iş parçacığı benzer. İş parçacığı işaretçisi, bir iş parçacığı bu konuma durdurulduğunu gösterir.
+3.  Pencerenin sol tarafındaki cilt payını bakın. Bu satırda göreceğiniz bir *iş parçacığı işaret* simgesi ![iş parçacığı işaret](../debugger/media/dbg-thread-marker.png "ThreadMarker") bükümlü iki iş parçacığı benzer şekilde görünür. İş parçacığı işaretçisi, bir iş parçacığı bu konuma durdurulduğunu gösterir.
 
-    Bir iş parçacığı işaret kısmen bir kesme noktası tarafından altına gizlenmiş, dikkat edin. 
+    Bir iş parçacığı işaret kısmen bir kesme noktası tarafından altına gizlenmiş. 
   
-4.  İşaretçi iş parçacığı işaret gelin. Bir DataTip görünür. DataTip durdurulmuş her iş parçacığı için adı ve iş parçacığı kimlik numarasını belirtir. Bu durumda, muhtemelen adıdır `<noname>`. 
+4.  İşaretçi iş parçacığı işaret gelin. Durdurulan her iş parçacığı için adı ve iş parçacığı kimlik numarasını belirten bir DataTip görünür. Bu durumda, muhtemelen adıdır `<noname>`. 
   
-5.  Kısayol menüsünde kullanılabilir seçenekleri görmek için iş parçacığı işaret sağ tıklayın.
+5.  Kısayol menüsünde kullanılabilir seçenekleri görmek için iş parçacığı işaret seçin.
     
-## <a name="ParallelStacks"></a>İş parçacıkları konumunu görüntülemek
+### <a name="ParallelStacks"></a>İş parçacığı konumları görüntüleyin
 
 İçinde **Paralel Yığınlar** penceresinde geçirebilirsiniz (için görev-tabanlı programlama) ve iş parçacıkları görünümü arasında Görevler görünümü ve her bir iş parçacığı için çağrı yığını bilgilerini görüntüleyebilirsiniz. Bu uygulamada iş parçacıkları görünümü kullanabiliriz.
 
-1. Açık **Paralel Yığınlar** penceresini seçerek **hata ayıklama > Windows > Paralel Yığınlar**. Şuna benzer bir şey görmeniz gerekir (gördüğü bilgiler her iş parçacığı, donanım ve programlama dilini geçerli konumuna bağlı olarak farklı olacaktır).
+1. Açık **Paralel Yığınlar** penceresini seçerek **hata ayıklama** > **Windows** > **Paralel Yığınlar**. Aşağıdakine benzer bir şey görmeniz gerekir. Gördüğü bilgiler, her iş parçacığı, donanım ve programlama dilini geçerli konumuna bağlı olarak farklılık gösterir.
 
     ![Paralel Yığınlar penceresini](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
 
-    Bu örnekte, soldan sağa doğru yönetilen kod için bu bilgileri aldığımız:
+    Bu örnekte, soldan sağa doğru yönetilen kod için bu bilgiler görüyoruz:
     
-    - Ana iş parçacığı (sol taraf) üzerinde durduruldu `Thread.Start` (durma noktası iş parçacığı işaret simgesiyle gösterilir ![iş parçacığı işaret](../debugger/media/dbg-thread-marker.png "ThreadMarker")).
+    - Ana iş parçacığı (sol taraf) üzerinde durduruldu `Thread.Start`, burada bir durma noktası iş parçacığı işaret simgesiyle gösterilir ![iş parçacığı işaret](../debugger/media/dbg-thread-marker.png "ThreadMarker").
     - İki iş parçacığı girmiş `ServerClass.InstanceMethod`, biri olan geçerli iş parçacığı (sarı ok), içinde başka bir iş parçacığı tarafından durdurulduğu sırada `Thread.Sleep`.
-    - Yeni bir iş parçacığı (sağdaki) de başlangıç (üzerinde durduruldu `ThreadHelper.ThreadStart`).
+    - Yeni bir iş parçacığı (sağdaki) de başlangıç ancak üzerinde durduruldu `ThreadHelper.ThreadStart`.
 
 2.  Girişlere sağ **Paralel Yığınlar** penceresi kısayol menüsünde kullanılabilir seçenekleri görmek için.
 
     Bu sağ tıklama menülerinde çeşitli eylemleri gerçekleştirebilirsiniz, ancak bu öğretici için size bu ayrıntıları birkaçını göstereceğiz **paralel izleme** penceresi (sonraki bölümlerde).
 
     > [!NOTE]
-    > Liste görünümünde her iş parçacığı üzerinde bilgilerle, görmeniz fazla ilgileniyorsanız **iş parçacıkları** penceresi yerine. Bkz: [izlenecek yol: birden çok iş parçacıklı bir uygulamada hata ayıklama](../debugger/how-to-use-the-threads-window.md).
+    > Her iş parçacığı bilgileri görünümüyle listesini görmek için **iş parçacıkları** penceresi yerine. Bkz: [izlenecek yol: birden çok iş parçacıklı bir uygulamada hata ayıklama](../debugger/how-to-use-the-threads-window.md).
 
-## <a name="set-a-watch-on-a-variable"></a>Bir değişken üzerinde bir izleme ayarlayın
+### <a name="set-a-watch-on-a-variable"></a>Bir değişken üzerinde bir izleme ayarlayın
 
-1. Açık **paralel izleme** penceresini seçerek **hata ayıklama > Windows > paralel İzleme > paralel Watch 1**.
+1. Açık **paralel izleme** penceresini seçerek **hata ayıklama** > **Windows** > **paralel izleme**  >  **Paralel izleme 1**.
 
-2. Gördüğünüz hücreyi tıklatın `<Add Watch>` metin (veya 4 sütundaki boş üst bilgi hücresini) türü `data`, ve Enter tuşuna basın.
+2. Gördüğünüz hücreyi `<Add Watch>` metin (veya 4 sütundaki boş üst bilgi hücresini) ve girin `data`.
 
     Her iş parçacığı için veri değişkeni için değerleri penceresinde görünür.
 
-3. Tıklayın yeniden gördüğünüz hücresinde `<Add Watch>` metin (veya 5 sütun üstbilgisi boş hücreye) türü `count`, ve Enter tuşuna basın.
+3. Gördüğünüz hücreyi `<Add Watch>` metin (veya 5 sütun üstbilgisi boş hücreye) ve girin `count`.
 
-    Her iş parçacığı sayısı değişkeni için değerleri penceresinde görünür. (Henüz bu kadar bilgi görmüyorsanız, hata ayıklayıcı iş parçacıklarının yürütülmesini ilerlemek için birkaç kez daha F11 tuşuna basarak deneyin.)
+    Değerleri `count` her iş parçacığı için değişken penceresinde görünür. Henüz bu kadar bilgi görmüyorsanız tuşlarına basarak deneyin **F11** birkaç kez hata ayıklayıcı iş parçacıklarının yürütülmesini ilerlemek için.
 
     ![Paralel İzleme penceresi](../debugger/media/dbg-multithreaded-parallel-watch.png "ParallelWatchWindow")
 
-4. Mevcut seçenekleri görmek için penceresinde satırları birine sağ tıklayın.
+4. Mevcut seçenekleri görmek için penceresinde satırlardan birinin üzerinde sağ tıklayın.
 
-## <a name="flagging-and-unflagging-threads"></a>Bayrak ekleme ve Unflagging iş parçacıkları  
-Özel dikkat vermek istediğiniz iş parçacıklarının bayrağını. İş parçacıklarını işaretleme önemli iş parçacığı izlemek ve önem verdiğiniz olmayan iş parçacıkları yok saymak için iyi bir yolu var.  
+### <a name="flag-and-unflag-threads"></a>İş parçacıklarını bayrakla işaretleme ve işareti geri alma  
+Önemli iş parçacığı izlemek ve diğer iş parçacıklarını yok saymak için iş parçacığı işaretleyebilirsiniz.  
   
-#### <a name="to-flag-threads"></a>İş parçacıklarını için  
+1. İçinde **paralel izleme** penceresinde basılı **Shift** anahtar ve birden çok satır seçin.
 
-1. İçinde **paralel izleme** penceresinde SHIFT tuşunu basılı tutun ve birden çok satır seçin.
+2. Sağ tıklayıp **bayrağı**.
 
-2. Sağ tıklatın ve seçin **bayrağı**.
-
-    Şimdi, tüm seçili iş parçacıklarını bayrakla işaretlenir. Artık, yalnızca bayraklı iş parçacıklarını gösterecek şekilde filtreleyebilirsiniz.
+    Tüm Seçili iş parçacıklarını işaretlenir. Artık, yalnızca bayraklı iş parçacıklarını gösterecek şekilde filtreleyebilirsiniz.
   
-3.  İçinde **paralel izleme** penceresinde Bul **yalnızca bayraklı iş parçacıklarını Göster** düğmesi ![bayraklı iş parçacıklarını Göster](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").  
+3.  İçinde **paralel izleme** penceresinde **yalnızca bayraklı iş parçacıklarını Göster** düğmesi ![bayraklı iş parçacıklarını Göster](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").  
   
-4.  Tıklayın **yalnızca bayraklı iş parçacıklarını Göster** düğmesi.  
-  
-    Yalnızca bayraklı iş parçacığı listesinde görünür.
+    Yalnızca bayraklı iş parçacıklarını listesinde görünür.
 
     > [!TIP]
-    > Bazı iş parçacıklarını bayrakla olduğunda, bir kod düzenleyicisinde kod satırını sağ tıklatın ve seçin **çalıştırma bayraklı iş parçacıklarını imlece kadar** (bayraklı iş parçacıklarını tüm kod ulaşmak seçtiğinizden emin olun). Bu kod yürütme sırasını denetlemek kolaylaştıran, seçilen satırdaki iş parçacıkları duraklatılır [dondurma ve iş parçacıklarını çözme](#bkmk_freeze).
+    > Bazı iş parçacıkları işaretlediğiniz sonra bir satır kod düzenleyicisinde kod sağ tıklatın ve seçin **çalıştırma bayraklı iş parçacıklarını imlece kadar**. Bayraklı iş parçacıklarını tüm kod ulaşacak seçtiğinizden emin olun. Visual Studio tarafından yürütme sırasını denetlemek kolaylaştırarak seçili bir satır kod iş parçacıklarında duraklatacaktır [dondurma ve iş parçacıklarını çözme](#bkmk_freeze).
 
-5.  Tıklayın **yalnızca bayraklı iş parçacıklarını Göster** geri açıp kapatmak için düğme **tüm iş parçacıklarını Göster** modu.
+4.  Seçin **yalnızca bayraklı iş parçacıklarını Göster** tekrar tekrar açıp kapatmak için düğme **tüm iş parçacıklarını Göster** modu.
     
-#### <a name="to-unflag-threads"></a>İş parçacıklarını bayrakla için
+5. İş parçacıklarının bayraklarını Kaldır için bir veya daha fazla bayraklı iş parçacıklarını, sağ **paralel izleme** penceresi ve select **Unflag**.
 
-İş parçacıklarını işaretleme için bir veya daha fazla bayraklı iş parçacıklarını de sağ tıklayabilirsiniz **paralel izleme** penceresi ve **Unflag**.
-
-## <a name="bkmk_freeze"></a> Dondurma ve iş parçacığı yürütmeyi çözme 
+### <a name="bkmk_freeze"></a> Dondurma ve iş parçacığı yürütmeyi çözme 
 
 > [!TIP]
 > Dondurma ve çözme (askıya alma ve sürdürme) iş parçacıkları iş gerçekleştirmek sırasını denetlemek için iş parçacığı. Bu, kilitlenmeler gibi eşzamanlılık sorunları çözün ve yarış durumlarına yardımcı olabilir.
-  
-#### <a name="to-freeze-and-unfreeze-threads"></a>Freeze ve iş parçacığı Çöz  
-  
+   
 1.  İçinde **paralel izleme** penceresinde, seçili tüm sütunları içeren sütuna sağ tıklayıp **dondurma**.
 
-    İkinci sütunda duraklatma simgesi artık her satırı için görüntülenir. Duraklatma simgesi, iş parçacığı'nın dondurulmuş olup olmadığını gösterir.
+    İkinci sütunda, her satır için bir duraklatma simgesi görünür. Duraklatma simgesi, iş parçacığı'nın dondurulmuş olup olmadığını gösterir.
 
-2.  Yalnızca bir satıra tıklayarak satırları kaldırın.
+2.  Diğer tüm satırlar yalnızca bir satır seçerek işaretini kaldırın.
 
 3.  Bir satırın sağ tıklayıp **çözme**.
 
     Duraklatma simgesi iş parçacığı artık dondurulmuş olup olmadığını gösteren bu satırda kaybolduktan.
 
-4.  Kod düzenleyicisine geçin ve tıklatın **F11**. Çözülmüş iş parçacığı çalıştırır.
+4.  Geçiş tuşuna basın ve Kod Düzenleyicisi **F11**. Çözülmüş iş parçacığı çalıştırır.
 
-    Uygulama, bazı yeni iş parçacıkları de örneği. Herhangi bir yeni iş parçacığı bayrak yok ve değil dondurulmuş dikkat edin.
+    Uygulama, bazı yeni iş parçacıkları de örneği. Herhangi bir yeni iş parçacığı bayrak yok ve donuk değil.
 
-## <a name="bkmk_follow_a_thread"></a> Tek bir iş parçacığı, koşullu kesme noktaları kullanarak izleyin
+### <a name="bkmk_follow_a_thread"></a> Koşullu kesme noktaları ile tek bir iş parçacığı izleyin
 
-Bazen, hata ayıklayıcı tek bir iş parçacığının yürütülmesini izlemek yararlı olabilir. İlginizi olmayan iş parçacıklarını dondurma tarafından bunu bir yoludur ancak bazı senaryolarda (Yineleme örneğin belirli bir hata) için diğer iş parçacıklarını dondurma olmadan tek bir iş parçacığı izleyin isteyebilirsiniz. Diğer iş parçacıklarını dondurma olmadan bir diziyi takip etmeye, ilgilendiğiniz iş parçacığı üzerinde kod parçalamak kaçınmalısınız. Bunu ayarlayarak yapabilirsiniz bir [koşullu kesme noktası](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
+Hata ayıklayıcı tek bir iş parçacığının yürütülmesini izlemek yararlı olabilir. Bunu yapmanın bir yolu, ilginizi olmayan iş parçacıklarını dondurma tarafından ' dir. Bazı senaryolarda, örneğin belirli bir hatayı yeniden oluşturmak diğer iş parçacıklarını dondurma olmadan tek bir iş parçacığı uygulamanız gerekebilir. Diğer iş parçacıklarını dondurma olmadan bir diziyi takip etmeye, ilgilendiğiniz iş parçacığı üzerinde kod parçalamak kaçınmalısınız. Bunu ayarlayarak yapabilirsiniz bir [koşullu kesme noktası](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 
-İş parçacığı adı veya iş parçacığı kimliği gibi farklı koşullar üzerinde kesme noktaları ayarlayın Yardımcı olabilecek başka bir yöntem, her bir iş parçacığı için benzersiz olacağını bildiğiniz verileri koşul ayarlamaktır. Bazı belirli veri değeri belirli herhangi bir iş parçacığı daha ilgi olduğu bir yaygın hata ayıklama senaryosuna budur.
+İş parçacığı adı veya iş parçacığı kimliği gibi farklı koşullar üzerinde kesme noktaları ayarlayın Hale gelmesi için her bir iş parçacığı benzersiz bildiğiniz verileri koşul ayarlamaya yardımcı olur. Bazı belirli veri değeri belirli herhangi bir iş parçacığı daha ilgi olduğu bir yaygın hata ayıklama senaryosuna budur.
 
-#### <a name="to-follow-a-single-thread"></a>Tek bir iş parçacığı izlemek için
+1. Daha önce oluşturduğunuz kesme noktasına sağ tıklayıp **koşullar**.
 
-1. Daha önce oluşturduğunuz kesme noktasına sağ tıklayıp seçin **koşullar**.
-
-2. İçinde **kesme noktası ayarları** penceresinde, tür `data == 5` koşullu ifade.
+2. İçinde **kesme noktası ayarları** penceresinde girin `data == 5` koşullu ifade.
 
     ![Koşullu kesme noktası](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
 
     > [!TIP]
-    > Ardından belirli bir iş parçacığında fazla ilgileniyorsanız, bir iş parçacığı adı veya iş parçacığı kimliği koşul için kullanın. Bunu yapmak için **kesme noktası ayarları** penceresinde **filtre** yerine **koşullu ifade**ve filtre ipuçlarını izleyin. Uygulama kodunuz, iş parçacığı ad (iş parçacığı kimlikleri hata ayıklayıcıyı başlattığınızda değişikliği) isteyebilirsiniz.
+    > Ardından belirli bir iş parçacığında fazla ilgileniyorsanız, bir iş parçacığı adı veya iş parçacığı kimliği koşul için kullanın. Bunu yapmak için **kesme noktası ayarları** penceresinde **filtre** yerine **koşullu ifade**ve filtre ipuçlarını izleyin. İş parçacığı kimlikleri değiştikçe hata ayıklayıcıyı başlattığınızda, uygulama kodunuz, iş parçacığı adı isteyebilirsiniz.
 
 3. Kapat **kesme noktası ayarları** penceresi.
 
-4. Yeniden başlatma tıklayın ![yeniden uygulama](../debugger/media/dbg-tour-restart.png "RestartApp") hata ayıklama oturumunuzu yeniden başlatmak için.
+4. Yeniden başlatma seçin ![yeniden uygulama](../debugger/media/dbg-tour-restart.png "RestartApp") hata ayıklama oturumunuzu yeniden başlatmak için.
 
-    Veri değişkeni 5 olduğu iş parçacığında koda çalışmamasına neden olur. Sarı ok (geçerli hata ayıklayıcı bağlamı) için konum **paralel izleme** penceresini doğrulayın.
+    Koda veri değişken değerini 5 olduğu iş parçacığında Kes. İçinde **paralel izleme** penceresi, geçerli hata ayıklayıcı bağlam gösteren sarı ok arayın.
 
-5. Artık, kod (F10) adım ve (F11) kodda ilerleyebilmeniz ve tek iş parçacığının yürütülmesini izleyin.
+5. Kod üzerinde Adım şimdi (**F10**) ve kod içine Adımlama (**F11**) ve çoklu iş parçacığının yürütülmesini izleyin.
 
     Kesme noktası koşulu iş parçacığına benzersizdir ve hata ayıklayıcı (bunları devre dışı bırakmanız gerekebilir) diğer iş parçacıkları üzerinde diğer herhangi bir kesme noktası isabet etmez sürece, kod üzerinde adım ve diğer iş parçacıkları için geçmeden kodda ilerleyebilmeniz.
 
     > [!NOTE]
     > Hata ayıklayıcı geçildiğinde, tüm iş parçacıklarının çalışacağı. Ancak, diğer iş parçacıklarından biri bir kesme noktasına denk gelir sürece diğer iş parçacıkları üzerinde koda hata ayıklayıcı kesme olmaz. 
   
-## <a name="more-about-the-multithreaded-debugging-windows"></a>Çok iş parçacıklı hata ayıklama pencereleri hakkında daha fazla bilgi 
-
-#### <a name="to-switch-to-another-thread"></a>Başka bir iş parçacığına geçiş yapmak için 
-
-- Başka bir iş parçacığına geçiş yapmak için bkz: [nasıl yapılır: başka bir iş parçacığı sırasında hata ayıklama için geçiş](../debugger/how-to-switch-to-another-thread-while-debugging.md) 
-
-#### <a name="to-learn-more-about-the-parallel-stack-and-parallel-watch-windows"></a>Paralel yığını ve paralel izleme pencereleri hakkında daha fazla bilgi için  
-  
-- Bkz: [nasıl yapılır: paralel yığını penceresini kullanma](../debugger/using-the-parallel-stacks-window.md) 
-
-- Bkz: [nasıl yapılır: paralel İzleme penceresini kullanma](../debugger/how-to-use-the-parallel-watch-window.md) 
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Nasıl Yapılır: Hata Ayıklarken Başka Bir İş Parçacığına Geçme](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+## <a name="see-also"></a>Ayrıca bkz.  
+[Çok iş parçacıklı uygulamaların hatalarını ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
+[Nasıl yapılır: Hata ayıklarken başka bir iş parçacığına geçme](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
+[Nasıl yapılır: paralel yığını penceresini kullanma](../debugger/using-the-parallel-stacks-window.md)  
+[Nasıl yapılır: Paralel İzleme penceresini kullanma](../debugger/how-to-use-the-parallel-watch-window.md)  

@@ -21,19 +21,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e6d04064b9912fbd0592fcaeffd179016ef38c1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0a11d8eceec682e37f9bf34c79980c37880bdbe6
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944547"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948497"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 
-Visual Studio başlar ve ortam değişkenlerini içine yükler **VC ++ dizinleri** iletişim kutusu.
+Visual Studio başlatılır ve ortam değişkenlerini uygulamasına yükler **VC ++ dizinleri** iletişim kutusu.
 
 > [!NOTE]
-> Bu anahtarı ile yüklenen **C++ ile masaüstü geliştirme** iş yükü.
+> Bu anahtar ile birlikte yüklenir **C++ ile masaüstü geliştirme** iş yükü.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,7 +43,7 @@ Devenv /useenv
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek Visual Studio başlatır ve ortam değişkenleri içine yükler **VC ++ dizinleri** iletişim kutusu.
+Aşağıdaki örnek, Visual Studio başlatılır ve ortam değişkenlerini uygulamasına yükler **VC ++ dizinleri** iletişim kutusu.
 
 ```shell
 Devenv.exe /useenv
@@ -51,4 +51,4 @@ Devenv.exe /useenv
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Devenv Komut Satırı Anahtarları](../../ide/reference/devenv-command-line-switches.md)
+* [Devenv komut satırı anahtarları](../../ide/reference/devenv-command-line-switches.md)

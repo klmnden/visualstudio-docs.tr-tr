@@ -14,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2c678d7304c879cf42c24de9d83704971043676
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 6df78ec4be1fc94951634b84a98e80dc1403a41b
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704154"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948744"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
-Başlatır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] güvenli modda, yalnızca varsayılan ortamı ve Hizmetleri Yükleniyor.
+Başlar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] güvenli modda, yalnızca varsayılan ortama ve Hizmetleri Yükleniyor.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,7 +31,7 @@ devenv /SafeMode
 ```
 
 ## <a name="remarks"></a>Açıklamalar
- Bu anahtar tüm üçüncü taraf VSPackages ne zaman yüklenmesini engeller [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] başlar, bu nedenle kararlı yürütme sağlama.
+ Bu anahtar, ne zaman yüklenmesini tüm üçüncü taraf VSPackages engeller [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] böylece kararlı yürütme sağlamaya başlar.
 
 ## <a name="description"></a>Açıklama
  Aşağıdaki örnek başlatır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] güvenli modda.
@@ -44,4 +44,4 @@ Devenv.exe /SafeMode
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [Devenv Komut Satırı Anahtarları](../../ide/reference/devenv-command-line-switches.md)
+- [Devenv komut satırı anahtarları](../../ide/reference/devenv-command-line-switches.md)

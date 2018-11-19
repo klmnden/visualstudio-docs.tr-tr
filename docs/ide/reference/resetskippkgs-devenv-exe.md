@@ -14,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbf7a601213c3c02cc35f2d9453eee6b1d39c43e
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 5f797b6228124da8d8a998a6647dcfd9195ea92c
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704505"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948081"
 ---
 # <a name="resetskippkgs-devenvexe"></a>/ResetSkipPkgs (devenv.exe)
-Yükleme için VSPackages sorun VSPackages yüklenmesini önlemek amacıyla isteyen kullanıcılar tarafından eklenen atlamak için tüm seçenekleri temizler ve ardından başlatır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+Yükleme sorunu VSPackages yüklenmesini önlemek amacıyla isteyen kullanıcılar tarafından Vspackages'a eklenmiş atlamak için tüm seçenekleri temizler ve ardından başlatır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,10 +31,10 @@ Devenv /ResetSkipPkgs
 ```
 
 ## <a name="remarks"></a>Açıklamalar
- SkipLoading etiketi varlığını bir VSPackage yüklenmesini devre dışı bırakır; Etiket temizleme VSPackage yüklenmesini yeniden etkinleştirir.
+ SkipLoading etiketinin varlığını VSPackage yüklenmesini devre dışı bırakır; Etiket temizleme VSPackage yükleme yeniden etkinleştirir.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, tüm SkipLoading etiketleri temizler.
+ Aşağıdaki örnek, tüm SkipLoading etiketlerini temizler.
 
 ```cmd
 Devenv.exe /ResetSkipPkgs
@@ -42,4 +42,4 @@ Devenv.exe /ResetSkipPkgs
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [Devenv Komut Satırı Anahtarları](../../ide/reference/devenv-command-line-switches.md)
+- [Devenv komut satırı anahtarları](../../ide/reference/devenv-command-line-switches.md)

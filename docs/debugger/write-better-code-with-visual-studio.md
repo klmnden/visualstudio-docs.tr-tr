@@ -1,6 +1,6 @@
 ---
 title: Visual Studio Yardım yazmanıza izin C# daha az hata koduyla
-description: Ne zaman uygulamanızda hata ayıklama için hata ayıklayıcının kullanılacağını anlama
+description: Daha az hata ile daha iyi kod yazma işlemini anlama
 ms.custom: debug-experiments
 ms.date: 10/30/2018
 ms.technology: vs-ide-debug
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b020dcf27ee9b248b460465a9b0c75cdb3b0ab6
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 914b4332a715c86aab7e1fad7d901231cbfd40c5
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51562021"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948965"
 ---
 # <a name="write-better-c-code-using-visual-studio"></a>Daha iyi yazma C# kullanarak Visual Studio code
 
@@ -166,7 +166,7 @@ Birkaç özel durum işleme için önemli ipuçları şunlardır:
     }
     ```
 
-* Uygulamanıza dahil edin bilinmeyen yöntemler için hangi özel durumları yöntemi kaldırıldığında görmek için belgelere bakın. Bu kritik bilgilerini uygun hata işleme ve uygulamanızın hatalarını ayıklamak için olabilir.
+* Bu dış veri (örneğin, bir web isteği) ile etkileşim kurma uygulamanızda expecially içeren tanınmayan işlevler için hangi özel durumları işlevi kaldırıldığında görmek için belgelere bakın. Bu kritik bilgilerini uygun hata işleme ve uygulamanızın hatalarını ayıklamak için olabilir.
 
 Örnek uygulama için düzeltme `SerializationException` içinde `GetJsonData` değiştirerek yöntemi `4o` için `40`.
 
@@ -217,7 +217,10 @@ Yeniden başlattığınızda, hata ayıklayıcı üzerinde duraklatır `assert` 
 
 ![Assert false çözümler](../debugger/media/write-better-code-using-assert.png)
 
-`assert` Hata bildirir araştırmanız gereken bir sorun yoktur. `assert` bir özel durum burada mutlaka görmüyor birçok senaryolarını kapsayan. Bu örnekte, bir özel durum kullanıcı görmez (diğer senaryolarda bir `NullReferenceException` ortaya çıkabilir) ve `null` katma değer olarak `firstname` veritabanı. (Konsol çıkışında gördüğünüz gibi) bu sorunlara daha sonra neden olabilir ve hata ayıklamak için daha zor olabilir.
+`assert` Hata bildirir araştırmanız gereken bir sorun yoktur. `assert` bir özel durum burada mutlaka görmüyor birçok senaryolarını kapsayan. Bu örnekte, bir özel durum kullanıcı görmez ve `null` katma değer olarak `firstname` kayıtların listenizde. (Konsol çıkışında gördüğünüz gibi) bu sorunlara daha sonra neden olabilir ve hata ayıklamak için daha zor olabilir.
+
+> [!NOTE]
+> Çağırdığınız bir yöntem üzerinde senaryolarda `null` değeri bir `NullReferenceException` sonuçları. Normalde kullanmaktan kaçınmak istediğiniz bir `try/catch` genel bir özel durum için diğer bir deyişle, belirli bir kitaplığı işleve bağlı olmayan bir özel durum engelleyin. Herhangi bir nesne oluşturabilecek bir `NullReferenceException`. Emin değilseniz kitaplığı işlevine yönelik belgelere bakın.
 
 Hata ayıklama işlemi sırasında belirli bir tutmak iyi `assert` bildiğiniz bir gerçek kod düzeltmesi ile değiştirmek için gereksinim duyduğunuz kadar deyimi. Kullanıcının uygulamanın derleme bir özel durum karşılaşabilirsiniz karar varsayalım. Bu durumda, uygulamanız önemli bir durum değil veya diğer bazı hataya neden emin olmak için kodu yeniden düzenleme gerekir. Bu nedenle, bu kodu düzeltmek için aşağıdaki kodu değiştirin:
 
@@ -276,7 +279,7 @@ Başka bir tür hataları, uygulamanızın yavaş çalışmasına veya çok fazl
 
 ## <a name="sample-code"></a> Örnek kod
 
-Aşağıdaki kod, Visual Studio IDE kullanarak düzeltebilirsiniz bazı hatalar var. Buradan uygulama verileri bir nesne seri durumdan çıkarılırken ve yeni veriler ile basit bir bellek içi veritabanı güncelleştirme bazı işlemden alınırken JSON veri benzetimi gerçekleştiren basit bir uygulamadır.
+Aşağıdaki kod, Visual Studio IDE kullanarak düzeltebilirsiniz bazı hatalar var. Buradan uygulama bazı işlemi, verileri bir nesne seri durumdan çıkarılırken ve yeni veriler ile basit bir liste güncelleştiriliyor alınırken JSON veri benzetimi gerçekleştiren basit bir uygulamadır.
 
 ```csharp
 using System;

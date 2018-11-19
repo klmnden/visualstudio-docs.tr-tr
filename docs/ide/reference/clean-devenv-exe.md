@@ -1,5 +1,5 @@
 ---
-title: -(Devenv.exe) Temizle
+title: -Clean (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,15 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc621aaa8bac5fa191efd9602a47977d29fa1da2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c7827f11a93e517f81eb03cfe2e33305859b4d78
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943003"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948861"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
-Tüm aracı dosyaları temizler ve çıkış dizinleri.
+Tüm ara dosyaları temizler ve çıkış dizinleri.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,27 +34,27 @@ devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
 ## <a name="arguments"></a>Arguments
  `FileName`
 
- Gerekli. Tam yol ve çözüm dosyasını veya proje dosyası adı.
+ Gerekli. Çözüm dosyası veya proje dosyası adı ve tam yolu.
 
  / Project `ProjName`
 
- İsteğe bağlı. Yol ve çözüm içinde proje dosyasının adı. Gelen göreli bir yol girin `SolutionName` klasörü proje dosyası veya projenin görünen adı veya tam yolunu ve proje dosyasının adı.
+ İsteğe bağlı. Çözüm içindeki bir proje dosyasının adı ve yolu. Göreli bir yol girebilirsiniz `SolutionName` klasör proje dosyası veya projenin görünen adı veya tam yolu ve proje dosyasının adı.
 
  / projectconfig `ProjConfigName`
 
- İsteğe bağlı. Bir proje adını derleme temizlenirken kullanılacak yapılandırma `/project` adlı.
+ İsteğe bağlı. Bir proje adını yapı temizlenirken kullanılacak yapılandırma `/project` adlı.
 
 ## <a name="remarks"></a>Açıklamalar
- Bu anahtarı ile aynı işlevi gerçekleştirir **temiz çözüm** tümleşik geliştirme ortamı (IDE) içinde menü komutu.
+ Bu anahtar ile aynı işlevi gerçekleştirir **çözümü Temizle** tümleşik geliştirme ortamında (IDE) menü komutu.
 
- Çift tırnak işaretleri boşluk dizeler alın.
+ Çift tırnak içine boşluk dizeleri alın.
 
- İlgili özet bilgileri temizler ve hatalar da dahil olmak üzere derlemeleri görüntülenebilir **komutu** penceresinde veya ile belirtilen herhangi bir günlük dosyasını `/out` geçin.
+ Özet bilgilerini temizler ve yapılar, hata da dahil olmak üzere görüntülenebilir **komut** penceresinde veya belirtilen herhangi bir günlük dosyasını `/out` geçin.
 
 ## <a name="example"></a>Örnek
  İlk örnek temizler `MySolution` çözüm dosyasında belirtilen varsayılan yapılandırma kullanarak çözümü.
 
- İkinci örnek proje temizler `CSharpConsoleApp`kullanarak `Debug` Proje yapı yapılandırması içinde `Debug` çözüm yapılandırmasını `MySolution`.
+ İkinci örnek proje temizler `CSharpConsoleApp`kullanarak `Debug` içinde proje yapı yapılandırmasını `Debug` çözüm yapılandırması `MySolution`.
 
 ```
 Devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /Clean
@@ -64,7 +64,7 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [Devenv Komut Satırı Anahtarları](../../ide/reference/devenv-command-line-switches.md)
-- [/ Yapı (devenv.exe)](../../ide/reference/build-devenv-exe.md)
+- [Devenv komut satırı anahtarları](../../ide/reference/devenv-command-line-switches.md)
+- [/ Derleme (devenv.exe)](../../ide/reference/build-devenv-exe.md)
 - [/ Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
-- [/ Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
+- [/ (Devenv.exe out)](../../ide/reference/out-devenv-exe.md)

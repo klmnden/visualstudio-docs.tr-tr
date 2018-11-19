@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da yönetilen kod için Kod Analizi
+title: Yönetilen kod için statik kod analizi
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad1b093c224e37ce53dc77472518d03f2dc8093b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 1e77955de9bb650ac262d8f9b7513c90acbd19ac
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320821"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948432"
 ---
-# <a name="overview-of-code-analysis-for-managed-code"></a>Yönetilen kod için kod çözümlemesine genel bakış
+# <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Visual Studio'da yönetilen kod için statik kod analizi genel bakış
 
-Visual Studio 2017, iki yolla yönetilen kodu analiz eder: eski ile *FxCop* Yönetilen derlemeler ve .NET derleyici platformu ile statik analiz *Çözümleyicileri*. Bu konu, FxCop statik kod analizi içerir. .NET derleyici platformu Çözümleyicileri kullanarak kodunu analiz etme hakkında daha fazla bilgi için bkz: [genel bakış, Roslyn Çözümleyicileri](../code-quality/roslyn-analyzers-overview.md).
+Visual Studio 2017 Kod Analizi yönetilen kod iki yolla gerçekleştirebilirsiniz: ile *FxCop* statik analiz Yönetilen derlemeler ve daha fazla modern *Roslyn Çözümleyicileri*. Bu konu, FxCop statik kod analizi içerir. Kod Çözümleyicileri kullanarak kodunu analiz etme hakkında daha fazla bilgi için bkz: [genel bakış, Roslyn Çözümleyicileri](../code-quality/roslyn-analyzers-overview.md).
 
 Yönetilen kod için kod analizi, yönetilen derlemeleri çözümler ve derlemeler, programlama ve Microsoft .NET Framework tasarım yönergeleri ile ortaya konan Tasarım Kuralları ihlalleri gibi bilgileri raporlar.
 

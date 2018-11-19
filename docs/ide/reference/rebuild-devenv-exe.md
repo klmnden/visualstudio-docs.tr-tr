@@ -1,5 +1,5 @@
 ---
-title: -Yeniden (devenv.exe)
+title: -Rebuild (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,15 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e462e64df90a7672efa890897b48726a0e764e6c
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: b0946137cb259386648b7b3ac2883c33f5724352
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704661"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948615"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
-Temizler ve belirtilen çözüm yapılandırması oluşturur.
+Temizler ve ardından belirtilen çözüm yapılandırması oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,30 +35,30 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
 ## <a name="arguments"></a>Arguments
  `SolnConfigName`
 
- Gerekli. Adlı çözümü yeniden oluşturmak için kullanılan çözüm yapılandırmasının adı `SolutionName`.
+ Gerekli. Adlı çözüm yeniden oluşturmak için kullanılan çözüm yapılandırması adı `SolutionName`.
 
  `SolutionName`
 
- Gerekli. Tam yol ve çözüm dosyasının adı.
+ Gerekli. Çözüm dosyasının adını ve tam yolu.
 
  / Project `ProjName`
 
- İsteğe bağlı. Yol ve çözüm içinde proje dosyasının adı. Gelen göreli bir yol girin `SolutionName` klasörü proje dosyası veya projenin görünen adı veya tam yolunu ve proje dosyasının adı.
+ İsteğe bağlı. Çözüm içindeki bir proje dosyasının adı ve yolu. Göreli bir yol girebilirsiniz `SolutionName` klasör proje dosyası veya projenin görünen adı veya tam yolu ve proje dosyasının adı.
 
  / projectconfig `ProjConfigName`
 
- İsteğe bağlı. Bir proje adını derleme yeniden oluştururken kullanılacak yapılandırma `/project` adlı.
+ İsteğe bağlı. Bir proje adını yeniden oluştururken kullanılacak yapılandırma derleme `/project` adlı.
 
 ## <a name="remarks"></a>Açıklamalar
 
--   Bu anahtarı ile aynı işlevi gerçekleştirir **çözümü yeniden derle** tümleşik geliştirme ortamı (IDE) içinde menü komutu.
+-   Bu anahtar ile aynı işlevi gerçekleştirir **çözümü yeniden derle** tümleşik geliştirme ortamında (IDE) menü komutu.
 
--   Çift tırnak işaretleri boşluk dizeler alın.
+-   Çift tırnak içine boşluk dizeleri alın.
 
--   İlgili özet bilgileri temizler ve hatalar da dahil olmak üzere derlemeleri görüntülenebilir **komutu** penceresinde veya ile belirtilen herhangi bir günlük dosyasını `/out` geçin.
+-   Özet bilgilerini temizler ve yapılar, hata da dahil olmak üzere görüntülenebilir **komut** penceresinde veya belirtilen herhangi bir günlük dosyasını `/out` geçin.
 
 ## <a name="example"></a>Örnek
- Bu örnek temizler ve projeyi yeniden oluşturur `CSharpWinApp`kullanarak `Debug` Proje yapı yapılandırması içinde `Debug` çözüm yapılandırmasını `MySolution`.
+ Bu örnekte, temizler ve projeyi oluşturur `CSharpWinApp`kullanarak `Debug` içinde proje yapı yapılandırmasını `Debug` çözüm yapılandırması `MySolution`.
 
 ```cmd
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /rebuild Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
@@ -66,7 +66,7 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [Devenv Komut Satırı Anahtarları](../../ide/reference/devenv-command-line-switches.md)
-- [/ Yapı (devenv.exe)](../../ide/reference/build-devenv-exe.md)
+- [Devenv komut satırı anahtarları](../../ide/reference/devenv-command-line-switches.md)
+- [/ Derleme (devenv.exe)](../../ide/reference/build-devenv-exe.md)
 - [/ Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)
-- [/ Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
+- [/ (Devenv.exe out)](../../ide/reference/out-devenv-exe.md)

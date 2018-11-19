@@ -1,5 +1,5 @@
 ---
-title: -(Devenv.exe) dağıtın
+title: -Deploy (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,15 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 368680321f8ff8ab908e79e075a5797ba9ecd598
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0297058fea98568551f54d8960e62f80bb35ccd7
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945122"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948887"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
-Bir çözüm oluşturma veya yeniden oluşturma sonra dağıtır. Yalnızca yönetilen kod projeler için geçerlidir.
+Bir çözüm oluşturma veya yeniden oluşturma sonra dağıtır. Yalnızca yönetilen kod projeleri için geçerlidir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,29 +34,29 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
 ## <a name="arguments"></a>Arguments
  `SolnConfigName`
 
- Gerekli. Adlı çözümü oluşturmak için kullanılan çözüm yapılandırmasının adı `SolutionName`.
+ Gerekli. Adlı çözümü derlemek için kullanılan çözüm yapılandırması adı `SolutionName`.
 
  `SolutionName`
 
- Gerekli. Tam yol ve çözüm dosyasının adı.
+ Gerekli. Çözüm dosyasının adını ve tam yolu.
 
  / Project `ProjName`
 
- İsteğe bağlı. Yol ve çözüm içinde proje dosyasının adı. Gelen göreli bir yol girin `SolutionName` klasörü proje dosyası veya projenin görünen adı veya tam yolunu ve proje dosyasının adı.
+ İsteğe bağlı. Çözüm içindeki bir proje dosyasının adı ve yolu. Göreli bir yol girebilirsiniz `SolutionName` klasör proje dosyası veya projenin görünen adı veya tam yolu ve proje dosyasının adı.
 
  / projectconfig `ProjConfigName`
 
- İsteğe bağlı. Bir proje adını derleme oluştururken kullanılacak yapılandırma `/project` adlı.
+ İsteğe bağlı. Bir proje adını derleme oluşturma sırasında kullanılacak yapılandırma `/project` adlı.
 
 ## <a name="remarks"></a>Açıklamalar
- Belirtilen proje dağıtım projesi olması gerekir. Dağıtılacak oluşturulduğunu proje geçirildiğinde belirtilen proje bir dağıtım projesi değilse, bir hata ile başarısız olur.
+ Belirtilen projeyi bir dağıtım projesi olmalıdır. Derlenen proje dağıtılacak geçirildiğinde belirtilen projeyi bir dağıtım projesi değil ise, bir hata ile başarısız olur.
 
- Çift tırnak işaretleri boşluk dizeler alın.
+ Çift tırnak içine boşluk dizeleri alın.
 
- Derlemeleri hatalar dahil olmak üzere, ilgili özet bilgileri görüntülenebilir **komutu** penceresinde veya ile belirtilen herhangi bir günlük dosyasını `/out` geçin.
+ Hataları dahil olmak üzere, derlemeler için Özet bilgiler görüntülenebilir **komut** penceresinde veya belirtilen herhangi bir günlük dosyasını `/out` geçin.
 
 ## <a name="example"></a>Örnek
- Bu örnek projesini dağıtır `CSharpConsoleApp`kullanarak `Release` Proje yapı yapılandırması içinde `Release` çözüm yapılandırmasını `MySolution`.
+ Bu örnek projesini dağıtır `CSharpConsoleApp`kullanarak `Release` içinde proje yapı yapılandırmasını `Release` çözüm yapılandırması `MySolution`.
 
 ```
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /deploy Release /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Release
@@ -64,9 +64,9 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [Devenv Komut Satırı Anahtarları](../../ide/reference/devenv-command-line-switches.md)
+- [Devenv komut satırı anahtarları](../../ide/reference/devenv-command-line-switches.md)
 - [/ Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)
-- [/ Yapı (devenv.exe)](../../ide/reference/build-devenv-exe.md)
+- [/ Derleme (devenv.exe)](../../ide/reference/build-devenv-exe.md)
 - [/ Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)
 - [/ Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
-- [/ Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
+- [/ (Devenv.exe out)](../../ide/reference/out-devenv-exe.md)

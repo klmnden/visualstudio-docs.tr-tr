@@ -1,6 +1,6 @@
 ---
 title: -ResetSettings (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 11/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,18 +14,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c3d3a6ef558b510cfde716716daf97a549fbba4
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 568a829ff10cbee535729361b7c95dd7db6814f5
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703993"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948075"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
-Visual Studio varsayılan ayarlarına geri yükler ve Visual Studio IDE otomatik olarak başlatır. Ayarları isteğe bağlı olarak belirtilen bir sıfırlar *vssettings* dosya.
+Visual Studio varsayılan ayarlarına geri yükler ve Visual Studio IDE otomatik olarak başlatır. İsteğe bağlı olarak belirtilen bir ayarları sıfırlar *vssettings* dosya.
 
-Varsayılan ayarlar, Visual Studio ilk kez başlatıldığında seçtiğiniz profili tarafından belirlenir.
+Varsayılan ayarlar, Visual Studio ilk başlatıldığında seçilen profili tarafından belirlenir.
+
+> [!TIP]
+> Tümleşik geliştirme ortamı (IDE) kullanarak ayarlarını sıfırlama hakkında bilgi edinmek için [ayarlarına](../synchronized-settings-in-visual-studio.md#reset-settings).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,11 +42,11 @@ Devenv /ResetSettings SettingsFile
 
 Dosyanın tam yolunu ve adını *vssettings* Visual Studio'ya uygulamak için dosya.
 
-Genel Geliştirme Ayarları profili geri yüklemek için kullanmak `General`.
+Genel Geliştirme Ayarları profilini geri yüklemek için kullanın `General`.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Öyle değilse `SettingsFile` belirtilmemişse, varsayılan ayarlar koleksiyonu seçmek için istenir sonraki başlatışınızda Visual Studio.
+Hayır ise `SettingsFile` belirtilirse, ayar varsayılan koleksiyonunu seçmek için istenirse sonraki Visual Studio'yu başlatın.
 
 ## <a name="example"></a>Örnek
 
@@ -53,7 +56,8 @@ Aşağıdaki komut satırını dosyasında depolanan ayarları uygular `MySettin
 Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
+- [Ayarları sıfırlama](../synchronized-settings-in-visual-studio.md#reset-settings)
 - [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md)
-- [Devenv Komut Satırı Anahtarları](../../ide/reference/devenv-command-line-switches.md)
+- [Devenv komut satırı anahtarları](../../ide/reference/devenv-command-line-switches.md)

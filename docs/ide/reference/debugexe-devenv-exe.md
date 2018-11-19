@@ -14,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07dfcbb6064d0f1043c0621534b953a5f5c63e82
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 1badcaba6f6461f6a2c6b73580d8d12c50481c2b
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704960"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948783"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
-Ayıklanacak belirtilen yürütülebilir dosyasını açar.
+Ayıklanacak belirtilen yürütülebilir dosyayı açar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,13 +35,13 @@ Devenv /debugexe ExecutableFile
 
  Gerekli. Bir .exe dosyası yolu ve dosya adı.
 
- .Exe dosyası bulunamadı veya yok, hiçbir uyarı veya hata görüntülenir ve [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] normal şekilde başlar.
+ .Exe dosyası bulunamadı veya yok, hiçbir uyarı veya hata görüntülenir ve [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] normalde başlatır.
 
 ## <a name="remarks"></a>Açıklamalar
- Aşağıdaki dizeleri `ExecutableFile` parametresi, bu dosyaya bağımsız değişken olarak geçirilir.
+ Aşağıdaki dizeleri `ExecutableFile` parametresi, o dosya için bağımsız değişken olarak geçirilir.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek dosya açılır `MyApplication.exe` hata ayıklama için.
+ Aşağıdaki örnekte dosyayı açar `MyApplication.exe` hata ayıklama.
 
 ```cmd
 Devenv.exe /debugexe MyApplication.exe
@@ -49,4 +49,4 @@ Devenv.exe /debugexe MyApplication.exe
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [Devenv Komut Satırı Anahtarları](../../ide/reference/devenv-command-line-switches.md)
+- [Devenv komut satırı anahtarları](../../ide/reference/devenv-command-line-switches.md)

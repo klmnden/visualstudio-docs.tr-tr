@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da Roslyn Çözümleyicileri
+title: Roslyn çözümleyicilerini kullanarak kod analizi
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d5836c0522ef97a634f44799934aab2750b3a45
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 620f2905e2511ed403f0d25f32fa1bfc9b1eca68
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511428"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948848"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>.NET derleyici platformu Çözümleyicileri genel bakış
 
-Visual Studio 2017, siz yazarken, C# veya Visual Basic kod çözümleme .NET derleyici platformu Çözümleyicileri yerleşik bir kümesini içerir. Bir NuGet paketi olarak Visual Studio uzantısı ya da proje başına temelinde ek Çözümleyicileri yükleyebilirsiniz. Kod stili, kod kalitesini ve Bakım, kod tasarımı ve diğer sorunları çözümleyiciler arayın.
+Visual Studio 2017, siz yazarken, C# veya Visual Basic kod çözümleme .NET derleyici platformu Çözümleyicileri yerleşik bir kümesini içerir. Kod stili, kod kalitesini ve Bakım, kod tasarımı ve diğer sorunları çözümleyiciler arayın. Bir NuGet paketi olarak Visual Studio uzantısı ya da proje başına temelinde ek Çözümleyicileri yükleyebilirsiniz.
 
 Kural ihlallerinin bir çözümleyici tarafından bulunması durumunda raporlanır Kod düzenleyicisinde hem de bir *dalgalı* sorunlu kod ve buna **hata listesi**.
 
