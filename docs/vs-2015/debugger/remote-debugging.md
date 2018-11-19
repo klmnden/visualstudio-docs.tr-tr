@@ -21,15 +21,15 @@ helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
 caps.latest.revision: 81
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61b1bc7f81ca4d6c3f313c543be23b746d56d37e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ac1bbe2cc1832d0b34706f88b4df583d117149c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812900"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799281"
 ---
 # <a name="remote-debugging"></a>Uzaktan Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,7 +166,7 @@ Uzaktan hata ayıklayıcıyı bulabilirsiniz (**msvsmon.exe**) bir bilgisayarda 
   
 4. Parola ve hesap adını ekleyin.  
   
-    Eklemeniz gerekebilir **hizmet oturum açma** bu hesap için doğru kullanıcı. (Bul **yerel güvenlik ilkesi** (secpol.msc) içinde **Başlat** sayfası veya pencere (veya türü **secpol** bir komut isteminde). Penceresi açıldığında, çift **kullanıcı hakları ataması**, ardından bulun **hizmet oturum açma** sağ bölmede. Çift tıklatın. Kullanıcı hesabına eklemek **özellikleri** penceresini açın ve **Tamam**.) Tıklayın **sonraki**.  
+    Eklemeniz gerekebilir **hizmet oturum açma** bu hesap için doğru kullanıcı. (Bul **yerel güvenlik ilkesi** (secpol.msc) içinde **Başlat** sayfası veya pencere (veya türü **secpol** bir komut isteminde). Penceresi açıldığında, çift **kullanıcı hakları ataması**, ardından bulun **hizmet oturum açma** sağ bölmede. Çift tıklatın. Kullanıcı hesabına eklemek **özellikleri** penceresini açın ve **Tamam**.) **İleri**'ye tıklayın.  
   
 5. Uzak araçların iletişim kurmak istediğiniz ağ türünü seçin. En az bir ağ türü seçilmelidir. Bilgisayarları bir etki alanına bağlıysanız, ilk öğe seçmeniz gerekir. Bilgisayar bir çalışma grubunda veya ev grubu bağlıysa, ikinci veya üçüncü öğe seçmeniz gerekir. **İleri**'ye tıklayın.  
   

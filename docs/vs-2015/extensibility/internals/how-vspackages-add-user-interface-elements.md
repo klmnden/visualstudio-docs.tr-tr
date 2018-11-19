@@ -17,12 +17,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa1ffdc982fa3f9773770957a0dbb177ad3d4156
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 88b1a71964ddae67241025dd32c1a1384c79765f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872453"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753369"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>VSPackage’ların Kullanıcı Arabirimi Öğeleri Eklemesi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -144,7 +144,7 @@ priority="0x0100" type="Menu">
 #### <a name="commands"></a>Komutlar  
  IDE için sağlanan bir komut olarak tanımlanan bir [Button öğesi](../../extensibility/button-element.md) veya [Combos öğesi](../../extensibility/combo-element.md). Bir menü veya araç çubuğu üzerinde görünmesi için komut kendi üst öğesi olarak bir grup olmalıdır.  
   
-##### <a name="buttons"></a>Düğmeleri  
+##### <a name="buttons"></a>Düğmeler  
  Düğmeler tanımlanmış `Buttons` bölümü. Tüm menü öğesi, düğme veya tek bir komut çalıştırmak için bir kullanıcı tıkladığında başka bir öğenin bir düğme olarak kabul edilir. Bazı düğme türleri listesi işlevselliği de içerebilir. Düğmeleri aynı gerekli ve menüler olan isteğe bağlı öznitelikleri vardır ve ayrıca olabilir bir [Icon öğesi](../../extensibility/icon-element.md) GUID ve IDE'de düğmesi nesnesini temsil eden bir bit eşlem Kimliğini belirtir. Düğmeler ve onların öznitelikleri hakkında daha fazla bilgi için bkz: [Buttons öğesi](../../extensibility/buttons-element.md) belgeleri.  
   
  Düğme aşağıdaki örnekte önceki örnekte grubunun bir alt öğesidir ve IDE'de menü öğesi o grubun üst menüsünde görünür.  
@@ -189,7 +189,7 @@ priority="0x0100" type="Menu">
 </Combos>  
 ```  
   
-##### <a name="bitmaps"></a>Bit eşlemler  
+##### <a name="bitmaps"></a>Bit Eşlemler  
  Bir simge ile birlikte görüntülenir komutları içermelidir bir `Icon` kendi GUID ve Kimliği'ni kullanarak bir bit eşleme başvurduğu öğesi Her bir bit eşlem olarak tanımlanan bir [Bitmap öğesi](../../extensibility/bitmap-element.md) içinde `Bitmaps` bölümü. Öznitelikler için yalnızca gerekli bir `Bitmap` definition `guid` ve `href`, kaynak dosyaya işaret eder. Bir kaynak Şerit kaynak dosyası ise, bir **usedList** özniteliktir Ayrıca Şerit kullanılabilir görüntüleri listelemek için gerekli. Daha fazla bilgi için [Bitmap öğesi](../../extensibility/bitmap-element.md) belgeleri.  
   
 ### <a name="parenting"></a>Üst öğe oluşturma  
