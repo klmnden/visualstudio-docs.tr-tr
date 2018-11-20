@@ -1,7 +1,7 @@
 ---
 title: Öğretici - 1. adım Visual Studio'da Django öğrenin
 description: Visual Studio projeleri bağlamında Django temel bilgileri bir kılavuz, Django geliştirme için Visual Studio destek gösteren sağlar.
-ms.date: 08/13/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 882a355742a100f7a105abab541832f86740afe7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 32779861c3f7b8a0bc8ea9e8a3a42d00a8226e1a
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942770"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001249"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Öğretici: Visual Studio'da Django web çerçevesi ile çalışmaya başlama
 

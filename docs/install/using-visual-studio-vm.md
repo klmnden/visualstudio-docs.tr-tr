@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b0fc5cd2a70176e671caa187358d8f940f9f11f
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: c71161c85c1a532b8c7e188f23cb00e73f78b06c
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000129"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001223"
 ---
 # <a id="top"> </a> Azure'da Visual Studio görüntüleri
 
@@ -34,14 +34,13 @@ En son ana sürümleri, Visual Studio 2017 ve Visual Studio 2015 için görünt�
 
 | Yayın sürümü                                              | Sürümler                     |     Ürün sürümü     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017: En son (sürüm 15,8)                    |    Kurumsal ve topluluk     |      Sürüm 15.8.7     |
-| Visual Studio 2017: En son Önizleme (sürüm 15.9, Preview 5) |    Kurumsal ve topluluk     |      Sürüm 15.9       |
+| Visual Studio 2017: En son (sürüm 15.9)                    |    Kurumsal ve topluluk     |      Sürüm 15.9.0     |
 |         Visual Studio 2017: RTW                              |    Kurumsal ve topluluk     |      Sürüm 15.0.18    |
 |   Visual Studio 2015: En son (Aktualizace 3)                      |    Kurumsal ve topluluk     |  Sürüm 14.0.25431.01  |
 |         Visual Studio 2015: RTW                              |             Yok.             | (Bakım için süresi doldu) |
 
 > [!NOTE]
-> Hizmet İlkesi Microsoft uygun olarak hizmet vermek için Visual Studio 2015'in yayınlanmış (RTW) sürüm süresi doldu. Visual Studio 2015 güncelleştirme 3 için Visual Studio 2015 ürün sınıfıyla sunulan yalnızca kalan sürümüdür.
+> Hizmet İlkesi Microsoft uygun olarak hizmet vermek için Visual Studio 2015'in yayınlanmış (RTW) sürüm süresi doldu. Visual Studio 2015 güncelleştirme 3 için Visual Studio 2015 ürün sınıfıyla sunulan yalnızca kalan sürümüdür.  Ayrıca, Visual Studio 2017 sürüm yayımlanan 15.9, önizleme sürümünün 15.9 dahil 'en son Önizleme' görüntüleri kullanımdan kaldırıldı.
 
 Daha fazla bilgi için [Visual Studio Hizmet İlkesi](/visualstudio/productinfo/vs-servicing-vs).
 
