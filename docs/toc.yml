@@ -593,47 +593,49 @@ items:
     - name: Projeleri ve çözümleri oluşturma ve temizleme
       href: ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md
       items:
-      - name: Derleme Çıkış Dizinini Değiştirme
+      - name: Derleme çıkış dizinini değiştirme
         href: ide/how-to-change-the-build-output-directory.md
-      - name: Ortak Çıkış Dizinine Derleme
+      - name: Ortak çıkış dizinine derleme
         href: ide/how-to-build-to-a-common-output-directory.md
-      - name: Özel Derleme Olayları Belirtme
+      - name: Özel derleme olayları belirtme
         href: ide/specifying-custom-build-events-in-visual-studio.md
-      - name: Çoklu Başlangıç Projeleri Ayarlama
+      - name: Çoklu başlangıç projeleri ayarlama
         href: ide/how-to-set-multiple-startup-projects.md
-      - name: Proje Bağımlılıklarını Oluşturma ve Kaldırma
+      - name: Proje bağımlılıklarını oluşturma ve kaldırma
         href: ide/how-to-create-and-remove-project-dependencies.md
-      - name: Derleme Günlüğü Dosyalarını Görüntüleme, Kaydetme ve Yapılandırma
+      - name: Derleme günlüğü dosyalarını görüntüleme, kaydetme ve yapılandırma
         href: ide/how-to-view-save-and-configure-build-log-files.md
-      - name: Projeleri Derlemeden Hariç Tutma
+      - name: Projeleri derlemeden hariç tutma
         href: ide/how-to-exclude-projects-from-a-build.md
-      - name: Derleyici Uyarılarını Engelleme
+      - name: Derleyici uyarılarını engelleme
         href: ide/how-to-suppress-compiler-warnings.md
-    - name: Derleme Yapılandırmaları
+    - name: Derleme eylemleri
+      href: ide/build-actions.md
+    - name: Derleme yapılandırmaları
       href: ide/understanding-build-configurations.md
       items:
-      - name: Yapılandırmaları Oluşturma ve Düzenleme
+      - name: Yapılandırmaları oluşturma ve düzenleme
         href: ide/how-to-create-and-edit-configurations.md
-      - name: Visual Basic Geliştirici Ayarları Uygulanmış Olarak Derleme Yapılandırmalarını Yönetme
+      - name: Visual Basic geliştirici ayarlarıyla derleme yapılandırmalarını yönetme
         href: ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md
-      - name: Aynı Anda Birden Fazla Yapılandırmayı Derleme
+      - name: Aynı anda birden fazla yapılandırmayı derleme
         href: ide/how-to-build-multiple-configurations-simultaneously.md
-    - name: Derleme Platformları
+    - name: Derleme platformları
       href: ide/understanding-build-platforms.md
       items:
-      - name: Projeleri Hedef Platformlar İçin Yapılandırma
+      - name: Projeleri hedef platformlar için yapılandırma
         href: ide/how-to-configure-projects-to-target-platforms.md
-      - name: Projeleri Birden Çok Platformu Hedefleyecek Şekilde Yapılandırma
+      - name: Projeleri birden çok platformu hedefleyecek şekilde yapılandırma
         href: ide/how-to-configure-projects-to-target-multiple-platforms.md
     - name: MSBuild...
       href: msbuild/msbuild.md
     - name: Azure Pipelines ve TFS...
       href: /azure/devops/pipelines/index?view=vsts
-    - name: Derleme Olayları Belirtme (Visual Basic)
+    - name: Derleme olayları belirtme (Visual Basic)
       href: ide/how-to-specify-build-events-visual-basic.md
-    - name: Derleme Olayları Belirtme (C#)
+    - name: Derleme olayları belirtme (C#)
       href: ide/how-to-specify-build-events-csharp.md
-    - name: Visual Basic'teki Uyarıları Yapılandırma
+    - name: Visual Basic'teki uyarıları yapılandırma
       href: ide/configuring-warnings-in-visual-basic.md
     - name: 'İzlenecek yol: Birden çok bilgisayarda derleme ortamı oluşturma'
       href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
@@ -1119,9 +1121,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Bizimle iletişime geçin
     href: ide/talk-to-us.md
-ms.openlocfilehash: 02c451e03d36baf818dc504c79ee5576a91c9319
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 1347181f66b898b7fe862357a6a52c3552e2cd9c
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826836"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001327"
