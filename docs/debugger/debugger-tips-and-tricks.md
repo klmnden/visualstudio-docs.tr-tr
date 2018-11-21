@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2a9acf315541dcf231d774fdb37e4c82649a4c
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 072cfcf253bb01687df20a6a0f2d41b71468b90c
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612733"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257361"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Hata Ayıklayıcı'Visual Studio için üretkenlik ipuçları ve püf noktaları öğrenin
 
@@ -145,7 +145,7 @@ Bir işlem içinde Özet görünümünü için daha fazla ayrıntı'ı seçin.
 
 Daha fazla bilgi için [ağ kullanımını](../profiling/network-usage.md).
 
-## <a name="modules_window"></a> Hata Ayıklayıcı'nın uygulamanıza nasıl ekleyen hakkında daha fazla bilgi edinin
+## <a name="modules_window"></a> Hata Ayıklayıcı'nın uygulamanıza nasıl ekleyen daha iyi tanımak (C#, C++, Visual Basic F#)
 
 Çalışan uygulamanıza eklemek için hata ayıklayıcının hata ayıklamaya çalıştığınız uygulama aynı tam derleme için oluşturulan sembol (.pdb) dosyalarını yükler. Sembol dosyalarının biraz bilgi bazı senaryolarda yararlı olabilir. Visual Studio sembol dosyalarını kullanarak nasıl yükler inceleyebilirsiniz **modülleri** penceresi.
 

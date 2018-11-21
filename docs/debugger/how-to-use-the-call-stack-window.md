@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d138e954ce01af04405b72ce50ab72a76d8cf3
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 264aeeeaac47e30eb08b4320443da15ea48a8601
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348897"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257244"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Çağrı yığınını görüntüleme ve hata ayıklayıcı çağrı yığını penceresini kullanma
 
@@ -103,7 +103,7 @@ Visual Studio Enterprise'da (yalnızca), hata ayıklama sırasında çağrı yı
 
 ![Kod haritasında çağrı yığınını Göster](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
   
-## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack"></a>Çağrı yığınındaki bir işleve ilişkin ayrıştırma kodunu görüntüleme  
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Çağrı yığınındaki bir işleve ilişkin ayrıştırma kodunu görüntülemek (C#, C++, Visual Basic F#) 
   
 -   İçinde **çağrı yığını** penceresinde, sökme kodunu istediğiniz işlevi görebilir ve sağ **Ayrıştırılımış**.    
 
@@ -111,7 +111,8 @@ Visual Studio Enterprise'da (yalnızca), hata ayıklama sırasında çağrı yı
   
 -   Sağ **çağrı yığını** penceresi ve kümesi ya da temizleyin **Göster \<**  _istediğiniz bilgilerin_ **>**.  
   
-## <a name="bkmk_symbols"></a> Bir modül için sembolleri yükle
+## <a name="bkmk_symbols"></a> Bir modüle ilişkin simgeleri yüklemek (C#, C++, Visual Basic F#)
+
 İçinde **çağrı yığını** penceresi, hata ayıklama simgelerinin şu anda yüklü olmayan kod için semboller yükleyebilirsiniz. Bu simgeler, .NET Framework veya Microsoft ortak simge sunucularından yüklenen sistem simgeleri veya hata ayıklaması yaptığınız bilgisayarda simge yolunu sembolleri olabilir.  
   
 Bkz: [belirtin, sembol (.pdb) ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).

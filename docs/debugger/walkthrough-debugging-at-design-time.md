@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1235e6360ccc5f6c0677f7ec9acb1dd85cad226
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 452b4045357db12c4b4cff1a5b6e27035cf85d82
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180184"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257205"
 ---
-# <a name="debug-at-design-time-in-visual-studio"></a>Visual Studio'da tasarım zamanında hata ayıklama
+# <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio'da tasarım zamanında hata ayıklama (C#, C++, Visual Basic F#)
 
 Tasarım sırasında kod hata ayıklaması yapmak isteyebilirniz bazı senaryolarda, uygulama çalışırken yerine zaman. Bunu kullanarak yapabilirsiniz **hemen** penceresi. Veri bağlama kodunu gibi başka bir kod ile etkileşime giren XAML kod hatası ayıklamak istiyorsanız kullanabileceğiniz **hata ayıklama** > **iliştirme** Bunu yapmak için.
   
@@ -32,7 +32,7 @@ Tasarım sırasında kod hata ayıklaması yapmak isteyebilirniz bazı senaryola
 
 Visual Studio kullanabileceğiniz **hemen** uygulamanız çalışmıyorken bir işlevi veya alt yordamı yürütmek için penceresi. İşlev veya alt yordam bir kesme noktası içeriyorsa, Visual Studio uygun noktada yürütmeyi keser. Ardından, programınızın durumunu incelemek için hata ayıklayıcı penceresini kullanabilirsiniz. Bu özellik tasarım zamanında hata ayıklama çağrılır.  
 
-Visual Basic'te, aşağıdaki örnek, ancak **hemen** penceresi C# ve C++ uygulamalarında da desteklenir.
+Aşağıdaki örnek, Visual Basic'te. Kullanım **hemen** penceresi tasarım zamanında desteklenen ayrıca C#, C++ ve F# uygulamalar.
   
 1.  Bir Visual Basic konsol uygulamasına aşağıdaki kodu yapıştırın:  
   
@@ -103,4 +103,4 @@ XAML Tasarımcısı'nda bazı bildirim temelli veri bağlama senaryoları arkas�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
- [Hata ayıklayıcı temel bilgileri](../debugger/getting-started-with-the-debugger.md)
+ [Hata Ayıklayıcısı Temel Bilgileri](../debugger/getting-started-with-the-debugger.md)

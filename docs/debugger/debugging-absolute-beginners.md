@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c10032bf12060c8c5e42f93f6596fe576adfccf
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: fa998896ad4c67bcd9e10ee50b4939bdbf915330
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612681"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257374"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Yeni başlayanlar için hata ayıklama
 
@@ -80,7 +80,7 @@ Ardından, bazı hataları olan bir uygulama oluşturacağız.
 
 1. Visual Studio yüklü ve ya da olmalıdır. **NET masaüstü geliştirme** iş yükü veya. **NET Core çoklu platform geliştirme** iş yükü yüklenmiş, oluşturmak istediğiniz hangi uygulama türü üzerinde bağlı olarak.
 
-    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
     İş yükünü yükleyin, ancak Visual Studio'a tıklayın, zaten gerektiğinde **Araçları** > **araçları ve özellikleri Al**. Visual Studio Yükleyicisi'ni başlatır. Seçin. **NET masaüstü geliştirme** (veya. **NET Core çoklu platform geliştirme**) iş yükü, ardından **Değiştir**.
 
@@ -325,11 +325,11 @@ Bölge kodu ile sorun bulduğunuzda araştırmak için hata ayıklayıcı'yı ku
 * Uygulamanızın beklediğiniz kodu yürüten olup olmadığını denetleyin. (Örneğin, örnek uygulamada, galaxy türü düzensiz için ayarlanacak switch deyimi için kod bekliyorduk, ancak uygulama kodu yazım hatası nedeniyle atlandı.)
 
 > [!TIP]
-> Bir hata ayıklayıcısı, hataları bulmanıza yardımcı olması için kullanın. Hata ayıklama aracı hataları bulabilirsiniz *sizin için* yalnızca kodunuzun amacı biliyorsa. Bu amacı, geliştirici olarak size express, bir aracı yalnızca, kodun amacı bilemez. Yazma [birim testleri](../test/improve-code-quality.md) bunu nasıl olduğu.
+> Bir hata ayıklayıcısı, hataları bulmanıza yardımcı olması için kullanın. Hata ayıklama aracı hataları bulabilirsiniz *sizin için* yalnızca kodunuzun amacı biliyorsa. Bu amacı, geliştirici olarak size express, bir aracı yalnızca, kodun amacı bilemez. Yazma [birim testleri](../test/improve-code-quality.md) bunu nasıl olduğu. 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu makalede, birkaç genel hata ayıklama kavramları öğrendiniz. Ardından, Visual Studio ile hata ayıklama öğrenmeye başlayabilirsiniz.
+Bu makalede, birkaç genel hata ayıklama kavramları öğrendiniz. Ardından, hata ayıklayıcısı hakkında daha fazla bilgi edinmeye başlayabilirsiniz.
 
 > [!div class="nextstepaction"]
 > [Visual Studio kullanarak hata ayıklamayı öğrenin](../debugger/getting-started-with-the-debugger.md)

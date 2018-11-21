@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51510d09a1840035bb96817d30aebdcd6bf3ebd7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9733569c3fa53d2c5a5905b5b893d16b4eeaf10b
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671150"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257049"
 ---
-# <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı ayrıştırılmış kodu görüntüleme
+# <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio hata ayıklayıcıda ayrıştırılmış kodu görüntüle (C#, C++, Visual Basic F#)
 
 **Ayrıştırılmış kodu** penceresi için derleyici tarafından oluşturulan talimatlara karşılık gelen derleme kodlarını gösterir. Yönetilen kodda hata ayıklama, bu derleme yönergeleri, Visual Studio derleyici tarafından oluşturulan değil Microsoft Ara dilini (MSIL) Just-ın-Time (JIT) derleyici tarafından oluşturulan yerel koda karşılık gelir.  
   
@@ -41,7 +41,7 @@ Bu özellik yalnızca adres seviyesinde hata ayıklamayı etkin olduğunda kulla
 
 Derleme yönergeleri yanı sıra **ayrıştırılmış kodu** penceresi, aşağıdaki isteğe bağlı bilgileri gösterebilir:  
   
-- Her yönerge bulunduğu bellek adresi. Yerel uygulamalar için bu gerçek bellek adresidir. Visual Basic'te C#, veya yönetilen kod, işlevin başlangıcına uzaklık olduğu.  
+- Her yönerge bulunduğu bellek adresi. Yerel uygulamalar için bu gerçek bellek adresidir. Visual Basic veya C#, işlev başından uzaklık olduğu.  
   
 - Bütünleştirilmiş kodu türetildiği kaynak kodu.  
   

@@ -21,20 +21,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df9ae5c8b525ff75985ff7aff071d2b2e86e1cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 035d66590c6b6087c56887a4eaa2b0538406f87b
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926195"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257260"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısındaki ifadeler
 Visual Studio hata ayıklayıcı bir ifade girdiğinizde çalışan ifade değerlendiricilerini içerir **QuickWatch** iletişim kutusu, **Watch** penceresinde veya **hemen** penceresi. İş yerinizde de ifade değerlendiricilerini olan **kesme noktaları** penceresi ve hata ayıklayıcı içindeki diğer pek çok yerde.
   
- Aşağıdaki bölümlerde farklı dillerde ifadeler hakkında ayrıntılar verir.  
+ Aşağıdaki bölümlerde, Visual Studio tarafından desteklenen diller için ifade değerlendirme sınırlamaları açıklanmaktadır.
   
-## <a name="f-expressions-are-not-supported"></a>F # ifadeleri desteklenmez.  
- F # ifadelerini tanınmıyor. F # kodunda hata ayıklaması yapıyorsanız, hata ayıklayıcı penceresini ya da iletişim kutusuna ifadeleri girmeden önce C# sözdizimi ifadelere Çevir gerekir. C#, F #'dan ifadeleri Çevir, C# kullandığını unutmayın mutlaka `==` kullanırken F # tek eşitlik için test etmek için işleci `=`.  
+## <a name="f-expressions-are-not-supported"></a>F#ifadeler desteklenmez.  
+ F#ifadeleri tanınmıyor. Hata ayıklaması yapıyorsanız F# kod, gereksinim, ifadelere çevrilecek C# deyimler bir hata ayıklayıcı penceresini ya da iletişim kutusuna ulaşmadan önce söz dizimi. Gelen ifadeleri Çevir ne zaman F# için C#, unutmayın mutlaka C# kullanır `==` eşitlik için test etmek için işleci sırada F# tek kullanır `=`.  
   
 ## <a name="c-expressions"></a>C++ deyimleri  
  C++ ifadeleri bağlamı işleçleri kullanma hakkında daha fazla bilgi için bkz: [bağlam işleci (C++)](../debugger/context-operator-cpp.md).  

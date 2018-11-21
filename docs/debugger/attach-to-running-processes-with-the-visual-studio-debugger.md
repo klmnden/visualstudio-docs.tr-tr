@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdd83cb8b2d20d3e3abcacbb69d50e1a68831ca4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: af44fcfe553cd720461de3a4e16986d573785c2f
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843268"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257348"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı ile çalıştırma işlemleri iliştirme
 Visual Studio hata ayıklayıcı bir yerel veya uzak bilgisayarda çalışan bir işleme ekleyebilirsiniz. İşlem çalışmaya başladıktan sonra seçin **hata ayıklama** > **iliştirme** veya basın **Ctrl**+**Alt** + **P** Visual Studio ve kullanım **iliştirme** işleme hata ayıklayıcı için iletişim kutusu.
@@ -153,7 +153,7 @@ Evrensel Windows uygulamasında (UWP) uygulamaları gibi bazı uygulama türleri
 
 C++ programında yazılan koda eklenmesi hata ayıklayıcı için kod yayması gerekir `DebuggableAttribute`. Bu, kodunuzu otomatik olarak ile bağlayarak ekleyebileceğiniz [assemblydebug](/cpp/build/reference/assemblydebug-add-debuggableattribute) bağlayıcı seçeneği.
 
-İstemci tarafı betik hata ayıklama için betik hata ayıklamasını tarayıcıda etkinleştirilmelidir. Chrome üzerinde istemci tarafı betikte hata ayıklama için seçin **Webkit** kod türü ve uygulama türüne bağlı olarak, hata ayıklama modu tarayıcı başlatmak gerekebilir (tür `chrome.exe --remote-debugging-port=9222` komut satırından).
+İstemci tarafı betik hata ayıklama için betik hata ayıklamasını tarayıcıda etkinleştirilmelidir. Chrome üzerinde istemci tarafı betikte hata ayıklama için seçin **Webkit** kod türü ve uygulama türüne bağlı olarak, tüm Chrome örneklerini kapatın ve hata ayıklama modu tarayıcı başlatmak gerekebilir (tür `chrome.exe --remote-debugging-port=9222` komut satırından).
 
 Hızlı bir şekilde çalışan bir işleme eklemek, Visual Studio'da seçmek için türü **Ctrl**+**Alt**+**P**, ilk harflerini yazın işlem adı.
 
