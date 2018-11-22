@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: baddf87e24efc48ea597e44c52abcee5e5bdcfad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6b6fd99b2b1a41d6baa3a110b2a595afb1dd7e3f
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829650"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281855"
 ---
 # <a name="save-data-back-to-the-database"></a>Verileri yeniden veritabanına kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Veri kümesi, verilerin bir bellek içi kopyasıdır. Bu verileri değiştirirse
 ## <a name="two-stage-updates"></a>İki aşamalı güncelleştirmeleri  
  Bir veri kaynağını güncelleştirme iki adımlı bir işlemdir. İlk adım, yeni kayıtlar, kayıtlar ve silinen kayıtlar ile DataSet'i güncellemek sağlamaktır. Uygulamanızı hiçbir zaman bu değişiklikleri veri kaynağına geri gönderirse, ardından güncelleştirme ile işiniz bittiğinde.  
   
- Değişiklikleri veritabanına geri göndermek, ikinci bir adım gereklidir. Verilere bağlı denetimler kullanmıyorsanız, el ile aynı TableAdapter (veya veri bağdaştırıcısı) DataSet'i doldurmak için kullanılan güncelleştirme yöntemi çağrısı vardır. Ancak, farklı bağdaştırıcıları verileri bir veri kaynağından diğerine taşımak için veya birden çok veri kaynaklarını güncelleştirmek için kullanabilirsiniz. Veri bağlama kullanmıyorsanız ve ilişkili tablolar için değişiklikleri kaydetme, el ile otomatik olarak oluşturulan TableAdapterManager sınıfın bir değişken oluşturma ve sonra onun UdpateAll yöntemini çağırın gerekir.  
+ Değişiklikleri veritabanına geri göndermek, ikinci bir adım gereklidir. Verilere bağlı denetimler kullanmıyorsanız, el ile aynı TableAdapter (veya veri bağdaştırıcısı) DataSet'i doldurmak için kullanılan güncelleştirme yöntemi çağrısı vardır. Ancak, farklı bağdaştırıcıları verileri bir veri kaynağından diğerine taşımak için veya birden çok veri kaynaklarını güncelleştirmek için kullanabilirsiniz. Veri bağlama kullanmıyorsanız ve ilişkili tablolar için değişiklikleri kaydetme, el ile otomatik olarak oluşturulan TableAdapterManager sınıfın bir değişken oluşturma ve ardından kendi UpdateAll yöntemi çağırmak zorunda.  
   
  ![Visual Basic veri kümesi güncelleştirmeleri](../data-tools/media/vbdatasetupdates.gif "vbDatasetUpdates")  
 İki aşamalı güncelleştirme işlemi ve DataRowVersion başarılı bir güncelleştirme görevi  

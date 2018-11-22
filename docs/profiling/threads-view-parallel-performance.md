@@ -1,7 +1,7 @@
 ---
-title: İş Parçacıkları görünümü (paralel performans) | Microsoft Docs
+title: İş Parçacıkları görünümü'nde eşzamanlılık görselleştiricisi | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -14,139 +14,140 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80ce83bba65affcb47a702d572d8d962f712667e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 32a40553cd3f547dfa2b5297c898fabbd9664496
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883997"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281842"
 ---
-# <a name="threads-view-parallel-performance"></a>İş Parçacıkları görünümü (paralel performans)
-**İş parçacıkları görünümü** en ayrıntılı ve zengin özellikli görünüm eşzamanlılık görselleştiricisi'ndeki (seçin **Çözümle** > **eşzamanlılık görselleştiricisi** başlatmak için Eşzamanlılık görselleştiricisi). Bu görünümü kullanarak, iş parçacığı yürütme veya eşitleme, g/ç veya diğer herhangi bir nedenden dolayı engelleme olup olmadığını belirleyebilirsiniz.  
-  
- Profil analiz sırasında tüm işletim sistemi bağlam anahtar olayları için her bir uygulama iş parçacığı eşzamanlılık görselleştiricisi inceler. Bağlam anahtarları, bunlar gibi birçok nedenden dolayı ortaya çıkabilir:  
+# <a name="threads-view-in-the-concurrency-visualizer"></a>Eşzamanlılık görselleştiricisi'ndeki iş parçacıkları görünümü
+
+**İş parçacığı** en ayrıntılı ve zengin eşzamanlılık görselleştiricisi görünümünde bir görünümdür. İçinde **iş parçacıkları** görünümü, hangi iş parçacığı bir yürütme kesimi sırasında kodu yürüten tanımlayabilir ve yürütme ya da eşitleme, g/ç veya diğer nedenlerle nedeniyle engelleyen iş parçacığı analiz edin. **İş parçacığı** raporlar da profil çağrı yığını ağacı yürütme ve iş parçacıklarının engellemesinin kaldırılması görünümü.
+
+İş parçacıkları çalıştırılıyorken, Concurrency Visualizer örnekleri toplar. Bir iş parçacığının yürütülmesi durdurulduğunda, iş parçacığı için tüm işletim sistemi bağlam anahtar olayları Görselleştirici inceler. Bağlam anahtarları nedeniyle oluşabilir:  
   
 - Bir iş parçacığı eşitleme temel nesne üzerinde engellenir.  
-  
 - İş parçacığı kuantum süresi dolar.  
-  
 - Bir iş parçacığı, engelleyici bir g/ç isteği yapar.  
+
+Eşzamanlılık görselleştiricisi iş parçacığı ve bağlam anahtar olayları kategorilere ayırır ve iyi bilinen engelleme API'leri için iş parçacığı çağrı yığınlarını arar. Alt sol konumunda etkin Göstergedeki iş parçacığı kategorileri görüntüler **iş parçacıkları** görünümü. Çoğu durumda, içerik anahtarı olayları için karşılık gelen çağrı yığınlarını inceleyerek engelleyen bir olayı kök nedenini tanımlayabilirsiniz.
+
+Çağrı yığını eşleşme yoksa, Concurrency Visualizer tarafından sağlanan bekleme nedeni kullanan [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]. Ancak, [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] kategorisi üzerinde bir uygulama ayrıntısı temel olabilir ve kullanıcının amacını yansıtmayabilir. Örneğin, [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] g/ç eşitleme yerine olarak yerel ince Okuyucu-Yazıcı kilit engellemek için bekleme nedeni bildirir.  
   
-  Bir iş parçacığı yürütme durdurulduğunda iş parçacıkları görünümü her içerik anahtarı için bir kategoriye atar. Kategorileri gösterge görünümü sol alt kısmında gösterilir. Eşzamanlılık görselleştiricisi, iş parçacığı çağrı yığınını iyi bilinen engelleme API'leri için arama yaparak içerik değiştirme olayları kategorilere ayırır. Çağrı yığını eşleşme, tarafından sağlanan bekleme nedeni yoksa [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] kullanılır. Ancak, [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] kategorisi üzerinde bir uygulama ayrıntısı temel olabilir ve kullanıcı amacı yansıtmayabilir. Örneğin, [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] yerel ince Okuyucu-Yazıcı kilit g/ç olarak eşitleme yerine engellemek için bekleme nedeni bildirir. Çoğu durumda, içerik anahtarı olayları için karşılık gelen çağrı yığınlarını inceleyerek engelleyen bir olayı kök nedenini tanımlayabilirsiniz.  
+**İş parçacığı** görünümü ayrıca iş parçacıkları arasındaki bağımlılıkları gösterir. Örneğin, bir eşitleme nesnesi üzerinde engellenen bir iş parçacığı olduğunu belirlerseniz, onu engeli kaldırılmış iş parçacığı bulabilirsiniz. Diğer tek engellemesini zaman noktasında engellemeyi kaldırma iş parçacığı için çağrı yığınını inceleyebilirsiniz.  
+
+Kullanabileceğiniz **iş parçacıkları** görüntüleyin:  
+
+- Kullanıcı Arabirimi (UI) bir uygulamanın belirli yürütme aşamaları sırasında yanıt vermiyor nedeniyle belirleyin.  
+- Eşitleme, g/ç, sayfa hataları ve diğer olayları engelleme harcadığı süre miktarını belirleyin.  
+- Sistemde yürütülen diğer işlemleri girişime derecesini keşfedin.  
+- Paralel yürütme için Yük Dengeleme sorunları belirleyin.  
+- Yetersiz ya da yok ölçeklenebilirlik nedenlerle bulun. Daha fazla mantıksal çekirdek hazır olduğunda, neden paralel bir uygulaması performansını iyileştirmez.  
+- Uygulamasındaki paralelleştirme, yardımcı olmak için eşzamanlılık derecesini anlayın.  
+- Çalışan iş parçacıkları ve kritik yürütme yollarına arasında bağımlılıklar tanımlayın.  
   
-  İş Parçacıkları görünümü ayrıca iş parçacıkları arasındaki bağımlılıkları gösterir. Örneğin, bir eşitleme nesnesi üzerinde engellenen bir iş parçacığı olduğunu belirlerseniz, onu engeli kaldırılmış iş parçacığı için bakabilirsiniz ve diğerinde engellemesini zaman noktasında iş parçacığı için çağrı yığınında etkinlik inceleyebilirsiniz.  
+## <a name="use-threads-view"></a>İş Parçacıkları görünümü kullanın 
+
+Eşzamanlılık görselleştiricisi'ni başlatmak için **Çözümle** > **eşzamanlılık görselleştiricisi**ve ardından bir seçenek, aşağıdaki gibi seçin **yeni bir işlem başlatma**. 
+
+Eşzamanlılık görselleştiricisi uygulama başlar ve siz seçene kadar bir izleme toplar **toplamasını Durdur**. Görselleştirici izlemeyi analiz eder ve izleme rapor sayfasında sonuçları görüntüler. 
+
+Seçin **iş parçacıkları** sol üst köşesinde raporu açmak için sekmesinde **iş parçacıkları** görünümü. 
+
+![İş Parçacıkları görünümü](../profiling/media/threadsviewnarrowing.png "iş parçacıkları görünümü")  
   
-  İş parçacığı çalıştırırken, Concurrency Visualizer örnekleri toplar. İş Parçacıkları görünümü'nde, hangi kod tarafından bir veya daha fazla iş parçacığı bir yürütme kesimi sırasında yürütülür analiz edebilirsiniz. Ayrıca, raporlar ve engelleme çağrı yığını ağacı yürütme profil raporları da inceleyebilirsiniz.  
+Zaman aralıkları ve Performans Analizi başlatmak için iş parçacığı seçin.  
   
-## <a name="usage"></a>Kullanım  
- İş Parçacıkları görünümü kullanabileceğiniz bazı yollar şunlardır:  
-  
--   Kullanıcı Arabirimi (UI) bir uygulamanın belirli yürütme aşamaları sırasında yanıt vermiyor neden nedeniyle belirleyin.  
-  
--   Eşitleme, g/ç, sayfa hataları ve diğer olayları engelleme harcadığı süre miktarını belirleyin.  
-  
--   Sistemde yürütülen diğer işlemleri girişime derecesini tanımlayın.  
-  
--   Paralel yürütme için Yük Dengeleme sorunları belirleyin.  
-  
--   (Daha mantıksal çekirdekler kullanılabilir olduğunda, paralel bir uygulaması performansını iyileştirmez nedeni) yetersiz ya da yok ölçeklenebilirlik nedenlerini belirleyin.  
-  
--   Uygulamasındaki paralelleştirme, yardımcı olmak için eşzamanlılık derecesini anlayın.  
-  
--   Çalışan iş parçacıkları ve kritik yürütme yollarına arasında bağımlılıklar anlayın.  
-  
-## <a name="examine-specific-time-intervals-and-threads"></a>Belirli zaman aralıkları ve iş parçacıklarını inceleyin  
- İş Parçacıkları görünümü zaman çizelgesi gösterir. Yakınlaştırma ve kaydırma belirli aralıklarla ve uygulamanızın iş parçacıklarını incelemek için zaman çizelgesi içinde. X ekseninde zaman ve y ekseninde çeşitli kanallar:  
+## <a name="timeline-analysis"></a>Zaman Çizelgesi analizi  
+
+Üst kısmında **iş parçacıkları** bir zaman çizelgesi görünümüdür. Zaman çizelgesi işlemi ve ana bilgisayarda tüm fiziksel disk cihazlarının tüm iş parçacıklarının etkinliğini gösterir. Ayrıca GPU etkinliği ve işaret olayları görüntüler.  
+
+Zaman çizelgesi üzerinde süresi x ekseni ve y ekseninde olan çeşitli kanallar:  
   
 - Sistem, bir kanalı için okuma ve yazma işlemleri için bir tane her disk için iki g/ç kanal.  
-  
 - İşlemdeki her iş parçacığı için bir kanal.  
-  
 - İzlemede işaret olayları olup olmadığına işaret kanalları. İşaret kanalları, başlangıçta bu olayları oluşturan iş parçacığı kanalları altında görünür.  
-  
 - GPU kanalları.  
   
-  İş Parçacıkları görünümü bir gösterimi aşağıda verilmiştir:  
+Başlangıçta, ana uygulama iş parçacığı ilk olarak, bu nedenle iş parçacığı, oluşturuldukları sıraya göre sıralanır. Başka bir seçeneğini **sıralama ölçütü** açılan sıralamak için başka bir ölçüte göre gibi iş parçacıkları **yürütme**. 
+
+Zaman Çizelgesi renkleri, belirli bir zamanda bir iş parçacığı durumunu gösterir. Yeşil segmentleri yürütme, kırmızı segmentleri eşitlemede engellendi, sarı segmentleri etkisiz ve mor segmentleri cihaz g/ç katılan. 
+
+Daha fazla ayrıntı görüntülemek için yakınlaştırın veya uzun bir zaman aralığı görmek için uzaklaştırmanız. Parçaları ve kategorileri hakkında ayrıntılı bilgi edinmek için gecikmeler kez başlatın ve çağrı yığını durumları grafiğine noktalarında seçin.  
+
+Paralel bir döngüden veya eş zamanlı görevleri katılan iş parçacıkları arasında iş Bakiye incelemek için zaman çizelgesi kullanın. Bir iş parçacığı diğerlerine göre daha uzun zaman alıyorsa, iş dengesiz olabilir. İş parçacıkları arasında daha eşit dağıtarak uygulamanızın performansını iyileştirebilir.  
   
-  ![İş Parçacıkları görünümü](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
-  İş Parçacıkları Görünümü  
+Yalnızca tek bir iş parçacığı bir noktada sürede yürütüyor, uygulama tam anlamıyla eşzamanlılık sistemde sürüyor değil. İş parçacığı engelleme arasındaki geçici ilişkiyi arasındaki bağımlılıkları incelemek için zaman çizelgesi grafiği kullanabilirsiniz ve engellenen iş parçacıkları. İş parçacığı yeniden düzenlemek için bir iş parçacığı seçin ve yukarı veya aşağı araç çubuğundaki simgeye. 
+
+Bu iş yaptığı değil veya kendi istatistikleri ilgisi olmayan ve raporları clog çünkü tamamen, engellenen iş parçacıkları gizleyebilirsiniz. İş parçacığı adlarını ve ardından seçerek Gizle **Seçili iş parçacıklarını Gizle** veya **hariç Seçili iş parçacıklarını Gizle** araç çubuğundaki simgeler. İş parçacıklarını Gizle tanımlamak için seçin **başına iş parçacığı özeti** bağlantı sol konumunda. Hiçbir etkinlik olmayan iş parçacıkları gizleyebilirsiniz **başına iş parçacığı özeti** grafiği. 
+
+### <a name="thread-execution-details"></a>İş parçacığı yürütme ayrıntıları  
+Bir yürütme segment hakkında daha ayrıntılı bilgi almak için zaman çizelgesi yeşil bir Segmentte bir noktası seçin. Eşzamanlılık görselleştiricisi seçili belirli noktaya yukarıda siyah şapka işareti görüntüler ve çağrı yığınını gösteren **geçerli** alt bölme sekmesi. Birden çok yürütme kesim noktalarını seçebilirsiniz.  
   
-  Başlangıçta, böylece ana uygulama iş parçacığının ilk iş parçacıkları, oluşturuldukları sıraya göre sıralanır. İş parçacıkları (örneğin, çoğu yürütme çalışma tarafından) başka bir ölçüte göre sıralamak için görünümünün sol üst köşedeki sıralama seçeneği kullanabilirsiniz.  
+>[!NOTE]
+>Eşzamanlılık görselleştiricisi kesim süresi kısa bir milisaniyeden kısa ise bir yürütme segmentine bir seçim çözmek mümkün olmayabilir.  
   
-  Sol sütun adlarını seçme ve ardından çalışma yapmadığınız bir iş parçacığı gizleyebilirsiniz **Seçili iş parçacıklarını Gizle** araç çubuğunda. Kendi istatistikleri ilgisi olmayan ve raporları clog çünkü tamamen engellenen iş parçacıklarının Gizle öneririz.  
-  
-  Ek iş parçacıklarının, etkin göstergede Gizle tanımlamak için kullanılacak **başına iş parçacığı özeti** rapor **Profil raporu** sekmesi. Bu, seçili zaman aralığı için iş parçacığı durumunu gösteren yürütülme dökümünü grafiği görüntüler. Bazı yakınlaştırma düzeylerinde bazı iş parçacıkları görüntülenmeyebilir. Böyle bir durumda elipsler sağ tarafta görüntülenir.  
-  
-  Zamanı ve bazı iş parçacıkları bir aralık içinde seçtikten sonra Performans Analizi başlayabilirsiniz.  
-  
-## <a name="analysis-tools"></a>Analiz Araçları  
- Bu bölümde, raporlar ve diğer analiz araçları açıklanmaktadır.  
+Seçili zaman aralığındaki tüm görünür iş parçacıkları için bir yürütme profili ulaşmak için **yürütme** Göstergedeki sol konumunda.  
   
 ### <a name="thread-blocking-details"></a>İş parçacığı engelleme ayrıntıları  
- Bir iş parçacığı üzerinde belirli bir bölgede engelleyen bir olayı hakkında bilgi almak için bir araç ipucunu görüntülemek için bu bölge işaretçisini. Varsa bu kategori, bölge başlangıç zamanı, engelleme süresi ve engelleme API gibi bilgileri içerir. Engelleme Bölgesi'ni seçin, yığın zaman içinde o noktadaki araç ipucunda görüntülenen bilgilerin birlikte alt bölmesinde görüntülenir. Çağrı yığını inceleyerek, iş parçacığı engelleme olayı temel nedeni belirleyebilirsiniz. Segment seçme ve geçerli sekme İnceleme ek işlem ve iş parçacığı bilgisi bulabilirsiniz.  
+Bir iş parçacığı üzerinde belirli bir bölge hakkında bilgi almak için bir araç ipucunu görüntülemek için zaman çizelgesinde o bölgenin üzerine gelin. Araç ipucu, kategori, başlangıç saati ve gecikme gibi bilgileri içerir. Zaman içinde o noktadaki çağrı yığınını görüntülemek için bir bölge seçin **geçerli** alt bölme sekmesi. Bölmesinde kategori, ayrıca gösterir, varsa API engelleme ve varsa, iş parçacığı engellemesinin kaldırılması gecikme. Çağrı yığını inceleyerek, iş parçacığı engelleme olayları temel nedenleri belirleyebilirsiniz.  
   
- Birden çok engelleme olayı yürütme yolu olabilir. Sorunlu alanları daha hızlı bulabilmeniz için bunlar engelleyen kategoriye göre inceleyebilirsiniz. Yalnızca engelleme kategorilerden birini Göstergeyi Solda seçin.  
+Bir yürütme yolu birkaç engelleyen olay olabilir. Bu engelleme kategoriye göre inceleyin ve sorun alanlarını daha hızlı bulmak için sol taraftaki Göstergedeki engelleyici bir kategori seçin.  
   
 ### <a name="dependencies-between-threads"></a>İş parçacıkları arasındaki bağımlılıkları  
- Engellenen bir iş parçacığı yapmak ve öğrenmek edebiliyordum belirleyebilirsiniz eşzamanlılık görselleştiricisi işleminizi iş parçacıkları arasındaki bağımlılıkları gösterebilirsiniz hangi başka bir iş parçacığında yürütmek etkinleştirilmiş. Hangi iş parçacığının başka bir iş parçacığını engellemesini belirlemek için ilgili engelleme segmentini seçin. Eşzamanlılık görselleştiricisi engellemeyi kaldırma iş parçacığı belirlerseniz engelleme segmentini izleyen yürütülen kesim engellemeyi kaldırma iş parçacığı arasında bir çizgi çizer. Ayrıca, **Unblocking yığın** sekmesi ilgili çağrı yığınını gösterir.  
+Eşzamanlılık görselleştiricisi engellenen bir iş parçacığı yapmak çalışıyordu ve başka bir iş parçacığında hangi yürütmek etkinleştirilmiş belirlemek için iş parçacıkları arasındaki bağımlılıkları gösterir. 
+
+Hangi iş parçacığının başka bir iş parçacığını engellemesini belirlemek için zaman çizelgesi üzerinde engelleme segmentini seçin. Eşzamanlılık görselleştiricisi engellemeyi kaldırma iş parçacığı belirlerseniz engelleme segmentini izleyen yürütülen kesim engellemeyi kaldırma iş parçacığı arasında bir çizgi çizer. Seçin **engellemeyi kaldırma yığını** alt bölmesinde ilgili çağrı yığınını görmek için sekmesinde.  
   
-### <a name="thread-execution-details"></a>İş parçacığı yürütme ayrıntıları  
- İş parçacığı zaman çizelgesi grafikte, kodun ne zaman yürütülmekte olan yeşil segmentlerini gösterir. Yürütme bölütü hakkında daha ayrıntılı bilgi edinebilirsiniz.  
+## <a name="profile-reports"></a>Profil raporları 
+Zaman çizelgesini içeren bölme grafiğidir **Profil raporu**, **geçerli**, ve **engellemeyi kaldırma yığını** rapor sekmeler. Zaman Çizelgesi ve iş parçacıkları seçimleri değiştirerek raporları otomatik olarak güncelleştirin. Güncelleştirmeleri hesaplanırken büyük izlemeler için raporlar bölmesinde geçici olarak kullanılamıyor olabilir. 
+
+### <a name="profile-report-tab"></a>Profil rapor sekmesi 
+
+**Profil raporu** iki filtreleri:
+
+- Bir filtre değeri 0 ile yüzde 99'arasında çok az zamanın nerede harcandığına çağrı ağacı girişleri filtrelemek için yazın **gürültü azaltma:** alan. 2 yüzde varsayılan değerdir. 
+- Yalnızca kodunuzun çağrı ağaçları görüntülemek için seçin **yalnızca kendi kodum** onay kutusu. Tüm çağrı ağaçları görüntülemek için onay kutusunu temizleyin.  
+
+**Profil raporu** sekmesi göstergede raporları kategorileri ve bağlantıları gösterir. Bir raporu görüntülemek için sol taraftaki girişlerden birini seçin:  
+
+- **Yürütme**  
+  **Yürütme** rapor yürütme uygulama harcanan sürenin dökümünü gösterir.  
   
- Bir yürütme Segmentte bir nokta seçtiğinizde, eşzamanlılık görselleştiricisi ilgili çağrı yığınında saat için o noktadan arar ve ardından seçili belirli noktaya yukarıda siyah şapka işareti yürütme kesimdeki görüntüler ve çağrı yığınını görüntüler  **Geçerli yığın** sekmesi. Birden çok yürütme kesim noktalarını seçebilirsiniz.  
+  Yürütme saati harcanır kod satırının bulmak için çağrı ağacı genişletin ve çağrı ağacı girdisi için kısayol menüsünden seçin **kaynağı görüntüle** veya **çağrı siteleri görünümünü**. **Kaynak görüntüleme** yürütülen kod satırını bulur. **Çağrı sitelerini görüntüle** yürütülen satırı çağıran kod satırı bulur. Yalnızca bir çağrı sitesini satır varsa, onun kodu vurgulanır. Siteleri birkaç çağırırsanız, mevcut, iletişim kutusunda, istediğiniz ve ardından seçmek **kaynağa Git**. Genellikle en iyi örnek, en çok zaman veya her ikisi de çağrı sitedeki bulunacak en kullanışlı. Daha fazla bilgi için [yürütme Profil raporu](../profiling/execution-profile-report.md).  
   
-> [!NOTE]
->  Eşzamanlılık görselleştiricisi yürütme segmentine bir seçim çözmek mümkün olmayabilir. Genellikle, kesim süresi kısa bir milisaniyeden kısa olduğunda bu gerçekleşir.  
+- **Eşitleme**  
+  **Eşitleme** rapor her çağrı yığınının kez engelleme toplam birlikte eşitleme blokları sorumlu olan çağrılarını gösterir. Daha fazla bilgi için [eşitleme zamanı](../profiling/synchronization-time.md).  
   
- Tüm Seçili zaman aralığında (görünür) iş parçacığı etkinleştirilmiş bir yürütme profili almak için seçtiğiniz **yürütme** düğmesi etkin göstergesi.  
+- **G/Ç**  
+  **G/ç** rapor birlikte her çağrı yığınının kez engelleme toplam g/ç blokları sorumlu olan çağrılarını gösterir. Daha fazla bilgi için [g/ç zamanı (iş parçacıkları görünümü)](../profiling/i-o-time-threads-view.md).  
   
-### <a name="timeline-graph"></a>Zaman Çizelgesi grafiği  
- Zaman Çizelgesi grafiği işlemini ve tüm fiziksel disk cihazlarının ana bilgisayarda tüm iş parçacıklarının etkinliğini gösterir. Ayrıca GPU etkinliği ve işaret olayları görüntüler.  Daha fazla ayrıntı görüntülemek ya da daha uzun bir zaman aralığını görüntülemek için çıkış için yakınlaştırabilirsiniz. Kategoriler, başlangıç saati, süreleri ve çağrı yığını durumları hakkında bilgi almak için grafikteki noktaları belirleyebilirsiniz.  
+- **Uyku**  
+  **Uyku** rapor her çağrı yığınının kez engelleme toplam birlikte uyku blokları sorumlu olan çağrılarını gösterir. Daha fazla bilgi için [uyku zaman](../profiling/sleep-time.md).  
   
- Zaman Çizelgesi grafikte bir renk belirli bir anda bir iş parçacığı durumunu gösterir. Örneğin, yeşil segmentleri yürütme kırmızı segmentleri eşitlemede engellendi sarı segmentleri etkisiz ve mor segmentleri cihaz g/ç bağlı. Bu görünüm, paralel bir döngüden veya eş zamanlı görevleri katılan iş parçacıkları arasında iş bakiyesini incelemek için kullanabilirsiniz. Bir iş parçacığı diğerlerine göre daha uzun zaman alıyorsa, iş dengesiz olabilir. İş parçacıkları arasında daha eşit dağıtarak programınızın performansını artırmak için bu bilgileri kullanabilirsiniz.  
+- **Bellek Yönetimi**  
+  **Bellek yönetimi** rapor bellek yönetimi blokları, her bir çağrı yığını sürelerinin engelleme toplam birlikte oluştuğu çağrıları gösterir. Aşırı disk belleği veya çöp toplama sorunlarını olan alanları belirlemek için bu bilgileri kullanın.  Daha fazla bilgi için [bellek yönetimi zamanı](../profiling/memory-management-time.md).  
   
- Yalnızca tek bir iş parçacığı yeşil (zamanda bir noktada Yürütülüyor), uygulama tam anlamıyla eşzamanlılık sistemde sürüyor değil. Zaman Çizelgesi grafiği engelleme arasındaki geçici ilişkiyi iş parçacıkları arasındaki bağımlılıkları incelemek için kullanabileceğiniz ve engellenen iş parçacıkları. İş parçacığı yeniden düzenlemek için bir iş parçacığı seçin ve araç çubuğunda yukarı veya aşağı. İş parçacıkları gizlemek için bunları seçin ve ardından **iş parçacıklarını Gizle** düğmesi.  
+- **Önalım**  
+  **Önalım** burada süreçleri sistem üzerindeki geçerli işlem etkisiz ve tek tek iş parçacıkları rapor gösterir, geçerli işlemdeki iş parçacıkları değiştirildi. Önalım için en sorumlu olan iş parçacıkları ve işlemler tanımlamak için bu bilgileri kullanabilirsiniz. Daha fazla bilgi için [Önalım zamanı](../profiling/preemption-time.md).  
   
-### <a name="profile-reports"></a>Profil raporları  
- Zaman Çizelgesi bir zaman çizelgesi profili ve çeşitli raporlar için Sekmeler içeren bir bölme grafiğidir. Raporları, iş parçacıkları görünümü değiştikçe otomatik olarak güncelleştirilir. Güncelleştirmeleri hesaplanırken raporları bölmesi büyük izlemeler için kullanılamayabilir. Her raporda iki filtre ayarlamalar vardır: gürültü azaltma ve yalnızca kendi kodum. Çağrı ağacı girişleri nerede biraz zaman harcandığını filtrelemek için gürültü azaltma kullanın. Varsayılan filtre değeri 2 yüzde olmakla birlikte yüzde 0 ' 99 yüzde olarak ayarlayabilirsiniz. Yalnızca çağrı ağacı, kodunuzda görüntülemek için seçin **yalnızca kendi kodum** onay kutusu. Tüm çağrı ağaçları görüntülemek için onay kutusunu temizleyin.  
+- **UI işleme**  
+  **UI işleme** rapor UI işleme blokları, her bir çağrı yığını sürelerinin engelleme toplam sorumlu olan çağrılarını gösterir. Daha fazla bilgi için [UI işleme zamanı](../profiling/ui-processing-time.md).  
   
-#### <a name="profile-report"></a>Profil raporu  
- Bu sekme, etkin göstergesi girişlere karşılık gelen raporlar gösterir. Bir raporu görüntülemek için girişlerden birini seçin.  
+- **Her iş parçacığı özeti**  
+  Seçin **başına iş parçacığı özeti** seçili zaman aralığı için iş parçacıklarının durumu gösteren bir grafiği görüntülemek için. Renk kodlu sütunları göster toplam zaman harcanan her bir iş parçacığı çalıştırın, engellenmiş, g/ç ve diğer durumlar. İş parçacıkları altındaki etiketlenir. Bu grafik, zaman çizelgesi graftaki yakınlaştırma düzeyi ayarla, otomatik olarak güncelleştirir. 
   
-#### <a name="current-stack"></a>Geçerli yığın  
- Bu sekme, bir iş parçacığı segmentine zaman çizelgesi grafikteki seçili noktası için çağrı yığınını gösterir. Çağrı yığınlarını, programınız için ilgili etkinlik göstermek için atılır.  
+  Bazı yakınlaştırma düzeylerinde bazı iş parçacıkları grafikte göstermeyebilir. Bu durumda, üç nokta simgesini (**...** ) sağ tarafta görüntülenir. İstediğiniz iş parçacığı görünmüyorsa, diğer iş parçacıklarını gizleyebilirsiniz. Daha fazla bilgi için [başına iş parçacığı özet raporu](../profiling/per-thread-summary-report.md).  
   
-#### <a name="unblocking-stack"></a>Yığın engellemesini kaldırma  
- Hangi iş parçacığının Seçili iş parçacığını engellemesini bakın ve hangi kod satırında **Unblocking yığın** sekmesi.  
+- **Disk işlemleri**  
+  Seçin **Disk işlemleri** süreçleri ve iş parçacıkları için geçerli işlem disk g/ç katılan göstermek için dosyaları bunlar (örneğin, bunlar yüklenen DLL'ler) dokunulan, kaç bayt okurlar ve diğer bilgiler. Özellikle işleminizi miyim/O-bağlı görünüyor zaman harcadığı sürenin erişen dosyaları yürütme sırasında değerlendirmek için bu raporu kullanabilirsiniz. Daha fazla bilgi için [Disk işlemleri raporu](../profiling/disk-operations-report-threads-view.md).  
   
-#### <a name="execution"></a>Yürütme  
- Yürütme rapor yürütme uygulama harcanan sürenin dökümünü gösterir.  
+### <a name="current-tab"></a>Geçerli sekme  
+Bu sekme, bir iş parçacığı segmentine zaman çizelgesi grafikteki seçili noktası için çağrı yığınını gösterir. Çağrı yığınlarını, uygulamanızla ilgili etkinlik göstermek için atılır.  
   
- Yürütme saati harcanır kod satırının bulmak için çağrı ağacı genişletin ve ardından çağrı ağacında giriş için kısayol menüsünden seçin **kaynağı görüntüle** veya **çağrı siteleri görünümünü**. **Kaynak görüntüleme** yürütülen kod satırını bulur. **Çağrı sitelerini görüntüle** yürütülen kod satırının çağıran kod satırı bulur. Yalnızca bir çağrı sitesi varsa, kendi kod satırı vurgulanır. Birden çok çağrı siteleri varsa, görünür ve sonra iletişim kutusunda istediğiniz seçebileceğiniz **kaynağa Git** çağrı site kodu vurgulamak için düğme. Genellikle en iyi örnek, en çok zaman veya her ikisi de çağrı sitedeki bulunacak en kullanışlı. Daha fazla bilgi için [yürütme Profil raporu](../profiling/execution-profile-report.md).  
-  
-#### <a name="synchronization"></a>Eşitleme  
- Eşitleme rapor eşitleme blokları, her bir çağrı yığını sürelerinin engelleme toplama sorumlu olan çağrılarını gösterir. Daha fazla bilgi için [eşitleme zamanı](../profiling/synchronization-time.md).  
-  
-#### <a name="io"></a>G/Ç  
- G/ç rapor g/ç blokları, her bir çağrı yığını sürelerinin engelleme toplama sorumlu olan çağrılarını gösterir. Daha fazla bilgi için [g/ç zamanı (iş parçacıkları görünümü)](../profiling/i-o-time-threads-view.md).  
-  
-#### <a name="sleep"></a>Uyku  
- Uyku rapor uyku blokları, her bir çağrı yığını sürelerinin engelleme toplama sorumlu olan çağrılarını gösterir. Daha fazla bilgi için [uyku zaman](../profiling/sleep-time.md).  
-  
-#### <a name="memory-management"></a>Bellek yönetimi  
- Bellek yönetimi raporu, bellek yönetimi blokları, her bir çağrı yığını sürelerinin engelleme toplama birlikte oluştuğu çağrıları gösterir. Aşırı disk belleği veya çöp toplama sorunlarını olan alanları belirlemek için bu bilgileri kullanabilirsiniz.  Daha fazla bilgi için [bellek yönetimi zamanı](../profiling/memory-management-time.md).  
-  
-#### <a name="preemption"></a>Önalım  
- Önalım raporu, işlemler sistem üzerindeki geçerli işlem ve geçerli işlemdeki iş parçacıkları yerine tek tek iş parçacığı burada etkisiz örnekleri gösterir. Önalım için en sorumlu olan iş parçacıkları ve işlemler tanımlamak için bu bilgileri kullanabilirsiniz. Daha fazla bilgi için [Önalım zamanı](../profiling/preemption-time.md).  
-  
-#### <a name="ui-processing"></a>UI işleme  
- UI işleme rapor blokları, her bir çağrı yığını sürelerinin engelleme toplama birlikte işleme için kullanıcı Arabirimi sorumlu olan çağrılarını gösterir. Daha fazla bilgi için [UI işleme zamanı](../profiling/ui-processing-time.md).  
-  
-#### <a name="per-thread-summary"></a>İş parçacığı özeti  
- Bu sekme bir renk kodlu sütun görünümü toplam süreyi her iş parçacığı çalıştırmasında harcanan, g/ç ve diğer Devletler engellenen gösterir. Sütunları altındaki etiketlenir. Bu sekme, zaman çizelgesi graftaki yakınlaştırma düzeyi ayarla, otomatik olarak güncelleştirilir. Bazı yakınlaştırma düzeylerinde bazı iş parçacıkları görüntülenmeyebilir. Böyle bir durumda elipsler sağ tarafta görüntülenir. İstediğiniz iş parçacığı görünmüyorsa, diğer iş parçacıklarını gizleyebilirsiniz. Daha fazla bilgi için [başına iş parçacığı özet raporu](../profiling/per-thread-summary-report.md).  
-  
-#### <a name="disk-operations"></a>Disk işlemleri  
- Bu sekme, hangi işlemlerin gösterir ve iş parçacıkları disk g/ç bunlar (örneğin, yüklenen DLL'ler) dokunulan, hangi dosyaların kaç bayt okundu, geçerli işlem ve diğer bilgileri adına söz konusu. Özellikle işleminizi g/ç gibi görünüyor, dosyaları yürütme sırasında erişirken geçen zamanın değerlendirmek için bu raporu kullanabilirsiniz. Daha fazla bilgi için [Disk işlemleri raporu](../profiling/disk-operations-report-threads-view.md).  
+### <a name="unblocking-stack-tab"></a>Engellemeyi kaldırma yığını sekmesi 
+Bu sekme, hangi iş parçacığının, seçilen iş parçacığı ve engellemeyi kaldırma çağrı yığını Engellemesi gösterir.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Eşzamanlılık görselleştiricisi](../profiling/concurrency-visualizer.md)

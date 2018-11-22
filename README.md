@@ -1,8 +1,3 @@
-## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft açık kaynak kullanım kuralları
-
-Bu proje başlamıştır [Microsoft açık kaynak kullanım şartları](https://opensource.microsoft.com/codeofconduct/).
-Daha fazla bilgi için [Kullanım Kuralları SSS](https://opensource.microsoft.com/codeofconduct/faq/) sayfasına bakın. Başka sorularınız ya da yorumlarınız varsa bunları [opencode@microsoft.com](mailto:opencode@microsoft.com) adresine gönderebilirsiniz.
-
 # <a name="visual-studio-2017-documentation"></a>Visual Studio 2017 belgeleri
 
 Hoş Geldiniz! Bu depo, iş ilerleme-Visual Studio 2017 teknik belgeler için kaynak dosyaları içerir. Konular yayımlanan [Visual Studio belge sitesine](https://docs.microsoft.com/visualstudio).
@@ -18,5 +13,9 @@ Biz, Visual Studio belgeleri geliştirmemize yardımcı olmak üzere Katkıları
 
 Bu depoda kendi klasörlerine gibi birçok özellik alanı Visual Studio'nun sahip **hata ayıklayıcı** hata ayıklama, konu başlıkları **IDE** konular Visual Studio etkileşimli geliştirme ortamında (IDE) için ve diğerleri. **/Media** her klasöründeki alt konuları resim dosyalarını içerir. [Katkıda Kılavuzu](CONTRIBUTING.md) daha fazla bilgi bulunur.
 
-Bu proje başlamıştır [Microsoft açık kaynak kullanım şartları](https://opensource.microsoft.com/codeofconduct/). Daha fazla bilgi için [Kullanım Kuralları SSS](https://opensource.microsoft.com/codeofconduct/faq/) sayfasına bakın. Başka sorularınız ya da yorumlarınız varsa bunları [opencode@microsoft.com](mailto:opencode@microsoft.com) adresine gönderebilirsiniz.
+## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft açık kaynak kullanım kuralları
+
+Bu proje başlamıştır [Microsoft açık kaynak kullanım şartları](https://opensource.microsoft.com/codeofconduct/).
+Daha fazla bilgi için [Kullanım Kuralları SSS](https://opensource.microsoft.com/codeofconduct/faq/) sayfasına bakın. Başka sorularınız ya da yorumlarınız varsa bunları [opencode@microsoft.com](mailto:opencode@microsoft.com) adresine gönderebilirsiniz.
+
 

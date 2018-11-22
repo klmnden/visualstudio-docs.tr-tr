@@ -9,12 +9,12 @@ description: Dahil edilen seçili Visual Studio abonelikleri ile Pluralsight eğ
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a384769b5d2f643a215a1a0c136fc44fd7d45e42
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 73f23b57b51b7ceb0a2d059e9d559036a721995c
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826747"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281790"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Pluralsight eğitim avantajları
 
@@ -85,7 +85,7 @@ Aşağıdaki tabloda, hangi Pluralsight abonelik avantajlarının her Visual Stu
 
 <sup>1</sup>*içerir: değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), BizSpark, MCT yazılım ve geliştirici Hizmetleri, MCT yazılım ve hizmet için Microsoft değerli Professional (MVP), bölge Yöneticisi (RD), Microsoft iş ortağı Ağı (MPN) FTE, düşünün.*
 
-<sup>2</sup> * Pluralsight avantajdır tek bir kullanım için ayrı ayrı bağlanır.  Abonelik teklifi kullanır, sonra sıfırlanmaz. 
+<sup>2</sup>*Pluralsight avantajdır tek bir kullanım için ayrı ayrı bağlanır.  Abonelik teklifi kullanır, sonra sıfırlanmaz.*
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
