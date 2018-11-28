@@ -27,23 +27,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 751ae59a5a41d22728dd31f71491ec0d9a93ea19
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 7f15ac427d3e6fd6ddf7988c82ad46ffe537d299
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220267"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389273"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Yazı Tipleri ve Renkler, Ortam, Seçenekler İletişim Kutusu
+
 **Yazı tipleri ve renkler** sayfasının **seçenekleri** iletişim kutusu, çeşitli kullanıcı arabirimi öğeleri için özel bir yazı tipi ve renk şeması tümleşik geliştirme ortamında (IDE) oluşturmanıza olanak sağlar. Bu iletişim kutusuna tıklayarak erişebilirsiniz **Araçlar / Seçenekler**seçip **ortam / yazı tipleri ve renkler**. Bu sayfa, listede görünmüyorsa, seçin **tüm ayarları göster** içinde **seçenekleri** iletişim kutusu.
 
-> [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
+Renk düzenini değişiklikler, yapmanızın oturumu sırasında etkili olmaz. Renk değişiklikleri başka bir Visual Studio örneği açma ve yaptığınız değişiklikleri uygulamak için altında beklediğiniz koşullar üretme değerlendirebilirsiniz.
 
+**Ayarlarını göster**
 
- Renk düzenini değişiklikler, yapmanızın oturumu sırasında etkili olmaz. Renk değişiklikleri başka bir Visual Studio örneği açma ve yaptığınız değişiklikleri uygulamak için altında beklediğiniz koşullar üretme değerlendirebilirsiniz.
-
- **Ayarlarını göster** yazı tipi ve renk düzenleri için değiştirebileceğiniz tüm kullanıcı arabirimi öğeleri listeler. Bu listeden bir öğeyi seçtikten sonra seçili öğe için renk ayarlarını özelleştirebilirsiniz **görüntü öğeleri**.
+Yazı tipi ve renk düzenleri değiştirebileceğiniz tüm kullanıcı arabirimi öğeleri listeler. Bu listeden bir öğeyi seçtikten sonra seçili öğe için renk ayarlarını özelleştirebilirsiniz **görüntü öğeleri**.
 
 -   **Metin Düzenleyici**
 
@@ -54,7 +53,7 @@ ms.locfileid: "50220267"
      Yazı tipi stili, boyutu ve rengi görüntü ayarları yazıcı için yapılan değişiklikler, yazdırılan belgelerde metin görünümünü etkiler.
 
     > [!NOTE]
-    >  Gerektiği gibi yazdırma, görüntü ve metin düzenleyicisindeki için farklı varsayılan yazı tipi seçebilirsiniz. Tek baytlı hem çift baytlık karakterler içeren kod yazdırırken bu yararlı olabilir.
+    > Gerektiği gibi yazdırma, görüntü ve metin düzenleyicisindeki için farklı varsayılan yazı tipi seçebilirsiniz. Tek baytlı hem çift baytlık karakterler içeren kod yazdırırken bu yararlı olabilir.
 
 -   **Deyim tamamlama**
 
@@ -73,21 +72,28 @@ ms.locfileid: "50220267"
      Yazı tipi stili, boyutu ve rengi değişiklikler, çıkış bölmeleri sahip IDE'de araç pencereleri, bu öğeyi etkileyen metin görünümünü için ayarları görüntüleyin. Örneğin, çıkış penceresine, komut penceresinde, komut penceresi, vb.
 
     > [!NOTE]
-    >  Değişiklikleri için metni **[tüm metin aracı Windows]** öğeleri etkili olmaz, yaptığınız bunları oturumu sırasında. Visual Studio'nun başka bir örneğini açarak bu tür değişiklikleri değerlendirebilirsiniz.
+    > Değişiklikleri için metni **[tüm metin aracı Windows]** öğeleri etkili olmaz, yaptığınız bunları oturumu sırasında. Visual Studio'nun başka bir örneğini açarak bu tür değişiklikleri değerlendirebilirsiniz.
 
-**Varsayılanları Kullan** yazı tipi ve renk değerleri seçili liste öğesini sıfırlar **ayarlarını göster**. **Kullanım** diğer ekran düzenleri seçim için kullanılabilir hale geldiğinde düğmesi görünür. Örneğin, yazıcı için iki düzeni seçebilirsiniz.
+**Varsayılanları Kullan**
 
-**Yazı tipi (kalın tür sabit-genişlikli yazı gösterir)** sisteminizde yüklü tüm yazı tiplerini listeler. Aşağı açılan menüyü ilk görüntülendiğinde, seçili öğe için geçerli yazı tipi **ayarlarını göster** alan vurgulanır. Yazı tipleri sabit — düzenleyicide hizalamak daha kolay olan — kalın yazı tipinde görünür.
+Yazı tipi ve renk değerleri seçili liste öğesini sıfırlar **ayarlarını göster**. **Kullanım** diğer ekran düzenleri seçim için kullanılabilir hale geldiğinde düğmesi görünür. Örneğin, yazıcı için iki düzeni seçebilirsiniz.
 
-**Boyutu** vurgulanan yazı tipi noktası kullanılabilir boyutları listeler. Yazı tipi boyutunu değiştirme, etkilediği tüm **görüntü öğeleri** için **ayarlarını göster** seçimi.
+**Yazı tipi (kalın tür sabit-genişlikli yazı gösterir)**
 
-**Görüntü öğeleri** ön ve arka plan rengi, değiştirebileceğiniz öğeler listelenir.
+Sisteminizde yüklü tüm yazı tiplerini listeler. Aşağı açılan menüyü ilk görüntülendiğinde, seçili öğe için geçerli yazı tipi **ayarlarını göster** alan vurgulanır. Yazı tipleri sabit — düzenleyicide hizalamak daha kolay olan — kalın yazı tipinde görünür.
+
+**Boyutu**
+
+Kullanılabilen listelerini vurgulanan yazı tipi boyutlarını gelin. Yazı tipi boyutunu değiştirme, etkilediği tüm **görüntü öğeleri** için **ayarlarını göster** seçimi.
+
+**Öğeleri görüntüle**
+
+Ön ve arka plan rengi değiştirebileceğiniz öğeler listelenir.
 
 > [!NOTE]
 > **Düz metin** varsayılan görünen öğedir. Özellikler bu nedenle, atanan **düz metin** diğer görüntü öğelerine atanan özellikler tarafından geçersiz kılınır. Örneğin, mavi renk atarsanız **düz metin** ve için yeşil renk **tanımlayıcısı**, tüm tanımlayıcılar yeşil renkte görünür. Bu örnekte, **tanımlayıcı** özelliklerini geçersiz kılma **düz metin** özellikleri.
 
-
- Bazı görüntü öğeleri şunlardır:
+Bazı görüntü öğeleri şunlardır:
 
 |Görüntü öğesi|Açıklama|
 |------------------|-----------------|
@@ -198,31 +204,50 @@ ms.locfileid: "50220267"
 |**XML metni**|Düz metin öğe içeriği.|
 |**XSLT anahtar sözcüğü**|XSLT öğe adları.|
 
- **Öğe ön plan** seçili öğenin ön plan için seçebileceğiniz kullanılabilir renklerin listeler **görüntü öğeleri**. Bazı öğeler ilgilidir ve bu nedenle bir ekran düzeni korumanız gerekir çünkü metin ön plan rengini değiştirme derleyici hatası, anahtar sözcük veya işleç gibi öğeler için varsayılanları de değişir.
+**Öğe ön planı**
 
- **Otomatik** öğeleri devral ön plan rengini diğer görüntü öğeleri gibi **düz metin**. Devralınan görünen öğenin rengini değiştirme bu seçeneği kullandığınızda, ilgili görüntü öğeleri de rengini otomatik olarak. Seçtiyseniz, örneğin, **otomatik** değerini **derleyici hatası** ve daha sonra rengi değişir **düz metin** kırmızı, **derleyici hatası**kırmızı renk da otomatik olarak devralır.
+Seçili öğenin ön plan için seçebileceğiniz kullanılabilir renklerin listeler **görüntü öğeleri**. Bazı öğeler ilgilidir ve bu nedenle bir ekran düzeni korumanız gerekir çünkü metin ön plan rengini değiştirme derleyici hatası, anahtar sözcük veya işleç gibi öğeler için varsayılanları de değişir.
 
- **Varsayılan** başlangıç Visual Studio öğesi ilk kez görünür rengi. Tıklayarak **Varsayılanlar kullan** düğme için bu renk sıfırlar.
+**Otomatik**
 
- **Özel** görünen öğeler listesinde seçili öğe için özel bir renk ayarlamanızı izin vermek için renk iletişim kutusu görüntüler.
+Öğeleri devral ön plan rengini diğer görüntü öğeleri gibi **düz metin**. Devralınan görünen öğenin rengini değiştirme bu seçeneği kullandığınızda, ilgili görüntü öğeleri de rengini otomatik olarak. Seçtiyseniz, örneğin, **otomatik** değerini **derleyici hatası** ve daha sonra rengi değişir **düz metin** kırmızı, **derleyici hatası**kırmızı renk da otomatik olarak devralır.
+
+**Default**
+
+Öğesi ilk kez Visual Studio'yu başlattığınızda görünen renk. Tıklayarak **Varsayılanlar kullan** düğme için bu renk sıfırlar.
+
+**Özel**
+
+Görüntü öğeleri listesinde seçili öğe için özel bir renk ayarlamanızı izin vermek için renk iletişim kutusu görüntüler.
 
 > [!NOTE]
 > Renk ayarlarını bilgisayar ekranınızın tarafından özel renkler tanımlama yeteneğiniz sınırlı olabilir. Örneğin, bilgisayar, 256 renkleri görüntülemek için ayarlanır ve özel bir renk seçin **renk** iletişim kutusu, IDE varsayılan olarak en yakın kullanılabilir **temel renk** ve görüntüler, siyah renk **Renk** Önizleme kutusu.
 
+**Öğe arka planı**
 
- **Öğe arka plan** seçili öğe için bir arka plan rengi içinden seçebileceğiniz bir renk paletini sağlar **görüntü öğeleri**. Bazı öğeler ilgilidir ve bu nedenle bir ekran düzeni korumanız gerekir çünkü metin arka plan rengini değiştirme derleyici hatası, anahtar sözcük veya işleç gibi öğeler için varsayılanları de değişir.
+Seçili öğe için bir arka plan rengi içinden seçebileceğiniz bir renk paletini sağlar **görüntü öğeleri**. Bazı öğeler ilgilidir ve bu nedenle bir ekran düzeni korumanız gerekir çünkü metin arka plan rengini değiştirme derleyici hatası, anahtar sözcük veya işleç gibi öğeler için varsayılanları de değişir.
 
- **Otomatik** öğeleri devral arka plan rengi diğer görüntü öğeleri gibi **düz metin**. Devralınan görünen öğenin rengini değiştirme bu seçeneği kullandığınızda, ilgili görüntü öğeleri de rengini otomatik olarak. Seçtiyseniz, örneğin, **otomatik** değerini **derleyici hatası** ve daha sonra rengi değişir **düz metin** kırmızı, **derleyici hatası**kırmızı renk da otomatik olarak devralır.
+**Otomatik**
 
- **Varsayılan** başlangıç Visual Studio öğesi ilk kez görünür rengi. Tıklayarak **Varsayılanlar kullan** düğme için bu renk sıfırlar.
+Öğeleri devral arka plan rengi diğer görüntü öğeleri gibi **düz metin**. Devralınan görünen öğenin rengini değiştirme bu seçeneği kullandığınızda, ilgili görüntü öğeleri de rengini otomatik olarak. Seçtiyseniz, örneğin, **otomatik** değerini **derleyici hatası** ve daha sonra rengi değişir **düz metin** kırmızı, **derleyici hatası**kırmızı renk da otomatik olarak devralır.
 
- **Özel** görünen öğeler listesinde seçili öğe için özel bir renk ayarlamanızı izin vermek için renk iletişim kutusu görüntüler.
+**Default**
 
- **Kalın** metnini görüntülemek için bu seçeneği seçili **görüntü öğeleri** kalın metin. Kalın metin, düzenleyicide tanımlamak kolaydır.
+Öğesi ilk kez Visual Studio'yu başlattığınızda görünen renk. Tıklayarak **Varsayılanlar kullan** düğme için bu renk sıfırlar.
 
- **Örnek** yazı tipi stili, boyut ve renk şeması örneği görüntüler **ayarlarını göster** ve **görüntü öğeleri** seçili. Farklı biçimlendirme seçenekleri ile denerken sonuçlarını önizlemek için bu kutuyu kullanabilirsiniz.
+**Özel**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+Görüntü öğeleri listesinde seçili öğe için özel bir renk ayarlamanızı izin vermek için renk iletişim kutusu görüntüler.
+
+**Kalın**
+
+Metni görüntülemek için bu seçeneği seçili **görüntü öğeleri** kalın metin. Kalın metin, düzenleyicide tanımlamak kolaydır.
+
+**Örnek**
+
+Yazı tipi stili, boyut ve renk şeması örneği görüntüler **ayarlarını göster** ve **görüntü öğeleri** seçili. Farklı biçimlendirme seçenekleri ile denerken sonuçlarını önizlemek için bu kutuyu kullanabilirsiniz.
+
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Ortam Seçenekleri İletişim Kutusu](../../ide/reference/environment-options-dialog-box.md)
 - [Seçenekler İletişim Kutusu](../../ide/reference/options-dialog-box-visual-studio.md)

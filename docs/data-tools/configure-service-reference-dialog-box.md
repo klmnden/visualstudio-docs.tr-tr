@@ -16,19 +16,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: daa18ea2716972daa1429580ad0b2f5be5afe76c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f0cb2737356813a9b637d7f16e9d5cda704c022a
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854084"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389506"
 ---
-# <a name="configure-service-reference-dialog-box"></a>Hizmet Başvurusu Yapılandırma İletişim Kutusu
+# <a name="configure-service-reference-dialog-box"></a>Hizmet Başvurusu Yapılandır iletişim kutusu
 
 **Hizmet başvurusu yapılandırma** iletişim kutusu Windows Communication Foundation (WCF) hizmetlerini davranışını yapılandırmanıza olanak sağlar.
-
-> [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
 
 Erişim için **hizmet başvurusu yapılandırma** iletişim kutusunda sağ tıklatıp hizmeti başvurusunun **Çözüm Gezgini** ve **hizmet başvurusu Yapılandır**. İletişim kutusunu tıklatarak da erişebilirsiniz **Gelişmiş** düğmesine **hizmet Başvurusu Ekle iletişim kutusunu**.
 
@@ -104,7 +101,7 @@ Erişim için **hizmet başvurusu yapılandırma** iletişim kutusunda sağ tık
 
 > [!NOTE]
 > Bu seçenek yalnızca 2.0 sürümünü hedefleyen projeler için kullanılması gereken [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
-> 
+>
 > [!NOTE]
 > **Web başvurusu Ekle'yi** düğmesi kullanılabilir yalnızca zaman **hizmet başvurusu yapılandırma** gelen iletişim kutusu görüntülenir **hizmet Başvurusu Ekle iletişim kutusunu**.
 

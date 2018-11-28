@@ -1,7 +1,7 @@
 ---
 title: Visual Studio hata ayıklayıcıda kesme noktaları kullanma | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 02/07/2018
+ms.date: 10/15/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd522a5f5ff39814df3526843ae7d03578f92e86
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 15fa2172aab62d6b6f6ffcd21186b28f336ead4e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826849"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389143"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcıda kesme noktaları kullanma
 Kesme noktaları, geliştirici araç kutusundaki en önemli hata ayıklama tekniklerinden biridir. Hata ayıklayıcı yürütme duraklatmak istediğiniz yere kesme noktalarını ayarlayın. Örneğin, belirli bir kesme noktası çağrı yığınına bakın veya kod değişkenleri durumunu görmek isteyebilirsiniz. Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) bu makalede geçmeden önce.
@@ -50,6 +50,8 @@ Kesme noktaları, geliştirici araç kutusundaki en önemli hata ayıklama tekni
  Herhangi bir yürütülebilir kod satırında bir kesme noktası ayarlayabilirsiniz. Örneğin, aşağıdaki C# kodunda, size bir kesme noktası Değişken bildiriminde ayarlayabilirsiniz `for` döngü ya da herhangi bir kod içinde `for` döngü. Ad alanı veya sınıf bildirimlerinde ya da yöntem imzası bir kesme noktası ayarlanamıyor.  
 
  Kaynak kodunda bir kesme noktası ayarlamak için bir kod satırının yanındaki en sol kenar boşluğunda tıklayın. Çizgi ve ENTER tuşuna de seçebilirsiniz **F9**seçin **hata ayıklama** > **iki durumlu kesme noktası**, veya sağ tıklayıp **kesmenoktası**  >  **Kesme noktası Ekle**. Kesme noktası sol kenar boşluğunda kırmızı bir nokta olarak görünür.  
+
+İçinde C# kod, kesme noktası ve geçerli yürütme satırları otomatik olarak vurgulanır. C++ kodu için kesme noktası geçerli satır ve seçerek vurgulamayı kapatabilirsiniz **Araçları** (veya **hata ayıklama**) > **seçenekleri**  >   **Hata ayıklama** >  **kesme noktaları ve geçerli deyim (yalnızca C++) için tüm kaynak satırını Vurgula**. 
   
  ![Bir kesme noktası ayarlamak](../debugger/media/basicbreakpoint.png "temel kesme noktası")  
   

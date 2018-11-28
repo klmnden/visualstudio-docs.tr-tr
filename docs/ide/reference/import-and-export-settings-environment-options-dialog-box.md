@@ -12,17 +12,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 567a7f0eeb0fcf68d37dc38a484c3a8db15f3c40
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fbdb15d5f6bc10d203924272fa6239a12df460d4
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942532"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388786"
 ---
 # <a name="import-and-export-settings-environment-options-dialog-box"></a>İçeri ve Dışarı Aktarma Ayarları, Ortam, Seçenekler İletişim Kutusu
 
-Kullanıcı ayarları dosyanız kaydedildiği ve bir takım ayarları dosyası kullanılıp kullanılmayacağını belirtmek için bu sayfayı kullanın. Ayarları hakkında daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
+Kullanıcı ayarları dosyanızın kaydedildiği ve takım ayarlar dosyası kullanılıp kullanılmayacağını belirtmek için bu sayfayı kullanın. Ayarları hakkında daha fazla bilgi için bkz. [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
 
-### <a name="see-also"></a>Ayrıca Bkz.
+### <a name="see-also"></a>Ayrıca bkz.
 
 - [Ortam Seçenekleri İletişim Kutusu](../../ide/reference/environment-options-dialog-box.md)

@@ -20,12 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e23a023b3e37b9c4f3869bfa699ffee1f44caffa
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: fef30f836ab27cd7a67d85a04254be0018d5b33e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750818"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388744"
 ---
 # <a name="handle-a-concurrency-exception"></a>Bir eşzamanlılık özel durumunu işleme
 
@@ -64,9 +64,6 @@ Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını 
     3. T-SQL betiği sorgu düzenleyiciye yapıştırın ve ardından **yürütme** düğmesi.
 
        Kısa bir süre sonra sorgu çalışmayı tamamladıktan ve Northwind veritabanı oluşturulur.
-
-> [!NOTE]
-> İletişim kutuları ve menü komutları gördüğünüz Yardım menüsünde açıklanana etkin ayarlarınıza ve kullandığınız sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma
 
@@ -109,7 +106,7 @@ Ardından, adlı bir veri kümesi oluşturma **NorthwindDataSet**:
 
 Bu bölümde, oluşturduğunuz bir <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> sürükleyerek **müşteriler** öğesini **veri kaynakları** Windows formunuza penceresi.
 
-1. Üzerinde **veri** menüsünde seçin **veri kaynaklarını Göster** açmak için **veri kaynakları penceresi**.
+1. Açmak için **veri kaynakları** penceresi, **veri** menüsünde seçin **veri kaynaklarını Göster**.
 
 2. İçinde **veri kaynakları** penceresini genişletin **NorthwindDataSet** düğümüne tıklayın ve ardından **müşteriler** tablo.
 

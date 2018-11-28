@@ -22,19 +22,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 160d008425cc1c82fb8be26e7a6be9b3be82e999
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e43d118a5fcfe00a8eb6eaa7f34a17ff1f6a4be
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908437"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389221"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Bir veri kümesinin içine XML verileri okuma
 
 ADO.NET ile XML verileri çalışmak için basit yöntemler sağlar. Bu kılavuzda, bir veri kümesine XML veri yükleyen bir Windows uygulaması oluşturun. Veri kümesi ardından görüntülenen bir <xref:System.Windows.Forms.DataGridView> denetimi. Son olarak, bir XML Şeması XML dosyasının içeriğine göre metin kutusunda görüntülenir.
-
-> [!NOTE]
-> İletişim kutuları ve menü komutları Yardım menüsünde açıklanana etkin ayarlarınıza veya sürüm bağlı olarak değişebilir gördüğünüz kullandığınız. Ayarlarınızı değiştirmek için **Araçları** menüsünde **içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma
 

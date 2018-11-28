@@ -18,19 +18,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ab871d07a8519fa6850ad3d1743a7cd1d0fa110
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 041b3c5d0a67d590bc409c21dd53d5d162b0a0b9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672491"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389269"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Seçenekler, Metin Düzenleyici, C#, IntelliSense
 
 Kullanım **IntelliSense** için IntelliSense'in davranışını etkileyen ayarları değiştirmek için seçenekler sayfası C#. Bu seçenekler sayfası erişmek için kendi seçtikleri **Araçları** > **seçenekleri**ve ardından **metin düzenleyici**  >  **C#**  >  **IntelliSense**.
-
-> [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
 
 **IntelliSense** seçenekleri sayfasında aşağıdaki seçenekleri içerir:
 
@@ -86,7 +83,7 @@ Kullanım **IntelliSense** için IntelliSense'in davranışını etkileyen ayarl
 
 ## <a name="show-name-suggestions"></a>Adı önerileri göster
 
-   Otomatik nesne adı tamamlama, yakın zamanda seçtiğiniz üyeler için gerçekleştirir. 
+Otomatik nesne adı tamamlama, yakın zamanda seçtiğiniz üyeler için gerçekleştirir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

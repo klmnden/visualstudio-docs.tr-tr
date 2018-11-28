@@ -13,21 +13,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9cf1cde04a45df47627b8b8bf9a0fad7b9bef0c4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c4ffef0b1b76f453048ff20e3cbada0b8a591c65
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673882"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388838"
 ---
 # <a name="options-text-editor-cc-view"></a>Seçenekler, metin düzenleyici, C/C++, görüntüleme
 
 C veya C++ ortamında programlama yaparken Kod Düzenleyicisi'nın varsayılan davranışını değiştirmek için bu özellik sayfalarını kullanın.
 
 Bu özellik sayfasına erişmek için kendi seçtikleri **Araçları** > **seçenekleri** genişletin **metin düzenleyici**, ardından **C/C++** seçin **Görünümü**.
-
-> [!NOTE]
-> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Bkz: [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="code-squiggles"></a>Kod dalgalı çizgiler
 
@@ -49,7 +46,7 @@ Etkinleştirmek veya hangi metin düzenleyicisi kod dalgalı çizgiler C ve C++ 
 
 - **Açıklama görevlerini Listele** - tarama VS belirteçleri için açık kaynak dosyalarını ve bunları görev listesi penceresinde rapor.
 
-- **Eşleşen belirteçleri vurgulayın** - imleç nerede konumlandırılmış eşleşen bağları veya sözdizimlerini kapsayan Vurgu. 
+- **Eşleşen belirteçleri vurgulayın** - imleç nerede konumlandırılmış eşleşen bağları veya sözdizimlerini kapsayan Vurgu.
 
 ## <a name="outlining"></a>Anahat Oluşturma
 

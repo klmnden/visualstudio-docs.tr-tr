@@ -9,12 +9,12 @@ description: Dahil edilen seçili Visual Studio abonelikleri ile Pluralsight eğ
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 73f23b57b51b7ceb0a2d059e9d559036a721995c
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+ms.openlocfilehash: c39b7e052f3e978530dbc093767fabde4172d8e2
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281790"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389117"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Pluralsight eğitim avantajları
 
@@ -26,7 +26,7 @@ Aşağıdaki tabloda, hangi Pluralsight abonelik avantajlarının her Visual Stu
 
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
-1. Aboneliğinizi etkinleştirmek için bağlanmak [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) tıklayın **kodunu Al** profesyonel geliştirme bölümünde bulunan Pluralsight avantajı kutucuğa bağlantı.
+1. Aboneliğinizi etkinleştirmek için bağlanmak [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) tıklayın **alma kodu** profesyonel geliştirme bölümünde bulunan Pluralsight avantajı kutucuğa bağlantı.
    > [!div class="mx-imgBorder"]
    > ![Pluralsight avantajına kutucuğu](_img/vs-pluralsight/vs-pluralsight-3month-tile.png)
    > 
@@ -39,11 +39,7 @@ Aşağıdaki tabloda, hangi Pluralsight abonelik avantajlarının her Visual Stu
    > [!div class="mx-imgBorder"]
    > ![Pluralsight avantajına etkinleştir](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
-3. Pluralsight sayfasına eklenmiştir. Bu avantajı için Visual Studio aboneliğinizle yönlendirilirsiniz.  Bu örnekte Biz Visual Studio Dev Essentials üyeliği ile sağlanan avantajı etkinleştirmeniz gerekir. Tıklayın **avantajınızı etkinleştirin**.
-   > [!div class="mx-imgBorder"]
-   > ![Pluralsight VSDE giriş sayfası](_img/vs-pluralsight/vs-pluralsight-vsde-landing.png)
-
-4. Etkinleştirme sayfasında:
+3. Pluralsight sayfasına eklenmiştir. Bu avantajı için Visual Studio aboneliğinizle yönlendirilirsiniz.  
    - Form üzerinde istenen kişi bilgilerini sağlayın
    - Kullanım ve gizlilik ilkesi koşullarını kabul etmek için onay kutusuna tıklayın
    - Tıklayın **kabul ediyorum, etkinleştirme avantajı**.

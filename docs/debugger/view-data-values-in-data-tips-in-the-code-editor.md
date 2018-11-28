@@ -1,7 +1,7 @@
 ---
 title: Görüntüleme veri değerlerini DataTips Kod Düzenleyicisi'nde | Microsoft Docs
 ms.custom: ''
-ms.date: 07/14/2017
+ms.date: 11/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,127 +19,116 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afb318c8aa327345b3cd76ee16b718db1e0386aa
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: c473faf449176b38d4505675b1060618344db0d6
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826771"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388166"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Kod Düzenleyicisi'nde veri değerlerini görüntüleme datatips
-DataTips, hata ayıklama sırasında programınızdaki değişkenleri hakkında daha fazla bilgi görüntülemek için kullanışlı bir yol sağlar. DataTips, sadece kesme modunda ve yalnızca yürütme geçerli kapsamdaki değişkenler çalışın. Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [daha iyi yazma C# Visual Studio kullanarak kod](../debugger/write-better-code-with-visual-studio.md) ve [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) bu makalede geçmeden önce.
-  
-### <a name="to-display-a-datatip"></a>Bir DataTip görüntülemek için  
-  
-1. Bir kesme noktası ayarlayın ve hata ayıklamayı Başlat (basın **F5**).
 
-2. Hata ayıklayıcısında duraklatıldıktan olduğunda, geçerli kapsamdaki herhangi bir değişken üzerinde fare işaretçisi yerleştirin.
-  
-     Bir DataTip görünür.
-  
-3.  Fare işaretçisi kaldırdığınızda DataTip kaybolur. Açık kalması DataTip sabitlemek için tıklayın **kaynağına PIN** simgesi veya bir değişken üzerinde sağ tıklatın ardından **kaynağına PIN**.
+DataTips, hata ayıklama sırasında uygulamanızda değişkenleri hakkında daha fazla bilgi görüntülemek için kullanışlı bir yoludur. 
 
-    ![Bir veri ipucunda sabitleme](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
+Bu hata ayıklama ilk kez ise, okumak isteyebilirsiniz [daha iyi yazma C# Visual Studio kullanarak kod](../debugger/write-better-code-with-visual-studio.md) ve [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) önce bu makaleyi okuyun.
+  
+## <a name="work-with-datatips"></a>DataTips ile çalışma
 
-    > [!NOTE]
-    > Veri ipuçları, her zaman yürütmesi askıya alınır ve imleç değil geldiği yerde bağlamında değerlendirilir. Geçerli bağlam içinde bir değişken olarak aynı ada sahip başka bir işlev bir değişkende üzerine gelin, diğer işlev değişkenin değeri geçerli bağlamda değişkeninin değeri olarak görüntülenir.
+Veri ipuçlarını ve yalnızca yürütme geçerli kapsamdaki değişkenler yalnızca kesme modunda görüntülenir.
+
+### <a name="display-a-datatip"></a>Bir DataTip görüntüleme  
   
-### <a name="to-unpin-a-datatip-and-make-it-float"></a>Bir DataTip kaldırın ve kolaylaştırmak için Kaydır  
+1. Kodunuzda bir kesme noktası ayarlayın ve tuşuna basarak hata ayıklamayı Başlat **F5** veya seçerek **hata ayıklama** > **hata ayıklamayı Başlat**.
   
--   Sabitlenmiş bir DataTip içinde tıklayın **kaynağından Unpın** simgesi.  
+1. Kesme noktasında durdurulduğu zaman geçerli kapsamdaki herhangi bir değişken üzerine gelin. Adı ve geçerli bir değişkenin değerini gösteren bir DataTip görünür.
+
+### <a name="make-a-datatip-transparent"></a>Bir DataTip saydam hale getirme  
+
+Bir DataTip sırada DataTip içinde bunun altındaki kodu görmek için saydam hale getirmek için basın **Ctrl**. Basılı sürece DataTip saydam kalır **Ctrl** anahtarı. Bu sabitlenmiş veya kayan DataTips için çalışmaz.  
+### <a name="pin-a-datatip"></a>PIN bir DataTip
+
+Açık kalması bir DataTip sabitlemek için Raptiye seçin **kaynağına PIN** simgesi. 
+
+![Bir DataTip sabitleme](../debugger/media/dbg-tips-data-tips-pinned.png "bir DataTip sabitleme")
+
+Sabitlenmiş bir DataTip kod penceresi sürükleyerek taşıyabilirsiniz. Cilt payını DataTip sabitlenmiş satırın yanındaki Raptiye simgesi görünür. 
+
+>[!NOTE]
+>DataTips, burada yürütmesi askıya alınır bağlamı, değil geçerli imleç veya DataTip konumu her zaman değerlendirilir. Geçerli bağlam değişkeninin değerini, geçerli bağlamda bir değişken olarak aynı ada sahip başka bir işlev bir değişkende üzerine gelin, görüntülenir.
   
-     Raptiye simgesini sabitlenmemiş konuma değişir. DataTip artık açık pencerelerin kayar. Hata ayıklama oturumu sona erdiğinde kayan DataTip kapatır.  
+### <a name="unpin-a-datatip-from-source"></a>Bir DataTip kaynaktan Ayır
+
+Sabitlenmiş bir DataTip kaydırmak için DataTip getirin ve bağlam menüsünden Raptiye simgesini seçin. 
+
+Sabitlenmemiş konuma Raptiye simgesi değiştirir ve DataTip artık gezinen veya tüm açık pencereleri sürüklenerek değiştirilebilir. Kayan DataTips, hata ayıklama oturumu bittiğinde kapatın.  
   
-### <a name="to-repin-a-floating-datatip"></a>Kayan bir DataTip Görselden için  
+### <a name="repin-a-datatip"></a>Bir DataTip Görselden  
   
--   Bir DataTip içinde Raptiye simgesine tıklayın.  
+Kayan bir DataTip kaynağına Görselden için Kod Düzenleyicisi'nde üzerine gelin ve Raptiye simgesini seçin. Raptiye simgesi sabitlenmiş konumuna değiştirir ve DataTip yalnızca kod penceresine yeniden sabitlenir. 
+
+Bir kaynak kodu olmayan pencere üzerinde bir DataTip kayan noktalı Raptiye simgesi kullanılamıyor ve DataTip repinned. Raptiye simgesi erişmek için sürükleyerek veya kod Pencere odağı vermek için kod düzenleyicisi penceresi DataTip döndürür. 
   
-     Raptiye simgesini sabitlenmiş konumuna değiştirir. Kaynak penceresi dışında DataTip ise Raptiye simgesini devre dışıdır ve DataTip sabitlenemez.  
+### <a name="close-a-datatip"></a>Bir DataTip kapatın  
   
-### <a name="to-close-a-datatip"></a>Bir DataTip kapatmak için  
+Bir DataTip kapatmak için DataTip gelin ve kapatma seçin (**x**) bağlam menüsünden simgesi.  
   
--   Fare işaretçisini bir DataTip üzerinde getirin ve ardından **Kapat** simgesi.  
+### <a name="close-all-datatips"></a>Tüm veri ipuçlarını Kapat  
   
-### <a name="to-close-all-datatips"></a>Tüm veri ipuçlarını kapatmak için  
+Tüm veri ipuçlarını üzerinde kapatmak için **hata ayıklama** menüsünde **Temizle tüm veri ipuçlarını**.  
   
--   Üzerinde **hata ayıklama** menüsünde tıklatın **Temizle tüm veri ipuçlarını**.  
+### <a name="close-all-datatips-for-a-specific-file"></a>Belirli bir dosya için tüm veri ipuçlarını Kapat  
   
-### <a name="to-close-all-datatips-for-a-specific-file"></a>Belirli bir dosya için tüm veri ipuçlarını kapatmak için  
-  
--   Üzerinde **hata ayıklama** menüsünde tıklatın **Temizle tüm veri ipuçlarını sabitlenmiş için** *dosya*.  
+Tüm veri ipuçlarını için belirli bir dosya çubuğunda kapatmak için **hata ayıklama** menüsünde **Temizle tüm veri ipuçlarını sabitlenmiş için \<Filename >**.  
   
 ## <a name="expand-and-edit-information"></a>Genişletin ve bilgilerini Düzenle  
- DataTips, bir dizi, yapı veya üyelerini görüntülemek için bir nesne genişletmek için kullanabilirsiniz. Bir DataTip değişkeninden değerini de düzenleyebilirsiniz.  
+DataTips, bir dizi, yapı veya üyelerini görüntülemek için bir nesne genişletmek için kullanabilirsiniz. Bir DataTip değişkeninden değerini de düzenleyebilirsiniz.  
   
-#### <a name="to-expand-a-variable-to-see-its-elements"></a>Bir değişken öğeleri görmek için genişletin  
-  
--   Fare işaretçisini bir DataTip içinde yerleştirin **+** değişken adından önce gelen oturum.  
-  
-    Öğeleri ağaç biçiminde göstermek için değişkeni genişletir.
+### <a name="expand-a-variable"></a>Bir değişkeni genişletin
 
-    ![Bir veri ipucunda görüntülemek](../debugger/media/dbg-tour-data-tips.gif "bir veri ipucunda görüntüleyin")
-  
-    Değişken genişletildiğinde klavyenizde yukarı ve aşağı taşımak için ok tuşlarını kullanabilirsiniz. Alternatif olarak, fare kullanabilirsiniz.  
-  
-#### <a name="to-edit-the-value-of-a-variable-using-a-datatip"></a>Bir DataTip kullanarak bir değişkenin değerini düzenlemek için  
-  
-1.  Bir DataTip içinde değere tıklayın. Bu salt okunur değerleri için devre dışıdır.  
-  
-2.  Yeni bir değer yazın ve ENTER tuşuna basın.  
-  
-## <a name="making-a-datatip-transparent"></a>Bir DataTip saydam hale getirme  
- Bir DataTip kod görmek istiyorsanız, DataTip geçici olarak saydam olarak yapabilirsiniz. Bu sabitlenmiş veya kayan DataTips için geçerli değildir.  
-  
-#### <a name="to-make-a-datatip-transparent"></a>Bir DataTip saydam yapmak için  
-  
--   Bir DataTip içinde CTRL tuşuna basın.  
-  
-     CTRL tuşunu basılı tutun sürece DataTip saydam olarak kalır.  
-  
+Bir nesne öğeleri görmek için bir DataTip içinde genişletmek için Genişlet oklar öğeleri ağaç formunda görüntülenecek öğe adları önce üzerine gelin. Sabitlenmiş bir DataTip için seçin **+** değişkeni önce adlandırın ve ardından ağacı genişletin. 
+
+![Bir DataTip genişletin](../debugger/media/dbg-tour-data-tips.png "bir DataTip genişletin")
+
+Genişletilmiş görünümde yukarı ve aşağı taşımak için klavye üzerinde fareyi veya ok tuşlarını kullanabilirsiniz. 
+
+Ayrıca, üzerine gelip Raptiye simgelerine seçerek sabitlenmiş DataTip genişletilmiş olan öğelerle sabitleyebilirsiniz. Ağaç daraltılmış sonra öğeleri daha sonra sabitlenmiş DataTip içinde görünür. 
+
+### <a name="edit-the-value-of-a-variable"></a>Bir değişkenin değerini Düzenle
+
+Bir değişken veya DataTip öğesinde değerini düzenlemek için değer, yeni bir değer yazın ve ENTER tuşuna seçin **Enter**. Seçimi için salt okunur değerleri devre dışı bırakıldı.  
+
 ## <a name="visualize-complex-data-types"></a>Karmaşık veri türleri görselleştirin  
- Bir değişken adı bir veya daha fazla bir DataTip içinde bir Büyüteç simgesinin yanında, [görselleştiriciler](../debugger/create-custom-visualizers-of-data.md), gibi [dize görselleştiriciler](../debugger/string-visualizer-dialog-box.md), söz konusu veri türündeki değişkenler için kullanılabilir. Görselleştirici, genellikle grafik daha anlamlı bir şekilde bilgileri görüntülemek için kullanabilirsiniz.
+
+Bir veya daha fazla yanında bir değişken veya öğesi bir DataTip içinde bir Büyüteç simgesi anlamına gelir [görselleştiriciler](../debugger/create-custom-visualizers-of-data.md), gibi [metin görselleştiricisi](../debugger/string-visualizer-dialog-box.md), değişken için kullanılabilir. Görselleştiriciler, bazen grafik daha anlamlı bir şekilde bilgi görüntüler.
   
-#### <a name="to-view-the-contents-of-a-variable-using-a-visualizer"></a>Görselleştirici kullanarak değişkenlerin içeriğini görüntülemek için  
-  
--   Büyüteç simgesine tıklayarak ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Görselleştirici simgesi") veri türü için varsayılan Görselleştirici'ı seçin.  
-  
-     veya  
-  
-     Veri türü için uygun görselleştiriciler bir listesinden seçmek için Görselleştirici yanındaki açılır oka tıklayın.  
-  
-     Görselleştirici bilgileri görüntüler.  
-  
-## <a name="add-information-to-a-watch-window"></a>İzle penceresine bilgilerini ekleyin  
- Bir liste görünümünde bir değişken izlemek devam etmek istiyorsanız, bir değişkene ekleyebilirsiniz **Watch** bir DataTip penceresinde.  
-  
-#### <a name="to-add-a-variable-to-the-watch-window"></a>İzle penceresine bir değişken eklemek için  
-  
--   Bir DataTip sağ tıklayın ve ardından **Gözcü Ekle**.  
-  
-     Değişken eklenir **Watch** penceresi. Birden çok destekleyen bir sürüm kullanıyorsanız **Watch** windows, değişkenin eklendiği **Watch 1.**  
+Veri türü için varsayılan görselleştiricisi'ni kullanarak öğeyi görüntülemek için büyüteç simgesini ![Görselleştirici simgesi](../debugger/media/dbg-tips-visualizer-icon.png "Görselleştirici simgesi"). Görselleştiriciler veri türü için bir listesinden seçmek için Büyüteç simgesinin yanındaki oku seçin.  
+
+## <a name="add-a-variable-to-a-watch-window"></a>Bir Gözcü penceresi için bir değişken Ekle  
+
+Bir değişken izlemek devam etmek istiyorsanız, bunu ekleyebilirsiniz bir **Watch** bir DataTip penceresinde. DataTip içinde değişkeni sağ tıklatın ve seçin **Gözcü Ekle**. 
+
+Değişken görünür **Watch** penceresi. Birden fazla Visual Studio sürümünüzü destekleyip desteklemediğini **Watch** değişken penceresinde görünür **Watch 1**. 
   
 ## <a name="import-and-export-datatips"></a>İçeri aktarma ve veri ipuçlarını Dışarı Aktar  
- Bir iş arkadaşınızla paylaşılabilir veya bir metin düzenleyicisi kullanarak düzenlenebilir bir XML dosyasına veri ipuçlarını dışarı aktarabilirsiniz.  
+
+DataTips paylaşabilir veya bir metin düzenleyicisi kullanarak Düzenle bir XML dosyasına dışarı aktarabilirsiniz. Ayrıca, alınan veya düzenlediğiniz bir DataTip XML dosyasını içeri aktarabilirsiniz. 
   
-#### <a name="to-export-datatips"></a>Veri ipuçlarını dışarı aktarmak için  
+**Veri ipuçlarını dışarı aktarmak için:** 
   
-1.  Hata Ayıklama menüsünde **veri ipuçlarını dışarı aktar**.  
+1. Seçin **hata ayıklama** > **veri ipuçlarını dışarı aktar**.  
+   
+1. İçinde **veri ipuçlarını dışarı aktar** iletişim kutusunda, XML dosyasını, dosya için bir ad yazın konumuna gidin ve ardından **Kaydet**.  
   
-     **Veri ipuçlarını dışarı aktar** iletişim kutusu görüntülenir.  
+**Veri ipuçlarını içeri aktarmak için:** 
   
-2.  XML dosyasını, dosyasında için bir ad yazın istediğiniz konuma gitmek için standart dosya teknikleri kullanın **dosya adı** kutusuna ve ardından **Tamam**.  
-  
-#### <a name="to-import-datatips"></a>Veri ipuçlarını içeri aktarmak için  
-  
-1.  Hata Ayıklama menüsünde **alma DataTips**.  
-  
-     **Alma DataTips** iletişim kutusu görüntülenir.  
-  
-2.  İletişim kutusunu açıp istediğiniz XML dosyasını bulmak için kullanın **Tamam**.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+1. Seçin **hata ayıklama** > **veri ipuçlarını içeri aktar**.  
+   
+1. İçinde **alma DataTips** iletişim kutusunda, açın ve ardından istediğiniz DataTips XML dosyasını seçin **açın**.  
+
+## <a name="see-also"></a>Ayrıca bkz.  
  [Hata ayıklıyor?](../debugger/what-is-debugging.md)  
  [Daha iyi yazma C# kullanarak Visual Studio code](../debugger/write-better-code-with-visual-studio.md)  
- [Hata ayıklama sırasında ilk bakış](../debugger/debugger-feature-tour.md) [hata ayıklayıcısı verilerini görüntüleme](../debugger/viewing-data-in-the-debugger.md)   
- [İzleme ve QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)   
- [Özel Görselleştirici Oluşturma](../debugger/create-custom-visualizers-of-data.md)   
+ [Hata ayıklama ilk bakış](../debugger/debugger-feature-tour.md)   
+ [Hata ayıklayıcı görünümü verileri](../debugger/viewing-data-in-the-debugger.md)   
+ [İzleme ve QuickWatch windows](../debugger/watch-and-quickwatch-windows.md)   
+ [Özel görselleştiriciler oluşturma](../debugger/create-custom-visualizers-of-data.md)   

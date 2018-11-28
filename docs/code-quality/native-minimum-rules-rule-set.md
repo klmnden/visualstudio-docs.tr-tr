@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dd0d7b14c26038c57ce175abcff383ad9de5cf3
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 9149276064b76a08705b70883bb3c2e136e23334
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43225054"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389020"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Yerel Minimum Kurallar kural kümesi
 Microsoft yerel Minimum kurallar potansiyel güvenlik boşluklarını ve Uygulama Kilitlenmesi gibi yerel, kodunuzda en kritik sorunlara odaklanır. Doğal projeleriniz için oluşturduğunuz herhangi bir özel kural kümesi bu kural kümesini içermelidir.
@@ -37,7 +37,7 @@ Microsoft yerel Minimum kurallar potansiyel güvenlik boşluklarını ve Uygulam
 |[C6270](../code-quality/c6270.md)|Biçimlendirme işlevinde kayan bağımsız değişken eksik|
 |[C6271](../code-quality/c6271.md)|Biçimlendirme işlevinde fazladan değişken|
 |[C6272](../code-quality/c6272.md)|Biçimlendirme işlevinde kayan nokta olmayan değişken|
-|[C6273](../code-quality/c6273.md)|Biçimlendirme işlevinde tamsayı olmayan Argumen|
+|[C6273](../code-quality/c6273.md)|Biçimlendirme işlevinde tamsayı olmayan değişken|
 |[C6274](../code-quality/c6274.md)|Biçimlendirme işlevinde karakter olmayan değişken|
 |[C6276](../code-quality/c6276.md)|Geçersiz dize dönüştürmesi|
 |[C6277](../code-quality/c6277.md)|Geçersiz CreateProcess çağrısı|
@@ -102,7 +102,7 @@ Microsoft yerel Minimum kurallar potansiyel güvenlik boşluklarını ve Uygulam
 |[C28215](../code-quality/c28215.md)|Typefix zaten typefix'e sahip bir parametreye uygulanamaz|
 |[C28216](../code-quality/c28216.md)|CheckReturn ek açıklaması yalnızca belirli işlev parametresi için koşul sonralarına uygulanır.|
 |[C28217](../code-quality/c28217.md)|İşlev için ek açıklama için parametre sayısı dosyada bulunanla eşleşmiyor.|
-|[C28218](../code-quality/c28218.md)|İşlev paramteer için ek açıklamanın parametresi dosyada bulunanla eşleşmiyor.|
+|[C28218](../code-quality/c28218.md)|İşlev parametresi için ek açıklamanın parametresi dosyada bulunanla eşleşmiyor.|
 |[C28219](../code-quality/c28219.md)|Ek açıklama parametresi ek açıklaması için beklenen numaralandırma üyesi|
 |[C28220](../code-quality/c28220.md)|Tamsayı ifadesi parametre ek açıklaması içinde ek açıklaması için beklenen|
 |[C28221](../code-quality/c28221.md)|AÇIKLAMADAKİ parametre için beklenen dize ifade|

@@ -13,19 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45a7cef09937181fbf6c721b8c8eca73b6351742
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 61b2e6461fb80cfd12f76a6e96ac629ce640fa89
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930550"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388773"
 ---
 # <a name="environment-options-dialog-box"></a>Ortam Seçenekleri İletişim Kutusu
+
 Sayfaları kullanabilirsiniz **ortam** klasöründe **seçenekleri** nasıl tümleşik geliştirme ortamı (IDE) belirli öğelerinin görüntülenme ve davranış ayarlamak için iletişim kutusu. Menü çubuğundan seçme, ortam sayfalarına erişebilirsiniz **Araçları**, **seçenekleri**seçip **ortam**.
-
-> [!NOTE]
-> Etkin ayarlarınıza ve kullandığınız Visual Studio sürümüne bağlı olarak, bilgisayarınızda görünen iletişim kutuları ve menü komutları Yardım'da açıklananlardan farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
-
 
 |Aşağıdakilerin nasıl yapıldığı hakkında bilgi için|Bkz. |
 | - |---------|
@@ -45,6 +42,6 @@ Sayfaları kullanabilirsiniz **ortam** klasöründe **seçenekleri** nasıl tüm
 |Görevler ve görev listeleri için seçenekleri ayarlamayı öğrenin.|[Görev Listesi, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |Sistem kaynak düzenleyicisini değiştirerek ve Internet Explorer seçeneklerini yapılandırarak varsayılan Giriş ve Arama sayfalarınızı değiştirin.|[Web Tarayıcısı, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/web-browser-environment-options-dialog-box.md)|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Seçenekler İletişim Kutusu](../../ide/reference/options-dialog-box-visual-studio.md)

@@ -1,7 +1,7 @@
 ---
 title: Hata ayıklayıcısında simge (.pdb) ve kaynak dosyaları belirtme | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 04/05/2018
+ms.date: 10/08/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c289da63a8fbc8469734e905c29edca1149e04c4
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 35eb141850770a20b78020c57868a7fb2ff3bf90
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257387"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389182"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio hata ayıklayıcısında simge (.pdb) ve kaynak dosyaları belirtin (C#, C++, Visual Basic F#)
 
@@ -182,7 +182,7 @@ Visual Studio IDE'den standart bir proje oluşturduğunuzda **hata ayıklama** y
   
   - *\<Proje > .pdb* 
     
-     *\<Proje > .pdb* dosya projenin tüm hata ayıklama bilgilerini depolar *.exe* dosya ve bulunan *\debug* alt.  *\<Proje > .pdb* bulunan tür bilgilerini değil dosya içeren işlev prototipleri dahil olmak üzere tam hata ayıklama bilgilerini *VC\<x > .pdb*. 
+    *\<Proje > .pdb* dosya projenin tüm hata ayıklama bilgilerini depolar *.exe* dosya ve bulunan *\debug* alt. *\<Proje > .pdb* bulunan tür bilgilerini değil dosya içeren işlev prototipleri dahil olmak üzere tam hata ayıklama bilgilerini *VC\<x > .pdb*. 
   
   Her iki *VC\<x > .pdb* ve  *\<Proje > .pdb* dosyaları artımlı güncelleştirmelere izin. Bağlayıcı ayrıca yolunu katıştırır *.pdb* dosyalar *.exe* veya *.dll* dosyası oluşturur.  
   

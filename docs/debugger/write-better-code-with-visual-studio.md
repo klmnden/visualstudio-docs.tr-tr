@@ -2,7 +2,7 @@
 title: Visual Studio Yardım yazmanıza izin C# daha az hata koduyla
 description: Daha az hata ile daha iyi kod yazma işlemini anlama
 ms.custom: debug-experiments
-ms.date: 10/30/2018
+ms.date: 11/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 914b4332a715c86aab7e1fad7d901231cbfd40c5
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 2c16cfdc8d554ce9bf556ea707f977989e1dab72
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948965"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389383"
 ---
-# <a name="write-better-c-code-using-visual-studio"></a>Daha iyi yazma C# kullanarak Visual Studio code
+# <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Daha iyi yazarak hataları düzeltmek C# kullanarak Visual Studio code
 
 Kodda hata ayıklama, zaman alıcı--olabilir ve bazen doðrulamayý--görev. Etkili bir şekilde hata ayıklama hakkında bilgi edinmek için zaman alır. Visual Studio gibi güçlü bir IDE işinizi çok daha kolay hale getirebilirsiniz. Bir IDE, kodunuzun daha hızlı hata ayıklama ve yalnızca, ancak daha az hata ile daha iyi kod yazma Yardım ayrıca yardımcı olabilir. Bu makalede, bir yandan, hata ayıklama işlemi bütüncül bir görünümü için kod Çözümleyicisi kullanmanın ne zaman bilirsiniz, hata ayıklayıcı ve diğer araçları kullanmak ne zaman zaman vermektir.
 

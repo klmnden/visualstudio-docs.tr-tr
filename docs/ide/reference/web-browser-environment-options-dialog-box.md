@@ -24,32 +24,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7f492c1a192f8c12418c679f498bf282859cbf3
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 56bd77bb833e0fcc7e4e6e35304387d23b7c3f52
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671891"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389451"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Web Tarayıcısı, Ortam, Seçenekler İletişim Kutusu
+
 İç Web tarayıcısı ve Internet Explorer seçeneklerini ayarlar. Bu iletişim kutusuna erişmek için tıklayın **seçenekleri** üzerinde **Araçları** menüsünü genişletin **ortam** klasörünü açın ve seçin **Web tarayıcısı**.
 
 > [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
-
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [ayarlarına](../environment-settings.md#reset-settings).
 
 > [!IMPORTANT]
 > Belirli dosyaları veya bileşenleri, Web'ten bilgisayarınızda kod yürütebilir.
 
-
 ## <a name="home-page"></a>Giriş sayfası
- IDE Web tarayıcısı açtığınızda görüntülenen sayfa ayarlar.
+
+IDE Web tarayıcısı açtığınızda görüntülenen sayfa ayarlar.
 
 ## <a name="search-page"></a>Arama sayfası
- İç Web tarayıcısı arama sayfası belirlemenizi sağlar. Bu konum, Internet Explorer'ın tümleşik geliştirme ortamı (IDE) dışında başlatılan örneği tarafından kullanılan arama sayfasından farklı olabilir.
+
+İç Web tarayıcısı arama sayfası belirlemenizi sağlar. Bu konum, Internet Explorer'ın tümleşik geliştirme ortamı (IDE) dışında başlatılan örneği tarafından kullanılan arama sayfasından farklı olabilir.
 
 ## <a name="view-source-in"></a>Kaynağı şurada görüntüle
- Düzenleyicisi'ni seçtiğinizde, bir Web sayfası açmak için kullanılan ayarlar **kaynağı görüntüle** iç Web tarayıcısından sayfasında.
+
+Düzenleyicisi'ni seçtiğinizde, bir Web sayfası açmak için kullanılan ayarlar **kaynağı görüntüle** iç Web tarayıcısından sayfasında.
 
 -   **Kaynak Düzenleyicisi** kaynakta görüntülemek için seçin [Düzenleyicisi](../../ide/writing-code-in-the-code-and-text-editor.md).
 
@@ -58,11 +60,11 @@ ms.locfileid: "50671891"
 -   **Dış düzenleyici** kaynak başka bir düzenleyicide görüntülemek için seçin. Seçtiğiniz herhangi bir düzenleyiciye Örneğin, Notepad.exe yolunu belirtin.
 
 ## <a name="internet-explorer-options"></a>Internet Explorer Seçenekleri
+
 Internet Explorer seçeneklerini değiştirmek için tıklayın **Internet Özellikleri** iletişim kutusu. Bu iletişim kutusunda yapılan değişiklikler, iç Web tarayıcısı ve Internet Explorer'ın dışında (örneğin, Başlat menüsünden) Visual Studio IDE başlatılan örneklerini etkiler.
 
 > [!NOTE]
 > Kullanım **şununla Gözat** iletişim kutusu Visual Studio iç Web tarayıcısı, tercih ettiğiniz bir tarayıcı ile değiştirin. Şununla Gözat iletişim kutusunu projenizde birini, örneğin, bir HTML dosyası sağ tıklayın veya bağlam menüsünden erişebilirsiniz.
-
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

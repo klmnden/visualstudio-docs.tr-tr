@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24a20abd4971f785261db4437a6e2f839717ab0d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b76e34ba77335c242c752c055e2560cc73141d2
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818269"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388406"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Nasıl yapılır: klavyeyi özel olarak kullanma
 
@@ -33,16 +33,15 @@ ms.locfileid: "49818269"
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gidin ve tümleşik geliştirme ortamında (IDE) kodu kolaylaştıran birçok varsayılan kısayol tuş birleşimleri sağlar. Visual Studio'da kullanılan kısayol tuşları tam bir listesi için bkz. [varsayılan klavye kısayolları](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Diğer Microsoft ürünleri için kullanılabilen klavye kısayolları hakkında daha fazla bilgi için bkz: [ http://www.microsoft.com/enable/products/keyboard.aspx ](http://go.microsoft.com/fwlink/?LinkID=40400).
 
 > [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
-
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [ayarlarına](../environment-settings.md#reset-settings).
 
 ## <a name="toolbox-controls"></a>Araç kutusu denetimleri
 
- Bir form veya klavyeyi kullanarak Tasarımcısı araç kutusu denetim ekleyebilirsiniz.
+Bir form veya klavyeyi kullanarak Tasarımcısı araç kutusu denetim ekleyebilirsiniz.
 
-#### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>Denetim klavye bir tasarımcı araç kutusundan eklemek için
+### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>Denetim klavye bir tasarımcı araç kutusundan eklemek için
 
-1. Menü çubuğunda, **görünümü**, **araç kutusu**.
+1. Menü çubuğunda, **görünümü** > **araç kutusu**.
 
 2. Ctrl tuşunu basılı tutup Yukarı Ok veya Ctrl + aşağı ok tuşlarını geçerli araç kutusunda bölümler arasında taşımak için sekmesinde.
 
@@ -56,9 +55,9 @@ ms.locfileid: "49818269"
 
  Bir iletişim kutusu seçenekleri arasında taşıyın ve klavye kullanarak seçenek ayarlarını değiştirebilirsiniz.
 
-#### <a name="to-set-dialog-box-options-from-the-keyboard"></a>Klavye iletişim kutusu seçenekleri ayarlamak için
+### <a name="to-set-dialog-box-options-from-the-keyboard"></a>Klavye iletişim kutusu seçenekleri ayarlamak için
 
-1.  Kullanım **sekmesini** veya **SHIFT + SEKME** iletişim kutusu denetimleri ile yukarı ve aşağı taşımak için.
+1.  Kullanım **sekmesini** veya **Shift** + **sekmesini** iletişim kutusu denetimleri ile yukarı ve aşağı taşımak için.
 
 2.  Seçenek ayarlarını değiştirmek için:
 
@@ -66,23 +65,23 @@ ms.locfileid: "49818269"
 
     -   Onay kutularını kullanın **boşluk** seçin veya seçimini kaldırın.
 
-    -   Aşağı açılan listeleri için **ALT** + **DARALTILDI** öğelerini görüntülemek ve kullanmak üzere **UPARROW** ve **DARALTILDI** değiştirmek için Seçili öğe.
+    -   Aşağı açılan listeleri için **Alt** + **DARALTILDI** öğelerini görüntülemek ve kullanmak üzere **UPARROW** ve **DARALTILDI** değiştirmek için Seçili öğe.
 
-    -   Düğme için basın **ENTER** çağırmak için.
+    -   Düğme için basın **Enter** çağırmak için.
 
-    -   Kılavuzlar için gezinmek için ok tuşlarını kullanın. Kılavuzlar açılan listeleri için **SHIFT** + **ALT** + **DARALTILDI** öğelerini görüntülemek ve kullanmak üzere **UPARROW**ve **DARALTILDI** seçili öğeyi değiştirmek için.
+    -   Kılavuzlar için gezinmek için ok tuşlarını kullanın. Kılavuzlar açılan listeleri için **Shift** + **Alt** + **DARALTILDI** öğelerini görüntülemek ve kullanmak üzere **UPARROW**ve **DARALTILDI** seçili öğeyi değiştirmek için.
 
 ## <a name="window-and-file-navigation"></a>Pencere ve dosya Gezinti
 
  IDE klavye kullanarak açık araç ve belge pencereleri arasında taşımak birkaç yol sağlar. Ayrıca, taşıyabilir ve farklı konumlardaki klavyeyi kullanarak araç pencereleri yerleştirme.
 
-#### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>Windows ve klavye IDE'den dosyaları arasında gezinmek için
+### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>Windows ve klavye IDE'den dosyaları arasında gezinmek için
 
 -   Bir düzenleyici veya tasarımcı dosyaları arasında taşımak için IDE Gezgini ile görüntülemek için CTRL + TAB tuşlarını seçin **etkin dosyaların** seçili. Vurgulanan dosyasına gitmek için Enter tuşuna basın.
 
 -   Sabitlenmiş araç pencereleri arasında taşımak için IDE Gezgini ile görüntülemek için Alt + F7 seçin **etkin aracı Windows** seçili. Vurgulanan pencereyi gezinmek için Enter tuşuna basın.
 
-#### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>Taşıma ve klavyeden araç pencerelerini sabitlemek için
+### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>Taşıma ve klavyeden araç pencerelerini sabitlemek için
 
 1.  Taşımak ve bunu odaklanmak için istediğinize araç penceresine gidin.
 

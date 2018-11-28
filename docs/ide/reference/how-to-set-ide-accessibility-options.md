@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d0149be4996f762373aae77d7535dbf8e02809
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: df94a57358edd9619b43bbcddb26d4e3485a1ab1
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909802"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388432"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Nasıl yapılır: ayarlama IDE erişilebilirlik seçeneklerini
 
@@ -27,10 +27,10 @@ ms.locfileid: "49909802"
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] görme zorluğu olan kişiler ve zorluğu yazılacak olan kişiler için kolaylaştıran özellikler içerir. Bu özellikler, boyut ve dizileri düğmeleri araç çubukları ve yöntem ve parametreler için otomatik tamamlama ve metin boyutunu değiştirme düzenleyiciler, metin rengi değiştirme içerir.
 
- Ayrıca, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] desteklediği en sık olun Dvorak klavye düzenleri, yazılan karakter daha erişilebilir. Kullanılabilir olan varsayılan kısayol tuşlarını da özelleştirebilirsiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Daha fazla bilgi için [tanımlama ve özelleştirme klavye kısayolları](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+Ayrıca, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] desteklediği en sık olun Dvorak klavye düzenleri, yazılan karakter daha erişilebilir. Kullanılabilir olan varsayılan kısayol tuşlarını da özelleştirebilirsiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Daha fazla bilgi için [tanımlama ve özelleştirme klavye kısayolları](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 > [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [ayarlarına](../environment-settings.md#reset-settings).
 
 ## <a name="editors-dialogs-and-tool-windows"></a>Düzenleyicilerde, iletişim kutuları ve araç pencereleri
 

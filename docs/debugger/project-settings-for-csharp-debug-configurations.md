@@ -1,7 +1,7 @@
 ---
 title: Proje ayarları C# hata ayıklama yapılandırmaları için | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/21/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
@@ -22,41 +22,44 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a65928e8a5a734e84d51cbb4368c7346ba8c2edb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7152e6ac16c8a15ba6973eb3ac33c373560a0d76
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896347"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388981"
 ---
-# <a name="project-settings-for--c-debug-configurations"></a>C# Hata Ayıklama Yapılandırması Proje Ayarları
-Bir C# hata ayıklama yapılandırması proje ayarları değiştirebilirsiniz **özellik sayfaları** anlatıldığı gibi penceresinde [hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md). Aşağıdaki tablolarda, hata ayıklayıcı ile ilgili ayarların nerede bulunacağı gösterilmektedir **özellik sayfaları** penceresi.  
+# <a name="project-settings-for--c-debug-configurations"></a>C# hata ayıklama yapılandırması proje ayarları
+
+Değiştirebileceğiniz C# proje hata ayıklama ayarlarında [hata ayıklama sekmesini](#debug-tab) ve [derleme sekmesi](#build-tab) proje özellik sayfaları. 
+
+Özellik Sayfaları'ni açmak için projeyi seçin **Çözüm Gezgini** seçip **özellikleri** simgesini veya projeye sağ tıklayıp seçin **özellikleri**.
+
+Daha fazla bilgi için [hata ayıklama ve dağıtım yapılandırmalarını](how-to-set-debug-and-release-configurations.md). 
+
+>[!IMPORTANT]
+>Bu ayarlar, .NET Core, ASP.NET veya UWP uygulamaları için geçerli değildir. UWP uygulamaları için hata ayıklama ayarları yapılandırmak için bkz [bir UWP uygulaması için bir hata ayıklama oturumu başlatma](start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).  
   
-> [!WARNING]
->  Bu konu, UWP uygulamaları için geçerli değil. Bkz: [(VB, C#, C++ ve XAML) bir hata ayıklama oturumu başlatın](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
+## <a name="debug-tab"></a>Hata ayıklama sekmesi  
   
-##  <a name="BKMK_Debug_tab"></a> Hata ayıklama sekmesi  
-  
-| **Ayarı** | **Açıklama** |
+|Ayar|Açıklama|
 |-------------------------------------| - |
-| **Yapılandırma** | Uygulama derlemek için modu ayarlar. Arasından seçim **etkin (hata ayıklama)**, **hata ayıklama**, **yayın**, **yapılandırmalarında**. |
-| **Başlatma eylemi** | Bu grubu denetimleri, hata ayıklama menüsünden Başlangıç meydana gelir eylemi belirtir.<br /><br /> -   **Proje başlangıç** varsayılandır ve hata ayıklama için başlangıç projesi başlatır. Daha fazla bilgi için [başlangıç projesi seçme](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100)).<br />-   **Harici program Başlat** başlatmak ve olmayan bir programa ekledikten sağlayan parçası olan bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje. Daha fazla bilgi için [çalışan programa ekleme](/previous-versions/visualstudio/visual-studio-2010/c6wf8e4z(v=vs.100)).<br />-   **URL'de tarayıcı başlatmak** bir Web uygulaması ayıklamanızı sağlar. |
-| **Komut satırı bağımsız değişkenleri** | Ayıklanacak programın komut satırı bağımsız değişkenlerini belirtir. Komut başlangıç dış program içinde belirtilen program adı addır. Başlatma eylemi için başlangıç URL'si olarak ayarlanırsa, komut satırı bağımsız değişkenleri belirtilemez. |
-| **Çalışma dizini** | Ayıklanan programın çalışma dizini belirtir. İçinde [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], çalışma dizini uygulama \bin\debug varsayılan olarak başlatıldığında dizindir. |
-| **Uzak makine kullanma** | Hata ayıklama amacıyla nerede uygulamanın çalışacağı uzak bir makine adı veya bir [Msvsmon sunucu adı](../debugger/remote-debugging.md). Uzak makinede EXE konumunu, yapılandırma özellikleri klasöründe, yapı kategori çıkış yolu özelliği tarafından belirtilir. Konum, uzak makinede paylaşılabilir bir dizin olmalıdır. |
-| **Yönetilmeyen kodun hata ayıklamasını etkinleştir** | Yerel (yönetilmeyen) Win32 koddaki çağrıları yönetilen uygulamanızın hatalarını ayıklamanızı sağlar. |
-| **SQL Server hata ayıklamayı etkinleştir** | SQL Server veritabanı nesnelerini hata ayıklamasını sağlar. |
+| **Yapılandırma** | Uygulama oluşturmaya yönelik modunu ayarlar. Seçin **etkin (hata ayıklama)**, **hata ayıklama**, **yayın**, veya **yapılandırmalarında** açılır listeden. |
+| **Başlatma eylemi** | Seçtiğinizde bir eylem belirtir **Başlat** hata ayıklama yapılandırması.<br />- **Proje başlangıç** varsayılandır ve hata ayıklama için başlangıç projesi başlatır. Daha fazla bilgi için [başlangıç projesi seçme](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100)).<br />- **Harici program Başlat** başlar ve olmayan bir uygulama ekler parçası olan bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje. Daha fazla bilgi için [ekleme hata ayıklayıcısı ile çalıştırma işlemleri](attach-to-running-processes-with-the-visual-studio-debugger.md).<br />- **Tarayıcı URL'si ile başlayın** bir web uygulamasında hata ayıklama olanak tanır. |
+| **Başlatma seçenekleri** > **komut satırı bağımsız değişkenleri** | Hatası ayıklanmakta olan uygulamayı komut satırı bağımsız değişkenlerini belirtir. Komut adı belirtilen uygulamanızın adıdır **harici program Başlat**. |
+| **Başlatma seçenekleri** > **çalışma dizini** | Hatası ayıklanmakta olan uygulamayı çalışma dizini belirtir. İçinde C#, çalışma dizini *\bin\debug* varsayılan olarak.
+| **Başlatma seçenekleri** > **uzak makine**|Uzaktan hata ayıklama için bu seçeneği belirleyin ve uzak hata ayıklama hedefi adını girin veya bir [Msvsmon sunucu adı](../debugger/remote-debugging.md). <br />Uygulama uzak makinede konumunu tarafından belirtilen **çıkış yolu** özelliği **derleme** sekmesi. Konum, uzak makinede paylaşılabilir bir dizin olmalıdır. 
+| **Hata ayıklayıcısı altyapısı** > **yönetilmeyen kodun hata ayıklamasını etkinleştir** | Yerel (yönetilmeyen) Win32 koddaki çağrıları yönetilen bir uygulamadan hata ayıklamasına. |
+| **Hata ayıklayıcısı altyapısı** > **etkinleştirme SQL Server hata ayıklama** | SQL Server veritabanı nesnelerini hata ayıklamasına. |
   
-##  <a name="BKMK_Build_tab"></a> Derleme sekmesi  
+## <a name="build-tab"></a>Derleme sekmesi  
   
 |Ayar|Açıklama|  
 |-------------|-----------------|  
-|**Koşullu derleme simgeleri:**|Hata ayıklama ve izleme sabitler burada tanımlanır.<br /><br /> Bu sabitler koşullu derlenmesini etkinleştirmek [hata ayıklama sınıfı](/dotnet/api/system.diagnostics.debug) ve [izleme sınıfı](/dotnet/api/system.diagnostics.trace). Tanımlanan Bu sabitler ile hata ayıklama ve izleme sınıfı yöntemleri oluşturmak için çıkış [çıkış penceresine](../ide/reference/output-window.md). Bu sabitler olmadan hata ayıklama ve izleme sınıfı yöntemleri derlenmemiş ve hiçbir çıktı oluşturulur.<br /><br /> -Debug normalde bir program hata ayıklama sürümünde tanımlanır ve sürümde tanımlanmamış.<br />-İzleme, hem hata ayıklama ve yayın sürümleri normal olarak tanımlanır.|  
-|**Kodu En İyileştir**|Yalnızca en iyi duruma getirilmiş kodda görüntülenen bir hatayı Bul sürece, bu ayar hata ayıklama sürümünde devre dışı bırakmanız gerekir. En iyi duruma getirilmiş kodu doğrudan deyimlerinde kaynak windows için yönergeler karşılık gelmediğinden hata ayıklamak zordur.|  
-|**Çıkış yolu:**|Genellikle bin\Debug hata ayıklama için ayarlayın.|
-
-> [!NOTE]
-> Bulma, hata ayıklama seçenekleri hakkında daha fazla bilgi için **Gelişmiş** düğmesi, bkz: [Gelişmiş derleme Ayarları iletişim kutusu (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md). Taşınabilir sembol (.pdb) dosyaları için en son platformlar arası .NET Core için biçimdir. 
+|**Genel** > **koşullu derleme simgeleri**|Hata ayıklama ve izleme sabitleri seçtiyseniz tanımlayın.<br /><br /> Bu sabitler koşullu derlenmesini etkinleştirmek [hata ayıklama sınıfı](/dotnet/api/system.diagnostics.debug) ve [izleme sınıfı](/dotnet/api/system.diagnostics.trace). Tanımlanan Bu sabitler ile hata ayıklama ve izleme sınıfı yöntemleri oluşturmak için çıkış [çıkış penceresine](../ide/reference/output-window.md). Bu sabitler olmadan hata ayıklama ve izleme sınıfı yöntemleri derlenmemiş ve hiçbir çıktı oluşturulur.<br /><br />Genellikle, hata ayıklama yapı hata ayıklama sürümünde tanımlanır ve sürümde tanımlanmamış. İzleme hata ayıklama ve yayın sürümleri tanımlanır.|  
+|**Genel** > **kodu En İyileştir**|Yalnızca en iyi duruma getirilmiş kodda bir hata görünür değilse bu hata ayıklama yapıları için seçilmeyen ayarı bırakın. Doğrudan kaynak kodundaki deyimleri için yönergeler karşılık gelmediğinden en iyi duruma getirilmiş kod hatalarını ayıklamak için zordur.|  
+|**Çıkış** > **çıkış yolu**|Genellikle kümesine *bin\Debug* hata ayıklama.|
+|**Gelişmiş** düğmesi|Gelişmiş hata ayıklama seçenekleri hakkında daha fazla bilgi için bkz: [Gelişmiş derleme Ayarları iletişim kutusu (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md). Sembol taşınabilir biçimi (*.pdb*) dosyaları olan .NET Core uygulamaları için yeni bir platformlar arası biçimi. 
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata Ayıklayıcısı Ayarları ve Hazırlığı](../debugger/debugger-settings-and-preparation.md)
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Hata ayıklayıcısı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)

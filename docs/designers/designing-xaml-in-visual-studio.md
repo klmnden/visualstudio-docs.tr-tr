@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a3adcb961e3031180054706da9d43dd04dccdedf
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c23a73302e5d4771b3372b8f4534b42806156da0
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348649"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389623"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Visual Studio’da XAML tasarlama
 
@@ -48,7 +48,7 @@ En temel görevler için Visual Studio IDE ve Visual Studio için Blend paylaş�
 
      ![Dosya yeniden yükleme deneyimi](../designers/media/blendfilereload.png)
 
-- **Eşitlenmiş düzenler ve ayarları:** özel düzenleri kaydedebilir ve araç penceresi düzeni özelleştirmeleri uygulayabilirsiniz olanak tanır. Aynı Microsoft hesabıyla oturum açtığınızda visual Studio bu özelleştirmeler ve hem Visual Studio ve Visual Studio için Blend tercihlerini makinelerdeki eşitler. Bkz: [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
+- **Eşitlenmiş düzenler ve ayarları:** özel düzenleri kaydedebilir ve araç penceresi düzeni özelleştirmeleri uygulayabilirsiniz olanak tanır. Aynı Microsoft hesabıyla oturum açtığınızda visual Studio bu özelleştirmeler ve hem Visual Studio ve Visual Studio için Blend tercihlerini makinelerdeki eşitler. Bkz: [birden fazla bilgisayara ayarları senkronize](../ide/synchronized-settings-in-visual-studio.md).
 
 - **Genel bir Çözüm Gezgini:** **Çözüm Gezgini** projelerinizi ve kendi dosyaları, hem de kendileriyle ilişkili komutların hazır erişimi düzenli bir görünümünü sağlar. Çözüm Gezgini ile büyük kurumsal projeleriyle çalışmak kolaydır. Bkz: [çözümler ve projeler](../ide/solutions-and-projects-in-visual-studio.md).
 

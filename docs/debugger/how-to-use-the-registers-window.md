@@ -1,7 +1,7 @@
 ---
-title: Visual Studio hata ayıklayıcıda yazmaç değerlerini görüntüleme | Microsoft Docs
+title: Görüntüleme değerleri Visual Studio hata ayıklayıcıda kaydetme | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -25,35 +25,36 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f236bf43d3667cd4263d205c4588593a973824d
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: ab40e0b63b2a679b4c36a4625d517a03b6c123ad
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257179"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389331"
 ---
-# <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Görüntüleme değerleri kaydedin ve Visual Studio hata ayıklayıcı kaydeder penceresinde kullanın (C#, C++, Visual Basic F#)
-Yazmaçlar penceresi yalnızca adres seviyesinde hata ayıklamayı etkin değilse kullanılabilir **seçenekleri** iletişim kutusu, **hata ayıklama** düğümünün **genel** kategorisi.  
-  
- **Kaydeder** penceresi görüntülendiğinde, içeriği kaydedin. Tutarsanız **kaydeder** , program aracılığıyla ilerleyerek açık penceresinde görebilirsiniz yazmaç değerleri değiştiğinde gibi kodunuzu yürütür. Değişen değerler, yakın zamanda kırmızı renkte görüntülenir. YAZMAÇ değerlerini düzenleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: bir kayıt değeri düzenlemek](../debugger/how-to-edit-a-register-value.md).  
-  
- Dağınıklığı, azaltmak için **kaydeder** penceresi kayıtları platform ve işlemci göre değişiklik gösteren gruplar halinde düzenler türü. Görüntüleyebilir ya da istediğiniz grupları gizleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: görüntü ve kayıt grupları Gizle](../debugger/how-to-display-and-hide-register-groups.md).  
-  
- Yazmaçlar ve yazmaçlar penceresi kavramları üst düzey bir giriş için bkz [hata ayıklama temelleri: Kayıtları penceresini](../debugger/debugging-basics-registers-window.md).  
-  
+# <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Görüntüleme değerleri yazmaçlar penceresi içinde kaydetmek (C#, C++, Visual Basic F#)
+
+**Kaydeder** penceresi görüntülendiğinde, Visual Studio hata ayıklama sırasında içeriklerini kaydedin. Yazmaçları kavramları üst düzey bir giriş için ve **kaydeder** penceresinde görmek [hata ayıklama temelleri: yazmaçlar penceresi](../debugger/debugging-basics-registers-window.md).
+
 > [!NOTE]
->  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).  
-  
-### <a name="to-display-the-registers-window"></a>Yazmaçlar penceresini görüntülemek için  
-  
--   Üzerinde **hata ayıklama** menüsünde seçin **Windows**ve ardından **kaydeder** (veya tercih **Ctrl** + **Alt**   +  **G**).  
-  
-     Hata ayıklayıcı, çalışan veya kesme modunda olması gerekir.  
-  
-    > [!NOTE]
-    >  Betik veya SQL uygulamalar için kayıt bilgileri kullanılamıyor.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklama temelleri: Yazmaçlar penceresi](../debugger/debugging-basics-registers-window.md)   
- [Hata ayıklayıcıda verileri görüntüleme](../debugger/viewing-data-in-the-debugger.md)   
- [Hata Ayıklama Temelleri: Yazmaçlar Penceresi](../debugger/debugging-basics-registers-window.md)
+> Betik veya SQL uygulamalar için kayıt bilgileri kullanılamıyor.
+
+Uygulamanızda kodu yürütür olarak hata ayıklama sırasında değişiklik değerleri kaydedin. Değişen değerler kısa bir süre önce görünür kırmızıyla **kaydeder** penceresi.
+
+Dağınıklığı, azaltmak için **kaydeder** penceresi kayıtları platform ve işlemci göre değişiklik gösteren gruplar halinde düzenler türü. Görüntüleyebilir ya da yazmaç gruplarını gizleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: yazmaç gruplarını görüntüleme ve gizleme](../debugger/how-to-display-and-hide-register-groups.md).
+
+YAZMAÇ değerlerini düzenleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: yazmaç değerini düzenleme](../debugger/how-to-edit-a-register-value.md).
+
+**Yazmaçlar penceresi açmak için**
+
+1. Adres seviyesinde, seçerek hata ayıklamayı **adres seviyesinde hata ayıklamayı** içinde **Araçları** (veya **hata ayıklama**) > **seçenekleri**  >  **Hata ayıklama**.
+
+1. Hata ayıklama kesme noktası veya çalışıyor olsa da seçin **hata ayıklama** > **Windows** > **kaydeder**, veya basın **Alt** + **5**.
+
+>[!NOTE]
+>İletişim kutuları ve menü komutları, Visual Studio sürümü veya ayarlarınızı bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** Visual Studio **Araçları** menüsü. Daha fazla bilgi için [ayarlarına](../ide/environment-settings.md#reset-settings).
+
+### <a name="see-also"></a>Ayrıca bkz.
+
+- [Hata ayıklama temelleri: yazmaçlar penceresi](../debugger/debugging-basics-registers-window.md)
+- [Hata ayıklayıcıda verileri görüntüleme](../debugger/viewing-data-in-the-debugger.md)

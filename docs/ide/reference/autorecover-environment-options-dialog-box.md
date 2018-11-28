@@ -19,30 +19,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed5ad6259ede32304cfe15ef4e79c6b3e56dbd9d
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 804ea0baa47925e35a282a615598ea66c843b911
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143313"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388815"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>AutoRecover, ortam, Seçenekler iletişim kutusu
 
-Bu sayfada kullanın **seçenekleri** iletişim kutusu veya dosyaları otomatik olarak yedeklemek etkinleştirilip etkinleştirilmeyeceğini belirtin. Bu sayfa, Visual Studio'nun beklenmedik şekilde kapanırsa değiştirilmiş dosyaları geri yüklemek isteyip istemediğinizi belirtmenizi sağlar.
+Bu sayfada kullanın **seçenekleri** iletişim kutusu veya dosyaları otomatik olarak yedeklemek etkinleştirilip etkinleştirilmeyeceğini belirtin. Visual Studio'nun beklenmedik şekilde kapanırsa, değiştirilen dosyaları geri yüklemek isteyip istemediğinizi belirtebilirsiniz.
 
 Seçerek bu iletişim kutusuna erişmek **Araçları** menüsünde seçerek **seçenekleri**seçip **ortam** > **OtomatikKurtarma**. Bu sayfa listede görünmüyorsa, seçin **tüm bir ayarın gösterilip** içinde **seçenekleri** iletişim kutusu.
 
-> [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
-
 **[N] dakikada bir Otomatik Kurtarma bilgilerini kaydetme**
 
-Ne sıklıkta bir dosya Düzenleyicisi'nde otomatik olarak kaydedilir özelleştirmek için bu seçeneği kullanın. Dosyanın bir kopyasını daha önce kaydedilen dosyalar için kayıtlı olduğu *%USERPROFILE%\Documents\Visual Studio \<sürüm > \Backup dosyaları\\<projectname>*. Yeni bir dosyadır ve henüz kaydetmediğiniz, rastgele oluşturulan dosya adını kullanarak otomatik kaydedilmiş dosyasıdır.
+Ne sıklıkta bir dosya Düzenleyicisi'nde otomatik olarak kaydedilir özelleştirmek için bu seçeneği kullanın. Dosyanın bir kopyasını daha önce kaydedilen dosyalar için kayıtlı olduğu *%USERPROFILE%\Documents\Visual Studio\\[sürüm] \Backup dosyaları\\[ProjeAdı]*. Yeni bir dosyadır ve henüz kaydetmediğiniz, rastgele oluşturulan dosya adını kullanarak otomatik kaydedilmiş dosyasıdır.
 
 **[N] günde Otomatik Kurtarma bilgisini sakla**
 
 Visual Studio kurtarma için oluşturulan dosyalar ne kadar süreyle korur belirtmek için bu seçeneği kullanın.
 
-## <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz.
 
-- [Seçenekler İletişim Kutusu](../../ide/reference/options-dialog-box-visual-studio.md)
+- [Seçenekler iletişim kutusu](../../ide/reference/options-dialog-box-visual-studio.md)

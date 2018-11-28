@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59ece2ea879b8c79ebe002265d5d1eb6fd8ec82e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ff0446e81257cfc782fd1c7d34cde2b274ddde5e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945994"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388942"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Karışık Minimum Kurallar kural kümesi
 Microsoft karışık Minimum kurallar potansiyel güvenlik boşluklarını ve Uygulama Kilitlenmesi gibi Common Language Runtime destekleyen C++ projelerinizin en kritik sorunlara odaklanır. Common Language Runtime destekleyen C++ projeleriniz için oluşturduğunuz herhangi bir özel kural kümesi bu kural kümesini içermelidir.
@@ -37,7 +37,7 @@ Microsoft karışık Minimum kurallar potansiyel güvenlik boşluklarını ve Uy
 |[C6270](../code-quality/c6270.md)|Biçimlendirme işlevinde kayan bağımsız değişken eksik|
 |[C6271](../code-quality/c6271.md)|Biçimlendirme işlevinde fazladan değişken|
 |[C6272](../code-quality/c6272.md)|Biçimlendirme işlevinde kayan nokta olmayan değişken|
-|[C6273](../code-quality/c6273.md)|Biçimlendirme işlevinde tamsayı olmayan Argumen|
+|[C6273](../code-quality/c6273.md)|Biçimlendirme işlevinde tamsayı olmayan değişken|
 |[C6274](../code-quality/c6274.md)|Biçimlendirme işlevinde karakter olmayan değişken|
 |[C6276](../code-quality/c6276.md)|Geçersiz dize dönüştürmesi|
 |[C6277](../code-quality/c6277.md)|Geçersiz CreateProcess çağrısı|
@@ -96,7 +96,7 @@ Microsoft karışık Minimum kurallar potansiyel güvenlik boşluklarını ve Uy
 |[C28215](../code-quality/c28215.md)|Typefix zaten typefix'e sahip bir parametreye uygulanamaz|
 |[C28216](../code-quality/c28216.md)|CheckReturn ek açıklaması yalnızca belirli işlev parametresi için koşul sonralarına uygulanır.|
 |[C28217](../code-quality/c28217.md)|İşlev için ek açıklama için parametre sayısı dosyada bulunanla eşleşmiyor.|
-|[C28218](../code-quality/c28218.md)|İşlev paramteer için ek açıklamanın parametresi dosyada bulunanla eşleşmiyor.|
+|[C28218](../code-quality/c28218.md)|İşlev parametresi için ek açıklamanın parametresi dosyada bulunanla eşleşmiyor.|
 |[C28219](../code-quality/c28219.md)|Ek açıklama parametresi ek açıklaması için beklenen numaralandırma üyesi|
 |[C28220](../code-quality/c28220.md)|Tamsayı ifadesi parametre ek açıklaması içinde ek açıklaması için beklenen|
 |[C28221](../code-quality/c28221.md)|AÇIKLAMADAKİ parametre için beklenen dize ifade|

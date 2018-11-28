@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32a40553cd3f547dfa2b5297c898fabbd9664496
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+ms.openlocfilehash: ce7cf5cf0534a0e989b65d6e67451fe2a7c496ab
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281842"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388911"
 ---
 # <a name="threads-view-in-the-concurrency-visualizer"></a>Eşzamanlılık görselleştiricisi'ndeki iş parçacıkları görünümü
 
@@ -80,7 +80,7 @@ Paralel bir döngüden veya eş zamanlı görevleri katılan iş parçacıkları
   
 Yalnızca tek bir iş parçacığı bir noktada sürede yürütüyor, uygulama tam anlamıyla eşzamanlılık sistemde sürüyor değil. İş parçacığı engelleme arasındaki geçici ilişkiyi arasındaki bağımlılıkları incelemek için zaman çizelgesi grafiği kullanabilirsiniz ve engellenen iş parçacıkları. İş parçacığı yeniden düzenlemek için bir iş parçacığı seçin ve yukarı veya aşağı araç çubuğundaki simgeye. 
 
-Bu iş yaptığı değil veya kendi istatistikleri ilgisi olmayan ve raporları clog çünkü tamamen, engellenen iş parçacıkları gizleyebilirsiniz. İş parçacığı adlarını ve ardından seçerek Gizle **Seçili iş parçacıklarını Gizle** veya **hariç Seçili iş parçacıklarını Gizle** araç çubuğundaki simgeler. İş parçacıklarını Gizle tanımlamak için seçin **başına iş parçacığı özeti** bağlantı sol konumunda. Hiçbir etkinlik olmayan iş parçacıkları gizleyebilirsiniz **başına iş parçacığı özeti** grafiği. 
+İş yaptığı değil ya da kendi istatistikleri ilgisi olmayan ve raporları clog çünkü tamamen, engellenen iş parçacıkları gizleyebilirsiniz. İş parçacığı adlarını ve ardından seçerek Gizle **Seçili iş parçacıklarını Gizle** veya **hariç Seçili iş parçacıklarını Gizle** araç çubuğundaki simgeler. İş parçacıklarını Gizle tanımlamak için seçin **başına iş parçacığı özeti** bağlantı sol konumunda. Hiçbir etkinlik olmayan iş parçacıkları gizleyebilirsiniz **başına iş parçacığı özeti** grafiği. 
 
 ### <a name="thread-execution-details"></a>İş parçacığı yürütme ayrıntıları  
 Bir yürütme segment hakkında daha ayrıntılı bilgi almak için zaman çizelgesi yeşil bir Segmentte bir noktası seçin. Eşzamanlılık görselleştiricisi seçili belirli noktaya yukarıda siyah şapka işareti görüntüler ve çağrı yığınını gösteren **geçerli** alt bölme sekmesi. Birden çok yürütme kesim noktalarını seçebilirsiniz.  

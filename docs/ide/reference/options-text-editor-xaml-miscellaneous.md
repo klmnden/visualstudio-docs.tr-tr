@@ -30,22 +30,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 4174191f9927679eb698e2e918a7bfa50f915a3e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 30986c0f18a2cc272cb917be9ce24b2a335c0b4b
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673586"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388640"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Seçenekler, metin düzenleyici, XAML çeşitli
+
 Kullanım **çeşitli** öğeler ve öznitelikler XAML belgelerinizde nasıl biçimlendirileceğini belirtmek için özellik sayfası. Açmak için **seçenekleri** iletişim kutusu, tıklayın **Araçları** menüsünü seçin ve ardından **seçenekleri**. Erişim için **çeşitli** özellik sayfasında **metin düzenleyici** > **XAML** > **çeşitli**düğümü.
 
-> [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
-
-
 ## <a name="auto-insert"></a>Otomatik Ekle
- Etiketleri ve teklifler ne zaman otomatik olarak oluşturulan denetlemek için bu ayarı kullanın.
+
+Etiketleri ve teklifler ne zaman otomatik olarak oluşturulan denetlemek için bu ayarı kullanın.
 
 |||
 |-|-|
@@ -55,7 +53,8 @@ Kullanım **çeşitli** öğeler ve öznitelikler XAML belgelerinizde nasıl bi�
 |**MarkupExtension parametrelerini ayıran ayırmak için virgül**|Birden fazla parametre bir işaretleme uzantısı'nda yazarken virgül oluşturulup oluşturulmadığını belirtir.|
 
 ## <a name="errors-and-warnings"></a>Hatalar ve uyarılar
- Hataları ve Uyarıları ne zaman otomatik olarak oluşturulan denetlemek için bu ayarı kullanın. Daha fazla bilgi için [XAML hataları ve Uyarıları](../../designers/xaml-errors-warnings.md).
+
+Hataları ve Uyarıları ne zaman otomatik olarak oluşturulan denetlemek için bu ayarı kullanın. Daha fazla bilgi için [XAML hataları ve Uyarıları](../../designers/xaml-errors-warnings.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

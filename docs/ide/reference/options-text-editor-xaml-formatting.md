@@ -31,20 +31,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 7f6939907681d5059580f9f7120d9beb76559e9a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4686760625062fea7984cdc05386284f8f98c4ee
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672194"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388994"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Seçenekler, Metin Düzenleyici, XAML, Biçimlendirme
+
 Kullanım **biçimlendirme** öğeler ve öznitelikler XAML belgelerinizde nasıl biçimlendirileceğini belirtmek için özellik sayfası. Açmak için **seçenekleri** iletişim kutusu, tıklayın **Araçları** menüsünü seçin ve ardından **seçenekleri**. Erişim için **biçimlendirme** özellik sayfasında **metin düzenleyici** > **XAML** > **biçimlendirme** düğüm.
 
-> [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
-
 ## <a name="auto-formatting-events"></a>Otomatik biçimlendirme olayları
+
 Biçimlendirme oluşabilir, aşağıdaki olaylardan herhangi biri algılandı.
 
 -   Bir bitiş etiketi ya da basit etiket tamamlama.
@@ -57,106 +56,124 @@ Biçimlendirme oluşabilir, aşağıdaki olaylardan herhangi biri algılandı.
 
 Otomatik biçimlendirme olayları neden belirtebilirsiniz.
 
-**Bitiş etiketi ya da basit etiket tamamlandığında**  
+**Bitiş etiketi ya da basit etiket tamamlandığında**
+
 Biçimlendirme bir bitiş etiketi ya da basit etiket yazmayı bitirdikten sonra gerçekleşir. Basit bir etiket öznitelikleri, örneğin yok `<Button />`.
 
-**Başlangıç etiketi tamamlandığında**  
+**Başlangıç etiketi tamamlandığında**
+
 Biçimlendirme bir başlangıç etiketi yazmayı bitirdikten sonra gerçekleşir.
 
-**Pano'dan üzerinde Yapıştır**  
+**Pano'dan üzerinde Yapıştır**
+
 XAML görünümü panodan XAML yapıştırın biçimlendirme gerçekleşir.
 
 ## <a name="quotation-mark-style"></a>Tırnak işareti stili
+
 Bu ayar, öznitelik değerleri tek veya çift tırnak içine alınmış olup olmadığını gösterir. Otomatik biçimlendirici ve IntelliSense otomatik tamamlama, bu ayarı kullanın.
 
 Bu seçeneği belirlediğinizde, yalnızca öznitelikler, daha sonra Tasarımcı kullanılarak eklenen veya el ile XAML görünümünde etkilenir.
 
-**Çift tırnak (")**  
-Öznitelik değerleri çift tırnak işareti içine alınır.  
+**Çift tırnak (")**
+
+Öznitelik değerleri çift tırnak işareti içine alınır.
 `<Button Name="button1">Hello</Button>`
 
-**Tek tırnak (')**  
-Öznitelik değerleri tek tırnak işaretleri içine alınır.  
+**Tek tırnak (')**
+
+Öznitelik değerleri tek tırnak işaretleri içine alınır.
 `<Button Name='button1'>Hello</Button>`
 
 ## <a name="tag-wrapping"></a>Etiket kaydırma
+
 Etiket sarmalama için bir satır uzunluğu belirtebilirsiniz. Etiket kaydırma etkin olduğunda, tüm XAML Tasarımcısı'nı kullanarak daha sonradan eklenen uygun şekilde sarmalanır.
 
-**Belirtilen uzunluğu geçen etiketleri Kaydır**  
+**Belirtilen uzunluğu geçen etiketleri Kaydır**
+
 Tarafından belirtilen satır uzunluğu'konumundaki satırları sarmalanmış olup olmadığını belirtir **uzunluğu**.
 
-**Uzunluğu**  
+**Uzunluğu**
+
 Bir satırın karakter içerebilir. Gerekirse, bazı XAML satırları belirtilen satır uzunluğu aşabilir.
 
 ## <a name="attribute-spacing"></a>Öznitelik aralığı
+
 XAML belgenizde öznitelikleri nasıl düzenlenir denetlemek için bu ayarı kullanın.
 
-**Satır başı ve öznitelikleri arasındaki boşlukları koru**  
+**Satır başı ve öznitelikleri arasındaki boşlukları koru**
+
 Yeni satırları ve boşlukları öznitelikleri arasındaki biçimlendirme tarafından etkilenmez.
 
 ```xml
-<Button Height="23"   Name="button1"  
+<Button Height="23"   Name="button1"
 Width="75">Hello</Button>
 ```
 
-**Öznitelikler arasına tek boşluk Ekle**  
+**Öznitelikler arasına tek boşluk Ekle**
+
 Öznitelikleri bir boşluk ile ayırarak bitişik öznitelikleri bir satır kaplayabilir. Etiket sarmalama ayarları uygulanır.
 
 ```xml
 <Button Height="23" Name="button1" Width="75">Hello</Button>
 ```
 
-**Her özniteliği ayrı bir satıra Yerleştir**  
-Her öznitelik fazla öznitelik mevcut olduğunda, kullanışlı olan kendi satırına kaplar.  
+**Her özniteliği ayrı bir satıra Yerleştir**
+
+Her öznitelik fazla öznitelik mevcut olduğunda, kullanışlı olan kendi satırına kaplar.
 
 ```xml
-<Button  
-Height="23"  
-Name="button1"  
+<Button
+Height="23"
+Name="button1"
 Width="75">Hello</Button>
 ```
 
-**Konum ilk özniteliği başlangıç etiketiyle aynı satıra**  
-Bu onay kutusu işaretlendiğinde, öğenin başlangıç etiketi ile aynı satırda ilk öznitelik görünür.  
+**Konum ilk özniteliği başlangıç etiketiyle aynı satıra**
+
+Bu onay kutusu işaretlendiğinde, öğenin başlangıç etiketi ile aynı satırda ilk öznitelik görünür.
 
 ```xml
-<Button Height="23"  
-Name="button1"  
+<Button Height="23"
+Name="button1"
 Width="75">Hello</Button>
 ```
 
 ## <a name="element-spacing"></a>Öğe aralığı
+
 XAML belgenizde öğeleri nasıl düzenlenir denetlemek için bu ayarı kullanın.
 
-**İçeriği yeni satırları koru**  
-Öğe içeriği boş satırları kaldırılmaz.  
+**İçeriği yeni satırları koru**
+
+Öğe içeriği boş satırları kaldırılmaz.
 
 ```xml
-<Grid>  
+<Grid>
 
 
-<Button Name="button1">Hello</Button>  
+<Button Name="button1">Hello</Button>
 
 </Grid>
 ```
 
-**İçerikte birden çok boş satırlar için tek bir satırı Daralt**  
-Öğe içeriği boş satırları tek bir satıra daraltılır.  
+**İçerikte birden çok boş satırlar için tek bir satırı Daralt**
+
+Öğe içeriği boş satırları tek bir satıra daraltılır.
 
 ```xml
-<Grid>  
+<Grid>
 
-<Button Name="button1">Hello</Button>  
+<Button Name="button1">Hello</Button>
 
 </Grid>
 ```
 
-**İçerikteki boş satırları Kaldır**  
-Öğesi içerik tüm boş satırlar kaldırıldı.  
+**İçerikteki boş satırları Kaldır**
+
+Öğesi içerik tüm boş satırlar kaldırıldı.
 
 ```xml
-<Grid>  
-<Button Name="button1">Hello</Button>  
+<Grid>
+<Button Name="button1">Hello</Button>
 </Grid>
 ```
 

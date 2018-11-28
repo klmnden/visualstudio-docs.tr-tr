@@ -49,19 +49,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cb2a939fb569ca9c50e6334fa7b836a6953dca4
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 75051013e38d4acf5339193cf9f80e6da6758284
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219165"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388809"
 ---
 # <a name="options-text-editor-general"></a>Seçenekler, Metin Düzenleyici, Genel
 
 Bu iletişim kutusu Visual Studio kodu ve Metin Düzenleyicisi için genel ayarları değiştirmenize olanak sağlar. Bu iletişim kutusunu görüntülemek için seçin **seçenekleri** üzerinde **Araçları** menüsünü genişletin **metin düzenleyici** klasöre tıklayın ve ardından **genel**.
-
-> [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="settings"></a>Ayarlar
 

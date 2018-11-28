@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af0a07abe1cbb380acde91067e3e6252d0cd8596
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4dc45c624d44ed550fb491fc57638ba033090346
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830060"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388114"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Nasıl yapılır: görsel stiller etkinken WPF uygulaması yayımlama
 Görsel stiller, kullanıcı tarafından seçilen tema göre değiştirmek için ortak denetimlerin görünümünü etkinleştirin. El ile etkinleştirmeniz gerekir, böylece varsayılan olarak, Windows Presentation Foundation (WPF) uygulamaları için görsel stillerin etkin değil. Ancak, bir WPF uygulaması için görsel stilleri etkinleştirme ve ardından çözüm yayımlama bir hataya neden olur. Bu konu, bu hatayı ve görsel stiller etkinken WPF uygulaması yayımlama işlemi açıklar. Görsel stiller hakkında daha fazla bilgi için bkz: [görsel stilleri genel bakış](/windows/desktop/Controls/visual-styles-overview). Hata iletisi hakkında daha fazla bilgi için bkz. [ClickOnce Dağıtımları içinde belirli hataları giderme](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
@@ -39,7 +39,11 @@ Görsel stiller, kullanıcı tarafından seçilen tema göre değiştirmek için
      Görsel stilleri varsayılan olarak etkin değildir.  
   
     ```xml  
-    <dependency>    <dependentAssembly>      <assemblyIdentity          type="win32"          name="Microsoft.Windows.Common-Controls"          version="6.0.0.0"          processorArchitecture="*"          publicKeyToken="6595b64144ccf1df"          language="*"        />    </dependentAssembly>  </dependency>  
+    <dependency>
+        <dependentAssembly>
+            <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+        </dependentAssembly>
+    </dependency>
     ```  
   
      Aşağıdaki yordamlar projenizle ilişkili bildirim dosyası açmak nasıl gösterir.  
@@ -78,7 +82,18 @@ Görsel stiller, kullanıcı tarafından seçilen tema göre değiştirmek için
      Bu XML görsel stilleri destekleyen denetimleri içeren derlemeyi açıklar.  
   
     ```xml  
-    <?xml version="1.0" encoding="utf-8"?><asmv1:assembly manifestVersion="1.0"                xmlns="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  <dependency>    <dependentAssembly>      <assemblyIdentity        type="win32"        name="Microsoft.Windows.Common-Controls"        version="6.0.0.0"        processorArchitecture="*"        publicKeyToken="6595b64144ccf1df"        language="*"        />    </dependentAssembly>  </dependency></asmv1:assembly>  
+    <?xml version="1.0" encoding="utf-8"?>
+    <asmv1:assembly manifestVersion="1.0" 
+        xmlns="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <dependency>
+            <dependentAssembly>
+                <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+            </dependentAssembly>
+        </dependency>
+    </asmv1:assembly>
     ```  
   
 2.  Not Defteri'nde **dosya**ve ardından **Kaydet**.  

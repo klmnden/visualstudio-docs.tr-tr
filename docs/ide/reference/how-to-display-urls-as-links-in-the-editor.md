@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f3009a3730a858707490d1f043d039b9f82ecb1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4d0ebbac34795255a48e1ec1c8ff72db829b30c3
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177717"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388536"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Nasıl Yapılır: Düzenleyicide URL'leri Bağlantılar Olarak Görüntüleme
 
@@ -31,12 +31,7 @@ Tekdüzen Kaynak Konum Belirleyicisi (URL) kabul Kod Düzenleyicisi kodunuzda et
 
 -   Ne zaman gösterilen Web sitesi açmayı deneyin, **Ctrl**+**tıklayın** bağlantısına. Varsayılan olarak, Web sitesinin iç web tarayıcısında görüntülenir.
 
-> [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
-
-## <a name="procedure"></a>Yordam
-
-### <a name="to-display-urls-as-links"></a>URL'leri bağlantı olarak görüntülenecek
+## <a name="display-urls-as-links"></a>URL’leri bağlantı olarak görüntüleme
 
 1.  Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.
 

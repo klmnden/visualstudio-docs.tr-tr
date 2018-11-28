@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a84a72046ece48fce16734cf9be838fa1f042478
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2976dc2a8690ba9bb5f623662b71fca0d82e942b
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891173"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389302"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Yerel Önerilen Kurallar kural kümesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Yerel önerilen kurallar potansiyel güvenlik boşluklarını ve Uygulama Kilitl
 |                       [C6270](../code-quality/c6270.md)                        |                                              Biçimlendirme işlevinde kayan bağımsız değişken eksik                                              |
 |                       [C6271](../code-quality/c6271.md)                        |                                                  Biçimlendirme işlevinde fazladan değişken                                                  |
 |                       [C6272](../code-quality/c6272.md)                        |                                                Biçimlendirme işlevinde kayan nokta olmayan değişken                                                |
-|                       [C6273](../code-quality/c6273.md)                        |                                               Biçimlendirme işlevinde tamsayı olmayan Argumen                                                |
+|                       [C6273](../code-quality/c6273.md)                        |                                               Biçimlendirme işlevinde tamsayı olmayan değişken                                                |
 |                       [C6274](../code-quality/c6274.md)                        |                                              Biçimlendirme işlevinde karakter olmayan değişken                                              |
 |                       [C6276](../code-quality/c6276.md)                        |                                                         Geçersiz dize dönüştürmesi                                                         |
 |                       [C6277](../code-quality/c6277.md)                        |                                                     Geçersiz CreateProcess çağrısı                                                      |
@@ -193,7 +193,7 @@ Yerel önerilen kurallar potansiyel güvenlik boşluklarını ve Uygulama Kilitl
 |                      [C28215](../code-quality/c28215.md)                       |                               Typefix zaten typefix'e sahip bir parametreye uygulanamaz                               |
 |                      [C28216](../code-quality/c28216.md)                       |                   CheckReturn ek açıklaması yalnızca belirli işlev parametresi için koşul sonralarına uygulanır.                    |
 |                      [C28217](../code-quality/c28217.md)                       |                       İşlev için ek açıklama için parametre sayısı dosyada bulunanla eşleşmiyor.                        |
-|                      [C28218](../code-quality/c28218.md)                       |                        İşlev paramteer için ek açıklamanın parametresi dosyada bulunanla eşleşmiyor.                         |
+|                      [C28218](../code-quality/c28218.md)                       |                        İşlev parametresi için ek açıklamanın parametresi dosyada bulunanla eşleşmiyor.                         |
 |                      [C28219](../code-quality/c28219.md)                       |                            Ek açıklama parametresi ek açıklaması için beklenen numaralandırma üyesi                            |
 |                      [C28220](../code-quality/c28220.md)                       |                             Tamsayı ifadesi parametre ek açıklaması içinde ek açıklaması için beklenen                              |
 |                      [C28221](../code-quality/c28221.md)                       |                                   AÇIKLAMADAKİ parametre için beklenen dize ifade                                    |

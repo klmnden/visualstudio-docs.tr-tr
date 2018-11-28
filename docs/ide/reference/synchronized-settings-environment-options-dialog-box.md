@@ -1,6 +1,6 @@
 ---
-title: Eşitlenmiş Ayarlar, Ortam, Seçenekler İletişim Kutusu
-ms.date: 11/04/2016
+title: Hesapları seçenekleri başvurusu
+ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,17 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa23853b425bf45543f2bb42614ca6057b791ccc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9dadf81f386ef93fab5a3f6c4cebf9969d0a6f23
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942760"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388471"
 ---
-# <a name="synchronized-settings-environment-options-dialog-box"></a>Eşitlenmiş Ayarlar, Ortam, Seçenekler İletişim Kutusu
+# <a name="accounts-environment-options-dialog-box"></a>Hesapları, ortam, Seçenekler iletişim kutusu
 
-Ayarlarınızı (Dolaşımda) eşitlemek birden fazla makine arasında belirtmek için bu sayfayı kullanın. Daha fazla bilgi için bkz: [eşitlenmiş ayarları](../../ide/synchronized-settings-in-visual-studio.md).
+Ayarlarınızı birden fazla makinede senkronize belirtmek için bu sayfayı kullanın. Daha fazla bilgi için [eşitlenen ayarlar](../../ide/synchronized-settings-in-visual-studio.md).
 
 ### <a name="see-also"></a>Ayrıca bkz.
 
-- [Ortam Seçenekleri İletişim Kutusu](../../ide/reference/environment-options-dialog-box.md)
+- [Birden fazla bilgisayara ayarları eşitleme](../synchronized-settings-in-visual-studio.md)
+- [Ortam ayarları](../environment-settings.md)
+- [Ortam Seçenekleri iletişim kutusu](../../ide/reference/environment-options-dialog-box.md)

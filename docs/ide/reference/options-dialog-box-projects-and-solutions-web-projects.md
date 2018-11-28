@@ -12,21 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26625fad5435fa8d5088a59465612e15808a07c4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4a5efe344859c8b9fbdc10edbea0bbb193c6df55
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671250"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389370"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Seçenekler İletişim Kutusu, Projeler ve Çözümler, Web Projeleri
 
 Web projeleri içinde geliştirmek için kullanacağınız web sunucusu ayarlar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Bu seçeneklere erişmek için seçin **Araçlar > Seçenekler** genişletin **projeler ve çözümler**seçip **Web projeleri**.
 
 Varsayılan olarak, Visual Studio'da bir web projesi çalıştırıldığında, Visual Studio geliştirme sunucusunu kullanır. Daha fazla bilgi için [ASP.NET Web projeleri için Visual Studio'daki Web sunucuları](/previous-versions/aspnet/58wxa9w5\(v\=vs.120\)).
-
-> [!NOTE]
-> İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Bu Yardım sayfası ile yazılmıştır **Web ayarları** unutmayın. Ayarlarınızı değiştirmek veya görüntülemek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="settings"></a>Ayarlar
 

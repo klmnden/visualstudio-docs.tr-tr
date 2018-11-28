@@ -23,40 +23,40 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9733569c3fa53d2c5a5905b5b893d16b4eeaf10b
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: e9cf75915b3ca17df1ee9e2ef41040147c146ea8
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257049"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52387675"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio hata ayıklayıcıda ayrıştırılmış kodu görüntüle (C#, C++, Visual Basic F#)
 
-**Ayrıştırılmış kodu** penceresi için derleyici tarafından oluşturulan talimatlara karşılık gelen derleme kodlarını gösterir. Yönetilen kodda hata ayıklama, bu derleme yönergeleri, Visual Studio derleyici tarafından oluşturulan değil Microsoft Ara dilini (MSIL) Just-ın-Time (JIT) derleyici tarafından oluşturulan yerel koda karşılık gelir.  
-  
+**Ayrıştırılmış kodu** penceresi için derleyici tarafından oluşturulan talimatlara karşılık gelen derleme kodlarını gösterir. Yönetilen kodda hata ayıklama, bu derleme yönergeleri, Visual Studio derleyici tarafından oluşturulan değil Microsoft Ara dilini (MSIL) Just-ın-Time (JIT) derleyici tarafından oluşturulan yerel koda karşılık gelir.
+
 > [!NOTE]
 > Tüm avantajlarından yararlanabilmek için **ayrıştırılmış kodu** penceresinde anlamak veya temel bilgileri öğrenmek [derleme dili programlama](https://wikipedia.org/wiki/Assembly_language).
-  
-Bu özellik yalnızca adres seviyesinde hata ayıklamayı etkin olduğunda kullanılabilir. Betik veya SQL hata ayıklama için kullanılabilir değildir. 
 
-Derleme yönergeleri yanı sıra **ayrıştırılmış kodu** penceresi, aşağıdaki isteğe bağlı bilgileri gösterebilir:  
-  
-- Her yönerge bulunduğu bellek adresi. Yerel uygulamalar için bu gerçek bellek adresidir. Visual Basic veya C#, işlev başından uzaklık olduğu.  
-  
-- Bütünleştirilmiş kodu türetildiği kaynak kodu.  
-  
-- Bayt olarak diğer bir deyişle, bayt temsillerini MSIL yönergeleri ve gerçek makine kodu.  
-  
-- Sembol adları için bellek adresleri.  
-  
-- Kaynak koduna karşılık gelen satır numaraları.  
-  
-Derleme dili talimatlarını oluşur *anımsatıcıları*, yönerge adları kısaltmaları olduğu ve *sembolleri* değişkenleri, kayıtlar ve sabitleri için. Her makine dil yönergesi, isteğe bağlı olarak bir veya daha fazla sembolleri tarafından izlenen bir çevirici dili anımsatıcı tarafından temsil edilir.  
-  
-Bütünleştirilmiş kodu, yoğun işlemci kasalarda kullanır veya ortak dil çalışma zamanı yönetilen kod için kaydeder. Kullanabileceğiniz **ayrıştırılmış kodu** penceresi ile birlikte **kaydeder** kayıt içeriğini incelemek sağlayan bir pencere.  
-  
-Assembly dili olarak değil, kendi işlenmemiş bir sayısal biçimde makine kodu yönergeleri görüntülemek için kullanın **bellek** penceresi ya da seçin **kodu bayt** kısayol menüsünden **ayrıştırılmış kodu**  penceresi.  
-  
+Bu özellik yalnızca adres seviyesinde hata ayıklamayı etkin olduğunda kullanılabilir. Betik veya SQL hata ayıklama için kullanılabilir değildir.
+
+Derleme yönergeleri yanı sıra **ayrıştırılmış kodu** penceresi, aşağıdaki isteğe bağlı bilgileri gösterebilir:
+
+- Her yönerge bulunduğu bellek adresi. Yerel uygulamalar için bu gerçek bellek adresidir. Visual Basic veya C#, işlev başından uzaklık olduğu.
+
+- Bütünleştirilmiş kodu türetildiği kaynak kodu.
+
+- Bayt olarak diğer bir deyişle, bayt temsillerini MSIL yönergeleri ve gerçek makine kodu.
+
+- Sembol adları için bellek adresleri.
+
+- Kaynak koduna karşılık gelen satır numaraları.
+
+Derleme dili talimatlarını oluşur *anımsatıcıları*, yönerge adları kısaltmaları olduğu ve *sembolleri* değişkenleri, kayıtlar ve sabitleri için. Her makine dil yönergesi, isteğe bağlı olarak bir veya daha fazla sembolleri tarafından izlenen bir çevirici dili anımsatıcı tarafından temsil edilir.
+
+Bütünleştirilmiş kodu, yoğun işlemci kasalarda kullanır veya ortak dil çalışma zamanı yönetilen kod için kaydeder. Kullanabileceğiniz **ayrıştırılmış kodu** penceresi ile birlikte **kaydeder** kayıt içeriğini incelemek sağlayan bir pencere.
+
+Assembly dili olarak değil, kendi işlenmemiş bir sayısal biçimde makine kodu yönergeleri görüntülemek için kullanın **bellek** penceresi ya da seçin **kodu bayt** kısayol menüsünden **ayrıştırılmış kodu**  penceresi.
+
 ## <a name="use-the-disassembly-window"></a>Ayrıştırılmış kod penceresini kullanma
 
 Etkinleştirmek için **ayrıştırılmış kodu** penceresinin altında **Araçları** > **seçenekleri** (veya **Araçları**  >  **Seçenekleri**) > **hata ayıklama**seçin **adres seviyesinde hata ayıklamayı**.
@@ -64,13 +64,13 @@ Etkinleştirmek için **ayrıştırılmış kodu** penceresinin altında **Araç
 Açmak için **ayrıştırılmış kodu** , hata ayıklama sırasında Seç penceresi **Windows** > **ayrıştırılmış kodu** veya basın **Alt** + **8**.
 
 > [!NOTE]
->  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).  
-  
-İsteğe bağlı bilgiler açıp kapatmak için sağ **ayrıştırılmış kodu** penceresinde ayarlayın ve kısayol menüsünde istenen seçenekleri temizleyin.  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [ayarlarına](../ide/environment-settings.md#reset-settings).
 
-Sol kenar boşluğundaki bir sarı ok geçerli yürütme noktasını işaretler. Yerel kod için CPU'nun program sayacı yürütme noktasını karşılık gelir. Bu konum, programınızda yürütülecek sonraki yönergeyi gösterir.  
+İsteğe bağlı bilgiler açıp kapatmak için sağ **ayrıştırılmış kodu** penceresinde ayarlayın ve kısayol menüsünde istenen seçenekleri temizleyin.
 
-## <a name="see-also"></a>Ayrıca bkz.  
+Sol kenar boşluğundaki bir sarı ok geçerli yürütme noktasını işaretler. Yerel kod için CPU'nun program sayacı yürütme noktasını karşılık gelir. Bu konum, programınızda yürütülecek sonraki yönergeyi gösterir.
+
+## <a name="see-also"></a>Ayrıca bkz.
 
 * [Yukarı veya aşağı bellek disk belleği](../debugger/how-to-page-up-or-down-in-memory.md)
 * [Hata ayıklayıcıda verileri görüntüleme](../debugger/viewing-data-in-the-debugger.md)

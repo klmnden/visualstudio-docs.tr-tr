@@ -19,12 +19,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b2d84ba17fb3fd866dcd73cd2821289c40153b6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5024e03fc48a4055cabba1e91dac42d61d6de805
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872674"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389091"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Yönetilen Kod için Kod Çözümlemesine Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,15 +48,13 @@ Yönetilen kod için kod analizi, yönetilen derlemeleri çözümler ve derlemel
   
  Uyarıların kaynak sıkıştırması özel öznitelikler ile gerçekleştirilir. Bir uyarıyı bastırmak için öznitelik Ekle `SuppressMessage` aşağıdaki örnekte gösterildiği gibi kaynak koda:  
   
- `[System.Diagnosis.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`  
-  
- `Public class MyClass`  
-  
- `{`  
-  
- `// code`  
-  
- `}`  
+ ```csharp
+ [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
+ Public class MyClass
+ {
+     // code
+ }
+ ```
   
  Daha fazla bilgi için [bastır uyarıları kullanarak SuppressMessage özniteliğini](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
   
