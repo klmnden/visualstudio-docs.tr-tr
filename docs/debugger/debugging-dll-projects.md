@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96dc4277bfdc783d969a2e98fb93fcc5975e9ad7
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: c00740b31e5b9d7cc5678bfc248e673a57e59ccf
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607633"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305318"
 ---
-# <a name="debug-dlls-in-visual-studio"></a>Visual Studio DLL'lerde hata ayıklama
+# <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio DLL'lerde hata ayıklama (C#, C++, Visual Basic F#)
 
 Bir DLL (dinamik bağlantı kitaplık) kodu ve birden fazla uygulama tarafından kullanılan verileri içeren bir kitaplıktır. Visual Studio kullanan oluşturabilir, oluşturmak, yapılandırmak ve DLL'lerin hata ayıklama. 
 
@@ -35,7 +35,7 @@ Bir DLL (dinamik bağlantı kitaplık) kodu ve birden fazla uygulama tarafından
 
 Aşağıdaki Visual Studio Proje şablonları, DLL'leri oluşturabilirsiniz:
 
-- C#veya Visual Basic sınıf kitaplığı 
+- C#, Visual Basic veya F# sınıf kitaplığı 
 - C#veya Visual Basic Windows Forms Denetim (WCF) kitaplığı 
 - C++ dinamik bağlantı kitaplığı (DLL)
 
@@ -113,7 +113,6 @@ Bir DLL çağıran uygulama aşağıdakilerden biri olabilir:
 - Web'de bulundu ve bir URL yoluyla erişildi.  
 - Bir web uygulaması bir web sayfasıyla DLL katıştırır.  
   
-
 Çağıran bir uygulamadan bir DLL'de hata ayıklamak için şunları yapabilirsiniz:  
   
 - Arama uygulaması için projeyi açmak ve seçerek hata ayıklamayı Başlat **hata ayıklama** > **hata ayıklamayı Başlat** ya basarak **F5**.  
@@ -131,7 +130,7 @@ Hata ayıklama sırasında kullanabilirsiniz **modülleri** DLL'leri doğrulamak
 Kullanabileceğiniz **hemen** penceresi DLL işlevleri veya yöntemleri, tasarım zamanında değerlendirilemiyor. **Hemen** penceresi çağıran bir uygulama rolü oynar. 
 
 >[!NOTE]
->Kullanabileceğiniz **hemen** penceresi ile çoğu proje türü tasarım zamanında. Şu anda .NET Core, SQL veya web projeleri için desteklenir.
+>Kullanabileceğiniz **hemen** penceresi ile çoğu proje türü tasarım zamanında. SQL, web projeleri veya komut dosyası için desteklenmiyor.
 
 Örneğin, bir yöntem test etmek için adlı `Test` sınıfında `Class1`:
 
@@ -143,7 +142,7 @@ Kullanabileceğiniz **hemen** penceresi DLL işlevleri veya yöntemleri, tasarı
    Class1 obj = new Class1();  
    ```  
   
-   C# seçeneğinde tüm adlar tam olarak nitelenmiş olmalıdır. İfadeyi değerlendirmek dil hizmeti çalıştığında, yöntemlerin veya değişkenlerin geçerli kapsamda ve bağlam içinde olmalıdır.  
+   İçinde C#, tüm adlar tam olarak nitelenmiş olmalıdır. İfadeyi değerlendirmek dil hizmeti çalıştığında, yöntemlerin veya değişkenlerin geçerli kapsamda ve bağlam içinde olmalıdır.  
    
 1. Varsayarak `Test` alır `int` parametresi değerlendirmek `Test` kullanarak **hemen** penceresi:  
    

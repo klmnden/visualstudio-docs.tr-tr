@@ -1,5 +1,5 @@
 ---
-title: "&lt;eklentisi&gt; öğesi (Visual Studio'da Office Geliştirme)"
+title: "&lt;eklenti&gt; öğesi (Visual Studio'da Office Geliştirme)"
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -12,20 +12,20 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <addIn> element
 - addin element
 - <addin> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d2ab0264452630892d492946462fbf9ad1639d0
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: bb2161cbc6633163ba8fba3f8eb678cb0ad72333
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262388"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304473"
 ---
-# <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;eklentisi&gt; öğesi (Visual Studio'da Office Geliştirme)
-  **Eklentisi** öğesinin `vstav3` ad alanı, Microsoft Office VSTO eklentileri ve Visual Studio ile geliştirilen belge düzeyi özelleştirmeleri özgü bilgileri içerir.  
+# <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;eklenti&gt; öğesi (Visual Studio'da Office Geliştirme)
+  **Eklentisi** öğesinin `vstav3` ad alanı, Microsoft Office, VSTO eklentileri ve Visual Studio ile geliştirilen belge düzeyi özelleştirmeleri için özel bilgiler içerir.  
 
 ## <a name="syntax"></a>Sözdizimi  
 
@@ -51,12 +51,12 @@ ms.locfileid: "34262388"
 </addIn>  
 ```  
 
-## <a name="elements-and-attributes"></a>Öğeleri ve öznitelikleri  
- **Eklentisi** öğesinin `vstav3` ad alanı, Office çözümü ve Microsoft Office uygulaması hakkında bilgi içerir. Bu öğe aşağıdaki ad alanında olması gerekir: `vstav3=urn:schemas-microsoft-com:vsta.v3`. Alt öğeler de bu ad alanında olması gerekir.  
+## <a name="elements-and-attributes"></a>Öğeler ve öznitelikler  
+ **Eklentisi** öğesinin `vstav3` ad alanı Office çözümünün ve Microsoft Office uygulamasının hakkındaki bilgileri içerir. Bu öğe aşağıdaki ad alanında olması gerekir: `vstav3=urn:schemas-microsoft-com:vsta.v3`. Alt öğeleri de bu ad alanında olması gerekir.  
 
  `addin` Öğesi özniteliklere sahip değildir.  
 
- `addin` Öğe aşağıdaki alt öğeleri vardır.  
+ `addin` Öğesi şu alt öğelerden sahiptir.  
 
 ### <a name="entrypoints"></a>giriş noktaları  
  Gerekli. **Giriş noktaları** öğesi açıklanan [ &#60;giriş noktaları&#62; öğesi &#40;Visual Studio'da Office geliştirme&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
@@ -70,10 +70,10 @@ ms.locfileid: "34262388"
 ### <a name="application"></a>uygulama  
  Gerekli. **Uygulama** öğesi açıklanan [ &#60;uygulama&#62; öğesi &#40;Visual Studio'da Office geliştirme&#41;](../vsto/application-element-office-development-in-visual-studio.md).  
 
-## <a name="document-level-customization-example"></a>Belge düzeyi özelleştirme örnek  
+## <a name="document-level-customization-example"></a>Belge düzeyi özelleştirmesi örneği  
 
 ### <a name="description"></a>Açıklama  
- Aşağıdaki kod örneği gösterilmektedir **eklentisi** kullanılarak dağıtılan bir belge düzeyi Office çözümü öğesinde [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Bu kod örneği sağlanan daha büyük bir örneğin parçasıdır [uygulama bildirimleri Office çözümleri için](../vsto/application-manifests-for-office-solutions.md).  
+ Aşağıdaki kod örneğinde gösterilmiştir **eklentisi** kullanılarak dağıtılan bir belge düzeyinde Office çözüm öğesinde [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Bu kod örneği, sağlanan daha büyük bir örneğin parçasıdır [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md).  
 
 ### <a name="code"></a>Kod  
 
@@ -137,7 +137,7 @@ ms.locfileid: "34262388"
 ## <a name="vsto-add-in-example"></a>VSTO eklenti örneği  
 
 ### <a name="description"></a>Açıklama  
- Aşağıdaki kod örneği gösterilmektedir **eklentisi** kullanılarak dağıtılan uygulama düzeyi Office çözümünü öğesinde [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Bu kod örneği sağlanan daha büyük bir örneğin parçasıdır [uygulama bildirimleri Office çözümleri için](../vsto/application-manifests-for-office-solutions.md).  
+ Aşağıdaki kod örneğinde gösterilmiştir **eklentisi** kullanılarak dağıtılmış uygulama düzeyi Office çözümünü öğesinde [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Bu kod örneği, sağlanan daha büyük bir örneğin parçasıdır [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md).  
 
 ### <a name="code"></a>Kod  
 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio - 1. Bölüm verilere WPF denetimleri bağlama | Microsoft Docs
+title: -1. Bölüm verilere WPF denetimleri bağlama
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1dadf656ad287512a956bc510bbbcc043d21ab07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4fa8ddf42cad6ad613846ceff2b49739b7dc1c18
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942913"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305344"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio'da verilere WPF denetimleri bağlama
 
@@ -51,7 +51,6 @@ Aşağıdaki tabloda sürükleyerek gerçekleştirilebilir görevleri listeler *
 Bir öğeyi sürüklediğinizde **veri kaynakları** penceresine [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)], Visual Studio'nun oluşturduğu [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , yeni bir veri bağlı denetim tanımlayan (veya varolan bir denetimi veri kaynağına bağlar). Bazı veri kaynakları için Visual Studio kod veri kaynağını verilerle dolduran arka plan kod dosyasında da oluşturur.
 
 Aşağıdaki tabloda [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] ve Visual Studio'nun her veri kaynağı türü için oluşturduğu kod **veri kaynakları** penceresi.
-
 
 | Veri kaynağı | Bir denetimi veri kaynağına bağlayan XAML oluşturma | Veri kaynağını verilerle dolduran kod oluşturma |
 | - | - | - |
@@ -101,7 +100,7 @@ Visual Studio aşağıdakileri yapan XAML oluşturur:
 Bir nesneyi veya özelliği sürüklediğinizde **veri kaynakları** Tasarımcı, Visual Studio penceresine oluşturur [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] verilere bağlı bir denetim oluşturur (veya varolan bir denetimi nesneye veya özelliğe bağlar). Ancak, Visual Studio nesneyi verilerle doldurmak için kod oluşturmaz. Bu kodu kendiniz yazmalısınız.
 
 > [!NOTE]
->  Özel sınıflar genel olmalıdır ve, varsayılan olarak, parametresiz bir oluşturucusu vardır. Bunlar sözdizimlerinde "dot" sahip iç içe geçmiş can'tbe sınıflar. Daha fazla bilgi için [XAML ve özel sınıflar için WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
+> Özel sınıflar genel olmalıdır ve, varsayılan olarak, parametresiz bir oluşturucusu vardır. Bunlar sözdizimlerinde "dot" sahip iç içe geçmiş can'tbe sınıflar. Daha fazla bilgi için [XAML ve özel sınıflar için WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
 
 Visual Studio'nun oluşturduğu [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] aşağıdakileri yapar:
 

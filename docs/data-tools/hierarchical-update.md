@@ -23,18 +23,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 56b85f96815fca34330f57f6b653c497f21a835b
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 52225ba4801fcee92b3f68fd6ec1cf7cc6c63086
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750805"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305721"
 ---
 # <a name="hierarchical-update"></a>Hiyerarşik güncelleştirme
 
 *Hiyerarşik güncelleştirme* tutarlılığı korurken (bir veri kümesinden iki veya daha fazla ilgili tablo ile) güncelleştirilmiş verileri bir veritabanına geri kaydediliyor işlemini ifade eder. *Bilgi tutarlılığını* veritabanında ve ekleme, güncelleştirme ve ilgili kayıt silme davranışını kontrol kısıtlamaları tarafından sağlanan tutarlık kuralları ifade eder. Örneğin, o müşteri için oluşturulacak siparişler izin vermeden önce bir müşteri kaydı oluşturulmasını zorlar tutarlılığı olur.  Veri kümelerindeki ilişkiler hakkında daha fazla bilgi için bkz: [veri kümelerindeki ilişkiler](../data-tools/relationships-in-datasets.md).
 
-Hiyerarşik güncelleştirme özelliğini kullanan bir `TableAdapterManager` yönetmek için `TableAdapter`s'te bir türü belirtilmiş veri kümesi. `TableAdapterManager` Bileşeni olan bir Visual Studio tarafından oluşturulan sınıfı değil Bu nedenle parçası [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Bir tablo veri kaynakları penceresinden bir Windows Form veya WPF sayfasına sürüklediğinizde, Visual Studio TableAdapterManager türünde bir değişken bir form veya sayfa ekler ve bileşen tepsisinde Tasarımcısı'nda bkz. İlgili ayrıntılı bilgi için `TableAdapterManager` TableAdapterManager başvuru bölümüne bakın, sınıf [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+Hiyerarşik güncelleştirme özelliğini kullanan bir `TableAdapterManager` yönetmek için `TableAdapter`s'te bir türü belirtilmiş veri kümesi. `TableAdapterManager` Bileşeni olan bir Visual Studio tarafından oluşturulan sınıfı değil Bu nedenle parçası [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Bir tablodan sürüklediğinizde **veri kaynakları** penceresini bir Windows Form ya da WPF sayfasına Visual Studio, belirli bir form veya sayfadaki TableAdapterManager türünde bir değişken ekler ve bileşen tepsisinde Tasarımcısı'nda bkz. İlgili ayrıntılı bilgi için `TableAdapterManager` TableAdapterManager başvuru bölümüne bakın, sınıf [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
 Varsayılan olarak, bir veri kümesi ilişkili tablolar "yalnızca ilişkileri" yabancı anahtar kısıtlamaları zorunlu değildir, yani değerlendirir. Tasarım zamanında bu ayarı kullanarak değiştirebilirsiniz **veri kümesi Tasarımcısı**. Ortaya çıkarmak için iki tablo arasında ilişki satırı **ilişkisi** iletişim kutusu. Burada yaptığınız değişiklikler belirleyecek nasıl `TableAdapterManager` ne zaman davranışını göndermeden değişiklikleri ilişkili tabloların veritabanına geri.
 
@@ -65,7 +65,7 @@ Güncelleştirmeleri gerçekleştirmek için sırasını ayarlama ekler, güncel
 > [!NOTE]
 > Güncelleştirme sırası her şey dahil olduğunu anlamak önemlidir. Güncelleştirme yapıldığında, diğer bir deyişle, ekler ve ardından silmeleri kümesindeki tüm tabloların gerçekleştirilir.
 
-Ayarlanacak `UpdateOrder` sürüklemeye sonra özelliği [veri kaynakları penceresi](add-new-data-sources.md) bir forma seçin `TableAdapterManager` bileşeni Tepsi ve ardından `UpdateOrder` özelliğinde **özellikleri** penceresi.
+Ayarlanacak `UpdateOrder` sürüklemeye sonra özelliği [veri kaynakları penceresi](add-new-data-sources.md#data-sources-window) bir forma seçin `TableAdapterManager` bileşeni Tepsi ve ardından `UpdateOrder` özelliğinde **özellikleri** penceresi.
 
 ## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>Hiyerarşik güncelleştirme gerçekleştirmeden önce yedek bir kopyası, bir veri kümesi oluşturma
 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da verilere Windows Forms denetimleri bağlama
+title: Verilere Windows Forms denetimleri bağlama
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,61 +19,68 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4652d8dd3e9be582bc15c4644711accc06fd283f
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 596475ed3a5e1cac535ca0cdf43980af44bd4bf1
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845528"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304642"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Visual Studio'da verilere Windows Forms denetimleri bağlama
-Windows Forms veri bağlama tarafından uygulamanızı kullanıcılara verileri görüntüleyebilir. Bu veri bağlama denetimleri oluşturmak için öğelerinden sürükleyin **veri kaynakları** Visual Studio'da Windows Forms tasarımcıya penceresi.
+
+Windows Forms veri bağlama ile uygulamanızın kullanıcılarına verileri görüntüleyebilirsiniz. Bu verilere bağlı denetimler oluşturmak için öğeleri sürükleyin **veri kaynakları** penceresinden Windows Form Tasarımcısı'nda Visual Studio.
 
 ![Veri kaynağı sürükleme işlemi](../data-tools/media/raddata-data-source-drag-operation.png)
 
-Öğeleri sürükleyin önce bağlamak istediğiniz denetim türünü ayarlayabilirsiniz. Farklı değerler tablosu kendisiyle veya tek bir sütun hangisini bağlı olarak görünür.  Özel değerler de ayarlayabilirsiniz. Bir tablo için **ayrıntıları** her sütun için ayrı bir denetim bağlı olduğu anlamına gelir.
+> [!TIP]
+> Varsa **veri kaynakları** penceresi görünür değilse, bunu seçerek açabilirsiniz **görünümü** > **diğer Windows** > **veri kaynakları** , veya basarak **Shift**+**Alt**+**D**. Visual Studio'da görmek için açık bir projeniz olmalıdır **veri kaynakları** penceresi.
+
+Öğeleri sürükleme önce bağlamak istediğiniz denetim türünü ayarlayabilirsiniz. Tablo kendisi veya bir bireysel sütunda seçmenize bağlı olarak farklı değerler görüntülenir.  Özel değerler de ayarlayabilirsiniz. Bir tablo için **ayrıntıları** her sütun için ayrı bir denetim bağlı olduğu anlamına gelir.
 
 ![DataGridView için veri kaynağına bağlama](../data-tools/media/raddata-bind-data-source-to-datagridview.png)
 
 ## <a name="bindingsource-and-bindingnavigator-controls"></a>BindingSource ve BindingNavigator denetimleri
-<xref:System.Windows.Forms.BindingSource> Bileşen iki amaca hizmet eder. İlk olarak, verilere denetimler bağlama sırasında bir soyutlama katmanı sağlar. Form üzerinde denetimleri bağlı <xref:System.Windows.Forms.BindingSource> bir veri kaynağına doğrudan yerine bileşen. İkinci olarak, bu nesneler koleksiyonunu yönetebilirsiniz. Bir türe eklemek <xref:System.Windows.Forms.BindingSource> bu tür bir liste oluşturur.
 
-Hakkında daha fazla bilgi için <xref:System.Windows.Forms.BindingSource> bileşeni, bkz:
+<xref:System.Windows.Forms.BindingSource> Bileşen iki amaca hizmet eder. İlk olarak denetimlere veri bağlama sırasında bir soyutlama katmanı sağlar. Form üzerinde denetimleri için ilişkili <xref:System.Windows.Forms.BindingSource> bir veri kaynağına doğrudan yerine bileşen. İkinci olarak, bu nesnelerin bir koleksiyonunu yönetebilirsiniz. Bir türe eklemek <xref:System.Windows.Forms.BindingSource> o türün bir liste oluşturur.
 
--   [BindingSource bileşeni](/dotnet/framework/winforms/controls/bindingsource-component)
+Hakkında daha fazla bilgi için <xref:System.Windows.Forms.BindingSource> bileşeni için bkz:
 
--   [BindingSource bileşenine genel bakış](/dotnet/framework/winforms/controls/bindingsource-component-overview)
+- [BindingSource bileşeni](/dotnet/framework/winforms/controls/bindingsource-component)
 
--   [BindingSource bileşeni mimarisi](/dotnet/framework/winforms/controls/bindingsource-component-architecture)
+- [BindingSource bileşenine genel bakış](/dotnet/framework/winforms/controls/bindingsource-component-overview)
 
-[BindingNavigator denetimi](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms) bir Windows uygulaması tarafından görüntülenen verileri gezinme için bir kullanıcı arabirimi sağlar.
+- [BindingSource bileşeni mimarisi](/dotnet/framework/winforms/controls/bindingsource-component-architecture)
 
-## <a name="bind-to-data-in-a-datagridview-control"></a>DataGridView denetiminde veri bağlama
-İçin bir [DataGridView denetimi](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms), tablonun tamamını tek denetime bağlı. Sürüklediğinizde bir **DataGridView** forma bir aracı Şerit kayıtları gezinmek için (<xref:System.Windows.Forms.BindingNavigator>) da görüntülenir. A [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür. Aşağıdaki çizimde, bir [TableAdapterManager](https://msdn.microsoft.com/library/bb384426.aspx) Müşteriler tablosunu Siparişler tablosuna bir ilişki içerdiğinden de eklenir. Bu değişkenleri tüm form sınıfında özel üye olarak otomatik olarak oluşturulan kodda bildirilir. Doldurma için otomatik olarak oluşturulan kodu **DataGridView** bulunan `Form_Load` olay işleyicisi. Veritabanını güncelleştirmek için verileri kaydetmek için kod bulunan `Save` için olay işleyicisini **BindingNavigator**. Taşıma veya bu kod gerektiği gibi değiştirin.
+[BindingNavigator denetimine](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms) bir Windows uygulaması tarafından görüntülenen veriler aracılığıyla gezinmek için bir kullanıcı arabirimi sağlar.
 
-![GridView BindingNavigator ile](../data-tools/media/raddata-gridview-with-bindingnavigator.png)
+## <a name="bind-to-data-in-a-datagridview-control"></a>DataGridView denetimine veri bağlama
 
-Davranışını özelleştirebilirsiniz **DataGridView** ve **BindingNavigator** sağ üst köşesindeki her akıllı etiket tıklayarak:
+İçin bir [DataGridView denetiminde](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms), tablonun tamamını tek bir denetim için bağlıdır. Sürüklediğinizde bir **DataGridView** forma bir aracı Şerit Kayıtlarda gezinmek için (<xref:System.Windows.Forms.BindingNavigator>) de görünür. A [veri kümesi](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür. Aşağıdaki çizimde, bir [TableAdapterManager](https://msdn.microsoft.com/library/bb384426.aspx) Müşteriler tablosunda Siparişler tablosu için bir ilişkisi olduğundan de eklenir. Bu değişkenler tüm otomatik olarak oluşturulan kodda form sınıfında özel üyeler olarak bildirilir. Doldurma için otomatik olarak oluşturulan kod **DataGridView** bulunan `Form_Load` olay işleyicisi. Veritabanını güncellemek için verileri kaydetmek için kod bulunan `Save` için olay işleyicisi **BindingNavigator**. Geçiş yapabilir veya bu kodu gerektiği gibi değiştirin.
 
-![DataGridView ve bağlama Gezgini akıllı etiketler](../data-tools/media/raddata-datagridview-and-binding-navigator-smart-tags.png)
+![BindingNavigator GridView](../data-tools/media/raddata-gridview-with-bindingnavigator.png)
 
-Denetimleri, uygulamanızın ihtiyaçlarını içinde kullanılabilir değilse **veri kaynakları** penceresinde denetimlerini ekleyebilirsiniz. Daha fazla bilgi için bkz: [veri kaynakları penceresine özel denetimler ekleme](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+Davranışını özelleştirebilirsiniz **DataGridView** ve **BindingNavigator** her sağ üst köşedeki akıllı etiket tıklayın:
 
-Öğelerden sürükleyebilirsiniz **veri kaynakları** denetimi veriye bağlamak için zaten bir form üzerinde denetimleri üzerine penceresi. Zaten veriye bağlı bir denetim en son sürüklediğiniz öğesine bağlamaları sıfırlama verileri vardır. Geçerli bırakma hedeflerini olması için denetimleri temel alınan veri türünü buradan oturum öğesi sürüklenen görüntüleyebilen olmalıdır **veri kaynakları** penceresi. Örneğin, bir veri türüne sahip bir öğe sürüklemek için geçerli değil <xref:System.DateTime> üzerine bir <xref:System.Windows.Forms.CheckBox>, çünkü <xref:System.Windows.Forms.CheckBox> bir tarih görüntüleme yeteneğine sahip değil.
+![DataGridView ve bağlama Gezgin akıllı etiketler](../data-tools/media/raddata-datagridview-and-binding-navigator-smart-tags.png)
 
-## <a name="bind-to-data-in-individual-controls"></a>Tek denetimleri verilere bağlama
-Bir veri kaynağına bağladığınızda **ayrıntıları**, kümesindeki her sütun için ayrı bir denetim bağlıdır.
+Denetimler, uygulamanızın ihtiyaçlarını içinde kullanılabilir değilse, **veri kaynakları** penceresinde denetimler ekleyebilirsiniz. Daha fazla bilgi için [veri kaynakları penceresine özel denetimler ekleme](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+
+Öğeleri sürükleyerek de **veri kaynakları** penceresinden denetimin veriye bağlamak için zaten bir form üzerinde denetimleri. En son sürüklediğinizde sürüklenen öğe için bağlamaları sıfırlama verilerini verilere zaten bağlı bir denetim vardır. Geçerli bırakma hedefleri olması için denetimleri temel alınan veri türünü buradan oturum sürüklenen öğe görüntüleyebilen olmalıdır **veri kaynakları** penceresi. Örneğin, bir veri türüne sahip bir öğe sürüklemek için geçerli değil <xref:System.DateTime> üzerine bir <xref:System.Windows.Forms.CheckBox>, çünkü <xref:System.Windows.Forms.CheckBox> tarih görüntüleme yeteneğine sahip değil.
+
+## <a name="bind-to-data-in-individual-controls"></a>Tek denetimleri verilere bağlayın
+
+Bir veri kaynağına bağladığınızda **ayrıntıları**, her sütun kümesindeki ayrı bir denetime bağlı.
 
 ![Ayrıntılar için veri kaynağına bağlama](../data-tools/media/raddata-bind-data-source-to-details.png)
 
 > [!IMPORTANT]
-> Önceki çizimde unutmayın, Siparişler tablosundaki müşteriler tablosunun siparişleri özelliğinden sürükleyin. Bağlama tarafından `Customer.Orders` özelliği,'ın gezinti komutları yapılan **DataGridView** ayrıntıları denetimlerinde hemen yansıtılır. Siparişler tablosundan sürüklenen, denetimleri hala veri kümesine bağlı, ancak bunlar ile eşitlenmemesi değil **DataGridView**.
+> Önceki resimde unutmayın, Siparişler tablosundan Müşteriler tablosundaki siparişler özelliğinden sürükleyin. Bağlama tarafından `Customer.Orders` özellik, Gezinti komutları içinde yapılan **DataGridView** ayrıntıları denetimlerinde anında yansıtılır. Siparişler tablosundan sürüklediğiniz denetimler hala veri kümesine bağlı, ancak bunlar değil ile eşitlenmemiş **DataGridView**.
 
-Aşağıdaki çizimde Müşteriler tablosunda siparişleri özelliği bağlı sonra forma eklenen verilere bağlı denetimler varsayılan gösterir **ayrıntıları** içinde **veri kaynakları** penceresi.
+Müşteriler tablosundaki siparişler özelliği bağlı sonra forma eklenen verilere bağlı denetimler varsayılan aşağıda gösterilmiştir **ayrıntıları** içinde **veri kaynakları** penceresi.
 
-![Ayrıntılar için bağlı Siparişler tablosu](../data-tools/media/raddata-orders-table-bound-to-details.png)
+![Siparişler tablosu için ayrıntıları bağlı](../data-tools/media/raddata-orders-table-bound-to-details.png)
 
-Ayrıca, her denetim akıllı etiket olduğunu unutmayın. Bu etiketi yalnızca o denetimine uygulamak özelleştirmeleri sağlar.
+Ayrıca, her denetimi akıllı etiket olduğuna dikkat edin. Bu etiket yalnızca bu denetime uygulamak özelleştirmeleri sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

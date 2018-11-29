@@ -11,12 +11,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8909ef785bd721e5b07046329e4841cebc5ec24e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5993256b41a07c4861ef2def58dc14d7fd849313
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822078"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305617"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF ve Entity Framework 6 ile basit veri uygulaması oluşturma
 
@@ -74,7 +74,7 @@ Bu örnek, SQL Server Express LocalDB ve Northwind örnek veritabanını kullan�
 
     ![Model için veritabanı nesneleri seçin](../data-tools/media/raddata-choose-ef-objects.png)
 
-5. Sihirbaz, Entity Framework modelini temsil eden C# sınıfları oluşturur. Düz eski sınıflardır C# sınıfları ve bunların hangi biz olan veri bağlama WPF kullanıcı arabirimi. *.Edmx* dosya, ilişkileri ve veritabanındaki nesneleri sınıfları ilişkilendirir diğer meta veriler açıklanmaktadır. *.Tt* dosyalarıdır, model ve veritabanı değişiklikleri kaydetme işleyen kod oluşturan T4 şablonları. İçinde bu dosyaları gördüğünüz **Çözüm Gezgini** Northwind_model düğümü altında:
+5. Sihirbazın oluşturduğu C# Entity Framework modelini temsil eden sınıf. Düz eski sınıflardır C# sınıfları ve bunların hangi biz olan veri bağlama WPF kullanıcı arabirimi. *.Edmx* dosya, ilişkileri ve veritabanındaki nesneleri sınıfları ilişkilendirir diğer meta veriler açıklanmaktadır. *.Tt* dosyalarıdır, model ve veritabanı değişiklikleri kaydetme işleyen kod oluşturan T4 şablonları. İçinde bu dosyaları gördüğünüz **Çözüm Gezgini** Northwind_model düğümü altında:
 
       ![Çözüm Gezgini EF modeli dosyaları](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 
@@ -116,7 +116,7 @@ Kendi veri bağlama kod yazmak mümkündür, ancak bunu sizin için Visual Studi
         </Grid.RowDefinitions>
     ```
 
-5.  Artık *MainWindow.xaml* böylece Tasarımcısı'nda görüntülüyorsunuz. Bu neden **veri kaynakları** yanındaki Visual Studio penceresinin kenar boşluğundaki bir seçenek olarak görünmesi için pencere **araç kutusu**. Tıklayın penceresini veya başka basın için sekmesinde **Shift**+**Alt**+**D** veya tercih **görünümü**  >  **Diğer Windows** > **veri kaynakları**. Her bir özellik müşteriler sınıf kendi bireysel metin kutusunda görüntülemek için kullanacağız. İlk olarak, oka tıklayarak **müşteriler** birleşik giriş kutusu ve seçin **ayrıntıları**. Ardından, Tasarımcı Orta satırında gitmek istediğiniz bilebilmesi düğümü tasarım yüzeyine orta kısmını sürükleyin. Bunu misplace ise satır XAML daha sonra el ile belirtebilirsiniz. Varsayılan olarak, denetimleri kılavuz öğesi dikey olarak yerleştirilir ancak formda istiyor ancak bu noktada, bunları düzenleyebilirsiniz. Örneğin, bu put mantıklı olabilir **adı** adresi yukarıda üstte metin kutusu. Bu makalede örnek uygulama alanları yeniden sıralar ve bunları iki sütuna yeniden düzenler.
+5.  Artık *MainWindow.xaml* Tasarımcısı'nda görüntülediğiniz böylece. Bu neden **veri kaynakları** yanındaki Visual Studio penceresinin kenar boşluğundaki bir seçenek olarak görünmesi için pencere **araç kutusu**. Tıklayın penceresini veya başka basın için sekmesinde **Shift**+**Alt**+**D** veya tercih **görünümü**  >  **Diğer Windows** > **veri kaynakları**. Her bir özellik müşteriler sınıf kendi bireysel metin kutusunda görüntülemek için kullanacağız. İlk olarak, oka tıklayarak **müşteriler** birleşik giriş kutusu ve seçin **ayrıntıları**. Ardından, Tasarımcı Orta satırında gitmek istediğiniz bilebilmesi düğümü tasarım yüzeyine orta kısmını sürükleyin. Bunu misplace ise satır XAML daha sonra el ile belirtebilirsiniz. Varsayılan olarak, denetimleri kılavuz öğesi dikey olarak yerleştirilir ancak formda istiyor ancak bu noktada, bunları düzenleyebilirsiniz. Örneğin, bu put mantıklı olabilir **adı** adresi yukarıda üstte metin kutusu. Bu makalede örnek uygulama alanları yeniden sıralar ve bunları iki sütuna yeniden düzenler.
 
      ![Müşteriler veri kaynağı tek denetimleri bağlama](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 

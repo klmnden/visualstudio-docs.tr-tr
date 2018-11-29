@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fb01ef51c0a44047e2caf2f23634ebe741cd2dcb
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: f665d860597bc99d7c9e496c115a82a60d596e09
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174986"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305539"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>İzlenecek yol: INSERT, update ve varlık sınıflarının silme davranışını özelleştirme
 
@@ -75,7 +75,7 @@ SQL sınıflarına LINQ ile çalışma ve bir Windows formunda veri görüntüle
 
 1. Visual Studio'da üzerinde **dosya** menüsünde **yeni** > **proje**.
 
-2. Ya da genişletin **Visual C#** veya **Visual Basic** seçip sol bölmedeki **Windows Masaüstü**.
+2. Ya da genişletin **Visual C#**  veya **Visual Basic** seçip sol bölmedeki **Windows Masaüstü**.
 
 3. Orta bölmede seçin **Windows Forms uygulaması** proje türü.
 
@@ -108,7 +108,7 @@ Veritabanı tabloları tablolardan sürükleyerek eşlenen SQL sınıflarına LI
 
 3.  Üzerinde **derleme** menüsünde tıklatın **derleme UpdatingwithSProcsWalkthrough** Projeyi derlemek için.
 
-4.  Üzerinde **veri** menüsünü tıklatın **veri kaynaklarını Göster**.
+4.  Açmak için **veri kaynakları** penceresi, **veri** menüsünde tıklatın **veri kaynaklarını Göster**.
 
 5.  İçinde **veri kaynakları** penceresinde tıklayın **yeni veri kaynağı Ekle**.
 
@@ -269,7 +269,7 @@ Uygulama gereksinimlerinize bağlı olarak, SQL varlık sınıflarına LINQ olu�
 
 - Eşzamanlılık denetimi sırasında güncelleştirmeleri uygulayın. Bilgi için [iyimser eşzamanlılık: genel bakış](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview).
 
-- Verilere filtre uygulamak için LINQ sorguları ekleyin. Bilgi için [(C#) LINQ sorgularına giriş](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
+- Verilere filtre uygulamak için LINQ sorguları ekleyin. Bilgi için [LINQ sorgularına giriş (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

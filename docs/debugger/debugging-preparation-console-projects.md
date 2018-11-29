@@ -19,25 +19,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 516b2a6191cc76c3380875fda4679048e255f394
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 29c54c4bfdeb0341270d78ce677b6085d6f159a2
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902087"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305188"
 ---
-# <a name="debugging-preparation-console-projects"></a>Hata Ayıklama Hazırlığı: Konsol Projeleri
+# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Hata ayıklama hazırlığı: Konsol projeleri (C#, C++, Visual Basic F#)
+
 Bir konsol projesinde hata ayıklamaya hazırlanıyor, bazı ek hususlar ile bir Windows projede hata ayıklamak hazırlamaya benzerdir. Daha fazla bilgi için [Windows Forms uygulamaları](../debugger/debugging-preparation-windows-forms-applications.md), ve [hata ayıklama hazırlığı: Windows Forms uygulamaları (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). Tüm konsol uygulamaları benzerlik nedeniyle, bu konu, aşağıdaki proje türlerini içerir:  
   
-- C# konsol uygulaması  
-  
-- Visual Basic konsol uygulaması  
+- C#, Visual Basic ve F# konsol uygulaması  
   
 - C++ konsol uygulaması (.NET)  
   
 - C++ konsol uygulaması (Win32)  
   
-  Konsol uygulamanız için komut satırı bağımsız değişkenleri belirtmeniz gerekebilir. Daha fazla bilgi için [C++ hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-a-cpp-debug-configuration.md), [Visual Basic hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), veya [C# hata ayıklama yapılandırmaları için proje ayarları ](../debugger/project-settings-for-csharp-debug-configurations.md).  
+  Konsol uygulamanız için komut satırı bağımsız değişkenleri belirtmeniz gerekebilir. Daha fazla bilgi için [C++ hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-a-cpp-debug-configuration.md), [Visual Basic hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), veya [proje ayarları C# hata ayıklama Yapılandırmaları](../debugger/project-settings-for-csharp-debug-configurations.md).  
   
   Bu bağımsız değişkenler tüm proje özellikleri gibi Visual Studio oturumları arasında hata ayıklama oturumları arasında kalıcı hale getirin. Daha önce hataları ayıklanmakta bir konsol uygulaması ise, bu nedenle, girdiğiniz önceki oturumlarını bağımsız değişkenleri olabilir unutmayın  **\<Proje > özellik sayfaları** iletişim kutusu.  
   
@@ -46,13 +45,11 @@ Bir konsol projesinde hata ayıklamaya hazırlanıyor, bazı ek hususlar ile bir
 ## <a name="starting-the-application"></a>Uygulama başlatılıyor  
  Bazı konsol uygulamaları başlattığınızda tamamlanmak üzere çalıştırılmasını ve çıkın. Bu davranış yürütme sonu ve hata ayıklama için yeterli zaman sağlamayabilir. Bir uygulamada hata ayıklamak için uygulamayı başlatmak için aşağıdaki prosedürlerden birini kullanın:  
   
-- Uygulamanızı çalıştırmaya başlar ve kesme noktasına erişene kadar çalışır.  
+- Kodunuzda bir kesme noktası ayarlayın ve uygulamanızı başlatın.
   
-- Uygulamanız başlar ve kaynak kodu ilk satırında hemen keser.  
+- Uygulama kullanmaya başlayın **F10** (**hata ayıklama** > **Step Over**) veya **F11** (**hataayıklama**  >  **İçine adımla**) ve ardından gibi diğer seçenekleri kullanarak kod gidin **Çalıştır'ı tıklatın**.
   
-- Bir kaynak kodu penceresindeki bir satıra sağ tıklayın ve seçin **imlece kadar Çalıştır**.  
-  
-   Uygulamanız başlar ve önce satır kesme noktasına erişildiğinde seçili satır için ya da bir kesme noktası için çalışır.  
+- Kod Düzenleyicisi'nde bir satıra sağ tıklayıp **imlece kadar Çalıştır**.  
   
   Bir konsol uygulaması hata ayıklaması yaparken, komut isteminden yerine Visual Studio uygulamayı başlatmak isteyebilirsiniz. Bu durumda, uygulamayı komut isteminden başlatmak ve Visual Studio hata ayıklayıcısını ekleyebilir. Daha fazla bilgi için [çalışan işlemlere ekleme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
@@ -62,6 +59,6 @@ Bir konsol projesinde hata ayıklamaya hazırlanıyor, bazı ek hususlar ile bir
  [Yerel kodda hata ayıklama](../debugger/debugging-native-code.md)   
  [Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)   
  [Visual C++ proje türleri](../debugger/debugging-preparation-visual-cpp-project-types.md)   
- [C#, F # ve Visual Basic proje türleri](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [C#, F#ve Visual Basic proje türleri](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [C++ hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)

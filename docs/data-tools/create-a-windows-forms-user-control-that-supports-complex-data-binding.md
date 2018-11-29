@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: db8059cf34c2de9a52cda18dd09ce6040bf8d841
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7de5cbfe7de8919143cd30517c18f9e5ad6ba598
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937908"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305254"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Karmaşık veri bağlamayı destekleyen bir Windows Forms kullanıcı denetimi oluşturma
 
@@ -51,9 +51,9 @@ Bu kılavuz boyunca, öğreneceksiniz nasıl yapılır:
 
 - Bir veri kümesi oluşturmak [veri kaynağı Yapılandırma Sihirbazı](../data-tools/media/data-source-configuration-wizard.png).
 
-- Ayarlama **müşteriler** tablosundaki [veri kaynakları penceresi](add-new-data-sources.md) yeni karmaşık denetimi kullanmak için.
+- Ayarlama **müşteriler** tablosundaki [veri kaynakları penceresi](add-new-data-sources.md#data-sources-window) yeni karmaşık denetimi kullanmak için.
 
-- Buradan sürükleyerek yeni denetim ekleme **veri kaynakları penceresi** üzerine **Form1**.
+- Buradan sürükleyerek yeni denetim ekleme **veri kaynakları** penceresinden **Form1**.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -79,7 +79,7 @@ Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını 
 
 1. Visual Studio'da üzerinde **dosya** menüsünde **yeni** > **proje**.
 
-1. Ya da genişletin **Visual C#** veya **Visual Basic** seçip sol bölmedeki **Windows Masaüstü**.
+1. Ya da genişletin **Visual C#**  veya **Visual Basic** seçip sol bölmedeki **Windows Masaüstü**.
 
 1. Orta bölmede seçin **Windows Forms uygulaması** proje türü.
 
@@ -118,7 +118,7 @@ Karmaşık, destek veri bağlama denetimleri için uygulayabileceğiniz <xref:Sy
 
 Kullanım **veri kaynağı yapılandırması** bir veri kaynağı oluşturmak için Sihirbazı'nı temel alan `Customers` Northwind örnek veritabanındaki tabloda:
 
-1.  Üzerinde **veri** menüsünü tıklatın **veri kaynaklarını Göster**.
+1.  Açmak için **veri kaynakları** penceresi, **veri** menüsünde tıklatın **veri kaynaklarını Göster**.
 
 2.  İçinde **veri kaynakları** penceresinde **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı yapılandırması** Sihirbazı.
 

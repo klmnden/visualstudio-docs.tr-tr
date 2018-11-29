@@ -13,31 +13,32 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f68cb2178242e5589f312f6ddc2c555da3f47a0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c52e5f157dcbc6dcfeacf72df465bd3d8d9d172e
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872830"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304942"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Windows Forms uygulamalarında arama tabloları oluşturma
+
 Terim *arama tablosu* iki ilgili veri tablolarına bağlı denetimler açıklar. Bu arama denetimleri, ikinci tabloda seçilen bir değere göre ilk tablosundan verileri görüntülemek.
 
- Arama tabloları üst tablonun ana düğüm sürükleyerek oluşturabilirsiniz (gelen [veri kaynakları penceresi](add-new-data-sources.md)) üzerine formunuzdaki ilgili alt tablo sütununda zaten bağlı bir denetim.
+Arama tabloları üst tablonun ana düğüm sürükleyerek oluşturabilirsiniz (gelen [veri kaynakları penceresi](add-new-data-sources.md#data-sources-window)) üzerine formunuzdaki ilgili alt tablo sütununda zaten bağlı bir denetim.
 
- Örneğin, bir tablo düşünün `Orders` satış veritabanındaki. Her kayıtta `Orders` tablo içeren bir `CustomerID`, siparişi hangi müşterinin verdiğini gösteren. `CustomerID` Bir müşteri kaydı işaret eden bir yabancı anahtar `Customers` tablo. Bu senaryoda, genişletme `Orders` tablosundaki **veri kaynakları** penceresi ve ana düğüm kümesine **ayrıntıları**. Ardından, `CustomerID` kullanılacak sütunu bir <xref:System.Windows.Forms.ComboBox> (veya arama bağlamayı destekleyen başka bir denetimi) sürükleyin `Orders` formunuza düğümü. Son olarak, sürükleyin `Customers` ilgili sütuna bağlı denetim düğüme — bu durumda, <xref:System.Windows.Forms.ComboBox> bağlı `CustomerID` sütun.
+Örneğin, bir tablo düşünün `Orders` satış veritabanındaki. Her kayıtta `Orders` tablo içeren bir `CustomerID`, siparişi hangi müşterinin verdiğini gösteren. `CustomerID` Bir müşteri kaydı işaret eden bir yabancı anahtar `Customers` tablo. Bu senaryoda, genişletme `Orders` tablosundaki **veri kaynakları** penceresi ve ana düğüm kümesine **ayrıntıları**. Ardından, `CustomerID` kullanılacak sütunu bir <xref:System.Windows.Forms.ComboBox> (veya arama bağlamayı destekleyen başka bir denetimi) sürükleyin `Orders` formunuza düğümü. Son olarak, sürükleyin `Customers` ilgili sütuna bağlı denetim düğüme — bu durumda, <xref:System.Windows.Forms.ComboBox> bağlı `CustomerID` sütun.
 
 ## <a name="to-databind-a-lookup-control"></a>Veri bağlama için bir arama denetimi
 
-1.  Açık **veri kaynakları** penceresi.
+1.  Projenizi açın, açın **veri kaynakları** penceresini seçerek **görünümü** > **diğer Windows** > **verikaynakları**.
 
     > [!NOTE]
-    >  Arama tabloları gerektiren iki ilişkili tablolar veya nesnelerin kullanılabilir olduğunu **veri kaynakları** penceresi. Daha fazla bilgi için [veri kümelerindeki ilişkiler](relationships-in-datasets.md).
+    > Arama tabloları gerektiren iki ilişkili tablolar veya nesnelerin kullanılabilir olduğunu **veri kaynakları** penceresi. Daha fazla bilgi için [veri kümelerindeki ilişkiler](relationships-in-datasets.md).
 
 2.  Ait düğümleri genişletebilirsiniz **veri kaynakları** üst tablo ve tüm alt sütunları ve ilgili alt tablo ve sütunları görene kadar penceresi.
 
     > [!NOTE]
-    >  Alt tablo düğümü üst tablo bir Genişletilebilir alt düğüm olarak görünen düğümüdür.
+    > Alt tablo düğümü üst tablo bir Genişletilebilir alt düğüm olarak görünen düğümüdür.
 
 3.  Alt tablo için bırakma türünü değiştirme **ayrıntıları** seçerek **ayrıntıları** alt tablonun düğümde denetim listesinden. Daha fazla bilgi için [veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimi ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 

@@ -10,20 +10,20 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <appAddin> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0defe437e0778ee9d3c134148a3ca7e4b4cd2ef9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 572de1a3fccf9b66000d82e14f7895ab5cf0029f
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264668"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304880"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; öğesi (Visual Studio'da Office Geliştirme)
-  **AppAddin** öğesinin `vstov4` ad alanı VSTO eklentileri için özelleştirme özgü bilgileri depolar.  
+  **AppAddin** öğesinin `vstov4` ad alanı, VSTO eklentileri için özelleştirme özel bilgileri depolar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,20 +38,20 @@ ms.locfileid: "34264668"
 </appAddin>  
 ```  
   
-## <a name="elements-and-attributes"></a>Öğeleri ve öznitelikleri  
- **AppAddin** öğesi gereklidir ve yer `vstov4` ad alanı. Yalnızca bir tane **appAddin** uygulama bildiriminde tanımlanan öğe.  
+## <a name="elements-and-attributes"></a>Öğeler ve öznitelikler  
+ **AppAddin** öğesi gereklidir ve içinde `vstov4` ad alanı. Yalnızca bir tane **appAddin** uygulama bildiriminde tanımlanan öğe.  
   
- **AppAddin** öğesi aşağıdaki özniteliklere sahiptir.  
+ **AppAddin** öğesinde şu öznitelikler bulunur.  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|**Uygulama**|Gerekli. Microsoft Office uygulamasının tanımlar. Değer şunlardan biri olabilir: Excel, InfoPath, Outlook, PowerPoint, proje, Visio veya Word.|  
-|**LoadBehavior**|İsteğe bağlı. Varsayılan olarak, **loadBehavior** bu değeri ayarlamak etkinleştirilir. Hata ayıklama için VSTO eklentisi iki değerine ayarlayarak devre dışı bırakılabilir. LoadBehavior değerleri adlı tabloyu daha fazla bilgi için bkz: [VSTO eklentileri için kayıt defteri girişleri](../vsto/registry-entries-for-vsto-add-ins.md).|  
-|**anahtar adı**|Gerekli. Bu değer uygulama tarafından VSTO eklenti yüklemek için kullanılan kayıt defteri anahtarı adını olur. Daha fazla bilgi için bkz: [VSTO eklentileri için kayıt defteri girişleri](../vsto/registry-entries-for-vsto-add-ins.md).|  
+|**Uygulama**|Gerekli. Microsoft Office uygulamasını tanımlar. Değerin aşağıdakilerden biri olabilir: Excel, InfoPath, Outlook, PowerPoint, proje, Visio veya Word.|  
+|**loadBehavior**|İsteğe bağlı. Varsayılan olarak, **loadBehavior** , bu değeri ayarlamak etkinleştirilir. Hata ayıklama için VSTO eklentisi iki değere ayarlayarak devre dışı bırakılabilir. LoadBehavior değerleri adlı tabloyu daha fazla bilgi için bkz. [VSTO eklentileri için kayıt defteri girdileri](../vsto/registry-entries-for-vsto-add-ins.md).|  
+|**anahtar adı**|Gerekli. Uygulama tarafından VSTO eklenti yüklemek için kullanılan kayıt defteri anahtarı adını değerdir. Daha fazla bilgi için [VSTO eklentileri için kayıt defteri girdileri](../vsto/registry-entries-for-vsto-add-ins.md).|  
   
- **AppAddin** öğe aşağıdaki alt öğeleri vardır.  
+ **AppAddin** öğesi şu alt öğelerden sahiptir.  
   
-### <a name="friendlyname"></a>FriendlyName  
+### <a name="friendlyname"></a>friendlyName  
  İsteğe bağlı. **FriendlyName** öğesi içinde açıklanan [ &#60;friendlyName&#62; öğesi &#40;Visual Studio'da Office geliştirme&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
   
 ### <a name="description"></a>açıklama  
@@ -63,7 +63,7 @@ ms.locfileid: "34264668"
 ## <a name="vsto-add-in-example"></a>VSTO eklenti örneği  
   
 ### <a name="description"></a>Açıklama  
- Aşağıdaki kod örneği gösterilmektedir **appAddin** kullanılarak dağıtılan bir Outlook çözümü öğelerinde [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Bu kod örneği sağlanan daha büyük bir örneğin parçasıdır [uygulama bildirimleri Office çözümleri için](../vsto/application-manifests-for-office-solutions.md).  
+ Aşağıdaki kod örneğinde gösterilmiştir **appAddin** kullanılarak dağıtılan bir Outlook çözüm öğelerinde [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Bu kod örneği, sağlanan daha büyük bir örneğin parçasıdır [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Kod  
   

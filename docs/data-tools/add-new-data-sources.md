@@ -1,6 +1,6 @@
 ---
 title: Yeni veri kaynağı ekleme
-ms.date: 11/04/2016
+ms.date: 11/21/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
@@ -15,16 +15,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bbe808f1c43e0f4083f5ed1d04db347560a2630
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: fe32424632d06ed637b41dcd3d4b614afde369bd
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35666637"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304616"
 ---
 # <a name="add-new-data-sources"></a>Yeni veri kaynağı ekleme
 
-Visual Studio'da .NET veri Araçları'nın içeriğinde terimi *veri kaynağı* bir veri deposuna bağlanan ve bir .NET uygulaması için verileri ortaya çıkaran .NET nesneleri gösterir. Visual Studio tasarımcıları, veritabanı nesnelerini sürükleyip yükleyen Veri formları bağlayan ortak kod oluşturmak için veri kaynağı çıkışını tüketebileceği **veri kaynakları** penceresi. Bu türdeki veri kaynağının olabilir:
+Visual Studio'da .NET veri Araçları'nın içeriğinde terimi *veri kaynağı* bir veri deposuna bağlanmak ve verileri, bir .NET uygulaması kullanımına .NET nesneleri gösterir. Visual Studio tasarımcıları, veritabanı nesnelerini sürükleyip yükleyen Veri formları bağlayan ortak kod oluşturmak için veri kaynağı çıkışını tüketebileceği **veri kaynakları** penceresi. Bu türdeki veri kaynağının olabilir:
 
 - Bazı tür veritabanı ile ilişkili bir Entity Framework modelini sınıfta.
 
@@ -43,7 +43,16 @@ Oluşturma ve kullanarak veri kaynaklarını düzenleme **veri kaynağı Yapıla
 
 ![Veri Kaynağı Yapılandırma Sihirbazı](../data-tools/media/data-source-configuration-wizard.png)
 
-Bir veri kaynağı oluşturduktan sonra görünür **veri kaynakları** araç penceresi (**Shift**+**Alt**+**D**veya **görünümü** > **diğer Windows** > **veri kaynağı**). Bir veri kaynağından sürükleyebilirsiniz **veri kaynakları** penceresinden bir form Tasarım yüzeyine veya denetimi. Bu verileri veri deposundan görüntüleyen oluşturulacak ortak kod neden olur. Aşağıdaki çizimde, bir Windows forma bırakılan bir veri kümesi gösterir. Seçerseniz **F5** uygulamayı, veritabanından alınan veri form denetimlerinde görüntülenir.
+## <a name="data-sources-window"></a>Veri Kaynakları penceresi
+
+Bir veri kaynağı oluşturduktan sonra görünür **veri kaynakları** araç penceresi.
+
+> [!TIP]
+> Açmak için **veri kaynakları** penceresinde projenizi açık olduğundan emin olun ve tuşuna **Shift**+**Alt**+**D**veya **görünümü** > **diğer Windows** > **veri kaynakları**.
+
+Bir veri kaynağından sürükleyebilirsiniz **veri kaynakları** penceresinden bir form Tasarım yüzeyine veya denetimi. Bu verileri veri deposundan görüntüleyen oluşturulacak ortak kod neden olur.
+
+Aşağıdaki çizimde, bir Windows forma bırakılan bir veri kümesi gösterir. Seçerseniz **F5** uygulamayı, veritabanından alınan veri form denetimlerinde görüntülenir.
 
 ![Veri kaynağı sürükleme işlemi](../data-tools/media/raddata-data-source-drag-operation.png)
 

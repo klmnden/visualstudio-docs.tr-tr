@@ -18,14 +18,15 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bbecb481d96df1071388e834d44f8f712def2935
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c76f769234d8b8c14ccd44d8c2cf4c669bf48ffd
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924206"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305487"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>WPF uygulamalarında arama tabloları oluşturma
+
 Terim *arama tablosu* (olarak da adlandırılan bir *arama bağlama*) bir veri tablosundaki başka bir tablodaki bir yabancı anahtar alanının değeri temel bilgileri görüntüleyen bir denetimi açıklar. Bir üst tablonun ana düğüm sürükleyerek arama tablosu oluşturma veya nesnesine **veri kaynakları** penceresinden bir sütun veya ilgili alt tabloda özelliği zaten bağlı bir denetim.
 
 Örneğin, bir tablo düşünün `Orders` satış veritabanındaki. Her kayıtta `Orders` tablo içeren bir `CustomerID` siparişi hangi müşterinin verdiğini gösterir. `CustomerID` Bir müşteri kaydı işaret eden bir yabancı anahtar `Customers` tablo. Sipariş listesini görüntülerken `Orders` tablosu yerine gerçek müşteri adı görüntülemek isteyebilirsiniz `CustomerID`. Müşteri adı olduğundan `Customers` tablosu, müşteri adına görüntülemek için arama tablosu oluşturmanız gerekir. Arama tablosu kullandığı `CustomerID` değerini `Orders` ilişki gitmek için kayıt ve müşteri adı döndürür.
@@ -41,7 +42,7 @@ Terim *arama tablosu* (olarak da adlandırılan bir *arama bağlama*) bir veri t
     -   Nesneleri. Daha fazla bilgi için [Visual Studio'da nesne bağlama](bind-objects-in-visual-studio.md).
 
     > [!NOTE]
-    >  Arama tablosu oluşturmadan önce iki ilişkili tablolar veya nesneleri projesi için veri kaynağı olarak mevcut olmalıdır.
+    > Arama tablosu oluşturmadan önce iki ilişkili tablolar veya nesneleri projesi için veri kaynağı olarak mevcut olmalıdır.
 
 2.  Açık **WPF Tasarımcısı**ve tasarımcı geçerli bırakma hedefi öğeleri için bir kapsayıcı içerdiğinden emin olun **veri kaynakları** penceresi.
 
@@ -52,7 +53,7 @@ Terim *arama tablosu* (olarak da adlandırılan bir *arama bağlama*) bir veri t
 4.  Ait düğümleri genişletebilirsiniz **veri kaynakları** üst tablo veya nesne ve ilgili alt tablo veya nesne görene kadar penceresi.
 
     > [!NOTE]
-    >  İlgili alt tablo veya nesne olarak üst tablo veya nesne Genişletilebilir alt düğümünde görüntülenen düğümüdür.
+    > İlgili alt tablo veya nesne olarak üst tablo veya nesne Genişletilebilir alt düğümünde görüntülenen düğümüdür.
 
 5.  Alt düğümü için aşağı açılan menüsünü tıklatın ve seçin **ayrıntıları**.
 
@@ -67,12 +68,12 @@ Terim *arama tablosu* (olarak da adlandırılan bir *arama bağlama*) bir veri t
     -   **ListView**
 
         > [!NOTE]
-        >  Varsa **ListBox** veya **ListView** denetimi görünmez listesinde, bu denetimleri listesine ekleyebilirsiniz. Bilgi için [veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimi ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+        > Varsa **ListBox** veya **ListView** denetimi görünmez listesinde, bu denetimleri listesine ekleyebilirsiniz. Bilgi için [veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimi ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
     -   Öğesinden türetilen herhangi bir özel denetimin <xref:System.Windows.Controls.Primitives.Selector>.
 
         > [!NOTE]
-        >  Öğe denetimleri listesine özel denetimleri ekleme hakkında bilgi seçebilirsiniz **veri kaynakları** penceresinde görmek [veri kaynakları penceresine özel denetimler ekleme](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+        > Öğe denetimleri listesine özel denetimleri ekleme hakkında bilgi seçebilirsiniz **veri kaynakları** penceresinde görmek [veri kaynakları penceresine özel denetimler ekleme](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
 8.  Alt düğümünden sürükleyin **veri kaynakları** penceresinden WPF tasarımcısına bir kapsayıcıda. (Önceki örnekte, alt düğümüdür **siparişler** düğümü.)
 
