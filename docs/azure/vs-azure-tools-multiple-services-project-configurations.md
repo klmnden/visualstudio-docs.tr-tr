@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 9314f89dc6720e95db7a86eed541d555549d76cb
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: e4dfa7276c217a7cf17203f6ac84bb0ce5585f94
+ms.sourcegitcommit: e03b7a4cab26fbc792f368e3c6b4ca4a03caa786
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000487"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52459712"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Visual Studio'da Azure projenizi birden çok hizmet yapılandırması kullanacak şekilde yapılandırma
 
@@ -29,7 +29,7 @@ Yapılandırma ayarları yönetilir ve uygun rolü için özellik sayfaları kul
 
 ![VS_Solution_Explorer_Roles_Properties](./media/vs-azure-tools-multiple-services-project-configurations/IC784076.png)
 
-Hizmet yapılandırma dosyalarını ve hizmet tanımı için temel alınan şemalar hakkında daha fazla bilgi için bkz. [.csdef XML Şeması](/azure/cloud-services/schema-csdef-file.md) ve [.cscfg XML Şeması](/azure/cloud-services/schema-cscfg-file.md) makaleler. Hizmet yapılandırması hakkında daha fazla bilgi için bkz. [bulut hizmetlerini yapılandırma](/azure/cloud-services/cloud-services-how-to-configure-portal).
+Hizmet yapılandırma dosyalarını ve hizmet tanımı için temel alınan şemalar hakkında daha fazla bilgi için bkz. [.csdef XML Şeması](/azure/cloud-services/schema-csdef-file) ve [.cscfg XML Şeması](/azure/cloud-services/schema-cscfg-file) makaleler. Hizmet yapılandırması hakkında daha fazla bilgi için bkz. [bulut hizmetlerini yapılandırma](/azure/cloud-services/cloud-services-how-to-configure-portal).
 
 
 ## <a name="configuration-page"></a>Yapılandırma sayfası
@@ -77,7 +77,7 @@ Yeni veya var olan bağlantı dizeleri için seçin **...** * sağ tarafındaki 
 1. Seçme **el ile kimlik bilgileri girilen** hesap adını belirtin ve anahtar kullanarak doğrudan Azure portalından bilgi sağlar. Hesap anahtarı kopyalamak için:
     1. Azure portal ve select depolama hesabına gidin **anahtarları Yönet**.
     1. Hesap anahtarı kopyalamak için depolama hesabı seçin Azure Portal'da gidin **ayarlar > erişim anahtarları**, sonra birincil erişim anahtarını panoya kopyalamak için Kopyala düğmesini kullanın.
-1. Bağlantı seçeneklerinden birini seçin. **Özel uç noktalar belirtin** kuyruklar ve BLOB'lar, tablolar için belirli URL'leri belirtin isteyip istemediğinizi sorar. Özel uç noktalar kullanmanıza izin verir [özel etki alanları](/azure/storage/blobs/storage-custom-domain-name.md) ve daha kesin olarak erişimi denetleme. Bkz: [Azure Storage bağlantı dizelerini yapılandırma](/azure/storage/common/storage-configure-connection-string).
+1. Bağlantı seçeneklerinden birini seçin. **Özel uç noktalar belirtin** kuyruklar ve BLOB'lar, tablolar için belirli URL'leri belirtin isteyip istemediğinizi sorar. Özel uç noktalar kullanmanıza izin verir [özel etki alanları](/azure/storage/blobs/storage-custom-domain-name) ve daha kesin olarak erişimi denetleme. Bkz: [Azure Storage bağlantı dizelerini yapılandırma](/azure/storage/common/storage-configure-connection-string).
 1. Seçin **Tamam**, ardından **Dosya > Kaydet** yeni bağlantı dizesiyle yapılandırmasını güncelleştirmek için.
 
 Uygulamanızı Azure'da yayımlarken, Azure depolama hesabı bağlantı dizesi içeren hizmet yapılandırmasını yeniden seçin. Uygulamanızı yayımladıktan sonra uygulamanın Azure storage hizmetlerine karşı beklendiği gibi çalıştığını doğrulayın.

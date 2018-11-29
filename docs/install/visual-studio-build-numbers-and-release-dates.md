@@ -5,19 +5,19 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 11/19/2018
+ms.date: 11/27/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 19223bf7c2a0c1645842aa57476af283f3e0d1f1
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 9231e198d09aefdb3d36669685d419defcdce0ce
+ms.sourcegitcommit: e03b7a4cab26fbc792f368e3c6b4ca4a03caa786
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257335"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52459749"
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 derleme numaraları ve yayın tarihleri
 
@@ -84,35 +84,35 @@ Aşağıdaki tabloda, Visual Studio 2017 için derleme numaraları ve yayın tar
 | 15.6.0 Önizleme 7 | Önizleme | 2 Mart 2018 | 15.6.27428.1 |
 | 15.6.0 Önizleme 6 | Önizleme | 23 Şubat 2018 | 15.6.27421.1 |
 | 15.0.10 | Sürüm | 21 Şubat 2018 | 15.0.26228.28 |
-| 15.5.7 | Sürüm | 20 Şubat 2018 | 15.5.27130.2036 |
+| 15.5.7 | Sürüm | 20 Şubat 2018 | 15.0.27130.2036 |
 | 15.6.0 preview 5 | Önizleme | 14 Şubat 2018 | 15.6.27413.0 |
 | 15.6.0 preview 4 | Önizleme | 7 Şubat 2018 | 15.6.27406.0 |
 | 15.0.9 | Sürüm | 2 Şubat 2018 | 15.0.26228.23 |
-| 15.5.6 | Sürüm | 29 Ocak 2018 | 15.5.27130.2027 |
-| 15.5.5 | Sürüm | 25 Ocak 2018 | 15.5.27130.2026 |
+| 15.5.6 | Sürüm | 29 Ocak 2018 | 15.0.27130.2027 |
+| 15.5.5 | Sürüm | 25 Ocak 2018 | 15.0.27130.2026 |
 | 15.6.0 preview 3 | Önizleme | 25 Ocak 2018 | 15.6.27323.2 |
-| 15.5.4 | Sürüm | 16 Ocak 2018 | 15.5.27130.2024 |
+| 15.5.4 | Sürüm | 16 Ocak 2018 | 15.0.27130.2024 |
 | 15.6.0 Önizleme 2 | Önizleme | 10 Ocak 2018 | 15.6.27309.0 |
-| 15.5.3 | Sürüm |  9 Ocak 2018 | 15.5.27130.2020 |
+| 15.5.3 | Sürüm |  9 Ocak 2018 | 15.0.27130.2020 |
 | 15.0.8 | Sürüm |  9 Ocak 2018 | 15.0.26228.21 |
-| 15.5.2 | Sürüm | 14 Aralık 2017 | 15.5.27130.2010 |
+| 15.5.2 | Sürüm | 14 Aralık 2017 | 15.0.27130.2010 |
 | 15.6.0 Önizleme 1 | Önizleme | 14 Aralık 2017 | 15.6.27205.2004 |
-| 15.5.1 | Sürüm | 7 Aralık 2017 | 15.5.27130.2003 |
+| 15.5.1 | Sürüm | 7 Aralık 2017 | 15.0.27130.2003 |
 | 15.6.0 Önizleme 1 | Önizleme | 7 Aralık 2017 | 15.6.27205.0 |
 | 15.0.7 | Sürüm | 6 Aralık 2017 | 15.0.26228.18 |
-| 15.5 | Sürüm | 4 Aralık 2017 | 15.5.27130.0 |
-| 15.5.0 preview 5 | Önizleme | 30 Kasım 2017 | 15.5.27128.1 |
-| 15.4.5 | Sürüm | 27 Kasım 2017 | 15.4.27004.2010 |
-| 15.5.0 preview 4 | Önizleme | 14 Kasım 2017 | 15.5.27110.0 |
-| 15.4.4 | Sürüm | 14 Kasım 2017 | 15.4.27004.2009 |
+| 15.5 | Sürüm | 4 Aralık 2017 | 15.0.27130.0 |
+| 15.5.0 preview 5 | Önizleme | 30 Kasım 2017 | 15.0.27128.1 |
+| 15.4.5 | Sürüm | 27 Kasım 2017 | 15.0.27004.2010 |
+| 15.5.0 preview 4 | Önizleme | 14 Kasım 2017 | 15.0.27110.0 |
+| 15.4.4 | Sürüm | 14 Kasım 2017 | 15.0.27004.2009 |
 | 15.0.6 | Sürüm | 14 Kasım 2017 | 15.0.26228.17 |
-| 15.4.3 | Sürüm | 8 Kasım 2017 | 15.4.27004.2008 |
-| 15.5.0 preview 3 | Önizleme | 6 Kasım 2017 | 15.5.27102.0 |
-| 15.4.2 | Sürüm | 31 Ekim 2017 | 15.4.27004.2006 |
-| 15.5.0 Önizleme 2 | Önizleme | 23 Ekim 2017 | 15.5.27019.1 |
-| 15.4.1 | Sürüm | 19 Ekim 2017 | 15.4.27004.2005 |
+| 15.4.3 | Sürüm | 8 Kasım 2017 | 15.0.27004.2008 |
+| 15.5.0 preview 3 | Önizleme | 6 Kasım 2017 | 15.0.27102.0 |
+| 15.4.2 | Sürüm | 31 Ekim 2017 | 15.0.27004.2006 |
+| 15.5.0 Önizleme 2 | Önizleme | 23 Ekim 2017 | 15.0.27019.1 |
+| 15.4.1 | Sürüm | 19 Ekim 2017 | 15.0.27004.2005 |
 | 15.5 Önizleme 1 | Önizleme | 11 Ekim 2017 | 15.0.27009.1 |
-| 15.4 | Sürüm | 9 Ekim 2017 | 15.0.27004.20002 |
+| 15.4 | Sürüm | 9 Ekim 2017 | 15.0.27004.2002 |
 | 15.4 Önizleme 6 | Önizleme | 9 Ekim 2017| 15.0.27004.20002 |
 | 15.4 preview 5 | Önizleme | 6 Ekim 2017 | 15.0.27004.2000 |
 | 15.4 Önizleme 4 | Önizleme | 2 Ekim 2017 | 15.0.26929.2 |
@@ -127,7 +127,7 @@ Aşağıdaki tabloda, Visual Studio 2017 için derleme numaraları ve yayın tar
 | 15.3.1 | Sürüm | 18 Ağustos 2017 | 15.0.26730.08 |
 | 15.3.1 önizleme 1 | Önizleme | 18 Ağustos 2017 | 15.0.26730.08 |
 | 15.3.1  | Sürüm | 18 Ağustos 2017 | 15.0.26730.08 |
-| 15.4 Önizleme 1 | Önizleme | 24 Ağustos 2017 | 15.4.26823.1 |
+| 15.4 Önizleme 1 | Önizleme | 24 Ağustos 2017 | 15.0.26823.1 |
 | 15.3 | Sürüm | 14 Ağustos 2017 | 15.0.26730.3 |
 | 15.3 Önizleme 7.1 | Önizleme | 11 Ağustos 2017 | 15.0.26730.3 |
 | 15.3 Önizleme 7 | Önizleme | 1 Ağustos 2017 | 15.0.26730.0 |
