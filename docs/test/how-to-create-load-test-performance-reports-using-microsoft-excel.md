@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 51ccfcc6750be7f24acd88c07fa53537f43cdfab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 658a51ffddb8d5cf84b921a7172c11e4fa7a566e
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861923"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621571"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Nasıl yapılır: oluşturma yük testi başarım raporları kullanarak Microsoft Excel
 
@@ -45,7 +45,7 @@ Aşağıdaki çizim işlem (alışveriş sepetini güncelleştir) hız dejeneras
 Excel raporları oluşturulabilir **Yük Testi Çözümleyicisi**, kullanarak **Excel Raporu Oluştur** kullanarak düğme araç çubuğunda veya Excel'den **yük testi raporu** seçeneğini **yük testi** sekmesinde **Office** Şerit.
 
 > [!NOTE]
-> Bir yük testine yorum eklerseniz, bunlar Excel raporunda görüntülenir. Daha fazla bilgi için [nasıl yapılır: tamamlanmış bir yük testi çözümlenirken açıklama ekleme](../test/how-to-add-comments-on-a-completed-load-test.md).
+> Bir yük testine yorum eklerseniz, bunlar Excel raporunda görüntülenir.
 
 ## <a name="to-generate-load-test-comparison-reports-using-excel"></a>Excel kullanarak yük testi karşılaştırma raporları oluşturmak için
 

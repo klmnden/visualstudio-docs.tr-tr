@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5333fe1562a9398e930bb077dd2a4cfe6aab6825
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 7e3dae08a16acd6a5e92ab819b6f4e140130c605
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380254"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621399"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Yük testlerini çözümlemek için grafik görünümü göstergesini kullanma
 
@@ -31,11 +31,11 @@ Aşağıdaki bilgiler, gösterge içinde yer alır:
 -   **Aralık:** performans sayacının y ekseni aralığını bu sütunda görüntülenir. Varsayılan olarak, bu değeri otomatik olarak örnek veri değişikliklerini aralığı olarak ayarlar. Otomatik olarak ayarlanan bir aralık her zaman maksimum değerden fazla olan 10 sonraki gücünü olacaktır. Bu, negatif katları içerir. Bir grafik çeşitli sayaçları, her biri farklı bir aralık içerebilir. Bu nedenle, y ekseni ile belirli bir aralık Etiketlenmedi ancak bunun yerine her bir sayacın toplam aralığının yüzde temsil eden 0-100 değerleri ile etiketlenir. Örneğin, 1000 bir aralığı olan bir sayaç için bir veri noktasının y ekseninde 60 600 sayacının değerine karşılık gelir.
 
     > [!NOTE]
-    > Belirli bir değer aralığına kilitleyerek otomatik aralık değeri ayarı kapatabilirsiniz. Aralık kilitlendiğinde aralığını aşan değerleri grafiğin üst kısmında belirtilen en yüksek değer olarak görüntülenir. Kullanım **Çizim Seçenekleri** belirli bir değerin aralığı kilitlemek için iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: belirtin çizim için grafik oluşturma sayaçları seçenekleri](../test/how-to-specify-plot-options-for-graphing-counters.md).
+    > Belirli bir değer aralığına kilitleyerek otomatik aralık değeri ayarı kapatabilirsiniz. Aralık kilitlendiğinde aralığını aşan değerleri grafiğin üst kısmında belirtilen en yüksek değer olarak görüntülenir. Kullanım **Çizim Seçenekleri** belirli bir değerin aralığı kilitlemek için iletişim kutusu.
 
 -   **Sayaç:** adlı dört sütun **sayacı**, **örneği**, **kategori**, ve **bilgisayar** birlikte benzersiz olarak Performans sayacı belirleyin.
 
--   **Renk:** **renk** sütun çizilen satır performans sayacı için renk ve çizgi stilini gösterir. Kullanım **Çizim Seçenekleri** grafikteki bir performans sayacı rengini veya çizgi stilini değiştirme iletişim kutusu. **Çizim Seçenekleri** iletişim kutusu gösterge kısayol menüsünden kullanılabilir. Daha fazla bilgi için [nasıl yapılır: belirtin çizim için grafik oluşturma sayaçları seçenekleri](../test/how-to-specify-plot-options-for-graphing-counters.md).
+-   **Renk:** **renk** sütun çizilen satır performans sayacı için renk ve çizgi stilini gösterir. Kullanım **Çizim Seçenekleri** grafikteki bir performans sayacı rengini veya çizgi stilini değiştirme iletişim kutusu. **Çizim Seçenekleri** iletişim kutusu gösterge kısayol menüsünden kullanılabilir.
 
 -   **İstatistikleri:** **Min**, **Max**, **ortalama** ve **son** performans istatistiklerini sütunları göster sayacı. Bu değerler grafı görünür bölgesine görüntülenen verilere karşılık gelir. Örneğin, bir bölgesine yakınlaştırma göstergesi istatistikleri yalnızca yakınlaştırılmış alan için değerleri ücreti yansıtılır. "Son" sütunu en son tamamlanan örnekleme aralıkta performans sayacı değeridir.
 
@@ -59,6 +59,5 @@ Bir öğenin göstergede seçilmesi şunları yapar:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır: belirtin çizim seçenekleri sayaçları grafiğe aktarmak için](../test/how-to-specify-plot-options-for-graphing-counters.md)
 - [Nasıl yapılır: grafiğin bir bölgesine yakınlaştırma](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
 - [Grafik görünümünde yük testi sonuçlarını çözümleme](../test/analyze-load-test-results-in-the-graphs-view.md)

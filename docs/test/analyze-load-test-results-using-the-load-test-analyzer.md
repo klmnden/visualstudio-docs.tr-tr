@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 72b5472b6a23729026d9e044b7190f031eaaf4bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e09a29fa56707a9a357776a595ae89f6aabdaf94
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845461"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621450"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Yük Testi Çözümleyicisi kullanarak yük testi sonuçlarını çözümleme
 
@@ -46,6 +46,6 @@ Visual Studio Enterprise veya komut satırından yük testinizi çalıştırın 
 |Görevler|İlişkili konular|
 |-|-|
 |**Yük testi sonuçlarını erişme:** Yük Testi Düzenleyicisi'nden bir yük testi çalıştırdığınızda, yük testi sonuçları otomatik olarak açmak ve yük testi görüntülenen **Yük Testi Çözümleyicisi**.|-   [Nasıl yapılır: erişim yük testi sonuçlarını çözümleme](../test/how-to-access-load-test-results-for-analysis.md)|
-|**Yük testinize analiz Notları Ekle:** çözümlemenizi, Yük testiniz için yorum ekleyebilirsiniz. Açıklamalar, yükleme testi sonucuyla birlikte kalıcı olarak depolanır. Ayrıca girdiğiniz açıklamayı görüntüler **açıklama** yük testi ile ilişkili olan sütun **yönetme testi sonuçlarını Aç ve** Yük Testi Düzenleyicisi iletişim kutusunda.<br /><br /> Daha fazla bilgi için [nasıl yapılır: erişim yük testi sonuçlarını analiz](../test/how-to-access-load-test-results-for-analysis.md).<br /><br /> Ayrıca, bir Excel raporunu yük test sonuçları oluşturduğunuzda yorumları görüntülenir.<br /><br /> Daha fazla bilgi için [raporlama yük testleri için test karşılaştırmaları veya eğilim analizi sonuçları](../test/compare-load-test-results.md).|-   [Nasıl yapılır: tamamlanmış bir yük testi çözümlenirken açıklama ekleme](../test/how-to-add-comments-on-a-completed-load-test.md)|
+|**Yük testinize analiz Notları Ekle:** çözümlemenizi, Yük testiniz için yorum ekleyebilirsiniz. Açıklamalar, yükleme testi sonucuyla birlikte kalıcı olarak depolanır. Ayrıca girdiğiniz açıklamayı görüntüler **açıklama** yük testi ile ilişkili olan sütun **yönetme testi sonuçlarını Aç ve** Yük Testi Düzenleyicisi iletişim kutusunda.<br /><br /> Daha fazla bilgi için [nasıl yapılır: erişim yük testi sonuçlarını analiz](../test/how-to-access-load-test-results-for-analysis.md).<br /><br /> Ayrıca, bir Excel raporunu yük test sonuçları oluşturduğunuzda yorumları görüntülenir.<br /><br /> Daha fazla bilgi için [raporlama yük testleri için test karşılaştırmaları veya eğilim analizi sonuçları](../test/compare-load-test-results.md).||
 |**Yük testi sonuçlarını çözümleme:** veri yük testinin eriştikten sonra sonuç verileri analiz edebilirsiniz. Sonuçları hızlı bir şekilde anlamak için yükleme testi özetini görüntüleyebilirsiniz. Yükleme testi özetini kısa ve kolay okunur bir biçimde anahtar sonuçları gösterilmektedir.<br /><br /> Yükleme testi özetini yazdırabilir. Bu, proje katılımcılarına sonuçları iletişim kurarken güvenli kılar.<br /><br /> Sonuçlarında grafikler ve Tablolar'ı kullanarak yük testi sonuçlarını ayrıntılarını analiz edebilirsiniz. Bunlar **hataları**, **sayfaları**, **istekleri**, **SQL İzleme**, **testleri**,  **Eşikleri**, ve **işlemleri**.|-   [Yük testi sonuçları özetine genel bakış](../test/load-test-results-summary-overview.md)<br />-   [Nasıl yapılır: web sayfası yanıtını görüntüleme](../test/how-to-view-web-page-response-time-in-a-load-test.md)<br />-   [Eşik kuralı ihlallerini çözümleme](../test/analyze-threshold-rule-violations-in-load-tests.md)<br />-   [Grafik görünümünde yük testi sonuçlarını çözümleme](../test/analyze-load-test-results-in-the-graphs-view.md)<br />-   [Yük testi sonuçlarını ve hatalarını Tablo görünümünde çözümleyin](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)|
 |**Performans sorunlarını yalıtmak için yük testi sonuçlarınızda Sanal Kullanıcı etkinliğini çözümleme:** sanal kullanıcı aktivite grafiği, bir yük testi sırasında sanal kullanıcıların ne yapmakta olduğunuz görselleştirmek için kullanabilirsiniz. Bu, bir CPU ani veya İsteği/sn bırakmaları yalıtmak ve hangi testler veya sayfaları bu ani ve kaldırma işlemlerine sırasında çalışan belirlemek yardımcı olabilir.|-   [Ayrıntılar görünümünde sanal kullanıcı etkinliğini çözümleme](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)|

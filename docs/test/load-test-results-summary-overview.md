@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fd184f292a063823b6513e7b6a1817e2477db303
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9c2a2d1ff1aeda2f9df0f496176a134e7a27e559
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380570"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621493"
 ---
 # <a name="load-test-results-summary-overview"></a>Yük testi sonuçları özetine genel bakış
 
@@ -127,7 +127,7 @@ Denetleyici ve aracı kaynakları bölümü testi çalıştırmak için kullanı
 
 ## <a name="errors"></a>Hatalar
 
-Hatalar bölümüne yük testi sırasında gerçekleşen tüm hataların listesini içerir. Türünü ve alt hata sayısı ve son ileti görüntülenir. Hata seçebilirsiniz **hataları** tablo ve daha fazla hata ayrıntılarını inceleyin. Daha fazla bilgi için [yük testi sonuçlarını ve hatalarını Tablo görünümünde çözümlemek](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) ve [nasıl yapılır: Sayaçlar panelini kullanarak hataları çözümleme](../test/how-to-analyze-errors-using-the-counters-panel.md).
+Hatalar bölümüne yük testi sırasında gerçekleşen tüm hataların listesini içerir. Türünü ve alt hata sayısı ve son ileti görüntülenir. Hata seçebilirsiniz **hataları** tablo ve daha fazla hata ayrıntılarını inceleyin. Daha fazla bilgi için [yük testi sonuçlarını ve hatalarını Tablo görünümünde çözümlemek](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 > [!NOTE]
 > Daralt ve bölüm başlığının yanındaki oku seçerek bu bölümü genişletin.

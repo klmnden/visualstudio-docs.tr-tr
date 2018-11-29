@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d0a3311c90638b3fd34b9d651b89af2bed07f421
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 009315e2bd07cd62115c1f9130473a8c0c8d4a47
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817406"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621584"
 ---
 # <a name="load-test-run-settings-properties"></a>Yük testi çalıştırma ayarları özellikleri
 
@@ -42,7 +42,7 @@ ms.locfileid: "49817406"
 |Özellik|Tanım|
 |-|----------------|
 |**En yüksek Test günlüğü**|Yük testi için kaydedilecek test günlüklerinin sayısını belirtir. Maksimum sayısı için girilen değer test günlüklerinin ulaşıldığında, yük testi günlükleri toplamayı durdurur. Bu nedenle, günlükleri, test, son başında toplanacak. Yük testi tamamlanana kadar çalışmaya devam eder.|
-|**Tamamlanmış Testler'in günlükleme sıklığı Kaydet**|Test günlüğü yazılacak sıklığını belirtir. Girilen her test sayısı yetersiz bir test günlüğüne kaydedilecek sayıyı belirtir. Örneğin, on değerinin girilmesi onda, 20, otuzuncu ve benzeri test günlüğüne yazılacağını belirtir. Değer 0 olarak ayarlandığında, hiçbir test günlüğü kaydedilecek belirtir.<br /><br /> Daha fazla bilgi için [nasıl yapılır: test günlüklerinin hangi sıklıkla kaydedileceğini belirtme](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
+|**Tamamlanmış Testler'in günlükleme sıklığı Kaydet**|Test günlüğü yazılacak sıklığını belirtir. Girilen her test sayısı yetersiz bir test günlüğüne kaydedilecek sayıyı belirtir. Örneğin, on değerinin girilmesi onda, 20, otuzuncu ve benzeri test günlüğüne yazılacağını belirtir. Değer 0 olarak ayarlandığında, hiçbir test günlüğü kaydedilecek belirtir.|
 |**Test başarısızlıkları Günlüğü Kaydet**|Belirleyen bir Boole değeri olup olmadığını test günlüklerinin bir yük testi içinde bir test başarısız olursa kaydettiyseniz. Varsayılan, `True` değeridir.<br /><br /> Daha fazla bilgi için [nasıl yapılır: test başarısızlıklarının test günlüklerini kaydedilip kaydedilmediği belirleme](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
  Daha fazla bilgi için [Değiştir yük test günlüğü ayarları](../test/modify-load-test-logging-settings.md).

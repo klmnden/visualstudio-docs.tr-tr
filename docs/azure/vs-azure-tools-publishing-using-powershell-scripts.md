@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 5ee9ca92533e19b1c845242efda49aee410d264a
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 350ad1910cfdfe20d5b4b9b8d018229c712de547
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000748"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621652"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Windows PowerShell betiklerini kullanarak geliştirme ve test ortamlarına yayımlama
 
@@ -36,7 +36,7 @@ Ek araçlar ve kaynaklar Azure geliştirme için Visual Studio'da PowerShell ile
 
 ## <a name="generating-the-publish-scripts"></a>Yayımlama betiklerini oluşturma
 
-Yayımlama betiklerini izleyerek yeni bir proje oluşturduğunuzda, Web sitenizi barındıran bir sanal makine için oluşturabileceğiniz [bu yönergeleri](/azure/virtual-machines/windows/classic/web-app-visual-studio.md?toc=%2fazure%2fvirtual-machines%2fwindows%2fclassic%2ftoc.json). Ayrıca [oluşturma betikleri web apps için Azure App Service'te yayımlama](/azure/app-service/scripts/app-service-powershell-deploy-github).
+Yayımlama betiklerini izleyerek yeni bir proje oluşturduğunuzda, Web sitenizi barındıran bir sanal makine için oluşturabileceğiniz [bu yönergeleri](/azure/virtual-machines/windows/classic/web-app-visual-studio). Ayrıca [oluşturma betikleri web apps için Azure App Service'te yayımlama](/azure/app-service/scripts/app-service-powershell-deploy-github).
 
 ## <a name="scripts-that-visual-studio-generates"></a>Visual Studio oluşturan betikler
 

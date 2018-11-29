@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 41837a9ff3d67f2d712352115bcb6581580b32a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d9fea16d1131ce45b8273d53a3db4a88989d1c91
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813004"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621205"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Yük testi çözümleyicisini kullanarak Yük testlerindeki eşik kuralı ihlallerini çözümleme
 
@@ -67,8 +67,6 @@ Herhangi bir ihlal oluştuysa, bir **Eşik ihlallerini** köprü bulunur **Yük 
  İsteğe bağlı olarak, Eşik ihlalleri grafikte de görüntülenebilir. Eşik ihlali gerçekleştiği veri noktasının yanındaki grafik üzerindeki eşik simgesi görünür.
 
  Sayaç ağaçta kök düğümü kadar belirli bir sayaç düğümünden eşik ihlali simgesine yayılır. Bu bir ihlali nedeniyle ağaç genişletilmemiş ağaçta görünür olmayabilir sayacı uyarır.
-
- Daha fazla bilgi için [grafikler görünümünde ve Tablolar görünümünde Sayaçlar panelini kullanarak](../test/counters-panel-in-load-test-analyzer.md).
 
 ## <a name="view-threshold-violations-on-the-graph"></a>Grafikte Eşik ihlallerini görüntüle
 

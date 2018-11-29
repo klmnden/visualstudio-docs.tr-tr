@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 95aa0b7545ab7f326779b24475c8f7593ede27a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c6ab7d05c5c26cef7c6479f52438cadec7f3124a
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879855"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621506"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Sayaç kümelerini ve eşik kurallarını bilgisayarlar için bir yük testi içinde belirtin.
 
@@ -42,7 +42,7 @@ Sayaçları toplamak bilgisayara listesine test altındaki sunucular eklemek ön
 |**Yük testiniz için sayaç kümelerini Yönet:** yük testinizi oluşturduktan sonra sayaç kümesi Yük Testi Düzenleyicisi'ni düzenleyebilirsiniz. Sayaç kümelerini yönetme, performans verilerini toplamak istediğiniz bilgisayar kümesini seçme ve atama her bir bilgisayardan toplamak için sayaç kümeleri kümesini içerir. Sayaçlarınızı Yükleme Testi Düzenleyicisi'nde yönettiğiniz.|-   [Nasıl yapılır: sayaç kümelerini Yönet](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
 |**Sayaç kümeleri, yük testinize ekleyin:** ile bir yük testi oluşturduğunuzda, **Yeni Yük Testi Sihirbazı**, bir başlangıç sayaç kümesini ekleyin. Bu, Yük testiniz için ön tanımlı sayaç kümeleri kümesini sunar. Bir yük testi oluşturduktan sonra Yük Testi Düzenleyicisi'ni kullanarak mevcut sayaç kümeleri yeni sayaçları ekleyebilirsiniz.|-   [Nasıl yapılır: sayaç kümelerine sayaç ekleme](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Nasıl yapılır: özel sayaç kümeleri ekleme](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
 |**Yük testiniz için sayaçlarını kullanarak bir eşik kuralı belirtin:** bir eşik kuralı bir tek performans sayacı üzerinde bir yük testi sırasında sistem kaynak kullanımını izlemek için ayarlanmış bir kuraldır. Sayaç kümesi tanımları, birçok önemli performans sayaçları için önceden tanımlanmış eşik kuralları içerir. Yük testlerindeki eşik kuralları, bir performans sayacı değeri bir sabit değer ya da başka bir performans sayacı değeri ile karşılaştırın.|-   [Nasıl yapılır: bir eşik kuralı ekleme](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
-|**Sayaç kümeleri eşlendi bilgisayarlara kolay adları atayın:** bir kolayca tanınan adı bir bilgisayara uygulanan olanak sağlayan bir bilgisayar etiketleri ekleyebilirsiniz. Etiketler görüntülenir **sayaç kümesi eşlemeleri** Yük Testi Düzenleyicisi'nde ağaç düğümü. Daha da önemlisi, etiketleri görüntülenir rolünü belirlemede yardımcı Excel raporlarını yük testinde, örneğin, "Lab2 içinde Web Sunucu1" bilgisayarında veya "SQL Server2 Phoenix Office".<br /><br /> Daha fazla bilgi için [rapor yük testleri için test karşılaştırmaları veya eğilim analizi sonuçları](../test/compare-load-test-results.md).|-   [Nasıl yapılır: sayaç kümesi eşlemelerine bilgisayar etiketleri ekleme](../test/how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor.md)|
+|**Sayaç kümeleri eşlendi bilgisayarlara kolay adları atayın:** bir kolayca tanınan adı bir bilgisayara uygulanan olanak sağlayan bir bilgisayar etiketleri ekleyebilirsiniz. Etiketler görüntülenir **sayaç kümesi eşlemeleri** Yük Testi Düzenleyicisi'nde ağaç düğümü. Daha da önemlisi, etiketleri görüntülenir rolünü belirlemede yardımcı Excel raporlarını yük testinde, örneğin, "Lab2 içinde Web Sunucu1" bilgisayarında veya "SQL Server2 Phoenix Office".<br /><br /> Daha fazla bilgi için [rapor yük testleri için test karşılaştırmaları veya eğilim analizi sonuçları](../test/compare-load-test-results.md).||
 
 ## <a name="use-counter-sets"></a>Sayaç kümeleri kullanma
 

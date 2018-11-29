@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8829644e34c169f8992959013f70d453a70d41b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b395d845e53e8d9632cce27ae0714e9bc0a87d26
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834293"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621347"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Rapor yük testi sonuçlarını test karşılaştırmaları veya eğilim analizi
 
@@ -33,7 +33,7 @@ Rapor tanımları yük testi veritabanında depolanır. Rapor kaydedildiğinde, 
 Ayrıca, elektronik tablo dosyasını, hissedarların raporu görmek için veritabanına bağlanmak zorunda değilsiniz için hissedarlarla paylaşılabilir.
 
 > [!NOTE]
-> Bir yük testine yorum eklerseniz, bunlar Excel raporunda görüntülenir. Daha fazla bilgi için [nasıl yapılır: tamamlanmış bir yük testi çözümlenirken açıklama ekleme](../test/how-to-add-comments-on-a-completed-load-test.md).
+> Bir yük testine yorum eklerseniz, bunlar Excel raporunda görüntülenir.
 
 ## <a name="tasks"></a>Görevler
 

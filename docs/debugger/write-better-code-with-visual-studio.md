@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c16cfdc8d554ce9bf556ea707f977989e1dab72
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: e4cf3c7ae8b45f6d3410925977c2c67784b1ca6d
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389383"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621597"
 ---
 # <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Daha iyi yazarak hataları düzeltmek C# kullanarak Visual Studio code
 
-Kodda hata ayıklama, zaman alıcı--olabilir ve bazen doðrulamayý--görev. Etkili bir şekilde hata ayıklama hakkında bilgi edinmek için zaman alır. Visual Studio gibi güçlü bir IDE işinizi çok daha kolay hale getirebilirsiniz. Bir IDE, kodunuzun daha hızlı hata ayıklama ve yalnızca, ancak daha az hata ile daha iyi kod yazma Yardım ayrıca yardımcı olabilir. Bu makalede, bir yandan, hata ayıklama işlemi bütüncül bir görünümü için kod Çözümleyicisi kullanmanın ne zaman bilirsiniz, hata ayıklayıcı ve diğer araçları kullanmak ne zaman zaman vermektir.
+Kodda hata ayıklama, zaman alıcı--olabilir ve bazen doðrulamayý--görev. Etkili bir şekilde hata ayıklama hakkında bilgi edinmek için zaman alır, ancak Visual Studio gibi güçlü bir IDE işinizi çok daha kolay hale getirebilirsiniz. Bir IDE, kodunuzun daha hızlı hata ayıklama ve yalnızca, ancak daha az hata ile daha iyi kod yazma Yardım ayrıca yardımcı olabilir. Bu makalede, bir yandan, hata ayıklama işlemi bütüncül bir görünümü için kod Çözümleyicisi kullanmanın ne zaman bilirsiniz, hata ayıklayıcı ve diğer araçları kullanmak ne zaman zaman vermektir.  
 
 Bu makalede, hata ayıklama oturumlarınızdan daha üretken olmak için IDE yararlanarak hakkında konuşun. Biz gibi çeşitli görevler üzerinde dokunma:
 

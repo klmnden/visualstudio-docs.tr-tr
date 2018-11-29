@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c473faf449176b38d4505675b1060618344db0d6
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 4156ff8f81e7a011aeff0cf753af60bb3d6cd924
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388166"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621545"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Kod Düzenleyicisi'nde veri değerlerini görüntüleme datatips
 
-DataTips, hata ayıklama sırasında uygulamanızda değişkenleri hakkında daha fazla bilgi görüntülemek için kullanışlı bir yoludur. 
+DataTips, hata ayıklama sırasında programınızdaki değişkenleri hakkında daha fazla bilgi görüntülemek için kullanışlı bir yol sağlar. DataTips, sadece kesme modunda ve yalnızca yürütme geçerli kapsamdaki değişkenler çalışın. Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [düzeltme hataları daha iyi yazarak C# kod](../debugger/write-better-code-with-visual-studio.md) ve [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) bu makalede geçmeden önce.
 
 Bu hata ayıklama ilk kez ise, okumak isteyebilirsiniz [daha iyi yazma C# Visual Studio kullanarak kod](../debugger/write-better-code-with-visual-studio.md) ve [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) önce bu makaleyi okuyun.
   
@@ -127,8 +127,8 @@ DataTips paylaşabilir veya bir metin düzenleyicisi kullanarak Düzenle bir XML
 
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Hata ayıklıyor?](../debugger/what-is-debugging.md)  
- [Daha iyi yazma C# kullanarak Visual Studio code](../debugger/write-better-code-with-visual-studio.md)  
- [Hata ayıklama ilk bakış](../debugger/debugger-feature-tour.md)   
- [Hata ayıklayıcı görünümü verileri](../debugger/viewing-data-in-the-debugger.md)   
- [İzleme ve QuickWatch windows](../debugger/watch-and-quickwatch-windows.md)   
- [Özel görselleştiriciler oluşturma](../debugger/create-custom-visualizers-of-data.md)   
+ [Daha iyi yazarak hataları düzeltmek C# kod](../debugger/write-better-code-with-visual-studio.md)  
+ [Hata ayıklama sırasında ilk bakış](../debugger/debugger-feature-tour.md) [hata ayıklayıcısı verilerini görüntüleme](../debugger/viewing-data-in-the-debugger.md)   
+ [İzleme ve QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)   
+ [Özel Görselleştirici Oluşturma](../debugger/create-custom-visualizers-of-data.md)   
+

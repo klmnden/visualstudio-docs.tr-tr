@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cd96d61718972c82c6002888e123003530c019c
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: b156f5519fd60bdc5059863b087a3553ac8c086c
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826667"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621244"
 ---
 # <a name="what-is-debugging"></a>Hata ayıklama nedir?
 
@@ -25,13 +25,13 @@ Visual Studio hata ayıklayıcısını güçlü bir araçtır. Nasıl kullanıla
 
 ## <a name="debugger-vs-debugging"></a>Hata ayıklayıcı, hata ayıklama karşılaştırması
 
-Terim *hata ayıklama* oldukça genel ve birçok farklı şey anlamına gelebilir. Word'ün en değişmez değer kullanımı kodunuzdan hataları kaldırma anlamına gelir. Şimdi, bunu yapmanın yollarından biri çok vardır. Örneğin, kodunuzda için yazım hatalarını tarama veya kod Çözümleyicisi kullanarak hata ayıklama. Performans profili oluşturucu kullanılarak kodda hata ayıklama. Ya da kullanarak hata ayıklama bir *hata ayıklayıcı*.
+Terim *hata ayıklama* birçok farklı şey anlamına gelebilir, ancak en başka bir deyişle, veri yolu kodunuzdan kaldırma anlamına gelir. Şimdi, bunu yapmanın yollarından biri çok vardır. Örneğin, kodunuzda için yazım hatalarını tarama veya kod Çözümleyicisi kullanarak hata ayıklama. Performans profili oluşturucu kullanılarak kodda hata ayıklama. Ya da kullanarak hata ayıklama bir *hata ayıklayıcı*.
 
-Bir hata ayıklayıcı bir çok özel Geliştirici aracıdır. Bir hata ayıklayıcı, çalışan uygulamanıza ekler ve kod İnceleme sağlar. Visual Studio hata ayıklama belgelerinde genellikle "hata ayıklama" dediğimiz olduğunda ne demek isteriz budur.
+Bir hata ayıklayıcı çalışan uygulamanıza ekler ve kod İnceleme sağlar bir çok özel Geliştirici aracıdır. Visual Studio hata ayıklama belgelerinde genellikle "hata ayıklama" dediğimiz olduğunda ne demek isteriz budur.
 
 ## <a name="debug-mode-vs-running-your-app"></a>Hata ayıklama modu, uygulamanızı çalıştıran karşılaştırması
 
-Uygulamanızı Visual Studio'da ilk kez çalıştırdığınızda, yeşil ok düğmesine basarak başlattığınızda ![hata ayıklamayı Başlat](../debugger/media/dbg-tour-start-debugging.png "hata ayıklamayı Başlat") araç. Varsayılan olarak, **hata ayıklama** sola açılan değer görünür. Visual Studio'yu kullanmaya yeni başladıysanız, bu uygulamanızı hata ayıklama ile çalışan bir şey olduğunu izlenim bırakabilirsiniz uygulamanız--hangi BT yok--ancak iki çok farklı görev temelden şunlardır.
+Uygulamanızı Visual Studio'da ilk kez çalıştırdığınızda, yeşil ok düğmesine basarak başlattığınızda ![hata ayıklamayı Başlat](../debugger/media/dbg-tour-start-debugging.png "hata ayıklamayı Başlat") araç çubuğunda (veya **F5**). Varsayılan olarak, **hata ayıklama** sola açılan değer görünür. Visual Studio'yu kullanmaya yeni başladıysanız, bu uygulamanızı hata ayıklama ile çalışan bir şey olduğunu izlenim bırakabilirsiniz uygulamanız--hangi BT yok--ancak iki çok farklı görev temelden şunlardır.
 
 ![Hata ayıklama derlemesi seçin](../debugger/media/what-is-debugging-debug-build.png)
 
@@ -52,4 +52,4 @@ Hata ayıklayıcı, uygulamalarınızda hataları bulmalarına ve önemli bir ar
 Bu makalede, birkaç genel hata ayıklama kavramları öğrendiniz. Ardından, Visual Studio ile hata ayıklama ve daha az hata ile kodunun nasıl yazılacağını öğrenmeye başlayabilirsiniz. Şu makale gösterir C# Visual Studio tarafından desteklenen tüm dillerde kod örnekleri, ancak kavramlar geçerlidir.
 
 > [!div class="nextstepaction"]
-> [Daha iyi yazma C# kullanarak Visual Studio code](../debugger/write-better-code-with-visual-studio.md)
+> [Daha iyi yazarak hataları düzeltmek C# kod](../debugger/write-better-code-with-visual-studio.md)

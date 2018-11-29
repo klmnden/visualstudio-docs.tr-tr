@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 30a6cb4f2d39e16a9ff5334bc0676707e4c65dce
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 593540e125980e245142052648a5a9d8894234fd
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321157"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621558"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Nasıl yapılır: hata ayıklama zorluklarını çözmeye yardımcı olmak için IntelliTrace verilerini toplama
 
@@ -101,7 +101,7 @@ Bu yordamdaki adımları gerçekleştirmeden önce Microsoft Test Yöneticisi ve
 11. (İsteğe bağlı) Seçin **Gelişmiş** sekmesi. Ardından, yanındaki oku seçin **en fazla kayıt için disk alanı miktarını** ve IntelliTrace dosyası kullanmak etkinleştirmek istediğiniz en büyük boyutu seçin.
 
     > [!NOTE]
-    > Kayıt boyutunu artırmak için bu kayıt, test sonuçları ile birlikte kaydettiğinizde, bir zaman aşımı sorun ortaya çıkabilir. Tanılama veri bağdaştırıcıların zaman aşımı değerlerini artırmak nasıl hakkında daha fazla bilgi için bkz. [nasıl yapılır: tanılama veri bağdaştırıcıları için zaman aşımlarını önlemek](../test/how-to-prevent-time-outs-for-diagnostic-data-adapters.md).
+    > Kayıt boyutunu artırmak için bu kayıt, test sonuçları ile birlikte kaydettiğinizde, bir zaman aşımı sorun ortaya çıkabilir.
 
 12. Microsoft Test Yöneticisi kullanıyorsanız seçin **Kaydet**. Visual Studio kullanıyorsanız, seçin **Tamam**. IntelliTrace ayarları artık yapılandırılır ve test ayarlarınız için kaydedildi.
 

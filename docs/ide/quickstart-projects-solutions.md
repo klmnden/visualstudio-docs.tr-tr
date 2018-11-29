@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dffc0344c0cd7c226ae6651679c4a8f491d8aaa3
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 6f470a8afcd0ae1886cc5b4cb8ff6f28d7a936df
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607809"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621451"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Projeler ve çözümler hakkında bilgi edinin
 
@@ -176,7 +176,7 @@ Satırda *Calendar.cs* içeren dosya <xref:System.Runtime.CompilerServices.Inter
 
 Birim testinizi çalıştığını denetlemek istiyorsanız seçin **Test** > **çalıştırma** > **tüm testleri** menü çubuğundan. Bir pencere olarak adlandırılan **Test Gezgini** açar, görmelisiniz, **TestGetCurrentDate** test geçer.
 
-![Visual Studio geçirilen gösteren metin Gezgini'nde test](media/quickstart-projects-test-explorer.png)
+![Visual Studio gösteren test Gezgini'nde test geçildi](media/quickstart-projects-test-explorer.png)
 
 > [!TIP]
 > Varsa **Test Gezgini** değil, otomatik olarak Aç seçerek açın **Test** > **Windows** > **TestGezgini** menü çubuğundan.
