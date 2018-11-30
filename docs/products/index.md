@@ -5,12 +5,12 @@ title: Visual Studio belgeleri | Microsoft Docs
 description: Uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için tercih ettiğiniz dilde geliştirmek için Visual Studio 2017'yi kullanmayı öğrenin.
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: ee2f52f135412fb0847d3922d243383781220acb
-ms.sourcegitcommit: e942550df44f733a1349b85f0059318a28a1ac27
+ms.openlocfilehash: 9313da2778eb55028a3966f728fc04b37e4cf9c3
+ms.sourcegitcommit: 3e301a124483cc12edf95551e7c3a9070a759985
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44339677"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52712886"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -42,37 +42,18 @@ ms.locfileid: "44339677"
                                 </a>
                             </li>
                             <li>
-                                <a href="/azure/devops/" title="Azure DevOps Hizmetleri">
+                                <a href="/visualstudio/mac" title="Mac için Visual Studio">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-mac.svg" src="./images/vs-mac.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure DevOps Hizmetleri</h3>
-                                                    <p>Çevik proje araçları ve raporları takım üretkenliği artırın. Derleme, test ve projeleri modern CI/CD araçlarıyla kaynak denetiminden dağıtın.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/tfs/" title="Team Foundation Server">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Team Foundation Server</h3>
-                                                    <p>Yüklemek, yükseltmek ve şirket içi dağıtımlarınızı yönetmek.</p>
+                                                    <h3>Mac için Visual Studio</h3>
+                                                    <p>Uygulamaları ve oyunları, bulut, iOS, Android, macOS ve giyilebilir cihazlar için bir Mac kullanarak oluşturun.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -92,25 +73,6 @@ ms.locfileid: "44339677"
                                                 <div class="cardText">
                                                     <h3>Visual Studio Code</h3>
                                                     <p>Zengin düzenleme ve yüzlerce MacOS, Linux ve Windows dil hata ayıklama</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/visualstudio/mac" title="Mac için Visual Studio">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-mac.svg" src="./images/vs-mac.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Mac için Visual Studio</h3>
-                                                    <p>Uygulamaları ve oyunları, bulut, iOS, Android, macOS ve giyilebilir cihazlar için bir Mac kullanarak oluşturun.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -155,10 +117,49 @@ ms.locfileid: "44339677"
                                     </div>
                                 </a>
                             </li>
+                            <li>
+                                <a href="/azure/devops/" title="Azure DevOps Hizmetleri">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Azure DevOps Hizmetleri</h3>
+                                                    <p>Çevik proje araçları ve raporları takım üretkenliği artırın. Derleme, test ve projeleri modern CI/CD araçlarıyla kaynak denetiminden dağıtın.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tfs/" title="Azure DevOps sunucusu">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Azure DevOps sunucusu</h3>
+                                                    <p>Yüklemek, yükseltmek ve şirket içi dağıtımlarınızı yönetmek.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
             </li>
         </ul>
+        <p>Visual Studio Team Services oldu olarak yeniden adlandırıldı Azure DevOps server ve Team Foundation Server (TFS) yeniden adlandırıldı Azure DevOps sunucusu. Bkz: <a href="/azure/devops/user-guide/what-happened-vsts?view=vsts">Visual Studio Team Services ne oldu?</a> ve <a href="/tfs/server/tfs-is-now-azure-devops-server">Team Foundation Server, artık Azure DevOps sunucusu</a>.</p>
     </div>
 </div>

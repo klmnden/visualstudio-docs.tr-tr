@@ -58,7 +58,7 @@
 ###### [Birincil Kişinizi Bulma](find-primary-contact.md)
 #### [MPSA için](mpsa.md)
 #### [Bulut Abonelikleri İçin](cloud-admin.md)
-#### [Video ekleme](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting)
+#### [Video ekleme](https://youtu.be/plSu6fpi7UI)
 ### [Yönetici Portalı’nı Kullanma](using-admin-portal.md)
 #### [Abonelikleri Atama](assign-license.md)
 #### [Abonelik E-postalarını Yeniden Gönderme](resend-assignment-email.md)
