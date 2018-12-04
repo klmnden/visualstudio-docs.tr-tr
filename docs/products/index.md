@@ -5,12 +5,12 @@ title: Visual Studio belgeleri | Microsoft Docs
 description: Uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için tercih ettiğiniz dilde geliştirmek için Visual Studio 2017'yi kullanmayı öğrenin.
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: 9313da2778eb55028a3966f728fc04b37e4cf9c3
-ms.sourcegitcommit: 3e301a124483cc12edf95551e7c3a9070a759985
+ms.openlocfilehash: d4419aadd8be604918b6793685079053e03d4289
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52712886"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821363"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -160,6 +160,6 @@ ms.locfileid: "52712886"
                 </ul>
             </li>
         </ul>
-        <p>Visual Studio Team Services oldu olarak yeniden adlandırıldı Azure DevOps server ve Team Foundation Server (TFS) yeniden adlandırıldı Azure DevOps sunucusu. Bkz: <a href="/azure/devops/user-guide/what-happened-vsts?view=vsts">Visual Studio Team Services ne oldu?</a> ve <a href="/tfs/server/tfs-is-now-azure-devops-server">Team Foundation Server, artık Azure DevOps sunucusu</a>.</p>
+        <p>Visual Studio Team Services, Azure DevOps Hizmetleri tarafından değiştirilmiştir ve Team Foundation Server (TFS) yeniden adlandırıldı Azure DevOps sunucusu. Bkz: <a href="/azure/devops/user-guide/what-happened-vsts?view=vsts">Visual Studio Team Services ne oldu?</a> ve <a href="/tfs/server/tfs-is-now-azure-devops-server">Team Foundation Server, artık Azure DevOps sunucusu</a>.</p>
     </div>
 </div>

@@ -1,12 +1,12 @@
 ---
-title: Hata ayıklamayı öğrenin C# Visual Studio hata ayıklayıcısını kullanarak kod
+title: C++ Visual Studio hata ayıklayıcısını kullanarak hata ayıklamayı öğrenin
 ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
 ms.custom: debug-experiment
-ms.date: 11/27/2018
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 dev_langs:
-- CSharp
+- C++
 helpviewer_keywords:
 - debugger
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
@@ -15,22 +15,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 549f38839495385c983cc68f14fc94629ac988c3
+ms.openlocfilehash: 56ef97401a87f39e9c3bfd3138ee3a26646064c6
 ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821311"
+ms.locfileid: "52825465"
 ---
-# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Öğretici: hata ayıklamayı öğrenin C# kullanarak Visual Studio code
+# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Öğretici: C++ kodunuzu Visual Studio kullanarak hata ayıklamayı öğrenin
 
-Bu makalede, Visual Studio hata ayıklayıcı adım adım kılavuzda özelliklerini tanıtır. Olduğunda, *uygulamanızda hata ayıklama*, hata ayıklayıcısı ekli, uygulamanızın çalıştığını genellikle anlamına gelir. Bunu yaptığınızda, hata ayıklayıcı, kodunuzun ne yaptığını görmek için birçok yol sağlar. çalışırken. Kodunuzda adım adım ve değişkenlerinde depolanan değerleri bakmak, gözcüler ayarlayabilirsiniz değerleri değiştiğinde görmek için değişkenlerini kodunuzun yürütme yolunu inceleyin, bir dal kod çalıştırma, vb. olup olmadığını. Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) ve [düzeltme hataları daha iyi yazarak C# kod](../debugger/write-better-code-with-visual-studio.md) bu makalede geçmeden önce.
+Bu makalede, Visual Studio hata ayıklayıcı adım adım kılavuzda özelliklerini tanıtır. Hata ayıklayıcısı özellikleri daha üst düzey bir görünümünü istiyorsanız bkz [hata ayıklayıcısı özellik Turu](../debugger/debugger-feature-tour.md). Olduğunda, *uygulamanızda hata ayıklama*, hata ayıklayıcısı ekli, uygulamanızın çalıştığını genellikle anlamına gelir. Bunu yaptığınızda, hata ayıklayıcı, kodunuzun ne yaptığını görmek için birçok yol sağlar. çalışırken. Kodunuzda adım adım ve değişkenlerinde depolanan değerleri bakmak, gözcüler ayarlayabilirsiniz değerleri değiştiğinde görmek için değişkenlerini kodunuzun yürütme yolunu inceleyin, bir dal kod çalıştırma, vb. olup olmadığını. Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) bu makalede geçmeden önce.
 
 | | |
 |---------|---------|
 | ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | [Bir video izleyin](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) hata ayıklamayı benzer adımları gösterilmektedir. |
-
-Tanıtım uygulamasını olmasına rağmen C#, özelliklerin çoğunu Visual Basic, C++ için uygun F#, Python, JavaScript ve Visual Studio tarafından desteklenen diğer dillerde (F# Düzenle ve devam et desteklemez. F#ve JavaScript desteği **Otolar** pencere). Ekran görüntüleri C# ' de var.
 
 Bu öğreticide şunları yapacaksınız:
 
@@ -42,126 +40,124 @@ Bu öğreticide şunları yapacaksınız:
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* Visual Studio 2017 yüklü olması gerekir ve **.NET Masaüstü geliştirmesinden** iş yükü.
+* Visual Studio 2017 yüklü olması gerekir ve **C++ ile masaüstü geliştirme** iş yükü.
 
     Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
-    İş yükünü yükleyin, ancak Visual Studio'a tıklayın, zaten gerektiğinde **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu (seçin **dosya**  >  **Yeni** > **proje**). Visual Studio Yükleyicisi'ni başlatır. Seçin. **NET masaüstü geliştirme** iş yükü, ardından **Değiştir**.
+    İş yükünü yükleyin, ancak Visual Studio'a tıklayın, zaten gerektiğinde **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu (seçin **dosya**  >  **Yeni** > **proje**). Visual Studio Yükleyicisi'ni başlatır. Seçin **C++ ile masaüstü geliştirme** iş yükü, ardından **Değiştir**.
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
 1. Visual Studio'da **Dosya > Yeni proje**.
 
-2. Altında **Visual C#** , seçin **Windows Masaüstü**seçip Ortadaki bölmeden **konsol uygulaması**.
+2. Altında **Visual C++**, seçin **Windows Masaüstü**seçip Ortadaki bölmeden **Windows konsol uygulaması**.
 
-    Görmüyorsanız **konsol uygulaması** proje şablonu, tıklayın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu. Visual Studio Yükleyicisi'ni başlatır. Seçin *.NET masaüstü geliştirme** iş yükü, ardından **Değiştir**.
+    Görmüyorsanız **Windows konsol uygulaması** proje şablonu, tıklayın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu. Visual Studio Yükleyicisi'ni başlatır. Seçin **C++ ile masaüstü geliştirme** iş yükü, ardından **Değiştir**.
 
 3. Gibi bir ad yazın **get-başlatıldı-hata ayıklama** tıklatıp **Tamam**.
 
     Visual Studio projesi oluşturur.
 
-4. İçinde *Program.cs*, aşağıdaki kodu değiştirin
+4. İçinde *get çalışmaya debugging.cpp*, aşağıdaki kodu değiştirin
 
-    ```csharp
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-
-    namespace get_started_debugging
+    ```c++
+    int main()
     {
-        class Program
-        {
-            static void Main(string[] args)
-            {
-            }
-        }
+        return 0;
     }
     ```
 
     Bu kod ile:
 
-    ```csharp
-    using System;
-    using System.Collections.Generic;
+    ```c++
+    #include "pch.h"
 
-    public class Shape
+    #include <string>
+    #include <vector>
+    #include <iostream>
+
+    class Shape
     {
-        // A few example members
-        public int X { get; private set; }
-        public int Y { get; private set; }
-        public int Height { get; set; }
-        public int Width { get; set; }
-   
+        int privateX = 0;
+        int privateY = 0;
+        int privateHeight = 0;
+        int privateWidth = 0;
+
+        int getX() const { return privateX; }
+        void setX(int value) { privateX = value; }
+
+        int getY() const { return privateY; }
+        void setY(int value) { privateY = value; }
+
+        int getHeight() const { return privateHeight; }
+        void setHeight(int value) { privateHeight = value; }
+
+        int getWidth() const { return privateWidth; }
+        void setWidth(int value) { privateWidth = value; }
+
+        public:
         // Virtual method
-        public virtual void Draw()
+        virtual void Draw()
         {
-            Console.WriteLine("Performing base class drawing tasks");
+            std::wcout << L"Performing base class drawing tasks" << std::endl;
         }
-    }
+    };
 
-    class Circle : Shape
+    class Circle : public Shape
     {
-        public override void Draw()
+        public:
+        void Draw() override
         {
-            // Code to draw a circle...
-            Console.WriteLine("Drawing a circle");
-            base.Draw();
+        // Code to draw a circle...
+        std::wcout << L"Drawing a circle" << std::endl;
+        Shape::Draw();
         }
-    }
+    };
 
-    class Rectangle : Shape
+    class Rectangle : public Shape
     {
-        public override void Draw()
+        public:
+        void Draw() override
         {
-            // Code to draw a rectangle...
-            Console.WriteLine("Drawing a rectangle");
-            base.Draw();
+        // Code to draw a rectangle...
+        std::wcout << L"Drawing a rectangle" << std::endl;
+        Shape::Draw();
         }
-    }
+    };
 
-    class Triangle : Shape
+    class Triangle : public Shape
     {
-        public override void Draw()
+        public:
+        void Draw() override
         {
-            // Code to draw a triangle...
-            Console.WriteLine("Drawing a trangle");
-            base.Draw();
+        // Code to draw a triangle...
+        std::wcout << L"Drawing a trangle" << std::endl;
+        Shape::Draw();
         }
-    }
+    };
 
-    class Program
+    int main(std::vector<std::wstring> &args)
     {
-        static void Main(string[] args)
+        auto shapes = std::vector<Shape*>
         {
+            new Rectangle(),
+            new Triangle(),
+            new Circle()
+        };
 
-            var shapes = new List<Shape>
-            {
-                new Rectangle(),
-                new Triangle(),
-                new Circle()
-            };
-
-            foreach (var shape in shapes)
-            {
-                shape.Draw();
-            }
-
-            // Keep the console open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
+        for (auto shape : shapes)
+        {
+            shape->Draw();
         }
-
     }
 
     /* Output:
-        Drawing a rectangle
-        Performing base class drawing tasks
-        Drawing a triangle
-        Performing base class drawing tasks
-        Drawing a circle
-        Performing base class drawing tasks
+    Drawing a rectangle
+    Performing base class drawing tasks
+    Drawing a triangle
+    Performing base class drawing tasks
+    Drawing a circle
+    Performing base class drawing tasks
     */
     ```
 
@@ -171,7 +167,7 @@ Bu öğreticide şunları yapacaksınız:
 
      **F5** başladığında hata ayıklayıcının uygulamayla uygulamaya bağlı işlem ancak biz kodunu incelemek için özel bir şey yapmadınız hemen. Bu nedenle yalnızca uygulamayı yükler ve konsol çıktısı görürsünüz.
 
-    ```cmd
+    ```
     Drawing a rectangle
     Performing base class drawing tasks
     Drawing a triangle
@@ -186,9 +182,9 @@ Bu öğreticide şunları yapacaksınız:
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Bir kesme noktası ayarlayın ve hata ayıklayıcıyı başlatın
 
-1. İçinde `foreach` , döngü `Main` işlev, aşağıdaki kod satırının sol kenar boşluğunu tıklayarak kesme noktası ayarlayın:
+1. İçinde `for` , döngü `main` işlev, aşağıdaki kod satırının sol kenar boşluğunu tıklayarak kesme noktası ayarlayın:
 
-    `shape.Draw()`
+    `shape->Draw()`
 
     Kesme noktasının ayarlandığı kırmızı bir daire görünür.
 
@@ -196,7 +192,7 @@ Bu öğreticide şunları yapacaksınız:
 
 2. Tuşuna **F5** veya **hata ayıklamayı Başlat** düğmesi! [ Hata Ayıklamayı Başlat] (.. "Hata ayıklamayı Başlat", uygulamanın /Debugger/Media/dbg-Tour-Start-Debugging.PNG başlar ve hata ayıklayıcı, Kesme noktasının ayarlandığı kod satırına çalıştırır.
 
-    ![Ayarlayın ve bir kesme noktası isabet](../debugger/media/get-started-set-breakpoint.gif)
+    ![Ayarlayın ve bir kesme noktası isabet](../debugger/media/get-started-set-breakpoint-cpp.gif)
 
     Sarı ok, aynı zamanda aynı noktayı (Bu bildirimi henüz çalıştırılmadı) uygulama yürütmeyi askıya alır, hata ayıklayıcı durduruldu, deyimi temsil eder.
 
@@ -208,23 +204,23 @@ Bu öğreticide şunları yapacaksınız:
 
 Almak için en iyi yolu olduğundan bu çoğunlukla, klavye kısayollarını Burada, kullandığımız hata ayıklayıcı (komutları parantez içinde gösterilen eşdeğer komutları menüsü gibi) uygulamanız çalıştırma sırasında hızlı.
 
-1. İçinde duraklatıldığı sırada `shape.Draw` yöntem çağrısı `Main` yöntemi, basın **F11** (veya tercih **hata ayıklama > içine adımla**) için koda ilerlemek için `Rectangle` sınıfı.
+1. İçinde duraklatıldığı sırada `shape->Draw` yöntem çağrısı `main` işlev, basın **F11** (veya tercih **hata ayıklama > içine adımla**) için koda ilerlemek için `Rectangle` sınıfı.
 
-     ![İçine adımla kodu F11 kullanın](../debugger/media/get-started-f11.png "F11 adımla")
+     ![İçine adımla kodu F11 kullanın](../debugger/media/get-started-f11-cpp.png "F11 adımla")
 
      F11 olan **içine adımla** komut ve aynı anda uygulama yürütme bir deyim ilerler. F11 çoğu ayrıntılı yürütme akışı incelemek için iyi bir yoludur. (Daha hızlı kod boyunca taşımak için başka seçenekleriniz de gösteriyoruz.) Varsayılan olarak, kullanıcı dışı kod üzerinde hata ayıklayıcı atlar (daha ayrıntılı bilgi isterseniz bkz [yalnızca kendi kodum](../debugger/just-my-code.md)).
 
-2. Basın **F10** (veya tercih **hata ayıklama > Step Over**) hata ayıklayıcı birkaç kez durur kadar `base.Draw` yöntem çağrısının yazıp ENTER tuşuna **F10** bir kez daha.
+2. Basın **F10** (veya tercih **hata ayıklama > Step Over**) hata ayıklayıcı birkaç kez durur kadar `Shape::Draw` yöntem çağrısının yazıp ENTER tuşuna **F10** bir kez daha.
 
-     ![Step Over kodu F10 kullanın](../debugger/media/get-started-step-over.png "F10 adımla")
+     ![Step Over kodu F10 kullanın](../debugger/media/get-started-step-over-cpp.png "F10 adımla")
 
-     Hata ayıklayıcı içine girmez şu bildirim `Draw` temel sınıf yöntemini (`Shape`). **F10** işlevleri veya yöntemleri (kod hala çalışır), uygulama kodunuzda içine Adımlama olmadan, hata ayıklayıcı ilerler. F10 tuşlarına basarak `base.Draw` yöntem çağrısının (yerine **F11**), biz uygulama kodunu üzerinden atlandı `base.Draw` (biz İlgilenmiyor, şu anda hangi olabilir).
+     Hata ayıklayıcı içine girmez şu bildirim `Draw` temel sınıf yöntemini (`Shape`). **F10** işlevleri veya yöntemleri (kod hala çalışır), uygulama kodunuzda içine Adımlama olmadan, hata ayıklayıcı ilerler. F10 tuşlarına basarak `Shape::Draw` yöntem çağrısının (yerine **F11**), biz uygulama kodunu üzerinden atlandı `Draw` (hangi maybe değiliz ilginizi şu anda) temel sınıf.
 
 ## <a name="navigate-code-using-run-to-click"></a>Tıkla Çalıştır'ı kullanarak kod gidin
 
-1. Kod Düzenleyicisi'nde, ekranı aşağı kaydırın ve üzerine `Console.WriteLine` yönteminde `Triangle` sınıfı yeşil kadar **tıklanan satıra kadar Çalıştır** düğmesi ![tıklanan satıra kadar Çalıştır](../debugger/media/dbg-tour-run-to-click.png "RunToClick")soldaki bölmede görünür.
+1. Kod Düzenleyicisi'nde, ekranı aşağı kaydırın ve üzerine `std::cout` içinde `Triangle` sınıfı yeşil kadar **tıklanan satıra kadar Çalıştır** düğmesi ![tıklanan satıra kadar Çalıştır](../debugger/media/dbg-tour-run-to-click.png "RunToClick") Soldaki bölmede görünür.
 
-     ![Tıkla Çalıştır kullanın özellik](../debugger/media/get-started-run-to-click.png "tıklanan satıra kadar Çalıştır")
+     ![Tıkla Çalıştır kullanın özellik](../debugger/media/get-started-run-to-click-cpp.png "tıklanan satıra kadar Çalıştır")
 
    > [!NOTE]
    > **Tıklanan satıra kadar Çalıştır** düğmesidir yeni [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Yeşil ok düğmesini görmüyorsanız kullanın **F11** Bu örnekte bunun yerine hata ayıklayıcı doğru yere ilerlemek için.
@@ -233,7 +229,7 @@ Almak için en iyi yolu olduğundan bu çoğunlukla, klavye kısayollarını Bur
 
     Bu düğmeyi kullanarak geçici bir kesme noktası ayarlayarak benzer. **Tıklanan satıra kadar Çalıştır** (herhangi bir açık dosyayı tıklayabilirsiniz) uygulama kodu görünür bir bölge içinde hızla dolaşma için kullanışlıdır.
 
-    Hata ayıklayıcı ilerler `Console.WriteLine` yöntem uygulaması için `Triangle` sınıfı.
+    Hata ayıklayıcı ilerler `std::cout` yöntem uygulaması için `Triangle` sınıfı.
 
     Duraklatıldığı sırada bir yazım yanlışı dikkat edin! "Bir trangle çizim" çıkış yanlış yazılmıştır. Biz burada Hata Ayıklayıcısı'nda uygulama çalıştırılırken düzeltebilirsiniz.
 
@@ -241,7 +237,7 @@ Almak için en iyi yolu olduğundan bu çoğunlukla, klavye kısayollarını Bur
 
 1. İçine tıklayın "bir trangle çizim" ve "trangle" değiştirme "üçgene", bir düzeltme yazın.
 
-1. Tuşuna **F11** bir kez ve bkz hata ayıklayıcıyı yeniden ilerler.
+1. Tuşuna **F11** bir kez kod bir ileti yeniden derlemeden ve ardından hata ayıklayıcıyı yeniden ilerler görürsünüz.
 
     > [!NOTE]
     > Ne tür kod hata ayıklayıcıda düzenleme bağlı olarak, bir uyarı iletisi görebilirsiniz. Bazı senaryolarda, kod devam edebilmek derlemeniz gerekir.
@@ -254,7 +250,7 @@ Almak için en iyi yolu olduğundan bu çoğunlukla, klavye kısayollarını Bur
 
      Bu komut, uygulama yürütmeyi devam ettirir (ve hata ayıklayıcı ilerler) geçerli işlev dönene kadar.
 
-     Geri olmalıdır `foreach` içinde döngü `Main` yöntemi.
+     Geri olmalıdır `for` içinde döngü `main` yöntemi.
 
 ## <a name="restart-your-app-quickly"></a>Uygulamanızı hızlı bir şekilde yeniden başlatın
 
@@ -262,39 +258,35 @@ Tıklayın **yeniden** ![yeniden uygulama](../debugger/media/dbg-tour-restart.pn
 
 Bastığınızda **yeniden**, uygulama durdurup hata ayıklayıcı yerine zaman kaydeder. İlk kesme noktasına isabet kodu yürüterek, hata ayıklayıcı duraklatır.
 
-Hata ayıklayıcıyı yeniden üzerinde sizin ayarladığınız kesme noktasında durur `shape.Draw()` yöntemi.
+Hata ayıklayıcıyı yeniden üzerinde sizin ayarladığınız kesme noktasında durur `shape->Draw()` yöntemi.
 
 ## <a name="inspect-variables-with-data-tips"></a>Veri ipuçları değişkenlerle inceleyin
 
 Değişkenleri incelemek özellik hata ayıklayıcının en kullanışlı özellikler biridir ve bunu yapmanın farklı yolu vardır. Genellikle, hata ayıklama bir sorun açmayı denediğinde, belirli bir zamanda sahip olmalarını beklediğiniz değerleri değişkenleri olup depoladığını kullanıma bulmak çalışıyorsunuz.
 
-1. Üzerinde duraklatıldığı sırada `shape.Draw()` yöntemi, kutucuğun üzerine gelip `shape` nesneyi ve nesne türü varsayılan özellik değeri görmek `Rectangle`.
+1. Üzerinde duraklatıldığı sırada `shape->Draw()` yöntemi, kutucuğun üzerine gelip `shapes` kapsayıcı (vektör nesnesi) ve bkz varsayılan özellik değerine `size` gösteren özelliği `size=3`.
 
-1. Genişletin `shape` gibi özellikleri görmek için nesne `Height` özelliğini 0 değerine sahiptir.
+1. Genişletin `shapes` tüm özelliklerini, dizinin ilk dizini gibi görmek için nesne `[0]`, bir bellek adresi vardır.
 
-1. Tuşuna **F10** (veya **hata ayıklama** > **Step Over**) birkaç kez kez yinelemek için `foreach` döngü, üzerinde yeniden duraklatma `shape.Draw()`.
+    Nesnelerin özelliklerini görüntülemek için daha da genişletebilirsiniz.
 
-1. Şekil nesnesi yeniden ve bu süre türü ile yeni bir nesne olduğunu gördüğünüz gelin `Triangle`.
+1. İlk dizinini genişletin `[0]` görmek için `privateHeight` dikdörtgeninin özelliği.
 
-     ![Bir veri ipucunda görüntülemek](../debugger/media/get-started-data-tip.gif "bir veri ipucunda görüntüleyin")
+     ![Bir veri ipucunda görüntülemek](../debugger/media/get-started-data-tip-cpp.png "bir veri ipucunda görüntüleyin")
 
-    Genellikle, hata ayıklama sırasında istediğiniz değişkenlerde depolamak için bunları beklediğiniz değerleri depolamak olup olmadığını görmek için özellik değerlerini denetlemek için hızlı bir yol ve veri ipuçları yapmak için iyi bir yoludur.
+     Genellikle, hata ayıklama sırasında istediğiniz nesnelerin özellik değerlerini denetlemek için hızlı bir yol ve veri ipuçları yapmak için iyi bir yoludur.
 
 ## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Otolar ve yerel öğeler pencerelerinde değişkenlerle inceleyin
 
 1. Bakmak **Otolar** altındaki kod düzenleyicisi penceresi.
 
-    Kapalıysa, hata ayıklayıcıda seçerek duraklatıldığı sırada açmak **hata ayıklama** > **Windows** > **Otolar**.
+     ![Otomatik değişkenler penceresi değişkenleri İnceleme](../debugger/media/get-started-autos-window-cpp.png "otomatik değişkenler penceresi")
 
-1. Genişletin `shapes` nesne.
+    İçinde **Otolar** penceresi değişkenleri ve bunların geçerli değerini görürsünüz. C++ için **Otolar** penceresi değişkenleri kod üç önceki satırlarını gösterir.
 
-     ![Otomatik değişkenler penceresi değişkenleri İnceleme](../debugger/media/get-started-autos-window.png "otomatik değişkenler penceresi")
+2. Ardından, bakmak **Yereller** penceresinde ileri bir sekmeye **Otolar** penceresi.
 
-    İçinde **Otolar** penceresi değişkenleri ve bunların geçerli değerini görürsünüz. **Otolar** penceresi, geçerli veya önceki satırındaki (dile özgü davranışı için belgeleri denetleyin) kullanılan tüm değişkenleri gösterir.
-
-1. Ardından, bakmak **Yereller** penceresinde ileri bir sekmeye **Otolar** penceresi.
-
-    **Yereller** penceresi gösterir, geçerli olan değişkenlere [kapsam](https://www.wikipedia.org/wiki/Scope_(computer_science)), diğer bir deyişle, geçerli yürütme bağlamı.
+    **Yereller** penceresi gösterir, geçerli olan değişkenlere [kapsam](https://www.wikipedia.org/wiki/Scope_(computer_science)), diğer bir deyişle, geçerli kod yürütme bağlamı.
 
 ## <a name="set-a-watch"></a>Bir izleme ayarlayın
 
@@ -306,15 +298,13 @@ Değişkenleri incelemek özellik hata ayıklayıcının en kullanışlı özell
 
 ## <a name="examine-the-call-stack"></a>Çağrı yığınını inceleyin
 
-1. İçinde duraklatıldığı sırada `foreach` döngüsünde, tıklayın **çağrı yığını** varsayılan alt sağ bölmede açık olarak penceresinde.
+1. İçinde duraklatıldığı sırada `for` döngüsünde, tıklayın **çağrı yığını** varsayılan alt sağ bölmede açık olarak penceresinde.
 
-    Kapalıysa, hata ayıklayıcıda seçerek duraklatıldığı sırada açmak **hata ayıklama** > **Windows** > **çağrı yığını**.
+2. Tıklayın **F11** birkaç kez duraklatmak, hata ayıklayıcı görene kadar `Shape::Draw` yöntemi `Rectangle` Kod düzenleyicisinde sınıfı. Bakmak **çağrı yığını** penceresi.
 
-2. Tıklayın **F11** birkaç kez duraklatmak, hata ayıklayıcı görene kadar `Base.Draw` yöntemi `Triangle` Kod düzenleyicisinde sınıfı. Bakmak **çağrı yığını** penceresi.
+    ![Çağrı yığınını incelemek](../debugger/media/get-started-call-stack-cpp.png "ExamineCallStack")
 
-    ![Çağrı yığınını incelemek](../debugger/media/get-started-call-stack.png "ExamineCallStack")
-
-    **Çağrı yığını** penceresi, yöntemleri ve işlevleri çağrılır sırasını gösterir. Geçerli işlev en üst satırına gösterir ( `Triangle.Draw` bu uygulamada yöntemi). İkinci satır gösteren `Triangle.Draw` çağırıldığı `Main` yöntemi ve benzeri.
+    **Çağrı yığını** penceresi, yöntemleri ve işlevleri çağrılır sırasını gösterir. Geçerli işlev en üst satırına gösterir ( `Rectangle::Draw` Bu örnekte yöntemi). İkinci satır gösteren `Rectangle::Draw` çağırıldığı `main` işlevi ve benzeri.
 
    > [!NOTE]
    > **Çağrı yığını** penceresi benzer hata ayıklama perspektifi için Eclipse gibi bazı IDE içinde.
@@ -327,11 +317,11 @@ Değişkenleri incelemek özellik hata ayıklayıcının en kullanışlı özell
 
 ## <a name="change-the-execution-flow"></a>Yürütme akışı değiştirme
 
-1. İçinde hata ayıklayıcısı ile duraklatıldı `Circle.Draw` yöntemi çağrısı, sol taraftaki sarı ok (yürütme işaretçisi) almak için fareyi kullanın ve sarı ok için bir satır yukarı taşı `Console.WriteLine` yöntem çağrısı.
+1. İçinde hata ayıklayıcısı ile duraklatıldı `Shape::Draw` yöntemi çağrısı, sol taraftaki sarı ok (yürütme işaretçisi) almak için fareyi kullanın ve sarı ok için bir satır yukarı taşı `std::cout` yöntem çağrısı.
 
 1. Tuşuna **F11**.
 
-    Hata ayıklayıcıyı yeniden çalıştırır `Console.WriteLine` yöntemi (bunu görmeniz konsol penceresi çıktısı).
+    Hata ayıklayıcıyı yeniden çalıştırır `std::cout` yöntemi (bunu görmeniz konsol penceresi çıktısı).
 
     Yürütme akışı değiştirerek farklı kod yürütme yolları test veya hata ayıklayıcı yeniden başlatmadan kodu yeniden gibi işlemler yapabilirsiniz.
 

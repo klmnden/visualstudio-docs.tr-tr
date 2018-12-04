@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa998896ad4c67bcd9e10ee50b4939bdbf915330
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 7f6b0855b18f12bd80ad17c5b544a95e5ee57de9
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257374"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821376"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Yeni başlayanlar için hata ayıklama
 
@@ -244,7 +244,7 @@ Ardından, bazı hataları olan bir uygulama oluşturacağız.
 
     ![Sözdizimi hatası](../debugger/media/beginners-no-definition.png)
 
-    Türünde bir nesne ile her galaxy ayarladığımız olsa bile `GType` (sahip `MGType` özelliği), hata ayıklayıcı tanımıyor `theGalaxy` nesne türünde bir nesne olarak `GType`. Ne var ne yok? Galaxy türünü ayarlar herhangi bir kod görünmesini istediğiniz. Bunu yaptığınızda gördüğünüz `GType` sınıfı kesinlikle bir özelliğine sahip `MyGType`, ancak bir şey doğru değildir. İlgili hata iletisi `object` ; ipucu olmasını ettik dil yorumlayıcısı türü bir nesne türü görünmektedir `object` türünde bir nesne yerine `GType`.
+    Türünde bir nesne ile her galaxy ayarladığımız olsa bile `GType` (sahip `MyGType` özelliği), hata ayıklayıcı tanımıyor `theGalaxy` nesne türünde bir nesne olarak `GType`. Ne var ne yok? Galaxy türünü ayarlar herhangi bir kod görünmesini istediğiniz. Bunu yaptığınızda gördüğünüz `GType` sınıfı kesinlikle bir özelliğine sahip `MyGType`, ancak bir şey doğru değildir. İlgili hata iletisi `object` ; ipucu olmasını ettik dil yorumlayıcısı türü bir nesne türü görünmektedir `object` türünde bir nesne yerine `GType`.
 
 1. Bulduğunuz galaxy türü ayarlamakla ilgili kodunuzu aramak, `GalaxyType` özelliği `Galaxy` sınıfı olarak belirtilen `object` yerine `GType`.
 
