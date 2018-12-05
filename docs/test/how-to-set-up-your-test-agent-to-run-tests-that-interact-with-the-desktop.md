@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b8eba85de98dd46a8ff6ad44154249598a489f5a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f657babf33c315be2760cf59f3ec57525643f70e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862105"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894579"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Nasıl yapılır: test aracınızı masaüstüyle etkileşim kuran testleri çalıştırmak için ayarlama
 
 Masaüstü ile etkileşmesi gereken otomatik testleri çalıştırmak istiyorsanız, aracınızı hizmet yerine işlem olarak çalıştırmak için ayarlamanız gerekir. Örneğin, uzaktan test denetleyicisi ve test aracısı kullanarak kodlanmış UI testi çalıştırmak istediğiniz ya da bir test çalıştırın ve video, çalıştırdığınızda kaydını yakalamak istiyorsanız, aracınızı işlem olarak çalışacak şekilde ayarlamanız gerekir. Visual Studio kullanarak test ayarlarınızda rollere aracılar atadığınızda, veya rollere aracılar için ortamınızda Microsoft Test Yöneticisi'ni kullanarak atadığınızda, masaüstüyle etkileşimde olması gereken rollere atanmış her aracı için kurulumu değiştirmeniz gerekir.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!WARNING]
 > Bir laboratuvar ortamı ayarlamak için Microsoft Test Yöneticisi'ni kullanırsanız, test aracısını yükler. Belirleyebilirsiniz **ortam oluşturma Sihirbazı'nı** kodlanmış UI testleri çalıştıracak rollerden birini yapılandırmak istediğiniz.

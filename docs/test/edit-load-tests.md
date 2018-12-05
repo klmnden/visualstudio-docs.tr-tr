@@ -11,23 +11,26 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f4c29f3b98440c9e8462083a24012944157b848b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cb39ea39261d5b359437b2c31ec963bab8df01fe
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178419"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895398"
 ---
 # <a name="edit-load-tests"></a>Yük testlerini düzenleme
 
 Çalıştırma web başarım testi veya birim testleri, bir sunucu aynı anda erişen birçok kullanıcının benzetimini yapmak için yük testleri. Bir yük testi uygulama stres ve performans verilerine erişmenizi sağlar. Bir yük testi, kullanıcı yükleri gibi çeşitli yük koşulları taklit etmek ve ağ türleri için yapılandırılabilir.
 
-> [!NOTE]
-> Yük testi yalnızca Visual Studio 2017 Enterprise sürümünde kullanılabilir.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Bir yük testi tarafından tanımlanan *senaryoları*, *sayaç kümeleri*, ve *çalıştırma ayarları*. Aşağıdaki çizim arasındaki farklar açıklanmaktadır [senaryoları](../test/edit-load-test-scenarios.md), [sayaç kümeleri](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md), ve [çalıştırma ayarları](../test/load-test-run-settings-properties.md):
 
 ![Yük testi mimarisi](../test/media/load_test_editor.png)
+
+## <a name="software-requirements"></a>Yazılım gereksinimleri
+
+Yalnızca Web performans ve yük testi projelerini Visual Studio Enterprise sürümünde kullanılabilir.
 
 ## <a name="edit-load-test-scenario-settings"></a>Yük testi senaryosu ayarlarını Düzenle
 

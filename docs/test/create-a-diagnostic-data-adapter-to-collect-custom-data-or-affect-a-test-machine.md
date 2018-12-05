@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 71cee1bb598c6d2bf59b0e664f5f3560ae1fd0ee
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 788c5f24b2e3f965d93b645d024f29a6e0d6e7ea
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621113"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52893851"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Özel veri toplayan veya test makinesini etkileyen tanılama veri bağdaştırıcısı oluşturma
 
@@ -25,6 +25,8 @@ Test çalıştırma ya da testinizi bir parçası olarak test makinesini etkilem
 Özel tanılama veri bağdaştırıcınızı yapılandırma ayarları dosyasının kullanarak varsayılan giriş sağlayabilirsiniz. Örneğin, dosyanın konumu hakkında bilgi toplamak ve test sonuçlarına istediğiniz sağlayabilir veya ne kadar disk alanı sistemde bırakılması istediğiniz. Bu veriler, oluşturduğunuz her test ayarları için yapılandırılabilir. Görüntülenen ve bir düzenleyici olarak kullanmak için kendi kullanıcı denetiminizi düzenlenen Microsoft Test Yöneticisi'ni veya, sağlanan varsayılan Düzenleyicisi'ni kullanarak oluşturabilirsiniz. Düzenleyici bağdaştırıcısı yapılandırmasında yapılan değişiklikleri ile test ayarlarınızın depolanır.
 
 Testlerinizi Visual Studio'dan çalıştırıyorsanız, bunları ayarlamalısınız etkin olması için test ayarları. Test ayarları hakkında daha fazla bilgi için bkz. [test ayarlarını kullanarak tanılama bilgi toplayan](../test/collect-diagnostic-information-using-test-settings.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="tasks"></a>Görevler
 

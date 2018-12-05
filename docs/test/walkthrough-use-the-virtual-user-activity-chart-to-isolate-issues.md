@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da yük testleri için sanal kullanıcı aktivite Grafiği'ni kullanma
+title: Yük testleri için sanal kullanıcı etkinlik grafiğini kullanarak
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,30 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 19d2a50eba8850b3950e951da58800aed77931ad
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 8e4584d386cb61aaf7809c8bb5ab748e49543c7e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295806"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895931"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>İzlenecek yol: sorunları yalıtmak için sanal kullanıcı aktivite Grafiği'ni kullanma
 
-Bu izlenecek yolda, yük testinizi çalıştıran tek tek sanal kullanıcı için oluşan hataları yalıtmak için sanal kullanıcı aktivite grafiği kullanmayı öğreneceksiniz.
+Bu kılavuzda, yük testinizi çalıştıran tek tek sanal kullanıcı için oluşan hataları yalıtmak için sanal kullanıcı aktivite grafiği kullanmayı öğreneceksiniz.
 
 Sanal kullanıcı aktivite grafiği yük testi ile ilişkili olan sanal kullanıcı etkinliğini görselleştirmenize olanak tanır. Grafikteki her satırın tek bir sanal kullanıcı temsil eder. Sanal kullanıcı aktivite grafiği, tam olarak neyin test sırasında her sanal kullanıcı yürütülmüş gösterir. Bu, kullanıcı etkinlik düzenlerini görerek performans sorunlarını yalıtmak, yük düzenleri, yavaş veya başarısız testleri ilişkilendirin ve diğer sanal kullanıcı etkinliğini isteklerle sağlar. Sanal kullanıcı aktivite grafiği çalışması bittikten sonra yalnızca yüklemeden sonra kullanılabilir.
 
-Bu kılavuzda, aşağıdaki görevleri tamamlamanız:
-
--   Sanal Kullanıcı Aktivite Grafiği ile ilişkili aşağıdaki araçları nasıl kullanacağınız hakkında bilgi edinin:
-
-    -   Kullanım **zaman dönemini Yakınlaştır** aracı analiz etmek istediğiniz grafik üzerinde belirli bir süre belirtin.
-
-    -   Kullanım **ayrıntı göstergesi** paneli ve **sonuçlarını filtreleme** sorunlarını gidermeye yardımcı olmak için grafiğe filtre uygulamak için paneli.
-
--   Belirli bir sanal kullanıcı için oluşan bir hatayı analiz etmek ve sorunlu hata türü ayrıntılarını görüntülemek için Sanal Kullanıcı Aktivite Grafiği'ni kullanın.
-
-Daha fazla bilgi için [Ayrıntılar görünümünde sanal kullanıcı etkinliğini çözümleme](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -47,8 +37,6 @@ Daha fazla bilgi için [Ayrıntılar görünümünde sanal kullanıcı etkinliğ
     -   [Bir yük testi oluşturma ve çalıştırma](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Önceki İzlenecek içinde oluşturulmuş ColorWebApp çözümünü açın
-
-### <a name="open-the-solution"></a>Çözümü açın
 
 1.  Visual Studio'yu başlatın.
 

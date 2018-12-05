@@ -14,24 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4f47fdad1b2f04a69b2a4bc1c3f6d1e6b60fa881
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 021693266278bd705678c22d2c3f07e534901e5a
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370737"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895346"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Bir test denetleyicisi ve test aracısına roller atama
 
 Bu yönerge, oluşturmak ve Visual Studio kullanarak birçok makine üstünden sınamayı dağıtmak için bir test denetleyicisi ve test aracısı'nı kullanan bir test ayarı yapılandırmak nasıl gösterir. Ayrıca, bu yönerge test ayarına tanılama ve veri bağdaştırıcılarının ekleneceğini gösterir.
 
-Bu kılavuzda, aşağıdaki görevleri tamamlamayacaksınız:
-
--   Bir test ayarı oluşturun.
-
--   Bir test denetleyicisi ve test aracıları için roller atayın.
-
--   Test ayarınıza tanılama ve veri bağdaştırıcısı atayın.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="prerequisites"></a>Önkoşullar
 

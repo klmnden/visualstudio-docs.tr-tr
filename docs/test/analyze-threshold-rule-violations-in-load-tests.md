@@ -17,18 +17,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d9fea16d1131ce45b8273d53a3db4a88989d1c91
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 17a79e4c684ee60d18288bc30ce1e3fce83dc8a5
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621205"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895437"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Yük testi çözümleyicisini kullanarak Yük testlerindeki eşik kuralı ihlallerini çözümleme
 
 Eşik kuralları belirli bir performans sayaçları ile ilişkili olan ve bir performans sayacı aşıldı veya set değerin altına altına düştü ihlallerini gösterir. Bir yük testi çalıştırdığınızda, daha önce ayarladığınız eşik kuralları için oluşan ihlallerini analiz edebilirsiniz.
 
 Herhangi bir ihlal oluştuysa, bir **Eşik ihlallerini** köprü bulunur **Yük Testi Çözümleyicisi** durum çubuğu ve oluşan ihlallerinin sayısını belirtir. Eşik ihlalleri tablosunu görüntülemek için köprüyü seçin. Ayrıca Eşik ihlallerini görüntüleyebilirsiniz **sayaçları** penceresinde ve grafik üzerinde.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="view-threshold-violations-in-the-table"></a>Eşik ihlallerini Tablo görünümü
 

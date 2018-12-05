@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Yük testi senaryolarını düzenleme
+title: Yük testi senaryoları
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 67398d5a4b2b33ace2d3ba3c74d63693861e586e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 865be7c7c6371f92f85d853a7dde045274fc5efb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837145"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896542"
 ---
 # <a name="edit-load-test-scenarios"></a>Yük testi senaryolarını düzenleme
 
 Bir yük testi *senaryo* yük düzeni, test karışımını, tarayıcı karışımı ve ağ karışımını belirtir. Senaryoları, karmaşık, gerçekçi iş yükleri benzetimi yapmak için testleri yapılandırmanıza olanak tanırlar için önemlidir.
 
 Örneğin, kullanılan bir Internet ön uç tarafından eş zamanlı müşterilerin gelen birçok bağlantı hızıyla ve farklı tarayıcılar kullanarak yüzlerce bir e-ticaret sitesini test. Aynı site, ürünleri güncelleştirmek ve istatistikleri görüntülemek için şirket içi çalışanlar tarafından kullanılan bir yönetim işlevi de olabilir. Bu dahili kullanıcılar genellikle aynı tarayıcı ve yüksek hızlı LAN bağlantısı kullanarak siteye erişir. Farklı senaryolarda kullanıcıların bu iki farklı grubunun özelliklerini saklamak isteyeceksiniz. Her senaryo, bir sanal kullanıcı türü içerebilir. Bu durumda, sanal müşterileri temsil edecek bir yük testi senaryosuna yapılabilir ve başka bir senaryo, bir Web sitesinin iç sanal kullanıcılarını temsil etmek için yapılabilir.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="scenario-components"></a>Senaryo Bileşenleri
 

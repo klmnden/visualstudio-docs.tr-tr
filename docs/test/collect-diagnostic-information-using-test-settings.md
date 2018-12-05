@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da Test ayarlarını kullanarak tanılama bilgileri Topla
+title: Test ayarlarını kullanarak tanılama bilgileri Topla
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0b2d44d0fa50a4d733f62845d54116cceb2f2016
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 288d1ce5511d33a48006c97030d2b9c2f12ec88c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865355"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895216"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>Test ayarlarını kullanarak tanılama bilgileri Topla
 
@@ -32,6 +32,8 @@ Kullanabileceğiniz *Test ayarları* testlerinizi çalıştırdığınızda fazl
 -   Tekrarlanabilir olmayan hataları yalıtmaya yardımcı IntelliTrace verilerini toplama
 
 Tanılama veri bağdaştırıcıları test makinesinin davranışını değiştirmek için de kullanılabilir. Örneğin, Visual Studio'da bir test ayarı ile takımınızın uygulamasının performansını değerlendirmek için çeşitli ağ topolojisi engellerini taklit edebilir.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="use-test-settings-with-visual-studio"></a>Visual Studio ile test ayarlarını kullan
 

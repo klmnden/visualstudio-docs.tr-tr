@@ -13,18 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e70c468a70d37d1d8e261844c004af785a68eb54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c7e85dcbd62c5f068ce3286145fec2ddddc7947
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827941"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895697"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Nasıl yapılır: test denetleyicileri için zaman aşımı sürelerini belirtme ve test aracıları
 
 Test denetleyicisi ve test aracısını hem ne kadar bunlar birbirinden veya bir hata ile başarısız olmadan önce bir veri kaynağından yanıt beklemesi gerektiğini belirten birkaç zaman aşımı ayarı vardır. Belirli koşullar altında topolojinizin veya diğer ortam sorunlarının ihtiyaçlarını karşılamak için zaman aşımı değerlerini düzenlemek gerekli olabilir. Zaman aşımı değerlerini düzenlemek için aşağıdaki yordamlarda anlatıldığı gibi test denetleyicisi veya test aracısı ile ilişkili XML yapılandırma dosyasını düzenleyin.
 
- Test denetleyicisi veya test aracısın çeşitli zaman aşımı ayarlarını düzenlemek için tablolardaki anahtar isimleri ve değerleri kullanarak aşağıdaki yapılandırma dosyalarını değiştirin:
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Test denetleyicisi veya test aracısın çeşitli zaman aşımı ayarlarını düzenlemek için tablolardaki anahtar isimleri ve değerleri kullanarak aşağıdaki yapılandırma dosyalarını değiştirin:
 
 -   Test denetleyicisi: *QTController.exe.config*
 

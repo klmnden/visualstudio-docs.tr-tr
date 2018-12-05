@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cbe16b5e0b711783c9dfd12ab9a652fb4055fc36
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 649fe84b716355f5c7228e371fa88d80937f24af
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381022"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895385"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>İzlenecek yol: Oluşturma ve birim testlerini içeren bir yük testi çalıştırma
 
 Bu izlenecek yolda, birim testleri içeren bir yük testi oluşturun.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Bu izlenecek yol, oluşturma ve ardından Visual Studio Enterprise'ı kullanarak yük testi çalıştırma adımları. Bir yük testi, web performans testleri ve birim testlerini kapsayıcıdır. Yük testleri ile oluşturduğunuz **Yeni Yük Testi Sihirbazı**.
 

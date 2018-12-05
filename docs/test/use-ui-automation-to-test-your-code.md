@@ -1,6 +1,6 @@
 ---
 title: Otomatikleştirilmiş UI testleri
-ms.date: 11/04/2016
+ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -18,16 +18,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cbe8f1b9e0fc1fcc47a8d90e0033e8edb933e1aa
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ce10c81265ecfd95f43d62c73d69c902eda1a6c6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296079"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896646"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI otomasyonunu kullanarak kodunuzu test etme
 
 Uygulamanızın kullanıcı arabirimi (UI) sürücü otomatik testler olarak bilinir *kodlanmış UI testleri* (CUITs) Visual Studio'da. Bu testler, işlevsel test kullanıcı Arabirimi denetimleri içerir. Bunlar, kullanıcı arabirimi de dahil olmak üzere tüm uygulamanın düzgün çalıştığını doğrulamak olanak tanır. Kodlanmış UI testleri doğrulama veya başka bir mantık kullanıcı arabiriminde, örneğin, bir web sayfasındaki olduğunda özellikle yararlıdır. Mevcut bir el ile testi otomatik hale getirmek için de sık kullanılır.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 Aşağıdaki çizimde gösterildiği gibi tipik geliştirme deneyimi biri, başlangıçta yalnızca uygulamanızı oluşturmak ve burada şeyler düzgün çalıştığını doğrulamak için kullanıcı Arabirimi denetimleri tıklatın olabilir. Ardından uygulamayı el ile test etmek devam gerekmez, otomatikleştirilmiş bir testi oluşturmaya karar verebilirsiniz. Uygulamanızda sınanan belirli işlevi bağlı olarak kullanıcı Arabirimi düzeyinde test içermeyebilir veya bir tümleştirme testini veya işlevsel bir testi için kod yazabilirsiniz. Bazı iş mantığı doğrudan erişmek istiyorsanız, bir birim testi kodu. Ancak, belirli koşullar altında çeşitli kullanıcı Arabirimi denetimleri, uygulamanızda test dahil etmek yararlı olabilir. Kodlanmış UI testi, kod karmaşası uygulamanızın işlevselliğini etkilemez doğrulayabilirsiniz.
 

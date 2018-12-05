@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da kodlanmış UI testleri için yapılandırmalar ve platformlar
+title: Kodlanmış UI testleri için yapılandırmalar ve platformlar
 ms.date: 2015-10-04
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b56f83a7a1ec74235e66f18e8134f72bfd14a2ef
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e4eb09bf1b5477c609dc2b9e3b1502274bc9b931
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295923"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894385"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Kodlanmış UI testleri ve eylem kayıtları için desteklenen yapılandırmalar ve platformlar
 
@@ -25,8 +25,9 @@ Desteklenen yapılandırmalar ve platformlar için kodlanmış UI testleri için
 > [!NOTE]
 > Kodlanmış kullanıcı arabirimi test işlemi, test altındaki uygulama ile aynı ayrıcalıklara sahip olmalıdır.
 
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
- **Gereksinimler**
+**Gereksinimler**
 
 -   Visual Studio Enterprise
 

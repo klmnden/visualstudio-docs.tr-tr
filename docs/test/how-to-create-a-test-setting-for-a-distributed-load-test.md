@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8b38366a97351fae52ae82a4291ed13da996bf41
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2f04912423dfdbd2baa7beab431871f814c044b0
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296092"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895476"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Nasıl yapılır: Dağıtılmış yük testi için bir test ayarı oluşturun
 
 Yapılandırma *test ayarları* bu testleri test aracıları kullanarak birden çok makine arasında dağıtmak ve test denetleyicilerine yük testleri için. Kullanılacak test ayarlarını da yapılandırabilirsiniz *tanılama veri bağdaştırıcıları*, toplamak istediğiniz veri türlerini belirtmek veya Visual Studio'dan yük testlerinizi çalıştırdığınızda test makinelerini nasıl etkileyeceğinizi.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Örneğin, kodun performans dökümünü toplamak için ASP.NET Profiler tanılama veri bağdaştırıcısı kullanabilirsiniz. Buna ek olarak, tanılama veri bağdaştırıcıları test makinaları üzerinde olası sorunların benzetimini yapmak veya kullanılabilir sistem belleğini azaltmak için kullanılabilir.
 

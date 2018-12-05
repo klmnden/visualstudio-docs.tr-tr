@@ -3,14 +3,14 @@ title: Mac için Visual Studio ile tanışın
 description: Bu makale, Mac için Visual Studio özelliklerini tanıtır
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 11/03/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: b04b670be5c56811be2e6ee1ea9dad28677a35e7
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 10b27c26fcef622687b64f225dd04ae966f43cd5
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624023"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895684"
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Mac için Visual Studio ile tanışın
 
@@ -26,13 +26,16 @@ Bu, hata ayıklama, iOS, Mac ve Android ile yerel platform tümleştirme, zengin
 
 Bu makale, Mac için Visual Studio çeşitli bölümlerini araştırmalarını ve platformlar arası uygulamalar oluşturmak için güçlü bir araç sağlayan özellikler sunar.
 
+> [!TIP]
+> Visual Studio 2019 Mac preview için test etmek için kullanıma sunulmuştur. Aşağıdaki adımları [yükleme yönergeleri](install-preview.md) atın [IDE Turu](ide-tour.md).
+
 ## <a name="installation"></a>Yükleme
 
-Bağlantısındaki [yükleme](installation.md) indirin ve Mac için Visual Studio Yükleme Kılavuzu
+Bağlantısındaki [yükleme](install-preview.md) indirin ve Mac için Visual Studio Yükleme Kılavuzu
 
 ## <a name="language-support"></a>Dil desteği
 
-Mac için Visual Studio geliştirme, C# ve F # içinde varsayılan olarak destekler.
+Mac için Visual Studio geliştirme destekler C# ve F#, varsayılan olarak.
 
 ### <a name="c"></a>C#
 
@@ -40,7 +43,7 @@ C# Mac için Visual Studio'da platformlar arası uygulamalar oluşturmak için e
 
 ### <a name="f"></a>F#
 
-F # .NET üzerinde çalışmak üzere tasarlanmış bir türü kesin belirlenmiş işlevsel programlama dilidir. Android, Mac ve iOS, Mac kullanıcıları için Visual Studio için bir programlama dili olarak kullanılabilir. F # kullanarak ve dilde oluşturulmuş örnekleri görüntülemek için daha fazla bilgi için ziyaret [F #](https://developer.xamarin.com/guides/cross-platform/fsharp/) Kılavuzlar.
+F#bir türü kesin belirlenmiş işlevsel programlama dili, .NET üzerinde çalışacak şekilde tasarlanmıştır. Android, Mac ve iOS, Mac kullanıcıları için Visual Studio için bir programlama dili olarak kullanılabilir. Kullanma hakkında daha fazla bilgi için F# dilde oluşturulmuş örnekleri görmek için ziyaret edin [ F# ](https://developer.xamarin.com/guides/cross-platform/fsharp/) Kılavuzlar.
 
 ## <a name="platform-support"></a>Platform desteği
 
@@ -106,7 +109,7 @@ Başlamak için Unity denetleyin [uygulamalı laboratuvarı](https://github.com/
 
 Xamarin Profiler, profil oluşturma için üç Gereçleri kullanılabilir sahiptir. [Xamarin Profiler giriş](https://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/xamarin-profiler/) Kılavuzu ne bu araçları ölçün ve bunlar uygulamanızı nasıl analiz inceler ve her ekranda görüntülenen verileri anlamını açıklar.
 
-### <a name="inspector"></a>Denetçisi
+### <a name="inspector"></a>Denetçi
 
 Xamarin Inspector'ı etkileşimli bir C# konsol kullanıcı araçlarıyla sağlar. Bu bir hata ayıklama veya tanılama Yardımcısı belgelendirme aracı veya bir deneme aracı olarak öğretim bir aracı olarak Canlı uygulamaları İnceleme olduğunda kullanılabilir.
 

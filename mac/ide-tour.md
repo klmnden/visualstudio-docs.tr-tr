@@ -1,16 +1,17 @@
 ---
 title: Visual Studio için Mac turu
 description: Mac için Visual Studio, ASP.NET Core Web siteleri ve iOS, Android, Mac ve Xamarin.Forms için Xamarin projeleri dahil olmak üzere, macOS üzerinde .NET uygulama derlemek için bir tümleşik geliştirme ortamı sağlar.
+zone_pivot_groups: mac-ide-version
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 11/03/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 37c4f6c50cc5deaee1decf6fcfae5eda211018b2
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e1787f6d396121263d91633a4ee6d4dd8ed2c35f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295689"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895801"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Visual Studio için Mac turu
 
@@ -24,7 +25,25 @@ Bu makalede, bazı platformlar arası uygulamaları oluşturmak için güçlü b
 
 Mac için Visual Studio, uygulama dosyalarını ve ayarlarını yönetme, uygulama kodu oluşturma ve hata ayıklama için çeşitli bölümler halinde düzenlenmiştir.
 
-## <a name="welcome-screen"></a>Hoş Geldiniz ekranı
+::: zone pivot="vsmac2019"
+
+## <a name="visual-studio-for-mac-2019-start-window"></a>Visual Studio Mac 2019 başlangıç penceresi
+
+> [!TIP]
+> Önizleme Mac için Visual Studio 2019 olan [indirilebilir](install-preview.md) ve test etme.
+
+Mac 2019 Önizleme için Visual Studio'yu başlattığınızda, yeni kullanıcılar bir oturum açma penceresi görürsünüz. Microsoft hesabınızla (varsa) Ücretli lisansı veya Azure abonelikleri bağlantısını etkinleştirmek için oturum açın. Basabilirsiniz **atla** ve daha sonra aracılığıyla oturum açma **Visual Studio > oturum** menü öğesi:
+
+![Microsoft hesabınızda oturum açın](media/ide-tour-2019-start-signin.png)
+
+Oturum açmış kullanıcıların görebileceği yeni _başlangıç penceresi_son projeler listesi gösterilir ve varolan açmak için düğmeler, proje veya yeni bir tane oluşturun:
+
+![Son projelerden seçin veya yeni bir şeyler oluşturun](media/ide-tour-2019-start-projects.png)
+
+::: zone-end
+::: zone pivot="vsmac2017"
+
+## <a name="welcome-screen-in-visual-studio-for-mac-2017"></a>2017 Mac için Visual Studio'da Hoş Geldiniz ekranı
 
 Mac için Visual Studio başlatıldığında, görüntüler bir *Hoş Geldiniz ekranı*:
 
@@ -36,6 +55,8 @@ Hoş Geldiniz ekranında aşağıdaki bölümleri içerir:
 - **Başlarken** -Mac için Visual Studio ile çalışmaya başlama geliştiriciler için yararlı konularını hızlı erişim sağlar
 - **Son çözümleri** -açın veya projeleri oluşturmak için uygun düğmeleri yanı sıra, en son açılan çözümleri hızlı erişim sağlar.
 - **Geliştirici Haberleri** -en son Microsoft Developer bilgiler, güncel tutar bir haber akışı.
+
+::: zone-end
 
 ## <a name="solutions-and-projects"></a>Projeler ve Çözümler
 

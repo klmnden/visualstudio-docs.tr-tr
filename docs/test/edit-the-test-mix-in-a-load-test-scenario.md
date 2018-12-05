@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Yük testi senaryosunda test karışımı
+title: Bir yük testi senaryosunun test karışımı
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,23 +13,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3fd2ab4689128ca06ab463aed1743a244597b9ea
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 3b3bd0ae4df657d7234a77413003b18d5db86138
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179521"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895996"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Hangi web performansı, birim ve kodlanmış UI testleri yük testi senaryosunda içerecek şekilde belirlemek için test karışımını düzenle
 
 *Test karışımı* bir senaryo seçimini web senaryosu ve bu testlerin dağıtımını içeren senaryoda bulunan başarım ve birim testlerini birleşimidir. Dağıtım için belirli bir testin bir yük testi çalışması sırasında sanal bir kullanıcı tarafından seçilir olasılık belirtebileceğiniz bir ayardır.
 
- Bir yük testi için test kümesini ekledikten sonra *test karışımı* karıştırmak seçenekleri diğer gibi çalışır. Sanal kullanıcı test karışımında belirtilen olasılığını göre rastgele seçer. Örneğin, iki testler, her yüzde 50 karışımında varsa, ilk yaklaşık yarım saat test yeni bir sanal kullanıcı seçer. Bir 50/50 karışımında bir test uzun ve diğeri kısaysa, uzun test çalıştırmasından daha fazla yük gelir.
+Bir yük testi için test kümesini ekledikten sonra *test karışımı* karıştırmak seçenekleri diğer gibi çalışır. Sanal kullanıcı test karışımında belirtilen olasılığını göre rastgele seçer. Örneğin, iki testler, her yüzde 50 karışımında varsa, ilk yaklaşık yarım saat test yeni bir sanal kullanıcı seçer. Bir 50/50 karışımında bir test uzun ve diğeri kısaysa, uzun test çalıştırmasından daha fazla yük gelir.
 
- Testler için karışımı ekledikten sonra bunları kaldırabilirsiniz. Ayrıca, dağıtım, test karışımını karıştırma denetimini kullanarak değiştirebilirsiniz. Karıştırma denetimini senaryosunda testlerin dağıtımını kolayca ayarlamanıza olanak tanır.
+Testler için karışımı ekledikten sonra bunları kaldırabilirsiniz. Ayrıca, dağıtım, test karışımını karıştırma denetimini kullanarak değiştirebilirsiniz. Karıştırma denetimini senaryosunda testlerin dağıtımını kolayca ayarlamanıza olanak tanır.
 
 > [!NOTE]
 > Dağıtım, belirli bir testin bir yük testi çalışması sırasında sanal bir kullanıcı tarafından seçilir olasılık ölçüsüdür. Dağıtım bir yüzdesi olarak ifade edilir. Bu nedenle, bir senaryoda bulunan tüm testler için dağıtım sayıların toplamını 100'dür. Örneğin, bir senaryo sadece bir test içeriyorsa, dağıtım için test yüzde 100 ' dir.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="add-new-tests-to-a-test-mix-in-an-existing-scenario"></a>Varolan bir senaryoyu test karışımında yeni testler ekleyin
 

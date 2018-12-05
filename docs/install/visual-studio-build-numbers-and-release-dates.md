@@ -5,26 +5,29 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 11/28/2018
+ms.date: 12/04/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 26910afc22a7ce71db7cef1f024c8e9ba04bac64
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 1e3c14687fe48b3929488f539378d49bf2d43e65
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621623"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895411"
 ---
-# <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 derleme numaraları ve yayın tarihleri
+# <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio derleme numaraları ve yayın tarihleri
+
+## <a name="visual-studio-2017"></a>Visual Studio 2017
 
 Aşağıdaki tabloda, Visual Studio 2017 için derleme numaraları ve yayın tarihleri tarihe listeler.
 
 | **Sürüm**| **Kanal** | **Yayın tarihi** | **Derleme sürümü** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.3 | Önizleme 1 | 28 Kasım 2018 | 15.9.28307.145 |
 | 15.9.3 | Sürüm | 28 Kasım 2018 | 15.9.28307.145 |
 | 15.9.2 | Sürüm | 19 Kasım 2018 | 15.9.28307.108 |
 | 15.9.1 | Sürüm | 15 Kasım 2018 | 15.9.28307.105 |
@@ -162,6 +165,14 @@ Aşağıdaki tabloda, Visual Studio 2017 için derleme numaraları ve yayın tar
 | 15.0.1  | Sürüm | 14 Mart 2017 | 15.0.26228.9 |
 | 15.1 önizleme 1 | Önizleme | 7 Mart 2017 | 15.0.26304.0 |
 | 15.0.0 | Sürüm | 7 Mart 2017 | 15.0.26228.4 |
+
+## <a name="visual-studio-2019-preview"></a>Visual Studio 2019 önizlemesi
+
+Aşağıdaki tabloda, Visual Studio 2019 Preview için tarih derleme numaraları ve yayın tarihleri listeler.
+
+| **Sürüm**| **Kanal** | **Yayın tarihi** | **Derleme sürümü** |
+| ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | Önizleme 1 | 4 Aralık 2018'e | 16.0.28329.73 |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

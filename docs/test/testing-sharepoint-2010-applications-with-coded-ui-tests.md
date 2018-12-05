@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da kodlanmış UI testleriyle SharePoint uygulamaları test edin
+title: Kodlanmış UI testleriyle SharePoint uygulamaları test etme
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,18 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 166a57cb0b3c80736761e1649da6399a9bd19807
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 91d17857f1d20508041ad6c5daa90a962d6d30e6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379718"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895450"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>Kodlanmış UI testleriyle SharePoint uygulamaları test etme
 
 Kodlanmış UI testleri içindeki bir SharePoint uygulaması da dahil olmak üzere, kendi kullanıcı Arabirimi denetimleri de dahil olmak üzere tüm uygulamanın düzgün çalıştığını doğrulamak olanak tanır. Kodlanmış UI testleri, değerleri ve kullanıcı arabirimi mantığı da doğrulayabilirsiniz.
 
 Kodlanmış UI testleri kullanmanın avantajları hakkında daha fazla bilgi için bkz: [kodunuzu test etmek için kullanım UI Otomasyonu](../test/use-ui-automation-to-test-your-code.md).
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 **Gereksinimler**
 

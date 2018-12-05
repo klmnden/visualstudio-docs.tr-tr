@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5d5e378e62f03208c620669fada783fc5fdfb1b1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e184db43fcaca96008f85daffdb9abdbc41df07b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842176"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895229"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Nasıl yapılır: yük testi çalışma ayarı için zamanlama ayrıntıları depolama özelliğini belirtme
 
 İle yükleme testinizi oluşturduktan sonra **Yeni Yük Testi Sihirbazı**, kullanabileceğiniz **Yük Testi Düzenleyicisi** test ihtiyaçlarınızı ve hedeflerinizi karşılamak için ayarları değiştirmek için.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Bir çalışma ayarının düzenleyebileceğiniz **Zamanlama Ayrıntıları Deposu** özellik değerine **özellikleri** penceresi. **Zamanlama Ayrıntıları Deposu** özelliği aşağıdaki seçeneklerden birine ayarlanabilir:
 

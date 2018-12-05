@@ -1,5 +1,5 @@
 ---
-title: Yük desenleri için yük testi Visual Studio'da
+title: Yük testi için yük düzenleri
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fb5e63f8c33267d622271221271ba8e71bb6f205
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a15f771d2afa2b5c8e02eed99b3168a537365a3f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862508"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895307"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Model sanal kullanıcı etkinlikleri için yük desenlerini düzenleme
 
@@ -27,6 +27,8 @@ Yük düzeni, bir senaryonun bir bileşenidir. Bir yük testi tanımlanmış yü
 
 > [!NOTE]
 > Tüm yükleme desenleri, Visual Studio oluşturduğu sanal kullanıcı benzetimi yapılmış bir yük yüktür.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="load-patterns"></a>Yük düzenleri
 

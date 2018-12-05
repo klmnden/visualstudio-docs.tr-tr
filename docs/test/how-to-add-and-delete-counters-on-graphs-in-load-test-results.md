@@ -13,24 +13,26 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8b43cc3acbbff70124685229e33362cfd9b30561
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 21fa28e9ff149bcf117e3bde5d553a2cf641c04a
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908810"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896529"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Nasıl yapılır: Yük Testi Sonuçlarındaki Grafiklerde Sayaç Ekleme ve Silme
 
 Kullanabileceğiniz **sayaçları** paneli performans sayaçları grafiğe eklenecek.
 
- ![Grafiğe eklenen sayacı](../test/media/ltest_selectcounter.png)
+![Grafiğe eklenen sayacı](../test/media/ltest_selectcounter.png)
 
- **Performans sayacı örnekleme aralığı hakkında önemli noktalar**
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- İçin bir değer seçin **örnek hızı** özelliği yük testinde çalışma ayarları yük testinizin uzunluğuna göre. Varsayılan değer olarak beş saniye gibi küçük bir örnekleme hızı yükleme testi sonuçları veritabanı daha fazla alan gerektirir. Daha uzun yük testleri için örnek hızı artırmak topladığınız veri miktarını azaltır. Daha fazla bilgi için [nasıl yapılır: örnek hızı belirtme](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+**Performans sayacı örnekleme aralığı hakkında önemli noktalar**
 
- Örnek hızlara ait bazı Kılavuzlar şunlardır:
+İçin bir değer seçin **örnek hızı** özelliği yük testinde çalışma ayarları yük testinizin uzunluğuna göre. Varsayılan değer olarak beş saniye gibi küçük bir örnekleme hızı yükleme testi sonuçları veritabanı daha fazla alan gerektirir. Daha uzun yük testleri için örnek hızı artırmak topladığınız veri miktarını azaltır. Daha fazla bilgi için [nasıl yapılır: örnek hızı belirtme](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+
+Örnek hızlara ait bazı Kılavuzlar şunlardır:
 
 |Yük testi süresi|Önerilen örnek hız|
 |-|-----------------------------|
@@ -39,11 +41,11 @@ Kullanabileceğiniz **sayaçları** paneli performans sayaçları grafiğe eklen
 |8 - 24 saat|30 saniye|
 |> 24 saat|60 saniye|
 
- **Yüzdelik veri toplamak için zamanlama ayrıntılarını da dahil olmak üzere dikkat edilmesi gereken noktalar**
+**Yüzdelik veri toplamak için zamanlama ayrıntılarını da dahil olmak üzere dikkat edilmesi gereken noktalar**
 
- Yük testi adlı Düzenleyicisi'nde çalışma ayarlarında bir özelliği yoktur **Zamanlama Ayrıntıları Deposu**. Varsa **Zamanlama Ayrıntıları Deposu** özelliği etkinse, sonra Yük testi sırasında her bir bireysel test, hareket ve sayfa yürütülme zamanı yükleme testi sonuçları deposunda depolanır. Bu, 90'ıncı ve 95 yüzdelik veri gösterilmesini sağlar **Yük Testi Çözümleyicisi** testler, hareketler ve sayfalar tablolarında.
+Yük testi adlı Düzenleyicisi'nde çalışma ayarlarında bir özelliği yoktur **Zamanlama Ayrıntıları Deposu**. Varsa **Zamanlama Ayrıntıları Deposu** özelliği etkinse, sonra Yük testi sırasında her bir bireysel test, hareket ve sayfa yürütülme zamanı yükleme testi sonuçları deposunda depolanır. Bu, 90'ıncı ve 95 yüzdelik veri gösterilmesini sağlar **Yük Testi Çözümleyicisi** testler, hareketler ve sayfalar tablolarında.
 
- Etkinleştirmek için iki seçeneğiniz vardır **Zamanlama Ayrıntıları Deposu** adlı çalıştırma ayarları özellikleri özelliğinde **StatisticsOnly** ve **AllIndividualDetails**. Her iki seçenek tüm bireysel testler, sayfalar ve hareketler zamanlanır ve bireysel zamanlama verisinden yüzdelik veri hesaplanır. Fark **StatisticsOnly** seçeneğini yüzdelik veri hesaplanır hemen sonra bireysel zamanlama verileri depodan silinir. Bu, zamanlama ayrıntılarını kullandığınızda depodaki gerekli alanı miktarını azaltır. Ancak, İleri düzey kullanıcılar SQL araçları kullanarak zamanlama ayrıntı verilerini farklı yollarla işlemek isteyebilirsiniz. Bu durum söz konusuysa **AllIndividualDetails** seçeneği kullanılmalıdır, böylece zamanlama ayrıntı verileri bu işlem için kullanılabilir. Ayrıca, özelliği ayarlamanız **AllIndividualDetails**, kullanan sanal kullanıcı etkinliğini çözümleyebilirsiniz **sanal kullanıcı etkinliği** içinde grafik **Yük Testi Çözümleyicisi** yük testi çalışmayı tamamladıktan sonra. Daha fazla bilgi için [Ayrıntılar görünümünde sanal kullanıcı etkinliğini çözümleme](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+Etkinleştirmek için iki seçeneğiniz vardır **Zamanlama Ayrıntıları Deposu** adlı çalıştırma ayarları özellikleri özelliğinde **StatisticsOnly** ve **AllIndividualDetails**. Her iki seçenek tüm bireysel testler, sayfalar ve hareketler zamanlanır ve bireysel zamanlama verisinden yüzdelik veri hesaplanır. Fark **StatisticsOnly** seçeneğini yüzdelik veri hesaplanır hemen sonra bireysel zamanlama verileri depodan silinir. Bu, zamanlama ayrıntılarını kullandığınızda depodaki gerekli alanı miktarını azaltır. Ancak, İleri düzey kullanıcılar SQL araçları kullanarak zamanlama ayrıntı verilerini farklı yollarla işlemek isteyebilirsiniz. Bu durum söz konusuysa **AllIndividualDetails** seçeneği kullanılmalıdır, böylece zamanlama ayrıntı verileri bu işlem için kullanılabilir. Ayrıca, özelliği ayarlamanız **AllIndividualDetails**, kullanan sanal kullanıcı etkinliğini çözümleyebilirsiniz **sanal kullanıcı etkinliği** içinde grafik **Yük Testi Çözümleyicisi** yük testi çalışmayı tamamladıktan sonra. Daha fazla bilgi için [Ayrıntılar görünümünde sanal kullanıcı etkinliğini çözümleme](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
 Zamanlama ayarları verisini özellikle daha uzun yük testleri için çok büyük olabilir saklamak için yük testi sonuçları deposunda gereken alan miktarı. Bu veriler yük testi yürütmesini bitirene kadar yükleme testi aracısında depolanır çünkü Ayrıca, yük testi sonuçları deposu yük testinin sonunda bu verileri depolamak için uzun zamandır. Yük testi çalışmayı tamamladıktan sonra verilerin depoya saklandığı. Varsayılan olarak, **Zamanlama Ayrıntıları Deposu** özelliği etkin hale getirilir. Bu test ortamınızın sorunu ise, ayarlamak isteyebilirsiniz **Zamanlama Ayrıntıları Deposu** için **hiçbiri**.
 

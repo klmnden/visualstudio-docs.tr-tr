@@ -11,16 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b395d845e53e8d9632cce27ae0714e9bc0a87d26
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: fc54324f2c5bc91dba64aa35b125bbdc12ca1a45
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621347"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895034"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Rapor yük testi sonuçlarını test karşılaştırmaları veya eğilim analizi
 
-İki veya daha fazla test sonucunu temel alan Microsoft Excel yük testi raporları oluşturabilirsiniz. Yük testi raporlarının iki türü kullanılabilir:
+İki veya daha fazla test sonucunu temel alan Microsoft Excel yük testi raporları oluşturabilirsiniz.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Yük testi raporlarının iki türü kullanılabilir:
 
 - Karşılaştırmayı Çalıştır&mdash;tabloları ve çubuk grafikleri kullanarak yan yana karşılaştırma verileri görüntüleyen aslında iki raporlar bu rapor eder.
 

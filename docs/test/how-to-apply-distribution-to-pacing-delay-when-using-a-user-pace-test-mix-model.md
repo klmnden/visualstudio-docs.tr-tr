@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 20fa17054c3334566114c5baf9bc98a71025c225
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 19634186e13574c322c2e9bcc636dda3a823b158
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204082"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896204"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Nasıl yapılır: kullanıcı adım testi karışım modeli gecikmesine dağıtımı Uygula
 
 Kullanarak yük testi oluşturduktan sonra **Yeni Yük Testi Sihirbazı**, senaryonun özelliklerini test ihtiyaçlarınızı ve hedeflerinizi karşılayacak şekilde değiştirmek için Yük Testi Düzenleyicisi'ni kullanabilirsiniz.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 **Gecikmesine Dağıtım uygulama** özelliği ayarlanmış kullanarak **özellikleri** penceresi. Yük Testi Düzenleyicisini kullanarak yük testi senaryosu özellikleri değiştirilmiştir.
 

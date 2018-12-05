@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f5e7a56ff01e06c0d5046ab477ec78635f01f6c4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3bff9be24d5d1f615270bc80790a04e85e7cf25c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381917"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895333"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Nasıl yapılır: etkin çalışma yük testi için ayarı seçin
 
 İle yükleme testinizi oluşturduktan sonra **Yeni Yük Testi Sihirbazı**, kullanabileceğiniz **Yük Testi Düzenleyicisi** test ihtiyaçlarınızı ve hedeflerinizi karşılayacak şekilde değiştirmek için.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Bir veya daha fazla yük testi içerebilir *çalıştırma ayarları* olan bir yük testinin çalışma biçimini etkileyen özellikler kümesi. Çalıştırma ayarları kategorilere göre düzenlenir **özellikleri** penceresi. Bir yük testi çalıştırdığınızda, şu anda etkin olarak ayarlanmış çalıştırma ayarını kullanır.
 
@@ -31,8 +33,6 @@ Yük testi çalışma ayarı yalnızca bir düğümünde içeriyorsa **çalışt
 İçinde **Yük Testi Düzenleyicisi**, etkin çalışma ayarı "[etkin]" soneki ile tanımlanır.
 
 ## <a name="select-the-active-run-setting"></a>Etkin çalışma ayarını seçin
-
-### <a name="to-select-the-active-run-setting-in-a-load-test"></a>Etkin bir yük testi çalışma ayarı seçmek için
 
 1.  Bir yük testi açın.
 

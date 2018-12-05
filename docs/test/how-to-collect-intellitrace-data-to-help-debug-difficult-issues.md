@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 593540e125980e245142052648a5a9d8894234fd
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 8501f141c2fdf60a57daecda33a3ff7436a16a5d
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621558"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894644"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Nasıl yapılır: hata ayıklama zorluklarını çözmeye yardımcı olmak için IntelliTrace verilerini toplama
 
 Tanılama veri bağdaştırıcısı için görsel Stdio, belirli tanı izleme bilgilerini toplamak için IntelliTrace'i yapılandırabilirsiniz. Testler bu bağdaştırıcıyı kullanabilir, test, uygulama için büyük miktarda tanılama olayları toplayabilir ve sonrasında bir geliştirici bu olayları, kodu izleyip bir hatanın nedenini bulmak üzere kullanabilir. IntelliTrace için tanılama veri bağdaştırıcısı el ile veya otomatik testler için kullanılabilir.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > IntelliTrace yalnızca yönetilen kod kullanarak yazılmış bir uygulama üzerinde çalışır. Bir tarayıcı istemci olarak kullanan bir web uygulamasını test ediyorsanız, yönetilen kod yok izleme için kullanılabilir olmadığından, IntelliTrace istemci için test ayarlarınızda etkinleştirmemeniz gerekir. Bu durumda, bir ortam kurmak ve web sunucunuz üzerinde uzaktan IntelliTrace veri toplamak isteyebilirsiniz.
@@ -32,7 +34,7 @@ IntelliTrace verisi uzantısına sahip bir dosyada depolanır *.iTrace*. Test ve
 > [!NOTE]
 > Test geçiş başarılı olduğunda, IntelliTrace için tanılama veri bağdaştırıcısını IntelliTrace dosyası oluşturmaz. Yalnızca başarısız bir test çalışması veya bir hatayı bildirme, bir dosya kaydeder.
 
- IntelliTrace dosyasında toplanan veri, kodunuzda hata yeniden oluşturmak için gerekli olan zamanı azaltarak hata ayıklama verimliliğini artırır. Ayrıca, yerel oturumunuza bilgisayarlarında çoğaltabilirsiniz başka bir kişi ile IntelliTrace dosyası paylaşabildiğinden hata tekrarlanabilir olmayan olacağını olasılığını azaltır.
+IntelliTrace dosyasında toplanan veri, kodunuzda hata yeniden oluşturmak için gerekli olan zamanı azaltarak hata ayıklama verimliliğini artırır. Ayrıca, yerel oturumunuza bilgisayarlarında çoğaltabilirsiniz başka bir kişi ile IntelliTrace dosyası paylaşabildiğinden hata tekrarlanabilir olmayan olacağını olasılığını azaltır.
 
 > [!NOTE]
 > Test ayarlarınızda IntelliTrace etkinleştirirseniz, kod kapsam verisi toplama çalışmaz.
@@ -40,7 +42,7 @@ IntelliTrace verisi uzantısına sahip bir dosyada depolanır *.iTrace*. Test ve
 > [!WARNING]
 > IntelliTrace için tanılama veri bağdaştırıcısı, test çalışması için testleri yüklendikten sonra gerçekleştirilmesi gereken yönetilen bir işlem kullanılarak çalışır. İzlemek istediğiniz işlem zaten başladıysanız, işlem zaten çalıştığından hiç IntelliTrace dosyaları toplanacak. Bu aşmak için testler yüklenmeden önce işlem durdurulduğundan emin olun. Ardından test yüklenemedi veya ilk testi başlatıldıktan sonra işlemi başlatın.
 
- Aşağıdaki yordam, toplamak istediğiniz IntelliTrace verilerini yapılandırmak açıklar. Bu adımlar, Microsoft Test Yöneticisi ve Test Ayarları iletişim kutusunda Visual Studio'da her iki yapılandırma düzenleyicisine uygulanır.
+Aşağıdaki yordam, toplamak istediğiniz IntelliTrace verilerini yapılandırmak açıklar. Bu adımlar, Microsoft Test Yöneticisi ve Test Ayarları iletişim kutusunda Visual Studio'da her iki yapılandırma düzenleyicisine uygulanır.
 
 > [!NOTE]
 > IntelliTrace verilerini toplamak için kullanılan test aracısı için kullanıcı hesabı Yöneticileri grubunun bir üyesi olması gerekir. Daha fazla bilgi için [yüklemek ve test denetleyicisilerinin](../test/lab-management/install-configure-test-agents.md).

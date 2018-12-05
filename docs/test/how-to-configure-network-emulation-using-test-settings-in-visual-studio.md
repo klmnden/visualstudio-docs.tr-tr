@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ce49eb2e6892528d95e40bc1c40e36f355495c65
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d58bf2bc321b3041ffa0958786b976276acf0186
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829293"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896308"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Nasıl yapılır: Visual Studio'da test ayarlarını kullanarak ağ öykünmesini yapılandırma
 
@@ -24,7 +24,9 @@ Uygulamanızı Visual Studio'dan farklı ağ ortamlarında test etmek için tan�
 > [!WARNING]
 > Testlerinizi Öykünülen ağdan daha yavaş türde bir gerçek ağda çalıştırırsanız, test yine daha yavaş ağ hızında çalışır. Öykünme ağ ortamını yalnızca yavaşlatabilir, hızlandıramaz.
 
- Aşağıdaki yordam yapılandırma düzenleyicisinden ağ öykünmesini yapılandırmak nasıl açıklar. Bu adımlar, Microsoft Test Yöneticisi ve Visual Studio içinde her iki yapılandırma düzenleyicisine uygulanır.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Aşağıdaki yordam yapılandırma düzenleyicisinden ağ öykünmesini yapılandırmak nasıl açıklar. Bu adımlar, Microsoft Test Yöneticisi ve Visual Studio içinde her iki yapılandırma düzenleyicisine uygulanır.
 
 > [!NOTE]
 > Ağ öykünmesi tanılama veri bağdaştırıcısı yalnızca Visual Studio test ayarları için geçerlidir. Microsoft Test Yöneticisi'nde test ayarları için kullanılmaz.
@@ -34,9 +36,9 @@ Yönetici ayrıcalıklarına sahip bir hesap, ağ öykünmesi için kullanılmal
 > [!NOTE]
 > Test aracısı için varsayılan hesap olan ağ hizmeti hesabını administrators grubunun bir üyesi değil.
 
- **Gerçek ağ öykünmesi**
+**Gerçek ağ öykünmesi**
 
- Visual Studio tüm test türleri için yazılım tabanlı gerçek ağ öykünmesi kullanır. Bu, yük testlerini içerir. Gerçek ağ öykünmesi ağ paketlerinin doğrudan düzenlenmesiyle ağ koşullarının benzetimini yapar. Gerçek ağ öykünücü Ethernet gibi güvenilir bir fiziksel bağlantı kullanarak hem kablolu hem de kablosuz ağların davranışını taklit edebilir. Aşağıdaki ağ öznitelikleri gerçek ağ öykünmesine dahil edilir:
+Visual Studio tüm test türleri için yazılım tabanlı gerçek ağ öykünmesi kullanır. Bu, yük testlerini içerir. Gerçek ağ öykünmesi ağ paketlerinin doğrudan düzenlenmesiyle ağ koşullarının benzetimini yapar. Gerçek ağ öykünücü Ethernet gibi güvenilir bir fiziksel bağlantı kullanarak hem kablolu hem de kablosuz ağların davranışını taklit edebilir. Aşağıdaki ağ öznitelikleri gerçek ağ öykünmesine dahil edilir:
 
 - (Gecikme) ağ üzerinden gidiş-dönüş süresi
 
@@ -50,12 +52,13 @@ Yönetici ayrıcalıklarına sahip bir hesap, ağ öykünmesi için kullanılmal
 
 - Hata yayılmaları.
 
-  Gerçek ağ öykünmesi aynı zamanda IP adresleri veya TCP, UDP ve ICMP gibi protokollere dayanan ağ paket filtrelemelerinde esneklik sağlar.
+Gerçek ağ öykünmesi aynı zamanda IP adresleri veya TCP, UDP ve ICMP gibi protokollere dayanan ağ paket filtrelemelerinde esneklik sağlar.
 
-  Gerçek ağ öykünmesi ağ tabanlı geliştiriciler ve test edenler tarafından istenen sınama ortamına öykünmek, başarımı değerlendirmek, değişikliğin etkilerini öngörmek veya teknoloji iyileştirmesi hakkında kararlar için kullanılabilir. Donanım test yataklarıyla karşılaştırıldığında gerçek ağ öykünmesi çok daha ucuz ve daha esnek bir çözüm ' dir.
+Gerçek ağ öykünmesi ağ tabanlı geliştiriciler ve test edenler tarafından istenen sınama ortamına öykünmek, başarımı değerlendirmek, değişikliğin etkilerini öngörmek veya teknoloji iyileştirmesi hakkında kararlar için kullanılabilir. Donanım test yataklarıyla karşılaştırıldığında gerçek ağ öykünmesi çok daha ucuz ve daha esnek bir çözüm ' dir.
 
 ## <a name="configure-network-emulation-for-your-test-settings"></a>Test ayarlarınız için ağ öykünmesini yapılandırın
- Bu yordamdaki adımları gerçekleştirmeden önce Visual Studio'dan test ayarlarınızı açmalı ve ardından gerekir **veri ve tanılama** sayfası.
+
+Bu yordamdaki adımları gerçekleştirmeden önce Visual Studio'dan test ayarlarınızı açmalı ve ardından gerekir **veri ve tanılama** sayfası.
 
 ### <a name="to-configure-network-emulation-for-your-test-settings"></a>Test ayarlarınız için ağ öykünmesini yapılandırmak için
 

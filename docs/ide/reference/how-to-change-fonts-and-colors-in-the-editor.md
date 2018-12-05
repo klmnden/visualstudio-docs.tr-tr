@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23978b13808054bfcf8ef3c809307e4f6cf37b43
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 2894039fc963ef089d0a1551d8b8afc7713edd4f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388627"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894553"
 ---
-# <a name="how-to-change-fonts-and-colors-for-the-editor"></a>Nasıl yapılır: düzenleyici için yazı tiplerini ve renkleri değiştirme
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio-2017"></a>Nasıl yapılır: yazı tiplerini ve renkleri değiştirme Düzenleyicisi Visual Studio 2017 için
 
 Varsayılan yazı tipini değiştirmek, yazı tipi boyutunu ayarlayın ve çeşitli metin ön ve arka plan renklerini değiştirme **görüntü öğeleri** Kod düzenleyicisinde. Yazı tipi ayarlarını değiştirdiğinizde, aşağıdaki bilgileri göz önünde bulundurun:
 

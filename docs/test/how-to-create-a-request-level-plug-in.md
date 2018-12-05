@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 749c4be37586401d48e9c4a11d8fc70b8ed44c44
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: cf94de633554cef495b0a9a023426ac49de75c76
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382041"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895281"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Nasıl yapılır: istek düzeyi eklentisi oluşturma
 
 *İstekleri* web performans testleri oluşturan bildirim deyimleri. Web performans testi eklentileri yalıtmak ve ana bildirim deyimleri, web performans testinde dışındaki kod yeniden kullanımını etkinleştirin. Eklentileri oluşturun ve bunları tek bir istek de içeren web performans testi için farklı ekleyin. Özelleştirilmiş *istek eklentisi* belirli bir istek, bir web performans testi çalıştırırken kodu çağırmak için bir yol sunar.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Her web performans test isteği eklentisi PreRequest yöntemi ve PostRequest yöntemi vardır. Belirli bir http isteği için bir istek eklentisi ekledikten sonra istek ve yanıt alındıktan sonra PostRequest harekete önce PreRequest olay harekete geçirilir.
 

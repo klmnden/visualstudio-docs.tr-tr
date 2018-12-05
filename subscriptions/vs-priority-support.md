@@ -1,26 +1,24 @@
 ---
-title: Visual Studio aboneliği öncelikli destek teklifi | Microsoft Docs
+title: Visual Studio aboneliği Geliştirici topluluğu teklifi | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 05/07/2018
+ms.date: 12/04/2018
 ms.topic: Get-Started-Article
-description: Visual Studio abonelikleri dahil öncelikli destek teklifi hakkında bilgi edinin.
+description: Visual Studio abonelikleri dahil Geliştirici topluluğu Avantajı hakkında bilgi edinin.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e58b316d0fc26ec4c01e50c23e3cdc7b0632b72c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7eb168f8163d75e01ac688439780fd7d65df3506
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866746"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896659"
 ---
-# <a name="priority-support-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri öncelikli destek
+# <a name="developer-community-support-in-visual-studio-subscriptions"></a>Visual Studio Abonelikleri, geliştirici topluluk desteği
 
-Öncelikli destek avantajı, mevcut gönderileri arayabileceğiniz desteğine topluluk forumlarımız çeşitli erişim sağlar veya yeni sorular sorar.  Topluluk, sorunuzu iki gün içinde yanıt vermezse, Microsoft Destek ekibine bir yanıt sağlar.
-
-Seçili Visual Studio abonelikleri olan aboneler aracılığıyla çok sayıda çeşitli konularda ele alındığı forumları öncelikli destek almak uygundur.  Bu foruma doğrudan gitmek için aşağıdaki bağlantılardan herhangi birine tıklayın.  
+Geliştirici topluluğu avantajı, mevcut gönderileri arayabileceğiniz desteğine topluluk forumlarımız çeşitli erişim sağlar veya yeni sorular sorar. Bu foruma doğrudan gitmek için aşağıdaki bağlantılardan herhangi birine tıklayın.  
 
 ## <a name="included-forums"></a>Dahil edilen forumları
 

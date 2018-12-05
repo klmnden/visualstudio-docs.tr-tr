@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Yük testi çalıştırma ayarları
+title: Yük testi çalıştırma ayarları
 ms.date: 10/19/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 009315e2bd07cd62115c1f9130473a8c0c8d4a47
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 9b0123ba4e6f9565cc31f63a23bb0be0b5bee344
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621584"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895502"
 ---
 # <a name="load-test-run-settings-properties"></a>Yük testi çalıştırma ayarları özellikleri
 
 Çalıştırma ayarları yük testinin çeşitli test sonuçları koleksiyon ayrıntı düzeyi ve test çalıştığında toplanan sayaç kümeleri süresi dahil olmak üzere, diğer ayarları belirleyin. Oluşturun ve her bir yük testi için birden çok çalışma ayarlarını depolamak ve ardından test çalıştırması sırasında kullanmak için belirli bir ayar seçin. İlk çalıştırma ayarı kullanarak yük testi oluşturduğunuzda, yük testinize eklenir **Yeni Yük Testi Sihirbazı**.
 
- Aşağıdaki tablolar, yük testi çalıştırma ayarındaki çeşitli özelliklerini açıklar. Bu özellikler, belirli yük testi gereksinimlerini karşılayacak şekilde değiştirebilirsiniz.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Daha fazla bilgi için [yapılandırma yük testi çalıştırma ayarları](../test/configure-load-test-run-settings.md).
+Aşağıdaki tablolar, yük testi çalıştırma ayarındaki çeşitli özelliklerini açıklar. Bu özellikler, belirli yük testi gereksinimlerini karşılayacak şekilde değiştirebilirsiniz.
+
+Daha fazla bilgi için [yapılandırma yük testi çalıştırma ayarları](../test/configure-load-test-run-settings.md).
 
 ## <a name="general-properties"></a>Genel Özellikler
 

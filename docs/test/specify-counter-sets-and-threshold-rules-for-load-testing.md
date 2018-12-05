@@ -15,16 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c6ab7d05c5c26cef7c6479f52438cadec7f3124a
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: dba28aea3a4859c9767925a0ac3c7b2ec8e75275
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621506"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894514"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Sayaç kümelerini ve eşik kurallarını bilgisayarlar için bir yük testi içinde belirtin.
 
 Yükleme testleri, performans sayacı verilerini çözümlediğinizde kullanışlı olan adlandırılmış sayaç kümeleri sağlar. Sayaç kümeleri teknoloji ile düzenlenir ve uygulama, ASP.NET, .NET uygulaması, IIS ve SQL içerir. Kullanarak bir yük testi oluşturduğunuzda **Yeni Yük Testi Sihirbazı**, bir başlangıç sayaç kümesini ekleyin. Bu, Yük testiniz için önceden tanımlanmış ve önemli sayaç kümeleri kümesini sunar. Sayaçlarınızı yönettiğiniz **Yük Testi Düzenleyicisi**.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Yük testlerinizi Uzak makinelerde dağıtılmışsa, denetleyici ve aracı sayaçları denetleyicisi ve aracısı için eşlenen sayaç kümeleri. Uzak makinede yük testinizde kullanma hakkında daha fazla bilgi için bkz. [Test denetleyicileri ve test aracılarını](configure-test-agents-and-controllers-for-load-tests.md).

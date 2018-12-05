@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 945bbe8377d51974bdfb09b762e415da3004346b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9740d26ef99c10bb9ec84afa23b998f6e1467f40
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821844"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895268"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Nasıl yapılır: Yük Testi Çözümleyicisi kullanarak bir yük testinde web sayfası yanıt süresini görüntüleme
 
 Her web sayfasının yüklenmesi için geçen süreyi olarak da bilinen *yanıt süresi*. Web performans testi oluşturduğunuzda, web performans testinde web sayfası her istek için yanıt süresi hedefi ayarlayabilirsiniz.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Bir yük testi içinde web performans testinizi yoğunluk altında çalıştırırsanız, her sayfa için aşağıdaki bilgileri analiz etmek mümkün olacaktır:
 
@@ -36,8 +38,6 @@ Bir yük testi içinde web performans testinizi yoğunluk altında çalıştır�
 -   Grafik görünümünde Web sayfası yanıt sürelerini analiz etme
 
 ## <a name="view-response-time-data-in-a-table"></a>Bir tablodaki yanıt süresi verilerini görüntüleyin
-
-### <a name="to-view-response-time-data-in-a-table"></a>Bir tablodaki yanıt süresi verilerini görüntülemek için
 
 1. İçinde **Yük Testi Çözümleyicisi**, seçin **tabloları** araç çubuğundaki tablo kılavuzunu görüntülendiğinden emin olun.
 
@@ -70,7 +70,7 @@ Bir yük testi içinde web performans testinizi yoğunluk altında çalıştır�
 
 Yanıt süresi verilerini nasıl Yük testiniz sırasında zamanla değişeceğini görmek için bir grafik de görüntüleyebilirsiniz. Test çalışırken (örneğin, adım yükü düzenini kullanıyorsanız), yük düzeni artarsa bu özellikle yararlıdır. Daha fazla bilgi için [düzenleme yük desen modeli sanal kullanıcı etkinliği](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-### <a name="to-view-response-time-data-in-a-graph"></a>Bir yanıt süresi verilerini görüntülemek için
+Bir yanıt süresi verilerini görüntülemek için:
 
 1. İçinde **Yük Testi Çözümleyicisi**, seçin **grafikleri** araç çubuğundaki graf görüntülendiğinden emin olun.
 

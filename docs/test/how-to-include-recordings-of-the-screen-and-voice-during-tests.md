@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da Test ayarlarını kullanarak testler sırasında ekran ve ses kayıtlarını dahil
+title: Testler sırasında ekran ve ses kaydı
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c213d7f7119b2c7310212f61c140177ef7c84c76
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 1470ab88cb21a7a80fa46f57f944ec5df21d544f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321079"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894419"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Nasıl yapılır: test ayarlarını kullanarak testler sırasında ekran ve ses kayıtlarını dahil
 
@@ -25,6 +25,8 @@ Visual Studio'daki yapılandırma düzenleyicisinden, testi çalıştıran kulla
 > Ekran ve ses kayıtları birden çok ekran yapılandırmasını desteklemez.
 
 Ekran ve Ses Kaydedici el ile veya otomatikleştirilmiş testlerle kullanılabilir. Örneğin, kodlanmış UI testini uzaktan çalıştırırsanız, çalışırken kodlanmış UI testini görebilmek için masa üstünü kaydetmek isteyebilirsiniz. Bir ekran ve ses kaydını uzaktan yakalama hakkında daha fazla bilgi için bkz. [nasıl yapılır: Masaüstü ile etkileşim kuran testleri çalıştırmak için test aracınızı ayarlama](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>Ekran ve ses kaydını test ayarlarınız için yapılandırmak için
 

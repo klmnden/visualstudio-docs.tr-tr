@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3851b70f818c9cc601dbbdabce059e16fec747ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6525327e85d40b9b942e4e29a7d759a15598c824
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909783"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895846"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Nasıl yapılır: kaydedici eklentisi oluşturma
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> Kayıtlı web performans testini değiştirmenize olanak tanır. Değişiklik seçtiğiniz sonra gerçekleşir **Durdur** içinde **Web Performans Testi Kaydedicisi** araç ancak önceki test kaydedildi ve Web Performans Testi Düzenleyicisi'nde gösterilir.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Bir kaydedici eklentisi, kendi özel korelasyon Dinamik parametrelere ilişkin gerçekleştirmenizi sağlar. Yerleşik bağıntı işlevi ile web performans testleri web tamamlandıktan sonra veya kullandığınızda kaydı dinamik parametreleri algılamak **dinamik parametreleri Web Test Parametrelerine Yükselt** üzerinde **Web Performans Testi Düzenleyicisi** araç çubuğu. Ancak dahili algılama işlevselliği tüm dinamik parametreleri her zaman bulmaz. Örneğin, genellikle 5 ila 30 dakika arasında bir değer alır oturum kimliği bulmaz. Bu nedenle, bağıntı işlemini el ile yapmanız gerekir.
 

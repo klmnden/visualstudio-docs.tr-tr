@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2c2a5366a9772060a3e94de14b12f5d2ae62cbdf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dbff48696a7fe10266a2c72fc3a3d9fb0e9ba81d
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949324"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896074"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Nasıl yapılır: Web Performans Test Sonuçları Görüntüleyicisi için bir Visual Studio eklentisi oluşturma
 
@@ -28,7 +28,9 @@ Kullanıcı Arabiriminde genişletebileceğiniz **Web Performans Test Sonuçlar�
 
 Ayrıca, bulunan LoadTestPackage DLL'ye bir başvuru eklemeniz gerekir *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* klasör.
 
--   Genişletmek için **Web Performans Test Sonuçları Görüntüleyicisi**'s UI, Visual Studio eklentisi ve bir kullanıcı denetimi oluşturmalısınız. Aşağıdaki yordamlar eklenti, kullanıcı denetimi oluşturma işlemleri açıklanmaktadır ve nasıl uygulanacağını genişletmek gereken sınıfların **Web Performans Test Sonuçları Görüntüleyicisi**ait kullanıcı Arabirimi.
+Genişletmek için **Web Performans Test Sonuçları Görüntüleyicisi**'s UI, Visual Studio eklentisi ve bir kullanıcı denetimi oluşturmalısınız. Aşağıdaki yordamlar eklenti, kullanıcı denetimi oluşturma işlemleri açıklanmaktadır ve nasıl uygulanacağını genişletmek gereken sınıfların **Web Performans Test Sonuçları Görüntüleyicisi**ait kullanıcı Arabirimi.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>Bir ASP.NET web uygulaması ve web performansı ve yük testi projesi içeren bir çözüm açın veya oluşturun
 

@@ -12,22 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 85759cc5f9297ba2bb0706352d788ba619a8021c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 12b01e8428c35874f4a913c846f57f89a02162c6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380674"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894475"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Nasıl yapılır: web hizmeti testi oluşturma
 
 Web performans testi, web hizmetleri test etmek için kullanabilirsiniz. Kullanarak **istek Ekle** ve **Web hizmeti isteği Ekle** seçenekleri, istekleri tek tek özelleştirebilirsiniz **Web Performans Testi Düzenleyicisi** web bulmak için hizmeti sayfaları. Genellikle, web uygulamasında bu sayfa görüntülenmez. Bu nedenle, bu sayfaları için erişim isteği özelleştirmeniz gerekir.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 Ticaret başlangıç Seti içinde yer alan bir web hizmeti aşağıdaki yordamları kullanın. Buradan indirebileceğiniz [gt;ASP.NET ticaret başlangıç Seti](http://go.microsoft.com/fwlink/?LinkId=181469).
 
- **Gereksinimler**
+**Gereksinimler**
 
--   Visual Studio Enterprise
+Visual Studio Enterprise
 
 ## <a name="to-test-a-web-service"></a>Bir web hizmeti test etmek için
 

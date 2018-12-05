@@ -9,16 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc225862ee4b9fbc2c4c94aaab4f410719391ee7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48c377a8a5c48db7e0726ab5d5cc238e6b83c71c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926598"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895294"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Test denetleyicilerini ve test aracılarını yönetme
 
 Visual Studio testleri uzaktan çalıştırmak, testleri birden fazla makine arasında dağıtmak için kullanacağınız veya yük testleri, test denetleyicisi yapılandırmanız gerekir, test aracılarını ve test ayarları dosyası. Bu konu, test denetleyicilerini Yönet ve test aracılarını yükledikten ve bunları ilk kez yapılandırdıktan sonra açıklar.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Laboratuvar ortamlarında testleri çalıştırmak için Microsoft Test Yöneticisi'ni kullanırsanız, test denetleyicilerini ve aracılarını kullanarak yönettiğiniz **Test denetleyicisi Yöneticisi** içinde **Laboratuvar Merkezi** Microsoft Test Yöneticisi için. Bu konu yalnızca testleri çalıştırmak için Visual Studio kullanıyorsanız geçerlidir.
 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da, denetimlerinizin kodlanmış UI testi etkinleştir
+title: Denetimlerinizin Kodlanmış UI Testlerini Etkinleştirme
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,18 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6f71012cca199cbee90995be654a75c1abb7fa79
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b9f9256407f854e5e7eefbca0cdd767679b9c88c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153569"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895957"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Kodlanmış UI denetimlerinizin etkinleştir
 
 Denetiminizi daha test edilebilir hale getirmek framework kodlanmış UI testi için destek uygular. Artımlı olarak artan destek düzeyleri ekleyebilirsiniz. Kayıt ve kayıttan yürütme ve özellik doğrulama destekleyerek başlatın. Ardından, denetimin özel özellikler tanımak kodlanmış UI test Oluşturucusu etkinleştirmek için oluşturun. Üretilen koddan özelliklere erişmek için özel sınıflar sağlar. Ayrıca, kodlanmış UI test Oluşturucusu'nu yakalama eylemlerini kaydedilen eylem amacı yakın bir şekilde yardımcı olabilir.
 
 ![CUIT&#95;tam](../test/media/cuit_full.png)
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>Erişilebilirlik uygulayarak kaydı ve kayıttan yürütme ve özellik doğrulama desteği
 

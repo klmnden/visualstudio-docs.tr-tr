@@ -11,24 +11,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cce61d9a56a0f8f79ec943b58fd4d1a1f88e8289
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1f0fc5bdc5b17c13bfb0d4adf07a4a48347ce38b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382311"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896464"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Nasıl yapılır: web başarım testi API'si kullanma
 
 Web performans testleri için kod yazabilirsiniz. Web performans testi API'si, kodlanmış web performans testleri, web performans testi eklentileri, istek eklentileri, istekler, ayıklama kuralları ve doğrulama kurallarını oluşturmak için kullanılır. Bu türleri oluşturan sınıfları, bu API temel sınıflardır. Bu API diğer türleri oluşturulmasını desteklemek için kullanılan <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>, ve <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> nesneleri. Kullandığınız <xref:Microsoft.VisualStudio.TestTools.WebTesting> özelleştirilmiş oluşturmak için ad alanı web performans testleri.
 
- Web performans testi API, program aracılığıyla oluşturma ve bildirim temelli web performans testlerini kaydetmek için de kullanabilirsiniz. Bunu yapmak için <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> ve <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer> sınıfları.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Web performans testi API, program aracılığıyla oluşturma ve bildirim temelli web performans testlerini kaydetmek için de kullanabilirsiniz. Bunu yapmak için <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> ve <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer> sınıfları.
 
 > [!TIP]
 > İncelemek için Nesne Tarayıcısı kullanmanız <xref:Microsoft.VisualStudio.TestTools.WebTesting> ad alanı. Visual C# ve Visual Basic düzenleyicileri ad alanındaki sınıflarla kodlamak için IntelliSense desteği sunar.
 
-
- Yük testleri için eklentileri de oluşturabilirsiniz. Daha fazla bilgi için [nasıl yapılır: yük testi API'si kullanma](../test/how-to-use-the-load-test-api.md) ve [nasıl yapılır: bir yük testi eklentisi oluşturma](../test/how-to-create-a-load-test-plug-in.md).
+Yük testleri için eklentileri de oluşturabilirsiniz. Daha fazla bilgi için [nasıl yapılır: yük testi API'si kullanma](../test/how-to-use-the-load-test-api.md) ve [nasıl yapılır: bir yük testi eklentisi oluşturma](../test/how-to-create-a-load-test-plug-in.md).
 
 ## <a name="to-use-the-webtesting-namespace"></a>WebTesting ad alanını kullanmak için
 

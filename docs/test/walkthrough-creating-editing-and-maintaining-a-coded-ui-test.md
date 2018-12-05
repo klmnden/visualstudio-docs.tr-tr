@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da bir kodlanmış UI testi oluşturma
+title: Kodlanmış UI testi oluşturma
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6fa58bea73bcbc10f0392bb0e8b135e39fc605b2
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: fe8bed9c1f1f8aee9ae8e6d1ba460bf226d7b818
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296365"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895528"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>İzlenecek yol: Oluşturma, düzenleme ve bir kodlanmış UI testinin
 
 Bu kılavuzda, oluşturmak, düzenlemek ve bir kodlanmış UI sınamak için bir Windows Presentation Framework (WPF) uygulaması korumak öğreneceksiniz. İzlenecek yol çeşitli zamanlama sorunları tarafından Kırılan testleri düzeltmeye ve denetimleri yeniden düzenleme için çözümler sağlar.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="create-a-wpf-app"></a>Bir WPF uygulaması oluşturma
 

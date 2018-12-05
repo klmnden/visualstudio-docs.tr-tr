@@ -10,27 +10,29 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 25b332fb822524f5fcab5e06ab97bfe2d6af8529
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25adfc867ca208f367f047e4cb94322718e12b52
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851614"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895320"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Nasıl yapılır: tanılama veri bağdaştırıcısı oluşturma
 
 Oluşturmak için bir *tanılama veri bağdaştırıcısı*, Visual Studio kullanarak bir sınıf kitaplığı oluşturun ve ardından Sınıf Kitaplığı'na Visual Studio Enterprise tarafından sağlanan tanılama veri bağdaştırıcısı API'leri ekleyin. Bir akış veya dosya olarak istediğiniz herhangi bir bilgi Gönder <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> testi çalıştırması sırasında oluşturulan olayları işlerken çerçeve tarafından sağlanan. Akışlar veya dosyalar gönderilen <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> testleriniz bittiğinde test sonuçlarına ekler olarak depolanır. Oluşturursanız bu hatadan test sonuçlarını veya kullandığınızda [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)], dosyalar da hataya bağlanır.
 
- Burada testlerinizi çalıştırdığınız makineyi veya test altındaki uygulamanızı çalıştırmak için kullandığınız ortamın parçası olan makineyi etkileyen tanılama veri bağdaştırıcısı oluşturabilirsiniz. Örneğin, test makinenizde dosyalar burada testler toplama veya uygulamanız için web sunucusu rolündeki sunan makinedeki dosyaları toplama.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Tanılama veri bağdaştırıcısı Microsoft Test Yöneticisi'ni veya Visual Studio kullanarak test ayarlarınızı oluşturduğunuzda görüntüleyen bir kolay ad verebilirsiniz. Test ayarlarınızı testlerinizi çalıştırdığınızda, ortamınızda hangi makine rolünün belirli tanılama veri bağdaştırıcılarını çalıştıracağını tanımlamanıza olanak sağlar. Test ayarlarınızı oluşturduğunuzda, tanılama veri bağdaştırıcılarınızı yapılandırabilirsiniz. Örneğin, web sunucunuzdan özel günlükleri toplayan tanılama veri bağdaştırıcısı oluşturabilirsiniz. Test ayarlarınızı oluşturduğunuzda, makine veya bu web sunucu rolünü gerçekleştiren makineler üzerinde bu tanılama veri bağdaştırıcısını çalıştırmayı seçebilirsiniz ve oluşturulan son üç günlüğü toplamak üzere test ayarlarınız için yapılandırmayı değiştirebilirsiniz. Test ayarları hakkında daha fazla bilgi için bkz. [test ayarlarını kullanarak tanılama bilgi toplayan](../test/collect-diagnostic-information-using-test-settings.md).
+Burada testlerinizi çalıştırdığınız makineyi veya test altındaki uygulamanızı çalıştırmak için kullandığınız ortamın parçası olan makineyi etkileyen tanılama veri bağdaştırıcısı oluşturabilirsiniz. Örneğin, test makinenizde dosyalar burada testler toplama veya uygulamanız için web sunucusu rolündeki sunan makinedeki dosyaları toplama.
 
- Böylece tanılama veri bağdaştırıcınızın testte o noktada görevleri gerçekleştirebilirsiniz, testlerinizi çalıştırdığınızda olaylar oluşturulur.
+Tanılama veri bağdaştırıcısı Microsoft Test Yöneticisi'ni veya Visual Studio kullanarak test ayarlarınızı oluşturduğunuzda görüntüleyen bir kolay ad verebilirsiniz. Test ayarlarınızı testlerinizi çalıştırdığınızda, ortamınızda hangi makine rolünün belirli tanılama veri bağdaştırıcılarını çalıştıracağını tanımlamanıza olanak sağlar. Test ayarlarınızı oluşturduğunuzda, tanılama veri bağdaştırıcılarınızı yapılandırabilirsiniz. Örneğin, web sunucunuzdan özel günlükleri toplayan tanılama veri bağdaştırıcısı oluşturabilirsiniz. Test ayarlarınızı oluşturduğunuzda, makine veya bu web sunucu rolünü gerçekleştiren makineler üzerinde bu tanılama veri bağdaştırıcısını çalıştırmayı seçebilirsiniz ve oluşturulan son üç günlüğü toplamak üzere test ayarlarınız için yapılandırmayı değiştirebilirsiniz. Test ayarları hakkında daha fazla bilgi için bkz. [test ayarlarını kullanarak tanılama bilgi toplayan](../test/collect-diagnostic-information-using-test-settings.md).
+
+Böylece tanılama veri bağdaştırıcınızın testte o noktada görevleri gerçekleştirebilirsiniz, testlerinizi çalıştırdığınızda olaylar oluşturulur.
 
 > [!IMPORTANT]
 > Özellikle, birden çok makina üzerinde test çalıştırmalarına sahip olduğunuzda, farklı iş parçacıkları üzerinde bu olaylar oluşturulabilir. Bu nedenle, olası iş parçacığı sorunlarından haberdar olmalı ve istemeden özel bağdaştırıcının iç verilerini bozuk. Tanılama veri bağdaştırıcınızın güvenli iş parçacığı olduğundan emin olun.
 
- Tanılama veri bağdaştırıcınızı oluştururken kullanabileceğiniz anahtar olayların kısmi bir listesi verilmiştir. Tanılama veri bağdaştırıcısı olaylarının tam listesi için bakınız <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> sınıfı.
+Tanılama veri bağdaştırıcınızı oluştururken kullanabileceğiniz anahtar olayların kısmi bir listesi verilmiştir. Tanılama veri bağdaştırıcısı olaylarının tam listesi için bakınız <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> sınıfı.
 
 |Olay|Açıklama|
 |-|-----------------|
@@ -44,9 +46,9 @@ Oluşturmak için bir *tanılama veri bağdaştırıcısı*, Visual Studio kulla
 > [!NOTE]
 > El ile test tamamlandığında, hiçbir daha fazla veri koleksiyonu olayları için tanılama veri bağdaştırıcısı gönderilir. Bir test yeniden çalıştırıldığında yeni bir test durumu tanımlayıcısı olması. Bir kullanıcı test sırasında bir testi sıfırlandırırsa (oluşturursa <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseReset> olay), ya değişiklikleri test adımı sonucunu, veri koleksiyonu olayı tanı veri bağdaştırıcısı için gönderilen, ancak test durumu tanımlayıcısı aynı kalır. Test çalışmasının sıfırlandığını belirlemek için tanılama veri bağdaştırıcınızda test çalışması tanımlayıcısını izlemelisiniz.
 
- Test ayarlarınızı oluşturduğunuzda sınıflandırdığınız bilgiyi temel alan bir veri dosyası toplayan tanı veri bağdaştırıcısı oluşturmak için aşağıdaki yordamı kullanın.
+Test ayarlarınızı oluşturduğunuzda sınıflandırdığınız bilgiyi temel alan bir veri dosyası toplayan tanı veri bağdaştırıcısı oluşturmak için aşağıdaki yordamı kullanın.
 
- Özel yapılandırma Düzenleyicisi içeren tam bir örnek tanılama veri bağdaştırıcısı için bir proje, bkz: [tanılama veri bağdaştırıcısı oluşturmak için örnek proje](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
+Özel yapılandırma Düzenleyicisi içeren tam bir örnek tanılama veri bağdaştırıcısı için bir proje, bkz: [tanılama veri bağdaştırıcısı oluşturmak için örnek proje](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
 
 ##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Oluşturma ve tanılama veri bağdaştırıcısı yükleme
 
