@@ -19,8 +19,12 @@ items:
     href: quickstart-debug-aspnet.md
 - name: Öğreticiler
   items:
-  - name: Visual Studio kullanarak hata ayıklamayı öğrenin
+  - name: C#’ta hata ayıklamayı öğrenin
     href: getting-started-with-the-debugger.md
+  - name: C++’ta hata ayıklamayı öğrenin
+    href: getting-started-with-the-debugger-cpp.md
+  - name: Visual Basic’te hata ayıklamayı öğrenin
+    href: getting-started-with-the-debugger-vb.md
   - name: Hata ayıklayıcıda Python kodu çalıştırma...
     href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
   - name: Canlı bir Azure uygulamasında hata ayıklama
@@ -836,9 +840,9 @@ items:
   items:
   - name: Visual Studio’da hata ayıklayıcısı yenilikleri
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 03b91cd33994c5fbc49a8ae3a5ace1bbac611e4a
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 82809574dbbecf01e26e1677a4bb22ce9a482cf6
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621610"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821402"
