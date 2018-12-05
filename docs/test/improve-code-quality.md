@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9db1925036f7522db3fe7a16af362da754ec49e5
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 41a0dfeea283c2109dbe0fe899ac1b53955d0826
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321066"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896503"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio Test Araçları
 
@@ -38,7 +38,7 @@ Visual Studio Test Araçları size yardımcı olabilir ve takımınızın geliş
 - [Yük testi](../test/quickstart-create-a-load-test-project.md) birim testleri ve web performans testleri çalıştırarak sunucu uygulaması üzerindeki yük benzetimini yapar.
 
 > [!NOTE]
-> Birim testi Visual Studio'nun tüm sürümlerinde kullanılabilir. Diğer test araçları gibi canlı birim testi, Intellitest, ve kodlanmış UI testleri yalnızca Visual Studio Enterprise Edition'da kullanılabilir. Sürümleri hakkında daha fazla bilgi için bkz. [Visual Studio 2017 IDE'lerini karşılaştırın](https://visualstudio.microsoft.com/vs/compare/).
+> Birim testi Visual Studio'nun tüm sürümlerinde kullanılabilir. Canlı birim testi, Intellitest ve kodlanmış UI testi gibi diğer test araçları yalnızca Visual Studio Enterprise Edition'da kullanılabilir. Sürümleri hakkında daha fazla bilgi için bkz. [Visual Studio 2017 IDE'lerini karşılaştırın](https://visualstudio.microsoft.com/vs/compare/).
 
 ## <a name="related-scenarios"></a>İlgili senaryolar
 

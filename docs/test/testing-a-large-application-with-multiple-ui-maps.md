@@ -1,5 +1,5 @@
 ---
-title: Testi Visual Studio'da birden çok UI eşlemesi bulunan büyük uygulamaları
+title: Testi birden çok UI eşlemesi bulunan büyük uygulamaları
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,26 +12,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0072d04ed8f31b492e0ee792717b8975478c8c99
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dfc1cf44cb92ab58b50284f0398178c8f96f2a2e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891030"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895138"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Birden çok UI eşlemesi bulunan büyük uygulamaları test etme
 
 Bu konu, birden çok UI Haritası'nı kullanarak büyük bir uygulamayı test ettiğinizde, kodlanmış UI testleri kullanma işlemini açıklar.
 
- **Gereksinimler**
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
+
+**Gereksinimler**
 
 - Visual Studio Enterprise
 
-  Yeni kodlanmış UI testi oluşturduğunuzda, Visual Studio test çerçevesi varsayılan olarak testi için kod oluşturur bir <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> sınıfı. Kodlanmış UI testleri nasıl kaydedileceği hakkında daha fazla bilgi için bkz: [Oluştur kodlanmış UI testleri](../test/use-ui-automation-to-test-your-code.md) ve [kodlanmış UI testinin anatomisi](../test/anatomy-of-a-coded-ui-test.md).
+Yeni kodlanmış UI testi oluşturduğunuzda, Visual Studio test çerçevesi varsayılan olarak testi için kod oluşturur bir <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> sınıfı. Kodlanmış UI testleri nasıl kaydedileceği hakkında daha fazla bilgi için bkz: [Oluştur kodlanmış UI testleri](../test/use-ui-automation-to-test-your-code.md) ve [kodlanmış UI testinin anatomisi](../test/anatomy-of-a-coded-ui-test.md).
 
-  Oluşturulan kod için UI haritasında test ile etkileşime giren her nesne için bir sınıf içerir. Oluşturulan her bir yöntemi için Yöntem parametreleri için bir yardımcı sınıfı için özel olarak bu yöntem oluşturulur. UI haritasında, nesneleri, sayfalar ve formları ve denetimleri, uygulamanızda çok sayıda varsa, çok fazla büyüyebilir. Ayrıca, birkaç kişiye testleri üzerinde çalışıyorsanız ve o uygulama tek bir büyük UI haritası dosyasıyla hantal hale gelir.
+Oluşturulan kod için UI haritasında test ile etkileşime giren her nesne için bir sınıf içerir. Oluşturulan her bir yöntemi için Yöntem parametreleri için bir yardımcı sınıfı için özel olarak bu yöntem oluşturulur. UI haritasında, nesneleri, sayfalar ve formları ve denetimleri, uygulamanızda çok sayıda varsa, çok fazla büyüyebilir. Ayrıca, birkaç kişiye testleri üzerinde çalışıyorsanız ve o uygulama tek bir büyük UI haritası dosyasıyla hantal hale gelir.
 
-  Birden çok UI haritası dosyalarını kullanarak, aşağıdaki faydaları sağlayabilir:
+Birden çok UI haritası dosyalarını kullanarak, aşağıdaki faydaları sağlayabilir:
 
 - Her harita bir mantıksal uygulama alt kümesi ile ilişkili olabilir. Bu değişiklikleri yönetmeyi kolaylaştırır.
 

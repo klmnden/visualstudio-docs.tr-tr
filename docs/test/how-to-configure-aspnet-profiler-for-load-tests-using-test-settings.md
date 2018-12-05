@@ -10,19 +10,21 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b12588b4e2c22a638193b7f1b0bc48e5f7dab6b7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 36176ce14b51af1cf692b6b04d862882a48d7e4e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379812"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895203"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Nasıl yapılır: Visual Studio'da test ayarlarını kullanarak yük testleri için ASP.NET profil oluşturucuyu yapılandırma
 
 ASP.NET Profil Oluşturucu bilgi toplamak için ASP.NET profiler tanılama veri bağdaştırıcısı'nı kullanabilirsiniz. Bu tanılama veri bağdaştırıcısı, ASP.NET uygulamaları için performans verilerini toplar.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 > [!NOTE]
-> Bu tanılama veri bağdaştırıcısı Microsoft Test Yöneticisi'ni kullanarak çalıştırılan testler için kullanılamaz. ASP.NET Profiler tanılama bağdaştırıcısı, Visual Studio Enterprise gerektiren bir yalnızca Web sitelerini kullanan yük testleriyle kullanabilirsiniz.
+> Bu tanılama veri bağdaştırıcısı Microsoft Test Yöneticisi'ni kullanarak çalıştırılan testler için kullanılamaz. ASP.NET Profiler tanılama bağdaştırıcısı, Visual Studio Enterprise gerektiren bir yalnızca, Web siteleri kullanan yük testleriyle kullanabilirsiniz.
 
 ASP.NET profiler tanılama veri bağdaştırıcısı, bir yük testi çalıştırdığınızda, uygulama katmanından ASP.NET Profil Oluşturucu verileri toplamanıza olanak tanır. Uzun yük testleri, örneğin, bir saatten daha uzun yük testleri için profil oluşturucu çalıştırmamanız gerekir. Profil oluşturucu dosyası büyüyebilir olmasıdır belki de yüz megabayt. Bunun yerine, ayrıntılı performans sorunlarını tanılama avantajı hala erişmenizi sağlayan ASP.NET profil oluşturucuyu kullanarak kısa yük testleri çalıştırın.
 
@@ -31,13 +33,9 @@ ASP.NET profiler tanılama veri bağdaştırıcısı, bir yük testi çalıştı
 
 Daha fazla bilgi için [nasıl yapılır: Dağıtılmış yük testi için bir test ayarı oluşturmanız](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
 
-Aşağıdaki yordam için ASP.NET profiler tanılama veri bağdaştırıcısı yapılandırma açıklar.
-
-## <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>Test ayarlarınız için ASP.NET Profiler'ı yapılandırmak için
+## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>Test ayarlarınız için ASP.NET Profiler'ı yapılandırma
 
 Bu yordamdaki adımları gerçekleştirmeden önce Visual Studio'dan test ayarlarınızı açmalı ve seçmeniz gerekir **veri ve tanılama** sayfası.
-
-### <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>Test ayarlarınız için ASP.NET Profiler'ı yapılandırmak için
 
 1.  ASP.NET Profil Oluşturucu verileri toplamak için kullanılacak rolü seçin.
 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da kodlanmış UI testlerinde HTML5 denetimleri kullanma
+title: Kodlanmış UI Testlerinde HTML5 Denetimleri Kullanma
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 418c0aa6660b01896252d04a711d4069da389f00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a603a662c9007ab3ee0e66df0b23959bfdce83fb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914495"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896203"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Kodlanmış UI testlerinde HTML5 denetimleri kullanma
 
 Kodlanmış UI testleri, Internet Explorer 9 ve Internet Explorer 10 HTML5 denetimleri bazıları için destek içerir.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
  **Gereksinimler**
 
@@ -27,15 +29,14 @@ Kodlanmış UI testleri, Internet Explorer 9 ve Internet Explorer 10 HTML5 denet
 > [!WARNING]
 > Internet Explorer 10 önceki sürümlerinde, kodlanmış UI testleri, Internet Explorer işlemi kıyasla daha yüksek bir ayrıcalık düzeyinde çalıştırmak mümkün oldu. Kodlanmış UI testleri, Internet Explorer 10'da çalıştırırken, kodlanmış UI testi hem de Internet Explorer işlemi aynı ayrıcalık düzeyinde olması gerekir. Internet Explorer 10 daha güvenli bir AppContainer özellikleri nedeniyle budur.
 
-
 > [!WARNING]
 > Internet Explorer 10'da kodlanmış UI testi oluşturursanız, Internet Explorer 9 veya Internet Explorer 8 kullanarak çalışmayabilir. Internet Explorer 10, ses, Video, ProgressBar ve kaydırıcı gibi HTML5 denetimlerini içermesidir budur. Bu HTML5 denetimleri, Internet Explorer 9 veya Internet Explorer 8 tarafından tanınmaz. Benzer şekilde, Internet Explorer 9 kullanarak kodlanmış UI testleri, Internet Explorer 8 tarafından tanınmayacak bazı HTML5 denetimleri de içerebilir.
 
-
 ## <a name="audio-control"></a>Ses denetimi
- **Ses denetimi:** HTML5 sesi denetim eylemleri doğru şekilde kaydedilir ve kayıttan yürütülebilir.
 
- ![HTML5 sesi denetimi](../test/media/codedui_html5_audio.png)
+**Ses denetimi:** HTML5 sesi denetim eylemleri doğru şekilde kaydedilir ve kayıttan yürütülebilir.
+
+![HTML5 sesi denetimi](../test/media/codedui_html5_audio.png)
 
 |Eylem|Kaydetme|Oluşturulan kod|
 |-|---------------|-|

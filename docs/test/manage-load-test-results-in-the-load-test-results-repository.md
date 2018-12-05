@@ -13,20 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d54c599d812bfff393cbc4ccf330aa35b902f38f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fc0dff5f9e2c647d153cf1c38bb33802b47151d6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950023"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895463"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Yük testi sonuçları deposu içindeki yük testi sonuçlarını yönetme
 
 Yük testlerinizi çalıştırdığınızda, yük testi çalıştırması sırasında toplanan herhangi bir bilgi depolanabilir *Yük Testi Sonuçları Deposu*, SQL veritabanı. Yük testi sonuçları deposu, performans sayacı verileri ve kaydedilmiş hatalar hakkındaki tüm bilgileri içerir. Sonuçlar deposu veritabanı, denetleyiciler için kurulum tarafından oluşturulan veya otomatik olarak yük testinin ilk yerel çalıştırma oluşturulur. Yerel çalıştırma için yük testi şeması yoksa veritabanını otomatik olarak oluşturulur.
 
- Farklı bir sunucu kullanmak için denetleyicinin sonuç depo bağlantı dizesini değiştirirseniz, yeni sunucuya olmalıdır *loadtestresultsrepository.sql* şema oluşturmak için betiği çalıştırın.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Visual Studio Enterprise teknolojiye dayalı ortak performans sayaçlarını toplayan adlandırılmış sayaç kümeleri sağlar. Bu ayarlar, bir IIS sunucusu, ASP.NET sunucusu veya SQL server analiz edilirken yararlı olur. Tüm sayaç kümeleriyle toplanan veriler yük testi sonuçları deposunda depolanır.
+Farklı bir sunucu kullanmak için denetleyicinin sonuç depo bağlantı dizesini değiştirirseniz, yeni sunucuya olmalıdır *loadtestresultsrepository.sql* şema oluşturmak için betiği çalıştırın.
+
+Visual Studio Enterprise teknolojiye dayalı ortak performans sayaçlarını toplayan adlandırılmış sayaç kümeleri sağlar. Bu ayarlar, bir IIS sunucusu, ASP.NET sunucusu veya SQL server analiz edilirken yararlı olur. Tüm sayaç kümeleriyle toplanan veriler yük testi sonuçları deposunda depolanır.
 
 > [!IMPORTANT]
 > Performans sayaç verisi ve sayaç kümesi arasında bir fark yoktur. Bir sayaç kümesi meta verisidir. Bu, IIS veya SQL Server gibi belirli bir rol gerçekleştiren bir bilgisayardan toplanması gereken performans sayaçlarının bir grubu tanımlar. Sayaç kümesi yük testi tanımının bir parçasıdır. Sayaç kümeleri üzerinde performans sayacı verilerini dayalı olarak toplanır, belirli bir bilgisayar ve örnek hıza sayaç eşlemesi ayarlayın.

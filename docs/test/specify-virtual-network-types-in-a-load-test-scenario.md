@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Yük testi senaryosunda sanal ağ türlerini belirtme
+title: Bir Yük Testi Senaryosunda Sanal Ağ Türlerini Belirtme
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,32 +14,34 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b1f545260b3632c8097ce4bfed9eff7f2de0ccbd
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 586038d325f17d37167166a361ee214d959ba2ab
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380234"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894683"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Bir yük testi senaryosunda sanal ağ türlerini belirtme
 
 *Ağ karışımı* yük testi senaryosunda daha gerçekçi yükleme benzetimi yapmak için bir yol sağlar. Yükleme, tek tek ağ türü yerine farklı yapıda ağ türlerinin karışımı kullanılarak oluşturulur. Son kullanıcıların uygulamalarınızla nasıl etkileşmeleri hakkında daha yakın bir benzetim oluşturursunuz.
 
- Ağ karışımı çalıştıran sanal kullanıcının olasılığını belirtir. bir verilen *ağ profili*. Ağ bant genişliği uygulama katmanında bir simülasyon ağ profilidir. Gecikme süresi benzetimini değil.
+Ağ karışımı çalıştıran sanal kullanıcının olasılığını belirtir. bir verilen *ağ profili*. Ağ bant genişliği uygulama katmanında bir simülasyon ağ profilidir. Gecikme süresi benzetimini değil.
 
- Bir yük testi oluşturduğunuzda, bu durumun benzetimini yapmak isteyebileceğiniz yükü birden fazla türde bağlantı oluşturuluyor. Ağ karışımı, ağ türlerinden sunar. Farklı ağlarda benzetimi yapılır. Seçeneğini belirlediğinizde bir seçenek gibi `Cable-DSL 1.5Mbps`, bekleme süresini teste seçili bant genişliği benzetimini yapmak için eklenmiş.
+Bir yük testi oluşturduğunuzda, bu durumun benzetimini yapmak isteyebileceğiniz yükü birden fazla türde bağlantı oluşturuluyor. Ağ karışımı, ağ türlerinden sunar. Farklı ağlarda benzetimi yapılır. Seçeneğini belirlediğinizde bir seçenek gibi `Cable-DSL 1.5Mbps`, bekleme süresini teste seçili bant genişliği benzetimini yapmak için eklenmiş.
 
- Ağ karışımı diğer karışımı seçenekleri gibi çalışır. Bir ağ türü rastgele ilişkili ağ karışımını temel alarak bir sanal kullanıcıyla seçilir. Kullanıcının test karışımında belirtilen olasılığa dayalı bir belirli ağ türü kullanılarak çalıştırılır.
+Ağ karışımı diğer karışımı seçenekleri gibi çalışır. Bir ağ türü rastgele ilişkili ağ karışımını temel alarak bir sanal kullanıcıyla seçilir. Kullanıcının test karışımında belirtilen olasılığa dayalı bir belirli ağ türü kullanılarak çalıştırılır.
 
- Ağ karışımı belirledikten sonra ekleme ve ağ türlerini kaldırın. Karıştırma denetimini kullanarak ağ karışımını dağıtımını da değiştirebilirsiniz.
+Ağ karışımı belirledikten sonra ekleme ve ağ türlerini kaldırın. Karıştırma denetimini kullanarak ağ karışımını dağıtımını da değiştirebilirsiniz.
 
- Karıştırma denetimini dağıtım senaryosunda ağların kolayca ayarlamanıza olanak tanır.
+Karıştırma denetimini dağıtım senaryosunda ağların kolayca ayarlamanıza olanak tanır.
 
- Daha fazla bilgi için [karışımı denetimi ile ilgili](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+Daha fazla bilgi için [karışımı denetimi ile ilgili](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="true-network-emulation"></a>Gerçek ağ öykünmesi
 
- Visual Studio yazılım tabanlı gerçek ağ öykünmesi yük testleri de dahil olmak üzere tüm test türleri için kullanır. Gerçek ağ öykünmesi ağ paketlerinin doğrudan düzenlenmesiyle ağ koşullarının benzetimini yapar. Gerçek ağ öykünücü Ethernet gibi güvenilir bir fiziksel bağlantı kullanarak hem kablolu hem de kablosuz ağların davranışını taklit edebilir. Aşağıdaki ağ öznitelikleri gerçek ağ öykünmesine dahil edilir:
+Visual Studio yazılım tabanlı gerçek ağ öykünmesi yük testleri de dahil olmak üzere tüm test türleri için kullanır. Gerçek ağ öykünmesi ağ paketlerinin doğrudan düzenlenmesiyle ağ koşullarının benzetimini yapar. Gerçek ağ öykünücü Ethernet gibi güvenilir bir fiziksel bağlantı kullanarak hem kablolu hem de kablosuz ağların davranışını taklit edebilir. Aşağıdaki ağ öznitelikleri gerçek ağ öykünmesine dahil edilir:
 
 -   (Gecikme) ağ üzerinden gidiş-dönüş süresi
 

@@ -16,18 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e2d857ccc22d6e824d32a5ae429295563bba334d
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 91e1b3c3a094e9bb510132d9160432a868fd559c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175679"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896451"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Nasıl yapılır: erişim yük testi sonuçlarını çözümleme
 
 Yük Testi Düzenleyicisi'nden bir yük testi çalıştırdığınızda, yük testi sonuçları otomatik olarak açmak ve yük testi görüntülenen **Yük Testi Çözümleyicisi**. Komut satırından bir yük testi çalıştırdığınızda, yük testi sonuçları el ile erişmeniz gerekir.
 
 Tamamlanan yük testi için yük testi sonucu performans sayaç örneklerini ve test altındaki bilgisayarlardan düzenli aralıklarla toplanan hata bilgilerini içerir. Çok sayıda performans sayacı örneği yük testi boyunca toplanabilir. Toplanan performans veri miktarı, test çalıştırması, örnekleme aralığı, test edilen bilgisayar sayısına, toplanmakta olan sayaç sayısı, yapılandırılmış veri toplayıcılarına ve günlüğe kaydetme düzeylerini uzunluğuna bağlıdır. Bir büyük yük testi için toplanan performans veri miktarı kolaylıkla birkaç gigabayt olabilir. Daha fazla bilgi için [Test denetleyicileri ve test aracılarını](configure-test-agents-and-controllers-for-load-tests.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-access-a-load-test-result"></a>Bir yük testi sonucu erişmek için
 

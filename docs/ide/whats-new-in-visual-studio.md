@@ -2,7 +2,7 @@
 title: Visual Studio 2017'deki yenilikler
 description: Visual Studio 2017'de yeni özellikler hakkında bilgi edinin.
 ms.custom: ''
-ms.date: 11/13/2018
+ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51a87e5df597c398c89f59b53fa9d92585d8d4fb
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: a007d6557fe7ebd533ee34fecc8b8c0315024edf
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607880"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895775"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Hangi&#39;Visual Studio 2017'deki yenilikler
 
@@ -386,3 +386,4 @@ Nasıl size Visual Studio geliştirmek, veya ürün destek seçenekleri hakkınd
 * [C# Yenilikleri](/dotnet/csharp/whats-new)
 * [Team Foundation Server için yenilikler nelerdir?](/tfs/server/whats-new?view=vsts)
 * [Mac için Visual Studio'daki yenilikler](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
+* [Visual Studio 2019 yenilikler](whats-new-visual-studio-2019.md)
