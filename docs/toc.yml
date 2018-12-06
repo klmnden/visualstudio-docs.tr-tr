@@ -681,20 +681,22 @@ items:
     items:
     - name: Başlangıç zamanı
       href: ide/optimize-visual-studio-startup-time.md
+    - name: Filtrelenmiş bir çözüm yükleme
+      href: ide/filtered-solutions.md
     - name: İpuçları ve püf noktaları
       href: ide/visual-studio-performance-tips-and-tricks.md
   - name: Erişilebilirlik özelliklerini yönetme
     href: ide/reference/accessibility-features-of-visual-studio.md
     items:
-    - name: IDE Erişilebilirlik Seçeneklerini Ayarlama
+    - name: IDE erişilebilirlik seçeneklerini ayarlama
       href: ide/reference/how-to-set-ide-accessibility-options.md
-    - name: Yalnızca Klavyeyi Kullanma
+    - name: Yalnızca klavyeyi kullanma
       href: ide/reference/how-to-use-the-keyboard-exclusively.md
-    - name: Erişilebilirlik İpuçları ve Püf Noktaları
+    - name: Erişilebilirlik ipuçları ve püf noktaları
       href: ide/reference/accessibility-tips-and-tricks.md
-    - name: Microsoft'tan Erişilebilirlik Ürünleri ve Hizmetleri
+    - name: Microsoft'tan erişilebilirlik ürünleri ve hizmetleri
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-    - name: Erişilebilir Uygulamalar Tasarlama için Kaynaklar
+    - name: Erişilebilir uygulamalar tasarlamaya yönelik kaynaklar
       href: ide/reference/resources-for-designing-accessible-applications.md
   - name: Uygulamaları küreselleştirme ve yerelleştirme
     href: ide/globalizing-and-localizing-applications.md
@@ -1082,8 +1084,10 @@ items:
       href: ide/dotfuscator/upgrades.md
 - name: Kaynaklar
   items:
-  - name: Yenilikler
+  - name: Visual Studio 2017’deki yenilikler
     href: ide/whats-new-in-visual-studio.md
+  - name: Visual Studio 2019’daki yenilikler
+    href: ide/whats-new-visual-studio-2019.md
   - name: Sürüm notları ve sistem gereksinimleri
     items:
     - name: Güncel sürüm notları
@@ -1123,9 +1127,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Bizimle iletişime geçin
     href: ide/talk-to-us.md
-ms.openlocfilehash: 4e8c6398d89f5db9f97b8ce61a17960a76e938cb
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 618c6a9660cc85a6ae675a17389462584669972b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389252"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895554"
