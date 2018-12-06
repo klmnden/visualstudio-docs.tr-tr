@@ -9,20 +9,22 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ffd6b8c66f0575ec07e66ea2a138f2761b20cc7a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8acdeb17c9c45613d6a987d503deeaf63beecdaa
+ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379644"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52954090"
 ---
-# <a name="install-third-party-unit-test-frameworks"></a>Nasıl yapılır: Üçüncü taraf birim testi çerçevelerini yükleme
+# <a name="install-unit-test-frameworks"></a>Birim testi çerçevelerini yükleme
 
 Visual Studio Test Gezgini'yle herhangi bir bağdaştırıcı arabirimi Gezgini geliştirdi test çerçevesi çalıştırabilirsiniz. Framework'ün yükleme programını ikilileri yükler ve onu destekleyen diller için Visual Studio Proje şablonları ekler. Framework şablonu içeren bir proje oluşturduğunuzda, Test Gezgini ile kayıtlı. Visual Studio çözüm, farklı çerçeveler kullanan ve farklı dil hedeflenen birim testi projelerini içerebilir. Test Gezgini tümünü çalıştırır.
 
-## <a name="acquire-third-party-frameworks"></a>Üçüncü taraf çerçeve Al
+[MSTest](getting-started-with-unit-testing.md) olan Visual Studio tarafından sağlanan test framework ve Visual Studio ile varsayılan olarak yüklenir.
 
-İndirin ve Visual Studio Uzantı Yöneticisi'ni kullanarak ya da Visual Studio Market'ten çok sayıda üçüncü taraf birim testi çerçevelerini yükleme. Çerçeveler, framework'ün bir Web sitesi gibi diğer sitelerdeki de indirilebilir.
+## <a name="acquire-frameworks"></a>Çerçeveler Al
+
+İndirme ve Visual Studio Uzantı Yöneticisi'ni kullanarak veya üçüncü taraf birim testi çerçevelerini yükleme [Visual Studio Market](https://marketplace.visualstudio.com/vs). Çerçeveler, framework'ün bir Web sitesi gibi diğer sitelerdeki de indirilebilir.
 
 ### <a name="install-from-visual-studio"></a>Visual Studio'dan yükleyin
 
@@ -64,7 +66,7 @@ Test bulma ve yürütme için daha iyi bir deneyim için en son kararlı test ba
 
 1. Çözümünüz için Nuget Paket Yöneticisi giderek açın **Araçları** > **NuGet Paket Yöneticisi** > **ÇözümiçinNuGetpaketleriniYönet**.
 
-2. Tıklayarak **güncelleştirmeleri** yüklenen bağdaştırıcıları test sekmesi ve NUnit veya xUnit arayın.
+2. Tıklayarak **güncelleştirmeleri** sekmesinde ve arama MSTest, NUnit veya xUnit test yüklenen bağdaştırıcıları.
 
 3. Her test bağdaştırıcısı seçin ve ardından açılan menüde en son kararlı sürümünü seçin.
 

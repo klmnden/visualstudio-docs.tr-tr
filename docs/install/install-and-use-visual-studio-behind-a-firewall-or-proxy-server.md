@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2636bed20da5af32e011b39cf262349d42ddda55
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 6fbea07aee311bd1548397f4b3d475e4819523df
+ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349575"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52954194"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Yükleme ve bir güvenlik duvarı veya proxy sunucusunun arkasına Visual Studio ve Azure hizmetlerini kullanma
 
@@ -55,7 +55,7 @@ Visual Studio yükleyicisi dosyaları, çeşitli etki alanları ve bunların ind
 | VisualStudio.microsoft.com | Belge konumu |
 | docs.microsoft.com | Belge konumu |
 | MSDN.microsoft.com | Belge konumu |
-| www.microsoft.com | Belge konumu |
+| www\.microsoft.com | Belge konumu |
 | \*. windows.net | Oturum açma konumu |
 | \*. microsoftonline.com | Oturum açma konumu |
 | \*. live.com | Oturum açma konumu |
@@ -72,9 +72,9 @@ Visual Studio yükleyicisi dosyaları, çeşitli etki alanları ve bunların ind
 | download.unity3d.com | (Unity) Unity ile oyun geliştirme |
 | netstorage.unity3d.com | (Unity) Unity ile oyun geliştirme |
 | DL.Google.com | (Android SDK ve NDK, öykünücü) bir JavaScript ile Mobil Geliştirme <br /><br />(Android SDK'sı ve NDK, öykünücü) bir .NET ile Mobil Geliştirme |
-| www.incredibuild.com | (IncrediBuild) C++ ile oyun geliştirme |
+| www\.incredibuild.com | (IncrediBuild) C++ ile oyun geliştirme |
 | incredibuildvs2017i.azureedge.net | (IncrediBuild) C++ ile oyun geliştirme |
-| www.python.org | Python geliştirme (Python) <br /><br />Veri bilimi ve analitik uygulamalar (Python) |
+| www\.python.org | Python geliştirme (Python) <br /><br />Veri bilimi ve analitik uygulamalar (Python) |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Visual Studio ve Azure hizmetlerini kullanın

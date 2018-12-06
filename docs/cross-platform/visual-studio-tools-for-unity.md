@@ -5,17 +5,17 @@ ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 6cabc626-5310-4622-a743-210a9abb5535
-author: conceptdev
-ms.author: crdun
+author: johmil
+ms.author: therealjohn
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a4e3dc416a406976403dceb0568cea5b8cbfd56e
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: e329e17d95d00afc4b23ddabdfc8c75b1243dfb7
+ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880545"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52954103"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları
 
@@ -25,7 +25,7 @@ Unity için Visual Studio Araçları, Visual Studio'yu Unity ile birlikte platfo
 
 Unity düzenleyicisi, oyun dünyanızı ortaya koymak için mükemmel olsa da bu düzenleyicide kod yazamazsınız. Unity için Visual Studio Araçları ile Unity projeniz için C# kullanarak düzenleyici ve oyun betikleri oluşturmak üzere Visual Studio'nun alışık olduğunuz kod düzenleme, hata ayıklama ve üretkenlik özelliklerini kullanabilir ve Visual Studio'nun güçlü hata ayıklama özelliklerini kullanarak hata ayıklayabilirsiniz.
 
-Ancak, birden fazla Unity için Visual Studio Araçları, Ayrıca Unity editor ile kapsamlı tümleştirme sahiptir; böylece sürekli basit görevleri gerçekleştirmek için daha az zaman geçiş geçireceksiniz, Unity özgü üretkenlik iyileştirmeleri sağlar ve Unity belgeleri parmaklarınızın ucunda koyar.
+Ancak Unity için Visual Studio Araçları bunlarla sınırlı değil. Unity düzenleyicisiyle kapsamlı bir tümleştirmeye de sahip olduğundan, basit görevleri gerçekleştirmek için bile daha az zaman harcamanıza ve Unity'ye özel üretkenlik geliştirmelerinden yararlanmanıza olanak sağlamanın yanı sıra Unity belgelerini parmaklarınızın ucuna getirir. 
 
 ## <a name="overview"></a>Genel Bakış
 
