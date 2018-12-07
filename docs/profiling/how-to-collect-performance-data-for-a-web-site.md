@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfe90b47086232650a38581bb2a8af1b534b8063
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a2d9cb832d8797eb4ebf16482f4bef02aa6644a3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835994"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064303"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Nasıl yapılır: bir web sitesi performans verileri toplama
 
@@ -79,11 +79,11 @@ Kullanabileceğiniz **performans Sihirbazı** için performans verilerini toplam
 
 5. İçinde **web uygulamanız hangi URL'de çalışacak** kutusunda sihirbazın üçüncü sayfasında, uygulama giriş sayfası URL'sini girin ve ardından **sonraki**.
 
-   - Sunucusu (IIS) tabanlı Web sitesi için bir URL gibi yazın **<http://localhost/MySite/default.aspx>**. Bu neden [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] uygulama kök profili oluşturulacak MySite ve sayfa default.aspx oturumu başlatmak için Internet Explorer'da başlatılması için bu sitede yerel bilgisayardaki uygulama.
+   - Sunucusu (IIS) tabanlı Web sitesi için bir URL gibi yazın **< `http://localhost/MySite/default.aspx` >**. Bu neden [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] uygulama kök profili oluşturulacak MySite ve sayfa default.aspx oturumu başlatmak için Internet Explorer'da başlatılması için bu sitede yerel bilgisayardaki uygulama.
 
-   - Bir dosya tabanlı Web sitesi için dosya / / / gibi bir yol yazın**c:\WebSites\MySite\default.aspx**. Bu neden [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] uygulama profili oluşturulacak c:\webSites\MySite ve sayfa bulunan http://localhost:nnnn/MySite/default.aspx oturumu başlatmak için Internet Explorer'da başlatılacak.
+   - Bir dosya tabanlı Web sitesi için dosya / / / gibi bir yol yazın**c:\WebSites\MySite\default.aspx**. Bu neden [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] uygulama profili oluşturulacak c:\webSites\MySite ve sayfa bulunan `http://localhost:nnnn/MySite/default.aspx` oturumu başlatmak için Internet Explorer'da başlatılacak.
 
-   - Örneğin URL'yi yazın, JavaScript verilerini toplamak istediğiniz dış siteleri için http://www.contoso.com.
+   - Örneğin URL'yi yazın, JavaScript verilerini toplamak istediğiniz dış siteleri için `http://www.contoso.com`.
 
      Daha fazla bilgi için özellik sayfaları görüntülemek bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] hedef ikili.
 

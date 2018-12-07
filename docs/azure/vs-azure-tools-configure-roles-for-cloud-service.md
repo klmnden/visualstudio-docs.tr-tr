@@ -1,22 +1,22 @@
 ---
-title: Visual Studio ile bir Azure bulut hizmeti rollerini yapılandırma | Microsoft Docs
+title: Azure bulut hizmeti rollerini yapılandırma
 description: Ayarlama ve rolleri Visual Studio kullanarak Azure bulut Hizmetleri için yapılandırma hakkında bilgi edinin.
 author: ghogen
 manager: douge
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
 ms.prod: visual-studio-dev15
 ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 71f89c8d7a7ffc7e1eb24f4ace12363844ee5c4d
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: e1b10fc38abaf497332746e1367f5727f0998023
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000183"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064805"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Visual Studio ile Azure bulut hizmeti rollerini yapılandırma
 Azure bulut hizmeti çalışan veya web rollerinin bir veya daha fazla olabilir. Her rol için bu rolü nasıl ayarlandığı tanımlayın ve bu rolü nasıl çalıştığını da yapılandırmanız gerekir. Cloud Services rolleri hakkında daha fazla bilgi edinmek için videoyu bkz [Azure bulut hizmetlerine giriş](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services). 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio kuruluş dağıtımları için varsayılanları ayarlama
+title: Kuruluş dağıtımları için varsayılanları ayarlama
 description: Etki alanı ilkeleri ve diğer Visual Studio kuruluş dağıtımları için yapılandırma işlemleri hakkında bilgi edinin.
 ms.date: 05/05/2017
 ms.technology: vs-acquisition
@@ -17,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5689a273ac5f80b3468b9020825b980b88966e3b
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 167e69120ba8426acd4bc8a0e9e2e0cc42479444
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139222"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064794"
 ---
-# <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Visual Studio kuruluş dağıtımları için varsayılanları ayarlama
+# <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>Visual Studio 2017'in kuruluş dağıtımları için varsayılanları ayarlama
 
 Visual Studio dağıtımını etkileyen kayıt defteri ilkeler ayarlayabilir. Bu ilkeler için yeni yükleyici geneldir ve etkiler:
 

@@ -1,6 +1,6 @@
 ---
-title: Visual Studio'da Intellitest ile kodunuz için birim testleri oluşturma
-ms.date: 2015-10-05
+title: Intellitest ile kodunuz için birim testleri oluşturma
+ms.date: 10/05/2015
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f0ea1fa864e108117d45c1a6edd4cc03f3e3024f
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4aefb4aebe65503620f866955f7cbd62e33b3940
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294168"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052364"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Intellitest ile kodunuz için birim testleri oluşturma
+
 Intellitest, test verileri ve birim testleri paketi oluşturmak için .NET kodunuzu keşfeden. Koddaki her ifade için bir test girişi oluşturulur o ifadeyi yürütecek. Koddaki her koşullu şube için bir vaka analizi yapılır. Örneğin, `if` deyimleri, onaylamalar ve özel durumlar oluşturabilecek tüm işlemler analiz edilir. Bu analiz, yüksek kod kapsamı ile birim testleri oluşturma, yöntemlerinizin her biri için parametreleştirilmiş birim testi için test verilerini oluşturmak için kullanılır.
 
- Intellitest çalıştırdığınızda, hangi testlerin başarısız oluyor ve onları düzeltmek için tüm gerekli kodu eklemek kolayca görebilirsiniz. Hangi testlerin bir regresyon paketi sağlamak için bir test projesine kaydetmek için seçebilirsiniz. Kodunuzu değiştikçe, üretilen testler, kod değişikliğine eşitlenmiş şekilde tutmanızı sağlayacak Intellitest yeniden çalıştırın.
+Intellitest çalıştırdığınızda, hangi testlerin başarısız oluyor ve onları düzeltmek için tüm gerekli kodu eklemek kolayca görebilirsiniz. Hangi testlerin bir regresyon paketi sağlamak için bir test projesine kaydetmek için seçebilirsiniz. Kodunuzu değiştikçe, üretilen testler, kod değişikliğine eşitlenmiş şekilde tutmanızı sağlayacak Intellitest yeniden çalıştırın.
 
 ## <a name="availability-and-extensions"></a>Kullanılabilirlik ve uzantıları
 
@@ -36,7 +37,8 @@ Intellitest, test verileri ve birim testleri paketi oluşturmak için .NET kodun
 * X64 desteklemeyen yapılandırma.
 
 ## <a name="explore-use-intellitest-to-explore-your-code-and-generate-unit-tests"></a>Keşfedin: kullanım Intellitest kodunuzu keşfetmek ve Birim testler üretmek
- Birim testler üretmek için türler genel olmalıdır. Aksi takdirde, [birim testleri oluşturma](#NoRun) bunları oluşturmadan önce ilk.
+
+Birim testler üretmek için türler genel olmalıdır. Aksi takdirde, [birim testleri oluşturma](#NoRun) bunları oluşturmadan önce ilk.
 
 1.  Çözümünüzü Visual Studio'da açın. Ardından test etmek istediğiniz yöntemi içeren sınıf dosyasını açın.
 

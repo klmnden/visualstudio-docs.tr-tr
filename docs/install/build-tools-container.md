@@ -1,5 +1,6 @@
 ---
 title: Visual Studio derleme araçları bir kapsayıcıya yükleme
+titleSuffix: ''
 description: Visual Studio derleme araçları, sürekli tümleştirme ve sürekli teslim (CI/CD) iş akışlarını destekleyen bir Windows kapsayıcısına yüklemeyi öğrenin.
 ms.custom: ''
 ms.date: 04/18/2018
@@ -12,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08026b744cc6b71e31179666c5f85102a4093843
-ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
+ms.openlocfilehash: f8f739be182a137728240eb0884bd6d536879f02
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49411020"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068157"
 ---
 # <a name="install-build-tools-into-a-container"></a>Derleme araçları bir kapsayıcıya yükleme
 

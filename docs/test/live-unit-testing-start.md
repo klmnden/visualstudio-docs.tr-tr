@@ -1,5 +1,5 @@
 ---
-title: Canlı birim testi Visual Studio 2017, kodunuzu test öğrenin | Microsoft Docs
+title: Canlı birim testi ile 2017 kullanarak kodunuzu test etme hakkında bilgi edinin | Microsoft Docs
 ms.date: 08/31/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 83507060295c294747f279dd32f96fe8b0a358fa
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 8908b592283f81d8c60a2adb93c12af3f5e61ba7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008427"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056791"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio Live Unit Testing kullanmaya başlama
 

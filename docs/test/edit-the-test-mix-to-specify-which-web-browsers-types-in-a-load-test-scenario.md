@@ -1,5 +1,5 @@
 ---
-title: Yük testi Visual Studio'da için tarayıcı test karışımı
+title: Yük testi için tarayıcı test karışımı
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8999d3acdd9160ea33f6e1fa9d07dc9f69619b01
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c9cf19ad65131976ea5603ef5af49e8dd3ba555d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896477"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049334"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Bir yük testi senaryosuna hangi web tarayıcısı türlerini belirtmek için test karışımını düzenleyin
 

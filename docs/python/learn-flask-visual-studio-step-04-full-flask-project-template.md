@@ -1,5 +1,6 @@
 ---
-title: "Öğretici: Visual Studio'da 4. adım Flask öğrenin"
+title: Flask Öğreticisi 4. adımda Visual Studio, web projesi şablonları öğrenin
+titleSuffix: ''
 description: Visual Studio projeleri, özellikle Flask Web projesi ve Webový projekt ve Flask/Jade şablonları tarafından sağlanan özellikleri bağlamında Flask temel bilgileri bir kılavuz.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6e9171b7f44a51380fd086798b4ab9c50fa98729
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c072d1187abf463cc2f185946f7e238bb091a534
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775964"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051707"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>4. adım: tam Flask Web projesi şablonunu kullanma
 

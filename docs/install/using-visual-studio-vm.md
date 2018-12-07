@@ -1,5 +1,6 @@
 ---
 title: Visual Studio kullanarak bir Azure sanal makinesinde
+titleSuffix: ''
 description: Bir Azure sanal makinesinde Visual Studio kullanmayı öğrenin
 ms.date: 09/12/2018
 ms.technology: vs-acquisition
@@ -15,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d0d51e1c5c3ba94363c2ce0377f3d1a5e22c582
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: fd86bf5aa46910ceb3765bd383abc2f3f01ab038
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895853"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061913"
 ---
 # <a id="top"> </a> Azure'da Visual Studio görüntüleri
 

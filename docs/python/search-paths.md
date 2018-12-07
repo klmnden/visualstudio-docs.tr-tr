@@ -1,6 +1,6 @@
 ---
 title: Python arama yollarını nasıl uygulanır
-description: Visual Studio Python ortamları hem de projeleri arama yollarını nasıl kullandığı genel bakış.
+description: Visual Studio, ortamlar ve sistem genelinde değişkenleri kullanmaktan kaçınmak için projeleri için arama yollarını belirtmek daha fazla belirli bir araçları sağlar.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ab55c7cf1daa02416e6192a02a01ee3f9a35f6f0
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: e3e6bd1ce14e1803e48a476246e3cfb8858286bb
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607907"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051535"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio, Python arama yollarını nasıl kullanır?
 

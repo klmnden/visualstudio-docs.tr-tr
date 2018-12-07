@@ -1,7 +1,7 @@
 ---
 title: Python için Azure SDK
 description: Python için Azure SDK'sı, Microsoft Azure hizmetlerinden herhangi bir platformda çalışan Python uygulamaları kullanmasını kolaylaştırır.
-ms.date: 10/10/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,14 +12,14 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 9f1eb52e87cf9a411cf453c90f35ebc192616e8c
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: b9c8f5193e55d86ea4ff5e4d68fb7a66a1044d2e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050228"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062890"
 ---
-# <a name="azure-sdk-for-python"></a>Python için Azure SDK
+# <a name="consume-azure-services-using-the-azure-sdk-for-python"></a>Python için Azure SDK'sını kullanarak Azure hizmetlerini kullanma
 
 Python için Azure SDK'sını kullanma ve Windows, MacOS ve Linux'ta çalışan uygulamalar Microsoft Azure hizmetlerini yönetmenize daha kolay hale getirir.
 
@@ -40,7 +40,7 @@ De izleyebilirsiniz [yüklemeniz Python ve SDK'sı](https://docs.microsoft.com/a
 [Python Geliştirici Merkezi için Azure SDK'sı](https://docs.microsoft.com/python/azure/?view=azure-python) de faydalı kaynaklara, birçok öğretici dahil olmak üzere birçok vardır:
 
 - [Azuyre Linux üzerinde App Service'te Web uygulamaları oluşturma](/azure/app-service/containers/quickstart-python).
-- [BLOB Depolama](/azure/storage/blobs/storage-quickstart-blobs-python)
+- [Blob depolama](/azure/storage/blobs/storage-quickstart-blobs-python)
 - [Tablo depolama](/azure/cosmos-db/table-storage-how-to-use-python)
 - [Kuyruk depolama](/azure/storage/storage-python-how-to-use-queue-storage)
 - [Azure Cosmos DB](/azure/cosmos-db/sql-api-python-application)

@@ -1,6 +1,6 @@
 ---
-title: Proje bir Visual Basic hata ayıklama yapılandırması ayarları | Microsoft Docs
-ms.custom: ''
+title: Hata ayıklama yapılandırması proje ayarları bir VB | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25fc12f08e9519a68dd68d98b16099729a2d233b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d70ec195418b46a022ca73d6ac3656de8e652f06
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938259"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059697"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Visual Basic Hata Ayıklama Yapılandırması Proje Ayarları
 Proje ayarlarını değiştirebilirsiniz bir [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] hata ayıklama yapılandırmasında **özellik sayfaları** anlatıldığı gibi penceresinde [hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md). Aşağıdaki tablolarda, hata ayıklayıcı ile ilgili ayarların nerede bulunacağı gösterilmektedir **özellik sayfaları** penceresi.  

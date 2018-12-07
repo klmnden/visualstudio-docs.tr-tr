@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da C++ kullanmaya başlama
+title: C++ ile çalışmaya başlama
 description: ''
 ms.custom: mvc
 ms.date: 12/04/2017
@@ -13,12 +13,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cec2164cf248f9301a2e75f0babe4d6f71726ff2
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 156592d4969cfe8ed160e6b58dff27ce6b2bad21
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459679"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059817"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio'da C++ kullanmaya başlama
 

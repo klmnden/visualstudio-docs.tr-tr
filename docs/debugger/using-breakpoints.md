@@ -1,6 +1,6 @@
 ---
-title: Visual Studio hata ayıklayıcıda kesme noktaları kullanma | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Hata ayıklayıcıda kesme noktaları kullanma | Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/15/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15fa2172aab62d6b6f6ffcd21186b28f336ead4e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 16bcb4bb12e852a8fa268998d0605b2ffc7471e5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389143"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068454"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcıda kesme noktaları kullanma
 Kesme noktaları, geliştirici araç kutusundaki en önemli hata ayıklama tekniklerinden biridir. Hata ayıklayıcı yürütme duraklatmak istediğiniz yere kesme noktalarını ayarlayın. Örneğin, belirli bir kesme noktası çağrı yığınına bakın veya kod değişkenleri durumunu görmek isteyebilirsiniz. Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) bu makalede geçmeden önce.

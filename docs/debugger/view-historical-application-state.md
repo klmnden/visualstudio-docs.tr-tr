@@ -1,7 +1,7 @@
 ---
 title: IntelliTrace kullanarak görünüm önceki uygulama durumu
-ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
-ms.custom: mvc
+description: Anlık görüntülerini alabilir ve anlık görüntülerle IntelliTrace geri adım görüntüleme hakkında bilgi edinin
+ms.custom: seodec18
 ms.date: 09/19/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d43e1a04570d68ce69f283cde264280fc24865a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ba1ab23fead36cfabc8b2754535e8b10de981987
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846869"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060151"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Visual Studio'da IntelliTrace geri adım atmayı kullanarak önceki uygulama durumlarını İnceleme
 
@@ -96,9 +96,9 @@ Bu öğreticide şunları yapacaksınız:
 
 Olayları yalnızca modunda IntelliTrace geçmiş hata ayıklama adımlarında ve kesme noktaları hata ayıklamayı etkinleştir izin vermez. Ancak, IntelliTrace verileri yalnızca yakalar **Yereller** ve **Otolar** windows açık olan ve yalnızca genişletilmiş verileri yakalar, windows ve görüntüleme. Olayları yalnızca modunda genellikle karmaşık nesneler ve değişkenler eksiksiz bir görünümünü erişiminiz yok. Ayrıca, ifade değerlendirme ve izleme verilerini **Watch** penceresi desteklenmiyor. 
 
-Modunda, olayları ve anlık görüntüleri, IntelliTrace uygulamanın işlemi, karmaşık nesneler de dahil olmak üzere tüm anlık görüntüsünü yakalar. Bir kod satırına bir kesme noktasında durdurulan (ve bu bilgileri daha önce genişletilen olup olmaması önemli değil varsa gibi) aynı bilgileri görebilirsiniz. İfade değerlendirme, bir anlık görüntü görüntülerken da desteklenir.  
+Modunda, olayları ve anlık görüntüleri, IntelliTrace uygulamanın işlemi, karmaşık nesneler de dahil olmak üzere tüm anlık görüntüsünü yakalar. Bir kod satırına bir kesme noktasında durdurulan (ve bu bilgileri daha önce genişletilen olup olmaması önemli değil varsa gibi) aynı bilgileri görebilirsiniz. İfade değerlendirme, bir anlık görüntü görüntülerken da desteklenir.  
 
-#### <a name="what-is-the-performance-impact-of-this-feature"></a>Bu özelliğin performans etkisi nedir? 
+#### <a name="what-is-the-performance-impact-of-this-feature"></a>Bu özelliğin performans etkisi nedir? 
 
 Genel Adımlama performansı üzerindeki etkisini, uygulamaya bağlıdır. Bir anlık görüntü alma yükü, yaklaşık 30 ms olur. Bir anlık görüntü alınırken, uygulamanın işlem çatallanmış ve çatalı oluşturulan kopya askıya alındı. Visual Studio, bir anlık görüntü görüntülediğinizde, işlem çatalı kopyasına iliştiriyor. Visual Studio, her anlık görüntü için yalnızca sayfa tablosu kopyalar ve sayfalarını kopyalama yazarken için ayarlar. Yığındaki nesneleri ile ilişkili anlık görüntü hata ayıklayıcısı adımlar arasında değiştirirseniz, ilgili sayfa tablosu sonra en az bellek maliyet kaynaklanan kopyalanır. Visual Studio anlık görüntüsünü almak için yeterli bellek yok algılarsa bir almaz.
  

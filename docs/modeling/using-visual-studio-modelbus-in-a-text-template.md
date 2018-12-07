@@ -1,5 +1,5 @@
 ---
-title: Metin Şablonunda Visual Studio ModelBus'ı Kullanma
+title: Metin şablonunda ModelBus kullanma
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: fe25385d49e5553a6e9d4309dd0bb0d12a294a5c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8aed2920e7be177fdbccc9b71796e58cf103e846
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883986"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057600"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Metin Şablonunda Visual Studio ModelBus'ı Kullanma
 Visual Studio Modelbus'ı başvurular içeren bir modeli okumak metin şablonlar yazarsanız, hedef modelleri erişmek için başvuruları çözümlemek isteyebilirsiniz. Bu durumda, metin şablonlarını ve başvurulan etki alanına özgü diller (DSL) uyarlamak için gerekenler:

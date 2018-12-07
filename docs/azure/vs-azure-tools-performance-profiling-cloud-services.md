@@ -10,12 +10,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev15
 ms.technology: vs-azure
-ms.openlocfilehash: cd846d58ed6f9236b2fd0942f8caf7755a6ff993
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 86222da7c7eb3615b7c57e68d5733973b3d570fd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000588"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053960"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Bulut hizmetinin performansını test etme
 ## <a name="overview"></a>Genel Bakış
@@ -54,7 +54,7 @@ Profil oluşturucuyu kullandığınızda, bir bulut hizmeti yerel olarak veya az
 Genellikle bir yük testi normal altındaki bulut Hizmetleri veya stres koşullarında benzetimini yapın.
 
 ## <a name="profiling-a-cloud-service-in-azure"></a>Azure'daki bir bulut hizmeti profili oluşturma
-Bulut hizmetinizi Visual Studio'dan yayımladığınızda, hizmetin profilini ve istediğiniz bilgileri sağlamak için profil oluşturma ayarları belirtin. Her bir rol örneği için bir profil oluşturma oturumu başlatıldı. Hizmetinizi Visual Studio'dan yayımlama hakkında daha fazla bilgi için bkz. [Visual Studio'dan bir Azure bulut Hizmeti'nde yayımlanıyor](https://msdn.microsoft.com/library/azure/ee460772.aspx).
+Bulut hizmetinizi Visual Studio'dan yayımladığınızda, hizmetin profilini ve istediğiniz bilgileri sağlamak için profil oluşturma ayarları belirtin. Her bir rol örneği için bir profil oluşturma oturumu başlatıldı. Hizmetinizi Visual Studio'dan yayımlama hakkında daha fazla bilgi için bkz. [Visual Studio'dan bir Azure bulut Hizmeti'nde yayımlanıyor](vs-azure-tools-publishing-a-cloud-service.md).
 
 Visual Studio'da performans profili oluşturma hakkında daha fazla bilgi için bkz: [performans profili oluşturma Başlangıç Kılavuzu](https://msdn.microsoft.com/library/azure/ms182372.aspx) ve [profil oluşturma araçları kullanarak uygulama performansını analiz etme](https://msdn.microsoft.com/library/azure/z9z62c29.aspx).
 
@@ -107,7 +107,7 @@ Bulut hizmetinizde bir rolünün her örneği için profil oluşturma oturumunu 
 4. Geçerli Görünüm listesinde, raporun farklı görünümleri görüntülemek için istediğiniz görünümü türünü seçin. Daha fazla bilgi için [profil oluşturma araçları rapor görünümlerini](https://msdn.microsoft.com/library/azure/bb385755.aspx).
 
 ## <a name="next-steps"></a>Sonraki adımlar
-[Bulut hizmetlerinde hata ayıklama](https://msdn.microsoft.com/library/azure/ee405479.aspx)
+[Bulut hizmetlerinde hata ayıklama](vs-azure-tools-debug-cloud-services-virtual-machines.md)
 
-[Bir Azure bulut hizmetinde Visual Studio'dan yayımlama](https://msdn.microsoft.com/library/azure/ee460772.aspx)
+[Bir Azure bulut hizmetinde Visual Studio'dan yayımlama](vs-azure-tools-publishing-a-cloud-service.md)
 

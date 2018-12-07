@@ -1,5 +1,5 @@
 ---
-title: Bir Azure bulut hizmeti veya sanal makinesinde Visual Studio'da hata ayıklama | Microsoft Docs
+title: Bir Azure bulut hizmeti ya da sanal makineyi hata ayıklama
 description: Bir bulut hizmeti veya sanal makine Visual Studio'da hata ayıklama
 author: mikejo5000
 manager: douge
@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: b2c67ce81a42df4a17761fcee2dcd2f8a67c4941
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 465bbd7c410617c0d8f55f60b086d6d46e139b4f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003704"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064989"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Bir Azure bulut hizmeti veya sanal makinesinde Visual Studio'da hata ayıklama
 

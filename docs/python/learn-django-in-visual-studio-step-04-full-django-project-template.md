@@ -1,5 +1,6 @@
 ---
-title: Öğretici - 4. adım Visual Studio'da Django öğrenin
+title: Django Öğreticisi 4. adımda Visual Studio, web projesi şablonu öğrenin
+titleSuffix: ''
 description: Visual Studio projeleri, özellikle Django Web projesi şablonu tarafından sağlanan özellikler bağlamında Django temel bilgileri bir kılavuz.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f087086343623d0a8e698821902a5cf92598061e
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 865a0368933fa0a66728afaead6677cbeca84834
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001210"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065467"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>4. adım: tam Django Web projesi şablonunu kullanma
 

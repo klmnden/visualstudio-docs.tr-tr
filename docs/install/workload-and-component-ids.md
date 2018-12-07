@@ -1,5 +1,6 @@
 ---
-title: Visual Studio 2017 iş yükü ve Bileşen kimlikleri
+title: Visual Studio iş yükü ve bileşen kimlikleri
+titleSuffix: ''
 description: İş yükü ve Bileşen kimlikleri komut satırını kullanarak Visual Studio'yu yükleyin veya bağımlılık VSIX bildirimi olarak belirtmek için kullanın.
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: 96332b767f2bc44561358880c392cb6d96db297b
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: edf5eb09d00bc2814dbc5a8b616459fa8566556c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607477"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063308"
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Visual Studio 2017 iş yükü ve Bileşen kimlikleri
 

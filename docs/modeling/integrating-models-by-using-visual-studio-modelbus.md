@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Modelbus'ı Kullanarak Modelleri Tümleştirme
+title: Modelbus kullanarak modelleri tümleştirme
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -9,22 +9,23 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: aa38b1f0039f65ad7ce1e5476e5f28032c92812e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e72814b34790dd133f09e0fb16c594e12ea8147c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894670"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064603"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Visual Studio Modelbus'ı Kullanarak Modelleri Tümleştirme
+
 Visual Studio Modelbus'ı modellerini diğer araçlar ve modelleri arasında bağlantılar oluşturmak için bir yöntem sağlar. Örneğin, etki alanına özgü dil (DSL) modelleri ve UML modellerini bağlayabilirsiniz. DSL tümleşik bir dizi oluşturabilirsiniz.
 
- ModelBus benzersiz bir Modeli'ne veya bir model içinde belirli bir öğeye başvuru oluşturmanıza olanak sağlar. Bu başvuru modeli dışında Örneğin, başka bir modelinde bir öğedeki depolanabilir. Bir sonraki fırsatta, bir aracı öğeye erişmek istediğinde, Model veri yolu altyapı uygun model yüklenemiyor ve öğesini döndürür. İsterseniz, model kullanıcıya görüntüleyebilirsiniz. Dosyayı önceki konumuna erişilemiyor, ModelBus bulmak için kullanıcı sorar. Kullanıcı dosyasını bulursa, bu dosyaya yapılan tüm başvurular ModelBus düzeltir.
+ModelBus benzersiz bir Modeli'ne veya bir model içinde belirli bir öğeye başvuru oluşturmanıza olanak sağlar. Bu başvuru modeli dışında Örneğin, başka bir modelinde bir öğedeki depolanabilir. Bir sonraki fırsatta, bir aracı öğeye erişmek istediğinde, Model veri yolu altyapı uygun model yüklenemiyor ve öğesini döndürür. İsterseniz, model kullanıcıya görüntüleyebilirsiniz. Dosyayı önceki konumuna erişilemiyor, ModelBus bulmak için kullanıcı sorar. Kullanıcı dosyasını bulursa, bu dosyaya yapılan tüm başvurular ModelBus düzeltir.
 
 > [!NOTE]
->  Geçerli Visual Studio uygulamasında ModelBus, bağlantılı model öğeleri aynı Visual Studio çözümü içinde olması gerekir.
+> Geçerli Visual Studio uygulamasında ModelBus, bağlantılı model öğeleri aynı Visual Studio çözümü içinde olması gerekir.
 
- Ek bilgi ve örnek kod için bkz:
+Ek bilgi ve örnek kod için bkz:
 
 -   [Nasıl yapılır: Sürükle ve Bırak İşleyicisi Ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)
 
@@ -65,10 +66,11 @@ Visual Studio Modelbus'ı modellerini diğer araçlar ve modelleri arasında ba�
 
    Klasör `ModelBusAdapters\bin\*` tarafından oluşturulmuş derlemeler içeren `Dsl` proje ve `ModelBusAdapters` proje. Bu DSL başka bir DSL başvurmak için bu bütünleştirilmiş kodları almanız gerekir.
 
-### <a name="making-sure-that-elements-can-be-referenced"></a>Öğeleri başvurulabilir emin olma
- Visual Studio Modelbus'ı bağdaştırıcıları öğenin guid'si, varsayılan olarak tanımlamak için kullanın. Bu tanımlayıcılar, bu nedenle model dosyasında kalıcı olmasını.
+### <a name="ensure-that-elements-can-be-referenced"></a>Öğeleri başvurulan emin olun
 
-##### <a name="to-ensure-that-element-ids-are-persisted"></a>Bu öğe kimlikleri kalıcı emin olmak için
+Visual Studio Modelbus'ı bağdaştırıcıları öğenin guid'si, varsayılan olarak tanımlamak için kullanın. Bu tanımlayıcılar, bu nedenle model dosyasında kalıcı olmasını.
+
+Bu öğe kimlikleri kalıcı emin olmak için:
 
 1. DslDefinition.dsl açın.
 
@@ -85,11 +87,12 @@ Visual Studio Modelbus'ı modellerini diğer araçlar ve modelleri arasında ba�
 -   Geçersiz kılma `ResolveElementReference` Model veri yolu başvurudan doğru öğesi bulunamıyor.
 
 ## <a name="editRef"></a> Bir DSL başka bir DSL erişme
- Bir etki alanı özelliği DSL model veri yolu başvuruları depolayabilirsiniz ve bunları kullanan özel kod yazabilirsiniz. Ayrıca kullanıcının bir model dosyası ve bir öğesiyle seçerek bir modeli bus başvurusu oluşturmasını sağlayabilirsiniz.
 
- Başka bir DSL başvurular kullanmak bir DSL etkinleştirmek için öncelikle bunu olmalısınız bir *tüketici* model veri yolu başvuruları.
+Bir etki alanı özelliği DSL model veri yolu başvuruları depolayabilirsiniz ve bunları kullanan özel kod yazabilirsiniz. Ayrıca kullanıcının bir model dosyası ve bir öğesiyle seçerek bir modeli bus başvurusu oluşturmasını sağlayabilirsiniz.
 
-#### <a name="to-enable-a-dsl-to-consume-references-to-an-exposed-dsl"></a>Bir DSL oluşturulan bir DSL başvurular kullanmak üzere etkinleştirmek için
+Başka bir DSL başvurular kullanmak bir DSL etkinleştirmek için öncelikle bunu olmalısınız bir *tüketici* model veri yolu başvuruları.
+
+### <a name="to-enable-a-dsl-to-consume-references-to-an-exposed-dsl"></a>Bir DSL oluşturulan bir DSL başvurular kullanmak üzere etkinleştirmek için
 
 1.  DSL tanım diyagramı, diyagram ana bölümü sağ tıklayın ve ardından **etkinleştirme Modelbus**.
 
@@ -107,7 +110,7 @@ Visual Studio Modelbus'ı modellerini diğer araçlar ve modelleri arasında ba�
 
     2.  **Microsoft.VisualStudio.Modeling.Sdk.Integration.Shell.11.0.dll**
 
-#### <a name="to-store-a-model-bus-reference-in-a-domain-property"></a>Bir etki alanı özelliği bir Model veri yolu başvuru depolamak için
+### <a name="to-store-a-model-bus-reference-in-a-domain-property"></a>Bir etki alanı özelliği bir Model veri yolu başvuru depolamak için
 
 1. Alıcı DSL DSL tanımındaki alan sınıfı için bir alan özelliği ekleyin ve adını ayarlayın.
 
@@ -117,7 +120,7 @@ Visual Studio Modelbus'ı modellerini diğer araçlar ve modelleri arasında ba�
 
    Özelleştirilmiş bir ModelBus başvuru düzenleyici ile özelliğini ayarlamak kullanıcılar izin verebilirsiniz. Bu düzenleyicinin iki sürümü vardır veya *Seçici:* bir model dosyası seçmek kullanıcıların bir sağlar ve başka bir model dosyası ve bir öğe model içindeki seçmelerini sağlar.
 
-#### <a name="to-allow-the-user-to-set-a-model-bus-reference-in-a-domain-property"></a>Model veri yolu başvuru bir etki alanı özelliği ayarlamak izin vermek için
+### <a name="to-allow-the-user-to-set-a-model-bus-reference-in-a-domain-property"></a>Model veri yolu başvuru bir etki alanı özelliği ayarlamak izin vermek için
 
 1.  Etki alanı özelliği sağ tıklayın ve ardından **Düzenle ModelBusReference belirli özellikleri**. Bir iletişim kutusu açılır. Bu *Model veri yolu Seçici*.
 
@@ -134,7 +137,7 @@ Visual Studio Modelbus'ı modellerini diğer araçlar ve modelleri arasında ba�
 
 6.  Company.FamilyTree.Person gibi hedef türlerinin bir listesi belirtilmişse, ardından bir bütünleştirilmiş kod başvurusu DSL projenize DLL hedef DSL, örneğin Company.FamilyTree.Dsl.dll başvuru eklemeniz gerekir
 
-#### <a name="to-test-a-model-bus-reference"></a>Model veri yolu başvuru test etmek için
+### <a name="to-test-a-model-bus-reference"></a>Model veri yolu başvuru test etmek için
 
 1.  Kullanıma sunulan ve alıcı DSL'ler oluşturun.
 
@@ -156,19 +159,21 @@ Visual Studio Modelbus'ı modellerini diğer araçlar ve modelleri arasında ba�
      Model veri yolu başvurusu özel öğe türü belirtilirse Seçici Ayrıca, modeldeki bir öğe seçin olanak tanır.
 
 ## <a name="creating-references-in-program-code"></a>Program kodunda başvuruları oluşturma
- Bir model veya bir model içinde bir öğe için bir başvuru depolamak istediğinizde, oluşturduğunuz bir `ModelBusReference`. İki tür vardır, `ModelBusReference`: model başvuruları ve öğesi başvuruları.
 
- Bir model başvuru oluşturmak için model bir örneği ve dosya adı veya Visual Studio Proje öğesi modelinin olduğu DSL AdapterManager gerekir.
+Bir model veya bir model içinde bir öğe için bir başvuru depolamak istediğinizde, oluşturduğunuz bir `ModelBusReference`. İki tür vardır, `ModelBusReference`: model başvuruları ve öğesi başvuruları.
 
- Bir öğe başvurusu oluşturmak için model dosyası ve başvurmak istediğiniz öğeyi için bir bağdaştırıcı gerekir.
+Bir model başvuru oluşturmak için model bir örneği ve dosya adı veya Visual Studio Proje öğesi modelinin olduğu DSL AdapterManager gerekir.
+
+Bir öğe başvurusu oluşturmak için model dosyası ve başvurmak istediğiniz öğeyi için bir bağdaştırıcı gerekir.
 
 > [!NOTE]
->  Visual Studio ModelBus ile aynı Visual Studio çözümünde başvuruları yalnızca öğeleri oluşturabilirsiniz.
+> Visual Studio ModelBus ile aynı Visual Studio çözümünde başvuruları yalnızca öğeleri oluşturabilirsiniz.
 
 ### <a name="import-the-exposed-dsl-assemblies"></a>İfşa edilen DSL derlemeler Al
- Kullanan projenin proje başvurularına sunulan DSL DSL ve ModelBusAdapter derlemeleri ekleyin.
 
- Örneğin, öğeleri MusicLibrary DSL'nin ModelBus başvuruları depolamak istediğinizi varsayalım. ModelBus başvuruları FamilyTree DSL öğelerine başvuracaktır. İçinde `Dsl` MusicLibrary çözümde başvurular düğümü, projenin aşağıdaki derlemelere başvurular ekleyin:
+Kullanan projenin proje başvurularına sunulan DSL DSL ve ModelBusAdapter derlemeleri ekleyin.
+
+Örneğin, öğeleri MusicLibrary DSL'nin ModelBus başvuruları depolamak istediğinizi varsayalım. ModelBus başvuruları FamilyTree DSL öğelerine başvuracaktır. İçinde `Dsl` MusicLibrary çözümde başvurular düğümü, projenin aşağıdaki derlemelere başvurular ekleyin:
 
 - Fabrikam.FamilyTree.Dsl.dll - sunulan DSL.
 
@@ -192,12 +197,13 @@ using System.Linq;
 ```
 
 ### <a name="to-create-a-reference-to-a-model"></a>Bir Modeli'ne başvuru oluşturmak için
- Model başvuru oluşturmak için AdapterManager erişmek için kullanıma sunulan DSL ve model için bir başvuru oluşturmak için bunu kullanın. Ya da bir dosya yolu belirtebilirsiniz veya `EnvDTE.ProjectItem`.
 
- AdapterManager modelinde öğelere erişim sağlayan bir bağdaştırıcı elde edebilirsiniz.
+Model başvuru oluşturmak için AdapterManager erişmek için kullanıma sunulan DSL ve model için bir başvuru oluşturmak için bunu kullanın. Ya da bir dosya yolu belirtebilirsiniz veya `EnvDTE.ProjectItem`.
+
+AdapterManager modelinde öğelere erişim sağlayan bir bağdaştırıcı elde edebilirsiniz.
 
 > [!NOTE]
->  İşiniz bittiğinde ile bir bağdaştırıcı dispose gerekir. Bunu yapmanın en kolay yolu olan bir `using` deyimi. Aşağıdaki örnek bunu göstermektedir.
+> İşiniz bittiğinde ile bir bağdaştırıcı dispose gerekir. Bunu yapmanın en kolay yolu olan bir `using` deyimi. Aşağıdaki örnek bunu göstermektedir.
 
 ```csharp
 // The file path of a model instance of the FamilyTree DSL:
@@ -232,7 +238,7 @@ using (FamilyTreeAdapter adapter =
 } // Dispose adapter
 ```
 
- Kullanabilmelerini istiyorsanız `modelReference` daha sonra dış türüne sahip bir etki alanı özelliğinde depolayabilirsiniz `ModelBusReference`:
+Kullanabilmelerini istiyorsanız `modelReference` daha sonra dış türüne sahip bir etki alanı özelliğinde depolayabilirsiniz `ModelBusReference`:
 
 ```csharp
 using Transaction t = this.Store.TransactionManager
@@ -243,10 +249,11 @@ using Transaction t = this.Store.TransactionManager
 }
 ```
 
- Bu etki alanı özelliği düzenlemek kullanıcılara izin vermek üzere `ModelReferenceEditor` Düzenleyicisi özniteliğinde parametre olarak. Daha fazla bilgi için [kullanıcının bir başvuru düzenlemesine izin](#editRef).
+Bu etki alanı özelliği düzenlemek kullanıcılara izin vermek üzere `ModelReferenceEditor` Düzenleyicisi özniteliğinde parametre olarak. Daha fazla bilgi için [kullanıcının bir başvuru düzenlemesine izin](#editRef).
 
 ### <a name="to-create-a-reference-to-an-element"></a>Öğeye bir başvuru oluşturmak için
- Model için oluşturduğunuz bağdaştırıcısı oluşturmak ve başvuruları çözümlemek için kullanılabilir.
+
+Model için oluşturduğunuz bağdaştırıcısı oluşturmak ve başvuruları çözümlemek için kullanılabilir.
 
 ```csharp
 // person is an element in the FamilyTree model:
@@ -254,12 +261,13 @@ ModelBusReference personReference =
   adapter.GetElementReference(person);
 ```
 
- Kullanabilmelerini istiyorsanız `elementReference` daha sonra dış türüne sahip bir etki alanı özelliğinde depolayabilirsiniz `ModelBusReference`. Düzenlenecek kullanıcılar izin vermek üzere `ModelElementReferenceEditor` Düzenleyicisi özniteliğinde parametre olarak. Daha fazla bilgi için [kullanıcının bir başvuru düzenlemesine izin](#editRef).
+Kullanabilmelerini istiyorsanız `elementReference` daha sonra dış türüne sahip bir etki alanı özelliğinde depolayabilirsiniz `ModelBusReference`. Düzenlenecek kullanıcılar izin vermek üzere `ModelElementReferenceEditor` Düzenleyicisi özniteliğinde parametre olarak. Daha fazla bilgi için [kullanıcının bir başvuru düzenlemesine izin](#editRef).
 
 ### <a name="resolving-references"></a>Başvurular çözümleniyor
- Varsa bir `ModelBusReference` (MBR) modeli veya başvurduğu model öğesi edinebilirsiniz. Öğe bir diyagram veya diğer görünüm sunulmazsa, görünümü açın ve öğeyi seçin.
 
- Bir bağdaştırıcı bir MBR'yi oluşturabilirsiniz. Bağdaştırıcısından modelin kökü elde edebilirsiniz. Ayrıca, model içindeki belirli öğelere başvuran MBRs çözebilirsiniz.
+Varsa bir `ModelBusReference` (MBR) modeli veya başvurduğu model öğesi edinebilirsiniz. Öğe bir diyagram veya diğer görünüm sunulmazsa, görünümü açın ve öğeyi seçin.
+
+Bir bağdaştırıcı bir MBR'yi oluşturabilirsiniz. Bağdaştırıcısından modelin kökü elde edebilirsiniz. Ayrıca, model içindeki belirli öğelere başvuran MBRs çözebilirsiniz.
 
 ```csharp
 using Microsoft.VisualStudio.Modeling.Integration; ...
@@ -295,7 +303,7 @@ using (FamilyTreeAdapter adapter =
 } // Dispose the adapter.
 ```
 
-##### <a name="to-resolve-modelbus-references-in-a-text-template"></a>Metin şablonunda ModelBus başvurularını çözümlemek için
+#### <a name="to-resolve-modelbus-references-in-a-text-template"></a>Metin şablonunda ModelBus başvurularını çözümlemek için
 
 1. Erişmek istediğiniz DSL erişimi için metin şablonları tarafından yapılandırılan bir ModelBus bağdaştırıcısı olmalıdır. Daha fazla bilgi için [DSL erişim sağlayarak](#provide).
 
@@ -338,7 +346,8 @@ using (FamilyTreeAdapter adapter =
    Daha fazla bilgi ve bir kılavuz için bkz: [metin şablonunda Visual Studio ModelBus kullanma](../modeling/using-visual-studio-modelbus-in-a-text-template.md)
 
 ## <a name="serializing-a-modelbusreference"></a>Bir ModelBusReference seri hale getirme
- Depolamak istiyorsanız bir `ModelBusReference` (MBR), seri dize biçiminde:
+
+Depolamak istiyorsanız bir `ModelBusReference` (MBR), seri dize biçiminde:
 
 ```csharp
 string serialized = modelBus.SerializeReference(elementReference);
@@ -347,12 +356,13 @@ ModelBusReference elementReferenceRestored =
     modelBus.DeserializeReference(serialized, null);
 ```
 
- Bu şekilde serileştirilmiş bir MBR bağlamında bağımsızdır. Basit dosya tabanlı Model veri yolu bağdaştırıcısı kullanıyorsanız, MBR bir mutlak dosya yolunu içerir. Bu örnek model dosyaları hiçbir zaman geçmeniz durumunda yeterlidir. Ancak, model dosyaları genellikle Visual Studio projesi öğeleri olacaktır. Kullanıcılarınızın, dosya sisteminin farklı bölümlerine tüm projeye taşımak ister. Ayrıca projenin kaynak denetimi altında tutun ve farklı bilgisayarlarda açmak beklediği. Dosyaları içeren proje konumu göreli yol adları bu nedenle seri hale.
+Bu şekilde serileştirilmiş bir MBR bağlamında bağımsızdır. Basit dosya tabanlı Model veri yolu bağdaştırıcısı kullanıyorsanız, MBR bir mutlak dosya yolunu içerir. Bu örnek model dosyaları hiçbir zaman geçmeniz durumunda yeterlidir. Ancak, model dosyaları genellikle Visual Studio projesi öğeleri olacaktır. Kullanıcılarınızın, dosya sisteminin farklı bölümlerine tüm projeye taşımak ister. Ayrıca projenin kaynak denetimi altında tutun ve farklı bilgisayarlarda açmak beklediği. Dosyaları içeren proje konumu göreli yol adları bu nedenle seri hale.
 
 ### <a name="serializing-relative-to-a-specified-file-path"></a>Belirtilen dosya yolu göreli seri hale getirme
- A `ModelBusReference` içeren bir `ReferenceContext`, hangi depolayabileceğiniz göre bunu seri hale getirilemiyor dosya yolu gibi bilgileri bir sözlük olduğu.
 
- Göreli bir yol serileştirmek için:
+A `ModelBusReference` içeren bir `ReferenceContext`, hangi depolayabileceğiniz göre bunu seri hale getirilemiyor dosya yolu gibi bilgileri bir sözlük olduğu.
+
+Göreli bir yol serileştirmek için:
 
 ```csharp
 elementReference.ReferenceContext.Add(
@@ -361,7 +371,7 @@ elementReference.ReferenceContext.Add(
 string serialized = modelBus.SerializeReference(elementReference);
 ```
 
- Dizeden başvuru almak için:
+Dizeden başvuru almak için:
 
 ```csharp
 ReferenceContext context = new ReferenceContext();
@@ -469,11 +479,12 @@ private const string INVALID_REF_FORMAT =
 ```
 
 ## <a name="actions-performed-by-the-modelbus-extension"></a>ModelBus uzantısı tarafından gerçekleştirilen eylemler
- Aşağıdaki bilgileri gerekli değildir, ancak kapsamlı kullanımını ModelBus yaparsanız yararlı olabilir.
 
- ModelBus uzantısı DSL çözümünüzde aşağıdaki değişiklikleri yapar.
+Aşağıdaki bilgileri gerekli değildir, ancak kapsamlı kullanımını ModelBus yaparsanız yararlı olabilir.
 
- DSL tanım diyagramı tıkladığında, tıklayın **Modelbus'ı etkinleştirme**ve ardından **Modelbus'ı kullanmak bu DSL etkinleştirme**:
+ModelBus uzantısı DSL çözümünüzde aşağıdaki değişiklikleri yapar.
+
+DSL tanım diyagramı tıkladığında, tıklayın **Modelbus'ı etkinleştirme**ve ardından **Modelbus'ı kullanmak bu DSL etkinleştirme**:
 
 - Bir başvuru eklenir DSL projesinde **Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0.dll**
 
@@ -483,7 +494,7 @@ private const string INVALID_REF_FORMAT =
 
 - Yeni şablon dosya eklendiğinde, **Dsl\GeneratedCode\ModelBusReferencesSerialization.tt**.
 
-  Ne zaman, ModelBusReference için bir alan özelliği türünü ayarlayın ve sonra özellik sağ tıklatıp **belirli özellikleri etkinleştirin ModelBusReference**:
+Ne zaman, ModelBusReference için bir alan özelliği türünü ayarlayın ve sonra özellik sağ tıklatıp **belirli özellikleri etkinleştirin ModelBusReference**:
 
 - Birden çok CLR öznitelikleri etki alanı özelliğine eklenir. Özellikler penceresindeki özel öznitelikler alanında görebilirsiniz. İçinde **Dsl\GeneratedCode\DomainClasses.cs**, özellik bildiriminde öznitelikleri görebilirsiniz:
 
@@ -499,7 +510,7 @@ private const string INVALID_REF_FORMAT =
     ("Choose a model file", "Target model|*.target")]
   ```
 
-  DSL tanım Diyagramı sağ tıkladığınızda, tıklayın **Modelbus'ı etkinleştirme**seçip **bu DSL için ModelBus kullanıma**:
+DSL tanım Diyagramı sağ tıkladığınızda, tıklayın **Modelbus'ı etkinleştirme**seçip **bu DSL için ModelBus kullanıma**:
 
 - Yeni bir proje `ModelBusAdapter` çözüme eklenir.
 
@@ -507,7 +518,7 @@ private const string INVALID_REF_FORMAT =
 
 - İçinde **DslPackage\source.extention.tt**, `|ModelBusAdapter|` MEF Bileşeni olarak eklenir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Nasıl yapılır: Program Kodunda Dosyadan Model Açma](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 - [Nasıl yapılır: Sürükle ve Bırak İşleyicisi Ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)

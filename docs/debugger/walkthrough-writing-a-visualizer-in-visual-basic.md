@@ -1,6 +1,6 @@
 ---
-title: "İzlenecek yol: Visual Basic'de Görselleştirici yazma | Microsoft Docs"
-ms.custom: ''
+title: Visual Basic'te Görselleştirici yazma | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69eebb38fc1717466203448c266ee1af5e99d555
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 69534dbcd3a51ce5c6e4478c6fcc40a770de2548
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388380"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065454"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>İzlenecek Yol: Visual Basic'de Görselleştirici Yazma
 Bu kılavuz kullanılarak basit Görselleştirici yazma işlemi gösterilmektedir [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Bu izlenecek yolda oluşturacağınız Görselleştirici, bir Windows Forms ileti kutusunu kullanarak bir dizenin içeriklerini görüntüler. Bu basit dize Görselleştirici nasıl görselleştiriciler diğer veri türleri için daha uygun projelerinize oluşturacağınızı göstermek için basit bir örnektir.

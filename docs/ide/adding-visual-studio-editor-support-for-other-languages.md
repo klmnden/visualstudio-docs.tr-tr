@@ -1,5 +1,5 @@
 ---
-title: Diğer diller için Visual Studio Düzenleyicisi desteği ekleme
+title: Diğer diller için düzenleyici desteği eklendi
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 57991a7cac2d45cf618642ccd19ead1d94ce5978
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: f0ac463161d42e0d9ddf6b845b752916675ba4fe
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244482"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062101"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Diğer diller için Visual Studio Düzenleyicisi desteği Ekle
 

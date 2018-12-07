@@ -1,5 +1,6 @@
 ---
-title: Windows üzerinde Visual Studio'da Python desteği'ne genel bakış
+title: Windows üzerinde Visual Studio'da Python desteği
+titleSuffix: ''
 description: Visual Studio, Windows (PTVS Visual Studio için Python araçları olarak da bilinir) üzerinde en iyi Python IDE yapmadan Python özelliklerinin özeti.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fba2c426db3269a1f9bef3a0759bd6ffaa7f447e
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: cec872f5df927bae3caf20f35d4bcd8f8e7460b3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001340"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068545"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python ile çalışma
 

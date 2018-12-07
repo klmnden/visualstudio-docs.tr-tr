@@ -1,23 +1,24 @@
 ---
-title: IIS yapılandırma Python web uygulamaları
+title: IIS için Python web uygulamalarını yapılandırma
 description: Internet Information Services ile bir Windows sanal makinesinden çalıştırmak için Python web uygulamaları nasıl yapılandıracağınızı öğrenmek.
-ms.date: 10/10/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4452eca221a772c2f0fd519df533e35468f3ecd8
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 8de69c64cac5c841867f5d993395e5ab380625eb
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459575"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062910"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>IIS için Python web uygulamalarını yapılandırma
 

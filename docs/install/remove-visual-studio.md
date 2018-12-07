@@ -1,5 +1,6 @@
 ---
-title: Visual Studio 2017 Kaldır | Microsoft Docs
+title: Visual Studio Kaldır
+titleSuffix: ''
 description: Tamamen Visual Studio, adım adım bilgisayarınızdan öğrenin.
 ms.custom: ''
 ms.date: 09/12/2017
@@ -21,14 +22,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e72482dce3df2ceaa5d5131838ce08b13a05cd90
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
+ms.openlocfilehash: 234a4dc712bc272d96ff5d3212833451e4df95ec
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382772"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061138"
 ---
-# <a name="remove-visual-studio"></a>Visual Studio Kaldır
+# <a name="remove-visual-studio-2017"></a>Visual Studio 2017'yi kaldırma
 
 Siz işlemi yıkıcı hatayla karşılaşırsanız ve onarmak ya da Visual Studio'yu kaldırın, çalıştırabileceğiniz `InstallCleanup.exe` aracı yükleme dosyalarını ve tüm yüklü örnekler Visual Studio 2017'in ve ürün bilgileri kaldırmak için. Bu araç çalışıyor durumunda son çare olarak yapılması onarma veya kaldırma işlemi başarısız oldu ve özellikler, diğer Visual Studio yüklemeleri ya da onarılması için gereken diğer ürünleri kaldırabilirsiniz.
 

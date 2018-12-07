@@ -1,6 +1,6 @@
 ---
-title: 'Nasıl yapılır: bir çalışma zamanı hata raporlama işlevi yazma | Microsoft Docs'
-ms.custom: ''
+title: Bir çalışma zamanı hata raporlama işlevi yazma | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -19,17 +19,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 381ba20b233f143cb63128368a710debb25a0abb
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 22c508a7fa8faedc66f9122de60921878a931fae
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057879"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051509"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>Nasıl Yapılır: Çalışma Zamanı Hata Raporlama İşlevi Yazma
-Özel raporlama işlev çalışma zamanı hataları aynı bildirimi olarak bulunmalıdır `_CrtDbgReportW`. Bu hata ayıklayıcısı için 1 değerini döndürmelidir.  
+Özel raporlama işlevi için çalışma zamanı hataları olarak aynı bildirimde olmalıdır `_CrtDbgReportW`. Hata ayıklayıcısı için 1 değerini döndürmesi gerekir.  
   
- Aşağıdaki örnek, özel bir raporlama işlevini tanımlamanızı gösterilmiştir.  
+ Aşağıdaki örnek, bir özel raporlama fonksiyon tanımlayın gösterilmektedir.  
   
 ## <a name="example"></a>Örnek  
   
@@ -63,7 +63,7 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 ```  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, daha karmaşık özel raporlama işlev gösterir. Switch deyimi çeşitli hata türleri tarafından tanımlandığı şekilde bu örnekte, işleme `reportType` parametresinin `_CrtDbgReportW`. Değiştirdiğiniz çünkü `_CrtDbgReportW`, kullanamazsınız `_CrtSetReportMode`. İşlevinizi çıkış işlemelidir. Bu işlevde ilk değişken bağımsız değişken bir çalışma zamanı hata numarası alır. Daha fazla bilgi için bkz: [_RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype).  
+ Aşağıdaki örnek, daha karmaşık özel raporlama işlevini gösterir. Bu örnekte, switch deyimi çeşitli hata türleri tarafından tanımlandığı gibi işler `reportType` parametresinin `_CrtDbgReportW`. Değiştirdiğiniz çünkü `_CrtDbgReportW`, kullanamazsınız `_CrtSetReportMode`. İşlevinizi çıkış işlemesi gerekir. Bu işlevdeki ilk değişken bağımsız değişken bir çalışma zamanı hata numarasını alır. Daha fazla bilgi için [_RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype).  
   
 ```cpp
 #include <windows.h>  
@@ -108,7 +108,7 @@ int Catch_RTC_Failure(int errType, const wchar_t *file, int line,
 ```  
   
 ## <a name="example"></a>Örnek  
- Kullanım `_RTC_SetErrorFuncW` özel işlevinizi yerine yüklemek için `_CrtDbgReportW`. Daha fazla bilgi için bkz: [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw). `_RTC_SetErrorFuncW` Dönüş değeri kaydedin ve gerektiğinde geri önceki raporlama işlevi.  
+ Kullanım `_RTC_SetErrorFuncW` özel işlevinizi yerine yüklemek için `_CrtDbgReportW`. Daha fazla bilgi için [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw). `_RTC_SetErrorFuncW` Dönüş değeri, kaydedebilir ve gerekirse geri önceki raporlama işlevi.  
   
 ```cpp
 #include <rtcapi.h>  
@@ -124,4 +124,4 @@ int main()
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yerel çalışma zamanı denetimlerini özelleştirme](../debugger/native-run-time-checks-customization.md)
+ [Yerel Çalışma Zamanı Denetimlerini Özelleştirme](../debugger/native-run-time-checks-customization.md)

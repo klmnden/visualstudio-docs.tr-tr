@@ -1,6 +1,6 @@
 ---
 title: Ipython REPL (etkileşimli pencere)
-description: Etkileşimli paralel bilgi işlem özellikleri ile etkileşimli kullanıcı dostu geliştirme ortamı için Visual Studio etkileşimli pencereye Ipython modu kullanıyor.
+description: Paralel hesaplama etkileşimli özelliklere sahip bir kullanıcı dostu etkileşimli geliştirme ortamı için Visual Studio etkileşimli pencereye Ipython modu kullanın.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b5429ccc963923a049d54ad3fbaa409586c0f772
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 84e93d06e294ef11cc345eb4c443845421a8f834
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219256"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067809"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Etkileşimli pencerede Ipython kullanın
 
@@ -79,9 +80,9 @@ Bu kılavuz için olmalıdır [Anaconda](https://www.continuum.io) Ipython ve ge
 
 8. Dışında grafiklerini görmek için **etkileşimli** penceresi, bunun yerine kullanarak kod çalıştırın **hata ayıklama** > **hata ayıklama olmadan Başlat** komutu.
 
-Ipython kaçış sistem Kabuk değişkeni değiştirme gibi başka birçok yararlı özellik yakalama çıkış, vb. vardır. Başvurmak [Ipython belgeleri](http://ipython.org/documentation.html) daha fazla bilgi için.
+Ipython kaçış sistem Kabuk değişkeni değiştirme gibi başka birçok yararlı özellik yakalama çıkış, vb. vardır. Başvurmak [Ipython belgeleri](https://ipython.org/documentation.html) daha fazla bilgi için.
 
-### <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - Jupyter kolayca ve yükleme olmadan kullanmak için ücretsiz deneyin [Azure not defterleri barındırılan hizmet](https://notebooks.azure.com/) olanak tanıyan tutun ve not defterlerinizi başkalarıyla paylaşın.
 

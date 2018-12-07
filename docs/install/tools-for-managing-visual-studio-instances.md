@@ -1,5 +1,6 @@
 ---
 title: Visual Studio örneklerini algılamaya ve yönetmeye yönelik araçlar
+titleSuffix: ''
 description: Algılama ve Visual Studio yüklemeleri istemci makinelerinde yönetmek için kullanabileceğiniz araçları hakkında bilgi edinin.
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 160d0f283542445335496e3cbb7b98955df02b05
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9ff207b753a864994c8219f59458d66b3e004097
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672619"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051963"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Visual Studio örneklerini algılamaya ve yönetmeye yönelik araçlar
 
@@ -45,7 +46,6 @@ C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -p
 
 >[!TIP]
 >Visual Studio 2017'yi yükleme hakkında daha fazla bilgi için bkz: [sistem durumu Ilgaz'ın blog makaleleri](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/).
-
 
 ## <a name="editing-the-registry-for-a-visual-studio-instance"></a>Visual Studio örneği için kayıt defterini düzenleme
 

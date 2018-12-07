@@ -1,5 +1,6 @@
 ---
-title: Python Eğitmen ile çalışma, 2. adım, yazma ve kod çalıştırma
+title: Python 2. adımda Visual Studio Öğreticisi, yazma ve kod çalıştırma
+titleSuffix: ''
 description: 2. adımı çekirdek kılavuzun Visual Studio'da kod düzenleme ve bir proje çalıştırma dahil olmak üzere, Python özellikleri.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 780e829591a63573599bafe7c729def7b6384342
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 9b2f1c4743652f0925ef083d0ca62a34485c219b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219425"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054806"
 ---
 # <a name="step-2-write-and-run-code"></a>2. adım: Yazma ve kod çalıştırma
 

@@ -1,5 +1,6 @@
 ---
-title: "Öğretici: Visual Studio'da 5. adım Flask öğrenin"
+title: Flask Öğreticisi 5. adımında Visual Studio, proje şablonu yoklamalar öğrenin
+titleSuffix: ''
 description: Visual Studio projeleri, özellikle yoklamalar Flask Web projesi ve polls – Webový projekt Flask/Jade şablonları özelliklerinin bağlamında Flask temel bilgileri bir kılavuz.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bf6c9299f994ba1f5272c68724171fb42e85a679
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: a29e222df2a8443e9d5210c0382125cdc65a814f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143209"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066005"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>5. adım: yoklamalar Flask Web projesi şablonunu kullanma
 

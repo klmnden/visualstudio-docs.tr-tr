@@ -1,22 +1,23 @@
 ---
 layout: LandingPage
-title: Uygulamalarınızı Visual Studio ile profil oluşturma | Microsoft Docs
-description: Bilgi nasıl uygulamaları, hizmetleri ve tercih ettiğiniz dilde araçları performansını profil için Visual Studio 2017 kullanın.
+title: Profil oluşturma kullanarak ölçü uygulama performansını | Microsoft Docs
+description: Bilgi nasıl uygulamaları, hizmetleri ve araçları, tercih ettiğiniz dilde performans profil için Visual Studio 2017'yi kullanın.
+ms.custom: seodec18
 ms.topic: landing-page
 ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 1ebb16dab1e997809df80b6e67771a30347c6ab9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 972e4b8b58229786d403451ddfd7a49a3fe4d6a0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267692"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065551"
 ---
-# <a name="profiling-in-visual-studio"></a>Visual Studio'da profil oluşturma
+# <a name="measure-app-performance-in-visual-studio"></a>Visual Studio'da uygulama performansını ölçmeye
 
-Profil oluşturma ve tanılama araçları, bellek ve CPU kullanımı ve diğer uygulama düzeyi sorunları tanılamanıza yardımcı. Bu araçları ile Hata Ayıklayıcısı'ndaki uygulamanızı çalıştırın zaman içinde verileri (örneğin, değişken değerleri, işlev çağrılarını ve olaylar) birikebilir. Kodunuzu yürütülmesi sırasında farklı noktalarda uygulamanız durumunu görüntüleyebilirsiniz. 
+Profil oluşturma ve tanılama araçları bellek ve CPU kullanımı ve diğer uygulama düzeyi sorunları tanılamanıza yardımcı olur. Bu araçları ile hata ayıklayıcıda uygulamanızı çalıştırdığınız zaman içinde verileri (örneğin, değişken değerleri, işlev çağrıları ve olayları) birikebilir. Kodunuzun yürütülmesi sırasında farklı noktalarda, uygulamanızın durumunu görüntüleyebilirsiniz. 
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -30,7 +31,7 @@ Profil oluşturma ve tanılama araçları, bellek ve CPU kullanımı ve diğer u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Profil Oluşturucu özellik turu</h3>
+                        <h3>Profiler özellik turu</h3>
                     </div>
                 </div>
             </div>
@@ -48,7 +49,7 @@ Profil oluşturma ve tanılama araçları, bellek ve CPU kullanımı ve diğer u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Tanılama Araçları (CPU kullanımı) ile çalışmaya başlama</h3>
+                        <h3>(CPU kullanımı) tanılama araçları ile çalışmaya başlama</h3>
                     </div>
                 </div>
             </div>
@@ -66,7 +67,7 @@ Profil oluşturma ve tanılama araçları, bellek ve CPU kullanımı ve diğer u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Tanılama araçları bir videoyu izleyin</h3>
+                        <h3>Tanılama araçları da bir Video izleyin</h3>
                     </div>
                 </div>
             </div>
@@ -84,7 +85,7 @@ Profil oluşturma ve tanılama araçları, bellek ve CPU kullanımı ve diğer u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Bellek kullanımını çözümleme kullanmaya başlama</h3>
+                        <h3>Bellek kullanımını analiz etme kullanmaya başlayın</h3>
                     </div>
                 </div>
             </div>
@@ -102,7 +103,7 @@ Profil oluşturma ve tanılama araçları, bellek ve CPU kullanımı ve diğer u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Kaynak tüketimi (XAML) Çözümle</h3>
+                        <h3>(XAML) kaynak tüketimini analiz etme</h3>
                     </div>
                 </div>
             </div>
@@ -120,7 +121,7 @@ Profil oluşturma ve tanılama araçları, bellek ve CPU kullanımı ve diğer u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Ağ kullanımı (UWP uygulamaları) Çözümle</h3>
+                        <h3>(UWP uygulamaları) ağ kullanımını analiz etme</h3>
                     </div>
                 </div>
             </div>
@@ -138,7 +139,7 @@ Profil oluşturma ve tanılama araçları, bellek ve CPU kullanımı ve diğer u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>GPU kullanımı (Direct3D) Çözümle</h3>
+                        <h3>(Direct3D) GPU kullanımını analiz etme</h3>
                     </div>
                 </div>
             </div>
@@ -156,7 +157,7 @@ Profil oluşturma ve tanılama araçları, bellek ve CPU kullanımı ve diğer u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>(UWP uygulamaları) enerji kullanımını çözümleme</h3>
+                        <h3>(UWP uygulamaları) enerji kullanımını analiz etme</h3>
                     </div>
                 </div>
             </div>
@@ -174,7 +175,7 @@ Profil oluşturma ve tanılama araçları, bellek ve CPU kullanımı ve diğer u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Gördükleri&#39;s'deki yenilikler Profil Araçları</h3>
+                        <h3>Gördükleri&#39;yeni profil oluşturma araçları, s</h3>
                     </div>
                 </div>
             </div>

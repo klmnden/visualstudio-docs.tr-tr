@@ -1,6 +1,6 @@
 ---
-title: Özel durumlar Visual Studio hata ayıklayıcısı ile yönetme | Microsoft Docs
-ms.custom: ''
+title: Özel durumları hata ayıklayıcısı ile yönetme | Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/09/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f19bbbfbde9a111c6edea112b7250fca934ac7f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 02c7fbfca9a63ac736972ebea01a854e24f90188
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881696"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057924"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Özel durumlar Visual Studio hata ayıklayıcısı ile yönetme
 

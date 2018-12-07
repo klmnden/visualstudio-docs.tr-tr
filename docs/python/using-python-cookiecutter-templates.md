@@ -1,5 +1,5 @@
 ---
-title: CookieCutter uzantısını Python için
+title: CookieCutter şablonları Python ile kullanma
 description: Visual Studio şablonları Python kodu için keşfetmek ve bu şablonlardan projeler oluşturmak için grafik Cookiecutter uzantısını da destekler.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b7a040b5ab12c1f940996ea26c27a6136ab81f2f
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 6ca47c1410fd11c32cbce95b9adc5a62c6c26dcf
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219698"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057197"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Cookiecutter uzantısını kullanma
 

@@ -1,6 +1,6 @@
 ---
-title: Hangi&#39;Visual Studio 2015'te yeni s | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 2015'teki yenilikler | Microsoft Docs
+titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab9d2536b3f92b62233a2ae05b79a722696136e4
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: f1d2b37a988f0078149228cce808397f9fb915d1
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000264"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062444"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Hangi&#39;Visual Studio 2015'te yeni s
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -269,6 +269,7 @@ Birçok geliştirme ve Visual Studio ALM yeni özellikler hakkında daha fazla b
  İlk olarak, yukarıda açıklanan şekilde kaş çatma Gönder. Açılan iletişim kutusunda, geri bildirim etiketi varsayılan etiket birini veya kendi etiket oluştur. Etiketler bize geri bildirim yönlendirmek için uygun özellik takımı yardımcı olur. İçinde **bir kategori seçin** açılan listesinde, raporlama olduğunuz sonra sorunu yeniden oluşturmak için adımları sorunu temsil eden seçeneğini belirleyin. Visual Studio geri bildirim raporu kullanma hakkında ayrıntılı adımlar de mevcuttur. Daha fazla bilgi için [Visual Studio bir Gülümseyin yönergeleri gönderin](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
+
 * [Apache Cordova ile platformlar arası uygulamalar oluşturma](http://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
 * [Visual Studio’da Xamarin kullanarak yerel kullanıcı arabirimi ile uygulama oluşturma](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)
 * [Visual C++ ile platformlar arası mobil uygulamalar oluşturun](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)

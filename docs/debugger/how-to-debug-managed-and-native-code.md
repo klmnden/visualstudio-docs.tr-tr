@@ -1,7 +1,7 @@
 ---
-title: 'Öğretici: yönetilen ve yerel kod (karışık mod) hata ayıklama'
+title: 'Öğretici: Hata ayıklama C# ve C++ kodu (karışık mod)'
 description: Yerel bir DLL karışık mod hata ayıklaması'nı kullanarak bir .NET Core veya .NET Framework uygulamasında hata ayıklama hakkında bilgi edinin
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 11/02/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: dc115cc833bbf50e8f6ae1f1e3207d3acfd6b2d1
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 690d607bb62b322cf7fa07e5c45aa59924d29c71
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257283"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051463"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Öğretici: Hata ayıklama C# ve aynı C++ hata ayıklama oturumu
 

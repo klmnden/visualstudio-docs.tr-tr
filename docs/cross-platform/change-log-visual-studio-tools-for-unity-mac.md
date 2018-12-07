@@ -1,24 +1,45 @@
 ---
 title: Değişiklik günlüğü (Unity, Mac için Visual Studio Araçları) | Microsoft Docs
 ms.custom: ''
-ms.date: 08/06/2018
+ms.date: 11/13/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
-author: johmil
-ms.author: therealjohn
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 20cd6088bbe0626a62b09e3943ef46703742f567
-ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
+ms.openlocfilehash: 0b641c9dd1fe797fc036a6ece893ad61fc52ff87
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52954116"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027243"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Değişiklik Günlüğü (Unity için Visual Studio Araçları, Mac)
 Değişiklik günlüğü Unity için Visual Studio Araçları.
+
+## <a name="1700"></a>1.7.0.0
+ 13 Kasım 2018'de yayınlanan
+
+### <a name="new-features"></a>Yeni Özellikler
+
+-   **Hata Ayıklayıcı:**
+
+    -   Daha fazla istemci bilgileri (IP, makine adı) işleme İliştir iletişim kutusunda eklendi.
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+-   **Hata Ayıklayıcı:**
+
+     -   Visual Studio veya Unity, özellikle 'Unity İşleme İliştir' ulaşmaktan olduğunda dondurma yapma veya oyunu yeniden Unity'nın hata ayıklayıcısı altyapısı ile iletişim kurmak için kullanılan Kitaplığı'nda bir kilitlenme düzeltildi.
+     
+-   **Tümleştirme:**
+
+     -   Başka bir varsayılan düzenleyici seçildiğinde sabit Unity eklentisini etkinleştirme.
+     
+     -   Sabit Unity dosya şablonu oluşturma.
 
 ## <a name="1602"></a>1.6.0.2
  24 Temmuz 2018'de yayınlanan

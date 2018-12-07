@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Visual Studio ürün anahtarını bulma | Microsoft Docs'
+title: 'Nasıl yapılır: ürün anahtarını bulma | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,29 +17,27 @@ caps.latest.revision: 24
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: b2fc72084434bf689e45651cbf8b1f029ab6d026
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 117e9bff7bbe84fe5f98ee597987582e7981f25b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739070"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051179"
 ---
 # <a name="how-to-locate-the-visual-studio-product-key"></a>Nasıl Yapılır: Visual Studio Ürün Anahtarını Bulma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-İçin ürün anahtarını bulmak isteyebilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] müşteri desteği ile çalışırken, deneme sürümünden yükseltirken veya kendi kayıtlarınızı güncelleştirirken.  
-  
-### <a name="to-find-the-product-key-for-visual-studio"></a>Visual Studio için ürün anahtarını bulmak için  
-  
--   Ürün anahtarını şu konumlardan birinde arayın:  
-  
-    -   Yükleme medyasında (varsa).  
-  
-    -   Üzerinde [My.VisualStudio.com](https://my.visualstudio.com/productkeys) Web sitesi.  
-  
-    -   Yazılımı satın aldığınız satıcıdan gelen belgeler veya diğer bilgiler.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: Visual Studio deneme sürümünden yükseltme](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)   
- [Visual Studio'yu yükleyin](../install/install-visual-studio-2015.md)   
- [Visual Studio ve MSDN Lisanslama tanıtım belgesi](http://go.microsoft.com/fwlink/?LinkId=191417)
+İçin ürün anahtarını bulmak isteyebilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] müşteri desteği ile çalışırken, deneme sürümünden yükseltirken veya kendi kayıtlarınızı güncelleştirirken.
+
+### <a name="to-find-the-product-key-for-visual-studio"></a>Visual Studio için ürün anahtarını bulmak için
+
+-   Ürün anahtarını şu konumlardan birinde arayın:
+
+    -   Yükleme medyasında (varsa).
+
+    -   Üzerinde [My.VisualStudio.com](https://my.visualstudio.com/productkeys) Web sitesi.
+
+    -   Yazılımı satın aldığınız satıcıdan gelen belgeler veya diğer bilgiler.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+ [Nasıl yapılır: Visual Studio deneme sürümünden yükseltme](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md) [Visual Studio yükleme](../install/install-visual-studio-2015.md) [Visual Studio ve MSDN Lisanslama tanıtım belgesi](http://go.microsoft.com/fwlink/?LinkId=191417)

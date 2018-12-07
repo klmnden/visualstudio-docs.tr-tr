@@ -1,5 +1,5 @@
 ---
-title: Yük testi Visual Studio için bir eşik kuralı ekleme
+title: Yük testi için bir eşik kuralı ekleme
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cddc0b9ca470fa43b00ec08b3b6316704df41e91
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ac4b542c7f9b557ad04ead05422f8c89cd4f909c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896334"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063376"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Nasıl yapılır: Yük Testi Düzenleyicisini kullanarak bir eşik kuralı ekleme
 

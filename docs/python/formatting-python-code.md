@@ -1,6 +1,6 @@
 ---
 title: Python kodu biçimlendirme
-description: Aralık, deyimleri, sarmalama ve açıklamaları da dahil olmak üzere Visual Studio'da Python kodu otomatik olarak yeniden biçimlendirmek nasıl.
+description: Visual Studio otomatik olarak Python kodu aralığı, deyimleri, sarmalama ve açıklamalar gibi biçimlendirebilirsiniz.
 ms.date: 10/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b0ce6b5db57b4f6140fb164391ebf5c07e623baf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 452dc1104147e5b29dd38790cbfa726ad0de7b1f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219555"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052199"
 ---
 # <a name="format-python-code"></a>Python kodu biçimlendirme
 
@@ -29,7 +30,7 @@ Seçenekleri aracılığıyla ayarlanır **Araçları** > **seçenekleri** > **m
 
 ![Biçimlendirme seçenekleri Visual Studio'da Python](media/options-editor-formatting.png)
 
-Biçimlendirme seçenekleri varsayılan olarak ayarlanmış bir üst eşleştirilecek [CESARETLENDİRİCİ 8 Stil Kılavuzu](http://www.python.org/dev/peps/pep-0008/). **Genel** sekmesini biçimlendirme uygulandığında belirler; diğer üç sekme ayarları, bu makalede açıklanmıştır.
+Biçimlendirme seçenekleri varsayılan olarak ayarlanmış bir üst eşleştirilecek [CESARETLENDİRİCİ 8 Stil Kılavuzu](https://www.python.org/dev/peps/pep-0008/). **Genel** sekmesini biçimlendirme uygulandığında belirler; diğer üç sekme ayarları, bu makalede açıklanmıştır.
 
 [Visual Studio'da Python desteği](installing-python-support-in-visual-studio.md) de faydalı ekler [ **dolgu açıklama paragraf** ](#fill-comment-paragraph-command) komutunu **Düzenle**  >   **Gelişmiş** bir sonraki bölümde açıklandığı gibi menüsü.
 

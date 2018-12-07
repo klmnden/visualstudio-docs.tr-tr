@@ -1,5 +1,5 @@
 ---
-title: Paket gereksinimlerini yönetmek için requirements.txt dosyasını kullanma
+title: Bir requirements.txt dosyasını Paket bağımlılıklarını yönetin
 description: Requirements.txt dosyası bir proje bağımlılıklarınızı açıklar. Requirements.txt dosyasını içeren bir proje alırsanız, bu bağımlılıkların bir adımda kolayca yükleyebilirsiniz.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +8,20 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 49f87ff5836188d6fefb80feac94b27902de7968
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1f6fefdeac06d28229b99a79f432f82ed844d950
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50218452"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066184"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Gerekli paketleri requirements.txt ile yönetme
 
-Proje başkalarıyla paylaşın, bir yapı ortamı kullanın ya da proje olduğu bir ortamı geri yüklemeniz gereken diğer bir konuma kopyalamak planlama, proje gerektiren dış paketleri belirtmeniz gerekir. Kullanmak için önerilen yaklaşımdır bir [requirements.txt dosyasını](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) yükleyen gerekli sürümlerinden birini bağımlı paketler pip komutların listesini içerir. En yaygın komut `pip freeze > requirements.txt`, ortamınızın geçerli paket listesine kayıtları *requirements.txt*.
+Proje başkalarıyla paylaşın, bir yapı ortamı kullanın ya da proje olduğu bir ortamı geri yüklemeniz gereken diğer bir konuma kopyalamak planlama, proje gerektiren dış paketleri belirtmeniz gerekir. Kullanmak için önerilen yaklaşımdır bir [requirements.txt dosyasını](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) yükleyen gerekli sürümlerinden birini bağımlı paketler pip komutların listesini içerir. En yaygın komut `pip freeze > requirements.txt`, ortamınızın geçerli paket listesine kayıtları *requirements.txt*.
 
 Teknik olarak, herhangi bir dosya adının gereksinimlerini izlemek için kullanılabilir (kullanarak `-r <full path to file>` paketi yüklerken), Visual Studio için belirli destek sağlar, ancak *requirements.txt*:
 

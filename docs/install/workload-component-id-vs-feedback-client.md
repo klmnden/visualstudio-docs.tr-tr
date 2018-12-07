@@ -1,5 +1,6 @@
 ---
 title: Visual Studio geri bildirim istemcisi 2017 iş yükü ve Bileşen kimlikleri
+titleSuffix: ''
 description: Azure DevOps Services veya Team Foundation Server için zengin geri bildirim sağlamak için Visual Studio iş yükü ve Bileşen kimlikleri kullanın
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.workload:
 - multiple
-ms.openlocfilehash: ffd62fed2cf65fc4d1672ab9c5c1e2e42e718974
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 6631027d604a9ac531211814109deaf309c18732
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607542"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066723"
 ---
 # <a name="visual-studio-feedback-client-2017-component-directory"></a>Visual Studio geri bildirim istemcisi 2017 bileşen dizini
 

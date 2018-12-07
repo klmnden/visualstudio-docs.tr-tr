@@ -1,5 +1,5 @@
 ---
-title: Visual Studio ile bir Azure bulut hizmeti rollerini yapılandırma | Microsoft Docs
+title: Azure bulut hizmeti rollerini yapılandırma
 description: Ayarlama ve rolleri Visual Studio kullanarak Azure bulut Hizmetleri için yapılandırma hakkında bilgi edinin.
 author: ghogen
 manager: douge
@@ -11,15 +11,15 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: ce2259debb55c4792c2998f0e67df69dbc8cb7f9
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: c592acd8be028d3728a118c1935354becc2f5394
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003731"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065742"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Visual Studio ile Azure bulut hizmeti rollerini yapılandırma
-Azure bulut hizmeti çalışan veya web rollerinin bir veya daha fazla olabilir. Her rol için bu rolü nasıl ayarlandığı tanımlayın ve bu rolü nasıl çalıştığını da yapılandırmanız gerekir. Cloud Services rolleri hakkında daha fazla bilgi edinmek için videoyu bkz [Azure bulut hizmetlerine giriş](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services). 
+Azure bulut hizmeti çalışan veya web rollerinin bir veya daha fazla olabilir. Her rol için bu rolü nasıl ayarlandığı tanımlayın ve bu rolü nasıl çalıştığını da yapılandırmanız gerekir. Cloud Services rolleri hakkında daha fazla bilgi edinmek için videoyu bkz [Azure bulut hizmetlerine giriş](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
 
 Bulut hizmetiniz için bilgiler aşağıdaki dosyalarda saklanır:
 
@@ -39,20 +39,20 @@ Visual Studio'da Çözüm Gezgini'nden bir Azure bulut hizmeti aşağıdaki adı
 1. Oluşturun veya bir Azure bulut hizmeti projesini Visual Studio'da açın.
 
 1. İçinde **Çözüm Gezgini**, projeye sağ tıklayın ve bağlam menüsünden seçin **özellikleri**.
-   
+
     ![Çözüm Gezgini proje bağlam menüsü](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-project-context-menu.png)
 
-1. Proje özellikleri sayfasında seçin **geliştirme** sekmesi. 
+1. Proje özellikleri sayfasında seçin **geliştirme** sekmesi.
 
     ![Proje Özellikleri sayfası - geliştirme sekmesi](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-development-tab.png)
 
 1. İçinde **hizmet yapılandırması** listesinde, düzenlemek istediğiniz hizmet yapılandırmasının adını seçin. (Bu rol için tüm hizmet yapılandırması değişiklik yapmak isteyip istemediğinizi seçin **yapılandırmalarında**.)
-   
+
     > [!IMPORTANT]
     > Belirli hizmet yapılandırması seçerseniz, bazı özellikler tüm yapılandırmalar için yalnızca ayarlanabilir için devre dışı bırakıldı. Bu özelliklerini düzenlemek için seçmelisiniz **yapılandırmalarında**.
-    > 
-    > 
-   
+    >
+    >
+
     ![Azure bulut hizmeti için hizmet yapılandırması listesi](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
 
 ## <a name="change-the-number-of-role-instances"></a>Rol örnekleri sayısını değiştirin
@@ -69,7 +69,7 @@ Bulut hizmetinizin performansını artırmak için kullanıcı ya da belirli bir
     ![Yapılandırma sekmesi](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page.png)
 
 1. İçinde **hizmet yapılandırması** listesinde, güncelleştirmek istediğiniz hizmet yapılandırması'nı seçin.
-   
+
     ![Hizmet yapılandırma listesi](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-select-configuration.png)
 
 1. İçinde **örnek sayısı** metin kutusunda, bu rol için başlatmak istediğiniz örnek sayısını girin. Bulut hizmeti Azure'da yayımlarken her örneği ayrı bir sanal makinede çalışır.
@@ -83,8 +83,8 @@ Ekleyin, kaldırın veya bağlantı dizeleri, hizmet yapılandırması için de�
 
 > [!WARNING]
 > Bir depolama hesabı bağlantı dizesi için Azure depolama hesabı anahtar bilgilerini girdiğinizde, bu bilgiler hizmet yapılandırma dosyasında yerel olarak depolanır. Ancak, bu bilgileri şu anda şifreli metin olarak depolanmaz.
-> 
-> 
+>
+>
 
 Her hizmet yapılandırması için farklı bir değer kullanarak, bulut hizmetinizin farklı bağlantı dizelerini kullanma veya Bulut hizmetinizi Azure'da yayımlarken, kodunuzu değiştirmeniz gerekmez. Kodunuzda bağlantı dizesi için aynı adı kullanabilirsiniz ve bulut hizmetinizi oluşturma sırasında veya uygulamayı yayımladığınızda seçtiğiniz hizmet yapılandırmasına göre farklı değerdir.
 
@@ -112,7 +112,7 @@ Her hizmet yapılandırması için farklı bir değer kullanarak, bulut hizmetin
 
     - **Ad** -bağlantı dizesi için kullanmak istediğiniz adı girin.
     - **Tür** - seçin **bağlantı dizesi** aşağı açılan listeden.
-    - **Değer** -ya da doğrudan bağlantı dizesini girebilirsiniz **değer** hücre veya iş için üç nokta (...) seçin **depolama bağlantı dizesi oluştur** iletişim.  
+    - **Değer** -ya da doğrudan bağlantı dizesini girebilirsiniz **değer** hücre veya iş için üç nokta (...) seçin **depolama bağlantı dizesi oluştur** iletişim.
 
 1. İçinde **depolama bağlantı dizesi oluştur** iletişim kutusunda bir seçenek için **bağlanırken**. Seçenek için yönergeleri izleyin:
 
@@ -136,7 +136,7 @@ Aşağıdaki adımlarda, C# kullanarak bir bağlantı dizesi programlı olarak e
     using Microsoft.WindowsAzure.ServiceRuntime;
     ```
 
-1. Aşağıdaki kod, bir bağlantı dizesi erişmeye ilişkin bir örnek göstermektedir. Değiştirin &lt;ConnectionStringName > yer tutucu uygun değere sahip. 
+1. Aşağıdaki kod, bir bağlantı dizesi erişmeye ilişkin bir örnek göstermektedir. Değiştirin &lt;ConnectionStringName > yer tutucu uygun değere sahip.
 
     ```csharp
     // Setup the connection to Azure Storage
@@ -174,14 +174,14 @@ Her hizmet yapılandırması için farklı bir değer kullanarak, bulut hizmetin
 
     - **Ad** -ayarının adı girin.
     - **Tür** - seçin **dize** aşağı açılan listeden.
-    - **Değer** -ayarın değerini girin. Ya da doğrudan bir değer girebilirsiniz **değer** hücre ya da değer girmek için üç nokta (...) seçin **dize Düzenle** iletişim.  
+    - **Değer** -ayarın değerini girin. Ya da doğrudan bir değer girebilirsiniz **değer** hücre ya da değer girmek için üç nokta (...) seçin **dize Düzenle** iletişim.
 
 1. Özel bir ayarı silmek için ayarı seçin ve ardından **Kaldır ayarını**.
 
 1. Visual Studio araç, select **Kaydet**.
 
 ## <a name="programmatically-access-a-custom-settings-value"></a>Özel bir ayarın değerini programlamayla erişme
- 
+
 Aşağıdaki adımlarda, C# kullanarak özel bir ayarı programlı olarak erişmek gösterilmektedir.
 
 1. Aşağıdaki using yönergelerini nerede seçeceğiz ayarını kullanmak için bir C# dosyasına:
@@ -192,14 +192,14 @@ Aşağıdaki adımlarda, C# kullanarak özel bir ayarı programlı olarak erişm
     using Microsoft.WindowsAzure.ServiceRuntime;
     ```
 
-1. Aşağıdaki kod bir özel ayarı erişmeye ilişkin bir örnek göstermektedir. Değiştirin &lt;SettingName > yer tutucu uygun değere sahip. 
-    
+1. Aşağıdaki kod bir özel ayarı erişmeye ilişkin bir örnek göstermektedir. Değiştirin &lt;SettingName > yer tutucu uygun değere sahip.
+
     ```csharp
     var settingValue = RoleEnvironment.GetConfigurationSettingValue("<SettingName>");
     ```
 
 ## <a name="manage-local-storage-for-each-role-instance"></a>Her rol örneği için yerel depolamayı yönetin
-Her bir rol örneği için yerel dosya sistemi depolaması ekleyebilirsiniz. Depolama, erişilebilir değil. diğer verilerin depolandığı için rol örneklerini veya diğer rolleri tarafından depolanan veriler.  
+Her bir rol örneği için yerel dosya sistemi depolaması ekleyebilirsiniz. Depolama, erişilebilir değil. diğer verilerin depolandığı için rol örneklerini veya diğer rolleri tarafından depolanan veriler.
 
 1. Oluşturun veya bir Azure bulut hizmeti projesini Visual Studio'da açın.
 
@@ -211,7 +211,7 @@ Her bir rol örneği için yerel dosya sistemi depolaması ekleyebilirsiniz. Dep
 
     ![Yerel depolama sekmesi](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab.png)
 
-1. İçinde **hizmet yapılandırması** listesinde **yapılandırmalarında** yerel depolama ayarlarını uygulamak için tüm hizmet yapılandırması olarak seçilidir. Başka bir değer devre dışı bırakılmasını sayfasında tüm giriş alanlarını sonuçlanır. 
+1. İçinde **hizmet yapılandırması** listesinde **yapılandırmalarında** yerel depolama ayarlarını uygulamak için tüm hizmet yapılandırması olarak seçilidir. Başka bir değer devre dışı bırakılmasını sayfasında tüm giriş alanlarını sonuçlanır.
 
     ![Hizmet yapılandırma listesi](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-service-configuration.png)
 
@@ -233,20 +233,20 @@ Her bir rol örneği için yerel dosya sistemi depolaması ekleyebilirsiniz. Dep
 
 ## <a name="programmatically-accessing-local-storage"></a>Yerel depolama program aracılığıyla erişme
 
-Bu bölümde, bir test metin dosyası yazarak C# kullanarak yerel depolama programlı olarak erişmek verilmektedir `MyLocalStorageTest.txt`.  
+Bu bölümde, bir test metin dosyası yazarak C# kullanarak yerel depolama programlı olarak erişmek verilmektedir `MyLocalStorageTest.txt`.
 
 ### <a name="write-a-text-file-to-local-storage"></a>Yerel depolama alanına bir metin dosyasına yazma
 
-Aşağıdaki kod, yerel depolama alanına bir metin dosyası yazmak nasıl bir örnek gösterir. Değiştirin &lt;LocalStorageName > yer tutucu uygun değere sahip. 
+Aşağıdaki kod, yerel depolama alanına bir metin dosyası yazmak nasıl bir örnek gösterir. Değiştirin &lt;LocalStorageName > yer tutucu uygun değere sahip.
 
     ```csharp
     // Retrieve an object that points to the local storage resource
     LocalResource localResource = RoleEnvironment.GetLocalResource("<LocalStorageName>");
-    
+
     //Define the file name and path
     string[] paths = { localResource.RootPath, "MyLocalStorageTest.txt" };
     String filePath = Path.Combine(paths);
-    
+
     using (FileStream writeStream = File.Create(filePath))
     {
         Byte[] textToWrite = new UTF8Encoding(true).GetBytes("Testing Web role storage");
@@ -258,8 +258,8 @@ Aşağıdaki kod, yerel depolama alanına bir metin dosyası yazmak nasıl bir �
 ### <a name="find-a-file-written-to-local-storage"></a>Bir dosyayı yerel depolama alanına yazılan bulma
 
 Önceki bölümde kod tarafından oluşturulan bir dosyayı görüntülemek için aşağıdaki adımları izleyin:
-    
-1.  Windows bildirim alanındaki Azure simgesine sağ tıklayın ve bağlam menüsünden seçin **Göster işlem öykünücüsü kullanıcı Arabiriminde**. 
+
+1.  Windows bildirim alanındaki Azure simgesine sağ tıklayın ve bağlam menüsünden seçin **Göster işlem öykünücüsü kullanıcı Arabiriminde**.
 
     ![Azure işlem öykünücüsünü Göster](./media/vs-azure-tools-configure-roles-for-cloud-service/show-compute-emulator.png)
 
@@ -271,8 +271,7 @@ Aşağıdaki kod, yerel depolama alanına bir metin dosyası yazmak nasıl bir �
 
     ![Açık bir yerel depo menü öğesi](./media/vs-azure-tools-configure-roles-for-cloud-service/compute-emulator-open-local-store-menu.png)
 
-1. Windows Gezgini penceresi açıldığında, girin ' MyLocalStorageTest.txt'' içine **arama** metin kutusu ve select **Enter** aramayı başlatmak için. 
+1. Windows Gezgini penceresi açıldığında, girin ' MyLocalStorageTest.txt'' içine **arama** metin kutusu ve select **Enter** aramayı başlatmak için.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Visual Studio'da Azure projeleri hakkında daha fazla bilgi edinmek [bir Azure projesi yapılandırma](vs-azure-tools-configuring-an-azure-project.md). Bulut hizmet şeması hakkında daha fazla bilgi edinmek [şema başvurusu](https://msdn.microsoft.com/library/azure/dd179398).
-

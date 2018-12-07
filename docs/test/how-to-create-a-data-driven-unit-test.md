@@ -1,5 +1,5 @@
 ---
-title: "Nasıl yapılır: Visual Studio'da veri temelli birim testi oluşturma"
+title: 'Nasıl Yapılır: Veri Temelli Birim Testi Oluşturma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a05729efcc475fa99026d99abc24d09c2511a2b7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4806003d7a533e2f3e9523f877f6e002e8d15b5b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939260"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067456"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Nasıl Yapılır: Veri Temelli Birim Testi Oluşturma
 

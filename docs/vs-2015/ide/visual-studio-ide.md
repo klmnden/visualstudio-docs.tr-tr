@@ -1,6 +1,6 @@
 ---
-title: Visual Studio IDE | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 2015 | Microsoft Docs
+titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 327de2e75b089e7ba836837c3c29c0d92d9ad864
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c6bd4e34e25add01de6e6e54c2439c2ca80ccf33
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852719"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062489"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Visual Studio, birçok türde uygulamalar, güç kurumlar ve veri merkezlerine b
 
 - Oyunlar ve Xbox dahil olmak üzere, DirectX kullanarak Windows cihazları, çeşitli grafik kullanımı yoğun uygulamalar.
 
-Varsayılan olarak Visual Studio, C#, C ve C++, JavaScript, F # ve Visual Basic için destek sağlar. Visual Studio çalışır ve iyi Unity gibi üçüncü taraf uygulamaları ile tümleşir [Unity için Visual Studio Araçları](../cross-platform/visual-studio-tools-for-unity.md) uzantısı ve Apache Cordova aracılığıyla [ApacheCordovaiçinVisualStudioAraçları](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42). Visual Studio kendinize özel görevleri gerçekleştirmek özel araçlar oluşturarak genişletebilirsiniz.
+Varsayılan olarak Visual Studio için destek sağlar C#, C ve C++, JavaScript, F#ve Visual Basic. Visual Studio çalışır ve iyi Unity gibi üçüncü taraf uygulamaları ile tümleşir [Unity için Visual Studio Araçları](../cross-platform/visual-studio-tools-for-unity.md) uzantısı ve Apache Cordova aracılığıyla [ApacheCordovaiçinVisualStudioAraçları](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42). Visual Studio kendinize özel görevleri gerçekleştirmek özel araçlar oluşturarak genişletebilirsiniz.
 
 Visual Studio'da daha önce hiç kullanmadıysanız, temel kavramları öğrenin bizim [alma başlatıldı geliştirmeyle Visual Studio](../ide/get-started-developing-with-visual-studio.md) öğreticiler ve Kılavuzlar.
 
@@ -108,7 +108,7 @@ Visual Studio 2015'te yeni özellikler hakkında bilgi edinmek, bkz: [Visual Stu
  Daha fazla bilgi için [Visual Studio ve Visual Studio için Blend, XAML tasarlama](../designers/designing-xaml-in-visual-studio.md).
 
 ## <a name="writing-navigating-and-understanding-code"></a>Gezinme, yazma ve kod anlama
- Geliştirici misiniz, düzenleyici penceresinde zamanınızın çoğunu burada büyük olasılıkla geçirir olur. Visual Studio, C#, C++, Visual Basic, JavaScript, XML, HTML, CSS ve F # ve üçüncü tarafların teklif eklenti Düzenleyicileri (ve derleyiciler) için çok sayıda diğer diller için düzenleyicileri içerir.
+ Geliştirici misiniz, düzenleyici penceresinde zamanınızın çoğunu burada büyük olasılıkla geçirir olur. Visual Studio için düzenleyicileri içerir C#, C++, Visual Basic, JavaScript, XML, HTML, CSS ve F#, üçüncü taraflar için birçok başka dile eklenti Düzenleyicileri (ve derleyiciler) sunar.
 
  Tıklayarak tek tek dosyaları metin düzenleyicide düzenleyebilirsiniz **dosya &#124; açık &#124; dosya.** Açık bir proje dosyalarını düzenlemek için Çözüm Gezgini'ndeki dosya adını tıklayın. Kod renklendirilmiş ve Hızlı Başlat "Renk" yazarak renk düzenini kişiselleştirebilirsiniz. Aynı anda çok fazla metin düzenleyicisi sekmeli penceresi açık olabilir. Her pencere bağımsız olarak bölebilirsiniz. Metin Düzenleyici tam ekran modunda da çalıştırabilirsiniz.
 

@@ -1,6 +1,6 @@
 ---
 title: Python Django web projesi şablonu
-description: Python Django framework kullanılarak yazılmış web uygulamaları için Visual Studio şablonları genel bakış.
+description: Visual Studio ile Python Django web uygulamalarını hızlı oluşturulması için kapsamlı bir şablon sağlayın.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1e00fd7df429b219589e1e49ddbc5ccadca5e032
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: c1aba68ad8cde6aebbc881e61937dc53037b58c5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607438"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066528"
 ---
 # <a name="django-web-project-template"></a>Django web projesi şablonu
 
@@ -50,19 +51,19 @@ Django Yönetim Konsolu çeşitli komutlara üzerinden erişilen **proje** menü
 
 - **Django Kabuğu'nu açın**: uygulama Bağlamınızı Modellerinizi yönetmenize olanak sağlayan bir kabuk açılır:
 
-    ![Konsol](media/template-django-console-shell.png)
+    ![Açık Django Kabuk komutu sonuçları](media/template-django-console-shell.png)
 
 - **Django eşitleme DB**: yürütür `manage.py syncdb` içinde bir **etkileşimli** penceresi:
 
-    ![Konsol](media/template-django-console-sync-db.png)
+    ![Django eşitleme DB komutunun sonucu](media/template-django-console-sync-db.png)
 
 - **Statik toplamak**: yürütür `manage.py collectstatic --noinput` tarafından belirtilen yol için tüm statik dosyaları kopyalamak için `STATIC_ROOT` içinde *settings.py*.
 
-    ![Konsol](media/template-django-console-collect-static.png)
+    ![Toplama statik komutunun sonucu](media/template-django-console-collect-static.png)
 
 - **Doğrulama**: yürütür `manage.py validate`, hangi raporların tarafından belirtilen yüklü modellerindeki herhangi bir doğrulama hatası `INSTALLED_APPS` içinde *settings.py*:
 
-    ![Konsol](media/template-django-console-validate.png)
+    ![Doğrulama komutunun sonucu](media/template-django-console-validate.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

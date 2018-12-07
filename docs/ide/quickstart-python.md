@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 025adc3a99e2c5aabe2588852885e537553ddce6
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: bd31ee397f0398c15fd315b43486b6be5d7d3855
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219282"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062315"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Hızlı Başlangıç: Visual Studio kullanarak ilk Python web uygulamanızı oluşturma
 
@@ -66,11 +66,11 @@ Burada, "Bu proje için Visual Studio kullanan varsayılan genel ortama" Flask k
 
 1. Arama alanına "flask" girin ve seçin **pip, Pypı flask yükleme**. Sizden yönetici ayrıcalıkları kabul edin ve gözlemleyin **çıkış** ilerleme için Visual Studio penceresinde. (Bir komut istemi packages klasörünü genel ortam için bir korumalı alanı içinde bulunduğu yükseltme olur için ister *C:\Program Files*.)
 
-    ![Flask kitaplık yükleme](media/quickstart-python-03-install-package.png)
+    ![Pip kullanılarak Flask kitaplık yükleme](media/quickstart-python-03-install-package.png)
 
 1. Yüklendikten sonra kitaplık ortamda görünür **Çözüm Gezgini**, yapabileceğiniz anlamına gelir bunu Python kodu kullanın.
 
-    ![Flask kitaplığının yüklü](media/quickstart-python-04-package-installed.png)
+    ![Flask kitaplığının yüklü ve Çözüm Gezgini'nde gösteriliyor](media/quickstart-python-04-package-installed.png)
 
 > [!Note]
 > Genel bir ortamda kitaplıklarını yüklemek yerine, geliştiricilerin, belirli bir projenin kitaplıklarını yüklemek "sanal ortam" genellikle oluşturun. Visual Studio şablonları bölümünde açıklandığı gibi bu seçenek genellikle teklif [hızlı başlangıç - şablon kullanarak bir Python projesi oluşturma](../python/quickstart-02-python-in-visual-studio-project-from-template.md).

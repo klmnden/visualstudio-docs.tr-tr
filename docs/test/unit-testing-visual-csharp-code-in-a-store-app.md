@@ -1,5 +1,5 @@
 ---
-title: Visual C# kod Visual Studio'da birim testi
+title: Visual C# koduna birim testi
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 7fee836c8259aac267bd1b3da39bf254c8cdcc63
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 76c20fb987bb1380cb4d3f00e078aac81f26e89f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380736"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064860"
 ---
 # <a name="unit-testing-visual-c-code"></a>Visual C# koduna birim testi
 

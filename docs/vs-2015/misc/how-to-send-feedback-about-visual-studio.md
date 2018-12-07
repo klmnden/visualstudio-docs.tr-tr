@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Visual Studio hakkında geri bildirim gönderme | Microsoft Docs'
+title: 'Nasıl yapılır: geri bildirim gönderme | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -20,12 +20,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8a7f1fa0592a6136e96f33803744cd8b42c265ee
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 42818b1835e404b0539ef530a2c859ee43886b71
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768392"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059875"
 ---
 # <a name="how-to-send-feedback-about-visual-studio"></a>Nasıl Yapılır: Visual Studio Hakkında Geri Bildirim Gönderme
 Bu içerik kaldırılmıştır. Bilgi için [konuşmak bize](../ide/talk-to-us.md).

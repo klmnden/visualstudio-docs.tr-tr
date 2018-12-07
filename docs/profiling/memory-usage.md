@@ -1,7 +1,7 @@
 ---
 title: Uygulamalarınızda ölçü bellek kullanımı
 description: Hata ayıklayıcıyla tümleştirilmiş Tanılama Aracı ile hata ayıklarken bellek sızıntılarını ve verimsiz bellek bulun.
-ms.custom: mvc
+ms.custom: seodec18
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eeacfb15b02c19ea4a166fbc8511aab644d41ea5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 622f35ccbe29130dea3b35b96373da0c8b39e0b7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861416"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052083"
 ---
-# <a name="profile-memory-usage-in-visual-studio"></a>Visual Studio’da bellek kullanımının profilini oluşturma
+# <a name="measure-memory-usage-in-visual-studio"></a>Visual Studio'da ölçü bellek kullanımı
 Hata ayıklayıcıyla tümleştirilmiş ile hata ayıklarken bellek sızıntılarını ve verimsiz bellek Bul **bellek kullanımı** Tanılama aracı. Bir veya daha fazla atmanız bellek kullanımı aracı sağlar *anlık görüntüleri* nesne türlerinin bellek kullanımı etkilerini anlamanıza yardımcı olmak üzere yönetilen ve yerel bellek yığın. .NET, yerel veya karma mod (.NET ve yerel) uygulamaları, anlık toplayabilirsiniz.  
   
  Aşağıdaki grafik gösterildiği **tanılama araçları** penceresi (Visual Studio 2015 güncelleştirme 1 ve sonraki sürümlerinde kullanılabilir):  

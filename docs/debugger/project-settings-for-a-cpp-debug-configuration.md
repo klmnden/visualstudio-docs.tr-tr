@@ -1,6 +1,6 @@
 ---
-title: Proje ayarları C++ hata ayıklama yapılandırması | Microsoft Docs
-ms.custom: ''
+title: Bir C++ hata ayıklama yapılandırması proje ayarları
+ms.custom: seodec18
 ms.date: 11/26/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -113,12 +113,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b333dca8f717cbd8e1172ed00b4a044aafeed857
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 951b46bfc6ef0910731dfe76cc9913f2c4a423ad
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389662"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066908"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ hata ayıklama yapılandırması proje ayarları
 Bir C veya Visual C++ hata ayıklama yapılandırması proje ayarları değiştirebilirsiniz **özellik sayfaları** anlatıldığı gibi iletişim kutusu, [nasıl yapılır: ayarlama hata ayıklama ve dağıtım yapılandırmalarını](../debugger/how-to-set-debug-and-release-configurations.md). Aşağıdaki tablolarda, hata ayıklayıcı ile ilgili ayarların nerede bulunacağı gösterilmektedir **özellik sayfaları** iletişim kutusu.  

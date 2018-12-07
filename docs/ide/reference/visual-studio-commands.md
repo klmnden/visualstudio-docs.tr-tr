@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Komutları
+title: Komutlar
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,32 +14,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7344a1051385b57f92720e9ca671e6aeb1ec46b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: da258aab0a9c4e100591bf33abff710b1cf54f53
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879020"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063467"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio Komutları
+
 Visual Studio komutları bir komut çağırmanıza olanak tanır **komut** penceresinde **hemen** penceresinde veya **Bul/komut** kutusu. Her durumda, büyüktür işareti (`>`) bir arama veya hata ayıklama işlemi yerine bir komut takip etmek olduğunu belirtmek için kullanılır.
 
- Komutların ve sözdizimlerinin tam listesini bulabilirsiniz **klavye, ortam seçenekleri** iletişim kutusu.
+Komutların ve sözdizimlerinin tam listesini bulabilirsiniz **klavye, ortam seçenekleri** iletişim kutusu.
 
- Visual Studio komutları için kaçış karakteri bir şapka (^) karakterdir, hemen ardından karakteri yerine birebir yorumlandığı bir denetim karakteri olarak yorumlanır anlamına gelir. Bu anahtar adları dışında bir parametre veya anahtar değerine düz tırnak ("), boşluk, önde gelen eğik çizgiler, düzeltme işaretleri veya diğer bir hazır bilgi karakterleri katıştırmak için kullanılabilir. Örneğin,
+Visual Studio komutları için kaçış karakteri bir şapka (^) karakterdir, hemen ardından karakteri yerine birebir yorumlandığı bir denetim karakteri olarak yorumlanır anlamına gelir. Bu anahtar adları dışında bir parametre veya anahtar değerine düz tırnak ("), boşluk, önde gelen eğik çizgiler, düzeltme işaretleri veya diğer bir hazır bilgi karakterleri katıştırmak için kullanılabilir. Örneğin,
 
 ```
 >Edit.Find ^^t /regex
 ```
 
- İç veya dış tırnak işaretleri olup olmadığını şapka işareti aynı şekilde çalışır. Şapka işareti satırdaki son karakterse, yoksayılır.
+İç veya dış tırnak işaretleri olup olmadığını şapka işareti aynı şekilde çalışır. Şapka işareti satırdaki son karakterse, yoksayılır.
 
- IDE yerelleştirilmiş sürümlerinde, komut adları IDE'nin kendi dilinde veya İngilizce girilebilir. Örneğin, yazabilirsiniz `File.NewFile` veya `Fichier.NouveauFichier` aynı komutu yürütmek için Fransızca IDE'de.
+IDE yerelleştirilmiş sürümlerinde, komut adları IDE'nin kendi dilinde veya İngilizce girilebilir. Örneğin, yazabilirsiniz `File.NewFile` veya `Fichier.NouveauFichier` aynı komutu yürütmek için Fransızca IDE'de.
 
- Birçok komutun eş adları vardır. Komut diğer adları listesi için bkz. [Visual Studio komut diğer adları](../../ide/reference/visual-studio-command-aliases.md).
+Birçok komutun eş adları vardır. Komut diğer adları listesi için bkz. [Visual Studio komut diğer adları](../../ide/reference/visual-studio-command-aliases.md).
 
- Aşağıdaki komutları, bağımsız değişkenler ve/veya anahtarlar alır.
-
+Aşağıdaki komutları, bağımsız değişkenler ve/veya anahtarlar alır.
 
 | Komut adı | Açıklama |
 | - | - |

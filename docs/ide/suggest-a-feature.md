@@ -1,5 +1,5 @@
 ---
-title: 'Genel Bakış: Visual Studio için özellik önerin'
+title: Özellik önerileri
 description: Geliştirici topluluğu önerileri nedir, nasıl bir öneride bulunmak ve öneriler Visual Studio yol haritası, Microsoft tarafından nasıl kullanıldığını açıklar.
 ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
@@ -10,24 +10,24 @@ ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d76dcb09db27ed3ac63ba0dd6cc8fc60588f0f
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 3bdc2521020b1b354108e3130c7efa66d7c15394
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826710"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053379"
 ---
 # <a name="overview-suggest-a-feature"></a>Genel Bakış: özellik önerin
 
 Özellik sorunları bildirmek için geçerli özelliği yanı sıra üzerinde önermek için yepyeni bir deneyimle tanıttık [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com). Bu, doğrudan Visual Studio'nun mühendislik iş akışı ile etkileşim kurmak için yetkilendirilmiş yepyeni bir yoludur.
 
-Şimdiye kadar yeni özellik fikirleri sunmak için Visual Studio kullanıcılarına, User Voice forumunu kullandınız. *Özellik önerin* Geliştirici topluluğu deneyimi sağlar, geçiş User Voice Forumdan tek bir platformda, doğrudan Visual Studio ürün ekipleri ile ilgilenir. geri bildirim.  
+Şimdiye kadar yeni özellik fikirleri sunmak için Visual Studio kullanıcılarına, User Voice forumunu kullandınız. *Özellik önerin* Geliştirici topluluğu deneyimi sağlar, geçiş User Voice Forumdan tek bir platformda, doğrudan Visual Studio ürün ekipleri ile ilgilenir. geri bildirim.
 
 Geliştirici topluluğu User Voice Forumdan biz fikirleri başlangıç kümesi geçirdik. Geçişi geri bildirim ve bizim ürün yol haritası öncelikleri topluluk etkisine göre yapılır. Biz eksik kalmış olabilir geçen bir öneri görmeyi beklediğiniz gibi değilse, geliştirici topluluğuna eklemek çekinmeyin.
 
 ## <a name="votes"></a>Oylar
 
-Geliştirici Topluluğu'nda kişinin oylarını gelen User Voice oylama sistemde farklı çalışır. Geliştirici topluluğu oy sayıları bütünlüğünü sağlamak ve adlı kullanıcıların oyları, User Voice oy sayıları göze çarpacak şekilde her bir özellik önerisi yanındaki etiketini göstereceğiz eğriltme önlemek için. Gelişmiş Geliştirici Topluluğu'nda önerileri oylamak devam ederken, yeni oy sayısı alınan User Voice oy sayımların ayrı olarak gösterilir.  
+Geliştirici Topluluğu'nda kişinin oylarını gelen User Voice oylama sistemde farklı çalışır. Geliştirici topluluğu oy sayıları bütünlüğünü sağlamak ve adlı kullanıcıların oyları, User Voice oy sayıları göze çarpacak şekilde her bir özellik önerisi yanındaki etiketini göstereceğiz eğriltme önlemek için. Gelişmiş Geliştirici Topluluğu'nda önerileri oylamak devam ederken, yeni oy sayısı alınan User Voice oy sayımların ayrı olarak gösterilir.
 
 ## <a name="user-voice"></a>Uservoice
 
@@ -77,7 +77,7 @@ Yeni özellik öneriniz hemen sonra amacınızın alamıyoruz olsa bile, biz dev
 
 - - -
 
-![Kapalı - yeterli bilgi durumu Geliştirici topluluğu ilgili öneriler almak için](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg) 
+![Kapalı - yeterli bilgi durumu Geliştirici topluluğu ilgili öneriler almak için](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
 **Kapalı - yeterli bilgi** birkaç denemeden sonra özellik öneriniz tam olarak anlamak için yeterli bilgi aldık henüz olduğunu gösterir. Bu aşamada herhangi başka bir işlem yapması alamıyoruz gibi yeni bir özellik önerisi kapatmak sahibiz.
 

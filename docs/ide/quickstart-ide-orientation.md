@@ -1,5 +1,6 @@
 ---
 title: Visual Studio IDE turu
+titleSuffix: ''
 ms.date: 07/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbf969e6e9a37179621cad52243418a2d0536f1a
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 5fafb5e9f99c42eb799aa310042c9f8e9ffd0300
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624291"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056457"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Hızlı Başlangıç: Visual Studio IDE ilk bakış
 
@@ -105,10 +106,10 @@ Visual Studio kullanıyorsanız ya da ürünün iyileştirilmesine ilişkin öne
 Visual Studio kullanıcı arabirimi ile tanışın özelliklerinin birkaçı adresindeki inceledik. Daha iyi keşfedilebilmesi için:
 
 > [!div class="nextstepaction"]
-> [Kod Düzenleyicisi hakkında bilgi edinin](../ide/quickstart-editor.md)
+> [Kod Düzenleyicisi hakkında bilgi edinin](../get-started/tutorial-editor.md)
 
 > [!div class="nextstepaction"]
-> [Projeler ve çözümler hakkında bilgi edinin](../ide/quickstart-projects-solutions.md)
+> [Projeler ve çözümler hakkında bilgi edinin](../get-started/tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

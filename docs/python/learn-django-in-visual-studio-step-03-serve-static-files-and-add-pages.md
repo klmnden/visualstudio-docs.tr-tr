@@ -1,5 +1,6 @@
 ---
-title: Öğretici - 3. adım Visual Studio'da Django öğrenin
+title: Django Öğreticisi 3. adımda Visual Studio, statik dosyalar ve sayfalar öğrenin
+titleSuffix: ''
 description: Visual Studio projeleri, özellikle statik dosyaları işleme, uygulamaya sayfaları ekleyin ve şablonu devralma gösterimi bağlamında Django temel bilgileri bir kılavuz
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bea209e2d7cf751c66f3e627311a2985c79f55c3
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: cfde21f356e35366cfb80b029f918eed0364a7b5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001301"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066086"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>3. adım: statik dosyaları işleme, sayfalar eklemek ve şablonu devralma kullanın
 

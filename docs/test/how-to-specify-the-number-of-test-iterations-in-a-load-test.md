@@ -1,5 +1,5 @@
 ---
-title: Bir yük testi çalışma ayarı Visual Studio'da Test yineleme sayısını belirtin
+title: Yük testi çalışma ayarı Test yineleme sayısını belirtme
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bba6ddfa9162583d687f6638c9b75e178556132b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: e250096a99cfc272cd23b58bf0f7b70eeb3a7c9d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894800"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059846"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Nasıl yapılır: bir yük testi çalışma ayarı içinde test yineleme sayısını belirtme
 

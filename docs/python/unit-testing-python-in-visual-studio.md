@@ -1,6 +1,6 @@
 ---
-title: Birim testi için Python
-description: Birim testi Visual Studio'da Python kodu için keşfetmek için Test Gezgini özellikleri tam olarak yararlanmak için ayarlama, çalıştırmak ve Testlerde Hata Ayıkla.
+title: Birim testi Python kodu
+description: Birim testi için Visual Studio'da Python kodu ayarlama tam Testlerde Hata Ayıkla bulmak ve çalıştırmak için Test Gezgini özelliklerinden yararlanır.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e8a3a61b7c77031033c9cdc988753437f25166a1
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 57076aa4bf86b8053a38e6b8af96b6006bbdfa0a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607581"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052536"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>Python kod için birim testi ayarlama
 

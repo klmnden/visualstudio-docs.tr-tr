@@ -5,17 +5,17 @@ ms.date: 07/26/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 5d71f906-6e50-4399-b59b-d38c6dfef7ee
-author: johmil
-ms.author: therealjohn
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 7717dd1c95d77437f21d5d12e44d44c3dd3aa69e
-ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
+ms.openlocfilehash: aa8a4a229102a6a9439ffb36582cd03e322a086b
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52953921"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027204"
 ---
 # <a name="share-the-unity-log-callback-with-vstu"></a>VSTU ile Unity günlük geri çağrısı paylaşma
 Unity için Visual Studio Araçları, Unity'nin konsolunu Visual Studio'ya aktarabilmek için Unity'ye bir günlük geri çağrısı kaydeder. Düzenleyici betiklerinizi Unity ile aynı zamanda günlük geri kaydolursanız, geri çağırma işleminizi VSTU geri çağırma etkileyebilir. Bu olasılığını önlemek için `VisualStudioIntegration.LogCallback` VSTU ile işbirliği yapmayı olay.

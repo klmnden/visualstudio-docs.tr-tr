@@ -1,5 +1,5 @@
 ---
-title: İstek düzeyi eklentisi web performans testleri için Visual Studio'da oluşturma
+title: İstek düzeyi eklentisi web performans testleri için oluşturma
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cf94de633554cef495b0a9a023426ac49de75c76
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 4b9408560eabf9a824f391625753b2ddd390a9d2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895281"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054080"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Nasıl yapılır: istek düzeyi eklentisi oluşturma
 

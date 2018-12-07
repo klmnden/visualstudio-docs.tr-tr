@@ -1,5 +1,6 @@
 ---
-title: Öğretici - 6. adım Visual Studio'da Django öğrenin
+title: Visual Studio 6. adım, proje şablonu yoklamalar Django öğreticide bilgi edinin
+titleSuffix: ''
 description: Visual Studio projeleri, özellikle yönetim özelleştirme gibi yoklamalar Django Web projesi şablonu özelliklerinin bağlamında Django temel bilgileri bir kılavuz.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 94c858a847e0e5029a989a6939a2094ed3792903
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: ecc0637495b484ae06cb0f18e45ba329c7fa3407
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001262"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062502"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>6. adım: yoklamalar Django Web projesi şablonu kullanın.
 

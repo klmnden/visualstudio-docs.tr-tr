@@ -1,7 +1,7 @@
 ---
 title: Python ortamları ve yorumlayıcılarını yönetin
 description: Genel, sanal yönetmek için Python ortamları penceresi ve Python yorumlayıcılarını ve paketleri yükleme ve Visual Studio projelerine ortamları atama conda ortamları kullanın.
-ms.date: 11/08/2018
+ms.date: 12/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f69178fde2a0912d39c813028385f21f6ca87d7a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 887776b3a3f1275b97b2abee26c4613d8aad39fc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349367"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063224"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Oluşturma ve Visual Studio'da Python ortamlarını yönetme
 
@@ -57,7 +57,9 @@ Her iki durumda da **Python ortamları** penceresi görünür yanı sıra **Çö
 
 Visual Studio kayıt defterini kullanarak yüklü genel ortamlar için görünür (aşağıdaki [CESARETLENDİRİCİ 514](https://www.python.org/dev/peps/pep-0514/)), yanı sıra sanal ortamları ve conda ortamları (bkz [çeşitli ortamlarda](#types-of-environments)). Listenin beklenen bir ortamda görmüyorsanız bkz [el ile bir ortamı tanımlamanız](#manually-identify-an-existing-environment).
 
-Listeden bir ortam seçin, Visual Studio çeşitli özellikler ve o ortama ait komutları görüntüler **genel bakış** sekmesi. Örneğin, yukarıdaki görüntüde Yorumlayıcı'nın konumunun gördüğünüz *C:\Python36-32*. Farklı sekmelere gibi geçmek için ortamları listesinin altındaki açılır listede kullanmak **paketleri**, ve **IntelliSense**. Bu sekmeler açıklanan [Python ortamları penceresi sekme başvurusu](python-environments-window-tab-reference.md).
+Listeden bir ortam seçin, Visual Studio çeşitli özellikler ve o ortama ait komutları görüntüler **genel bakış** sekmesi. Örneğin, yukarıdaki görüntüde Yorumlayıcı'nın konumunun gördüğünüz *C:\Python36-32*. Sayfanın alt kısmında dört komuttan **genel bakış** sekmesini yorumlayıcı ile çalışan bir komut istemi açın. Daha fazla bilgi için [Python ortamları penceresi Sekme Başvurusu - genel bakış](python-environments-window-tab-reference.md#overview-tab).
+
+Farklı sekmelere gibi geçmek için ortamları listesinin altındaki açılır listede kullanmak **paketleri**, ve **IntelliSense**. Bu sekme ayrıca açıklanan [Python ortamları penceresi sekme başvurusu](python-environments-window-tab-reference.md).
 
 Bir ortam seçerek onun için herhangi bir projeyi değiştirmez. Kalın listesinde gösterilen varsayılan, tüm yeni projeler için Visual Studio kullanan bir ortamdır. Farklı bir ortama yeni projeleri ile kullanmak için **varsayılan ortama yeni projeler için bunu yap** komutu. Bir proje bağlamında, her zaman belirli bir ortama seçebilirsiniz. Daha fazla bilgi için [bir proje için bir ortam seçin](selecting-a-python-environment-for-a-project.md).
 

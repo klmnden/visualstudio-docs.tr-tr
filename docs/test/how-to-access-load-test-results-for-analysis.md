@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Yük testi sonuçlarını çözümleme
+title: Yük testi sonuçlarını çözümleme
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 91e1b3c3a094e9bb510132d9160432a868fd559c
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 4c5da35407b028d1c435c87a55f265bd22c46c3a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896451"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047635"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Nasıl yapılır: erişim yük testi sonuçlarını çözümleme
 

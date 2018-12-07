@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14b170e6f8259776941ce0fcc2a2866a9084cffb
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 764eb46fb387e1a007362b02a0f62cf478c771fe
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607724"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066229"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window"></a>İş parçacıkları penceresini kullanarak Visual Studio hata ayıklayıcı iş parçacıkları görünümü
 İçinde **iş parçacıkları** penceresini inceleyin ve ayıkladığınız uygulama iş parçacıkları ile çalışır. Nasıl kullanılacağını adım adım yönergeler için **iş parçacıkları** penceresinde görmek [izlenecek yol: iş parçacıkları penceresini kullanarak hata ayıklama](../debugger/how-to-use-the-threads-window.md).

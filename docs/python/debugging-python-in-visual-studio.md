@@ -1,6 +1,6 @@
 ---
 title: Python kodunda hata ayıklama
-description: Visual Studio'da hata ayıklama özellikleri özellikle kesme noktaları ayarlama, Adımlama, değerler geçirerek, özel durumlar arama ve etkileşimli pencerede hata ayıklama da dahil olmak üzere Python kodu için bir kılavuz.
+description: Visual Studio için Python kodu, kesme noktaları ayarlama, Adımlama, değerler geçirerek, özel durumlar arama ve etkileşimli pencerede hata ayıklama da dahil olmak üzere zengin hata ayıklama sağlar.
 ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52869de661d9818252b68271c089f6b04a0b9f00
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 0e4cc2ff43b59fff0aac70d9cc13a0a00662e209
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101166"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068441"
 ---
 # <a name="debug-your-python-code"></a>Python kodunuzun hatalarını ayıklama
 
@@ -54,7 +55,7 @@ Temel hata ayıklama iş akışından kod içerisinde ilerlemeye değerlerini in
 
 Program durumunu inceleyebilirsiniz. Bu nedenle işaretli bir noktada kod yürütme kesme noktaları durdurun. Sol kenar boşluğunu Kod Düzenleyicisi'ni veya bir kod satırı sağ tıklatıp seçerek tıklayarak kesme noktası ayarlama **kesme noktası** > **kesme noktası Ekle**. Her satırda bir kesme noktası ile kırmızı bir nokta belirir.
 
-![Visual Studio'daki kesme noktaları](media/debugging-breakpoints.png)
+![Visual Studio'da görünen kesme noktaları](media/debugging-breakpoints.png)
 
 Kırmızı nokta veya kod satırına sağ tıklayıp seçerek **kesme noktası** > **Sil kesme noktası** kesme noktası kaldırır. Ayrıca bunu kullanarak kaldırmadan devre dışı **kesme noktası** > **devre dışı kesme noktası** komutu.
 
@@ -87,27 +88,27 @@ Hata ayıklayıcıda durdurulduklarında inceleyin ve değişkenlerin değerleri
 
 Kullanarak bir değeri görüntülemek için **DataTips**, fare düzenleyicisinde herhangi bir değişken yalnızca üzerine gelin. Değeri değiştirmek için tıklayabilirsiniz:
 
-![DataTips, hata ayıklayıcı](media/debugging-quick-tips.png)
+![Visual Studio hata ayıklayıcıda gösteren DataTips](media/debugging-quick-tips.png)
 
 **Otolar** penceresi (**hata ayıklama** > **Windows** > **Otolar**) değişkenleri ve ifadeleri içeriyor, Geçerli deyimi yakın olan. Değer sütunu veya seçin ve ENTER tuşuna çift tıklayabilirsiniz **F2** değerini düzenlemek için:
 
-![Hata ayıklayıcı otomatik değişkenler penceresi](media/debugging-autos-window.png)
+![Visual Studio hata ayıklayıcısı otomatik değişkenler penceresi](media/debugging-autos-window.png)
 
 **Yereller** penceresi (**hata ayıklama** > **Windows** > **Yereller**) bulunan tüm değişkenleri görüntüler Geçerli kapsam, yeniden düzenlenebilir:
 
-![Hata ayıklayıcı yerel öğeler penceresinde](media/debugging-locals-window.png)
+![Visual Studio hata ayıklayıcısını Yereller penceresinde](media/debugging-locals-window.png)
 
 Daha fazla üzerinde kullanma **Otolar** ve **Yereller**, bkz: [Otolar ve yerel öğeler pencerelerinde değişkenleri denetleyin](../debugger/autos-and-locals-windows.md).
 
 **Watch** windows (**hata ayıklama** > **Windows** > **Watch**  >   **1-4 izleyin**) rastgele Python ifadelerini girin ve sonuçları görüntülemeniz olanak sağlar. İfadeler her adım için değerlendirilerek:
 
-![İzleme penceresi hata ayıklayıcısı](media/debugging-watch-window.png)
+![Visual Studio hata ayıklayıcı penceresinde izleyin](media/debugging-watch-window.png)
 
 Daha fazla üzerinde kullanma **izleme**, bkz: [izleme ve QuickWatch pencerelerini kullanarak değişkenler üzerinde bir izleme ayarlama](../debugger/watch-and-quickwatch-windows.md).
 
 Bir dize değeri incelerken (`str`, `unicode`, `bytes`, ve `bytearray` tüm dizeleri bu amaca yönelik olarak kabul edilir), değeri sağ tarafında bir Büyüteç simgesi görünür. Simgeye tıklayarak uzun dizeler için yararlı olan tırnak işareti olmayan bir dize değeri sarmalama ve kaydırmayı, açılan iletişim kutusunda görüntüler. Ayrıca, açılan ok simgesini seçerek, düz metin seçmenizi sağlar HTML, XML ve JSON görselleştirmeler:
 
-![Dize görselleştiriciler](media/debugging-string-visualizers.png)
+![Visual Studio hata ayıklayıcısı görselleştiriciler dize](media/debugging-string-visualizers.png)
 
 HTML, XML ve JSON görselleştirmeler ayrı açılır pencereleri söz dizimi vurgulama ve ağaç görünümleri ile görünür.
 
@@ -115,13 +116,13 @@ HTML, XML ve JSON görselleştirmeler ayrı açılır pencereleri söz dizimi vu
 
 Hata ayıklama sırasında programınızdaki bir hata meydana gelir, ancak bunun için bir özel durum işleyicisi yok, hata ayıklayıcı özel durum noktasında keser:
 
-![Özel durum açılan menüsü](media/debugging-exception-popup.png)
+![Visual Studio hata ayıklayıcı özel durum açılan menüsü](media/debugging-exception-popup.png)
 
 Bu noktada çağrı yığını da dahil olmak üzere program durumunu inceleyebilirsiniz. Ancak, kodunuz içinde adım adım denerseniz, özel durum ya da işlenir veya programınızın çıkar kadar oluşturulan devam eder.
 
 **Hata ayıklama** > **Windows** > **özel durum ayarları** menü komutu genişletin bir penceresi getirir **Python Özel durumlar**:
 
-![Özel durumlar penceresi](media/debugging-exception-settings.png)
+![Visual Studio hata ayıklayıcısını özel durumlar penceresi](media/debugging-exception-settings.png)
 
 Her özel durum denetimleri için onay kutusunu olmadığını hata ayıklayıcı *her zaman* keser olduğunda ortaya çıkar. Daha sık için belirli bir özel durumun kesmek istediğinizde bu kutuyu işaretleyin.
 
@@ -133,7 +134,7 @@ Bu listede görünmeyen bir özel durum yapılandırmak için tıklayın **Ekle*
 
 Varsayılan olarak, hata ayıklayıcı, programınızın standart Python başlatıcısı, hiçbir komut satırı bağımsız değişkenleri ve başka hiçbir özel yollar veya koşullar ile başlatır. Başlangıç seçenekleri, projenize sağ tıklayarak erişilen projenin hata ayıklama özellikleri aracılığıyla değiştirilirse **Çözüm Gezgini**u seçerek **özellikleri**, seçerek **hata ayıklama**  sekmesi.
 
-![Proje hata ayıklama özellikleri](media/debugging-project-properties.png)
+![Visual Studio hata ayıklayıcısı proje hata ayıklama özellikleri](media/debugging-project-properties.png)
 
 ### <a name="launch-mode-options"></a>Modu seçeneklerini başlatma
 

@@ -1,5 +1,5 @@
 ---
-title: Bir dosya adı, Visual Studio'da bir türüyle eşleşecek şekilde yeniden adlandırın
+title: Bir dosya adı bir türüyle eşleşecek şekilde yeniden adlandırın
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8407e89d9e28c501358877df9c244175ca8155c8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bfc1a88091fa30bceea15a3f8e1b78df5cc7a87c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942328"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054793"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Bir dosya adı veya türü bir yeniden düzenleme için bir dosya adı için bir tür eşitleme
 

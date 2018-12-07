@@ -1,22 +1,22 @@
 ---
-title: Visual Studio ile bir Azure bulut hizmeti projesi oluşturma | Microsoft Docs
+title: Bir Azure bulut hizmeti projesi oluşturma
 description: Artık Visual Studio ile bir Azure bulut hizmeti projesi oluşturmayı öğrenin
 author: ghogen
 manager: douge
 assetId: ec580df7-3dcc-45a9-a1d9-8c110678dfb5
 ms.prod: visual-studio-dev15
 ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: b51f7b5334452217da208873f203c7b010d77b9b
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 5c35c7c0c5ee28a6b30aac4be7c3d748f393ca71
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000340"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047596"
 ---
 # <a name="creating-an-azure-cloud-service-project-with-visual-studio"></a>Visual Studio ile bir Azure bulut hizmeti projesi oluşturma
 Visual Studio için Azure Araçları oluşturmanıza imkan tanıyan bir proje şablonu sağlar bir [Azure bulut hizmeti](/azure/cloud-services/cloud-services-choose-me), basit bir genel amaçlı Azure hizmet. Visual Studio projesi oluşturulduktan sonra yapılandırma, hata ayıklama ve bulut hizmetini Azure'a dağıtmak sağlar.

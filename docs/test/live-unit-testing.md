@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Live Unit Testing
+title: Live Unit Testing
 ms.date: 2017-03-07
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6e0bd322b200fba3bf41f99c4119cbe287ce2967
-ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
+ms.openlocfilehash: 7be078044454ebf5d6b3a6d99a60fff66ab1f69b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42624126"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066216"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Visual Studio 2017 ile Live Unit Testing
 
@@ -81,7 +81,7 @@ Yapılandırılabilir seçeneklerin şunlardır:
 - Kalıcı veri depolanacağı dizin.
 
 - Tüm kalıcı veri silme yeteneği. Live Unit Testing, kalıcı verileri bozulmuş önerir öngörülemeyen ya da beklenmeyen şekilde davrandığından istediğinizde yararlıdır.
-   
+
 - Bir test çalışması sonra zaman aşımına Interval; Varsayılan değer 30 saniyedir.
 
 - Live Unit Testing oluşturan test işlemlerinin maksimum sayısı.
@@ -203,4 +203,3 @@ Live Unit Testing her bir yöntem hariç tutmak için de aşağıdaki öznitelik
 - [Live Unit Testing blogu](https://go.microsoft.com/fwlink/?linkid=842514)
 - [Live Unit Testing SSS](live-unit-testing-faq.md)
 - [Kanal 9 videosu: Visual Studio 2017'de Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
-

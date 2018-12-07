@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da C++ DLL'leri için birim testleri yazma
+title: C++ DLL'leri için birim testleri yazma
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 829882cf3504583a4e9dbc3532c900df26a921f2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 045f33c2afcb4f37f5ab81beb21e778edbdd1a61
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862534"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056181"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Visual Studio'da C++ DLL'leri için birim testleri yazma
 

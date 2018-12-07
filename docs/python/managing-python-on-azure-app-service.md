@@ -1,5 +1,5 @@
 ---
-title: (Windows) Azure App Service'te Python'ı yapılandırma
+title: (Windows) Azure App Service'te Python'u yapılandırma
 description: Nasıl Azure App Service ve yapılandırma web uygulamaları için bu yorumlayıcı düzgün bir şekilde başvurmak için bir Python yorumlayıcısı ve kütüphaneler yükleyin.
 ms.date: 10/18/2018
 ms.prod: visual-studio-dev15
@@ -8,16 +8,17 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 10da39ca8074148ac11e69be559af8da9931213e
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: e21be06c26ec6a15b46ef72c0fe33a35b314c989
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459874"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051299"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>(Windows) Azure App Service'te bir Python ortamını kurma
 

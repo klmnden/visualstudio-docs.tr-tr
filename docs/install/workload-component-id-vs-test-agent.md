@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Test Agent 2017'yi iş yükü ve Bileşen kimlikleri
+titleSuffix: ''
 description: Otomatik testleri çalıştırmak ve uzaktan yük testleri için Visual Studio iş yükü ve Bileşen kimlikleri kullanın
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
 ms.workload:
 - multiple
-ms.openlocfilehash: e148487d060667dad4c0f5f00273d75c062b5b01
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: d75fe8a1dee373dc7d8b48ac1f03c3a2592c705e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607516"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048389"
 ---
 # <a name="visual-studio-test-agent-2017-component-directory"></a>Visual Studio Test Agent 2017'yi bileşen dizini
 

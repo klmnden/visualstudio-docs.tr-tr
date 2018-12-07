@@ -1,6 +1,6 @@
 ---
-title: Visual Studio'da CPU kullanımını analiz etme | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: CPU kullanımını analiz etme | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1129d5574903db1d658b8521c920d7858c2dfe1c
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 4b3d4d6a352d2ff1b71796d64c34992af493867a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948926"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063269"
 ---
 # <a name="analyze-cpu-usage"></a>CPU kullanımını analiz etme 
 

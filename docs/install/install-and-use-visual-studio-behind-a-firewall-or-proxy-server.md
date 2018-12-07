@@ -1,5 +1,6 @@
 ---
-title: Yükleme ve bir güvenlik duvarı veya proxy sunucusunun arkasına Visual Studio ve Azure hizmetlerini kullanma | Microsoft Docs
+title: Yükleme ve bir güvenlik duvarı veya proxy sunucusunun arkasına Visual Studio ve Azure hizmetlerini kullanma
+titleSuffix: ''
 description: Etki alanı URL'lerini, bağlantı noktaları ve protokollerle Güvenilenler listesine veya kuruluşunuz bir güvenlik duvarı veya proxy sunucusu kullanıyorsa açın gözden geçirin
 ms.custom: ''
 ms.date: 07/10/2018
@@ -17,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fbea07aee311bd1548397f4b3d475e4819523df
-ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
+ms.openlocfilehash: 977dc2927e95988b98acc28eb6b0198d0c27b90a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52954194"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057769"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Yükleme ve bir güvenlik duvarı veya proxy sunucusunun arkasına Visual Studio ve Azure hizmetlerini kullanma
 

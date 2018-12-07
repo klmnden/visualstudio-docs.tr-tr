@@ -1,5 +1,6 @@
 ---
 title: Visual Studio 2017'in genel bakış
+titleSuffix: ''
 ms.date: 10/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de90947f175905ec89955298dc2b4b52af8ffbd4
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 029262f1a17abda9161eda3c2df6abf7ffe1f6db
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826810"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057804"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Visual Studio IDE Hoş Geldiniz
 
@@ -28,7 +29,7 @@ Visual Studio *tümleşik geliştirme ortamı* bir yaratıcı launching düzenle
 
 Bu görüntü, büyük olasılıkla kullanacağınız birkaç anahtar araç pencereleri ve bir Proje Aç ile Visual Studio gösterir:
 
-- [**Çözüm Gezgini** ](../ide/solutions-and-projects-in-visual-studio.md) (sağ üstte) görüntüleyin, gidin ve kodu dosyalarınızdaki dosyalardan yönetmenize olanak tanır. **Çözüm Gezgini** dosyalarına gruplandırarak kodunuzu düzenleme şeklinizdir yardımcı olabilecek [çözümler ve projeler](quickstart-projects-solutions.md).
+- [**Çözüm Gezgini** ](../ide/solutions-and-projects-in-visual-studio.md) (sağ üstte) görüntüleyin, gidin ve kodu dosyalarınızdaki dosyalardan yönetmenize olanak tanır. **Çözüm Gezgini** dosyalarına gruplandırarak kodunuzu düzenleme şeklinizdir yardımcı olabilecek [çözümler ve projeler](../get-started/tutorial-projects-solutions.md).
 
 - [Düzenleyicisi penceresi](../ide/writing-code-in-the-code-and-text-editor.md) (Merkezi), büyük olasılıkla, zamanınızın çoğunu geçireceksiniz burada dosya içeriğini görüntüler. Burada kodunu düzenleyin veya düğme ve metin kutusu içeren bir pencere gibi bir kullanıcı arabirimi tasarım budur.
 
@@ -264,9 +265,9 @@ IDE'yi kişiselleştirme diğer yollar hakkında bilgi edinmek için [kişiselle
 
 Bu tanıtıcı makaleler biriyle boyunca izleyerek daha fazla Visual Studio'ı keşfedin:
 
-- Kod Düzenleyicisi'nde ile tanışın [Kod Düzenleyicisi'ni kullanmayı öğrenin](quickstart-editor.md)
+- Kod Düzenleyicisi'nde ile tanışın [Kod Düzenleyicisi'ni kullanmayı öğrenin](../get-started/tutorial-editor.md)
 
-- Visual Studio kodu nasıl düzenler öğrenin [projeler ve çözümler hakkında bilgi edinin](quickstart-projects-solutions.md)
+- Visual Studio kodu nasıl düzenler öğrenin [projeler ve çözümler hakkında bilgi edinin](../get-started/tutorial-projects-solutions.md)
 
 Daha fazla kodlama içine dalmaya hazır değilseniz aşağıdaki dile özgü hızlı başlangıçları iyi bir sonraki adım biridir:
 

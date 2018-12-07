@@ -1,5 +1,5 @@
 ---
-title: Kod oluşturma, derleme ve Visual Studio için Microsoft Fakes adlandırma kuralları
+title: Microsoft Fakes'te kod oluşturma, derleme ve adlandırma kuralları
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 65b00ab033feb9f057be195afe28b0416f44f95e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7af8fc49896549fd553c8262b04e9d02f76f06e9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926026"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058317"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes'te kod oluşturma, derleme ve adlandırma kuralları
 
@@ -272,7 +272,7 @@ attribute of the Assembly element in the .fakes:
 
 Aşağıdaki kurallar özyinelemeli olarak uygulanır şunlardır:
 
--   Fakes C# kullandığı için Fakes derlemeleri oluşturmak için bir geçersiz C# simgesi üretecek karakterlerden kaçırılmışsa "_" (alt çizgi).
+-   Fakes kullandığından C# geçersiz oluşturur herhangi bir karakter Fakes derlemeleri oluşturmak için C# belirteci "_" (alt çizgi) kaçış.
 
 -   Bildirim türü herhangi bir üyesi ile elde edilen adı çakışıyor, 01 ile başlayan iki basamaklı sayaç ekleyerek bir numaralandırma şeması kullanılır.
 

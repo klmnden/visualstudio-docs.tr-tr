@@ -1,14 +1,9 @@
 ---
-title: Visual Studio statik kod analizini kullanarak Store uygulamalarının C++ kod kalitesini analiz etme | Microsoft Docs
-ms.custom: ''
+title: C++ statik kod analizi Store uygulamaları
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.native.express
 ms.assetid: c5355e43-a37c-4686-a969-18e3dfc59a9c
@@ -16,85 +11,72 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1df08b7b6a44df14ab50a06194f677be5006cce3
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 2382ad7d73069ce66e57e685a05f4319cc8986d0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389104"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064160"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio statik kod analizini kullanarak Store uygulamalarının C++ kod kalitesini analiz etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")
 
- Kod Analizi aracı Visual Studio express sürümlerinde, kodunuz için bir dizi ortak sorunlar ve programlama iyi yöntem ihlallerini inceler. Geçerli olan, ancak yine de siz veya kodunuzu kullanan diğer kişilerin sorunlarına neden olabilir, belirli bir kod desenleri için Kod Analizi arar çünkü kod çözümleme uyarıları derleyici hataları ve Uyarıları farklılık gösterir. Kod Analizi, kodunuzda test sürecinde bulmak zor olan hataları da bulabilirsiniz. Kod çözümleme aracı, geliştirme sürecinde düzenli aralıklarla çalışan tamamlanmış uygulamanızın kalitesini artırabilirsiniz.  
+ Kod Analizi aracı Visual Studio express sürümlerinde, kodunuz için bir dizi ortak sorunlar ve programlama iyi yöntem ihlallerini inceler. Geçerli olan, ancak yine de siz veya kodunuzu kullanan diğer kişilerin sorunlarına neden olabilir, belirli bir kod desenleri için Kod Analizi arar çünkü kod çözümleme uyarıları derleyici hataları ve Uyarıları farklılık gösterir. Kod Analizi, kodunuzda test sürecinde bulmak zor olan hataları da bulabilirsiniz. Kod çözümleme aracı, geliştirme sürecinde düzenli aralıklarla çalışan tamamlanmış uygulamanızın kalitesini artırabilirsiniz.
 
 > [!NOTE]
->  Visual Studio Ultimate, Visual Studio Premium ve Visual Studio Professional içinde kod çözümleme araçları tam işlevselliğini kullanabilirsiniz. Bkz: [kod çözümleme araçları ile uygulama kalitesini analiz etme](http://msdn.microsoft.com/library/dd264897.aspx) MSDN Kitaplığı'nda.  
+> Visual Studio Ultimate, Visual Studio Premium ve Visual Studio Professional içinde kod çözümleme araçları tam işlevselliğini kullanabilirsiniz. Bkz: [kod çözümleme araçları ile uygulama kalitesini analiz etme](http://msdn.microsoft.com/library/dd264897.aspx) MSDN Kitaplığı'nda.
 
-## <a name="in-this-topic"></a>Bu konuda  
- Hakkında bilgi edinebilirsiniz:  
+##  <a name="BKMK_Run"></a> Kod Analizi çalıştırma
+ Visual Studio çözümünüzü Kod Analizi çalıştırmak için:
 
- [Kod Analizi çalıştırma](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Run)  
+- Üzerinde **derleme** menüsünde seçin **çözüm üzerinde kod analizini Çalıştır**.
 
- [Çözümleme ve kod çözümleme uyarıları çözümleme](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Analyze)  
+  Kod analizinin her zaman otomatik olarak çalıştırmak için bir proje oluşturun:
 
- [Kod Analizi uyarılarını gizleme](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Suppress)  
+1. Çözüm Gezgini'nde proje adını seçin ve ardından **özellikleri**.
 
- [Arama ve Kod Analizi sonuçlarını filtreleme](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Search)  
+2. Proje özellik sayfası seçin **Kod Analizi** seçip **C/c++ derlemede kod çözümlemeyi etkinleştir**.
 
- [C++ kod çözümleme uyarıları](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md#Warnings)  
+   Çözüm derlenir ve Kod Analizi çalıştırır. Sonuçları Kod Analizi penceresinde görünür.
 
-##  <a name="BKMK_Run"></a> Kod Analizi çalıştırma  
- Visual Studio çözümünüzü Kod Analizi çalıştırmak için:  
+   ![Kod Analizi penceresi](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-- Üzerinde **derleme** menüsünde seçin **çözüm üzerinde kod analizini Çalıştır**.  
+##  <a name="BKMK_Analyze"></a> Çözümleme ve kod çözümleme uyarıları çözümleme
+ Belirli bir uyarıyı çözümlemek için Kod Analizi penceresi içinde uyarı başlığı seçin. Sorun hakkında ayrıntılı bilgileri görüntülemek için uyarı genişletir. Mümkün olduğunda, kod analizi, uyarıya yol açan satır numarasını ve analiz mantığı görüntüler.
 
-  Kod analizinin her zaman otomatik olarak çalıştırmak için bir proje oluşturun:  
+ ![Kod Analizi uyarısı Genişletilmiş](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
 
-1. Çözüm Gezgini'nde proje adını seçin ve ardından **özellikleri**.  
+ Bir uyarı genişlettiğinizde, Visual Studio Kod Düzenleyicisi'nde uyarıya yol açan kod satırlarını vurgulanır.
 
-2. Proje özellik sayfası seçin **Kod Analizi** seçip **C/c++ derlemede kod çözümlemeyi etkinleştir**.  
+ ![Vurgulanan kaynak kodu](../test/media/ca-cpp-sourceline.png "CA_CPP_SourceLine")
 
-   Çözüm derlenir ve Kod Analizi çalıştırır. Sonuçları Kod Analizi penceresinde görünür.  
-
-   ![Kod Analizi penceresi](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")  
-
-##  <a name="BKMK_Analyze"></a> Çözümleme ve kod çözümleme uyarıları çözümleme  
- Belirli bir uyarıyı çözümlemek için Kod Analizi penceresi içinde uyarı başlığı seçin. Sorun hakkında ayrıntılı bilgileri görüntülemek için uyarı genişletir. Mümkün olduğunda, kod analizi, uyarıya yol açan satır numarasını ve analiz mantığı görüntüler.  
-
- ![Kod Analizi uyarısı Genişletilmiş](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")  
-
- Bir uyarı genişlettiğinizde, Visual Studio Kod Düzenleyicisi'nde uyarıya yol açan kod satırlarını vurgulanır.  
-
- ![Vurgulanan kaynak kodu](../test/media/ca-cpp-sourceline.png "CA_CPP_SourceLine")  
-
- Sorun anladıktan sonra kodunuzu çözebilirsiniz. Ardından uyarı artık Kod Analizi penceresi açılır ve düzeltmenizi henüz yeni uyarılar ortaya emin olmak için kod analizini yeniden çalıştırın.  
+ Sorun anladıktan sonra kodunuzu çözebilirsiniz. Ardından uyarı artık Kod Analizi penceresi açılır ve düzeltmenizi henüz yeni uyarılar ortaya emin olmak için kod analizini yeniden çalıştırın.
 
 > [!TIP]
->  Kod analizinden kaynaklanan Kod Analizi penceresi yeniden çalıştırabilirsiniz. Seçin **Çözümle** düğmesine tıklayın ve ardından analiz kapsamını seçin. Seçilen proje veya çözümün tamamını üzerinde analiz yeniden çalıştırabilirsiniz.  
+>  Kod analizinden kaynaklanan Kod Analizi penceresi yeniden çalıştırabilirsiniz. Seçin **Çözümle** düğmesine tıklayın ve ardından analiz kapsamını seçin. Seçilen proje veya çözümün tamamını üzerinde analiz yeniden çalıştırabilirsiniz.
 
-##  <a name="BKMK_Suppress"></a> Kod Analizi uyarılarını gizleme  
- Kod Analizi uyarısı düzeltmemeyi ne zaman karar verebilirsiniz zamanlar vardır. Uyarı çözümleme sorunu kodunuzun tüm gerçek uygulamasında ortaya çıkacağını olasılık ile ilgili çok fazla değiştirilemeyen gerektirir karar verebilirsiniz. Veya uyarıda kullanılan analiz belirli bir içerik için uygun olduğunu düşündüğünüz. Artık Kod Analizi penceresinde görünecekleri bireysel uyarıları gösterilmemesini sağlayabilirsiniz.  
+##  <a name="BKMK_Suppress"></a> Kod Analizi uyarılarını gizleme
+ Kod Analizi uyarısı düzeltmemeyi ne zaman karar verebilirsiniz zamanlar vardır. Uyarı çözümleme sorunu kodunuzun tüm gerçek uygulamasında ortaya çıkacağını olasılık ile ilgili çok fazla değiştirilemeyen gerektirir karar verebilirsiniz. Veya uyarıda kullanılan analiz belirli bir içerik için uygun olduğunu düşündüğünüz. Artık Kod Analizi penceresinde görünecekleri bireysel uyarıları gösterilmemesini sağlayabilirsiniz.
 
- Bir uyarıyı bastırmak için:  
+ Bir uyarıyı bastırmak için:
 
-1. Ayrıntılı bilgi görüntülenmiyorsa, uyarı başlığı genişletin.  
+1. Ayrıntılı bilgi görüntülenmiyorsa, uyarı başlığı genişletin.
 
-2. Seçin **eylemleri** Uyarı alt kısmındaki bağlantı.  
+2. Seçin **eylemleri** Uyarı alt kısmındaki bağlantı.
 
-3. Tercih **ileti Gizle** seçip **içinde kaynak**.  
+3. Tercih **ileti Gizle** seçip **içinde kaynak**.
 
-   Bir ileti gizleme ekler `#pragma(warning:` *WarningId* `)` , kod satırının için uyarı bastırır.  
+   Bir ileti gizleme ekler `#pragma(warning:` *WarningId* `)` , kod satırının için uyarı bastırır.
 
-##  <a name="BKMK_Search"></a> Arama ve Kod Analizi sonuçlarını filtreleme  
- Uzun listesi uyarı iletilerini arayabilir ve çoklu proje çözümlerinde uyarıları filtreleyebilirsiniz.  
+##  <a name="BKMK_Search"></a> Arama ve Kod Analizi sonuçlarını filtreleme
+ Uzun listesi uyarı iletilerini arayabilir ve çoklu proje çözümlerinde uyarıları filtreleyebilirsiniz.
 
- ![Aramanıza ve filtrelemenize Kod Analizi penceresi](../test/media/ca-searchfilter.png "CA_SearchFilter")  
+ ![Aramanıza ve filtrelemenize Kod Analizi penceresi](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-##  <a name="Warnings"></a> C++ kod çözümleme uyarıları  
- Aşağıdaki uyarılar C++ kodu için Kod Analizi başlatır:  
+##  <a name="Warnings"></a> C++ kod çözümleme uyarıları
+ Aşağıdaki uyarılar C++ kodu için Kod Analizi başlatır:
 
 
 |                                      Kural                                      |                                                  Açıklama                                                  |
@@ -135,7 +117,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 |                       [C6504](../code-quality/c6504.md)                        |                                              İşaretçi olmayan değişkende null                                              |
 |                       [C6505](../code-quality/c6505.md)                        |                                               Void üzerinde MustCheck                                               |
 |                       [C6506](../code-quality/c6506.md)                        |                                      İşaretçi olmayan veya dizi değişkende arabellek boyutu                                      |
-| [C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                       Null uyumsuzluğu sıfır başvurma                                       |
+| [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       Null uyumsuzluğu sıfır başvurma                                       |
 |                       [C6508](../code-quality/c6508.md)                        |                                           Sabit üzerinde yazma erişimi                                            |
 |                       [C6509](../code-quality/c6509.md)                        |                                          Önkoşulda return kullanıldı                                          |
 |                       [C6510](../code-quality/c6510.md)                        |                                        İşaretçi olmayan değişkende null                                         |
@@ -146,12 +128,12 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 |                       [C6516](../code-quality/c6516.md)                        |                                          Öznitelikte özellik yok                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       Okunabilir olmayan arabellekte geçerli boyut                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     Yazılabilir olmayan arabellekte yazılabilir boyut                                      |
-| [C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)  |                  Geçersiz ek açıklama: 'NeedsRelease' özelliğinin değer olmalıdır Evet veya Hayır                   |
-| [C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Geçersiz boyut dize başvurma                                        |
+| [C6519](http://msdn.microsoft.com/2b6326b0-0539-4d26-8fb1-720114933232)  |                  Geçersiz ek açıklama: 'NeedsRelease' özelliğinin değer olmalıdır Evet veya Hayır                   |
+| [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Geçersiz boyut dize başvurma                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           Geçersiz boyut dize türü                                            |
-| [C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Geçersiz boyut dize parametresi                                         |
+| [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Geçersiz boyut dize parametresi                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Geçersiz boyutta dize ulaşılamayan konumu                                    |
-| [C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Geçersiz boyut dize arabellek türü                                        |
+| [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Geçersiz boyut dize arabellek türü                                        |
 |                       [C6527](../code-quality/c6527.md)                        |              Geçersiz ek açıklama: 'NeedsRelease' özelliği void türünün değerleri üzerinde kullanılamaz               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Biçim dizesi stili tanınmıyor                                        |
 |                       [C6540](../code-quality/c6540.md)                        | Bu işlev üzerindeki öznitelik ek açıklamaları kullanımı tüm, var olan __declspec ek açıklamalarını geçersiz kılar  |
@@ -212,7 +194,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 |                      [C28254](../code-quality/c28254.md)                       |                               ek açıklamalarda dynamic_cast <> (') desteklenmiyor                                |
 |                      [C28262](../code-quality/c28262.md)                       |                    İşlevi, ek açıklaması için Ek açıklamada bir söz dizimi hatası bulundu                     |
 |                      [C28263](../code-quality/c28263.md)                       |                 İç ek açıklaması için koşullu Ek açıklamada bir söz dizimi hatası bulundu                 |
-| [C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                    Sonuç listesi değerlerini sabit olması gerekir.                                     |
+| [C28264](http://msdn.microsoft.com/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                    Sonuç listesi değerlerini sabit olması gerekir.                                     |
 |                      [C28267](../code-quality/c28267.md)                       |                    Açıklamalarda bir söz dizimi hatası, ek açıklama işlevi bulunamadı.                    |
 |                      [C28272](../code-quality/c28272.md)                       |      İşlev için ek açıklama, incelerken parametresi işlev bildirimiyle tutarsız      |
 |                      [C28273](../code-quality/c28273.md)                       |                    İşlev için ipuçları işlev bildirimiyle tutarsız                     |
@@ -235,4 +217,3 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 |                      [C28305](../code-quality/c28305.md)                       |                                Bir belirteç ayrıştırılırken bir hata Keşfedildi.                                 |
 |                      [C28350](../code-quality/c28350.md)                       |                  Ek açıklama koşullu olarak uygun olmayan bir durumu betimliyor.                   |
 |                      [C28351](../code-quality/c28351.md)                       |         Ek açıklama bir dinamik değerin (değişkenin) koşulda burada kullanılamaz açıklar.          |
-

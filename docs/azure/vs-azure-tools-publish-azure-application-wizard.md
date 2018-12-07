@@ -1,22 +1,22 @@
 ---
-title: Visual Studio kullanarak Azure Uygulama Sihirbazı yayımlama | Microsoft Docs
+title: Azure bulut hizmeti yayımlama
 description: Visual Studio Azure uygulaması Yayımlama Sihirbazı çeşitli ayarlarını yapılandırmayı öğrenin
 author: ghogen
 manager: douge
 assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
 ms.prod: visual-studio-dev15
 ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 8c5bfeb1df918e3c36b3d74638941c4a09c46d47
-ms.sourcegitcommit: e03b7a4cab26fbc792f368e3c6b4ca4a03caa786
+ms.openlocfilehash: f25a4497fa79ba9d3bb09a7c7c666ea3e90e296a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52459714"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061681"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Visual Studio Azure Uygulamasını Yayımlama Sihirbazı'nı kullanma
 

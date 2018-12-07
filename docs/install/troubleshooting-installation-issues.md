@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 2017 yükleme sorunlarını giderme
+title: Yükleme sorunlarını giderme veya yükseltme sorunları
 description: Bazı durumlarda sorunlar. Visual Studio yüklemesi veya yükseltmesi başarısız olursa, bu sayfa yardımcı olabilir.
 ms.date: 08/01/2018
 ms.technology: vs-acquisition
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db85353830e1d86773a870a410797bfb5c60ccd7
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 33714c429a48df7318b5b3deb21c06f2c97fb34e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384129"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052296"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 yükleme sorunlarını giderme ve yükseltme sorunları
 

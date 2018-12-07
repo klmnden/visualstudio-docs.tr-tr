@@ -1,6 +1,6 @@
 ---
-title: Profil oluşturmaya genel bakış - Visual Studio | Microsoft Docs
-ms.custom: mvc
+title: Performansını ölçmek için araçlarına genel bakış | Microsoft Docs
+ms.custom: seodec18
 ms.date: 03/27/2018
 ms.technology: vs-ide-debug
 ms.topic: overview
@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c846b01634c1af9ba14e5c7ff460c279bf385a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 46b10f62f54306ddcbe8ab566f4e60d77526b0d2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844126"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059541"
 ---
-# <a name="overview-of-profiling-in-visual-studio"></a>Visual Studio profil oluşturma genel bakış
+# <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Visual Studio performansını ölçmek için araçlarına genel bakış
 
 Profil oluşturma ve tanılama araçları bellek ve CPU kullanımı ve diğer uygulama düzeyi sorunları tanılamanıza yardımcı olur. Bu araçları kullanarak uygulamanızı çalıştırma zamanı gibi bir süre boyunca (örneğin, değişken değerleri, işlev çağrıları ve olayları) veri toplar. Kodunuzun yürütülmesi sırasında farklı noktalarda, uygulamanızın durumunu görüntülemek ya da uygulama performansınızı son İnceleme analizini gerçekleştirin.
 

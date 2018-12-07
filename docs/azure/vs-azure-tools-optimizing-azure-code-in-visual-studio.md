@@ -1,22 +1,22 @@
 ---
-title: Visual Studio'da Azure kodunuzu iyileştirme | Microsoft Docs
+title: Azure kodunuzu iyileştirme
 description: Kodunuzu daha sağlam ve çökmelerin hale iyileştirme araçları Visual Studio'da Azure nasıl kod hakkında yardımcı olduğunu öğrenin.
 author: ghogen
 manager: douge
 ms.assetid: ed48ee06-e2d2-4322-af22-07200fb16987
 ms.topic: conceptual
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.prod: visual-studio-dev15
 ms.technology: vs-azure
-ms.openlocfilehash: b87ffdb32c1b6934a32dbdffdf6c8702e79fc271
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 2ce6ca1ed33d1d521a0273816a6055d30bf13098
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000665"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057687"
 ---
 # <a name="optimizing-your-azure-code"></a>Azure Kodunuzu İyileştirme
 Microsoft Azure kullanan uygulamalar programlama, uygulama ölçeklenebilirlik, davranış ve bulut ortamlarında performans sorunlarını önlemek için izlemeniz gereken kodlama bazı yöntemler vardır. Microsoft tanır ve birkaç bu sık karşılaşılan sorunları tanımlar ve bunları çözmenize yardımcı olan bir Azure Kod Analizi aracı sağlar. NuGet aracılığıyla Visual Studio araç indirebilirsiniz.

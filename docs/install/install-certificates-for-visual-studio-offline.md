@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'yu çevrimdışı yükleme için gerekli sertifikaları yükleme | Microsoft Docs
+title: Çevrimdışı yükleme için gerekli sertifikaları yükleme
 description: Visual Studio'yu çevrimdışı yükleme için sertifikaları yüklemeyi öğrenin.
 ms.date: 08/30/2017
 ms.technology: vs-acquisition
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78e37097aa4181bec86ca901ab29dffa52b4d010
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9ddb34dfcb02dc38c1e9485929eecff0bc250aa7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886298"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049850"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio'yu çevrimdışı yükleme için gerekli sertifikaları yükleme
 

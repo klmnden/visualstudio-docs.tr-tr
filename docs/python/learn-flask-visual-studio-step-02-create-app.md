@@ -1,5 +1,6 @@
 ---
-title: "Öğretici: Visual Studio'da 2. adım Flask öğrenin"
+title: Öğrenin Flask Öğreticisi 2. adımda Visual Studio, görünümleri ve şablonları
+titleSuffix: ''
 description: Visual Studio projeleri, özellikle bir uygulama oluşturma ve görünümleri ve şablonlar kullanma adımları bağlamında Flask temel bilgileri bir kılavuz.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 92b34ed0abbef18473ab9ccf6b85c236111822f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbdf9232bdff56fa2d244f8baeed2d070dcb37a9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812627"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052951"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Adım 2: görünümler ve sayfa şablonları ile bir Flask uygulaması oluşturma
 

@@ -1,6 +1,6 @@
 ---
-title: "Nasıl yapılır: Visual Studio'nun dosyaları nereye kopyalayacağını belirtme | Microsoft Docs"
-ms.custom: ''
+title: Dosyaları kopyalamak istediğiniz yeri belirtin | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cc4e6b3ad623497f50f60b5eb3c0d7c8b00b1cd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b4154f7b3a148968347b39911b9a7e9c28830eac
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869593"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068321"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Nasıl yapılır: Visual Studio'nun dosyaları nereye kopyalayacağını belirtme
 ClickOnce kullanarak bir uygulamayı yayımladığınızda `Publish Location` özelliği burada bildirimini ve uygulama dosyalarını isimlerine konumunu belirtir. Bu, bir dosya yolu veya bir FTP sunucusuna bir yolu olabilir.  

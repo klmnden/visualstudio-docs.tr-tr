@@ -1,15 +1,16 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 35781fc7c1e71f71e9c3b471930a31bd9e6078e7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 3aa9639c75d791d21803f803536042d0c4cdc3b2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673561"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062447"
 documentType: LandingData
 title: Visual Studio'da bilişsel hizmetler
 metadata:
-  title: Visual Studio'da bilişsel hizmetler | Microsoft Docs
+  title: Bilişsel hizmetler | Microsoft Docs
   meta.description: Tutorials and conceptual articles about connecting apps and services to cognitive services in Azure.
+  ms.custom: seohack18
   author: ghogen
   manager: douge
   ms.prod: visual-studio-dev15
@@ -27,7 +28,7 @@ sections:
     items:
     - image:
         src: https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg
-      text: Metin analizi
+      text: Metin Analizi
       href: /azure/cognitive-services/text-analytics/vs-text-connected-service
     - image:
         src: https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg
@@ -39,5 +40,5 @@ sections:
       href: /azure/cognitive-services/face/vs-face-connected-service
     - image:
         src: https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg
-      text: Görüntü işleme
+      text: Görüntü İşleme
       href: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service

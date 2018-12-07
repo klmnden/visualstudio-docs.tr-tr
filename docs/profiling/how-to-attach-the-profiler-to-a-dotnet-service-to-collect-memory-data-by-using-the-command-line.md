@@ -1,6 +1,6 @@
 ---
-title: 'Nasıl yapılır: komut satırını kullanarak bellek verileri toplamak için bir .NET hizmetine Profiler ekleme | Microsoft Docs'
-ms.custom: ''
+title: Bellek verileri toplamak için bir .NET hizmetine profil oluşturucu ekleme
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 951ae4790b6c1d3a4936a5badf141aec9485489c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bd51a323ca369b30dcba32d3f480756d3e95f1f6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831061"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052734"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Nasıl yapılır: komut satırını kullanarak bellek verileri toplamak için bir .NET hizmetine profil oluşturucu ekleme
 Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] iliştirme için profil oluşturma araçları komut satırı araçlarını bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ve bellek verileri toplamak. Bellek ayırmalarının sayısı ve boyutu hakkında veri toplayabilir ve ayrıca, bellek nesnelerinin yaşam süresi hakkında veri toplayabilirsiniz.  

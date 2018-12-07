@@ -1,6 +1,6 @@
 ---
-title: Visual Studio'da bir UWP uygulaması için hata ayıklama oturumu başlatma | Microsoft Docs
-ms.custom: ''
+title: Bir UWP uygulaması için hata ayıklama oturumu başlatın | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b1cc89673558fdaa47fa48756902f44738edf734
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 181dec6bfa6ebe96528c39b74d68375b8eb7fcb8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305305"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062415"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>UWP uygulaması için hata ayıklama oturumu başlatma
   
@@ -74,7 +74,7 @@ Visual Studio araç çubuğundaki hata ayıklama hedefi ayarlayabilirsiniz veya 
 |**Yerel Makine**|Uygulama geçerli oturumdaki yerel makinenizde hata ayıklayın.|  
 |**Simülatör**|UWP uygulamaları için Visual Studio simulator uygulamasında hata ayıklayın. Simülatör ve yerel makinede yok cihaz döndürme, hareketler dokunma gibi cihaz işlevleri, benzetim masaüstü bir penceredir. Simülatör seçeneği kullanılabilir ancak uygulamanızın **hedef Platform Min. Sürüm** yerel makinede işletim sistemi küçük veya ona eşit. Daha fazla bilgi için [simulator'da çalıştırmak UWP uygulamaları](../debugger/run-windows-store-apps-in-the-simulator.md).|  
 |**Uzak makine**|Yerel makineye bir ağ veya Ethernet kablosu üzerinden bağlı bir cihazda uygulama hatalarını ayıklayın. Visual Studio için Uzak Araçlar, yüklü ve uzak cihaz üzerinde çalışıyor olması gerekir. Daha fazla bilgi için [uzak bir makinede çalıştırmak UWP uygulamaları](../debugger/run-windows-store-apps-on-a-remote-machine.md).|  
-|**Cihaz**|USB bağlantılı bir cihazda uygulama hatalarını ayıklayın. Cihazın Geliştirici kilidinin ve kilidi ekranında olması gerekir.|  
+|**cihaz**|USB bağlantılı bir cihazda uygulama hatalarını ayıklayın. Cihazın Geliştirici kilidinin ve kilidi ekranında olması gerekir.|  
 |**Mobile öykünücüsü**|Öykünücü adında belirtilen öykünücünün önyükleme, uygulamayı dağıtma ve hata ayıklamayı Başlat. Öykünücüler, yalnızca Hyper-V etkin makineler üzerinde kullanılabilir.|  
 
 ##  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> Proje özelliği sayfasında hata ayıklamayı Yapılandır 

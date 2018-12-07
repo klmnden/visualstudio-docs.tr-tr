@@ -1,6 +1,6 @@
 ---
-title: "İzlenecek yol: Görselleştiriciyi C# ' de yazma | Microsoft Docs"
-ms.custom: ''
+title: Görselleştirici yazma C# | Microsoft Docs
+ms.custom: seodec18
 ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6de9ed60fd4c4dc0290fc1f4b5a73415bea79dec
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 872f1a899bf9731dd86d5d9c14e5639c2a4630aa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388458"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059671"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>İzlenecek Yol: C# ile Görselleştirici Yazma #
 Bu kılavuz, C# kullanarak basit Görselleştirici yazma işlemi gösterilmektedir. Bu izlenecek yolda oluşturacağınız Görselleştirici, bir Windows forms ileti kutusunu kullanarak bir dizenin içeriklerini görüntüler. Bu basit dize Görselleştirici kendisi özellikle kullanışlı değildir, ancak diğer veri türleri için daha faydalı görselleştiriciler oluşturmak için izlemeniz gereken temel adımlarda gösterilir.

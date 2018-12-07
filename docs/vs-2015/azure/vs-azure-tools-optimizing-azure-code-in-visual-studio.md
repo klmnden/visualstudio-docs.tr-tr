@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da Azure kodunuzu iyileştirme | Microsoft Docs
+title: Azure kodunuzu iyileştirme
 description: Kodunuzu daha sağlam ve çökmelerin hale iyileştirme araçları Visual Studio'da Azure nasıl kod hakkında yardımcı olduğunu öğrenin.
 author: ghogen
 manager: douge
@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: ghogen
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: d1d0f5a69015a6c6596e1a2b7ee85b12f4116d6b
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 586102e6080b115b5e4908c8741e9eaa2e702901
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003493"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068295"
 ---
 # <a name="optimizing-your-azure-code"></a>Azure Kodunuzu İyileştirme
 Microsoft Azure kullanan uygulamalar programlama, uygulama ölçeklenebilirlik, davranış ve bulut ortamlarında performans sorunlarını önlemek için izlemeniz gereken kodlama bazı yöntemler vardır. Microsoft tanır ve birkaç bu sık karşılaşılan sorunları tanımlar ve bunları çözmenize yardımcı olan bir Azure Kod Analizi aracı sağlar. NuGet aracılığıyla Visual Studio araç indirebilirsiniz.
@@ -158,22 +158,22 @@ void ReceiveMessages()
 Kullanımının bir örneği verilmiştir **alma** varsayılan sunucuyla bekleme süresi.
 
 ```
-string connectionString =  
+string connectionString =
 CloudConfigurationManager.GetSetting("Microsoft.ServiceBus.ConnectionString");
 
-QueueClient Client =  
+QueueClient Client =
     QueueClient.CreateFromConnectionString(connectionString, "TestQueue");
 
-while (true)  
-{   
+while (true)
+{
    BrokeredMessage message = Client.Receive();
    if (message != null)
    {
-      try  
+      try
       {
          Console.WriteLine("Body: " + message.GetBody<string>());
          Console.WriteLine("MessageID: " + message.MessageId);
-         Console.WriteLine("Test Property: " +  
+         Console.WriteLine("Test Property: " +
             message.Properties["TestProperty"]);
 
          // Remove message from queue
@@ -191,17 +191,17 @@ while (true)
 Kullanımının bir örneği verilmiştir **alma** varsayılan olmayan sunucusuyla bekleme süresi.
 
 ```
-while (true)  
-{   
+while (true)
+{
    BrokeredMessage message = Client.Receive(new TimeSpan(0,1,0));
 
    if (message != null)
    {
-      try  
+      try
       {
          Console.WriteLine("Body: " + message.GetBody<string>());
          Console.WriteLine("MessageID: " + message.MessageId);
-         Console.WriteLine("Test Property: " +  
+         Console.WriteLine("Test Property: " +
             message.Properties["TestProperty"]);
 
          // Remove message from queue
@@ -278,7 +278,7 @@ Paylaşılan erişim ilkesinin başlangıç saatini ayarlar deyimi kaldırın. A
 Aşağıdaki kod parçacığını bu sorunla ilgili kod düzeltme gösterir.
 
 ```
-// The shared access policy provides  
+// The shared access policy provides
 // read/write access to the container for 10 hours.
 blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy()
 {
@@ -310,7 +310,7 @@ Güvenlik yönetimi hakkında daha fazla bilgi için bkz. tasarım deseni [Vale 
 Bir paylaşılan erişim ilkesi başlangıç saati belirtmeden bir örnek verilmiştir.
 
 ```
-// The shared access policy provides  
+// The shared access policy provides
 // read/write access to the container for 10 hours.
 blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy()
 {
@@ -325,13 +325,13 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 Beş dakikadan uzun bir ilke sona erme süresi ile bir paylaşılan erişim ilkesi başlangıç saati belirten bir örnek verilmiştir.
 
 ```
-// The shared access policy provides  
+// The shared access policy provides
 // read/write access to the container for 10 hours.
 blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy()
 {
    // To ensure SAS is valid immediately, don’t set start time.
    // This way, you can avoid failures caused by small clock differences.
-  SharedAccessStartTime = new DateTime(2014,1,20),   
+  SharedAccessStartTime = new DateTime(2014,1,20),
  SharedAccessExpiryTime = new DateTime(2014, 1, 21),
    Permissions = SharedAccessBlobPermissions.Write |
       SharedAccessBlobPermissions.Read
@@ -374,7 +374,7 @@ Yapılandırma ayarı bir App.config veya Web.config dosyasında depolamak nası
     <add key="ClientValidationEnabled" value="true" />
     <add key="UnobtrusiveJavaScriptEnabled" value="true" />
     <add key="mySettings" value="[put_your_setting_here]"/>
-  </appSettings>  
+  </appSettings>
 ```
 
 ## <a name="avoid-using-hard-coded-connection-strings"></a>Sabit kodlanmış bağlantı dizeleri kullanmaktan kaçının
@@ -443,7 +443,7 @@ Aşağıdaki örnek MVC denetleyici sınıfı DBContext nesnesinin nasıl kullan
 ```
 public class BlogsController : Controller
     {
-        //BloggingContext is a subclass to DbContext        
+        //BloggingContext is a subclass to DbContext
         private BloggingContext db = new BloggingContext();
         // GET: Blogs
         public ActionResult Index()

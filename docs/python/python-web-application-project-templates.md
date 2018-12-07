@@ -1,6 +1,6 @@
 ---
 title: Python Web uygulaması şablonları
-description: Hata ayıklama yapılandırmaları ve Azure App Service'te yayımlama da dahil olmak üzere Bottle, Flask ve Django çerçeveleri kullanarak Python ile yazılmış web uygulamaları için Visual Studio şablonları genel bakış.
+description: Visual Studio, Bottle, Flask ve Django çerçeveleri kullanarak Python web uygulamaları için şablonlar sağlar. hata ayıklama yapılandırmaları ve Azure App Service'te yayımlama desteği içerir.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3245cd647f5da391bb0e36afc65d867137618808
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 06513030b34f7ab3217210a931722d72a6368ab3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349343"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068334"
 ---
 # <a name="python-web-application-project-templates"></a>Python web uygulaması proje şablonları
 
@@ -34,7 +35,7 @@ Bir şablon kullanarak bir proje oluşturma **dosya** > **yeni** > **proje**. We
 
 Genel **Web projesi** şablon, daha önce bahsedilen yalnızca boş bir Visual Studio projesinin hiçbir kod ve Python projesi olması dışında hiçbir varsayım sağlar. İlgili Ayrıntılar için **Azure bulut hizmeti** şablonu görmek [Python için Azure bulut hizmeti projeleri](python-azure-cloud-service-project-template.md).
 
-Tüm şablonları, Bottle, Flask ve Django web çerçeveleri temel alır ve aşağıdaki bölümlerde açıklandığı gibi üç genel gruplara ayrılır. Bu şablonlardan birini tarafından oluşturulan uygulamaları çalıştırmak ve uygulamayı yerel olarak hata ayıklama için yeterli kodu içerir. Her biri de gerekli sağlar [WSGI uygulama nesnesi](http://www.python.org/dev/peps/pep-3333/) (python.org) üretim web sunucularına ile kullanmak için.
+Tüm şablonları, Bottle, Flask ve Django web çerçeveleri temel alır ve aşağıdaki bölümlerde açıklandığı gibi üç genel gruplara ayrılır. Bu şablonlardan birini tarafından oluşturulan uygulamaları çalıştırmak ve uygulamayı yerel olarak hata ayıklama için yeterli kodu içerir. Her biri de gerekli sağlar [WSGI uygulama nesnesi](https://www.python.org/dev/peps/pep-3333/) (python.org) üretim web sunucularına ile kullanmak için.
 
 ### <a name="blank-group"></a>Boş Grup
 

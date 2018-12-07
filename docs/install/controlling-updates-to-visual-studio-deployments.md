@@ -1,5 +1,5 @@
 ---
-title: Visual Studio dağıtımlarına yönelik güncelleştirmeleri denetleme
+title: Dağıtımları yönelik güncelleştirmeleri denetleme
 description: Burada bir ağdan yüklediğinizde Visual Studio güncelleştirmesi görünümünü değiştirme konusunda bilgi edinin.
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cfc35698ce87027192031ef453a4c42ecc3c199
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c5210669467fd89c6e5a263d2cd264ea0695be6a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830437"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049035"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Ağ tabanlı Visual Studio dağıtımlarına yönelik güncelleştirmeleri denetleme
 

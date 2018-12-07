@@ -1,22 +1,23 @@
 ---
 title: Hızlı Başlangıç - şablon kullanarak bir Python projesi oluşturma
 description: Bu hızlı başlangıçta basit bir Flask uygulaması için yerleşik bir şablon kullanarak Python için bir Visual Studio projesi oluşturun.
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b9f361ba73f8fd1d3963ca39a90ac01ba9effe6f
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: c36fc6e10b196c3da4ba58ff047adab62345fa6f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43996008"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066031"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Hızlı Başlangıç: Visual Studio'da bir şablondan bir Python projesi oluşturma
 

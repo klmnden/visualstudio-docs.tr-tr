@@ -1,22 +1,22 @@
 ---
-title: Bir Azure bulut hizmeti veya sanal makinesinde Visual Studio'da hata ayıklama | Microsoft Docs
+title: Bir Azure bulut hizmeti ya da sanal makineyi hata ayıklama
 description: Bir bulut hizmeti veya sanal makine Visual Studio'da hata ayıklama
 author: mikejo5000
 manager: douge
 ms.assetid: 945e06e0-2100-41af-b218-72347367ddab
 ms.topic: conceptual
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studo-dev15
 ms.technology: vs-ide-debug
-ms.openlocfilehash: db13eb0d43fc39f6a8adf7672cf67ef1bf4525d8
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 78be27daf7dfe77d88508dec929e896e884f81b2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000556"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063791"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Bir Azure bulut hizmeti veya sanal makinesinde Visual Studio'da hata ayıklama
 
@@ -104,7 +104,7 @@ Azure SDK 2.3 ' uzaktan hata ayıklama aşağıdaki sınırlamalara sahiptir:
 Visual Studio'da Sunucu Gezgini kullanarak Azure sanal makinelerinde çalışan programlar ayıklayabilirsiniz. Azure sanal makinesinde uzaktan hata ayıklama etkinleştirdiğinizde, Azure sanal makinede uzaktan hata ayıklama uzantısı yükler. Ardından, sanal makine üzerindeki işlemleri ekleyin ve normalde yaptığınız gibi hata ayıklama.
 
 > [!NOTE]
-> Azure resource manager yığınından oluşturulan sanal makineler, Visual Studio 2015'te Cloud Explorer'ı kullanarak uzaktan ayıklanabilir. Daha fazla bilgi için [bulut Gezgini ile Azure kaynaklarını yönetme](http://go.microsoft.com/fwlink/?LinkId=623031).
+> Azure resource manager yığınından oluşturulan sanal makineler, Visual Studio 2015'te Cloud Explorer'ı kullanarak uzaktan ayıklanabilir. Daha fazla bilgi için [bulut Gezgini ile Azure kaynaklarını yönetme](vs-azure-tools-resources-managing-with-cloud-explorer.md).
 
 ### <a name="to-debug-an-azure-virtual-machine"></a>Bir Azure sanal makinesi hata ayıklamak için
 

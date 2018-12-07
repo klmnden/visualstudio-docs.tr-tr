@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: bace670073072e5330af913b897ae477fb0ce528
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 5baac96930056749d1bfe873c97d49400534d754
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000180"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065486"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Sunucu Gezgini'ni kullanarak depolama kaynaklarına göz atma ve bu kaynakları yönetme
 
@@ -295,4 +295,4 @@ Sunucu Gezgini'nden bir depolama hesabı silerseniz, depolama hesabınıza veya 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Azure Depolama hizmetlerinin nasıl kullanılacağı hakkında daha fazla bilgi için bkz: [Azure depolama hizmetlerine erişilmesi](https://msdn.microsoft.com/library/azure/ee405490.aspx).
+Azure Depolama hizmetlerinin nasıl kullanılacağı hakkında daha fazla bilgi için bkz: [Azure depolama hizmetlerine erişilmesi](/azure/storage/common/storage-introduction).

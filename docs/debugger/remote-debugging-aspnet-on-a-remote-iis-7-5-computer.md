@@ -1,6 +1,8 @@
 ---
-title: Uzaktan hata ayıklama Uzak IIS bilgisayarında ASP.NET | Microsoft Docs
-ms.custom: remotedebugging
+title: IIS bilgisayarında ASP.NET hatalarını uzaktan ayıklama
+ms.custom:
+- remotedebugging
+- seodec18
 ms.date: 05/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 1a13488f632e3cf1f244449b2a7a4dbfd7869428
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 336f34c1229e07eb3734f9d278070e5994957d16
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826517"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065566"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Bir uzak IIS bilgisayarında ASP.NET hatalarını uzaktan ayıklama
 IIS'ye dağıtılan bir ASP.NET uygulamasında hata ayıklamak için yükleme ve uzak Araçlar, uygulamanızın dağıtıldığı bilgisayarda çalıştırın ve ardından Visual Studio'dan çalışan uygulamanıza ekleyin.

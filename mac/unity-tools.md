@@ -1,16 +1,16 @@
 ---
 title: Unity'ye yönelik Mac için Visual Studio Araçları
 description: Unity uzantısı için Visual Studio Araçları ile tanışın
-author: johmil
-ms.author: therealjohn
+author: therealjohn
+ms.author: johmil
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 570755d9a6ea04730661b746dc4d69813b32c2a7
-ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
+ms.openlocfilehash: f275288ea54b4b24996825aeb14c7a55ee3a3018
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52953947"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027360"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Unity'ye yönelik Mac için Visual Studio Araçları
 

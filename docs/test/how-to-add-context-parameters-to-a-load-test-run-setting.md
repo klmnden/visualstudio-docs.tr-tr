@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Yük testi çalışma ayarı için bağlam parametreleri ekleme
+title: Bir yük testi çalışma ayarına bağlam parametreleri ekleme
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c351079f0a29176ded3172d6e0e26893a1163354
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: cefa93a6f65b4b84b4ece5a4eb428d909dd0596d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894111"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048502"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Nasıl yapılır: yük testi çalışma ayarı için bağlam parametreleri ekleme
 

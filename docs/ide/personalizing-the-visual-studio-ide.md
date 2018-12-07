@@ -1,5 +1,5 @@
 ---
-title: Visual Studio IDE'yi özelleştirme
+title: IDE’yi Özelleştirme
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f52061acff03a1339a9c7b7f3f8ff4901ec6a5
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 8710926591c565528bbf65ba1af79a670ad76ee7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388731"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057320"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Visual Studio IDE'yi kişiselleştirme
 

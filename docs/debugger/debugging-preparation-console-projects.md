@@ -1,6 +1,6 @@
 ---
-title: 'Hata ayıklama hazırlığı: Konsol projeleri | Microsoft Docs'
-ms.custom: ''
+title: Konsol projeleri hata ayıklamak hazırlama | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29c54c4bfdeb0341270d78ce677b6085d6f159a2
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 55c588bfffbf11d4abd26fbae1490cf0039373c3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305188"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057089"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Hata ayıklama hazırlığı: Konsol projeleri (C#, C++, Visual Basic F#)
 
@@ -36,7 +36,7 @@ Bir konsol projesinde hata ayıklamaya hazırlanıyor, bazı ek hususlar ile bir
   
 - C++ konsol uygulaması (Win32)  
   
-  Konsol uygulamanız için komut satırı bağımsız değişkenleri belirtmeniz gerekebilir. Daha fazla bilgi için [C++ hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-a-cpp-debug-configuration.md), [Visual Basic hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), veya [proje ayarları C# hata ayıklama Yapılandırmaları](../debugger/project-settings-for-csharp-debug-configurations.md).  
+  Konsol uygulamanız için komut satırı bağımsız değişkenleri belirtmeniz gerekebilir. Daha fazla bilgi için [C++ hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-a-cpp-debug-configuration.md), [Visual Basic hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), veya [C# hata ayıklama yapılandırmaları için proje ayarları ](../debugger/project-settings-for-csharp-debug-configurations.md).  
   
   Bu bağımsız değişkenler tüm proje özellikleri gibi Visual Studio oturumları arasında hata ayıklama oturumları arasında kalıcı hale getirin. Daha önce hataları ayıklanmakta bir konsol uygulaması ise, bu nedenle, girdiğiniz önceki oturumlarını bağımsız değişkenleri olabilir unutmayın  **\<Proje > özellik sayfaları** iletişim kutusu.  
   

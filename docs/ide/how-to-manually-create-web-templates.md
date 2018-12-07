@@ -1,5 +1,5 @@
 ---
-title: Visual Studio için Web şablonları oluşturma
+title: Web şablonları oluşturma
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4ec63f231698bfa4c5a1360d21908aa2a4e2649e
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: cff4fda5113cdbacba2d9389e360707f49ba595b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607464"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063674"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Nasıl yapılır: web şablonlarını elle oluşturma
 

@@ -29,12 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 43215d1827d8115e694134e75d03add48f16eb81
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 917a83a434dc27074b0d786f64fcdbdc5fd294d3
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859233"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027399"
 ---
 # <a name="excel-solutions"></a>Excel çözümleri
   Visual Studio, Microsoft Office Excel için belge düzeyi özelleştirmeleri ve VSTO eklentileri oluşturmak için kullanabileceğiniz proje şablonları sağlar. Excel otomatikleştirin, Excel özelliklerini genişletmek ve Excel kullanıcı arabirimini (UI) özelleştirmek için bu çözümleri kullanabilirsiniz. Belge düzeyi özelleştirmeleri ve VSTO eklentileri arasındaki farklar hakkında daha fazla bilgi için bkz. [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -76,9 +76,7 @@ ms.locfileid: "49859233"
 
  Excel için VSTO eklentisi projesi oluşturmak için Excel çalışma kitabı veya Excel Şablonu proje şablonlarını kullanma **yeni proje** Visual Studio'nun iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
 
- VSTO eklentileri nasıl çalıştığı hakkında genel bilgi için bkz. [mimarisi, VSTO eklentileri](../vsto/architecture-of-vsto-add-ins.md).  
-
- ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [nasıl bir Excel eklentisi ı: otomatikleştirmek PowerPoint musunuz?](http://go.microsoft.com/fwlink/?LinkID=130300).  
+ VSTO eklentileri nasıl çalıştığı hakkında genel bilgi için bkz. [mimarisi, VSTO eklentileri](../vsto/architecture-of-vsto-add-ins.md).
 
 ### <a name="excel-add-in-programming-model"></a>Excel eklenti programlama modeli  
  Bir Excel VSTO eklenti projesi oluşturduğunuzda, Visual Studio isimli bir sınıf oluşturur. `ThisAddIn`, çözümünüzün temeli. Bu sınıf kodunuzu yazmanız için bir başlangıç noktası sağlar ve ayrıca bir Excel için VSTO eklenti nesne modeli sunar.  

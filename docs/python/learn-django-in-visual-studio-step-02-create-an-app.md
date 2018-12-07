@@ -1,5 +1,6 @@
 ---
-title: Öğretici - Django Visual Studio'da 2. adım bilgi edinin
+title: Django Öğreticisi 2. adımda Visual Studio, görünümleri ve şablonların öğrenin
+titleSuffix: ''
 description: Visual Studio projeleri, özellikle bir uygulama oluşturma ve görünümleri ve şablonlar kullanma adımları bağlamında Django temel bilgileri bir kılavuz.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 404df36ab28e422e081df7d7cdf4831f8c2f64a0
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: dade4ee20aec654a32fac6904cca121c2ea726e6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001288"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058551"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>2. adım: görünümleri ve şablonların bir Django uygulaması oluşturma
 

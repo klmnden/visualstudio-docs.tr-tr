@@ -1,5 +1,5 @@
 ---
-title: Visual Studio ile bir Azure bulut hizmeti projesi yapılandırma | Microsoft Docs
+title: Azure bulut hizmeti projesi yapılandırma
 description: Bu proje için gereksinimlerinize bağlı olarak Visual Studio'da bir Azure bulut hizmeti projesi yapılandırmayı öğrenin.
 author: ghogen
 manager: douge
@@ -11,25 +11,25 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/06/2017
 ms.author: ghogen
-ms.openlocfilehash: 7417bc117de7dc472f413dd9145944cad2d48bb4
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: e117eb436ff1cf37740e97ee1889bc1bf063db94
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003706"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051380"
 ---
 # <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>Visual Studio ile Azure bulut hizmeti projesini yapılandırma
 Bu proje için gereksinimlerinize bağlı olarak, bir Azure bulut hizmeti projesi yapılandırabilirsiniz. Aşağıdaki kategorilerde projesi için özellikleri ayarlayabilirsiniz:
 
 - **Azure'a bir bulut hizmeti yayım** -Azure'a dağıtılan var olan bir bulut hizmeti yanlışlıkla olarak silinmediğinden emin olmak için bir özelliği ayarlayabilirsiniz.
 - **Çalıştırabilir veya yerel bilgisayarda bir bulut hizmetinde hata ayıklama** -Azure depolama öykünücüsü'nü başlatmak isteyip istemediğinizi belirtin ve kullanmak için bir hizmet yapılandırması seçebilirsiniz.
-- **Bir bulut hizmeti paketi oluşturulduğunda doğrulama** -bulut hizmeti paketi herhangi bir sorun olmadan dağıtır sağlayabilirsiniz. böylece, tüm uyarıları hata olarak değerlendir karar verebilirsiniz. 
+- **Bir bulut hizmeti paketi oluşturulduğunda doğrulama** -bulut hizmeti paketi herhangi bir sorun olmadan dağıtır sağlayabilirsiniz. böylece, tüm uyarıları hata olarak değerlendir karar verebilirsiniz.
 
 ## <a name="steps-to-configure-an-azure-cloud-service-project"></a>Bir Azure bulut hizmeti projesi yapılandırma adımları
 1. Visual Studio'da bir bulut hizmeti projesini oluşturun veya açın
 
 1. İçinde **Çözüm Gezgini**, projeye sağ tıklayın ve bağlam menüsünden seçin **özellikleri**.
-   
+
 1. Proje özellikleri sayfasında seçin **geliştirme** sekmesi.
 
     ![Proje Özellikleri menüsü](./media/vs-azure-tools-configuring-an-azure-project/solution-explorer-project-properties-menu.png)
@@ -48,4 +48,3 @@ Bu proje için gereksinimlerinize bağlı olarak, bir Azure bulut hizmeti projes
 
 ## <a name="next-steps"></a>Sonraki adımlar
 - [Birden çok hizmet yapılandırması'nı kullanarak bir Azure projesi yapılandırın](vs-azure-tools-multiple-services-project-configurations.md)
-

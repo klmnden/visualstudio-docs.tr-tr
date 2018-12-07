@@ -12,5 +12,3 @@
 ## [Nasıl Yapılır. Visual Studio Deneme Sürümünden Yükseltme](how-to-upgrade-from-a-trial-edition-of-visual-studio.md)
 ## [Nasıl Yapılır: Visual Studio Ürün Anahtarını Bulma](how-to-locate-the-visual-studio-product-key.md)
 ## [Visual Studio Yaşam Döngüsü İlkesine Yönelik Özel Durumlar](visual-studio-lifecycle-policy-exceptions.md)
-# [Visual Studio 2017'yi Yükleme](install-visual-studio-15-preview-5.md)
-## [Visual Studio 2017'yi Değiştirme](modify-visual-studio-15-preview-5.md)

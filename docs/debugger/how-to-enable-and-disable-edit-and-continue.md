@@ -1,6 +1,6 @@
 ---
-title: 'Nasıl yapılır: Düzenle ve devam et (C#, VB, C++) devre dışı bırakma ve etkinleştirme | Microsoft Docs'
-ms.custom: ''
+title: "Nasıl yapılır: Düzenle ve Devam Et'i devre dışı bırakma ve etkinleştirme | Microsoft Docs"
+ms.custom: seodec18
 ms.date: 10/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -27,12 +27,12 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: f0bf354f64be9c03a64beadcffdd7ff1138218df
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
+ms.openlocfilehash: 0b5fbc7ee0f2d85c72ccda75bc2e8531419d52e3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382758"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051393"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Nasıl yapılır: Düzenle ve devam et (C#, VB, C++) devre dışı bırakma ve etkinleştirme
 

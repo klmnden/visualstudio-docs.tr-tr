@@ -1,6 +1,6 @@
 ---
-title: JavaScript Konsolu komutları Visual Studio'da | Microsoft Docs
-ms.custom: ''
+title: JavaScript Konsolu komutları | Microsoft Docs
+ms.custom: seodec18
 ms.date: 07/17/2017
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: f10439e63b95fc2e78980ceb585e32dbbabd44d9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c546e3f1938a7dddc3dd48fa9d941b9f7d2e7048
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823755"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052228"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio'da JavaScript Konsolu komutları
   

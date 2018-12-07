@@ -1,6 +1,6 @@
 ---
-title: Kendi Programımı Adımlarken Odağı Nasıl Koruyabilirim? | Microsoft Docs
-ms.custom: ''
+title: Odağı Uygulamam Adımlama olduğunda tutma | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 509e169c7ede0d96882fa2c97eaf7b2c6eb78afb
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d140617aed2e6d5310587ec9388b107404398a95
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280915"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064517"
 ---
-# <a name="how-can-i-keep-focus-when-stepping-through-my-program"></a>Kendi Programımı Adımlarken Odağı Nasıl Koruyabilirim?
+# <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>Uygulamam Adımlama olduğunda odak nasıl engelleyebilirim?
 ## <a name="description"></a>Açıklama  
  Kendi programımı penceresi etkinleştirme sorunlu. Hata ayıklayıcısı ile adımlarken odağı programımı kaybeden tutar çünkü sorunu yeniden oluşturmak için benim özelliği sayesinde karışıklığa neden olabilir. Bunu önlemek için herhangi bir yolu var mı?  
   

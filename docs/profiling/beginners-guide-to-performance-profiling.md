@@ -1,7 +1,7 @@
 ---
 title: Uygulamalarınızda ölçü CPU kullanımı
 description: CPU hata ayıklayıcısıyla tümleştirilmiş tanılama araçları kullanarak uygulamanızdaki performans sorunlarını analiz edin.
-ms.custom: mvc
+ms.custom: seodec18
 ms.date: 02/27/2017
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 966697652e969c3d6de9f3c17f52f88e84c89bb8
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 46837bb68854f0f5dbb5c799d405c37431f6c379
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220683"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065768"
 ---
-# <a name="profile-application-performance-in-visual-studio"></a>Visual Studio’da uygulama performansının profili oluşturma
+# <a name="measure-application-performance-by-analyzing-cpu-usage"></a>CPU kullanımını analiz etme ölçü uygulama performansı
 Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlarını analiz etmek için kullanabilirsiniz. Bu yordam, nasıl kullanılacağını gösterir **CPU kullanımı** tanılama araçları, uygulamanız için performans verilerini almak için sekmesinde. Tanılama araçları, yerel/C++ geliştirme ve ASP.NET dahil olmak üzere Visual Studio .NET geliştirme için desteklenir.
   
 Hata ayıklayıcı zaman duraklatır, **CPU kullanımı** aracı, uygulamanızda yürütülen işlevler hakkında bilgi toplar. Aracı işleri yapan işlevleri listeler ve örnekleme oturumunun belirli segmentlerine odaklanmak için kullanabileceğiniz bir zaman çizelgesi grafiği sağlar.

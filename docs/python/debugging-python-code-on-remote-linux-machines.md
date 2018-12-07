@@ -1,22 +1,23 @@
 ---
 title: Uzak Linux bilgisayarlarda Python kodunda hata ayıklama
-description: Uzak Linux bilgisayarlarda çalışan, gerekli yapılandırma adımları, güvenlik ve sorun giderme Python kodunda hata ayıklamak için Visual Studio kullanma
-ms.date: 10/15/2018
+description: Uzak Linux bilgisayarlarda çalışan, gerekli yapılandırma adımları, güvenlik ve sorun giderme Python kodunda hata ayıklamak için Visual Studio'yu kullanın.
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 654ac9cfd466cfdd6486ea5aa9e658495d5704fe
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 4c14fb14a8941895fab473952908e6aefa2e2f14
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356775"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067952"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Linux'ta Python kodu uzaktan hata ayıklama
 
@@ -106,7 +107,7 @@ Bu adımlarda, uzak işlemini durdurmak için basit bir kesme noktası ayarladı
 
 1. Visual Studio sonra geçiş betiği uzak bilgisayarda çalışmaya devam ederken hata ayıklama modu olarak tüm normal sağlama [hata ayıklama](debugging-python-in-visual-studio.md) özellikleri. Örneğin, üzerinde bir kesme noktası ayarlamak `if guess < number:` satır, ardından uzak bilgisayara geçebilir ve başka bir tahmin girin. Bunu, Visual Studio, kesme noktasını, yerel bilgisayar durur yaptıktan sonra yerel değişkenleri ve benzeri gösterir:
 
-    ![Kesme noktasına isabet](media/remote-debugging-breakpoint-hit.png)
+    ![Visual Studio, kesme noktasına gelindiğinde hata ayıklama duraklatır](media/remote-debugging-breakpoint-hit.png)
 
 1. Hata ayıklamayı durdurduğunuzda Visual Studio uzak bilgisayar üzerinde çalışmaya devam eder ve programından ayırır. ptvsd hata ayıklayıcılar, istediğiniz zaman yeniden işleme iliştirebilirsiniz ekleseniz eklenmesi için dinleme devam eder.
 

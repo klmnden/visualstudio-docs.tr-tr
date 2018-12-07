@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Yük testi için çalıştırma ayarı seçme
+title: Bir yük testi için çalıştırma ayarı seçme
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3bff9be24d5d1f615270bc80790a04e85e7cf25c
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9a99df580ec50eec27bd1cb13a1ef883944acd48
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895333"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067391"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Nasıl yapılır: etkin çalışma yük testi için ayarı seçin
 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da Entity Framework Araçları
+title: Entity Framework Araçları
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
@@ -10,21 +10,22 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bbffe18b108beb230a77da38df99a7100e542a27
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14a0e5b6b746356e38dfc71c26f53ced5a470e34
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819101"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066809"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Visual Studio'da Entity Framework Araçları
+
 Entity Framework, .NET geliştiricilerinin etki alanına özel nesneler kullanarak ilişkisel verilerle çalışmak bir nesne ilişkisel eşleme teknolojisidir. Genellikle geliştiricilerin yazmak zorunda olduğu çoğu veri erişim koduna yönelik gereksinimi ortadan kaldırır. Varlık, yeni .NET uygulamaları için teknoloji modelleme önerilen nesne ilişkisel eşleme (ORM) çerçevedir.
 
 Entity Framework Araçları, Entity Framework (EF) uygulamaları oluşturmanıza yardımcı olacak şekilde tasarlanmıştır. Entity Framework için kapsamlı belgeler aşağıda verilmiştir: [EF Core ve EF 6](/ef/).
 
 Entity Framework Araçları ile oluşturduğunuz bir *kavramsal model* mevcut bir veritabanı ve grafik görselleştirin ve kavramsal model düzenleyin. Veya bir kavramsal model ilk grafik oluşturun ve ardından modelinizin destekleyen bir veritabanı oluşturun. Her iki durumda da temel alınan veritabanı değişiklikleri ve otomatik olarak uygulamanız için nesne katmanı kodu oluşturma modeliniz otomatik olarak güncelleştirebilirsiniz. Veritabanı oluşturma ve nesne katmanı kodu oluşturma özelleştirilebilir.
 
-Entity Framework Araçları bir parçası olarak yüklenen **veri depolama ve işleme** Visual Studio Yükleyicisi'nde iş yükü. Altında bir indvidual bileşen olarak da yükleyebilirsiniz **SDK'lar, kitaplıklar ve çerçeveler** kategorisi.
+Entity Framework Araçları bir parçası olarak yüklenen **veri depolama ve işleme** Visual Studio Yükleyicisi'nde iş yükü. Altında tek tek bir bileşen olarak da yükleyebilirsiniz **SDK'lar, kitaplıklar ve çerçeveler** kategorisi.
 
 Entity Framework Araçları Visual Studio'da oluşturan özel araçlar şunlardır:
 
@@ -37,7 +38,7 @@ Entity Framework Araçları Visual Studio'da oluşturan özel araçlar şunlard�
 - Kullanabileceğiniz **güncelleştirme modeli Sihirbazı** temel alınan veritabanına değişiklikler yapıldığında, kavramsal model, depolama model ve eşleme güncelleştirilecek.
 
   > [!NOTE]
-  >  Visual Studio 2010 ile başlayarak, Entity Framework Araçları desteği [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
+  > Visual Studio 2010 ile başlayarak, Entity Framework Araçları desteği [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
 
 Araçlar oluşturma veya değiştirme bir *.edmx* dosya. Bu *.edmx* dosyası bunları arasındaki eşlemeleri kavramsal model ve depolama modeli açıklayan bilgileri içerir. Daha fazla bilgi için [EDMX](https://docs.microsoft.com/ef/ef6/).
 

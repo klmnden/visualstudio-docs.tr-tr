@@ -1,5 +1,6 @@
 ---
 title: Visual Studio 2017'in Gelişmiş Özellikler
+titleSuffix: ''
 ms.date: 06/01/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 778d52d738af318dd21fa58a115dd053b44fa3a8
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 9452e732458a91ce5cc3eea505c7ab3e6dec1774
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863659"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062670"
 ---
 # <a name="features-of-visual-studio-2017"></a>Visual Studio 2017'in özellikleri
 
@@ -66,7 +67,7 @@ Visual Studio, uygulamaları ve oyunları macOS, Linux ve Windows için yanı s�
 
 - Derleme [.NET Core](/dotnet/core/) Windows, macOS ve Linux'ta çalışan uygulamalar.
 
-- Kullanarak iOS, Android ve Windows için C# ve F # için mobil uygulamalar oluşturmayı [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/).
+- Windows, iOS ve Android için mobil uygulamalar oluşturmayı C# ve F# kullanarak [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/).
 
 - Standart web teknolojileri kullanın&mdash;HTML, CSS ve JavaScript&mdash;kullanarak iOS, Android ve Windows için mobil uygulamalar oluşturmayı [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/).
 

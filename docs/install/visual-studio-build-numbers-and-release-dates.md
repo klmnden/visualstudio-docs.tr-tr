@@ -1,6 +1,7 @@
 ---
-title: Visual Studio 2017 derleme numaraları ve yayın tarihleri
-description: Sürümlerini ve tarihe göre sıralanmış, Visual Studio 2017 için yapı numaraları listesi.
+title: Visual Studio derleme numaraları ve yayın tarihleri
+titleSuffix: ''
+description: Bir listesi için Visual Studio 2017 sürüm ve derleme numaraları yayımlanan ve daha sonra tarihe göre sıralanır.
 keywords: ''
 author: TerryGLee
 ms.author: tglee
@@ -12,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e3c14687fe48b3929488f539378d49bf2d43e65
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 975f5898b755a2211cd8ca116ce26689282d7f6a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895411"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067757"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio derleme numaraları ve yayın tarihleri
 

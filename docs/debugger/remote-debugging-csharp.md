@@ -1,6 +1,8 @@
 ---
-title: Bir C# veya VB projesi Visual Studio uzaktan hata ayıklama | Microsoft Docs
-ms.custom: remotedebugging
+title: Uzaktan hata ayıklama bir C# veya VB projesi | Microsoft Docs
+ms.custom:
+- remotedebugging"=
+- seodec18
 ms.date: 08/14/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9d6bd68f5e94e04cab01dcb7bafd7dcc3cf3c17d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 82873b29a173209739497087a4dfe5b293123e2c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936131"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055666"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Uzaktan hata ayıklama Visual Studio'da C# veya Visual Basic projesi
 Farklı bir bilgisayara dağıtılan bir Visual Studio uygulamasında hata ayıklamak için yükleme ve uzak Araçlar, uygulamanızın dağıtıldığı bilgisayarda çalıştırın, projenizi Visual Studio'dan uzak bilgisayara bağlanmak için yapılandırın ve ardından uygulamanızı çalıştırın.

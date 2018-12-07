@@ -1,5 +1,5 @@
 ---
-title: Visual Studio ile ADO.NET kullanarak basit veri uygulaması oluşturma
+title: ADO.NET kullanarak basit veri uygulaması oluşturma
 ms.date: 08/23/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5bcdd9120088663e469070c31962dfacc97bce0a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 75043a1716cca0c727eb0530cd63ca715a60424b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891017"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064878"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET kullanarak basit veri uygulaması oluşturma
 

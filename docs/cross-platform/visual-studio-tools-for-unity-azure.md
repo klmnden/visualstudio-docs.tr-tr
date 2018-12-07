@@ -6,18 +6,18 @@ ms.reviewer: crdun
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 7921D4C7-5526-42F5-8E03-82D3E33A893F
-author: johmil
-ms.author: therealjohn
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - azure
 - unity
-ms.openlocfilehash: cdf7b5de8b1a2f770b095f2fad4a29c42cbe14a5
-ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
+ms.openlocfilehash: 454cb3617bb918b67784ebd2a3388ac6ee9f3826
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52954207"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027269"
 ---
 # <a name="program-with-unity-and-azure"></a>Unity ve Azure ile Programlama
 

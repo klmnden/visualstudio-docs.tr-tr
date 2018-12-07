@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Başlangıç süresini artırın
+title: Başlatma süresi geliştirin
 ms.date: 11/15/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 20f56af789a84ef73c66e0cd50c87ec48a6212a4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cccdf9cae50d886f5e44fa7bb403bdd4d38ad535
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884062"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067686"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Visual Studio Başlangıç süresini iyileştirme
 

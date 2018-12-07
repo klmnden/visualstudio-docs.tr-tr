@@ -1,5 +1,5 @@
 ---
-title: Büyük veya küçük harf Visual Studio düzenleyicisinde metin Dönüştür
+title: Metin büyük veya küçük harfe Dönüştür
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,31 +13,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de9c9c790be2624c8faa3fad706929baadeddc01
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 7165ea27c18e78fc7f9ee2ac790ff6d4d9e52c13
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446068"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059291"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>Nasıl yapılır: düzenleyicide küçük harf değiştirme
+# <a name="how-to-change-text-case-in-the-editor"></a>Nasıl yapılır: düzenleyicide büyük/küçük harf değiştirme
 
-Seçili metni durumunun tümü büyük harf ya da tüm küçük harfe dönüştürmek için menü komutlarını veya klavye kısayollarını kullanabilirsiniz.
+Seçili metni büyük tümü büyük harf veya küçük harflerle dönüştürülecek menü komutlarını veya klavye kısayollarını kullanabilirsiniz.
 
 > [!NOTE]
-> İletişim kutuları ve menü komutlarını gördüğünüz etkin ayarlarınıza veya edition bağlı olarak bu makaledeki açıklanana farklı olabilir. Ayarlarınızı, örneğin değiştirmek için **genel** veya **Visual C++** ayarları seçebilirsiniz **Araçları** > **içeri ve dışarı aktarma ayarları**ve ardından **tüm ayarlara**.
+> İletişim kutuları ve menü komutları gördüğünüz, etkin ayarlarınıza ve sürüm bağlı olarak bu makalede açıklanan olanlardan farklı olabilir. Ayarlarınızı, örneğin değiştirileceğini **genel** veya **Visual C++** ayarları seçebilirsiniz **Araçları** > **içeri ve dışarı aktarma ayarları**ve ardından **tüm ayarları Sıfırla**.
 
-## <a name="to-switch-text-to-upper-case"></a>Metni büyük harflere geçiş yapmak için
+## <a name="to-switch-text-to-upper-case"></a>Metni büyük harfe geçiş yapmak için
 
 1.  Dönüştürmek istediğiniz metni seçin.
 
-2.  Üzerinde **Düzenle** menüsünde, select **Gelişmiş**.
+2.  Üzerinde **Düzenle** menüsünde **Gelişmiş**.
 
-3.  Metin tüm büyük harflere dönüştürülecek seçin **olun büyük**, veya basın **Ctrl**+**Shift**+**U**.
+3.  Metni büyük harfe dönüştürülecek seçin **olun büyük**, veya basın **Ctrl**+**Shift**+**U**.
 
     — veya —
 
-    Tüm küçük metin dönüştürmek için **olun küçük**, veya basın **Ctrl**+**U**.
+    Metni küçük harfe dönüştürmek için **olun küçük**, veya basın **Ctrl**+**U**.
 
     > [!TIP]
     > Bu değişiklikten önce biçimlendirme önceki durumuna geri döndürmek için seçin **geri** gelen **Düzenle** menüsü.

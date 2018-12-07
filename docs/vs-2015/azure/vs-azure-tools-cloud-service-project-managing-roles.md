@@ -1,5 +1,5 @@
 ---
-title: Visual Studio ile Azure bulut hizmetlerindeki roller yönetme | Microsoft Docs
+title: Azure bulut hizmetlerinde rollerini yönetme
 description: Ekleme ve Visual Studio ile Azure bulut hizmetlerindeki roller kaldırma hakkında bilgi edinin.
 author: ghogen
 manager: douge
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 35221cbf98f26a71e2b4adf0a7178342616ff7c0
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: e3a07e92e3be388b43fecd169c89c2c817d66900
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003693"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063256"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Visual Studio ile Azure bulut Hizmetleri'nde rollerini yönetme
 Azure bulut hizmetinizi oluşturduktan sonra yeni rolleri eklemek veya var olan rolleri kaldırın. Ayrıca, mevcut bir projeyi içeri aktar ve rol dönüştürün. Örneğin, bir ASP.NET web uygulamasını içeri aktarabilir ve bir web rolü olarak belirleyin.
@@ -41,7 +41,7 @@ Aşağıdaki adımlar Visual Studio'da bir Azure bulut hizmeti projesinden bir w
 
 1. Genişletin **rolleri** düğümü.
 
-1. Kaldırın ve bağlam menüsünden seçmek için istediğiniz düğüme sağ **Kaldır**. 
+1. Kaldırın ve bağlam menüsünden seçmek için istediğiniz düğüme sağ **Kaldır**.
 
     ![Bir rol bir Azure bulut hizmetine eklemek için menü seçenekleri](./media/vs-azure-tools-cloud-service-project-managing-roles/remove-role.png)
 

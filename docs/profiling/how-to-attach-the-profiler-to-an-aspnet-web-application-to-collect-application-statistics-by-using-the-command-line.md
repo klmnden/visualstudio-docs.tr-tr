@@ -1,6 +1,6 @@
 ---
-title: 'Nasıl yapılır: komut satırını kullanarak uygulama istatistikleri toplamak için bir ASP.NET Web uygulamasına Profiler ekleme | Microsoft Docs'
-ms.custom: ''
+title: Bir ASP.NET Profil Oluşturucu ekleme biz uygulama istatistikleri toplamak için uygulama
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: a9f1bddaa4e606602a7ccba291a47c0048f1d9af
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 32197d50bbc9826261584ba18b5b83f8519b7a38
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855371"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063829"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Nasıl yapılır: komut satırını kullanarak uygulama istatistikleri toplamak için bir ASP.NET web uygulamasına profil oluşturucu ekleme
 Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir ASP.NET Web uygulamasına profil oluşturucu örnekleme yöntemini kullanarak performans istatistikleri toplamak için profil oluşturma araçları komut satırı araçları.  

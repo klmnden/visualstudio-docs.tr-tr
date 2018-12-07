@@ -1,5 +1,5 @@
 ---
-title: Visual Studio’nun ağ tabanlı yüklemesini oluşturma
+title: Bir ağ tabanlı yüklemesini oluşturma
 description: Visual Studio içinde bir kuruluş dağıtımı için bir ağ yükleme noktasını oluşturmayı öğrenin.
 ms.date: 10/17/2017
 ms.technology: vs-acquisition
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 670c9e10d25626b263ac2066d0f52b245386bd54
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: 6db36c8a18fe1f65ff0568937b1b7e9c279d4234
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821480"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062528"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Visual Studio 2017'in bir ağ oluşturun
 

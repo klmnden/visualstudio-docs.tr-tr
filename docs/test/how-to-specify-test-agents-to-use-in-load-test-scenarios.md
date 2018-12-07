@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Yük testi senaryolarında kullanılacak Test aracıları belirtme
+title: Yük testi senaryolarında kullanılacak Test aracıları belirtme
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1d153e3ab237e87764b8805c91f4e4c4e5512c60
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: db7c901dd081155fe7341433f700f60de415a153
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895190"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061023"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Nasıl yapılır: test belirtin yükleme kullanılacak aracı test senaryoları
 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da Test etmek için tanılama veri bağdaştırıcısı oluşturma
+title: Test etmek için tanılama veri bağdaştırıcısı oluşturma
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 788c5f24b2e3f965d93b645d024f29a6e0d6e7ea
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 67eb1a1128a811868db97dfc682c7b4eec7b2c61
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52893851"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068075"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Özel veri toplayan veya test makinesini etkileyen tanılama veri bağdaştırıcısı oluşturma
 

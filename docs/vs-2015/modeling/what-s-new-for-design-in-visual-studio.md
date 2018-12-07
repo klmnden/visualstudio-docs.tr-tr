@@ -1,5 +1,5 @@
 ---
-title: Hangi&#39;Visual Studio tasarımındaki yenilikler | Microsoft Docs
+title: Hangi&#39;tasarım için Yenilikler
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
@@ -18,12 +18,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ee504d0054c52649d48676451168e7dea171b6af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 666402a0488fdfd0e09e12e711c9b74b2f3b2fd1
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771280"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068120"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Visual Studio tasarımındaki yenilikler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

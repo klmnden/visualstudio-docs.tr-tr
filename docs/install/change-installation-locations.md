@@ -1,6 +1,6 @@
 ---
-title: Visual Studio 2017'de yükleme konumları seçin
-description: Konumun indirme önbelleğini, paylaşılan bileşenler, SDK'ları ve araçları farklı sürücülere değiştirerek sistem sürücünüzdeki yükleme ayak izini azaltmak öğrenin.
+title: Yükleme konumlarını seçme
+description: Sistem sürücünüzdeki yükleme ayak izini Visual Studio'nun konumunu indirme önbelleğini, paylaşılan bileşenler, SDK'ları ve araçları farklı sürücülere değiştirerek azaltmak öğrenin.
 ms.date: 11/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed3b54674c24e3becf62e7568be127344104de0f
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 72a8224bfadb4d2c1e06122e5ebf91ffcead6864
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295039"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059041"
 ---
 # <a name="select-the-installation-locations-in-visual-studio-2017"></a>Visual Studio 2017'de yükleme konumları seçin
 

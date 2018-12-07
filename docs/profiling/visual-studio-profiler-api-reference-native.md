@@ -1,6 +1,7 @@
 ---
-title: Visual Studio profil oluşturucu API Başvurusu (yerel) | Microsoft Docs
-ms.custom: ''
+title: Visual Studio Profil Oluşturucu API Başvurusu (Yerel)
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -13,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba2590c17a41d200f0a8dd3c38c7c9ae8c8a85cc
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: acb85c9994436b2e35a6d4161a579180ad5e0ac5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572104"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063010"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio profil oluşturucu API Başvurusu (yerel)
-Visual Studio profil oluşturucu API olanak tanır program aracılığıyla toplanan veri miktarını denetlemek ve profil oluşturma sırasında zaman damgası ve profil işareti koyun. Yerel API'ları kullanmak için eklediğiniz *VSPerf.h* üstbilgi dosya ve ekleme *VSPerf.lib* projenizdeki.  
+Visual Studio profil oluşturma API'ları, programlı olarak toplanan veri miktarını denetlemek ve profil oluşturma sırasında zaman damgası ve profillerinin ikisi de işaretleri eklemek izin verin. Yerel API'leri kullanmak için dahil *VSPerf.h* üstbilgi dosya ve ekleme *VSPerf.lib* projenizdeki.  
   
 > [!NOTE]
 >  Varsayılan olarak, *VSPerf.h* ve *VSPerf.lib* adlı bir klasörde bulunan *PerfSDK*. *\<Sürücü >: \Program Visual Studio 14.0\Team Araçlar\Performans Tools\PerfSDK* örneğin dizin.  

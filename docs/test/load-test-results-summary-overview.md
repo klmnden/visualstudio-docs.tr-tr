@@ -1,5 +1,5 @@
 ---
-title: Yük testi sonuçlarını Visual Studio'da Özet genel bakış
+title: Yük Testi Sonuçları Özetine Genel Bakış
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ae70422ce3c88a3de6842f3f0946666b86ae559e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 3f5187aabeb0c8e2ef81b0c6b6883b96590d7005
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895021"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062615"
 ---
 # <a name="load-test-results-summary-overview"></a>Yük testi sonuçları özetine genel bakış
 

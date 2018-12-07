@@ -1,5 +1,6 @@
 ---
 title: Visual Studio’nun ağ tabanlı yüklemesini güncelleştirme
+titleSuffix: ''
 description: Kullanarak ağ tabanlı bir Visual Studio yüklemesini güncelleştirme öğrenin Düzen komutu
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
@@ -14,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29b9efc68d3cf094873ba5dc5ccd3844eb01209a
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 19af5af315d917256544ef27271912b2d31e3d84
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138834"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048561"
 ---
-# <a name="update-a-network-based-installation-of-visual-studio"></a>Visual Studio’nun ağ tabanlı yüklemesini güncelleştirme
+# <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Visual Studio 2017'in bir ağ tabanlı yüklemesini güncelleştirme
 
 Bunu mümkün olması için bir ağ yükleme düzeni, Visual Studio'nun en son ürün güncelleştirmelerini ile güncelleştirmek için bir yükleme noktası olarak hem de en son güncelleştirmesi Visual Studio ve ayrıca istemciye zaten dağıtılmış olan yüklemeleri korumak için kullandı İş istasyonu.
 
@@ -94,7 +95,7 @@ vs_enterprise.exe --layout <layoutDir> --verify
 İçinde layoutDir vs_enterprise.exe çağrılabilir.
 
 > [!NOTE]
-> Tarafından gereken bazı önemli meta veri dosyaları `--verify` seçeneği Düzen çevrimdışı önbellekte olması gerekir. Bu meta veri dosyaları eksikse "--doğrulayın" çalıştırılamıyor ve Kurulum bir hata verir. Bu hata ile karşılaşırsanız, yeni bir çevrimdışı Düzen farklı bir klasöre (veya aynı Çevrimdışı Önbellek klasörü. yeniden oluştur Bu nedenle yapmak için ilk çevrimdışı düzen oluşturmak için kullandığınız aynı düzen komutu çalıştırın. Örneğin, `Vs_enterprise.exe --layout <layoutDir>`.
+> Tarafından gereken bazı önemli meta veri dosyaları `--verify` seçeneği Düzen çevrimdışı önbellekte olması gerekir. Bu meta veri dosyaları eksikse "--doğrulayın" çalıştırılamıyor ve Kurulum bir hata verir. Bu hata ile karşılaşırsanız, yeni bir çevrimdışı Düzen farklı bir klasöre (veya aynı Çevrimdışı Önbellek klasörü. yeniden oluştur Bu nedenle yapmak için ilk çevrimdışı düzen oluşturmak için kullandığınız aynı düzen komutu çalıştırın. Örneğin: `Vs_enterprise.exe --layout <layoutDir>`
 
 Oluşturduğunuz yeni düzene ilk düzeni sürümünün aynı olmayabilir bu nedenle, Microsoft Visual Studio güncelleştirmeleri düzenli olarak gelir.
 

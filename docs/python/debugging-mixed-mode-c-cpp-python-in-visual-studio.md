@@ -1,6 +1,6 @@
 ---
 title: Karışık mod hata ayıklaması için Python
-description: Aynı anda C++ ve ortamlar arasında adımlama, görüntüleme değerleri ve ifadeleri değerlendirme de dahil olmak üzere Visual Studio'da Python hata ayıklamayı öğrenin.
+description: Eşzamanlı C++ ve ortamlar arasında adımlama, görüntüleme değerleri ve ifadeleri değerlendirme de dahil olmak üzere Visual Studio'da Python hata ayıklayın.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2038f681578c3410b8b4dc1fe67552064e0e2d93
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 42d413ab8d96ccd5533afe99cffb2c05c8ac7d6f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607841"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052241"
 ---
 # <a name="debug-python-and-c-together"></a>Python ve C++ birlikte hata ayıklama
 
@@ -35,7 +36,7 @@ Bu makalede açıklandığı gibi karışık mod hata ayıklama özellikleri aş
 - Python yerel çerçeveler ve bunun tersi de nesneleri temsillerini bakın
 - Python veya C++ projesi bağlamında hata ayıklama
 
-![Karışık mod hata ayıklama](media/mixed-mode-debugging.png)
+![Visual Studio'da Python için karışık mod hata ayıklama](media/mixed-mode-debugging.png)
 
 |   |   |
 |---|---|
@@ -96,7 +97,7 @@ Bu yöntemi kullanarak, ayıklanamıyor kullanan *py.exe* Başlatıcısı kendis
 
 **Çağrı yığını** penceresi, hem yerel hem de Python yığın çerçevelerini ikisi arasındaki işaretli geçişleri aralıklı gösterir:
 
-![Birleştirilmiş çağrı yığını](media/mixed-mode-debugging-call-stack.png)
+![Karışık mod hata ayıklaması ile birleştirilmiş çağrı yığını](media/mixed-mode-debugging-call-stack.png)
 
 Geçişleri görünür olarak **[harici kod]**, varsa, geçiş yönü belirtmeden **Araçları** > **seçenekleri**  >  **Hata ayıklama** > **genel** > **yalnızca benim kodumu etkinleştir** seçeneği ayarlanır.
 
@@ -110,11 +111,11 @@ Kullanırken **içine adımla** (**F11**) veya **Step Out** (**Shift**+**F11**) 
 
 Yerel (C veya C++) çerçeve etkin olduğunda, hata ayıklayıcıda yerel değişkenlerini görünmesini **Yereller** penceresi. Yerel Python uzantısı modüller, çoğu bu değişkenlerin türü olan `PyObject` (Bu değer için bir typedef `_object`), ya da (aşağıdaki listeye bakın) diğer birkaç temel Python türler. Karışık mod hata ayıklamada etiketli bir ek alt düğümü bu değerleri sunmak **[Python Görünüm]**. Genişletildiğinde, bu düğüm değişkenin Python gösterimi gösterir, ne bir yerel değişken ederseniz görürsünüz aynı aynı nesneye başvuran bir Python çerçevesinde yoktu. Bu düğümün alt öğeleri düzenlenebilir.
 
-![Python görüntüle](media/mixed-mode-debugging-python-view.png)
+![Yerel öğeler penceresinde Python görüntüle](media/mixed-mode-debugging-python-view.png)
 
 Bu özellik devre dışı bırakmak için herhangi bir yeri sağ **Yereller** penceresi ve iki durumlu **Python** > **Python görünüm düğümlerini Göster** menü seçeneği:
 
-![Python görünümü etkinleştirme](media/mixed-mode-debugging-enable-python-view.png)
+![Yerel öğeler penceresinde Python görünümü etkinleştirme](media/mixed-mode-debugging-enable-python-view.png)
 
 C türleri gösteren **[Python Görünüm]** (etkinse) düğümleri:
 
@@ -143,11 +144,11 @@ Bir alternatif (ve daha iyi) seçeneği izlemektir [CESARETLENDİRİCİ 3123](ht
 
 Benzer şekilde, önceki bölümde, etkinleştirebilirsiniz bir **[C++ Görünüm]** yerel değerlerinin **Yereller** Python çerçeve etkin olduğunda penceresi. Sağ tıklatarak açabilirsiniz, böylece bu özellik varsayılan olarak etkin değildir **Yereller** penceresi ve geçiş **Python** > **C++ görünüm düğümlerini Göster** menüsü seçeneği.
 
-![C++ görünümü etkinleştirme](media/mixed-mode-debugging-enable-cpp-view.png)
+![C++ görünümü Yereller penceresinde etkinleştirme](media/mixed-mode-debugging-enable-cpp-view.png)
 
 **[C++ Görünüm]** düğüm C/C++ temelindeki aynı bir yerel çerçeve içinde neleri görür için bir değer için bir gösterimini sağlar. Örneğin, bu örneği gösterir `_longobject` (hangi `PyLongObject` bir TypeDef) bir Python uzun tamsayı ve bunun için yerel sınıflar için türlerini çıkarması çalıştığında kendiniz oluşturdunuz. Bu düğümün alt öğeleri düzenlenebilir.
 
-![C++ görüntüle](media/mixed-mode-debugging-cpp-view.png)
+![Yerel öğeler penceresinde C++ görüntüle](media/mixed-mode-debugging-cpp-view.png)
 
 Bir nesnenin bir alt alan türde ise `PyObject`, veya başka birini desteklenen türleri, bunun ardından bir **[Python Görünüm]** nesne gitmek mümkün hale getirme (Bu gösterimler etkinleştirildiyse) gösterimi düğüm nerede grafikler doğrudan bağlantılar için Python sunulmaz.
 

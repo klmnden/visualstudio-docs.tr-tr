@@ -1,6 +1,6 @@
 ---
-title: 'Hata ayıklama hazırlığı: Visual C++ proje türleri | Microsoft Docs'
-ms.custom: ''
+title: C++ projelerinde hata ayıklamak hazırlama | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d3d1c183ab4816803f9c1c2ce8ee60373d1e50bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c39acdef217d2b858645073cb96da4952c91df5a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864107"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066320"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Hata Ayıklama Hazırlığı: Visual C++ Proje Türleri
 Bu bölümde oluşturan temel proje türlerinde hata ayıklama işlemini açıklamaktadır [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] proje şablonları.  

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio tam ekran ve sanal alan modu
+title: Tam ekran ve sanal alan modu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -26,42 +26,42 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94bc99bf70340ef76639d0ae0f05e1f7737173a2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e5250176bee4993f9d01bffcaed71579c17e55c9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943354"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056314"
 ---
 # <a name="how-to-manage-editor-modes"></a>Nasıl yapılır: Düzenleyici modlarını yönetme
 
-Visual Studio kod düzenleyicisini çeşitli görüntü modları görüntüleyebilirsiniz.
+Visual Studio Kod Düzenleyicisi'ni çeşitli görüntüleme modlarında görüntüleyebilirsiniz.
 
 > [!NOTE]
-> İletişim kutuları ve menü komutlarını gördüğünüz etkin ayarlarınıza veya edition bağlı olarak bu makaledeki açıklanana farklı olabilir. Ayarlarınızı, örneğin değiştirmek için **genel** veya **Visual C++** ayarları seçebilirsiniz **Araçları** > **içeri ve dışarı aktarma ayarları**ve ardından **tüm ayarlara**.
+> İletişim kutuları ve menü komutları gördüğünüz, etkin ayarlarınıza ve sürüm bağlı olarak bu makalede açıklanan olanlardan farklı olabilir. Ayarlarınızı, örneğin değiştirileceğini **genel** veya **Visual C++** ayarları seçebilirsiniz **Araçları** > **içeri ve dışarı aktarma ayarları**ve ardından **tüm ayarları Sıfırla**.
 
-## <a name="enable-full-screen-mode"></a>Tam ekran modunu etkinleştir
+## <a name="enable-full-screen-mode"></a>Tam ekran modunu etkinleştirme
 
-Tüm aracı windows gizlemek ve yalnızca belge pencereleri etkinleştirerek görüntülemek seçebileceğiniz **tam ekran** modu.
+Tüm araç pencerelerini Gizle ve belge pencereleri etkinleştirerek görüntülemek seçebileceğiniz **tam ekran** modu.
 
 -   Tuşuna **Alt**+**Shift**+**Enter** girin ya da çıkmak için **tam ekran** modu.
 
-     --ya da--
+     --veya--
 
--   Komutu Yürüt `View.Fullscreen` içinde **komutu** penceresi.
+-   Komutu Yürüt `View.Fullscreen` içinde **komut** penceresi.
 
 ## <a name="enable-virtual-space-mode"></a>Sanal alan modu etkinleştir
 
-İçinde **sanal adres alanı** modu, boşluk, her kod satırının sonuna eklenir. Kodunuzu yanındaki tutarlı bir noktada açıklamaları konumlandırmak için bu seçeneği belirleyin.
+İçinde **sanal adres alanı** modu, her kod satırının sonunda boşluklar eklenir. Kodunuzu yanındaki tutarlı bir noktada açıklamaları yerleştirmek için bu seçeneği belirleyin.
 
 1.  Seçin **seçenekleri** gelen **Araçları** menüsü.
 
-2.  Genişletin **metin düzenleyici** klasörünü seçin **tüm diller** bu seçenek genel olarak ayarlamak veya belirli bir dil klasörü seçin. Örneğin, Visual Basic'te yalnızca satır numaraları etkinleştirmek için tercih **temel** > **metin düzenleyici** düğümü.
+2.  Genişletin **metin düzenleyici** klasöründe ve **tüm diller** bu seçeneği genel olarak ayarlayın ya da belirli bir dil klasörü seçin. Örneğin, yalnızca Visual Basic'te satır numaralarını etkinleştirmek için tercih **temel** > **metin düzenleyici** düğümü.
 
-3.  Seçin **genel** seçenekleri ve altında **ayarları**seçin **etkinleştirmek sanal adres alanı**.
+3.  Seçin **genel** seçenekleri altında **ayarları**seçin **sanal boşluğu etkinleştir**.
 
     > [!NOTE]
-    > **Sanal alan** etkin **sütun seçimi** modu. Zaman **sanal adres alanı** modu etkin değil, ekleme noktasını bir satır sonundan sonraki ilk karakteri için doğrudan taşır.
+    > **Sanal adres alanı** etkin **sütun seçimi** modu. Zaman **sanal adres alanı** modu etkin değil, ekleme noktasını bir satır sonundan sonraki ilk karakteri için doğrudan taşır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

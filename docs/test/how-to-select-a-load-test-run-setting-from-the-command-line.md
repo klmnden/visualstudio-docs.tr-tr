@@ -1,5 +1,5 @@
 ---
-title: Komut satırından Visual Studio Yük testi çalıştırma ayarlarını ayarlayın
+title: Komut satırından yükleme testi çalıştırma ayarlarını ayarlayın
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e0f279b8d6efb4a43d0cdb93c7e0c6e922721fb0
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 51c9971d35eb5b7a369041eeaefd32fa00aa3571
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895255"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051843"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Nasıl yapılır: yük testi çalıştırması komut satırından kullanmak için ayarı seçin
 

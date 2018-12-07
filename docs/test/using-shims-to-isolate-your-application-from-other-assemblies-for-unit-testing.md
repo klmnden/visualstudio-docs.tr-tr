@@ -1,5 +1,5 @@
 ---
-title: Uygulamanız için Visual Studio'da birim testinin yalıtmak üzere dolgular kullanma
+title: Birim testi için uygulamanızı yalıtmak üzere dolgular kullanma
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c1a6a15a5c5ba0eccfdab89461292fba484b5af3
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b94852b15891566bdfc38dd3fd8de9e706f38737
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389075"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065616"
 ---
 # <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Birim testi için uygulamanızı diğer derlemelerden yalıtmak üzere dolgular kullanma
 

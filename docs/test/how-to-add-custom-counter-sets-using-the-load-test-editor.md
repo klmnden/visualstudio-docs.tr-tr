@@ -1,5 +1,5 @@
 ---
-title: Yük testi Visual Studio'da için özel sayaç kümeleri ekleme
+title: Yük testi için özel sayaç kümeleri ekleme
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 76ba63b1ca84a09294226ad8c4924df9b1fbb321
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 7f916e469453d41321dd30404be6c0a6e4f5e56f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894696"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051490"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Nasıl yapılır: Yük Testi Düzenleyicisini kullanarak özel sayaç kümeleri ekleme
 

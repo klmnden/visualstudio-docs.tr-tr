@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Yardım Görüntüleyicisi İçindekiler kullanın
+title: Yardım Görüntüleyici İçindekiler kullanın
 ms.date: 11/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-help-viewer
@@ -17,40 +17,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e7d9ae19cb2a37c6fbf6595a7f3a39895d22190
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 86e334fac2fca09514dd4adaf4a05fac0accc11f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945759"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063415"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Nasıl yapılır: içindekilerde konu bulma
 
-İçinde **içeriği** sekmesinde bilgileri bulmak için içindekiler (İT) kullanabilirsiniz. İçindekiler tablosu tüm yüklü books konuları içeren genişletilebilir bir listesidir. Erişilebilirlik TOC gezinme konusunda bilgi için [kısayol tuşları (Yardım Görüntüleyici)](../ide/shortcut-keys-help-viewer.md).
+İçinde **içeriği** sekmesinde bilgileri bulmak için içindekiler (TOC) kullanabilirsiniz. İçindekiler tablosu, tüm yüklü kitaplar konuları içeren genişletilebilir bir listedir. Nasıl TOC aracılığıyla gezinebileceğiniz hakkında erişilebilirlik bilgileri için bkz. [kısayol tuşları (Yardım Görüntüleyicisi)](../ide/shortcut-keys-help-viewer.md).
 
 > [!IMPORTANT]
-> Seçtiğiniz filtre konuları TOC kullanılabilir kapsamına bağlıdır.
+> TOC içinde kullanılabilir konuların kapsamı seçtiğiniz filtreye bağlıdır.
 
-## <a name="filter-the-toc"></a>İçindekiler tablosu filtreleme
+## <a name="filter-the-toc"></a>TOC için filtre
 
-Görünen konuları kapsamını daraltmak için TOC filtreleyebilirsiniz **içeriği** sekmesi. Yalnızca belirttiğiniz teriminin kök içeriyorsa başlıkları listede görüntülenir. Örneğin, "filtre olarak sorun giderme" belirtirseniz, yalnızca "sorun giderme" içeren başlıklarını veya "sorun giderme" görünür. Başlıkları terimi içeren olmayan düğümler üç nokta ile tek bir düğüme daraltılmış (**...** ).
+Görünen konuların kapsamını daraltmak üzere TOC için filtre uygulayabilirsiniz **içeriği** sekmesi. Başlıkları, yalnızca belirttiğiniz terimin kök içeriyorsa listede görünür. Örneğin, "filtre olarak sorun giderme" belirtirseniz, yalnızca "sorun giderme" içeren başlıklar veya "sorun giderme" görünür. Başlıkları terim içermeyen düğümler üç nokta ile tek bir düğüm için daraltılmış (**...** ).
 
 1.  Seçin **içeriği** sekmesi.
 
-2.  İçinde **filtre içeriği** metin kutusunda, bir terimi girin.
+2.  İçinde **filtre içeriğini** metin kutusunda, bir terimi girin.
 
 > [!NOTE]
-> Filtre çalıştırmak uzun sürüyorsa, sonuçlar daha hızlı bir şekilde kullanarak görüntülenebilir `title:` Gelişmiş arama işleci.
+> Filtre çalıştırmak için bir uzun sürerse, sonuçları daha hızlı bir şekilde kullanarak görüntüleyebilir `title:` Gelişmiş arama işleci.
 
-## <a name="synchronize-a-topic-with-the-toc"></a>Bir konu TOC ile eşitleme
+## <a name="synchronize-a-topic-with-the-toc"></a>TOC ile bir konu Eşitle
 
-Dizin veya tam metin arama özellikleri kullanılarak bir konu açtıysanız, bu konuda TOC konu penceresiyle TOC eşitleyerek olduğu belirleyebilirsiniz.
+Dizin veya tam metin arama özelliklerini kullanarak bir konu açtıysanız, TOC'yi konu penceresiyle eşitleyerek bu konunun TOC'de nerede olduğunu belirleyebilirsiniz.
 
 1.  Bir konu görüntüleyin.
 
-2.  Tıklatın **içeriğini göster konudaki** araç veya tuşuna düğmesine **Ctrl**+**S**.
+2.  Tıklayın **içindekilerde konuyu Göster** basın veya araç çubuğu düğmesini **Ctrl**+**S**.
 
-     **İçeriği** sekmesini açar ve TOC konunun konumu gösterir.
+     **İçeriği** sekmesi açılır ve TOC içinde konunun yerini görüntüler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

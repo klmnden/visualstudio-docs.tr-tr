@@ -5,17 +5,17 @@ ms.date: 11/04/2016
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: a5758cb0-e73b-45f5-8cae-c0eb40491026
-author: johmil
-ms.author: therealjohn
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 9fcb9ff532f9dd9c255f9011ac97886f810c7f5f
-ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
+ms.openlocfilehash: 0811445e2dcf985aef7b6449ff3fb86c5ac9a1c8
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52954129"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027386"
 ---
 # <a name="program-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları'nı programlama
 Bu bölümde, Unity API'si için Visual Studio Araçları'nın kullanımına ilişkin örnekler bulabilirsiniz.

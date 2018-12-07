@@ -1,6 +1,6 @@
 ---
-title: Özellik sayfaları Web projeleri için ayarları | Microsoft Docs
-ms.custom: ''
+title: Web projeleri özellik ayarları | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e859f94f9ed86b7e94c6a30153cece18663f337f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fbe5ab8d863cbf77647bde8b8d7da69d9c4823e5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868501"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064225"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Web Projeleri Özellik Sayfası Ayarları
 Bir web sitesi hata ayıklama yapılandırmasında özellik ayarları değiştirebilirsiniz **özellik sayfaları** anlatıldığı gibi iletişim kutusu, [hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md). Aşağıdaki tablolarda, hata ayıklayıcı ile ilgili ayarların nerede bulunacağı gösterilmektedir **özellik sayfaları** iletişim kutusu.  

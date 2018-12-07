@@ -1,6 +1,7 @@
 ---
-title: Python Öğreticisi, 1. adım, bir çalışmaya bir proje oluşturun
-description: Genel bakış ve Visual Studio'da yeni Python projesi oluşturma ve önkoşulları de dahil olmak üzere, Python özelliklerine ilişkin bir çekirdek Kılavuz 1. adım.
+title: Visual Studio Öğreticisi 1. adım, Python'da bir proje oluşturun
+titleSuffix: ''
+description: Genel bakış ve adım 1 / Visual Studio'da yeni Python projesi oluşturma ve önkoşulları de dahil olmak üzere, Python özelliklerine ilişkin bir çekirdek kılavuz.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2eb9871aeda7134f6d488b7efe55c5ec149677a5
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1aaf0c0258d502693b771cad66f9347dd60f80e8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220088"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049861"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Öğretici: Visual Studio'da Python ile çalışma
 

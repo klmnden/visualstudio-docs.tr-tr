@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Yardım Görüntüleyicisi'nin Erişilebilirlik
+title: Yardım Görüntüleyici'nin Erişilebilirlik
 ms.date: 11/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-help-viewer
@@ -13,27 +13,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f7af46b64392c01340c7cb65633939443ffd799
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1122bcd67d6a7785b8b35bdf9edf27e519d86662
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917100"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066060"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Yardım Görüntüleyici'nin Erişilebilirlik özellikleri
-Microsoft ürünlerinin ve hizmetlerinin kullanımını herkes için daha kolay hale getireceğini taahhüt eder. Bu konu, özellikler, ürünler ve Microsoft Yardım Görüntüleyici çok çeşitli becerilerini kişiler için erişilebilir hale gelmesine yardımcı hizmetler hakkında bilgi içerir.
+Microsoft ürünlerinin ve hizmetlerinin kullanımını herkes için daha kolay hale getireceğini taahhüt eder. Bu konu, özellikler, ürünler ve Microsoft Yardım Görüntüleyicisi'ni çok çeşitli yetenekler kişiler için erişilebilir olmasına yardımcı hizmetler hakkında bilgi içerir.
 
 ## <a name="keyboard-access"></a>Klavye erişimi
-Klavyeyi kullanarak Yardım Görüntüleyici'nin tüm özelliklere erişebilir. Daha fazla bilgi için bkz: [kısayol tuşları (Yardım Görüntüleyici)](../ide/shortcut-keys-help-viewer.md).
+Yardım Görüntüleyici'nin tüm özelliklerine klavye kullanarak erişebilirsiniz. Daha fazla bilgi için [kısayol tuşları (Yardım Görüntüleyicisi)](../ide/shortcut-keys-help-viewer.md).
 
 ## <a name="font-size"></a>Yazı tipi boyutu
-Hangi konuda metni belge penceresinde görünür yazı tipi boyutunu değiştirebilirsiniz. Daha fazla bilgi için bkz: [Yardım Görüntüleyicisi'ni özelleştirme](../ide/customize-the-help-viewer.md).
+Hangi konuda metin belge penceresinde görüntülenen yazı tipi boyutunu değiştirebilirsiniz. Daha fazla bilgi için [Yardım Görüntüleyicisi'ni özelleştirme](../ide/customize-the-help-viewer.md).
 
 ## <a name="window-size"></a>Pencere boyutu
-Ayırıcı iki windows arasında göstererek Gezinti veya belge windows genişliğini değiştirebilirsiniz. İmleç çift yönlü oka değiştiğinde, ayırıcı sağa veya sola sürükleyerek birincil fare düğmesini kullanın.
+Gezinme veya belge pencerelerinin genişliğini iki pencere arasındaki ayırıcının işaret ederek değiştirebilirsiniz. İmleç bir iki başlı oka dönüştüğünde ayırıcıyı sağa veya sola sürüklemek için birincil fare düğmesini kullanın.
 
-## <a name="help-viewer-position"></a>Yardım Görüntüleyicisi konumu
-Farklı bir konuma başlık çubuğunu sürükleyerek Yardım Görüntüleyici konumunu değiştirebilirsiniz.
+## <a name="help-viewer-position"></a>Yardım Görüntüleyici konumu
+Başlık çubuğunu farklı bir konuma sürükleyerek Yardım Görüntüleyicisi ' nin yerini değiştirebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

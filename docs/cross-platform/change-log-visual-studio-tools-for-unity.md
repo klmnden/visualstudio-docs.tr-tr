@@ -5,17 +5,17 @@ ms.date: 08/06/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-author: johmil
-ms.author: therealjohn
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 129e7fa7691d0e03f44190de83d07bd09c4f2f5f
-ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
-ms.translationtype: MT
+ms.openlocfilehash: 7664802369c3dcae4ba9df26ae444c30ab473a83
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52954220"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027438"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Değişiklik günlüğü (Unity, Windows için Visual Studio Araçları)
 Değişiklik günlüğü Unity için Visual Studio Araçları.
