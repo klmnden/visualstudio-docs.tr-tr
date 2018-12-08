@@ -1,7 +1,7 @@
 ---
 title: Değişiklik günlüğü (Unity, Windows için Visual Studio Araçları) | Microsoft Docs
 ms.custom: ''
-ms.date: 08/06/2018
+ms.date: 11/28/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,15 +10,51 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 7664802369c3dcae4ba9df26ae444c30ab473a83
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
-ms.translationtype: HT
+ms.openlocfilehash: 4db1d1d5340465b2e977a651eea2e6ad592c22e0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027438"
+ms.locfileid: "53068386"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Değişiklik günlüğü (Unity, Windows için Visual Studio Araçları)
 Değişiklik günlüğü Unity için Visual Studio Araçları.
+
+## <a name="3903"></a>3.9.0.3
+ Yayın Tarihi: 28 Kasım 2018
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+-   **Tümleştirme:**
+
+    -   Proje yeniden yükleme ve IntelliSense sorunlarını ekleyerek veya kaldırarak betikler içinde bulunduğunda sabit çok ilk proje.
+
+## <a name="3902"></a>3.9.0.2
+ Yayın Tarihi: 19 Kasım 2018
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+-   **Hata Ayıklayıcı:**
+
+    -   Visual Studio veya Unity, özellikle 'Unity İşleme İliştir' ulaşmaktan olduğunda dondurma yapma veya oyunu yeniden Unity'nın hata ayıklayıcısı altyapısı ile iletişim kurmak için kullanılan Kitaplığı'nda bir kilitlenme düzeltildi.
+
+## <a name="3901"></a>3.9.0.1
+ 15 Kasım 2018'de yayınlanan
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+-   **Tümleştirme:**
+
+    -   Başka bir varsayılan düzenleyici seçildiğinde sabit Unity eklentisini etkinleştirme.
+
+## <a name="3900"></a>3.9.0.0
+ 13 Kasım 2018'de yayınlanan
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+-   **Proje oluşturma:**
+
+    -   Unity tarafından sabit bir Unity performans hatanın geçici çözümü geri alındı.
 
 ## <a name="3807"></a>3.8.0.7
  Yayın Tarihi: 20 Eylül 2018
@@ -27,7 +63,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 -   **Hata Ayıklayıcı:**
 
-    -   Visual Studio veya Unity, özellikle 'Unity İşleme İliştir' ulaşmaktan olduğunda dondurma yapma veya oyunu yeniden Unity'nın hata ayıklayıcısı altyapısı ile iletişim kurmak için kullanılan Kitaplığı'nda bir kilitlenme düzeltildi.
+    -   (Backported 3.9.0.2 gelen) Visual Studio veya Unity, özellikle 'Unity İşleme İliştir' ulaşmaktan olduğunda dondurma yapma veya oyunu yeniden Unity'nın hata ayıklayıcısı altyapısı ile iletişim kurmak için kullanılan Kitaplığı'nda bir kilitlenme düzeltildi.
 
 ## <a name="3806"></a>3.8.0.6
  Yayın Tarihi: 27 Ağustos 2018
@@ -71,7 +107,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 -   **Proje oluşturma:**
 
-    -   Unity tarafından sabit bir Unity performans hatanın geçici çözümü geri alındı.
+    -   (Backported 3.9.0.0 gelen) Unity tarafından sabit bir Unity performans hatanın geçici çözümü geri alındı.
 
 ## <a name="3802"></a>3.8.0.2
  7 Temmuz 2018'de yayınlanan

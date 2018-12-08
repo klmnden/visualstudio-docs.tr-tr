@@ -1,5 +1,5 @@
 ---
-title: Taşıma, geçirme ve projelerini yükseltme
+title: Projeleri taşıma, geçirme ve yükseltme
 description: Visual Studio ve Visual Studio'nın bir projeyi geçirmek gerektiğinde nasıl karar verir, önceki sürümlerinde oluşturulmuş projeleri Visual Studio 2017'de desteklemeye yönelik bir başvuru.
 ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: bc472b8b4d1792df4d93414cfb62c4e4aa5f96cb
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
-ms.translationtype: HT
+ms.openlocfilehash: a8161fd7534554da0ad45b3aa2b985a68dd9e49d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027412"
+ms.locfileid: "53067067"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 için proje geçiş ve yükseltme başvurusu
 
@@ -94,6 +94,8 @@ Tek yönlü tür değişiklikler değiştirilmektedir `ToolsVersion` MSBuild'ın
 Eski sürümlerinde oluşturulmuş projeleri maksimum uyumluluğu korumak için Visual Studio 2017 desteği için gerekli MSBuild araç zincirlerinden içerir `ToolsVersion` 15, 14, 12 ve 4. Aşağıdakilerden herhangi birini kullanan projeler `ToolsVersion` değerler, başarılı bir derleme içinde neden. (Yine, Visual Studio 2017 proje türü hiç üzerinde açıklandığı destekleyip desteklemediği için konu [Platform hedefleme ve Uyumluluk](/visualstudio/productinfo/vs2017-compatibility-vs).)
 
 El ile güncelleştirin veya bir proje için yeni bir geçiş denemelisiniz olup bu bağlamda soru doğal olarak ortaya `ToolsVersion` değeri. Bu tür bir değişikliğin yapılması gerekli değildir ve büyük olasılıkla çok sayıda hata ve yeniden oluşturmak için proje almak düzeltmek için gereken uyarılar üretir. Ayrıca, Visual Studio için belirli bir destek düşerse `ToolsVersion` gelecekte projeyi açarak project geçiş işlemi olduğundan, özellikle tetikleyecek `ToolsVersion` değer değiştirilmelidir. Böyle bir durumda, bu belirli proje türü için alt tam olarak değiştirilmesi için gerekenler bilir ve bu değişiklikleri otomatik olarak bu makalenin önceki bölümlerinde açıklandığı şekilde yapabilirsiniz.
+
+# <a name="next-steps"></a>Sonraki adımlar
 
 Daha fazla açıklama için şu makalelere göz atın:
 
