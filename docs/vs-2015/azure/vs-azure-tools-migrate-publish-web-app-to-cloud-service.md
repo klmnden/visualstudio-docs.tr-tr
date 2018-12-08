@@ -1,5 +1,5 @@
 ---
-title: Geçiş ve Azure bulut hizmetinde Visual Studio'dan bir Web uygulaması yayımlama | Microsoft Docs
+title: Geçiş ve Azure bulut hizmeti için bir Web uygulaması yayımlama
 description: Visual Studio kullanarak web uygulamanızı bir Azure bulut hizmetinde yayımlama ve geçirme hakkında bilgi edinin
 author: ghogen
 manager: douge
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: c122b54a4e22285678d13213cc73d6492baba629
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: dd81e33d34cd3e61c01e62f941edd074304499be
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003724"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53072791"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Nasıl yapılır: geçirme ve Azure bulut hizmetinde Visual Studio'dan bir Web uygulaması yayımlama
 
@@ -59,7 +59,7 @@ Kullanan bir şirket içi SQL Server veritabanı, web uygulamanız için bir ba�
 1. Üzerinde açıklandığı gibi gerekli bulut hizmeti ve depolama hesapları Azure aboneliğinizde oluşturma [yayımlamak veya Visual Studio'dan Azure bir uygulamayı dağıtmak hazırlama](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md).
 1. Visual Studio'da Uygulama projesine sağ tıklayıp **Microsoft Azure'da Yayımla...**  (olan "Yayımla..." komutunu farklı.).
 1. İçinde **Azure uygulamasını Yayımla** görüntülenir, Azure aboneliğinizde bir hesabı kullanarak oturum açın ve seçin **İleri >**.
-1. İçinde **ayarlar > Genel ayarları** sekmesinde, hedef bulut hizmetinden seçin **bulut hizmeti** aşağı açılan listesinde, seçilen ortam ve yapılandırmalarıyla birlikte. 
+1. İçinde **ayarlar > Genel ayarları** sekmesinde, hedef bulut hizmetinden seçin **bulut hizmeti** aşağı açılan listesinde, seçilen ortam ve yapılandırmalarıyla birlikte.
 1. İçinde **Ayarları > Gelişmiş ayarlar**, depolama hesabı kullanmak **İleri >**.
 1. İçinde **tanılama**, Application Insights'a bilgileri göndermek isteyip istemediğinizi seçin.
 1. Seçin **İleri >** özeti görüntülemek için ardından **Yayımla** dağıtımını başlatmak için.
