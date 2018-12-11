@@ -1,8 +1,9 @@
 ---
-title: 'İzlenecek yol: C# veya Visual Basic ile basit uygulama oluşturma'
+title: Basit bir uygulama oluşturacaksınız C# veya Visual Basic "
 ms.date: 10/03/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,16 +14,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 343d8c35433fe7d6fb454de5183bcc6a914d2a5e
-ms.sourcegitcommit: b2942b8aa93bf73747790a05b67908c0b0108afe
+ms.openlocfilehash: 1eb5509f4cb4ecb29e37d94e4e45ab89f999d138
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788025"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159717"
 ---
-# <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>İzlenecek yol: C# veya Visual Basic ile basit uygulama oluşturma
+# <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>İzlenecek yol: Basit bir uygulama oluşturacaksınız C# veya Visual Basic
 
-Bu izlenecek yolu tamamlayarak, birçok araçları, iletişim kutuları ve Visual Studio ile uygulamalar geliştirirken kullanabileceğiniz tasarımcıları sahibi olacaksınız. Bir "Hello, World" uygulaması oluşturacak, kullanıcı arabirimini tasarlayacak, kod ekleyin ve tümleşik geliştirme ortamında çalışma hakkında bilgi edinirken, hatalarını ayıklama ([IDE](visual-studio-ide.md)).
+Bu izlenecek yolu tamamlayarak, birçok araçları, iletişim kutuları ve Visual Studio ile uygulamalar geliştirirken kullanabileceğiniz tasarımcıları sahibi olacaksınız. Bir "Hello, World" uygulaması oluşturacak, kullanıcı arabirimini tasarlayacak, kod ekleyin ve tümleşik geliştirme ortamında çalışma hakkında bilgi edinirken, hatalarını ayıklama ([IDE](../get-started/visual-studio-ide.md)).
 
 ## <a name="configure-the-ide"></a>IDE'yi yapılandırma
 
@@ -46,7 +47,7 @@ Visual Studio'da bir uygulama oluştururken önce bir proje ve bir çözüm olu�
 
      ![Visual Studio yeni proje iletişim kutusunda WPF uygulaması şablonu](../ide/media/exploreide-newprojectcsharp.png)
 
-1. Seçin **Tamam**.
+1. **Tamam**’ı seçin.
 
    HelloWPFApp projesi ve çözüm, Visual Studio oluşturur ve **Çözüm Gezgini** çeşitli dosyaları gösterir. **WPF Tasarımcısı** XAML görünümünü ve Tasarım görünümünü gösterir *MainWindow.xaml* bölünmüş görünümdeki. Daha fazla veya daha az gösterilecek bölme kaydırabilirsiniz ya da görünümün. Yalnızca bir görsel görünümünü veya yalnızca XAML görünümü görmek seçebilirsiniz. Aşağıdaki öğeler görünür **Çözüm Gezgini**:
 
@@ -213,7 +214,7 @@ Bu adımda, önceki adını değiştirerek neden olan hata bulabilirsiniz *MainW
 
      ![Hata ayıklama komutu hata ayıklama menüsünden başlayın.](../ide/media/exploreide-startdebugging.png)
 
-     A **kesme modu** penceresi görüntülenir ve **çıkış** penceresini gösteren bir Ioexception oluştu: 'mainwindow.xaml' kaynağının yeri belirlenemiyor.
+     A **kesme modu** penceresi görüntülenir ve **çıkış** penceresini gösteren bir Ioexception oluştu: 'Mainwindow.xaml' kaynağının yeri belirlenemiyor.
 
 2. Seçerek hata ayıklayıcıyı **hata ayıklama** > **hata ayıklamayı Durdur**.
 

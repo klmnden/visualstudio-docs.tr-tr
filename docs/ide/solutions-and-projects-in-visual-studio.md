@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba0ed54e8acd28be3f267d83473f9514f471ef4a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 518479d92aa9b0ec51c4fda8b7484a03ce45a560
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349315"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159678"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio'da projeler ve çözümler
 
@@ -60,7 +60,7 @@ Bir proje içinde yer alan bir *çözüm*. Bir çözüm, bir veya daha fazla ilg
 
 Visual Studio kullanan iki dosya türleri (*.sln* ve *.suo*) çözümleri için ayarları saklamak için:
 
-|Uzantı|Ad|Açıklama|
+|Dahili numara|Ad|Açıklama|
 |---------------|----------|-----------------|
 |.sln|Visual Studio çözümü|Projeler, proje öğeleri ve çözümde çözüm öğeleri düzenler.|
 |.suo|Çözüm kullanıcı seçenekleri|Kullanıcı düzeyi ayarları ve kesme noktaları gibi özelleştirmelerini depolar.|
@@ -79,6 +79,6 @@ Yeni bir proje oluşturduğunuzda, kullanabileceğiniz **Çözüm Gezgini** proj
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [Projeler ve çözümler (Mac için Visual Studio)](/visualstudio/mac/projects-and-solutions)
 - [Ekleme ve kaldırma proje öğeleri (Mac için Visual Studio)](/visualstudio/mac/add-and-remove-project-items)

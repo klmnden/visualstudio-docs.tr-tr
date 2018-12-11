@@ -1,10 +1,9 @@
 ---
-title: "Hızlı Başlangıç: Visual Studio'da XAML ile Evrensel Windows platformu ilk uygulamanızı oluşturma ve C# | Microsoft Docs"
-ms.custom: ''
+title: XAML ile ilk UWP uygulamanızı oluşturmak veC#
 ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: quickstart
 ms.devlang: CSharp
 author: TerryGLee
@@ -14,12 +13,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a203d471d5947df9919ed8c9afe7d1c2d41296f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65c5c095ceb794e09030d4d41ed08c49bccf8427
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908931"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160016"
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Hızlı Başlangıç: Visual Studio'da XAML ve C ile Evrensel Windows platformu ilk uygulamanızı oluşturma&#35;
 
@@ -125,7 +124,7 @@ Geliştirmeye başlamak için zaman var. Düğme denetimi ekleyin, düğme için
 
 Kod bir konuşma sentezi nesnesi oluşturmak için bazı Windows API'leri kullanır ve ardından söylemek metin sağlar. (Daha fazla bilgi için `SpeechSynthesis`, bkz: <xref:System.Speech.Synthesis>.)
 
-## <a name="run-the-application"></a>Uygulamayı çalıştırın
+## <a name="run-the-application"></a>Uygulamayı çalıştırma
 
 Bunu oluşturmanızı, dağıtmanızı ve ne göründüğünü ve benzer görmek için "Hello World" UWP uygulaması başlatma zamanı geldi. İşte nasıl.
 
@@ -147,7 +146,7 @@ Bunu oluşturmanızı, dağıtmanızı ve ne göründüğünü ve benzer görmek
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu hızlı başlangıcı tamamladığınızda Tebrikler! UWP ve Visual Studio IDE ile ilgili bazı temel konuları öğrendiğinize göre umuyoruz. Daha fazla bilgi için şu öğreticiyle devam edin:
+Bu hızlı başlangıcı tamamladığınızda Tebrikler! UWP ve Visual Studio IDE ile ilgili bazı temel konuları öğrendiğinize göre umuyoruz. Daha fazla bilgi edinmek için aşağıdaki öğreticiyle devam edin:
 
 > [!div class="nextstepaction"]
 > [Bir kullanıcı arabirimi oluşturma](/windows/uwp/design/basics/xaml-basics-ui)

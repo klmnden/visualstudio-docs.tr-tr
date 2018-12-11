@@ -2,7 +2,7 @@
 title: Visual Studio'yu yükleme
 titleSuffix: ''
 description: Visual Studio, adım adım yüklemeyi öğrenin.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c9ea8bcd88c77cc99c01c2623cb42a23b3b55d0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9160a5ebca6efe2cca48a2b8832a51fab3c6ca5a
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049684"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159743"
 ---
 # <a name="install-visual-studio-2017"></a>Visual Studio 2017'yi yükleyin
 
@@ -126,7 +126,7 @@ Varsayılan dilini değiştirme başka bir komut satırından yükleyiciyi çal�
 
 ## <a name="step-7---change-the-installation-location-optional"></a>7. adım - (isteğe bağlı) yükleme konumunu değiştirme
 
-**15.7 sürümündeki yeni**: artık Visual Studio yükleme ayak izini sistem sürücünüzde azaltabilir. İndirme önbelleğini, paylaşılan bileşenler, SDK'ları ve araçları farklı sürücülere taşıma ve Visual Studio en hızlı çalışan sürücüde korumak seçebilirsiniz.
+**15.7 sürümündeki yeni**: Artık, Visual Studio yükleme ayak izini sistem sürücünüzde azaltabilir. İndirme önbelleğini, paylaşılan bileşenler, SDK'ları ve araçları farklı sürücülere taşıma ve Visual Studio en hızlı çalışan sürücüde korumak seçebilirsiniz.
 
   ![2017 - Visual Studio yükleme konumunu değiştirmek](media/installation-options-by-location.png "yükleme konumunu değiştirme")
 

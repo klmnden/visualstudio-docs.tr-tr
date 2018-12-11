@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 2a179b5d02a3c50e6942a660e845edd546037d86
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: e725234cadc301d5e0e369131efd53c1c69d6337
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896490"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158963"
 ---
 # <a name="set-up-and-install-visual-studio-for-mac"></a>Ayarlanmış yukarı ve Mac için Visual Studio'yu yükleyin
 
@@ -32,7 +32,7 @@ Visual Studio'da iOS ile çalışmak için şu bilgilere ihtiyacınız vardır:
 
 1. Mac için Visual Studio'yu indirin [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/)
 
-2. Yükleyici paketini indirdikten sonra tıklayın **VisualStudioInstaller.dmg** yükleyici bağlamanız ve ardından çalıştırın logoyu tıklatarak tarafından aşağıdaki görüntüde gösterildiği gibi dosya:
+2. Yükleyici paketini indirdikten sonra tıklayın **VisualStudioForMacInstaller.dmg** yükleyici bağlamanız ve ardından çalıştırın logoyu tıklatarak tarafından aşağıdaki görüntüde gösterildiği gibi dosya:
 
    ![Yükleyici iletişim](media/installer-image1.png)
 

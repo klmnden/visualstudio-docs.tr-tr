@@ -1,5 +1,5 @@
 ---
-title: Özellik önerileri
+title: Özellik önerin
 description: Geliştirici topluluğu önerileri nedir, nasıl bir öneride bulunmak ve öneriler Visual Studio yol haritası, Microsoft tarafından nasıl kullanıldığını açıklar.
 ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
@@ -10,14 +10,14 @@ ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bdc2521020b1b354108e3130c7efa66d7c15394
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 541d8968ea71844d89903b9e4f146e86a15737e2
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053379"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160042"
 ---
-# <a name="overview-suggest-a-feature"></a>Genel Bakış: özellik önerin
+# <a name="overview-suggest-a-feature"></a>Genel Bakış: Özellik önerin
 
 Özellik sorunları bildirmek için geçerli özelliği yanı sıra üzerinde önermek için yepyeni bir deneyimle tanıttık [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com). Bu, doğrudan Visual Studio'nun mühendislik iş akışı ile etkileşim kurmak için yetkilendirilmiş yepyeni bir yoludur.
 

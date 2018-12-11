@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 463bc06bb023e973ac6fe62f5f92a3d9067b2841
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e31eeaf3061968cfa916d2ec5a0d0e522b9f6ebb
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280603"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159535"
 ---
 # <a name="access-data-in-visual-studio"></a>Visual Studio'da verilere erişime
 
@@ -37,32 +37,35 @@ Burada listelenen SQL ve NoSQL veritabanı ürünlerin çoğunu, yerel bir makin
 
 **Microsoft Azure**
 
-||||
-|-|-|-|
-|SQL veritabanı|Azure Cosmos DB|Depolama (BLOB'lar, tablolar, kuyruklar, dosyalar)|
-|SQL veri ambarı|SQL Server Stretch Database|StorSimple|
-
-ve daha fazlası...
+- SQL Veritabanı
+- Azure Cosmos DB
+- Depolama (BLOB'lar, tablolar, kuyruklar, dosyalar)
+- SQL veri ambarı
+- SQL Server Stretch Database
+- StorSimple
+- ve daha fazlası...
 
 **SQL**
 
-||||
-|-|-|-|
-|SQL Server 2005-2016 Express ve LocalDB dahil,|Firebird|MariaDB|
-|MySQL|Oracle|PostgreSQL|
-|SQLite|||
-
-ve daha fazlası...
+- SQL Server 2005-2016 (Express ve LocalDB içerir)
+- Firebird
+- MariaDB
+- MySQL
+- Oracle
+- PostgreSQL
+- SQLite
+- ve daha fazlası...
 
 **NoSQL**
 
-||||
-|-|-|-|
-|Apache Cassandra|CouchDB|MongoDB|
-|NVeritabanı|OrientDB|RavenDB|
-|VelocityDB|||
-
-ve daha fazlası...
+- Apache Cassandra
+- CouchDB
+- MongoDB
+- NVeritabanı
+- OrientDB |
+- RavenDB
+- VelocityDB
+- ve daha fazlası...
 
 Birçok veritabanı satıcılar ve üçüncü taraflar tarafından NuGet paketlerini Visual Studio tümleştirmesini desteklemiyor. Nuget.org veya Visual Studio'da NuGet Paket Yöneticisi aracılığıyla tekliflerini keşfedin (**Araçları** > **NuGet Paket Yöneticisi** > **Manage NuGet Çözüm için paketler**). Diğer veritabanı ürünleri bir uzantısı olarak Visual Studio ile tümleştirin. Bu teklifler Visual Studio Market'te giderek göz atabilirsiniz **Araçları**, **Uzantılar ve güncelleştirmeler** seçip **çevrimiçi** sol bölmesinde iletişim kutusu. Daha fazla bilgi için [Visual Studio için uyumlu veritabanı sistemleri](../data-tools/installing-database-systems-tools-and-samples.md).
 
@@ -73,7 +76,7 @@ Birçok veritabanı satıcılar ve üçüncü taraflar tarafından NuGet paketle
 
 .NET Core dahil olmak üzere tüm .NET veri erişimi, ADO.NET, veri kaynağı, ilişkisel ve ilişkisel olmayan herhangi bir türden erişmek için bir arabirim tanımlayan bir sınıf kümesi dayanır. Visual Studio çeşitli araçları vardır ve veritabanlarına bağlanmanıza yardımcı olması için ADO.NET çalışmak tasarımcıları verileri işlemek ve kullanıcıya verileri sunar. Bu bölümdeki belgeler bu araçlarının nasıl kullanılacağını açıklar. Ayrıca, doğrudan ADO.NET komut nesneleri karşı programlama yapabilirsiniz. ADO.NET API'lerini doğrudan çağırma hakkında daha fazla bilgi için bkz. [ADO.NET](/dotnet/framework/data/adonet/index).
 
-ASP.NET ile ilgili veri erişim belgeleri için bkz. [verilerle çalışma](http://www.asp.net/web-forms/overview/presenting-and-managing-data) ASP.NET sitesinde. ASP.NET MVC ile Entity Framework kullanan bir öğretici için bkz. [Entity Framework 6 Code MVC 5 kullanarak First ile çalışmaya başlama](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
+ASP.NET ile ilgili veri erişim belgeleri için bkz. [verilerle çalışma](https://www.asp.net/web-forms/overview/presenting-and-managing-data) ASP.NET sitesinde. ASP.NET MVC ile Entity Framework kullanan bir öğretici için bkz. [Entity Framework 6 Code MVC 5 kullanarak First ile çalışmaya başlama](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
 C# veya Visual Basic'te Evrensel Windows Platformu (UWP) uygulamaları, .NET için Microsoft Azure SDK'sı, Azure depolama ve diğer Azure hizmetlerine erişmek için kullanabilirsiniz. Herhangi bir RESTful hizmeti ile iletişimi Windows.Web.HttpClient sınıfı sağlar. Daha fazla bilgi için [Windows.Web.Http kullanarak bir HTTP sunucusuna bağlanmak üzere nasıl](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 
@@ -103,9 +106,9 @@ SQL Server'a bağlanma C++ uygulamalarını kullanması gereken [SQL Server içi
 
 C++ programları, REST hizmetlerini kullanabileceğiniz [C++ REST SDK](https://github.com/Microsoft/cpprestsdk).
 
-Microsoft Azure depolamasıyla çalışmayı C++ programları kullanabileceğiniz [Microsoft Azure depolama istemci](http://www.nuget.org/packages/wastorage).
+Microsoft Azure depolamasıyla çalışmayı C++ programları kullanabileceğiniz [Microsoft Azure depolama istemci](https://www.nuget.org/packages/Microsoft.Azure.Storage.CPP).
 
-Veri modelleme&mdash;Visual Studio C++ için ORM katman sağlamaz. [ODBC](http://www.codesynthesis.com/products/odb/) C++ için popüler bir açık kaynak ORM olduğu.
+Veri modelleme&mdash;Visual Studio C++ için ORM katman sağlamaz. [ODBC](https://www.codesynthesis.com/products/odb/) C++ için popüler bir açık kaynak ORM olduğu.
 
 C++ uygulamalarından veritabanlarına bağlanma hakkında daha fazla bilgi için bkz: [C++ için Visual Studio veri Araçları](../data-tools/visual-studio-data-tools-for-cpp.md). Eski Visual C++ veri erişim teknolojileri hakkında daha fazla bilgi için bkz. [veri erişimi](/cpp/data/data-access-in-cpp).
 
@@ -135,7 +138,7 @@ Yükleme [Visual Studio'da Python desteği](../python/overview-of-python-tools-f
 
 [ADO.NET Entity Framework](https://docs.microsoft.com/ef/ef6/)&mdash;geliştiricilere doğrudan ilişkisel bir veritabanında yerine kavramsal bir modeli karşı tanıyan veri uygulamalarının nasıl oluşturulacağını açıklar.
 
-[WCF Veri Hizmetleri 4.5](/dotnet/framework/data/wcf/index)&mdash;nasıl kullanılacağını açıklar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] web veya intranet uygulayan veri hizmetlerini dağıtmanızı [açık veri Protokolü (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
+[WCF Veri Hizmetleri 4.5](/dotnet/framework/data/wcf/index)&mdash;nasıl kullanılacağını açıklar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] web veya intranet uygulayan veri hizmetlerini dağıtmanızı [açık veri Protokolü (OData)](https://www.odata.org/).
 
 [Office çözümlerindeki veriler](../vsto/data-in-office-solutions.md)&mdash;Office çözümlerinde verilerin nasıl çalıştığını açıklayan konulara bağlantılar içerir. Burada şema tabanlı programlama, verileri önbelleğe alma ve sunucu tarafında veri erişimi hakkında bilgiler bulunur.
 

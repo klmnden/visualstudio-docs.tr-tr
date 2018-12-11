@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8710926591c565528bbf65ba1af79a670ad76ee7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cfd3ed3461b40f85e66d62f01e68aff4ce740031
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057320"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159509"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Visual Studio IDE'yi kişiselleştirme
 
@@ -42,7 +42,7 @@ Birçok kişiselleştirme seçenekleri aracılığıyla sunulur [ortam seçenekl
 
 Renk teması açık, koyu mavi yazıp arasında değiştirmek için `environment` içinde **hızlı başlatma** kutusuna ve ardından **ortam--> Genel**. İçinde **seçenekleri** iletişim kutusunda, değişiklik **renk teması** seçeneği.
 
-Düzenleyicide renklendirme seçeneklerini değiştirmek için şunu yazın `environment` içinde **hızlı başlatma** kutusuna ve ardından **ortam--> yazı tipleri ve renkler**. Bkz: [nasıl yapılır: yazı tiplerini ve renkleri değiştirme](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Düzenleyicide renklendirme seçeneklerini değiştirmek için şunu yazın `environment` içinde **hızlı başlatma** kutusuna ve ardından **ortam--> yazı tipleri ve renkler**. Bkz: [nasıl yapılır: Yazı tiplerini ve renkleri değiştirme](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Ana menü büyük/küçük harf
 
@@ -50,7 +50,7 @@ Ana menü büyük/küçük harf arasında değiştirebilirsiniz **ilk harfler b�
 
 ### <a name="customize-menus-and-toolbars"></a>Menüleri ve araç çubuklarını özelleştirme
 
-Menü veya araç çubuğu öğe eklemek veya kaldırmak için bkz: [nasıl yapılır: menüleri ve araç çubuklarını özelleştirme](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+Menü veya araç çubuğu öğe eklemek veya kaldırmak için bkz: [nasıl yapılır: Menüleri ve araç çubuklarını özelleştirme](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="start-page"></a>Başlangıç sayfası
 
@@ -67,6 +67,6 @@ Tanımlamak ve birden çok pencere düzenlerini kaydedebilir ve bunlar arasında
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Ortam ayarları](environment-settings.md)
-- [Visual Studio IDE'ye genel bakış](../ide/visual-studio-ide.md)
-- [Hızlı Başlangıç: Visual Studio IDE ilk bakış](../ide/quickstart-ide-orientation.md)
+- [Visual Studio IDE'ye genel bakış](../get-started/visual-studio-ide.md)
+- [Hızlı Başlangıç: Visual Studio IDE ilk bakma](../ide/quickstart-ide-orientation.md)
 - [IDE Mac için Visual Studio'yu özelleştirme](/visualstudio/mac/customizing-the-ide)

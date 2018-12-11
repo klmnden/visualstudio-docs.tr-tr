@@ -1,5 +1,5 @@
 ---
-title: Bir Windows Forms uygulaması Visual Basic oluşturun
+title: Oluşturma bir Windows Forms uygulaması Visual Basic ile
 description: Visual Basic, adım adım ile Visual Studio'da bir Windows Forms uygulaması oluşturmayı öğrenin.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
@@ -13,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a5dc99b3111b7abafe49668eaae35f595bc0a07
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 81b44e7053b820e625b5ad61d6e537c95cbf9c03
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063198"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159639"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Bir Windows oluşturma Visual Basic ile Visual Studio'da Forms uygulaması
 
@@ -103,5 +103,5 @@ Bu hızlı başlangıcı tamamladığınızda Tebrikler! Visual Basic ve Visual 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Hızlı Başlangıç: Visual Basic ile Visual Studio'da bir konsol uygulaması oluşturacaksınız.](quickstart-visual-basic-console.md)
+* [Hızlı Başlangıç: Visual Basic ile Visual Studio'da konsol uygulaması oluşturma](quickstart-visual-basic-console.md)
 * [Visual Basic IntelliSense hakkında daha fazla bilgi edinin](visual-basic-specific-intellisense.md)

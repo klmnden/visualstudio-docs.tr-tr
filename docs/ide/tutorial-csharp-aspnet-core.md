@@ -1,10 +1,11 @@
 ---
 title: C# ve Visual Studio'da ASP.NET Core ile çalışmaya başlama
+titleSuffix: ''
 description: Visual Studio'da C# ile adım adım ASP.NET Core web uygulaması oluşturmayı öğrenin.
-ms.custom: ''
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -15,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d684ecb9e29dd4c6f140ad7d6f52e301e0d0da13
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: 4ce8709751db4eb910bbf78d2384a7a8dcaf7fd5
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244495"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160185"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Öğretici: C# ve Visual Studio'da ASP.NET Core ile çalışmaya başlama
 
@@ -56,7 +57,7 @@ Bu öğretici, koyu Tema kullanan ekran görüntüleri içerir. Koyu tema kullan
 
 Görmüyorsanız **ASP.NET Core Web uygulaması** proje şablonu, alabilirsiniz, ekleyerek **ASP.NET ve web geliştirme** iş yükü. Bu iş yükü, makinenizde yüklü Visual Studio 2017 güncelleştirmeleri bağlı olarak iki aşağıdaki yollardan biriyle ekleyebilirsiniz.
 
-#### <a name="option-1-use-the-new-project-dialog-box"></a>Seçenek 1: Yeni Proje iletişim kutusunu kullanın.
+#### <a name="option-1-use-the-new-project-dialog-box"></a>1. seçenek: Yeni Proje iletişim kutusunu kullanın
 
 1. Seçin **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu. (Görünen ayarlarınıza bağlı olarak, görmek için kaydırmanız gerekebilir.)
 
@@ -68,7 +69,7 @@ Görmüyorsanız **ASP.NET Core Web uygulaması** proje şablonu, alabilirsiniz,
 
    (Yeni iş yükünü yüklemek devam etmeden önce Visual Studio'yu kapatın gerekebilir.)
 
-#### <a name="option-2-use-the-tools-menu-bar"></a>2. seçenek: araçlar menü çubuğunu kullanın.
+#### <a name="option-2-use-the-tools-menu-bar"></a>2. seçenek: Araçlar menü çubuğunu kullanın
 
 1. / İptal **yeni proje** iletişim kutusu. Ardından, üstteki menü çubuğundan **Araçları** > **araçları ve özellikleri Al**.
 

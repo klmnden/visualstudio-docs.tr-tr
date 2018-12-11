@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: oluşturma ve çalıştırma LinqToXmlDataBinding örneği'
+title: 'Nasıl Yapılır: Oluşturma ve çalıştırma LinqToXmlDataBinding örneği'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1164312d74259ad4f3a56750a487fb2578595cf0
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 67d8bc9ece20867e96f0ae0ee6d6ceb9ad2e3952
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924167"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159782"
 ---
-# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Nasıl yapılır: oluşturma ve çalıştırma LinqToXmlDataBinding örneği
+# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Nasıl Yapılır: LinqToXmlDataBinding oluşturma ve çalıştırma örneği
 
 Bu konu nasıl oluşturulup LinqToXmlDataBinding Visual Studio projeyi oluşturun ve elde edilen LinqToXmlDataBinding Windows Presentation Foundation (WPF) örnek program çalıştırma gösterir.
 
-Visual Studio hakkında daha fazla bilgi için bkz. [Visual Studio IDE'ye genel bakış](../ide/visual-studio-ide.md).
+Visual Studio hakkında daha fazla bilgi için bkz. [Visual Studio IDE'ye genel bakış](../get-started/visual-studio-ide.md).
 
 ## <a name="create-and-populate-the-project"></a>Oluşturma ve proje doldurma
 
@@ -50,9 +50,9 @@ Visual Studio hakkında daha fazla bilgi için bkz. [Visual Studio IDE'ye genel 
 
 1. Dosyasındaki **App.xaml**, dizenin tüm oluşumları değiştirmek `Window1.xaml` ile `L2XDBForm.xaml`.
 
-1. Basarak çözümü oluşturun **Ctrl**+**Shift**+**B**.
+1. **Ctrl**+**Shift**+**B** tuşlarına basarak çözümü oluşturun.
 
-## <a name="run-the-program"></a>Programı çalıştırın
+## <a name="run-the-program"></a>Programı çalıştırma
 
 LinqToXmlDataBinding program görüntülemek ve gömülü bir XML öğesi olarak depolanan kitap listesi işlemek kullanıcının sağlar.
 
@@ -82,4 +82,4 @@ LinqToXmlDataBinding program görüntülemek ve gömülü bir XML öğesi olarak
 
 - [LINQ, XML örneği kullanarak WPF verilerini bağlama](../designers/wpf-data-binding-using-linq-to-xml-example.md)
 - [İzlenecek yol: LinqToXmlDataBinding örneği](../designers/walkthrough-linqtoxmldatabinding-example.md)
-- [Visual Studio IDE'ye genel bakış](../ide/visual-studio-ide.md)
+- [Visual Studio IDE'ye genel bakış](../get-started/visual-studio-ide.md)

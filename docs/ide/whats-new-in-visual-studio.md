@@ -1,10 +1,11 @@
 ---
-title: Visual Studio 2017'deki yenilikler
+title: Visual Studio 2017’deki yenilikler
+titleSuffix: ''
 description: Visual Studio 2017'de yeni özellikler hakkında bilgi edinin.
-ms.custom: ''
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -17,18 +18,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a007d6557fe7ebd533ee34fecc8b8c0315024edf
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c490d15f27801dff6bb09f6356ad7c665b09c558
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895775"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160198"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Hangi&#39;Visual Studio 2017'deki yenilikler
 
 **İçin güncelleştirilmiş [15,9 sürüm](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
-Visual Studio'nun önceki bir sürümden yükseltme mi istiyorsunuz? İşte ne Visual Studio 2017, sunabileceğiniz: herhangi bir geliştirme, herhangi bir uygulama ve tüm platformlar için eşsiz üretkenlik. Android, iOS, Windows, Linux, web ve bulut için uygulamalar geliştirmek için Visual Studio 2017'yi kullanın. Hızlı kod yazın, kolayca hata ayıklama ve tanılama yapın, sık sık test edin ve güvenle kullanıma sunun. Ayrıca, kendi uzantılarınızı oluşturarak Visual Studio’yu özelleştirebilir ve kapsamını genişletebilirsiniz. Sürüm denetimi kullanın, Çevik ve bu sürümle birlikte verimli bir şekilde işbirliği yapın!
+Visual Studio'nun önceki bir sürümden yükseltme mi istiyorsunuz? Hangi Visual Studio 2017, sunabileceğiniz aşağıda verilmiştir: Herhangi bir geliştirme, herhangi bir uygulama ve tüm platformlar için eşsiz üretkenlik. Android, iOS, Windows, Linux, web ve bulut için uygulamalar geliştirmek için Visual Studio 2017'yi kullanın. Hızlı kod yazın, kolayca hata ayıklama ve tanılama yapın, sık sık test edin ve güvenle kullanıma sunun. Ayrıca, kendi uzantılarınızı oluşturarak Visual Studio’yu özelleştirebilir ve kapsamını genişletebilirsiniz. Sürüm denetimi kullanın, Çevik ve bu sürümle birlikte verimli bir şekilde işbirliği yapın!
 
 Önceki sürümden itibaren Visual Studio 2015 yapılan değişiklikler üst düzey bir özeti aşağıda verilmiştir:
 
@@ -64,7 +65,7 @@ Ve yüklemenizi çok ince ayar seçenekleriniz var:
 
 * İş yükleri kullanmak yerine kendi bileşenleri çekme istiyorsunuz? Seçin **tek tek bileşenler** yükleyici sekmesinden.
 * Ayrıca Windows dil seçeneğini değiştirmek zorunda kalmadan dil paketlerini yüklemek istiyorsunuz? Seçin **dil paketlerini** yükleyici sekmesi.
-* **15.7 sürümündeki yeni**: Burada Visual Studio'yu yükler konumu değiştirmek istiyorsunuz? Seçin **yükleme seçenekleri** yükleyici sekmesi.
+* **15.7 sürümündeki yeni**: Burada Visual Studio'yu yükler konumu değiştirilsin mi? Seçin **yükleme seçenekleri** yükleyici sekmesi.
 
 Size yol gösteren yönergeler dahil olmak üzere yeni yükleme deneyimi hakkında daha fazla bilgi için bkz: [Visual Studio'yu yükleyin](../install/install-visual-studio.md) sayfası.
 
@@ -106,9 +107,9 @@ Uzantı dolaşımı Yöneticisi yüklediğiniz uzantıları izler, ancak Dolaş�
 
 Uzantı dolaşımı Yöneticisi'ni kullandığınızda, listenizde üç simge türü vardır:
 
-* ![Dolaşıma açıldı simgesi](../ide/media/vs2017ide-roamedicon.png)  **_dolaşıma_**: uzantı dolaşımı bu listenin parçası, ancak makinenizde yüklü değil.
+* ![Dolaşıma açıldı simgesi](../ide/media/vs2017ide-roamedicon.png)  **_dolaşıma_**: Dolaşım bu listenin parçası, ancak, makinede yüklü olmayan bir uzantı.
   (Bu kullanarak yükleyebileceğiniz **indirme** düğmesi.)
-* ![Dolaşıma açıldı ve yüklendi simgesi](../ide/media/vs2017ide-roamedinstalledicon.png)  **_dolaşıma açıldı ve yüklü_**: Bu gezici listesinin geliştirme ortamınızda yüklenen tüm uzantıları.
+* ![Dolaşıma açıldı ve yüklendi simgesi](../ide/media/vs2017ide-roamedinstalledicon.png)  **_dolaşıma açıldı ve yüklü_**: Dolaşım bu listenin parçası olan ve geliştirme ortamınızda yüklenen tüm uzantıları.
   (Dolaşımda olabilen istemediğiniz karar verirseniz, bu kullanarak kaldırabilirsiniz **dolaşımı Durdur** düğmesi.)
 * ![Yüklü simgesi](../ide/media/vs2017ide-installedicon.png)  **_yüklü_**: Bu ortamda yüklü, ancak Dolaşım listenize parçası olmayan tüm uzantıları.
   (Kullanarak uzantılar Dolaşım listesine ekleyebilirsiniz **Başlat Dolaşım** düğmesi.)
@@ -131,19 +132,19 @@ Otomatikleştirilmiş test, herhangi bir DevOps işlem hattına önemli bir par�
 
 Otomatikleştirilmiş testleri hakkında daha fazla bilgi için bkz: [DevOps otomatikleştirilmiş testler CI/CD işlem hattı](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) blog gönderisi.
 
-Ve yenilikler hakkında daha fazla bilgi için [Visual Studio için sürekli teslim Araçları](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) adlı DevLabs uzantısının bkz [güvenle işleyin: yürütme zamanı kod kalitesini](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) blog gönderisi.
+Ve yenilikler hakkında daha fazla bilgi için [Visual Studio için sürekli teslim Araçları](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) adlı DevLabs uzantısının bkz [güvenle işleyin: İşleme zamanı kod kalitesini](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) blog gönderisi.
 
 ### <a name="visual-studio-ide-enhancements"></a>Visual Studio IDE geliştirmeleri
 
 #### <a name="multi-caret-editing"></a>Birden çok giriş işaretini düzenleme
 
-**Yeni 15,8**: aynı anda birden fazla konumda bir dosya düzenleme, artık kolay. Bir dosya içinde birden çok konumda ekleme noktaları ve seçimleri oluşturarak başlayın. Ardından, aynı anda iki veya daha fazla yerde aynı düzenleme yapmak birden çok giriş işaretini düzenleme özelliğini kullanın.
+**Yeni 15,8**: Aynı anda birden fazla konumda bir dosya düzenlemeye hemen kolaydır. Bir dosya içinde birden çok konumda ekleme noktaları ve seçimleri oluşturarak başlayın. Ardından, aynı anda iki veya daha fazla yerde aynı düzenleme yapmak birden çok giriş işaretini düzenleme özelliğini kullanın.
 
 Daha fazla bilgi için [birden çok giriş işaretini seçimi](finding-and-replacing-text.md#multi-caret-selection) bölümünü, [metin bulma ve değiştirme](finding-and-replacing-text.md) sayfası.
 
 #### <a name="keep-keybinding-profiles-consistent"></a>Tuş profilleri tutarlı tutun
 
-**Yeni 15,8**: şimdi, tuş bağlamaları tutarlı iki yeni klavye profilleriyle araçlar arasında tutabildiğiniz: Visual Studio Code ve ReSharper (Visual Studio). Bu düzenleri altında bulabilirsiniz **Araçları** > **seçenekleri** > **genel** > **klavye**ve üstteki açılan menüsü.
+**Yeni 15,8**: Şimdi, tuş bağlamaları tutarlı iki yeni klavye profilleriyle araçlar arasında tutabildiğiniz: Visual Studio Code ve ReSharper (Visual Studio). Bu düzenleri altında bulabilirsiniz **Araçları** > **seçenekleri** > **genel** > **klavye**ve üstteki açılan menüsü.
 
   ![Visual Studio Code ve ReSharper yeni tuş profilleri](../ide/media/vs-keyboard-mappings-code-resharper.png)
 
@@ -172,7 +173,7 @@ Visual Studio'da bir proje ile çalışırken, ayarlayabilir ve hızlı bir şek
 
 Biz A B daha güvenle ve daha az dikkat dağıtıcı faktör almanıza yardımcı olması için gezinti deneyimini de yeniledik.
 
-* **15.4 yeni**: **tanıma** (**Ctrl**+**tıklayın** veya **F12**) &ndash; fare kullanıcılar tuşlarına basarak üyesi tanımına gitmek için daha kolay bir şekilde ayarlayabiliyoruz **Ctrl** tıklayıp üyesi. Tuşuna basarak **Ctrl** ve bir kod simgesinin geldiğinizde, alt çizgi ve bir bağlantıya açın. Bkz: [tanıma ve Özet tanım](../ide/go-to-and-peek-definition.md) daha fazla bilgi için.
+* **15.4 yeni**: **Tanıma Git** (**Ctrl**+**tıklayın** veya **F12**) &ndash; fare kullanıcınız tanımına gitmek için daha kolay bir yolu bir üye tuşuna basarak **Ctrl** tıklayıp üyesi. Tuşuna basarak **Ctrl** ve bir kod simgesinin geldiğinizde, alt çizgi ve bir bağlantıya açın. Bkz: [tanıma ve Özet tanım](../ide/go-to-and-peek-definition.md) daha fazla bilgi için.
 
 * **Uygulamaya Git** (**Ctrl**+**F12**) &ndash; , çeşitli uygulamaları herhangi bir temel tür veya üye gidin.
 
@@ -216,7 +217,7 @@ Daha fazla bilgi için [Visual Studio'da yeni özel durum Yardımcısı'nı kull
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Anlık görüntüler ve IntelliTrace geri adım atma
 
-**15.5 yeni**: IntelliTrace geri adım adım olay otomatik olarak her bir kesme noktası ve hata ayıklayıcı uygulamanızın anlık görüntüsünü alır. Kaydedilen anlık görüntü, önceki kesme noktaları veya adımlara geri dönün ve daha önce olduğu gibi uygulama durumunu görüntülemek etkinleştirin. IntelliTrace geri adım atma önceki uygulama durumu görmek istiyorsanız ancak hata ayıklamayı yeniden başlatın veya istenen uygulama durumu yeniden istemediğiniz durumlarda size zaman kazandırabilir.
+**15.5 yeni**: IntelliTrace geri adım, otomatik olarak adım olay, her bir kesme noktası ve hata ayıklayıcı uygulamanızın anlık görüntüsünü alır. Kaydedilen anlık görüntü, önceki kesme noktaları veya adımlara geri dönün ve daha önce olduğu gibi uygulama durumunu görüntülemek etkinleştirin. IntelliTrace geri adım atma önceki uygulama durumu görmek istiyorsanız ancak hata ayıklamayı yeniden başlatın veya istenen uygulama durumu yeniden istemediğiniz durumlarda size zaman kazandırabilir.
 
 Gidin ve anlık görüntüleri kullanarak görüntüle **adım geriye dönük** ve **İleri** içinde düğmeleri **hata ayıklama** araç çubuğu. Bu düğmeler görünen olaylar gidin **olayları** sekmesinde **tanılama araçları** penceresi. Geriye veya ileriye doğru bir olay için otomatik olarak Adımlama Seçili olayda geçmiş hata ayıklamayı etkinleştirir.
 
@@ -245,7 +246,7 @@ Daha fazla bilgi için [Visual Studio için Azure işlevleri Araçları](https:/
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>Anlık görüntü noktaları ve günlüğe kaydetme noktaları Canlı Azure uygulamalarında kullanarak canlı ASP.NET uygulamalarının hatalarını ayıklama
 
-**15.5 yeni**: anlık görüntü hata ayıklayıcısı, ilgilendiğiniz kod yürütüldüğünde, uygulamanızı üretimde anlık görüntüsünü alır. Bir anlık görüntüsünü almak için hata ayıklayıcı açmasını sağlamak için anlık görüntü noktaları ve günlüğe kaydetme noktaları kodunuzda ayarlayın. Hata ayıklayıcı, tam olarak üretim uygulamanızın trafiğini etkilemeden, çıktığına görmenizi sağlar. Snapshot Debugger, üretim ortamlarında ortaya çıkan sorunları çözmek için gereken süreyi ciddi ölçüde azaltmaya yardımcı olabilir.
+**15.5 yeni**: Snapshot Debugger, ilgilendiğiniz kod yürütüldüğünde, üretim uygulamalarınızı anlık görüntüsünü alır. Bir anlık görüntüsünü almak için hata ayıklayıcı açmasını sağlamak için anlık görüntü noktaları ve günlüğe kaydetme noktaları kodunuzda ayarlayın. Hata ayıklayıcı, tam olarak üretim uygulamanızın trafiğini etkilemeden, çıktığına görmenizi sağlar. Snapshot Debugger, üretim ortamlarında ortaya çıkan sorunları çözmek için gereken süreyi ciddi ölçüde azaltmaya yardımcı olabilir.
 
 Anlık görüntü koleksiyonunu, Azure App Service'te çalışan aşağıdaki web uygulamaları için kullanılabilir:
 
@@ -281,19 +282,19 @@ Daha fazla bilgi için [Visual Studio ve Xamarin](../cross-platform/visual-studi
 
 ### <a name="entitlements-editor"></a>Yetkilendirmeler Düzenleyicisi
 
-**15.3 yeni**: iOS geliştirme ihtiyaçlarınız için tek başına bir yetkilendirmeler Düzenleyicisi ekledik. Bu, kolayca gözatılabilir kolay bir kullanıcı Arabirimi içerir. Başlatmak için çift tıklayın, *entitlements.plist* dosya.
+**15.3 yeni**: İOS geliştirme ihtiyaçlarınız için tek başına bir yetkilendirmeler Düzenleyicisi ekledik. Bu, kolayca gözatılabilir kolay bir kullanıcı Arabirimi içerir. Başlatmak için çift tıklayın, *entitlements.plist* dosya.
 
 ![Xamarin için yetkilendirme Düzenleyicisi](../ide/media/xamarin-entitlements-editor.png)
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Xamarin için Visual Studio Araçları
 
-**15.4 yeni**: Xamarin Live, geliştiricilerin sürekli olarak dağıtma, test ve hata ayıklama uygulamaları doğrudan iOS ve Android cihazlar üzerinde sağlar. Xamarin Live Player'ı indirdikten sonra&mdash;App Store veya Google Play'de kullanılabilir&mdash;Cihazınızı Visual Studio ile eşleştirebilir ve mobil uygulamaları derleme yönteminde çığır. Bu işlevsellik artık Visual Studio’ya eklenmiştir ve **Araçlar** > **Seçenekler** > **Xamarin** > **Diğer** > **Xamarin Live Player’ı Etkinleştir** seçeneği kullanılarak etkinleştirilebilir.
+**15.4 yeni**: Xamarin Live, geliştiricilerin doğrudan iOS ve Android cihazlarında uygulamaları üzerinde sürekli olarak dağıtım, test ve hata ayıklama işlemleri gerçekleştirmesine olanak tanır. Xamarin Live Player'ı indirdikten sonra&mdash;App Store veya Google Play'de kullanılabilir&mdash;Cihazınızı Visual Studio ile eşleştirebilir ve mobil uygulamaları derleme yönteminde çığır. Bu işlevsellik artık Visual Studio’ya eklenmiştir ve **Araçlar** > **Seçenekler** > **Xamarin** > **Diğer** > **Xamarin Live Player’ı Etkinleştir** seçeneği kullanılarak etkinleştirilebilir.
 
 ![Xamarin Live Player'da eşleştirme, dağıtım ve canlı düzenleme modlarına ilişkin animasyon](../ide/media/xamarinliveplayer.gif)
 
 ### <a name="support-for-google-android-emulator"></a>Google Android öykünücüsü için destek
 
-**Yeni 15,8**: artık Hyper-V kullandığınızda, Hyper-V sunucusundaki Hyper-V sanal makineleri, Docker araçları, HoloLens öykünücü ve daha fazla gibi tabanlı diğer teknolojilerle Google Android öykünücüsü yan yana kullanabilirsiniz. (Bu özellik Windows gerektirir 10 Nisan 2018 güncelleştirmesi veya sonrası.)
+**Yeni 15,8**: Artık Hyper-V kullandığınızda, Hyper-V sunucusundaki Hyper-V sanal makineleri, Docker araçları, HoloLens öykünücü ve daha fazla gibi tabanlı diğer teknolojilerle Google Android öykünücüsü yan yana kullanabilirsiniz. (Bu özellik Windows gerektirir 10 Nisan 2018 güncelleştirmesi veya sonrası.)
 
 ![Hyper-V teknolojisi Google Android öykünücüsü](../ide/media/xamarin-hyperv-android-emulator.png)
 
@@ -307,11 +308,11 @@ Daha fazla bilgi için [emulator performansını için donanım hızlandırma](/
 
 ### <a name="visual-studio-app-center"></a>Visual Studio App Center
 
-**15.5 yeni**: Visual Studio App Center&mdash;, artık Android, iOS, macOS ve Windows uygulamaları için genel kullanıma sunulan&mdash;ihtiyacınız olan her şeyi otomatik derlemeler de dahil olmak üzere uygulamalarınızın yaşam döngüsünü yönetme hakkında gerçek test sahip cihazlar bulutta, dağıtım beta test uzmanlarına ve uygulama mağazalarının ve kilitlenme ve analiz verileri gerçek kullanımını izleme. Objective-C, Swift, Java, C#, Xamarin ve React Native içinde yazılmış uygulamalar, tüm özellikleri arasında desteklenir.
+**15.5 yeni**: Visual Studio App Center&mdash;, artık Android, iOS, macOS ve Windows uygulamaları için genel kullanıma sunulan&mdash;ihtiyacınız olan her şey otomatik derlemeler de dahil olmak üzere uygulamalarınızın yaşam döngüsünü yönetirken buluttaki gerçek cihazlarda test sahip Dağıtım beta test uzmanlarına ve uygulama mağazalarının ve kilitlenme ve analiz verileri gerçek kullanımını izleme. Objective-C, Swift, Java, C#, Xamarin ve React Native içinde yazılmış uygulamalar, tüm özellikleri arasında desteklenir.
 
   ![Visual Studio App Center test ortamı](../ide/media/app-center-test-env.png)
 
-Daha fazla bilgi için [Introducing App Center: oluşturun, test edin, dağıtın ve izleyin uygulamalarını bulutta](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) blog gönderisi.
+Daha fazla bilgi için [Introducing App Center: Oluşturun, test edin, dağıtın ve izleyin uygulamalarını bulutta](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) blog gönderisi.
 
 ## <a name="cross-platform-development"></a>Platformlar arası geliştirme
 
@@ -369,7 +370,7 @@ Visual Studio 2017 genellikle, geliştirme deneyimini daha da iyi hale getirebil
 
 Daha fazla geliştirilme Visual Studio 2017 için ne hakkında olduğu edinmek ister misiniz? Bkz: [Visual Studio yol haritası](/visualstudio/productinfo/vs2018-roadmap) sayfası.
 
-## <a name="contact-us"></a>Bizimle iletişime geçin
+## <a name="contact-us"></a>Bizimle iletişim kurun
 
  Neden Visual Studio ekibine geri bildirim gönderilsin mi? Size müşteri geri bildirimi ciddiye olduğundan. Ne yapıyoruz çoğunu yürütür.
 

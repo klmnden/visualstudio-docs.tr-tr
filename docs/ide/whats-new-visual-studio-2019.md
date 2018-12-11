@@ -1,10 +1,11 @@
 ---
 title: Visual Studio 2019 Preview'daki yenilikler
+titleSuffix: ''
 description: Visual Studio 2019 Önizleme sürümündeki yeni özellikler hakkında bilgi edinin.
-ms.custom: ''
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev16
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -16,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 838065d01e67f230d37ee318231371707117ec07
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 06e3966703d95f897706eec8c46c2cd78fda859f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52897002"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159756"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Hangi&#39;Visual Studio 2019 Preview'daki yenilikler
 
@@ -86,7 +87,7 @@ Ve Visual Studio 2019 Önizleme ile bu hizmet, varsayılan olarak yüklenir.
 
 ### <a name="manage-pull-requests-prs-from-the-ide"></a>Çekme isteklerini (Pr'ler) IDE'den yönetme
 
-Visual Studio 2019 önizlemesi ile kullanmak için indirebileceğiniz yeni bir uzantı kullanıma sunduğumuz. Bu yeni uzantı ile gözden geçirebilir, çalıştırma ve çekme istekleri Visual Studio IDE'den çıkmadan bile takımınızdan debug [(tümleşik geliştirme ortamı)](../ide/visual-studio-ide.md). Biz, kod bugün Azure depolarda destekler, ancak genel deneyimini iyileştirmek ve GitHub'ı desteklemek için genişletme.
+Visual Studio 2019 önizlemesi ile kullanmak için indirebileceğiniz yeni bir uzantı kullanıma sunduğumuz. Bu yeni uzantı ile gözden geçirebilir, çalıştırma ve çekme istekleri Visual Studio IDE'den çıkmadan bile takımınızdan debug [(tümleşik geliştirme ortamı)](../get-started/visual-studio-ide.md). Biz, kod bugün Azure depolarda destekler, ancak genel deneyimini iyileştirmek ve GitHub'ı desteklemek için genişletme.
 
 Hemen kullanmaya başlamak için Yükle [Visual Studio için çekme istekleri](https://aka.ms/pr4vs) Visual Studio Market'ten uzantı.
 

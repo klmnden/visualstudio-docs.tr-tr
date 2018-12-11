@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e947ec99ff0d63f413e00f5602035a7baa0bd708
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c7568583ac9239e168760000f0712ca7dcc4c33f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348348"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159860"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio’da oturum açma
 
@@ -70,6 +70,6 @@ Oturum açma sırasında herhangi bir sorunla karşılaşırsanız, bkz. Lütfen
 ## <a name="see-also"></a>Ayrıca bkz.
 
 * [Visual Studio’nun Kilidini Açma](../ide/how-to-unlock-visual-studio.md)
-* [Visual Studio IDE’ye Genel Bakış](../ide/visual-studio-ide.md)
+* [Visual Studio IDE’ye Genel Bakış](../get-started/visual-studio-ide.md)
 * [Oturum açma (Mac için Visual Studio)](/visualstudio/mac/signing-in)
 * [Etkinleştirme (Mac için Visual Studio)](/visualstudio/mac/activation)

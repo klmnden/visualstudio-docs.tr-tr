@@ -1,23 +1,24 @@
 ---
-title: "Genel Bakış: Visual Studio'da sorun bildir"
+title: Sorun bildir
 description: Sorun raporu genel bir bakış sağlar ve sorun durumları ve tanımları içerir
 ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56047150ce98cb6554248e43b7b8d7ff433cf283
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: b6d7605cffeca2797d47aa90c6f64a1aab0a6cb2
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826680"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159834"
 ---
-# <a name="overview-report-a-problem"></a>Genel Bakış: sorun bildir
+# <a name="overview-report-a-problem"></a>Genel Bakış: Sorun bildir
 
 Sorun raporu sorunları göndermek Visual Studio Geliştirici topluluğu sağlar. Her biri, sorun raporları, sistem tasarımı, etkili sorunlarını belirleyin ve çözün yardımcı olmak için doğrudan ürün ekiplerimiz ile etkileşim kurmak için güçlendirin bizim core'da bir iş öğesi olur. Visual Studio ürün ailesi geliştirmek için zengin tanılama bilgileriyle birlikte gönderilen Geri bildiriminiz önemlidir. Biz aslında, sorunları bildirmek zaman ayırdığınız için teşekkür ederiz.
 

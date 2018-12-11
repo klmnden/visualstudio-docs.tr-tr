@@ -14,16 +14,17 @@ helpviewer_keywords:
 - install Visual Studio, administrator guide
 ms.service: ''
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: edf5eb09d00bc2814dbc5a8b616459fa8566556c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3b88d563ca5a3fa2114c6bff31cf01b2956e69a3
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063308"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159483"
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Visual Studio 2017 iş yükü ve Bileşen kimlikleri
 
@@ -44,7 +45,7 @@ Sürüm adlarını aşağıdaki tabloda kullanılabilir iş yükü ve Bileşen k
 | [Visual&nbsp;Studio Test&nbsp;Professional&nbsp;2017](workload-component-id-vs-test-professional.md) | Microsoft.VisualStudio.Product.TestProfessional | Visual Studio Test Uzmanı 2017 |
 | [Görsel&nbsp;Studio geri bildirim&nbsp;istemci&nbsp;2017](workload-component-id-vs-feedback-client.md) | Microsoft.VisualStudio.Product.FeedbackClient | Visual Studio Geri Bildirim İstemcisi 2017 |
 
-Bu listeleri kullanma hakkında daha fazla bilgi için bkz. [Visual Studio 2017'yi yüklemek için komut satırı parametrelerini kullanın](use-command-line-parameters-to-install-visual-studio.md) sayfası ve [nasıl yapılır: genişletilebilirlik projelerini Visual Studio 2017'ye geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) sayfası.
+Bu listeler kullanma hakkında daha fazla bilgi için bkz. [Visual Studio 2017'yi yüklemek için komut satırı parametrelerini kullanın](use-command-line-parameters-to-install-visual-studio.md) sayfası ve [nasıl yapılır: Genişletilebilirlik projeleri Visual Studio 2017'ye geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) sayfası.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

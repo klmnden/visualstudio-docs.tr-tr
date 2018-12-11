@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9452e732458a91ce5cc3eea505c7ab3e6dec1774
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bd351ef1bf6b1e5eee16451e554d6cae94c60127
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062670"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159405"
 ---
 # <a name="features-of-visual-studio-2017"></a>Visual Studio 2017'in özellikleri
 
-[Visual Studio IDE'ye genel bakış](../ide/visual-studio-ide.md) makale, Visual Studio için temel bir giriş sağlar. Bu makalede, deneyimli geliştiriciler veya zaten Visual Studio ile ilgili bilgi sahibi olan kişiler için daha uygun olabilir özelliklerini açıklar.
+[Visual Studio IDE'ye genel bakış](../get-started/visual-studio-ide.md) makale, Visual Studio için temel bir giriş sağlar. Bu makalede, deneyimli geliştiriciler veya zaten Visual Studio ile ilgili bilgi sahibi olan kişiler için daha uygun olabilir özelliklerini açıklar.
 
 ## <a name="modular-installation"></a>Modüler yükleme
 
@@ -127,5 +127,5 @@ Visual Studio'yu genişletme hakkında daha fazla bilgi için bkz: [Visual Studi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio IDE'ye genel bakış](../ide/visual-studio-ide.md)
+- [Visual Studio IDE'ye genel bakış](../get-started/visual-studio-ide.md)
 - [Visual Studio 2017'deki yenilikler](../ide/whats-new-in-visual-studio.md)

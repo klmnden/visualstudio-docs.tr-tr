@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 882e9471646d83434c18f18811f9f6f693d2e551
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 41a4dfa2a904f3fdc09671fd5e9afa0f29c2e9f3
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513406"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160146"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -60,21 +60,21 @@ Genişletme yöntemleri örnek yöntemleri farklı bir simge kullanın. Liste si
 
 IntelliSense, gereksiz üyeleri filtrelerini kullanarak tamamlama listesinden kaldırır. C# bu öğeler için görüntülenmesini tamamlanma listeleri filtreler:
 
-- **Arabirimleri ve temel sınıflar**: IntelliSense otomatik olarak kaldırır öğeleri arabirimi ve temel sınıf tamamlanma listeleri, sınıf bildiriminin temel ve arabirimi listeler, hem de kısıtlaması listeler. Örneğin, sabit listeleri için temel sınıflar kullanılamadığı için temel sınıflar için tamamlama listesinde numaralandırmalar görünmez. Taban sınıflar tamamlanma listesi yalnızca arabirimleri ve ad alanları içerir. Listeden bir öğe seçin ve ardından virgül girin, C#, birden çok devralma desteklemediği için IntelliSense temel sınıflar tamamlama listesinden kaldırır. Aynı davranışı için kısıtlama yan tümceleri de gerçekleşir.
+- **Arabirimleri ve temel sınıflar**: IntelliSense arabirimi ve temel sınıf tamamlanma listeleri, sınıf bildiriminin temel ve arabirimi listeler, hem de kısıtlaması listeleri öğeleri otomatik olarak kaldırır. Örneğin, sabit listeleri için temel sınıflar kullanılamadığı için temel sınıflar için tamamlama listesinde numaralandırmalar görünmez. Taban sınıflar tamamlanma listesi yalnızca arabirimleri ve ad alanları içerir. Listeden bir öğe seçin ve ardından virgül girin, C#, birden çok devralma desteklemediği için IntelliSense temel sınıflar tamamlama listesinden kaldırır. Aynı davranışı için kısıtlama yan tümceleri de gerçekleşir.
 
-- **Öznitelikleri**: bir türe öznitelik uyguladığınızda, liste yalnızca bu türleri gibi içeren ad alanlarını Düzen bu türleri içeren tamamlanma listesi filtrelenir <xref:System.Attribute>.
+- **Öznitelikleri**: Bir türe öznitelik uyguladığınızda, liste yalnızca bu türleri gibi içeren ad alanlarını Düzen bu türleri içeren tamamlanma listesi filtrelenir <xref:System.Attribute>.
 
 - **Catch yan tümceleri**
 
-- **Nesne başlatıcılarda**: yalnızca başlatılabilir üyeleri tamamlama listesinde görünür.
+- **Nesne başlatıcılarda**: Yalnızca başlatılabilir üyeleri tamamlama listesinde görünür.
 
-- **Yeni anahtar sözcük**: yazdığınızda `new` ve tuşuna **alanı**, tamamlanma listesi görüntülenir. Bir öğe, listede, kodunuzu bağlamda göre otomatik olarak seçilir. Örneğin, öğeleri yöntemleri return deyimleri ve bildirimler için tamamlama listesinde otomatik olarak seçilir.
+- **Yeni anahtar sözcük**: Yazdığınızda `new` ve tuşuna **alanı**, tamamlanma listesi görüntülenir. Bir öğe, listede, kodunuzu bağlamda göre otomatik olarak seçilir. Örneğin, öğeleri yöntemleri return deyimleri ve bildirimler için tamamlama listesinde otomatik olarak seçilir.
 
-- **enum anahtar sözcüğü**: bastığınızda **alanı** enum atamanın bir eşittir işaretinden sonra tamamlanma listesi görüntülenir. Bir öğe, listede, kodunuzu bağlamda göre otomatik olarak seçilir. Örneğin, öğeleri otomatik olarak tamamlama listesinde dönüş anahtar sözcüğü yazın sonra ve bir bildirimi yaptığınızda seçilir.
+- **enum anahtar sözcüğü**: Bastığınızda **alanı** enum atamanın bir eşittir işaretinden sonra tamamlanma listesi görüntülenir. Bir öğe, listede, kodunuzu bağlamda göre otomatik olarak seçilir. Örneğin, öğeleri otomatik olarak tamamlama listesinde dönüş anahtar sözcüğü yazın sonra ve bir bildirimi yaptığınızda seçilir.
 
-- **olarak ve is işleçlerini**: bastığınızda filtrelenmiş tamamlanma listesini otomatik olarak görüntülenen **alanı** yazdığınız sonra `as` veya `is` anahtar sözcüğü.
+- **olarak ve is işleçlerini**: Filtrelenmiş tamamlanma listesini otomatik olarak tuşuna bastığınızda görüntülenen **alanı** yazdığınız sonra `as` veya `is` anahtar sözcüğü.
 
-- **Olayları**: anahtar sözcüğü yazdığınızda `event`, tamamlanma listesi yalnızca temsilci türleri içerir.
+- **Olayları**: Anahtar sözcüğü yazdığınızda `event`, tamamlanma listesi yalnızca temsilci türleri içerir.
 
 - **Parametre Yardımı** otomatik olarak onları girerken, parametrelerle eşleşen ilk yöntem aşırı yüklemesi için sıralar. Birden çok yöntem aşırı yükleme varsa, yukarı ve aşağı oklarını sonraki olası aşırı yükleme listesindeki gidin.
 
@@ -116,7 +116,7 @@ Arabirim uygulama arabirimi karşılamak için gerekli olan en az sayıda yönte
 
 IntelliSense, Kod Düzenleyicisi'nde çalışırken Özet temel sınıf üyelerinin otomatik olarak Uygula yardımcı olması için bir seçenek sunar. Normalde, bir soyut üye uygulamak için temel sınıfı soyut temel sınıf yeni yöntem tanımının her bir yöntemin türetilmiş sınıfınızın oluşturmak gerekir. Bir sınıf bildiriminde bir soyut temel sınıf adını yazdıktan sonra IntelliSense'i kullanarak bir **hızlı Eylemler** ampul görüntülenir. Ampul, otomatik olarak taban sınıf yöntemlerini uygulamak için seçeneği sunar.
 
-Tarafından oluşturulan yöntem saptamalar **uygulama soyut temel sınıf** özelliği dosyasında tanımlanan kod parçacığı tarafından modellenir *MethodStub.snippet*. Kod parçacıkları değiştirilebilir. Daha fazla bilgi için [izlenecek yol: bir kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md).
+Tarafından oluşturulan yöntem saptamalar **uygulama soyut temel sınıf** özelliği dosyasında tanımlanan kod parçacığı tarafından modellenir *MethodStub.snippet*. Kod parçacıkları değiştirilebilir. Daha fazla bilgi için [izlenecek yol: Kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md).
 
 ### <a name="generate-from-usage"></a>Kullanımdan oluştur
 
@@ -165,4 +165,4 @@ Basarsanız **sekmesini**, IntelliSense doğru imzaya sahip bir yöntemi çıkı
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [IntelliSense kullanma](../ide/using-intellisense.md)
-- [Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Visual Studio IDE](../get-started/visual-studio-ide.md)

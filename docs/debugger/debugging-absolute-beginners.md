@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f6b0855b18f12bd80ad17c5b544a95e5ee57de9
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: 31b6812ec41aedd4e33eb0d043476365d3938767
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821376"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160029"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Yeni başlayanlar için hata ayıklama
 
@@ -66,7 +66,7 @@ Normal bir uygulama çalıştırdığınızda, yalnızca kod çalıştırıldık
 
 Bir hata ayıklayıcısı içinde bir uygulamayı çalıştıran olarak da adlandırılır *hata ayıklama modu*, hata ayıklayıcı etkin bir şekilde program çalışırken gerçekleştiği her şeyi izlediğini anlamına gelir. Ayrıca uygulamayı herhangi bir noktada durumunu inceleyin ve sonra da olduğu sürece her ayrıntısını izlemek için satır kodunuzda adım adım ilerleyin duraklatmanıza da olanak sağlar.
 
-Visual Studio'da hata ayıklama modunu kullanarak girdiğiniz **F5** (veya **hata ayıklama** > **hata ayıklamayı Başlat** menü komutu veya **hata ayıklamayı Başlat**  düğmesi ![hata ayıklamayı Başlat](../debugger/media/dbg-tour-start-debugging.png "hata ayıklamayı Başlat")) hata ayıklama araç çubuğu. Özel durumlar oluşursa, Visual Studio'nun özel durum Yardımcısı burada özel durum oluştu ve başka yararlı bilgiler sağlayan tam noktasına götürür.
+Visual Studio'da hata ayıklama modunu kullanarak girdiğiniz **F5** (veya **hata ayıklama** > **hata ayıklamayı Başlat** menü komutu veya **hata ayıklamayı Başlat**  düğmesi ![hata ayıklamayı Başlat](../debugger/media/dbg-tour-start-debugging.png "hata ayıklamayı Başlat") hata ayıklama araç çubuğundaki). Özel durumlar oluşursa, Visual Studio'nun özel durum Yardımcısı burada özel durum oluştu ve başka yararlı bilgiler sağlayan tam noktasına götürür.
 
 Bir özel durum almadıysanız, kodunuzda sorunun aranacağı büyük olasılıkla iyi bir fikir sahip. Bu, kullandığınız *kesme noktaları* kendiniz kodunuzu daha dikkatli bir şekilde incelemek için bir fırsat vermek için hata ayıklayıcısı ile. Kesme noktaları güvenilir hata ayıklama en temel hem de temel özelliğidir. Bir kesme noktası, değişkenlerin değerleri veya bellek davranışını veya kod çalıştığı dizisi göz olabilmesi için Visual Studio çalışan kodunuzu nerede duraklatmak gösterir.
 
@@ -78,11 +78,11 @@ Bu kavramları göstermeye yardımcı olmak için size çeşitli hatalar zaten b
 
 Ardından, bazı hataları olan bir uygulama oluşturacağız.
 
-1. Visual Studio yüklü ve ya da olmalıdır. **NET masaüstü geliştirme** iş yükü veya. **NET Core çoklu platform geliştirme** iş yükü yüklenmiş, oluşturmak istediğiniz hangi uygulama türü üzerinde bağlı olarak.
+1. Visual Studio yüklü ve ya da sahip **.NET masaüstü geliştirme** iş yükü veya **.NET Core çoklu platform geliştirme** iş yükü yüklenmiş, oluşturmak istediğiniz hangi uygulama türü üzerinde bağlı olarak.
 
     Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
-    İş yükünü yükleyin, ancak Visual Studio'a tıklayın, zaten gerektiğinde **Araçları** > **araçları ve özellikleri Al**. Visual Studio Yükleyicisi'ni başlatır. Seçin. **NET masaüstü geliştirme** (veya. **NET Core çoklu platform geliştirme**) iş yükü, ardından **Değiştir**.
+    İş yükünü yükleyin, ancak Visual Studio'a tıklayın, zaten gerektiğinde **Araçları** > **araçları ve özellikleri Al**. Visual Studio Yükleyicisi'ni başlatır. Seçin **.NET masaüstü geliştirme** (veya **.NET Core çoklu platform geliştirme**) iş yükü, ardından **Değiştir**.
 
 1. Visual Studio'yu açın ve ardından **dosya** > **yeni** > **proje**.
 

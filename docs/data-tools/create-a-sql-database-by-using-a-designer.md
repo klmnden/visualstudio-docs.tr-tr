@@ -1,5 +1,6 @@
 ---
 title: Bir veritabanı dosyası oluşturma ve Tablo Tasarımcısı kullanma
+description: Bu öğretici Visual Studio'daki tablo tasarımcısını kullanarak tablolar ve yabancı anahtarlar bir veritabanına ekleme işlemi açıklanmaktadır. Ayrıca, grafik arabirim üzerinden veri ekleme gösterir.
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9e2b138a536f22608c357f56b6856d91965ff906
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: c071daeaa1ffe10aa9de995b375e33b76b358da7
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305331"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159873"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Bir veritabanı oluşturun ve Visual Studio'da tablo ekleme
 
@@ -41,7 +42,7 @@ Bu izlenecek yolu tamamlamak için isteğe bağlı olmalıdır **veri depolama v
 
 4. Veritabanı adı **SampleDatabase**ve ardından **Ekle** düğmesi.
 
-### <a name="to-add-a-data-source"></a>Bir veri kaynağı eklemek için
+### <a name="add-a-data-source"></a>Veri Kaynağı Ekle
 
 1. Varsa **veri kaynakları** penceresi açık değilse, tuşlarına basarak açın **Shift**+**Alt**+**D** veya seçme **Görünümü** > **diğer Windows** > **veri kaynakları** menü çubuğundaki.
 
@@ -59,19 +60,19 @@ Bu izlenecek yolu tamamlamak için isteğe bağlı olmalıdır **veri depolama v
 
 1. Bir **veritabanı nesnelerinizi seçin** sayfasında, veritabanı belirten bir ileti, herhangi bir nesne içermiyor göreceksiniz. Seçin **son**.
 
-### <a name="to-view-properties-of-the-data-connection"></a>Veri bağlantısı özelliklerini görüntülemek için
+### <a name="view-properties-of-the-data-connection"></a>Veri bağlantısı özelliklerini görüntüleme
 
 Bağlantı dizesini görüntüleyebileceğiniz *SampleDatabase.mdf* veri bağlantısı Özellikler penceresini açarak dosya:
 
--   Visual Studio'da **görünümü** > **SQL Server Nesne Gezgini** Bu pencere hala açık değilse. Özellikler penceresini genişleterek açmak **veri bağlantıları** düğümü için kısayol menüsünü açarak, *SampleDatabase.mdf*, belirledikten sonra **özellikleri**.
+- Visual Studio'da **görünümü** > **SQL Server Nesne Gezgini** Bu pencere hala açık değilse. Özellikler penceresini genişleterek açmak **veri bağlantıları** düğümü için kısayol menüsünü açarak, *SampleDatabase.mdf*, belirledikten sonra **özellikleri**.
 
--   Alternatif olarak, seçebileceğiniz **görünümü** > **Sunucu Gezgini**, bu pencere hala açık değilse. Özellikler penceresini genişleterek açmak **veri bağlantıları** düğümü. Kısayol menüsünü açın *SampleDatabase.mdf*ve ardından **özellikleri**.
+- Alternatif olarak, seçebileceğiniz **görünümü** > **Sunucu Gezgini**, bu pencere hala açık değilse. Özellikler penceresini genişleterek açmak **veri bağlantıları** düğümü. Kısayol menüsünü açın *SampleDatabase.mdf*ve ardından **özellikleri**.
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Tablo tasarımcısını kullanarak tablolar ile anahtarlar oluşturma
 
 Bu bölümde, iki tablo, her bir tabloyu ve birkaç satırlık örnek verileriniz birincil bir anahtar oluşturmak. Ayrıca, bir tablodaki kayıtların diğer tablodaki kayıtlara nasıl karşılık gelen belirtmek için yabancı anahtar da oluşturacaksınız.
 
-### <a name="to-create-the-customers-table"></a>Müşteriler tablosu oluşturmak için
+### <a name="create-the-customers-table"></a>Müşteriler tablosu oluşturma
 
 1. İçinde **Sunucu Gezgini** veya **SQL Server Nesne Gezgini**, genişletme **veri bağlantıları** düğümünü ve ardından **SampleDatabase.mdf**düğümü.
 
@@ -108,7 +109,7 @@ Bu bölümde, iki tablo, her bir tabloyu ve birkaç satırlık örnek verilerini
 
     Değişiklikleriniz yerel veritabanı dosyasına kaydedildi.
 
-### <a name="to-create-the-orders-table"></a>Siparişler tablosu oluşturmak için
+### <a name="create-the-orders-table"></a>Siparişler tablosu oluşturma
 
 1. Başka bir tablo ekleyin ve sonra aşağıdaki tabloda her giriş için bir satır ekleyin:
 
@@ -133,7 +134,7 @@ Bu bölümde, iki tablo, her bir tabloyu ve birkaç satırlık örnek verilerini
 
     Değişiklikleriniz yerel veritabanı dosyasına kaydedildi.
 
-### <a name="to-create-a-foreign-key"></a>Yabancı anahtar oluşturmak için
+### <a name="create-a-foreign-key"></a>Yabancı anahtar oluşturma
 
 1. Kılavuz sağ tarafında bulunan bağlam bölmesinde, kısayol menüsünü açın **yabancı anahtarlar**ve ardından **yeni yabancı anahtar Ekle**aşağıdaki çizimde gösterildiği gibi.
 
