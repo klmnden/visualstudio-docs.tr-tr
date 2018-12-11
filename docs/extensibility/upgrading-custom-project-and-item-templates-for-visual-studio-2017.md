@@ -121,7 +121,7 @@ Yeni dosyalar doğru oluşturabilmesi için Visual Studio 2015 ve Visual Studio 
   
 ```  
   
- Tarafından sağlanan bilgileri [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) öğesi aynı kalır. **\<VSTemplateContainer >** öğesi ilişkili şablonu için .vstemplate dosyasına işaret eder.  
+ Tarafından sağlanan bilgileri [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) öğesi aynı kalır.  **\<VSTemplateContainer >** öğesi ilişkili şablonu için .vstemplate dosyasına işaret eder.  
   
  Visual Studio 2015 tarafından oluşturulan varsayılan öğesi .vstemplate dosyasını şöyledir:  
   
@@ -174,7 +174,7 @@ Yeni dosyalar doğru oluşturabilmesi için Visual Studio 2015 ve Visual Studio 
   
 ```  
   
- Tarafından sağlanan bilgileri  **\<TemplateData >** öğesi aynı kalır. **\<VSTemplateContainer >** öğesi ilişkili şablonu için .vstemplate dosyasına işaret eder  
+ Tarafından sağlanan bilgileri  **\<TemplateData >** öğesi aynı kalır.  **\<VSTemplateContainer >** öğesi ilişkili şablonu için .vstemplate dosyasına işaret eder  
   
  .Vstman dosyasının farklı öğeler hakkında daha fazla bilgi için bkz: [Visual Studio şablon bildirim şema başvurusu](../extensibility/visual-studio-template-manifest-schema-reference.md).  
   
