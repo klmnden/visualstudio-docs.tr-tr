@@ -15,17 +15,17 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], calling code from other solutions
 - interoperability [Office development in Visual Studio]
 - calling code from VBA
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7849f0df8f7e2f29c34b129dbf8e684424711b44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9290fcdd705f6f38b4b7e91e46d5b635f1e309ff
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904654"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248104"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>VSTO eklentilerinde diğer Office Çözümlerinden kod arama
   Bir nesne için diğer Microsoft Office çözümleri gibi diğer çözümlerle VSTO eklenti içinde kullanıma sunabilirsiniz. VSTO eklenti diğer çözümleri kullanmayı etkinleştirmek istediğiniz bir hizmet sağlar, bu yöntem kullanışlıdır. Bir Web hizmetinden Finansal veriler üzerinde hesaplamalar yapan Microsoft Office Excel için VSTO eklentisi varsa, örneğin, diğer çözümleri bu hesaplamalar zamanında Excel VSTO eklentisi içinde çağırarak gerçekleştirebilirsiniz.  
@@ -77,7 +77,7 @@ ms.locfileid: "49904654"
   
    -   Ayarlama **kaydetme COM birlikte çalışması için** arabirimi tanımladığınız projedeki özellik. Bu özellik yalnızca istemcilerin VSTO eklentisi çağırmak için erken bağlama kullanmasını etkinleştirmek istiyorsanız gereklidir.  
   
-   Aşağıdaki kod örneğinde bir `AddInUtilities` sınıfıyla birlikte bir `ImportData` diğer çözümler tarafından çağrılabilen bir yöntem. Daha geniş bir anlatım bağlamında bu kodu görmek için bkz: [izlenecek yol: çağrı kodu bir VSTO eklenti VBA'dan](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+   Aşağıdaki kod örneğinde bir `AddInUtilities` sınıfıyla birlikte bir `ImportData` diğer çözümler tarafından çağrılabilen bir yöntem. Daha geniş bir anlatım bağlamında bu kodu görmek için bkz: [izlenecek yol: Bir VSTO eklenti VBA'dan kod çağırma](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
    [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
    [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
@@ -95,7 +95,7 @@ ms.locfileid: "49904654"
  Office çözümlerinde iş parçacığı kullanma hakkında daha fazla bilgi için bkz. [Office'te iş parçacığı desteği](../vsto/threading-support-in-office.md).  
   
 ### <a name="override-the-requestcomaddinautomationservice-method"></a>RequestComAddInAutomationService yöntemi geçersiz kılın  
- Aşağıdaki kod örneğinde nasıl geçersiz kılınacağını gösterir <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> içinde `ThisAddIn` VSTO eklenti sınıfı. Örnek adlı bir sınıf tanımladığınız varsayar `AddInUtilities` diğer çözümlerde oluşturmak istediğiniz. Daha geniş bir anlatım bağlamında bu kodu görmek için bkz: [izlenecek yol: çağrı kodu bir VSTO eklenti VBA'dan](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+ Aşağıdaki kod örneğinde nasıl geçersiz kılınacağını gösterir <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> içinde `ThisAddIn` VSTO eklenti sınıfı. Örnek adlı bir sınıf tanımladığınız varsayar `AddInUtilities` diğer çözümlerde oluşturmak istediğiniz. Daha geniş bir anlatım bağlamında bu kodu görmek için bkz: [izlenecek yol: Bir VSTO eklenti VBA'dan kod çağırma](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
  [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
  [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]  
@@ -114,7 +114,7 @@ ms.locfileid: "49904654"
    VBA ve VBA olmayan istemciler için COMAddIn.Object özelliğinin dönüş değeri kullanma biçimini farklıdır. İşlem dışı istemciler için bir olası yarış durumu önlemek ek kod gereklidir.  
   
 ### <a name="access-objects-from-vba-solutions"></a>VBA çözümlerinden nesnelere erişme  
- Aşağıdaki kod örneği VBA VSTO eklentisi tarafından kullanıma sunulan bir yöntemi çağırmak için nasıl kullanılacağını gösterir. Bu VBA makrosu adında bir yöntemi çağıran `ImportData` bir VSTO adlı eklentisi içinde tanımlanan **ExcelImportData**. Daha geniş bir anlatım bağlamında bu kodu görmek için bkz: [izlenecek yol: çağrı kodu bir VSTO eklenti VBA'dan](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+ Aşağıdaki kod örneği VBA VSTO eklentisi tarafından kullanıma sunulan bir yöntemi çağırmak için nasıl kullanılacağını gösterir. Bu VBA makrosu adında bir yöntemi çağıran `ImportData` bir VSTO adlı eklentisi içinde tanımlanan **ExcelImportData**. Daha geniş bir anlatım bağlamında bu kodu görmek için bkz: [izlenecek yol: Bir VSTO eklenti VBA'dan kod çağırma](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
 ```vb
 Sub CallVSTOMethod()  
@@ -147,7 +147,7 @@ utilities.ImportData();
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md)   
- [İzlenecek yol: çağrı VBA'dan kod bir VSTO eklenti](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
+ [İzlenecek yol: Bir VSTO eklenti VBA'dan kod çağırma](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
  [Office çözümleri geliştirme](../vsto/developing-office-solutions.md)   
  [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [VSTO eklentileri mimarisi](../vsto/architecture-of-vsto-add-ins.md)   

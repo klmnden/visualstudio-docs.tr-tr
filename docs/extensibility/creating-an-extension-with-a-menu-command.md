@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae2f0e571876c336d74c295f2cba4a654a713e93
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 539ab866056b97f7054dda1843870dcfdd4379d9
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821441"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248144"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Bir menü komutuyla uzantı oluşturma
 Bu izlenecek yol, Not Defteri başlatan bir menü komutuyla uzantı oluşturma işlemini gösterir.  
@@ -55,23 +55,15 @@ Bu izlenecek yol, Not Defteri başlatan bir menü komutuyla uzantı oluşturma i
 2.  Özel FirstCommand Oluşturucusu bulun. Burada komutu için komut hizmeti ölçekledikçe ve komut işleyici belirtilen budur. Komut işleyici adı StartNotepad için aşağıdaki gibi değiştirin:  
   
     ```csharp  
-    private FirstCommand(Package package)  
+    private FirstCommand(AsyncPackage package, OleMenuCommandService commandService)  
     {  
-        if (package == null)  
-        {  
-            throw new ArgumentNullException(nameof(package));  
-        }  
-  
-        this.package = package;  
-  
-         OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
-        if (commandService != null)  
-        {  
-            CommandID menuCommandID = new CommandID(CommandSet, CommandId);  
-            // Change to StartNotepad handler.  
-            MenuCommand menuItem = new MenuCommand(this.StartNotepad, menuCommandID);  
-            commandService.AddCommand(menuItem);  
-        }  
+        this.package = package ?? throw new ArgumentNullException(nameof(package));
+        commandService = commandService ?? throw new ArgumentNullException(nameof(commandService));
+
+        CommandID menuCommandID = new CommandID(CommandSet, CommandId);
+        // Change to StartNotepad handler.
+        MenuCommand menuItem = new MenuCommand(this.StartNotepad, menuCommandID);
+        commandService.AddCommand(menuItem);
     }  
     ```  
   
@@ -120,18 +112,18 @@ Bu izlenecek yol, Not Defteri başlatan bir menü komutuyla uzantı oluşturma i
   
 1. Basit bir menü komutu ile pek çok şey yapabilirsiniz:  
   
-   1.  Kendi simgesi ekleyin: [menü komutlarına simge ekleme](../extensibility/adding-icons-to-menu-commands.md)  
+   1.  Kendi simgesi ekleyin: [Menü komutlarına simge ekleme](../extensibility/adding-icons-to-menu-commands.md)  
   
-   2.  Menü komutunun metnini değiştirme: [menü komutunun metnini değiştirme](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2.  Menü komutunun metnini değiştirme: [Menü komutunun metnini değiştirme](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-   3.  Komut menüsünde bir kısayol eklemek: [menü öğelerine klavye kısayolları bağlama](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3.  Bir komutu menüsü kısayolundan ekleyin: [Menü öğelerine klavye kısayolları bağlama](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
-2. Farklı türde komutlar, menüler ve araç çubuklarını ekleme: [genişletmek menüler ve komutlar](../extensibility/extending-menus-and-commands.md)  
+2. Farklı türde komutlar, menüler ve araç çubukları ekleyin: [Menüler ve komutlar genişletme](../extensibility/extending-menus-and-commands.md)  
   
-3. Yerleşik Visual Studio araç pencerelerini genişletme ve araç pencerelerini Ekle: [genişletme ve özelleştirme araç pencereleri](../extensibility/extending-and-customizing-tool-windows.md)  
+3. Araç pencereleri ekleyin ve yerleşik Visual Studio araç pencerelerini genişletme: [Genişletme ve özelleştirme araç pencereleri](../extensibility/extending-and-customizing-tool-windows.md)  
   
-4. IntelliSense, kod önerileri ekleyebilir ve kod düzenleyicileri mevcut diğer özellikleri: [düzenleyici ve dil hizmetlerini genişletme](../extensibility/extending-the-editor-and-language-services.md)  
+4. IntelliSense, kod önerileri ve diğer özellikler için mevcut kod düzenleyicilerinden ekleyin: [Düzenleyici ve dil hizmetlerini genişletme](../extensibility/extending-the-editor-and-language-services.md)  
   
-5. Uzantınız için seçenekleri ve özellik sayfaları ve kullanıcı ayarlarını ekleyin: [özellikleri ve özellik penceresini genişletme](../extensibility/extending-properties-and-the-property-window.md) ve [kullanıcı ayarlarını ve Ooptions genişletme](../extensibility/extending-user-settings-and-options.md)  
+5. Uzantınız için seçenekleri ve özellik sayfaları ve kullanıcı ayarlarını ekleyin: [Özellikler ve özellik penceresini genişletme](../extensibility/extending-properties-and-the-property-window.md) ve [kullanıcı ayarlarını ve Ooptions genişletme](../extensibility/extending-user-settings-and-options.md)  
   
    Yeni türde bir proje oluşturma gibi daha fazla iş, diğer tür uzantıların gerektirir ([genişletme projeleri](../extensibility/extending-projects.md)), yeni türde bir düzenleyici oluşturma ([Creat özel düzenleyiciler ve tasarımcılar](../extensibility/creating-custom-editors-and-designers.md)), veya uygulama, bir yalıtılmış kabuk uzantısını: [Visual Studio yalıtılmış Kabuğu](../extensibility/visual-studio-isolated-shell.md)

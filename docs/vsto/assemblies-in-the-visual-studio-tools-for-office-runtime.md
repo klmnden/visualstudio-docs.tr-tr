@@ -1,5 +1,6 @@
 ---
 title: Office çalışma zamanı için Visual Studio araçlarındaki derlemeler
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -10,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Visual Studio Tools for Office runtime, assemblies
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 550963966b45ed2d8024b36735f17ff24b6701fc
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 66ee95d4f102ac4206a9ed55a1fc97fc251c4f9c
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050215"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248124"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Office çalışma zamanı için Visual Studio araçlarındaki derlemeler
   Bir Office projesi oluşturduğunuzda, Visual Studio başvuruları otomatik olarak ekler. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] proje türü ve hedef projenin .NET Framework için kullanılan derlemeler. .NET Framework 3.5 için Office uzantılarındaki derlemeler farklı vardır [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], ve [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Office uzantıları hakkında daha fazla bilgi için bkz. [Office çalışma zamanına genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
@@ -30,7 +31,7 @@ ms.locfileid: "50050215"
   
 |Derleme adı|Açıklama|  
 |-------------------|-----------------|  
-|Microsoft.Office.Tools.Common.dll|Aşağıdaki türlerini sağlar:<br /><br /> -Şerit özelleştirmeleri ve akıllı etiketleri oluşturmak için türleri. **Not:** akıllı etiketlerin kullanımı terk içinde [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] ve [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Eylemler bölmeleri belge düzeyi özelleştirmeleri ve özel görev bölmeleri, VSTO eklentileri oluşturma türleri.|  
+|Microsoft.Office.Tools.Common.dll|Aşağıdaki türlerini sağlar:<br /><br /> -Şerit özelleştirmeleri ve akıllı etiketleri oluşturmak için türleri. **Not:**      Akıllı etiketler bırakılmıştır [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] ve [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Eylemler bölmeleri belge düzeyi özelleştirmeleri ve özel görev bölmeleri, VSTO eklentileri oluşturma türleri.|  
 |Microsoft.Office.Tools.Excel.dll|Excel projeleri ve destekleyen türler için konak denetimlerinin ve konak öğelerinin temsil eden arabirim sağlar. Daha fazla bilgi için [otomatikleştirmek genişletilmiş nesneleri kullanarak Excel](../vsto/automating-excel-by-using-extended-objects.md).|  
 |Microsoft.Office.Tools.Outlook.dll|Outlook VSTO eklentileri özel form bölgeleri oluşturmak için kullanabileceğiniz türler sağlar.|  
 |Microsoft.Office.Tools.Word.dll|Word projeleri ve destekleyen türler için konak denetimlerinin ve konak öğelerinin temsil eden arabirim sağlar. Daha fazla bilgi için [otomatikleştirmek genişletilmiş nesneleri kullanarak Word'ü](../vsto/automating-word-by-using-extended-objects.md).|  
@@ -53,7 +54,7 @@ ms.locfileid: "50050215"
   
 |Derleme adı|Açıklama|  
 |-------------------|-----------------|  
-|Microsoft.Office.Tools.Common.v9.0.dll|Aşağıdaki türlerini sağlar:<br /><br /> -Microsoft.Office.Tools.AddIn temel sınıf için VSTO eklentileri.<br />-Şerit özelleştirmeleri ve akıllı etiketleri oluşturmak için sınıfları. **Not:** akıllı etiketlerin kullanımı terk içinde [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] ve [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Belge düzeyi özelleştirmeleri ve VSTO eklentileri özel görev bölmeleri Eylemler bölmesi oluşturmak için sınıfları.|  
+|Microsoft.Office.Tools.Common.v9.0.dll|Aşağıdaki türlerini sağlar:<br /><br /> -Microsoft.Office.Tools.AddIn temel sınıf için VSTO eklentileri.<br />-Şerit özelleştirmeleri ve akıllı etiketleri oluşturmak için sınıfları. **Not:**      Akıllı etiketler bırakılmıştır [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] ve [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Belge düzeyi özelleştirmeleri ve VSTO eklentileri özel görev bölmeleri Eylemler bölmesi oluşturmak için sınıfları.|  
 |Microsoft.Office.Tools.Excel.v9.0.dll|Konak denetimlerinin ve konak öğelerinin Excel çözümleri sağlar. Daha fazla bilgi için [otomatikleştirmek genişletilmiş nesneleri kullanarak Excel](../vsto/automating-excel-by-using-extended-objects.md).|  
 |Microsoft.Office.Tools.Outlook.v9.0.dll|Outlook VSTO eklentileri özel form bölgeleri oluşturmak için kullanabileceğiniz sınıflar sağlar.|  
 |Microsoft.Office.Tools.Word.v9.0.dll|Konak denetimlerinin ve konak öğelerinin Word çözümleri sağlar. Daha fazla bilgi için [otomatikleştirmek genişletilmiş nesneleri kullanarak Word'ü](../vsto/automating-word-by-using-extended-objects.md).|  

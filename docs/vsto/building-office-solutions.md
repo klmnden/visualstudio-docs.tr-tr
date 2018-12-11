@@ -24,17 +24,17 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], building
 - application development [Office development in Visual Studio], debugging
 - Office solutions [Office development in Visual Studio], debugging
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4d69322360a83a6d615efcaf8de077de80e64398
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 989014bb512ec77af908d823390b1e95b9a7872c
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847584"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248237"
 ---
 # <a name="build-office-solutions"></a>Office çözümleri oluşturun
   Genel olarak, derleme ve hata ayıklama Office projeleri derleme ve Windows Forms gibi Visual Studio'da proje türlerinde hata ayıklama ile aynı olur. Bu bölümdeki konular, mevcut farkları açıklamaktadır. Uygulamaları oluşturma hakkında genel bilgi için bkz. [derlemek ve oluşturmak Visual Studio'da](/visualstudio/ide/compiling-and-building-in-visual-studio).  
@@ -100,7 +100,7 @@ ms.locfileid: "49847584"
 ## <a name="change-the-platform-target"></a>Platform hedefi Değiştir  
  Varsayılan olarak, Office projeleri için platform hedefi olan **herhangi bir CPU**. Genellikle, bu ayar değiştirmemesi gerekir. İle oluşturulmuş office çözümlerini **herhangi bir CPU** Microsoft 32-bit ve 64 bit sürümlerde çalıştırma ayarı platform hedefi [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] veya [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].  
   
- Yalnızca 64 bit sürümlerinde Microsoft çalıştıracak bir çözüm oluşturuyorsanız, platform hedefi x64 ayarlamalısınız [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] veya [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)], ve çözümünüzü yerel 64 bit API'lerini çağırır. Platform hedefi ayarlarını değiştirme hakkında daha fazla bilgi için bkz. [nasıl yapılır: projeleri hedef platformlar için yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md).  
+ Yalnızca 64 bit sürümlerinde Microsoft çalıştıracak bir çözüm oluşturuyorsanız, platform hedefi x64 ayarlamalısınız [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] veya [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)], ve çözümünüzü yerel 64 bit API'lerini çağırır. Platform hedefi ayarlarını değiştirme hakkında daha fazla bilgi için bkz. [nasıl yapılır: Projeleri hedef platformlar için yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md).  
   
  Platform hedefi x64 ayarlarsanız, çözüm Windows ya da Office 32-bit sürümlerinde çalışmaz. X64 platform hedefi bir 64 bit işlem içinde çalıştırmak için bir çözüm gerektirir.  
   
@@ -113,7 +113,7 @@ ms.locfileid: "49847584"
 |-----------|-----------------|  
 |[Office projelerinde hata ayıklama](../vsto/debugging-office-projects.md)|Office projeleriyle ilgili sorunları gösterir.|  
 |[İzlenecek yol: Excel için ilk belge düzeyi özelleştirmeyi oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Excel için temel bir belge düzeyi özelleştirmeyi oluşturma işlemini gösterir.|  
-|[Nasıl yapılır: bir VSTO devre dışı bırakılmış eklentiyi yeniden etkinleştirme](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Bir VSTO sabit veya geçici devre dışı bırakılmış eklentiyi yeniden etkinleştirmek açıklar.|  
+|[Nasıl yapılır: Bir VSTO devre dışı bırakılmış eklentiyi yeniden etkinleştirme](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Bir VSTO sabit veya geçici devre dışı bırakılmış eklentiyi yeniden etkinleştirmek açıklar.|  
 |[Office çözümleri oluşturma ve tasarlama](../vsto/designing-and-creating-office-solutions.md)|Çözümünüzdeki derlemelerin rolü ve Office çözümleri oluşturma hakkında bilgi için bağlantılar sağlar.|  
   
   

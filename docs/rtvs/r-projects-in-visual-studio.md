@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 154243351f3ff3e7babc502c2cf96dea6bcf5bf0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f91d105d1c7b5b60d74dae2f9669a18f8ec064c8
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813857"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248289"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Visual Studio'da R projeleri oluşturma
 
@@ -25,7 +25,7 @@ Projeleri Visual Studio'da her zaman yönetilen *çözüm*, herhangi bir sayıda
 
 ## <a name="creating-a-new-r-project"></a>Yeni bir R projesi oluşturma
 
-1. Visual Studio'yu başlatın.
+1. Visual Studio’yu çalıştırın.
 1. Seçin **Dosya > Yeni > Proje...** (**Ctrl**+**Shift**+**N**)
 1. "R" altındaki projenizi **şablonları > R**, projeye bir ad ve konum verin ve seçin **Tamam**:
 
@@ -48,7 +48,7 @@ Bu komut, bir boş olan bir proje oluşturur *betiği. R* dosya düzenleyicide a
 | EnableCodeIndexing | Evet | Kod aramaları hızlandırmak için bir arka plan dizin oluşturma görevini çalıştırmak belirler. |
 | UseSpacesForTab | Evet | Mi (Evet) alanları eklemek veya bir sekme karakteri belirler (yok) olduğunda **sekmesini** düzenleyicide tuşuna basıldığında. |
 | NumSpacesForTab | 2 | UseSpacesForTab Evet ise eklemek için boşluk sayısı. |
-| Kodlama | UTF-8 | İçin varsayılan kodlamayı `.R` dosyaları. |
+| Encoding | UTF-8 | İçin varsayılan kodlamayı `.R` dosyaları. |
 | RnwWeave | Sweave | Rnw dosya weaving kullanılacak paketi. |
 | LaTeX | pdfLaTeX | RMarkdwon PDF'ye dönüştürme işleminde kullanılacak kitaplığı. |
 
@@ -63,7 +63,7 @@ Mevcut bir klasörü varsa *. R* bir projede, yönetmek istediğiniz dosyaları 
 
 ## <a name="project-properties"></a>Proje Özellikleri
 
-Proje özellik sayfaları'ni açmak için projeye sağ **Çözüm Gezgini** seçip **özellikleri**, veya **Proje > (proje adı) özellikleri* menü öğesi. Açılan pencerede, proje özellikleri görüntüler:
+Proje özellik sayfaları'ni açmak için projeye sağ **Çözüm Gezgini** seçip **özellikleri**, ya da seçin **Proje > (proje adı) özellikleri** menüsü öğe. Açılan pencerede, proje özellikleri görüntüler:
 
 
 | Tab | Özellik | Açıklama | 

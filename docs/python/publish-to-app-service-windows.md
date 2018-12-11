@@ -13,12 +13,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e1ac55cc0cc675aa7f2d2aa933d035bf42e83006
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 083deb7b836bfae0b0c1352430ffb6ed4080c3dc
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065927"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248211"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Windows üzerinde Azure App Service'e yayımlama
 
@@ -81,7 +81,7 @@ Sonra boş bir App Service Web çalışan uygulama (veya aboneliğinizdeki ücre
 
 Visual Studio 2017 kopyalar, Azure App Service'e sunucuya projenizdeki yalnızca dosyalar yayımlanıyor. Bu nedenle, sunucu ortamı yapılandırmak için gerekli dosyaları oluşturmak için gereklidir.
 
-1. Visual Studio'da **Çözüm Gezgini**, projeye sağ tıklayıp seçin **Ekle > Yeni öğe...* . Görüntülenen iletişim kutusunda Tamam'ı seçin ve "Web.config Pro Azure (Fast CGI)" şablonu seçme. Bu, oluşturur bir `web.config` proje kökünüze dosyasında.
+1. Visual Studio **Çözüm Gezgini**'nde, projeye sağ tıklayın ve **Ekle > Yeni Öğe...**'yi seçin. Görüntülenen iletişim kutusunda Tamam'ı seçin ve "Web.config Pro Azure (Fast CGI)" şablonu seçme. Bu, oluşturur bir `web.config` proje kökünüze dosyasında.
 
 1. Değiştirme `PythonHandler` girişi `web.config` sunucuya Python yükleme yolu eşleşmesi (bkz [IIS yapılandırma başvurusu](https://www.iis.net/configreference) (IIS.NET) hakkında tam Ayrıntılar için). Örneğin, Python 3.6.1 x64 giriş aşağıdaki gibi görünmelidir:
 
@@ -104,14 +104,14 @@ Visual Studio 2017 kopyalar, Azure App Service'e sunucuya projenizdeki yalnızca
         <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
         ```
 
-    - **Flask**: değişiklik `WSGI_HANDLER` değerini `<project_name>.app` burada `<project_name>` projenizin adıyla aynıdır. Bakarak tam tanımlayıcısını bulabilirsiniz `from <project_name> import app` deyiminde `runserver.py`. Örneğin, proje "FlaskAzurePublishExample" ise, giriş şu şekilde görünür:
+    - **Flask**: Değişiklik `WSGI_HANDLER` değerini `<project_name>.app` burada `<project_name>` projenizin adıyla aynıdır. Bakarak tam tanımlayıcısını bulabilirsiniz `from <project_name> import app` deyiminde `runserver.py`. Örneğin, proje "FlaskAzurePublishExample" ise, giriş şu şekilde görünür:
 
         ```xml
         <!-- Flask apps only: change the project name to match your app -->
         <add key="WSGI_HANDLER" value="FlaskAzurePublishExample.app"/>
         ```
 
-    - **Django**: iki değişiklik için gereken `web.config` Django projeler için. İlk olarak değiştirmek `WSGI_HANDLER` değerini `django.core.wsgi.get_wsgi_application()` (nesne `wsgi.py` dosyası):
+    - **Django**: İki değişiklik için gereken `web.config` Django projeler için. İlk olarak değiştirmek `WSGI_HANDLER` değerini `django.core.wsgi.get_wsgi_application()` (nesne `wsgi.py` dosyası):
 
         ```xml
         <!-- Django apps only -->
@@ -124,7 +124,7 @@ Visual Studio 2017 kopyalar, Azure App Service'e sunucuya projenizdeki yalnızca
         <add key="DJANGO_SETTINGS_MODULE" value="DjangoAzurePublishExample.settings" />
         ```
 
-1. **Yalnızca Django uygulamaları**: içinde Django projesinin `settings.py` site URL'si etki alanınızı ekleyin `ALLOWED_HOSTS` aşağıda gösterildiği gibi 'vspython test 02.azurewebsites .net' URL'niz ile doğal değiştirme:
+1. **Yalnızca Django uygulamaları**: Django projenin `settings.py` site URL'si etki alanınızı ekleyin `ALLOWED_HOSTS` aşağıda gösterildiği gibi 'vspython test 02.azurewebsites .net' URL'niz ile doğal değiştirme:
 
     ```python
     # Change the URL to your specific site
@@ -178,14 +178,14 @@ Visual Studio 2017 kopyalar, Azure App Service'e sunucuya projenizdeki yalnızca
     > [!Tip]
     > Uygulamanızın herhangi bir değişiklik yaparsanız `requirements.txt` dosya, yeniden artık bu dosyada listelenen herhangi bir paket yüklemek için Kudu Konsolu kullandığınızdan emin olun.
 
-1. Sunucu ortamı tam olarak yapılandırdıktan sonra tarayıcı içinde sayfayı yenileyin ve web uygulaması görünmelidir.
+1. Sunucu ortamını tamamen yapılandırdıktan sonra, sayfayı tarayıcıda yenilediğinizde Web uygulamasının görünmesi gerekir.
 
     ![Bottle, Flask ve Django uygulamaları App Service'te yayımlama sonuçları](media/azure-publish-results.png)
 
 ## <a name="publishing-to-app-service---visual-studio-2015"></a>App Service'e - Visual Studio 2015 yayımlama
 
 > [!Note]
-> Bu işlemin kısa bir video bulunabilir [Visual Studio Python Öğreticisi: bir Web sitesi oluşturmanın](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (youtube.com, 3m10s).
+> Bu işlemin kısa bir video bulunabilir [Visual Studio Python Öğreticisi: Bir Web sitesi oluşturmanın](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (youtube.com, 3m10s).
 
 1. İçinde **Çözüm Gezgini**, Proje Seç sağ **Yayımla**.
 

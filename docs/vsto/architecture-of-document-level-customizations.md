@@ -17,17 +17,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio]
 - AddInLoader.dll
 - architecture [Office development in Visual Studio], document-level customizations
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a0188a54e500f56c9c3d947ec27d53640173837b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e07c8ae29c773a1f50fedd68376a062e2203570
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912636"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248276"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Belge düzeyi özelleştirmeler mimarisi
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] Microsoft Office Word ve Microsoft Office Excel için belge düzeyi özelleştirmelerini oluşturmak için projeleri içerir. Bu konu, belge düzeyinde özelleştirmeler şu yönlerini açıklar:  
@@ -81,7 +81,7 @@ ms.locfileid: "49912636"
 |Kullanarak [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], geliştiricinin Word ve Excel tarafından erişilebilen bir kod yazar.<br /><br /> Geliştiricinin Word veya Excel'de çalışan bir yürütülebilir dosya oluşturuyor görünse de, işlem gerçekten şekilde çalışır. Belge bir derlemeyle ilişkilendirilir ve bu derlemeye bir işaretçi içerir. Belge açıldığında, Word veya Excel derlemeyi bulur ve kod işlenen tüm olaylara yanıt olarak çalışır.|Çözüm kullananlar yalnızca belge veya çalışma kitabını açın (veya bir şablondan yeni bir belge oluşturmak) gibi herhangi bir Microsoft Office dosyasını açmak.<br /><br /> Derleme özelleştirmeleri belge veya otomatik olarak, geçerli verilerle doldurma veya bilgi istemek için bir iletişim kutusu gösteren gibi çalışma kitabındaki sağlar.|  
   
 ### <a name="supported-document-formats-for-document-level-customizations"></a>Desteklenen belge düzeyi özelleştirmeleri için belgenin biçimleri  
- Özelleştirme projesi oluşturduğunuzda, projede kullanmak istediğiniz belge biçimi seçebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Özelleştirme projesi oluşturduğunuzda, projede kullanmak istediğiniz belge biçimi seçebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
  Aşağıdaki tabloda, Excel ve Word için belge düzeyi özelleştirmeleri kullanabilirsiniz biçimlerden listeler.  
   
