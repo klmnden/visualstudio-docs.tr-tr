@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: feae82f3909be5816e025de21200acda20933d63
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 98697642135627173c5a6f31e90bf1dd1d0caeaf
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874624"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307758"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Katman modeli uzantısı dağıtma
 
@@ -49,7 +49,7 @@ Team Foundation Server sunucuları normalde Visual Studio yüklü olmayan ve çi
 
 ### <a name="to-install-your-layer-extension-on-a-team-foundation-server-server"></a>Katman uzantınızı bir Team Foundation Server sunucuya yüklemek için
 
-1.  Kopyalama **.vsix** dosyalarını Geliştirme bilgisayarınızdan Team Foundation Server (TFS) bilgisayarda.
+1.  Kopyalama. *VSIX* dosyalarını Geliştirme bilgisayarınızdan Team Foundation Server (TFS) bilgisayarda.
 
      VSIX dosyasını şu konumlardan birinde yerleştirin:
 

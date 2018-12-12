@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34c263479be170b9f108c4cbc095be737f0b2b22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a44dfd224324ba641e70e0cfe6ded87f88fe6765
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936057"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307718"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Bir Windows Forms araç kutusu denetimi oluşturma
 Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç kutusu denetimi öğe şablonu otomatik olarak eklenen bir denetim oluşturmanızı sağlar **araç kutusu** uzantısı yüklü olduğunda. Bu konuda, diğer kullanıcılarına dağıtabileceğiniz bir basit bir sayaç denetimi oluşturmak için şablonu kullanmayı gösterir.  
@@ -77,16 +77,16 @@ Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç
 3.  Aşağıdaki ortak özelliği bildirimleri oluşturun.  
   
     ```csharp  
-    public int Value {  
+    public int Value {  
         get { return currentValue; }   
     }  
   
-    public string Message {  
+    public string Message {  
         get { return displayText; }  
         set { displayText = value; }  
     }  
   
-    public bool ShowReset {  
+    public bool ShowReset {  
         get { return btnReset.Visible; }  
         set { btnReset.Visible = value; }  
     }  
@@ -98,7 +98,7 @@ Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç
 4.  Aşağıdaki kod koymak `Load` Olay denetimi.  
   
     ```csharp  
-    private void Counter_Load(object sender, EventArgs e)  
+    private void Counter_Load(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = Message + Value;  
@@ -111,7 +111,7 @@ Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç
 5.  Sayaç artırmak için aşağıdaki genel yöntem oluşturun.  
   
     ```csharp  
-    public void Increment()  
+    public void Increment()  
     {  
         currentValue++;  
         label1.Text = displayText + Value;  
@@ -123,7 +123,7 @@ Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç
 6.  Eklemek için bir bildirim `Incremented` olaya control sınıfı.  
   
     ```csharp  
-    public event EventHandler Incremented;  
+    public event EventHandler Incremented;  
     ```  
   
      Çağıranlar, sayaç değeri değişikliklere yanıt vermek için bu olay işleyicileri ekleyebilirsiniz.  
@@ -131,7 +131,7 @@ Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç
 7.  Çift tıklayın ve Tasarım görünümüne dön **sıfırlama** oluşturmak için düğme `btnReset_Click` olay işleyicisi ve ardından buna aşağıdaki örnekte gösterildiği gibi doldurun.  
   
     ```csharp  
-    private void btnReset_Click(object sender, EventArgs e)  
+    private void btnReset_Click(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = displayText + Value;  
@@ -145,7 +145,7 @@ Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç
   
     ```csharp  
     [ProvideToolboxControl("General", false)]  
-    public partial class Counter : UserControl  
+    public partial class Counter : UserControl  
     ```  
   
 ### <a name="test-the-control"></a>Denetimi test  
@@ -190,7 +190,7 @@ Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç
   
      Form açılır. `Counter` Denetimi, aşağıdaki metni görüntüler.  
   
-     **Sayı: 0**  
+     **Sayısı: 0**  
   
 14. Tıklayın **Test**.  
   
@@ -209,7 +209,7 @@ Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç
      Sayaç sıfırlanır için **0**.  
   
 ## <a name="next-steps"></a>Sonraki adımlar  
- Oluşturduğunuzda bir **araç kutusu** denetimi, Visual Studio, adlı bir dosya oluşturur *ProjectName.vsix* içinde <em>\bin\debug\* projenizin klasör. Denetim *.vsix yükleyerek dağıtabileceğiniz</em> bir ağ veya bir Web sitesi için dosya. Kullanıcı açtığında *.vsix* dosya, denetimin yüklü ve Visual Studio için eklenen **araç kutusu** kullanıcının bilgisayarında. Alternatif olarak, karşıya *.vsix* dosyasını [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkID=123847) Web sitesi kullanıcılar bunu göz atarak bulabilirsiniz **Araçları**  >  **Uzantı ve güncelleştirmeler** iletişim.  
+ Yapı kurarken bir **araç kutusu** denetimi, Visual Studio, adlı bir dosya oluşturur *ProjectName.vsix* projenizin \bin\debug\ klasöründeki. Denetim yükleyerek dağıtabileceğiniz *.vsix* bir ağ veya bir Web sitesi için dosya. Kullanıcı açtığında *.vsix* dosya, denetimin yüklü ve Visual Studio için eklenen **araç kutusu** kullanıcının bilgisayarında. Alternatif olarak, karşıya *.vsix* dosyasını [Visual Studio Market](http://go.microsoft.com/fwlink/?LinkID=123847) böylece kullanıcılar, göz atarak bulabilirsiniz **Araçları**  >   **Uzantı ve güncelleştirmeler** iletişim.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Visual Studio'nun diğer bölümlerini genişletme](../extensibility/extending-other-parts-of-visual-studio.md)   

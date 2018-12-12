@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1c79051627bd59ae48b0ad88411a94f4cb36c78
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 408c66d87dbc932e09e1d5744ab5595672a00534
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159821"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307638"
 ---
 # <a name="advanced-example-for-containers"></a>Kapsayıcılar için İleri düzey örnek
 
@@ -28,7 +28,7 @@ Aşağıdaki örnek Dockerfile dotnet/microsoft-framework görüntünün bir bel
 > [!NOTE]
 > Visual Studio microsoft/windowsservercore:10.0.14393.1593 ya da bunu temel alan herhangi bir kapsayıcıda yükleyicisi başlatılıyor sorunlara görüntüsüne yükleyemezsiniz. Daha fazla bilgi için [bilinen sorunlar](build-tools-container-issues.md).
 
-Aşağıdaki örnekte, derleme araçları 2017 en son sürümünü yükler. Derleme araçları yükleyebileceğiniz bir kapsayıcıya daha eski bir sürümünü kullanmak istiyorsanız, önce [oluşturma](create-an-offline-installation-of-visual-studio.md) ve [korumak](update-a-network-installation-of-visual-studio.md) düzeni.
+Aşağıdaki örnekte, derleme araçları 2017 en son sürümünü yükler. Derleme araçları yükleyebileceğiniz bir kapsayıcıya daha önceki bir sürümünü kullanmak istiyorsanız, önce [oluşturma](create-an-offline-installation-of-visual-studio.md) ve [korumak](update-a-network-installation-of-visual-studio.md) düzeni.
 
 ## <a name="install-script"></a>Komut dosyası yükleme
 
@@ -91,6 +91,10 @@ ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
 # Default to PowerShell if no other command specified.
 CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
 ```
+   > [!WARNING]
+   > Visual Studio 2017 sürüm 15,8 veya öncesi (herhangi bir ürünü) üzerinde mcr düzgün yüklenmez<span></span>.microsoft\.com\/windows\/servercore:1809 veya üzeri. Herhangi bir hata görüntülenir.
+   >
+   > Bkz: [bilinen sorunlar kapsayıcılar için](build-tools-container-issues.md) daha fazla bilgi için.
 
 Geçerli çalışma dizininde görüntüsünü oluşturmak için aşağıdaki komutu çalıştırın:
 

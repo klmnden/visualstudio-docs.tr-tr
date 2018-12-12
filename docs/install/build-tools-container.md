@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37ce2fc60ac2a57baddf62e68a900349ed072f4d
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: cdb7148560dfca966b82d8d9cef617075752a58b
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160094"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307719"
 ---
 # <a name="install-build-tools-into-a-container"></a>Derleme araçları bir kapsayıcıya yükleme
 
@@ -118,8 +118,8 @@ Visual Studio derleme araçları - ve bir büyük ölçüde, Visual Studio - yü
 
 Aşağıdaki örnek Dockerfile, disk üzerinde yeni bir dosyaya kaydedin. Dosya yalnızca "Dockerfile" ise, varsayılan olarak kabul edilir.
 
-> [!NOTE]
-> Bu örnek Dockerfile yalnızca eski Windows kapsayıcılarına yüklü SDK'ları dahil değildir. Eski sürümleri derleme komutunun başarısız olmasına neden olur.
+> [!WARNING]
+> Bu örnek Dockerfile kapsayıcılarına yüklenemez önceki Windows SDK yalnızca dışlar. Önceki sürümlerde, derleme komutunun başarısız olmasına neden.
 
 1. Bir komut istemi açın.
 2. (Önerilen) yeni bir dizin oluşturun:
@@ -165,8 +165,12 @@ Aşağıdaki örnek Dockerfile, disk üzerinde yeni bir dosyaya kaydedin. Dosya 
    CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
    ```
 
-   > [!NOTE]
-   > Görüntünüzü doğrudan microsoft/windowsservercore üzerinde temel alıyorsa, .NET Framework düzgün yüklenmeyebilir ve herhangi bir yükleme hata gösterilir. Yükleme tamamlandıktan sonra yönetilen kod çalışmayabilir. Görüntünüzü bunun yerine, temel [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) ya da daha yeni. Ayrıca yeni görüntüleri, varsayılan olarak PowerShell kullanmak olduğunu unutmayın. `SHELL` neden olacak `RUN` ve `ENTRYPOINT` başarısız için yönergeler.
+   > [!WARNING]
+   > Görüntünüzü doğrudan microsoft/windowsservercore üzerinde temel alıyorsa, .NET Framework düzgün yüklenmeyebilir ve herhangi bir yükleme hata gösterilir. Yükleme tamamlandıktan sonra yönetilen kod çalışmayabilir. Görüntünüzü bunun yerine, temel [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) veya üzeri. Daha sonra PowerShell varsayılan olarak kullanabilir veya bu görüntüleri etiketli sürümü 4.7.1 unutmayın `SHELL` neden olacak `RUN` ve `ENTRYPOINT` başarısız için yönergeler.
+   >
+   > Visual Studio 2017 sürüm 15,8 veya öncesi (herhangi bir ürünü) üzerinde mcr düzgün yüklenmez<span></span>.microsoft\.com\/windows\/servercore:1809 veya üzeri. Herhangi bir hata görüntülenir.
+   >
+   > Bkz: [bilinen sorunlar kapsayıcılar için](build-tools-container-issues.md) daha fazla bilgi için.
 
 4. Bu dizinin içinde aşağıdaki komutu çalıştırın.
 

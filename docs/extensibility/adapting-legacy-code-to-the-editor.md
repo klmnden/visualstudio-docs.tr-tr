@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b7e7052ab2d92e7518a57ad5587c29eabf550f3
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e04ae5484b6c1fd5bcc56154c6cec23334e7ef8d
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078606"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307797"
 ---
 # <a name="adapt-legacy-code-to-the-editor"></a>Eski kod düzenleyicisine uyum
 Visual Studio düzenleyicisinde, mevcut kod bileşenlerini erişebileceğiniz birçok özelliğe sahiptir. Aşağıdaki yönergeler, olmayan MEF Bileşeni, düzenleyici işlevselliği kullanmak için örneğin, bir VSPackage, uyum gösterilmektedir. Yönergeler ayrıca hem yönetilen hem de yönetilmeyen kod düzenleyicisinin Hizmetleri almak için bağdaştırıcıları kullanmayı gösterir.  
@@ -97,7 +97,7 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 ### <a name="to-get-an-ivxtextbuffer"></a>Bir IVxTextBuffer almak için  
   
-1.  IVx * arabirimler için tanımları bulunan *VSEditor.h* dosyası *\..\VisualStudioIntegration\Common\Inc\\* Visual Studio SDK yükleme klasörü.  
+1.  IVx tanımlarında\* arabirimdir içinde *VSEditor.h* dosyası *\..\VisualStudioIntegration\Common\Inc\\* Visual Studio'nun klasörü SDK yükleme.  
   
 2.  Aşağıdaki kodu kullanarak bir metin arabelleği başlatır `IVsUserData->GetData()` yöntemi. Aşağıdaki kodda, `pData` işaretçisidir bir `IVsUserData` nesne.  
   

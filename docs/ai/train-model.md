@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: 6cf5c2529d54637e1e6ad4a111c3d3c456e6fae1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6fd6f8befce66a117f5f2dcb598a7359ba9c15c0
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882398"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307651"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Azure Batch AI, yapay ZEKA modellerini eğitme
 
@@ -50,11 +50,11 @@ Dinamik olarak Azure eğitimi modellerini ölçeği genişletebilirsiniz için y
 
     ![Örnek Galerisi](media/train-model/tensorflowexamples.png)
 
-7. Kümesi MNIST projesi olarak ** başlangıç projesi **
+7. Kümesi MNIST projesi olarak **başlangıç projesi**
 
     ![Örnek Galerisi](media/train-model/mnist-startup.png)
 
-8. <strong>Sağ tıklayın ** MNIST proje ** işi Gönder</strong>
+8. <strong>Sağ **MNIST proje** **işi Gönder**</strong>
 
     ![Örnek Galerisi](media/train-model/submit-job.png)
 9. Seçin, **Azure Batch AI** küme'a tıklayın **alma**. Seçin `AzureBatchAI_TF_MNIST.json` hızlı bir şekilde kullanmak için hangi Docker görüntüsü gibi bazı varsayılan değerler doldurmak için dosya. Ardından **Gönder**
