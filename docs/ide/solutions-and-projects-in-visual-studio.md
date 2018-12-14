@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 518479d92aa9b0ec51c4fda8b7484a03ce45a560
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: db576170443952a3090d57fc8046b34428cc8095
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159678"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348334"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio'da projeler ve çözümler
 
@@ -56,7 +56,7 @@ Visual Studio'da proje dosyası tarafından kullanılan **Çözüm Gezgini** pro
 
 ## <a name="solutions"></a>Çözümler
 
-Bir proje içinde yer alan bir *çözüm*. Bir çözüm, bir veya daha fazla ilgili projeleri ile yapı bilgilerini, Visual Studio penceresi ayarlarını ve belirli bir proje ile ilişkili olmayan diğer tüm dosyalar içeriyor. Bir metin dosyası tarafından açıklanan bir çözüm (uzantı *.sln*) kendi benzersiz biçimde; bunu el ile düzenlenmesi kullanılmaya yönelik değildir.
+Bir proje içinde yer alan bir *çözüm*. Adını rağmen bir çözüm "yanıt" değildir. Bu yalnızca bir veya daha fazla ilgili projelerini, yapı bilgilerini, Visual Studio penceresi ayarlarını ve belirli bir proje ile ilişkili olmayan diğer tüm dosyalar yanı sıra bir kapsayıcıdır. Bir metin dosyası tarafından açıklanan bir çözüm (uzantı *.sln*) kendi benzersiz biçimde; bunu el ile düzenlenmesi amaçlanmaz.
 
 Visual Studio kullanan iki dosya türleri (*.sln* ve *.suo*) çözümleri için ayarları saklamak için:
 

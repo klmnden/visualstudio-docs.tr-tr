@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91074815c0723f24bbb89bcb45eafc0fae5866d6
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 3a4e3ec3c7d581d8c99018b2dd8c89f37e33c6ea
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160172"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348499"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Yükleme ve bir güvenlik duvarı veya proxy sunucusunun arkasına Visual Studio ve Azure hizmetlerini kullanma
 
@@ -101,7 +101,7 @@ Bir güvenlik duvarı veya proxy sunucusunun arkasına Visual Studio ya da Azure
 | NuGet<br><br>NuGet paketi<br> keşif | Api.nuget.org <br>www.nuget.org <br>Nuget.org<br><br>crl3.digicert.com <br>crl4.digicert.com <br>OCSP.digicert.com <br>cacerts.digicert.com | HTTPS<br><br>HTTP/s | 443<br><br>80/443<br> | İmzalı NuGet paketlerini doğrulamak için kullanılır.<br><br>NuGet paketlerini ve sürümlerini arama için gerekli |
 | GitHub depo bilgilerini | api.github.com | HTTPS | 443 | Bower paketlerini hakkında ek bilgi almak için gerekli |
 | Web Lint | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http | 80 | |
-| Cookiecutter<br>Explorer şablonu<br>keşif <br><br>Cookiecutter <br>Proje Gezgini<br> Oluşturma | api.github.com <br>RAW.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.Python.org | HTTPS | 443<br> | Çevrimiçi Şablonlar önerilen veri akışımıza ve github depoları bulmak için kullanılan <br><br>Bir cookiecutter Python paket Python paket dizinini (Pypı) tek seferlik bir isteğe bağlı yükleme gerektirir bir cookiecutter şablonundan bir proje oluşturmak için kullanılan |
+| Cookiecutter<br>Explorer şablonu<br>keşif <br><br>Cookiecutter <br>Proje Gezgini<br> Oluşturma | api.github.com <br>RAW.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.Python.org | HTTPS | 443<br> | Çevrimiçi Şablonlar önerilen veri akışımıza ve GitHub depoları bulmak için kullanılan <br><br>Bir cookiecutter Python paket Python paket dizinini (Pypı) tek seferlik bir isteğe bağlı yükleme gerektirir bir cookiecutter şablonundan bir proje oluşturmak için kullanılan |
 | Python paketi <br>keşif<br><br>Python paketi <br>yönetim<br><br>Python <br>Yeni Proje <br>templates | pypi.org<br> <br>pypi.Python.org <br>Bootstrap.pypa.io<br><br>go.microsoft.com | HTTPS | 443 | Pip paketleri için arama özelliğini sağlar.<br><br>Pip eksik olup olmadığını otomatik olarak yüklemek için kullanılan <br><br> Oluşturmak için kullanılan <br><br>Proje şablonları cookiecutter şablonu URL'lere yeni proje iletişim kutusunda aşağıdaki Python'ı çözmek için kullanılır:<br> -Projekt Klasifikace<br>-Kümeleme proje <br> -Projekt Regrese <br> -PyGame PyKinect kullanma <br> -Projekt Pyvot |
 | Office web <br>eklentisi <br> Bildirimi <br>Doğrulama <br>Hizmet | verificationservice.osi.office.net | HTTPS | 443 | Office web eklentileri için bildirimleri doğrulamak için kullanılır |
 | SharePoint ve <br>Office eklentileri | SharePoint.com | HTTPS | 443 | Yayımlama ve SharePoint ve Office eklentileri SharePoint Online'a test etmek için kullanılan |

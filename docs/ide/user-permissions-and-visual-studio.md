@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2df7031baffcdcfcac07f4b2054ff2aeb9ab81ab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b48a9cae19faa592eecb2f02af67e9ad8b2ca9b3
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885766"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348318"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Kullanıcı izinleri ve Visual Studio
 
@@ -33,7 +33,7 @@ Normal bir kullanıcı olarak Visual Studio IDE içinde hemen her şeyi yapabili
 |Alan|Görev|Daha fazla bilgi için|
 |----------|----------| - |
 |Yükleme|Visual Studio'yu yükleyin.|[Visual Studio'yu yükleyin](../install/install-visual-studio.md)|
-||Yüklemek, güncelleştirmek veya yerel Yardım içeriğini kaldırın.|[Yerel Yardım içeriği yükleme ve yönetme](../ide/install-and-manage-local-content.md)|
+||Yüklemek, güncelleştirmek veya yerel Yardım içeriğini kaldırın.|[Yerel Yardım içeriği yükleme ve yönetme](../help-viewer/install-manage-local-content.md)|
 |Araç Kutusu|Klasik COM denetimleri ekleme **araç kutusu**.|[Araç Kutusu](../ide/reference/toolbox.md)|
 |Oluşturma|Bir bileşeni kayıt ettiren oluşturma sonrası olayları kullanın.|[Özel derleme adımları anlayın ve derleme olayları](/cpp/ide/understanding-custom-build-steps-and-build-events)|
 ||C++ projeleri oluşturduğunuzda kayıt adımı içerir.||

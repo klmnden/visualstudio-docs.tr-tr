@@ -1,9 +1,10 @@
 ---
 title: Visual Studio’da oturum açma
-ms.custom: ''
-ms.date: 11/16/2017
+titleSuffix: ''
+ms.custom: seodec18
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
@@ -11,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7568583ac9239e168760000f0712ca7dcc4c33f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 2e72205708ca5114c5757e9d122230af7af13d94
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159860"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348392"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio’da oturum açma
 
@@ -27,7 +28,7 @@ Kişiselleştirin ve kişiselleştirme hesabınız IDE açarak ayarlarsanız, Vi
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Neden Visual Studio'da oturum açmam gerekiyor?
 
-Oturum açtığınızda, Visual Studio deneyimini zenginleştirin. Örneğin, oturum açtıktan sonra ayarları cihazlar arasında eşitleme, bir deneme süresini uzatmak ve dizileri için bir Azure hizmeti, otomatik olarak bağlan.
+Oturum açtığınızda, Visual Studio deneyimini zenginleştirin. Örneğin, oturum açtıktan sonra şunları yapabilirsiniz [ayarlarınızı eşitlemek](synchronized-settings-in-visual-studio.md) cihazlar arasında bir deneme süresini uzatmak ve dizileri için bir Azure hizmeti, otomatik olarak bağlanın.
 
 Şunların gerçekleşmesini bekleyebilirsiniz ve oturum açma sonrasında neler yapabileceğinizi tam bir listesi aşağıda verilmiştir:
 
@@ -69,7 +70,7 @@ Oturum açma sırasında herhangi bir sorunla karşılaşırsanız, bkz. Lütfen
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio’nun Kilidini Açma](../ide/how-to-unlock-visual-studio.md)
-* [Visual Studio IDE’ye Genel Bakış](../get-started/visual-studio-ide.md)
+* [Visual Studio kilidini açma](../ide/how-to-unlock-visual-studio.md)
+* [Visual Studio IDE'ye genel bakış](../get-started/visual-studio-ide.md)
 * [Oturum açma (Mac için Visual Studio)](/visualstudio/mac/signing-in)
 * [Etkinleştirme (Mac için Visual Studio)](/visualstudio/mac/activation)

@@ -17,16 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c03709517f1c1d5bd28a2a0847a51895eb49557
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 06696ca975fb80eaa97cd265c9d45e6174d3b053
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052158"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348541"
 ---
 # <a name="create-solutions-and-projects"></a>Projeler ve çözümler oluşturma
 
-*Projeleri* , kaynak kodu dosyaları, bit eşlemler, simgeler, uygulamanızı oluşturmak için gereken öğeleri içeren Visual Studio ve bileşen ve hizmet başvuruları mantıksal kapsayıcılardır. Yeni bir proje oluşturduğunuzda, Visual Studio oluşturur bir *çözüm* proje içerecek. İsterseniz, diğer yeni veya mevcut projeleri çözüme sonra ekleyebilirsiniz. Çözümleri Ayrıca belirli hiçbir projeye bağlı olmayan dosyalar içerebilir.
+*Projeleri* kaynak kodu dosyaları, bit eşlemler, simgeler gibi Visual Studio'da, uygulamanızı oluşturmak için gereken öğeleri ve bileşen ve hizmet başvuruları tutun. Yeni bir proje oluşturduğunuzda, Visual Studio oluşturur bir *çözüm* proje içerecek. İsterseniz, diğer yeni veya mevcut projeleri çözüme sonra ekleyebilirsiniz. Çözümleri Ayrıca belirli hiçbir projeye bağlı olmayan dosyalar içerebilir.
 
 ![Çözüm/proje hiyerarşisi](./media/vside-proj-soln.png)
 

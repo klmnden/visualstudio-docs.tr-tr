@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 2dd23b87bc3d362f7d198cdd0e5d63e0ebac26d5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 91204ea5b4303b38397d90761fd9648159174dd4
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667060"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348397"
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>Visual Studio için R Araçları'na hoşgeldiniz
 
@@ -29,7 +29,7 @@ R araçları Visual Studio (RTVS için) yüklemek için teşekkür ederiz! Gözd
 - [Visual Studio için R araçları yükleme](installing-r-tools-for-visual-studio.md)
 - [Gönder ve hataları ve özellik isteklerini GitHib göz atın](https://github.com/Microsoft/RTVS/issues)
 - [Keşfedin ve kaynak koduna katkıda bulunma](https://github.com/Microsoft/RTVS/blob/master/LICENSE)
-- (Bu tercih edilir), Github'ı kullanmadan geri bildirim göndermek için **R araçları > geri bildirim** Visual Studio'daki menü.
+- (Bu tercih edilir), GitHub'ı kullanmadan geri bildirim göndermek için **R araçları > geri bildirim** Visual Studio'daki menü.
 
 ## <a name="microsoft-r-distributions"></a>Microsoft R dağıtımları
 
