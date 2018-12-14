@@ -38,7 +38,7 @@ items:
   - name: Visual Studio’yu değiştirme
     href: install/modify-visual-studio.md
   - name: Yardım Görüntüleyicisi’ni yükleme
-    href: ide/microsoft-help-viewer-installation.md
+    href: help-viewer/installation.md
   - name: Visual Studio’yu onarın
     href: install/repair-visual-studio.md
   - name: Visual Studio'yu kaldırma
@@ -84,12 +84,12 @@ items:
       - name: 'Visual Studio abonelikleri: Yönetici genel bakışı'
         href: /visualstudio/subscriptions/admin-responsibilities
     - name: Yardım Görüntüleyicisi Yönetici Kılavuzu
-      href: ide/help-viewer-administrator-guide.md
+      href: help-viewer/administrator-guide.md
       items:
       - name: Yardım İçeriği Yöneticisi İçin Komut Satırı Bağımsız Değişkenleri
-        href: ide/command-line-arguments-for-the-help-content-manager.md
+        href: help-viewer/command-line-arguments.md
       - name: Yardım İçerik Yöneticisi Geçersiz Kılmaları
-        href: ide/help-content-manager-overrides.md
+        href: help-viewer/behavior-overrides.md
     - name: Başvuru
       items:
       - name: Visual Studio iş yükü ve bileşen kimlikleri
@@ -288,7 +288,7 @@ items:
               href: ide/best-practices-for-using-code-snippets.md
           - name: Kod parçacıkları oluşturma
             items:
-            - name: 'İzlenecek Yol: Kod parçacığı oluşturma'
+            - name: 'İzlenecek yol: Kod parçacığı oluşturma'
               href: ide/walkthrough-creating-a-code-snippet.md
             - name: Kod parçacıklarını dağıtma
               href: ide/how-to-distribute-code-snippets.md
@@ -354,7 +354,7 @@ items:
             href: ide/reference/sync-type-and-file.md
           - name: Açık tür kullanma
             href: ide/reference/convert-var-to-explicit-type.md
-        - name: 'İzlenecek Yol: Kullanımdan kod oluşturma'
+        - name: 'İzlenecek yol: Kullanımdan kod oluşturma'
           href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
       - name: Üretkenlik ipuçları
         href: ide/productivity-tips-for-visual-studio.md
@@ -550,7 +550,7 @@ items:
           items:
           - name: '1. Adım: Proje Oluşturma ve Formunuza Etiketler Ekleme'
             href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
-          - name: '2. Adım: Rasgele bir Toplama Problemi Oluşturma'
+          - name: '2. Adım: Rastgele Bir Toplama Problemi Oluşturma'
             href: ide/step-2-create-a-random-addition-problem.md
           - name: '3. Adım: Geri Sayım Zamanlayıcısı Ekleme'
             href: ide/step-3-add-a-countdown-timer.md
@@ -569,19 +569,19 @@ items:
           items:
           - name: '1. Adım: Proje Oluşturma ve Formunuza Tablo Ekleme'
             href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
-          - name: '2. Adım: Rasgele Nesne ve Simge Listesi Ekleme'
+          - name: '2. Adım: Rastgele Nesne ve Simge Listesi Ekleme'
             href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
-          - name: '3. Adım: Her Etikete Rasgele Simge Atama'
+          - name: '3. Adım: Her Etikete Rastgele Bir Simge Atama'
             href: ide/step-3-assign-a-random-icon-to-each-label.md
-          - name: '4. Adım: Her Etikete Click Olay İşleyicisi Ekleme'
+          - name: '4. Adım: Her Etikete Bir Tıklama Olayı İşleyicisi Ekleme'
             href: ide/step-4-add-a-click-event-handler-to-each-label.md
           - name: '5. Adım: Etiket Başvuruları Ekleme'
             href: ide/step-5-add-label-references.md
           - name: '6. Adım: Zamanlayıcı Ekleme'
             href: ide/step-6-add-a-timer.md
-          - name: '7. Adım: Çiftleri Görünür Kılma'
+          - name: '7. Adım: Çiftleri Görünür Durumda Tutma'
             href: ide/step-7-keep-pairs-visible.md
-          - name: '8. Adım: Oyuncunun Kazandığını Doğrulamak için Yöntem Ekleme'
+          - name: '8. Adım: Oyuncunun Kazanıp Kazanmadığını Doğrulamak için Yöntem Ekleme'
             href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
           - name: '9. Adım: Diğer Özellikleri Deneme'
             href: ide/step-9-try-other-features.md
@@ -660,7 +660,7 @@ items:
   - name: IDE’yi Özelleştirme
     href: ide/personalizing-the-visual-studio-ide.md
     items:
-    - name: 'Hızlı başlangıç: Tema ve metin renklerini kişiselleştirme'
+    - name: 'Hızlı Başlangıç: Tema ve metin renklerini kişiselleştirme'
       href: ide/quickstart-personalize-the-ide.md
     - name: Ortam ayarları
       href: ide/environment-settings.md
@@ -785,8 +785,8 @@ items:
           href: ide/reference/quick-launch-environment-options-dialog-box.md
         - name: Ortam - Başlangıç
           href: ide/reference/startup-environment-options-dialog-box.md
-        - name: Ortam - Eşitlenmiş Ayarlar
-          href: ide/reference/synchronized-settings-environment-options-dialog-box.md
+        - name: Ortam - Hesaplar
+          href: ide/reference/accounts-environment-options-dialog-box.md
         - name: Ortam - Sekmeler ve Pencereler
           href: ide/reference/tabs-and-windows-environment-options-dialog-box.md
         - name: Ortam - Görev Listesi
@@ -1057,28 +1057,28 @@ items:
     - name: Windows Bilgi Koruması (WIP)
       href: ide/exempt-visual-studio-from-wip.md
   - name: Microsoft Yardım Görüntüleyicisi
-    href: ide/microsoft-help-viewer.md
+    href: help-viewer/overview.md
     items:
     - name: Yerel İçeriği Yükleme ve Yönetme
-      href: ide/install-and-manage-local-content.md
+      href: help-viewer/install-manage-local-content.md
     - name: Yardım Görüntüleyicisi'nde konuları bulma
       items:
       - name: Dizinde Konu Bulma
-        href: ide/how-to-find-topics-in-the-index.md
+        href: help-viewer/find-topics-index.md
       - name: İçindekilerde Konu Bulma
-        href: ide/how-to-find-topics-in-the-table-of-contents.md
+        href: help-viewer/find-topics-toc.md
       - name: Konu Arama
-        href: ide/how-to-search-for-topics.md
+        href: help-viewer/find-topics.md
         items:
         - name: Arama İfadelerinde Mantıksal ve Gelişmiş İşleçler
-          href: ide/logical-operators-in-search-expressions.md
+          href: help-viewer/logical-operators-search-expressions.md
     - name: Yardım Görüntüleyicisi'ni Özelleştirme
-      href: ide/customize-the-help-viewer.md
-    - name: Yardım Görüntüleyici'nin Erişilebilirlik Özellikleri
-      href: ide/accessibility-features-of-the-help-viewer.md
+      href: help-viewer/customize.md
+    - name: Erişilebilirlik Özellikleri
+      href: help-viewer/accessibility-features.md
       items:
-      - name: Kısayol Tuşları (Yardım Görüntüleyicisi)
-        href: ide/shortcut-keys-help-viewer.md
+      - name: Kısayol Tuşları
+        href: help-viewer/shortcut-keys.md
   - name: Dotfuscator Community Edition (CE)
     href: ide/dotfuscator/index.md
     items:
@@ -1120,9 +1120,9 @@ items:
       href: ide/developer-community-privacy.md
   - name: Visual Studio’da sorun bildirme
     href: ide/how-to-report-a-problem-with-visual-studio-2017.md
-  - name: 'Genel bakış: Sorun bildirme'
+  - name: 'Genel bakış: Sorun bildirin'
     href: ide/report-a-problem.md
-  - name: 'Genel bakış: Özellik önerme'
+  - name: 'Genel bakış: Bir özellik önerin'
     href: ide/suggest-a-feature.md
   - name: Müşteri Deneyimi Geliştirme Programı
     href: ide/visual-studio-experience-improvement-program.md
@@ -1133,9 +1133,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Bizimle iletişime geçin
     href: ide/talk-to-us.md
-ms.openlocfilehash: 26d86461928e5494d4c0d8686cdf279847f29342
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: ea2c50939b41a1495f02330ad5ca5fb0e0472666
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160081"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348460"
