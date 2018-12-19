@@ -1,7 +1,6 @@
 ---
-title: DLL'ler ve yürütülebilir dosyaları görüntüleme
-titleSuffix: Visual Studio Modules window
-ms.custom: seodec18
+title: DLL'ler ve yürütülebilir dosyalar modülleri penceresinde görüntüleme | Microsoft Docs
+ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -26,14 +25,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2702eb38e895f5fa9021fae754ae1e4a9325cf18
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MT
+ms.openlocfilehash: 4604932084289919a86ba09516b8d2c237f44cd9
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066788"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296274"
 ---
-# <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>DLL'ler ve yürütülebilir dosyalar modüller penceresini görüntüleyin (C#, C++, Visual Basic F#)
+# <a name="view-dlls-and-executables-in-the-modules-window"></a>DLL'ler ve yürütülebilir dosyalar modüller penceresini görüntüleyin
  
 Visual Studio hata ayıklama sırasında **modülleri** penceresinde listeler ve DLL'ler ve yürütülebilir dosyalar hakkındaki bilgileri gösterir (*.exe* dosyaları), uygulama kullanır. 
 

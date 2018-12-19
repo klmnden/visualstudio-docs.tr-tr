@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1bc8aee0a1294aeda4c57a3416de4a0cc98129f3
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
-ms.translationtype: MT
+ms.openlocfilehash: 05d7c3cc2c391eee6ceeba492cd083efd3c00015
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673048"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916757"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>İzlenecek yol: içerik denetimlerini özel XML bölümlerine bağlama
   Bu yönerge, içerik denetimleri belge içinde depolanan XML verilerini Word için belge düzeyi özelleştirmesinde bağlamak nasıl gösterir.  
@@ -296,7 +296,7 @@ ms.locfileid: "50673048"
   
 9. Dosya adı **ÇalışanDenetimleri.docx.zip**.  
   
-     **ÇalışanDenetimleri.docx'i** belge Open XML biçiminde kaydedilir. Bu belge ile yeniden adlandırarak *.zip* dosya adı uzantısı belgesinin içeriğini inceleyebilirsiniz. Open XML hakkında daha fazla bilgi için teknik makaleye bakın [(2007) Office Open XML giriş dosyası biçimleri](/previous-versions/office/developer/office-2007/aa338205(v=office.12)).  
+     **ÇalışanDenetimleri.docx'i** belge Open XML biçiminde kaydedilir. Bu belge ile yeniden adlandırarak *.zip* dosya adı uzantısı belgesinin içeriğini inceleyebilirsiniz. Open XML hakkında daha fazla bilgi için teknik makaleye bakın [(2007) Office Open XML giriş dosyası biçimleri](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf).  
   
 10. Açık **ÇalışanDenetimleri.docx.zip** dosya.  
   

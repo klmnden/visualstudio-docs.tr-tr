@@ -1,5 +1,5 @@
 ---
-title: IDE’yi Özelleştirme
+title: Visual Studio IDE'yi özelleştirme
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,23 +9,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfd3ed3461b40f85e66d62f01e68aff4ce740031
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
-ms.translationtype: MT
+ms.openlocfilehash: 8d2e42c31d7cbdb52e602eee4e424eb78ee89d77
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159509"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348702"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Visual Studio IDE'yi kişiselleştirme
 
-Visual Studio geliştirme tarzınıza ve gereksinimlerini en iyi desteklemek için çeşitli yollarla kişiselleştirebilirsiniz. Ayarlarınızı birçoğu, Visual Studio örnekleri arasında dolaştırmak&mdash;bkz [eşitlenen ayarlar](../ide/synchronized-settings-in-visual-studio.md). Bu makalede, farklı kişiselleştirme ve daha fazla bilgi bulabileceğiniz kısaca açıklanmaktadır.
+Visual Studio geliştirme tarzınıza ve gereksinimlerini en iyi desteklemek için çeşitli yollarla kişiselleştirebilirsiniz. Ayarlarınızı birçoğu, Visual Studio örnekleri arasında dolaştırmak&mdash;bkz [eşitlenen ayarlar](../ide/synchronized-settings-in-visual-studio.md). Bu konuda, farklı kişiselleştirme ve daha fazla bilgi bulabileceğiniz kısaca açıklanmaktadır.
 
 > [!NOTE]
 > Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [Mac IDE için Visual Studio özelleştirme](/visualstudio/mac/customizing-the-ide).
-
-## <a name="default-settings"></a>Varsayılan ayarları
-
-Visual Studio geliştirme türüne yönelik en iyi duruma getirir bir varsayılan koleksiyon ayarlarını seçebilirsiniz. Daha fazla bilgi için [ortam ayarları](environment-settings.md).
 
 ## <a name="general-environment-options"></a>Genel ortam seçenekleri
 
@@ -42,7 +38,7 @@ Birçok kişiselleştirme seçenekleri aracılığıyla sunulur [ortam seçenekl
 
 Renk teması açık, koyu mavi yazıp arasında değiştirmek için `environment` içinde **hızlı başlatma** kutusuna ve ardından **ortam--> Genel**. İçinde **seçenekleri** iletişim kutusunda, değişiklik **renk teması** seçeneği.
 
-Düzenleyicide renklendirme seçeneklerini değiştirmek için şunu yazın `environment` içinde **hızlı başlatma** kutusuna ve ardından **ortam--> yazı tipleri ve renkler**. Bkz: [nasıl yapılır: Yazı tiplerini ve renkleri değiştirme](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Düzenleyicide renklendirme seçeneklerini değiştirmek için şunu yazın `environment` içinde **hızlı başlatma** kutusuna ve ardından **ortam--> yazı tipleri ve renkler**. Bkz: [nasıl yapılır: yazı tiplerini ve renkleri değiştirme](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Ana menü büyük/küçük harf
 
@@ -50,7 +46,7 @@ Ana menü büyük/küçük harf arasında değiştirebilirsiniz **ilk harfler b�
 
 ### <a name="customize-menus-and-toolbars"></a>Menüleri ve araç çubuklarını özelleştirme
 
-Menü veya araç çubuğu öğe eklemek veya kaldırmak için bkz: [nasıl yapılır: Menüleri ve araç çubuklarını özelleştirme](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+Menü veya araç çubuğu öğe eklemek veya kaldırmak için bkz: [nasıl yapılır: menüleri ve araç çubuklarını özelleştirme](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="start-page"></a>Başlangıç sayfası
 
@@ -66,7 +62,6 @@ Tanımlamak ve birden çok pencere düzenlerini kaydedebilir ve bunlar arasında
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Ortam ayarları](environment-settings.md)
-- [Visual Studio IDE'ye genel bakış](../get-started/visual-studio-ide.md)
-- [Hızlı Başlangıç: Visual Studio IDE ilk bakma](../ide/quickstart-ide-orientation.md)
+- [Visual Studio IDE'ye genel bakış](../ide/visual-studio-ide.md)
+- [Hızlı Başlangıç: Visual Studio IDE ilk bakış](../ide/quickstart-ide-orientation.md)
 - [IDE Mac için Visual Studio'yu özelleştirme](/visualstudio/mac/customizing-the-ide)

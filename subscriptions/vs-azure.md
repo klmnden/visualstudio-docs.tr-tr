@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil Azure avantajı etkinleştirme h
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a97dbd638c4840266f22c46610f78ec5b2d527d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 2a59953eb3af65430492d892e58f51f2d51f63e5
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862352"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073967"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Microsoft Azure'da kullanın
 
@@ -24,52 +24,51 @@ Visual Studio abonesi olarak, Microsoft Azure, başka bir ücret ödemeden kulla
 
 ## <a name="eligibility"></a>Uygunluk
 
-|                 Abonelik düzeyi / Program                 |           Faydası           |                         Yenilenebilir?                          |
-|--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
-|              Visual Studio Enterprise standart               |     150 ABD Doları aylık kredi     |                             Evet                             |
-|               Visual Studio Enterprise yıllık                |     150 ABD Doları aylık kredi     |                             Evet                             |
-|               Visual Studio Enterprise aylık               |        Yok        |                                                             |
-|             Visual Studio profesyonel standardı              |     50 ABD Doları aylık kredi      |                             Evet                             |
-|              Yıllık Visual Studio Professional               |     50 ABD Doları aylık kredi      |                             Evet                             |
-|              Visual Studio Professional aylık              |        Yok        |                                                             |
-|                    Visual Studio Test Pro                    |     50 ABD Doları aylık kredi      |                             Evet                             |
-|                        MSDN platformları                        |     100 ABD Doları aylık kredi     |                             Evet                             |
-|                 Visual Studio Dev Essentials                 | Ücretsiz Hizmetler + 200 ABD Doları değerinde kredi | Ücretsiz Hizmetler kalıcı.  200 ABD Doları kredi, yalnızca tek seferlik olur. |
-|               Visual Studio Enterprise - NFR\*               |     150 ABD Doları aylık kredi     |                             Evet                             |
-|                Visual Studio Enterprise - FTE                |     150 ABD Doları aylık kredi     |                             Evet                             |
-|     Visual Studio Enterprise - Microsoft iş ortağı ağı     |     150 ABD Doları aylık kredi     |                             Evet                             |
-|    Visual Studio Professional - Microsoft iş ortağı ağı    |        Yok        |                                                             |
-|        Visual Studio Enterprise – Imagine (standart)         |        Yok        |                                                             |
-|         Visual Studio Enterprise – Imagine (Premium)         |        Yok        |                                                             |
-|             Visual Studio Enterprise – BizSpark              |     150 ABD Doları aylık kredi     |                             Evet                             |
-|      Visual Studio Enterprise – MCT yazılım ve Hizmetleri      |     100 ABD Doları aylık kredi     |                             Evet                             |
-| Visual Studio Enterprise – MCT yazılım ve geliştirici Hizmetleri |     150 ABD Doları aylık kredi     |                             Evet                             |
-
+| Abonelik düzeyi / Program                                 | Faydası                     | Yenilenebilir?                                                   |
+|--------------------------------------------------------------|-----------------------------|--------------------------------------------------------------|
+| Visual Studio Enterprise standart                            | 150 ABD Doları aylık kredi         |   Evet                                                        |
+| Visual Studio Enterprise yıllık                              | 150 ABD Doları aylık kredi         |   Evet                                                        |
+| Visual Studio Enterprise aylık                             | Yok               |                                                              |
+| Visual Studio profesyonel standardı                          | 50 ABD Doları aylık kredi          |   Evet                                                        |
+| Yıllık Visual Studio Professional                            | 50 ABD Doları aylık kredi          |   Evet                                                        |
+| Visual Studio Professional aylık                           | Yok               |                                                              |
+| Visual Studio Test Pro                                       | 50 ABD Doları aylık kredi          |   Evet                                                        |
+| MSDN platformları                                               | 100 ABD Doları aylık kredi         |   Evet                                                        |
+| Visual Studio Dev Essentials                                 | Ücretsiz Hizmetler + 200 ABD Doları değerinde kredi | Ücretsiz Hizmetler kalıcı.  200 ABD Doları kredi, yalnızca tek seferlik olur.  |
+| Visual Studio Enterprise - NFR *                              | 150 ABD Doları aylık kredi         |   Evet                                                        |
+| Visual Studio Enterprise - FTE                               | 150 ABD Doları aylık kredi         |   Evet                                                        |
+| Visual Studio Enterprise - Microsoft iş ortağı ağı         | 150 ABD Doları aylık kredi         |   Evet                                                        |
+| Visual Studio Professional - Microsoft iş ortağı ağı       | Yok               |                                                              |
+| Visual Studio Enterprise – Imagine (standart)                | Yok               |                                                              |
+| Visual Studio Enterprise – Imagine (Premium)                 | Yok               |                                                              |
+| Visual Studio Enterprise – BizSpark                          | 150 ABD Doları aylık kredi         |   Evet                                                        |
+| Visual Studio Enterprise – MCT yazılım ve Hizmetleri           | 100 ABD Doları aylık kredi         |   Evet                                                        |
+| Visual Studio Enterprise – MCT yazılım ve geliştirici Hizmetleri | 150 ABD Doları aylık kredi         |   Evet                                                        |
 * Değil satışıyla (NFR), Microsoft değerli Professional (MVP), bölge Yöneticisi (RD) için Visual Studio Endüstri ortağı (VSIP) içerir
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
 
-1. Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1.  Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Azure kutucuğu bulun Araçlar bölümünde avantajları hakkında sayfasında ve tıklayın **etkinleştirme** avantajı kutucuğun alt kısmındaki bağlantı.
-   > [!div class="mx-imgBorder"]
-   > ![Azure kutucuğu](_img/vs-azure/vs-azure-tile.png)
+2.  Azure kutucuğu bulun Araçlar bölümünde avantajları hakkında sayfasında ve tıklayın **etkinleştirme** avantajı kutucuğun alt kısmındaki bağlantı.
+    > [!div class="mx-imgBorder"]
+    > ![Azure kutucuğu](_img\vs-azure\vs-azure-tile.png)
 
-3. Hüküm ve koşullarını kabul edin ve onay kutusuna tıklayın, Azure aboneliğinizi oluşturmak için gerekli bilgileri doldurun **kaydolun**:
-   > [!div class="mx-imgBorder"]
-   > ![Azure kaydolma](_img/vs-azure/vs-azure-sign-up-cropped.png)
+3.  Hüküm ve koşullarını kabul edin ve onay kutusuna tıklayın, Azure aboneliğinizi oluşturmak için gerekli bilgileri doldurun **kaydolun**:
+    > [!div class="mx-imgBorder"]
+    > ![Azure kaydolma](_img\vs-azure\vs-azure-sign-up-cropped.png)
 
-4. Hesabınız hazır, (ayrı olarak satılan) bir Azure destek planı seçin veya Azure aboneliğinizle başlayın seçeneğine sahip olacaksınız.
-   > [!div class="mx-imgBorder"]
-   > ![Azure hazırlığı](_img/vs-azure/vs-azure-getting-ready-cropped.png)
+4.  Hesabınız hazır, (ayrı olarak satılan) bir Azure destek planı seçin veya Azure aboneliğinizle başlayın seçeneğine sahip olacaksınız.
+    > [!div class="mx-imgBorder"]
+    > ![Azure hazırlığı](_img\vs-azure\vs-azure-getting-ready-cropped.png)
 
-5. Azure Panosu yükler ve, ilk kez kullanıldığında, bir tura seçeneğine sahip olacaksınız.  Bir dizi nasıl çeşitli görevleri gerçekleştirmek ve ilgili bilgi çıkış işaret edeceği Ekran İpucu turu oluşur.  Azure Panosu, tamamlayarak veya turu kapatma görüntülenir.
+5.  Azure Panosu yükler ve, ilk kez kullanıldığında, bir tura seçeneğine sahip olacaksınız.  Bir dizi nasıl çeşitli görevleri gerçekleştirmek ve ilgili bilgi çıkış işaret edeceği Ekran İpucu turu oluşur.  Azure Panosu, tamamlayarak veya turu kapatma görüntülenir.
 
-6. Yer işareti [Azure portalı](https://portal.azure.com) gelecekte kolay erişim için.
-   > [!div class="mx-imgBorder"]
-   > ![Azure Panosu](_img/vs-azure/vs-azure-dashboard-cropped.png)
+6.  Yer işareti [Azure portalı](https://portal.azure.com) gelecekte kolay erişim için.
+    > [!div class="mx-imgBorder"]
+    > ![Azure Panosu](_img\vs-azure\vs-azure-dashboard-cropped.png)
 
 ## <a name="faq"></a>SSS
 

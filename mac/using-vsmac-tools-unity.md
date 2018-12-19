@@ -1,16 +1,16 @@
 ---
 title: Visual Studio için Unity için Mac araçları kullanarak
 description: Bu kılavuz, Mac araçları için Unity uzantısı için Visual Studio kullanmayı açıklar
-author: therealjohn
-ms.author: johmil
+author: dantogno
+ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: d4df59273db1fab8492b36e87e48e0e770072f17
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
-ms.translationtype: MT
+ms.openlocfilehash: b53de918f51abd03d28173bf00d83d98503e86bd
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027308"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348936"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Visual Studio için Unity için Mac araçları kullanarak
 

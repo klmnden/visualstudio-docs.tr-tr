@@ -9,12 +9,12 @@ description: Enterprise Mobility + Security avantajı, Visual Studio aboneliğin
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 96f093f6f267e80c5136bd87a009dd25e43ab2cf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c85643a13adec8913477d7201a224a6689d3d46f
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930121"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073798"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security'nin (EMS), Visual Studio abonelikleri
 
@@ -27,32 +27,31 @@ Visual Studio Enterprise yıllık Bulut ve standart aboneliklere, Enterprise Mob
 
 EMS kullanmak için bir hesap oluşturabilir veya mevcut bir hesabı kullanarak oturum gerekecektir.
 
-1. Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1.  Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Enterprise Mobility & Security kutucuk Araçlar bölümünde bulun ve tıklayarak **kodunu Al** kutucuğun alt kısmındaki bağlantı.   Kod başarıyla alındı bir bildirim alacaksınız.  Tıklayın **etkinleştirme**.
-   > [!div class="mx-imgBorder"]
-   > ![EMS avantajı kutucuğu](_img/vs-ems/vs-ems-tile.png)
+2.  Enterprise Mobility & Security kutucuk Araçlar bölümünde bulun ve tıklayarak **kodunu Al** kutucuğun alt kısmındaki bağlantı.   Kod başarıyla alındı bir bildirim alacaksınız.  Tıklayın **etkinleştirme**.
+    > [!div class="mx-imgBorder"]
+    > ![EMS avantajı kutucuğu](_img\vs-ems\vs-ems-tile.png)
 
-3. Enterprise Mobility + Security E5 sayfasında, mevcut bir abonelikle oturum açmak veya yeni bir tane oluşturun.  Yeni bir tane oluşturun, istenen bilgileri girin ve tıklayın **sonraki**.
-   > [!div class="mx-imgBorder"]
-   > ![EMS teklifi, hesap oluştur](_img/vs-ems/vs-ems-create-account-cropped.png)
+2.  Enterprise Mobility + Security E5 sayfasında, mevcut bir abonelikle oturum açmak veya yeni bir tane oluşturun.  Yeni bir tane oluşturun, istenen bilgileri girin ve tıklayın **sonraki**.
+    > [!div class="mx-imgBorder"]
+    > ![EMS teklifi, hesap oluştur](_img\vs-ems\vs-ems-create-account-cropped.png)
 
-4. Kullanıcı kimliği ve parola oluşturun.  Tıklayın **Hesabımı Oluştur** devam etmek için.
-   > [!div class="mx-imgBorder"]
-   > ![EMS avantajı UserID oluşturma](_img/vs-ems/vs-ems-userID-cropped.png)
+3. Kullanıcı kimliği ve parola oluşturun.  Tıklayın **Hesabımı Oluştur** devam etmek için.
+    > [!div class="mx-imgBorder"]
+    > ![EMS avantajı UserID oluşturma](_img\vs-ems\vs-ems-userID-cropped.png)
 
-5. Ardından, telefon veya metin yoluyla bir doğrulama kodu almak için bir telefon numarası sağlayın.  Kodu girin ve tıklatın **sonraki**.
-   > [!div class="mx-imgBorder"]
-   > ![EMS Avantajı doğrulama](_img/vs-ems/vs-ems-robot-cropped.png)
+4.  Ardından, telefon veya metin yoluyla bir doğrulama kodu almak için bir telefon numarası sağlayın.  Kodu girin ve tıklatın **sonraki**.
+    > [!div class="mx-imgBorder"]
+    > ![EMS Avantajı doğrulama](_img\vs-ems\vs-ems-robot-cropped.png)
 
-6. Sonraki sayfada oturum açma sayfası ve kullanıcı kimliğinizi görüntüler  Daha sonra kullanmak için bu bilgileri kaydedin.  Tıklayın **başlamaya hazırsınız...**
-   > [!div class="mx-imgBorder"]
-   > ![EMS avantajı hesabı oluşturuldu](_img/vs-ems/vs-ems-save-info-cropped.png)
+5.  Sonraki sayfada oturum açma sayfası ve kullanıcı kimliğinizi görüntüler  Daha sonra kullanmak için bu bilgileri kaydedin.  Tıklayın **başlamaya hazırsınız...**
+    > [!div class="mx-imgBorder"]
+    > ![EMS avantajı hesabı oluşturuldu](_img\vs-ems\vs-ems-save-info-cropped.png)
 
-7. EMS Microsoft erişmesi gerekiyor [Azure portalı](https://azure.microsoft.com).  Azure aboneliğinizi etkinleştirmek için giriş sayfası EMS'yi üç adımı izleyin, kullanıcı ekleme ve EMS yapılandırın.
+6.  EMS Microsoft erişmesi gerekiyor [Azure portalı](https://azure.microsoft.com).  Azure aboneliğinizi etkinleştirmek için giriş sayfası EMS'yi üç adımı izleyin, kullanıcı ekleme ve EMS yapılandırın.
 
 ## <a name="eligibility"></a>Uygunluk
-
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standart, yıllık bulut)   | VL, Azure, perakende, seçili NFR<sup>1</sup> | Kullanılabilir       |  Evet          |

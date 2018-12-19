@@ -11,16 +11,16 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 913ad2e785fcdb2067f89d0d4de2b250db40468b
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: acef2728a79b8706b0af3dad4e272ed34b222a42
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349682"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552523"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ proje sistemi genişletilebilirlik ve araç takımı tümleştirmesi
 
-*Visual C++ proje sistemi* .vcxproj dosyaları için kullanılır. Dayanır [Visual Studio ortak proje System (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) ve ek, yeni araç takımları, derleme mimarileri ve Hedef platformlar kolay tümleştirme için C++ özgü genişletilebilirlik noktaları sağlar. 
+*Visual C++ proje sistemi* .vcxproj dosyaları tarafından kullanılır. Dayanır [Visual Studio ortak proje System (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) ve ek, yeni araç takımları, derleme mimarileri ve Hedef platformlar kolay tümleştirme için C++ özgü genişletilebilirlik noktaları sağlar. 
 
 ## <a name="c-msbuild-targets-structure"></a>C++ MSBuild hedefleri yapısı
 
@@ -227,13 +227,13 @@ Hedef gibi görünüyorsa `_ClCompile`, doğrudan başlarına hiçbir şey yapma
 </Target>
 ```
 
-`ClCompile` ve diğer yapı araç-özel hedefleri boş hedef olarak tanımlanan *Microsoft.CppBuild.targets*:
+`ClCompile` ve diğer yapı araç-özel hedefleri Microsoft.CppBuild.targets bulunan boş hedefler olarak tanımlanır:
 
 ```xml
 <Target Name="ClCompile"/>
 ```
 
-Çünkü `ClCompile` hedef boşsa, araç takımı tarafından geçersiz kılınmadığı sürece, herhangi bir gerçek derleme eylemi gerçekleştirilir. Araç takımı hedefleri geçersiz kılabilirsiniz `ClCompile` hedef, diğer bir deyişle, başka bir içerebilir `ClCompile` tanımı içeri aktardıktan sonra *Microsoft.CppBuild.targets*: 
+Çünkü `ClCompile` hedef boş bir hedef olarak tanımlanmış olan *Microsoft.CppBuild.targets*, bir araç takımı tarafından geçersiz kılınmadığı sürece, herhangi bir gerçek derleme eylemi gerçekleştirilir. Araç takımı hedefleri geçersiz kılabilirsiniz `ClCompile` hedef, diğer bir deyişle, başka bir içerebilir `ClCompile` tanımı içeri aktardıktan sonra *Microsoft.CppBuild.targets*: 
 
 ```xml
 <Target Name="ClCompile"
@@ -243,7 +243,7 @@ Hedef gibi görünüyorsa `_ClCompile`, doğrudan başlarına hiçbir şey yapma
 </Target>
 ```
 
-Visual Studio'nun platformlar arası destek uygulanmadı önce oluşturulduğu, adına rağmen `ClCompile` hedef CL.exe çağırmak yok. Bu ayrıca Clang, gcc ve diğer derleyiciler uygun MSBuild görevleri kullanarak çağırabilirsiniz.
+Adına rağmen `ClCompile`, Visual Studio'nun platformlar arası destek uygulanan önce oluşturulan `ClCompile` hedef CL.exe çağırmak yok. Bu ayrıca Clang, gcc ve diğer derleyiciler uygun MSBuild görevleri kullanarak çağırabilirsiniz.
 
 `ClCompile` Hedef dışında herhangi bir bağımlılık olmamalıdır `SelectClCompile` IDE içinde çalışma için tek dosyalı derleme komutu için gerekli olan hedef.
 
@@ -289,7 +289,7 @@ Bir derleme aracı için yeni bir görev oluşturmanız gerekiyorsa, aşağıdak
 
 1. Daha iyi görev performans istediğiniz veya daha karmaşık işlevselliği yeterlidir, normal Msbuild'i kullanma [görev yazma](../msbuild/task-writing.md) işlem.
 
-   Tüm girişler ve çıkışlar aracının aracı komut satırında olarak listeleniyorsa `CL`, `MIDL`, ve `RC` durumlarda ve otomatik girdi ve çıktı dosya izleme ve .tlog dosya oluşturma istiyorsanız, görev türetilen`Microsoft.Build.CPPTasks.TrackedVCToolTask`sınıfı. Şu an için temel belgelere varken [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask) örnekler veya ayrıntılar için sınıf `TrackedVCToolTask` sınıfı. İlginizi çeken olacaksa, kendi sesinizi üzerinde ekleyin [developercommunity.visualstudio.com](https://developercommunity.visualstudio.com/spaces/62/index.html).
+   Tüm girişler ve çıkışlar aracının aracı komut satırında olarak listeleniyorsa `CL`, `MIDL`, ve `RC` durumlarda ve otomatik girdi ve çıktı dosya izleme ve .tlog dosya oluşturma istiyorsanız, bir görevden türetilen `TrackedVCToolTask`.
 
 ## <a name="incremental-builds-and-up-to-date-checks"></a>Artımlı derlemeleri ve güncel denetimleri
 
@@ -428,13 +428,13 @@ Kullanılacak `Task.HostObject` kaydedilmemiş kaynak dosyaların içeriğini al
 @="{83046B3F-8984-444B-A5D2-8029DEE2DB70}"
 ```
 
-## <a name="visual-c-project-extensibility-in-the-visual-studio-ide"></a>Visual Studio IDE, Visual C++ proje genişletilebilirliği
+## <a name="project-extensibility-in-the-visual-studio-ide"></a>Visual Studio IDE'de proje genişletilebilirliği
 
 Visual C++ proje sistemi dayanır [VS proje sistemi](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md)ve onun genişletilebilirlik noktaları kullanır. Ancak, proje hiyerarşisi uygulama Visual C++'a özgüdür ve CPS alarak değil, bu nedenle hiyerarşi genişletilebilirlik proje öğeleri için sınırlıdır.
 
 ### <a name="project-property-pages"></a>Proje özellik sayfaları
 
-Genel tasarım bilgileri için bkz. [Platform genişletilebilirliği - 1. bölüm](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) ve [Platform genişletilebilirliği - 2. bölüm](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
+Genel tasarım bilgileri için bkz. [Platform genişletilebilirliği - 1. bölüm](http://blogs.msdn.com/b/vsproject/archive/2009/06/10/platform-extensibility-part-1.aspx) ve [Platform genişletilebilirliği - 2. bölüm](http://blogs.msdn.com/b/vsproject/archive/2009/06/18/platform-extensibility-part-2.aspx).
 
 Basit bir deyişle, özellik sayfaları gördüğünüz **proje özellikleri** iletişim kutusu için bir C++ projesi tarafından tanımlanan *kural* dosyaları. Bir kural dosyası bir özellik sayfasında göster ve nasıl ve bunlar projede kaydedileceği dosya için özellikler kümesini belirtir. Kural, Xaml biçimini kullanan .xml dosyaları dosyalarıdır. Bunları serileştirmek için kullanılan türleri açıklanan [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Kural proje dosyalarında kullanımı hakkında daha fazla bilgi için bkz. [özellik sayfası XML kural dosyaları](/cpp/ide/property-page-xml-files).
 
@@ -478,13 +478,12 @@ Kural biçimi doğrudan olduğundan bu bölüm, yalnızca kural kullanıcı arab
 
 `PageTemplate` Özniteliği, kural nasıl görüntüleneceğini tanımlar **özellik sayfaları** iletişim. Özniteliği şu değerlerden biri olabilir:
 
-
-| Öznitelik | Açıklama |
-|------------| - |
-| `generic` | Tüm özelliklerini kategoriye başlıklar altında tek bir sayfada gösterilir<br/>Kural için görünür `Project` ve `PropertySheet` bağlamı, ama `File`.<br/><br/> Örnek: `$(VCTargetsPath)` \\ *1033*\\*general.xml* |
-| `tool` | Kategoriler, alt gösterilir.<br/>Kural tüm bağlamlarda görüntülenebilir: `Project`, `PropertySheet` ve `File`.<br/>Yalnızca proje öğeleriyle varsa kural proje özelliklerinde görülebilir `ItemType` tanımlanan `Rule.DataSource`kural adı dahil sürece `ProjectTools` öğesi grubu.<br/><br/>Örnek: `$(VCTargetsPath)` \\ *1033*\\*clang.xml* |
-| `debugger` | Sayfanın hata ayıklama sayfası bir parçası olarak gösterilir.<br/>Kategorileri şu anda göz ardı edilir.<br/>Kural adı hata ayıklama başlatıcısı MEF nesnenin eşleşmelidir `ExportDebugger` özniteliği.<br/><br/>Örnek: `$(VCTargetsPath)` \\ *1033*\\*hata ayıklayıcı\_yerel\_windows.xml* |
-| *custom* | Özel bir şablon. Şablon adı eşleşmelidir `ExportPropertyPageUIFactoryProvider` özniteliği `PropertyPageUIFactoryProvider` MEF nesne. Bkz: **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Örnek: `$(VCTargetsPath)` \\ *1033*\\*userMacros.xml* |
+|Öznitelik|Açıklama|
+|-|-|
+`generic`|Tüm özelliklerini kategoriye başlıklar altında tek bir sayfada gösterilir<br/>Kural için görünür `Project` ve `PropertySheet` bağlamı, ama `File`.<br/><br/> Örnek: `$(VCTargetsPath)` \\ *1033*\\*general.xml*
+`tool`|Kategoriler, alt gösterilir.<br/>Kural tüm bağlamlarda görüntülenebilir: `Project`, `PropertySheet` ve `File`.<br/>Yalnızca proje öğeleriyle varsa kural proje özelliklerinde görülebilir `ItemType` tanımlanan `Rule.DataSource`kural adı dahil sürece `ProjectTools` öğesi grubu.<br/><br/>Örnek: `$(VCTargetsPath)` \\ *1033*\\*clang.xml*
+`debugger`|Sayfanın hata ayıklama sayfası bir parçası olarak gösterilir.<br/>Kategorileri şu anda göz ardı edilir.<br/>Kural adı hata ayıklama başlatıcısı MEF nesnenin eşleşmelidir `ExportDebugger` özniteliği.<br/><br/>Örnek: `$(VCTargetsPath)` \\ *1033*\\*hata ayıklayıcı\_yerel\_windows.xml*
+*Özel*| Özel bir şablon. Şablon adı eşleşmelidir `ExportPropertyPageUIFactoryProvider` özniteliği `PropertyPageUIFactoryProvider` MEF nesne. Bkz: **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Örnek: `$(VCTargetsPath)` \\ *1033*\\*userMacros.xml*
 
 Kural özellik kılavuzunda tabanlı şablonlardan birini kullanıyorsa, bu genişletilebilirlik noktaları için özelliklerini kullanabilirsiniz:
 
@@ -657,6 +656,6 @@ VSIX dosyaları oluşturma hakkında daha fazla bilgi için bkz: [sevkiyat Visua
 
 Microsoft Build System ([MSBuild](../msbuild/msbuild.md)) proje dosyaları için derleme altyapısı ve XML tabanlı Genişletilebilir biçimi sağlar. Tanımanız gerekir basic ile [MSBuild kavramları](../msbuild/msbuild-concepts.md) ile nasıl [Visual C++ için MSBuild](/cpp/build/msbuild-visual-cpp-overview) proje sistemi Visual C++ genişletebilmek için çalışır.
 
-Yönetilen Genişletilebilirlik Çerçevesi ([MEF](/dotnet/framework/mef/)) uzantı CPS ve Visual C++ proje sistemi tarafından kullanılan API'ler sağlar. MEF CPS tarafından nasıl kullanıldığını genel bakış için bkz: [CPS ve MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef) içinde [MEF VSProjectSystem bakış](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
+Yönetilen Genişletilebilirlik Çerçevesi ([MEF](/dotnet/framework/mef/)) uzantı CPS ve Visual C++ proje sistemi tarafından kullanılan API'ler sağlar. MEF CPS tarafından nasıl kullanıldığını genel bakış için bkz: [MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
 
 Derleme adımları veya yeni bir dosya türleri eklemek için var olan yapı sistemi özelleştirebilirsiniz. Daha fazla bilgi için [MSBuild (Visual C++) genel bakış](/cpp/build/msbuild-visual-cpp-overview) ve [Working with project properties](/cpp/ide/working-with-project-properties).
