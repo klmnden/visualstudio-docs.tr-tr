@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 5e7c4935a84c85dd165f75834bd4c4968319474c
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
-ms.translationtype: HT
+ms.openlocfilehash: 4ac332e7feca281f49ad6b56030a26dbd9a41e47
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739516"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803078"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Visual Studio’da XAML tasarlama
 
@@ -42,7 +42,7 @@ En temel görevler için Visual Studio IDE ve Visual Studio için Blend paylaş�
 
 - **XAML IntelliSense:** Her iki IDE'ler deyim tamamlama, açıklama ve kod ve gezinme kaynakları, bağlama ve kod biçimlendirme gibi Düzenleyici işlemleri ortak desteği dahil olmak üzere ıntellisense'ten beklediğiniz genel özelliklerin tümünü destekler.
 
-- **Temel hata ayıklama özellikleri:** Artık çalışan uygulamanızda hata ayıklama için kodunuzda ayarı kesme noktaları da dahil olmak üzere blend'de ayıklayabilirsiniz. Visual Studio ile hata ayıklama tutarlı bir deneyim sağlamak için Visual Studio için Blend çoğu Visual Studio hata ayıklama windows ve araç çubuklarını içerir. Gelişmiş hata ayıklama yetenekleri gibi tanılama ve Kod Analizi yalnızca Visual Studio içinde kullanılabilir. Bkz: [Visual Studio'da hata ayıklama](/visualstudio/debugger/debugger-feature-tour).
+- **Temel hata ayıklama özellikleri:** Artık çalışan uygulamanızda hata ayıklama için kodunuzda ayarı kesme noktaları da dahil olmak üzere blend'de ayıklayabilirsiniz. Visual Studio ile hata ayıklama tutarlı bir deneyim sağlamak için Visual Studio için Blend çoğu Visual Studio hata ayıklama windows ve araç çubuklarını içerir. Gelişmiş hata ayıklama yetenekleri gibi tanılama ve Kod Analizi yalnızca Visual Studio içinde kullanılabilir. Bkz: [Visual Studio'da hata ayıklama](../debugger/debugger-feature-tour.md).
 
 - **Dosya yeniden yükleme deneyimi:** Her iki Visual Studio için Blend ya da Visual Studio XAML dosyalarınızı düzenleyin ve bunlar arasında geçiş yaparken otomatik olarak yeniden düzenlenmiş dosyalarınız. İş akışı kesintilerini en aza indirmek için artık dosyanızı yeniden tercihleri dosyası Yükle iletişim kutusunda ayarlayabilirsiniz.
 

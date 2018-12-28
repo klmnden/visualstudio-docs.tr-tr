@@ -13,21 +13,21 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 293a402e701cb316b9fb3dacf27b905462d2dc06
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
-ms.translationtype: HT
+ms.openlocfilehash: 5f511b668c207ae719dbb981d7dc5640f0fa124c
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443378"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802702"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Kod Düzenleyicisi'ni kullanmayı öğrenin
 
 Bu kısa giriş Kod Düzenleyicisi'nde Visual Studio için Visual Studio yazma, gezinme ve kodu daha kolay anlama yapar yollarından bazıları inceleyeceğiz.
 
 > [!TIP]
-> Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa. Uygulama geliştirme yaptığınız türüne bağlı olarak, yüklemeniz gerekebilir **Node.js develoment iş yükü** Visual Studio ile.
+> Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa. Uygulama geliştirme yaptığınız türüne bağlı olarak, yüklemeniz gerekebilir **Node.js geliştirme iş yükü** Visual Studio ile.
 
-Bu makalede, zaten JavaScript develoment ile ilgili bilgi sahibi olduğunuz kabul edilmektedir. Siz değilseniz, öğreticiye bakın gibi öneririz [bir Node.js ve Express uygulaması oluşturma](../javascript/tutorial-nodejs.md) ilk.
+Bu makalede, zaten JavaScript geliştirme ile ilgili bilgi sahibi olduğunuz kabul edilmektedir. Siz değilseniz, öğreticiye bakın gibi öneririz [bir Node.js ve Express uygulaması oluşturma](../javascript/tutorial-nodejs.md) ilk.
 
 > [!TIP]
 > Bu makaleyi izlemek için JavaScript ayarları için Visual Studio seçili olduğundan emin olun. Tümleşik geliştirme ortamı (IDE) için ayarları seçme hakkında daha fazla bilgi için bkz: [ortam ayarları](../ide/environment-settings.md). Ayarları içeri aktardığınızda, içeri aktarma **JavaScript** ayarları.
@@ -108,9 +108,9 @@ Visual Studio sağlar yararlı *kod parçacıkları* kod bloklarında kullanıla
 
 ![Visual Studio'da kod parçacığı](../javascript/media/write-code-insert-snippet.png)
 
-Bir **parçacık Ekle** kutusu görünür Düzenleyicisi'nde görünür. Seçin **genel** ve çift tıklatarak **için** listedeki bir öğe.
+Bir **parçacık Ekle** Kutusu Düzenleyicisi'nde görüntülenir. Seçin **genel** ve çift tıklatarak **için** listedeki bir öğe.
 
-![Visual Studio'da döngüsü için kod parçacığı](../javascript/media/write-code-insert-snippet-for-loop.png)
+![İçin kod parçacığı bir for döngüsü Visual Studio'da](../javascript/media/write-code-insert-snippet-for-loop.png)
 
 Bu ekler `for` kodunuzda döngü kod parçacığı:
 

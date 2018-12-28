@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e63a95635c57c3fa344d7d9197436a2e0e744621
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
-ms.translationtype: HT
+ms.openlocfilehash: 53267cdd429b9a4d8848026e460776359b55c023
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648197"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802880"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Nasıl Yapılır: Çalışma sayfalarını veritabanı verileriyle doldurma
 
@@ -56,7 +56,7 @@ Tabloyu seçerek farklı denetim ekleme ya da, alan **veri kaynakları** pencere
 
 Denetimin yanı sıra aşağıdaki verilerle ilgili nesneleri otomatik olarak projenize eklenir:
 
--   Veritabanına bağlı veri tablolarının kapsülleyen bir türü belirtilmiş veri kümesi. Daha fazla bilgi için [Visual Studio'daki veri kümesi Araçları](/visualstudio/data-tools/dataset-tools-in-visual-studio).
+-   Veritabanına bağlı veri tablolarının kapsülleyen bir türü belirtilmiş veri kümesi. Daha fazla bilgi için [Visual Studio'daki veri kümesi Araçları](../data-tools/dataset-tools-in-visual-studio.md).
 
 -   A <xref:System.Windows.Forms.BindingSource> , Denetim türü belirtilmiş veri kümesine bağlanır. Daha fazla bilgi için [BindingSource bileşenine genel bakış](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 

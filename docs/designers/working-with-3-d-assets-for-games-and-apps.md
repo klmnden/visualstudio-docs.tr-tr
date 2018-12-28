@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d1104af5c2e4f9cfc056e962b34c7d2b4591e33
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
-ms.translationtype: HT
+ms.openlocfilehash: fd9aa8cc571ba58964346ca85a62b7ec311a744a
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740159"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803668"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Oyunlar ve uygulamalar için 3B varlıklarla çalışma
 
@@ -44,7 +44,7 @@ Bu belge, oluşturmak veya 3B modelleri, dokuları ve gölgelendiricileri Direct
  Özel görsel efektler HLSL programlama bilmeden oluşturmak için Visual Studio gölgelendirici tasarım gölgelendirici grafik tabanlı bir araçtır, Tasarımcısı'nı kullanabilirsiniz.
 
 > [!NOTE]
-> DirectX programlama ile başlama hakkında daha fazla bilgi için bkz. [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). DirectX tabanlı bir uygulamanın hatalarını ayıklama hakkında daha fazla bilgi için bkz. [(DirectX grafiklerinde hata ayıklama) grafik tanılama](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics).
+> DirectX programlama ile başlama hakkında daha fazla bilgi için bkz. [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). DirectX tabanlı bir uygulamanın hatalarını ayıklama hakkında daha fazla bilgi için bkz. [(DirectX grafiklerinde hata ayıklama) grafik tanılama](../debugger/graphics/visual-studio-graphics-diagnostics.md).
 
 ## <a name="directx-version-compatibility"></a>DirectX sürümü uyumluluğu
  Visual Studio, DirectX 2B ve 3B varlıkları işlemek için kullanır. DirectX 11 Oluşturucu ya da Windows Gelişmiş Pikselleştirme Platformu'nu (WARP) yazılım oluşturucusu seçebilirsiniz. DirectX 11 Oluşturucu, DirectX 11 ve DirectX 10 GPU üzerinde yüksek performanslı, Donanım hızlandırmalı işleme sağlar. WARP Oluşturucu varlıklarınızı çok çeşitli bilgisayarlar çalışma emin olmaya yardımcı olur; bu modern grafik donanımının sahip olmayan bilgisayarlar ve grafik donanımının tümleşik bilgisayarları içerir. WARP hakkında daha fazla bilgi için bkz: [Windows Gelişmiş Pikselleştirme Platformu'nu (WARP) Kılavuzu](http://go.microsoft.com/fwlink/p/?LinkId=224634).

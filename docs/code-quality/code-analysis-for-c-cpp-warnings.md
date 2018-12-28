@@ -20,15 +20,17 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86837d410b44c2508d50b1f630b43852b0fc8fea
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
-ms.translationtype: HT
+ms.openlocfilehash: ca66c526c34faf615ef4f61f1bf42d3de9080cd7
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738456"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803954"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>C/C++ İçin Kod Çözümleme Uyarıları
 Bu bölüm C/C++ Kod Analizi uyarıları tarafından gerçekleştirilen hariç listeler [C++ temel yönergeleri denetleyicilerini](code-analysis-for-cpp-corecheck.md). Kod Analizi hakkında daha fazla bilgi için bkz. [/ analyze (kod çözümleme)](/cpp/build/reference/analyze-code-analysis) ve [hızlı başlangıç: C/C++ için Kod Analizi](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Kod çözümlemesi ile C/C++ kod kalitesini çözümleme](../code-quality/code-analysis-for-c-cpp-overview.md) [C/C++ kod hatalarını azaltmak için SAL ek açıklamalarını kullanma](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+
+- [Kod Çözümlemesi ile C/C++ Kod Kalitesini Çözümleme](../code-quality/code-analysis-for-c-cpp-overview.md)
+- [C/C++ Kod Hatalarını Azaltmak için SAL Ek Açıklamalarını Kullanma](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)

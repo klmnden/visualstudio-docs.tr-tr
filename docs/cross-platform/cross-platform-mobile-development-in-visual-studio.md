@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a51fab355f1c306fcfff4963d13e1ca59c3e503
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
-ms.translationtype: HT
+ms.openlocfilehash: 5923e3106ad93608effe2604d4305cc0f3038a58
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738826"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802806"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio'da platformlar arası Mobil Geliştirme
 
@@ -36,7 +36,7 @@ Xamarin için Visual Studio Araçları ile kod ve hatta kullanıcı Arabirimi pa
 |[Visual Studio yükleme](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Visual Studio'da Xamarin hakkında bilgi edinin](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
 |[Xamarin mobil uygulama geliştirme belgeleri](/xamarin/) |
-|[Xamarin uygulamaları ile DevOps](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
+|[Xamarin uygulamaları ile DevOps](/xamarin/tools/ci/devops/) |
 |[Visual Studio'da Evrensel Windows uygulamaları hakkında bilgi edinin](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[Swift ve C# arasındaki benzerlikleri hakkında bilgi edinin](http://aka.ms/scposter) (download.microsoft.com)|
 
