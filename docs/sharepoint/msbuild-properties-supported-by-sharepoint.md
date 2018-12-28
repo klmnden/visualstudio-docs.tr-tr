@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1695a23ba9dddc27a37f23c714678fe6b779d328
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 55561d570605cfd5690fc0459444b2fbadeca51a
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676895"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684814"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>SharePoint tarafından desteklenen MsBuild özellikleri
   Tüm [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Microsoft.VisualStudio.SharePoint.targets dosyası, proje dosyası veya proje kullanıcı dosyası içinde tanımlanan bir özellik kullanılabilir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint projeleri. Ortak yanı sıra [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] SharePoint Proje tarafından sağlanan özellikleri SharePoint projelerine özgü ek özellikleri tanımlar.  
@@ -32,7 +32,7 @@ ms.locfileid: "35676895"
 ## <a name="msbuild-properties-specific-to-sharepoint"></a>SharePoint'e özgü MsBuild özellikleri
  Aşağıdaki tabloda [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] SharePoint projeleri için özel olarak uygulanan Özellikler [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Diğer özellikler var, ancak bunlar dahili kullanım içindir.  
   
-|Özellik adı|Açıklama|  
+|Özellik Adı|Açıklama|  
 |-------------------|-----------------|  
 |SharePointSiteUrl|Temsil eden bir dize [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] SharePoint sitesi.|  
 |SandboxedSolution|Çözüm bir korumalı çözüm olup olmadığını belirten bir Boole değeri.|  
@@ -57,5 +57,5 @@ ms.locfileid: "35676895"
 >  Kullanabilirsiniz [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] değişkeni sözdizimini `$(` *propertyName* `)` veya ortam değişkeni sözdizimini `%` *propertyName* `%` bir özellik belirtmek için.  
   
 ## <a name="see-also"></a>Ayrıca bkz.
- [MSBuild Başvurusu](/visualstudio/msbuild/msbuild-reference)  
-  
+
+- [MSBuild Başvurusu](../msbuild/msbuild-reference.md)  

@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3f8d6f2df0b0d9ec6e3f9d8ead7fd1e08929f8e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 83ec85855e17f8798f55b01f043d47d7140278e7
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966537"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425779"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>Nasıl yapılır: kod ölçümleri verileri üretme
+# <a name="how-to-generate-code-metrics-data"></a>Nasıl Yapılır: Kod ölçümleri verileri üretme
 
 Kod ölçümleri sonuçları bir veya daha fazla proje veya bütün bir çözüm için oluşturabilirsiniz. Kod ölçümleri kullanılabilir Visual Studio etkileşimli geliştirme ortamında (IDE) ve için C# ve Visual Basic projeleri, komut satırına.
 
-Ayrıca, yükleyebileceğiniz bir [NuGet paketini](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01) dört kod ölçümlerini içeren [Çözümleyicisi](roslyn-analyzers-overview.md) kuralları: CA1501, CA1502 CA1505 ve CA1506. Bu kurallar varsayılan olarak devre dışıdır, ancak bunları etkinleştirebilirsiniz **Çözüm Gezgini** veya bir [kural kümesi](using-rule-sets-to-group-code-analysis-rules.md) dosya.
+Ayrıca, yükleyebileceğiniz bir [NuGet paketini](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01) dört kod ölçümlerini içeren [Çözümleyicisi](roslyn-analyzers-overview.md) kuralları: CA1501, CA1502, CA1505 ve CA1506. Bu kurallar varsayılan olarak devre dışıdır, ancak bunları etkinleştirebilirsiniz **Çözüm Gezgini** veya bir [kural kümesi](using-rule-sets-to-group-code-analysis-rules.md) dosya.
 
 ## <a name="visual-studio-ide-code-metrics"></a>Visual Studio IDE kod ölçümleri
 
@@ -68,7 +68,7 @@ Yürütülebilir dosyayı oluşturmak için *Metrics.exe*, şu adımları izleyi
    msbuild /m /v:m /p:Configuration=Release Metrics.csproj
    ```
 
-   Adlı bir yürütülebilir dosya *Metrics.exe* içinde oluşturulan *ikili dosyaları* depo kökü altındaki dizin.
+   Adlı bir yürütülebilir dosya *Metrics.exe* içinde oluşturulan *artifacts\bin* depo kökü altındaki dizin.
 
    > [!TIP]
    > Oluşturulacak *Metrics.exe* içinde [eski modu](#legacy-mode), aşağıdaki komutu yürütün:

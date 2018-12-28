@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Projelere Sınıf Diyagramları Ekleme (Sınıf Tasarımcısı)'
+title: 'Nasıl Yapılır: (Sınıf Tasarımcısı) projelere sınıf diyagramları ekleme'
 ms.date: 05/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 133f15f6c160e9ec48b1db4ab8713023e492cbae
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 081a80fd6521bc286f931334762a05495b038a37
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901304"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684324"
 ---
-# <a name="how-to-add-class-diagrams-to-projects"></a>Nasıl yapılır: projelere sınıf diyagramları ekleme
+# <a name="how-to-add-class-diagrams-to-projects"></a>Nasıl Yapılır: Projelere sınıf diyagramları ekleme
 
 Tasarlama, düzenleme ve sınıfları ve diğer türleri yeniden düzenleme için C#, Visual Basic veya C++ projenize bir sınıf diyagramı ekleyin. Kod projesinde farklı parçalarını görselleştirmek için birden fazla sınıf diyagramı projeye ekleyin.
 
@@ -79,5 +79,3 @@ Bir otomatik olarak doldurulan bir sınıf diyagramı oluşturulur.
 - [Nasıl yapılır: Sınıf Tasarımcısı kullanarak tür oluşturma](how-to-create-types.md)
 - [Nasıl yapılır: Varolan türleri görüntüleme](how-to-view-existing-types.md)
 - [Tasarım ve görünüm sınıfları ve türleri](designing-and-viewing-classes-and-types.md)
-- [Görünüm türleri ve ilişkiler](viewing-types-and-relationships.md)
-- [Sınıf diyagramları ile çalışma](working-with-class-diagrams.md)

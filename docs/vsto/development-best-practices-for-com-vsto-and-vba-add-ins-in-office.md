@@ -9,17 +9,17 @@ dev_langs:
 - ''
 helpviewer_keywords:
 - ''
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f821b9769b9353fbee6379ddc1b3826f87ac2de
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 53286b4545a45f1b3ed49d9470501cde9d2cca74
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671099"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648913"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>COM, VSTO ve VBA eklentileri için Office geliştirme en iyi uygulamalar
   Office için COM, VSTO veya VBA eklentileri geliştiriyorsanız, bu makalede açıklanan geliştirme en iyi uygulamaları izleyin.   Bu, olmanıza yardımcı olur:
@@ -64,7 +64,7 @@ Müşteriler, COM, VSTO ve VBA çalıştıran Office eklentileri için destek bi
 
 Office istemci uygulamaları (Word veya Excel gibi) için destek bildirimleri sağlamak için önce eklentilerinizi geçerli Office sürümde çalıştırın ve ardından eklentinizi gelecekteki bir sürümde keserse güncelleştirmeler sağlamayı tamamlama doğrulayın. Microsoft yeni bir derleme veya Office için bir güncelleştirme yayımladığında eklentilerinizi test etmek zorunda değildir. Microsoft Office'te COM, VSTO ve VBA genişletilebilirlik platform nadiren değiştirir ve bu değişiklikleri iyi belgelenmiştir.
 
->Önemli: Microsoft hazırlık raporlar ve ISV iletişim bilgileri için desteklenen eklentileri listesini tutar. Listelenen eklentinizi almak için bkz. [ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows).
+>Önemli: Microsoft, desteklenen eklentileri hazırlık raporlar ve ISV iletişim bilgileri için bir listesini tutar. Listelenen eklentinizi almak için bkz. [ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Yükleme veya sorunları yüklenirken hata ayıklama yardımcı olması için işlem İzleyicisi'ni kullanın
 Eklentinizi uyumluluk sorunları yükleme veya yük varsa, bunlar dosya veya kayıt defteri erişim sorunlarıyla ilgili olabilir. Kullanım [işlem İzleyicisi](/sysinternals/downloads/procmon) veya benzer bir hata ayıklama araç oturum ve sorunun belirlenmesine yardımcı olacak bir çalışma ortamı karşı davranışını karşılaştırın.

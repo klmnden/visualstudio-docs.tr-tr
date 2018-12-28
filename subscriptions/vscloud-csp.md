@@ -9,18 +9,23 @@ description: Satın alma ve müşterileriniz için Visual Studio bulut abonelikl
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 50f4cfeaa6d0f530a70729155f0e81065359281d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9e400373d56e494e9292a086c55c07795a75d989
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899467"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739581"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Satın alma ve müşterileriniz için Visual Studio bulut Abonelikleri Yönetme
 
 İçinde iş ortakları [bulut çözümü sağlayıcısı (CSP)](https://partner.microsoft.com/cloud-solution-provider) programı, müşterileri için Visual Studio Enterprise ve Visual Studio Professional bulut abonelikleri satın alabilir.
 
 [Bulut abonelik seçeneklerini karşılaştırın](https://visualstudio.microsoft.com/vs/pricing)
+
+
+> [!NOTE]
+> Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.
+
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -35,7 +40,7 @@ Hiç kimseyle [sahibi veya katkıda bulunan erişimi](https://na01.safelinks.pro
 
 <iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-Visual-Studio-Subscriptions/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
 
-0. Oturum [Microsoft iş ortağı Merkezi](https://partnercenter.microsoft.com).
+1. Oturum [Microsoft iş ortağı Merkezi](https://partnercenter.microsoft.com).
 0. Seçin **müşteriler** için satın almak için bir müşteri seçin.
 0. Seçin **Hizmet Yönetimi**.
 0. Seçin **Visual Studio Market**.
@@ -56,7 +61,7 @@ Satın alma doğruladıktan sonra seçebileceğiniz **Yönet** abonelikleri mü�
 
 <iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-manage-Visual-Studio-Subscriptions/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
 
-0. Oturum [Microsoft iş ortağı Merkezi](https://partnercenter.microsoft.com).
+1. Oturum [Microsoft iş ortağı Merkezi](https://partnercenter.microsoft.com).
 0. Seçin **müşteriler** ve müşterinin adı.
 0. Seçin **Hizmet Yönetimi**.
 0. Seçin **Visual Studio aboneliklerini yöneten**.
@@ -79,42 +84,35 @@ Bu elektronik tabloda gördüğünüz yorumlama şöyledir:
 | Ölçüm kategorisi    |   Ad                 |  Birimleri                                |           Bu nedir                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Enterprise             |  Abonelik                         | Visual Studio Enterprise-aylık abonelik   |
-| Visual Studio     | Enterprise (Yıllık)    |  Yıllık abonelikler                 | Visual Studio Enterprise-yıllık abonelik    |
 | Visual Studio     | Professional           |  Abonelik                         | Visual Studio Professional aylık abonelik |
-| Visual Studio     | Professional (Yıllık)  |  Yıllık abonelikler                 | Visual Studio Professional-yıllık abonelik  |
+
 
 (İçin belirli bir müşteri) her ayın her Visual Studio aboneliği satın 6 birimi %5 oranında indirim sunuyoruz. İşte bu iki satır her abonelik seçeneği görürsünüz. Bir satır 0 olarak varsayılır; birim 1 ile 5 için taban fiyat yorumlamak "Minimum değeri" gösterir. Bu birimleri 6 ve üzeri için geçerlidir %5 oranında indirim fiyat, bu nedenle diğer satır 5, "en düşük değeri" gösterir.
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 
-### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>S: nasıl olduğunu **aylık** bulut aboneliği ücretleri işlenen?
+### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>S: Nasıl olduğunu **aylık** bulut aboneliği ücretleri işlenen?
 
-Y: konumundaki ilk satın alma, saatlere eşit olarak dağıtılmış bir miktar, geçerli ayın kalan gün kapsayacak şekilde faturalandırma yaparız. Örneğin, olduğundan 5 birimi başına ücret alırız sonra 10 Visual Studio Professional aylık bulut abonelikleri satın 15 Nisan yapıldıysa 30 günlük ay içinde 15 gün kaldı veya ve %50 50 oranında ücret birimleri günü.
+Y: İlk satın almada saatlere eşit olarak dağıtılmış bir miktar, geçerli ayın kalan gün kapsayacak şekilde faturalandırma yaparız. Örneğin, olduğundan 5 birimi başına ücret alırız sonra 10 Visual Studio Professional aylık bulut abonelikleri satın 15 Nisan yapıldıysa 30 günlük ay içinde 15 gün kaldı veya ve %50 50 oranında ücret birimleri günü.
 İptal kadar tam 10 birime Mayıs ilk ve bundan sonra her ay faturalandırılır.
 
 Daha sonra Ücretli bir miktar artırdığınızda, ayrıca geçerli ayın kalan gün kapsayacak şekilde artan birimler eşit olarak dağıtırız. 1 daha fazla Visual Studio Professional aylık bulut aboneliği 10 Mayıs satın aldıysanız, bu nedenle kabaca 0.677 birimleri (21 Mayıs 31 gün ayın bitimine kalan gün) yaparız.
 
-### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>S: nasıl olduğunu **yıllık** bulut aboneliği ücretleri işlenen?
+### <a name="q-how-do-cancellations-work"></a>S: İptalleri nasıl çalışır?
 
-Y: her satın alma sırasında hemen satın tam miktar üzerinden faturalandırırız. Ücretler, yıl boyunca yayılır değil ve yok yoktur. Yılda farklı zamanlarda yıllık bulut abonelikleri satın alırsanız, farklı aylarda yenileme abonelik gerekir. Biz bir müşterinin yıllık bulut aboneliklerine tüm Microsoft Toplu Lisanslama anlaşması satın alma ile ortak olarak coterminous yapmayın.
-
-### <a name="q-how-do-cancellations-work"></a>S: iptalleri nasıl çalışır?
-
-Y: Visual Studio bulut aboneliği iptal zaman Otomatik yenilemeyi iptal ettiğiniz. Abonelik, normal yenileme tarihine kadar devam eder ve yalnızca süresi dolar.
+Y: Visual Studio bulut aboneliği iptal ettiğinizde otomatik yenilemeyi iptal ettiğiniz. Abonelik, normal yenileme tarihine kadar devam eder ve yalnızca süresi dolar.
 Süre sonu Visual Studio abonesi artık Visual Studio veya abonelikten herhangi bir avantaj kullanabilirsiniz.
 
 Aylık bulut abonelikleri ile iptaller sonraki ayın ilk gününü etkili olur. Yalnızca bazı müşterinizin aylık bulut Abonelikleri iptal ederseniz, doğru kişilerin atanmış etkin aboneliklere sahip devam etmesini sağlamak için sonraki ayın ilk kaldırmasına emin olun.
 
 Yıllık bulut aboneliklerine iptalleri orijinal satın 12 ay sonraki ayın ilk gününü etkili veya son yıllık yenilemesi itibaren 12 ay süreyle ücret alınır. Bir Visual Studio Enterprise yıllık bulut aboneliği 3 Ocak 2018'de satın aldıysanız, ardından Şubat 1 olduğunda başka bir yıl için otomatik olarak yeniler 2019 kadar etkin kalır. Ardından arasında ve 1 Şubat 2020 dilediğiniz zaman iptal ederseniz abonelik 1 Şubat 2020'üzerinde sona erer. Yıllık bulut aboneliklerine sahip abonelik yılına parçası şekilde iptal etmek için indirim yoktur.
 
-### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>S: ne tür bir toplu indirimler Visual Studio abonelikleri için kullanılabilir mi?
+### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>S: Visual Studio abonelikleri için ne tür bir toplu indirimler vardır?
 
-Y:, 6 ve sonraki tüm Aboneliklerde %5 oranında indirim alırsınız *her tür içinde* aboneliğin:
+Y:  6 ve sonraki tüm Aboneliklerde %5 oranında indirim almak *her tür içinde* aboneliğin:
 
 * Visual Studio Professional aylık
-* Yıllık Visual Studio Professional
 * Visual Studio Enterprise aylık
-* Visual Studio Enterprise yıllık
 
 Bu nedenle, örneğin, 6 Visual Studio Professional aylık aboneliklere ve 5 Visual Studio Enterprise-aylık abonelikler satın alırsanız, normal fiyat 5 Professional'da ödeme, 6 Professional'da %5 oranında indirim almak ve tüm 5 Kurumsal normal fiyat ödeme Abonelikler.
 
@@ -122,10 +120,10 @@ Ayrıca, indirim yalnızca belirli bir aylık fatura döneminde ücretleri için
 
 Bu indirimler fiyatlandırma verilerin içinde yansıtılır [iş ortağı Merkezi](https://partnercenter.microsoft.com).
 
-### <a name="q-are-there-renewal-discounts"></a>S: yenileme indirimler vardır?
+### <a name="q-are-there-renewal-discounts"></a>S: Yenileme indirimler vardır?
 
-C: Hayır, Visual Studio abonelikleri için düz fiyatlarıdır. Yeni abonelikler ve devam eden abonelikleri için aynı fiyat üzerinden sunulur.
+Y:  Hayır, Visual Studio abonelikleri için düz fiyatlarıdır. Yeni abonelikler ve devam eden abonelikleri için aynı fiyat üzerinden sunulur.
 
-### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>S: Azure geliştirme ve test CSP'ler için fiyatlandırma seçenekleri var mı?
+### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>S: Azure geliştirme ve test CSP'ler için fiyatlandırma seçenekleri var mıdır?
 
-Y: şu anda değil. Müşterilerinizin yararlanabilirsiniz [Azure geliştirme ve test fiyatlandırması](http://aka.ms/azuredevtestpricing), ancak biz herhangi bir şey özellikle CSP'ler için izniniz yok.
+Y: Şu anda değil. Müşterilerinizin yararlanabilirsiniz [Azure geliştirme ve test fiyatlandırması](http://aka.ms/azuredevtestpricing), ancak biz herhangi bir şey özellikle CSP'ler için izniniz yok.

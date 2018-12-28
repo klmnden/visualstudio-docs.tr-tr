@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Türler Arasında Devralmayı Görüntüleme (Sınıf Tasarımcısı)'
+title: 'Nasıl Yapılır: (Sınıf Tasarımcısı) türler arasında devralmayı görüntüleme'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,38 +16,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3398a5096934397556ae1b20845153bd45a78528
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 9c7a9700996244d653f7a5ce32b78f4edd145d3f
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34000500"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684489"
 ---
-# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Nasıl yapılır: Sınıf Tasarımcısı'nda türler arasında devralmayı görüntüleme
+# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Nasıl Yapılır: Sınıf tasarımcısında türler arasında devralmayı görüntüleme
 
-Bir taban türü, türetilmiş bir sınıf diyagramında türlerinde arasındaki varsa devralma ilişkisi bulabilirsiniz **Sınıf Tasarımcısı**. Zamanlama, iki tür arasında yoksa bir devralma ilişkisi oluşturmak için bkz [nasıl yapılır: türler arasında devralmayı oluşturma](how-to-create-inheritance-between-types.md).
+Bir taban türü ve içinde bir sınıf diyagramında, türetilmiş türler arasında varsa devralma ilişkisi bulabilirsiniz **Sınıf Tasarımcısı**. Bkz: hiçbiri, iki tür arasında yoksa bir devralma ilişkisi oluşturmak için [nasıl yapılır: Türler arasında devralma oluşturma](how-to-create-inheritance-between-types.md).
 
-## <a name="to-find-the-base-type"></a>Temel türü bulunamadı
+## <a name="to-find-the-base-type"></a>Temel tür bulmak için
 
-1.  Sınıf diyagramında temel sınıf veya arabirim görmek istediğiniz türüne tıklayın.
+1.  Sınıf diyagramı üzerinde taban sınıf veya arabirim görmek istediğiniz türe tıklayın.
 
-2.  Üzerinde **sınıf diyagramı** menüsünde seçin **Göster temel sınıf** veya **Göster temel arabirimleri**.
+2.  Üzerinde **sınıf diyagramı** menüsünde seçin **temel sınıfı Göster** veya **temel arabirimleri göster**.
 
-     Tür temel sınıf veya arabirim diyagramı seçilen görünür. Tüm gizli devralma satırları şimdi iki şekiller arasında görüntülenir.
+     Türün temel sınıf veya arabirim diyagramda seçilen görünür. Tüm gizli devralım çizgileri şimdi iki şekiller arasında görünür.
 
-Ayrıca temel türü görüntülemek ve seçmek istediğiniz türü sağ **Göster temel sınıf** veya **Göster temel arabirimleri**.
+Ayrıca temel tür görüntülemek ve seçmek için istediğiniz tür sağ **temel sınıfı Göster** veya **temel arabirimleri göster**.
 
-## <a name="to-find-the-derived-types"></a>Türetilen türlerin bulmak için
+## <a name="to-find-the-derived-types"></a>Türetilmiş tür bulmak için
 
-1.  Sınıf diyagramında türetilmiş sınıfları veya arabirimleri görmek istediğiniz türüne tıklayın.
+1.  Sınıf diyagramında, türetilmiş sınıf veya arabirim görmek istediğiniz türe tıklayın.
 
 2.  Üzerinde **sınıf diyagramı** menüsünde seçin **türetilmiş sınıfları Göster** veya **türetilmiş arabirimleri göster**.
 
-     Tür türetilmiş sınıfları ve arabirimleri diyagramı gösterilir. Tüm gizli devralma satırları şimdi şekiller arasında görüntülenir.
+     Türün türetilmiş sınıflar veya arabirimleri diyagramda görünür. Tüm gizli devralım çizgileri şimdi şekiller arasında görünür.
 
-Ayrıca türetilmiş türlerini görmek ve seçmek istediğiniz türü sağ **türetilmiş sınıfları Göster** veya **türetilmiş arabirimleri göster**.
+Ayrıca türetilmiş türlerini görmek ve istediğiniz tür sağ **türetilmiş sınıfları Göster** veya **türetilmiş arabirimleri göster**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır: türleri arasındaki ilişkilendirmeleri oluşturma](how-to-create-associations-between-types.md)
-- [Türleri ve İlişkileri Görüntüleme](viewing-types-and-relationships.md)
+- [Nasıl yapılır: Türler arasında ilişkilendirme oluşturma](how-to-create-associations-between-types.md)
+- [Türleri ve İlişkileri Görüntüleme](designing-and-viewing-classes-and-types.md)

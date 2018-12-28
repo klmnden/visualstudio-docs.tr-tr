@@ -18,15 +18,15 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: e79442ea42583f326f9cb59360777269c399b7a0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1d1b606d4416da10c329a7421378ea979a2fa4cf
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879304"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684697"
 ---
 # <a name="replaceable-parameters"></a>Değiştirilebilir parametreler
-  Değiştirilebilir parametreler veya *belirteçleri*, gerçek değerleri, tasarım zamanında bilinen olmayan SharePoint çözüm öğeleri için değerler sağlamak için proje dosyaları içinde kullanılabilir. Bunlar standart işlevinde benzer [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] şablon belirteçleri. Daha fazla bilgi için [şablon parametreleri](/visualstudio/ide/template-parameters).  
+  Değiştirilebilir parametreler veya *belirteçleri*, gerçek değerleri, tasarım zamanında bilinen olmayan SharePoint çözüm öğeleri için değerler sağlamak için proje dosyaları içinde kullanılabilir. Bunlar standart işlevinde benzer [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] şablon belirteçleri. Daha fazla bilgi için [şablon parametreleri](../ide/template-parameters.md).  
   
 ## <a name="token-format"></a>Belirteci biçimi
  Belirteçleri başlayıp dolar işareti ($) karakterini ile bitmelidir. Bir projeyi bir SharePoint çözüm paketini paketlendiğinde, dağıtımda kullanılan herhangi bir belirtece gerçek değerlerle değiştirilir (*.wsp* dosyası). Örneğin, belirteç **$SharePoint.Package.Name$** "Test SharePoint paketi" dizeye çözebilir.  
@@ -111,4 +111,3 @@ ms.locfileid: "49879304"
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
-  

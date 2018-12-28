@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: C/C++ Projeleri için Kod Çözümleme Özelliklerini Ayarlama'
+title: 'Nasıl Yapılır: C/C++ projeleri için Kod Analizi özelliklerini ayarlama'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -20,36 +20,38 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f2800ce4784f5a8215dfe49b00194925c3cdb588
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a9de737604da898c42243895ed84e8962a8c656f
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920683"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803158"
 ---
-# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Nasıl yapılır: C/C++ Projeleri için Kod Çözümleme Özelliklerini Ayarlama
-Kod çözümleme aracı her yapılandırma projenizin kodda çözümlemek için hangi kuralları kullanacağını yapılandırabilirsiniz. Ayrıca, oluşturulan ve projenize bir üçüncü taraf aracı tarafından eklenen koddan uyarıları gizlemek için Kod Analizi yönlendirebilirsiniz.
+# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Nasıl Yapılır: C/C++ projeleri için Kod Analizi özelliklerini ayarlama
+Kod çözümleme aracı her projenizin yapılandırmasını kodda çözümlemek için hangi kuralları kullanacağını yapılandırabilirsiniz. Ayrıca, oluşturulan ve projenize bir üçüncü taraf araç tarafından eklenen koddan uyarıları bastırmak için Kod Analizi yönlendirebilir.
 
-## <a name="code-analysis-property-page"></a>Kod çözümleme özellik sayfası
- **Kod Analizi** özellik sayfası, proje için tüm kod çözümleme yapılandırma ayarlarını içerir. Bir proje için Kod Analizi özellik sayfası açmak için **Çözüm Gezgini**, projeye sağ tıklayın ve ardından **özellikleri**. Ardından, genişletin **yapılandırma özellikleri** seçip **Kod Analizi** sekmesi.
+## <a name="code-analysis-property-page"></a>Kod Analizi özellik sayfası
+ **Kod Analizi** özellik sayfası, proje için tüm kod analizi yapılandırma ayarlarını içerir. Bir proje için Kod Analizi özellik sayfasını açmak için **Çözüm Gezgini**, projeye sağ tıklayın ve ardından **özellikleri**. Ardından, genişletme **yapılandırma özellikleri** seçip **Kod Analizi** sekmesi.
 
 ## <a name="project-configuration-and-platform"></a>Proje yapılandırması ve platformu
- **Yapılandırma** listesi ve **Platform** listesi için farklı bir proje yapılandırma ve platform birleşimlerini farklı kod çözümleme ayarlarını uygulamak olanak sağlar. Örneğin, bir kural kümesi projeniz için hata ayıklama uygulamak için Kod Analizi oluşturur ve sürüm için farklı bir küme oluşturur yönlendirebilirsiniz.
+ **Yapılandırma** listesi ve **Platform** listesi farklı proje yapılandırma ve platform bileşimleri için farklı kod analizi ayarları uygulamanıza olanak tanır. Örneğin, projeniz için hata ayıklama için bir kural kümesi uygulamak için Kod Analizi yapıları ve sürüm için farklı bir küme oluşturur yönlendirebilir.
 
-## <a name="enabling-code-analysis"></a>Kod çözümleme etkinleştirme
- Projeniz için Kod Analizi seçerek etkinleştirmek karar verebilir **etkinleştirme kodu analiz için C/C++ derleme üzerinde**. İle birlikte **yapılandırma** listesinde Örneğin, karar hata ayıklama yapıları ve onu yayımı için derlemeleri Etkinleştir için Kod Analizi devre dışı bırakmak.
+## <a name="enabling-code-analysis"></a>Kod analizini etkinleştirme
+ Projeniz için Kod Analizi seçerek etkinleştirip etkinleştirmemeye karar **etkinleştirmek Kod Analizi C/C++ için derleme üzerinde**. İle birlikte **yapılandırma** listesi Örneğin, karar hata ayıklama yapıları ve etkinleştirmek için sürüm derlemeleri için Kod Analizi devre dışı bırakmak.
 
- Projenizi yönetilen kodu içeriyorsa, etkinleştirmek veya Kod Analizi seçerek devre dışı bırakmak karar verebilir **etkinleştirmek Kod Analizi derlemede**.
+ Yönetilen Kod projenizi içeren, etkinleştirme veya Kod Analizi seçerek devre dışı karar verebilir **derlemede kod analizini etkinleştir**.
 
- Kod çözümleme kodunuzun kalitesini geliştirmek ve ortak Tuzaklar önlemenize yardımcı olmak için tasarlanmıştır. Bu nedenle, dikkatlice Kod Analizi devre dışı bırakılıp bırakılmayacağını. Kural kümeleri devre dışı bırakmak daha iyi veya projenize istemediğiniz tek kurallar uygulanabilir.
+ Kod Analizi, kodunuzun kalitesini ve yaygın görülen tehlikeleri önlemek amacıyla tasarlanmıştır. Bu nedenle, dikkatlice Kod Analizi devre dışı bırakılıp bırakılmayacağını. Kural kümeleri devre dışı bırakmak daha iyi veya projenize istemediğiniz bireysel kuralları uygulanır.
 
 ## <a name="generated-code"></a>Oluşturulan kod
- Geliştiriciler, uygulamaları çabucak geliştirmelerine yardımcı olmak için sık araçlarını kullanın. Bu araçlar, projeye eklenen kodu oluşturabilir. Kod çözümleme oluşturulan kodda bulur kural ihlallerinin görmek isteyebilirsiniz. Bununla birlikte, kod korumak istemiyorsanız, bunları görmek istemeyebilirsiniz.
+ Geliştiriciler, uygulamaları hızla geliştirmenizi sağlayacak sık araçlarını kullanın. Bu araçlar, projeye eklenen kod oluşturabilirsiniz. Kod Analizi üretilen kodda bulur kural ihlalleri görmek isteyebilirsiniz. Ancak, kodunu korumak istemiyorsanız görmek istemeyebilirsiniz.
 
- **Bastırmak sonuçları oluşturulan kodun** onay kutusunu **genel** Özellikler sayfasında, bir üçüncü taraf aracı tarafından oluşturulan yönetilen koddan Kod Analizi uyarıları görmek istediğiniz isteyip sağlar .
+ **Bastır sonuçları oluşturulan kodun** onay kutusunu **genel** özellikleri sayfasında, bir üçüncü taraf araç tarafından oluşturulan yönetilen koddan kod çözümleme uyarıları görmek istediğiniz istemediğinizi sağlar .
 
-## <a name="rule-sets"></a>Kural kümeleri
- Projenizi yönetilen kodu içeriyorsa, kümeden bir kural seçerek bir kod analizi uygulanacak kuralları seçebilirsiniz **bu kural kümesini çalıştırmak** listesi.
+## <a name="rule-sets"></a>Kural Kümeleri
+ Yönetilen Kod projenizi içeren, bir kural kümesini seçerek bir kod analizi uygulanacak kuralları seçebilirsiniz **bu kural kümesini Çalıştır** listesi.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Yönetilen kod kalitesini analiz etme](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) [C/C++ uyarıları için kod çözümleme](../code-quality/code-analysis-for-c-cpp-warnings.md)
+
+- [Yönetilen Kod Kalitesini Analiz Etme](../code-quality/code-analysis-for-managed-code-overview.md)
+- [C/C++ İçin Kod Analizi Uyarıları](../code-quality/code-analysis-for-c-cpp-warnings.md)

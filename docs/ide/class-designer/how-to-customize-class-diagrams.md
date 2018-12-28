@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Sınıf Diyagramlarını Özelleştirme (Sınıf Tasarımcısı)'
+title: 'Nasıl Yapılır: Sınıf diyagramlarını özelleştirme (Sınıf Tasarımcısı)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4546324a5789c408c22ac610d7a878ad990af2a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79279c4450e8dbf325ce8b64879ad2cb9569455e
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913221"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684437"
 ---
-# <a name="how-to-customize-class-diagrams"></a>Nasıl yapılır: sınıf diyagramlarını özelleştirme
+# <a name="how-to-customize-class-diagrams"></a>Nasıl Yapılır: Sınıf diyagramlarını özelleştirme
 
 Sınıf diyagramlarının bilgileri görüntüleme biçimini değiştirebilirsiniz. Tüm diyagramı veya tasarım yüzeyinde tek tek türleri özelleştirebilirsiniz.
 
@@ -129,7 +129,6 @@ Türün temelini oluşturan koda etkisi olmaksızın, bir tür şeklini sınıf 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Sınıf Diyagramları ile Çalışma](working-with-class-diagrams.md)
-- [Nasıl yapılır: üye gösterimi ile ilişkilendirme gösterimi arasında](how-to-change-between-member-notation-and-association-notation.md)
+- [Nasıl yapılır: Üye gösterimi ile ilişkilendirme gösterimi arasında geçiş](how-to-change-between-member-notation-and-association-notation.md)
 - [Nasıl yapılır: Varolan türleri görüntüleme](how-to-view-existing-types.md)
-- [Türleri ve İlişkileri Görüntüleme](viewing-types-and-relationships.md)
+- [Türleri ve İlişkileri Görüntüleme](designing-and-viewing-classes-and-types.md)

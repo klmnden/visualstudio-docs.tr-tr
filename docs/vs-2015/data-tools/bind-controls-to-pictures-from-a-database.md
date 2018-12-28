@@ -26,12 +26,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fbaca836cb5b620c596b72bc991e91c1cfc2312c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e50a3126407c9306e2a1f00a411e08f69c69602
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189507"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647071"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Bir veritabanından resimlere denetim bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ Kullanabileceğiniz **veri kaynakları** görüntü uygulamanızda bir denetimin
   
  Bir veritabanı resimleri genellikle bayt dizisi depolanır. Öğeler **veri kaynakları** bayt dizileri türü denetimi gibi depolanmış penceresini ayarlamak **hiçbiri** varsayılan olarak, her şey basit bir yürütülebilir dosyanın bir bayt dizisi bayt dizileri içerebileceğinden büyük bir uygulama. Bir bayt dizisi öğesinde veriye bağlı denetim oluşturmak için **veri kaynakları** bir resmi temsil eden pencere oluşturmak için denetimi seçmesi gerekir.  
   
- Aşağıdaki yordam olduğunu varsayar **veri kaynakları** penceresi görüntüye bağlı bir öğe ile önceden doldurulur. Daha fazla bilgi için [nasıl yapılır: bir veritabanındaki verilere bağlanma](../data-tools/how-to-connect-to-data-in-a-database.md).  
+ Aşağıdaki yordam olduğunu varsayar **veri kaynakları** penceresi görüntüye bağlı bir öğe ile önceden doldurulur.
   
-### <a name="to-bind-a-picture-in-a-database-to-a-control"></a>Resim denetimi bir veritabanına bağlamak için  
+## <a name="bind-a-picture-in-a-database-to-a-control"></a>Bir resmi bir veritabanında bir denetime bağlama  
   
 1.  Tasarım yüzeyinde denetime eklemek istediğiniz WPF Tasarımcısı veya Windows Forms Tasarımcısı'nda açık olduğundan emin olun.  
   
@@ -59,4 +59,3 @@ Kullanabileceğiniz **veri kaynakları** görüntü uygulamanızda bir denetimin
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da verilere WPF denetimleri bağlama](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)
-

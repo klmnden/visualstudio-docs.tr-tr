@@ -1,6 +1,7 @@
 ---
 title: "&lt;Belge&gt; öğesi (Visual Studio'da Office Geliştirme)"
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -12,20 +13,20 @@ helpviewer_keywords:
 - document element
 - application manifests [Office development in Visual Studio], <document> element
 - <document> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 07d8172ec4e56352c2244aef02d947ac48833ab7
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
-ms.translationtype: MT
+ms.openlocfilehash: 634a2aff43b19098629392fedbfbaef7549e8e6c
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447341"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647068"
 ---
 # <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;Belge&gt; öğesi (Visual Studio'da Office Geliştirme)
-  `document` Öğesinin `vstov4` ad alanı için belge düzeyi özelleştirmeleri özelleştirme özgü bilgileri depolar.  
+  `document` Öğesinin `vstov4` ad alanı için belge düzeyi özelleştirmeleri özelleştirme özel bilgileri depolar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -33,19 +34,19 @@ ms.locfileid: "34447341"
 <document solutionId />  
 ```  
   
-## <a name="elements-and-attributes"></a>Öğeleri ve öznitelikleri  
- Yalnızca belge düzeyi özelleştirmeleri için gereklidir. `document` Öğesidir içinde `vstov4` ad alanı. `document` Öğesi aşağıdaki özniteliklere sahiptir.  
+## <a name="elements-and-attributes"></a>Öğeler ve öznitelikler  
+ Yalnızca belge düzeyinde özelleştirmeler için gereklidir. `document` Öğe konusu `vstov4` ad alanı. `document` Öğesinde şu öznitelikler bulunur.  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|`solutionId`|Gerekli. Belge düzeyi çözümü benzersiz şekilde tanımlamak için Office çalışma zamanı için Visual Studio Araçları tarafından kullanılan GUID. Bu değer _AssemblyLocation özel belge özelliği olarak depolanır. Daha fazla bilgi için bkz: [özel belge özelliklerine genel bakış](../vsto/custom-document-properties-overview.md).|  
+|`solutionId`|Gerekli. Bir belge düzeyi çözümü benzersiz olarak tanımlanabilmesi için Office çalışma zamanı için Visual Studio Araçları tarafından kullanılan GUID. Bu değer _AssemblyLocation özel belge özelliği olarak depolanır. Daha fazla bilgi için [özel belge özelliklerine genel bakış](../vsto/custom-document-properties-overview.md).|  
   
- `document` hiç alt öğe yok.  
+ `document` alt öğe yok.  
   
-## <a name="document-level-customization-example"></a>Belge düzeyi özelleştirme örnek  
+## <a name="document-level-customization-example"></a>Belge düzeyi özelleştirmesi örneği  
   
 ### <a name="description"></a>Açıklama  
- Aşağıdaki kod örneği gösterilmektedir `document` kullanılarak dağıtılan bir belge düzeyi Office çözümü öğesinde [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Bu kod örneği sağlanan daha büyük bir örneğin parçasıdır [uygulama bildirimleri Office çözümleri için](../vsto/application-manifests-for-office-solutions.md).  
+ Aşağıdaki kod örneğinde gösterilmiştir `document` kullanılarak dağıtılan bir belge düzeyinde Office çözüm öğesinde [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Bu kod örneği, sağlanan daha büyük bir örneğin parçasıdır [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Kod  
   

@@ -23,12 +23,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a9f28902673018a4ae90fbb2ed83e741be99fbfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5958aafb39fface87020fb8ee75c7ca5a1497c73
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204834"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647715"
 ---
 # <a name="pass-data-between-forms"></a>Formlar arasında veri geçirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Bu izlenecek yolda, verileri bir biçimden diğerine geçirmek için adım adım
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için şunlar gerekir:  
   
--   Northwind örnek veritabanına erişim. Daha fazla bilgi için [nasıl yapılır: örnek veritabanları yükleme](../data-tools/how-to-install-sample-databases.md).  
+-   Northwind örnek veritabanına erişim.
   
 ## <a name="create-the-windows-application"></a>Windows uygulaması oluşturma  
   
@@ -107,7 +107,7 @@ Bu izlenecek yolda, verileri bir biçimden diğerine geçirmek için adım adım
   
 -   Ana sürükleyin **müşteriler** düğümünden **veri kaynakları** penceresinden **Form1**.  
   
-     A <xref:System.Windows.Forms.DataGridView> ve araç şeridi (<xref:System.Windows.Forms.BindingNavigator>) Kayıtlarda gezinmek için görünür **Form1**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
+     A <xref:System.Windows.Forms.DataGridView> ve araç şeridi (<xref:System.Windows.Forms.BindingNavigator>) Kayıtlarda gezinmek için görünür **Form1**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
   
 ## <a name="create-the-second-form-form2"></a>İkinci form (Form2) oluşturma  
   
@@ -119,7 +119,7 @@ Bu izlenecek yolda, verileri bir biçimden diğerine geçirmek için adım adım
   
 3.  Ana sürükleyin **siparişler** düğümünden **veri kaynakları** penceresinden **Form2**.  
   
-     A <xref:System.Windows.Forms.DataGridView> ve araç şeridi (<xref:System.Windows.Forms.BindingNavigator>) Kayıtlarda gezinmek için görünür **Form2**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
+     A <xref:System.Windows.Forms.DataGridView> ve araç şeridi (<xref:System.Windows.Forms.BindingNavigator>) Kayıtlarda gezinmek için görünür **Form2**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
   
 4.  Silme **OrdersBindingNavigator** bileşeni Tepsi öğesinden.  
   
@@ -188,7 +188,7 @@ Bu izlenecek yolda, verileri bir biçimden diğerine geçirmek için adım adım
   
 #### <a name="to-run-the-application"></a>Uygulamayı çalıştırmak için  
   
--   Uygulamayı çalıştırmak için F5 tuşuna basın.  
+-   Uygulamayı çalıştırmak için F5'e basın.  
   
 -   Bir müşteri kaydı çift **Form1** açmak için **Form2** müşterinin sipariş.  
   
@@ -201,4 +201,3 @@ Bu izlenecek yolda, verileri bir biçimden diğerine geçirmek için adım adım
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da verilere Windows Forms denetimleri bağlama](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

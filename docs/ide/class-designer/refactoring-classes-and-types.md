@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d5683f28150089335f04e9cf2e5274ad3ff413c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84850d9de539267385ddddf39cea55672ad60034
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922529"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684710"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Sınıfları ve Sınıf Tasarımcısı'nda türleri yeniden düzenleme
 
@@ -39,9 +39,9 @@ Kodunu yeniden düzenlediğinizde, daha kolay anlamanız, bakımını yapmak ve 
 
 |Görev|Destekleyici İçerik|
 |----------| - |
-|**Sınıfları yeniden düzenleme:** sınıfı kısmi sınıflara bölme veya soyut temel sınıf uygulamak için yeniden düzenleme işlemleri kullanabilirsiniz.|-   [Nasıl yapılır: sınıfı kısmi sınıflara bölme](how-to-split-a-class-into-partial-classes.md)|
-|**Arabirimleri ile çalışma:** Sınıf Tasarımcısı'nda, uygulayabilirsiniz bir arabirim sınıf diyagramı üzerinde arabirim yöntemleri için kod sağlayan bir sınıf bağlanarak.|-   [Nasıl yapılır: arabirimi uygulama](how-to-implement-an-interface.md)|
-|**Türler, tür üyeleri ve parametreleri yeniden düzenleme:** Sınıf Tasarımcısı'nı kullanarak, türleri yeniden adlandırabilir, tür üyeleri geçersiz kılma veya bir türden diğerine taşıyabilirsiniz. Boş değer atanabilir türler de oluşturabilirsiniz.|-   [Yeniden adlandırma türler ve tür üyeleri](#rename-types-and-type-members)<br />-   [Tür üyeleri bir türden diğerine taşıma](#move-type-members-from-one-type-to-another)<br />-   [Nasıl yapılır: boş değer atanabilir tür oluşturma](how-to-create-a-nullable-type.md)|
+|**Sınıfları yeniden düzenleme:** Yeniden düzenleme işlemleri, bir sınıfı kısmi sınıflara bölme veya soyut temel sınıf uygulamak için kullanabilirsiniz.|-   [Nasıl Yapılır: Bir sınıfı kısmi sınıflara bölme](how-to-split-a-class-into-partial-classes.md)|
+|**Arabirimleri ile çalışma:** Sınıf Tasarımcısı'nda, sınıf diyagramı üzerinde arabirim yöntemleri için kod sağlayan bir sınıf bağlanarak bir arabirim uygulayabilir.|-   [Nasıl Yapılır: Arabirimi uygulama](how-to-implement-an-interface.md)|
+|**Yeniden düzenleme türleri, tür üyeleri ve parametreleri:** Sınıf Tasarımcısı kullanarak türleri yeniden adlandırma, tür üyelerini geçersiz kılabilir veya bir türden diğerine taşıyabilirsiniz. Boş değer atanabilir türler de oluşturabilirsiniz.|-   [Yeniden adlandırma türler ve tür üyeleri](#rename-types-and-type-members)<br />-   [Tür üyeleri bir türden diğerine taşıma](#move-type-members-from-one-type-to-another)<br />-   [Nasıl Yapılır: Boş değer atanabilir tür oluşturma](how-to-create-a-nullable-type.md)|
 
 ## <a name="rename-types-and-type-members"></a>Yeniden adlandırma türler ve tür üyeleri
 
@@ -90,5 +90,4 @@ Kullanarak **Sınıf Tasarımcısı**, başka bir tür için tür üyesi bir tü
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Türleri ve İlişkileri Görüntüleme](viewing-types-and-relationships.md)
-- [Sınıfları ve türleri tasarlama](designing-classes-and-types.md)
+- [Sınıfları ve türleri tasarlama](designing-and-viewing-classes-and-types.md)

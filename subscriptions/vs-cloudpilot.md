@@ -3,28 +3,28 @@ title: CloudPilot avantaj olarak Visual Studio abonelikleri | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/04/2018
+ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio aboneliklerinde kullanılabilir CloudPilot Avantajı hakkında bilgi edinin
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4b7f7730eef2372ecdb19cbb8d87548705a96042
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: a5e3f4b3026afd528f8eeec42de157265b18013a
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896987"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740042"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>CloudPilot avantaj olarak Visual Studio abonelikleri
 
-Uygulamalarınızı birkaç kolay adımda Microsoft Azure'a taşıyın. Dakikalar içinde aşağı başarılı geçiş için kod satırına kadar olan tüm gerekli kod değişiklikleri tanımlamak: kapsayıcılar, VM'ler, uygulama hizmetleri, SQL Azure ve/veya SQL mı. Ardından, uygulamaları ASR, DMA ve DMS yararlanarak sihirbazları kullanarak Azure'a geçirin. 
+Uygulamalarınızı birkaç kolay adımda Microsoft Azure'a taşıyın. Dakikalar içinde aşağı başarılı geçiş için kod satırına kadar olan tüm gerekli kod değişiklikleri tanımlayın: Kapsayıcılar, VM'ler, uygulama hizmetleri, SQL Azure ve/veya SQL mı. Ardından, uygulamaları ASR, DMA ve DMS yararlanarak sihirbazları kullanarak Azure'a geçirin. 
 
 CloudPilot, uygulamaları azure'a kolayca taşıyın ve geliştiricilerin hızlı bir şekilde yardımcı UnifyCloud göre tasarlanmıştır.  Bir kesir el ile değerlendirme harcadığım süreyi CloudPilot doğru bir şekilde Azure PaaS ve Iaas geçiş maliyetlerini belirler ve kod değişikliklerini uygulamayı bulutta çalıştırmak için yapılması gerekenler üzerinde kodun satır ayrıntılı öneriler sağlar. CloudPilot bulut geçişi çalışmasının ilk değerlendirmesini ve bulut için ayrıntılı kod düzeyinde yapılan değişiklikler sunarak yeniden factoring işleminde geliştirme planlama ve kurumsal teknoloji denetimleri karşı son sınama yardımcı olur ve ilkeleri.
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
 
-1. Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) adresinde oturum açın.
 
 2. CloudPilot avantajı kutucuk "Araçlar" kategorisinde bulun ve tıklayarak **kodunu Al**.
 
@@ -63,8 +63,8 @@ CloudPilot, uygulamaları azure'a kolayca taşıyın ve geliştiricilerin hızl�
 
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standart, yıllık bulut)   | VL, Azure, perakende | 2 lisansı, 90 gün sınırsız taramalar       |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir          |
-| Visual Studio Professional (standart, yıllık bulut) | VL, Azure, perakende                                       | 1 lisans, 30 gün, bir tarama                                                            |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir           |
+| Visual Studio Enterprise (standart)   | VL, Azure, perakende | 2 lisansı, 90 gün sınırsız taramalar       |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir          |
+| Visual Studio Professional (standart) | VL, Azure, perakende                                       | 1 lisans, 30 gün, bir tarama                                                            |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir           |
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Yok                                             |  Yok           |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Yok                                              |  Yok          |
 | Visual Studio Dev Essentials | Yok  | Yok | Yok |
@@ -73,8 +73,11 @@ CloudPilot, uygulamaları azure'a kolayca taşıyın ve geliştiricilerin hızl�
 
 
 
-<sup>1</sup>*içerir: satışıyla (NFR), FTE, değerli Microsoft Professional (MVP), bölge Yöneticisi (RD), Microsoft iş ortağı ağı (MPN), Visual Studio Endüstri ortağı (VSIP), Microsoft eğitmen, BizSpark, onaylanmamıştır için Imagine*
+<sup>1</sup>*içerir:    Değil for Resale (NFR), Trainer, BizSpark FTE, değerli Microsoft Professional (MVP), bölge Yöneticisi (RD), Microsoft iş ortağı ağı (MPN), Visual Studio Endüstri ortağı (VSIP), Microsoft Sertifikalı, Imagine*
 
+
+> [!NOTE]
+> Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.
 
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.

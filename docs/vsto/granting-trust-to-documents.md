@@ -13,17 +13,17 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio], about inclusion lists
 - trust [Office development in Visual Studio], 2007 Office system
 - granting trust [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5dfa0ad9b27b94c472feabc0e202bd9eee58f08d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: e1fb856897f4db39fb41875f3230603237f0cc0b
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670916"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648842"
 ---
 # <a name="grant-trust-to-documents"></a>Belgelere güven verme
   Belge düzeyi projesi aynı uygulama düzeyi projelere güvenlik gereksinimlerine sahiptir: bir sertifika ile bildirimleri imzalama veya güven istemi tıklayarak. Ayrıca, belge veya çalışma kitabı güvenli bir konuma atanan bir dizinde yer almalıdır.  
@@ -44,7 +44,7 @@ ms.locfileid: "50670916"
   
 -   Belgeyi güvenilir konumlara kullanarak güvenilen olsa da, ek izinler özelleştirme güvenmesi için gereklidir. Bir sertifika ile bildirimleri imzalama güven istemi tıklayarak ya da Office çözümü yükleme kullanarak özelleştirme için tam güven verebilirsiniz *Program dosyaları* dizin.  
   
--   Belge veya çalışma kitabı bir belge düzeyi çözümün derlemeyle aynı dizine veya farklı bir dizine depolayabilir. Örneğin, belgeyi bir SharePoint sunucusuna bulunamıyor ve bir ağ dosya paylaşımında derleme bulunamıyor. Daha fazla bilgi için [nasıl yapılır: bir belge düzeyinde Office çözümü ClickOnce kullanarak bir SharePoint sunucusuna yayımlama](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).  
+-   Belge veya çalışma kitabı bir belge düzeyi çözümün derlemeyle aynı dizine veya farklı bir dizine depolayabilir. Örneğin, belgeyi bir SharePoint sunucusuna bulunamıyor ve bir ağ dosya paylaşımında derleme bulunamıyor. Daha fazla bilgi için [nasıl yapılır: Belge düzeyinde Office çözümü ClickOnce kullanarak bir SharePoint sunucusuna yayımlama](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümlerine güven verme](../vsto/granting-trust-to-office-solutions.md)   

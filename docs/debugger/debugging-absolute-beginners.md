@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b6812ec41aedd4e33eb0d043476365d3938767
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 2540f5ed20ae07ab317c0ea23f35de386117fa13
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160029"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561518"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Yeni başlayanlar için hata ayıklama
 
@@ -332,4 +332,4 @@ Bölge kodu ile sorun bulduğunuzda araştırmak için hata ayıklayıcı'yı ku
 Bu makalede, birkaç genel hata ayıklama kavramları öğrendiniz. Ardından, hata ayıklayıcısı hakkında daha fazla bilgi edinmeye başlayabilirsiniz.
 
 > [!div class="nextstepaction"]
-> [Visual Studio kullanarak hata ayıklamayı öğrenin](../debugger/getting-started-with-the-debugger.md)
+> [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)

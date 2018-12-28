@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c86b5ec3918526f461b39080967d5bc4a8a32e30
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 4d1104af5c2e4f9cfc056e962b34c7d2b4591e33
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079480"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740159"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Oyunlar ve uygulamalar için 3B varlıklarla çalışma
 
@@ -38,13 +38,13 @@ Bu belge, oluşturmak veya 3B modelleri, dokuları ve gölgelendiricileri Direct
 
  Sık kullanılan çeşitli biçimlerde 3B modellerle çalışmak için Visual Studio Model Düzenleyicisi'ni kullanabilirsiniz.
 
-### <a name="shaders"></a>Gölgelendiricileri
+### <a name="shaders"></a>Gölgelendiriciler
  Gölgelendiricileri grafik işlemci birimi (GPU) üzerinde çalışan küçük, etki alanına özgü programlardır. Gölgelendiricileri belirlemek 3B modelleri içine ekrandaki dönüştürülür şekiller ve bu şekiller her pikselin nasıl renklendirilmiştir. Gölgelendirici oluşturma ve nesneyi oyunlarda veya uygulamalarda uygulama nesnesi benzersiz bir görünüm verebilirsiniz.
 
  Özel görsel efektler HLSL programlama bilmeden oluşturmak için Visual Studio gölgelendirici tasarım gölgelendirici grafik tabanlı bir araçtır, Tasarımcısı'nı kullanabilirsiniz.
 
 > [!NOTE]
-> DirectX programlama ile başlama hakkında daha fazla bilgi için bkz. [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). DirectX tabanlı bir uygulamanın hatalarını ayıklama hakkında daha fazla bilgi için bkz. [(DirectX grafiklerinde hata ayıklama) grafik tanılama](../debugger/visual-studio-graphics-diagnostics.md).
+> DirectX programlama ile başlama hakkında daha fazla bilgi için bkz. [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). DirectX tabanlı bir uygulamanın hatalarını ayıklama hakkında daha fazla bilgi için bkz. [(DirectX grafiklerinde hata ayıklama) grafik tanılama](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics).
 
 ## <a name="directx-version-compatibility"></a>DirectX sürümü uyumluluğu
  Visual Studio, DirectX 2B ve 3B varlıkları işlemek için kullanır. DirectX 11 Oluşturucu ya da Windows Gelişmiş Pikselleştirme Platformu'nu (WARP) yazılım oluşturucusu seçebilirsiniz. DirectX 11 Oluşturucu, DirectX 11 ve DirectX 10 GPU üzerinde yüksek performanslı, Donanım hızlandırmalı işleme sağlar. WARP Oluşturucu varlıklarınızı çok çeşitli bilgisayarlar çalışma emin olmaya yardımcı olur; bu modern grafik donanımının sahip olmayan bilgisayarlar ve grafik donanımının tümleşik bilgisayarları içerir. WARP hakkında daha fazla bilgi için bkz: [Windows Gelişmiş Pikselleştirme Platformu'nu (WARP) Kılavuzu](http://go.microsoft.com/fwlink/p/?LinkId=224634).

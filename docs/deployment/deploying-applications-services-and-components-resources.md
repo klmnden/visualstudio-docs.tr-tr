@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93a389fdafb6167fb132578111c7a8b5d02c8495
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d578dcf3702b340adcbef36002b64b20f65a5c73
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068058"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684242"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Visual Studio'da dağıtımına genel bakış
 
@@ -122,4 +122,4 @@ Daha fazla bilgi için [hızlı başlangıç - bir web sitesine dağıtma](quick
 - [Visual C++ üzerinde Dağıtım](/cpp/ide/deployment-in-visual-cpp)
 - [UWP uygulamaları dağıtma](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Web dağıtımı kullanarak Azure'da bir Node.js uygulaması yayımlama](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [Python uygulamasını Azure App Service'e yayımlama](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+- [Python uygulamasını Azure App Service'e yayımlama](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)

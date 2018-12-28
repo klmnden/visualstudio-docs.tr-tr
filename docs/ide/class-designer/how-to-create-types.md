@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Sınıf Tasarımcısı Kullanarak Tür Oluşturma'
+title: 'Nasıl Yapılır: Sınıf Tasarımcısı kullanarak tür oluşturma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -19,16 +19,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 769bcfa202961c5a492e4fcb5af8e522b9052059
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1d7ba3fff5bc075f7113ad2a1f2a14e6fa6b91a
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842267"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685698"
 ---
-# <a name="how-to-create-types-by-using-class-designer"></a>Nasıl yapılır: Sınıf Tasarımcısı kullanarak tür oluşturma
+# <a name="how-to-create-types-by-using-class-designer"></a>Nasıl Yapılır: Sınıf Tasarımcısı kullanarak tür oluşturma
 
-İçin yeni türleri tasarımı için C# ve Visual Basic projeleri, bunları bir sınıf diyagramı üzerinde oluşturun. Varolan türleri görmek için bkz: [nasıl yapılır: View Existing Types](how-to-view-existing-types.md).
+İçin yeni türleri tasarımı için C# ve Visual Basic projeleri, bunları bir sınıf diyagramı üzerinde oluşturun. Varolan türleri görmek için bkz: [nasıl yapılır: Varolan türleri görüntüleme](how-to-view-existing-types.md).
 
 ##  <a name="CreateType"></a> Yeni tür oluşturma
 
@@ -91,8 +91,7 @@ ms.locfileid: "49842267"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır: türler arasında devralma oluşturma](how-to-create-inheritance-between-types.md)
-- [Nasıl yapılır: türler arasında ilişkilendirme oluşturma](how-to-create-associations-between-types.md)
+- [Nasıl yapılır: Türler arasında devralma oluşturma](how-to-create-inheritance-between-types.md)
+- [Nasıl yapılır: Türler arasında ilişkilendirme oluşturma](how-to-create-associations-between-types.md)
 - [Tür Üyeleri Oluşturma ve Yapılandırma](creating-and-configuring-type-members.md)
-- [Sınıf Diyagramları ile Çalışma](working-with-class-diagrams.md)
 - [Sınıfları ve türleri tasarlama](designing-and-viewing-classes-and-types.md)

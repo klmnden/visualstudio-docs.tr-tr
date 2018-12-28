@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c2cedf1a07307b8494e6a6b810e9590f347c9f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 255f1b9f8a277f0d58437f8b0a8b1400a069c237
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847389"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561924"
 ---
 # <a name="debugger-user-interface-xslt"></a>Hata ayıklayıcı kullanıcı arabirimi (XSLT)
 
@@ -34,7 +34,7 @@ Daha fazla bilgi için [kullanıcı arabirim başvurusunda hata ayıklama](../de
 
  Bu sütunda yer alan her bir değişken değeri görüntülenir. Öznitelik, işlem yönergesi, yorum, metin ve CData düğümler, düğümün metin değerini görüntüler. Ad alanı URI Namespace düğümleri görüntüleyin.
 
- **Türü**
+ **Tür**
 
  Bu sütunda listelenen her bir değişken veri türünü tanımlayan **adı** sütun.
 
@@ -92,7 +92,7 @@ Daha fazla bilgi için [kullanıcı arabirim başvurusunda hata ayıklama](../de
 
 -   Kullanıcı tanımlı işlevlerde izin verilmez.
 
-Daha fazla bilgi için [nasıl yapılır: bir XPath ifadesini değerlendirme](../xml-tools/how-to-evaluate-an-xpath-expression.md).
+Daha fazla bilgi için [nasıl yapılır: Bir XPath ifadesini değerlendirme](../xml-tools/how-to-evaluate-an-xpath-expression.md).
 
 ## <a name="disassembly-window"></a>Ayrıştırma penceresi
  Ayrıştırılmış kod penceresini XSLT derleyici tarafından oluşturulan bütünleştirilmiş kodu gösterir. Bu pencerede diğer Visual Studio çözümünü windows ile aynı şekilde kullanılabilir.
@@ -102,5 +102,5 @@ Daha fazla bilgi için [nasıl yapılır: bir XPath ifadesini değerlendirme](..
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [XSLT Hatalarını Ayıklama](../xml-tools/debugging-xslt.md)
-- [Hata ayıklayıcısı temel bilgileri](../debugger/getting-started-with-the-debugger.md)
+- [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)   
 - [Visual Studio'da otolar ve yerel öğeler pencerelerinde değişkenleri denetleyin](../debugger/autos-and-locals-windows.md)

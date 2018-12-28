@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, about developing solutions
 - solutions [Office development in Visual Studio], developing
 - Office solutions [Office development in Visual Studio], developing
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a95c5f5767e227c35763cfaea1e3619093fffda3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ea6054ae0917413a4e862e5c6309492ce84deff2
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833076"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648858"
 ---
 # <a name="develop-office-solutions"></a>Office çözümleri geliştirme
   Sonra Visual Studio'da Office geliştirme araçlarını kullanarak bir proje tasarlayın ve proje dosyalarını kurduğunuzda, özel kullanıcı arabirimi (UI) ve kod uygulama hakkında yoğunlaşabilirsiniz başlayabilirsiniz.  
@@ -63,14 +63,14 @@ ms.locfileid: "49833076"
 |[Office projelerinde erişilebilirlik](../vsto/accessibility-in-office-projects.md)|Office çözümlerinde kullanılabilir erişilebilirlik özelliklerini açıklar.|  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: özel belge özelliklerini oluşturma ve değiştirme](../vsto/how-to-create-and-modify-custom-document-properties.md)   
- [Nasıl yapılır: gelen okuma ve yazma için belge özellikleri](../vsto/how-to-read-from-and-write-to-document-properties.md)   
+ [Nasıl yapılır: Özel belge özelliklerini oluşturma ve değiştirme](../vsto/how-to-create-and-modify-custom-document-properties.md)   
+ [Nasıl yapılır: Okuma ve yazma için belge özellikleri](../vsto/how-to-read-from-and-write-to-document-properties.md)   
  [Nasıl yapılır: Office Çok Dilde Kullanıcı arabirimini hedefleme](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
  [İzlenecek yol: Excel için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)   
  [İzlenecek yol: Excel için ilk belge düzeyi özelleştirmeyi oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)   
- [İzlenecek yol: ilk VSTO eklentinizi Outlook için oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)   
+ [İzlenecek yol: İlk VSTO eklentinizi Outlook için oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)   
  [İzlenecek yol: PowerPoint için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)   
- [İzlenecek yol: ilk VSTO eklentinizi projesi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)   
+ [İzlenecek yol: İlk VSTO eklentinizi projesi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)   
  [İzlenecek yol: Word için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)   
  [İzlenecek yol: Word için ilk belge düzeyi özelleştirmeyi oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
   

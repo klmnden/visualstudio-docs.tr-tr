@@ -1,5 +1,5 @@
 ---
-title: Beklenen &#39;)&#39; (JavaScript) | Microsoft Docs
+title: Beklenen ')' (JavaScript) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f816b4635ae219b12370d53fa8c14eb8c0112a7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f6a0128bb73e69a151415518ae6c019be0e4df9
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863548"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804675"
 ---
-# <a name="expected-3939-javascript"></a>Beklenen &#39;)&#39; (JavaScript)
+# <a name="expected--javascript"></a>Beklenen ')' (JavaScript)
 Bir ifadeyi parantez kümesi içinde içine erişmeyi denedi, ancak kapatma parantezinden içermiyordu. Bazı ifade açılış ve kapanış ayraçlarını kümesi içinde içine alınması gerekir. Aşağıdaki örnekte ayraç dikkat edin.  
   
 ```JavaScript  

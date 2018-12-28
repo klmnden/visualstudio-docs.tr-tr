@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2c39fc08528886e143bd51eb1f33219b386807
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e8bc70a93bf96e34fd3ce2cd09f728b1bd450bf5
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921723"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803500"
 ---
 # <a name="common-msbuild-project-properties"></a>Yaygın MSBuild proje özellikleri
 Aşağıdaki tablo, Visual Studio proje dosyalarında tanımlı ya da dahil listeleri sık kullanılan özellikler *.targets* MSBuild'ın sağladığı dosyaları.  
@@ -56,17 +56,17 @@ Aşağıdaki tablo, Visual Studio proje dosyalarında tanımlı ya da dahil list
 | CscToolPath | Yolu *csc.exe*, [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] derleyici. |
 | CustomBeforeMicrosoftCommonTargets | Proje dosyası veya ortak hedefler içe önce otomatik olarak içe aktarılacak hedefler dosyasının adı. |
 | DebugSymbols | Semboller yapı tarafından oluşturulup oluşturulmadığını gösteren bir Boole değeri.<br /><br /> Ayarı **- p: DebugSymbols = false** komut satırında, program veritabanı oluşturulmasını devre dışı bırakır (*.pdb*) sembol dosyaları. |
+| DebugType | Üretilmesini istediğiniz hata ayıklama bilgi düzeyini tanımlar. Geçerli değerler: "full," "pdbonly" ve "none". |
 | DefineConstants | Koşullu derleyici sabitlerini tanımlar. Sembol/değer çiftleri noktalı virgüllerle ayrılır ve aşağıdaki sözdizimi kullanılarak belirtilir:<br /><br /> *symbol1 = value1; symbol2 = value2*<br /><br /> Özellik `/define` derleyici anahtarı. |
 | DefineDebug | DEBUG sabitinin tanımlanmasını isteyip istemediğinizi belirten bir Boole değeri. |
 | DefineTrace | TRACE sabitinin tanımlanmasını isteyip istemediğinizi belirten bir Boole değeri. |
-| DebugType | Üretilmesini istediğiniz hata ayıklama bilgi düzeyini tanımlar. Geçerli değerler: "full," "pdbonly" ve "none". |
 | DelaySign | Tam imzalamak yerine Gecikmeli imzalayın derleme isteyip istemediğinizi belirten bir Boole değeri. |
 | Belirleyici | Derleyici aynı girişler için aynı derlemeleri üretmesi gerektiğini belirten bir Boole değeri. Bu parametre için karşılık gelen `/deterministic` geçiş *vbc.exe* ve *csc.exe* derleyicileri. |
 | DisabledWarnings | Belirtilen Uyarıları bastırır. Uyarı tanımlayıcısının yalnızca sayısal parçası belirtilmelidir. Çoklu uyarılar noktalı virgül ile ayrılır. Bu parametre için karşılık gelen `/nowarn` geçiş *vbc.exe* derleyici. |
 | DisableFastUpToDateCheck | Geçerli bir Boole değeri [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yalnızca. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Yöneticisi kullanan bir proje, güncel olması için yeniden oluşturulması olup olmadığını belirlemek için FastUpToDateCheck adlı bir işlem oluşturun. Bu işlem, kullanmaktan daha hızlıdır [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bunu belirlemek için. DisableFastUpToDateCheck özelliğini `true` atlamasına olanak tanır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yapı yöneticisini ve kullanmak için onu zorla [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projenin güncel olup olmadığını belirlemek için. |
 | DocumentationFile | XML belgeleri dosyası olarak oluşturulacak dosyanın adı. Bu ad, yalnızca dosya adını içerir ve hiçbir yol bilgisi içermez. |
 | ErrorReport | Derleyici görevinin iç derleyici hatalarını nasıl raporlayacağını belirtir. Geçerli değerler: "prompt," "send" ya da "none". Bu özellik değerine eşdeğer olan `/errorreport` derleyici anahtarı. |
-| ExcludeDeploymentUrl | [GenerateDeploymentManifest görevi](../msbuild/generatedeploymentmanifest-task.md) proje dosyası aşağıdaki öğeleri herhangi birini içeriyorsa, dağıtım bildirimine bir deploymentProvider etiketi ekler:<br /><br /> -UpdateUrl<br />-InstallUrl<br />-PublishUrl<br /><br /> Excludedeploymenturl'yi kullanarak, Bununla birlikte, deploymentProvider etiketi yukarıdaki URL'lerden herhangi birini belirtilse bile dağıtım bildirimine eklenmesini engelleyebilirsiniz. Bunu yapmak için aşağıdaki özelliği proje dosyanıza ekleyin:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**Not:** Excludedeploymenturl'yi gösterilmese de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE ve yalnızca el ile proje dosyasını düzenleyerek ayarlanabilir. Bu özelliğin ayarlanması dahilinde yayımlamayı etkilemez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; yani deploymentProvider etiketi hala PublishUrl tarafından belirtilen URL'ye eklenir. |
+| ExcludeDeploymentUrl | [GenerateDeploymentManifest görevi](../msbuild/generatedeploymentmanifest-task.md) proje dosyası aşağıdaki öğeleri herhangi birini içeriyorsa, dağıtım bildirimine bir deploymentProvider etiketi ekler:<br /><br /> -UpdateUrl<br />-InstallUrl<br />-PublishUrl<br /><br /> Excludedeploymenturl'yi kullanarak, Bununla birlikte, deploymentProvider etiketi yukarıdaki URL'lerden herhangi birini belirtilse bile dağıtım bildirimine eklenmesini engelleyebilirsiniz. Bunu yapmak için aşağıdaki özelliği proje dosyanıza ekleyin:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**Not:**  ExcludeDeploymentUrl gösterilmese de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE ve yalnızca el ile proje dosyasını düzenleyerek ayarlanabilir. Bu özelliğin ayarlanması dahilinde yayımlamayı etkilemez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; yani deploymentProvider etiketi hala PublishUrl tarafından belirtilen URL'ye eklenir. |
 | Filealignment değerini | , Çıktı dosyasının bölümlerinin hizalanacağı yeri bayt cinsinden belirtir. Geçerli değerler: 512, 1024, 2048, 4096, 8192. Bu özellik değerine eşdeğer olan `/filealignment` derleyici anahtarı. |
 | FrameworkPathOverride | Konumunu belirtir *mscorlib.dll* ve *microsoft.visualbasic.dll*. Bu parametre değerine eşdeğer olan `/sdkpath` geçiş *vbc.exe* derleyici. |
 | GenerateDocumentation | (Yalnızca Visual Basic) Belgeleri yapı tarafından oluşturulup oluşturulmadığını gösteren bir Boole parametresi. Varsa `true`, yapı, belgelendirme bilgilerini üretir ve bunu koyar bir *.xml* yürütülebilir dosya ya da yapı görevinin ürettiği kitaplık adı ile birlikte dosya. |

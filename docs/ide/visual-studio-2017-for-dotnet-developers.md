@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a2158663defe02dc51e91e888d47f325db7226a
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: 731097ac74a4c1dfd5db74d55549b8a2b9c33176
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645152"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684986"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# üretkenlik Kılavuzu
 
@@ -115,7 +115,7 @@ Visual Studio 2017'yi arayın ve kod temelinizde gidin yardımcı olmak üzere b
 | Tanıma Git | **F12** veya **Ctrl**+**tıklayın**| Basılı tutabilirsiniz **Ctrl** navgiate tanımına için tıklatırken |
 | Tanıma göz at | **Alt**+**F12** | Satır içi görünüm tanımı |
 | Yapı Görselleştirici | Gri, noktalı satırları ayraçlar arasındaki | Üzerine gelindiğinde, kod yapısını görmek için |
-| Kaynak koda dönüştürülmüş derlemeleri gitme | **F12** veya **Ctrl**+**tıklayın** | Özelliğini etkinleştirerek (ile yetenek decompiled) bir dış kaynağa gidin: **Araçları** > **seçenekleri** > **metin düzenleyici**  >  **C#** > **Gelişmiş** > **kaynak koda dönüştürülmüş kaynaklara gezintiyi etkinleştir**. |
+| Kaynak koda dönüştürülmüş derlemeleri gitme | **F12** veya **Ctrl**+**tıklayın** | Dış Kaynak (ile yetenek decompiled) özelliği etkinleştirerek gidin: **Araçlar** > **seçenekleri** > **metin düzenleyici**  >  **C#**  >   **Gelişmiş** > **kaynak koda dönüştürülmüş kaynaklara gezintiyi etkinleştir**. |
 
 ![Tümüne Git ve tüm başvuruları Bul](../ide/media/VSIDE_Productivity_Navigation.png)
 
@@ -135,7 +135,7 @@ Visual Studio 2017'de bir sürü yeni hata ayıklama özellikleri ekledik:
 
 - *Çalıştır'ı tıklatın* bir kod satırının yanındaki gelin sağlar görüntülenen yeşil 'Yürüt' simge ulaşmak ve bu satırı ulaşana kadar programınızı çalıştırın.
 - Yeni **özel durum Yardımcısı** hangi değişkeni gibi en önemli bilgileri üst düzey iletişim kutusunda bir NullReferenceException ' null' geçirir.
-- [Geri adım](../debugger/how-to-use-intellitrace-step-back.md) hata ayıklama, önceki kesme noktaları veya adımlara geri dönün ve daha önce olduğu gibi uygulama durumunu görüntüleme olanak tanır.
+- [Geri adım](../debugger/view-historical-application-state.md) hata ayıklama, önceki kesme noktaları veya adımlara geri dönün ve daha önce olduğu gibi uygulama durumunu görüntüleme olanak tanır.
 - [Anlık görüntü hata ayıklama](/azure/application-insights/app-insights-snapshot-debugger) bir canlı web uygulaması bir özel durum oluşturuldu anda durumunu araştırmanıza olanak tanır (Azure'da olmalıdır).
 
 ![Visual Studio 2017'de yeni bir özel durum Yardımcısı](../ide/media/VSGuide_Debugging.png)

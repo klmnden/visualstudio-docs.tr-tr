@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: gizli hata ayıklayıcı komutlarını geri yükleme | Microsoft Docs'
+title: 'Nasıl Yapılır: Gizli hata ayıklayıcı komutlarını geri yükleme | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9ee37e72a52f866f5b67afaeacfd248628a3484
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7686ccd303bf47d9c3ef2ba570f2f483a4145d61
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176849"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561336"
 ---
-# <a name="how-to-restore-hidden-debugger-commands"></a>Nasıl Yapılır: Gizli Hata Ayıklayıcı Komutlarını Geri Yükleme
+# <a name="how-to-restore-hidden-debugger-commands"></a>Nasıl Yapılır: Gizli hata ayıklayıcı komutlarını geri yükleme
 Visual Studio'yu kurarken IDE ayarları birincil programlama diliniz için bir dizi varsayılan seçmeniz istenir. Bazı diller için varsayılan IDE ayarları belirli hata ayıklayıcı komutları gizlemek.  
   
  Varsayılan IDE ayarlarınız tarafından gizlenen hata ayıklayıcı özelliği kullanmak istiyorsanız, komutu aşağıdaki yordamı kullanarak menüsüne geri ekleyebilirsiniz.  
@@ -76,4 +76,4 @@ Visual Studio'yu kurarken IDE ayarları birincil programlama diliniz için bir d
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
- [Hata ayıklayıcı temel bilgileri](../debugger/getting-started-with-the-debugger.md)
+ [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)

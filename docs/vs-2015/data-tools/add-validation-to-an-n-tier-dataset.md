@@ -21,20 +21,19 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a0f7c21dcffb7c17f859d79d3aed5522beb14acf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 389b074fdabbec9ab0b12452cc1df74635e557a0
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220540"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647744"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>N Katmanlı bir veri kümesine doğrulama ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bir n katmanlı çözüme bölünen bir veri kümesine doğrulama ekleme temelde tek dosyalı veri kümesine (tek bir projede bir dataset) doğrulama ekleme ile aynı olur. Veri üzerine doğrulama yapmak için önerilen konum sırasındadır <xref:System.Data.DataTable.ColumnChanging> ve/veya <xref:System.Data.DataTable.RowChanging> veri tablosundaki olayları.  
   
- [Oluşturma ve yazılan veri kümelerini düzenleme](../data-tools/creating-and-editing-typed-datasets.md) sütun-kullanıcı kodu olduğu ekleyebileceğiniz kısmı sınıflar oluşturma işlevselliği sağlar ve satır-veri kümesindeki veri tablolarının olayları değiştirme. Bir n-katmanı çözümündeki bir veri kümesine kod ekleme hakkında daha fazla bilgi için bkz. [n katmanlı uygulamalarda veri kümelerine kod ekleme](../data-tools/add-code-to-datasets-in-n-tier-applications.md), ve [n katmanlı uygulamalarda Tableadapter'lara kod ekleyin](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Kısmi sınıflar hakkında daha fazla bilgi için bkz: [nasıl yapılır: sınıfı kısmi sınıflara (Sınıf Tasarımcısı) bölme](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) veya [kısmi sınıflar ve yöntemler](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1).  
+Veri kümesi Tasarımcısı kullanıcı kodu sütun ve satır için ekleyebileceğiniz kısmı sınıflar oluşturma işlevselliği sağlar. veri kümesindeki veri tablolarının olayları değiştirme. Bir n-katmanı çözümündeki bir veri kümesine kod ekleme hakkında daha fazla bilgi için bkz. [n katmanlı uygulamalarda veri kümelerine kod ekleme](../data-tools/add-code-to-datasets-in-n-tier-applications.md), ve [n katmanlı uygulamalarda Tableadapter'lara kod ekleyin](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Kısmi sınıflar hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir sınıfı kısmi sınıflara (Sınıf Tasarımcısı) bölme](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) veya [kısmi sınıflar ve yöntemler](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1).  
   
 > [!NOTE]
 >  Veri kümelerini Tableadapters'dan ayırdığınızda ayırdığınızda (ayarlayarak **DataSet projesi** özelliği), projedeki varolan kısmi veri kümesi sınıfları olmaz taşınması otomatik olarak. Var olan veri kümesi kısmi sınıflarının veri kümesi projesine el ile taşınması gerekir.  
@@ -43,7 +42,7 @@ Bir n katmanlı çözüme bölünen bir veri kümesine doğrulama ekleme temelde
 >  Veri kümesi Tasarımcısı otomatik olarak olay işleyicileri, C# ' ta oluşturmaz <xref:System.Data.DataTable.ColumnChanging> ve <xref:System.Data.DataTable.RowChanging> olayları. El ile bir olay işleyicisi oluşturun ve temeldeki olaya olay işleyiciye bağlama gerekir. Aşağıdaki yordamlar Visual Basic ve C# içinde gerekli olay işleyicilerini oluşturma işlemini açıklar.  
   
 ## <a name="validatechanges-to-individual-columns"></a>Tek tek sütunlara yapılan Validatechanges  
- İşleyerek, tek tek sütunlardaki değerleri doğrulayın <xref:System.Data.DataTable.ColumnChanging> olay. <xref:System.Data.DataTable.ColumnChanging> Olayı, bir sütundaki bir değer değiştirildiğinde oluşturulur. İçin bir olay işleyicisi oluşturun <xref:System.Data.DataTable.ColumnChanging> istediğiniz sütunu çift tıklatarak olay [oluşturma ve yazılan veri kümelerini düzenleme](../data-tools/creating-and-editing-typed-datasets.md).  
+ İşleyerek, tek tek sütunlardaki değerleri doğrulayın <xref:System.Data.DataTable.ColumnChanging> olay. <xref:System.Data.DataTable.ColumnChanging> Olayı, bir sütundaki bir değer değiştirildiğinde oluşturulur. İçin bir olay işleyicisi oluşturun <xref:System.Data.DataTable.ColumnChanging> olay veri kümesi üzerinde istediğiniz sütunu çift tıklayın.  
   
  Bir sütunu çift tıkladığınızda ilk kez Tasarımcısı için bir olay işleyicisi oluşturur. <xref:System.Data.DataTable.ColumnChanging> olay. Bir `If…Then` deyimi de oluşturulur, belli sütun için test eder. Örneğin, Northwind siparişleri tablosundaki RequiredDate sütunu çift tıkladığınızda aşağıdaki kod oluşturulur:  
   
@@ -62,7 +61,7 @@ End Sub
   
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>Ayrı ayrı sütun değerlerine değişiklikler sırasında doğrulama eklemek için  
   
-1.  Veri kümesini açın [oluşturma ve yazılan veri kümelerini düzenleme](../data-tools/creating-and-editing-typed-datasets.md) çift tıklayarak **.xsd** dosyası **Çözüm Gezgini**. Daha fazla bilgi için [nasıl yapılır: bir veri kümesini veri kümesi Tasarımcısı'nda açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Veri kümesi Tasarımcısı'nda çift tıklayarak açın **.xsd** dosyası **Çözüm Gezgini**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Doğrulamak istediğiniz sütunu çift tıklatın. Bu eylem oluşturur <xref:System.Data.DataTable.ColumnChanging> olay işleyicisi.  
   
@@ -117,11 +116,11 @@ End Sub
   
  Siparişler Girilmekte olduğunda, doğrulama, siparişin OrderDate veya bir RequiredDate ile girilmedi emin olur. Tek tek sütun değişikliğinin anlamsız için bu örnekte, RequiredDate ve OrderDate sütunlarının değerleri karşılaştırılmalıdır olması gerekir.  
   
- İçin bir olay işleyicisi oluşturun <xref:System.Data.DataTable.RowChanging> tablonun başlık çubuğundaki tablo adını çift tıklatarak olay [oluşturma ve yazılan veri kümelerini düzenleme](../data-tools/creating-and-editing-typed-datasets.md).  
+ İçin bir olay işleyicisi oluşturun <xref:System.Data.DataTable.RowChanging> tablonun başlık çubuğundaki tablo adını çift tıklayarak olay.  
   
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>Tüm satırlara değişiklikler sırasında doğrulama eklemek için  
   
-1.  Veri kümesini açın [oluşturma ve yazılan veri kümelerini düzenleme](../data-tools/creating-and-editing-typed-datasets.md) çift tıklayarak **.xsd** dosyası **Çözüm Gezgini**. Daha fazla bilgi için [nasıl yapılır: bir veri kümesini veri kümesi Tasarımcısı'nda açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Veri kümesi Tasarımcısı'nda çift tıklayarak açın **.xsd** dosyası **Çözüm Gezgini**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Tasarımcı üzerinde veri tablosunun başlık çubuğunu çift tıklatın.  
   
@@ -181,6 +180,5 @@ End Sub
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [N katmanlı veri uygulamalarına genel bakış](../data-tools/n-tier-data-applications-overview.md)   
- [İzlenecek yol: bir N katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
+ [İzlenecek yol: N katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
  [Veri kümelerindeki verileri doğrulama](../data-tools/validate-data-in-datasets.md)
-

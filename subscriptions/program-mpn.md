@@ -3,24 +3,24 @@ title: Microsoft iş ortağı ağı (MPN) iş ortakları için sunulan visual St
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 03/16/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Hangi abonelikler sunulur, hangi kuralları uygulamak ve kaç aboneliğe MPN'ye sunulan ayrıntıları.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7175dd503c2e91091b5bb6499fa54c0e5f2586ec
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 72889ca5d206a8f04562b3a91e5d116339279417
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876776"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739458"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft iş ortağı ağı (MPN) iş ortakları için sunulan visual Studio abonelikleri
 Kimin bir uzmanlık kazanın veya MPN eylem paketinde kimler satın iş ortakları, Visual Studio aboneliklerini kullanmak uygundur. Bu abonelik kullanıcı başına lisanslanır ve yalnızca belirli bir iş ortağı şirketin çalışan kullanıcı adlandırılmış atandığında geçerlidir.
 
 ## <a name="subscriptions-for-partners-with-an-mpn-competency"></a>Bir MPN uzmanlığına sahip iş ortakları için abonelikler
-Düzey--ortak bir uzmanlık--işletmeyse olduğunda düzeyinde silver veya gold iş ortakları Visual Studio Enterprise abonelikleri çekirdek sayısı kazanın. Bu çekirdek en az bir gold uzmanlığına sahip iş ortağı kazandırır, değişiklikleri yararlanır. Visual Studio Enterprise aboneliği kabaca özel bir tekliftir [Visual Studio Enterprise yıllık bulut aboneliği](https://visualstudio.microsoft.com/vs/pricing/), ancak (çoğu sunulur ayrı kaldırıldı belirli avantajlar İş ortakları genel MPN avantajlarını yerine Visual Studio Enterprise abonelikleri parçası olarak sunulan MPN aracılıyla).
+Düzey--ortak bir uzmanlık--işletmeyse olduğunda düzeyinde silver veya gold iş ortakları Visual Studio Enterprise abonelikleri çekirdek sayısı kazanın. Bu çekirdek en az bir gold uzmanlığına sahip iş ortağı kazandırır, değişiklikleri yararlanır. Visual Studio Enterprise aboneliği kabaca özel bir tekliftir [Visual Studio Enterprise Standart abonelik](https://visualstudio.microsoft.com/vs/pricing/), ancak (çoğu sunulur ayrı olarak iş ortakları için kaldırılan belirli avantajlar Genel MPN avantajlarını yerine MPN sunulan Visual Studio Enterprise abonelikleri parçası olarak).
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Visual Studio avantajı için herhangi bir türde en az bir uzmanlık kazanmaya çekirdek
 

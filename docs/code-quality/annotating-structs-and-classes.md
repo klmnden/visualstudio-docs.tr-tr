@@ -26,12 +26,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: e4294284ff2911fd05cc771bf4deaad368e3c28b
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: a4fb171ec575fdcf85879ed62252c9d373283f62
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228831"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802637"
 ---
 # <a name="annotating-structs-and-classes"></a>Yapıları ve Sınıfları Yorumlama
 Yapı ve sınıf üyeleri okuduğunuzda gibi davranan ek açıklamalar kullanarak açıklama ekleyebilirsiniz; herhangi bir işlev çağrısı veya bir parametre veya bir sonuç değeri kapsayan yapısı gerektirir. işlev girişi/çıkışı en doğru olduğu varsayılmıştır.
@@ -79,4 +79,12 @@ Yapı ve sınıf üyeleri okuduğunuzda gibi davranan ek açıklamalar kullanara
     ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [C/C++ kod hatalarını azaltmak için SAL ek açıklamalarını kullanma](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [SAL anlama](../code-quality/understanding-sal.md) [işlev parametrelerini ve dönüş değerlerini açıklama](../code-quality/annotating-function-parameters-and-return-values.md) [işlevdavranışınıyorumlama](../code-quality/annotating-function-behavior.md) [Kilitlenme davranışını yorumlama](../code-quality/annotating-locking-behavior.md) [açıklamanın ne zaman ve nereye uygulanacağını belirtme](../code-quality/specifying-when-and-where-an-annotation-applies.md) [iç işlevleri](../code-quality/intrinsic-functions.md) [en iyi uygulamalar ve Örnekleri](../code-quality/best-practices-and-examples-sal.md)
+
+- [C/C++ Kod Hatalarını Azaltmak için SAL Ek Açıklamalarını Kullanma](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+- [SAL'yi Anlama](../code-quality/understanding-sal.md)
+- [İşlev Parametrelerini ve Dönüş Değerlerini Açıklama](../code-quality/annotating-function-parameters-and-return-values.md)
+- [İşlev Davranışını Yorumlama](../code-quality/annotating-function-behavior.md)
+- [Kilitlenme Davranışını Yorumlama](../code-quality/annotating-locking-behavior.md)
+- [Açıklamanın Ne Zaman ve Nereye Uygulanacağını Belirtme](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+- [İç İşlevler](../code-quality/intrinsic-functions.md)
+- [En İyi Yöntemler ve Örnekler](../code-quality/best-practices-and-examples-sal.md)

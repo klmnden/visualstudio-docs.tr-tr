@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: VSTO eklentileri kullanarak belgelere özel XML bölümleri ekleme'
+title: 'Nasıl Yapılır: VSTO eklentileri kullanarak belgelere özel XML bölümleri ekleme'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,19 +17,19 @@ helpviewer_keywords:
 - custom XML parts [Office development in Visual Studio], adding
 - documents [Office development in Visual Studio], custom XML parts
 - application-level add-ins [Office development in Visual Studio], custom XML parts
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a559f8c074a7e80ea898f86dc205dec6ad2bb064
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2b5cbdd401466e2aa5be5efd5824a73477943664
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826902"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648528"
 ---
-# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Nasıl yapılır: VSTO eklentileri kullanarak belgelere özel XML bölümleri ekleme
+# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Nasıl Yapılır: VSTO eklentileri kullanarak belgelere özel XML bölümleri ekleme
   VSTO eklentisi içinde özel bir XML parçasına oluşturarak XML verileri aşağıdaki belge türlerini depolayabilirsiniz:  
   
 - Bir Microsoft Office Excel çalışma kitabı.  
@@ -40,7 +40,7 @@ ms.locfileid: "49826902"
   
   Daha fazla bilgi için [özel XML bölümlerine genel bakış](../vsto/custom-xml-parts-overview.md).  
   
-  **İçin geçerlidir:** Bu konu başlığı altındaki bilgiler Excel, PowerPoint ve Word için uygulama düzeyi projelerine yöneliktir. Daha fazla bilgi için [Office uygulaması ve proje türüne göre kullanılabilen özellikler](../vsto/features-available-by-office-application-and-project-type.md).  
+  **Uygulama hedefi:** Bu konu başlığı altındaki bilgiler, Excel, PowerPoint ve Word için uygulama düzeyi projeler için geçerlidir. Daha fazla bilgi için [Office uygulaması ve proje türüne göre kullanılabilen özellikler](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ## <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Bir Excel çalışma kitabına özel XML bölümleri ekleme  
   
@@ -86,6 +86,6 @@ ms.locfileid: "49826902"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Özel XML bölümlerine genel bakış](../vsto/custom-xml-parts-overview.md)   
- [Nasıl yapılır: belge düzeyi özelleştirmelerine özel XML bölümleri ekleme](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
+ [Nasıl yapılır: Belge düzeyi özelleştirmelerine özel XML bölümleri ekleme](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Varolan Türleri Görüntüleme (Sınıf Tasarımcısı)'
+title: 'Nasıl Yapılır: Varolan türleri görüntüleme (Sınıf Tasarımcısı)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,55 +16,55 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f477f64188c9592db65d0a82c8a1b8b3ec5b776
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 16e1c31585296913647b5c3d641126c3abca22a8
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956659"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684450"
 ---
-# <a name="how-to-view-existing-types-in-class-designer"></a>Nasıl yapılır: Sınıf Tasarımcısı'nda varolan türleri görüntüleme
+# <a name="how-to-view-existing-types-in-class-designer"></a>Nasıl Yapılır: Sınıf Tasarımcısı'nda varolan türleri görüntüleme
 
-Mevcut bir türle ve üyelerini görmek için bir sınıf diyagramı şeklini ekleyin.
+Varolan bir türünü ve üyelerini görmek için bir sınıf diyagramına şeklini ekleyin.
 
 Yerel ve başvurulan türleri görebilirsiniz. Yerel bir tür o anda açık olan projede mevcuttur ve okunur/yazılır. Başvurulan tür başka bir projede ya da başvurulan bir derlemede bulunur ve salt okunur özelliktedir.
 
-Sınıf diyagramları yeni türlerinde tasarlamak için bkz: [nasıl yapılır: Sınıf Tasarımcısı kullanarak türleri oluşturma](how-to-create-types.md).
+Sınıf diyagramları üzerinde yeni türleri tasarımı için bkz: [nasıl yapılır: Sınıf Tasarımcısı kullanarak tür oluşturma](how-to-create-types.md).
 
 ## <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Projedeki türleri bir sınıf diyagramı üzerinde görmek için
 
-1.  Bir projeye ait **Çözüm Gezgini**, mevcut bir sınıf diyagramı (.cd) dosyasını açın. Ya da hiçbir sınıf diyagramı yoksa, projeye yeni bir sınıf diyagramı ekleyin. Bkz: [nasıl yapılır: projelere sınıf diyagramları ekleme](how-to-add-class-diagrams-to-projects.md).
+1.  İçinde bir projeden **Çözüm Gezgini**, var olan bir sınıf diyagramı (.cd) dosyası açın. Ya da hiçbir sınıf diyagramı yoksa, projeye yeni bir sınıf diyagramı ekleyin. Bkz: [nasıl yapılır: Projelere sınıf diyagramları ekleme](how-to-add-class-diagrams-to-projects.md).
 
-2.  Projesi ile **Çözüm Gezgini**, kaynak kodu dosyasının sınıf diyagramına sürükleyin.
+2.  Projesi ile **Çözüm Gezgini**, bir kaynak kodu dosyasını sınıf diyagramına sürükleyin.
 
     > [!NOTE]
-    > Çözümünüzün birden çok uygulama arasında kod paylaşan proje varsa, bir sınıf diyagramı dosyaları veya kod yalnızca bu kaynaklardan sürükleyebilirsiniz:
+    > Çözümünüz birden fazla uygulama kod paylaşan bir proje varsa, bir sınıf diyagramına dosyaları veya kodu yalnızca şu kaynaklardan sürükleyebilirsiniz:
     >
     > - Diyagramı içeren uygulama projesi
-    > - Uygulama projesi tarafından alınan paylaşılan bir proje
+    > - Uygulama projesi tarafından içeri aktarılan bir paylaşılan proje
     > - Başvurulan bir proje
     > - Bir derleme
 
     Kaynak kodu dosyasında tanımlı türleri temsil eden şekiller, diyagram üzerinde dosyayı sürüklediğiniz konumda görünür.
 
-Proje düğümünde bir veya daha fazla türleri sürükleyerek projede türlerini görüntüleyebilirsiniz **sınıf görünümü** sınıf diyagramı için.
+Proje düğümünden bir veya daha fazla türleri sürükleyerek projedeki türleri görüntüleyebilirsiniz **sınıf görünümü** sınıf diyagramına.
 
 > [!TIP]
-> Varsa **sınıf görünümü** açık, açık değil **sınıf görünümü** gelen **Görünüm** menüsü.
+> Varsa **sınıf görünümü** açık, açık olmayan **sınıf görünümü** gelen **görünümü** menüsü.
 
-Varsayılan konumlara diyagramda türlerini görüntülemek için bir veya daha fazla türlerinde seçin **sınıf görünümü**, seçili türleri sağ tıklatın ve seçin **görünüm sınıfı diyagramı**.
+Türleri diyagram üzerinde varsayılan konumlarda görüntülemek için bir veya daha fazla türleri seçin **sınıf görünümü**, seçili türlere sağ tıklayın ve seçme **sınıf diyagramını görüntüle**.
 
 > [!NOTE]
-> Türü içeren bir kapalı sınıf diyagramı projede zaten varsa, sınıf diyagramı açılarak tür şeklini görüntüler. Ancak, hiçbir sınıf diyagramı içeren türü projesinde varsa **Sınıf Tasarımcısı** projede yeni bir sınıf diyagramı oluşturur ve türü görüntülenecek açar.
+> Türü içeren bir kapalı sınıf diyagramı projede zaten varsa, sınıf diyagramı açılarak tür şeklini görüntüler. Ancak, hiçbir sınıf diyagramı içeren projede türü var **Sınıf Tasarımcısı** projede yeni bir sınıf diyagramı oluşturur ve görüntü türü için açar.
 
 Bir türü diyagram üzerinde ilk kez görüntülediğinizde, bu türe ait şekil varsayılan olarak daraltılmış görünür. Şekli genişleterek içeriğini görüntüleyebilirsiniz.
 
-### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>Sınıf diyagramında proje içeriğini görüntülemek için
+### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>Bir sınıf diyagramında bir projeyi içeriğini görüntülemek için
 
-İçinde **Çözüm Gezgini** veya **sınıf görünümü**, projeye sağ tıklayın ve seçin **Görünüm**, ardından **görünüm sınıfı diyagramı**. Otomatik olarak doldurulan bir Sınıf Diyagramı oluşturulur.
+İçinde **Çözüm Gezgini** veya **sınıf görünümü**, projeye sağ tıklayıp seçin **görünümü**, ardından **sınıf diyagramını görüntüle**. Otomatik olarak doldurulan bir Sınıf Diyagramı oluşturulur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır: türler arasında devralmayı görüntüleme](how-to-view-inheritance-between-types.md)
-- [Nasıl yapılır: sınıf diyagramlarını özelleştirme](how-to-customize-class-diagrams.md)
-- [Türleri ve İlişkileri Görüntüleme](viewing-types-and-relationships.md)
+- [Nasıl yapılır: Türler arasında devralmayı görüntüleme](how-to-view-inheritance-between-types.md)
+- [Nasıl yapılır: Sınıf diyagramlarını özelleştirme](how-to-customize-class-diagrams.md)
+- [Türleri ve İlişkileri Görüntüleme](designing-and-viewing-classes-and-types.md)

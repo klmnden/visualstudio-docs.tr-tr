@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: komut satırını kullanarak bellek verileri toplamak için bağımsız bir .NET Framework uygulamasını Profiler ile başlatma | Microsoft Docs'
+title: 'Nasıl Yapılır: Komut satırını kullanarak bellek verileri toplamak için bağımsız bir .NET Framework uygulamasını Profiler ile başlatma | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ae6711ae49de037fd04039f1e07b09264fdce1b0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7f79584d5ebb3e83431bcb8f819f5a5e67d23111
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876691"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592176"
 ---
-# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Nasıl yapılır: komut satırını kullanarak bellek verileri toplamak için bağımsız bir .NET Framework uygulamasına Profil Oluşturucu ile başlatma
+# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Nasıl Yapılır: Komut satırını kullanarak bellek verileri toplamak için bağımsız bir .NET Framework uygulamasına Profil Oluşturucu ile başlatma
 Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir .NET Framework bağımsız (istemci) uygulamasına başlatmak ve bellek verileri toplamak için profil oluşturma araçları komut satırı araçları.  
 
  Profil oluşturma oturumunu, üç bölümden oluşur:  
@@ -29,7 +29,7 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/i
 -   Profil oluşturma oturumunu sona erdirme.  
 
 > [!NOTE]
->  Profil araçlarının komut satırı araçları yerleştirilir *tools\performance Araçları* alt [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] yükleme dizini. 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir. Daha fazla bilgi için [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Profil oluşturma araçları için olan yolu almak için bkz: [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir.
 
 ## <a name="start-the-application-with-the-profiler"></a>Uygulamayı Profil Oluşturucu ile başlatma  
  Profil oluşturucuyu kullanarak bir hedef uygulamayı başlatmak için kullandığınız **VSPerfCmd.exe/start** ve **/başlatma** profil oluşturucuyu başlatın ve uygulamayı başlatmak için Seçenekler. Belirtebileceğiniz **/start** ve **/başlatma** ve onların kendi seçenekleri bir komut satırında.  
@@ -100,7 +100,7 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/i
 
     -   Hedef uygulamayı kapatın.  
 
-         veya  
+         -veya-  
 
     -   Tür **VSPerfCmd / detach**  
 

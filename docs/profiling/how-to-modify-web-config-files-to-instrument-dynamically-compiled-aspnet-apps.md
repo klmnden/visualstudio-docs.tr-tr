@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: araç için Web.Config dosyalarını değiştirme ve dinamik olarak derlenmiş ASP.NET Web uygulamalarının profilini | Microsoft Docs'
+title: 'Nasıl Yapılır: Gereç için Web.Config dosyalarını değiştirme ve dinamik olarak derlenmiş ASP.NET Web uygulamalarının profilini | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 521da3263d3ea893613bf3b5211763230d07c67f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c3fe6e9efdf787df351ffc41e7d31b76a2162b8
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830996"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592631"
 ---
-# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Nasıl yapılır: izleme ve profil dinamik olarak derlenmiş ASP.NET web uygulamaları için web.config dosyalarını değiştirme
+# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Nasıl Yapılır: İzleme ve profil dinamik olarak derlenmiş ASP.NET web uygulamaları için web.config dosyalarını değiştirme
 Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dinamik olarak ayrıntılı zamanlama verileri, .NET bellek ayırma verilerinin ve .NET nesne ömür verilerini toplamak için profil oluşturma araçları izleme metodunu derlenmiş [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulamaları.  
 
  Bu konu nasıl değiştirileceğini açıklar *web.config* araçları ve profillerinin oluşturulmasını etkinleştirmek için yapılandırma dosyası [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulamaları.  
@@ -145,7 +145,7 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] di
 
    | Öznitelik adı | Öznitelik değeri |
    |----------------| - |
-   | **Anahtarı** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
+   | **anahtar** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
    | **value** | `PerformanceToolsFolder` **\VSInstr.exe** |
 
 
@@ -155,10 +155,11 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] di
 
    |Öznitelik adı|Öznitelik değeri|  
    |--------------------|---------------------|  
-   |**Anahtarı**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
+   |**anahtar**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
    |**value**|`PerformanceToolsFolder`|  
 
-    `PerformanceToolsFolder` Profil Oluşturucu yürütülebilir dosyalar yoludur. Varsa [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yüklü varsayılan konumunda değer olacaktır **C:\Program Files\Microsoft Visual Studio 10.0\Team Araçlar\Performans araçları**  
+    `PerformanceToolsFolder` Profil Oluşturucu yürütülebilir dosyalar yoludur. Profil oluşturma araçları için olan yolu almak için bkz: [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+
 
 ```xml  
     <configuration>  
@@ -171,11 +172,11 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] di
         <appSettings>  
             <add  
                 key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation"  
-                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\vsinstr.exe"  
+                value="C:\Program Files\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\vsinstr.exe"  
         />  
             <add  
                 key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools"  
-                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\"  
+                value="C:\Program Files\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\"  
             />  
         </appSettings>  
     </configuration>  
@@ -216,11 +217,11 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] di
         <appSettings>  
             <add  
                 key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation"  
-                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\vsinstr.exe"  
+                value="C:\Program Files\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\vsinstr.exe"  
             />  
             <add  
                 key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools"  
-                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\"  
+                value="C:\Program Files\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\"  
             />  
         </appSettings>  
     </configuration>  
@@ -228,5 +229,5 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] di
 ```  
 
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: dinamik olarak derlenmiş bir ASP.NET uygulamasını izleme ve ayrıntılı zamanlama verileri toplama](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)   
- [Nasıl yapılır: dinamik olarak derlenmiş bir ASP.NET uygulamasını izleme ve bellek verileri toplama](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)
+ [Nasıl yapılır: Dinamik olarak derlenmiş bir ASP.NET uygulamasını izleme ve ayrıntılı zamanlama verileri toplama](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)   
+ [Nasıl yapılır: Dinamik olarak derlenmiş bir ASP.NET uygulamasını izleme ve bellek verileri toplama](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)

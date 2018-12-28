@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: hata ayıklama .NET Framework kaynak | Microsoft Docs'
+title: 'Nasıl Yapılır: .NET Framework kaynağında hata ayıklama | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/19/2018
 ms.technology: vs-ide-debug
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 234d9979ea1a16b917111e2a8937ad71dd55224f
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: a627c2f0880aee9906e3478b268d688c59b7d090
+ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389286"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443918"
 ---
-# <a name="how-to-debug-net-framework-source"></a>Nasıl yapılır: hata ayıklama .NET Framework kaynak
+# <a name="how-to-debug-net-framework-source"></a>Nasıl Yapılır: .NET Framework kaynağında hata ayıklama
 
 .NET Framework kaynağında hata ayıklamak için şunları yapmalısınız:
 
@@ -33,9 +33,9 @@ ms.locfileid: "52389286"
   
 1. Altında **Araçları** (veya **hata ayıklama**) > **seçenekleri** > **hata ayıklama** > **genel**seçin **etkinleştirme .NET Framework kaynak Adımlamayı**.  
    
-   - Yalnızca kendi kodum tablonuz varsa bir uyarı iletişim kutusu, yalnızca kendi kodum şimdi devre dışı olduğunu bildirir. Seçin **Tamam**.  
+   - Yalnızca kendi kodum tablonuz varsa bir uyarı iletişim kutusu, yalnızca kendi kodum şimdi devre dışı olduğunu bildirir. **Tamam**’ı seçin.  
    
-   - Ayarlanmış bir yerel sembol önbellek yoksa bir uyarı iletişim kutusu, varsayılan sembol önbelleği ayarlandığını bildirir. Seçin **Tamam**.  
+   - Ayarlanmış bir yerel sembol önbellek yoksa bir uyarı iletişim kutusu, varsayılan sembol önbelleği ayarlandığını bildirir. **Tamam**’ı seçin.  
    
 1. Seçin **Tamam** kapatmak için **seçenekleri** iletişim.
   
@@ -55,7 +55,7 @@ ms.locfileid: "52389286"
   
 ### <a name="to-load-symbols-from-the-modules-or-call-stack-windows"></a>Modülleri veya çağrı yığını simgeleri yüklemek için windows  
   
-1. Hata ayıklama sırasında penceresini seçerek açın. **hata ayıklama** > **Windows** > **modülleri** veya **çağrı yığını** . 
+1. Hata ayıklama sırasında penceresini seçerek açın. **hata ayıklama** > **Windows** > **modülleri** (veya basın **Ctrl + Alt + U**) veya **hata ayıklama** > **Windows** > **çağrı yığını** (**Ctrl + Alt + C**). 
    
 1. Sembol yüklenmedi olmayan bir modül sağ tıklayın. İçinde **modülleri** sembol yükleme durumu penceresinde konusu **simge durumu** sütun. İçinde **çağrı yığını** penceresinde durumudur **çerçeve durumu** sütun ve çerçeve grileştirilmiş. 
    

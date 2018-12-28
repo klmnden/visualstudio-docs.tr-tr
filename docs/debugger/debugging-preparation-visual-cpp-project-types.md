@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c39acdef217d2b858645073cb96da4952c91df5a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f8d31881bed3e40db5080d642c0d3043ef2da704
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066320"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562041"
 ---
-# <a name="debugging-preparation-visual-c-project-types"></a>Hata Ayıklama Hazırlığı: Visual C++ Proje Türleri
+# <a name="debugging-preparation-visual-c-project-types"></a>Hata ayıklama hazırlığı: Visual C++ Proje Türleri
 Bu bölümde oluşturan temel proje türlerinde hata ayıklama işlemini açıklamaktadır [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] proje şablonları.  
   
  Proje türlerine çıktılarını DLL'leri oluşturma halinde gruplandırılır Not [DLL projelerinde hata ayıklama](../debugger/debugging-dll-projects.md) paylaştıkları genel özellikleri nedeniyle.  
@@ -73,7 +73,7 @@ Bu bölümde oluşturan temel proje türlerinde hata ayıklama işlemini açıkl
   
 2.  Üzerinde **hata ayıklama** menüsünde seçin **Başlat**.  
   
-3.  İçinde açıklanan teknikleri kullanarak hata ayıklama [hata ayıklayıcı temel bilgileri](../debugger/getting-started-with-the-debugger.md).  
+3.  İçinde açıklanan teknikleri kullanarak hata ayıklama [hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md).  
   
 ###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> Hata ayıklama yapılandırmasını el ile ayarlamak için  
   
@@ -98,7 +98,7 @@ Bu bölümde oluşturan temel proje türlerinde hata ayıklama işlemini açıkl
    [Bu konudaki](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows Forms uygulamaları (.NET)  
- **Windows Forms uygulaması (.NET)** şablon oluşturur bir [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] Windows Forms uygulaması. Daha fazla bilgi için [nasıl yapılır: bir Windows uygulaması projesi oluşturmak](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).  
+ **Windows Forms uygulaması (.NET)** şablon oluşturur bir [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] Windows Forms uygulaması. Daha fazla bilgi için [nasıl yapılır: Bir Windows uygulaması projesi oluşturmak](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).  
   
  Bu tür bir uygulamada hata ayıklama [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yönetilen Windows Forms uygulamalarında benzer.  
   
@@ -111,8 +111,8 @@ Bu bölümde oluşturan temel proje türlerinde hata ayıklama işlemini açıkl
  [Bu konudaki](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklayıcı temel bilgileri](../debugger/getting-started-with-the-debugger.md)   
+ [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)   
  [C++ hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Çalışan bir Program veya birden çok programlara ekleme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md)   
- [Nasıl yapılır: bir Windows uygulaması projesi oluşturma](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))
+ [Nasıl yapılır: Bir Windows uygulaması projesi oluşturma](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))

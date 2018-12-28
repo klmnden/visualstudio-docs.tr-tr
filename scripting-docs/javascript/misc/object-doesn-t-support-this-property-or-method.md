@@ -1,5 +1,5 @@
 ---
-title: Nesne mevcut değil&#39;t destek bu özellik veya yöntem | Microsoft Docs
+title: Nesne bu özelliği veya yöntemi desteklemiyor | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,19 +20,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c87d7d1c23682d014924c5c9b948133d8391c72
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 893b8328affcd0a893840cefddba61a322db315c
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
-ms.locfileid: "24788870"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801868"
 ---
-# <a name="object-doesn39t-support-this-property-or-method"></a>Nesne mevcut değil&#39;t destek bu özelliği veya yöntemi
-Bir özellik veya var olmayan yöntem bu nesne için belirttiğiniz. Tüm nesneler, tüm özellikleri ve yöntemleri destekler.  
+# <a name="object-doesnt-support-this-property-or-method"></a>Nesne bu özelliği veya yöntemi desteklemiyor
+Bir özellik veya yok yöntemi bu nesne için belirttiğiniz. Tüm nesneler, tüm özellikleri ve yöntemleri destekler.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Özellikleri ve yöntemleri yazım hatası vardı emin olmak için kontrol edin.  
+-   Özellikleri ve yöntemleri hiçbir yazım hatalar emin olmak için kontrol edin.  
   
 -   Nesnenin çalışma zamanı türü beklenen nesne türü olduğundan emin olun.  
   

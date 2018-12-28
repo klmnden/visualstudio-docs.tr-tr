@@ -20,12 +20,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 33b272143c58058d23945986ea9b6594183307c9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a517ae7680923e70919c4bb8903bb29a2b402179
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065216"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648232"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Visual Studio’da veri kümeleri oluşturma ve yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,6 +94,6 @@ A *veri kümesi* bellekte bir veritabanından veri depolayan ve etkinleştirmek 
 
 2.  Sürükleme bir <xref:System.Data.DataTable> gelen sınıfı **veri kümesi** sekmesinde **araç kutusu** üzerine **veri kümesi Tasarımcısı**.
 
-3.  Veri tablosu tanımlamak için sütunları ekleyin. Daha fazla bilgi için [nasıl yapılır: bir DataTable sütunları ekleme](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
+3.  Veri tablosu tanımlamak için sütunları ekleyin. Daha fazla bilgi için [nasıl yapılır: Bir DataTable tablosuna sütun ekleme](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
 
 4.  Tek başına tabloları uygulamak için gereken `Fill` mantığı tek başına tablolar, böylece bunları verilerle doldurabilirsiniz. Tek başına veri tablolarını doldurmak hakkında daha fazla bilgi için bkz: [dataadapter'dan bir DataSet doldurma](http://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).

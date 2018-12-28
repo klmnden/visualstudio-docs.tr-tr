@@ -17,17 +17,17 @@ helpviewer_keywords:
 - objects [Office development in Visual Studio], Office object models
 - Excel object model
 - Office object models
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8ca93cae45eed272b683275896efcf83229ca9a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb5b930df90f36395a22461ad0f26e82548afb6f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880799"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647531"
 ---
 # <a name="excel-object-model-overview"></a>Excel nesne modeline genel bakış
   Microsoft Office Excel kullanan çözümleri geliştirmek için Excel nesne modeli tarafından sağlanan nesneler ile etkileşim kurabilirsiniz. Bu konuda en önemli nesneleri sunar:  
@@ -48,7 +48,7 @@ ms.locfileid: "49880799"
   
   Bu konu Excel nesne modeline kısa bir genel bakış sağlar. Kaynaklar nerede edinebilirsiniz tüm Excel nesne modeli hakkında daha fazla bilgi için bkz [Excel nesne modeli belgeleri kullanın](#ExcelOMDocumentation).  
   
-  ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [bunu nasıl yaparım: kullanım olay işleyicileri içinde bir Excel 2007 Eklentisi?](http://go.microsoft.com/fwlink/?LinkID=130291), ve [bunu nasıl yaparım kullanım şekilleri kabarcık grafiği oluşturmak için Excel'de? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
+  ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [nasıl yaparım? Bir Excel 2007 Eklentisi, olay işleyicileri kullanılsın mı? ](http://go.microsoft.com/fwlink/?LinkID=130291), ve [nasıl yaparım? Şekiller, Excel'de kabarcık grafiği oluşturmak için kullanılır? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="access-objects-in-an-excel-project"></a>Bir Excel projesinde nesnelere erişme  
  Excel için yeni bir VSTO eklenti projesi oluşturduğunuzda, Visual Studio otomatik olarak oluşturur bir *ThisAddIn.vb* veya *ThisAddIn.cs* kod dosyası. Uygulama nesnesi kullanarak erişebileceğiniz `Me.Application` veya `this.Application`.  

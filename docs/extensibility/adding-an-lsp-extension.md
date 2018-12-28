@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f2710693c7dae7c4238f9f31fbe8065d6864a19
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4c583b9af65610340886794c03cb92be945b73d4
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672970"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425870"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Dil sunucusu Protokolü uzantısı ekleme
 
@@ -48,46 +48,46 @@ Aşağıdaki LSP özellikleri Visual Studio'da şimdiye desteklenir:
 
 İleti | Visual Studio'da desteğine sahiptir
 --- | ---
-başlatma | Evet
-başlatıldı | Evet
-kapatma | Evet
-Çıkış | Evet
-$/ cancelRequest | Evet
-Pencere/showMessage | Evet
-Pencere/showMessageRequest | Evet
-Pencere/logMessage | Evet
+başlatma | evet
+başlatıldı | evet
+kapatma | evet
+Çıkış | evet
+$/ cancelRequest | evet
+Pencere/showMessage | evet
+Pencere/showMessageRequest | evet
+Pencere/logMessage | evet
 telemetri/olayı |
 İstemci/registerCapability |
 İstemci/unregisterCapability |
-Çalışma alanı/didChangeConfiguration | Evet
-workspace/didChangeWatchedFiles | Evet
-Çalışma alanı/sembol | Evet
-workspace/executeCommand | Evet
-Çalışma alanı/applyEdit | Evet
-textDocument/publishDiagnostics | Evet
-textDocument/didOpen | Evet
-textDocument/didChange | Evet
+Çalışma alanı/didChangeConfiguration | evet
+workspace/didChangeWatchedFiles | evet
+Çalışma alanı/sembol | evet
+workspace/executeCommand | evet
+Çalışma alanı/applyEdit | evet
+textDocument/publishDiagnostics | evet
+textDocument/didOpen | evet
+textDocument/didChange | evet
 textDocument/willSave |
 textDocument/willSaveWaitUntil |
-textDocument/didSave | Evet
-textDocument/didClose | Evet
-textDocument/tamamlama | Evet
-Tamamlanma/çözümleyin | Evet
-textDocument/üzerine gelme | Evet
-textDocument/signatureHelp | Evet
-textDocument/başvuruları | Evet
-textDocument/documentHighlight | Evet
-textDocument/documentSymbol | Evet
-textDocument ve biçimlendirme | Evet
-textDocument/rangeFormatting | Evet
+textDocument/didSave | evet
+textDocument/didClose | evet
+textDocument/tamamlama | evet
+Tamamlanma/çözümleyin | evet
+textDocument/üzerine gelme | evet
+textDocument/signatureHelp | evet
+textDocument/başvuruları | evet
+textDocument/documentHighlight | evet
+textDocument/documentSymbol | evet
+textDocument ve biçimlendirme | evet
+textDocument/rangeFormatting | evet
 textDocument/onTypeFormatting |
-textDocument/tanımı | Evet
-textDocument/codeAction | Evet
+textDocument/tanımı | evet
+textDocument/codeAction | evet
 textDocument/codeLens |
 codeLens/çözümleyin |
 textDocument/documentLink |
 documentLink/çözümleyin |
-textDocument/yeniden adlandırma | Evet
+textDocument/yeniden adlandırma | evet
 
 ## <a name="getting-started"></a>Başlarken
 
@@ -202,12 +202,12 @@ namespace MockLanguageExtension
             await StartAsync.InvokeAsync(this, EventArgs.Empty);
         }
 
-        public async Task OnServerInitializeFailedAsync(Exception e)
+        public Task OnServerInitializeFailedAsync(Exception e)
         {
             return Task.CompletedTask;
         }
 
-        public async Task OnServerInitializedAsync()
+        public Task OnServerInitializedAsync()
         {
             return Task.CompletedTask;
         }
@@ -243,7 +243,7 @@ Yeni bir varlık oluşturmak için Yeni'yi tıklatın:
 ![MEF varlık tanımlayın](media/lsp-define-asset.png)
 
 * **Tür**: Microsoft.VisualStudio.MefComponent
-* **Kaynak**: Geçerli çözümde bir proje
+* **Kaynak**: Mevcut çözümde bir proje
 * **Proje**: [project]
 
 ### <a name="content-type-definition"></a>İçerik türü tanımı
@@ -327,7 +327,7 @@ LSP dil hizmeti uzantınızı ayarları için destek eklemek için aşağıdaki 
    ![VSPackage varlığı Düzenle](media/lsp-add-vspackage-asset.png)
 
    * **Tür**: Microsoft.VisualStudio.VsPackage
-   * **Kaynak**: FileSystem'daki
+   * **Kaynak**: Dosya sisteminde dosya
    * **Yol**: [yolu, *.pkgdef* dosyası]
 
 ### <a name="user-editing-of-settings-for-a-workspace"></a>Kullanıcı, bir çalışma alanı ayarlarını düzenleme

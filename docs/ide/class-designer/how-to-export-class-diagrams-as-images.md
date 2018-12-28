@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Sınıf Diyagramlarını Görüntü Olarak Dışarı Aktarma (Sınıf Tasarımcısı)'
+title: 'Nasıl Yapılır: Sınıf diyagramları (Sınıf Tasarımcısı) görüntü dışarı aktarma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,32 +14,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c18fa28d52115d2666e2098a56a78658bebdc8f
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 564260b60e56974df698ba0efd6e319a8ea3e440
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956851"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684532"
 ---
-# <a name="how-to-export-class-diagrams-as-images"></a>Nasıl yapılır: sınıf diyagramlarını görüntü olarak dışarı aktarma
+# <a name="how-to-export-class-diagrams-as-images"></a>Nasıl Yapılır: Sınıf diyagramlarını görüntü olarak dışarı aktarma
 
-Bir proje koddan oluşturulan bir sınıf diyagramı dışarı aktarmak için bir resim olarak Diyagramı kaydedin. UML sınıf diyagramları yerine dışarı aktarmak istiyorsanız, bkz: [diyagramlarını görüntü dışarı aktarma](../../modeling/export-diagrams-as-images.md).
+Bir projedeki koddan oluşturulan bir sınıf diyagramı dışarı aktarmak için diyagramı görüntü olarak kaydedin. UML sınıf diyagramları yerine dışarı aktarmak istiyorsanız, bkz. [diyagramlarını görüntü dışarı aktarma](../../modeling/export-diagrams-as-images.md).
 
 ## <a name="export-a-diagram"></a>Bir diyagram dışarı aktarma
 
-1.  Sınıf diyagramı açın (*.cd*) dosyası.
+1.  Sınıf diyagramınızı açın (*.cd*) dosyası.
 
-2.  Gelen **sınıf diyagramı** menüsünden veya diyagramı yüzey kısayol menüsünden seçin **görüntü olarak dışarı aktarma diyagramı**.
+2.  Gelen **sınıf diyagramı** menüsünden veya diyagram yüzeyi kısayol menüsünden seçin **diyagramı görüntü olarak dışa aktar**.
 
 3.  Bir diyagram seçin.
 
 4.  İstediğiniz biçimi seçin.
 
-5.  Seçin **verme** dışarı bitirmek için.
+5.  Seçin **dışarı** dışarı aktarmayı bitirmek için.
 
-Diğer belgelerden bağlantılı dışarı aktarılan görüntüleri otomatik olarak güncelleştirmek için Visual Studio şemada yeniden dışarı aktarın.
+Diğer belgelerden bağlı dışarı aktarılan görüntüleri otomatik olarak güncelleştirmek için Visual Studio diyagramda yeniden dışarı aktarın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır: sınıf diyagramlarını yazdırma](how-to-print-class-diagrams.md)
-- [Sınıf Diyagramları ile Çalışma](working-with-class-diagrams.md)
+- [Nasıl yapılır: Sınıf diyagramlarını yazdırma](how-to-print-class-diagrams.md)
+- [Sınıf Diyagramları ile Çalışma](designing-and-viewing-classes-and-types.md)

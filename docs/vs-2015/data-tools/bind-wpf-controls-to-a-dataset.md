@@ -21,12 +21,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9b77e8211d8f76627f16f96abed8a61e6dae03d7
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: ba1be86fdf43b93b794d45efea0cb8ef6c720fa6
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219802"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647799"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Bir veri kümesine WPF denetimleri bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
   
   Aşağıdaki kavramları bilgisi de faydalıdır, ancak izlenecek yolu tamamlamak için gerekli değil:  
   
-- Veri kümeleri ve TableAdapters öğelerini. Daha fazla bilgi için [Visual Studio'daki veri kümesi Araçları](../data-tools/dataset-tools-in-visual-studio.md) ve [TableAdapter genel bakışı](../data-tools/tableadapter-overview.md).  
+- Veri kümeleri ve TableAdapters öğelerini. Daha fazla bilgi için [Visual Studio'daki veri kümesi Araçları](../data-tools/dataset-tools-in-visual-studio.md).  
   
 - WPF Tasarımcısı ile çalışma. Daha fazla bilgi için [WPF ve Silverlight Tasarımcısı genel bakış](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
@@ -66,7 +66,7 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
   
 #### <a name="to-create-the-project"></a>Proje oluşturmak için  
   
-1.  Visual Studio'yu başlatın.  
+1.  Visual Studio’yu çalıştırın.  
   
 2.  Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
   
@@ -258,7 +258,7 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
   
 -   Nasıl kullanacağınızı öğrenin **veri kaynakları** WPF bağlama için Visual Studio penceresinde başka türde veri kaynaklarını denetler. Daha fazla bilgi için [denetimleri bir WCF veri hizmetine WPF bağlama](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).  
   
--   Nasıl kullanacağınızı öğrenin **veri kaynakları** Visual Studio'daki WPF denetimlerindeki ilgili verileri (diğer bir deyişle, bir üst-alt ilişkisi veri) görüntülenecek. Daha fazla bilgi için [izlenecek yol: WPF uygulamasında ilgili verileri görüntüleme](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).  
+-   Nasıl kullanacağınızı öğrenin **veri kaynakları** Visual Studio'daki WPF denetimlerindeki ilgili verileri (diğer bir deyişle, bir üst-alt ilişkisi veri) görüntülenecek. Daha fazla bilgi için [izlenecek yol: Bir WPF uygulamasında ilgili verileri görüntüleme](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da verilere WPF denetimleri bağlama](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
@@ -266,4 +266,3 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
  [Visual Studio'da veri kümesi araçları](../data-tools/dataset-tools-in-visual-studio.md)   
  [WPF ve Silverlight Tasarımcısı genel bakış](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)   
  [Veri Bağlamaya Genel Bakış](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)
-

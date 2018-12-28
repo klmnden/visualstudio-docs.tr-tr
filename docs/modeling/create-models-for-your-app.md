@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf35f0d09178dd0516794ab79e8ac92239e42cd6
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 098c0f50f24e216a407343ceb446d0073370fed1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966550"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740146"
 ---
 # <a name="create-models-for-your-app"></a>Uygulamanız için model oluşturma
 
@@ -40,9 +40,9 @@ Bir sistem veya var olan kod mimarisini görselleştirmek için aşağıdaki diy
 
 |**Diyagramı**|**Gösterir**|
 |-|-|
-|[Bağımlılık Diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Bağımlılık Diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)|Sistemin üst düzey mimarisi|
+|[Bağımlılık diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Bağımlılık diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)|Sistemin üst düzey mimarisi|
 |Kod haritaları<br /><br /> [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Kod haritası çözümleyicilerini kullanarak olası sorunları bulma](../modeling/find-potential-problems-using-code-map-analyzers.md)|Bağımlılıklar ve diğer mevcut koddaki ilişkileri|
-|Kod tarafından oluşturulan sınıf diyagramları<br /><br /> [Sınıf Diyagramları ile Çalışma (Sınıf Tasarımcısı)](../ide/working-with-class-diagrams-class-designer.md)|Türlerini ve ilişkilerini .NET kod|
+|Kod tarafından oluşturulan sınıf diyagramları<br /><br /> [Sınıf Diyagramları ile Çalışma (Sınıf Tasarımcısı)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|Türlerini ve ilişkilerini .NET kod|
 
 ## <a name="related-tasks"></a>İlişkili görevler
 

@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27a9da182a2e4db76db0b5221178dfa6dc371723
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 768824995bcc0c99cc4c6ad400888e056619b6b7
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943004"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561674"
 ---
 # <a name="immediate-window"></a>Komut Penceresi
 **Hemen** penceresi, hata ayıklama ve ifadelerini değerlendirme, deyimleri yürütme, değişken değerlerini yazdırma vb. için kullanılır. Değerlendirilen veya hata ayıklama sırasında geliştirme dili tarafından yürütülen ifadeleri girmenizi sağlar. Görüntülenecek **hemen** penceresinde düzenlemeye yönelik bir proje açın ve ardından **Windows** gelen **hata ayıklama** menü ve select **hemen**, veya CTRL + ALT + ı tuşlarına basın.
@@ -76,7 +76,7 @@ ms.locfileid: "49943004"
 
     **Hemen** penceresi çalıştırılacağı `MyFunction` ve görüntüleme `4`.
 
-İşlev veya alt yordam bir kesme noktası içeriyorsa [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] uygun noktada yürütmeyi keser. Ardından, programınızın durumunu incelemek için hata ayıklayıcı penceresini kullanabilirsiniz. Daha fazla bilgi için [izlenecek yol: tasarım zamanında hata ayıklama](../../debugger/walkthrough-debugging-at-design-time.md).
+İşlev veya alt yordam bir kesme noktası içeriyorsa [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] uygun noktada yürütmeyi keser. Ardından, programınızın durumunu incelemek için hata ayıklayıcı penceresini kullanabilirsiniz. Daha fazla bilgi için [izlenecek yol: Tasarım zamanında hata ayıklama](../../debugger/walkthrough-debugging-at-design-time.md).
 
 Bir yürütme ortamı gerektiren proje türlerinde tasarım zamanı ifade değerlendirmesi kullanamazsınız dahil olmak üzere [!INCLUDE[trprVSTOshort](../../ide/reference/includes/trprvstoshort_md.md)] projeleri, web projeleri, akıllı cihaz projeleri ve SQL projeleri.
 
@@ -128,8 +128,7 @@ Bir yürütme ortamı gerektiren proje türlerinde tasarım zamanı ifade değer
 
 - [Hata Ayıklayıcısı ile Kodlarda gezinme](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Komut Penceresi](../../ide/reference/command-window.md)
-- [Visual Studio’da hata ayıklama](../../debugger/debugging-in-visual-studio.md)
-- [Hata Ayıklayıcısı Temel Bilgileri](../../debugger/getting-started-with-the-debugger.md)
-- [İzlenecek Yol: Tasarım Zamanında Hata Ayıklama](../../debugger/walkthrough-debugging-at-design-time.md)
+- [Hata ayıklayıcıya ilk bakış](../../debugger/debugger-feature-tour.md)   
+- [İzlenecek yol: Tasarım zamanında hata ayıklama](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Visual Studio Komut Diğer Adları](../../ide/reference/visual-studio-command-aliases.md)
 - [Visual Studio'da Normal İfadeler Kullanma](../../ide/using-regular-expressions-in-visual-studio.md)

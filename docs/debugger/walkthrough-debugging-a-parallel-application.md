@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48bcfe8ca54236fc2134d431f5f6dd16d4b82a48
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0623c3e0fdd0db0315e5fe719c9a81ec97e6a2c6
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060193"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562106"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>İzlenecek yol: paralel uygulamada Visual Studio'da hata ayıklama
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>İzlenecek yol: Visual Studio'da paralel bir uygulamada hata ayıklaması
 Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve **Paralel Yığınlar** paralel uygulamada hata ayıklamak için windows. Bu windows anlamanıza ve çalışma zamanı davranışı kullanan kod doğrulama Yardım [görev paralel kitaplığı (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) veya [eşzamanlılık çalışma zamanı](/cpp/parallel/concrt/concurrency-runtime). Bu izlenecek yol, yerleşik kesme noktaları olan örnek kodu sağlıyor. Kodları keser sonra izlenecek yolu nasıl kullanılacağını gösterir. **Paralel Görevler** ve **Paralel Yığınlar** bunu incelemek için windows.  
   
  Bu izlenecek yol bu görevleri öğretir:  
@@ -83,7 +83,7 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
   
     Dört çağrıları olduğunu fark `Debugger.Break` (`DebugBreak` C++ örneğinde) bu nedenle, kesme noktaları eklemek gerekmez; yalnızca uygulamayı çalıştıran neden olur, en fazla dört kez hata ayıklayıcıda ayırmak.  
   
-## <a name="using-the-parallel-stacks-window-threads-view"></a>Kullanarak Paralel Yığınlar penceresi: iş parçacıkları görünümü  
+## <a name="using-the-parallel-stacks-window-threads-view"></a>Paralel Yığınlar penceresini kullanma: İş Parçacıkları Görünümü  
  Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat**. İlk kesme noktasına isabet tamamlanmasını bekleyin.  
   
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>Tek bir iş parçacığı çağrı yığınını görüntülemek için  
@@ -298,7 +298,7 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Hata ayıklayıcı temel bilgileri](../debugger/getting-started-with-the-debugger.md)   
+ [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)  
  [Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)   
  [Paralel Programlama](/dotnet/standard/parallel-programming/index)   
  [Eşzamanlılık Çalışma zamanı](/cpp/parallel/concrt/concurrency-runtime)   

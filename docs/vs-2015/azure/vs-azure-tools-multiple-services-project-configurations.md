@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: f309c2a960d011601a9fdd41e29d767c667de838
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: ab42c241e1d87d2de31c4fde3aba81294be0520a
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003702"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802809"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Visual Studio'da Azure projenizi birden çok hizmet yapılandırması kullanacak şekilde yapılandırma
 
@@ -56,7 +56,7 @@ Bir HTTPS uç noktası zaten eklediyseniz, HTTPS uç noktası seçeneği varsay�
 
 Varsayılan olarak, tanılama Web rolü için etkinleştirilir. Azure bulut hizmeti projesi ve depolama hesabı, yerel depolama öykünücüsü kullanma için ayarlanır. Azure'a dağıtmaya hazır olduğunuzda builder düğmesini seçebilirsiniz (**...** ) Azure depolama yerine kullanılacak. İsteğe bağlı veya otomatik olarak zamanlanan aralıklarda tanılama verilerini depolama hesabına aktarabilir. Azure Tanılama hakkında daha fazla bilgi için bkz: [Azure bulut Hizmetleri ve sanal Makineler'de tanılamayı etkinleştirme](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
-## <a name="settings-page"></a>Ayarları sayfası
+## <a name="settings-page"></a>Ayarlar sayfası
 
 Üzerinde **ayarları** sayfasında, ayarları bir yapılandırma için ad-değer çiftleri olarak ekleyebilirsiniz. Rolünde çalışan kod tarafından sağlanan sınıfları kullanarak çalışma zamanında yapılandırma ayarlarınızı değerlerini okuyabilir [Azure yönetilen kitaplığı](http://go.microsoft.com/fwlink?LinkID=171026), özellikle [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) yöntemi.
 
@@ -77,7 +77,7 @@ Yeni veya var olan bağlantı dizeleri için seçin **...** * sağ tarafındaki 
 1. Seçme **el ile kimlik bilgileri girilen** hesap adını belirtin ve anahtar kullanarak doğrudan Azure portalından bilgi sağlar. Hesap anahtarı kopyalamak için:
     1. Azure portal ve select depolama hesabına gidin **anahtarları Yönet**.
     1. Hesap anahtarı kopyalamak için depolama hesabı seçin Azure Portal'da gidin **ayarlar > erişim anahtarları**, sonra birincil erişim anahtarını panoya kopyalamak için Kopyala düğmesini kullanın.
-1. Bağlantı seçeneklerinden birini seçin. **Özel uç noktalar belirtin** kuyruklar ve BLOB'lar, tablolar için belirli URL'leri belirtin isteyip istemediğinizi sorar. Özel uç noktalar kullanmanıza izin verir [özel etki alanları](/azure/storage/blobs/storage-custom-domain-name.md) ve daha kesin olarak erişimi denetleme. Bkz: [Azure Storage bağlantı dizelerini yapılandırma](/azure/storage/common/storage-configure-connection-string).
+1. Bağlantı seçeneklerinden birini seçin. **Özel uç noktalar belirtin** kuyruklar ve BLOB'lar, tablolar için belirli URL'leri belirtin isteyip istemediğinizi sorar. Özel uç noktalar kullanmanıza izin verir [özel etki alanları](/azure/storage/blobs/storage-custom-domain-name) ve daha kesin olarak erişimi denetleme. Bkz: [Azure Storage bağlantı dizelerini yapılandırma](/azure/storage/common/storage-configure-connection-string).
 1. Seçin **Tamam**, ardından **Dosya > Kaydet** yeni bağlantı dizesiyle yapılandırmasını güncelleştirmek için.
 
 Uygulamanızı Azure'da yayımlarken, Azure depolama hesabı bağlantı dizesi içeren hizmet yapılandırmasını yeniden seçin. Uygulamanızı yayımladıktan sonra uygulamanın Azure storage hizmetlerine karşı beklendiği gibi çalıştığını doğrulayın.
@@ -89,7 +89,7 @@ Hizmet yapılandırması güncelleştirme hakkında daha fazla bilgi için bkz [
 Bir web rolü, 80 numaralı bağlantı noktasında genellikle tek bir HTTP uç noktası vardır. Bir çalışan rolü, diğer taraftan, HTTP, HTTPS veya TCP uç noktaları herhangi bir sayıda olabilir. Uç noktalar dış istemciler için kullanılabilir olan giriş uç noktaları veya hizmet üzerinde çalışan diğer rollerin kullanılabilir iç uç nokta olabilir.
 
 - Dış istemciler ve Web tarayıcıları için bir HTTP uç noktası kullanılabilir olması için giriş uç noktası türü değiştirme ve bir ad ve bir genel bağlantı noktası numarası belirtin.
-- Dış istemciler ve Web tarayıcıları için HTTPS uç noktasının kullanılabilir olması için uç nokta türüne değiştirin **giriş**, bir ad, bir genel bağlantı noktası numarası ve bir yönetim sertifikası adı belirtin. Sertifika üzerinde tanımlamalıdır **sertifikaları** bir yönetim sertifikası belirtebilmeniz için önce özellik sayfası. 
+- Dış istemciler ve Web tarayıcıları için HTTPS uç noktasının kullanılabilir olması için uç nokta türüne değiştirin **giriş**, bir ad, bir genel bağlantı noktası numarası ve bir yönetim sertifikası adı belirtin. Sertifika üzerinde tanımlamalıdır **sertifikaları** bir yönetim sertifikası belirtebilmeniz için önce özellik sayfası.
 - Bir uç nokta diğer rolleri bulut hizmetindeki iç erişimi için kullanılabilir yapmak için uç nokta türü için iç değiştirmek ve bir ad ve bu uç nokta için olası özel bağlantı noktalarını belirtin.
 
 ## <a name="local-storage-page"></a>Yerel depolama sayfası

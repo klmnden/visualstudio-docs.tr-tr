@@ -1,10 +1,8 @@
 ---
-title: NumberOfParentCategoriesToRollUp (Visual Studio şablonları) | Microsoft Docs
-ms.custom: ''
+title: NumberOfParentCategoriesToRollUp öğesi (Visual Studio şablonları)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#NumberOfParentCategoriesToRollUp
 helpviewer_keywords:
@@ -16,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c3eae15aaa4aa7b81148915fc2c59fee723230
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 36c3f8ef1e8016fd1ab46cb61f5e076afdd4190a
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639519"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562288"
 ---
-# <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp (Visual Studio şablonları)
+# <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp öğesi (Visual Studio şablonları)
 Şablonda görüntüler üst kategori sayısını belirtir **yeni proje** iletişim kutusu.  
   
  \<VSTemplate >  
@@ -32,11 +30,11 @@ ms.locfileid: "39639519"
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```xml
 <NumberOfParentCategoriesToRollUp>  
-    1  
+1  
 </NumberOfParentCategoriesToRollUp>  
-```  
+```
   
 ## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler  
  Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.  
@@ -62,9 +60,9 @@ ms.locfileid: "39639519"
  `NumberOfParentCategoriesToRollUp` İsteğe bağlı bir öğedir.  
   
 ## <a name="example"></a>Örnek  
- Bu örnek için meta verileri gösterir. bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows uygulaması. Bu meta veriler ile bir şablon iki klasör düzeyi en üst düzey yerleştirdiyseniz [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] düğümü, şablonu içinde üst düzey düğümünde görünür **yeni proje** iletişim kutusu. Varsa `NumberOfParentCategoriesToRollUp` ayarlanmazsa şablon yalnızca, BT konumlandırıldığını düğümünde görüntülenir.  
+ Bu örnek için meta verileri gösterir. bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows uygulaması. Bu meta veriler ile bir şablon iki klasör düzeyi en üst düzey yerleştirdiyseniz [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] düğümü, şablonu içinde üst düzey düğümünde görünür **yeni proje** iletişim kutusu. Varsa `NumberOfParentCategoriesToRollUp` ayarlanmazsa şablon yalnızca, BT konumlandırıldığını düğümünde görüntülenir.
   
-```  
+```xml
 <VSTemplate Type="Project" Version="3.0.0"  
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
     <TemplateData>  

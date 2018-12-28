@@ -1,5 +1,5 @@
 ---
-title: Beklenen &#39;@&#39; | Microsoft Docs
+title: Beklenen ' @' | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f007129aa8da3ac49112fbc83b7abd31e4356c4f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 191402a9ba265e5acfb15d1931e260f6b366687e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856853"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804558"
 ---
-# <a name="expected-3939"></a>Beklenen &#39;@&#39;
+# <a name="expected-"></a>'@' bekleniyor
 Kullanarak koşullu derleme deyimleri ile kullanılmak üzere bir değişken oluşturmaya çalıştı `@set` deyimi, ancak değil yerleştirin bir at işareti "**@**" önce değişken adı.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  

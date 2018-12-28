@@ -1,6 +1,6 @@
 ---
-title: 'Nasıl yapılır: kodu bir görselde VBA kullanımına sunma C# proje'
-ms.custom: ''
+title: 'Nasıl Yapılır: İçinde VBA kodu ortaya bir C# proje'
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -13,22 +13,22 @@ helpviewer_keywords:
 - VBA [Office development in Visual Studio], exposing code in document-level customizations
 - document-level customizations [Office development in Visual Studio], exposing code
 - exposing code to VBA
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f00f668c3eac9a39251d0a4e19f98ed597c373db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1f0b3f004f6aebed6426238a081369c7d50e15f5
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873493"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648515"
 ---
-# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Nasıl yapılır: kodu bir görselde VBA kullanımına sunma C# proje
+# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Nasıl Yapılır: Bir görselde VBA kodu ortaya C# proje
   Bir görseldeki kodunu getirebilir C# iki birbiriyle etkileşim kurmak için kod istiyorsanız, Visual Basic Applications (VBA) kodu için proje.  
   
- Görsel C# işlem Visual Basic işleminden farklıdır. Daha fazla bilgi için [nasıl yapılır: Visual Basic projesinde kodu VBA kullanımına sunma](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md).  
+ Görsel C# işlem Visual Basic işleminden farklıdır. Daha fazla bilgi için [nasıl yapılır: Visual Basic projesinde kodu VBA ortaya](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
@@ -108,6 +108,6 @@ ms.locfileid: "49873493"
  [Office çözümleri oluşturma ve tasarlama](../vsto/designing-and-creating-office-solutions.md)   
  [VBA ve belge düzeyi özelleştirmelerini birleştirme](../vsto/combining-vba-and-document-level-customizations.md)   
  [İzlenecek yol: Visual c VBA'dan Kod Çağırma&#35; proje](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
- [Nasıl yapılır: Visual Basic projesinde kodu VBA kullanımına sunma](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
+ [Nasıl yapılır: Visual Basic projesinde kodu VBA kullanıma sunma](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
   
   

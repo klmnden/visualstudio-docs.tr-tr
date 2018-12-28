@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 221200938db7f0501081d0d1d4152292634e6bfa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d4c2468c7cfa074a63151eef262ee57ca552eb07
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055795"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802559"
 ---
-# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Nasıl yapılır: geçirme ve Azure bulut hizmetinde Visual Studio'dan bir Web uygulaması yayımlama
+# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Nasıl Yapılır: Visual Studio'dan Azure Bulut Hizmetine Bir Web Uygulaması Geçirme ve Yayımlama
 
 Barındırma hizmetlerinin avantajlarından ve Azure ölçekleme yeteneğini yararlanmak için geçirme ve web uygulamanızı bir Azure bulut hizmeti dağıtmak isteyebilirsiniz. Sadece küçük değişiklikler gereklidir. Bu makalede, yalnızca bulut hizmetlerini dağıtma ele alınmıştır; App Service için bkz: [Azure App Service'te bir web uygulaması dağıtma](/azure/app-service/app-service-deploy-local-git).
 
@@ -38,7 +38,7 @@ Barındırma hizmetlerinin avantajlarından ve Azure ölçekleme yeteneğini yar
 
 Herhangi bir uyarı veya hatalar gibi eksik derlemeleri Azure'a dağıtmadan önce düzeltmek için sorunları gösterir.
 
-Uygulamanızı çalıştırın ve işlem öykünücüsü kullanarak yerel olarak veya Azure'a yayımlama varsa aşağıdaki hatayı görebilirsiniz: "Belirtilen yol, dosya adı veya her ikisi çok uzun." Bu hata, tam Azure proje adının uzunluğu 146 karakterden uzun olduğunu gösterir. Bu sorunu çözmek için çözümünüz daha kısa bir yol ile farklı bir klasöre taşıyın.
+Uygulamanızı, bu işlem öykünücüsü kullanarak yerel olarak çalıştırmak veya Azure'da yayımlama, aşağıdaki hatayı görebilirsiniz: "Belirtilen yol, dosya adı veya her ikisi çok uzun." Bu hata, tam Azure proje adının uzunluğu 146 karakterden uzun olduğunu gösterir. Bu sorunu çözmek için çözümünüz daha kısa bir yol ile farklı bir klasöre taşıyın.
 
 Tüm uyarıları hata olarak değerlendir hakkında daha fazla bilgi için bkz. [Visual Studio ile bir Azure bulut hizmeti projesi yapılandırma](vs-azure-tools-configuring-an-azure-project.md).
 
@@ -92,13 +92,17 @@ Aşağıdaki tabloda, Azure'da uygulama başlatma hakkında ayrıntılar verilmi
 1. Bir bağlantı dizesini belirtin `web.config` dosya şu biçimde ve dosyayı kaydedin:
 
     ```xml
-    <addname="tempdbEntities"connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=<server name>\SQLEXPRESS;initial catalog=<database name>;integrated security=True;multipleactiveresultsets=True;App=EntityFramework&quot;"providerName="System.Data.EntityClient"/>
+    <add name="tempdbEntities"
+     connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=<server name>\SQLEXPRESS;initial catalog=<database name>;integrated security=True;multipleactiveresultsets=True;App=EntityFramework&quot;"
+     providerName="System.Data.EntityClient"/>
     ```
 
     Güncelleştirme *connectionString* SQL Azure veritabanınızın ADO.NET bağlantı dizesi şu şekilde değeri:
 
     ```xml
-    XMLCopy<addname="tempdbEntities"connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;Server=tcp:<SQL Azure server name>.database.windows.net,1433;Database=<database name>;User ID=<user name>;Password=<password>;Trusted_Connection=False;Encrypt=True;multipleactiveresultsets=True;App=EntityFramework&quot;"providerName="System.Data.EntityClient"/>
+    <add name="tempdbEntities"
+     connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;Server=tcp:<SQL Azure server name>.database.windows.net,1433;Database=<database name>;User ID=<user name>;Password=<password>;Trusted_Connection=False;Encrypt=True;multipleactiveresultsets=True;App=EntityFramework&quot;"
+     providerName="System.Data.EntityClient"/>
     ```
 
 ## <a name="supported-project-templates"></a>Desteklenen proje şablonları

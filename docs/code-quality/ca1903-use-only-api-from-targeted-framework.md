@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1d42a74cfaf93ba0e8e5aec7e15c522d2e26b7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ace24746aafa70c73bc87c55c197913136f1a7b1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822819"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738878"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Yalnızca hedeflenen çerçeveden API kullanın
 
@@ -48,7 +48,7 @@ ms.locfileid: "49822819"
 |.NET Framework 3.5|.NET Framework 3.5 SP1 |
 |.NET Framework 4|Yok|
 
- Bir projenin hedef Framework'ü değiştirmek için bkz: [belirli bir .NET Framework sürümünü hedefleme](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Bir projenin hedef Framework'ü değiştirmek için bkz: [belirli bir .NET Framework sürümünü hedefleme](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
  Hizmet paketi bağımlılığı kaldırmak için yeni üyenin veya türün tüm kullanımları kaldırın. Bu kasıtlı bir bağımlılık ise, uyarı veya bu kuralını devreden çıkar.
@@ -69,4 +69,4 @@ ms.locfileid: "49822819"
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Taşınabilirlik Uyarıları](../code-quality/portability-warnings.md)
-- [Belirli Bir .NET Framework Sürümünü Hedefleme](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Belirli Bir .NET Framework Sürümünü Hedefleme](../ide/visual-studio-multi-targeting-overview.md)

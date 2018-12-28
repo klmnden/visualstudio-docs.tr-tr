@@ -1,5 +1,5 @@
 ---
-title: 'İş Akışı Tasarımcısı - nasıl yapılır: etkinlikler araç kutusuna ekleme'
+title: 'İş Akışı Tasarımcısı - nasıl yapılır: Araç Kutusuna Etkinlik Ekleme'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -10,56 +10,56 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a009f36152163e3ac23b85deac4ea99f26092be9
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1d542d55593ca492b624b1939c71bb389ac42ad3
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118219"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684567"
 ---
-# <a name="how-to-add-activities-to-the-toolbox"></a>Nasıl yapılır: etkinlikler araç kutusuna ekleme
+# <a name="how-to-add-activities-to-the-toolbox"></a>Nasıl Yapılır: Araç Kutusuna Etkinlik Ekleme
 
-Etkinlikler eklenebilir **araç** birkaç farklı şekilde, çözümünüzdeki. Bunlardan içinde geçerli projenize ekleme, farklı bir projedeki başvuru veya farklı bir derleme başvurusu.
+Etkinlikleri eklenebilir **araç kutusu** çözümünüzdeki birkaç farklı yolla. Bunları içinde geçerli projenize ekleyin, bunları farklı bir proje başvurusu veya bunları farklı bir derlemeden başvurulacak.
 
-## <a name="to-add-an-activity-from-within-your-current-project"></a>Bir aktiviteyi geçerli projenize içinden eklemek için
+## <a name="to-add-an-activity-from-within-your-current-project"></a>Geçerli projeyi içinde etkinliği eklemek için
 
-1.  Yeni bir özel Etkinlik geçerli iş akışı projenize ekleyin. Projeniz için yeni bir özel etkinlik ekleme hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir iş akışı projesine yeni öğe eklemek](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
+1.  Yeni bir özel etkinlik, geçerli iş akışı projenize ekleyin. Projenize yeni bir özel etkinlik ekleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: Bir iş akışı projesine yeni öğe ekleme](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
 
-2.  Özel mantık, etkinliği ekleyin.
+2.  Özel mantığı etkinlik ekleyin.
 
-3.  Projeyi oluşturun. Yapı başarılı olursa yeni bir kategori **araç** adlı "\<*proje adı*>" Bu kategoride yer alan özel etkinlik birlikte görüntülenir.
-
-    > [!NOTE]
-    > Araç kutusu sıfırlarsanız, çözümü yeniden oluşturulmuş olsa bile özel etkinlikler kaldırılır. Özel etkinlikler araç kutusu sıfırlandı sonra yeniden için Visual Studio'yu yeniden başlatın.
+3.  Projeyi oluşturun. Derleme başarılı olursa yeni bir kategoride **araç kutusu** adlı "\<*proje adı*>", kategorisindeki özel etkinlik ile görüntülenir.
 
     > [!NOTE]
-    > Araç kutusu yalnızca belirli bir ada bir etkinliğin gösterebilir. İki etkinlik farklı derlemelerden aynı sınıf adı varsa, yalnızca biri görüntülenir.
+    > Araç kutusu sıfırlarsanız, çözümü yeniden oluşturulmuş olsa bile özel etkinlikler kaldırılacak. Özel etkinlikler araç kutusu sıfırlandı sonra yeniden doldurmak için Visual Studio'yu yeniden başlatın.
 
     > [!NOTE]
-    > Uygulama etki alanı Düzenleyicisi örnekler arasında paylaşılan; statik değişkenler kullandıysanız, de Düzenleyicisi örnekler arasında paylaşılır. Bu, istenen davranışı değilse, bir hizmet değişken örneklerini izlemek için kullanılmalıdır. Bkz: [ModelItem düzenleme bağlamı kullanarak](/dotnet/framework/windows-workflow-foundation/using-the-modelitem-editing-context) Tasarımcısı'nda Hizmetleri kullanma hakkında bilgi için.
+    > Araç yalnızca belirli bir ada bir etkinlik gösterebilirsiniz. İki etkinliği farklı derlemelerden aynı sınıf adı varsa, yalnızca biri görüntülenir.
 
-## <a name="to-add-an-activity-from-within-a-different-project"></a>Farklı bir projede etkinliği eklemek için
+    > [!NOTE]
+    > Uygulama etki alanı Düzenleyicisi örnekleri arasında paylaşılan; statik değişken kullanılması durumunda da Düzenleyicisi örnekleri arasında paylaşılır. Bu, istenen davranışı değilse, bir hizmet değişken örneklerini izlemek için kullanılmalıdır. Bkz: [ModelItem düzenleme bağlamını kullanarak](/dotnet/framework/windows-workflow-foundation/using-the-modelitem-editing-context) tasarımcısı içindeki Hizmetleri kullanımı hakkında bilgi.
 
-1.  En az bir iş akışı projesinde ve bir özel etkinlik kitaplığı projesi veya özel bir aktivite tanımlar başka bir iş akışı projesinde içeren bir çözüm açın.
+## <a name="to-add-an-activity-from-within-a-different-project"></a>Etkinliği içinde farklı bir projeye eklemek için
 
-2.  Her iki proje oluşturun. Derlemeleri başarılıysa, yeni bir kategori **araç** adlı "\<*proje adı*>" Bu kategoride yer alan özel etkinlik birlikte görüntülenir.
+1.  En az bir iş akışı projesi ve özel etkinlik kitaplığı projesi veya özel bir etkinlik tanımlayan başka bir iş akışı projesi içeren bir çözüm açın.
 
-## <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>Bir derlemeye ait Araç Kutusu'na etkinlik eklemek için
+2.  Her iki proje oluşturun. Yapılar başarılı olursa yeni bir kategoride **araç kutusu** adlı "\<*proje adı*>" Bu kategorisindeki özel etkinlik ile görüntülenir.
+
+## <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>Bir derlemeye ait Araç Kutusu'na bir etkinlik eklemek için
 
 1.  Bir iş akışı çözümü açın.
 
-2.  Gelen **Araçları** menüsünde, select **araç kutusu öğelerini Seç**.
+2.  Gelen **Araçları** menüsünde **araç kutusu öğelerini Seç**.
 
-3.  İçinde **araç kutusu öğelerini Seç** iletişim kutusunda **System.Activities bileşenleri** sekmesinde ardından tıklatın **Gözat** özel içeren derlemeye gitmek için eklemek istediğiniz etkinliği.
+3.  İçinde **araç kutusu öğelerini Seç** iletişim kutusunda **System.Activities bileşenleri** sekmesinde'e tıklayın **Gözat** özel içeren derlemeye gidin eklemek istediğiniz etkinliği.
 
-4.  Derleme seçin ve tıklatın **Tamam**. Özel Etkinlik bileşeni bileşenleri listesine eklenir ve otomatik olarak seçilir.
+4.  Derlemeyi seçin ve tıklayın **Tamam**. Özel Etkinlik bileşen bileşenleri listesine eklenir ve otomatik olarak seçilir.
 
-    1.  Tıklatın **Tamam** iletişim kutusunu kapatmak için.
+    1.  Tıklayın **Tamam** iletişim kutusunu kapatmak için.
 
-5.  Araç kutusunu görüntülemek için seçin **araç** gelen **Görünüm** menüsü.
+5.  Araç kutusu görüntülemek için seçin **araç kutusu** gelen **görünümü** menüsü.
 
-6.  Özel Etkinlik görünür **araç** öğe eklenmeden önce odakta kategorisi altında. Örneğin, varsa **genel** kategori seçilmedi **araç** araç kutusu öğesi eklemeden önce etkinlik altında görünür **genel** kategorisi.
+6.  Özel Etkinlik görünür **araç kutusu** odaktaki öğeyi eklenmeden önce olan kategorisi altında. Örneğin, varsa **genel** kategori seçilmedi **araç kutusu** görünür altında etkinlik araç kutusu öğesi eklemeden önce **genel** kategorisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [İş Akışı Tasarımcısını Kullanma](../workflow-designer/using-the-workflow-designer.md)
+- [İş Akışı Tasarımcısını Kullanma](developing-applications-with-the-workflow-designer.md)

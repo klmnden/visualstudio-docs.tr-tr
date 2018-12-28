@@ -1,5 +1,5 @@
 ---
-title: Beklenen &#39;-&#39; | Microsoft Docs
+title: Beklenen '-' | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 141d7239ebbd32ceff9be45a8b4be97afd8887b0
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d1c0891065569a1f43777f87692568af26323924
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283281"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804766"
 ---
-# <a name="expected-39-39"></a>Beklenen &#39;-&#39;
+# <a name="expected--"></a>Beklenen '-'
 Bir normal ifade sabit değeri oluşturulmaya çalışıldı, ancak bir eğik çizgi (/) sağlamadı. Dize değişmez değerleri yalnızca bir çift tırnak içindeki karakterleri olarak yazılır gibi normal ifade sabit değerleri içinde bir çift eğik çizgi (/) karakterleri karakter olarak ifade edilir.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  

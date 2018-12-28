@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc8066148b2c8612b3a07922e15422022b8c9c4d
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: c041ebd5b9bc692fea376582c9451024bf3ce9e4
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967512"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685025"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Senaryo: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme
 
@@ -55,7 +55,7 @@ Bu araçlar ve destekledikleri senaryolar hakkında daha fazla bilgi için bkz:
 
 ## <a name="scenario-overview"></a>Senaryoya genel bakış
 
-Bu senaryo, iki hayali şirketin yazılım geliştirme proje süreçlerinden açıklar: Şimdi Akşam Yemeği ve Lucerne Publishing. Şimdi Akşam Yemeği Seattle'da Web tabanlı bir yiyecek teslim hizmet sağlar. Müşteriler, yemek siparişi ve Şimdi Akşam Yemeği Web sitesinde bunlar için ödeme yaparsınız. Siparişler, ardından teslimi için üzere uygun yerel restoranlara gönderilir. Lucerne Publishing, New York, şirketinizin Web üzerinde ve dışında birçok müessese çalıştırır. Örneğin, müşterilerin restoran görüşlerini gönderebileceği bir Web sitesi çalıştırın.
+Bu senaryo, iki hayali şirketin yazılım geliştirme proje süreçlerinden açıklanmaktadır: Şimdi Akşam Yemeği ve Lucerne yayımlama. Şimdi Akşam Yemeği Seattle'da Web tabanlı bir yiyecek teslim hizmet sağlar. Müşteriler, yemek siparişi ve Şimdi Akşam Yemeği Web sitesinde bunlar için ödeme yaparsınız. Siparişler, ardından teslimi için üzere uygun yerel restoranlara gönderilir. Lucerne Publishing, New York, şirketinizin Web üzerinde ve dışında birçok müessese çalıştırır. Örneğin, müşterilerin restoran görüşlerini gönderebileceği bir Web sitesi çalıştırın.
 
 Lucerne, kısa süre önce Dinner Now girişimini satın ve aşağıdaki değişiklikleri yapmak istiyor:
 
@@ -97,7 +97,7 @@ Bkz.
 
 - [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)
 
-- [Nasıl Yapılır: Projelere Sınıf Diyagramları Ekleme (Sınıf Tasarımcısı)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
+- [Nasıl yapılır: (Sınıf Tasarımcısı) projelere sınıf diyagramları ekleme](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 - [Visual Studio için Modelleme SDK'sı - Etki Alanına Özgü Diller](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
@@ -107,7 +107,7 @@ Her iki ekip de geliştirme aşamasındaki kodun tasarım ile tutarlı kalmasın
 
 - [Kodun tasarımla tutarlılığını koruma](#ValidatingCode)
 
-- [Mantıksal mimarisi açıklanmıştır: bağımlılık diyagramları](#DescribeLayers)
+- [Mantıksal mimarisi açıklanmıştır: Bağımlılık diyagramları](#DescribeLayers)
 
 - [Bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)
 
@@ -147,7 +147,7 @@ Ekipler yaptıkları değişiklikleri kaydetmeden önce bağımlılık doğrulam
 |**Harita veya diyagram**|**Gösterir**|
 |-|-|
 |*Kod Haritası*<br /><br /> Bkz.<br /><br /> - [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)<br />- [Gözat ve kod haritaları bunları yeniden düzenleme](../modeling/browse-and-rearrange-code-maps.md)<br />- [DGML dosyalarını düzenleyerek kod haritalarını özelleştirme](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Bağımlılıklar ve diğer koddaki ilişkileri.<br /><br /> Örneğin, Şimdi Akşam Yemeği derlemeler ve bağımlılıklarına bir genel bakış için derleme kod haritaları gözden geçirilmesiyle başlayabilir. Ad alanlarını ve sınıfları bu derlemelerde bulunan keşfetmek için haritalarını halinde inebilir.<br /><br /> Şimdi Akşam Yemeği aynı zamanda belirli alanları ve diğer tür kod içindeki ilişkileri keşfetmek için maps oluşturabilirsiniz. Bunlar, bulmak ve onları ilgilendiren ilişkileri ve alanları seçmek için Çözüm Gezgini'ni kullanın.|
-|*Kod tabanlı sınıf diyagramı*<br /><br /> Bkz: [nasıl yapılır: sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Kod üzerinde varolan sınıflar|
+|*Kod tabanlı sınıf diyagramı*<br /><br /> Bkz: [nasıl yapılır: Sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|Kod üzerinde varolan sınıflar|
 
  Örneğin, geliştirici bir kod Haritası oluşturur. Filiz kapsamını yeni senaryodan etkilenecek alanlara odaklanmak için ayarlar. Bu alanlar seçilir ve harita üzerinde vurgulanır:
 
@@ -167,14 +167,14 @@ Ekipler yaptıkları değişiklikleri kaydetmeden önce bağımlılık doğrulam
 
 |**Diyagramları**|**Açıklar**|
 |-|-|
-|*Kod tabanlı sınıf diyagramı*<br /><br /> Bkz: [nasıl yapılır: sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Kod üzerinde varolan sınıflar.|
+|*Kod tabanlı sınıf diyagramı*<br /><br /> Bkz: [nasıl yapılır: Sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|Kod üzerinde varolan sınıflar.|
 
 ### <a name="ValidatingCode"></a> Kodun tasarımla tutarlılığını korumak
  Şimdi Akşam Yemeği güncelleştirilen kodun tasarım ile tutarlı kalmasını sağlayın. Bunlar sistemde işlevselliğe ilişkin katmanları açıklamak, bu katmanlara bunları ve ilişkilendirme çözüm yapılarına izin verilen bağımlılıkları belirtin bağımlılık diyagramları oluşturur.
 
 |**Diyagramı**|**Açıklar**|
 |-|-|
-|*Bağımlılık diyagramı*<br /><br /> Bkz.<br /><br /> - [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Bağımlılık diyagramları: başvuru](../modeling/layer-diagrams-reference.md)<br />- [Bağımlılık diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md)<br />- [Bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)|Kodun mantıksal mimarisi.<br /><br /> Bir bağımlılık diyagram düzenler ve yapıtlar bir Visual Studio çözümünde adı verilen soyut gruplarla eşleştirir *katmanları*. Bu katmanlar, roller, görevlerin veya bu yapıların sistemde gerçekleştirdiği işlevleri tanımlayın.<br /><br /> Katman diyagramları, sistemin amaçlanan tasarımını açıklayan ve tasarımda gelişen kodu doğrulamak için kullanışlıdır.<br /><br /> Katmanlar oluşturmak için Çözüm Gezgini, kod Haritaları, sınıf görünümü ve Nesne Tarayıcısı'ndan öğeleri sürükleyin. Yeni Katmanlar çizmek için araç kutusunu kullanın veya diyagram yüzeyine sağ tıklayın.<br /><br /> Varolan bağımlılıkları görüntülemek için katman diyagramı yüzeyine sağ tıklayın ve ardından **Bağımlılıklar Oluştur**. Hedeflenen bağımlılıklarını belirtmek için yeni bağımlıklar çizin.|
+|*Bağımlılık diyagramı*<br /><br /> Bkz.<br /><br /> - [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Bağımlılık diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)<br />- [Bağımlılık diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)<br />- [Bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)|Kodun mantıksal mimarisi.<br /><br /> Bir bağımlılık diyagram düzenler ve yapıtlar bir Visual Studio çözümünde adı verilen soyut gruplarla eşleştirir *katmanları*. Bu katmanlar, roller, görevlerin veya bu yapıların sistemde gerçekleştirdiği işlevleri tanımlayın.<br /><br /> Katman diyagramları, sistemin amaçlanan tasarımını açıklayan ve tasarımda gelişen kodu doğrulamak için kullanışlıdır.<br /><br /> Katmanlar oluşturmak için Çözüm Gezgini, kod Haritaları, sınıf görünümü ve Nesne Tarayıcısı'ndan öğeleri sürükleyin. Yeni Katmanlar çizmek için araç kutusunu kullanın veya diyagram yüzeyine sağ tıklayın.<br /><br /> Varolan bağımlılıkları görüntülemek için katman diyagramı yüzeyine sağ tıklayın ve ardından **Bağımlılıklar Oluştur**. Hedeflenen bağımlılıklarını belirtmek için yeni bağımlıklar çizin.|
 
  Örneğin, aşağıdaki bağımlılık diyagramı katmanlar ve her bir katman ile ilişkili yapıların sayısı arasındaki bağımlılıkları tanımlar:
 
@@ -252,9 +252,9 @@ Lucerne ve Dinner Now ödeme sistemleri bütünleştirilmelidir. Aşağıdaki b�
 
 - [Varolan kodu görselleştirin: Kod haritaları](#VisualizeCode)
 
-- [Bir türler sözlüğü tanımlayın: sınıf diyagramları](#DefineClasses)
+- [Bir türler sözlüğü tanımlayın: Sınıf diyagramları](#DefineClasses)
 
-- [Mantıksal mimarisi açıklanmıştır: bağımlılık diyagramları](#DescribeLayers)
+- [Mantıksal mimarisi açıklanmıştır: Bağımlılık diyagramları](#DescribeLayers)
 
 Bkz.
 
@@ -318,7 +318,7 @@ Bu harita, PaymentApprover sınıfının artık DinnerNow.Business ad alanında 
 
      Örneğin, kod üzerinde katman oluşturmayı görselleştirmek için bir ağaç düzeni seçin. Bkz: [göz atma ve yeniden düzenleme kod eşlemeleri](../modeling/browse-and-rearrange-code-maps.md).
 
-#### <a name="summary-strengths-of-code-maps"></a>Özeti: Kod haritaları gücü
+#### <a name="summary-strengths-of-code-maps"></a>Özet: Kod haritaları gücü
  Kod haritaları yardımcı:
 
 - Mevcut koddaki ilişkileri ve kuruluş hakkında bilgi edinin.
@@ -331,10 +331,10 @@ Bu harita, PaymentApprover sınıfının artık DinnerNow.Business ad alanında 
 
 |**Diyagramı**|**Açıklar**|
 |-|-|
-|Bağımlılık diyagramı|Sistemin mantıksal mimarisi. Bağımlılık doğrulama kodu tasarım ile tutarlı kalmasını sağlamak için kullanın.<br /><br /> Mevcut dependencys veya hedeflenen dependencys tanımlamanıza yardımcı olması için bir kod Haritası oluşturun ve ilişkili öğeleri gruplayın. Bir bağımlılık diyagramı oluşturmak için bkz:<br /><br /> - [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Bağımlılık diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md)|
-|Sınıf diyagramı (kod tabanlı)|Belirli bir proje için kod üzerinde varolan sınıflar.<br /><br /> Görselleştirme ve kod içinde varolan bir sınıf değiştirmek için Sınıf Tasarımcısı'nı kullanın.<br /><br /> Bkz: [nasıl yapılır: sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|
+|Bağımlılık diyagramı|Sistemin mantıksal mimarisi. Bağımlılık doğrulama kodu tasarım ile tutarlı kalmasını sağlamak için kullanın.<br /><br /> Mevcut dependencys veya hedeflenen dependencys tanımlamanıza yardımcı olması için bir kod Haritası oluşturun ve ilişkili öğeleri gruplayın. Bir bağımlılık diyagramı oluşturmak için bkz:<br /><br /> - [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Bağımlılık diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)|
+|Sınıf diyagramı (kod tabanlı)|Belirli bir proje için kod üzerinde varolan sınıflar.<br /><br /> Görselleştirme ve kod içinde varolan bir sınıf değiştirmek için Sınıf Tasarımcısı'nı kullanın.<br /><br /> Bkz: [nasıl yapılır: Sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|
 
-### <a name="DefineClasses"></a> Bir türler sözlüğü tanımlayın: sınıf diyagramları
+### <a name="DefineClasses"></a> Bir türler sözlüğü tanımlayın: Sınıf diyagramları
  Sınıf diyagramları, varlıkları, koşulları veya sistem ve birbirleriyle olan ilişkilerine katılmak kavramları tanımlayın. Örneğin, öznitelikler ve işlemler için dil veya stil uygulamalarına bakılmaksızın, her sınıf tanımlamak için geliştirme sırasında bu diyagramları kullanabilirsiniz.
 
  İşlem Ödemesi kullanım örneğine katılan varlıkları tanımlamak ve Lucerne yardımcı olmak için bunlar aşağıdaki sınıf diyagramı çizmek:
@@ -385,7 +385,7 @@ Bir sınıf diyagramı aşağıdaki önemli özelliklere sahiptir:
 
 Keşfedin ve var olan sınıfları tartışmak için başlangıç noktası olarak, koddan sınıf diyagramları oluşturmak için Sınıf Tasarımcısı'nı kullanabilirsiniz.
 
-- [Nasıl Yapılır: Projelere Sınıf Diyagramları Ekleme (Sınıf Tasarımcısı)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
+- [Nasıl yapılır: (Sınıf Tasarımcısı) projelere sınıf diyagramları ekleme](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 #### <a name="summary-strengths-of-class-diagrams"></a>Özet: Sınıf Şemalarının Gücü
  Sınıf diyagramları, tanımlamanıza yardımcı olur:
@@ -400,7 +400,7 @@ Keşfedin ve var olan sınıfları tartışmak için başlangıç noktası olara
 
 |**Diyagramı**|**Açıklama**|
 |-|-|
-|Bağımlılık diyagramı|Sınıflarla bağlantılı olarak sistemin mantıksal mimarisini tanımlayın.<br /><br /> Bağımlılık doğrulama kodu tasarım ile tutarlı kalmasını sağlamak için kullanın.<br /><br /> Bkz.<br /><br /> - [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Bağımlılık diyagramları: başvuru](../modeling/layer-diagrams-reference.md)<br />- [Bağımlılık diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md)<br />- [Bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)|
+|Bağımlılık diyagramı|Sınıflarla bağlantılı olarak sistemin mantıksal mimarisini tanımlayın.<br /><br /> Bağımlılık doğrulama kodu tasarım ile tutarlı kalmasını sağlamak için kullanın.<br /><br /> Bkz.<br /><br /> - [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Bağımlılık diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)<br />- [Bağımlılık diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)<br />- [Bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)|
 |Kod Haritası|Kuruluş ve mevcut koddaki ilişkileri görselleştirin.<br /><br /> Sınıfları, ilişkilerini ve yöntemlerini tanımlamak için bu öğeleri gösteren bir kod Haritası oluşturun.<br /><br /> Bkz.<br /><br /> - [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)|
 
 ### <a name="DescribeLayers"></a> Mantıksal mimarisi açıklanmıştır: bağımlılık diyagramları
@@ -456,9 +456,9 @@ Bkz.
 
 - [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)
 
-- [Bağımlılık Diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)
+- [Bağımlılık diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)
 
-- [Bağımlılık Diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)
+- [Bağımlılık diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)
 
 - [Bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)
 

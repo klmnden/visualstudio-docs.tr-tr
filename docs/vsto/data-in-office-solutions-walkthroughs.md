@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - data [Office development in Visual Studio], walkthroughs
 - walkthroughs [Office development in Visual Studio], data
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 35dbc38bf4e0873e9f3fb0fc1bf5c0525e56a61e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b56e17ca04d4c712058e20bd4f644b80e47cd2f7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677238"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647316"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Office çözümlerindeki verilerde izlenecek yol
   Aşağıdaki izlenecek yollar, Microsoft Office Word ve Microsoft Office Excel için belge düzeyi özelleştirmeleri ve VSTO eklentileri verilerle çalışmak nasıl ekleyebileceğiniz gösterilmektedir.  
@@ -45,20 +45,20 @@ ms.locfileid: "35677238"
  [İzlenecek yol: Word eylemler bölmesindeki denetimlere veri bağlama](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)  
  Eylemler bölmesindeki denetimlere veri bağlama işlemi gösterilmektedir. Bir SQL Server veritabanındaki tablolar arasında bir ana/ayrıntı ilişkisi denetimleri gösterir.  
   
- [İzlenecek yol: içerik denetimlerini özel XML bölümlerine bağlama](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
+ [İzlenecek yol: İçerik denetimlerini özel XML bölümlerine bağlama](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
  İçerik denetimleri bir Word belgesinde belge içinde depolanan XML verileri nasıl bağlanacağını gösterir.  
   
 ## <a name="cache-data-in-document-level-solutions"></a>Belge düzeyi çözümlerde veriyi önbelleğe alma  
- [İzlenecek yol: önbellekteki veri kümesini kullanarak bir ana ayrıntı ilişkisi oluşturma](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
+ [İzlenecek yol: Önbellekteki veri kümesini kullanarak bir ana ayrıntı ilişkisi oluşturma](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
  Bir çalışma sayfasına bir ana/ayrıntı ilişkisi oluşturma ve verileri önbelleğe alınması çözüm çevrimdışı kullanılabilir gösterilmektedir.  
   
- [İzlenecek yol: sunucudaki çalışma kitabına veri ekleme](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)  
+ [İzlenecek yol: Bir sunucudaki çalışma kitabına veri ekleme](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)  
  Bir Microsoft Office Excel çalışma kitabını Excel başlatmadan önbelleğe alınan bir veri kümesine veri ekleme işlemi gösterilmektedir.  
   
- [İzlenecek yol: bir çalışma kitabından bir sunucuda önbelleğe alınmış verileri alma](../vsto/walkthrough-retrieving-cached-data-from-a-workbook-on-a-server.md)  
+ [İzlenecek yol: Bir çalışma kitabından bir sunucuda önbelleğe alınmış verileri alma](../vsto/walkthrough-retrieving-cached-data-from-a-workbook-on-a-server.md)  
  Bir Microsoft Office Excel çalışma kitabını Excel başlatmadan önbelleğe alınan bir veri kümesinden veri almayı gösterir.  
   
- [İzlenecek yol: sunucudaki çalışma kitabında önbelleğe alınmış verileri değiştirme](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)  
+ [İzlenecek yol: Çalışma kitabında bir sunucuda önbelleğe alınmış verileri değiştirme](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)  
  Bir Microsoft Office Excel çalışma kitabını Excel başlatmadan önbelleğe alınan bir veri kümesinin nasıl değiştirileceği gösterilmektedir.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  

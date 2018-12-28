@@ -3,18 +3,18 @@ title: LinkedIn Learning avantaj olarak Visual Studio abonelikleri | Microsoft D
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Seçili Visual Studio abonelikleri dahil bir LinkedIn Premium aboneliği bir parçası olarak dahil LinkedIn Learning Avantajı hakkında bilgi edinin.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 8424e42923474284e45abba62bd13a0038263d90
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fa98ce41f0b88bd679568247eea57aa3e62318d3
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942250"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739542"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>LinkedIn Learning avantaj olarak Visual Studio abonelikleri
 
@@ -25,7 +25,7 @@ LinkedIn Learning Avantajı'nızı yararlanmak için LinkedIn hesabınız olmas�
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
 LinkedIn Premium aboneliğiniz ve LinkedIn Learning avantajı etkinleştirmek için:
-1. Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) adresinde oturum açın.
 
 2. Eğitim kategorisinde LinkedIn Learning kutucuğu bulun ve tıklatın **alma kodu** bağlantı.
    > [!div class="mx-imgBorder"]
@@ -95,22 +95,25 @@ LinkedIn Premium aboneliğiniz ve LinkedIn Learning avantajı etkinleştirmek i�
 
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standart, yıllık bulut)   | VL, Azure, perakende, seçili NFR<sup>1</sup> | 6 ay       |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir          |
-| Visual Studio Professional (standart, yıllık bulut) | VL, Azure, perakende                                       | 3 ay                                                            |Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir         |
+| Visual Studio Enterprise (standart)   | VL, Azure, perakende, seçili NFR<sup>1</sup> | 6 ay       |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir          |
+| Visual Studio Professional (standart) | VL, Azure, perakende                                       | 3 ay                                                            |Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir         |
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | 3 ay                                             |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir         |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | 3 ay                                              | Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir         |
 | Visual Studio Dev Essentials | Yok  | 3 ay |Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
-<sup>1</sup>*içerir: Not for Resale (NFR), Visual Studio Endüstri ortağı (VSIP).  Dışlar: Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Imagine, Microsoft değerli Professional (MVP), bölge Yöneticisi (RD).  MCT yazılım ve Hizmetleri.*
+<sup>1</sup>*içerir:    Yeniden Satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP).  Dışlar:  Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Microsoft değerli Professional (MVP), bölge Yöneticisi (RD) düşünün.  MCT yazılım ve Hizmetleri.*
 
+
+> [!NOTE]
+> Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.
 
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 ### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>S: Aboneliğimi yenileyebilirim, LinkedIn Learning Teklifimi ayrıca yenileme mu?
-C: Hayır, LinkedIn Learning teklif, yalnızca yeni abonelere sunulmamaktadır.
+Y:  Hayır, LinkedIn Learning teklif, yalnızca yeni abonelere sunulmamaktadır.
 
 ## <a name="support-resources"></a>Destek kaynakları
 -  LinkedIn Learning yardıma mı ihtiyacınız var?  Bu kaynaklara göz atın:

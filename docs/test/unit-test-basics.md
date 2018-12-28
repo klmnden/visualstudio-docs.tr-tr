@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dff6910f74b9a08a8064e4fb88828a21940c8ab9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2b56608a0d81be17fbd68ad7ccd0d5626a818376
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053175"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740357"
 ---
 # <a name="unit-test-basics"></a>Birim testi temel bilgileri
 
@@ -32,9 +32,9 @@ Test Gezgini, Test Gezgini eklentisi arabirimleri uyguladıysanız birim testi �
 
 Doğrudan kodlama içine alan birim testine giriş için aşağıdaki konulardan birine bakın:
 
-- [İzlenecek yol: Oluşturma ve yönetilen kod için birim testleri çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [İzlenecek yol: Yönetilen kod için birim testleri oluşturma ve çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
-- [Hızlı Başlangıç: temelli geliştirme, Test Gezgini ile Test](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Hızlı Başlangıç: Test Gezgini ile test güdümlü geliştirme](../test/quick-start-test-driven-development-with-test-explorer.md)
 
 - [Visual Studio'da C/C++ için birim testleri yazma](../test/writing-unit-tests-for-c-cpp.md)
 
@@ -219,7 +219,7 @@ Ayrıca, arama kutusuna genel düzeyde eşleşen metin veya önceden tanımlanm�
 
 ![Test Gezgini araç çubuğundan Testleri Çalıştır](../test/media/ute_toolbar.png)
 
-Seçebileceğiniz **tümünü Çalıştır** tüm testleri çalıştırmak veya **çalıştırma** bir alt kümesini Çalıştırılacak testleri seçmek için. Bir dizi testi çalıştırdıktan sonra test çalışmasının özetini alt kısmında görünür **Test Gezgini** penceresi. Bu testin ayrıntılarını alt bölmede görüntülemek için bir test seçin. Seçin **testi Aç** kaldırabilir bağlam menüsünü (klavye: **F12**) seçilen test için kaynak kodunu görüntülemek için.
+Seçebileceğiniz **tümünü Çalıştır** tüm testleri çalıştırmak veya **çalıştırma** bir alt kümesini Çalıştırılacak testleri seçmek için. Bir dizi testi çalıştırdıktan sonra test çalışmasının özetini alt kısmında görünür **Test Gezgini** penceresi. Bu testin ayrıntılarını alt bölmede görüntülemek için bir test seçin. Seçin **açık Test** kaldırabilir bağlam menüsünü (klavye: **F12**) seçilen test için kaynak kodunu görüntülemek için.
 
 Bireysel testler herhangi bir sırada çalıştırılan engelleyen bağımlılık varsa, paralel test yürütme ile Aç ![ALIŞTIR&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png) araç çubuğundaki iki durumlu düğme. Bu durum, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
 
@@ -246,9 +246,9 @@ Daha fazla bilgi için [Test Gezgini ile birim testleri çalıştırma](../test/
 
 ## <a name="qa"></a>SORU- CEVAP
 
-**S: nasıl birim testleri debug?**
+**S: Birim testleri nasıl hata ayıklama?**
 
-**Y:** kullanım **Test Gezgini** testleriniz için hata ayıklama oturumu başlatmak için. Kodunuzu Visual Studio hata ayıklayıcısı ile sorunsuz bir şekilde Adımlama, İleri ve geri birim testleri ve test altındaki projeye arasında sürer. Hata ayıklamayı başlatmak için:
+**Y:** Kullanım **Test Gezgini** testleriniz için hata ayıklama oturumu başlatmak için. Kodunuzu Visual Studio hata ayıklayıcısı ile sorunsuz bir şekilde Adımlama, İleri ve geri birim testleri ve test altındaki projeye arasında sürer. Hata ayıklamayı başlatmak için:
 
 1.  Visual Studio düzenleyicisinde, hatalarını ayıklamak istediğiniz bir veya daha fazla test yöntemlerinde kesme noktası ayarlayın.
 
@@ -257,15 +257,15 @@ Daha fazla bilgi için [Test Gezgini ile birim testleri çalıştırma](../test/
 
 2.  İçinde **Test Gezgini**, test yöntemlerini seçin ve ardından **seçilen Testlerde Hata Ayıkla** kısayol menüsünden.
 
-Hakkında daha ayrıntılı bilgi edinin [birim testleri hata ayıklama](../debugger/debugging-in-visual-studio.md).
+Hakkında daha ayrıntılı bilgi edinin [birim testleri hata ayıklama](../debugger/debugger-feature-tour.md).
 
-**S: TDD kullanıyorum varsa nasıl miyim kod benim testlerden oluşturun?**
+**S: Nasıl TDD kullanıyorum, ı testlerimi kod oluşturmaz?**
 
-**Y:** kullanım proje kodunuzu sınıflar ve yöntemler oluşturmak için IntelliSense. Sınıf çağıran bir test yöntemi veya oluşturmak istediğiniz yöntemi bir deyim yazma ve çağrının altında IntelliSense menüsünü açın. Bir yeni sınıf oluşturucusuna çağrı ise seçin **yeni tür oluşturma** menüsünden ve kod projenize bir sınıf eklemek için sihirbazı izleyin. Bir yöntem çağrısı ise seçin **yeni metot Oluştur** IntelliSense menüsünde.
+**Y:** Proje kodunuzu sınıflar ve yöntemler oluşturmak için IntelliSense'i kullanın. Sınıf çağıran bir test yöntemi veya oluşturmak istediğiniz yöntemi bir deyim yazma ve çağrının altında IntelliSense menüsünü açın. Bir yeni sınıf oluşturucusuna çağrı ise seçin **yeni tür oluşturma** menüsünden ve kod projenize bir sınıf eklemek için sihirbazı izleyin. Bir yöntem çağrısı ise seçin **yeni metot Oluştur** IntelliSense menüsünde.
 
 ![Yöntem Saplaması IntelliSense menü oluşturma](../test/media/ute_generatemethodstubintellisense.png)
 
-**Testi çalıştırmak için giriş olarak birden çok veri kümesi Al birim testleri oluşturabilirim miyim?**
+**S: Testi çalıştırmak için giriş olarak birden çok veri kümesi Al birim testleri oluşturabilir miyim?**
 
 **Y:** Evet. *Veri tabanlı test yöntemleri* , bir tek birim test yöntemi ile bir aralıktaki değerleri test olanak tanır. Kullanım bir `DataSource` test etmek istediğiniz değişken değerleri veri kaynağını seçin ve bu tablo belirten test yöntemini içeren özniteliği.  Yöntem gövdesinde, satır değerlerini kullanarak değişkenlere atamak `TestContext.DataRow[` *ColumnName* `]` dizin oluşturucu.
 
@@ -297,7 +297,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
 Daha fazla bilgi edinin [veri temelli birim testlerini](../test/how-to-create-a-data-driven-unit-test.md).
 
-**Birim testlerimi benim kodumu ne kadarı test görüntüleyebilir miyim?**
+**S: Birim testlerimi benim kodumu ne kadarı test görüntüleyebilir miyim?**
 
 **Y:** Evet. Visual Studio kod kapsamı Aracı'nı kullanarak birim testleriniz tarafından gerçekten edildiğini kodunuzun miktarını belirleyebilirsiniz. Yerel ve yönetilen diller ve Birim Test çerçevesi tarafından çalıştırılabilir tüm birim testi çerçevelerini desteklenir.
 
@@ -311,7 +311,7 @@ Kapsama sonuçlarını görünür **kod kapsamı sonuçlarını** penceresi.
 
 Daha fazla bilgi edinin [kod kapsamı](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .
 
-**Dış bağımlılıkları olan kodumu yöntemleri test miyim?**
+**S: Dış bağımlılıkları olan kodumu yöntemleri test edebilirim?**
 
 **Y:** Evet. Visual Studio Enterprise yüklüyse, Microsoft Fakes ile yönetilen kod için birim testi çerçevelerini kullanarak yazdığınız test yöntemleri kullanılabilir.
 
@@ -325,9 +325,9 @@ Her iki yaklaşım test yönteminde istediğiniz davranışını belirtmek için
 
 Daha fazla bilgi edinin [birim test yöntemlerini Microsoft Fakes ile izole](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
-**S: diğer birim testi çerçevelerini birim testleri oluşturmak için kullanabilir miyim?**
+**S: Birim testleri oluşturmak için diğer birim testi çerçeveleri kullanabilir miyim?**
 
-**Y:** Evet, bu adımları [bulun ve diğer çatıları Yükle](../test/install-third-party-unit-test-frameworks.md). Visual Studio'yu yeniden başlatmanızın ardından, birim testleri oluşturmak için çözümü yeniden açın ve yüklü Framework burada seçin:
+**Y:** Evet, için aşağıdaki adımları [bulun ve diğer çatıları Yükle](../test/install-third-party-unit-test-frameworks.md). Visual Studio'yu yeniden başlatmanızın ardından, birim testleri oluşturmak için çözümü yeniden açın ve yüklü Framework burada seçin:
 
 ![Diğer yüklü birim testi çerçevesini seçin](../test/media/createunittestsdialogextensions.png)
 

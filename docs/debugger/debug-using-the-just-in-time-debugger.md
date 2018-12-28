@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f66d3fdcd400be9356776647b0ead118e83d7108
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
+ms.openlocfilehash: c6bd9685a5ea9bc2e6e0dc94f7fbff395fab523e
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382759"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562067"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Tam zamanında hata ayıklayıcı, Visual Studio kullanarak hata ayıklama
 
@@ -42,9 +42,9 @@ Tam zamanında hata ayıklama Visual Studio'dan yapılandırabileceğiniz **Ara�
 
    ![JIT hata ayıklama devre dışı bırakmak veya etkinleştirmek](../debugger/media/dbg-jit-enable-or-disable.png "etkinleştirmek veya devre dışı JIT hata ayıklama")
 
-1. İçinde **temizleyintypes aşağıdaki kod türleri için hata ayıklama** kutusunda, kullanmak istediğiniz tam zamanında hata ayıklamak için hata ayıklama kod türlerini seçin: **yönetilen**, **yerel**, ve/veya  **Betik**.
+1. İçinde **temizleyintypes aşağıdaki kod türleri için hata ayıklama** kutusunda, kullanmak istediğiniz tam zamanında hata ayıklamak için hata ayıklama kod türlerini seçin: **Yönetilen**, **yerel**, ve/veya **betik**.
    
-1. Seçin **Tamam**.
+1. **Tamam**’ı seçin.
 
 Just-ın-Time etkinleştirirseniz, hata ayıklayıcı, ancak bir uygulama kilitlendiğinde veya hataları, bkz: zaman açılmazsa [sorun giderme tam zamanında hata ayıklama](#jit_errors).
 
@@ -107,7 +107,7 @@ Tam zamanında yerine standart Windows formu hata işleme hata ayıklamayı etki
 
 Bu örnekte, Visual Studio'da atan bir C# konsol uygulaması yapacaksınız bir [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
-1. Visual Studio'da C# konsol uygulaması oluşturma (**dosya** > **yeni** > **proje** > **Visual C#**  >  **Konsol uygulaması**) adlı *ThrowsNullException*. Visual Studio'da proje oluşturma hakkında daha fazla bilgi için bkz. [izlenecek yol: basit bir uygulama oluşturma](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
+1. Visual Studio'da C# konsol uygulaması oluşturma (**dosya** > **yeni** > **proje** > **Visual C#**  >  **Konsol uygulaması**) adlı *ThrowsNullException*. Visual Studio'da proje oluşturma hakkında daha fazla bilgi için bkz. [izlenecek yol: Basit bir uygulama oluşturma](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
    
 1. Projeyi Visual Studio'da açıldığında açın *Program.cs* dosya. Ana() yöntemi, bir çizgi konsola yazdırır ve ardından bir NullReferenceException oluşturur aşağıdaki kodla değiştirin:
    
@@ -138,7 +138,7 @@ Bu örnekte, Visual Studio'da atan bir C# konsol uygulaması yapacaksınız bir 
    
    Altında **kullanılabilir hata ayıklayıcılar**seçin **yeni bir örneğini \<, tercih edilen Visual Studio sürümü >**, henüz seçili değilse. 
    
-1. Seçin **Tamam**.
+1. **Tamam**’ı seçin.
    
    ThrowsNullException projeyi Visual Studio'nun yeni bir örneğinde yürütme özel durumu oluşturan satırında durduruldu ile açar:
    
@@ -196,6 +196,6 @@ Just-ın-Time sırasında aşağıdaki hata iletilerinden görebileceğiniz hata
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)
-- [Hata ayıklayıcısı temel bilgileri](../debugger/getting-started-with-the-debugger.md)
+- [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)
 - [Just-ın-Time hata ayıklama, Seçenekler iletişim kutusu](../debugger/just-in-time-debugging-options-dialog-box.md)
 - [Güvenlik Uyarısı: Güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme tehlikeli olabilir. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

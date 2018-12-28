@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ebfc937ee5cf6025761bb9da5d5f6589caf77d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f8349cc71bf0541d726a47bf5b875724c89bcc6
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901053"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738595"
 ---
 # <a name="add-command-line-switches"></a>Komut satırı anahtarları ekleme
 Uygulamak için VSPackage'ı komut satırı anahtarları eklediğiniz zaman *devenv.exe* yürütülür. Kullanım <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> adını anahtar ve özelliklerini bildirmek için. Bu örnekte, MySwitch anahtar VSPackage adlı bir alt sınıfı için eklenen **AddCommandSwitchPackage** bağımsız değişken olmadan ile otomatik olarak yüklenecek VSPackage'ı.  
@@ -76,4 +76,4 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>   
  [Devenv komut satırı anahtarları](../ide/reference/devenv-command-line-switches.md)   
  [CreatePkgDef yardımcı programı](../extensibility/internals/createpkgdef-utility.md)   
- [. Pkgdef dosyaları](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
+ [. Pkgdef dosyaları](/visualstudio/extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file)

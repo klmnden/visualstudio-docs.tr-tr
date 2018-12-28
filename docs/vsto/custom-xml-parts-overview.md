@@ -21,24 +21,24 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], custom XML parts
 - Excel [Office development in Visual Studio], custom XML parts
 - documents [Office development in Visual Studio], custom XML parts
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 71720ef96ee7d17bd52ea118a8c44a8f4b117cad
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 467b1055518697b035a3fa7e2a094d7f22b8198a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671735"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648358"
 ---
 # <a name="custom-xml-parts-overview"></a>Özel XML bölümlerine genel bakış
   Bazı Microsoft Office uygulamaları için belgelerde XML veri ekleyebilir. Bir belgedeki XML verileri ekleme, veriler adlı bir *özel XML bölümleri*.  
   
  Oluşturabilir ve VSTO eklentisi kullanarak özel XML bölümleri belgede değiştirmek veya belge düzeyi Visual Studio'da çözüm. Microsoft Office uygulamasının özel XML bölümleri oluşturup başlatmak gerekmez.  
   
- **İçin geçerlidir:** Bu konu başlığı altındaki bilgiler Excel, PowerPoint ve Word için belge düzeyi projelerine ve VSTO eklentisi projelerine yöneliktir. Daha fazla bilgi için [Office uygulaması ve proje türüne göre kullanılabilen özellikler](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Uygulama hedefi:** Bu konu başlığı altındaki bilgiler, Excel, PowerPoint ve Word için belge düzeyi projelerine ve VSTO eklentisi projelerine yöneliktir. Daha fazla bilgi için [Office uygulaması ve proje türüne göre kullanılabilen özellikler](../vsto/features-available-by-office-application-and-project-type.md).  
   
 > [!NOTE]  
 >  Visual Studio ayrıca, veri nesnelerini belge düzeyi özelleştirmelerdeki önbelleğe sağlar. Bazı benzerlikler olsa bu özel XML bölümleri, farklı bir özelliğidir. Daha fazla bilgi için [veri belge düzeyi özelleştirmelerdeki önbelleğe alınmış](../vsto/cached-data-in-document-level-customizations.md).  
@@ -69,7 +69,7 @@ ms.locfileid: "50671735"
   
  Visual Studio kullanarak özel XML parçaları oluşturmak için yeni bir ekleme <xref:Microsoft.Office.Core.CustomXMLPart> için <xref:Microsoft.Office.Core.CustomXMLParts> belgedeki koleksiyonu. Daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [Nasıl yapılır: belge düzeyi özelleştirmelerine özel XML bölümleri ekleme](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
+-   [Nasıl yapılır: Belge düzeyi özelleştirmelerine özel XML bölümleri ekleme](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
   
 -   [Nasıl yapılır: VSTO eklentileri kullanarak belgelere özel XML bölümleri ekleme](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
   
@@ -83,7 +83,7 @@ ms.locfileid: "50671735"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [XML şemaları ve belge düzeyi özelleştirmelerdeki veriler](../vsto/xml-schemas-and-data-in-document-level-customizations.md)   
- [Nasıl yapılır: belge düzeyi özelleştirmelerine özel XML bölümleri ekleme](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)   
+ [Nasıl yapılır: Belge düzeyi özelleştirmelerine özel XML bölümleri ekleme](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)   
  [Nasıl yapılır: VSTO eklentileri kullanarak belgelere özel XML bölümleri ekleme](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)   
  [İçerik denetimleri](../vsto/content-controls.md)   
- [İzlenecek yol: içerik denetimlerini özel XML bölümlerine bağlama](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
+ [İzlenecek yol: İçerik denetimlerini özel XML bölümlerine bağlama](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  

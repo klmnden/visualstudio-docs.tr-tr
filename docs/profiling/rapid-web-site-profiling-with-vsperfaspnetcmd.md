@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0ad2c1411a47acd0219223fe928e4150368c80a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ccff5ef0575eea9d35239cab7bf3ffa47a11b315
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43780553"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592670"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Profil oluşturma VSPerfASPNETCmd ile hızlı web sitesi
 
-**VSPerfASPNETCmd** komut satırı aracı sayesinde profiline bir kolayca [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulamaları. Comparison için [VSPerfCmd](../profiling/vsperfcmd.md) komut satırı aracı seçenekleri sınırlı, hiçbir ortam değişkenlerini ayarlamak sahip ve bilgisayarın yeniden başlatılması gerekli değildir. Kullanarak **VSPerfASPNETCmd** bağımsız Profil Oluşturucu ile profil oluşturma için tercih edilen yöntemdir. Daha fazla bilgi için [nasıl yapılır: bağımsız profil oluşturucuyu yükleme](../profiling/how-to-install-the-stand-alone-profiler.md).
+**VSPerfASPNETCmd** komut satırı aracı sayesinde profiline bir kolayca [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulamaları. Comparison için [VSPerfCmd](../profiling/vsperfcmd.md) komut satırı aracı seçenekleri sınırlı, hiçbir ortam değişkenlerini ayarlamak sahip ve bilgisayarın yeniden başlatılması gerekli değildir. Kullanarak **VSPerfASPNETCmd** bağımsız Profil Oluşturucu ile profil oluşturma için tercih edilen yöntemdir. Daha fazla bilgi için [nasıl yapılır: Bağımsız profil oluşturucuyu yükleme](../profiling/how-to-install-the-stand-alone-profiler.md).
 
 > [!NOTE]
 > Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. UWP uygulamaları, ayrıca yeni toplama teknikleri gerektirir. Bkz: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
@@ -29,7 +29,7 @@ ms.locfileid: "43780553"
  Eşzamanlılık verileri toplama veya duraklatma ve sürdürme kullanarak profil oluşturma gibi bazı senaryolarda **VSPerfCmd** tercih edilen profil oluşturma yöntemidir.
 
 > [!NOTE]
-> Profil araçlarının komut satırı araçları yerleştirilir *tools\performance Araçları* Visual Studio yükleme dizininin alt. 64-bit bilgisayarlarda, 32-bit bulunan VSPerfASPNETCmd aracını *tools\performance Araçları* dizin. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir. Daha fazla bilgi için [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+>  Profil oluşturma araçları için olan yolu almak için bkz: [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir.  
 
 ## <a name="profile-an-aspnet-application"></a>Bir ASP.NET uygulamasının profilini oluşturun
 

@@ -22,12 +22,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b7a7ec1d244f8bf711f0d1aaf4726c910846357
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 85adcf5cc0bddf6d023eb2043181ebc33a7935cf
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219724"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648393"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>TableAdapter DBDirect metotlarıyla veri kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Bu izlenecek yol, bir TableAdapter DBDirect yöntemleri kullanılarak doğrudan 
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için şunlar gerekir:  
   
--   Northwind örnek veritabanına erişim. Daha fazla bilgi için [nasıl yapılır: örnek veritabanları yükleme](../data-tools/how-to-install-sample-databases.md).  
+-   Northwind örnek veritabanına erişim.
   
 ## <a name="create-a-windows-application"></a>Bir Windows uygulaması oluşturma  
  İlk adım oluşturmaktır bir **Windows uygulama**.  
@@ -66,7 +66,7 @@ Bu izlenecek yol, bir TableAdapter DBDirect yöntemleri kullanılarak doğrudan 
      **TableAdapterDbDirectMethodsWalkthrough** projesi oluşturulur ve eklenen **Çözüm Gezgini**.  
   
 ## <a name="create-a-data-source-from-your-database"></a>Veritabanından bir veri kaynağı oluşturun  
- Bu adımı kullanan **veri kaynağı Yapılandırma Sihirbazı** dayalı bir veri kaynağını oluşturmak için `Region` Northwind örnek veritabanındaki tablo. Bağlantı oluşturmak için Northwind örnek veritabanına erişiminiz olmalıdır. Northwind örnek veritabanını ayarlama hakkında daha fazla bilgi için bkz: [nasıl yapılır: örnek veritabanları yükleme](../data-tools/how-to-install-sample-databases.md).  
+ Bu adımı kullanan **veri kaynağı Yapılandırma Sihirbazı** dayalı bir veri kaynağını oluşturmak için `Region` Northwind örnek veritabanındaki tablo. Bağlantı oluşturmak için Northwind örnek veritabanına erişiminiz olmalıdır.
   
 #### <a name="to-create-the-data-source"></a>Veri kaynağı oluşturmak için  
   
@@ -101,7 +101,7 @@ Bu izlenecek yol, bir TableAdapter DBDirect yöntemleri kullanılarak doğrudan 
   
 -   Ana sürükleyin **bölge** düğümünden **veri kaynakları** forma penceresi.  
   
-     A <xref:System.Windows.Forms.DataGridView> denetim ve araç şeridi (<xref:System.Windows.Forms.BindingNavigator>) Kayıtlarda gezinmek için formda görünür. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [RegionTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
+     A <xref:System.Windows.Forms.DataGridView> denetim ve araç şeridi (<xref:System.Windows.Forms.BindingNavigator>) Kayıtlarda gezinmek için formda görünür. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), RegionTableAdapter, <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
   
 #### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Tek tek TableAdapter DbDirect yöntemleri çağıran düğme eklemek için  
   
@@ -142,7 +142,7 @@ Bu izlenecek yol, bir TableAdapter DBDirect yöntemleri kullanılarak doğrudan 
      [!code-csharp[VbRaddataSaving#3](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form1.cs#3)]
      [!code-vb[VbRaddataSaving#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form1.vb#3)]  
   
-## <a name="run-the-application"></a>Uygulamayı çalıştırın  
+## <a name="run-the-application"></a>Uygulamayı çalıştırma  
   
 #### <a name="to-run-the-application"></a>Uygulamayı çalıştırmak için  
   
@@ -157,10 +157,9 @@ Bu izlenecek yol, bir TableAdapter DBDirect yöntemleri kullanılarak doğrudan 
 ## <a name="next-steps"></a>Sonraki Adımlar  
  Uygulama gereksinimlerinize bağlı olarak, veri bağlama form oluşturduktan sonra gerçekleştirmek isteyebileceğiniz birkaç adım vardır. Bu izlenecek yolda yapabileceğiniz bazı geliştirmeler şunlardır:  
   
--   Forma arama işlevselliği ekleme. Daha fazla bilgi için [nasıl yapılır: bir Windows Forms uygulamasına parametreli bir sorgu ekleme](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
+-   Forma arama işlevselliği ekleme. Daha fazla bilgi için [nasıl yapılır: Parametreli bir sorgu için bir Windows Forms uygulaması ekleme](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
   
--   Seçerek veri kümesine ek tablolar ilave **veri kümesini Yapılandırma Sihirbazı ile** içinden **veri kaynakları** penceresi. İlgili düğümlerin form üzerine sürükleyerek ilgili verileri görüntüleyen denetimler ekleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Windows Forms uygulamasında görüntü ilgili verileri](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md).  
+-   Seçerek veri kümesine ek tablolar ilave **veri kümesini Yapılandırma Sihirbazı ile** içinden **veri kaynakları** penceresi. İlgili düğümlerin form üzerine sürükleyerek ilgili verileri görüntüleyen denetimler ekleyebilirsiniz. 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)
-

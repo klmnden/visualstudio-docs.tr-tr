@@ -1,6 +1,7 @@
 ---
-title: 'Nasıl yapılır: şemaları Visual Studio içindeki çalışma sayfalarıyla'
-ms.custom: ''
+title: 'Nasıl Yapılır: Şemaları Visual Studio içindeki çalışma sayfalarıyla eşleştirme'
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -13,61 +14,61 @@ helpviewer_keywords:
 - mappings [Office development in Visual Studio], XML schemas to Excel worksheets
 - Excel [Office development in Visual Studio], XML schemas
 - worksheets [Office development in Visual Studio], XML schemas
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8b95e24d151ef6bf8a0083d130c4e38f3f33d480
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 672acf2b33463ee5110dc537f14831a1c034380e
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256051"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646660"
 ---
-# <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Nasıl yapılır: şemaları Visual Studio içindeki çalışma sayfalarıyla
-  Çalışma sayfası Visual Studio'da açıkken bir çalışma sayfasına bir XML Şeması eşleyebilirsiniz. Çalışma kitabı Visual Studio dışında açık olduğunda kullandığınız aynı Microsoft Office Excel araçlarını kullanın. Office proje önce çalışma şema eşleme olup olmadığını veya Excel çözümünüzü oluşturduktan sonra aynı nesneleri oluşturur.  
+# <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Nasıl Yapılır: Şemaları Visual Studio içindeki çalışma sayfalarıyla eşleştirme
+  Visual Studio'da çalışma açıkken bir XML Şeması çalışma sayfasına eşleyebilirsiniz. Visual Studio'nun dışında çalışma kitabını açtığınızda kullandığınız aynı Microsoft Office Excel araçları kullanırsınız. Office project, çalışma sayfasında önce şemayı eşleştirdiğinizde veya Excel çözümünüzü oluşturduktan sonra aynı nesneleri oluşturur.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
 > [!NOTE]  
->  Excel çözümleri, çok parçalı XML şemaları kullanamazsınız.  
+>  Excel çözümleri, çok bölümlü XML şemaları kullanamazsınız.  
   
-## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Visual Studio'daki Excel çalışma sayfası XML Şeması eşlemek için  
+## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Visual Studio'da bir Excel çalışma sayfasına bir XML Şeması eşlemek için  
   
-1.  Excel çalışma kitabı veya şablon projesini Visual Studio içinde açın.  
+1.  Excel çalışma kitabı veya şablondaki projeyi Visual Studio içinde açın.  
   
-2.  Çalışma sayfası Odağı tasarımcıya taşımak için tıklatın.  
+2.  Çalışma sayfası tasarımcıya odağı taşımak için tıklayın.  
   
-3.  Şerit'te tıklatın **Geliştirici** sekmesi.  
+3.  Şerit üzerinde tıklayın **Geliştirici** sekmesi.  
   
     > [!NOTE]  
-    >  Varsa **Geliştirici** sekmesi görünür değilse, ilk Göster gerekir. Daha fazla bilgi için bkz: [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Varsa **Geliştirici** sekme görünür değilse, önce görünür olmalıdır. Daha fazla bilgi için [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  İçinde **XML** grubunda **kaynak**.  
   
      **XML kaynağı** penceresi açılır.  
   
-5.  İçinde **XML kaynağı** penceresinde tıklatın **XML eşlemeleri**.  
+5.  İçinde **XML kaynağı** penceresinde tıklayın **XML eşlemeleri**.  
   
      **XML eşlemeleri** iletişim kutusu açılır.  
   
-6.  İçinde **XML eşlemeleri** iletişim kutusu, tıklatın **Ekle**.  
+6.  İçinde **XML eşlemeleri** iletişim kutusu, tıklayın **Ekle**.  
   
 7.  Şema dosyasına göz atın, onu seçin ve ardından **açık**.  
   
 8.  **Tamam**'ı tıklatın.  
   
-     Şema temsil edilen **XML kaynağı** penceresi. Projenizdeki yazılmış bir <xref:System.Data.DataSet> şemaya göre oluşturulur ve bir <xref:System.Windows.Forms.BindingSource> oluşturulur.  
+     Şema temsil edilir **XML kaynağı** penceresi. Projenizde, belirlenmiş bir <xref:System.Data.DataSet> şemaya göre oluşturulur ve <xref:System.Windows.Forms.BindingSource> oluşturulur.  
   
-9. Sürükleme öğelerinden **XML kaynağı** çalışma oluşturulacak ilgili denetimlerin istediğiniz yerde penceresine.  
+9. Öğeleri sürükleme **XML kaynağı** çalışma oluşturulacak ilgili denetimlerin, istediğiniz yerde penceresine.  
   
      Yinelenmeyen bir şema öğesi sürükleyin, Office projesi oluşturur. bir <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> otomatik olarak bağlı denetim <xref:System.Windows.Forms.BindingSource>.  
   
-     Yinelenen bir şema öğesi sürükleyin, Office projesi oluşturur. bir <xref:Microsoft.Office.Tools.Excel.ListObject> otomatik olarak bir veri kaynağına bağlı değil denetim. Daha fazla bilgi için bkz: [XML şemaları ve verileri belge düzeyi özelleştirmeleri](../vsto/xml-schemas-and-data-in-document-level-customizations.md).  
+     Yinelenen bir şema öğesine sürüklediğinizde, Office projesi oluşturur. bir <xref:Microsoft.Office.Tools.Excel.ListObject> otomatik olarak bir veri kaynağına bağlı olmayan bir denetim. Daha fazla bilgi için [XML şemaları ve verileri belge düzeyi özelleştirmeleri](../vsto/xml-schemas-and-data-in-document-level-customizations.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: şemaları Visual Studio içindeki Word belgeleriyle eşleme](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
- [XML şemaları ve verileri belge düzeyi özelleştirmeleri](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
+ [Nasıl yapılır: Şemaları Visual Studio içindeki Word belgeleriyle eşleştirme](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
+ [XML şemaları ve belge düzeyi özelleştirmelerdeki veriler](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
   
   

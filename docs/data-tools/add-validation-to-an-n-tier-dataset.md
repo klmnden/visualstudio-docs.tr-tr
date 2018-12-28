@@ -17,17 +17,17 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 81d929aaffb6f08e5e1cda1cf3329de81fe13bc8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 20a1cd033763e7aa98eb2798357109e300deaff1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778067"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739474"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>N Katmanlı bir veri kümesine doğrulama ekleme
 Bir n katmanlı çözüme bölünen bir veri kümesine doğrulama ekleme temelde tek dosyalı veri kümesine (tek bir projede bir dataset) doğrulama ekleme ile aynı olur. Veri üzerine doğrulama yapmak için önerilen konum sırasındadır <xref:System.Data.DataTable.ColumnChanging> ve/veya <xref:System.Data.DataTable.RowChanging> veri tablosundaki olayları.
 
- Veri kümesi, kullanıcı kodu kümesindeki veri tablolarının sütun ve satır değiştiren olaylarına ekleyebileceğiniz kısmı sınıflar oluşturma işlevselliği sağlar. Bir n-katmanı çözümündeki bir veri kümesine kod ekleme hakkında daha fazla bilgi için bkz. [n katmanlı uygulamalarda veri kümelerine kod ekleme](../data-tools/add-code-to-datasets-in-n-tier-applications.md), ve [n katmanlı uygulamalarda Tableadapter'lara kod ekleyin](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Kısmi sınıflar hakkında daha fazla bilgi için bkz: [nasıl yapılır: sınıfı kısmi sınıflara (Sınıf Tasarımcısı) bölme](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) veya [kısmi sınıflar ve yöntemler](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
+ Veri kümesi, kullanıcı kodu kümesindeki veri tablolarının sütun ve satır değiştiren olaylarına ekleyebileceğiniz kısmı sınıflar oluşturma işlevselliği sağlar. Bir n-katmanı çözümündeki bir veri kümesine kod ekleme hakkında daha fazla bilgi için bkz. [n katmanlı uygulamalarda veri kümelerine kod ekleme](../data-tools/add-code-to-datasets-in-n-tier-applications.md), ve [n katmanlı uygulamalarda Tableadapter'lara kod ekleyin](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Kısmi sınıflar hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir sınıfı kısmi sınıflara (Sınıf Tasarımcısı) bölme](../ide/class-designer/how-to-split-a-class-into-partial-classes.md) veya [kısmi sınıflar ve yöntemler](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
 
 > [!NOTE]
 >  Veri kümelerini Tableadapters'dan ayırdığınızda ayırdığınızda (ayarlayarak **DataSet projesi** özelliği), projedeki varolan kısmi veri kümesi sınıfları olmaz taşınması otomatik olarak. Varolan kısmi veri kümesi sınıfları, veri kümesi projesine el ile taşınmalıdır.
@@ -55,7 +55,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>Ayrı ayrı sütun değerlerine değişiklikler sırasında doğrulama eklemek için
 
-1.  Veri kümesine çift tıklayarak açın *.xsd* dosyası **Çözüm Gezgini**. Daha fazla bilgi için [izlenecek yol: veri kümesi Tasarımcısı'nda bir veri kümesi oluşturma](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Veri kümesine çift tıklayarak açın *.xsd* dosyası **Çözüm Gezgini**. Daha fazla bilgi için [izlenecek yol: Veri kümesi Tasarımcısı'nda bir veri kümesi oluşturma](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Doğrulamak istediğiniz sütunu çift tıklatın. Bu eylem oluşturur <xref:System.Data.DataTable.ColumnChanging> olay işleyicisi.
 
@@ -111,7 +111,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>Tüm satırlara değişiklikler sırasında doğrulama eklemek için
 
-1.  Veri kümesine çift tıklayarak açın *.xsd* dosyası **Çözüm Gezgini**. Daha fazla bilgi için [izlenecek yol: veri kümesi Tasarımcısı'nda bir veri kümesi oluşturma](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Veri kümesine çift tıklayarak açın *.xsd* dosyası **Çözüm Gezgini**. Daha fazla bilgi için [izlenecek yol: Veri kümesi Tasarımcısı'nda bir veri kümesi oluşturma](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Tasarımcı üzerinde veri tablosunun başlık çubuğunu çift tıklatın.
 
@@ -169,5 +169,5 @@ End Sub
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [N katmanlı veri uygulamalarına genel bakış](../data-tools/n-tier-data-applications-overview.md)
-- [İzlenecek yol: bir N katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [İzlenecek yol: Bir N katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Veri kümelerindeki verileri doğrulama](../data-tools/validate-data-in-datasets.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: çalışma sayfalarına ListObject denetimleri ekleme'
+title: 'Nasıl Yapılır: Çalışma sayfalarına ListObject denetimleri ekleme'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - ListObject control, adding to worksheets
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 402e7f80ea208d714b31bd61e25b352494310487
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae6abd9791bfaa9ce0e7c15f1f6f66034a75c6c7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949259"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646977"
 ---
-# <a name="how-to-add-listobject-controls-to-worksheets"></a>Nasıl yapılır: çalışma sayfalarına ListObject denetimleri ekleme
+# <a name="how-to-add-listobject-controls-to-worksheets"></a>Nasıl Yapılır: Çalışma sayfalarına ListObject denetimleri ekleme
   Ekleyebileceğiniz <xref:Microsoft.Office.Tools.Excel.ListObject> tasarım zamanında ve belge düzeyi projelere çalışma zamanında bir Microsoft Office Excel çalışma sayfasına denetimler.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -41,7 +41,7 @@ ms.locfileid: "49949259"
   Hakkında daha fazla bilgi için <xref:Microsoft.Office.Tools.Excel.ListObject> denetimlerini, [ListObject denetimine](../vsto/listobject-control.md).  
   
 ##  <a name="designtime"></a> Tasarım zamanında ListObject denetimleri ekleme  
- Eklemek için çeşitli yollar vardır <xref:Microsoft.Office.Tools.Excel.ListObject> denetimlerini çalışma zamanında bir belge düzeyi projede: gelen Visual Studio'dan Excel'den **araç kutusu**, gelen ve giden **veri kaynakları** penceresi.  
+ Eklemek için çeşitli yollar vardır <xref:Microsoft.Office.Tools.Excel.ListObject> tasarım zamanında bir belge düzeyi projesindeki çalışma sayfasına denetimler: Gelen Visual Studio'dan Excel'den **araç kutusu**, gelen ve giden **veri kaynakları** penceresi.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   

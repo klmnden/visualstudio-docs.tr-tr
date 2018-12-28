@@ -29,19 +29,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ed9670795e11b0d98b3703445450b468a93aa8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 499e1200f858530db0caad69d93bd4416f756405
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068467"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561648"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı ile çalıştırma işlemleri iliştirme
 Visual Studio hata ayıklayıcı bir yerel veya uzak bilgisayarda çalışan bir işleme ekleyebilirsiniz. İşlem çalışmaya başladıktan sonra seçin **hata ayıklama** > **iliştirme** veya basın **Ctrl**+**Alt** + **P** Visual Studio ve kullanım **iliştirme** işleme hata ayıklayıcı için iletişim kutusu.
 
 Kullanabileceğiniz **iliştirme** yerel veya uzak bilgisayarlarda çalışan uygulamalarında hata ayıklamak için aynı anda birden çok işlemde hata ayıklamak, hata ayıklama Visual Studio'da oluşturulmamış uygulamaları veya Visual Studio'dan başlamadı herhangi bir uygulamayı hata ayıklama hata ayıklayıcısı ekli. Örneğin, hata ayıklayıcı olmadan bir uygulama çalıştırıyorsanız ve özel durumu ise, sonra uygulama çalışan işlemi için hata ayıklayıcının ve hata ayıklama başlayın.
 
-Visual Studio temel hata ayıklama hakkında daha fazla bilgi için bkz: [hata ayıklayıcısını kullanmaya başlama](../debugger/getting-started-with-the-debugger.md).
+Visual Studio temel hata ayıklama hakkında daha fazla bilgi için bkz: [hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md).
 
 > [!TIP]
 > Emin değilim kullanıp kullanmayacağınızı **iliştirme** hata ayıklama senaryonuz için? Bkz: [yaygın hata ayıklama senaryoları](#BKMK_Scenarios). 
@@ -119,7 +119,7 @@ IIS'ye dağıtılan ASP.NET uygulamalarında hata ayıklama için daha eksiksiz 
    - Tüm kullanıcı hesapları altında çalışan işlemleri bulmak için seçin **tüm kullanıcıların işlemlerini göster** onay kutusu.
       
      >[!NOTE]
-     >Güvenilmeyen bir kullanıcı tarafından sahip olunan bir işlem eklemeye çalışırsanız, bir güvenlik uyarısı iletişim kutusu onayı görünecektir. Daha fazla bilgi için [güvenlik uyarısı: güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme tehlikeli olabilir. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
+     >Güvenilmeyen bir kullanıcı tarafından sahip olunan bir işlem eklemeye çalışırsanız, bir güvenlik uyarısı iletişim kutusu onayı görünecektir. Daha fazla bilgi için [güvenlik uyarısı: Güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme tehlikeli olabilir. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
       
 5. İçinde **ekleme** alan, hata ayıklama planladığınız kodun türünü listelendiğinden emin olun. Varsayılan **otomatik** works çoğu uygulama türleri için ayarlama. 
   
@@ -162,7 +162,7 @@ Hızlı bir şekilde çalışan bir işleme eklemek, Visual Studio'da seçmek i�
 |Uzaktan hata ayıklama ASP.NET 4 veya 4.5 üzerinde bir IIS sunucusu|Uzak Araçlar'ı kullanın ve **iliştirme**|*W3wp.exe*|Bkz: [uzaktan uzak bir IIS bilgisayarında ASP.NET hata ayıklama](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Uzaktan hata ayıklamayı ASP.NET Core IIS sunucusu|Uzak Araçlar'ı kullanın ve **iliştirme**|*dotnet.exe*|Uygulama dağıtımı için bkz: [IIS Yayımla](https://docs.asp.net/en/latest/publishing/iis.html). Hata ayıklama için bkz: [uzak bir IIS bilgisayarda uzaktan hata ayıklama ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |Desteklenen uygulama türleri için yerel bir IIS sunucusunda istemci tarafı betikte hata ayıklama |Kullanım **işleme**|*Chrome.exe*, *MicrosoftEdgeCP.exe*, veya *iexplore.exe*|Komut dosyası hata ayıklaması etkinleştirilmelidir. Chrome için ayrıca Chrome seçin ve hata ayıklama modu çalıştırmalısınız **Webkit kod** içinde **ekleme** alan.|
-|Yerel makinede bir C#, Visual Basic veya C++ uygulamasında hata ayıklama|Hangisini [standart hata ayıklama](../debugger/getting-started-with-the-debugger.md) veya **iliştirme**|*\<Appname > .exe*|Çoğu senaryoda, standart hata ayıklama kullanın ve **iliştirme**.|
+|Yerel makinede bir C#, Visual Basic veya C++ uygulamasında hata ayıklama|Hangisini [standart hata ayıklama](../debugger/debugger-feature-tour.md) veya **iliştirme**|*\<Appname > .exe*|Çoğu senaryoda, standart hata ayıklama kullanın ve **iliştirme**.|
 |Uzaktan hata ayıklama bir Windows masaüstü uygulaması|Uzak Araçlar|Yok| Bkz: [uzaktan hata ayıklama, C# veya Visual Basic uygulama](../debugger/remote-debugging-csharp.md) veya [uzaktan hata ayıklama, C++ uygulama](../debugger/remote-debugging-cpp.md)|
 |Hata Ayıklayıcı olmadan uygulamayı başlattıktan sonra yerel makine üzerinde bir ASP.NET uygulamasında hata ayıklama|Kullanım **işleme**|*iiexpress.exe*|Bu yük uygulamanızı hale getirmek yardımcı olabilecek daha hızlı gibi (örneğin) profili oluşturulurken. |
 |Başka bir sunucu işlemi desteklenen uygulama türlerinde hata ayıklama|Sunucu uzak ise, uzak Araçlar kullanın ve **iliştirme**|*Chrome.exe*, *iexplore.exe*, veya diğer işlemler|Gerekirse, Kaynak İzleyicisi işlemi belirlemenize yardımcı olması için kullanın. Bkz: [uzaktan hata ayıklama](../debugger/remote-debugging.md).|

@@ -16,27 +16,27 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 160922088eb0d5f517de072649df94479e4d7e31
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9e43236c32f0ce7e4e260a1d44b1e64600b6dd17
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062793"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802257"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Visual Studio ile geliştirmeye başlayın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio'ya Hoş Geldiniz! Sonra [indirilen](http://www.visualstudio.com/community) ürün bu sayfa yardımcı olacak kodlamaya başlayın.
 
--   **[Web uygulamaları yapmak](https://www.visualstudio.com/features/modern-web-tooling-vs):** modern web uygulamaları oluşturmak ve dağıtmak için Araçlar.
+-   **[Web uygulamaları yapmak](https://www.visualstudio.com/features/modern-web-tooling-vs):** Modern web uygulamaları oluşturmak ve dağıtmak için Araçlar'ı tıklatın.
 
      [Bir öğretici uygulayın](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124; [belgelere göz atın](https://docs.asp.net/) &#124; [bir video izleyin](http://www.asp.net/vnext)
 
--   **[Platformlar arası mobil uygulamalar, HTML/Javascript (Apache Cordova) olun](http://taco.visualstudio.com/docs/get-started-first-mobile-app/)**  : Apache Cordova olan HTML/CSS/Javascript tabanlı bir açık kaynak platformlar arası ortam.  Javascript kodunuzun belirli bir platformu hedefleyen ve cihazın tüm donanım özelliklerine erişim sağlayan bir sarmalayıcı yürütür. Apple Store, Android mağazası ve Windows Store uygulamaları geliştirin.
+-   **[Platformlar arası mobil uygulamalar, HTML/Javascript (Apache Cordova) olun](http://taco.visualstudio.com/docs/get-started-first-mobile-app/)**  :               Apache Cordova HTML/CSS/Javascript tabanlı açık kaynaklı bir platformlar arası ortamıdır.  Javascript kodunuzun belirli bir platformu hedefleyen ve cihazın tüm donanım özelliklerine erişim sağlayan bir sarmalayıcı yürütür. Apple Store, Android mağazası ve Windows Store uygulamaları geliştirin.
 
      [Bir örnek yükleyin](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124; [bir öğretici uygulayın](http://taco.visualstudio.com/docs/get-started-first-mobile-app/) &#124; [belgelere göz atın](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) &#124; [bir video izleyin](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
 
--   **[C# veya Visual Basic (Xamarin) platformlar arası mobil uygulamalar olun](../cross-platform/visual-studio-and-xamarin.md)**  : bir paylaşılan kod tabanından Android, iOS ve evrensel Windows platformu üzerinde çalışan mobil uygulamalar oluşturmak için Visual Studio ve Xamarin için Araçlar'ı kullanmaya başlayın.
+-   **[Platformlar arası mobil uygulamalarda olmak C# veya Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)**  : Bir paylaşılan kod tabanından Android, iOS ve evrensel Windows platformu üzerinde çalışan mobil uygulamalar oluşturmak için Visual Studio ve Xamarin için Araçlar'ı kullanmaya başlayın.
 
      Bir örnek yükleyin:[Tasky taşınabilir](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (yerel UI) veya [Xamarin formları Yapılacaklar örneği](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (Xamarin.Forms paylaşılan kullanıcı Arabirimi) &#124; [bir öğretici uygulayın](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124; [Gözat docs](https://msdn.microsoft.com/library/mt299001.aspx) &#124; [bir video izleyin](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
 
@@ -52,7 +52,7 @@ Visual Studio'ya Hoş Geldiniz! Sonra [indirilen](http://www.visualstudio.com/co
 
      [Bir örnek yükleyin](http://unity3d.com/learn/resources/downloads) &#124; [bir öğretici uygulayın](http://unity3d.com/learn/tutorials/projects/roll-ball-tutorial) &#124; [belgelere göz atın](https://msdn.microsoft.com/library/dn940019\(v=vs.140\).aspx) &#124; [bir video izleyin](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em)
 
--   **[Evrensel Windows platformu uygulamaları olun](https://dev.windows.com/windows-apps)**  : Evrensel Windows platformunda (XBox, PC'ler, tabletler, Windows Phone, Surface Hub ve nesnelerin interneti) çalışan uygulamalar oluşturmaya başlayın.
+-   **[Olun Evrensel Windows platformu uygulamaları](https://dev.windows.com/windows-apps)**  : Evrensel Windows platformunda (XBox, PC'ler, tabletler, Windows Phone, Surface Hub ve nesnelerin interneti) çalışan uygulamalar oluşturmaya başlayın.
 
      [Bir örnek yükleyin](https://github.com/Microsoft/Windows-universal-samples) &#124; [bir öğretici uygulayın](https://msdn.microsoft.com/library/windows/apps/dn765018.aspx) &#124; [belgelere göz atın](https://dev.windows.com) &#124; [bir video izleyin](https://channel9.msdn.com/Blogs/One-Dev-Minute/Getting-started-with-Windows-10)
 
@@ -60,7 +60,7 @@ Visual Studio'ya Hoş Geldiniz! Sonra [indirilen](http://www.visualstudio.com/co
 
      [Bir örnek yükleyin](https://github.com/microsoft/windows-classic-samples) &#124; [bir öğretici uygulayın](https://msdn.microsoft.com/library/dd492171.aspx) &#124; [belgelere göz atın](https://dev.windows.com/desktop)
 
--   **[Office uygulamaları](https://msdn.microsoft.com/library/fp161347.aspx)**  : genişleten ve Office 365 hizmetleriyle Word, Excel, Outlook ve Powerpoint özelleştiren Office uygulamaları oluşturmaya başlayın.
+-   **[Office uygulamaları](https://msdn.microsoft.com/library/fp161347.aspx)**  : Genişletmek ve Word, Excel, Outlook ve PowerPoint ile Office 365 hizmetlerine özelleştiren Office uygulamaları oluşturmaya başlayın.
 
      [Bir örnek yükleyin](https://code.msdn.microsoft.com/office365/) &#124; [bir öğretici uygulayın](http://dev.office.com/getting-started/office365apis) &#124; [belgelere göz atın](https://msdn.microsoft.com/office/aa905340.aspx) &#124; [bir video izleyin](http://dev.office.com/videos)
 

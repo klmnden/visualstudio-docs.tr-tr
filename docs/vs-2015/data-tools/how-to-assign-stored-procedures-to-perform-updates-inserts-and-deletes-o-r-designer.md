@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: güncelleştirme, ekleme ve silme (O R Designer) gerçekleştirmek için saklı yordamlar atama | Microsoft Docs'
+title: 'Nasıl Yapılır: Güncelleştirme, ekleme ve silme (O R Designer) gerçekleştirmek için saklı yordamlar atama | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -12,14 +12,14 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4f65af06a275dc50afafc70fd95c9b93d9bba458
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 09c1beaa38cff27917263f6efa8219c1dc590daa
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232720"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648422"
 ---
-# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Nasıl yapılır: güncelleştirme, ekleme ve silme (O/R Tasarımcısı) gerçekleştirmek için saklı yordamlar atama
+# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Nasıl Yapılır: Güncelleştirme, ekleme ve silme (O/R Tasarımcısı) gerçekleştirmek için saklı yordamlar atama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -72,7 +72,5 @@ Saklı yordamlar için O/R Tasarımcısı eklenebilir ve tipik olarak yürütül
  [LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [DataContext yöntemi (O/R Tasarımcısı)](../data-tools/datacontext-methods-o-r-designer.md)   
  [İzlenecek yol: LINQ to SQL sınıfları (O R Designer) oluşturma](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [İzlenecek yol: Güncelleştirme oluşturmak için Northwind Customers tablosunu saklı yordamları](../data-tools/walkthrough-creating-update-stored-procedures-for-the-northwind-customers-table.md)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Insert, Update ve Delete İşlemleri](http://msdn.microsoft.com/library/26a43a4f-83c9-4732-806d-bb23aad0ff6b)
-

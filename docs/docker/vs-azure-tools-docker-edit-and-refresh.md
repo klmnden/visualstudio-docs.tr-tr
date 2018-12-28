@@ -10,14 +10,14 @@ ms.topic: article
 ms.workload: multiple
 ms.date: 09/11/2018
 ms.author: ghogen
-ms.openlocfilehash: c548d143802a9924753fa4c86f652189357dada5
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 784fd5fd4459c77e757cc501ff5f62bce13d5282
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673839"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739847"
 ---
-# <a name="debugging-apps-in-a-local-docker-container"></a>Yerel bir Docker kapsayıcısı uygulamalarında hata ayıklama
+# <a name="debugging-apps-in-a-local-docker-container"></a>Yerel Docker kapsayıcısındaki uygulamalarda hata ayıklama
 ## <a name="overview"></a>Genel Bakış
 Visual Studio 2017, bir Docker kapsayıcısı içinde geliştirin ve uygulamanızı yerel olarak doğrulamak için tutarlı bir yol sağlar.
 Kapsayıcı bir kod değişikliği yaptığınızda her zaman yeniden başlatmanız gerekmez.
@@ -34,7 +34,7 @@ Kullanabileceğiniz [Docker araç kutusu](https://www.docker.com/products/docker
 
 Docker araç kutusu kullanıyorsanız gerekecektir [Docker istemciyi Yapılandırma](vs-azure-tools-docker-setup.md)
 
-## <a name="1-create-a-web-app"></a>1. Bir web uygulaması oluşturma
+## <a name="1-create-a-web-app"></a>1. Web uygulaması oluşturma
 [!INCLUDE [create-aspnet5-app](../azure/includes/create-aspnet5-app.md)]
 
 ## <a name="2-edit-your-code-and-refresh"></a>2. Kodunuz ve yenileme Düzenle
@@ -75,7 +75,7 @@ Genellikle, değişiklikleri daha fazla inceleme, Visual Studio hata ayıklama �
 5. Kesme noktasına isabet hakkında sayfasına gidin.
 6. Kesme noktası görüntülemek için Visual Studio'ya geçiş yapın ve ileti değerini denetleyin.
 
-   ![][2]
+   ![Kesme noktası](media/vs-azure-tools-docker-edit-and-refresh/breakpoint.png)
 
 ## <a name="summary"></a>Özet
 Visual Studio 2017'de Docker desteği sayesinde, yerel olarak geliştirme konusunda bir Docker kapsayıcısı içinde üretim gerçekçilik çalışma verimliliği elde edebilirsiniz.
@@ -100,5 +100,3 @@ Visual Studio 2017'de Docker desteği sayesinde, yerel olarak geliştirme konusu
 * [Steve Lasker: VS, Las Vegas 2016 - Docker e2e Canlı](https://github.com/SteveLasker/Presentations/blob/master/VSLive2016/Vegas/)
 * [Build 2016 - Burada, en tanıtım @ ASP.NET Core'a giriş](https://channel9.msdn.com/Events/Build/2016/B810)
 * [Kapsayıcılar, Channel 9, .NET uygulamaları geliştirme](https://blogs.msdn.microsoft.com/stevelasker/2016/02/19/developing-asp-net-apps-in-docker-containers/)
-
-[2]: media/vs-azure-tools-docker-edit-and-refresh/breakpoint.png

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad584ac350038ced460b42a4e63d2b140d8396d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d34d3a54947799e41fca20200e0fb6a5305146f
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912974"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685012"
 ---
 # <a name="using-saved-intellitrace-data"></a>Kayıtlı IntelliTrace verilerini kullanma
 Bir IntelliTrace günlük (.iTrace) dosyasından hata ayıklamaya başladığınızda uygulamanızda yürütmesinde belirli noktaları gidin. Bu dosya, performans olayları, özel durumlar, iş parçacıkları, test adımları, modüller ve Intellitrace'in kaydettiği uygulamanız çalışırken, diğer sistem bilgileri içerebilir.
@@ -110,7 +110,7 @@ Bir IntelliTrace günlük (.iTrace) dosyasından hata ayıklamaya başladığın
 
 3.  Çağrı gözden geçirmek için çağrıları ve o noktasında kaydedilmiş bir parametre değerlerini içe genişletin.
 
-     (Klavye: göster veya gizle iç içe geçmiş bir çağrı için basın **sağ ok** veya **sol ok** sırasıyla anahtar. Gösterme ve gizleme iç içe geçmiş bir çağrı için parametre değerleri için basın **alanı** anahtarı.)
+     (Klavye: Göstermek veya iç içe geçmiş bir çağrı gizlemek için basın **sağ ok** veya **sol ok** sırasıyla anahtar. Gösterme ve gizleme iç içe geçmiş bir çağrı için parametre değerleri için basın **alanı** anahtarı.)
 
      Çağrıdan hata ayıklamayı başlatın.
 
@@ -143,7 +143,7 @@ Bir IntelliTrace günlük (.iTrace) dosyasından hata ayıklamaya başladığın
 
     |**Sütun**|**Gösterir**|
     |----------------|-------------------|
-    |**Türü**|Özel durumun .NET türü|
+    |**Tür**|Özel durumun .NET türü|
     |**En yeni ileti** gruplandırılmış özel durumlar veya **ileti** gruplanmamış özel durumları|Özel durum tarafından sağlanan ileti|
     |**Sayısı** gruplandırılmış özel durumlar|Özel durumun oluştuğu sayısı|
     |**İş parçacığı kimliği** gruplanmamış özel durumları|Özel durum oluşturan iş parçacığının kimliği|
@@ -189,8 +189,8 @@ Bir IntelliTrace günlük (.iTrace) dosyasından hata ayıklamaya başladığın
 
     |**IntelliTrace alanı**|**SharePoint ULS alanı**|
     |----------------------------|------------------------------|
-    |**Kimliği**|**EventID**|
-    |**düzeyi**|**düzeyi**|
+    |**Kimlik**|**EventID**|
+    |**Düzey**|**Düzey**|
     |**Kategori Kimliği**|**Kategori Kimliği**|
     |**Kategori**|**Kategori**|
     |**Alan**|**Ürün**|
@@ -207,7 +207,7 @@ Bir IntelliTrace günlük (.iTrace) dosyasından hata ayıklamaya başladığın
 
     ![IntelliTrace günlüğünü &#45; SharePoint işlenmeyen özel durumları](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
-   Bir kılavuz için bkz. [izlenecek yol: bir SharePoint uygulaması tarafından IntelliTrace kullanarak hata ayıklama](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Aracı kayıtları görüntüle veri türleri için [IntelliTrace özellikleri](../debugger/intellitrace-features.md).
+   Bir kılavuz için bkz. [izlenecek yol: IntelliTrace'i kullanarak SharePoint uygulamasında hata ayıklama](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Aracı kayıtları görüntüle veri türleri için [IntelliTrace özellikleri](../debugger/intellitrace-features.md).
 
 ###  <a name="ThreadsList"></a> İş parçacıkları listesi
  Hedef işlemde çalışan kayıtlı iş parçacıklarını inceleyin. Seçili bir iş parçacığı içindeki ilk geçerli IntelliTrace olayından hata ayıklamasını başlayabilirsiniz.
@@ -258,7 +258,7 @@ Bir IntelliTrace günlük (.iTrace) dosyasından hata ayıklamaya başladığın
 |----------------|-------------------|
 |**Modül adı**|Modül dosya adı|
 |**Modül yolu**|Burada modülün yüklendiğine disk konumu|
-|**Modül kimliği**|Sürüme özgü olan ve eşleştirme simgesi (PDB) dosyalarına katkıda bulunan modülün benzersiz tanımlayıcısı. Bkz: [sembol (.pdb) dosyalarını ve kaynak dosyaları bulma](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).|
+|**Modül kimliği**|Sürüme özgü olan ve eşleştirme simgesi (PDB) dosyalarına katkıda bulunan modülün benzersiz tanımlayıcısı. Bkz: [sembol (.pdb) dosyalarını ve kaynak dosyaları bulma](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).|
 
 ### <a name="where-can-i-get-more-information"></a>Daha fazla bilgiyi nereden bulabilirim?
  [IntelliTrace tek başına toplayıcısını kullanma](../debugger/using-the-intellitrace-stand-alone-collector.md)
@@ -273,4 +273,4 @@ Bir IntelliTrace günlük (.iTrace) dosyasından hata ayıklamaya başladığın
  [Visual Studio Debugger](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 #### <a name="guidance"></a>Kılavuz
- [Bölüm 6 - Visual Studio 2012 ile sürekli teslimat testi: sınama araç kutusu](http://go.microsoft.com/fwlink/?LinkID=255203)
+ [Bölüm 6 - Visual Studio 2012 ile sürekli teslimat testi: Sınama araç kutusu](http://go.microsoft.com/fwlink/?LinkID=255203)

@@ -9,12 +9,12 @@ description: Bulun ve Visual Studio aboneliğinize dahil olan Microsoft ürünle
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ec2dd900e0cfae3b150bba52e31834efb53628e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f8bfc394c2c40ee18df8a741f5101105cc2e189e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831438"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803220"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Visual Studio aboneliklerinde kullanarak abone indirmeleri
 Abone Avantajlarınızı bir parçası olarak çok çeşitli yazılım indirme işlemleri erişebilirsiniz.
@@ -30,7 +30,7 @@ Neden belirli ürünleri abonelerinin olmayabilir birkaç nedeni vardır:
 - **Ürün genel kullanıma açıktır.** Bazı araçlar, Sdk'ler, Ddk'ler ve hizmet paketleri genel olarak kullanılabilir [Microsoft Download Center](https://www.microsoft.com/download). Bu tür bazı ürünler için indirmeler yayımlanmıyor olabilir.
 - **Ürün henüz yayımlamadı.**  Çoğu (beta) sürümü yayın öncesi sürüm ve Sürüm Adayı indirme için kullanılabilir. Ancak, tüm betalar dahil; Örneğin, bazı betalar, özel kayıt veya uygunluk gerekir. Açık teknik beta programları hakkında daha fazla bilgi için lütfen [Microsoft Connect](http://connect.microsoft.com/).
 - **Ürün ülkenizde kullanılabilir değil.** Bazı Microsoft ürünleri bölgesel kısıtlamalardan dolayı kullanılamaz.
-- **Yedekli yazılım.** Bazı Office paketleri ve tek başına Office yüklemeleri ve ürün anahtarları, Office içeren Aboneliklerde artık sağlanmamaktadır. İndirmelere ve ürün anahtarlarına karşılık gelen en yüksek Office paketinin aynı sürümü için kullanılabilir.  Örneğin, arama, Powerpoint 2010 için arama yaparsanız, hiçbir sonuç oluşturmaz.  Ancak, Office 2010 için - Powerpoint 2010 yer alan Office suite - arama ve paketini indirin.
+- **Yedekli yazılım.** Bazı Office paketleri ve tek başına Office yüklemeleri ve ürün anahtarları, Office içeren Aboneliklerde artık sağlanmamaktadır. İndirmelere ve ürün anahtarlarına karşılık gelen en yüksek Office paketinin aynı sürümü için kullanılabilir.  Örneğin, arama, PowerPoint 2010 için arama yaparsanız, hiçbir sonuç oluşturmaz.  Ancak, Office 2010 için - PowerPoint 2010 yer alan Office suite - arama ve paketini indirin.
 
 ## <a name="what-do-i-get"></a>Neye sahip olurum?
 İndirme türü ve numarası, abonelik düzeyi ve program üyeliği bağlıdır.  Standart abonelikler Visual Studio Enterprise aboneleri, örneğin, farklı indirmeler kullanabilecekleri Microsoft Partner Network veya BizSpark programı aboneliğine aboneliklerini elde aboneleri daha olabilir.  Hangi yüklemeleri için her bir abonelik düzeyi kullanılabilir hakkında daha fazla bilgi için listesini indirme [avantaj olarak ürün düzeyinde](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx).

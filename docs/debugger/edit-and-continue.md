@@ -22,21 +22,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28f07d9a8f05ab63e6b945fd590fdf9fa576ca48
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 64018143403555dfa671c7fb79be09dcd04d9011
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048587"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562178"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Kodu düzenleme ve hata ayıklama devam Visual Studio'da (C#, VB, C++)
 Düzenle ve devam programınız kesme modundayken, kaynak kodunuzda değişiklikler yapmanızı sağlayan bir zamandan tasarruf özelliktir. Ne zaman, sürdürme programın yürütülmesini gibi bir yürütme komutu seçerek **devam** veya **adım**, Düzenle ve devam otomatik olarak kod değişiklikleri ile ilgili bazı sınırlamalar uygular. Bu, durdurmak, tüm programınızı yeniden derleyin ve hata ayıklama oturumunu yeniden zorunda kalmak yerine bir hata ayıklama oturumu sırasında kodunuzda değişiklikler yapmanızı sağlar.  
   
  Bu bölüm şu konuları içerir:   
   
- [Nasıl Yapılır: Düzenle ve Devam Et'i Etkinleştirme veya Devre Dışı Bırakma](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
+ [Nasıl yapılır: Etkinleştirme ve devre dışı Düzenle ve devam et](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
   
- [Nasıl Yapılır: Kod Değişikliklerini Durdurma](../debugger/how-to-stop-code-changes.md)   
+ [Nasıl yapılır: Kod değişikliklerini durdurma](../debugger/how-to-stop-code-changes.md)   
   
  [Düzenle ve Devam Et (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)  
   
@@ -49,4 +49,4 @@ Düzenle ve devam programınız kesme modundayken, kaynak kodunuzda değişiklik
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
  [Düzenle ve devam et, hata ayıklama, Seçenekler iletişim kutusu](https://msdn.microsoft.com/library/bcew296c.aspx)   
- [Hata Ayıklayıcısı Temel Bilgileri](../debugger/getting-started-with-the-debugger.md)
+ [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)

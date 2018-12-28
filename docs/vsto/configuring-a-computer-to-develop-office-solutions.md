@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Office development in Visual Studio, installing tools
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 19c7e012775ff1a761b5c267f05b8f7ff250d5c6
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: a0e6f44b923bf515977c07bbfec69b9c8e58593c
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672232"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441424"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Office çözümleri geliştirmek için bilgisayarı yapılandırma
 
@@ -55,5 +55,5 @@ Sorun yaşamaya devam ederseniz bkz [Office çözümlerindeki hatalar için ek d
 [Başlama &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
 [Nasıl yapılır: Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
 [Nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları yükleme](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
-[Nasıl yapılır: yükleme Office birincil birlikte çalışma derlemeleri](../vsto/how-to-install-office-primary-interop-assemblies.md)  
+[Nasıl yapılır: Office birincil birlikte çalışma derlemelerini yükleme](../vsto/how-to-install-office-primary-interop-assemblies.md)  
 [Office uygulaması ve proje türüne göre kullanılabilen özellikler](../vsto/features-available-by-office-application-and-project-type.md)

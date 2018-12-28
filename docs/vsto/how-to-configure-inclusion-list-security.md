@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: ekleme listesi güvenliğini yapılandırma'
+title: 'Nasıl Yapılır: Ekleme listesi güvenliğini yapılandırma'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,39 +11,39 @@ dev_langs:
 helpviewer_keywords:
 - permissions [Office development in Visual Studio
 - inclusion lists [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e5bd1794b76485d60588b94d3ca139a314f9723
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: b13084a0010bef21283dc7890dd5b1064392e1b2
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255843"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647741"
 ---
-# <a name="how-to-configure-inclusion-list-security"></a>Nasıl yapılır: ekleme listesi güvenliğini yapılandırma
-  Yönetici izinlerine sahipseniz, yapılandırabileceğiniz [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] denetlemek için son kullanıcıların Office çözümleri listesine bir güven kararı kaydederek yükleme seçeneği verilip verilmediğini güven istemi. Ekleme listeleri hakkında daha fazla bilgi için bkz: [ekleme listeleri kullanarak güven Office çözümleri](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
+# <a name="how-to-configure-inclusion-list-security"></a>Nasıl Yapılır: Ekleme listesi güvenliğini yapılandırma
+  Yönetici izinleriniz varsa, yapılandırabileceğiniz [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] denetlemek için son kullanıcıların Office çözümlerine güven kararı listesine kaydederek yükleme seçeneğiniz verilip verilmediğini güven istemi. Ekleme listeleri hakkında daha fazla bilgi için bkz. [ekleme listelerini kullanarak Office güven çözümleri](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Her beş bölgeleri çözümleri için aşağıdaki seçenekleri ayarlayabilirsiniz:  
+ Her beş bölgelerinin olan çözümler için aşağıdaki seçenekleri ayarlayabilirsiniz:  
   
 -   Etkinleştirme [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] güven istemi anahtarını ve ekleme listesi. Son kullanıcıların herhangi bir sertifika ile imzalanmış Office çözümlerine güven verme izin verebilirsiniz.  
   
--   Kısıtlama [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] güven istemi anahtarını ve ekleme listesi. Yayımcı tanımlar, ancak zaten güvenilir olmayan bir sertifikayla imzalanmış Office çözümleri yüklemek son kullanıcılara izin verebilirsiniz.  
+-   Kısıtlama [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] güven istemi anahtarını ve ekleme listesi. Yayımcı tanımlar, ancak zaten güvenilir değil bir sertifikayla imzalanmış Office çözümlerini yüklemek son kullanıcılara izin verebilirsiniz.  
   
--   Devre dışı [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] güven istemi anahtarını ve ekleme listesi. Son kullanıcılar açıkça güvenilir bir sertifika ile imzalanmamış herhangi bir Office çözümü yüklemesini engelleyebilir.  
+-   Devre dışı [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] güven istemi anahtarını ve ekleme listesi. Son kullanıcılara açıkça güvenilir bir sertifika ile imzalanmamış herhangi bir Office çözümünü yüklenmesini engelleyebilir.  
   
 ## <a name="enable-the-inclusion-list"></a>Ekleme listesini etkinleştir  
- Son kullanıcılara bu bölgeden gelen herhangi bir Office çözümü çalıştırma ve yükleme seçeneğiyle gösterilmesini istediğiniz zaman bir bölgenin ekleme listesi etkinleştirin.  
+ Bu bölgeden gelen herhangi bir Office çözümü çalıştırma ve yükleme seçeneğiyle sunulan son kullanıcıların istediğinizde bir bölgenin ekleme listesi etkinleştirin.  
   
 ### <a name="to-enable-the-inclusion-list-by-using-the-registry-editor"></a>Kayıt Defteri Düzenleyicisi'ni kullanarak ekleme listesini etkinleştirmek için  
   
 1.  Kayıt Defteri Düzenleyicisi'ni açın:  
   
-    1.  Tıklatın **Başlat**ve ardından **çalıştırmak**.  
+    1.  Tıklayın **Başlat**ve ardından **çalıştırma**.  
   
     2.  İçinde **açık** kutusuna **regedt32.exe**ve ardından **Tamam**.  
   
@@ -53,21 +53,21 @@ ms.locfileid: "35255843"
   
      Anahtar mevcut değilse oluşturun.  
   
-3.  Aşağıdaki alt anahtarları olarak ekleyin **dize değeri**, zaten ilişkili değerleri ile birlikte mevcut değil.  
+3.  Aşağıdaki alt olarak eklemeniz **dize değeri**, zaten ilişkili değerleri mevcut değil.  
   
     |Dize değeri alt anahtarı|Değer|  
     |-------------------------|-----------|  
     |**Internet**|**AuthenticodeRequired**|  
-    |**UntrustedSites**|**devre dışı**|  
+    |**UntrustedSites**|**Devre dışı**|  
     |**Bilgisayarım**|**Etkin**|  
     |**LocalIntranet**|**Etkin**|  
     |**TrustedSites**|**Etkin**|  
   
-     Varsayılan olarak, **Internet** değerine sahip **AuthenticodeRequired** ve **UntrustedSites** değerine sahip **devre dışı**.  
+     Varsayılan olarak, **Internet** değerine sahip **AuthenticodeRequired** ve **UntrustedSites** değerine sahip **devre dışı bırakılmış**.  
   
-### <a name="to-enable-the-inclusion-list-programmatically"></a>Ekleme listesini programlı olarak etkinleştirmek için  
+### <a name="to-enable-the-inclusion-list-programmatically"></a>Ekleme listelerini programlı olarak etkinleştirmek için  
   
-1.  Visual Basic veya Visual C# konsol uygulaması oluşturun.  
+1.  Visual Basic veya Visual oluşturma C# konsol uygulaması.  
   
 2.  Açık *Program.vb* veya *Program.cs* dosya düzenleme için ve aşağıdaki kodu ekleyin.  
   
@@ -96,13 +96,13 @@ ms.locfileid: "35255843"
 3.  Derleme ve uygulamayı çalıştırın.  
   
 ## <a name="restrict-the-inclusion-list"></a>Ekleme listesini kısıtlamak  
- Çözümleri, kullanıcılar için bir güven kararı istenir önce kimlik bilmesinin Authenticode sertifikaları kullanılarak imzalanmalıdır. böylece ekleme listesini sınırlayın.  
+ Ekleme listesi kısıtlayabilirsiniz, böylece çözümleri kullanıcılar için bir güven karar istenmeden önce kimlik bilinen Authenticode sertifikalar ile imzalanması gerekir.  
   
 ### <a name="to-restrict-the-inclusion-list"></a>Ekleme listesini kısıtlamak için  
   
 1.  Kayıt Defteri Düzenleyicisi'ni açın:  
   
-    1.  Tıklatın **Başlat**ve ardından **çalıştırmak**.  
+    1.  Tıklayın **Başlat**ve ardından **çalıştırma**.  
   
     2.  İçinde **açık** kutusuna **regedt32.exe**ve ardından **Tamam**.  
   
@@ -112,21 +112,21 @@ ms.locfileid: "35255843"
   
      Anahtar mevcut değilse oluşturun.  
   
-3.  Aşağıdaki alt anahtarları olarak ekleyin **dize değeri**, zaten ilişkili değerleri ile birlikte mevcut değil.  
+3.  Aşağıdaki alt olarak eklemeniz **dize değeri**, zaten ilişkili değerleri mevcut değil.  
   
     |Dize değeri alt anahtarı|Değer|  
     |-------------------------|-----------|  
-    |**UntrustedSites**|**devre dışı**|  
+    |**UntrustedSites**|**Devre dışı**|  
     |**Internet**|**AuthenticodeRequired**|  
     |**Bilgisayarım**|**AuthenticodeRequired**|  
     |**LocalIntranet**|**AuthenticodeRequired**|  
     |**TrustedSites**|**AuthenticodeRequired**|  
   
-     Varsayılan olarak, **Internet** değerine sahip **AuthenticodeRequired** ve **UntrustedSites** değerine sahip **devre dışı**.  
+     Varsayılan olarak, **Internet** değerine sahip **AuthenticodeRequired** ve **UntrustedSites** değerine sahip **devre dışı bırakılmış**.  
   
-### <a name="to-restrict-the-inclusion-list-programmatically"></a>Ekleme listesini programlı olarak kısıtlamak için  
+### <a name="to-restrict-the-inclusion-list-programmatically"></a>Program aracılığıyla ekleme listesini kısıtlamak için  
   
-1.  Visual Basic veya Visual C# konsol uygulaması oluşturun.  
+1.  Visual Basic veya Visual oluşturma C# konsol uygulaması.  
   
 2.  Açık *Program.vb* veya *Program.cs* dosya düzenleme için ve aşağıdaki kodu ekleyin.  
   
@@ -154,34 +154,34 @@ ms.locfileid: "35255843"
   
 3.  Derleme ve uygulamayı çalıştırın.  
   
-## <a name="disable-the-inclusion-list"></a>Ekleme listesi devre dışı bırak  
- Son kullanıcılar yalnızca güvenilir ve bilinen bir sertifikayla imzalanmış çözümleri yükleyebilmek ekleme listesi devre dışı bırakabilirsiniz.  
+## <a name="disable-the-inclusion-list"></a>Ekleme listelerini devre dışı bırak  
+ Son kullanıcılar yalnızca güvenilir ve bilinen bir sertifikayla imzalanmış çözümleri yükleyebilir, böylece ekleme listesi devre dışı bırakabilirsiniz.  
   
-### <a name="to-disable-the-inclusion-list"></a>Ekleme listesi devre dışı bırakmak için  
+### <a name="to-disable-the-inclusion-list"></a>Ekleme listelerini devre dışı bırakmak için  
   
 1.  Kayıt Defteri Düzenleyicisi'ni açın:  
   
-    1.  Tıklatın **Başlat**ve ardından **çalıştırmak**.  
+    1.  Tıklayın **Başlat**ve ardından **çalıştırma**.  
   
     2.  İçinde **açık** kutusuna **regedt32.exe**ve ardından **Tamam**.  
   
-2.  Bu zaten yoksa, aşağıdaki kayıt defteri anahtarı oluşturun:  
+2.  Bu zaten mevcut değilse, aşağıdaki kayıt defteri anahtarı oluşturun:  
   
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
   
-3.  Aşağıdaki alt anahtarları olarak ekleyin **dize değeri**, zaten ilişkili değerleri ile birlikte mevcut değil.  
+3.  Aşağıdaki alt olarak eklemeniz **dize değeri**, zaten ilişkili değerleri mevcut değil.  
   
     |Dize değeri alt anahtarı|Değer|  
     |-------------------------|-----------|  
-    |**UntrustedSites**|**devre dışı**|  
-    |**Internet**|**devre dışı**|  
-    |**Bilgisayarım**|**devre dışı**|  
-    |**LocalIntranet**|**devre dışı**|  
-    |**TrustedSites**|**devre dışı**|  
+    |**UntrustedSites**|**Devre dışı**|  
+    |**Internet**|**Devre dışı**|  
+    |**Bilgisayarım**|**Devre dışı**|  
+    |**LocalIntranet**|**Devre dışı**|  
+    |**TrustedSites**|**Devre dışı**|  
   
-### <a name="to-disable-the-inclusion-list-programmatically"></a>Ekleme listesi program aracılığıyla devre dışı bırakmak için  
+### <a name="to-disable-the-inclusion-list-programmatically"></a>Ekleme listelerini program aracılığıyla devre dışı bırakmak için  
   
-1.  Visual Basic veya Visual C# konsol uygulaması oluşturun.  
+1.  Visual Basic veya Visual oluşturma C# konsol uygulaması.  
   
 2.  Açık *Program.vb* veya *Program.cs* dosya düzenleme için ve aşağıdaki kodu ekleyin.  
   
@@ -212,6 +212,6 @@ ms.locfileid: "35255843"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Ekleme listelerini kullanarak Office çözümlerine güven](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
- [Office çözümleri güvenli](../vsto/securing-office-solutions.md)  
+ [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)  
   
   

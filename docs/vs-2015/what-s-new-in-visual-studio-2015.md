@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1d2b37a988f0078149228cce808397f9fb915d1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 16c9a490970d6c41a5661f0755f09731ce2fba7e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062444"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740279"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Hangi&#39;Visual Studio 2015'te yeni s
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -137,14 +137,14 @@ Birçok geliştirme ve Visual Studio ALM yeni özellikler hakkında daha fazla b
 -   **C++ / Android**. Kullanım [platformlar arası Mobil Geliştirme için Visual C++](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) üçüncü taraf araçlarla birlikte şablonları ister [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) Windows ve Android için yerel uygulamalar oluşturmak için.
 
 ## <a name="debugging-and-diagnostics"></a>Hata Ayıklama ve Tanılama
- Hata ayıklamaya yenilikler hakkında daha fazla bilgi için bkz: [Visual Studio 2015 hata ayıklayıcısındaki yenilikler](./debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md).
+ Hata ayıklamaya yenilikler hakkında daha fazla bilgi için bkz: [Visual Studio 2015 hata ayıklayıcısındaki yenilikler](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015).
 
  Tanılama'da yenilikler hakkında daha fazla bilgi için bkz: [profil oluşturma araçlarındaki yenilikler](./profiling/what-s-new-in-profiling-tools.md).
 
  Aşağıdaki yeni veya geliştirilmiş kodunuz üzerinde farklı türde tanılama ve analiz gerçekleştiren araçlar:
 
 ### <a name="perftips"></a>PerfTips
- PerfTips yöntemleri yürütme süresini hata ayıklama sırasında hızlı bir şekilde profil oluşturucu çağırmak zorunda kalmadan performans sorunlarını saptayın olanak tanıyarak görüntüler. Başlamak için bkz: [PerfTips: performans bilgilerini bir bakışta Visual Studio ile hata ayıklama sırasında](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
+ PerfTips yöntemleri yürütme süresini hata ayıklama sırasında hızlı bir şekilde profil oluşturucu çağırmak zorunda kalmadan performans sorunlarını saptayın olanak tanıyarak görüntüler. Başlamak için bkz: [PerfTips: Performans bilgileri bir Visual Studio ile hata ayıklarken bakışta](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
 
 ### <a name="error-list"></a>Hata Listesi
  Hata listesi, artık herhangi bir sütunu filtrelemeyi destekler. Yazdığınız sırada bir kod değişikliği binlerce uyarılar üretir zaman bile tüm C# veya Visual Basic çözümünüz arasında ayrıca hatalar, uyarılar ve Kod Analizi canlı bir görünümünü gösterir. Yeni hata listesi geriye dönük olarak uyumludur mevcut kullanım ile. Daha fazla bilgi için [Hata Listesi penceresi](./ide/reference/error-list-window.md).
@@ -183,18 +183,18 @@ Birçok geliştirme ve Visual Studio ALM yeni özellikler hakkında daha fazla b
 ### <a name="notification-hub"></a>Bildirim hub'ı
  Bildirim hub'ı için kullanıcı Arabirimi hızlı tarama kolaylaştırmak üzere basitleştirilmiştir. Performans sorunlarını, işleme sorunlarını ve kilitlenmeleri de dahil olmak üzere ek bildirim türlerini eklenmiştir ve gösteren bir bildirimini durdurmak için Visual Studio artık söyleyebilirsiniz. Daha fazla bilgi için [Visual Studio bildirimleri](./ide/visual-studio-notifications.md).
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: kodunuzu (yalnızca Enterprise ve Professional sürümleri) ne olduğunu Bul
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: Kodunuzu (yalnızca Enterprise ve Professional sürümleri) ne olduğunu Bul
  Düzenleyiciden çıkmadan kodunuz hakkında - bilgi bulma sırasında çalışmasına odaklı kalmak. Değişiklikleri ve diğer geçmişi iş öğelerini, hataları, vb. Visual Studio Team Services (VSTS), ya da Team Foundation Server (TFS) içinde depolanan kod için kod gözden geçirmeleri, gözden geçirebilirsiniz.
 
  Visual Studio Enterprise ve Visual Studio Professional, artık şunları yapabilirsiniz:
 
 - Visual Studio düzenleyicisinde bir bütün kod dosyanın geçmişini Al.
 
-   ![CodeLens: kod dosyası ayrıntılarınıza](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens: Kod dosyası ayrıntılarını Al](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - Kodunuzu değiştiren kişi gösteren bir grafik görürsünüz. Bu, takımınızın değişiklikleri kalıpları bulmasına ve etkilerini değerlendirmenize yardımcı olabilir.
 
-   ![CodeLens: Bkz: kod değişikliklerini geçmişi grafik olarak](./ide/media/codelens.png "CodeLens")
+   ![CodeLens: Kod değişiklikleri geçmişi grafik olarak bkz](./ide/media/codelens.png "CodeLens")
 
 - Kodunuzu son değiştirildiği bir kolayca görebilir.
 

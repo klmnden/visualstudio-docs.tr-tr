@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 4081fae86b41a9bf8b925bf84d403b3be6628294
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1ff045cd571f24c57b3f735b0fdf68c58aaa23bb
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068373"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740055"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Bir Visual C++ DLL'ye test etme
 
@@ -22,7 +22,7 @@ Bu konuda, C++ için birim testleri Microsoft Test Çerçevesi ile Evrensel Wind
 
  Bu konuda birim testi geliştirmede ilk adım olarak kullanma işlemini gösterir. Bu yaklaşım önce test ettiğiniz sistemde belirli bir davranış doğrulayan bir test yöntemi yazın ve ardından testin başarılı olması kod yazacaksınız. Aşağıdaki yordamlar sırasına göre değişiklikler yaparak, bu strateji ilk Yazımdan sonra birim testleri yazma ve test etmek istediğiniz kod tersine çevirebilirsiniz.
 
- Bu konuda ayrıca tek bir Visual Studio çözümü de ayrı projeler için birim testleri ve test etmek istediğiniz DLL oluşturur. Doğrudan DLL projede birim testleri de içerebilir veya ayrı çözümler için birim testleri oluşturabilirsiniz ve. DLL. Bkz: [mevcut C++ uygulamalarına birim testleri ekleme](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) kullanmak için hangi yapı ilişkin ipuçları için.
+ Bu konuda ayrıca tek bir Visual Studio çözümü de ayrı projeler için birim testleri ve test etmek istediğiniz DLL oluşturur. Doğrudan DLL projede birim testleri de içerebilir veya ayrı çözümler için birim testleri oluşturabilirsiniz ve. DLL. Bkz: [mevcut C++ uygulamalarına birim testleri ekleme](../test/how-to-use-microsoft-test-framework-for-cpp.md) kullanmak için hangi yapı ilişkin ipuçları için.
 
 ##  <a name="Create_the_solution_and_the_unit_test_project"></a> Çözüm ve birim testi projesi oluşturma
 

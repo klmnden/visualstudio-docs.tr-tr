@@ -1,5 +1,5 @@
 ---
-title: '&#39; &#39; ECMA 327 Compact profilinde kullanılamaz | Microsoft Docs'
+title: "'with' ECMA 327 Compact profilinde yok | Microsoft Docs"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,16 +20,16 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 68e9a9acebd0225c5bcb86573698dbd7d116e0d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 61546ac1dbc03184691e4e178070ecbd7c86cf75
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788831"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802002"
 ---
-# <a name="39with39-not-available-in-the-ecma-327-compact-profile"></a>&#39; &#39; ECMA 327 Compact profilinde mevcut değil
-'with' ECMA 327 Compact profilinde (ErrWithNotInCP mevcut değil  
+# <a name="with-not-available-in-the-ecma-327-compact-profile"></a>ECMA 327 Compact Profilinde 'with' kullanılamaz
+'with' ECMA 327 Compact profilinde (ErrWithNotInCP kullanılamaz  
   
- Kullanılacak verilmiyor Compact profilinde anahtar sözcüğü ile.  
+ Kullanılacak verilmiyor Compact profilinde anahtar sözcüğüne sahip.  
   
- Hakkında daha fazla bilgi için anahtar sözcüğüyle bkz [deyimiyle](../../javascript/reference/with-statement-javascript.md).
+ Hakkında daha fazla bilgi için bkz anahtar sözcüğü ile [ifadesiyle](../../javascript/reference/with-statement-javascript.md).

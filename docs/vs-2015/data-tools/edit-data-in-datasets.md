@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a983b671b5c6b43009ad3cc32c2cb287977f05c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65e01b13fb1bec83cc7254133c99c16a98220e22
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949298"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648835"
 ---
 # <a name="edit-data-in-datasets"></a>Veri kümelerindeki verileri düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,9 +81,9 @@ Herhangi bir veritabanı tablosundaki verileri çok düzenlediğiniz gibi veri t
   
 - Her veri satırı onun için ilgili bilgiler içeren <xref:System.Data.DataRow.RowState%2A> (örneğin, <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, veya <xref:System.Data.DataRowState>).  
   
-- Her değiştirilen veri satırı o satırın birden çok sürümünü içerir (<xref:System.Data.DataRowVersion>), özgün sürüm (değişikliklerden önce) ve geçerli sürümü (değişikliklerden sonra). Bir değişiklik olduğunda Beklemede olduğu süre boyunca (ne zaman yanıt süresi <xref:System.Data.DataTable.RowChanging> olay), üçüncü bir sürüm — önerilen sürüm — de kullanılabilir. Daha fazla bilgi için [nasıl yapılır: bir DataRow belirli sürümlerini alma](../data-tools/how-to-get-specific-versions-of-a-datarow.md).  
+- Her değiştirilen veri satırı o satırın birden çok sürümünü içerir (<xref:System.Data.DataRowVersion>), özgün sürüm (değişikliklerden önce) ve geçerli sürümü (değişikliklerden sonra). Bir değişiklik olduğunda Beklemede olduğu süre boyunca (ne zaman yanıt süresi <xref:System.Data.DataTable.RowChanging> olay), üçüncü bir sürüm — önerilen sürüm — de kullanılabilir.
   
-  <xref:System.Data.DataSet.HasChanges%2A> Yöntemi bir veri kümesinin döndürür `true` kümesinde değişiklik yapılmadıysa. Değiştirilen satırların var olduğunu belirledikten sonra çağırabilirsiniz `GetChanges` yöntemi bir <xref:System.Data.DataSet> veya <xref:System.Data.DataTable> değiştirilen satırlar kümesini geri dönmek için. Daha fazla bilgi için [nasıl yapılır: değiştirilen satırları alma](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+  <xref:System.Data.DataSet.HasChanges%2A> Yöntemi bir veri kümesinin döndürür `true` kümesinde değişiklik yapılmadıysa. Değiştirilen satırların var olduğunu belirledikten sonra çağırabilirsiniz `GetChanges` yöntemi bir <xref:System.Data.DataSet> veya <xref:System.Data.DataTable> değiştirilen satırlar kümesini geri dönmek için. Daha fazla bilgi için [nasıl yapılır: Değiştirilen satırları alma](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Bir satırda değişiklik yapılıp yapılmadığını belirlemek için  
   
@@ -115,4 +115,3 @@ Herhangi bir veritabanı tablosundaki verileri çok düzenlediğiniz gibi veri t
   
      [!code-csharp[VbRaddataEditing#23](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#23)]
      [!code-vb[VbRaddataEditing#23](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#23)]
-

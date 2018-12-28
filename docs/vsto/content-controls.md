@@ -36,17 +36,17 @@ helpviewer_keywords:
 - custom XML parts, content controls
 - templates [Office development in Visual Studio], content controls
 - BuildingBlockGalleryContentControl class
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 924f31ac38219453ae96fd573d968b18ce19c913
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: a4cb82609ef8f1a37379c1451e733e8b046313e2
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672905"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441528"
 ---
 # <a name="content-controls"></a>İçerik denetimleri
   İçerik denetimleri tasarım belgeleri ve bu özelliklere sahip şablonları sağlamak sizin için bir yol:  
@@ -78,7 +78,7 @@ ms.locfileid: "50672905"
 >  Open XML biçiminde kaydedilen belgelerde içerik denetimleri kullanabilirsiniz. Word 97-2003 belgesi kaydedilen belgelerde içerik denetimlerini kullanamazsınız (*.doc*) biçimi.  
   
 ## <a name="types-of-content-controls"></a>İçerik denetimi türleri  
- Dokuz farklı belgelere ekleyebileceğiniz içerik denetimi türleri vardır. İçerik denetimleri çoğunu olmayan karşılık gelen türü <xref:Microsoft.Office.Tools.Word> ad alanı. Genel kullanabilirsiniz <xref:Microsoft.Office.Tools.Word.ContentControl>, hangi temsil edebilir kullanılabilir içerik denetimleri. Her kullanılabilir içerik denetimlerini nasıl kullanılacağını gösteren bir kılavuz için bkz. [izlenecek yol: içerik denetimlerini kullanarak şablon oluşturma](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
+ Dokuz farklı belgelere ekleyebileceğiniz içerik denetimi türleri vardır. İçerik denetimleri çoğunu olmayan karşılık gelen türü <xref:Microsoft.Office.Tools.Word> ad alanı. Genel kullanabilirsiniz <xref:Microsoft.Office.Tools.Word.ContentControl>, hangi temsil edebilir kullanılabilir içerik denetimleri. Her kullanılabilir içerik denetimlerini nasıl kullanılacağını gösteren bir kılavuz için bkz. [izlenecek yol: İçerik denetimlerini kullanarak şablon oluşturma](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
   
 ### <a name="build-block-gallery"></a>Yapı Taşı Galerisi  
  Kullanıcılar bir listesinden seçmek bir Yapı Taşı Galerisi sağlar *belge yapı taşları* belgeye eklenecek. Bir belge yapı taşı, yaygın bir kapak sayfası, biçimlendirilmiş bir tablo veya bir üst bilgisi gibi birden çok kez kullanılmak üzere oluşturulan içerik parçasıdır. Daha fazla bilgi için <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> türü. Yapı taşları hakkında daha fazla bilgi için bkz. [Word 2007'de geliştiricilerine yönelik yenilikler](/previous-versions/office/developer/office-2007/bb266218(v=office.12)).  
@@ -119,8 +119,8 @@ ms.locfileid: "50672905"
   
 |Bu görev için:|Bunu yapın:|  
 |--------------------|--------------|  
-|Alma veya denetimde görüntülenen metni ayarlama.|Kullanım **metin** özelliği. **Not:** <xref:Microsoft.Office.Tools.Word.PictureContentControl> ve <xref:Microsoft.Office.Tools.Word.ContentControl> türleri bu özelliğe sahip değildir.|  
-|Alın veya bir kullanıcı denetimi Düzenleyene, denetim bir veri kaynağı ile doldurulur veya denetimin içeriği silinene kadar denetimde görüntülenen metnin geçici ayarlayın.|Kullanım **PlaceholderText** özelliği. **Not:** <xref:Microsoft.Office.Tools.Word.PictureContentControl> türü, bu özelliğe sahip değildir.|  
+|Alma veya denetimde görüntülenen metni ayarlama.|Kullanım **metin** özelliği. **Not:**  <xref:Microsoft.Office.Tools.Word.PictureContentControl> Ve <xref:Microsoft.Office.Tools.Word.ContentControl> türleri bu özelliğe sahip değildir.|  
+|Alın veya bir kullanıcı denetimi Düzenleyene, denetim bir veri kaynağı ile doldurulur veya denetimin içeriği silinene kadar denetimde görüntülenen metnin geçici ayarlayın.|Kullanım **PlaceholderText** özelliği. **Not:**  <xref:Microsoft.Office.Tools.Word.PictureContentControl> Türü, bu özelliğe sahip değildir.|  
 |GET veya kullanıcı tıkladığında içerik denetiminin kenarlık görüntülenen başlığı ayarlayın.|Kullanım **başlık** özelliği.|  
 |Kullanıcı denetimi Düzenleyene sonra Denetim belgeden otomatik olarak kaldırın. (Metin denetiminde belgede kalır.)|Kullanım **geçici** özelliği.|  
 |Kullanıcı içerik denetimine tıkladığında veya imleci içerik denetimine programlı olarak taşındığında kodu çalıştırın.|Tanıtıcı <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> Olay denetimi.|  
@@ -142,7 +142,7 @@ ms.locfileid: "50672905"
 > [!NOTE]  
 >  Oluşturursanız, bir <xref:Microsoft.Office.Tools.Word.GroupContentControl> katıştırılmış içerik denetimleri içeren, katıştırılmış içerik denetimleri otomatik olarak korunmaz. Kullanmalısınız **LockContents** her özellik katıştırılmış kullanıcıların içeriklerini düzenlemesini önlemek için denetimi.  
   
- İçerik denetimleri belge bölümlerini koruma için nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [nasıl yapılır: içerik denetimlerini kullanarak belge bölümlerini koruma](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+ İçerik denetimleri belge bölümlerini koruma için nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [nasıl yapılır: İçerik denetimlerini kullanarak belge bölümlerini koruma](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
 ##  <a name="DataBinding"></a> İçerik denetimlerine veri bağlama  
  Bir içerik denetimi veri kaynağına bağlayarak veri belgeleri görüntüleyebilirsiniz. Veri kaynağı güncelleştirildiğinde, içerik denetimi değişiklikleri yansıtır. Ayrıca, değişiklikleri veri kaynağına kaydedebilirsiniz.  
@@ -158,7 +158,7 @@ ms.locfileid: "50672905"
 ### <a name="use-the-windows-forms-data-binding-model"></a>Windows Forms veri bağlama modelini kullanın  
  Çoğu içerik denetimleri, Windows Forms kullanan basit veri bağlama modelini destekler. Basit veri bağlama, bir denetim bir veri tablosunun bir sütunu bir değer gibi bir tek veri öğesine bağlı olduğu anlamına gelir. Daha fazla bilgi için [veri bağlama ve Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
   
- Belge düzeyinde projelerde verileri içerik denetimlerini kullanarak bağlayabilirsiniz **veri kaynakları** penceresinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Belgeler için içerik verilere bağlı denetimler ekleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: belgeleri veritabanı verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-a-database.md) ve [nasıl yapılır: belgeleri nesne verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-objects.md).  
+ Belge düzeyinde projelerde verileri içerik denetimlerini kullanarak bağlayabilirsiniz **veri kaynakları** penceresinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Belgeler için içerik verilere bağlı denetimler ekleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: Belgeleri veritabanı verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-a-database.md) ve [nasıl yapılır: Belgeleri nesne verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-objects.md).  
   
  Aşağıdaki tabloda her bir veri türü adlarınıza bağlayabileceğiniz içerik denetimleri listeler **veri kaynakları** penceresi.  
   
@@ -170,7 +170,7 @@ ms.locfileid: "50672905"
   
  Belge düzeyi ve VSTO eklentisi projeleri, bir içerik denetimi veri kaynağına program aracılığıyla kullanarak bağlayabilirsiniz <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> yöntemi <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> denetiminin özelliği. Bunu yaparsanız bir dizeyi geçirmek **metin** için *propertyName* parametresinin <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> yöntemi. **Metin** içerik denetimleri için varsayılan veri bağlama özelliği bir özelliktir.  
   
- İçerik denetimleri de denetiminde değişiklikleri veri kaynağına güncelleştirilir, iki yönlü veri bağlamayı destekler. Daha fazla bilgi için [nasıl yapılır: konak kontrolü verileriyle veri kaynağını güncelleme](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
+ İçerik denetimleri de denetiminde değişiklikleri veri kaynağına güncelleştirilir, iki yönlü veri bağlamayı destekler. Daha fazla bilgi için [nasıl yapılır: Bir konak kontrolü verileriyle veri kaynağını güncelleme](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
   
 > [!NOTE]  
 >  İçerik denetimleri, karmaşık veri bağlamayı desteklemez. Bağlarsanız bir <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> veya <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> denetimi tıkladıklarında bir veri kaynağına Windows Forms veri modelini kullanarak, kullanıcılar yalnızca tek bir değer görürsünüz. Bu denetimler, kullanıcıların seçebileceği veri değerlerini bir dizi bağlamak istiyorsanız, özel bir XML parçasına öğeleri bu denetimler bağlayabilirsiniz.  
@@ -188,7 +188,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price")
 plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, null);  
 ```  
   
- İçerik denetimlerini özel XML bölümlerine daha ayrıntılı bir şekilde bağlamak nasıl erişileceğini gösteren bir kılavuz için bkz. [izlenecek yol: içerik denetimlerini özel XML bölümlerine bağlama](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
+ İçerik denetimlerini özel XML bölümlerine daha ayrıntılı bir şekilde bağlamak nasıl erişileceğini gösteren bir kılavuz için bkz. [izlenecek yol: İçerik denetimlerini özel XML bölümlerine bağlama](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
  Bir içerik denetimi için özel bir XML parçasına bağlama, çift yönlü veri bağlama otomatik olarak etkinleştirilir. Bir kullanıcı denetiminde metin düzenlerse, karşılık gelen XML öğelerine otomatik olarak güncelleştirilir. Benzer şekilde, XML öğelerine bağlanan içerik denetimlerini özel XML bölümleri içindeki öğe değerlerini değiştirdiyseniz, yeni veriler görüntülenir.  
   
@@ -229,7 +229,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="event-limitations"></a>Olay sınırlamaları  
  İçerik denetimleri, kullanıcı, metin veya diğer öğeleri denetiminde değiştiğinde bir olay sağlamaz. Örneğin, bir kullanıcı farklı bir öğe seçtiğinde hiçbir olay yok bir <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> veya <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>.  
   
- Kullanıcının ne zaman bir içerik denetimi içeriğini düzenlediğini belirlemek için denetimini özel bir XML parçasına bağlama ve ardından işleme <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> olay. Kullanıcı özel bir XML parçasına bağlı bir denetimin içeriğini değiştirdiğinde bu olay tetiklenir. Bir içerik denetimi için özel bir XML parçasına bağlama yapmayı gösteren bir anlatım için bkz: [izlenecek yol: içerik denetimlerini özel XML bölümlerine bağlama](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
+ Kullanıcının ne zaman bir içerik denetimi içeriğini düzenlediğini belirlemek için denetimini özel bir XML parçasına bağlama ve ardından işleme <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> olay. Kullanıcı özel bir XML parçasına bağlı bir denetimin içeriğini değiştirdiğinde bu olay tetiklenir. Bir içerik denetimi için özel bir XML parçasına bağlama yapmayı gösteren bir anlatım için bkz: [izlenecek yol: İçerik denetimlerini özel XML bölümlerine bağlama](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
 ###  <a name="checkbox"></a> Word projelerinde onay kutusu içerik denetimi  
  Word 2010 temsil eden bir onay kutusu içerik denetimi yeni türü kullanıma sunuldu. Ancak, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Office projelerinde kullanabilmeniz için karşılık gelen CheckBoxContentControl türü sağlamaz. Bir onay kutusu içerik denetimi oluşturmak için bir [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] veya Word 2010 projesinde kullanmak <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> yöntemi oluşturmak için bir <xref:Microsoft.Office.Tools.Word.ContentControl> nesne ve geçmesi <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> onay kutusu içerik denetimi belirtmek için yöntemi için değer. Aşağıdaki kod örneği, bunun nasıl yapılacağı gösterilmektedir.  
@@ -240,7 +240,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Genişletilmiş nesneleri kullanarak Word'ü otomatikleştirirken](../vsto/automating-word-by-using-extended-objects.md)   
  [Nasıl yapılır: Word belgelerine içerik denetimleri ekleme](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [İzlenecek yol: içerik denetimlerini kullanarak şablon oluşturma](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)   
+ [İzlenecek yol: İçerik denetimlerini kullanarak şablon oluşturma](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)   
  [Office çözümlerindeki veriler](../vsto/data-in-office-solutions.md)   
  [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  

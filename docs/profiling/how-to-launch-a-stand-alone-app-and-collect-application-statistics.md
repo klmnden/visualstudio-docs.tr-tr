@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: komut satırını kullanarak uygulama istatistikleri toplama ve Profiler ile bağımsız bir uygulama başlatma | Microsoft Docs'
+title: 'Nasıl Yapılır: Komut satırını kullanarak uygulama istatistikleri toplama ve Profiler ile bağımsız bir uygulama başlatma | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a57d56564b7be9051efb1a5d153a2a797fcc2211
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3ea9027f6589c7d7993aab1652fd89117239940a
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820011"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592917"
 ---
-# <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Nasıl yapılır: komut satırını kullanarak profil oluşturucu uygulama istatistikleri toplama ile bağımsız bir uygulama başlatma
+# <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Nasıl Yapılır: Profil oluşturucu ile bağımsız bir uygulama başlatma ve komut satırını kullanarak uygulama istatistikleri toplama
 Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tek başına (istemci) uygulamasına başlatmak ve örnekleme yöntemini kullanarak performans istatistikleri toplamak için profil oluşturma araçları komut satırı araçları.  
 
 > [!NOTE]
@@ -30,7 +30,7 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/i
 1.  Profil oluşturma araçlarından çalıştırıyorsanız Visual Studio olduğu bir makineye Visual Studio komut penceresi kümelerini doğru yolları yüklü. Üzerinde **Araçları** menüsünde seçin **VS komut istemi**  
 
 > [!NOTE]
->  Profil araçlarının komut satırı araçları yerleştirilir *tools\performance Araçları* Visual Studio yükleme dizininin alt. 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir. Daha fazla bilgi için [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Profil oluşturma araçları için olan yolu almak için bkz: [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir.  
 
 ## <a name="start-the-application-with-the-profiler"></a>Uygulamayı Profil Oluşturucu ile başlatma  
  Profil oluşturucuyu kullanarak bir hedef uygulamayı başlatmak için VSPerfCmd kullanın **/start** ve **/başlatma** profil oluşturucuyu başlatın ve uygulamayı başlatmak için Seçenekler. Belirtebileceğiniz **/start** ve **/başlatma** ve onların kendi seçenekleri de tek bir komut satırı.  
@@ -98,7 +98,7 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/i
 
     -   Hedef uygulamayı kapatın.  
 
-         veya  
+         -veya-  
 
     -   Tür **VSPerfCmd / detach**  
 

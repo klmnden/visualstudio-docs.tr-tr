@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: XSLT hatalarını ayıklamaya başlama'
+title: 'Nasıl Yapılır: XSLT hata ayıklamayı Başlat'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -11,14 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: e499aea3793e5c496930fe255133d51361e6f394
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9e3251d83361623aea0c0a54a2752c97b06a66f8
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178354"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561872"
 ---
-# <a name="how-to-start-debugging-xslt"></a>Nasıl yapılır: XSLT hatalarını ayıklamaya başlama
+# <a name="how-to-start-debugging-xslt"></a>Nasıl Yapılır: XSLT hata ayıklamayı Başlat
 
 XSLT hata ayıklayıcı bir XSLT stil sayfası veya XSLT uygulamanın hatalarını ayıklamak için kullanılabilir. Hata ayıklama sırasında içine Adımlama, üzerinden Adımlama veya kodların dışına Adımlama aynı anda bir satır kod yürütebilir. XSLT hata ayıklayıcının bir Visual Studio olduğu gibi aynı hata ayıklayıcıları kodu Adımlama işlevselliği kullanmak için komutlar bulunmaktadır. XSLT hata ayıklayıcı, hata ayıklamayı başlattıktan sonra giriş belge ve XSLT çıkış göstermek için windows açılır.
 
@@ -93,5 +93,5 @@ namespace ConsoleApplication
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [İzlenecek yol: bir XSLT stil sayfasında hata ayıklama](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-- [Hata ayıklayıcısı temel bilgileri](../debugger/getting-started-with-the-debugger.md)
+- [İzlenecek yol: Bir XSLT stil sayfasında hata ayıklama](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)   

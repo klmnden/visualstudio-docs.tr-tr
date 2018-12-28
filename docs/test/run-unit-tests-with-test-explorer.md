@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc918adb6a66f64cdcda46ea535cd0ab017c0676
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 177882e93377e428814d6a529c9826f4bf9e1ea2
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939525"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740414"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Test Gezgini ile birim testleri çalıştırma
 
@@ -101,8 +101,8 @@ Test Gezgini, testlerinizi önceden tanımlanmış kategoriler halinde gruplaman
 
 |Grup|Açıklama|
 |-|-----------------|
-|**Süresi**|Yürütme süresine göre testi gruplandırır: **hızlı**, **orta**, ve **yavaş**.|
-|**Sonucu**|Yürütme sonuçlarına göre testleri gruplandırır: **başarısız testler**, **Atlanan testler**, **başarılı testler**.|
+|**Süresi**|Yürütme süresine göre testi gruplandırır: **Hızlı**, **orta**, ve **yavaş**.|
+|**Sonucu**|Yürütme sonuçları tarafından grupları testler: **Başarısız testler**, **testler atlandı**, **testler geçildi**.|
 |**Nitelikler**|Tanımladığınız kategori/değer çiftlerine göre testi gruplandırır. Nitelik kategorileri ve değerlerini belirtmek için sözdizimi birim test çerçevesi tarafından tanımlanır.|
 |**Project**|Projelerin adına göre testi gruplandırır.|
 
@@ -150,7 +150,7 @@ Farklı ölçütlere göre filtrelemek için:
 |**Dosya yolu**|Test kaynak dosyaları tam olarak nitelenmiş dosya adını eşleşmelerini arar.|
 |**Tam adı**|Test ad alanları, sınıflar ve yöntemler tam olarak nitelenmiş dosya adını eşleşmelerini arar.|
 |**Output**|Standart çıkış (stdout) veya standart hata (stderr) yazılmış kullanıcı tanımlı hata iletileri arar. Çıktı iletilerini belirtmek için sözdizimi birim test çerçevesi tarafından tanımlanmıştır.|
-|**Sonucu**|Eşleşmeleri için Test Gezgini kategori adlarını arar: **başarısız testler**, **Atlanan testler**, **başarılı testler**.|
+|**Sonucu**|Eşleşmeleri için Test Gezgini kategori adlarını arar: **Başarısız testler**, **testler atlandı**, **testler geçildi**.|
 
 Bir alt kümesini bir filtre sonuçlarını tutmak için aşağıdaki sözdizimini kullanın:
 
@@ -187,7 +187,7 @@ Test Gezgini, testleriniz için hata ayıklama oturumu başlatmak için kullanab
 
 2. Test Gezgini'nde test yöntemlerini seçin ve ardından **seçilen Testlerde Hata Ayıkla** bağlam menüsünde.
 
-   Hata ayıklayıcısı hakkında daha fazla bilgi için bkz. [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md).
+   Hata ayıklayıcısı hakkında daha fazla bilgi için bkz. [Visual Studio'da hata ayıklama](../debugger/debugger-feature-tour.md).
 
 ### <a name="diagnose-test-method-performance-issues"></a>Test yöntemi performans sorunlarını tanılama
 

@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: ghogen
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 586102e6080b115b5e4908c8741e9eaa2e702901
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 445a77dd9398ff8d48f1ad633d63c13e05e76b5d
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068295"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803317"
 ---
 # <a name="optimizing-your-azure-code"></a>Azure Kodunuzu İyileştirme
 Microsoft Azure kullanan uygulamalar programlama, uygulama ölçeklenebilirlik, davranış ve bulut ortamlarında performans sorunlarını önlemek için izlemeniz gereken kodlama bazı yöntemler vardır. Microsoft tanır ve birkaç bu sık karşılaşılan sorunları tanımlar ve bunları çözmenize yardımcı olan bir Azure Kod Analizi aracı sağlar. NuGet aracılığıyla Visual Studio araç indirebilirsiniz.
@@ -58,7 +58,7 @@ Tüm zaman uyumsuz işlemler dışında yerleştirin [uygulamasındaki Run()](ht
 
 Aşağıdaki kod parçacığını bu sorunla ilgili kod düzeltme gösterir:
 
-```
+```csharp
 public override void Run()
 {
     RunAsync().Wait();
@@ -101,7 +101,7 @@ Gelişmiş güvenlik için SAS kimlik doğrulaması ile ACS kimlik doğrulaması
 ### <a name="solution"></a>Çözüm
 SAS kimlik doğrulaması, uygulamalarınızda kullanabilirsiniz. Aşağıdaki örnek, bir service bus ad alanı veya varlık erişmek için var olan bir SAS belirteci kullanmayı gösterir.
 
-```
+```csharp
 MessagingFactory listenMF = MessagingFactory.Create(endpoints, new StaticSASTokenProvider(subscriptionToken));
 SubscriptionClient sc = listenMF.CreateSubscriptionClient(topicPath, subscriptionName);
 BrokeredMessage receivedMessage = sc.Receive();
@@ -136,7 +136,7 @@ Azure Mesajlaşma altyapısının performansını artırmak için tasarım desen
 
 Kullanımının bir örneği verilmiştir **Onmessageoptions** iletileri almak için.
 
-```
+```csharp
 void ReceiveMessages()
 {
     // Initialize message pump options.
@@ -147,7 +147,7 @@ void ReceiveMessages()
 
     // Start receiving messages.
     QueueClient client = QueueClient.Create("myQueue");
-    client.OnMessage((receivedMessage) => // Initiates the message pump and callback is invoked for each message that is recieved, calling close on the client will stop the pump.
+    client.OnMessage((receivedMessage) => // Initiates the message pump and callback is invoked for each message that is received, calling close on the client will stop the pump.
     {
         // Process the message.
     }, options);
@@ -157,7 +157,7 @@ void ReceiveMessages()
 
 Kullanımının bir örneği verilmiştir **alma** varsayılan sunucuyla bekleme süresi.
 
-```
+```csharp
 string connectionString =
 CloudConfigurationManager.GetSetting("Microsoft.ServiceBus.ConnectionString");
 
@@ -190,7 +190,7 @@ while (true)
 
 Kullanımının bir örneği verilmiştir **alma** varsayılan olmayan sunucusuyla bekleme süresi.
 
-```
+```csharp
 while (true)
 {
    BrokeredMessage message = Client.Receive(new TimeSpan(0,1,0));
@@ -248,7 +248,7 @@ Bölümlenmiş bir kuyruk veya konuda genel verimini artık bir tek ileti aracı
 ### <a name="solution"></a>Çözüm
 Aşağıdaki kod parçacığı, Mesajlaşma varlıkları bölümleme işlemi gösterilmektedir.
 
-```
+```csharp
 // Create partitioned topic.
 NamespaceManager ns = NamespaceManager.CreateFromConnectionString(myConnectionString);
 TopicDescription td = new TopicDescription(TopicName);
@@ -277,7 +277,7 @@ Paylaşılan erişim ilkesinin başlangıç saatini ayarlar deyimi kaldırın. A
 
 Aşağıdaki kod parçacığını bu sorunla ilgili kod düzeltme gösterir.
 
-```
+```csharp
 // The shared access policy provides
 // read/write access to the container for 10 hours.
 blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy()
@@ -309,7 +309,7 @@ Güvenlik yönetimi hakkında daha fazla bilgi için bkz. tasarım deseni [Vale 
 
 Bir paylaşılan erişim ilkesi başlangıç saati belirtmeden bir örnek verilmiştir.
 
-```
+```csharp
 // The shared access policy provides
 // read/write access to the container for 10 hours.
 blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy()
@@ -324,7 +324,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 
 Beş dakikadan uzun bir ilke sona erme süresi ile bir paylaşılan erişim ilkesi başlangıç saati belirten bir örnek verilmiştir.
 
-```
+```csharp
 // The shared access policy provides
 // read/write access to the container for 10 hours.
 blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy()
@@ -367,7 +367,7 @@ Aşağıdaki kod parçacığını bu sorunla ilgili kod düzeltme gösterir. De�
 
 Yapılandırma ayarı bir App.config veya Web.config dosyasında depolamak nasıl bir örnek aşağıda verilmiştir. Ayarları yapılandırma dosyasının appSettings bölümünü ekleyin. Önceki kod örneği için Web.config dosyası verilmiştir.
 
-```
+```xml
 <appSettings>
     <add key="webpages:Version" value="3.0.0.0" />
     <add key="webpages:Enabled" value="false" />
@@ -396,7 +396,7 @@ Bağlantı dizelerini yapılandırma dosyaları veya Azure ortamlarını Store.
 * IIS barındırılan web uygulamaları için web.config bağlantı dizeleri depolamak için kullanın.
 * ASP.NET vNext uygulamaları için bağlantı dizeleri depolamak için configuration.json kullanın.
 
-Web.config veya app.config gibi yapılandırma dosyaları kullanma hakkında daha fazla bilgi için bkz. [ASP.NET Web yapılandırma yönergeleri](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx). Azure ortam değişkenleri çalışma hakkında daha fazla bilgi için bkz: [Azure Web siteleri: nasıl uygulama dizeleri ve bağlantı dizeleri çalışma](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/). Bağlantı dizesi kaynak denetiminde depolama hakkında daha fazla bilgi için bkz: [dosyalarındaki kaynak kodu deposu içinde depolanan bağlantı dizeleri gibi hassas bilgileri eklemekten kaçının](http://www.asp.net/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control).
+Web.config veya app.config gibi yapılandırma dosyaları kullanma hakkında daha fazla bilgi için bkz. [ASP.NET Web yapılandırma yönergeleri](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx). Azure ortam değişkenleri çalışma hakkında daha fazla bilgi için bkz: [Azure Web siteleri: Nasıl uygulama dizeleri ve bağlantı dizeleri çalışma](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/). Bağlantı dizesi kaynak denetiminde depolama hakkında daha fazla bilgi için bkz: [dosyalarındaki kaynak kodu deposu içinde depolanan bağlantı dizeleri gibi hassas bilgileri eklemekten kaçının](http://www.asp.net/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control).
 
 ## <a name="use-diagnostics-configuration-file"></a>Tanılama yapılandırma dosyası kullanın
 ### <a name="id"></a>Kimlik
@@ -408,12 +408,12 @@ Tanılama ayarları gibi kodunuzda API'si ile programlama Microsoft.WindowsAzure
 Lütfen, geri bildirim ve fikirlerinizi paylaşın [Azure Kod Analizi geri bildirim](http://go.microsoft.com/fwlink/?LinkId=403771).
 
 ### <a name="reason"></a>Neden
-Azure SDK 2.5 (Bu, Azure tanılama 1.3 kullanır), Azure tanılama (WAD) birkaç farklı yöntem kullanarak yapılandırılabilir önce: Bu yapılandırma blob depolama, kesinlik temelli Kodun, bildirim temelli yapılandırması ya da varsayılan kullanarak ekleme yapılandırma. Ancak, tanılamayı yapılandırmak için tercih edilen bir XML yapılandırma dosyasında (diagnostics.wadcfg veya diagnositcs.wadcfgx SDK 2.5 ve daha sonra) uygulama projesi kullanmaktır. Bu yaklaşımda, diagnostics.wadcfg dosya tamamen yapılandırmasını tanımlar ve güncelleştirilebilir ve dilediğiniz zaman yeniden dağıtıldı. Yapılandırmaları kullanarak ayarlamanın programlı yöntemlerle diagnostics.wadcfg yapılandırma dosyasının kullanımını karıştırma [DiagnosticMonitor](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.diagnosticmonitor.aspx)veya [RoleInstanceDiagnosticManager](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.management.roleinstancediagnosticmanager.aspx)sınıfları kullanabilirsiniz. karışıklığa yol. Bkz: [başlatılamadı ya da Azure Tanılama yapılandırmasını değiştirme](https://msdn.microsoft.com/library/azure/hh411537.aspx) daha fazla bilgi için.
+Azure SDK 2.5 (Bu, Azure tanılama 1.3 kullanır), Azure tanılama (WAD) birkaç farklı yöntem kullanarak yapılandırılabilir önce: Bu yapılandırma blob depolama, kesinlik temelli Kodun, bildirim temelli yapılandırması ya da varsayılan kullanarak ekleme yapılandırma. Ancak, tanılamayı yapılandırmak için tercih edilen bir XML yapılandırma dosyasında (diagnostics.wadcfg veya diagnostics.wadcfgx SDK 2.5 ve daha sonra) uygulama projesi kullanmaktır. Bu yaklaşımda, diagnostics.wadcfg dosya tamamen yapılandırmasını tanımlar ve güncelleştirilebilir ve dilediğiniz zaman yeniden dağıtıldı. Yapılandırmaları kullanarak ayarlamanın programlı yöntemlerle diagnostics.wadcfg yapılandırma dosyasının kullanımını karıştırma [DiagnosticMonitor](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.diagnosticmonitor.aspx)veya [RoleInstanceDiagnosticManager](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.management.roleinstancediagnosticmanager.aspx) sınıfları kullanabilirsiniz. karışıklığa yol. Bkz: [başlatılamadı ya da Azure Tanılama yapılandırmasını değiştirme](https://msdn.microsoft.com/library/azure/hh411537.aspx) daha fazla bilgi için.
 
 WAD 1.3 (Azure SDK 2.5 ile dahil) itibaren artık kod tanılamayı yapılandırmak için kullanmak mümkündür. Sonuç olarak, yalnızca uygulama ya da tanılama uzantısını güncelleştirilirken yapılandırması sağlayabilir.
 
 ### <a name="solution"></a>Çözüm
-Tanılama ayarları tanılama yapılandırma dosyası (diagnositcs.wadcfg veya diagnositcs.wadcfgx SDK 2.5 ve üzeri) taşımak için tanılama yapılandırma Tasarımcısı'nı kullanın. Ayrıca yüklemeniz önerilir [Azure SDK 2.5](http://go.microsoft.com/fwlink/?LinkId=513188) ve en son Tanılama özelliğini kullanın.
+Tanılama ayarları tanılama yapılandırma dosyası (diagnostics.wadcfg veya diagnostics.wadcfgx SDK 2.5 ve üzeri) taşımak için tanılama yapılandırma Tasarımcısı'nı kullanın. Ayrıca yüklemeniz önerilir [Azure SDK 2.5](http://go.microsoft.com/fwlink/?LinkId=513188) ve en son Tanılama özelliğini kullanın.
 
 1. Yapılandırmak istediğiniz rol kısayol menüsünde Özellikler'i seçin ve ardından yapılandırma sekmesini seçin.
 2. İçinde **tanılama** bölümünde, emin **tanılamayı etkinleştir** onay kutusu seçilidir.
@@ -440,7 +440,7 @@ DBContext bir yerel değişken veya statik olmayan örnek alanı olarak bildirme
 
 Aşağıdaki örnek MVC denetleyici sınıfı DBContext nesnesinin nasıl kullanılacağını gösterir.
 
-```
+```csharp
 public class BlogsController : Controller
     {
         //BloggingContext is a subclass to DbContext

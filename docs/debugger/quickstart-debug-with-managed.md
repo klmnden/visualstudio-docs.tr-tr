@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e35d102a30ffc7b80d39f359542bbdc4c00feff6
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 891387d244a805df2929a120a9312697ad79f192
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257192"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562080"
 ---
-# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Hızlı Başlangıç: ile hata ayıklama C# veya Visual Basic, Visual Studio hata ayıklayıcıyı kullanma
+# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Hızlı Başlangıç: İle hata ayıklama C# veya Visual Basic, Visual Studio hata ayıklayıcıyı kullanma
 
 Visual Studio hata ayıklayıcısını uygulamalarınızın hatalarını ayıklamanıza yardımcı olmak için çok sayıda güçlü özellikler sağlar. Bu konuda bazı temel özellikleri öğrenmek için hızlı bir yolunu sağlar.
 
@@ -151,7 +151,7 @@ Kesme noktasında duraklatıldığı sırada deyimi üzerinden gelin `c1.AddLast
 
 Uygulama yürütülmeye çağırma `doWork`ve düğmeyi tıklattığınız kod satırında duraklatır.
 
-Ortak klavye komutları için kullanılan kodu adımlayın dahil **F10** ve **F11**. Daha fazla ayrıntılı yönergeler için bkz: [Başlangıç Kılavuzu](../debugger/getting-started-with-the-debugger.md).
+Ortak klavye komutları için kullanılan kodu adımlayın dahil **F10** ve **F11**. Daha fazla ayrıntılı yönergeler için bkz: [hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Bir datatip içinde değişkenleri denetleyin
 

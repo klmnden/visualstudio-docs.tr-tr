@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: program aracılığıyla Outlook Kişilerine erişme'
+title: 'Nasıl Yapılır: Program aracılığıyla Outlook Kişilerine erişme'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -10,20 +10,20 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - contacts [Office development in Visual Studio], searching
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6ee09e0d0a51675bc00b19aedd0508276cb0cb09
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 662190d3db9c3d384d60f4953ea3809cb726f76c
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255947"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801729"
 ---
-# <a name="how-to-programmatically-access-outlook-contacts"></a>Nasıl yapılır: program aracılığıyla Outlook Kişilerine erişme
-  Bu örnek soyadları belirtilen arama dizesini içeren tüm kişileri bulur.  
+# <a name="how-to-programmatically-access-outlook-contacts"></a>Nasıl Yapılır: Program aracılığıyla Outlook Kişilerine erişme
+  Bu örnekte, son adları belirtilen arama dizesini içeren tüm kişiler bulur.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -35,13 +35,13 @@ ms.locfileid: "35255947"
 ## <a name="compile-the-code"></a>Kod derleme  
  Bu örnek gerektirir:  
   
--   Son adları içeren dize kişiler "**Na"** (örneğin, Tzipi Butnaru) içinde **kişiler** klasör.  
+-   Son adları dizeyi içeren kişiler "**Na"** (örneğin, Tzipi Butnaru) içinde **kişiler** klasör.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Kişi öğeleriyle çalışma](../vsto/working-with-contact-items.md)   
- [Nasıl yapılır: Outlook Kişilerine program aracılığıyla giriş ekleme](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)   
- [Nasıl yapılır: program aracılığıyla belirli bir kişi arama](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
- [Nasıl yapılır: program aracılığıyla bir e-posta adresi arama](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)   
+ [Nasıl yapılır: Program aracılığıyla Outlook Kişilerine bir giriş ekleyin](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)   
+ [Nasıl yapılır: Program aracılığıyla belirli bir kişi arama](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
+ [Nasıl yapılır: Program aracılığıyla bir e-posta adresi arama](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)   
  [Nasıl yapılır: Outlook kişilerini program aracılığıyla silme](../vsto/how-to-programmatically-delete-outlook-contacts.md)  
   
   

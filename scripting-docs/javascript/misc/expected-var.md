@@ -1,5 +1,5 @@
 ---
-title: Beklenen &#39; var &#39; | Microsoft Docs
+title: Beklenen 'var' | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,16 +20,16 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a99bfdd61d6c7007af2c0984219f3e458b313a3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0562fba98055cdb38757a4b638caa34b3bc21456
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788810"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803474"
 ---
-# <a name="expected-39var39"></a>Beklenen &#39; var &#39;
+# <a name="expected-var"></a>Beklenen 'var'
 Beklenen 'var' (ERRnoVar 1034))  
   
- Gerekli olduğu zaman anahtar sözcüğü var eklemek başarısız oldu.  
+ Gerekli olduğu zaman anahtar sözcüğü değişken eklemek başarısız oldu.  
   
- Var anahtar hakkında daha fazla bilgi için bkz: [var deyimi](../../javascript/reference/var-statement-javascript.md).
+ Var anahtar sözcüğü hakkında daha fazla bilgi için bkz: [var deyimi](../../javascript/reference/var-statement-javascript.md).

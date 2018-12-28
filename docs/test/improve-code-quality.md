@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a619989543b30ccf07cdb300a5688a985cf27eb7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7a6f0dac77801d2d02a260fbf392588b1a2f4a32
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068253"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739289"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio Test Araçları
 
@@ -45,4 +45,4 @@ Visual Studio Test Araçları size yardımcı olabilir ve takımınızın geliş
 * [Keşif & el ile test (Azure Test planları)](/azure/devops/test/index?view=vsts)
 * [Yük testi (Azure Test planları)](/azure/devops/test/load-test/index?view=vsts)
 * [Sürekli test (Azure Test planları)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
-* [Kod çözümleme araçları](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)
+* [Kod çözümleme araçları](../code-quality/code-analysis-for-managed-code-overview.md)

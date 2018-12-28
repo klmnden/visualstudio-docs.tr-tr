@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 74671401b3e3eaeae5840110dfc37c926266f98a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 82288b67916255914d352e4f0f6f2fd75aa9571d
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636993"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561963"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Hızlı Başlangıç: Visual Studio hata ayıklayıcısı ile ASP.NET hatalarını ayıklama
 
@@ -103,7 +103,7 @@ Kesme noktasında duraklatıldığı sırada deyimi üzerinden gelin `return c2`
 
 Uygulama yürütme devam eder ve düğmeyi tıklattığınız kod satırında duraklatır.
 
-Ortak klavye komutları için kullanılan kodu adımlayın dahil **F10** ve **F11**. Daha fazla ayrıntılı yönergeler için bkz: [Başlangıç Kılavuzu](../debugger/getting-started-with-the-debugger.md).
+Ortak klavye komutları için kullanılan kodu adımlayın dahil **F10** ve **F11**. Daha fazla ayrıntılı yönergeler için bkz: [hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Bir datatip içinde değişkenleri denetleyin
 

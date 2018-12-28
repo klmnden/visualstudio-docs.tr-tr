@@ -1,5 +1,5 @@
 ---
-title: 'Hızlı Başlangıç: ilk Vue.js uygulamanızı oluşturma'
+title: 'Hızlı Başlangıç: İlk Vue.js uygulamanızı oluşturma'
 description: Bu hızlı başlangıçta, Visual Studio için Node.js araçları kullanarak Visual Studio'da bir Vue.js uygulaması oluşturma
 ms.custom: seodec18
 ms.date: 09/24/2018
@@ -15,14 +15,14 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a48de4bc48f24cc55914ccdb5fdeed0b4ad1d9a8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4f346f75078ff513dbbb91230d564686d6a1e023
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058957"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441489"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Hızlı Başlangıç: Kullanım ilk Vue.js uygulamanızı oluşturmak için Visual Studio
+# <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Hızlı Başlangıç: İlk Vue.js uygulamanızı oluşturmak için Visual Studio
 
 Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE), oluşturun ve basit bir Vue.js web uygulaması çalıştırın. Visual Studio 2017'ı henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) ücretsiz yüklemek için sayfa.
 
@@ -41,7 +41,7 @@ Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE)
 
 1. Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**.
 
-1. İçinde **yeni proje** iletişim kutusunda, ya da altında **JavaScript** > **Node.js** veya **TypeScript**  >   **Node.js**, seçin **temel Vue.js Web uygulaması**ve ardından bir proje adı girin ve ardından **Tamam**.
+1. İçinde **yeni proje** iletişim kutusunda, ya da altında **JavaScript** > **Node.js** veya **TypeScript**  >   **Node.js**, seçin **temel Vue.js Web uygulaması**. Bir proje adı girin ve ardından **Tamam**.
 
      ![VUE.js şablonu](../javascript/media/vuejs-template.png)
 
@@ -75,7 +75,7 @@ Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE)
 
 ## <a name="add-a-vue-file-to-the-project"></a>.Vue dosya projeye ekleyin.
 
-1. Çözüm Gezgini'nde gibi herhangi bir klasöre sağ tıklayın *src* klasöründe ve ardından **Ekle** > **yeni öğe**.
+1. Çözüm Gezgini'nde gibi herhangi bir klasörü sağ tıklatın *src/components* klasöründe ve ardından **Ekle** > **yeni öğe**.
 
 1. Şunlardan birini seçin **JavaScript Vue tek dosya bileşen** veya **TypeScript Vue tek dosya bileşen**ve ardından **Ekle**.
 
@@ -85,7 +85,7 @@ Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE)
 
 1. (Yalnızca TypeScript Proje) Visual Studio'dan seçin **derleme** > **çözümü Temizle**.
 
-1. Ardından, **derleme** > **Çözümü Derle** Projeyi derlemek için. Denetleme **çıkış** penceresini derleme sonuçları.
+1. Ardından, **derleme** > **Çözümü Derle** Projeyi derlemek için. Denetleme **çıkış** penceresini derleme sonuçları ve seçin **derleme** gelen **çıktıyı Göster** listesi.
 
     Vue.js proje şablonu kullanan `build` olay npm betiği yapılandırarak bir gönderi oluşturun. Bu ayarı değiştirmek istiyorsanız, proje dosyasını açın (*\<projectname\>.njsproj*) Windows Gezgini'nden ve bu kod satırı bulun:
 
@@ -105,7 +105,7 @@ Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE)
 
 1. Web tarayıcısını kapatın.
 
-Bu hızlı başlangıcı tamamladığınızda Tebrikler! Visual Studio IDE ile Vue.js kullanma hakkında biraz öğrenilen umuyoruz. Lütfen özelliklerini daha ayrıntılı olarak inceleyin istiyorsanız, bir öğreticide devam **öğreticiler** İçindekiler bölümünde.
+Bu hızlı başlangıcı tamamladığınızda Tebrikler! Visual Studio IDE ile Vue.js kullanma hakkında biraz öğrenilen umuyoruz. Bir öğreticide özelliklerini daha ayrıntılı olarak inceleyin istiyorsanız, devam **öğreticiler** İçindekiler bölümünde.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

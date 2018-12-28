@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05ef916c2ed4948f23adbb09a68b096d0a704a79
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bcd092ca1631f54f758cef95895d8509d14dec96
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050354"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802984"
 ---
 # <a name="javascript-in-visual-studio"></a>Visual Studio’da JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,16 +48,16 @@ JavaScript, Visual Studio'da birinci sınıf bir dildir. Visual Studio IDE'de Ja
 
 |Özellik|Açıklama|
 |-------------|-----------------|
-|Sınıflar|Yeni sözdizimi bildirimini destekler [sınıfları](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/class-statement-javascript.md).|
-|Gösterir|[Öneriler](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/promise-object-javascript.md) daha kolay ve Temizleyicisi zaman uyumsuz kodlama izin verin. Promise oluşturucular desteklenir, bunların ile `all` ve `race` yardımcı program yöntemleri.|
-|Yineleyiciler|Artık her ayrı bir özellik değeri için çalıştırılacak deyimleri ile bir özel yineleme kancası çağırma (diziler, dizi benzeri nesneleri ve yineleyiciler dahil) iterable nesneler üzerinde yineleyebilirsiniz. Daha fazla bilgi için [yineleyiciler ve oluşturucular](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/advanced/iterators-and-generators-javascript.md). **Not:** oluşturucuları henüz desteklenmiyor.|
+|Sınıflar|Yeni sözdizimi bildirimini destekler [sınıfları](/visualstudio/scripting-docs/javascript/reference/class-statement-javascript).|
+|Gösterir|[Öneriler](/visualstudio/scripting-docs/javascript/reference/promise-object-javascript) daha kolay ve Temizleyicisi zaman uyumsuz kodlama izin verin. Promise oluşturucular desteklenir, bunların ile `all` ve `race` yardımcı program yöntemleri.|
+|Yineleyiciler|Artık her ayrı bir özellik değeri için çalıştırılacak deyimleri ile bir özel yineleme kancası çağırma (diziler, dizi benzeri nesneleri ve yineleyiciler dahil) iterable nesneler üzerinde yineleyebilirsiniz. Daha fazla bilgi için [yineleyiciler ve oluşturucular](/visualstudio/scripting-docs/javascript/advanced/iterators-and-generators-javascript). **Not:**  Oluşturucuları henüz desteklenmemektedir.|
 |Ok işlevleri|Ok işlevinde (= >) için toplu değer sözdizimi sağlar `function` bir sözcük özellikleri anahtar sözcüğünü `this` bağlama.|
-|Yerleşik nesneler için yeni yöntemler|[Dizi nesnesi](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/array-object-javascript.md), [matematik nesnesi](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/math-object-javascript.md), [sayı nesne](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/number-object-javascript.md), [nesne nesnesi](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/object-object-javascript.md), ve [dize nesnesi](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/string-object-javascript.md) yerleşik nesneler, birçok yeni yardımcı işlevleri ve verileri inceleme ve düzenleme için özellikleri içerir.|
-|Nesne sabit değeri geliştirmeleri|Nesneler artık hesaplanan özellikler, kısa yöntemi tanımları ve toplu değer sözdizimi değeri için aynı adlı bir değişken başlatılır özellikleri destekler. Daha fazla bilgi için [nesneleri oluşturma](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/creating-objects-javascript.md).|
-|Proxy'ler|[Proxy'leri](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/proxy-object-javascript.md) özel davranış nesneler için etkinleştirin.|
-|REST parametreleri|REST parametreler ardışık bağımsız değişken bir dizi işlev çağrısında olanak sağlar. Daha fazla bilgi için [işlevleri](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/functions-javascript.md).|
-|Spread işleci|[Yayılma işleci](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/spread-operator-decrement-dot-dot-dot-javascript.md) (`…`) bağımsız iterable ifadelere genişletir. Örneğin, `a.b(…array)` yaklaşık olarak aynı olduğundan `a.b.apply(a, array)`.|
-|Simgeleri|[Sembol](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/symbol-object-javascript.md) nesneler girişim varolan nesne özellikleri, hiçbir istenmeyen görünürlük ve diğer eşgüdümlü olmayan eklemeler kaybetme riski varolan nesnelerle başka kod tarafından eklenecek özellikleri sağlar.|
-|Şablon dizeleri|[Şablon dizeleri](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/advanced/template-strings-javascript.md) ifadeler değerlendirilir ve bitişik dize sabit değeri izin dize sabitleri sabit değerlerdir.|
-|Unicode geliştirmeleri|Geliştirmeler yapılmıştır Unicode desteği. Örneğin, yeni bir kaçış dizisi biçimi astral kod noktası (dörtten fazla onaltılı basamaklar içeren kod noktaları) destekler. Daha fazla bilgi için [özel karakterler](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/advanced/special-characters-javascript.md).|
-|WeakSet|A [WeakSet](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/weakset-object-javascript.md) olan başka bir yerde başvurulan değillerse atık olacak nesneleri koleksiyonu.|
+|Yerleşik nesneler için yeni yöntemler|[Dizi nesnesi](/visualstudio/scripting-docs/javascript/reference/array-object-javascript), [matematik nesnesi](/visualstudio/scripting-docs/javascript/reference/math-object-javascript), [sayı nesne](/visualstudio/scripting-docs/javascript/reference/number-object-javascript), [nesne nesnesi](/visualstudio/scripting-docs/javascript/reference/object-object-javascript), ve [dize nesnesi](/visualstudio/scripting-docs/javascript/reference/string-object-javascript) yerleşik nesneler, birçok yeni yardımcı işlevleri ve verileri inceleme ve düzenleme için özellikleri içerir.|
+|Nesne sabit değeri geliştirmeleri|Nesneler artık hesaplanan özellikler, kısa yöntemi tanımları ve toplu değer sözdizimi değeri için aynı adlı bir değişken başlatılır özellikleri destekler. Daha fazla bilgi için [nesneleri oluşturma](/visualstudio/scripting-docs/javascript/creating-objects-javascript).|
+|Proxy'ler|[Proxy'leri](/visualstudio/scripting-docs/javascript/reference/proxy-object-javascript) özel davranış nesneler için etkinleştirin.|
+|REST parametreleri|REST parametreler ardışık bağımsız değişken bir dizi işlev çağrısında olanak sağlar. Daha fazla bilgi için [işlevleri](/visualstudio/scripting-docs/javascript/functions-javascript).|
+|Spread işleci|[Yayılma işleci](/visualstudio/scripting-docs/javascript/reference/spread-operator-decrement-dot-dot-dot-javascript) (`…`) bağımsız iterable ifadelere genişletir. Örneğin, `a.b(…array)` yaklaşık olarak aynı olduğundan `a.b.apply(a, array)`.|
+|Simgeleri|[Sembol](/visualstudio/scripting-docs/javascript/reference/symbol-object-javascript) nesneler girişim varolan nesne özellikleri, hiçbir istenmeyen görünürlük ve diğer eşgüdümlü olmayan eklemeler kaybetme riski varolan nesnelerle başka kod tarafından eklenecek özellikleri sağlar.|
+|Şablon dizeleri|[Şablon dizeleri](/visualstudio/scripting-docs/javascript/advanced/template-strings-javascript) ifadeler değerlendirilir ve bitişik dize sabit değeri izin dize sabitleri sabit değerlerdir.|
+|Unicode geliştirmeleri|Geliştirmeler yapılmıştır Unicode desteği. Örneğin, yeni bir kaçış dizisi biçimi astral kod noktası (dörtten fazla onaltılı basamaklar içeren kod noktaları) destekler. Daha fazla bilgi için [özel karakterler](/visualstudio/scripting-docs/javascript/advanced/special-characters-javascript).|
+|WeakSet|A [WeakSet](/visualstudio/scripting-docs/javascript/reference/weakset-object-javascript) olan başka bir yerde başvurulan değillerse atık olacak nesneleri koleksiyonu.|

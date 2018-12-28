@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9160a5ebca6efe2cca48a2b8832a51fab3c6ca5a
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: dd600348e9e0cbb5281437b9ad5542c865ef6575
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159743"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739977"
 ---
 # <a name="install-visual-studio-2017"></a>Visual Studio 2017'yi yükleyin
 
@@ -142,7 +142,7 @@ Daha fazla bilgi için [Visual Studio yükleme konumlarını değiştirme](chang
 
    Örneğin, [bir C++ uygulaması derleme](../ide/getting-started-with-cpp-in-visual-studio.md), tıklayın **yüklü**, genişletme **Visual C++** ve sonra oluşturmak istediğiniz C++ proje türü seçin.
 
-   İçin [yapı bir C# uygulama](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), tıklayın **yüklü**, genişletme **Visual C#** ve ardından C# proje derlemek istediğiniz türü.
+   İçin [yapı bir C# uygulama](../get-started/csharp/tutorial-wpf.md), tıklayın **yüklü**, genişletme **Visual C#** ve ardından C# proje derlemek istediğiniz türü.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

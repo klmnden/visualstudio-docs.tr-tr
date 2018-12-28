@@ -18,17 +18,17 @@ helpviewer_keywords:
 - FormRegionStartup interface
 - add-ins [Office development in Visual Studio], extensibility interfaces
 - extensibility interfaces [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec1f538515c8765629e812b8d7f4070476dd95ba
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 94ef77afa51e7cccb8f5aed18b1cf5ad0e1eaf1f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670851"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648897"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Genişletilebilirlik arabirimlerini kullanarak kullanıcı Arabirimi özelliklerini özelleştirme
   Visual Studio'da Office geliştirme araçları, sınıflar ve VSTO eklentisi içinde özel görev bölmeleri, Şerit özelleştirmeleri ve Outlook form bölgeleri oluşturma kullanıldıklarında birçok uygulama ayrıntıları işleyen tasarımcılar sağlar. Ancak, aynı zamanda uygulayabileceğiniz *genişletilebilirlik arabirimi* her özel gereksinimleriniz varsa, kendiniz özelliği.  
@@ -47,7 +47,7 @@ ms.locfileid: "50670851"
   
 |Arabirim|Açıklama|Uygulamalar|  
 |---------------|-----------------|------------------|  
-|<xref:Microsoft.Office.Core.IRibbonExtensibility>|Şerit kullanıcı arabirimini özelleştirmek için bu arabirimi uygulayın. **Not:** ekleyebileceğiniz bir **Ribbon (XML)** varsayılan oluşturmak için bir proje öğesine <xref:Microsoft.Office.Core.IRibbonExtensibility> VSTO eklenti uygulamasında. Daha fazla bilgi için [Ribbon XML](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Proje<br /><br /> Visio<br /><br /> Word|  
+|<xref:Microsoft.Office.Core.IRibbonExtensibility>|Şerit kullanıcı arabirimini özelleştirmek için bu arabirimi uygulayın. **Not:**  Ekleyebileceğiniz bir **Ribbon (XML)** varsayılan oluşturmak için bir proje öğesine <xref:Microsoft.Office.Core.IRibbonExtensibility> VSTO eklenti uygulamasında. Daha fazla bilgi için [Ribbon XML](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Proje<br /><br /> Visio<br /><br /> Word|  
 |<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|Özel görev bölmesi oluşturmak için bu arabirimi uygulayın.|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word|  
 |<xref:Microsoft.Office.Interop.Outlook.FormRegionStartup>|Outlook form bölgesi oluşturmak için bu arabirimi uygulayın.|Outlook|  
   

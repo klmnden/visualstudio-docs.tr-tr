@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d22202e50c973c52bf2b47374b9eda583fb3fe8
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: bddcb7b36cd119f20fe8e03ed1152662284ac8c0
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280889"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561583"
 ---
 # <a name="using-the-tasks-window"></a>Görevleri Penceresini Kullanma
 
@@ -52,7 +52,7 @@ Sütunları **görevleri** penceresi, aşağıdaki bilgileri gösterir.
 |**bayrakları**|Hangi görevlerin işaretlenmiş gösterir ve bir görevi işaretleme veya işaretini kaldırma olanak tanır.|
 |**Simgeler**|Sarı bir ok, geçerli görev gösterir. Geçerli görev, geçerli iş parçacığı üzerinde en üstteki görevdir.<br /><br /> Bölme görevi, diğer bir deyişle, hata ayıklayıcı çağrıldığında geçerli bir beyaz bir ok gösterir.<br /><br /> Duraklatma simgesi, kullanıcı tarafından dondurulmuş bir görevi gösterir. Dondurma ve bir görev listesinde sağ tıklayarak Çöz.|
 |**ID**|Görev için sistem tarafından sağlanan bir sayı. Yerel kod halinde, bu görev adresidir.|
-|**Status**|Geçerli durumu (zamanlanmış, etkin, engellenmiş, kilitlenen, bekleniyor veya tamamlanmış) görev. Zamanlanmış bir görev henüz çalıştırılmadı ve bu nedenle, henüz bir çağrı yığını, atanan bir iş parçacığı veya ilgili bilgiler yok biridir.<br /><br /> Etkin görev kodu hata ayıklayıcıda kesmeden önce yürütülen biridir.<br /><br /> Bir bekleniyor veya engellenen sinyal bir olay, bir kilidi serbest bırakılması veya başka bir görevi tamamlamak için beklediği, engellenen bir görevdir.<br /><br /> Kilitlenen bir görevi başka bir iş parçacığıyla, iş parçacığı kilitlendiğini bekleyen bir görevdir.<br /><br /> Üzerine **durumu** hücre bloğu hakkında daha fazla bilgi kilitlenen veya bekleniyor bir görev için. **Uyarı:** **görevleri** penceresi bekleyin zinciri geçişi (WCT) tarafından desteklenen eşitleme temel kullanan bir engellenen görev için kilitlenme bildirir. Örneğin, bir kilitlenen <xref:System.Threading.Tasks.Task> WCT, hata ayıklayıcı raporları kullanan nesne **Awaiting kilitlendiğini**. Eşzamanlılık WCT kullanmaz, çalışma zamanı tarafından yönetilen kilitlenen bir görev için hata ayıklayıcı raporları **bekleyen**. WCT hakkında daha fazla bilgi için bkz: [bekleyin zinciri geçişi](/windows/desktop/Debug/wait-chain-traversal).|
+|**Status**|Geçerli durumu (zamanlanmış, etkin, engellenmiş, kilitlenen, bekleniyor veya tamamlanmış) görev. Zamanlanmış bir görev henüz çalıştırılmadı ve bu nedenle, henüz bir çağrı yığını, atanan bir iş parçacığı veya ilgili bilgiler yok biridir.<br /><br /> Etkin görev kodu hata ayıklayıcıda kesmeden önce yürütülen biridir.<br /><br /> Bir bekleniyor veya engellenen sinyal bir olay, bir kilidi serbest bırakılması veya başka bir görevi tamamlamak için beklediği, engellenen bir görevdir.<br /><br /> Kilitlenen bir görevi başka bir iş parçacığıyla, iş parçacığı kilitlendiğini bekleyen bir görevdir.<br /><br /> Üzerine **durumu** hücre bloğu hakkında daha fazla bilgi kilitlenen veya bekleniyor bir görev için. **Uyarı:**  **Görevleri** penceresi bekleyin zinciri geçişi (WCT) tarafından desteklenen eşitleme temel kullanan bir engellenen görev için kilitlenme bildirir. Örneğin, bir kilitlenen <xref:System.Threading.Tasks.Task> WCT, hata ayıklayıcı raporları kullanan nesne **Awaiting kilitlendiğini**. Eşzamanlılık WCT kullanmaz, çalışma zamanı tarafından yönetilen kilitlenen bir görev için hata ayıklayıcı raporları **bekleyen**. WCT hakkında daha fazla bilgi için bkz: [bekleyin zinciri geçişi](/windows/desktop/Debug/wait-chain-traversal).|
 |**Başlangıç saati**|Saat, görev etkin hale geldi.|
 |**Süresi**|Görev etkin biçimde saniye sayısı.|
 |**Tamamlanma Zamanı**|Hangi görev tamamlanma zamanı.|
@@ -96,9 +96,9 @@ Sütunları **görevleri** penceresi, aşağıdaki bilgileri gösterir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Hata Ayıklayıcısı Temel Bilgileri](../debugger/getting-started-with-the-debugger.md)
+- [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)
 - [Yönetilen Kodda Hata Ayıklama](../debugger/debugging-managed-code.md)
 - [Paralel Programlama](/dotnet/standard/parallel-programming/index)
 - [Eşzamanlılık Çalışma Zamanı](/cpp/parallel/concrt/concurrency-runtime)
 - [Paralel Yığınlar Penceresini Kullanma](../debugger/using-the-parallel-stacks-window.md)
-- [İzlenecek Yol: Paralel Uygulamada Hata Ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)
+- [İzlenecek yol: Paralel uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)

@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8a5f6c89f6b71ecd2902877757f7d852c0e51088
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01e1c86e7cd601bad22f3e23fd65c4e2b260fa58
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852927"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647550"
 ---
 # <a name="n-tier-data-applications-overview"></a>N Katmanlı Veri Uygulamalarına Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ N-katmanı * veri uygulamaları, birden çok ayrılmış veri uygulama *katmanla
   
  Visual Studio, geliştiricilerin n katmanlı uygulamalar oluşturmasına yardımcı olmak için çeşitli özellikler içerir:  
   
--   [Oluşturma ve yazılan veri kümelerini düzenleme](../data-tools/creating-and-editing-typed-datasets.md) sağlayan bir **DataSet projesi** dataset (veri varlık katmanı) ayrı olanak tanıyan özellik ve `TableAdapter`s (veri erişim katmanı) ayrık içine projeleri.  
+-   Veri kümesi Tasarımcısı sağlar bir **DataSet projesi** dataset (veri varlık katmanı) ayrı olanak tanıyan özellik ve `TableAdapter`s (veri erişim katmanı) farklı projelere.  
   
 -   [LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md) ayrı ad alanında DataContext ve veri sınıfları oluşturmak için ayarları sağlar. Bu mantıksal ayrılığı veri varlık katmanı ve veri erişimi sağlar.  
   
@@ -89,7 +89,7 @@ Veri katmanı
   
  [Veri kümeleri ile TableAdapter’ları farklı projelere ayırma](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
   
- [İzlenecek Yol: N Katmanlı Bir Veri Uygulaması Oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
+ [İzlenecek yol: N katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
   
  [İzlenecek yol: Bir N katmanlı bir veri uygulamasına doğrulama ekleme](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
   
@@ -97,8 +97,7 @@ Veri katmanı
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.Data.Linq.ITable.Attach%2A>   
- [İzlenecek yol: bir N katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
+ [İzlenecek yol: N katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
  [Hiyerarşik güncelleştirme](../data-tools/hierarchical-update.md)   
  [Visual Studio'da veri kümesi araçları](../data-tools/dataset-tools-in-visual-studio.md)   
  [Visual Studio'da verilere erişime](../data-tools/accessing-data-in-visual-studio.md)
-

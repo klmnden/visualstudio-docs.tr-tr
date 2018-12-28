@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: yerleşik bir sekmeyi özelleştirme'
+title: 'Nasıl Yapılır: Yerleşik bir sekmeyi özelleştirme'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,63 +11,63 @@ dev_langs:
 helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
 - built-in tabs [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 30b4af116df218f3f778b9efa1e295fbadbad86a
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 3a219d4c5d7a57e73c63ec972ccb29724d616d1a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257273"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647343"
 ---
-# <a name="how-to-customize-a-built-in-tab"></a>Nasıl yapılır: yerleşik bir sekmeyi özelleştirme
-  Gruplar ve denetimler için yerleşik bir sekmeyi ekleyebilirsiniz. Yerleşik bir sekmeyi zaten bir Microsoft Office uygulamasından Şerit'te olan sekme olarak kullanılır. Örneğin, **veri** sekme, yerleşik bir sekmeyi Excel'de kullanılabilir. Özel bir grup oluşturduğunuzda, sekmesinde son görünür, ancak grubunuz sekmesinde herhangi bir yere taşıyabilirsiniz.  
+# <a name="how-to-customize-a-built-in-tab"></a>Nasıl Yapılır: Yerleşik bir sekmeyi özelleştirme
+  Yerleşik bir sekmeye grup ve denetim ekleyebilirsiniz. Yerleşik bir sekmeyi bir Microsoft Office uygulamasının Şerit üzerinde zaten var olan bir sekmedir. Örneğin, **veri** Excel yerleşik bir sekmede sekmesidir. Özel bir grup oluşturduğunuzda, son sekmede görünür, ancak grubunuzun sekmesinde istediğiniz yere taşıyabilirsiniz.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
 > [!NOTE]  
->  Yerleşik bir sekmeyi grupları ekleyebilirsiniz, ancak yerleşik sekmesinden yerleşik grupları kaldırılamıyor.  
+>  Yerleşik bir sekmeye gruplar ekleyebilirsiniz, ancak yerleşik bir sekmeden varsayılan grupları silemezsiniz.  
   
-### <a name="to-add-groups-to-a-built-in-tab"></a>Yerleşik bir sekmeyi grupları eklemek için  
+### <a name="to-add-groups-to-a-built-in-tab"></a>Yerleşik bir sekmeye gruplar eklemek için  
   
 1.  Şerit kod dosyasını sağ tıklatın **Çözüm Gezgini**ve ardından **Görünüm Tasarımcısı**.  
   
     > [!NOTE]  
-    >  Şerit kod dosyası görünmüyorsa **Çözüm Gezgini**, eklemelisiniz bir **Şerit öğesi** projenize. Bkz: [nasıl yapılır: Şerit özelleştirmeye başlama](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+    >  Şerit kod dosyasını görünmüyorsa **Çözüm Gezgini**, eklemelisiniz bir **Şerit öğesi** projenize. Bkz: [nasıl yapılır: Şerit özelleştirmeye başlama](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
 2.  Şerit Tasarımcısı'nda herhangi bir sekmesini sağ tıklatın ve ardından **özellikleri**.  
   
-3.  İçinde **özellikleri** penceresinde genişletin **ControlId** özelliğini ayarlayın ve ardından **ControlIdType** özelliğine **Office**.  
+3.  İçinde **özellikleri** penceresini genişletin **ControlId** özelliği ve ardından **ControlIdType** özelliğini **Office**.  
   
-4.  Ayarlama **OfficeId** özelliğine *kimliği kontrol* özelleştirmek istediğiniz yerleşik sekmenin.  
+4.  Ayarlama **OfficeId** özelliğini *kimliği kontrol* özelleştirmek istediğiniz yerleşik bir sekmenin.  
   
-     Denetim Kimliği sekmeler, gruplar ve Microsoft Office uygulamalarında yerleşik denetimler benzersiz olarak tanımlayan bir addır.  
+     Denetim Kimliği sekmeler, gruplar ve Microsoft Office uygulamalarında yerleşik denetimler benzersiz olarak tanımlayan addır.  
   
-     Denetim kimliklerinin bir listesi için bkz: [Office 2010 Yardım dosyalarını: Office fluent kullanıcı arabirimi denetim tanımlayıcıları](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     Denetim kimliklerinin bir listesi için bkz. [Office 2010 Yardım dosyaları: Office fluent kullanıcı arabirimi denetimi tanımlayıcıları](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
-5.  Gelen **Office Şerit denetimleri** sekmesinde **araç**, grupları sekmesinde sürükleyin.  
+5.  Gelen **Office Şerit denetimleri** sekmesinde **araç kutusu**, grupları sekmenin sürükleyin.  
   
     > [!NOTE]  
-    >  Yerleşik gruplar Tasarımcısı'nda görünmez. Bu nedenle, yerleşik bir sekmeyle çalışıp çalışmadığını belirlemek için tek yolu incelemektir **ControlId** sekmenin özelliği.  
+    >  Yerleşik gruplar Tasarımcısı'nda görünmez. Bu nedenle, yerleşik bir sekmeyi ile çalışma belirlemek için tek yolu incelemektir **ControlId** sekmesinin özelliği.  
   
-### <a name="to-position-groups-on-a-built-in-tab"></a>Yerleşik bir sekmede grupları konumlandırmak için  
+### <a name="to-position-groups-on-a-built-in-tab"></a>Grupları yerleşik bir sekmede konuma  
   
-1.  Şerit Tasarımcısı'nda bir özel grubu seçin.  
+1.  Şerit Tasarımcısı'nda, özel bir grubu seçin.  
   
-2.  İçinde **özellikleri** penceresinde genişletin **konumu** özelliği.  
+2.  İçinde **özellikleri** penceresini genişletin **konumu** özelliği.  
   
-3.  Ayarlama **PositionType** özelliğini uygun değere:  
+3.  Ayarlama **PositionType** uygun değere özelliği:  
   
-    -   **BeforeOfficeId** grubu belirlenen yerleşik bir gruptan önce konumlandırır.  
+    -   **BeforeOfficeId** grubun belirli bir yerleşik grubun önce yerleştirir.  
   
-    -   **AfterOfficeId** belirtilen yerleşik bir gruptan sonra Grup yerleştirir.  
+    -   **AfterOfficeId** grubun belirtilen yerleşik bir gruptan sonra yerleştirir.  
   
-4.  Ayarlama **OfficeId** yerleşik bir gruptan denetim kimliği özelliği.  
+4.  Ayarlama **OfficeId** yerleşik grup denetim kimliği özelliği.  
   
-     Denetim kimliklerinin bir listesi için bkz: [Office 2010 Yardım dosyalarını: Office fluent kullanıcı arabirimi denetim tanımlayıcıları](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     Denetim kimliklerinin bir listesi için bkz. [Office 2010 Yardım dosyaları: Office fluent kullanıcı arabirimi denetimi tanımlayıcıları](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Şerite Genel Bakış](../vsto/ribbon-overview.md)   
@@ -78,6 +78,6 @@ ms.locfileid: "35257273"
  [Nasıl yapılır: Şerit özelleştirmeye başlama](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Nasıl yapılır: Şeritteki sekmenin konumunu değiştirme](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
  [Nasıl yapılır: Backstage görünümüne denetimler ekleme](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Nasıl yapılır: kullanıcı arayüzü hatalarını gösterme eklentisi](../vsto/how-to-show-add-in-user-interface-errors.md)  
+ [Nasıl yapılır: Eklenti kullanıcı arayüzü hatalarını gösterme](../vsto/how-to-show-add-in-user-interface-errors.md)  
   
   

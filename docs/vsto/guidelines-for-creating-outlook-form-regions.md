@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], guidelines
 - icons [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 535ab0329412b261b06fb2d04daefe817299dbe9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d2a052cbad69f87c5b25005ff21959841af55f68
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892018"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648761"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Outlook form bölgeleri oluşturma yönergeleri
   Aşağıdaki bilgiler, form bölgeleri en iyi duruma getirmek ve olası sorunları önlemenize yardımcı olabilir:  
@@ -93,7 +93,7 @@ ms.locfileid: "49892018"
  [Form bölgesine çalışma zamanında erişme](../vsto/accessing-a-form-region-at-run-time.md)   
  [Outlook form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md)   
  [İzlenecek yol: Outlook form bölgesi tasarlama](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Nasıl yapılır: bir Outlook eklenti projesine form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Nasıl yapılır: Bir Outlook eklenti projesine form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Form bölgesini Outlook ileti sınıfıyla ilişkilendirme](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
   
   

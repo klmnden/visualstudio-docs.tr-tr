@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 607c324e11591211593522957dcd08747d230279
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: b0925fde98d4a10e3391ded538e0842833a61ce5
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219834"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647867"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Basit veri bağlamayı destekleyen bir Windows Forms kullanıcı denetimi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Windows uygulamalarında formların üzerindeki verileri görüntülerken, mevcu
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için şunlar gerekir:  
   
--   Northwind örnek veritabanına erişim. Daha fazla bilgi için [nasıl yapılır: örnek veritabanları yükleme](../data-tools/how-to-install-sample-databases.md).  
+-   Northwind örnek veritabanına erişim.
   
 ## <a name="create-a-windows-application"></a>Bir Windows uygulaması oluşturma  
  İlk adım oluşturmaktır bir **Windows uygulama**.  
@@ -116,7 +116,7 @@ Windows uygulamalarında formların üzerindeki verileri görüntülerken, mevcu
 3.  Gelen **derleme** menüsünde seçin **Çözümü Derle**.  
   
 ## <a name="create-a-data-source-from-your-database"></a>Veritabanından bir veri kaynağı oluşturun  
- Bu adımı kullanan **veri kaynağı yapılandırması** bir veri kaynağı oluşturmak için Sihirbazı'nı temel alan `Customers` Northwind örnek veritabanındaki tablo. Bağlantı oluşturmak için Northwind örnek veritabanına erişiminiz olmalıdır. Northwind örnek veritabanını ayarlama hakkında daha fazla bilgi için bkz. [nasıl yapılır: örnek veritabanları yükleme](../data-tools/how-to-install-sample-databases.md).  
+ Bu adımı kullanan **veri kaynağı yapılandırması** bir veri kaynağı oluşturmak için Sihirbazı'nı temel alan `Customers` Northwind örnek veritabanındaki tablo. Bağlantı oluşturmak için Northwind örnek veritabanına erişiminiz olmalıdır.
   
 #### <a name="to-create-the-data-source"></a>Veri kaynağı oluşturmak için  
   
@@ -166,13 +166,13 @@ Windows uygulamalarında formların üzerindeki verileri görüntülerken, mevcu
   
 -   Ana sürükleyin **müşteriler** düğümünden **veri kaynakları** form penceresinden doğrulayın `PhoneNumberBox` denetim verileri görüntülemek için kullanılan `Phone` sütun.  
   
-     Araç şeridi yanı sıra form üzerindeki verilere bağlı denetimler, tanımlayıcı etiketlerle görünür (<xref:System.Windows.Forms.BindingNavigator>) Kayıtlarda gezinmek için. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
+     Araç şeridi yanı sıra form üzerindeki verilere bağlı denetimler, tanımlayıcı etiketlerle görünür (<xref:System.Windows.Forms.BindingNavigator>) Kayıtlarda gezinmek için. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
   
-## <a name="run-the-application"></a>Uygulamayı çalıştırın  
+## <a name="run-the-application"></a>Uygulamayı çalıştırma  
   
 #### <a name="to-run-the-application"></a>Uygulamayı çalıştırmak için  
   
--   Uygulamayı çalıştırmak için F5 tuşuna basın.  
+-   Uygulamayı çalıştırmak için F5'e basın.  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
  Uygulama gereksinimlerinize bağlı olarak, veri bağlamayı destekleyen bir denetim oluşturma sonra gerçekleştirmek isteyebileceğiniz birkaç adım vardır. Tipik bir sonraki adımlardan birkaçı şunlardır:  
@@ -184,4 +184,3 @@ Windows uygulamalarında formların üzerindeki verileri görüntülerken, mevcu
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da verilere Windows Forms denetimleri bağlama](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [Deneti veri kaynakları penceresinden sürüklendiğinde oluşturulacak şekilde ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
-

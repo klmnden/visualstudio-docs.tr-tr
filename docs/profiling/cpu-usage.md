@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3d4d6a352d2ff1b71796d64c34992af493867a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 65cf3b0d716251b41f144f523f12e1284357ed3a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063269"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647839"
 ---
 # <a name="analyze-cpu-usage"></a>CPU kullanımını analiz etme 
 
@@ -84,7 +84,7 @@ Tanılama raporu kendisine göre sıralandığı **toplam CPU**, yüksekten en d
 
  Kodunuz tarafından çalıştırılan sistem ve çerçeve işlevlerinin çağrılır *dış kod*. Dış kod işlevleri başlatmak ve uygulamayı durdurun, UI çizme, iş parçacığı denetimi ve uygulamayı diğer alt düzey hizmetler sağlar. CPU kullanımı çağırmak için ağaç toplar harici işlevler kullanıcı yönteminin birine çoğu durumda, dış kod içinde ilginizi kullanmadığınız **[harici kod]** düğümü.  
   
- Dış kod, arama yollarını ana tanılama raporu sayfasında görüntülemek için seçin **harici kodu Göster** gelen **filtre** açılır listesinde ve ardından **Uygula**. **Çağrı ağacı** görünümünü **CPU kullanımı** sayfa sonra dış kod çağrıları genişletir.  
+ Dış kod, arama yollarını ana tanılama raporu sayfasında (sağ bölme) görüntülemek için seçin **harici kodu Göster** gelen **filtre** açılır listesinde ve ardından **Uygula**. **Çağrı ağacı** görünümünü **CPU kullanımı** sayfa sonra dış kod çağrıları genişletir. ( **Filtre** açılan ana Tanılama sayfasında değil hakkında ayrıntılı görünümler bulunur.)
   
  ![Dış Kodu Göster](../profiling/media/cpu_use_wt_filterview.png "dış Kodu Göster")  
   

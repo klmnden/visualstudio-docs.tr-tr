@@ -23,12 +23,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35f694d9cc397800249dd9b4acd86bf63d22ad93
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a1aeb3cea738a08850762083929741c082d7ccb6
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320715"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739865"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++ genel bakış için Kod Analizi
 
@@ -56,11 +56,11 @@ Kullanabileceğiniz `#pragma` uyarıları hata olarak değerlendir; etkinleştir
 
 ## <a name="annotation-support"></a>Ek açıklama desteği
 
-Ek açıklamalar, Kod Analizi doğruluğunu artırın. Ek açıklamalar, işlev parametrelerinde öncesi ve sonrası koşulları hakkında ek bilgiler sağlar ve dönüş türleri. Daha fazla bilgi için [nasıl yapılır: ek kod __analysis_assume kullanarak bilgilerini belirt](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+Ek açıklamalar, Kod Analizi doğruluğunu artırın. Ek açıklamalar, işlev parametrelerinde öncesi ve sonrası koşulları hakkında ek bilgiler sağlar ve dönüş türleri. Daha fazla bilgi için [nasıl yapılır: __Analysis_assume kullanarak ek kod bilgileri belirtme](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>İade ilkesinin parçası olarak analiz aracı
 
-Tüm kaynak kodu iade etmelerin bazı ilkeleri karşılamasını zorunlu isteyebilirsiniz. Özellikle, çözümleme en son yerel yapı bir adım olarak çalıştırıldığı emin olmanız gerekir. Kod Analizi İlkesi iade etkinleştirme hakkında daha fazla bilgi için bkz. [oluşturma ve kod çözümleme iade ilkelerini kullanma](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+Tüm kaynak kodu iade etmelerin bazı ilkeleri karşılamasını zorunlu isteyebilirsiniz. Özellikle, çözümleme en son yerel yapı bir adım olarak çalıştırıldığı emin olmanız gerekir. Kod Analizi İlkesi iade etkinleştirme hakkında daha fazla bilgi için bkz. [oluşturma ve kod çözümleme iade ilkelerini kullanma](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
 
 ## <a name="team-build-integration"></a>Ekip Oluşturma entegrasyonu
 
@@ -69,7 +69,7 @@ Bir adım olarak kod çözümleme aracı çalıştırmak için derleme sistemini
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Hızlı Başlangıç: C/C++ için Kod Analizi](quick-start-code-analysis-for-c-cpp.md)
-- [İzlenecek yol: C/C++ kod kusurları için analiz edin.](walkthrough-analyzing-c-cpp-code-for-defects.md)
+- [İzlenecek yol: Kusurları için C/C++ kod çözümleme](walkthrough-analyzing-c-cpp-code-for-defects.md)
 - [C/C++ İçin Kod Analizi Uyarıları](code-analysis-for-c-cpp-warnings.md)
 - [C++ Temel Yönergeleri denetleyicilerini kullanma](using-the-cpp-core-guidelines-checkers.md)
 - [C++ temel yönergeleri denetleyici başvurusu](code-analysis-for-cpp-corecheck.md)

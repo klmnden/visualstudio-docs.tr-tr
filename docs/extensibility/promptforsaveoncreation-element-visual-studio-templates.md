@@ -2,9 +2,8 @@
 title: PromptForSaveOnCreation Element (Visual Studio Templates) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#PromptForSaveOnCreation
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c5b04bfa04b1b6fd6599e5fdd06d6c58210f635
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 99e26a5466dfeb08a927323d11f6ec49e53730c4
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638449"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53560590"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation öğesi (Visual Studio şablonları)
 İçin bir proje kaydetme konumunun kullanıcıya sorulup sorulmayacağını belirtir **yeni proje** bir proje oluştururken iletişim kutusu. Bu öğe ayarlanırsa `true`, kullanıcı bir kayıt istenir konumunu if `false`, bunlar istenmez. (Diğer bir deyişle, geçici bir Proje oluşturulur.)  

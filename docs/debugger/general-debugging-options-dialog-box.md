@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b5711b90e2b160f48c05835ae833bfbe7cd29fe
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 34fa13bbeee3289e19acdff7e45fe6e4a99f30d9
+ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730669"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443944"
 ---
 # <a name="general-debugging-options"></a>Genel hata ayıklama seçenekleri
 
@@ -156,7 +156,7 @@ Varsayılan hata ayıklama altyapısı bu senaryoları sağlamak için eski bir 
 - Karışık modda hata ayıklama sırasında C++ projeleri için Düzenle ve Devam Et'i etkinleştirmek istediğiniz.
 
 > [!NOTE]
-> Yönetilen uyumluluk modu yalnızca hata ayıklama altyapısı varsayılan uygulanan bazı özellikler devre dışı bırakır.
+> Yönetilen uyumluluk modu yalnızca hata ayıklama altyapısı varsayılan uygulanan bazı özellikler devre dışı bırakır. Eski hata ayıklama motoru, Visual Studio 2012'de değiştirilmiştir.
 
 **Eski kullanın C# ve VB ifade değerlendiricilerini**:  
 Hata ayıklayıcı, Visual Studio 2013'ün kullanacak C# veya Visual Basic ifade değerlendiricilerini yerine Visual Studio 2015 Roslyn tabanlı ifade değerlendiricilerini.

@@ -127,12 +127,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4fcfa442f648126a93d1ec6a3b0d3c4fc7c981
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d60691836b38720cadeddfdf254d3646f9fa5479
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924830"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805113"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>İşlev Parametrelerini ve Dönüş Değerlerini Açıklama
 Bu makalede basit işlev parametreleri için ek açıklamaları tipik kullanımları — skalerler yanı sıra, yapılar ve sınıflar için işaretçiler — ve çoğu arabellek.  Bu makalede, ek açıklamalar için yaygın kullanım biçimlerini de gösterilir. İşlevlerle ilişkili ek açıklama için bkz: [işlev davranışını yorumlama](../code-quality/annotating-function-behavior.md)
@@ -495,4 +495,12 @@ Bu makalede basit işlev parametreleri için ek açıklamaları tipik kullanıml
  [Kod Analizi ekip blogu](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [C/C++ kod hatalarını azaltmak için SAL ek açıklamalarını kullanma](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [SAL anlama](../code-quality/understanding-sal.md) [işlev davranışını yorumlama](../code-quality/annotating-function-behavior.md) [yapıları ve sınıfları yorumlama](../code-quality/annotating-structs-and-classes.md) [ Kilitlenme davranışını yorumlama](../code-quality/annotating-locking-behavior.md) [açıklamanın ne zaman ve nereye uygulanacağını belirtme](../code-quality/specifying-when-and-where-an-annotation-applies.md) [iç işlevleri](../code-quality/intrinsic-functions.md) [en iyi yöntemler ve örnekler](../code-quality/best-practices-and-examples-sal.md)
+
+- [C/C++ Kod Hatalarını Azaltmak için SAL Ek Açıklamalarını Kullanma](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+- [SAL'yi Anlama](../code-quality/understanding-sal.md)
+- [İşlev Davranışını Yorumlama](../code-quality/annotating-function-behavior.md)
+- [Yapıları ve Sınıfları Yorumlama](../code-quality/annotating-structs-and-classes.md)
+- [Kilitlenme Davranışını Yorumlama](../code-quality/annotating-locking-behavior.md)
+- [Açıklamanın Ne Zaman ve Nereye Uygulanacağını Belirtme](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+- [İç İşlevler](../code-quality/intrinsic-functions.md)
+- [En İyi Yöntemler ve Örnekler](../code-quality/best-practices-and-examples-sal.md)

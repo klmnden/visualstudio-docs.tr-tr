@@ -1,6 +1,7 @@
 ---
 title: Visual Studio kullanarak Office için VSTO Eklentileri oluşturma
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -8,17 +9,17 @@ ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab047953c1a19d444b4315b7dc605a1a990667df
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: ae35f11066ccb0bbd5e9fa36f137c8a77281463c
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670881"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441502"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Visual Studio kullanarak Office için VSTO Eklentileri oluşturma
   Office'i genişleten .NET Framework uygulamaları oluşturmak için Visual Studio'da Microsoft Office geliştirici araçları kullanabilirsiniz. Bu uygulamalar olarak da adlandırılır *Office çözümleri*.  
@@ -90,7 +91,7 @@ ms.locfileid: "50670881"
  Office birincil birlikte çalışma derlemelerini, bildirimleri, kullanıcı arabirimi öğeleri ve hata iletileri hakkında ayrıntılı bilgi için bağlantılar sağlar.  
   
  [Yönetilen başvuru &#40;Visual Studio'da Office geliştirme&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
- API ad alanları ve Office içinde kullanılan türleri hakkındaki bilgiler için bağlantılarla hedefleyen projeleri sağlar [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Visual Studio 2008 belgelerinde aşağıdaki başvuru bölümüne .NET Framework 3. 5'i hedefleyen Office projelerinde kullanılan türler ve ad alanları hakkında API başvuru belgeleri için bkz: [2007 sistemi yönetilen başvurusu](http://go.microsoft.com/fwlink/?LinkId=160658).  
+ API ad alanları ve Office içinde kullanılan türleri hakkındaki bilgiler için bağlantılarla hedefleyen projeleri sağlar [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Hedefleyen .NET Framework 3.5 için Office projelerinde kullanılan türler ve ad alanları hakkında API başvuru belgeleri Visual Studio 2008 belgelerinde aşağıdaki başvuru bölümüne bakın: [2007 sistemi yönetilen başvurusu](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
  [Yönetilmeyen API Başvurusu &#40;Visual Studio'da Office geliştirme&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
  Yönetilen VSTO Eklentileri Office uygulamalarında kaldırma ve yükleme gibi eylemleri gerçekleştirmek için kullanabileceğiniz COM arabirimleri hakkında bilgi için bağlantılar içerir.  

@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: a00ae51514f650ca8c166ba24e626838f003119c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ed8d162d3b4cde48515986c475563e368a5946bf
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065335"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803110"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Visual Studio Azure Uygulamasını Yayımlama Sihirbazı'nı kullanma
 
@@ -95,7 +95,7 @@ Azure depolama hesabı, uygulama dağıtımı için paketi depolar. Uygulama da�
 
 ![Tanılama ayarları](./media/vs-azure-tools-publish-azure-application-wizard/diagnostic-settings.png)
 
-Tanılama, bir Azure bulut hizmeti (veya Azure sanal makinesi) gidermek sağlar. Tanılama hakkında daha fazla bilgi için bkz. [Azure bulut Hizmetleri ve sanal makineler için yapılandırma tanılama](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md). Application Insights hakkında daha fazla bilgi için bkz: [Application Insights nedir?](/azure/application-insights/app-insights-overview.md).
+Tanılama, bir Azure bulut hizmeti (veya Azure sanal makinesi) gidermek sağlar. Tanılama hakkında daha fazla bilgi için bkz. [Azure bulut Hizmetleri ve sanal makineler için yapılandırma tanılama](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md). Application Insights hakkında daha fazla bilgi için bkz: [Application Insights nedir?](/azure/application-insights/app-insights-overview).
 
 ## <a name="summary-page"></a>Özet sayfası
 
@@ -122,4 +122,4 @@ Projenizin dağıtımı için tüm ayarları yapılandırdıktan sonra Seç **Ya
 
 - [Azure bulut Hizmetleri ve sanal makineler için tanılamayı yapılandırma](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
 
-- [Application Insights nedir?](/azure/application-insights/app-insights-overview.md)
+- [Application Insights nedir?](/azure/application-insights/app-insights-overview)

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating solutions
 - solutions [Office development in Visual Studio], creating
 - Office project types in Visual Studio
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05cf317823d4f5853d960109bd97da77ea8a927d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4803cbb515c680ce0d004cb2f9c1f5ee730bc588
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671254"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648813"
 ---
 # <a name="design-and-create-office-solutions"></a>Office çözümleri oluşturma ve tasarlama
   Visual Studio, birkaç farklı türde Office çözümleri oluşturmak için kullanabileceğiniz proje şablonları sağlar. Belgelerinin bu bölümü, proje şablonlarını açıklar ve Office projeleri oluşturma hakkında yönergeler sağlar. Projenizi oluşturduktan sonra kodun ve kullanıcı arabirimi özelleştirmelerinin gerçekleştirme hakkında daha fazla bilgi için bkz. [geliştirme Office çözümleri](../vsto/developing-office-solutions.md).  
@@ -34,7 +34,7 @@ ms.locfileid: "50671254"
 >  Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümleri için karşılaştırma küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.  
   
 ## <a name="create-office-projects"></a>Office projeleri oluşturma  
- Başlamadan önce gereksinimlerinizi belirlemek ve türüne en uygun çözümü bulmak gerekir. Örneğin Office çözümünüzü uygulama kullanılır, her seferinde bir VSTO eklentisi en iyi sığar gereksinimlerinizi çalıştırmanız gerekir. Kod bir tek belge ile tümleşiktir, belge düzeyinde özelleştirme oluşturun. Bu proje türleri, Visual Studio Proje şablonları kullanılabilir. Visual Studio ile birlikte gelen Office proje şablonları hakkında daha fazla bilgi için bkz. [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md). Office projeleri oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Başlamadan önce gereksinimlerinizi belirlemek ve türüne en uygun çözümü bulmak gerekir. Örneğin Office çözümünüzü uygulama kullanılır, her seferinde bir VSTO eklentisi en iyi sığar gereksinimlerinizi çalıştırmanız gerekir. Kod bir tek belge ile tümleşiktir, belge düzeyinde özelleştirme oluşturun. Bu proje türleri, Visual Studio Proje şablonları kullanılabilir. Visual Studio ile birlikte gelen Office proje şablonları hakkında daha fazla bilgi için bkz. [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md). Office projeleri oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
  Office projelerinde özellikler ve Visual Studio'da proje türlerinde farklı proje öğeleri var. Örneğin, bir belge düzeyi projesi oluşturduğunuzda, belge veya çalışma kitabı, projenizdeki açılabilir ve Visual Studio içinde düzenlenebilir. Daha fazla bilgi için [Visual Studio ortamında Office projeleri](../vsto/office-projects-in-the-visual-studio-environment.md).  
   
@@ -53,7 +53,7 @@ ms.locfileid: "50671254"
   
   Ancak, hedef Framework'ü Visual Studio değiştirdikten sonra belirli özellikleri kullanıyorsa, kodu projenizdeki bazı değiştirmeniz gerekebilir. Hedef Framework'ü değiştirme hakkında daha fazla bilgi için bkz. [nasıl yapılır: .NET Framework sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Projenizde yapmak ihtiyaç duyabilirsiniz değişiklikler hakkında daha fazla bilgi için bkz. [geçirme Office çözümlerini .NET Framework 4 veya sonraki bir sürüme](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
   
-  Visual Studio projeniz için hedef .NET Framework değiştirir ve çözümünüzü dağıtmak için ClickOnce'ı kullanıyorsanız, aynı zamanda ilgili .NET Framework sürümünü seçtiğinizden emin **önkoşulları** iletişim kutusu. Projeniz için hedef Framework'ü değiştirdiğinizde, bu seçenek otomatik olarak değiştirmez. Daha fazla bilgi için [nasıl yapılır: son kullanıcı bilgisayarlarında Office çözümlerinin çalışması için Önkoşulları Yükleme](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+  Visual Studio projeniz için hedef .NET Framework değiştirir ve çözümünüzü dağıtmak için ClickOnce'ı kullanıyorsanız, aynı zamanda ilgili .NET Framework sürümünü seçtiğinizden emin **önkoşulları** iletişim kutusu. Projeniz için hedef Framework'ü değiştirdiğinizde, bu seçenek otomatik olarak değiştirmez. Daha fazla bilgi için [nasıl yapılır: Son kullanıcı bilgisayarlarında Office çözümlerinin çalışması için Önkoşulları Yükleme](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 > [!NOTE]  
 >  .NET Framework 3.5 veya Office projelerinde kullanarak oluşturduğunuz önceki hedefleyemez [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Kullanarak oluşturduğunuz office projeleri [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] sürümünde ilk yapılan özellikleri gerektirir [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
@@ -100,9 +100,9 @@ ms.locfileid: "50671254"
  [Visual Studio ortamında Office projeleri](../vsto/office-projects-in-the-visual-studio-environment.md)   
  [Office projelerinde Özellikler](../vsto/properties-in-office-projects.md)   
  [Çözümleri Microsoft Office'in farklı sürümlerinde çalıştırma](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)   
- [Nasıl yapılır: birincil birlikte çalışma derlemeleriyle hedef Office uygulamaları](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [Nasıl yapılır: Birincil birlikte çalışma derlemeleriyle Office uygulamalarını hedefleme](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [Office çözümlerinde uygulama ve dağıtım bildirimleri](../vsto/application-and-deployment-manifests-in-office-solutions.md)   
- [Nasıl yapılır: bir Office çözümü için yapılandırma bilgilerini ayarlama](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)   
+ [Nasıl yapılır: Bir Office çözümü için yapılandırma bilgilerini ayarlama](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)   
  [Visual Studio içinde Office işlevselliğini kullanma](../vsto/using-office-functionality-inside-of-visual-studio.md)   
  [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md)   
  [Office programlarındaki ortak görevler](../vsto/common-tasks-in-office-programming.md)   

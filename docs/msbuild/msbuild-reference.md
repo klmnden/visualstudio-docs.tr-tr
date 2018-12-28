@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b2710b6efcc765f98977c2730c5f729e3a8b260
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: 70fcbd9eacbfa581166fccf4471b25c0b22fb74a
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120389"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739844"
 ---
 # <a name="msbuild-reference"></a>MSBuild başvurusu
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] için derleme sistemidir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aşağıdaki bağlantılar içeren konuların müşteri adayı [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] başvuru bilgileri.  
@@ -61,7 +61,7 @@ ms.locfileid: "48120389"
  [Yanıt riles](../msbuild/msbuild-response-files.md)  
  Açıklar *.rsp* komut satırı anahtarları içeren dosyaları.  
   
- [Ek kaynaklar](../msbuild/additional-resources-for-msbuild.md)  
+ [Ek kaynaklar](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)  
  Bağlantılar sağlar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Web sitelerinin ve haber gruplarının.  
   
  [WPF MSBuild başvurusu](../msbuild/wpf-msbuild-reference.md)  

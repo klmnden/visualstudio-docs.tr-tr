@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: yerel bir tek başına bileşeni izleme ve komut satırından Profiler ile zamanlama verileri toplama | Microsoft Docs'
+title: 'Nasıl Yapılır: Yerel bir tek başına bileşeni izleme ve komut satırından Profiler ile zamanlama verileri toplama | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,20 +10,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9a2d4e4b0a19464bfded0c49ed4262c8fa8877a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 50b280208e686801539adb338a001bdb69324457
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884803"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592657"
 ---
-# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Nasıl yapılır: yerel bir tek başına bileşeni izleme ve komut satırından Profil Oluşturucu ile zamanlama verileri toplama
+# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Nasıl Yapılır: Yerel bir tek başına bileşeni izleme ve komut satırından profil oluşturucu ile zamanlama verileri toplama
 Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir C++ gibi yerel bir bileşeni izleme Profil Araçları komut satırı araçlarının. *exe* veya. *dll* dosyası ve ayrıntılı zamanlama verileri toplamak için.  
 
 > [!NOTE]
->  Profil araçlarının komut satırı araçları yerleştirilir *tools\performance Araçları* alt [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] yükleme dizini. 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir. Daha fazla bilgi için [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Profil oluşturma araçları için olan yolu almak için bkz: [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir.
 
- Araçlar yöntemini kullanarak bir bileşenden ayrıntılı zamanlama verileri toplamak için kullandığınız [VSInstr.exe](../profiling/vsinstr.md) aracını bileşenin belgelenmiş bir sürümünü oluşturmak için. Ardından profil oluşturucuyu başlatın. Araçlı bileşen yürütüldüğünde, zamanlama verileri bir veri dosyasına otomatik olarak toplanır. Duraklatma ve profil oluşturma oturumu sırasında veri koleksiyonu devam ettirin.  
+Araçlar yöntemini kullanarak bir bileşenden ayrıntılı zamanlama verileri toplamak için kullandığınız [VSInstr.exe](../profiling/vsinstr.md) aracını bileşenin belgelenmiş bir sürümünü oluşturmak için. Ardından profil oluşturucuyu başlatın. Araçlı bileşen yürütüldüğünde, zamanlama verileri bir veri dosyasına otomatik olarak toplanır. Duraklatma ve profil oluşturma oturumu sırasında veri koleksiyonu devam ettirin.  
 
  Profil oluşturma oturumunu sona erdirmek için hedef uygulamayı kapatın ve sonra profil oluşturucuyu açıkça kapatın.  
 

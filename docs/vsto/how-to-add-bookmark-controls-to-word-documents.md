@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Word belgelerine yer işareti denetimi ekleme'
+title: 'Nasıl Yapılır: Word belgelerine yer işareti denetimi ekleme'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -14,19 +14,19 @@ helpviewer_keywords:
 - Bookmark control, adding to documents
 - Create Bookmark Control dialog box
 - controls [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 33afb16b9862f418f4d661bb5432ea4bb3866f16
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0e58525d20efe17d24cd916b5e9eff79c7da59d7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878615"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647796"
 ---
-# <a name="how-to-add-bookmark-controls-to-word-documents"></a>Nasıl yapılır: Word belgelerine yer işareti denetimi ekleme
+# <a name="how-to-add-bookmark-controls-to-word-documents"></a>Nasıl Yapılır: Word belgelerine yer işareti denetimi ekleme
   Belge düzeyinde projelerde eklediğiniz <xref:Microsoft.Office.Tools.Word.Bookmark> belgenin tasarım zamanında veya çalışma zamanında, projenizdeki denetimler. Projelerinde, VSTO eklentisi, eklediğiniz <xref:Microsoft.Office.Tools.Word.Bookmark> herhangi bir açık belgeye çalışma zamanında denetimler.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -135,6 +135,6 @@ ms.locfileid: "49878615"
  [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md)   
  [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)   
- [Nasıl yapılır: yer işareti denetimlerini yeniden boyutlandırma](../vsto/how-to-resize-bookmark-controls.md)  
+ [Nasıl yapılır: Yer işareti denetimlerini yeniden boyutlandırma](../vsto/how-to-resize-bookmark-controls.md)  
   
   

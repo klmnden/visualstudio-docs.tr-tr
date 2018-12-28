@@ -2,9 +2,8 @@
 title: SortOrder öğesi (Visual Studio şablonları) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SortOrder
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b963b6e74b7c24d31ddc611407df22380ff8bb60
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2710c85caf2ff675a05236aac48d08412e794ca6
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140329"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561349"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder Öğesi (Visual Studio Şablonları)
-Ya da göründüğü gibi diğer şablonları aynı kategoride arasında şablonu düzenlemek için kullanılan bir değeri belirtir **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.  
+Ya da göründüğü gibi aynı kategoride bulunan diğer şablonlar arasında şablonunu düzenlemek için kullanılan bir değer belirtir **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -49,7 +48,7 @@ Ya da göründüğü gibi diğer şablonları aynı kategoride arasında şablon
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Gerekli öğe.<br /><br /> Şablon kategorilere ayırır ve nasıl ya da görüntüler tanımlar **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Gerekli öğe.<br /><br /> Şablonu kategorilere ayırır ve nasıl görüntülendiğini tanımlar **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.|  
   
 ## <a name="text-value"></a>Metin Değeri  
  Bir metin değeri gereklidir.  
@@ -57,14 +56,14 @@ Ya da göründüğü gibi diğer şablonları aynı kategoride arasında şablon
  Bir `integer` sıralama sıra değeri temsil eden.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `SortOrder` İsteğe bağlı bir öğedir. Varsayılan değer 100'dür ve tüm değerlerin 10'ün katları olmalıdır.  
+ `SortOrder` İsteğe bağlı bir öğedir. Varsayılan değer 100'dür ve tüm değerlerin 10'ın katları olmalıdır.  
   
- `SortOrder` Öğesi için kullanıcı tarafından oluşturulan şablonlar göz ardı edilir. Tüm kullanıcı tarafından oluşturulan şablonlar alfabetik olarak sıralanır.  
+ `SortOrder` Öğesi, kullanıcı tarafından oluşturulan şablonlarını için yoksayılır. Tüm kullanıcı tarafından oluşturulan şablonlarını alfabetik olarak sıralanır.  
   
- Düşük sıralama sipariş değerlere sahip şablonları ya da görünür **yeni proje** veya **Yeni Öğe Ekle** yüksek sıralama sipariş değerlere sahip şablonları önce iletişim kutusu.  
+ Düşük sıralama sipariş değerleri olan şablonlar görünür ya da **yeni proje** veya **Yeni Öğe Ekle** yüksek sıralama sipariş değerleri olan şablonları önce iletişim kutusu.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir standart için meta verileri gösterir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] sınıf şablonu.  
+ Standart için meta veriler aşağıdaki örnekte [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] sınıf şablonu.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -83,7 +82,7 @@ Ya da göründüğü gibi diğer şablonları aynı kategoride arasında şablon
 </VSTemplate>  
 ```  
   
- Bu örnekte, `SortOrder` öğesidir görece yüksek. Büyük olasılıkla diğer [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] öğe şablonları sahip olacak bir `SortOrder` değerinden daha düşük değer `290` ve bu şablonda önce görünür **yeni öğe** iletişim kutusu.  
+ Bu örnekte, `SortOrder` öğedir görece yüksek. Büyük olasılıkla diğer [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] öğe şablonları sahip olacak bir `SortOrder` tutardan değeri `290` ve bu şablonda önce görünür **yeni öğe** iletişim kutusu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)   

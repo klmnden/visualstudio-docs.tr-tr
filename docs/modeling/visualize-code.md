@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49f3c0e9cdd1feee0161c95d30bed03244d14e15
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 622655f1ed05ab77b36a3c4756a0176fcad74ac4
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857633"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684934"
 ---
 # <a name="visualize-code"></a>Kodu görselleştirme
 
@@ -39,8 +39,8 @@ Visual Studio'nun hangi sürümlerinin her özelliğini desteklemek için bkz [m
 |||
 |-|-|
 |**Kod ve ilişkilerini anlayın:**<br /><br /> Belirli kod parçaları arasındaki ilişkileri eşleyin.<br /><br /> Çözümün tamamını kodunuzdaki ilişkileri genel bir bakış görürsünüz.|- [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)<br />- [Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma](../modeling/use-code-maps-to-debug-your-applications.md)<br />- [Kod Haritası çözümleyicilerini kullanarak olası sorunları bulma](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />- [Hata ayıklarken çağrı yığınında yöntemler eşleştirme](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
-|**Sınıf yapıları anlayın:**<br /><br /> Koddan sınıf diyagramları oluşturarak bir projedeki sınıf yapısını görselleştirin.|[Nasıl Yapılır: Projelere Sınıf Diyagramları Ekleme (Sınıf Tasarımcısı)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
-|**Üst düzey sistem tasarımı tanımlamak ve bu tasarım karşı kodu doğrulayın:**<br /><br /> Bağımlılık diyagramları oluşturarak, üst düzey sistem tasarımı ve hedeflenen bağımlılıklarını açıklar. Kodu bir koddaki bağımlılıkları tasarım ile tutarlı kalmasını sağlamak için bu tasarım karşı doğrulayın.|- [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Bağımlılık diyagramları: başvuru](../modeling/layer-diagrams-reference.md)<br />- [Bağımlılık diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md)<br />- [Bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)|
+|**Sınıf yapıları anlayın:**<br /><br /> Koddan sınıf diyagramları oluşturarak bir projedeki sınıf yapısını görselleştirin.|[Nasıl yapılır: (Sınıf Tasarımcısı) projelere sınıf diyagramları ekleme](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)|
+|**Üst düzey sistem tasarımı tanımlamak ve bu tasarım karşı kodu doğrulayın:**<br /><br /> Bağımlılık diyagramları oluşturarak, üst düzey sistem tasarımı ve hedeflenen bağımlılıklarını açıklar. Kodu bir koddaki bağımlılıkları tasarım ile tutarlı kalmasını sağlamak için bu tasarım karşı doğrulayın.|- [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Bağımlılık diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)<br />- [Bağımlılık diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)<br />- [Bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

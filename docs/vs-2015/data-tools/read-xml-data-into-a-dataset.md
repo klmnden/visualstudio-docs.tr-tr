@@ -26,12 +26,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6eb85fcef78b4b856c47ccb4436d1314ae440136
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 68c565091deeef19436d3a2efaeb9ccbc15aa1d3
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219737"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648661"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Bir veri kümesinin içine XML verileri okuma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -228,9 +228,8 @@ ADO.NET ile XML verileri çalışmak için basit yöntemler sağlar. Bu kılavuz
      [!code-vb[VbRaddataFillingAndExecuting#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/VB/Form1.vb#3)]  
   
 ## <a name="test-the-form"></a>Form test  
- Şimdi beklendiği gibi davrandığından emin olmak için form test edebilirsiniz.  
-  
-#### <a name="to-test-the-form"></a>Formu sınamak için  
+
+Şimdi beklendiği gibi davrandığından emin olmak için form test edebilirsiniz.
   
 1.  Seçin **F5** uygulamayı çalıştırın.  
   
@@ -243,15 +242,15 @@ ADO.NET ile XML verileri çalışmak için basit yöntemler sağlar. Bu kılavuz
      XML Şeması XML dosyası için metin kutusu görüntüler.  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
- Bu izlenecek yol, bir şema XML dosyasının içeriğine göre oluşturma yanı sıra bir XML dosyası okunurken bir veri kümesine ilişkin temel bilgileri size öğretir. Sonraki yapabilecek bazı görevler aşağıda verilmiştir:  
+
+Bu izlenecek yol, bir şema XML dosyasının içeriğine göre oluşturma yanı sıra bir XML dosyası okunurken bir veri kümesine ilişkin temel bilgileri size öğretir. Sonraki yapabilecek bazı görevler aşağıda verilmiştir:  
   
 -   Veri kümesini ve geri XML olarak yazma verileri düzenleyin. Daha fazla bilgi için bkz. <xref:System.Data.DataSet.WriteXml%2A>.  
   
--   Veri kümesindeki verileri düzenleyebilir ve veritabanına yazamadı. Daha fazla bilgi için [verileri kaydetme](../data-tools/saving-data.md).  
+-   Veri kümesindeki verileri düzenleyebilir ve veritabanına yazamadı.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Veri izlenecek yollar](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Visual Studio'da verilere erişme](../data-tools/accessing-data-in-visual-studio.md)   
  [Uygulamanızı veri almaya hazırlama](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Visual Studio'daki XML Araçları](../xml-tools/xml-tools-in-visual-studio.md)
-

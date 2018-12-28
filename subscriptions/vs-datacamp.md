@@ -3,18 +3,18 @@ title: Seçili Visual Studio abonelikleri DataCamp teklifi'nden bugün veri bili
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 05/30/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Seçili Visual Studio abonelikleriyle dahil DataCamp eğitim aboneliği hakkında bilgi edinin.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 81dea4c5da7b6fe6b6c6cfe000ae953f98e6e83f
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
-ms.translationtype: HT
+ms.openlocfilehash: 47199fc27491843985326f3ceee5dd6fbf3677ad
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073824"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802154"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>DataCamp eğitim avantajı olarak Visual Studio abonelikleri
 
@@ -24,64 +24,66 @@ Visual Studio aboneliğinizi DataCamp Avantajı'nızı süresi bağlıdır.
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
 
-1. Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) adresinde oturum açın.
 
 2. "Profesyonel geliştirme" kategorisinde DataCamp avantajı kutucuğu bulun ve tıklayarak **etkinleştirme**.
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp avantajı kutucuğu](_img\vs-datacamp\vs-datacamp-tile-2.png)
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp avantajı kutucuğu](_img/vs-datacamp/vs-datacamp-tile-2.png)
 
 3. DataCamp sayfasında, yeni bir hesap oluşturabilirsiniz.  Bir e-posta adresinizi ve parolanızı girin veya mevcut Facebook, LinkedIn ve Google hesaplarını kullanarak oturum seçebilirsiniz.  Oturum açma bilgilerinizi sağladıktan sonra tıklayın **Başlarken**.
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp yeni hesap oluştur](_img\vs-datacamp\vs-datacamp-create-account.png)
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp yeni hesap oluştur](_img/vs-datacamp/vs-datacamp-create-account.png)
+   > 
+   > [!NOTE]
+   > Hesabınızı oluşturmaya başladığınızda, aşağıdaki hata iletisini alabilirsiniz: "HAY AKSİ!  Promosyon kodunuzu geçersiz veya süresi dolmuş."  Promosyon kodunuzu oluşturulduğunda, birkaç dakika sonra süresi dolacak çünkü bu gerçekleşir.  Bu iletiyi alırsanız, yalnızca dönmek [avantajları](https://my.visualstudio.com/benefits) sayfasında ve tıklayın **etkinleştirme** DataCamp avantajı kutucuğuna bağlantı.
 
-    > [!NOTE]
-    > Hesabınızı oluşturmaya başladığınızda, aşağıdaki hata iletisini alabilirsiniz: "hata!  Promosyon kodunuzu geçersiz veya süresi dolmuş."  Promosyon kodunuzu oluşturulduğunda, birkaç dakika sonra süresi dolacak çünkü bu gerçekleşir.  Bu iletiyi alırsanız, yalnızca dönmek [avantajları](https://my.visualstudio.com/benefits) sayfasında ve tıklayın **etkinleştirme** DataCamp avantajı kutucuğuna bağlantı.
-
-4. Hesabınız oluşturulduktan sonra öğrenme yolu seçebilirsiniz.  Seçenekler şunlardır:
+4. Hesabınız oluşturulduktan sonra öğrenme yolu seçebilirsiniz.  Şu seçenekler mevcuttur:
     - Veri bilimi için R öğrenme
     - Veri bilimi için öğrenme Python Başlat
     - Veri bilimi becerilerinizi geliştirin
 
-
-    Başlamak için seçilen yolun tıklamanız yeterlidir.
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp yolu seçin](_img\vs-datacamp\vs-datacamp-choose-path.png)
+   Başlamak için seçilen yolun tıklamanız yeterlidir.
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp yolu seçin](_img/vs-datacamp/vs-datacamp-choose-path.png)
 
 5. Yolunuza seçtikten sonra bir hedef seçerek daha fazla öğrenme yolunuzu iyileştirebilirsiniz.  Örneğin, "Geliştirme your veri bilimi beceri kümesi" yolu seçerseniz, aşağıdaki seçenekleri görürsünüz. Bir seçenek seçin veya tıklatın **eminim değil.  Tüm kariyer yollarını göster** daha geniş bir yol oluşturmak için.
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp veri bilimi beceri kümesi](_img\vs-datacamp\vs-datacamp-datascience.png)
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp veri bilimi beceri kümesi](_img/vs-datacamp/vs-datacamp-datascience.png)
 
 
 6. Yol ve Seçenekler, seçtiğiniz bağlı olarak, kariyer parçaları seçimi görürsünüz.  Tıklayarak **kaydetme** tercih ettiğiniz İzle düğmesi.
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp kariyer İzle](_img\vs-datacamp\vs-datacamp-all-tracks.png)
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp kariyer İzle](_img/vs-datacamp/vs-datacamp-all-tracks.png)
 
 7. İlk kursun bu izleme, izleme kaydedildikten sonra açılır.  Kurs alıştırmalar tamamlanıyor ve gezinti dahil olmak üzere, kurs ile etkileşim kurmayı açıklayan bir öğretici görürsünüz.
 
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp kullanmaya başlama](_img\vs-datacamp\vs-datacamp-getting-started.png)
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp kullanmaya başlama](_img/vs-datacamp/vs-datacamp-getting-started.png)
 
 Herhangi bir noktada durdurmak ve eğitim sonraki oturumunuzda sürdürün.  Yalnızca ziyaret [ http://www.datacamp.com ](http://www.datacamp.com)ve oturum açın.  Burada duraklatıldı eğitim hakkınız devam edebilir ve panonuz göreceksiniz. Tıklamanız yeterlidir **devam izleme**.
 
 > [!div class="mx-imgBorder"]   
-> ![DataCamp devam eğitim](_img\vs-datacamp\vs-datacamp-continue-training.png)
+> ![DataCamp devam eğitim](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Uygunluk
 
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standart, yıllık bulut)   | VL, Azure, perakende | 3 ay       |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir          |
-| Visual Studio Professional (standart, yıllık bulut) | VL, Azure, perakende                                       | 3 ay                                                            |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir           |
+| Visual Studio Enterprise (standart)   | VL, Azure, perakende | 3 ay       |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir          |
+| Visual Studio Professional (standart) | VL, Azure, perakende                                       | 3 ay                                                            |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir           |
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Kullanılabilir                                             |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir           |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Kullanılabilir                                              |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir           |
 | Visual Studio Dev Essentials | Yok  | 2 ay | Hayır. Yalnızca yeni aboneleri tarafından kullanılabilir |
-| Visual Studio Enterprise (standart, yıllık bulut)  | NFR<sup>1</sup> |Yok  | Yok |
+| Visual Studio Enterprise (standart)  | NFR<sup>1</sup> |Yok  | Yok |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure | Yok | Yok |
 
 
 
-<sup>1</sup>*içerir: satışıyla (NFR), FTE, değerli Microsoft Professional (MVP), bölge Yöneticisi (RD), Microsoft iş ortağı ağı (MPN), Visual Studio Endüstri ortağı (VSIP), Microsoft eğitmen, BizSpark, onaylanmamıştır için Imagine* 
+<sup>1</sup>*içerir:    Değil for Resale (NFR), Trainer, BizSpark FTE, değerli Microsoft Professional (MVP), bölge Yöneticisi (RD), Microsoft iş ortağı ağı (MPN), Visual Studio Endüstri ortağı (VSIP), Microsoft Sertifikalı, Imagine*
 
+
+> [!NOTE]
+> Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.
 
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.

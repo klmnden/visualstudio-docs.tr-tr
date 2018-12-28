@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Word belgelerine Eylemler bölmesi ekleme veya Excel çalışma kitapları'
+title: 'Nasıl Yapılır: Word belgelerine veya Excel çalışma kitaplarına Eylemler bölmesi ekleme'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], adding controls
 - actions panes [Office development in Visual Studio], creating in Word
 - actions panes [Office development in Visual Studio], adding controls
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f70511d0490032204789dc037a13847a10b5cbe6
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 7c49fcf50046148ca01e2ce4eb5ebb204874d1d0
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948367"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648245"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Nasıl Yapılır: Word Belgelerine veya Excel Çalışma Kitaplarına Eylemler Bölmesi Ekleme
   Microsoft Office Word belgesi veya Microsoft Excel çalışma kitabına Eylemler bölmesi ekleme için önce bir Windows Forms kullanıcı denetimi oluşturun. Ardından, kullanıcı denetimine ekleyin <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> özelliği `ThisDocument.ActionsPane` alan (Word) veya `ThisWorkbook.ActionsPane` projenizdeki alan (Excel).  
@@ -81,7 +81,7 @@ ms.locfileid: "51948367"
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md)   
  [İzlenecek yol: Eylemler bölmesinden belgeye metin ekleme](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
- [Nasıl yapılır: denetim Eylemler bölmelerindeki Düzen yönetme](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
+ [Nasıl yapılır: Eylemler bölmelerindeki Düzen denetim yönetme](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [İzlenecek yol: Eylemler bölmesinden belgeye metin ekleme](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: Etkinlik tasarımcıları kullanarak iş akışı Tasarımcısı-
+title: İş Akışı Tasarımcısı - etkinlik tasarımcılarını kullanma
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d85e915099c9d94123f7e97b0d19bf235c0efae
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d7f6ca4310e8de644f799c8c921ac27cb3e1c458
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758047"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684337"
 ---
 # <a name="using-the-activity-designers"></a>Etkinlik Tasarımcılarını kullanma
 
-İş Akışı Tasarımcısı etkinlikleri ve iş akışları oluşturma sırasında kullanabileceğiniz sistem tarafından sağlanan etkinliklerin sayısını içerir. Bu bölümde, sistem tarafından sağlanan etkinlikleri ve kullanılabilir kendi tasarımcıları kategorileri açıklanmaktadır. Etkinlikler ve bunların ilgili tasarımcıları bu kategorilerin her biri içinde konularda ne bu etkinlikler yapın ve bunları nasıl kılavuzluk açıklanmaktadır.
+İş Akışı Tasarımcısı etkinliklerini ve iş akışlarını oluştururken kullanabileceğiniz sistem tarafından sağlanan etkinlikler içerir. Bu bölümde, sistem tarafından sağlanan etkinlikleri ve kullanılabilir olan kendi tasarımcıları kategorileri açıklanmaktadır. Etkinlikler ve bunların ilgili tasarımcılar Bu kategorilerden her biri içinde konularda ne bu etkinlikleri yapın ve bunların nasıl kullanılacağı hakkında rehberlik açıklanmaktadır.
 
 ## <a name="reference"></a>Başvuru
 
@@ -30,8 +30,6 @@ ms.locfileid: "36758047"
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
- [İş Akışı Tasarımcısını Kullanma](../workflow-designer/using-the-workflow-designer.md)
-
- [İş Akışı Tasarımcısı ile İş Akışlarında Hata Ayıklama](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
-
- [İş Akışı Tasarımcısı Kullanıcı Arabirimi Yardımı](../workflow-designer/workflow-designer-ui-help.md)
+- [İş Akışı Tasarımcısını Kullanma](../workflow-designer/developing-applications-with-the-workflow-designer.md)
+- [İş Akışı Tasarımcısı ile İş Akışlarında Hata Ayıklama](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
+- [İş Akışı Tasarımcısı Kullanıcı Arabirimi Yardımı](../workflow-designer/workflow-designer-ui-help.md)

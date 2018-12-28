@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e42c86cf94115d317eb20df66f4cef005e05eba9
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+ms.openlocfilehash: ad8e2576ace02296e680355071576f1cf1eabd5f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281803"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648390"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Veri aramak için Windows Form oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,7 +110,7 @@ Sık rastlanan bir uygulama senaryosu seçilen verileri form üzerinde görünt�
   
 2.  Sürükleme **müşteriler** düğümünden **veri kaynakları** penceresinden formunuza.  
   
-     A <xref:System.Windows.Forms.DataGridView> ve araç şeridi (<xref:System.Windows.Forms.BindingNavigator>) Kayıtlarda gezinmek için formda görünür. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
+     A <xref:System.Windows.Forms.DataGridView> ve araç şeridi (<xref:System.Windows.Forms.BindingNavigator>) Kayıtlarda gezinmek için formda görünür. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
   
 ## <a name="addparameterization-search-functionality-to-the-query"></a>Sorgulanacak Addparameterization (arama işlevselliği)  
  Özgün kullanarak sorgu, WHERE yan tümcesi ekleyebilirsiniz **arama ölçütü Oluşturucu** iletişim kutusu.  
@@ -143,7 +143,7 @@ Sık rastlanan bir uygulama senaryosu seçilen verileri form üzerinde görünt�
   
 #### <a name="to-test-the-application"></a>Uygulamayı test etmek için  
   
-1.  Uygulamayı çalıştırmak için F5 tuşuna basın.  
+1.  Uygulamayı çalıştırmak için F5'e basın.  
   
 2.  Tür **Londra** içine **Şehir** metin kutusuna ve ardından **FillByCity**.  
   
@@ -152,10 +152,9 @@ Sık rastlanan bir uygulama senaryosu seçilen verileri form üzerinde görünt�
 ## <a name="next-steps"></a>Sonraki Adımlar  
  Uygulama gereksinimlerinize bağlı olarak, parametreli form oluşturduktan sonra gerçekleştirmek isteyebileceğiniz birkaç adım vardır. Bu izlenecek yolda yapabileceğiniz bazı geliştirmeler şunlardır:  
   
--   İlgili verileri görüntüleyen denetimler ekleme. Daha fazla bilgi için [nasıl yapılır: Windows Forms uygulamasında görüntü ilgili verileri](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md).  
+-   İlgili verileri görüntüleyen denetimler ekleme.  
   
 -   Veritabanı nesneleri eklemek veya çıkarmak için veri kümesini düzenleme. Daha fazla bilgi için [oluşturun ve veri kümeleri yapılandırma](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da verilere Windows Forms denetimleri bağlama](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

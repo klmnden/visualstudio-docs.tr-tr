@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5059028b87818e34e44123dadde9851eee4200bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a7e281f65f58cc3fa10325574eb397d0aa20308e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906552"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740019"
 ---
 # <a name="migrate-office-solutions-to-the-net-framework-4-or-later"></a>Office çözümlerini .NET Framework 4 veya sonraki sürümlere geçirme
   Bir Office projesi hedef Framework'ü değiştirilirse [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya önceki .NET Framework sürümünden bazı ek adımlar daha sonra çözümü geliştirme ve son kullanıcı bilgisayarlarında çalıştırmaya devam etmek için gerekli olabilir. Daha fazla bilgi için [gerekli .NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz Office projelerini çalıştırmak için değişiklikler](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).  
@@ -31,7 +31,7 @@ ms.locfileid: "49906552"
   
 - [.NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz Excel ve Word projelerini güncelleştirme](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
-- [.NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz Office projelerindeki Şerit Özelleştirmelerini Güncelleştirme](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
+- [.NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz Office projelerindeki Şerit Özelleştirmelerini Güncelleştirme](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)  
   
 - [.NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz Outlook projelerindeki form bölgelerini güncelleştirme](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   

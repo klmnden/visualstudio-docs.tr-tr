@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: dinamik olarak derlenmiş bir ASP.NET Web uygulamasını izleme ve ayrıntılı zamanlama verileri Profiler ile komut satırını kullanarak toplama | Microsoft Docs'
+title: 'Nasıl Yapılır: Bir dinamik olarak derlenmiş bir ASP.NET Web uygulamasını izleme ve ayrıntılı zamanlama verileri Profiler ile komut satırını kullanarak toplama | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -9,19 +9,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: bcc5d167fdd53a597fb171881ae61281c8280c8d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 653b4c9b04f3a126e4c63384d99fafce6c9cfcff
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894579"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592488"
 ---
-# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Nasıl yapılır: dinamik olarak derlenmiş bir ASP.NET web uygulamasını izleme ve komut satırını kullanarak profil oluşturucu ayrıntılı zamanlama verileri toplama
+# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Nasıl Yapılır: Gereç dinamik olarak derlenmiş bir ASP.NET web uygulamasını ve komut satırını kullanarak profil oluşturucu ile toplama ayrıntılı zamanlama verileri
 
 Bu makalede, dinamik olarak derlenmiş için ayrıntılı zamanlama verileri toplamak için Visual Studio Profil Araçları komut satırı araçlarını kullanmayı açıklar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] yöntemi profil oluşturma Araçları'nı kullanarak uygulama.
 
 > [!NOTE]
-> Profil araçlarının komut satırı araçları yerleştirilir *tools\performance Araçları* alt [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] yükleme dizini. 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir. Daha fazla bilgi için [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+>  Profil oluşturma araçları için olan yolu almak için bkz: [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir.
 
 Performans verileri toplamak için bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulaması, değişiklik *web.config* etkinleştirmek için hedef uygulamanın dosya [VSInstr.exe](../profiling/vsinstr.md) dinamik olarak derlenmiş bir işaretleme aracı Uygulama dosyaları. Daha sonra [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) oluşturmayı etkinleştirmek için web sunucusuna uygun ortam değişkenlerini ayarlamak için araç ve ardından bilgisayarı yeniden başlatın.
 
@@ -29,7 +29,7 @@ Profil oluşturucuyu başlatın ve ardından hedef uygulamayı çalıştırın. 
 
 ## <a name="configure-the-aspnet-web-application-and-the-web-server"></a>ASP.NET web uygulaması ve web sunucusunu yapılandırma
 
-1. Değiştirme *web.config* hedef uygulamanın dosya. Bkz: [nasıl yapılır: izleme ve profil dinamik olarak derlenmiş ASP.NET web uygulamaları için web.config dosyalarını değiştirme](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
+1. Değiştirme *web.config* hedef uygulamanın dosya. Bkz: [nasıl yapılır: İzleme ve profil dinamik olarak derlenmiş ASP.NET web uygulamaları için web.config dosyalarını değiştirme](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
 
 2. Bir komut istemi penceresi açın.
 
@@ -99,7 +99,7 @@ Profil oluşturma oturumunu sona erdirmek için hedef kapatmak [!INCLUDE[vstecas
 
      **VSPerfCmd** [ /Shutdown](../profiling/shutdown.md)
 
-4. IIS'yi yeniden başlatın. Tür:
+4. IIS’yi yeniden başlatın. Tür:
 
      **IISReset/Start**
 

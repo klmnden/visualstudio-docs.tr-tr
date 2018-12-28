@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: c28dcf247a9e0faaec13ddc4b3006cf6a93fda90
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
-ms.translationtype: MT
+ms.openlocfilehash: 7a51fab355f1c306fcfff4963d13e1ca59c3e503
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496148"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738826"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio'da platformlar arası Mobil Geliştirme
 
@@ -42,7 +42,7 @@ Xamarin için Visual Studio Araçları ile kod ve hatta kullanıcı Arabirimi pa
 
 ###  <a name="AndroidHTML"></a> Android, iOS ve Windows, bir tek kod tabanından hedef
 
- C# veya F # (Visual Basic şu anda desteklenmiyor) kullanarak, Android, iOS ve Windows için yerel uygulamalar oluşturabilirsiniz.  Başlamak için Visual Studio 2017'yi, seçin **.NET ile Mobil Geliştirme** yükleyici seçeneği.
+ Kullanarak Android, iOS ve Windows için yerel uygulamalar oluşturabilirsiniz C# veya F# (Visual Basic şu anda desteklenmiyor).  Başlamak için Visual Studio 2017'yi, seçin **.NET ile Mobil Geliştirme** yükleyici seçeneği.
 
  Visual Studio 2017 zaten varsa, yeniden çalıştırma **Visual Studio yükleyicisi** ve aynı **.NET ile Mobil Geliştirme** Xamarin seçeneğini (yukarıdaki gibi).
 
@@ -54,7 +54,7 @@ Xamarin için Visual Studio Araçları ile kod ve hatta kullanıcı Arabirimi pa
 
 #### <a name="design-one-set-of-pages-that-render-across-all-devices-by-using-xamarinforms"></a>Bir Xamarin.Forms kullanarak tüm cihazlarda oluşturan sayfalar kümesini tasarlama
 
- Uygulama tasarımınızı karmaşıklığına bağlı olarak, kullanarak oluşturmayı düşünebilirsiniz *Xamarin.Forms* şablonlarında **Mobile Apps** grup proje şablonları. Xamarin.Forms, Android, iOS ve Windows arasında paylaşabilirsiniz tek bir arabirim oluşturmanıza imkan tanıyan bir UI araç takımıdır.  Xamarin.Forms çözümü derlediğinizde, bir Android uygulaması, bir iOS uygulaması ve bir Windows uygulaması elde edersiniz. Daha fazla ayrıntı için [Xamarin ile mobil geliştirme hakkında bilgi edinin](../cross-platform/learn-about-mobile-development-with-xamarin.md) ve [Xamarin.Forms belgeleri](/xamarin/xamarin-forms/).
+ Uygulama tasarımınızı karmaşıklığına bağlı olarak, kullanarak oluşturmayı düşünebilirsiniz *Xamarin.Forms* şablonlarında **Mobile Apps** grup proje şablonları. Xamarin.Forms, Android, iOS ve Windows arasında paylaşabilirsiniz tek bir arabirim oluşturmanıza imkan tanıyan bir UI araç takımıdır.  Xamarin.Forms çözümü derlediğinizde, bir Android uygulaması, bir iOS uygulaması ve bir Windows uygulaması elde edersiniz. Daha fazla ayrıntı için [Xamarin ile mobil geliştirme hakkında bilgi edinin](/xamarin/cross-platform/get-started/introduction-to-mobile-development/) ve [Xamarin.Forms belgeleri](/xamarin/xamarin-forms/).
 
 ####  <a name="ShareHTML"></a> Android, iOS ve Windows uygulamaları arasında kod paylaşma
 

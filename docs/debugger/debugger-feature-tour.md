@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c479251b7002e506f1dff5e64a028875aa8f80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d96e30ad4ba38dffc4bbc489100f14886c813816
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882672"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561544"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcı ilk bakış
 
@@ -174,7 +174,7 @@ Tıklayın **çağrı yığını** alt sağ bölmede açık varsayılan olarak, 
 
 Bir satır kod, kaynak koda bakmaktır gitmek için çift tıklayın ve hata ayıklayıcı tarafından denetlenmekte olan geçerli kapsamını da değişiklikler. Bu hata ayıklayıcı ilerleyin değil.
 
-Sağ tıklama menülerden kullanabilirsiniz **çağrı yığını** başka şeyler için pencere. Örneğin, belirli işlevlere kesme noktaları ekleme, yeniden kullanıp uygulamanızın **imlece kadar Çalıştır**ve kaynak kodunu inceleyin gidin. Bkz: [nasıl yapılır: çağrı yığınını incelemek](../debugger/how-to-use-the-call-stack-window.md).
+Sağ tıklama menülerden kullanabilirsiniz **çağrı yığını** başka şeyler için pencere. Örneğin, belirli işlevlere kesme noktaları ekleme, yeniden kullanıp uygulamanızın **imlece kadar Çalıştır**ve kaynak kodunu inceleyin gidin. Bkz: [nasıl yapılır: Çağrı yığınını incelemek](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="exception"></a> Bir özel durum inceleyin
 
@@ -215,7 +215,7 @@ Daha fazla bilgi için [IntelliTrace kullanarak önceki uygulama durumlarını �
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu öğreticide, birçok hata ayıklayıcı özelliklerine Hızlı Bakış vardı. Bir örnek uygulaması kullanarak bu özellikleri daha derinlemesine göz isteyebilirsiniz.
+Bu öğreticide, birçok hata ayıklayıcı özelliklerine Hızlı Bakış vardı. Kesme noktaları gibi bu özelliklerden birini daha derinlemesine göz isteyebilirsiniz.
 
 > [!div class="nextstepaction"]
-> [Visual Studio kullanarak hata ayıklamayı öğrenin](../debugger/getting-started-with-the-debugger.md)
+> [Kesme noktaları kullanmayı öğrenin](../debugger/using-breakpoints.md)

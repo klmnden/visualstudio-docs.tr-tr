@@ -9,19 +9,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a550ac10b5983041da93b0c290877f8e1b1a3720
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c11a6cd6d34a73956b2efa64a45aae6c4ba2da62
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051801"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592423"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Nasıl yapılır: Profil oluşturucu komut satırını kullanarak bellek verileri toplamak için bir .NET Framework bağımsız uygulamasına ekleme
+# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Nasıl Yapılır: Profil oluşturucu komut satırını kullanarak bellek verileri toplamak için bir .NET Framework bağımsız uygulamasına ekleme
 
 Bu makalede, çalışan bir .NET Framework bağımsız (istemci) uygulamasına profil oluşturucu ekleme ve bellek verileri toplamak için Visual Studio Profil Araçları komut satırı araçlarını kullanmayı açıklar.
 
 > [!NOTE]
-> Profil araçlarının komut satırı araçları yerleştirilir *tools\performance Araçları* alt [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] yükleme dizini. 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir. Daha fazla bilgi için [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+>  Profil oluşturma araçları için olan yolu almak için bkz: [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir.  
 
 Bir .NET Framework uygulamasına ve bellek verilerini toplamak için eklemek için kullanmanız gerekir [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) hedef uygulama başlamadan önce uygun ortam değişkenlerini başlatmak üzere. Profil Oluşturucu uygulamaya eklendiğinde kullanabileceğiniz *VSPerfCmd.exe* duraklatma ve sürdürme veri toplama için aracı.
 

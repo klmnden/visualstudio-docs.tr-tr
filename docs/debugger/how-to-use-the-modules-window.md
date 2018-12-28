@@ -1,6 +1,7 @@
 ---
-title: DLL'ler ve yürütülebilir dosyalar modülleri penceresinde görüntüleme | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: DLL'ler ve yürütülebilir dosyaları görüntüleme
+titleSuffix: Visual Studio Modules window
+ms.custom: seodec18
 ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -25,14 +26,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4604932084289919a86ba09516b8d2c237f44cd9
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
-ms.translationtype: HT
+ms.openlocfilehash: ec90c7f797c8b25337a23a12321352ff487a12ca
+ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296274"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443931"
 ---
-# <a name="view-dlls-and-executables-in-the-modules-window"></a>DLL'ler ve yürütülebilir dosyalar modüller penceresini görüntüleyin
+# <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>DLL'ler ve yürütülebilir dosyalar modüller penceresini görüntüleyin (C#, C++, Visual Basic F#)
  
 Visual Studio hata ayıklama sırasında **modülleri** penceresinde listeler ve DLL'ler ve yürütülebilir dosyalar hakkındaki bilgileri gösterir (*.exe* dosyaları), uygulama kullanır. 
 
@@ -41,7 +42,7 @@ Visual Studio hata ayıklama sırasında **modülleri** penceresinde listeler ve
   
 ## <a name="use-the-modules-window"></a>Modüller penceresini kullanma
 
-Hata ayıklarken modüller penceresini açmak için seçmeniz **hata ayıklama** > **Windows** > **modülleri**. 
+Hata ayıklarken modüller penceresini açmak için seçmeniz **hata ayıklama** > **Windows** > **modülleri** (veya basın **Ctrl + Alt + U** ). 
   
 Varsayılan olarak, **modülleri** penceresi modülleri yükleme sırası tarafından sıralar. Herhangi bir pencere sütuna göre sıralamak için sütun üst kısmındaki başlık'ı seçin.  
   

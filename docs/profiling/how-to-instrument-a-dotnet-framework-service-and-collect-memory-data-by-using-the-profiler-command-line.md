@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: bir .NET Framework izleme ve Profiler komut satırını kullanarak bellek verileri toplamak | Microsoft Docs'
+title: 'Nasıl Yapılır: Aracı bir .NET Framework hizmetini ve Profiler komut satırını kullanarak bellek verilerini toplamak | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: eafd91fe97a4e4ceb33b9dc315b8b9d9014d27ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ebca2945995a0f404c506c0e26ee1b1012d4dfa
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914703"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592878"
 ---
-# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Nasıl yapılır: bir .NET Framework hizmetini izleme ve profil oluşturucu komut satırını kullanarak bellek verileri toplama
+# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Nasıl Yapılır: Profil oluşturucu komut satırını kullanarak .NET Framework hizmetini izleme ve bellek verileri toplama
 Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aracı profil oluşturma araçları komut satırı araçlarını bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ve bellek kullanım verilerini toplamak. Bellek ayırma verisini toplayabilir veya hem bellek ayırma ve nesne yaşam verisi toplayabilir.  
 
 > [!NOTE]
@@ -26,7 +26,7 @@ Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/include
 > [!NOTE]
 >  Bilgisayar başlatıldıktan sonra hizmeti yeniden başlatılamıyor ise izleme yöntemi ile bir hizmetin profilini oluşturamazsınız, böyle bir hizmet, işletim sistemi başlatıldığında başlar.  
 > 
->  Profil araçlarının komut satırı araçları yerleştirilir *tools\performance Araçları* alt [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] yükleme dizini. 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir. Daha fazla bilgi için [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Profil oluşturma araçları için olan yolu almak için bkz: [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir. 
 
 ## <a name="start-the-profiling-session"></a>Profil oluşturma oturumunu Başlat  
  Performans verileri toplamak için bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] hizmeti kullandığınız [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) uygun ortam değişkenlerini başlatmak için araç ve [VSInstr.exe](../profiling/vsinstr.md) aracını belgelenmiş bir oluşturmak için Hizmet ikili dosyasının bir kopyası.  

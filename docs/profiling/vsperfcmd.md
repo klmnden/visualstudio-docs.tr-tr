@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23abc362b3c91579585272e4ebf1b190cab55dde
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: b4aa3a045b34271eb421339751aa5c763479eec0
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320988"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647851"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 *VSPerfCmd.exe* aracı, performans veri toplamayı başlatır ve durdurur için kullanılır. Aşağıdaki sözdizimini kullanır:  
@@ -60,8 +60,8 @@ VSPerfCmd [/U] [/options]
   
 |Seçenek|Açıklama|  
 |------------|-----------------|  
-|[Başlatma](../profiling/launch.md) **:** *yürütülebilir dosya*|Belirtilen uygulamayı başlatır ve profil oluşturma başlar.|  
-|[Args](../profiling/args.md) **:** *bağımsız değişkenleri*|Başlatılan uygulamaya geçirilecek komut satırı bağımsız değişkenleri belirtir.|  
+|[Başlatma](../profiling/launch.md) **:** *yürütülebilir*|Belirtilen uygulamayı başlatır ve profil oluşturma başlar.|  
+|[Args](../profiling/args.md) **:** *bağımsız değişkenler*|Başlatılan uygulamaya geçirilecek komut satırı bağımsız değişkenleri belirtir.|  
 |[Console](../profiling/console.md)|Belirtilen komut yeni bir komut istemi penceresinde başlatır.|  
 |[Ekleme](../profiling/attach.md) **:** *PID*[**,**_PID_]|Belirtilen işlemler için profil oluşturma başlar. İşlemler işlem kimliği veya işlem adına göre tanımlanabilir.|  
 |[Ayırma](../profiling/detach.md)[**:**_PID_[,_PID_]]|Belirtilen işlemler profil oluşturmayı durdurur. İşlemler işlem kimliği veya işlem adına göre tanımlanabilir. Hiçbir işlem belirtilmezse, profil oluşturma için tüm işlemler durdurulur.|  
@@ -85,11 +85,11 @@ VSPerfCmd [/U] [/options]
 |------------|-----------------|  
 |**Admin:security**, \< **izin&#124;REDDET**>, *sağ*[ *sağ*], \< *kullanıcı* &#124; *Grubu*>|Erişim izni verdiği veya belirtilen kullanıcı veya profil oluşturma hizmetleri için Grup erişimi engeller.<br /><br /> `Right` aşağıdakilerden biri olabilir:<br /><br /> CrossSession - hizmete profil oluşturma oturumunu kesecek şekilde kullanıcı erişimi sağlar.<br /><br /> SampleProfiling - kullanıcı erişim örnekleme profil oluşturmayı etkinleştirmek için bir sürücü için sağlar. İzleme profil oluşturma sırasında çekirdek geçiş bilgilere erişmek için de kullanılır.<br /><br /> FullAccess - kullanıcı verir CrossSession hem SampleProfiling erişim.|  
 |**Admin:Security, listesi**|Profil oluşturma hizmetleri geçerli durumunu listeler ve kullanıcı izinleri listeler.|  
-|**Yönetici:** \< *hizmet*&#124;*sürücü*>\<**Başlat**&#124;**Durdur**  &#124; **Yükleme**&#124;**Kaldır**>|Başlatır, durdurur, yükler veya profil oluşturma hizmet bileşenini (hizmet) veya çekirdek modu cihaz sürücüsünü (sürücü) kaldırır.|  
-|**Yönetici:** \< *hizmet*&#124;*sürücü*>**AutoStart**\<**üzerinde** &#124; **Kapalı**>|Etkinleştirir veya yeniden başlatmadan sonra profil oluşturma hizmetinin (hizmet) veya çekirdek modu cihaz sürücüsünü (sürücü) otomatik olarak başlatılmasını devre dışı bırakır.|  
+|**Yönetici:** \<*Hizmet*&#124;*sürücü*>\<**Başlat**&#124;**Durdur**&#124;**Yükleme** &#124; **Kaldır**>|Başlatır, durdurur, yükler veya profil oluşturma hizmet bileşenini (hizmet) veya çekirdek modu cihaz sürücüsünü (sürücü) kaldırır.|  
+|**Yönetici:** \<*Hizmet*&#124;*sürücü*>**AutoStart**\<**ON**&#124;**kapalı**>|Etkinleştirir veya yeniden başlatmadan sonra profil oluşturma hizmetinin (hizmet) veya çekirdek modu cihaz sürücüsünü (sürücü) otomatik olarak başlatılmasını devre dışı bırakır.|  
   
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd Driver/Driver  
- **VSPerfCmd Driver/Driver** seçeneği kullanılmıyor şimdi. Kullanım **VsPerfCmdAdmin** bu işlevselliği için Seçenekler.  
+ **VSPerfCmd Driver/Driver** seçeneği kullanılmıyor şimdi. Kullanım **VsPerfCmd yönetici** bu işlevselliği için Seçenekler.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Vsınstr](../profiling/vsinstr.md)   

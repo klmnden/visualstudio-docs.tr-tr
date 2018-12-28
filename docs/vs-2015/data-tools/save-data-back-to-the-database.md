@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b6fd99b2b1a41d6baa3a110b2a595afb1dd7e3f
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+ms.openlocfilehash: c1271d87342695e41f84248b8f73583c43aadb77
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281855"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647912"
 ---
 # <a name="save-data-back-to-the-database"></a>Verileri yeniden veritabanına kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,7 +170,7 @@ Veri kümesi, verilerin bir bellek içi kopyasıdır. Bu verileri değiştirirse
   
  `GetChanges` tek başına değişen tüm kayıtları döndürür. Buna karşılık, geçirerek istenen <xref:System.Data.DataRowState> bir parametre olarak `GetChanges` yöntemi, hangi istediğiniz değiştirilmiş kayıt kümesini belirtebilirsiniz: yeni kayıtlar, silinmek üzere işaretlenmiş kayıtları ayrılmış kayıtları eklendi veya değiştirilmiş kayıtlar.  
   
- Bir alt kümesini kayıtlar alınırken işleme için başka bir bileşen kayıtları göndermek istediğinizde yararlıdır. Veri kümesinin tamamının göndermek yerine yalnızca bileşen gereken kayıtları alarak başka bir bileşen ile iletişim kurulurken yükünü azaltabilir. Daha fazla bilgi için [nasıl yapılır: değiştirilen satırları alma](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+ Bir alt kümesini kayıtlar alınırken işleme için başka bir bileşen kayıtları göndermek istediğinizde yararlıdır. Veri kümesinin tamamının göndermek yerine yalnızca bileşen gereken kayıtları alarak başka bir bileşen ile iletişim kurulurken yükünü azaltabilir. Daha fazla bilgi için [nasıl yapılır: Değiştirilen satırları alma](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 ## <a name="committing-changes-in-the-dataset"></a>Veri kümesi değişiklikleri işleme  
  Veri kümesindeki değişiklikler yapıldıkça <xref:System.Data.DataRow.RowState%2A> değiştirilen satırların özelliği ayarlanmış. Kayıtları geçerli ve özgün sürümlerini oluşturulan, korunur ve size sunulan <xref:System.Data.DataRowView.RowVersion%2A> özelliği. Bu değiştirilen satırların özelliklerinde depolanan meta veriler, doğru güncelleştirmeleri veri kaynağına göndermek için gereklidir.  
@@ -221,7 +221,7 @@ Veri kümesi, verilerin bir bellek içi kopyasıdır. Bu verileri değiştirirse
   
  Verileri farklı şekillerde doğrulayabilirsiniz:  
   
-- Verileri doğrulamak için uygulamanıza kod ekleyerek iş katmanı içinde. Veri kümesi, bunu yapmak için bir yerdir. Arka uç doğrulama avantajlarından bazıları veri kümesi sağlar; sütun ve satır değerleri değiştirme gibi değişiklikleri doğrulamak için özelliği gibi. Daha fazla bilgi için [veri kümelerindeki verileri doğrulama](../data-tools/validate-data-in-datasets.md).  
+- Verileri doğrulamak için uygulamanıza kod ekleyerek iş katmanı içinde. Veri kümesi, bunu yapmak için bir yerdir. Veri kümesi Tasarımcısı arka uç doğrulama avantajlarından bazıları sağlar; sütun ve satır değerleri değiştirme gibi değişiklikleri doğrulamak için özelliği gibi. Daha fazla bilgi için [veri kümelerindeki verileri doğrulama](../data-tools/validate-data-in-datasets.md).  
   
 - Doğrulama formlar ekleyerek sunu katmanda. Daha fazla bilgi için [Windows Forms'ta kullanıcı girdisi doğrulama](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
   
@@ -275,14 +275,7 @@ Veri kümesi, verilerin bir bellek içi kopyasıdır. Bu verileri değiştirirse
 >  De değerlerini ayarlayabilirsiniz `Parameters` koleksiyon kendiniz bir olay işleyicisi veri bağdaştırıcının için genellikle yaptığınız kodlarda <xref:System.Data.DataTable.RowChanging> olay.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [TableAdapter genel bakış](../data-tools/tableadapter-overview.md)   
  [TableAdapter kullanarak verileri güncelleştirme](../data-tools/update-data-by-using-a-tableadapter.md)   
- [Veri uygulamaları Visual Studio'da genel bakış](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [Visual Studio'da verilere bağlanma](../data-tools/connecting-to-data-in-visual-studio.md)   
  [Uygulamanızı veri almaya hazırlama](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
- [Uygulamanıza veri getirme](../data-tools/fetching-data-into-your-application.md)   
  [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Uygulamanızdaki verileri düzenleme](../data-tools/editing-data-in-your-application.md)   
  [Verileri doğrulama](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
- [Verileri Kaydetme](../data-tools/saving-data.md)
-

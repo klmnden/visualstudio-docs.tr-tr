@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: bir N katmanlı veri uygulaması oluşturma | Microsoft Docs'
+title: 'İzlenecek yol: N katmanlı veri uygulaması oluşturma | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -20,14 +20,14 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 37876502a464e263ebd6803216b29bd62b65af5c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 050562a8ac0549bb36712781ba80f58aaf2fc82d
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890185"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648380"
 ---
-# <a name="walkthrough-creating-an-n-tier-data-application"></a>İzlenecek Yol: N Katmanlı Bir Veri Uygulaması Oluşturma
+# <a name="walkthrough-creating-an-n-tier-data-application"></a>İzlenecek yol: N katmanlı veri uygulaması oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -57,15 +57,15 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
   
 - Veri tablolarını doldurmak için kod yazma.  
   
-  ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo") bu konunun video sürümü için bkz: [Video nasıl yapılır: bir N katmanlı veri uygulaması oluşturma](http://go.microsoft.com/fwlink/?LinkId=115188).  
+  ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo") bu konunun video sürümü için bkz: [Video nasıl yapılır: N katmanlı veri uygulaması oluşturma](http://go.microsoft.com/fwlink/?LinkId=115188).  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu kılavuzu tamamlamak için gerekenler:  
   
--   Northwind örnek veritabanına erişim. Daha fazla bilgi için [nasıl yapılır: örnek veritabanları yükleme](../data-tools/how-to-install-sample-databases.md).  
+-   Northwind örnek veritabanına erişim.
   
 ## <a name="creating-the-n-tier-solution-and-class-library-to-hold-the-dataset-dataentitytier"></a>Veri Kümesini Tutacak N Katmanlı Çözüm ve Sınıf Kitaplığı Oluşturma (DataEntityTier)  
- Bu kılavuzun ilk adımı bir çözüm ve iki sınıf kitaplığı projesi oluşturmaktır. Birinci sınıf kitaplığı veri kümesini tutacaktır (uygulama verilerini tutacak, üretilen türü belirtilmiş DataSet sınıfı ve DataTable tabloları). Bu proje uygulamanın veri varlık katmanı olarak kullanılır ve genellikle orta katmanda bulunur. [Oluşturma ve yazılan veri kümelerini düzenleme](../data-tools/creating-and-editing-typed-datasets.md) ilk veri kümesini oluşturmak ve otomatik olarak kod iki sınıf kitaplığına ayırmak için kullanılır.  
+ Bu kılavuzun ilk adımı bir çözüm ve iki sınıf kitaplığı projesi oluşturmaktır. Birinci sınıf kitaplığı veri kümesini tutacaktır (uygulama verilerini tutacak, üretilen türü belirtilmiş DataSet sınıfı ve DataTable tabloları). Bu proje uygulamanın veri varlık katmanı olarak kullanılır ve genellikle orta katmanda bulunur. Dataset Designer, ilk veri kümesini oluşturmak ve otomatik olarak kod iki sınıf kitaplığına ayırmak için kullanılır.  
   
 > [!NOTE]
 >  Tıklamadan önce projeyi ve çözümü doğru adlandırdığınızdan emin olun **Tamam**. Böylece bu kılavuzu tamamlamanız kolaylaşır.  
@@ -106,7 +106,7 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
  Sonraki adım türü belirtilmiş bir veri kümesi oluşturmaktır. Türü belirtilmiş veri kümeleri, her iki veri kümesi sınıfıyla (DataTable sınıfları dahil) ve `TableAdapter` sınıflarıyla tek bir projede oluşturulur. (Tüm sınıflar tek dosyada oluşturulur.) Veri kümesini ve `TableAdapter` bağdaştırıcılarını farklı projelere ayırdığınızda veri kümesi sınıfı diğer projeye taşınır, `TableAdapter` sınıfları özgün projede kalır. Bu nedenle, veri kümesini sonuçta `TableAdapter` bağdaştırıcılarını içerecek projede oluşturun (DataAccessTier projesi). Kullanarak bir veri kümesi oluşturacaksınız **veri kaynağı Yapılandırma Sihirbazı**.  
   
 > [!NOTE]
->  Bağlantı oluşturmak için Northwind örnek veritabanına erişiminiz olmalıdır. Northwind örnek veritabanını ayarlama hakkında daha fazla bilgi için bkz: [nasıl yapılır: örnek veritabanları yükleme](../data-tools/how-to-install-sample-databases.md).  
+> Bağlantı oluşturmak için Northwind örnek veritabanına erişiminiz olmalıdır.
   
 #### <a name="to-create-the-dataset"></a>Veri kümesi oluşturma  
   
@@ -122,7 +122,7 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
   
      Northwind örnek veritabanıyla kurulan veri bağlantısı açılan listede kullanılabilir durumdaysa bu bağlantıya tıklayın.  
   
-     veya  
+     -veya-  
   
      Tıklayın **yeni bağlantı** açmak için **Bağlantı Ekle** iletişim kutusu.  
   
@@ -173,13 +173,13 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
      DataService projesi oluşturulur ve NTierWalkthrough çözümüne eklenir.  
   
 ## <a name="creating-methods-in-the-data-access-tier-to-return-the-customers-and-orders-data"></a>Müşteri ve Sipariş Verilerini Döndürmek İçin Veri Erişim Katmanında Yöntemler Oluşturma  
- Veri hizmetinin veri erişim katmanında iki yöntem çağırması gerekir: GetCustomers ve GetOrders. Bu yöntemler Northwind Customers ve Orders tablolarını döndürür. DataAccessTier projesinde GetCustomers ve GetOrders yöntemlerini oluşturun.  
+ Veri hizmetinin veri erişim katmanında iki yöntem çağırmak sahiptir: GetCustomers ve GetOrders. Bu yöntemler Northwind Customers ve Orders tablolarını döndürür. DataAccessTier projesinde GetCustomers ve GetOrders yöntemlerini oluşturun.  
   
 #### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-customers-table"></a>Veri erişim katmanında Customers tablosunu döndüren bir yöntem oluşturmak için  
   
-1.  İçinde **Çözüm Gezgini**, açmak için northwindDataSet.XSD'ye çift [oluşturma ve yazılan veri kümelerini düzenleme](../data-tools/creating-and-editing-typed-datasets.md).  
+1.  İçinde **Çözüm Gezgini**, veri kümesini veri kümesi Tasarımcısı'nda açmak için northwindDataSet.XSD'ye çift tıklayın.  
   
-2.  CustomersTableAdapter sağ tıklatıp **Sorgu Ekle** açmak için [TableAdapters düzenleme](../data-tools/editing-tableadapters.md).  
+2.  CustomersTableAdapter sağ tıklatıp **Sorgu Ekle** Tableadapter'ı düzenlemek için.  
   
 3.  Üzerinde **komut türü seçin** sayfasında, varsayılan değerini bırakın **SQL deyimi kullan** tıklatıp **sonraki**.  
   
@@ -385,7 +385,7 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
 ## <a name="next-steps"></a>Sonraki Adımlar  
  Uygulama gereksinimlerinize bağlı olarak, Windows tabanlı bir uygulama içinde ilgili verileri kaydettikten sonra gerçekleştirmek isteyebileceğiniz birkaç adım vardır. Örneğin, bu uygulamada aşağıdaki geliştirmeleri yapabilirsiniz:  
   
--   Veri kümesine doğrulama ekleme. Bilgi için [izlenecek yol: bir N katmanlı veri uygulamasına doğrulama ekleme](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
+-   Veri kümesine doğrulama ekleme. Bilgi için [izlenecek yol: Bir N katmanlı bir veri uygulamasına doğrulama ekleme](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
   
 -   Verileri tekrar veritabanında güncelleştirmek için hizmete ek yöntemler ekleme.  
   
@@ -393,4 +393,3 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
  [N katmanlı uygulamalarda veri kümeleriyle çalışma](../data-tools/work-with-datasets-in-n-tier-applications.md)   
  [Hiyerarşik güncelleştirme](../data-tools/hierarchical-update.md)   
  [Visual Studio'da verilere erişime](../data-tools/accessing-data-in-visual-studio.md)
-

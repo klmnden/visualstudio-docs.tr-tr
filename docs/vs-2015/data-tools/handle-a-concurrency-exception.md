@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a3141f2480aabc2ce6aa7b10f99991fc5cba0d05
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: c784bbcb73190abd2b12bf6cc7768d27087b2e14
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220423"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647713"
 ---
 # <a name="handle-a-concurrency-exception"></a>Bir eşzamanlılık özel durumunu işleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için şunlar gerekir:  
   
--   Güncelleştirmeleri gerçekleştirmek için izne sahip Northwind örnek veritabanına erişim. Daha fazla bilgi için [nasıl yapılır: örnek veritabanları yükleme](../data-tools/how-to-install-sample-databases.md).  
+-   Güncelleştirmeleri gerçekleştirmek için izne sahip Northwind örnek veritabanına erişim.
   
 > [!NOTE]
 >  İletişim kutuları ve menü komutları gördüğünüz Yardım menüsünde açıklanana etkin ayarlarınıza ve kullandığınız sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -211,7 +211,7 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
   
 8.  Formdaki ilk kayda (`ALFKI`), değiştirme`ContactName` için `Maria Anders1`.  
   
-9. Seçin **Kaydet** düğmesi.  
+9. **Kaydet** düğmesini seçin.  
   
      Eşzamanlılık hatası tetiklenir ve ileti kutusu görünür.  
   

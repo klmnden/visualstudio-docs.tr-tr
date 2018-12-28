@@ -3,18 +3,18 @@ title: Visual Studio Abonelikleri, Office 365 Geliştirici teklifi | Microsoft D
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 11/12/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Visual Studio aboneliğinize dahil Office 365 Geliştirici teklifi hakkında bilgi edinin.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ae195f8e132ab7d92c48a1bbc6ce04f684abe616
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 4fde2da9c3d03b436614fdf58f3477c33091d1d8
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758385"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739727"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio Abonelikleri, Office 365 Geliştirici aboneliği teklifi
 
@@ -68,14 +68,19 @@ Office 365 Geliştirici aboneliği hakkında daha fazla bilgi için kullanıma [
 
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standart, yıllık bulut)   | VL, Azure, perakende, seçili NFR<sup>1</sup> | Dahil edilen      |  Evet          |
-| Visual Studio Professional (standart, yıllık bulut) | VL, Azure, perakende                                       | Yok                                                            |Yok         |
+| Visual Studio Enterprise (standart)   | VL, Azure, perakende, seçili NFR<sup>1</sup> | Dahil      |  Evet          |
+| Visual Studio Professional (standart) | VL, Azure, perakende                                       | Yok                                                            |Yok         |
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Yok                                             |  Yok         |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Yok                                              | Yok         |
 | Visual Studio Dev Essentials | Yok  | Yok |Yok |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
-<sup>1</sup>*içerir: satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, BizSpark, MCT yazılım ve geliştirici Hizmetleri, MCT yazılım ve Hizmetleri için değil.  Dışlar: Microsoft iş ortağı ağı (MPN), Imagine, Microsoft değerli Professional (MVP), bölge Yöneticisi (RD).*
+<sup>1</sup>*içerir:    Değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, BizSpark, MCT yazılım ve geliştirici Hizmetleri, MCT yazılım ve Hizmetler'e için.  Dışlar:  Microsoft iş ortağı ağı (MPN), Imagine, Microsoft değerli Professional (MVP), bölge Yöneticisi (RD).*
+
+
+> [!NOTE]
+> Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.
+
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 

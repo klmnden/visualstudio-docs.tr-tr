@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e661823a07945c22679832dc716ad2f25f4f6aa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: b2864c0fc812148892a04336c29086afbe814e9e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793782"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803000"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0 x / 2 x / 4 x MSAA çeşitleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Geçersiz kılmalar birden çok örnek düzgünleştirme (MSAA) ayarları tüm i
   
 - İstenen işleme tarafından belirlenen şekilde hedef biçimi (D3D11_TEXTURE2D_DESC::Format üyesi) için cihaz istenen örnek sayısı (0, 2 veya 4) ve örnek kalitesi (0) destekler. `ID3D11Device::CheckMultisampleQualityLevels`.  
   
-  Daha sonra D3D11_TEXTURE2D_DESC::BindFlags üye ayarlanmış D3D_BIND_SHADER_RESOUCE veya D3D11_BIND_UNORDERED_ACCESS bayrağı varsa, doku iki sürümü oluşturulur; işleme hedefi olarak kullanılmak üzere işaretli Bu bayraklar ilk vardır ve diğer MSAA olmayan doku ilk sürümü için Çözümle arabellek olarak görev yapacak dokunulmadan Bu bayraklar. Sırasız erişim için veya bir gölgelendirici kaynak olarak bir MSAA doku kullanarak geçerli olmayacaktır, çünkü bu gereklidir; Örneğin, bir MSAA olmayan doku beklediğiniz gibi olduğundan hatalı sonuçlar üzerinde çalışan bir gölgelendirici karşılaşırsınız. Ardından değişken MSAA olmayan ikincil doku oluşturduysa MSAA işleme hedef cihaz bağlamında unset olduğunda içeriği MSAA olmayan doku çözümlenir. Benzer şekilde, MSAA işleme her hedef bir gölgelendirici kaynak olarak bağlı veya bir sırasız erişim Görünümü'nde kullanılır, çözümlenen MSAA olmayan doku yerine bağlıdır.  
+  Daha sonra D3D11_TEXTURE2D_DESC::BindFlags üye ayarlanmış D3D_BIND_SHADER_RESOURCE veya D3D11_BIND_UNORDERED_ACCESS bayrağı varsa, doku iki sürümü oluşturulur; işleme hedefi olarak kullanılmak üzere işaretli Bu bayraklar ilk vardır ve diğer MSAA olmayan doku ilk sürümü için Çözümle arabellek olarak görev yapacak dokunulmadan Bu bayraklar. Sırasız erişim için veya bir gölgelendirici kaynak olarak bir MSAA doku kullanarak geçerli olmayacaktır, çünkü bu gereklidir; Örneğin, bir MSAA olmayan doku beklediğiniz gibi olduğundan hatalı sonuçlar üzerinde çalışan bir gölgelendirici karşılaşırsınız. Ardından değişken MSAA olmayan ikincil doku oluşturduysa MSAA işleme hedef cihaz bağlamında unset olduğunda içeriği MSAA olmayan doku çözümlenir. Benzer şekilde, MSAA işleme her hedef bir gölgelendirici kaynak olarak bağlı veya bir sırasız erişim Görünümü'nde kullanılır, çözümlenen MSAA olmayan doku yerine bağlıdır.  
   
   Ayrıca geçersiz kılma kullanılarak oluşturulan tüm takas zincirleri MSAA ayarlarını bu çeşitleri `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition`, ve `ID3D11CreateDeviceAndSwapChain`.  
   

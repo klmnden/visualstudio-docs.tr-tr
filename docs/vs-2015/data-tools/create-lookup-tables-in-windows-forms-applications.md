@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 334acba1e70545f1f8be758e34c8fc4843878406
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 966e85c1cede3d7dacf23d960909a8cb4aa05185
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223904"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647516"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Windows Forms uygulamalarında arama tabloları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Terim *arama tablosu* iki ilgili veri tablolarına bağlı denetimler açıklar.
 1.  Açık **veri kaynakları** penceresi.  
   
     > [!NOTE]
-    >  Arama tabloları gerektiren iki ilişkili tablolar veya nesnelerin kullanılabilir olduğunu **veri kaynakları** penceresi. Daha fazla bilgi için [nasıl yapılır: Windows Forms uygulamasında görüntü ilgili verileri](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md).  
+    > Arama tabloları gerektiren iki ilişkili tablolar veya nesnelerin kullanılabilir olduğunu **veri kaynakları** penceresi.
   
 2.  Ait düğümleri genişletebilirsiniz **veri kaynakları** üst tablo ve tüm alt sütunları ve ilgili alt tablo ve sütunları görene kadar penceresi.  
   
@@ -55,7 +55,7 @@ Terim *arama tablosu* iki ilgili veri tablolarına bağlı denetimler açıklar.
   
 5.  Ana alt tablo düğümünden sürükleyin **veri kaynakları** formunuza penceresi.  
   
-     Veriye bağlı denetimler (tanımlayıcı etiketlerle) ve bir aracı (<xref:System.Windows.Forms.BindingNavigator>) formda görünür. A [veri kümesi](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
+     Veriye bağlı denetimler (tanımlayıcı etiketlerle) ve bir aracı (<xref:System.Windows.Forms.BindingNavigator>) formda görünür. A [veri kümesi](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
   
 6.  Artık ana üst tablo düğümden sürükleyin **veri kaynakları** penceresinden doğrudan arama denetimi ( <xref:System.Windows.Forms.ComboBox>).  
   
@@ -70,4 +70,3 @@ Terim *arama tablosu* iki ilgili veri tablolarına bağlı denetimler açıklar.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da verilere Windows Forms denetimleri bağlama](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

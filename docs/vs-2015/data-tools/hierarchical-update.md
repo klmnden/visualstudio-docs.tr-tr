@@ -27,12 +27,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d0176f203f7decb701d678a110856acdad36750b
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: a7c20424d43fe9c10a9a6fda9517f40a1231d698
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220185"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648489"
 ---
 # <a name="hierarchical-update"></a>Hiyerarşik güncelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Hiyerarşik güncelleştirme * tutarlılığı korurken (bir veri kümesinden ik
  Varsayılan olarak, bir veri kümesi ilişkili tablolar "yalnızca ilişkileri" yabancı anahtar kısıtlamaları zorunlu değildir, yani değerlendirir. Veri kümesi Tasarımcısı kullanarak tasarım zamanında bu ayarı değiştirebilirsiniz. Ortaya çıkarmak için iki tablo arasında ilişki satırı **ilişkisi** iletişim kutusu. Burada yaptığınız değişiklikler TableAdapterManager ne zaman nasıl davranacağını belirlemek göndermeden değişiklikleri ilişkili tabloların veritabanına geri.  
   
 ## <a name="enablehierarchical-update-in-a-dataset"></a>Bir veri kümesindeki Enablehierarchical güncelleştirme  
- Varsayılan olarak, hiyerarşik güncelleştirme eklenen ya da bir projede oluşturulan tüm yeni veri kümeleri için etkinleştirilir. Hiyerarşik güncelleştirme Aç veya kapat ayarlayarak **hiyerarşik güncelleştirme** bir türü belirtilmiş veri kümesinde özelliği [oluşturma ve yazılan veri kümelerini düzenleme](../data-tools/creating-and-editing-typed-datasets.md) için **True** veya **False**:  
+ Varsayılan olarak, hiyerarşik güncelleştirme eklenen ya da bir projede oluşturulan tüm yeni veri kümeleri için etkinleştirilir. Hiyerarşik güncelleştirme Aç veya kapat ayarlayarak **hiyerarşik güncelleştirme** bir türü belirtilmiş veri kümesi için veri kümesi Tasarımcısı'nda özelliği **True** veya **False**:  
   
  ![Hiyerarşik güncelleştirme ayarı](../data-tools/media/hierarchical-update-setting.png "hiyerarşik güncelleştirme ayarı")  
   
@@ -59,7 +59,7 @@ Hiyerarşik güncelleştirme * tutarlılığı korurken (bir veri kümesinden ik
   
  Varsayılan olarak, bir veri kümesindeki veri tablolarının ilişkilerle oluşturulur (<xref:System.Data.DataRelation>) ilişkileri veritabanında eşleşen. Ancak, ilişki veri kümesinde yabancı anahtar kısıtlama olarak oluşturulmaz. <xref:System.Data.DataRelation> Olarak yapılandırılmış **ilişkisi yalnızca** olmadan <xref:System.Data.ForeignKeyConstraint.UpdateRule%2A> veya <xref:System.Data.ForeignKeyConstraint.DeleteRule%2A> etkin.  
   
- Varsayılan olarak, geçişli güncelleştirmeler ve silmeleri basamaklı güncelleştirmeleriyle veritabanı ilişkisi ve/veya silmenin açık olsa bile devre dışı bırakılmıştır. Örneğin, yeni bir müşteri ve yeni bir sipariş oluşturmak ve ardından veri kaydetmeye çalışırken bir çakışma veritabanında tanımlanan yabancı anahtar kısıtlamalarıyla neden olabilir. Daha fazla bilgi için [nasıl yapılır: bir veri kümesinde yabancı anahtar kısıtlamaları yapılandırmak](http://msdn.microsoft.com/library/3954c388-e209-4a67-a34e-5ca106282f8e).  
+ Varsayılan olarak, geçişli güncelleştirmeler ve silmeleri basamaklı güncelleştirmeleriyle veritabanı ilişkisi ve/veya silmenin açık olsa bile devre dışı bırakılmıştır. Örneğin, yeni bir müşteri ve yeni bir sipariş oluşturmak ve ardından veri kaydetmeye çalışırken bir çakışma veritabanında tanımlanan yabancı anahtar kısıtlamalarıyla neden olabilir. Daha fazla bilgi için [nasıl yapılır: Bir veri kümesinde yabancı anahtar kısıtlamalarını yapılandırma](http://msdn.microsoft.com/library/3954c388-e209-4a67-a34e-5ca106282f8e).  
   
 ## <a name="set-the-order-to-perform-updates"></a>Güncelleştirmeleri gerçekleştirmek için sırasını ayarlama  
  Güncelleştirmeleri gerçekleştirmek için sırasını ayarlama ekler, güncelleştirir ve silme işlemlerini ayrı ayrı sırasını ayarlar tüm değiştirilmiş verileri bir veri kümesinin tüm tablolarda kaydetmek için gereklidir. Hiyerarşik güncelleştirme etkinleştirildiğinde, ekler önce gerçekleştirilir sonra güncelleştirir ve siler. `TableAdapterManager` Sağlayan bir `UpdateOrder` özelliği, ilk olarak, güncelleştirmeleri gerçekleştirmek üzere sonra ekler ve siler.  
@@ -67,7 +67,7 @@ Hiyerarşik güncelleştirme * tutarlılığı korurken (bir veri kümesinden ik
 > [!NOTE]
 >  Güncelleştirme sırası her şey dahil olduğunu anlamak önemlidir. Güncelleştirme yapıldığında, diğer bir deyişle, ekleme ve silme kümesindeki tüm tabloların gerçekleştirilir.  
   
- Ayarlanacak `UpdateOrder` sürüklemeye sonra özelliği [veri kaynakları penceresi](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) bir forma seçin `TableAdapterManager` bileşeni Tepsi ve ardından `UpdateOrder` özelliğinde **özellikleri** penceresi. Daha fazla bilgi için [nasıl yapılır: hiyerarşik güncelleştirme sırası olduğunda gerçekleştirme ayarlayın](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).  
+ Ayarlanacak `UpdateOrder` sürüklemeye sonra özelliği [veri kaynakları penceresi](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) bir forma seçin `TableAdapterManager` bileşeni Tepsi ve ardından `UpdateOrder` özelliğinde **özellikleri** penceresi. Daha fazla bilgi için [nasıl yapılır: Hiyerarşik güncelleştirme yaparken sırayı ayarlama](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).  
   
 ## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>Hiyerarşik güncelleştirme gerçekleştirmeden önce yedek bir kopyası, bir veri kümesi oluşturma  
  Veri kaydettiğinizde (çağırarak `TableAdapterManager.UpdateAll()` yöntemi), `TableAdapterManager` tek bir işlemde her tablo için verileri güncelleştirmek çalışır. Herhangi bir bölümünü herhangi bir tabloda güncelleştirmesi başarısız olursa, tüm işlem geri alınır. Çoğu durumda, uygulamanızı özgün durumuna geri döndürür.  
@@ -124,8 +124,7 @@ Hiyerarşik güncelleştirme * tutarlılığı korurken (bir veri kümesinden ik
 |`UpdateAll` Yöntemi|Tüm veriler, tüm veri tablolarından kaydeder.|  
 |`BackUpDataSetBeforeUpdate` Özelliği|Yürütmeden önce yedek bir kopyası, veri kümesinin oluşturulup oluşturulmayacağını belirler `TableAdapterManager.UpdateAll` yöntemi. Boole değeri.|  
 |*tableName* `TableAdapter` özelliği|Temsil eden bir `TableAdapter`. Oluşturulan `TableAdapterManager` her biri için bir özellik içeriyor `TableAdapter` yönettiği. Örneğin, müşteriler ve siparişler bir tablo olan bir veri kümesi ile oluşturulan bir `TableAdapterManager` içeren `CustomersTableAdapter` ve `OrdersTableAdapter` özellikleri.|  
-|`UpdateOrder` Özelliği|Ayrı ayrı INSERT, update ve delete komutlarını sırasını denetler. Bu değerler birine `TableAdapterManager.UpdateOrderOption` sabit listesi.<br /><br /> Varsayılan olarak, `UpdateOrder` ayarlanır **InsertUpdateDelete**. Ekler, sonra güncelleştirir ve siler Bunun anlamı, veri kümesindeki tüm tabloların gerçekleştirilir. Daha fazla bilgi için [nasıl yapılır: hiyerarşik güncelleştirme sırası olduğunda gerçekleştirme ayarlayın](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).|  
+|`UpdateOrder` Özelliği|Ayrı ayrı INSERT, update ve delete komutlarını sırasını denetler. Bu değerler birine `TableAdapterManager.UpdateOrderOption` sabit listesi.<br /><br /> Varsayılan olarak, `UpdateOrder` ayarlanır **InsertUpdateDelete**. Ekler, sonra güncelleştirir ve siler Bunun anlamı, veri kümesindeki tüm tabloların gerçekleştirilir. Daha fazla bilgi için [nasıl yapılır: Hiyerarşik güncelleştirme yaparken sırayı ayarlama](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)
-

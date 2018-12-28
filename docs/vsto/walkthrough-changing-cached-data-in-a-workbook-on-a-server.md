@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: sunucudaki çalışma kitabında önbelleğe alınmış verileri değiştirme'
+title: 'İzlenecek yol: Çalışma kitabında bir sunucuda önbelleğe alınmış verileri değiştirme'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f9f2ac3873bf59b30f8efa3e45d6cbdd0aebd4f6
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 30f2c8576aaf26d2cb643327fb989d90a8964552
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672875"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804383"
 ---
-# <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>İzlenecek yol: sunucudaki çalışma kitabında önbelleğe alınmış verileri değiştirme
+# <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>İzlenecek yol: Çalışma kitabında bir sunucuda önbelleğe alınmış verileri değiştirme
   Bu kılavuzda bir Microsoft Office Excel çalışma kitabını Excel kullanarak başlatmadan önbelleğe alınan bir veri kümesinin nasıl değiştirileceği gösterilmektedir <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> sınıfı.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "50672875"
 
 -   Microsoft SQL Server veya Microsoft SQL Server bağlı AdventureWorksLT örnek veritabanı olan Express çalışan örneğine erişim. AdventureWorksLT veritabanı indirebileceğiniz [CodePlex Web sitesinde](http://go.microsoft.com/fwlink/?linkid=87843). Veritabanı ekleme hakkında daha fazla bilgi için aşağıdaki konulara bakın:
 
-    -   SQL Server Management Studio veya SQL Server Management Studio Express kullanarak bir veritabanı eklemek için bkz: [nasıl yapılır: veritabanı (SQL Server Management Studio) ekleme](/sql/relational-databases/databases/attach-a-database).
+    -   SQL Server Management Studio veya SQL Server Management Studio Express kullanarak bir veritabanı eklemek için bkz: [nasıl yapılır: Veritabanı (SQL Server Management Studio) ekleme](/sql/relational-databases/databases/attach-a-database).
 
     -   Komut satırını kullanarak bir veritabanı eklemek için bkz: [nasıl yapılır: SQL Server Express için bir veritabanı dosyası iliştirmek](/previous-versions/sql/).
 
@@ -89,7 +89,7 @@ ms.locfileid: "50672875"
 ## <a name="define-a-dataset-in-the-class-library-project"></a>Sınıf kitaplığı projesinde bir veri kümesi tanımlayın
  SQL Server 2005'te AdventureWorksLT veritabanında verileri içeren bir türü belirtilmiş veri kümesi tanımlayın. Bu kılavuzda daha sonra bu veri kümesi, bir Excel çalışma kitabı projesi ve bir konsol uygulama projesi başvurur.
 
- Veri kümesi bir *yazılan veri kümesi* AdventureWorksLT veritabanı ürün tablodaki verileri temsil eden. Türü belirtilmiş veri kümeleri hakkında daha fazla bilgi için bkz. [Visual Studio'daki veri kümesi Araçları](/visualstudio/data-tools/dataset-tools-in-visual-studio).
+ Veri kümesi bir *yazılan veri kümesi* AdventureWorksLT veritabanı ürün tablodaki verileri temsil eden. Türü belirtilmiş veri kümeleri hakkında daha fazla bilgi için bkz. [Visual Studio'daki veri kümesi Araçları](../data-tools/dataset-tools-in-visual-studio.md).
 
 ### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>Sınıf kitaplığı projesinde bir türü belirtilmiş veri kümesi tanımlamak için
 
@@ -207,7 +207,7 @@ ms.locfileid: "50672875"
      [!code-csharp[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/CSharp/AdventureWorksDataSet/AdventureWorksReport/Sheet1.cs#8)]
      [!code-vb[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/AdventureWorksReport/Sheet1.vb#8)]
 
-## <a name="checkpoint"></a>Denetim noktası
+## <a name="checkpoint"></a>Checkpoint
  Oluşturup derler ve hatasız çalışan emin olmak için Excel çalışma kitabı projesi çalıştırın. Bu işlem ayrıca önbellekteki veri kümesini doldurur ve verileri çalışma kitabında kaydeder.
 
 ### <a name="to-build-and-run-the-project"></a>Projeyi derleyip çalıştırmak için
@@ -313,4 +313,4 @@ ms.locfileid: "50672875"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [İzlenecek yol: sunucudaki çalışma kitabına veri ekleme](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)
+- [İzlenecek yol: Bir sunucudaki çalışma kitabına veri ekleme](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)

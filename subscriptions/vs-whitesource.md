@@ -3,18 +3,18 @@ title: WhiteSource Bolt avantajı | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/11/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Visual Studio aboneliğinize dahil olan WhiteSource Bolt aboneliği etkinleştirmek öğrenin.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 981d6a655a203a7d44728fa7d12761fba2918d76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d9f4db463dad3ee2fbb216284791018dc504d7b6
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935785"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739990"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt, Visual Studio abonelikleri
 
@@ -79,14 +79,19 @@ Click the green **Install** button if you are using Azure DevOps Services, or th
 
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standart, yıllık bulut)   | VL, Azure, perakende, seçili NFR<sup>1</sup> | 6 ay       |  Evet          |
-| Visual Studio Professional (standart, yıllık bulut) | VL, Azure, perakende                                       | Kullanılabilir değil                                                           |Yok         |
+| Visual Studio Enterprise (standart)   | VL, Azure, perakende, seçili NFR<sup>1</sup> | 6 ay       |  Evet          |
+| Visual Studio Professional (standart) | VL, Azure, perakende                                       | Kullanılabilir değil                                                           |Yok         |
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Yok                                             |  Yok         |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Yok                                              | Yok         |
 | Visual Studio Dev Essentials | Yok  | Yok |Yok |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
-<sup>1</sup>*içerir: Microsoft iş ortağı ağı (Kurumsal).  Dışlar: Diğer değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Microsoft değerli Professional (MVP), bölge Yöneticisi (RD), MCT yazılımı ve Hizmetleri, Imagine için Microsoft iş ortağı ağ () Professional).*
+<sup>1</sup>*içerir:  Microsoft iş ortağı ağı (Kurumsal).  Dışlar: Diğer değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Microsoft değerli Professional (MVP), bölge Yöneticisi (RD), MCT yazılımı ve Hizmetleri, Imagine için Microsoft iş ortağı ağ (Professional ).*
+
+
+> [!NOTE]
+> Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.
+
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 

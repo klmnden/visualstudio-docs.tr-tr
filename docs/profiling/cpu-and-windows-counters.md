@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 585fb2fa8d2662d1a2bec7915bf1f08a4dc771e4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf9b1d1a336a2567a2d583e0cd68899dd03d42b8
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865927"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592449"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU ve Windows sayaçları
 
@@ -97,7 +97,7 @@ Visual Studio IDE'de bir bilgisayarda kullanılabilir sayaçları listelemek iç
 
       **Not** tıklayın **iptal** önceki örnekleme yapılandırmaya dönmek için.
 
-     veya
+     -veya-
 
    - Seçin **CPU sayaçları**ve ardından **CPU sayaçlarını Topla**. CPU sayaçları listelenen **kullanılabilir sayaçları**.
 
@@ -113,7 +113,7 @@ Visual Studio IDE'de bir bilgisayarda kullanılabilir sayaçları listelemek iç
 
 4. Gelen **sayaç kategorisi** listesinde, bir sayaç grubunu seçin. Liste kutusunda grup için Windows sayaç görüntülenir.
 
-     **Not:** tıklayın **iptal** önceki sayaç koleksiyonu yapılandırmaya dönmek için.
+     **Not:** Tıklayın **iptal** önceki sayaç koleksiyonu yapılandırmaya dönmek için.
 
 ### <a name="command-line"></a>Komut satırı
 
@@ -127,9 +127,7 @@ Kullanarak [VSPerfCmd](../profiling/vsperfcmd.md) komut satırı aracını komut
 
      **\<Visual Studio performans araçları dizinine > \VSPerfCmd/querycounters**
 
-     Burada  *\<Visual Studio performans araçları dizinine >* Visual Studio yüklemenizin performans araçları dizinini genellikle yoludur
-
-     *C:\Program Files\Microsoft Visual Studio 10.0\Team Araçlar\Performans araçları*
+     Burada  *\<Visual Studio performans araçları dizinine >* Visual Studio yüklemenizin performans araçları dizinin yoludur. Performans araçları yolunu almak için bkz. [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

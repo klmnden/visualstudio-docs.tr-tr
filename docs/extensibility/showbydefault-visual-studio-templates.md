@@ -1,10 +1,8 @@
 ---
-title: ShowByDefault (Visual Studio şablonları) | Microsoft Docs
-ms.custom: ''
+title: ShowByDefault öğesi (Visual Studio şablonları)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ShowByDefault
 helpviewer_keywords:
@@ -16,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc9b2f1f0f44439a87bef13063d694490b1c84d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8e2617c374ba240c421ba0cac339b9488608f2c0
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137937"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561466"
 ---
-# <a name="showbydefault-visual-studio-templates"></a>ShowByDefault (Visual Studio Şablonları)
-Varsa `false`, şablon yalnızca görüntüleneceğini belirtir belirtilen adla [Templategroupıd](../extensibility/templategroupid-element-visual-studio-templates.md).  
+# <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault öğesi (Visual Studio şablonları)
+Varsa `false`, şablonu yalnızca görüntüleneceğini belirten belirtilen adla [Templategroupıd](../extensibility/templategroupid-element-visual-studio-templates.md).  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -49,20 +47,20 @@ Varsa `false`, şablon yalnızca görüntüleneceğini belirtir belirtilen adla 
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Şablon kategorilere ayırır ve nasıl ya da görüntüler tanımlar **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Şablonu kategorilere ayırır ve nasıl görüntülendiğini tanımlar **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.|  
   
 ## <a name="text-value"></a>Metin Değeri  
  Bir metin değeri gereklidir.  
   
- Metin ya da olmalıdır `true` veya `false`. TRUE ise, şablonu için tüm proje türleri görüntülenir belirtir. False, şablon yalnızca görüntülenip görüntülenmeyeceğini belirtilen adla `TemplateGroupID`.  
+ Metin olmalıdır `true` veya `false`. TRUE ise, şablonu için tüm proje türleri görüntülenir belirtir. False, şablonu yalnızca görüntülenip görüntülenmeyeceğini belirtilen adla `TemplateGroupID`.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `ShowByDefault` İsteğe bağlı bir öğedir. Varsayılan değer `true` şeklindedir.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek için meta veriler gösterilmektedir bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] şablonu.  
+ Meta veriler için aşağıdaki örnekte bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] şablonu.  
   
-```  
+```xml
 <VSTemplate Type="Project" Version="3.0.0"  
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
     <TemplateData>  

@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f147171d8af075029a4a763a84fd48c5209f8fe1
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7e1f4b37a799b01539fa9a5032d5c0c1cf3e224b
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080614"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804071"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Metin arabelleği olayları eski API
 Metin arabelleği nesne farklı durumlar için yanıt olanak tanıyan birkaç farklı olaylar gönderir.  
   
- Eski API'si kullanılırken, metin arabelleğini değişiklikleri bildirim almak için aşağıdaki arabirimlerinden uygulamalıdır. Metin arabelleği kullanılarak arabirimleri kullanıma `IConnectionPointContainer` satır bildirim almak için metin arabelleği arabirimde arabellekteki değiştirir. Daha fazla bilgi için [nasıl yapılır: metin arabelleği olayları eski API'si ile kaydolma](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). Durumunda, `IVsTextStreamEvents` veya `IVsTextLinesEvents` arabirimleri, değişiklikleri geri gönderilir ya da bir veya two dimensional koordinatlarında, sırasıyla.  
+ Eski API'si kullanılırken, metin arabelleğini değişiklikleri bildirim almak için aşağıdaki arabirimlerinden uygulamalıdır. Metin arabelleği kullanılarak arabirimleri kullanıma `IConnectionPointContainer` satır bildirim almak için metin arabelleği arabirimde arabellekteki değiştirir. Daha fazla bilgi için [nasıl yapılır: Metin arabelleği olayları eski API'si ile kaydolma](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). Durumunda, `IVsTextStreamEvents` veya `IVsTextLinesEvents` arabirimleri, değişiklikleri geri gönderilir ya da bir veya two dimensional koordinatlarında, sırasıyla.  
   
 ## <a name="text-buffer-interfaces"></a>Metin arabelleği arabirimleri  
  Metin arabelleği nesne tarafından uygulanan arabirimler aşağıda verilmiştir.  
@@ -53,4 +53,6 @@ Metin arabelleği nesne farklı durumlar için yanıt olanak tanıyan birkaç fa
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Son Yürütme hareket olayı tetiklemek için istemcileri size bildirir ve metin değiştirildi yelpazesi sunar. `IVsFinalTextChangeCommitEvents` Arabirimi değil geri alınacak veya yinelenecek komutları yanıt olarak harekete geçirilir. Olayları yalnızca bir geri alma yöneticisi olan arabelleklerini kov. `IVsFinalTextChangeCommitEvents` Yalnızca dil Hizmetleri ya da düzenleme üzerinde tam denetime sahip diğer nesneler tarafından kullanıma yöneliktir. VSPackage'ı ya da izlemelidir `IVsPreliminaryTextChangeCommitEvents` arabirimi veya `IVsFinalTextChangeCommitEvents` arabirimi, ancak ikisine birden değil.|  
   
 ## <a name="see-also"></a>Ayrıca bkz.
- [Eski API'yi kullanarak metin arabelleğini erişim](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md) [nasıl yapılır: metin arabelleği olayları eski API'si ile kaydolma](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
+
+- [Erişim eski API'yi kullanarak metin arabelleği](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)
+- [Nasıl yapılır: Metin arabelleği olayları eski API'si ile kaydolun](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)

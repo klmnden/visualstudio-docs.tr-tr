@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5701044e20f2122199d9d0ca5558e453e6e5f72
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84f17a71383b6f507b4ea274d8a5cf416ab5f55e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906032"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739167"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK, Visual Studio özellikleri genişletmek veya yeni özelliklerini Visual Studio'ya tümleştirmenize yardımcı olur. Diğer kullanıcılara yanı sıra Visual Studio Marketi uzantılarınızı dağıtabilirsiniz. Visual Studio genişletebileceğiniz yollardan bazılarını aşağıda verilmiştir:  
@@ -78,8 +78,8 @@ Visual Studio SDK, Visual Studio özellikleri genişletmek veya yeni özellikler
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Bir menü komutuyla uzantı oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md)   
- [Nasıl yapılır: genişletilebilirlik projelerini Visual Studio 2017'ye geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)   
- [SSS: eklentileri VSPackage uzantılarına dönüştürme](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
+ [Nasıl yapılır: Genişletilebilirlik projeleri Visual Studio 2017'ye geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)   
+ [SSS: Eklentileri VSPackage uzantılarına dönüştürme](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
  [Yönetilen kodda birden çok iş parçacığı yönetme](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [Menüler ve komutlar genişletme](../extensibility/extending-menus-and-commands.md)   
  [Araç çubuklarına komut ekleme](../extensibility/adding-commands-to-toolbars.md)   
@@ -92,7 +92,7 @@ Visual Studio SDK, Visual Studio özellikleri genişletmek veya yeni özellikler
  [Visual Studio'nun diğer bölümlerini genişletme](../extensibility/extending-other-parts-of-visual-studio.md)   
  [Kullanım ve hizmetleri sağlar](../extensibility/using-and-providing-services.md)   
  [VSPackage'ları yönetme](../extensibility/managing-vspackages.md)   
- [Visual Studio yalıtılmış Kabuğu](../extensibility/visual-studio-isolated-shell.md)   
+ [Visual Studio yalıtılmış Kabuğu](/visualstudio/extensibility/shell/visual-studio-isolated-shell)   
  [Visual Studio uzantıları gönderin](../extensibility/shipping-visual-studio-extensions.md)   
  [Visual Studio SDK içinde](../extensibility/internals/inside-the-visual-studio-sdk.md)   
  [Visual Studio SDK desteği](../extensibility/support-for-the-visual-studio-sdk.md)   

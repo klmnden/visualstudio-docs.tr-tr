@@ -9,12 +9,12 @@ description: Edinmek ve ürün anahtarlarınızı Visual Studio aboneliklerini y
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 88fb704df9858572581d205a8c5d457203488ee3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cdd37aae3e0a3e3caebafa026fd5dcf3922c0998
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900858"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803830"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri ürün anahtarlarını kullanma
 
@@ -32,14 +32,14 @@ Aboneliğiniz kapsamındaki tüm kullanılabilir ürün anahtarlarını talep ve
 ## <a name="retail-and-volume-licensing-versions-of-products"></a>Ürünlerin perakende ve Toplu Lisanslama sürümleri
 Visual Studio Abonelikleri, perakende seçimi ve Microsoft ürünleri Toplu Lisanslama sürümlerinde sunar. Belirli ürünleri kullanılabilir yükleme yalnızca, perakende sürüm veya yalnızca Toplu Lisanslama sürümü; Her iki sürümde bazılarıdır. Genel olarak, ürün etkinleştirme, Windows, Windows Server ve Office istemci ürünleri gibi gerektiren, yalnızca, perakende sürüm indirmeleri aracılığıyla sunulur.
 
-Toplu lisans müşterileri, Toplu Lisanslama hizmeti Merkezi (ürünleri Toplu Lisanslama sürümlerinde (ve ilgili ürün anahtarları) almak için VSLC gelen) yazılım de indirebilirsiniz.  VLSC erişimi müşterinin kuruluşundaki atanmış yöneticileri tarafından yönetilir.
+Toplu lisans müşterileri, Toplu Lisanslama hizmeti Merkezi (ürünleri Toplu Lisanslama sürümlerinde (ve ilgili ürün anahtarları) almak için VLSC'den) yazılım de indirebilirsiniz.  VLSC erişimi müşterinin kuruluşundaki atanmış yöneticileri tarafından yönetilir.
 
 ## <a name="daily-product-key-claim-limits"></a>Günlük ürün anahtarı talep sınırları
 Microsoft Visual Studio abonelikleri programı bütünlüğünü ve programın yasal aboneleri yatırımları karşılığında elde ettikleri avantajları ve yazılım değerini korumayı taahhüt eder. Bu taahhüdü desteklemek üzere, Microsoft Visual Studio aboneliklerinde günlük anahtar talep etme sınırları belirlemiştir. Günlük anahtar talep etme sınırları, abonelik başına bir günde talep anahtar sayısını kısıtlayın.
 
 Günlük anahtar talep etme sınırı, tüm Visual Studio abonelikleri için 10 anahtarları olan, MPN, BizSpark, MCT yazılımı ve Hizmetleri ve MCT, hariç olmak üzere Visual Studio Professional (7 anahtarları sınırının talep günlük bir anahtara sahip MPN), aracılığıyla sunulanlar dahil.
 
-Not: Anahtar talep etme sınırları değiştirilebilir aynıdır. Lütfen en güncel sınırlar için burayı tıklatın.
+Not: Anahtar talep etme sınırları değiştirilebilir. Lütfen en güncel sınırlar için burayı tıklatın.
 
 24 saatlik süre içinde aboneliğiniz için kullanılabilir anahtarları sayısı kullanmış sınıra ulaşıldığında belirten bir hata görürsünüz. 12:01:00 başlangıç 24 saatte sınırı sıfırlar Pasifik saati.
 

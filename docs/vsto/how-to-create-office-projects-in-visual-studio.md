@@ -1,6 +1,7 @@
 ---
-title: "Nasıl yapılır: Visual Studio'da Office projeleri oluşturma"
-ms.custom: ''
+title: "Nasıl Yapılır: Visual Studio'da Office projeleri oluşturma"
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -19,19 +20,19 @@ helpviewer_keywords:
 - projects [Office development in Visual Studio], creating
 - document-level customizations [Office development in Visual Studio], creating
 - application-level add-ins [Office development in Visual Studio], creating projects
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6930ce085405c010e59e13adb8a3d380cff28d0e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 90dc0903f1a653ab2402d5877ebd4f962ba8cbe1
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672775"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647893"
 ---
-# <a name="how-to-create-office-projects-in-visual-studio"></a>Nasıl yapılır: Visual Studio'da Office projeleri oluşturma
+# <a name="how-to-create-office-projects-in-visual-studio"></a>Nasıl Yapılır: Visual Studio'da Office projeleri oluşturma
   Kullanabileceğiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] VSTO eklentisi ve belge düzeyi özelleştirmeleri Microsoft Office uygulamaları için. Bu proje türleri hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -42,7 +43,7 @@ ms.locfileid: "50672775"
   
 1. Üzerinde **dosya** menüsünde seçin **yeni** > **proje**. Tümleşik geliştirme ortamınız (IDE) kullanmak için ayarlanmış olup olmadığını [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] Geliştirme Ayarları'nda **dosya** menüsünde seçin **yeni** > **proje**.  
   
-    **Yeni proje** iletişim kutusu görüntülenir.  
+    **Yeni Proje** iletişim kutusu görünür.  
   
    > [!NOTE]  
    >  Office projeleri hedef [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] varsayılan olarak. Daha fazla bilgi için [.NET Framework istemci profili](/dotnet/framework/deployment/client-profile).  
@@ -93,7 +94,7 @@ ms.locfileid: "50672775"
   
 1. Üzerinde **dosya** menüsünde seçin **yeni** > **proje**. IDE'nizi Visual Basic geliştirme ayarlarını kullanmaya ayarlanmışsa **dosya** menüsünde seçin **yeni** > **proje**.  
   
-    **Yeni proje** iletişim kutusu görüntülenir.  
+    **Yeni Proje** iletişim kutusu görünür.  
   
    > [!NOTE]  
    >  Office projeleri hedef [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] varsayılan olarak.  Daha fazla bilgi için [.NET Framework istemci profili](/dotnet/framework/deployment/client-profile).  

@@ -1,5 +1,5 @@
 ---
-title: '2. adım: programınızı çalıştırma'
+title: '2. Adım: Programınızı çalıştırma'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
@@ -11,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c3eb73949ab84548c6eb58e7cf4389dbeb8fc4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 13983379dec4ec998172d0d11e0a7810c8cf02c0
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179066"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561687"
 ---
-# <a name="step-2-run-your-program"></a>2. adım: programınızı çalıştırma
+# <a name="step-2-run-your-program"></a>2. Adım: Programınızı çalıştırma
 Yeni bir çözüm oluşturduğunuzda, aslında çalışan bir programı yerleşik. Çok henüz — yalnızca gösteren boş bir pencere görüntüler **Form1** başlık çubuğundaki. Ancak hakkında bilgi edinmek için oluşturuyoruz, çalıştırın.
 
- ![video bağlantısı](../data-tools/media/playvideo.gif)bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 1 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205209) veya [öğretici 1: Resim Görüntüleyici oluşturma C# ' - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.
+ ![video bağlantısı](../data-tools/media/playvideo.gif)bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 1 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205209) veya [öğretici 1: İçinde resim görüntüleyici oluşturma C# -Video 1](http://go.microsoft.com/fwlink/?LinkId=205199). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.
 
 ## <a name="to-run-your-program"></a>Programınızı çalıştırmak için
 
@@ -55,10 +55,10 @@ Yeni bir çözüm oluşturduğunuzda, aslında çalışan bir programı yerleşi
     -   Seçin **X** üst köşesindeki düğmeyi **Form1** penceresi.
 
     > [!NOTE]
-    >  IDE içinde programınızı çalıştırdığınızda, bulun ve programda hataları (sorunları) gidermek için genellikle yaptığınız çünkü hata ayıklama çağrılır. Bu program küçük ve gerçekten henüz bir işe yaramaz, ama yine de gerçek bir program vardır. Çalıştırmak ve diğer programlarda hata ayıklama için aynı yordamı izleyin. Hata ayıklama hakkında daha fazla bilgi için bkz. [hata ayıklayıcı temel bilgileri](../debugger/getting-started-with-the-debugger.md).
+    >  IDE içinde programınızı çalıştırdığınızda, bulun ve programda hataları (sorunları) gidermek için genellikle yaptığınız çünkü hata ayıklama çağrılır. Bu program küçük ve gerçekten henüz bir işe yaramaz, ama yine de gerçek bir program vardır. Çalıştırmak ve diğer programlarda hata ayıklama için aynı yordamı izleyin. Hata ayıklama hakkında daha fazla bilgi için bkz. [hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md).
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
--   Sonraki öğretici adımına gitmek için bkz: [3. adım: form özelliklerinizi ayarlama](../ide/step-3-set-your-form-properties.md).
+-   Sonraki öğretici adımına gitmek için bkz: [3. adım: Form özelliklerinizi ayarlama](../ide/step-3-set-your-form-properties.md).
 
--   Önceki öğretici adımına dönmek için bkz: [1. adım: Windows Forms uygulaması projesi oluşturmak](../ide/step-1-create-a-windows-forms-application-project.md).
+-   Önceki öğretici adımına dönmek için bkz: [1. adım: Bir Windows Forms uygulaması projesi oluşturmak](../ide/step-1-create-a-windows-forms-application-project.md).

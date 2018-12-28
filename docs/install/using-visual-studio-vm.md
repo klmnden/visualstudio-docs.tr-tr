@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc3ceb0caa8e5b8e135c2fad3bbab28c51773ae6
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: fdebcfcab1907c6e91b2d4926b86038c560d040e
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159977"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425818"
 ---
 # <a id="top"> </a> Azure'da Visual Studio görüntüleri
 
@@ -32,13 +32,13 @@ Azure'da yeni misiniz? [Ücretsiz Azure hesabı oluşturun](https://azure.micros
 
 ## <a name="what-configurations-and-versions-are-available"></a>Hangi yapılandırmaları ve sürümlerinin kullanılabilir mi?
 
-En son ana sürümleri, Visual Studio 2017 ve Visual Studio 2015 için görüntüleri Azure Market'te bulunabilir. Her bir ana sürüm için yayınlanmış (RTW) sürümünü ve en son güncelleştirilmiş sürümlerine bakın. Bu sürümlerin her biri, Visual Studio Enterprise ve Visual Studio Community sürümleri sunar. Bu görüntüler, en son Visual Studio ve Windows güncelleştirmelerini dahil etmek için en az her ay güncelleştirilir. Her görüntünün açıklaması, yüklü bir ürün sürümü ve görüntünün "Başlangıç" tarihi görüntüleri adları aynı kalsa da içerir.
+En son ana sürümleri, Visual Studio 2017 ve Visual Studio 2015 için görüntüleri Azure Market'te bulunabilir.  Yakın zamanda yaklaşan ana sürüm - Visual Studio 2019 önizlemeleri için destek ekledik.  Yayımlanan her ana sürümü için özgün olarak yayımlanmış (RTW) sürümünü ve en son güncelleştirilmiş sürümlerine bakın.  Bu sürümlerin her biri, Visual Studio Enterprise ve Visual Studio Community sürümleri sunar.  Bu görüntüler, en son Visual Studio ve Windows güncelleştirmelerini dahil etmek için en az her ay güncelleştirilir.  Her görüntünün açıklaması, yüklü bir ürün sürümü ve görüntünün "Başlangıç" tarihi görüntüleri adları aynı kalsa da içerir.
 
 | Yayın sürümü                                              | Sürümler                     |     Ürün sürümü      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|   Visual Studio 2019: Önizleme (Önizleme 1)                   |           Enterprise         | Sürüm 16.0.0 Önizleme 1 |
-| Visual Studio 2017: En son (sürüm 15.9)                    |    Kurumsal ve topluluk     |      Sürüm 15.9.0      |
-|         Visual Studio 2017: RTW                              |    Kurumsal ve topluluk     |      Sürüm 15.0.18     |
+|    Visual Studio 2019: Önizleme (Önizleme 1)                   |           Enterprise         | Sürüm 16.0.0 Önizleme 1 |
+| Visual Studio 2017: En son (sürüm 15.9)                    |    Kurumsal ve topluluk     |      Sürüm 15.9.4      |
+|         Visual Studio 2017: RTW                              |    Kurumsal ve topluluk     |      Sürüm 15.0.20     |
 |   Visual Studio 2015: En son (Aktualizace 3)                      |    Kurumsal ve topluluk     |  Sürüm 14.0.25431.01   |
 |         Visual Studio 2015: RTW                              |             Hiçbiri             | (Bakım için süresi doldu)  |
 

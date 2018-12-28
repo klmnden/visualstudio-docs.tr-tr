@@ -3,18 +3,18 @@ title: CAST vurgulama avantaj olarak Visual Studio abonelikleri | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/04/2018
+ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio aboneliklerinde kullanılabilir ATAMA vurgulayın Avantajı hakkında bilgi edinin
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 74ed8a20195936c5ba7ef9c7ce7591838b620d5d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 7ee8059a8e80834b6b35f93be888d7fd90e4a3a3
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896985"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740003"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri ATAMA vurgulayın avantaja
 
@@ -25,7 +25,7 @@ Visual Studio Enterprise aboneleri, abonelik başına en fazla beş uygulamalar 
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
 
-1. Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) adresinde oturum açın.
 
 2. CAST vurgulayın avantajı kutucuk "Araçlar" kategorisinde bulun ve tıklayarak **kodunu Al**.
 
@@ -89,8 +89,8 @@ Visual Studio Enterprise aboneleri, abonelik başına en fazla beş uygulamalar 
 
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standart, yıllık bulut)   | VL, Azure, perakende | 5 değerlendirmek 30 gün için uygulamalar|  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir          |
-| Visual Studio Professional (standart, yıllık bulut) | VL, Azure, perakende                                       | Yok                                                             |  Yok          |
+| Visual Studio Enterprise (standart)   | VL, Azure, perakende | 5 değerlendirmek 30 gün için uygulamalar|  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir          |
+| Visual Studio Professional (standart) | VL, Azure, perakende                                       | Yok                                                             |  Yok          |
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Yok                                             |  Yok           |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Yok                                              |  Yok          |
 | Visual Studio Dev Essentials | Yok  | Yok | Yok |
@@ -99,8 +99,11 @@ Visual Studio Enterprise aboneleri, abonelik başına en fazla beş uygulamalar 
 
 
 
-<sup>1</sup>*içerir: satışıyla (NFR), FTE, değerli Microsoft Professional (MVP), bölge Yöneticisi (RD), Microsoft iş ortağı ağı (MPN), Visual Studio Endüstri ortağı (VSIP), Microsoft eğitmen, BizSpark, onaylanmamıştır için Imagine*
+<sup>1</sup>*içerir:  Değil for Resale (NFR), Trainer, BizSpark FTE, değerli Microsoft Professional (MVP), bölge Yöneticisi (RD), Microsoft iş ortağı ağı (MPN), Visual Studio Endüstri ortağı (VSIP), Microsoft Sertifikalı, Imagine*
 
+
+> [!NOTE]
+> Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.
 
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.

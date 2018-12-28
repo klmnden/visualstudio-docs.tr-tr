@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4806003d7a533e2f3e9523f877f6e002e8d15b5b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d7c8e24505fb237fb35efd195ee1c8d17a4d8645
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067456"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739075"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Nasıl Yapılır: Veri Temelli Birim Testi Oluşturma
 
@@ -126,7 +126,7 @@ DataSource özniteliği üç Oluşturucusu vardır.
 
  Depolanan bağlantı bilgilerini bir parametre ile bir oluşturucu kullanan *app.config* çözüm dosyası. *DataSourceSettingsName* bağlantı bilgilerini belirten yapılandırma dosyasında Xml öğesi adı.
 
- Kullanarak bir *app.config* dosya, birim testinin kendisi değişiklikler olmadan veri kaynağının konumunu değiştirmek olanak sağlar. Oluşturma ve kullanma hakkında bilgi için bir *app.config* bkz [izlenecek yol: bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanma](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
+ Kullanarak bir *app.config* dosya, birim testinin kendisi değişiklikler olmadan veri kaynağının konumunu değiştirmek olanak sağlar. Oluşturma ve kullanma hakkında bilgi için bir *app.config* bkz [izlenecek yol: Bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanma](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
 
 ```csharp
 [DataSource(connectionString, tableName)]
@@ -169,4 +169,4 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
 - [Birim testi kod](../test/unit-test-your-code.md)
 - [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md)
-- [Yönetilen kod için Microsoft birim testi çerçevesi ile .NET Framework için birim testleri yazma](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
+- [Yönetilen kod için Microsoft birim testi çerçevesi ile .NET Framework için birim testleri yazma](../test/unit-test-your-code.md)

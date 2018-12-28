@@ -23,17 +23,17 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio]
 - task panes [Office development in Visual Studio], about custom task panes
 - custom task panes [Office development in Visual Studio], about custom task panes
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4e8384bc86bf59216c353b0f4610d3863445781
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79384ac86afe15afda8e6c99e15a519e66302014
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889769"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648274"
 ---
 # <a name="custom-task-panes"></a>Özel görev bölmeleri
   Görev bölmeleri, genellikle bir Microsoft Office uygulamasının bir pencerede bir tarafı yerleştirilmiş kullanıcı arabirimi bölmeleri bulunur. Özel görev bölmeleri size kendi görev bölmesi oluşturun ve kullanıcıların çözümünüzün özelliklerine erişmek için tanıdık bir arabirim sağlamak için bir yol sağlar. Örneğin, arabirim belgeleri değiştirmek veya bir veri kaynağından verileri görüntülemek için kodu çalıştırmak denetimleri içerebilir.  
@@ -59,7 +59,7 @@ ms.locfileid: "49889769"
   
 2. Özel görev bölmesi kullanıcı denetimine ileterek örneği <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> VSTO eklenti nesne. Bu koleksiyona yeni bir döndürür <xref:Microsoft.Office.Tools.CustomTaskPane> görev bölmesinde değiştirme ve kullanıcı olaylarına yanıt vermek için kullanabileceğiniz bir nesne.  
   
-   Daha fazla bilgi için [nasıl yapılır: uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
+   Daha fazla bilgi için [nasıl yapılır: Uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
 ### <a name="create-the-user-interface"></a>Kullanıcı arabirimi oluşturma  
  Visual Studio'da Office geliştirme araçları kullanılarak oluşturulan tüm özel görev bölmeleri içeren bir <xref:System.Windows.Forms.UserControl> nesne. Bu kullanıcı denetimi, özel görev bölmesi, kullanıcı arabirimi sağlar. Tasarım zamanında veya çalışma zamanında kullanıcı denetimi oluşturabilirsiniz. Kullanıcı denetiminin tasarım zamanında oluşturursanız, görev bölmesinin kullanıcı arabirimi oluşturmak için Windows Form Tasarımcısı'nı kullanabilirsiniz.  
@@ -86,7 +86,7 @@ ms.locfileid: "49889769"
 ## <a name="access-the-application-from-the-task-pane"></a>Görev bölmesinden uygulama erişimi  
  Kullanıcı denetimi uygulamadan otomatik hale getirmek isterseniz, doğrudan nesne modelini kullanarak erişebileceğiniz `Globals.ThisAddIn.Application` kodunuzda. Statik `Globals` sınıfı erişim sağlar `ThisAddIn` nesne. `Application` Alan bu nesnenin nesne modelini uygulamanın giriş noktasıdır.  
   
- Hakkında daha fazla bilgi için `Application` alanını `ThisAddIn` nesne, bkz: [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md). Bir uygulamayı özel görev bölmesinden otomatikleştirme gösteren bir kılavuz için bkz. [izlenecek yol: uygulamayı özel görev bölmesinden otomatik](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). Hakkında daha fazla bilgi için `Globals` sınıfı [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md).  
+ Hakkında daha fazla bilgi için `Application` alanını `ThisAddIn` nesne, bkz: [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md). Bir uygulamayı özel görev bölmesinden otomatikleştirme izlenecek yol için bkz: [izlenecek yol: Otomatik bir uygulamayı özel görev bölmesinden](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). Hakkında daha fazla bilgi için `Globals` sınıfı [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md).  
   
 ## <a name="manage-the-user-interface-of-the-task-pane"></a>Görev bölmesi kullanıcı arabiriminin yönetme  
  Görev bölmesinde oluşturduktan sonra özelliklerini ve olaylarını kullanabilirsiniz <xref:Microsoft.Office.Tools.CustomTaskPane> görev bölmesinin kullanıcı arabirimi denetim ve kullanıcı görev bölmesinde değiştiğinde yanıt vermek için nesne.  
@@ -96,7 +96,7 @@ ms.locfileid: "49889769"
   
  Kullanıcılar kapatabilirsiniz bir görev bölmesi herhangi bir zamanda tıklayarak **kapatmak** görev bölmesinde üst köşesindeki düğmeyi (X). Ancak, özel görev bölmesini yeniden açmak kullanıcılar için varsayılan yolu yoktur. Bir kullanıcı özel görev bölmesi kapanıyorsa görüntülemek için bir yol sağlama sürece, kullanıcı özel görev bölmesi yeniden görüntüleyemezsiniz.  
   
- VSTO eklenti içinde özel görev bölmesi oluşturursanız, kullanıcılar, özel görev bölmesini Gizle veya görüntülemek için tıklayabileceği bir düğme gibi bir kullanıcı Arabirimi öğesi da oluşturmanız gerekir. Özel görev bölmesini Şerit özelleştirmeye destekleyen bir Microsoft Office uygulamasında oluşturursanız, Şerit görüntüler veya özel görev bölmesi gizleyen bir düğme olan denetim grubu ekleyebilirsiniz. Bunun nasıl yapılacağını gösteren bir kılavuz için bkz. [izlenecek yol: özel görev bölmesini Şerit düğmesi ile eşitleme](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
+ VSTO eklenti içinde özel görev bölmesi oluşturursanız, kullanıcılar, özel görev bölmesini Gizle veya görüntülemek için tıklayabileceği bir düğme gibi bir kullanıcı Arabirimi öğesi da oluşturmanız gerekir. Özel görev bölmesini Şerit özelleştirmeye destekleyen bir Microsoft Office uygulamasında oluşturursanız, Şerit görüntüler veya özel görev bölmesi gizleyen bir düğme olan denetim grubu ekleyebilirsiniz. Bunun nasıl yapılacağını gösteren bir kılavuz için bkz. [izlenecek yol: Özel görev bölmesini Şerit düğmesi ile eşitleme](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
   
  Ekleyebileceğiniz, özel görev bölmesini Şerit özelleştirmeye desteklemeyen bir Microsoft Office uygulamasında oluşturursanız, bir <xref:Microsoft.Office.Core.CommandBarButton> , özel görev bölmesini gizler veya gösterir.  
   
@@ -140,7 +140,7 @@ ms.locfileid: "49889769"
   
 - [Word, InfoPath ve PowerPoint](#WordAndInfoPath)  
   
-  ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [görev bölmeleri ı: yönetme Word VSTO eklentileri bunu nasıl?](http://go.microsoft.com/fwlink/?LinkId=136781).  
+  ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [nasıl yaparım? Görev bölmeleri Word VSTO eklentileri yönetebilir? ](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
 ##  <a name="Outlook"></a> Outlook  
  Outlook için bir özel görev bölmesi oluşturduğunuzda, özel görev bölmesi, belirli bir Gezgin veya denetleyici pencere ile ilişkilidir. Gezginler bir klasörün içeriğini görüntüleyen pencereler, ve denetçiler bir e-posta iletisi veya görev gibi bir öğeyi görüntülemek windows.  
@@ -221,7 +221,7 @@ ms.locfileid: "49889769"
 -   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [İzlenecek yol: uygulamayı özel görev bölmesinden otomatikleştirme](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
- [İzlenecek yol: özel görev bölmesini Şerit düğmesi ile eşitleme](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
+ [Nasıl yapılır: Uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [İzlenecek yol: Bir uygulamayı özel görev bölmesinden otomatikleştirme](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
+ [İzlenecek yol: Özel görev bölmesini Şerit düğmesi ile eşitleme](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
  [İzlenecek yol: Outlook'ta e-posta iletileri ile birlikte özel görev bölmelerini görüntüleme](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  

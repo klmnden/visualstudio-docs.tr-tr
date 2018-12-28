@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 41e27d2d7a3fc79695fa1d476a76e199348c5320
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ca0c3da5048194ce438e815bd1612f6b166bb29b
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320897"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802572"
 ---
 # <a name="devops-with-unity-apps"></a>Unity uygulamaları ile DevOps
 
@@ -26,7 +26,7 @@ Aşağıdaki tablolarda, Visual Studio'da DevOps özellikleri nasıl uygulamak v
 
 ## <a name="agile-tools"></a>Çevik Araçlar
 
-Başvuru bağlantısı: [hakkında Çevik araçları ve Çevik proje yönetimi](/azure/devops/boards/backlogs/overview?view=vsts) (Azure panoları veya Team Explorer Everywhere dahil TFS'nin kullanarak)
+Başvuru bağlantısı: [Çevik Araçlar ve Çevik proje yönetimi](/azure/devops/boards/backlogs/overview?view=vsts) (Azure panoları veya Team Explorer Everywhere dahil TFS'nin kullanarak)
 
 Genel Açıklama: tüm planlama ve izleme özellikleri proje türü ve dilleri kodlama bağımsız olarak çalışır.
 
@@ -40,9 +40,9 @@ Genel Açıklama: tüm planlama ve izleme özellikleri proje türü ve dilleri k
 
 ## <a name="modeling"></a>Modelleme
 
-Başvuru bağlantısı:  **[analiz ve model mimarisi](../modeling/analyze-and-model-your-architecture.md)**
+Başvuru bağlantısı: **[Analiz ve model mimarisi](../modeling/analyze-and-model-your-architecture.md)**
 
-Genel Açıklama: Bu tasarım özellikleri kodlama dili ya da bağımsız olduğundan veya C# .NET dilleri ile çalışır, ancak bunlar bir geleneksel uygulama paradigma nesne hiyerarşileri ve sınıf ilişkiler üzerinde çalışır. İçinde Unity oyun tasarlama gerektirir farklı paradigma tamamen, yani ilişkileri grafik nesneleri, ses, gölgelendiricilerin, betikler ve benzeri. Bu nedenle, Visual Studio diyagramı modelleme araçları bir Unity proje bütün özellikle ilgili değildir. C# betiklerini içindeki ilişkileri yönetmek için büyük olasılıkla kullanılabilir, ancak tüm yalnızca bir parçası olan.
+Genel Açıklama: Bu tasarım özellikleri kodlama dili ya da bağımsız olduğundan veya .NET dilleri ile iş istiyor ancak C#, bir nesne hiyerarşileri ile geleneksel uygulama paradigma üzerinde çalışır ve sınıf ilişkileri. İçinde Unity oyun tasarlama gerektirir farklı paradigma tamamen, yani ilişkileri grafik nesneleri, ses, gölgelendiricilerin, betikler ve benzeri. Bu nedenle, Visual Studio diyagramı modelleme araçları bir Unity proje bütün özellikle ilgili değildir. C# betiklerini içindeki ilişkileri yönetmek için büyük olasılıkla kullanılabilir, ancak tüm yalnızca bir parçası olan.
 
 |Özellik|Unity ile desteklenen|Ek Açıklamalar|
 |-------------|--------------------------|-------------------------|
@@ -75,7 +75,7 @@ Sürüm denetimi Unity ile ilgili özel konular:
 
 ## <a name="build"></a>Derleme
 
-Başvuru bağlantısı:  **[Azure işlem hatları](/azure/devops/pipelines/index?view=vsts)**
+Başvuru bağlantısı: **[Azure işlem hatları](/azure/devops/pipelines/index?view=vsts)**
 
 |Özellik|Unity ile desteklenen|Ek Açıklamalar|
 |-------------|--------------------------|-------------------------|
@@ -98,19 +98,19 @@ Başvuru bağlantısı:  **[Azure işlem hatları](/azure/devops/pipelines/index
 
 ## <a name="improve-code-quality"></a>Kod kalitesini geliştirme
 
-Başvuru bağlantısı:  **[kod kalitesini geliştirme](../test/improve-code-quality.md)**
+Başvuru bağlantısı: **[Kod kalitesini geliştirme](../test/improve-code-quality.md)**
 
 |Özellik|Unity ile desteklenen|Ek Açıklamalar|
 |-------------|--------------------------|-------------------------|
-|[Yönetilen kod kalitesini analiz etme](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Evet|Visual Studio'da C# betik kodunu analiz edebilirsiniz.|
+|[Yönetilen kod kalitesini analiz etme](../code-quality/code-analysis-for-managed-code-overview.md)|Evet|Visual Studio'da C# betik kodunu analiz edebilirsiniz.|
 |[Kod kopyası algılamayı kullanarak yinelenen kodu bulun](https://msdn.microsoft.com/library/hh205279.aspx)|Evet|Visual Studio'da C# betik kodunu analiz edebilirsiniz.|
-|[Ölçüm karmaşıklığı ve yönetilen kod bakımı](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Evet|Visual Studio'da C# betik kodunu analiz edebilirsiniz.|
+|[Ölçüm karmaşıklığı ve yönetilen kod bakımı](../code-quality/code-metrics-values.md)|Evet|Visual Studio'da C# betik kodunu analiz edebilirsiniz.|
 |[Performans Gezgini](../profiling/performance-explorer.md)|Hayır|Kullanım [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (Unity Web sitesi).|
 |[.NET Framework bellek sorunlarını çözümleme](https://msdn.microsoft.com/library/dn342825.aspx)|Hayır|Visual Studio Araçları, profil oluşturma için Mono framework (olarak Unity tarafından kullanılan) içine kancaları yoktur. Kullanım [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (Unity belgeleri).|
 
 ## <a name="release-management"></a>Yayın yönetimi
 
-Başvuru bağlantısı: [derleme ve yayın Azure işlem hatları ve TFS](/azure/devops/pipelines/overview?view=vsts)
+Başvuru bağlantısı: [Derleme ve Azure işlem hatları ve TFS sürüm](/azure/devops/pipelines/overview?view=vsts)
 
 |Özellik|Unity ile desteklenen|Ek Açıklamalar|
 |-------------|--------------------------|-------------------------|
@@ -120,7 +120,7 @@ Başvuru bağlantısı: [derleme ve yayın Azure işlem hatları ve TFS](/azure/
 
 ## <a name="monitor-with-hockeyapp"></a>HockeyApp ile izleme
 
-Başvuru bağlantısı:  **[HockeyApp ile izleme](https://www.hockeyapp.net/features/)**
+Başvuru bağlantısı: **[HockeyApp ile izleme](https://www.hockeyapp.net/features/)**
 
 |Özellik|Unity ile desteklenen|Ek Açıklamalar|
 |-------------|--------------------------|-------------------------|

@@ -25,12 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: d71b38fe0d4aef412860a9dc65002c9b8d98c79c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 745f846d1d9e0200b7b6ba5555bf73a19286e5d3
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812640"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647580"
 ---
 # <a name="upgrade-mdf-files"></a>.mdf dosyalarını yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,11 +82,11 @@ Bu konuda, Visual Studio'nun daha yeni bir sürümünü yükledikten sonra verit
   
        -   Belirli bir sürümünü kullanmak için: `(localdb)\ProjectsV12` veya `(localdb)\ProjectsV13`, burada V12 LocalDB 2014 ve V13 LocalDB 2016.  
   
-   -   **Bir veritabanı dosyası iliştirmek**: birincil .mdf dosyasının fiziksel yolu.  
+   -   **Bir veritabanı dosyası iliştirmek**: Birincil .mdf dosyasının fiziksel yolu.  
   
-   -   **Mantıksal ad**: dosya ile kullanmak istediğiniz adı.  
+   -   **Mantıksal ad**: Dosya ile kullanmak istediğiniz adı.  
   
-3. Seçin **Tamam** düğmesi.  
+3. **Tamam** düğmesini seçin.  
   
 4. İstendiğinde, seçin **Evet** dosya yükseltme düğmesi.  
   
@@ -120,11 +120,6 @@ Bu konuda, Visual Studio'nun daha yeni bir sürümünü yükledikten sonra verit
   
 3. İçinde **SQL Server örneği adı** metin kutusunda, SQL Server Express veya kullanmak istediğiniz LocalDB örneğinin adını belirtin. Adlandırılmış bir örnek değil belirtebilmeniz `.\SQLEXPRESS or (localdb)\MSSQLLocalDB`.  
   
-4. Seçin **Tamam** düğmesi.  
+4. **Tamam** düğmesini seçin.  
   
    SQL Server Express, uygulamalarınız için varsayılan veritabanı altyapısı olacaktır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yerel verilere genel bakış](../data-tools/local-data-overview.md)   
- [İzlenecek yol: bir yerel veritabanı dosyası (Windows Forms) verilere bağlanma](../data-tools/walkthrough-connecting-to-data-in-a-local-database-file-windows-forms.md)
-

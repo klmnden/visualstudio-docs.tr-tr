@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 9d924ee92258e348d5ffee1551fcde7707d711cf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c22b9c25f95ea26f2cdaf5c2035fb7a373123241
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855215"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684788"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları ile çalışmaya başlama
 
@@ -47,7 +47,7 @@ Unity yüklemenize dahil olan Visual Studio sürümü, en son sürüm olmayabili
 
 Visual Studio 2017 zaten yüklüyse veya el ile yüklemeyi tercih ederseniz Visual Studio yükleyicisini çalıştırın.
 
-1. [Visual Studio yükleyicisini indirin](/visualstudio/install/install-visual-studio) veya zaten yüklüyse açın.
+1. [Visual Studio yükleyicisini indirin](../install/install-visual-studio.md) veya zaten yüklüyse açın.
 
 1. İstediğiniz Visual Studio sürümü için **Değiştir**'e (zaten yüklüyse) veya **Yükle**'ye (yeni yüklemeler için) tıklayın.
 

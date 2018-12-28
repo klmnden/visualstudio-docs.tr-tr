@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 765e5b154e7787af7afae8ca1f52338cc061a598
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: eedec77ab44f591532a5a2bb827a46965ec242e7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220755"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647384"
 ---
 # <a name="signfile-task"></a>SignFile görevi
 
@@ -73,7 +73,7 @@ Belirtilen dosyayı belirtilen sertifikayı kullanarak imzalar.
 ```
 
 > [!NOTE]
-> Sertifika parmak izini sertifika SHA-1 karmasını ' dir. Daha fazla bilgi için [SHA-1 karmasını bir güvenilen kök CA sertifikası elde](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\)).
+> Sertifika parmak izini sertifika SHA-1 karmasını ' dir. Daha fazla bilgi için [SHA-1 karmasını bir güvenilen kök CA sertifikası elde](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\)). Sertifika ayrıntıları parmak izini kopyalayıp, ek (3F) içermez emin engelleyebilir görünmez karakter `SignFile` gelen sertifikayı bulma.
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Görev başvurusu](../msbuild/msbuild-task-reference.md)   

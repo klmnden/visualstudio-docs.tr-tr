@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: belge düzeyi özelleştirmelerine özel XML bölümleri ekleme'
+title: 'Nasıl Yapılır: Belge düzeyi özelleştirmelerine özel XML bölümleri ekleme'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,19 +15,19 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], custom XML parts
 - custom XML parts [Office development in Visual Studio], adding
 - documents [Office development in Visual Studio], custom XML parts
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0472ad001dee595f1f8edb77d7a70f1eefb0c024
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 3f3e817e91c4a99f5a3aae6decdc500469c10b8f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50744875"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647564"
 ---
-# <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Nasıl yapılır: belge düzeyi özelleştirmelerine özel XML bölümleri ekleme
+# <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Nasıl Yapılır: Belge düzeyi özelleştirmelerine özel XML bölümleri ekleme
   Belge düzeyi özelleştirmesinde özel bir XML parçasına oluşturarak, bir Microsoft Office Excel çalışma kitabı veya Microsoft Office Word belgesi içinde XML verileri depolayabilirsiniz. Daha fazla bilgi için [özel XML bölümlerine genel bakış](../vsto/custom-xml-parts-overview.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  

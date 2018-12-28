@@ -1,5 +1,5 @@
 ---
-title: Beklenen &#39; &#39; | Microsoft Docs
+title: Beklenen 'while' | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,20 +20,20 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de38e7e593d0547a695c2e037903d01387cdf0bb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 689e740b9954cada3788e53094e5a4fc1241baf8
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788738"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801983"
 ---
-# <a name="expected-39while39"></a>Beklenen &#39; &#39;
-İçermediği `while` içinde koşul bir `do...while` döngü. A **yapmak** deyimi, karşılık gelen olmalıdır `while` test kod bloğunu sonunda.  
+# <a name="expected-while"></a>Beklenen 'while'
+Dahil etmediğiniz `while` içinde koşul bir `do...while` döngü. A **yapmak** deyimi, karşılık gelen olmalıdır `while` test kod bloğunun sonunda.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Dahil `while` test kapanış kuşak sonra deyimi.  
+-   Dahil `while` deyiminden sonra kapanış küme ayracını test edin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [while deyimi](../../javascript/reference/while-statement-javascript.md)   
- [Program akışı denetimi](../../javascript/controlling-program-flow-javascript.md)
+ [Program Akışı Denetimi](../../javascript/controlling-program-flow-javascript.md)

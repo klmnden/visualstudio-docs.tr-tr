@@ -16,12 +16,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: crdun
-ms.openlocfilehash: 1898d437cb7d3f439e92b88a45e7b543e8bbd0f5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c25afa4447a77c6e8bdeb0abb502235fdba1e203
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058486"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805152"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015’e Hoş Geldiniz
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -57,15 +57,15 @@ Visual Studio'ya Hoş Geldiniz! Cihazlar için harika bir uygulama veya Masaüst
 
  Uygulama gereksinimlerinize ve kullanmak istediğiniz dil, ihtiyacınız olan araçları göre seçin.
 
-1.  [Visual Studio için Xamarin](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): ortak bir kod tüm cihazlar için C# dilinde temel
+1.  [Visual Studio için Xamarin](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): Bir ortak kod temeli olarak C# tüm cihazlar için
 
-2.  [Visual Studio ile Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): HTML, CSS ve JavaScript veya Typescript için temel bir ortak kod
+2.  [Visual Studio ile Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Bir ortak kod için HTML, CSS ve JavaScript veya Typescript temeli
 
-3.  [Unity için Visual Studio Araçları](./cross-platform/visual-studio-tools-for-unity.md): C# 2B/3B Oyun Geliştirme
+3.  [Unity için Visual Studio Araçları](./cross-platform/visual-studio-tools-for-unity.md): 2B/3B Oyun GeliştirmeC#
 
-4.  [C++ platformlar arası geliştirme için](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): paylaşılan kod kitaplıkları ve c++ uygulamaları
+4.  [C++ platformlar arası geliştirme için](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): Paylaşılan kod kitaplıkları ve c++ uygulamaları
 
-5.  [Android için Visual Studio öykünücü](./cross-platform/visual-studio-emulator-for-android.md): Android için Visual Studio öykünücü: IDE ne olursa olsun Android uygulamalarınızı test etmek ve hata ayıklama
+5.  [Android için Visual Studio öykünücüsü](./cross-platform/visual-studio-emulator-for-android.md): Android için Visual Studio öykünücüsü: IDE ne olursa olsun Android uygulamalarınızı test etmek ve hata ayıklama
 
 ## <a name="connect-your-apps-to-services"></a>Uygulamalarınızı hizmetlere bağlayın
  Bu hizmetler (her hizmet için bir hesap olduğunu varsayarak) hazır bağlanabilirsiniz:
@@ -82,7 +82,7 @@ Visual Studio'ya Hoş Geldiniz! Cihazlar için harika bir uygulama veya Masaüst
 ## <a name="build-test-and-manage-your-code"></a>Derleme, test etme ve kodunuzu yönetin
 
 ### <a name="check-in-your-code"></a>Kodunuzu iade edin
- Kodun en son sürümlerini paylaşımda gerek bir takımda çalışıyorsanız, ekipteki herkesin aynı kod temeline kullanarak şekilde. Visual Studio sürüm denetimi Git veya TFVC (Team Foundation sürüm denetimi) ile sağlamak için Visual Studio Team Services veya Team Foundation Server ile sorunsuz şekilde tümleşir. Kodunuzu yerel bir sunucuya herhangi bir bakım ile bulutta depolamak için Visual Studio Team Services'ı kullanın. Bir şirket içi sunucunun istiyorsanız Team Foundation Server'ı kullanın. Her bir kod projesi oluşturduğunuzda, sürüm denetimine ekleme seçeneğine sahip olursunuz. Hangi sürüm denetimi hakkında sistem ihtiyaçlarınız için en iyi olduğunu öğrenin: [sürüm denetimi kullanın](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
+ Kodun en son sürümlerini paylaşımda gerek bir takımda çalışıyorsanız, ekipteki herkesin aynı kod temeline kullanarak şekilde. Visual Studio sürüm denetimi Git veya TFVC (Team Foundation sürüm denetimi) ile sağlamak için Visual Studio Team Services veya Team Foundation Server ile sorunsuz şekilde tümleşir. Kodunuzu yerel bir sunucuya herhangi bir bakım ile bulutta depolamak için Visual Studio Team Services'ı kullanın. Bir şirket içi sunucunun istiyorsanız Team Foundation Server'ı kullanın. Her bir kod projesi oluşturduğunuzda, sürüm denetimine ekleme seçeneğine sahip olursunuz. Hangi sürüm denetimi hakkında sistem ihtiyaçlarınız için en iyi olduğunu öğrenin: [Sürüm denetimi kullanın](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
 
 ### <a name="build-your-app"></a>Uygulamanızı oluşturun
  Yapabilecekleriniz [uygulamanızı yerel olarak derleme](./ide/compiling-and-building-in-visual-studio.md) ve doğru çalıştığından emin olun. Ardından [hata ayıklama araçları](./debugger/debugging-in-visual-studio.md) uygulamanızla ilgili sorunları gidermek için. Veya, paylaşılan derleme sunucuları üzerinde veya bulutta projeleri oluşturabilirsiniz. Sürüm denetimine takımınızdaki geliştiriciler iade etmiş kod oluşturmak için yapı sürecinizi otomatik hale getirin. Örneğin, gecelik bir veya daha fazla proje veya kodu iade her zaman oluşturabilirsiniz.
@@ -100,7 +100,7 @@ Visual Studio'ya Hoş Geldiniz! Cihazlar için harika bir uygulama veya Masaüst
 |||||
 |-|-|-|-|
 |[Visual Studio 2015'teki yenilikler](./what-s-new-in-visual-studio-2015.md)|[Visual C# için yenilikler nelerdir?](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[.NET Framework 4.6 için yenilikler nelerdir?](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[ALM'deki yenilikler](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)|
-|[C++ için yenilikler nelerdir?](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Visual Basic’teki Yenilikler](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[JavaScript için yenilikler nelerdir?](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/what-s-new-in-javascript.md)||
+|[C++ için yenilikler nelerdir?](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Visual Basic’teki Yenilikler](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[JavaScript için yenilikler nelerdir?](/visualstudio/scripting-docs/javascript/what-s-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 
 ## <a name="in-this-section"></a>Bu bölümde

@@ -1,5 +1,5 @@
 ---
-title: Beklenen &#39;] &#39; | Microsoft Docs
+title: Beklenen ']' | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,20 +20,20 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e31975b80764773f16eb4009322b712c06a4ff4f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 13eb537d7c32d1f0252a2500e04aa04be4ecef53
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788633"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804357"
 ---
-# <a name="expected-3939"></a>Beklenen &#39;] &#39;
-Bir dizi öğesine başvuru yapılan ancak sağ köşeli ayraç içermiyordu. Bir dizi öğesiyle herhangi bir ifade açma hem ayraç içermelidir.  
+# <a name="expected-"></a>']' bekleniyor
+Bir dizi öğesine bir başvuru yapılmış, ancak sağ köşeli ayraç içermiyordu. Bir dizi öğesine başvuran herhangi bir ifade, açma hem kapatma köşeli ayraçlar içermelidir.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Dizi öğesiyle ifade sağ köşeli ayraç ekleyin.  
+-   Sağ köşeli ayraç dizi öğesine başvuran bir ifade ekleyin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Dizileri kullanma](../../javascript/advanced/using-arrays-javascript.md)   
- [Dizi nesnesi](../../javascript/reference/array-object-javascript.md)
+ [Dizi Nesnesi](../../javascript/reference/array-object-javascript.md)

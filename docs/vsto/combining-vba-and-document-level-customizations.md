@@ -22,17 +22,17 @@ helpviewer_keywords:
 - VBA [Office development in Visual Studio], about VBA and document-level customizations
 - managed code [Office development in Visual Studio], Visual Basic for Applications and
 - document-level customizations [Office development in Visual Studio], Visual Basic for Applications and
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2243a3e03ed84325523f62d77ae3cc6d20f83bbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2dc8a08d7d921c650c8332d3c363d16f5c414b1c
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878082"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441723"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>VBA ve belge düzeyi özelleştirmelerini birleştirme
   Visual Basic for Applications (VBA) kodu Microsoft Office Word veya Microsoft Office Excel için belge düzeyi özelleştirmesinde parçası olan bir belgeyi kullanabilirsiniz. Özelleştirme bütünleştirilmiş koddan belgedeki VBA kodu çağırabilir veya özelleştirme derlemede kod çağırmak için belgedeki VBA kodu etkinleştirmek için projenizi yapılandırabilirsiniz.  
@@ -118,7 +118,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   
   3.  Ayarlama **ReferenceAssemblyFromVbaProject** projede herhangi bir ana bilgisayar öğesi sınıf özelliği **True**. Bu özelleştirme bütünleştirilmiş kodun tür kitaplığını derlemeye gömer ve belgedeki VBA projesine tür kitaplığına bir başvuru ekler.  
   
-  Ayrıntılı yönergeler için bkz. [nasıl yapılır: Visual Basic projesinde kodu VBA kullanımına sunma](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) ve [nasıl yapılır: kodu Visual c VBA kullanımına sunma&#35; proje](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
+  Ayrıntılı yönergeler için bkz. [nasıl yapılır: Visual Basic projesinde kodu VBA ortaya](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) ve [nasıl yapılır: Visual c VBA kodu ortaya&#35; proje](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
   
   **EnableVbaCallers** ve **ReferenceAssemblyFromVbaProject** özellikleri yalnızca **özellikleri** penceresi; tasarım zamanında çalışma zamanında kullanılamaz . Özelliklerini görüntülemek için bir ana öğe Tasarımcısı'nı açın [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Visual Studio bu özellikleri ayarladığınızda gerçekleştiren belirli görevler hakkında daha fazla bilgi için bkz. [konak öğesi özellikleri tarafından gerçekleştirilen görevler](#PropertyTasks).  
   
@@ -253,9 +253,9 @@ GetManagedClass(pdispInteropObject Object) As Object
 |Özelleştirme bütünleştirilmiş koda çağrı yapan VBA kodu özelleştirme bütünleştirilmiş kodu yeniden adlandırdıktan sonra durur.|Sonra VBA kodunu sunmadan özelleştirme derlemenin adını değiştirirseniz, belgedeki VBA projesine özelleştirme derlemenizi arasındaki bağlantı bozuk. Bu sorunu gidermek için değiştirme **ReferenceFromVbaAssembly** projenize özelliğinde **False** ve ardından yeniden **True**ve ardından eski derlemenin tüm başvurularını Değiştir VBA kodu adı ile yeni bir derleme adı.|  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: Visual Basic projesinde kodu VBA kullanımına sunma](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Nasıl yapılır: kodu Visual c VBA kullanımına sunma&#35; proje](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
- [İzlenecek yol: kod Visual Basic projesinde VBA'dan çağırın](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
+ [Nasıl yapılır: Visual Basic projesinde kodu VBA kullanıma sunma](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [Nasıl yapılır: Visual c VBA kodu ortaya&#35; proje](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [İzlenecek yol: Visual Basic projesinde VBA'dan kod çağırabilir](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
  [İzlenecek yol: Visual c VBA'dan Kod Çağırma&#35; proje](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
  [Office çözümleri oluşturma ve tasarlama](../vsto/designing-and-creating-office-solutions.md)   
  [Visual Studio'da karşılaştırılan VBA ve Office çözümleri](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)   

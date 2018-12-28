@@ -1,5 +1,5 @@
 ---
-title: Beklenen &#39;)&#39; (JavaScript) normal ifadede | Microsoft Docs
+title: Beklenen ')' (JavaScript) normal ifadede | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5d1075a41d2b97d10166b1372e8df3a93dd9d8e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 6c344105010e406ef4936fdcca58baffbd610088
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279134"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802348"
 ---
-# <a name="expected-3939-in-regular-expression-javascript"></a>Beklenen &#39;)&#39; normal ifadede (JavaScript)
+# <a name="expected--in-regular-expression-javascript"></a>Normal ifadede ')' bekleniyor (JavaScript)
 Bir normal ifade yakalama, onaylama veya grup oluşturmaya çalıştı, ancak kapatma parantezinden içermiyordu. Parantez içinde normal ifadeler birkaç amacı vardır. Alt ifadeler, onaylamalar belirtin veya öğeler tarafından tek bir birim olarak davranılıp desenleri birlikte gruplanacağını yakalamak için öncelikle, kullanılan *, +,?, vs.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 59f801c79c8bb19a63064bdac2fe717ee3e3a845
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 307d4842f25b3227f3857cf81be154a5db817a7e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295592"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804292"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>İzlenecek yol: IntelliTrace'i kullanarak SharePoint uygulamasında hata ayıklama
 
@@ -32,7 +32,7 @@ IntelliTrace'i kullanarak SharePoint çözümleri daha kolay ayıklayabilirsiniz
 
  Bu yönerge, dağıtılmış uygulamalardan IntelliTrace verilerini toplamak için Microsoft Monitoring Agent'ı kullanarak bir SharePoint 2010 veya SharePoint 2013 proje Visual Studio'da hata ayıklama gösterir. Bu verileri analiz etmek için Visual Studio Enterprise'ı kullanmanız gerekir. Bu proje özelliği etkin olduğunda, görev listesi ve duyuru duyuruları listesine bir görev ekler. özellik alıcısı içerir. Özelliği devre dışı bırakıldığında, görevi tamamlandı olarak işaretlenir ve ikinci bir duyuru duyuruları listesine eklenir. Ancak, proje düzgün çalışmasını engelleyen bir mantıksal hatayla yordamı içerir. Bulun ve hatayı düzeltmek için IntelliTrace kullanarak.
 
- **İçin geçerlidir:** Visual Studio'da oluşturulan SharePoint 2010 ve SharePoint 2013 çözümleri için bu konudaki bilgiler, geçerlidir.
+ **Uygulama hedefi:** Bu konu başlığı altındaki bilgiler, Visual Studio'da oluşturulan SharePoint 2010 ve SharePoint 2013 çözümleri için geçerlidir.
 
  Bu izlenecek yol aşağıdaki görevleri gösterir:
 
@@ -206,7 +206,7 @@ Ardından, özellik alıcısı içindeki iki yöntem için kodu ekleyin: `Featur
     {
         // The following line induces an error to demonstrate debugging.
         // Remove this line later for proper operation.
-        throw new System.InvalidOperationException("A serious error occurred!"); 
+        throw new System.InvalidOperationException("A serious error occurred!");
         try
         {
             using (SPSite site = new SPSite(siteUrl))
@@ -261,7 +261,7 @@ Ardından, özellik alıcısı içindeki iki yöntem için kodu ekleyin: `Featur
 
 2. Duyuruları ve görev listelerinin içeriğini görüntüler.
 
-     Adlı yeni bir duyuru Duyurular listesi olmalıdır **özelliği etkinleştirildi: IntelliTraceTest_Feature1**, ve görev listesi, adında yeni bir görev olmalıdır **özelliği devre dışı bırak: IntelliTraceTest_ Özellik1**. Bu öğelerden herhangi biri eksik özellik etkin olup olmadığını doğrulayın. Etkin değilse, bunu etkinleştirin.
+     Adlı yeni bir duyuru Duyurular listesi olmalıdır **özelliği etkinleştirildi: IntelliTraceTest_Feature1**, ve görev listesi, adında yeni bir görev olmalıdır **özelliği devre dışı bırak: IntelliTraceTest_Feature1**. Bu öğelerden herhangi biri eksik özellik etkin olup olmadığını doğrulayın. Etkin değilse, bunu etkinleştirin.
 
 3. Bu özellik aşağıdaki adımları gerçekleştirerek devre dışı bırakın:
 
@@ -280,9 +280,9 @@ Ardından, özellik alıcısı içindeki iki yöntem için kodu ekleyin: `Featur
 Microsoft Monitoring Agent'ı SharePoint çalıştıran sisteminde yükleme yapıyorsanız, IntelliTrace döndüren genel bilgileri daha fazla özel veriler kullanarak SharePoint çözümleri ayıklayabilirsiniz. Aracı, Visual Studio'nun dışında SharePoint çözüm çalıştırmalarınızı çalışırken hata ayıklama bilgileri yakalamak için PowerShell cmdlet'lerini kullanarak çalışır.
 
 > [!NOTE]
-> Bu örnek için bu bölümdeki yapılandırma bilgilerini özeldir. Diğer yapılandırma seçenekleri hakkında daha fazla bilgi için bkz. [IntelliTrace collector kullanarak](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).
+> Bu örnek için bu bölümdeki yapılandırma bilgilerini özeldir. Diğer yapılandırma seçenekleri hakkında daha fazla bilgi için bkz. [IntelliTrace collector kullanarak](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-1. SharePoint çalıştıran bilgisayarda [Microsoft İzleme Aracısı'nı ayarlayın ve çözümünüzü izlemek başlangıç](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).
+1. SharePoint çalıştıran bilgisayarda [Microsoft İzleme Aracısı'nı ayarlayın ve çözümünüzü izlemek başlangıç](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
 2. Özelliği devre dışı bırakın:
 
@@ -310,7 +310,7 @@ Artık SharePoint çözüm hatayı bulmak ve için Visual Studio'da IntelliTrace
 
 2. Seçin **özel durum hata ayıkla** düğmesi.
 
-     İstenirse, sembol dosyalarını yükleyin. İçinde **IntelliTrace** penceresinde özel durum olarak vurgulanır "sayıcı: önemli bir hata oluştu!".
+     İstenirse, sembol dosyalarını yükleyin. İçinde **IntelliTrace** penceresinde özel durum olarak vurgulanır "sayıcı: Önemli bir hata oluştu! ".
 
      IntelliTrace penceresinde başarısız kodunu görüntülemek için özel durum seçin.
 
@@ -334,6 +334,6 @@ Artık SharePoint çözüm hatayı bulmak ve için Visual Studio'da IntelliTrace
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Doğrulayın ve SharePoint kodu hatalarını ayıklama](../sharepoint/verifying-and-debugging-sharepoint-code.md)  
-[IntelliTrace](/visualstudio/debugger/intellitrace)  
-[İzlenecek yol: Birim testleri kullanarak SharePoint kodunu doğrulayın.](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))
+- [Doğrulayın ve SharePoint kodu hatalarını ayıklama](../sharepoint/verifying-and-debugging-sharepoint-code.md)
+- [IntelliTrace](../debugger/intellitrace.md)
+- [İzlenecek yol: Birim testleri kullanarak SharePoint kodunu doğrulama](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))

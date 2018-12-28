@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eab54410c7eb1db9dfc0ac3b2c9b2f5df8b85eac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4eae301ca32ef986c76203fd04e7bd6dc9302fec
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634560"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740185"
 ---
-# <a name="code-analysis-application-errors"></a>Kod Çözümleme Uygulama Hataları
+# <a name="code-analysis-application-errors"></a>Kod çözümleme uygulama hataları
 
-Bu bölüm, yönetilen kod analizi aracı tarafından oluşturulan hata iletileri bir başvurudur. Belirli hata iletileri için Yardım almak için hata numarası yazın **Ara** dizinde kutusu.
+Bu bölüm, yönetilen kod analizi aracı tarafından oluşturulan hata iletileri bir başvurudur.
 
-## <a name="in-this-section"></a>Bu Bölümde
+## <a name="in-this-section"></a>Bu bölümde
 
 |||
 |-|-|
@@ -39,26 +39,26 @@ Bu bölüm, yönetilen kod analizi aracı tarafından oluşturulan hata iletiler
 |[CA0056](ca0056.md)|Bir proje dosyası, analiz aracı yanlış bir sürümü vardır.|
 |[CA0057](ca0057.md)|Hedefleri ve kuralları geçerli kümesine ihlalleri eşlenemez.|
 |[CA0058](ca0058.md)|Başvurulan derlemeler yüklenemiyor.|
-|[CA0059](ca0059.md)|Komut satırı anahtarı hatası.|
+|[CA0059](ca0059.md)|Komut satırı anahtarı bir hata oluştu.|
 |[CA0060](ca0060.md)|Dolaylı olarak başvurulan derlemeler yüklenemiyor.|
 |[CA0061](ca0061.md)|Kural '*RuleId*' bulunamadı.|
 |[CA0062](ca0062.md)|Kural '*RuleId*'Kural kümesinde başvurulan'*RuleSetName*' bulunamadı.|
 |[CA0063](ca0063.md)|Kural kümesi dosyası veya bağlantılı kural kümesi dosyalarından biri yüklenemedi.|
 |[CA0064](ca0064.md)|Belirtilen kural kümesi herhangi FxCop kuralı içermiyor olduğundan, hiçbir analiz gerçekleştirilmedi.|
-|[CA0065](ca0065.md)|Desteklenmeyen Meta veri yapısı: türü '*TypeName*'hem bir özellik hem de aynı ada sahip bir alan içeriyor'*PropertyFieldName*'|
+|[CA0065](ca0065.md)|Desteklenmeyen Meta veri yapısı: Türü '*TypeName*'hem bir özellik hem de aynı ada sahip bir alan içeriyor'*PropertyFieldName*'|
 |[CA0066](ca0066.md)|Değer '*VersionID*' için sağlanan **/targetframeworkversion** tanınan bir sürüm değil.|
 |[CA0067](ca0067.md)|Dizin bulunamadı.|
 |[CA0068](ca0068.md)|Hata ayıklama bilgileri hedef derleme için bulunamadı *'AssemblyName'*.|
-|[CA0069](ca0069.md)|Diğer platformlar kullanıyor. *FrameworkVersion1* bulunamadı. Kullanarak *FrameworkVersion2* yerine. İçin en iyi analiz sonuçları doğru .NET Framework yüklü emin olun.|
+|[CA0069](ca0069.md)|Diğer platformlar kullanıyor. *FrameworkVersion1* bulunamadı. Kullanarak *FrameworkVersion2* yerine. En iyi analiz sonuçları için doğru .NET Framework yüklü olduğundan emin olun.|
 |[CA0070](ca0070.md)|Derleme veya tür güvenlik izinleri nedeniyle yüklenemiyor.|
 |[CA0501](ca0501.md)|Çıkış raporu okunamıyor.|
 |[CA0502](ca0502.md)|Desteklenmeyen dil.|
-|[CA0503](ca0503.md)|Özelliği kullanımdan kaldırılmıştır. Superceding özelliğini kullanın|
+|[CA0503](ca0503.md)|Özelliği kullanımdan kaldırılmıştır. Önceki uygulamaların yerini alan özelliğini kullanın|
 |[CA0504](ca0504.md)|Kural dizini yok sayıldı|
-|[CA0505](ca0505.md)|Özelliği kullanımdan kaldırılmıştır. Superceding özelliğini kullanın|
+|[CA0505](ca0505.md)|Özelliği kullanımdan kaldırılmıştır. Önceki uygulamaların yerini alan özelliğini kullanın|
 |[FxCopCmd Hataları](fxcopcmd-errors.md)|Yönetilen kod çözümleme hataları.|
 
-## <a name="related-sections"></a>İlgili Bölümler
+## <a name="related-sections"></a>İlgili bölümler
 
 - [Kod Çözümleme İlkesi Hataları](../code-quality/code-analysis-policy-errors.md)
-- [Yönetilen kod kalitesini analiz etme](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
+- [Yönetilen Kod Kalitesini Analiz Etme](../code-quality/code-analysis-for-managed-code-overview.md)

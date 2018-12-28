@@ -28,19 +28,19 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 10fed2fa77274469a7b82a1583e825c57ca4a581
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 464b5703a33caefe4533d8ecd726bbb9d6910de4
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195604"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740375"
 ---
 # <a name="managing-references-in-a-project"></a>Bir projedeki başvuruları yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir dış bileşene karşı kodu yazın veya bağlı hizmet önce projeniz ilk buna bir başvuru içermelidir. Visual Studio bileşen veya hizmet bulmak gereken bilgileri içeren bir proje dosyası girdisinde aslında bir başvurudur.  
   
- Bir başvuru eklemek için Çözüm Gezgini'ndeki başvurular düğümü sağ tıklatın ve seçin **Başvuru Ekle**. Daha fazla bilgi için [nasıl yapılır: başvurular ekleme veya kaldırma başvuru Yöneticisi'ni kullanarak](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).  
+ Bir başvuru eklemek için Çözüm Gezgini'ndeki başvurular düğümü sağ tıklatın ve seçin **Başvuru Ekle**. Daha fazla bilgi için [nasıl yapılır: Başvurular ekleme veya kaldırma başvuru Yöneticisi'ni kullanarak](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).  
   
  ![Visual C dilinde bir başvuru ekleyin&#43;&#43;](../ide/media/vs2015-cpp-add-reference.png "vs2015_cpp_add_reference")  
   
@@ -113,7 +113,7 @@ Bir dış bileşene karşı kodu yazın veya bağlı hizmet önce projeniz ilk b
 ## <a name="project-to-project-references"></a>Projeden projeye başvurular  
  Projeden projeye başvurular, derlemeler içeren projelere başvurulardır; bunları kullanarak oluşturduğunuz **proje** sekmesi. Visual Studio, projeye bir yolu verildiğinde bir derleme bulabilirsiniz.  
   
- Bir derleme üreten bir proje varsa, proje başvurusu ve bir dosya başvurusu (aşağıya bakın) kullanmamanız gerekir. Bir proje-proje başvurusunun avantajı yapı sistemindeki projeler arasında bağımlılık oluşturmasıdır. Bağımlı proje başvuran proje oluşturulan son daraltılmasından değişmiş ise oluşturulacaktır. Bu nedenle bağımlı proje oluşturmadan başvuran projeyi oluşturmak olasıdır ve başvuru geçersiz hale gelebilir bir dosya başvurusu bir yapı bağımlılığı oluşturmaz. (Diğer bir deyişle, proje proje daha önce oluşturulmuş bir sürümüne başvuruda bulunabilir.) Bu mümkün değildir bin dizininde gerekli tek bir DLL'nin çeşitli sürümleri neden olabilir. Bu çakışma oluştuğunda, bir ileti gibi görürsünüz [Uyarı: Bu 'dosya' başvurusunun üzerine yazacağından 'proje' projesindeki ' dosya' bağımlılığı çalıştırma dizinine kopyalanamıyor ](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-file.md). Daha fazla bilgi için bkz [bozuk başvuruları sorun giderme](../ide/troubleshooting-broken-references.md) ve [nasıl yapılır: oluşturma ve proje bağımlılıkları kaldırma](../ide/how-to-create-and-remove-project-dependencies.md).  
+ Bir derleme üreten bir proje varsa, proje başvurusu ve bir dosya başvurusu (aşağıya bakın) kullanmamanız gerekir. Bir proje-proje başvurusunun avantajı yapı sistemindeki projeler arasında bağımlılık oluşturmasıdır. Bağımlı proje başvuran proje oluşturulan son daraltılmasından değişmiş ise oluşturulacaktır. Bu nedenle bağımlı proje oluşturmadan başvuran projeyi oluşturmak olasıdır ve başvuru geçersiz hale gelebilir bir dosya başvurusu bir yapı bağımlılığı oluşturmaz. (Diğer bir deyişle, proje proje daha önce oluşturulmuş bir sürümüne başvuruda bulunabilir.) Bu mümkün değildir bin dizininde gerekli tek bir DLL'nin çeşitli sürümleri neden olabilir. Bu çakışma oluştuğunda, bir ileti gibi görürsünüz [Uyarı: Bu 'dosya' başvurusunun üzerine yazacağından 'proje' projesindeki ' dosya' bağımlılığı çalıştırma dizinine kopyalanamıyor ](/visualstudio/vs-2015/misc/warning-the-dependency-file-in-project-project-cannot-be-copied). Daha fazla bilgi için [bozuk başvuruları sorun giderme](../ide/troubleshooting-broken-references.md) ve [nasıl yapılır: Proje bağımlılıklarını oluşturma ve kaldırma](../ide/how-to-create-and-remove-project-dependencies.md).  
   
 > [!NOTE]
 >  Bir projenin .NET Framework hedef sürümü, sürüm 4.5 ise ve diğer projenin hedef sürümü sürüm 2, 3, 3.5 veya 4.0 ise bir proje proje başvurusu yerine dosya başvurusu oluşturulur.  
@@ -124,5 +124,5 @@ Bir dış bileşene karşı kodu yazın veya bağlı hizmet önce projeniz ilk b
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bozuk başvurularda sorun giderme](../ide/troubleshooting-broken-references.md)   
  [Bütünleştirilmiş kodlarla programlama](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
- [Nasıl Yapılır: Başvuru Yöneticisi'ni Kullanarak Başvuru Ekleme veya Kaldırma](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+ [Nasıl yapılır: Başvuru Yöneticisi'ni kullanarak başvuruları kaldırın veya ekleyin](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
 

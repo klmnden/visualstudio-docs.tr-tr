@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 404a8a3f40d5d84d60fe4822fb692e4f48a57503
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: ca8434f6aaf0137da51612665833150b783d01d1
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220813"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592943"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 ve Windows Server 2012 uygulamalarında performans araçları
 
@@ -76,7 +76,7 @@ Profil için cihazlarında uygulamalar Visual Studio yüklü olmayan aşağıdak
 
 - Visual Studio için Uzak Araçlar'ın bir parçası olarak araçları indirin [MSDN web sitesinde](http://go.microsoft.com/fwlink/?LinkID=219549).
 
-- Kopyalama ve bilgisayarınızda Visual Studio bağımsız profil oluşturucuyu araçları yükleme programını çalıştırın. Yükleme programları bulunan *%VSInstallDir%\Team Araçlar\Performans Tools\Setups* klasör. Uzak bilgisayarın işletim sistemi (x86/x64) için Kurulum programı seçin.
+- Kopyalama ve bilgisayarınızda Visual Studio bağımsız profil oluşturucuyu araçları yükleme programını çalıştırın. Profil oluşturma araçları için olan yolu almak için bkz: [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Uzak bilgisayarın işletim sistemi (x86/x64) için Kurulum programı seçin.
 
 > [!NOTE]
 > İpucu profil oluşturma verilerini toplamak için uzak bilgisayardaki Visual Studio makinenizden bağımsız profil oluşturucuyu yüklemeniz gerekir.

@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3d8beee1f52d2fa58862697f569a91afe2bceb39
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890575"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647400"
 ---
 # <a name="query-datasets"></a>Veri kümelerini sorgulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Bir veri kümesindeki belirli kayıtları aramak için üzerinde DataTable FindB
      [!code-csharp[VbRaddataEditing#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#20)]
      [!code-vb[VbRaddataEditing#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#20)]  
   
-## <a name="accessrelated-records"></a>Accessrelated kayıtları  
+## <a name="access-related-records"></a>Erişim ilgili kayıtları  
  Bir veri kümesindeki tabloların işlerken bir <xref:System.Data.DataRelation> nesne yapabilir ilgili kayıtlar başka bir tablodaki kullanılabilir. Örneğin, bir veri kümesi içeren `Customers` ve `Orders` tablolar kullanılabilir hale.  
   
  Kullanabileceğiniz bir <xref:System.Data.DataRelation> çağırarak ilgili kayıtları bulun nesnesine <xref:System.Data.DataRow.GetChildRows%2A> yöntemi bir <xref:System.Data.DataRow> içinde üst tablo. Bu yöntem, bir dizi ilgili alt kayıtları döndürür. Veya çağırabilirsiniz <xref:System.Data.DataRow.GetParentRow%2A> yöntemi bir <xref:System.Data.DataRow> alt tabloda. Bu yöntem tek bir döndüren <xref:System.Data.DataRow> üst tablodan.  
@@ -71,7 +71,7 @@ Bir veri kümesindeki belirli kayıtları aramak için üzerinde DataTable FindB
  Bu sayfa, türü belirlenmiş veri kümelerini kullanan örnekler sağlar. Yazılmayan veri kümeleri ilişkilerinde gezinme hakkında daha fazla bilgi için bkz: [gezinme DataRelations](http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e).  
   
 > [!NOTE]
->  Bir Windows Forms uygulamasında çalışan ve verileri görüntülemek için veri bağlama özellikleri kullanarak, tasarımcı tarafından oluşturulan form uygulamanız için yeterli işlevler sağlayabilir. Daha fazla bilgi için [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md). Özellikle, görmek[nasıl yapılır: Windows Forms uygulamasında görüntü ilgili verileri](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md) ve [izlenecek yol: bir Windows formunda ilgili verileri görüntüleme](../data-tools/walkthrough-displaying-related-data-on-a-windows-form.md).  
+> Bir Windows Forms uygulamasında çalışan ve verileri görüntülemek için veri bağlama özellikleri kullanarak, tasarımcı tarafından oluşturulan form uygulamanız için yeterli işlevler sağlayabilir. Daha fazla bilgi için [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   
  Aşağıdaki kod örnekleri, yazılan veri kümelerindeki ilişkiler yukarı ve aşağı gitmek nasıl ekleyebileceğiniz gösterilmektedir. Yazılan kod örneklerini kullanımı <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) ve oluşturulan `FindBy` *PrimaryKey* (`FindByCustomerID`) istenen satırı bulun ve ilgili kayıtları döndürmek için yöntemleri. Örnekleri derleme ve yalnızca varsa doğru bir şekilde çalıştırın:  
   
@@ -81,7 +81,7 @@ Bir veri kümesindeki belirli kayıtları aramak için üzerinde DataTable FindB
   
 - Adlı bir ilişki `FK_Orders_Customers`iki tablo, kod kapsamını ilgili  
   
-  Ayrıca, her iki tablonun döndürülecek herhangi bir kayıt için verilerle doldurulması gerekir.  
+Ayrıca, her iki tablonun döndürülecek herhangi bir kayıt için verilerle doldurulması gerekir.  
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Alt seçili üst kaydının kayıtları döndürmek için  
   
@@ -96,4 +96,3 @@ Bir veri kümesindeki belirli kayıtları aramak için üzerinde DataTable FindB
   
      [!code-csharp[VbRaddataDatasets#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#7)]
      [!code-vb[VbRaddataDatasets#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#7)]
-

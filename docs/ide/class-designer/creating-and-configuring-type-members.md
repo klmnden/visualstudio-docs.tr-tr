@@ -31,18 +31,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b93fa4720a6f0de9e2d7a64eb2c820811610297
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d1141c8d54bf545983c89e13ddbf17ffd41e5011
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938805"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684947"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Oluşturma ve tür üyeleri Sınıf Tasarımcısı'nda yapılandırma
 
 Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma ekleyebileceğiniz **sınıf ayrıntıları** penceresi:
 
-|**Türü**|**İçerebileceği üyeler**|
+|**Tür**|**İçerebileceği üyeler**|
 |--------------| - |
 |örneği|yöntem, özellik (C# ve Visual Basic için), alan, olay (C# ve Visual Basic için), oluşturucu (yöntem), yıkıcı (yöntem), sabit|
 |Enum|üye|
@@ -59,12 +59,12 @@ Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma e
 
 |Görev|Destekleyici içerik|
 |----------| - |
-|**Kullanmaya başlayın:** oluşturun ve tür üyeleri'ı yapılandırmadan önce açmalısınız **sınıf ayrıntıları** penceresi.|- [Sınıf ayrıntıları penceresini açma](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Sınıf ayrıntıları kullanım notları](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Salt okunur bilgileri görüntüleme](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Sınıf diyagramında ve sınıf Ayrıntıları penceresinde klavye ve Fare kısayolları](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**Oluşturma ve tür üyelerini değiştirme:** yeni üyeler oluşturabilir, üyeleri değiştirebilir ve kullanarak bir yönteme parametre eklemek **sınıf ayrıntıları** penceresi.|- [Üyeleri oluşturma](creating-and-configuring-type-members.md#create-members)<br />- [Tür üyelerini değiştirme](creating-and-configuring-type-members.md#modify-type-members)<br />- [Yöntemlere parametreler ekleme](creating-and-configuring-type-members.md#add-parameters-to-methods)|
+|**Kullanmaya başlayın:** Oluşturma ve tür üyeleri'ı yapılandırmadan önce açmalısınız **sınıf ayrıntıları** penceresi.|- [Sınıf ayrıntıları penceresini açma](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Sınıf ayrıntıları kullanım notları](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Salt okunur bilgileri görüntüleme](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Sınıf diyagramında ve sınıf Ayrıntıları penceresinde klavye ve Fare kısayolları](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**Oluşturma ve tür üyelerini değiştirme:** Yeni üyeler oluşturabilir, üyeleri değiştirebilir ve kullanarak bir yönteme parametre eklemek **sınıf ayrıntıları** penceresi.|- [Üyeleri oluşturma](creating-and-configuring-type-members.md#create-members)<br />- [Tür üyelerini değiştirme](creating-and-configuring-type-members.md#modify-type-members)<br />- [Yöntemlere parametreler ekleme](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Sınıf ayrıntıları penceresini açma
 
-Varsayılan olarak, **sınıf ayrıntıları** yeni bir sınıf diyagramı açtığınızda penceresi otomatik olarak görüntülenir. Bkz: [nasıl yapılır: projelere sınıf diyagramları ekleme](how-to-add-class-diagrams-to-projects.md)). Ayrıca açabilirsiniz **sınıf ayrıntıları** penceresi aşağıdaki yollarla:
+Varsayılan olarak, **sınıf ayrıntıları** yeni bir sınıf diyagramı açtığınızda penceresi otomatik olarak görüntülenir. Bkz: [nasıl yapılır: Projelere sınıf diyagramları ekleme](how-to-add-class-diagrams-to-projects.md)). Ayrıca açabilirsiniz **sınıf ayrıntıları** penceresi aşağıdaki yollarla:
 
 - Herhangi bir sınıf diyagramında bir bağlam menüsünü görüntülemek için sağ tıklayın ve ardından **sınıf ayrıntıları**.
 
@@ -124,7 +124,7 @@ Varsayılan olarak, **sınıf ayrıntıları** yeni bir sınıf diyagramı açt�
 
 4.  İsteğe bağlı olarak, üyeyle ilgili diğer ayrıntıları (örneğin, türü) belirtin.
 
-     **Not:** üye oluşturmak için klavye kısayollarını kullanabilirsiniz. Daha fazla bilgi için [klavye ve Fare kısayolları sınıf diyagramında ve sınıf Ayrıntıları penceresinde](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
+     **Not:** Üye oluşturmak için klavye kısayollarını da kullanabilirsiniz. Daha fazla bilgi için [klavye ve Fare kısayolları sınıf diyagramında ve sınıf Ayrıntıları penceresinde](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
 
 ## <a name="modify-type-members"></a>Tür üyelerini değiştirme
 
@@ -193,7 +193,7 @@ Parametre satırı aşağıdaki öğeleri içerir:
 
      Parametre adını işaret eden görüntüler parametrenin adını **adı** sütunu adın tamamını görüntüleyemeyecek kadar darsa.
 
-- **Türü**
+- **Tür**
 
      **Parametre türü** hücresi geçerli projede veya başvurulan projelerde kullanılabilen tüm türlerin listesinden seçim yapmanıza izin IntelliSense özelliğini kullanır.
 
@@ -209,7 +209,7 @@ Parametre satırı aşağıdaki öğeleri içerir:
 
      Bir üyenin son parametre satırı metni içeren **<add parameter>** içinde **adı** hücre. Bu hücreye tıklanması yeni bir parametre oluşturmanıza izin verir. Daha fazla bilgi için [bir yönteme parametre eklemek için](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
-**Özellikleri** penceresinde görüntülenen parametre özelliklerinin görüntüler **sınıf ayrıntıları** penceresi: **adı**, **türü**,  **Değiştiricisi**, **özeti**, hem de **isteğe bağlı varsayılan** özelliği. Özelliğin bir konumda değiştirilmesi, özelliğin değerini global olarak güncelleştirir (değerinin diğer konumda görüntülenmesi de buna dahildir).
+**Özellikleri** penceresinde görüntülenen parametre özelliklerinin görüntüler **sınıf ayrıntıları** penceresi: **Adı**, **türü**, **değiştiricisi**, **özeti**, hem de **isteğe bağlı varsayılan** özelliği. Özelliğin bir konumda değiştirilmesi, özelliğin değerini global olarak güncelleştirir (değerinin diğer konumda görüntülenmesi de buna dahildir).
 
 > [!NOTE]
 > Bir temsilciye parametre eklemek için bkz [üyeleri oluşturma](creating-and-configuring-type-members.md#create-members).
@@ -320,5 +320,5 @@ Yerel C++ kodunu Sınıf Tasarımcısı kullanarak düzenleyemezsiniz veya **sı
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Türleri ve ilişkilendirmeleri görüntüleme](viewing-types-and-relationships.md)
+- [Türleri ve ilişkilendirmeleri görüntüleme](designing-and-viewing-classes-and-types.md)
 - [Sınıfları ve türleri yeniden düzenleme](refactoring-classes-and-types.md)

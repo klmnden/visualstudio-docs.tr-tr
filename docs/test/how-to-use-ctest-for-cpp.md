@@ -9,16 +9,16 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7a4475cba023f792c2ff96895eb4dd7e0b4ebcf5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d14db3c10fb9e656596e89a43e75b765b67aa7c5
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050220"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804532"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Visual Studio'da C++ için CTest kullanma
 
-(Kod CTest içerir) CMake tümleşik Visual Studio IDE'ye varsayılan olarak **C++ ile masaüstü Develoment** iş yükü. Makinenizde yüklemeniz gerekiyorsa, Visual Studio yükleyicisi programını açın, **Değiştir** düğmesine ve ardından denetleyin [Visual C++ için CMake araçlarını](/cpp/ide/cmake-tools-for-visual-cpp) altında iş yükü bileşenlerin listesi.
+(Kod CTest içerir) CMake tümleşik Visual Studio IDE'ye varsayılan olarak **C++ ile masaüstü geliştirme** iş yükü. Makinenizde yüklemeniz gerekiyorsa, Visual Studio yükleyicisi programını açın, **Değiştir** düğmesine ve ardından denetleyin [Visual C++ için CMake araçlarını](/cpp/ide/cmake-tools-for-visual-cpp) altında iş yükü bileşenlerin listesi.
 
 ## <a name="to-write-tests"></a>Testler yazmak için
 
@@ -26,7 +26,7 @@ Visual Studio'da CMake desteği, Visual Studio Proje sistemi kullanılmaz. Bu ne
 
 ## <a name="to-run-tests-visual-studio-2017-version-156"></a>(Visual Studio 2017 sürüm 15.6) testleri çalıştırmak için
 
-Visual Studio 2017 sürüm 15.6, CTest tam olarak tümleşiktir **Test Gezgini** ve aynı zamanda Google ve Boost birim testi çerçevelerini destekler. Bu çerçeveler bileşen olarak varsayılan olarak dahil **C++ ile masaüstü Develoment** iş yükü. Ancak, bir projeyi Visual Studio'nun eski bir sürümden yükseltiyorsanız, Visual Studio yükleyicisi programını kullanarak bu çerçeveleri yüklemeniz gerekebilir.
+Visual Studio 2017 sürüm 15.6, CTest tam olarak tümleşiktir **Test Gezgini** ve aynı zamanda Google ve Boost birim testi çerçevelerini destekler. Bu çerçeveler bileşen olarak varsayılan olarak dahil **C++ ile masaüstü geliştirme** iş yükü. Ancak, bir projeyi Visual Studio'nun eski bir sürümden yükseltiyorsanız, Visual Studio yükleyicisi programını kullanarak bu çerçeveleri yüklemeniz gerekebilir.
 
 Aşağıdaki çizim bir CTest, Google Test çerçevesini kullanarak çalıştırma sonuçları gösterilmektedir:
 

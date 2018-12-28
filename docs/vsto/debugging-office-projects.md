@@ -15,17 +15,17 @@ helpviewer_keywords:
 - debugging [Office development in Visual Studio], Outlook projects
 - Office projects [Office development in Visual Studio], debugging
 - Outlook [Office development in Visual Studio], projects
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cc1774e57fafadafc7087bb498e0b77a90e96d85
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: MT
+ms.openlocfilehash: 6c7320ae6cbd0a6d7baa94835177d2a3a6f222cf
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676887"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647906"
 ---
 # <a name="debug-office-projects"></a>Office projelerinde hata ayıklama
   Office projeleri aynı Microsoft kullanarak ayıklayabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] diğer için kullandığınız araçları [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeleri. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hata ayıklayıcı, kesme noktaları yerleştirin ve değişkenleri görüntüleme olanağı gibi özellikleri **Yereller** penceresinde, Office projelerinde hata ayıklaması yaparken de kullanılabilir. Hakkında daha fazla bilgi için [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hata ayıklama araçları, bkz: [Visual Studio'da hata ayıklama](/visualstudio/debugger/debugging-in-visual-studio).  
@@ -79,7 +79,7 @@ ms.locfileid: "35676887"
  Word 97-2003 belgesi üzerinde temel alan bir Word belgesi proje hata ayıklama (*/*.doc *) biçimi, proje klasörünü güvenilir bir klasör listesine eklemeniz gerekir. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz. [belgelere güven verme](../vsto/granting-trust-to-documents.md).  
   
 ## <a name="debug-disabled-add-ins"></a>Hata ayıklama devre dışı eklentileri  
- Microsoft Office uygulamaları, beklenmedik şekilde davranmasına VSTO Add-Ins devre dışı bırakabilirsiniz. Bir Microsoft Office uygulamasının VSTO Add-Ins sorunlu kod uygulama başladığında her zaman yüklenmesini önlemek için devre dışı bırakır. Ancak, bu da tipik olarak hata ayıklama sırasında beklenmeyen davranışlara neden kolaydır. VSTO eklentileri yeniden etkinleştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir VSTO devre dışı bırakılmış eklentiyi yeniden etkinleştirme](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).  
+ Microsoft Office uygulamaları, beklenmedik şekilde davranmasına VSTO Add-Ins devre dışı bırakabilirsiniz. Bir Microsoft Office uygulamasının VSTO Add-Ins sorunlu kod uygulama başladığında her zaman yüklenmesini önlemek için devre dışı bırakır. Ancak, bu da tipik olarak hata ayıklama sırasında beklenmeyen davranışlara neden kolaydır. VSTO eklentileri yeniden etkinleştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir VSTO devre dışı bırakılmış eklentiyi yeniden etkinleştirme](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).  
   
  Microsoft Office uygulamaları için VSTO eklentileri için kullandığınız devre dışı bırakma iki tür vardır: devre dışı bırakma ve yazılım devre dışı bırakılıyor.  
   
@@ -103,7 +103,7 @@ ms.locfileid: "35676887"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümleri oluşturun](../vsto/building-office-solutions.md)   
- [Nasıl yapılır: bir VSTO devre dışı bırakılmış eklentiyi yeniden etkinleştirme](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)   
+ [Nasıl yapılır: Bir VSTO devre dışı bırakılmış eklentiyi yeniden etkinleştirme](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)   
  [VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md)  
   
   

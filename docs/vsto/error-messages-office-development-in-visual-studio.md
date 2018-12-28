@@ -1,6 +1,7 @@
 ---
 title: Hata iletileri (Visual Studio'da Office Geliştirme)
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -10,27 +11,27 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - error messages, Office development in Visual Studio
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c6f87f2bbdda39dd00cf2771d3764aea6ad89d0a
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 7894de0c688ffccd227e2d6f5c73cfae24679d85
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263283"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646886"
 ---
 # <a name="error-messages-office-development-in-visual-studio"></a>Hata iletileri (Visual Studio'da Office Geliştirme)
-  Her hata iletisi konu sorunu çözmek için olası nedenler bir hata ve olası çözümleri veya geçici çözümler için bilgi sağlar.  
+  Her bir hata mesajı konusuna sorunu çözmek için olası nedenler hakkında bir hata ve olası çözümleri veya geçici çözümler için bilgi sağlar.  
   
  Bir hata iletisi hakkında bilgi için aşağıdaki yollarla alabilirsiniz.  
   
 |Yöntem|Açıklama|  
 |-|-|  
-|F1|Bir hata alırsanız, basabilirsiniz **F1**. Bu, karşılık gelen hata iletisi konu çevrimiçi belgeleri açar.|  
-|Tam metin araması|Hata iletisi metinde ilk cümle sözcükleri kullanarak tam metin araması kullanabilirsiniz. Üzerinde **yardımcı** menüsünde tıklatın **arama**.|  
+|F1|Bir hata alırsanız, basabilirsiniz **F1**. Bu, karşılık gelen hata mesajı konusuna çevrimiçi belgelerdeki açar.|  
+|Tam metin araması|Hata ileti metninin ilk cümle sözcükleri kullanarak tam metin aramayı kullanabilirsiniz. Üzerinde **yardımcı** menüsünü tıklatın **arama**.|  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Visual Studio'da Office ve SharePoint geliştirme](../vsto/office-and-sharepoint-development-in-visual-studio.md)  

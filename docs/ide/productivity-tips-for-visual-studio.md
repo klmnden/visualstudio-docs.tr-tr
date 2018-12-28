@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4b4d4e6a0833d6fbea1a34c26a5858f3e28be1c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ecaae21757c5a23eeb13858026d5f4fcfe3dab22
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067984"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684898"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio için üretkenlik ipuçları
 
@@ -118,11 +118,11 @@ Herhangi bir anda, birden fazla kod dosyasında çalışma ve uygulama geliştir
 
      Ayrıca dosyaları daha kolay başka bir örneğini oluşturarak yönetebilirsiniz **Çözüm Gezgini** ve başka bir monitöre taşıyarak. Başka bir örneğini oluşturmak için **Çözüm Gezgini**, bir kısayol menüsünü açıp **Çözüm Gezgini**ve ardından **Yeni Çözüm Gezgini görünümü**.
 
-- **Visual Studio'da görünen yazı tiplerini özelleştirme**. Yazı tipi, boyutu ve IDE içindeki metin için kullanılan rengi değiştirebilirsiniz. Örneğin, düzenleyici ve araç pencerelerini veya IDE boyunca yazı tipini belirli kod öğelerinin rengini özelleştirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: yazı tiplerini ve renkleri değiştirme](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) ve [nasıl yapılır: yazı tiplerini ve renkleri Düzenleyicisi'nde değiştirme](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+- **Visual Studio'da görünen yazı tiplerini özelleştirme**. Yazı tipi, boyutu ve IDE içindeki metin için kullanılan rengi değiştirebilirsiniz. Örneğin, düzenleyici ve araç pencerelerini veya IDE boyunca yazı tipini belirli kod öğelerinin rengini özelleştirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Yazı tiplerini ve renkleri değiştirme](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) ve [nasıl yapılır: Yazı tipleri ve renkler düzenleyicisinde değişiklik](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Sık kullanılan komutlar için varsayılan klavye kısayolları](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
-- [Nasıl yapılır: menüleri ve araç çubuklarını özelleştirme](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
-- [İzlenecek yol: basit bir uygulama oluşturma](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Nasıl yapılır: Menüleri ve araç çubuklarını özelleştirme](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+- [İzlenecek yol: Basit bir uygulama oluşturma](../get-started/csharp/tutorial-wpf.md)
 - [Erişilebilirlik ipuçları ve püf noktaları](../ide/reference/accessibility-tips-and-tricks.md)

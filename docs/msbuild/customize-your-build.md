@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31856366712da0a2287f73906c6e3a5f81f63a00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 85ae5d93d5bb05aa8511b17a5b2d5b775dcc0aae
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857594"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684671"
 ---
-# <a name="customize-your-build"></a>Derlemenizi özelleştirme
+# <a name="customize-your-build-c-visual-basic"></a>Derlemenizi özelleştirme (C#, Visual Basic)
 
 Standart MSBuild projelerinin yapı işlemi (içeri aktarma *Microsoft.Common.props* ve *Microsoft.Common.targets*) derleme özelleştirmek için kullanabileceğiniz çeşitli genişletilebilirlik kancaları sahip işlem.
 

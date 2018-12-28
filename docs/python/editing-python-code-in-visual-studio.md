@@ -12,18 +12,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 15020111702d68c8c35fb09655018215e3a11d3b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4f364f3e8fecbe93dad92e008c178d7eb26ff3e2
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062822"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803513"
 ---
 # <a name="edit-python-code"></a>Python kodunu düzenleme
 
 Kod düzenleyicisinde, geliştirme zamanınızın harcadığınız çünkü [Visual Studio'da Python desteği](installing-python-support-in-visual-studio.md) daha üretken olmanıza yardımcı olmak için işlevsellik sağlar. IntelliSense söz dizimi vurgulama, otomatik tamamlama, imza Yardımı, yöntemi geçersiz kılmalar, arama ve gezinti özellikleri içerir.
 
-Düzenleyici ile de tümleştirilen **etkileşimli** Visual Studio'daki kod ikisi arasındaki değişimi kolaylaştırın,. Bkz: [Öğreticisi 3. adım: etkileşimli REPL penceresini kullanma](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) ve [etkileşimli penceresini - gönderme etkileşimli komutunu kullanma](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) Ayrıntılar için.
+Düzenleyici ile de tümleştirilen **etkileşimli** Visual Studio'daki kod ikisi arasındaki değişimi kolaylaştırın,. Bkz: [Öğreticisi 3. adım: Etkileşimli REPL penceresini kullanma](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) ve [etkileşimli penceresini - gönderme etkileşimli komutunu kullanma](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) Ayrıntılar için.
 
 |   |   |
 |---|---|
@@ -184,7 +184,7 @@ Kullanılabilir kod parçacıkları görebilirsiniz **kod parçacıkları Yönet
 
 ![Visual Studio'da kod parçacıkları Yöneticisi](media/code-editing-code-snippets-manager.png)
 
-Kendi parçacıklarınızı oluşturmak için bkz [izlenecek yol: bir kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md).
+Kendi parçacıklarınızı oluşturmak için bkz [izlenecek yol: Kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md).
 
 Paylaşmak istediğiniz bir harika bir kod parçacığı yazarsanız, içinde bir gist göndermekten çekinmeyin ve [bize bildirin](https://github.com/Microsoft/PTVS/issues). Visual Studio'nun gelecekteki bir sürümde eklemek mümkün olabilir.
 
@@ -196,7 +196,7 @@ Visual Studio'da Python desteği için hangi kaynak kodu kullanılabilir kitapl�
 
 Gezinti çubuğunda, her Düzenleyicisi penceresinin üst kısmında görüntülenir ve iki düzeyli listesini tanımları içerir. Soldaki aşağı açılan, üst düzey bir sınıf ve işlev tanımları geçerli dosyadaki içerir. doğru açılan sola gösterilen kapsamındaki tanımlarını listesini görüntüler. Düzenleyicide yerleri gibi geçerli Bağlamınızı gösterilecek listelerini güncelleştirmek ve bir giriş doğrudan atlamak için bu listeleri de seçebilirsiniz.
 
-! [Gezinti çubuğu] Visual Studio editor(media/code-editing-navigation-bar.png) içinde
+![Visual Studio düzenleyicisinde gezinti çubuğu](media/code-editing-navigation-bar.png)
 
 > [!Tip]
 > Gezinti çubuğunu gizlemek için şuraya gidin: **Araçları** > **seçenekleri** > **metin düzenleyici** > **Python**  >  **Genel** temizleyin **ayarları** > **gezinti çubuğu**.

@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d441da0fd7a9342ef7b64f47374dc2ca61706db7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 13673e14ae7257dceba8638f24d6b2d5d222efd8
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066424"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561453"
 ---
-# <a name="debugging-preparation-windows-forms-applications"></a>Hata Ayıklama Hazırlığı: Windows Forms Uygulamaları
+# <a name="debugging-preparation-windows-forms-applications"></a>Hata ayıklama hazırlığı: Windows Forms Uygulamaları
 Windows Forms proje şablonu, bir Windows Forms uygulaması oluşturur. Bu tür bir uygulamada hata ayıklama [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oldukça basittir. Daha fazla bilgi için [bir Windows uygulaması projesi oluşturma](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).  
   
  Proje şablonuyla bir Windows Forms projesi oluşturduğunuzda [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hata ayıklama ve yayın yapılandırmaları için gereken ayarları otomatik olarak oluşturur. Gerekirse, bu ayarları değiştirebilirsiniz. Bu ayarlar değiştirilebilir  **\<proje adı > özellik sayfaları** iletişim kutusu (**Projem** Visual Basic'te).  
@@ -63,12 +63,12 @@ Windows Forms proje şablonu, bir Windows Forms uygulaması oluşturur. Bu tür 
   
 3. Üzerinde **hata ayıklama** menüsünde tıklatın **Başlat**.  
   
-4. İçinde açıklanan teknikleri kullanarak hata ayıklama [hata ayıklayıcı temel bilgileri](../debugger/getting-started-with-the-debugger.md).  
+4. İçinde açıklanan teknikleri kullanarak hata ayıklama [hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)   
  [C#, F#ve Visual Basic proje türleri](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Nasıl yapılır: kümesi hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md)   
+ [Nasıl yapılır: Küme hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md)   
  [Hata ayıklama yapılandırması proje ayarları C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Hata ayıklama yapılandırması proje ayarları bir Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Çalıştırma işlemleri iliştirme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   

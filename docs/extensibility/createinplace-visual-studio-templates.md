@@ -1,10 +1,8 @@
 ---
-title: Createınplace (Visual Studio şablonları) | Microsoft Docs
-ms.custom: ''
+title: Createınplace öğesi (Visual Studio şablonları)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#CreateInPlace
 helpviewer_keywords:
@@ -16,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33d4a05f3c1f7a3aff83d05e1816308511414ad2
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 61fa7f61acbe59f61feb4472c55459e07e4980a6
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231405"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561820"
 ---
-# <a name="createinplace-visual-studio-templates"></a>Createınplace (Visual Studio şablonları)
+# <a name="createinplace-element-visual-studio-templates"></a>Createınplace öğesi (Visual Studio şablonları)
 Projeyi oluşturmak ve belirtilen konumda parametre değiştirme işlemini gerçekleştirmek veya parametre değiştirme geçici bir konumda gerçekleştirin ve sonra belirtilen konuma kaydedin belirtir.  
   
  \<VSTemplate >  

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1032e3db1513f628e540643acf7b1d98f89b5bff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de928086a2f8cb15d7d904359b573a1f9c4535b2
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865602"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562327"
 ---
 # <a name="debugger-security"></a>Hata Ayıklama Güvenliği
 Başka bir işlem hata ayıklama olanağı, aksi takdirde, özellikle de uzaktan hata ayıklama yapılırken erişemeyecek çok geniş powers sağlar. Kötü amaçlı bir hata ayıklayıcı hataları ayıklanmakta olan makinede yaygın zarar başını.  
@@ -39,7 +39,7 @@ Başka bir işlem hata ayıklama olanağı, aksi takdirde, özellikle de uzaktan
 ### <a name="managed-debugging-security"></a>Yönetilen hata ayıklama güvenlik  
  Aşağıda, tüm yönetilen hata ayıklama uygulanan genel bazı öneriler verilmiştir.  
   
-- Güvenilmeyen bir kullanıcının işlemine iliştirme oluştururken dikkatli olun: Bu işlemi gerçekleştirdiğinizde, güvenilir olduğunu varsayın. Güvenilmeyen bir kullanıcının işleme girişiminde bulunduğunuzda bir güvenlik uyarısı iletişim kutusu onayı işleme isteyip istemediğinizi soran görünür. "Kullanıcıların güvenilen", dahil, ve bir dizi standart kullanıcıların yaygın olarak .NET Framework gibi yüklü olan makineler üzerinde tanımlanan **aspnet**, **localsystem**, **networkservice**, ve **localservice**. Daha fazla bilgi için [güvenlik uyarısı: güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme tehlikeli olabilir. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
+- Güvenilmeyen bir kullanıcının işlemine iliştirme oluştururken dikkatli olun: Bu işlemi gerçekleştirdiğinizde, güvenilir olduğunu varsayın. Güvenilmeyen bir kullanıcının işleme girişiminde bulunduğunuzda bir güvenlik uyarısı iletişim kutusu onayı işleme isteyip istemediğinizi soran görünür. "Kullanıcıların güvenilen", dahil, ve bir dizi standart kullanıcıların yaygın olarak .NET Framework gibi yüklü olan makineler üzerinde tanımlanan **aspnet**, **localsystem**, **networkservice**, ve **localservice**. Daha fazla bilgi için [güvenlik uyarısı: Güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme tehlikeli olabilir. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
   
 - Internet ve içine yüklenirken kapalı bir proje indirme işlemi gerçekleştirirken dikkatli olun [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Bu hata ayıklama olmadan bile yapmak için çok risklidir. Bunu yaptığınızda, proje ve içerdiği kod güvenilir olduğunu varsayarak.  
   
@@ -73,7 +73,7 @@ Başka bir işlem hata ayıklama olanağı, aksi takdirde, özellikle de uzaktan
 ### <a name="symbols-and-source-code"></a>Simgeler ve kaynak kodu  
  İki [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] güvenlik göz önünde bulundurulması gereken araçlar şunlardır:  
   
-- Kaynak sunucu sürümleriyle kaynak koddan bir kaynak kodu deposu sağlar. Geçerli sürümü, bir programın kaynak koduna sahip durumlarda yararlı olur. [Güvenlik Uyarısı: Hata ayıklayıcı güvenilmeyen komut yürütmeli](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
+- Kaynak sunucu sürümleriyle kaynak koddan bir kaynak kodu deposu sağlar. Geçerli sürümü, bir programın kaynak koduna sahip durumlarda yararlı olur. [Güvenlik Uyarısı: Hata ayıklayıcı güvenilmeyen komut yürütme gerekir](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
   
 - Sembol sunucusu, bir sistem çağrısı sırasında bir kilitlenme hatalarını ayıklamak için gerekli sembolleri sağlamak için kullanılır.  
   
@@ -81,6 +81,5 @@ Başka bir işlem hata ayıklama olanağı, aksi takdirde, özellikle de uzaktan
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)   
- [Hata ayıklayıcı temel bilgileri](../debugger/getting-started-with-the-debugger.md)   
- [Güvenlik Uyarısı: Güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme tehlikeli olabilir. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)   
- [Güvenlik Uyarısı: Hata Ayıklayıcı Güvenilmeyen Komut Yürütmeli](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
+ [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md) [güvenlik uyarısı: Güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme tehlikeli olabilir. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)   
+ [Güvenlik Uyarısı: Hata ayıklayıcı güvenilmeyen komut yürütmeli](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

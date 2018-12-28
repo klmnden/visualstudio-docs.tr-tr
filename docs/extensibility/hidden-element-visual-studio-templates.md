@@ -2,9 +2,8 @@
 title: Gizli öğesi (Visual Studio şablonları) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Hidden
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18c5783eb6e9572e030e4ea764ad0393f61f6049
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 5eedcbca60ba0df886976a71780bb431a4fafbf9
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498268"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561622"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden öğesi (Visual Studio şablonları)
 Şablon ya da görüntülenip görüntülenmeyeceğini belirtir **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.  

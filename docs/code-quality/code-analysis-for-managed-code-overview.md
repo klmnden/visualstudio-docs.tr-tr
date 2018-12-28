@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 96f00e6080cb10778a92aaa860422da8366be54d
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: c76ee4a98694fee811b9edea4bcd8a095640cd25
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389318"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739688"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Visual Studio'da yönetilen kod için statik kod analizi genel bakış
 
@@ -30,13 +30,13 @@ Yönetilen kod için kod analizi, yönetilen derlemeleri çözümler ve derlemel
 Analiz aracı uyarı iletileri bir Çözümleme sırasında gerçekleştirdiği denetimleri temsil eder. Uyarı iletileri ilgili programlama ve tasarım sorunlarını belirleyin ve mümkünse sorunu gidermek nasıl bilgi olduğunda.
 
 > [!NOTE]
-> Statik kod analizi, Visual Studio'da .NET Core ve .NET Standard projeleri için desteklenmiyor. Kod Analizi bir .NET Core veya .NET Standard projesi msbuild bir parçası olarak çalıştırırsanız, benzer bir hata göreceğiniz **hata: CA0055: platform tanımlanamadı \<your.dll >**. .NET Core veya .NET Standard projelerine kodda çözümlemek için kullanın [Roslyn Çözümleyicileri](../code-quality/roslyn-analyzers-overview.md) yerine.
+> Statik kod analizi, Visual Studio'da .NET Core ve .NET Standard projeleri için desteklenmiyor. Kod Analizi bir .NET Core veya .NET Standard projesi msbuild bir parçası olarak çalıştırırsanız, benzer bir hata göreceğiniz **hata: CA0055: İçin Platform tanımlanamadı \<your.dll >**. .NET Core veya .NET Standard projelerine kodda çözümlemek için kullanın [Roslyn Çözümleyicileri](../code-quality/roslyn-analyzers-overview.md) yerine.
 
 ## <a name="ide-integrated-development-environment-integration"></a>IDE (tümleşik geliştirme ortamı) Tümleştirmesi
 
 El ile veya otomatik olarak projenizde kod analizi çalıştırabilirsiniz.
 
-Bir projeyi derleme yaptığınızda Kod Analizi çalıştırmak için seçin **derlemede kod analizini etkinleştir** projenin özellik sayfasında. Daha fazla bilgi için [nasıl yapılır: etkinleştirme ve devre dışı otomatik kod analizini](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+Bir projeyi derleme yaptığınızda Kod Analizi çalıştırmak için seçin **derlemede kod analizini etkinleştir** projenin özellik sayfasında. Daha fazla bilgi için [nasıl yapılır: Enable ve Disable otomatik kod çözümlemesini](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
 Kod Analizi proje üzerinde el ile çalıştırmak için menü çubuğundan seçin **Çözümle** > **kod çözümlemeyi Çalıştır** > **kod çözümlemeyi Çalıştır \<proje >**.
 
@@ -71,7 +71,7 @@ Bir kuruluş olarak tüm iade etmelerin bazı ilkeleri karşılamasını zorunlu
 
 - Kod Analizi en son derlemenin bir parçası çalıştırılır.
 
-Bu iade etme ilkeleri belirterek gerçekleştirebilirsiniz. Daha fazla bilgi için [projesi iade ilkeleriyle kod kalitesini geliştirme](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).
+Bu iade etme ilkeleri belirterek gerçekleştirebilirsiniz. Daha fazla bilgi için [projesi iade ilkeleriyle kod kalitesini geliştirme](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md).
 
 ## <a name="team-build-integration"></a>Ekip Oluşturma entegrasyonu
 
@@ -81,4 +81,4 @@ Analiz aracı yapı işleminin bir parçası olarak çalıştırmak için derlem
 
 - [Roslyn çözümleyicilerini genel bakış](../code-quality/roslyn-analyzers-overview.md)
 - [Kod Analizi Kurallarını Gruplandırmak için Kural Kümeleri Kullanma](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [Nasıl Yapılır: Otomatik Kod Çözümlemesini Etkinleştirme ve Devre Dışı Bırakma](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Nasıl yapılır: Etkinleştirme ve otomatik kod analizini devre dışı](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: belgeleri nesne verileriyle doldurma'
+title: 'Nasıl Yapılır: Belgeleri nesne verileriyle doldurma'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,47 +11,47 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], populating with data
 - data [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ef3d1441f9587bceeca0c4aacdc054a4769a2369
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 87e194aa29a44458c23e5057d7813e5e21ffbc42
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758118"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648387"
 ---
-# <a name="how-to-populate-documents-with-data-from-objects"></a>Nasıl yapılır: belgeleri nesne verileriyle doldurma
+# <a name="how-to-populate-documents-with-data-from-objects"></a>Nasıl Yapılır: Belgeleri nesne verileriyle doldurma
 
-Windows Forms projelerindeki gibi bir veri nesnesi belirtilmemelidir verileri Microsoft Office Word için belge düzeyi projelerine aynı şekilde çalışır. Verileri bir nesneden çözümünüze getirmek için aynı araçları ve kod kullanmak ve verileri görüntülemek için Windows Forms denetimleri kullanabilirsiniz. Ayrıca, ana bilgisayar denetimleri kullanarak verileri görüntüleyebilirsiniz. Konak denetimleri, olaylar ve veri bağlama özelliğiyle geliştirilmiş yerel Microsoft Office Word nesneleridir. Daha fazla bilgi için bkz: [konak öğelerini ve konak denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md).
+Windows Forms projelerinde olduğu gibi bir veri nesnesi içinde veri belirtilmemelidir Microsoft Office Word için belge düzeyi projelerine aynı şekilde çalışır. Verileri bir nesneden çözümünüze getirmek için aynı araçları ve kodu kullanın ve verileri görüntülemek için Windows Forms denetimleri kullanabilirsiniz. Ayrıca, konak denetimleri kullanarak verileri görüntüleyebilirsiniz. Konak denetimleri, olayları ve veri bağlama özelliğiyle ile zenginleştirilmiştir yerel Microsoft Office Word nesnelerdir. Daha fazla bilgi için [konak öğelerini ve denetimlerine genel bakış için ana bilgisayar](../vsto/host-items-and-host-controls-overview.md).
 
 [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
-Belgeyi bir nesneden verilerle doldurmak için üç temel adımları tamamlamanız gerekir:
+Belgenin bir nesneyi verilerle doldurmak için üç temel adımlarını tamamlamanız gerekir:
 
--   Veriye bağlayabilirsiniz belge için bir denetim ekleyin.
+-   Verilere bağlayabilirsiniz belge için bir denetim ekleyin.
 
 -   Bir veri nesnesi belgeye ekleyin.
 
--   Veri nesnesi BindingSource bağlayın.
+-   Veri nesnesi için BindingSource bağlanın.
 
 ## <a name="to-add-a-data-object"></a>Bir veri nesnesi eklemek için
 
-Bir veri nesnesi eklemek için **veri kaynakları** penceresi ve bir nesneden bir veri kaynağı oluşturun. Daha fazla bilgi için bkz: [yeni veri kaynakları ekleyin](../data-tools/add-new-data-sources.md).
+Bir veri nesnesi eklemek için açık **veri kaynakları** penceresi ve bir nesneden bir veri kaynağı oluşturun. Daha fazla bilgi için [yeni veri kaynağı ekleme](../data-tools/add-new-data-sources.md).
 
-## <a name="connect-the-data-object-to-the-bindingsource"></a>Veri nesnesi BindingSource Bağlan
+## <a name="connect-the-data-object-to-the-bindingsource"></a>Veri nesnesi için BindingSource bağlanma
 
-Belge düzeyi projelerine belgenize denetimleri ekleyebilir ve bunları tasarım zamanında verilere bağlayın.
+Belge düzeyi projelere belgeniz için denetimler ekleme ve bunları tasarım zamanında verilere bağlayın.
 
-VSTO eklentisi projelerine denetimleri oluşturmak ve çalışma zamanında bağlayın.
+VSTO eklentisi projeleri, denetimleri oluşturur ve bunları çalışma zamanında bağlayın.
 
-### <a name="document-level-projects"></a>Belge düzeyi projelerine
+### <a name="document-level-projects"></a>Belge düzeyi projeleri
 
-Veri nesnesi BindingSource bağlanmak için:
+Veri nesnesi için BindingSource bağlanmak için:
 
-1.  İstediğiniz verileri alan sürükleyin **veri kaynakları** belgenizi penceresine. Bu denetim otomatik olarak oluşturur.
+1.  İstediğiniz veri alanına sürükleyin **veri kaynakları** belgenize penceresi. Bu, bir denetimi otomatik olarak oluşturur.
 
 2.  Kodunuzda, veri kaynağı için seçtiğiniz nesnenin türü örneği oluşturun.
 
@@ -59,20 +59,20 @@ Veri nesnesi BindingSource bağlanmak için:
 
 ### <a name="application-level-projects"></a>Uygulama düzeyi projeleri
 
-Veri nesnesi BindingSource bağlanmak için:
+Veri nesnesi için BindingSource bağlanmak için:
 
-1.  Kodunuzda, veri kaynağıyla ilişkilendirilmiş nesne türünün bir örneği oluşturun.
+1.  Kodunuzda, veri kaynağıyla ilişkili olan nesnenin türü örneği oluşturun.
 
 2.  Bir örneğini oluşturmak bir <xref:System.Windows.Forms.BindingSource>.
 
 3.  Veri kaynağı örneği atayın <xref:System.Windows.Forms.BindingSource.DataSource%2A> özelliği <xref:System.Windows.Forms.BindingSource>.
 
-4.  Veri kaynağı denetimine veri bağlama olarak ekleyin.
+4.  Veri kaynağı bir veri bağlama denetimine ekleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Yeni veri kaynakları ekleyin](../data-tools/add-new-data-sources.md)
+- [Yeni veri kaynağı ekleme](../data-tools/add-new-data-sources.md)
 - [Visual Studio'da verilere Windows Forms denetimleri bağlama](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Nasıl yapılır: belgeleri veritabanı verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Nasıl yapılır: konak kontrolü verileriyle veri kaynağını güncelleme](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Nasıl yapılır: Belgeleri veritabanı verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Nasıl yapılır: Bir konak kontrolü verileriyle veri kaynağını güncelleme](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [BindingSource bileşenine genel bakış](/dotnet/framework/winforms/controls/bindingsource-component-overview)

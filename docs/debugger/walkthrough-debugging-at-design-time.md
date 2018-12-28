@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c4b0996faf26279ff8018e0e072fd25a33d783
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 86e6aa0da41a16445b3e3328a1ee0bc84063dd52
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063428"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561729"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio'da tasarım zamanında hata ayıklama (C#, C++, Visual Basic F#)
 
@@ -106,5 +106,4 @@ Bazı bildirim temelli veri bağlama senaryoları, XAML Tasarımcısı'nda arkas
    Sayfa yüklendiğinde, kesme noktasına ulaşılır.
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
- [Hata ayıklayıcısı temel bilgileri](../debugger/getting-started-with-the-debugger.md)
+ [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md) [hata ayıklayıcı, güvenlik](../debugger/debugger-security.md)   

@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 539ab866056b97f7054dda1843870dcfdd4379d9
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 358b61c5b09bfd9fb701bc44135101fe230dacce
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248144"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739273"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Bir menü komutuyla uzantı oluşturma
 Bu izlenecek yol, Not Defteri başlatan bir menü komutuyla uzantı oluşturma işlemini gösterir.  
@@ -126,4 +126,4 @@ Bu izlenecek yol, Not Defteri başlatan bir menü komutuyla uzantı oluşturma i
   
 5. Uzantınız için seçenekleri ve özellik sayfaları ve kullanıcı ayarlarını ekleyin: [Özellikler ve özellik penceresini genişletme](../extensibility/extending-properties-and-the-property-window.md) ve [kullanıcı ayarlarını ve Ooptions genişletme](../extensibility/extending-user-settings-and-options.md)  
   
-   Yeni türde bir proje oluşturma gibi daha fazla iş, diğer tür uzantıların gerektirir ([genişletme projeleri](../extensibility/extending-projects.md)), yeni türde bir düzenleyici oluşturma ([Creat özel düzenleyiciler ve tasarımcılar](../extensibility/creating-custom-editors-and-designers.md)), veya uygulama, bir yalıtılmış kabuk uzantısını: [Visual Studio yalıtılmış Kabuğu](../extensibility/visual-studio-isolated-shell.md)
+   Yeni türde bir proje oluşturma gibi daha fazla iş, diğer tür uzantıların gerektirir ([genişletme projeleri](../extensibility/extending-projects.md)), yeni türde bir düzenleyici oluşturma ([Creat özel düzenleyiciler ve tasarımcılar](../extensibility/creating-custom-editors-and-designers.md)), veya uygulama, bir yalıtılmış kabuk uzantısını: [Visual Studio yalıtılmış Kabuğu](/visualstudio/extensibility/shell/visual-studio-isolated-shell)

@@ -2,9 +2,8 @@
 title: ProjectCollection öğesi (Visual Studio şablonları) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectCollection
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c91c470a9478c7015972be66afe5f41174073047
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 9397fb9a6ab1cb4c117df111a10ab7613c500b84
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637006"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562093"
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a>ProjectCollection öğesi (Visual Studio şablonları)
 Birden fazla projeli şablonların içeriğini ve düzenini belirtir.  
@@ -59,7 +58,7 @@ Birden fazla projeli şablonların içeriğini ve düzenini belirtir.
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Gerekli öğe.<br /><br /> Şablonu içeriğini belirtir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Birden fazla projeli şablonlar, iki veya daha fazla proje için kapsayıcı olarak davranır. `ProjectCollection` Öğe, şablonu içeren projeleri belirtmek için kullanılır. Birden fazla projeli Şablonlar hakkında daha fazla bilgi için bkz. [nasıl yapılır: birden çok proje şablonu oluşturma](../ide/how-to-create-multi-project-templates.md).  
+ Birden fazla projeli şablonlar, iki veya daha fazla proje için kapsayıcı olarak davranır. `ProjectCollection` Öğe, şablonu içeren projeleri belirtmek için kullanılır. Birden fazla projeli Şablonlar hakkında daha fazla bilgi için bkz. [nasıl yapılır: Birden çok proje şablonu oluşturma](../ide/how-to-create-multi-project-templates.md).  
   
 ## <a name="example"></a>Örnek  
  Bu örnek, basit bir çoklu proje kök gösterir *.vstemplate* dosya. Bu örnekte, şablon iki proje içermektedir `My Windows Application` ve `My Class Library`. `ProjectName` Özniteliği `ProjectTemplateLink` öğesi adını ayarlar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bu projeye atanacak. Varsa `ProjectName` öznitelik yok, adını *.vstemplate* dosyası, proje adı olarak kullanılır.  
@@ -89,4 +88,4 @@ Birden fazla projeli şablonların içeriğini ve düzenini belirtir.
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)   
  [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)   
- [Nasıl yapılır: birden çok proje şablonu oluşturma](../ide/how-to-create-multi-project-templates.md)
+ [Nasıl yapılır: Birden çok proje şablonu oluşturma](../ide/how-to-create-multi-project-templates.md)

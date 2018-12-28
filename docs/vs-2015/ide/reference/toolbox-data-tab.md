@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4359cb1c4623442639552e71d1b1dc902e09963e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c5a75242a193345098ac33557a87e792f94f1ef4
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307657"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648567"
 ---
 # <a name="toolbox-data-tab"></a>Araç Kutusu, Veri Sekmesi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Veri nesneleri eklemek için bir form görüntüler ve bileşenleri. **Veri** se
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|<xref:System.Data.DataSet>|Form veya bileşen için yazılmış veya yazılmamış bir veri kümesi örneği ekler. Bu nesne bir tasarımcının üzerine sürüklediğinizde, var olan bir türü belirtilmiş veri kümesi sınıfını seçin veya yeni, boş, yazılmamış bir veri kümesi oluşturmak istediğinizi belirtmek izin veren bir iletişim kutusu görüntüler. **Not:** kullanmanızı <xref:System.Data.DataSet> nesnenin **araç kutusu** yeni türü belirtilmiş veri kümesi şema hem de sınıfı oluşturmak için. Daha fazla bilgi için [oluşturun ve veri kümeleri yapılandırma](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|  
+|<xref:System.Data.DataSet>|Form veya bileşen için yazılmış veya yazılmamış bir veri kümesi örneği ekler. Bu nesne bir tasarımcının üzerine sürüklediğinizde, var olan bir türü belirtilmiş veri kümesi sınıfını seçin veya yeni, boş, yazılmamış bir veri kümesi oluşturmak istediğinizi belirtmek izin veren bir iletişim kutusu görüntüler. **Not:**  Seçeneğini kullanmaz <xref:System.Data.DataSet> nesnenin **araç kutusu** yeni türü belirtilmiş veri kümesi şema hem de sınıfı oluşturmak için. Daha fazla bilgi için [oluşturun ve veri kümeleri yapılandırma](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|  
 |<xref:System.Windows.Forms.DataGridView>|Verileri tablo biçiminde görüntülemek için güçlü ve esnek bir yol sağlar.|  
 |<xref:System.Windows.Forms.BindingSource>|Denetimleri temel alınan veri kaynağına bağlama işlemini basitleştirir.|  
 |<xref:System.Windows.Forms.BindingNavigator>|Gezinti ve düzenleme için kullanıcı arabirimi (UI) bir form üzerinde verilere bağlı denetimler temsil eder.|  
@@ -47,14 +47,6 @@ Veri nesneleri eklemek için bir form görüntüler ve bileşenleri. **Veri** se
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Veri izlenecek yollar](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Visual Studio'da verilere Windows Forms denetimleri bağlama](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Veri uygulamaları Visual Studio'da genel bakış](../../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [Visual Studio'da verilere bağlanma](../../data-tools/connecting-to-data-in-visual-studio.md)   
  [Uygulamanızı veri almaya hazırlama](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
- [Uygulamanıza veri getirme](../../data-tools/fetching-data-into-your-application.md)   
  [Visual Studio'da verilere denetimler bağlama](../../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Uygulamanızdaki verileri düzenleme](../../data-tools/editing-data-in-your-application.md)   
  [Verileri doğrulama](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
- [Verileri Kaydetme](../../data-tools/saving-data.md)
-
-
-

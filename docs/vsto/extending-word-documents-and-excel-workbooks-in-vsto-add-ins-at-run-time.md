@@ -16,17 +16,17 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], extending Excel workbooks
 - controls [Office development in Visual Studio], adding at run time
 - HasVstoObject method
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 424b2cf8a6461ed0d60a1c16555c49c0ed8a0136
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb1197d85f52c314eb9ec0a01ccd5069f9c43f39
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895788"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647825"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında VSTO eklentilerinde genişletme
   Bir VSTO eklentisi Word belgelerini ve Excel çalışma kitapları aşağıdaki yollarla özelleştirmek için kullanabilirsiniz:  
@@ -39,7 +39,7 @@ ms.locfileid: "49895788"
   
   Bu işlevselliği kullanmak için belge veya çalışma kitabındaki genişleten çalışma zamanında bir nesne oluşturur.  
   
-  **İçin geçerlidir:** bu makaledeki bilgiler şu uygulamalar için VSTO eklentisi projeleri için geçerlidir: Excel ve Word. Daha fazla bilgi için [Office uygulaması ve proje türüne göre kullanılabilen özellikler](../vsto/features-available-by-office-application-and-project-type.md).  
+  **Uygulama hedefi:** Bu makaledeki bilgiler, şu uygulamalar için VSTO eklentisi projeleri için geçerlidir: Excel ve Word. Daha fazla bilgi için [Office uygulaması ve proje türüne göre kullanılabilen özellikler](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ## <a name="generate-extended-objects-in-vsto-add-ins"></a>VSTO eklentileri Genişletilmiş nesneler oluştur  
  *Genişletilmiş nesneleri* Word veya Excel nesne modellerinde yerel olarak mevcut nesneleri işlevselliği eklemek için Office çalışma zamanı için Visual Studio Araçları tarafından sağlanan türlerinin örnekleridir (adlı *yerel Office nesneleri*). Word veya Excel nesnesi için genişletilmiş bir nesne oluşturmak için `GetVstoObject` yöntemi. İlk kez çağırmanız `GetVstoObject` yöntemi belirtilen Word veya Excel nesne, belirtilen nesne genişleten yeni bir nesne döndürür. Her zaman yöntemini çağırın ve aynı Word veya Excel nesne aynı Genişletilmiş nesneyi döndürür.  

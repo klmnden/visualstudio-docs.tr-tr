@@ -1,6 +1,6 @@
 ---
 title: Azure Cloud Services ve sanal makineler için tanılama ayarlama ayarlama | Microsoft Docs
-description: Azure cloude Hizmetleri ve sanal makineleri (VM'ler), Visual Studio'da hata ayıklama tanılama ayarlama konusunda bilgi edinin.
+description: Azure bulut Hizmetleri ve sanal makineleri (VM'ler), Visual Studio'da hata ayıklama tanılama ayarlama konusunda bilgi edinin.
 author: ghogen
 manager: douge
 ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
@@ -10,12 +10,12 @@ ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev15
 ms.technology: vs-azure
-ms.openlocfilehash: 2553adf10e2617a43d4e78ded22314088927e348
-ms.sourcegitcommit: e03b7a4cab26fbc792f368e3c6b4ca4a03caa786
+ms.openlocfilehash: 478120bfbc099465316fff7e18c4cc793e0af0a3
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52459736"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804925"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Azure Cloud Services ve sanal makineler için tanılamayı ayarlama
 Bir Azure bulut hizmeti veya sanal makine sorunlarını gidermek, ihtiyacınız olduğunda, Visual Studio, daha kolay Azure Tanılama'yı ayarlamak için kullanabilirsiniz. Tanılama sistemi veri ve sanal makineler ve bulut hizmetinizi çalıştıran sanal makine örneği günlük verilerini yakalar. Tanılama verileri, seçtiğiniz bir depolama hesabına aktarılır. Azure'da günlüğe kaydetme Tanılama hakkında daha fazla bilgi için bkz [Azure App Service'te Web uygulamaları için tanılama günlüğünü etkinleştirme](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -82,7 +82,7 @@ Visual Studio öykünücüsü dağıtımdan önce hizmet çalıştırdığınız
    * Seçerseniz **Microsoft Azure depolama öykünücüsü**, bağlantı dizesini ayarlayalım `UseDevelopmentStorage=true`.
    * Seçerseniz **aboneliğinizi**, kullanmak istediğiniz Azure aboneliğini seçin ve bir hesap adı girin. Azure aboneliklerinizi yönetmek için seçin **hesaplarını yönetme**.
    * Seçerseniz **el ile kimlik bilgileri girilen**, kullanmak istediğiniz Azure hesap anahtarı ve adını girin.
-5. Görüntülenecek **tanılama Yapılandırması** iletişim kutusunda **yapılandırma**. Dışında **genel** ve **günlük dizinleri**, her sekme Toplayabileceğiniz bir tanılama veri kaynağını temsil eder. Varsayılan **genel** sekme aşağıdaki tanılama veri toplama seçeneklerini sunar: **yalnızca hataları**, **tüm bilgileri**, ve **özel planı**. Varsayılan **yalnızca hataları** seçenek, uyarı veya izleme iletileri aktarmaz çünkü depolama, en az miktarda kullanır. **Tüm bilgileri** seçeneği en bilgi aktarır, en fazla depolama kullanır ve bu nedenle, en pahalı bir seçenektir.
+5. Görüntülenecek **tanılama Yapılandırması** iletişim kutusunda **yapılandırma**. Dışında **genel** ve **günlük dizinleri**, her sekme Toplayabileceğiniz bir tanılama veri kaynağını temsil eder. Varsayılan **genel** sekme aşağıdaki tanılama veri toplama seçeneklerini sunar: **Yalnızca hataları**, **tüm bilgileri**, ve **özel planı**. Varsayılan **yalnızca hataları** seçenek, uyarı veya izleme iletileri aktarmaz çünkü depolama, en az miktarda kullanır. **Tüm bilgileri** seçeneği en bilgi aktarır, en fazla depolama kullanır ve bu nedenle, en pahalı bir seçenektir.
 
    > [!NOTE]
    > "MB, Disk kotası" için desteklenen minimum Boyut 4 GB'dir. Bellek dökümleri topluyorsanız, ancak bu daha yüksek bir değere gibi 10 GB artırın.
@@ -120,7 +120,7 @@ Visual Studio'da Azure sanal makineleri için Tanılama verileri toplayabilirsin
    
     ![Azure tanılama ve yapılandırmasını etkinleştir](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
    
-    Varsayılan sekmeyi **genel**, aşağıdaki tanılama veri toplama seçeneklerini sunar: **yalnızca hataları**, **tüm bilgileri**, ve **Özelplanı**. Varsayılan seçenek **yalnızca hataları**, uyarı veya izleme iletileri aktarmaz çünkü en az miktarda depolama alır. **Tüm bilgileri** seçenek en çok bilgi aktarır ve, bu nedenle, en pahalı depolama açısından bir seçenektir.
+    Varsayılan sekmeyi **genel**, aşağıdaki tanılama veri toplama seçeneklerini sunar: **Yalnızca hataları**, **tüm bilgileri**, ve **özel planı**. Varsayılan seçenek **yalnızca hataları**, uyarı veya izleme iletileri aktarmaz çünkü en az miktarda depolama alır. **Tüm bilgileri** seçenek en çok bilgi aktarır ve, bu nedenle, en pahalı depolama açısından bir seçenektir.
 7. Bu örnekte, seçin **özel planı** toplanan verileri özelleştirme olanağı seçeneği.
 8. **MB Disk kotası** ayırmak istediğiniz depolama hesabınız için Tanılama verileri ne kadar alan kutusunu belirtir. Varsayılan değer, isterseniz değiştirebilirsiniz.
 9. Her toplamak istediğiniz tanılama veri sekmesinde seçin, **etkinleştirme Aktarım, \<günlük türü\>**  onay kutusu.
@@ -150,7 +150,7 @@ Azure SDK 2.6 veya sonraki sürümleri kullanıyorsanız ve özel bir veri kayna
 
 Azure SDK 2.5 kullanıyorsanız ve özel bir veri kaynağı belirtmek istiyorsanız, bunu ekleyebilirsiniz `WindowsEventLog` diagnostics.wadcfgx bölümünü dosyası gibi aşağıdaki örnekte:
 
-```
+```xml
 <WindowsEventLog scheduledTransferPeriod="PT1M">
    <DataSource name="Application!*" />
    <DataSource name="CustomDataSource!*" />
@@ -195,7 +195,7 @@ Ne zaman bir rol örneği kilitleniyor hakkında bilgileri toplamak için seçin
 
 ![Kilitlenme bilgi dökümleri](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766026.png)
 
-Daha fazla bilgi için [Microsoft Azure'da günlüğe kaydetme ve izleme denetimini ele](https://msdn.microsoft.com/magazine/ff714589.aspx) ve [Microsoft Azure tanılama bölüm 4: özel günlük bileşenleri ve Azure tanılama 1.3 değişiklikleri](http://justazure.com/microsoft-azure-diagnostics-part-4-custom-logging-components-azure-diagnostics-1-3-changes/).
+Daha fazla bilgi için [Microsoft Azure'da günlüğe kaydetme ve izleme denetimini ele](https://msdn.microsoft.com/magazine/ff714589.aspx) ve [Microsoft Azure tanılama bölüm 4: Özel günlük bileşenleri ve Azure tanılama 1.3 değişiklikleri](http://justazure.com/microsoft-azure-diagnostics-part-4-custom-logging-components-azure-diagnostics-1-3-changes/).
 
 ## <a name="view-the-diagnostics-data"></a>Tanılama verileri görüntüleyin
 Bulut hizmeti veya sanal makine için Tanılama verileri derledik sonra görüntüleyebilirsiniz.
@@ -273,8 +273,8 @@ Aktarım süresi geçtiğinde verileri arasında yakalar zaman miktarıdır. Her
 Bulut hizmetinizi barındıran veri merkezinde yerel saat diliminizde zaman damgaları var. Günlük tablolarda aşağıdaki üç zaman damgası sütunu kullanılır:
 
 * **PreciseTimeStamp**: ETW olayın zaman damgası. Diğer bir deyişle, saat istemciden olay günlüğe kaydedilir.
-* **Zaman damgası**: değeri **PreciseTimeStamp** yuvarlatılmış karşıya yükleme frekansı sınır gösteriyor. Örneğin, karşıya yükleme frekansı saat 00:17:12 5 dakika ile olay ise, zaman damgası 00:15:00 ' dir.
-* **Zaman damgası**: hangi varlık Azure tablosunda oluşturulduğu zaman damgası.
+* **ZAMAN DAMGASI**: Değeri **PreciseTimeStamp** yuvarlatılmış karşıya yükleme frekansı sınır gösteriyor. Örneğin, karşıya yükleme frekansı saat 00:17:12 5 dakika ile olay ise, zaman damgası 00:15:00 ' dir.
+* **Zaman damgası**: Varlık Azure tablosunda oluşturulduğu zaman damgası.
 
 **Maliyetleri nasıl tanılama bilgileri toplanırken yönetebilirsiniz?**
 
@@ -288,7 +288,7 @@ Varsayılan olarak, IIS başarısız istek günlükleri toplamaz. IIS web rolün
 
 Yöntemlerinin **RoleEntryPoint** IIS içinde değil, WAIISHost.exe bağlamında olarak adlandırılır. Yapılandırma bilgilerini Web.Config'de normalde izleme etkinleştirir geçerli değildir. Bu sorunu çözmek için web rolü projeniz .config dosyasına ekleyin ve içeren çıktı derlemesine eşleştirilecek dosya adı **RoleEntryPoint** kod. Varsayılan web rolü projesinde WAIISHost.exe.config .config dosyası adı olmalıdır. Bu dosyaya aşağıdaki satırları ekleyin:
 
-```
+```xml
 <system.diagnostics>
   <trace>
       <listeners>

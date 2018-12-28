@@ -1,5 +1,5 @@
 ---
-title: Anonim Metotlar ve Kod Çözümleme
+title: Anonim yöntem kod çözümleme uyarıları
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -9,44 +9,48 @@ helpviewer_keywords:
 - code analysis, anonymous methods
 - anonymous methods, code analysis
 ms.assetid: bf0a1a9b-b954-4d46-9c0b-cee65330ad00
+dev_langs:
+- CSharp
+- VB
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e069976badeffbce04b2f245277426441d3df2f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5f8bfbf6100eed54589e4ea17a88807f9dd3cca2
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31892709"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739406"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Anonim Metotlar ve Kod Çözümleme
-Bir *anonim yöntemi* bir ada sahip bir yöntemdir. Anonim yöntemler, en sık kod bloğu temsilci parametre olarak geçirmek için kullanılır.
 
- Bu konu, Kod Analizi uyarıları ve anonim yöntemler ile ilişkili olan ölçümleri nasıl işlediğini açıklar.
+Bir *anonim yöntem* ada sahip bir yöntemdir. Anonim yöntemler, en sık temsilcinin parametre olarak bir kod bloğu geçirmek için kullanılır. Bu makalede, Kod Analizi uyarıları ve anonim yöntemler için ölçümleri nasıl işlediğini açıklar.
 
-## <a name="anonymous-methods-declared-in-a-member"></a>Bir üyeyi bildirilen anonim yöntemler
- Uyarılar ve ölçümleri yöntemi veya erişimci gibi bir üye olarak bildirilen bir anonim yöntemi için yöntem bildirir üye ile ilişkili. Bunlar yöntemini çağırır üye ile ilişkili değildir.
+## <a name="anonymous-methods-declared-in-a-member"></a>Bir üye olarak bildirilen anonim yöntemler
 
- Örneğin, sınıfta aşağıdaki bildirimi içinde bulunan tüm uyarılar **anonymousMethod** karşı oluşmalıdır **Method1** ve **Method2**.
+Uyarılar ve ölçümler bir yöntem veya erişimci gibi bir üye olarak bildirilen anonim yöntemi için yöntem bildiren bir üye ile ilişkili. Bunlar, bu yöntemi çağıran bir üye ile ilişkili değildir.
+
+Örneğin, sınıfta aşağıdaki bildiriminde bulunan tüm uyarılar **anonymousMethod** karşı harekete Geçirilmemesi gereken **Method1** değil **Method2**.
 
 ```vb
+Delegate Function ADelegate(ByVal value As Integer) As Boolean
 
-      Delegate Function ADelegate(ByVal value As Integer) As Boolean
 Class AClass
-
     Sub Method1()
         Dim anonymousMethod As ADelegate = Function(ByVal value As Integer) value > 5
         Method2(anonymousMethod)
-    End SubSub Method2(ByVal anonymousMethod As ADelegate)
+    End Sub
+    Sub Method2(ByVal anonymousMethod As ADelegate)
         anonymousMethod(10)
-    End SubEnd Class
+    End Sub
+End Class
 ```
 
 ```csharp
+delegate void Delegate();
 
-      delegate void Delegate();
 class Class
 {
     void Method1()
@@ -66,25 +70,27 @@ class Class
 ```
 
 ## <a name="inline-anonymous-methods"></a>Satır içi anonim yöntemler
- Uyarılar ve satır içi atamaya bir alan olarak bildirilen bir anonim yöntemi için ölçümleri Oluşturucusu ile ilişkilidir. Alan olarak bildirilirse `static` (`Shared` içinde [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), uyarılar ve ölçümleri sınıfı oluşturucusu ile ilişkili; Aksi takdirde, örnek oluşturucu ile ilişkilendirilmiş.
 
- Örneğin, sınıfta aşağıdaki bildirimi içinde bulunan tüm uyarılar **anonymousMethod1** karşı örtük olarak oluşturulmuş varsayılan oluşturucusunun gerçekleştirilecektir **sınıfı**. Bu bulundu ancak **anonymousMethod2** örtük olarak oluşturulmuş sınıf oluşturucu karşı uygulanır.
+Uyarılar ve ölçümler için bir satır içi ataması için bir alan olarak bildirilen anonim yöntemi Oluşturucusu ile ilişkilidir. Alan olarak bildirilirse `static` (`Shared` Visual Basic'te), ölçümleri ve Uyarıları sınıf oluşturucusu ile ilişkilidir. Aksi takdirde, bunlar örnek oluşturucusu ile ilişkili.
+
+Örneğin, sınıfta aşağıdaki bildiriminde bulunan tüm uyarılar **anonymousMethod1** karşı örtük olarak oluşturulan varsayılan oluşturucusu gerçekleştirilecektir **sınıfı**. Bulunan uyarıları **anonymousMethod2** örtük olarak oluşturulan sınıfın Oluşturucusu karşı uygulanır.
 
 ```vb
+Delegate Function ADelegate(ByVal value As Integer) As Boolean
+Class AClass
+    Dim anonymousMethod1 As ADelegate = Function(ByVal value As Integer) value > 5
+    Shared anonymousMethod2 As ADelegate = Function(ByVal value As Integer) value > 5
 
-  Delegate Function ADelegate(ByVal value As Integer) As BooleanClass AClass
-Dim anonymousMethod1 As ADelegate = Function(ByVal value As    Integer) value > 5
-Shared anonymousMethod2 As ADelegate = Function(ByVal value As     Integer) value > 5
-
-Sub Method1()
-    anonymousMethod1(10)
-    anonymousMethod2(10)
-End SubEnd Class
+    Sub Method1()
+        anonymousMethod1(10)
+        anonymousMethod2(10)
+    End Sub
+End Class
 ```
 
 ```csharp
+delegate void Delegate();
 
-      delegate void Delegate();
 class Class
 {
     Delegate anonymousMethod1 = delegate()
@@ -105,27 +111,32 @@ class Class
 }
 ```
 
- Bir sınıfın birden çok oluşturucular sahip bir alan için değer atayan bir satır içi anonim yöntemi içerebilir. Bu oluşturucu aynı sınıfın başka bir oluşturucuda bağlı sürece bu durumda, uyarılar ve ölçümler ile tüm oluşturucular ilişkilendirilir.
+Bir sınıf birden çok Oluşturucu sahip bir alan için değer atayan bir satır içi anonim yöntem içerebilir. Bu oluşturucu aynı sınıf içinde başka bir oluşturucu zincirine bağlı sürece bu durumda, uyarılar ve ölçümler ile tüm oluşturucular ilişkilendirilir.
 
- Örneğin, sınıfta aşağıdaki bildirimi içinde bulunan tüm uyarılar **anonymousMethod** karşı oluşmalıdır **Class(int)** ve **Class(string)** ancak değil karşı **Class()**.
+Örneğin, sınıfta aşağıdaki bildiriminde bulunan tüm uyarılar **anonymousMethod** karşı harekete Geçirilmemesi gereken **Class(int)** ve **Class(string)**, ancak çalıştırılmaz **Class()**.
 
 ```vb
+Delegate Function ADelegate(ByVal value As Integer) As Boolean
 
-  Delegate Function ADelegate(ByVal value As Integer) As BooleanClass AClass
+Class AClass
 
-Dim anonymousMethod As ADelegate = Function(ByVal value As Integer)
-value > 5
+    Dim anonymousMethod As ADelegate = Function(ByVal value As Integer) value > 5
 
-SubNew()
-    New(CStr(Nothing))
-End SubSub New(ByVal a As Integer)
-End SubSub New(ByVal a As String)
-End SubEnd Class
+    SubNew()
+        New(CStr(Nothing))
+    End Sub
+
+    Sub New(ByVal a As Integer)
+    End Sub
+
+    Sub New(ByVal a As String)
+    End Sub
+End Class
 ```
 
 ```csharp
+delegate void Delegate();
 
-      delegate void Delegate();
 class Class
 {
     Delegate anonymousMethod = delegate()
@@ -147,9 +158,13 @@ class Class
 }
 ```
 
- Bu beklenmeyen görünse de, bu başka bir oluşturucuya zincir bağlanmayan her oluşturucusu için benzersiz bir yöntem derleyici çıkarır nedeniyle oluşur. Bu davranış nedeniyle, herhangi bir ihlali, oluşuyor **anonymousMethod** ayrı olarak atlanması gerekir. Yeni bir oluşturucu ise, bu da anlamına sunulan, daha önce karşı gösterilmedi uyarıları **Class(int)** ve **Class(string)** karşı new Oluşturucusu ayrıca atlanması gerekir.
+Derleyici için başka bir oluşturucu zincirleme değil her oluşturucusu için benzersiz bir yöntem çıkardığından karşı oluşturucular uyarılar oluşturulur. Bu davranış nedeniyle, herhangi bir ihlali, oluşuyor **anonymousMethod** ayrı olarak atlanması gerekir. Yeni bir oluşturucusu varsa bu da anlamına gelen, daha önce karşı gizlenmiş uyarılar **Class(int)** ve **Class(string)** karşı yeni Oluşturucu ayrıca atlanması.
 
- İki yöntemden biri bu soruna geçici bir çözüm çalışabilir. Bildirebilirsiniz **anonymousMethod** ortak oluşturucusunda, tüm oluşturucular zinciri. Veya, tüm oluşturucular tarafından çağrılan başlatma yöntemini de bildirebilirsiniz.
+Bu sorunu iki yoldan biriyle çalışabilirsiniz:
 
-## <a name="see-also"></a>Ayrıca Bkz.
- [Yönetilen kod kalitesini analiz etme](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
+- Bildirme **anonymousMethod** ortak bir oluşturucuda, tüm oluşturucular zinciri.
+- Bildirme **anonymousMethod** tüm oluşturucular tarafından çağrılan bir başlatma yöntemi içinde.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Yönetilen Kod Kalitesini Analiz Etme](../code-quality/code-analysis-for-managed-code-overview.md)

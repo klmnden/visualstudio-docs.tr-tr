@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: program aracılığıyla ekleyin ve çalışma yorumları Sil'
+title: 'Nasıl Yapılır: Programlı olarak ekleyin ve çalışma yorumları Sil'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - ranges, comments
 - worksheets, comments
 - comments, worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe41fe7f6370697335fa76b468e79e61d6e1269a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 06097d72693e0b7a00c7af48609523d5e7dfc5a0
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676670"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804201"
 ---
-# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Nasıl yapılır: program aracılığıyla ekleyin ve çalışma yorumları Sil
+# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Nasıl Yapılır: Programlı olarak ekleyin ve çalışma yorumları Sil
   Programlı olarak ekleyebilir ve Microsoft Office Excel çalışma sayfalarında yorumları Sil. Açıklamalar, birden çok hücre aralıklarının için tek hücrelere yalnızca eklenebilir.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -65,7 +65,7 @@ ms.locfileid: "35676670"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Çalışma sayfaları ile çalışma](../vsto/working-with-worksheets.md)   
- [Nasıl yapılır: program aracılığıyla çalışma sayfası açıklamalarını görüntüleme](../vsto/how-to-programmatically-display-worksheet-comments.md)   
+ [Nasıl yapılır: Program aracılığıyla çalışma sayfası açıklamalarını görüntüleme](../vsto/how-to-programmatically-display-worksheet-comments.md)   
  [NamedRange denetimi](../vsto/namedrange-control.md)  
   
   

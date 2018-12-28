@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c00740b31e5b9d7cc5678bfc248e673a57e59ccf
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: f35a04620da94efca70fb33933f3940005996e29
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305318"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561700"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio DLL'lerde hata ayıklama (C#, C++, Visual Basic F#)
 
@@ -52,7 +52,7 @@ Bir uygulama oluşturmak için Visual Studio Proje şablonu kullandığınızda 
 - [C++ hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Proje ayarlarını C# hata ayıklama yapılandırmaları](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Visual Basic hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Nasıl yapılır: kümesi hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md)  
+- [Nasıl yapılır: Küme hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md)  
   
 ### <a name="set-c-debuggableattribute"></a>C++ DebuggableAttribute ayarlayın
 
@@ -84,7 +84,7 @@ C/C++ projeleri için çıktı klasörüne kopyalamak yerine projenin özellik s
    
 1. Altında **bağlayıcı** > **giriş** > **ek bağımlılıklar**, LIB dosyalar için dosya adı ve tam yolunu belirtin.
 
-1. Seçin **Tamam**.
+1. **Tamam**’ı seçin.
 
 C++ proje ayarları hakkında daha fazla bilgi için bkz. [özellik sayfaları (Visual C++)](/cpp/ide/property-pages-visual-cpp).
   
@@ -102,7 +102,7 @@ Bir DLL'yi doğrudan çalıştıramazsınız. Bu genellikle bir uygulama tarafı
 
 Bir DLL'de hata ayıklamak için [çağıran uygulamadan hata ayıklamayı Başlat](#vxtskdebuggingdllprojectsthecallingapplication), veya [DLL projesinde hata ayıklama](how-to-debug-from-a-dll-project.md) , çağıran uygulama belirterek. Hata ayıklayıcı ayrıca kullanabileceğiniz [komut penceresi](#vxtskdebuggingdllprojectstheimmediatewindow) DLL işlevleri veya yöntemleri çağıran bir uygulama kullanmadan tasarım zamanında değerlendirilemiyor.
 
-Daha fazla bilgi için [hata ayıklayıcısını kullanmaya başlama](getting-started-with-the-debugger.md).
+Daha fazla bilgi için [hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md).
 
 ### <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Çağıran uygulamadan gelen hata ayıklamayı Başlat
 
@@ -119,11 +119,11 @@ Bir DLL çağıran uygulama aşağıdakilerden biri olabilir:
 
   veya  
 
-- Dağıtılan ve çalışan bir test veya üretim bilgisayarda zaten olan bir uygulama ekleyin. Bu yöntem, Web sitelerinde veya web apps'te DLL'leri için kullanın. Daha fazla bilgi için [nasıl yapılır: çalışan bir işleme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+- Dağıtılan ve çalışan bir test veya üretim bilgisayarda zaten olan bir uygulama ekleyin. Bu yöntem, Web sitelerinde veya web apps'te DLL'leri için kullanın. Daha fazla bilgi için [nasıl yapılır: Çalışan bir işleme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
 Çağıran uygulamada hata ayıklamaya başlamadan önce DLL'de bir kesme noktası ayarlayın. Bkz: [kesme noktalarını kullanma](../debugger/using-breakpoints.md). DLL kesme noktası isabet edildiğinde, her bir satırdaki eylemi gözleme kodda adım adım. Daha fazla bilgi için [hata ayıklayıcısı koda gitmek](../debugger/navigating-through-code-with-the-debugger.md).
   
-Hata ayıklama sırasında kullanabilirsiniz **modülleri** DLL'leri doğrulamak için penceresi ve *.exe* uygulama yükleri dosyaları. Açmak için **modülleri** hata ayıklarken, penceresinde **hata ayıklama** > **Windows** > **modülleri**. Daha fazla bilgi için [nasıl yapılır: modüller penceresini kullanma](../debugger/how-to-use-the-modules-window.md). 
+Hata ayıklama sırasında kullanabilirsiniz **modülleri** DLL'leri doğrulamak için penceresi ve *.exe* uygulama yükleri dosyaları. Açmak için **modülleri** hata ayıklarken, penceresinde **hata ayıklama** > **Windows** > **modülleri**. Daha fazla bilgi için [nasıl yapılır: Modüller penceresini kullanma](../debugger/how-to-use-the-modules-window.md). 
 
 ###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Komut penceresi kullanın  
 
@@ -142,7 +142,7 @@ Kullanabileceğiniz **hemen** penceresi DLL işlevleri veya yöntemleri, tasarı
    Class1 obj = new Class1();  
    ```  
   
-   İçinde C#, tüm adlar tam olarak nitelenmiş olmalıdır. İfadeyi değerlendirmek dil hizmeti çalıştığında, yöntemlerin veya değişkenlerin geçerli kapsamda ve bağlam içinde olmalıdır.  
+   C# seçeneğinde tüm adlar tam olarak nitelenmiş olmalıdır. İfadeyi değerlendirmek dil hizmeti çalıştığında, yöntemlerin veya değişkenlerin geçerli kapsamda ve bağlam içinde olmalıdır.  
    
 1. Varsayarak `Test` alır `int` parametresi değerlendirmek `Test` kullanarak **hemen** penceresi:  
    
@@ -158,7 +158,7 @@ Kullanabileceğiniz **hemen** penceresi DLL işlevleri veya yöntemleri, tasarı
 
 ##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Karışık mod hata ayıklama  
 
-Yönetilen veya yerel kodda bir DLL için çağıran bir uygulama yazabilirsiniz. Yönetilen bir DLL'yi yerel uygulamanızı çağırır ve her ikisi de hata ayıklamak istediğiniz, hem yönetilen hem de yerel hata ayıklayıcıları Proje Özellikleri'nde etkinleştirebilirsiniz. Tam geçiş işlemi, DLL projesi veya arama uygulama projesinde hata ayıklamayı başlatmak istediğinize bağlıdır. Daha fazla bilgi için [nasıl yapılır: karışık modda hata ayıklama](../debugger/how-to-debug-in-mixed-mode.md). 
+Yönetilen veya yerel kodda bir DLL için çağıran bir uygulama yazabilirsiniz. Yönetilen bir DLL'yi yerel uygulamanızı çağırır ve her ikisi de hata ayıklamak istediğiniz, hem yönetilen hem de yerel hata ayıklayıcıları Proje Özellikleri'nde etkinleştirebilirsiniz. Tam geçiş işlemi, DLL projesi veya arama uygulama projesinde hata ayıklamayı başlatmak istediğinize bağlıdır. Daha fazla bilgi için [nasıl yapılır: Karışık modda hata ayıklama](../debugger/how-to-debug-in-mixed-mode.md). 
 
 Ayrıca yerel bir DLL yönetilen arama projesinden ayıklayabilirsiniz. Daha fazla bilgi için [yönetilen ve yerel kodda hata ayıklamak nasıl](how-to-debug-managed-and-native-code.md). 
 

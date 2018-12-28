@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92485f93bb4c2d1782f907acdb1e5252f611cdbe
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 92d8da8c03cb2b76e0b47043085af66731958b4b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "39179485"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561898"
 ---
 # <a name="debugging-managed-code"></a>Yönetilen Kodda Hata Ayıklama
 
-Bu bölüm yaygın hata ayıklama sorunları ve yönetilen uygulamalar için teknikleri kapsar veya uygulamalarda yazıldığına dillerde hedefleyen Visual Basic, C# ve C++ gibi ortak dil çalışma zamanı. Burada açıklanan teknikleri, üst düzey tekniklerle aynıdır. Daha fazla bilgi için [hata ayıklayıcıyı kullanma](../debugger/getting-started-with-the-debugger.md).
+Bu bölüm yaygın hata ayıklama sorunları ve yönetilen uygulamalar için teknikleri kapsar veya uygulamalarda yazıldığına dillerde hedefleyen Visual Basic, C# ve C++ gibi ortak dil çalışma zamanı. Burada açıklanan teknikleri, üst düzey tekniklerle aynıdır. [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md).
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
@@ -40,7 +40,7 @@ Bağımsız değişken olarak belirttiğiniz koşullara test yönetilen koddaki 
 [Visual Basic'de Durdur Deyimleri](../debugger/stop-statements-in-visual-basic.md)  
 Açıklar `Stop` bir kesme noktası ayarlamak için bir alternatif sağlayan bir ifade. Örnek kod ayrıca sağlanan, arasında karşılaştırma birlikte `Stop` deyimi ve `End` arasında iyi gibi olarak bir deyim `Stop` ve `Assert` deyimi.
 
-[İzlenecek yol: Windows Formunda hata ayıklama](../debugger/walkthrough-debugging-a-windows-form.md)  
+[İzlenecek yol: Bir Windows formunda hata ayıklama](../debugger/walkthrough-debugging-a-windows-form.md)  
 Bir Windows formu oluşturma ve bu formunda hata ayıklama için adım adım yönergeler sağlar. Windows Form, yönetilen bir Windows uygulamasının standart bir bileşen en yaygın yönetilen uygulamalardan biridir. Bu izlenecek yol, Visual C# ve Visual Basic kullanan, ancak C++ ile bir Windows formu oluşturma tekniklerini genellikle benzerdir.
 
 [OnStart metodunda hata ayıklama](../debugger/how-to-debug-the-onstart-method.md)  
@@ -49,7 +49,7 @@ Hata ayıklama için izin vermek için kod örnekleri sağlar `OnStart` yöntemi
 [Karışık mod hata ayıklama](../debugger/debugging-mixed-mode-applications.md)  
 Karışık mod uygulamalarında hata ayıklama açıklanır. Bu, yerel kod yönetilen kodu ile bir araya getiren herhangi bir uygulama anlamına gelir.
 
-[Hata: Sistemde çekirdek hata ayıklayıcı etkinleştirildiğinden hata ayıklama mümkün değil](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+[Hata: Sistemde bir çekirdek hata ayıklayıcı etkinleştirildiğinden hata ayıklama mümkün değil](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
 Yönetilen kodda hata ayıklama çalışırsanız oluşan bir hata iletisi açıklayan bir [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)], veya hata ayıklama modunda başlatıldı Windows NT sistem.
 
 [JIT İyileştirmesi ve Hata Ayıklaması](../debugger/jit-optimization-and-debugging.md)  
@@ -58,7 +58,7 @@ Hata ayıklamayı JIT iyileştirmesini etkilerini açıklar.
 [LINQ ve DLINQ hata ayıklama](../debugger/debugging-linq.md)  
 LINQ sorguları hata ayıklama teknikleri açıklar.
 
-[İzlenecek Yol: Paralel Uygulamada Hata Ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)  
+[İzlenecek yol: Paralel uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)  
 Nasıl kullanılacağını açıklar **Paralel Görevler** ve **Paralel Yığınlar** paralel uygulamada hata ayıklamak için windows aracı.
 
 ## <a name="related-sections"></a>İlgili Bölümler
@@ -88,7 +88,7 @@ Hata ayıklama belgesinin en geniş bölümlerine bağlantılar sağlar. Bilgile
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İzlenecek yol: Özel Windows hata ayıklama denetimleri tasarım zamanında Forms](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+[İzlenecek yol: Tasarım zamanında Forms denetimleri özel Windows hata ayıklama](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 [hata ayıklayıcı, güvenlik](../debugger/debugger-security.md)
 [Visual Studio'da hata ayıklama](../debugger/index.md) 
  [ Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)

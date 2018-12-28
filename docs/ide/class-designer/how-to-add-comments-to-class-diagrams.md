@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Sınıf Diyagramlarına Açıklamalar Ekleme (Sınıf Tasarımcısı)'
+title: 'Nasıl Yapılır: (Sınıf Tasarımcısı) sınıf diyagramlarına açıklamalar ekleme'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,28 +16,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3b850741793f1b0f1d358aca9ea3161e12a46b9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: afa0bc954e2812cb4c0149bfeef623195540e2a3
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957112"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684580"
 ---
-# <a name="how-to-add-comments-to-class-diagrams"></a>Nasıl yapılır: sınıf diyagramlarına açıklamalar ekleme
+# <a name="how-to-add-comments-to-class-diagrams"></a>Nasıl Yapılır: Sınıf diyagramlarına açıklama ekleme
 
-Açıklama şekilleri sınıf diyagramlarına açıklamalar ekleme için kullanabilirsiniz. Bir özellik, bir açıklama şekli içeren **metin**, içine yazabilirsiniz metin. Açıklama şekilleri diyagram yüzeyinde yalnızca alan ve kod bulunur.
+Açıklama şekilleri sınıf diyagramlarına açıklamalar ekleme için kullanabilirsiniz. Açıklama Şekli bir özelliği olan **metin**, metin içine yazabileceğiniz. Açıklama şekilleri diyagram yüzeyinde yalnızca alan ve kod mevcut.
 
-Sınıf diyagram Görünümü'nde bir yorum bulunduğu **Sınıf Tasarımcısı**. İkinci sınıf diyagramı aynı proje oturum açarsanız, ilk görünümünde oluşturulan yorumlar görünür değildir. Bir diyagram silerseniz, içerdiği tüm açıklamaları da silinir.
+Bir yorum sınıfı diyagram Görünümü'nde bulunan **Sınıf Tasarımcısı**. İkinci sınıf diyagram üzerine aynı projeyi açarsanız, oluşturduğunuz ilk görünümünde açıklamalar görünür değildir. Bir diyagram silerseniz, içerdiği tüm açıklamaları da silinir.
 
-Bir yorum şekli yeniden boyutlandırabilirsiniz ancak arka plan rengi, yazı tipi veya yazı tipi boyutuna gibi görünümünü diğer yönlerini değiştiremezsiniz.
+Açıklama Şekli yeniden boyutlandırmak, ancak diğer yönleri gibi arka plan rengi, yazı tipi veya yazı tipi boyutunu görünümünü değiştiremezsiniz.
 
 ## <a name="to-add-a-comment"></a>Açıklama eklemek için
 
-1.  Bir açıklama da sürükleyin **Sınıf Tasarımcısı araç** sınıf diyagramı üzerine.
+1.  Bir açıklama da sürükleyin **Sınıf Tasarımcısı araç kutusu** sınıf diyagramına sürükleyebilirsiniz.
 
-2.  Diyagramda yeni yorum şeklinde tıklatın ve istediğiniz metni yazın.
+2.  Yeni Yorum şekli diyagram üzerinde tıklayın ve istediğiniz metni yazın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Sınıf diyagramları ile çalışma](working-with-class-diagrams.md)
-- [Nasıl yapılır: sınıf diyagramlarını özelleştirme](how-to-customize-class-diagrams.md)
+- [Sınıf diyagramları ile çalışma](designing-and-viewing-classes-and-types.md)
+- [Nasıl yapılır: Sınıf diyagramlarını özelleştirme](how-to-customize-class-diagrams.md)

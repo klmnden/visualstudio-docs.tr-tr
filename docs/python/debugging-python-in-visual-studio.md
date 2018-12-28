@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0e4cc2ff43b59fff0aac70d9cc13a0a00662e209
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 64eafbffcf453832dd2ba764ef3396cb7129be89
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068441"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561755"
 ---
 # <a name="debug-your-python-code"></a>Python kodunuzun hatalarını ayıklama
 
@@ -84,7 +84,7 @@ Bir kesme noktasında durduruldu sonra kodunuz içinde adım adım veya yeniden 
 
 ### <a name="inspect-and-modify-values"></a>Denetleme ve değerleri değiştirme
 
-Hata ayıklayıcıda durdurulduklarında inceleyin ve değişkenlerin değerlerini değiştirin. Ayrıca **Watch** bağımsız değişkenleri yanı sıra özel ifadeleri İzleme penceresinde. (Bkz [değişkenleri denetleyin](../debugger/getting-started-with-the-debugger.md#inspect-variables-with-the-autos-and-locals-windows) genel ayrıntılar için.)
+Hata ayıklayıcıda durdurulduklarında inceleyin ve değişkenlerin değerlerini değiştirin. Ayrıca **Watch** bağımsız değişkenleri yanı sıra özel ifadeleri İzleme penceresinde. (Bkz [değişkenleri denetleyin](../debugger/debugger-feature-tour.md#inspect-variables-with-the-autos-and-locals-windows) genel ayrıntılar için.)
 
 Kullanarak bir değeri görüntülemek için **DataTips**, fare düzenleyicisinde herhangi bir değişken yalnızca üzerine gelin. Değeri değiştirmek için tıklayabilirsiniz:
 

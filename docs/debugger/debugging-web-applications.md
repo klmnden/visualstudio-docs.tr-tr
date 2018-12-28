@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e649e5d795df537e48afe3dad738c73ee5b7b51
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: faafe243d5bf60e83d060334d8591bdb4cd9bbb3
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178923"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561635"
 ---
 # <a name="debugging-web-applications"></a>Web Uygulamalarında Hata Ayıklama
 Bu bölümde, birden fazla Web uygulamalarında hata ayıklamak açıklanmaktadır.  
   
 ## <a name="in-this-section"></a>Bu Bölümde   
- [İstemci tarafı betikte hata ayıklama](../debugger/client-side-script-debugging.md)  
+ [İstemci Tarafı Betikte Hata Ayıklama](../debugger/client-side-script-debugging.md)  
  Test betikleri ve istemci tarafı betiklerde anlatılmaktadır [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sayfaları.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
@@ -41,6 +41,5 @@ Bu bölümde, birden fazla Web uygulamalarında hata ayıklamak açıklanmaktad�
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Web uygulamalarında ve betikte hata ayıklama](../debugger/debugging-web-applications-and-script.md)   
  [Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)   
- [Hata ayıklayıcı temel bilgileri](../debugger/getting-started-with-the-debugger.md)   
- [Visual Studio’da hata ayıklama](../debugger/index.md)  
+ [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md) [Visual Studio'da hata ayıklama](../debugger/index.md)  
  [Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)

@@ -32,12 +32,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b32f5585c71f5767a907d9f3eb9c2dc8329ab97
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 0e9dd37f3db5bc231a831879d2620ad55a50c3b7
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348885"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740451"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Mimarinizi çözümleme ve mimarinizin modelini oluşturma
 
@@ -49,13 +49,13 @@ Uygulamanızı kullanarak Visual Studio mimari ve Modelleme Araçları tasarlay�
 
 * Farklı geliştirme sürecinizin bir parçası olarak uygulama yaşam döngüsü boyunca ayrıntı düzeylerinde modeller oluşturun.
 
-Bkz: [senaryo: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme](../modeling/scenario-change-your-design-using-visualization-and-modeling.md).
+Bkz: [senaryosu: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme](../modeling/scenario-change-your-design-using-visualization-and-modeling.md).
 
 ## <a name="to"></a>Bitiş
 
 |||
 |-|-|
-|**Kodu görselleştirme**:<br /><br /> -Kod haritaları oluşturarak kodun organizasyon ve ilişkileri bakın. Derlemeler, ad alanları, sınıflar, yöntemler vb. arasındaki bağımlılıkları görselleştirin.<br />-Koddan sınıf diyagramları oluşturarak belirli bir projenin üyeleri ve sınıf yapısı bakın.<br />-Kodu doğrulamak için bağımlılık diyagramları oluşturarak, kodunuzun tasarımı arasındaki çakışmaları bulun.|-   [Kodu görselleştirme](../modeling/visualize-code.md)<br />-   [Sınıflarla ve diğer türlerle (Sınıf Tasarımcısı) ile çalışma](../ide/working-with-classes-and-other-types-class-designer.md)<br />-   [Video: Visual Studio 2015 kod haritaları ile koddan tasarımı anlama](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />-   [Video: Gerçek zamanlı mimari bağımlılıklarınızı doğrula](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
+|**Kodu görselleştirme**:<br /><br /> -Kod haritaları oluşturarak kodun organizasyon ve ilişkileri bakın. Derlemeler, ad alanları, sınıflar, yöntemler vb. arasındaki bağımlılıkları görselleştirin.<br />-Koddan sınıf diyagramları oluşturarak belirli bir projenin üyeleri ve sınıf yapısı bakın.<br />-Kodu doğrulamak için bağımlılık diyagramları oluşturarak, kodunuzun tasarımı arasındaki çakışmaları bulun.|-   [Kodu görselleştirme](../modeling/visualize-code.md)<br />-   [Sınıflarla ve diğer türlerle (Sınıf Tasarımcısı) ile çalışma](../ide/class-designer/designing-and-viewing-classes-and-types.md)<br />-   [Video: Visual Studio 2015 kod haritaları ile koddan tasarımı anlama](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />-   [Video: Gerçek zamanlı mimari bağımlılıklarınızı doğrula](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
 |**Mimariyi tanımlayın**:<br /><br /> -Tanımlamak ve bağımlılık diyagramları oluşturarak kodunuzun bileşenler arasındaki bağımlılıklar kısıtlamaları zorunlu kılma.|-   [Video: Mimari bağımlılıkları (kanal 9) Visual Studio ile doğrula](https://channel9.msdn.com/Events/Connect/2016/170)|
 |**Sisteminiz gereksinimleri ile doğrulamak ve hedeflenen tasarım:**<br /><br /> -Hedeflenen mimarisini bağımlılık diyagramları ile kod bağımlılıklarını doğrulamak ve tasarım ile çakışabilecek değişiklikleri engelleyebilirsiniz.|-   [Video: Mimari bağımlılıkları (kanal 9) Visual Studio ile doğrula](https://channel9.msdn.com/Events/Connect/2016/170)|
 |**Modellerini ve diyagramlarını özelleştirme**:<br /><br /> -Kendi etki alanına özgü diller oluşturun.|-   [Visual Studio - etki alanına özgü diller için modelleme SDK'sı](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
@@ -90,7 +90,7 @@ Bağımlılık diyagramları Katmanlar veya açık bağımlılıkları olan blok
 **Bkz:**
 
 -   [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)
--   [Bağımlılık Diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)
+-   [Bağımlılık diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)
 -   [Bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)
 
 ### <a name="domain-specific-language-dsl"></a>Etki alanına özgü dil (DSL)

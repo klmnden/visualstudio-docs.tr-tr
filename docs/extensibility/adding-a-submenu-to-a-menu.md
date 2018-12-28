@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ec436383aa745ed033858724b4d4b2ff8b929c6
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 7af96fd1973b32587a217a1cd57ef0d99b0cd626
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863926"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803013"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>Bir menüye alt menü ekleme
 Bu izlenecek gösteride yer geliştirir [Visual Studio menü çubuğuna menü ekleme](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) menüye ekleme göstererek **TestMenu** menüsü.
@@ -156,4 +156,6 @@ Bu izlenecek gösteride yer geliştirir [Visual Studio menü çubuğuna menü ek
 5.  Üzerinde **TestMenu** menüsünde tıklatın **alt menü** ve ardından **Test alt komut**. Bir ileti kutusu görünür ve "TestCommand.SubItemCallback() içinde Test komut" metni görüntülemek gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Visual Studio menü çubuğuna menü ekleme](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) [komutlar, menüler ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)
+
+- [Visual Studio menü çubuğuna menü ekleme](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)
+- [Komutlar, menüler ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)

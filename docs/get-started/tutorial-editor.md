@@ -1,8 +1,9 @@
 ---
-title: Düzenleme için giriş
+title: Kod Düzenleyicisi'nde düzenlemeye giriş
 ms.date: 11/30/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
+ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
@@ -11,20 +12,21 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e2f451ecfb73e0c1ac69da4e48f3d2c8033aa51
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 6c3953f69d263b948e84f0d1aa48d878cd39afe6
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027565"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803339"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Kod Düzenleyicisi'ni kullanmayı öğrenin
 
 Visual Studio Kod düzenleyicisinde 10 dakikalık giriş, Visual Studio yazma, gezinme ve kodu daha kolay anlama yapar yollarından bazıları aramak için bir dosya için kod ekleyeceğiz.
 
-Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+> [!TIP]
+> Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
-Bu makalede, zaten bir programlama dili ile ilgili bilgi sahibi olduğunuz kabul edilmektedir. Değilseniz, öneririz programlama hızlı başlangıçları birini ilk bakış, gibi bir web uygulaması oluşturma [Python](../ide/quickstart-python.md) veya [C#](../ide/tutorial-csharp-aspnet-core.md), veya bir konsol uygulaması oluşturma [Visual Basic](../ide/quickstart-visual-basic-console.md) veya [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
+Bu makalede, zaten bir programlama dili ile ilgili bilgi sahibi olduğunuz kabul edilmektedir. Değilseniz, öneririz programlama hızlı başlangıçları birini ilk bakış, gibi bir web uygulaması oluşturma [Python](../ide/quickstart-python.md) veya [C#](../get-started/csharp/tutorial-aspnet-core.md), veya bir konsol uygulaması oluşturma [Visual Basic](../ide/quickstart-visual-basic-console.md) veya [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 
 ## <a name="create-a-new-code-file"></a>Yeni bir kod dosyası oluşturma
 
@@ -42,7 +44,7 @@ Yeni bir dosya oluşturarak ve bazı kodlar eklemeden başlatın.
 
 Visual Studio sağlar yararlı *kod parçacıkları* kod bloklarında kullanılan yaygın olarak hızla ve kolayca oluşturmak için kullanabilirsiniz. [Kod parçacıkları](../ide/code-snippets.md) C#, Visual Basic ve C++ gibi farklı programlama dili için kullanılabilir. C# ekleyelim `void Main` bizim dosyasına kod parçacığı.
 
-1. İmlecinizi son kapanış ayracı kısalarak **}** dosyasında ve karakterleri yazdıktan `svm` (olduğu anlamına gelir `static void Main` &mdash;çok fazla ise ne bilmiyorsanız endişelenmeyin anlamına gelir).
+1. İmlecinizi son kapanış ayracı kısalarak **}** dosyasında ve karakterlerini `svm`. (`svm` anlamına gelen `static void Main`; [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) yöntemdir için giriş noktası C# uygulamaların.)
 
    Hakkında bilgi ile bir açılır iletişim kutusu görünür `svm` kod parçacığı.
 
@@ -50,7 +52,7 @@ Visual Studio sağlar yararlı *kod parçacıkları* kod bloklarında kullanıla
 
 1. Tuşuna **sekmesini** iki kez kod parçacığını eklemek için.
 
-   Gördüğünüz `static void Main()` yöntem imzası dosyasına eklenir. [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) C# uygulamaları için giriş noktası bir yöntemdir.
+   Gördüğünüz `static void Main()` yöntem imzası dosyasına eklenir.
 
 Kullanılabilir kod parçacıkları farklı programlama dili için farklılık gösterir. Kullanılabilir kod parçacıkları seçerek dilinizi göz atabilirsiniz **Düzenle** > **IntelliSense** > **parçacık Ekle**ve ardından Dilinizin klasör seçme. C# ' ta listesi aşağıdaki gibi görünür:
 

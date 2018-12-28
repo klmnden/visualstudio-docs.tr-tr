@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b48a9cae19faa592eecb2f02af67e9ad8b2ca9b3
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 2c581797c36cfd69032ef635a9944b339333d6de
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348318"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684684"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Kullanıcı izinleri ve Visual Studio
 
@@ -38,7 +38,7 @@ Normal bir kullanıcı olarak Visual Studio IDE içinde hemen her şeyi yapabili
 |Oluşturma|Bir bileşeni kayıt ettiren oluşturma sonrası olayları kullanın.|[Özel derleme adımları anlayın ve derleme olayları](/cpp/ide/understanding-custom-build-steps-and-build-events)|
 ||C++ projeleri oluşturduğunuzda kayıt adımı içerir.||
 |Hata Ayıklama|Yükseltilmiş izinlerle çalışan uygulamalarda hata ayıklama.|[Hata ayıklayıcısı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)|
-||Hesap, ASP.NET Web siteleri gibi farklı bir kullanıcı altında çalışan uygulamalarda hata ayıklama.|[ASP.NET ve AJAX uygulamalarında hata ayıklama](../debugger/debugging-aspnet-and-ajax-applications.md)|
+||Hesap, ASP.NET Web siteleri gibi farklı bir kullanıcı altında çalışan uygulamalarda hata ayıklama.|[ASP.NET ve AJAX uygulamalarında hata ayıklama](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|
 ||XAML tarayıcı uygulamaları (XBAP) için bölgede hata ayıklama|[WPF Konağı (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
 ||İçin Microsoft Azure bulut hizmeti projelerinde hata ayıklamak için öykünücü kullanma.|[Bir bulut hizmetinde Visual Studio'da hata ayıklama](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
 ||Uzaktan hata ayıklama için bir güvenlik duvarını yapılandırın.|[Uzaktan hata ayıklama](../debugger/remote-debugging.md)|

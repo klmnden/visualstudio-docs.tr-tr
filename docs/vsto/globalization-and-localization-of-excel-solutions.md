@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - globalization [Office development in Visual Studio], configuring
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ade59e757778ac7858732f5bf9880b9f88eacd69
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
-ms.translationtype: MT
+ms.openlocfilehash: 4a305a74d24b8480732fb2132bf6c25f4f4f3d7a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567472"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647785"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Genelleştirme ve yerelleştirme Excel çözümleri
   Bu bölüm Windows ayarları İngilizce dışındaki bilgisayarlarda çalışan Microsoft Office Excel çözümleri ilgili özel konular hakkında bilgi içerir. Diğer Visual Studio kullanarak çözüm türlerini oluşturduğunuzda karşılaşabileceğinizi birçok yönden Genelleştirme ve yerelleştirme Microsoft Office çözümleri aynı değildir. Genel bilgi için bkz. [Globalize ve uygulamalarını yerelleştirme](/visualstudio/ide/globalizing-and-localizing-applications).  
@@ -39,7 +39,7 @@ ms.locfileid: "39567472"
   
  Geçirilen veya yönetilen kod tarafından yönetilen veri için İngilizce (Amerika Birleşik Devletleri) biçimini kullanıyor olsanız da Excel yorumlar ve verileri doğru şekilde son kullanıcının yerel ayarına göre görüntüler. Yönetilen kodun yerel ayar kimliği1033 verileri İngilizce (ABD) olduğunu gösterir verileriyle birlikte biçimi geçirir ve kullanıcının yerel ayarı eşleştirilecek biçimlendirilmeli çünkü Excel verileri doğru şekilde biçimlendirebilirsiniz.  
   
- Örneğin, son kullanıcıların kendi Bölgesel Seçenekler Almanca (Almanya) yerel ayarını varsa, bu şekilde Biçimlendirilecek tarih 29 Haziran 2005 beklediği: 29.06.2005. Ancak, çözümünüzü Excel dize olarak tarihi geçerse, tarihe göre İngilizce (Amerika Birleşik Devletleri) biçimi biçimlendirmeniz gerekir: 6/29/2005. Hücrenin tarih hücresi olarak biçimlendirilmişse Excel tarihini Almanca (Almanya) biçiminde görüntüler.  
+ Örneğin, son kullanıcıların kendi Bölgesel Seçenekler Almanca (Almanya) yerel ayarını varsa, bu şekilde Biçimlendirilecek tarih 29 Haziran 2005 bekler: 29.06.2005. Ancak, çözümünüze bir dize olarak Excel'e tarihi geçerse, tarihe göre İngilizce (Amerika Birleşik Devletleri) biçimi biçimlendirmeniz gerekir: 6/29/2005. Hücrenin tarih hücresi olarak biçimlendirilmişse Excel tarihini Almanca (Almanya) biçiminde görüntüler.  
   
 ### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>Excel nesne modeline diğer yerel ayar kimlikleri geçirme  
  Ortak dil çalışma zamanı (CLR), tüm yöntemler ve yerel ayar duyarlı verileri kabul eden özellikleri Excel nesne modelinde 1033 yerel ayar Kimliğini otomatik olarak geçirir. Nesne modelini tüm çağrıları için otomatik olarak bu davranışı değiştirmek için hiçbir yolu yoktur. Belirli bir yöntem kullanarak farklı bir yerel ayar kimliği ancak geçirebilirsiniz <xref:System.Type.InvokeMember%2A> yöntemini çağırmak için ve yerel ayar kimliği için geçirerek *kültür* yönteminin parametresi.  

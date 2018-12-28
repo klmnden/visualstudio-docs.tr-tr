@@ -1,5 +1,5 @@
 ---
-title: Can &#39; sahip t &#39;devam; &#39; döngü dışında | Microsoft Docs
+title: Döngü dışında 'continue' olamaz | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,19 +20,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8760eef1bb69f5f3ad18791dde8e25ce16776735
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6d4939635b69cf5b49e36c7168dcf3c1a786821f
+ms.sourcegitcommit: 7ba97696d6d48de698210863183266af90c82af5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788834"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53531251"
 ---
-# <a name="can39t-have-39continue39-outside-of-loop"></a>Can &#39; sahip t &#39;devam; &#39; döngü dışında
-Kullanmaya çalıştığınız **devam** deyimi bir döngü dışında. **Devam** deyimi yalnızca a: gövdesi içinde kullanılabilir  
+# <a name="cant-have-continue-outside-of-loop"></a>Döngü dışında 'continue' olamaz
+Kullanmaya çalıştığınız **devam** dışında bir döngü deyimi. **Devam** deyimi yalnızca y: gövdesi içinde kullanılabilir  
   
--   `do-while`döngü,  
+-   `do-while` döngü,  
   
--   `while`döngü,  
+-   `while` döngü,  
   
 -   **için** döngüsü  
   
@@ -40,11 +40,11 @@ Kullanmaya çalıştığınız **devam** deyimi bir döngü dışında. **Devam*
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Emin olun **devam** deyimi a: gövdesi içinde görünüyor  
+-   Emin **devam** y: gövdesi içinde deyim görünür  
   
-    -   `do-while`döngü,  
+    -   `do-while` döngü,  
   
-    -   `while`döngü,  
+    -   `while` döngü,  
   
     -   **için** döngüsü  
   
@@ -53,4 +53,4 @@ Kullanmaya çalıştığınız **devam** deyimi bir döngü dışında. **Devam*
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [continue deyimi](../../javascript/reference/continue-statement-javascript.md)   
  [Program akışı denetimi](../../javascript/controlling-program-flow-javascript.md)   
- [Betiklerinizin sorunlarını giderme](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)
+ [Komut Dosyalarınızda Sorun Giderme](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

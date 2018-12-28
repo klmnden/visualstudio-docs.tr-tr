@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 036774134f705d95fbc526a9e6a336ac43005820
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 33d96729507e0e85318ee357240580d3f3a1c328
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639782"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561768"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Hızlı Başlangıç: C++ ile Visual Studio hata ayıklayıcısını kullanarak hata ayıklama
 
@@ -103,7 +103,7 @@ Kesme noktasında duraklatıldığı sırada deyimi üzerinden gelin `c1.push_ba
 
 Uygulama yürütülmeye çağırma `doWork`ve düğmeyi tıklattığınız kod satırında duraklatır.
 
-Ortak klavye komutları için kullanılan kodu adımlayın dahil **F10** ve **F11**. Daha fazla ayrıntılı yönergeler için bkz: [Başlangıç Kılavuzu](../debugger/getting-started-with-the-debugger.md).
+Ortak klavye komutları için kullanılan kodu adımlayın dahil **F10** ve **F11**. Daha fazla ayrıntılı yönergeler için bkz: [hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Bir datatip içinde değişkenleri denetleyin
 

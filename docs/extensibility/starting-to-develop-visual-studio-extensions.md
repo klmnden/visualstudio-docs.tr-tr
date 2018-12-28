@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5d6e84bc526cf597fbfd22bd36b93cd419ba0d6
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: eaae915b8e201b5596bdd435c432ffccfa9ad8c3
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349669"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739925"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Visual Studio uzantıları geliştirmeye başlama
 
@@ -64,7 +64,7 @@ Uygulamada, çoğu kişi, genişletmek istediğiniz özellikleri komutlar, menü
 
 -   [Visual Studio’nun Diğer Bölümlerini Genişletme](../extensibility/extending-other-parts-of-visual-studio.md)
 
--   [Visual Studio Yalıtılmış Kabuğu](../extensibility/visual-studio-isolated-shell.md)
+-   [Visual Studio Yalıtılmış Kabuğu](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
 
 ##  <a name="BKMK_ProjectTemplate"></a> Hangi proje şablonları tarafından VSSDK sağlanır?
  İki ana tür uzantılarının VSPackages ve MEF uzantılarıdır. Genel olarak, VSPackage uzantılarına kullanın veya projeleri komutları ve araç pencerelerini genişletme uzantılar için kullanılır. MEF uzantıları genişletme veya Visual Studio Düzenleyicisi özelleştirmek için kullanılır.
@@ -75,15 +75,15 @@ Uygulamada, çoğu kişi, genişletmek istediğiniz özellikleri komutlar, menü
 
  Yalıtılmış Kabuk şablonu, marka ve kendi olarak dağıtmak Visual Studio Kabuğu sürümünde bir uzantı paketi için kullanılır. Aşağıdaki konular her uzantı türü ile çalışmaya başlama işlemini gösterir:
 
--   Menü komutları: [bir menü komutuyla uzantı oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md)
+-   Menü komutları: [Bir Menü Komutuyla Uzantı Oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   Araç penceresi: [araç penceresi içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md)
+-   Araç pencereleri: [Araç Penceresi İçeren Bir Uzantı Oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   Düzenleyici uzantıları: [bir düzenleyici öğesi şablonuyla uzantı oluşturma](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+-   Düzenleyici uzantıları: [Düzenleyici Öğesi Şablonuyla Uzantı Oluşturma](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   Temel VSPackages: [VSPackage içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-vspackage.md)
+-   Temel VSPackages: [VSPackage İçeren Bir Uzantı Oluşturma](../extensibility/creating-an-extension-with-a-vspackage.md)
 
--   VSIX proje şablonu: [VSIX proje şablonu ile çalışmaya başlama](../extensibility/getting-started-with-the-vsix-project-template.md)
+-   VSIX proje şablonu: [VSIX Proje Şablonunu Kullanmaya Başlama](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Visual Studio gibi görünmesini uzantım nasıl alabilirim?
  Uzantı için kullanıcı arabirimini tasarlamaya yönelik harika ipuçları alın [Visual Studio kullanıcı deneyimi yönergeleri](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b200c5b0df5f150e0d34b351a3e36a8a986f3ed6
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 7cf16e015c6c5e0f828d759e40dc8cc0eed7c050
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248250"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739490"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Office projeleri tasarımını hedefleyen .NET Framework 4 veya .NET Framework 4.5 değiştirir.
   İtibariyle [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], Visual Studio hedefleyen Office projelerinde tasarımını bazı değişiklikler sunulan [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri. Office projeleri Visual Studio'nun önceki sürümlerinde biliyorsanız, .NET Framework 4.0 veya daha sonra bu sürümleri hedefleyen Office projelerinde geliştirmeden önce bu değişikliklerin farkına olmalıdır. Varsayılan olarak, Visual Studio 2013 veya üzeri kullanarak oluşturduğunuz tüm projeleri .NET Framework 4.0 veya üzeri hedefler.  
@@ -35,7 +35,7 @@ ms.locfileid: "53248250"
   
 -   [.NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz Excel ve Word projelerini güncelleştirme](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
--   [.NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz Office projelerindeki Şerit Özelleştirmelerini Güncelleştirme](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
+-   [.NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz Office projelerindeki Şerit Özelleştirmelerini Güncelleştirme](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)  
   
 -   [.NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz Outlook projelerindeki form bölgelerini güncelleştirme](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
@@ -51,7 +51,7 @@ ms.locfileid: "53248250"
 |---------------------|-----------------|  
 |<xref:System.Security.SecurityTransparentAttribute> Artık kullanılmaz ve Office projelerinde desteklenir.|Bu öznitelik, Visual Studio 2008'den yükseltme Office projelerinde AssemblyInfo kod dosyasından kaldırmanız gerekir. Daha fazla bilgi için [gerekli .NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz Office projelerini çalıştırmak için değişiklikler](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |**ExcelLocale1033Attribute** artık kullanılmaz ve Excel projelerinde desteklenir.|Bu özniteliği kaldırmalısınız *AssemblyInfo* Excel projelerinde kod dosyası. Daha fazla bilgi için [.NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz güncelleştirme Excel ve Word projelerini](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
-|Programlama modeli **Şerit (Görsel Tasarımcı)** proje öğeleri değişti.|Şerit öğeleri için arka plan kod dosyası projenize değiştirmeniz gerekir. Ayrıca, Şerit denetimlerini çalışma zamanında başlatır, Şerit olaylarını işleme veya program aracılığıyla bir Şerit bileşeninin konumunu ayarlar herhangi bir kodu değiştirmeniz gerekir. Daha fazla bilgi için [güncelleştirme Şerit özelleştirmeleri .NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz Office projelerindeki](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
+|Programlama modeli **Şerit (Görsel Tasarımcı)** proje öğeleri değişti.|Şerit öğeleri için arka plan kod dosyası projenize değiştirmeniz gerekir. Ayrıca, Şerit denetimlerini çalışma zamanında başlatır, Şerit olaylarını işleme veya program aracılığıyla bir Şerit bileşeninin konumunu ayarlar herhangi bir kodu değiştirmeniz gerekir. Daha fazla bilgi için [güncelleştirme Şerit özelleştirmeleri .NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz Office projelerindeki](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5).|  
 |Outlook form bölgeleri programlama modeli değişti.|Tüm form bölgeleri için arka plan kod dosyası projenize ve çalışma zamanında belirli bir form bölgesi sınıflarını başlatır herhangi bir kodu değiştirmeniz gerekir. Daha fazla bilgi için [.NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz Outlook projelerindeki form bölgelerini güncelleştirme](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |Akıllı etiketler Excel ve Word projeleri için programlama modeli değişti. Akıllı etiketler bırakılmıştır [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] ve [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Çözümünüzü akıllı etiketler kullanılıyorsa, proje derleme hataları ortaya çıkar. Akıllı etiketler kullanım dışıdır çünkü [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] ve [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)], test ve hata ayıklama çözümde önce etiketleri kaldırmalısınız [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] veya üzeri.|  
 |Söz dizimi `GetVstoObject` ve `HasVstoObject` yöntemleri değişti|Geçmesi gereken `Globals.Factory` nesnesi, yerel nesneler birincil birlikte çalışma derlemeleri (PIA) üzerinden erişim ya da bu yöntem tarafından döndürülen nesne üzerinde erişebileceğiniz bu yöntemlere yapılan `Globals.Factory` projenizdeki özellik. Daha fazla bilgi için [.NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz güncelleştirme Excel ve Word projelerini](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  

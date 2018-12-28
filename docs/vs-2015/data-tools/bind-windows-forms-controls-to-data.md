@@ -22,12 +22,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d1d8710ef98339c0cf4b44ddd3fa41cca8676570
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ce8cc39880908d099c72142699b4cb19fb514e6
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237477"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647245"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Verilere Windows Forms denetimleri bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Nesnelerden sürükleyerek veri kaynakları denetimlerine bağlayabilirsiniz **v
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="bind-to--data-in-a-datagridview-control"></a>DataGridView denetimine veri bağlama  
- DataGridView için tablonun tamamını tek bir denetim için bağlıdır. Bir DataGridView'in forma sürüklediğinizde, bir aracı Şerit Kayıtlarda gezinmek için (<xref:System.Windows.Forms.BindingNavigator>) de görünür. A [veri kümesi](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür. Müşteriler tablosunda Siparişler tablosu için bir ilişkisi olduğundan, aşağıdaki çizimde, bir TableAdapterManager de eklenir. Bu değişkenler tüm otomatik olarak oluşturulan kodda form sınıfında özel üyeler olarak bildirilir. DataGridView doldurmak için otomatik olarak oluşturulan kodu Page_Load olay işleyicisi bulunur. Veritabanını güncellemek için verileri kaydetmek için kod Kaydet olay işleyicisi için BindingNavigator bulunur. Geçiş yapabilir veya bu kodu gerektiği gibi değiştirin.  
+ DataGridView için tablonun tamamını tek bir denetim için bağlıdır. Bir DataGridView'in forma sürüklediğinizde, bir aracı Şerit Kayıtlarda gezinmek için (<xref:System.Windows.Forms.BindingNavigator>) de görünür. A [veri kümesi](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür. Müşteriler tablosunda Siparişler tablosu için bir ilişkisi olduğundan, aşağıdaki çizimde, bir TableAdapterManager de eklenir. Bu değişkenler tüm otomatik olarak oluşturulan kodda form sınıfında özel üyeler olarak bildirilir. DataGridView doldurmak için otomatik olarak oluşturulan kodu Page_Load olay işleyicisi bulunur. Veritabanını güncellemek için verileri kaydetmek için kod Kaydet olay işleyicisi için BindingNavigator bulunur. Geçiş yapabilir veya bu kodu gerektiği gibi değiştirin.  
   
  ![BindingNavigator GridView](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata BindingNavigator GridView")  
   
@@ -68,4 +68,3 @@ Nesnelerden sürükleyerek veri kaynakları denetimlerine bağlayabilirsiniz **v
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da verilere Windows Forms denetimleri bağlama](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

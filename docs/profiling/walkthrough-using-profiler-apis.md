@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e5baebb527c09d833e405a98bd701ad02b7fe86
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5f1d842c6dcfd4385c800a593ccb20b4ee25129
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928067"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592644"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>İzlenecek yol: Profil oluşturucu API'ler Kullanma
+# <a name="walkthrough-using-profiler-apis"></a>İzlenecek yol: Profil Oluşturucu API'ler kullanma
 
 İzlenecek yol, nasıl kullanılacağını göstermek için bir C# uygulaması kullanır. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profil Araçları API'leri. Profil Oluşturucu API izleme profil oluşturma sırasında toplanan veri miktarını sınırlamak için kullanın.  
   
@@ -32,16 +32,18 @@ ms.locfileid: "49928067"
   
  Visual Studio Profil Oluşturucu veri koleksiyonu sınırlamanıza olanak sağlar. Bu izlenecek yol, profil oluşturucu API kullanarak veri koleksiyonunu sınırlamak nasıl bir örnek sağlar. Visual Studio profil oluşturucu uygulamaya denetleme veri toplama için bir API sağlar.  
   
- Yerel kod için Visual Studio profil oluşturma API'leri bulunan *VSPerf.dll*. Üstbilgi dosyası *VSPerf.h*ve içeri aktarma kitaplığını *VSPerf.lib*, bulunan *Microsoft Visual Studio 9\Team Araçlar\Performans Araçları* dizin.  
+ Yerel kod için Visual Studio profil oluşturma API'leri bulunan *VSPerf.dll*. Üstbilgi dosyası *VSPerf.h*ve içeri aktarma kitaplığını *VSPerf.lib*, bulunan *Microsoft Visual Studio\2017\Team Araçlar\Performans Tools\PerfSDK* Dizin.  64-bit uygulamalar için klasördür *Microsoft Visual Studio\2017\Team Araçlar\Performans Tools\x64\PerfSDK*
   
- Yönetilen kod için profil oluşturucu API bulunan *Microsoft.VisualStudio.Profiler.dll*. Bu DLL bulunan *Microsoft Visual Studio 9\Team Araçlar\Performans Araçları* dizin. Daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.Profiler>.  
+ Yönetilen kod için profil oluşturucu API bulunan *Microsoft.VisualStudio.Profiler.dll*. Bu DLL bulunan *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* dizin. 64-bit uygulamalar için klasördür *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.Profiler>. 
+ 
+  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu kılavuzda, hata ayıklama ve örnekleme desteklemek üzere tercih ettiğiniz geliştirme ortamında yapılandırılmış varsayılır. Aşağıdaki konular bu Önkoşullar genel bir bakış sağlar:  
   
- [Nasıl yapılır: Toplama metotlarını seçme](../profiling/how-to-choose-collection-methods.md)  
+ [Nasıl yapılır: Koleksiyon metotları seçme](../profiling/how-to-choose-collection-methods.md)  
   
- [Nasıl yapılır: Başvuru pencereleri sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md)  
+ [Nasıl yapılır: Başvuru Windows sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md)  
   
  Profil Oluşturucu başlatıldığında, varsayılan olarak, profil oluşturucu genel düzeyde veri toplar. Aşağıdaki kod programın başında, profil oluşturma genel kapatır.  
   
@@ -60,7 +62,7 @@ DataCollection.CurrentId);
 1.  Visual Studio'da yeni bir C# projesi oluşturun veya bir komut satırı derleme, tercihinize bağlı olarak kullanın.  
   
     > [!NOTE]
-    >  Derleme başvurmalıdır *Microsoft.VisualStudio.Profiler.dll* bulunan kitaplık, *Microsoft Visual Studio 9\Team Araçlar\Performans Araçları* dizin.  
+    >  Derleme başvurmalıdır *Microsoft.VisualStudio.Profiler.dll* bulunan kitaplık, *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* dizin.  
   
 2.  Kopyalama ve projenize aşağıdaki kodu yapıştırın:  
   
@@ -151,17 +153,17 @@ DataCollection.CurrentId);
   
      **VsPerfCLREnv /traceon**  
   
-3.  Aşağıdaki komutu yazın: **Vsınstr \<filename > .exe**  
+3.  Şu komutu yazın: **Vsınstr \<filename > .exe**  
   
-4.  Aşağıdaki komutu yazın: **VSPerfCmd çalıştığından/Output:\<filename > .vsp**  
+4.  Şu komutu yazın: **VSPerfCmd çalıştığından/Output:\<filename > .vsp**  
   
-5.  Aşağıdaki komutu yazın: **VSPerfCmd /globaloff**  
+5.  Şu komutu yazın: **VSPerfCmd /globaloff**  
   
 6.  Programınızı çalıştırın.  
   
-7.  Aşağıdaki komutu yazın: **VSPerfCmd/Shutdown**  
+7.  Şu komutu yazın: **VSPerfCmd/Shutdown**  
   
-8.  Aşağıdaki komutu yazın: **VSPerfReport/calltrace:\<filename > .vsp**  
+8.  Şu komutu yazın: **VSPerfReport/calltrace:\<filename > .vsp**  
   
      A. *csv* ortaya çıkan performans verileri geçerli dizin dosyası oluşturulur.  
   

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca203b0c27906d1f861689953ca55280f73fa894
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 127e858b913f49810eae166681b313622e6840ea
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160120"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684894"
 ---
 # <a name="features-of-the-code-editor"></a>Kod Düzenleyicisi özellikleri
 
@@ -93,5 +93,5 @@ Düzenleyiciyi özelleştirme hakkında daha fazla bilgi için bkz. [düzenleyic
 - [Kaynak Düzenleyicisi (Mac için Visual Studio)](/visualstudio/mac/source-editor)
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [Visual Studio'da C++ kullanmaya başlama](../ide/getting-started-with-cpp-in-visual-studio.md)
-- [C# ve Visual Studio'da ASP.NET kullanmaya başlama](../ide/tutorial-csharp-aspnet-core.md)
+- [C# ve Visual Studio'da ASP.NET kullanmaya başlama](../get-started/csharp/tutorial-aspnet-core.md)
 - [Visual Studio'da Python ile çalışmaya başlama](../ide/quickstart-python.md)

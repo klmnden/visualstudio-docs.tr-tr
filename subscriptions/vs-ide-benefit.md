@@ -3,18 +3,18 @@ title: Visual Studio aboneliği, Visual Studio IDE avantajı | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/09/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Visual Studio IDE, Visual Studio aboneliğinize dahil yükleyip öğrenin.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e506fa463aa33571ab8b87844e266b0558c46df2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: deb8a962b18037beb70aaddac8154e506d0f3867
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923569"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739805"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>Visual Studio 2017 avantajının kullanılmasıyla
 
@@ -26,7 +26,7 @@ Visual Studio abonesi olarak, Visual Studio IDE erişebilirsiniz.  Belirli bir s
 *(Visual Studio Enterprise, bu örnek için kullanılır.)*
 
 IDE indirmek için:
-1. Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) adresinde oturum açın.
 2. Visual Studio IDE kutucuk Araçlar bölümünde bulun ve tıklayın **indirme** avantajı kutucuğun alt kısmındaki bağlantı.  Nden de indirebilirsiniz [indirir](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs) sayfası.
    > [!div class="mx-imgBorder"]
    > ![Visual Studio Enterprise kutucuğu](_img/vs-ide-experience/vs-ide-tile.png)
@@ -63,13 +63,16 @@ IDE indirmek için:
 
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standart, yıllık bulut, aylık bulut)   | VL, Azure, perakende, seçili NFR<sup>1</sup> | Kullanılabilir       |  Evet          |
-| Visual Studio Professional (standart, yıllık bulut, aylık bulut) | VL, Azure, perakende                                       | Kullanılabilir                                                            |  Evet          |
+| Visual Studio Enterprise (standart, aylık bulut)   | VL, Azure, perakende, seçili NFR<sup>1</sup> | Kullanılabilir       |  Evet          |
+| Visual Studio Professional (standart, aylık bulut) | VL, Azure, perakende                                       | Kullanılabilir                                                            |  Evet          |
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Kullanılabilir                                             |  Evet         |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Yok                                              |  Yok          |
 | Visual Studio Dev Essentials | Yok  | Visual Studio Community |Evet |
 
-<sup>1</sup>*içerir: satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Imagine değil için Microsoft Professional (MVP), bölge Yöneticisi (RD) değerli. .    Dışlar: MCT yazılım ve Hizmetleri.*
+<sup>1</sup>*içerir:    Yeniden Satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Imagine, Microsoft değerli Professional (MVP), bölge Yöneticisi (RD).  Dışlar: MCT yazılım ve Hizmetleri.*
+
+> [!NOTE]
+> Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.
 
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.

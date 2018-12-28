@@ -1,5 +1,5 @@
 ---
-title: Beklenen &#39; catch &#39; | Microsoft Docs
+title: "'Catch' bekleniyor. | Microsoft Docs"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,22 +20,22 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6cd1e57137d220ebcf3834070e36d8257e2dca7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 244635605abafc5c0bd22c5203b105aa6e7dc669
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788996"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801989"
 ---
-# <a name="expected-39catch39"></a>Beklenen &#39; catch &#39;
-Özel durum işleme kullanılan **deneyin** engellemek, ancak ilişkili yazmadı **catch** deyimi. Bir özel durum oluşursa, yürütülecek değil kodu ile birlikte edilemeyebilir kod içinde sarmalamak özel durum mekanizması işleme gerektiren bir **deneyin** bloğu. Özel durumlar içinden **deneyin** kullanarak engelleme **throw** deyimi ve yakalanan dışında **deneyin** bir veya daha fazla blok **catch**deyimleri.  
+# <a name="expected-catch"></a>'catch' bekleniyor.
+Özel durum işleme kullanılan **deneyin** engellemek, ancak ilişkili yazmadı **catch** deyimi. Özel durum işleme mekanizmasını, bir özel durum oluşursa, yürütülecek değil kod ile birlikte başarısız olabilir kodu içinde sarmalamak gerektiren bir **deneyin** blok. Özel durumlar içinden **deneyin** kullanarak block **throw** deyimi ve yakalanan dışında **deneyin** bir veya daha fazla blok **catch**deyimleri.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   İlişkili eklemek **catch** bloğu.  
+-   İlişkili ekleme **catch** blok.  
   
--   Kullanmayı deneyin bir **son** yerine engelleme bir **catch** bloğu.  
+-   Kullanmayı deneyin bir **son** bloğu yerine bir **catch** blok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [try... catch... finally deyimi](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   
- [Hata nesnesi](../../javascript/reference/error-object-javascript.md)
+ [Hata Nesnesi](../../javascript/reference/error-object-javascript.md)

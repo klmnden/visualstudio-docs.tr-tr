@@ -23,18 +23,17 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4741dedb907bb88513147a98b916831abd965576
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: de570bb79bd59fa5af4c6343dd313e09f6e2533e
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207356"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647345"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>(Windows Forms) bir erişim veritabanındaki verilere bağlanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
-Visual Studio kullanarak bir Access veritabanına (.mdf dosyası veya .accdb dosyası) bağlanabilirsiniz. Veri bağlantı tanımlandıktan sonra görünür **veri kaynakları** penceresi. Burada, tabloları veya görünümleri formlarınıza sürükleyebilirsiniz. Visual Studio'daki proje sisteminin bu yerel veritabanı dosyalarını nasıl yönettiğini anlamak istiyorsanız bkz [nasıl yapılır: Manage Local Data Files in Your Project](../data-tools/how-to-manage-local-data-files-in-your-project.md).  
+Visual Studio kullanarak bir Access veritabanına (.mdf dosyası veya .accdb dosyası) bağlanabilirsiniz. Veri bağlantı tanımlandıktan sonra görünür **veri kaynakları** penceresi. Burada, tabloları veya görünümleri formlarınıza sürükleyebilirsiniz.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu yordamları kullanmak için bir Windows Forms uygulaması projesi ve bir Access veritabanı (.accdb dosyası) veya bir Access 2000-2003 veritabanına (.mdb dosyası) gerekir. Dosya türünüze karşılık gelen yordamı izleyin.  
@@ -129,17 +128,13 @@ Visual Studio kullanarak bir Access veritabanına (.mdf dosyası veya .accdb dos
   
 -   Öğe seçin **veri kaynakları** penceresi ve bunları formunuza sürükleyin (bkz [Visual Studio'da verilere Windows Forms bağlama denetimleri](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)).  
   
--   Veri kaynağında açın [veri kümesi Tasarımcısı](../data-tools/creating-and-editing-typed-datasets.md) eklemek veya veri kümesini oluşturan nesneleri düzenlemek için.  
+-   Veri kaynağı eklemek veya veri kümesini oluşturan nesneleri düzenlemek için veri kümesi Tasarımcısı'nda açın.  
   
 -   Doğrulama mantığı eklemenize <xref:System.Data.DataTable.ColumnChanging> veya <xref:System.Data.DataTable.RowChanging> olay veri kümesindeki veri tablolarının (bkz [veri kümelerindeki verileri doğrulama](../data-tools/validate-data-in-datasets.md)).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio'da verilere bağlanma](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Uygulamanızı veri almaya hazırlama](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
- [Uygulamanıza veri getirme](../data-tools/fetching-data-into-your-application.md)   
- [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Uygulamanızdaki verileri düzenleme](../data-tools/editing-data-in-your-application.md)   
- [Verileri doğrulama](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
- [Verileri kaydetme](../data-tools/saving-data.md)   
- [Veri izlenecek yollar](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)
+## <a name="see-also"></a>Ayrıca Bkz.
 
+ [Uygulamanızı veri almaya hazırlama](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md)   
+ [Verileri doğrulama](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
+ [Veri izlenecek yollar](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)

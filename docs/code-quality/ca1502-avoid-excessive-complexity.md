@@ -20,12 +20,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa12a2a1ade8d32c5518660c46ce79bc997d776
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 969e16eae2d04ed1635e2d2bc9b496ed510a6074
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819309"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740331"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Aşırı karmaşıklıktan kaçının
 
@@ -50,7 +50,7 @@ mantıksal dal noktası ve bir uç düğüm burada temsil eder, düğümler aras
 
 Döngüsel karmaşıklık 25'ten fazla olduğunda kuralı ihlal bildirir.
 
-Kod ölçümleri hakkında daha fazla bilgi [ölçüm karmaşıklığı ve yönetilen kod bakımı](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md),
+Kod ölçümleri hakkında daha fazla bilgi [ölçüm karmaşıklığı ve yönetilen kod bakımı](../code-quality/code-metrics-values.md),
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
 
@@ -108,4 +108,4 @@ Aşağıdaki örnekler, değişen döngüsel karmaşıklık içeren yöntemleri 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Yönetilen Kodun Ölçüm Karmaşıklığı ve Bakımı](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+- [Yönetilen Kodun Ölçüm Karmaşıklığı ve Bakımı](../code-quality/code-metrics-values.md)

@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c7fbfca9a63ac736972ebea01a854e24f90188
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 97c4694ec66c9769f9433c08e74e4d0a14a952c2
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057924"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561531"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Özel durumlar Visual Studio hata ayıklayıcısı ile yönetme
 
@@ -224,7 +224,7 @@ Koşullu özel durumlar eklemek için:
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Özel durumdan sonra yürütmeye devam etme](../debugger/continuing-execution-after-an-exception.md)<br/>
-[Nasıl yapılır: Özel durumdan sonra sistem kodunu inceleme](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
+[Nasıl yapılır: Özel durumdan sonra sistem kodunu İnceleme](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
 [Nasıl yapılır: Yerel çalışma zamanı denetimlerini kullanma](../debugger/how-to-use-native-run-time-checks.md)<br/>
 [C çalışma zamanı kitaplığını kullanmadan çalışma zamanı denetimlerini kullanma](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
-[Öğretici: Visual Studio kullanarak hata ayıklamayı öğrenin](../debugger/getting-started-with-the-debugger.md)
+[Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)

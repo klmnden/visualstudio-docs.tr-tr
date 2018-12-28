@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3dad547664768247f7837b9d65797ffba15bbdf8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 3b24a14636726be15aa52a50d56c381781f492fc
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794822"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739585"
 ---
 # <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>Uyarı: bağımlılık &#39;dosya&#39; projesinde &#39;proje&#39; bunu başvurusunun üzerine yazacağından çalıştırma dizinine kopyalanamıyor &#39;dosya.&#39;
 Bağımlılıkları arasında bir çakışma yoktur; aynı ada sahip birden fazla ayrı derleme dosyaları, uygulamayı çalıştırmak için bin dizinine kopyalanmalıdır. Çalıştırma dizinine Bağımlılıklardan biri birincil başvuru olduğundan çakışmayı kuramıyor.  
@@ -36,9 +36,9 @@ Bağımlılıkları arasında bir çakışma yoktur; aynı ada sahip birden fazl
   
  **Bu hatayı düzeltmek için**  
   
--   Bir (veya sıfır) derleme dosyaları, genel derleme önbelleğine derleme dosyalarını koyarak yapılabilir bin dizinine kopyalayın. Genel derleme önbelleğini dosya adı çakışmaları çözer. Ortak dil çalışma zamanı genel derleme önbelleğinde derlemeleri bulmak nasıl bildiğinden hiçbir derleme dosyasını yerel kopyaları sunulacaktır. Daha fazla bilgi için [derlemeler ve genel derleme önbelleği ile çalışma](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433) ve [hata: ' % s'bağımlılığı 'proje' projesindeki ' dosya' bağımlılığı ile çakışacağından çalıştırma dizinine kopyalanamıyor ' Dosya '](../misc/error-the-dependency-file-in-project-project-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-file.md).  
+-   Bir (veya sıfır) derleme dosyaları, genel derleme önbelleğine derleme dosyalarını koyarak yapılabilir bin dizinine kopyalayın. Genel derleme önbelleğini dosya adı çakışmaları çözer. Ortak dil çalışma zamanı genel derleme önbelleğinde derlemeleri bulmak nasıl bildiğinden hiçbir derleme dosyasını yerel kopyaları sunulacaktır. Daha fazla bilgi için [derlemeler ve genel derleme önbelleği ile çalışma](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433) ve [hata: ' % s'bağımlılığı 'proje' projesindeki ' dosya' bağımlılığı ile çakışacağından çalıştırma dizinine kopyalanamıyor ' Dosya '](/visualstudio/misc/error-dependency-file?view=vs-2015).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bir projedeki başvuruları yönetme](../ide/managing-references-in-a-project.md)   
  [Genel Derleme Önbelleği](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202)   
- [Nasıl Yapılır: Proje Bağımlılıklarını Oluşturma ve Kaldırma](../ide/how-to-create-and-remove-project-dependencies.md)
+ [Nasıl yapılır: Oluşturma ve proje bağımlılıkları Kaldır](../ide/how-to-create-and-remove-project-dependencies.md)

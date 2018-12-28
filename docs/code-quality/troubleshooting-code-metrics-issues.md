@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7078b09b1bf2382e1c91878995772d80bfa625
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9575020135846edc9cb86bd89ff72682500d8a9d
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853968"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739568"
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>Kod Ölçümleri Sorunlarını Giderme
 Kod ölçümleri toplarken aşağıdaki sorunlardan bazılarını karşılaşabilirsiniz:
@@ -30,4 +30,4 @@ Kod ölçümleri toplarken aşağıdaki sorunlardan bazılarını karşılaşabi
 - İşlev (Select Case vb'de) switch deyimi içerir. Derleyici farkları arasında [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] ve önceki sürümleri, başarısızlık servis taleplerini içerir bazı switch deyimleri için farklı MSIL kodu oluşturabilir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Yönetilen Kodun Ölçüm Karmaşıklığı ve Bakımı](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+ [Yönetilen Kodun Ölçüm Karmaşıklığı ve Bakımı](../code-quality/code-metrics-values.md)

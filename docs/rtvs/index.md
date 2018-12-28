@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 05ffd249be3d7734979f3a131a3a10423b76cb9d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 343b992520cddce66a4e4930244738d5b56246b1
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667021"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804085"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Visual Studio'da R ile çalışma
 
@@ -43,7 +43,7 @@ Ardından R güvenlikle ilgili özellikler ve bunun yanı sıra, Visual Studio'n
 | [Etkileşimli pencere](interactive-repl-for-r-in-visual-studio.md) | Bir tam REPL deneyimi için R etkileşimli pencerede kaynak dosyada kod bir kolayca çalıştırmanıza olanak sağlar. | yok |
 | [Verileri görselleştirme](visualizing-data-with-r-in-visual-studio.md) | Çizim, R deneyiminin bir parçası olan ve RTVS destekleyen birden çok bağımsız çizim windows, her biri kendi geçmişi ve taşıma yeteneğini çizer pencereleri arasında. Çizimler bit eşlem ve PDF dosyaları için kaydedildi veya bir bit eşlem ya da meta dosyası olarak panoya kopyalandı.  | yok |
 | [Değişken Gezgini](variable-explorer.md) | Genel veya özel paketi kapsamları değişkenlerinde sıralanabilir tabloları görüntüleyin ve CSV'ye aktarma olanağı ile inceleyin. | yok |
-| [Tam özellikli hata ayıklama](debugging-r-in-visual-studio.md) | Etkileşimli pencere ile tümleştirmeyi içerir. | [Visual Studio’da hata ayıklama](../debugger/debugging-in-visual-studio.md) |
+| [Tam özellikli hata ayıklama](debugging-r-in-visual-studio.md) | Etkileşimli pencere ile tümleştirmeyi içerir. | [Visual Studio’da hata ayıklama](/visualstudio/debugger/debugger-feature-tour) |
 
 Ayrıca bkz: [sık sorulan sorular](faq.md).
 
@@ -57,4 +57,4 @@ Ayrıca bkz: [sık sorulan sorular](faq.md).
 
 1. **Gülümseme Gönder / Frown**: **R Araçları** > **geri bildirim** menü, geri bildirim gönderin ve sorunu tanılama aşamasında yardımcı olmak için RTVS günlük dosyalarını eklemek için hızlı bir yoludur. (Günlükleri içine yazılır *%temp%/RTVSlogs.zip* ayrı olarak göndermek istediğiniz durumunda.) Visual Studio telemetri dışı bıraktınız, günlüğe kaydetme devre dışı **yardımcı** > **geri bildirim** > **ayarları** menü komutu veya Yükleme sırasında.
 
-1. **E-posta**: ekibi doğrudan geri bildirim gönderebilirsiniz *(,) microsoft.com rtvsuserfeedback*.
+1. **e-posta**: Ekip, doğrudan geri bildirim gönderebilirsiniz *(,) microsoft.com rtvsuserfeedback*.

@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 67a990b98b385cacab89bfa8270d8409f9e9aa5f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 9e93ea0c5f9d12b1a5a395b153bf3edbc5d26b9c
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159613"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684476"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Hızlı Başlangıç: Visual Basic ile Visual Studio'da ilk Konsol uygulamanızı oluşturma
 
@@ -91,4 +91,4 @@ Uygulamayı duraklatmak ve ardından kullanıcı girdisi isteyin biraz kod ekley
 Bu hızlı başlangıcı tamamladığınızda Tebrikler! Visual Basic ve Visual Studio IDE hakkında biraz öğrenilen umuyoruz. Daha fazla bilgi için şu öğreticiyle devam edin.
 
 > [!div class="nextstepaction"]
-> [Visual Studio'da Visual Basic ile çalışmaya başlama](tutorial-visual-basic-console.md)
+> [Visual Studio'da Visual Basic ile çalışmaya başlama](../get-started/visual-basic/tutorial-console.md)

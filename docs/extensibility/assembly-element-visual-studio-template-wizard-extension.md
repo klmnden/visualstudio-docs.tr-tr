@@ -2,9 +2,8 @@
 title: Assembly öğesi (Visual Studio Şablon Sihirbazı uzantısı) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fa0728be191086ba84de86110deea122316466f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 829ba0fd25494affb2a8bf7e59c31361cbc9dc4b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153864"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562028"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly öğesi (Visual Studio Şablon Sihirbazı uzantısı)
 Adını veya uygulayan derleme güçlü adını belirtir `IWizard` arabirimi.  
@@ -54,7 +53,7 @@ Adını veya uygulayan derleme güçlü adını belirtir `IWizard` arabirimi.
 ## <a name="text-value"></a>Metin değeri  
  Bir metin değeri gereklidir.  
   
- Bu metin uygulayan derlemeye belirtir `IWizard` arabirimi. Bu bütünleştirilmiş kod adı bir tam derleme adı belirtilmelidir. Örneğin, `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.  
+ Bu metin uygulayan derlemeye belirtir `IWizard` arabirimi. Bu bütünleştirilmiş kod adı bir tam derleme adı belirtilmelidir. Örneğin: `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`  
   
 ## <a name="remarks"></a>Açıklamalar  
  `Assembly` gerekli alt öğesi olan `WizardExtension`.  
@@ -93,4 +92,4 @@ Adını veya uygulayan derleme güçlü adını belirtir `IWizard` arabirimi.
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)   
  [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)   
- [Nasıl yapılır: sihirbazları proje şablonlarıyla kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Nasıl yapılır: Sihirbazları proje şablonlarıyla kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)

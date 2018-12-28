@@ -24,18 +24,18 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19e694e617b15b42029ff641516c59fcecdfbd69
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 987e9166a9237fd1d195243f0156285338b8572a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237282"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647200"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>TableAdapter kullanarak verileri güncelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Veri kümenizdeki verileri değiştiren ve doğrulandı sonra güncelleştirilen verileri bir databaseby çağırmaya gönderebilirsiniz `Update` yöntemi bir [TableAdapter](../data-tools/tableadapter-overview.md). `Update` Yöntemi tek bir veri tablosunu güncelleştirir ve göre doğru komutu (INSERT, UPDATE veya DELETE) çalıştıran <xref:System.Data.DataRow.RowState%2A> tablodaki her veri satırının. Bir veri kümesi ilişkili tabloları, Visual Studio güncelleştirmeleri yapmak için kullandığınız bir TableAdapterManager sınıfı oluşturur. TableAdapterManager sınıfı veritabanında tanımlanan yabancı anahtar kısıtlamaları göre doğru sırada güncelleştirmeler yapılmasını sağlar. Verilere bağlı denetimler kullandığınızda, veri bağlama mimarisi tableAdapterManager adlı TableAdapterManager sınıfın üye değişkeni oluşturur. Daha fazla bilgi için [hiyerarşik güncelleştirme genel bakış](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6).  
+Veri kümenizdeki verileri değiştiren ve doğrulandı sonra güncelleştirilen verileri bir databaseby çağırmaya gönderebilirsiniz `Update` TableAdapter bağdaştırıcısının yöntemi. `Update` Yöntemi tek bir veri tablosunu güncelleştirir ve göre doğru komutu (INSERT, UPDATE veya DELETE) çalıştıran <xref:System.Data.DataRow.RowState%2A> tablodaki her veri satırının. Bir veri kümesi ilişkili tabloları, Visual Studio güncelleştirmeleri yapmak için kullandığınız bir TableAdapterManager sınıfı oluşturur. TableAdapterManager sınıfı veritabanında tanımlanan yabancı anahtar kısıtlamaları göre doğru sırada güncelleştirmeler yapılmasını sağlar. Verilere bağlı denetimler kullandığınızda, veri bağlama mimarisi tableAdapterManager adlı TableAdapterManager sınıfın üye değişkeni oluşturur. Daha fazla bilgi için [hiyerarşik güncelleştirme genel bakış](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6).  
   
 > [!NOTE]
 >  Bir veri kümesi içeriği ile bir veri kaynağını güncelleştirmek çalıştığınızda hatalar alabilirsiniz. Hataları önlemek için kutusu yerleştirin bağdaştırıcının çağıran kodu öneririz `Update` yöntem içinde bir `try` / `catch` blok.  
@@ -44,7 +44,7 @@ Veri kümenizdeki verileri değiştiren ve doğrulandı sonra güncelleştirilen
   
 1.  Bağdaştırıcının çağrı `Update` yönteminde bir `try` / `catch` blok.  
   
-2.  Bir özel durum yakalandığında, hataya neden olan veri satırı bulun. Daha fazla bilgi için [nasıl yapılır: satırlar söz konusu olan hataları bulun](http://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c).  
+2.  Bir özel durum yakalandığında, hataya neden olan veri satırı bulun. Daha fazla bilgi için [nasıl yapılır: Hatalar içeren satırların bulun](http://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c).  
   
 3.  Sorun verilerinde mutabakat (program aracılığıyla yapabilirsiniz veya kullanıcıya değiştirilmesi için geçersiz satır sunarak) öğesini ve ardından güncelleştirmeyi yeniden deneyin (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).  
   
@@ -60,4 +60,3 @@ Veri kümenizdeki verileri değiştiren ve doğrulandı sonra güncelleştirilen
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)
-

@@ -34,17 +34,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], host items
 - Word [Office development in Visual Studio], host controls
 - host controls [Office development in Visual Studio], deleting
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48ce311a767d68ce1402961d2ddf4cf8b673637c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ff20a05b752ee16971e67cb8e12c838384523b9
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937505"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647980"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Konak öğelerine ve denetimlerine genel bakış
   Konak denetimlerinin ve konak öğelerinin programlama modeli için Visual Studio'da Office geliştirme araçları kullanılarak oluşturulan Office çözümlerini sağlamaya yardımcı türleridir. Konak denetimlerinin ve konak öğelerinin Microsoft Office Word ve Microsoft Office Excel, COM, Windows Forms denetimleri gibi yönetilen nesnelerle etkileşim gibi daha fazla alan nesne modelleri ile etkileşim kurma olun.  
@@ -131,17 +131,17 @@ ms.locfileid: "49937505"
   
   Konak denetimleri belgelere ekleme hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
-- [Nasıl yapılır: çalışma sayfalarına Grafik denetimleri ekleme](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+- [Nasıl yapılır: Çalışma sayfalarına Grafik denetimleri ekleme](../vsto/how-to-add-chart-controls-to-worksheets.md)  
   
-- [Nasıl yapılır: çalışma sayfalarına ListObject denetimleri ekleme](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
+- [Nasıl yapılır: Çalışma sayfalarına ListObject denetimleri ekleme](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
   
-- [Nasıl yapılır: çalışma sayfalarına NamedRange denetimleri ekleme](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
+- [Nasıl yapılır: Çalışma sayfalarına NamedRange denetimleri ekleme](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
   
-- [Nasıl yapılır: çalışma sayfalarına XMLMappedRange denetimleri ekleme](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
+- [Nasıl yapılır: Çalışma sayfalarına XMLMappedRange denetimleri ekleme](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
   
 - [Nasıl yapılır: Word belgelerine yer işareti denetimi ekleme](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
   
-- [Nasıl yapılır: içerik ekleme denetimlerine Word belgeleri](../vsto/how-to-add-content-controls-to-word-documents.md)  
+- [Nasıl yapılır: İçerik ekleme denetimlerine Word belgeleri](../vsto/how-to-add-content-controls-to-word-documents.md)  
   
 - [Nasıl yapılır: Word belgelerine XMLNode denetimleri ekleme](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
   

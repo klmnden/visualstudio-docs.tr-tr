@@ -26,12 +26,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9c47d3cb5e02117cb75ab86579b0cb3b166bd510
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f3b049a80367e4c241c9bb5eada4293b63bbee96
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259915"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647203"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Bir veri kümesini doldururken kısıtlamaları kapatma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,10 @@ Bir veri kümesi (örneğin, yabancı anahtar kısıtlamaları) kısıtlamaları
   
 ### <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>Veri kümesi Tasarımcısı'nı kullanarak güncelleştirme kısıtlamaları askıya alma  
   
-1.  Kümenizde açın [oluşturma ve yazılan veri kümelerini düzenleme](../data-tools/creating-and-editing-typed-datasets.md). Daha fazla bilgi için [nasıl yapılır: bir veri kümesini veri kümesi Tasarımcısı'nda açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Veri kümesi Tasarımcısı'nda açın. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  İçinde **özellikleri** penceresinde <xref:System.Data.DataSet.EnforceConstraints%2A> özelliğini `false`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [TableAdapters'ı kullanarak veri kümelerini doldurma](../data-tools/fill-datasets-by-using-tableadapters.md)   
  [Veri kümelerindeki ilişkiler](../data-tools/relationships-in-datasets.md)
-

@@ -2,7 +2,7 @@
 title: Visual Studio 2019 Preview'daki yenilikler
 titleSuffix: ''
 description: Visual Studio 2019 Önizleme sürümündeki yeni özellikler hakkında bilgi edinin.
-ms.date: 12/04/2018
+ms.date: 12/19/2018
 ms.prod: visual-studio-dev16
 ms.technology: vs-acquisition
 ms.custom: seodec18
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06e3966703d95f897706eec8c46c2cd78fda859f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 56c9a30ee534a2812455b6777f25b9730f5985b6
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159756"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647770"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Hangi&#39;Visual Studio 2019 Preview'daki yenilikler
 
@@ -50,6 +50,8 @@ Visual Studio 2019 açtığınızda fark edeceksiniz ilk şey, yeni bir başlang
    ![Yeni Visual Studio 2019 başlangıç penceresi](../ide/media/start-window.png)
 
 Bu yeni başlangıç penceresi kopyalama veya kullanıma alma kodu, bir projeyi veya çözümü açın, yerel bir klasöre açın veya yeni bir proje oluşturmak için seçenekler sunar. Basit bir iletişim kutusunda Bu seçeneklere sahip iki yeni başlayanlar yardımcı olur ve hızlı bir şekilde kod Gelişmiş Visual Studio kullanıcılarına alın.
+
+Daha fazla bilgi için [kodu alın: Yeni Visual Studio başlangıç penceresi nasıl tasarladığımız](https://blogs.msdn.microsoft.com/visualstudio/2018/12/13/get-to-code-how-we-designed-the-new-visual-studio-start-window/) blog gönderisi.
 
 ### <a name="better-search"></a>Daha iyi arama
 
@@ -82,6 +84,8 @@ Ayrıca, bir değer İzle, Yereller ve Otomatikler pencereleri içinde nasıl g�
 [Visual Studio Canlı Paylaşım](https://visualstudio.microsoft.com/services/live-share/) bir kod temeli ve onun bağlamı arkadaşınızla paylaşın ve anlık yönlü işbirliği doğrudan Visual Studio'dan elde etmenize olanak tanıyan bir geliştirici hizmetidir. Live Share ile bir teammate okuma gidin, düzenlemek ve onlarla paylaştıktan bir projede hata ayıklamak ve sorunsuz ve güvenli bir şekilde bunu.
 
 Ve Visual Studio 2019 Önizleme ile bu hizmet, varsayılan olarak yüklenir.
+
+Daha fazla bilgi için [Visual Studio Live Share gerçek zamanlı kod incelemeleri ve Etkileşimli Eğitim](https://blogs.msdn.microsoft.com/visualstudio/2018/12/06/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) blog gönderisi.
 
 ## <a name="modern-development-support"></a>Modern geliştirme desteği
 
@@ -122,7 +126,7 @@ Biz başlangıçta yalnızca desteklenen C# zaman biz öncelikle önizlemesi Int
 
 Ve kullanıyorsanız C#, kendi kod üzerinde özel bir model eğitip özelliği de ekledik.
 
-İndirin ve uzantısı hakkında daha fazla bilgi için bkz: [Visual Studio Intellicode - Preview](https://go.microsoft.com/fwlink/?linkid=872707) Microsoft DevLabs sayfasında.
+En yeni güncelleştirmeleri hakkında daha fazla bilgi için bkz. [Visual Studio Intellicode, daha fazla dili destekleyen ve kodunuzdan öğrenir](https://blogs.msdn.microsoft.com/visualstudio/2018/12/05/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/) blog gönderisi. Ve uzantısı ve karşıdan yükleme hakkında daha fazla bilgi için bkz. [Visual Studio Intellicode - Preview](https://go.microsoft.com/fwlink/?linkid=872707) Microsoft DevLabs sayfasında.
 
 ## <a name="give-us-feedback"></a>Geri bildirimde bulunun
 
@@ -135,4 +139,5 @@ Neden Visual Studio ekibine geri bildirim gönderilsin mi? Size müşteri geri b
 ## <a name="see-also"></a>Ayrıca bkz.
 
 * [Visual Studio 2019 sürüm notları](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)
+* [Microsoft Connect(); 2018 konferansı](https://www.microsoft.com/connectevent)
 * [Visual Studio 2017'deki yenilikler](whats-new-in-visual-studio.md)

@@ -2,9 +2,8 @@
 title: ProjectSubType öğesi (Visual Studio şablonları) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectSubType
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d1ca080ea61fbaaba7992fd8f4f1f4fbeac843d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 046893f3bb3fb6dc0b4461e2d9cadcb2a95ba7bc
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824342"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561713"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType öğesi (Visual Studio şablonları)
 Şablon içinde belirtilen değerle bir alt kategorisi olarak sınıflandırır `ProjectType` öğesi.  
@@ -61,15 +60,15 @@ ms.locfileid: "49824342"
   
  `ProjectSubType` Öğesi bir alt kategoriye sağlar [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) öğesi. Bu değer içerebilir:  
   
-- `SmartDevice-NETCFv1`: Belirtir, şablon hedefleri [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] sürüm 1.0.  
+- `SmartDevice-NETCFv1`: Belirten şablonunun hedeflediği [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] sürüm 1.0.  
   
-- `SmartDevice-NETCFv2`: Belirtir, şablon hedefleri [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] sürüm 2.0.  
+- `SmartDevice-NETCFv2`: Belirten şablonunun hedeflediği [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] sürüm 2.0.  
   
   Bir şablon içeriyorsa, bir `ProjectType` öğe değerini `Web`, `ProjectSubType` öğe şablonunun programlama dilini belirtir. Bu öğe, aşağıdaki değerlere sahip olabilir:  
   
-- `CSharp`: Belirtir şablon oluşturur, bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Web proje veya öğe.  
+- `CSharp`: Şablon oluşturur belirtir bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Web proje veya öğe.  
   
-- `VisualBasic`: Belirtir şablon oluşturur, bir [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Web proje veya öğe.  
+- `VisualBasic`: Şablon oluşturur belirtir bir [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Web proje veya öğe.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek, bir proje şablonu için meta verileri gösterir. bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] cihazı hedefleyen uygulama [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] sürüm 2.0.  

@@ -1,5 +1,5 @@
 ---
-title: "Nasıl yapılır: C++ DLL'leri için birim testleri yazma"
+title: "Nasıl Yapılır: C++ DLL'leri için birim testleri yazma"
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 9458fd6886243102f6479166fb9df21f9e4869fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a596281d156882dffbef6e1c0993f2c91015e960
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877263"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740172"
 ---
-# <a name="how-to-write-unit-tests-for-c-dlls"></a>Nasıl yapılır: C++ DLL'leri için birim testleri yazma
+# <a name="how-to-write-unit-tests-for-c-dlls"></a>Nasıl Yapılır: C++ DLL'leri için birim testleri yazma
 
 Bu izlenecek yolda, önce test yöntemi kullanarak yerel bir C++ DLL geliştirme konusunda açıklanmaktadır. Temel adımlar aşağıdaki gibidir:
 
@@ -329,8 +329,8 @@ Bu izlenecek yolda, önce test yöntemi kullanarak yerel bir C++ DLL geliştirme
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Mevcut C++ uygulamalarına birim testleri ekleme](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
+- [Mevcut C++ uygulamalarına birim testleri ekleme](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [Microsoft.VisualStudio.TestTools.CppUnitTestFramework Kullanma](how-to-use-microsoft-test-framework-for-cpp.md)
 - [Yerel kodda hata ayıklama](../debugger/debugging-native-code.md)
-- [İzlenecek yol: Oluşturma ve kullanarak bir dinamik bağlantı kitaplığı (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
+- [İzlenecek yol: Bir dinamik bağlantı kitaplığı (C++) oluşturma ve kullanma](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [İçeri ve dışarı aktarma](/cpp/build/importing-and-exporting)

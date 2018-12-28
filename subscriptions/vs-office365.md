@@ -3,18 +3,18 @@ title: Office 365 avantajı | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 10/4/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Bazı Visual Studio abonelikleri dahil Office 365 Avantajı hakkında bilgi edinin.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 273bba31f0b080116677e9a8dfa727af462fb7bc
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: eef2adf189650da528c2f76df88ff8b648ad7ba4
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244469"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802114"
 ---
 # <a name="office-365-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Office 365
 
@@ -31,7 +31,7 @@ En iyi iş oluşturun. Her yerden, her zaman güncelleştirilir uygulamalarla ç
 0. Office 365'i yüklemek için bir ürün anahtarı gerekir.  Tıklayarak **anahtarını Al** Office 365 listenin altındaki bağlantıyı.
    > [!div class="mx-imgBorder"]
    > ![Office 365 ürün anahtarını Al](_img/vs-office365/vs-office365-get-key.png)
-0. Çıkış penceresi, sizin için kullanılabilir olan yanı sıra zaten talep herhangi bir anahtar gösterilmektedir.  Yeni bir anahtar almak için tıklayın **anahtar talep et** altında **Office Professional Pllus 2019** listeleme.
+0. Çıkış penceresi, sizin için kullanılabilir olan yanı sıra zaten talep herhangi bir anahtar gösterilmektedir.  Yeni bir anahtar almak için tıklayın **anahtar talep et** altında **Office Professional Plus 2019** listeleme.
    > [!div class="mx-imgBorder"]
    > ![Office 365 talep ürün anahtarı](_img/vs-office365/vs-office365-claim-key.png)
 0. Anahtarı yalnızca istenen kaydeder. (Her zaman yeniden görmek için bu listeye de döndürebilir.)
@@ -55,15 +55,20 @@ Office için uygulama geliştirmek üzere planlıyorsanız etkinleştirmek istey
 
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standart, yıllık bulut)   | VL, Azure, perakende| Kullanılabilir       |  Evet          |
+| Visual Studio Enterprise (standart)   | VL, Azure, perakende| Kullanılabilir       |  Evet          |
 | Visual Studio Enterprise (standart)   | NFR<sup>1</sup> | Yok       |  Yok          |
-| Visual Studio Professional (standart, yıllık bulut) | VL, Azure, perakende                                       | Yok                                                            |  Yok          |
+| Visual Studio Professional (standart) | VL, Azure, perakende                                       | Yok                                                            |  Yok          |
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Yok                                             |  Yok          |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Yok                                              |  Yok          |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure | Yok | Yok |
 | Visual Studio Dev Essentials | Yok  | Yok |Yok |
 
-<sup>1</sup>*içerir: değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark için Microsoft değerli Professional (MVP), bölge Yöneticisi (RD), MCT Yazılımları ve Hizmetleri, Microsoft iş ortağı ağı düşünün.*
+<sup>1</sup>*içerir:    Değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri için BizSpark, Microsoft değerli Professional (MVP), bölge Yöneticisi (RD), MCT yazılımı ve Hizmetleri, Imagine, Microsoft İş ortağı ağı.*
+
+
+> [!NOTE]
+> Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.
+
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 

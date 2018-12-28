@@ -21,18 +21,18 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: acbbf9f309573f110da3b7dd0a53ede36150a319
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 90a9368ac723d49710c937483133b64876fd3a7c
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207460"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648451"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Verileri bir nesneden veritabanına kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Değerleri, bir nesneden bir TableAdapter bağdaştırıcısının DBDirect yöntemleri geçirerek bir veritabanı nesneleri veri kaydedebilir (örneğin, `TableAdapter.Insert`). Daha fazla bilgi için [TableAdapter genel bakışı](../data-tools/tableadapter-overview.md).  
+Değerleri, bir nesneden bir TableAdapter bağdaştırıcısının DBDirect yöntemleri geçirerek bir veritabanı nesneleri veri kaydedebilir (örneğin, `TableAdapter.Insert`).
   
  Veri nesneleri (örneğin, bir sonraki için döngü) nesne koleksiyonunu döngü koleksiyonundan kaydedip değerlerin her nesne için TableAdapter bağdaştırıcısının DBDirect yöntemleri birini kullanarak veritabanına göndermek için.  
   
@@ -85,4 +85,3 @@ Değerleri, bir nesneden bir TableAdapter bağdaştırıcısının DBDirect yön
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)
-

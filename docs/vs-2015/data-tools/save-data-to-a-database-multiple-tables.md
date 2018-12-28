@@ -22,12 +22,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 986df2d58c9a8955c9de9b45edaa5276b2e68bfb
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 116dfd687fbf80488073276a37d706486bd299e0
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50218434"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647490"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Bir veritabanına (birden çok tablo) veri kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Uygulama geliştirmede en sık karşılaşılan senaryolardan biri, bir Windows 
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için şunlar gerekir:  
   
--   Northwind örnek veritabanına erişim.  Daha fazla bilgi için [nasıl yapılır: örnek veritabanları yükleme](../data-tools/how-to-install-sample-databases.md).  
+-   Northwind örnek veritabanına erişim.
   
 ## <a name="create-the-windows-application"></a>Windows uygulaması oluşturma  
  İlk adım oluşturmaktır bir **Windows uygulama**. Projeye bir ad atamak Bu adımda isteğe bağlıdır, ancak daha sonra kaydetmeyi planlıyoruz çünkü biz bunu bir ad verin.  
@@ -73,7 +73,7 @@ Uygulama geliştirmede en sık karşılaşılan senaryolardan biri, bir Windows 
      **UpdateMultipleTablesWalkthrough** projesi oluşturulur ve eklenen **Çözüm Gezgini**.  
   
 ## <a name="create-the-data-source"></a>Veri kaynağı oluşturma  
- Bu adımı kullanarak Northwind veritabanına bir veri kaynağı oluşturur. **veri kaynağı Yapılandırma Sihirbazı**. Bağlantı oluşturmak için Northwind örnek veritabanına erişiminiz olmalıdır. Northwind örnek veritabanını ayarlama hakkında daha fazla bilgi için bkz: [nasıl yapılır: örnek veritabanları yükleme](../data-tools/how-to-install-sample-databases.md).  
+ Bu adımı kullanarak Northwind veritabanına bir veri kaynağı oluşturur. **veri kaynağı Yapılandırma Sihirbazı**. Bağlantı oluşturmak için Northwind örnek veritabanına erişiminiz olmalıdır.
   
 #### <a name="to-create-the-data-source"></a>Veri kaynağı oluşturmak için  
   
@@ -117,14 +117,14 @@ Uygulama geliştirmede en sık karşılaşılan senaryolardan biri, bir Windows 
   
 1.  Ana sürükleyin **müşteriler** düğümünden **veri kaynakları** penceresinden **Form1**.  
   
-     Araç şeridi yanı sıra form üzerindeki verilere bağlı denetimler, tanımlayıcı etiketlerle görünür (<xref:System.Windows.Forms.BindingNavigator>) Kayıtlarda gezinmek için. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
+     Araç şeridi yanı sıra form üzerindeki verilere bağlı denetimler, tanımlayıcı etiketlerle görünür (<xref:System.Windows.Forms.BindingNavigator>) Kayıtlarda gezinmek için. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
   
 2.  İlgili sürükleyin **siparişler** düğümünden **veri kaynakları** penceresinden **Form1**.  
   
     > [!NOTE]
     >  İlgili **siparişler** düğümü altında bulunan **faks** sütun ve bir alt düğüm **müşteriler** düğümü.  
   
-     A <xref:System.Windows.Forms.DataGridView> denetim ve araç şeridi (<xref:System.Windows.Forms.BindingNavigator>) Kayıtlarda gezinmek için formda görünür. Bir [orderstableadapter bağdaştırıcısına](../data-tools/tableadapter-overview.md) ve <xref:System.Windows.Forms.BindingSource> bileşen tepsisinde görünür.  
+     A <xref:System.Windows.Forms.DataGridView> denetim ve araç şeridi (<xref:System.Windows.Forms.BindingNavigator>) Kayıtlarda gezinmek için formda görünür. Bir OrdersTableAdapter ve <xref:System.Windows.Forms.BindingSource> bileşen tepsisinde görünür.  
   
 ## <a name="addcode-to-update-the-database"></a>Veritabanını güncellemek için Addcode  
  Çağırarak veritabanı güncelleştirebilirsiniz `Update` yöntemlerinin **müşteriler** ve **siparişler** TableAdapter bağdaştırıcıları. Varsayılan olarak, bir olay işleyicisi için **Kaydet** düğmesini<xref:System.Windows.Forms.BindingNavigator> veritabanına güncelleştirmeleri göndermek için formun koduna eklenir. Bu yordamı doğru sırayla güncelleştirmeleri göndermek için kod değiştirir. Bu bilgi tutarlılığını hataları oluşturma olanağına ortadan kaldırır. Kod ayrıca hata güncelleştirme çağrısında bir try-catch bloğu içinde sarmalama tarafından işleme uygular. Kod, uygulamanızın ihtiyaçlarına uyacak şekilde değiştirebilirsiniz.  
@@ -149,17 +149,16 @@ Uygulama geliştirmede en sık karşılaşılan senaryolardan biri, bir Windows 
   
 2.  Veriler her tabloda bir veya daha fazla kayıt için birkaç değişiklik yapalım.  
   
-3.  Seçin **Kaydet** düğmesi.  
+3.  **Kaydet** düğmesini seçin.  
   
 4.  Değişiklikler kaydedildi doğrulamak için veritabanında değerleri kontrol edin.  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
  Uygulama gereksinimlerinize bağlı olarak, Windows uygulamanıza veriye bağlı form oluşturduktan sonra gerçekleştirmek isteyebileceğiniz birkaç adım vardır. Bu izlenecek yolda yapabileceğiniz bazı geliştirmeler şunlardır:  
   
--   Forma arama işlevselliği ekleme. Daha fazla bilgi için [nasıl yapılır: bir Windows Forms uygulamasına parametreli bir sorgu ekleme](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
+-   Forma arama işlevselliği ekleme. Daha fazla bilgi için [nasıl yapılır: Parametreli bir sorgu için bir Windows Forms uygulaması ekleme](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
   
--   Veri kaynağı eklemek veya veritabanı nesnelerini kaldırmak için düzenleme. Daha fazla bilgi için [nasıl yapılır: bir veri kümesini düzenleme](http://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3).  
+-   Veri kaynağı eklemek veya veritabanı nesnelerini kaldırmak için düzenleme. Daha fazla bilgi için [nasıl yapılır: Bir veri kümesini düzenleme](http://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)
-

@@ -25,12 +25,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6ce3b1cb07256c35949591b4d6ea012f56e432c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 02ed4bdca8b438d8daa10e385e768825c403bf54
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303348"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648332"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>WPF uygulamalarında arama tabloları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ Terim *arama tablosu* (olarak da adlandırılan bir *arama bağlama*) bir veri t
   
 1.  Veri kaynakları ile ilgili verileri aşağıdaki türlerden biri, projenize ekleyin:  
   
-    -   Veri kümesi veya varlık veri modeli. Daha fazla bilgi için [nasıl yapılır: bir veritabanındaki verilere bağlanma](../data-tools/how-to-connect-to-data-in-a-database.md).  
+    -   Veri kümesi veya varlık veri modeli.
+
+    -   WCF veri hizmeti, WCF hizmeti veya Web hizmeti. Daha fazla bilgi için [nasıl yapılır: Bir hizmetteki verilere bağlanma](../data-tools/how-to-connect-to-data-in-a-service.md).  
   
-    -   WCF veri hizmeti, WCF hizmeti veya Web hizmeti. Daha fazla bilgi için [nasıl yapılır: bir hizmetteki verilere bağlanma](../data-tools/how-to-connect-to-data-in-a-service.md).  
-  
-    -   Nesneleri. Daha fazla bilgi için [nasıl yapılır: nesnelerdeki verilere bağlanma](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
+    -   Nesneleri. Daha fazla bilgi için [nasıl yapılır: Nesnelerdeki verilere bağlanma](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
   
     > [!NOTE]
     >  Arama tablosu oluşturmadan önce iki ilişkili tablolar veya nesneleri projesi için veri kaynağı olarak mevcut olmalıdır.  
@@ -103,5 +103,4 @@ Terim *arama tablosu* (olarak da adlandırılan bir *arama bağlama*) bir veri t
  [Visual Studio'da verilere WPF denetimleri bağlama](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [Visual Studio'da verilere WPF denetimleri bağlama](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [WPF uygulamalarında ilgili verileri görüntüleme](../data-tools/display-related-data-in-wpf-applications.md)   
- [İzlenecek yol: WPF uygulamasında ilgili verileri görüntüleme](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
-
+ [İzlenecek yol: Bir WPF uygulamasında ilgili verileri görüntüleme](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

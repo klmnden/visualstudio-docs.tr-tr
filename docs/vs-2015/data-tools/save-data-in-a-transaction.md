@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b0912ffbe2a9a82ac5efbd3b2ca6ba3566ce5b02
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: dc838a144b1218ebec2c8a46c7c200cf5def1153
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219308"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647534"
 ---
 # <a name="save-data-in-a-transaction"></a>Bir işlemde veri kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "50219308"
 Bu izlenecek yol kullanarak bir işlemde veri kaydetme gösterilmektedir <xref:System.Transactions> ad alanı. Bu örnekte `Customers` ve `Orders` Northwind örnek veritabanındaki tablolar.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
- Bu izlenecek yol, Northwind örnek veritabanına erişim gerektirir. Northwind örnek veritabanını ayarlama hakkında daha fazla bilgi için bkz: [nasıl yapılır: örnek veritabanları yükleme](../data-tools/how-to-install-sample-databases.md).  
+ Bu izlenecek yol, Northwind örnek veritabanına erişim gerektirir.
   
 ## <a name="create-a-windows-application"></a>Bir Windows uygulaması oluşturma  
  İlk adım oluşturmaktır bir **Windows uygulama**.  
@@ -90,14 +90,14 @@ Bu izlenecek yol kullanarak bir işlemde veri kaydetme gösterilmektedir <xref:S
   
 -   Ana sürükleyin **müşteriler** düğümünden **veri kaynakları** penceresinden **Form1**.  
   
-     A <xref:System.Windows.Forms.DataGridView> denetim ve araç şeridi (<xref:System.Windows.Forms.BindingNavigator>) Kayıtlarda gezinmek için formda görünür. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md),<xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
+     A <xref:System.Windows.Forms.DataGridView> denetim ve araç şeridi (<xref:System.Windows.Forms.BindingNavigator>) Kayıtlarda gezinmek için formda görünür. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
   
 -   İlgili sürükleyin **siparişler** düğümü (ana **siparişler** düğümü ancak ilgili alt tablo düğümünün altındaki **faks** sütun) aşağıdaki forma  **CustomersDataGridView**.  
   
-     A <xref:System.Windows.Forms.DataGridView> formda görünür. Bir [orderstableadapter bağdaştırıcısına](../data-tools/tableadapter-overview.md) ve <xref:System.Windows.Forms.BindingSource> bileşen tepsisinde görünür.  
+     A <xref:System.Windows.Forms.DataGridView> formda görünür. Bir OrdersTableAdapter ve <xref:System.Windows.Forms.BindingSource> bileşen tepsisinde görünür.  
   
 ## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>System.Transactions derlemesine bir başvuru ekleyin  
- İşlemleri kullanma <xref:System.Transactions> ad alanı. El ile eklemeniz gerekir. Bu nedenle varsayılan olarak, system.transactions derlemeye bir proje başvurusu eklenmedi.  
+ İşlemleri kullanma <xref:System.Transactions> ad alanı. El ile eklemeniz gerekir. Bu nedenle varsayılan olarak, System.Transactions derlemeye bir proje başvurusu eklenmedi.  
   
 #### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>System.Transactions DLL dosyasına bir başvuru eklemek için  
   
@@ -157,7 +157,7 @@ Bu izlenecek yol kullanarak bir işlemde veri kaydetme gösterilmektedir <xref:S
      [!code-csharp[VbRaddataSaving#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#8)]
      [!code-vb[VbRaddataSaving#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#8)]  
   
-## <a name="run-the-application"></a>Uygulamayı çalıştırın  
+## <a name="run-the-application"></a>Uygulamayı çalıştırma  
   
 #### <a name="to-run-the-application"></a>Uygulamayı çalıştırmak için  
   
@@ -165,4 +165,3 @@ Bu izlenecek yol kullanarak bir işlemde veri kaydetme gösterilmektedir <xref:S
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)
-

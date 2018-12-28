@@ -2,9 +2,8 @@
 title: Templategroupıd öğesi (Visual Studio şablonları) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#TemplateGroupID
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91631975d48f6e7e13646c428cdd5b5473bbeed2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 68e89b0211c64dcee61507afc15c50bd8e5e85d2
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144443"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53560660"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID Öğesi (Visual Studio Şablonları)
-Ne tür bir proje öğesi şablonları kategoride görüneceğini belirtir. Bu öğe önemlidir [ShowByDefault (Visual Studio şablonları)](../extensibility/showbydefault-visual-studio-templates.md) ayarlanır `false`. Zaman [ShowByDefault (Visual Studio şablonları)](../extensibility/showbydefault-visual-studio-templates.md) ayarlanır `true`, bir öğe şablonu tüm proje türlerinde kullanılabilir olur.  
+Ne tür bir proje öğesi şablonları kategoride görüneceğini belirtir. Bu öğe önemlidir [ShowByDefault (Visual Studio şablonları)](../extensibility/showbydefault-visual-studio-templates.md) ayarlanır `false`. Zaman [ShowByDefault (Visual Studio şablonları)](../extensibility/showbydefault-visual-studio-templates.md) ayarlanır `true`, sonra tüm proje türünde bir öğe şablonu kullanılabilir.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -49,29 +48,29 @@ Ne tür bir proje öğesi şablonları kategoride görüneceğini belirtir. Bu �
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Şablon kategorilere ayırır ve nasıl ya da görüntüler tanımlar **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Şablonu kategorilere ayırır ve nasıl görüntülendiğini tanımlar **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.|  
   
 ## <a name="text-value"></a>Metin Değeri  
  Bir metin değeri gereklidir.  
   
- Metin bir öğe şablonları kategorisine tanımlayıcısını belirtir.  
+ Metin, öğe şablonları bir kategori için bir tanımlayıcı belirtir.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `TemplateGroupID` bir öğedir.  
   
- Değeri `TemplateGroupID` öğe proje sistemi kaydı ile birlikte kullanılır (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<sürüm numarası >* \Projects\\) görünür filtre şablonlarına **Yeni Öğe Ekle** iletişim kutusu.  
+ Değerini `TemplateGroupID` öğesi, proje sistemi kaydı ile birlikte kullanılır (hkey_local_machıne\software\microsoft\visualstudio\\*\<sürüm numarası >* \Projects\\) görünen filtre şablonlarına **Yeni Öğe Ekle** iletişim kutusu.  
   
 |Visual C++ değeri|Açıklama|  
 |------------------------|-------------|  
-|VC-yerel|Yerel projeleri için kullanılır. Ayrıca bir proje türü belirlenemiyorsa varsayılan.|  
-|VC yönetilen|Kullanılan tarafından yönetilen (/ clr) projeleri|  
-|VC Windows|Windows Platformu (yerel/yönetilen/deposu) hedef tüm projeleri için kullanılır|  
+|VC yerel|Yerel projeleri için kullanılır. Ayrıca bir proje türü belirlenemiyorsa varsayılan.|  
+|VC yönetilen|Kullanılan yönetilen için (/ clr) projeleri|  
+|VC-Windows|Windows Platformu (yerel/yönetilen/deposu) hedefleyen tüm projeler için kullanılan|  
 |WinRT yerel UAP|Windows 10 mağazası projeleri için kullanılır|  
-|CodeSharing-yerel|Paylaşılan öğesi projeleri için kullanılır|  
-|WinRT yerel 6.3|Windows 8.1 mağazası projeleri için kullanılır|  
+|CodeSharing yerel|Paylaşılan öğe projeleri için kullanılır|  
+|WinRT yerel 6.3|Windows 8.1 Store projeler için kullanılan|  
 |Yerel telefon 6.3 WinRT|Windows Phone 8.1 projeleri için kullanılır|  
-|WinRT-yerel|Windows 8.0 mağazası projeleri için kullanılır|  
-|VC Android|Android projeleri için kullanılır|  
+|WinRT yerel|Windows 8.0 Store projeler için kullanılan|  
+|VC-Android|Android projeleri için kullanılır|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)   

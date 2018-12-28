@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c490d15f27801dff6bb09f6356ad7c665b09c558
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: c06c77d2bc5a291b4dd2d624352a25abd29338b7
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160198"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740404"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Hangi&#39;Visual Studio 2017'deki yenilikler
 
@@ -223,7 +223,7 @@ Gidin ve anlık görüntüleri kullanarak görüntüle **adım geriye dönük** 
 
 ![Visual Studio'da yeni bir özel durum Yardımcısı iletişim kutusu](../debugger/media/intellitrace-step-back-icons-description.png  "adım geri ve İleri düğmelerini")
 
-Daha fazla bilgi için [IntelliTrace geri adım atmayı kullanarak anlık görüntüleri görüntüle](../debugger/how-to-use-intellitrace-step-back.md) sayfası.
+Daha fazla bilgi için [IntelliTrace geri adım atmayı kullanarak anlık görüntüleri görüntüle](../debugger/view-historical-application-state.md) sayfası.
 
 ### <a name="containerization"></a>Kapsayıcı
 
@@ -278,7 +278,7 @@ UWP hakkında daha fazla bilgi için bkz: [Evrensel Windows Platformu (UWP) uygu
 
 ".NET ile mobil uygulama geliştirme" iş yükünün parçası, geliştiriciler C#, .NET ve Visual Studio ile Xamarin kullanarak yerel Android, iOS ve Windows uygulamaları sunabilirsiniz. Geliştiriciler keyfini aynı verimlilik ve güç Xamarin ile Android, iOS ve Windows cihazlarda uzaktan hata ayıklama da dahil olmak üzere, mobil uygulamalar için çalışırken&mdash;yerel öğrenmek zorunda kalmadan Objective-C ya da Java gibi dillerin kodlama.
 
-Daha fazla bilgi için [Visual Studio ve Xamarin](../cross-platform/visual-studio-and-xamarin.md) sayfası.
+Daha fazla bilgi için [Visual Studio ve Xamarin](/xamarin/) sayfası.
 
 ### <a name="entitlements-editor"></a>Yetkilendirmeler Düzenleyicisi
 
@@ -366,7 +366,7 @@ Daha fazla bilgi için [yapay ZEKA için Visual Studio Araçları](../ai/about-a
 Visual Studio 2017 genellikle, geliştirme deneyimini daha da iyi hale getirebilir yeni özelliklerle güncelleştiriyoruz. Deneysel Önizleme aşamasında olan en önemli güncelleştirmeler bazılarını bir özeti aşağıda verilmiştir:
 
 * **[Paylaşım canlı](https://visualstudio.microsoft.com/services/live-share/)**, bir kod temeli ve onun bağlamı arkadaşınızla paylaşın ve anlık yönlü işbirliği doğrudan Visual Studio'dan elde etmenize olanak tanıyan yeni bir aracı. Live Share ile bir teammate okuma gidin, düzenlemek ve onlarla paylaştıktan bir projede hata ayıklamak ve sorunsuz ve güvenli bir şekilde bunu.<br><br>Daha fazla bilgi için [Canlı Paylaşım SSS](/visualstudio/liveshare/faq).<br><br>
-* **[Intellicode](https://visualstudio.microsoft.com/services/intellicode/)**, geliştiriciler kod desenleri ve ekip stili için catch zor kod sorunlarını bulmak için daha iyi bağlama duyarlı kod tamamlama, teslim etmek için yapay ZEKA kullanarak yazılım geliştirme geliştiren yeni bir özellik Kılavuzu , ve odağı kod incelemeleri açısından gerçekten önemli alana odaklanılmıştır. <br><br>Daha fazla bilgi için [Intellicode SSS](../ide/not-in-toc/intellicode-faq.md).
+* **[Intellicode](https://visualstudio.microsoft.com/services/intellicode/)**, geliştiriciler kod desenleri ve ekip stili için catch zor kod sorunlarını bulmak için daha iyi bağlama duyarlı kod tamamlama, teslim etmek için yapay ZEKA kullanarak yazılım geliştirme geliştiren yeni bir özellik Kılavuzu , ve odağı kod incelemeleri açısından gerçekten önemli alana odaklanılmıştır. <br><br>Daha fazla bilgi için [Intellicode SSS](/visualstudio/intellicode/faq).
 
 Daha fazla geliştirilme Visual Studio 2017 için ne hakkında olduğu edinmek ister misiniz? Bkz: [Visual Studio yol haritası](/visualstudio/productinfo/vs2018-roadmap) sayfası.
 
@@ -376,7 +376,7 @@ Daha fazla geliştirilme Visual Studio 2017 için ne hakkında olduğu edinmek i
 
 Nasıl size Visual Studio geliştirmek, veya ürün destek seçenekleri hakkında daha fazla bilgi ilgili öneride bulunmak istiyorsanız lütfen bkz [konuşmak bize](../ide/talk-to-us.md) sayfası.
 
-### <a name="report-a-problem"></a>Sorun bildir
+### <a name="report-a-problem"></a>Sorun bildirin
 
  Bazı durumlarda, bir ileti karşılaştığınız sorunun tam etkisini iletmek için yeterli değildir. Bir yanıt vermemesine, kilitlenme veya diğer performans sorunu yaşarsanız, kolayca yineleme adımları ve destekleyici dosyaları paylaşabilirsiniz (ekran görüntüleri, izleme ve yığın gibi düküm dosyalarında) kullanarak bizimle **sorun bildir** aracı. Bu aracı kullanma hakkında daha fazla bilgi için bkz. [bir sorun bildirme](how-to-report-a-problem-with-visual-studio-2017.md) sayfası.
 

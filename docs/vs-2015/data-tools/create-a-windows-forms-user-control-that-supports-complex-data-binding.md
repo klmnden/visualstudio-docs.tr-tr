@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: de22f93c6fd04f89360fdaf8a2f5d83bd373d93d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e2ac4dc4ac8a53c2833088f821a82ae00573a13b
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284264"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648845"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Karmaşık veri bağlamayı destekleyen bir Windows Forms kullanıcı denetimi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Windows uygulamalarında formların üzerindeki verileri görüntülerken, mevcu
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için şunlar gerekir:  
   
--   Northwind örnek veritabanına erişim. Daha fazla bilgi için [nasıl yapılır: örnek veritabanları yükleme](../data-tools/how-to-install-sample-databases.md).  
+-   Northwind örnek veritabanına erişim.
   
 ## <a name="create-a-windows-application"></a>Bir Windows uygulaması oluşturma  
  İlk adım oluşturmaktır bir **Windows uygulama**.  
@@ -165,7 +165,7 @@ Windows uygulamalarında formların üzerindeki verileri görüntülerken, mevcu
   
 #### <a name="to-run-the-application"></a>Uygulamayı çalıştırmak için  
   
--   Uygulamayı çalıştırmak için F5 tuşuna basın.  
+-   Uygulamayı çalıştırmak için F5'e basın.  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
  Uygulama gereksinimlerinize bağlı olarak veri bağlamasını destekleyen bir denetim oluşturma sonra gerçekleştirmek isteyebileceğiniz birkaç adım vardır. Tipik bir sonraki adımlardan birkaçı şunlardır:  
@@ -178,4 +178,3 @@ Windows uygulamalarında formların üzerindeki verileri görüntülerken, mevcu
  [Visual Studio'da verilere Windows Forms denetimleri bağlama](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [Veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimi ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)   
  [Windows Forms Denetimleri](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)
-

@@ -30,17 +30,17 @@ helpviewer_keywords:
 - Sheet1_Shutdown
 - events [Office development in Visual Studio]
 - ThisAddIn_Shutdown
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85cbee61cde596831d06aa83af326cc0a0534f0f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ed18bdcf0f4a7ef6dbb8a358cbf11fd7b49e628
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949688"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647654"
 ---
 # <a name="events-in-office-projects"></a>Office Projelerindeki Olaylar
   Her Office proje şablonu, çeşitli olay işleyicileri otomatik olarak oluşturur. Belge düzeyi özelleştirmeleri için olay işleyicileri, VSTO eklentileri için olay işleyicileri biraz farklıdır.  
@@ -48,7 +48,7 @@ ms.locfileid: "49949688"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="document-level-projects"></a>Belge düzeyi projeleri  
- Visual Studio, yeni veya varolan belgeleri ve belge düzeyi özelleştirmeleri çalışma sayfalarında arkasına oluşturulan kod sağlar. Bu kod, iki farklı olay oluşturur: **başlangıç** ve **kapatma**.  
+ Visual Studio, yeni veya varolan belgeleri ve belge düzeyi özelleştirmeleri çalışma sayfalarında arkasına oluşturulan kod sağlar. Bu kod, iki farklı olay oluşturur: **Başlangıç** ve **kapatma**.  
   
 ### <a name="startup-event"></a>Startup olayı  
  **Başlangıç** olayı her ana bilgisayar öğesi (belge, çalışma kitabı veya çalışma sayfası) oluşturulur belge çalışıyorken ve derlemedeki tüm başlatma kodları çalıştıktan sonra. Kodunuzun çalıştığı sınıfının oluşturucusu, çalıştırmak için son şeydir. Konak öğeleri hakkında daha fazla bilgi için bkz. [konak öğelerini ve denetimlerine genel bakış için ana bilgisayar](../vsto/host-items-and-host-controls-overview.md).  

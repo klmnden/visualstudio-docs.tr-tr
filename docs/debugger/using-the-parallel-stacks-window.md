@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bf1ca8fabf70f2d4fbe5920803773af07db0a99
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 4ee9d52f63f3158979f2f018ea44d5b68d6612c1
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389234"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562340"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window"></a>İş parçacıkları ve görevler Paralel Yığınlar penceresinde görüntüleme
 
@@ -72,7 +72,7 @@ Bir yönteme sağ tıkladığınızda aşağıdaki kısayol menüsü öğelerini
 
 |Menü öğesi|Açıklama|  
 |-|-|  
-|**Bayrağı**|Seçili öğeyi işaretler.|  
+|**Bayrak**|Seçili öğeyi işaretler.|  
 |**İşaretini kaldır**|Seçili öğeyi unflags.|  
 |**Dondurma**|Seçili öğeyi donuyor.|  
 |**Çözme**|Seçili öğeyi thaws.|  
@@ -139,9 +139,8 @@ Yeni bir yığın çerçevesine geçiş yapıyorsanız, bu yöntem geçerli yön
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Çok iş parçacıklı bir uygulamanın hatalarını ayıklamaya başlama](../debugger/get-started-debugging-multithreaded-apps.md)   
- [İzlenecek yol: paralel uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Hata ayıklayıcı temel bilgileri](../debugger/getting-started-with-the-debugger.md)   
- [Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)   
+ [İzlenecek yol: Paralel uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)   
+ [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md) [yönetilen kod hata ayıklaması](../debugger/debugging-managed-code.md)   
  [Paralel Programlama](/dotnet/standard/parallel-programming/index)   
  [Görevler penceresini kullanma](../debugger/using-the-tasks-window.md)   
  [Görev sınıfı](../extensibility/debugger/task-class-internal-members.md)

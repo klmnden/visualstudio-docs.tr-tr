@@ -2,9 +2,8 @@
 title: WizardExtension öğesi (Visual Studio şablonları) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#WizardExtension
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5544f0d97fec3ae0b3102ed02c284b9c22a98b54
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c12a0e0e1bcccee936a0a324d03f0251d6c1a083
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144872"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561155"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension Öğesi (Visual Studio Şablonları)
-Şablon Sihirbazı'nı özelleştirme kayıt öğeleri içerir.  
+Şablon Sihirbazı'nı özelleştirmek için kayıt öğeleri içerir.  
   
  \<VSTemplate >  
  ...  
@@ -49,20 +48,20 @@ ms.locfileid: "31144872"
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Gerekli öğe.<br /><br /> Adı veya genel derleme önbelleğinde görünür bir derleme tanımlayıcı adı belirtir. Koyulmalıdır en az bir `Assembly` öğesinde bir `WizardExtension` öğesi.|  
-|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Gerekli öğe.<br /><br /> Uygulayan sınıfa tam adını `IWizard` arabirimi. Koyulmalıdır en az bir `FullClassName` öğesinde bir `WizardExtension` öğesi.|  
+|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Gerekli öğe.<br /><br /> Adını veya genel derleme önbelleğinde görünen derlemenin tanımlayıcı adını belirtir. Mutlaka bir en az bir tane `Assembly` öğesinde bir `WizardExtension` öğesi.|  
+|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Gerekli öğe.<br /><br /> Uygulayan sınıfın tam adını `IWizard` arabirimi. Mutlaka bir en az bir tane `FullClassName` öğesinde bir `WizardExtension` öğesi.|  
   
 ### <a name="parent-elements"></a>Üst Öğeler  
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Proje şablonu, öğe şablonu veya starter kit tüm meta veriler içeriyor.|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Proje şablonu, öğe şablonu veya başlangıç Seti için meta veriler içerir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `WizardExtension` bir isteğe bağlı bir alt öğenin `VSTemplate`.  
+ `WizardExtension` bir isteğe bağlı bir alt öğesidir `VSTemplate`.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, standart proje şablonu için meta verileri gösterir. bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows uygulaması.  
+ Standart proje şablonu için meta veriler aşağıdaki örnekte bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows uygulaması.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -95,4 +94,4 @@ ms.locfileid: "31144872"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)   
  [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)   
- [Nasıl Yapılır: Sihirbazları Proje Şablonlarıyla Kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Nasıl yapılır: Sihirbazları proje şablonlarıyla kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)

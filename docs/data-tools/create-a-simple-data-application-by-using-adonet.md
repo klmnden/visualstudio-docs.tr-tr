@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 75043a1716cca0c727eb0530cd63ca715a60424b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1e82dd7fbae434ae129e90562aab91875bb4e28b
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064878"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740107"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET kullanarak basit veri uygulaması oluşturma
 
@@ -37,7 +37,7 @@ Uygulama oluşturmak için gerekir:
 
 -   SQL Server Express LocalDB. SQL Server Express LocalDB yoksa, buradan yükleyebilirsiniz [SQL Server Express indirme sayfası](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
-Bu konu, alışık olduğunuz Visual Studio IDE temel işlevsellikle ve bir Windows Forms uygulaması oluşturma, düğmeleri ve diğer denetimleri formlarda projeye form denetimleri ve olay özelliklerini ayarlamak Ekle olduğunu varsayar. Bu görevler konusunda deneyimli değilseniz, tamamlamanızı öneririz [Görselle Başlarken C# ve Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) bu kılavuza başlamadan önce konu.
+Bu konu, alışık olduğunuz Visual Studio IDE temel işlevsellikle ve bir Windows Forms uygulaması oluşturma, düğmeleri ve diğer denetimleri formlarda projeye form denetimleri ve olay özelliklerini ayarlamak Ekle olduğunu varsayar. Bu görevler konusunda deneyimli değilseniz, tamamlamanızı öneririz [Görselle Başlarken C# ve Visual Basic](../ide/quickstart-visual-basic-console.md) bu kılavuza başlamadan önce konu.
 
 ## <a name="set-up-the-sample-database"></a>Örnek veritabanı kurma
 

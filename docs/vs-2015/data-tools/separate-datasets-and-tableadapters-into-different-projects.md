@@ -20,12 +20,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1e94c76254b14bdf82e4e7a219cbb0f35cb532f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 37f415111930336e2505694566ad22d1d66093e7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824334"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648748"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Veri kümeleri ile TableAdapter’ları farklı projelere ayırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49824334"
   
 Türü belirtilmiş datasets Gelişmiş böylece [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) ve veri kümesi sınıfları ayrı projelere oluşturulabilir. Bu, hızla uygulama katmanları ayırmak ve n katmanlı veri uygulamaları oluşturmak sağlar.  
   
- Aşağıdaki yordamda kullanma işlemi açıklanmaktadır[oluşturma ve yazılan veri kümelerini düzenleme](../data-tools/creating-and-editing-typed-datasets.md) oluşturulan içeren projeden farklı bir projeye veri kümesi kodunu oluşturmak için `TableAdapter` kod.  
+ Aşağıdaki yordamda oluşturulan içeren projeden farklı bir projeye veri kümesi kodunu oluşturmak için veri kümesi Tasarımcısı'nı kullanarak işlemi açıklanmaktadır `TableAdapter` kod.  
   
 ## <a name="separatedatasets-and-tableadapters"></a>Separatedatasets ve TableAdapters öğelerini  
  Veri kümesi koddan ayırdığınızda `TableAdapter` kod, veri kümesi kodunu içeren proje, geçerli çözümde yer alması gerekir. Bu projenin geçerli çözümde yer almıyorsa, kullanılabilir olmayacaktır **DataSet projesi** listesinde **özellikleri** penceresi.  
@@ -71,8 +71,7 @@ Türü belirtilmiş datasets Gelişmiş böylece [TableAdapters](http://msdn.mic
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [N katmanlı veri uygulamalarına genel bakış](../data-tools/n-tier-data-applications-overview.md)   
- [İzlenecek yol: bir N katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
+ [İzlenecek yol: N katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
  [Hiyerarşik güncelleştirme](../data-tools/hierarchical-update.md)   
  [Visual Studio'da verilere erişme](../data-tools/accessing-data-in-visual-studio.md)   
  [ADO.NET](http://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)
-

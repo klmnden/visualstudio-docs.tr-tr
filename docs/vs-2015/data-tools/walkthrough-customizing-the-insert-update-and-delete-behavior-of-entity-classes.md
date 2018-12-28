@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4d8ef69258d9c672bb5deb01b9c2e0972d4e8303
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f68e27d164164141a8d438326b7d7bb6a3169607
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193550"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648900"
 ---
-# <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>İzlenecek yol: INSERT özelleştirme, güncelleştirme ve silme davranışı varlık sınıflarının
+# <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>İzlenecek yol: INSERT özelleştirme, güncelleştirme ve silme davranışı, varlık sınıfları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -28,7 +28,7 @@ ms.locfileid: "49193550"
  Varsayılan olarak, güncelleştirmeleri gerçekleştirmek için mantığı tarafından sağlanan [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] çalışma zamanı. Çalışma zamanı varsayılan tablo (sütun tanımları ve birincil anahtar bilgileri) şemasını temel alan INSERT, Update ve Delete deyimlerini oluşturur. Varsayılan davranışı kullanmak istemediğinizde, güncelleştirme davranışı yapılandırmak ve gerekli ekleme, güncelleştirme gerçekleştirmek için belirli saklı yordamlar belirlemek ve siler, veritabanındaki verilerle çalışmak için gerekli. Varlık sınıflarınızı görünümleriyle eşleme, varsayılan davranışı gibi değil oluşturulduğunda, aynı zamanda bunu yapabilirsiniz. Ayrıca, veritabanı saklı yordamlar aracılığıyla tablo erişim gerektirdiğinde varsayılan güncelleştirme davranışı geçersiz kılabilirsiniz. Daha fazla bilgi için [özelleştirme işlemleri tarafından kullanarak saklı yordamlar](http://msdn.microsoft.com/library/aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a).  
   
 > [!NOTE]
->  Bu izlenecek yolda kullanılabilirliğini gerektirir **Insertcustomer**, **UpdateCustomer**, ve **DeleteCustomer** saklı yordamlar için Northwind veritabanı. Bu saklı yordamlar oluşturma hakkında daha fazla bilgi için bkz. [izlenecek yol: güncelleştirme saklı yordamlar oluşturma'için Northwind Customers tablosunu](../data-tools/walkthrough-creating-update-stored-procedures-for-the-northwind-customers-table.md).  
+> Bu izlenecek yolda kullanılabilirliğini gerektirir **Insertcustomer**, **UpdateCustomer**, ve **DeleteCustomer** saklı yordamlar için Northwind veritabanı.
   
  Bu izlenecek yol, ' % s'varsayılan LINQ için saklı yordamları kullanarak verileri bir veritabanına geri kaydediliyor SQL çalışma zamanı davranışı için geçersiz kılmak için izlemeniz gereken adımları sağlar.  
   
@@ -51,9 +51,9 @@ ms.locfileid: "49193550"
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdakiler gerekir:  
   
--   Northwind örnek veritabanındaki SQL Server sürümünü erişim. Daha fazla bilgi için [nasıl yapılır: örnek veritabanları yükleme](../data-tools/how-to-install-sample-databases.md).  
+-   Northwind örnek veritabanındaki SQL Server sürümünü erişim.
   
--   **Insertcustomer**, **UpdateCustomer**, ve **DeleteCustomer** saklı yordamlar için Northwind veritabanı. Daha fazla bilgi için [izlenecek yol: güncelleştirme saklı yordamlar oluşturma'için Northwind Customers tablosunu](../data-tools/walkthrough-creating-update-stored-procedures-for-the-northwind-customers-table.md).  
+-   **Insertcustomer**, **UpdateCustomer**, ve **DeleteCustomer** saklı yordamlar için Northwind veritabanı.
   
 ## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>Uygulama oluşturma ve SQL sınıflarına LINQ ekleme  
  İle çalışacaksınız çünkü [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] sınıfları ve bir Windows formunda veri görüntüleme, yeni bir Windows Forms uygulaması oluşturma ve LINQ to SQL sınıfları dosyasına ekleyin.  
@@ -86,14 +86,14 @@ ms.locfileid: "49193550"
   
 #### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>Bir müşteri varlık sınıfı oluşturmak ve bir veri kaynağı ile yapılandırmak için  
   
-1.  İçinde **Sunucu Gezgini**/**veritabanı Gezgini**, Northwind örnek veritabanındaki SQL Server sürümünde Müşteri tablosunu bulun. Daha fazla bilgi için [nasıl yapılır: Northwind veritabanına bağlanmak](../data-tools/how-to-connect-to-the-northwind-database.md).  
+1.  İçinde **Sunucu Gezgini**/**veritabanı Gezgini**, Northwind örnek veritabanındaki SQL Server sürümünde Müşteri tablosunu bulun.
   
 2.  Sürükleme **müşteriler** düğümünden **Sunucu Gezgini**/**veritabanı Gezgini** üzerine [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] yüzeyi.  
   
      Adlı bir varlık sınıfı **müşteri** oluşturulur. Müşteriler tablosundaki sütunlara karşılık gelen özelliklerle var. Varlık sınıfı adlı **müşteri** (değil **müşteriler**) olduğundan Müşteriler tablosundan tek bir müşteri temsil eder.  
   
     > [!NOTE]
-    >  Bu yeniden adlandırma adlandırılır *çoğullaştırma*. Bunu açılıp kapatılabilir [Seçenekler iletişim kutusu](../ide/reference/options-dialog-box-visual-studio.md). Daha fazla bilgi için [nasıl yapılır: açma ve kapatma (O/R Tasarımcısı) çoğullaştırma kapatma](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).  
+    >  Bu yeniden adlandırma adlandırılır *çoğullaştırma*. Bunu açılıp kapatılabilir [Seçenekler iletişim kutusu](../ide/reference/options-dialog-box-visual-studio.md). Daha fazla bilgi için [nasıl yapılır: Çoğullaştırmayı açıp (O/R Tasarımcısı) kapatma](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).  
   
 3.  Üzerinde **derleme** menüsünde tıklatın **derleme UpdatingwithSProcsWalkthrough** Projeyi derlemek için.  
   
@@ -252,12 +252,12 @@ ms.locfileid: "49193550"
 10. F5 tuşuna basın ve Silinen kaydı veritabanından kaldırıldığını doğrulayın.  
   
     > [!NOTE]
-    >  Uygulamanızı değerini bağlı olarak SQL Server Express Edition kullanıyorsa **çıkış dizinine Kopyala** özelliği veritabanı dosyasının değişiklikleri adım 10 F5 tuşuna bastığınızda görünmeyebilir. Daha fazla bilgi için [nasıl yapılır: Manage Local Data Files in Your Project](../data-tools/how-to-manage-local-data-files-in-your-project.md).  
+    > Uygulamanızı değerini bağlı olarak SQL Server Express Edition kullanıyorsa **çıkış dizinine Kopyala** özelliği veritabanı dosyasının değişiklikleri adım 10 F5 tuşuna bastığınızda görünmeyebilir.
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
  Uygulama gereksinimlerinize bağlı olarak, oluşturduktan sonra gerçekleştirmek isteyebileceğiniz birkaç adım vardır [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] varlık sınıfları. Bu uygulama için yapabileceğiniz bazı geliştirmeler şunları içerir:  
   
--   Eşzamanlılık denetimi sırasında güncelleştirmeleri uygulayın. Bilgi için [iyimser eşzamanlılık: genel bakış](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).  
+-   Eşzamanlılık denetimi sırasında güncelleştirmeleri uygulayın. Bilgi için [iyimser eşzamanlılık: Genel Bakış](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).  
   
 -   Verilere filtre uygulamak için LINQ sorguları ekleyin. Bilgi için [(C#) LINQ sorgularına giriş](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).  
   
@@ -266,6 +266,5 @@ ms.locfileid: "49193550"
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [LINQ to SQL sorguları](http://msdn.microsoft.com/library/f4897aaa-7f44-4c20-a471-b948c2971aae)   
  [DataContext yöntemi (O/R Tasarımcısı)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Nasıl yapılır: güncelleştirme, ekleme ve silme (O/R Tasarımcısı) gerçekleştirmek için saklı yordamlar atama](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
+ [Nasıl yapılır: Güncelleştirme, ekleme ve silme (O/R Tasarımcısı) gerçekleştirmek için saklı yordamlar atama](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
  [PAVE veri uygulaması geliştirme Visual Studio 2012'deki yenilikler](http://msdn.microsoft.com/en-us/3d50d68f-5f44-4915-842f-6d42fce793f1)
-

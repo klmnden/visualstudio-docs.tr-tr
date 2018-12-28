@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0219418b754c93b8e5e50997ede73e0611ed496a
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 5364bf8ba45e4b569649920175c6e94fc46128ed
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257062"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561807"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio'da yazmaçlar penceresi hakkında (C#, C++, Visual Basic F#)
 
@@ -52,5 +52,5 @@ ms.locfileid: "52257062"
  Dağınıklığı, azaltmak için **kaydeder** penceresi kayıtları gruplar halinde düzenler. Üzerinde sağ tıkladığınızda **kaydeder** penceresinde görüntülemek veya gördüğünüz şekilde Gizle gruplarının bir listesini içeren bir kısayol menüsü göreceksiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: yazmaçlar penceresini kullanma](../debugger/how-to-use-the-registers-window.md)   
- [Hata Ayıklayıcısı Temel Bilgileri](../debugger/getting-started-with-the-debugger.md)
+ [Nasıl yapılır: Yazmaçlar penceresini kullanma](../debugger/how-to-use-the-registers-window.md)   
+ [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)
