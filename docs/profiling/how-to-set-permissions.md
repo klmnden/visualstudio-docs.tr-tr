@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: izinleri ayarlama | Microsoft Docs'
+title: 'Nasıl Yapılır: İzinleri ayarlama | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6acd54a140d3281f4fd539cc12d07adb11cfd6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0c9770f1d9b42dd50367aaee81be94b0bd85025
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897390"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592410"
 ---
-# <a name="how-to-set-permissions"></a>Nasıl yapılır: izinleri ayarlama
+# <a name="how-to-set-permissions"></a>Nasıl Yapılır: İzinleri ayarlama
 
 Bu makalede, bir bilgisayarın yönetici bir kullanıcı veya bu bilgisayar üzerinde yönetici izinlerine sahip olmayan bir grup için profil oluşturma için gereken güvenlik izinleri nasıl verir açıklanır.
 
@@ -84,7 +84,7 @@ Bir yöneticinin bunları profil oluşturma araçları için yazılım sürücü
 2. Dizine değiştirin:
 
     ```cmd
-    <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools
+    <drive>:\Program Files\Microsoft Visual Studio 14\Team Tools\Performance Tools
     ```
 
 3. Şu komutu çalıştırın:
