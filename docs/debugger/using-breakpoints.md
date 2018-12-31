@@ -11,7 +11,6 @@ f1_keywords:
 - vs.debug.file
 - vs.debug.breakpt.new
 - vs.debug.whenbreakpointishit
-- vs.debug.breakpt.choose
 - vs.debug.breakpt.location.address
 - vs.debug.breakpt.constraints
 - vs.debug.breakpoints.delete
@@ -36,12 +35,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16bcb4bb12e852a8fa268998d0605b2ffc7471e5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 092a9fce2c84506f36717808a7630391c7c1fc89
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068454"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425857"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcıda kesme noktaları kullanma
 Kesme noktaları, geliştirici araç kutusundaki en önemli hata ayıklama tekniklerinden biridir. Hata ayıklayıcı yürütme duraklatmak istediğiniz yere kesme noktalarını ayarlayın. Örneğin, belirli bir kesme noktası çağrı yığınına bakın veya kod değişkenleri durumunu görmek isteyebilirsiniz. Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) bu makalede geçmeden önce.
@@ -61,7 +60,7 @@ Kesme noktaları, geliştirici araç kutusundaki en önemli hata ayıklama tekni
   
  ![Kesme noktası yürütme durduruldu](../debugger/media/breakpointexecution.png "kesme noktası yürütme")  
   
- Hata ayıklayıcı kesme noktasında durdurulduğunda, değişkeni değerlerini ve çağrı yığını da dahil olmak üzere uygulama geçerli durumda bakabilirsiniz. Çağrı yığını hakkında daha fazla bilgi için bkz: [nasıl yapılır: çağrı yığını penceresini kullanma](../debugger/how-to-use-the-call-stack-window.md).  
+ Hata ayıklayıcı kesme noktasında durdurulduğunda, değişkeni değerlerini ve çağrı yığını da dahil olmak üzere uygulama geçerli durumda bakabilirsiniz. Çağrı yığını hakkında daha fazla bilgi için bkz: [nasıl yapılır: Çağrı yığını penceresini kullanma](../debugger/how-to-use-the-call-stack-window.md).  
 
 - Bir iki durumlu kesme noktası olur. Tıklatın, basın **F9**, veya **hata ayıklama** > **iki durumlu kesme noktası** silme veya yeniden.
   
@@ -89,7 +88,7 @@ Gelen kesme noktaları da ayarlayabilirsiniz **çağrı yığını** ve **ayrı�
 
 Hata ayıklayıcı yönerge olduğunda yürütmeyi keser.  
 
-Çağrı yığını hakkında daha fazla bilgi için bkz: [nasıl yapılır: çağrı yığını penceresini kullanma](../debugger/how-to-use-the-call-stack-window.md). 
+Çağrı yığını hakkında daha fazla bilgi için bkz: [nasıl yapılır: Çağrı yığını penceresini kullanma](../debugger/how-to-use-the-call-stack-window.md). 
 
 Görsel olarak kesme noktalarını izlemek için kod yürütme sırasında bkz: [hata ayıklarken çağrı yığınında yöntemler harita](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md). 
   
@@ -220,7 +219,7 @@ Koşullar kümesiyle kesme noktaları ile görünür bir **+** sembol kaynak kod
 <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
 ### <a name="conditional-expression"></a>Koşullu ifade
 
-Seçtiğinizde, **koşullu ifade**, iki koşul arasında seçim yapabilirsiniz: **true** veya **değiştirildiğinde**. Seçin **true** ifade karşılandığında, kesmek veya **değiştirildiğinde** ifade değeri değiştiğinde kesmek için.  
+Seçtiğinizde, **koşullu ifade**, iki koşul arasında seçim yapabilirsiniz: **True** veya **değiştirildiğinde**. Seçin **true** ifade karşılandığında, kesmek veya **değiştirildiğinde** ifade değeri değiştiğinde kesmek için.  
   
  Aşağıdaki örnekte, kesme noktasına erişildiğinde yalnızca değerini `testInt` olduğu **4**:  
   
@@ -306,8 +305,9 @@ Dize değerleri çift tırnak içine alın. Kullanarak ifadeleri birleştirebili
 
 İzleme noktaları görünür olarak kaynak kodunun sol kenar boşluğunda kırmızı Karo ve **kesme noktaları** windows. 
   
-## <a name="see-also"></a>Ayrıca bkz.  
- [Hata ayıklıyor?](../debugger/what-is-debugging.md)  
- [Daha iyi yazma C# kullanarak Visual Studio code](../debugger/write-better-code-with-visual-studio.md)  
- [Hata ayıklama ilk bakış](../debugger/debugger-feature-tour.md)  
- [Visual Studio hata ayıklayıcısında kesme noktaları sorunlarını giderme](../debugger/troubleshooting-breakpoints.md)  
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Hata ayıklıyor?](../debugger/what-is-debugging.md)
+- [Daha iyi yazma C# kullanarak Visual Studio code](../debugger/write-better-code-with-visual-studio.md)
+- [Hata ayıklama ilk bakış](../debugger/debugger-feature-tour.md)
+- [Visual Studio hata ayıklayıcısında kesme noktaları sorunlarını giderme](../debugger/troubleshooting-breakpoints.md)
